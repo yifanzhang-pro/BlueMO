@@ -1,0 +1,236 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 把 $1,2,3,4, \cdots, 80,81$ 这 81 个数任意排列为 $a_1, a_2, a_3, \cdots, a_{81}$. 计算:
+$$
+\left|a_1-a_2+a_3\right|,\left|a_4-a_5+a_6\right|, \cdots,\left|a_{79}-a_{80}+a_{81}\right|,
+$$
+再将这 27 个数任意排列为 $b_1, b_2, b_3, \cdots, b_{27}$. 计算出:
+$$
+\left|b_1-b_2+b_3\right|,\left|b_4-b_5+b_6\right|, \cdots,\left|b_{25}-b_{26}+b_{27}\right|,
+$$
+如此继续下去, 最后得到一个数 $x$, 问: $x$ 是奇数还是偶数?
+%%<SOLUTION>%%
+因为
+$$
+\begin{aligned}
+& b_1+b_2+\cdots b_{27} \\
+= & \left|a_1-a_2+a_3\right|+\left|a_4-a_5+a_6\right|+\cdots+\left|a_{79}-a_{80}+a_{81}\right| \\
+\equiv & a_1-a_2+a_3+a_4-a_5+a_6+\cdots+a_{79}-a_{80}+a_{81} \\
+\equiv & a_1+a_2+a_3+\cdots+a_{79}+a_{80}+a_{81}(\bmod 2),
+\end{aligned}
+$$
+所以,将 $a_1, a_2, a_3, \cdots, a_{81}$ 变换为 $b_1, b_2, b_3, \cdots, b_{27}$, 并不改变它们的和的奇偶性,因此经过多次变换后依然如此.
+所以
+$$
+\begin{aligned}
+x & \equiv a_1+a_2+a_3+\cdots+a_{81}=1+2+3+\cdots+81 \\
+& =41 \times 81 \equiv 1(\bmod 2),
+\end{aligned}
+$$
+即 $x$ 为奇数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 若整数 $a_1, a_2, \cdots, a_n\left(n \in \mathbf{N}^*\right)$ 满足 $a_1 a_2 \cdots a_n=n$ 且 $a_1+a_2+\cdots+a_n=0$, 证明: $4 \mid n$.
+%%<SOLUTION>%%
+先证 $n$ 为偶数.
+用反证法.
+假设 $n$ 为奇数,则由 $a_1 a_2 \cdots a_n=n$ 知 $a_1, a_2, \cdots, a_n$ 均为奇数,故
+$$
+a_1+a_2+\cdots+a_n \equiv n \equiv 1(\bmod 2),
+$$
+与 $a_1+a_2+\cdots+a_n=0$ 矛盾.
+故 $n$ 为偶数.
+再证 $4 \mid n$. 仍用反证法.
+如若不然, 则 $a_1, a_2, \cdots, a_n$ 中有且仅一个偶数, 故
+$$
+a_1+a_2+\cdots+a_n \equiv n-1 \equiv 1(\bmod 2),
+$$
+仍与 $a_1+a_2+\cdots+a_n=0$ 矛盾.
+故 $4 \mid n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 代数式
+$$
+r v z-r w y-s u z+s w x+t u y-t v x . \label{eq1}
+$$
+中, $r, s, t, u, v, w, x, y, z$ 可以分别取 +1 或 -1 .
+(1)证明:代数式的值都是偶数;
+(2) 求这个代数式所能取到的最大值.
+%%<SOLUTION>%%
+(1) \ref{eq1} 式中共有 6 项, 每项的值都是奇数 $(+1$ 或 -1$)$, 所以它们的代数和为偶数.
+(2) 显然, \ref{eq1} 式的值 $\leqslant 6$, 但它取不到 6 这个值, 事实上,在
+$rvz, - rwy, - suz, swx, tuy, - tvx$
+这六项中, 至少有一项是一 1 , 要证明这一点, 将上面这 6 项相乘, 积是
+$-(\text { rstuvwxyz })^2=-1$.
+所以六项中, 至少一项是 -1 , 这样, 六项和至多是
+$$
+5-1=4 .
+$$
+在 $u, x, y$ 为 -1 , 其他字母为 1 时, \ref{eq1} 式的值是 4, 所以 式\ref{eq1} 的最大值为 4 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 今有两张 $3 \times 3$ 方格表 A 与 B, 现将数 $1,2, \cdots, 9$ 按某种顺序填人 A 表 (每格填写一个数), 然后依照如下规则填写 B 表: 使 B 表中第 $i$ 行、第 $j$ 列交叉处的方格内所填的数等于 $\mathrm{A}$ 表中第 $i$ 行的各数和与第 $j$ 列的各数和之差的绝对值; 例如 B 表中的
+$$
+b_{12}=\left|\left(a_{11}+a_{12}+a_{13}\right)-\left(a_{12}+a_{22}+a_{32}\right)\right| .
+$$
+问: 能否在 $A$ 表适当填人 $1,2, \cdots, 9$, 使得在 $B$ 表中也出现 $1,2, \cdots, 9$
+这九个数字?
+\begin{tabular}{|l|l|l|}
+\hline$a_{11}$ & $a_{12}$ & $a_{13}$ \\
+\hline$a_{21}$ & $a_{22}$ & $a_{23}$ \\
+\hline$a_{31}$ & $a_{32}$ & $a_{33}$ \\
+\hline
+\end{tabular}
+(第 4 题表 $A$ )
+\begin{tabular}{|l|l|l|}
+\hline$b_{11}$ & $b_{12}$ & $b_{13}$ \\
+\hline$b_{21}$ & $b_{22}$ & $b_{23}$ \\
+\hline$b_{31}$ & $b_{32}$ & $b_{33}$ \\
+\hline
+\end{tabular}
+(第 4 题表 $B$)
+%%<SOLUTION>%%
+不能作出这样的安排, 为此, 将 $\mathrm{B}$ 表中的各数去掉绝对值符号, 所得到的表格记为表 $\mathrm{C}$ :
+则
+$$
+\begin{gathered}
+c_{11}=\left(a_{11}+a_{12}+a_{13}\right)-\left(a_{11}+a_{21}+a_{31}\right), \\
+c_{12}=\left(a_{11}+a_{12}+a_{13}\right)-\left(a_{12}+a_{22}+a_{32}\right), \\
+\ldots \ldots . \\
+c_{33}=\left(a_{31}+a_{32}+a_{33}\right)-\left(a_{13}+a_{23}+a_{33}\right),
+\end{gathered}
+$$
+\begin{tabular}{|l|l|l|}
+\hline$c_{11}$ & $c_{12}$ & $c_{13}$ \\
+\hline$c_{21}$ & $c_{22}$ & $c_{23}$ \\
+\hline$c_{31}$ & $c_{32}$ & $c_{33}$ \\
+\hline
+\end{tabular}
+表 C
+易见, $c_{11}+c_{12}+\cdots+c_{33}=0$, 故 C 表中有偶数个奇数, 因为 $b_{i j}==\left|c_{i j}\right|$, 故 $b_{i j}$ 与 $c_{i j}$ 同奇偶, 所以 B 表中也有偶数个奇数,但 $1,2, \cdots, 9$ 中有奇数个奇数, 因此不能作出这样的安排.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设正整数 $n$ 的所有正约数从小到大依次为 $d_1<d_2<\cdots<d_k(k \geqslant 4)$, 且满足 $d_1^2+d_2^2+d_3^2+d_4^2=n$, 求 $n$ 的值.
+%%<SOLUTION>%%
+若 $n$ 为奇数,则所有正约数均为奇数, 从而 $d_1^2+d_2^2+d_3^2+d_4^2$ 为偶数, 不可能等于 $n$. 故 $n$ 为偶数, 从而 $d_1=1, d_2=2$.
+如果 $n$ 是 4 的倍数, 那么 $d_3, d_4$ 中有一个等于 4 , 另一个必须为奇数, 此时 $d_1^2+d_2^2+d_3^2+d_4^2 \equiv 2(\bmod 4)$, 不可能等于 $n$. 因此 $n=2 m, m$ 为奇数.
+显然 $d_3$ 为 $m$ 的最小奇质因数,则 $d_4$ 为偶数,故 $d_4$ 必为除 2 之外 $n$ 的最小偶约数, 从而 $d_4=2 d_3$.
+以下可知 $n=1^2+2^2+d_3^2+4 d_3^2=5\left(1+d_3^2\right)$, 故 5 是 $n$ 的约数, 因此 $d_3$, $d_4$ 不可能是 3 和 6 , 只能是 5 和 10 , 于是 $n=1^2+2^2+d_3^2+4 d_3^2=5(1+ \left.5^2\right)=130$.
+经检验, $n=130$ 满足题意.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $s=\left(x_1, x_2, \cdots, x_n\right)$ 是前 $n(n \geqslant 2)$ 个正整数 $1,2, \cdots, n$ 依任意次序的排列, $f(s)$ 为 $s$ 中每两个相邻元素的差的绝对值的最小值.
+求 $f(s)$ 的最大值.
+%%<SOLUTION>%%
+分两类情况讨论:
+(1) 若 $n$ 为奇数,则 $n \geqslant 3$, 设 $n=2 k+1\left(k \in \mathbf{N}^*\right)$. 因为在排列 $s$ 中至少有一个数与 $k+1$ 相邻, 它与 $k+1$ 的差的绝对值不大于 $k$, 故 $f(s) \leqslant k$; 另一方面, 对排列 $(k+1,1, k+2,2, \cdots, 2 k, k, 2 k+1)$ 而言, $f(s)=k=\frac{n-1}{2}$.
+(2) 若 $n$ 为偶数, 设 $n=2 k\left(k \in \mathbf{N}^*\right)$, 同理可知, 数 $k+1$ 与其相邻数之差的绝对值不大于 $k$, 故 $f(s) \leqslant k$; 另一方面, 对排列 $(k+1,1, k+2,2, \cdots$, $2 k, k)$ 而言, $f(s)=k=\frac{n}{2}$.
+综上所述, $f(s)$ 的最大值为 $\left[\frac{n}{2}\right]$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 数列 $\left\{a_n\right\}$ 满足 $a_1=2, a_{n+1}=\left[\frac{3 a_n}{2}\right], n \in \mathbf{N}^*$ (这里 $[x]$ 表示不超过 $x$ 的最大整数). 证明: 数列 $\left\{a_n\right\}$ 中有无穷多项为奇数, 也有无穷多项为偶数.
+%%<SOLUTION>%%
+由已知得: 数列 $\left\{a_n\right\}$ 中每项都是大于 1 的正整数.
+下用反证法证明结论:
+先假设 $\left\{a_n\right\}$ 中只有有限项为奇数, 则其中必有最后一项, 不妨设为 $a_m$. 于是对任意 $n \in \mathbf{N}^*$, 均有 $a_{m+n}$ 是偶数.
+设 $a_{m+1}=2^p \cdot q$, 其中 $p \in \mathbf{N}^*, q$ 为奇数,则由递推式可知
+$$
+\begin{gathered}
+a_{m+2}=\left[\frac{3 a_{m+1}}{2}\right]=3 \cdot 2^{p-1} \cdot q, \\
+a_{m+3}=\left[\frac{3 a_{m+2}}{2}\right]=3^2 \cdot 2^{p-2} \cdot q, \\
+\cdots \cdots \\
+a_{m+p+1}=\left[\frac{3 a_{m+p}}{2}\right]=3^p \cdot q .
+\end{gathered}
+$$
+这表明 $a_{m+p+1}$ 为奇数,与假设矛盾.
+再假设 $\left\{a_n\right\}$ 中只有有限项为偶数, 则其中必有最后一项, 不妨设为 $a_l$. 于是对任意 $n \in \mathbf{N}^*$, 均有 $a_{l+n}$ 是大于 1 的奇数.
+可设 $a_{l+1}-1=2^p \cdot q$, 其中 $p \in \mathbf{N}^*, q$ 为奇数.
+由递推式可知
+$$
+\begin{gathered}
+a_{l+2}=\left[\frac{3 a_{l+1}}{2}\right]=\left[3 \cdot 2^{p-1} \cdot q+\frac{3}{2}\right]=3 \cdot 2^{p-1} \cdot q+1, \\
+a_{l+3}=\left[\frac{3 a_{l+2}}{2}\right]=3^2 \cdot 2^{p-2} \cdot q+1, \\
+\cdots \cdots \\
+a_{l+p+1}=\left[\frac{3 a_{l+p}}{2}\right]=3^p \cdot q+1 .
+\end{gathered}
+$$
+这表明 $a_{l+p+1}$ 为偶数, 与假设矛盾.
+综上所述, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设 $n$ 为正整数.
+证明: 若 $n$ 的所有正因子之和是 2 的整数次幂, 则这些正因子的个数也是 2 的整数次幂.
+%%<SOLUTION>%%
+设 $n=p_1^{\alpha_1} p_2^\alpha \cdots p_k^{\alpha_k}$ 为 $n$ 的素因数分解,则 $n$ 的所有正因子之和可表示为 $\left(1+p_1+\cdots+p_1^{\alpha_1}\right)\left(1+p_2+\cdots+p_2^{\alpha_2}\right) \cdots\left(1+p_k+\cdots+p_{k^k}^{\alpha_k}\right)$.
+若它是 2 的幂, 则每个因子 $f_i=1+p_i+\cdots+p_i^{\alpha_i}(i=1,2, \cdots, k)$ 都是 2 的幂, 从而所有的 $p_i, \alpha_i$ 均为奇数.
+若有某个 $\alpha_i>1$, 则
+$$
+f_i=\left(1+p_i\right)\left(1+p_i^2+p_i^4+\cdots+p_i^{\alpha_i-1}\right),
+$$
+后一个因式必须为偶数, 从而 $\frac{\alpha_i-1}{2}$ 为奇数, 于是进一步可得: $1+p_i^2$ 也是 $f_i$ 的因子.
+由于 $1+p_i$ 与 $1+p_i^2$ 均为 2 的幕, 所以 $\left(1+p_i\right) \mid\left(1+p_i^2\right)$, 但
+$$
+1+p_i^2=\left(1+p_i\right)\left(p_i-1\right)+2,
+$$
+故 $\left(1+p_i\right) \mid 2$,矛盾.
+因此必有 $\alpha_i=1(i=1,2, \cdots, k)$.
+从而 $n$ 的正因子个数是 2 的幕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 若干个球放在 $2 n+1$ 个袋中, 如果任意取走一个袋, 总可以把剩下的 $2 n$ 个袋分成两组,每组 $n$ 个袋, 并且这两组的球的个数相等.
+证明: 每个袋中的球的个数相等.
+%%<SOLUTION>%%
+用数 $a_1, a_2, \cdots, a_{2 n+1}$ 分别表示这 $2 n+1$ 个袋中的球的个数.
+显然, $a_1, a_2, \cdots, a_{2 n+1}$ 是非负整数,不妨设 $a_1 \leqslant a_2 \leqslant \cdots \leqslant a_{2 n+1}$. 于是问题转化为: 有 $2 n+1$ 个非负整数,如果从中任意取走一个数,剩下的 $2 n$ 个数可以分成两组,每组 $n$ 个,和相等, 证明这 $2 n+1$ 个数全相等.
+令 $A=a_1+a_2+\cdots+a_{2 n+1}$, 则对每个 $i(1 \leqslant i \leqslant 2 n+1), A-a_i$ 都是偶数 (否则剩下的数不能分成和数相等的两部分). 从而 $a_i$ 与 $A$ 有相同的奇偶性.
+$a_1, a_2, \cdots, a_{2 n+1}$ 也具有相同的奇偶性.
+易知把 $a_1, a_2, \cdots, a_{2 n+1}$ 中的每一个都减去 $a_1$ 后所得到的 $2 n+-1$ 个数
+$$
+0, a_2-a_1, a_3-a_1, \cdots, a_{2 n+1}-a_1
+$$
+也满足题设性质 (即从中任意取走一数,剩下的能分成和数相等的两部分). 因为 $a_i-a_1(i=2,3, \cdots, 2 n+1)$ 都是偶数, 从而
+$$
+0, \frac{a_2-a_1}{2}, \frac{a_3-a_1}{2}, \cdots, \frac{a_{2 n+1}-a_1}{2}
+$$
+这 $2 n+1$ 个数也满足题意, 故也都是偶数.
+把它们再都除以 2 , 这个过程不可能永远继续下去,除非
+$$
+a_1=a_2=\cdots=a_{2 n+1},
+$$
+所以, 每个袋中的球数相等.
+%%PROBLEM_END%%
+
+

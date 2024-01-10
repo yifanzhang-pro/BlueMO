@@ -1,0 +1,55 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 试用母函数方法求下列数列的通项 $a_n$.
+(1) $a_0=2, a_1=5, a_{n+2}=3 a_{n+1}-2 a_n(n=0,1,2, \cdots)$;
+(2) $a_1=3, a_2=15, a_{n+2}=a_{n+1}+6 a_n-12(n=1,2, \cdots)$.
+%%<SOLUTION>%%
+(1) 设 $f(x)=a_0+a_1 x+a_2 x^2+\cdots+a_n x^n+\cdots$, 则
+$$
+\begin{array}{rr}
+-3 x f(x)= & -3 a_0 x-3 a_1 x^2-\cdots-3 a_{n-1} x^n-\cdots, \\
+2 x^2 f(x)= & 2 a_0 x^2+\cdots+2 a_{n-1} x^n+\cdots .
+\end{array}
+$$
+三式相加, 并利用 $a_0=2, a_1=5, a_n-3 a_{n-1}+2 a_{n-2}=0(n=2,3, \cdots)$
+得 $\left(1-3 x+2 x^2\right) f(x)=2-x$, 所以 $f(x)=\frac{2-x}{1-3 x+2 x^2}= \frac{3(1-x)-(1-2 x)}{(1-x)(1-2 x)}=\frac{3}{1-2 x}-\frac{1}{1-x}=3 \sum_{n=0}^{\infty}(2 x)^n-\sum_{n=0}^{\infty} x^n=\sum_{n=0}^{\infty}\left(3 \cdot 2^n\right. -1) x^n$, 所以 $a_n=3 \cdot 2^n-1$.
+(2) 设 $f(x)=a_0+a_1 x+a_2 x^2+\cdots+a_n x^n+\cdots$, 则
+$$
+\begin{array}{rlrl}
+-x f(x) & = & -a_0 x-a_1 x^2-\cdots-a_{n-1} x^n-\cdots, \\
+-6 x^2 f(x) & = & -6 a_0 x^2-\cdots-6 a_{n-2} x^n-\cdots, \\
+\frac{12}{1-x} & =12+12 x+12 x^2+\cdots+12 x^n+\cdots .
+\end{array}
+$$
+四式相加, 并利用 $a_0=\frac{1}{6}\left(a_2-a_1+12\right)=4, a_1=3, a_n-a_{n-1}-6 a_{n-2}+ 12=0(n=2,3, \cdots)$ 得 $\left(1-x-6 x^2\right) f(x)+\frac{12}{1-x}=16+11 x, f(x)= \frac{4-5 x-11 x^2}{\left(1-x-6 x^2\right)(1-x)}=\frac{4-5 x-11 x^2}{(1-x)(1+2 x)(1-3 x)}=\frac{A}{1-x}+\frac{B}{1+2 x}+ \frac{C}{1-3 x}$, 于是 $A=\left.\frac{4-5 x-11 x^2}{(1+2 x)(1-3 x)}\right|_{x=1}=2, B=\left.\frac{4-5 x-11 x^2}{(1-x)(1-3 x)}\right|_{x=-\frac{1}{2}} =1, C=\left.\frac{4-5 x-11 x^2}{(1-x)(1+2 x)}\right|_{x=\frac{1}{3}}=1$, 所以 $f(x)=\frac{2}{1-x}+\frac{1}{1+2 x}+\frac{1}{1-3 x}$. $=2 \sum_{n=0}^{\infty} x^n+\sum_{n=0}^{\infty}(-2 x)^n+\sum_{n=0}^{\infty}(3 x)^n=\sum_{n=0}^{\infty}\left(3^n+(-2)^n+2\right) x^n$, 故得 $a_n=3^n +(-2)^n+2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 证明下列恒等式:
+(1) $\sum_{k=1}^n \mathrm{C}_n^k \mathrm{C}_n^{n+1-k}=\mathrm{C}_{2 n}^{n+1}$;
+(2) $\sum_{k=0}^{\left[\frac{n}{2}\right]}(-1)^k \mathrm{C}_{n+1}^k \mathrm{C}_{2 n-2 k}^n=n+1$;
+(3) $\sum_{k=0}^n(-1)^{n-k} 2^{2 k} \mathrm{C}_{n+k+1}^{2 k+1}=n+1$;
+(4) $\sum_{k=p}^n(-1)^k \mathrm{C}_n^k \mathrm{C}_k^p=(-1)^n \delta_{p n}$, 其中 $\delta_{i j}=\left\{\begin{array}{l}1, i=j, \\ 0, i \neq j .\end{array}\right.$
+%%<SOLUTION>%%
+(1) 一方面 $(1+x)^{2 n}=\sum_{k=0}^{2 n} \mathrm{C}_{2 n}^k x^k$ 中 $x^{n+1}$ 的系数为 $\mathrm{C}_{2 n}^{n+1}$, 另一方面 $(1+x)^{2 n}=(1+x)^n(1+x)^n=\left(\sum_{i=0}^n \mathrm{C}_n^i x^i\right)\left(\sum_{j=0}^n \mathrm{C}_n^j x^j\right)$ 中 $x^{n+1}$ 的系数为 $\sum_{k=1}^n \mathrm{C}_n^k \mathrm{C}_n^{n+1-k}$, 所以 $\sum_{k=1}^n \mathrm{C}_n^k \mathrm{C}_n^{n+1-k}=\mathrm{C}_{2 n}^{n+1}$.
+(2) 一方面 $(1+x)^{n+1}=\sum_{k=0}^{n+1} \mathrm{C}_{n+1}^k x^k$ 中 $x^n$ 的系数为 $\mathrm{C}_{n+1}^n=n+1$, 另一方面 $(1+x)^{n+1}=\frac{\left(1-x^2\right)^{n+1}}{(1-x)^{n+1}}=\left(\sum_{k=0}^{n+1}(-1)^k C_{n+1}^k x^{2 k}\right) \cdot\left(\sum_{j=0}^{\infty} C_{n+j}^n x^j\right)$ 中 $x^n$ 的系数为 $\sum_{k=0}^{\left[\frac{n}{2}\right]}(-1)^k \mathrm{C}_{n+1}^k \cdot \mathrm{C}_{n+(n-2 k)}^n=\sum_{k=0}^{\left[\frac{n}{2}\right]}(-1)^k \mathrm{C}_{n+1}^k \mathrm{C}_{2 n-2 k}^n$, 所以 $\sum_{k=0}^{\left[\frac{n}{2}\right]}(-1)^k \mathrm{C}_{n+1}^k \mathrm{C}_{2 n-2 k}^n=n+1$.
+(3)注意到 $\mathrm{C}_{n+k+1}^{2 k+1}=\mathrm{C}_{n+k+1}^{n-k}$ 及 $(2-x)^{n+k+1}=\sum_{i=0}^{n+k+1}(-1)^i \mathrm{C}_{n+k+1}^i \cdot 2^{n+k+1-i} x^i$ 中 $x^{n-k}$ 的系数为 $(-1)^{n-k} \mathrm{C}_{n+k+1}^{n-k} \cdot 2^{n+k+1-(n-k)}=(-1)^{n-k} 2^{2 k+1} \mathrm{C}_{n+k+1}^{2 k+1}$, 所以 $f(x)= \sum_{k=0}^n(-x+2)^{n+k+1} \cdot x^k$ 中 $x^n$ 的系数为 $A_n=\sum_{k=0}^n(-1)^{n-k} 2^{2 k+1} \mathrm{C}_{n+k+1}^{2 k+1}$, 另一方面, $f(x)=(2-x)^{n+1} \sum_{k=0}^n\left(2 x-x^2\right)^k=(2-x)^{n+1} \cdot \frac{1-\left(2 x-x^2\right)^{n+1}}{1-\left(2 x-x^2\right)}=(2- x)^{n+1}(1-x)^{-2}-x^{n+1}(2-x)^{2 n+2}(1-x)^{-2}$ 中含 $x^n$ 的项仅在 $(2-x)^{n+1}(1-x)^{-2}$ 中, 而 $(2-x)^{n+1}(1-x)^{-2}=[1+(1-x)]^{n+1}(1-x)^{-2}=\mathrm{C}_{n+1}^0(1-x)^{n-1}+ \mathrm{C}_{n+1}^1(1-x)^{n-2}+\mathrm{C}_{n+1}^2(1-x)^{n-3}+\cdots+\mathrm{C}_{n+1}^n(1-x)^{-1}+(1-x)^{-2}$ 中, 仅最后两项含有 $x^n$, 且这两项中 $x^n$ 的系数之和为 $\mathrm{C}_{n+1}^n+\mathrm{C}_{n+1}^1=2(n+1)$, 故 $A_n=2(n+1)$, 即 $\sum_{k=0}^n(-1)^{n-k} 2^{2 k+1} C_{n+k+1}^{2 k+1}=2(n+1)$, 所以 $\sum_{k=0}^n(-1)^{n-k} 2^{2 k} C_{n+k+1}^{2 k+1}=n+1$.
+(4)注意到当 $k \geqslant p$ 时 $(1+x)^k=\sum_{i=0}^k \mathrm{C}_k^i x^i$ 中 $x^p$ 的系数为 $\mathrm{C}_k$; 当 $0 \leqslant k<p$ 时 $(1+x)^k$ 中 $x^p$ 的系数为零, 所以 $\sum_{k=0}^n(-1)^k \mathrm{C}_n^k(1+x)^k$ 中 $x^p$ 的系数为 $\sum_{k=p}^n(-1)^k \mathrm{C}_n^k \mathrm{C}_k^k$. 另一方面 $\sum_{k=0}^n(-1)^k \mathrm{C}_n^k(1+x)^k=[1-(1+x)]^n=(-1)^n x^n$ 中 $x^p$ 的系数为 $(-1)^n \delta_{p n}=\left\{\begin{array}{l}0, p \neq n, \\ (-1)^n, p=n\end{array}\right.$, 故 $\sum_{k=p}^n(-1)^k \mathrm{C}_n^k \mathrm{C}_k^k=(-1)^n \delta_{p n}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 用母函数方法求下列问题的解.
+(1) 求各位数字之和等于 17 的三位正整数的个数;
+(2) 将一张 $n$ 元的纸币全部兑换为 1 元和 2 元的纸币, 问有多少种不同的兑换方法?
+%%<SOLUTION>%%
+(1) 设各位数字之和等于 $n$ 的三位数有 $a_n$ 个, 则 $a_n=\sum_{a+b+c=n} 1(a, b, c$ 均为整数且 $1 \leqslant a \leqslant 9,0 \leqslant b \leqslant 9,0 \leqslant c \leqslant 9) . a_n$ 的母函数为 $f(x)=\sum_{n=0}^{\infty} a_n x^n= \sum_{n=0}^{\infty}\left(\sum_{a+b+c=n} 1\right) x^n=\sum_{a=1}^9 \sum_{b=0}^9 \sum_{c=0}^9 x^{a+b+c}=\left(\sum_{a=1}^9 x^a\right)\left(\sum_{b=0}^9 x^b\right)\left(\sum_{c=0}^g x^c\right)= \frac{x\left(1-x^9\right)\left(1-x^{10}\right)^2}{(1-x)^3}=\left(x-x^{10}-2 x^{11}+2 x^{20}+x^{21}-x^{30}\right)\left(\sum_{i=0}^{\infty} \mathrm{C}_{i+2}^2 x^i\right)$. 其中 $x^{17}$ 的系数为 $a_{17}=\mathrm{C}_{18}^2-\mathrm{C}_9^2-2 \mathrm{C}_8^2=61$, 即各位数字之和等于 17 的三位数有 61 个; (2) 类似于 (1) 可知所求方法数为下列多项式中 $x^n$ 的系数 $a_n: f(x)=\sum_{n=0}^{\infty} a_n x^n=\left(\sum_{a=0}^{\infty} x^a\right)\left(\sum_{b=0}^{\infty} x^{2 b}\right)=\left(\frac{1}{1-x}\right)\left(\frac{1}{1-x^2}\right)= \frac{1}{(1+x)(1-x)^2}=\frac{1}{4(1+x)}+\frac{1}{2(1-x)^2}+\frac{1}{4(1-x)}=\frac{1}{4} \sum_{n=0}^{\infty}(-1)^n x^n+ \frac{1}{2} \sum_{n=0}^{\infty} \mathrm{C}_{n+1}^1 x^n+\frac{1}{4} \sum_{n=0}^{\infty} x^n=\sum_{n=0}^{\infty}\left(\frac{n+1}{2}+\frac{1+(-1)^n}{4}\right) x^n$, 故所求兑换方法数为 $a_n=\frac{n+1}{2}+\frac{1+(-1)^n}{4}=\left[\frac{n+2}{2}\right]$.
+%%PROBLEM_END%%
+
+

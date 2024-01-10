@@ -1,0 +1,283 @@
+
+%%TEXT_BEGIN%%
+本章我们将介绍反演变换与配极理论.
+配极与前面所讲的调和点列有着密不可分的关联, 作为对与上章的补充.
+反演是一种全新的几何变换, 它的性质很独特,主要作用是将大量的圆变成直线,减少图形的复杂性.
+反演定义 设 $O$ 是平面 $\pi$ 上的一个定点, $k$ 是一个非零常数,如果平面 $\pi$ 的一个变换, 使得对于平面 $\pi$ 上任意异于 $O$ 的点 $A$ 与其像点 $A^{\prime}$, 恒有
+(i) $A^{\prime} 、 O 、 A$ 共线;
+(ii) $\overrightarrow{O A^{\prime}} \cdot \overrightarrow{O A}=k$.
+则这个变换称为平面 $\pi$ 的一个反演变换, 记作 $I(O, k)$, 其中定点 $O$ 称为反演中心, 常数 $k$ 称为反演幕, 点 $A^{\prime}$ 称为 $A$ 的反点.
+这里要注意, 反演中心本身不参与反演变换.
+反演后, 反演中心 $O$ 仍记为 $O$, 位置不动.
+当反演幂 $k>0$ 时, 反演变换 $I(O, k)$ 称为双曲型反演变换; 当 $k<0$ 时, 反演变换 $I(O, k)$ 称为椭圆型反演变换.
+对于反演变换 $I(O, k)$, 令 $r=\sqrt{|k|}$, 则以反演中心 $O$ 为圆心, $r$ 为半径的圆称为反演变换 $I(O, k)$ 的反演圆或基圆, $r$ 称为反演半径.
+显然, 当点 $A^{\prime}$ 是点 $A$ 的反点时, 点 $A$ 也是点 $A^{\prime}$ 的反点, 因而点 $A$ 与点 $A^{\prime}$ 互为反点,由此可见,反演变换是可逆的,且其逆变换就是自身.
+平面 $\pi$ 上的图形 $F$ 在反演变换下的像 $F^{\prime}$ 称为图形 $F$ 关于这个反演变换的反形,简单图形 $F^{\prime}$ 是图形 $F$ 的反形.
+显然, 如果图形 $F^{\prime}$ 是图形 $F$ 的反形, 则图形 $F$ 是图形 $F^{\prime}$ 的反形, 因而图形 $F$ 与图形 $F^{\prime}$ 互为反形.
+反演变换的不动点称为自反点, 而反演变换的不变图形称为自反图形.
+定理 1 设 $A 、 B$ 为平面上两点且 $A 、 B 、 O$ 不共线, 在反演变换 $I(O, k)$ 下, 设 $A 、 B$ 两点的反点分别为 $A^{\prime} 、 B^{\prime}$, 则 $A 、 B 、 A^{\prime} 、 B^{\prime}$ 四点共圆.
+证明如图(<FilePath:./figures/fig-c9i1.png>), 设 $A \stackrel{I(O, k)}{\rightarrow} A^{\prime}, B \stackrel{I(O, k)}{\rightarrow} B^{\prime}$, 且 $A 、 B 、 A^{\prime} 、 B^{\prime}$ 不共线, 由反演变换的定义, 有 $\overrightarrow{O A^{\prime}} \cdot \overrightarrow{O A}=k=\overrightarrow{O B^{\prime}} \cdot \overrightarrow{O B}$, 故 $A 、 B 、 A^{\prime} 、 B^{\prime}$ 共圆.
+定理 2 在反演变换 $I(O, k)$ 下, 设 $A 、 B$ (均不同于反演中心 $O)$ 两点的反点分别为 $A^{\prime} 、 B^{\prime}$, 则有 $A^{\prime} B^{\prime}=\frac{|k|}{O A \cdot O B} \cdot A B$.
+证明若 $O 、 A 、 B$ 共线, 则由 $\overrightarrow{O A^{\prime}} \cdot \overrightarrow{O A}=k, \overrightarrow{O B^{\prime}} \cdot \overrightarrow{O B}=k$, 可得 $\overrightarrow{A^{\prime} B^{\prime}}=\overrightarrow{O B^{\prime}}-\overrightarrow{O A^{\prime}}=\frac{k}{\overrightarrow{O B}}-\frac{k}{\overrightarrow{O A}}=\frac{k(\overrightarrow{O A}-\overrightarrow{O B})}{\overrightarrow{O A} \cdot \overrightarrow{O B}}=\frac{k \overrightarrow{B A}}{\overrightarrow{O A} \cdot \overrightarrow{O B}}$.
+若 $O 、 A 、 B$ 不共线, 则由 $\triangle O B^{\prime} A^{\prime}$ 相似 $\triangle O A B$, 有
+$$
+\frac{A^{\prime} B^{\prime}}{A B}=\frac{O A^{\prime}}{O B}=\frac{O A \cdot O A^{\prime}}{O A \cdot O B}=\frac{|k|}{O A \cdot O B} .
+$$
+由此可见,无论哪种情形,结论都成立.
+定理 3 除反演中心外, 平面上的每一个点, 都有唯一的反演点, 且这种关系是对称的, 即如果点 $P$ 是 $P^{\prime}$ 的反演点, 那么, $P^{\prime}$ 也是 $P$ 的反演点.
+位于反演圆上的点, 保持在原处; 位于反演圆内的点, 变换为圆外部的点; 位于反演圆外的点, 变换为圆内部的点.
+定理 4 设 $P$ 为反演圆 $O(r)$ 外的一点, 则它的反演点 $P^{\prime}$ 是 $O P$ 与 $P$ 到圆的切线的切点连线的交点.
+定理 5 过反演中心的直线反演后为自身.
+(这条直线不包含反演中心, 即挖去反演中心)任意一条不过反演中心的直线, 它的反形是经过反演中心的圆, 反之亦然.
+特别地, 过反演中心相交的圆, 变为不过反演中心的相交直线.
+定理 6 不过反演中心的圆, 它的反形是一个圆, 反演中心是这两个互为反形的圆的一个位似中心, 任一对反演点是逆对应点.
+定理 7 两条直线或曲线的夹角在反演变换下是不变的(两条曲线之间的夹角是指它们的切线之间的夹角).
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+配极定义 在平面上取定一个以 $O$ 为圆心、 $r$ 为半径的圆.
+对于不同于 $O$ 的任一点 $P$, 作一直线 $l$ 通过 $P$ 的反演像 $P^{\prime}$ (即 $O 、 P 、 P^{\prime}$ 三点共线, 且 $O P \left.O P^{\prime}=r^2\right)$ 且垂直于射线 $O P$. 则称直线 $l$ 为点 $P$ 的极线, $P$ 为直线 $l$ 的极点.
+性质 1 若点 $A$ 在 $B$ 的极线上, 则点 $B$ 在 $A$ 的极线上.
+这时称 $A 、 B$ 共轭.
+(这是因为 $A$ 在 $B$ 的极线上意味着 $A B^{\prime} \perp B B^{\prime}$, 如图(<FilePath:./figures/fig-c9i2.png>), 而 $O B^{\prime} \cdot O B=r^2=O A^{\prime}$ ・ $O A$, 故 $A 、 B^{\prime} 、 B 、 A^{\prime}$ 四点共圆, 从而 $A A^{\prime} \perp A^{\prime} B$ )
+性质 2 若点 $P$ 在圆 $O$ 之外, 过 $P$ 作圆 $O$ 的两条切线与圆 $O$ 切于点 $M 、 N$, 则 $M N$ 是 $P$ 的极线.
+$(M 、 N$ 的极线分别是过 $M 、 N$ 的圆 $O$ 的切线, 均过 $P$,于是 $P$ 的极线过 $M 、 N$ )
+性质 3 若过圆 $O$ 外一点 $P$ 作一直线与圆 $O$ 交于点 $R 、 S$, 线段 $R S$ 与 $P$ 的极线交于点 $Q$, 则 $(P 、 S 、 Q 、 R)$ 为调和点列.
+定理 1 过一点 $A$ 任作两割线交圆 $O$ 于 $P 、 Q$ 和 $R 、 S$, 连结 $P R$ 与 $Q S$ 、 $P S$ 与 $Q R$ 分别交于 $B 、 C$, 则 $B C$ 必是 $A$ 关于圆 $O$ 的极线.
+证明如图(<FilePath:./figures/fig-c9i3.png>), 设直线 $B C$ 与直线 $A S$ 交于 $N$, 与直线 $A Q$ 交于 $M$, 利用上一章性质 2 , 即完全四边形的调和分割性知, $S 、 R 、 N$ 、 $A$ 成调和点列, 结合性质 3 以及确定三点后, 第四调和点的唯一性, $A$ 的极线过 $N$, 同理, $A$ 的极线过 $M$,于是 $A$ 的极线为 $M N$, 所以 $B C$ 是 $A$ 的极线.
+我们称一个圆内接四边形为调和四边形, 如果它满足对边乘积相等.
+通过正弦定理以及调和线束中的 $1=\frac{\overrightarrow{A B} / \overrightarrow{C B}}{\overrightarrow{A D} / \overrightarrow{C D}}=\frac{\sin \alpha \cdot \sin \gamma}{\sin \beta \cdot \sin (\alpha+\beta+\gamma)}$, 我们发现:
+定理 2 圆 $O$ 内接四边形 $A B C D$ 为调和四边形的充要条件是对圆上一点 $P, P A 、 P C, P B 、 P D$ 成调和线束.
+不难证明:
+定理 3 对圆外一点 $P$, 过 $P$ 作圆 $O$ 的两条切线, 切点分别是 $A 、 B$, 再任作割线 $P C D$ 交圆 $O$ 于 $C 、 D$, 则 $A C B D$ 为调和四边形.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 证明 Ptolemy 不等式:
+对平面上任意不共线的四点 $A 、 B 、 C 、 D$, 有 $A B \cdot C D+B C \cdot A D \geqslant A C \cdot B D$. 等号成立当且仅当 $A B C D$ 是圆内接凸四边形.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c9i4.png>), 以 $A$ 为反演中心, 单位长度为反演半径, 设 $B 、 C 、 D$ 的反点分别为 $B^{\prime} 、 C^{\prime}$ 、 $D^{\prime}$, 则
+$$
+\begin{gathered}
+B^{\prime} C^{\prime}=\frac{B C}{A B \cdot A C}, C^{\prime} D^{\prime}=\frac{C D}{A C \cdot A D}, \\
+B^{\prime} D^{\prime}=\frac{B D}{A B \cdot \bar{A} D},
+\end{gathered}
+$$
+于是由 $B^{\prime} C^{\prime}+C^{\prime} D^{\prime} \geqslant B^{\prime} D^{\prime}$ 得
+$$
+\begin{aligned}
+& \frac{B C}{A B \cdot A C}+\frac{C D}{A C \cdot A D} \geqslant \frac{B D}{A B \cdot A D}, \\
+& A B \cdot C D+B C \cdot A D \geqslant A C \cdot B D .
+\end{aligned}
+$$
+等号成立条件是 $B^{\prime} 、 C^{\prime} 、 D^{\prime}$ 共线且 $C^{\prime}$ 在线段 $B^{\prime} D^{\prime}$ 上, 即 $A B C D$ 是圆内接凸四边形.
+%%<REMARK>%%
+注:事实上, 对直线上顺次排列的四点 $A 、 B 、 C 、 D$, 有 Euler 恒等式:
+$$
+A B \cdot C D+B C \cdot A D==A C \cdot B D .
+$$
+例 $2 A B$ 是圆 $O$ 的直径, $C$ 是 $A B$ 上一点, 过点 $C$ 作 $A B$ 的垂线交圆 $O$ 于点 $D$, 过点 $D$ 作圆 $O$ 的切线交 $A B$ 的延长线于点 $E, P$ 为圆 $O$ 上任意一点, 证明: $\angle B P C=\angle B P E$.
+证明如图(<FilePath:./figures/fig-c9i5.png>), 连结 $A D 、 A P 、 B D, D$ 点的极线过 $E$, 于是 $E$ 的极线过 $D$, 又 $E$ 的极线应与 $O E$ 垂直, 则 $C$ 在 $E$ 的极线上, 由性质 3 知, $A 、 B 、 C 、 E$ 成调和点列, 即 $P A 、 P B 、 P C$ 、 $P E$ 成调和线束, 再由 $A P \perp P B$ 知 $\angle C P B= \angle B P E$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 如图(<FilePath:./figures/fig-c9i6.png>), $Q$ 是以 $A B$ 为直径的圆上的一点, $Q \neq A 、 B, Q$ 在 $A B$ 上的投影为 $H$. 以 $Q$ 为圆心、 $Q H$ 为半径的圆与以 $A B$ 为直径的圆交于点 $C$ 、 $D$. 证明: $C D$ 平分线段 $Q H$. 
+%%<SOLUTION>%%
+证明:作以 $Q$ 为反演中心、 $\odot Q$ 为反演圆的反演变换.
+则 $\odot O$ 反演为直线 $C D, A B$ 反演为以 $Q H$ 为直径且与 $\odot Q$ 内切的圆 (如图(<FilePath:./figures/fig-c9i7.png>)).
+因为 $A B$ 是 $\odot O$ 的直径, 所以 $A B$ 与 $\odot O$ 正交.
+由反演的保角性知, $C D$ 与以 $Q H$ 为直径的圆正交, 故 $C D$ 平分线段 $Q H$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 四边形 $A B C D$ 内接于 $\odot O$, 对角线 $A C$ 交 $B D$ 于 $P$. 设 $\triangle A B P$ 、 $\triangle B C P 、 \triangle C D P 、 \triangle D A P$ 的外接圆圆心分别为 $O_1 、 O_2 、 O_3 、 O_4$. 求证: $O P 、 \mathrm{O}_1 \mathrm{O}_3 、 \mathrm{O}_2 \mathrm{O}_4$ 三线共点.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c9i8.png>), 作以 $P$ 为反演中心、 $P$ 关于 $\odot O$ 的幂为反演幂的反演变换.
+则 $\odot O$ 反演为本身, $\odot O_i (i=1,2,3,4)$ 反演为四边形 $A B C D$ 各边所在的直线, 过点 $P$ 的直线也反演为本身.
+由于直线 $P O_2$ 与 $\odot O_2$ 正交, 因此, 它们的反形也正交, 即 $\mathrm{PO}_2 \perp A D$.
+又易知 $O_4 O \perp A D$, 则 $P_2 / / O_4 O$.
+同理, $\mathrm{PO}_4 / / \mathrm{O}_2 \mathrm{O}$.
+因此, 四边形 $\mathrm{PO}_2 \mathrm{OO}_4$ 为平行四边形, $\mathrm{PO}$ 与 $\mathrm{O}_2 \mathrm{O}_4$ 互相平分.
+同理, $P O$ 与 $O_1 O_3$ 互相平分.
+故 $\mathrm{PO} 、 \mathrm{O}_1 \mathrm{O}_3 、 \mathrm{O}_2 \mathrm{O}_4$ 交于 $\mathrm{PO}$ 的中点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 已知圆 $O$ 外一点 $X$, 由 $X$ 向圆 $O$ 引两条切线, 切点分别为 $A 、 B$, 过点 $X$ 作直线, 与圆 $O$ 交于两点 $C 、 D$, 且满足 $C A \perp B D$. 若 $C A$ 与 $B D$ 交于点 $F, C D$ 与 $A B$ 交于点 $G, B D$ 与 $G X$ 的中垂线交于点 $H$. 证明: $X 、 F 、 G 、 H$ 四点共圆.
+%%<SOLUTION>%%
+证明:由配极性质 3 可知 $(X 、 G 、 D 、 C)$ 为调和点列, 而 $C A \perp B D$, 故由调和点列的有关性质知 $\angle G F D=\angle D F X$.
+如图(<FilePath:./figures/fig-c9i9.png>), 设 $\triangle G F X$ 的外接圆与 $B F$ 交于点 $H^{\prime}$. 则 $G H^{\prime}=X H^{\prime}$, 即点 $H^{\prime}$ 在 $G X$ 的中垂线上.
+从而, $H^{\prime}=H$. 因此, $X 、 F 、 G 、 H$ 四点共圆.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 如图(<FilePath:./figures/fig-c9i10.png>), $A B$ 为圆 $\omega$ 的直径, 直线 $l$ 切 $\odot \omega$ 于 $A$. C、M、D 在 $l$ 上满足 $C M=D M$, 又设 $B C 、 B D$ 交 $\odot \omega$ 于 $P 、 Q, \odot \omega$ 切线 $P R 、 Q R$ 交于 $R$. 求证: $R$ 在 $B M$ 上.
+%%<SOLUTION>%%
+证明:过 $B$ 作 $C D$ 平行线 $l^{\prime}$, 则 $B C 、 B D, B M 、 l^{\prime}$ 成调和线束, $A B$ 过圆心, $C D$ 为切线, $l^{\prime} / / C D$, 所以 $l^{\prime}$ 为圆的切线, 于是, $B B$ (过 $B$ 的切线)、 $B P$ 、 $B T 、 B Q$ 成调和线束, 因此结合定理 2 有, 四边形 $B P T Q$ 为调和四边形, 根据定理 $3, R$ 为直线 $P Q$ 的极点, 因此在直线 $B T(B M)$ 上.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 如图(<FilePath:./figures/fig-c9i11.png>), $\triangle A B C$ 的内切圆 $\odot I$ 切 $B C$ 、 $C A 、 A B$ 于 $D 、 E 、 F, A D$ 与 $\odot I$ 的另一个交点 $X$, $B X 、 C X$ 分别交 $\odot I$ 于 $P 、 Q$. 又记 $B C$ 中点为 $M$. 若 $A X=X D$, 求证: $F P / / E Q$.
+%%<SOLUTION>%%
+证明:连结 $E Q$, 设 $E D$ 与 $C X$ 交于 $R$, 由定理 3 知, 四边形 $E Q D X$ 为调和四边形, 于是 $E E$ (过 $E$ 的切线)、 $E D, E Q 、 E X$ 成调和线束, 或 $E A 、 E D, E X 、 E Q$ 成调和线束, 结合 $A X=X D$ 即知 $E Q / / A D$, 同理, $P F / / A D$, 故 $P F / / E Q$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 如图(<FilePath:./figures/fig-c9i12.png>), 设凸四边形 $A B C D$ 对角线交于 $O$ 点.
+$\triangle O A D, \triangle O B C$ 的外接圆交于 $O, M$ 两点, 直线 $O M$ 分别交 $\triangle O A B, \triangle O C D$ 的外接圆于 $T$, $S$ 两点.
+求证: $M$ 是线段 $T S$ 的中点.
+%%<SOLUTION>%%
+证明:以 $O$ 为反演中心, 单位长度为反演半径作反演.
+反形如图(<FilePath:./figures/fig-c9i13.png>) 所示, 则 $S M=T M$ 的充要条件是 $T O-O M=O S+O M$, 即 $T O+2 O M=O S$, 这就等价于 $\frac{1}{O S^{\prime}}+\frac{2}{O M^{\prime}}=\frac{1}{O T^{\prime}}$.
+由上章性质 2 知, $T^{\prime} 、 S^{\prime}, O 、 M^{\prime}$ 成调和点列, 于是 $\frac{1}{O S^{\prime}}+\frac{2}{O M^{\prime}}=\frac{1}{O T^{\prime}}$.
+%%<REMARK>%%
+注:两圆相交时, 通常以其中一个交点为反演中心, 则两圆反形为两条相交的直线, 交点为两圆的另一个交点的反演点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 如图(<FilePath:./figures/fig-c9i14.png>),已知圆 $O$ 中, $C G$ 为直径, 过点 $G$ 作一条直线.
+在直线上截取 $A G=B G(A$, $B$ 均在圆外). 连结 $A C, B C$. 分别交圆 $O$ 于点 $D$, $E$. 过 $D, E$ 分别作圆 $O$ 切线.
+交于一点 $P$, 连结 $P G$. 求证: $P G$ 垂直于 $A B$.
+%%<SOLUTION>%%
+证明:过 $C$ 作 $A B$ 平行线交圆 $O$ 于 $Y$, 过 $G$ 做圆 $O$ 切线交直线 $D E$ 于 $X$,则 $X$ 在 $G$ 的极线即过 $G$ 的切线上, $X$ 还在 $P$ 的极线 $D E$ 上,所以 $X$ 的极线过 $G 、 P$, 又 $A G=G B$, 故 $A 、 B, G 、 \infty$ 成调和点列, 所以 $C A 、 C B 、 C G 、 C \infty$ 成调和线束,于是 $D G E Y$ 是调和四边形.
+从而 $X Y$ 是切线, 即 $X$ 在 $Y$ 的极线上, 那么 $X$ 的极线 $G P$ 过 $Y$ 点, 结合 $G Y$ 垂直于 $C Y$, 即 $P G$ 垂直于 $A B$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 给定 4 个圆 $\odot S_1 、 \odot S_2 、 \odot S_3$ 、 $\odot S_4$, 设 $\odot S_1$ 和 $\odot S_2 、 \odot S_2$ 和 $\odot S_3 、 \odot S_3$ 和 $\odot S_4 、 \odot S_4$ 和 $\odot S_1$ 分别交于点 $A_1$ 和 $A_2 、 B_1$ 和 $B_2 、 C_1$ 和 $C_2 、 D_1$ 和 $D_2$. 若 $A_1 、 B_1 、 C_1 、 D_1$ 四点共圆 (或共线), 证明: $A_2 、 B_2 、 C_2 、 D_2$ 四点共圆(或共线).
+%%<SOLUTION>%%
+证明:作以 $A_1$ 为反演中心的反演变换, 于是, $\odot S_1 、 \odot S_2$ 反形为直线 $A_2^{\prime} D_1^{\prime} 、 A_2^{\prime} B_1^{\prime}, \odot S_3$ 、 $\odot S_4$ 反形为 $\triangle B_2^{\prime} C_1^{\prime} B_1^{\prime} 、 \triangle D_2^{\prime} C_1^{\prime} D_1^{\prime}$ 的外接圆, 这两个圆交于 $C_2^{\prime}$. 如图(<FilePath:./figures/fig-c9i15.png>) 只要证 $A_2^{\prime} 、 B_2^{\prime} 、 C_2^{\prime} 、 D_2^{\prime}$ 四点共圆即可.
+这就转化为三角形中的密克点问题:
+$\triangle A_2^{\prime} B_1^{\prime} D_1^{\prime}$ 中, $C_1^{\prime} 、 B_2^{\prime} 、 D_2^{\prime}$ 分别在边 $D_1^{\prime} B_1^{\prime} 、 B_1^{\prime} A_2^{\prime} 、 A_2^{\prime} D_1^{\prime}$ 上, 若 $\triangle D_2^{\prime} D_1^{\prime} C_1^{\prime}$ 的外接圆与 $\triangle B_1^{\prime} B_2^{\prime} C_1^{\prime}$ 的外接圆交于点 $C_2^{\prime}$, 则 $\triangle A_2^{\prime} D_2^{\prime} B_2^{\prime}$ 的外接圆也过该点.
+这个问题在圆的一章中就已经提到过.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 如图(<FilePath:./figures/fig-c9i16.png>), 凸四边形 $A B C D$ 有内切圆, 且内切圆分别切边 $A B 、 B C 、 C D 、 D A$ 于 $A_1 、 B_1 、 C_1$ 、 $D_1$, 点 $E 、 F 、 G 、 H$ 分别为线段 $A_1 B_1 、 B_1 C_1 、 C_1 D_1$ 、 $D_1 A_1$ 的中点, 证明: 四边形 $E F G H$ 为矩形的充要条件是 $A 、 B 、 C 、 D$ 共圆.
+%%<SOLUTION>%%
+证明:以 $A B C D$ 内切圆为反演圆作反演变换, 则由反演定理 4, $A 、 B 、 C 、 D$ 的反点分别为 $H 、 E 、 F 、 G$, 因为不过反演中心的圆的反形仍是一个圆, 于是 $A 、 B 、 C 、 D$ 共圆等价于 $E 、 F 、 G 、 H$ 共圆.
+注意 $E 、 F 、 G 、 H$ 分别是为四边形 $A_1 B_1 C_1 D_1$ 四边形的中点, 所以四边形 $E F G H$ 是一个平行四边形, 因而 $E 、 F 、 G 、 H$ 四点共圆的充要条件是平行四边形 $E F G H$ 是矩形, 这又等价于 $A 、 B 、 C 、 D$ 共圆.
+%%<REMARK>%%
+注:此题曾在圆的初步中讲解过, 这里给出一种反演变换的解法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 如图(<FilePath:./figures/fig-c9i17.png>), 圆内接四边形 $A B C D$ 内有一点 $P$ 满足 $\angle A P D=\angle A B P+\angle D C P . P$ 在 $A B 、 B C 、 C D$ 上射影为 $E 、 F 、 G$. 证明: $\triangle E F G \backsim \triangle A P D$.
+%%<SOLUTION>%%
+证明:法一: 因为 $\angle E F G=\angle E F P+\angle G F P= \angle E B P+\angle G C P=\angle A P D$, 故只需证 $\frac{A P}{P D}=\frac{E F}{F G}$. 又 $\frac{E F}{F G}=\frac{P B \sin B}{P C \sin C}=\frac{P B \cdot A C}{P C \cdot B D}$, 故只需证
+$$
+\frac{A P}{P D}=\frac{P B \cdot A C}{P C \cdot B D} \Leftrightarrow \frac{A P \cdot P C}{A C}=\frac{B P \cdot P D}{B D} . \label{eq1}
+$$
+又因 $\angle A P D=\angle A B P+\angle D C P$, 所以 $\triangle A B P$ 的外接圆与 $\triangle D C P$ 外接圆外切于点 $P$.
+作以 $P$ 为反演中心, $P$ 对 $A B C D$ 外接圆的幂为反演幂作反演变换.
+则 $A 、 B 、 C 、 D$ 分别变为 $A^{\prime} 、 B^{\prime} 、 C^{\prime} 、 D^{\prime}$, 且 $A^{\prime}$ 是 $A P$ 与 $A B C D$ 外接圆的交点, $B^{\prime} 、 C^{\prime} 、 D^{\prime}$ 类似.
+因为 $\triangle A B P 、 \triangle C D P$ 外接圆外切于 $P$.
+故用反演性质知 $A^{\prime} B^{\prime} / / C^{\prime} D^{\prime} \Rightarrow A^{\prime} B^{\prime} C^{\prime} D^{\prime}$ 为等腰梯形 $\Rightarrow A^{\prime} C^{\prime}=B^{\prime} D^{\prime}$.
+由反演变换距离公式知
+$A^{\prime} C^{\prime}=A C \times \frac{|d|}{P A \cdot P C}, B^{\prime} D^{\prime}=B D \times \frac{|d|}{P B \cdot P D}$ ( $d$ 为反演幕 $)$.
+所以式\ref{eq1} $\Leftrightarrow A^{\prime} C^{\prime}=B^{\prime} D^{\prime}$, 此式已证明成立,故原题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 如图(<FilePath:./figures/fig-c9i17.png>), 圆内接四边形 $A B C D$ 内有一点 $P$ 满足 $\angle A P D=\angle A B P+\angle D C P . P$ 在 $A B 、 B C 、 C D$ 上射影为 $E 、 F 、 G$. 证明: $\triangle E F G \backsim \triangle A P D$.
+%%<SOLUTION>%%
+法二: 如图(<FilePath:./figures/fig-c9i18.png>), 作 $\angle A P T=\angle A B P$, 其中 $T$ 为 $A D$ 上的点, $T P$ 父 $B C$ 于 $S$.
+由 $\angle A P D=\angle A B P+\angle D C P$ 知, $\angle T P D=\angle D C P$.
+易知 $P T$ 为 $\triangle A B P 、 \triangle D C P$ 外接圆的切线.
+由根轴定理知 $B A 、 C D 、 S T$ 交于一点, 设为 $R$.
+$$
+\begin{aligned}
+\angle P A D & =\angle B A D-\angle B A P=\pi-\angle B C R-\angle B P S \\
+& =\angle B P R-\angle B C R(\angle B P R=\pi-\angle B P S) \\
+& =\angle B P R-(\angle B S R-\angle S R C) \\
+& =\angle B P R-\angle B S R+\angle S R C \\
+& =\angle P B S+\angle P E G \\
+& =\angle P E F+\angle P E G=\angle F E G .
+\end{aligned} \label{eq1}
+$$
+由已知条件易知 $P 、 E 、 B 、 F$ 和 $P 、 G 、 C 、 F$ 都有四点共圆.
+$$
+\begin{aligned}
+\angle A B P=\angle E F P & , \angle P C G=\angle P F G, \text { 故 } \\
+\angle A P D & =\angle A B P+\angle P C G \\
+& =\angle E F G+\angle P F G=\angle E F G
+\end{aligned} \label{eq2}
+$$
+由式\ref{eq1}、\ref{eq2}知 $\triangle E F G \backsim \triangle A P D$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13. 双心四边形 $A B C D, A C \cap B D=E$, 内、外心为 $I 、 O$. 求证: $I 、 O 、 E$ 三点共线.
+%%<SOLUTION>%%
+证明:先证一个引理.
+引理: 圆外切四边形 $A B C D$, 切点为 $M 、 N 、 K$ 、 $L$, 则 $A C 、 B D 、 M K 、 N L$ 四线共点.
+引理的证明: 如图(<FilePath:./figures/fig-c9i19.png>), 设 $A C \cap K M=G$, $L N \cap K M=G^{\prime}$, 由正弦定理得
+$$
+\begin{aligned}
+\frac{G C}{A G} & =\frac{C M \frac{\sin \angle G M C}{\sin \angle C G M}}{A K \frac{\sin \angle A K G}{\sin \angle A G K}} \\
+& =\frac{C M}{A K} \frac{\sin \angle G M C}{\sin \angle A K G} \frac{\sin \angle A G K}{\sin \angle C G M}=\frac{C M}{A K} .
+\end{aligned}
+$$
+同理 $\frac{G^{\prime} C}{A G^{\prime}}=\frac{C L}{A N}$.
+所以 $\frac{G^{\prime} C}{A G^{\prime}}=\frac{C L}{A N}=\frac{C M}{A K}=\frac{C G}{A G}$, 即 $G=G^{\prime}$.
+故 $A C 、 N L 、 K M$ 三线共点.
+同理 $B D 、 K M 、 L N$ 三线共点,引理得证.
+回到原题: 如图(<FilePath:./figures/fig-c9i20.png>), 切点仍记为 $K 、 L 、 M$ 、 $N$, 由引理 $K M \cap L N=E$.
+以 $I$ 为中心, $\odot(K N M)$ 为反演圆作反演, $A^{\prime}$ 、 $B^{\prime} 、 C^{\prime} 、 D^{\prime}$ 分别为 $K L M N$ 四边中点.
+由 $B^{\prime} C^{\prime} / / K M / / A^{\prime} D^{\prime}, A^{\prime} B^{\prime} / / N L / / D^{\prime} C^{\prime}$ 知 $A^{\prime} B^{\prime} C^{\prime} D^{\prime}$ 为平行四边形.
+而 $A 、 B 、 C 、 D$ 共圆知 $A^{\prime} 、 B^{\prime} 、 C^{\prime} 、 D^{\prime}$ 共圆, $A^{\prime} B^{\prime} C^{\prime} D^{\prime}$ 必为矩形, 其中心设为 $Q$, 且有 $K M \perp L N$.
+由反演性质知 $Q 、 I 、 O$ 三点共线.
+设 $L N 、 K M$ 中点为 $P 、 R$, 则
+$$
+\begin{aligned}
+\overrightarrow{I Q^{\prime}} & =\frac{1}{4}\left(\overrightarrow{I A^{\prime}}+\overrightarrow{I B^{\prime}}+\overrightarrow{I C^{\prime}}+\overrightarrow{I D^{\prime}}\right) \\
+& =\frac{1}{4}(\overrightarrow{I K}+\overrightarrow{I L}+\overrightarrow{I M}+\overrightarrow{I N})=\frac{1}{2}(\overrightarrow{I R}+\overrightarrow{I P}) .
+\end{aligned}
+$$
+由垂径定理知 $P I R E$ 为矩形.
+从而 $\overrightarrow{I R}+\overrightarrow{I P}=\overrightarrow{I E}$.
+故 $\overrightarrow{I Q}=\frac{1}{2} \overrightarrow{I E}$, 即 $I 、 Q 、 E$ 三点共线, 从而 $O 、 I 、 E$ 三点共线.
+%%PROBLEM_END%%
+
+

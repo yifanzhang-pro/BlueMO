@@ -1,0 +1,574 @@
+
+%%TEXT_BEGIN%%
+函数的奇偶性、单调性、周期性是函数的最基本的性质, 它们反映了函数的重要的代数特征.
+2.1 奇偶性定义 2.1 设函数 $f(x)$ 的定义域为 $D$, 且 $D$ 是关于原点对称的数集.
+若对于任意的 $x \in D$, 都有
+$$
+f(-x)=-f(x),
+$$
+则称 $f(x)$ 是奇函数.
+若对于任意的 $x \in D$, 都有
+$$
+f(-x)=f(x),
+$$
+则称 $f(x)$ 是偶函数.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+2.2 单调性定义 2.2 设函数 $f(x)$ 的定义域为 $I$. 如果对于任意的 $x_1, x_2 \in I$, 当$x_1<x_2$ 时, 都有 $f\left(x_1\right)<f\left(x_2\right)$, 那么就说 $y=f(x)$ 在此区间上是增函数,如图(<FilePath:./figures/fig-c2d2-1.png>).
+函数的定义域为 $I$, 如果对于任意的 $x_1, x_2 \in I$, 当 $x_1<x_2$ 时, 都有 $f\left(x_1\right)>f\left(x_2\right)$, 那么就说 $y=f(x)$ 在此区间上是减函数,如图(<FilePath:./figures/fig-c2d2-2.png>).
+如果函数 $y=f(x)$ 在某区间上是增函数或减函数,那么就说 $y=f(x)$ 在此区间上有 (严格的) 单调性,这一区间叫做 $y=f(x)$ 的单调区间.
+对于函数的单调性, 我们应该注意以下儿点:
+(1)函数的单调性是函数的一个重要性质, 但讨论函数的单调性必须在定义域内进行, 即函数的单调区间是定义域的子区间.
+(2)函数的单调性是对某一区间而言的,要指明函数的单调性,必须指明是在其定义域的哪一个子区间上,有的函数在其整个定义域上都是增函数, 有的函数在其整个定义域上都是减函数; 而有的函数在定义域的一些子区间上是增函数,在另一些子区间上是减函数.
+(3)某个函数在一个区间上是增(减)函数,在另一区间上也是增(减) 函数,绝不能说它在这两个区间的并集上也是增(减) 函数.
+例如, $y=\frac{1}{x}$ 在 $(0,+\infty)$ 上是减函数, 在 $(-\infty, 0)$ 上也是减函数, 它有两个减区间, 但绝不能说 $y=\frac{1}{x}$ 在 $(-\infty, 0) \cup(0,+\infty)$ 上也是减函数.
+(4)函数的单调性反映在其图象上是指函数图象的走势.
+在单调区间上, 增函数的图象是上升的, 减函数的图象是下降的.
+(5)中学数学教材中所指的单调性是严格单调的, 即必须是 $f\left(x_1\right)< f\left(x_2\right)$ 或 $f\left(x_1\right)>f\left(x_2\right)$, 绝不能是 $f\left(x_1\right) \leqslant f\left(x_2\right)$ 或 $f\left(x_1\right) \geqslant f\left(x_2\right)$.
+关于函数的单调性, 有如下性质:
+(1) 若函数 $y=f(x)$ 和 $y=g(x)$ 在公共区间 $A$ 上都是增(减) 函数, 则函数 $y=f(x)+g(x)$ 在 $A$ 上也是增(减) 函数.
+(2) 若两个正值函数 $y=f(x)$ 和 $y=g(x)$ 在公共区间 $A$ 上都是增(减)函数,则函数 $y=f(x) g(x)$ 在 $A$ 上也是增(减) 函数;
+若两个负值函数 $y=f(x)$ 和 $y=g(x)$ 在公共区间 $A$ 上都是增(减) 函数, 则函数 $y=f(x) g(x)$ 在 $A$ 上是减 (增) 函数.
+(3) 若函数 $y=f(x)$ 是区间 $A$ 上的增(减) 函数, 值域为 $C$, 则其反函数 $y=f^{-1}(x)$ 是 $C$ 上的增 (减) 函数.
+(4) 若函数 $y=f(u)$ 和 $u=g(x)$ 在相关区间上是单调函数, 则函数 $y= f(g(x))$ 在此区间上也是单调函数; 并且若 $y=f(u)$ 和 $u=g(x)$ 的单调性相同(相反), 则 $y=f(g(x))$ 是增(减) 函数.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+2.3 周期性定义 2.3 设函数 $f(x)$ 的定义域为 $D$, 如果存在一个常数 $T \neq 0$, 使得对每个 $x \in D$, 都有
+$$
+f(x+T)=f(x),
+$$
+那么称 $f(x)$ 是周期函数, $T$ 为 $f(x)$ 的一个周期.
+如果 $f(x)$ 的所有正周期中存在最小值 $T_0$, 那么称 $T_0$ 为周期函数 $f(x)$ 的最小正周期.
+一般说函数的周期都是指最小正周期.
+函数 $f(x)=\sin x, f(x)=\cos x$ 的周期为 $2 \pi$, 函数 $f(x)=\tan x$, $f(x)=\cot x$ 的周期为 $\pi$. 函数 $f(x)=x-[x], x \in(-\infty,+\infty)$ 的周期为 1. 常量函数 $f(x)=c$ 是以任何正数为周期的周期函数, 但不存在最小正周期.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1 已知 $f(x)$ 是定义在 $[-6,6]$ 上的奇函数, 且 $f(x)$ 在 $[0,3]$ 上是 $x$ 的一次函数, 在 $[3,6]$ 上是 $x$ 的二次函数.
+当 $3 \leqslant x \leqslant 6$ 时, $f(x) \leqslant f(5)=3$, $f(6)=2$, 求函数 $f(x)$ 的解析式.
+分析由于 $f(x)$ 是 $[-6,6]$ 上的奇函数, 所以我们只需先求出 $f(x)$ 在 $[0,6]$ 上的表达式即可.
+再把 $[0,6]$ 分成两个区间 $[0,3]$ 和 $[3,6]$, 分别求出 $f(x)$ 的解析式, 关键是求出 $f(3)$.
+%%<SOLUTION>%%
+解:由于 $f(x)$ 在 $[3,6]$ 上是二次函数, 且 $f(5)$ 是它的最大值, 故可设
+$$
+f(x)=a(x-5)^2+3,3 \leqslant x \leqslant 6,
+$$
+所以
+$$
+2=f(6)=a(6-5)^2+3 .
+$$
+解方程, 得 $a==-1$.
+故
+$$
+f(x)=-(x-5)^2+3,3 \leqslant x \leqslant 6 .
+$$
+从上可知, $f(3)=-1$. 又 $f(x)$ 是奇函数, 所以 $f(0)=0$, 设
+$$
+\begin{gathered}
+f(x)=k x, 0 \leqslant x \leqslant 3, \\
+-1=f(3)=3 k .
+\end{gathered}
+$$
+解方程, 得 $k=-\frac{1}{3}$.
+所以
+$$
+f(x)=-\frac{1}{3} x, 0 \leqslant x \leqslant 3 .
+$$
+由于 $f(x)=-f(-x)$, 所以当 $-6 \leqslant x \leqslant-3$ 时, $3 \leqslant-x \leqslant 6$,于是
+$$
+f(x)=-f(-x)=-\left[-(-x-5)^2+3\right]=(x+5)^2-3 ;
+$$
+当 $-3 \leqslant x \leqslant 0$ 时, $0 \leqslant-x \leqslant 3$, 于是
+$$
+f(x)=-f(-x)=-\left(\frac{1}{3} x\right)=-\frac{1}{3} x .
+$$
+综上可知, $f(x)$ 的解析式为
+$$
+f(x)= \begin{cases}(x+5)^2-3, & \text { 当 }-6 \leqslant x<-3 \text { 时, } \\ -\frac{1}{3} x, & \text { 当 }-3 \leqslant x<3 \text { 时, } \\ -(x-5)^2+3, & \text { 当 } 3 \leqslant x \leqslant 6 \text { 时.
+}\end{cases}
+$$
+说明若奇函数的定义域 $D$ 包含数 0 , 则必有 $f(0)=0$, 这是因为 $f(0)=-f(-0)$, 从而 $f(0)=0$.
+从奇函数和偶函数的定义知, 奇函数的图象关于原点对称, 偶函数的图象关于 $y$ 轴对称.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2 证明: 任何定义域关于原点对称的函数都可以表示为一个奇函数和一个偶函数的和.
+%%<SOLUTION>%%
+证.
+设定义域关于原点对称的函数为 $f(x)$, 则 $f(x)$ 与 $f(-x)(x \in D)$ 同时有意义.
+因为
+$$
+f(x)=\frac{f(x)+f(-x)}{2}+\frac{f(x)-f(-x)}{2} .
+$$
+所以, 令 $f_1(x)=\frac{f(x)+f(-x)}{2}, f_2(x)=\frac{f(x)-f(-x)}{2}$, 下面我们来验证 $f_1(x)$ 是偶函数, $f_2(x)$ 是奇函数.
+$$
+f_1(-x)=\frac{f(-x)+f(x)}{2}=f_1(x),
+$$
+$$
+f_2(-x)=\frac{f(-x)-f(x)}{2}=-\frac{f(x)-f(-x)}{2}=-f_2(x) .
+$$
+故 $f_1(x)$ 为偶函数, $f_2(x)$ 为奇函数, 从而命题得证.
+说明证明中的 $f_1(x)$ 和 $f_2(x)$ 是如何想出来的呢? 其实, $f_1(x)$ 和 $f_2(x)$ 是可以 “解” 出来的.
+设 $f(x)=f_1(x)+f_2(x)$, 其中 $f_1(x)$ 是偶函数, $f_2(x)$ 是奇函数.
+则解方程组, 得
+$$
+\begin{gathered}
+f(x)=f_1(x)+f_2(x), \\
+f(-x)=f_1(x)-f_2(x), \\
+f_1(x)=\frac{f(x)+f(-x)}{2}, \\
+f_2(x)=\frac{f(x)-f(-x)}{2} .
+\end{gathered}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3 设函数 $f(x)$ 对所有的实数 $x$ 都满足 $f(x+2 \pi)=f(x)$, 求证: 存在 4 个函数 $f_i(x)(i=1,2,3,4)$ 满足:
+(1) 对 $i=1,2,3,4, f_i(x)$ 是偶函数, 且对任意的实数 $x$, 有 $f_i(x+ \pi)=f_i(x)$;
+(2) 对任意的实数 $x$, 有 $f(x)=f_1(x)+f_2(x) \cos x+f_3(x) \sin x+ f_4(x) \sin 2 x$. 
+%%<SOLUTION>%%
+证记 $g(x)=\frac{f(x)+f(-x)}{2}, h(x)=\frac{f(x)-f(-x)}{2}$, 则 $f(x)= g(x)+h(x)$, 且 $g(x)$ 是偶函数, $h(x)$ 是奇函数, 对任意的 $x \in \mathbf{R}, g(x+2 \pi)= g(x), h(x+2 \pi)=h(x)$. 令
+$$
+\begin{aligned}
+& f_1(x)=\frac{g(x)+g(x+\pi)}{2}, \\
+& f_2(x)= \begin{cases}\frac{g(x)-g(x+\pi)}{2 \cos x}, & x \neq k \pi+\frac{\pi}{2}, \\
+0, & x=k \pi+\frac{\pi}{2},\end{cases} \\
+& f_3(x)= \begin{cases}\frac{h(x)-h(x+\pi)}{2 \sin x}, & x \neq k \pi, \\
+0, & x=k \pi,\end{cases} \\
+& f_4(x)=\left\{\begin{array}{ll}
+\frac{h(x)+h(x+\pi)}{2 \sin 2 x}, & x \neq \frac{k \pi}{2}, \\
+0, & x=\frac{k \pi}{2},
+\end{array} \text { 其中 } k\right. \text { 为任意整数.
+}
+\end{aligned}
+$$
+容易验证 $f_i(x), i=1,2,3,4$ 是偶函数, 且对任意的 $x \in \mathbf{R}, f_i(x+\pi)= f_i(x), i=1,2,3,4$.
+下证对任意的 $x \in \mathbf{R}$, 有 $f_1(x)+f_2(x) \cos x=g(x)$.
+当 $x \neq k \pi+\frac{\pi}{2}$ 时, 显然成立; 当 $x=k \pi+\frac{\pi}{2}$ 时, 因为
+$$
+f_1(x)+f_2(x) \cos x=f_1(x)=\frac{g(x)+g(x+\pi)}{2}
+$$
+而
+$$
+\begin{aligned}
+g(x+\pi) & =g\left(k \pi+\frac{3 \pi}{2}\right)=g\left(k \pi+\frac{3 \pi}{2}-2(k+1) \pi\right) \\
+& =g\left(-k \pi-\frac{\pi}{2}\right)=g\left(k \pi+\frac{\pi}{2}\right)=g(x),
+\end{aligned}
+$$
+故对任意的 $x \in \mathbf{R}, f_1(x)+f_2(x) \cos x=g(x)$.
+下证对任意的 $x \in \mathbf{R}$, 有 $f_3(x) \sin x+f_4(x) \sin 2 x=h(x)$.
+当 $x \neq \frac{k \pi}{2}$ 时, 显然成立; 当 $x=k \pi$ 时, $h(x)=h(k \pi)=h(k \pi-2 k \pi)= h(-k \pi)=-h(k \pi)$, 所以 $h(x)=h(k \pi)=0$, 而此时
+$$
+f_3(x) \sin x+f_4(x) \sin 2 x=0,
+$$
+故 $h(x)=f_3(x) \sin x+f_4(x) \sin 2 x$;
+当 $x=k \pi+\frac{\pi}{2}$ 时,
+$$
+\begin{aligned}
+h(x+\pi) & =h\left(k \pi+\frac{3 \pi}{2}\right)=h\left(k \pi+\frac{3 \pi}{2}-2(k+1) \pi\right) \\
+& =h\left(-k \pi-\frac{\pi}{2}\right)=-h\left(k \pi+\frac{\pi}{2}\right)=-h(x),
+\end{aligned}
+$$
+故 $f_3(x) \sin x=\frac{h(x)-h(x+\pi)}{2}=h(x)$, 又 $f_4(x) \sin 2 x=0$, 从而有
+$$
+h(x)=f_3(x) \sin x+f_4(x) \sin 2 x .
+$$
+于是, 对任意的 $x \in \mathbf{R}$, 有 $f_3(x) \sin x+f_4(x) \sin 2 x=h(x)$. 综上所述,结论得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4 求 $y=(3 x-1)\left(\sqrt{9 x^2-6 x+5}+1\right)+(2 x-3)\left(\sqrt{4 x^2-12 x+13}+ 1\right)$ 的图象与 $x$ 轴的交点坐标.
+%%<SOLUTION>%%
+分析:仔细观察所给的式子, 发现
+$$
+y=(3 x-1)\left(\sqrt{(3 x-1)^2+4}+1\right)+(2 x-3)\left(\sqrt{(2 x-3)^2+4}+1\right),
+$$
+从而找到了解题途径.
+解因为 $y=(3 x-1)\left(\sqrt{(3 x-1)^2+4}+1\right)+(2 x-3) \left(\sqrt{(2 x-3)^2+4}+1\right)$.
+令 $f(t)=t\left(\sqrt{t^2+4}+1\right)$, 易知 $f(t)$ 是奇函数, 且 $f(t)$ 是增函数, 所以
+$$
+y=f(3 x-1)+f(2 x-3) \text {. }
+$$
+当 $y=0$ 时, $f(3 x-1)=-f(2 x-3)=f(3-2 x)$, 所以
+$$
+3 x-1=3-2 x .
+$$
+解方程, 得 $x=\frac{4}{5}$.
+故图象与 $x$ 轴的交点坐标为 $\left(\frac{4}{5}, 0\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5 设二次函数 $f(x)=a x^2+b x+c$ 的图象以 $y$ 轴为对称轴.
+已知 $a+b=1$, 并且若点 $(x, y)$ 在 $y=f(x)$ 的图象上, 则点 $\left(x, y^2+1\right)$ 在函数 $g(x)=f(f(x))$ 的图象上.
+(1) 求 $g(x)$ 的解析式;
+(2) 设 $F(x)=g(x)-\lambda f(x)$, 问是否存在实数 $\lambda$, 使 $F(x)$ 在 $\left(-\infty,-\frac{\sqrt{2}}{2}\right)$ 内是减函数, 在 $\left(-\frac{\sqrt{2}}{2}, 0\right)$ 内是增函数.
+%%<SOLUTION>%%
+解:(1) 因 $f(x)=a x^2+b x+c$ 的对称轴为 $y$ 轴, 即 $-\frac{b}{2 a}=0$, 故 $b=0$,
+从而 $a=1, f(x)=x^2+c$.
+设 $\left(x_0, y_0\right)$ 在 $y=f(x)$ 的图象上, 由题意知, 点 $\left(x_0, y_0^2+1\right)$ 在 $y= f(f(x))$ 的图象上, 即
+$$
+\begin{gathered}
+y_0=x_0^2+c, \\
+y_0^2+1=\left(x_0^2+c\right)^2+c .
+\end{gathered}
+$$
+从上面两式易知 $c=1$. 因此 $f(x)=x^2+1$. 进而
+$$
+g(x)=\left(x^2+1\right)^2+1 .
+$$
+(2) 由第(1) 小题, 得
+$$
+F(x)=g(x)-\lambda f(x)=x^4+(2-\lambda) x^2+2-\lambda .
+$$
+设 $x_1<x_2<-\frac{\sqrt{2}}{2}$, 则
+$$
+F\left(x_1\right)-F\left(x_2\right)=\left(x_1^2-x_2^2\right)\left(x_1^2+x_2^2+2-\lambda\right) .
+$$
+要使 $F(x)$ 在 $\left(-\infty,-\frac{\sqrt{2}}{2}\right)$ 内为减函数, 只需 $F\left(x_1\right)-F\left(x_2\right)>0$, 又因为 $x_1^2-x_2^2>0$, 故只要
+$$
+x_1^2+x_2^2+2-\lambda>0 \text {. }
+$$
+所以
+$$
+\lambda<x_1^2+x_2^2+2 \text {. }
+$$
+然而当 $x_1, x_2 \in\left(-\infty,-\frac{\sqrt{2}}{2}\right)$ 时,
+$$
+x_1^2+x_2^2+2>3 \text {. }
+$$
+因此只要 $\lambda \leqslant 3, F(x)$ 在 $\left(-\infty,-\frac{\sqrt{2}}{2}\right)$ 内是减函数.
+同理, 当 $\lambda \geqslant 3$ 时, $F(x)$ 在 $\left(-\frac{\sqrt{2}}{2}, 0\right)$ 内是增函数.
+综上讨论,存在唯一的实数 $\lambda=3$, 使得对应的 $F(x)$ 满足要求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6 已知 $x, y \in\left[-\frac{\pi}{4}, \frac{\pi}{4}\right], a \in \mathbf{R}$, 且 $\left\{\begin{array}{l}x^3+\sin x-2 a=0, \\ 4 y^3+\sin y \cos y+a=0 .\end{array}\right.$ 求 $\cos (x+2 y)$ 的值.
+%%<SOLUTION>%%
+分析:此题的特点就是人口非常小, 所求的 $\cos (x+2 y)$ 的值好像与题设条件没有什么关系.
+我们再对方程组中的三个变量 $x, y, a$ 的系数进行观察,
+大胆想像, 从中利用立方和公式、倍角公式、 $t^3+\sin t$ 在 $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$ 的单调性, 就能找到一条通向胜利之路.
+解由于
+$$
+\left\{\begin{array}{l}
+x^3+\sin x-2 a=0, \\
+4 y^3+\sin y \cos y+a=0 .
+\end{array}\right.
+$$
+将第二式乘以 2 与第一式相加并整理, 得
+$$
+x^3+\sin x=(-2 y)^3+\sin (-2 y) .
+$$
+已知 $x, y \in\left[-\frac{\pi}{4}, \frac{\pi}{4}\right]$,所以 $x,-2 y \in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$.
+构造函数 $f(t)=t^3+\sin t, t \in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$. 则由 $f(t)=t^3+\sin t$ 的单调性可知 $x=-2 y$, 所以 $x+2 y=0$.
+于是 $\cos (x+2 y)=1$.
+评注这是一道经典的好题.
+好在它既能考查学生基础知识的掌握程度, 又能考查学生对基础知识的灵活应用能力, 还能考查学生对各数学分支的基础知识的综合整合能力.
+其中涉及的知识点有代数公式, 方程变形, 三角公式, 函数单调性等等.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7 已知函数 $f(x)=\frac{\sin (\pi x)-\cos (\pi x)+2}{\sqrt{x}}\left(\frac{1}{4} \leqslant x \leqslant \frac{5}{4}\right)$, 求 $f(x)$ 的最小值.
+%%<SOLUTION>%%
+解:因为 $f(x)=\frac{\sqrt{2} \sin \left(\pi x-\frac{\pi}{4}\right)+2}{\sqrt{x}}\left(\frac{1}{4} \leqslant x \leqslant \frac{5}{4}\right)$, 故可设 $g(x)= \sqrt{2} \sin \left(\pi x-\frac{\pi}{4}\right)\left(\frac{1}{4} \leqslant x \leqslant \frac{5}{4}\right)$, 则 $g(x) \geqslant 0, g(x)$ 在 $\left[\frac{1}{4}, \frac{3}{4}\right]$ 上是增函数, 在 $\left[\frac{3}{4}, \frac{5}{4}\right]$ 上是减函数, 且 $y=g(x)$ 的图象关于直线 $x=\frac{3}{4}$ 对称.
+那么对任意 $x_1 \in\left[-\frac{1}{4}, \frac{3}{4}\right]$, 存在 $x_2 \in\left[\frac{3}{4}, \frac{5}{4}\right]$, 使得 $g\left(x_2\right)=g\left(x_1\right)$. 于是
+$$
+\begin{aligned}
+f\left(x_1\right) & =\frac{g\left(x_1\right)+2}{\sqrt{x_1}}=\frac{g\left(x_2\right)+2}{\sqrt{x_1}} \\
+& \geqslant \frac{g\left(x_2\right)+2}{\sqrt{x_2}}=f\left(x_2\right),
+\end{aligned}
+$$
+而 $f(x)$ 在 $\left[\frac{3}{4}, \frac{5}{4}\right]$ 上是减函数, 所以 $f(x) \geqslant f\left(\frac{5}{4}\right)=\frac{4 \sqrt{5}}{5}$, 即 $f(x)$ 在
+$\left[\frac{1}{4}, \frac{5}{4}\right]$ 上的最小值是 $\frac{4 \sqrt{5}}{5}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8 证明: 函数 $3 x^2+x$ 可以表示为两个单调递增的多项式函数之差.
+%%<SOLUTION>%%
+证因为有恒等式
+$$
+3 x^2+x \equiv(x+1)^3-\left(x^3+2 x+1\right),
+$$
+而函数 $g(x)=(x+1)^3, h(x)=x^3+2 x+1$ 都是单调递增的多项式函数, 从而命题得证.
+说明一般地, 任意实系数多项式可表示为两个单调递增的多项式函数之差.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9 证明: 函数 $f(x)=\sin x^2$ 不是周期函数.
+%%<SOLUTION>%%
+证我们常用反证法来证明某个函数不是周期函数.
+假设 $f(x)=\sin x^2$ 是周期函数, $T$ 是它的一个正周期, 那么对每个 $x \in \mathbf{R}$, 有
+$$
+\sin (x+T)^2=\sin x^2 .
+$$
+令 $x=0$, 得 $\sin T^2=0$. 所以 $T^2=k \pi, T=\sqrt{k \pi}$, 其中 $k$ 是某个正整数, 代入(1)式, 得
+$$
+\sin (x+\sqrt{k \pi})^2=\sin x^2 .
+$$
+在(2)中令 $x=\sqrt{2} T(=\sqrt{2 k \pi})$, 得
+$$
+\sin (\sqrt{2} T+T)^2=\sin (\sqrt{2} T)^2,
+$$
+即
+$$
+\sin \left[(\sqrt{2}+1)^2 k \pi\right]=\sin 2 k \pi=0 .
+$$
+所以
+$$
+\begin{gathered}
+(\sqrt{2}+1)^2 k \pi=l \pi(l \in \mathbf{N}), \\
+(\sqrt{2}+1)^2=\frac{l}{k} .
+\end{gathered}
+$$
+由于 $(\sqrt{2}+1)^2=3+2 \sqrt{2}$ 是无理数, 而 $\frac{l}{k}$ 是有理数, 矛盾.
+因此 $f(x)=\sin x^2$ 不是周期函数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10 证明: 若函数 $y=f(x)$ 在 $\mathbf{R}$ 上的图象关于点 $A\left(a, y_0\right)$ 和直线 $x=b(b>a)$ 皆对称, 则函数 $f(x)$ 是 $\mathbf{R}$ 上的周期函数.
+%%<SOLUTION>%%
+证已知函数 $y=f(x)$ 的图象关于点 $A\left(a, y_0\right)$ 与直线 $x=b$ 对称, 所以对任意 $x \in \mathbf{R}$, 分别有
+$$
+\begin{aligned}
+f(a+x)-y_0 & =y_0-f(a-x), \\
+f(b+x) & =f(b-x) .
+\end{aligned}
+$$
+下面证明 $4(b-a)$ 是 $f(x)$ 的周期.
+事实上, 对任意 $x \in \mathbf{R}$, 反复利用 (1), (2), 有
+$$
+\begin{aligned}
+f[x+4(b-a)] & =f[b+(x+3 b-4 a)] \\
+& =f[b-(x+3 b-4 a)] \\
+& =f[a+(3 a-2 b-x)] \\
+& =2 y_0-f[a-(3 a-2 b-x)] \\
+& =2 y_0-f[b+(b-2 a+x)] \\
+& =2 y_0-f[b-(b-2 a+x)] \\
+& =2 y_0-f[a+(a-x)] \\
+& =2 y_0-2 y_0+f[a-(a-x)] \\
+& =f(x) .
+\end{aligned}
+$$
+同理可证 $f[x-4(b-a)]=f(x)$.
+所以 $4(b-a)$ 是函数 $f(x)$ 在 $\mathbf{R}$ 上的一个周期.
+故 $f(x)$ 是周期函数.
+用完全相同的方法可以证明, 若函数 $f(x)$ 在 $\mathbf{R}$ 上的图象关于直线 $x=a$ 与 $x=b(b>a)$ 对称, 则函数 $f(x)$ 是周期函数 $(2(b-a)$ 是它的一个周期).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11 设 $f(x)$ 是定义在 $\mathbf{R}$ 上的偶函数, 其图象关于直线 $x=1$ 对称, 对任意 $x_1, x_2 \in\left[0, \frac{1}{2}\right]$, 都有 $f\left(x_1+x_2\right)=f\left(x_1\right) f\left(x_2\right)$, 且 $f(1)=a>0$.
+(1) 求 $f\left(\frac{1}{2}\right)$ 和 $f\left(\frac{1}{4}\right)$;
+(2) 证明 $f(x)$ 是周期函数;
+(3) 记 $a_n=f\left(2 n+\frac{1}{2 n}\right)$, 求 $\lim _{n \rightarrow \infty}\left(\ln a_n\right)$.
+%%<SOLUTION>%%
+解:(1) 令 $x_1=x_2=\frac{x}{2} \in\left[0, \frac{1}{2}\right]$, 即 $x \in[0,1]$, 有
+$$
+\begin{aligned}
+& f(x)=f\left(\frac{x}{2}\right) f\left(\frac{x}{2}\right) \geqslant 0, x \in[0,1] . \\
+& a=f(1)=f\left(\frac{1}{2}+\frac{1}{2}\right)=f\left(\frac{1}{2}\right) f\left(\frac{1}{2}\right),
+\end{aligned}
+$$
+所以
+$$
+f\left(\frac{1}{2}\right)=\sqrt{a} \text {. }
+$$
+$$
+\begin{gathered}
+\sqrt{a}=f\left(\frac{1}{2}\right)=f\left(\frac{1}{4}+\frac{1}{4}\right)=f\left(\frac{1}{4}\right) f\left(\frac{1}{4}\right), \\
+f\left(\frac{1}{4}\right)=\sqrt[4]{a} .
+\end{gathered}
+$$
+所以
+$$
+f\left(\frac{1}{4}\right)=\sqrt[4]{a} .
+$$
+(2) 因为 $y=f(x)$ 的图象关于直线 $x=1$ 对称,所以
+$$
+f(1+x)=f(1-x), x \in \mathbf{R},
+$$
+于是
+$$
+f(x)=f(2-x), x \in \mathbf{R} .
+$$
+又 $f(x)$ 是偶函数,所以 $f(-x)=f(x)$, 故
+$$
+f(-x)=f(2-x), x \in \mathbf{R} .
+$$
+即
+$$
+f(x)=f(x+2), x \in \mathbf{R} .
+$$
+这就表明 $f(x)$ 是 $\mathbf{R}$ 上的周期函数, 2 是它的一个周期.
+(3) 由第 (1) 小题知, $f(x) \geqslant 0, x \in[0,1]$. 因为
+$$
+\begin{aligned}
+\sqrt{a} & =f\left(\frac{1}{2}\right)=f\left(n \cdot \frac{1}{2 n}\right)=f\left(\frac{1}{2 n}+(n-1) \frac{1}{2 n}\right) \\
+& =f\left(\frac{1}{2 n}\right) \cdot f\left((n-1) \frac{1}{2 n}\right) \\
+& =\cdots \\
+& =f\left(\frac{1}{2 n}\right) \cdot f\left(\frac{1}{2 n}\right) \cdot \cdots \cdot f\left(\frac{1}{2 n}\right) \\
+& =\left(f\left(\frac{1}{2 n}\right)\right)^n,
+\end{aligned}
+$$
+故
+$$
+f\left(\frac{1}{2 n}\right)=a^{\frac{1}{2 n}}
+$$
+又由第 (2) 小题知, $f(x)$ 是一个周期函数, 2 是它的一个周期, 所以
+$$
+f\left(2 n+\frac{1}{2 n}\right)=f\left(\frac{1}{2 n}\right) .
+$$
+故
+$$
+a_n=a^{\frac{1}{2 n}} \text {. }
+$$
+所以
+$$
+\lim _{n \rightarrow \infty}\left(\ln a_n\right)=\lim _{n \rightarrow \infty}\left(\frac{1}{2 n} \ln a\right)=0 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12 求函数 $g(x)=|\sin x|+|\cos x|$ 的最小正周期.
+%%<SOLUTION>%%
+解:对任意 $x \in \mathbf{R}$, 有
+$$
+\begin{aligned}
+g\left(x+\frac{\pi}{2}\right) & =\left|\sin \left(x+\frac{\pi}{2}\right)\right|+\left|\cos \left(x+\frac{\pi}{2}\right)\right| \\
+& =|\sin x|+|\cos x| \\
+& =g(x) .
+\end{aligned}
+$$
+因此, $g(x)$ 是周期函数, $\frac{\pi}{2}$ 是它的一个周期.
+下面证明 $\frac{\pi}{2}$ 是 $g(x)$ 的最小正周期.
+设函数 $g(x)$ 有小于 $\frac{\pi}{2}$ 的正周期 $T$, 则对 $x \in \mathbf{R}$, 有
+$$
+|\sin (x+T)|+|\cos (x+T)|=|\sin x|+|\cos x| .
+$$
+令 $x=0$ 代入(1), 得
+$$
+|\sin T|+|\cos T|=1 .
+$$
+两边平方, 得
+$$
+2|\sin T||\cos T|=0,
+$$
+即
+$$
+|\sin 2 T|=0 \text {. }
+$$
+从而 $\sin 2 T=0$, 但 $0<T<\frac{\pi}{2}$, 不可能.
+所以 $g(x)$ 的最小正周期为 $\frac{\pi}{2}$.
+说明本题所用的方法是证明周期函数的某个周期是该函数的最小正周期的常用方法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13 设函数 $f(x)$ 满足: $f(x+1)-f(x)=2 x+1(x \in \mathbf{R})$, 且当 $x \in [0,1]$ 时有 $|f(x)| \leqslant 1$, 求证: 当 $x \in \mathbf{R}$ 时, 有 $|f(x)| \leqslant 2+x^2$.
+%%<SOLUTION>%%
+证令 $g(x)=f(x)-x^2$, 则
+$$
+g(x+1)-g(x)=f(x+1)-f(x)-(x+1)^2+x^2=0,
+$$
+所以 $g(x)$ 是 $\mathbf{R}$ 上以 1 为周期的周期函数; 又由条件, 当 $x \in[0,1]$ 时有 $|f(x)| \leqslant 1$, 可得, 当 $x \in[0,1]$ 时,
+$$
+|g(x)|=\left|f(x)-x^2\right| \leqslant|f(x)|+\left|x^2\right| \leqslant 2,
+$$
+所以周期函数 $g(x)$ 在 $\mathbf{R}$ 上有 $|g(x)| \leqslant 2$. 据此知, 在 $\mathbf{R}$ 上,
+$$
+|f(x)|=\left|g(x)+x^2\right| \leqslant|g(x)|+\left|x^2\right| \leqslant 2+x^2 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14 在 $\mathbf{R}$ 上是否存在非常数的周期函数, 它没有最小正周期?
+%%<SOLUTION>%%
+解:答案是肯定的.
+定义函数
+$$
+D(x)= \begin{cases}1, & \text { 当 } x \text { 是有理数时, } \\ 0, & \text { 当 } x \text { 是无理数时.
+}\end{cases}
+$$
+显然, 任何正的有理数都是 $D(x)$ 的周期, 因此 $D(x)$ 没有最小正周期.
+函数 $D(x)$ 称为狄利克莱函数, 在高等数学中还会遇到它.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例15 设 $f(x)$ 是周期函数, $T$ 和 1 是 $f(x)$ 的周期且 $0<T<1$. 证明:
+(1) 若 $T$ 为有理数, 则存在素数 $p$, 使 $\frac{1}{p}$ 是 $f(x)$ 的周期;
+(2) 若 $T$ 为无理数, 则存在各项均为无理数的数列 $\left\{a_n\right\}$ 满足 $1>a_n> a_{n+1}>0(n=1,2, \cdots)$, 且每个 $a_n(n=1,2, \cdots)$ 都是 $f(x)$ 的周期.
+%%<SOLUTION>%%
+证 (1) 若 $T$ 是有理数,则存在正整数 $m 、 n$ 使得 $T=\frac{n}{m}$ 且 $(m, n)=1$, 从而存在整数 $a 、 b$, 使得 $m a+n b=1$. 于是
+$$
+\frac{1}{m}=\frac{m a+n \underline{b}}{m}=a+b T=a \cdot 1+b \cdot T
+$$
+是 $f(x)$ 的周期.
+又因 $0<T<1$, 从而 $m \geqslant 2$. 设 $p$ 是 $m$ 的素因子, 则 $m=p m^{\prime}, m^{\prime} \in \mathbf{N}_{+}$, 从而
+$$
+\frac{1}{p}=m^{\prime} \cdot \frac{1}{m}
+$$
+是 $f(x)$ 的周期.
+(2) 若 $T$ 是无理数, 令 $a_1=1-\left[\frac{1}{T}\right] T$, 则 $0<a_1<1$, 且 $a_1$ 是无理数,
+令
+$$
+\begin{gathered}
+a_2=1-\left[\frac{1}{a_1}\right] a_1, \\
+\ldots \ldots \\
+a_{n+1}=1-\left[\frac{1}{a_n}\right] a_n, \\
+\ldots \ldots
+\end{gathered}
+$$
+由数学归纳法易知 $a_n$ 均为无理数且 $0<a_n<1$. 又 $\frac{1}{a_n}-\left[\frac{1}{a_n}\right]<1$, 故 $1<a_n+\left[\frac{1}{a_n}\right] a_n$, 即 $a_{n+1}=1-\left[\frac{1}{a_n}\right] a_n<a_n$. 因此 $\left\{a_n\right\}$ 是递减数列.
+最后证每个 $a_n$ 是 $f(x)$ 的周期.
+事实上, 因 1 和 $T$ 是 $f(x)$ 的周期, 故 $a_1=1-\left[\frac{1}{T}\right] T$ 亦是 $f(x)$ 的周期, 假设 $a_k\left(k \in \mathbf{N}_{+}\right)$是 $f(x)$ 的周期, 则 $a_{k+1}= 1-\left[\frac{1}{a_k}\right] a_k$ 也是 $f(x)$ 的周期.
+由数学归纳法, 证得每个 $a_n(n=1,2, \cdots)$ 均是 $f(x)$ 的周期.
+%%PROBLEM_END%%
+
+

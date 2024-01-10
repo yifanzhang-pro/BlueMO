@@ -1,0 +1,193 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 证明: 对任何实数 $x, y, z$,下述三个不等式不可能同时成立:
+$$
+|x|<|y-z|,|y|<|z-x|,|z|<|x-y| \text {. }
+$$
+%%<SOLUTION>%%
+用反证法.
+假设 $|x|<|y-z|,|y|<|z-x|,|z|<|x-y|$ 同时成立, 不妨设其中 $x \geqslant y \geqslant z$, 则有 $|x|+|z|<|y-z|+|x-y|= (y-z)+(x-y)=x-z$, 矛盾! 故假设不成立.
+证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 已知点 $E, F, G, H$ 分别在单位正方形 $A B C D$ 的四条边上, 求证: 在四边形 $E F G H$ 中至少有一条边的长度不小于 $\frac{\sqrt{2}}{2}$.
+%%<SOLUTION>%%
+假设四边形 $E F G H$ 每条边的长度都小于 $\frac{\sqrt{2}}{2}$, 则
+$$
+E F^2+F G^2<\left(\frac{\sqrt{2}}{2}\right)^2+\left(\frac{\sqrt{2}}{2}\right)^2=1 .
+$$
+又四边形 $E F G H$ 的四个内角中, 至少有一个内角不大于 $90^{\circ}$ (否则, 四边形内角和将大于 $360^{\circ}$ ), 因此, 不妨设 $\angle E F G \leqslant 90^{\circ}$, 则 $E G^2 \leqslant E F^2+E G^2$, 所以 $E G^2<1, E G<1$. 但在正方形 $A B C D$ 中, $A B / / C D$, 且 $A B$ 与 $C D$ 间距离为 1 , 所以 $E G \geqslant 1$, 与 $E G<1$ 矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. (1) 是否存在正整数 $m 、 n$, 使得 $m(m+2)=n(n+1)$;
+(2) 设 $k(\geqslant 3)$ 是给定的正整数, 是否存在正整数 $m 、 n$, 使得
+$$
+m(m+k)=n(n+1) .
+$$
+%%<SOLUTION>%%
+(1) 答案是否定的.
+若存在正整数 $m, n$, 使得 $m(m+2)=n(n+1)$, 则
+$$
+(m+1)^2=n^2+n+1,
+$$
+显然 $n>1$, 于是
+$$
+n^2<n^2+n+1<(n+1)^2,
+$$
+所以, $n^2+n+1$ 不是平方数,矛盾.
+(2)当 $k=3$ 时,若存在正整数 $m, n$, 满足 $m(m+3)=n(n+1)$, 则
+$$
+\begin{gathered}
+4 m^2+12 m=4 n^2+4 n, \\
+(2 m+3)^2=(2 n+1)^2+8, \\
+(2 m+3-2 n-1)(2 m+3+2 n+1)=8, \\
+(m-n+1)(m+n+2)=2,
+\end{gathered}
+$$
+而 $m+n+2>2$, 故上式不可能成立.
+当 $k \geqslant 4$ 时, 若 $k=2 t$ ( $t$ 是不小于 2 的整数) 为偶数, 取
+$$
+m=t^2-t, n=t^2-1,
+$$
+则
+$$
+\begin{gathered}
+m(\dot{m}+k)=\left(t^2-t\right)\left(t^2+t\right)=t^4-t^2, \\
+n(n+1)=\left(t^2-1\right) t^2=t^4-t^2,
+\end{gathered}
+$$
+故这样的 $(m, n)$ 满足条件.
+若 $k=2 t+1$ ( $t$ 是不小于 2 的整数) 为奇数, 取
+$$
+m=\frac{t^2-t}{2}, n=\frac{t^2+t-2}{2},
+$$
+则
+$$
+\begin{gathered}
+m(m+k)=\frac{t^2-t}{2}\left(\frac{t^2-t}{2}+2 t+1\right)=\frac{1}{4}\left(t^4+2 t^3-t^2-2 t\right), \\
+n(n+1)=\frac{t^2+t-2}{2} \cdot \frac{t^2+t}{2}=\frac{1}{4}\left(t^4+2 t^3-t^2-2 t\right),
+\end{gathered}
+$$
+故这样的 $(m, n)$ 满足条件.
+综上所述, 当 $k=3$ 时,答案是否定的; 当 $k \geqslant 4$ 时, 答案是肯定的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 已知 $a, b, c$ 是实数, 且 $a>2000$, 证明: 至多存在两个整数 $x$, 使得
+$$
+\left|a x^2+b x+c\right| \leqslant 1000 .
+$$
+%%<SOLUTION>%%
+用反证法.
+假设存在三个不同的正整数 $x_1, x_2, x_3$, 使得
+$$
+\left|a x_i^2+b x_i+c\right| \leqslant 1000,
+$$
+令 $f(x)=a x^2+b x+c$, 则 $x_1, x_2, x_3$ 中至少有两个在对称轴 $x=-\frac{b}{2 a}$ 的一侧 (包括对称轴上), 不妨设 $x_1>x_2 \geqslant-\frac{b}{2 a}$, 则 $2 a x+b \geqslant 0$. 因为
+$$
+a x_1^2+b x_1+c \leqslant 1000,-a x_2^2-b x_2-c \leqslant 1000,
+$$
+所以
+$$
+\left(x_1-x_2\right)\left[a\left(x_1+x_2\right)+b\right] \leqslant 2000 .
+$$
+又 $x_1, x_2$ 是整数, 所以 $x_1 \geqslant x_2+1$, 于是
+$$
+a\left(x_1+x_2\right)+b \geqslant a\left(x_2+1+x_2\right)+b=a+2 a x_2+b \geqslant a>2000,
+$$
+故
+$$
+\left(x_1-x_2\right)\left[a\left(x_1+x_2\right)+b\right]>2000 \text {. }
+$$
+(1)与(2)矛盾, 从而命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 是否存在三边长都为整数的三角形, 满足以下条件: 最短边长为 2007 , 且最大的角等于最小角的两倍?
+%%<SOLUTION>%%
+不存在这样的三角形,证明如下:
+不妨设 $\angle A \leqslant \angle B \leqslant \angle C$, 则 $C=2 A$ 且 $a=2007$. 作 $\angle A C B$ 的内角平分线 $C D$, 则 $\angle B C D=\angle A$, 从而 $\triangle C D B \backsim \triangle A C B$. 所以,
+$$
+\frac{C B}{A B}=\frac{B D}{B C}=\frac{C D}{A C}=\frac{B D+C D}{B C+A C}=\frac{B D+A D}{B C+A C}=\frac{A B}{B C+A C} .
+$$
+即 $c^2=a(a+b)=2007(2007+b)$, 这里 $2007 \leqslant b \leqslant c<2007+b$.
+由 $a, b, c$ 都是正整数知 $2007 \mid c^2$, 故 $3|c, 223| c$, 可设 $c=669 m$, 则 $223 m^2=2007+b$, 即 $b=223 m^2-2007$, 结合 $2007 \leqslant b$, 可得 $m \geqslant 5$.
+另一方面, 由于 $c \geqslant b$, 得 $669 m \geqslant 223 m^2-2007$, 这要求 $m<5$,矛盾! 因此, 满足条件的三角形不存在.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 知集合 $A$ 由全体正整数的倒数组成.
+是否存在无限个 $A$ 中的数 $a_1$, $a_2, a_3, \cdots$ (不必不同), 使得对任何 $i, j \in \mathbf{N}^*$, 有 $\frac{a_i}{i}+\frac{a_j}{j} \in A$ ? 证明你的结论.
+%%<SOLUTION>%%
+结论是否定的.
+下用反证法证明之:
+假设存在无限个 $A$ 中的数 $a_1, a_2, a_3, \cdots$, 满足对任何 $i, j \in \mathbf{N}^*$, 有 $\frac{a_i}{i}+\frac{a_j}{j} \in A$, 显然 $a_1 \neq 1$ (否则, 若 $a_1=1$, 令 $i=j=1$, 则推出 $2 \in A$, 矛盾).
+于是, 设 $a_1=\frac{1}{m}, m \geqslant 2, m \in \mathbf{N}^*$.
+此时, 令 $i=1, j=m^2$, 则
+$$
+\frac{a_i}{i}+\frac{a_j}{j}=\frac{1}{m}+\frac{a_m^2}{m^2} \leqslant \frac{1}{m}+\frac{1}{m^2}<\frac{1}{m-1},
+$$
+故 $\frac{1}{m}<\frac{a_i}{i}+\frac{a_j}{j}<\frac{1}{m-1}$, 与 $\frac{a_i}{i}+\frac{a_j}{j} \in A$ 矛盾!
+所以不存在满足条件的无限个数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 在 $n$ 个元素组成的集合中取 $n+1$ 个两两不同的 3 元子集.
+证明: 其中必有两个子集, 它们恰有一个公共元.
+%%<SOLUTION>%%
+假设结论不真.
+则对所给的 3 元子集中的任意两个 $A, B$, 它们要么不交, 要么恰有两个公共元, 如果是后一种情况, 则记 $A \sim B$.
+可以证明: 对三个子集 $A, B, C$, 若 $A \sim B, B \sim C$, 则 $A \sim C$. 事实上, 设 $A=\{a, b, c\}, B=\{a, b, d\}$, 因为 $C$ 与 $B$ 有两个公共元素, 故 $C \cap\{a$, $b\} \neq \varnothing$, 即 $C$ 与 $A$ 相交, 有 $A \sim C$. 于是所有给定的 3 元子集可以分为若干类,使同一类中任意两个子集恰有两个公共元, 而不同类的两个子集不交.
+对每个类, 考虑在它的所有子集中出现的不同元素的总个数, 有三种情形:
+(1)总共出现 3 个元素;
+(2) 总共出现 4 个元素;
+(3)总共出现不少于 5 个元素.
+在情形 (1)下, 该类恰由一个 3 元子集组成.
+在情形 (2)下, 类中至多只有 4 个不同可能的子集.
+考虑情形 (3) : 设 $A=\{a, b, c\}, B=\{a, b, d\}$ 是类中的两个子集, 则类中还有某个集合 $C$, 它含有除 $a, b, c, d$ 外的另一元素 $e$, 结合 $A \sim C, B \sim C$ 可知 $C=\{a, b, e\}$. 对类中任意别的子集 $D$, 由 $A \sim D, B \sim D, C \sim D$ 可知 $\{a, b\} \subseteq D$. 于是类中子集个数比类中元素个数少 2(因为除 $a, b$ 外每个元素恰好对应它所属的子集).
+以上每种情形中, 每类的子集个数不超过该类中所出现的元素个数, 但题中所给的子集总数大于元素总数,矛盾! 故命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设 $a_1, a_2, \cdots$ 为全体正整数的一个排列.
+证明: 存在无穷多个正整数 $i$, 使得 $\left(a_i, a_{i+1}\right) \leqslant \frac{3}{4} i$. 
+%%<SOLUTION>%%
+假设结论不成立, 则存在 $i_0$, 当 $i>i_0$ 时, $\left(a_i, a_{i+1}\right)>\frac{3}{4} i$.
+取定一个正整数 $M\left(M>i_0\right)$. 当 $i \geqslant 4 M$ 时, 有 $\left(a_i, a_{i+1}\right)>\frac{3}{4} i \geqslant 3 M$. 从而, $a_i \geqslant\left(a_i, a_{i+1}\right)>3 M$.
+由于 $a_1, a_2, \cdots$ 是正整数的一个排列, 则 $\{1,2, \cdots, 3 M\} \subseteq\left\{a_1, a_2, \cdots\right.$, $\left.a_{4 M-1}\right\}$, 故
+$$
+\left|\{1,2, \cdots, 3 M\} \cap\left\{a_{2 M}, a_{2 M+1}, \cdots, a_{4 M-1}\right\}\right| \geqslant 3 M-(2 M-1)=M+1 .
+$$
+由抽屉原理知, 存在 $j_0\left(2 M \leqslant j_0<4 M-1\right)$, 使得 $a_{j_0}, a_{j_0+1} \leqslant 3 M$. 故
+$$
+\left(a_{j_0}, a_{j_0+1}\right) \leqslant \frac{1}{2} \max \left\{a_{j_0}, a_{j_0+1}\right\} \leqslant \frac{3 M}{2}=\frac{3}{4} \times 2 M \leqslant \frac{3}{4} j_0,
+$$
+矛盾.
+所以,存在无穷多个 $i$, 使得 $\left(a_i, a_{i+1}\right) \leqslant \frac{3}{4} i$.
+%%PROBLEM_END%%
+
+

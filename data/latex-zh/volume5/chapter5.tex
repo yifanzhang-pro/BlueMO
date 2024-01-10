@@ -1,0 +1,674 @@
+
+%%TEXT_BEGIN%%
+构造法是不等式证明中的一种重要方法.
+主要利用引人适当的恒等式、 函数、图形、数列等辅助手段, 使命题转化, 变成较为直观和本质的形式, 进而使不等式获证.
+5.1 构造恒等式恒等式可以看作是最强的不等式, 有时候, 通过补充不等式中略去的那些项或因式, 可以得到隐藏在其背后的恒等式, 这样往往能找到证题的突破口, 因为恒等式的结果是显然的.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+5.2 构造函数根据代数式的特征, 构造适当的函数, 利用一次函数、二次函数的性质, 以及函数的单调性等性质, 可以帮助我们来证明不等式.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+5.3 构造图形如果问题条件中的数量关系有明显的几何意义或以某种方式可与几何 图形建立联系, 那么通过作图构造图形, 将题设的条件及数量关系直接在图形中得到实现,然后在构造的图形中寻求所证的结论.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+5.4 构造对偶式在一些轮换不等式中, 构造一个新的对偶轮换式与原不等式一起考虑, 常常能起到意想不到的效果.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+5.5 构造数列在遇到与 $n$ 有关的不等式时, 可以考虑构造辅助数列, 并通过数列的性质 (如单调性) 来证题.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+5.6 构造辅助命题如果一个命题直接证比较困难, 可以试着考虑建立辅助命题来帮助证题.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知 $a^2+b^2+c^2+d^2=1$, 求证:
+$$
+\begin{gathered}
+(a+b)^4+(a+c)^4+(a+d)^4+(b+c)^4 \\
++(b+d)^4+(c+d)^4 \leqslant 6 .
+\end{gathered} \label{(1)}
+$$
+%%<SOLUTION>%%
+分析:由已知可得 $\left(a^2+b^2+c^2+d^2\right)^2=1$, 我们要设法挖掘它与四次式 (1) 间的关系.
+注意到要使 $(a+b)^4$ 中 $a$ 的奇次项不在 $\left(a^2+b^2+c^2+d^2\right)^2$ 的展开式中出现, 可以配上 $(a-b)^4$ 与之相消, 这样就找到了突破口.
+证明考虑和式: $(a-b)^4+(a-c)^4+(a-d)^4+(b-c)^4+(b-d)^4+ (c-d)^4$, 不难发现它与(1)左端恰好构成恒等式, 即 :
+$$
+\begin{gathered}
+(a+b)^4+(a-b)^4+(a+c)^4+(a-c)^4+(a+d)^4+(a-d)^4 \\
++(b+c)^4+(b-c)^4+(b+d)^4+(b-d)^4+(c+d)^4+(c-d)^4 \\
+=6\left(a^2+b^2+c^2+d^2\right)^2
+\end{gathered} \label{(2)}
+$$
+由(2)立刻证得(1)成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $\triangle A_1 A_2 A_3$ 与 $\triangle B_1 B_2 B_3$ 的边长分别为 $a_1 、 a_2 、 a_3$ 与 $b_1 、 b_2 、 b_3$, 面积分别为 $S_1 、 S_2$, 又记
+$$
+H=a_1^2\left(-b_1^2+b_2^2+b_3^2\right)+a_2^2\left(b_1^2-b_2^2+b_3^2\right)+a_3^2\left(b_1^2+b_2^2-b_3^2\right) .
+$$
+则对于 $\lambda \in\left\{\frac{b_1^2}{a_1^2}, \frac{b_2^2}{a_2^2}, \frac{b_3^2}{a_3^2}\right\}$, 求证: $H \geqslant 8\left(\lambda S_1^2+\frac{1}{\lambda} S_2^2\right)$.
+%%<SOLUTION>%%
+证明:由海伦公式, 有
+$$
+\begin{gathered}
+16 S_1^2=2 a_1^2 a_2^2+2 a_2^2 a_3^2+2 a_3^2 a_1^2-a_1^4-a_2^4-a_3^4, \\
+16 S_2^2=2 b_1^2 b_2^2+2 b_2^2 b_3^2+2 b_3^2 b_1^2-b_1^4-b_2^4-b_3^4 . \\
+\text { 记 } D_1=\sqrt{\lambda} a_1^2-\sqrt{\frac{1}{\lambda}} b_1^2, D_2=\sqrt{\lambda} a_2^2-\sqrt{\frac{1}{\lambda}} b_2^2, D_3=\sqrt{\lambda} a_3^2-\sqrt{\frac{1}{\lambda}} b_3^2 . \text { 则 }
+\end{gathered}
+$$
+有恒等式
+$$
+\begin{aligned}
+& H-8\left(\lambda S_1^2+\frac{1}{\lambda} S_2^2\right) \\
+= & \frac{1}{2}\left(D_1^2+D_2^2+D_3^2\right)-\left(D_1 D_2+D_2 D_3+D_3 D_1\right) .
+\end{aligned} \label{(1)}
+$$
+当 $\lambda=\frac{b_1^2}{a_1^2}$ 时, $D_1=0$, (1)式即为
+$$
+H-8\left(\lambda S_1^2+\frac{1}{\lambda} S_2^2\right)=\frac{1}{2}\left(D_2-D_3\right)^2 .
+$$
+故结论成立.
+同理原不等式对 $\lambda=\frac{b_2^2}{a_2^2}$ 或 $\frac{b_3^2}{a_3^2}$ 也成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 已知 $a, b, c \in(-2,1)$, 求证:
+$$
+a b c>a+b+c-2 .
+$$
+%%<SOLUTION>%%
+分析:不等式的两边是关于 $a 、 b 、 c$ 对称的,且 $a 、 b 、 c$ 都是一次的,所以可以尝试构造一次函数.
+证明设 $f(x)=(b c-1) x-b-c+2$, 则有
+$$
+\begin{aligned}
+f(-2) & =-2 b c-b-c+4 \\
+& =-2\left(b+\frac{1}{2}\right)\left(c+\frac{1}{2}\right)+\frac{9}{2} .
+\end{aligned}
+$$
+因为 $b, c \in(-2,1)$, 所以 $b+\frac{1}{2}, c+\frac{1}{2} \in\left(-\frac{3}{2}, \frac{3}{2}\right)$, 故
+$$
+\left(b+\frac{1}{2}\right)\left(c+\frac{1}{2}\right) \leqslant\left|b+\frac{1}{2}\right| \cdot\left|c+\frac{1}{2}\right|<\frac{9}{4},
+$$
+从而
+$$
+\begin{gathered}
+f(-2)=-2\left(b+\frac{1}{2}\right)\left(c+\frac{1}{2}\right)+\frac{9}{2} \\
+>-2 \cdot \frac{9}{4}+\frac{9}{2}=0, \\
+f(1)=b c-b-c+1=(1-b)(1-c)>0,
+\end{gathered}
+$$
+所以, 当 $x \in(-2,1)$ 时, $f(x)$ 恒大于 0 ,于是 $f(a)>0$, 即
+$$
+a b c>a+b+c-2 \text {. }
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $x_1, x_2, x_3, y_1, y_2, y_3 \in \mathbf{R}$, 且满足 $x_1^2+x_2^2+x_3^2 \leqslant 1$, 求证:
+$$
+\begin{aligned}
+& \left(x_1 y_1+x_2 y_2+x_3 y_3-1\right)^2 \\
+\geqslant & \left(x_1^2+x_2^2+x_3^2-1\right)\left(y_1^2+y_2^2+y_3^2-1\right) .
+\end{aligned}
+$$
+%%<SOLUTION>%%
+证明:当 $x_1^2+x_2^2+x_3^2=1$ 时,原不等式显然成立.
+当 $x_1^2+x_2^2+x_3^2<1$ 时, 构造二次函数
+$$
+\begin{aligned}
+f(t) & =\left(x_1^2+x_2^2+x_3^2-1\right) t^2-2\left(x_1 y_1+x_2 y_2+x_3 y_3-1\right) t+\left(y_1^2+y_2^2+y_3^2-1\right) \\
+& =\left(x_1 t-y_1\right)^2+\left(x_2 t-y_2\right)^2+\left(x_3 t-y_3\right)^2-(t-1)^2
+\end{aligned}
+$$
+这是一个开口向下的抛物线, 又因为
+$$
+f(1)=\left(x_1-y_1\right)^2+\left(x_2-y_2\right)^2+\left(x_3-y_3\right)^2 \geqslant 0,
+$$
+所以,此抛物线的图象与 $x$ 轴一定有交点,从而
+$$
+\Delta=4\left(x_1 y_1+x_2 y_2+x_3 y_3-1\right)^2-4\left(x_1^2+x_2^2+x_3^2-1\right)\left(y_1^2+y_2^2+y_3^2-1\right) \geqslant 0,
+$$
+故
+$$
+\begin{aligned}
+& \left(x_1 y_1+x_2 y_2+x_3 y_3-1\right)^2 \\
+\geqslant & \left(x_1^2+x_2^2+x_3^2-1\right)\left(y_1^2+y_2^2+y_3^2-1\right) .
+\end{aligned}
+$$
+说明对于要证明 " $A \cdot C \geqslant($ 或 $\leqslant) B^2$ " 这类不等式, 我们先把不等式变形为
+$$
+4 A \cdot C \geqslant(\text { 或 } \leqslant)(2 B)^2,
+$$
+然后构造一个二次函数 $f(x)=A x^2-(2 B) x+C$, 再设法证明其判别式 $\Delta \leqslant$ 0 (或 $\geqslant 0)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $\triangle A B C$ 的三边长 $a 、 b 、 c$ 满足: $a+b+c=1$, 求证:
+$$
+5\left(a^2+b^2+c^2\right)+18 a b c \geqslant \frac{7}{3} .
+$$
+%%<SOLUTION>%%
+证明:由 $a^2+b^2+c^2=(a+b+c)^2-2(a b+b c+c a)$
+$$
+=1-2(a b+b c+c a) \text {, }
+$$
+可知原不等式等价于
+$$
+\begin{gathered}
+\frac{5}{9}(a b+b c+c a)-a b c \leqslant \frac{4}{27} . \label{(1)} \\
+\text { 令 } f(x)=(x-a)(x-b)(x-c)=x^3-x^2+(a b+b c+c a) x-a b c,
+\end{gathered}
+$$
+则
+$$
+f\left(\frac{5}{9}\right)=\left(\frac{5}{9}\right)^3-\left(\frac{5}{9}\right)^2+\frac{5}{9}(a b+b c+c a)-a b c .
+$$
+由于 $a 、 b 、 c$ 为三角形三边长, 有 $a, b, c \in\left(0, \frac{1}{2}\right)$, 故 $\frac{5}{9}-a 、 \frac{5}{9}-b$ 及 $\frac{5}{9}-c$ 都大于 0 ,所以
+$$
+\begin{aligned}
+f\left(\frac{5}{9}\right) & =\left(\frac{5}{9}-a\right)\left(\frac{5}{9}-b\right)\left(\frac{5}{9}-c\right) \\
+& \leqslant \frac{1}{27} \cdot\left[\left(\frac{5}{9}-a\right)+\left(\frac{5}{9}-b\right)+\left(\frac{5}{9}-c\right)\right]^3 \\
+& =\frac{8}{27^2} .
+\end{aligned}
+$$
+因此 $\frac{8}{27^2} \geqslant\left(\frac{5}{9}\right)^3-\left(\frac{5}{9}\right)^2+\frac{5}{9}(a b+b c+c a)-a b c$, 整理即得(1)式, 故原不等式得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 已知不等式
+$$
+\sqrt{2}(2 a+3) \cos \left(\theta-\frac{\pi}{4}\right)+\frac{6}{\sin \theta+\cos \theta}-2 \sin 2 \theta<3 a+6
+$$
+对于 $\theta \in\left[0, \frac{\pi}{2}\right]$ 恒成立,求 $a$ 的取值范围.
+%%<SOLUTION>%%
+解:设 $\sin \theta+\cos \theta=x$, 则 $x \in[1, \sqrt{2}]$, 且
+$$
+\begin{aligned}
+\sin 2 \theta & =2 \sin \theta \cos \theta=x^2-1, \\
+\cos \left(\theta-\frac{\pi}{4}\right) & =\frac{\sqrt{2}}{2} \cos \theta+\frac{\sqrt{2}}{2} \sin \theta=\frac{\sqrt{2}}{2} x .
+\end{aligned}
+$$
+从而原不等式可化为
+$$
+\begin{gathered}
+(2 a+3) x+\frac{6}{x}-2\left(x^2-1\right)<3 a+6, \\
+2 x^3-(2 a+3) x^2+(3 a+4) x-6>0, \\
+(2 x-3)\left(x^2-a x+2\right)>0,
+\end{gathered}
+$$
+即因为 $x \in[1, \sqrt{2}]$, 所以 $2 x-3<0$, 从而不等式 $x^2-a x+2<0$ 对于 $x \in[1$, $\sqrt{2}]$ 恒成立, 即 $a>x+\frac{2}{x}, x \in[1, \sqrt{2}]$ 恒成立.
+$$
+\text { 令 } f(x)=x+\frac{2}{x}, x \in[1, \sqrt{2}] \text {, 则 } a>f_{\text {max }}(x) \text {. }
+$$
+因为 $f(x)=x+\frac{2}{x}$ 在 $[1, \sqrt{2}]$ 上单调递减, 所以 $f_{\text {max }}(x)=f(1)=3$, 所以 $a$ 的取值范围为 $a>3$.
+说明利用函数的单调性, 以及求函数最值的方法可以帮助我们来证明不等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 求证: 对任意正实数 $a 、 b 、 c$, 都有
+$$
+1<\frac{a}{\sqrt{a^2+b^2}}+\frac{b}{\sqrt{b^2+c^2}}+\frac{c}{\sqrt{c^2+a^2}} \leqslant \frac{3 \sqrt{2}}{2} .
+$$
+%%<SOLUTION>%%
+证明:令 $x=\frac{b^2}{a^2}, y=\frac{c^2}{b^2}, z=\frac{a^2}{c^2}$, 则 $x, y, z \in \mathbf{R}^{+}, x y z=1$. 于是只需证明
+$$
+1<\frac{1}{\sqrt{1+x}}+\frac{1}{\sqrt{1+y}}+\frac{1}{\sqrt{1+z}} \leqslant \frac{3 \sqrt{2}}{2} .
+$$
+不妨设 $x \leqslant y \leqslant z$, 令 $A=x y$, 则 $z=\frac{1}{A}, A \leqslant 1$. 于是
+$$
+\begin{aligned}
+\frac{1}{\sqrt{1+x}}+\frac{1}{\sqrt{1+y}}+\frac{1}{\sqrt{1+z}} & >\frac{1}{\sqrt{1+x}}+\frac{1}{\sqrt{1+\frac{1}{x}}} \\
+& =\frac{1+\sqrt{x}}{\sqrt{1+x}}>1 .
+\end{aligned}
+$$
+设 $u=\frac{1}{\sqrt{1+A+x+\frac{A}{x}}}$, 则 $u \in\left(0, \frac{1}{1+\sqrt{A}}\right]$, 当且仅当 $x=\sqrt{A}$ 时,
+$u=\frac{1}{1+\sqrt{A}}$. 于是
+$$
+\begin{aligned}
+& \left(\frac{1}{\sqrt{1+x}}+\frac{1}{\sqrt{1+y}}\right)^2 \\
+= & \left(\frac{1}{\sqrt{1+x}}+\frac{1}{\sqrt{1+\frac{A}{x}}}\right)^2 \\
+= & \frac{1}{1+x}+\frac{1}{1+\frac{A}{x}}+\frac{2}{\sqrt{1+A+x+\frac{A}{x}}} \\
+= & \frac{2+x+\frac{A}{x}}{1+A+x+\frac{A}{\dot{x}}}+\frac{2}{\sqrt{1+A+x+\frac{A}{x}}} \\
+= & 1+(1-A) u^2+2 u .
+\end{aligned}
+$$
+构造函数, 令 $f(u)=(1-A) u^2+2 u+1$, 则 $f(u)$ 在 $u \in\left(0, \frac{1}{1+\sqrt{A}}\right]$ 上是增函数, 所以
+$$
+\begin{aligned}
+\frac{1}{\sqrt{1+x}}+ & \frac{1}{\sqrt{1+y}}-\leqslant \sqrt{f\left(\frac{1}{1+\sqrt{A}}\right)}=\frac{2}{\sqrt{1+\sqrt{A}}} . \\
+\text { 令 } \sqrt{A}=v, \text { 则 } & \frac{1}{\sqrt{1+x}}+\frac{1}{\sqrt{1+y}}+\frac{1}{\sqrt{1+z}} \\
+& \leqslant \frac{2}{\sqrt{1+\sqrt{A}}}+\frac{1}{\sqrt{1+\frac{1}{A}}} \\
+& =\frac{2}{\sqrt{1+v}}+\frac{\sqrt{2} v}{\sqrt{2(1+v)}} \\
+& \leqslant \frac{2}{\sqrt{1+v}}+\frac{\sqrt{2} v}{1+v} \\
+& =\frac{2}{\sqrt{1+v}}+\sqrt{2}-\frac{\sqrt{2}}{1+v} \\
+& =-\sqrt{2}\left(\frac{1}{\sqrt{1+v}}-\frac{\sqrt{2}}{2}\right)^2+\frac{3 \sqrt{2}}{2} \\
+& \leqslant \frac{3 \sqrt{2}}{2} .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 求证: 对任意实数 $x$,均有
+$$
+\left|\sqrt{x^2+x+1}-\sqrt{x^2-x+1}\right|<1 .
+$$
+%%<SOLUTION>%%
+证明:因为
+$$
+\begin{aligned}
+& \left|\sqrt{x^2+x+1}-\sqrt{x^2-x+1}\right| \\
+= & \left|\sqrt{\left(x+\frac{1}{2}\right)^2+\left(\frac{\sqrt{3}}{2}\right)^2}-\sqrt{\left(x-\frac{1}{2}\right)^2+\left(\frac{\sqrt{3}}{2}\right)^2}\right| .
+\end{aligned}
+$$
+上式可看作直角坐标系中点 $P\left(x, \frac{\sqrt{3}}{2}\right)$ 到点 $A\left(-\frac{1}{2}, 0\right)$ 与点 $B\left(\frac{1}{2}, 0\right)$ 的距离的差, 如图(<FilePath:./figures/fig-c5i1.png>)所示.
+根据三角形两边之差小于第三边及 $A B=1$, 得
+$$
+\left|\sqrt{x^2+x+1}-\sqrt{x^2-x+1}\right|<1 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设 $x 、 y 、 z$ 为实数, $0<x<y<z<\frac{\pi}{2}$, 求证:
+$$
+\frac{\pi}{2}+2 \sin x \cos y+2 \sin y \cos z>\sin 2 x+\sin 2 y+\sin 2 z .
+$$
+%%<SOLUTION>%%
+证明:原不等式等价于
+$$
+\begin{gathered}
+\frac{\pi}{4}>\sin x(\cos x-\cos y)+ \\
+\sin y(\cos y-\cos z)+\sin z \cos z .
+\end{gathered}
+$$
+构造图形如图(<FilePath:./figures/fig-c5i2.png>) 所示.
+圆 $O$ 是单位圆, $S_1 、 S_2 、 S_3$ 分别是三个小矩形的面积, 则
+$$
+\begin{aligned}
+& S_1=\sin x(\cos x-\cos y), \\
+& S_2=\sin y(\cos y-\cos z), \\
+& S_3=\sin z \cos z .
+\end{aligned}
+$$
+由于 $S_1+S_2+S_3<\frac{1}{4} \cdot \pi \cdot 1^2=\frac{1}{4} \pi$, 故有
+$$
+\frac{\pi}{4}>\sin x(\cos x-\cos y)+\sin y(\cos y-\cos z)+\sin z \cos z,
+$$
+故原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设 $x 、 y 、 z 、 \alpha 、 \beta 、 \gamma$ 为正数, $\alpha 、 \beta 、 \gamma$ 中任意两数之和大于第三个且属于区间 $[0, \pi)$, 求证:
+$$
+\sqrt{x^2+y^2-2 x y \cos \alpha}+\sqrt{y^2+z^2-2 y z \cos \beta} \geqslant \sqrt{z^2+x^2-2 z x \cos \gamma} .
+$$
+%%<SOLUTION>%%
+分析:不等式中的项让我们联想到余弦定理的形式, 提示我们去构造一些三角形.
+证明因为 $\alpha<\beta+\gamma<\pi, \beta<\gamma+\alpha<\pi, \gamma<\alpha+\beta<\pi, \gamma<\alpha+\beta<\pi$, 故从空间一点 $P$ 可作一个三角面 $P-A B C$ 使得:
+$$
+\begin{gathered}
+\angle A P B=\alpha, \\
+\angle B P C=\beta, \\
+\angle C P A=\gamma ; \\
+P A=x, P B=y, \\
+P C=z 
+\end{gathered}
+$$
+如图(<FilePath:./figures/fig-c5i3.png>).
+这样一来,利用 $A B+B C \geqslant A C$, 有原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 已知 $|u| \leqslant \sqrt{2}, v$ 是正实数,求证:
+$$
+S=(u-v)^2+\left(\sqrt{2-u^2}-\frac{9}{v}\right)^2 \geqslant 8 .
+$$
+%%<SOLUTION>%%
+证明:关键是看出 $S$ 的表达式恰为直角坐标系中点 $A\left(u, \sqrt{2-u^2}\right)$ 与点 $B\left(u, \frac{9}{v}\right)$ 之间距离的平方.
+显然, 点 $A$ 在圆 $x^2+y^2=2$ 上, 点 $B$ 在双曲线 $x y=9$ 上.
+因此, 问题就转化为求圆 $x^2+y^2=2$ 到双曲线 $x y=9$ 之间的最短距离,
+在图形上易见此最短距离即点 $A(1,1)$ 与 $B(3,3)$ 的距离, 长为 $2 \sqrt{2}$.
+所以 $S$ 的最小值为 $(2 \sqrt{2})^2=8$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 若 $a_1+a_2+\cdots+a_n=1$, 求证:
+$$
+\begin{gathered}
+\overline{a_1^3+a_1^2 a_2}+\frac{a_1^4}{+a_1 a_2^2+a_2^3}+\frac{a_2^4}{a_2^3+a_2^2 a_3+a_2 a_3^2+a_3^3}+\cdots \\
++\frac{a_n^4}{a_n^3+a_n^2 a_1+a_1^2 a_n+a_1^3} \geqslant \frac{1}{4} .
+\end{gathered}
+$$
+%%<SOLUTION>%%
+证明:记原不等式左端为 $A$.
+构造对偶式
+$$
+\begin{aligned}
+& B=\frac{a_2^4}{a_1^3+a_1^2 a_2+a_1 a_2^2+a_2^3}+\cdots+\frac{a_1^4}{a_n^3+a_n^2 a_1+a_1^2 a_n+a_1^3}, \\
+& A-B=\frac{\left(a_1^2+a_2^2\right)\left(a_1+a_2\right)\left(a_1-a_2\right)}{\left(a_1^2+a_2^2\right)\left(a_1+a_2\right)}+\cdots \\
+& +\frac{\left(a_n^2+a_1^2\right)\left(a_n+a_1\right)\left(a_n-a_1\right)}{\left(a_n^2+a_1^2\right)\left(a_n+a_1\right)} \\
+& =\left(a_1-a_2\right)+\left(a_2-a_3\right)+\cdots+\left(a_n-a_1\right) \\
+& =0 \text {, } \\
+&
+\end{aligned}
+$$
+那么
+$$
+\begin{aligned}
+A-B= & \frac{\left(a_1^2+a_2^2\right)\left(a_1+a_2\right)\left(a_1-a_2\right)}{\left(a_1^2+a_2^2\right)\left(a_1+a_2\right)}+\cdots \\
+& +\frac{\left(a_n^2+a_1^2\right)\left(a_n+a_1\right)\left(a_n-a_1\right)}{\left(a_n^2+a_1^2\right)\left(a_n+a_1\right)} \\
+= & \left(a_1-a_2\right)+\left(a_2-a_3\right)+\cdots+\left(a_n-a_1\right) \\
+= & 0,
+\end{aligned}
+$$
+故 $A=B$.
+又因为
+$$
+\begin{aligned}
+& \frac{a_1^4+a_2^4}{\left(a_1^2+a_2^2\right)\left(a_1+a_2\right)} \geqslant \frac{\left(a_1^2+a_2^2\right)^2}{2\left(a_1^2+a_2^2\right)\left(a_1+a_2\right)} \\
+&=\frac{a_1^2+a_2^2}{2\left(a_1+a_2\right)} \geqslant \frac{\left(a_1+a_2\right)^2}{4\left(a_1+a_2\right)} \\
+&=\frac{a_1+a_2}{4},
+\end{aligned}
+$$
+所以
+$$
+\begin{aligned}
+A & =\frac{1}{2}(A+B) \\
+& \geqslant \frac{1}{2}\left[\frac{1}{4}\left(a_1+a_2\right)+\frac{1}{4}\left(a_2+a_3\right)+\cdots+\frac{1}{4}\left(a_n+a_1\right)\right] \\
+& =\frac{1}{4} .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13. 设 $x_n=\sqrt{2+\sqrt[3]{3+\cdots+\sqrt[n]{n}}}$, 求证:
+$$
+x_{n+1}-x_n<\frac{1}{n !}, n=2,3, \cdots \text {. }
+$$
+%%<SOLUTION>%%
+证明:当 $n=2$ 时, $x_3-x_2=\sqrt{2+\sqrt[3]{3}}-\sqrt{2}<\frac{1}{2 !}$.
+当 $n \geqslant 3$ 时,构造数列 $\left\{a_i\right\} 、\left\{b_i\right\} 、\left\{c_i\right\}$ 如下:
+$$
+\begin{aligned}
+& a_i=\sqrt[i]{i+\sqrt[i+1]{(i+1)+\cdots+\sqrt[n]{n+\sqrt[n]{1+1}}}}, i=2, \cdots, n+1 ; \\
+& b_i=\sqrt[i]{i+\sqrt[i+1]{(i+1)+\cdots+\sqrt[n]{n}}}, i=2,3, \cdots, n, b_{n+1}=0 \\
+& c_i=a_i^{i-1}+a_i^{i-2} b_i+\cdots+a_i b_i^{i-2}+b_i^{i-1}, i=2,3, \cdots .
+\end{aligned}
+$$
+显然, $x_{n+1}=a_2, x_n=b_2$, 且
+$$
+\left(a_i-b_i\right) c_i=a_i^i-b_i^i=a_{i+1}-b_{i+1} .
+$$
+故
+$$
+a_i-b_i=\frac{a_{i+1}-b_{i+1}}{c_i}, i=2,3, \cdots, n .
+$$
+将以上 $n-1$ 个等式相乘, 并注意到
+$$
+a_{n+1}-b_{n+1}=(n+1)^{\frac{1}{n+1}},
+$$
+则有
+$$
+a_2-b_2=\frac{a_{n+1}-b_{n+1}}{c_2 c_3 \cdots c_n}=\frac{(n+1)^{\frac{1}{n+1}}}{c_2 c_3 \cdots c_n} .
+$$
+又因为 $a_k>b_k \geqslant \sqrt[k]{k}$, 故 $c_k \geqslant k \cdot k^{\frac{k-1}{k}}>k \cdot k^{\frac{k-1}{k+1}}$, 于是
+$$
+x_{n+1}-x_n=a_2-b_2<\frac{1}{n !} \cdot \frac{(n+1)^{\frac{1}{n+1}}}{n^{\frac{n+1}{n+1}}}<\frac{1}{n !} .
+$$
+上式中当 $n>2$ 时, $\frac{n+1}{n^{n-1}}<\frac{2 n}{n^2}<1$ 是明显的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14. 实数 $a_1, a_2, \cdots, a_n$ 满足: $a_1+a_2+\cdots+a_n=0$, 求证:
+$$
+\max _{1 \leqslant k \leqslant n}\left(a_k^2\right) \leqslant \frac{n}{3} \sum_{i=1}^{n-1}\left(a_i-a_{i+1}\right)^2 .
+$$
+%%<SOLUTION>%%
+证明:只需对任意 $1 \leqslant k \leqslant n$, 证明不等式成立即可.
+记 $d_k=a_k-a_{k+1}, k=1,2, \cdots, n-1$, 则
+$$
+\begin{gathered}
+a_k=a_k, \\
+a_{k+1}=a_k-d_k, a_{k+2}=a_k-d_k-d_{k+1}, \cdots, a_n=a_k-d_k-d_{k+1}-\cdots-d_{n-1}, \\
+k=a_k+d_{k-1}, a_{k-2}=a_k+d_{k-1}+d_{k-2}, \cdots, a_1=a_k+d_{k-1}+d_{k-2}+\cdots+d_1,
+\end{gathered}
+$$
+把上面这 $n$ 个等式相加, 并利用 $a_1+a_2+\cdots+a_n=0$, 可得
+$$
+\begin{gathered}
+n a_k-(n-k) d_k-(n-k-1) d_{k+1}-\cdots-d_{n-1}+ \\
+(k-1) d_{k-1}+(k-2) d_{k-2}+\cdots+d_1=0 .
+\end{gathered}
+$$
+由 Cauchy 不等式可得
+$$
+\begin{aligned}
+\left(n a_k\right)^2= & \left((n-k) d_k+(n-k-1) d_{k+1}+\cdots+d_{n-1}\right. \\
+& \left.-(k-1) d_{k-1}-(k-2) d_{k-2}-\cdots-d_1\right)^2 \\
+\leqslant & \left(\sum_{i=1}^{k-1} i^2+\sum_{i=1}^{n-k} i^2\right)\left(\sum_{i=1}^{n-1} d_i^2\right) \\
+\leqslant & \left(\sum_{i=1}^{n-1} i^2\right)\left(\sum_{i=1}^{n-1} d_i^2\right)=\frac{n(n-1)(2 n-1)}{6}\left(\sum_{i=1}^{n-1} d_i^2\right) \\
+\leqslant & \frac{n^3}{3}\left(\sum_{i=1}^{n-1} d_i^2\right), \\
+& a_k^2 \leqslant \frac{n}{3} \sum_{i=1}^{n-1}\left(a_i-a_{i+1}\right)^2 .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例15. 给定两组数 $x_1, x_2, \cdots, x_n$ 和 $y_1, y_2, \cdots, y_n$, 现知
+$$
+\begin{gathered}
+x_1>x_2>\cdots>x_n>0, y_1>y_2>\cdots>y_n>0, \\
+x_1>y_1, x_1+x_2>y_1+y_2, \cdots, \\
+x_1+x_2+\cdots+x_n>y_1+y_2+\cdots+y_n .
+\end{gathered}
+$$
+求证: 对于任何自然数 $k$,都有
+$$
+x_1^k+x_2^k+\cdots+x_n^k>y_1^k+y_2^k+\cdots+y_n^k .
+$$
+%%<SOLUTION>%%
+分析:我们猜想是否有如下的递推关系:
+$$
+\begin{aligned}
+& x_1^k+x_2^k+\cdots+x_n^k>x_1^{k-1} y_1+x_2^{k-1} y_2+\cdots+x_n^{k-1} y_n, \\
+& x_1^{k-1} y_1+x_2^{k-1} y_2+\cdots+x_n^{k-1} y_n>x_1^{k-2} y_1^2+x_2^{k-2} y_2^2+\cdots+x_n^{k-2} y_n^2 \text {, } \\
+& x_1 y_1^{k-1}+x_2 y_2^{k-1}+\cdots+x_n y_n^{k-1}>y_1^k+y_2^k+\cdots+y_n^k . \\
+&
+\end{aligned}
+$$
+从而联想到构造辅助命题:
+若 $a_1>a_2>\cdots>a_n>0$, 且满足题设的条件,那么:
+$$
+a_1 x_1+a_2 x_2+\cdots+a_n x_n>a_1 y_1+a_2 y_2+\cdots+a_n y_n . \label{(1)}
+$$
+证明因为 $a_1>a_2>\cdots>a_n>0$, 故存在正数 $b_1, b_2, \cdots b_{n-1}, b_n$ 使得:
+$$
+\begin{gathered}
+a_n=b_1, \\
+a_{n-1}=b_1+b_2, \\
+\cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdot \cdots \cdot \cdots \cdot \cdots \cdot \cdots+b_{n-1}, \\
+a_2=b_1+b_2+\cdots \cdots+b_n . \\
+a_1=b_1+b_2+\cdots+
+\end{gathered}
+$$
+于是 $\quad a_1 x_1+a_2 x_2+\cdots+a_n x_n$
+$$
+\begin{aligned}
+& =\left(b_1+b_2+\cdots+b_n\right) x_1+\left(b_1+b_2+\cdots+b_{n-1}\right) x_2+\cdots+b_1 x_n \\
+& =b_1\left(x_1+x_2+\cdots+x_n\right)+b_2\left(x_1+x_2+\cdots+x_{n-1}\right)+\cdots+b_n x_1 \\
+& >b_1\left(y_1+y_2+\cdots+y_n\right)+b_2\left(y_1+y_2+\cdots+y_{n-1}\right)+\cdots+b_n y_1 \\
+& =\left(b_1+b_2+\cdots+b_n\right) y_1+\left(b_1+b_2+\cdots+b_{n-1}\right) y_2+\cdots+b_1 y_n \\
+& =a_1 y_1+a_2 y_2+\cdots+a_n y_n .
+\end{aligned}
+$$
+故(1)式成立.
+再依次取 $a_i=x_i^{k-1}, x_i^{k-2} y_i, \cdots, y_i^{k-1}(i=1,2, \cdots, n)$, 利用不等式的传递性, 自大到小逐渐缩小, 即得所要证的不等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例16. 对于给定的大于 1 的正整数 $n$, 是否存在 $2 n$ 个两两不同的正整数 $a_1, a_2, \cdots, a_n ; b_1, b_2, \cdots, b_n$, 同时满足以下条件:
+(1) $a_1+a_2+\cdots+a_n=b_1+b_2+\cdots+b_n$;
+(2) $n-1>\sum_{i=1}^n \frac{a_i-b_i}{a_i+b_i}>n-1-\frac{1}{2002}$.
+%%<SOLUTION>%%
+解:答案是肯定的.
+取 $\quad a_1=N+1, a_2=N+2, \cdots, a_{n-1}=N+(n-1)$ ;
+$$
+b_1=1, b_2=2, \cdots, b_{n-1}=n-1 .
+$$
+于是, 由(1)有 $b_n-a_n=N(n-1)$. 令 $a_n=N^2, b_n=N^2+N(n-1)$.
+因此
+$$
+\begin{aligned}
+\sum_{i=1}^n \frac{a_i-b_i}{a_i+b_i} & =n-1-\left(\frac{2}{N+2}+\cdots+\frac{2(n-1)}{2(n-1)+N}+\frac{n-1}{2 N+(n-1)}\right) \\
+& <n-1 .
+\end{aligned}
+$$
+(上式利用了 $\frac{a_i-b_i}{a_i+b_i}=1-\frac{2 i}{2 i+N}, 1 \leqslant i \leqslant n-1$ )
+又取 $N>2002 n(n-1)$, 则
+$$
+\sum_{i=1}^n \frac{a_i-b_i}{a_i+b_i}>n-1-\frac{2 n(n-1)}{N}>n-1-\frac{1}{2002} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例17. 求所有大于 1 的正整数 $n$, 使得对任意正实数 $x_1, x_2, \cdots, x_n$, 都有不等式
+$$
+\left(x_1+x_2+\cdots+x_n\right)^2 \geqslant n\left(x_1 x_2+x_2 x_3+\cdots+x_n x_1\right) .
+$$
+%%<SOLUTION>%%
+解:当 $n=2$ 时, 不等式为 $\left(x_1+x_2\right)^2 \geqslant 2\left(x_1 x_2+x_2 x_1\right)$, 即 $\left(x_1-x_2\right)^2 \geqslant$ 0 , 故 $n=2$ 满足题意.
+当 $n=3$ 时,不等式 $\quad\left(x_1+x_2+x_3\right)^2 \geqslant 3\left(x_1 x_2+x_2 x_3+x_3 x_1\right) ,$
+等价于
+$$
+\left(x_1-x_2\right)^2+\left(x_2-x_3\right)^2+\left(x_3-x_1\right)^2 \geqslant 0,
+$$
+故 $n=3$ 满足题意.
+当 $n=4$ 时, 不等式为
+$$
+\begin{gathered}
+\left(x_1+x_2+x_3+x_4\right)^2 \geqslant 4\left(x_1 x_2+x_2 x_3+x_3 x_4+x_4 x_1\right) \\
+\Leftrightarrow\left(x_1-x_2+x_3-x_4\right)^2 \geqslant 0 .
+\end{gathered}
+$$
+故 $n=4$ 满足题意.
+下证当 $n>4$ 时, 不等式不可能对任意正实数 $x_1, x_2, \cdots, x_n$ 都成立.
+取
+$$
+x_1=x_2=1, x_3=x_4=\cdots=x_n=\frac{1}{5(n-2)},
+$$
+则原不等式为
+$$
+\left[1+1+(n-2) \cdot \frac{1}{5(n-2)}\right]^2 \geqslant n\left(1+\frac{2}{5(n-2)}+\frac{n-3}{25(n-2)^2}\right)
+$$
+$$
+\Leftrightarrow \frac{121}{25} \geqslant n+\frac{2 n}{5(n-2)}+\frac{n(n-3)}{25(n-2)^2},
+$$
+这与 $\frac{121}{25}<5 \leqslant n$ 矛盾.
+所以满足题意的正整数 $n$ 为 $2 、 3 、 4$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例18. 已知正整数 $n \geqslant 2$, 实数 $a_1 \geqslant a_2 \geqslant \cdots \geqslant a_n>0, b_1 \geqslant b_2 \geqslant \cdots \geqslant b_n>0$, 并且有: $a_1 a_2 \cdots a_n=b_1 b_2 \cdots b_n, \sum_{1 \leqslant i<j \leqslant n}\left(a_i-a_j\right) \leqslant \sum_{1 \leqslant i<j \leqslant n}\left(b_i-b_j\right)$, 问: 是否一定有 $\sum_{i=1}^n a_i \leqslant(n-2) \sum_{i=1}^n b_i$ ?
+%%<SOLUTION>%%
+解:不一定.
+令
+$$
+\begin{gathered}
+a_1=a_2=\cdots=a_{n-1}=h, a_n=\frac{1}{h^{n-1}} ; \\
+b_1=k, b_2=b_3=\cdots=b_{n-1}=1, b_n=\frac{1}{k}(k \geqslant 1) .
+\end{gathered}
+$$
+(想法是把 $h$ 取的充分大, 这样 $\sum_{i=1}^n a_i$ 可以充分大, 为了不让 $\sum_{1 \leqslant i<j \leqslant n}\left(a_i-a_j\right)$ 过大, 可以把 $a_1, a_2, \cdots, a_{n-1}$ 取成相同的数, 反向考虑 $b_i$ 的取法.
+)
+$$
+\begin{gathered}
+\text { 则 } \sum_{1 \leqslant i<j \leqslant n}\left(a_i-b_j\right) \leqslant \sum_{1 \leqslant i<j \leqslant n}\left(b_i-b_j\right) \text { 等价于 } \\
+(n-1) h-\frac{n-1}{h^{n-1}} \leqslant(n-1) k-\frac{n-1}{k} . \\
+k-h \geqslant \frac{1}{k}-\frac{1}{h^{n-1}} .
+\end{gathered}
+$$
+即
+$$
+k-h \geqslant \frac{1}{k}-\frac{1}{h^{n-1}} .
+$$
+注意到 $k \geqslant 1, h>0$, 故只须 $k-h \geqslant 1$, 即 $k \geqslant h+1$ 即可.
+而 $\sum_{i=1}^n a_i>(n-2) \sum_{i=1}^n b_i$ 等价于
+$$
+(n-1) h+\frac{1}{h^{n-1}}>(n-2)\left[k+(n-2)+\frac{1}{k}\right] .
+$$
+为简便起见, 取 $k=h+1$, 仅需 $(n-1) h>(n-2)[h+1+(n-2)+1]$, 即 $h>n^2-2 n$ 即可.
+取 $h=n^2-2 n+1=(n-1)^2$, 此时, 便有 $\sum_{i=1}^n a_i> (n-2) \sum_{i=1}^n b_i$.
+说明.
+事实上, 我们可以证明 $\sum_{i=1}^n a_i \leqslant(n-1) \sum_{i=1}^n b_i$.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,269 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 已知 $a>0, b>0, a+2 b=1$. 求证: $\frac{1}{a}+\frac{2}{b} \geqslant 9$.
+%%<SOLUTION>%%
+$1=a+2 b=a+b+b \geqslant 3 \sqrt[3]{a b^2}$, 故 $\frac{1}{\sqrt[3]{a b^2}} \geqslant 3 . \frac{1}{a}+\frac{2}{b}=\frac{1}{a}+\frac{1}{b}+$
+$$
+\frac{1}{b} \geqslant 3 \sqrt[3]{\frac{1}{a b^2}} \geqslant 3 \times 3=9
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $a, b, c>0$, 求证: $\left(a+\frac{1}{b}\right)\left(b+\frac{1}{c}\right)\left(c+\frac{1}{a}\right) \geqslant 8$.
+%%<SOLUTION>%%
+由均值不等式得 $\left(a+\frac{1}{b}\right)\left(b+\frac{1}{c}\right)\left(c+\frac{1}{a}\right) \geqslant 2 \sqrt{\frac{a}{b}} \cdot 2 \sqrt{\frac{b}{c}}$. $2 \sqrt{\frac{c}{a}}=8$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 已知 $0<a, b, c<1$, 并且 $a b+b c+c a=1$. 证明: $\frac{a}{1-a^2}+\frac{b}{1-b^2}+ \frac{c}{1-c^2} \geqslant \frac{3 \sqrt{3}}{2}$.
+%%<SOLUTION>%%
+设 $A=a\left(1-a^2\right)$, 则 $A^2=\frac{1}{2} \cdot 2 a^2\left(1-a^2\right)\left(1-a^2\right) \leqslant \frac{4}{27}$, 则 $A \leqslant \frac{2}{3 \sqrt{3}}$, 所以 $\frac{a}{1-a^2}=\frac{a^2}{a\left(1-a^2\right)} \geqslant \frac{3 \sqrt{3}}{2} a^2$, 同理可得其他二式, 则左边 $\geqslant \frac{3 \sqrt{3}}{2}\left(a^2+b^2+c^2\right) \geqslant \frac{3 \sqrt{3}}{2}(a b+b c+c a)=\frac{3 \sqrt{3}}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $a, b, c \in \mathbf{R}^{+}$, 且 $a b c \leqslant 1$. 证明: $\frac{1}{a}+\frac{1}{b}+\frac{1}{c} \geqslant 1+\frac{6}{a+b+c}$.
+%%<SOLUTION>%%
+证法 1 注意到 $\frac{1}{a}+\frac{1}{b}+\frac{1}{c} \geqslant 1+\frac{6}{a+b+c} \Leftrightarrow\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right)(a+ b+c) \geqslant a+b+c+6$. 由均值不等式知 $\frac{1}{a}+\frac{1}{b}+\frac{1}{c} \geqslant \frac{3}{\sqrt[3]{a b c}} \geqslant 3, a+b+ c \geqslant 3 \sqrt[3]{a b c}$. 故 $\frac{1}{3}\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right)(a+b+c) \geqslant a+b+c \cdots(1)$, $\frac{2}{3}\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right)(a+b+c) \geqslant \frac{2}{3} \times \frac{3}{\sqrt[3]{a b c}} \times 3 \sqrt[3]{a b c}=6 \cdots$ (2). 将(1)、(2) 相加得 $\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right)(a+b+c) \geqslant a+b+c+6$. 因此, 原命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $a, b, c \in \mathbf{R}^{+}$, 且 $a b c \leqslant 1$. 证明: $\frac{1}{a}+\frac{1}{b}+\frac{1}{c} \geqslant 1+\frac{6}{a+b+c}$.
+%%<SOLUTION>%%
+证法 2 考虑如下两种情形.
+(1) 当 $a+b+c \geqslant 3$ 时, 由于 $\frac{1}{a}+\frac{1}{b}+\frac{1}{c} \geqslant\frac{3}{\sqrt[3]{a b c}} \geqslant 3$, 则 $\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right)(a+b+c) \geqslant 3(a+b+c) \geqslant a+b+c+6$.
+(2) 当 $a+b+c<3$ 时, 则 $\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right)(a+b+c) \geqslant \frac{3}{\sqrt[3]{a b c}} \times 3 \sqrt[3]{a b c}=9>a+b+c+6$. 综上, 原命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 正实数 $x 、 y 、 z$ 满足 $x y z=1$. 证明: $\frac{x^3+y^3}{x^2+x y+y^2}+\frac{y^3+z^3}{y^2+y z+z^2}+ \frac{z^3+x^3}{z^2+z x+x^2} \geqslant 2$.
+%%<SOLUTION>%%
+注意到 $\frac{x^2-x y+y^2}{x^2+x y+y^2} \geqslant \frac{1}{3} \Leftrightarrow 3\left(x^2-x y+y^2\right) \geqslant x^2+x y+y^2 \Leftrightarrow 2(x- y)^2 \geqslant 0$. 则 $\frac{x^3+y^3}{x^2+x y+y^2}=\frac{x^2-x y+y^2}{x^2+x y+y^2}(x+y) \geqslant \frac{x+y}{3}$. 故 $\frac{x^3+y^3}{x^2+x y+y^2}+ \frac{y^3+z^3}{y^2+y z+z^2}+\frac{z^3+x^3}{z^2+z x+x^2} \geqslant \frac{1}{3}(x+y)+\frac{1}{3}(y+z)+\frac{1}{3}(z+x)=\frac{2}{3}(x+ y+z) \geqslant 2 \sqrt[3]{x y z}=2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $a_1, a_2, \cdots, a_n>0$ 且 $a_1+a_2+\cdots+a_n=1$. 求证:
+$$
+\left(\frac{1}{a_1^2}-1\right)\left(\frac{1}{a_2^2}-1\right) \cdots\left(\frac{1}{a_n^2}-1\right) \geqslant\left(n^2-1\right)^n \text {. }
+$$
+%%<SOLUTION>%%
+因为 $a_1+a_2+\cdots+a_n=1$, 所以由均值不等式可得 $1+a_i=a_1+a_2 +\cdots+a_n+a_i \geqslant(n+1)\left(a_1 a_2 \cdots a_n a_i\right)^{1 /(n+1)}, 1-a_i=a_1+a_2+\cdots+a_n-a_i \geqslant (n-1)\left(a_1 a_2 \cdots a_n / a_i\right)^{1 /(n-1)}$. 取 $i=1,2, \cdots, n$ 再将之分别累积后得 $\prod_{i=1}^n(1- \left.a_i^2\right) \geqslant\left(n^2-1\right)^n \prod_{i=1}^n a_i^2$, 从而 $\left(\frac{1}{a_1^2}-1\right)\left(\frac{1}{a_2^2}-1\right) \cdots\left(\frac{1}{a_n^2}-1\right) \geqslant\left(n^2-1\right)^n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 设 $a, b, c$ 为正数,且 $a+b+c=3$. 求证:
+$$
+\sqrt{a}+\sqrt{b}+\sqrt{c} \geqslant a b+b c+c a .
+$$
+%%<SOLUTION>%%
+由条件等式有 $(a+b+c)^2=9$. 于是 $a b+b c+c a=\frac{9-a^2-b^2-c^2}{2}$. 只需证明 $2 \sqrt{a}+2 \sqrt{b}+2 \sqrt{c}+a^2+b^2+c^2 \geqslant 9$ 为此先证 $2 \sqrt{a}+a^2 \geqslant 3 a$. 事实上, $2 \sqrt{a}+a^2=\sqrt{a}+\sqrt{a}+a^2 \geqslant 3 \sqrt[3]{a^3}=3 a$. 类似可得其余两个不等式, 从而就有 $2 \sqrt{a}+2 \sqrt{b}+2 \sqrt{c}+a^2+b^2+c^2 \geqslant 3(a+b+c)=9$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 已知 $x, y, z \in \mathbf{R}^{+}$, 且 $x+y+z=1$. 求证: $\left(\frac{1}{x}-x\right)\left(\frac{1}{y}-y\right)\left(\frac{1}{z}-z\right) \geqslant \left(\frac{8}{3}\right)^3$.
+%%<SOLUTION>%%
+设 $\frac{1}{x}=a, \frac{1}{y}=b, \frac{1}{z}=c$, 代入已知条件等式得 $\frac{1}{a}+\frac{1}{b}+\frac{1}{c}=1$, 即 $a b c=a b+b c+c a$, 由均值不等式易得到 $a b c \geqslant 27$, 所以,
+$$
+\begin{aligned}
+& \left(\frac{1}{x}-x\right)\left(\frac{1}{y}-y\right)\left(\frac{1}{z}-z\right)=\left(a-\frac{1}{a}\right)\left(b-\frac{1}{b}\right)\left(c-\frac{1}{c}\right)=\frac{\left(a^2-1\right)\left(b^2-1\right)\left(c^2-1\right)}{a b c}= \\
+& \frac{1}{a b c}\left(a^2 b^2 c^2-a^2 b^2-b^2 c^2-c^2 a^2+a^2+b^2+c^2-1\right)=\frac{1}{a b c}\left[(a b+b c+c a)^2-\right. \\
+& \left.a^2 b^2-b^2 c^2-c^2 a^2+a^2+b^2+c^2-1\right]=\frac{1}{a b c}\left[2 a^2 b c+2 a b^2 c+2 a b c^2+a^2+b^2+\right. \\
+& \left.c^2-1\right] \geqslant \frac{1}{a b c}\left[2 a^2 b c+2 a b^2 c+2 a b c^2+a b+b c+c a-1\right]=2(a+b+c)+1- \\
+& \frac{1}{a b c} \geqslant 6 \sqrt[3]{a b c}+1-\frac{1}{a b c} \geqslant 6 \times 3+1-\frac{1}{27}=\frac{512}{27}=\left(\frac{8}{3}\right)^3 .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 设 $x_1, x_2, \cdots, x_n>0$, 且 $x_1 x_2 \cdots x_n=1$. 求证: $\frac{1}{x_1\left(1+x_1\right)}+\frac{1}{x_2\left(1+x_2\right)} +\cdots+\frac{1}{x_n\left(1+x_n\right)} \geqslant \frac{n}{2}$.
+%%<SOLUTION>%%
+证明: 显然原不等式等价于 $\frac{1+x_1+x_1^2}{x_1\left(1+x_1\right)}+\frac{1+x_2+x_2^2}{x_2\left(1+x_2\right)}+\cdots+ \frac{1+x_n+x_n^2}{x_n\left(1+x_n\right)} \geqslant \frac{3 n}{2}$. 注意到 $4\left(1+x_i+x_i^2\right) \geqslant 3\left(1+x_i\right)^2$ 对任意的 $i=1,2, \cdots$, $n$ 都成立, 因此要证明上式只需证明 $\frac{3}{4}\left(\frac{1+x_1}{x_1}+\frac{1+x_2}{x_2}+\cdots+\frac{1+x_n}{x_n}\right) \geqslant \frac{3 n}{2}$, 即 $\frac{1}{x_1}+\frac{1}{x_2}+\cdots+\frac{1}{x_n} \geqslant n \cdots$ (3). 由 $x_1 x_2 \cdots x_n=1$ 及均值不等式易知(3) 成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 设 $a, b, c>0$ 且 $a^2+b^2+c^2+(a+b+c)^2 \leqslant 4$. 求证:
+$$
+\frac{a b+1}{(a+b)^2}+\frac{b c+1}{(b+c)^2}+\frac{c a+1}{(c+a)^2} \geqslant 3 .
+$$
+%%<SOLUTION>%%
+证明: 由 $a^2+b^2+c^2+(a+b+c)^2 \leqslant 4$ 可知 $a^2+b^2+c^2+a b+b c+ c a \leqslant 2$, 因此 $\frac{2(a b+1)}{(a+b)^2} \geqslant \frac{2 a b+a^2+b^2+c^2+a b+b c+c a}{(a+b)^2}= \frac{(a+b)^2+(c+a)(c+b)}{(a+b)^2}$ 即 $\frac{a b+1}{(a+b)^2} \geqslant \frac{1}{2}\left(1+\frac{(c+a)(c+b)}{(a+b)^2}\right) \cdots$ (4). 同理可得 $\frac{b c+1}{(b+c)^2} \geqslant \frac{1}{2}\left(1+\frac{(a+b)(a+c)}{(b+c)^2}\right), \frac{c a+1}{(c+a)^2} \geqslant \frac{1}{2}\left(1+\frac{(b+c)(b+a)}{(c+a)^2}\right) \cdots$ (5). 另外由均值不等式显然有 $\frac{(c+a)(c+b)}{(a+b)^2}+\frac{(a+b)(a+c)}{(b+c)^2}+\frac{(b+c)(b+a)}{(c+a)^2} \geqslant 3 \cdots$ (6). 综合(4)(5)(6)可得 $\frac{a b+1}{(a+b)^2}+\frac{b c+1}{(b+c)^2}+\frac{c a+1}{(c+a)^2} \geqslant 3$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 已知 $a, b, c$ 为正实数,且 $a b c=8$, 求证:
+$$
+\frac{a^2}{\sqrt{\left(1+a^3\right)\left(1+b^3\right)}}+\frac{b^2}{\sqrt{\left(1+b^3\right)\left(1+c^3\right)}}+\frac{c^2}{\sqrt{\left(1+c^3\right)\left(1+a^3\right)}} \geqslant \frac{4}{3} \text {. }
+$$
+%%<SOLUTION>%%
+证明:注意到 $\frac{a^2+2}{2}=\frac{\left(a^2-a+1\right)+(a+1)}{2} \geqslant \sqrt{\left(a^2-a+1\right) \cdot(a+1)}= \sqrt{1+a^3}$. 要证原不等式只需证明 $\frac{a^2}{\left(a^2+2\right)\left(b^2+2\right)}+\frac{b^2}{\left(b^2+2\right)\left(c^2+2\right)}+ \frac{c^2}{\left(c^2+2\right)\left(a^2+2\right)} \geqslant \frac{1}{3}$. 而上式等价于 $3 a^2\left(c^2+2\right)+3 b^2\left(a^2+2\right)+3 c^2\left(b^2+\right. 2) \geqslant\left(a^2+2\right)\left(b^2+2\right)\left(c^2+2\right)$. 即 $\left(a^2 b^2+b^2 c^2+c^2 a^2\right)+2\left(a^2+b^2+c^2\right) \geqslant a^2 b^2 c^2+8=64+8=72$. 而 $a^2 b^2+b^2 c^2+c^2 a^2 \geqslant 3(a b c)^{\frac{4}{3}}=48, a^2+b^2+ c^2 \geqslant 3(a b c)^{\frac{2}{3}}=12$, 则上式显然成立.
+故原不等式得证, 当且仅当 $a=b=c=$ 2 时取等号.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 设 $a, b \in \mathbf{R}, \frac{1}{a}+\frac{1}{b}=1$. 求证: 对一切正整数 $n$, 有
+$$
+(a+b)^n-a^n-b^n \geqslant 2^{2 n}-2^{n+1} .
+$$
+%%<SOLUTION>%%
+$n=1$ 时显然成立.
+假设 $n=k$ 时, 有 $(a+b)^k-a^k-b^k \geqslant 2^{2 k}-2^{k+1}$.
+则对 $n=k+1$, 由 $\frac{1}{a}+\frac{1}{b}=1$, 有 $a+b=a b$, 于是 $a b=a+b \geqslant 2 \sqrt{a b}$ 即 $a b=a+b \geqslant 4$. 从而, $(a+b)^{k+1}-a^{k+1}-b^{k+1}=(a+b)\left[(a+b)^k-a^k-\right. \left.b^k\right]+a^k b+a b^k \geqslant 4\left(2^{2 k}-2^{k+1}\right)+2 \sqrt{a^{k+1} b^{k+1}} \geqslant 2^{2 k+2}-2^{k+3}+2^{k+2}=2^{2(k+1)}- 2^{(k+1)+1}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 设 $a, b \in \mathbf{R}^{+}$, 求证: $\sqrt{a}+1>\sqrt{b}$ 成立的充要条件是对任意 $x>1$, 有
+$$
+a x+\frac{x}{x-1}>b \text {. }
+$$
+%%<SOLUTION>%%
+已知 $a b>0, x-1>0$, 则 $a x+\frac{x}{x-1}=\left[a(x-1)+\frac{1}{x-1}\right]+a+1 \geqslant 2 \sqrt{a}+a+1=(\sqrt{a}+1)^2$. 当且仅当 $a(x-1)=\frac{1}{x-1}$, 即 $x=1+\frac{1}{\sqrt{a}}$ 时, $a x+\frac{x}{x-1}$ 的最小值为 $(\sqrt{a}+1)^2$, 于是 $a x+\frac{x}{x-1}>b$ 对任意 $x>1$ 成立的.
+充要条件是 $(\sqrt{a}+1)^2>b$, 即 $\sqrt{a}+1>\sqrt{b}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 设 $x_1, x_2 \in \mathbf{R}$, 且 $x_1^2+x_2^2 \leqslant 1$. 求证: 对任意 $y_1, y_2 \in \mathbf{R}$, 有 $\left(x_1 y_1+\right. \left.x_2 y_2-1\right)^2 \geqslant\left(x_1^2+x_2^2-1\right)\left(y_1^2+y_2^2-1\right)$.
+%%<SOLUTION>%%
+若 $y_1^2+y_2^2-1 \geqslant 0$, 不等式显然成立.
+若 $y_1^2+y_2^2-1<0$, 则由平均值不等式, 得 $x_1 y_1 \leqslant \frac{x_1^2+y_1^2}{2}, x_2 y_2 \leqslant \frac{x_2^2+y_2^2}{2}$. 则 $x_1 y_1+x_2 y_2 \leqslant \frac{1}{2}\left(x_1^2+x_2^2+y_1^2\right. \left.+y_2^2\right) \leqslant 1$. 因为 $1-x_1 y_1-x_2 y_2 \geqslant 1-\frac{x_1^2+y_1^2}{2}-\frac{x_2^2+y_2^2}{2}=\frac{1-x_1^2-x_2^2+1-y_1^2-y_2^2}{2} >0$, 所以, $\left(1-x_1 y_1-x_2 y_2\right)^2 \geqslant\left(\frac{1-x_1^2-x_2^2+1-y_1^2-y_2^2}{2}\right)^2 \geqslant\left(x_1^2+x_2^2-1\right)$  $\left(y_1^2+y_2^2-1\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 设 $a 、 b 、 c$ 为正实数,求证:
+$$
+\left(1+\frac{a}{b}\right)\left(1+\frac{b}{c}\right)\left(1+\frac{c}{a}\right) \geqslant 2\left(1+\frac{a+b+c}{\sqrt[3]{a b} c}\right) .
+$$
+%%<SOLUTION>%%
+由于 $\left(1+\frac{a}{b}\right)\left(1+\frac{b}{c}\right)\left(1+\frac{c}{a}\right)=2+\left(\frac{a}{c}+\frac{c}{b}+\frac{b}{a}\right)+ \left(\frac{a}{b}+\frac{b}{c}+\frac{c}{a}\right)=2+\left(\frac{a}{c}+\frac{a}{b}+\frac{a}{a}\right)+\left(\frac{b}{a}+\frac{b}{c}+\frac{b}{b}\right)+\left(\frac{c}{b}+\frac{c}{a}+\frac{c}{c}\right)- 3 \geqslant-1+3 \frac{a+b+c}{\sqrt[3]{a b c}} \geqslant 2\left(1+\frac{a+b+c}{\sqrt[3]{a b c}}\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16. 设 $x_1, x_2, x_3 \in \mathbf{R}^{+}$, 证明:
+$$
+\frac{x_2}{x_1}+\frac{x_3}{x_2}+\frac{x_1}{x_3} \leqslant\left(\frac{x_1}{x_2}\right)^2+\left(\frac{x_2}{x_3}\right)^2+\left(\frac{x_3}{x_1}\right)^2 .
+$$
+%%<SOLUTION>%%
+由平均值不等式, 得 $\frac{x_2}{x_1}=\frac{x_2}{x_3} \cdot \frac{x_3}{x_1} \leqslant \frac{1}{2}\left[\left(\frac{x_2}{x_3}\right)^2+\left(\frac{x_3}{x_1}\right)^2\right], \frac{x_3}{x_2}=\frac{x_3}{x_1}$. $\frac{x_1}{x_2} \leqslant \frac{1}{2}\left[\left(\frac{x_3}{x_1}\right)^2+\left(\frac{x_1}{x_2}\right)^2\right], \frac{x_1}{x_3}=\frac{x_1}{x_2} \cdot \frac{x_2}{x_3} \leqslant \frac{1}{2}\left[\left(\frac{x_1}{x_2}\right)^2+\left(\frac{x_2}{x_3}\right)^2\right]$. 将它们相加, 便得到命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17. 设 $a 、 b 、 c$ 为正实数,且 $a+b+c=1$. 求证:
+$$
+(1+a)(1+b)(1+c) \geqslant 8(1-a)(1-b)(1-c) .
+$$
+%%<SOLUTION>%%
+由于 $1+a=2-b-c=1-b+1-c \geqslant 2 \sqrt{(1-b)(1-c)}$, 同理可得 $1+b \geqslant 2 \sqrt{(1-a)(1-c)}, 1+c \geqslant 2 \sqrt{(1-a)(1-b)}$. 将以上三式相乘便可以.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题18. 设 $x 、 y 、 z$ 为正实数,且 $x \geqslant y \geqslant z$. 求证:
+$$
+\frac{x^2 y}{z}+\frac{y^2 z}{x}+\frac{z^2 x}{y} \geqslant x^2+y^2+z^2 .
+$$
+%%<SOLUTION>%%
+$\frac{x^2 y}{z}+\frac{y^2 z}{x}+\frac{z^2 x}{y}-x^2-y^2-z^2=\frac{x^2}{z}(y-z)+\frac{y^2 z}{x}+\frac{z^2 x}{y}-y^2-z^2 \geqslant$
+$$
+\begin{aligned}
+& \frac{y^2}{z}(y-z)+2 z \sqrt{y z}-y^2-z^2=\frac{y-z}{z}\left(y^2-y z+z^2-\frac{2 z^2 \sqrt{y}}{\sqrt{y}+\sqrt{z}}\right)= \\
+& \frac{(y-z)(\sqrt{y}-\sqrt{z})}{z(\sqrt{y}+\sqrt{z})}\left[y(\sqrt{y}+\sqrt{z})^2-z^2\right] \geqslant 0 .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题19. 设 $a 、 b 、 c$ 为正实数,满足 $a^2+b^2+c^2=1$. 求证:
+$$
+\frac{a b}{c}+\frac{b c}{a}+\frac{c a}{b} \geqslant \sqrt{3} \text {. }
+$$
+%%<SOLUTION>%%
+因 $\left(\frac{a b}{c}+\frac{b c}{a}+\frac{c a}{b}\right)^2=\frac{a^2 b^2}{c^2}+\frac{b^2 c^2}{a^2}+\frac{c^2 a^2}{b^2}+2\left(a^2+b^2+c^2\right)=$
+$$
+\frac{1}{2}\left(\frac{a^2 b^2}{c^2}+\frac{c^2 a^2}{b^2}\right)+\frac{1}{2}\left(\frac{b^2 c^2}{a^2}+\frac{a^2 b^2}{c^2}\right)+\frac{1}{2}\left(\frac{c^2 a^2}{b^2}+\frac{b^2 c^2}{a^2}\right)+2 \geqslant a^2+b^2+c^2+2=3.
+$$
+所以, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题20. 设 $a 、 b 、 c 、 d$ 是非负实数,满足 $a b+b c+c d+d a=1$. 求证:
+$$
+\frac{a^3}{b+c+d}+\frac{b^3}{a+c+d}+\frac{c^3}{a+d+b}+\frac{d^3}{a+b+c} \geqslant \frac{1}{3} \text {. }
+$$
+%%<SOLUTION>%%
+因为 $\frac{a^3}{b+c+d}+\frac{b+c+d}{18}+\frac{1}{12} \geqslant 3 \sqrt[3]{\frac{a^3}{a+c+d} \cdot \frac{b+c+d}{18} \cdot \frac{1}{12}}= \frac{a}{2}$, 即 $\frac{a^3}{b+c+d} \geqslant \frac{a}{2}-\frac{b+c+d}{18}-\frac{1}{12}$, 所以左 $\geqslant \frac{a+b+c+d}{2}-\frac{1}{18}(3 a+ 3 b+3 c+3 d)-\frac{4}{12}=\frac{1}{3}(a+b+c+d)-\frac{1}{3}$. 又由假设知 $a b+b c+c d+ d a=1$, 即 $(a+c)(b+d)=1$, 所以, $a+b+c+d=a+c+\frac{1}{a+c} \geqslant 2$. 故 $\frac{a^3}{b+c+d}+\frac{b^3}{a+c+d}+\frac{c^3}{a+b+d}+\frac{d^3}{a+b+c} \geqslant \frac{1}{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题21. 设 $n$ 为给定的自然数, $n \geqslant 3$, 对于 $n$ 个给定的实数 $a_1, a_2, \cdots, a_n$, 记
+$\left|a_i-a_j\right|(1 \leqslant i<j \leqslant n)$ 的最小值为 $m$, 求在
+$$
+a_1^2+\cdots+a_n^2=1
+$$
+时, $m$ 的最大值.
+%%<SOLUTION>%%
+不妨设 $a_1 \geqslant a_2 \geqslant \cdots \geqslant a_n$, 则 $a_i-a_j \geqslant(i-j) m$. $\sum_{1 \leqslant i<j \leqslant n}\left(a_i-a_j\right)^2= (n-1) \sum_{i=1}^n a_i^2-2 \sum_{1 \leqslant i<j \leqslant n} a_i a_j=(n-1) \sum_{i=1}^n a_i^2-\left[\left(\sum_{i=1}^n a_i\right)^2-\sum_{i=1}^n a_i^2\right] \leqslant n \sum_{i=1}^n a_i^2=$ n. 另一方面, $\sum_{1 \leqslant i<j \leqslant n}\left(a_i-a_j\right)^2 \geqslant m^2 \sum_{1 \leqslant i<j \leqslant n}(i-j)^2=m^2 \sum_{k=1}^{n-1}(n-k) \cdot k^2= \frac{m^2 n^2\left(n^2-1\right)}{12}$. 所以 $n \geqslant \frac{m^2 n^2\left(n^2-1\right)}{12}$, 即 $m \leqslant \sqrt{\frac{12}{n\left(n^2-1\right)}}$. 且当 $\left|a_i\right|$ 成等差数列, $\sum_{i=1}^n a_i=0$ 时等号成立.
+故 $m$ 的最大值为 $\sqrt{\frac{12}{n\left(n^2-1\right)}}$.
+%%PROBLEM_END%%
+
+

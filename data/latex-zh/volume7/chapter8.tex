@@ -1,0 +1,267 @@
+
+%%TEXT_BEGIN%%
+本节介绍完全四边形以及调和点列的性质.
+完全四边形:
+我们把两两相交, 且没有三线共点的四条直线及它们的六个交点所构成的图形, 叫做完全四边形.
+如图(<FilePath:./figures/fig-c8i1.png>), 直线 $A B C 、 B D E 、 C D F 、 A F E$ 两两交于 $A 、 B 、 C 、 D 、 E 、 F$ 六点, 则四边形 $A B C D E F$ 即为完全四边形, 线段 $A D 、 B F 、 C E$ 为其三条对角线.
+性质 1 在完全四边形 $A B C D E F$ 中, 四个三角形 $\triangle A B E 、 \triangle B C D 、 \triangle A C F 、 \triangle D E F$ 的外接圆共点 (这点称为 Miquel 点).
+证明如图(<FilePath:./figures/fig-c8i2.png>), 设 $\triangle B C D$ 与 $\triangle D E F$ 的外接圆除交于点 $D$ 外, 还交于点 $M$.
+设点 $M$ 在直线 $C B 、 C D 、 B D$ 上的射影分别为 $P 、 Q 、 R$.
+由西姆松定理,知 $P 、 Q 、 R$ 三点共线.
+同样, 点 $M$ 在直线 $D F 、 D E 、 F E$ 上的射影分别为 $Q 、 R 、 S$, 则 $Q 、 R 、 S$ 三点也共线.
+故 $P 、 Q 、 R 、 S$ 四点共线.
+在 $\triangle A C F$ 中, 点 $P$ 在直线 $A C$ 上, 点 $Q$ 在直线 $C F$ 上, 点 $S$ 在直线 $A F$ 上, 且 $P 、 Q 、 S$ 三点共线, 由西姆松定理的逆定理, 知点 $M$ 在 $\triangle A C F$ 的外接圆上.
+同理, 点 $M$ 在 $\triangle A B E$ 的外接圆上.
+故 $\triangle A B E 、 \triangle B C D 、 \triangle A C F 、 \triangle D E F$ 的四个外接圆共点.
+以下的性质 2 极为重要:
+性质 2 完全四边形的一条对角线所在直线与其他两条对角线所在直线相交,则该线被其他两条对角线所在直线调和分割.
+设四边形 $A B C D$ 是平面四边形,对角线 $A C$ 和 $B D$ 交于点 $P$, 对边 $A B$ 和 $D C 、 A D$ 和 $B C$ 分别交于点 $Q 、 R, A C 、 B D$ 分别与 $Q R$ 交于点 $X 、 Y$, 则 $Q$ 、 $R 、 X 、 Y ; B 、 D 、 P 、 Y ; A 、 C 、 P 、 X$ 均为调和点列.
+证明如图(<FilePath:./figures/fig-c8i3.png>), 对于直线 $B D Y$ 截 $\triangle A Q R$ 、 直线 $Q R Y$ 截 $\triangle A B D$ 、直线 $Q X R$ 截 $\triangle A B C$, 分别应用梅涅劳斯定理得
+$$
+\begin{aligned}
+& \frac{A B}{B Q} \cdot \frac{Q Y}{Y R} \cdot \frac{R D}{D A}=1, \label{eq1} \\
+& \frac{A Q}{Q B} \cdot \frac{B Y}{Y D} \cdot \frac{D R}{R A}=1, \label{eq2} \\
+& \frac{B Q}{Q A} \cdot \frac{A X}{X C} \cdot \frac{C R}{R B}=1 . \label{eq3}
+\end{aligned}
+$$
+对于点 $C$ 与 $\triangle A Q R$ 、点 $C$ 与 $\triangle A B D$ 、点 $D$ 与 $\triangle A B C$, 分别应用塞瓦定理得
+$$
+\begin{aligned}
+& \frac{A B}{B Q} \cdot \frac{Q X}{X R} \cdot \frac{R D}{D A}=1, \label{eq4} \\
+& \frac{A Q}{Q B} \cdot \frac{B P}{P D} \cdot \frac{D R}{R A}=1, \label{eq5} \\
+& \frac{A P}{P C} \cdot \frac{C R}{R B} \cdot \frac{B Q}{Q A}=1 . \label{eq6}
+\end{aligned}
+$$
+比较式\ref{eq1}和\ref{eq4}、式\ref{eq2}和\ref{eq5}、式\ref{eq3}和\ref{eq6}分别得
+$$
+\frac{Q Y}{Y R}=\frac{Q X}{X R}, \frac{B Y}{Y D}=\frac{B P}{P D}, \frac{A X}{X C}=\frac{A P}{P C} .
+$$
+所以, $Q 、 R 、 X 、 Y ; B 、 D 、 P 、 Y ; A 、 C 、 P 、 X$ 分别为调和点列.
+特别地, 若 $B D / / Q R$, 则视交点 $Y$ 在无穷远处, 此时, $\frac{B P}{P D}=\frac{Q X}{X R}=1$.
+上述三组调和点列仍成立.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+性质 3 在完全四边形 $A B C D E F$ 中, 若 $G 、 H$ 分别是 $C F 、 B E$ 的中点, 则
+$$
+S_{\text {四边形 } B C E F}=4 S_{\triangle A G H} \text {. }
+$$
+证明如图(<FilePath:./figures/fig-c8i4.png>), 连结 $C H 、 H F$ 得
+$$
+\begin{aligned}
+S_{\triangle A G H} & =S_{\triangle A C H}-S_{\triangle C G H}-S_{\triangle A C G} \\
+& =S_{\triangle A B H}+S_{\triangle B C H}-\frac{1}{2} S_{\triangle C H F}-\frac{1}{2} S_{\triangle A C F}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& =\frac{1}{2} S_{\triangle A B E}+\frac{1}{2} S_{\triangle B C E}-\frac{1}{2} S_{\text {四边形 } A C H F} \\
+& =\frac{1}{2} S_{\text {四边形 } H C E F}=\frac{1}{4}\left(S_{\triangle B E F}+S_{\triangle B C E}\right) \\
+& ==\frac{1}{4} S_{\text {四边形 } B C E F} .
+\end{aligned}
+$$
+调和点列调和点列是射影几何学的重要内容, 它在平面几何中也有着广泛的应用.
+对于线段 $A B$ 的内分点 $C$ 和外分点 $D$ 满足 $\frac{A C}{C B}=\frac{A D}{D B}$, 则称点 $C 、 D$ 调和分割线段 $A B$ 或者 $A 、 B 、 C 、 D$ 是调和点列.
+我们允许无穷远点的存在, 即规定如果 $D$ 为无穷远点, 则 $\frac{A D}{D B}=1$, 也可以说, 当 $C$ 平分线段 $A B$ 时, $A 、 B 、 C$ 以及直线 $A C$ 上的无穷远点四点成调和点列.
+性质 4 对于线段 $A B$ 的内分点 $C$ 和外分点 $D$ 满足 $C 、 D$ 调和分割线段 $A B, M$ 是线段 $A B$ 的中点,则有以下结论成立:
+(1) 点 $A 、 B$ 调和分割线段 $C D$;
+(2) $\frac{1}{A C}+\frac{1}{A D}=\frac{2}{A B}$;
+(3) $A B \cdot C D=2 A D \cdot B C$;
+(4) $C A \cdot C B=C M \cdot C D$.
+以上证明并不难,留给读者完成.
+性质 5 对线段 $A B$ 的内分点 $C$ 和外分点 $D$ 以及直线 $A B$ 外一点 $P$, 给出四个论断:
+(1) $P C$ 是 $\angle A P B$ 的平分线;
+(2) $P D$ 是 $\angle A P B$ 的外角平分线;
+(3) $C 、 D$ 调和分割线段 $A B$;
+(4) $P C \perp P D$.
+以上四个论断中, 任意选取两个作题设、另外两个作结论组成的六个命题均为真命题.
+这里仅对由论断 (3) 和 (4) 作题设, (1) 和 (2) 作结论的命题给出证明.
+证明如图(<FilePath:./figures/fig-c8i5.png>), 不妨设 $\angle A P C=\alpha$, $\angle B P C=\beta$.
+由 $P C \perp P D$ 知
+$$
+\angle A P D=90^{\circ}+\alpha, \angle B P D=90^{\circ}-\beta .
+$$
+故 $\frac{A C}{C B}=\frac{P A \sin \angle A P C}{P B \sin \angle B P C}=\frac{P A \sin \alpha}{P B \sin \beta}$,
+$\frac{A D}{D B}=\frac{P A \sin \angle A P D}{P B \sin \angle B P D}=\frac{P A}{P B} \frac{\cos \alpha}{\cos \beta}$.
+所以 $\frac{\sin \alpha}{\sin \beta}=\frac{\cos \alpha}{\cos \beta}$, 即 $\alpha=\beta$.
+因此,结论(1)成立.
+接下来易证结论 (2), 略.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+性质 6 如图(<FilePath:./figures/fig-c8i6.png>), 过 $O$ 引出四条给定的直线, 直线 $L$ 与这四条直线相交, 交点分别为 $A 、 B$ 、 $C 、 D$, 则 $\overrightarrow{A B} / \overrightarrow{A B} / \overrightarrow{C D}$ 为定值, 这个比例称为交比.
+证明如图设角, 则 $\frac{\overrightarrow{A B}}{\overrightarrow{C B}}=-\frac{S_{\triangle O A B}}{S_{\triangle O B C}}= -\frac{O A \cdot \sin \alpha}{O C \cdot \sin \beta}$
+同理, $\frac{\overrightarrow{A D}}{\overrightarrow{C D}}=-\frac{O A \cdot \sin (\alpha+\beta+\gamma)}{O C \cdot \sin \gamma}$.
+所以 $\frac{\overrightarrow{A B} / \overrightarrow{C B}}{\overrightarrow{A D} / \overrightarrow{C D}}=\frac{\sin \alpha \cdot \sin \gamma}{\sin \beta \cdot \sin (\alpha+\beta+\gamma)}$ 为定值.
+特别地, 若上述定值为 -1 时, 则 $A 、 C 、 B 、 D$ 成调和点列.
+此时称直线 $O A 、 O B 、 O C 、 O D$ 成调和线束.
+容易发现,共点的四条直线成调和线束的充要条件是任作一不过它们交点的直线截四条直线所得的交点成调和点列.
+(注意: 如果该直线与四条直线之一平行, 命题仍有效, 这时有一点为无穷远点)
+由此可得定理 1 如图(<FilePath:./figures/fig-c8i7.png>), 设过 $O$ 的线束 $O A 、 O B 、 O C 、 O D$ 分别交不过 $O$ 的两条直线 $l_1$ 与 $l_2$ 于 $A 、 B 、 C 、 D 、 A^{\prime} 、 B^{\prime} 、 C^{\prime} 、 D^{\prime}$, 其中 $A^{\prime}$ 在直线 $O A$ 上, 等等.
+那么 $A 、 B 、 C 、 D$ 成调和点列的充要条件是 $A^{\prime} 、 B^{\prime} 、 C^{\prime} 、 D^{\prime}$ 成调和点列.
+以后使用该结论时统一称 $O$ 为中心.
+下面介绍两个比较常用的基本图形:
+如图(<FilePath:./figures/fig-c8i8.png>), 若线段 $A B$ 的中点为 $C, O$ 为直线 $A B$ 外一点, 则 $O A 、 O C$ 、 $O B$ 以及过 $O$ 且平行于 $A B$ 的直线成调和线束.
+如图(<FilePath:./figures/fig-c8i9.png>), 若四条直线 $l_1 、 l_2 、 l_3 、 l_4$ 成调和线束, 则 $l_1 \perp l_3$ 的充要条件是 $l_2 、 l_4$ 与 $l_3$ 的夹角相等.
+性质 7 设 $A 、 B 、 C 、 D$ 共线, 则 $A 、 B 、 C 、 D$ 为调和点列的充要条件是, 从线段 $C D$ 的中点 $O$ 起, 截同向线段 $O A$ 及 $O B$, 使这线段的一半长为比例中项, 即 $O C^2=O A \cdot O B$. (如图(<FilePath:./figures/fig-c8i10.png>) 所示)
+推论 1 一圆的直径被另一圆周调和分割的充要条件是,这两个圆正交.
+(两圆正交是指过它分别作两圆切线,则这两条线垂直)
+推论 2 如图(<FilePath:./figures/fig-c8i11.png>) 设点 $C$ 是 $\triangle A E F$ 的内心, 角平分线 $A C$ 交边 $E F$ 于点 $B$, 射线 $A B$ 交 $\triangle A E F$ 的外接圆于点 $O$, 则射线 $A B$ 上的点 $D$ 为 $\triangle A E F$ 的旁心的充要条件是 $\frac{A C}{C B}=\frac{D O}{O B}$.
+事实上, 若 $D$ 为 $\triangle A E F$ 的旁心, 如图(<FilePath:./figures/fig-c8i11.png>), 则易知, 三角形的角平分线被其内心和相应的旁心调和分割, 于是有 $\frac{A C}{C B}=\frac{A D}{D B}$. 显然 $C 、 E 、 D 、 F$ 共圆.
+且圆心为 $O$. 于是 $\frac{A C}{C B}=\frac{A D}{D B}=\frac{A D-A C}{D B-C B}$ (分比定理) $= \frac{C D}{(D O+O B)-(O C-O B)}=\frac{C D}{2 O B}=\frac{2 O D}{2 O B}=\frac{O D}{O B}$. 反之, 若 $\frac{A C}{C B}==\frac{D O}{O B}$, 可用同一法证得 $D$ 为 $\triangle A E F$ 的旁心.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 如图(<FilePath:./figures/fig-c8i12.png>), $R K 、 R L$ 是圆的两条切线, 过 $R$ 的割线交圆于 $S 、 T$ 两点, 交 $K L$ 于 $V$, 则 $R 、 V 、 S 、 T$ 是调和点列.
+%%<SOLUTION>%%
+证明:连结 $S L 、 T L$, 注意到 $\angle S L R=\angle L T R$, 于是 $\triangle S L R \backsim \triangle L T R$,
+$\frac{S L}{L T}=\frac{S R}{R L}=\frac{R L}{R T}=\sqrt{\frac{S R}{R T}}$, 同理可证, $\frac{S K}{K T}= \sqrt{\frac{S R}{R T}}$, 另一方面, $\frac{S V}{V T}=\frac{S_{\triangle S K L}}{S_{\triangle T K L}}=\frac{S K \cdot S L}{T K \cdot T L}= \frac{S L}{L T} \cdot \frac{S K}{K T}=\frac{S R}{R T}$, 即 $R 、 V 、 S 、 T$ 成调和点列.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 如图(<FilePath:./figures/fig-c8i13.png>), 已知 $P A 、 P B$ 是由圆 $O$ 外一点 $P$ 引出的两条切线, $M 、 N$ 分别为线段 $A P 、 A B$ 的中点, 延长 $M N$ 交圆 $O$ 于点 $C$, 点 $N$ 在 $M$ 与 $C$ 之间, $P C$ 交圆 $O$ 于点 $D$, 延长 $N D$ 交 $P B$ 于点 $Q$. 证明: 四边形 $M N Q P$ 为菱形.
+%%<SOLUTION>%%
+证明:由例 1 结论知, $P 、 E 、 D 、 C$ 成调和点列.
+由于 $M N / / P B$, 由定理 1 , 以 $N$ 为中心, 由 $(P 、 E 、 D 、 C)$ 为调和点列可以得到 $(P 、 B 、 Q 、 \infty)$ 为调和点列.
+所以, $Q$ 为 $P B$ 的中点.
+而 $P B=P A, M 、 N 、 Q$ 为 $P A 、 A B 、 P B$ 的中点, 故四边形 $M N Q P$ 为菱形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 求证: 以完全四边形的三条对角线为直径的圆共轴, 且完全四边形的四个三角形的垂心在这条根轴上.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c8i14.png>), 不妨设 $H_1$ 为 $\triangle D E F$ 的垂心, 以 $C F 、 B E 、 A D$ 为直径的圆依次为 $O_1 、 O_2 、 O_3$, 连结 $H_1 F$ 与 $\odot O_1$ 交于 $K$, 显然 $K$ 在 $D E$ 延长线上.
+$H_1$ 对 $\odot O_1$ 的幂为 $H_1 K \cdot H_1 F, H_1$ 对 $\odot O_2$ 的幕为 $H_1 E \cdot H_1 L$.
+而由 $K 、 F 、 L 、 E$ 四点共圆知, $H_1 K H_1 F=H_1 E \cdot H_1 L$, 即 $H_1$ 对 $\odot O_1 、 \odot O_2$ 的幂相等.
+同理 $H_1$ 对 $\odot O_2 、 \odot O_3$ 的幂相等, 故 $H_1$ 对 $\odot O_1 、 \odot O_2 、 \odot O_3$ 等幂.
+同理 $H_2 、 H_3 、 H_4$.也对 $\odot O_1 、 \odot O_2 、 \odot O_3$ 等幂.
+显然 $H_1 、 H_2 、 H_3 、 H_4$ 不重合, (从而不可能都是根心), 这里有三个圆两两根轴相同,且 $H_1 、 H_2 、 H_3 、 H_4$ 均在这条根轴上.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 证明:
+Candy 定理: 设 $A B$ 为一圆任一条弦, $O$ 为 $A B$ 上任一点,过 $O$ 任作两条弦 $C D 、 E F$, 连结 $C F 、 E D$ 交 $A B$ 于 $G 、 H$, 则 $\frac{1}{O G}-\frac{1}{O H}=\frac{1}{O A}-\frac{1}{O B}$.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c8i15.png>), 连结 $A F 、 B F 、 A D 、 B D$, 则 $\angle A F C=\angle A D C, \angle C F E=\angle C D E, \angle E F B=\angle E D B$.
+由上述交比性质结论知,
+$$
+\frac{A G / G O}{A B / B O}=\frac{A O / O H}{A B / B H} \Rightarrow\left(\frac{A O}{G O}-1\right) \cdot B O=\frac{A O}{O H}  (B O-O H)=A O \times\left(\frac{B O}{O H}-1\right) \Rightarrow \frac{1}{G O}-\frac{1}{A O}=\frac{1}{O H}-\frac{1}{B O}
+$$
+所以 $\frac{1}{G O}-\frac{1}{O H}= \frac{1}{A O}-\frac{1}{B O}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 如图(<FilePath:./figures/fig-c8i16.png>), 在 $\triangle P B C$ 中, $\angle P B C= 60^{\circ}$, 过点 $P$ 作 $\triangle P B C$ 的外接圆圆 $O$ 的切线, 与 $C B$ 的延长线交于点 $A$, 点 $D 、 E$ 分别在线段 $P A$ 和圆 $O$ 上,使得 $\angle D B E=90^{\circ}, P D=P E$, 连结 $B E$ 与 $P C$ 相交于点 $F$. 已知 $A F 、 B P 、 C D$ 三线共点.
+(1) 求证: $B F$ 是 $\angle P B C$ 的角平分线;
+(2) 求 $\tan \angle P C B$ 的值.
+%%<SOLUTION>%%
+解:(1) 设 $A F 、 B P 、 C D$ 三线共点于 $H$, 设 $A H$ 与 $B D$ 交于点 $G$. 在完全四边形 $A B C H P D$ 中, 由对角线调和分割性质知 $A H$ 被 $G 、 F$ 调和分割, 从而知 $B A 、 B H 、 B G 、 B F$ 为调和线束.
+而 $B D \perp B E$, 故 $B F$ 平分 $\angle A B P$ 的外角, 即 $B F$ 是 $\angle P B C$ 的平分线.
+(2) 设 $\angle P C B=\alpha$, 则 $\angle A P B=\angle P E B=\alpha$, 在 $\triangle P E B$ 及 $\triangle P D B$ 中分别由正弦定理并注意到 $P D=P E$ 有
+$$
+\frac{\sin 30^{\circ}}{\sin \alpha}=\frac{\sin 60^{\circ}}{\sin \left(120^{\circ}-\alpha\right)} \Rightarrow \tan \alpha=\frac{6+\sqrt{6}}{11} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $O I$ 分别是 $\triangle A B C$ 的外心、内心, $\triangle A B C$ 的内切圆与 $B C 、 C A$ 、 $A B$ 分别切于点 $D 、 E 、 F$, 直线 $D F$ 与 $C A$ 交于点 $P$, 直线 $D E$ 与 $A B$ 交于点 $Q, M 、 N$ 分别是线段 $P E 、 Q F$ 的中点, 求证: $O I \perp M N$. (2007 中国数学奥林匹克)
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c8i17.png>),易证 $\frac{A F}{F B} \cdot \frac{B D}{D C} \cdot \frac{C E}{E A}=1$.
+所以, $A D 、 B E 、 C F$ 三线共点.
+由性质 2 知 $P 、 E 、 A 、 C$ 是调和点列.
+因为 $M$ 是线段 $P E$ 的中点, 所以, 由性质 7 得 $M E^2= M A \cdot M C$. 同理, $N F^2=N A \cdot N B$.
+因此, 点 $M 、 N$ 分别到 $\triangle A B C$ 的内切圆和外接圆等幂, 即点 $M 、 N$ 在 $\triangle A B C$ 的内切圆与外接圆的根轴上.
+故 $O I \perp M N$.
+%%<REMARK>%%
+注:: 本题在第 5 章中曾出现过, 但这里用的是不同的方法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设凸四边形 $A B C D$ 的两组对边分别交于点 $E$ 、 $F$, 两条对角线的交点为 $P$, 过 $P$ 作 $P O \perp E F$ 于点 $O$. 求证: $\angle B O C= \angle A O D$.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c8i18.png>), 延长 $A C 、 D B$ 分别与 $E F$ 交于点 $Q 、 R$. 若 $B D$ 与 $E F$ 平行, 则视点 $R$ 在无穷远处.
+由性质 2 知 $P 、 Q$ 调和分割线段 $A C, P$ 、 $R$ 调和分割线段 $B D$.
+因为 $P O \perp E F$, 所以, 根据性质 5 中 (3) 和 (4) $\Rightarrow(1)$ 和 (2), 知 $\angle P O A=\angle P O C$,
+$\angle P O B=\angle P O D$. 因此, $\angle B O C=\angle A O D$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 过锐角 $\triangle A B C$ 的顶点 $A 、 B 、 C$ 的三条高分别交对边于点 $D 、 E$ 、 $F$, 过点 $D$ 平行于 $E F$ 的直线分别交 $A C 、 A B$ 于点 $Q 、 R, E F$ 交 $B C$ 于点 $P$. 证明: $\triangle P Q R$ 的外接圆过 $B C$ 的中点.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c8i19.png>), 取边 $B C$ 的中点 $M$.
+由性质 2 知 $B 、 C 、 D 、 P$ 是调和点列.
+又 $M$ 是 $B C$ 的中点, 因此 $D M D P=D B \cdot D C$. (性质 4 的第(4)条)
+易证 $B 、 C 、 E 、 F$ 四点共圆.
+又因 $R Q / / E F$, 所以 $\angle R Q C= \angle P E C=\angle R B C$.
+因此, $B 、 Q 、 C 、 R$ 四点共圆, 即 $D R \cdot D Q=D B \cdot D C=D M \cdot D P$.
+由相交弦定理的逆定理知 $\triangle P Q R$ 的外接圆过 $B C$ 的中点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 凸四边形 $A B C D$ 的对角线交于点 $P$, 两组对边的直线分别交于点 $Q 、 R$, 经过 $P$ 的直线分别交 $A B 、 C D 、 Q R$ 于点 $M 、 N 、 G$.
+%%<SOLUTION>%%
+证明: $\frac{1}{M P}+\frac{1}{M G}==\frac{2}{M N}$.
+证明如图(<FilePath:./figures/fig-c8i20.png>), 设 $A C$ 与 $Q R$ 交于点 $S$, 则 $A$ 、 $C 、 P 、 S$ 成调和点列.
+连结 $Q P$. 考虑过 $Q$ 的四条线束 $Q A 、 Q P 、 Q D$ 、 $Q R$, 它们被两条直线 APCS 和 $M P N G$ 所截, 由于 $A$ 、 $C 、 P 、 S$ 成调和点列, 因此, $M 、 N 、 P 、 G$ 是调和点列, 即 $\frac{1}{M P}+\frac{1}{M G}=\frac{2}{M N}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 如图(<FilePath:./figures/fig-c8i21.png>), 已知 $B 、 N 、 F$ 均在 $\triangle A C E$ 的边上, $A N$ 分别交 $B F 、 B E 、 C F$ 于点 $M 、 G 、 H$. 求证: $\frac{1}{A M}+\frac{1}{A N}=-\frac{1}{A G}+\frac{1}{A H}$.
+%%<SOLUTION>%%
+证明:设直线 $B F, C E$ 交于 $I$, 再设 $I D$ 与 $A N$ 交于 $J$, 由调和四边形的性质 2 知, $A 、 G 、 M 、 N$; $A 、 J 、 G 、 H$ 均为调和点列.
+所以左式 $=\frac{2}{A J}=$ 右式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 如图(<FilePath:./figures/fig-c8i22.png>), 圆 $O_1$ 和圆 $O_2$ 与 $\triangle A B C$ 的三边所在的三条直线都相切, $E 、 F 、 G 、 H$ 为切点,并且 $E G 、 F H$ 的延长线交于点 $P$. 求证: 直线 $P A$ 与 $B C$ 垂直.
+%%<SOLUTION>%%
+证明:设直线 $P A$ 交 $B C$ 于点 $D$.
+对 $\triangle A B D$ 及截线 $P H F$, 对 $\triangle A D C$ 及截线 $P G E$ 分别应用梅涅劳斯定理, 有
+$$
+\frac{A H}{H} \bar{B} \cdot \frac{B F}{F D} \cdot \frac{D P}{P A}=1=\frac{D P}{P A} \cdot \frac{A G}{G} \cdot \frac{C E}{E D} .
+$$
+由切线性质, 有 $B F=H B, C E=G C$, 有 $\frac{A H}{F D}=\frac{A G}{E D}$, 即 $\frac{E D}{D F}=\frac{A G}{A H}$. 连结 $O_1 G 、 O_2 H$, 由 Rt $\triangle A G O_1 \backsim$ Rt $\triangle A H O_2$, 知 $\frac{A G}{A H}=\frac{O_1 G}{O_2 H}$.
+连结 $O_1 E 、 O_2 F$, 则 $\frac{A G}{A H}=\frac{O_1 E}{O_2 F}$.
+连结 $O_1 D 、 O_2 D$, 则在 Rt $\triangle O_1 E D$ 与 Rt $\triangle O_2 F D$ 中, 有 $\frac{E D}{D F}=\frac{O_1 E}{O_2 F}$.
+于是, Rt $\triangle O_1 E D \backsim$ Rt $\triangle O_2 F D$, 即有 $\angle O_1 D E=\angle O_2 D C$, 从而直线 $D F$ 为 $\triangle O_1 D O_2$ 的 $\angle O_1 D O_2$ 的外角平分线.
+设直线 $O_1 O_2$ 与直线 $E F$ 交于点 $Q$ (或无穷远点 $Q$ ), 从而点 $A 、 Q$ 调和分割 $O_1 O_2$ (由于 $A 、 Q$ 分别是内、外位似中心, $\frac{O_1 A}{O_2 A}=\frac{r_1}{r_2}=\frac{O_1 Q}{Q O_2}$, 这里 $r_1 、 r_2$ 分别为 $\odot O_1 、 \odot O_2$ 的半径), 即 $D O_1 、 D O_2 、 D A 、 D Q$ 为调和线束, 于是知 $D A \perp P Q$, 故 $P A \perp B C$.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,196 @@
+
+%%TEXT_BEGIN%%
+第二数学归纳法.
+第二数学归纳法设 $P(n)$ 是关于正整数 $n$ 的一个命题(或性质). 如果
+(1) 当 $n=1$ 时, $P(n)$ 成立;
+(2) 由 "对一切小于 $n$ 的正整数 $k, P(k)$ 都成立"可以推出 $P(n)$ 成立.
+那么,对任意 $n \in \mathbf{N}^*, P(n)$ 都成立.
+证明考虑命题 $Q(n)$ : "对所有 $1 \leqslant k \leqslant n, k \in \mathbf{N}^*, P(k)$ 都成立". 则由 $Q(n)$ 成立, 可知 $P(n)$ 成立.
+当 $n=1$ 时, 由 (1) 知 $Q(n)$ 成立.
+现设 $Q(n-1)(n \geqslant 2)$ 成立, 即对所有 $1 \leqslant k \leqslant n-1, P(k)$ 都成立, 则由 (2) 知, $P(n)$ 成立.
+所以, 对任意 $1 \leqslant k \leqslant n, P(k)$ 都成立, 从而, $Q(n)$ 成立.
+于是, 由第一数学归纳法可知, 对任意 $n \in \mathbf{N}^*, Q(n)$ 都成立, 进而, $P(n)$ 成立.
+第二数学归纳法获证.
+第二数学归纳法是第一数学归纳法的推论, 在作归纳假设时, 我们假设了 $P(1), \cdots, P(n-1)$ 都成立, 并在此前提下证出 $P(n)$ 成立, 这是区别于第一数学归纳法的地方, 有时会给证明带来很大的方便.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 实数数列 $a_1, a_2, \cdots$ 满足: 对任意 $i 、 j \in \mathbf{N}^*$, 都有 $a_{i+j} \leqslant a_i+a_j$. 证明: 对任意 $n \in \mathbf{N}^*$, 都有
+$$
+a_1+\frac{a_2}{2}+\frac{a_3}{3}+\cdots+\frac{a_n}{n} \geqslant a_n . \label{eq1}
+$$
+%%<SOLUTION>%%
+证明:当 $n=1$ 时,命题显然成立.
+现设\ref{eq1}式对所有小于 $n$ 的正整数都成立, 即对 $1 \leqslant k \leqslant n-1$, 都有
+$$
+a_1+\frac{a_2}{2}+\cdots+\frac{a_k}{k} \geqslant a_k .
+$$
+我们记 $b_k=a_1+\frac{a_2}{2}+\cdots+\frac{a_k}{k}, k=1,2, \cdots, n-1$, 则由上述假设知 $\sum_{k=1}^{n-1} b_k \geqslant \sum_{k=1}^{n-1} a_k$, 即
+$$
+(n-1) a_1+\frac{n-2}{2} a_2+\cdots+\frac{n-(n-1)}{n-1} a_{n-1} \geqslant \sum_{k=1}^{n-1} a_k .
+$$
+上式两边都加上 $\sum_{k=1}^{n-1} a_k$, 可得
+$$
+n\left(a_1+\frac{a_2}{2}+\cdots+\frac{a_{n-1}}{n-1}\right) \geqslant 2 \sum_{k=1}^{n-1} a_k .
+$$
+于是
+$$
+n\left(a_1+\frac{a_2}{2}+\cdots+\frac{a_n}{n}\right) \geqslant a_n+2 \sum_{k=1}^{n-1} a_k . \label{eq2}
+$$
+由条件知 $a_1+a_{n-1} \geqslant a_n, a_2+a_{n-2} \geqslant a_n, \cdots, a_{n-1}+a_1 \geqslant a_n$, 所以 $2 \sum_{k=1}^{n-1} a_k \geqslant (n-1) a_n$. 这样, 由式\ref{eq2}可得\ref{eq1}对 $n$ 成立.
+所以,对任意 $n \in \mathbf{N}^*$, 不等式\ref{eq1}成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 正整数数列 $c_1, c_2, \cdots$ 满足下述条件:
+对任意正整数 $m 、 n$, 若 $1 \leqslant m \leqslant \sum_{i=1}^n c_i$, 则存在正整数 $a_1, a_2, \cdots, a_n$, 使得
+$$
+m=\sum_{i=1}^n \frac{c_i}{a_i}
+$$
+问: 对每个给定的 $i \in \mathbf{N}^*, c_i$ 的最大值为多少?
+%%<SOLUTION>%%
+解:我们证明: $c_1$ 的最大值为 2 , 而当 $i \geqslant 2$ 时, $c_i$ 的最大值为 $4 \times 3^{i-2}$.
+为此先证: <1>
+$$
+c_1 \leqslant 2 \text {, 而当 } i \geqslant 2 \text { 时, } c_i \leqslant 4 \times 3^{i-2} . 
+$$
+事实上, 若 $c_1>1$, 取 $(m, n)=\left(c_1-1,1\right)$, 知存在 $a_1 \in \mathbf{N}^*$, 使得 $c_1- 1=\frac{c_1}{a_1}$, 即 $a_1=\frac{c_1}{c_1-1}=1+\frac{1}{c_1-1}$, 仅当 $c_1=2$ 时, $a_1$ 为整数, 故 $c_1 \leqslant 2$.
+现设<1>对 $i=1,2, \cdots, k-1(k \geqslant 2)$ 都成立, 取 $(m, n)=\left(c_k, k\right)$, 则存在 $a_1, \cdots, a_k \in \mathbf{N}^*$, 使得 $c_k=\frac{c_1}{a_1}+\cdots+\frac{c_k}{a_k}$. 这要求 $a_k \geqslant 2$, 否则 $\sum_{i=1}^{k-1} \frac{c_i}{a_i}=$ 0 与 $a_i 、 c_i$ 为正整数矛盾.
+从而 $c_k \leqslant \frac{c_k}{2}+\sum_{i=1}^{k-1} c_i$, 即 $c_k \leqslant 2 \sum_{i=1}^{k-1} c_i$. 所以 $c_k \leqslant 2\left(2+4+4 \times 3+\cdots+4 \times 3^{k-3}\right)=4 \times 3^{k-2}$. 因此, 由第二数学归纳法知, 结论<1>成立.
+再证:
+<2> 当 $c_1=2, c_i=4 \times 3^{i-2}(i \geqslant 2)$ 时, 数列 $\left\{c_i\right\}$ 具有题给的性质.
+对 $n$ 归纳.
+当 $n=1$ 时, $m \leqslant c_1=2$, 故 $m=1$ 或 2 . 若 $m=1$, 取 $a_1=2$ 即可,若 $m=2$, 取 $a_1=1$ 即可.
+假设当 $1,2, \cdots, n-1$ 时, 题给性质满足.
+考虑 $n$ 的情形, 此时 $1 \leqslant m \leqslant \sum_{i=1}^n c_i$.
+若 $m=1$, 取 $a_i=n c_i, i=1,2, \cdots, n$ 即可;
+若 $2 \leqslant m \leqslant \frac{c_n}{2}+1=\left(\sum_{i=1}^{n-1} c_i\right)+1$, 令 $a_n=c_n$, 并对 $m-\frac{c_n}{a_n}=m-1$ 用归纳假设, 可知<2>成立;
+若 $\frac{1}{2} c_n+1<m \leqslant c_n$, 取 $a_n=2$, 并对 $m-\frac{c_n}{2}$ 用归纳假设即可;
+若 $c_n<m \leqslant \sum_{i=1}^n c_i$, 取 $a_n=1$, 并对 $m-c_n$ 用归纳假设即可.
+所以,结论<2>成立.
+综上可知, $c_1$ 的最大值为 2 , 而当 $i \geqslant 2$ 时, $c_i$ 的最大值是 $4 \times 3^{i-2}$.
+说明对比两个例子可发现, 用第二数学归纳法证题时, 一个思路是整体处理: 例 1 中对归纳假设中的 $n-1$ 个不等式求和; 另一个思路是将 $n$ 的情形归人 $1,2, \cdots, n-1$ 中的某一种情形,这在例 2 的后半部分有明显的体现.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $p(x)$ 是一个 $n$ 次实系数多项式, $a$ 是一个不小于 3 的实数.
+证明:下面的 $n+2$ 个数中至少有一个数不小于 1 .
+$$
+\left|a^0-p(0)\right|,\left|a^1-p(1)\right|, \cdots,\left|a^{n+1}-p(n+1)\right| .
+$$
+%%<SOLUTION>%%
+证明:对 $p(x)$ 的次数 $n$ 进行归纳.
+当 $n=0$ 时, $p(x)$ 是常数多项式, 设 $p(x)=c$, 此时, 由 $|1-c|+\mid a- c|\geqslant| a-1 \mid \geqslant 2$, 可知 $\max \{|1-c|,|a-c|\} \geqslant 1$, 即命题对 $n=0$ 成立.
+假设命题对所有次数小于 $n$ 的多项式都成立, 考虑次数为 $n$ 的多项式 $p(x)$.
+令 $f(x)=\frac{1}{a-1}[p(x+1)-p(x)]$, 则 $f(x)$ 的次数 $\leqslant n-1$. 由归纳假设知, 存在 $m \in\{0,1,2, \cdots, n\}$, 使得 $\left|a^m-f(m)\right| \geqslant 1$, 即 $\mid a^m-\frac{1}{a-1}[p(m+$ 1) $-p(m)] \mid \geqslant 1$. 故
+$$
+\left|a^{m+1}-p(m+1)+p(m)-a^m\right| \geqslant a-1 \geqslant 2,
+$$
+从而 $\max \left\{\left|a^{m+1}-p(m+1)\right|,\left|a^m-p(m)\right|\right\} \geqslant 1$, 即存在 $r \in\{0,1,2, \cdots$, $n+1\}$, 使得 $\left|a^r--p(r)\right| \geqslant 1$, 命题对 $n$ 成立.
+综上可知, 对任意次数为 $n$ 的多项式 $p(x)$, 命题都成立.
+说明在对多项式的次数用数学归纳法时, 常采用第二数学归纳法的形式,因为首项系数相同的两个 $n$ 次多项式之差的次数不一定是 $n-1$ 次, 但一定是一个次数小于 $n$ 的多项式.
+运用第二数学归纳法处理时就避开了讨论.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 证明: 任意一个凸 $n$ 边形都可以被它的三条边张成的三角形或它的四条边张成的平行四边形所覆盖.
+%%<SOLUTION>%%
+证明:对 $n$ 归纳.
+当 $n=3$ 时,结论是显然的; 当 $n=4$ 时, 如果该四边形是平行四边形则已完成, 如果它不是平行四边形, 则有一组对边不平行, 将它们延长相交后, 总可以用另两条边中的一条合成一个三角形, 它覆盖这个四边形 (如图 (<FilePath:./figures/fig-c1i2.png>) 所示).
+现假设对任一凸 $m$ 边形结论成立, 这里 $m<n(n \geqslant$ 5). 取凸 $n$ 边形 $M$ 的任意一条边 $A B$, 除去 $A B$ 及与 $A B$ 相邻的边外, $M$ 还有至少 $n-3 \geqslant 5-3=2$ 条边.
+这两条边中必有一条与 $A B$ 不平行 (因为至多只能有一条与 $A B$ 平行), 设为 $C D$. 延长 $B A$ 和 $C D$ (不妨设为如图 (<FilePath:./figures/fig-c1i3.png>) 所示的图形), 设它们相交于点 $U$. 现在用折线 $B U C$ 代替被 $\angle B U C$ 覆盖的折线 $A D$ 及边 $B A$ 和 $C D$, 便得到一个边数少于 $n$ 并将 $M$ 覆盖的凸多边形 $M_1$, 对 $M_1$ 用归纳假设, 可知命题对 $n$ 成立.
+综上可知, 命题成立.
+说明数学归纳法在平面几何中也有广泛的应用.
+此题的结论可进一步加强为: 若凸 $n$ 边形不是平行四边形, 则它可被由其三条边张成的三角形所覆盖.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $a_1, a_2, \cdots, a_n$ 为一个倒三角形的第 1 行, 其中 $a_i \in\{0,1\}, i= 1,2, \cdots, n$. 数 $b_1, b_2, \cdots, b_{n-1}$ 为这个倒三角形的第 2 行, 使得若 $a_k=a_{k+1}$, 则 $b_k=0$; 若 $a_k \neq a_{k+1}$, 则 $b_k=1, k=1,2, \cdots, n-1$. 类似定义该倒三角形的其余各行,直到第 $n$ 行为止.
+求该三角形中 1 的个数的最大值.
+%%<SOLUTION>%%
+解:我们设该三角形中 1 的个数的最大值为 $f_n$. 容易得到 $f_1=1, f_2= 2, f_3=4$. 例子为
+$$
+\begin{array}{cccccc}
+1, & 1 & 1 & 1 & 0 \\
+0 & & 0 & 1 \\
+& & & 1
+\end{array} .
+$$
+得到上述值可以从表中第一行内 0 的个数出发, 但是随着 $n$ 变大时, 难以从第一行出发来处理.
+试着做 $n=5,6$ 时的情形,可以发现下面的表中 1 的个数比较多.
+上表中有一个特点, 即每三行重复出现 (只是 "规模" 小一些). 于是, 引导我们利用数学归纳法来求 $f_n$ 的值.
+先证明一个引理.
+引理当 $n \geqslant 3$ 时, 考虑该倒三角形最上面的 3 行
+$$
+\begin{gathered}
+a_1, a_2, a_3, \cdots, a_n \\
+b_1, b_2, \cdots, b_{n-1} \\
+c_1, \cdots, c_{n-2}
+\end{gathered}
+$$
+则此 3 行中至少出现 $n-1$ 个 0 .
+证明对 $n$ 归纳予以证明.
+初始情况的验证留给读者, 我们来看如何实现归纳过渡.
+注意到, 在 $\bmod 2$ 的意义下, 前 3 行为
+$$
+\begin{gathered}
+a_1, a_2, a_3, a_4, a_5, \cdots, a_n \\
+a_1+a_2, a_2+a_3, a_3+a_4, \cdots, a_{n-1}+a_n \\
+a_1+a_3, a_2+a_4, \cdots, a_{n-2}+a_n
+\end{gathered}
+$$
+如果 $a_1, a_1+a_2, a_1+a_3$ 不全为 1 , 那么去掉这 3 个数, 归为 $n-1$ 的情形,利用归纳假设可知,结论成立.
+如果 $a_1=a_1+a_2=a_1+a_3=1$, 那么 $a_1=1, a_2=a_3=0$, 此时,表格的前三行前面部分为
+其中被平行四边形框住的 9 个数 (前面的 3 个斜行) 中至少有 3 个 0 ,于是, 去掉这 9 个数后, 利用归纳假设可知,引理成立.
+由上述引理可知 $f_n \leqslant 2(n-1)+f_{n-3}, n \geqslant 4$. 结合 $f_1=1, f_2=2$, $f_3=4$, 可知 $f_n \leqslant\left\lceil\frac{n(n+1)}{3}\right\rceil$, 这里 $\lceil x\rceil$ 表示不小于 $x$ 的最小整数.
+利用前面的例子, 可知 $f_n=\left\lceil\frac{n(n+1)}{3}\right\rceil$.
+所以,该倒三角形中, 1 的个数的最大值为 $\left\lceil\frac{n(n+1)}{3}\right\rceil$.
+说明此题找到取最大值的例子是一个关键, 但经一定的尝试后不难得到.
+解答难在对每三行作为一个整体来进行处理不易想到, 它是从例子中得到启发后形成的思路.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $n \in \mathbf{N}^*$, 函数 $f:\left\{1,2,3, \cdots, 2^{n-1}\right\} \rightarrow \mathbf{N}^*$ 满足: 对 $1 \leqslant i \leqslant 2^{n-1}$, 都有 $1 \leqslant f(i) \leqslant i$. 证明: 存在一个正整数数列 $a_1, a_2, \cdots, a_n$, 使得 $1 \leqslant a_1<a_2<\cdots<a_n \leqslant 2^{n-1}$, 且 $f\left(a_1\right) \leqslant \cdots \leqslant f\left(a_n\right)$.
+%%<SOLUTION>%%
+证明:对 $n$ 运用数学归纳法.
+当 $n=1$ 时, 命题显然成立.
+现设命题对 $1,2, \cdots, n-1$ 都成立, 考察 $n$ 的情形.
+对 $1 \leqslant i \leqslant 2^{n-1}$, 我们用 $t(i)$ 表示满足下述条件的最大正整数 $m$ :
+存在正整数数列 $i=a_1<a_2<\cdots<a_m \leqslant 2^{n-1}$, 使得
+$$
+f\left(a_1\right) \leqslant f\left(a_2\right) \leqslant \cdots \leqslant f\left(a_m\right) .
+$$
+如果命题对 $n$ 不成立, 那么由 $t(1)=\max _{1 \leqslant i \leqslant 2^{n-1}} t(i)$ 可知, 对任意 $1 \leqslant i \leqslant 2^{n-1}$ 都有 $t(i) \leqslant n-1$. 记 $A_j=\left\{i \mid 1 \leqslant i \leqslant 2^{n-1}, t(i)=j\right\}, j=1,2, \cdots, n-1$, 则任意两个 $A_j$ 不交, 且 $\bigcup_{j=1}^{n-1} A_j=\left\{1,2,3, \cdots, 2^{n-1}\right\}$, 所以 $\sum_{j=1}^{n-1}\left|A_j\right|=2^{n-1}$.
+下面先证明: 对任意 $1 \leqslant j \leqslant n-1$, 都有 $\left|A_j\right| \leqslant 2^{n-j-1}$.
+事实上, 若存在 $j$, 使得 $\left|A_j\right|>2^{n-j-1}$, 则存在 $1 \leqslant i_1<i_2<\cdots<i_r \leqslant 2^{n-1}$, 使得 $t\left(i_1\right)=t\left(i_2\right)=\cdots=t\left(i_r\right)=j$, 这里 $r=2^{n-j-1}+1$. 这时, 对任意 $1 \leqslant p<q \leqslant r$, 都应有 $f\left(i_p\right)>f\left(i_q\right)$ (否则, 若 $f\left(i_p\right) \leqslant f\left(i_q\right)$, 则在从 $i_q$ 出发的递增 $f$ 数列的前面加人 $f\left(i_p\right)$, 将导致 $t\left(i_p\right) \geqslant t\left(i_q\right)+1$, 矛盾 $)$, 故 $f\left(i_1\right)> f\left(i_2\right)>\cdots>f\left(i_r\right)$, 进而 $f\left(i_1\right) \geqslant r=2^{n-j-1}+1$, 结合 $1 \leqslant f\left(i_1\right) \leqslant i_1$, 得 $i_1 \geqslant 2^{n-j-1}+1$.
+现在, 由 $t\left(i_1\right)$ 的定义知, 存在 $i_1=a_1<\cdots<a_j \leqslant 2^{n-1}$, 使得 $f\left(a_1\right) \leqslant \cdots \leqslant f\left(a_j\right)$, 而由归纳假设可知, 在 $\left\{1,2,3, \cdots, 2^{n-j-1}\right\}$ 中存在 $1 \leqslant b_1<\cdots< b_{n-j} \leqslant 2^{n-1-j}<i_1=a_1$, 使得 $f\left(b_1\right) \leqslant \cdots \leqslant f\left(b_{n-j}\right)$, 再结合 $f\left(b_{n-j}\right) \leqslant b_{n-j} \leqslant 2^{n-1-j}<r \leqslant f\left(i_1\right)=f\left(a_1\right)$, 可知 $1 \leqslant b_1<\cdots<b_{n-j}<a_1<a_2<\cdots<a_j \leqslant 2^{n-1}$, 并且 $f\left(b_1\right) \leqslant \cdots \leqslant f\left(b_{n-j}\right) \leqslant f\left(a_1\right) \leqslant \cdots \leqslant f\left(a_j\right)$, 这与 $n$ 时命题不成立的假设矛盾.
+所以 $\left|A_j\right| \leqslant 2^{n-j-1}$.
+但这时, 将导致
+$$
+2^{n-1}=\sum_{j=1}^{n-1}\left|A_j\right| \leqslant \sum_{j=1}^{n-1} 2^{n-1-j}=1+2+\cdots+2^{n-2}=2^{n-1}-1 .
+$$
+矛盾.
+所以,命题对 $n$ 成立.
+综上可知, 命题获证.
+说明这里在证命题对 $n$ 成立时, 采用的是反证法, 在运用数学归纳法证明问题时应充分地与其他证明方法结合.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,170 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 证明: 对任意实数 $x$, 均有
+$$
+\left|\sqrt{x^2+x+1}-\sqrt{x^2-x+1}\right|<1 .
+$$
+%%<SOLUTION>%%
+因为 $\left|\sqrt{x^2+x+1}-\sqrt{x^2-x+1}\right|=$
+$$
+\left|\sqrt{\left(x+\frac{1}{2}\right)^2+\left(\frac{\sqrt{3}}{2}\right)^2}-\sqrt{\left(x-\frac{1}{2}\right)^2+\left(\frac{\sqrt{3}}{2}\right)^2}\right|
+$$
+这可以看作直角坐标系中点 $P\left(x, \frac{\sqrt{3}}{2}\right)$ 到点 $A\left(-\frac{1}{2}, 0\right)$ 与点 $B\left(\frac{1}{2}, 0\right)$ 的距离的差, 如图(<FilePath:./figures/fig-c11a1.png>)所示.
+根据三角形两边之差小于第三边及 $|A B|=1$, 得
+$$
+\left|\sqrt{x^2+x+1}-\sqrt{x^2-x+1}\right|<1 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 某家电影院的票价为每张 5 元, 现有 10 个人, 其中 5 个人手持 5 元钞票, 另外 5 个人手持 10 元钞票.
+假设开始售票时售票处没有钱, 这 10 个人随机排队买票.
+求售票处不会出现找不开钱的局面的概率.
+%%<SOLUTION>%%
+考虑手持 5 元钞票的 5 个人在队中的位置, 共 $\mathrm{C}_{10}^5=252$ 种等概率的排队方式.
+设 $p(m, n)$ 表示 $m$ 个手持 5 元钞票、 $n$ 个手持 10 元钞票的人满足条件的排队方式数, 则 $p(m, 0)=1$. 当 $m<n$ 时, $p(m, n)=0$, 且
+$$
+p(m, n)=p(m, n-1)+p(m-1, n) .
+$$
+如图(<FilePath:./figures/fig-c11a2.png>), $p(5,5)$ 等于从 $A$ 到 $B$ 不能穿过对角线的路径数, 即 $p(5,5)=42$.
+故所求的概率为 $\frac{42}{252}=\frac{1}{6}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 在关于 $x$ 的二次方程 $x^2+z_1 x+z_2+m=0$ 中, $z_1, z_2, m$ 均是复数, 且 $z_1^2-4 z_2=16+20 \mathrm{i}$. 设这个方程的两根 $\alpha, \beta$ 满足 $|\alpha-\beta|=2 \sqrt{7}$, 求 $|m|$ 的最大值和最小值.
+%%<SOLUTION>%%
+由韦达定理有 $\left\{\begin{array}{l}\alpha+\beta=-z_1, \\ \alpha \beta=z_2+m,\end{array}\right.$ 故
+$$
+(\alpha-\beta)^2=(\alpha+\beta)^2-4 \alpha \beta=z_1^2-4 z_2-4 m,
+$$
+所以 $\left|(\alpha-\beta)^2\right|=\left|z_1^2-4 z_2-4 m\right|=|16+20 \mathrm{i}-4 m|=4|m-(4+5 \mathrm{i})|$.
+另一方面, $\left|(\alpha-\beta)^2\right|=|\alpha-\beta|^2=28$, 故 $|m-(4+5 \mathrm{i})|=7$, 即 $m$ 在以 $A(4,5)$ 为圆心, 以 7 为半径的圆上.
+因为 $|O A|=\sqrt{4^2+5^2}=\sqrt{41}<7$, 故原点 $O$ 在上述圆内, 连接 $O A$ 延长交上述圆于 $B$, 延长 $A O$ 交上述圆于 $C$, 则
+$$
+|m|_{\max }=|O B|=\sqrt{41}+7,|m|_{\min }=|O C|=7-\sqrt{41} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 已知函数 $f(x)=|\sin x|$ 的图像与直线 $y=k x(k>0)$ 有且仅有三个交点, 交点的横坐标的最大值为 $\alpha$, 求证: $\frac{\cos \alpha}{\sin \alpha+\sin 3 \alpha}=\frac{1+\alpha^2}{4 \alpha}$. 
+%%<SOLUTION>%%
+$f(x)$ 的图像与直线 $y=k x(k>0)$ 在 $(-\infty, 0)$ 上无交点, 在 $[0, \pi]$ 上恰有两个交点, 因此在 $\left(\pi, \frac{3 \pi}{2}\right)$ 内必然相切, 根据题意, 切点的坐标可写为 $(\alpha$, $-\sin \alpha)$. 当 $x \in\left(\pi, \frac{3 \pi}{2}\right)$ 时, 由于 $f^{\prime}(x)=(-\sin x)^{\prime}=-\cos x$, 故 $-\cos \alpha= \frac{-\sin \alpha}{\alpha}$, 即 $\alpha=\tan \alpha$. 因此
+$$
+\frac{\cos \alpha}{\sin \alpha+\sin 3 \alpha}=\frac{\cos \alpha}{2 \sin 2 \alpha \cos \alpha}=\frac{1}{2 \sin 2 \alpha}=\frac{\cos ^2 \alpha+\sin ^2 \alpha}{4 \sin \alpha \cos \alpha}=\frac{1+\tan ^2 \alpha}{4 \tan \alpha}=\frac{1+\alpha^2}{4 \alpha} \text {. }
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 正实数 $x, y, z$ 满足
+$$
+\left\{\begin{array}{l}
+\frac{1}{3} y^2+z^2=9, \label{eq1}\\
+x^2+x z+z^2=16, \label{eq2}\\
+x^2+x y+\frac{1}{3} y^2=25, \label{eq3}
+\end{array}\right.
+$$
+试求代数式 $x y+2 y z+3 z x$ 的值.
+%%<SOLUTION>%%
+构造 $\triangle A B C$, 使 $A B=5, A C=4, B C=3$, 显然 $\angle A C B=90^{\circ}$.
+以 $A C$ 为一边向 $\triangle A B C$ 外作正三角形, 再作该三角形的外接圆, 与以 $B C$ 为直径的圆交于 $C, O$ 两点, 连接 $O A, O B, O C$, 则由平面几何知识得
+$$
+\angle B O C=90^{\circ}, \angle A O C=120^{\circ}, \angle A O B=150^{\circ} .
+$$
+设 $A O=x, B O=\frac{y}{\sqrt{3}}, C O=z$, 由 $S_{\triangle A O B}+S_{\triangle B O C}+S_{\triangle C O A}=S_{\triangle A B C}$ 得 $\frac{1}{2} x \cdot \frac{y}{\sqrt{3}} \sin 150^{\circ}+\frac{1}{2} z \cdot \frac{y}{\sqrt{3}}+\frac{1}{2} x \cdot z \cdot \sin 120^{\circ}=\frac{1}{2} \times 3 \times 4$, 化简得
+$$
+x y+2 y z+3 x z=24 \sqrt{3} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 给定实数 $\alpha$, 求最小实数 $\lambda=\lambda(\alpha)$, 使得对任意复数 $z_1, z_2$ 和实数 $x \in[0$, $1]$, 若 $\left|z_1\right| \leqslant \alpha\left|z_1-z_2\right|$, 则 $\left|z_1-x z_2\right| \leqslant \lambda\left|z_1-z_2\right|$.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c11a6.png>), 在复平面内, 点 $A, B, C$ 对应的复数分别为 $z_1, z_2, x z_2$. 显然, 点 $C$ 在线段 $O B$ 上.
+向量 $\overrightarrow{B A}$ 对应的复数为 $z_1-z_2$. 向量 $\overrightarrow{C A}$ 对应的复数为 $z_1-x z_2$. 由 $\left|z_1\right| \leqslant \alpha\left|z_1-z_2\right|$, 得 $|\overrightarrow{O A}| \leqslant \alpha|\overrightarrow{B A}|$. 于是,
+$$
+\begin{aligned}
+\left|z_1-x z_2\right|_{\max } & =|\overrightarrow{A C}|_{\max }=\max \{|\overrightarrow{O A}|,|\overrightarrow{B A}|\} \\
+& =\max \left\{\left|z_1\right|,\left|z_1-z_2\right|\right\} \\
+& =\max \left\{\alpha\left|z_1-z_2\right|,\left|z_1-z_2\right|\right\},
+\end{aligned}
+$$
+故 $\lambda(\alpha)=\max \{\alpha, 1\}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 在空间直角坐标系内, 点 $A, B_1, B_2, \cdots, B_6$ 与原点 $O$ 这八个点中, 任意三点不共线, 点 $A$ 的坐标 $(a, b, c)$ 满足 $a+b+c=0$, 点 $B_1, B_2, \cdots, B_6$ 的坐标依次为 $\left(x_1, x_2, x_3\right),\left(x_1, x_3, x_2\right),\left(x_2, x_1, x_3\right),\left(x_2, x_3, x_1\right)$, $\left(x_3, x_1, x_2\right),\left(x_3, x_2, x_1\right)$. 证明: $\angle A O B_i(i=1,2, \cdots, 6)$ 中锐角至少有两个.
+%%<SOLUTION>%%
+不妨设 $x_1>x_2>x_3, a \geqslant b \geqslant c$ (此处两个等号不同时取到), 由切比雪夫不等式得, $\overrightarrow{O A} \cdot \overrightarrow{O B_1}=x_1 a+x_2 b+x_3 c>\frac{1}{3}(a+b+c)\left(x_1+x_2+x_3\right)=0$. 所以 $\cos \angle A O B_1>0$, 又 $O, A, B_1$ 不共线,故 $\angle A O B_1$ 为锐角.
+另一方面, 由切比雪夫不等式得,
+$$
+x_3 a+x_2 b+x_1 c<\frac{1}{3}(a+b+c)\left(x_3+x_2+x_1\right)=0,
+$$
+故
+$$
+\begin{aligned}
+& \max \left\{\overrightarrow{O A} \cdot \overrightarrow{O B_2}, \overrightarrow{O A} \cdot \overrightarrow{O B_3}\right\}=\max \left\{x_1 a+x_3 b+x_2 c, x_2 a+x_1 b+x_3 c\right\} \\
+\geqslant & \frac{1}{2}\left(\left(x_1 a+x_3 b+x_2 c\right)+\left(x_2 a+x_1 b+x_3 c\right)\right)=-\frac{1}{2}\left(x_3 a+x_2 b+x_1 c\right)>0 .
+\end{aligned}
+$$
+故 $\angle A O B_2$ 与 $\angle A O B_3$ 中至少有一个锐角.
+综上, $\angle A O B_i(i=1,2, \cdots, 6)$ 中锐角至少有两个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设 $\triangle A B C$ 中 $B C=a, C A=b, A B=c, P$ 是 $\triangle A B C$ 内一点.
+(1) 求证: $a \cdot P B \cdot P C+b \cdot P C \cdot P A+c \cdot P A \cdot P B \geqslant a b c$;
+(2) 求证: $a \cdot P A^2+b \cdot P B^2+c \cdot P C^2 \geqslant a b c$.
+%%<SOLUTION>%%
+设 $P, A, B, C$ 在复平面中分别对应复数 $z_0, z_1, z_2, z_3$. 令
+$$
+\begin{aligned}
+& f(z)=\frac{\left(z-z_2\right)\left(z-z_3\right)}{\left(z_1-z_2\right)\left(z_1-z_3\right)}+\frac{\left(z-z_3\right)\left(z-z_1\right)}{\left(z_2-z_3\right)\left(z_2-z_1\right)}+\frac{\left(z-z_1\right)\left(z-z_2\right)}{\left(z_3-z_1\right)\left(z_3-z_2\right)}, \\
+& g(z)=\frac{\left(z-z_1\right)^2}{\left(z_1-z_2\right)\left(z_1-z_3\right)}+\frac{\left(z-z_2\right)^2}{\left(z_2-z_3\right)\left(z_2-z_1\right)}+\frac{\left(z-z_3\right)^2}{\left(z_3-z_1\right)\left(z_3-z_2\right)} .
+\end{aligned}
+$$
+易验证 $f\left(z_i\right)=g\left(z_i\right)=1, i=1,2,3$, 即 $f(z)-1=0$ 与 $g(z)-1=$ 0 有至少三个复根, 但 $f(z)-1$ 与 $g(z)-1$ 都是低于 3 次的多项式, 从而 $f(z) \equiv 1, g(z) \equiv 1$.
+由于
+$$
+\begin{aligned}
+1=f\left(z_0\right) \leqslant & \frac{\left|z_0-z_2\right| \cdot\left|z_0-z_3\right|}{\left|z_1-z_2\right| \cdot\left|z_1-z_3\right|}+\frac{\left|z_0-z_3\right| \cdot\left|z_0-z_1\right|}{\left|z_2-z_3\right| \cdot\left|z_2-z_1\right|}+ \\
+& \frac{\left|z_0-z_1\right| \cdot\left|z_0-z_2\right|}{\left|z_3-z_1\right| \cdot\left|z_3-z_2\right|} \\
+= & \frac{P B \cdot P C}{c b}+\frac{P C \cdot P A}{a c}+\frac{P A \cdot P B}{b a},
+\end{aligned}
+$$
+故 $a \cdot P B \cdot P C+b \cdot P C \cdot P A+c \cdot P A \cdot P B \geqslant a b c,(1)$ 成立;
+类似地,由于
+$$
+\begin{aligned}
+1=g\left(z_0\right) \leqslant & \frac{\left|z_0-z_1\right|^2}{\left|z_1-z_2\right| \cdot\left|z_1-z_3\right|}+\frac{\left|z_0-z_2\right|^2}{\left|z_2-z_3\right| \cdot\left|z_2-z_1\right|}+ \\
+& \frac{\left|z_0-z_3\right|^2}{\left|z_3-z_1\right| \cdot\left|z_3-z_2\right|}
+\end{aligned}
+$$
+$$
+=\frac{P A^2}{c b}+\frac{P B^2}{a c}+\frac{P C^2}{b a}
+$$
+故 $a \cdot P A^2+b \cdot P B^2+c \cdot P C^2 \geqslant a b c$, (2) 成立.
+%%PROBLEM_END%%
+
+

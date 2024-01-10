@@ -1,0 +1,426 @@
+
+%%TEXT_BEGIN%%
+圆内接四边形中的不等式.
+圆内接四边形不仅有着丰富的几何等量关系, 也有很多有趣的极值性质.
+因为圆内接四边形的边可用对应的圆心角的三角函数表示, 这就使得三角方法在处理圆内接四边形的几何不等式时能派上用场.
+下面就是这样的一个例子.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+圆内接四边形有一个著名的极值性质: 四条边给定的四边形中, 内接于圆的四边形面积最大.
+一个给定边长的圆内接四边形的面积有很好的解析公式, 这就是下面的定理.
+定理设一个圆的内接凸四边形的边长依次为 $a 、 b 、 c 、 d$, 又设 $s$ 为该四边形周长的一半, 则四边形的面积 $F$ 为
+$$
+F=\sqrt{(s-a)(s-b)(s-c)(s-d)} .
+$$
+这个定理是三角形熟知结果的推广.
+如果取 $d=0$, 我们便得到通常的三角形面积的海伦公式.
+证明设定理中的四边形为 $A B C D$, 如图(<FilePath:./figures/fig-c3i4.png>)  $A B=a, B C=b, C D=c, D A=d$.
+如果 $A B C D$ 是长方形, 证明立即得出.
+如果 $A B C D$ 不是长方形, 设 $B C$ 与 $A D$ 相交于圆外的点 $E$. 记 $C E=x, D E=y$, 则由三角形面积公式有
+$$
+S_{\triangle C D E}=\frac{1}{4} \sqrt{(x+y+c)(x+y-c)(x-y+c)(-x+y+c)} . \label{eq1}
+$$
+但 $\triangle A B E \backsim \triangle C D E$, 所以
+$$
+\frac{S_{\triangle A B E}}{S_{\triangle C D E}}=\frac{a^2}{c^2}
+$$
+由此推得
+$$
+\frac{F}{S_{\triangle C D E}}=\frac{c^2-a^2}{c^2}, \label{eq2}
+$$
+又由比例式
+$$
+\frac{x}{c}=\frac{y-d}{a}, \frac{y}{c}=\frac{x-\underline{b}}{a},
+$$
+相加解出 $x+y$, 得
+$$
+x+y+c=\frac{c}{c-a}(-a+b+c+d),
+$$
+$x+y-c$ 等等的类似表达式, 都可以立即得到.
+将它们代入式\ref{eq1}并化简, 得
+$$
+S_{\triangle C D E}=\frac{c^2}{c^2-a^2} \sqrt{(s-a)(s-b)(s-c)(s-d)},
+$$
+代入式\ref{eq2}, 便知结论成立.
+推广可以证明任一边长为 $a 、 b 、 c 、 d$,一对对角的和为 $2 u$ 的凸四边形, 面积 $F$ 可由下式给出
+$$
+F^2=(s-a)(s-b)(s-c)(s-d)-a b c d \cos ^2 u .
+$$
+由于证明包含长而乏味的三角化简, 我们不在这里给出.
+由这个公式立即看出 : 四条边给定的四边形中, 内接于圆的面积最大.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知四边形 $A B C D$ 是圆的内接四边形,证明:
+$$
+|A B-C D|+|A D-B C| \geqslant 2|A C-B D| .
+$$
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c3i1.png>), 设四边形 $A B C D$ 外接圆的圆心为 $O$, 该外接圆的半径为 $1, \angle A O B=2 \alpha, \angle B O C=2 \beta$, $\angle C O D=2 \gamma, \angle D O A=2 \delta$, 则
+$$
+\alpha+\beta+\gamma+\delta=\pi \text {. }
+$$
+不妨设 $\alpha \geqslant \gamma, \beta \geqslant \delta$, 则
+$$
+\begin{aligned}
+& |A B-C D|=2|\sin \alpha-\sin \gamma| \\
+= & 4\left|\sin \frac{\alpha-\gamma}{2} \cos \frac{\alpha+\gamma}{2}\right|=4\left|\sin \frac{\alpha-\gamma}{2} \sin \frac{\beta+\delta}{2}\right| .
+\end{aligned}
+$$
+同理
+$$
+\begin{aligned}
+& |A D-B C|=4\left|\sin \frac{\beta-\delta}{2} \sin \frac{\alpha+\gamma}{2}\right| \\
+& |A C-B D|=4\left|\sin \frac{\beta-\delta}{2} \sin \frac{\alpha-\gamma}{2}\right|
+\end{aligned}
+$$
+因此
+$$
+\begin{aligned}
+|A B-C D|-|A C-B D| & =4\left|\sin \frac{\alpha-\gamma}{2}\right|\left(\left|\sin \frac{\beta+\delta}{2}\right|-\left|\sin \frac{\beta-\delta}{2}\right|\right) \\
+& =4\left|\sin \frac{\alpha-\gamma}{2}\right|\left(\sin \frac{\beta+\delta}{2}-\sin \frac{\beta-\delta}{2}\right)
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& =4\left|\sin \frac{\alpha-\gamma}{2}\right| \cdot\left(2 \cos \frac{\beta}{2} \cdot \sin \frac{\delta}{2}\right) \\
+& \geqslant 0 .
+\end{aligned}
+$$
+故
+$$
+|A B-C D| \geqslant|A C-B D| \text {. }
+$$
+同理
+$$
+|A D-B C| \geqslant|A C-B D| \text {. }
+$$
+将这两个不等式相加即得求证结果.
+圆内接四边形中又有一种更特殊的四边形叫双圆四边形.
+所谓双圆四边形是既有外接圆又有内切圆的四边形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 凸四边形 $A B C D$ 既有内切圆又有外接圆,已知它的外接圆半径为 $R$, 面积为 $S$, 四边形的边长分别为 $a 、 b 、 c 、 d$, 证明:
+$$
+a b c+a b d+a c d+b c d \leqslant 2 \sqrt{S}\left(S+2 R^2\right) . \label{eq1}
+$$
+%%<SOLUTION>%%
+证明:1 如图(<FilePath:./figures/fig-c3i2.png>), 设四边形 $A B C D$ 的外接圆和内切圆的圆心分别为 $O$ 和 $I$. 内切圆与边 $A B=a 、 B C=b 、 C D=c 、 D A=d$ 的切点分别为 $K 、 L 、 M 、 N$. 设 $\angle A I N=\angle 1, \angle B I K=\angle 2, \angle C I L=\angle 3$, $\angle D I M=\angle 4$, 并记 $A K=A N=a^{\prime}, B L=B K=b^{\prime}$, $C L=C M=c^{\prime}, D M=D N=d^{\prime}$.
+不妨设内切圆 $I$ 的半径 $r$ 为 1 . 由 $A B C D$ 有内切圆知
+$$
+a+c=b+d \text {. }
+$$
+这时若记式\ref{eq1}的左边为 $H$, 则
+$$
+H=(a+c) b d+(b+d) a c=\frac{1}{2}(a+b+c+d)(a c+b d) . \label{eq2}
+$$
+又 $\quad a=a^{\prime}+b^{\prime}, b=b^{\prime}+c^{\prime}, c=c^{\prime}+d^{\prime}, d=d^{\prime}+a^{\prime}$,
+将这些表达式代入式\ref{eq2}的右边便得
+$$
+H=\left(a^{\prime}+b^{\prime}+c^{\prime}+d^{\prime}\right)\left[\left(a^{\prime}+b^{\prime}\right)\left(c^{\prime}+d^{\prime}\right)+\left(b^{\prime}+c^{\prime}\right)\left(d^{\prime}+a^{\prime}\right)\right] . \label{eq3}
+$$
+又由 $\angle A+\angle C=180^{\circ}$, 可得
+$$
+\angle 1+\angle 3=90^{\circ} .
+$$
+因此 $\triangle A I N \backsim \triangle I C L$, 由此得
+$$
+a^{\prime} c^{\prime}=A N \cdot C L=N I \cdot I L=1 . \label{eq4}
+$$
+同理
+$$
+b^{\prime} d^{\prime}=1 . \label{eq5}
+$$
+又注意到
+$$
+S=\frac{a+b+c+d}{2} \cdot r=a^{\prime}+b^{\prime}+c^{\prime}+d^{\prime}, \label{eq6}
+$$
+因此由式\ref{eq4}、\ref{eq5}、式\ref{eq6}可得
+$$
+H=S\left[4+\left(a^{\prime}+c^{\prime}\right)\left(b^{\prime}+d^{\prime}\right)\right] . \label{eq7}
+$$
+另一方面, 由正弦定理并注意到 $\angle B+2 \angle 2=180^{\circ}$, 有
+$$
+\begin{aligned}
+R & =\frac{A C}{2 \sin \angle B}=\frac{A C}{2 \sin 2 \angle 2}=\frac{A C}{4}\left(\tan \angle 2+\frac{1}{\tan \angle 2}\right) \\
+& =\frac{1}{4} A C(\tan \angle 2+\tan \angle 4) \\
+& =\frac{1}{4} A C \cdot\left(b^{\prime}+d^{\prime}\right) .
+\end{aligned}
+$$
+同理
+$$
+R=\frac{1}{4} B D \cdot\left(a^{\prime}+c^{\prime}\right) .
+$$
+因此
+$$
+R^2=\frac{1}{16} A C \cdot B D\left(a^{\prime}+c^{\prime}\right)\left(b^{\prime}+d^{\prime}\right),
+$$
+但是
+$$
+S=\frac{1}{2} A C \cdot B D \cdot \sin \alpha \leqslant \frac{1}{2} A C \cdot B D,
+$$
+这里 $\alpha$ 为对角线 $A C$ 与 $B D$ 夹角.
+因此
+$$
+R^2 \geqslant \frac{1}{8} S\left(a^{\prime}+c^{\prime}\right)\left(b^{\prime}+d^{\prime}\right) .
+$$
+由上可知
+$$
+\text { 式\ref{eq1} } \begin{aligned}
+\text { 的右边 } & \geqslant 2 \sqrt{S}\left(S+\frac{S}{4}\left(a^{\prime}+c^{\prime}\right)\left(b^{\prime}+d^{\prime}\right)\right) \\
+& =\frac{S^{\frac{3}{2}}}{2}\left[4+\left(a^{\prime}+c^{\prime}\right)\left(b^{\prime}+d^{\prime}\right)\right] . \label{eq8}
+\end{aligned}
+$$
+因此由式\ref{eq7}、\ref{eq8}知, 要证式\ref{eq1}, 只需证明 $\frac{1}{2} S^{\frac{1}{2}} \geqslant 1$, 这等价于
+$$
+\sqrt{a^{\prime}+b^{\prime}+c^{\prime}+d^{\prime}} \geqslant 2 . \label{eq9}
+$$
+而由 $a^{\prime} c^{\prime}=1, b^{\prime} d^{\prime}=1$ 可知
+$$
+a^{\prime}+b^{\prime}+c^{\prime}+d^{\prime} \geqslant 2 \sqrt{a^{\prime} c^{\prime}}+2 \sqrt{b^{\prime} d^{\prime}}=4,
+$$
+式\ref{eq9}得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 凸四边形 $A B C D$ 既有内切圆又有外接圆,已知它的外接圆半径为 $R$, 面积为 $S$, 四边形的边长分别为 $a 、 b 、 c 、 d$, 证明:
+$$
+a b c+a b d+a c d+b c d \leqslant 2 \sqrt{S}\left(S+2 R^2\right) . \label{eq1}
+$$
+%%<SOLUTION>%%
+证明 2 先证引理.
+引理设 $\triangle A B C$ 中, $\angle A \geqslant 90^{\circ}$, 则 $\frac{b+c}{a} \leqslant \sqrt{2}$.
+证明
+$$
+\begin{aligned}
+\frac{b+c}{a} & =\frac{\sin B+\sin C}{\sin A}=2 \frac{\sin \frac{B+C}{2} \cos \frac{B-C}{2}}{\sin A} \\
+& \leqslant \frac{2 \cos \frac{A}{2}}{2 \sin \frac{A}{2} \cos \frac{A}{2}}=\frac{1}{\sin \frac{A}{2}} \leqslant \sqrt{2} .
+\end{aligned}
+$$
+下面证明原题中的不等式.
+如图(<FilePath:./figures/fig-c3i3.png>), 设四边形 $A B C D$ 的四边 $A B 、 B C 、 C D$ 、 $D A$ 的长分别为 $a 、 b 、 c 、 d$, 再设 $A B C D$ 的内切圆的半径为 1 . 注意到
+$$
+a+c=b+d=\frac{1}{2}(a+b+c+d) \cdot 1=S,
+$$
+可得
+$$
+\begin{aligned}
+H & =a b c+a b d+a c d+b c d \\
+& =a c(b+d)+b d(a+c)=(a c+b d) S . \label{eq1}
+\end{aligned}
+$$
+现设 $A C$ 的中垂线为 $l, D$ 关于 $l$ 的对称点为 $E$, 则
+$$
+\triangle A C D \cong \triangle C A E .
+$$
+因此 $A E=c, C E=d$, 且 $\angle E=\angle D=\pi-\angle B$, 由此可知 $A 、 E 、 C 、 B$ 四点共圆, 故
+$$
+S=\frac{1}{2}(a c+b d) \sin \alpha, \label{eq2}
+$$
+其中 $\alpha=\angle E A B$.
+由式\ref{eq1}、\ref{eq2}知原不等式等价于
+$$
+\frac{2 S}{\sin \alpha} \cdot S \leqslant 2 \sqrt{S}\left(S+2 R^2\right) . \label{eq3}
+$$
+注意到 $R=\frac{B E}{2 \sin \alpha}$, 因此式\ref{eq3}进一步等价于
+$$
+S^{\frac{3}{2}} \leqslant S \sin \alpha+\frac{B E^2}{2 \sin \alpha}, \label{eq4}
+$$
+但由平均值不等式
+\ref{eq4} 的右端 $\geqslant 2 \sqrt{\frac{S \cdot B E^2}{2}}$.
+因此要证式\ref{eq1}, 只需证明
+$$
+\sqrt{2} B E \geqslant S . \label{eq5}
+$$
+事实上, 由 $\angle E A B+\angle E C B=180^{\circ}$, 不妨设 $\angle E A B \geqslant 90^{\circ}$. 对 $\triangle A B E$ 应用引理可知 $\frac{a+c}{B E} \leqslant \sqrt{2}$, 故
+$$
+\sqrt{2} B E \geqslant a+c=S,
+$$
+\ref{eq1}式得证.
+上面的证法综合运用三角、几何的技巧,构造了一个新的共圆四边形,实现了问题的转化.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. (Popa 不等式) 如果一个凸四边形的四边满足 $a \leqslant b \leqslant c \leqslant d$, 面积为 $F$, 求证:
+$$
+F \leqslant \frac{3 \sqrt{3}}{4} c^2 . \label{eq1}
+$$
+%%<SOLUTION>%%
+证明:由于边长给定的四边形中, 圆内接四边形的面积最大, 因此我们仅需对圆内接四边形证明式\ref{eq1}便可.
+这时
+$$
+F^2=(s-a)(s-b)(s-c)(s-d),
+$$
+其中 $s=\frac{1}{2}(a+b+c+d)$. 但是 $s-d=(a+b+c)-s$, 因此由算术几何平均值不等式可得
+$$
+\begin{aligned}
+F^2 & =3^3\left(\frac{1}{3} s-\frac{1}{3} a\right)\left(\frac{1}{3} s-\frac{1}{3} b\right)\left(\frac{1}{3} s-\frac{1}{3} c\right)(a+b+c-s) \\
+& \leqslant 3^3\left[\frac{\left(\frac{1}{3} s-\frac{1}{3} a\right)+\left(\frac{1}{3} s-\frac{1}{3} b\right)+\left(\frac{1}{3} s-\frac{1}{3} c\right)+(a+b+c-s)}{4}\right]^4 \\
+& =3^3\left(\frac{a+b+c}{3 \cdot 2}\right)^4 \leqslant 3^3\left(\frac{c}{2}\right)^4 .
+\end{aligned}
+$$
+最后一步用了 $a \leqslant b \leqslant c$.
+两边开方, 由此便得
+$$
+F \leqslant \frac{3 \sqrt{3}}{4} c^2
+$$
+得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. (高灵不等式)设凸四边形 $A B C D$ 和 $A^{\prime} B^{\prime} C^{\prime} D^{\prime}$ 的四边分别为 $a$ 、 $b 、 c 、 d$ 和 $a^{\prime} 、 b^{\prime} 、 c^{\prime} 、 d^{\prime}$, 它们的面积分别为 $F 、 F^{\prime}$. 令
+$$
+K=4(a d+b c)\left(a^{\prime} d^{\prime}+b^{\prime} c^{\prime}\right)-\left(a^2-b^2-c^2+d^2\right)\left(a^{\prime 2}-b^{\prime 2}-c^{\prime 2}+d^{\prime 2}\right) \text {. }
+$$
+求证:
+$$
+K \geqslant 16 F F^{\prime} \text {. }
+$$
+%%<SOLUTION>%%
+证明:由于给定边长的四边形以圆的内接四边形具有最大面积, 因此仅需考虑 $A B C D$ 和 $A^{\prime} B^{\prime} C^{\prime} D^{\prime}$ 均为圆内接四边形的情况.
+如图(<FilePath:./figures/fig-c3i5.png>), 因为 $\angle B+\angle D=180^{\circ}$, 所以
+$$
+2 F=(a d+b c) \sin B , \label{eq1}
+$$
+类似的有
+$$
+2 F^{\prime}=\left(a^{\prime} d^{\prime}+b^{\prime} c^{\prime}\right) \sin B^{\prime} . \label{eq2}
+$$
+另一方面, 由余弦定理
+$$
+\begin{aligned}
+A C^2 & =b^2+c^2+2 b c \cos B \\
+& =a^2+d^2-2 a d \cos B,
+\end{aligned}
+$$
+因此 $\quad a^2-b^2-c^2+d^2=2(a d+b c) \cos B, \label{eq3}$,
+类似的有 $\quad a^{\prime 2}-b^{\prime 2}-c^{\prime 2}+d^{\prime 2}=2\left(a^{\prime} d^{\prime}+b^{\prime} c^{\prime}\right) \cos B^{\prime}, \label{eq4}$.
+由式\ref{eq1}、\ref{eq4}可得
+$$
+K-16 F F^{\prime}=4(a d+b c)\left(a^{\prime} d^{\prime}+b^{\prime} c^{\prime}\right)\left(1-\cos \left(B-B^{\prime}\right)\right) \geqslant 0,
+$$
+故原不等式成立.
+%%<REMARK>%%
+注:由上面的证法, 实际上可把高灵不等式写的更一般一些:
+$$
+0 \leqslant K-16 F F^{\prime} \leqslant 8(a d+b c)\left(a^{\prime} d^{\prime}+b^{\prime} c^{\prime}\right),
+$$
+左边的不等式即为高灵不等式.
+高灵不等式可看作是著名的 Neuberg-Pedoe 不等式在四边形中的推广.
+在这一节的最后, 我们研究一个难度较大的关于双圆四边形的极值问题, 这里要介绍的解法由向振同学 (原长沙市一中学生, 曾获 2003 年第 44 届 $\mathrm{IMO}$ 金牌)给出.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 给定外接圆半径 $R$ 和面积 $S$ 不变的双圆四边形 $A B C D$ (这里 $S \leqslant 2 R^2$ ), 求 $p l m$ 的最大值, 其中 $p$ 是四边形 $A B C D$ 的半周长, $l 、 m$ 分别为它的两条对角线长.
+%%<SOLUTION>%%
+解:如图(<FilePath:./figures/fig-c3i6.png>), 我们可以用三个参数 $r 、 \alpha 、 \beta(\gamma \in(0,+\infty), \alpha 、 \beta \in \left.\left(0, \frac{\pi}{2}\right)\right)$ 来确定一个双圆四边形 $A B C D$, 这里的 $r$ 是四边形 $A B C D$ 的内切圆半径, $\alpha=\angle A I K, \beta=\angle B I K$, 其中 $I$ 是四边形 $A B C D$ 的内切圆的圆心, $K$ 是圆 $I$ 与边 $A B$ 的切点.
+下面证明:
+$$
+\begin{gathered}
+S=r^2\left(\frac{2}{\sin 2 \alpha}+\frac{2}{\sin 2 \beta}\right), \label{eq1}\\
+R^2=r^2\left(\frac{1}{\sin 2 \alpha \sin 2 \beta}+\frac{1}{\sin ^2 2 \alpha \sin ^2 2 \beta}\right) . \label{eq2}
+\end{gathered}
+$$
+先证式\ref{eq1}. 因为半周长
+$$
+p=r(\tan \alpha+\cot \alpha+\tan \beta+\cot \beta)=r\left(\frac{2}{\sin 2 \alpha}+\frac{2}{\sin 2 \beta}\right),
+$$
+所以
+$$
+S=r p=r^2\left(\frac{2}{\sin 2 \alpha}+\frac{2}{\sin 2 \beta}\right)
+$$
+这就是式\ref{eq1}.
+再证式\ref{eq2}. 在 $\triangle A B D$ 中易知
+$$
+A B=r(\tan \alpha+\tan \beta), A D=r(\tan \alpha+\cot \beta), \angle D A B=\pi-2 \alpha,
+$$
+故由余弦定理并通过三角化简可得
+$$
+\begin{aligned}
+B D^2= & r^2\left[(\tan \alpha+\tan \beta)^2+(\tan \alpha+\cot \beta)^2+\right. \\
+& 2 \cos 2 \alpha(\tan \alpha+\tan \beta)(\tan \alpha+\cot \beta)] \\
+= & r^2\left(\tan \alpha \cdot \frac{2}{\sin 2 \beta} \cdot 4 \cos ^2 \alpha+\frac{4}{\sin ^2 2 \beta}\right),
+\end{aligned}
+$$
+故
+$$
+R^2=\frac{B D^2}{4 \sin ^2 2 \alpha}=r^2\left(\frac{1}{\sin 2 \alpha \sin 2 \beta}+\frac{1}{\sin ^2 2 \alpha \sin ^2 2 \beta}\right),
+$$
+这就是式\ref{eq1}.
+现令 $a=\sin 2 \alpha, b=\sin 2 \beta$, 则 $a, b \in(0,1]$, 且(1)、(2)可写为
+$$
+\begin{aligned}
+S & =2 r^2 \frac{a+b}{a b}, \label{eq3}\\
+R^2 & =r^2 \frac{1+a b}{a^2 b^2}, \label{eq4}
+\end{aligned}
+$$
+式\ref{eq3}除以\ref{eq4}可得
+$$
+\frac{a b(a+b)}{1+a b}=\frac{S}{2 R^2} . \label{eq5}
+$$
+式\ref{eq5}是 $a 、 b$ 所满足的约束条件, 我们在此条件下求 $p l m$ 的最大值.
+易知
+$$
+\begin{gathered}
+p=r \cdot\left(\frac{2}{a}+\frac{2}{b}\right), \\
+l m=4 R^2 a b,
+\end{gathered}
+$$
+所以 $(p l m)^2=64 R^4 r^2(a+b)^2=16 R^2 S^2(1+a b)$,
+因此
+$$
+p l m=4 R S \sqrt{1+a b} . \label{eq6}
+$$
+由式\ref{eq5}得
+$$
+\frac{S}{2 R^2}=\frac{a b(a+b)}{1+a b} \geqslant \frac{a b \cdot 2 \sqrt{a b}}{1+a b} . \label{eq7}
+$$
+令 $\sqrt{a b}=x$, 则 $x \in(0,1]$, 于是式\ref{eq7}可写为
+$$
+4 R^2 \cdot x^3-S \cdot x^2-S \leqslant 0 . \label{eq8}
+$$
+令函数 $f(x)=4 R^2 \cdot x^3-S x^2-S$, 注意到
+$$
+f(0)=-S<0, f(1)=4 R^2-2 S \geqslant 0,
+$$
+且
+$$
+f^{\prime}(x)= \begin{cases}\geqslant 0, & x \geqslant \frac{S}{6 R^2}, \\ <0, & 0<x<\frac{S}{6 R^2},\end{cases}
+$$
+故 $f(x)$ 在 $(0,1]$ 上先递减再递增.
+由此知 $f(x)$ 在 $(0,1)$ 上有唯一的实根 $t$, 如图(<FilePath:./figures/fig-c3i7.png>) 所示.
+由式\ref{eq8}知 $f(\sqrt{a b}) \leqslant 0$, 因此
+$$
+\sqrt{a b} \leqslant t,
+$$
+于是 $a b \leqslant t^2$, 从而代入式\ref{eq6}知
+$$
+p l m=4 R S \sqrt{1+a b} \leqslant 4 R S \sqrt{1+t^2},
+$$
+当 $a=b=t$ 时, 等号成立.
+故所求的 $p l m$ 的最大值为 $4 R S \sqrt{1+t^2}$, 其中 $t$ 是方程 $4 R^2 x^3-S x^2-S=0$ 在区间 $(0,1]$ 上的根.
+%%PROBLEM_END%%
+
+

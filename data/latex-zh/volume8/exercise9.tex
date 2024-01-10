@@ -1,0 +1,295 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 锐角三角形 $A B C$ 外接圆在 $A$ 和 $B$ 处的切线相交于 $D, M$ 是 $A B$ 的中点, 求证: $\angle A C M=\angle B C D$.
+%%<SOLUTION>%%
+设 $\triangle A B C$ 外接圆为复平面上的单位圆, 点 $A 、 B 、 C 、 D 、 M$ 分别用复数 $a 、 b 、 c 、 d 、 m$ 代表, 则
+$$
+\angle A C M=\angle B C D \Leftrightarrow H \triangleq \frac{b-c}{d-c} / \frac{m-c}{a-c} \in \mathbf{R} .
+$$
+$d=\frac{2 a b}{a+b}, m=\frac{a+b}{2}$. 故
+$$
+H=\frac{(b-c)(a-c)}{c^2-\frac{2 c a b}{a+b}-\frac{a c+b c}{2}+a b}=\bar{H} \Rightarrow H \in \mathbf{R},
+$$
+证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $A 、 B$ 为平面内异于原点 $O$ 的两点, 对应复数分别为 $t_1 、 t_2$.
+求证:
+$$
+\begin{gathered}
+\cos \angle A O B=\frac{t_1 \overline{t_2}+\overline{t_1} t_2}{2\left|t_1 t_2\right|}=\frac{\operatorname{Re}\left(\overline{t_1} t_2\right)}{\left|t_1 t_2\right|}=\frac{\operatorname{Re}\left(t_1 \overline{t_2}\right)}{\left|t_1 t_2\right|} . \\
+S_{\triangle A O B}=\frac{1}{2} \operatorname{Im}\left(\overline{t_1} t_2\right)=\frac{1}{4 \mathrm{i}}\left(\overline{t_1} t_2-t_1 \overline{t_2}\right), \\
+\sin \angle A O B=\frac{\operatorname{Im}\left(\overline{t_1} t_2\right)}{\left|t_1 t_2\right|}=\frac{\overline{t_1} t_2-t_1 \overline{t_2}}{2 \mathrm{i}\left|t_1 t_2\right|},
+\end{gathered}
+$$
+这里假定从 $O A$ 逆时针转过劣角而到 $O B$.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c9a2.png>), 由余弦定理,
+$$
+\begin{aligned}
+\cos \angle A O B & =\frac{t_1 \overline{t_1}+t_2 \overline{t_2}-\left|t_1-t_2\right|^2}{2\left|t_1 t_2\right|} \\
+& =\frac{t_1 \overline{t_1}+t_2 \overline{t_2}-\left(t_1-t_2\right)\left(\overline{t_1}-\overline{t_2}\right)}{2\left|t_1 t_2\right|},
+\end{aligned}
+$$
+化简即得求证式.
+至于面积, 不妨将 $A$ 顺时针转到横轴正方向, 即 $A \rightarrow A^{\prime}=t_1 \mathrm{e}^{\mathrm{i} \theta}=$ 正实数 $=\left|t_1\right|$, 于是 $B \rightarrow B^{\prime}=t_2 \mathrm{e}^{\mathrm{i} \theta}$.
+$$
+S_{\triangle A O B}=S_{\triangle A^{\prime} O B^{\prime}}=\frac{1}{2}\left|t_1\right| \cdot \operatorname{Im}\left(t_2 \mathrm{e}^{\mathrm{i} \theta}\right)=\frac{1}{2}\left|t_1\right| \cdot
+$$
+$\operatorname{Im}\left(\frac{t_2}{t_1}\left|t_1\right|\right)=\frac{1}{2} \operatorname{Im}\left(\overline{t_1} t_2\right)=\frac{\overline{t_1} t_2-t_1 \overline{t_2}}{4 \mathrm{i}}, \sin \angle A O B$ 可即刻得出.
+证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $\triangle A B C$ 内切圆圆心为原点, 半径为 $r$, 切 $B C 、 C A 、 A B$ 于 $D 、 E 、 F, D$ 、 $E 、 F$ 对应的复数分别为 $t_1 、 t_2 、 t_3$, 试用 $r 、 t_1 、 t_2 、 t_3$ 表示 $\triangle A B C$ 的外接圆半径 $R$.
+%%<SOLUTION>%%
+由例 6 可知 $A 、 B 、 C$ 所对应的复数分别是 $\frac{2 t_2 t_3}{t_2+t_3}, \frac{2 t_1 t_3}{t_1+t_3}, \frac{2 t_1 t_2}{t_1+t_2}$, 由三角形面积公式, 知
+$$
+A B \cdot B C \cdot C A=4 R \cdot S_{\triangle A B C}, D E \cdot E F \cdot F D=4 r \cdot S_{\triangle D E F},
+$$
+于是
+$$
+\frac{S_{\triangle D E F}}{S_{\triangle A B C}}=\frac{R}{r} \cdot \frac{D E \cdot E F \cdot F D}{A B \cdot B C \cdot C A},
+$$
+又
+$$
+\begin{aligned}
+A B & =\left|\frac{2 t_2 t_3}{t_2+t_3}-\frac{2 t_1 t_3}{t_1+t_3}\right|=2\left|t_3\right|^2\left|\frac{t_2-t_1}{\left(t_1+t_3\right)\left(t_2+t_3\right)}\right| \\
+& =\frac{2 r^2}{\left|\left(t_1+t_3\right)\left(t_2+t_3\right)\right|} \cdot D E,
+\end{aligned}
+$$
+于是 $\frac{D E}{A B}=\frac{\left|\left(t_1+t_3\right)\left(t_2+t_3\right)\right|}{2 r^2}$, 同理还有另外两个式子, 故
+$$
+\frac{S_{\triangle D E F}}{S_{\triangle A B C}}=\frac{R}{8 r^7}\left|\left(t_1+t_2\right)\left(t_2+t_3\right)\left(t_3+t_1\right)\right|^2 .
+$$
+$$
+\begin{aligned}
+\text { 又 } S_{\triangle D E F} & =S_{\triangle D I E}+S_{\triangle E I F}+S_{\triangle F I D}=\frac{1}{2} r^2(\sin A+\sin B+\sin C) \\
+& =\frac{r^2(A B+B C+C A)}{4 R}=\frac{r}{2 R} \cdot S_{\triangle A B C},
+\end{aligned}
+$$
+故 $\frac{R}{8 r^7}\left|\left(t_1+t_2\right)\left(t_2+t_3\right)\left(t_3+t_1\right)\right|^2=\frac{r}{2 R}$. 于是 $R=\frac{2 r^4}{\left|\left(t_1+t_2\right)\left(t_2+t_3\right)\left(t_3+t_1\right)\right|}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $D$ 是锐角 $\triangle A B C$ 内部一点, 使 $\angle A D B=\angle A C B+90^{\circ}$, 且 $A C \cdot B D= A D \cdot B C$, 求 $\frac{A B \cdot C D}{A C \cdot B D}$ 的值.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c9a4.png>), 以 $C$ 为原点建立复平面, 设 $\angle A C B= \theta, C A=1$,
+$$
+\begin{aligned}
+\overrightarrow{D B} & =\frac{|B D|}{|D A|} \cdot \overrightarrow{D A} \cdot \mathrm{e}^{\mathrm{i}\left(\theta+90^{\circ}\right)} \\
+& =\frac{|B C|}{|A C|} \cdot\left(1-z_D\right) \cdot \mathrm{i} \cdot \mathrm{e}^{\mathrm{i} \theta} \\
+& =\overrightarrow{C B} \cdot\left(1-z_D\right) \cdot \mathrm{i} \\
+& =z_B\left(1-z_D\right) \cdot \mathrm{i} .
+\end{aligned}
+$$
+而 $\overrightarrow{D B}=z_B-z_D$, 所以 $z_D=\frac{z_B(i-1)}{z_B i-1}$, 从而
+$$
+\frac{|A B| \cdot \mid C D}{|A C| \cdot|B D|}=\frac{\left|z_B-1\right| \frac{z_B \mathrm{i}-z_B}{z_B \mathrm{i}-1} \mid}{\left|z_B-\frac{z_B \mathrm{i}-z_B}{z_B \mathrm{i}-1}\right|}=\frac{\left|z_B\right| \cdot\left|z_B-1\right| \cdot|\mathrm{i}-1|}{\left|z_B\right| \cdot\left|z_B-1\right|}=\sqrt{2} .
+$$
+%%<REMARK>%%
+注:这题可用纯几何方法做, 但需要构造一个适当的角 (类似于旋转, 并且此题可推广为: 设 $D$ 是 $\triangle A B C$ 内一点, 使得 $\angle B D C=\angle B A C+\alpha$, $\angle C D A=\angle C B A+\beta, \angle A D B=\angle A C B+\gamma$, 则 $(B C \cdot A D):(C A \cdot B D): (A B \cdot C D)=\sin \alpha: \sin \beta: \sin \gamma$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $P$ 是锐角三角形 $A B C$ 内一点, $A P 、 B P 、 C P$ 分别交边 $B C 、 C A 、 A B$ 于点 $D 、 E 、 F$, 已知 $\triangle D E F \backsim \triangle A B C$. 求证: $P$ 是 $\triangle A B C$ 的重心.
+%%<SOLUTION>%%
+本题的结论对 $\triangle A B C$ 为一般三角形都成立.
+设 $P$ 为复平面上的原点, 并直接用 $X$ 表示点 $X$ 对应的复数, 则存在正实数 $\alpha 、 \beta 、 \gamma$, 使得 $\alpha A+\beta B+\gamma C=0$, 且 $\alpha+\beta+\gamma=1$.
+由于 $D$ 为 $A P$ 与 $B C$ 的交点, 可解得 $D=-\frac{\alpha}{1-\alpha}-A$. 同样地, $E= -\frac{\beta}{1-\beta} B, F=-\frac{\gamma}{1-\gamma} C$. 利用 $\triangle D E F \backsim \triangle A B C$ 可知 $\frac{D-E}{A-B}=\frac{E-F}{B-C}$, 于是
+$$
+\frac{\gamma B C}{1-\gamma}+\frac{\beta A B}{1-\beta}+\frac{\alpha}{1-\alpha}-\frac{\alpha A}{1-\alpha}-\frac{\beta B C}{1-\beta}-\frac{\gamma C A}{1-\gamma}=0 .
+$$
+化简得
+$$
+\left(\gamma^2-\beta^2\right) B(C-A)+\left(\alpha^2-\gamma^2\right) A(C-B)=0 .
+$$
+这时, 若 $\gamma^2 \neq \beta^2$, 则 $\frac{B(C-A)}{A(C-B)} \in \mathbf{R}$, 因此, $\frac{\frac{C-A}{C-B}}{\frac{P-A}{P-B}} \in \mathbf{R}$, 这要求 $P$ 在 $\triangle A B C$ 的外接圆上,与 $P$ 在 $\triangle A B C$ 内矛盾, 所以 $\gamma^2=\beta^2$,进而 $\alpha^2=\gamma^2$, 得 $\alpha=\beta=\gamma=\frac{1}{3}$.
+即 $P$ 为 $\triangle A B C$ 的重心, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 给定一个凸六边形, 其任意两条对边具有如下性质: 它们的中点之间的距离等于它们的长度和的 $\frac{\sqrt{3}}{2}$ 倍.
+证明: 该六边形的所有内角相等 (一个凸六边形 $A B C D E F$ 有 3 组对边: $A B$ 和 $D E, B C$ 和 $E F, C D$ 和 $F A$ ).
+%%<SOLUTION>%%
+引理: $\triangle P Q R$ 中, $\angle Q P R \geqslant 60^{\circ}, L$ 为 $Q R$ 中点.
+则 $P L \leqslant \frac{\sqrt{3}}{2} Q R$, 等号当且仅当 $\triangle P Q R$ 为正三角形时取到.
+引理的证明: 设 $S$ 为平面上一点,使得 $P$ 与 $S$ 在 $Q R$ 的同侧, 而 $\triangle Q R S$ 为正三角形.
+则由于 $\angle Q P R \geqslant 60^{\circ}$, 故 $P$ 在 $\triangle Q R S$ 的外接圆的内部 (包括边界). 而 $\triangle Q R S$ 的外接圆落在以 $L$ 为圆心, $\frac{\sqrt{3}}{2} Q R$ 为半径的圆内.
+所以引理获证.
+设 $A B C D E F$ 为给定的凸六边形, 记 $\vec{a}=\overrightarrow{A B}, \vec{b}=\overrightarrow{B C}, \cdots, \vec{f}=\overrightarrow{F A}$. 并设 $M 、 N$ 分别为 $A B$ 和 $D E$ 的中点.
+则
+$$
+\begin{gathered}
+\overrightarrow{M N}=\frac{1}{2} \vec{a}+\vec{b}+\vec{c}+\frac{1}{2} \vec{d}, \\
+\overrightarrow{M N}=-\frac{1}{2} \vec{a}-\vec{f}-\vec{e}-\frac{1}{2} \vec{d} . \\
+\overrightarrow{M N}=\frac{1}{2}(\vec{b}+\vec{c}-\vec{e}-\vec{f}) .
+\end{gathered}
+$$
+于是
+$$
+\overrightarrow{M N}=\frac{1}{2}(\vec{b}+\vec{c}-\vec{e}-\vec{f}) . \label{eq1}
+$$
+由条件, 我们有
+$$
+\overrightarrow{M N}=\frac{\sqrt{3}}{2}(|\vec{a}|+|\vec{d}|) \geqslant \frac{\sqrt{3}}{2}|\vec{a}-\vec{d}| . \label{eq2}
+$$
+记 $\vec{x}=\vec{a}-\vec{d}, \vec{y}=\vec{c}-\vec{f}, \vec{z}=\vec{e}-\vec{b}$, 由(1)与(2)可得
+$$
+|\vec{y}-\vec{z}| \geqslant \sqrt{3}|\vec{x}| . \label{eq3}
+$$
+同理可知
+$$
+\begin{aligned}
+& |\vec{z}-\vec{x}| \geqslant \sqrt{3}|\vec{y}|, \label{eq4}\\
+& |\vec{x}-\vec{y}| \geqslant \sqrt{3}|\vec{z}| . \label{eq5}
+\end{aligned}
+$$
+注意到
+式\ref{eq3} $\Leftrightarrow|\vec{y}|^2-2 \vec{y} \cdot \vec{z}+|\vec{z}|^2 \geqslant 3|\vec{x}|^2$;
+式\ref{eq4} $\Leftrightarrow|\vec{z}|^2-2 \vec{z} \cdot \vec{x}+|\vec{x}|^2 \geqslant 3|\vec{y}|^2$;
+式\ref{eq5} $\Leftrightarrow|\vec{x}|^2-2 \vec{x} \cdot \vec{y}+|\vec{y}|^2 \geqslant 3|\vec{z}|^2$.
+上述 3 式相加, 得
+$$
+-|\vec{x}|^2-|\vec{y}|^2-|\vec{z}|^2-2 \vec{y} \cdot \vec{z}-2 \vec{z} \cdot \vec{x}-2 \vec{x} \cdot \vec{y} \geqslant 0 .
+$$
+即 $-|\vec{x}+\vec{y}+\vec{z}| \geqslant 0$. 因此 $\vec{x}+-\vec{y}+\vec{z}=0$, 并且上述所有不等式全部取等号.
+于是
+$$
+\begin{gathered}
+\vec{x}+\vec{y}+\vec{z}=0, \\
+|\vec{y}-\vec{z}|=\sqrt{3}|\vec{x}|, \vec{a} / / \vec{d} / / \vec{x}, \\
+|\vec{z}-\vec{x}|=\sqrt{3}|\vec{y}|, \vec{c} / / \vec{f} / / \vec{y}, \\
+|\vec{x}-\vec{y}|=\sqrt{3}|\vec{z}|, \vec{e} / / \vec{b} / / \vec{z} .
+\end{gathered}
+$$
+现在设 $\triangle P Q R$ 中, $\overrightarrow{P Q}=\vec{x}, \overrightarrow{Q R}=\vec{y}, \overrightarrow{R P}=\vec{z}$, 并不妨设 $\angle Q P R \geqslant 60^{\circ}$. $L$ 为 $Q R$ 中点, 则 $P L=\frac{1}{2}|\vec{z}-\vec{x}|=\frac{\sqrt{3}}{2}|\vec{y}|=\frac{\sqrt{3}}{2} Q R$. 利用引理可知, $\triangle P Q R$ 为正三角形.
+于是,
+$$
+\angle A B C=\angle B C D=\cdots=\angle F A B=120^{\circ},
+$$
+证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 设 $\triangle A B C$ 内接于单位圆 $O, A 、 B 、 C$ 对应的复数分别为 $t_1 、 t_2 、 t_3$, 而 $P$ 为外接圆上任一点, 对应复数为 $t$, 证明: $P$ 关于 $\triangle A B C$ 的西摩松线的方程为
+$$
+t z-s_3 \bar{z}=\frac{1}{2 t}\left(t^3+t_1 t^2-s_2 t-s_3\right), \label{eq1}
+$$
+此处 $s_1=t_1+t_2+t_3, s_2=t_2 t_3+t_3 t_1+t_1 t_2, s_3=t_1 t_2 t_3$.
+%%<SOLUTION>%%
+首先, 经过 $t_2 、 t_3$ 的直线方程为
+$$
+\left(\overline{t_2}-\overline{t_3}\right) z-\left(t_2-t_3\right) \bar{z}=\overline{t_2} t_3-t_2 \overline{t_3} .
+$$
+我们只需证明 $P$ 在这直线上的垂足满足题设之方程, 由于题设方程是对称的, 同理可证另外两个垂足亦在其上.
+化简, 得 $z+t_2 t_3 \bar{z}=t_2+t_3$, 当 $t_2+t_3 \neq 0$ 时, 两边除以 $t_2+t_3$ 并转化, 于是 $\frac{z}{t_2+t_3}+\frac{\bar{z}}{\overline{t_2+t_3}}=1$. 由例 1 知, 过 $t$ 且与之垂直的直线方程是
+$$
+\frac{z}{t_2+t_3}-\frac{\bar{z}}{\overline{t_2+t_3}}=\frac{t}{t_2+t_3}-\frac{\bar{t}}{\overline{t_2+t_3}}
+$$
+或
+$$
+z-t_2 t_3 \bar{z}=t-t_2 t_3 \bar{t}=t-\frac{t_2 t_3}{t} . \label{eq2}
+$$
+注意\ref{eq2}式也包括 $t_2+t_3=0$ 的情形,此式与 $z+t_2 t_3 \bar{z}=t_2+t_3$ 联立,解出
+$$
+z=\frac{1}{2}\left(t+t_2+t_3-\frac{t_2 t_3}{t}\right)
+$$
+$$
+\bar{z}=\frac{1}{2}\left(\overline{t_2}+\overline{t_3}+\bar{t}-\frac{\overline{t_2 t_3}}{\bar{t}}\right)=\frac{t_2+t_3+t_2 t_3-t^2}{2 t_2 t_3},
+$$
+于是 $t z-s_3 \bar{z}=\frac{1}{2}\left(t^2+t_2+t_3-t_2 t_3\right)-\frac{1}{2 t}\left(t_1 t_2+t_1 t_3+t_1 t_2 t_3-t_1 t^2\right)$
+$$
+\begin{aligned}
+& =\frac{1}{2 t}\left(t^3+t^2 t_2+t^2 t_3-t_2 t_3-t_1 t_2-t_1 t_3-t_1 t_2 t_3+t_1 t^2\right) \\
+& =\frac{1}{2 t}\left(t^3+s_1 t^2-s_2 t-s_3\right) .
+\end{aligned}
+$$
+证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 一个圆周上依次有 $A 、 B 、 C 、 D$ 四点, 则其中任一点关于其余三点为顶点的三角形的西摩松线交于一点.
+%%<SOLUTION>%%
+设圆为单位圆, $A 、 B 、 C 、 D$ 对应的复数分别为 $t_1 、 t_2 、 t_3 、 t_4$. 则 $t_1$ 关于 $\triangle B C D$ 的西摩松线方程为
+$$
+t_1 z-t_2 t_3 t_4 \bar{z}=\frac{1}{2 t_1}\left[t_1^3+\left(t_2+t_3+t_4\right) t_1^2-\left(t_3 t_4+t_4 t_2+t_2 t_3\right) t_1-t_2 t_3 t_4\right],
+$$
+将 $z=\frac{1}{2}\left(t_1+t_2+t_3+t_4\right)$ 及 $\bar{z}=\frac{1}{2}\left(\overline{t_1}+\overline{t_2}+\overline{t_3}+\overline{t_4}\right)= \frac{t_2 t_3 t_4+t_3 t_4 t_1+t_4 t_1 t_2+t_1 t_2 t_3}{2 t_1 t_2 t_3 t_4}$ 代入 (1) 式, 发现确实满足, 由于 $\frac{1}{2}\left(t_1+t_2+t_3+\right. \left.t_4\right)$ 是一对称式,故另三条西摩松线也经过此点,证毕.
+%%<REMARK>%%
+注:这一结论称为安宁定理, 若不用复数, 也许更费口舌.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 已知 $f(x)=\frac{\sqrt{3} x-1}{x+\sqrt{3}}$, 求 $g(x)=\underbrace{f\{f \cdots[f}_{1986 \uparrow f}(x)]\}$.
+%%<SOLUTION>%%
+解:$$
+f(x)=\frac{\sqrt{3} x-1}{x+\sqrt{3}}=\frac{\frac{\sqrt{3}}{2} x-\frac{1}{2}}{\frac{1}{2} x+\frac{\sqrt{3}}{2}},
+$$
+故对应的复数为 $z=\frac{\sqrt{3}}{2}-\frac{1}{2} \mathrm{i}$.
+所以 $g(x)=\underbrace{f\{f \cdots[f}_{1986}(x)]\}$ 对应的复数为
+$$
+\begin{aligned}
+z^{1986} & =\left(\frac{\sqrt{3}}{2}-\frac{1}{2} \mathrm{i}\right)^{1986} \\
+& =\left[\cos \left(-\frac{\pi}{6}\right)+\mathrm{i} \sin \left(-\frac{\pi}{6}\right)\right]^{1986} \\
+& =\cos \left(-\frac{1986 \pi}{6}\right)+i \sin \left(-\frac{1986 \pi}{6}\right) \\
+& =-1 .
+\end{aligned}
+$$
+因为复数 -1 对应的 $H$ 型函数为 $\frac{-x-0}{0 \cdot x-1}=x$, 所以
+$$
+g(x)=\underbrace{f\{f \cdots[f}_{1986}(x)]\}=x .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 已知 $f(x)=\frac{x \cos \frac{\pi}{96}+\sin \frac{\pi}{96}}{-x \sin \frac{\pi}{96}+\cos \frac{\pi}{96}}, g(x)=\frac{x \cos \frac{\pi}{48}+\sin \frac{\pi}{48}}{-x \sin \frac{\pi}{48}+\cos \frac{\pi}{48}}$, 求
+$$
+H(x)=\underbrace{f\{g \cdots f[g(x)]\} .}_{1000 \uparrow f, 1000 \uparrow g}
+$$
+%%<SOLUTION>%%
+因为 $f(x) 、 g(x)$ 对应的复数分别为
+$$
+\cos \frac{\pi}{96}+i \sin \frac{\pi}{96}, \cos \frac{\pi}{48}+i \sin \frac{\pi}{48} .
+$$
+所以 $f[g(x)]$ 所对应的复数为
+$$
+\left(\cos \frac{\pi}{96}+i \sin \frac{\pi}{96}\right)\left(\cos \frac{\pi}{48}+i \sin \frac{\pi}{48}\right)=\cos \frac{\pi}{32}+i \sin \frac{\pi}{32} .
+$$
+所以 $H(x)$ 对应的复数为
+$$
+\left(\cos \frac{\pi}{32}+\mathrm{i} \sin \frac{\pi}{32}\right)^{1000}=\cos \frac{1000 \pi}{32}+\mathrm{i} \sin \frac{1000 \pi}{32}=-\frac{\sqrt{2}}{2}-\frac{\sqrt{2}}{2} \mathrm{i} .
+$$
+所以 $H(x)=\frac{-\frac{\sqrt{2}}{2} x-\frac{\sqrt{2}}{2}}{\frac{\sqrt{2}}{2} x-\frac{\sqrt{2}}{2}}=\frac{-x-1}{x-1}=-\frac{x+1}{x-1}$.
+%%PROBLEM_END%%
+
+

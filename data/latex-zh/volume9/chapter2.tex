@@ -1,0 +1,298 @@
+
+%%TEXT_BEGIN%%
+Ptolemy 不等式及其应用.
+著名的 Ptolemy 不等式是关于任意四边形的一个距离不等式, 它可表述为
+定理 (Ptolemy 不等式) 在四边形 $A B C D$ 中有
+$$
+A B \cdot C D+A D \cdot B C \geqslant A C \cdot B D,
+$$
+等号成立当且仅当 $A 、 B 、 C 、 D$ 四点共圆.
+证明如图(<FilePath:./figures/fig-c2i1.png>), 在四边形 $A B C D$ 内取点 $E$, 使 $\angle B A E=\angle C A D, \angle A B E=\angle A C D$, 则 $\triangle A B E \backsim \triangle A C D$. 因此 $A B \cdot C D=A C \cdot B E$. 又 $\angle B A C= \angle E A D$, 且 $\frac{A B}{A E}=\frac{A C}{A D}$, 所以 $\triangle A B C \backsim \triangle A E D, A D$ ・ $B C=A C \cdot D E$. 故
+$$
+A B \cdot C D+A D \cdot B C=A C(B E+D E) \geqslant A C \cdot B D,
+$$
+等号成立当且仅当点 $E$ 在 $B D$ 上, 此时 $\angle A B D=\angle A C D$, 故四边形 $A B C D$ 内接于圆.
+应用 Ptolemy 不等式, 我们可给出一些距离不等式的简洁证明.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. (Klamkin 对偶不等式) 设 $\triangle A B C$ 的三边分别为 $a 、 b 、 c$, 已知边 $b 、 c$ 上的中线分别为 $m_b 、 m_c$, 求证:
+$$
+4 m_b m_c \leqslant 2 a^2+b c . \label{eq1}
+$$
+%%<SOLUTION>%%
+下面的证明简直无需文字说明便知其意.
+证明如图(<FilePath:./figures/fig-c2i2.png>), 作平行四边形 $A B C D$ 和平行四边形 $A C B E$, 连接 $B D 、 C E$. 注意到 $D E=2 a$, $B D=2 m_b, C E=2 m_c$, 对四边形 $B C D E$ 应用 Ptolemy 不等式立得
+$$
+B C \cdot D E+B E \cdot C D \geqslant B D \cdot E C,
+$$
+这就是式\ref{eq1}.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $\triangle A B C$ 的三边分别为 $a 、 b 、 c$, 三边上的中线分别为 $m_a 、 m_b$ 、 $m_c$, 求证:
+$$
+m_a\left(b c-a^2\right)+m_b\left(a c-b^2\right)+m_c\left(a b-c^2\right) \geqslant 0 . \label{eq1}
+$$
+%%<SOLUTION>%%
+下面的证法的关键在于寻找一个特殊的四边形.
+证明如图(<FilePath:./figures/fig-c2i3.png>), 设 $\triangle A B C$ 的三条中线分别为 $A D 、 B E 、 C F$, 重心为 $G$.
+现对四边形 $B D G F$ 应用 Ptolemy 不等式可得
+$$
+B G \cdot D F \leqslant G F \cdot D B+D G \cdot B F . \label{eq2}
+$$
+注意到 $B G=\frac{2}{3} m_b, D G=\frac{1}{3} m_a, G F=\frac{1}{3} m_c$ 及 $D F=\frac{1}{2} b$, 因此式\ref{eq2}可改写为
+$$
+2 b m_b \leqslant a m_c+c m_a 
+$$
+因此
+$$
+2 b^2 m_b \leqslant a b m_c+c b m_a. \label{eq3}
+$$
+同理有
+$$
+2 c^2 m_c \leqslant a c m_b+b c m_a. \label{eq4}
+$$
+$$
+2 a^2 m_a \leqslant a b m_c+a c m_b . \label{eq5}
+$$
+式\ref{eq3}、\ref{eq4}、式\ref{eq5}相加可得
+$$
+2\left(m_a b c+m_b c a+m_c a b\right) \geqslant 2\left(m_a a^2+m_b b^2+m_c c^2\right),
+$$
+整理就得式\ref{eq1}.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 已知 $A_1 A_2 \cdots A_n$ 是一个正 $n$ 边形, $M_1, M_2, \cdots, M_n$ 是相应边的中点.
+设 $P$ 是这个 $n$ 边形所在平面上的任意一点.
+求证:
+$$
+\sum_{i=1}^n P M_i \geqslant\left(\cos \frac{\pi}{n}\right) \sum_{i=1}^n P A_i . \label{eq1}
+$$
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c2i4.png>), $M_{i-1} 、 M_i$ 分别是这个正 $n$ 边形第 $i-1$ 条边和第 $i$ 条边的中点.
+对四边形 $P M_{i-1} A_i M_i$ 应用 Ptolemy 不等式可得局部不等式
+$$
+A_i M_{i-1} \cdot P M_i^i+P M_{i-1} \cdot A_i M_i \geqslant P A_i \cdot M_{i-1} M_i,
+$$
+由此可得
+$$
+P M_i+P M_{i-1} \geqslant 2\left(\cos \frac{\pi}{n}\right) \cdot P A_i, \label{eq2}
+$$
+这里 $i=1,2, \cdots, n$, 并约定 $A_0=A_n, M_0=M_n$.
+现对式\ref{eq2}求和可得
+$$
+\sum_{i=1}^n\left(P M_i+P M_{i-1}\right) \geqslant 2\left(\cos \frac{\pi}{n}\right) \cdot \sum_{i=1}^n P A_i,
+$$
+这就是式\ref{eq1}.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $P$ 为平行四边形 $A B C D$ 内一点, 求证:
+$$
+P A \cdot P C+P B \cdot P D \geqslant A B \cdot B C, \label{eq1}
+$$
+并指出等号成立的条件.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c2i5.png>), 作 $P Q$ 平行并等于 $C D$, 连接 $C Q 、 B Q$, 则 $C D P Q$ 与 $A B Q P$ 均是平行四边形,所以
+$$
+C Q=P D, B Q=P A, P Q=A B .
+$$
+在四边形 $P B Q C$ 中由 Ptolemy 不等式有
+$$
+B Q \cdot P C+P B \cdot C Q \geqslant P Q \cdot B C,
+$$
+即
+$$
+P A \cdot P C+P B \cdot P D \geqslant A B \cdot B C,
+$$
+等号成立当且仅当 $P 、 B 、 Q 、 C$ 四点共圆, 即 $\angle C P B+\angle C Q B=\pi$, 而 $\angle C Q B=\angle A P D$, 所以式\ref{eq1}等号成立的条件为
+$$
+\angle A P D+\angle C P B=\pi .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 在 $\triangle A B C$ 中, $\angle A=60^{\circ}, P$ 为 $\triangle A B C$ 所在平面上一点,且使得 $P A=6, P B=7, P C=10$, 求 $\triangle A B C$ 面积的最大值.
+%%<SOLUTION>%%
+解法 1 先证引理.
+引理在凸四边形 $X Y Z U$ 中, 对角线 $X Z$ 和 $Y U$ 交于点 $O, \angle X O Y= \theta$, 则
+$$
+Y Z^2+U X^2-X Y^2-Z U^2=2 X Z \cdot Y U \cdot \cos \theta .
+$$
+证明如图(<FilePath:./figures/fig-c2i6.png>), 在 $\triangle O Y Z 、 \triangle O U X 、 \triangle O X Y$ 及 $\triangle O Z U$ 中分别应用余弦定理可得
+$$
+\begin{aligned}
+Y Z^2 & =O Y^2+O Z^2+2 O Y \cdot O Z \cdot \cos \theta, \\
+U X^2 & =O U^2+O X^2+2 O U \cdot O X \cdot \cos \theta, \\
+X Y^2 & =O X^2+O Y^2-2 O X \cdot O Y \cdot \cos \theta, \\
+Z U^2 & =O Z^2+O U^2-2 O Z \cdot O U \cdot \cos \theta,
+\end{aligned}
+$$
+由这四个等式相加便可立得引理中的等式.
+下面求解原问题.
+如图(<FilePath:./figures/fig-c2i7.png>), 在 $\triangle A B C$ 中, 过 $P$ 作 $A B$ 的平行线, 过 $A$ 作 $P B$ 的平行线, 两条直线交于 $D$. 设 $P D$ 交 $A C$ 于 $E$, 则 $\angle C E P=60^{\circ}$.
+设 $A C=x, A B=P D=y, C D=t$. 对四边形 $A P C D$ 应用引理可得
+$$
+t^2+6^2-10^2-7^2=2 \cos 60^{\circ} \cdot x y,
+$$
+即
+$$
+x y=t^2-113 . \label{eq1}
+$$
+另一方面, 对四边形 $A P C D$ 应用 Ptolemy 不等式可得
+$$
+x y \leqslant 6 t+70 . \label{eq2}
+$$
+由式\ref{eq1}、\ref{eq2}有
+$$
+t^2-6 t-183 \leqslant 0 \text {, }
+$$
+所以
+$$
+0 \leqslant t \leqslant 3+8 \sqrt{3} . \label{eq3}
+$$
+将式\ref{eq3}代入\ref{eq2}可得 $x y \leqslant 88+48 \sqrt{3}$, 故
+$$
+S_{\triangle A B C}=\frac{\sqrt{3}}{4} x y \leqslant 36+22 \sqrt{3},
+$$
+等号成立当且仅当 $D 、 A 、 P 、 C$ 四点共圆, 即 $\angle P B A=\angle P C A$. 故 $S_{\triangle A B C}$ 的最大值为 $36+22 \sqrt{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 在 $\triangle A B C$ 中, $\angle A=60^{\circ}, P$ 为 $\triangle A B C$ 所在平面上一点,且使得 $P A=6, P B=7, P C=10$, 求 $\triangle A B C$ 面积的最大值.
+%%<SOLUTION>%%
+解法 2 先证引理.
+引理设 $P$ 为一个平行四边形 $A B C D$ 所在平面上的一点, 则
+$$
+P A^2+P C^2-P B^2-P D^2=2 \overrightarrow{A B} \cdot \overrightarrow{A D} .
+$$
+证明如图(<FilePath:./figures/fig-c2i8.png>), 平移 $\triangle B P C$ 至 $\triangle A D P^{\prime}$. 设 $\overrightarrow{A P}=\alpha, \overrightarrow{P D}=\beta, \overrightarrow{D P^{\prime}}=\gamma$, 则
+$$
+\begin{aligned}
+P A^2+P C^2 & =P A^2+P^{\prime} D^2=\alpha^2+\gamma^2, \\
+P D^2+P B^2 & =P D^2+P^{\prime} A^2 \\
+& =\beta^2+(\alpha+\beta+\gamma)^2 \\
+& =2 \beta^2+\alpha^2+\gamma^2+2 \alpha \cdot \beta+2 \alpha \cdot \gamma+2 \gamma \cdot \beta,
+\end{aligned}
+$$
+因此
+$$
+\begin{aligned}
+P A^2+P C^2-P D^2-P B^2 & =-2 \beta^2-2 \alpha \cdot \beta-2 \gamma \cdot \beta-2 \gamma \cdot \alpha \\
+& =-2(\alpha+\beta) \cdot(\beta+\gamma) \\
+& =2 \overrightarrow{A D} \cdot \overrightarrow{P^{\prime} P} \\
+& =2 \overrightarrow{A B} \cdot \overrightarrow{A D} .
+\end{aligned}
+$$
+下面求解原问题.
+如图(<FilePath:./figures/fig-c2i9.png>), 平移 $\triangle A P B$ 至 $\triangle C P^{\prime} D$, 则 $P^{\prime} C=6$, $P^{\prime} D=7, C D=A B, P P^{\prime}=A C$.
+设 $P D=d$, 对四边形 $C P^{\prime} D P$ 应用 Ptolemy 不等式可得
+$$
+70+6 d \geqslant A B \cdot A C . \label{eq1}
+$$
+再对平行四边形 $A B D C$ 应用引理可得
+$$
+7^2+10^2-6^2-d^2=2 \overrightarrow{B A} \cdot \overrightarrow{B D}=-A B \cdot A C . \label{eq2}
+$$
+由式\ref{eq1}、\ref{eq2}可得
+$$
+d^2-113 \leqslant 6 d+70
+$$
+所以
+$$
+0 \leqslant d \leqslant 3+8 \sqrt{3} \text {. }
+$$
+故由式\ref{eq1}可得 $A B \cdot A C \leqslant 88+48 \sqrt{3}$, 进而得 $S_{\triangle A B C} \leqslant 36+22 \sqrt{3}$, 等号成立当且仅当 $\angle A C P=\angle A P B$, 故 $S_{\triangle A B C}$ 的最大值为 $36+22 \sqrt{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. (Bottema 不等式)设 $a_1 、 a_2 、 a_3 、 b_1 、 b_2 、 b_3$ 分别是位于同一平面上的两个三角形 $\triangle A_1 A_2 A_3$ 和 $\triangle B_1 B_2 B_3$ 的三边, $F 、 F^{\prime}$ 分别是它们的面积, $x_1 、 x_2 、 x_3$ 分别是空间任一点 $P$ 到 $\triangle A_1 A_2 A_3$ 三顶点的距离, 记
+$$
+M=b_1^2\left(-a_1^2+a_2^2+a_3^2\right)+b_2^2\left(a_1^2-a_2^2+a_3^2\right)+b_3^2\left(a_1^2+a_2^2-a_3^2\right) .
+$$
+求证:
+$$
+\sum_{i=1}^3 b_i x_i \geqslant\left(\frac{M}{2}+8 F F^{\prime}\right)^{\frac{1}{2}} . \label{eq1}
+$$
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c2i10.png>), 设 $A_1 A_2=a_3$, 在直线 $A_1 A_2$ 位于 $\triangle A_1 A_2 A_3$ 的异侧作 $\triangle A_1 A_2 C$, 使得 $\triangle A_1 A_2 C \backsim \triangle B_1 B_2 B_3$, 则
+$$
+A_1 C=\frac{a_3 b_2}{b_3}, A_2 C=\frac{a_3 b_1}{b_3} .
+$$
+对空间四边形 $P A_1 C A_2$ 应用 Ptolemy 不等式可得
+$$
+x_1 \frac{a_3 b_1}{b_3}+x_2 \frac{a_3 b_2}{b_3} \geqslant a_3 \cdot P C,
+$$
+即
+$$
+b_1 x_1+b_2 x_2 \geqslant b_3 \cdot P C \text {. }
+$$
+因此
+$$
+\begin{aligned}
+b_1 x_1+b_2 x_2+b_3 x_3 & \geqslant b_3 \cdot P C+b_3 x_3 \\
+& =b_3\left(P C+x_3\right) \geqslant b_3 \cdot A_3 C,
+\end{aligned}
+$$
+即有
+$$
+2\left(b_1 x_1+b_2 x_2+b_3 x_3\right)^2 \geqslant 2 b_3^2 \cdot A_3 C^2 . \label{eq2}
+$$
+另一方面, 在 $\triangle A_1 A_3 C$ 中应用余弦定理可得
+$$
+A_3 C^2=a_2^2+\left(\frac{a_3 b_2}{b_3}\right)^2-2 a_2 \cdot \frac{a_3 b_2}{b_3} \cdot \cos \left(\angle A_3 A_1 A_2+\angle A_2 A_1 C\right) .
+$$
+因此
+$$
+\begin{aligned}
+2 b_3^2 \cdot A_3 C^2= & 2 a_2^2 b_3^2+2 a_3^2 b_2^2-4 a_2 a_3 b_2 b_3 \cos \left(\angle A_3 A_1 A_2+\angle A_2 A_1 C\right) \\
+= & 2 a_2^2 b_3^2+2 a_3^2 b_2^2-4 a_2 a_3 b_2 b_3 \cdot\left(\cos \angle A_3 A_1 A_2 \cdot \cos \angle A_2 A_1 C-\right. \\
+& \left.\sin \angle A_3 A_1 A_2 \cdot \sin \angle A_2 A_1 C\right) \\
+= & 2 a_2^2 b_3^2+2 a_3^2 b_2^2-4 a_2 a_3 b_2 b_3 \cdot \frac{a_2^2+a_3^2-a_1^2}{2 a_2 a_3} \cdot \frac{b_2^2+b_3^2-b_1^2}{2 b_2 b_3}+ \\
+& 4\left(a_2 a_3 \sin \angle A_3 A_1 A_2\right)\left(b_2 b_3 \sin \angle A_2 A_1 C\right) \\
+= & 2 a_2^2 b_3^2+2 a_3^2 b_2^2-\left(a_2^2+a_3^2-a_1^2\right)\left(b_2^2+b_3^2-b_1^2\right)+16 F F^{\prime} \\
+= & b_1^2\left(-a_1^2+a_2^2+a_3^2\right)+b_2^2\left(a_1^2-a_2^2+a_3^2\right)+b_3^2\left(a_1^2+a_2^2-a_3^2\right)+ \\
+& 16 F F^{\prime} \\
+= & M+16 F F^{\prime} . \label{eq3}
+\end{aligned}
+$$
+由式\ref{eq2}、\ref{eq3},式\ref{eq1}得证.
+%%<REMARK>%%
+注:由著名的 Neuberg-Pedoe 不等式: $M \geqslant 16 F F^{\prime}$, 从 Bottema 不等式可推出关于两个三角形的如下不等式
+$$
+b_1 x_1+b_2 x_2+b_3 x_3 \geqslant 4 \sqrt{F F^{\prime}} .
+$$
+在这个不等式中取 $\triangle B_1 B_2 B_3$ 为正三角形, 则可得关于一个三角形内点到顶点距离的费马不等式
+$$
+x_1+x_2+x_3 \geqslant 2 \sqrt{\sqrt{3} F} .
+$$
+当然, 在 Bottema 不等式中取 $\triangle B_1 B_2 B_3$ 为正三角形, 则可得费马不等式的如下加强形式
+$$
+x_1+x_2+x_3 \geqslant\left(\frac{1}{2}\left(a^2+b^2+c^2\right)+2 \sqrt{3} F\right)^{\frac{1}{2}}
+$$
+%%PROBLEM_END%%
+
+

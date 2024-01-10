@@ -1,0 +1,203 @@
+
+%%TEXT_BEGIN%%
+对命题作恰当变化.
+利用数学归纳法证题时, 有时需要作出: 主动加强命题、借助辅助命题、 将命题一般化等处理.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 证明: 对任意正整数 $n$, 都有
+$$
+\frac{1}{2} \cdot \frac{3}{4} \cdot \cdots \cdot \frac{2 n-1}{2 n}<\frac{1}{\sqrt{3 n}} . \label{eq1}
+$$
+%%<SOLUTION>%%
+证明:如果直接处理, 那么为实现归纳过渡, 需要不等式 $\frac{2 n+1}{2(n+1)} \cdot \frac{1}{\sqrt{3 n}} \leqslant \frac{1}{\sqrt{3(n+1)}}$ 成立, 这要求 $(n+1)(2 n+1)^2 \leqslant n(2 n+2)^2$, 而这等价于 $(2 n+1)^2 \leqslant n(4 n+3)$. 但此不等式不成立.
+所以, 直接用数学归纳法难以证出 式\ref{eq1} 成立.
+我们证明式\ref{eq1}的加强命题:
+$$
+\frac{1}{2} \cdot \frac{3}{4} \cdot \cdots \cdot \frac{2 n-1}{2 n} \leqslant \frac{1}{\sqrt{3 n+1}} . \label{eq2}
+$$
+当 $n=1$ 时,\ref{eq2} 式左边 $=\frac{1}{2}$, 右边 $=\frac{1}{2}$, 故 式\ref{eq2} 对 $n=1$ 成立.
+现设式\ref{eq2}对 $n$ 成立, 则 $n+1$ 时, 有
+$$
+\frac{1}{2} \cdot \frac{3}{4} \cdot \cdots \cdot \frac{2 n-1}{2 n} \cdot \frac{2 n+1}{2(n+1)} \leqslant \frac{1}{\sqrt{3 n+1}} \cdot \frac{2 n+1}{2(n+1)} .
+$$
+为证式\ref{eq2}对 $n+1$ 成立, 只需证明
+$$
+\frac{1}{\sqrt{3 n+1}} \cdot \frac{2 n+1}{2 n+2} \leqslant \frac{1}{\sqrt{3 n+4}} .
+$$
+即证
+$$
+(3 n+4)(2 n+1)^2 \leqslant(3 n+1)(2 n+2)^2 . \label{eq3}
+$$
+注意到, 式\ref{eq3}等价于
+$$
+\begin{aligned}
+3(2 n+1)^2 & \leqslant(3 n+1)\left((2 n+2)^2-(2 n+1)^2\right)=(3 n+1)(4 n+3) \\
+& \Leftrightarrow 12 n^2+12 n+3 \leqslant 12 n^2+13 n+3 \\
+& \Leftrightarrow n \geqslant 0 .
+\end{aligned}
+$$
+所以,式\ref{eq3}成立.
+从而式\ref{eq2}对 $n+1$ 也成立, 即对任意 $n \in \mathbf{N}^*$, 都有 式\ref{eq2} 成立.
+结合 $\sqrt{3 n+1}>\sqrt{3 n}$, 可知 式\ref{eq1} 对任意 $n \in \mathbf{N}^*$ 成立.
+说明有些关于正整数 $n$ 的命题 $P(n)$ 直接用数学归纳法处理时难以实现 $n$ 到 $n+1$ 的过渡, 然而对比 $P(n)$ 更强的命题 $Q(n)$, 在用数学归纳法证明时反而简单, 因此需要对命题主动去加强.
+当然, 主动加强命题时通常需在把握问题本质的前提下恰当选择, 目的是便于实现归纳过渡.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $A_1, A_2, \cdots, A_r$ 是 $\mathbf{N}^*$ 的任意一个 $r$-分划 (即 $A_1, \cdots, A_r$ 中任两个的交集是空集, 且 $\bigcup_{i=1}^r A_i=\mathbf{N}^*$ ). 证明: 在 $A_1, \cdots, A_r$ 中有一个集合 $A$ 具有下述性质: 存在 $m \in \mathbf{N}^*$, 使得对任意 $k \in \mathbf{N}^*$, 在 $A$ 中都可取出 $k$ 个数 $a_1, \cdots$, $a_k$ 满足: 对 $1 \leqslant j \leqslant k-1$, 都有 $1 \leqslant a_{j+1}-a_j \leqslant m$.
+%%<SOLUTION>%%
+证明:设 $P \subseteq \mathbf{N}^*$, 如果 $P$ 中含有任意长的相继正整数段, 那么称 $P$ 为长子集.
+我们将命题加强为: 对任意长子集 $P$ 的任何 $r-$ 分划 $A_1, A_2, \cdots, A_r$. 集合 $A_1, \cdots, A_r$ 中必有一个集合 $A$ 具有题设的性质.
+对 $r$ 运用数学归纳法.
+当 $r=1$ 时,由长子集的定义, 取 $m=1$ 可知命题成立;
+设命题对 $r=n$ 的情形成立, 考虑 $r=n+1$ 的情形.
+设 $P=\left(A_1 \cup A_2 \cup \cdots \cup A_n\right) \cup A_{n+1}, Q=A_1 \cup A_2 \cup \cdots \cup A_n$. 如果 $Q$ 为长子集, 由归纳假设可知命题成立; 如果 $Q$ 不是长子集, 则必存在 $l \in \mathbf{N}^*$, 使 $Q$ 中没有长为 $l$ 的相继正整数段, 由于 $P$ 为长子集, 故对任意 $k \in \mathbf{N}^*, P$ 中存在长为 $k l$ 的相继正整数段, 该正整数段中至少有 $k$ 个数属于 $A_{n+1}$, 现在将这个长为 $k l$ 的相继正整数段中属于 $A_{n+1}$ 的最小 $k$ 个数取出, 则相邻两数之差不超过 $2 l$. 于是, 取 $m=2 l$, 则集合 $A_{n+1}$ 具有题给的性质.
+综上可知, 加强的命题获证.
+由于 $\mathbf{N}^*$ 本身是一个长子集, 所以, 原命题成立.
+说明问题本质上要求证明: 对 $\mathbf{N}^*$ 的每一个 $r$-分划而言, 都存在集合 $A$ 及 $m \in \mathbf{N}^*$, 使得将 $\mathbf{N}^*$ 中的数分为长度为 $\frac{m}{2}$ 的相继整数段后, 对任意 $k \in \mathbf{N}^*$, 都有相邻的 $k$ 个"相继整数段", 满足其中每个"相继整数段" 内都有一个数属于 $A$. 因此如果其他子集的并集中不含有任意长度的相继整数段, 那么 $A$ 中就能找到满足条件的 $k$ 个数, 依此想到引入 "长子集" 的概念, 进而得到问题的恰当加强.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 证明 : 存在无穷多个 $n \in \mathbf{N}^*$, 使得
+$$
+n \mid\left(2^n+2\right) . \label{(1)}
+$$
+%%<SOLUTION>%%
+证明:$n=2$ 满足(1), 下一个满足(1)的正整数 $n=6$, 两者之间的关系是 $6=2^2+2$. 这提示我们用下面的方法来处理.
+设 $n(>1)$ 是具有性质 (1) 的正整数, 如果能证明: $\left(2^n+2\right) \mid\left(2^{2^n+2}+2\right)$, 那么依此递推, 可知有无穷多个正整数 $n$ 满足 (1).
+注意到 $\left(2^{n-1}+1\right) \mid\left(2^{2^n+1}+1\right)$ 在 $(n-1) \mid\left(2^n+1\right)$ 条件下成立.
+我们通过增加一个要求的方法来处理.
+下证: (2) 存在无穷多个 $n \in \mathbf{N}^*(n>1)$, 使得 $n \mid\left(2^n+2\right)$, 并且 $(n-1) \mid \left(2^n+1\right)$.
+注意到, $n=2$ 具有上述性质.
+现设 $n(\geqslant 2)$ 具有上面的性质, 令 $m=2^n+$ 2 , 我们证明 $m$ 也具有上述性质.
+事实上, 由于 $(n-1) \mid\left(2^n+1\right)$, 而 $2^n+1$ 为奇数, 故可设 $2^n+1=(n-$ 1) $q, q$ 为奇数, 则
+$$
+\begin{aligned}
+2^{m-1}+1 & =2^{2^n+1}+1=\left(2^{n-1}\right)^q+1 \\
+& =\left(2^{n-1}+1\right)\left(\left(2^{n-1}\right)^{q-1}-\left(2^{n-1}\right)^{q-2}+\cdots+1\right),
+\end{aligned}
+$$
+故 $\left(2^{n-1}+1\right) \mid\left(2^{m-1}+1\right)$, 从而 $\left(2^n+2\right) \mid\left(2^m+2\right)$, 即 $m \mid\left(2^m+2\right)$.
+另一方面, 由 $(n-1) \mid\left(2^n+1\right)$, 知 $n-1$ 为奇数, 故 $n$ 为偶数, 这样, 由 $n \mid\left(2^n+2\right)$, 我们可设 $2^n+2=n p$, 这里 $p$ 为奇数 (这里用到 $\left.4 \nmid\left(2^n+2\right)\right)$, 于是
+$$
+2^m+1=\left(2^n\right)^p+1=\left(2^n+1\right)\left(\left(2^n\right)^{p-1}-\left(2^n\right)^{p-2}+\cdots+1\right),
+$$
+即有 $\left(2^n+1\right) \mid\left(2^m+1\right)$, 也就是说 $(m-1) \mid\left(2^m+1\right)$.
+综上可知, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 求所有的函数 $f: \mathbf{Z} \rightarrow \mathbf{Z}$, 使得对任意 $x 、 y 、 z \in \mathbf{Z}$, 都有
+$$
+f\left(x^3+y^3+z^3\right)=f(x)^3+f(y)^3+f(z)^3 .
+$$
+%%<SOLUTION>%%
+解:容易看到下面的 3 个函数
+$$
+f(x)=0, f(x)=x, f(x)=-x
+$$
+满足题中的条件.
+下证: 它们是所有满足条件的函数.
+取 $(x, y, z)=(0,0,0)$, 得 $f(0)=3 f(0)^3$, 这个关于 $f(0)$ 的三次方程只有一个整数解, 所以 $f(0)=0$. 再取 $(x, y, z)=(x,-x, 0)$ 可得 $f(x)= -f(-x)$, 故 $f(x)$ 为奇函数.
+而令 $(x, y, z)=(1,0,0)$, 得 $f(1)=f(1)^3$, 于是 $f(1) \in\{-1,0,1\}$.
+下面用数学归纳法证明:
+对任意 $x \in \mathbf{Z}$, 都有 $f(x)=f(1) x$ (这样结合 $f(1)$ 的取值, 就完成了本题的解答). \label{eq1}
+对 $|x|$ 予以归纳, 令 $(x, y, z)=(1,1,0)$, 得 $f(2)=2 f(1)^3=2 f(1)$, 令 $(x, y, z)=(1,1,1)$ 又有 $f(3)=3 f(1)$. 这样, 结合 $f(x)$ 为奇函数, 可知结论 式\ref{eq1} 对 $|x| \leqslant 3$ 都成立.
+现设对 $|x|<k\left(k \in \mathbf{N}^*, k>3\right)$, 都有 $f(x)=f(1) x$. 讨论 $f(k)$ 与 $f(-k)$ 的情形, 由 $f(x)$ 为奇函数, 只要证明 $f(k)=f(1) k$.
+为此, 我们需要用到下面的辅助命题.
+命题对任意 $k \in \mathbf{N}^*, k \geqslant 4$, 数 $k^3$ 都可以表示为 5 个立方数之和, 并且 5 个加项中的每一项的绝对值都小于 $k^3$.
+事实上,由
+$$
+\begin{aligned}
+& 4^3=3^3+3^3+2^3+1^3+1^3, 5^3=4^3+4^3+(-1)^3+(-1)^3+(-1)^3, \\
+& 6^3=5^3+4^3+3^3+0^3+0^3, 7^3=6^3+5^3+1^3+1^3+0^3 .
+\end{aligned}
+$$
+及对不小于 9 的奇数 $2 m+1\left(m \in \mathbf{N}^*, m \geqslant 4\right)$ 有
+$$
+(2 m+1)^3=(2 m-1)^3+(m+4)^3+(4-m)^3+(-5)^3+(-1)^3 . \label{eq2}
+$$
+所以,命题对 $k=4$ 或 6 及 $k$ 为不小于 3 的奇数成立.
+注意到,对任意 $k>3, k \in \mathbf{N}^*$, 都存在分解式 $k=m y$, 这里 $m \in \mathbf{N}^*$, $y=4$ 或 6 或大于 3 的奇数.
+而由前所证,有表示 $y^3=y_1^3+\cdots+y_5^3$, 其中 $\left|y_i\right|<y, 1 \leqslant i \leqslant 5$, 于是 $k^3=\left(m y_1\right)^3+\cdots+\left(m y_5\right)^3$, 且 $\left|m y_i\right|<m y=k$. 所以, 辅助命题成立.
+由上述命题, 对任意 $k>3, k \in \mathbf{N}^*$, 可写 $k^3=x_1^3+\cdots+x_5^3,\left|x_i\right|<k$, 从而由条件知
+$$
+f(k)^3+f\left(-x_4\right)^3+f\left(-x_5\right)^3=f\left(x_1\right)^3+f\left(x_2\right)^3+f\left(x_3\right)^3,
+$$
+结合归纳假设, $f\left(x_i\right)=f(1) x_i, f\left(-x_i\right)=-f(1) x_i$ 得
+$$
+f(k)^3=\sum_{i=1}^5 f\left(x_i\right)^3=f(1)^3 \sum_{i=1}^5 x_i^3=k^3 f(1)^3,
+$$
+故 $f(k)=f(1) k$.
+从而结论式\ref{eq1}获证, 题目获解.
+说明此题本质上是从恒等式\ref{eq2}出发来编拟的,证明过程中为实现归纳过渡引人辅助命题的思想并非是数学归纳法证题时所独有, 再难的数学问题也都是由一些简单结论创造性地融合而成的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 在某个罐里有黑、白两种颜色的球各一个, 我们另外还有 50 个白球和 50 个黑球, 下面进行 50 次操作: 随机地取出一个球, 然后放人罐中两个与取出的球同色的球作为一次操作.
+最后在罐中有 52 个球.
+问:罐中最有可能有几个白球?
+%%<SOLUTION>%%
+解:我们证明: 对任意 $1 \leqslant k \leqslant 51$, 罐中出现 $k$ 个白球的概率都是 $\frac{1}{51}$.
+将问题一般化, 记 $n$ 次操作后, 罐中有 $k$ 个白球的概率为
+$$
+P_n(k), 1 \leqslant k \leqslant n+1 \text {. }
+$$
+下证: $P_n(1)=P_n(2)=\cdots=P_n(n+1)=\frac{1}{n+1}$.
+当 $n=1$ 时, 上述命题显然成立.
+设命题对 $n$ 时成立, 考虑 $n+1$ 的情形.
+注意到有如下的递推式成立
+$$
+P_{n+1}(k)=\frac{k-1}{n+2} P_n(k-1)+\frac{n+2-k}{n+2} P_n(k),
+$$
+这里 $1 \leqslant k \leqslant n+1$, 其中 $P_n(0)=0$ (递推式是依第 $n+1$ 次操作前罐中白球数的个数为 $k-1$ 和 $k$ 分类讨论得到的).
+于是, 利用 $P_n(1)=P_n(2)=\cdots=P_n(n+1)=\frac{1}{n+1}$ (归纳假设), 可知
+$P_{n+1}(1)=P_{n+1}(2)=\cdots=P_{n+1}(n+1)=\frac{n+1}{n+2} \cdot \frac{1}{n+1}=\frac{1}{n+2}$, 再结合 $\sum_{k=1}^{n+2} P_{n+1}(k)=1$, 就可证得 $P_{n+1}(n+2)=\frac{1}{n+2}$.
+所以, 命题成立.
+说明将命题一般化只是形式, 这里是为了利用递推的思想去处理才作出一般化的, 思想与内涵决定表现的形式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 证明: 存在正整数 $n_1<n_2<\cdots<n_{50}$, 使得
+$$
+n_1+S\left(n_1\right)=n_2+S\left(n_2\right)=\cdots=n_{50}+S\left(n_{50}\right) .
+$$
+这里 $S(n)$ 表示自然数 $n$ 在十进制表示下各数码之和.
+%%<SOLUTION>%%
+证明:将命题一般化, 用数学归纳法证明如下结论:
+对任意 $k \in \mathbf{N}^*, k \geqslant 2$, 存在正整数 $n_1<n_2<\cdots<n_k$, 使得
+$$
+n_1+S\left(n_1\right)=n_2+S\left(n_2\right)=\cdots=n_k+S\left(n_k\right) \equiv 7(\bmod 9) . \label{eq1}
+$$
+当 $k=2$ 时, 取 $n_1=107, n_2=98$, 注意到 $107+8=98+17=115 \equiv 7(\bmod 9)$, 故命题对 $k=2$ 成立.
+设命题对 $k(\geqslant 2)$ 成立, 并设 $n_1<n_2<\cdots<n_k$ 满足 \ref{eq1} 式, 考虑 $k+1$ 的情形.
+令 $m \in \mathbf{N}^*$, 使得 $9 m-2=n_i+S\left(n_i\right), 1 \leqslant i \leqslant k$. 取正整数 $n_i^{\prime}=9 \times 10^m+n_i, 1 \leqslant i \leqslant k, n_{k+1}^{\prime}=8 \underbrace{9 \cdots 9}_{m \text { 个9 }}$, 则 $n_i^{\prime}(1 \leqslant i \leqslant k+1)$ 都是 $m+1$ 位正整数 (注意, 由 $k=2$ 的取法, 显然对归纳假设中的 $k$, 均有 $n_i<10^m$, 故 $n_i^{\prime}$ 为 $m+$ 1 位数, $1 \leqslant i \leqslant k)$, 并且对 $1 \leqslant i \leqslant k$, 均有
+$$
+n_i^{\prime}+S\left(n_i^{\prime}\right)=9 \times 10^m+n_i+\left(9+S\left(n_i\right)\right)=9 \times 10^m+9 m+7 ;
+$$
+而 $n_{k+1}^{\prime}+S\left(n_{k+1}^{\prime}\right)=\left(9 \times 10^m-1\right)+(8+9 m)=9 \times 10^m+9 m+7$.
+所以 $n_1^{\prime}+S\left(n_1^{\prime}\right)=\cdots=n_{k+1}^{\prime}+S\left(n_{k+1}^{\prime}\right) \equiv 7(\bmod 9)$, 又由归纳假设及我们的构造, 可知 $n_{k+1}^{\prime}<n_1^{\prime}<n_2^{\prime}<\cdots<n_k^{\prime}$. 从而命题对 $k+1$ 也成立.
+综上可知, 命题成立.
+说明这里\ref{eq1}式中要求 $n_i+S\left(n_i\right) \equiv 7(\bmod 9)$ 对归纳过渡中找到 $n_{k+1}^{\prime}$ 而言是非常重要的,它是在归纳构造的过程中发现的一个必要的加强.
+%%PROBLEM_END%%
+
+

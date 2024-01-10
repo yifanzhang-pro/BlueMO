@@ -1,0 +1,341 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 已知 $k>a>b>c>0$, 求证:
+$$
+k^2-(a+b+c) k+(a b+b c+c a)>0 .
+$$
+%%<SOLUTION>%%
+考察恒等式 $(k-a)(k-b)(k-c)=k^3-(a+b+c) k^2+(a b+b c+ c a) k-a b c$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 方程 $x^3+a x^2+b x+c=0$ 的三根 $\alpha 、 \beta 、 \gamma$ 均为实数, 且 $a^2=2 b+2$, 求证: $|a-c| \leqslant 2$.
+%%<SOLUTION>%%
+考察恒等式 $(\alpha+\beta+\gamma-\alpha \beta \gamma)^2=2(\alpha \beta-1)(\beta \gamma-1)\left(\gamma_\alpha-1\right)+2- \alpha^2 \beta^2 \gamma^2+\alpha^2+\beta^2+\gamma^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $F(x)=|f(x) \cdot g(x)|$, 其中 $f(x)=a x^2 \dashv b x+c, x \in[-1,1]$; $g(x)=c x^2+b x+a, x \in[-1,1]$, 且对任意参数 $a 、 b 、 c$, 恒有 $|f(x)| \leqslant 1$, 求 $F(x)$ 的最大值.
+%%<SOLUTION>%%
+$|g(x)|=\left|c x^2-c+b x+a+c\right| \leqslant|c| \cdot\left|x^2-1\right|+|b x+a+c| \leqslant 1+|b x+a+c|$.
+考察一次函数 $T(x)=|b x+a+c|,-1 \leqslant x \leqslant 1$.
+当 $x=-1$ 时, $T(-1)=|a-b+c| \leqslant 1$; 当 $x=1$ 时, $T(1)=\mid a+b+ c \mid \leqslant 1$. 故当 $|x| \leqslant 1$ 时, $T(x) \leqslant 1$. 则 $|g(x)| \leqslant 1+T(x) \leqslant 2$. 于是 $F(x) \leqslant 2$. 且当 $x= \pm 1$ 时取到此最值.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $a 、 b 、 c$ 都是实数,求证:
+$$
+\frac{|a+b+c|}{1+|a+b+c|} \leqslant \frac{|a|}{1+|a|}+\frac{|b|}{1+|b|}+\frac{|c|}{1+|c|} .
+$$
+%%<SOLUTION>%%
+构造函数 $f(x)=\frac{x}{1+x}$, 易证 $f(x)$ 在 $[0,+\infty)$ 上是增函数, 于是
+$f(|a+b+c|) \leqslant f(|a|+|b|+|c|)$, 即
+$$
+\begin{aligned}
+\frac{|a+b+c|}{1+|a+b+c|} \leqslant & \frac{|a|+|b|+|c|}{1+|a|+|b|+|c|} \\
+= & \frac{|a|}{1+|a|+|b|+|c|}+\frac{|b|}{1+|a|+|b|+|c|} \\
+& +\frac{|c|}{1+|a|+|b|+|c|} \\
+\leqslant & \frac{|a|}{1+|a|}+\frac{|b|}{1+|b|}+\frac{|c|}{1+|c|},
+\end{aligned}
+$$
+故结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 求所有的实数 $a$, 使得不等式 $x^2+y^2+z^2 \leqslant a(x y+y z+z x)$ 的任何正整数解都是某个三角形的三边长.
+%%<SOLUTION>%%
+取 $x=2, y=z=1$, 有 $a \geqslant \frac{6}{5}$. 因此, 当 $a \geqslant \frac{6}{5}$ 时, 原不等式有整根 $(2,1,1)$, 但 $(x, y, z)$ 不能组成一个三角形, 因此有 $a<\frac{6}{5}$.
+又由于当 $a<1$ 时, $x^2+y^2+z^2 \leqslant a(x y+y z+z x)<x y+y z+z x$,矛盾! 故 $a \geqslant 1$. 下证: 当 $1 \leqslant a<\frac{6}{5}$ 时, 原不等式的所有正整数根皆能组成三角形的三边长.
+首先, $(1,1,1)$ 是原不等式的解, 且它们能组成一个三角形.
+如果不等式有整根 $\left(x_1, y_1, z_1\right)$, 且不能组成三角形的三边长, 那么, 将原方程变形为: (不妨设 $\left.x_1 \geqslant y_1+z_1\right) x^2-a(y+z) x+y^2+z^2-a y z \leqslant 0$.
+考察函数 $f(x)=x^2-a\left(y_1+z_1\right) x+y_1^2+z_1^2-a y_1 z_1$, 其对称轴 $x= \frac{a}{2}\left(y_1+z_1\right)<\frac{3}{5}\left(y_1+z_1\right)<y_1+z_1 \leqslant x_1$, 故有 $\left(y_1+z_1, y_1, z_1\right)$ 也是原不等式的解.
+因此 $a \geqslant \frac{\left(y_1+z_1\right)^2+y_1^2+z_1^2}{\left(y_1+z_1\right) y_1+\left(y_1+z_1\right) z_1+y_1 z_1}=u$, 则 $(u-2) y_1^2+(3 u-$ 2) $y_1 z_1+(u-2) z_1^2 \doteq 0$.
+显然 $u \neq 2$, 故 $\Delta=(3 u-2)^2-4(u-2)^2 \geqslant 0$, 于是 $u \geqslant \frac{6}{5}$, 那么 $a \geqslant u \geqslant \frac{6}{5}$,矛盾!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $a_1 、 a_2 、 a_3 、 b_1 、 b_2 、 b_3$ 为正实数, 求证:
+$$
+\begin{aligned}
+& \left(a_1 b_2+a_2 b_1+a_2 b_3+a_3 b_2+a_3 b_1+a_1 b_3\right)^2 \\
+\geqslant & 4\left(a_1 a_2+a_2 a_3+a_3 a_1\right)\left(b_1 b_2+b_2 b_3+b_3 b_1\right),
+\end{aligned}
+$$
+等号当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\frac{a_3}{b_3}$ 时成立.
+%%<SOLUTION>%%
+不妨设 $\frac{b_1}{a_1} \geqslant \frac{b_2}{a_2} \geqslant \frac{b_3}{a_3}$. 考虑方程: $\left(a_1 a_2+a_2 a_3+a_3 a_1\right) x^2-\left(a_1 b_2+\right. \left.a_2 b_1+a_3 b_2+a_2 b_3+a_3 b_1+a_1 b_3\right) x+\left(b_1 b_2+b_2 b_3+b_3 b_1\right)=\left(a_1 x-b_1\right)\left(a_2 x-\right. \left.b_2\right)+\left(a_2 x-b_2\right)\left(a_3 x-b_3\right)+\left(a_3 x-b_3\right)\left(a_1 x-b_1\right)$.
+由于当 $x=\frac{b_2}{a_2}$ 时, 上式右端 $=\left(\frac{a_3 b_2}{a_2}-b_3\right)\left(\frac{a_1 b_2}{a_2}-b_1\right) \leqslant 0$, 因此这个关于 $x$ 的实系数二次三项式必有实根, 于是 $\Delta \geqslant 0$, 故原不等式成立.
+当不等式取等号时, $\Delta=0$, 则上述关于 $x$ 的一元二次多项式必有等根 $\frac{b_2}{a_2}$.
+于是, $\frac{b_1}{a_1}=\frac{b_2}{a_2}$ 与 $\frac{b_2}{a_2}=\frac{b_3}{a_3}$ 中至少有一个成立.
+不妨设 $\frac{b_1}{a_1}=\frac{b_2}{a_2}=\lambda$. 有 $f(x)=\left(a_1 a_2+a_2 a_3+a_3 a_1\right)\left(x-\frac{b_2}{a_2}\right)^2$.
+故 $\left(a_1 a_2+a_2 a_3+a_3 a_1\right)(x-\lambda)^2=\left(a_1 x-a_1 \lambda\right)\left(a_2 x-a_2 \lambda\right)+\left(a_2 x-\right. \left.a_2 \lambda\right)\left(a_3 x-b_3\right)+\left(a_3 x-b_3\right)\left(a_1 x-a_1 \lambda\right)$.
+由此不难验证 $b_3=a_3 \lambda$, 因此结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 设 $a_n \in \mathbf{R}$ 满足: $a_{n+1} \geqslant a_n^2+\frac{1}{5}, n \geqslant 0$, 求证:
+$$
+\sqrt{a_{n+5}} \geqslant a_{n-5}^2, n \geqslant 5 .
+$$
+%%<SOLUTION>%%
+令 $f(x)=x^2+\frac{1}{5}$, 则当 $x>0$ 时, $f(x)$ 单调递增.
+令 $g(x)=f(x)- x=\left(x-r_1\right)\left(x-r_2\right)$. 其中 $r_1=\frac{5-\sqrt{5}}{10}, r_2=\frac{5+\sqrt{5}}{10}, 0<r_1<r_2<1$, 则 $\left\{\begin{array}{l}f(x)<x, \text { 若 } x \in\left(r_1, r_2\right) , \\ f(x) \geqslant x, \text { 其他.
+}\end{array}\right.$
+固定 $n \geqslant 5$, 记 $a=\left|a_{n-5}\right|$, 只要证明: $a_{n+5} \geqslant a_{n-5}^4$.
+(1) $a \leqslant r_1$, 则 $a<1, a_{n+5} \geqslant a>a^4=a_{n-5}^4$.
+其中利用了 $a \leqslant f(a) \leqslant f^{(2)}(a) \leqslant \cdots \leqslant f^{(10)}(a)=a_{n+5}$.
+(2) $a \in\left[r_2, 1\right]$, 也有 $a_{n+5}=f^{(10)}(a)>f^{(9)}(a)>\cdots>a>a^4=a_{n-5}^4$.
+(3) $a \in\left(r_1, r_2\right), r_1=f\left(r_1\right)<f\left(r_2\right)=r_2 . a_{n+5}=f^{(10)}(a)>r_1$, 故只须证 $r_1>r_2^4$ (容易验证):
+故 $a_{n+5}>r_1>r_2^4>a^4=a_{n-5}^4$.
+(4) $a>1$, 则 $a_{n+5}=f^{(10)}(a)>f^{(9)}(a)>\cdots>f^{(2)}(a)=\left(a^2+\frac{1}{5}\right)^2+ \frac{1}{5}>a^4=a_{n-5}^2$, 因此结论也成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 设 $a_n \in \mathbf{R}$ 满足: $a_{n+1} \geqslant a_n^2+\frac{1}{5}, n \geqslant 0$, 求证:
+$$
+\sqrt{a_{n+5}} \geqslant a_{n-5}^2, n \geqslant 5 .
+$$
+%%<SOLUTION>%%
+证法 2 : 对于任何非负整数 $k$, 因为 $\left(a_k-\frac{1}{2}\right)^2 \geqslant 0$, 故有
+$$
+a_{k+1}+\frac{1}{20} \geqslant a_k^2+\frac{1}{5}+\frac{1}{20}=a_k^2+\frac{1}{4} \geqslant a_k .
+$$
+因此 $a_{k+1}+\frac{1}{20} \geqslant a_k$.
+对 $k=n+1, n+2, n+3, n+4$, 求和得 $a_{n+5}+\frac{1}{5} \geqslant a_{n+1} \geqslant a_n^2+\frac{1}{5}$.
+类似地, 我们有 $a_n \geqslant a_{n-5}^2$. 于是 $a_{n+5} \geqslant a_n^2 \geqslant a_{n-5}^4$, 结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 设 $a_n \in \mathbf{R}$ 满足: $a_{n+1} \geqslant a_n^2+\frac{1}{5}, n \geqslant 0$, 求证:
+$$
+\sqrt{a_{n+5}} \geqslant a_{n-5}^2, n \geqslant 5 .
+$$
+%%<SOLUTION>%%
+证法 3 : 只要证明 $a_{n+5} \geqslant a_n^2(n \geqslant 5)$.
+因为 $a_{n+5} \geqslant a_{n+4}^2+\frac{1}{5} ; \cdots ; a_{n+1} \geqslant a_n^2+\frac{1}{5}$, 相加, 得
+$$
+\begin{aligned}
+a_{n+5} & \geqslant \sum_{i=1}^4\left(a_{n+i}^2-a_{n+i}\right)+1+a_n^2 \\
+& =\sum_{i=1}^4\left(a_{n+i}-\frac{1}{2}\right)^2+a_n^2 \geqslant a_n^2 .
+\end{aligned}
+$$
+因此结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设 $x 、 y 、 z$ 为任意实数,求证:
+$$
+\sqrt{x^2+x y+y^2}+\sqrt{x^2+x z+z^2} \geqslant \sqrt{y^2+y z+z^2} .
+$$
+%%<SOLUTION>%%
+建立平面直角坐标系 $x O y$, 取三点 $A(x, 0) 、 B\left(-\frac{y}{2},-\frac{\sqrt{3}}{2} y\right) 、 C \left(-\frac{z}{2}, \frac{\sqrt{3}}{2} z\right)$, 则原不等式转化为: $|A B|+|A C| \geqslant|B C|$, 这是显然的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 设 $x, y, z>0$, 求证:
+$$
+\begin{aligned}
+& 3 \sqrt{x y+y z+z x} \\
+\leqslant & \sqrt{x^2+x y+y^2}+\sqrt{y^2+y z+z^2}+\sqrt{z^2+z x+x^2} \\
+\leqslant & 2(x+y+z) .
+\end{aligned}
+$$
+%%<SOLUTION>%%
+由条件, 可构造如图(<FilePath:./figures/fig-c5p9.png>), 在 $\triangle A B C$ (内有一点 $P$, 满足条件 $\angle A P B=\angle B P C=\angle C P A=120^{\circ}$. 设 $P A=x, P B=y, P C=z$, 则 $A B=\sqrt{x^2+x y+y^2}$, $B C=\sqrt{y^2+y z+z^2}, C A=\sqrt{z^2+z x+x^2}$. 
+由三角形两边之和大于第三边, 有 $\sqrt{x^2+x y+y^2}+ \sqrt{y^2+y z+z^2}+\sqrt{z^2+z x+x^2} \leqslant 2(x+y+z)$).
+又由 $a^2+b^2+c^2 \geqslant 4 \sqrt{3} s, a b+b c+c a \geqslant 4 \sqrt{3} s$,
+得 $(a+b+c)^2 \geqslant 12 \sqrt{3} s$, 故 $a+b+c \geqslant 2 \sqrt{3 \sqrt{3} s}=3 \sqrt{x y+y z+z x}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 已知 $\alpha 、 \beta 、 \gamma$ 都是锐角, 且 $\cos ^2 \alpha+\cos ^2 \beta+\cos ^2 \gamma=1$, 求证:
+$$
+\frac{3 \pi}{4}<\alpha+\beta+\gamma<\pi \text {. }
+$$
+%%<SOLUTION>%%
+由条件, 作一个长、宽、高分别为 $\cos \alpha$ 、 $\cos \beta 、 \cos \gamma$ 的长方体 $A B C D-A_1 B_1 C_1 D_1$. 如图(<FilePath:./figures/fig-c5p10.png>)所示, $A B=\cos \alpha, B C=\cos \beta, B B_1=\cos \gamma$. 则此长方体对角线长恰为 1 . 同时, 易见 $\angle A B D_1=\alpha$, $\angle C B B_1=\beta, \angle B_1 B D_1=\gamma$.
+在三面角 $B-A D_1 C$ 中, 有 $\angle A B D_1+\angle D_1 B C> \angle A B C=\frac{\pi}{2}$, 故 $\alpha+\beta>\frac{\pi}{2}$, 同理, $\beta+\gamma>\frac{\pi}{2}, \gamma+ \alpha>\frac{\pi}{2}$, 则 $\alpha+\beta+\gamma>\frac{3 \pi}{4}$.
+取 $B D_1$ 的中点 $O$, 则 $\angle A O D_1=2 \alpha, \angle C O D_1=2 \beta, \angle B B_1 D_1=2 \gamma$. 易证 $\angle C O B_1=\angle A O D_1=2 \alpha$, 考虑三面角 $O-C B_1 D_1$, 有 $\angle C O B_1+\angle B_1 O D_1+ \angle C O D_1<2 \pi$, 于是即得 $\alpha+\beta+\gamma<\pi$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 若 $p 、 q$ 为实数, 且对于 $0 \leqslant x \leqslant 1$, 成立不等式:
+$$
+\left|\sqrt{1-x^2}-p x-q\right| \leqslant \frac{\sqrt{2}-1}{2} \text {. }
+$$
+求证: $p=-1, q=\frac{1+\sqrt{2}}{2}$.
+%%<SOLUTION>%%
+原不等式即 $\sqrt{1-x^2}-\frac{\sqrt{2}-1}{2} \leqslant p x+q \leqslant \sqrt{1-x^2}+\frac{\sqrt{2}-1}{2}(0 \leqslant x \leqslant 1)$.
+分别以点 $A\left(0, \frac{\sqrt{2}-1}{2}\right)$ 及 $B\left(0,-\frac{\sqrt{2}-1}{2}\right)$ 为圆心, 半径为 1 作圆 $A$ 和圆 $B$, 则它们的两个端点分别为 $\left(0, \frac{\sqrt{2}+1}{2}\right) 、\left(1, \frac{\sqrt{2}-1}{2}\right)$ 及 $\left(0, \frac{3-\sqrt{2}}{2}\right)$ 、 $\left(1,-\frac{\sqrt{2}-1}{2}\right)$
+记圆 $A$ 在第一象限内的弧为 $l_1$, 圆 $B$ 在第一、四象限内的弧为 $l_2$, 于是, 当 $0 \leqslant x \leqslant 1$ 时,直线 $y=p x+q$ 位于 $l_1$ 和 $l_2$ 之间.
+由于连接 $l_1$ 两个端点的直线恰与圆 $B$ 相切, 从而与 $l_2$ 相切.
+因此, 直线 $y=p x+q$ 必过 $l_1$ 两个端点, 故 $p=-1, q=\frac{\sqrt{2}+1}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. (Minkovski 不等式) 求证: 对于任意 $2 n$ 个正数 $a_1, a_2, \cdots, a_n$ 及 $b_1, b_2, \cdots, b_n$, 有
+$$
+\begin{aligned}
+& \sqrt{a_1^2+b_1^2}+\sqrt{a_2^2+b_2^2}+\cdots+\sqrt{a_n^2+b_n^2} \\
+\geqslant & \sqrt{\left(a_1+a_2+\cdots+a_n\right)^2+\left(b_1+b_2+\cdots+b_n\right)^2},
+\end{aligned}
+$$
+等号当且仅当 $\frac{b_1}{a_1}=\frac{b_2}{a_2}=\cdots=\frac{b_n}{a_n}$ 时成立.
+%%<SOLUTION>%%
+把形如 $\sqrt{x^2+y^2}$ 的项看作是一个直角三角形斜边的长, 可构造图形如图(<FilePath:./figures/fig-c5p12.png>)所示.
+于是, 不等式左边 $=O A_1+A_1 A_2+\cdots+A_{n-1} A_n$, 不等式右边 $=O A_n$.
+由于折线 $O A_1 \cdots A_n$ 的长不小于直线段 $O A_n$ 的长, 故 $O A_1+A_1 A_2+\cdots+ A_{n-1} A_n \geqslant O A_n$, 因此不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 设 $0<a_i \leqslant a(i=1,2, \cdots, 6)$. 求证:
+(1) $\frac{\sum_{i=1}^4 a_i}{a}-\frac{a_1 a_2+a_2 a_3+a_3 a_4+a_4 a_1}{a^2} \leqslant 2$.
+(2) $\frac{\sum_{i=1}^6 a_i}{a}-\frac{a_1 a_2+a_2 a_3+\cdots+a_6 a_1}{a^2} \leqslant 3$.
+%%<SOLUTION>%%
+(1) 原不等式即 $a_1\left(a-a_2\right)+a_2\left(a-a_3\right)+a_3\left(a-a_4\right)+a_4\left(a-a_1\right) \leqslant 2 a^2$, 如图(<FilePath:./figures/fig-c5p13.png>)构造正方形 $A B C D$, 边长为 $a$.
+取 $U, V$ 使 $S D=a_1, C R=a_2, B Q=a_3, A P=a_4$.
+则 $S D R M$ 与 $C R V Q$ 互不重叠, $B P N Q$ 与 $A P U S$ 互不重叠, 因此它们至多将正方形 $A B C D$ 覆盖两次,故原不等式获证.
+(2) 和 (1) 类似, 6 个矩形至多将正方形 ( $a \times a$ 的) 覆盖 3 次.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 已知 100 个正数 $x_1, x_2, \cdots, x_{100}$, 满足:
+(1) $x_1^2+x_2^2+\cdots+x_{100}^2>10000$;
+(2) $x_1+x_2+\cdots+x_{100} \leqslant 300$.
+求证: 可在它们之中找出 3 个数,使得这三个数之和大于 100 .
+%%<SOLUTION>%%
+不妨设 $x_1 \geqslant x_2 \geqslant \cdots \geqslant x_{100}$, 下面我们借助图形(<FilePath:./figures/fig-c5p14.png>)来说明, $x_1+x_2+x_3>100$ 成立.
+把 $x_i^2$ 看作是边长为 $x_i$ 的正方形的面积 $(1 \leqslant i \leqslant 100)$.
+由于 $x_1+x_2+\cdots+x_{100} \leqslant 300$, 这些正方形可以一个接一个地排起来,其总长 $\leqslant 300$, 它们全落在一个长为 300 , 宽为 100 的矩形中.
+这个矩形可分为 3 个边长为 100 的正方形, 如图所示.
+如果 $x_1+x_2+x_3 \leqslant 100$, 第一个边长为 100 的正方形中含有三个带形,互不重叠, 宽分别为 $x_1 、 x_2 、 x_3$.
+由于 $x_i$ 递减,第 2 个边长为 100 的正方形中所含的小正方形(包括不完整的, 如图中阴影部分所示) 的边长 $x_i$ 均 $\leqslant x_3$, 它们可以移至上述宽为 $x_2$ 的带形中.
+同样,第 3 个边长为 100 的正方形中所含的小正方形可以移至上述宽为 $x_3$ 的带形中, 于是, 面积之和 $x_1^2+x_2^2+\cdots+x_{100}^2<100^2$, 矛盾!
+故 $x_1+x_2+x_3>100$.
+%%<REMARK>%%
+注:: 下面给出第 2 种证法.
+证法 2 : 不妨设 $x_1 \geqslant x_2 \geqslant \cdots \geqslant x_{100}$. 记 $s=x_1+x_2+x_3, \lambda=x_3$, 令 $\delta= x_2-x_3 \geqslant 0$, 由 $x_1 \geqslant x_2$, 易知 $\left(x_1+\delta\right)^2+\left(x_2-\delta\right)^2 \geqslant x_1^2+x_2^2$. 所以 $x_1^2+x_2^2+ x_3^2 \leqslant(s-2 \lambda)^2+2 \lambda^2$.
+由 $\lambda \geqslant x_4 \geqslant x_5 \geqslant \cdots \geqslant x_{100}$ 和 $x_4+x_5+\cdots+x_{100}<300-s$ 可得
+$$
+x_4^2+x_5^2+\cdots+x_{100}^2 \leqslant \lambda\left(x_4+x_5+\cdots+x_{100}\right) \leqslant(300-s) \lambda .
+$$
+故 $x_1^2+x_2^2+\cdots+x_{100}^2 \leqslant 6 \lambda^2+(300-5 s) \lambda+s^2$.
+记 $f(\lambda)=6 \lambda^2+(300-5 s) \lambda+s^2$. 则由于 $0<\lambda \leqslant \frac{s}{3}$, 又由于 $f(0)=s^2$, $f\left(\frac{s}{3}\right)=100 s$, 有 $x_1^2+x_2^2+\cdots+x_{100}^2 \leqslant \max \left\{s^2, 100 s\right\}$. 再由 $x_1^2+x_2^2+\cdots+ x_{100}^2>10000$, 即可得 $s=x_1+x_2+x_3>100$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 设 $n$ 为一个大于 2 的奇数,求证: 当且仅当 $n=3$ 或 5 时,对于任意 $a_1$, $a_2, \cdots, a_n \in \mathbf{R}$, 有下面不等式成立:
+$$
+\begin{gathered}
+\left(a_1-a_2\right)\left(a_1-a_3\right) \cdots\left(a_1-a_n\right)+\left(a_2-a_1\right)\left(a_2-a_3\right) \cdots\left(a_2-a_n\right) \\
++\cdots+\left(a_n-a_1\right)\left(a_n-a_2\right) \cdots\left(a_n-a_{n-1}\right) \geqslant 0 .
+\end{gathered}
+$$
+%%<SOLUTION>%%
+不妨设 $a_1 \leqslant a_2 \leqslant \cdots \leqslant a_n$.
+则 $A_3=a_1^2+a_2^2+a_3^2-a_1 a_2-a_2 a_3-a_3 a_1 \geqslant 0$.
+$$
+\begin{aligned}
+& \quad A_5=\left(a_1-a_2\right)\left(a_1-a_3\right)\left(a_1-a_4\right)\left(a_1-a_5\right)+\left(a_2-a_1\right)\left(a_2-a_3\right)\left(a_2-\right. \\
+& \left.a_4\right)\left(a_2-a_5\right)+\left(a_3-a_1\right)\left(a_3-a_2\right)\left(a_3-a_4\right)\left(a_3-a_5\right)+\left(a_4-a_1\right)\left(a_4-a_2\right) \\
+& \left(a_4-a_3\right)\left(a_4-a_5\right)+\left(a_5-a_1\right)\left(a_5-a_2\right)\left(a_5-a_3\right)\left(a_5-a_4\right) .
+\end{aligned}
+$$
+由于 $\left(a_3-a_1\right)\left(a_3-a_2\right)\left(a_3-a_4\right)\left(a_3-a_5\right) \geqslant 0$, 而 $A_5$ 前 2 项之和为 $\left(a_2-a_1\right)\left[\left(a_3-a_1\right)\left(a_4-a_1\right)\left(a_5-a_1\right)-\left(a_3-a_2\right)\left(a_4-a_2\right)\left(a_5-a_2\right)\right] \geqslant 0$, 同理, $A_5$ 后 2 项之和也 $\geqslant 0$, 故 $A_5 \geqslant 0$.
+当 $n \geqslant 7$ 时,构造反例如下: 令 $a_1=a_2=a_3<a_4<a_5=a_6=a_7=\cdots= a_n$, 则 $A_n=\left(a_4-a_1\right)\left(a_4-a_2\right)\left(a_4-a_3\right)\left(a_4-a_5\right)\left(a_4-a_6\right) \cdots\left(a_4-a_n\right)<0$.
+因此结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16. 设 $a_1, a_2, \cdots, a_n(n \geqslant 2)$ 都大于 -1 且同号,求证:
+$$
+\left(1+a_1\right)\left(1+a_2\right) \cdots\left(1+a_n\right)>1+a_1+a_2+\cdots+a_n .
+$$
+%%<SOLUTION>%%
+构造数列 $x_n=\left(1+a_1\right)\left(1+a_2\right) \cdots\left(1+a_n\right)-\left(1+a_1+a_2+\cdots+a_n\right) (n \geqslant 2)$, 则 $x_{n+1}-x_n=a_{n+1}\left[\left(1+a_1\right) \cdots\left(1+a_n\right)-1\right]$.
+若 $a_i>0(i=1,2, \cdots, n+1)$, 由上式易见 $x_{n+1}>x_n$; 若 $-1<a_i< 0(i=1,2, \cdots, n)$, 则 $0<1+a_i<1$, 也有 $x_{n+1}>x_n$.
+因此 $\left\{x_n\right\}$ 是一个单调递增序列 $(n \geqslant 2)$. 由于 $x_2=\left(1+a_1\right)\left(1+a_2\right)-1- a_1-a_2=a_1 a_2>0$, 则对一切 $n \geqslant 2, x_n>0$, 从而原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17. 设 $a_i$ 为正实数 $(i=1,2, \cdots, n)$, 令:
+$$
+\begin{gathered}
+k b_k=a_1+a_2+\cdots+a_k(k=1,2, \cdots, n), \\
+C_n=\left(a_1-b_1\right)^2+\left(a_2-b_2\right)^2+\cdots+\left(a_n-b_n\right)^2, \\
+D_n=\left(a_1-b_n\right)^2+\left(a_2-b_n\right)^2+\cdots+\left(a_n-b_n\right)^2 .
+\end{gathered}
+$$
+求证: $C_n \leqslant D_n \leqslant 2 C_n$.
+%%<SOLUTION>%%
+构造数列 $x_n=2 C_n-D_n, y_n=D_n-C_n, n \in \mathbf{N}_{+}$. 则
+$$
+\begin{aligned}
+x_{n+1}-x_n= & 2\left(C_{n+1}-C_n\right)-\left(D_{n+1}-D_n\right) \\
+= & 2\left(a_{n+1}-b_{n+1}\right)^2-\left(a_{n+1}-b_{n+1}\right)^2-n\left(b_{n+1}^2-b_n^2\right) \\
+& +2\left(b_{n+1}-b_n\right)\left(a_1+a_2+\cdots+a_n\right) \\
+= & \left(a_{n+1}-b_{n+1}\right)^2-n\left(b_{n+1}^2-b_n^2\right)+2 n b_n\left(b_{n+1}-b_n\right) \\
+= & {\left[(n+1) b_{n+1}-n b_n-b_{n+1}\right]^2-n\left(b_{n+1}^2-b_n^2\right)+2 n\left(b_n b_{n+1}-b_n^2\right) } \\
+= & \left(n^2-n\right)\left(b_{n+1}-b_n\right)^2 \geqslant 0 .
+\end{aligned}
+$$
+又由于 $x_1=2 C_1-D_1=\left(a_1-b_1\right)^2=0$, 故对一切 $n, x_n \geqslant 0\left(n \in \mathbf{N}_{+}\right)$, 同样, $y_{n+1}-y_n=n\left(b_{n+1}^2-b_n^2\right)-2\left(b_{n+1}-b_n\right)\left(a_1+a_2+\cdots+a_n\right)=n\left(b_{n+1}-\right. \left.b_n\right)^2 \geqslant 0$, 又 $y_1=D_1-C_1=0$, 故对一切 $n \in \mathbf{N}^{+}, y_n \geqslant 0$.
+综上所述, $C_n \leqslant D_n \leqslant 2 C_n$.
+%%PROBLEM_END%%
+
+

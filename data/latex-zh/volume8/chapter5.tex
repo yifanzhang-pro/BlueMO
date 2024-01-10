@@ -1,0 +1,172 @@
+
+%%TEXT_BEGIN%%
+关于向量内积的定义在第 4 章中已有介绍, 在本章中, 我们着重通过例题来说明向量内积在向量问题及各种其它问题中的应用.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知 $\triangle A B C$, 若对任意 $t \in \mathbf{R},|\overrightarrow{B A}-t \overrightarrow{B C}| \geqslant|\overrightarrow{A C}|$, 则 $\triangle A B C-$ 定为 ( ).
+(A) 锐角三角形 (B) 针角三角形 (C) 直角三角形 (D) 答案不确定.
+%%<SOLUTION>%%
+分析:与解令 $\angle A B C=\alpha$, 过 $A$ 作 $A D \perp B C$ 于 $D$. 由 $|\overrightarrow{B A}-t \overrightarrow{B C}| \geqslant |\overrightarrow{A C}|$, 推出
+$$
+|\overrightarrow{B A}|^2-2 t \overrightarrow{B A} \cdot \overrightarrow{B C}+t^2|\overrightarrow{B C}|^2 \geqslant|\overrightarrow{A C}|^2 .
+$$
+令 $t=\frac{\overrightarrow{B A} \cdot \overrightarrow{B C}}{|\overrightarrow{B C}|^2}$, 代入上式, 得
+$$
+|\overrightarrow{B A}|^2-2|\overrightarrow{B A}|^2 \cos ^2 \alpha+\cos ^2 \alpha|\overrightarrow{B A}|^2 \geqslant|\overrightarrow{A C}|^2,
+$$
+即 $|\overrightarrow{B A}|^2 \sin ^2 \alpha \geqslant|\overrightarrow{A C}|^2$, 也即 $|\overrightarrow{B A}| \sin \alpha \geqslant|\overrightarrow{A C}|$. 从而有 $|\overrightarrow{A D}| \geqslant|\overrightarrow{A C}|$.
+由此可得 $\angle A C B=\frac{\pi}{2}$. 故选 C.
+%%<REMARK>%%
+注:遇到有模的问题两边平方是常用的处理方法, 本题中对 $t$ 的选取也是在观察式子形式,深思熟虑后的结果.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 在 $\triangle A B C$ 和 $\triangle A E F$ 中, $B$ 是 $E F$ 的中点, $A B=E F=1, B C=6$, $C A=\sqrt{33}$, 若 $\overrightarrow{A B} \cdot \overrightarrow{A E}+\overrightarrow{A C} \cdot \overrightarrow{A F}==2$, 则 $\overrightarrow{E F}$ 与 $\overrightarrow{B C}$ 的夹角的余弦值等于?
+%%<SOLUTION>%%
+分析:与解 因为 $\overrightarrow{A B} \cdot \overrightarrow{A E}+\overrightarrow{A C} \cdot \overrightarrow{A F}=2$, 所以 $\overrightarrow{A B} \cdot(\overrightarrow{A B}+\overrightarrow{B E})+\overrightarrow{A C}$. $(\overrightarrow{A B}+\overrightarrow{B F})=2$, 即
+$$
+\overrightarrow{A B}^2+\overrightarrow{A B} \cdot \overrightarrow{B E}+\overrightarrow{A C} \cdot \overrightarrow{A B}+\overrightarrow{A C} \cdot \overrightarrow{B F}=2
+$$
+因为 $\overrightarrow{A B}^2=1, \overrightarrow{A C} \cdot \overrightarrow{A B}=\sqrt{33} \times 1 \times \frac{33+1-36}{2 \times \sqrt{33} \times 1}=-1, \overrightarrow{B E}=-\overrightarrow{B F}$, 所以
+$$
+1+\overrightarrow{B F} \cdot(\overrightarrow{A C}-\overrightarrow{A B})-1=2
+$$
+即 $\overrightarrow{B F} \cdot \overrightarrow{B C}=2$.
+设 $\overrightarrow{E F}$ 与 $\overrightarrow{B C}$ 的夹角为 $\theta$, 则有 $|\overrightarrow{B F}| \cdot|\overrightarrow{B C}| \cdot \cos \theta=2$, 即 $3 \cos \theta=2$, 所以 $\cos \theta=\frac{2}{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 有 7 个向量, 其中任意 3 个向量之和的长度都与其余 4 个向量之和的长度相等,求证: 这 7 个向量的和是零向量.
+%%<SOLUTION>%%
+分析:与解将这 7 个向量记为 $\overrightarrow{a_1} 、 \overrightarrow{a_2} 、 \cdots 、 \overrightarrow{a_7}$, 和为 $\vec{b}$.
+设 $\overrightarrow{c_i}=\overrightarrow{a_i}+\overrightarrow{a_{i+1}}+\overrightarrow{a_{i+2}}\left(i=1,2,3, \cdots, 7, \overrightarrow{a_{i+7}}=\overrightarrow{a_i}\right)$, 有 $\left|\overrightarrow{c_i}\right|=\mid \vec{b}- \overrightarrow{c_i} \mid$, 则
+$$
+{\overrightarrow{c_i}}^2=\vec{b}^2-2 \vec{b} \cdot{\overrightarrow{c_i}}+{\overrightarrow{c_i}}^2,
+$$
+即
+$$
+\vec{b}^2-2 \vec{b} \cdot \overrightarrow{c_i}=0 .
+$$
+累加得 $\quad 7 \vec{b}^2-2 \vec{b} \cdot\left(\overrightarrow{c_1}+\overrightarrow{c_2}+\cdots+\overrightarrow{c_7}\right)=0$,
+即 $7 \vec{b}^2-6 \vec{b}^2=0$, 得 $|\vec{b}|^2=0$, 即 $\vec{b}=\overrightarrow{0}$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 如图(<FilePath:./figures/fig-c5i1.png>), 求证: 圆内接四边形 $A B C D$ 的两组对边 $A B$ 和 $C D$ 的交角平分线 $l_1$ 与 $A D$ 和 $B C$ 的交角平分线 $l_2$ 互相垂直.
+%%<SOLUTION>%%
+分析:与解设 $A B 、 C D$ 交于 $O_1, A D 、 B C$ 交于 $O_2$, 取 $\overrightarrow{O_1 D} 、 \overrightarrow{O_1 A} 、 \overrightarrow{O_2 D} 、 \overrightarrow{O_2 C}$ 方向上单位向量分别为 $\vec{i} 、 \vec{j} 、 \vec{l} 、 \vec{k}$, 则
+$$
+\begin{aligned}
+\cos \left(180^{\circ}-\angle D A B\right) & =\vec{i} \cdot \vec{j} \Rightarrow \cos \angle D A B=-\vec{\imath} \cdot \vec{j}, \\
+\cos \left(180^{\circ}-\angle D C B\right) & =\vec{i} \cdot \vec{k} \Rightarrow \cos \angle D C B=-\vec{i} \cdot \vec{k}, \\
+\cos \angle C D A= & \vec{i} \cdot \vec{l}, \cos \angle B=\vec{k} \cdot \vec{j} .
+\end{aligned}
+$$
+而 $\angle B+\angle C D A=180^{\circ}, \angle D C B+\angle D A B=180^{\circ}$,
+所以 $\vec{k} \cdot \vec{j}+\vec{i} \cdot \vec{l}=0,-\vec{i} \cdot \vec{k}-\vec{l} \cdot \vec{j}=0 \Leftrightarrow \vec{i} \cdot \vec{k}+\vec{l} \cdot \vec{j}=0$.
+于是 $(\vec{i}+\vec{j})(\vec{k}+\vec{l})=\vec{k} \cdot \vec{j}+\vec{k} \cdot \vec{i}+\vec{i} \cdot \vec{l}+\vec{j} \cdot \vec{l}=(\vec{k} \cdot \vec{j}+\vec{i} \cdot \vec{l})+ (\vec{i} \cdot \vec{k}+\vec{l} \cdot \vec{j})=0$.
+设 $P$ 为 $l_1$ 和 $l_2$ 的交点, 则 $O_1 P 、 O_2 P$ 分别平分 $\angle D O_1 A$ 和 $\angle C O_2 D \Leftrightarrow \vec{i}+\vec{j}$ 与 $\overrightarrow{O_1 P}$ 同向, $\vec{l}+\vec{k}$ 与 $\overrightarrow{O_2 P}$ 同向, 所以 $\overrightarrow{O_1 P}=\lambda_1(\vec{i}+\vec{j}), \overrightarrow{O_2 P}=\lambda_2(\vec{l}+\vec{k}) \left(\lambda_1 \neq 0, \lambda_2 \neq 0\right)$.
+所以 $\overrightarrow{O_1 P} \cdot \overrightarrow{O_2 P}=0$, 因此 $l_1 \perp l_2$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 任给 8 个非零实数 $a_1, a_2, \cdots, a_8$, 证明:下面 6 个数 $a_1 a_3+a_2 a_4$, $a_1 a_5+a_2 a_6, a_1 a_7+a_2 a_8, a_3 a_5+a_4 a_6, a_3 a_7+a_4 a_8, a_5 a_7+a_6 a_8$ 中,至少有一个是非负的.
+%%<SOLUTION>%%
+分析:与解令向量 $\overrightarrow{O A}=\left(a_1, a_2\right), \overrightarrow{O B}=\left(a_3, a_4\right), \overrightarrow{O C}=\left(a_5, a_6\right)$, $\overrightarrow{O D}=\left(a_7, a_8\right)$, 这 4 个向量中至少有两个向量之间的最小正夹角 $\alpha$ 小于或等于 $90^{\circ}$, 不妨设这两个向量为 $\overrightarrow{O A}$ 和 $\overrightarrow{O B}$, 此时
+$$
+a_1 a_3+a_2 a_4=\overrightarrow{O A} \cdot \overrightarrow{O B}=|\overrightarrow{O A}| \cdot|\overrightarrow{O B}| \cdot \cos \alpha \geqslant 0,
+$$
+证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 已知两个不同点 $A 、 B$, 求平面上满足条件 $\overrightarrow{M A} \cdot \overrightarrow{M B}=k^2(k$ 为非零实常数) 的点的轨迹.
+%%<SOLUTION>%%
+分析:与解设 $|A B|=2 a$, 取 $A B$ 中点 $O$, 则 $\overrightarrow{O A}=-\overrightarrow{O B}$.
+$$
+\begin{aligned}
+k^2 & =\overrightarrow{M A} \cdot \overrightarrow{M B}=(\overrightarrow{O A}-\overrightarrow{O M}) \cdot(\overrightarrow{O B}-\overrightarrow{O M}) \\
+& =(\overrightarrow{O A}-\overrightarrow{O M}) \cdot(-\overrightarrow{O A}-\overrightarrow{O M})=-\overrightarrow{O A}^2+\overrightarrow{O M}^2=|\overrightarrow{O M}|^2-a^2,
+\end{aligned}
+$$
+即
+$$
+|\overrightarrow{O M}|=\sqrt{k^2+a^2} .
+$$
+故点 $M$ 在平面上的轨迹是以 $A B$ 的中点为圆心, 以 $\sqrt{k^2+a^2}$ 为半径的圆.
+%%<REMARK>%%
+注:这是向量法解解析几何题的一个典型例子.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 如图(<FilePath:./figures/fig-c5i2.png>), 在 $\triangle A B C$ 中, $A B=A C, D$ 是 $B C$ 的中点, $E$ 是从 $D$ 作 $A C$ 的垂线的垂足, $F$ 是 $D E$ 的中点, 求证: $A F \perp B E$.
+%%<SOLUTION>%%
+分析:与解
+$$
+\begin{aligned}
+\overrightarrow{A F} \cdot \overrightarrow{B E} & =\overrightarrow{A F} \cdot(\overrightarrow{B C}+\overrightarrow{C E}) \\
+& =\left(\overrightarrow{A D}+\frac{1}{2} \overrightarrow{D E}\right) \cdot \overrightarrow{B C}+\left(\overrightarrow{A E}+\frac{1}{2} \overrightarrow{E D}\right) \cdot \overrightarrow{C E} \\
+& =\frac{1}{2} \overrightarrow{D E} \cdot \overrightarrow{B C}+\overrightarrow{A E} \cdot \overrightarrow{C E}=\overrightarrow{D E} \cdot \overrightarrow{D C}+\overrightarrow{A E} \cdot \overrightarrow{C E} \\
+& =\overrightarrow{D E} \cdot(\overrightarrow{D E}+\overrightarrow{E C})-|\overrightarrow{A E}| \cdot|\overrightarrow{C E}| \\
+& =\overrightarrow{D E} \cdot \overrightarrow{D E}-|\overrightarrow{A E}| \cdot|\overrightarrow{C E}|=0 .
+\end{aligned}
+$$
+故 $A F \perp B E$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 如图(<FilePath:./figures/fig-c5i3.png>), $\triangle A B C$ 中, $O$ 为外心, 三条高 $A D 、 B E 、 C F$ 交于点 $H$, 直线 $D E$ 和 $A B$ 交于点 $M, F D$ 和 $A C$ 交于点 $N$. 求证: $O H \perp M N$.
+%%<SOLUTION>%%
+分析:与解设点 $H^{\prime}$ 满足 $\overrightarrow{O H^{\prime}}=\overrightarrow{O A}+\overrightarrow{O B}+\overrightarrow{O C}$, 则
+$$
+\begin{aligned}
+\overrightarrow{A H^{\prime}} \cdot \overrightarrow{B C} & =\left(\overrightarrow{O H^{\prime}}-\overrightarrow{O A}\right) \cdot(\overrightarrow{O C}-\overrightarrow{O B}) \\
+& =\overrightarrow{O C}^2-\overrightarrow{O B}^2=0,
+\end{aligned}
+$$
+故 $A H^{\prime} \perp B C$.
+同理 $B H^{\prime} \perp A C$, 于是 $H^{\prime}$ 与 $H$ 重合, 即 $\overrightarrow{O H}=\overrightarrow{O A}+\overrightarrow{O B}+\overrightarrow{O C}$.
+由 $\angle D E C=\angle A B C, \angle O C E=\frac{\pi}{2}-\angle A B C$ 知: $O C \perp D E$, 同理, $O B \perp D F$. 故
+$$
+\begin{aligned}
+\overrightarrow{O H} \cdot \overrightarrow{A M} & =(\overrightarrow{O B}+\overrightarrow{O A}) \cdot \overrightarrow{A M}+\overrightarrow{O C} \cdot \overrightarrow{A M}=\overrightarrow{O C} \cdot \overrightarrow{A M} \\
+& =\overrightarrow{O C} \cdot(\overrightarrow{A E}+\overrightarrow{E M})=\overrightarrow{O C} \cdot \overrightarrow{A E}+\overrightarrow{O C} \cdot \overrightarrow{E M} \\
+& =\overrightarrow{O C} \cdot \overrightarrow{A E}=|\overrightarrow{O C}| \cdot|\overrightarrow{A E}| \cdot \cos \left(90^{\circ}-B\right) \\
+& =R \cdot|\overrightarrow{A B}| \cos A \sin B=2 R^2 \cdot \cos A \sin B \sin C
+\end{aligned}
+$$
+同理 $\overrightarrow{O H} \cdot \overrightarrow{A N}=2 R^2 \cdot \cos A \sin B \sin C$, 所以
+$$
+\overrightarrow{O H} \cdot \overrightarrow{M N}=\overrightarrow{O H} \cdot(\overrightarrow{A N}-\overrightarrow{A M})=\overrightarrow{O H} \cdot \overrightarrow{A N}-\overrightarrow{O H} \cdot \overrightarrow{A M}=0
+$$
+故 $O H \perp M N$, 证毕.
+%%<REMARK>%%
+注:以上两例是向量法解平面几何问题的范例, 在第九章中还会有更多的介绍.
+%%PROBLEM_END%%
+
+

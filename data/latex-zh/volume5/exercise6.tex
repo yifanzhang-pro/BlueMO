@@ -1,0 +1,205 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $x_1, x_2, \cdots, x_n$ 都是正实数,求证:
+$$
+\begin{aligned}
+& \frac{1}{x_1}+\frac{1}{x_2}+\cdots+\frac{1}{x_n} \\
+\geqslant & 2\left(\frac{1}{x_1+x_2}+\frac{1}{x_2+x_3}+\cdots+\frac{1}{x_{n-1}+x_n}+\frac{1}{x_n+x_1}\right) .
+\end{aligned}
+$$
+%%<SOLUTION>%%
+不难证明: $\frac{1}{x_i}+\frac{1}{x_{i+1}} \geqslant \frac{4}{x_i+x_{i+1}}\left(i=1,2, \cdots, n, x_{n+1}=x_1\right)$, 把 $n$ 个式子相加即得原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $a, b, c \in \mathbf{R}^{+}$, 求证:
+$$
+\frac{1}{a^3+b^3+a b c}+\frac{1}{b^3+c^3+a b c}+\frac{1}{c^3+a^3+a b c} \leqslant \frac{1}{a b c} .
+$$
+%%<SOLUTION>%%
+由于 $a^3+b^3 \geqslant a^2 b+b^2 a$, 故 $\frac{1}{a^3+b^3+a b c} \leqslant \frac{1}{a b(a+b+c)}$. 同理 $\frac{1}{b^3+c^3+a b c} \leqslant \frac{1}{b c(a+b+c)} ; \frac{1}{c^3+a^3+a b c} \leqslant \frac{1}{c a(a+b+c)}$. 三式相加即得原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 已知 $0 \leqslant x, y, z \leqslant 1$, 解方程:
+$$
+\frac{x}{1+y+z x}+\frac{y}{1+z+x y}+\frac{z}{1+x+y z}=\frac{3}{x+y+z} .
+$$
+%%<SOLUTION>%%
+不难证明: $\frac{x}{1+y+z x} \leqslant \frac{1}{x+y+z}, \frac{y}{1+z+x y} \leqslant \frac{1}{x+y+z}$,
+$\frac{z}{1+x+y z} \leqslant \frac{1}{x+y+z}$. 因此不等式等号成立, 则易得 $x=y=z=1$.
+%%<REMARK>%%
+注:: 本题也可以这样解: 先证明 $\frac{x}{1+y+z x} \leqslant \frac{x}{x+y+z}$ 等, 这样就可以得到 $x+y+z \geqslant 3$, 因而 $x=y=z=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $a, b, c \in \mathbf{R}^{+}$, 且 $a b c=1$. 求证:
+$$
+\sum_{c y c} \frac{a b}{a^5+b^5+a b} \leqslant 1
+$$
+并问等号何时成立?
+%%<SOLUTION>%%
+由于 $a^5+b^5-a^2 b^2(a+b)=\left(a^2-b^2\right)\left(a^3-b^3\right) \geqslant 0$, 故 $a^5+b^5 \geqslant a^2 b^2(a+b)$, 于是
+$$
+\begin{aligned}
+\frac{a b}{a^5+b^5+a b} & =\frac{a b \cdot a b c}{a^5+b^5+a b \cdot a b c}==\frac{a^2 b^2 c}{a^5+b^5+a^2 b^2 c} \\
+& \leqslant \frac{a^2 b^2 c}{a^2 b^2(a+b)+a^2 b^2 c}=\frac{c}{a+b+c} .
+\end{aligned}
+$$
+同理, 有 $\frac{b c}{b^5+c^5+b c} \leqslant \frac{a}{a+b+c}, \frac{c a}{c^5+a^5+c a} \leqslant \frac{b}{a+b+c}$.
+三式相加即得不等式成立, 且等号当 $a=b=c=1$ 时取到.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 给定 $\alpha, \beta>0, x, y, z \in \mathbf{R}^{+}, x y z=2004$. 求 $u$ 的最大值, 其中, $u= \sum_{c y c} \frac{1}{2004^{\alpha+\beta}+x^\alpha\left(y^{2 \alpha+3 \beta}+z^{2 \alpha+3 \beta}\right)}$.
+%%<SOLUTION>%%
+首先, 不难证明 $y^{2 \alpha+3 \beta}+z^{2 \alpha+3 \beta} \geqslant y^{\alpha+2 \beta} z^{\alpha+\beta}+y^{\alpha+\beta} z^{2 \alpha+\beta}$.
+又由于 $2004^{\alpha+\beta}+x^\alpha\left(y^{2 \alpha+3 \beta}+z^{2 \alpha+3 \beta}\right)=x^\alpha\left[x^\beta y^{\alpha+\beta} z^{\alpha+\beta}+y^{2 \alpha+3 \beta}+z^{2 \alpha+3 \beta}\right] \geqslant x^\alpha\left[x^\beta y^{\alpha+\beta} z^{\alpha+\beta}+y^{\alpha+2 \beta} z^{\alpha+\beta}+y^{\alpha+\beta} z^{\alpha+2 \beta}\right]=x^\alpha y^{\alpha+\beta} z^{\alpha+\beta}\left(x^\beta+y^\beta+z^\beta\right)$.
+因此, $u \leqslant \frac{x^\beta}{2004^{\alpha+\beta}\left(x^\beta+y^\beta+z^\beta\right)}+\frac{y^\beta}{2004^{\alpha+\beta}\left(x^\beta+y^\beta+z^\beta\right)}$
+$$
++\frac{z^\beta}{2004^{\alpha+\beta}} \frac{1}{\left(x^\beta+y^\beta+z^\beta\right)}=\frac{1}{2004^{\alpha+\beta}},
+$$
+故 $u_{\max }=2004^{-(\alpha+\beta)}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $x_1, x_2, \cdots, x_n$ 都是正数, 且 $x_1+x_2+\cdots+x_n=a$. 对 $m, n \in \mathbf{Z}^{+}, m$, $n>1$, 求证: $\frac{x_1^m}{a-x_1}+\frac{x_2^m}{a-x_2}+\cdots+\frac{x_n^m}{a-x_n} \geqslant \frac{a^{m-1}}{(n-1) n^{m-2}}$.
+%%<SOLUTION>%%
+由平均不等式, $\frac{x_i^m}{a-x_i}+\frac{\left(a-x_i\right) a^{m-2}}{(n-1)^2 n^{m-2}}+\underbrace{\frac{a^{m-1}}{(n-1) n^{m-1}}+\cdots+\frac{a^{m-1}}{(n-1) n^{m-1}}}_{m-2 \uparrow} \geqslant$
+$$
+m \cdot \frac{x_i \cdot a^{m-2}}{(n-1)} n^{n-2} \text {. }
+$$
+故 $\sum_{i=1}^n \frac{x_i^m}{a-x_i} \geqslant \sum_{i=1}^n\left[\frac{m x_i a^{m-2}}{(n-1) n^{m-2}}-\frac{\left(a-x_i\right) a^{m-2}}{(n-1)^2 n^{m-2}}-\frac{(m-2) a^{m-1}}{(n-1) n^{m-1}}\right]= \frac{a^{m-1}}{(n-1) n^{m-2}}$.
+%%<REMARK>%%
+注:: 本题也可利用 Cauchy 不等式及幕平均不等式加以解决.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 已知 $a, b, c \in \mathbf{R}^{+}$, 求证:
+(1) $\sqrt[3]{\frac{a}{b+c}}+\sqrt[3]{\frac{b}{c+a}}+\sqrt[3]{\frac{c}{a+b}}>\frac{3}{2}$;
+(2) $\sqrt[3]{\frac{a^2}{(b+c)^2}}+\sqrt[3]{\frac{b^2}{(c+a)^2}}+\sqrt[3]{\frac{c^2}{(a+b)^2}} \geqslant \frac{3}{\sqrt[3]{4}}$.
+%%<SOLUTION>%%
+(1) $\sqrt[3]{\frac{a}{b+c}}=\frac{a}{\sqrt[3]{a \cdot a \cdot(b+c)}} \geqslant \frac{3 a}{2 a+b+c}>\frac{3 a}{2 a+2 b+2 c}$,
+同理, 有 $\sqrt[3]{\frac{b}{a+c}}>\frac{3 b}{2 a+2 b+2 c} ; \sqrt[3]{\frac{c}{a+b}}>\frac{3 c}{2 a+2 b+2 c}$.
+三式相加即得原不等式成立.
+(2) $\sqrt[3]{\frac{a^2}{(b+c)^2}}=-\frac{\sqrt[3]{2} \cdot a}{\sqrt[3]{2 a(b+c)(b+c)}} \geqslant \frac{3 \sqrt[3]{2} a}{2 a+2 b+2 c}$. 同理, 有
+$$
+\sqrt[3]{\frac{b^2}{(a+c)^2}} \geqslant \frac{3 \sqrt[3]{2} b}{2 a+2 b+2 c} ; \sqrt[3]{\frac{c^2}{(a+b)^2}} \geqslant \frac{3 \sqrt[3]{2} c}{2 a+2 b+2 c} .
+$$
+三式相加, 原不等式成立 (注意等号是可以取到的).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设正整数 $n \geqslant 2$, 已知 $n$ 个正数 $v_1, v_2, \cdots, v_n$ 满足下列两个条件:
+(1) $v_1+v_2+\cdots+v_n=1$;
+(2) $v_1 \leqslant v_2 \leqslant \cdots \leqslant v_n \leqslant 2 v_1$.
+求 $v_1^2+v_2^2+\cdots+v_n^2$ 的最大值.
+%%<SOLUTION>%%
+可以把条件推广为: $v_1+v_2+\cdots+v_n=1, v_1 \leqslant v_2 \leqslant \cdots \leqslant v_n \leqslant r v_1$.
+下面证明: $v_1^2+v_2^2+\cdots+v_n^2 \leqslant \frac{(r+1)^2}{4 m}$, 其中 $r>1, r \in \mathbf{R}^{+}$.
+对于任意 $j \in \mathbf{Z}^{+}, 1 \leqslant j \leqslant n$, 由条件, 有 $\left(v_j-v_1\right)\left(r v_1-v_j\right) \geqslant 0$, 故 $r v_1 v_j-r v_1^2-v_j^2+v_1 v_j \geqslant 0$.
+上式关于 $j$ 从 1 到 $n$ 求和, 可得 $\sum_{j=1}^n v_j^2 \leqslant(r+1) v_1-m v_1^2= -m\left(v_1-\frac{r+1}{2 m}\right)^2+\frac{(r+1)^2}{4 m} \leqslant \frac{(r+1)^2}{4 m}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 已知 $a>1, b>1, c>1$, 求证:
+(1) $\frac{a^5}{b^2-1}+\frac{b^5}{c^2-1}+\frac{c^5}{a^2-1} \geqslant \frac{26}{6} \sqrt{15}$;
+(2) $\frac{a^5}{b^3-1}+\frac{b^5}{c^3-1}+\frac{c^5}{a^3-1} \geqslant \frac{5}{2} \sqrt[3]{50}$.
+%%<SOLUTION>%%
+(1) 利用平均不等式,有
+$$
+\begin{gathered}
+\quad \frac{a^5}{b^2-1}+\frac{25(5+\sqrt{15})}{12}(b-1)+\frac{25(5-\sqrt{15})}{12}(b+1)+\frac{25}{18} \sqrt{15}+ \\
+\frac{25}{18} \sqrt{15} \geqslant \frac{125}{6} a, \text { 故 } \frac{a^5}{b^2-1} \geqslant \frac{125}{6}(a-b)+\frac{25}{18} \sqrt{15} .
+\end{gathered}
+$$
+同理, $\frac{b^5}{c^2-1} \geqslant \frac{125}{6}(b-c)+\frac{25}{18} \sqrt{15} ; \frac{c^5}{a^2-1} \geqslant \frac{125}{6}(c-a)+\frac{25}{18} \sqrt{15}$ 相加即得原不等式成立.
+(2) 由于 $\left(b^3-1\right)\left(b^3-1\right)\left(b^3-1\right) \times \frac{3}{2} \times \frac{3}{2} \leqslant \frac{3^5 \cdot b^{15}}{5^5}$, 故 $b^3-1 \leqslant\frac{3 \cdot \sqrt[3]{20} \cdot b^5}{25}$, 则 $\frac{a^5}{b^3-1} \geqslant \frac{5 \cdot \sqrt[3]{50} \cdot a^5}{6 b^5}$. 同理可得 $\frac{b^5}{c^3-1} \geqslant \frac{5 \cdot \sqrt[3]{50} \cdot b^5}{6 c^5}$; $\frac{c^5}{a^3-1} \geqslant \frac{5 \cdot \sqrt[3]{50} \cdot c^5}{6 a^5}$. 因此, 不等式左端 $\geqslant \frac{5 \sqrt[3]{50}}{6}\left(\frac{a^5}{b^5}+\frac{b^5}{c^5}+\frac{c^5}{a^5}\right) \geqslant \frac{5}{2} \cdot \sqrt[3]{50}$.
+%%<REMARK>%%
+注::第(1) 小题也可以采用与第 (2) 小题类似的方法.
+由于 $\left(b^2-1\right)\left(b^2-1\right) \cdot \frac{2}{3} \cdot \frac{2}{3} \cdot \frac{2}{3} \leqslant\left(\frac{2 b^2}{5}\right)^5$, 有 $b^2-1 \leqslant \frac{6 \sqrt{3} b^5}{25 \sqrt{5}}$, 则 $\frac{a^5}{b^2-1} \geqslant \frac{25 \sqrt{5} a^5}{6 \sqrt{3} b^5}$, 以此不难证得原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. (反向 Cauchy 不等式-Polya-Szego 不等式)
+设 $0<m_1 \leqslant a_i \leqslant M_1, 0<m_2 \leqslant b_i \leqslant M_2, i=1,2, \cdots, n$, 则有:
+$$
+\frac{\left(\sum_{i=1}^n a_i^2\right)\left(\sum_{i=1}^n b_i^2\right)}{\left(\sum_{i=1}^n a_i b_i\right)^2} \leqslant \frac{1}{4} \cdot\left(\sqrt{\frac{M_1 M_2}{m_1 m_2}}+\sqrt{\frac{m_1 m_2}{M_1 M_2}}\right)^2 .
+$$
+%%<SOLUTION>%%
+由已知条件, $\frac{m_2}{M_1} \leqslant \frac{b_i}{a_i} \leqslant \frac{M_2}{m_1}, \frac{m_2}{M_1} a_i \leqslant b_i \leqslant \frac{M_2}{m_1} a_i$, 则
+$$
+\left(b_i-\frac{M_2}{m_1} a_i\right)\left(b_i-\frac{m_2}{M_1} a_i\right) \leqslant 0 .
+$$
+因此 $b_i^2-\left(\frac{M_2}{m_1}+\frac{m_2}{M_1}\right) a_i b_i+\frac{M_2 m_2}{M_1 m_1} a_i^2 \leqslant 0$.
+由平均值不等式, $2\left(\sum b_i^2 \cdot \frac{M_2 m_2}{M_1 m_1} \sum a_i^2\right)^{\frac{1}{2}} \leqslant \sum b_i^2+\frac{M_2 m_2}{M_1 m_1} \sum a_i^2$, 于是 $2\left(\sum b_i^2 \cdot \frac{M_2 m_2}{M_1 m_1} \cdot \sum a_i^2\right)^{\frac{1}{2}} \leqslant\left(\frac{M_2}{m_1}+\frac{m_2}{M_1}\right) \sum a_i b_i$, 故 $\frac{\sum a_i^2 \sum b_i^2}{\left(\sum a_i b_i\right)^2} \leqslant \frac{1}{4}\left(\frac{\frac{M_2}{m_1}+\frac{m_2}{M_1}}{M_2 m_2 / M_1 m_1}\right)^2=\frac{1}{4} \cdot\left(\sqrt{\frac{M_1 M_2}{m_1 m_2}}+\sqrt{\frac{m_1 m_2}{M_1 M_2}}\right)^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 已知 $\sum_{i=1}^n x_i=1$, 求证: $\sum_{i=1}^n \sqrt{\frac{1}{x_i}-1} \geqslant(n-1) \cdot \sum_{i=1}^n \frac{1}{\sqrt{\frac{1}{x_i}-1}}$.
+%%<SOLUTION>%%
+证明:局部不等式: $x_i \cdot \sqrt{\frac{1-x_j}{x_j}}+x_j \cdot \sqrt{\frac{1-x_i}{x_i}} \geqslant\left(1-x_i\right) \sqrt{\frac{x_j}{1-x_j}}+ \left(1-x_j\right) \sqrt{\frac{x_i}{1-x_i}}$. 进而易证原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 设 $n$ 个集合 $S_1, S_2, \cdots, S_n$ 的元素由非负整数构成, $x_i$ 为 $S_i$ 的所有元素之和.
+求证: 若对某个自然数 $k, 1<k<n$, 有
+$$
+\sum_{i=1}^n x_i \leqslant \frac{1}{k+1} \cdot\left[k \frac{n(n+1)(2 n+1)}{6}-(k+1)^2 \frac{n(n+1)}{2}\right],
+$$
+则存在下标 $i 、 j 、 t 、 l$ (至少有三个互不相同), 使得 $x_i+x_j=x_t+x_l$.
+%%<SOLUTION>%%
+用反证法, 若对任意 $i, j, t, l \in\{1,2, \cdots, n\}$ (至少三个互不相同) 均有 $x_i-x_t \neq x_l-x_j$. 下证: 对任意 $k, 1<k<n$, 有
+$$
+\sum_{i=1}^n x_i>\frac{1}{k+1} \cdot\left[k \cdot \frac{n(n+1)(2 n+1)}{6}-(k+1)^2 \frac{n(n+1)}{2}\right] .
+$$
+不妨设 $x_1 \leqslant x_2 \leqslant \cdots \leqslant x_n$.
+由假设, $x_j-x_i$ 互不相等 $(1 \leqslant i<j \leqslant m)$, 而且 $x_i \geqslant 0$, 因此,
+$$
+\begin{aligned}
+M & =\sum_{i=1}^{m-1}\left(x_{i+1}-x_i\right)+\sum_{i=1}^{m-2}\left(x_{i+2}-x_i\right)+\cdots+\sum_{i=1}^{m-k}\left(x_{i+k}-x_i\right) \\
+& \geqslant 0+1+2+3+\cdots+\left[\frac{(2 m-1-k) k}{2}-1\right] \\
+& >\frac{1}{2} m^2 k^2-\frac{1}{2} k[k(k+1)+1] m .
+\end{aligned}
+$$
+又由于 $M=\left(x_m-x_1\right)+\left(x_m+x_{m-1}-x_2-x_1\right)+\cdots+\left(x_m+x_{m-1}+\cdots+\right. \left.x_{m-k+1}-x_k-x_{k-1}-\cdots-x_1\right) \leqslant k x_m+(k-1) x_{m-1}+\cdots+x_{m-k-1} \leqslant k x_m+ (k-1) x_m+\cdots+x_m=\frac{k(k+1)}{2} x_m$.
+由此即得 $x_m>\frac{k}{k+1} m^2-\frac{k(k+1)+1}{k+1} m \geqslant \frac{k}{k+1} m^2-(k+1) m(k< m \leqslant n)$.
+当 $1 \leqslant m \leqslant k$ 时, 上式显然也成立.
+于是, $\sum_{i=1}^n x_i>\frac{k}{k+1} \sum_{i=1}^n i^2-(k+1) \sum_{i=1}^n i=\frac{1}{k+1} \cdot\left[k \frac{n(n+1)(2 n+1)}{6}-\right. \left.(k+1)^2 \frac{n(n+1)}{2}\right]$ 对一切 $1<k<n$ 成立.
+%%PROBLEM_END%%
+
+

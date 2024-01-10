@@ -1,0 +1,69 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $n$ 为整数,证明: $(12 n+5,9 n+4)=1$.
+%%<SOLUTION>%%
+我们有 $4(9 n+4)-3(12 n+5)=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $m 、 n$ 都是正整数, $m$ 是奇数, 证明: $\left(2^m-1,2^n+1\right)=1$.
+%%<SOLUTION>%%
+设 $d=\left(2^m-1,2^n+1\right)$. 则 $2^m-1=d u, 2^n+1=d v$, 这里 $u$ 、 $v$ 为整数.
+易知 $(d u+1)^n=(d v-1)^m$, 将两端展开 (注意 $m$ 为奇数), 得到 $d A+ 1=d B-1$ ( $A 、 B$ 为某两个整数), 由此可知 $d \mid 2$, 即 $d=1$ 或 2 . 但显然 $d$ 只能是 1 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $(a, b)==1$, 证明: $\left(a^2+b^2, a b\right)=1$.
+%%<SOLUTION>%%
+因 $(a, b)=1$, 故 $\left(a^2, b\right)=1$, 从而 $\left(a^2+b^2, b\right)=1$. 同理 $\left(a^2+b^2\right.$, $a)=1$. 因此 $\left(a^2+b^2, a b\right)=1$ (用本单元的 $\left.(6)\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 若一个有理数的 $k$ 次幂是整数 $(k \geqslant 1)$, 则这有理数必是整数.
+更一般地, 证明:一个首项系数为 \pm 1 的整系数多项式的有理数根, 必定是一个整数.
+%%<SOLUTION>%%
+设既约的有理数 $\frac{p}{q}$ 是 (首项系数为 1 ) 的整系数多项式 $f(x)=x^n+ a_1 x^{n-1}+\cdots+a_{n-1} x+a_n$ 的一个根.
+由 $f\left(\frac{p}{q}\right)=0$ 易得
+$$
+p^n+a_1 p^{n-1} q+\cdots+a_{n-1} p q^{n-1}+a_n q^n=0 .
+$$
+由于 $a_1 p^{n-1} q, \cdots, a_{n-1} p q^{n-1}, a_n q^n$ 均被 $q$ 整除,故 $q \mid p^n$. 但 $(p, q)=1$, 从而 $\left(q, p^n\right)=1$. 于是必须 $q= \pm 1$, 即有理数 $\frac{p}{q}$ 为一个整数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $m 、 n 、 k$ 都是正整数,满足 $[m+k, m]=[n+k, n]$, 证明: $m=n$.
+%%<SOLUTION>%%
+由本单元 (10) 可知,已知条件即为
+$$
+\frac{(m+k) m}{(m+k, m)}=\frac{(n+k) n}{(n+k, n)} \text {. }
+$$
+由于 $(m+k, m)=(m, k),(n+k, n)=(n, k)$, 故由上式得
+$$
+\frac{(m+k) m}{(m, k)}=\frac{(n+k) n}{(n, k)} . \label{eq1}
+$$
+我们设 $(m, k)=d_1$, 则 $m=m_1 d_1, k=k_1 d_1$, 其中 $\left(m_1, k_1\right)=1$.
+再设 $(n, k)=d_2$, 则 $n=n_1 d_2, k=k_2 d_2$, 其中 $\left(n_1, k_2\right)=1$. 于是等式\ref{eq1}化为
+$$
+\left(m_1+k_1\right) m_1 d_1=\left(n_1+k_2\right) n_1 d_2 .
+$$
+将上式两边同乘 $k_1$, 并利用 $k_1 d_1=k_2 d_2(=k)$, 可得出
+$$
+\left(m_1+k_1\right) m_1 k_2=\left(n_1+k_2\right) n_1 k_1 .
+$$
+上式左边是 $k_2$ 的倍数, 故 $k_2$ 也整除右边, 即 $k_2 \mid k_1 n_1^2$. 但 $\left(k_2, n_1\right)=1$, 故 $\left(k_2\right.$, $\left.n_1^2\right)=1$, 从而有 $k_2 \mid k_1$. 同样可证明 $k_1 \mid k_2$. 综合起来得到 $k_1=k_2$, 即 $(m, k)= (n, k)$. 故由 (1) 知 $(m+k) m=(n+k) n$, 由此易知 $m=n$.
+%%PROBLEM_END%%
+
+

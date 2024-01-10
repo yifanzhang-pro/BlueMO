@@ -1,0 +1,152 @@
+
+%%TEXT_BEGIN%%
+本书中所涉及的数都是整数,所用的字母除特别申明外也都表示整数.
+设 $a 、 b$ 是给定的数, $b \neq 0$. 若存在整数 $c$, 使得 $a=b c$, 则称 $b$ 整除 $a$, 记作 $b \mid a$, 并称 $b$ 是 $a$ 的一个约数 (或因子), 而称 $a$ 为 $b$ 的一个倍数.
+如果不存在上述的整数 $c$, 则称 $b$ 不能整除 $a$, 记作 $b \nmid a$.
+由整除的定义,容易推出整除的几个简单性质(证明请读者自己完成):
+(1) 若 $b \mid c$, 且 $c \mid a$, 则 $b \mid a$, 即整除性质具有传递性.
+(2) 若 $b \mid a$, 且 $b \mid c$, 则 $b \mid(a \pm c)$, 即为某一整数的倍数的整数之集关于加、减运算封闭.
+反复应用这一性质, 易知: 若 $b \mid a$ 及 $b \mid c$, 则对任意整数 $u 、 v$ 有 $b \mid(a u+ c v)$. 更一般地,若 $a_1, a_2, \cdots, a_n$ 都是 $b$ 的倍数,则 $b \mid\left(a_1+a_2+\cdots+a_n\right)$.
+(3) 若 $b \mid a$, 则或者 $a=0$, 或者 $|a| \geqslant|b|$. 因此, 若 $b \mid a$ 且 $a \mid b$, 则 $|a|=|b|$.
+对任意两个整数 $a 、 b(b>0), a$ 当然未必被 $b$ 整除,但我们有下面的结论一一带余除法, 这是初等数论中最为基本的一个结果.
+(4) (带余除法) 设 $a 、 b$ 为整数, $b>0$, 则存在整数 $q$ 和 $r$, 使得
+$$
+a=b q+r, \text { 其中 } 0 \leqslant r<b,
+$$
+并且 $q$ 和 $r$ 由上述条件唯一确定.
+整数 $q$ 称为 $a$ 被 $b$ 除得的 (不完全) 商, 数 $r$ 称为 $a$ 被 $b$ 除得的余数.
+注意, $r$ 共有 $b$ 种可能的取值: $0,1, \cdots, b-1$. 若 $r=0$, 即为前面说的 $a$ 被 $b$ 整除的情形.
+易知, 带余除法中的商 $q$ 实际上为 $\left[\frac{a}{b}\right]$ (不超过 $\frac{a}{b}$ 的最大整数), 而带余除法的核心是关于余数 $r$ 的不等式: $0 \leqslant r<b$, 我们在后面将看到这一点.
+证明 $b \mid a$ 的基本手法是将 $a$ 分解为 $b$ 与一个整数之积.
+在较初级的问题中, 这种数的分解常通过在一些代数式的分解中取特殊值而产生.
+下面两个分解式在这类论证中应用很多.
+(5) 若 $n$, 是正整数,则
+$$
+x^n-y^n=(x-y)\left(x^{n-1}+x^{n-2} y+\cdots+x y^{n-2}+y^{n-1}\right) .
+$$
+(6)若 $n$ 是正奇数,则 (在上式中用 $-y$ 代换 $y$ )
+$$
+x^n+y^n=(x+y)\left(x^{n-1}-x^{n-2} y+\cdots-x y^{n-2}+y^{n-1}\right) .
+$$
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 证明: $1 \underbrace{0 \cdots 0}_{200 \text { 个0 }} 1$ 被 1001 整除.
+%%<SOLUTION>%%
+证明:我们有
+$$
+\begin{aligned}
+\underbrace{10 \cdots 01}_{200 \text { 个 } 0} & =10^{201}+1=\left(10^3\right)^{67}+1 \\
+& =\left(10^3+1\right)\left[\left(10^3\right)^{66}-\left(10^3\right)^{65}+\cdots-10^3+1\right],
+\end{aligned}
+$$
+所以, $10^3+1(=1001)$ 整除 $1 \underbrace{0 \cdots 0}_{200 \text { 个 } 0} 1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $m>n \geqslant 0$, 证明 : $\left(2^{2^n}+1\right) \mid\left(2^{2^m}-1\right)$.
+%%<SOLUTION>%%
+证明:取 $x=2^{2^{n+1}}, y=1$, 并以 $2^{m-n-1}$ 代替那里的 $n$, 得出
+$$
+2^{2^m}-1=\left(2^{2^{n+1}}-1\right)\left[\left(2^{2^{n+1}}\right)^{2^{m-n-1}-1}+\cdots+2^{2^{n+1}}+1\right],
+$$
+故
+$$
+\left(2^{2^{n+1}}-1\right) \mid\left(2^{2^m}-1\right) \text {. }
+$$
+又
+$$
+\begin{gathered}
+2^{2^{n+1}}-1=\left(2^{2^n}-1\right)\left(2^{2^n}+1\right), \\
+\left(2^{2^n}+1\right) \mid\left(2^{2^{n+1}}-1\right) .
+\end{gathered}
+$$
+从而于是由整除性质知 $\left(2^{2^n}+1\right) \mid\left(2^{2^m}-1\right)$.
+%%<REMARK>%%
+注:整除问题中,有时直接证明 $b \mid a$ 不易人手,我们可以尝试着选择适当的"中间量" $c$, 来证明 $b \mid c$ 及 $c \mid a$, 由此及整除性质(1), 便导出了结论.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 对正整数 $n$, 记 $S(n)$ 为 $n$ 的十进制表示中数码之和.
+证明: $9 \mid n$ 的充分必要条件是 $9 \mid S(n)$.
+%%<SOLUTION>%%
+证明:设 $n=a_k \times 10^k+\cdots+a_1 \times 10+a_0$ (这里 $0 \leqslant a_i \leqslant 9$, 且 $a_k \neq 0$ ), 则 $S(n)=a_0+a_1+\cdots+a_k$. 我们有
+$$
+n-S(n)=a_k\left(10^k-1\right)+\cdots+a_1(10-1) . \label{eq1}
+$$
+对 $1 \leqslant i \leqslant k$,  知 $9 \mid\left(10^i-1\right)$, 故\ref{eq1}式右端 $k$ 个加项中的每个都是 9 的倍数, 从而由整除性质 (2) 知, 它们的和也被 9 整除, 即 $9 \mid(n- S(n)$ ). 由此易推出结论的两个方面.
+%%<REMARK>%%
+注1 整除性质 (2) 提供了证明 $b \mid\left(a_1+a_2+\cdots+a_n\right)$ 的一种基本的想法,我们可尝试着证明更强的 (也往往是更易于证明的)命题:
+$b$ 整除每个 $a_i(i=1,2, \cdots, n)$.
+这一更强的命题当然并非一定成立, 即使在它不成立时, 上述想法仍有一种常常奏效的变通: 将和 $a_1+a_2+\cdots+a_n$ 适当地分组成为 $c_1+c_2+\cdots+c_k$,而 $b \mid c_i(i=1,2, \cdots, k)$. 读者将看到, 为了证明 $b \mid a$, 我们有时针对具体问题将 $a$ 表示为适当数之和,以应用上述想法论证.
+注2 例 3 的证明, 实际上给出了更强的结论: 对任意正整数 $n$, 数 $n$ 与 $S(n)$ 之差总是 9 的倍数.
+由此易知, $n$ 与 $S(n)$ 被 9 除得的余数相同 (这可表述为 $n$ 与 $S(n)$ 模 9 同余, 请看第 6 单元).
+注3 有些情形,我们能够由正整数十进制表示中的数码 (字) 的性质, 推断这整数能否被另一个整数整除, 这样的结论, 常称为 "整除的数字特征". 被 $2 、 5 、 10$ 整除的数的数字特征是显而易见的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $k \geqslant 1$ 是一个奇数, 证明: 对任意正整数 $n$, 数 $1^k+2^k+\cdots+n^k$ 不能被 $n+2$ 整除.
+%%<SOLUTION>%%
+证明:$n=1$ 时结论显然成立.
+设 $n \geqslant 2$, 记所说的和为 $A$, 则
+$$
+2 A=2+\left(2^k+n^k\right)+\left(3^k+(n-1)^k\right)+\cdots+\left(n^k+2^k\right) .
+$$
+因 $k$ 是正奇数, 故由分解式 (6) 可知, 对每个 $i \geqslant 2$, 数 $i^k+(n+2-i)^k$ 被 $i+(n+2-i)=n+2$ 整除, 故 $2 A$ 被 $n+2$ 除得的余数是 2 , 从而 $A$ 不可能被 $n+2$ 整除(注意 $n+2>2$ ).
+%%<REMARK>%%
+注:论证中我们应用了"配对法", 这是代数中变形和式的一种常用手法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $m 、 n$ 为正整数, $m>2$, 证明: $\left(2^m-1\right) \nmid\left(2^n+1\right)$.
+%%<SOLUTION>%%
+证明:首先, 当 $n \leqslant m$ 时, 易知结论成立.
+事实上, $m=n$ 时, 结论平凡; $n<m$ 时, 结果可由 $2^n+1 \leqslant 2^{m-1}+1<2^m-1$ 推出来(注意 $m>2$, 并参看整除性质 (3)).
+最后, $n>m$ 的情形可化为上述特殊情形: 由带余除法, $n=m q+r, 0 \leqslant r<m$, 而 $q>0$. 由于
+$$
+2^n+1=\left(2^{m q}-1\right) 2^r+2^r+1,
+$$
+由分解式 (5) 知 $\left(2^m-1\right) \mid\left(2^{m q}-1\right)$; 而 $0 \leqslant r<m$, 故由上面证明了的结论知 $\left(2^m-1\right) \nmid\left(2^r+1\right)$. (注意 $r=0$ 时,结论平凡.
+ 从而当 $n>m$ 时也有 $\left(2^m-1\right) \nmid\left(2^n+1\right)$. 这就证明了本题结论.
+我们顺便提一下,例 5 中的条件 $m>2$ 是必要的.
+因为当 $m=2$ 时, $2^m- 1=3$, 而由 (6) 知, 对于所有奇数 $n \geqslant 1$, 数 $2^n+1$ 均被 3 整除.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 任给 $n>1$, 证明: 有正整数 $a$, 使得 $a^a+1, a^{a^a}+1, \cdots$ 中所有数均被 $n$ 整除.
+%%<SOLUTION>%%
+解:我们注意, 若 $a$ 是奇数, 则 $a^a, a^{a^a}, \cdots$ 均是奇数, 从而由 (6) 知, $a^a+ 1, a^{a^a}+1=a^{\left(a^a\right)}+1, \cdots$ 均有因子 $a+1$. 因此取 $a=2 n-1$ 则符合问题中的要求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 任给 $n \geqslant 2$, 证明: 存在 $n$ 个互不相同的正整数,其中任意两个的和, 整除这 $n$ 个数的积.
+%%<SOLUTION>%%
+解:我们任取 $n$ 个互不相同的正整数 $a_1, \cdots, a_n$, 并选取一个 (正整数) 参数 $K$, 希望 $K a_1, \cdots, K a_n$ 的积 $K^n a_1 \cdots a_n$ 被任意两项的和 $K a_i+K a_j$ 整除 ( $1 \leqslant i, j \leqslant n, i \neq j)$. 由于 $n \geqslant 2$, 显然, 取
+$$
+K=\prod_{1 \leqslant i<j \leqslant n}\left(a_i+a_j\right)
+$$
+即符合要求 (注意 $K a_1, \cdots, K a_n$ 互不相同).
+%%PROBLEM_END%%
+
+

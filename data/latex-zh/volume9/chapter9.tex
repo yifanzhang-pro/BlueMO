@@ -1,0 +1,154 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+Tsintsifas 的不等式轨迹问题.
+欧氏几何中下面的结论是熟知的.
+如果 $A 、 B 、 C 、 D$ 是一个平面上的任意四点, 则 $A D \cdot B C 、 B D \cdot C A$ 和 $C D \cdot A B$ 是某一个三角形的三边长; 当 $A 、 B 、 C 、 D$ 四点共圆时, 这个三角形是退化的(在这种情况下,我们有著名的 Ptolemy 定理).
+这个结论的证明并不难, 用复数就更为简单.
+事实上,设 $A 、 B 、 C 、 D$ 对应的复数分别为 $z_1 、 z_2 、 z_3 、 z_4$, 用下面的恒等式
+$$
+\left(z_1-z_4\right)\left(z_2-z_3\right)+\left(\dot{z}_2-z_4\right)\left(z_3-z_1\right)+\left(z_3-z_4\right)\left(z_1-z_2\right)=0,
+$$
+便可立得结论.
+Tsintsifas 在 1983 年的 Crux. Math. (9) 上提出问题:
+问题设 $T$ 是一个给定的 $\triangle A B C, P$ 是 $T$ 所在平面上的一点,现记以 $a \cdot P A 、 b \cdot P B 、 c \cdot P C$ 为边的三角形为 $T_0$ (可能是退化的). 现设 $R 、 R_0$ 分别是 $T 、 T_0$ 的外接圆半径,求使得不等式
+$$
+P A \cdot P B \cdot P C \leqslant R R_0
+$$
+成立的点 $P$ 的轨迹.
+%%<SOLUTION>%%
+下面的解法 1 关键是应用关于一点 $P$ 的垂足三角形的面积公式.
+解法 1 先证引理.
+引理设 $P$ 为 $\triangle A_1 A_2 A_3$ 所在平面上一点, 则 $P$ 关于 $\triangle A_1 A_2 A_3$ 的垂足三角形的有向面积为
+$$
+F=\frac{R^2-\overline{O P^2}}{4 R^2} S_{\triangle A_1 A_2 A_3},
+$$
+其中 $O$ 为 $\triangle A_1 A_2 A_3$ 的外心.
+证明如图(<FilePath:./figures/fig-c9i1.png>), 设垂足三角形为 $\triangle P_1 P_2 P_3$, 又设 $A_2 P$ 交 $\triangle A_1 A_2 A_3$ 的外接圆于 $B_2$, 则
+$$
+\begin{aligned}
+\angle A_2 P A_3 & =\angle P_2 P_1 P_3+\angle A_2 A_1 A_3 \\
+& =\angle A_2 B_2 A_3+\angle B_2 A_3 P,
+\end{aligned}
+$$
+注意, 这里的 $\angle$ 表示有向角.
+因此
+$$
+\angle P_2 P_1 P_3=\angle B_2 A_3 P .
+$$
+这时
+$$
+\begin{aligned}
+F & =\frac{1}{2} \overline{P_1 P_2} \cdot \overline{P_1 P_3} \sin \angle P_2 P_1 P_3 \\
+& =\frac{1}{2} \overline{P_1 P_2} \cdot \overline{P_1 P_3} \sin \angle B_2 A_3 P \\
+& =\frac{1}{2} \overline{P A_3} \sin \alpha_3 \overline{P A_2} \sin \alpha_2 \sin \angle B_2 A_3 P,
+\end{aligned}
+$$
+又
+$$
+\frac{\sin \angle B_2 A_3 P}{\sin \angle A_2 B_2 A_3}=\frac{\overline{P B_2}}{\overline{P A_3}},
+$$
+因此
+$$
+\begin{aligned}
+F & =\frac{1}{2} \overline{P A_2} \cdot \overline{P B_2} \sin \angle A_2 B_2 A_3 \sin \alpha_2 \sin \alpha_3 \\
+& =\frac{1}{2}\left(R^2-\overline{O P^2}\right) \sin \alpha_1 \sin \alpha_2 \sin \alpha_3 \\
+& =\frac{R^2-\overline{O P}^2}{4 R^2} S_{\triangle A_1 A_2 A_3},
+\end{aligned}
+$$
+引理得证.
+下面回到原题.
+设 $P A=a^{\prime}, P B=b^{\prime}, P C=c^{\prime}$, 则
+$$
+R=\frac{a b c}{4 S_T}, R_0=\frac{a b c a^{\prime} b^{\prime} c^{\prime}}{4 S_{T_0}},
+$$
+因此
+$$
+R R_0 \geqslant P A \cdot P B \cdot P C
+$$
+等价于
+$$
+\begin{aligned}
+& \frac{(a b c)^2}{16 S_T S_{T_0}} \geqslant 1, \\
+& S_{T_0} \leqslant \frac{(a b c)^2}{16 S_T} . 
+\end{aligned} \label{eq1}
+$$
+如图(<FilePath:./figures/fig-c9i2.png>), 设 $P$ 在 $B C 、 C A 、 A B$ 上的射影分别为 $A^{\prime} 、 B^{\prime} 、 C^{\prime}$, 则
+$$
+B^{\prime} C^{\prime}=P A \sin A=\frac{a \cdot P A}{2 R},
+$$
+同理
+$$
+C^{\prime} A^{\prime}=\frac{b \cdot P B}{2 R}, A^{\prime} B^{\prime}=\frac{c \cdot P C}{2 R},
+$$
+故 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 与 $T_0$ 相似且相似比为 $2 R$. 因此由式\ref{eq1}知
+$$
+S_{\triangle A^{\prime} B^{\prime} C^{\prime}}=\frac{1}{4 R^2} S_{T_0} \leqslant \frac{1}{4 R^2} \cdot \frac{a^2 b^2 c^2}{16 S_T}, \label{eq2}
+$$
+再应用引理得
+$$
+S_{\triangle A^{\prime} B^{\prime} C^{\prime}}=\frac{\left|R^2-\overline{O P^2}\right|}{4 R^2} S_T . \label{eq3}
+$$
+因此由从式\ref{eq2}、\ref{eq3}可得
+$$
+\frac{\left\lfloor R^2-\overline{O P}^2 \mid\right.}{4 R^2} S_T \leqslant \frac{1}{4 R^2} \cdot \frac{a^2 b^2 c^2}{16 S_T} .
+$$
+这等价于
+$$
+\left|R^2-\overline{O P}^2\right| \leqslant \frac{a^2 b^2 c^2}{16 S_T^2}=R^2
+$$
+故
+$$
+|\overline{O P}| \leqslant \sqrt{2} R .
+$$
+这说明 $P$ 的轨迹是一个以 $T$ 的外心 $O$ 为圆心, $\sqrt{2} R$ 为半径的圆及内部.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+Tsintsifas 的不等式轨迹问题.
+欧氏几何中下面的结论是熟知的.
+如果 $A 、 B 、 C 、 D$ 是一个平面上的任意四点, 则 $A D \cdot B C 、 B D \cdot C A$ 和 $C D \cdot A B$ 是某一个三角形的三边长; 当 $A 、 B 、 C 、 D$ 四点共圆时, 这个三角形是退化的(在这种情况下,我们有著名的 Ptolemy 定理).
+这个结论的证明并不难, 用复数就更为简单.
+事实上,设 $A 、 B 、 C 、 D$ 对应的复数分别为 $z_1 、 z_2 、 z_3 、 z_4$, 用下面的恒等式
+$$
+\left(z_1-z_4\right)\left(z_2-z_3\right)+\left(\dot{z}_2-z_4\right)\left(z_3-z_1\right)+\left(z_3-z_4\right)\left(z_1-z_2\right)=0,
+$$
+便可立得结论.
+Tsintsifas 在 1983 年的 Crux. Math. (9) 上提出问题:
+问题设 $T$ 是一个给定的 $\triangle A B C, P$ 是 $T$ 所在平面上的一点,现记以 $a \cdot P A 、 b \cdot P B 、 c \cdot P C$ 为边的三角形为 $T_0$ (可能是退化的). 现设 $R 、 R_0$ 分别是 $T 、 T_0$ 的外接圆半径,求使得不等式
+$$
+P A \cdot P B \cdot P C \leqslant R R_0
+$$
+成立的点 $P$ 的轨迹.
+%%<SOLUTION>%%
+解法 2 设 $\triangle A B C$ 的外心为 $O$, 现以 $P$ 为反演中心, $\lambda=P A \cdot P B \cdot P C$ 为反演幂做反演变换.
+设 $A 、 B 、 C$ 反演后变为 $A^{\prime} 、 B^{\prime} 、 C^{\prime}$, 则
+$$
+B^{\prime} C^{\prime}=B C \cdot \frac{\lambda}{P B \cdot P C}=a \cdot P A .
+$$
+同理
+$$
+C^{\prime} A^{\prime}=b \cdot P B, A^{\prime} B^{\prime}=c \cdot P C .
+$$
+因此 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 即为以 $a \cdot P A 、 b \cdot P B 、 c \cdot P C$ 为边的三角形.
+而 $\odot(O, R)$ 反演后的半径为
+$$
+R_0=R \frac{\lambda}{|P O|^2-R^2},
+$$
+因此 $P A \cdot P B \cdot P C \leqslant R R_0$ 等价于
+$$
+\lambda \leqslant R^2 \cdot \frac{\lambda}{|P O|^2-R^2},
+$$
+这又等价于
+$$
+|P O| \leqslant \sqrt{2} R
+$$
+这说明 $P$ 的轨迹是以 $O$ 为圆心, 半径为 $\sqrt{2} R$ 的圆及内部.
+%%<REMARK>%%
+注:由上面的解法看出存在 $\triangle A B C$ 的反演像与点 $P$ 的垂足三角形相似.
+%%PROBLEM_END%%
+
+

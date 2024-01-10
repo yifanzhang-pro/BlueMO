@@ -1,0 +1,574 @@
+
+%%TEXT_BEGIN%%
+和式的恒等变换.
+在不等式的证明过程中, 我们时常要对和式进行处理, 对和式作一些恒等变形.
+因此,有必要了解一下一些重要的恒等变换式以及变换法:
+(1) $a_i a_j+b_i b_j-a_i b_j-a_j b_i=\left(a_i-b_i\right)\left(a_j-b_j\right)$;
+(2) $\left(\sum_{i=1}^n a_i\right)^2=\sum_{i=1}^n a_i^2+2 \sum_{1 \leqslant i<j \leqslant n} a_i a_j$;
+(3) $\sum_{1 \leqslant i<j \leqslant n}\left(a_i-a_j\right)^2=n \sum_{i=1} a_i^2-\left(\sum_{i=1}^n a_i\right)^2$;
+(4) $\left(\sum_{i=1}^n a_i\right)\left(\sum_{i=1}^n b_i\right)=\sum_{i=1}^n \sum_{j=1}^n a_i b_j=\sum_{i=1}^n \sum_{j=1}^n a_j b_i$;
+(5) $\sum_{1 \leqslant i<j \leqslant n} a_i a_j=\sum_{i=1}^n\left(\sum_{j=i}^n a_i a_j\right)=\sum_{j=1}^n\left(\sum_{i=1}^j a_i a_j\right)$;
+(6) $\sum_{i=1}^n \sum_{j=1}^n a_i b_j=\frac{1}{2} \sum_{i=1}^n \sum_{j=1}^n\left(a_i b_j+a_j b_i\right)$;
+(7) $a_n-a_1=\sum_{k=1}^{n-1}\left(a_{k+1}-a_k\right)$.
+以上变换公式请读者自行证明并熟记于心.
+面再看一下著名的 Abel 变换方法:
+首先, 设 $m, n \in \mathbf{N}_{+}, m<n$, 则
+$$
+\sum_{k=m}^n\left(A_k-A_{k-1}\right) b_k=A_n b_n-A_{m-1} b_m+\sum_{k=m}^{n-1} A_k\left(b_k-b_{k+1}\right) . \label{eq1}
+$$
+式\ref{eq1} 称为 Abel 和差变换公式.
+在 式\ref{eq1} 中令 
+$$
+\begin{aligned}
+A_0=0, A_k=\sum_{i=1}^k a_i(1 \leqslant k \leqslant n) \text {, 可得 } \\
+\sum_{k=1}^n a_k b_k=b_n \sum_{k=1}^n a_k+\sum_{k=1}^{n-1}\left(\sum_{i=1}^k a_i\right)\left(b_k-b_{k+1}\right) .
+\end{aligned} \label{eq2}
+$$
+式\ref{eq2} 称为 Abel 分部求和公式.
+由 式\ref{eq2}不难得到著名的 Abel 不等式:
+设 $b_1 \geqslant b_2 \geqslant \cdots \geqslant b_n>0, m \leqslant \sum_{k=1}^t a_k \leqslant M, t=1,2, \cdots, n$. 则有:
+$$
+b_1 m \leqslant \sum_{k=1}^n a_k b_k \leqslant b_1 M . \label{eq3}
+$$
+在实际证题的时候, 如果发现一列数和易求,一列数差易求, 就可以考虑采用 Abel 变换.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 证明 Lagrange 恒等式:
+$$
+\left(\sum_{i=1}^n a_i^2\right) \cdot\left(\sum_{i=1}^n b_i^2\right)=\left(\sum_{i=1}^n a_i b_i\right)^2+\sum_{1 \leqslant i<j \leqslant n}\left(a_i b_j-a_j b_i\right)^2,
+$$
+并由此式说明 Cauchy 不等式成立.
+%%<SOLUTION>%%
+证明:$$
+\begin{aligned}
+& \left(\sum_{i=1}^n a_i^2\right) \cdot\left(\sum_{i=1}^n b_i^2\right)-\left(\sum_{i=1}^n a_i b_i\right)^2 \\
+= & \sum_{i=1}^n \sum_{j=1}^n a_i^2 b_j^2-\sum_{i=1}^n \sum_{j=1}^n a_i b_i a_j b_j \\
+= & \frac{1}{2} \sum_{i=1}^n \sum_{j=1}^n\left(a_i^2 b_j^2+a_j^2 b_i^2-2 a_i b_i a_j b_j\right) \\
+= & \frac{1}{2} \sum_{i=1}^n \sum_{j=1}^n\left(a_i b_j-a_j b_i\right)^2 \\
+= & \sum_{1 \leqslant i<j \leqslant n}\left(a_i b_j-a_j b_i\right)^2,
+\end{aligned}
+$$
+故 Lagrange 恒等式成立.
+又因为 $\sum_{1 \leqslant i<j \leqslant n}\left(a_i b_j-a_j b_i\right)^2 \geqslant 0$, 所以有
+$$
+\left(\sum_{i=1}^n a_i^2\right) \cdot\left(\sum_{i=1}^n b_i^2\right) \geqslant\left(\sum_{i=1}^n a_i b_i\right)^2
+$$
+即 Cauchy 不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 若 $p>s \geqslant r>q, p+q=r+s, a_1, a_2, \cdots, a_n>0$, 则
+$$
+\left(\sum_{i=1}^n a_i^p\right) \cdot\left(\sum_{i=1}^n a_i^q\right) \geqslant\left(\sum_{i=1}^n a_i^s\right) \cdot\left(\sum_{i=1}^n a_i^r\right)
+$$
+%%<SOLUTION>%%
+证明:$$
+\begin{aligned}
+& \left(\sum_{i=1}^n a_i^p\right) \cdot\left(\sum_{i=1}^n a_i^q\right)-\left(\sum_{i=1}^n a_i^s\right) \cdot\left(\sum_{i=1}^n a_i^r\right) \\
+= & \sum_{i=1}^n \sum_{j=1}^n\left(a_i^p a_j^q-a_i^s a_j^r\right)
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& =\frac{1}{2} \sum_{i=1}^n \sum_{j=1}^n\left(a_i^p a_j^q-a_i^s a_j^r\right)+\frac{1}{2} \sum_{i=1}^n \sum_{j=1}^n\left(a_j^p a_i^q-a_j^s a_i^r\right) \\
+& =\frac{1}{2} \sum_{i=1}^n \sum_{j=1}^n\left(a_i^p a_j^q+a_j^p a_i^q-a_i^s a_j^r-a_j^s a_i^r\right) \\
+& =\frac{1}{2} \sum_{i=1}^n \sum_{j=1}^n a_i^q a_j^q\left(a_i^{p-q}+a_j^{p-q}-a_i^{s-q} a_j^{r-q}-a_j^{s-q} a_i^{r-q}\right) \\
+& =\frac{1}{2} \sum_{i=1}^n \sum_{j=1}^n a_i^q a_j^q\left(a_i^{p-s}-a_j^{p-s}\right)\left(a_i^{s-q}-a_j^{s-q}\right) \\
+& \geqslant 0 .
+\end{aligned}
+$$
+故原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 若 $a_i>0, b_i>0, a_i b_i=c_i^2+d_i^2(i=1,2, \cdots, n)$, 则
+$$
+\left(\sum_{i=1}^n a_i\right)\left(\sum_{i=1}^n b_i\right) \geqslant\left(\sum_{i=1}^n c_i\right)^2+\left(\sum_{i=1}^n d_i\right)^2,
+$$
+等号成立当且仅当 $\frac{a_i}{a_j}=\frac{b_i}{b_j}=\frac{c_i}{c_j}=\frac{d_i}{d_j}(1 \leqslant i<j \leqslant n)$.
+%%<SOLUTION>%%
+证明:$\quad\left(\sum_{i=1}^n a_i\right)\left(\sum_{i=1}^n b_i\right)-\left(\sum_{i=1}^n c_i\right)^2-\left(\sum_{i=1}^n d_i\right)^2$
+$$
+\begin{aligned}
+& =\sum_{i=1}^n \sum_{j=1}^n a_i b_j-\sum_{i=1}^n \sum_{j=1}^n c_i c_j-\sum_{i=1}^n \sum_{j=1}^n d_i d_j \\
+& =\sum_{i=1}^n \sum_{j=1}^n\left(a_i b_j-c_i c_j-d_i d_j\right) \\
+& =\frac{1}{2} \sum_{i=1}^n \sum_{j=1}^n\left(a_i b_j+a_j b_i-2 c_i c_j-2 d_i d_j\right) \\
+& =\frac{1}{2} \sum_{i=1}^n \sum_{j=1}^n\left[\frac{a_i}{a_j}\left(c_j^2+d_j^2\right)+\frac{a_j}{a_i}\left(c_i^2+d_i^2\right)-2 c_i c_j-2 d_i d_j\right] \\
+& =\frac{1}{2} \sum_{i=1}^n \sum_{j=1}^n\left[\left(\sqrt{\frac{a_i}{a_j} c_j}-\sqrt{\frac{a_j}{a_i} c_i}\right)^2+\left(\sqrt{\frac{a_i}{a_j} d_j}-\sqrt{\frac{a_j}{a_i}} d_i\right)^2\right] \\
+& \geqslant 0 .
+\end{aligned}
+$$
+等号成立当且仅当
+$$
+\left\{\begin{array}{l}
+\sqrt{\frac{a_i}{a_j}} c_j-\sqrt{\frac{a_j}{a_i}} c_i=0, \\
+\sqrt{\frac{a_i}{a_j}} d_j-\sqrt{\frac{a_j}{a_i}} d_i=0 .
+\end{array}\right.
+$$
+即
+$$
+\left\{\begin{array}{l}
+a_i c_j=a_j c_i \label{(1)}\\
+a_i d_j=a_j d_i \label{(2)}
+\end{array}\right.
+$$
+由 $(1)^2+(2)^2$, 得 $a_i^2\left(c_j^2+d_j^2\right)=a_j^2\left(c_i^2+d_i^2\right)$, 即 $a_i^2 a_j b_j=a_j^2 a_i b_i$. 故
+$$
+\frac{a_i}{a_j}=\frac{b_i}{b_j} . \label{(3)}
+$$
+由(1)(2)(3)立刻得到, 等号成立当且仅当
+$$
+\frac{a_i}{a_j}=\frac{b_i}{b_j}=\frac{c_i}{c_j}=\frac{d_i}{d_j}(1 \leqslant i<j \leqslant n) .
+$$
+说明本题也可以直接从右边证到左边.
+证明
+$$
+\begin{aligned}
+& \left(\sum_{i=1}^n c_i\right)^2+\left(\sum_{i=1}^n d_i\right)^2 \\
+= & \sum_{i=1}^n \sum_{j=1}^n\left(c_i c_j+d_i d_j\right) \\
+\leqslant & \sum_{i=1}^n \sum_{j=1}^n \sqrt{c_i^2+d_i^2} \cdot \sqrt{c_j^2+d_j^2} \\
+= & \sum_{i=1}^n \sum_{j=1}^n \sqrt{a_i b_i} \cdot \sqrt{a_j b_j}=\sum_{i=1}^n \sum_{j=1}^n \sqrt{a_i b_j} \cdot \sqrt{a_j b_i} \\
+\leqslant & \sum_{i=1}^n \sum_{j=1}^n \frac{a_i b_j+a_j b_i}{2}=\sum_{i=1}^n \sum_{j=1}^n a_i b_j \\
+= & \left(\sum_{i=1}^n a_i\right) \cdot\left(\sum_{i=1}^n b_i\right) .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 实数集 $\left\{a_0, a_1, \cdots, a_n\right\}$ 满足以下条件:
+(1) $a_0=a_n=0$;
+(2) 对 $1 \leqslant k \leqslant n-1, a_k=c+\sum_{i=k}^{n-1} a_{i-k}\left(a_i+a_{i+1}\right)$.
+求证:
+$$
+c \leqslant \frac{1}{4 n} \text {. }
+$$
+%%<SOLUTION>%%
+证明:记 $\quad s_k=\sum_{i=0}^k a_i, k=1,2, \cdots, n$,
+则
+$$
+s_n=\sum_{k=0}^n a_k=\sum_{k=0}^{n-1} a_k=n c+\sum_{k=0}^{n-1} \sum_{i=k}^{n-1} a_{i-k}\left(a_i+a_{i+1}\right) .
+$$
+补充定义
+$$
+a_{-1}=a_{-2}=\cdots=a_{-(n-1)}=0,
+$$
+则
+$$
+s_n=n c+\sum_{k=0}^{n-1} \sum_{i=0}^{n-1} a_{i-k}\left(a_i+a_{i+1}\right)
+$$
+$$
+\begin{aligned}
+= & n c+\sum_{i=0}^{n-1} \sum_{k=0}^{n-1} a_{i-k}\left(a_i+a_{i+1}\right) \\
+= & n c+\sum_{i=0}^{n-1} \sum_{k=0}^i a_{i-k}\left(a_i+a_{i+1}\right) \\
+= & n c+\sum_{i=0}^{n-1}\left(a_i+a_{i+1}\right) \sum_{k=0}^i a_{i-k} \\
+= & n c+\sum_{i=0}^{n-1}\left(a_i+a_{i+1}\right) \cdot s_i \\
+= & n c+s_1 s_0+\left(s_2-s_0\right) s_1+\left(s_3-s_1\right) s_2 \\
+& +\cdots+\left(s_{n-1}-s_{n-3}\right) s_{n-2}+\left(s_n-s_{n-2}\right) s_{n-1} \\
+= & n c+s_n s_{n-1} \\
+= & n c+s_n^2,
+\end{aligned}
+$$
+故
+$$
+s_n^2-s_n+n c=0 .
+$$
+由 $\Delta=1-4 n c \geqslant 0$ 即知 $c \leqslant \frac{1}{4 n}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $a_n=1+\frac{1}{2}+\cdots+\frac{1}{n}, n \in \mathbf{N}_{+}$. 求证: 对 $n \geqslant 2$, 有
+$$
+a_n^2>2\left(\frac{a_2}{2}+\frac{a_3}{3}+\cdots+\frac{a_n}{n}\right) .
+$$
+%%<SOLUTION>%%
+分析:若直接通过 $a_n$ 的表达式来证将非常复杂, 但通过建立其递推公式,可以使问题很容易得到解决, 我们便可从此处人手.
+证明
+$$
+\begin{aligned}
+a_n^2-a_{n-1}^2 & =\left(1+\frac{1}{2}+\cdots+\frac{1}{n}\right)^2-\left(1+\frac{1}{2}+\cdots+\frac{1}{n-1}\right)^2 \\
+& =\frac{1}{n^2}+2 \cdot \frac{1}{n}\left(1+\frac{1}{2}+\cdots+\frac{1}{n-1}\right) \\
+& =\frac{1}{n^2}+\frac{2}{n}\left(a_n-\frac{1}{n}\right) \\
+& =2 \cdot \frac{a_n}{n}-\frac{1}{n^2} .
+\end{aligned}
+$$
+故 $\quad a_n^2-a_1^2=2\left(\frac{a_2}{2}+\frac{a_3}{3}+\cdots+\frac{a_n}{n}\right)-\left(\frac{1}{2^2}+\frac{1}{3^2}+\cdots+\frac{1}{n^2}\right)$.
+所以 $a_n^2=2\left(\frac{a_2}{2}+\frac{a_3}{3}+\cdots+\frac{a_n}{n}\right)+\left(1-\frac{1}{2^2}-\cdots-\frac{1}{n^2}\right)$
+$$
+\begin{aligned}
+& >2\left(\frac{a_2}{2}+\frac{a_3}{3}+\cdots+\frac{a_n}{n}\right)+\left(1-\frac{1}{1 \times 2}-\frac{1}{2 \times 3}-\cdots-\frac{1}{(n-1) n}\right) \\
+& =2\left(\frac{a_2}{2}+\frac{a_3}{3}+\cdots+\frac{a_n}{n}\right)+\frac{1}{n} \\
+& >2\left(\frac{a_2}{2}+\frac{a_3}{3}+\cdots+\frac{a_n}{n}\right) .
+\end{aligned}
+$$
+故原不等式成立.
+说明本题也可以用数学归纳法证明加强的命题:
+$$
+a_n^2>2\left(\frac{a_2}{2}+\frac{a_3}{3}+\cdots+\frac{a_n}{n}\right)+\frac{1}{n} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设数列 $\left\{a_k\right\}$ 满足: $a_{k+1}=a_k+f(n) \cdot a_k^2, 0 \leqslant k \leqslant n$. 其中 $0<a_0<1$, $0<f(n) \leqslant \frac{1}{n}\left(\frac{1}{a_0}-1\right)$. 求证:
+$$
+\frac{a_0(1+f(n))}{1+\left(1-a_0 p\right) f(n)} \leqslant a_p \leqslant \frac{a_0}{1-a_0 p f(n)}(0 \leqslant p \leqslant n), \label{(1)}
+$$
+等号成立当且仅当 $p=0$.
+%%<SOLUTION>%%
+证明:当 $p=0$ 时, (1)式两边等号成立.
+当 $p \geqslant 1$ 时, 由 $a_0>0, f(n)>0$, 易知 $a_p>0(1 \leqslant p \leqslant n)$, 于是
+$$
+a_{k+1}=a_k+f(n) a_k^2>a_k(0 \leqslant k \leqslant n),
+$$
+故
+$$
+a_{k+1}=a_k+f(n) a_k^2<a_k+f(n) a_k a_{k+1} .
+$$
+所以
+$$
+\frac{1}{a_k}-\frac{1}{a_{k+1}}<f(n) \text {. }
+$$
+因此 $\quad \sum_{k=0}^{p-1}\left(\frac{1}{a_k}-\frac{1}{a_{k+1}}\right)<p f(n), p=1,2, \cdots, n$,
+即
+$$
+\frac{1}{a_0}-\frac{1}{a_p}<p f(n) \text {. }
+$$
+故 $\quad \frac{1}{a_p}>\frac{1}{a_0}-p f(n) \geqslant \frac{1}{a_0}-p \cdot \frac{1}{n}\left(\frac{1}{a_0}-1\right) \geqslant 1$,
+于是 $\quad a_p<\frac{1}{\frac{1}{a_0}-p f(n)}=\frac{a_0}{1-a_0 p f(n)} \leqslant 1(1 \leqslant p \leqslant n)$.
+另一方面, 由 $a_p^2<a_p<1$, 有
+$$
+a_{k+1}<a_k+f(n) \cdot a_k
+$$
+即
+$$
+a_k>\frac{1}{1+f(n)} a_{k+1},
+$$
+故
+$$
+\begin{gathered}
+a_{k+1}>a_k+f(n) \frac{a_k \cdot a_{k+1}}{1+f(n)}, \\
+\frac{1}{a_k}-\frac{1}{a_{k+1}}>\frac{f(n)}{1+f(n)},
+\end{gathered}
+$$
+则于是
+$$
+\begin{gathered}
+\sum_{k=0}^{p-1}\left(\frac{1}{a_k}-\frac{1}{a_{k+1}}\right)>p \cdot \frac{f(n)}{1+f(n)}(1 \leqslant p \leqslant n), \\
+\frac{1}{a_0}-\frac{1}{a_p}>p \cdot \frac{f(n)}{1+f(n)},
+\end{gathered}
+$$
+也即
+$$
+\frac{1}{a_p}<\frac{1}{a_0}-\frac{p \cdot f(n)}{1+f(n)}=\frac{1+\left(1-a_0 p\right) f(n)}{a_0(1+f(n))},
+$$
+所以
+$$
+a_p>\frac{a_0(1+f(n))}{1+\left(1-a_0 p\right) f(n)}(1 \leqslant p \leqslant n) .
+$$
+综合两方面情况, 命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. (钟开莱不等式) 设 $a_1 \geqslant a_2 \geqslant \cdots \geqslant a_n>0$, 且 $\sum_{i=1}^k a_i \leqslant \sum_{i=1}^k b_i(1 \leqslant k \leqslant n)$, 则
+(1) $\sum_{i=1}^n a_i^2 \leqslant \sum_{i=1}^n b_i^2$;
+(2) $\sum_{i=1}^n a_i^3 \leqslant \sum_{i=1}^n a_i b_i^2$.
+%%<SOLUTION>%%
+证明:(1)由 Abel 变换公式,
+$$
+\begin{aligned}
+\sum_{i=1}^n a_i^2 & =a_n\left(\sum_{i=1}^n a_i\right)+\sum_{k=1}^{n-1}\left(\sum_{i=1}^k a_i\right)\left(a_k-a_{k+1}\right) \\
+& \leqslant a_n\left(\sum_{i=1}^n b_i\right)+\sum_{k=1}^{n-1}\left(\sum_{i=1}^k b_i\right)\left(a_k-a_{k+1}\right) \\
+& =\sum_{i=1}^n a_i b_i .
+\end{aligned}
+$$
+再由 Cauchy 不等式, 有
+$$
+\sum_{i=1}^n a_i b_i \leqslant\left(\sum_{i=1}^n a_i^2\right)^{\frac{1}{2}} \cdot\left(\sum_{i=1}^n b_i^2\right)^{\frac{1}{2}},
+$$
+即得
+$$
+\sum_{i=1}^n a_i^2 \leqslant \sum_{i=1}^n b_i^2 .
+$$
+$$
+\begin{aligned}
+& \sum_{i=1}^n a_i^3=a_n^2\left(\sum_{i=1}^n a_i\right)+\sum_{k=1}^{n-1}\left(\sum_{i=1}^k a_i\right)\left(a_k^2-a_{k+1}^2\right) \\
+& \leqslant a_n^2\left(\sum_{i=1}^n b_i\right)+\sum_{k=1}^{n-1}\left(\sum_{i=1}^k b_i\right)\left(a_k^2-a_{k+1}^2\right) \\
+&=\sum_{i=1}^n a_i^2 b_i \\
+&=\sum_{i=1}^n\left(a_i^{\frac{3}{2}} \cdot a_i^{\frac{1}{2}} b_i\right) \\
+& \leqslant\left(\sum_{i=1}^n a_i^3\right)^{\frac{1}{2}} \cdot\left(\sum_{i=1}^n a_i b_i^2\right)^{\frac{1}{2}} . \\
+& \sum_{i=1}^n a_i^3 \leqslant \sum_{i=1}^n a_i b_i^2 .
+\end{aligned}
+$$
+即$\sum_{i=1}^n a_i^3 \leqslant \sum_{i=1}^n a_i b_i^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设 $a_1, a_2, \cdots$ 是正实数列, 且对所有 $i, j=1,2, \cdots$ 满足 $a_{i+j} \leqslant a_i+a_j$. 求证: 对于正整数 $n$, 有
+$$
+a_1+\frac{a_2}{2}+\frac{a_3}{3}+\cdots+\frac{a_n}{n} \geqslant a_n
+$$
+%%<SOLUTION>%%
+分析:由条件, 当 $i+j=k$ 时, 有 $a_i+a_{k-i} \geqslant a_k$, 于是得到关于和 $s_{k-1}= a_1+\cdots+a_{k-1}$ 的估计, 而差 $\frac{1}{i}-\frac{1}{i+1}$ 是易求的,提示我们用 Abel 变换公式.
+证明利用 Abel 变换法.
+记 $s_i=a_1+a_2+\cdots+a_i, i=1,2, \cdots, n$.
+约定 $s_0=0$, 则
+$$
+2 s_i=\left(a_1+a_i\right)+\cdots+\left(a_i+a_1\right) \geqslant i a_{i+1} .
+$$
+即
+$$
+s_i \geqslant \frac{i}{2} \cdot a_{i+1} .
+$$
+故
+$$
+\begin{aligned}
+\sum_{i=1}^n \frac{a_i}{i} & =\sum_{i=1}^n \frac{s_i-s_{i-1}}{i} \\
+& =\sum_{i=1}^{n-1} s_i\left(\frac{1}{i}-\frac{1}{i+1}\right)+\frac{1}{n} \cdot s_n \\
+& \geqslant \frac{1}{2} s_1+\sum_{i=1}^{n-1} \frac{i a_{i+1}}{2}\left(\frac{1}{i}-\frac{1}{i+1}\right)+\frac{1}{n} s_n \\
+& =\frac{1}{2} s_1+\frac{1}{2} \cdot \sum_{i=1}^{n-1} \frac{a_{i+1}}{i+1}+\frac{1}{n} \cdot s_n
+\end{aligned}
+$$
+$$
+=\frac{1}{2} \cdot \sum_{i=1}^n \frac{a_i}{i}+\frac{1}{n} s_n
+$$
+因此
+$$
+\begin{aligned}
+& \sum_{i=1}^n \frac{a_i}{i} \geqslant \frac{2}{n} s_n \\
+= & \frac{2}{n}\left(s_{n-1}+a_n\right) \\
+\geqslant & \frac{2}{n} \cdot\left(\frac{n-1}{2} a_n+a_n\right) \\
+= & \frac{n+1}{n} a_n>a_n .
+\end{aligned}
+$$
+故原不等式成立.
+说明如果去掉 $a_1, a_2, \cdots$, 是正的这一条件, 则可用数学归纳法证明本题 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. (排序不等式) 设有两个有序数组: $a_1 \leqslant a_2 \leqslant \cdots \leqslant a_n$ 及 $b_1 \leqslant b_2 \leqslant \cdots \leqslant b_n$. 求证:
+$$
+\begin{aligned}
+& a_1 b_1+a_2 b_2+\cdots+a_n b_n(\text { 顺序和 }) \\
+\geqslant & a_1 b_{j_1}+a_2 b_{j_2}+\cdots+a_n b_{j_n}(\text { 乱序和 }) \\
+\geqslant & a_1 b_n+a_2 b_{n-1}+\cdots+a_n b_1(\text { 逆序和 }),
+\end{aligned}
+$$
+其中 $j_1, j_2, \cdots, j_n$ 是 $1,2, \cdots, n$ 的任意一个排列.
+%%<SOLUTION>%%
+证明:$$
+s_i=b_1+b_2+\cdots+b_i,
+$$
+$$
+s_i^{\prime}=b_{j_1}+b_{j_2}+\cdots+b_{j_i}(i=1,2, \cdots, n) \text {. }
+$$
+由题设易知
+$$
+s_i \leqslant s_i^{\prime}(i=1,2, \cdots, n-1) \text {, }
+$$
+$$
+s_n=s_n^{\prime} \text {. }
+$$
+又因为 $a_i-a_{i+1} \leqslant 0$, 故 $s_i\left(a_i-a_{i+1}\right) \geqslant s_i^{\prime}\left(a_i-a_{i+1}\right)$.
+所以
+$$
+\begin{aligned}
+\sum_{i=1}^n a_i b_i & =\sum_{i=1}^{n-1} s_i\left(a_i-a_{i+1}\right)+a_n s_n \\
+& \geqslant \sum_{i=1}^{n-1} s_i^{\prime}\left(a_i-a_{i+1}\right)+a_n s_n^{\prime} \\
+& =\sum_{i=1}^n a_i b_{j_i} .
+\end{aligned}
+$$
+此即左端不等式.
+类似可证得右端不等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 将 $1,2,3, \cdots, 2007$ 这 2007 个数任意排列可得 2007 ! 个不同数列, 问其中是否存在 4 个数列:
+$$
+a_1, a_2, \cdots, a_{2007} ; b_1, b_2, \cdots, b_{2007} ; c_1, c_2, \cdots, c_{2007} ; d_1, d_2, \cdots, d_{2007},
+$$
+使得 $\quad a_1 b_1+a_2 b_2+\cdots+a_{2007} b_{2007}=2\left(c_1 d_1+c_2 d_2+\cdots+c_{2007} d_{2007}\right)$ ?
+并证明你的结论.
+%%<SOLUTION>%%
+解:由排序不等式
+$$
+\begin{aligned}
+a_1 b_1+a_2 b_2+\cdots+a_{2007} b_{2007} & \leqslant 1 \cdot 1+2 \cdot 2+\cdots+2007 \cdot 2007 \\
+& =\frac{2007 \cdot 2008 \cdot 4015}{6}=2696779140, \\
+c_1 d_1+c_2 d_2+\cdots+c_{2007} d_{2007} & \geqslant 1 \cdot 2007+2 \cdot 2006+\cdots+2007 \cdot 1 \\
+& =\sum_{k=1}^{2007} k(2008-k)=2008 \sum_{k=1}^{2007} k-\sum_{k=1}^{2007} k^2 \\
+& =2008 \cdot \frac{2007 \cdot 2008}{2}-2696779140 \\
+& =1349397084,
+\end{aligned}
+$$
+于是 $2\left(c_1 d_1+c_2 d_2+\cdots+c_{2007} d_{2007}\right) \geqslant 2698794168>a_1 b_1+a_2 b_2+\cdots+ a_{2007} b_{2007}$.
+由此可见,满足条件的四个数列不存在.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 求证: 对每个正整数 $n$, 有
+$$
+\frac{2 n+1}{3} \sqrt{n} \leqslant \sum_{i=1}^n \sqrt{i} \leqslant \frac{4 n+3}{6} \sqrt{n}-\frac{1}{6} .
+$$
+不等式两边等号成立当且仅当 $n=1$.
+%%<SOLUTION>%%
+分析:对于 $\sqrt{i}$, 既可看成是 $1 \cdot \sqrt{i}$, 也可看成是 $i \cdot \frac{1}{\sqrt{i}}$, 这样就得到两种估计方法.
+证明容易验证当 $n=1$ 时,两个不等式都取等号.
+下面不妨设 $n \geqslant 2$.
+先证左边不等式.
+令 $a_i=1, b_i=\sqrt{i}(1 \leqslant i \leqslant n)$, 则
+$$
+s_i=a_1+a_2+\cdots+a_i=i .
+$$
+利用 Abel 分部求和公式,得
+$$
+\begin{aligned}
+s & =\sum_{i=1}^n \sqrt{i}=\sum_{i=1}^n a_i b_i=\sum_{i=1}^{n-1} i(\sqrt{i}-\sqrt{i+1})+n \sqrt{n} \\
+& =n \sqrt{n}-\sum_{i=1}^{n-1} \frac{i}{\sqrt{i}+\sqrt{i+1}} .
+\end{aligned}
+$$
+由 $\frac{i}{\sqrt{i}+\sqrt{i+1}}<\frac{i}{2 \sqrt{i}}=\frac{1}{2} \sqrt{i}$, 有
+$$
+\begin{gathered}
+\sum_{i=1}^{n-1} \frac{i}{\sqrt{i}+\sqrt{i+1}}<\frac{1}{2} \sum_{i=1}^{n-1} \sqrt{i}=\frac{1}{2}(s-\sqrt{n}), \\
+s>n \sqrt{n}-\frac{1}{2}(s-\sqrt{n}), \\
+s>\frac{2 n+1}{3} \cdot \sqrt{n} .
+\end{gathered}
+$$
+所以解之, 得
+$$
+s>\frac{2 n+1}{3} \cdot \sqrt{n}
+$$
+下证右边不等式.
+令 $a_i=i, b_i=\frac{1}{\sqrt{i}}(1 \leqslant i \leqslant n)$, 则
+$$
+s_i=a_1+a_2+\cdots+a_i=\frac{1}{2} i(i+1) .
+$$
+利用 Abel 分部求和公式, 有
+$$
+\begin{aligned}
+s & =\sum_{i=1}^{n-1} \frac{i(i+1)}{2}\left(\frac{1}{\sqrt{i}}-\frac{1}{\sqrt{i+1}}\right)+\frac{1}{\sqrt{n}} \cdot \frac{n(n+1)}{2} \\
+& =\frac{n+1}{2} \cdot \sqrt{n}+\sum_{i=1}^{n-1} \frac{i(i+1)}{2} \cdot \frac{1}{\sqrt{i(i+1)(\sqrt{i}+\sqrt{i+1})}} \\
+& =\frac{n+1}{2} \cdot \sqrt{n}+\frac{1}{2} \sum_{i=1}^{n-1} \frac{\sqrt{i(i+1)}}{\sqrt{i}+\sqrt{i+1}} .
+\end{aligned}
+$$
+因为 $\frac{\sqrt{i(i+1)}}{\sqrt{i}+\sqrt{i+1}}<\frac{1}{4}(\sqrt{i}+\sqrt{i+1})(i=1,2, \cdots, n-1)$,
+故有
+$$
+\begin{gathered}
+\sum_{i=1}^{n-1} \frac{\sqrt{i(i+1)}}{\sqrt{i}+\sqrt{i+1}}<\frac{1}{4} \cdot \sum_{i=1}^{n-1}(\sqrt{i}+\sqrt{i+1}) \\
+=\frac{1}{4}(2 s-\sqrt{n}-1) \\
+s<\frac{1}{8}(2 s-\sqrt{n}-1)+\frac{n+1}{2} \cdot \sqrt{n} \\
+s<\frac{4 n+3}{6} \cdot \sqrt{n}-\frac{1}{6} .
+\end{gathered}
+$$
+于是得到
+$$
+s<\frac{1}{8}(2 s-\sqrt{n}-1)+\frac{n+1}{2} \cdot \sqrt{n},
+$$
+从而
+$$
+s<\frac{4 n+3}{6} \cdot \sqrt{n}-\frac{1}{6}
+$$
+命题获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 设 $\left\{a_n\right\}$ 为无穷正数列, 若存在常数 $C$, 使得 $\sum_{k=1}^n \frac{1}{a_k} \leqslant C$ 对所有正整数 $n$ 成立.
+求证: 存在常数 $M$, 使得 $\sum_{k=1}^n \frac{k^2 \cdot a_k}{\left(a_1+a_2+\cdots+a_k\right)^2} \leqslant M$ 对所有正整数 $n$ 成立.
+%%<SOLUTION>%%
+证明:记 $S_n=\sum_{k=1}^n \frac{k^2 \cdot a_k}{\left(a_1+a_2+\cdots+a_k\right)^2}, A_n=a_1+a_2+\cdots+a_n(n \geqslant 1)$, $A_0=0$. 所以
+$$
+\begin{aligned}
+S_n & =\sum_{k=1}^n \frac{k^2 \cdot\left(A_k-A_{k-1}\right)}{A_k^2} \leqslant \frac{1}{a_1}+\sum_{k=2}^n \frac{k^2 \cdot\left(A_k-A_{k-1}\right)}{A_k A_{k-1}} \\
+& =\frac{1}{a_1}+\sum_{k=2}^n \frac{k^2}{A_{k-1}}-\sum_{k=2}^n \frac{k^2}{A_k}=\frac{1}{a_1}+\sum_{k=1}^{n-1} \frac{(k+1)^2}{A_k}-\sum_{k=2}^n \frac{k^2}{A_k} \\
+& =\frac{1}{a_1}+2 \sum_{k=2}^{n-1} \frac{k}{A_k}+\sum_{k=2}^{n-1} \frac{1}{A_k}+\frac{4}{A_1}-\frac{n^2}{A_n} \leqslant \frac{5}{a_1}+2 \sum_{k=1}^n \frac{k}{A_k}+\sum_{k=1}^n \frac{1}{a_k} .
+\end{aligned}
+$$
+而 $\sum_{k=1}^n \frac{k}{A_k}=\sum_{k=1}^n \frac{k}{A_k} \sqrt{a_k} \cdot \frac{1}{\sqrt{a_k}} \leqslant\left[\sum_{k=1}^n\left(\frac{k}{A_k} \sqrt{a_k}\right)^2\right]^{1 / 2} \cdot\left[\sum_{k=1}^n\left(\frac{1}{\sqrt{a_k}}\right)^2\right]^{1 / 2}$
+$$
+=\left[\sum_{k=1}^n \frac{k^2}{A_k^2} a_k \cdot \sum_{k=1}^n \frac{1}{a_k}\right]^{1 / 2}=\left[S_n \cdot \sum_{k=1}^n \frac{1}{a_k}\right]^{1 / 2},
+$$
+所以
+$$
+S_n \leqslant \frac{5}{a_1}+2\left[S_n \cdot \sum_{k=1}^n \frac{1}{a_k}\right]^{1 / 2}+\sum_{k=1}^n \frac{1}{a_k}
+$$
+由此解出
+$$
+\sqrt{S_n} \leqslant \sqrt{\sum_{k=1}^n \frac{1}{a_k}}+\sqrt{\frac{5}{a_1}+2 \sum_{k=1}^n \frac{1}{a_k}} .
+$$
+取 $M=\left(\sqrt{C}+\sqrt{\frac{5}{a_1}+2 C}\right)^2$ 即可.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13. 设 $n$ 是一个正整数, 实数 $a_1, a_2, \cdots, a_n$ 和 $r_1, r_2, \cdots, r_n$ 满足: $a_1 \leqslant a_2 \leqslant \cdots \leqslant a_n$ 和 $0 \leqslant r_1 \leqslant r_2 \leqslant \cdots \leqslant r_n$, 求证:
+$$
+\sum_{i=1}^n \sum_{j=1}^n a_i a_j \min \left(r_i, r_j\right) \geqslant 0 .
+$$
+%%<SOLUTION>%%
+证明:作一张 $n \times n$ 的表:
+$$
+A_1=\left(\begin{array}{ccc}
+a_1 a_1 r_1 & a_1 a_2 r_1 & a_1 a_3 r_1 \cdots a_1 a_n r_1 \\
+a_2 a_1 r_1 & a_2 a_2 r_2 & a_2 a_3 r_2 \cdots a_2 a_n r_2 \\
+a_3 a_1 r_1 & a_3 a_2 r_2 & a_3 a_3 r_3 \cdots a_3 a_n r_3 \\
+\cdots & \cdots & \\
+\cdots & \cdots & \\
+a_n a_1 r_1 & a_n a_2 r_2 & a_n a_3 r_3 \cdots a_n a_n r_n
+\end{array}\right)
+$$
+由于 $\sum_{i=1}^n \sum_{j=1}^n a_i a_j \min \left(r_i, r_j\right)=\sum_{j=1}^n a_1 a_j \min \left(r_1, r_j\right)+\sum_{j=1}^n a_2 a_j \min \left(r_2, r_j\right)+\cdots+ \sum_{j=1}^n a_k a_j \min \left(r_k, r_j\right)+\cdots+\sum_{j=1}^n a_n a_j \min \left(r_n, r_j\right)$, 它的第 $k$ 项 $\sum_{j=1}^n a_k a_j \min \left(r_k, r_j\right)=a_k a_1 r_1+a_k a_2 r_2+\cdots+a_k a_k r_k+a_k a_{k+1} r_k+\cdots+a_k a_n r_k$ 就是表中第 $k$ 行各元素的和, $k=1,2, \cdots, n$.
+因此, $\sum_{i=1}^n \sum_{j=1}^n a_i a_j \min \left(r_i, r_j\right)$ 就是表 $A_1$ 中所有元素的和.
+另外,此和也可以按以下方式求得: 先取出表 $A_1$ 中第一行、第一列的各元素, 并求其和; 剩下的表记为 $A_2$ (相当于删去 $A_1$ 中的第一行和第一列而得到 $A_2$ ), 再取出表 $A_2$ 中第一行、第一列的各元素, 并求其和; 剩下的表记为 $A_3$ (相当于删去 $A_2$ 中的第一行和第一列而得到 $A_3$ ), 再取出表 $A_3$ 中第一行、第一列的各元素, 并求其和; $\cdots \cdots$, 如此得
+$$
+\begin{aligned}
+& \sum_{i=1}^n \sum_{j=1}^n a_i a_j \min \left(r_i, r_j\right) \\
+= & \sum_{k=1}^n r_k\left(a_k^2+2 a_k\left(a_{k+1}+a_{k+2}+\cdots+a_n\right)\right) \text { (这是 } A_k \text { 中第一行第一列各元素的和) } \\
+= & \sum_{k=1}^n r_k\left(\left(a_k+\sum_{i=k+1}^n a_i\right)^2-\left(\sum_{i=k+1}^n a_i\right)^2\right)=\sum_{k=1}^n r_k\left(\left(\sum_{i=k}^n a_i\right)^2-\left(\sum_{i=k+1}^n a_i\right)^2\right) \\
+= & r_1\left(\sum_{i=1}^n a_i\right)^2+r_2\left(\sum_{i=2}^n a_i\right)^2+r_3\left(\sum_{i=3}^n a_i\right)^2+\cdots+r_n\left(\sum_{i=n}^n a_i\right)^2 \\
+& -r_1\left(\sum_{i=2}^n a_i\right)^2-r_2\left(\sum_{i=3}^n a_i\right)^2-\cdots-r_{n-1}\left(\sum_{i=n}^n a_i\right)^2 \\
+= & \sum_{i==}^n\left(r_i-r_{i-1}\right)\left(\sum_{i=k}^n a_i\right)^2 \geqslant 0\left(\text { 此处约定 } r_0=0\right) .
+\end{aligned}
+$$
+因此结论得证.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,230 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 小明家电话号码原为六位数,第一次升位是在首位号码和第二位号码之间加上数字 8 , 成为一个七位数的电话号码; 第二次升位是在首位号码前加上数字 2 , 成为一个八位数的电话号码.
+小明发现, 他家两次升位后的电话号码的八位数, 恰是原来电话号码的六位数的 81 倍, 问: 小明家原来的电话号码是多少?
+%%<SOLUTION>%%
+设原来电话号码的六位数为 $\overline{a b c} \overline{d e f}$, 则经过两次升位后电话号码的八位数为 $\overline{2 a 8 b c d e f}$. 根据题意, 有 $81 \times \overline{a b c d e f}=\overline{2 a 8 b c d e f}$.
+记 $x=b \times 10^4+c \times 10^3+d \times 10^2+e \times 10+f$, 于是
+$$
+81 \times a \times 10^5+81 x=208 \times 10^5+a \times 10^6+x,
+$$
+解得 $x=1250 \times(208-71 a)$.
+因为 $0 \leqslant x \leqslant 10^5$, 所以 $0 \leqslant 1250 \times(208-71 a)<10^5$, 故 $\frac{128}{71}<a \leqslant \frac{208}{71}$.
+因为 $a$ 为整数, 所以 $a=2$. 于是
+$$
+x=1250 \times(208-71 \times 2)=82500 .
+$$
+所以, 小明家原来的电话号码为 282500 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 求集合 $\{1,2,3, \cdots, 2009\}$ 的元素和为奇数的非空子集的个数.
+%%<SOLUTION>%%
+令 $f(x)=(1+x)\left(1+x^2\right)\left(1+x^3\right) \cdots\left(1+x^{2009}\right)$, 则问题中要求的答案为 $f(x)$ 的展开式中, $x$ 的奇次项的系数和.
+故所求的答案为 $\frac{f(1)-f(-1)}{2}=$
+$$
+\frac{2^{2009}-0}{2}=2^{2008} \text {. }
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 证明: 存在无穷多对正整数 $(m, n)$, 满足方程
+$$
+m^2+25 n^2=10 m n+7(m+n) .
+$$
+%%<SOLUTION>%%
+证法一:原方程可以写为
+$$
+m^2-(10 n+7) m+25 n^2-7 n=0,
+$$
+于是
+$$
+\Delta=(10 n+7)^2-4\left(25 n^2-7 n\right)=168 n+49
+$$
+是完全平方数.
+取 $168 n+49=49(12 k+1)^2$, 其中 $k$ 是任意一个正整数,则 $n=42 k^2+7 k$.
+于是
+$$
+\begin{aligned}
+m & =\frac{10 n+7 \pm \sqrt{\Delta}}{2}=\frac{10\left(42 k^2+7 k\right)+7 \pm 7(12 k+1)}{2} \\
+& =210 k^2-7 k \text { 或 } 210 k^2+77 k+7 .
+\end{aligned}
+$$
+所以, 存在无穷多对正整数 $(m, n)=\left(210 k^2-7 k, 42 k^2+7 k\right)$ (其中 $k$ 是正整数) 满足题设方程.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 证明: 存在无穷多对正整数 $(m, n)$, 满足方程
+$$
+m^2+25 n^2=10 m n+7(m+n) .
+$$
+%%<SOLUTION>%%
+证法二: 原方程可写为
+$$
+(m-5 n)^2=7(m+n),
+$$
+所以可设
+$$
+m+n=7 x^2 \left( x \text { 是正整数 }\right) , \label{eq1}
+$$
+取
+$$
+m-5 n=7 x . \label{eq2}
+$$
+式\ref{eq1} - \ref{eq2}得
+$$
+6 n=7 x(x-1) .
+$$
+令 $x=6 y$ ( $y$ 是任意正整数), 则 $n=42 y^2-7 y$. 于是
+$$
+m=7 \cdot 36 y^2-\left(42 y^2-7 y\right)=210 y^2+7 y .
+$$
+所以,存在无穷多对正整数 $(m, n)=\left(210 y^2+7 y, 42 y^2-7 y\right)$ (其中 $y$ 是任意正整数) 满足题设方程.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 求所有正整数 $n$, 使得 $n=d^2(n)(d(n)$ 表示正整数 $n$ 的正约数个数). 
+%%<SOLUTION>%%
+显然 $d^2(1)=1$, 故 $n=1$ 时满足题意.
+下面考虑 $n$ 和 $d(n)$ 大于 1 的情况.
+设 $d(n)=p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}$ 为 $d(n)$ 的标准素因数分解, 由已知得 $n$ 的标准分解为 $n=p_1^{2 \alpha_1} p_2^{2 \alpha_2} \cdots p_k^{2 \alpha_k}$, 从而又有 $d(n)=\left(2 \alpha_1+1\right)\left(2 \alpha_2+1\right) \cdots\left(2 \alpha_k+1\right)$, 即
+$$
+p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_{k^k}^{\alpha_k}=\left(2 \alpha_1+1\right)\left(2 \alpha_2+1\right) \cdots\left(2 \alpha_k+1\right) . \label{eq1}
+$$
+显然式\ref{eq1}右边为奇数,故 $p_1, p_2, \cdots, p_k$ 为奇素数, 所以
+$$
+p_i^{\alpha_i} \geqslant 3^{\alpha_i}=(1+2)^{\alpha_i} \geqslant 1+2 \alpha_i(i=1,2, \cdots, k),
+$$
+且等号当且仅当 $p_i=3, \alpha_i=1$ 时成立.
+因此, 为使式\ref{eq1}成立, 只能是 $k=1, p_1=3, \alpha_1=1$, 即 $n=3^2=9$.
+综上可知满足条件的正整数 $n$ 是 1 和 9 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 对给定实数 $x$, 求表达式 $S=\sum_{n=1}^{\infty} \frac{(-1)^{\left[2^n x\right]}}{2^n}$ 的值.
+%%<SOLUTION>%%
+设 $x=\left(\overline{a_k a_{k-1} \cdots a_0 . b_1 b_2 \cdots}\right)_2$ 为 $x$ 的标准二进制表示, 则对任意 $n \in \mathbf{N}^*$, 有
+$$
+\left[2^n x\right]=\left(\overline{a_k a_{k-1} \cdots a_0 b_1 b_2 \cdots b_n}\right)_2 \equiv b_n(\bmod 2),
+$$
+考虑到 $b_n \in\{0,1\}$, 故必有 $(-1)^{\left[2^n x\right]}=(-1)^{b_n}=1-2 b_n$, 从而
+$$
+\begin{aligned}
+S & =\sum_{n=1}^{\infty} \frac{1-2 b_n}{2^n}=\sum_{n=1}^{\infty} \frac{1}{2^n}-2 \cdot \sum_{n=1}^{\infty} \frac{b_n}{2^n}=1-2 \cdot\left(\overline{0 . b_1 b_2 \cdots}\right)_2 \\
+& =1-2(x-[x])=1+2[x]-2 x .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 若 $a, b, c, x, y, z \in \mathbf{R}$, 满足 $\left\{\begin{array}{l}\cos (x+y+z)=a \cos x+b \cos y+c \cos z, \\ \sin (x+y+z)=a \sin x+b \sin y+c \sin z,\end{array}\right.$ 证明: $\left\{\begin{array}{l}a \cos (y+z)+b \cos (z+x)+c \cos (x+y)=1, \\ a \sin (y+z)+b \sin (z+x)+c \sin (x+y)=0 .\end{array}\right.$
+%%<SOLUTION>%%
+考虑到
+$$
+\begin{gathered}
+\mathrm{e}^{\mathrm{i} x}=\cos x+\mathrm{i} \sin x, \mathrm{e}^{\mathrm{i} y}=\cos y+\mathrm{i} \sin y, \mathrm{e}^{\mathrm{i} z}=\cos z+\mathrm{i} \sin z, \\
+\mathrm{e}^{\mathrm{i}(x+y+z)}=\cos (x+y+z)+\mathrm{i} \sin (x+y+z),
+\end{gathered}
+$$
+结合已知条件可得
+$$
+\begin{aligned}
+a \mathrm{e}^{\mathrm{i} x}+b \mathrm{e}^{\mathrm{i} y}+c \mathrm{e}^{\mathrm{i} z} & =(a \cos x+b \cos y+c \cos z)+\mathrm{i}(a \sin x+b \sin y+c \sin z) \\
+& =\cos (x+y+z)+\mathrm{i} \sin (x+y+z)=\mathrm{e}^{\mathrm{i}(x+y+z)} .
+\end{aligned}
+$$
+上式两边乘以 $\mathrm{e}^{-i(x+y+z)}$ 得
+$$
+Z=a \mathrm{e}^{-\mathrm{i}(y+z)}+b \mathrm{e}^{-\mathrm{i}(z+x)}+c \mathrm{e}^{-\mathrm{i}(x+y)}=1,
+$$
+从而
+$$
+\left\{\begin{array}{l}
+a \cos (y+z)+b \cos (z+x)+c \cos (x+y)=\operatorname{Re} Z=1, \\
+a \sin (y+z)+b \sin (z+x)+c \sin (x+y)=-\operatorname{lm} Z=0 .
+\end{array}\right.
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 四边形 $A B C D$ 中, 以边 $A B, B C, C D, D A$ 为斜边分别向四边形外侧作等腰直角三角形 $\triangle A B E, \triangle B C F, \triangle C D G, \triangle D A H$. 证明 $E G$ 与 $F H$ 垂直且相等.
+%%<SOLUTION>%%
+用复数法.
+设 $A, B, C, D, E, F, G, H$ 分别对应复数 $a, b, c, d, e, f, g, h$. 不妨设 $A, B, C, D$ 依逆时针排列, 则 $E G$ 所对应的复数
+$$
+\begin{aligned}
+g-e & =(g-d)+(d-a)+(a-e) \\
+& =\frac{\sqrt{2}}{2} \mathrm{e}^{\frac{\pi \mathrm{i}}{4}}(c-d)+(d-a)+\frac{\sqrt{2}}{2} \mathrm{e}^{-\frac{\pi \mathrm{ij}}{4}}(a-b) \\
+& =\frac{1+\mathrm{i}}{2}(c-d)+(d-a)+\frac{1-\mathrm{i}}{2}(a-b) \\
+& =\frac{-a-b+c+d}{2}+\frac{-a+b+c-d}{2} \mathrm{i} .
+\end{aligned}
+$$
+同理可求得 $F H$ 所对应的复数
+$$
+h-f=\frac{-b-c+d}{2}+\frac{-a}{-}+\frac{b+c+d-a}{2} \text { i. }
+$$
+所以 $h-f=(g-e) \mathrm{i}$, 即 $E G$ 与 $F H$ 垂直且相等.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设 $H$ 是锐角三角形 $A B C$ 的垂心, 由 $A$ 向以 $B C$ 为直径的圆作切线 $A P$, $A Q$, 切点分别为 $P, Q$. 求证: $P, H, Q$ 三点共线.
+%%<SOLUTION>%%
+本题是一个平面几何题, 可以用纯几何的方法加以证明, 如图(<FilePath:./figures/fig-c10a8.png>),这里, 我们用解析法给出一个证明.
+以直线 $B C$ 为 $x$ 轴, 线段 $B C$ 的垂直平分线为 $y$ 轴建立直角坐标系, 设三角形 $A B C$ 的三个顶点的坐标分别为 $A(a, b), B(-r, 0), C(r, 0)$, 其中 $r$ 是圆 $O$ 的半径, 如图所示.
+于是, 圆 $O$ 的方程为 $x^2+y^2=r^2$.
+设点 $P 、 Q$ 的坐标分别为 $P\left(x_1, y_1\right) 、 Q\left(x_2, y_2\right)$, 则切线 $A P 、 B P$ 的方程为 $x x_1+y y_1=r^2$ 与 $x x_2+y y_2=r^2$, 因为这两条切线都过 $A$ 点, 所以 $a x_1+ b y_1=r^2, a x_2+b y_2=r^2$, 即 $P, Q$ 都在直线 $a x+b y=r^2$ 上, 此即直线 $P Q$ 的方程.
+设 $B F$ 与 $C E$ 是三角形 $A B C$ 的两条高, 因为直线 $A C$ 的斜率为 $\frac{b}{a-r}$, 所以直线 $B F$ 的斜率为 $\frac{r-a}{b}$, 故直线 $B F$ 的方程为 $y=\frac{r-a}{b}(x+r)$, 即
+$$
+(a-r) x+b y=r^2-a r ; \label{eq1}
+$$
+同理可得, 直线 $C E$ 的方程为
+$$
+(a+r) x+b y=r^2+a r . \label{eq2}
+$$
+由 式\ref{eq1} + \ref{eq2}, 得
+$$
+a x+b y=r^2, \label{eq3}
+$$
+即点 $H$ 的坐标满足方程.
+而 式\ref{eq3} 就是直线 $P Q$ 的方程, 所以, $P, H, Q$ 三点共线.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 对于正整数 $n$, 令 $f_n=\left[2^n \cdot \sqrt{2008}\right]+\left[2^n \cdot \sqrt{2009}\right]$. 求证: 数列 $f_1$, $f_2, \cdots$ 中有无穷多个奇数和无穷多个偶数 ( [ $\left.x\right]$ 表示不超过 $x$ 的最大整数). 
+%%<SOLUTION>%%
+记 $x-[x]=\{x\}$, 设 $a, b$ 分别为 $\{\sqrt{2008}\}$ 与 $\{\sqrt{2009}\}$ 在二进制下的表示.
+由于 $\sqrt{2008}$ 和 $\sqrt{2009}$ 是无理数,故 $a, b$ 是不循环小数,而 $f_n$ 的奇偶性取决于 $a, b$ 小数点后第 $n$ 位是否相同.
+假设 $f_1, f_2, \cdots$ 中只有有限个奇数, 则存在某个 $n \in \mathbf{N}^*$, 使 $f_n, f_{n+1}, \cdots$ 均为偶数, 即小数点后第 $n$ 位起 $a, b$ 是一样的,故 $a-b$ 实际上是有限小数,但
+$a-b$ 显然是无理数, 矛盾! 再假设 $f_1, f_2, \cdots$ 中只有有限个偶数, 则存在某个 $n \in \mathbf{N}^*$, 使 $f_n, f_{n+1}, \cdots$ 均为奇数, 即 $a, b$ 在小数点后第 $n$ 位起的每个数位上都不一样,于是 $a+b$ 在该数位上等于 1 , 这样 $a+b$ 是有限小数, 但 $a+b$ 显然是无理数, 矛盾!
+从而原命题成立.
+%%PROBLEM_END%%
+
+

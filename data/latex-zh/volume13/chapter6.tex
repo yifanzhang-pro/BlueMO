@@ -1,0 +1,80 @@
+
+%%TEXT_BEGIN%%
+间距估计.
+考虑这样的问题: 设 $X$ 是给定的集合, $A$ 是 $X$ 的具有某种性质的子集, 求 $|A|$ 的最大值.
+对此, 可将集合中元素适当排序, 然后估计相邻元素间的距离, 由此得到元素个数的估计.
+这种估计方法简称间距估计.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $M=\{1,2, \cdots, 2005\}, A$ 是 $M$ 的子集, 若对任何 $a_i, a_j \in A$, $a_i \neq a_j$, 都能以 $a_i 、 a_j$ 为边长唯一地确定一个等腰三角形, 求 $|A|$ 的最大值.
+%%<SOLUTION>%%
+分析:考虑在什么条件下, 两个数 $a 、 b(a<b)$ 能唯一地确定一个以 $a 、 b$ 为其两边的等腰三角形, 这等价于 (注意 $a 、 b 、 b$ 必构成等腰三角形) 三数组 $(a, a, b)$ 不构成等腰三角形.
+也等价于 $a+a \leqslant b$, 即 $2 a \leqslant b$. 由此, 即可作间距估计.
+解当 $a<b$ 时, $a 、 b 、 b$ 必构成等腰三角形,所以,两个数 $a 、 b$ 唯一地确定一个以 $a 、 b$ 为其两边的等腰三角形,等价于 $a 、 a 、 b$ 不构成等腰三角形,即 $2 a \leqslant b$.
+设 $A=\left\{a_1<a_2<\cdots<a_n\right\}$ 是 $M$ 的一个合乎条件的子集, 则 $2 a_i \leqslant a_{i+1}$ (间距估计). 于是, $2005 \geqslant a_n \geqslant 2 a_{n-1} \geqslant \cdots \geqslant 2^{n-1} a_1 \geqslant 2^{n-1}$, 所以 $n \leqslant 11$.
+其次, 令 $A=\{1,2,4, \cdots, 1024\}$, 则 $|A|=11$. 且对任何 $a_i 、 a_j \in A$, 设 $i<j$, 则 $a_i=2^{i-1}, a_j=2^{j-1}$, 有 $2 a_i=2^i \leqslant 2^{j-1}=a_j$, 从而以 $a_i 、 a_j$ 只能作唯一的等腰三角形 $\left(a_i, a_j, a_j\right)$, 所以 $A$ 合乎条件.
+综上所述, $|A|$ 的最大值为 11 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $A$ 是正整数集合 $\mathbf{N}^*$ 的子集, 对任何 $x, y \in A, x \neq y$, 有 $\mid x- y \mid \geqslant \frac{x y}{25}$. 求 $|A|$ 的最大值.
+%%<SOLUTION>%%
+分析:考虑能否去掉条件中含有的绝对值符号, 这就要求集合中的任两个元素都具有确定的大小关系.
+由此想到将集合中的元素排序, 进而利用条件,得到元素的间距估计.
+解不妨设 $A=\left\{a_1<a_2<\cdots<a_n\right\}$, 则条件变为: 对任何 $i<j$, 有 $a_j-a_i \geqslant \frac{a_j a_i}{25}$. 于是, $a_{i+1}-a_i \geqslant \frac{a_i a_{i+1}}{25}$, 即 $\frac{1}{a_i}-\frac{1}{a_{i+1}} \geqslant \frac{1}{25}$.
+令 $i=1,2, \cdots, n-1$, 并将得到的各式累加, 得 $\frac{1}{a_1}-\frac{1}{a_n} \geqslant \frac{n-1}{25}$, 所以 $\frac{1}{a_1}>\frac{n-1}{25}$. 所以 $n-1<\frac{25}{a_1} \leqslant 25, n \leqslant 25$. 但此估计过宽, 我们采用"起点后移" 的办法对之进行改进.
+令 $i=2,3, \cdots, n-1$, 并将得到的各式累加, 得 $\frac{1}{a_2}-\frac{1}{a_n} \geqslant \frac{n-2}{25}$. 所以 $\frac{1}{a_2}>\frac{n-2}{25}$, 所以 $2 \leqslant a_2<\frac{25}{n-2}, n<\frac{29}{2}, n \leqslant 14$. 经试验, 还要继续改进估计.
+类似地, 有 $3 \leqslant a_3<\frac{25}{n-3}, n \leqslant 11 ; 4 \leqslant a_4<\frac{25}{n-4}, n \leqslant 10 ; 5 \leqslant a_5< \frac{25}{n-5}, n \leqslant 9 ; 6 \leqslant a_6<\frac{25}{n-6}, n \leqslant 10$. 由 $n$ 的范围的变化趋势, 可猜想 $n \leqslant$ 9 是最好的估计.
+下面证明存在合乎条件的 9 元子集 $A$. 首先, 当 $x y \leqslant 25$ 时, 条件 $\mid x- y \mid \geqslant \frac{x y}{25}$ 显然满足.
+从而可取 $1,2,3,4,5 \in A$, 此时, $6 \notin A$. 否则 $|6-5|< \frac{30}{25}$, 不合条件.
+如此下去, 发现可取 $7,10,17,54 \in A$. 所以, $A=\{1,2,3,4$, $5,7,10,17,54\}$ 为所求.
+综上所述, $|A|$ 的最大值为 9 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $X=\{1,2, \cdots, n\}, A_i=\left\{a_i, b_i, c_i\right\}\left(a_i<b_i<c_i, i=1\right.$, $2, \cdots, m)$ 是 $X$ 的 3 元子集, 对任何 $A_i 、 A_j(1 \leqslant i<j \leqslant m), a_i=a_j, b_i= b_j, c_i=c_j$ 至多有一个成立, 求 $m$ 的最大值.
+%%<SOLUTION>%%
+解:于 $2 \leqslant k \leqslant n-1$, 考察以 $k$ 为中间元素的 3 元子集 $\left\{a_i, k, c_i\right\}$, 其中 $a_i<k<c_i$, 设这样的集合个数为 $f(k)$. 因为 $a_i$ 可在 $1,2, \cdots, k-1$ 中取值, 于是 $f(k) \leqslant k-1$. 又 $c_i$ 可在 $n, n-1, \cdots, k+1$ 中取值, 于是 $f(k) \leqslant n-k$. 所以 $f(k) \leqslant \min \{k-1, n-k\}$. 所以
+$$
+m=\sum_{k=2}^{n-1} f(k) \leqslant \sum_{k=2}^{n-1} \min \{k-1, n-k\}= \begin{cases}\frac{n(n-2)}{4} & (n \text { 为偶数 }), \\ \left(\frac{n-1}{2}\right)^2 & (n \text { 为奇数 }) .\end{cases}
+$$
+又取 $A_1, A_2, \cdots, A_m$ 为所有满足 $a+c=2 b$ 的 3 元子集 $\{a, b, c\}$, 则
+$$
+m= \begin{cases}\frac{n(n-2)}{4} & (n \text { 为偶数 }), \\ \left(\frac{n-1}{2}\right)^2 & (n \text { 为奇数 }) .\end{cases}
+$$
+故
+$$
+m_{\max }= \begin{cases}\frac{n(n-2)}{4} & (n \text { 为偶数 }), \\ \left(\frac{n-1}{2}\right)^2 & (n \text { 为奇数 }) .\end{cases}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $a_1<a_2<\cdots<a_n=100$, 其中 $a_1, a_2, \cdots, a_n$ 是正整数, 若对任何 $i \geqslant 2$, 都存在 $1 \leqslant p \leqslant q \leqslant r \leqslant i-1$, 使 $a_i=a_p+a_q+a_r$, 求 $n$ 的最大、最小值.
+%%<SOLUTION>%%
+解:(1) 显然 $n \neq 1,2$, 所以 $n \geqslant 3$.
+又当 $n=3$ 时,取 $a_1=20, a_2=60, a_3=100$, 则 $a_2=a_1+a_1+a_1$, $a_3=a_1+a_1+a_2$, 所以 $n=3$ 合乎条件,故 $n$ 的最小值为 3 .
+(2) 若 $a_1 \equiv 1(\bmod 2)$, 则 $a_2=3 a_1 \equiv 3 \equiv 1(\bmod 2)$. 设 $i \leqslant k(k \geqslant 2)$ 时, $a_k \equiv 1(\bmod 2)$, 则由 $a_{k+1}=a_p+a_q+a_r$, 其中 $(p \leqslant q \leqslant r \leqslant k)$, 及归纳假设 $a_p \equiv 1(\bmod 2), a_q \equiv 1(\bmod 2), a_r \equiv 1(\bmod 2)$, 有 $a_{k+1}=a_p+a_q+a_r \equiv 1+1+1 \equiv 1(\bmod 2)$, 所以对一切 $i=1,2, \cdots, n$, 有 $a_i \equiv 1(\bmod 2)$, 这与 $100 \equiv 0(\bmod 2)$ 矛盾,所以 $a_1 \equiv 0(\bmod 2)$ ,进而 $a_1 \equiv 0 、 2(\bmod 4)$;
+若 $a_1 \equiv 2(\bmod 4)$, 则 $a_2=3 a_1 \equiv 6 \equiv 2(\bmod 4)$. 设 $i \leqslant k(k \geqslant 2)$ 时, $a_k \equiv 2(\bmod 4)$, 则由 $a_{k+1}=a_p+a_q+a_r$, 其中 $(p \leqslant q \leqslant r \leqslant k)$, 及归纳假设 $a_p \equiv 2(\bmod 4), a_q \equiv 2(\bmod 4), a_r \equiv 2(\bmod 4)$, 有 $a_{k+1}=a_p+a_q+a_r \equiv 2+2+2 \equiv 2(\bmod 4)$, 所以对一切 $i=1,2, \cdots, n$, 有 $a_i \equiv 2(\bmod 4)$, 这与 $100 \equiv 0(\bmod 4)$ 矛盾,所以 $a_1 \equiv 0(\bmod 4)$ ,进而 $a_1 \equiv 0 、 4(\bmod 8)$;
+若 $a_1 \equiv 0(\bmod 8)$, 则 $a_2=3 a_1 \equiv 0(\bmod 8)$. 设 $i \leqslant k(k \geqslant 2)$ 时, $a_k \equiv 0(\bmod 8)$, 则由 $a_{k+1}=a_p+a_q+a_r$, 其中 $(p \leqslant q \leqslant r \leqslant k)$, 及归纳假设 $a_p \equiv 0(\bmod 8), a_q \equiv 0(\bmod 8), a_r \equiv 0(\bmod 8)$, 有 $a_{k+1}=a_p+a_q+a_r \equiv 0+0+ 0 \equiv 0(\bmod 8)$, 所以对一切 $i=1,2, \cdots, n$, 有 $a_i \equiv 0(\bmod 8)$, 这与 $100 \equiv 4(\bmod 8)$ 矛盾,所以 $a_1 \equiv 4(\bmod 8)$, 所以 $a_1 \geqslant 4$.
+因为 $a_1 \equiv 4(\bmod 8)$, 所以 $a_2=3 a_1 \equiv 12 \equiv 4(\bmod 8)$. 设 $i \leqslant k(k \geqslant 2)$ 时, $a_k \equiv 4(\bmod 8)$, 则由 $a_{k+1}=a_p+a_q+a_r$, 其中 $(p \leqslant q \leqslant r \leqslant k)$, 及归纳假设, $a_p \equiv 4(\bmod 8), a_q \equiv 4(\bmod 8), a_r \equiv 4(\bmod 8)$, 有 $a_{k+1}=a_p+a_q+a_r \equiv 4+4+4 \equiv 4(\bmod 8)$, 所以对一切 $i=1,2, \cdots, n$, 有 $a_i \equiv 4(\bmod 8)$, 所以对 $i \geqslant 2$, 有 $a_i-a_{i-1} \equiv 0(\bmod 8)$, 所以 $a_i-a_{i-1} \geqslant 8$ (间距估计), 即 $a_i \geqslant a_{i-1}+8$.
+所以 $a_n \geqslant a_{n-1}+8 \geqslant a_{n-2}+2 \times 8 \geqslant a_{n-3}+3 \times 8 \geqslant \cdots \geqslant a_1+(n-1) \times 8 \geqslant 4+(n-1) \times 8=8 n-4$, 所以 $8 n \leqslant a_n+4=104$, 所以 $n \leqslant 13$.
+又当 $n=13$ 时,取 $a_i=8 i-4(i=1,2, \cdots, 13)$, 则对 $i \geqslant 2$, 有 $a_i= a_{i-1}+8=a_{i-1}+a_1+a_1$, 所以 $n=13$ 合乎条件,故 $n$ 的最大值为 13 .
+综上所述, $n$ 的最小值为 3 , 最大值为 13 .
+%%<REMARK>%%
+注:: $n$ 有多种取值, 比如 $n=5$ 时, $4,12,36,44,100$ 合乎条件, 实际上, $12=4+4+4,36=12+12+12,44=36+4+4,100=44+44+12$.
+%%PROBLEM_END%%
+
+

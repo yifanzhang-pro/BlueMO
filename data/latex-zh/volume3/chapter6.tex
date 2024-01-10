@@ -1,0 +1,670 @@
+
+%%TEXT_BEGIN%%
+三角函数的综合应用,三角主要研究三角函数和三角形的解法, 与代数、儿何的研究方法有所不同.
+但三角函数的特殊性质和众多的变形公式, 又是代数、几何所不及的, 在一定的条件下,它们又可以相互转化、相互渗透.
+由于三角源于三角形测量, 它在沟通形与数的联系方面有独特的优势, 能将某些几何问题转化为三角形的边或角的三角函数之间的关系加以研究, 将几何中的推理论证转化为三角函数的恒等变换, 从而降低几何问题的思维难度,这种方法就是三角法证(算)平面几何题.
+对于某些代数问题,转化为易于处理的三角式, 这种方法称为三角变换.
+如将无理式转化为有理式, 将条件和结论比较隐晦或复杂的通过三角代换使之明朗化等.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. $ \alpha$ 是 $(0,1)$ 内一个实数, 考虑数列 $\left\{x_n\right\}(n=0,1,2, \cdots)$, 其中 $x_0=\alpha, x_n=\frac{4}{\pi^2}\left(\arccos x_{n-1}+\frac{\pi}{2}\right) \cdot \arcsin x_{n-1}, n=1,2,3, \cdots$.
+求证: 当 $n$ 趋于无限时, 数列 $\left\{x_n\right\}, n=0,1,2, \cdots$ 有一个极限, 并求这个极限.
+%%<SOLUTION>%%
+证明:设 $\arccos x_{n-1}=\theta, \arcsin x_{n-1}=\varphi$, 其中 $\theta \in[0, \pi], \varphi \in\left[-\frac{\pi}{2}\right.$, $\left.\frac{\pi}{2}\right]$, 因此有 $\cos \theta=x_{n-1}=\sin \varphi=\cos \left(\frac{\pi}{2}-\varphi\right)$.
+因为 $\frac{\pi}{2}-\varphi \in[0, \pi], \theta \in[0, \pi]$, 所以 $\theta=\frac{\pi}{2}-\varphi$.
+即
+$$
+\arccos x_{n-1}=\frac{\pi}{2}-\arcsin x_{n-1},
+$$
+故
+$$
+x_n=\frac{4}{\pi^2}\left(\arccos x_{n-1}+\frac{\pi}{2}\right)\left(\frac{\pi}{2}-\arccos x_{n-1}\right), \quad\quad(1)
+$$
+即
+$$
+x_n=1-\frac{4}{\pi^2} \arccos ^2 x_{n-1},
+$$
+已知 $x_0 \in(0,1)$, 设 $x_{n-1} \in(0,1)$, 则 $0<\left|\arccos x_{n-1}\right|<\frac{\pi}{2}$, 从而由 (1) 可知 $x_n \in(0,1)$, 因此,对于任意非负整数 $n$, 都有 $x_n \in(0,1)$.
+下面证明 $x_n$ 递增, 即证 $1-\frac{4}{\pi^2} \arccos ^2 x_{n-1}>x_{n-1} \Leftrightarrow \frac{\pi^2}{4}\left(1-x_{n-1}\right)> \arccos ^2 x_{n-1}(n \in \mathbf{N})$, 因为 $\arccos x_{n-1}=\theta$, 上式等价于 $\frac{\pi^2}{4}(1-\cos \theta)>\theta^2 \Leftrightarrow \frac{\pi^2}{2} \sin \frac{2 \theta}{2}>\theta^2$, 从而只需证明
+$$
+\sin \frac{\theta}{2}>\frac{\sqrt{2}}{\pi} \theta, \theta \in\left(0, \frac{\pi}{2}\right), \quad\quad(2)
+$$
+作函数 $y=\sin \frac{\theta}{2}, \theta \in\left(0, \frac{\pi}{2}\right)$ 的图象(如图(<FilePath:./figures/fig-c6i1.png>)), 连结这段正弦曲线的两个端点的直线段方程是 $y= \frac{\sqrt{2}}{\pi} \theta, 0<\theta<\frac{\pi}{2}$, 由正弦函数的凸性可知, 这一段正弦曲线在这一个直线段的上方.
+因此, 当 $\theta \in(0$, $\left.\frac{\pi}{2}\right)$ 时,有 $\sin \frac{\theta}{2}>\frac{\sqrt{2}}{\pi} \theta$, 从而 (2) 式成立.
+即 $x_n>$
+$x_{n-1}$,也就是说给定数列严格单调递增.
+再由 $x_n<1, n \in \mathrm{N}$. 即知, 当正整数 $n$ 趋于无限时, $x_n$ 的极限存在, 设 $\lim _{n \rightarrow \infty} x_n=\beta, 0<\beta \leqslant 1$.
+在(1)式两端同时取极限,有 $\beta=1-\frac{4}{\pi^2} \arccos ^2 \beta$.
+令 $t=\arccos \beta, 0 \leqslant t<\frac{\pi}{2}$, 代入前一式, 得 $\cos t=1-\frac{4}{\pi^2} t^2$, 即 $\sin ^2 \frac{t}{2}= \frac{2}{\pi^2} t^2 \Rightarrow \sin \frac{t}{2}=\frac{\sqrt{2}}{\pi} t$, 由 (2) 式知, 上式只有一解 $t=0$, 从而 $\beta=\cos t=1$, 故所求极限为 1 .
+评注利用三角函数有界及单调性来证明极限的存在.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 是否存在两个实数列 $\left\{a_n\right\},\left\{b_n\right\},(n \in \mathbf{N})$, 使得对于每一个 $n \in \mathbf{N}$ 和 $x \in(0,1)$, 都有 $\frac{3}{2} \pi \leqslant a_n \leqslant b_n, \cos a_n x+\cos b_n x \geqslant-\frac{1}{n}$ ?
+%%<SOLUTION>%%
+解:如果存在满足所给条件的数列 $\left\{a_n\right\}$ 和 $\left\{b_n\right\}$, 由于 $0<\frac{\pi}{a_n} \leqslant \frac{2}{3}<1$, 可得 $\cos \frac{b_n}{a_n} \pi \geqslant 1-\frac{1}{n}$, 取 $x=\frac{\pi}{a_n}$, 再由 $\frac{b_n}{a_n} \pi \geqslant \pi$, 可知存在 $k_n \in \mathbf{N}$ 和 $\varphi_n$ 使得
+$\left|\varphi_n\right| \leqslant \arccos \left(1-\frac{1}{n}\right) \leqslant \frac{\pi}{2}$, 且 $\pi \leqslant \frac{b_n}{a_n} \pi=\varphi_n+2 k_n \pi. \quad\quad(1)$
+由(1)可得 $0<\left(2 k_n-1\right) \pi<\frac{b_n}{a_n} \pi \Rightarrow 0<\frac{\left(2 k_n-1\right) \pi}{b_n}<\frac{\pi}{a_n} \leqslant \frac{2}{3}<1$.
+于是, 对任意 $n \in \mathbf{N}$, 有 $\cos \frac{a_n}{b_n}\left(2 k_n-1\right) \pi \geqslant 1-\frac{1}{n}$,
+由(1)和(2)得, $\cos \theta_n \geqslant 1-\frac{1}{n}$, 对于任意 $n \in \mathbf{N}$, 成立.
+其中 $\theta_n=\frac{\left(2 k_n-1\right) \pi^2}{\varphi_n+2 k_n \pi}$.
+显然对于每一个 $n \in \mathbf{N}$, 都有 $0<\frac{\left(2 k_n-1\right) \pi}{\left(2 k_n+1\right)}<\theta_n<\pi$, 所以
+$$
+\cos \frac{2 k_n-1}{2 k_n+1} \pi=\cos \left(1-\frac{2}{2 k_n+1}\right) \pi \geqslant 1-\frac{1}{n} \quad\quad(2).
+$$
+由于 $k_n \in \mathbf{N}$, 从而 $\frac{\pi}{3} \leqslant\left(1-\frac{2}{2 k_n+1}\right) \pi, n=1,2,3, \cdots$. 于是对于任意 $n \in \mathbf{N}$, 有 $\frac{1}{2}=\cos \frac{\pi}{3} \geqslant 1-\frac{1}{n}$, 矛盾.
+以上证明了满足要求条件的数列 $\left\{a_n\right\},\left\{b_n\right\}$ 不存在.
+评注这类问题,假设存在,推出矛盾.
+从而否定存在,或举出满足条件的数列.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $a 、 b 、 c$ 是正实数且 $a b c+a+c=b$, 求 $P=\frac{2}{a^2+1}+\frac{3}{c^2+1}- \frac{2}{b^2+1}$ 的最大值.
+%%<SOLUTION>%%
+解:由 $a b c+a+c=b \Rightarrow b=\frac{a+c}{1-a c}(a c \neq 1)$, 令 $a=\tan \alpha, b=\tan \beta$, $c=\tan \gamma\left(\alpha, \beta, \gamma \in\left(0, \frac{\pi}{2}\right)\right)$, 则 $\tan \beta=\frac{\tan \alpha+\tan \gamma}{1-\tan \alpha \tan \gamma}=\tan (\alpha+\gamma)$, 故 $\beta= \alpha+\gamma$,从而
+$$
+\begin{aligned}
+P & =\frac{2}{1+\tan ^2 \alpha}-\frac{2}{1+\tan ^2 \beta}+\frac{3}{1+\tan ^2 \gamma} \\
+& =2 \cos ^2 \alpha-2 \cos ^2(\alpha+\gamma)+3 \cos ^2 \gamma \\
+& =1+\cos 2 \alpha-[1+\cos 2(\alpha+\gamma)]+3 \cos ^2 \gamma \\
+& =2 \sin \gamma \sin (2 \alpha+\gamma)+3 \cos ^2 \gamma \leqslant 2 \sin \gamma+3-3 \sin ^2 \gamma \\
+& =-3\left(\sin \gamma-\frac{1}{3}\right)^2+\frac{10}{3} \leqslant \frac{10}{3} .
+\end{aligned}
+$$
+当且仅当 $2 \alpha+\gamma=\frac{\pi}{2}$ 且 $\sin \gamma=\frac{1}{3}$ 时, 等号成立.
+即 $a=\frac{\sqrt{2}}{2}, b=\sqrt{2}, c=$
+$$
+\frac{\sqrt{2}}{4} \text { 时, } P_{\text {max }}=\frac{10}{3} \text {. }
+$$
+评注形如 $\frac{2 x}{1 \pm x}, \frac{1-x^2}{1+x^2}, \frac{x-y}{1+x y}, \frac{x+y}{1-x y}, \sqrt{a^2+x^2}$ 等代数式中的 $x, y$,可用正 (余) 切代换, 而 $\sqrt{1-x^2}$ 之类的 $x$ 常可用正 (余) 弦代换, $\sqrt{x^2-a^2}$ 之类用正(余) 割代换.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 由沿河城市 $A$ 运货到城市 $B, B$ 离河岸最近点 $C$ 为 $30 \mathrm{~km}, C$ 和 $A$ 的距离为 $40 \mathrm{~km}$, 如果每公里运费水路比公路便宜一半, 如图(<FilePath:./figures/fig-c6i2.png>) 所示,计划沿 $B D$ 修一条公路,则 $A 、 D$ 之间距离为多少时,运费最低?
+%%<SOLUTION>%%
+分析:利用函数求最值问题时, 关键是参数的假定, 究竟以哪个量作为自变量呢? 本题设$\angle C D B=\theta$ 最佳.
+解设 $\angle B D C=\theta$, 则 $B D=\frac{30}{\sin \theta}, A D=40-\frac{30}{\tan \theta}$, 且 $\arctan \frac{3}{4}<\theta<\frac{\pi}{2}$.
+设每公里运费水路和公路分别为 $a$ 和 $2 a$, 不妨设由 $A$ 到 $B$ 的单程运费为 $y$, 则
+$$
+y=a\left(40-\frac{30}{\tan \theta}\right)+2 a \cdot \frac{30}{\sin \theta}=10 a \cdot\left(4+3 \cdot \frac{2-\cos \theta}{\sin \theta}\right),
+$$
+令 $k=\frac{2-\cos \theta}{\sin \theta}$, 则 $\cos \theta+k \sin \theta=2, \sqrt{1+k^2} \sin (\theta+\varphi)=2$.
+其中 $\sin \varphi=\frac{1}{\sqrt{1+k^2}}, \cos \varphi=\frac{k}{\sqrt{1+k^2}}$, 于是 $\frac{2}{\sqrt{1+k^2}} \leqslant 1$, 解得
+$$
+k \geqslant \sqrt{3} \text {, 即 } y \geqslant 10(4+3 \sqrt{3}) a \text {. }
+$$
+所以, 当 $k=\sqrt{3}$, 即 $\cos \theta+\sqrt{3} \sin \theta=2, \theta=60^{\circ}$ 时, $y$ 有最小值 $10(4+3 \sqrt{3}) a$, 此时 $A D=40-10 \sqrt{3}(\mathrm{~km})$.
+答: 当 $A 、 D$ 之间距离为 $40-10 \sqrt{3} \mathrm{~km}$ 时, 运费最低.
+评注本题如直接设 $A D=x \mathrm{~km}$, 则 $C D=40-x, B D= \sqrt{30^2+(40-x)^2}$, 从而 $y=a x+2 a \sqrt{900+(40-x)^2}$, 这个函数的最值问题, 仍宜采用三角换元法来解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 求证: 对任意 $n \in \mathbf{N}, \alpha \in \mathbf{R}$, 并且 $n \neq 1, \sin \alpha \neq 0$, 多项式 $P(x)= x^n \sin \alpha-x \sin n \alpha+\sin (n-1) \alpha$ 被多项式 $Q(x)=x^2-2 x \cos \alpha+1$ 整除.
+%%<SOLUTION>%%
+证明:因为 $Q(x)=x^2-2 x \cos \alpha+1=[x-(\cos \alpha+i \sin \alpha)][x- (\cos \alpha-i \sin \alpha)$ ], 由 $P(\cos \alpha \pm i \sin \alpha)=(\cos \alpha \pm i \sin \alpha)^n \sin \alpha-(\cos \alpha \pm i \sin \alpha) \sin n \alpha+\sin (n-1) \alpha=(\cos n \alpha \pm i \sin n \alpha) \sin \alpha-(\cos \alpha \pm i \sin \alpha) \sin n \alpha+\sin (n-$ 1) $\alpha=\cos n \alpha \sin \alpha-\cos \alpha \sin n \alpha+\sin (n-1) \alpha=\sin (\alpha-n \alpha)-\sin (n-1) \alpha=0$.
+所以 $P(x)$ 被 $x-(\cos \alpha+i \sin \alpha)$ 与 $x-(\cos \alpha-i \sin \alpha)$ 整除, 从而被 $[x- (\cos \alpha+i \sin \alpha)][x-(\cos \alpha-i \sin \alpha)]=x^2-2 x \cos \alpha+1=Q(x)$ 整除.
+评注如果 $P(x)$ 是一个多次式函数, 且 $P(x)=0$ 有异根 $x_1, x_2, \cdots$, $x_n$, 则 $\prod_{i=1}^n\left(x-x_i\right) \mid P(x)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 要想在一块圆心角为 $\alpha(0<\alpha<\pi)$ 、半径为 $R$ 的扇形铁板中截出一块面积最大的矩形, 应该怎样截取? 求出这个矩形的面积.
+%%<SOLUTION>%%
+解:(1) 当 $0<\alpha \leqslant \frac{\pi}{2}$ 时,有两种截取的情形:
+情形 1: 如图(<FilePath:./figures/fig-c6i3-1.png>), 矩形的一条边落在半径上, 设 $A B=x, A D=y$, 在 Rt $\triangle A O D$ 中, $O D=\frac{y}{\sin \alpha}$, 在 $\triangle O D C$ 中, $\angle O D C=\pi-\alpha$, 由余弦定理得
+$$
+R^2=x^2+\frac{y^2}{\sin ^2 \alpha}-2 \cdot x \cdot \frac{y}{\sin \alpha} \cos (\pi-\alpha) \geqslant \frac{2 x y}{\sin \alpha}+\frac{2 x y \cos \alpha}{\sin \alpha},
+$$
+所以 $x y \leqslant \frac{R^2 \sin \alpha}{2(1+\cos \alpha)}=\frac{1}{2} R^2 \tan \frac{\alpha}{2}$. 当且仅当 $x=\frac{y}{\sin \alpha}$ 时等号成立.
+结合 $x y=\frac{1}{2} R^2 \tan \frac{\alpha}{2}$, 易求 $y=R \sin \frac{\alpha}{2}, O D=\frac{R}{2 \cos \frac{\alpha}{2}}$.
+情形 2 : 如图(<FilePath:./figures/fig-c6i3-2.png>), 矩形的两个顶点分别在两条半径上,另两个点在圆弧上, 如图所示, $E 、 F$ 分别是 $A B 、 C D$ 的中点, 则可化为情形 1 , 先求矩形 $E F C B$ 面积最大值, 最大面积为 $\frac{R^2}{2} \tan \frac{\alpha}{4}$. 根据对称性, 矩形 $A B C D$ 的最大面积为 $2 \cdot \frac{R^2}{2} \tan \frac{\alpha}{4}=R^2 \tan \frac{\alpha}{4}$. 此时 $O A=O B=\frac{R}{2 \cos \frac{\alpha}{4}}$.
+因为 $\tan \frac{\alpha}{2}=\frac{2 \tan \frac{\alpha}{4}}{1-\tan ^2 \frac{\alpha}{4}}, 0<\alpha \leqslant \frac{\pi}{2}$, 所以 $0<\frac{\alpha}{4}<\frac{\pi}{8}, 0<1- \tan ^2 \frac{\alpha}{4}<1$. 从而 $\tan \frac{\alpha}{2}>2 \tan \frac{\alpha}{4}$, 即 $\frac{R^2}{2} \tan \frac{\alpha}{2}>R^2 \tan \frac{\alpha}{4}$. 即 $0<\alpha \leqslant \frac{\pi}{2}$ 时, $S_{\max }=\frac{R^2}{2} \tan \frac{\alpha}{2}$.
+ (2)当 $\frac{\alpha}{2}<\alpha<\pi$ 时,也有两种截取的情形:
+情形 3: 如图(<FilePath:./figures/fig-c6i3-3.png>), 矩形的一条边在半径上, 设 $\angle A O B=\theta$, 则 $O A=R \cos \theta$, $A B=R \sin \theta$, 矩形 $O A B C$ 的面积
+$$
+S=O A \cdot A B=R^2 \sin \theta \cos \theta=\frac{1}{2} R^2 \sin 2 \theta .
+$$
+故 $\theta=\frac{\pi}{4}$ 时, $S_{\text {max }}=\frac{1}{2} R^2$.
+情形 4: 如图(<FilePath:./figures/fig-c6i3-4.png>), 矩形的两个顶点分别在两条半径上, 另两个顶点在圆弧上, 同情形 2 , 可求
+$S_{\text {max }}=R^2 \tan \frac{\alpha}{4}$. 当 $-\frac{1}{2} R^2 \geqslant R^2 \tan \frac{\alpha}{4}$, 即 $\frac{\pi}{2}<\alpha \leqslant 4 \arctan \frac{1}{2}$ 时, $S_{\text {max }}=\frac{R^2}{2}$ ;
+当 $\frac{1}{2} R^2<R^2 \tan \frac{\alpha}{4}$, 即 $4 \arctan \frac{1}{2}<\alpha<\pi$ 时, $S_{\text {max }}=R^2 \tan \frac{\alpha}{4}$.
+综上讨论得, 当 $0<\alpha \leqslant \frac{\pi}{2}$, 按图示 (1), 截取 $O D=\frac{R}{2 \cos \frac{\alpha}{2}}$;
+当 $\frac{\pi}{2}<\alpha \leqslant 4 \arctan \frac{1}{2}$ 时, 按图 (3), 截取 $\angle A O B=\frac{\pi}{4}$;
+当 $4 \arctan \frac{1}{2}<\alpha<\pi$ 时, 按图(<FilePath:./figures/fig-c6i3-4.png>), 截取 $O A=\frac{R}{2 \cos \frac{\alpha}{4}}$. 且
+$$
+S_{\max }=\left\{\begin{array}{l}
+\frac{1}{2} R^2 \tan \frac{\alpha}{2}, 0<\alpha \leqslant \frac{\pi}{2}, \\
+\frac{R^2}{2}, \frac{\pi}{2}<\alpha \leqslant 4 \arctan \frac{1}{2}, \\
+R^2 \tan \frac{\alpha}{4}, 4 \arctan \frac{1}{2}<\alpha<\pi .
+\end{array}\right.
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 已知实数 $x, y$ 满足 $4 x^2-5 x y+4 y^2=5$, 求 $x^2+y^2$ 的最大值和最小值.
+%%<SOLUTION>%%
+分析:从 $x^2+y^2$ 这一特征联想到 $\sin ^2 \alpha+\cos ^2 \alpha=1$, 所以利用三角换元法.
+解设 $x^2+y^2=p$, 则 $x=\sqrt{p} \cos \varphi, y=\sqrt{p} \sin \varphi$, 其中 $\varphi \in[0,2 \pi)$,代入已知等式得 $4 p-5 p \sin \varphi \cos \varphi=5$, 得 $p=\frac{5}{4-5 \sin \varphi \cos \varphi}=\frac{10}{8-5 \sin 2 \varphi}$. 所以当 $\sin 2 \varphi=1$ 时, $p$ 有最大值 $\frac{10}{3}$;
+当 $\sin 2 \varphi=-1$ 时, $p$ 有最小值 $\frac{10}{13}$.
+评注当题中出现 $x^2+y^2=a^2$ 时, 可令 $x=a \cos \varphi, y=a \sin \varphi$; 若 $x^2- y^2=a^2$, 则可令 $x=a \sec \varphi, y=a \tan \varphi$; 若 $x^2+y^2 \leqslant a^2(a>0)$ 时, 则可令 $x=k \cos \varphi, y=k \sin \varphi$, 其中 $|k| \leqslant a$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 已知 $x 、 y$ 都是正整数,且 $x-y=1$,
+$$
+A=\left(\sqrt{x}-\frac{1}{\sqrt{x}}\right)\left(\sqrt{y}+\frac{1}{\sqrt{y}}\right) \cdot \frac{1}{x},
+$$
+求证: $0<A<1$.
+%%<SOLUTION>%%
+分析:从 $x-y=1$ 这一特征联想到 $\sec ^2 \alpha-\tan ^2 \alpha=1$, 所以采用三角换元法.
+证明设 $x=\sec ^2 \alpha, y=\tan ^2 \alpha$, 其中 $\alpha \in\left(0, \frac{\pi}{2}\right)$, 于是
+$$
+\begin{aligned}
+A & =\left(\sec \alpha-\frac{1}{\sec \alpha}\right)\left(\tan \alpha+\frac{1}{\tan \alpha}\right) \cdot \frac{1}{\sec ^2 \alpha} \\
+& =\frac{1-\cos ^2 \alpha}{\cos \alpha} \cdot \frac{\sin ^2 \alpha+\cos ^2 \alpha}{\sin \alpha \cdot \cos \alpha} \cdot \cos ^2 \alpha=\sin \alpha .
+\end{aligned}
+$$
+因为 $0<\alpha<\frac{\pi}{2}$, 所以 $0<\sin \alpha<1$, 即 $0<A<1$.
+评注当题中出现 $x-y=a(x, y, a>0)$ 时, 可设 $x=a \sec ^2 \alpha, y= a \tan ^2 \alpha$, 其中 $\alpha \in\left(0, \frac{\pi}{2}\right)$; 在形如 $\sqrt{a^2-x^2}$ 中, 可设 $x=a \cos \alpha$, 其中 $\alpha \in[0$, $\pi]$, 或设 $x=a \sin \alpha$, 其中 $\alpha \in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$; 在形如 $\sqrt{x^2-a^2}$ 中, 可设 $x=a \sec \alpha$, 其中 $\alpha \in\left[0, \frac{\pi}{2}\right) \cup\left(\frac{\pi}{2}, \pi\right]$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 证明: $\frac{1}{\sqrt{2006}}<\underbrace{\sin \sin \cdots \sin }_{2005 } \frac{\sqrt{2}}{2}<\frac{2}{\sqrt{2006}}$.
+%%<SOLUTION>%%
+分析:把问题一般化, 转证: 对任意 $n \in \mathbf{N}^*, n \geqslant 2$, 都有
+$$
+\sqrt{n+1}<\underbrace{\sin \sin \cdots \sin }_{n } \frac{\sqrt{2}}{2}<\frac{2}{\sqrt{n+1}} \quad\quad(1).
+$$
+证明先证明下述引理.
+引理设 $m \in \mathbf{N}^*, m \geqslant 2$, 则 $\frac{1}{\sqrt{m+1}}<\sin \frac{1}{\sqrt{m}}, \quad\quad(2)$
+并且
+$$
+\sin \frac{2}{\sqrt{m}}<\frac{2}{\sqrt{m+1}} . \quad\quad(3)
+$$
+引理证明对(2)式, 令 $m=\cot ^2 \alpha, \alpha \in\left(0, \frac{\pi}{2}\right)$, 则 (2) $\Leftrightarrow \sin \alpha<\operatorname{sintan} \alpha \Leftrightarrow \alpha<\tan \alpha$, 由三角函数解可知当 $\alpha \in\left(0, \frac{\pi}{2}\right)$ 时, $\sin \alpha<\alpha<\tan \alpha$, 故 (2) 成立.
+对于 (3) 式, 仍然令 $m=\cot ^2 \alpha, \alpha \in\left(0, \frac{\pi}{2}\right)$, 则 (3) $\Leftrightarrow \sin (2 \tan \alpha)< 2 \sin \alpha \Leftrightarrow \sin (\tan \alpha) \cos (\tan \alpha)<\sin \alpha \Leftrightarrow \tan \alpha \cos (\tan \alpha)<\sin \alpha \Leftrightarrow \cos (\tan \alpha)< \cos \alpha \Leftrightarrow \tan \alpha>\alpha$, 所以 (3) 式成立.
+注意, 上述证明中都需要用到 $\tan \alpha<\frac{\pi}{2}$. 这可由 $\tan \alpha=\frac{1}{\sqrt{n}} \leqslant \frac{\sqrt{2}}{2}<\frac{\pi}{2}$, 得到.
+现在回证(1)式, 由引理中的(2)可知,
+$$
+\underbrace{\sin \sin \cdots \sin }_{n } \frac{\sqrt{2}}{2}=\underbrace{\sin \sin \cdots \sin }_{n } \frac{1}{\sqrt{2}}>\underbrace{\sin \cdots \sin }_{n-1 } \frac{1}{\sqrt{3}}>\cdots>\sin \frac{1}{\sqrt{n}}>\frac{1}{\sqrt{n+1}},
+$$
+由引理中的(3)可知,
+$$
+\underbrace{\sin \sin \cdots \sin }_{n } \frac{\sqrt{2}}{2}=\underbrace{\sin \cdots \sin }_{n } \frac{2}{\sqrt{8}}<\underbrace{\sin \cdots \cdot \sin }_{n-} \frac{2}{\sqrt{9}}<\cdots<\sin \frac{2}{\sqrt{n+8}}<\frac{2}{\sqrt{n+9}} .
+$$
+又 $\frac{2}{\sqrt{n+9}}<\frac{2}{\sqrt{n+1}}$ 知 (1) 式成立.
+取 $n=2005$ 命题得证.
+评注此题本质上涉及函数迭代.
+事实上,记 $f(x)=\sin x$, 用 $f^{(n)}(x)$ 表 $\frac{\sqrt{2}}{2}$. 这里 $h(x)=\frac{x}{\sqrt{1+x}}, g(x)=\frac{x}{\sqrt{1+\left(\frac{x}{2}\right)^2}}$, 结合在区间 $\left(0, \frac{\pi}{2}\right)$ 上, $h(x) 、 f(x) 、 g(x)$ 都是单调递增函数, 可知 $0<h^{(n)}(x)<f^{(n)}(x)< g^{(n)}(x)<\frac{\pi}{2}$, 而 $h^{(n)}(x)=\frac{x}{\sqrt{1+n x}}, g^{(n)}(x)=\frac{x}{\sqrt{1+\frac{n x^2}{4}}}$, 其中每一个结论的证明都不难, 只要对照引理的证明即可, 当然,此结论更具有一般性.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 解方程 $2 \sqrt{2} x^2+x-\sqrt{1-x^2}-\sqrt{2}=0$.
+%%<SOLUTION>%%
+分析:由于 $|x| \leqslant 1$, 可设 $x=\sin \theta, \theta \in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$.
+解设 $x=\sin \theta, \theta \in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$, 代入原方程, 得 $2 \sqrt{2} \sin ^2 \theta+\sin \theta- \cos \theta-\sqrt{2}=0$,
+$$
+\begin{gathered}
+\sqrt{2}\left(\sin ^2 \theta-\cos ^2 \theta\right)+\sin \theta-\cos \theta=0, \\
+\sin \theta-\cos \theta)[\sqrt{2}(\sin \theta+\cos \theta)+1]=0, \\
+\sin \theta-\cos \theta)\left[2 \sin \left(\theta+\frac{\pi}{4}\right)+1\right]=0 .
+\end{gathered}
+$$
+由 $\sin \theta-\cos \theta=0$ 及 $\theta \in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$ 得 $\theta=\frac{\pi}{4}, x=\frac{\sqrt{2}}{2}$.
+由 $\sin \left(\theta+\frac{\pi}{4}\right)=-\frac{1}{2}$ 及 $\theta \in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$ 得 $\theta=-\frac{5 \pi}{12}, x=-\frac{\sqrt{6}+\sqrt{2}}{4}$.
+所以原方程的解是 $x=\frac{\sqrt{2}}{2}$ 或 $x=-\frac{\sqrt{6}+\sqrt{2}}{4}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 解方程组
+$$
+\left\{\begin{array}{l}
+\left(x+\frac{1}{x}\right)=4\left(y+\frac{1}{y}\right)=5\left(z+\frac{1}{z}\right),  \quad\quad(1)\\
+x y+y z+z x=1 . \quad\quad(2)
+\end{array}\right.
+$$
+%%<SOLUTION>%%
+解:由(1)知 $x 、 y 、 z$ 同号, 不妨先考虑它们都是正数的情形.
+令 $x=\tan \frac{\alpha}{2}, y=\tan \frac{\beta}{2}, z=\tan \frac{\gamma}{2}, \alpha, \beta, \gamma \in(0, \pi)$.
+由于 $\tan \frac{\theta}{2}+\cot \frac{\theta}{2}=\frac{\sin \frac{\theta}{2}}{\cos \frac{\theta}{2}}+\frac{\cos \frac{\theta}{2}}{\sin \frac{\theta}{2}}=\frac{1}{\sin \frac{\theta}{2} \cos \frac{\theta}{2}}=\frac{2}{\sin \theta}$,
+所以(1)式就是
+$$
+\frac{3}{\sin \alpha}=\frac{4}{\sin \beta}=\frac{5}{\sin \gamma} \text {. }
+$$
+式就是 $\tan \frac{\alpha}{2} \tan \frac{\beta}{2}+\tan \frac{\beta}{2} \tan \frac{\gamma}{2}+\tan \frac{\gamma}{2} \tan \frac{\alpha}{2}=1$.
+变形为 $\tan \frac{\gamma}{2}\left(\tan \frac{\alpha}{2}+\tan \frac{\beta}{2}\right)=1-\tan \frac{\alpha}{2} \tan \frac{\beta}{2}$,
+$$
+\tan \frac{\gamma}{2}=\frac{1-\tan \frac{\alpha}{2} \tan \frac{\beta}{2}}{\tan \frac{\alpha}{2}+\tan \frac{\beta}{2}}=\cot \left(\frac{\alpha}{2}+\frac{\beta}{2}\right)=\tan \left(\frac{\pi}{2}-\frac{\alpha+\beta}{2}\right) .
+$$
+因为 $\frac{\gamma}{2} \in\left(0, \frac{\pi}{2}\right),\left(\frac{\pi}{2}-\frac{\alpha+\beta}{2}\right) \in\left(0, \frac{\pi}{2}\right)$, 所以 $\frac{\gamma}{2}=\frac{\pi}{2}-\frac{\alpha+\beta}{2}, \alpha+ \beta+\gamma=\pi$.
+$\alpha 、 \beta 、 \gamma$ 是某个三角形的三个内角,且它的三边之比为 $3: 4: 5$, 由此可知 $\sin \gamma=1, \sin \alpha=\frac{3}{5}, \sin \beta=\frac{4}{5}$. 从而 $x=\tan \frac{\alpha}{2}=\frac{1}{3}, y=\tan \frac{\beta}{2}=\frac{1}{2}$, $z=\tan \frac{\gamma}{2}=1$
+若 $x 、 y 、 z$ 都是负数时, 用同样的方法可求得 $x=-\frac{1}{3}, y=-\frac{1}{2}$, $z=-1$.
+即原方程组的解是
+$$
+\left\{\begin{array}{l}
+x=\frac{1}{3}, \\
+y=\frac{1}{2}, \text { 或 }\left\{\begin{array}{l}
+x=-\frac{1}{3}, \\
+z=1 .
+\end{array}, \frac{1}{2},\right. \\
+z=-1 .
+\end{array}\right.
+$$
+评注形如 $x+\frac{1}{x}$ 的代数式, 通过三角代换, 转化为 $x+\frac{1}{x}=\tan \frac{\theta}{2}+ \cot \frac{\theta}{2}=\frac{2}{\sin \theta}$, 是本题的重要技巧.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 设 $x y+y z+z x=1$, 求证:
+$$
+x(1-y)\left(1-z^2\right)+y(1-z)\left(1-x^2\right)+z\left(1-x^2\right)\left(1-y^2\right)=4 x y z .
+$$
+%%<SOLUTION>%%
+证明:设 $x=\tan \alpha, y=\tan \beta, z=\tan \gamma, \alpha, \beta, \gamma \in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$, 由 $x y+y z+z x=1$, 得 $\tan \alpha \tan \beta+\tan \beta \tan \gamma+\tan \gamma \tan \alpha=1$,
+$$
+\begin{gathered}
+\alpha+\beta+\gamma= \pm \frac{\pi}{2}, 2 \alpha+2 \beta= \pm \pi-2 \gamma, \frac{\tan 2 \alpha+\tan 2 \beta}{1-\tan 2 \alpha \tan 2 \beta}=-\tan 2 \gamma, \\
+\tan 2 \alpha+\tan 2 \beta+\tan 2 \gamma=\tan 2 \alpha \cdot \tan 2 \beta \cdot \tan 2 \gamma, \\
+\frac{2 \tan \alpha}{1-\tan ^2 \alpha}+\frac{2 \tan \beta}{1-\tan ^2 \beta}+\frac{2 \tan \gamma}{1-\tan ^2 \gamma}=\frac{2 \tan \alpha}{1-\tan ^2 \alpha} \cdot \frac{2 \tan \beta}{1-\tan ^2 \beta} \cdot \frac{2 \tan \gamma}{1-\tan ^2 \gamma}, \\
+\text { 即 } \quad \frac{2 x}{1-x^2}+\frac{2 y}{1-y^2}+\frac{2 z}{1-z^2}=\frac{2 x}{1-x^2} \cdot \frac{2 y}{1-y^2} \cdot \frac{2 z}{1-z^2} .
+\end{gathered}
+$$
+即 $\frac{2 x}{1-x^2}+\frac{2 y}{1-y^2}+\frac{2 z}{1-z^2}=\frac{2 x}{1-x^2} \cdot \frac{2 y}{1-y^2} \cdot \frac{2 z}{1-z^2}$.
+两边同乘以 $\left(1-x^2\right)\left(1-y^2\right)\left(1-z^2\right)$, 得
+$$
+x\left(1-y^2\right)\left(1-z^2\right)+y\left(1-z^2\right)\left(1-x^2\right)+z\left(1-x^2\right)\left(1-y^2\right)=4 x y z .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13. 求 $y=\frac{x-x^3}{1+2 x^2+x^4}$ 的最大、最小值.
+%%<SOLUTION>%%
+分析:函数的解析式可变形为 $y=\frac{x\left(1-x^2\right)}{\left(1+x^2\right)^2}=\frac{x}{1+x^2} \cdot \frac{1-x^2}{1+x^2}$.
+解设 $x=\tan \theta, \theta \in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$, 则 $y=\frac{\tan \theta}{1+\tan ^2 \theta} \cdot \frac{1-\tan ^2 \theta}{1+\tan ^2 \theta}= \frac{1}{2} \sin 2 \theta \cdot \cos 2 \theta=\frac{1}{4} \sin 4 \theta, \sin 4 \theta=1$ 时, $y_{\text {max }}=\frac{1}{4}$; $\sin 4 \theta=-1$ 时, $y_{\text {min }}=-\frac{1}{4}$.
+评注利用正切函数的和角公式是上述两题的重要方法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14. 三元数组 $\left(x_n, y_n, z_n\right), n=1,2, \cdots$, 由下列关系式确定: $x_1= 2, y_1=4, z_1=\frac{6}{7}, x_{n+1}=\frac{2 x_n}{x_n^2-1}, y_{n+1}=\frac{2 y_n}{y_n^2-1}, z_{n+1}=\frac{2 z_n}{z_n^2-1}$.
+ 证明: 上述作三元数组的过程可以无限继续下去;
+ 能否证明进一步得到的三元数组 $\left(x_n, y_n, z_n\right)$ 满足等式 $x_n+y_n+ z_n=0$ ?
+%%<SOLUTION>%%
+分析:(1) 即证对于任何正整数 $n, x_n \neq 1, y_n \neq 1, z_n \neq 1$.
+ (2)题中三数递推公式与正切的倍角公式类似,故利用三角换元法.
+证明 (1) 若 $x_n=1$, 则由 $x_{n-1}^2-1=2 x_{n-1}$, 得 $x_{n-1}$ 为无理数, 但由于 $x_1$ 为有理数, 从而由递推公式 $x_{n+1}=\frac{2 x_n}{x_n^2-1}$, 知 $\left\{x_n\right\}$ 的各项均为有理数, 从而 $x_n=1$ 不成立, 即 $\left\{x_n\right\}$ 可无限继续, 同理可证 $\left\{y_n\right\} 、\left\{z_n\right\}$ 也可无限继续.
+ 由 $x_1 、 y_1 、 z_1 \neq 0$ 知 $x_n 、 y_n 、 z_n \neq 0$.
+而 $x_1+y_1+z_1=x_1 y_1 z_1=\frac{48}{7}$, 可设 $x_k+y_k+z_k=x_k y_k z_k$ ( $k$ 为正整数). 令 $x_k=\tan \alpha, y_k=\tan \beta, z_k=\tan \gamma$, 其中 $\alpha, \beta, \gamma \in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$, 则
+$$
+\tan \alpha+\tan \beta+\tan \gamma=\tan \alpha \cdot \tan \beta \cdot \tan \gamma,
+$$
+所以 $\tan (\alpha+\beta+\gamma)=\frac{\tan \alpha+\tan \beta+\tan \gamma-\tan \alpha \tan \beta \tan \gamma}{1-\tan \alpha \cdot \tan \beta-\tan \beta \cdot \tan \gamma-\tan \gamma \cdot \tan \alpha}=0$. 故
+$$
+\alpha+\beta+\gamma=0 \text { 或 } \pm \pi \text {. }
+$$
+于是 $\tan 2 \alpha+\tan 2 \beta+\tan 2 \gamma=\tan 2 \alpha \cdot \tan 2 \beta \cdot \tan 2 \gamma$.
+但
+$$
+\begin{aligned}
+& \tan 2 \alpha=\frac{2 x_k}{1-x_k^2}=-x_{k+1}, \\
+& \tan 2 \beta=\frac{2 y_k}{1-y_k^2}=-y_{k+1},
+\end{aligned}
+$$
+$$
+\tan 2 \gamma=\frac{2 z_k}{1-z_k^2}=-z_{k+1}
+$$
+所以
+$$
+x_{k+1}+y_{k+1}+z_{k+1}=x_{k+1} y_{k+1} z_{k+1} .
+$$
+从而对一切正整数 $n$, 有 $x_n+y_n+z_n=x_n y_n z_n$ 成立, 因 $x_n y_n z_n \neq 0$, 故不存在 $n$ 使 $x_n+y_n+z_n=0$.
+评注利用三角换元, 通过三角公式将欲证等式简单化.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例15. 试证明: 存在唯一这样的三角形, 它的三边长是三个连续的自然数, 且有一个角是另一个角的 2 倍.
+%%<SOLUTION>%%
+解:设边长为 $a=n-1, b=n, c=n+1(n \in \mathbf{N}$ 且 $n>1)$ 的三角形满足条件, 它的三个角分别为 $\alpha 、 2 \alpha 、 \pi-3 \alpha$. 显然 $0<\alpha<\frac{\pi}{3}$.
+由于 $\frac{\sin (\pi-3 \alpha)}{\sin \alpha}=\frac{\sin 3 \alpha}{\sin \alpha}=3-4 \sin ^2 \alpha=4 \cos ^2 \alpha-1=\left(\frac{\sin 2 \alpha}{\sin \alpha}\right)^2-1$,
+ 若 $A=\alpha, B=2 \alpha$, 则 $C=\pi-3 \alpha$. 由正弦定理得
+$$
+\begin{gathered}
+\frac{n-1}{\sin \alpha}=\frac{n}{\sin 2 \alpha}=\frac{n+1}{\sin 3 \alpha}, \\
+\frac{n+1}{n-1}=\left(\frac{n}{n-1}\right)^2-1,
+\end{gathered}
+$$
+解得 $n=2$. 因此 $a=1, b=2, c=3$. 但此时不能构成三角形.
+ 若 $A=\alpha, C=2 \alpha$, 则 $B=\pi-3 \alpha$, 由正弦定理得 $\frac{n-1}{\sin \alpha}=\frac{n}{\sin 3 \alpha}= \frac{n+1}{\sin 2 \alpha}, \frac{n}{n-1}=\left(\frac{n+1}{n-1}\right)^2-1$, 解得 $n=5$.
+因此 $a=4, b=5, c=6$ 能构成三角形, 此时, 由余弦定理得 $\cos A=\frac{3}{4}$, $\cos C=\frac{1}{8}$, 满足 $\cos C=\cos 2 A$, 从而满足 $C=2 A$.
+ 若 $B=\alpha, C=2 \alpha$, 则 $A=\pi-3 \alpha$, 由正弦定理得
+$$
+\frac{n-1}{\sin 3 \alpha}=\frac{n}{\sin \alpha}=\frac{n+1}{\sin 2 \alpha}, \frac{n-1}{n}=\left(\frac{n+2}{n}\right)^2-1 .
+$$
+$n^2-3 n-1=0$,这个方程没有整数解.
+综上所述, 满足条件的三角形是唯一的, 它的三边的长分别为 $4 、 5 、 6$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例16. (Menelaus 定理) 直线 $l$ 与 $\triangle A B C$ 的三边 $A B 、 B C 、 C A$ 或它们的延长线依次相交于 $D 、 E 、 F$, 求证: $\frac{A D}{D B} \cdot \frac{B E}{E C} \cdot \frac{C F}{F A}=1$.
+%%<SOLUTION>%%
+分析:结论的六条线段 $A D$ 和 $F A 、 B E$ 和 $D B 、 C F$ 和 $E C$ 分别是 $\triangle A D F 、 \triangle B D E 、 \triangle C F E$ 的两条边, 可运用正弦定理, 将比值 $\frac{A D}{F A} 、 \frac{B E}{D B} 、 \frac{C F}{E C}$ 表示成角的正弦的比值.
+证明如图(<FilePath:./figures/fig-c6i4.png>), 设 $\angle A D F=\alpha, \angle C F E=\beta$, $\angle C E F=\gamma$, 由正弦定理, 在 $\triangle A D F$ 中, $\frac{A D}{F A}=\frac{\sin \beta}{\sin \alpha}$.
+在 $\triangle B D E$ 中, $\frac{B E}{D B}=\frac{\sin \left(180^{\circ}-\alpha\right)}{\sin \gamma}=\frac{\sin \alpha}{\sin \gamma}$, 在 $\triangle C F E$ 中, $\frac{C F}{E C}=\frac{\sin \gamma}{\sin \beta}$. 所以左边 $=\frac{\sin \beta}{\sin \alpha}$.
+$\frac{\sin \alpha}{\sin \gamma} \cdot \frac{\sin \gamma}{\sin \beta}=1$.
+评注可以证明, Menelaus 定理的逆命题也是正确的.
+在平面几何的竞赛中, 常用它们来证明有关三点共线的问题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例17. (Ceva 定理) $P$ 是 $\triangle A B C$ 外的一点,直线 $P A 、 P B 、 P C$ 依次与 $\triangle A B C$ 的三边 $B C 、 C A 、 A B$ 或者它们的延长线相交于 $D 、 E 、 F$, 求证: $\frac{A F}{F B} \cdot \frac{B D}{D C} \cdot \frac{C E}{E A}=1$.
+%%<SOLUTION>%%
+分析:$A 、 B 、 F$ 在一条直线上, 且 $A F 、 F B$ 分别是 $\triangle P A F 、 \triangle P F B$ 的边, 可以用这两个三角形面积之比表示 $\frac{A F}{F B}$.
+证明如图(<FilePath:./figures/fig-c6i5.png>), 设 $\angle B P F=\alpha, \angle A P B=\beta$,
+$$
+\begin{gathered}
+\frac{A F^2}{F B^2}=\frac{\frac{1}{2} P A \cdot P F \cdot \sin (\alpha+\beta)}{\frac{1}{2} P B \cdot P F \cdot \sin \alpha}=\frac{P A \sin (\alpha+\beta),}{P B \cdot \sin \alpha}, \\
+\frac{B D^2}{D C^2}=\frac{\frac{1}{2} P B \cdot P D \cdot \sin \beta}{\frac{1}{2} P C \cdot P D \cdot \sin \left[180^{\circ}-(\alpha+\beta)\right]}=\frac{P B \sin \beta}{P C \sin (\alpha+\beta)}, \\
+\frac{C E^2}{E A^2}=\frac{\frac{1}{2} P C \cdot P E \cdot \sin \alpha}{\frac{1}{2} P A \cdot P E \cdot \sin \left(180^{\circ}-\beta\right)}=\frac{P C \sin \alpha}{P A \sin \beta},
+\end{gathered}
+$$
+所以
+$$
+\frac{A F}{F B} \cdot \frac{B D}{D C} \cdot \frac{C E}{E A}=1
+$$
+评注可以证明 Ceva 定理的逆命题也是正确的.
+在平面几何的竞赛题中, 常用它们来论证有关三线共点的问题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例18. 如图(<FilePath:./figures/fig-c6i6.png>), 设 $O 、 H$ 分别为锐角 $\triangle A B C$ 的外心和垂心, 则在 $B C 、 C A 、 A B$ 上分别存在点 $D 、 E 、 F$, 使得 $O D+D H=O E+E H=O F+F H$, 且直线 $A D 、 B E 、 C F$ 共点.
+%%<SOLUTION>%%
+证明:设 $A H$ 的延长线交 $\triangle A B C$ 的外接圆于 $L$, 交 $B C$ 于 $K$, 连 $O L$ 交 $B C$ 于 $D$, 连 $H D$. 由于 $H K=K L$, 得 $H D=L D$, 于是 $O D+D H=O D+ D L=O L=R$, 其中 $R$ 为 $\triangle A B C$ 外接圆半径.
+类似地, 可以在 $C A$ 和 $A B$ 上得到点 $E$ 和 $F$, 使
+$$
+O E+E H=O F+F H=R .
+$$
+连 $O B 、 O C$ 和 $B L$, 则 $\angle O B C=90^{\circ}-\angle A, \angle C B L=\angle C A L=90^{\circ}- \angle C$, 所以
+$$
+\angle O B L=90^{\circ}-\angle A+90^{\circ}-\angle C=\angle B,
+$$
+由于 $O B=O L$, 则 $\angle O L B=\angle B$, 于是 $\angle B O L=180^{\circ}-2 \angle B$,
+$$
+\angle C O D=\angle B O C-\angle B O D=2 \angle A+\left(180^{\circ}-2 \angle B\right)=180^{\circ}-2 \angle C .
+$$
+由正弦定理得
+$$
+\begin{aligned}
+& \frac{B D}{\sin \angle B O D}=\frac{O D}{\sin \angle O B D}, \\
+& \frac{C D}{\sin \angle C O D}=\frac{O D}{\sin \angle O C D},
+\end{aligned}
+$$
+于是有
+$$
+\frac{B D}{C D}=\frac{\sin \left(180^{\circ}-2 \angle B\right)}{\sin \left(180^{\circ}-2 \angle C\right)}=\frac{\sin 2 B}{\sin 2 C}
+$$
+同理 $\frac{C E}{E A}=\frac{\sin 2 C}{\sin 2 A}, \frac{A F}{F B}=\frac{\sin 2 A}{\sin 2 B}$, 所以
+$$
+\frac{B D}{D C} \cdot \frac{C E}{E A} \cdot \frac{A F}{F B}=1,
+$$
+由 Ceva 定理的逆定理得 $A D 、 B E 、 C F$ 三线共点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例19. 如图(<FilePath:./figures/fig-c6i7.png>), $P$ 是 $\triangle A B C$ 内任意一点  (包括在边界上),过 $P$ 作 $B C 、 C A 、 A B$ 的垂线,垂足为 $D 、 E 、 F$. 则
+ $\triangle A B C$ 为正三角形 $\Leftrightarrow$ 对任意的 $P$ 都有
+$$
+S_{\triangle P B D}+S_{\triangle P C E}+S_{\triangle P A F}=\frac{1}{2} S_{\triangle A B C} ;
+$$
+ $\triangle A B C$ 为正三角形 $\Leftrightarrow$ 对任意的 $P$ 都有
+$B D+C E+A F=\frac{1}{2}(B C+C A+A B)$.
+%%<SOLUTION>%%
+证明: (1)必要性.
+过 $P$ 作 $M N / / B C$ 交 $A B 、 A C$ 于 $M 、 N$, 过 $B$ 作 $B Q \perp M N$ 于 $Q$, 过 $C$ 作 $C R \perp M N$ 于 $R$, 记正 $\triangle A M N$ 的边长为 1 , 并设 $P M=x$, 则 $P N=1-x$. 于是,
+$$
+\begin{aligned}
+S_{\triangle P A F}+S_{\triangle P N E} & =\frac{1}{2} \cdot \frac{\sqrt{3}}{2} x\left(1-\frac{x}{2}\right)+\frac{1}{2} \cdot \frac{\sqrt{3}}{2}(1-x) \cdot \frac{1-x}{2} \\
+& =\frac{\sqrt{3}}{8}=\frac{1}{2} S_{\triangle A M N} .
+\end{aligned}
+$$
+又 $\triangle B M Q \cong \triangle C N R$, 所以
+$$
+\begin{aligned}
+S_{\triangle B P D}+S_{\triangle P C N} & =\frac{1}{2}\left(S_{\text {矩形 } B D P Q}+S_{\text {矩形 } P D C R}\right)-S_{\triangle C R N} \\
+& =S_{\triangle P C D}+S_{\triangle B M P} . \\
+\text { 从而 } \quad S_{\triangle P B D}+ & S_{\triangle P C E}+S_{\triangle P A F}=\frac{1}{2} S_{\triangle A B C} .
+\end{aligned}
+$$
+充分性.
+当 $P$ 为 $\angle A$ 的平分线与 $B C$ 的交点时, 因为 $\triangle A P E \cong \triangle A P F$, $S_{\triangle A P E}=S_{\triangle A P F}$, 所以 $S_{\triangle P C E}=S_{\triangle P B F}$.
+故
+$$
+S_{\triangle P A B}=S_{\triangle P A C} .
+$$
+从而 $P$ 为 $B C$ 中点.
+故 $A B=A C$.
+同理
+$$
+A B=B C \text {. }
+$$
+所以 $\triangle A B C$ 为正三角形.
+ (2)必要性.
+由正弦定理有
+$$
+\begin{aligned}
+& P B \sin \alpha=P C \sin \left(60^{\circ}-\beta\right), \\
+& P C \sin \beta=P A \sin \left(60^{\circ}-\gamma\right), \\
+& P A \sin \gamma=P B \sin \left(60^{\circ}-\alpha\right) .
+\end{aligned}
+$$
+将以上三式相加并移项得
+$$
+\begin{aligned}
+& P B\left[\sin \alpha-\sin \left(60^{\circ}-\alpha\right)\right]+P C\left[\sin \beta-\sin \left(60^{\circ}-\beta\right)\right] \\
+& +P A\left[\sin \gamma-\sin \left(60^{\circ}-\gamma\right)\right] \\
+= & 2 \cos 30^{\circ} \cdot\left[P B \sin \left(\alpha-30^{\circ}\right)+P C \sin \left(\beta-30^{\circ}\right)+P A \sin \left(\gamma-30^{\circ}\right)\right] \\
+= & 0 .
+\end{aligned}
+$$
+所以 $P B \sin \left(\alpha-30^{\circ}\right)+P C \sin \left(\beta-30^{\circ}\right)+P A \sin \left(\gamma-30^{\circ}\right)=0$.
+又
+$$
+\begin{aligned}
+& B D+C E+A F-D C-E A-F B \\
+= & P B \cos \alpha+P C \cos \beta+P A \cos \gamma-P B \cos \left(60^{\circ}-\alpha\right) \\
+& -P C \cos \left(60^{\circ}-\beta\right)-P A \cos \left(60^{\circ}-\gamma\right) \\
+= & -2 \sin 30^{\circ}\left[P B \sin \left(\alpha-30^{\circ}\right)+P C \sin \left(\beta-30^{\circ}\right)+P A \sin \left(\gamma-30^{\circ}\right)\right] \\
+= & 0,
+\end{aligned}
+$$
+即
+$$
+\begin{aligned}
+B D+C E+A F & =D C+E A+F B \\
+& =\frac{1}{2}(B C+C A+A B) .
+\end{aligned}
+$$
+充分性.
+如图(<FilePath:./figures/fig-c6i8.png>), 当 $P 、 P^{\prime}$ 为 $B C$ 的中垂线上两个不同点时,有 $E E^{\prime}=F F^{\prime}$. 作 $P K \perp P^{\prime} F^{\prime}$ 于 $K$, $P L \perp P^{\prime} E^{\prime}$ 于 $L$, 则 $P K=P L$,
+$$
+\triangle P K P^{\prime} \cong \triangle P L P^{\prime}, \angle K P P^{\prime}=\angle L P P^{\prime},
+$$
+即直线 $P P^{\prime}$ 与 $A B 、 A C$ 所成角相等,有
+$$
+\angle B=\angle C, A B=A C \text {. }
+$$
+同理 $A B=B C$.
+故 $\triangle A B C$ 为正三角形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例20. 如图(<FilePath:./figures/fig-c6i9.png>), 在锐角 $\triangle A B C$ 的 $B C$ 边上有两点 $E 、 F$, 满足 $\angle B A E=\angle C A F$, 作 $F M \perp A B, F N \perp A C$ ( $M 、 N$ 是垂足), 延长 $A E$ 交 $\triangle A B C$ 的外接圆于点 $D$.
+证明: 四边形 $A M D N$ 与 $\triangle A B C$ 的面积相等.
+%%<SOLUTION>%%
+ (注: 此题当 $A D$ 与 $A F$ 重合时, 即为第 28 届 IMO 第二题.
+)
+证法一如图(<FilePath:./figures/fig-c6i9.png>), 连 $B D$, 则 $\triangle A B D \backsim \triangle A F C$, 所以 $A F \cdot A D=A B \cdot A C$.
+设 $\angle B A E=\angle C A F=\alpha, \angle E A F=\beta$, 则
+$$
+\begin{aligned}
+& S_{\text {四边形 } A M D N}=\frac{1}{2} A M \cdot A D \sin \alpha+\frac{1}{2} A D \cdot A N \sin (\alpha+\beta) \\
+&=\frac{1}{2} A D[A F \cos (\alpha+\beta) \sin \alpha+A F \cos \alpha \sin (\alpha+\beta)] \\
+&=\frac{1}{2} A D \cdot A F \sin (2 \alpha+\beta) \\
+&=\frac{1}{2} A B \cdot A C \sin \angle B A C \\
+&=S_{\triangle A B C} . \\
+& \text { 二如图 } 6-10, \text { 作 } \triangle A B C \text { 外接圆的直径 } \\
+&, B G / / M F, C G / / N F, D G / / M N . \text { 从而, } \\
+& S_{\triangle G F M}, S_{\triangle C F N}=S_{\triangle G F N}, S_{\triangle M N D}=S_{\triangle M N G} . \text { 所 }
+\end{aligned}
+$$
+证法二如图(<FilePath:./figures/fig-c6i10.png>),作 $\triangle A B C$ 外接圆的直径 $A G$. 易知, $B G / / M F, C G / / N F, D G / / M N$. 从而, $S_{\triangle B F M}=S_{\triangle G F M}, S_{\triangle C F N}=S_{\triangle G F N}, S_{\triangle M N D}=S_{\triangle M N G}$. 所以有
+$$
+\begin{aligned}
+S_{\text {四边形 } A M D N} & =S_{\text {四边形 } A M G N} \\
+& =S_{\text {四边形 } A M F N}+S_{\triangle G F M}+S_{\triangle G F N} \\
+& =S_{\text {四边形 } A M F N}+S_{\triangle B F M}+S_{\triangle C F N} \\
+& =S_{\triangle A B C .}
+\end{aligned}
+$$
+证法三如图(<FilePath:./figures/fig-c6i11.png>), 作 $A H \perp B C, H$ 为垂足, 则 $A 、 M 、 H 、 F 、 N$ 共圆.
+从而有 $\angle M H B=\angle B A F=\angle C A D=\angle C B D$, 所以 $M H / / B D$.
+同理 $N H / / C D$. 于是, 有
+$$
+S_{\triangle B M H}=S_{\triangle D M H}, S_{\triangle C N H}=S_{\triangle D N H} .
+$$
+故
+$S_{\text {四边形 } A M D N}=S_{\triangle A B C \text {. }}$
+证法四如图(<FilePath:./figures/fig-c6i12.png>), 只要证明
+$$
+S_{\triangle B M D}+S_{\triangle C N D}=S_{\triangle B C D} .
+$$
+设 $\angle B A E=\angle C A F=\alpha$, 则
+$$
+\begin{gathered}
+A F=\frac{A B \sin B}{\sin (C+\alpha)}=\frac{2 R \sin C \cdot \sin B}{\sin (C+\alpha)}, \\
+A M=A F \cos (A-\alpha) .
+\end{gathered}
+$$
+其中 $R$ 为 $\triangle A B C$ 外接圆半径.
+所以
+$$
+B M=A B-A M=2 R \sin C \cdot \frac{\cos B \cdot \sin (A-\alpha)}{\sin (C+\alpha)} .
+$$
+故
+$$
+S_{\triangle B M D}=\frac{1}{2} B M \cdot B D \sin \angle A B D=2 R^2 \sin \alpha \cdot \sin (A-\alpha) \cos B \cdot \sin C .
+$$
+同理
+$$
+S_{\triangle C N D}=2 R^2 \sin \alpha \cdot \sin (A-\alpha) \cdot \cos C \cdot \sin B .
+$$
+从而
+$$
+\begin{aligned}
+& S_{\triangle B M D}+S_{\triangle C N D} \\
+= & 2 R^2 \sin \alpha \cdot \sin (A-\alpha) \cdot \sin (B+C) \\
+= & \frac{1}{2} \cdot 2 R \sin \alpha \cdot 2 R \sin (A-\alpha) \cdot \sin A \\
+= & \frac{1}{2} B D \cdot D C \sin \angle B D C=S_{\triangle B C D} .
+\end{aligned}
+$$
+证法五如图(<FilePath:./figures/fig-c6i12.png>), 作 $D K \perp A B, D L \perp A C$, 垂足分别为 $K 、 L$, 则只要证明 $S_{\triangle F B M}+S_{\triangle F C N}=S_{\triangle F D M}+S_{\triangle F D N}$.
+利用 $S_{\triangle F D M}=S_{\triangle F K N}, S_{\triangle F D N}=S_{\triangle F L N}$, 只需证明
+$$
+S_{\triangle F B M}+S_{\triangle F C N}=S_{\triangle F K M}+S_{\triangle F L N},
+$$
+即
+$$
+F M \cdot B M+F N \cdot C N=F M \cdot M K+F N \cdot N L .
+$$
+因此, 只需证明 $F M \cdot B K=F N \cdot C L$.
+由于 $\triangle B K D \backsim \triangle C L D$, 所以
+$$
+\frac{B K}{C L}=\frac{D K}{D L}=\frac{\sin \alpha}{\sin (A-\alpha)}=\frac{F N}{F M} .
+$$
+故结论成立.
+其中 $\alpha=\angle B A E=\angle C A F$.
+证法六如图(<FilePath:./figures/fig-c6i13.png>), 作 $D G / / M N$, 交 $A C$ 的延长线于 $G$, 只要证明
+$$
+S_{\triangle A M G}=S_{\triangle A B C} .
+$$
+由于 $\angle A G D=\angle A N M=\angle A F M$, 所以 $\triangle A G D \backsim \triangle A F M$. 从而 $A D$ • $A F=A M \cdot A G$. 又用于 $\triangle A B D \backsim \triangle A F C$, 有 $A D \cdot A F=A B \cdot A C$.
+故 $A M \cdot A G=A B \cdot A C$, 即
+$$
+S_{\triangle A M G}=S_{\triangle A B C} .
+$$
+证法七设 $\angle B A E=\angle C A F=\alpha, \angle E A F=\beta$, 则由证法一知
+$$
+S_{\text {四边形 } A M D N}=\frac{1}{2} A D \cdot A F \sin (2 \alpha+\beta)=\frac{A F}{4 R} \cdot A D \cdot B C \text {. }
+$$
+又
+$$
+\begin{aligned}
+S_{\triangle A B C} & =\frac{1}{2} A B \cdot A F \sin (\alpha+\beta)+\frac{1}{2} A C \cdot A F \sin \alpha \\
+& =\frac{A F}{4 R}(A B \cdot C D+A C \cdot B D) .
+\end{aligned}
+$$
+由托勒密定理知
+$$
+A B \cdot C D+A C \cdot B D=A D \cdot B C,
+$$
+故结论成立.
+%%PROBLEM_END%%
+
+

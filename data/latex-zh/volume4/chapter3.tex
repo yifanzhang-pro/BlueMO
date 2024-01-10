@@ -1,0 +1,614 @@
+
+%%TEXT_BEGIN%%
+前面我们介绍了平均值不等式及其在不等式证明中的一些应用, 同时, 也介绍了证明不等式的一些方法和技巧.
+但是, 任何一个结论的使用, 都有它的局限性, 平均值不等式也是如此.
+在不等式的证明过程中, 要求我们了解不等式的性质和证明不等式的常用方法, 需要掌握一些基本的结论和重要的定理, 并能灵活地应用有关知识.
+在这里, 我们将再介绍另一个重要的基本不等式, 即柯西不等式, 与平均值不等式类似, 它的表达形式简单, 它的证明方法多样,在应用中具有较强的灵活性和技巧性.
+柯西不等式及其证明.
+设 $a_1, a_2, \cdots, a_n$ 及 $b_1, b_2, \cdots, b_n$ 为任意实数, 则
+$$
+\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2 \leqslant\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right),
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ (规定 $a_i=0$ 时, $b_i=0$ )时等号成立.
+柯西不等式的证明方法很多,这里我们选择其中一些简单和具有一定技巧的证明.
+证法一不妨假设 $A_n=\sum_{i=1}^n a_i^2 \neq 0, C_n=\sum_{i=1}^n b_i^2 \neq 0$, 令 $x_i=\frac{a_i}{\sqrt{A_n}}, y_i=\frac{b_i}{\sqrt{C_n}}$,
+则
+$$
+\sum_{i=1}^n x_i^2=\sum_{i=1}^n y_i^2=1
+$$
+则原不等式等价于
+$$
+x_1 y_1+x_2 y_2+\cdots+x_n y_n \leqslant 1,
+$$
+即
+$$
+2\left(x_1 y_1+x_2 y_2+\cdots+x_n y_n\right) \leqslant x_1^2+x_2^2+\cdots+x_n^2+y_1^2+y_2^2+\cdots+y_n^2 \text {. }
+$$
+又等价于
+$$
+\left(x_1-y_1\right)^2+\left(x_2-y_2\right)^2+\cdots+\left(x_n-y_n\right)^2 \geqslant 0 .
+$$
+这个不等式显然成立, 且等号成立的充要条件为 $x_i=y_i(i=1,2, \cdots$, $n)$, 从而原不等式成立,且等号成立的充要条件是
+$$
+b_i=k a_i\left(k=\frac{\sqrt{C_n}}{\sqrt{A_n}}\right) .
+$$
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+柯西不等式及其证明.
+设 $a_1, a_2, \cdots, a_n$ 及 $b_1, b_2, \cdots, b_n$ 为任意实数, 则
+$$
+\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2 \leqslant\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right),
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ (规定 $a_i=0$ 时, $b_i=0$ )时等号成立.
+证法二(比值法)
+按上述证明方法和记号, 不妨假设 $A_n \neq 0, C_n \neq 0$, 令 $x_i=\frac{\left|a_i\right|}{\sqrt{A_n}}, y_i= \frac{\left|b_i\right|}{\sqrt{C_n}}$, 则
+$$
+\sum_{i=1}^n x_i^2=\sum_{i=1}^n y_i^2=1
+$$
+由于 $\begin{aligned} \frac{\left|\sum_{i=1}^n a_i b_i\right|}{\sqrt{A_n} \cdot \sqrt{C_n}} & \leqslant \sum_{i=1}^n x_i y_i \leqslant \sum_{i=1}^n \frac{1}{2}\left(x_i^2+y_i^2\right) \\ & =\frac{1}{2}\left(\sum_{i=1}^n x_i^2+\sum_{i=1}^n y_i^2\right)=1,\end{aligned}$
+且等号成立当且仅当
+$$
+\begin{gathered}
+\left|\sum_{i=1}^n a_i b_i\right|=\sum_{i=1}^n\left|a_i b_i\right|, \\
+\frac{a_i^2}{\sum_{i=1}^n a_i^2}=\frac{b_i^2}{\sum_{i=1}^n b_i^2}
+\end{gathered}
+$$
+由第一个条件表明 $a_i b_i \geqslant 0, i=1,2, \cdots, n$, 即 $a_i$ 与 $b_i(i=1,2, \cdots$, $n$ ) 同号.
+第二个条件成立的充分必要条件是 $\frac{a_i^2}{b_i^2}=\frac{A_n}{C_n}$, 即 $\frac{\left|a_i\right|}{\left|b_i\right|}$ 为常数.
+由于 $a_i$ 与 $b_i(i=1,2, \cdots, n)$ 同号, 从而命题成立.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+柯西不等式及其证明.
+设 $a_1, a_2, \cdots, a_n$ 及 $b_1, b_2, \cdots, b_n$ 为任意实数, 则
+$$
+\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2 \leqslant\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right),
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ (规定 $a_i=0$ 时, $b_i=0$ )时等号成立.
+证法三 (比值法, 类似证法二)
+令 $A_n=a_1^2+a_2^2+\cdots+a_n^2, B_n=a_1 b_1+a_2 b_2+\cdots+a_n b_n, C_n=b_1^2+ b_2^2+\cdots+b_n^2$, 则
+$$
+\begin{gathered}
+\frac{A_n C_n}{B_n^2}+1=\sum_{i=1}^n \frac{a_i^2 C_n}{B_n^2}+\sum_{i=1}^n \frac{b_i^2}{C_n} \\
+=\sum_{i=1}^n\left(\frac{a_i^2 C_n}{B_n^2}+\frac{b_i^2}{C_n}\right) \\
+\geqslant \sum_{i=1}^n 2 \cdot \frac{a_i b_i}{B_n}=2, \\
+\frac{A_n C_n}{B_n^2}+1 \geqslant 2, \\
+B_n^2 \leqslant A_n C_n .
+\end{gathered}
+$$
+所以即
+$B_n^2 \leqslant A_n C_n$.
+等号成立当且仅当 $\frac{a_i}{b_i}(i=1,2, \cdots, n)$ 为一个常数.
+注:(1)这两个证明方法比较简单, 但是对于不等式的证明来讲, 怎样人手是十分重要的.
+比值法是证明不等式的一种常用、基本的方法.
+(2)上述两种方法也称为标准化方法,这个方法可以简化许多不等式的证明.
+在前面我们也使用过.
+如为了证明 $G_n \leqslant A_n$, 令 $y_i=\frac{a_i}{G_n}$, 则问题化为在条件 $y_1 y_2 \cdots y_n=1\left(y_i>0\right)$ 下, 证明 $\sum_{i=1}^n y_i \geqslant n$.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+柯西不等式及其证明.
+设 $a_1, a_2, \cdots, a_n$ 及 $b_1, b_2, \cdots, b_n$ 为任意实数, 则
+$$
+\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2 \leqslant\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right),
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ (规定 $a_i=0$ 时, $b_i=0$ )时等号成立.
+证法四 (归纳法)
+众所周知, 归纳法是证明不等式的一种强有力和常用的方法, 这里, 利用归纳法证明一个更强的结论, 即
+$$
+\sum_{i=1}^n\left|a_i b_i\right| \leqslant \sqrt{\sum_{i=1}^n a_i^2} \sqrt{\sum_{i=1}^n b_i^2} .
+$$
+(1)当 $n=2$ 时,
+$$
+\begin{aligned}
+\left(a_1 b_1+a_2 b_2\right)^2 & =a_1^2 b_1^2+2 a_1 b_1 a_2 b_2+a_2^2 b_2^2 \\
+& \leqslant a_1^2 b_1^2+a_1^2 b_2^2+a_2^2 b_1^2+a_2^2 b_2^2 \\
+& =\left(a_1^2+a_2^2\right)\left(b_1^2+b_2^2\right),
+\end{aligned}
+$$
+且等号成立当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}$, 命题成立.
+(2)假设当 $n==k$ 时命题成立, 那么对于 $n=k+1$, 由归纳假设,
+$$
+\begin{aligned}
+& \sqrt{\sum_{i=1}^{k+1} a_i^2} \cdot \sqrt{\sum_{i=1}^{k+1} b_i^2} \\
+= & \sqrt{\sum_{i=1}^k a_i^2+a_{k+1}^2} \cdot \sqrt{\sum_{i=1}^k b_i^2+b_{k+1}^2}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& \geqslant \sqrt{\sum_{i=1}^k a_i^2} \cdot \sqrt{\sum_{i=1}^k b_i^2}+\left|a_{k+1} b_{k+1}\right| \\
+& \geqslant \sum_{i=1}^k\left|a_i b_i\right|+\left|a_{k+1} b_{k+1}\right|=\sum_{i=1}^{k+1}\left|a_i b_i\right| .
+\end{aligned}
+$$
+所以对一切的 $n$ 命题成立.
+不难得到等号成立的充分必要条件.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+柯西不等式及其证明.
+设 $a_1, a_2, \cdots, a_n$ 及 $b_1, b_2, \cdots, b_n$ 为任意实数, 则
+$$
+\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2 \leqslant\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right),
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ (规定 $a_i=0$ 时, $b_i=0$ )时等号成立.
+证法五 (归纳与综合法)
+(1)当 $n=2$ 时,有
+$$
+\begin{aligned}
+\left(a_1 b_1+a_2 b_2\right)^2 & =a_1^2 b_1^2+2 a_1 b_1 a_2 b_2+a_2^2 b_2^2 \\
+& \leqslant a_1^2 b_1^2+a_1^2 b_2^2+a_2^2 b_1^2+a_2^2 b_2^2 \\
+& =\left(a_1^2+a_2^2\right)\left(b_1^2+b_2^2\right),
+\end{aligned}
+$$
+且等号成立当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}$, 命题成立.
+(2)假设当 $n=k$ 时命题成立.
+对于 $n=k+1$, 令 $A_k=a_1^2+a_2^2+\cdots+a_k^2$, $B_k=a_1 b_1+a_2 b_2+\cdots+a_k b_k, C_k=b_1^2+b_2^2+\cdots+b_k^2$, 则由归纳假设
+$$
+B_k^2 \leqslant A_k C_k .
+$$
+由于我们要证明
+$$
+\begin{aligned}
+& \left(a_1 b_1+a_2 b_2+\cdots+a_k b_k+a_{k+1} b_{k+1}\right)^2 \\
+\leqslant & \left(a_1^2+a_2^2+\cdots+a_k^2+a_{k+1}^2\right)\left(b_1^2+b_2^2+\cdots+b_k^2+b_{k+1}^2\right),
+\end{aligned}
+$$
+等价于证明
+$$
+\begin{aligned}
+& \left(B_k+a_{k+1} b_{k+1}\right)^2 \leqslant\left(A_k+a_{k+1}^2\right)\left(C_k+b_{k+1}^2\right) \\
+\Leftrightarrow & B_k^2+2 B_k a_{k+1} b_{k+1} \leqslant A_k C_k+A_k b_{k+1}^2+C_k a_{k+1}^2 \\
+\Leftrightarrow & A_k C_k-B_k^2+A_k b_{k+1}^2+C_k a_{k+1}^2-2 B_k a_{k+1} b_{k+1} \geqslant 0 \\
+\Leftrightarrow & A_k C_k-B_k^2+\left(\sqrt{A_k} b_{k+1}-\sqrt{C_k} a_{k+1}\right)^2+2\left(\sqrt{A_k} \sqrt{C_k}-B_k\right) a_{k+1} b_{k+1} \geqslant 0 .
+\end{aligned}
+$$
+由归纳假设, 上述不等式成立, 且等式成立当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots= \frac{a_{k+1}}{b_{k+1}}$, 故对任意 $n \geqslant 1$, 命题成立.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+柯西不等式及其证明.
+设 $a_1, a_2, \cdots, a_n$ 及 $b_1, b_2, \cdots, b_n$ 为任意实数, 则
+$$
+\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2 \leqslant\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right),
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ (规定 $a_i=0$ 时, $b_i=0$ )时等号成立.
+证法六 (归纳法和平均值不等式)
+(1)当 $n=2$ 时,有
+$$
+\begin{aligned}
+\left(a_1 b_1+a_2 b_2\right)^2 & =a_1^2 b_1^2+2 a_1 b_1 a_2 b_2+a_2^2 b_2^2 \\
+& \leqslant a_1^2 b_1^2+a_1^2 b_2^2+a_2^2 b_1^2+a_2^2 b_2^2 \\
+& =\left(a_1^2+a_2^2\right)\left(b_1^2+b_2^2\right),
+\end{aligned}
+$$
+即命题成立.
+(2)假设当 $n=k$ 时命题成立.
+对于 $n=k+1$, 由于
+$$
+\begin{aligned}
+& \left(a_1 b_1+a_2 b_2+\cdots+a_k b_k+a_{k+1} b_{k+1}\right)^2 \\
+= & \left(a_1 b_1+a_2 b_2+\cdots+a_k b_k\right)^2 \\
+& +2\left(a_1 b_1+a_2 b_2+\cdots+a_k b_k\right) a_{k+1} b_{k+1}+a_{k+1}^2 b_{k+1}^2 .
+\end{aligned}
+$$
+由平均值不等式, 得
+$$
+\begin{aligned}
+& 2\left(a_1 b_1+a_2 b_2+\cdots+a_k b_k\right) a_{k+1} b_{k+1} \\
+\leqslant & a_{k+1}^2\left(b_1^2+b_2^2+\cdots+b_k^2\right)+b_{k+1}^2\left(a_1^2+a_2^2+\cdots+a_k^2\right) .
+\end{aligned}
+$$
+由归纳假设,得
+$$
+\begin{aligned}
+& \left(a_1 b_1+a_2 b_2+\cdots+a_k b_k+a_{k+1} b_{k+1}\right)^2 \\
+= & \left(a_1 b_1+a_2 b_2+\cdots+a_k b_k\right)^2+2\left(a_1 b_1+a_2 b_2+\cdots+a_k b_k\right) a_{k+1} b_{k+1}+a_{k+1}^2 b_{k+1}^2 \\
+\leqslant & \left(a_1 b_1+a_2 b_2+\cdots+a_k b_k\right)^2+a_{k+1}^2\left(b_1^2+b_2^2+\cdots+b_k^2\right) \\
+& +b_{k+1}^2\left(a_1^2+a_2^2+\cdots+a_k^2\right)+a_{k+1}^2 b_{k+1}^2 \\
+= & \left(a_1^2+a_2^2+\cdots+a_{k+1}^2\right)\left(b_1^2+b_2^2+\cdots+b_{k+1}^2\right) .
+\end{aligned}
+$$
+结合平均值不等式等号成立的条件, 不难得到柯西不等式等号成立的充要条件,故命题成立.
+注:(1)在上述的证明中, 我们反复利用了平均值不等式.
+(2)上述几种证明均用归纳法, 由于证明过程中, 对表达式的处理的不同,所以难易程度也就不同.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+柯西不等式及其证明.
+设 $a_1, a_2, \cdots, a_n$ 及 $b_1, b_2, \cdots, b_n$ 为任意实数, 则
+$$
+\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2 \leqslant\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right),
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ (规定 $a_i=0$ 时, $b_i=0$ )时等号成立.
+证法七(利用排序不等式) 由于
+$$
+\sum_{i=1}^n a_i^2 \sum_{i=1}^n b_i^2=a_1^2 \sum_{i=1}^n b_i^2+a_2^2 \sum_{i=1}^n b_i^2+\cdots+a_n^2 \sum_{i=1}^n b_i^2,
+$$
+则
+$$
+\begin{gathered}
+a_1 b_1, \cdots, a_1 b_n, a_2 b_1, \cdots, a_2 b_n, \cdots, a_n b_1, \cdots, a_n b_n, \\
+a_1 b_1, \cdots, a_1 b_n, a_2 b_1, \cdots, a_2 b_n, \cdots, a_n b_1, \cdots, a_n b_n
+\end{gathered}
+$$
+有两行相同, 共 $n^2$ 列, 且是同序的.
+另一方面,有乱序
+$$
+\begin{aligned}
+& a_1 b_1, \cdots, a_1 b_n, a_2 b_1, \cdots, a_2 b_n, \cdots, a_n b_1, \cdots, a_n b_n \\
+& a_1 b_1, \cdots, a_n b_1, a_1 b_2, \cdots, a_n b_2, \cdots, a_1 b_n, \cdots, a_n b_n
+\end{aligned}
+$$
+两行, 共 $n^2$ 列, 且两行为乱序, 其乘积为
+$$
+\sum_{i=1}^n \sum_{j=1}^n\left(a_i b_j\right)\left(a_j b_i\right)=\left(\sum_{i=1}^n a_i b_i\right)^2 .
+$$
+由引理 1 , 得
+$$
+\left(\sum_{i=1}^n a_i b_i\right)^2 \leqslant \sum_{i=1}^n a_i^2 \sum_{i=1}^n b_i^2,
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ 时等号成立.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+柯西不等式及其证明.
+设 $a_1, a_2, \cdots, a_n$ 及 $b_1, b_2, \cdots, b_n$ 为任意实数, 则
+$$
+\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2 \leqslant\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right),
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ (规定 $a_i=0$ 时, $b_i=0$ )时等号成立.
+证法八(利用参数平均值不等式)
+由于对 $m \in \mathbf{R}^{+}$, 得
+$$
+a_i b_i \leqslant \frac{1}{2}\left(m^2 a_i^2+\frac{b_i^2}{m^2}\right) .
+$$
+令 $m^2=\sqrt{\frac{\sum_{i=1}^n b_i^2}{\sum_{i=1}^n a_i^2}}$, 则
+$$
+\left|a_i b_i\right| \leqslant \frac{1}{2}\left(\sqrt{\frac{\sum_{i=1}^n b_i^2}{\sum_{i=1}^n a_i^2} a_i^2}+\sqrt{\frac{\sum_{i=1}^n a_i^2}{\sum_{i=1}^n b_i^2}} b_i^2\right),
+$$
+从而
+$$
+\sum_{i=1}^n\left|a_i b_i\right| \leqslant \frac{1}{2}\left(\sqrt{\frac{\sum_{i=1}^n b_i^2}{\sum_{i=1}^n a_i^2}} \sum_{i=1}^n a_i^2+\sqrt{\frac{\sum_{i=1}^n a_i^2}{\sum_{i=1}^n b_i^2}} \sum_{i=1}^n b_i^2\right),
+$$
+故
+$$
+\begin{aligned}
+\sum_{i=1}^n a_i b_i & \leqslant \sum_{i=1}^n\left|a_i b_i\right| \leqslant \frac{1}{2}\left(\sqrt{\sum_{i=1}^n b_i^2 \sum_{i=1}^n a_i^2}+\sqrt{\sum_{i=1}^n a_i^2 \sum_{i=1}^n b_i^2}\right) \\
+& =\left(\sum_{i=1}^n a_i^2\right)^{\frac{1}{2}}\left(\sum_{i=1}^n b_i^2\right)^{\frac{1}{2}} .
+\end{aligned}
+$$
+注:利用含参数的基本不等式来证明不等式, 具有较高的灵活性和技巧, 为了让大家熟悉这种证明方法, 后面, 我们将专门介绍.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+柯西不等式及其证明.
+设 $a_1, a_2, \cdots, a_n$ 及 $b_1, b_2, \cdots, b_n$ 为任意实数, 则
+$$
+\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2 \leqslant\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right),
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ (规定 $a_i=0$ 时, $b_i=0$ )时等号成立.
+证法九(利用行列式性质)
+$$
+\begin{aligned}
+& S=\sum_{i=1}^n a_i^2 \cdot \sum_{i=1}^n b_i^2-\left(\sum_{i=1}^n a_i b_i\right)^2 \\
+&=\left|\begin{array}{cc}
+a_1^2+a_2^2+\cdots+a_n^2 & a_1 b_1+a_2 b_2+\cdots+a_n b_n \\
+a_1 b_1+a_2 b_2+\cdots+a_n b_n & b_1^2+b_2^2+\cdots+b_n^2
+\end{array}\right| \\
+&=\sum_{i=1}^n\left|\begin{array}{cc}
+a_1^2+a_2^2+\cdots+a_n^2 & a_i b_i \\
+a_1 b_1+a_2 b_2+\cdots+a_n b_n & b_i^2
+\end{array}\right| \\
+&=\sum_{i=1}^n \sum_{j=1}^n\left|\begin{array}{cc}
+a_j^2 & a_i b_i \\
+a_j b_j & b_i^2
+\end{array}\right| \\
+&=\sum_{i=1}^n \sum_{j=1}^n a_j b_i\left|\begin{array}{cc}
+a_j & a_i \\
+b_j & b_i
+\end{array}\right|, \\
+& S=\sum_{j=1}^n \sum_{i=1}^n a_i b_j\left|\begin{array}{cc}
+a_i & a_j \\
+b_i & b_j
+\end{array}\right| \\
+&=\sum_{j=1}^n \sum_{i=1}^n a_i b_j(-1)\left|\begin{array}{cc}
+a_j & a_i \\
+b_j & b_i
+\end{array}\right| \\
+&=\sum_{i=1}^n \sum_{j=1}^n a_i b_j(-1)\left|\begin{array}{ll}
+a_j & a_i \\
+b_j & b_i
+\end{array}\right| \\
+& 2 S=\sum_{i=1}^n \sum_{j=1}^n\left(a_j b_i-a_i b_j\right)\left|\begin{array}{ll}
+a_j & a_i \\
+b_j & b_i
+\end{array}\right| \\
+&=\sum_{i=1}^n \sum_{j=1}^n\left(a_j b_i-a_i b_j\right)^2 \geqslant 0,
+\end{aligned}
+$$
+又
+$$
+\begin{aligned}
+S & =\sum_{j=1}^n \sum_{i=1}^n a_i b_j\left|\begin{array}{cc}
+a_i & a_j \\
+b_i & b_j
+\end{array}\right| \\
+& =\sum_{j=1}^n \sum_{i=1}^n a_i b_j(-1)\left|\begin{array}{ll}
+a_j & a_i \\
+b_j & b_i
+\end{array}\right| \\
+& =\sum_{i=1}^n \sum_{j=1}^n a_i b_j(-1)\left|\begin{array}{cc}
+a_j & a_i \\
+b_j & b_i
+\end{array}\right|,
+\end{aligned}
+$$
+所以
+$$
+\begin{aligned}
+2 S & =\sum_{i=1}^n \sum_{j=1}^n\left(a_j b_i-a_i b_j\right)\left|\begin{array}{ll}
+a_j & a_i \\
+b_j & b_i
+\end{array}\right| \\
+& =\sum_{i=1}^n \sum_{j=1}^n\left(a_j b_i-a_i b_j\right)^2 \geqslant 0
+\end{aligned}
+$$
+即 $S \geqslant 0$, 故不等式成立.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+柯西不等式及其证明.
+设 $a_1, a_2, \cdots, a_n$ 及 $b_1, b_2, \cdots, b_n$ 为任意实数, 则
+$$
+\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2 \leqslant\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right),
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ (规定 $a_i=0$ 时, $b_i=0$ )时等号成立.
+证法十(利用拉格朗日恒等式)
+对 $a_1, a_2, \cdots, a_n$ 与 $b_1, b_2, \cdots, b_n$, 我们有如下的拉格朗日恒等式
+$$
+\left(\sum_{i=1}^n a_i^2\right) \cdot\left(\sum_{i=1}^n b_i^2\right)-\left(\sum_{i=1}^n a_i b_i\right)^2=\sum_{1 \leqslant i<j \leqslant n}\left(a_i b_j-a_j b_i\right)^2 \geqslant 0 .
+$$
+不难看出命题成立.
+注:实际上, 证法十是证法九的一种特殊情况, 但在证明不等式中, 拉格朗日恒等式往往作为已知的结果使用, 此外, 拉格朗日恒等式也可以用其他方法来证明.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+柯西不等式及其证明.
+设 $a_1, a_2, \cdots, a_n$ 及 $b_1, b_2, \cdots, b_n$ 为任意实数, 则
+$$
+\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2 \leqslant\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right),
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ (规定 $a_i=0$ 时, $b_i=0$ )时等号成立.
+证法十一(内积法)
+令 $\boldsymbol{\alpha}=\left(a_1, a_2, \cdots, a_n\right), \boldsymbol{\beta}=\left(b_1, b_2, \cdots, b_n\right)$, 对任意实数 $t$, 我们有
+$$
+0 \leqslant(\boldsymbol{\alpha}+t \boldsymbol{\beta}, \boldsymbol{\alpha}+t \boldsymbol{\beta})=(\boldsymbol{\alpha}, \boldsymbol{\alpha})+2(\boldsymbol{\alpha}, \boldsymbol{\beta}) t+(\boldsymbol{\beta}, \boldsymbol{\beta}) t^2,
+$$
+于是
+$$
+\sum_{i=1}^n a_i^2+2 t \sum_{i=1}^n a_i b_i+\left(\sum_{i=1}^n b_i^2\right) t^2 \geqslant 0
+$$
+由 $t$ 的任意性, 得
+$$
+4\left[\left(\sum_{i=1}^n a_i b_i\right)^2-\sum_{i=1}^n a_i^2 \sum_{i=1}^n b_i^2\right] \leqslant 0,
+$$
+故命题成立.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+柯西不等式及其证明.
+设 $a_1, a_2, \cdots, a_n$ 及 $b_1, b_2, \cdots, b_n$ 为任意实数, 则
+$$
+\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2 \leqslant\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right),
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ (规定 $a_i=0$ 时, $b_i=0$ )时等号成立.
+证法十二(向量法)
+令 $\boldsymbol{\alpha}=\left(a_1, a_2, \cdots, a_n\right), \boldsymbol{\beta}=\left(b_1, b_2, \cdots, b_n\right)$, 则对向量 $\boldsymbol{\alpha}, \boldsymbol{\beta}$, 我们有
+$$
+\begin{gathered}
+\cos \langle\boldsymbol{\alpha}, \boldsymbol{\beta}\rangle=\frac{\boldsymbol{\alpha} \cdot \boldsymbol{\beta}}{|\boldsymbol{\alpha}| \cdot|\boldsymbol{\beta}|}, \\
+\frac{\boldsymbol{\alpha} \cdot \boldsymbol{\beta}}{|\boldsymbol{\alpha}| \cdot|\boldsymbol{\beta}|}=\cos (\boldsymbol{\alpha}, \boldsymbol{\beta}) \leqslant 1,
+\end{gathered}
+$$
+从而由 $\boldsymbol{\alpha} \cdot \boldsymbol{\beta}=a_1 b_1+a_2 b_2+\cdots+a_n b_n,|\boldsymbol{\alpha}|^2=\sum_{i=1}^n a_i^2,|\boldsymbol{\beta}|^2=\sum_{i=1}^n b_i^2$, 且等号成立当且仅当 $\cos \langle\boldsymbol{\alpha}, \boldsymbol{\beta}\rangle=1$, 即 $\boldsymbol{\alpha}$ 与 $\boldsymbol{\beta}$ 平行.
+故命题成立.
+注:内积法和向量法有着密切的联系, 内积亦称为点积, 其定义为: 对任意两个向量 $\boldsymbol{\alpha}, \boldsymbol{\beta}$, 它们的内积为
+$$
+(\boldsymbol{\alpha}, \boldsymbol{\beta})=\boldsymbol{\alpha} \cdot \boldsymbol{\beta}=\sum_{i=1}^n a_i b_i,
+$$
+容易验证, 对任意向量 $\boldsymbol{\alpha} \neq \overrightarrow{0}$,
+$$
+(\boldsymbol{\alpha}, \boldsymbol{\alpha})=\sum_{i=1}^n a_i^2>0
+$$
+在证法十一中, 就是利用了这个性质.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+柯西不等式及其证明.
+设 $a_1, a_2, \cdots, a_n$ 及 $b_1, b_2, \cdots, b_n$ 为任意实数, 则
+$$
+\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2 \leqslant\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right),
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ (规定 $a_i=0$ 时, $b_i=0$ )时等号成立.
+证法十三(构造单调数列)
+构造数列 $\left\{S_n\right\}$, 其中
+$$
+S_n=\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2-\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right) \text {, }
+$$
+则
+$$
+\begin{aligned}
+& S_1=\left(a_1 b_1\right)^2-a_1^2 b_1^2=0 \\
+& S_{n+1}-S_n= {\left[\left(a_1 b_1+a_2 b_2+\cdots+a_{n+1} b_{n+1}\right)^2\right.} \\
+&\left.-\left(a_1^2+a_2^2+\cdots+a_{n+1}^2\right)\left(b_1^2+b_2^2+\cdots+b_{n+1}^2\right)\right] \\
+&-\left[\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2-\left(a_1^2+a_2^2+\cdots+a_n^2\right)\right. \\
+&\left.\left(b_1^2+b_2^2+\cdots+b_n^2\right)\right]
+\end{aligned}
+$$
+$$
+\begin{aligned}
+= & 2\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right) a_{n+1} b_{n+1}+a_{n+1}^2 b_{n+1}^2 \\
+& -\left(a_1^2+a_2^2+\cdots+a_n^2\right) b_{n+1}^2 \\
+& -a_{n+1}^2\left(b_1^2+b_2^2+\cdots+b_n^2\right)-a_{n+1}^2 b_{n+1}^2 \\
+= & -\left[\left(a_1 b_{n+1}-b_1 a_{n+1}\right)^2+\left(a_2 b_{n+1}-b_2 a_{n+1}\right)^2\right. \\
+& \left.+\cdots+\left(a_n b_{n+1}-b_n a_{n+1}\right)^2\right] \leqslant 0,
+\end{aligned}
+$$
+即 $S_{n+1} \leqslant S_n$, 所以数列 $\left\{S_n\right\}$ 单调减少, 从而对一切 $n \geqslant 1$, 有 $S_n \leqslant S_1=0$, 故命题成立.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+柯西不等式及其证明.
+设 $a_1, a_2, \cdots, a_n$ 及 $b_1, b_2, \cdots, b_n$ 为任意实数, 则
+$$
+\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2 \leqslant\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right),
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ (规定 $a_i=0$ 时, $b_i=0$ )时等号成立.
+证法十四 (二次函数的判别式)
+令 $A_n=a_1^2+a_2^2+\cdots+a_n^2, B_n=a_1 b_1+a_2 b_2+\cdots+a_n b_n, C_n=b_1^2+ b_2^2+\cdots+b_n^2$, 作二次函数 $f(x)=A_n x^2+2 B_n x+C_n=\sum_{i=1}^n\left(a_i x+b_i\right)^2 \geqslant 0$, 且 $f(x)=0$ 的充要条件是 $\frac{a_i}{b_i}=\lambda$ 为常数.
+由于 $A_n>0, f(x) \geqslant 0$, 则它的判别式 $\Delta=4\left(B_n^2-A_n C_n\right) \leqslant 0$, 即
+$$
+B_n^2 \leqslant A_n C_n \text {. }
+$$
+等号成立当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ 为常数.
+用类似的方法, 可以证明下列不等式:
+设 $a_i, b_i \in \mathbf{R}$, 满足 $a_1^2-a_2^2-\cdots-a_n^2>0$ 或 $b_1^2-b_2^2-\cdots-b_n^2>0$, 求证: $\left(a_1 b_1-a_2 b_2-\cdots-a_n b_n\right)^2 \geqslant\left(a_1^2-a_2^2-\cdots-a_n^2\right)\left(b_1^2-b_2^2-\cdots-b_n^2\right)$.
+证明按上述记号, 不妨设 $A_n>0$, 考虑函数 $g(x)=A_n x^2+2 B_n x+ C_n=\left(a_1 x+b_1\right)^2-\sum_{i=2}^n\left(a_i x+b_i\right)^2$, 则存在 $x_0=-\frac{b_1}{a_1}, a_1 \neq 0$, 使得 $g\left(x_0\right) \leqslant$ 0 , 由于二次函数开口向上, 从而存在 $x_1$ 充分大, 使得 $g\left(x_1\right)>0$. 则它的判别式 $\Delta=4\left(B_n^2-A_n C_n\right) \geqslant 0$, 即
+$$
+B_n^2 \geqslant A_n C_n
+$$
+等号成立当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ 为常数.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+柯西不等式及其证明.
+设 $a_1, a_2, \cdots, a_n$ 及 $b_1, b_2, \cdots, b_n$ 为任意实数, 则
+$$
+\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2 \leqslant\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right),
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ (规定 $a_i=0$ 时, $b_i=0$ )时等号成立.
+证法十五 (凹函数方法)
+令 $A_n=a_1^2+a_2^2+\cdots+a_n^2, B_n=a_1 b_1+a_2 b_2+\cdots+a_n b_n, C_n=b_1^2+ b_2^2+\cdots+b_n^2$, 且不妨假设 $a_i>0, b_i>0$, 由前面的引理 4 , 对凹函数 $f(x)= \ln x$, 有
+$$
+\begin{gathered}
+\frac{1}{2} \ln \frac{a_i^2}{A_n}+\frac{1}{2} \ln \frac{b_i^2}{C_n} \leqslant \ln \frac{\frac{a_i^2}{A_n}+\frac{b_i^2}{C_n}}{2} \\
+\Leftrightarrow \ln \left(\frac{a_i^2}{A_n} \frac{b_i^2}{C_n}\right)^{\frac{1}{2}} \leqslant \ln \frac{\frac{a_i^2}{A_n}+\frac{b_i^2}{C_n}}{2} \\
+\Leftrightarrow\left(\frac{a_i^2}{A_n} \frac{b_i^2}{C_n}\right)^{\frac{1}{2}} \leqslant \frac{\frac{a_i^2}{A_n}+\frac{b_i^2}{C_n}}{2} .
+\end{gathered}
+$$
+于是
+$$
+\begin{aligned}
+& \sum_{i=1}^n \frac{a_i}{A_n^{\frac{1}{2}}} \frac{b_i}{C_n^{\frac{1}{2}}} \leqslant \frac{1}{2}\left(\frac{1}{A_n} \sum_{i=1}^n a_i^2+\frac{1}{C_n} \sum_{i=1}^n b_i^2\right)=1 \\
+\Leftrightarrow & \sum_{i=1}^n a_i b_i \leqslant A_n^{\frac{1}{2}} C_n^{\frac{1}{2}} .
+\end{aligned}
+$$
+不难得到, 等式成立的充要条件是 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$.
+另外, 如果令 $x=\frac{a_i^2}{A_n}, y=\frac{b_i^2}{C_n}, p=q=2$, 则由 Young 不等式,容易得到柯西不等式.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+柯西不等式的变形和推广.
+变形 1 设 $a_i \in \mathbf{R}, b_i>0(i=1,2, \cdots, n)$, 则
+$$
+\sum_{i=1}^n \frac{a_i^2}{b_i} \geqslant \frac{\left(\sum_{i=1}^n a_i\right)^2}{\sum_{i=1}^n b_i},
+$$
+等号成立的充分必要条件是 $a_i=\lambda b_i(i=1,2, \cdots, n)$.
+变形 2 设 $a_i, b_i(i=1,2, \cdots, n)$ 同号且不为零, 则
+$$
+\sum_{i=1}^n \frac{a_i}{b_i} \geqslant \frac{\left(\sum_{i=1}^n a_i\right)^2}{\sum_{i=1}^n a_i b_i},
+$$
+等号成立的充分必要条件是 $b_1=b_2=\cdots=b_n$.
+柯西不等式的推广为赫尔德 (Holder)不等式, 即赫尔德不等式 设 $a_i>0, b_i>0(i=1,2, \cdots, n), p>0, q>0$, 满足 $\frac{1}{p}+\frac{1}{q}=1$, 则
+$$
+\sum_{i=1}^n a_i b_i \leqslant\left(\sum_{i=1}^n a_i^p\right)^{\frac{1}{p}}\left(\sum_{i=1}^n b_i^q\right)^{\frac{1}{q}} .
+$$
+等号成立的充分必要条件是 $a_i^p=\lambda b_i^q(i=1,2, \cdots, n, \lambda>0)$.
+证明由 Young 不等式, 得
+$$
+\begin{aligned}
+& \sum_{i=1}^n\left[\frac{a_i^p}{\sum_{i=1}^n a_i^p}\right]^{\frac{1}{p}} \cdot\left[\frac{b_i^q}{\sum_{i=1}^n b_i^q}\right]^{\frac{1}{q}} \\
+\leqslant & \sum_{i=1}^n\left[\frac{1}{p} \frac{a_i^p}{\sum_{i=1}^n a_i^p}\right]+\sum_{i=1}^n\left[\frac{1}{q} \frac{b_i^q}{\sum_{i=1}^n b_i^q}\right]=\frac{1}{p}+\frac{1}{q}=1 .
+\end{aligned}
+$$
+等号成立的充分必要条件是
+$$
+\frac{a_i^p}{\sum_{i=1}^n a_i^p}=\frac{b_i^q}{\sum_{i=1}^n b_i^q}
+$$
+即 $a_i^p=\lambda b_i^q(i=1,2, \cdots, n, \lambda>0)$.
+赫尔德不等式也可以变形为
+$$
+\sum_{i=1}^n \frac{a_i^{m+1}}{b_i^m} \geqslant \frac{\left(\sum_{i=1}^n a_i\right)^{m+1}}{\left(\sum_{i=1}^n b_i\right)^m},
+$$
+等号成立的充分必要条件是 $a_i=\lambda b_i(i=1,2, \cdots, n)$. 其中 $a_i>0, b_i>0 (i=1,2, \cdots, n), m>0$ 或 $m<-1$.
+证明当 $m>0$ 时, 由赫尔德不等式, 得
+$$
+\begin{aligned}
+\sum_{i=1}^n a_i & =\sum_{i=1}^n\left(\frac{a_i}{b_i^{\frac{m}{m+1}}}\right) \cdot b_i^{\frac{m}{m+1}} \\
+& \leqslant\left[\sum_{i=1}^n\left(\frac{a_i}{b_i^{\frac{m}{m+1}}}\right)^{m+1}\right]^{\frac{1}{m+1}} \cdot\left[\sum_{i=1}^n\left(b_i^{\frac{m}{m+1}}\right)^{\frac{m+1}{m}}\right]^{\frac{m}{m+1}} \\
+& =\left(\sum_{i=1}^n \frac{a_i^{m+1}}{b_i^m}\right)^{\frac{1}{m+1}} \cdot\left(\sum_{i=1}^n b_i\right)^{\frac{m}{m+1}}
+\end{aligned}
+$$
+故
+$$
+\sum_{i=1}^n \frac{a_i^{m+1}}{b_i^m} \geqslant \frac{\left(\sum_{i=1}^n a_i\right)^{m+1}}{\left(\sum_{i=1}^n b_i\right)^m} .
+$$
+当 $m<-1$ 时, $-(m+1)>0$, 对于数组 $\left(b_1, b_2, \cdots, b_n\right)$ 和 $\left(a_1, a_2, \cdots\right.$, $\left.a_n\right)$ 有
+$$
+\begin{gathered}
+\sum_{i=1}^n \frac{b_i^{-(m+1)+1}}{a_i^{-(m+1)}} \geqslant \frac{\left(\sum_{i=1}^n b_i\right)^{-(m+1)+1}}{\left(\sum_{i=1}^n a_i\right)^{-(m+1)}} . \\
+\sum_{i=1}^n \frac{a_i^{m+1}}{b_i^m} \geqslant \frac{\left(\sum_{i=1}^n a_i\right)^{m+1}}{\left(\sum_{i=1}^n b_i\right)^m} .
+\end{gathered}
+$$
+等号成立当且仅当 $\left(\frac{a_i}{b_i^{\frac{m}{m+1}}}\right)^{m+1}=\mu\left(b_i^{\frac{m}{m+1}}\right)^{\frac{m+1}{m}}$, 即 $a_i=\lambda b_i(i=1$, $2, \cdots, n)$.
+由赫尔德不等式可以推出另一个重要的不等式, 即闵可夫斯基不等式 对 $a_i, b_i \in \mathbf{R}^{+}, k>1$, 则
+$$
+\left[\sum_{i=1}^n\left(a_i+b^i\right)^k\right]^{\frac{1}{k}} \leqslant\left(\sum_{i=1}^n a_i^k\right)^{\frac{1}{k}}+\left(\sum_{i=1}^n b_i^k\right)^{\frac{1}{k}},
+$$
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ 时,等号成立.
+证明由赫尔德不等式, 得
+$$
+\begin{aligned}
+\sum_{i=1}^n\left(a_i+b_i\right)^k= & \sum_{i=1}^n a_i\left(a_i+b_i\right)^{k-1}+\sum_{i=1}^n b_i\left(a_i+b_i\right)^{k-1} \\
+\leqslant & \left(\sum_{i=1}^n a_i^k\right)^{\frac{1}{k}}\left[\sum_{i=1}^n\left(a_i+b_i\right)^k\right]^{\frac{k-1}{k}}+\left(\sum_{i=1}^n b_i^k\right)^{\frac{1}{k}}\left[\sum_{i=1}^n\left(a_i+b_i\right)^k\right]^{\frac{k-1}{k}}, \\
+& \\
+\text { 所以 } & {\left[\sum_{i=1}^n\left(a_i+b_i\right)^k\right]^{\frac{1}{k}} \leqslant\left(\sum_{i=1}^n a_i^k\right)^{\frac{1}{k}}+\left(\sum_{i=1}^n b_i^k\right)^{\frac{1}{k}} . }
+\end{aligned}
+$$
+所以 $\quad\left[\sum_{i=1}^n\left(a_i+b_i\right)^k\right]^{\frac{1}{k}} \leqslant\left(\sum_{i=1}^n a_i^k\right)^{\frac{1}{k}}+\left(\sum_{i=1}^n b_i^k\right)^{\frac{1}{k}}$.
+不难知, 当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ 时,等号成立.
+关于柯西不等式的复数形式, 就不在这里讨论了.
+%%TEXT_END%%
+
+

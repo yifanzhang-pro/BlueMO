@@ -1,0 +1,370 @@
+
+%%TEXT_BEGIN%%
+组合最值问题是各类数学竞赛中的热门话题之一.
+这类问题一般可描述为下列问题:
+设 $\mathscr{A}$ 是某类组合结构组成的集合, $\mathscr{B}$ 是 $\mathscr{A}$ 中满足给定条件 $P$ 的元素组成的子集, 并且对 $\mathscr{A}$ 中每一个元素 $A$, 都对应唯一一个确定的实数 $m=f(A)$. 我们的问题是: 当 $A \in \mathscr{B}$ 时, 求 $m=f(A)$ 的最小值或最大值.
+有些组合最值问题中 $\mathscr{B}$ 和 $\mathscr{A}$ 是同一集合.
+在组合最值问题中自变量常常是正整数、集合、图等组合结构.
+它们都是一些离散的量, 而且由于自变量与要求最大(小)值的量的函数关系常常不能用一个解析式表示, 这就决定了求解组合最值问题与求解代数最值问题有许多不同的特点.
+求解组合最大(小)值问题,一般按以下步骤进行:
+(1) 探索所求的最大 (小) 值 $m_0$;
+(2) 证明: 对一切 $A \in \mathscr{B}$, 都有 $m=f(A) \leqslant m_0\left(\geqslant m_0\right)$;
+(3) 构造一个 $A_0 \in \mathscr{B}$, 使 $f\left(A_0\right)=m_0$. 于是, 我们得到当 $A \in \mathscr{B}$ 时 $m= f(A)$ 的最大 (小)值是 $m_0$.
+对于某些组合问题 (2), (3) 步可用下列 (2)',(3)'步代替.
+(2)' 证明: 满足 $m=f(A) \leqslant m_0\left(\geqslant m_0\right.$ ) 的一切 $A$ 都属于 $\mathscr{B}$ (即 $A$ 满足给定的条件 $P$ );
+(3)' 当 $m=f(A)>m_0\left(<m_0\right)$ 时, 构造一个 $A_0 \in \mathscr{A}$ 使 $m=f\left(A_0\right)> m_0\left(<m_0\right)$ ,而 $A_0 \notin \mathscr{B}$ (即 $A_0$ 不满足给定的条件).
+实际解答问题时, 常常是第(1)(2)步(第(1)(3)'步)同时进行: 也就是说, 我们常常是在分析论证中探索和找出最大(小)值 $m_0$, 或在构造中探索和找出最大 (小) 值 $m_0$.
+如果 $\mathscr{A}($ 或 $\mathscr{B})$ 是一个有限集合, 那么 $m==f(A)$ 的取值集合也是有限集合, 可见使 $m=f(A)$ 取到最大 (小) 值的组合结构 $A_0$ 必存在.
+这时, 我们常常可用逐步调整方法来讨论当 $m=f(A)$ 取最值时, $A$ 必须满足的一些必要条件.
+若满足这些必要条件的 $A$ 是唯一的, 那么这个 $A$ 就是要找的 $A_0$, 对应的 $f(A)$ 就是要求的最值; 若满足这些必要条件的 $A$ 只有少数几个, 则逐一算出它们对应 $f(A)$ 的值, 其中最大 (小) 者, 就是所求的最大(小)值.
+从前面介绍可以看出, 最值探索出来后, 一般还要进行"论证" 和"构造". 当然求解某些组合最值问题常常是结合"论证" (或"构造") 去探索最值的, 一旦最值探索出来, "论证" (或"构造")也就完成了,剩下的任务只是进行"构造"或"论证". 如何进行 "构造" 和"论证", 读者还可参看第十二讲和第十一讲、第十讲中介绍的各种方法,而探索最值的方法主要有以下几种:
+1. 估值法.
+估计最值的常用方法有以下几种: 构造特例估计, 特殊情形估计, 整体综合估计, 极端情形估计, 反面情形估计等等 
+2. 组合分析法.
+3. 计数方法.
+4. 调整法.
+5. 归纳法.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $M=\{1,2, \cdots, 1995\}, A$ 是 $M$ 的子集且满足条件: 当 $x \in A$ 时 $15 x \notin A$, 则 $A$ 中元素的个数最多是 . 
+%%<SOLUTION>%%
+解:我们尽可能构造出一个满足条件且含元素最多的子集 $A$, 因为要使当 $x \in A$ 时 $15 x \notin A$, 只要 $15 x>1995$, 即 $x>133$, 可见 $A$ 包含 $\{134,135$, $\cdots, 1995\}$, 并且要使当 $x \in A$ 时, $15 x \notin A$, 只要 $15 x<134$, 即 $x<9$, 可见 $A$ 又包含 $\{1,2,3, \cdots, 8\}$, 于是, 我们取 $M$ 的子集 $A=\{1,2, \cdots, 8\} \cup \{134,135, \cdots, 1995\}$, 它满足题目条件且 $|A|=8+(1995-133)=1870$.
+另一方面, 任取 $M$ 的一个满足条件的子集 $A$. 因为 $x$ 与 $15 x(x=9,10$, $11, \cdots, 133)$ 中至少有一个不属于 $A$, 故 $|A| \leqslant 1995-(133-8)=1870$.
+综上知 $A$ 中元素最多有 1870 个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 将边长为正整数 $m, n$ 的矩形划分为若干个边长均为正整数的正方形, 每个正方形的边均平行矩形的相应边.
+试求这些正方形边长之和的最小值.
+%%<SOLUTION>%%
+分析:不妨设 $m \geqslant n$, 我们构造一种特殊的划分情形, 首先从较长边 (边长等于 $m$ 的边) 上尽可能划出边长等于较短边的正方形, 剩下一个 $n \times r_1(0< r_1<n$ ) 的矩形, 再从较长的边 (边长等于 $n$ ) 上尽可能划出边长等于较短边长 $r_1$ 的正方形, 还剩一个 $r_1 \times r_2\left(0<r_2<r_1\right)$ 的矩形 $\cdots . . . \cdot$ 这样一直划分下去, 直到全部划分为正方形为止.
+我们来估计所有正方形边长之和的最小值.
+显然上述划分过程等价于对 $m, n$ 这两个正整数进行㫰转相除的过程.
+解不妨设 $m \geqslant n$, 记所求正方形边长之和的最小值为 $f(m, n)$, 由辗转相除法知道存在正整数 $q_1, q_2, \cdots, q_{k+1}$ 和 $r_1, r_2, \cdots, r_k$ 满足
+$$
+\begin{aligned}
+& m=q_1 n+r_1,\left(0<r_1<n\right) \\
+& n=q_2 r_1+r_2,\left(0<r_2<r_1\right) \\
+& r_1=q_3 r_2+r_3,\left(0<r_3<r_2\right) \\
+& \cdots \\
+& r_{k-2}=q_k r_{k-1}+r_k,\left(0<r_k<r_{k-1}\right) \\
+& r_{k-1}=q_{k+1} r_k .
+\end{aligned}
+$$
+于是, 我们首先从 $m \times n$ 矩形中划分出 $q_1$ 个 $n \times n$ 的正方形,剩下一个 $n \times r_1$ 的矩形,再从 $n \times r_1$ 的矩形中划分出 $q_2$ 个 $r_1 \times r_1$ 的正方形,剩下一个 $r_1 \times r_2$ 的矩形, $\cdots$,第 $k$ 步从 $r_{k-1} \times r_{k-2}$ 的矩形中划分出 $q_k$ 个 $r_{k-1} \times r_{k-1}$ 的正方形,剩下一个 $r_k \times r_{k-1}$ 的矩形.
+最后第 $k+1$ 步将 $r_k \times r_{k-1}$ 的矩形划分为 $q_{k+1}$ 个 $r_k \times r_k$ 的正方形而没有剩余.
+在这种划分下,所得各正方形边长之和为
+$$
+\begin{aligned}
+& q_1 n+q_2 r_1+q_3 r_2+\cdots+q_{k+1} r_k \\
+= & \left(m-r_1\right)+\left(n-r_2\right)+\left(r_1-r_3\right)+\left(r_2-r_4\right)+\cdots+ \\
+& \left(r_{k-2}-r_k\right)+r_{k-1} \\
+= & m+n-r_k \\
+= & m+n-(m, n) .
+\end{aligned}
+$$
+所以 $f(m, n) \leqslant m+n-(m, n)$.
+另一方面, 我们用数学归纳法证明对任何满足条件的划分, 各正方形的边长之和为 $b_{m, n} \geqslant m+n-(m, n)$.
+不妨设 $m \geqslant n, m=1$ 时 $n=1$. 这时只有一个边长为 1 的正方形, 边长之和为 $1=m+n-(m, n)$, 其他划分的正方形边长之和显然大于 1 , 所以 $b_{1,1} \geqslant 1=m+n-(m, n)$.
+假设当 $m \leqslant k$ 时, 对任意 $1 \leqslant n \leqslant m$, 有 $b_{m, n} \geqslant m+n-(m, n)$, 那么当 $m=k+1$ 时, 若 $n=k+1$, 则显然 $b_{m, n} \geqslant k+1=m+n-(m, n)$. 当 $1 \leqslant n \leqslant k$ 时, 设 $m \times n$ 矩形被分成 $p$ 个正方形, 其边长为 $a_1, a_2, \cdots, a_p$, 并且不妨设 $a_1 \geqslant a_2 \geqslant \cdots \geqslant a_p$. 显然 $a_1 \leqslant n$. 若 $a_1<n$, 设矩形 $A B C D$ 中 $A B= C D=m, B C=A D=n$, 于是 $A D 、 B C$ 之间与 $A D$ 平行的直线至少穿过 2 个正方形 (或与其边界重合), 于是 $a_1+a_2+\cdots+a_p$ 不小于 $A B$ 与 $C D$ 之和, 即
+$$
+a_1+a_2+\cdots+a_p \geqslant 2 m \geqslant m+n>m+n-(m, n) .
+$$
+若 $a_1=n$, 则从 $m \times n$ 矩形中划分出一个边长为 $a_1=n$ 的正方形后, 剩余部分组成一个 $(m-n) \times n$ 的矩形, 且它被分成 $p-1$ 个边长分别为 $a_2, a_3, \cdots, a_p$ 的正方形, 由归纳假设有
+$$
+a_2+a_3+\cdots+a_p \geqslant(m-n)+n-(m-n, n)=m-(m, n),
+$$
+从而 $b_{m, n}=a_1+a_2+\cdots+a_p \geqslant m+n-(m, n)$, 所以 $f(m, n)=\min b_{m, n} \geqslant m+n-(m, n)$.
+综上得所求正方形边长之和的最小值为 $f(m, n)=m+n-(m, n)$.
+%%<REMARK>%%
+注:本题也可从具体尺寸的一些矩形出发作一些特殊的划分猜出最小 值, 那么 $f(m, n) \leqslant m+n-(m, n)$ 也可用数学归纳法去证明.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 求最大正整数 $n$, 使存在 $n$ 个不同实数 $x_1, x_2, \cdots, x_n$ 满足: 对任意 $1 \leqslant i<j \leqslant n$, 有 $\left(1+x_i x_j\right)^2 \leqslant 0.99\left(1+x_i^2\right)\left(1+x_j^2\right)$.
+%%<SOLUTION>%%
+分析:因为 $\left(1+x_i x_j\right)^2 \leqslant 0.99\left(1+x_i^2\right)\left(1+x_j^2\right) \Leftrightarrow 100\left(1+x_i x_j\right)^2 \leqslant$
+$$
+\begin{aligned}
+& 99\left(1+x_i^2\right)\left(1+x_j^2\right) \Leftrightarrow 99\left[\left(1+x_i^2\right)\left(1+x_j^2\right)-\left(1+x_i x_j\right)^2\right] \geqslant\left(1+x_i x_j\right)^2 \Leftrightarrow \\
+& 99\left(x_i-x_j\right)^2 \geqslant\left(1+x_i x_j\right)^2 \Leftrightarrow\left|\frac{x_i-x_j}{1+x_i x_j}\right| \geqslant \frac{1}{\sqrt{99}} .
+\end{aligned}
+$$
+由此联想到两角差的正切公式: $\tan (\alpha-\beta)=\frac{\tan \alpha-\tan \beta}{1+\tan \alpha \tan \beta}$.
+解对任意 $n$ 个实数 $x_1, x_2, \cdots, x_n$, 令 $x_i=\tan \theta_i\left(-\frac{\pi}{2}<\theta_i<\frac{\pi}{2}, i=1\right.$, $2, \cdots, n$, 且不妨设 $\left.\theta_1<\theta_2<\cdots<\theta_n\right)$.
+那么,当 $\theta_n-\theta_1>\frac{n-1}{n} \pi=\pi-\frac{\pi}{n}$ 时, 由 $\theta_n-\theta_1<\pi$ 可得 $\tan ^2\left(\theta_n-\theta_1\right)< \tan ^2 \frac{\pi}{n}$; 当 $\theta_n-\theta_1 \leqslant \frac{n-1}{n} \pi$ 时, 由 $\theta_n-\theta_1=\left(\theta_n-\theta_{n-1}\right)+\left(\theta_{n-1}-\theta_{n-2}\right)+\cdots+\left(\theta_2-\right. \left.\theta_1\right) \leqslant \frac{n-1}{n} \pi$ 知, 存在 $i(1 \leqslant i \leqslant n-1)$ 使 $0<\theta_{i+1}-\theta_i \leqslant \frac{\pi}{n}$, 从而有 $\tan ^2\left(\theta_{i+1}-\theta_i\right) \leqslant \tan ^2 \frac{\pi}{n}$. 由上可知, 总存在 $1 \leqslant i<j \leqslant n$ 使 $\tan ^2\left(\theta_j-\theta_i\right) \leqslant \tan ^2 \frac{\pi}{n}$ 即
+$$
+\begin{gathered}
+\left(\cos ^2 \frac{\pi}{n}\right)\left(\frac{x_j-x_i}{1+x_i x_j}\right)^2 \leqslant \sin ^2 \frac{\pi}{n} \\
+\Leftrightarrow\left(\sin ^2 \frac{\pi}{n}\right)\left(1+x_i x_j\right)^2 \geqslant\left(\cos ^2 \frac{\pi}{n}\right)\left(x_j-x_i\right)^2,
+\end{gathered}
+$$
+两边再加 $\left(\cos ^2 \frac{\pi}{n}\right)\left(1+x_i x_j\right)^2$ 得
+$$
+\begin{aligned}
+\left(1+x_i x_j\right)^2 & \geqslant\left(\cos ^2 \frac{\pi}{n}\right)\left[\left(x_j-x_i\right)^2+\left(1+x_i x_j\right)^2\right] \\
+& =\left(\cos ^2 \frac{\pi}{n}\right)\left(1+x_i^2\right)\left(1+x_j^2\right) .
+\end{aligned}
+$$
+而当 $n \geqslant 32$ 时,有
+$$
+\begin{aligned}
+\cos ^2 \frac{\pi}{n} & =1-\sin ^2 \frac{\pi}{n} \geqslant 1-\left(\frac{\pi}{n}\right)^2 \\
+& \geqslant 1-\left(\frac{\pi}{32}\right)^2>1-\left(\frac{1}{10}\right)^2=0.99 .
+\end{aligned}
+$$
+即当 $n \geqslant 32$ 时, 对任意 $n$ 个实数 $x_1, x_2, \cdots, x_n$, 其中必存在两个实数 $x_i, x_j$ 使
+$$
+\left(1+x_i x_j\right)^2>0.99\left(1+x_i^2\right)\left(1+x_j^2\right),
+$$
+故 $n \geqslant 32$ 时, 不存在 $n$ 个实数 $x_1, x_2, \cdots, x_n$ 满足题目条件.
+另一方面, 取 31 个实数 $x_i=\tan (i \theta)(i=1,2, \cdots, 31)$, 其中 $\theta= \arctan \frac{1}{\sqrt{99}}$, 则 $\tan \theta=\frac{1}{\sqrt{99}}=\frac{\sqrt{9} \overline{9}}{99}<\frac{10}{99}<\frac{\pi}{31}$, 故 $0<\theta<\frac{\pi}{31}$, 所以, 当 $1 \leqslant i<j \leqslant 31$ 时, $\theta \leqslant(j-i) \theta \leqslant 30 \theta<\frac{30 \pi}{31}=\pi-\frac{\pi}{31}<\pi-\theta$, 故对任意 $1 \leqslant i<j \leqslant 31$ 有
+$$
+\begin{aligned}
+\tan ^2(j-i) \theta & \geqslant \tan ^2 \theta=\frac{1}{99} \Leftrightarrow\left(\frac{x_j-x_i}{1+x_i x_j}\right)^2 \geqslant \frac{1}{99} \\
+& \Leftrightarrow\left(1+x_i x_j\right)^2 \leqslant 0.99\left(1+x_i^2\right)\left(1+x_j^2\right) .
+\end{aligned}
+$$
+可见存在 31 个不同实数 $x_1, x_2, \cdots, x_{31}$ 满足题目条件.
+综上知所求 $n$ 的最大值为 31 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $M=\{1,2,3, \cdots, 40\}$, 求最小正整数 $n$, 使可将 $M$ 剖分成 $n$ 个两两不相交的子集且同一子集内任取 3 个数 $a, b, c$ (不必不相同)都有 $a \neq b+c$.
+%%<SOLUTION>%%
+解:$n=4$ 时,将 $M$ 分解为下列 4 个两两不相交的子集: $A=\{5,6,7$, $8,9,32,33,34,35,36\}, B=\{14,15,16, \cdots, 25,26,27\}, C=\{2,3$, $11,12,29,30,38,39\}, D=\{1,4,10,13,28,31,37,40\}$, 则同一子集内任取 3 个数 $a, b, c$ (不必不相同) 都有 $a \neq b+c$, 故所求最小正整数 $n \leqslant 4$.
+其次,假设可将 $M$ 分成 3 个两两不相交的子集 $A, B, C$ 使得在同一子集内任取 3 个数 $a, b, c$ (不必不相同)都有 $a \neq b+c$. 不妨设 $|A| \geqslant|B| \geqslant|C|$,
+且 $A$ 中元素从小到大排列为 $a_1, a_2, \cdots, a_{|A|}$. 于是 $a_1, a_2, \cdots, a_{|A|}$, 以及 $a_2- a_1, a_3-a_1, \cdots, a_{|A|}-a_1$ 都是 $M$ 中的两两不同的数(事实上, 由 $0<a_i-a_1<a_i$ 知 $a_i-a_1 \in M(i=1,2, \cdots,|A|)$, 且若 $a_i-a_1=a_j$ 则 $a_i=a_1+a_j$, 这与假设矛盾). 因为这些数共有 $2|A|-1$ 个, 所以 $2|A|-1 \leqslant 40,|A| \leqslant 20$, 其次 $3|A| \geqslant|A|+|B|+|C|=40$, 所以 $|A| \geqslant 14$, 并且 $|B| \geqslant \frac{1}{2}(|B|+|C|)=\frac{1}{2}(40-|A|)$. 从而元素对集合 $A \times B=\{(a, b) \mid a \in A$, $b \in B\}$ 中元素个数为 $|A \times B|=|A| \cdot|B| \geqslant \frac{1}{2}|A|(40-|A|)$. 而对任意元素对 $(a, b) \in A \times B, a+b$ 至少为 2 , 至多为 80 , 至多只有 79 种可能, 且 $14 \leqslant |A| \leqslant 20$. 又二次函数 $f(t)=\frac{1}{2} t(40-t)$ 在区间 $[14,20]$ 上的最小值为 $\min \{f(14), f(20)\}=\min \left\{\frac{1}{2} \times 14 \times(40-14), \frac{1}{2} \times 20 \times(40-20)\right\}=$ 182. 故 $|A \times B| \geqslant 182$, 由抽庶原理知 $A \times B$ 中至少有 $\left[\frac{182-1}{79}\right]+1=3$ 个不同元素 $\left(a_1, b_1\right),\left(a_2, b_2\right),\left(a_3, b_3\right)$ 满足 $a_1+b_1=a_2+b_2=a_3+b_3$.
+若 $a_1, a_2, a_3$ 中有两个相等, 则对应的 $b_i$ 也相等.
+这与 $\left(a_1, b_1\right),\left(a_2\right.$, $\left.b_2\right),\left(a_3, b_3\right)$ 两两不同矛盾,故 $a_1, a_2, a_3$ 两两不同, 从而 $b_1, b_2, b_3$ 也两两不同.
+不妨设 $a_1<a_2<a_3$, 从而 $b_1>b_2>b_3$. 并且对任意 $1 \leqslant i<j \leqslant 3, a_j- a_i$ 仍在 $M$ 中但不在 $A$ 中, 同理对任意 $1 \leqslant i<j \leqslant 3, b_i-b_j \in M$, 但 $b_i- b_j \notin B$, 故三个差 $a_2-a_1=b_1-b_2, a_3-a_1=b_1-b_3, a_3-a_2=b_2-b_3 \notin A \cup B$, 从而它们都属于 $C=M(A \cup B)$. 令 $a=a_3-a_1, b=a_2-a_1, c= a_3-a_2$, 则 $a=b+c$, 矛盾,所以 $n$ 的最小值 $\geqslant 4$.
+综上可知, 所求 $n$ 的最小值为 4 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $A$ 是有限集, 且 $|A| \geqslant 2, A_1, A_2, \cdots, A_n$ 是 $A$ 的子集且满足下述条件:
+(1) $\left|A_1\right|=\left|A_2\right|=\cdots=\left|A_n\right|=k, k>\frac{|A|}{2}$;
+(2) 对任意 $a, b \in A$, 存在 3 个集合 $A_r, A_s, A_t(1 \leqslant r<s<t \leqslant n)$ 使得 $a, b \in A_r \cap A_s \cap A_t$;
+(3) 对任意正整数 $i, j(1 \leqslant i<j \leqslant n)$, 有 $\left|A_i \cap A_j\right| \leqslant 3$.
+求: 当 $k$ 取最大值时,正整数 $n$ 的所有可能值.
+%%<SOLUTION>%%
+解:不妨设 $A=\{1,2, \cdots, m\}$, 由条件 (1), (2) 知 $m \geqslant k \geqslant 2, n \geqslant 3$ 且$m \leqslant 2 k-1$.
+假设 $i$ 属于 $A_1, A_2, \cdots, A_n$ 中 $r_i$ 个集合 $(i=1,2, \cdots, m)$. 如果 $i \in A_j$,那么将 $\left(i, A_j\right)$ 配成一对 $(1 \leqslant i \leqslant m, 1 \leqslant j \leqslant n)$, 并设这样的对子共有 $x$ 个.一方面对任意 $i \in A$, 可形成 $r_i$ 个含 $i$ 的对子, 又 $i=1,2, \cdots, m$, 所以 $x=$ $\sum_{i=1}^m r_i$, 另一方面, 对任意 $A_j$, 可形成 $\left|A_j\right|=k$ 个含 $A_j$ 的对子, 所以 $x=\sum_{j=1}^n\left|A_j\right|=n k$, 于是我们得到
+$$
+\sum_{i=1}^m r_i=n k . \label{eq1}
+$$
+如果 $i \neq j$ 都属于 $A_t$, 那么将 $\left(i, j ; A_t\right)$ 组成第一类三元组 (前两个元不考虑顺序), 并设第一类三元组有 $y$ 个. 于是由已知条件 (2) 知; 对任意 $i \neq j$,至少可形成三个含 $i, j$ 的第一类三元组, 而 $i, j(i \neq j)$ 有 $\mathrm{C}_m^2$ 种不同取法, 故 $y \geqslant 3 \mathrm{C}_m^2$. 另一方面由 $\left|A_t\right|=k$ 知: 对任意 $A_t$, 可形成 $\mathrm{C}_k^2$ 个含 $A_t$ 的三元组, 而 $A_t$ 有 $n$ 种不同取法, 故 $y=n \mathrm{C}_k^2$, 于是我们得到 $n \mathrm{C}_k^2 \geqslant 3 \mathrm{C}_m^2$, 即
+$$
+n \geqslant \frac{3 m(m-1)}{k(k-1)} . \label{eq2}
+$$
+如果 $t$ 是 $A_i$ 和 $A_j(i \neq j)$ 的公共元, 那么将 $\left(t ; A_i, A_j\right)$ 组成第二类三元组 (后两个元不考虑顺序), 并设第二类三元组有 $Z$ 个. 因为 $t$ 属于 $A_1, A_2, \cdots, A_n$中 $r_t$ 个集合, 故对任意 $t$, 可形成 $\mathrm{C}_{r_t}^2$ 个含 $t$ 的第二类三元组, 而 $t=1,2, \cdots, m$,所以 $Z=\sum_{t=1}^m \mathrm{C}_{r_i}^2$. 另一方面, 对任意 $A_i$ 和 $A_j(i \neq j)$, 可形成 $\left|A_i \cap A_j\right| \leqslant 3$ 个含 $A_i$ 和 $A_j$ 的第二类三元组. 又 $1 \leqslant i<j \leqslant n$, 所以 $Z=\sum_{1 \leqslant i<j \leqslant n}\left|A_i \cap A_j\right| \leqslant$ $3 \mathrm{C}_n^2=\frac{3}{2} n(n-1)$, 于是得
+$$
+\frac{3}{2} n(n-1) \geqslant \sum_{t=1}^m \mathrm{C}_{r_t}^2=\frac{1}{2}\left(\sum_{t=1}^m r_t^2-\sum_{t=1}^m r_t\right)
+$$
+由柯西不等式及 式\ref{eq1},我们得到
+$$
+\begin{aligned}
+\frac{3}{2} n(n-1) & \geqslant \frac{1}{2}\left(\frac{1}{m}\left(\sum_{t=1}^m r_t\right)^2-\sum_{t=1}^m r_t\right) \\
+& =\frac{1}{2 m}\left(\sum_{t=1}^m r_t\right)\left[\left(\sum_{t=1}^m r_t\right)-m\right] \\
+& =\frac{1}{2 m}(n k)(n k-m) .
+\end{aligned}
+$$
+整理得
+$$
+\left(k^2-3 m\right) n \leqslant(k-3) m . \label{eq3}
+$$
+考虑下列两种情形:
+(i) 若 $m \geqslant \frac{k^2}{3}$, 则结合已知条件 $m \leqslant 2 k-1$, 解得
+$$
+3-\sqrt{6} \leqslant k \leqslant 3+\sqrt{6},
+$$
+即 $1 \leqslant k \leqslant 5$.
+(ii) 若 $m<\frac{k^2}{3}$, 则由 式\ref{eq3} 及 \ref{eq2} 得
+$$
+\frac{3 m(m-1)}{k(k-1)} \leqslant n \leqslant \frac{(k-3) m}{k^2-3 m}, \label{eq4}
+$$
+去分母整理得
+$$
+9 m^2-3\left(k^2+3\right) m+k\left(k^2-k+3\right) \geqslant 0,
+$$
+即
+$$
+(3 m-k)\left[3 m-\left(k^2-k+3\right)\right] \geqslant 0,
+$$
+由于 $k^2-k+3>k$, 所以 $m \leqslant \frac{k}{3}$ (舍去, 因为 $m \geqslant k$ ) 或者
+$$
+m \geqslant \frac{1}{3}\left(k^2-k+3\right),
+$$
+由已知 $m \leqslant 2 k-1$, 故
+$$
+2 k-1 \geqslant m \geqslant \frac{1}{3}\left(k^2-k+3\right), \label{eq5}
+$$
+由此解出 $1 \leqslant k \leqslant 6$.
+由 (i), (ii), 我们得到 $1 \leqslant k \leqslant 6$, 故所求 $k$ 的最大值不大于 6 , 并且由不等式 \ref{eq5} 知 $k=6$ 当且仅当 $m=11$, 再由 式\ref{eq4} 知 $k=6$ 且 $m=11$ 当且仅当 $n=11$.
+其次, 当 $k=6, m=11, n=11$ 时,存在满足条件(1),(2), (3) 的实例如下:令
+$$
+A_t=\{t, t+1, t+2, t+6, t+8, t+9\}, t=1,2, \cdots, 11 .
+$$
+并且约定当 $j \equiv i(\bmod 11)$ 时, $j$ 与 $i$ 表示同一个元素.
+于是对任意 $i, j(1 \leqslant i< j \leqslant 11$ ), 含 $i$ 的集合有且只有以下 6 个:
+$$
+\begin{aligned}
+& A_i=\{i, i+1, i+2, i+6, i+8, i+9\} ; \\
+& A_{i+2}=\{i, i+2, i+3, i+4, i+8, i+10\} ; \\
+& A_{i+3}=\{i, i+1, i+3, i+4, i+5, i+9\} ; \\
+& A_{i+5}=\{i, i+2, i+3, i+5, i+6, i+7\} ; \\
+& A_{i+9}=\{i, i+4, i+6, i+7, i+9, i+10\} ; \\
+& A_{i+10}=\{i, i+1, i+5, i+7, i+8, i+10\} .
+\end{aligned}
+$$
+上述 6 个集合中除了 $i$ 出现 6 次以外, 其他 $i+1$, $i+2, i+3, i+4, i+5, i+6, i+7, i+8, i+ 9, i+10$ 都恰出现 3 次.
+故对任意 $i, j \in\{1,2,3$, $\cdots, 11\}, i \neq j$, 有且只有 3 个集合包含 $i$ 与 $j$.
+假设将周长为 11 的圆周分为 11 等分, 将 11 个等分点按顺时针方向标记为 $1,2, \cdots, 11$. 假设这个圆周上按顺时针方向从点 $i$ 到点 $j$ 的距离为 $d_{i j}$, 于是, 对于圆周上的点集 $A_i$ 可得下表,如图(<FilePath:./figures/fig-c15i1.png>) 
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline$j$ & $i$ & $i+1$ & $i+2$ & $i+6$ & $i+8$ & $i+9$ \\
+\hline$i$ & & & & & \\
+\hline$i j$ & 11 & 1 & 2 & 6 & 8 & 9 \\
+\hline$i+1$ & 10 & 11 & 1 & 5 & 7 & 8 \\
+\hline$i+2$ & 9 & 10 & 11 & 4 & 6 & 7 \\
+\hline$i+6$ & 5 & 6 & 7 & 11 & 2 & 3 \\
+\hline$i+8$ & 3 & 4 & 5 & 9 & 11 & 1 \\
+\hline$i+9$ & 2 & 3 & 4 & 8 & 10 & 11 \\
+\hline
+\end{tabular}
+由这个表可知在 $A_i=\{i, i+1, i+2, i+6, i+8, i+9\}$ 中, 按顺时针方向距离为 $1,2, \cdots, 10$ 的点各有 3 对, 因为在圆周上将点集 $A_i$ 按顺时针方向旋转长为 $j-i$ 的距离后便得到点集 $A_j$, 故旋转后, $A_i$ 中的且只有 3 个点到达的位置正是 $A_j$ 中的三个点, 从而 $\left|A_i \cap A_j\right|=3(1 \leqslant i<j \leqslant 11$ ) (直接验证这点也可).
+综上可得 $k$ 的最大值为 6 , 这时 $n=11$.
+%%<REMARK>%%
+注:本题可以等价地写成下列问题: 某中学在三下乡的活动中派出一支文艺小分队到农村进行一次慰问演出 (小分队中每人都是演员), 满足
+(1)每个节目都恰有相同的人数参加演出, 且每个节目演出时, 台上参加演出的演员人数总是多于台下没有参加演出的演员人数;
+(2)对任意两名演员, 至少同台参加了三个不同节目的演出;
+(3)每两个不同节目, 至多有三名相同的演员参加了演出.
+求参加每个节目演出的演员人数取最大值时, 一共演出了多少个节目.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $A$ 为平面内一个有限点集, 现将 $A$ 中每个点染成三种颜色之一使得两个同色点所连线段上恰有一个另外颜色的点, 试求 $A$ 中所含点数的最大值.
+%%<SOLUTION>%%
+解:如图(<FilePath:./figures/fig-c15i2.png>), 存在含 6 个点的集合 $A=\left\{A_1, A_2, A_3, A_4, A_5, A_6\right\}$ 满足题目条件,其中 $A_1, A_4$ 为红色, $A_2, A_5$ 为蓝色, $A_3, A_6$ 为黄色.
+其次,如果存在点数不少于 7 的点集 $A$ 满足题目的条件, 那么由抽㞕原理知其中必有 $\left[\frac{7-1}{3}\right]+1=3$ 个点同色, 并且它们不共线.
+(否则,不妨设 $A_1, A_2, A_3$ 同色且依次在一条直线上, 则由已知条件知 $A_1$ 与 $A_2$ 之间有异色点 $B, A_2$ 与 $A_3$ 之间有异色点 $C$, 于是 $A_1$ 与 $A_3$ 之间有 2 个异色点 $B$ 和 $C$, 这与已知条件矛盾!). 从而存在一个 3 个顶点同色的三角形.
+考察所有以 $A$ 中点为顶点且 3 个顶点同色的三角形, 因其个数有限, 故其中必有一个 $\triangle A_1 A_2 A_3$, 它的 3 个顶点同色 (不妨设为红色, 用"・"表示) 且它的面积最小.
+由已知条件知 $\triangle A_1 A_2 A_3$ 的每条边上必有一个不同于红色的点, 若这 3 点同色, 则以它们为顶点的三角形面积小于 $\triangle A_1 A_2 A_3$ 的面积, 这与假设矛盾.
+故这 3 点不能全同色, 不如设 $B_1, B_2$ 为蓝色 (用"."表示), $B_3$ 为黄色 (用 "×" 表示), 如图(<FilePath:./figures/fig-c15i3.png>) 所示.
+若线段 $B_1 B_2$ 上的异色点 $T$ 为红色, 则 $S_{\triangle T A_2 A_3}<S_{\triangle A_1 A_2 A_3}$, 矛盾! 又同色的三个点不共线, 故 $T$ 为黄色.
+若连线 $T B_3$ 的异色点 $S$ 为红色, 则 $S_{\triangle S A_2 A_3}<S_{\triangle A_1 A_2 A_3}$, 矛盾! 又 $S$ 不能为黄色, 故 $S$ 为蓝色, 于是 $S_{\triangle S B_1 B_2}<S_{\triangle A_1 A_2 A_3}$, 矛盾! 因此, $A$ 中的点数不小于 7 是不正确的.
+综上可知, $A$ 中所含点数的最大值为 6 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. $M O$ 太空城由 99 个空间站组成, 任意两个空间站之间有管形通道相连, 规定其中 99 条通道为双向通行的主干道, 其余通道严格单向通行.
+如果某四个空间站可以通过它们之间的通道从其中任一站到达另外任一站, 则称这四个站的集合为一个互通四站组.
+试为 $M O$ 太空城设计一个方案, 使得互通四站组的数目最大 (请具体算出该最大数,并证明你的结论).
+%%<SOLUTION>%%
+解:把问题一般化,下面讨论 $n$ 个空间站和 $n$ 条双向主干线的一般情形, 其中 $n$ 为大于 3 的奇数, 并记 $m=\frac{1}{2}(n-3)$, 本题中 $n=99, m=48$.
+(1)若在四个空间站中有一个空间站与另外三个站的通道都是从该站严格单向发出, 则这四个站的集合不是互通四站组, 把这样的非互通四站组归人 $S$ 类, 其余的非互通四站组归人 $T$ 类, 于是四通互站组的总数为
+$$
+N_n=\mathrm{C}_n^4-|S|-|T| .
+$$
+用 $1,2, \cdots, n$ 给 $n$ 个空间站编号, 设从第 $i$ 号空间站发出的严格单向通道数为 $x_i$, 则 $S$ 类非互通四站组的个数为 $|S|=\sum_{i=1}^n \mathrm{C}_{x_i}^3$, 并且
+$$
+x_1+x_2+\cdots+x_n=\mathrm{C}_n^2-n=\frac{1}{2} n(n-3)=n m .
+$$
+要使 $N_n$ 最大, 必须 $|S|$ 和 $|T|$ 最小.
+首先, 我们证明 $|S| \geqslant n \mathrm{C}_m^3$. 事实上, 当 $|S|$ 取最小值时, 必对任意 $1 \leqslant i<j \leqslant n,\left|x_i-x_j\right| \leqslant 1$. 这是因为若存在 $1 \leqslant i, j \leqslant n$, 使 $x_j-x_i \geqslant 2$, 那么令 $x_i{ }^{\prime}=x_i+1, x_j{ }^{\prime}=x_j-1, x_k{ }^{\prime}=x_k(k \neq i, j)$, 于是 $\sum_{i=1}^n x_i{ }^{\prime}=\sum_{i=1}^n x_i$, 设 $\left|S^{\prime}\right|=\sum_{i=1}^n \mathrm{C}_{x_i{ }^{\prime}}^3$, 则 $|S|-\left|S^{\prime}\right|=\mathrm{C}_{x_i}^3+\mathrm{C}_{x_j}^3-\mathrm{C}_{x_i}^3-\mathrm{C}_{x_j{ }^{\prime}}^3=\mathrm{C}_{x_i}^3+\mathrm{C}_{x_j}^3- \mathrm{C}_{x_i+1}^3-\mathrm{C}_{x_j-1}^3=\mathrm{C}_{x_j-1}^2-\mathrm{C}_{x_i}^2>0$ (因为 $\left(x_j-1\right)-x_i \geqslant 1$ ), 这与 $|S|$ 最小矛盾.
+又 $x_1+x_2+\cdots+x_n=n m$, 所以 $x_1=x_2=\cdots=x_n=m$ 时, $S$ 取最小值.
+故 $|S| \geqslant n \mathrm{C}_m^3$, 当且仅当 $x_1=x_2=\cdots=x_n=m$ 时, 等号成立,所以
+$$
+N_n=\mathrm{C}_n^4-|S|-|T| \leqslant \mathrm{C}_n^4-n \mathrm{C}_m^3-0=\frac{1}{48} n(n-3)\left(n^2+6 n-31\right) .
+$$
+(2)下面的设计方案表明 $N_n=\mathrm{C}_n^4-n \mathrm{C}_m^3$ 是可以成立的.
+首先将编号为 $1,2, \cdots, n$ 的空间站依顺时针方向排在一个圆周上的 $n$ 个点 $A_1, A_2, \cdots, A_n$ 处, 圆周上相邻两空间站的通道为双向通行主干道, 这样一共设置了 $n$ 条双向通行的主干道:
+$$
+A_1 A_2, A_2 A_3, \cdots, A_{n-1} A_n, A_n A_1 .
+$$
+对任意 $i, j \in\{1,2,3, \cdots, n\}, i \neq j$, 沿顺时针方向若从 $A_i$ 到 $A_j$ 的弧经过奇数个空间站, 那么规定 $A_i$ 与 $A_j$ 之间的通道是从 $A_i$ 到 $A_j$ 的严格单向通行道: $A_i \rightarrow A_j$, 因为 $n$ 为奇数, 从 $A_i$ 到 $A_j$ 的顺时针方向的弧与从 $A_j$ 到 $A_i$ 的顺时针方向的弧当中恰有一个经过奇数空间站, 故上述规定不会导致矛盾.
+按此规定, 从每个 $A_i$ 出发的严格单向通行道的数目都为 $m=\frac{1}{2}(n-3)$, 所以 $|S|=n \mathrm{C}_m^3$. 下面证明: 此方案中必有 $|T|=0$.
+如果四站组中有两个空间站之间的通道是双向主干道, 那么易知这个四站组是互通四站组.
+因此, 如果四站组 $A 、 B 、 C 、 D$ 不是互通的, 那么它们中任何两站的通道都是严格单向通行道.
+设 $A$ 与 $B, B$ 与 $C, C$ 与 $D, D$ 与 $A$ 之间的空间站的个数分别为 $a, b, c, d$,于是 $a+b+c+d=n-4$ 为奇数, 从而 $a, b, c, d$ 中奇数个数是 1 和 3 .
+(i) 若 $a$ 为奇数, $b, c, d$ 为偶数, 则 $A \rightarrow B \rightarrow D \rightarrow C \rightarrow A$. 即 $A 、 B 、 C 、 D$ 为互通四站组, 如图(<FilePath:./figures/fig-c15i4.png>) .
+(ii) 若 $a$ 为偶数, $b, c, d$ 为奇数, 则从 $B$ 到 $A 、 C 、 D$ 的通道都是从 $B$ 出发的严格单向通道, 这种非互通四站组属于 $S$ 类, 如图(<FilePath:./figures/fig-c15i5.png>) .
+由以上讨论知此方案中 $|T|=0$, 从而 $|S|=\mathrm{C}_n^4-n \mathrm{C}_m^3$.
+综上可得, 互通四站组个数的最大值为 $\mathrm{C}_n^4-n \mathrm{C}_m^3=\frac{1}{48} n(n-3)\left(n^2+6 n-31\right)$, 特别 $n=99$ 时, 本题所求互通四站组个数的最大值为 $\mathrm{C}_{99}^4-99 \mathrm{C}_{48}^3=2052072$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 对于整数 $n \geqslant 4$, 求出最小正整数 $f(n)$, 使得对任何正整数 $m$, 集合 $\{m, m+1, \cdots, m+n-1\}$ 的任意 $f(n)$ 元子集中, 均有至少 3 个两两互素的元素.
+%%<SOLUTION>%%
+解:设 $Z=\{2,3, \cdots, n+1\}, T_n=A \cup B$, 其中 $A$ 和 $B$ 分别为 $Z$ 中 2 的倍数和 3 的倍数组成的子集, 则
+$$
+\begin{aligned}
+\left|T_n\right| & =|A \cup B|=|A|+|B|-|A \cap B| \\
+& =\left[\frac{n+1}{2}\right]+\left[\frac{n+1}{3}\right]-\left[\frac{n+1}{6}\right] .
+\end{aligned}
+$$
+且从 $T_n$ 中任取 3 个数, 其中必有 2 个数是 2 的倍数或 3 的倍数, 它们不互素, 所以
+$$
+f(n) \geqslant\left|T_n\right|+1=\left[\frac{n+1}{2}\right]+\left[\frac{n+1}{3}\right]-\left[\frac{n+1}{6}\right]+1, \label{eq1}
+$$
+于是 $f(4) \geqslant 4, f(5) \geqslant 5, f(6) \geqslant 5, f(7) \geqslant 6, f(8) \geqslant 7, f(9) \geqslant 8$, 又显然 $f(n) \leqslant n$, 故 $f(4)=4, f(5)=5$. 下证 $f(6)=5$.
+设 $x_1, x_2, \cdots, x_5$ 为 $\{m, m+1, \cdots, m+5\}$ 中任意 5 个数, 因为 $\{m, m+ 1, \cdots, m+5\}$ 由 3 个奇数和 3 个偶数组成, 故 $x_1, x_2, \cdots, x_5$ 中至少有 2 个奇数且至多有 3 个奇数.
+若 $x_1, x_2, \cdots, x_5$ 中有 3 个奇数, 则必是 3 个连续的奇数, 它们两两互素; 若 $x_1, x_2, \cdots, x_5$ 中有 3 个偶数, 不妨设 $x_1, x_2, x_3$ 为偶数, $x_4, x_5$ 为奇数, 则当 $1 \leqslant i<j \leqslant 3$ 时 $\left|x_i-x_j\right| \in\{2,4\}$, 所以 $x_1, x_2, x_3$ 中至多有一个是 3 的倍数且至多有一个是 5 的倍数, 从而至少有一个既不被 3 整除也不被 5 整除, 不妨设 $3 \nmid x_3$ 且 $5 \nmid x_3$, 于是 $x_3, x_4, x_5$ 两两互素 (因为 $\left|x_3-x_4\right|$ 和 $\left|x_3-x_5\right| \in\{1,3,5\},\left|x_4-x_5\right| \in\{2,4\}$ 且 $x_3$ 为偶数, $x_4$, $x_5$ 为奇数). 总之, $x_1, x_2, \cdots, x_5$ 中必有 3 个数两两互素, 故 $f(6) \leqslant 5$, 又 $f(6) \geqslant 5$, 所以 $f(6)=5$.
+再由 $\{m, m+1, \cdots, m+n\}=\{m, m+1, \cdots, m+n-1\} \cup\{m+n\}$ 得 $f(n+1) \leqslant f(n)+1$, 于是 $f(7) \leqslant f(6)+1=6, f(8) \leqslant f(7)+1=7$, $f(9) \leqslant f(8)+1=8$, 结合 $f(7) \geqslant 6, f(8) \geqslant 7, f(9) \geqslant 8$ 得 $f(7)=6$, $f(8)=7, f(9)=8$. 于是, 我们已证当 $4 \leqslant n \leqslant 9$ 时, 下列算式成立:
+$$
+f(n)=\left[\frac{n+1}{2}\right]+\left[\frac{n+1}{3}\right]-\left[\frac{n+1}{6}\right]+1 . \label{eq2}
+$$
+假设 $n \leqslant k(k \geqslant 9)$ 时, \ref{eq2} 式成立, 那么当 $n=k+1$ 时, 由
+$$
+\begin{gathered}
+\{m, m+1, \cdots, m+k\}=\{m, m+1, \cdots, m+k-6\} \cup \\
+\{m+k-5, m+k-4, \cdots, m+k\}
+\end{gathered}
+$$
+知, 从 $\{m, m+1, \cdots, m+k\}$ 中任取 $f(k-5)+f(6)-1$ 个数, 则其中或者有 $f(k-5)$ 个数属于 $\{m, m+1, \cdots, m+k-6\}$, 或者有 $f(6)$ 个数属于 $\{m+ k-5,(m+k-5)+1, \cdots,(m+k-5)+5\}$, 不论哪种情形, 由归纳假设知取出的数中必有 3 个数两两互素, 所以 $f(k+1) \leqslant f(k-5)+f(6)-1$, 由归纳假设知 $n=k-5(k \geqslant 9)$ 时, \ref{eq2} 式成立且 $f(6)=5$, 故我们得到
+$$
+\begin{aligned}
+f(k+1) & \leqslant f(k-5)+f(6)-1 \\
+& =\left[\frac{k-4}{2}\right]+\left[\frac{k-4}{3}\right]-\left[\frac{k-4}{6}\right]+1+5-1 \\
+& =\left[\frac{k+2-6}{2}\right]+\left[\frac{k+2-6}{3}\right]-\left[\frac{k+2-6}{6}\right]+5 \\
+& =\left(\left[\frac{k+2}{2}\right]-3\right)+\left(\left[\frac{k+2}{3}\right]-2\right)-\left(\left[\frac{k+-2}{6}\right]-1\right)+5 \\
+& =\left[\frac{k+2}{2}\right]+\left[\frac{k+2}{3}\right]-\left[\frac{k+2}{6}\right]+1 . \label{eq3}
+\end{aligned}
+$$
+由式\ref{eq1}及\ref{eq3}得
+$$
+f(k+1)=\left[\frac{k+2}{2}\right]+\left[\frac{k+2}{3}\right]-\left[\frac{k+2}{6}\right]+1 .
+$$
+故对一切 $n \geqslant 4$, 有
+$$
+f(n)=\left[\frac{n+1}{2}\right]+\left[\frac{n+1}{3}\right]-\left[\frac{n+1}{6}\right]+1 .
+$$
+%%<REMARK>%%
+注:用类似的方法我们可以证明对一切正整数 $n \geqslant 4$, 有 $f(n)= \left[\frac{n+1}{2}\right]+\left[\frac{n-2}{6}\right]+2$ 成立, 与上述解法不同之处是 $B$ 的取法, 这里 $B$ 为 $Z$ 内能被 3 整除的一切奇数, 且可证 $|B|=\left[\frac{n-2}{6}\right]+1$. 详细证明留给读者作为练习题.
+%%PROBLEM_END%%
+
+

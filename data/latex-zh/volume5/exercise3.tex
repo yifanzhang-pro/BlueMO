@@ -1,0 +1,275 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 已知 $a, b, c \in \mathbf{R}^{+}$. 求 $\frac{a}{b+3 c}+\frac{b}{8 c+4 a}+\frac{9 c}{3 a+2 b}$ 的最小值.
+%%<SOLUTION>%%
+令 $b+3 c=x, 8 c+4 a=y, 3 a+2 b=z$, 则原式 $=\frac{1}{8}\left(\frac{y}{x}+\frac{4 x}{y}\right)+\frac{1}{6}\left(\frac{z}{x}+\frac{9 x}{z}\right)+\frac{1}{16}\left(\frac{4 z}{y}+\frac{9 y}{z}\right)-\frac{61}{48} \geqslant \frac{47}{48}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 若椭圆 $\frac{x^2}{m^2}+\frac{y^2}{n^2}=1(m, n>0)$ 经过点 $p(a, b)(a b \neq 0,|a| \neq|b|)$, 求 $m+n$ 的最小值.
+%%<SOLUTION>%%
+不妨设 $m, n \in \mathbf{R}^{+}, a, b \in \mathbf{R}^{+}$, 令 $a=m \cos \alpha, b=n \sin \alpha$, 其中 $\alpha \in$
+$$
+\begin{aligned}
+& \left(0, \frac{\pi}{2}\right] \text {, 则 }(m+n)^2=\left(\frac{a}{\cos \alpha}+\frac{b}{\sin \alpha}\right)^2=\frac{a^2}{\cos ^2 \alpha}+\frac{b^2}{\sin ^2 \alpha}+\frac{2 a b}{\sin \alpha \cos \alpha}= \\
+& a^2\left(1+\tan ^2 \alpha\right)+b^2\left(1+\frac{1}{\tan ^2 \alpha}\right)+\frac{2 a b}{\frac{\left(1+\tan ^2 \alpha\right.}{\tan \alpha}} .
+\end{aligned}
+$$
+记 $\tan \alpha=t$, 则 $t \in \mathbf{R}^{+}$, 故
+$$
+\begin{aligned}
+(m+n)^2 & =\left(a^2+b^2\right)+a^2 t^2+\frac{b^2}{t^2}+\frac{2 a b}{t}+2 a b t \\
+& =a\left(a t^2+\frac{b}{t}+\frac{b}{t}\right)+b\left(\frac{b}{t^2}+a t+a t\right)+\left(a^2+b^2\right) \\
+& \geqslant a \cdot 3 \sqrt[3]{a b^2}+b \cdot 3 \sqrt[3]{a^2 b}+\left(a^2+b^2\right) .
+\end{aligned}
+$$
+因此 $(m+n)_{\min }=\left(a^{\frac{2}{3}}+b^{\frac{2}{3}}\right)^{\frac{3}{2}}$, 等号当 $t=\sqrt[3]{\frac{b}{a}}$ 时成立.
+%%<REMARK>%%
+注::也可以用 Cauchy 不等式来解.
+由于 $\left(a^{\frac{1}{3}} \cos \alpha+b^{\frac{1}{3}} \sin \alpha\right)^2 \leqslant\left(a^{\frac{2}{3}}+b^{\frac{2}{3}}\right)\left(\sin ^2 \alpha+\cos ^2 \alpha\right)$, 故 $\left(a^{\frac{2}{3}}+b^{\frac{2}{3}}\right)^{\frac{1}{2}}\left(\frac{a}{\cos \alpha}+\frac{b}{\sin \alpha}\right) \geqslant\left(a^{\frac{1}{3}} \cos \alpha+b^{\frac{1}{3}} \sin \alpha\right)\left(\frac{a}{\cos \alpha}+\frac{b}{\sin \alpha}\right) \geqslant\left(a^{\frac{2}{3}}+\right. \left.b^{\frac{2}{3}}\right)^2$, 即 $m+n \geqslant\left(a^{\frac{2}{3}}+b^{\frac{2}{3}}\right)^{\frac{3}{2}}$, 且当 $\alpha=\arctan \sqrt[3]{\frac{a}{b}}$ 时等号成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 在 $\triangle A B C$ 中, 求证:
+$$
+\frac{c-a}{b+c-a}+\frac{a-b}{c+a-b}+\frac{b-c}{a+b-c} \leqslant 0 .
+$$
+%%<SOLUTION>%%
+设 $b+c-a=2 x, c+a-b=2 y, a+b-c=2 z$, 则 $x, y, z \in \mathbf{R}^{+}$, 且 $a=y+z, b=x+z, c=x+y$, 故原不等式等价于 $\frac{x-z}{2 x}+\frac{y-x}{2 y}+\frac{z-y}{2 z} \leqslant$ 0 , 即 $\frac{z}{x}+\frac{x}{y}+\frac{y}{z} \geqslant 3$, 显然成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $x, y, z \in \mathbf{R}^{+}$, 求证:
+$$
+\frac{x+y+z}{3} \cdot \sqrt[3]{x y z} \leqslant\left(\frac{x+y}{2} \cdot \frac{y+z}{2} \cdot \frac{z+x}{2}\right)^{\frac{2}{3}} .
+$$
+%%<SOLUTION>%%
+设 $x+y=2 a, y+z=2 b, z+x=2 c$. 则 $a 、 b 、 c$ 可组成一个三角形, 设其面积为 $S$, 外接圆半径为 $R$, 则易见原不等式等价于 $a+b+c \leqslant 3 \sqrt{3} R$.
+由 $2 R(\sin A+\sin B+\sin C)=a+b+c \leqslant 2 R \cdot 3 \cdot \sin \frac{A+B+C}{3}=3 \sqrt{3} R$, 因此原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 若 $x, y \in \mathbf{R}^{+}$, 求证:
+$$
+\left(\frac{2 x+y}{3} \cdot \frac{x+2 y}{3}\right)^2 \geqslant \sqrt{x y} \cdot\left(\frac{x+y}{2}\right)^3 .
+$$
+%%<SOLUTION>%%
+设 $x+y=a, x y=b$, 则 $a^2 \geqslant 4 b>0$. 故
+$$
+\begin{aligned}
+\text { 左边 } & =\left(\frac{2 a^2+b}{9}\right)^2=\left(\frac{\frac{1}{4} a^2+\frac{1}{4} a^2+\cdots+\frac{1}{4} a^2+b}{9}\right)^2 \\
+& \geqslant \sqrt[9]{\frac{1}{4^{16}} \cdot a^{32} \cdot b^2} \geqslant \sqrt[9]{\frac{1}{2^{27}} \cdot a^{27} \cdot b^{\frac{9}{2}}} \\
+& =\frac{1}{8} a^3 \cdot b^{\frac{1}{2}}=\text { 右边.
+}
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设实数 $a 、 b$ 满足 $a b>0$, 求证: $\sqrt[3]{\frac{a^2 b^2(a+b)^2}{4}} \leqslant \frac{a^2+10 a b+b^2}{12}$, 并确定等号成立的条件.
+般地,对任意实数 $a 、 b$, 求证:
+$$
+\sqrt[3]{\frac{a^2 b^2(a+b)^2}{4}} \leqslant \frac{a^2+a b+b^2}{3} .
+$$
+%%<SOLUTION>%%
+(1) 设 $a b=x>0, a+b=y$, 则 $y^2 \geqslant 4 x$. 因此不等式右端 $=\frac{y^2+8 x}{12}= \frac{y^2}{12}+\frac{x}{3}+\frac{x}{3} \geqslant 3 \cdot \sqrt[3]{\frac{x^2 y^2}{12 \cdot 3^2}}=\sqrt[3]{\frac{x^2 y^2}{4}}=$ 左边, 故不等式成立, 且当 $a=b$ 时等号才成立.
+(2)当 $x \geqslant 0$ 时, 由于 $\frac{y^2+8 x}{12} \leqslant \frac{y^2-x}{3}$, 结论仍成立.
+此时等号成立, 仅当 $a=b$;
+当 $x<0$ 时, $-x>0$, 故不等式右端 $=\frac{y^2-x}{3}=\frac{y^2}{3}-\frac{x}{6}-\frac{x}{6} \geqslant 3$. $\sqrt[3]{\frac{y^2}{3} \cdot\left(-\frac{x}{6}\right)^2}=\sqrt[3]{\frac{x^2 y^2}{4}}$, 所以不等式也成立, 此时等号当 $b=-2 a$ 或 $a= -2 b$ 时取到.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 设 $a, b, c \in \mathbf{R}^{+}, a b c=1$, 求证:
+$$
+\frac{1}{1+a+b}+\frac{1}{1+b+c}+\frac{1}{1+c+a} \leqslant \frac{1}{2+a}+\frac{1}{2+b}+\frac{1}{2+c} .
+$$
+%%<SOLUTION>%%
+令 $x=a+b+c \geqslant 3 \sqrt[3]{a b c}=3, y=\frac{1}{a}+\frac{1}{b}+\frac{1}{c}=a b+b c+c a \geqslant 3 \sqrt[3]{a^2 b^2 c^2}=3$, 则原不等式等价于
+$$
+\begin{aligned}
+& \frac{(1+b+c)(1+c+a)+(1+c+a)(1+a+b)+(1+a+b)}{(1+a+b)(1+b+c)(1+c+a)}(1+b+c) \\
+& \qquad \frac{(2+b)(2+c)+(2+c)(2+a)+(2+a)(2+b)}{(2+a)(2+b)(2+c)}, \\
+& \frac{3+4 x+y+x^2}{2 x+x^2+y+x y} \leqslant \frac{12+4 x+y}{9+4 x+y} . \\
+& \text { 即 } \quad \text { 上式等价于 }\left(\frac{5 x^2 y}{3}-5 x^2\right)+\left(\frac{x y^2}{3}-y^2\right)+\left(\frac{4}{3} x^2 y-12 x\right)+(4 x y-12 x)+ \\
+& \left(\frac{1}{3} x y^2-3 y\right)+\left(\frac{1}{3} x y^2-9\right)+(2 x y-18) \geqslant 0 .
+\end{aligned}
+$$
+即
+$$
+\frac{3+4 x+y+x^2}{2 x+x^2+y+x y} \leqslant \frac{12+4 x+y}{9+4 x+y} \text {. }
+$$
+上式等价于 $\left(\frac{5 x^2 y}{3}-5 x^2\right)+\left(\frac{x y^2}{3}-y^2\right)+\left(\frac{4}{3} x^2 y-12 x\right)+(4 x y-12 x)+ \left(\frac{1}{3} x y^2-3 y\right)+\left(\frac{1}{3} x y^2-9\right)+(2 x y-18) \geqslant 0$.
+注意 $x y \geqslant 9$, 故此式成立, 原不等式得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 已知 $a 、 b 、 c 、 d 、 e$ 为正数,且 $a b c d e=1$, 求证:
+$$
+\begin{gathered}
+\frac{a+a b c}{1+a b+a b c d}+\frac{b+b c d}{1+b c+b c d e}+\frac{c+c d e}{1+c d+c d e a}+ \\
+\frac{d+d e a}{1+d e+d e a b}+\frac{e+e a b}{1+e a+e a b c} \geqslant \frac{10}{3} .
+\end{gathered}
+$$
+%%<SOLUTION>%%
+令 $a=\frac{y}{x}, b=\frac{z}{y}, c=\frac{u}{z}, d=\frac{v}{u}, e=\frac{x}{v}, x, y, z, u, v \in \mathbf{R}^{+}$, 则原不等式等价于 $\frac{u+y}{x+z+v}+\frac{z+v}{x+y+u}+\frac{x+u}{y+z+v}+\frac{y+v}{x+z+u}+$
+$$
+\frac{x+z}{y+u+v} \geqslant \frac{10}{3}
+$$
+两边同加 5 ,再乘以 3 ,上式等价于
+$$
+\begin{aligned}
+& 3(x+y+z+u+v) \cdot\left(\frac{1}{x+z+v}+\frac{1}{x+y+u}+\frac{1}{y+z+v}+\frac{1}{x+z+u}+\right. \\
+& \left.\frac{1}{y+u+v}\right) \geqslant 25 .
+\end{aligned}
+$$
+利用 Cauchy 不等式, 上式是显然的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 设 $a 、 b 、 c$ 是正实数,求证:
+$$
+a^2+b^2+c^2 \geqslant \frac{c\left(a^2+b^2\right)}{a+b}+\frac{b\left(c^2+a^2\right)}{c+a}+\frac{a\left(b^2+c^2\right)}{b+c} .
+$$
+%%<SOLUTION>%%
+不妨设 $a \geqslant b \geqslant c$, 令 $\frac{a}{c}=x, \frac{b}{c}=y$, 则 $x \geqslant y \geqslant 1$.
+原不等式转化为 $x^2+y^2+1 \geqslant \frac{x^2+y^2}{x+y}+\frac{y\left(1+x^2\right)}{1+x}+\frac{x\left(1+y^2\right)}{1+y}$.
+去分母, 整理得 $\left(x^4 y+x y^4\right)+\left(x^4+y^4+x+y\right) \geqslant\left(x^3 y^2+x^2 y^3\right)+\left(x^3+\right. \left.y^3+x^2+y^2\right)$, 即
+$$
+x y(x+y)(x-y)^2+x(x+1)(x-1)^2+y(y+1)(y-1)^2 \geqslant 0 .
+$$
+故原不等式成立.
+%%<REMARK>%%
+注:: 本题也可以直接证.
+证法如下:
+设 $a \geqslant b \geqslant c, a^2-\frac{a\left(b^2+c^2\right)}{b+c}=\frac{a^2 b+a^2 c-a b^2-a c^2}{b+c}=\frac{a b(a-b)}{b+c}+ \frac{a c(a-c)}{b+c}$, 由于 $\frac{1}{b+c} \geqslant \frac{1}{a+c} \geqslant \frac{1}{a+b}$, 则左边 - 右边 $=\left[\frac{a b(a-b)}{b+c}-\right. \left.\frac{a b(a-b)}{c+a}\right]+\left[\frac{a c(a-c)}{b+c}-\frac{a c(a-c)}{a+b}\right]+\left[\frac{b c(b-c)}{c+a}-\frac{b c(b-c)}{a+b}\right] \geqslant 0$, 故原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 设 $x, y, z \in \mathbf{R}^{+}$, 且满足 $x y z+x+z=y$, 求 $p=\frac{2}{x^2+1}-\frac{2}{y^2+1}+\frac{3}{z^2+1}$ 的最大值.
+%%<SOLUTION>%%
+由已知, $x+(-y)+z=x \cdot(-y) \cdot z$.
+设 $\dot{x}=\tan \alpha, y=-\tan \beta, z=\tan \gamma,(\alpha+\beta+\gamma=k \pi)$.
+故 $p=2 \cos ^2 \alpha-2 \cos ^2 \beta+3 \cos ^2 \gamma=2 \cos ^2 \alpha-2 \cos ^2 \beta+3 \cos ^2(\alpha+\beta)= -2 \sin (\alpha+\beta) \sin (\alpha-\beta)+3 \cos ^2 \gamma \leqslant 2 \sin \gamma+3-3 \sin ^2 \gamma=-3\left(\sin \gamma-\frac{1}{3}\right)^2+ \frac{10}{3} \leqslant \frac{10}{3}$, 因此 $p_{\max }=\frac{10}{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 求证:在开区间 $(0,1)$ 内一定能找到四对两两不同的正数 $(a, b)(a \neq b)$, 满足:
+$$
+\sqrt{\left(1-a^2\right)\left(1-b^2\right)}>\frac{a}{2 b}+\frac{b}{2 a}-a b-\frac{1}{8 a b} .
+$$
+%%<SOLUTION>%%
+令 $a=\cos \alpha, b=\cos \beta, \alpha, \beta \in\left(0, \frac{\pi}{2}\right)$, 则
+$$
+a b+\sqrt{\left(1-a^2\right)\left(1-b^2\right)}=\cos (\alpha-\beta) .
+$$
+两边平方, 有 $\sqrt{\left(1-a^2\right)\left(1-b^2\right)}=\frac{1}{2 a b} \cdot\left[\cos ^2(\alpha-\beta)-1\right]+\frac{a}{2 b}+\frac{b}{2 a}-a b$.
+当 $0<|\alpha-\beta|<\frac{\pi}{6}$ 时, $\cos (\alpha-\beta)>\frac{\sqrt{3}}{2}$, 则
+$$
+\frac{1}{2 a b} \cdot\left[\cos ^2(\alpha-\beta)-1\right]>-\frac{1}{8 a b},
+$$
+原不等式成立.
+显见, 在开区间 $\left(0, \frac{\pi}{2}\right)$ 内选择 4 对两两不同的角对 $\left(\alpha_i, \beta_i\right)$, 使得存在某两个角对 $(\alpha, \beta)$, 满足 $0<|\alpha-\beta|<\frac{\pi}{6}$ 是可以办到的, 因此结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 设 $s$ 是所有满足下列条件的三角形集合:
+$$
+5\left(\frac{1}{A P}+\frac{1}{B Q}+\frac{1}{C R}\right)-\frac{3}{\min \{A P, B Q, C R\}}=\frac{6}{r},
+$$
+其中 $r$ 为 $\triangle A B C$ 内切圆半径, $P 、 Q 、 R$ 分别是内切圆切边 $A B 、 B C 、 C A$ 的切点.
+求证: $s$ 中所有三角形都是等腰三角形并且均相似.
+%%<SOLUTION>%%
+设 $a=\max \{a, b, c\}$, 则 $A P=\min \{A P, B Q, C R\}$, 由题意可得
+$$
+\begin{aligned}
+& \frac{4}{-a+b+c}+\frac{10}{-b+a+c}+\frac{10}{-c+a+b}=\frac{6}{r} . \\
+& \text { 令 }-a+b+c=2 x,-b+a+c=2 y,-c+a+b=2 z, x, y, z>0 .
+\end{aligned}
+$$
+则上式等价于: $\frac{2}{x}+\frac{5}{y}+\frac{5}{z}=6 \cdot \sqrt{\frac{1}{x y}+\frac{1}{y z}+\frac{1}{z x}}$, 故
+$$
+\begin{gathered}
+2\left(\frac{1}{x}-\frac{4}{y}\right)^2+2\left(\frac{1}{x}-\frac{4}{z}\right)^2=7\left(\frac{1}{y}-\frac{1}{z}\right)^2 . \\
+\text { 令 } p=-\frac{1}{x}-\frac{4}{y}, q=\frac{1}{x}-\frac{4}{z} \text {, 则 } 25 p^2+14 p q+25 q^2=0 .
+\end{gathered}
+$$
+易证 $p=q=0$, 故 $y=z=4 x$, 于是易见结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 设 $a, b, c \in \mathbf{R}^{+}$, 且满足 $a b c=1$, 求证:
+$$
+\left(a-1+\frac{1}{b}\right)\left(b-1+\frac{1}{c}\right)\left(c-1+\frac{1}{a}\right) \leqslant 1 .
+$$
+%%<SOLUTION>%%
+令 $a=\frac{x}{y}, b=\frac{y}{z}, c=\frac{z}{x}$, 且 $x, y, z \in \mathbf{R}^{+}$, 则原不等式等价于 $\left(\frac{x}{y}-1+\frac{z}{y}\right)\left(\frac{y}{z}-1+\frac{x}{z}\right)\left(\frac{z}{x}-1+\frac{y}{x}\right) \leqslant 1$, 即 $(x-y+z)(y-z+x) (z-x+y) \leqslant x y z . x-y+z, y-z+x, z-x+y$ 中任意 2 个之和 $>0$, 故至多只有 1 个 $\leqslant 0$.
+(1) 若其中恰有 1 个 $\leqslant 0$, 结论显然成立.
+(2)若每个都 $>0$, 由于 $(x-y+z)(y-z+x) \leqslant x^2,(x-y+z)(z- x+y) \leqslant z^2,(y-z+x)(z-x+y) \leqslant y^2$, 相乘即得不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 设 $a, b, c \in \mathbf{R}^{+}$, 求证:
+$$
+\frac{a}{\sqrt{a^2+8 b c}}+\frac{b}{\sqrt{b^2+8 a c}}+\frac{c}{\sqrt{c^2+8 a b}} \geqslant 1 \text {. }
+$$
+%%<SOLUTION>%%
+记 $x=\frac{a}{\sqrt{a^2+8 b c}}, y=-\frac{b}{\sqrt{b^2+8 a c}}, z=\frac{c}{\sqrt{c^2+8 a b}}, x, y, z \in \mathbf{R}^{+}$, 则 $\left(\frac{1}{x^2}-1\right)\left(\frac{1}{y^2}-1\right)\left(\frac{1}{z^2}-1\right)=512$.
+反设 $x+y+z<1$, 则 $0<x, y, z<1$, 故
+$$
+\left(\frac{1}{x^2}-1\right)\left(-\frac{1}{y^2}-1\right)\left(\frac{1}{z^2}-1\right)==\frac{\left(1-x^2\right)\left(1-y^2\right)\left(1-z^2\right)}{x^2 y^2 z^2}
+$$
+$$
+\begin{aligned}
+& >\frac{\left[(x+y+z)^2-x^2\right] \cdot\left[(x+y+z)^2-y^2\right] \cdot\left[(x+y+z)^2-z^2\right]}{x^2 y^2 z^2} \\
+& =\frac{(y+z+x+x)(y+z)(x+y+y+z)(x+z)(x+y+z+z)(x+y)}{x^2 y^2 z^2} \\
+& \geqslant \frac{4 \sqrt[4]{x^2 y z} \cdot 2 \sqrt{y z} \cdot 4 \sqrt[4]{x y^2 z} \cdot 2 \sqrt{x z} \cdot 4 \sqrt[4]{x y z^2} \cdot 2 \sqrt{x y}}{x^2 y^2 z^2}=512,
+\end{aligned}
+$$
+矛盾!
+因此 $x+y+z \geqslant 1$.
+%%<REMARK>%%
+注::也可以先证明: $\frac{a}{\sqrt{a^2+8 b c}} \geqslant \frac{a^{\frac{1}{3}}}{a^{\frac{1}{3}}+b^{\frac{1}{3}}+c^{\frac{4}{3}}}$ 等.
+进而易证得不等式成立.
+%%PROBLEM_END%%
+
+

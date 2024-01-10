@@ -1,0 +1,421 @@
+
+%%TEXT_BEGIN%%
+对应不仅是一个基本的数学概念, 而且是解题和证题的一种重要方法和技巧.
+对应是联系陌生问题和熟悉问题的桥梁, 通过对应往往使得一些隐蔽的关系变得明朗和具体, 使人们易于找到解决问题的途径.
+用对应方法解题的关键是构造对应关系, 而这并没有一般的通法, 而应根据不同问题的特点作具体分析才能确定.
+下面我们将通过具体例题说明各种对应方法在解题中的应用.
+一、配对 法所谓配对法, 是指这样一种解题和证题的思想方法: 按照一定的规则, 将所研究的对象两两配成一对, 从而使得计算比较容易或解题思路更加清晰, 达到化繁为简, 化难为易的目的.
+二、映射方法运用映射法解题, 主要是利用下列定理.
+定理设 $f$ 是从有限集合 $M$ 到有限集合 $N$ 的映射.
+$|M|,|N|$ 分别表示 $M, N$ 中元素个数.
+(1) 若 $f$ 是单射 (即对任意 $x_1, x_2 \in M$, 当 $x_1 \neq x_2$ 时有 $f\left(x_1\right) \neq \left.f\left(x_2\right)\right)$, 则 $|M| \leqslant|N|$;
+(2) 若 $f$ 为满射 (即对任意 $y \in N$, 都存在 $x \in M$ 使 $f(x)=y$ ), 则 $|M| \geqslant|N|$;
+(3) 若 $f$ 为双射, 又称 $f$ 是从 $M$ 到 $N$ 上的一一对应(即 $f$ 既是单射, 又是满射), 则 $|M|=|N|$.
+当计算有限集合 $M$ 中的元素个数比较困难时,我们设法建立 $M$ 到另一集合 $N$ 上的双射, 如果 $N$ 中的元素个数 $|N|$ 容易算出, 于是由 $|M|=|N|$, 得出 $M$ 中元素的个数, 这就是计数中的映射方法.
+在某些组合证明中,除了要建立方程外,有时还要建立不等关系, 这时就可考虑构造单射、满射来进行论证.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+配对法除了用于直接计数和通过计数进行证明外, 还用于一类两人对策问题.
+这类问题常常涉及到几何图形的特征或数量的性质 (如整除性、同余等). 在这类对策问题中, 若某一步走后未被判输, 则称这样的步为活步.
+若某一方的策略能保证自己总能在对方走出活步后仍有步可走, 则必不败, 而在有限步对策问题中不败就必胜(假设无平局).
+保证有步可走的常用方法之一是将所有可走的位置(或可取的数)配对, 使每对位置 (或每对数) $a, b$ 满足: 只要对方走到一个位置(或取到一个数), 比如 $a$,自己就能走到另一个位置 $b$ (或取到另一个数 $b$ ).
+对涉及到几何图形的对策问题, 配对应根据几何图形的特征和走步规则来确定, 常用的有对称、相邻等条件, 应抢占多余的位置或对称中心.
+而对涉及数量性质的对策问题, 配对应根据问题条件中数的特征和走步规则来确定,常用的有整除、同余、几个数的和一定等条件.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设集合 $M=\{1,2, \cdots, 1000\}$, 对 $M$ 的任意非空子集 $X$, 令 $\alpha_X$ 表示 $X$ 中最大数与最小数之和, 那么所有 $\alpha_X$ 的算术平均值为 ? 
+%%<SOLUTION>%%
+解:将 $M$ 的所有非空子集配对, 对 $M$ 的任意非空子集 $X$, 令
+$$
+X^{\prime}=\{1001-x \mid x \in X\},
+$$
+则 $X^{\prime}$ 也是 $M$ 的非空子集, 且当 $X \neq X_1$ 时, $X^{\prime} \neq X_1{ }^{\prime}$.
+于是, $M$ 的所有非空子集分为两类:
+(1) $X \neq X^{\prime}$;
+(2) $X=X^{\prime}$.
+对于 (2) 类中的 $X$, 若 $x \in X$, 则 $1001-x \in X$, 当 $x_0$ 为 $X$ 中最小数时, $1001-x_0$ 为 $X$ 中最大数, 这时 $\alpha_X=x_0+\left(1001-x_0\right)=1001$.
+对于(1) 中一对 $X$ 和 $X^{\prime}$, 若 $X$ 中最小数和最大数分别为 $x_0, y_0$, 则 $X^{\prime}$ 中的最大数和最小数分别为 $1001-x_0$ 和 $1001-y_0$, 这时
+$$
+\alpha_X+\alpha_{X^{\prime}}=x_0+y_0+\left(1001-x_0\right)+\left(1001-y_0\right)=2002 .
+$$
+综上可得,所有 $\alpha_X$ 的平均值等于 1001 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 任意 133 个正整数中, 若至少有 799 对正整数互素, 证明: 其中必存在 4 个正整数 $a, b, c, d$ 使得 $a$ 与 $b, b$ 与 $c, c$ 与 $d, d$ 与 $a$ 都互素.
+%%<SOLUTION>%%
+解:用 133 个点 $A_1, A_2, \cdots, A_{133}$ 表示 133 个正整数,如果两个正整数互素, 那么对应的两点连一线段, 否则不连线段, 得到一个图 $G$. 已知 $G$ 中 133 个点之间至少连有 799 条线段, 要证明 $G$ 中存在一个四边形 (即存在 4 点 $A, B$, $C, D$ 使得 $A$ 与 $B, B$ 与 $C, C$ 与 $D, D$ 与 $A$ 都连有线段), 而这只要证明存在一个点对 $(B, D)$, 使得 $B$ 和 $D$ 都和另外两点 $A$ 和 $C$ 连有线段.
+若两点 $B$ 和 $D$ 都和点 $A$ 连有线段, 则将 $B$ 和 $D$ 配成一对, 并称 $(B, D)$ 为属于 $A$ 的点对.
+设从 $A_i$ 出发的线段有 $d_i$ 条 $(i=1,2, \cdots, 133)$, 于是
+$$
+d_1+d_2+\cdots+d_{133} \geqslant 2 \times 799, \label{eq1}
+$$
+并且分别属于 $A_1, A_2, \cdots, A_{133}$ 的点对数的总和为
+$$
+\sum_{i=1}^{133} \mathrm{C}_{d_i}^2=\frac{1}{2}\left(\sum_{i=1}^{133} d_i^2-\sum_{i=1}^{133} d_i\right) . \label{eq2}
+$$
+由柯西(Cauchy)不等式有
+$$
+\left(\sum_{i=1}^{133} d_i\right)^2 \leqslant \sum_{i=1}^{133} 1^2 \sum_{i=1}^{133} d_i^2=133 \sum_{i=1}^{133} d_i^2,
+$$
+即
+$$
+\sum_{i=1}^{133} d_i^2 \geqslant \frac{1}{133}\left(\sum_{i=1}^{133} d_i\right)^2 . \label{eq3}
+$$
+将式\ref{eq3}代入\ref{eq2}并利用式\ref{eq1}得
+$$
+\begin{aligned}
+\sum_{i=1}^{133} \mathrm{C}_{d_i}^2 & \geqslant \frac{1}{2}\left[\frac{1}{133}\left(\sum_{i=1}^{133} d_i\right)^2-\sum_{i=1}^{133} d_i\right] \\
+& =\frac{1}{2 \times 133}\left(\sum_{i=1}^{133} d_i\right)\left(\sum_{i=1}^{133} d_i-133\right) \\
+& \geqslant \frac{1}{2 \times 133} \times 2 \times 799 \times(2 \times 799-133) \\
+& >\frac{1}{2 \times 133} \times 2 \times 6 \times 133 \times(2 \times 6 \times 133-133) \\
+& =\frac{133 \times 132}{2}=\mathrm{C}_{133}^2 .
+\end{aligned}
+$$
+而 133 个点一共只能形成 $\mathrm{C}_{133}^2$ 个点对.
+故上述左端点对的计数有重复, 即至少存在一个点对 $(B, D)$ 属于两个不同的点 $A$ 和 $C$, 可见 $B$ 和 $D$ 既与 $A$ 连有线段, 又与 $C$ 连有线段.
+于是 $A, B, C, D$ 对应的正整数 $a, b, c, d$ 满足 $a$ 与 $b$, $b$ 与 $c, c$ 与 $d, d$ 与 $a$ 都互素,命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设有 11 个集合 $M_1, M_2, \cdots, M_{11}$, 满足
+(i) $\left|M_i\right|=5, i=1,2, \cdots, 11$;
+(ii) $\left|M_i \cap M_j\right| \neq 0,1 \leqslant i, j \leqslant 11$.
+记 $T=M_1 \cup M_2 \cup \cdots \cup M_{11}$, 并对任意 $x \in T$, 令
+$$
+\begin{aligned}
+& n(x)=\left|\left\{M_i \mid x \in M_i, 1 \leqslant i \leqslant 11\right\}\right|, \\
+& n=\max \{n(x) \mid x \in T\},
+\end{aligned}
+$$
+求 $n$ 的可能值中的最小值.
+说明 $\left|M_i\right|$ 表示集合 $M_i$ 中元素的个数,即 $\left|M_i\right|=\operatorname{Card} M_i . n(x)$ 表示包含元素 $x \in T$ 的集合 $M_i$ 的个数,而 $n$ 是所有这些 $n(x)$ 的最大值.
+%%<SOLUTION>%%
+解:设 $T=\left\{x_1, x_2, \cdots, x_m\right\}$, 作 $m \times 11$ 数表, 其中第 $i$ 行第 $j$ 列处的数为
+$$
+a_{i j}=\left\{\begin{array}{ll}
+1 & \left(\text { 若 } x_i \in M_j\right), \\
+0 & \left(\text { 若 } x_i \notin M_j\right)
+\end{array}(i=1,2, \cdots, m, j=1,2, \cdots, 11) .\right.
+$$
+于是 $n\left(x_i\right)=\sum_{j=1}^{11} a_{i j}$ 表示 $x_i$ 属于 $M_1, M_2, \cdots, M_{11}$ 中 $n\left(x_i\right)$ 个集合,而 $\left|M_j\right|=\sum_{i=1}^m a_{i j}$ 表示 $M_j$ 中元素的个数, 从而由已知条件(i)有
+$$
+\begin{aligned}
+\sum_{i=1}^m n\left(x_i\right) & =\sum_{i=1}^m \sum_{j=1}^{11} a_{i j}=\sum_{j=1}^{11} \sum_{i=1}^m a_{i j} \\
+& =\sum_{j=1}^{11}\left|M_j\right|=11 \times 5=55 . \label{eq1}
+\end{aligned}
+$$
+若集合 $M_j, M_k(j \neq k)$ 都包含元素 $x_i$, 则将 $M_j$ 与 $M_k$ 配成一对, 并称 $\left(M_j, M_k\right)$ 是属于元素 $x_i$ 的集合对, 于是分别属于 $x_1, x_2, \cdots, x_m$ 的集合对的个数的总和为
+$$
+\begin{aligned}
+\sum_{i=1}^m \mathrm{C}_{n\left(x_i\right)}^2 & =\frac{1}{2} \sum_{i=1}^m n\left(x_i\right)\left(n\left(x_i\right)-1\right) \\
+& \leqslant \frac{1}{2}(n-1) \sum_{i=1}^m n\left(x_i\right), \label{eq2}
+\end{aligned}
+$$
+另一方面, 由已知条件 (ii) 知, 对每对集合 $\left(M_i, M_j\right)(i<j)$, 有 $y \in M_i \cap M_j$, 即 $\left(M_i, M_j\right)$ 为属于 $y$ 的集合对,故这个集合对 $\left(M_i, M_j\right)$ 包含在(2)式左端的计算中,而 $M_1, M_2, \cdots, M_{11}$ 可组成 $\mathrm{C}_{11}^2=55$ 个集合对,所以有
+$$
+\sum_{i=1}^m \mathrm{C}_{n\left(x_i\right)}^2 \geqslant 55. \label{eq3}
+$$
+由式\ref{eq2}和\ref{eq3}并利用式\ref{eq1}得
+$$
+55 \leqslant \sum_{i=1}^m \mathrm{C}_{n\left(x_i\right)}^2 \leqslant \frac{1}{2}(n-1) \sum_{i=1}^m n\left(x_i\right)=\frac{1}{2} \times 55(n-1),
+$$
+即得 $n \geqslant 3$.
+如果 $n=3$, 则对任意 $x_i \in T, n\left(x_i\right) \leqslant n=3$.
+以下先证明: 不存在 $x_i \in T$ 使 $n\left(x_i\right) \leqslant 2$. 否则有 $x_{i_0} \in T$, 使 $n\left(x_{i_0}\right) \leqslant$ 2 , 于是有
+$$
+\begin{aligned}
+55 & \leqslant \frac{1}{2} \sum_{i=1}^m n\left(x_i\right)\left(n\left(x_i\right)-1\right) \\
+& =\frac{1}{2} \sum_{i \neq i_0} n\left(x_i\right)\left(n\left(x_i\right)-1\right)+\frac{1}{2} n\left(x_{i_0}\right)\left(n\left(x_{i_0}\right)-1\right) \\
+& \leqslant \frac{1}{2}(n-1) \sum_{i=1}^m n\left(x_i\right)+\frac{1}{2} n\left(x_{i_0}\right)\left(n\left(x_{i_0}\right)-n\right) \\
+& =\frac{1}{2} \times(3-1) \times 55+\frac{1}{2} \times 2 \times(2-3)=54,
+\end{aligned}
+$$
+矛盾.
+于是, 对任意 $x_i \in T$, 都有 $n\left(x_i\right)=3$, 从而由 $\sum_{i=1}^m n\left(x_i\right)=55$ 推出 $3 m=$ 55 , 这也不可能, 所以 $n \geqslant 4$.
+最后, 当 $n=4$ 时,下列 11 个集合满足题目条件(i)和(ii):
+$$
+\begin{aligned}
+& M_1=M_2=\{1,2,3,4,5\}, M_3=\{1,6,7,8,9\}, \\
+& M_4=\{1,10,11,12,13\}, M_5=\{2,6,9,10,14\}, \\
+& M_6=\{3,7,11,14,15\}, M_7=\{4,8,9,12,15\}, \\
+& M_8=\{5,9,13,14,15\}, M_9=\{4,5,6,11,14\}, \\
+& M_{10}=\{2,7,11,12,13\}, M_{11}=\{3,6,8,10,13\} .
+\end{aligned}
+$$
+这表明 $n\left(x_i\right) \leqslant 4$, 从而得到 $n$ 的最小值 $=4$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 某班共 30 名学生, 每名学生在班的内部都有同样多的朋友, 期末考试后, 任何两人的成绩都可以分出优劣, 没有并列者.
+比自己的多半朋友的成绩都好的学生称之为好学生, 问好学生最多有几名?
+%%<SOLUTION>%%
+解法一设每人有 $k$ 个朋友, 全班有 $x$ 个好学生.
+若学生 $a$ 比他的朋友 $b$ 的成绩好,则将 $a$ 与 $b$ 配成一对.
+设这种对子共有 $n$ 对.
+一方面, 最好的学生比他的 $k$ 个朋友的成绩都好, 可配成 $k$ 对, 其余 $x^{-1}$ 名好学生至少比他的 $\left[\frac{k}{2}\right]+1 \geqslant \frac{k+1}{2}$ 个朋友的成绩都好, 每人至少配成 $\frac{k+1}{2}$ 对,所以
+$$
+n \geqslant k+(x-1)\left(\frac{k+1}{2}\right) .
+$$
+另一方面, 30 名学生, 每人恰有 $k$ 个朋友, 至多共形成 $\frac{30 k}{2}=15 k$ 对, 即 $n \leqslant 15 k$, 所以
+$$
+k+(x-1)\left(\frac{k+1}{2}\right) \leqslant 15 k \text {, 即 } x \leqslant \frac{28 k}{k+1}+1=29-\frac{28}{k+1} . \label{eq1}
+$$
+其次, 设 $c$ 是好学生中最差的 1 名, 于是 $c$ 至多比 $30-x$ 名学生的成绩要好, 从而 $c$ 至多生成 $30-x$ 对, 另一方面 $c$ 至少比他的 $\left[\frac{k}{2}\right]+1 \geqslant \frac{k+1}{2}$ 名朋友的成绩好.
+故 $c$ 至少可生成 $\frac{k+1}{2}$ 对, 所以
+$$
+30-x \geqslant \frac{k+1}{2} \text {, 即 } k \leqslant 59-2 x . \label{eq2}
+$$
+式\ref{eq2}代入\ref{eq1}得 $x \leqslant 29-\frac{28}{60-2 x}=29-\frac{14}{30-x}$, 即
+$$
+x^2-59 x+856 \geqslant 0 \text {, }
+$$
+解得 $x \leqslant \frac{59-\sqrt{57}}{2}<26$ 或 $x \geqslant \frac{59+\sqrt{57}}{2}>30$ (舍去), 所以 $x \leqslant 25$.
+下面例子表明好学生可以是 25 人(由式\ref{eq2}中等号成立知这时 $k=9$ )
+用 $1,2, \cdots, 30$ 这 30 个号码分别表示第 1 名,第 2 名, $\cdots$,第 30 名学生, 并将这些号码填人右侧 $6 \times 5$ 的表格中.
+(1) 第 1 行每个学生的朋友是同行以及下一行不同列的其他 8 人以及第 6 行中同列的那个人 (例如 3 号学生的朋友的编号是 $1,2,4,5,6,7,9,10,28)$;
+(2) 第 2 行至第 5 行中每个学生的朋友是相邻
+\begin{tabular}{|c|c|c|c|c|}
+\hline 1 & 2 & 3 & 4 & 5 \\
+\hline 6 & 7 & 8 & 9 & 10 \\
+\hline 11 & 12 & 13 & 14 & 15 \\
+\hline 16 & 17 & 18 & 19 & 20 \\
+\hline 21 & 22 & 23 & 24 & 25 \\
+\hline 26 & 27 & 28 & 29 & 30 \\
+\hline
+\end{tabular}
+上、下 2 行中与他不同列的其他 8 人以及第 6 行中与他同列的那个人(例如 17 号学生的朋友的编号是 $11,13,14,15,21,23,24,25,27)$;
+(3) 第 6 行每个学生的朋友是上一行以及同列的其他 9 人 (例如 29 号学生的朋友的编号是 $21,22,23,24,25,4,9,14,19)$.
+于是, 每人恰有 9 位朋友,并且编号 1 至 25 的学生都是好学生.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 某班共 30 名学生, 每名学生在班的内部都有同样多的朋友, 期末考试后, 任何两人的成绩都可以分出优劣, 没有并列者.
+比自己的多半朋友的成绩都好的学生称之为好学生, 问好学生最多有几名?
+%%<SOLUTION>%%
+解法二若每位学生有 $2 k-1$ 个朋友, 那么 30 人中所有朋友对的数目为 $\frac{1}{2} \times 30 \times(2 k-1)=30 k-15$. 每对朋友中给成绩较优的发一张奖状, 这样共发出了 $30 k-15$ 张奖状.
+第 1 名总是拿 $2 k-1$ 张奖状,第 2 名至少拿 $2 k-2$ 张奖状, $\cdots$,第 $k$ 名至少拿 $k$ 张奖状,于是这 $k$ 名好学生至少一共拿了 $(2 k-1)+(2 k- 2)+\cdots+k=\frac{1}{2} k(3 k-1)$ 张奖状, 至多还剩 $30 k-15-\frac{1}{2} k(3 k-1)$ 张奖状, 因为每个好学生至少得 $k$ 张奖状, 故至多还有 $\frac{1}{k}\left[30 k-15-\frac{1}{2} k(3 k-1)\right]$ 个好学生.
+所以,好学生的人数 $n$ 至多为
+$$
+\begin{gathered}
+k+\frac{1}{k}\left[30 k-15-\frac{1}{2} k(3 k-1)\right]=30 \frac{1}{2}-\left(\frac{15}{k}+\frac{k}{2}\right) \\
+\leqslant 30 \frac{1}{2}-2 \sqrt{\frac{15}{k} \times \frac{k}{2}}=30 \frac{1}{2}-\sqrt{30}<30 \frac{1}{2}-5=25 \frac{1}{2},
+\end{gathered}
+$$
+因此, $n \leqslant 25$.
+若每位学生有 $2 k$ 个朋友, 则完全类似地可发出 $30 k$ 张奖状, 至少得 $k+1$ 张奖状的为好学生.
+第 1 名至第 $k$ 名至少共得了 $2 k+(2 k-1)+\cdots+(k+ 1)=\frac{1}{2} k(3 k+1)$ 张奖状, 故好学生人数 $n$ 至多为
+$$
+\begin{aligned}
+& k+\frac{1}{k+1}\left[30 k-\frac{1}{2} k(3 k+1)\right] \\
+= & \frac{1}{k+1}\left[30 k-\frac{1}{2} k(k-1)\right] \\
+= & \frac{1}{k+1}\left[30(k+1)-30-\frac{1}{2} k(k-1)\right]=30-\left(\frac{31}{k+1}+\frac{k-2}{2}\right) \\
+= & 31 \frac{1}{2}-\left(\frac{31}{k+1}+\frac{k+1}{2}\right) \leqslant 31 \frac{1}{2}-2 \sqrt{\frac{31}{k+1} \cdot \frac{k+1}{2}} \\
+= & 31 \frac{1}{2}-\sqrt{62}<25 .
+\end{aligned}
+$$
+综合两种情形知,好学生至多有 25 人,下同解法一.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 阿乃斯和波比在 $6 \times 6$ 的方格纸上玩游戏, 两人轮流在每一个空格内写上一个在其他格子中没有出现过的有理数.
+阿乃斯首先写, 当所有方格内都已写上数后, 将每一行中写的数为最大的那一个方格染成黑色.
+如果阿乃斯可以从方格纸的上顶部开始经过黑格画一条线到达方格纸的下底部, 那么阿乃斯获胜, 否则波比获胜 (如果两个正方形有公共顶点, 那么阿乃斯也能够画一条线从一个正方形到达另一个正方形), 找出 (并证明) 谁有必胜策略.
+%%<SOLUTION>%%
+解:波比有必胜策略: 波比每次写过数以后, 总可以使得每一行的最大数在集合 $A \cup B$ 内的方格中, 其中
+$$
+\begin{aligned}
+A= & \{(1,1),(1,2),(1,3),(2,1),(2,2),(2,3),(3,1),(3,2)\}, \\
+B== & \{(3,5),(4,4),(4,5),(4,6),(5,4),(5,5),(5,6),(6,4), \\
+& (6,5),(6,6)\},
+\end{aligned}
+$$
+这里 $(i, j)$ 表示位于第 $i$ 行第 $j$ 列处的方格.
+事实上, 波比将 $A \cup B$ 内的每个方格和同行的一个不在 $A \cup B$ 内的方格配对, 使得方格纸上的每一个方格恰在一个对子中.
+无论阿乃斯在那个对子中的一个方格内写数, 波比总可以接着在该对子中的另一个格子内写数, 如果阿乃斯在 $A \cup B$ 的一个格子内写上数 $x$, 那么波比在该对子中的另一个方格内写上数 $y$ 使 $y<x$. 如果阿乃斯写上数 $x$ 的格子不属于 $A \cup B$, 则波比在该对子中属于 $A \cup B$ 的格子内写上 $z$ 使 $z>x$. 可见, 在波比写完后, 每个对子中的最大数总在 $A \cup B$ 内, 从而每行中的最大数总在 $A \cup B$ 内.
+于是, 当所有数写完后, 第一行中的最大数在 $A$ 内, 第 6 行的最大数在 $B$ 内.
+因为不可能在 $A \cup B$ 内画一条线从 $A$ 达到 $B$, 所以波比必获胜.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 甲乙两人进行如下游戏, 甲先开始, 两人轮流从 $1,2,3, \cdots, 100,101$,
+中每次任意勾去 9 个数, 经过 11 次操作后, 还剩两个数, 这时余下两个数之差即为甲的得分, 试证不论乙怎么做, 甲至少可得 55 分.
+%%<SOLUTION>%%
+证明:甲第一次勾掉 $47,48,49, \cdots, 55$ 这 9 个数,将剩下的数两两配对: $\{i, 55+i\}(i=1,2, \cdots, 46\}$, 同一对中两数之差为 55 . 在每次乙勾掉 9 个数之后, 甲的策略是使得甲勾掉的 9 个数与乙勾掉的 9 个数恰好组成上述 46 对数中的 9 对.
+这样一来, 最后余下的两个数必须是上述 46 对数中的一对,这两个数之差必为 55 , 可见甲可保证自己得 55 分.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 在一个无限大的方格纸上, 甲、乙两人轮流在空格上放棋子, 每次放一枚, 甲放黑棋子,乙放白棋子.
+如果在某一行、或某一列、或一条对角线上出现 11 枚连续摆放着的黑棋子, 则先放棋子的甲获胜, 证明: 乙总能阻止甲获胜.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c6i1.png>) 所示: 将一个 $4 \times 4$ 正方形和一个与其相邻的 $2 \times 2$ 正方形中 20 个方格内周期地填上 $0,1,2,3,4$ 这 5 个数字.
+我们把图中如图(<FilePath:./figures/fig-c6i2.png>) 所示的 4 种已填数字的 2 个小方格组成的图形称之为一块多米诺骨牌.
+易见, 无论是在横行、坚列, 还是平行于对角线的直线上, 任何连续 11 个方格都含有一块多米诺骨牌.
+因此, 一旦甲在某块多米诺骨牌的一个方格内放上黑棋子, 则乙在另一个方格内放上白棋子, 这样一来, 甲就无法取胜了 (若甲在填数字 0 的方格上放黑棋子,乙就在其有公共边的另一个填数字 0 的方格上放白棋子).
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline 1 & 4 & 3 & 3 & 2 & 2 & 4 & 1 & 0 & 0 & 1 & 4 & 3 & 3 \\
+\hline 1 & 4 & 2 & 2 & 3 & 3 & 4 & 1 & 0 & 0 & 1 & 4 & 2 & 2 \\
+\hline 2 & 2 & 4 & 1 & 0 & 0 & 1 & 4 & 3 & 3 & 2 & 2 & 4 & 1 \\
+\hline 3 & 3 & 4 & 1 & 0 & 0 & 1 & 4 & 2 & 2 & 3 & 3 & 4 & 1 \\
+\hline 0 & 0 & 1 & 4 & 3 & 3 & 2 & 2 & 4 & 1 & 0 & 0 & 1 & 4 \\
+\hline 0 & 0 & 1 & 4 & 2 & 2 & 3 & 3 & 4 & 1 & 0 & 0 & 1 & 4 \\
+\hline 3 & 3 & 2 & 2 & 4 & 1 & 0 & 0 & 1 & 4 & 3 & 3 & 2 & 2 \\
+\hline 2 & 2 & 3 & 3 & 4 & 1 & 0 & 0 & 1 & 4 & 2 & 2 & 3 & 3 \\
+\hline 4 & 1 & 0 & 0 & 1 & 4 & 3 & 3 & 2 & 2 & 4 & 1 & 0 & 0 \\
+\hline 4 & 1 & 0 & 0 & 1 & 4 & 2 & 2 & 3 & 3 & 4 & 1 & 0 & 0 \\
+\hline 1 & 4 & 3 & 3 & 2 & 2 & 4 & 1 & 0 & 0 & 1 & 4 & 3 & 3 \\
+\hline 1 & 4 & 2 & 2 & 3 & 3 & 4 & 1 & 0 & 0 & 1 & 4 & 2 & 2 \\
+\hline
+\end{tabular}
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 把 $n$ 个物体排成一行, 如果这些物体的某个子集合中任何两个元素均不相邻, 则称这个子集是不亲切的, 证明: 其中含有 $k$ 个元素的不亲切子集的个数是 $\mathrm{C}_{n-k+1}^k$. 
+%%<SOLUTION>%%
+证明:我们将排成一行的物体记为 $a_1, a_2, \cdots, a_n$, 且设 $\left\{a_{i_1}, a_{i_2}, \cdots\right.$, $a_{i_k}$ 是它的一个含 $k$ 个元素的不亲切子集 $\left(1 \leqslant i_1<i_2<\cdots<i_k \leqslant n\right)$, 于是有 $i_{j+1}-i_j \geqslant 2(j=1,2, \cdots, k-1)$, 从而 $1 \leqslant i_1<i_2-1<i_3-2<\cdots< i_k-(k-1) \leqslant n-k+1$, 故 $i_1, i_2-1, i_3-2, \cdots, i_k-(k-1)$ 是 $1,2,3$, $\cdots, n-k+1$ 中一个严格上升序列.
+反之, 对每一个这样的严格上升序列 $1 \leqslant j_1<j_2<\cdots<j_k \leqslant n-k+1$, 则以 $a_{j_1}, a_{j_2+1}, \cdots, a_{j_k+(k-1)}$ 为元素的集合是一个不亲切集合, 二者成一一对应.
+而从 $1,2, \cdots, n-k+1$ 中选取 $k$ 个数组成严格上升序列有 $\mathrm{C}_{n-k+1}^k$ 种方法, 故含 $k$ 个元素的不亲切子集的个数是 $\mathrm{C}_{n-k+1}^k$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设凸 $n$ 边形的任意 3 条对角线不交于形内同一点,求它的对角线在形内的交点的个数.
+%%<SOLUTION>%%
+解:依题意,一个交点 $P$ 由两条对角线 $l$ 和 $m$ 相交而得, 反之,两条相交对角线 $l$ 和 $m$, 确定一个交点 $P$, 从而 $P$ 与 $(l, m)$ 可建立一一对应.
+又因两条相交对角线 $l, m$ 分别由凸 $n$ 边形中两对顶点 $A 、 B$ 和 $C 、 D$ 连接而成, 而且对于凸 $n$ 边形的任意 4 个顶点,有且只有一对对角线相交于多边形内 (如图(<FilePath:./figures/fig-c6i3.png>)), 故 $(l, m)$ 又可与 4 顶点组 $(A, C, B, D)$ 建立一一对应, 即有 $P \leftrightarrow(l, m) \leftrightarrow(A, C, B, D)$. 因此, 形内对角线的交点总数等于凸 $n$ 边形的 4 顶点组数 $\mathrm{C}_n^4$.
+%%<REMARK>%%
+注:本题中结论是组合几何中一个重要结论, 今后可用它去解决组合几何中较为复杂的计数问题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 把正三角形 $A B C$ 各边 $n$ 等分, 过各分点在三角形内作边的平行线段将 $\triangle A B C$ 完全分割成边长为 $\frac{1}{n} B C$ 的小正三角形.
+求其中边长为 $\frac{1}{n} B C$ 的小菱形个数.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c6i4.png>),解首先考虑边不平行 $B C$ 的小菱形,延长每个菱形的边顺次与 $B C$ 相交于 4 个分点(特殊情形下,第 2 个交点与第 3 个交点重合于菱形的一个顶点) 为了便于处理, 可延长 $A B$ 到 $B^{\prime}$ 使 $B B^{\prime}= \frac{1}{n} A B$, 延长 $A C$ 到 $C^{\prime}$ 使 $C C^{\prime}=\frac{1}{n} A C$, 并延长各平行线交线段 $B^{\prime} C^{\prime}$ 于 $n+2$ 个等分点, 记为 0,1 , $2, \cdots, n+1$ (包括 $B^{\prime}, C^{\prime}$ 两个端点), 于是每边不平行 $B C$ 的小菱形的两组对边延长后交 $B^{\prime} C^{\prime}$ 于 4 个不同分点 $i, i+1, k, k+1$. 反之,任给这样 4 个分点必对应一个边不平行 $B C$ 的小菱形, 二者具有一一对应关系.
+由于有序数组 $(i, i+1, k, k+1)(0 \leqslant i<i+1<k<k+1 \leqslant n+1)$ 又与有序数组 $(i+1, k)(1 \leqslant i+1<k \leqslant n)$ 一一对应, 故边不平行于 $B C$ 的小菱形的个数为 $\mathrm{C}_n^2$. 由对称性, 所求小菱形的个数为 $3 \mathrm{C}_n^2$.
+%%<REMARK>%%
+注:仿照例 10 的解题方法, 读者不难得出下列问题的解答为 $f(n)= 3 \mathrm{C}_{n+2}^4$.
+问题将等边三角形每边 $n$ 等分, 过各分点在形内作各边的平行线段,所形成的平行四边形个数记为 $f(n)$, 求 $f(n)$ 的表达式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 试问,有多少种方式将数集 $\left\{2^0, 2^1, \cdots, 2^n\right\}\left(n \in \mathbf{N}_{+}\right)$分拆为两个不相交的非空子集 $A$ 和 $B$, 使得方程 $n^2-S(A) x+S(B)=0$ 有整数根.
+其中 $S(M)$ 表示数集 $M$ 中所有元素的和?
+%%<SOLUTION>%%
+解:设 $x_1 \leqslant x_2$ 是方程 $x^2-S(A) x+S(B)=0$ 的两个整数根, 则 $x_1+ x_2=S(A)>0, x_1 \cdot x_2=S(B)>0$, 从而 $0<x_1 \leqslant x_2$ 且 $\left(x_1+1\right)\left(x_2+\right.$ 1) $=S(A)+S(B)+1=2^0+2^1+\cdots+2^n+1=2^{n+1}$.
+由此可得 $x_1+1=2^k, x_2+1=2^{n+1-k}\left(k=1,2,3, \cdots,\left[\frac{n+1}{2}\right]\right)$, 反之当 $x_1+1=2^k, x_2+1=2^{n+1-k}\left(k=1,2,3, \cdots,\left[\frac{n+1}{2}\right]\right)$ 时, $0<x_1 \leqslantx_2$ 是方程 $x^2-p x+q=0$ 的两个正整数根, 其中 $p=2^k+2^{n+1-k}-2, q=2^{n+1} -1-p$. 数 $p$ 有唯一的二进制表达式, 在该表达式中 2 的最高方幂不超过 $2^n$, 又由于 $p+q=2^{n+1}-1$. 所以在 $p$ 的二进制表达式中是 1 的地方, 在 $q$ 的二进制表达式中刚好是 0 , 反之亦然.
+由此可见, 对每个 $k\left(1 \leqslant k \leqslant\left[\frac{n+1}{2}\right]\right)$, 都存在唯一的分法 $(A, B)$, 使方程 $x^2-S(A) x+S(B)=0$ 的 2 个正整数根恰好是 $x_1$ 和 $x_2\left(x_1 \leqslant x_2\right)$, 这个对应是一一对应.
+故共有 $\left[\frac{n+1}{2}\right]$ 种不同的分拆方式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 设 $I=\{1,2, \cdots, n\}, \mathscr{A}$ 是 $I$ 的一些三元子集组成的集族,满足 $\mathscr{A}$ 中任何两个元素 ( $I$ 的三元子集) 至多有一个公共元.
+证明:存在 $I$ 的一个子集 $X$,满足:(1) $\mathscr{A}$ 的任何元素 ( $I$ 的三元子集) 不是 $X$ 的子集; (2) $|X| \geqslant[\sqrt{2 n}]$.
+%%<SOLUTION>%%
+分析:.
+我们只要找出 $I$ 的所有满足条件 (1) 的子集中含元素个数最多的一个子集 $X$, 再证明 $|X| \geqslant[\sqrt{2 n}]$ 即可.
+证明将 $I$ 的具有下列性质的子集 $M$ 称为好子集: $\mathscr{A}$ 中任何元素 ( $I$ 的三元子集)不是 $M$ 的子集.
+显然, 好子集是存在的(因为 $I$ 的任何二元子集均为好子集)且个数有限.
+设 $X$ 是所有好子集中含元素个数最多的一个好子集, 并设 $|X|=k$, 则 $X$ 满足条件(1), 故只要证 $X$ 满足条件 (2).
+记 $Y=I \backslash X$, 由条件 (1) 知 $X \neq I$, 即 $Y \neq \varnothing$, 设 $Y=\left\{y_1, y_2, \cdots, y_{n-k}\right\}$, 对任意 $y_i \in Y$, 由 $X$ 所含元素最多性质知 $X \cup\left\{y_i\right\}$ 不是好子集, 即存在 $\mathscr{A}$ 中一个元素 ( $I$ 的三元子集) $A_i \subset X \cup\left\{y_i\right\}$, 而 $A_i \not \subset X$, 故存在 $x_{i_1}, x_{i_2} \in X$, 使 $A_i=\left\{x_{i_1}, x_{i_2}, y_i\right\}$, 我们就令 $y_i$ 与 $\left\{x_{i_1}, x_{i_2}\right\}$ 对应.
+构成从 $Y$ 到 $X$ 的所有二元子集组成的集族 $\mathscr{B}$ 的一个映射 $f$, 下面证明 $f$ 为单射.
+事实上, 对任意 $y_i, y_j \in Y, y_i \neq y_j$, 存在 $X$ 的二元子集 $\left\{x_{i_1}, x_{i_2}\right\},\left\{x_{j_1}, x_{j_2}\right\}$ 使 $A_i=\left\{x_{i_1}\right.$, $\left.x_{i_2}, y_i\right\}, A_j=\left\{x_{j_1}, x_{j_2}, y_i\right\}$ 都属于 $\mathscr{A}$, 若 $\left\{x_{i_1}, x_{i_2}\right\}=\left\{x_{j_1}, x_{j_2}\right\}$, 则 $A_i$ 与 $A_j$ 有两个公共元, 这与已知矛盾.
+故 $f$ 为单射, 所以 $|Y| \leqslant|\mathscr{B}|$, 即 $n-k \leqslant \mathrm{C}_k^2,[\sqrt{k(k+1)}] \geqslant[\sqrt{2 n}]$, 但 $k<\sqrt{k(k+1)}<k+1$, 所以 $|X|=k= [\sqrt{k(k+1)}] \geqslant[\sqrt{2 n}]$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13. 一次聚会有 40 人参加, 已知其中任何 19 人都有唯一公共偶象也参加了聚会.
+(约定甲是乙的偶象时乙不一定是甲的偶象, 并且任何人不是自己的偶象)证明: 参加聚会的人中存在一个由 20 人组成的集合 $T_0$. 使对任意 $a \in T_0$, 从 $T_0$ 中去掉 $a$ 后, 剩下 19 人的唯一公共偶象不是 $a$.
+%%<SOLUTION>%%
+证明:设参加聚会的 40 人组成的集合为 $S$, 我们称 $S$ 的一个 20 元子集 $T$ 为好子集, 如果存在 $a \in T$, 从 $T$ 去掉 $a$ 后剩下 19 人的唯一公共偶象是 $a$.
+于是问题化为证明存在一个 $S$ 的 20 元子集 $T_0$ 不是好子集, 为此只需证明好子集的个数少于 $S$ 的所有 20 元子集的个数 $\mathrm{C}_{40}^{20}$.
+记 $S$ 的全体好子集组成的集族为 $X, S$ 的全体 19 元子集组成的集族记为 $Y$. 对任意 $B \in Y, B$ 中 19 人的唯一公共偶象记为 $g(B)$. 于是, 对任意 $T \in X$, 由好子集定义知存在 $a \in T$, 使从 $T$ 去掉 $a$ 后剩下 19 人的唯一公共偶象是 $a$, 即 $g(T \backslash\{a\})=a$. 我们就令 $T$ 与 $T \backslash\{a\}$ 对应, 构成从 $X$ 到 $Y$ 的一个映射 $f$. 下面我们证明 $f$ 是单射.
+事实上, 对任意 $T_1, T_2 \in X, T_1 \neq T_2$, 存在 $a_1 \in T_1, a_2 \in T_2$ 使 $g\left(T_1 \backslash\left\{a_1\right\}\right)=a_1, g\left(T_2 \backslash\left\{a_2\right\}\right)=a_2$, 且 $f\left(T_1\right)= T_1 \backslash\left\{a_1\right\}, f\left(T_2\right)=T_2 \backslash\left\{a_2\right\}$. 若 $f\left(T_1\right)=f\left(T_2\right)$, 则 $T_1 \backslash\left\{a_1\right\}=T_2 \backslash\left\{a_2\right\}$, 于是 $a_1=g\left(T_1 \backslash\left\{a_1\right\}\right)=g\left(T_2 \backslash\left\{a_2\right\}\right)=a_2$, 从而有 $T_1=T_2$, 矛盾, 所以 $f$ 是单射.
+故 $|X| \leqslant|Y|=\mathrm{C}_{40}^{19}<\mathrm{C}_{40}^{20}$. 因 $S$ 的 20 元子集有 $\mathrm{C}_{40}^{20}$ 个.
+可见至少有 $S$ 的一个 20 元子集 $T_0$ 不是好子集, 于是对任意 $a \in T_0$, 从 $T_0$ 去掉 $a$ 后的 19 人的唯一公共偶象不是 $a$. 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14. 集合 $M$ 由 48 个不同的正整数组成, 其中每个正整数的素因子均不大于 30. 证明: $M$ 中存在 4 个不同的正整数, 它们之积是完全平方数.
+%%<SOLUTION>%%
+证明:不大于 30 的素数有 10 个: $p_1=2, p_2=3, p_3=5, p_4=7$, $p_5=11, p_6=13, p_7=17, p_8=19, p_9=23, p_{10}=29$. 令 $Y=\left\{p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_{10}^{\alpha_{10}}\right. \alpha_i=0$ 或 $\left.1, i=1,2, \cdots, 10\right\}, X$ 是 $M$ 的所有二元子集组成的集族.
+对任意 $\{a, b\} \in X$, 乘积 $a b$ 可唯一写成下列形式: $a b=K_{a b}^2 \cdot m_{a b}$, 其中 $K_{a b} \in \mathbf{N}_{+}, m_{a b} \in Y$. 我们就令 $\{a, b\}$ 与 $m_{a b}$ 对应, 构成一个从 $X$ 到 $Y$ 的映射 $f$. 因为 $|X|=\mathrm{C}_{48}^2=1128,|Y|=2^{10}=1024$, 有 $|X|>|Y|$, 所以 $f$ 不是单射, 故存在 $\{a, b\},\{c, d\} \in X,\{a, b\} \neq\{c, d\}$ 使 $m_{a b}=f(\{a, b\})= f(\{c, d\})=m_{c d}$, 从而
+$$
+a b c d=K_{a b}^2 m_{a b} \cdot K_{c d}^2 m_{c d}=\left(K_{a b} K_{c d} m_{a b}\right)^2
+$$
+为完全平方数, 如果 $a, b, c, d$ 互不相等, 那么结论成立.
+否则 $\{a, b\}$ 中恰有一个数与 $\{c, d\}$ 中一个数相等.
+不妨设 $a \neq c, b=d$. 于是由 $a b c d=a c b^2$ 是完全平方数知 $a c$ 是完全平方数, 从 $M$ 中去掉 $a, c$ 两个数, 还剩 46 个数, 因为 $\mathrm{C}_{46}^2=1035>1024=|Y|$, 故同理可证 $X \backslash\{\{a, c\}\}$ 中存在两个不同的二元子集 $\left\{a^{\prime}, b^{\prime}\right\},\left\{c^{\prime}, d^{\prime}\right\}$ 使 $a^{\prime} b^{\prime} c^{\prime} d^{\prime}$ 为完全平方数.
+如果 $a^{\prime}, b^{\prime}, c^{\prime}, d^{\prime}$ 互不相同, 那么结论成立, 否则同理可以不妨设 $a^{\prime} \neq c^{\prime}, b^{\prime}=d^{\prime}$ 且 $a^{\prime} c^{\prime}$ 为完全平方数, 于是存在两个没有公共元的二元子集 $\{a, c\},\left\{a^{\prime}, c^{\prime}\right\}$, 使 $a c a^{\prime} c^{\prime}$ 为完全平方数.
+证毕.
+除了上述一对一的映射方法外, 有时还要用到一个对多个的对应方法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例15. 圆周上有 $n$ 个点 $(n \geqslant 6)$, 每两点连一线段,假设其中任意三条线段在圆内不共点,于是任意三条两两相交的线段构成一个三角形,试求这些线段确定的三角形的个数.
+%%<SOLUTION>%%
+解:我们称圆周上的点为外点, 任意两条对角线在圆内的交点为内点, 则所确定的三角形按其顶点可分为四类:
+第一类三角形的三个顶点均为外点, 设其个数为 $I_1$;
+第二类三角形的三个顶点中有 2 个外点 1 个内点,设其个数为 $I_2$;
+第三类三角形的三个顶点中有 1 个外点 2 个内点,设其个数为 $I_3$;
+第四类三角形的三个顶点均为内点,设其个数为 $I_4$.
+显然第一类三角形与圆周上 3 点组集合成一一对应,所以 $I_1=\mathrm{C}_n^3$.
+其次,如图(<FilePath:./figures/fig-c6i5-1.png>) 圆周上任取 4 点 $A_1, A_2, A_3, A_4$ 两两相连的线段,确定了 4 个第二类三角形: $\triangle A_1 O A_2, \triangle A_2 O A_3, \triangle A_3 O A_4, \triangle A_4 O A_1$, 反之每 4 个这样有公共内顶点的第二类三角形对应了圆周上的一个 4 点组, 于是 $I_2=4 \mathrm{C}_n^4$.
+类似地, 如图(<FilePath:./figures/fig-c6i5-2.png>), 圆周上任取 5 点 $A_1, A_2, A_3, A_4, A_5$, 两两连一线段,确定了 5 个第三类三角形: $\triangle A_1 B_1 B_2, \triangle A_2 B_2 B_3, \triangle A_3 B_3 B_4, \triangle A_4 B_4 B_5$, $\triangle A_5 B_5 B_1$, 于是可得 $I_3=5 \mathrm{C}_n^5$.
+最后, 如图(<FilePath:./figures/fig-c6i5-3.png>), 圆周上任取 6 点 $A_1, A_2, A_3, A_4, A_5, A_6$ 对应于 1 个第四类三角形,所以 $I_4=\mathrm{C}_n^6$.
+综上所述,得所确定的三角形共有 $\mathrm{C}_n^3+4 \mathrm{C}_n^4+5 \mathrm{C}_n^5+\mathrm{C}_n^6$ 个.
+%%PROBLEM_END%%
+
+

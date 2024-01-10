@@ -1,0 +1,436 @@
+
+%%TEXT_BEGIN%%
+数学竞赛中有一些数论问题较为困难和棘手, 解决它们需综合、灵活地应用前面章节中涉及的知识和方法.
+本节介绍一些这样的问题.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $u$ 是一个给定的正整数, 证明方程
+$$
+n !=u^x-u^y . \label{eq1}
+$$
+至多有有限组正整数解 $(n, x, y)$.
+注:1 本题后一半的论证,类似于第 8 单元例 6 的证明.
+但那里的问题较为直接, 而现在的问题则困难得名.
+本题的要点是将方程式\ref{eq1}过渡到模 $p^\alpha$ 来处理, 以利用模 $p^\alpha$ 的阶的性质导出 $s$ 很大, 进而式\ref{eq1}在 $n$ 充分大时不成立.
+我们选取 $\alpha$ 使 $p^\alpha \| n !$, 无非是为了使 $\alpha$ (随 $n$ ) 很大 (见\ref{eq2}式).
+注:2 若有一点 (关于无穷大量的) 阶的概念, 则在导出 $s \geqslant d p^{\alpha-k_0}$ 后, 可立即看出 式\ref{eq1} 不能成立: 若记 $b=u^{d p-k_0}$, 则所说的不等式 $b^{p^{a n}}-1>n^n-1$, 即为
+$$
+p^{a n}>n \log _b n .
+$$
+在 $n$ 很大时, 上式左边为 $n$ 的 (底大于 1 的)指数函数, 当然大于右边的一次函数与对数函数的积.
+(若记 $p^a=1+\beta, \beta>1$, 并用二项式定理将 $(1+\beta)^n$ 展开, 则所说的事情便一目了然.)
+%%<SOLUTION>%%
+证明:可设 $u>1$. 结论等价于证明方程
+$$
+n !=u^r\left(u^s-1\right)
+$$
+至多只有有限组正整数解 $(n, r, s)$.
+首先注意, 给定 $n$, 方程 式\ref{eq1}显然至多有有限组解 $(r, s)$. 下面证明, 当 $n$ 充分大时,方程式\ref{eq1}无解,由此便证明了上述的结论.
+取定一个素数 $p \nmid u$. 可假定 式\ref{eq1} 有解 $n>p$ (否则已无需证明), 并设 $p^\alpha \| n !$, 则有
+$$
+\alpha=\sum_{l=1}^{\infty}\left[\frac{n}{p^l}\right] \geqslant\left[\frac{n}{p}\right]>a n, \label{eq2}
+$$
+其中 $a$ 是一个仅与 $p$ 有关的 (正) 常数.
+设 $u$ 模 $p$ 的阶为 $d$ 以及 $p^{k_0} \|\left(u^d-1\right)$, 则由第 8 单元例 5 知, 当 $\alpha>k_0$ 时, $u$ 模 $p^\alpha$ 的阶为 $d p^{\alpha-k_0}$. 因 $u 、 p$ 均为固定的数, 故 $k_0 、 d$ 也均为固定的数.
+若 式\ref{eq1} 对充分大的 $n$ 有解, 则由 式\ref{eq2} 知 $\alpha>k_0$. 而由式\ref{eq1}得
+$$
+u^s \equiv 1\left(\bmod p^\alpha\right) \text {, }
+$$
+故由阶的性质推出 $d p^{\alpha-k_0} \mid s$; 特别地, $s \geqslant d p^{\alpha-k_0}$. 因此,
+$$
+u^s-1 \geqslant u^{d p^{\alpha-k_0}}-1>u^{d p^{a n-k_0}}-1 .\label{eq3}
+$$
+但当 $n$ 充分大时, 易知上式右边 $\geqslant n^n-1$. 故由 式\ref{eq3} 推出 $u^s-1>n$ !, 更有 $u^r\left(u^s-1\right)>n$ !, 因此当 $n$ 充分大时, 式\ref{eq1}无正整数解 $(r, s)$. 这就完成了证明.
+%%<REMARK>%%
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 求所有整数 $n>1$, 使得 $\frac{2^n+1}{n^2}$ 是整数.
+%%<SOLUTION>%%
+解:容易猜想, $n=3$ 是唯一符合要求的解.
+下面证明事实确实如此.
+证明需分几步进行.
+第一个要点是考虑 $n$ 的最小素因子 $p$, 并由 $n \mid\left(2^n+1\right)$  导出 $p=3$, 见第 8 单元例 1 . 因此我们可设
+$$
+n=3^m c, m \geqslant 1,3 \nmid c . \label{eq1}
+$$
+第二步, 证明 $m=1$. 由 $n^2 \mid\left(2^n+1\right)$ 得 $2^{3^m c} \equiv-1\left(\bmod 3^{2 m}\right)$, 故
+$$
+2^{2 \times 3^m c} \equiv 1\left(\bmod 3^{2 m}\right) . \label{eq2}
+$$
+若 $m \geqslant 2$, 则由第 8 单元例 5 可知, 2 模 $3^{2 m}$ 的阶是 $2 \times 3^{2 m-1}$, 故由 式\ref{eq2} 推出, $2 \times 3^{2 m-1} \mid 2 \times 3^m c$, 即 $3^{m-1} \mid c$, 从而 $3 \mid c$ (因 $m \geqslant 2$ ), 这与式\ref{eq1}中 $3 \nmid c$ 矛盾.
+故必须有 $m=1$.
+第三步, 证明(1)中的 $c=1$. 这可与上述第一步, 即第 8 单元中例 1 类似地进行:
+若 $c>1$, 设 $q$ 是 $c$ 的最小素因子, 则有
+$$
+2^{3 c} \equiv-1(\bmod q) . \label{eq3}
+$$
+设 $r$ 是 2 模 $q$ 的阶, 由式\ref{eq3}得 $2^{6 c} \equiv 1(\bmod q)$, 又 $2^{q-1} \equiv 1(\bmod q)$, 故 $r \mid 6 c$ 及 $r \mid(q-1)$, 从而 $r \mid(6 c, q-1)$. 由 $q$ 的选取知 $(q-1, c)=1$, 所以 $r \mid 6$, 再由 $2^r \equiv 1(\bmod q)$, 推知 $q=3$ 或 7. 易知 $q=3$ 为不可能; 而由 式\ref{eq3} 知 $q=7$ 也不可能.
+所以必有 $c=1$. 因此 $n=3$.
+请注意, 若先证明式\ref{eq1}中的 $c=1$ 将不易奏效.
+这里的论证次序颇为重要.
+此外,第二步中 $m=1$ 也可通过比较素数幕来证明:
+由二项式定理得
+$$
+2^n+1=(3-1)^n+1=3 n+\sum_{k=2}^n(-1)^k \mathrm{C}_n^k 3^k . \label{eq4}
+$$
+设 $3^\alpha \| k !$, 则
+$$
+\alpha=\sum_{l=1}^{\infty}\left[\frac{k}{3^l}\right]<\sum_{l=1}^{\infty} \frac{k}{3^l}=\frac{k}{2}
+$$
+于是由 $\mathrm{C}_n^k 3^k=\frac{n(n-1) \cdots(n-k+1)}{k !} 3^k$ 可见, $\mathrm{C}_n^k 3^k$ 被 $3^\beta$ 整除, 而 $\beta$ 满足 (注意 $k \geqslant 2$ )
+$$
+\beta \geqslant k+m-\alpha>k+m-\frac{k}{2} \geqslant m+1,
+$$
+故 $\beta \geqslant m+2$, 从而 \ref{eq4} 式右边的和被 $3^{m+2}$ 整除.
+若 $m>1$, 则 $2 m \geqslant m+2$, 故由 $3^{2 m} \mid\left(2^n+1\right)$ 及 式\ref{eq4} 推出 $3^{m+2} \mid 3 n$, 即 $3^{m+1} \mid n$, 这与 式\ref{eq1} 矛盾, 因此必有 $m=1$. 下面的例 3 也可用比较素数幕的方法解决.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 证明: 对每个 $n>1$, 方程
+$$
+\frac{x^n}{n !}+\frac{x^{n-1}}{(n-1) !}+\cdots+\frac{x^2}{2 !}+\frac{x}{1 !}+1=0
+$$
+没有有理数根.
+%%<SOLUTION>%%
+证明:设 $a$ 是所说的方程的一个有理根, 则易知
+$$
+a^n+\frac{n !}{(n-1) !} a^{n-1}+\cdots+\frac{n !}{k !} a^k+\cdots+\frac{n !}{1 !} a+n !=0, \label{eq1}
+$$
+于是 $a$ 是一个首项系数为 1 的整系数多项式的有理根, 故 $a$ 必是一个整数 .
+因 $n>1$, 故 $n$ 有素因子 $p$ (这一基本的事实已使用过多次). 由于 $n \mid \frac{n !}{k !}(k= 0,1, \cdots, n-1)$, 故由 式\ref{eq1} 推出 $p \mid a^n$, 从而素数 $p$ 整除 $a$. 现在比较\ref{eq1}式左边各项中含 $p$ 的方幂.
+因为 $p$ 在 $k$ ! 中出现的次数为
+$$
+\sum_{l=1}^{\infty}\left[\frac{k}{p^l}\right]<\sum_{l=1}^{\infty} \frac{k}{p^l}<k,
+$$
+故有 $p^k \nmid k !(k \geqslant 1)$. 设 $p^r \| n !$. 则由于 $p^k \mid a^k$ 及 $p^k \nmid k !$, 可知 $p^{r+1} \mid \frac{n !}{k !} a^k(k= 1,2, \cdots, n)$, 从而由 式\ref{eq1} 得出 $p^{r+1} \mid n !$, 这与 $r$ 的定义相违.
+%%<REMARK>%%
+注:用较深人的方法能够证明, 有理系数多项式
+$$
+\frac{x^n}{n !}+\frac{x^{n-1}}{(n-1) !}+\cdots+\frac{x^2}{2 !}+\frac{x}{1 !}+1
+$$
+在有理数域上不可约, 即不能分解为两个非常数的有理系数多项式的乘积.
+例 3 是这一结论的一个简单特例: 所说的多项式没有一次的有理因式.
+数学竞赛中,常常出现一些与多项式有些关联的数论问题,我们举几个这方面的例子.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $n>1, x_1, \cdots, x_n$ 是 $n$ 个实数, 它们的积记为 $A$. 若对 $i=1$, $n$, 数 $A-x_i$ 都是奇整数.
+证明: 每一个 $x_i$ 都是无理数.
+%%<SOLUTION>%%
+证明:反证法,若有一个 $i$ 使得 $x_i$ 为有理数,则因 $A-x_i$ 为奇整数,所以 $A$ 必是一个有理数.
+记 $A-x_i=a_i(i=1, \cdots, n)$. 则由 $x_1 \cdots x_n=A$, 得出
+$$
+\left(A-a_1\right) \cdots\left(A-a_n\right)=A . \label{eq1}
+$$
+由于 $a_i$ 均是(奇)整数, 从而 $A$ 满足了一个首项系数为 1 的整系数方程,故有理数 $A$ 必是一个整数.
+但另一方面, 无论 $A$ 是奇数或偶数,易知 \ref{eq1}式左、右两边的奇偶性都不同, 从而式\ref{eq1}决不能成立, 矛盾! 故每个 $x_i$ 都是无理数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $a, b, c$ 为整数, $f(x)=x^3+a x^2+b x+c$. 证明: 有无穷多个正整数 $n$, 使得 $f(n)$ 不是完全平方数.
+%%<SOLUTION>%%
+证明:我们证明,对任意正整数 $n \equiv 1(\bmod 4)$, 四个整数 $f(n), f(n+$ 1), $f(n+2), f(n+3)$ 中至少有一个不是完全平方, 由此便证明了问题中的结论.
+易知
+$$
+\begin{aligned}
+& f(n) \equiv 1+a+b+c(\bmod 4), \\
+& f(n+1) \equiv 2 b+c(\bmod 4), \\
+& f(n+2) \equiv-1+a-b+c(\bmod 4), \\
+& f(n+3) \equiv c(\bmod 4) .
+\end{aligned}
+$$
+消去 $a 、 c$ 得
+$$
+f(n+1)-f(n+3) \equiv 2 b, f(n)-f(n+2) \equiv 2 b+2(\bmod 4) .
+$$
+因此,或者 $f(n+1)-f(n+3) \equiv 2(\bmod 4)$, 或者 $f(n)-f(n+2) \equiv 2(\bmod 4)$. 因为完全平方数模 4 同余于 0 或 1 , 故或者 $f(n+1)$ 与 $f(n+3)$ 中至少有一个非平方数, 或者 $f(n)$ 与 $f(n+2)$ 中至少有一个非平方数, 从而 $f(n), f(n+1)$, $f(n+2), f(n+3)$ 中至少有一个不是完全平方.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $p(x)$ 是一个整系数多项式,对任意 $n \geqslant 1$ 有 $p(n)>n$. 定义 $x_1= 1, x_2=p\left(x_1\right), \cdots, x_n=p\left(x_{n-1}\right)(n \geqslant 2)$. 若对于任意正整数 $N$, 数列 $\left\{x_n\right\}(n \geqslant 1)$ 中均有被 $N$ 整除的项.
+证明 $p(x)=x+1$.
+%%<SOLUTION>%%
+证明:我们分两步进行.
+首先证明, 对任一个固定的 $m>1$, 数列 $\left\{x_n\right\}$ 模 $x_m-1$ 是周期数列.
+显然 $x_m \equiv 1=x_1\left(\bmod x_m-1\right)$. 因 $p(x)$ 是整系数多项式, 故对任意整数 $u 、 v(u \neq v)$ 有 $(u-v) \mid(p(u)-p(v))$, 即
+$$
+p(u) \equiv p(v)(\bmod u-v),
+$$
+在上式中取 $u=x_m, v=x_1=1$, 得 $x_{m+1} \equiv x_2\left(\bmod x_m-1\right)$. 依此类推, $x_{m+2} \equiv x_3, x_{m+3} \equiv x_4, \cdots\left(\bmod x_m-1\right)$, 可知 $\left\{x_n\right\}$ 模 $x_m-1$ 是周期数列 $x_1, \cdots, x_{m-1}$, $x_1, \cdots, x_{m-1}, \cdots$.
+第二步,我们证明
+$$
+x_m-1=x_{m-1} . \label{eq1}
+$$
+由已知条件, 对于数 $N=x_m-1$, 存在 $x_k$ 使得 $\left(x_m-1\right) \mid x_k$, 而由上一段的结论, 可设 $1 \leqslant k \leqslant m-1$, 此外, $p\left(x_{m-1}\right)>x_{m-1}$, 故 $x_m-1 \geqslant x_{m-1}$, 所以 $k$ 必须为 $m-1$, 即 $\left(x_m-1\right) \mid x_{m-1}$, 于是, $x_{m-1} \geqslant x_m-1$, 综合起来即知 \ref{eq1}式成立.
+因为式\ref{eq1}即是 $p\left(x_{m-1}\right)-1=x_{m-1}$. 由于 $m$ 是任意大于 1 的整数,这意味着 $p(x)=x+1$ 有无穷多个不同的根, 故 $p(x)$ 必须恒等于多项式 $x+1$. 这就证明了本题的结论.
+由一个(整系数) 多项式的算术 (数论) 性质, 推断其代数性质, 是数论中非常有趣的一个课题, 例 6 正是这样的一个简单例子, 下面的例 7 也是具有这种精神的问题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $f(x)$ 是一个实系数的二次多项式, 若对所有正整数 $n, f(n)$ 均是整数的平方.
+证明, $f(x)$ 是一次整系数多项式的平方.
+%%<SOLUTION>%%
+证明:本题并不容易,但有几种完全不同的解法.
+这里介绍的方法基于数列的极限知识, 较为简单.
+设 $f(x)=a x^2+b x+c, a_n=f(n)(n \geqslant 1)$, 则易知
+$$
+\begin{aligned}
+\sqrt{a_n}-\sqrt{a_{n-1}} & =\frac{a_n-a_{n-1}}{\sqrt{a_n}+\sqrt{a_{n-1}}} \\
+& =\frac{2 a n-a+b}{\sqrt{a n^2+b n+c}+\sqrt{a n^2+(-2 a+b) n+a-b+c}} \\
+& =\frac{2 a+\frac{b-a}{n}}{\sqrt{a+\frac{b}{n}+\frac{c}{n^2}}+\sqrt{a+\frac{b-2 a}{n}+\frac{a-b+c}{n^2}}} .
+\end{aligned}
+$$
+因此当 $n \rightarrow \infty$ 时, $\sqrt{a_n}-\sqrt{a_{n-1}}$ 有极限, 且极限值为 $\frac{2 a}{\sqrt{a}+\sqrt{a}}=\sqrt{a}$. 但已知 $\sqrt{a_n}$ 都是整数, 故 $\left\{\sqrt{a_n}-\sqrt{a_{n-1}}\right\}(n \geqslant 2)$ 是一个整数数列, 因此其极限值 $\sqrt{a}$ 必是一个整数, 且 $n$ 充分大后, 所有项 $\sqrt{a_n}-\sqrt{a_{n-1}}$ 都等于极限 $\sqrt{a}$, 即有一个 (固定的) 正整数 $k$, 使得
+$$
+\sqrt{a_n}-\sqrt{a_{n-1}}=\sqrt{a} \text {, 对 } n \geqslant k+1 \text {. }
+$$
+现在设 $m$ 是大于 $k$ 的任一个整数, 将上式对 $n=k+1, \cdots, m$ 求和, 得出 $\sqrt{a_m}= \sqrt{a_k}+(m-k) \sqrt{a}$, 即
+$$
+a_m=\left(m \sqrt{a}+\sqrt{a_k}-k \sqrt{a}\right)^2 . \label{eq1}
+$$
+记 $\alpha=\sqrt{a}, \beta=\sqrt{a_k}-k \sqrt{a}$, 则 $\alpha 、 \beta$ 都是与 $m$ 无关的固定整数,于是, 式\ref{eq1}表明, 所有大于 $k$ 的整数 $m$ 都是多项式
+$$
+f(x)-(\alpha x+\beta)^2
+$$
+的根, 从而这多项式必是零多项式,即 $f(x)=(\alpha x+\beta)^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设 $n>1, n$ 个正整数的和为 $2 n$. 证明, 在其中一定可以选出某些数,使它们的和等于 $n$, 除非所给的数满足下面的条件之一:
+(1) 有一个数是 $n+1$, 其余的都是 1 ;
+(2) 在 $n$ 为奇数时, 所有数都等于 2 .
+%%<SOLUTION>%%
+证明:. 设所给的正整数为 $0<a_1 \leqslant a_2 \leqslant \cdots \leqslant a_n$, 并记 $S_k=a_1+\cdots+ a_k(k=1, \cdots, n-1)$, 则在下面 $n+1$ 个数
+$$
+0, a_1-a_n, S_1, \cdots, S_{n-1}
+$$
+中,必有两个数模 $n$ 同余.
+我们区分四种情况讨论:
+(i) 设有一个 $S_k(1 \leqslant k \leqslant n-1)$, 使 $S_k \equiv 0(\bmod n)$. 此时由
+$$
+1 \leqslant S_k \leqslant a_1+\cdots+a_n-a_{k+1} \leqslant 2 n-1, \label{eq1}
+$$
+故 $S_k=n$.
+(ii) 设有 $S_i, S_j(1 \leqslant i<j \leqslant n-1)$ 满足 $S_j \equiv S_j(\bmod n)$, 则由 式\ref{eq1} 知 $1 \leqslant S_j-S_i \leqslant 2 n-1$, 故 $S_j-S_i=n$, 此即
+$$
+a_{i+1}+\cdots+a_j=n .
+$$
+(iii) 设有某个 $S_k(1 \leqslant k \leqslant n-1)$, 使得 $S_k \equiv a_1-a_n(\bmod n)$. 若 $k=1$, 将有 $a_n \equiv 0(\bmod n)$. 但 $a_{\mathrm{i}}, \cdots, a_{n-1}$ 都是正整数,故 $a_{\mathrm{r}}+\cdots+a_{n-1} \geqslant n-1$, 从而
+$$
+a_n=2 n-\left(a_1+\cdots+a_{n-1}\right) \leqslant n+1, \label{eq2}
+$$
+因此 $a_n=n$,故此时结论成立; 若 $k>1$, 则有
+$$
+\dot{a_2}+\cdots+a_k+a_n \equiv 0(\bmod n) .
+$$
+而上式左边显然是小于 $a_1+\cdots+a_n=2 n$ 的正整数, 故
+$$
+a_2+\cdots+a_k+a_n=n .
+$$
+(iv) 设 $a_1-a_n \equiv 0(\bmod n)$. 我们已证明 $a_n \leqslant n+1$ (见 \ref{eq2} 式): 若 $a_n= n+1$, 则 $n-1$ 个正整数 $a_1, \cdots, a_{n-1}$ 的和等于 $2 n-a_n=n-1$, 从而它们都等于 1 ,这正是问题中排除的情形 (1).
+设 $a_n \leqslant n$, 则 $0 \leqslant a_n-a_1 \leqslant n-1$, 结合 $a_n-a_1 \equiv 0(\bmod n)$, 推出 $a_n=\cdots=a_2=a_1=2$. 当 $n$ 为奇数时, 这是问题中排除的情形 (2). 若 $n$ 为偶数, 则任取 $\frac{n}{2}$ 个 $a_i$ 的和便等于 $n$.
+大意可概述如下: 由于所有给定数的和为 $2 n$, 因此, 只要能证明有若干个(不是全部) 数的和是 $n$ 的倍数, 则这个和必然恰等于 $n$, 而后一问题正是同余的用武之地.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设 $p$ 为素数, 给定 $p+1$ 个不同的正整数.
+证明, 可以从中取出这样一对数,使得将两者中较大的数除以两者的最大公约数后, 所得的商不小于 $p+1$.
+%%<SOLUTION>%%
+证明:将所给的 $p+1$ 个数都除以它们的最大公约数, 显然不影响本题的结论, 因此我们可设这 $p+1$ 个数互素.
+特别地, 其中必有一个数不被 $p$ 整除.
+记这 $p+1$ 个数是
+$$
+x_1, \cdots, x_k, x_{k+1}=p^{l_{k+1}} y_{k+1}, \cdots, x_{p+1}=p^{l_{p+1}} y_{p+1}, \label{eq1}
+$$
+这里, $\dot{x}_1, \cdots, x_k$ 互不相等且均和 $p$ 互素 $(k \geqslant 1), l_{k+1}, \cdots, l_{p+1}$ 是正整数, $y_{k+1}, \cdots, y_{p+1}$ 都是不被 $p$ 整除的正整数.
+在 $p+1$ 个数
+$$
+x_1, \cdots, x_k, y_{k+1}, \cdots, y_{p+1}
+$$
+中, 必有两个模 $p$ 同余, 我们区分三种情况讨论.
+(1) 式\ref{eq1} 中的数至少有三个相等.
+此时结论容易证明.
+因为若 $y_r=y_s=y_t$,
+则 $p^{l_r}, p^{l_s}, p^{l_t}$ 互不相等, 其中最大的数至少是最小者的 $p^2$ 倍, 无妨设 $p^{l_r} \geqslant p^2 \cdot p^{l_t}$, 则 $x_r$ 与 $x_t$ 符合要求; 若 $y_r=y_s=x_t(1 \leqslant t \leqslant k)$, 无妨设 $l_r>l_s$, 则 $l_r \geqslant 2$,于是 $x_r$ 与 $x_t$ 符合要求.
+(2) 式\ref{eq1}中的数有两对相等.
+若 $y_i=y_j, y_r=y_s$, 则当 $\left|l_i-l_j\right| \geqslant 2$ 或 $\left|l_r-l_s\right| \geqslant 2$ 时, 同上可知结论成立; 当 $\left|l_i-l_j\right| \leqslant 1$ 且 $\left|l_r-l_s\right| \leqslant 1$ 时, 可改记 $x_i, x_j, x_r, x_s$ 为 $a, a p, b, b p$, 且 $a<b$. 此时
+$$
+\frac{b p}{(a, b p)} \geqslant \frac{b p}{a}>p
+$$
+故整数 $\frac{b p}{(a, b p)} \geqslant p+1$.
+若 $x_i=y_r, x_j=y_s(1 \leqslant i, j \leqslant k)$, 同样可证明结论.
+(3) 式\ref{eq1} 中的数恰有两个相等.
+这只能是 $y_r=y_s$, 或 $x_i=y_r(1 \leqslant i \leqslant k)$. 这时可在式\ref{eq1}中删去 $y_r$, 则剩下的 $p$ 个数互不相等, 但仍有两个模 $p$ 同余.
+现在又有三种可能:
+(i) 设 $y_r \equiv y_s(\bmod p)$. 无妨设 $y_r>y_s$. 若 $l_r>l_s$, 结论显然成立.
+若 $l_r \leqslant l_s$, 记 $y_r=y_s+n$, 则 $n>0$, 且 $p \mid n$. 设 $\left(y_r, y_s\right)=d$, 则 $p \nmid d$, 于是 $\left(x_r, x_s\right)= p^{l_r} d$, 我们有 (注意 $d|n, p| n$, 以及 $p \nmid d$ )
+$$
+\frac{x_r}{\left(x_r, x_s\right)}=\frac{y_r}{d}=\frac{y_s}{d}+\frac{n}{d} \geqslant 1+p .
+$$
+所以, $x_r$ 与 $x_s$ 中的较大者除以它们的最大公约数后, 得出的商至少是 $p+1$.
+(ii) 设 $x_r \equiv x_s(\bmod p)(1 \leqslant r<s \leqslant k)$. 这一情形可与 (i) 类似地解决.
+(iii) 设 $x_r \equiv y_s(\bmod p)(1 \leqslant r \leqslant k)$. 若 $y_s>x_r$, 则结论显然成立.
+若 $y_s< x_r$, 设 $x_r=y_s+n$, 则 $n>0$, 且 $p \mid n$. 设 $\left(x_r, y_s\right)=d$, 则 $p \nmid d$, 于是 $\left(x_r, x_s\right)= \left(x_r, p^{l_s} y_s\right)=d$, 因此
+$$
+\frac{x_r}{\left(x_r, x_s\right)}=\frac{y_s}{d}+\frac{n}{d} \geqslant 1+p,
+$$
+从而 $x_r$ 与 $x_s$ 中较大的数除以它们的最大公约数后, 得出的商不小于 $p+1$. 这就完成了问题的证明.
+我们注意,若例 9 中的 $p+1$ 个整数换为 $p$ 个整数,则结论不必正确.
+例如, $p$ 个数 $1,2, \cdots, p$ 中显然没有符合要求的两个数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设 $S$ 是 $\left\{1,2, \cdots, 2^m n\right\}$ 的一个子集, $S$ 的元素个数 $|S| \geqslant\left(2^m- 1 \right) n+1$. 证明, $S$ 中有 $m+1$ 个不同的数 $a_0, \cdots, a_m$, 使得 $a_{i-1} \mid a_i(i=1, \cdots$, m).
+%%<SOLUTION>%%
+证明:每个正整数 $a$ 可唯一地表示为 $2^u k$ 的形式,其中 $u \geqslant 0, k$ 为奇数, 我们称 $k$ 为 $a$ 的奇数部分, 并且若 $a$ 的奇数部分不超过 $n$, 则称 $n$ 为好数.
+这里的证明, 基于 $S$ 中好数个数的下界估计.
+为此, 我们首先计数在区间 $\left(n, 2^m n\right]$ 中有多少个好数.
+设区间 $[1, n]$ 中共有 $t$ 个奇数 $\left(t\right.$ 实际上等于 $\left[\frac{n+1}{2}\right]$, 但我们并不需要这一点). 设 $k$ 是任意一个这样的奇数, 则满足 $n<2^u k \leqslant 2^m n$ 的整数 $u$ 恰有 $m$ 个.
+这只要注意, 设整数 $v$ 满足 $2^{v-1} \leqslant \frac{n}{k}<2^v$, 则 $2^v k, 2^{v+1} k, \cdots, 2^{v-1+m} k$ 是全部符合要求的数, 即在区间 $\left(n, 2^m n\right]$ 中奇数部分为 $k$ 的数共有 $m$ 个, 故其中恰有 $m t$ 个好数.
+因此这区间中非好数有 $2^m n-n-m t$ 个, 从而 $S$ 中好数的个数 $\geqslant|S|-\left(2^m n-n-m t\right)=m t+1$ 个.
+设 $k_1, \cdots, k_t$ 是 $[1, n]$ 中的全部奇数, 并设 $S$ 中恰有 $x_i$ 个数以 $k_i$ 为奇数部分 $(k=1, \cdots, t)$, 则由上一段的结论, $S$ 中好数的个数为
+$$
+x_1+\cdots+x_t \geqslant m t+1,
+$$
+从而必有一个 $x_i(1 \leqslant i \leqslant t)$, 使得 $x_i \geqslant m+1$, 即 $S$ 中至少有 $m+1$ 个整数具有相同的奇数部分 $k_i$, 这些数从小到大排列为 $a_0, a_1, \cdots, a_m$, 即为符合要求的 $m$ 个数, 证毕.
+%%<REMARK>%%
+注:1 当 $m=1$ 时, 本题化为了一个熟知的结果, 这里的证明即是此结果 (通常的)证明的推广.
+本题还有其他的解法, 例如, 对 $m$ 归纳或对 $n$ 归纳, 有兴趣的读者可自己试试.
+注:2 集合 $S=\left\{n+1, \cdots, 2^m n\right\}$ 表明, 若例 10 中的 $S$ 满足 $|S|= \left(2^m-1\right) n$, 则结论不必正确.
+因若有 $a_0, \cdots, a_m$ 符合要求, 则 $a_m \geqslant 2^m a_0$, 从而现在有 $a_m \geqslant 2^m(n+1)$, 这不可能.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 设 $A$ 是正整数的 $n$ 元集合 $(n \geqslant 2)$. 证明, $A$ 有一个子集 $B$, 满足 $|B|>\frac{n}{3}$, 且对任意 $x, y \in B$, 有 $x+y \notin B$.
+%%<SOLUTION>%%
+证明:记 $A$ 中的数为 $a_1, \cdots, a_n$. 由习题 3 的第 2 题知, 模 3 为 -1 的素数有无穷多个, 故可取一个这样的素数 $p>a_i(1 \leqslant i \leqslant n)$, 设 $p=3 k-1$. 考虑下面 ( $p$ 行 $n$ 列的) $p n$ 个数
+$$
+\begin{aligned}
+& a_1, a_2, \cdots, a_n ; \\
+& 2 a_1, 2 a_2, \cdots, 2 a_n ; \\
+& \cdots . . \\
+& p a_1, p a_2, \cdots, p a_n .
+\end{aligned} \label{eq1}
+$$
+由于 $p>a_i$, 故 $\left(p, a_i\right)=1$. 因此 式\ref{eq1} 中每一列数均构成模 $p$ 的一个完系, 从而对每个 $j(0 \leqslant j<p)$, 式\ref{eq1}中的数共有 $n$ 个模 $p$ 为 $j$, 于是模 $p$ 为 $k, k+1, \cdots, 2 k-1$ 之一的数共有 $k n$ 个.
+设式\ref{eq1}中第 $i$ 行中共有 $x_i$ 个数模 $p$ 为 $k, k+1, \cdots, 2 k-1$ 之一.
+则上面的论证表明
+$$
+x_1+\cdots+x_p=k n \text {. }
+$$
+故有一个 $x_i$ 满足
+$$
+x_i \geqslant \frac{k n}{\dot{p}}=\frac{k n}{3 k-1}>\frac{n}{3},
+$$
+即有一个 $l(1 \leqslant l \leqslant p)$, 使 $l a_1, l a_2, \cdots, l a_n$ 中模 $p$ 为 $k, k+1, \cdots, 2 k-1$ 之一的个数大于 $\frac{n}{3}$. 我们取
+$$
+B=\{a \in A \mid l a \text { 模 } p \text { 为 } k, k+1, \cdots, 2 k-1 \text { 之一 }\},
+$$
+则 $B$ 符合要求: 因为对任意 $x, y \in B$, 易知 $l(x+y)(=l x+l y)$ 模 $p$ 的余数或 $\geqslant 2 k$, 或 $\leqslant k-1$, 从而 $x+y \notin B$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 给定 $n \geqslant 2$. 证明, 存在 $n$ 个互不相同的正整数具有下述性质:
+(1) 这些数两两互素;
+(2) 这些数中任意 $k$ 个 $(2 \leqslant k \leqslant n)$ 数的和都是合数.
+%%<SOLUTION>%%
+证明:.
+$n=2$ 时结论显然成立.
+设已有 $n$ 个正整数 $a_1, \cdots, a_n$ 符合要求, 下面基于此造出 $n+1$ 个符合要求的数.
+由于素数有无穷多个,故可取 $2^n-1$ 个互不相同且均与 $a_1 a_2 \cdots a_n$ 互素的素数 $p_i\left(1 \leqslant i \leqslant 2^n-1\right)$. 将由 $a_{11}, \cdots, a_n$ 中任取 $k$ 个 $(1 \leqslant k \leqslant n)$ 所作成的 $2^n-$ 1 个和记为 $S_j\left(1 \leqslant j \leqslant 2^n-1\right)$, 其中 $k=1$ 时的和就是数 $a_i(1 \leqslant i \leqslant n)$.
+因为 $\left(p_i, a_1 \cdots a_n\right)=1$, 故有 $b_i$ 使得 $a_1 \cdots a_n \cdot b_i \equiv 1\left(\bmod p_i\right)\left(1 \leqslant i \leqslant 2^n-\right.$ 1 ). 由中国剩余定理, 同余式组
+$$
+x \equiv-b_i-b_i S_i\left(\bmod p_i\right), 1 \leqslant i \leqslant 2^n-1 . \label{eq1}
+$$
+有无穷多个正整数解 $x$. 我们取定一个解 $x_0>p_i\left(1 \leqslant i \leqslant 2^n-1\right)$, 并将式\ref{eq1}中同余式两边同乘 $a_1 \cdots a_n$, 得到
+$$
+a_1 \cdots a_n x_0+1+S_i \equiv 0\left(\bmod p_i\right), 1 \leqslant i \leqslant 2^n-1 . \label{eq2}
+$$
+令 $a_{n+1}=a_1 \cdots a_n x_0+1$, 则 $a_1, \cdots, a_n, a_{n+1}$ 这 $n+1$ 个数符合要求: 因为 $x_0> p_i$, 故 $a_{n+1}+S_i>p_i$; 而 式\ref{eq2} 意味着 $a_{n+1}+S_i$ 有约数 $p_i$, 故对任意 $i, a_{n+1}+S_i$ 是合数.
+而由 $a_{n+1}$ 的构作, 它当然与每个 $a_i$ 互素 $(1 \leqslant i \leqslant n)$. 这就完成了归纳构造.
+上述解法的精神是, 若已有了 $a_1, \cdots, a_n$, 我们希望可以取参量 $x$ 的一个值, 使得数 $a_1 \cdots a_n x+1$ 能够作为 $a_{n+1}$. 构作这种形式的数的主要益处在于, 所要求的 $\left(a_{n+1}, a_i\right)=1(1 \leqslant i \leqslant n)$ 自动成立.
+符合问题中要求的事物往往不止一个, 我们可以选择某些具有特别性质的事物来尝试, 即使之满足适当的充分条件, 以保证适合问题中的部分要求, 这种以退求进、舍多取少的手法在构造论证中应用极多.
+本题也可采用下面 (更为直接的)构造法: 取 $a_i=i \cdot n !+1$, 则 $a_1, \cdots, a_n$ 符合要求.
+这是因为:
+首先, 对 $i \neq j$ 有 $\left(a_i, a_j\right)=1$. 这是因为若设 $\left(a_i, a_j\right)=d$, 则 $j a_i-i a_j$ 是 $d$ 的倍数, 即 $d \mid(i-j)$. 但 $1 \leqslant|i-j|<n$, 故推出 $d \mid n$ !, 从而由 $d \mid a_i$ 知 $d=1$.
+此外, 任意 $k$ 个 $(2 \leqslant k \leqslant n) a_i$ 之和具有形式 $m \cdot n !+k$ ( $m$ 为某个整数), 这显然有真因子 $k$, 从而不是素数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13. 求所有的正整数 $k$, 使得存在正整数 $n$, 满足
+$$
+\frac{\tau\left(n^2\right)}{\tau(n)}=k, \label{eq1}
+$$
+其中 $\tau(n)$ 表示 $n$ 的正约数的个数.
+%%<SOLUTION>%%
+解:由第 3 单元 (6) 中 $\tau(n)$ 的计算公式可知, $\tau\left(n^2\right)$ 必是奇数, 因此满足式\ref{eq1} 的 $k$ 一定是奇数.
+面证明每个正奇数 $k$ 均符合要求.
+$k=1$ 显然符合要求.
+对 $k>1$, 由 $\tau(n)$ 的计算公式可知, 问题等价于证明, 存在正整数 $\alpha, \beta, \cdots, \gamma$, 使得
+$$
+\frac{(2 \alpha+1)}{\alpha+1} \cdot \frac{(2 \beta+1)}{\beta+1} \cdot \cdots \cdot \frac{(2 \gamma+1)}{\gamma+1}=k . \label{eq2}
+$$
+现假设小于 $k$ 的奇数均符合要求, 对于奇数 $k$, 可设 $k=2^l m-1$, 这里 $l \geqslant 1, m$ 为奇数.
+由 $k>1$ 易知 $m<k$, 故由归纳假设知, 有 $\alpha^{\prime}, \beta^{\prime}, \cdots, \gamma^{\prime}$, 使得
+$$
+\frac{\left(2 \alpha^{\prime}+1\right)}{\alpha^{\prime}+1} \cdot \frac{\left(2 \beta^{\prime}+1\right)}{\beta^{\prime}+1} \cdot \cdots \cdot \frac{\left(2 \gamma^{\prime}+1\right)}{\gamma^{\prime}+1}=m . \label{eq3}
+$$
+我们现在取两个待定整数 $x \geqslant 1$ 及 $u \geqslant 0$, 满足 $2^u \mid x$, 以及
+$$
+\frac{2 x+1}{x+1} \cdot \frac{2 \cdot \frac{x}{2}+1}{\frac{x}{2}+1} \cdots \cdots \frac{2 \cdot \frac{x}{2^u}+1}{\frac{x}{2^u}+1}=\frac{k}{m} . \label{eq4}
+$$
+显然, 若能找到符合上述要求的 $u$ 和 $x$, 则将式\ref{eq3}与\ref{eq4}相乘, 即得出了关于 $k$ 的形如式\ref{eq2}的表示, 从而证明了 $k$ 符合要求,即完成了归纳构造.
+事实上,式\ref{eq4}可化为
+$$
+\frac{2 x+1}{\frac{x}{2^u}+1}=\frac{k}{m},
+$$
+此即(注意 $k=2^l m-1$ ),
+$$
+x=\frac{2^u(k-m)}{2^{u+1} m-2^l m+1} .
+$$
+因此, 只要取 $u=l-1$, 则 $u \geqslant 0$, 相应的 $x=2^{l-1}(k-m)$ 为正整数, 且被 $2^{l-1}\left(=2^u\right)$ 整除.
+证毕.
+%%PROBLEM_END%%
+
+

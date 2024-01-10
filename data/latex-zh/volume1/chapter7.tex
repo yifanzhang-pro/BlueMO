@@ -1,0 +1,407 @@
+
+%%TEXT_BEGIN%%
+分类原则自本节开始, 我们把注意力转向集合知识和由集合知识派生出来的数学方法的应用上.
+首先我们来看与集合的分划有关的所谓分类问题.
+一、分类原则在我们的经验中, 有些数学问题涉及的对象较复杂, 统一地解决有困难, 于是就将这些对象分成“不重不漏”的若干类, 然后逐类解决.
+这就是分类解决问题的方法.
+分类的基本原则就是每次分类必须不重不漏, 其理论依据就是集合的分划.
+分类原则设所研究的对象的全体形成集合 $M, A_1, A_2, \cdots, A_n$ 是 $M$ 的一组非空子集, 且
+(1) $A_i \cap A_j=\varnothing, 1 \leqslant i, j \leqslant n, i \neq j$;
+(2) $\bigcup_{i=1}^n A_i=M$,
+那么,这组子集叫做研究对象的全体的一个 $n$-分类,其中每一个一集叫做所。 研究对象的一个类.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知 $y=\frac{x^2}{10}-\frac{x}{10}+\frac{9}{5}$, 且 $y \leqslant|x|$, 求 $x$ 的取值范围.
+%%<SOLUTION>%%
+分析:为了去掉 $y \leqslant|x|$ 中 $|x|$ 的绝对值符号, 自然要对 $x$ 进行分类: 当 $x \geqslant 0$ 时, $y \leqslant x$; 当 $x<0$ 时, $y \leqslant-x$. 由此知, 本题应分两种情况讨论.
+解当 $x \geqslant 0$ 时, 有 $y \leqslant x$. 即亦即
+$$
+\begin{aligned}
+& \frac{x^2}{10}-\frac{x}{10}+\frac{9}{5} \leqslant x, \\
+& (x-2)(x-9) \leqslant 0 .
+\end{aligned}
+$$
+解得 $2 \leqslant x \leqslant 9$.
+当 $x<0$ 时, 有 $y \leqslant-x$. 即
+$$
+\begin{aligned}
+& \frac{x^2}{10}-\frac{x}{10}+\frac{9}{5} \leqslant-x, \\
+& (x+3)(x+6) \leqslant 0 .
+\end{aligned}
+$$
+解得 $-6 \leqslant x \leqslant-3$.
+综上,所求 $x$ 的取值范围为 $[-6,-3] \cup[2,9]$.
+说明以上解答是以绝对值的定义为标准进行分类的.
+注意不要漏掉了 $x=0$ 的情形,这里我们是将 $x=0$ 与 $x>0$ 并在一起考虑的,但并非任何时候都可以这么做!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 已知 $a>0, a \neq 1$, 解关于 $x$ 的不等式:
+$$
+2 \log _a(x-1)>\log _a[1+a(x-2)] .
+$$
+%%<SOLUTION>%%
+分析:解对数不等式必然要考虑对数函数的单调性.
+于是, 将底数 $a$ 分为 $0<a<1$ 和 $a>1$ 两种情形讨论.
+解 (1) 当 $0<a<1$ 时, 原不等式等价于
+$$
+\begin{aligned}
+& \left\{\begin{array}{l}
+x-1>0, \\
+1+a(x-2)>0, \\
+(x-1)^2<1+a x-2 a,
+\end{array}\right. \\
+& \left\{\begin{array}{l}
+x>1, \\
+x>2-\frac{1}{a}, \\
+a<x<2 .
+\end{array}\right.
+\end{aligned}
+$$
+即因为 $0<a<1$, 所以 $1>2-\frac{1}{a}$. 所以此时原不等式的解为 $1<x<2$.
+(2) 当 $a>1$ 时,原不等式等价于
+$$
+\begin{aligned}
+& \left\{\begin{array}{l}
+x-1>0, \\
+1+a(x-2)>0, \\
+(x-1)^2>1+a x-2 a,
+\end{array}\right. \\
+& \left\{\begin{array}{l}
+x>2-\frac{1}{a}, \\
+(x-2)(x-a)>0 .
+\end{array}\right.
+\end{aligned}
+$$
+i) 当 $1<a<2$ 时, 由(2)得 $x<a$ 或 $x>2$.
+因为 $a>1$, 所以 $a-\left(2-\frac{1}{a}\right)=a+\frac{1}{a}-2>2 \sqrt{a \cdot \frac{1}{a}}-2=0$, 所以 $a>2-\frac{1}{a}$.
+所以, 此时原不等式的解为 $2-\frac{1}{a}<x<a$ 或 $x>2$.
+ii) 当 $a \geqslant 2$ 时,由 (2) 得 $x<2$ 或 $x>a$.
+因为 $a \geqslant 2$, 所以 $2>2-\frac{1}{a}$.
+所以, 此时原不等式的解为 $2-\frac{1}{a}<x<2$ 或 $x>a$.
+综上, 当 $0<a<1$ 时, 原不等式的解集为 $(1,2)$; 当 $1<a<2$ 时, 原不等式的解集为 $\left(2-\frac{1}{a}, a\right) \cup(2,+\infty)$; 当 $a \geqslant 2$ 时, 原不等式的解集为 $\left(2-\frac{1}{a}, 2\right) \cup(a,+\infty)$.
+说明上述解答中的分类讨论有如下特点:
+1. 讨论是围绕参数 $a$ 展开的.
+2. 采用了二级分类的方式: 第一级的分类是由对数函数的单调性引起的, 我们将参数 $a$ 分为两大类: (1) $0<a<1$, (2) $a>1$; 第二级的分类是为了比较不等式 (2) 对应的方程 $(x-2)(x-a)=0$ 的两根的大小, 我们将 $a>1$ 又分成两小类: i) $1<a<2$, ii) $a \geqslant 2$. 每级分类都严格遵循分类原则, 这种分类方式可推”到更多级的情形.
+3. 最后的结论是依不同情况下解的状况重新按一级分类叙述的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $n$ 是一个正整数.
+安先写出 $n$ 个不同的正整数, 然后艾夫删除了其中的某些数 (可以不删, 但不能全删), 同时在每个剩下的数的前面放上 “+”号或“-”号, 再对这些数求和.
+如果计算结果能被 2003 整除, 则艾夫获胜,否则安获胜.
+问谁有必胜策略?
+%%<SOLUTION>%%
+分析:$n$ 个不同整数所成的集合 $M$ 有 $2^n-1$ 个不同的非空子集.
+当 $2^n- 1>2003$ 时, 必有两个不同的子集的元素和关于模 2003 同余.
+设这两个子集为 $A 、 B$, 且 $A \cap B=C$. 则集合 $A \backslash C$ 与 $B \backslash C$ 的元素和关于模 2003 仍同余.
+这时, 艾夫只要在集合 $A \backslash C$ 的元素前加“十” 号,在 $B \backslash C$ 的元素前加“一”号, 而将其他元素全删除, 即可获胜.
+取 $n \geqslant 11$, 便有 $2^n-1>2003$.
+那么, 当 $n \leqslant 10$ 时有什么结果呢? 这时只要安写下整数 $1,2, \cdots, 2^{n-1} (n \leqslant 10)$ 中的若干个, 则已立于不败之地.
+因为艾夫无论怎么做, 所得的和都只能在一 1023 与 1023 之间,且不等于 0 .
+解当 $n \leqslant 10$ 时, 安有必胜策略.
+为此, 他可写出整数 $1,2, \cdots, 2^{n-1}$. 因为 $1+2+\cdots+2^{n-1}=2^n-1 \leqslant 2^{10}-1=1023$, 所以, 艾夫可能得到的和只能在一 1023 与 1023 之间.
+由二进制数的表示的惟一性及添加正、负号的办法知, 艾夫得到的和也不可能为 0 . 所以,艾夫必败无疑.
+当 $n \geqslant 11$ 时, 艾夫有必胜的策略.
+设安写出的整数所成之集为 $M$. 因为 $2^n-1 \geqslant 2^{11}-1>2003$, 所以 $M$ 的非空子集数大于 2003 . 因而, 一定存在 $M$ 的两个不同子集, 例如 $A$ 和 $B$, 使得 $A$ 中数的和与 $B$ 中数的和关于模 2003 同余.
+如果艾夫将“+”号放在集合 $A \backslash B$ 中的数的前面, 将“-”号放在集合 $B \backslash A$ 中的数的前面, 并删除 $M$ 中所有其余的数,则艾夫必胜.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4。 彼得有 25 名同班同学(他自己未计人数目 25 之内). 已知这 25 名同学在班内的朋友数目各不相同, 试问彼得在该班有多少名朋友?
+%%<SOLUTION>%%
+分析:因为彼得也可能是同班同学的朋友, 所以彼得的 25 名同学的朋友数分别只能是 $0,1,2, \cdots, 24,25$ 之一, 且互不相同.
+如果在彼得的同学中存在孤独者 (无朋友者), 则另 24 个同学的朋友数分别为 $1,2, \cdots, 24$; 否则, 彼得的 25 个同学的朋友数分别为 $1,2, \cdots, 25$. 看来我们得分如上两种情形讨论.
+解分两种情形讨论.
+第一种情形假定某位同学在班上的朋友数为 0 . 则除了这位孤独者和彼得以外,其他同学每人在班上的朋友数不多于 24 . 因为这些同学总共 24 人, 每人在班上的朋友数不同, 所以他们的朋友数依次为 $1,2, \cdots, 24$.
+约定将朋友数为 $1,2, \cdots, 12$ 的同学编为 $A$ 组, 将朋友数为 $13,14, \cdots$, 24 的同学编为 $B$ 组.
+将各组同学的朋友数求和, 分别得到
+$$
+\begin{aligned}
+& S(A)=1+2+\cdots+12=78, \\
+& S(B)=13+14+\cdots+24=222 .
+\end{aligned}
+$$
+设 $A$ 组中有 $k$ 名同学是彼得的朋友.
+则 $A$ 组同学在 $B$ 组中的朋友数总和不多于 $S(A)-k$, 另外 $B$ 组同学在本组中的朋友数总和不超过 $12 \times 11$. 因此, 彼得在 $B$ 组中的朋友数不少于
+$$
+S(B)-12 \times 11-(S(A)-k)=12+k,
+$$
+但 $B$ 组总共只有 12 人, 所以只能是 $k=0 . A$ 组中没有彼得的朋友 $(A$ 组同学也没有在本组中的朋友), $B$ 组的每位同学都是彼得的朋友.
+对此情形, 彼得在班上有 12 名朋友.
+第二种情形设班上没有孤独者, 每个人都有朋友.
+朋友数各不相同, 最多可达 25 人.
+约定将朋友数为 $1,2, \cdots, 12$ 的同学编人 $A$ 组; 将朋友数为 $13,14, \cdots, 25$ 的同学编人 $B$ 组.
+将各组同学的朋友数求和, 分别得到
+$$
+\begin{aligned}
+& S(A)=1+2+\cdots+12=78, \\
+& S(B)=13+14+\cdots+25=247 .
+\end{aligned}
+$$
+设 $A$ 组中有 $k$ 名同学是彼得的朋友.
+则 $A$ 组同学在 $B$ 组中的朋友数总和不多于 $S(A)-k$. 另外, $B$ 组同学在本组中的朋友数总共不超过 $13 \times 12$. 于是, 彼得在 $B$ 组中的朋友数不少于
+$$
+S(B)-13 \times 12-(S(A)-k)=13+k,
+$$
+但 $B$ 组总共只有 13 人, 所以 $k=0 . A$ 组中无彼得的朋友, $B$ 组中的每位同学都是彼得的朋友.
+对此情形, 彼得在班上有 13 名朋友.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 证明: 任何一个三角形可以被分割成三个多边形(包括三角形), 其中之一为钝角三角形, 且能重新拼为一个矩形 (多边形允许被翻转).
+%%<SOLUTION>%%
+解:若 $\triangle A B C$ 为等腰三角形(如图(<FilePath:./figures/fig-c7e5-1.png>)), 且 $A B=A C$, 则取底边中点 $D$ 和底边另一点 $E$, 连结顶点和底边上这两个点, 把三角形分为三部分, 易知其中 $\triangle A E C$ 为钝角三角形, 且能按照图(<FilePath:./figures/fig-c7e5-2.png>)拼成矩形.
+若 $\triangle A B C$ 为非等腰三角形(如图(<FilePath:./figures/fig-c7e5-3.png>)), 不妨设 $\angle A$ 为其最大的角.
+作 $A D \perp B C$ 于点 $D$, 在线段 $B D$ 上取点 $M$, 使 $M D=D C$. 设 $B M 、 A B$ 的中点分别为 $E 、 F$, 连结 $E F$. 则 $\triangle B E F 、 \triangle A D C$ 、四边形 $A D E F$ 可按照图(<FilePath:./figures/fig-c7e5-4.png>)拼成矩形, 且易知 $\triangle B E F$ 为钝角三角形.
+在解有关整数的问题时,常常利用剩余类来分类.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 对任意 $n, k \in \mathbf{N}^*$, 令 $S=1^n+2^n+3^n+\cdots+k^n$. 求 $S$ 被 3 除所得的余数.
+%%<SOLUTION>%%
+分析:因为 $(3 m)^n \equiv 0(\bmod 3),(3 m+1)^n \equiv 1(\bmod 3)$, $(3 m+2)^{2 r} \equiv 1(\bmod 3),(3 m+2)^{2 r+1} \equiv 2(\bmod 3)$, 所以对 $n$ 按奇偶性分类是自然的.
+解 (1) 当 $n$ 为奇数时, 不妨设 $n=2 l-1, l \in \mathbf{N}^*$. 对 $m \in \mathbf{N}^*$, 如果 $3 \times m$, 则 $m^2 \equiv 1(\bmod 3) \Rightarrow m^{2 l} \equiv 1(\bmod 3) \Rightarrow m^{2 l-1} \equiv m^{2(l-1)+1} \equiv m(\bmod 3)$; 如果 $3 \mid m$, 则 $m^{2 l-1} \equiv 0 \equiv m(\bmod 3)$. 于是, 当 $n$ 为奇数时, 对 $m \in \mathbf{N}$, 总有 $m^n \equiv m(\bmod 3)$. 从而
+$$
+\begin{aligned}
+S & \equiv 1+2+3+\cdots+k \\
+& \equiv(1+2+3)+(4+5+6)+\cdots(\bmod 3) .
+\end{aligned}
+$$
+当 $k=3 t+3$ 或 $k=3 t+2$ 时, 就有
+$$
+S \equiv 0(\bmod 3)(t \in \mathbf{N})
+$$
+当 $k=3 t+1$ 时, 就有
+$$
+\begin{aligned}
+S \equiv & (1+2+3)+(4+5+6)+\cdots \\
+& +[(k-3)+(k-2)+(k-1)]+k \\
+\equiv & 1(\bmod 3)(t \in \mathbf{N}) .
+\end{aligned}
+$$
+(2) 当 $n$ 为偶数时, 对 $m \in \mathbf{N}$, 由 (1) 知, $3 \times m \Rightarrow m^n \equiv 1(\bmod 3), 3 \mid m \Rightarrow m^n \equiv 0(\bmod 3)$. 于是
+$$
+S \equiv(1+1+0)+(1+1+0)+\cdots(\bmod 3) .
+$$
+当 $k=3 t+3(t \in \mathbf{N})$ 时, $(1+1+0)$ 共有 $t+1$ 组, 故 $S \equiv(t+1)(1+1+0) \equiv 2 t+2(\bmod 3)$;
+当 $k=3 t+2(t \in \mathbf{N})$ 时, $(1+1+0)$ 共有 $t$ 组, 且 $(k-1)^n \equiv k^n \equiv 1(\bmod 3)$, 故 $S \equiv 2 t+1+1 \equiv 2 t+2(\bmod 3)$;
+当 $k=3 t+1(t \in \mathbf{N})$ 时, $(1+1+0)$ 共有 $t$ 组, 且 $k^n \equiv 1(\bmod 3)$, 故 $S \equiv 2 t+1(\bmod 3)$.
+综合 (1)、(2) 可知:
+当 $n$ 为奇正整数时,有当 $n$ 为偶正整数时,有
+$$
+S \equiv\left\{\begin{array}{l}
+0, k=9 t+4 \text { 或 } 9 t+8 \text { 或 } 9 t+9, \\
+1, k=9 t+1 \text { 或 } 9 t+5 \text { 或 } 9 t+6,(\bmod 3)(t \in \mathbf{N}) . \\
+2, k=9 t+2 \text { 或 } 9 t+3 \text { 或 } 9 t+7
+\end{array}\right.
+$$
+说明这是一个两级分类的例子.
+首先是对 $n$ 按奇偶性(模 2 的剩余类) 分成两大类,然后又将每一大类对 $k$ 按模 3 的剩余类分成三个小类.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 求集合 $B 、 C$, 使得 $B \cup C=\{1,2, \cdots, 10\}$, 并且 $C$ 的元素乘积等于 $B$ 的元素和.
+%%<SOLUTION>%%
+分析:这实际上是求特殊条件下集合方程的解.
+注意到集合 $B$ 的元素和 $\leqslant 1+2+\cdots+10=55$, 而 $1 \cdot 2 \cdot 3 \cdot 4 \cdot 5=120$, 故知集合 $C$ 至多有 4 个元素.
+这样我们可以按 $|C|$ 的可能值分 4 类来讨论.
+解因为 $1+2+\cdots+10=55<120=1 \cdot 2 \cdot 3 \cdot 4 \cdot 5$, 所以集合 $C$ 至多有 4 个元素.
+下面对 $|C|$ 分 4 种情况讨论.
+(1) $C$ 由一个元素构成.
+因为 $C$ 的元素乘积不超过 $10, B$ 的元素和至少为 $55-10=45$. 故此情况不成立.
+(2) $C$ 由两个元素 $x 、 y$ 构成.
+设 $x<y$, 则有 $x y=55-x-y$, 即
+$$
+(x+1)(y+1)=56 .
+$$
+因为 $x+1<y+1 \leqslant 11$, 解得 $x=6, y=7$. 故 $C=\{6,7\}, B=\{1,2,3,4,5,8,9,10\}$.
+(3) $C$ 由三个元素 $x<y<z$ 构成.
+由题设得
+$$
+x y z=55-x-y-z .
+$$
+当 $x=1$ 时,解得 $y=4, z=10$. 因此, $C=\{1,4,10\}, B=\{2,3,5$, $6,7,8,9\}$.
+当 $x=2$ 时, 有 $2 y z+y+z=53$, 即 $(2 y+1)(2 z+1)=107$ 为质数.
+无解.
+若 $x \geqslant 3$, 显然有 $x y z \geqslant 3 \times 4 \times 5=60>55-x-y-z$. 无解.
+(4) $C$ 由四个元素 $x<y<z<t$ 构成.
+必有 $x=1$, 否则 $x y z t \geqslant 2 \times 3 \times 4 \times 5=120>55$. 这时
+$$
+y z t=54-y-z-t, 2 \leqslant y<z<t .
+$$
+如 (3), $y \geqslant 3$ 时无解.
+故 $y=2,2 z t+z+t=52$, 即 $(2 z+1)(2 t+1)= 105$. 解得 $z=3, t=7$. 从而, $C=\{1,2,3,7\}, B=\{4,5,6,8,9,10\}$.
+综上知, $B 、 C$ 有 3 组解.
+说明这里的分类并不是一眼看出来的, 但在经过了对两个集合的元素和与元素积的估计后, 这个分类就是自然的了, 而且后面的解答过程或多或少与这个估计有关.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 对任意的 $a>0, b>0$, 求 $\min \left\{\max \left\{\frac{1}{a}, \frac{1}{b}, a^2+b^2\right\}\right\}$ 的值.
+%%<SOLUTION>%%
+分析:为了求出 $\max \left\{\frac{1}{a}, \frac{1}{b}, a^2+b^2\right\}$, 我们来比较 $\frac{1}{a} 、 \frac{1}{b} 、 a^2+b^2$ 的大小.
+令 $\frac{1}{a}=\frac{1}{b}=a^2+b^2$, 得 $a=b=\sqrt[3]{\frac{1}{2}}$. 如设 $a \geqslant b>0$, 则 $a 、 b 、 \sqrt[3]{\frac{1}{2}}$ 有三种顺序关系: $a \geqslant b \geqslant \sqrt[3]{\frac{1}{2}}, \sqrt[3]{\frac{1}{2}} \geqslant a \geqslant b, a \geqslant \sqrt[3]{\frac{1}{2}} \geqslant b$. 我们就以此分类.
+解不失一般性, 不妨设 $a \geqslant b>0$, 则 $0<\frac{1}{a} \leqslant \frac{1}{b}$. 令 $\frac{1}{a}=\frac{1}{b}=a^2+b^2$, 则 $a=b=\sqrt[3]{\frac{1}{2}}$.
+(1) 若 $a \geqslant b \geqslant \sqrt[3]{\frac{1}{2}}$, 则
+$$
+\frac{1}{a} \leqslant \frac{1}{b} \leqslant \sqrt[3]{2}, a^2+b^2 \geqslant 2 b^2 \geqslant \sqrt[3]{2} .
+$$
+所以 $\max \left\{\frac{1}{a}, \frac{1}{b}, a^2+b^2\right\}=a^2+b^2 \geqslant \sqrt[3]{2}$. 从而当且仅当 $a=b=\sqrt[3]{\frac{1}{2}}$ 时,
+$$
+\min \left\{\max \left\{\frac{1}{a}, \frac{1}{b}, a^2+b^2\right\}\right\}=\min \left\{a^2+b^2\right\}=\sqrt[3]{2} ;
+$$
+(2) 若 $\sqrt[3]{\frac{1}{2}} \geqslant a \geqslant b>0$, 则
+$$
+\frac{1}{b} \geqslant \frac{1}{a} \geqslant \sqrt[3]{2}, a^2+b^2 \leqslant 2 a^2 \leqslant \sqrt[3]{2}
+$$
+所以 $\max \left\{\frac{1}{a}, \frac{1}{b}, a^2+b^2\right\}=\frac{1}{b} \geqslant \sqrt[3]{2}$. 从而当且仅当 $a=b=\sqrt[3]{\frac{1}{2}}$ 时,
+$$
+\min \left\{\max \left\{\frac{1}{a}, \frac{1}{b}, a^2+b^2\right\}\right\}=\min \left\{\frac{1}{b}\right\}=\sqrt[3]{2} .
+$$
+(3)若 $a \geqslant \sqrt[3]{\frac{1}{2}} \geqslant b>0$, 则 $\frac{1}{b} \geqslant \sqrt[3]{2} \geqslant \frac{1}{a}>0$.
+此时若 $\frac{1}{b} \geqslant a^2+b^2$, 则
+$$
+\max \left\{\frac{1}{a}, \frac{1}{b}, a^2+b^2\right\}=\frac{1}{b} \geqslant \sqrt[3]{2}
+$$
+若 $\frac{1}{b} \leqslant a^2+b^2$, 则
+$$
+\max \left\{\frac{1}{a}, \frac{1}{b}, a^2+b^2\right\}=a^2+b^2 \geqslant \frac{1}{b} \geqslant \sqrt[3]{2} ;
+$$
+所以当且仅当 $a=b=\sqrt[3]{\frac{1}{2}}$ 时,
+$$
+\min \left\{\max \left\{\frac{1}{a}, \frac{1}{b}, a^2+b^2\right\}\right\}=\sqrt[3]{2}
+$$
+综上所述: 当且仅当 $a=b=\sqrt[3]{\frac{1}{2}}$ 时,
+$$
+\min \left\{\max \left\{\frac{1}{a}, \frac{1}{b}, a^2+b^2\right\}\right\}=\sqrt[3]{2} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设 $S$ 为集合 $\{1,2, \cdots, 50\}$ 的具有下列性质的子集, $S$ 中任意两个不同的元素之和不被 7 整除.
+则 $S$ 中的元素最多可能有几个?
+%%<SOLUTION>%%
+解:将 $\{1,2, \cdots, 50\}$ 按照模 7 分成 7 类:
+$$
+\begin{aligned}
+& K_1=\{1,8,15,22,29,36,43,50\}, \\
+& K_2=\{2,9,16,23,30,37,44\}, \\
+& K_3=\{3,10,17,24,31,38,45\}, \\
+& K_4=\{4,11,18,25,32,39,46\}, \\
+& K_5=\{5,12,19,26,33,40,47\}, \\
+& K_6=\{6,13,20,27,34,41,48\}, \\
+& K_0=\{7,14,21,28,35,42,49\} .
+\end{aligned}
+$$
+下面证明 $S=K_1 \cup K_2 \cup K_3 \cup\{7\}$ 为满足要求的元素最多的集合.
+首先, 对 $a, b \in S, a \neq b$, 有 3 种可能:
+(1) $a, b \in K_i(1 \leqslant i \leqslant 3)$, 则
+$$
+a+b \equiv 2 i(\bmod 7),
+$$
+有 $a+b$ 不能被 7 整除.
+(2) $a \in K_i, b \in K_j(1 \leqslant i \neq j \leqslant 3)$, 则
+$$
+a+b \equiv i+j(\bmod 7),
+$$
+有 $a+b$ 不能被 7 整除.
+(3) $a \in K_i, b=7(1 \leqslant i \leqslant 3)$, 则
+$$
+a+b=i(\bmod 7) \text {, }
+$$
+有 $a+b$ 不能被 7 整除.
+综上知, $S$ 中任两个元素之和不能被 7 整除.
+其次证明, 若给 $S$ 添加一个元素 $c$, 则必存在 $S$ 中的一个元素与 $c$ 之和, 能被 7 整除.
+添加的 $c$ 有 4 种可能:
+(1) $c \in K_4$, 则 $c$ 与 $K_3$ 中的元素之和能被 7 整除.
+(2) $c \in K_5$, 则 $c$ 与 $K_2$ 中的元素之和能被 7 整除.
+(3) $c \in K_6$, 则 $c$ 与 $K_1$ 中的元素之和能被 7 整除.
+(4) $c \in K_0$, 则 $c$ 与 7 之和能被 7 整除.
+综上知, $S$ 中的元素不能再增添.
+所以 $S$ 中元素数目的最大值为
+$$
+|S|=\left|K_1\right|+\left|K_2\right|+\left|K_3\right|+1=23 .
+$$
+说明这里首先按模 7 的剩余类对集合 $\{1,2, \cdots, 50\}$ 的元素分类是自然的.
+后面的解答中又进行了两次分类, 但这两个分类的理由已经蕴涵在最初的分类之中了.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设 $n 、 m 、 k$ 都是自然数, 且 $m \geqslant n$. 证明: 如果
+$$
+1+2+\cdots+n=m k,
+$$
+则可将数 $1,2, \cdots, n$ 分成 $k$ 组, 使每一组数的和都等于 $m$.
+%%<SOLUTION>%%
+证明:对 $n$ 进行归纳.
+当 $n=1$ 时,结论显然成立.
+假设对一切小于 $n$ 的自然数结论成立, 我们来考察集合 $S_n=\{1$, $2, \cdots, n\}$ 的情形.
+如果 $m=n$, 那么 $\frac{1}{2}(n+1)=k$ 为整数, 于是可按如下方式分组:
+$$
+\{n\},\{1, n-1\},\{2, n-2\}, \cdots,\left\{-\frac{1}{2}(n-1), \frac{1}{2}(n+1)\right\} .
+$$
+如果 $m=n+1$, 那么 $n=2 k$ 为偶数, 则分组方式具有形式:
+$$
+\{1, n\},\{2, n-1\}, \cdots,\left\{\frac{n}{2}, \frac{n}{2}+1\right\} .
+$$
+对其余情形再分三种情况讨论:
+情况 1: $n+1<m<2 n, m$ 为奇数.
+我们先从 $S_n$ 中分出 $S_{m-n-1}=\{1$, $2, \cdots, m-n-1\}$; 再将其余 $2 n-m+1$ 个数两两配对, 使各对之和皆为 $m$ : $\{m-n, n\},\{m-n+1, n-1\}, \cdots,\left\{\frac{1}{2}(m-1), \frac{1}{2}(m+1)\right\}$. 由于 $S_{m-n-1}$ 中的数字之和为
+$$
+\begin{aligned}
+& \frac{1}{2}(m-n-1)(m-n) \\
+= & -\frac{1}{2}\left[m^2-m(2 n+1)\right]+\frac{1}{2} n(n+1) \\
+= & m\left[\frac{1}{2}(m-2 n-1)+k\right],
+\end{aligned}
+$$
+知该和数可被 $m$ 整除, 且因 $m \geqslant m-n-1$, 于是由归纳假设知, 可将 $S_{m-n-1}$ 中的数字分组,使得各组数字之和皆为 $m$.
+情况 $2: n+1<m<2 n, m$ 为偶数.
+这时, 我们仍然先从 $S_n$ 中分出 $S_{m-n-1}$
+来; 并先将其余数字两两配对, 使各对数字之和为 $m:\{m-n, n\}$, $\{m-n+1, n-1\}, \cdots,\left\{\frac{m}{2}-1, \frac{m}{2}+1\right\}$, 这时还剩下一个数字 $\frac{m}{2} . S_{m \rightarrow n-1}$ 中的数字之和可以表示成 $\frac{m}{2}(m-2 n-1+2 k)$ 的形式, 它可被 $\frac{m}{2}$ 整除.
+又由 $m<2 n$ 得 $m \leqslant 2 n-2, \frac{m}{2} \geqslant m-n-1$. 于是由归纳假设知, 可将 $S_{m-n-1}$ 中的数字分为 $m-2 n-1+2 k$ 组, 使每组之和皆为 $\frac{m}{2}$. 由于 $m-2 n-1+2 k$ 是一个奇数, 所以当将刚才剩下的单独一个数 $\frac{m}{2}$ 作为一组补人其中后, 即可将这些和为 $\frac{m}{2}$ 的组两两合并, 使得各组之和都成为 $m$.
+情况 $3: m \geqslant 2 n$. 此时 $k=\frac{n(n+1)}{2 m} \leqslant \frac{1}{4}(n+1)$, 所以 $n-2 k \geqslant 2 k- 1>0$. 我们从 $S_n$ 中分出 $S_{n-2 k}$, 后者中的数字之和为
+$$
+\frac{1}{2}(n-2 k)(n-2 k+1)=\frac{1}{2} n(n+1)-k(2 n+1)+2 k^2,
+$$
+它可被 $k$ 整除,且所得之商不小于 $n-2 k$. 这是因为
+$$
+\frac{(n-2 k)(n-2 k+1)}{2(n-2 k)}=\frac{1}{2}(n-2 k+1) \geqslant k .
+$$
+于是由归纳假设知可将 $S_{n-2 k}$ 中的数字分为 $k$ 组, 使各组之和相等.
+再将剩下的 $2 k$ 个数字两两配对, 使各对数字之和相等: $\{n-2 k+1, n\},\{n- 2 k+2, n-1\}, \cdots$ 然后再将这 $k$ 对数字分别并人前面所分出的 $k$ 组数字, 即可得到合乎需要的 $k$ 组数字.
+综上, 对 $S_n$ 结论成立.
+说明上述解答是在用数学归纳法证明的过程中采用分类法: 在归纳证明的第二步中, 我们对 $m$ 的取值范围分了 5 类来讨论.
+%%PROBLEM_END%%
+
+

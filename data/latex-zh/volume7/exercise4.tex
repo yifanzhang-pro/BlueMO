@@ -1,0 +1,243 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 如图(<FilePath:./figures/fig-c4p1.png>), 设 $B$ 是圆 $S_1$ 上的点, 过 $B$ 作圆 $S_1$ 的切线, $A$ 为该切线上异于 $B$ 的点, 又 $C$ 不是圆 $S_1$ 上的点, 且线段 $A C$ 交圆 $S_1$ 于两个不同的点.
+圆 $S_2$ 与 $A C$ 相切于点 $C$, 与圆 $S_1$ 相切于点 $D$, 且 $D$ 与 $B$ 在直线 $A C$ 的两侧.
+证明: $\triangle B C D$ 的外心在 $\triangle A B C$ 的外接圆上.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c4a1.png>), 设 $E 、 F$ 分别是 $B D 、 C D$ 的中点, $K$ 是 $\triangle B C D$ 的外心, $T D T^{\prime}$ 是圆 $S_1$ 与圆 $S_2$ 的内公切线, 则 $E K$ 是 $B D$ 的中垂线.
+因 $\angle T D B=\angle A B D, \angle T^{\prime} D C=\angle D C A$, 则 $\angle B D C=180^{\circ}-\angle T D B+\angle T^{\prime} D C=180^{\circ}- \angle A B D+\angle D C A=180^{\circ}-(\angle A B C-\angle D B C)+ (\angle D C B-\angle A C B)=180^{\circ}-\angle A B C-\angle A C B+ \angle D B C+\angle D C B=\angle B A C+180^{\circ}-\angle B D C$.于是, $2 \angle B D C=180^{\circ}+\angle B A C$. 故 $\angle B K C= \angle B K D+\angle D K C=2(\angle E K D+\angle D K F)=2 \angle E K F=2\left(180^{\circ}-\angle B D C\right)=180^{\circ}-\angle B A C$. 因此, $K$ 在 $\triangle A B C$ 的外接圆上.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 在 $\triangle A B C$ 的外接圆上, $\overparen{B C} 、 \overparen{C A} 、 \overparen{A B}$ 的中点分别为 $D 、 E 、 F$, 其中 $A \notin \overparen{B C}, B \notin \overparen{C A}, C \notin \overparen{A B} . D E$ 分别交 $C B 、 C A$ 于点 $G 、 H, D F$ 分别交 $B C 、 B A$ 于点 $I 、 J, G H$ 和 $I J$ 的中点分别为 $M 、 N$.
+(1) 用 $\triangle A B C$ 的内角表示 $\triangle D M N$ 的三个内角;
+(2) 若 $O$ 为 $\triangle D M N$ 的外心, $P$ 是 $A D$ 与 $E F$ 的交点, 证明: $O 、 M 、 P 、 N$ 四点共圆.
+%%<SOLUTION>%%
+(1) 证明: 如图(<FilePath:./figures/fig-c4a2.png>), 图为 $\angle B J I=\frac{\overparen{A F}^{\circ}}{2}+\frac{\overparen{B D}^{\circ}}{2}=\frac{\overparen{B F}^{\circ}}{2}+ \frac{\widehat{C D}^{\circ}}{2}=\angle B I J$, 所以 $B I=B J$. 从而 $B N$ 是 $\angle A B C$ 的平分线,则 $B 、 N 、 E$ 三点共线, $B N \perp I J$. 同理, $C M \perp G H$. 因此, $D 、 N 、 Q 、 M$ 四点共圆 (显然 $C M 、 B N$ 交于 $\triangle A B C$ 的内心 $Q)$. 进而, 有 $\angle D N M=\angle D Q M=\frac{\overparen{A F}^{\circ}+\overparen{C D}^{\circ}}{2}=\frac{\angle A+\angle C}{2}, \angle D M N=\frac{\angle A+\angle B}{2}, \angle M D N=\frac{\angle B+\angle C}{2}$.
+(2) 显然, 直线 $A D$ 过 $Q$ 点, 且 $\angle N P F=\frac{\angle B+\angle C}{2}, \angle E P M= \frac{\angle B+\angle C}{2}$. 从而, $\angle N O M=2 \angle M D N=\angle B+\angle C, \angle N P M=\pi- \angle N P F-\angle E P M=\pi-\angle B-\angle C$.
+所以, $N 、 O 、 M 、 P$ 四点共圆.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 如图(<FilePath:./figures/fig-c4p3.png>), 3 个圆有公共弦 $A B$. 任一条过点 $A$ 的直线 $l$ 与 3 个圆的交点依次为 $X 、 Y 、 Z$, 其中 $X \neq B$. 证明: $\frac{X Y}{Y} \frac{Y}{}$ 为定值.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c4a3.png>), 因为 3 个圆有公共弦 $A B$, 故圆心 $O_1 、 O_2 、 O_3$ 共线.
+过 $O_1 、 O_2 、 O_3$ 分别作 $l$ 的垂线交 $l$ 于点 $H_1 、 H_2 、 H_3$. 易知 $A X=2 A H_1, A Y= 2 A H_2, A Z=2 A H_3$.
+故 $\frac{X Y}{Y Z}=\frac{H_1 H_2}{H_2 H_3}=\frac{O_1 O_2}{O_2 O_3}$ 为定值.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 等腰 $\triangle A B C$ 中, $A B=A C, M$ 为边 $B C$ 的中点, $X$ 是 $\triangle A B M$ 外接圆的劣弧 $\overparen{M A}$ 上的一个动点, $T$ 是 $\angle B M A$ 内的一点, 且满足 $\angle T M X=90^{\circ}, T X=B X$. 证明: $\angle M T B-\angle C T M$ 的值不依赖于点 $X$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c4a4.png>), 设 $N$ 是线段 $B T$ 的中点.
+则直线 $X N$ 是等腰 $\triangle B X T$ 的对称轴.
+于是, $\angle T N X=90^{\circ}$, $\angle B X N=\angle N X T$. 又因为 $M N$ 是 $\triangle B C T$ 中平行于 $C T$ 的中位线, 所以 $\angle C T M=\angle N M T$. 由于 $\angle T N X= \angle T M X=90^{\circ}$, 则点 $M 、 N$ 在以 $X T$ 为直径的圆上.
+从而
+$\angle M T B=\angle M T N=\angle M X N, \angle C T M=\angle N M T=\angle N X T=\angle B X N$. 故 $\angle M T B-\angle C T M=\angle M X N-\angle B X N=\angle M X B=\angle M A B$. 不依赖于点 $X$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 已知一个圆与 $\triangle A B C$ 的边 $A B 、 B C$ 相切, 也和 $\triangle A B C$ 的外接圆相切于点 $T$. 若 $I$ 是 $\triangle A B C$ 的内心, 证明: $\angle A T I=\angle C T I$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c4a5.png>), 设小圆圆心为 $O^{\prime}$, 半径为 $r$, 大圆圆心为 $O$, 半径为 $R$, 且 $\odot O^{\prime}$ 与 $A B 、 B C$ 分别切于 $D 、 E$ 两点.
+连结 $D E 、 B O^{\prime}$ 交于点 $I^{\prime}$.
+下面证明 $I^{\prime}=I$. 延长 $B O^{\prime}$ 交 $\odot O$ 于点 $F$, 易知 $B F$ 平分 $\angle A B C$ 及 $\overparen{A C}$. 则 $O^{\prime}$ 关于 $\odot O$ 的幂为 $r(2 R-r)= 2 R r-r^2=B O^{\prime} \cdot O^{\prime} F=O^{\prime} F \cdot \frac{r}{\sin \frac{B}{2}}$. 故 $O F=(2 R-r) \sin \frac{B}{2}$. 于是, 有 $F I^{\prime}=F O^{\prime}+O^{\prime} I^{\prime \prime}=(2 R-r) \sin \frac{B}{2}+ r \sin \frac{B}{2}=2 R \sin \frac{B}{2}=A F$. 从而 $I^{\prime}=I$.
+连结 $B T 、 O^{\prime} T$ 有, $O^{\prime} I^{\prime} \cdot O^{\prime} B=O^{\prime} E^2=r^2=O^{\prime} T^2$. 从而, $\triangle O^{\prime} I^{\prime} T \backsim \triangle O^{\prime} T B$. 故 $\angle O^{\prime} T I^{\prime}=\angle O^{\prime} B T$. 过点 $T$ 作两圆的公切线 $T G$, 于是有, $\angle C T I+\angle O^{\prime} B C=\angle C T I+\angle O^{\prime} B T+\angle T B C=\angle C T I+\angle O^{\prime} T I+ \angle T B C=\angle C T O^{\prime}+\angle T B C=\angle C T O^{\prime}+\angle C T G=\angle O^{\prime} T G=90^{\circ}$. 则 $\angle C T I=90^{\circ}-\angle O^{\prime} B C=90^{\circ}-\frac{1}{2} B$. 同理, $\angle A T I=90^{\circ}-\frac{1}{2} B=\angle C T I$.
+故命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $\triangle A B C$ 的外接圆为 $\Gamma$, 圆心为 $O$ 的圆与线段 $B C$ 切于点 $P$, 与不含点 $A$ 的弧 $\overparen{B C}$ 切于点 $Q$. 若 $\angle B A O=\angle C A O$, 证明: $\angle P A O=\angle Q A O$.
+%%<SOLUTION>%%
+证明: 若 $A B=A C$, 则点 $P 、 Q$ 均在 $\angle B A C$ 的角平分线上, $\angle P A O=\angle Q A O=O$. 若 $A B \neq A C$, 如图(<FilePath:./figures/fig-c4a6.png>), 设 $\triangle A B C$ 的外接圆的圆心为 $O^{\prime}, B C$ 的中垂线与 $\odot O^{\prime}$ 交于点 $P^{\prime} 、 M$, 其中, $P^{\prime}, A$ 在 $B C$ 的同侧.
+则 $O^{\prime} 、 O 、 Q$ 三点共线.
+由 $\angle B A O=\angle C A O$, 则 $A 、 O 、 M$ 三点共线.
+设 $P^{\prime} Q$ 与 $\odot O$ 交于点 $R$. 由 $\angle M P^{\prime} R=\angle O^{\prime} P^{\prime} Q= \angle O^{\prime} Q R=\angle O R Q$, 得 $O R / / M P^{\prime}$. 因为 $M P^{\prime} \perp B C$, 所以, $O R \perp B C$. 从而, $R$ 为 $\odot O$ 与 $B C$ 的切点, 即 $R=P$. 这也就意味着 $P^{\prime} 、 P 、 Q$ 三点共线, 且有 $\angle Q P^{\prime} M=\angle P Q O=\angle Q P O$. 又 $\angle Q A O=\angle Q A M=\angle Q P^{\prime} M$, 则 $\angle Q A O=\angle Q P O$. 从而, $A 、 P 、 O 、 Q$ 四点共圆.
+故 $\angle P A O=\angle P Q O=\angle Q P O=\angle Q A O$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 设 $P$ 为 $\triangle A B C$ 内一点, 且满足 $\angle B P C=90^{\circ}, \angle B A P=\angle B C P, M 、 N$ 分别是边 $A C 、 B C$ 的中点.
+若 $B P=2 P M$, 证明: $A 、 P 、 N$ 三点共线.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c4a7.png>), 作 $\triangle P A B$ 的外接圆 $\odot O$, 延长 $C P$ 交 $\odot O$ 于点 $C^{\prime}$, 连结
+$B C^{\prime} 、 A C^{\prime}$. 因为 $\angle B C^{\prime} P=\angle B A P=\angle B C P$, $\angle B P C=90^{\circ}$, 所以, $P C^{\prime}=P C, B C^{\prime}=B C$. 又 $M 、 P$ 分别为 $A C 、 C C^{\prime}$ 的中点, 则 $A C^{\prime} / / P M \Rightarrow A C^{\prime}=2 P M=P B$. 由 $A 、 C^{\prime} 、 B 、 P$ 四点共圆, 故 $A P / / B C^{\prime}$. 因为 $P$ 为 $C C^{\prime}$ 的中点, 所以, $P N / / B C^{\prime}$. 故 $A 、 P 、 N$ 三点共线.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设圆 $\Gamma$ 和直线 $l$ 不相交, $A B$ 是圆 $\Gamma$ 的直径, 且垂直于直线 $l$, 点 $B$ 比点 $A$ 更靠近直线 $l$. 在圆 $\Gamma$ 上任意取一点 $C(C \neq A 、 B)$, 直线 $A C$ 交直线 $l$ 于点 $D$, 直线 $D E$ 与圆 $\Gamma$ 切于点 $E$, 且点 $B 、 E$ 在 $A C$ 的同一侧.
+设 $B E$ 交直线 $l$ 于点 $F, A F$ 交圆 $\Gamma$ 于点 $G(G \neq A)$. 证明: 点 $G$ 关于 $A B$ 的对称点在直线 $C F$ 上.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c4a8.png>), 设 $C F$ 交圆 $\Gamma$ 于点 $H$. 因为直径 $A B \perp l$, 所以,问题等价于证明 $G H / / l$.
+设 $A B \perp l$, 垂足为点 $X$, 则 $\angle A X F=\angle A E F= 90^{\circ}$. 所以, $A 、 F 、 X 、 E$ 四点共圆.
+于是, $\angle E F D= \angle E A B=\angle F E D$. 从而, $D F=D E$. 又因为 $D F^2= D E^2=D C \cdot D A$, 所以, $\triangle D C F \backsim \triangle D F A$. 于是, $\angle A F D=\angle F C D=\angle A C H=\angle A G H$. 故 $G H / / l$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 在 $\triangle A B C$ 中, $P 、 Q$ 分别是边 $A B 、 A C$ 上的点, 且使得 $\angle A P C= \angle A Q B=45^{\circ}$. 过点 $P$ 作边 $A B$ 的垂线与 $B Q$ 交于点 $S$, 过点 $Q$ 作边 $A C$ 的垂线与 $C P$ 交于点 $R$. 设 $D$ 是 $B C$ 上的点, 且使得 $A D \perp B C$. 证明: $P S$ 、 $A D 、 Q R$ 三线共点,且 $S R / / B C$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c4a9.png>), 设 $Q R 、 A D$ 的延长线交于 $E$. 下面证明直线 $P E$ 和 $P S$ 重合.
+注意到 $\angle A B Q= 135^{\circ}-\angle B A C=\angle A C P$, 则 $B 、 P 、 Q 、 C$ 四点共圆.
+于是, $\angle A P Q=\angle A C B$. 又 $\angle A E Q=90^{\circ}- \angle E A C=\angle A C B$, 从而, $A 、 P 、 E 、 Q$ 四点共圆.
+于是, $\angle A P E=180^{\circ}-\angle A Q E=90^{\circ}$. 
+所以, $P E \perp A B$. 因此, $P E 、 P S$ 重合且 $P S 、 A D 、 Q R$ 三线共点.
+由 $\angle B Q E=90^{\circ}- 45^{\circ}=\angle C P E$, 知 $P 、 Q 、 R 、 S$ 四点共圆.
+从而 $\angle Q P R=\angle Q S R$. 因为 $B 、 P 、 Q 、 C$ 四点共圆, 所以, $\angle Q P R=\angle Q B C$.
+因此, $\angle Q B C=\angle Q S R$, 即 $S R / / B C$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 已知锐角 $\triangle A B C$, 以 $A C$ 为直径的圆为圆 $\Gamma_1$, 以 $B C$ 为直径的圆为圆 $\Gamma_2, A C$ 与圆 $\Gamma_2$ 相交于点 $E, B C$ 与圆 $\Gamma_1$ 相交于点 $F$, 直线 $B E$ 和圆 $\Gamma_1$ 相交于点 $L 、 N$, 其中点 $L$ 在线段 $B E$ 上, 直线 $A F$ 和圆 $\Gamma_2$ 相交于点 $K 、 M$, 其中点 $K$ 在线段 $A F$ 上.
+证明: 四边形 $K L M N$ 是圆内接四边形.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c4a10.png>), 在圆 $\Gamma_2$ 中, $B C$ 是直径, 点 $E$ 是 $A C$ 和圆 $\Gamma_2$ 的交点, 则 $\angle B E C=90^{\circ}$. 同理, 由 $F$ 是 $B C$ 和圆 $\Gamma_1$ 的交点, 得 $\angle A F C=90^{\circ}$. 因为 $\angle A E B=\angle A F B=90^{\circ}$, 则点 $E 、 F$ 在以 $A B$ 为直径的圆上, 有 $C E \cdot C A=C F \cdot C B$. 易知 $\triangle A C L$ 是直角三角形, $L E$ 是它的高线.
+故 $C E \cdot C A=C L^2$. 同理, 在 $\triangle B C K$ 中, 有 $C F \cdot C B=C K^2$. 由 $C E \cdot C A= C F \cdot C B$, 有 $C L^2=C K^2$, 即 $C L=C K$. 又 $L N$ 垂直于圆 $\Gamma_1$ 的直径 $A C$, 则 $C L=C N$. 同理, 在圆 $\Gamma_2$ 中, 有 $C K=C M$. 综上, 线段 $C K 、 C L 、 C M$ 和 $C N$ 都相等.
+则点 $K 、 L 、 M 、 N$ 在以点 $C$ 为圆心的圆上.
+故四边形 $K L M N$ 是一个圆内接四边形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 已知 $A A_1 、 B B_1 、 C C_1$ 是锐角 $\triangle A B C$ 的三条高线.
+证明: $C_1$ 到线段 $A C$ 、 $B C 、 B B_1 、 A A_1$ 的垂足在同一直线上.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c4a11.png>), 设 $B_2 、 A_2 、 M 、 N$ 分别是点 $C_1$ 到线段 $A C 、 B C 、 B B_1 、 A A_1$ 的垂足.
+令 $\angle A B C=\beta$. 因为 $C_1 、 B_2 、 C 、 A_2$ 四点共圆, 则 $\angle C B_2 A_2=\angle C C_1 A_2= 90^{\circ}-\angle C_1 C A_2=\angle A B C=\beta$. 又 $B_2 、 A 、 C_1 、 N$ 四点共圆, 则 $\angle A B_2 N=90^{\circ}+\angle C_1 B_2 N=90^{\circ}+\angle C_1 A A_1= 90^{\circ}+90^{\circ}-\angle A B C=180^{\circ}-\beta$. 所以, $\angle A B_2 N+\angle C B_2 A_2=180^{\circ} \cdots$ (1). 同理, $\angle B A_2 M+\angle C A_2 B_2= 180^{\circ}$...(2). 由式 (1)(2) 知, 点 $B_2 、 N 、 M 、 A_2$ 在同一直线上.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. $D$ 是 $\triangle A B C$ 内的一点, 满足 $\angle D A C=\angle D C A=30^{\circ}, \angle D B A=60^{\circ}, E$ 是边 $B C$ 的中点, $F$ 是边 $A C$ 的三等分点, 满足 $A F=2 F C$. 求证: $D E \perp E F$. (2007 第六届女子数学奥林匹克)
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c4a12.png>), 作 $D M \perp A C$ 于点 $M, F N \perp C D$ 于点 $N$, 连结 $E M 、 E N$. 设 $C F=a, A F= 2 a$, 则 $C N=C F \cos 30^{\circ}=\frac{\sqrt{3} a}{2}=\frac{1}{2} C D$, 即 $N$ 是 $C D$ 的中点.
+又因为 $M$ 是边 $A C$ 上的中点, $E$ 是边 $B C$ 上的中点, 所以, $E M / / A B, E N / / B D$, 得 $\angle M E N=\angle A B D=60^{\circ}=\angle M D C$. 故 $M 、 D$ 、 $E 、 N$ 四点共圆.
+又因 $D 、 M 、 F 、 N$ 四点共圆, 所以, $D 、 E 、 F 、 M 、 N$ 五点共圆.
+从而, $\angle D E F=90^{\circ}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 凸四边形 $A B C D$ 有内切圆, 该内切圆切边 $A B 、 B C 、 C D 、 D A$ 的切点分别为 $A_1 、 B_1 、 C_1 、 D_1$, 连结 $A_1 B_1 、 B_1 C_1 、 C_1 D_1 、 D_1 A_1$, 点 $E 、 F 、 G 、 H$ 分别为 $A_1 B_1 、 B_1 C_1 、 C_1 D_1 、 D_1 A_1$ 的中点.
+证明: 四边形 $E F G H$ 为矩形的充分必要条件是 $A 、 B 、 C 、 D$ 四点共圆.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c4a13.png>), 设 $I$ 为四边形 $A B C D$ 的内切圆圆心.
+由于 $H$ 为 $D_1 A_1$ 的中点.
+而 $A A_1$ 与 $A D_1$ 为过点 $A$ 所作的 $\odot I$ 的切线.
+故 $H$ 在 $A I$ 上, 且 $A I \perp A_1 D_1$. 又 $I D_1 \perp A D_1$. 故由射影定理可知 $I H \cdot I A=I D_1^2=r^2$. 其中 $r$ 为内切圆半径.
+同理可知.
+$E$ 在 $B I$ 上,且 $I E \cdot I B= r^2$. 于是, $I E \cdot I B=I H \cdot I A$. 故 $A 、 H 、 E 、 B$ 四点共圆.
+所以, $\angle E H I=\angle A B E$. 类似地, 可证 $\angle I H G= \angle A D G ; \angle I F E=\angle C B E, \angle I F G=\angle C D G$. 将这四个式子相加得 $\angle E H G+\angle E F G=\angle A B C+\angle A D C$. 所以, $A 、 B 、 C 、 D$ 四点共圆的充要条件是 $E 、 F 、 G 、 H$ 四点共圆.
+而熟知一个四边形的各边中点围成的四边形是平行四边形.
+平行四边形为矩形的充要条件是该四边形的四个顶点共圆.
+因此, $E F G H$ 为矩形的充要条件是 $A 、 B$ 、 $C 、 D$ 四点共圆.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 如图(<FilePath:./figures/fig-c4p14.png>), 在 $\triangle A B C$ 中, $A B=A C, D$ 是边 $B C$ 的中点, $E$ 是 $\triangle A B C$ 外一点, 满足 $C E \perp A B, B E=B D$. 过线段 $B E$ 的中点 $M$ 作直线 $M F \perp B E$, 交 $\triangle A B D$ 的外接圆的劣弧 $\overparen{A D}$ 于点 $F$. 求证: $E D \perp D F$. (2010 女子数学奥林匹克)
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c4a14.png>), 易知 $A D \perp B C$. 由此可知 $\triangle A B D$ 的外接圆的圆心为线段 $A B$ 的中点 $O$. 延长 $F M$ 交 $\odot O$ 于点 $L$, 连结 $O E$, 过点 $O$ 作 $O H \perp F L, O K \perp A D$, 分别交 $F L 、 A D$ 于点 $H 、 K$. 设直线 $F M$ 分别与直线 $E D 、 A B 、 A D$ 交于点 $S$ 、 $I 、 P$, 直线 $C E$ 与 $A B$ 交于点 $N$. 由条件知 $C N \perp A B$. 所以, $A 、 N 、 D 、 C$ 四点共圆.
+故 $B D \cdot B C=B N \cdot A B$. 因为 $B C=2 B E, A B= 2 B O$, 所以, $B E^2=B N \cdot B O$. 由射影定理得 $O E \perp B E$. 从而, 四边形 $O E M H$ 是矩形.
+则 $O H=E M=\frac{1}{2} B E$. 因为 $O$ 是 $A B$ 的中点, 且 $O K / / B D$, 所以, $O K=\frac{1}{2} B D= \frac{1}{2} B E=O H$. 于是, $F L=A D$. 从而, $\overparen{L D}=\overparen{A F} \Rightarrow \angle P F D=\angle P D F$. 因为 $M F \perp B E$, 所以, $\angle B E D+\angle M S E=90^{\circ}$. 而 $\angle P D S+\angle B D E=90^{\circ}$, 且 $\angle B E D=\angle B D E$, 于是, $\angle P D S=\angle M S E=\angle D S P$. 因此, $\angle F D S=90^{\circ}$, 即 $E D \perp F D$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 如图(<FilePath:./figures/fig-c4p15.png>), 在锐角 $\triangle A B C$ 中, $A B>A C, M$ 为边 $B C$ 的中点, $\angle B A C$ 的外角平分线交直线 $B C$ 于点 $P$. 点 $K 、 F$ 在直线 $P A$ 上, 使得 $M F \perp B C, M K \perp P A$. 求证: $B C^2=4 P F \cdot A K$. (2010 女子数学奥林匹克)
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c4a15.png>), 设 $\triangle A B C$ 的外接圆 $\odot O$ 交直线 $F M$ 于点 $D, A D$ 交 $B C$ 于点 $E$. 易知 $A D$ 平分 $\angle B A C$. 所以, $A D \perp A P, A D / / M K$. 故 $\frac{M D}{F M}=\frac{A K}{F K}$. 因为 $\angle F M C=\angle F A D=90^{\circ}$, 所以, $F 、 M 、 E 、 A$ 四点共圆, 有 $\angle A F D= \angle A E C=\angle A B C+\frac{1}{2} \angle B A C$. 又 $\angle A B D=\angle A B C+\angle C B D=\angle A B C+\frac{1}{2} \angle B A C=\angle A F D$, 则 $A 、 F 、 B 、 D$ 四点共圆.
+故 $A 、 F 、 B 、 D 、 C$ 五点共圆.
+根据圆幂定理得 $P A \cdot P F=P C \cdot P B=(P M-M C)(P M+B M)=P M^2-B M^2 \cdots$ (1). 对 Rt $\triangle F M P$ 利用射影定理得 $P M^2=P K \cdot P F \cdots$ (2). (2)- (1) 得 $B M^2= P K \cdot P F-P A \cdot P F=P F(P K-P A)=P F \cdot A K$. 因为 $B M^2=\left(\frac{B C}{2}\right)^2= \frac{B C^2}{4}$, 所以, 结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16. 已知圆 $O$ 、圆 $I$ 分别是 $\triangle A B C$ 的外接圆和内切圆.
+证明: 过圆 $O$ 上的任意一点 $D$, 都可以作一个三角形 $D E F$, 使得圆 $O$ 、圆 $I$ 分别是 $\triangle D E F$ 的外接圆和内切圆.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c4a16.png>), 设 $O I=d, R, r$ 分别是 $\triangle A B C$ 的外接圆和内切圆半径, 延长 $A I$ 交圆 $O$ 于 $K$, 则 $K I=K B=2 R \sin \frac{A}{2}, A I=\frac{r}{\sin \frac{A}{2}}$, 延长 $O I$ 交 $\odot O$ 于 $M 、 N$; 则 $(R+d)(R-d)=I M \times I N= A I \times K I=2 R r$, 即 $R^2-d^2=2 R r$. (注: 这实际上是所谓欧拉公式) 过 $D$ 分别作 $\odot I$ 的切线 $D E, D F, E, F$ 在 $\odot O$ 上, 连结 $E F$, 则 $D I$ 平分 $\angle E D F$, 只要证 $E F$ 也与 $\odot I$ 相切.
+设 $D I \cap \odot O=P$, 则 $P$ 是 $\overparen{E F}$ 的中点, 连 $P E$, 则 $P E=2 R \sin \frac{D}{2}$, $D I=\frac{r}{\sin \frac{D}{2}}, I D \cdot I P=I M \cdot I N=(R+d)(R-d)=R^2-d^2$, 所以 $P I= \frac{R^2-d^2}{D I}=\frac{R^2-d^2}{r} \cdot \sin \frac{D}{2}=2 R \sin \frac{D}{2}=P E$, 由于 $I$ 在角 $D$ 的平分线上, 因此点 $I$ 是 $\triangle D E F$ 的内心, (这是由于, $\angle P E I=\angle P I E=\frac{1}{2}\left(180^{\circ}-\angle P\right)= \frac{1}{2}\left(180^{\circ}-\angle F\right)=\frac{D+E}{2}$, 而 $\angle P E F=\frac{D}{2}$, 所以 $\angle F E I=\frac{E}{2}$, 点 $I$ 是 $\triangle D E F$ 的内心). 即弦 $E F$ 与 $\odot I$ 相切.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17. 设 $H$ 为锐角 $\triangle A B C$ 的垂心, $D$ 为边 $B C$ 的中点, 过点 $H$ 的直线分别交边 $A B 、 A C$ 于点 $F 、 E$, 使得 $A E=A F$, 射线 $D H$ 与 $\triangle A B C$ 的外接圆交于点 $P$. 求证: $P 、 A 、 E 、 F$ 四点共圆.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c4a17.png>), 延长 $H D$ 至点 $M$, 使 $H D=D M$, 连结 $B M 、 C M 、 B H 、 C H$. 因为 $D$ 为边 $B C$ 的中点, 所以, 四边形 $B H C M$ 为平行四边形.
+于是, $\angle B M C= \angle B H C=180^{\circ}-\angle B A C$ (这里用到垂心、四点共圆), 即 $\angle B M C+\angle B A C=180^{\circ}$. 因此, 点 $M$ 在 $\triangle A B C$ 的外接圆上.
+连结 $P B 、 P C 、 P E 、 P F$. 因 $A E=A F, H$ 为 $\triangle A B C$ 的垂心, 所以, $\angle B F H=\angle C E H \cdots$ (1), $\angle H B F= 90^{\circ}-\angle B A C=\angle H C E \cdots$ (2).
+综合式(1)、(2)知 $\triangle B F H \backsim \triangle C E H \Rightarrow \frac{B F}{B H}=\frac{C E}{C H}$. 由四边形 $B H C M$ 是平行四边形知 $B H=C M, C H=B M$. 于是, $\frac{B F}{C M}=\frac{C E}{B M} \cdots$ (3). 又 $D$ 为边 $B C$ 的中点, 则 $S_{\triangle P B M}=S_{\triangle P C M}$. 故 $\frac{1}{2} B P \cdot B M \sin \angle M B P=\frac{1}{2} C P \cdot C M \sin \angle M C P$. 由 $\angle M B P+\angle M C P=180^{\circ}$, 得 $B P \cdot B M=C P \cdot C M \cdots$ (4). 结合 (3)、(4) 知 $\frac{B F}{B P}=\frac{C E}{C P}$. 因为 $\angle P B F=\angle P C E$, 所以, $\triangle P B F \backsim \triangle P C E \Rightarrow \angle P F B= \angle P E C$. 于是, $\angle P F A=\angle P E A$. 从而, $P 、 A 、 E 、 F$ 四点共圆.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题18. 如图(<FilePath:./figures/fig-c4p18.png>), 已知圆 $S_1$ 与圆 $S_2$ 交于 $P 、 Q$ 两点, $A_1 、 B_1$ 为圆 $S_1$ 上不同于 $P 、 Q$ 的两个点, 直线 $A_1 P 、 B_1 P$ 分别交圆 $S_2$ 于 $A_2 、 B_2$, 直线 $A_1 B_1$ 和 $A_2 B_2$ 交于点 $C$. 证明: 当点 $A_1$ 和点 $B_1$ 变化时, $\triangle A_1 A_2 C$ 的外心总在一个定圆周上.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c4a18.png>), 因为 $\angle A_1 C A_2+\angle A_1 Q A_2= \angle A_1 C A_2+\angle A_1 Q P+\angle P Q A_2=\angle B_1 C B_2+\angle C B_1 B_2+ \angle C B_2 B_1=180^{\circ}$, 则 $A_1 、 C 、 A_2 、 Q$ 四点共圆.
+设 $O$ 是 $\triangle A_1 A_2 C$ 的外心, $O_1 、 O_2$ 分别为圆 $S_1$ 和圆 $S_2$ 的圆心, 则 $\angle O O_1 Q=\frac{1}{2} \angle A_1 O_1 Q=180^{\circ}-\angle A_1 P Q$. 同理, $\angle O O_2 Q=180^{\circ}-\angle A_2 P Q$. 所以, $\angle O O_1 Q+\angle O O_2 Q=180^{\circ}$. 因此, $\triangle A_1 A_2 C$ 的外心总在一个过 $O_1 、 O_2$ 和 $Q$ 的定圆上.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题19. 两圆外切于点 $A$ 且内切另一圆 $\odot T$ 于点 $B 、 C$. 令 $D$ 是小圆内公切线割 $\odot T$ 的弦的中点.
+证明: 当点 $B 、 C 、 D$ 不共线时, $A$ 是 $\triangle B C D$ 的内心.
+%%<SOLUTION>%%
+证明: 先证明一个引理: 如图(<FilePath:./figures/fig-c4a19-1.png>), $\odot O$ 与弓形相切于点 $C 、 D$. 则 $C D$ 平分 $\angle A C B$.
+引理的证明: 过 $C$ 作 $\odot O$ 切线与 $B A$ 交于 $E$. 则由 $E C, E D$ 均为 $\odot O$ 的切线知 $\angle E C D=\angle E D C$, 且 $\angle E C A=\angle C B D$. 注意到 $\angle E C D= \angle E C A+\angle A C D, \angle E D C=\angle C B D+\angle B C D$. 引理得证.
+回到原题 (这里的字母与上述引理字母表示不相同.
+)
+如图(<FilePath:./figures/fig-c4a19-2.png>), 设 $C A 、 B A$ 与 $\odot T$ 分别相交于点 $E, F$. 连结 $B C$, $B E, C F, B D, E F, M B, M C, C N$. 由于 $\odot T_2$ 与弓形 $M F N$ 相切, 由上述引理知 $C A$ 平分 $\angle M C N$. 从而 $E$ 是优弧 $\overparen{M N}$ 的中点.
+同理 $F$ 是劣弧 $\overparen{M N}$ 的中点.
+而 $D$ 是 $M N$ 的中点.
+故 $E, T, D, F$ 四点共线, $\angle E B F= \angle E C F=90^{\circ} ; \angle M D E=\angle M D F=90^{\circ}$. 从而 $A 、 B 、 E 、 D$ 及 $A 、 D 、 F 、 C$ 分别四点共圆.
+再注意到 $C 、 B 、E 、 F$ 也四点共圆.
+因此, $\angle C B F=\angle C E F=\angle D B A$. 即 $\angle C B A=\angle D B A$. 同理 $\angle B C A=\angle D C A$. 所以 $A$ 是 $\triangle B C D$ 的内心.
+%%PROBLEM_END%%
+
+

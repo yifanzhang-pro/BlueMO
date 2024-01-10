@@ -1,0 +1,315 @@
+
+%%TEXT_BEGIN%%
+选择合适的记号.
+在处理某些问题时,一开始就选择有效的记号, 往往是解题的关键.
+例如, 整数具有各种表示方法, 包括标准素因数分解, 按模分类, 各种进位制等等.
+在解题时, 我们可以根据问题的特征选用合适的表示数的方法, 从而使思路变得明朗,或者使问题得以继续往下研究.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知正整数 $p, q, r, a$ 满足 $p q=r a^2$,其中 $r$ 是素数, $p, q$ 互素.
+证明: $p, q$ 中有一个是完全平方数.
+%%<SOLUTION>%%
+证明: $p=p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}, q=q_1^{\beta_1} q_2^{\beta_2} \cdots q_l^{\beta_l}, a=a_1^{\gamma_1} a_2^{\gamma_2} \cdots a_m^{\gamma_m}$ 为 $p, q, a$ 的标准素因数分解,则有
+$$
+p_1^{\alpha_1} \cdot p_2^{\alpha_2} \cdots p_k^{\alpha_k} \cdot q_1^{\beta_1} \cdot q_2^{\beta_2} \cdots q_l^{\beta_l}=r a_1^{2 \gamma_1} a_2^{2 \gamma_2} \cdots a_m^{2 \gamma_m} .
+$$
+由于 $p, q$ 互素且 $r$ 是素数,故 $p, q$ 中不被 $r$ 整除的那个数每个素因子都具有偶数次幂, 它一定是完全平方数.
+%%<REMARK>%%
+注:算术基本定理指的是: 任意一个大于 1 的整数 $n$ 有唯一的素因数分解
+$$
+n=p_1^\alpha p_2^\alpha \cdots p_k^{\alpha_k},
+$$
+其中 $p_1<p_2<\cdots<p_k$ 为不同的素数, $\alpha_1, \alpha_2, \cdots, \alpha_k \in \mathbf{N}^*$ (有时为便于考虑问题,会设 $\alpha_1, \alpha_2, \cdots, \alpha_k \in \mathbf{N}$).
+这是一个极其重要的定理.
+一旦将正整数表示为标准分解的形式, 就可以考虑许多整除、互素、约数、方幂等问题, 本题中, 将 $p, q, r$ 进行标准分解后, 很便于利用素数的性质解决问题.
+这里列举几个以标准分解为出发点的基本结果:
+(1) 上述正整数 $n$ 的正约数个数 $d(n)=\prod_{i=1}^k\left(\alpha_i+1\right)$, 特别地, $n$ 为完全平方数的充分必要条件是 $d(n)$ 为奇数;
+(2) 上述正整数 $n$ 的所有正约数之和 $\sigma(n)=\prod_{i=1}^k \frac{p_i^{\alpha_i+1}-1}{p_i-1}$;
+(3) 当 $n \geqslant 2$ 时, 小于 $n$ 且与 $n$ 互素的正整数个数 $\varphi(n)=\prod_{i=1}^k p_i^{\alpha_i-1}\left(p_i-1\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2-1. 如果 $n$ 是一个正整数,使得 $2 n+1$ 是一个完全平方数,证明: $n+1$ 是两个相邻的完全平方数之和.
+%%<SOLUTION>%%
+证明:因 $2 n+1$ 是一个完全平方,不妨设 $2 n+1=a^2$. 其中 $a$ 是整数, 由于 $a^2$ 是奇数, 从而 $a$ 是奇数,于是可设 $a=2 k+1, k$ 是整数, 那么
+$$
+2 n+1=(2 k+1)^2,
+$$
+所以
+$$
+n=2 k^2+2 k,
+$$
+于是
+$$
+n+1=2 k^2+2 k+1=k^2+(k+1)^2 .
+$$
+%%<REMARK>%%
+注:在证明中, 我们对 $a$ 进行奇偶分类 (即模 2), 然后给出它的表示 $(a=2 k+1)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2-2. 如果 $n$ 是一个正整数,使得 $3 n+1$ 是一个完全平方数, 证明: $n+1$ 是三个完全平方数之和.
+%%<SOLUTION>%%
+证明:因 $3 n+1$ 是完全平方数, 设 $3 n+1=a^2, a$ 是整数.
+显然, $a$ 不是 3 的倍数, 因此令 $a=3 k \pm 1, k$ 是整数, 于是
+$$
+3 n+1=(3 k \pm 1)^2,
+$$
+所以
+$$
+n=3 k^2 \pm 2 k \text {. }
+$$
+于是
+$$
+n+1=3 k^2 \pm 2 k+1=k^2+k^2+(k \pm 1)^2 .
+$$
+%%<REMARK>%%
+注: 在证明中,对 $a$ 用 $3 k \pm 1$ (即模 3 ) 表示.
+这样便把原问题化为简单的代数问题了.
+在处理有关整数问题时, 我们往往根据题目的特征, 按剩余类将整数分类,对每一种情况分别讨论, 从而得到问题的解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 集合 $S=\{1,2, \cdots, 3000\}$ 中是否包含一个具有 2000 个元素的子集 $A$, 它满足下述性质: 当 $x \in A$ 时, $2 x \notin A$ ?
+%%<SOLUTION>%%
+解:答案是否定的.
+把每个正整数都表成 $2^s t$ 的形式,其中 $s$ 是非负整数, $t$ 是奇数.
+如果集合 $A \subseteq S$ 具有性质: 当 $x \in A$ 时, $2 x \notin A$, 那么在 $2^s t \in A$ 时, $2^{s+1} t \notin A$. 因此, 对每个奇数 $t$, 有
+$$
+\left|A \cap\left\{t, 2 t, 2^2 t, \cdots\right\}\right| \leqslant\left|S \cap\left\{t, 2^2 t, 2^4 t, \cdots\right\}\right|,
+$$
+其中 $|X|$ 表示有限集合 $X$ 的元素个数.
+从而, $|A|$ 不大于下述集合的元素个数:
+$$
+\begin{gathered}
+\left\{1,3, \cdots, 2999,1 \times 2^2, 3 \times 2^2, \cdots, 749 \times 2^2, 1 \times 2^4, 3 \times 2^4, \cdots, 187 \times 2^4,\right. \\
+\left.1 \times 2^6, 3 \times 2^6, \cdots, 45 \times 2^6, 1 \times 2^8, 3 \times 2^8, \cdots, 11 \times 2^8, 1 \times 2^{10}\right\}
+\end{gathered}
+$$
+即
+$$
+|A| \leqslant 15000+375+94+23+6+1=1999<2000 .
+$$
+从而不存在含 2000 个元素的集合 $A$ 满足题述性质.
+%%<REMARK>%%
+注:本例中的条件涉及 $x$ 及其两倍 $2 x$ 关于集合 $A$ 的从属关系,故而把正整数表成 $2^s t$ ( $t$ 为奇数) 的形式有助于讨论, 使问题迎刃而解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 对正整数 $m$, 定义 $f(m)$ 为 $m$ ! 中因数 2 的个数 (即满足 $2^k \mid m$ ! 的最大整数 $k)$. 证明: 有无穷多个正整数 $m$, 满足
+$$
+m-f(m)=1000 .
+$$
+%%<SOLUTION>%%
+证明: $m$ 写成二进制形式
+$$
+m=\sum 2^{r_i}=2^{r_n}+2^{r_{n-1}}+\cdots+2^{r_1},
+$$
+其中 $r_n>r_{n-1}>\cdots>r_1 \geqslant 0, r_i \in \mathbf{Z}$.
+于是
+$$
+\begin{aligned}
+f(m) & =\left[\frac{m}{2}\right]+\left[\frac{m}{2^2}\right]+\left[\frac{m}{2^3}\right]+\cdots=\left[\underline{\sum} \frac{2^{r_i}}{2}\right]+\left[\frac{\sum 2^{r_i}}{2^2}\right]+\left[\frac{\sum 2^{r_i}}{2^3}\right]+\cdots \\
+& =\sum 2^{r_i-1}+\sum 2^{r_i-2}+\sum 2^{r_i-3}+\cdots,
+\end{aligned}
+$$
+其中和号只对非负指数的项求和.
+进一步有
+$$
+f(m)=\sum\left(2^{r_i-1}+2^{r_i-2}+\cdots+1\right)=\sum\left(2^{r_i}-1\right)=m-n .
+$$
+所以 $m-f(m)=n$, 即 $m-f(m)$ 等于 $m$ 的二进制表示下非零数字的个数.
+由于存在无穷个正整数 $m$, 使得它们二进制表示中恰有 1000 个非零数字, 从而命题得证.
+%%<REMARK>%%
+注:由 $f(m)$ 的定义提示我们把 $m$ 表为二进制的形式, 这样也便于最终描述满足条件的 $m$ 的性质.
+用本题的方法可以得到一个推广的结论:
+对正整数 $m$, 定义 $f_p(m)$ 为 $m$ ! 中素因数 $p$ 的个数 (即满足 $p^k \mid m$ ! 的最大整数 $k)$, 则 $m$ 在 $p$ 进制表示下的数码之和等于 $\frac{m-f_p(m)}{p-1}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $f(n)$ 是 $\mathbf{N}^*$ 到 $\mathbf{N}^*$ 的函数, $f(1)=1$, 且对任意 $n \in \mathbf{N}^*, \varepsilon \in\{0,1\}$ 有
+$$
+f(2 n+\varepsilon)=3 f(n)+\varepsilon .
+$$
+求函数 $f(n)$ 的值域.
+%%<SOLUTION>%%
+解:计算 $f(n)$ 的一些具体的数值:
+$\begin{array}{cccccccc}n & 1 & 2 & 3 & 4 & 5 & 6 & \cdots \\ f(n) & 1 & 3 & 4 & 9 & 10 & 12 & \cdots\end{array}$
+如果将 $n$ 与 $f(n)$ 分别用二进制和三进制来表示, 重新填写表格, 即为
+$\begin{array}{cccccccc}n & (1)_2 & (10)_2 & (11)_2 & (100)_2 & (101)_2 & (110)_2 & \cdots \\ f(n) & (1)_3 & (10)_3 & (11)_3 & (100)_3 & (101)_3 & (110)_3 & \cdots\end{array}$
+因此猜测 : 对任意正整数 $n=\left(\overline{\left(a_k a_{k-1} \cdots a_1\right.}\right)_2$, 有 $f(n)=\left(\overline{\left(a_k a_{k-1} \cdots a_1\right.}\right)_3$.
+下面对 $n=\left(\overline{a_k a_{k-1} \cdots a_1}\right)_2$ 的位数 $k$ 用数学归纳法证明上述结论.
+当 $k=1$ 时显然成立.
+设上述结论在 $k$ 位数时成立, 考虑任意一个 $k+1$ 位数 $n_1= \left(\overline{a_k a_{k-1} \cdots a_0}\right)_2$.
+在 $f(2 n+\varepsilon)=3 f(n)+\varepsilon$ 中令 $n=\left(\overline{a_k a_{k-1} \cdots a_1}\right)_2, \varepsilon=a_0 \in\{0,1\}$, 由于此时
+$$
+2 n+\varepsilon=2 \cdot\left(\overline{a_k a_{k-1} \cdots a_1}\right)_2+a_0=\left(\overline{a_k a_{k-1} \cdots a_1 a_0}\right)_2=n_1,
+$$
+故
+$$
+f\left(n_1\right)=3 f(n)+a_0=3 \cdot\left(\overline{\left(a_k a_{k-1} \cdots a_1\right.}\right)_3+a_0=\left(\overline{a_k a_{k-1} \cdots a_1 a_0}\right)_3,
+$$
+可见 $k+1$ 的情形也成立.
+由数学归纳法可知结论成立.
+因此函数 $f(n)$ 的值域是三进制表示中只含数码 0,1 的一切正整数集合, 即
+$$
+\left\{3^{r_1}+3^{r_2}+\cdots+3^{r_s} \mid s \in \mathbf{N}^*, r_1, r_2, \cdots, r_s \in \mathbf{N}, r_1>r_2>\cdots>r_s\right\} .
+$$
+%%<REMARK>%%
+注:本题先进行探究, 计算了 $f(n)$ 的一些具体的值.
+一旦将 $n$ 与 $f(n)$ 的十进制表示替换为适当的进位制 (二进制和三进制), 取值规律就在新的记号下显现无疑,在书写上也带来便利.
+此后的证明是很容易的.
+在下述试题中, 恰好可以引用本题的结论:
+函数 $f: \mathbf{N}^* \rightarrow \mathbf{N}^*$ 适合条件 $f(1)=1$, 且对任何 $n \in \mathbf{N}^*$ 有
+$$
+3 f(n) f(2 n+1)=f(2 n)(1+3 f(n)), f(2 n)<6 f(n) .
+$$
+试求方程 $f(k)+f(l)=293, k<l$ 的所有解.
+下面再提一种正整数的表示方式一正整数的 Fibonacci 表示.
+不妨规定 $\left\{F_n\right\}$ 的定义如下:
+$$
+F_1=1, F_2=2, F_{n+2}=F_{n+1}+F_n .
+$$
+我们考虑将正整数表示成 $\left\{F_n\right\}$ 中某些不同项的和.
+比如
+$$
+\begin{gathered}
+10=8+2=F_5+F_2, \\
+30=13+8+5+3+1=F_6+F_5+F_4+F_3+F_1,
+\end{gathered}
+$$
+但是 30 还可以表示成
+$$
+30=21+8+1=F_7+F_5+F_1 .
+$$
+如果进一步要求将正整数表示成 $\left\{F_n\right\}$ 中的某些两两不相邻项的和, 那么正整数 30 的上述两种表示方法中,仅有后一种满足要求.
+一般地, 可以用数学归纳法证明如下重要的结论:
+定理每个正整数 $n$ 均可唯一地表示成 $\left\{F_n\right\}$ 中某些两两不相邻的项之和.
+此时若 $n=a_k F_k+a_{k-1} F_{k-1}+\cdots+a_1 F_1$ (其中 $a_1, a_2, \cdots, a_k \in\{0,1\}$ 且相邻两项不同时取 1), 我们用 $\left(\overline{a_k a_{k-1} \cdots a_1}\right)$ F 来记 $n$, 称为 $n$ 的 "Fibonacci 表示".
+用这种表示方法有时候可以很简明地处理一些问题:
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 求集合 $S=\{1,2, \cdots, n\}$ 的不含两个相邻整数的非空子集的个数.
+%%<SOLUTION>%%
+解:据正整数 Fibonacci 表示的性质可知, $S$ 的每个不含两个相邻整数的非空子集 $A$ 恰好对应一个小于 $\left({\overline{1}(\underbrace{00 \cdots 0}_{n \uparrow 0})_F}^{0 \text { 个 }}=F_{n+1}\right.$ 的正整数 $m= \left(\overline{a_n a_{n-1} \cdots a_1}\right)_F$, 其中只需规定
+$$
+a_i= \begin{cases}1, & i \in A \\ 0, & i \notin A .\end{cases}
+$$
+从而满足条件的非空子集个数为 $F_{n+1}-1$, 即 $\frac{1}{\sqrt{5}}\left(\left(\frac{1+\sqrt{5}}{2}\right)^{n+2}- \left(\frac{1-\sqrt{5}}{2}\right)^{n+2}\right)-1$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 证明: 任意四边形四条边的平方和, 等于两条对角线的平方和, 加上对角线中点连线的平方的 4 倍.
+%%<SOLUTION>%%
+证明:设四边形四个顶点在直角坐标系中的坐标分别为 $A_i\left(x_i, y_i\right), i= 1,2,3,4$, 则 $A_1 A_3, A_2 A_4$ 的中点 $M, N$ 的坐标分别为 $\left(\frac{x_1+x_3}{2}, \frac{y_1+y_3}{2}\right)$,
+$$
+\left(\frac{x_2+x_4}{2}, \frac{y_2+y_4}{2}\right) \text {. }
+$$
+由于
+$$
+\begin{aligned}
+& 4\left(\frac{x_1+x_3}{2}-\frac{x_2+x_4}{2}\right)^2+\left(x_1-x_3\right)^2+\left(x_2-x_4\right)^2 \\
+= & \left(x_1+x_3-x_2-x_4\right)^2+\left(x_1-x_3\right)^2+\left(x_2-x_4\right)^2 \\
+= & 2\left(x_1^2+x_2^2+x_3^2+x_4^2-x_1 x_2-x_2 x_3-x_3 x_4-x_4 x_1\right) \\
+= & \left(x_1-x_2\right)^2+\left(x_2-x_3\right)^2+\left(x_3-x_4\right)^2+\left(x_4-x_1\right)^2,
+\end{aligned}
+$$
+同理有
+$$
+\begin{aligned}
+& 4\left(\frac{y_1+y_3}{2}-\frac{y_2+y_4}{2}\right)^2+\left(y_1-y_3\right)^2+\left(y_2-y_4\right)^2 \\
+= & \left(y_1-y_2\right)^2+\left(y_2-y_3\right)^2+\left(y_3-y_4\right)^2+\left(y_4-y_1\right)^2,
+\end{aligned}
+$$
+以上两式相加, 根据两点距离公式就有
+$$
+\begin{aligned}
+& 4|M N|^2+\left|A_1 A_3\right|^2+\left|A_2 A_4\right|^2 \\
+= & \left|A_1 A_2\right|^2+\left|A_2 A_3\right|^2+\left|A_3 A_4\right|^2+\left|A_4 A_1\right|^2,
+\end{aligned}
+$$
+故命题成立.
+%%<REMARK>%%
+注:本题用解析法求解.
+大体来讲, 解析法解题具有如下一些规律:
+如果几何题中出现直角, 可以考虑让坐标轴成为这个直角的两边; 凡是涉及平方关系的问题, 运用解析几何往往相对比较方便 (本题是个鲜明的例子) ; 有些问题, 可以用数字代替字母而丝毫不影响问题的实质, 反过来有时候也可以用字母代替数字, 将内在结构明显化.
+当然, 如何选取记号更合适要视具体问题而定.
+在本题中, 我们选择最一般的坐标进行代数运算, 这样容易保持算式的对称性, 便于边观察边证明, 并且由于横、纵坐标的对称关系, 只需证明横坐标的等式, 同理便可得到纵坐标的等式, 又达到了事半功倍的效果.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 锐角三角形 $A B C$ 外接圆在 $A$ 和 $B$ 处的切线相交于 $D, M$ 是 $A B$ 中点, 证明: $\angle A C M=\angle B C D$. 
+%%<SOLUTION>%%
+证明:用复数法.
+如图(<FilePath:./figures/fig-c10i1.png>),不妨设 $\triangle A B C$ 外接圆为复平面上的单位圆 ( $O$ 为圆心), 且射线 $O M$ 方向为实轴正向.
+由已知条件易得 $D$ 在 $O M$ 延长线上, 且 $O M$ ・ $O D=O A^2=1$.
+不妨设 $A, B$ 分别对应复数 $z, \bar{z}$, 则点 $M$ 对应的复数为 $\operatorname{Re} z$, 点 $D$ 对应的复数为 $\frac{1}{\operatorname{Re} z}$. 又设点 $C$ 对应复数 $c$.
+显然 $\angle A C M$ 与 $\angle B C D$ 均为锐角, 故只需证明 $H=\frac{c-z}{c-\frac{1}{\operatorname{Re} z}}: \frac{c-\operatorname{Re} z}{c-\bar{z}} \in \mathbf{R}$, 即证 $\bar{H}=H$.
+记 $(c-z)(c-\bar{z})=P,\left(c-\frac{1}{\operatorname{Re} z}\right)(c-\operatorname{Re} z)=Q$, 则 $H=\frac{P}{Q}$.
+注意到 $z \cdot \bar{z}=c \cdot \bar{c}=1$, 则
+$$
+\begin{gathered}
+\bar{P}=(\bar{c}-\bar{z})(\bar{c}-z)=\left(\frac{1}{c}-\frac{1}{z}\right)\left(\frac{1}{c}-\frac{1}{\bar{z}}\right)=\frac{1}{c^2}(z-c)(\bar{z}-c)=\frac{P}{c^2}, \\
+\bar{Q}=\left(\frac{1}{c}-\frac{1}{\operatorname{Re} z}\right)\left(\frac{1}{c}-\operatorname{Re} z\right)=\frac{1}{c^2 \operatorname{Re} z}(\operatorname{Re} z-c)(1-c \operatorname{Re} z) \\
+=\frac{1}{c^2 \operatorname{Re} z} \cdot Q \operatorname{Re} z=\frac{Q}{c^2},
+\end{gathered}
+$$
+故 $\bar{H}=\frac{\bar{P}}{\bar{Q}}=\frac{P}{Q}=H$. 从而 $\angle A C M=\angle B C D$.
+%%<REMARK>%%
+注:本题中 $A, B$ 两点地位对称, 而 $D, M$ 两点与 $A, B$ 关系密切, 因此在不失一般性的前提下, 将 $A, B$ 分别对应单位圆上的复数 $z, \bar{z}$, 并将需证的角相等的结论转化为"一个复数式取实数值"这样一类表述.
+复数法是一种代数方法,然而复数的乘除在模、辐角等方面又具有清晰的几何意义, 这是复数法的优点所在.
+复数的几种表示形式 (代数、三角、指数形式等)在解题中也可适当选用, 它们揭示了代数、三角、几何等知识的联系.
+凡与旋转、位似有关的问题, 常常可以利用复数法求解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 从左到右编号为 $B_1, B_2, \cdots, B_n$ 的 $n$ 个盒子共装有 $n$ 个小球,每次可以选择一个盒子 $B_k$, 进行如下操作: (1) 若 $k=1$ 且 $B_1$ 中至少有 1 个小球, 则可从 $B_1$ 中移 1 个小球至 $B_2$ 中; (2) 若 $k=n$ 且 $B_n$ 中至少有 1 个小球,则可从 $B_n$ 中移 1 个小球至 $B_{n-1}$ 中; (3) 若 $2 \leqslant k \leqslant n-1$ 且 $B_k$ 中至少有 2 个小球, 则可从 $B_k$ 中分别移 1 个小球至 $B_{k+1}$ 和 $B_{k-1}$ 中.
+求证 : 无论初始时这些小球如何放置, 总能经过有限次操作使得每个盒子中恰有 1 个小球.
+%%<SOLUTION>%%
+证明:对于任意两个向量 $\vec{x}=\left(x_1, x_2, \cdots, x_n\right)$ 和 $\vec{y}=\left(y_1, y_2, \cdots\right.$, $\left.y_n\right)$, 若存在 $1 \leqslant k \leqslant n$ 使得 $x_1=y_1, \cdots, x_{k-1}=y_{k-1}, x_k>y_k$, 则记 $\vec{x}>\vec{y}$. 用一非负整数向量 $\vec{x}=\left(x_1, x_2, \cdots, x_n\right)$ 表示各盒子中的小球数目.
+经过一次对 $B_k$ 的操作后, 各盒子中的小球数目从 $\vec{x}$ 变为 $\vec{x}+\alpha_k$, 其中 $\alpha_1=(-1,1$, $0, \cdots, 0), \alpha_k=(\underbrace{0, \cdots, 0}_{k-2 \uparrow}, 1,-2,1,0, \cdots, 0)(2 \leqslant k \leqslant n-1), \alpha_n= (0, \cdots, 0,1,-1)$. 当 $k \geqslant 2$ 时, 总有 $\vec{x}+\alpha_k>\vec{x}$. 因此, 对于任意初始状态, 总可以通过一系列对 $B_2, \cdots, B_n$ 的操作 (只要 $k \geqslant 2$ 且 $B_k$ 中至少有两个小球, 就对 $B_k$ 施行操作), 使得操作后的小球数目 $\vec{y}=\left(y_1, y_2, \cdots, y_n\right)$ 满足 $y_k \leqslant 1, \forall k \geqslant 2$. 若 $y_2=\cdots=y_n=1$, 则已经满足题目要求; 否则有 $y_1 \geqslant 2$. 设 $i$ 是满足 $y_i=0$ 的最小整数, 通过一系列对 $B_1, \cdots, B_{i-1}$ 的操作, 可以使得小球数目变为 $\left(y_1-1,1, \cdots, 1, y_{i+1}, \cdots, y_n\right)$. 具体操作如下:
+$$
+\begin{aligned}
+& \left(y_1, 1, \cdots, 1,0, y_{i+1}, \cdots, y_n\right) \stackrel{B_1, B_2, \cdots, B_{i-1}}{\longrightarrow}\left(y_1, 1, \cdots, 1,0,1, y_{i+1}, \cdots,\right. \\
+& \left.y_n\right) \stackrel{B_1, B_2, \cdots, B_{i-2}}{\longrightarrow}\left(y_1, 1, \cdots, 1,0,1,1, y_{i+1}, \cdots, y_n\right) \rightarrow \cdots \rightarrow\left(y_1, 0,\right. \\
+& \left.1, \cdots, 1, y_{i+1}, \cdots, y_n\right) \stackrel{B_1}{\longrightarrow}\left(y_1-1,1, \cdots, 1, y_{i+1}, \cdots, y_n\right) .
+\end{aligned}
+$$
+重复以上操作,最终可使小球数目满足题目要求.
+%%<REMARK>%%
+注:本题采用 $n$ 维向量的记号, 使表达准确且紧凑.
+%%PROBLEM_END%%
+
+

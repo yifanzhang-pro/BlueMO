@@ -1,0 +1,294 @@
+
+%%TEXT_BEGIN%%
+数形结合思想是一个非常重要的思想,也是一个重要的解题策略.
+"数"与 "形" 反映了事物两个方面的属性.
+数形结合, 就是通过数与形之间的对应和转化来解决数学问题, 具体来说就是在解题时, 把图形性质问题借助于数量关系的推演而具体量化, 把数量关系问题借助于几何背景而直观形象化, 它兼有数的严谨与形的直观之长.
+通过 "以形助数"或 "以数解形", 可使复杂问题简单化, 抽象问题具体化, 有助于把握数学问题的本质, 使问题迎刃而解.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设实系数一元二次方程 $x^2+a x+2 b-2=0$ 有两个相异实根, 其中一根在 $(0,1)$ 内,另一根在 $(1,2)$ 内, 求 $\frac{b-4}{a-1}$ 的取值范围.
+%%<SOLUTION>%%
+解:令 $f(x)=x^2+a x+2 b-2$, 则已知条件等价于 $f(0)>0, f(1)< 0, f(2)>0$, 化简即
+$$
+\left\{\begin{array}{l}
+b>1, \\
+a+2 b<1, \\
+a+b>-1 .
+\end{array}\right.
+$$
+如图(<FilePath:./figures/fig-c11i1.png>),在直角坐标平面 $a O b$ 内画出满足这个不等式组的区域,并观察该区域中每个点 $(a, b)$ 与 $P (1,4)$ 的连线的斜率 $\frac{b-4}{a-1}$, 可得 $\frac{b-4}{a-1} \in\left(\frac{1}{2}, \frac{3}{2}\right)$.
+%%<REMARK>%%
+注:本题有 $a, b$ 两个参数,约束条件较多且不直观, 故先等价转化为 $f(0)>0, f(1)<0$, $f(2)>0$, 再把这些抽象的数量关系对应为直观的几何图形位置关系, 每一步都保持了命题的等价性, 同时使问题简单化.
+现另有一种解法同样可以求得结果, 具体如下:
+设两个相异实根为 $x_1, x_2$, 且 $0<x_1<1<x_2<2$, 则
+$$
+1<x_1+x_2=-a<3,0<x_1 x_2=2 b-2<2 .
+$$
+于是 $-3<a<-1,1<b<2$, 即 $-\frac{1}{2}<\frac{1}{a-1}<-\frac{1}{4},-3<b-4<-2$.
+故有
+$$
+\frac{1}{2}<\frac{b-4}{a-1}<\frac{3}{2} \text {. }
+$$
+请有兴趣的读者找出该解法的不妥之处, 并考虑为什么结论仍能保持正确.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 圆 $O_1$ 与圆 $O_2$ 交于 $A 、 B$ 两点.
+过点 $A$ 作直线 $C D \perp A B$, 交圆 $O_1$ 于 $C$, 交圆 $O_2$ 于 $D$. 过 $C 、 D$ 分别作 $C D$ 垂线 $M C 、 M D$, 使 $M C=M B, N D= N B$. 连接 $M N$, 过点 $B$ 作 $M N$ 的平行线, 交圆 $O_1$ 于 $P$, 交圆 $O_2$ 于 $Q$. 求证: $B P=B Q$.
+%%<SOLUTION>%%
+证明:面给出一个解析几何证法.
+设 $O_1 O_2$ 交 $A B$ 于原点 $O$, 不妨设 $A(0,-1), B(0,1), O_1\left(x_1, 0\right)$, $\mathrm{O}_2\left(x_2, 0\right)$.
+圆 $O_1$ 方程为 $\left(x-x_1\right)^2+y^2=x_1^2+1$, 即
+$$
+x^2-2 x_1 x+y^2-1=0 . \label{eq1}
+$$
+同理, 圆 $\mathrm{O}_2$ 方程为:
+$$
+x^2-2 x_2 x+y^2-1=0 . \label{eq2}
+$$
+由已知条件及抛物线定义得: $M 、 N$ 在以直线 $C D$ (即直线 $y=-1$ ) 为准线, 以 $B$ 为焦点的抛物线 $x^2=2 p y$ 上.
+其中, $p$ 为 $B$ 到 $C D$ 的距离, 故 $p=2$. 所以
+$$
+x^2=4 y . \label{eq3}
+$$
+因为 $C D \perp A B$, 所以 $B C$ 为圆 $O_1$ 的直径, $B D$ 为圆 $O_2$ 的直径, 易知 $C 、 D$ 的坐标分别为 $\left(2 x_1,-1\right),\left(2 x_2,-1\right)$.
+又 $M C \perp C D, N D \perp C D$, 所以 $x_M=x_C=2 x_1, x_N=x_D=2 x_2$. 考虑到 $M 、 N$ 分别满足 \ref{eq3} 式, 有: $y_M=\frac{1}{4} x_M^2=x_1^2, y_N=\frac{1}{4} x_N^2=x_2^2$. 注意 $x_1 \neq x_2$, 于是 $M N$ 的斜率为 $k=\frac{y_M-y_N}{x_M-x_N}=\frac{x_1^2-x_2^2}{2 x_1-2 x_2}=\frac{x_1+x_2}{2}$, 又 $P Q$ 过点 $B$ 且与 $M N$ 平行, 故其方程应为:
+$$
+y=\frac{x_1+x_2}{2} x+1 . \label{eq4}
+$$
+联立 式\ref{eq1}、\ref{eq4}, 舍去根 $x=0$, 得: $x_P==\frac{x_1-x_2}{1+\left(\frac{x_1+x_2}{2}\right)^2}$. 同理得: $x_Q=$
+$$
+\frac{x_2-x_1}{1+\left(\frac{x_1+x_2}{2}\right)^2}=-x_P .
+$$
+故 $B P 、 B Q$ 在 $x$ 轴上的投影长相等.
+故 $B P=B Q$.
+%%<REMARK>%%
+注:本题运用解析法证明, 即: 选择适当的坐标系, 把几何问题转化为代数问题, 经过计算和逻辑推理, 得到有关的代数结论, 再还原成题目所需证明的几何结论.
+在对问题的处理上, 例 1 是 "以形助数", 本例是 "由数解形", 这是相互对应的两种取向.
+用解析法证明平面几何问题具有模型化、规律性强的特点, 其案例屡见不鲜, 这里不作赘述.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 已知正数 $a 、 b 、 c 、 A 、 B 、 C$ 满足 $a+A=b+B=c+C=k$. 求证:
+$$
+a B+b C+c A<k^2 .
+$$
+%%<SOLUTION>%%
+证明:想到三角形的面积, 可以构造以 $k$ 为边长的正三角形 $P Q R$ (如图(<FilePath:./figures/fig-c11i2.png>) ), 在边上取 $L 、 M 、 N$, 根据已知条件, 使
+$$
+\begin{aligned}
+& Q L=A, L R=a, R M=B, M P=b, P N=C, \\
+& N Q=c . \text { 则 }
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& S_{\triangle L R M}=\frac{1}{2} a B \sin 60^{\circ}, S_{\triangle M P N}=\frac{1}{2} b C \sin 60^{\circ}, \\
+& S_{\triangle N Q L}=\frac{1}{2} c A \sin 60^{\circ}, S_{\triangle P Q R}=\frac{1}{2} k^2 \sin 60^{\circ} .
+\end{aligned}
+$$
+由图显然有
+$$
+S_{\triangle L R M}+S_{\triangle M P N}+S_{\triangle N Q L}<S_{\triangle P Q R},
+$$
+所以
+$$
+\frac{1}{2} a B \sin 60^{\circ}+\frac{1}{2} b C \sin 60^{\circ}+\frac{1}{2} c A \sin 60^{\circ}<\frac{1}{2} k^2 \sin 60^{\circ}
+$$
+即
+$$
+a B+b C+c A<k^2 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $p 、 q$ 为互素的正整数.
+证明:
+$$
+\left[\frac{p}{q}\right]+\left[\frac{2 p}{q}\right]+\cdots+\left[\frac{(q-1) p}{q}\right]=\frac{(p-1)(q-1)}{2},
+$$
+这里 $[x]$ 表示不超过 $x$ 的最大整数.
+%%<SOLUTION>%%
+解:考虑直角坐标平面的矩形 $O A B C$, 这里 $O$ 为原点, $A 、 B 、 C$ 的坐标分别为 $(q, 0),(q$, $p),(0, p)$, 连接 $O B$. 由于 $p 、 q$ 互素, 所以对于区间 $(0, q)$ 内的整数 $x, y=\frac{p}{q} x$ 决不是整数.
+也就是说线段 $O B$ 上没有整点.
+下面我们用两种方法计算 $\triangle O A B$ 内部 (不包括边界)的整点数目 $s$.
+一方面, 过 $x$ 轴上的整点 $E(k, 0)(0<k<q)$ 作 $x$ 轴的垂线与 $O B$ 相交于 $F$. 点 $F$ 的纵坐标为 $y=\frac{k p}{q}$, 所以在线段 $E F$ 内部(不包括边界) 有 $\left[\frac{k p}{q}\right]$ 个整点.
+这样
+$$
+s=\left[\frac{p}{q}\right]+\left[\frac{2 p}{q}\right]+\cdots+\left[\frac{(q-1) p}{q}\right] .
+$$
+另一方面,矩形 $O A B C$ 内部 (不包括边界)共有 $(p-1)(q-1)$ 个整点.
+线段 $O B$ 内部没有整点, $\triangle O A B$ 和 $\triangle B C O$ 内部的整点各占总数的一半, 即
+$$
+s=\frac{(p-1)(q-1)}{2} \text {. }
+$$
+综合两方面即证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $p 、 q$ 为互素的正整数.
+证明:
+$$
+\left[\frac{p}{q}\right]+\left[\frac{2 p}{q}\right]+\cdots+\left[\frac{(q-1) p}{q}\right]=\frac{(p-1)(q-1)}{2},
+$$
+这里 $[x]$ 表示不超过 $x$ 的最大整数.
+%%<SOLUTION>%%
+本例亦可证明如下:
+设 $r$ 为正整数 $(1 \leqslant r \leqslant q-1)$, 则有 $\left[\frac{(q-r) p}{q}\right]=p-\left[\frac{r p}{q}\right]-1$. 这样
+$$
+\begin{aligned}
+& {\left[\frac{(q-1) p}{q}\right]+\cdots+\left[\frac{2 p}{q}\right]+\left[\frac{p}{q}\right] } \\
+= & (p-1)(q-1)-\left(\left[\frac{p}{q}\right]+\left[\frac{2 p}{q}\right]+\cdots+\left[\frac{(q-1) p}{q}\right]\right) .
+\end{aligned}
+$$
+即证.
+虽然这个证明篇幅较短, 但前面的证明反映了整点计数的意义, 很直观, 其方法对很多与整点有关的问题都适用.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 星期天电影院放映儿童专场, 每张票价 5 元, 每位小朋友限买一张.
+$2 n$ 位小朋友在售票处门口排成一圈, 其中正好有一半人只带 5 元一张的钞票, 一半人只带 10 元一张的钞票.
+开始买票前, 售票处没有零钱找补.
+售票员可以任选一位小朋友作为排头开始卖票, 但不能打乱已排好的队伍.
+问: 售票员是否一定有办法顺利把票卖完, 而用不着担心找不出零钱?
+%%<SOLUTION>%%
+分析:题中不允许打乱已排好的队伍, 即只能从某人开始一个接一个地向后卖票.
+我们帮售票员想一个办法.
+拿一张方格纸, 在上面画出横轴和纵轴.
+先作一个调查: 从队伍最前面的那个人开始, 依次询问每个小朋友手中拿的是 5 元还是 10 元.
+遇上 5 元, 就在一个小方格里画一条如" ""的对角线,称为上升线段;如遇到 10 元就在一个小方格画一条如"入"的对角线, 称为下降线段.
+画图是从原点开始的,但必须把各个小线段连成一条连续不断的折线.
+因为上升线段和下降线段条数相同,所以折线终点一定在横轴上.
+如果折线某个地方在横轴下方, 就意味着从某个地方开始下降线条数多于上升线条数目.
+这时售票员如果从第一为小朋友开始卖票, 必然会在某个时刻无钱找零.
+在这种情况下, 总可以在折线上找到 "最低点", 当这种最低点不止一个时, 我们取最靠近纵轴的那个最低点.
+若这个最低点的横坐标为 $k$, 则售票员应从队伍中第 $k$ 个小朋友开始售票, 这样做永远不会出现找不出零钱的情况.
+因为从这点开始任何时候上升线条数目必不少于下降线条数目 (否则与最低点矛盾).
+下面举一个例子来说明前面的证明.
+设排好队的 10 为小朋友手中的钱依次为 $10,10,5,10,5,5,10,5,5$, 10 , 按前述作出折线,如图(<FilePath:./figures/fig-c11i4.png>):
+请读者自己验证我们前面的论述.
+%%<REMARK>%%
+注:本问题构造折线图形, 把所有条件都适当地转述为折线的特征, 相当直观, 在此基础上一看图形便知结论.
+另一个问题与本题有相似之处:
+一个环形轨道上有 $n$ 个加油站, 所有加油站的油量总和正好够车跑一圈.
+证明, 总能找到其中一个加油站, 使得初始时油箱为空的汽车从这里出发, 能够顺利环行一圈回到起点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 求证: 对任意八个实数 $a_1, a_2, \cdots, a_8$ 下列 6 个数
+$$
+a_1 a_3+a_2 a_4, a_1 a_5+a_2 a_6, a_1 a_7+a_2 a_8, a_3 a_5+a_4 a_6, a_3 a_7+a_4 a_8, a_5 a_7+a_6 a_8
+$$
+中至少有一个是非负的, 并举例说明这 6 个数可能恰有一个是非负的.
+%%<SOLUTION>%%
+证明:取平面直角坐标系内的点 $A\left(a_1, a_2\right), B\left(a_3, a_4\right), C\left(a_5, a_6\right)$, $D\left(a_7, a_8\right)$, 设 $O$ 为坐标原点.
+若 $A, B, C, D$ 中有某个点与 $O$ 重合, 例如 $A$ 与 $O$ 重合, 则 $a_1 a_3+ a_2 a_4=0$ 为非负数.
+以下假定 $A, B, C, D$ 中任意一点不与 $O$ 重合, 不妨设射线 $O A, O B$, $O C, O D$ 依逆时针顺序排列, 根据抽屉原理, 它们的夹角 $\angle A O B, \angle B O C$, $\angle C O D, \angle D O A$ 中必有一个不超过 $90^{\circ}$, 不妨设 $0^{\circ} \leqslant \angle A O B \leqslant 90^{\circ}$, 则 $a_1 a_3+ a_2 a_4=\overrightarrow{O A} \cdot \overrightarrow{O B} \geqslant 0$.
+另外, 取 $a_1=3, a_2=1, a_3=-1, a_4=2, a_5=-1, a_6=-2, a_7=3$, $a_8=-1$, 其中仅有 $a_1 a_7+a_2 a_8=8>0$, 则表明这 6 个数中可以恰有一个是非负的.
+%%<REMARK>%%
+注:我们考虑形如 $a c+b d$ 的式子的几何意义: $a c+b d$ 可以看成平面直角坐标系中向量 $(a, b),(c, d)$ 的数量积, 而数量积的符号恰能反映两个向量的夹角是否大于 $90^{\circ}$. 有了这样的认识, 本题便能构造几何模型证明结论.
+在最后举例时, 也不必盲目尝试, 而只需使射线 $O A, O B, O C, O D$ 中有且仅有一对夹角不超过 $90^{\circ}$, 即可找到相应的 $a_1, a_2, \cdots, a_8$ 的值.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 从空间一点最多可以引出多少条射线, 使得其中每两条射线夹角均为钝角?
+%%<SOLUTION>%%
+解:先, 若由正四面体的中心向它的 4 个顶点各引一条射线, 这 4 条射线两两之间的夹角均为钝角, 满足条件.
+其次证明 5 条射线无法满足题目要求.
+假设从点 $O$ 引出的 5 条射线 $O A_1, O A_2, \cdots, O A_5$ 两两夹角均为钝角.
+我们用空间向量的坐标来表示射线方向, 不妨设 $\overrightarrow{O A_5}=(0,0,-1)$, 而
+$$
+\overrightarrow{O A_i}=\left(x_i, y_i, z_i\right)(i=1,2,3,4) .
+$$
+由 $\overrightarrow{O A_i} \cdot \overrightarrow{O A_5}=-z_i$ 可知 $z_i>0(i=1,2,3,4)$.
+记 $A_i$ 在 $x O y$ 平面内的射影为 $P_i$.
+根据抽屈原理, 在 $\overrightarrow{O P}_i=\left(x_i, y_i, 0\right)(i=1,2,3,4)$ 中必有两个向量夹角不大于 $90^{\circ}$, 不妨设它们是 $\overrightarrow{O P_1}$ 与 $\overrightarrow{O P_2}$, 则 $\overrightarrow{O P_1} \cdot \overrightarrow{O P_2}=x_1 x_2+y_1 y_2 \geqslant 0$, 再结合 $z_1, z_2>0$ 可知 $\overrightarrow{O A_1} \cdot \overrightarrow{O A_2}=x_1 x_2+y_1 y_2+z_1 z_2>0$, 即 $\overrightarrow{O A_1}$ 与 $\overrightarrow{O A_2}$ 夹角为锐角, 与条件矛盾!
+综上所述, 自空间一点最多只能引出 4 条射线, 使其中每两条射线夹角均为钝角.
+%%<REMARK>%%
+注:数量关系是对几何表象的一种内在支撑.
+本题中, 从直观上并不容易说清楚为何 "5 条射线无法满足两两之间夹角为钝角", 于是引人空间向量, 转而考虑代数问题.
+此后, 为了表明平面中四个投影向量 $\overrightarrow{O P}_i(i=1,2,3,4)$ 必有两个的数量积非负, 又回归几何关系, 用与前一题类似的方式进行处理.
+本题可谓先 "由形及数", 再"由数及形", 相互转化, 补充互助.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设 $a, b, c, d$ 为整数, $a>b>c>d>0$, 且
+$$
+a c+b d=(b+d+a-c)(b+d-a+c) .
+$$
+证明: $a b+c d$ 不是素数.
+%%<SOLUTION>%%
+证明: 由 $a c+b d=(b+d+a-c)(b+d-a+c)=(b+d)^2-(a-c)^2$ 可知 $a^2-a c+c^2=b^2+b d+d^2$. 因此可构造凸四边形 $A B C D$, 使得 $A B=a$, $A D=c, C B=d, C D=b$, 且 $\angle B A D=60^{\circ}, \angle B C D=120^{\circ}$, 此时 $A, B, C$, $D$ 四点共圆, 且
+$$
+B D^2=a^2-a c+c^2 . \label{eq1}
+$$
+设 $\angle A B C=\alpha$, 则 $\angle A D C=180^{\circ}-\alpha$. 对 $\triangle A B C$ 与 $\triangle A D C$ 分别用余弦定理可得
+$$
+A C^2=a^2+d^2-2 a d \cos \alpha=b^2+c^2-2 b c \cos \left(180^{\circ}-\alpha\right)=b^2+c^2+2 b c \cos \alpha .
+$$
+解出 $2 \cos \alpha=\frac{a^2+d^2-b^2-c^2}{a d+b c}$, 所以
+$$
+\begin{aligned}
+A C^2 & =a^2+d^2-a d \cdot \frac{a^2+d^2-b^2-c^2}{a d+b c} \\
+& =\frac{\left(a^2+d^2\right)(a d+b c)-a d\left(a^2+d^2-b^2-c^2\right)}{a d+b c} \\
+& =\frac{\left(a^2+d^2\right) b c+a d\left(b^2+c^2\right)}{a d+b c}=\frac{(a b+c d)(a c+b d)}{a d+b c} . \label{eq2}
+\end{aligned}
+$$
+圆内接四边形 $A B C D$ 中, 由托勒密定理得 $A C \cdot B D=a \cdot b+c \cdot d$, 平方得
+$$
+A C^2 \cdot B D^2=(a b+c d)^2 . \label{eq3}
+$$
+将 式\ref{eq1} 和 \ref{eq2} 代入 式\ref{eq3} , 整理得 $\left(a^2-a c+c^2\right)(a c+b d)=\left(a b^{\prime}+c d\right)(a d+b c)$, 所以
+$$
+a c+b d \mid(a b+c d)(a d+b c) . \label{eq4}
+$$
+因 $a>b>c>d$, 所以 $a b+c d>a c+b d>a d+b c$, 假如 $a b+c d$ 是素数, 则 $a c+b d$ 与 $a b+c d$ 互素, 结合 式\ref{eq4} 得 $a c+b d \mid a d+b c$, 这又与 $a c+b d> a d+b c$ 矛盾! 所以 $a b+c d$ 不是素数.
+%%<REMARK>%%
+注:以上证法中, 根据条件的特点巧妙地构造出圆内接四边形 $A B C D$, "以形助数"实施证明.
+进一步,解题过程中发现有下面的结论成立:
+若正数 $a, b, c, d$ 满足 $a^2-a c+c^2=b^2+b d+d^2=M$, 则
+$$
+\frac{(a b+c d)(a d+b c)}{a c+b d}=M
+$$
+这是个纯代数的结论, 能否重新给出一个代数的证明?
+其实不难发现, 只要 $a c+b d \neq 0$, 就有
+$$
+\begin{aligned}
+\frac{(a b+c d)(a d+b c)}{a c+b d} & =\frac{\left(a^2+c^2\right) b d+\left(b^2+d^2\right) a c}{a c+b d} \\
+& =\frac{\left(a^2-a c+c^2\right) b d+\left(b^2+b d+d^2\right) a c}{a c+b d} \\
+& =\frac{M b d+M a c}{a c+b d}=M .
+\end{aligned}
+$$
+用这样一段文字代替上述证明(4)式之前的部分, 则使证明显著简化.
+然而, 在证明原题时,若要凭空联想到这个结论, 诚然有一定困难.
+%%PROBLEM_END%%
+
+

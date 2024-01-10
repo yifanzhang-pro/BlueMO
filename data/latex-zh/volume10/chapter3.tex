@@ -1,0 +1,284 @@
+
+%%TEXT_BEGIN%%
+素数及唯一分解定理.
+大于 1 的整数 $n$ 总有两个不同的正约数: 1 和 $n$. 若 $n$ 仅有这两个正约数(称 $n$ 没有真因子), 则称 $n$ 为素数 (或质数). 若 $n$ 有真因子, 即 $n$ 可表示为 $a \cdot b$ 的形式 (这里 $a 、 b$ 为大于 1 的整数), 则称 $n$ 为合数.
+于是,正整数被分成三类: 数 1 单独作一类, 素数类及合数类.
+素数在正整数中特别重要, 我们常用字母 $p$ 表示素数.
+由定义易得出下面的基本结论:
+(1) 大于 1 的整数必有素约数.
+这是因为, 大于 1 的整数当然有大于 1 的正约数, 这些约数中的最小数必然没有真因子,从而是素数.
+(2) 设 $p$ 是素数, $n$ 是任意一个整数,则或者 $p$ 整除 $n$, 或者 $p$ 与 $n$ 互素.
+事实上, $p$ 与 $n$ 的最大公约数 $(p, n)$ 必整除 $p$, 故由素数的定义推知, 或者 $(p, n)=1$, 或者 $(p, n)=p$, 即或者 $p$ 与 $n$ 互素,或者 $p \mid n$.
+素数的最为锐利的性质是下面的
+(3) 设 $p$ 是素数, $a 、 b$ 为整数.
+若 $p \mid a b$, 则 $a 、 b$ 中至少有一个数被 $p$ 整除.
+实际上, 若 $p$ 不整除 $a$ 和 $b$, 则由上述的 (2), $p$ 与 $a 、 b$ 均互素, 从而 $p$ 与 $a b$ 互素 (见第 2 单元 (6)), 这与已知的 $p \mid a b$ 相违!
+由 (3)特别地推出, 若素数 $p$ 整除 $a^n(n \geqslant 1)$, 则 $p \mid a$.
+关于素数的最为经典的一个结果是公元前欧几里得证明的:
+(4) 素数有无穷多个.
+我们用反证法来证明这一事实.
+假设素数只有有限多个, 设全体素数为 $p_1, p_2, \cdots, p_k$. 考虑数 $N=p_1 p_2 \cdots p_k+1$, 显然 $N>1$, 故 $N$ 有素因子 $p$. 因 $p_1, p_2, \cdots, p_k$ 是全部素数, 故 $p$ 必等于某个 $p_i(1 \leqslant i \leqslant k)$, 从而 $p$ 整除 $N- p_1 p_2 \cdots p_k$, 即 $p$ 整除 1 , 这不可能.
+因此素数有无穷多个.
+(请注意, $p_1 \cdots p_k+1$ 并不一定是素数.)
+(4) 中的断言, 也可由第 2 单元例 3 推出来: 设 $F_k=2^{2^k}+1(k \geqslant 0)$, 则
+$F_k>1$, 故 $F_k$ 有素约数.
+因已证明无穷数列 $\left\{F_k\right\}(k \geqslant 0)$ 中的项两两互素, 故每个 $F_k$ 的素约数与这个数列中其他项的素约数不同, 因此素数必有无穷多个.
+现在我们转向初等数论中最为基本的一个结果, 即正整数的唯一分解定理,也称为算术基本定理,它表现了素数在正整数集合中的真正分量.
+(5) (唯一分解定理) 每个大于 1 的正整数均可分解为有限个素数的积; 并且, 若不计素因数在乘积中的次序, 这样的分解是唯一的.
+换句话说,设 $n>1$, 则 $n$ 必可表示为 $n=p_1 p_2 \cdots p_k$, 其中 $p_i(1 \leqslant i \leqslant k)$ 都是素数; 并且,若 $n$ 有两种素因数分解
+$$
+n=p_1 p_2 \cdots p_k=q_1 q_2 \cdots q_l,
+$$
+则必有 $k=l$, 并且 $p_1, p_2, \cdots, p_k$ 是 $q_1, q_2, \cdots, q_l$ 的一个排列.
+将 $n$ 的素因数分解中的相同的素因子收集在一起,可知每个大于 1 的正整数 $n$ 可唯一地表示为
+$$
+n=p_1^{\alpha_1} p_2^\alpha \cdots p_k^{\alpha_k},
+$$
+其中 $p_1, p_2, \cdots, p_k$ 是互不相同的素数, $\alpha_1, \alpha_2, \cdots, \alpha_k$ 是正整数,这称为 $n$ 的标准分解.
+若已知正整数 $n$ 的 (如上所述的)标准分解,则由唯一分解定理,可确定其全部的正约数:
+(6) $n$ 的全部正约数为 $p_1^{\beta_1} p_2^{\beta_2} \cdots p_k^{\beta_k}$, 其中 $\beta_i$ 是满足 $0 \leqslant \beta_i \leqslant \alpha_i(i=1, \cdots$, $k$ ) 的任意整数.
+由此易知, 若设 $\tau(n)$ 为 $n$ 的正约数的个数, $\sigma(n)$ 为 $n$ 的正约数之和, 则有
+$$
+\begin{aligned}
+& \tau(n)=\left(\alpha_1+1\right)\left(\alpha_2+1\right) \cdots\left(\alpha_k+1\right), \\
+& \sigma(n)=\frac{p_1^{\alpha_1+1}-1}{p_1-1} \cdot \frac{p^{\alpha_2+1}-1}{p_2-1} \cdots \cdots \cdot \frac{p^{\alpha_k+1}-1}{p_k-1} .
+\end{aligned}
+$$
+虽然素数有无穷多,但它们在自然数中的分布却极不规则 . 给定一个大整数, 判定它是否为素数, 通常是极其困难的, 要作出其标准分解, 则更为困难.
+下面 (7) 中的结果相当有趣, 它对任意 $n>1$, 给出了 $n$ ! 的标准分解.
+(7) 对任意正整数 $m$ 及素数 $p$, 记号 $p^\alpha \| m$ 表示 $p^\alpha \mid m$, 但 $p^{\alpha+1} \nmid m$, 即 $p^\alpha$ 是 $m$ 的标准分解中出现的 $p$ 的幕.
+设 $n>1, p$ 为素数, $p^{\alpha_p} \| n !$, 则
+$$
+\alpha_p=\sum_{l=1}^{\infty}\left[\frac{n}{p^l}\right]\left(==\left[\frac{n}{p}\right]+\left[\frac{n}{p^2}\right]+\cdots\right)
+$$
+这里 $[x]$ 表示不超过实数 $x$ 的最大整数.
+请注意, 由于当 $p^l>n$ 时, $\left[\frac{n}{p^l}\right]=0$, 故上面和式中只有有限多个项非零.
+证明某些特殊形式的数不是素数 (或给出其为素数的必要条件), 是初等数论中较为基本的问题, 在数学竞赛中尤为常见.
+处理这类问题的基本方法是应用 (各种)分解技术,指出所说数的一个真因子.
+我们举几个这样的例子.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 证明: 无穷数列 $10001,100010001, \cdots$ 中没有素数.
+%%<SOLUTION>%%
+证明:记 $a_n=\underbrace{10001 \cdots 10001}_{n \uparrow 1}(n \geqslant 2)$, 则
+$$
+a_n=1+10^4+10^8+\cdots+10^{4(n-1)}=\frac{10^{4 n}-1}{10^4-1} .
+$$
+为了将上式右端的数分解为两个 (大于 1 的)整数之积, 我们区分两种情形:
+$n$ 为偶数.
+设 $n=2 k$, 则
+$$
+a_{2 k}=\frac{10^{8 k}-1}{10^4-1}=\frac{10^{8 k}-1}{10^8-1} \cdot \frac{10^8-1}{10^4-1} .
+$$
+易知, $\frac{10^8-1}{10^4-1}$ 是大于 1 的整数, 而对 $k \geqslant 2, \frac{10^{8 k}-1}{10^8-1}$ 也是大于 1 的整数.
+故 $a_{2 k}(k=2,3, \cdots)$ 都是合数.
+又 $a_2=10001=13 \times 137$ 是合数.
+$n$ 为奇数.
+设 $n=2 k+1$, 则
+$$
+a_{2 k+1}=\frac{10^{4(2 k+1)}-1}{10^4-1}=\frac{10^{2(2 k+1)}-1}{10^2-1} \cdot \frac{10^{2(2 k+1)}+1}{10^2+1}
+$$
+是两个大于 1 的整数之积, 故 $a_{2 k+1}$ 也均是合数.
+因此, 所有 $a_n$ 是合数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 证明: 对任意整数 $n>1$, 数 $n^4+4^n$ 不是素数.
+%%<SOLUTION>%%
+证明:若 $n$ 为偶数, 则 $n^4+4^n$ 大于 2 且均被 2 整除, 因此都不是素数.
+但对奇数 $n$,易知 $n^4+4^n$ 没有一个(大于 1 的) 固定的约数,我们采用不同的处理:
+设奇数 $n=2 k+1, k \geqslant 1$, 则
+$$
+\begin{aligned}
+n^4+4^n & =n^4+4 \cdot 4^{2 k}=n^4+4 \cdot\left(2^k\right)^4 \\
+& =n^4+4 n^2 \cdot\left(2^k\right)^2+4 \cdot\left(2^k\right)^4-4 n^2 \cdot\left(2^k\right)^2 \\
+& =\left(n^2+2 \cdot 2^{2 k}\right)^2-\left(2 \cdot n \cdot 2^k\right)^2 \\
+& =\left(n^2+2^{k+1} n+2^{2 k+1}\right)\left(n^2-2^{k+1} n+2^{2 k+1}\right) .
+\end{aligned}
+$$
+上式右边第一个因数显然不为 1 , 而后一个因数为 $\left(n-2^k\right)^2+2^{2 k}$ 也不是 1 (因 $k \geqslant 1$ ), 故 $n^4+4^n$ 对 $n>1$ 都是合数.
+这一解法的关键, 是在 $n$ 为奇数时, 将 $4^n$ 看作单项式 $4 y^4$, 以利用代数式的分解
+$$
+x^4+4 y^4=\left(x^2+2 y^2+2 x y\right)\left(x^2+2 y^2-2 x y\right),
+$$
+产生数的适用的分解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设正整数 $a 、 b 、 c 、 d$ 满足 $a b=c d$, 证明: $a+b+c+d$ 不是素数.
+%%<SOLUTION>%%
+证明:一本题不宜用代数式的分解来产生所需的分解.
+我们的第一种解法是应用数的分解,指出 $a+b+c+d$ 的一个真因子.
+由 $a b=c d$, 可设 $\frac{a}{c}=\frac{d}{b}=\frac{m}{n}$, 其中 $m$ 和 $n$ 是互素的正整数.
+由 $\frac{a}{c}=\frac{m}{n}$ 意味着有理数 $\frac{a}{c}$ 的分子、分母约去了某个正整数 $u$ 后, 得到既约分数 $\frac{m}{n}$, 因此
+$$
+a=m u, c=n u . \label{eq1}
+$$
+同理,有正整数 $v$,使得
+$$
+b=n v, d=m v . \label{eq2}
+$$
+因此, $a+b+c+d=(m+n)(u+v)$ 是两个大于 1 的整数之积, 从而不是素数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设正整数 $a 、 b 、 c 、 d$ 满足 $a b=c d$, 证明: $a+b+c+d$ 不是素数.
+%%<SOLUTION>%%
+证明二由 $a b=c d$, 得 $b=\frac{c d}{a}$. 因此
+$$
+a+b+c+d=a+\frac{c d}{a}+c+d=\frac{(a+c)(a+d)}{a} .
+$$
+因 $a+b+c+d$ 是整数,故 $\frac{(a+c)(a+d)}{a}$ 也是整数.
+若它是一个素数,设为 $p$, 则由
+$$
+(a+c)(a+d)=a p \label{eq3}
+$$
+可见, $p$ 整除 $(a+c)(a+d)$, 从而素数 $p$ 整除 $a+c$ 或 $a+d$. 不妨设 $p \mid(a+c)$, 则 $a+c \geqslant p$, 结合 式\ref{eq3} 推出 $a+d \leqslant a$, 而这不可能(因 $d \geqslant 1$ ).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 证明: 若整数 $a 、 b$ 满足 $2 a^2+a=3 b^2+b$, 则 $a-b$ 和 $2 a+2 b+1$ 都是完全平方数.
+%%<SOLUTION>%%
+证明:已知关系式即为
+$$
+(a-b)(2 a+2 b+1)=b^2 . \label{eq1}
+$$
+论证的第一个要点是证明整数 $a-b$ 与 $2 a+2 b+1$ 互素.
+记 $d=(a-b$, $2 a+2 b+1)$. 若 $d>1$, 则 $d$ 有素因子 $p$, 从而由 式\ref{eq1} 知 $p \mid b^2$. 因 $p$ 是素数, 故 $p \mid b$. 结合 $p \mid(a-b)$ 知 $p \mid a$. 再由 $p \mid(2 a+2 b+1)$ 导出 $p \mid 1$, 这不可能, 故 $d=1$. 因此, 由于式\ref{eq1}的右端为 $b^2$, 是一个完全平方数, 故 $|a-b|$ 与 $\mid 2 a+2 b+ 1 \mid$ 均是完全平方数 (参见第 2 单元的 (8)).
+现在证明 $a-b \geqslant 0$, 从而由 式\ref{eq1} 知 $2 a+2 b+1 \geqslant 0$, 于是 $a-b$ 及 $2 a+2 b+$ 1 均是完全平方.
+假设有整数 $a, b$ 满足问题中的等式,但 $a-b<0$. 因已证明 $|a-b|$ 是一个完全平方数, 故有 $b-a=r^2$, 这里 $r>0$; 结合 式\ref{eq1}推出 $r \mid b$, 再由 $b-a=r^2$ 知 $r \mid a$. 设 $b=b_1 r, a=a_1 r$, 代入问题中的等式可得到(注意 $r>0$ 及 $b_1= a_1+r$)
+$$
+a_1^2+6 a_1 r+3 r^2+1=0 . \label{eq2}
+$$
+为了证明上式不可能成立,可采用下面的办法:
+将 式\ref{eq2} 看作是关于 $a_1$ 的二次方程, 由求根公式解得
+$$
+a_1=-3 r \pm \sqrt{6 r^2-1} .
+$$
+因 $a_1$ 为整数,故由上式知 $6 r^2-1$ 为完全平方数.
+但易知一个完全平方数被 3 除得的余数只能为 0 或 1 ; 而 $6 r^2-1$ 被 3 除得的余数为 2 , 产生矛盾.
+或者更直接地: 由于 $a_1^2$ 被 3 除得的余数为 0 或 1 , 故 式\ref{eq2} 左边被 3 除得的余数是 1 或 2 ; 但 式\ref{eq2}的右边为 0 ,被 3 整除.
+矛盾.
+即 式\ref{eq2}对任何整数 $a_1$ 及 $r$ 均不成立, 从而必须有 $a-b \geqslant 0$, 这就证明了本题的结论.
+%%<REMARK>%%
+注1 许多数论问题需证明一个正整数为 1 (例如, 证明整数的最大公约数是 1), 本单元的 (1) 给出了整数是否为 1 的一个数论刻画.
+由此, 我们常假设所说的数有一个素因子, 利用素数的锐利性质 (3) 作进一步论证, 以导出矛盾.
+注2 上述证明(2)不成立的论证, 实质上应用了同余(比较余数) 的想法, 这是证明两个整数不等的一种基本的手法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $n 、 a 、 b$ 是整数, $n>0$ 且 $a \neq b$. 证明: 若 $n \mid\left(a^n-b^n\right)$, 则 $n \mid \frac{a^n-b^n}{a-b}$.
+%%<SOLUTION>%%
+证明:设 $p$ 是一个素数, 且 $p^\alpha \| n$. 我们来证明 $p^\alpha \mid \frac{a^n-b^n}{a-b}$, 由此即导出本题的结论(参见下面的注).
+记 $t=a-b$, 若 $p \nmid t$, 则 $\left(p^\alpha, t\right)=1$. 因 $n \mid\left(a^n-b^n\right)$, 故 $p^\alpha \mid\left(a^n-b^n\right)$. 又 $a^n-b^n=t \cdot \frac{a^n-b^n}{t}$, 于是 $p^\alpha \mid \frac{a^n-b^n}{t}$.
+若 $p \mid t$, 用二项式定理, 得
+$$
+\frac{a^n-b^n}{t}=\frac{(b+t)^n-b^n}{t}=\sum_{i=1}^n \mathrm{C}_n^i b^{n-i} t^{i-1} . \label{eq1}
+$$
+设 $p^\beta \| i(i \geqslant 1)$, 则 $2 \beta \leqslant p^\beta \leqslant i$, 由此易知 $\beta \leqslant i-1$. 因此 $\mathrm{C}_n^i t^{i-1}=\frac{n}{i} \mathrm{C}_{n-1}^{i-1} t^{i-1}$ 中所含的 $p$ 的幕次至少是 $\alpha-\beta+(i-1) \geqslant \alpha$, 故 式\ref{eq1} 右边和中每一项均被 $p^\alpha$ 整除, 故 $p^\alpha \mid \frac{a^n-b^n}{t}$, 即 $p^\alpha \mid \frac{a^n-b^n}{a-b}$.
+%%<REMARK>%%
+注:为了证明 $b \mid a$, 可将 $b$ 作标准分解 $b=p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}$, 进而将问题分解为证明 $p_i^{\alpha_i} \mid a(i=1,2, \cdots, k)$ , 这样做的益处在于能够应用素数的锐利性质, 例 5 的论证清楚地表现了这一点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $m 、 n$ 是非负整数,证明: $\frac{(2 m) !(2 n) !}{m ! n !(m+n) !}$ 是一个整数.
+%%<SOLUTION>%%
+证明:我们只需证明, 对每个素数 $p$, 分母 $m ! n !(m+n) !$ 的标准分解中 $p$ 的幕次, 不超过分子 $(2 m) !(2 n)$ ! 中 $p$ 的幕次.
+由 (7) 中的公式可知, 这等价于证明
+$$
+\sum_{l=1}^{\infty}\left(\left[\frac{2 m}{p^l}\right]+\left[\frac{2 n}{p^l}\right]\right) \geqslant \sum_{l=1}^{\infty}\left(\left[\frac{m}{p^l}\right]+\left[\frac{n}{p^l}\right]+\left[\frac{m+n}{p^l}\right]\right) . \label{eq1}
+$$
+事实上,我们能够证明下述更强的结果:
+对任意实数 $x 、 y$, 有
+$$
+[2 x]+[2 y] \geqslant[x]+[y]+[x+y] . \label{eq2}
+$$
+为了证明式\ref{eq2}, 我们注意, 对任意整数 $k$ 及任意实数 $\alpha$, 有 $[k+\alpha]=[\alpha]+k$. 由此易知, 若 $x$ 或 $y$ 改变一个整数量, 则不等式\ref{eq2}两边改变一个相同的量.
+因此只要对 $0 \leqslant x<1,0 \leqslant y<1$ 的情形证明式\ref{eq2}, 于是问题化为证明不等式
+$$
+[2 x]+[2 y] \geqslant[x+y] \text {. }
+$$
+注意现在 $0 \leqslant[x+y] \leqslant 1$. 若 $[x+y]=0$, 则结论显然成立.
+若 $[x+y]=$ 1 , 则 $x+y \geqslant 1$, 从而 $x 、 y$ 中至少有一个大于或等于 $\frac{1}{2}$, 不妨设 $x \geqslant \frac{1}{2}$, 因此
+$[2 x]+[2 y] \geqslant[2 x]=1$, 这就证明了式\ref{eq2}, 从而更有式\ref{eq1}成立, 这就证明了本题的结论.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $m 、 n$ 是互素的正整数, 证明: $m ! n ! \mid(m+n-1) !$.
+%%<SOLUTION>%%
+证法一, 我们证明, 对每个素数 $p$, 有
+$$
+\sum_{l=1}^{\infty}\left[\frac{m+n-1}{p^l}\right] \geqslant \sum_{l=1}^{\infty}\left(\left[\frac{m}{p^l}\right]+\left[\frac{n}{p^l}\right]\right) . \label{eq1}
+$$
+为此,我们(与上例相同地)希望证明"单项不等式":
+$$
+\left[\frac{m+n-1}{p^l}\right] \geqslant\left[\frac{m}{p^l}\right]+\left[\frac{n}{p^l}\right]. \label{eq2}
+$$
+对任意素数 $p$ 及任意正整数 $l$ 成立, 从而式\ref{eq1}得证.
+然而, 现在的情形下, 我们不能指望建立像例 6 中式\ref{eq2}那样的对所有实数成立的结果来导出式\ref{eq2}, 我们需要利用所说整数的特别性质:
+由带余除法, $m=p^l q_1+r_1, n=p^l q_2+r_2$, 这里 $0 \leqslant r_1 、 r_2<q^l$, 而 $q_1$ 、 $q_2$ 均为非负整数,则有 (参见第 1 单元的 (4))
+$$
+\left[\frac{m}{p^l}\right]=q_1 \text { 及 }\left[\frac{n}{p^l}\right]=q_2 .
+$$
+但 $(m, n)=1$, 故 $r_1$ 与 $r_2$ 不能同时为零, 从而 $r_1+r_2 \geqslant 1$, 故
+$$
+\left[\frac{m+n-1}{p^l}\right]=q_1+q_2+\left[\frac{r_1+r_2-1}{p^l}\right] \geqslant q_1+q_2 .
+$$
+这就证明了式\ref{eq2}. 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $m 、 n$ 是互素的正整数, 证明: $m ! n ! \mid(m+n-1) !$.
+%%<SOLUTION>%%
+证法二首先, 与例 6 类似地不难证明, 对任意正整数 $a 、 b$, 数 $\frac{(a+b) !}{a ! b !}$ 是一个整数.
+(这也可以利用 $\frac{(a+b) !}{a ! b !}=\mathrm{C}_{a+b}^a$, 而由后者的组合意义知, 它必定为一个整数,下面的注中给出了一个更为直接的证明)
+由上述结果可知, $\frac{(m+n-1) !}{m !(n-1) !} \frac{(m+n-1) !}{(m-1) ! n !}$ 均是整数.
+因此, 若设 $A= \frac{(m+n-1) !}{m ! n !}$, 则 $m A$ 与 $n A$ 均是整数, 故 $m n A=m \cdot n A$ 是 $m$ 的倍数.
+又 $m n A=n \cdot m A$, 而由 $m \mid n \cdot m A$ 及 $(m, n)=1$, 可知 $m \mid m A$, 而这表明, $A$ 本身是一个整数.
+证毕.
+%%<REMARK>%%
+注:这儿给出 $\frac{(a+b) !}{a ! b !}$ 为整数的一个证明:
+我们对 $a+b$ 归纳.
+易知 $a+b=2$ 时结论成立.
+设对所有满足 $a+b=n$ 的正整数 $a 、 b$ 结论均.
+成立.
+现在设 $a 、 b$ 满足 $a+b=n+1$. 若 $a 、 b$ 中有 1 , 则结论显然成立, 故设 $a>1, b>1$. 由 $(a-1)+b=n, a+(b-1)=n$, 及归纳假设可见
+$$
+(a-1) ! b !|(a+b-1) !, a !(b-1) !|(a+b-1) !, \label{eq3}
+$$
+我们又有
+$$
+(a+b) !=(a+b-1) ! \cdot(a+b)=(a+b-1) ! \cdot a+(a+b-1) ! \cdot b . \label{eq4}
+$$
+由式\ref{eq3}易知 $a ! b !=a \cdot(a-1) ! b !$ 整除 $(a+b-1) ! \cdot a$. 同样 $a ! b$ ! 整除 $(a+b- 1) ! \cdot b$, 故 $a ! b !$ 整除式\ref{eq4}的右端, 从而 $a ! b ! \mid(a+b)$ !, 即 $a+b=n+1$ 时结论也成立, 这就完成了归纳证明.
+%%PROBLEM_END%%
+
+

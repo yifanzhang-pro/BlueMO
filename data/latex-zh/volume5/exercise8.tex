@@ -1,0 +1,349 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $x \geqslant 0, y \geqslant 0, z \geqslant 0, x+y+z=1$, 求 $S=2 x^2+y+3 z^2$ 的最大值和最小值.
+%%<SOLUTION>%%
+固定 $z$ 的值, 先求 $2 x^2+y$ 的最大、最小值, 然后让 $z$ 变动, 求出整体最大值 $S_{\max }=3$, 最小值 $S_{\min }=\frac{57}{72}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 求证:在 $\triangle A B C$ 中, 对 $0 \leqslant \lambda_i \leqslant 2(i=1,2,3)$, 有
+$$
+\sin \lambda_1 A+\sin \lambda_2 B+\sin \lambda_3 C \leqslant 3 \sin \frac{\lambda_1 A+\lambda_2 B+\lambda_3 C}{3} .
+$$
+%%<SOLUTION>%%
+不妨设 $C$ 为锐角, 由 $0 \leqslant \lambda_i \leqslant 2$, 得 $0<\frac{1}{2}\left(\lambda_1 A+\lambda_2 B\right)<\pi, 0< \frac{1}{6}\left(\lambda_1 A+\lambda_2 B+4 \lambda_3 C\right)<\pi, 0<\frac{1}{3}\left(\lambda_1 A+\lambda_2 B+\lambda_3 C\right)<\pi$, 故 $\sin \frac{1}{2}\left(\lambda_1 A+\right. \left.\lambda_2 B\right)>0, \sin \frac{1}{6}\left(\lambda_1 A+\lambda_2 B+4 \lambda_3 C\right)>0, \sin \frac{1}{3}\left(\lambda_1 A+\lambda_2 B+\lambda_3 C\right)>0$.
+于是 $\quad \sin \lambda_1 A+\sin \lambda_2 B+\sin \lambda_3 C+\sin \frac{\lambda_1 A+\lambda_2 B+\lambda_3 C}{3}$
+$$
+\begin{aligned}
+= & 2 \sin \frac{\lambda_1 A+\lambda_2 B}{2} \cdot \cos \frac{\lambda_1 A-\lambda_2 B}{2} \\
+& +2 \sin \frac{\lambda_1 A+\lambda_2 B+4 \lambda_3 C}{6} \cdot \cos \frac{2 \lambda_3 C-\lambda_1 A-\lambda_2 B}{6} \\
+\leqslant & 2 \sin \frac{\lambda_1 A+\lambda_2 B}{2}+2 \sin \frac{\lambda_1 A+\lambda_2 B+4 \lambda_3 C}{6} \\
+= & 4 \sin \frac{4 \lambda_1 A+4 \lambda_2 B+4 \lambda_3 C}{12} \cos \frac{2 \lambda_1 A+2 \lambda_2 B-4 \lambda_3 C}{12} \\
+\leqslant & 4 \sin \frac{\lambda_1 A+\lambda_2 B+\lambda_3 C}{3},
+\end{aligned}
+$$
+等号成立当且仅当 $\lambda_1 A=\lambda_2 B==\lambda_3 C$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 已知 $\theta_1, \theta_2, \cdots, \theta_n$ 都非负, 且 $\theta_1+\theta_2+\cdots+\theta_n=\pi$. 求
+$$
+\sin ^2 \theta_1+\sin ^2 \theta_2+\cdots+\sin ^2 \theta_n
+$$
+的最大值.
+%%<SOLUTION>%%
+先考虑当 $\theta_1+\theta_2$ 不变时, 有 $\sin ^2 \theta_1+\sin ^2 \theta_2=\left(\sin \theta_1+\sin \theta_2\right)^2- 2 \sin \theta_1 \sin \theta_2=4 \sin ^2 \frac{\theta_1+\theta_2}{2} \cos ^2 \frac{\theta_1-\theta_2}{2}-\cos \left(\theta_1-\theta_2\right)+\cos \left(\theta_1+\theta_2\right)= 2 \cos ^2 \frac{\theta_1-\theta_2}{2}\left(2 \sin ^2 \frac{\theta_1+\theta_2}{2}-1\right)+1+\cos \left(\theta_1+\theta_2\right)$, 因此, 当 $\theta_1+\theta_2<\frac{\pi}{2}, \theta_1$ 与 $\theta_2$ 中有一个角为 0 时, 上式取最大值, 当 $\theta_1+\theta_2>\frac{\pi}{2}$ 时, 两角差的绝对值越小, 上式的值就越大.
+当 $n \geqslant 4$ 时, 总有两角之和 $\leqslant \frac{\pi}{2}$, 可以将这两个角调整成一个为 0 , 另一个为原来两角之和而使正弦平方和不减, 这样一来, 所求 $n$ 个正弦平方和化为三个角的情形.
+当 $n=3$ 时, 若 $\theta_1 、 \theta_2 、 \theta_3$ 中有两个角为 $\frac{\pi}{2}$,一个角为 0 , 可以将三者改为 $\frac{\pi}{2} 、 \frac{\pi}{4} 、 \frac{\pi}{4}$. 设 $\theta_1 \leqslant \theta_2 \leqslant \theta_3, \theta_1<\theta_3$. 则 $\theta_1+\theta_3>\frac{\pi}{2}, \theta_1<\frac{\pi}{3}<\theta_3$.
+令 $\theta_1^{\prime}=\frac{\pi}{3}, \theta_2^{\prime}=\theta_2, \theta_3^{\prime}=\theta_1+\theta_3-\theta_1^{\prime}$, 则 $\theta_1^{\prime}+\theta_3^{\prime}=\theta_1+\theta_3,\left|\theta_1^{\prime}-\theta_3^{\prime}\right|< \left|\theta_1-\theta_3\right|$, 由前面讨论知 $\sin ^2 \theta_1+\sin ^2 \theta_2+\sin ^2 \theta_3<\sin ^2 \theta_1^{\prime}+\sin ^2 \theta_2^{\prime}+\sin ^2 \theta_3^{\prime}$. 因为 $\theta_2^{\prime}+\theta_3^{\prime}=\frac{2 \pi}{3}$, 又可得 $\sin ^2 \theta_2^{\prime}+\sin ^2 \theta_3^{\prime} \leqslant 2 \sin ^2 \frac{\pi}{3}=\frac{3}{2}$, 故 $\sin ^2 \theta_1+\sin ^2 \theta_2+ \sin ^2 \theta_3 \leqslant \frac{9}{4}$, 等号成立当且仅当 $\theta_1=\theta_2=\theta_3=\frac{\pi}{3}$ 时, 因此当 $n \geqslant 3$ 时所求最大值为 $\frac{9}{4}$.
+当 $n=2$ 时, $\theta_1+\theta_2=\pi$, 故 $\sin ^2 \theta_1+\sin ^2 \theta_2=2 \sin ^2 \theta_1 \leqslant 2$. 即最大值为 2 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $a, b, c, d \geqslant 0$, 且 $a+b+c+d==4$. 求证:
+$$
+b c d+c d a+d a b+a b c-a b c d \leqslant \frac{1}{2}(a b+a c+a d+b c+b d+c d) .
+$$
+%%<SOLUTION>%%
+当 $a 、 b 、 c 、 d$ 中有 1 个为 0 时, 不妨设 $d=0$, 则只须证明: $a b c \leqslant \frac{1}{2}(a b+b c+c a)$. 由于 $\frac{1}{a}+\frac{1}{b}+\frac{1}{c}+a+b+c \geqslant 6$, 有 $\frac{1}{a}+\frac{1}{b}+\frac{1}{c} \geqslant 2$, 故上式成立.
+若 $a 、 b 、 c 、 d$ 均不为 0 , 则只须证: $f=\sum \frac{1}{a}-\frac{1}{2} \sum \frac{1}{a b} \leqslant 1$.
+不妨设 $a \leqslant 1 \leqslant b$, 则令 $a^{\prime}=1, b^{\prime}=a+b-1$, 有 $a^{\prime} b^{\prime} \geqslant a b$, 于是
+$$
+\begin{aligned}
+& f(a, b, c, d)-f\left(a^{\prime}, b^{\prime}, c^{\prime}, d^{\prime}\right) \\
+= & (a+b)\left(\frac{1}{a b}-\frac{1}{a^{\prime} b^{\prime}}\right)\left[1-\frac{1}{2}\left(\frac{1}{a+b}+\frac{1}{c}+\frac{1}{d}\right)\right] \\
+\leqslant & (a+b) \frac{a^{\prime} b^{\prime}-a b}{a^{\prime} b^{\prime} a b}\left(1-\frac{1}{2} \cdot \frac{32}{4}\right) \leqslant 0 .
+\end{aligned}
+$$
+故 $f(a, b, c, d) \leqslant f\left(a^{\prime}, b^{\prime}, c^{\prime}, d^{\prime}\right)==f(1, a+b-1, c, d)$.
+再经过上述两次磨光变换, 得
+$$
+\begin{aligned}
+f(1, a+b-1, c, d) & \leqslant f(1,1, a+b+c-2, d) \\
+& \leqslant f(1,1,1, a+b+c+d-3) \\
+& =f(1,1,1,1)=1 .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 已知 $x_i$ 是非负实数, $i=1,2,3,4 . x_1+x_2+x_3+x_4=1$. 记 $S=1-\sum_{i=1}^4 x_i^3-6 \sum_{1 \leqslant i<j<k \leqslant 4} x_i x_j x_k$, 求 $S$ 的取值范围.
+%%<SOLUTION>%%
+$S=\left(x_1+x_2+x_3+x_4\right)^2-\sum_{i=1}^4 x_i^3-6 \sum_{1 \leqslant i<j<k \leqslant 4} x_i x_j x_k=3 x_1^2 \left(1-x_1\right)+3 x_2^2\left(1-x_2\right)+3 x_3^2\left(1-x_3\right)+3 x_4^2\left(1-x_4\right)$.
+故 $S \geqslant 0$, 等号当 $x_i(1 \leqslant i \leqslant 4)$ 中有 1 个为 1 , 另 3 个为 0 时取到.
+$$
+\text { 又 } \frac{1}{3} S=x_1^2\left(1-x_1\right)+x_2^2\left(1-x_2\right)+x_3^2\left(1-x_3\right)+x_4^2\left(1-x_4\right) \text {. }
+$$
+在 $x_1+x_2$ 与 $x_3+x_4$ 中必有一项 $\leqslant \frac{2}{3}$, 不妨设 $x_1+x_2 \leqslant \frac{2}{3}$.
+将 $S=S\left(x_1, x_2, x_3, x_4\right)$ 调整为 $S^{\prime}=S\left(x_1+x_2, 0, x_3, x_4\right)$.
+不难证明: $S^{\prime} \geqslant S$, 记 $S^{\prime}=S\left(x_1^{\prime}, x_2^{\prime}, x_3^{\prime}, 0\right)$. 则 $x_1^{\prime}+x_2^{\prime}+x_3^{\prime}=1$. 故 $x_1^{\prime}$, $x_2^{\prime}, x_3^{\prime}$ 中必有一个 $\geqslant \frac{1}{3}$, 不妨设 $x_3^{\prime} \geqslant \frac{1}{3}$, 于是 $x_1^{\prime}+x_2^{\prime} \leqslant \frac{2}{3}$.
+将 $S^{\prime}=S\left(x_1^{\prime}, x_2^{\prime}, x_3^{\prime}, 0\right)$ 调整为 $S^{\prime \prime}=S\left(x_1^{\prime}+x_2^{\prime}, x_3^{\prime}, 0,0\right)$. 同样易证 $S^{\prime \prime} \geqslant S^{\prime}$, 其中 $S^{\prime \prime}=S(a, b, 0,0)$, 且 $a+b=1$.
+故 $S^{\prime \prime}=a^2(1-a)+b^2(1-b)=a b \leqslant \frac{1}{4}$, 因此 $S \leqslant 3 S^{\prime \prime} \leqslant \frac{3}{4}$, 等号成立, 当 $x_1=\frac{1}{2}, x_2=x_3=0, x_4=\frac{1}{2}$. 故 $S \in\left[0, \frac{3}{4}\right]$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $x_1, x_2, \cdots, x_n$ 是 $n$ 个非负实数 $\left(n>2, n \in \mathbf{N}^*\right)$, 且
+$$
+\sum_{i=1}^n x_i=n, \sum_{i=1}^n i x_i=2 n-2 .
+$$
+求 $x_1+4 x_2+\cdots+n^2 x_n$ 的最大值.
+%%<SOLUTION>%%
+令 $y_i=\sum_{j=i}^n x_j$, 则 $y_1=n, \sum_{i=1}^n y_i=2 n-2$, 故 $S=\sum_{k=1}^n k^2 x_k=\sum_{k=1}^n k^2 \left(y_k-y_{k+1}\right)+n^2 y_n=\sum_{k=1}^n(2 k-1) y_k$.
+由于 $y_1=n, y_2 \geqslant y_3 \geqslant \cdots \geqslant y_n$, 若存在 $i \in\{2,3, \cdots, n-1\}$, 使得 $y_i>y_n$ (记 $i$ 为使 $y_i>y_n$ 成立的最大下标). 因为
+$$
+\begin{aligned}
+& (2 i-1) y_i+(2 i+1+\cdots+2 n-1) y_n \\
+< & (2 i-1+\cdots+2 n-1) \cdot \frac{y_i+(n-i) y_n}{n-i+1}\left(\text { 上式等价于 } y_i>y_n\right) .
+\end{aligned}
+$$
+故在保持 $y_i+y_{i+1}+\cdots+y_n$ 不变的前提下, 用它们的平均值来代替它们, $S$ 将增大.
+所以, 当 $y_2=y_3=\cdots=y_n$ 时, $S_{\text {max }}=n^2-2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 对于满足条件 $x_1+x_2+\cdots+x_n=1$ 的非负实数 $x_i(i=1,2, \cdots, n)$, 求 $\sum_{j=1}^n\left(x_j^4-x_j^5\right)$ 的最大值.
+%%<SOLUTION>%%
+当 $n=1$ 时, $\sum_{j=1}^n\left(x_j^4-x_j^5\right)=0$.
+当 $n=2$ 时, $\sum_{j=1}^n\left(x_j^4-x_j^5\right)=\left(x_1^4+x_2^4\right)-\left(x_1+x_2\right)\left(x_1^4-x_1^3 x_2+x_1^2 x_2^2-\right. \left.x_1 x_2^3+x_2^4\right)=x_1^3 x_2-x_1^2 x_2^2+x_1 x_2^3=x_1 x_2\left(1-3 x_1 x_2\right)$.
+又由于 $x_1 x_2 \leqslant \frac{1}{4}$, 故可知所求最大值为 $\frac{1}{12}$.
+当 $n \geqslant 3$ 时, 则
+$$
+\begin{aligned}
+& -\left(x^4+y^4-x^5-y^5\right)+\left[(x+y)^4-(x+y)^5\right] \\
+= & {\left[(x+y)^4-x^4-y^4\right]-\left[(x+y)^5-x^5-y^5\right] }
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& =x y\left(4 x^2+4 y^2+6 x y\right)-x y\left(5 x^3+5 y^3+10 x y^2+10 x^2 y\right) \\
+& \geqslant x y\left(4 x^2+4 y^2+6 x y\right)-5 x y(x+y)^3 \\
+& =x y\left(\frac{7}{2} x^2+\frac{7}{2} y^2+\frac{x^2+y^2}{2}+6 x y\right)-5 x y(x+y)^3 \\
+& \geqslant x y\left(\frac{7}{2} x^2+\frac{7}{2} y^2+7 x y\right)-5 x y(x+y)^3>0
+\end{aligned}
+$$
+等价于 $\frac{7}{2} x y(x+y)^2 \cdot[7-10(x+y)]>0$, 即 $x+y<\frac{7}{10}$.
+而当 $n \geqslant 3$ 时, 总有 2 个数之和 $<\frac{2}{3}<\frac{7}{10}$, 不断用 $x+y$ 替换 $x 、 y$, 最终必可化为 $n=2$ 时的情形.
+综上, $\sum_{j=1}^n\left(x_j^4-x_j^5\right)$ 的最大值为 $\frac{1}{12}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设 $a_1, a_2, a_3 \geqslant 0$, 求证:
+$$
+a_1+a_2+a_3+3 \sqrt[3]{a_1 a_2 a_3} \geqslant 2\left(\sqrt{a_1 a_2}+\sqrt{a_2 a_3}+\sqrt{a_3 a_1}\right) .
+$$
+%%<SOLUTION>%%
+记 $f\left(a_1, a_2, a_3\right)=\left(a_1+a_2+a_3+3 \sqrt[3]{a_1 a_2 a_3}\right)-2\left(\sqrt{a_1 a_2}+\sqrt{a_2 a_3}+\right. \left.\sqrt{a_3 a_1}\right)$, 不失一般性, 可设 $a_1 \leqslant a_2 \leqslant a_3$, 现在作如下调整: 令
+$$
+a_1^{\prime}=a_1, a_2^{\prime}=a_3^{\prime}=\sqrt{a_2 a_3}=A,
+$$
+则 $f\left(a_1^{\prime}, a_2^{\prime}, a_3^{\prime}\right)=\left(a_1+2 A+3 a_1^{\frac{1}{3}} A^{\frac{2}{3}}\right)-2\left[A+2\left(a_1 A\right)^{\frac{1}{2}}\right]=a_1+ 3 a_1^{\frac{1}{3}} A^{\frac{2}{3}}-4\left(a_1 A\right)^{\frac{1}{2}} \geqslant 4 \sqrt[4]{a_1\left(a_1^{\frac{1}{3}}\right)^3\left(A^{\frac{2}{3}}\right)^3}-4\left(a_1 A\right)^{\frac{1}{2}}=0$.
+下面证明: $f\left(a_1, a_2, a_3\right) \geqslant f\left(a_1^{\prime}, a_2^{\prime}, a_3^{\prime}\right)$.
+事实上, $f\left(a_1, a_2, a_3\right)-f\left(a_1^{\prime}, a_2^{\prime}, a_3^{\prime}\right)=a_2+a_3+4 \sqrt{a_1 A}-2\left(\sqrt{a_1 a_2}+\right. \left.\sqrt{a_2 a_3}+\sqrt{a_3 a_1}\right)=a_2+a_3-2 a_1^{\frac{1}{2}}\left(a_2^{\frac{1}{2}}+a_3^{\frac{1}{2}}-2 A^{\frac{1}{2}}\right)-2 A$.
+注意到 $a_1 \leqslant A, a_2^{\frac{1}{2}}+a_3^{\frac{1}{2}} \geqslant 2 \sqrt[4]{a_2 a_3}=2 A^{\frac{1}{2}}$.
+故 $f\left(a_1, a_2, a_3\right)-f\left(a_1^{\prime}, a_2^{\prime}, a_3^{\prime}\right) \geqslant a_2+a_3-2 \sqrt{A}\left(\sqrt{a_2}+\sqrt{a_3}-2 \sqrt{A}\right)- 2 A=\left(\sqrt{a_2}-\sqrt{A}\right)^2+\left(\sqrt{a_3}-\sqrt{A}\right)^2 \geqslant 0$, 故原不等式成立.
+%%<REMARK>%%
+注::利用完全一样的方法, 不难证明如下的 Kouber 不等式:
+若 $a_i \geqslant 0, n \geqslant 2$, 序列 $a=\left(a_1, a_2, \cdots, a_n\right)$ 中的数互不相等, 则
+$$
+(n-2) \sum_{i=1}^n a_i+n\left(a_1 a_2 \cdots a_n\right)^{\frac{1}{n}}-2 \sum_{1 \leqslant i<j \leqslant n}\left(a_i a_j\right)^{\frac{1}{2}} \geqslant 0 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 设 $a_1, a_2, \cdots, a_{10}$ 是 10 个两两不同的正整数,和为 2002 , 试求 $a_1 a_2+ a_2 a_3+\cdots+a_{10} a_1$ 的最小值.
+%%<SOLUTION>%%
+此题解答分两步进行:
+(1) 先考虑当 $a_1, a_2, \cdots, a_{10}$ 确定后, 应该如何排列使相应和式最小.
+先观察简单情形,即 $a_1+a_2+\cdots+a_{10}=55,\left\{a_1, a_2, \cdots, a_{10}\right\}=\{1,2, \cdots, 10\}$ 的情况,将 $a_1, a_2, \cdots, a_{10}$ 依次排在圆周上,我们证明: 10 的两边必为 1 和 2 .
+若 1 与 10 不相邻, 则将 $a_i, a_{i+1}, \cdots, 1$ 这一段整体翻转,记 $S=a_1 a_2+ a_2 a_3+\cdots+a_{10} a_1, S^{\prime}$ 为翻转后相应的和式.
+那么,
+$$
+S^{\prime}-S=10 \cdot 1+a_i \cdot a_j-\left(10 \cdot a_i+a_j \cdot 1\right) \leqslant 0,
+$$
+故调整后和式不增, 同理可证 10 的另一边必为 2 .
+用完全相同的方法, 可证 1 的另一边必为 9 .
+依次类推,使 $S$ 最小的排法只能为 $10,1,9,3,7,5,6,4,8$, 2(圆周排列), 此时 $S_{\text {min }}=224$.
+(2)下面考虑 $a_1+a_2+\cdots+a_{10}=2002$ 的情况.
+设当 $a_1+a_2+\cdots+a_{10}=n$ 时, $\min S(n)=g(n)$, 则 $g(55)=224$.
+下面证明: $g(n+1) \geqslant g(n)+3$.
+对 $a_1+a_2+\cdots+a_{10}=n+1$ 的任意一个排列 $a_1, a_2, \cdots, a_{10}$ (圆周上).
+若 $a_1, a_2, \cdots, a_{10}$ 是连着的 10 个正整数, 设 $a_1>1$ (若 $a_1=1$, 则 $n= 55)$, 则 $a_1-1$ 不在原来 10 个数中,将 $a_1$ 换成 $a_1-1$, 和至少减少了 $a_1(1+2)- \left(a_1-1\right)(1+2)=3$.
+而若 $a_1, a_2, \cdots, a_{10}$ 不是相连的正整数,则必有 1 个 $a_i$, 使得 $a_i-1$ 不在原来的 10 个数中,将 $a_i$ 换成 $a_i-1$, 和也至少减少了 3. 因此, 对 $a_1+a_2+\cdots+ a_{10}=n+1$ 的每一种排法 $S(n+1)$, 可找到 $a_1, a_2, \cdots, a_i-1, \cdots, a_{10}$ 的一个排法, 使 $S(n+1) \geqslant S(n)+3 \geqslant g(n)+3$, 故 $\min S(n+1) \geqslant g(n)+3$, 即 $g(n+1) \geqslant g(n)+3$, 因而 $g(2002) \geqslant 6065$, 并且等号可以取到: $a_1=1, a_2=9$, $a_3=3, a_4=7, a_5=5, a_6=6, a_7=4, a_8=8, a_9=2, a_{10}=1957$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 非负实数 $a 、 b 、 c$ 满足: $a b+b c+c a=1$, 求 $\frac{1}{a+b}+\frac{1}{b+c}+\frac{1}{c+a}$ 的最小值.
+%%<SOLUTION>%%
+记 $f(a, b, c)=\frac{1}{a+b}+\frac{1}{b+c}+\frac{1}{c+a}$, 不妨设 $a \leqslant b \leqslant c$, 我们先证明: $f\left(0, a+b, c^{\prime}\right) \leqslant f(a, b, c)$. 这里 $c^{\prime}=\frac{1}{a+b}, a b+b c+c a=1$. 事实上, $f\left(0, a+b, c^{\prime}\right) \leqslant f(a, b, c)$ 等价于
+$$
+\frac{1}{a+b}+\frac{1}{a+b+c^{\prime}}+\frac{1}{c^{\prime}} \leqslant \frac{1}{a+b}+\frac{1}{b+c}+\frac{1}{c+a} .
+$$
+由于 $c^{\prime}=\frac{1}{a+b}, \frac{1-a b}{a+b}=c$, 不难化简得上式等价于
+$$
+(a+b)^2 a b \leqslant 2(1-a b) .
+$$
+注意到 $2(1-a b)=2 c(a+b) \geqslant \frac{2(a+b)^2}{2} \geqslant(a+b)^2 a b$, 故结论成立.
+因此, $f(a, b, c) \geqslant \frac{1}{a+b}+\frac{1}{a+b+\frac{1}{a+b}}+a+b$.
+不难验证在 $a=0, b=c=1$ 时, $f$ 取得最小值 $\frac{5}{2}$.
+%%<REMARK>%%
+注:: 也可用累次求极值法来解:
+显然, 当 $a, b, c$ 均大于 $\frac{\sqrt{3}}{3}$ 时, 有 $a b+b c+c a>1$, 不符题意, 则 $a 、 b 、 c$ 中必有一个不大于 $\frac{\sqrt{3}}{3}$, 不妨设 $b \leqslant \frac{\sqrt{3}}{3}$, 则
+$$
+\begin{aligned}
+S & =\frac{1}{a+b}+\frac{1}{b+c}+\frac{1}{c+a} \\
+& =\frac{a+2 b+c}{1+b^2}+\frac{1}{c+a} \\
+& =\frac{2 b}{1+b^2}+\frac{a+c}{1+b^2}+\frac{1}{a+c} .
+\end{aligned}
+$$
+下面先固定 $b$, 求出 $\frac{a+c}{1+b^2}+\frac{1}{a+c}$ 的最小值.
+令 $x=a+c$, 则 $f(x)=\frac{x}{1+b^2}+\frac{1}{x}$ 在 $x \geqslant \sqrt{1+b^2}$ 时单调递增, 而 $1- b(a+c)=a c \leqslant \frac{(a+c)^2}{4}$, 故 $\frac{x^2}{4} \geqslant 1-b x$, 则 $x \geqslant 2 \sqrt{b^2+1}-2 b$. 又 $b^2+1 \geqslant 4 b^2$, 故 $x \geqslant \sqrt{b^2+1}$, 从而 $f(x) \geqslant f\left(2 \sqrt{b^2+1}-2 b\right)$.
+综上可知, $S \geqslant \frac{2 b}{1+b^2}+f\left(2 \sqrt{b^2+1}-2 b\right)=\frac{2}{\sqrt{b^2+1}}+\frac{\sqrt{b^2+1}+b}{2}$, 令 $y=\sqrt{b^2+1}-b>0$, 则 $b=\frac{1-y^2}{2 y}$.
+于是, $S \geqslant \frac{2}{y+b}+\frac{1}{2 y}=\frac{9 y^2+1}{2 y\left(1+y^2\right)}=\frac{5}{2}+\frac{(1-y)\left(5\left(y-\frac{2}{5}\right)^2+\frac{1}{5}\right)}{2 y\left(1+y^2\right)} \geqslant \frac{5}{2}$ (注意 $\sqrt{b^2+1}-b \leqslant 1$ ).
+等号当 $b=0$ 时取到, 此时 $a=c=1$, 故所求最小值为 $\frac{5}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 设 $a_1, a_2, \cdots, a_{2001}$ 都是非负实数,满足:
+(1) $a_1+a_2+\cdots+a_{2001}=2$;
+(2) $a_1 a_2+a_2 a_3+\cdots+a_{2000} a_{2001}+a_{2001} a_1=1$.
+求 $S=a_1^2+a_2^2+\cdots+a_{2001}^2$ 的最值.
+%%<SOLUTION>%%
+下面先计算 $f\left(a_1, a_2, \cdots, a_{2001}\right)=a_1 a_2+a_2 a_3+\cdots+a_{2000} a_{2001}+ a_{2001} a_1$ 的最大值.
+引理:存在一个 $i \in\{1,2, \cdots, 2001\}$, 使 $a_i>a_{i+4}$ (记 $a_{2001+i}=a_i$ ).
+证明: 若不然, 有 $a_1 \leqslant a_5 \leqslant a_9 \leqslant \cdots \leqslant a_{2001} \leqslant a_4 \leqslant a_8 \leqslant \cdots \leqslant a_{2000} \leqslant a_3 \leqslant a_7 \leqslant \cdots \leqslant a_{1999} \leqslant a_2 \leqslant a_6 \leqslant \cdots \leqslant a_{1998} \leqslant a_1$.
+于是, 有 $a_1=a_2=\cdots=a_{2001}=\frac{2}{2001}$, 不合题目条件,引理证毕.
+不妨设 $a_{1998}>a_1$. 对于给定的 $a_1, a_2, \cdots, a_{1998}, a_{2000}$, 令 $a_1^{\prime}=a_1, a_2^{\prime}=$
+$$
+\begin{aligned}
+& a_2, \cdots, a_{1998}^{\prime}=a_{1998}, a_{2000}^{\prime}=a_{2000}, a_{2001}^{\prime}=0, a_{1999}^{\prime}=a_{1999}+a_{2001} \text {, 则 } \sum_i a_i^{\prime}=2 . \\
+& \quad f\left(a_1^{\prime}, a_2^{\prime}, \cdots, a_{2001}^{\prime}\right)=a_1 a_2+a_2 a_3+\cdots+a_{1997} a_{1998}+a_{1998}\left(a_{1999}+a_{2001}\right)+ \\
+& \left(a_{1999}+a_{2001}\right) \cdot a_{2000}>f\left(a_1, a_2, \cdots, a_{2001}\right) .
+\end{aligned}
+$$
+接着, 令 $a_1^{\prime \prime}=a_1^{\prime}, \cdots, a_{1998}^{\prime \prime}=a_{1998}^{\prime}+a_{2000}^{\prime}, a_{1999}^{\prime \prime}=a_{1999}^{\prime}, a_{2000}^{\prime}=0$, 则易证 $f\left(a_1^{\prime \prime}, a_2^{\prime \prime}, \cdots, a_{2000}^{\prime \prime}, 0\right)>f\left(a_1^{\prime}, a_2^{\prime}, \cdots, a_{2000}^{\prime}, 0\right)$.
+即每次将末尾一个非零的 $a_i$ 变为 0 , 将 $a_i$ 与 $a_{i-2}$ 的和变为新的 $a_{i-2}, f$ 值增大, 直至只剩下 3 个数时, $a_1+a_2+a_3=2, f\left(a_1, a_2, a_3, 0, \cdots, 0\right)= a_1 a_2+a_2 a_3=a_2\left(2-a_2\right) \leqslant 1$, 即 $f\left(a_1, a_2, \cdots, a_{2001}\right)$ 的最大值为 1 , 当且仅当 $a_4=a_5=\cdots=a_{2001}=0, a_2=1$ 时取到.
+因此, $S=a_1^2+a_2^2+a_3^2=1+a_1^2+a_3^2 \geqslant 1+\frac{\left(a_1+a_3\right)^2}{2}=\frac{3}{2}$.
+且 $S=2\left(a_1-1\right)^2+\frac{3}{2} \leqslant 2\left(0 \leqslant a_1 \leqslant 1\right)$. 故 $S_{\max }=2, S_{\min }=\frac{3}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 设 $x_1, x_2, \cdots, x_n$ 均不小于 0 , 且 $\sum_{i=1}^n x_i=1$, 求和式
+$$
+\sum_{1 \leqslant i<j \leqslant n} x_i x_j\left(x_i+x_j\right)
+$$
+的最大值.
+%%<SOLUTION>%%
+$\sum_{1 \leqslant i<j \leqslant n} x_i x_j\left(x_i+x_j\right)=\frac{1}{2} \sum_{1 \leqslant i<j \leqslant n} x_i x_j\left(x_i+x_j\right)+\frac{1}{2} \sum_{1 \leqslant i<j \leqslant n} x_j x_i\left(x_j+\right.\left.x_i\right)=\frac{1}{2} \sum_{i \neq j} x_i x_j\left(x_i+x_j\right)=\frac{1}{2} \sum_{i \neq j} x_i^2 x_j+\frac{1}{2} \sum_{i \neq j} x_i x_j^2=\frac{1}{2} \sum_{i=1}^n x_i^2\left(1-x_i\right)+ \frac{1}{2} \sum_{j=1}^n x_j^2\left(1-x_j\right)=\sum_{i=1}^n x_i^2-\sum_{i=1}^n x_j^3$.
+当 $n=1$ 时, $x_1=1$, 上式右端为 0 .
+当 $n=2$ 时, 上式右端 $=\left(x_1^2+x_2^2\right)-\left(x_1^3+x_2^3\right)$.
+$x_1 x_2 \leqslant \frac{1}{4}\left(x_1+x_2\right)^2=\frac{1}{4}$, 当 $x_1=x_2=\frac{1}{2}$ 时, 等号成立.
+当 $n \geqslant 3$ 时,不妨设 $x_1 \geqslant x_2 \geqslant \cdots \geqslant x_{n-1} \geqslant x_n$.
+记 $v=\left\{\left(x_1, x_2, \cdots, x_n\right) \mid x_i \geqslant 0,1 \leqslant i \leqslant n, \sum_{i=1}^n x_i=1\right\}$.
+令 $F(v)=\sum_{1 \leqslant i<j \leqslant n} x_i x_j\left(x_i+x_j\right)=\sum_{i=1}^n x_i^2-\sum_{i=1}^n x_i^3$.
+取 $w=\left\{\left(x_1, x_2, \cdots, x_{n-2}, x_{n-1}+x_n, 0\right)\right\}$, 则
+$$
+F(w)-F(v)=x_{n-1} x_n\left[2-3\left(x_{n-1}+x_n\right)\right] .
+$$
+又由于 $\frac{1}{2}\left(x_{n-1}+x_n\right) \leqslant \frac{1}{n}\left(x_1+x_2+\cdots+x_n\right)$, 故 $x_{n-1}+x_n \leqslant \frac{2}{n} \leqslant \frac{2}{3}$, 于是 $F(w) \geqslant F(v)$.
+然后, 将 $x_1, x_2, \cdots, x_{n-2}, x_{n-1}+x_n$ 从大到小排为 $x_1^{\prime}, x_2^{\prime}, \cdots, x_{n-1}^{\prime}$, 有 $F(v) \leqslant F\left(x_1^{\prime}, x_2^{\prime}, \cdots, x_{n-1}^{\prime}, 0\right)$.
+利用上述结论, 又有 $F(v) \leqslant F\left(x_1^{\prime}, x_2^{\prime}, \cdots, x_{n-1}^{\prime}, 0\right) \leqslant F\left(x_1^{\prime \prime}, x_2^{\prime \prime}, \cdots\right.$, $\left.x_{n-2}^{\prime \prime}, 0,0\right)$, 且 $\sum_{k=1}^{n-2} x_k^{\prime \prime}=1$.
+最后得到 $F(v) \leqslant f(a, b, 0, \cdots, 0)=a^2+b^2-a^3-b^3 \leqslant \frac{1}{4}$ (这里 $a+ b=1, a, b \in[0,1]$. ), 等号当 $x_1=x_2=\frac{1}{2}, x_3=x_4=\cdots=x_n=0$ 时取到.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 设 $n$ 为一个固定的整数, $n \geqslant 2$.
+(1)确定最小的常数 $c$, 使得不等式
+$$
+\sum_{1 \leqslant i<j \leqslant n} x_i x_j\left(x_i^2+x_j^2\right) \leqslant c\left(\sum_{1 \leqslant i \leqslant n} x_i\right)^4
+$$
+对所有的非负实数 $x_1, x_2, \cdots, x_n$ 都成立;
+(2) 对于这个常数 $c$, 求等号成立的条件.
+%%<SOLUTION>%%
+不妨设 $x_1 \geqslant x_2 \geqslant \cdots \geqslant x_n \geqslant 0$, 设 $x_1, x_2, \cdots, x_n$ 中最后一个非零数为 $x_{k+1}(k \geqslant 2)$. 将 $x_1, x_2, \cdots, x_k, x_{k+1}, 0,0, \cdots, 0(n-k-1$ 个 0$)$ 调整为 $x_1, x_2, \cdots, x_{k-1}, x_k+x_{k+1}, 0,0, \cdots, 0(n-k$ 个 0$)$. 和仍为 1 .
+记 $F\left(x_1, x_2, \cdots, x_k, x_{k+1}, \cdots, x_n\right)=\sum_{1 \leqslant i<j \leqslant n} x_i x_j\left(x_i^2+x_j^2\right)$, 则调整后 $F\left(x_1, x_2, \cdots, x_k+x_{k+1}, 0,0, \cdots, 0\right)-F\left(x_1, x_2, \cdots, x_k, x_{k+1}, 0\right.$, $0, \cdots, 0)=x_k x_{k+1} \cdot\left[\left(x_k+x_{k+1}\right)\left(3-4\left(x_k+x_{k+1}\right)\right)+2 x_k x_{k+1}\right]$.
+由于 $k \geqslant 2,1 \geqslant x_1+x_k+x_{k+1}$, 因为 $x_1 \geqslant x_2 \geqslant \cdots \geqslant x_k \geqslant x_{k+1}$, 有 $x_1 \geqslant \frac{x_k+x_{k+1}}{2}$, 故 $1 \geqslant \frac{3}{2}\left(x_k+x_{k+1}\right)$, 即 $x_k+x_{k+1} \leqslant \frac{2}{3}$, 于是 $4\left(x_k+x_{k+1}\right) \leqslant \frac{8}{3}<3$.
+因此, $F\left(x_1, x_2, \cdots, x_{k-1}, x_k+x_{k+1}, 0,0, \cdots, 0\right) \geqslant F\left(x_1, x_2, \cdots\right.$, $\left.x_{k-1}, x_k, x_{k+1}, 0,0, \cdots, 0\right)$.
+经过若干步调整, 有 $F\left(x_1, x_2, \cdots, x_n\right) \leqslant F(a, b, 0,0, \cdots, 0)= a b(1-2 a b) \leqslant \frac{1}{8}$ (这里 $a \geqslant 0, b \geqslant 0$, 且 $a+b=1$ ).
+故所求 $c=\frac{1}{8}$, 等号成立的充要条件是 $x_i$ 中 2 个正数相等, 其余全为 0 . 注:下面再给出一种较简洁的证明.
+证法 2 : 令 $x_1=x_2=\frac{1}{2}$, 其余 $x_i(3 \leqslant i \leqslant n)$ 为 0 , 有 $c \geqslant \frac{1}{8}$.
+下证: $\left(\sum_{i=1}^n x_i\right)^4 \geqslant 8 \sum_{1 \leqslant i<j \leqslant n} x_i x_j\left(x_i^2+x_j^2\right)$.
+事实上, $\left(\sum_{i=1}^n x_i\right)^4=\left(\sum_{i=1}^n x_i^2+2 \sum_{i<j} x_i x_j\right)^2 \geqslant 4 \sum_{i=1}^n x_i^2 \cdot 2 \sum_{i<j} x_i x_j=8$.
+$\sum_{1 \leqslant i<j \leqslant n}\left(x_i x_j \cdot \sum_{i=1}^n x_i^2\right) \geqslant 8 \sum_{1 \leqslant i<j \leqslant n} x_i x_j\left(x_i^2+x_j^2\right)$, 故结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 记 $S=\left\{\frac{l}{1997} \mid l=0,1,2, \cdots, 1996\right\} . S$ 中三个数 $x 、 y 、 z$ 满足: $x^2+ y^2-z^2=1$. 求 $x+y+z$ 的最小值和最大值.
+%%<SOLUTION>%%
+设 $l=1997 x, m=1997 y, n=1997 z$, 则 $l, m, n \in\{0,1,2, \cdots$, $1996\}$, 且 $l^2+m^2-n^2=1997^2$.
+下面先来求 $l+m+n$ 的最小值.
+固定 $l$, 有 $(m-n)(m+n)=(1997-l)(1997+l)$. 为使 $m+n$ 尽可能地小, 应使 $m+n$ 与 $m-n$ 尽可能接近, 但总有 $m+n \geqslant \sqrt{(1997+l)(1997-l)}$. 设 $l_1=1997-l$, 则 $l+m+n \geqslant 1997-l_1+\sqrt{l_1\left(3994-l_1\right)}$.
+不妨设 $l \geqslant m$, 则 $l>1400$, 故 $1 \leqslant l_1 \leqslant 60$.
+注意到 $1997-l_1$ 随 $l_1$ 增大每次小 1 , 但 $\sqrt{l_1\left(3994-l_1\right)}$ 上升很快, 猜测最小值必在 $l_1$ 较小时取到.
+(1) $l_1=1,(m+n)(m-n)=3993, m+n \geqslant 121$.
+即当 $l=1996$ 时, $m+n+l \geqslant 1996+121=2117$.
+(2)当 $200 \leqslant l_1 \leqslant 600$ 时, $l+m+n \geqslant 1997-600+\sqrt{200 \times 3794}>2117$.
+(3)当 $50 \leqslant l_1 \leqslant 200$ 时,也易见 $l+m+n \geqslant 1997-200+\sqrt{50 \times 3994}>$ 2117.
+(4)当 $10 \leqslant l_1 \leqslant 50$ 时, $l+m+n \geqslant 1997-50+\sqrt{10 \times 3984}>2117$.
+(5)当 $5 \leqslant l_1 \leqslant 10$ 时, $l+m+n \geqslant 1997-10+\sqrt{5 \times 3989}>2117$.
+(6) $l_1=4, l+m+n \geqslant 1997-4+2 \times 63>2117$.
+(7) $l_1=3,(m-n)(m+n)=3 \times 3991$, 有 $(m+n)_{\text {min }}=307$, 则 $l+m+ n=1997-3+307=2301$.
+(8) $l_1=2,(m-n)(m+n)=998$, 则 $l+m+n \geqslant 1997-2+998>2117$.
+综上所述, $(l+m+n)_{\text {min }}=2117$, 等号当 $l=1996, m=77, n=44$ 时取到.
+再来求 $l+m+n$ 的最大值.
+我们有 $(m-n)(m+n)=l_1\left(3994-l_1\right)$, 故 $l_1<m-n \leqslant m+n<3994- l_1$, 且 $l_1, m-n, m+n, 3994-l_1$ 这 4 个数同奇偶 $\left(\right.$ 令 $l_1=2$, 就可注意到这点). 所以 $m-n \geqslant l_1+2$, 则 $m+n \leqslant \frac{\left(3994-l_1\right) l_1}{l_1+2}$, 猜测等号成立时取到最大值.
+若等号成立, 则 (i) $l_1$ 为奇数, 只须 $l_1+2 \mid\left(3994-l_1\right) l_1$ 即可;
+(ii) $l_1$ 为偶数,则不但要整除, 且商必须也为偶数.
+记 $l^{\prime}=l_1+2$, 则 $\frac{\left(3994-l_1\right) l_1}{l_1+2}=3998-\left(l^{\prime}+\frac{2 \times 3996}{l^{\prime}}\right)$.
+等号成立的条件, 当 $l^{\prime}$ 为奇时, 只须 $l^{\prime} \mid 2 \times 3996$; 当 $l^{\prime}$ 为偶时, 而须
+$\frac{2 \times 3996}{l^{\prime}}$ 为偶, 故只须 $l^{\prime} \mid 3996$.
+于是,
+$$
+l+m+n \leqslant 5997-2\left(l^{\prime}+\frac{3996}{l^{\prime}}\right),
+$$
+在 $l^{\prime}=54$ 或 74 时, $l+m+n \leqslant 5741$, 下证 5741 即为最大值.
+首先, 当 $l^{\prime}$ 在 $[54,74]$ 外时,已无须验证.
+当 $l^{\prime} \in[54,74]$ 时,等号不能成立.
+故 $l+m+n \leqslant 1997-l_1+\frac{l_1\left(3994-l_1\right)}{l_1+4} \leqslant 1997-l_1+\frac{71}{75}\left(3994-l_1\right)= 1997-l_1+\left(3994-l_1\right)-\frac{4}{75}\left(3994-l_1\right) \leqslant 6000-100-\frac{4}{75} \times 3750<574.1$, 故 $(l+m+n)_{\text {max }}=5741$, 等号当 $l=1945, m=1925, n=1871$ 时成立.
+%%PROBLEM_END%%
+
+

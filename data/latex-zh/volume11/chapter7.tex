@@ -1,0 +1,217 @@
+
+%%TEXT_BEGIN%%
+算二次方法.
+设 $A=\left\{a_1, a_2, \cdots, a_m\right\}, B=\left\{b_1, b_2, \cdots, b_n\right\}$ 是两个有限集合, 将所有形如 $\left(a_i, b_j\right)(1 \leqslant i \leqslant m, 1 \leqslant j \leqslant n)$ 的有序对构成的集合称为 $A$ 与 $B$ 的笛卡儿乘积, 并用记号 $A \times B$ 表示.
+对任意 $a_i \in A$, 设 $C_i=\left\{\left(a_i, b\right) \mid b \in B\right\}(i=1,2, \cdots, m)$, 对任意 $b_j \in B$, 设 $D_j=\left\{\left(a, b_j\right) \mid a \in A\right\}(j=1,2$, $\cdots, n)$, 于是 $|A \times B|=\sum_{i=1}^m\left|C_i\right|=\sum_{j=1}^n\left|D_j\right|$, 这个等式叫做富比尼(Fubini) 原理, 又叫做算二次原理.
+运用算二次原理的方法主要体现在对同一对象从两种不同的角度去进行计数, 再加以综合, 以便推出所欲取得的结果.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 一张正方形纸片内有 1000 个点, 这些点及正方形的顶点中任意 3 点不共线,然后在这些点及正方形顶点之间连一些线段, 将正方形全部分成小三角形 (以所连线段及正方形的边为边, 且所连线段除端点外, 两两无公共点), 问一共连有多少条线段? 一共得到多少个三角形?
+%%<SOLUTION>%%
+解:设一共连有 $l$ 条线段,一共得到 $k$ 个三角形.
+一方面, 所得 $k$ 个三角形的内角总和为 $k \cdot 180^{\circ}$, 另一方面, 所得 $k$ 个三角形中, 以 1000 个内点为顶点的所有内角之和为 $1000 \times 360^{\circ}$, 以正方形的顶点为顶点的所有内角之和为 $4 \times 90^{\circ}$, 所以
+$$
+k \cdot 180^{\circ}=1000 \times 360^{\circ}+4 \times 90^{\circ},
+$$
+解得 $k=2002$.
+其次,每个三角形有 3 条边, $k$ 个三角形一共有 $3 k$ 条边, 另一方面,所连每条线段是两个三角形的公共边, 而正方形的每条边都是一个三角形的一边, 于是 $3 k=2 l+4$, 解得 $l=\frac{3}{2} k-2=3001$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 8 位歌手参加艺术节, 准备为他们安排 $m$ 次演出, 每次由其中 4 位登台表演, 并且 8 位歌手中任意两位同台演出的次数一样多, 请设计一种方案, 使他们一共演出的次数 $m$ 最少.
+%%<SOLUTION>%%
+解:设任意一对歌手同台演出的次数都为 $r$. 若某对歌手 $a_i, a_j$ 同在第 $k$ 场演出, 则将 $\left(a_i, a_j, k\right)$ 组成一个三元组, 设这种三元组共有 $S$ 个, 一方面, 因为 8 位歌手可形成 $\mathrm{C}_8^2=28$ 对,每对歌手同台演出 $r$ 次,所以 $S=28 r$.
+另一方面, 每场有 4 位歌手参加, 可形成 $\mathrm{C}_4^2$ 个三元组, $m$ 场演出一共可形成 $m \mathrm{C}_4^2$ 个三元组,所以 $S=m \mathrm{C}_4^2=6 m$. 于是 $6 m=28 r, 3 m=14 r$.
+因为 $(3,14)=1$, 故 $14 \mid m$, 从而 $m \geqslant 14$.
+下面实例说明 $m=14$ (从而 $r=3$ ) 是可以实现的(数字 1 至 8 代表 8 位歌手,每个括号内的 4 个数字代表同台演出的 4 位歌手):
+$$
+\begin{gathered}
+\{1,2,3,4\},\{1,2,5,6\},\{1,2,7,8\},\{1,3,5,7\},\{1,3,6,8\}, \\
+\{1,4,5,8\},\{1,4,6,7\},\{2,3,5,8\},\{2,3,6,7\},\{2,4,5,7\}, \\
+\{2,4,6,8\},\{3,4,5,6\},\{3,4,7,8\},\{5,6,7,8\} .
+\end{gathered}
+$$
+综上可知,所求 $m$ 的最小值为 14 .
+%%<REMARK>%%
+注:进一步,我们可以求出当 $m$ 取最小值时 (必有 $r=3$ ), 每位歌手参加演出的场数.
+设第 $i$ 位歌手 $a_i$ 参加了 $n_i$ 场演出 $(i=1,2, \cdots, 8)$. 考虑含 $a_1$ 的三元组 $\left(a_1, a_i, k\right)(2 \leqslant i \leqslant 8)$ 的个数 $S_1$, 一方面对任意 $a_i(2 \leqslant i \leqslant 8), a_1$ 与 $a_i$ 同台演出了 $r=3$ 场, 故含 $a_1, a_i$ 的三元组有 3 个, 又 $a_i$ 有 7 种取法, 所以 $S_1=3 \times 7=21$. 另一方面 $a_1$ 共参加 $n_1$ 场演出, 每场演出时, $a_1$ 与其他 3 位歌手同台,故 $S_1=3 n_1$. 于是 $3 n_1=21$, 由此得 $n_1=7$. 同理可得 $n_2=n_3= \cdots=n_8=7$. 即每位歌手都参加了 7 场演出.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 有 $n$ 个人,已知他们任意 2 人至多通话一次,他们任意 $n-2$ 个人之间通话的总次数相等, 都等于 $3^k$ ( $k$ 为正整数). 求 $n$ 的所有可能值.
+%%<SOLUTION>%%
+解:设 $n$ 个人之间通话的总次数为 $m$, 因为 $n$ 个人可形成 $\mathrm{C}_n^{n-2}$ 个 $n-2$ 人组, 而每 $n-2$ 人之间通话的总次数都为 $3^k$, 故所有 $n-2$ 组中通话次数的总和为 $\mathrm{C}_n^{n-2} \cdot 3^k$.
+另一方面, 上述计数中, 每一对通话的人, 属于 $\mathrm{C}_{n-2}^{n-4}$ 个 $n-2$ 组, 故每 2 人间的一次通话重复计算了 $\mathrm{C}_{n-2}^{n-4}$ 次,所以
+$$
+m=\frac{\mathrm{C}_n^{n-2} \cdot 3^k}{\mathrm{C}_{n-2}^{n-4}}=\frac{\mathrm{C}_n^2 \cdot 3^k}{\mathrm{C}_{n-2}^2}=\frac{n(n-1) 3^k}{(n-2)(n-3)} .
+$$
+(1) 若 3 不整除 $n$, 即 $(3, n)=1$, 则 $(n-3, n)=1,\left(n-3,3^k\right)=1$, 又 $(n-2, n-1)=1$, 所以 $n-3 \mid n-1$, 即 $\frac{n-1}{n-3}=1+\frac{2}{n-3}$ 为正整数, 所以 $n-3 \mid 2, n-3 \leqslant 2, n \leqslant 5$. 又 $\mathrm{C}_{n-2}^2 \geqslant 3^k \geqslant 3$, 所以 $n \geqslant 5$, 故 $n=5$.
+(2) 若 3 整除 $n$, 则 $3 \mid n-3,3 \times n-2$, 即 $(3, n-2)=1$, 又 $(n-2$, $n-1)=1$, 所以 $n-2 \mid n$, 即 $\frac{n}{n-2}=1+\frac{2}{n-2}$ 为正整数, 故 $n-2 \mid 2$, 由此得 $n-2 \leqslant 2, n \leqslant 4$, 这与 (1)中已证 $n \geqslant 5$ 矛盾.
+由 (1), (2) 知 $n$ 只可能为 5 , 另一方面, 若有 $n=5$ 个人, 其中每 2 人通一次电话, 则任意 $n-2=3$ 人之间通电话的次数都为 $\mathrm{C}_3^2=3^1$ (这里 $k=1$ 为正整数) 满足题目要求, 故所求正整数只有一个 $n=5$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $2 \leqslant r \leqslant \frac{n}{2}, \mathscr{A}$ 为 $Z=\{1,2, \cdots, n\}$ 的一些 $r$ 元子集所成的集族.
+如果 $\mathscr{A}$ 中的每两个元素 ( $Z$ 的 $r$ 元子集) 的交非空, 那么 $|\mathscr{A}| \leqslant \mathrm{C}_{n-1}^{r-1}$, 当 $\mathscr{A}=\{A \mid A$ 为 $Z$ 的 $r$ 元子集且含有 $Z$ 的一个固定元素 $x\}$ 时等号成立 (ErdösKo-Rado 定理)
+%%<SOLUTION>%%
+证明:把 $Z$ 的元素任意排在一个圆周上有 $(n-1)$ ! 种排列方法, 对于每种排列方法 $\pi_j(j=1,2, \cdots,(n-1) !)$, 如果 $A_i$ 中的元素在 $\pi_j$ 中相连没有间断, 则将 $\left(A_i, \pi_j\right)$ 配成一对, 这种对子的集合记为 $S$. 一方面, 因为 $\mathscr{A}$ 中每两个元素 ( $Z$ 的 $r$ 元子集) 的交非空, 且 $2 \leqslant r \leqslant \frac{n}{2}$, 故对每个排列 $\pi_j$, 至多有 $r$ 个集合 $A_i \in \mathscr{A}$ 使得每个 $A_i$ 中的元素在 $\pi_j$ 中是相连没有间断的, 即含 $\pi_j$ 的对子 $\left(A_i, \pi_j\right)$ 至多有 $r$ 个, 而 $\pi_j$ 有 $(n-1)$ ! 个, 所以
+$$
+|S| \leqslant r \cdot(n-1) ! . \label{eq1}
+$$
+另一方面, 对 $\mathscr{A}$ 中每个 $A_i$, 使 $A_i$ 中元素在圆周上相连不间断的圆排列有 $r !(n-r) !$ 个,而 $\mathscr{A}$ 中元素 $A_i$ 共有 $|\mathscr{A}|$ 个,故
+$$
+|S|=|\mathscr{A}| \cdot r ! \cdot(n-r) !,  \label{eq2}
+$$
+由式\ref{eq1}及\ref{eq2}得
+$$
+|\mathscr{A}| \cdot r ! \cdot(n-r) ! \leqslant r(n-1) ! .
+$$
+由此可得 $|\mathscr{A}| \leqslant \frac{(n-1) !}{(r-1) !(n-r) !}=\mathrm{C}_{n-1}^{r-1}$.
+其次, 当 $\mathscr{A}==\{A \mid A$ 为 $Z$ 的 $r$ 元子集且含 $Z$ 的一个固定元素 $x\}$ 时, $\mathscr{A}$ 中的 $A$ 恰有 $\mathrm{C}_{n-1}^{r-1}$ 个, 这时 $|\mathscr{A}|=\mathrm{C}_{n-1}^{r-1}$ 成立.
+%%<REMARK>%%
+注:进一步可以证明, 本题中等号成立的条件不仅是充分的, 也是必要的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 已知集合 $M=\left\{x_1, x_2, \cdots, x_{4 n+3}\right\}$, 它的 $4 n+3$ 个子集 $A_1, A_2$, $\cdots, A_{4 n+3}$ 具有以下性质:
+(1) $M$ 中每 $n+1$ 个元素恰属于唯一一个子集 $A_j(1 \leqslant j \leqslant 4 n+3)$;
+(2) $\left|A_i\right| \geqslant 2 n+1(i=1,2, \cdots, 4 n+3)$.
+证明: 任意两个子集 $A_i$ 与 $A_j(1 \leqslant i<j \leqslant 4 n+3)$ 恰有 $n$ 个公共元.
+%%<SOLUTION>%%
+证明作 $(4 n+3) \times(4 n+3)$ 数表, 其中第 $i$ 行第 $j$ 列处的数为
+$$
+a_{i j}=\left\{\begin{array}{l}
+1, \text { 若 } x_i \in A_j, \\
+0, \text { 若 } x_i \notin A_j,
+\end{array} i, j=1,2,3, \cdots, 4 n+3 .\right.
+$$
+并记 $r_i=\sum_{j=1}^{4 n+3} a_{i j}, l_j=\sum_{i=1}^{4 n+3} a_{i j}$, 显然 $r_i$ 表示 $x_i$ 属于 $A_1, A_2, \cdots, A_{4 n+3}$ 中 $r_i$ 个集合,而 $l_j=\left|A_j\right|$ 表示 $A_j$ 中元素个数,于是由已知条件(2)有
+$$
+\sum_{i=1}^{4 n+3} r_i=\sum_{i=1}^{4 n+3} \sum_{j=1}^{4 n+3} a_{i j}=\sum_{j=1}^{4 n+3} \sum_{i=1}^{4 n+3} a_{i j}=\sum_{j=1}^{4 n+3}\left|A_j\right| \geqslant(2 n+1)(4 n+3) . \label{eq1}
+$$
+若 $x_k$ 同时属于集合 $A_i$ 与 $A_j(1 \leqslant i<j \leqslant 4 n+3)$, 则将 $\left(x_k ; A_i, A_j\right)$ 组成三元组, 这种三元组的集合记为 $S$. 一方面, 由已知条件 (1) 知对任意 $A_i$, $A_j(1 \leqslant i<j \leqslant 4 n+3)$, 有 $\left|A_i \cap A_j\right| \leqslant n$, 故至多有 $n$ 个 $x_k$ 与 $A_i, A_j$ 组成三元组 $\left(x_k ; A_i, A_j\right) \in S$, 所以
+$$
+|S| \leqslant n \cdot \mathrm{C}_{4 n+3}^2=n(4 n+3)(2 n+1) . \label{eq2}
+$$
+另一方面,每一个 $x_k$ 属于 $A_1, A_2, \cdots, A_{4 n+3}$ 中 $r_k$ 个子集, 可形成 $\mathrm{C}_{r_k}^2$ 个含 $x_k$ 的三元组, 所以
+$$
+|S|=\sum_{k=1}^{4 n+3} \mathrm{C}_{r_k}^2=\frac{1}{2}\left(\sum_{k=1}^{4 n+3} r_k^2-\sum_{k=1}^{4 n+3} r_k\right) .
+$$
+由上式利用柯西(Cauchy)不等式及\ref{eq1}、\ref{eq2}得
+$$
+\begin{aligned}
+n(4 n+3)(2 n+1) \geqslant & \frac{1}{2}\left(\sum_{k=1}^{4 n+3} r_k^2-\sum_{k=1}^{4 n+3} r_k\right) \\
+\geqslant & \frac{1}{2}\left[\frac{1}{4 n+3}\left(\sum_{k=1}^{4 n+3} r_k\right)^2-\sum_{k=1}^{4 n+3} r_k\right] \\
+= & \frac{1}{2(4 n+3)}\left(\sum_{k=1}^{4 n+3} r_k\right)\left[\sum_{k=1}^{4 n+3} r_k-(4 n+3)\right] \\
+\geqslant & \frac{1}{2(4 n+3)} \cdot(4 n+3)(2 n+1)[(4 n+3)(2 n+1)- \\
+& (4 n+3)] \\
+= & n(4 n+3)(2 n+1) .
+\end{aligned}
+$$
+可见, 上式中等号成立, 从而式\ref{eq2}中等号成立, 即对任意 $1 \leqslant i<j \leqslant 4 n+3$, 有
+$\left|A_i \cap A_j\right|=n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $n$ 和 $k$ 是正整数, $S$ 是平面内 $n$ 个点的集合, 满足:
+(1) $S$ 中任何三点不共线;
+(2) 对 $S$ 中每一个点 $P, S$ 中至少有 $k$ 个点与 $P$ 的距离相等.
+求证: $k<\frac{1}{2}+\sqrt{2 n}$. 
+%%<SOLUTION>%%
+证法一设 $S=\left\{P_1, P_2, \cdots, P_n\right\}$, 依题意, 对任意 $P_i \in S$, 存在以 $P_i$ 为中心的圆 $C_i$, 在 $C_i$ 上至少有 $S$ 中 $k$ 个点 $(i=1,2, \cdots, n)$. 设 $C_i$ 上恰有 $S$ 中的 $r_i$ 个点, 而且 $P_i$ 恰在 $C_1, C_2, \cdots, C_n$ 中 $e_i$ 个圆上 $(i=1,2, \cdots, n)$, 于是
+$$
+e_1+e_2+\cdots+e_n=r_1+r_2+\cdots+r_n \geqslant k n . \label{eq1}
+$$
+若 $S$ 中的点 $P_i$ 同时在两个圆 $C_r$ 和 $C_j$ 上, 则将 $\left(P_i ; C_r, C_j\right)$ 组成一个三元组, 这种三元组形成的集合记为 $M$,一方面, 每两个圆至多有 2 个交点, 至多形成 2 个三元组, $n$ 个圆至多形成 $2 \mathrm{C}_n^2$ 个三元组, 所以 $|M| \leqslant 2 \mathrm{C}_n^2$. 另一方面, 因 $P_i$ 在 $e_i$ 个圆上, 可形成 $\mathrm{C}_{e_i}^2$ 个含 $P_i$ 的三元组 $(i=1,2, \cdots, n)$, 故 $|M|=\sum_{i=1}^n \mathrm{C}_{e_i}^2$.
+综合两方面, 并利用柯西(Cauchy)不等式及\ref{eq1}得
+$$
+\begin{aligned}
+2 \mathrm{C}_n^2 & \geqslant \sum_{i=1}^n \mathrm{C}_{e_i}^2=\frac{1}{2}\left(\sum_{i=1}^n e_i^2-\sum_{i=1}^n e_i\right) \geqslant \frac{1}{2}\left[\frac{1}{n}\left(\sum_{i=1}^n e_i\right)^2-\sum_{i=1}^n e_i\right] \\
+& =\frac{1}{2 n}\left(\sum_{i=1}^n e_i\right)\left(\sum_{i=1}^n e_i-n\right) \geqslant \frac{1}{2 n}(k n)(k n-n) \\
+& =\frac{1}{2} n k(k-1),
+\end{aligned}
+$$
+即 $k^2-k-2(n-1) \leqslant 0$, 所以 $k \leqslant \frac{1+\sqrt{1+8(n-1)}}{2}<\frac{1+\sqrt{8 n}}{2}=\frac{1}{2}+ \sqrt{2 n}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $n$ 和 $k$ 是正整数, $S$ 是平面内 $n$ 个点的集合, 满足:
+(1) $S$ 中任何三点不共线;
+(2) 对 $S$ 中每一个点 $P, S$ 中至少有 $k$ 个点与 $P$ 的距离相等.
+求证: $k<\frac{1}{2}+\sqrt{2 n}$. 
+%%<SOLUTION>%%
+证法二由题意, 可以 $S$ 中每点为中心作一个圆, 使每个圆上至少有 $k$ 个点属于 $S$.
+我们称两端点均属于 $S$ 的线段为好线段.
+方面,好线段显然共有 $\mathrm{C}_n^2$ 条.
+另一方面, 每个圆上至少有 $\mathrm{C}_k^2$ 条弦是好线段, $n$ 个圆共有 $n \mathrm{C}_k^2$ 条弦是好线段,但其中有一些公共弦被重复计算了.
+由于每两个圆至多有一条公共弦, $n$ 个圆至多有 $\mathrm{C}_n^2$ 条公共弦 (这些公共弦不一定是好线段), 故好线段的条数不少于 $n \mathrm{C}_k^2-\mathrm{C}_n^2$.
+综合上述两个方面得 $\mathrm{C}_n^2 \geqslant n \mathrm{C}_k^2-\mathrm{C}_n^2$, 即 $k^2-k-2(n-1) \leqslant 0$, 所以 $k \leqslant \frac{1+\sqrt{1+8(n-1)}}{2}<\frac{1+\sqrt{8 n}}{2}=\frac{1}{2}+\sqrt{2 n}$.
+%%<REMARK>%%
+注:(1) 本题的两种证法都说明了题目中第一个条件是多余的.
+(2)用算二次方法证明题目时, 由于选择的计算量不同, 常常得到的证明方法不全相同.
+本题的证法二显然较证法一简便.
+但从例 5 以及今后的例题会看到,计算"三元组"是一个有效的方法.
+(3)算二次时, 如果两方面都是精确结果, 综合起来就得到一个等式, 如果至少一个方面采取了估计 (即算了量的上界或下界), 那么综合起来就得到了一个不等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 证明: $\sum_{k=0}^n \mathrm{C}_n^k 2^k \mathrm{C}_{n=k}^{\left[\frac{n-k}{2}\right]}=\mathrm{C}_{2 n+1}^n$. 
+%%<SOLUTION>%%
+证法一:一方面 $(1+x)^{2 n+1}=\sum_{k=0}^{2 n+1} \mathrm{C}_{2 n+1}^k x^k$ 中 $x^n$ 的系数等于 $C_{2 n+1}^n$. 另一方面
+$$
+\begin{aligned}
+(1+x)^{2 n+1} & =\left(1+2 x+x^2\right)^n(1+x) \\
+& =\sum_{k=0}^n \mathrm{C}_n^k(2 x)^k\left(1+x^2\right)^{n-k} \cdot(1+x) \\
+& =\sum_{k=0}^n \mathrm{C}_n^k 2^k x^k\left(1+x^2\right)^{n-k}+\sum_{k=0}^n \mathrm{C}_n^k 2^k x^{k+1}\left(1+x^2\right)^{n-k} . \label{eq1}
+\end{aligned}
+$$
+当 $n-k$ 为奇数时, $\mathrm{C}_n^k 2^k x^k\left(1+x^2\right)^{n-k}=\mathrm{C}_n^k 2^k x^k \sum_{i=0}^{n-k} \mathrm{C}_{n-k}^i x^{2 i}$ 中无 $x^n$ 的项, 而 $\mathrm{C}_n^k 2^k x^{k+1}\left(1+x^2\right)^{n-k}=\mathrm{C}_n^k 2^k x^{k+1} \sum_{i=0}^{n-k} \mathrm{C}_{n-k}^i x^{2 i}$ 中含 $x^n$ 的项为 $\mathrm{C}_n^k 2^k x^{k+1} \mathrm{C}_n^{\frac{n-k-1}{2}} x^{2\left(\frac{n-k-1}{2}\right)} =\mathrm{C}_n^k 2^k \mathrm{C}_{n-k}^{\left[\frac{n-k}{2}\right]} x^n$.
+当 $n-k$ 为偶数时, 类似可得 $\mathrm{C}_n^k 2^k x^k\left(1+x^2\right)^{n-k}$ 中含 $x^n$ 的项为 $\left.\mathrm{C}_n^k 2^k x^k \mathrm{C}_{n-k}^{\frac{n-k}{2}} x^{2\left(\frac{n-k}{2}\right)}=\mathrm{C}_n^k 2^k \mathrm{C}_{n-k}^{\left[\frac{n-k}{2}\right.}\right] x^n$, 而 $\mathrm{C}_n^k 2^k x^{k+1}\left(1+x^2\right)^{n-k}$ 中无 $x^n$ 的项.
+可见\ref{eq1}式右端中 $x^n$ 的系数为 $\sum_{k=0}^n \mathrm{C}_n^k 2^k \mathrm{C}_{n-k}^{\left[\frac{n-k}{2}\right]}$, 所以 $\sum_{k=0}^n \mathrm{C}_n^k 2^k \mathrm{C}_{n-k}^{\left[\frac{n-k}{2}\right]}=\mathrm{C}_{2 n+1}^n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 证明: $\sum_{k=0}^n \mathrm{C}_n^k 2^k \mathrm{C}_{n=k}^{\left[\frac{n-k}{2}\right]}=\mathrm{C}_{2 n+1}^n$. 
+%%<SOLUTION>%%
+证明二:一方面 $2 n+1$ 个元素的集合 $S=\left\{a_1, a_2, \cdots, a_{2 n+1}\right\}$ 的 $n$ 元子集共有 $\mathrm{C}_{2 n+1}^n$ 个.
+另一方面将 $S$ 分为 $n$ 个二元子集和一个单元素集:
+$$
+\left\{a_1, a_2\right\},\left\{a_3, a_4\right\}, \cdots,\left\{a_{2 n-1}, a_{2 n}\right\},\left\{a_{2 n+1}\right\}
+$$
+将 $S$ 的 $n$ 元子集分为 $n+1$ 类:第 $k$ 类的每一个 $n$ 元子集中恰有 $k$ 个元取自上述 $k$ 个二元子集 (每个二元子集恰取出一个元素), 其方法数为 $\mathrm{C}_n^k \cdot 2^k$, 其余
+$n-k$ 个元取自余下的子集 :
+当 $n-k$ 为偶数时, $a_{2 n+1}$ 必不取出,余下 $n-k$ 元取自剩下 $n-k$ 个二元子集中的 $\frac{n-k}{2}$ 个子集(每个子集的两个元都取出), 共有 $\mathrm{C}_{n-k}^{\frac{n-k}{2}}=\mathrm{C}_{n-k}^{\left[\frac{n-k}{2}\right]}$ 种方法.
+当 $n-k$ 为奇数, $a_{2 n+1}$ 必取出, 余下 $n-k-1$ 个元取自余下的 $n-k$ 个二元子集中的 $\frac{n-k-1}{2}$ 个(每个子集中的两个元都取出), 共有 $\left.\mathrm{C}_{n-k}^{\frac{n-2-1}{2}}=\mathrm{C}_{n-k}^{\left[\frac{n-k}{2}\right.}\right]$ 种方法.
+可见第 $k$ 类 $n$ 宇子集有 $\left.\mathrm{C}_n^k 2^k \mathrm{C}_{n-k}^{\left[\frac{n-k}{2}\right.}\right]$ 个, 又 $k=0,1,2, \cdots, n$. 故 $S$ 的 $n$ 元子集共有 $\sum_{k=0}^n \mathrm{C}_n^k 2^k \mathrm{C}_{n-k}^{\left[\frac{n-k}{2}\right]}$ 个.
+综合上述两个方面得 $\sum_{k=0}^n \mathrm{C}_n^k 2^k \mathrm{C}_{n-k^2}^{\left[\frac{n-k}{2}\right]}=\mathrm{C}_{2 n+1}^n$.
+%%PROBLEM_END%%
+
+

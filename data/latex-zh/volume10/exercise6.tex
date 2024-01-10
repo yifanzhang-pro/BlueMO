@@ -1,0 +1,75 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 一个立方体的顶点标上数 +1 或 -1 , 面上标一个数, 它等于这个面四个顶点处的数之乘积.
+证明: 这样标出的 14 个数之和不能为 0 .
+%%<SOLUTION>%%
+记 $S$ 为所说的和.
+我们将任一顶点处的有 -1 的地方改为 +1 , 则 $S$ 中有四个数, 设为 $a 、 b 、 c 、 d$ 被改变了符号, 用 $S^{\prime}$ 表示改数后的 14 个数之和, 由于 $a+b+c+d \equiv 0(\bmod 2)$,故
+$$
+S-S^{\prime}=2(a+b+c+d) \equiv 0(\bmod 4) .
+$$
+重复进行这种改数过程, 直至顶点处的数均为 +1 为止, 即知 $S \equiv 1+1+\cdots+ 1=14 \equiv 2(\bmod 4)$, 所以 $S \neq 0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 路求所有的正整数 $n$, 使得由 $n-1$ 个数码 1 与一个数码 7 构成的十进制整数, 都是素数.
+%%<SOLUTION>%%
+由 $n-1$ 个数码 1 与一个数码 7 构成的正整数 $N$ 可表示为形式 $N= A_n+6 \times 10^k$, 这里 $0 \leqslant k \leqslant n-1, A_n$ 是由 $n$ 个 1 所构成的整数.
+当 $3 \mid n$ 时, $A_n$ 的数码之和被 3 整除, 故 $3 \mid A_n$,于是 $3 \mid N$, 但 $N>3$, 故此时 $N$ 不是素数.
+现在设 $3 \nmid n$. 注意 $10^6 \equiv 1(\bmod 7)$, 我们因此将 $n$ 模 6 分类, 来讨论 $A_n$ 模 7 的值 $(n \equiv 0,3(\bmod 6)$ 的情形已不必考虑). 易于得知, 对 $l \geqslant 0$,
+$$
+\begin{aligned}
+A_{6 l+1} & =\frac{1}{9} \times\left(10^{6 l+1}-1\right)=\frac{1}{9} \times\left(10^{6 l}-1\right) \times 10+\frac{1}{9} \times(10-1) \\
+& \equiv 1(\bmod 7), \\
+A_{6 l+2} & \equiv 4, A_{6 l+4} \equiv 5, A_{6 l+5} \equiv 2(\bmod 7) .
+\end{aligned}
+$$
+此外, $10^0, 10^2, 10^4, 10^5$ 模 7 依次同余于 $1,2,4,5$. 因而当 $n>6$ 时, 按 $n \equiv 1,2,4,5(\bmod 6)$, 分别取 $k=0,4,5,2$, 即知
+$$
+N=A_n+6 \times 10^k \equiv A_n-10^k \equiv 0(\bmod 7),
+$$
+故 $N$ 不是素数, 从而大于 5 的 $n$ 均不合要求.
+在 $n \leqslant 5$ 时, 不难验证只有 $n=$ 1,2 合要求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $p$ 是素数, $a \geqslant 2, m \geqslant 1, a^m \equiv 1(\bmod p), a^{p-1} \equiv 1\left(\bmod p^2\right)$. 证明: $a^m \equiv 1\left(\bmod p^2\right)$.
+%%<SOLUTION>%%
+由 $a^m \equiv 1(\bmod p)$ 得 $a^m=1+p x$. 因此
+$$
+a^{p m}=(1+p x)^p=1+p^2 x+C_p^2 p^2 x^2+\cdots \equiv 1\left(\bmod p^2\right) . \label{eq1}
+$$
+又 $a^{p-1} \equiv 1\left(\bmod p^2\right)$, 故 $a^{(p-1) m} \equiv 1\left(\bmod p^2\right)$, 从而 $a^{p m} \equiv a^m\left(\bmod p^2\right)$. 结合 式\ref{eq1} 知 $a^m \equiv 1\left(\bmod p^2\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $m$ 是给定的正整数, 证明: 由
+$$
+x_1=x_2=1, x_{k+2}=x_{k+1}+x_k(k=1,2, \cdots)
+$$
+定义的数列 $\left\{x_n\right\}$ 的前 $m^2$ 个项中, 必有一项被 $m$ 整除.
+%%<SOLUTION>%%
+无妨设 $m>1$. 我们用 $\bar{x}_k$ 表示 $x_k$ 被 $m$ 除得的余数.
+考虑有序数对
+$$
+\left\langle\bar{x}_1, \bar{x}_2\right\rangle,\left\langle\bar{x}_2, \bar{x}_3\right\rangle, \cdots,\left\langle\bar{x}_n, \bar{x}_{n+1}\right\rangle, \cdots . \label{eq1}
+$$
+因为被 $m$ 除得的余数共组成 $m^2$ 个互不相等的有序数对, 故在序列 式\ref{eq1}中取出前 $m^2+1$ 个数对, 其中必有两个相同.
+设 $\left\langle\bar{x}_i, \bar{x}_{i+1}\right\rangle$ 是下标最小的与某一个 $\left\langle\bar{x}_j, \bar{x}_{j+1}\right\rangle$ 相等的数对 $\left(j \leqslant m^2+1\right)$, 我们证明 $i$ 必然是 1 , 否则从
+$$
+x_{i-1}=x_{i+1}-x_i, x_{j-1}=x_{j+1}-x_j
+$$
+推出 $x_{i-1} \equiv x_{j-1}(\bmod m)$, 故 $\left\langle\bar{x}_{i-1}, \bar{x}_i\right\rangle=\left\langle\bar{x}_{j-1}, \bar{x}_j\right\rangle$, 这与 $i$ 的最小性矛盾, 所以 $i=1$. 现在由 $\left\langle\bar{x}_j, \bar{x}_{j+1}\right\rangle=\left\langle\bar{x}_1, \bar{x}_2\right\rangle=\langle 1,1\rangle$. 可知 $x_{j-1} \equiv x_{j+1}-x_j \equiv 1- 1 \equiv 0(\bmod m)$, 即 $m \mid x_{j-1}\left(1<j-1 \leqslant m^2\right)$.
+%%PROBLEM_END%%
+
+

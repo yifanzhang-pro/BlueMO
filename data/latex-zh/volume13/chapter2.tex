@@ -1,0 +1,225 @@
+
+%%TEXT_BEGIN%%
+累次极值.
+组合极值的一个特点是极值函数中变动的量较多, 难于发现函数的变化趋势.
+如果我们先冻结若干个变量, 即视若干个变量为常数, 则其函数的变化对剩下的变量的依赖关系就趋于明显, 由此可比较容易地求出第一次极值.
+然后"解冻"原来的变量, 进而求出函数的极值.
+冻结变量一般有两种方法: 一是冻结一个变量, 它通常用于求三元函数的极值: 对于三元函数 $f(x, y, z)$, 若固定变量 $z$, 则函数可看成是关于 $x 、 y$ 的二元函数.
+在此基础上求出二元函数的极值 $G(z)$, 再视 $z$ 为变量, 对 $G(z)$ 求极值.
+它的基本思路是:
+$$
+u=f(x, y, z)=g(x, y) \leqslant G(z) \leqslant C .
+$$
+但在有的情况下, $G(z)$ 的表达式是一种分段函数, 则上述思路又可表示为
+$$
+\begin{aligned}
+u & =f(x, y, z)=g(x, y) \leqslant G(z)=\left\{\begin{array}{l}
+G_1(z),(z \in A) \\
+G_2(z),(z \in B)
+\end{array}\right. \\
+& \leqslant\left\{\begin{array}{l}
+A_1,(z \in A) \\
+A_2,(z \in B)
+\end{array} \Rightarrow u \leqslant \max \left\{A_1, A_2\right\} .\right.
+\end{aligned}
+$$
+特别地, 如果 $g(x, y) \leqslant G(z) \leqslant C$ 中的等式不同时成立, 则固定 $z$ 的取值时,须分类处理(单独讨论 $z$ 的若干特殊取值). 其基本思路为:
+$$
+\begin{gathered}
+u=f(x, y, z)=\left\{\begin{array}{cc}
+g_1(x, y) & \left(z=z_1\right) \\
+\cdots & \cdots \\
+g_k(x, y) & \left(z=z_k\right) \\
+g(x, y) & (z \in A)
+\end{array} \leqslant\left\{\begin{array}{ccc}
+G_1 & \left(z=z_1\right) \\
+\cdots & \cdots \\
+G_k & \left(z=z_k\right) \\
+G(z) \leqslant G_A & (z \in A)
+\end{array}\right.\right. \\
+\Rightarrow u \leqslant G, \text { 其中 } G=\max \left\{G_1, G_2, \cdots, G_k, G_A\right\} .
+\end{gathered}
+$$
+二是冻结多个变量, 它通常用于求多 (超过 3) 元函数的极值: 在多元函数的解析式中, 选择其中一个字母为主变元, 冻结其他的所有变元, 则函数变为一完函数 $f(t)$. 至此, 先求出 $f(t)$ 的极值点 $f\left(t_0\right)$, 再对 $f\left(t_0\right)$ 冻结变元 (因为 $f\left(t_0\right)$ 是关于其他变元的函数), 又化为一元函数求解.
+如此下去, 直至求出函数的极值.
+从实质上看, 累次极值就是放缩法, 只是放缩方式是采用固定变量逐步消元.
+我们先看一个求一般函数的极值的例子.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $x 、 y 、 z$ 为非负实数, $x+y+z=1$, 求 $F=2 x^2+y+3 z^2$ 的最值.
+%%<SOLUTION>%%
+解:先, 采用代入消元, 有 $y=1-x-z$, 所以
+$$
+\begin{aligned}
+F & =2 x^2+1-x-z+3 z^2 \\
+& =2\left(x-\frac{1}{4}\right)^2+3\left(z-\frac{1}{6}\right)^2+\frac{19}{24} \\
+& \geqslant \frac{19}{24} .
+\end{aligned}
+$$
+又 $F\left(\frac{1}{4}, \frac{7}{12}, \frac{1}{6}\right)=\frac{19}{24}$, 所以 $F$ 的最小值为 $\frac{19}{24}$.
+下面用求累次极值的方法求 $F$ 的最大值.
+固定变量 $z$, 则 $x+y=1-z$ (常数).
+对 $F=2 x^2+y+3 z^2$, 因为 $z$ 为常数, 所以只须求 $2 x^2+y=A$ 的最大值, 其中 $x+y=1-z$. 为叙述问题方便, 令 $1-z=t$, 则 $x+y=t, 0 \leqslant x, y \leqslant t \leqslant 1, t$ 为常数.
+因为 $A=2 x^2+y=2 x^2+t-x$ (代入消元), 注意到 $0 \leqslant x \leqslant t \leqslant 1$, 而二次函数的开口向上, 顶点处不是最大值, 所以 $A$ 只能在 $x=0$ 或 $x=t$ 处取最大值.
+所以,
+$$
+g(z)=A_{\max }=\max \left\{t, 2 t^2\right\}= \begin{cases}t & \left(0 \leqslant t \leqslant \frac{1}{2}\right), \\ 2 t^2 & \left(\frac{1}{2} \leqslant t \leqslant 1\right) .\end{cases}
+$$
+还原成原变量, 有
+$$
+g(z)=A_{\max }=\max \left\{1-z, 2(1-z)^2\right\}= \begin{cases}1-z & \left(\frac{1}{2} \leqslant z \leqslant 1\right) \\ 2(1-z)^2 & \left(0 \leqslant z \leqslant \frac{1}{2}\right)\end{cases}
+$$
+再对 $g(z)$ 求最大值.
+$$
+\begin{aligned}
+& \text { 当 } 0 \leqslant z \leqslant \frac{1}{2} \text { 时, } F \leqslant g(z)+3 z^2=2(1-z)^2+3 z^2=5 z^2-4 z+2 \leqslant 2 . \\
+& \text { 当 } \frac{1}{2} \leqslant z \leqslant 1 \text { 时, } F \leqslant g(z)+3 z^2=(1-z)+3 z^2 \leqslant 3 .
+\end{aligned}
+$$
+由此可见, 对一切 $x 、 y 、 z$, 恒有 $F \leqslant 3$, 其中等式在 $x=y=0, z=1$ 时成立.
+所以 $F$ 的最大值为 3 .
+综上所述, $F$ 的最小值为 $\frac{19}{24}$, 最大值为 3 .
+%%<REMARK>%%
+注:本题求 $F$ 的最大值时, 若对次数与系数进行放缩, 则解答异常简单.
+实际上, $2 x^2+y+3 z^2 \leqslant 2 x+y+3 z \leqslant 3 x+3 y+3 z \leqslant 3$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 有 1988 个单位立方体, 用它们(全部或一部分)拼成高为 1 , 底边长为 $a 、 b 、 c(a<b<c)$ 的三个正四棱柱 $A 、 B 、 C$. 现在把 $A 、 B 、 C$ 都摆在第一象限, 使各个底边都平行于坐标轴, $C$ 的一个顶点在坐标原点, $B$ 在 $C$ 上, 且 $B$ 的任何一个单位立方体均在 $C$ 的某个单位立方体上,但 $B$ 的边界不与 $C$ 的任何边界对齐.
+同样, $A$ 在 $B$ 上,且 $A$ 的任何一个单位立方体均在 $B$ 的某个单位立方体上,但 $A$ 的边界不与 $B$ 的任何边界对齐.
+这样得到一个三层楼.
+问: $a$ 、 $b 、 c$ 取何值时,能摆出的三层楼的个数最多?
+%%<SOLUTION>%%
+分析:解由"边界不对齐", 有 $a \leqslant b-2 \leqslant c-4$, 这样, $A$ 放在 $B$ 上有 $(b-a-1)^2$ 种放法, $B$ 放在 $C$ 上有 $(c-b-1)^2$ 种放法.
+于是, 共有 $P=(b- a-1)^2(c-b-1)^2$ 个不同的三层楼.
+这样, 问题等价于: 对所有满足 $1 \leqslant a \leqslant b-2 \leqslant c-4, a^2+b^2+c^2 \leqslant 1988$ 的正整数 $a 、 b 、 c$, 求 $P=(b-a-1)^2(c- b-1)^2$ 的最大值.
+显然, $P \leqslant(b-2)^2(c-b-1)^2$, 其中等式在 $a=1$ 时成立.
+于是, 只须对所有满足 $3 \leqslant b \leqslant c-2, b^2+c^2 \leqslant 1987$ 的正整数 $b 、 c$, 求 $Q=(b-2)(c- b-1)$ 的最大值.
+容易想到
+$$
+Q \leqslant \frac{[(b-2)+(c-b-1)]^2}{4}=\frac{(c-3)^2}{4} . \label{(*)}
+$$
+至此, 只须求 $c$ 的取值范围就能得出 $\frac{(c-3)^2}{4}$ 的最大值.
+由条件, 有 $c^2 \leqslant 1987-b^2 \leqslant 1987, c \leqslant 44$, 所以 $Q \leqslant \frac{(44-3)^2}{4}<421, Q \leqslant 420$.
+遗憾的是, 等号不能成立, 只能改求累次极值.
+固定 $c$, 则
+$$
+\begin{aligned}
+Q & =-b^2+(1+c) b+2-2 c \\
+& =-\left(b-\frac{1+c}{2}\right)^2+\frac{(1+c)^2}{4}+2-2 c, \label{(**)}
+\end{aligned}
+$$
+由二次函数图象可知, $Q \leqslant \frac{(1+c)^2}{4}+2-2 c=A(c)$ (当 $c$ 为奇数时, $b= \left.\frac{1+c}{2}\right)$; 或 $Q \leqslant \frac{(1+c)^2}{4}-\frac{1}{4}+2-2 c=B(c)$ (当 $c$ 为偶数时, $b=\frac{c}{2}$ ).
+现在, 再求 $A(c) 、 B(c)$ 的最大值.
+由 $b^2+c^2 \leqslant 1987$,有 $c \leqslant 44$,于是, 当 $c$ 为奇数时,
+$$
+Q \leqslant A(c) \leqslant A(43)=\frac{(1+43)^2}{4}+2-86=400 . \label{eq1}
+$$
+当 $c$ 为偶数时,
+$$
+Q \leqslant B(c) \leqslant B(44)=\frac{(1+44)^2}{4}-\frac{1}{4}+2-88=420 .  \label{eq2}
+$$
+虽然恒有 $Q \leqslant 420$, 但等号不成立.
+实际上, 要使式 \ref{eq2} 式取等号, 则有 $c=44$, 且 $b=\frac{c}{2}=22$. 而 $(44,22)$ 不满足 $b^2+c^2 \leqslant 1987$. 由此可知, 不能统一固定 $c$ 求 $Q=(b-2)(c-b-1)$ 的最大值, 应对 $c$ 的取值分类讨论, 得到不同形式的极值函数.
+当 $c=44$ 时, $Q=-b^2+45 b-86$. 因为 $b^2 \leqslant 1987-c^2=51,3 \leqslant b \leqslant 7$, 所以,当 $b=7$ 时, $Q$ 取最大值 180 ;
+当 $c=43$ 时, $3 \leqslant b \leqslant 11$, 此时, $Q \leqslant 279$, 等式在 $b=11$ 时成立;
+当 $c=42$ 时, $3 \leqslant b \leqslant 14$, 此时, $Q \leqslant 324$, 等式在 $b=14$ 时成立;
+当 $c=41$ 时, $3 \leqslant b \leqslant 17$, 此时, $Q \leqslant 345$, 等式在 $b=17$ 时成立;
+当 $c=40$ 时, $3 \leqslant b \leqslant 19$, 此时, $Q \leqslant 340$, 等式在 $b=19$ 时成立;
+当 $c \leqslant 39$ 时, $Q \leqslant \frac{[(b-2)+(c-b-1)]^2}{4}=\frac{(c-3)^2}{4} \leqslant 18^2=324$.
+由上可知, 恒有 $Q \leqslant 345$ 成立.
+又当 $(a, b, c)=(1,17,41)$ 时成立等式.
+故当 $(a, b, c)=(1,17,41)$ 时 $P$ 取最大值 $345^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 给定正整数 $k$ 及正数 $a$, 又 $k_1+k_2+\cdots+k_r=k$ ( $k_i$ 为正整数, $1 \leqslant r \leqslant k$ ), 求 $F=a^{k_1}+a^{k_2}+\cdots+a^{k_r}$ 的最大值.
+%%<SOLUTION>%%
+分析:解本题的实质是将 $k$ 分解为若干个正整数 $k_i$, 使 $a^{k_1}+a^{k_2}+\cdots+ a^{k_r}$ 的值最大.
+但其分解出的正整数的个数不确定, 因而应分两步走(求累次最值). 先固定 $r$, 假定 $k$ 分解为 $r$ 个正整数 $k_i(i=1,2, \cdots, r)$, 求 $a^{k_1}+a^{k_2}+\cdots +a^{k_r}$ 的最大值 $f(r)$. 然后再解冻变量 $r$, 求 $f(r)$ 的最大值.
+先走第一步.
+取 $k=6, r=3$, 则 $k_1+k_2+k_3=6, F=a^{k_1}+a^{k_2}+a^{k_3}$.
+(1) 若 $\left(k_1, k_2, k_3\right)=(2,2,2)$, 则 $F_1=a^2+a^2+a^2=3 a^2$;
+(2) 若 $\left(k_1, k_2, k_3\right)=(1,2,3)$, 则 $F_2=a+a^2+a^3$;
+(3) 若 $\left(k_1, k_2, k_3\right)=(1,1,4)$, 则 $F_3=a+a+a^4=2 a+a^4$.
+$$
+\begin{aligned}
+F_2-F_1 & =a-2 a^2+a^3=a\left(1-2 a+a^2\right)=a(1-a)^2 \geqslant 0, \\
+F_3-F_2 & =a+a^4-a^2-a^3=a\left(1+a^3-a^2-a\right) \\
+& =a\left(1-a^2\right)(1-a) \geqslant 0,
+\end{aligned}
+$$
+所以 $F_3$ 最大.
+一般地, 不难想到, 当指数 $k_1, k_2, \cdots, k_r$ 尽量集中到某一个指数时, $F$ 的值最大.
+即 $F$ 的极值点为 $(1,1, \cdots, k-r+1)$. 我们先证明下面的引理: 设 $a>0, x, y \in \mathbf{N}^*$, 则 $a^x+a^y \leqslant a^{x+y-1}+a$.
+实际上, $a^{x+y-1}+a-a^x-a^y=a\left[a^{x-1}-1\right]\left[a^{y-1}-1\right] \geqslant 0$.
+反复利用引理, 得
+$$
+\begin{aligned}
+F & =a^{k_1}+a^{k_2}+\cdots+a^{k_r} \\
+& \leqslant a+a^{k_1+k_2-1}+a^{k_3}+\cdots+a^{k_r} \\
+& \leqslant a+a+a^{k_1+k_2+k_3-2}+a^{k_4}+\cdots+a^{k_r} \\
+& \leqslant \cdots \leqslant a+a+\cdots+a+a^{k_1+k_2+\cdots+k_r-(r-1)} \\
+& =(r-1) a+a^{k-r+1} .
+\end{aligned}
+$$
+下面再对 $1 \leqslant r \leqslant k$; 求 $f(r)=(r-1) a+a^{k-r+1}$ 的最大值.
+令 $f(x)=a(x-1)+a^{k-x+1}$, 则因 $a(x-1) 、 a^{k-x+1}$ 都是凸函数, 所以 $f(x)$ 是凸函数.
+于是 $f(r) \leqslant \max \{f(1), f(k)\}=\max \left\{a^k, k a\right\}$.
+综上所述, $F$ 的最大值为 $\max \left\{a^k, k a\right\}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 圆内接四边形 $A B C D$ 的四条边长 $A B, B C, C D, D A$ 的长均为正整数, $D A=2005, \angle A B C=\angle A D C=90^{\circ}$, 且 $\max \{A B, B C, C D\}<2005$, 求四边形 $A B C D$ 的周长的最大值和最小值.
+%%<SOLUTION>%%
+解: $A B=a, B C=b, C D=c$, 则 $a^2+b^2=A C^2=c^2+2005^2$, 所以 $2005^2-a^2=b^2-c^2=(b+c)(b-c)$, 其中 $a, b, c \in\{1,2, \cdots, 2004\}$.
+不妨设 $a \geqslant b$, 先固定 $a$, 令 $a_1=2005-a$, 则
+$$
+(b+c)(b-c)=2005^2-a^2=a_1\left(4010-a_1\right) . \label{eq1}
+$$
+由 $a^2+b^2>2005^2$, 得 $a>\frac{2005}{\sqrt{2}}>1411$, 所以 $1 \leqslant a_1<2005-1411=594$.
+所以, 由 式\ref{eq1} 有 $b+c>\sqrt{(b+c)(b-c)}=\sqrt{a_1\left(4010-a_1\right)}$.
+当 $a_1=1$ 时, $a=2004,(b+c)(b-c)=4009=19 \times 211$, 所以, $b+c \geqslant 211, a+b+c \geqslant 2004+211=2215>2155$;
+当 $a_1=2$ 时, $a=2003,(b+c)(b-c)=2^4 \times 3 \times 167$, 又 $b+c$ 与 $b-c$ 同奇偶, 所以, $b+c \geqslant 2 \times 167, a+b+c \geqslant 2003+2 \times 167>2155$;
+当 $a_1=3$ 时, $a=2002,(b+c)(b-c)=3 \times 4007$, 所以, $b+c \geqslant 4007$, $a+b+c \geqslant 2002+4007>2155$
+当 $a_1=4$ 时, $a=2003 ,(b+c)(b-c)=2^3 \times 2003$, 所以, $b+c \geqslant 2 \times 2003, a+b+c \geqslant 2001+2 \times 2003>2155$;
+当 $a_1=5$ 时, $a=2000,(b+c)(b-c)=3^2 \times 5^2 \times 89$, 所以, $b+c \geqslant 225$, $a+b+c \geqslant 2000+225>2155$;
+当 $a_1=6$ 时, $a=1999,(b+c)(b-c)=6 \times 4004=156 \times 154$, 所以, $b+c \geqslant 156, a+b+c \geqslant 1999+156=2155$;
+当 $a_1 \geqslant 7$ 时, 因为 $b+c>\sqrt{a_1\left(4010-a_1\right)}$, 所以 $a+b+c> \sqrt{a_1\left(4010-a_1\right)}+2005-a_1$, 但 $7 \leqslant a_1<594$, 我们可证明 $\sqrt{a_1\left(4010-a_1\right)} +2005-a_1>2155$.
+实际上, $\sqrt{a_1\left(4010-a_1\right)}+2005-a_1>2155 \Leftrightarrow \sqrt{a_1\left(4010-a_1\right)}> 150+a_1 \Leftrightarrow-a_1^2+4010 a_1>a_1^2+300 a_1+150^2 \Leftrightarrow a_1^2-1855 a_1+11250<0$, 由二次函数性质可知, 此不等式在 $7 \leqslant a_1<594$ 时成立.
+综上所述, 恒有 $a+b+c \geqslant 2155$, 于是 $A B+B C+C D+D A \geqslant 2155+ 2005=4160$.
+当 $A B=1999, B C=155, C D=1$ 时等号成立,所以四边形 $A B C D$ 的周长的最小值为 4160 .
+下面求四边形 $A B C D$ 的周长的最大值:
+因为 $a \geqslant b, c<2005$, 所以 $b+c<a+2005=4010-a_1$, 所以由 \ref{eq1} 式知 $a_1<b-c<b+c<4010-a_1$.
+由于 $a_1$ 与 $b-c$ 同奇偶, 所以 $b-c \geqslant a_1+2$, 于是
+$$
+b+c=\frac{a_1\left(4010-a_1\right)}{b-c} \leqslant \frac{a_1\left(4010-a_1\right)}{a_1+2} .
+$$
+当 $b-c=a_1+2$ 时,
+$$
+a+b+c=2005-a_1+\frac{a_1\left(4010-a_1\right)}{a_1+2}=6021-2\left(a_1+2+\frac{4012}{a_1+2}\right)
+$$
+而 $4012=2^2 \times 17 \times 59=68 \times 59$, 所以 $a+b+c \leqslant 6021-2 \cdot(68+59)=5767$.
+当 $b-c \neq a_1+2$ 时, $b-c \geqslant a_1+4$, 从而
+$$
+a+b+c \leqslant 2005-a_1+\frac{a_1\left(4010-a_1\right)}{a_1+4},
+$$
+而 $2005-a_1+\frac{a_1\left(4010-a_1\right)}{a_1+4} \leqslant 5767 \Leftrightarrow a_1^2-122 a_1+7524 \geqslant 0$.
+注意到 $\Delta=122^2-4 \times 7524<0$, 故上式恒成立.
+所以, $A B+B C+C D+D A \leqslant 5767+2005=7772$, 当 $a=1948, b= 1939, c=1880$ 时等号成立, 故四边形 $A B C D$ 的周长的最大值为 7772 .
+%%PROBLEM_END%%
+
+

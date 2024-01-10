@@ -1,0 +1,336 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 九名数学家在一次国际数学会议上相遇, 发现他们中的任意三个人中, 至少有两个人可以用同一种语言对话.
+如果每个数学家至多可说三种语言, 证明这些数学家中, 至少有三人可以用同一种语言对话.
+%%<SOLUTION>%%
+证明:假定不存在三人能说同一种语言, 那么每种语言最多只有两人能说, 于是每个人用一种语言最多只能与另一个人对话.
+设这九名数学家是 $A_1, A_2, \cdots, A_9$, 由于 $A_1$ 最多能说三种语言, 因此至少将与另外五个人, 不妨设是 $A_2, A_3, A_4, A_5, A_6$ 不能对话, 又因为 $A_2$ 也最多能说三种语言, 因而他至少与 $A_3, A_4, A_5, A_6$ 中的一个人不能对话, 不妨设是 $A_3$, 于是 $A_1, A_2, A_3$ 三个人互相之间都不能对话, 这与题设矛盾.
+所以,原结论正确.
+%%<REMARK>%%
+注:本例结论中"至少三人"的反面是"至多两人". 反设是反证法的基础, 为了正确地作出反设, 熟练掌握一些常用的互为否定的表述形式是有必要的,例如: 是/不是; 都是/不都是; 存在/不存在; 大于/不大于; 至少有一个/ 一个也没有; 至多有一个/至少有两个; 存在一个……满足……/对任意都不满足……等等.
+还有一些表面上为肯定, 实质上为否定的表述也应注意到, 例如: "互素"即"不存在大于 1 的公因数"; "无理数"即"不能表示为两个互素的整数之商的数"等等.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 证明: 对任意三角形, 一定存在它的两条边长 $a, b$, 满足
+$$
+1 \leqslant \frac{a}{b}<\frac{1+\sqrt{5}}{2}
+$$
+%%<SOLUTION>%%
+证明:若结论不成立, 则对于 $\triangle A B C$ 的三边长 $a, b, c$, 不妨设 $a \geqslant b \geqslant c$, 于是
+$$
+\frac{a}{b} \geqslant \frac{1+\sqrt{5}}{2}, \frac{b}{c} \geqslant \frac{1+\sqrt{5}}{2},
+$$
+即 $\frac{b}{a} \leqslant \frac{\sqrt{5}-1}{2}, \frac{c}{b} \leqslant \frac{\sqrt{5}-1}{2}$.
+从而
+$$
+\frac{b+c}{a}=\frac{b}{a}\left(1+\frac{c}{b}\right) \leqslant \frac{\sqrt{5}-1}{2}\left(1+\frac{\sqrt{5}-1}{2}\right)=1,
+$$
+但这与 $\triangle A B C$ 中 $b+c>a$ 矛盾! 从而命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 已知 5 根细棍中任意 3 根都可以首尾相接得到一个三角形.
+证明: 这些三角形中必存在锐角三角形.
+%%<SOLUTION>%%
+证明:反证法, 假设 $a, b, c, d, e(0<a \leqslant b \leqslant c \leqslant d \leqslant e)$ 为 5 根细棍的长度, 且它们中任意三根首尾相接得到的是钝角或直角三角形.
+由 $a 、 b 、 e$ 为三角形的三边长知: $a+b>e$;
+由 $a 、 b 、 c$ 为针角或直角三角形的三边长知: $a^2+b^2 \leqslant c^2$;
+由 $c 、 d 、 e$ 为钝角或直角三角形的三边长知: $c^2+d^2 \leqslant e^2$, 于是
+$$
+c^2+d^2 \leqslant e^2<(a+b)^2 \leqslant 2\left(a^2+b^2\right) \leqslant 2 c^2 \leqslant c^2+d^2,
+$$
+矛盾!
+故假设不成立, 从而命题得证.
+%%<REMARK>%%
+注:本例中可供利用的信息甚少, 若能通过反证法的假设获得较多可供利用的信息,则有利于打开局面.
+上述解法在反证法假设之下, 再辅以对 5 根细棍的长度排序, 这样就创设了大量明确的条件, 容易从中大做文章, 直到矛盾产生为止 (上述解答已经过 "修枝剪叶", 将不需要用来导出矛盾的条件全都去除了, 故而显得相对精简).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 证明: $\triangle A B C$ 的六条内角三等分线中, 不存在某三条共点.
+%%<SOLUTION>%%
+证明:反证法, 假设有三条内角三等分线共点,则必然分别引自 $A 、 B$ 、 $C$, 设它们共点于 $P$, 则
+$$
+\frac{\sin \angle B A P}{\sin \angle A B P} \cdot \frac{\sin \angle C B P}{\sin \angle B C P} \cdot \frac{\sin \angle A C P}{\sin \angle C A P}=\frac{B P}{A P} \cdot \frac{C P}{B P} \cdot \frac{A P}{C P}=1 . \label{eq1}
+$$
+设 $A=3 \alpha, B=3 \beta, C=3 \gamma$, 则 $0<\alpha, \beta, \gamma<\frac{\pi}{3}, \alpha+\beta+\gamma=\frac{\pi}{3}$.
+(1)当 $\angle B A P=\alpha, \angle C B P=\beta, \angle A C P=\gamma$ 时, 式\ref{eq1}即为
+$$
+\frac{\sin \alpha}{\sin 2 \beta} \cdot \frac{\sin \beta}{\sin 2 \gamma} \cdot \frac{\sin \gamma}{\sin 2 \alpha}=1 \text {, }
+$$
+化简得
+$$
+\cos \alpha \cos \beta \cos \gamma=\frac{1}{8},
+$$
+但 $\cos \alpha \cos \beta \cos \gamma>\left(\cos \frac{\pi}{3}\right)^3=\frac{1}{8}$, 矛盾!
+(2) 当 $\angle B A P=\alpha, \angle C B P=\beta, \angle A C P=\gamma$ 中恰有两个成立时, 不妨设 $\angle B A P=\alpha, \angle C B P=\beta, \angle A C P=2 \gamma$, 则(1)成为
+$$
+\frac{\sin \alpha}{\sin 2 \beta} \cdot \frac{\sin \beta}{\sin \gamma} \cdot \frac{\sin 2 \gamma}{\sin 2 \alpha}=1,
+$$
+化简得
+$$
+\cos \gamma=2 \cos \alpha \cos \beta,
+$$
+但
+$$
+\begin{aligned}
+1 & >\cos \gamma=2 \cos \alpha \cos \beta=\cos (\alpha-\beta)+\cos (\alpha+\beta) \\
+& >2 \cos (\alpha+\beta)>2 \cos \frac{\pi}{3}=1,
+\end{aligned}
+$$
+矛盾!
+(3) 当 $\angle B A P=\alpha, \angle C B P=\beta, \angle A C P=\gamma$ 中至多有一个成立时, 转而考察 $\angle A B P, \angle B C P, \angle C A P$, 与 (1)、(2)类似, 可推得矛盾!
+综上, 假设不成立, 即不存在三条内角三等分线共点.
+%%<REMARK>%%
+注:本例中"不存在某三条共点" 是一种否定判断, 作为其反面的肯定判断更为具体、明确, 故采用反证法.
+注意本题中结论的反面情形不止一种类型,但可以通过分类讨论逐一排除.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 是否存在单位圆内接三角形 $A B C$, 其三边长 $B C=a, C A=b$, $A B=c$, 且存在实数 $p$, 使得关于 $x$ 的方程 $x^3-2 a x^2+b c x=p$ 有三个实根, 且它们恰为 $\sin A, \sin B, \sin C$ ?
+%%<SOLUTION>%%
+解:定存在这样的三角形, 则由韦达定理得:
+$$
+\left\{\begin{array}{l}
+2 a=\sin A+\sin B+\sin C, \\
+b c=\sin A \sin B+\sin B \sin C+\sin C \sin A .
+\end{array}\right. \label{eq1}
+$$
+又根据题目条件及正弦定理得:
+$$
+\frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\sin C}{c}=\frac{1}{2 R}=\frac{1}{2} .  \label{eq2}
+$$
+由式\ref{eq1},\ref{eq2}可知:
+$$
+\left\{\begin{array}{l}
+2 a=\frac{1}{2}(a+b+c), \\
+b c=\frac{1}{4}(a b+b c+c a) 
+\end{array}\right.
+$$
+即
+$$
+\left\{\begin{array}{l}
+3 a=b+c, \\
+3 b c=a(b+c)
+\end{array}\right. 
+$$
+所以
+$$
+3 b c=a(b+c)=3 a^2,
+$$
+故 $b c=a^2$.
+在 $\triangle A B C$ 中, 由于 $b<a+c$, 故 $3 a=b+c<a+2 c$, 即 $a<c$; 根据 $c< a+b$ 同理可推得 $a<b$. 所以 $a^2<b c=a^2$, 矛盾! 故不存在满足题目条件的三角形.
+%%<REMARK>%%
+注:对此类"存在性"有待确定的问题, 往往可以在"假定存在"的基础上进行正确、严密的逻辑推理, 得到一系列必须满足的结论, 以帮助搜索是否具有满足题意的例子, 在此过程中一旦出现矛盾, 则表明结论为 "不存在", 如此与反证法的思想一致.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 一个棱柱以五边形 $A_1 A_2 A_3 A_4 A_5$ 与 $B_1 B_2 B_3 B_4 B_5$ 为上、下底, 这两个五边形的每一条边及每条线段 $A_i B_j(i, j=1,2,3,4,5)$ 均染上红色或蓝色.
+每一个以棱柱顶点为顶点, 以已染色的线段为边的三角形均有两条边颜色不同.
+求证:上、下底的 10 条边颜色一定相同.
+%%<SOLUTION>%%
+证明:证明上底的 5 条边颜色相同.
+用反证法.
+若不然, 不妨设 $A_1 A_2$ 为红色, $A_1 A_5$ 为蓝色.
+在 $A_1 B_j(j=1,2,3,4,5)$ 这 5 条线段中,至少有三条颜色相同,且这三条线段在下底面上的端点必有两个是相邻的, 不妨设 $A_1 B_1, A_1 B_2$ 均为红色, 其中 $B_1, B_2$ 相邻.
+考虑 $\triangle A_1 A_2 B_1, \triangle A_1 A_2 B_2, \triangle A_1 B_1 B_2$, 由于 $A_1 A_2, A_1 B_1, A_1 B_2$ 为红色, 根据题意可得 $A_2 B_1, A_2 B_2, B_1 B_2$ 必为蓝色, 但此时 $\triangle A_2 B_1 B_2$ 三边都是蓝色,与已知矛盾! 这就证明了上底的 5 条边颜色相同.
+同理可得下底的 5 条边颜色相同.
+故余下只要证明上、下底的颜色一样.
+仍用反证法.
+若不然,不妨假设 $A_1 A_2 A_3 A_4 A_5$ 各边为红色, $B_1 B_2 B_3 B_4 B_5$ 各边为蓝色.
+前面已证明在 $A_1 B_j(j=1,2,3,4,5)$ 这 5 条线段中, 必有两条同色线段在下底面上的端点相邻, 不妨设 $A_1 B_1, A_1 B_2$ 同色, 其中由于 $B_1 B_2$ 为蓝边, 故 $A_1 B_1, A_1 B_2$ 均为红色, 和前面完全一样导致矛盾.
+所以上、下底的 10 条边颜色完全相同.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $a_0, a_1, a_2, \cdots$ 为任意无穷正实数数列.
+求证: 不等式 $1+a_n> \sqrt[n]{2} a_{n-1}$ 对无穷多个正整数 $n$ 成立.
+%%<SOLUTION>%%
+证明:设 $1+a_n>\sqrt[n]{2} a_{n-1}$ 仅对有限个正整数成立.
+设这些正整数中最大的一个为 $M$, 则对任意的正整数 $n>M$, 上述不等式均不成立, 即有
+$$
+1+a_n \leqslant \sqrt[n]{2} a_{n-1}(n>M), 
+$$
+也就是
+$$
+a_n \leqslant \sqrt[n]{2} a_{n-1}-1(n>M) .
+\end{aligned}
+$$
+由伯努利不等式:
+$$
+\begin{gathered}
+\sqrt[n]{2}=(1+1)^{\frac{1}{n}}<1+\frac{1}{n}=\frac{n+1}{n}(n \geqslant 2), \\
+a_n<\frac{n+1}{n} a_{n-1}-1(n>M) .
+\end{gathered}
+$$
+可得
+$$
+a_n<\frac{n+1}{n} a_{n-1}-1(n>M) .
+$$
+下面对一切非负整数 $n$ 用数学归纳法证明:
+$$
+a_{M+n} \leqslant(M+n+1)\left(\frac{a_M}{M+1}-\frac{1}{M+2}-\cdots-\frac{1}{M+n+1}\right) \label{eq1}.
+$$
+当 $n=0$ 时, 不等式两边都等于 $a_M$, 成立.
+假设当 $n=k(k \in \mathbf{N})$ 时成立, 即有
+$$
+a_{M+k} \leqslant(M+k+1)\left(\frac{a_M}{M+1}-\frac{1}{M+2}-\cdots-\frac{1}{M+k+1}\right) .
+$$
+于是得
+$$
+\begin{aligned}
+a_{M+k+1} \leqslant & \frac{M+k+2}{M+k+1} a_{M+k}-1 \\
+\leqslant & \frac{M+k+2}{M+k+1}(M+k+1)\left(\frac{a_M}{M+1}-\frac{1}{M+2}-\cdots-\frac{1}{M+k+1}\right)-1 \\
+= & (M+k+2)\left(\frac{a_M}{M+1}-\frac{1}{M+2}-\cdots-\frac{1}{M+k+1}\right)-1 \\
+= & (M+k+2)\left(\frac{a_M}{M+1}-\frac{1}{M+2}-\cdots-\frac{1}{M+k+1}-\right. \\
+& \left.\frac{1}{M+k+2}\right) .
+\end{aligned}
+$$
+故由归纳假设知,在 $n=k+1$ 时, 原不等式成立.
+易知
+$$
+\lim _{n \rightarrow \infty}\left(\frac{1}{M+2}+\frac{1}{M+3}+\cdots+\frac{1}{n}\right)=+\infty,
+$$
+故存在正整数 $N_0 \geqslant M+2$, 满足 $\frac{1}{M+2}+\frac{1}{M+3}+\cdots+\frac{1}{N_0}>\frac{a_M}{M+1}$.
+在式\ref{eq1}中取 $n=N_0-M-1$, 得 $a_{N_0-1}<0$, 矛盾.
+故原命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 如图(<FilePath:./figures/fig-c2i1.png>),锐角三角形 $A B C$ 的外心为 $O, K$ 是边 $B C$ 上一点 (不是边 $B C$ 的中点), $D$ 是线段 $A K$ 延长线上一点, 直线 $B D$ 与 $A C$ 交于点 $N$, 直线 $C D$ 与 $A B$ 交于点 $M$. 
+求证: 若 $O K \perp M N$, 则 $A, B, D, C$ 四点共圆.
+%%<SOLUTION>%%
+证明:用反证法.
+若 $A, B, D, C$ 不共圆, 设三角形 $A B C$ 的外接圆与射线 $A D$ 交于点 $E$,连接 $B E$ 并延长交直线 $A N$ 于点 $Q$, 连接 $C E$ 并延长交直线 $A M$ 于点 $P$, 连接 $P Q$.
+因为 $P K^2=P$ 的幂 (关于 $\odot O$)+$K$ 的幂 (关于 $\odot O$ ) (见注一), 所以
+$$
+P K^2=\left(P O^2-r^2\right)+\left(K O^2-r^2\right),
+$$
+同理
+$$
+Q K^2=\left(Q O^2-r^2\right)+\left(K O^2-r^2\right),
+$$
+所以
+$$
+P O^2-P K^2=Q O^2-Q K^2,
+$$
+故
+$$
+O K \perp P Q .
+$$
+由题设, $O K \perp M N$, 所以 $P Q / / M N$, 于是
+$$
+\frac{A Q}{Q N}=\frac{A P}{P M} \label{eq1}
+$$
+由梅内劳斯 (Menelaus)定理,得
+$$
+\begin{aligned}
+& \frac{N B}{B D} \cdot \frac{D E}{E A} \cdot \frac{A Q}{Q N}=1, \label{eq2} \\
+& \frac{M C}{C D} \cdot \frac{D E}{E A} \cdot \frac{A P}{P M}=1 . \label{eq3}
+\end{aligned}
+$$
+由式\ref{eq1}, \ref{eq2}, 式\ref{eq3},可得
+$$
+\frac{N B}{B D}=\frac{M C}{C D}
+$$
+所以 $\frac{N D}{B D}=\frac{M D}{D C}$, 故 $\triangle D M N \backsim \triangle D C B$, 于是 $\angle D M N=\angle D C B$, 所以 $B C / / M N$, 故 $O K \perp B C$, 即 $K$ 为 $B C$ 的中点,矛盾! 从而 $A, B, D, C$ 四点共圆.
+%%<REMARK>%%
+注一 " $P K^2=P$ 的幂 (关于 $\left.\odot O\right)+K$ 的幂 (关于 $\odot O)$ )"的证明: 延长 $P K$ 至点 $F$( 如图(<FilePath:./figures/fig-c2i2.png>)), 使得
+$$
+P K \cdot K F=A K \cdot K E, \label{eq4}
+$$
+则 $P, E, F, A$ 四点共圆,故
+$$
+\angle P F E=\angle P A E=\angle B C E,
+$$
+从而 $E, C, F, K$ 四点共圆,于是
+$$
+P K \cdot P F=P E \cdot P C, \label{eq5}
+$$
+式\ref{eq5}-\ref{eq4}, 得
+$$
+\begin{aligned}
+P K^2 & =P E \cdot P C-A K \cdot K E \\
+& =P \text { 的幂 }(\text { 关于 } \odot O)+K \text { 的幂 }(\text { 关于 } \odot O) .
+\end{aligned}
+$$
+注二若点 $E$ 在线段 $A D$ 的延长线上,完全类似.
+注三本例有深刻的射影几何背景及较高的难度.
+该结论虽有直接证法, 但其逆命题是一个已有结果, 相对而言 "对结论反面的否定"易于"对结论本身的直接证明",故而会想到采用反证法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 证明: 方程 $2 x^3+5 x-2=0$ 恰有一个实数根 $r$, 且存在唯一的严格递增正整数数列 $\left\{a_n\right\}$, 使得 $\frac{2}{5}=r^{a_1}+r^{a_2}+r^{a_3}+\cdots$. 
+%%<SOLUTION>%%
+证明: $f(x)=2 x^3+5 x-2$, 则 $f^{\prime}(x)=6 x^2+5>0$, 所以 $f(x)$ 是严格递增的.
+又 $f(0)=-2<0, f\left(\frac{1}{2}\right)=\frac{3}{4}>0$, 故 $f(x)$ 有唯一实数根 $r \in \left(0, \frac{1}{2}\right)$. 所以
+$$
+\begin{aligned}
+& 2 r^3+5 r-2=0, \\
+& \frac{2}{5}=\frac{r}{1-r^3}=r+r^4+r^7+r^{10}+\cdots .
+\end{aligned}
+$$
+故数列 $a_n=3 n-2(n=1,2, \cdots)$ 是满足题设要求的数列.
+若存在两个不同的正整数数列 $a_1<a_2<\cdots<a_n<\cdots$ 和 $b_1< b_2<\cdots<b_n<\cdots$ 满足
+$$
+r^{a_1}+r^{a_2}+r^{a_3}+\cdots=r^{b_1}+r^{b_2}+r^{b_3}+\cdots=\frac{2}{5},
+$$
+去掉上面等式两边相同的项,有
+$$
+r^{s_1}+r^{s_2}+r^{s_3}+\cdots=r^{t_1}+r^{t_2}+r^{t_3}+\cdots,
+$$
+这里 $s_1<s_2<s_3<\cdots, t_1<t_2<t_3<\cdots$, 所有的 $s_i$ 与 $t_j$ 都是不同的.
+不妨设 $s_1<t_1$, 则
+$$
+\begin{aligned}
+& r^{s_1}<r^{s_1}+r^{s_2}+\cdots=r^{t_1}+r^{t_2}+\cdots, \\
+& 1<r^{t_1-s_1}+r^{t_2-s_1}+\cdots \leqslant r+r^2+\cdots=\frac{1}{1-r}-1<\frac{1}{1-\frac{1}{2}}-1=1,
+\end{aligned}
+$$
+矛盾.
+故满足题设的数列是唯一的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设 $n$ 是一个正整数, $a_1, a_2, \cdots, a_k(k \geqslant 2)$ 是集合 $\{1,2, \cdots, n\}$ 中的互不相同的整数,使得对于 $i=1, \cdots, k-1$, 都有 $n$ 整除 $a_i\left(a_{i+1}-1\right)$. 证明: $n$ 不整除 $a_k\left(a_1-1\right)$. 
+%%<SOLUTION>%%
+证明:反证法.
+假设 $n \mid a_k\left(a_1-1\right)$, 则 $a_1 a_k \equiv a_k(\bmod n)$.
+由题设可知 $a_i \equiv a_i a_{i+1}(\bmod n), i=1,2, \cdots, k-1$. 所以
+$a_1 \equiv a_1 a_2 \equiv a_1 a_2 a_3 \equiv \cdots \equiv a_1 a_2 \cdots a_k \equiv a_1 a_2 \cdots a_{k-2} a_k \equiv \cdots \equiv a_1 a_k(\bmod n)$, 所以,
+$$
+a_1 \equiv a_k(\bmod n)
+$$
+而 $0<\left|a_1-a_k\right|<n$, 矛盾!
+%%PROBLEM_END%%
+
+

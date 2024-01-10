@@ -1,0 +1,257 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 解方程组 $\left(1-x_k^2\right) x_{k+1}=2 x_k$, 且 $x_{n+1}=x_1$, 其中 $k=1,2,3, \cdots, n$.
+%%<SOLUTION>%%
+令 $x_1=\tan \theta$, 其中 $\theta \in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$, 则 $x_2=\frac{2 x_1}{1-x_1^2}=\tan 2 \theta$, 所以 $x_k=\tan 2^{k-1} \theta(k=1,2, \cdots, n)$, 又 $x_{n+1}==x_1$, 得 $\tan 2^n \theta=\tan \theta$, 故 $2^n \theta= \theta+m \pi\left[m \in \mathbf{Z}\right.$, 且 $\left.\theta \in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)\right]$, 即 $\theta=\frac{m \pi}{2^n-1}$. 从而原方程组的解为 $x_k=\tan \frac{2^{k-1} m \pi}{2^n-1}(m \in \mathbf{Z}, k=1,2,3, \cdots, n+1)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 解不等式 $\frac{x}{\sqrt{1+x^2}}+\frac{1-x^2}{1+x^2}>0$.
+%%<SOLUTION>%%
+设 $x=\tan \theta$, 其中 $\theta \in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$, 则 $\frac{x}{\sqrt{1+x^2}}=\sin \theta, \frac{1-x^2}{1+x^2}= \cos 2 \theta$, 原不等式可化为 $\sin \theta+\cos 2 \theta>0$, 即 $(2 \sin \theta+1)(\sin \theta-1)<0$. 所以 $\sin \theta>-\frac{1}{2}$, 得 $-\frac{\pi}{6}<\theta<\frac{\pi}{2}$. 即 $\tan \theta>\tan \left(-\frac{\pi}{6}\right)=-\frac{\sqrt{3}}{3}$, 故原不等式的解集为 $\left\{x \mid x>-\frac{\sqrt{3}}{3}\right\}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 已知 $x, y, z \in \mathbf{R}$, 求证:
+$$
+\frac{x-y}{1+x y}+\frac{y-z}{1+y z}+\frac{z-x}{1+x z}=\frac{(x-y)(y-z)(z-x)}{(1+x y)(1+y z)(1+z x)} .
+$$
+%%<SOLUTION>%%
+设 $x=\tan \alpha, y=\tan \beta, z=\tan \gamma$, 则 $\frac{x-y}{1+x y}=\tan \left(\alpha^{--} \beta\right), \frac{y-z}{1+y z}= \tan (\beta-\gamma), \frac{z-x}{1+z x}=\tan (\gamma-\alpha)$, 因 $(\alpha-\beta)+(\beta-\gamma)+(\gamma-\alpha)=0$, 所以 $\tan (\alpha-\beta)+\tan (\beta-\gamma)+\tan (\gamma-\alpha)=\tan (\alpha-\beta) \tan (\beta-\gamma) \tan (\gamma-\alpha)$, 故原式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 已知 $x 、 y 、 z$ 是非负实数,且 $x+y+z=1$, 求证:
+$$
+0 \leqslant x y+y z+z x-2 x y z \leqslant \frac{7}{27} .
+$$
+%%<SOLUTION>%%
+不妨设 $z<\frac{1}{2}$, 作三角代换: $x=\sin ^2 \alpha \cos ^2 \beta, y=\cos ^2 \alpha \cos ^2 \beta, z=\sin ^2 \beta$, 则 $x y+y z+z x-2 x y z=x y(1-z)+z(x+y-x y)=\sin ^2 \alpha \cos ^2 \alpha \cos ^6 \beta+ \sin ^2 \beta \cos ^2 \beta\left(1-\sin ^2 \alpha \cos ^2 \alpha \cos ^2 \beta\right) \geqslant 0$. 同理 $x y+y z+z x-2 x y z=x y(1- 2 z)+z(x+y)=\sin ^2 \alpha \cos ^2 \alpha \cos ^4 \beta \cos 2 \beta+\frac{1}{4} \sin ^2 2 \beta=-\frac{1}{4} \sin ^2 2 \alpha \cdot \frac{1}{4} (1+2 \cos 2 \beta)^2 \cos 2 \beta+\frac{1}{4}\left(1-\cos ^2 2 \beta\right) \leqslant \frac{1}{4}+\frac{1}{16} \cos 2 \beta(1+\cos 2 \beta)^2- \frac{1}{4} \cos ^2 2 \beta=\frac{1}{4}+\frac{1}{32}\left[2 \cos 2 \beta(1-\cos 2 \beta)^2\right] \leqslant \frac{1}{4}+\frac{1}{32} \times\left(\frac{2}{3}\right)^3=\frac{7}{27}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 数列 $a_0, a_1, a_2, \cdots$ 与 $b_0, b_1, b_2, \cdots$ 定义如下: $a_0=\frac{\sqrt{2}}{2}, a_{n+1}=\frac{\sqrt{2}}{2}$
+$$
+\sqrt{1-\sqrt{1-a_n^2}}, n=0,1,2, \cdots, b_0=1, b_{n+1}=\frac{\sqrt{1+b_n^2}-1}{b_n}, n=0,1,2, \cdots
+$$
+求证:不等式 $2^{n+2} a_n<\pi<2^{n+2} b_n$ 对 $n=0,1,2, \cdots$ 成立.
+%%<SOLUTION>%%
+$a_0=\frac{\sqrt{2}}{2}=\sin \frac{\pi}{2^2}, a_1=\frac{\sqrt{2}}{2} \sqrt{1-\sqrt{1-\sin ^2 \frac{\pi}{2^2}}}=\frac{\sqrt{2}}{2} \sqrt{1-\cos \frac{\pi}{2^2}}=\frac{\sqrt{2}}{2} \times \sqrt{2 \sin ^2 \frac{\pi}{2^3}}=\sin \frac{\pi}{2^3}$. 若设 $a_k=\sin \frac{\pi}{2^{k+2}}$, 则 $a_{k+1}=\frac{\sqrt{2}}{2} \cdot \sqrt{1-\cos \frac{\pi}{2^{k+2}}}=\sin \frac{\pi}{2^{k+3}}$, 从而 $a_n=\sin \frac{\pi}{2^{n+2}}$. 同理 $b_n=\tan \frac{\pi}{2^{n+2}}$. 当 $x \in\left(0, \frac{\pi}{2}\right)$ 时, $\sin x<x<\tan x$, 所以 $2^{n+2} a_n=2^{n+2} \sin \frac{\pi}{2^{n+2}}<2^{n+2} \cdot \frac{\pi}{2^{n+2}}<2^{n+2} \tan \frac{\pi}{2^{n+2}}$, 即 $2^{n+2} a_n<\pi<2^{n+2} b_n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 已知 $a_1^2+b_1^2=a_2^2+b_2^2=1, a_1 a_2+b_1 b_2=0$, 求证: $a_1^2+a_2^2=b_1^2+b_2^2=1$, $a_1 b_1+a_2 b_2=0$.
+%%<SOLUTION>%%
+设 $a_1=\sin \alpha, b_1=\cos \alpha, a_2=\sin \beta, b_2=\cos \beta$, 则 $\sin \alpha \sin \beta+ \cos \alpha \cos \beta=0$, 即 $\cos (\alpha-\beta)=0$. 不妨设 $\alpha-\beta=\frac{\pi}{2}$, 从而 $a_1^2+a_2^2=\sin ^2 \alpha+ \sin ^2 \beta=\sin ^2 \alpha+\sin ^2\left(\frac{\pi}{2}+\alpha\right)=1$, 同理 $b_1^2+b_2^2=1, a_1 b_1+a_2 b_2=\sin \alpha \cos \alpha+ \sin \beta \cos \beta=0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 解方程 $x+\frac{x}{\sqrt{x^2-1}}=\frac{35}{12}$.
+%%<SOLUTION>%%
+因 $|x|>1$, 且 $x>0$, 所以设 $x=\frac{1}{\cos \alpha}, \alpha \in\left(0, \frac{\pi}{2}\right)$, 代入原方程得 $\frac{1}{\cos \alpha}+\frac{1}{\sin \alpha}=\frac{35}{12}$, 解得 $\cos \alpha=\frac{3}{5}$ 或 $\frac{4}{5}$, 所以 $x=\frac{5}{3}$ 或 $\frac{5}{4}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 解方程组 $\left\{\begin{array}{l}\sqrt{x(1-y)}+\sqrt{y(1-x)}=1, \\ \sqrt{x y}+\sqrt{(1-x)(1-y)}=1 .\end{array}\right.$
+%%<SOLUTION>%%
+从原方程组得 $0 \leqslant x \leqslant 1,0 \leqslant y \leqslant 1$, 故设 $x=\cos ^2 \alpha, y=\cos ^2 \beta$, 其 $\left\{\begin{array}{l}\sin (\alpha+\beta)=1, \\ \cos (\alpha-\beta)=1 .\end{array}\right.$ 所以 $\alpha=\beta=\frac{\pi}{4}$, 得 $x=y=\frac{1}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 求满足下列等式的实数 $x 、 y 、 z:\left(1+x^2\right)\left(1+y^2\right)\left(1+z^2\right)=4 x y\left(1-z^2\right)$.
+%%<SOLUTION>%%
+原等式变形为 $\frac{2 \dot{x}}{1+x^2} \cdot \frac{2 y}{1+y^2} \cdot \frac{1-z^2}{1+z^2}=1$, 设 $x=\tan \alpha, y=\tan \beta$, $z=\tan \gamma$, 其中 $\alpha, \beta, \gamma \in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$, 则 $\sin 2 \alpha \cdot \sin 2 \beta \cdot \cos 2 \gamma=1$. 但 $|\sin 2 \alpha| \leqslant 1,|\sin 2 \beta| \leqslant 1,|\cos 2 \gamma| \leqslant 1$, 又 $2 \alpha, 2 \beta, 2 \gamma \in(-\pi, \pi)$, 所以 $\sin 2 \alpha=\sin 2 \beta=\cos 2 \gamma=1$ 或 $\sin 2 \alpha=\sin 2 \beta=-1, \cos 2 \gamma=1$, 即 $\alpha=\beta= \frac{\pi}{4}, \gamma=0$ 或 $\alpha=\beta=-\frac{\pi}{4}, \gamma=0$. 从而 $x=y=1$ 及 $z=0$ 或 $x=y=-1$ 及 $z=0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 已知实数 $x 、 y$ 满足 $x^2+y^2-8 x+6 y+21 \leqslant 0$, 求证:
+$$
+2 \sqrt{3} \leqslant \sqrt{x^2+y^2+3} \leqslant 2 \sqrt{13} .
+$$
+%%<SOLUTION>%%
+原条件不等式可化为 $(x-4)^2+(y+3)^2 \leqslant 4$, 设 $x=4+\gamma \cos \theta, y= -3+\gamma \sin \theta, \gamma \in[0,2], \theta \in[0,2 \pi]$, 于是 $\sqrt{x^2+y^2+3}= \sqrt{25+8 \gamma \cos \theta}-6 \gamma \sin \theta+\gamma^2+3=\sqrt{\gamma^2+10 \gamma \cos (\theta+\varphi)+28}$, 其中 $\cos \varphi= \frac{4}{5}, \sin \varphi=\frac{3}{5}$. 因为 $|\cos (\theta+\varphi)| \leqslant 1$, 所以 $\sqrt{\gamma^2-10 \gamma+28} \leqslant \sqrt{\gamma^2+10 \gamma \cos (\overline{\theta+\varphi})+28} \leqslant \sqrt{\gamma^2+10 \gamma+28}$. 当 $\gamma \in[0,2]$ 时, $\left(\sqrt{\gamma^2-10 \gamma+28}\right)_{\min }=2 \sqrt{3},\left(\sqrt{\gamma^2+10 \gamma+28}\right)_{\max }=2 \sqrt{13}$. 故原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 求证: $-\sqrt{3}<\frac{\sqrt{3} x+1}{\sqrt{x^2+1}} \leqslant 2$.
+%%<SOLUTION>%%
+设 $x=\tan \theta, \theta \in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$, 则 $\frac{\sqrt{3} x+1}{\sqrt{x^2+1}}=(\sqrt{3} \tan \theta+1) \cos \theta= \sqrt{3} \sin \theta+\cos \theta=2 \sin \left(\theta+\frac{\pi}{6}\right)$. 因为 $-\frac{\pi}{3}<\theta+\frac{\pi}{6}<\frac{2 \pi}{3}$, 所以 $\sin \left(\theta+\frac{\pi}{6}\right) \epsilon\left(-\frac{\sqrt{3}}{2}, 1\right)$, 故原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 求函数 $y=x+4+\sqrt{5-x^2}$ 的最小值和最大值.
+%%<SOLUTION>%%
+设 $x=\sqrt{5} \cos \theta, \theta \in[0, \pi]$, 则 $y=\sqrt{5} \cos \theta+4+\sqrt{5} \sin \theta= \sqrt{10} \sin \left(\theta+\frac{\pi}{4}\right)+4$, 由 $\theta+\frac{\pi}{4} \in\left[\frac{\pi}{4}, \frac{5 \pi}{4}\right]$, 得 $\sin \left(\theta+\frac{\pi}{4}\right) \in\left[-\frac{\sqrt{2}}{2}, 1\right]$, 当 $\theta=\pi$ 时, $y_{\text {min }}=4-\sqrt{5}$; 当 $\theta=\frac{\pi}{4}$ 时, $y_{\text {max }}=4+\sqrt{10}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 已知函数 $f(x)=a x+b, x \in[-1,1]$, 且 $2 a^2+6 b^2=3$, 求证: $|f(x)| \leqslant \sqrt{2}$.
+%%<SOLUTION>%%
+将 $2 a^2+6 b^2=3$ 变形为 $\left(\sqrt{\frac{2}{3}} a\right)^2+(\sqrt{2} b)^2=1$, 设 $a=\sqrt{\frac{3}{2}} \sin \theta$, $b=\sqrt{\frac{1}{2}} \cos \theta, \theta \in[0,2 \pi)$, 则 $f(x)=\sqrt{\frac{3}{2}} x \sin \theta+\sqrt{\frac{1}{2}} \cos \theta= \sqrt{\frac{3 x^2+1}{2}} \sin (\theta+\varphi)$, 所以 $|f(x)| \leqslant \sqrt{\frac{3 x^2+1}{2}} \leqslant 2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 任给 13 个不同的实数,求证: 至少存在两个,不妨设 $x$ 和 $y$, 满足 $0< \frac{x-y}{1+x y} \leqslant 2-\sqrt{3}$.
+%%<SOLUTION>%%
+任给的 13 个实数分别记作 $\tan \theta_i, \theta_i \in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right), i=1,2$, $3, \cdots, 13$, 将 $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$ 等分成 12 个区间, 则 $\theta_i$ 中至少有两个角的终边落在同一区间内, 不妨设这两个角为 $\alpha$ 、 $\beta$ 且 $\alpha \geqslant \beta$, 即 $0 \leqslant \alpha-\beta \leqslant \frac{\pi}{12}$, 令 $x=\tan \alpha$, $y=\tan \beta$, 则 $\frac{x-y}{1+x y}=\tan (\alpha-\beta)$, 从而 $0 \leqslant \frac{x-y}{1+x y} \leqslant 2-\sqrt{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 某体育馆拟用运动场的边角地建一个矩形的健身室,如图(<FilePath:./figures/fig-c6p15.png>)所示, $A B C D$ 是一块边长为 50 米的正方形地皮, 扇形 $C E F$ 是运动场的一部分, 其半径为 40 米,矩形 $A G H M$ 就是拟建的健身室, 其中 $G$ 、 $M$ 分别在 $A B$ 和 $A D$ 上, $H$ 在 $\overparen{E F}$ 上, 设矩形 $A G H M$ 的面积为 $S, \angle H C F=\theta$, 请将 $S$ 表示为 $\theta$ 的函数,并找出点 $H$ 在 $\overparen{E F}$ 的何处时,该健身室的面积最大,并求出最大面积.
+%%<SOLUTION>%%
+延长 $G H$ 交 $C D$ 于 $P$, 则 $H P \perp C D, H P=C H \sin \theta=40 \sin \theta$, $C P=C H \cos \theta=40 \cos \theta, H G=50-40 \sin \theta, H M=50-40 \cos \theta$, 所以 $S= H G \cdot H M=(50-40 \sin \theta)(50-40 \cos \theta)=100[25-20(\sin \theta+\cos \theta)+ 16 \sin \theta \cos \theta]$, 其中 $0 \leqslant \theta \leqslant \frac{\pi}{2}$, 设 $t=\sin \theta+\cos \theta$, 则 $2 \sin \theta \cos \theta=t^2-1,1 \leqslant t \leqslant \sqrt{2}$, 故 $S=800\left(t-\frac{5}{4}\right)^2+450$, 当 $t=1$ 时, $S_{\text {max }}=500\left(\right.$ 米 $\left.^2\right)$. 此时 $\theta=0$ 或 $\frac{\pi}{2}$, 即 $H$ 在 $\overparen{E F}$ 的端点 $E$ 或 $F$ 处.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16. 某城市有一条公路从正西方向 $O A$ 通过市中心 $O$ 后转向东北方向 $O B$, 现要修建一条铁路 $L, L$ 在 $O A$ 上设一车站 $A$, 在 $O B$ 上设一车站 $B$, 铁路在 $A B$ 部分为直线段, 现要求市中心 $O$ 与 $A B$ 之间距离为 10 千米, 问把 $A B$分别设在公路上距中心 $O$ 多远处才能使 $|A B|$ 最短? 并求出最短距离.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c6p16.png>), 由已知条件得 $O H \perp A B, O H=10, \angle A O B=135^{\circ}$, 设 $\angle O A B=\alpha, \angle O B A=45^{\circ}-\alpha$, 则 $A H=10 \cot \alpha, B H=10 \cot \left(45^{\circ}-\alpha\right)$,于是 $A B=10 \cot \alpha+ 10 \cot \left(45^{\circ}-\alpha\right)=\frac{10}{\tan \alpha}+\frac{10(1+\tan \alpha)}{1-\tan \alpha}= \frac{10\left(1+\tan ^2 \alpha\right)}{\tan \alpha(1-\tan \alpha)}=\frac{10}{\sin \alpha(\cos \alpha-\sin \alpha)}=\frac{20}{\sin 2 \alpha+\cos 2 \alpha-1}=\frac{20}{\sqrt{2} \sin \left(2 \alpha+45^{\circ}\right)-1}$, 所以当 $\alpha=22.5^{\circ}$ 时, $(A B)_{\text {min }}= 20(\sqrt{2}+1)$ 千米.
+此时 $O A=O B=\frac{10}{\sin 22.5^{\circ}}=10 \sqrt{4+2 \sqrt{2}}$ (千米).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17. 在体育比赛中,有一种"铁人"项目的比赛,运动员通过跑步、划船、骑自行车等项目的比赛, 以累计成绩决定胜负.
+在这类比赛中常遇到如下情况: 运动员从 $A$ 地出发跑步到河岸渡口 $B$ 处,然后划船到河对岸 $P$ 处.
+上岸后沿河岸骑自行车到达河岸边的终点 $C$ 处.
+如果某两名运动员的跑步、划船、骑自行车的速度均相同, 那么他们如何选择登岸地点 $P$ 的位置, 才能取得胜利呢?
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c6p17.png>),设河水流速为 $v_0$, 人在静水中划船的速度为 $v_1$, 在岸上骑车的速度为 $v_2\left(v_2>v_1+v_0\right)$, 河宽为 $\left|B B^{\prime}\right|=d,\left|B^{\prime} C\right|=s$, 船速方向 $\overrightarrow{B D}$ 与岸的夹角为 $\theta$, 船实际行驶方向 $\overrightarrow{B P}\left(v_1\right.$ 与 $v_0$ 的合速度方向与岸的夹角为 $\alpha$, 从 $B$ 经 $P$ 到 $C$ 所用时间为 $T$, 过 $D$ 作 $D E / / B^{\prime} C$ 交 $B P$ 于 $E$, 则 $\frac{v_1}{\sin \alpha}=\frac{v_0}{\sin (\theta-\alpha)} \cdots$ (1).
+$T=\frac{d}{v_1 \sin \theta}+\frac{s-d \cot \alpha}{v_2} \cdots$ (2). 由 (1) 得 $\cot \alpha=\frac{v_1 \cos \theta+v_0}{v_1 \sin \theta}$ 代入 (2) 得 $T= \frac{d}{v_1 \sin \theta}+\frac{s v_1 \sin \theta-d v_1 \cos \theta-d v_0}{v_1 v_2 \sin \theta}$, 所以 $T v_1 v_2 \sin \theta=d v_2+s v_1 \sin \theta- d v_1 \cos \theta-d v_0$. 整理得 $\left(T v_1 v_2-s v_1\right) \sin \theta+d v_1 \cos \theta=d\left(v_2-v_0\right)$. 从而 $v_1 \sqrt{\left(T v_2-s\right)^2+d^2} \sin (\theta+\varphi)=d\left(v_1-v_b\right)$, 于是 $\left|\frac{d\left(v_2-v_b\right)}{v_1 \sqrt{\left(T v_2-s\right)^2+d^2}}\right| \leqslant 1$. 
+解得 $T \geqslant \frac{s}{v_2}+\frac{d \sqrt{\left(v_2-v_b\right)^2-v_1^2}}{v_1 v_2}$. 等号当且仅当 $\sin (\theta+\varphi)=1$ 时成立.
+从而 $\cos \theta= \sin \varphi=\frac{d}{\sqrt{\left(T v_2-s\right)^2+d^2}}=\frac{v_1}{v_2-v_1}, \sin \theta=\cos \varphi=\frac{T v_2-s}{\sqrt{\left(T v_2-s\right)^2+d^2}}= \frac{\sqrt{\left(v_2-v_1\right)^2-v_1^2}}{v_2-v_1}$, 所以 $\cot \alpha=\frac{v_1 \cos \theta+v_0}{v_1 \sin \theta}=\frac{v_1^2+v_2 v_0-v_0^2}{v_1 \sqrt{\left(v_2-v_0\right)^2-v_1^2}}$. 故登岸的最佳地点 $P$ 随 $B^{\prime}$ 的距离为 $\left|B^{\prime} P\right|=\frac{\left(v_1^2+v_2 r_0-v_0^2\right) d}{v_1 \sqrt{\left(v_2-r_0\right)^2-v_1^2}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题18. 某大型装载车的车轮直径为 3 米, 车轮外沿有一污点 $A$, 当装载车以 $\pi$ 米/秒从最初的位置开始运行时, 点 $A$ 上升到最高点需要 1 秒钟.
+(1) 求点 $A$ 离地高度 $h$ (单位: 米) 与运行时间 $t$ (单位: 秒) 的函数关系式; (2) 若此车运行距离为 50 米, 试求污点距地面高度为 $\frac{3}{4}$ 米时的 $t$ 之值.
+%%<SOLUTION>%%
+(1) 不难发现, 点 $A$ 运动的路程就是装载车运行的路程, 点 $A$ 运动一周,装载车行距离为 $3 \pi$ 米, 由于装载车运行速度为 $\pi$ 米/秒,故车轮运行一周需要 3 秒钟.
+点 $A$ 上升到最高点需要 1 秒钟, 表明车轮转动 $\frac{1}{3}$ 个圆周, 即 $A$ 运行一秒钟, 转过圆心角 $\frac{2}{3} \pi$. 不妨设点 $A$ 沿逆时针方向转动, 根据物理中相对运动原理, 如图(<FilePath:./figures/fig-c6p18.png>)所示, 我们可以把装载车的向左运动看作是车轮中心 $O$ 静止, 道路带着车轮向右运动, 这样点 $A$ 就绕固定点 $O$ 作圆周运动, 设射线 $O X$ 方向向右, 根据三角函数中角的定义及三角函数的定义, 可得 $\sin \left(\frac{2 \pi}{3} t-\frac{\pi}{6}\right)=\frac{h-\frac{3}{2}}{\frac{3}{2}}$, 即 $h=\frac{3}{2} \sin \left(\frac{2 \pi}{3} t-\frac{\pi}{6}\right)+\frac{3}{2}$.
+(2) 由 $\frac{3}{4}=\frac{3}{2}+\frac{3}{2} \sin \left(\frac{2 \pi}{3} t-\frac{\pi}{6}\right)$, 得 $\sin \left(\frac{2 \pi}{3} t-\frac{\pi}{6}\right)=-\frac{1}{2}, \frac{2 \pi}{3} t-\frac{\pi}{6}=2 k \pi- \frac{\pi}{6}$ 或 $2 k \pi+\frac{7}{6} \pi$, 得 $t=3 k$ 或 $t=3 k+2$, 又因为 $0 \leqslant t \leqslant \frac{50}{\pi} \approx 15.9$, 所以 $t=0$ 、 $2 、 3 、 5 、 6 、 8 、 9 、 11 、 12 、 14 、 15($ 秒).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题19. 已知 $P$ 是等边 $\triangle A B C$ 外接圆 $\overparen{B C}$ 上的任意一点,
+(1) 求证: $P A=P B+P C, P A^2=B C^2+P B \cdot P C$;
+(2) 求 $S_{\triangle P A B}+S_{\triangle P B C}$ 的最大值.
+%%<SOLUTION>%%
+(1) $\triangle P A B$ 中, 设 $\angle B A P=\alpha$, 则 $\angle P B A= 120^{\circ}-\alpha, \angle P A C=60^{\circ}-\alpha$, 从而 $P B+P C=2 R\left[\sin \alpha+ \sin \left(60^{\circ}-\alpha\right)\right]=2 R \cos \left(30^{\circ}-\alpha\right)=2 R \sin \left(120^{\circ}-\alpha\right)=P A$, $A B^2=B C^2=P A^2+P B^2-2 P A \cdot P B \cos 60^{\circ}=P A^2+ P B^2-P A \cdot P B=P A^2-P B \cdot P C$. 
+(2) 设 $\triangle A B C$ 边长为 $a$, 则 $S_{\triangle P A B}+S_{\triangle P B C}=\frac{1}{2} a \cdot P A \sin \alpha+\frac{1}{2} a \cdot P C \sin \alpha= \frac{1}{2} a \sin \alpha(P A+P C)$, 在 $\triangle P A C$ 中, $\frac{P A}{\sin \left(60^{\circ}+\alpha\right)}=\frac{P C}{\sin \left(60^{\circ}-\alpha\right)}=\frac{A C}{\sin 60^{\circ}}$, 从而 $P A+P C=\frac{2}{\sqrt{3}} a\left[\sin \left(60^{\circ}+\alpha\right)+\sin \left(60^{\circ}-\alpha\right)\right]= 2 a \cos \alpha$, 所以 $S_{\triangle P A B}+S_{\triangle P B C}=\frac{1}{2} a^2 \sin 2 \alpha \leqslant \frac{1}{2} a^2$. 即最大值为 $\frac{1}{2} a^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题20. 等腰 $\triangle A B C$ 的底边长为 $a$, 腰长为 $b$, 顶角为 $20^{\circ}$, 求证: $a^3+b^3=3 a b^2$.
+%%<SOLUTION>%%
+由条件得 $a=2 b \sin 10^{\circ}$, 于是 $a^3=8 b^3 \sin ^3 10^{\circ}=8 b^3 \cdot \frac{1-\cos 20^{\circ}}{2}$. $\sin 10^{\circ}=4 b^3\left(\sin 10^{\circ}-\sin 10^{\circ} \cos 20^{\circ}\right)=4 b^3\left[\sin 10^{\circ}-\frac{1}{2}\left(\sin 30^{\circ}-\sin 10^{\circ}\right)\right]= 4 b^3\left[-\frac{3}{2} \sin 10^{\circ}-\frac{1}{4}\right]=6 b^3 \sin 10^{\circ}-b^3=3 a b^2-b^3$, 得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题21. 在 $\triangle A B C$ 中, $A C=b, A B=c, \angle B A C=\alpha$, 试用 $b 、 c 、 \alpha$ 表示角 $A$ 的平分线 $A T$ 之长.
+%%<SOLUTION>%%
+由 $S_{\triangle A B T}+S_{\triangle A T C}=S_{\triangle A B C}$, 得 $\frac{1}{2} \cdot c \cdot A T \cdot \sin \frac{\alpha}{2}+\frac{1}{2} b \cdot A T \cdot \sin \frac{\alpha}{2}= \frac{1}{2} b c \sin \alpha$, 故 $A T=\frac{2 b c}{b+c} \cos \frac{\alpha}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题22. 在等腰 $\triangle A B C$ 中, 顶角 $A=100^{\circ}$, 角 $B$ 的平分线交 $A C$ 于 $D$, 求证: $A D+ B D=B C$.
+%%<SOLUTION>%%
+在 $\triangle A B D$ 中, $\frac{A D}{\sin 20^{\circ}}=\frac{B D}{\sin 100^{\circ}}=\frac{A B}{\sin 60^{\circ}}$, 于是 $A D+B D= \frac{A B}{\sin 60^{\circ}}\left(\sin 20^{\circ}+\sin 100^{\circ}\right)=\frac{A B}{\sin 60^{\circ}} \cdot 2 \sin 60^{\circ} \cos 40^{\circ}=2 A B \cos 40^{\circ}=B C$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题23. 如果 $x, y, z>1$, 且 $\frac{1}{x}+\frac{1}{y}+\frac{1}{z}=2$, 证明:
+$$
+\sqrt{x+y+z} \geqslant \sqrt{x-1}+\sqrt{y-1}+\sqrt{z-1} .
+$$
+%%<SOLUTION>%%
+设 $\alpha, \beta, \gamma \in\left(0, \frac{\pi}{2}\right)$, 则有 $0<\cos ^2 \alpha, \cos ^2 \beta, \cos ^2 \gamma<1$, 且 $\frac{1}{\cos ^2 \alpha}>1, \frac{1}{\cos ^2 \beta}>1, \frac{1}{\cos ^2 \gamma}>1$, 令 $x=\frac{1}{\cos ^2 \alpha}, y=\frac{1}{\cos ^2 \beta}, z=\frac{1}{\cos ^2 \gamma}$, 则 $\frac{1}{x}+\frac{1}{y}+ \frac{1}{z}=\cos ^2 \alpha+\cos ^2 \beta+\cos ^2 \gamma=2$. 即 $\sin ^2 \alpha+\sin ^2 \beta+\sin ^2 \gamma=1 \cdots$ (1). 待证的不等
+(1) 式, 对 (2) 式用柯西不等式有 $\frac{\sin \alpha}{\cos \alpha}+\frac{\sin \beta}{\cos \beta}+\frac{\sin \gamma}{\cos \gamma} \leqslant \sqrt{\sin ^2 \alpha+\sin ^2 \beta+\sin ^2 \gamma} \sin \alpha \cos \alpha=\sin \beta \cos \beta=\sin \gamma \cos \gamma$. 即 $\alpha=\beta=\gamma$ 时 (3) 等号成立,故 (2) 式成立, 所以原不等式得证.
+评注此题解三角代换 $x=\frac{1}{\sin ^2 \alpha}, y=\frac{1}{\sin ^2 \beta}, z=\frac{1}{\sin ^2 \gamma}$ 证法一样.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题24. 设 $\triangle A B C$ 是锐角三角形, 其外接圆圆心为 $O$, 半径为 $R, A O$ 交 $\triangle B O C$ 的外接圆于 $A^{\prime}, B O$ 交 $\triangle C O A$ 的外接圆于点 $B^{\prime}, C O$ 交 $\triangle A O B$ 的外接圆于点 $C^{\prime}$. 证明: $O A^{\prime} \cdot O B^{\prime} \cdot O C^{\prime} \geqslant 8 R^3$, 并指出在什么条件下等号成立.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c6p24.png>), 作 $\triangle B O C$ 的外接圆直径 $O D$, 连 $A^{\prime} D 、 C D$, 则 $\angle O A^{\prime} D=\angle O C D=90^{\circ}$, 从而 $O A^{\prime}=O D$. $\cos \angle A^{\prime} O D=R \cdot \frac{\cos \angle A^{\prime} O D}{\cos \angle C O D}$; 易知 $O D \perp B C$, 于是 $\angle C O D=\angle A, \angle A^{\prime} O D=180^{\circ}-\angle C O D- \angle A O C=180^{\circ}-\angle A-2 \angle B=\angle C-\angle B$, 即 $O A^{\prime}= R \frac{\cos (B-C)}{\cos A}$, 同理 $O B^{\prime}=R \cdot \frac{\cos (A-C)}{\cos B}, O C^{\prime}= R \frac{\cos (B-A)}{\cos C}$, 于是 $O A^{\prime} \cdot O B^{\prime} \cdot O C^{\prime} \geqslant 8 R^3 \Leftrightarrow\frac{\cos (A-B)}{\cos C} \cdot \frac{\cos (A-C)}{\cos B} \cdot \frac{\cos (B-C)}{\cos A} \geqslant 8$, ( * ) 而 $\frac{\cos (A-B)}{\cos C}= \frac{\cos A}{-\cos A \cos B+\sin A \sin B}=\frac{1+\cot A \cdot \cot B}{1-\cot A \cdot \cot B}$, 令 $x=\cot A \cot B, y= \cot B \cot C, z=\cot C \cot A$. 则有 $x+y+z=1$, 又锐角三角形, 所以 $x, y$, $z>0, \frac{1+x}{1-x}=\frac{x+y+z+x}{x+y+z-x}=\frac{(x+y)+(z+x)}{y+z} \geqslant \frac{2 \sqrt{(x+y)(x+z)}}{y+z}$, 同理 $\frac{1+y}{1-y} \geqslant 2 \frac{\sqrt{(x+y)(y+z)}}{x+z}, \frac{1+z}{1-z} \geqslant 2 \frac{\sqrt{(x+z)(y+z)}}{x+y}$, 故( * ) 得证, 所以原结论获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题25. 已知正数 $m_i \in \mathbf{R}^{+}(i=1,2, \cdots, n), p \geqslant 2$ 且 $p \in \mathbf{N}$ 并满足 $\sum_{i=1}^n \frac{1}{1+m_i^p}=$ 1 , 求证: $\prod_{i=1}^n m_i \geqslant(n-1)^{\frac{n}{p}}$.
+%%<SOLUTION>%%
+令 $m_i^p=\tan ^2 \alpha_i, \alpha_i \in\left(0, \frac{\pi}{2}\right)$, 由已知条件应有 $\sum_{i=1}^n \cos ^2 \alpha_i=1$, 于是 $\sum_{i=1}^{n-1} \cos ^2 \alpha_i=\sin ^2 \alpha_n, \cos ^2 \alpha_1+\cos ^2 \alpha_2+\cdots+\cos ^2 \alpha_{n-2}+\cos ^2 \alpha_n=\sin ^2 \alpha_{n-1}, \cdots$, $\cos ^2 \alpha_2+\cos ^2 \alpha_3+\cdots+\cos ^2 \alpha_n=\sin ^2 \alpha_1$, 以上各式利用均值不等式, 得 $(n-1) \sqrt[n-1]{\cos ^2 \alpha_1 \cos ^2 \alpha_2 \cdots \cos ^2 \alpha_{n-1}} \leqslant \sin ^2 \alpha_n,(n-1) \sqrt[n-1]{\cos ^2 \alpha_1 \cos ^2 \alpha_2 \cdots \cos ^2 \alpha_{n-2} \cos ^2 \alpha_n} \leqslant \sin ^2 \alpha_{n-1}, \cdots, \quad(n-1) \sqrt[n-1]{\cos ^2 \alpha_2 \cos ^2 \alpha_3 \cdots \cos ^2 \alpha_n} \leqslant \sin ^2 \alpha_1$, 把上述几个不等式两边相乘得 $(n-1)^n\left[\cos ^2 \alpha_1 \cos ^2 \alpha_2 \cdots \cos ^2 \alpha_n\right] \leqslant \sin ^2 \alpha_1 \sin ^2 \alpha_2 \cdots \sin ^2 \alpha_n$, 即 $\tan ^2 \alpha_1 \tan ^2 \alpha_2 \cdots \tan ^2 \alpha_n \geqslant(n-1)^n$, 由于 $m_i^p=\tan ^2 \alpha_i, i=1,2, \cdots, n$, 故 $m_1$ • $m_2 \cdots m_n \geqslant(n-1)^{\frac{n}{p}}$, 得证.
+End of "cropped_page_174.png"
+%%PROBLEM_END%%
+
+

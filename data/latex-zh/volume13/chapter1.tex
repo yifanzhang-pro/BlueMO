@@ -1,0 +1,233 @@
+
+%%TEXT_BEGIN%%
+小蓝本高中卷13组合极值不等式控制.
+组合极值的一个显著特点, 就是其约束条件或所求的极值的函数式较复杂.
+所谓不等式控制, 就是对约束条件或极值函数进行放缩, 使条件与极值函数之间的联系趋于明显.
+通过放缩, 使问题接近于一种标准形式: 在 $f(x, y)=$ 0 下,求 $u=g(x, y)$ 的最值, 从而将组合极值化归为一般的极值求解.
+不等式控制,通常有两种方式: 一是对约束条件进行放缩, 使隐蔽的约束条件明显化;二是对极值函数进行放缩, 使复杂的函数式简单化.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $m$ 个互异的正偶数与 $n$ 个互异的正奇数的和为 1987 , 求 $3 m+ 4 n$ 的最大值.
+%%<SOLUTION>%%
+分析:解本题的难点在于约束条件较复杂, 可先利用不等式将其化简,进而将其放缩到出现目标函数式.
+设题给的 $m$ 个正偶数为 $a_1, a_2, \cdots, a_m, n$ 个正奇数为 $b_1, b_2, \cdots, b_n$, 则
+$$
+\left(a_1+a_2+\cdots+a_m\right)+\left(b_1+b_2+\cdots+b_n\right)=1987 . \label{eq1}
+$$
+注意到极值函数是关于 $m 、 n$ 的函数,而在约束条件中, $m 、 n$ 仅作为各变量的下标.
+于是, 应将 式\ref{eq1} 中对 $a_1, a_2, \cdots, a_m$ 及 $b_1, b_2, \cdots, b_n$ 的约束转化为对 $m 、 n$ 的约束.
+因为 $a_1, a_2, \cdots, a_m$ 与 $b_1, b_2, \cdots, b_n$ 是互异的正偶数与正奇数,所以
+$$
+\begin{aligned}
+1987 & =\left(a_1+a_2+\cdots+a_m\right)+\left(b_1+b_2+\cdots+b_n\right) \\
+& \geqslant(2+4+6+\cdots+2 m)+(1+3+\cdots+2 n-1) \\
+& =m^2+n^2+m . \label{eq2}
+\end{aligned}
+$$
+注意到我们的目标是: $3 m+4 n \leqslant A$ (常数) 的形式, 呈现 Cauchy 不等式结构, 所以应将 式\ref{eq2} 的右边配方, 化为"平方和". 从而
+$$
+1987+\frac{1}{4} \geqslant\left(m+\frac{1}{2}\right)^2+n^2,
+$$
+$$
+\begin{aligned}
+\left(1987+\frac{1}{4}\right)\left(3^2+4^2\right) & \geqslant\left(3^2+4^2\right)\left[\left(m+\frac{1}{2}\right)^2+n^2\right] \\
+& \geqslant\left(3\left(m+\frac{1}{2}\right)+4 n\right)^2,
+\end{aligned}
+$$
+所以 $3 m+\frac{3}{2}+4 n \leqslant 5 \sqrt{1987+\frac{1}{4}}$, 所以 $3 m+4 n \leqslant\left[5 \sqrt{1987+\frac{1}{4}}-\frac{3}{2}\right]=$ 221.
+下面构造一组数, 使不等式成立等号.
+先找 $(m, n)$, 使 $3 m+4 n=221$.
+此不定方程有多个解, 但为了使 $(m, n)$ 满足 式\ref{eq2}, 应使相应的偶数和奇数都尽可能小, 这就要求 $m$ 与 $n$ 充分接近.
+通过试验, 得到 $m=27, n=35$ 时, $3 m+4 n=221$, 且 $m^2+n^2+m=1981<1987$, 满足 式\ref{eq2}.
+取最小的 27 个正偶数为 $a_1=2, a_2=4, \cdots, a_{27}=54$, 最小的 35 个正奇数为 $b_1=1, b_2=3, \cdots, b_{34}=67, b_{35}=69$, 则
+$$
+\left(a_1+a_2+\cdots+a_{27}\right)+\left(b_1+b_2+\cdots+b_{35}\right)=1987-6,
+$$
+再将 $b_{35}$ 修改为: $69+6=75$, 得
+$$
+\left(a_1+a_2+\cdots+a_{27}\right)+\left(b_1+b_2+\cdots+b_{35}\right)=1987 .
+$$
+综上所述, $3 m+4 n$ 的最大值为 221 .
+%%<REMARK>%%
+注:本例解题的关键, 是将 \ref{eq1} 式化为 \ref{eq2} 式, 而后面利用 Cauchy 不等式则不是本质的.
+实际上, 得到 \ref{eq2} 式后, 求 $3 m+4 n$ 的极值也可用三角代换:
+由 式\ref{eq2}, 可令 $r=\sqrt{\left(m+\frac{1}{2}\right)^2+n^2}, m=-\frac{1}{2}+r \cos \theta, n=r \sin \theta$,
+则 $3 m+4 n=3 r \cos \theta+4 r \sin \theta-\frac{3}{2}=5 r \sin (\theta+t)-\frac{3}{2} \leqslant 5 r-\frac{3}{2} \leqslant 5 \sqrt{1987+\frac{1}{4}}-\frac{3}{2}$ (下同).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $x_1, x_2, \cdots, x_n \in \mathbf{R}^{+}, \sum_{i=1}^n \frac{1}{x_i}=A$ (常数), 对给定的正整数 $k$, 求 $\sum \frac{1}{x_{i_1}+x_{i_2}+\cdots+x_{i_k}}$ 的最大值.
+其中求和对 $1,2, \cdots, n$ 中的所有 $k-$ 元数组 $\left(i_1, i_2, \cdots, i_k\right)$ 进行.
+%%<SOLUTION>%%
+分析:解本题的难点在于目标函数较复杂, 期望利用不等式将其化简.
+由目标函数的结构特征, 想到将 $\frac{1}{x_{i_1}+x_{i_2}+\cdots+x_{i_k}}$ 化为 $\frac{1}{x_{i_1}}+\frac{1}{x_{i_2}}+\cdots+ \frac{1}{x_{i_k}}$ 以利用条件 $\sum_{i=1}^n \frac{1}{x_i}=A$. 这恰好符合"倒数型不等式": $\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_k} \geqslant\frac{k^2}{a_1+a_2+\cdots+a_k}$ 的特征.
+于是, 利用"倒数型不等式", 有
+$$
+\frac{1}{a_1+a_2+\cdots+a_k} \leqslant \frac{\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_k}}{k^2} .
+$$
+所以 $\sum \frac{1}{x_{i_1}+x_{i_2}+\cdots+x_{i_k}} \leqslant \sum \frac{\frac{1}{x_{i_1}}+\frac{1}{x_{i_2}}+\cdots+\frac{1}{x_{i_k}}}{k^2}$
+$$
+=\frac{1}{k^2} \sum\left(\frac{1}{x_{i_1}}+\frac{1}{x_{i_2}}+\cdots+\frac{1}{x_{i_k}}\right) .
+$$
+考察上式右边 "和式"中每个项 $\frac{1}{x_{i_j}}(j=1,2, \cdots, k)$ 出现的次数.
+显然, $\frac{1}{x_{i_j}}$ 出现一次, 等价于出现一个 $\left(\frac{1}{x_1}, \frac{1}{x_2}, \cdots, \frac{1}{x_k}\right)$ 的含 $\frac{1}{x_{i_j}}$ 的 $k$-组合.
+因为含有 $\frac{1}{x_{i_j}}$ 的 $k$-组合有 $\mathrm{C}_{n-1}^{k-1}$ 个, 所以 $\frac{1}{x_{i_j}}$ 在"和式" 中共出现 $\mathrm{C}_{n-1}^{k-1}$ 次, 所以
+$$
+\frac{1}{k^2} \sum\left(\frac{1}{x_{i_1}}+\frac{1}{x_{i_2}}+\cdots+\frac{1}{x_{i_k}}\right)=\frac{1}{k^2} \mathrm{C}_{n-1}^{k-1} \sum_{i=1}^n \frac{1}{x_i}=\frac{A}{k^2} \mathrm{C}_{n-1}^{k-1} \text {. }
+$$
+其中等式在 $x_1=x_2=\cdots=x_n=\frac{n}{A}$ 时成立.
+故 $\sum \frac{1}{x_{i_1}+x_{i_2}+\cdots+x_{i_k}}$ 的最大值为 $\frac{A}{k^2} \mathrm{C}_{n-1}^{k-1}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $P$ 是体积为 1 的正四面体 $T$ 内 (包括边界) 的一个点, 过 $P$ 作 4 个平面平行 $T$ 的 4 个面, 将 $T$ 分成 14 块, $f(P)$ 是那些既不是四面体也不是平行六面体的几何体的体积之和, 求 $f(P)$ 的取值范围.
+%%<SOLUTION>%%
+解: $P$ 到正四面体 $A B C D$ 的四个面的距离为 $d_1 、 d_2 、 d_3 、 d_4$.
+令 $x_i=\frac{d_i}{h}, h$ 为正四面体的高.
+则 $\sum_{i=1}^4 x_i=1$.
+由于 $T$ 分成的 14 块中, 显然有 4 个体积分别为 $x_i^3$ 的四面体.
+此外, 还有 4 个体积分别为 $6 \prod_{\substack{j \neq i \\ 1 \leqslant j \leqslant 4}} x_j$ 的平行六面体 $(i=1,2,3,4)$. 比如, 以 $A$ 出发的 3 条棱为 3 度方向可得一个平行六面体, 由对称性可作出 4 个平行六面体.
+于是,
+$$
+f(P)=1-\sum_{i=1}^4 x_i^3-6 \sum_{1 \leqslant i<j<k \leqslant 4} x_i x_j x_k .
+$$
+显然, $f(P) \geqslant 0$.
+其次, 不妨设 $x_1+x_2 \leqslant \frac{1}{2}$. 令 $x_1+x_2=t \leqslant \frac{1}{2}, x_1 x_2=u \geqslant 0, x_3 x_4= v \geqslant 0$. 由 $\sum_{i=1}^4 x_i=1$, 有
+$$
+\begin{gathered}
+\sum_{i=1}^4 x_i^3=\left(t^3-3 t u\right)+(1-t)^3-3(1-t) v, \\
+\sum_{1 \leqslant i<j<k \leqslant 4} x_i x_j x_k=(1-t) u+t v,
+\end{gathered}
+$$
+所以
+$$
+\begin{aligned}
+1-f(P) & =1-3 t+3 t^2+3(2-3 t) u+3(3 t-1) v \\
+& \geqslant 1-3 t+3 t^2+3(3 t-1) v
+\end{aligned}
+$$
+(1) 若 $\frac{1}{3}<t \leqslant \frac{1}{2}$, 则
+$$
+3 t-1 \geqslant 0,1-f(P) \geqslant 1-3 t+3 t^2 \geqslant \frac{1}{4},
+$$
+其中等式在 $t=\frac{1}{2}, u=v=0$, 即 $P$ 为棱的中点时成立.
+(2) 若 $0 \leqslant t \leqslant \frac{1}{3}$, 则 $3 t-1 \leqslant 0$, 而 $v=x_3 x_4 \leqslant \frac{\left(x_3+x_4\right)^2}{4}=\frac{(1-t)^2}{4}$, 所以
+$$
+\begin{aligned}
+1-f(P) & \geqslant 1-3 t+3 t^2+3(3 t-1) \cdot \frac{(1-t)^2}{4} \\
+& =\frac{3\left(3 t^2+1-3 t\right) t}{4}+\frac{1}{4} \geqslant \frac{1}{4} .
+\end{aligned}
+$$
+所以, 不论哪种情形, 都有 $0 \leqslant f(P) \leqslant \frac{3}{4}$.
+又 $P$ 为四面体的顶点时, $f(P)=0 ; P$ 为四面体的棱的中点时, $f(P)= \frac{3}{4}$.
+综上所述, $f(P)$ 的取值范围是 $0 \leqslant f(P) \leqslant \frac{3}{4}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $a_1, a_2, \cdots, a_6 ; b_1, b_2, \cdots, b_6$ 和 $c_1, c_2, \cdots, c_6$ 都是 $1,2, \cdots, 6$ 的排列, 求 $\sum_{i=1}^6 a_i b_i c_i$ 的最小值.
+%%<SOLUTION>%%
+解: $S=\sum_{i=1}^6 a_i b_i c_i$, 由平均不等式得
+$$
+S \geqslant 6 \sqrt[6]{\prod_{i=1}^6 a_i b_i c_i}=6 \sqrt[6]{(6 !)^3}=6 \sqrt{6 !}=72 \sqrt{5}>160 .
+$$
+下证 $S>161$.
+因为 $a_1 b_1 c_1, a_2 b_2 c_2, \cdots, a_6 b_6 c_6$ 这 6 个数的几何平均为 $12 \sqrt{5}$, 而 $26< 12 \sqrt{5}<27$, 所以 $a_1 b_1 c_1, a_2 b_2 c_2, \cdots, a_6 b_6 c_6$ 中必有一个数不小于 27 , 也必有一个数不大于 26 , 而 26 不是 $1,2,3,4,5,6$ 中某三个 (可以重复) 的积, 所以必有一个数不大于 25 .
+不妨设 $a_1 b_1 c_1 \geqslant 27, a_2 b_2 c_2 \leqslant 25$,于是
+$$
+\begin{aligned}
+S= & \left(\sqrt{a_1 b_1 c_1}-\sqrt{a_2 b_2 c_2}\right)^2+2 \sqrt{a_1 b_1 c_1 a_2 b_2 c_2}+\left(a_3 b_3 c_3+a_4 b_4 c_4\right)+\left(a_5 b_5 c_5+\right. \\
+& \left.a_6 b_6 c_6\right) \\
+\geqslant & (\sqrt{27}-\sqrt{25})^2+2 \sqrt{a_1 b_1 c_1 a_2 b_2 c_2}+2 \sqrt{a_3 b_3 c_3 a_4 b_4 c_4}+2 \sqrt{a_5 b_5 c_5 a_6 b_6 c_6} \\
+\geqslant & (3 \sqrt{3}-5)^2+2 \cdot 3 \sqrt[6]{\prod_{i=1}^6 a_i b_i c_i} \\
+= & (3 \sqrt{3}-5)^2+72 \sqrt{5}>161,
+\end{aligned}
+$$
+所以 $S \geqslant 162$.
+又当 $a_1, a_2, \cdots, a_6 ; b_1, b_2, \cdots, b_6$ 和 $c_1, c_2, \cdots, c_6$ 都分别为 $1,2,3$ , $4,5,6 ; 5,4,3,6,1,2 ; 5,4,3,1,6,2$ 时, 有 $S=1 \times 5 \times 5+2 \times 4 \times 4+3 \times 3 \times 3+4 \times 6 \times 1+5 \times 1 \times 6+6 \times 2 \times 2=162$, 所以, $S$ 的最小值为 162.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 给定整数 $n \geqslant 3$, 实数 $a_1, a_2, \cdots, a_n$ 满足 $\min _{1 \leqslant i<j \leqslant n}\left|a_i-a_j\right|=1$, 求 $\sum_{k=1}^n\left|a_k\right|^3$ 的最小值.
+%%<SOLUTION>%%
+解:妨设 $a_1<a_2<\cdots<a_n$, 则对 $1 \leqslant k \leqslant n$, 有
+$$
+\left|a_k\right|+\left|a_{n-k+1}\right| \geqslant\left|a_{n-k+1}-a_k\right| \geqslant|n+1-2 k|,
+$$
+所以 $\sum_{k=1}^n\left|a_k\right|^3=\frac{1}{2} \sum_{k=1}^n\left(\left|a_k\right|^3+\left|a_{n+1-k}\right|^3\right)$
+$$
+=\frac{1}{2} \sum_{k=1}^n\left(\left|a_k\right|+\left|a_{n+1-k}\right|\right)\left(\frac{3}{4}\left(\left|a_k\right|-\left|a_{n+1-k}\right|\right)^2+\right.
+$$
+$$
+\begin{aligned}
+& \left.\frac{1}{4}\left(\left|a_k\right|+\left|a_{n+1-k}\right|\right)^2\right) \\
+\geqslant & \frac{1}{8} \sum_{k=1}^n\left(\left|a_k\right|+\left|a_{n+1-k}\right|\right)^3 \\
+\geqslant & \frac{1}{8} \sum_{k=1}^n|n+1-2 k|^3 .
+\end{aligned}
+$$
+当 $n$ 为奇数时, $\sum_{k=1}^n|n+1-2 k|^3=2 \cdot 2^3 \cdot \sum_{i=1}^{\frac{n-1}{2}} i^3=\frac{1}{4}\left(n^2-1\right)^2$;
+当 $n$ 为偶数时, $\sum_{k=1}^n|n+1-2 k|^3=2 \sum_{i=1}^{\frac{n}{2}}(2 i-1)^3=2\left(\sum_{j=1}^n j^3-\right. \left.\sum_{i=1}^{\frac{n}{2}}(2 i)^3\right)=\frac{1}{4} n^2\left(n^2-2\right)$.
+所以, 当 $n$ 为奇数时, $\sum_{k=1}^n\left|a_k\right|^3 \geqslant \frac{1}{32}\left(n^2-1\right)^2$;
+当 $n$ 为偶数时, $\sum_{k=1}^n\left|a_k\right|^3 \geqslant \frac{1}{32} n^2\left(n^2-2\right)$, 等号均在 $a_i=i-\frac{n+1}{2}, i= 1,2, \cdots, n$ 时成立.
+因此, $\sum_{k=1}^n\left|a_k\right|^3$ 的最小值为 $\frac{1}{32}\left(n^2-1\right)^2$ ( $n$ 为奇数), 或者 $\frac{1}{32} n^2\left(n^2-2\right)$ ( $n$ 为偶数).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 对正整数 $M$, 如果存在整数 $a 、 b 、 c 、 d$, 使得 $M \leqslant a<b \leqslant c<d \leqslant M+49, a d=b c$, 则称 $M$ 为好数, 否则称 $M$ 为坏数, 试求最大的好数和最小的坏数.
+%%<SOLUTION>%%
+解:大的好数是 576 , 最小的坏数是 443 .
+$M$ 为好数的充分必要条件是: 存在正整数 $u 、 v$, 使得 $u v \geqslant M,(u+1) \cdot (v+1) \leqslant M+49 \label{(*)}$
+充分性: 设 $u 、 v$ 存在, 不妨设 $u \leqslant v$, 则 $M \leqslant u v<u(v+1) \leqslant v(u+1)< (u+1)(v+1) \leqslant M+49$, 取 $a=u v, b=u(v+1), c=v(u+1), d= (u+1)(v+1)$ 即可 $(a d=b c$ 显然).
+必要性: 设 $a 、 b 、 c 、 d$ 存在, 由 $a d=b c$ 知 $\frac{a}{b}=\frac{c}{d}$, 设其既约分数形式为 $\frac{u}{r}$, 则可设 $a=u v, b=r v, c=u s, d=r s$. 由 $a<b$ 知 $u<r, r \geqslant u+1$, 由 $a<c$ 知 $v<s, s \geqslant v+1$.
+因此 $u v=a \geqslant M,(u+1)(v+1) \leqslant r s=d \leqslant M+49$.
+现在求最大的好数, 若 $M$ 为好数, 则由 式\ref{(*)} 及柯西不等式, 知
+$$
+\sqrt{M+49} \geqslant \sqrt{(u+1)(v+1)} \geqslant \sqrt{u v}+1 \geqslant \sqrt{M}+1,
+$$
+因此 $M \leqslant 576$. 当 $M=576$ 时, 取 $u=v=24$ 即可, 故最大好数为 576 .
+下求最小的坏数.
+首先, 可证 443 是坏数.
+实际上, 假设对 $M=443$ 存在 $u 、 v$, 使得 式\ref{(*)} 成立, 则
+$$
+\sqrt{492} \geqslant \sqrt{(u+1)(v+1)} \geqslant \sqrt{u v}+1 .
+$$
+于是 $u v \leqslant(\sqrt{492}-1)^2=493-2 \sqrt{492}<493-2 \sqrt{484}=449$, 因此 $443 \leqslant w 0 \leqslant 448$.
+此外, 当 $u v$ 固定时, 熟知 $u 、 v$ 越接近, $u+v$ 越小, $(u+1)(v+1)=u v+ u+v+1$ 也越小.
+设 $u v=443=1 \cdot 443$, 则 $u+v \geqslant 444,(u+1)(v+1) \geqslant 888$;
+设 $u v=444=12 \cdot 37$, 则 $u+v \geqslant 49,(u+1)(v+1) \geqslant 494$ ;
+设 $u v=445=5 \cdot 89$, 则 $u+v \geqslant 94,(u+1)(v+1) \geqslant 540$ ;
+设 $u v=446=2 \cdot 223$, 则 $u+v \geqslant 225,(u+1)(v+1) \geqslant 672$;
+设 $u v=447=3 \cdot 149$, 则 $u+v \geqslant 152,(u+1)(v+1) \geqslant 600$ ;
+设 $u v=448=16 \cdot 28$, 则 $u+v \geqslant 44,(u+1)(v+1) \geqslant 493$.
+这些均与 $(u+1)(v+1) \leqslant 492$ 矛盾, 因此 443 确为坏数.
+下证: 小于 443 的正整数都是好数.
+当 $M$ 属于下列区间: [245, 258]; [259, 265]; [266, 274]; [275, 280];
+[281,292]; [293,300]; [301,311] ;[312,322]; [323,328]; [329,334]; 
+[335,341]; [342,350]; [351,358] ;[359,366]; [367, 375];
+[376,382] ;[383,385] ;[386,391] ;[392,400] ;[401,406] ;[407,412]; 
+[413,418]; [419,425] ;[426,430] ;[413,433]; [434, 436];
+[437,442] 时, 对应的取 $(u, v)$ 为 (13,20) ;(13,21); (14,20); (17,17);
+(14,21) ;(17,18); (13,24); (18,18) ;(11,30) ;(17,20); (17,24);
+(18,23) ;(20,21) ;(17,25); (18,24) ;(14,31) ;(20,22) ;(17,26).
+最后对 $1 \leqslant M \leqslant 245$, 设 $t^2 \leqslant M<(t+1)^2$, 则 $1 \leqslant t \leqslant 15$. 若 $t^2 \leqslant M< t(t+1)$, 则取 $u=t, v=t+1$, 有 $u v \geqslant M,(u+1)(v+1)-M \leqslant(t+$ 1) $(t+2)-t^2=3 t+2 \leqslant 47$; 若 $t(t+1) \leqslant M<(t+1)^2$, 则取 $u=v=t+$ 1 , 有 $u v \geqslant M,(u+1)(v+1)-M \leqslant(t+2)^2-t(t+1)=3 t+4 \leqslant 49$, 综上所述, 最大好数为 576 ,最小坏数为 443 .
+%%PROBLEM_END%%
+
+

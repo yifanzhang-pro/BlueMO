@@ -1,0 +1,407 @@
+
+%%TEXT_BEGIN%%
+2.2 平均值不等式在求极值中的应用.
+不等式在求极值中起着重要的作用, 在利用平均值不等式求极值的过程中, 要注意"缩"或 "放" 的结果是否为常数 (通常是和与积), 同时必须指出等号成立的条件.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $a, b, c$ 为正实数,求
+$$
+\frac{a+3 c}{a+2 b+c}+\frac{4 b}{a+b+2 c}-\frac{8 c}{a+b+3 c}
+$$
+的最小值.
+%%<SOLUTION>%%
+解:法一令 $x=a+2 b+c, y=a+b+2 c, z=a+b+3 c$, 则有 $x- y=b-c, z-y=c$, 由此可得 $a+3 c=2 y-x, b=z+x-2 y, c=z- y$, 从而
+$$
+\begin{aligned}
+& \frac{a+3 c}{a+2 b+c}+\frac{4 b}{a+b+2 c}-\frac{8 c}{a+b+3 c} \\
+= & \frac{2 y-x}{x}+\frac{4(z+x-2 y)}{y}-\frac{8(z-y)}{z} \\
+= & -17+2 \frac{y}{x}+4 \frac{x}{y}+4 \frac{z}{y}+8 \frac{y}{z} \\
+\geqslant & -17+2 \sqrt{8}+2 \sqrt{32}=-17+12 \sqrt{2} .
+\end{aligned}
+$$
+取 $a=3-2 \sqrt{2}, b=\sqrt{2}-1, c=\sqrt{2}$ 时,等号成立.
+故最小值为 $-17+12 \sqrt{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $a, b, c$ 为正实数,求
+$$
+\frac{a+3 c}{a+2 b+c}+\frac{4 b}{a+b+2 c}-\frac{8 c}{a+b+3 c}
+$$
+的最小值.
+%%<SOLUTION>%%
+解法二不妨设 $a+b+c=1$, 则
+$$
+\begin{aligned}
+& \frac{a+3 c}{a+2 b+c}+\frac{4 b}{a+b+2 c}-\frac{8 c}{a+b+3 c} \\
+= & \frac{1+2 c-b}{1+b}+\frac{4 b}{1+c}-\frac{8 c}{1+2 c} \\
+= & -1+\frac{2+2 c}{1+b}+\frac{4 b+4}{1+c}-\frac{4}{1+c}+\frac{4}{1+2 c}-4 \\
+= & -5+2 \frac{1+c}{1+b}+4 \frac{1+b}{1+c}-\frac{4 c}{(1+c)(1+2 c)} \\
+\geqslant & -5+2 \sqrt{8}-\frac{4}{\frac{1}{c}+3+2 c} \geqslant-5+4 \sqrt{2}-\frac{4}{3+2 \sqrt{2}} \\
+= & 12 \sqrt{2}-17 .
+\end{aligned}
+$$
+取 $a=3-2 \sqrt{2}, b=\sqrt{2}-1, c=\sqrt{2}$ 时,等号成立.
+故最小值为 $-17+12 \sqrt{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设非负实数 $a$ 和 $d$, 正数 $b$ 和 $c$, 满足条件 $b+c \geqslant a+d$, 求 $\frac{b}{c+d}+ \frac{c}{a+b}$ 的最小值.
+%%<SOLUTION>%%
+解:不妨设 $a+b \geqslant c+d$. 因为 $\frac{b}{c+d}+\frac{c}{a+b}=\frac{b+c}{c+d}- c\left(\frac{1}{c+d}-\frac{1}{a+b}\right)$, 注意到 $c \leqslant c+d$ 及 $b+c \geqslant a+d \Leftrightarrow b+c \geqslant \frac{1}{2}(a+b+ c+d)$. 因此, 得
+$$
+\begin{aligned}
+\frac{b}{c+d}+\frac{c}{a+b} & \geqslant \frac{1}{2} \frac{a+b+c+d}{c+d}-(c+d)\left(\frac{1}{c+d}-\frac{1}{a+b}\right) \\
+& =\frac{1}{2} \frac{a+b}{c+d}+\frac{c+d}{a+b}-\frac{1}{2} \geqslant 2 \sqrt{\frac{a+b}{2(c+d)} \frac{c+d}{a+b}}-\frac{1}{2} \\
+& =\sqrt{2}-\frac{1}{2} .
+\end{aligned}
+$$
+等号成立当且仅当 $a=\sqrt{2}+1, b=\sqrt{2}-1, c=2, d=0$, 所以 $\frac{b}{c+d}+ \frac{c}{a+b}$ 的最小值为 $\sqrt{2}-\frac{1}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $2 x>3 y>0$, 求 $\sqrt{2} x^3+\frac{3}{2 x y-3 y^2}$ 的最小值.
+%%<SOLUTION>%%
+解:因为 $2 x>3 y>0$, 所以 $2 x-3 y>0$. 由平均值不等式, 得
+$$
+\begin{aligned}
+2 x y-3 y^2 & =y(2 x-3 y)=\frac{1}{3} \cdot 3 y(2 x-3 y) \\
+& \leqslant \frac{1}{3} \cdot\left[\frac{3 y+(2 x-3 y)}{2}\right]^2=\frac{1}{3} x^2 .
+\end{aligned}
+$$
+所以
+$$
+\begin{aligned}
+& \sqrt{2} x^3+\frac{3}{2 x y-3 y^2} \geqslant \sqrt{2} x^3+\frac{9}{x^2} \\
+= & \frac{\sqrt{2}}{2} x^3+\frac{\sqrt{2}}{2} x^3+\frac{3}{x^2}+\frac{3}{x^2}+\frac{3}{x^2} \\
+\geqslant & 5 \sqrt[5]{\left(\frac{\sqrt{2}}{2} x^3\right)^2 \cdot\left(\frac{3}{x^2}\right)^3}=5 \sqrt[5]{\frac{27}{2}} .
+\end{aligned}
+$$
+等号成立当且仅当 $3 y=2 x-3 y, \frac{\sqrt{2}}{2} x^3=\frac{3}{x^2}$, 即 $x=18^{\frac{1}{10}}, y=\frac{1}{3} \cdot 18^{\frac{1}{10}}$ 时取到.
+因此, $\sqrt{2} x^3+\frac{3}{2 x y-3 y^2}$ 的最小值为 $5 \sqrt[5]{\frac{27}{2}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 若 $x 、 y 、 z$ 是正实数, 求 $\frac{x y z}{(1+5 x)(4 x+3 y)(5 y+6 z)(z+18)}$ 的最大值, 并证明你的结论.
+%%<SOLUTION>%%
+解:在取定 $y$ 的情况下,
+$$
+\begin{aligned}
+& \frac{x}{(1+5 x)(4 x+3 y)} \\
+= & \frac{x}{20 x^2+(15 y+4) x+3 y} \\
+= & \frac{1}{20 x+\frac{3 y}{x}+15 y+4} \\
+\leqslant & \frac{1}{2 \sqrt{20 \times 3 y}+15 y+4} \\
+= & \frac{1}{(\sqrt{15 y}+2)^2},
+\end{aligned}
+$$
+当且仅当 $x=\sqrt{\frac{3 y}{20}}$ 时,等号成立.
+同理可得,
+$$
+\frac{z}{(5 y+6 z)(z+18)} \leqslant \frac{1}{2 \sqrt{6 \times 90} y+5 y+108}=\frac{1}{(\sqrt{5 y}+6 \sqrt{3})^2},
+$$
+当且仅当 $z=\sqrt{15 y}$ 时, 等号成立.
+所以,
+$$
+\begin{aligned}
+& \frac{x y z}{(1+5 x)(4 x+3 y)(5 y+6 z)(z+18)} \\
+& \leqslant \frac{y}{(\sqrt{15 y}+2)^2(\sqrt{5 y}+6 \sqrt{3})^2} \\
+& =\left[\frac{\sqrt{y}}{(\sqrt{15 y}+2)(\sqrt{5 y}+6 \sqrt{3})}\right]^2 \text {. } \\
+& =\left[\frac{1}{5 \sqrt{3 y}+\frac{12 \sqrt{3}}{\sqrt{y}}+20 \sqrt{5}}\right]^2 \text {. } \\
+& \leqslant\left[\frac{1}{2 \sqrt{5 \sqrt{3} \times 12 \sqrt{3}}+20 \sqrt{5}}\right]^2 \\
+& =\left(\frac{1}{32 \sqrt{5}}\right)^2=\frac{1}{5120} \text {, } \\
+&
+\end{aligned}
+$$
+当且仅当 $x=\frac{3}{5}, y=\frac{12}{5}, z=6$ 时, 上式取得最大值 $\frac{1}{5120}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 若对于任何正实数, $\frac{a^2}{\sqrt{a^4+3 b^4+3 c^4}}+\frac{k}{a^3} \cdot\left(\frac{c^4}{b}+\frac{b^4}{c}\right) \geqslant \frac{2 \sqrt{2}}{3}$. 均成立, 求实数 $k$ 的最小值.
+%%<SOLUTION>%%
+解:$$
+\begin{aligned}
+\frac{a^2}{\sqrt{a^4+3 b^4+3 c^4}} & =\frac{\sqrt{2} a^4}{\sqrt{2 a^4\left(a^4+3 b^4+3 c^4\right)}} . \\
+& \geqslant \frac{\sqrt{2} a^4}{\frac{1}{2}\left[2 a^4+\left(a^4+3 b^4+3 c^4\right)\right]} \\
+& =\frac{2 \sqrt{2}}{3} \cdot \frac{a^4}{a^4+b^4+c^4} .
+\end{aligned}
+$$
+从形式上猜测, 须证明 $\frac{k}{a^3} \cdot\left(\frac{c^4}{b}+\frac{b^4}{c}\right) \geqslant \frac{2 \sqrt{2}}{3} \cdot \frac{b^4+c^4}{a^4+b^4+c^4}$, 又从等号成立的条件 $2 a^4=a^4+3 b^4+3 c^4$ 以及 $b, c$ 的对称性, 猜测 $k$ 可能在 $a^4=6 b^4= 6 c^4$ 时取到尽可能大的值, 而该值即为使不等式对任意 $a, b, c$ 成立的最小值.
+令 $a=\sqrt[4]{6}, b=c=1$, 知 $\frac{\sqrt{2}}{2}+\frac{k}{(\sqrt[4]{6})^3} \cdot 2 \geqslant \frac{2 \sqrt{2}}{3} \Rightarrow k \geqslant \frac{1}{\sqrt[4]{24}}$.
+下面证明当 $k=\frac{1}{\sqrt[4]{24}}$ 时, $\frac{k}{a^3} \cdot\left(\frac{c^4}{b}+\frac{b^4}{c}\right) \geqslant \frac{2 \sqrt{2}}{3} \cdot \frac{b^4+c^4}{a^4+b^4+c^4}$.
+等价于证明 $\left(a^4+b^4+c^4\right)\left(b^5+c^5\right) \geqslant \frac{4 \sqrt[3]{6}}{3} a^3 b c\left(b^4+c^4\right)$.
+因为 $\left(b^9+c^9\right)-\left(b^5 c^4+b^4 c^5\right)=\left(b^5-c^5\right)\left(b^4-c^4\right) \geqslant 0$, 所以 $b^9+c^9 \geqslant b^5 c^4+b^4 c^5$.
+由加权平均值不等式, 得:
+$$
+\begin{aligned}
+a^4 b^5+2 b^5 c^4 & =6 \cdot \frac{a^4 b^5}{6}+2 \cdot b^5 c^4 \\
+& \geqslant 8 \sqrt[8]{\left(\frac{a^4 b^5}{6}\right)^6 \cdot\left(b^5 c^4\right)^2} \\
+& =\frac{4 \sqrt[3]{6}}{3} a^3 b^5 c, \\
+a^4 c^5+2 c^5 b^4 & =6 \cdot \frac{a^4 c^5}{6}+2 \cdot c^5 b^4 \\
+& \geqslant 8 \sqrt[8]{\left(\frac{a^4 c^5}{6}\right)^6 \cdot\left(c^5 b^4\right)^2} \\
+& =\frac{4 \sqrt[3]{6}}{3} a^3 b c^5 .
+\end{aligned}
+$$
+三式相加, 整理后即得
+$$
+\left(a^4+b^4+c^4\right)\left(b^5+c^5\right) \geqslant \frac{4 \sqrt[3]{6}}{3} a^3 b c\left(b^4+c^4\right),
+$$
+故原左式 $\geqslant \frac{2 \sqrt{2}}{3} \cdot \frac{a^4}{a^4+b^4+c^4}+\frac{2 \sqrt{2}}{3} \cdot \frac{b^4+c^4}{a^4+b^4+c^4}=\frac{2 \sqrt{2}}{3}=$ 原右式, 即所求 $k$ 的最小值为 $\frac{1}{\sqrt[4]{24}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 已知两两不同的正整数 $a, b, c, d, e, f, g, h, n$ 满足
+$$
+n=a b+c d=e f+g h \text {. }
+$$
+求 $n$ 的最小值.
+%%<SOLUTION>%%
+解:若 $a, b, c, d, e, f, g, h$ 中没有一个等于 1 , 则
+$$
+\begin{aligned}
+2 n & =a b+c d+e f+g h \\
+& \geqslant 4 \sqrt[4]{a b c d e f g h} \\
+& \geqslant 4 \sqrt[4]{2 \times 3 \times 4 \times 5 \times 6 \times 7 \times 8 \times 9} \\
+& =4 \sqrt[4]{2^7 \times 3^4 \times 5 \times 7} \\
+& =4 \times 4 \times 3 \times \sqrt[4]{\frac{35}{2}} \\
+& >4 \times 4 \times 3 \times 2=96 .
+\end{aligned}
+$$
+所以 $n \geqslant 48$. 设 $a, b, c, d, e, f, g, h$ 中有一个等于 1 , 不妨设 $h=1$, 则 $2 n=a b+c d+e f+g$, 且存在最小值.
+此时 $g$ 一定是这些数中最大的一个.
+于是有
+$$
+\begin{aligned}
+2 n & =a b+c d+e f+g \\
+& \geqslant g+3 \sqrt[3]{a b c d e f} \\
+& \geqslant g+3 \sqrt[3]{2 \times 3 \times 4 \times 5 \times 6 \times 7} \\
+& =g+3 \sqrt[3]{5040} \\
+& >g+3 \sqrt[3]{4913}=g+51 .
+\end{aligned}
+$$
+因为 $g \geqslant 8$, 所以, $2 n \geqslant 60, n \geqslant 30$.
+如果 $g \geqslant 9$, 则 $2 n \geqslant 61, n \geqslant 31$.
+假设 $n=30$, 则 $g=8$. 于是, $a, b, c, d, e, f, g, h$ 是集合 $\{1,2,3,4$ , $5,6,7,8\}$ 的一个排列, 特别地, 有一个数是 5 , 不妨设 $a=5$. 所以 $30=a b+ c d$, 即 $c d$ 可以被 5 整除.
+矛盾.
+因此 $n \geqslant 31$. 又因为 $31=1 \times 7+4 \times 6=2 \times 8+3 \times 5$, 因此 $n$ 的最小值为 31 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. (1) 如果 $a, b, c, d$ 是实数,求证:
+$$
+a^6+b^6+c^6+d^6-6 a b c d \geqslant-2,
+$$
+并指出等号何时成立;
+(2) 对于哪些正整数 $k$, 不等式
+$$
+a^k+b^k+c^k+d^k-k a b c d \geqslant M_k
+$$
+对所有实数 $a, b, c, d$ 成立? 求 $M_k$ 的最大可能值,并指出等号何时成立.
+%%<SOLUTION>%%
+证明:(1) 给定不等式变形为
+$$
+a^6+b^6+c^6+d^6+1+1 \geqslant 6 a b c d .
+$$
+根据算术一几何平均值不等式, 得
+$$
+\begin{aligned}
+& \frac{a^6+b^6+c^6+d^6+1^6+1^6}{6} \\
+\geqslant & \sqrt[6]{|a|^6 \cdot|b|^6 \cdot|c|^6 \cdot|d|^6 \cdot 1^6 \cdot 1^6} \\
+= & |a b c d| \geqslant a b c d .
+\end{aligned}
+$$
+因为算术一几何平均值不等式当
+$$
+|a|=|b|=|c|=|d|=1
+$$
+时等号成立.
+而最后的不等式, 当偶数个变量为负时等号成立.
+因此, 等号成立的情形是
+$$
+\begin{aligned}
+(a, b, c, d)= & (1,1,1,1),(1,1,-1,-1),(1,-1,1,-1), \\
+& (-1,1,1,-1),(1,-1,-1,1),(-1,1,-1,1), \\
+& (-1,-1,1,1),(-1,-1,-1,-1)
+\end{aligned}
+$$
+之一;
+(2)注意到,当 $k$ 是奇数时, 因为绝对值足够大的负值 $a, b, c, d$ 的选取得出了绝对值足够大的负值 $a^k+b^k+c^k+d^k-k a b c d$. 因此 $M_k$ 这样的数不存在.
+当 $k=2$ 时, 取 $a=b=c=d=r$, 得到 $a^2+b^2+c^2+d^2-2 a b c d= 4 r^2-2 r^4$.
+对足够大的正数 $r$ 的选取也得出绝对值任意大的负值.
+因此, $M_k$ 这样的数不存在.
+当 $k$ 是偶数,且 $k \geqslant 4$ 时,取 $a=b=c=d=1$, 得 $a^k+b^k+c^k+d^k- k a b c d=4-k$.
+同(1)得
+$$
+a^k+b^k+c^k+d^k-k a b c d \geqslant 4-k,
+$$
+即 $\frac{a^k+b^k+c^k+d^k+(k-4) \cdot 1^k}{k} \geqslant a b c d$.
+等号成立的条件与 (1) 相同.
+故此时 $M_k$ 的最大值为 $4-k$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设 $a, b, c \in \mathbf{R}^{+}$, 满足 $a+b+c=a b c$. 求 $a^7(b c-1)+ b^7(a c-1)+c^7(a b-1)$ 的最小值.
+%%<SOLUTION>%%
+解:因为 $a, b, c>0$, 且 $a+b+c=a b c$, 所以 $c(a b-1)=a+b$.
+同理可得 $b(a c-1)=a+c, a(b c-1)=b+c$.
+由平均值不等式, 得
+$$
+a b c=a+b+c \geqslant 3 \sqrt[3]{a b c},
+$$
+推出 $a b c \geqslant 3 \sqrt{3}$, 等号成立当且仅当 $a=b=c=\sqrt{3}$, 所以
+$$
+\begin{aligned}
+& a^7(b c-1)+b^7(a c-1)+c^7(a b-1) \\
+= & a^6(b+c)+b^6(a+c)+c^5(a+b) \\
+\geqslant & 6 \sqrt[6]{a^6 b a^6 c b^6 a b^6 c c^6 a c^6 b}=6 \sqrt[6]{a^{14} b^{14} c^{14}}=6(a b c)^{\frac{7}{3}} \\
+\geqslant & 6(\sqrt{3})^7=6 \times 27 \sqrt{3}=162 \sqrt{3},
+\end{aligned}
+$$
+等号成立的充要条件是 $a=b=c=\sqrt{3}$, 故所求的最小值为 $162 \sqrt{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 对满足 $a b c=1$ 的正实数 $a 、 b 、 c$, 求
+$$
+\left(a-1+\frac{1}{b}\right)\left(b-1+\frac{1}{c}\right)\left(c-1+\frac{1}{a}\right)
+$$
+的最大值.
+%%<SOLUTION>%%
+解:由于表达式关于 $a 、 b 、 c$ 是对称的, 当 $a=b=c=1$ 时, 得
+$$
+\left(a-1+\frac{1}{b}\right)\left(b-1+\frac{1}{c}\right)\left(c-1+\frac{1}{a}\right)=1 .
+$$
+下面我们证明最大值为 1 , 即证明对任意满足 $a b c=1$ 的实数 $a 、 b 、 c$, 有
+$$
+\left(a-1+\frac{1}{b}\right)\left(b-1+\frac{1}{c}\right)\left(c-1+\frac{1}{a}\right) \leqslant 1 .
+$$
+首先, 我们将非齐次的式子转换为齐次式, 即对正实数 $x 、 y 、 z$, 令 $a= \frac{x}{y}, b=\frac{y}{z}, c=\frac{z}{x}$ (例如 $x=1, y=\frac{1}{a}, z=\frac{1}{a b}$ ), 则上式等价于证明
+$$
+(x-y+z)(y-z+x)(z-x+y) \leqslant x y z .
+$$
+令 $u=x-y+z, v=y-z+x, w=z-x+y$, 由于 $u, v, w$ 的任意两个之和为正, 所以它们中最多有一个为负, 所以不妨假设 $u \geqslant 0, v \geqslant 0$, 由平均值不等式, 得
+$$
+\begin{aligned}
+\sqrt{u v} & =\sqrt{(x-y+z)(y-z+x)} \\
+& \leqslant \frac{1}{2}(x-y+z)(y-z+x)=x .
+\end{aligned}
+$$
+同理, $\sqrt{v w} \leqslant y, \sqrt{w u} \leqslant z$, 故 $u v w \leqslant x y z$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设 $a 、 b 、 c$ 为正实数, 满足
+$$
+a+b+c+3 \sqrt[3]{a b c} \geqslant k(\sqrt{a b}+\sqrt{b c}+\sqrt{c a}),
+$$
+求 $k$ 的最大值.
+%%<SOLUTION>%%
+解:由于当 $a=b=c$ 时, 由 $6 \geqslant 3 k$, 得 $k \leqslant 2$. 下面证明
+$$
+\begin{gathered}
+a+b+c+3 \sqrt[3]{a b c} \geqslant 2(\sqrt{a} \bar{b}+\sqrt{b c}+\sqrt{c a}) . \\
+\text { 令 } f(a, b, c)=a+b+c+3 \sqrt[3]{a b c}-2(\sqrt{a b}+\sqrt{b c}+\sqrt{c a}) .
+\end{gathered}
+$$
+不妨假设 $a \leqslant b \leqslant c$, 作如下调整,
+$$
+a=a^{\prime}, b=b^{\prime}=c^{\prime}=\sqrt{b c}=A,
+$$
+则
+$$
+\begin{aligned}
+f\left(a^{\prime}, b^{\prime}, c^{\prime}\right) & =\left(a+2 A+3 \cdot a^{\frac{1}{3}} \cdot A^{\frac{2}{3}}\right)-2\left[A+(2 a A)^{\frac{1}{2}}\right] \\
+& =a+3 \cdot a^{\frac{1}{3}} \cdot A^{\frac{2}{3}}-4(a A)^{\frac{1}{2}} \geqslant 0 .
+\end{aligned}
+$$
+等号成立当且仅当 $a=0$ 或 $a=b=c$.
+再证明 $f(a, b, c) \geqslant f\left(a^{\prime}, b^{\prime}, c^{\prime}\right)$. 因为
+$$
+f(a, b, c)-f\left(a^{\prime}, b^{\prime}, c^{\prime}\right)=b+c-2 a^{\frac{1}{2}}\left(b^{\frac{1}{2}}+c^{\frac{1}{2}}-2 A^{\frac{1}{2}}\right)-2 A \text {. }
+$$
+由于
+$$
+a \leqslant A, b^{\frac{1}{2}}+c^{\frac{1}{2}} \geqslant 2 A^{\frac{1}{2}} \text {, }
+$$
+所以
+$$
+\begin{aligned}
+& f(a, b, c)-f\left(a^{\prime}, b^{\prime}, c^{\prime}\right) \\
+\geqslant & b+c-2 \sqrt{A}(\sqrt{b}+\sqrt{c}-2 \sqrt{A})-2 A \\
+= & b+c-2(\sqrt{b}+\sqrt{c}) \sqrt{A}+2 A \\
+= & (\sqrt{b}-\sqrt{A})^2+(\sqrt{c}-\sqrt{A})^2 \\
+\geqslant & 0 .
+\end{aligned}
+$$
+从而
+$$
+f(a, b, c) \geqslant 0,
+$$
+故 $k$ 的最大值为 2 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 对 $a, b, c \in \mathbf{R}^{+}$, 求
+$$
+\frac{(a+b)^2+(a+b+4 c)^2}{a b c}(a+b+c)
+$$
+的最小值.
+%%<SOLUTION>%%
+解:由平均值不等式, 得
+$$
+\begin{aligned}
+(a+b)^2+(a+b+4 c)^2 & =(a+b)^2+[(a+2 c)+(b+2 c)]^2 \\
+& \geqslant(2 \sqrt{a b})^2+(2 \sqrt{2 a c}+2 \sqrt{2 b c})^2 \\
+& =4 a b+8 a c+8 b c+16 c \sqrt{a b},
+\end{aligned}
+$$
+于是 $\quad \frac{(a+b)^2+(a+b+4 c)^2}{a b c} \cdot(a+b+c)$
+$$
+\begin{aligned}
+& \geqslant \frac{4 a b+8 a c+8 b c+16 c \sqrt{a b}}{a b c} \cdot(a+b+c) \\
+& =\left(\frac{4}{c}+\frac{8}{b}+\frac{8}{a}+\frac{16}{\sqrt{a b}}\right)(a+b+c) \\
+& =8\left(\frac{1}{2 c}+\frac{1}{b}+\frac{1}{a}+\frac{1}{\sqrt{a b}}+\frac{1}{\sqrt{a b}}\right)\left(\frac{a}{2}+\frac{a}{2}+\frac{b}{2}+\frac{b}{2}+c\right) \\
+& \geqslant 8\left(5 \sqrt[5]{\frac{1}{2 a^2 b^2 c}}\right)\left(5 \sqrt[5]{\frac{a^2 b^2 c}{2^4}}\right)=100 .
+\end{aligned}
+$$
+当 $a=b=2 c>0$ 时取等号.
+故所求最小值为 100 .
+%%PROBLEM_END%%
+
+

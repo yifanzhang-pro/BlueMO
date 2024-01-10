@@ -1,0 +1,43 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 在已知边 $B C$ 和对角 $\alpha$ 的所有三角形中, 证明 :
+(1) 底边为 $B C$ 的等腰三角形面积最大;
+(2) 底边为 $B C$ 的等腰三角形周长最大.
+%%<SOLUTION>%%
+(1) 顶点 $A$ 在以 $B C$ 为弦的圆弧上, 圆弧上线段 $B C$ 的对角为 $\alpha$. 如果点 $A$ 离开直线 $B C$ 最远, 即如果点 $A$ 在线段 $B C$ 的垂直平分线上, 则 $\triangle A B C$ 面积最大.
+(2) 在固定 $B C$ 和 $\alpha$ 的情况下, $\triangle A B C$ 外接圆半径 $R$ 是定值.
+显然, $A B+A C=2 R(\sin \gamma+\sin \beta)=4 R \cdot \sin \frac{\pi-\alpha}{2} \cos \frac{\gamma-\beta}{2}$, 当 $\cos \frac{\gamma-\beta}{2}=1$, 即 $\gamma=\beta$ 时, $A B+A C$ 最大.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 两个等边三角形内接于一个半径为 $r$ 的圆, 设 $K$ 为两个三角形重叠处的面积,求证 $2 K \geqslant r^2 \sqrt{3}$.
+%%<SOLUTION>%%
+设等边 $\triangle A B C$ 的两边 $A B 、 A C$ 与等边 $\triangle P Q R$ 的边 $P Q$ 交于 $D 、 E$, 由旋转对称性可得 $K=S_{\triangle A B C}-3 S_{\triangle A D E}=\frac{3 \sqrt{3}}{4} r^2-3 S_{\triangle A D E}$, 注意到 $\triangle A D E$ 有固定的周长 $\sqrt{3} r$, 利用等周定理知 $\triangle A D E$ 为正三角形 (即其边长等于 $\triangle A B C$ 边长的 $\frac{1}{3}$ ) 时面积最大.
+由此得 $K \geqslant \frac{\sqrt{3} r^2}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 在 3 条边长为 1 、一个内角是 $30^{\circ}$ 的四边形中, 找出具有最大面积 $S$ 的四边形, 并求出 $S$.
+%%<SOLUTION>%%
+设四边形的三边 $A B=B C=C D=1$, 显然具有最大面积的四边形为凸四边形.
+由对称性, 可只考虑 $\angle A$ 或 $\angle B$ 等于 $30^{\circ}$ 的情形.
+(1) 若 $\angle B=30^{\circ}$, 则易知这时四边形 $A B C D$ 的最大值 $S_1=\frac{\sqrt{6}-\sqrt{2}+1}{4}$. (2) 若 $\angle A=30^{\circ}$, 作 $B 、 C$ 关于直线 $A D$ 的对称点 $B^{\prime} 、 C^{\prime}$. 连接 $A B^{\prime} 、 B^{\prime} C^{\prime} 、 C^{\prime} D 、 B B^{\prime}$, 则 $\triangle A B B^{\prime}$ 是边长为 1 的正三角形, 五边形 $B C D C^{\prime} B^{\prime}$ 是边长均为 1 的五边形, 当且仅当它是正五边形时面积取得最大值 $\frac{\sqrt{25+10 \sqrt{5}}}{4}$. 故四边形 $A B C D$ 的最大值 $S_2=\frac{1}{2}\left[\frac{\sqrt{3}}{4}+\frac{\sqrt{25+10 \sqrt{5}}}{4}\right]=\frac{\sqrt{3}}{8}+\frac{\sqrt{25+10 \sqrt{5}}}{8}$. 易知 $S_2>S_1$, 故所求最大值 $S=\frac{\sqrt{3}}{8}+\frac{\sqrt{25+10 \sqrt{5}}}{8}$, 且具有最大面积 $S^{\prime}$ 的四边形 $A B C D$ 中, $\angle A=30^{\circ}$, $\angle B=168^{\circ}, \angle C=108^{\circ}, \angle D=54^{\circ}, A B=B C=C D=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $n$ 边形 $A_1 A_2 \cdots A_n$ 内有一点 $P$ 到边 $A_1 A_2, A_2 A_3, \cdots, A_n A_1$ 的距离分别为 $d_1, d_2, \cdots, d_n$, 求证: $\sum_{i=1}^n \frac{a_i}{d_i} \geqslant 2 n \tan \frac{\pi}{n}$, 其中 $a_i=A_i A_{i+1}$ (约定 $A_{n+1}=A_1$ ), 并指出等号成立的充要条件.
+%%<SOLUTION>%%
+设 $n$ 边形 $A_1 A_2 \cdots A_n$ 的面积为 $S$, 由面积关系有 $\sum_{i=1}^n a_i d_i=2 S$, 于是由 Cauchy 不等式和等周不等式有 $\sum_{i=1}^n \frac{a_i}{d_i}=\sum_{i=1}^n \frac{a_i^2}{a_i d_i} \geqslant \frac{\left(\sum a_i\right)^2}{\sum_{i=1}^n a_i d_i}=\frac{\left(\sum a_i\right)^2}{2 S} \geqslant \frac{1}{2 S} \cdot 4 n \cdot S \cdot \tan \frac{\pi}{n}=2 n \tan \frac{\pi}{n}$.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,585 @@
+
+%%TEXT_BEGIN%%
+4.2 柯西不等式在解方程组和求极值中的应用应用柯西不等式中等号成立的条件, 通过不等式夹逼, 求出方程组中各个未知数的值, 从而进一步求出有关代数式的值.
+极值问题往往是关于对称式的问题.
+先根据条件, 在各个未知元相等时的值得出极值, 然后证明相应的不等式.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 求方程组
+$$
+\left\{\begin{array}{l}
+a^2=\frac{\sqrt{b c} \sqrt[3]{b c} \overline{(b+c)(b+c+d)}} \label{eq1}\\
+{b^2}=\frac{\sqrt{c d} \sqrt[3]{c d a}}{(c+d)(c+d+a)} \label{eq2}\\
+c^2=\frac{\sqrt{d a} \sqrt[3]{d a b}}{(d+a)(d+a+b)} \label{eq3}\\
+d^2=\frac{\sqrt{a b} \sqrt[3]{a b c}}{(a+b)(a+b+c)} . \label{eq4}
+\end{array}\right.
+$$
+的实数解.
+%%<SOLUTION>%%
+解:首先, 注意到没有一个变量等于零.
+不失一般性, 假设 $b=0$, 由 式\ref{eq1} 得 $a=0$, 由 式\ref{eq4} 得 $d=0$, 由 式\ref{eq3} 得 $c=0$, 这就意味着所有值为零, 但这是不可能的, 因为分母会为零.
+其次, 注意到 $b c, c d, d a, a b$ 的平方根一定都存在, 这就表明 $a, b, c, d$ 一定都是负数或都是正数.
+如果都是负数, 这些方程的右边是负的, 与它们是实数的平方相矛盾, 由此可得 4 个值一定都是正的.
+根据算术一几何平均值不等式, 有
+$$
+\sqrt{b c} \leqslant \frac{b+c}{2} \text {, 即 } \frac{\sqrt{b c}}{b+c} \leqslant \frac{1}{2} \text { 和 } \sqrt[3]{b c d} \leqslant \frac{b+c+d}{3},
+$$
+即
+$$
+\frac{\sqrt[3]{b c d}}{b+c+d} \leqslant \frac{1}{3}
+$$
+因此 $\quad a^2=\frac{\sqrt{b c} \sqrt[3]{b c d}}{(b+c)(b+c+d)} \leqslant \frac{1}{2} \times \frac{1}{3}=\frac{1}{6}$.
+从而 $a \leqslant \frac{1}{\sqrt{6}}$.
+类似地, 有 $b \leqslant \frac{1}{\sqrt{6}}, c \leqslant \frac{1}{\sqrt{6}}, d \leqslant \frac{1}{\sqrt{6}}$.
+由此得 $(b+c)(b+c+d) \leqslant \frac{2}{\sqrt{6}} \times \frac{3}{\sqrt{6}}=1$.
+同样地,有
+$$
+\begin{aligned}
+& (c+d)(c+d+a) \leqslant 1, \\
+& (d+a)(d+a+b) \leqslant 1, \\
+& (a+b)(a+b+c) \leqslant 1 .
+\end{aligned}
+$$
+由 $式\ref{eq1} \times 式\ref{eq2} \times式\ref{eq3}\times式\ref{eq4}$, 可得
+$$
+1=(b+c)(b+c+d)(c+d)(c+d+a) \cdot(d+a)(d+a+b)(a+b)(a+b+c) \text {. }
+$$
+因为 4 个小于或等于 1 的表达式的积等于 1 , 那么, 这 4 个表达式一定都等于 1 .
+从而唯一的可能是每个变量取它的最大的可能值.
+因此 $a=b=c=d=\frac{\sqrt{6}}{6}$ 为给定方程组的唯一解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 已知实数 $x 、 y 、 z>3$, 求方程
+$$
+\frac{(x+2)^2}{y+z-2}+\frac{(y+4)^2}{z+x-4}+\frac{(z+6)^2}{x+y-6}=36
+$$
+的所有实数解 $(x, y, z)$.
+%%<SOLUTION>%%
+解:由 $x 、 y 、 z>3$, 知
+$$
+y+z-2>0, z+x-4>0, x+y-6>0 .
+$$
+由柯西一施瓦兹不等式得
+$$
+\begin{aligned}
+& {\left[\frac{(x+2)^2}{y+z-2}+\frac{(y+4)^2}{x+z-4}+\frac{(z+6)^2}{x+y-6}\right] . } \\
+& {[(y+z-2)+(x+z-4)+(x+y-6)] } \\
+\geqslant & (x+y+z+12)^2 \\
+\Leftrightarrow & \frac{(x+2)^2}{y+z-2}+\frac{(y+4)^2}{x+z-4}+\frac{(z+6)^2}{x+y-6} \\
+\geqslant & \frac{1}{2} \cdot \frac{(x+y+z+12)^2}{x+y+z-6} .
+\end{aligned}
+$$
+结合题设等式得
+$$
+\frac{(x+y+z+12)^2}{x+y+z-6} \leqslant 72 . \label{(35)}
+$$
+当 $\frac{x+2}{y+z-2}=\frac{y+4}{x+z-4}=\frac{z+6}{x+y-6}=\lambda$, 即
+$$
+\left\{\begin{array}{l}
+\lambda(y+z)-x=2(\lambda+1), \\
+\lambda(x+z)-y=4(\lambda+1), \\
+\lambda(x+y)-z=6(\lambda+1) .
+\end{array}\right. \label{(36)}
+$$
+时,式(35)等号成立.
+设 $w=x+y+z+12$. 则又
+$$
+\begin{aligned}
+& \frac{(x+y+z+12)^2}{x+y+z-6}=\frac{w^2}{w-18} . \\
+& \frac{w^2}{w-18} \geqslant 4 \times 18=72 \\
+\Leftrightarrow & w^2-4 \times 18 w+4 \times 18^2 \geqslant 0 \\
+\Leftrightarrow & (w-36)^2 \geqslant 0,
+\end{aligned}
+$$
+则
+$$
+\frac{(x+y+z+12)^2}{x+y+z-6} \geqslant 72 . \label{(37)}
+$$
+当 $\quad w=x+y+z+12=36$
+$$
+\Leftrightarrow x+y+z=24 . \label{(38)}
+$$
+时, 式(37)等号成立.
+由式(35),(37)得
+$$
+\frac{(x+y+z+12)^2}{x+y+z-6}=72 .
+$$
+由方程组 (36) 与式 (38) 得
+$$
+\left\{\begin{array}{l}
+(2 \lambda-1)(x+y+z)=12(\lambda+1), \\
+x+y+z=24
+\end{array} \Rightarrow \lambda=1 .\right.
+$$
+将 $\lambda=1$ 代入方程组 (36) 得
+$$
+\left\{\begin{array}{l}
+y+z-x=4, \\
+x+z-y=8, \\
+x+y-z=12
+\end{array} \Rightarrow(x, y, z)=(10,8,6) .\right.
+$$
+所以,所求唯一实数解为
+$$
+(x, y, z)=(10,8,6) .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. $n$ 是一个正整数, $a_1, a_2, \cdots, a_n, b_1, b_2, \cdots, b_n$ 是 $2 n$ 个正实数,满足 $a_1+a_2+\cdots+a_n=1, b_1+b_2+\cdots+b_n=1$, 求 $\frac{a_1^2}{a_1+b_1}+\frac{a_2^2}{a_2+b_2}+\cdots+\frac{a_n^2}{a_n+b_n}$ 的最小值.
+%%<SOLUTION>%%
+解:由柯西不等式知
+$$
+\begin{aligned}
+& \left(a_1+a_2+\cdots+a_n+b_1+b_2+\cdots+b_n\right)\left(\frac{a_1^2}{a_1+b_1}+\frac{a_2^2}{a_2+b_2}+\cdots+\frac{a_n^2}{a_n+b_n}\right) . \\
+\geqslant & \left(a_1+a_2+\cdots+a_n\right)^2=1,
+\end{aligned}
+$$
+且
+$$
+a_1+a_2+\cdots+a_n+b_1+b_2+\cdots+b_n=2,
+$$
+所以
+$$
+\frac{a_1^2}{a_1+b_1}+\frac{a_2^2}{a_2+b_2}+\cdots+\frac{a_n^2}{a_n+b_n} \geqslant \frac{1}{2}
+$$
+且当 $a_1=a_2=\cdots=a_n=b_1=b_2=\cdots=b_n=\frac{1}{n}$ 时取到.
+所以 $\frac{a_1^2}{a_1+b_1}+\frac{a_2^2}{a_2+b_2}+\cdots+\frac{a_n^2}{a_n+b_n}$ 的最小值为 $\frac{1}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 已知 $x 、 y 、 z$ 为实数, 且满足
+$$
+x+y+z=x y+y z+z x .
+$$
+求 $\frac{x}{x^2+1}+\frac{y}{y^2+1}+\frac{z}{z^2+1}$ 的最小值.
+%%<SOLUTION>%%
+解:令 $x=1, y=z=-1$. 则
+$$
+\frac{x}{x^2+1}+\frac{y}{y^2+1}+\frac{z}{z^2+1}=-\frac{1}{2} .
+$$
+猜想最小值为 $-\frac{1}{2}$.
+只须证:
+$$
+\begin{aligned}
+& \frac{x}{x^2+1}+\frac{y}{y^2+1}+\frac{z}{z^2+1} \geqslant-\frac{1}{2} \\
+\Leftrightarrow & \frac{(x+1)^2}{x^2+1}+\frac{(y+1)^2}{y^2+1} \geqslant \frac{(z-1)^2}{z^2+1} .
+\end{aligned} \label{(39)}
+$$
+注意到 $z(x+y-1)=x+y-x y$.
+若 $x+y-1=0$, 则 $x+y=x y=1$. 矛盾.
+故 $x+y-1 \neq 0$.
+于是, $z=\frac{x+y-x y}{x+y-1}$.
+代入不等式 (39)得
+$$
+\begin{aligned}
+& \frac{(x+-1)^2}{x^2+1}+\frac{(y+1)^2}{y^2+1} \\
+\geqslant & \frac{(x y-1)^2}{(x+y-1)^2+(x+y-x y)^2} .
+\end{aligned} \label{(40)}
+$$
+由柯西不等式得式(40) 左边
+$$
+\begin{aligned}
+& \geqslant \frac{[(1+x)(1-y)+(1+y)(1-x)]^2}{\left(1+x^2\right)(1-y)^2+\left(1+y^2\right)(1-x)^2} \\
+& =\frac{4(x y-1)^2}{\left(1+x^2\right)(1-y)^2+\left(1+y^2\right)(1-x)^2} .
+\end{aligned}
+$$
+于是, 只须证
+$$
+\begin{aligned}
+& 4(x+y-1)^2+4(x+y-x y)^2 \\
+\geqslant & \left(1+x^2\right)(1-y)^2+\left(1+y^2\right)(1-x)^2 \\
+\Leftrightarrow & f(x)=\left(y^2-3 y+3\right) x^2-\left(3 y^2-8 y+3\right) x+3 y^2-3 y+1 \geqslant 0 .
+\end{aligned}
+$$
+由 $\Delta=\left(3 y^2-8 y+3\right)^2-4\left(y^2-3 y+3\right)\left(3 y^2-3 y+1\right)= -3\left(y^2-1\right)^2 \leqslant 0$, 故 $f(x) \geqslant 0$ 恒成立.
+从而, 猜想成立, 即 $\frac{x}{x^2+1}+\frac{y}{y^2+1}+\frac{z}{z^2+1}$ 的最小值为 $-\frac{1}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $a 、 b 、 c 、 x 、 y 、 z$ 为实数, 且
+$$
+a^2+b^2+c^2=25, x^2+y^2+z^2=36, a x+b y+c z=30 .
+$$
+求 $\frac{a+b+c}{x+y+z}$ 的值.
+%%<SOLUTION>%%
+解:由柯西不等式, 得
+$$
+25 \times 36=\left(a^2+b^2+c^2\right)\left(x^2+y^2+z^2\right) \geqslant(a x+b y+c z)^2=30^2 .
+$$
+上述不等式等号成立, 得
+$$
+\frac{a}{x}=\frac{b}{y}=\frac{c}{z}=k
+$$
+于是 $k^2\left(x^2+y^2+z^2\right)=25$, 所以 $k= \pm \frac{5}{6}$ (负的舍去). 从而
+$$
+\frac{a+b+c}{x+y+z}=k=\frac{5}{6} \text {. }
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设实数 $a 、 b 、 c 、 d 、 e$ 满足
+$$
+a+b+c+d+e=8, a^2+b^2+c^2+d^2+e^2=16,
+$$
+求 $e$ 的最大值.
+%%<SOLUTION>%%
+解:将条件改写为
+$$
+8-e=a+b+c+d, 16-e^2=a^2+b^2+c^2+d^2,
+$$
+由此得到一个包含 $e$ 的不等式.
+由柯西不等式, 得
+$$
+a+b+c+d \leqslant(1+1+1+1)^{\frac{1}{2}}\left(a^2+b^2+c^2+d^2\right)^{\frac{1}{2}} .
+$$
+将条件代入并两边平方, 得
+$$
+\begin{gathered}
+(8-e)^2 \leqslant 4\left(16-e^2\right), \\
+64-16 e+e^2 \leqslant 64-4 e^2, \\
+5 e^2-16 e \leqslant 0, e(5-16 e) \leqslant 0 .
+\end{gathered}
+$$
+从此得到 $0 \leqslant e \leqslant \frac{16}{5}$, 当 $a=b=c=d=\frac{6}{5}$ 时达到最大值 $\frac{16}{5}$.
+%%<REMARK>%%
+注:用类似的方法可以证明下面的命题:
+设 $n(\geqslant 3)$ 为正整数, $a 、 b$ 为给定的实数, 实数 $x_0, x_1, x_2, \cdots, x_n$ 满足
+$$
+\begin{aligned}
+& x_0+x_1+x_2+\cdots+\dot{x}_n=a, \\
+& x_0^2+x_1^2+x_2^2+\cdots+x_n^2=b,
+\end{aligned}
+$$
+则当 $b<\frac{a^2}{n+1}$ 时, $x_0$ 不存在;
+当 $b=\frac{a^2}{n+1}$ 时, $x_0=\frac{a}{n+1}$;
+当 $b>\frac{a^2}{n+1}$ 时, $x_0$ 满足
+$$
+\frac{a-\frac{1}{2} \sqrt{\delta}}{n+1} \leqslant x_0 \leqslant \frac{a+\frac{1}{2} \sqrt{\delta}}{n+1},
+$$
+其中 $\delta$ 为二次方程 $(n+1) x_0^2-2 a x_0+a^2-n b=0$ 的判别式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $x \geqslant 0, y \geqslant 0, z \geqslant 0, a 、 b 、 c 、 l 、 m 、 n$ 是给定的正数, 并且 $a x+b y+c z=\delta$ 为常数, 求
+$$
+w=\frac{l}{x}+\frac{m}{y}+\frac{n}{z}
+$$
+的最小值.
+%%<SOLUTION>%%
+解:由柯西不等式, 得
+$$
+\begin{aligned}
+& w \cdot \delta= {\left[\left(\sqrt{\frac{l}{x}}\right)^2+\left(\sqrt{\frac{m}{y}}\right)^2+\left(\sqrt{\frac{n}{z}}\right)^2\right] } \\
+& \cdot\left[(\sqrt{a x})^2+(\sqrt{b y})^2+(\sqrt{c z})^2\right] \\
+& \geqslant(\sqrt{a l}+\sqrt{b m}+\sqrt{c n})^2, \\
+& w \geqslant(\sqrt{a l}+\sqrt{b m}+\sqrt{c n})^2 \\
+& \delta
+\end{aligned}
+$$
+所以
+$$
+w \geqslant \frac{(\sqrt{a l}+\sqrt{b m}+\sqrt{c n})^2}{\delta} .
+$$
+利用柯西等式成立的条件, 得 $x=k \sqrt{\frac{l}{a}}, y=k \sqrt{\frac{m}{b}}, z=k \sqrt{\frac{n}{c}}$, 其中 $k=\frac{\delta}{\sqrt{a l}+\sqrt{b m}+\sqrt{c n}}$, 它们使得 $a x+b y+c z=\delta$, 且 $w= \frac{(\sqrt{a l}+\sqrt{b m}+\sqrt{c n})^2}{\delta}$, 所以
+$$
+w_{\min }=\frac{(\sqrt{a l}+\sqrt{b m}+\sqrt{c n})^2}{\delta} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 对满足 $a+b=1$ 的正实数 $a 、 b$, 求
+$$
+\left(a+\frac{1}{a}\right)^2+\left(b+\frac{1}{b}\right)^2
+$$
+的最小值.
+%%<SOLUTION>%%
+解:当 $a=b=\frac{1}{2}$ 时, 我们有
+$$
+\left(a+\frac{1}{a}\right)^2+\left(b+\frac{1}{b}\right)^2=\frac{25}{2} .
+$$
+下面证明
+$$
+\left(a+\frac{1}{a}\right)^2+\left(b+\frac{1}{b}\right)^2 \geqslant \frac{25}{2} .
+$$
+从而最小值为 $\frac{25}{2}$.
+令 $x=a+\frac{1}{a}, y=b+\frac{1}{b}$, 由
+$$
+\frac{x^2+y^2}{2} \geqslant\left(\frac{x+y}{2}\right)^2 \text {. }
+$$
+于是
+$$
+\begin{aligned}
+\frac{1}{2}\left[\left(a+\frac{1}{a}\right)^2+\left(b+\frac{1}{b}\right)^2\right] & \geqslant\left\{\frac{1}{2}\left[\left(a+\frac{1}{a}\right)+\left(b+\frac{1}{b}\right)\right]\right\}^2 \\
+& =\left[\frac{1}{2}\left(1+\frac{1}{a}+\frac{1}{b}\right)\right]^2
+\end{aligned}
+$$
+由柯西不等式, 得 $\left(\frac{1}{a}+\frac{1}{b}\right)(a+b) \geqslant(1+1)^2=4$. 则
+$$
+\left[\frac{1}{2}\left(1+\frac{1}{a}+\frac{1}{b}\right)\right]^2 \geqslant\left[\frac{1}{2}\left(1+\frac{4}{a+b}\right)\right]^2=\left(\frac{1+4}{2}\right)^2=\frac{25}{4} \text {. }
+$$
+从而命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设 $n$ 和 $k$ 是给定的正整数 $(k<n)$, 已知正实数 $a_1, a_2, \cdots, a_k$, 试求正实数 $a_{k+1}, a_{k+2}, \cdots, a_n$ 使得和式
+$$
+M=\sum_{i \neq j} \frac{a_i}{a_j}
+$$
+取最小值.
+%%<SOLUTION>%%
+解:通过对 $n=1,2,3$ 计算, 得
+$$
+M=\left(a_1+a_2+\cdots+a_n\right)\left(\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}\right)-n .
+$$
+令 $a=a_1+a_2+\cdots+a_k, b=\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_k}$, 则由假设 $a 、 b$ 为给定的常数.
+因此由柯西不等式, 得
+$$
+\begin{gathered}
+M=\left(a+a_{k+1}+\cdots+a_n\right)\left(b+\frac{1}{a_{k+1}}+\cdots+\frac{1}{a_n}\right)-n \\
+\geqslant(\sqrt{a b}+1+\cdots+1)^2-n \\
+=(\sqrt{a b}+n-k)^2-n, \\
+\quad \frac{\sqrt{a_{k+1}}}{\sqrt{a_{k+1}}}=\cdots=\frac{\sqrt{a_n}}{\frac{1}{\sqrt{a_n}}}=\frac{\sqrt{a}}{\sqrt{b}},
+\end{gathered}
+$$
+且当
+$$
+\frac{\sqrt{a_{k+1}}}{\frac{1}{\sqrt{a_{k+1}}}}=\cdots=\frac{\sqrt{a_n}}{\frac{1}{\sqrt{a_n}}}=\frac{\sqrt{a}}{\sqrt{b}},
+$$
+即 $a_{k+1}=\cdots=a_n=\sqrt{\frac{a}{b}}$ 时, $M$ 取最小值.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设 $2 n$ 个实数 $a_1, a_2, \cdots, a_{2 n}$ 满足 $\sum_{i=1}^{2 n-1}\left(a_{i+1}-a_i\right)^2=1$, 求
+$$
+\left(a_{n+1}+a_{n+2}+\cdots+a_{2 n}\right)-\left(a_1+a_2+\cdots+a_n\right)
+$$
+的最大值.
+%%<SOLUTION>%%
+解:当 $n=1$ 时, $\left(a_2-a_1\right)^2=1$, 则 $a_2-a_1= \pm 1$, 最大值为 1 .
+当 $n \geqslant 2$ 时,设 $x_1=a_1, x_{i+1}=a_{i+1}-a_i, i=1,2, \cdots, 2 n-1$. 则 $\sum_{i=2}^{2 n} x_i^2=$ 1 , 且 $a_k=x_1+x_2+\cdots+x_k, k=1,2, \cdots, 2 n$.
+由柯西不等式, 得
+$$
+\begin{aligned}
+& a_{n+1}+a_{n+2}+\cdots+a_{2 n}-\left(a_1+a_2+\cdots+a_n\right) \\
+= & x_2+2 x_3+\cdots+(n-1) x_n+n x_{n+1}+(n-1) x_{n+2}+\cdots+x_{2 n} \\
+\leqslant & {\left[1+2^2+\cdots+(n-1)^2+n^2+(n-1)^2+\cdots+1\right]^{\frac{1}{2}} } \\
+& \cdot\left(x_2^2+x_3^2+\cdots+x_{2 n}^2\right)^{\frac{1}{2}} \\
+= & {\left[n^2+2 \cdot \frac{1}{6}(n-1) n(2(n-1)+1)\right]^{\frac{1}{2}}=\sqrt{\frac{n\left(2 n^2+1\right)}{3}} . } \\
+\text { 当 } \quad & a_k=\frac{\sqrt{3} k(k-1)}{2 \sqrt{n\left(2 n^2+1\right)}}, k=1,2, \cdots, n+1,
+\end{aligned}
+$$
+当 $a_k=\frac{\sqrt{3} k(k-1)}{2 \sqrt{n\left(2 n^2+1\right)}}, k=1,2, \cdots, n+1$,
+$$
+a_{n+k}=\frac{\sqrt{3}\left[2 n^2-(n-k)(n-k+1)\right]}{2 \sqrt{n\left(2 n^2+1\right)}}, k=1,2, \cdots, n-1
+$$
+时, 上述不等式等号成立, 所求最大值为 $\sqrt{\frac{n\left(2 n^2+1\right)}{3}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 设 $x_i \geqslant 0, i=1,2, \cdots, n$, 满足
+$$
+\sum_{i=1}^n x_i^2+2 \sum_{1 \leqslant j<k \leqslant n} \sqrt{\frac{j}{k}} x_j x_k=1 .
+$$
+求 $x_1+x_2+\cdots+x_n$ 的最小值和最大值.
+%%<SOLUTION>%%
+解:由
+$$
+\left(x_1+x_2+\cdots+x_n\right)^2=\sum_{i=1}^n x_i^2+2 \sum_{1 \leqslant j<k \leqslant n} x_j x_k \geqslant 1,
+$$
+取 $x_1=1, x_2=\cdots=x_n=0$, 则 $x_1+x_2+\cdots+x_n$ 的最小值为 1 . 再令 $y_i= \frac{x_i}{\sqrt{i}}$, 则条件化为
+$$
+\sum_{i=1}^n i y_i^2+2 \sum_{1 \leqslant j<k \leqslant n} j y_j y_k=1
+$$
+等价于
+$$
+\sum_{i=1}^n\left(y_i+y_{i+1}+\cdots+y_n\right)^2=1 \text {. }
+$$
+令 $t_i=y_i+y_{i+1}+\cdots+y_n$, 则 $y_i=t_i-t_{i+1}, x_i \geqslant 0$, 推出 $y_i \geqslant 0, t_i$ 不增, 则 $x_i=\sqrt{i} y_i=\sqrt{i}\left(t_i-t_{i+1}\right)$, 令 $t_{i+1}=0$, 则
+$$
+x_1+x_2+\cdots+x_n=\sum_{i=1}^n \sqrt{i}\left(t_i-t_{i+1}\right)=\sum_{i=1}^n t_i(\sqrt{i}-\sqrt{i-1}) .
+$$
+所以由 $\sum_{i=1}^n t_i^2=1$ 以及柯西不等式, 得
+$$
+\begin{aligned}
+\left(x_1+x_2+\cdots+x_n\right)^2 & =\left[\sum_{i=1}^n t_i(\sqrt{i}-\sqrt{i-1})\right]^2 \\
+& \leqslant \sum_{i=1}^n(\sqrt{i}-\sqrt{i-1})^2\left(\sum_{i=1}^n t_i^2\right) \\
+& =\sum_{i=1}^n(\sqrt{i}-\sqrt{i-1})^2,
+\end{aligned}
+$$
+等号成立当且仅当 $\frac{t_1}{1}=\frac{t_2}{\sqrt{2}-1}=\cdots=\frac{t_n}{\sqrt{n}-\sqrt{n-1}}$ 及 $x_1^2+x_2^2+\cdots+ x_n^2=1$ 时, $\left(t_1, t_2, \cdots, t_n\right)$ 唯一确定推出 $\left(x_1, x_2, \cdots, x_n\right)$ 唯一确定.
+故 $x_1+ x_2+\cdots+x_n$ 的最大值为 $\sqrt{\sum_{i=1}^n(\sqrt{i}-\sqrt{i-1})^2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 设 $x 、 y 、 z$ 是大于 -1 的实数.
+求
+$$
+\frac{1+x^2}{1+y+z^2}+\frac{1+y^2}{1+z+x^2}+\frac{1+z^2}{1+x+y^2}
+$$
+的最小值.
+%%<SOLUTION>%%
+解:由于 $x, y, z>-1$, 则 $\frac{1+x^2}{1+y+z^2}, \frac{1+y^2}{1+z+x^2}, \frac{1+z^2}{1+x+y^2}$ 的分子、分母均为正, 所以
+$$
+\begin{aligned}
+& \frac{1+x^2}{1+y+z^2}+\frac{1+y^2}{1+z+x^2}+\frac{1+z^2}{1+x+y^2} \\
+\geqslant & \frac{1+x^2}{1+z^2+\frac{1+y^2}{2}}+\frac{1+y^2}{1+x^2+\frac{1+z^2}{2}}+\frac{1+z^2}{1+y^2+\frac{1+x^2}{2}} \\
+= & \frac{2 a}{2 c+b}+\frac{2 b}{2 a+c}+\frac{2 c}{2 b+a},
+\end{aligned}
+$$
+其中 $a=\frac{1+x^2}{2}, b=\frac{1+y^2}{2}, c=\frac{1+z^2}{2}$.
+由柯西不等式,得
+$$
+\begin{aligned}
+& \frac{a}{2 c+b}+\frac{b}{2 a+c}+\frac{c}{2 b+a} \\
+\geqslant & \frac{(a+b+c)^2}{a(b+2 c)+b(c+2 a)+c(a+2 b)} \\
+= & \frac{3(a b+b c+a c)+\frac{1}{2}\left[(b-c)^2+(c-a)^2+(a-b)^2\right]}{3(a b+b c+a c)} \\
+\geqslant & 1 .
+\end{aligned}
+$$
+且当 $a=b=c=1$ 时, 上式取到最小值.
+故所求的最小值为 2 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13. 设 $S=\left\{a_1, a_2, \cdots, a_n\right\}, a_i \in \mathbf{Z}^{+}$, 且对任意 $S_1, S_2 \subseteq S, S_1 \neq S_2$, 有 $\sum_{i \in S_1} i \neq \sum_{j \in S_2} j$. 求
+$$
+\sqrt{a_1}+\sqrt{a_2}+\cdots+\sqrt{a_n}
+$$
+的最小值.
+%%<SOLUTION>%%
+解法一不妨设 $a_1<a_2<\cdots<a_n$. 记 $T_i=\left\{a_1, a_2, \cdots, a_i\right\}, 1 \leqslant i \leqslant n$. 则 $T_i$ 所有子集元素之和不同.
+故 $a_1+a_2+\cdots+a_i \geqslant 2^i-1,1 \leqslant i \leqslant n$. 由 Abel 恒等式
+$$
+\begin{aligned}
+\sum_{k=1}^n \sqrt{a_k} & =\sum_{k=1}^n a_k \frac{1}{\sqrt{a_k}} \\
+& =\sum_{i=1}^n a_i \frac{1}{\sqrt{a_n}}+\sum_{k=1}^{n-1}\left(\sum_{i=1}^k a_i\right)\left(\frac{1}{\sqrt{a_k}}-\frac{1}{\sqrt{a_{k+1}}}\right) \\
+& \geqslant \frac{1}{\sqrt{a_n}}\left(2^n-1\right)+\sum_{k=1}^{n-1}\left(2^k-1\right)\left(-\frac{1}{\sqrt{a_k}}-\frac{1}{\sqrt{a_{k+1}}}\right) \\
+& =\sum_{k=1}^n-\frac{2^{k-1}}{\sqrt{a_k}} .
+\end{aligned}
+$$
+由柯西不等式, 得
+$$
+\left(\sum_{k=1}^n \frac{2^{k-1}}{\sqrt{a_k}}\right)\left(\sum_{k=1}^n \sqrt{a_k}\right) \geqslant\left(\sum_{k=1}^n 2^{\frac{k-1}{2}}\right)^2 .
+$$
+于是 $\quad \sum_{k=1}^n \sqrt{a_k} \geqslant \sum_{k=1}^n 2^{\frac{k-1}{2}}=(\sqrt{2}+1) \cdot\left(\sqrt{2}^n-1\right)$.
+当 $\left\{a_1, a_2, \cdots, a_n\right\}=\left\{1,2,4, \cdots, 2^{n-1}\right\}$ 时,
+$$
+\sum_{k=1}^n \sqrt{a_k}=\sum_{k=1}^n 2^{\frac{k-1}{2}}=(\sqrt{2}+1)\left(\sqrt{2}^n-1\right) .
+$$
+故 $\sqrt{a_1}+\sqrt{a_2}+\cdots+\sqrt{a_n}$ 的最小值为 $(\sqrt{2}+1)\left(\sqrt{2}^n-1\right)$.
+%%<SOULTION>%%
+解法二记 $b_1=1, b_2=2, \cdots, b_n=2^{n-1}$, 则 $b_1<b_2<\cdots<b_n$, 且 $a_1+a_2+\cdots+a_i \geqslant b_1+b_2+\cdots+b_i, 1 \leqslant i \leqslant n$.
+首先容易证明下面的结论.
+引理设 $x, y \in \mathbf{R}^{+}$, 则 $\frac{x-y}{2 \sqrt{x}} \leqslant \sqrt{x}-\sqrt{y}$, 当且仅当 $x=y$ 时等号成立.
+利用上述引理, 得
+$$
+\begin{aligned}
+& \sum_{i=1}^n \sqrt{a_i}-\sum_{i=1}^n \sqrt{b_i}=\sum_{i=1}^n\left(\sqrt{a_i}-\sqrt{b_i}\right) \\
+\geqslant & \sum_{i=1}^n \frac{a_i-b_i}{2 \sqrt{a_i}}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+= & \left(\frac{1}{2 \sqrt{a_1}}-\frac{1}{2 \sqrt{a_2}}\right)\left(a_1-b_1\right)+\left(\frac{1}{2 \sqrt{a_2}}-\frac{1}{2 \sqrt{a_3}}\right)\left(a_1+a_2-b_1-b_2\right) \\
+& +\cdots+\left(\frac{1}{2 \sqrt{a_{n-1}}}-\frac{1}{2 \sqrt{a_n}}\right)\left(a_1+a_2+\cdots+a_{n-1}-b_1-b_2-\cdots-b_{n-1}\right) \\
+& +\frac{1}{2 \sqrt{a_n}}\left(a_1+a_2+\cdots+a_n-b_1-b_2-\cdots-b_n\right) \\
+\geqslant & 0,
+\end{aligned}
+$$
+且当 $a_i=b_i, 1 \leqslant i \leqslant n$ 时等号成立, 从而 $\sqrt{a_1}+\sqrt{a_2}+\cdots+\sqrt{a_n}$ 的最小值为 $\sum_{i=1}^n \sqrt{b_i}=(\sqrt{2}+1)\left(\sqrt{2}^n-1\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14. 设 $n>3$ 为给定的正整数, 实数 $x_1, x_2, \cdots, x_{n+1}, x_{n+2}$ 满足 $0< x_1<x_2<\cdots<x_{n+1}<x_{n+2}$, 求
+$$
+\frac{\left(\sum_{i=1}^n \frac{x_{i+1}}{x_i}\right)\left(\sum_{j=1}^n \frac{x_{j+2}}{x_{j+1}}\right)}{\sum_{k=1}^n \frac{x_{k+1} x_{k+2}}{x_{k+1}^2+x_k x_{k+2}} \sum_{i=1}^n \frac{x_{i+1}^2+x_i x_{i+2}}{x_i x_{i+1}}}
+$$
+的最小值,并讨论等号成立的条件.
+%%<SOLUTION>%%
+解:令 $t_i=\frac{x_{i+1}}{x_i}(1 \leqslant i \leqslant n+1)$, 则原式等于
+$$
+\frac{\sum_{i=1}^n t_i \sum_{i=1}^n t_{i+1}}{\sum_{i=1}^n \frac{t_i t_{i+1}}{t_i+t_{i+1}} \sum_{i=1}^n\left(t_i+t_{i+1}\right)} .
+$$
+由柯西不等式, 得
+$$
+\begin{aligned}
+& \sum_{i=1}^n \frac{t_i t_{i+1}}{t_i+t_{i+1}} \sum_{i=1}^n\left(t_i+t_{i+1}\right) \\
+= & \left(\sum_{i=1}^n t_i-\sum_{i=1}^n \frac{t_i^2}{t_i+t_{i+1}}\right) \sum_{i=1}^n\left(t_i+t_{i+1}\right) \\
+= & \left(\sum_{i=1}^n t_i\right) \sum_{i=1}^n\left(t_i+t_{i+1}\right)-\left(\sum_{i=1}^n \frac{t_i^2}{t_i+t_{i+1}}\right) \sum_{i=1}^n\left(t_i+t_{i+1}\right) \\
+\leqslant & \sum_{i=1}^n t_i \sum_{i=1}^n\left(t_i+t_{i+1}\right)-\left(\sum_{i=1}^n \frac{t_i}{\sqrt{t_i}+t_{i+1}} \cdot \sqrt{t_i+t_{i+1}}\right)^2 \\
+= & \left(\sum_{i=1}^n t_i\right)^2+\left(\sum_{i=1}^n t_i\right) \sum_{i=1}^n t_{i+1}--\left(\sum_{i=1}^n t_i\right)^2=\sum_{i=1}^n t_i \sum_{i=1}^n t_{i+1} .
+\end{aligned}
+$$
+所以最小值大于或等于 1 .
+由柯西不等式成立的条件, 得
+$$
+\frac{\sqrt{t_i+t_{i+1}}}{\frac{t_i}{\sqrt{t_i+t_{i+1}}}}=d(1 \leqslant i \leqslant n),
+$$
+即
+$$
+\frac{t_{i+1}}{t_i}=d-1=c, 1 \leqslant i \leqslant n .
+$$
+再令 $t_1=b, t_j=b c^{j-1}, 1 \leqslant j \leqslant n+1$, 相应地有
+$$
+\frac{x_{j+-1}}{x_j}=t_j=b c^{j-1}, 1 \leqslant j \leqslant n+1 .
+$$
+记 $x_1=a>0$, 得
+$$
+x_k=t_{k-1} t_{k-2} \cdots t_1 a=a b^{k-1} c^{\frac{(k-1)(k-2)}{2}}, 2 \leqslant k \leqslant n+2 .
+$$
+因为 $x_2>x_1$, 所以 $b=\frac{x_2}{x_1}>1$.
+又因为 $t_j=b c^{j-1}>1,1 \leqslant j \leqslant n+1$, 所以
+$$
+c>\sqrt[n]{\frac{1}{b}}\left(\geqslant \sqrt[n-1]{\frac{1}{b}}, 1 \leqslant j \leqslant n+1\right) .
+$$
+故最小值为 1 , 且当且仅当 $x_1=a, x_k=a b^{k-1} c^{\frac{(k-1)(k-2)}{2}}(2 \leqslant k \leqslant n+2$, 其中 $\left.a>0, b>1, c>\sqrt[n]{\frac{1}{b}}\right)$ 时等号成立.
+%%<REMARK>%%
+注:这个题目的表达形式看起来很复杂, 但通过变量代换后, 可以发现各项之间的关系, 借助于柯西不等式,估计出它的下界.
+%%PROBLEM_END%%
+
+

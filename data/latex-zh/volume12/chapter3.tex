@@ -1,0 +1,261 @@
+
+%%TEXT_BEGIN%%
+1941 年, 匈牙利数学家托兰 (Turán) 为了回答这样的问题: " $n$ 个顶点的图 $G$ 不包含 $m$ 个顶点的完全图 $K_m$, 则图 $G$ 的最大边数是多少?"而提出了他的著名定理, 从而开创了图论研究的一个新方向 "极图理论", 极图理论是近年来图论中比较活跃的分支之一.
+匈牙利数学家波洛巴斯 (B. Bollobás)在 1978 年专门写了一本《极图理论》, 是这方面最具权威的著作.
+下面先从 $k$ 部图的定义谈起.
+如果图 $G$ 的顶点集 $V$ 可以分解为 $k$ 个两两不交非空子集的并,即
+$$
+V=\bigcup_{i=1}^k V_i, V_i \cap V_j=\varnothing, i \neq j .
+$$
+并且没有一条边, 其两个端点都在上述同一子集内, 我们称这样的图 $G$ 为 $k$ 部图.
+记作 $G=\left(V_1, V_2, \cdots, V_k ; E\right)$.
+如图(<FilePath:./figures/fig-c3i1.png>) 所示的是一个 2 部图, 2 部图又称偶图.
+图(<FilePath:./figures/fig-c3i2.png>)所示的是一个 3 部图.
+显然任何 $n$ 阶图是一个 $n$ 部图.
+如果在一个 $k$ 部图 $G=\left(V_1, V_2, \cdots, V_k ; E\right)$ 中, $\left|V_i\right|=m_i$. 任何两点 $u \in V_i, v \in V_j, i \neq j, i, j=1,2, \cdots, k$, 均有 $u$ 和 $v$ 相邻, 则称 $G$ 是完全 $k$ 部图, 记作 $K_{m_1}, m_2, \cdots, m_k$. 图(<FilePath:./figures/fig-c3i1.png>)所示的是完全偶图 $K_{2,3}$.
+完全偶图 $K_{m, m}$ 和 $K_{m, m+1}$ 中分别有 $m^2$ 和 $m(m+1)$ 条边, 于是图中边数 $=\left[\frac{n^2}{4}\right]$ (此处 $[x]$ 表示不超过 $x$ 的最大整数, $n$ 是图的阶), 完全偶图 $K_{m, m}$ 和 $K_{m, m+1}$ 中显然不含三角形, 下面的定理一表明, 在不含三角形的图中,这两类图中边的数目最多.
+定理一有 $n$ 个顶点且不含三角形的图 $G$ 的最大边数为 $\left[\frac{n^2}{4}\right]$.
+证明设 $v_1$ 是 $G$ 中具有最大度数的顶点, $d\left(v_1\right)=d$. 又设与 $v_1$ 相邻的 $d$ 个顶点为
+$$
+v_n, v_{n-1}, \cdots, v_{n-d+1} .
+$$
+由于 $G$ 不含三角形.
+所以 $v_n, v_{n-1}, \cdots, v_{n-d+1}$ 中任意两点都不相邻, 故 $G$ 的边数 $e$ 满足
+$$
+\begin{aligned}
+e & \leqslant d\left(v_1\right)+d\left(v_2\right)+\cdots+d\left(v_{n-d}\right) \\
+& \leqslant(n-d) \cdot d \leqslant\left(\frac{n-d}{2}+d\right)^2 \\
+& =\frac{n^2}{4} .
+\end{aligned}
+$$
+因为边数 $e$ 为整数, 所以 $e \leqslant\left[\frac{n^2}{4}\right]$.
+最大值是可以达到的, 当 $n=2 m$ 时, 取 $G=K_{m, m}$; 当 $n=2 m+1$ 时, 取 $G=K_{m, m+i}$.
+定理一的证明, 用数学归纳法也可完成, 留给读者作为习题.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+定理三设 $S=\left\{x_1, x_2, \cdots, x_n\right\}$ 是平面上直径为 1 的点集,则距离大于 $\frac{\sqrt{2}}{2}$ 的点对的最大可能的数目是 $\left[\frac{n^2}{3}\right]$. 并且对每个 $n$, 存在直径为 1 的一个点集 $\left\{x_1, x_2, \cdots, x_n\right\}$, 它恰好有 $\left[\frac{n^2}{3}\right]$ 个点对,其距离大于 $\frac{\sqrt{2}}{2}$.
+证明作图 $G: n$ 个顶点表示这 $n$ 个点, 两顶点相邻当且仅当这两点之间的距离大于 $\frac{\sqrt{2}}{2}$. 我们先证明 $G$ 不包含 $K_4$.
+对于平面上任意 4 个点,它们的凸包只有 3 种情况 : 线段、三角形、四边形,如图(<FilePath:./figures/fig-c3i11.png>) 所示.
+显然在每一种情况下都有一个不小于 $90^{\circ}$ 的角 $x_i x_j x_k$. 对于这 3 个点 $x_i, x_j, x_k$, 它们两两之间的距离不可能都大于 $\frac{\sqrt{2}}{2}$ 且小于等于 1 .
+因为若 $d\left(x_i, x_j\right)$ (此处用 $d(x, y)$ 表示 $x$ 和 $y$ 之间的距离) 和 $d\left(x_j, x_k\right)$ 都大于 $\frac{\sqrt{2}}{2}$, 且 $\angle x_i x_j x_k \geqslant 90^{\circ}$, 则
+$$
+d\left(x_i, x_k\right) \geqslant \sqrt{d^2\left(x_i, x_j\right)+d^2\left(x_j, \overline{x_k}\right)}>1 .
+$$
+由于点集 $S$ 的直径为 1 , 故 $G$ 中的任意 4 个点中, 至少有一对点不相邻, 即 $G$ 中不含 $K_4$.
+根据定理二, $G$ 的边数不超过 $e_3(n)=\left[\frac{n^3}{3}\right]$.
+我们可以构作一个直径为 1 的点集 $\left\{x_1, x_2, \cdots\right.$, $\left.x_n\right\}$, 其中恰有 $\left[\frac{n^2}{3}\right]$ 个点对, 其距离大于 $\frac{\sqrt{2}}{2}$. 作法如下: 选择 $r$, 使 $0<r<\frac{1}{4}\left(1-\frac{\sqrt{2}}{2}\right)$, 并画出三个半径为 $r$ 的圆, 它们的中心两两相距 1-2r, 如图(<FilePath:./figures/fig-c3i12.png>) 所示.
+把 $x_1, x_2, \cdots, x_{\left[\frac{n}{3}\right]}$ 放在一个圆内, $x_{\left[\frac{n}{3}\right]+1}, \cdots, x_{\left[\frac{2 n}{3}\right]}$ 放在另一个圆内, $x_{\left[\frac{2 n}{3}\right]+1}, \cdots, x_n$ 放在第三个圆内, 并且使得 $x_1$ 与 $x_n$ 的距离为 1 . 显然该集的直径为 1 , 当且仅当 $x_i$ 和 $x_j$ 分属两个不同的圆时, $d\left(x_i, x_j\right)>\frac{\sqrt{2}}{2}$. 所以恰好存在 $\left[\frac{n^2}{3}\right]$ 个点对 $\left(x_i, x_j\right)$, 使得 $d\left(x_i, x_j\right)>\frac{\sqrt{2}}{2}$.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设图 $G$ 有 20 个顶点, 101 条边.
+证明 $G$ 中一定有两个具有公共边的三角形.
+%%<SOLUTION>%%
+证明:可将 20 改为更一般的自然数 $2 n(n \geqslant 2)$, 用数学归纳法证明: 图 $G$ 有 $2 n(n \geqslant 2)$ 个顶点, $n^2+1$ 条边, 则 $G$ 中一定有两个具有公共边的三角形.
+当 $n=2$ 时, $G$ 有 4 个顶点, 5 条边, 作完全图 $K_4, K_4$ 有 $\mathrm{C}_4^2=6$ 条边, 容易验证不论在 $K_4$ 中去掉哪条边, 总有两个具有公共边的三角形, 即命题在 $n=2$ 时成立.
+假设命题在 $n=k(k \geqslant 2)$ 时成立.
+设 $G$ 有 $2(k+1)$ 个顶点 $v_1, v_2, \cdots$, $v_{2 k+2},(k+1)^2+1=k^2+2 k+2$ 条边.
+因为
+$$
+\left[\frac{(2 k+2)^2}{4}\right]=\left[k^2+2 k+1\right]<k^2+2 k+2,
+$$
+根据定理一, $G$ 中一定有一个三角形, 不妨设是 $\triangle v_1 v_2 v_3$, 且 $d\left(v_1\right) \leqslant d\left(v_2\right) \leqslant d\left(v_3\right)$.
+如果 $v_4, v_5, \cdots, v_{2 k+2}$ 中有一点与 $v_1, v_2, v_3$ 中的两个点都相邻, 那么就得到了两个有公共边的三角形.
+如果 $v_4, v_5, \cdots, v_{2 k+2}$ 中的每一点, 至多只和 $v_1, v_2, v_3$ 中的一个点相邻, 则由顶点集 $\left\{v_4, v_5, \cdots, v_{2 k+2}\right\}$ 引向顶点集 $\left\{v_1, v_2, v_3\right\}$ 的边数不超过
+$$
+(2 k+2)-3=2 k-1 \text {. }
+$$
+那么由 $\left\{v_1, v_2\right\}$ 引向 $\left\{v_4, v_5, \cdots, v_{2 k+2}\right\}$ 的边数 $\leqslant \frac{2}{3}(2 k-1)$, 从 $G$ 中去掉顶点 $v_1, v_2$ 以及与它们相邻的边, 得图 $G^{\prime}, G^{\prime}$ 的顶点个数是 $2 k$, 且边的数目
+$$
+\begin{aligned}
+e^{\prime} & \geqslant k^2+2 k+2-3-\frac{2}{3}(2 k-1) \\
+& =k^2+\frac{2}{3} k-\frac{1}{3} \geqslant k^2+1 . \text { (因为 } k \geqslant 2 \text { ) }
+\end{aligned}
+$$
+由归纳假设, $G^{\prime}$ 中有两个有公共边的三角形, 这两个有公共边的三角形也是 $G$ 中的三角形.
+从而命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. $S$ 为 $m$ 个正整数对 $(a, b)(1 \leqslant a, b \leqslant n, a \neq b)$ 所组成的集合 $\left((a, b)\right.$ 与 $(b, a)$ 被认为是相同的). 证明: 至少有 $\frac{4 m}{3 n}\left(m-\frac{n^2}{4}\right)$ 个三元数组 ( $a$, $b, c)$, 适合: $(a, b),(a, c)$ 及 $(b, c)$ 都属于 $S$. 
+%%<SOLUTION>%%
+证明:作一个图 $G$ : 用点 $v_i$ 表示数 $i, i=1,2, \cdots, n$. 当且仅当 $(i, j) \in S$ 时, 点 $v_i$ 与点 $v_j$ 相邻.
+于是图 $G$ 有 $n$ 个顶点, $m$ 条边.
+要证明的问题就是: $G$ 中至少有 $\frac{4 m}{3 n}\left(m-\frac{n^2}{4}\right)$ 个三角形.
+令顶点 $v_i$ 的度为 $d_i, G$ 中边的集合为 $E$. 设 $\left(v_i, v_j\right) \in E$, 则它的两个端点 $v_i, v_j$ 向其余 $n-2$ 个顶点共引出 $d_i+d_j-2$ 条边, 故至少有 $d_i+d_j-n$ 对分别由 $v_i, v_j$ 引向同一顶点的边, 它们与边 $\left(v_i, v_j\right)$ 构成三角形, 因此 $G$ 中至少有 $d_i+d_j-n$ 个三角形包含边 $\left(v_i, v_j\right)$. 又因为 $G$ 中每个三角形被计算了三次,故 $G$ 中至少有
+$$
+k=\frac{1}{3} \sum_{\left(v_i, v_j\right) \in E}\left(d_i+d_j-n\right)
+$$
+个三角形.
+由于顶点 $v_i$ 的度 $d_i$ 的上述和式中出现 $d_i$ 次, 边的条数为 $m$, 故
+$$
+k=\frac{1}{3}\left(\sum_{i=1}^n d_i^2-m m\right) . \label{eq1}
+$$
+因为 $\sum_{i=1}^n d_i=2 m$, 对 \ref{eq1} 式用柯西不等式, 得
+$$
+\begin{aligned}
+k & \geqslant \frac{1}{3}\left[\frac{1}{n}\left(\sum_{i=1}^n d_i\right)^2-m n\right] \\
+& =\frac{1}{3}\left(\frac{4 m^2}{n}-m n\right) \\
+& =\frac{4 m}{3 n}\left(m-\frac{n^2}{4}\right) .
+\end{aligned}
+$$
+%%<REMARK>%%
+注:: 本题是根据图论中这样的问题: "设 $G$ 是有 $m$ 条边的 $n$ 阶图, 则 $G$ 中的三角形个数一定不小于 $\frac{4 m}{3 n}\left(m-\frac{n^2}{4}\right)$ " 改编而成的.
+设 $n=m k+r(k \geqslant 1,0 \leqslant r<m)$. 我们以 $T_m(n)$ 记完全 $m$ 部图 $K_{n_1, n_2}, \cdots, n_m$, 这里 $n_1=n_2=\cdots=n_r= k+1, n_{r+1}=\cdots=n_m=k$. 令 $e_m(n)$ 表示 $T_m(n)$ 的边数.
+如图(<FilePath:./figures/fig-c3i3.png>) 所示的是 $T_3(5), e_3(5)=8 . e_m(n)$ 的计算公式如下,证明留作习题.
+$$
+e_m(n)=\mathrm{C}_{n-k}^2+(m-1) \mathrm{C}_{k+1}^2 \text {, 其中 } k=\left[\frac{n}{m}\right] .
+$$
+若 $G=\left(V_1, V_2, \cdots, V_m ; E\right)$ 是任一 $n$ 阶 $m$ 部图, 令 $p_i=\left|V_i\right|\left(\sum_{i=1}^m p_i=n\right)$, 可以验证 $G$ 的边数 $\leqslant e_m(n)$, 并且当等号成立时必有 $G$ 与 $T_m(n)$ 同构 . 换句话说, $T_m(n)$ 是包含边数最多的 $n$ 阶 $m$ 部图, 并且是唯一的这样的图.
+显然任意一个 $m$ 部图不含 $K_{m+1}$. 托兰进一步证明了 $T_m(n)$ 是边数最多的、不含 $K_{m+1}$ 的 $n$ 阶图, 并且是唯一的这样的图.
+定理二设 $n$ 阶图 $G$ 不含 $K_{m+1}$, 则 $G$ 的边数 $e(G) \leqslant e_m(n)$; 当且仅当 $G$ 和 $T_m(n)$ 同构时等号成立.
+这便是托兰定理, 证明这里略去.
+有兴趣的读者可参阅 $\mathrm{J} \cdot \mathrm{A}$ - 邦迪和 $\mathrm{U} \cdot \mathrm{S} \cdot \mathrm{R} \cdot$ 默蒂著的《图论及其应用》.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $A_1, A_2, A_3, A_4, A_5, A_6$ 是平面上的 6 点, 其中任意三点不共线.
+(i) 如果这些点之间任意连接 13 条线段, 证明: 必存在 4 点, 它们每两点之间都有线段连接.
+(ii)如果这些点之间只有 12 条线段, 请你画一个图形, 说明(i) 的结论不成立(不必用文字说明).
+(iii) 结论 (i) 能否加强为: 必存在 4 个 4 阶完全图, 给出反例或证明.
+%%<SOLUTION>%%
+解:(i) 把题目转化成图论语言就是: 图 $G$ 有 6 个顶点, 13 条边, 证明 $G$ 中含有 $K_4$.
+容易算得 $e_4(6)=12<13$, 根据定理二, $G$ 中必含有 $K_4$.
+(ii) 构造完全 3 部图 $K_{2,2,2}$, 如图(<FilePath:./figures/fig-c3i4.png>) 所示.
+因从 $K_{2,2,2}$ 中任取 4 点, 总有两点属于同一部分, 而这两点是不相邻的, 因此任取 4 点均不构成 $K_4$.
+%%<REMARK>%%
+注:: 对于 (i), 不用定理二当然也能证明, 而且方法很多,这里仅举两种.
+(1) 因为 6 个点的度数之和 $=2 \times 13=26$, 所以这 6 个点中至少有两个点的度数为 5 (否则, 度数之和 $\leqslant 5+5 \times 4=25<26$ ), 不妨设 $d\left(A_1\right)= d\left(A_2\right)=5$. 与 $A_1$ 或 $A_2$ 关联的边共 9 条, 如图(<FilePath:./figures/fig-c3i5.png>) 所示.
+于是在 $A_3, A_4$, $A_5, A_6$ 之间还有 $13-9=4$ 条边.
+这 4 条边的任一条的两个端点与 $A_1, A_2$ 这 4 点构成 $K_4$.
+(2) 因为 6 阶完全图有 15 条边, 所以图 $G$ 就是在 $K_6$ 中去掉两条边.
+分两种情况讨论:
+(1) 两边有公共点, 如图(<FilePath:./figures/fig-c3i6.png>), 则四点组 $A_2, A_4, A_5, A_6$ 组成 $K_4$;
+(2) 两边无公共点, 如图(<FilePath:./figures/fig-c3i7.png>), 则四点组 $A_1, A_3, A_5, A_6$ 组成 $K_4$.
+(iii)按上述两种情况来讨论: 情况(1)中有 6 个 $K_4$ 组 $\left(A_1, A_4, A_5, A_6\right)$, $\left(A_2, A_4, A_5, A_6\right),\left(A_3, A_4, A_5, A_6\right),\left(A_2, A_3, A_4, A_5\right),\left(A_1, A_3, A_4\right.$,
+$\left.A_6\right),\left(A_1, A_3, A_5, A_6\right)$.
+情况(2)中有 4 个 $K_4$ 组 $\left(A_1, A_3, A_5, A_6\right),\left(A_1, A_4, A_5, A_6\right),\left(A_1\right.$, $\left.A_3, A_4, A_5\right),\left(A_1, A_2, A_4, A_5\right)$.
+所以,必存在 4 个 4 阶完全图.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 在有 8 个顶点的简单图中, 没有四边形(即由四点 $A, B, C, D$ 和四条边 $A B, B C, C D, D A$ 组成的图) 的图的边数的最大值是多少? 
+%%<SOLUTION>%%
+解:边数的最大值为 11 .
+首先, 如图(<FilePath:./figures/fig-c3i8.png>) 所示, 图中有 8个顶点和 11 条边,但其中没有四边形.
+下面我们证明: 若一个简单图有 12 条边, 则其中一定含有四边形.
+首先指出两个明显的事实:
+(a) 设 $A \neq B$ 是两个顶点.
+如果点 $A$ 与点 $C_1, \cdots, C_k$ 均有边相连, $B$ 至少与 $\left\{C_1, \cdots, C_k\right\}$ 中的两点分别有边相连, 则图中必有四边形.
+(b) 如果 4 点之间连有 5 条边, 则图中必有四边形.
+设有 8 个顶点, 12 条边的图中没有四边形, 其中点 $A$ 是引出边最多的顶点之一.
+(1) 设 $A$ 共引出 $s \geqslant 5$ 条边, 与 $A$ 有边相连的顶点的集合为 $S$, 除点 $A$ 及 $S$ 中的点之外的所有顶点的集合记为 $T$. 于是由 (a) 和 (b) 知, $S$ 中点之间连线数不超过 $\left[\frac{s}{2}\right], T$ 中点之间连线数至多为 $\mathrm{C}_{|T|}^2, S$ 与 $T$ 之间连线数至多为 $|T|$. 因而, 图中连线总数至多为
+$$
+s+\left[\frac{s}{2}\right]+|T|+\mathrm{C}_{|T|}^2=7+\left[\frac{s}{2}\right]+\mathrm{C}_{|T|}^2 .
+$$
+当 $s \geqslant 5$ 时,边数小于 12 ,矛盾.
+(2) 点 $A$ 恰引出 4 条边: $A A_j(j=1,2,3,4)$. 设另外 3 点是 $B_1, B_2$, $B_3$. 于是 $\left\{A_1, A_2, A_3, A_4\right\}$ 之间至多两条边, $\left\{B_1, B_2, B_3\right\}$ 之间至多 3 条边, 这两个点集之间至多 3 条边.
+因为图中共有 12 条边, 故知 3 类边数恰分别为 $2,3,3$. 不妨设第 3 组的 3 条线为 $A_j B_j(j=1,2,3)$. 因为第 1 组有两条边且二者没有公共端点, 故 $\left\{A_1, A_2, A_3\right\}$ 之间有一条边, 不妨设为 $A_1 A_2$, 于是 $A_1 A_2 B_2 B_1$ 为四边形,矛盾.
+(3) 点 $A$ 恰引出 3 条线, 从而每点都引出 3 条线.
+设点 $A$ 和 $B$ 之间没有连线, 两点各引出的 3 条线分别为 $A A_j, B B_j(j=1,2,3)$. 于是由 (a) 知
+$\left\{A_1, A_2, A_3\right\}$ 与 $\left\{B_1, B_2, B_3\right\}$ 至多有 1 个公共点.
+如果二者没有公共点, 则它们的各 3 点间都至多有一条边, 两个三点集之间至多有 3 条连线.
+从而图中连线总数至多为 11 ,矛盾.
+如果两个三点集之间恰有 1 个公共点, 则考察第 8 点 $C$. 由抽屉原理知, 它引出的 3 条线中必有两条引向同一个三点集, 这导致四边形,矛盾.
+综上,我们证明了在有 8 个顶点和 12 条边的图中必有四边形.
+从而, 所求的边数的最大值为 11 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 证明:设 $G$ 是 $n$ 阶简单图, $G$ 中不含四边形, 则其边数
+$$
+e \leqslant \frac{1}{4} n(1+\sqrt{4 n-3}) .
+$$
+%%<SOLUTION>%%
+证设 $V=\left\{v_1, v_2, \cdots, v_n\right\}$ 是图 $G$ 的顶点集,对于任意的顶点 $v_i \in V$, 与 $v_i$ 相邻的顶点对 $\{x, y\}$ 有 $\mathrm{C}_{d\left(v_i\right)}^2$ 个.
+由于图 $G$ 中没有四边形, 所以, 当 $v_i$ 在 $V$ 中变化时, 所有的顶点对 $\{x, y\}$ 都是互不相同的, 否则, 点对 $\{x, y\}$ 分别在 $\mathrm{C}_{d\left(v_i\right)}^2$ 和 $\mathrm{C}_{d\left(v_j\right)}^2$ 中被计数, 那么 $v_i, x, v_j, y$ 就组成一个四边形.
+所以
+$$
+\sum_{i=1}^n \mathrm{C}_{d\left(v_i\right)}^2 \leqslant \mathrm{C}_n^2
+$$
+由柯西不等式,有
+$$
+\begin{aligned}
+\sum_{i=1}^n \mathrm{C}_{d\left(v_i\right)}^2 & =\frac{1}{2} \sum_{i=1}^n d^2\left(v_i\right)-e \\
+& \geqslant \frac{1}{2} \cdot \frac{1}{n}\left(\sum_{i=1}^n d\left(v_i\right)\right)^2-e \\
+& =\frac{2}{n} e^2-e,
+\end{aligned}
+$$
+所以
+$$
+\begin{gathered}
+\frac{2}{n} e^2-e \leqslant \mathrm{C}_n^2, \\
+e^2-\frac{n}{2} e-\frac{1}{4} n^2(n-1) \leqslant 0, \\
+e \leqslant \frac{n}{4}(1+\sqrt{4 n-3}) .
+\end{gathered}
+$$
+解得说明 本题得到了一个 $n$ 阶简单图不含四边形, 其边数的一个上界.
+但这还不是最大值, 对于一般的 $n$, 边数的最大值还有待于进一步的研究.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 由 $n$ 个点和这些点之间的 $l$ 条线段组成一个空间图形, 其中 $n= q^2+q+1, l \geqslant \frac{1}{2} q(q+1)^2+1, q \geqslant 2, q \in \mathbf{N}$.
+已知此图中任意四点不共面, 每点至少有一条连线段, 存在一点至少有 $q+2$ 条连线段.
+证明: 图中必存在一个空间四边形(即由四点 $A, B, C, D$ 和四条连线段 $A B, B C, C D, D A$ 组成的图形).
+%%<SOLUTION>%%
+证本题条件中任意四点不共面实际是为了保证无三点共线, 故从图论角度看, 只需证明图中存在四边形即可.
+解答本题可以援引例 5 思路, 但直接应用不可行.
+考虑将与 $d\left(v_1\right) \geqslant q+2$ 的点 $v_1$ 相连的 $d\left(v_1\right)$ 个点去掉, 剩下的点对有 $\mathrm{C}_{n-d\left(v_1\right)}^2$ 个.
+如例 5 , 没有四边形时 $\mathrm{C}_{n-d(v)}^2 \geqslant \sum_{i=2}^n \mathrm{C}_{d\left(v_i\right)-1}^2$.
+同样 $\sum_{i=2}^n\left(d\left(v_i\right)-1\right)=2 l-n+1-d(v)$.
+结合 Cauchy 不等式得
+$$
+\begin{aligned}
+& {\left[n-d\left(v_1\right)\right]\left[n-d\left(v_1\right)-1\right] } \\
+2 & \frac{1}{2}\left\{\sum_{i=2}^n\left[n-d\left(v_i\right)\right]^2-\sum_{i=2}^n\left[n-d\left(v_i\right)\right]\right\} \\
+\geqslant & \frac{1}{2}\left\{\frac{1}{n-1}\left[2 l-n+1-d\left(v_1\right)\right]^2-\left[2 l-n+1-d\left(v_i\right)\right]\right\}
+\end{aligned}
+$$
+即
+$$
+\begin{aligned}
+& (n-1)\left[n-d\left(v_1\right)\right]\left[n-d\left(v_1\right)-1\right] \\
+\geqslant & {\left[2 l-n+1-d\left(v_1\right)\right]\left[2 l-2 n+2-d\left(v_1\right)\right] } \\
+\geqslant & {\left[q^3+q^2-d\left(v_1\right)+2\right]\left[q^3-q+2-d\left(v_1\right)\right] } \\
+= & {\left[n q-q+2-d\left(v_1\right)\right]\left[n q-q-n+3-d\left(v_1\right)\right] }
+\end{aligned}
+$$
+这与 $(q+1)\left[n-d\left(v_1\right)\right]<n q-q+2-d\left(v_1\right)$ 及 $q\left[n-d\left(v_1\right)-1\right] \leqslant n q- q-n+3-d(v)$ 矛盾.
+所以图中必有四边形.
+作为托兰定理的应用,再举一个几何例子.
+平面点集 $S$ 中任意两点的距离的最大值记为 $d$. 如果 $d$ 是一个有限数, 称 $d$ 是点集 $S$ 的直径.
+设 $S=\left\{x_1, x_2, \cdots, x_n\right\}$ 是由 $n$ 个点组成的直径为 1 的点集.
+$n$ 个点确定 $了 \mathrm{C}_n^2$ 个点对的距离.
+对于 0 和 1 之间的数 $d$, 可以提出这样的问题: 在直径为 1 的点集 $S=\left\{x_1, x_2, \cdots, x_n\right\}$ 中有多少点对, 其距离大于 $d$. 这里我们仅讨论 $d=\frac{\sqrt{2}}{2}$ 这一特殊情形.
+先看 $n=6$ 的情形,这时 $S=\left\{x_1, x_2, x_3, x_4, x_5, x_6\right\}$. 把它们放在一个正六边形的顶点上, 使点对 $\left(x_1, x_4\right),\left(x_2, x_5\right),\left(x_3, x_6\right)$ 的距离为 1 , 如图(<FilePath:./figures/fig-c3i9.png>) 所示, $S$ 的直径为 1 . 易知点对 $\left(x_1, x_3\right),\left(x_2, x_4\right),\left(x_3, x_5\right),\left(x_4, x_6\right)$, $\left(x_5, x_1\right),\left(x_6, x_2\right)$ 的距离为 $\frac{\sqrt{3}}{2}$. 所以在这个直径为 1 的点集中存在 9 个点对, 其距离大于 $\frac{\sqrt{2}}{2}$.
+但是 9 并非是在 6 个点上所能做到的最好答案.
+如果按图(<FilePath:./figures/fig-c3i10.png>) 所示来安排这 6 个点的话(其中点 $x_1, x_3, x_5$ 构成边长为 1 的正三角形, 点 $x_2, x_4$, $x_6$ 构成边长为 0.8 , 中心与 $\triangle x_1 x_3 x_5$ 重合, 边分别与 $\triangle x_1 x_3 x_5$ 平行的正三角形), 则除了点对 $\left(x_1, x_2\right),\left(x_3, x_4\right),\left(x_5, x_6\right)$ 外, 其余的点对的距离均大于 $\frac{\sqrt{2}}{2}$. 因此我们有 $\mathrm{C}_6^2-3=12$ 个点对, 其距离大于 $\frac{\sqrt{2}}{2}$. 事实上, 这是我们所能做到的最好答案.
+%%PROBLEM_END%%
+
+

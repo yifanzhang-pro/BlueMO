@@ -1,0 +1,113 @@
+
+%%TEXT_BEGIN%%
+选择适当的跨度.
+从本讲起,下面的四讲都是一些运用数学归纳法证题时的常见技巧的介绍.
+逻辑结构设 $P(n)$ 是关于正整数 $n$ 的命题 (或性质), $k$ 为一个给定的正整数, 如果
+(1) $P(1), P(2), \cdots, P(k)$ 成立;
+(2) 由 $P(n)$ 成立可推出 $P(n+k)$ 成立.
+那么, 对任意 $n \in \mathbf{N}^*, P(n)$ 都成立.
+这里 $k$ 是一个跨度, 当 $k=1$ 时, 就是第一数学归纳法.
+有时在处理问题时, 利用大跨度要方便得多.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 证明: 对任意正整数 $n \geqslant 3$,都存在一个完全立方数,它可以表示为 $n$ 个正整数的立方和.
+%%<SOLUTION>%%
+证明:对比不定方程 $x^3+y^3=z^3$ 没有正整数解的结论, 可了解问题的背景.
+当 $n=3$ 时,由 $3^3+4^3+5^3=6^3$ 可知命题对 $n=3$ 成立;
+当 $n=4$ 时, 由 $5^3+7^3+9^3+10^3=13^3$ (这个等式是 Euler 最早发现的), 可知命题对 $n=4$ 成立.
+现设命题对 $n(\geqslant 3)$ 成立, 即存在正整数 $x_1<x_2<\cdots<x_n<y$, 使得
+$$
+x_1^3+x_2^3+\cdots+x_n^3=y^3,
+$$
+则利用 $6^3=3^3+4^3+5^3$, 可知
+$$
+\begin{aligned}
+(6 y)^3 & =\left(6 x_n\right)^3+\cdots+\left(6 x_2\right)^3+\left(6 x_1\right)^3 \\
+& =\left(6 x_n\right)^3+\cdots+\left(6 x_2\right)^3+\left(5 x_1\right)^3+\left(4 x_1\right)^3+\left(3 x_1\right)^3 .
+\end{aligned}
+$$
+这表明命题对 $n+2$ 成立.
+所以, 对任意 $n \geqslant 3$, 命题都成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $n$ 为不小于 3 的正整数.
+证明: 可以将-一个正三角形剖分为 $n$ 个等腰三角形.
+%%<SOLUTION>%%
+证明:当 $n=3$ 时,设 $O$ 为正三角形 $A B C$ 的外心,则 $\triangle A O B 、 \triangle B O C$ 、 $\triangle C O A$ 都是等腰三角形,故命题对 $n=3$ 成立.
+当 $n=4$ 时,设 $D 、 E 、 F$ 分别是正三角形 $A B C$ 的边 $B C 、 C A 、 A B$ 的中点, 则 $\triangle A E F 、 \triangle F B D 、 \triangle D C E$ 和 $\triangle D E F$ 都是等腰三角形,故命题对 $n=4$ 成立.
+当 $n=5$ 时,如图 (<FilePath:./figures/fig-c2i5.png>) 所示, 设 $O$ 为正三角形 $A B C$ 的外心, $D 、 E$ 分别是 $B C 、 C A$ 的中点, $F$ 为 $B O$ 的中点.
+利用直角三角形斜边上的中线等于斜边的一半, 可知 $\triangle A B O 、 \triangle B F D 、 \triangle F O D 、 \triangle D E C$ 和 $\triangle A D E$ 都是等腰三角形.
+故命题对 $n=5$ 成立.
+现设每一个正三角形都能剖分为 $n(\geqslant 3)$ 个等腰三角形 (即命题对 $n$ 成立), 则对正三角形 $A B C$, 设 $D$ 、 $E 、 F$ 分别为 $B C 、 C A 、 A B$ 的中点, 并将正三角形 $A E F$
+依归纳假设剖分为 $n$ 个等腰三角形, 将这 $n$ 个三角形与 $\triangle B D F 、 \triangle C D E$ 、 $\triangle D E F$ 合并, 即构成正三角形 $A B C$ 的一个个数为 $n+3$ 的等腰三角形剖分.
+故命题对 $n+3$ 成立.
+综上所述, 对任意 $n \geqslant 3$, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 证明: 对任意 $n \in \mathbf{N}^*$, 不定方程
+$$
+x^2+y^2=z^n . \label{eq1}
+$$
+有无穷多组正整数解.
+%%<SOLUTION>%%
+证明:当 $n=1$ 时, 对任意 $x 、 y \in \mathbf{N}^*,\left(x, y, x^2+y^2\right)$ 都是 式\ref{eq1} 的正整数解; 当 $n=2$ 时, 取 $m>n \geqslant 1, m 、 n \in \mathbf{N}^*$, 令 $x=m^2-n^2, y=2 m m$, $z=m^2+n^2$, 就有 $x^2+y^2=z^2$, 故命题对 $n=1 、 2$ 成立.
+现设命题对 $n$ 成立, 对正整数 $x 、 y 、 z$, 若 $x^2+y^2=z^n$, 则 $(x z)^2+ (y z)^2=z^{n+2}$, 因此不定方程 $x^2+y^2=z^{n+2}$ 有无穷多组正整数解.
+结合命题对 $n=1,2$ 成立, 可知命题对任意 $n \in \mathbf{N}^*$ 成立.
+说明此题还可依下述方法处理: 令 $z=a+b \mathrm{i}$, 其中 $a 、 b \in \mathbf{N}^*$ 且 $0< \arg z<\frac{\pi}{n}$ (这样的 $a 、 b$ 对有无穷多对使得 $a^2+b^2$ 的值彼此不同), 则由二项式定理, 可写 $z^n=(a+b \mathrm{i})^n=x+y \mathrm{i}, x, y \in \mathbf{Z}$, 且 $x y \neq 0$ (这是因为 $\left.\arg z^n \in(0, \pi)\right)$, 两边取模, 可知 $\left(\sqrt{a^2+b^2}\right)^n=\sqrt{x^2+y^2}$, 即有 $x^2+y^2= \left(a^2+b^2\right)^n$, 故 $\left(|x|,|y|, a^2+b^2\right)$ 是 $x^2+y^2=z^n$ 的正整数解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 求所有的函数 $f: \mathbf{N} \rightarrow \mathbf{N}$, 使得
+(1) 对任意 $m 、 n \in \mathbf{N}$, 都有 $f\left(m^2+n^2\right)=f(m)^2+f(n)^2$;
+(2) $f(1)>0$.
+%%<SOLUTION>%%
+解:在 (1) 中令 $m=n=0$, 得 $f(0)=2 f(0)^2$, 故 $f(0)=0$ 或 $\frac{1}{2}$, 但 $f(0) \in \mathbf{N}$, 故 $f(0)=0$. 于是, 由 (1) 知, 对任意 $m \in \mathbf{N}$, 都有 $f\left(m^2\right)=f(m)^2$. 现在先计算 $n \in\{1,2, \cdots, 10\}$ 时, $f(n)$ 的值.
+由条件及前面推出的结论知 $f(1)=f\left(1^2\right)=f(1)^2$, 而 $f(1)>0$, 故 $f(1)=1$. 进而, 依次有
+$$
+\begin{aligned}
+& f(2)=f\left(1^2+1^2\right)=f(1)^2+f(1)^2=1+1=2 ; \\
+& f(4)=f\left(2^2\right)=f(2)^2=4 ; \\
+& f(5)=f\left(2^2+1^2\right)=f(2)^2+f(1)^2=5 ; \\
+& f(8)=f\left(2^2+2^2\right)=f(2)^2+f(2)^2=8 .
+\end{aligned}
+$$
+又由
+$$
+25=f(5)^2=f\left(5^2\right)=f\left(3^2+4^2\right)=f(3)^2+f(4)^2=f(3)^2+16,
+$$
+结合 $f(3) \in \mathbf{N}$, 知 $f(3)=3$. 进而 $f(9)=f(3)^2=9, f(10)=f\left(3^2+1^2\right)= f(3)^2+f(1)^2=10$.
+利用 $7^2+1^2=5^2+5^2$ 及条件(1) 可算出 $f(7)=7$, 再由 $10^2=6^2+8^2$, 知 $f(10)^2=f(6)^2+f(8)^2$, 解得 $f(6)=6$.
+所以, 对任意 $0 \leqslant n \leqslant 10$, 都有 $f(n)=n$.
+下面选用跨度为 5 的方法来证明: 对任意 $n \in \mathbf{N}$, 都有 $f(n)=n$.
+为此需要用到下面的一些等式
+$$
+\begin{aligned}
+& (5 k+1)^2+2^2=(4 k+2)^2+(3 k-1)^2 ; \\
+& (5 k+2)^2+1^2=(4 k+1)^2+(3 k+2)^2 ; \\
+& (5 k+3)^2+1^2=(4 k+3)^2+(3 k+1)^2 ; \\
+& (5 k+4)^2+2^2=(4 k+2)^2+(3 k+4)^2 ; \\
+& (5 k+5)^2=(4 k+4)^2+(3 k+3)^2 .
+\end{aligned}
+$$
+这些等式中右边的每一项在 $k \geqslant 2$ 时都小于左边的第一项, 因此, 利用条件 (1) 及归纳假设,我们每次可以确定这些等式左边第一项的函数值.
+即每次归纳向后推 5 个数都成立.
+所以,对每个 $n \in \mathbf{N}$, 都有 $f(n)=n$.
+说明从上面的例子可以发现, 所谓用跨度为 $k$ 的方法去证 $P(n)$ 成立, 本质上是将 $\{P(n)\}$ 分划为 $k$ 组命题再分别予以证明, 当然, 如果将此想法与第二数学归纳法结合, 各组命题之间还可以相互利用, 本例中就体现了这个思想.
+%%PROBLEM_END%%
+
+

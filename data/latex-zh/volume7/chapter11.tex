@@ -1,0 +1,379 @@
+
+%%TEXT_BEGIN%%
+平面几何中的其他方法和问题选讲.
+除了前面几章介绍的内容之外, 还有一些方法也是平面几何中常用的, 比如: 同一法、代数法、复数法、向量法、解析法等.
+本章就这几种方法各举若干事例.
+同一法.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. $ \triangle A B C$ 中, $A H \perp B C$, 分别以 $A C 、 A B$ 为直径作两个圆, $D$ 是 $B C$ 上一点,过 $D$ 分别作 $A B 、 A C$ 的平行线, 在圆的上方交于 $F 、 E$. 求证: $D 、 H 、 F 、 E$ 四点共圆.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c11i1.png>), 延长 $F A$ 交以 $A B$ 为直径的圆于 $E^{\prime}$, 连结 $D E^{\prime} 、 H E^{\prime}$, 则 $\angle H D F=\angle H B A= \angle H E^{\prime} A=\angle H E^{\prime} F$, 于是 $H 、 D 、 E^{\prime} 、 F$ 四点共圆, 故 $\angle E^{\prime} D B=\angle E^{\prime} F H=\angle A F H=\angle A C H= \angle A C B=\angle E D B$, 故 $E^{\prime} 、 E$ 重合.
+从而 $D, H, F, E$ 四点共圆.
+%%<REMARK>%%
+注:: 本题若不用反证法则很难证明,读者不妨一试.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 如图(<FilePath:./figures/fig-c11i2.png>), 设 $P$ 为 $\triangle A B C$ 的一个内点, $P A 、 P B 、 P C$ 分别交边 $B C 、 C A 、 A B$ 于 $D 、 E 、 F$. 证明 $S_{\triangle P A F}+S_{\triangle P B D}+S_{\triangle P C E}=\frac{1}{2} S_{\triangle A B C}$ 成立当且仅当 $P$ 至少位于 $\triangle A B C$ 的一条中线上.
+%%<SOLUTION>%%
+证明:设 $a=\frac{A F}{F B}, b=\frac{B D}{D C}, c=\frac{C E}{E A}$, 则由塞瓦定理(对 $\triangle A B C$ 和 $D 、 E 、 F$ ) 得
+$$
+a b c=1 \Rightarrow c=\frac{1}{a b} \text {. }
+$$
+由梅氏定理(对 $\triangle A B D$ 和 $F C$ 使用)
+$$
+\frac{A F}{F B} \frac{B C}{C D} \frac{D P}{P A}=1 \text {. }
+$$
+所以 $\frac{A P}{P D}=\frac{A F}{F B} \frac{B C}{C D}=a(b+1)=a+a b$.
+则 $\frac{A P}{A D}=\frac{A P}{A P+P D}=\frac{a+a b}{1+a+a b}$.
+从而 $\frac{S_{\triangle A F P}}{S_{\triangle A B C}}=\frac{A F}{A B} \frac{A P}{A D} \frac{B D}{B C}=\frac{a}{a+1} \frac{a+a b}{1+a+a b} \frac{b}{b+1}$
+$$
+=\frac{a b(a+a b)}{(1+a)(1+b)(1+a+a b)} \text {. }
+$$
+同理可求出 $\frac{S_{\triangle P B D}}{S_{\triangle A B C}}$ 及 $\frac{S_{\triangle P C E}}{S_{\triangle A B C}}$.
+故 $S_{\triangle P A F}+S_{\triangle P B D}+S_{\triangle P C E}=\frac{1}{2} S_{\triangle A B C} \Leftrightarrow \frac{S_{\triangle A F P}}{S_{\triangle A B C}}+\frac{S_{\triangle P B D}}{S_{\triangle A B C}}+\frac{S_{\triangle P C E}}{S_{\triangle A B C}}=\frac{1}{2}$
+$$
+\begin{aligned}
+\Leftrightarrow & \frac{a b(a+a b)}{(1+a)(1+b)(1+a+a b)}+\frac{b c(b+b c)}{(1+b)(1+c)(1+b+b c)}+ \\
+& \frac{c a(c+c a)}{(1+c)(1+a)(1+c+c a)}=\frac{1}{2} \\
+\Leftrightarrow & \frac{a b(a+a b)}{(1+a)(1+b)(1+a+a b)}+\frac{b(1+a b)}{(1+b)(1+a b)(1+a+a b)}+ \\
+& \frac{a(1+a)}{(1+a)(1+a b)(1+a+a b)}=\frac{1}{2} \text { (将 (1) 代入) } \\
+\Leftrightarrow & a^3 b^3-a^2 b^3-a^3 b+a^2+b-1=0 \text { (展开, 实际上去分母不是太困难) } \\
+\Leftrightarrow & (a-1)(b-1)(a b-1)(a b+a+1)=0 \\
+\Leftrightarrow & (1-a)(1-b)(1-c)(a b+a+1)=0
+\end{aligned}
+$$
+$\Leftrightarrow a^3 b^3-a^2 b^3-a^3 b+a^2+b-1=0$ (展开, 实际上去分母不是太困难)
+$\Leftrightarrow(a-1)(b-1)(a b-1)(a b+a+1)=0\Leftrightarrow(1-a)(1-b)(1-c)(a b+a+1)=0\Leftrightarrow a, b, c$ 中至少有一个为 1 (因为 $a b+a+1>0$ )
+$\Leftrightarrow p$ 至少位于 $\triangle A B C$ 的一条中线上, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 如图(<FilePath:./figures/fig-c11i3.png>), $D$ 是 $\triangle A B C$ 内的一点, 满足 $\angle D A C=\angle D C A=30^{\circ}, \angle D B A=60^{\circ}, E$ 是边 $B C$ 的中点, $F$ 是边 $A C$ 的三等分点, 满足 $A F=2 F C$. 求证: $D E \perp E F$. (2007 第六届女子数学奥林匹克)
+%%<SOLUTION>%%
+证明:建立复平面, 令 $B=0, D=1, A= -\omega^2 k$. 这里 $\omega=-\frac{1}{2}+\frac{\sqrt{3}}{2} \mathrm{i}, k \in \mathbf{R}$.
+经计算可得
+$$
+C=1-\omega^2-\omega k,
+$$
+$$
+\begin{gathered}
+E=\frac{B+C}{2}=\frac{1-\omega^2-\omega k}{2}, \\
+F=\frac{2 C+A}{3}=\frac{2-2 \omega^2-2 \omega k-\omega^2 k}{3} .
+\end{gathered}
+$$
+于是,
+$$
+\begin{gathered}
+E-1=-\frac{1+\omega^2+\omega k}{2}, \\
+F-E=\frac{1-\omega^2-\left(\omega+2 \omega^2\right) k}{6} .
+\end{gathered}
+$$
+故
+$$
+\begin{aligned}
+\frac{F-E}{E-1} & =\frac{1}{3} \cdot \frac{\omega^2-1+\left(\omega+2 \omega^2\right) k}{1+\omega^2+\omega k} \\
+& =\frac{\omega-\omega^2}{3} \cdot \frac{k+1}{k-1}=\frac{\mathrm{i}}{\sqrt{3}} \cdot \frac{k+1}{k-1} .
+\end{aligned}
+$$
+因此, $D E \perp E F$, 即 $\angle D E F=90^{\circ}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 如图(<FilePath:./figures/fig-c11i4.png>), 在 $\triangle A B C$ 的三边上向外作 $\triangle B P C 、 \triangle C Q A 、 \triangle A R B$, 使 $\angle P B C= \angle C A Q=45^{\circ}, \angle B C P=\angle Q C A=30^{\circ}$, $\angle A B R=\angle R A B=15^{\circ}$. 求证: $\angle P R Q=90^{\circ}$, $Q R=P R$.
+%%<SOLUTION>%%
+证明:建立如图(<FilePath:./figures/fig-c11i4.png>) 所示复平面, 只需证明 $z_Q=\mathrm{i} \cdot z_P$.
+设 $z_A=-1$, 则 $z_B=\cos 30^{\circ}+\mathrm{i} \sin 30^{\circ}$.
+因为 $\frac{B P}{B C}=\frac{A Q}{A C}=\frac{\sin 30^{\circ}}{\sin 105^{\circ}}=\frac{\sqrt{2}}{1+\sqrt{3}}$, 所
+$$
+\begin{aligned}
+& \text { 以 } z_P=z_B+\frac{\sqrt{2}}{1+\sqrt{3}}\left(z_C-z_B\right) \cdot \mathrm{e}^{-\frac{\pi}{4} \mathrm{i}}, z_Q=z_A+\frac{\sqrt{2}}{1+\sqrt{3}}\left(z_C-z_A\right) \cdot \mathrm{e}^{\frac{\pi}{4} \mathrm{i}} \cdot \\
+& \begin{aligned}
+z_P \cdot \mathrm{i} & =\left[z_B\left(1-\frac{\sqrt{2}}{1+\sqrt{3}} \mathrm{e}^{-\frac{\pi}{4} \mathrm{i}}\right)+\frac{\sqrt{2}}{1+\sqrt{3}} \mathrm{e}^{-\frac{\pi}{4} \mathrm{i}} \cdot z_C\right] \cdot \mathrm{i} \\
+& =\mathrm{e}^{\frac{2}{3} \mathrm{ri}}\left(1-\frac{\sqrt{2}}{1+\sqrt{3}} \mathrm{e}^{-\frac{\pi}{4} \mathrm{i}}\right)+\frac{\sqrt{2}}{1+\sqrt{3}} \mathrm{e}^{\frac{\pi}{4} \mathrm{i}} \cdot z_C \\
+& =-\frac{1}{2}+\frac{\sqrt{3}}{2} \mathrm{i}-\frac{\sqrt{2}}{1+\sqrt{3}}\left(\frac{\sqrt{6}-\sqrt{2}}{4}+\mathrm{i} \cdot \frac{\sqrt{6}+\sqrt{2}}{4}\right)+\frac{\sqrt{2}}{1+\sqrt{3}} \mathrm{e}^{\frac{\pi}{4} \mathrm{i}} \cdot z_C \\
+& =\frac{-3+\sqrt{3}}{2}+\frac{\sqrt{3}-1}{2} \mathrm{i}+\frac{\sqrt{2}}{1+\sqrt{3}} \cdot \mathrm{e}^{\frac{\pi}{4} \mathrm{i}} \cdot z_C ; \\
+& z_Q=\frac{\sqrt{2}}{1+\sqrt{3}}\left(\frac{\sqrt{2}}{2}+\frac{\sqrt{2}}{2} \mathrm{i}\right)-1+\frac{\sqrt{2}}{1+\sqrt{3}} \mathrm{e}^{\frac{\pi}{4} \mathrm{i}} \cdot z_C
+\end{aligned}
+\end{aligned}
+$$
+$$
+=\frac{-3+\sqrt{3}}{2}+\frac{\sqrt{3}-1}{2} \mathrm{i}+\frac{\sqrt{2}}{1+\sqrt{3}} \mathrm{e}^{\frac{\pi}{4} \mathrm{i}} \cdot z_C .
+$$
+所以 $z_Q=z_P \cdot \mathrm{i}$.
+故 $\angle P R Q=90^{\circ}, Q R=P R$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $P_1, P_2, \cdots, P_n$ 是圆内接正 $n$ 边形, $P$ 是圆周上的任一点, 求证: $P P_1^4 \cdot-P P_2^4+\cdots+P P_n^4$ 是常数.
+%%<SOLUTION>%%
+证明:设圆心在原点, 圆的半径为 $r$.
+显然可令 $P_k=r \mathrm{e}^{\mathrm{i} \cdot \frac{2 k \pi}{n}}(k=1,2, \cdots, n), P=r \mathrm{e}^{\mathrm{i} \theta}$, 于是
+$$
+\begin{aligned}
+\left|P P_k\right|^4 & =\left|P-P_k\right|^4=\left|r \mathrm{e}^{\mathrm{i} \theta}-r \mathrm{e}^{\mathrm{i} \cdot \frac{2 k \pi}{n}}\right|^4 \\
+& =r^4\left[\left(\mathrm{e}^{\mathrm{i} \theta}-\mathrm{e}^{\mathrm{i} \cdot \frac{2 k \pi}{n}}\right)\left(\mathrm{e}^{-\mathrm{i} \theta}-\mathrm{e}^{-\mathrm{i} \cdot \frac{2 k \pi}{n}}\right)\right]^2\left(\text { 这里用到 }|z|^2=z \cdot \bar{z}\right) \\
+& =r^4\left[2-\mathrm{e}^{\mathrm{i} \theta} \mathrm{e}^{-\mathrm{i} \cdot \frac{2 k \pi}{n}}-\mathrm{e}^{-\mathrm{i} \theta} \mathrm{e}^{\mathrm{i} \cdot \frac{2 k \pi}{n}}\right]^2 \\
+& =r^4\left[6+\mathrm{e}^{2 i \theta} \mathrm{e}^{-\mathrm{i} \cdot \frac{4 k \pi}{n}}+\mathrm{e}^{-2 \mathrm{i} \theta} \mathrm{e}^{\mathrm{i} \cdot \frac{k k \pi}{n}}-4 \mathrm{e}^{\mathrm{i} \theta} \mathrm{e}^{-\mathrm{i} \cdot \frac{2 k \pi}{n}}-4 \mathrm{e}^{-\mathrm{i} \theta} \mathrm{e}^{\mathrm{i} \cdot \frac{2 k \pi}{n}}\right] .
+\end{aligned}
+$$
+但是 $\sum_{k=1}^n \mathrm{e}^{ \pm \mathrm{i} \cdot \frac{4 k \pi}{n}}=\frac{\mathrm{e}^{ \pm \mathrm{i} \cdot \frac{4 \pi}{n}}\left(1-\mathrm{e}^{ \pm \mathrm{i} \cdot \frac{4 n \pi}{n}}\right)}{1-\mathrm{e}^{\mathrm{i} \cdot \frac{4 \pi}{n}}}=0$,
+$$
+\sum_{k=1}^n \mathrm{e}^{ \pm \frac{2 k \pi}{n}}=\frac{\mathrm{e}^{ \pm \mathrm{i} \cdot \frac{2 \pi}{n}}\left(1-\mathrm{e}^{ \pm \mathrm{i} \cdot \frac{2 n \pi}{n}}\right)}{1-\mathrm{e}^{ \pm \mathrm{i} \cdot \frac{2 \pi}{n}}}=0,
+$$
+所以 $\sum_{k=1}^n P P_k^4=6 n r^4$.
+它与点 $P$ 无关, 即它是一常数.
+%%<REMARK>%%
+注:(1) 从证明中易看出, $P P_1^2+P P_2^2+\cdots+P P_n^2$ 也是一常数, 为 $2 n r^2$.
+(2) $\mathrm{e}^{\mathrm{i} \theta}=\cos \theta+\mathrm{i} \sin \theta$ 是复数欧拉公式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $P$ 是锐角三角形 $A B C$ 内一点, $A P 、 B P 、 C P$ 分别交边 $B C$ 、 $C A 、 A B$ 于点 $D 、 E 、 F$, 已知 $\triangle D E F \backsim \triangle A B C$. 求证: $P$ 是 $\triangle A B C$ 的重心.
+%%<SOLUTION>%%
+证明:本题的结论对 $\triangle A B C$ 为一般的三角形都成立.
+我们采用复数方法予以证明.
+设 $P$ 为复平面上的原点, 并直接用 $X$ 表示点 $X$ 对应的复数, 则存在正实数 $\alpha, \beta, \gamma$, 使得 $\alpha A+\beta B+\gamma C=0$, 且 $\alpha+\beta+\gamma=1$.
+由于 $D$ 为 $A P$ 与 $B C$ 的交点, 可解得 $D=-\frac{\alpha}{1-\alpha} A$, 同样地, $E= -\frac{\beta}{1-\beta} B, F=-\frac{\gamma}{1-\gamma} C$. 利用 $\triangle D E F \backsim \triangle A B C$ 可知 $\frac{D-E}{A-B}=\frac{E-F}{B-C}$, 于是
+$$
+\frac{\gamma B C}{1-\gamma}+\frac{\beta A B}{1-\beta}+\frac{\alpha B C}{1-\alpha}-\frac{\alpha A B}{1-\alpha}-\frac{\beta B C}{1-\beta}-\frac{\gamma C A}{1-\gamma}=0 .
+$$
+化简得: $\left(\gamma^2-\beta^2\right) B(C-A)+\left(\alpha^2-\gamma^2\right) A(C-B)=0$. 这时, 若 $\gamma^2 \neq \beta^2$, 则 $\frac{B(C-A)}{A(C-B)} \in \mathbf{R}$, 因此, $\frac{\frac{C-A}{C-B}}{\frac{P-A}{P-B}} \in \mathbf{R}$, 这要求 $P$ 在 $\triangle A B C$ 的外接圆上, 与 $P$ 在 $\triangle A B C$ 内矛盾, 所以 $\gamma^2=\beta^2$, 进而 $\alpha^2=\gamma^2$, 得 $\alpha=\beta=\gamma=\frac{1}{3}$. 即 $P$ 为 $\triangle A B C$ 的重心.
+命题获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 如图(<FilePath:./figures/fig-c11i5.png>), 已知圆内接四边形 $A B C D$ 的两条对角线的交点为 $S, S$ 在边 $A B$ 、 $C D$ 上的投影分别为点 $E 、 F$. 证明: $E F$ 的中垂线平分线段 $B C$ 和 $D A$.
+%%<SOLUTION>%%
+证明:设 $A D$ 的中点为 $M$, 则 $2 \overrightarrow{S M}=\overrightarrow{S A}+\overrightarrow{S D}$.
+由于 $\overrightarrow{S E} \perp \overrightarrow{E A}, \overrightarrow{E A}=\overrightarrow{S A}-\overrightarrow{S E}$, 所以,
+$$
+\overrightarrow{S E} \cdot(\overrightarrow{S A}-\overrightarrow{S E})=\mathbf{0},
+$$
+即 $\overrightarrow{S E} \cdot \overrightarrow{S A}-\overrightarrow{S E} \cdot \overrightarrow{S E}=\mathbf{0}$. 类似地, 可得 $\overrightarrow{S F} \cdot \overrightarrow{S D}- \overrightarrow{S F} \cdot \overrightarrow{S F}=\mathbf{0}$.
+由于 $\angle E A S=\angle F D S, \angle A E S=\angle D F S=90^{\circ}$, 所以 $\triangle A S E \backsim \triangle D S F$.
+于是, $|\overrightarrow{S A}| \cdot|\overrightarrow{S F}|=|\overrightarrow{S D}| \cdot|\overrightarrow{S E}|$.
+又 $\angle A S F=\angle D S E$, 易得 $\overrightarrow{S A} \cdot \overrightarrow{S F}=\overrightarrow{S D} \cdot \overrightarrow{S E}$.
+故 $(\overrightarrow{S M}-\overrightarrow{S F})^2-(\overrightarrow{S M}-\overrightarrow{S E})^2=2 \overrightarrow{S M} \cdot \overrightarrow{S E}-2 \overrightarrow{S M} \cdot \overrightarrow{S F}-\overrightarrow{S E} \cdot \overrightarrow{S E}+ \overrightarrow{S F} \cdot \overrightarrow{S F}=(\overrightarrow{S A}+\overrightarrow{S D}) \cdot \overrightarrow{S E}-(\overrightarrow{S A}+\overrightarrow{S D}) \cdot \overrightarrow{S F}-\overrightarrow{S E} \cdot \overrightarrow{S E}+\overrightarrow{S F} \cdot \overrightarrow{S F}=\overrightarrow{S A} \cdot \overrightarrow{S E}-\overrightarrow{S E} \cdot \overrightarrow{S E}-(\overrightarrow{S D} \cdot \overrightarrow{S F}-\overrightarrow{S F} \cdot \overrightarrow{S F})-(\overrightarrow{S A} \cdot \overrightarrow{S F}-\overrightarrow{S D} \cdot \overrightarrow{S E})=0$.
+这就表明 $D A$ 的中点在 $E F$ 的中垂线上.
+同理, $B C$ 的中点也在 $E F$ 的中垂线上.
+故 $E F$ 的中垂线平分线段 $B C$ 和 $D A$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 如图(<FilePath:./figures/fig-c11i6.png>), 凸四边形 $A B C D$ 中, $A B$ 、 $D C$ 的延长线交于 $E, A D 、 B C$ 的延长线交于 $F$. $P 、 Q 、 R$ 依次为 $A C 、 B D 、 E F$ 的中点.
+求证: $P$ 、 $Q 、 R$ 三点共线.
+%%<SOLUTION>%%
+证明:设 $\overrightarrow{A B}=\vec{a}, \overrightarrow{A D}=\vec{b}, \overrightarrow{B E}=\lambda \vec{a}$, $\overrightarrow{D F}=u \vec{b}, \overrightarrow{E C}=m \overrightarrow{E D}, \overrightarrow{F C}=n \overrightarrow{F B}$
+有 $\overrightarrow{A C}=\overrightarrow{A E}+\overrightarrow{E C}=\overrightarrow{A E}+m(\overrightarrow{A D}-\overrightarrow{A E})=(1+\lambda)(1-m) \vec{a}+m \vec{b}$.
+又 $\overrightarrow{A C}=\overrightarrow{A F}+\overrightarrow{F C}=\overrightarrow{A F}+n(\overrightarrow{A B}-\overrightarrow{A F})=(1+u)(1-n) \vec{b}+n \vec{a}$, 则有
+$$
+\begin{gathered}
+\left\{\begin{array}{l}
+(1+\lambda)(1-m)=n, \\
+(1+u)(1-n)=m,
+\end{array}\right. \\
+\left\{\begin{array}{l}
+m=\frac{(1+u) \lambda}{\lambda+u+\lambda u}, \\
+n=\frac{(1+\lambda) u}{\lambda+u+\lambda u} .
+\end{array}\right.
+\end{gathered}
+$$
+又因为
+$$
+\begin{aligned}
+\overrightarrow{A R} & =\frac{1}{2}(\overrightarrow{A E}+\overrightarrow{A F})=\frac{1}{2}[(1+\lambda) \vec{a}+(1+u) \vec{b}], \\
+\overrightarrow{A Q} & =\frac{1}{2}(\overrightarrow{A B}+\overrightarrow{A D})=\frac{1}{2}(\vec{a}+\vec{b}), \\
+\overrightarrow{A P}=\frac{1}{2} \overrightarrow{A C} & =\frac{1}{2}\left[\frac{(1+\lambda) u}{\lambda+u+\lambda u} \cdot \vec{a}+\frac{(1+u) \lambda}{\lambda+u+\lambda u} \cdot \vec{b}\right] .
+\end{aligned}
+$$
+所以
+$$
+\overrightarrow{Q R}=\overrightarrow{A R}-\overrightarrow{A Q}=\frac{1}{2}(\lambda \vec{a}+u \vec{b}),
+$$
+$$
+\begin{aligned}
+\overrightarrow{P R}=\overrightarrow{A R}-\overrightarrow{A P} & =\frac{1}{2} \cdot \frac{(1+\lambda)(1+u)}{\lambda+u+\lambda u} \cdot(\lambda \vec{a}+u \vec{b}) . \\
+\overrightarrow{P R} & =\frac{(1+\lambda)(1+u)}{\lambda+u+\lambda u} \cdot \overrightarrow{Q R} .
+\end{aligned}
+$$
+有 $\overrightarrow{P R} / / \overrightarrow{Q R}$, 即 $P 、 Q 、 R$ 三点共线.
+%%<REMARK>%%
+注:此题我们曾经在完全四边形中用梅氏定理的逆定理证明过.
+用向量解决平面几何问题, 首先是在图形中选出一对不平行的有向线段, 设为 $\vec{a} 、 \vec{b}$, 则平面内的其他有向线段均可用 $\vec{a} 、 \vec{b}$ 唯一表示, 即 $\overrightarrow{A B}=p \vec{a}+ q \vec{b}$. 有序实数对 $(p, q)$ 可看成 $\overrightarrow{A B}$ 的 "坐标", 这里近似于复数, 但它的优点在于直观性, $\vec{a} 、 \vec{b}$ 可以是不互相垂直, 同时起始点可以任意选定, 从而对于解决几何问题有着较大的自由度.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 如图(<FilePath:./figures/fig-c11i7.png>), 梯形 $A B C D$ 中, $A B$ 平行于 $C D$, 作点 $F \in A B$, 使 $C F=D F$. 设 $A C$ 与 $B D$ 相交于点 $E, O_1 、 O_2$ 分别为 $\triangle A D F 、 \triangle B C F$ 的外心.
+求证: $E F \perp \mathrm{O}_1 \mathrm{O}_2$.
+%%<SOLUTION>%%
+证明:取 $D C$ 中点为 $O$, 由 $C F==D F$, 所以 $O F \perp D C$.
+以 $D C$ 为 $x$ 轴, $O F$ 为 $y$ 轴建立直角坐标系, 不妨设 $D(-1,0), C(1,0), F(0, b)$, $A(d, b), B(c, b)$.
+$1^{\circ}$ 若 $c \neq-d$, 则直线 $A C$ :
+$$
+y=\frac{b}{d-1} x-\frac{b}{d-1} . \label{eq1}
+$$
+直线 $B D$ :
+$$
+y=\frac{b}{c+1} x+\frac{b}{c+1} . \label{eq2}
+$$
+联立 式\ref{eq1}、\ref{eq2}知 $E\left(\frac{c+d}{c+2-d}, \frac{2 b}{c+2-d}\right)$, 所以
+$$
+k_{\mathrm{EF}}=\frac{\frac{2 b}{c+2-d}-b}{\frac{c+d}{c+2-d}}=\frac{b d-b c}{c+d} . \label{eq3}
+$$
+而直线 $A F$ 中垂线方程为 $x=\frac{d}{2}$.
+直线 $D F$ 中垂线方程为
+$$
+y=-\frac{1}{b}\left(x+\frac{1}{2}\right)+\frac{b}{2} .
+$$
+所以 $O_1\left(\frac{d}{2},-\frac{1}{b}\left(\frac{d}{2}+\frac{1}{2}\right)+\frac{b}{2}\right)$.
+同理, $O_2\left(\frac{c}{2}, \frac{1}{b}\left(\frac{c}{2}-\frac{1}{2}\right)+\frac{b}{2}\right)$.
+所以
+$$
+K_{O_1 O_2}=\frac{\frac{1}{b}\left(\frac{c}{2}-\frac{1}{2}+\frac{d}{2}+\frac{1}{2}\right)}{\frac{c}{2}-\frac{d}{2}}=\frac{\frac{1}{b}\left(\frac{c+d}{2}\right)}{\frac{c-d}{2}}=\frac{c+d}{b(c-d)} . \label{eq4}
+$$
+由式\ref{eq3}\ref{eq4}知 $K_{E F} \cdot K_{O_1 O_2}=\frac{b d-b c}{c+d} \cdot \frac{c+d}{b(c-d)}=-1$.
+所以 $E F \perp O_1 O_2$.
+$2^{\circ}$ 若 $c=-d$, 则由对称性知 $E F \quad\left\llcorner O_1 O_2\right.$.
+综上, $E F \perp O_1 O_2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 在 $\triangle A B C$ 中, $A B=A C$, 有一圆内切于 $\triangle A B C$ 的外接圆,且与 $A B$ 和 $A C$ 分别相切于点 $P$ 和 $Q$. 求证: 点 $P$ 和 $Q$ 连线的中点是 $\triangle A B C$ 的内切圆圆心.
+%%<SOLUTION>%%
+分析:设 $P Q$ 中点为 $O$, 则 $O$ 在 $\angle B A C$ 的平分线 $A D$ 上.
+如图(<FilePath:./figures/fig-c11i8.png>) 建立直角坐标系, 设 $O A=1, \angle B A O=\alpha$. 设 $\triangle A B C$ 的外接圆的圆心为 $K$ 内切圆的圆心为 $M$. 连结 $P K$. 则 $O$ 到 $A B$ 与 $A C$ 的距离等于 $\sin \alpha$, 故只需证明 $O$ 到 $B C$ 的距离也等于 $\sin \alpha$, 即
+$$
+y_B=y_C=-\sin \alpha .
+$$
+因为 $\triangle A B C$ 的外接圆直径
+$$
+\begin{aligned}
+2 R & =O A+O K+K D=O A+O K+K P \\
+& =1+\tan ^2 \alpha+\tan \alpha \cdot \sec \alpha=\frac{1+\sin \alpha}{\cos ^2 \alpha},
+\end{aligned}
+$$
+所以, $R=\frac{1+\sin \alpha}{2 \cos ^2 \alpha}$,
+$$
+y_M=1-R=\frac{\cos 2 \alpha-\sin \alpha}{2 \cos ^2 \alpha} .
+$$
+从而, $\odot M$ 的方程为
+$$
+x^2+\left(y-\frac{\cos 2 \alpha-\sin \alpha}{2 \cos ^2 \alpha}\right)^2=\left(\frac{1+\sin \alpha}{2 \cos ^2 \alpha}\right)^2 .
+$$
+而 $A B$ 的方程为 $y=\cot \alpha \cdot x+1$.
+解上述两方程得
+$$
+y_A=1, y_B=-\sin \alpha .
+$$
+故命题成立.
+%%<REMARK>%%
+注:此题我们在前面几章曾经多次出现过,这里用的是解析法,也是一种不错的方法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. $ \odot O_1$ 和 $\odot O_2$ 被包含在 $\odot O$ 内, 且分别与 $\odot O$ 相切于两个不同的点 $M$ 和 $N . \odot O_1$ 经过点 $O_2$, 经过 $\odot O_1$ 和 $\odot O_2$ 的两个交点的直线与 $\odot O$ 相交于点 $A$ 和 $B$. 直线 $M A$ 和 $M B$ 分别与 $\odot O_1$ 相交于 $C$ 和 $D$. 证明: $C D$ 与 $\odot O_2$
+相切.
+%%<SOLUTION>%%
+分析:如图(<FilePath:./figures/fig-c11i9.png>), 所以为坐标原点, $M O$ 为 $x$ 轴正半轴, 建立如图所示坐标系.
+设 $\odot O 、 \odot O_1$ 、 $\odot O_2$ 的半径分别为 $r 、 r_1 、 r_2, \angle O_2 M O=\alpha$. 连结 $M O_2, O O_2, N O_2$, 则 $\odot O_1$ 的方程为
+$$
+\left(x-r_1\right)^2+y^2=r_1^2,
+$$
+$\odot \mathrm{O}_2$ 方程为
+$$
+\left(x-r_1-r_1 \cos 2 \alpha\right)^2+\left(y-r_1 \sin 2 \alpha\right)^2=r_2^2 .
+$$
+所以, $A B$ 的方程为
+$$
+\begin{aligned}
+& \left(x-r_1\right)^2+y^2-r_1^2 \\
+= & \left(x-r_1-r_1 \cos 2 \alpha\right)^2+\left(y-r_1 \sin 2 \alpha\right)^2-r_2^2,
+\end{aligned}
+$$
+即
+$$
+2 r_1\left[\cos 2 \alpha \cdot\left(x-r_1\right)+\sin 2 \alpha \cdot y\right]+r_2^2-2 r_1^2=0 \text {. }
+$$
+又 $\odot O$ 与 $\odot O_1$ 关于原点 $M$ 成位似图形 (位似比为 $\frac{r}{r_1}$ ), 所以, $C D$ 的方程为
+$$
+2 r_1\left[\cos 2 \alpha\left(\frac{r}{r_1} x-r_1\right)+\sin 2 \alpha \frac{r}{r_1} y\right]+r_2^2-2 r_1^2=0,
+$$
+即
+$$
+2 r \cos 2 \alpha \cdot x+2 r \sin 2 \alpha \cdot y+r_2^2-2 r_1^2(1+\cos \alpha)=0 . \label{eq1}
+$$
+$$
+\text { 又 } O O_2^2=\left(r-r_1-r_1 \cos 2 \alpha\right)^2+\left(r_1 \sin 2 \alpha\right)^2=\left(r-r_2\right)^2 \text {, 所以, }
+$$
+$$
+r_2^2-2 r_1^2(1+\cos 2 \alpha)=2 r r_2-2 r r_1(1+\cos 2 \alpha) .
+$$
+将上式代入式\ref{eq1}得 $C D$ 的方程
+$$
+\cos 2 \alpha \cdot x+\sin 2 \alpha \cdot y+r_2-r_1(1+\cos 2 \alpha)=0 .
+$$
+从而, $O_2$ 到 $C D$ 的距离为 (注意 $O_2$ 的坐标为 $\left(r_1+r_1 \cos 2 \alpha, r_1 \sin 2 \alpha\right.$ ))
+$$
+d=\cos 2 \alpha \cdot\left(r_1+r_1 \cos 2 \alpha\right)+\sin 2 \alpha \cdot r_1 \sin 2 \alpha+r_2-r_1(1+\cos 2 \alpha)=r_2 \text {. }
+$$
+因此, $C D$ 与 $\odot O_2$ 相切.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 求最小常数 $a>1$, 使得对正方形 $A B C D$ 内部任一点 $P$, 都存在 $\triangle P A B 、 \triangle P B C 、 \triangle P C D, \triangle P D A$ 中的某两个三角形,使得它们的面积之比属于区间 $\left[a^{-1}, a\right]$. (2008 第七届女子数学奥林匹克)
+%%<SOLUTION>%%
+解:$a_{\min }=\frac{1+\sqrt{5}}{2}$.
+首先证明 $a_{\min } \leqslant \frac{1+\sqrt{5}}{2}$, 记 $\varphi=\frac{1+\sqrt{5}}{2}$. 如图 (<FilePath:./figures/fig-c11i10.png>), 不妨设正方形边长为 $\sqrt{2}$. 对正方形 $A B C D$ 内部一点 $P$, 令 $S_1, S_2, S_3, S_4$ 分别表示 $\triangle P A B, \triangle P B C, \triangle P C D$, $\triangle P D A$ 的面积, 不妨设 $S_1 \geqslant S_2 \geqslant S_4 \geqslant S_3$.
+令 $\lambda=\frac{S_1}{S_2}, \mu=\frac{S_2}{S_4}$, 如果 $\lambda, \mu>\varphi$, 由
+$$
+S_1+S_3=S_2+S_4=1 \text {, 得 } \frac{S_2}{1-S_2}=\mu \text {, 得 } S_2=\frac{\mu}{1+\mu} \text {. }
+$$
+故 $S_1=\lambda S_2=\frac{\lambda \mu}{1+\mu}=\frac{\lambda}{1+\frac{1}{\mu}}>\frac{\varphi}{1+\frac{1}{\varphi}}=\frac{\varphi^2}{1+\varphi}=1$, 矛盾.
+故 $\min \{\lambda, \mu\} \leqslant \varphi$, 这表明 $a_{\min } \leqslant \varphi$.
+反过来对于任意 $a \in(1, \varphi)$, 取定 $t \in\left(a, \frac{1+\sqrt{5}}{2}\right)$, 使得 $b=\frac{t^2}{1+t}>\frac{8}{9}$. 我们在正方形 $A B C D$ 内取点 $P$, 使得 $S_1=b, S_2=\frac{b}{t}, S_3=\frac{b}{t^2}, S_4=1-b$, 则我们有
+$$
+\frac{S_1}{S_2}=\frac{S_2}{S_3}=t \in\left(a, \frac{1+\sqrt{5}}{2}\right), \frac{S_3}{S_4}=\frac{b}{t^2(1-b)}>\frac{b}{4(1-b)}>2>a,
+$$
+由此我们得到对任意 $i, j \in\{1,2,3,4\}$, 有 $\frac{S_i}{S_j} \notin\left[a^{-1}, a\right]$. 这表明 $a_{\min }=\varphi$.
+%%PROBLEM_END%%
+
+

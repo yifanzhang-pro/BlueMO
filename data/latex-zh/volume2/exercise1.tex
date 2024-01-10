@@ -1,0 +1,146 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1 设 $X$ 和 $Y$ 是两个集合, $B \subset A \subset X$. 举例说明, 存在着映射 $f: X \rightarrow Y$, 使得
+$$
+f(A-B) \neq f(A)-f(B) .
+$$
+并证明, 当 $f$ 是单射时, $f(A-B)=-f(A)--f(B)$.
+%%<SOLUTION>%%
+取 $A=\{1,2,3\}, B=\{1,2\}, X=Y=\mathbf{N}_{+}$. 则 $f: 1 \mapsto 4,2 \mapsto 5$, $3 \mapsto 4$, 则 $f(A-B)=\{4\}, f(A)-f(B)=\{4,5\}-\{4,5\}=\varnothing$, 故 $f(A- B) \neq f(A)-f(B)$. 当 $f$ 是单射时, 若 $y \in f(A)-f(B)$, 则 $y \in f(A)$, 且 $y \bar{\epsilon} f(B)$, 故存在 $x \in A$, 使得 $f(x)=y$, 由于 $f$ 是单射, 故 $x \bar{\epsilon} B$, 从而 $x \in A-B$, 于是 $y \in f(A-B)$, 所以 $f(A)-f(B) \subseteq f(A-B)$; 若 $y \in f(A- B)$, 则存在 $x \in A-B$, 使得 $y=f(x)$, 所以 $y \in f(A)$, 但 $x \bar{\in} B$, 且 $f$ 是单射, 故 $y \bar{\epsilon} f(B)$, 从而 $y \in f(A)-f(B)$, 即 $f(A-B) \subseteq f(A)-f(B)$. 故当 $f$ 为单射时,有 $f(A-B)=f(A)-f(B)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2 设集合
+$$
+\begin{aligned}
+& M=\{x \mid 1 \leqslant x \leqslant 9, x \in N\}, \\
+& F=\{(a, b, c, d) \mid a, b, c, d \in M\} .
+\end{aligned}
+$$
+定义 $F$ 到 $Z$ 的映射
+$$
+f:(a, b, c, d) \mapsto a b-c d .
+$$
+若 $u 、 v 、 x 、 y$ 都是 $M$ 中的元素, 且满足
+$$
+\begin{aligned}
+& f:(u, v, x, y) \mapsto 39, \\
+& (u, y, x, v) \mapsto 66 .
+\end{aligned}
+$$
+求 $x 、 y 、 u 、 v$.
+%%<SOLUTION>%%
+由题意, 得 $\left\{\begin{array}{l}u v-x y=39, \quad\quad (1) \\ u y-x v=66 .\quad\quad (2) \end{array}\right.$
+(1) + (2), (2) - (1), 得 $(u-x)(v+ y)=3 \times 5 \times 7 \cdots$, $(y-v)(u+x)=3 \times 3 \times 3 \cdots \quad (4)$. 因为 $|u-x|<9$, $0<v+y \leqslant 18,|y-v|<9,0<u+x \leqslant 18$, 所以, 由(3), (4), 得 $u-x=7$, $v+y=15, y-v=3, u+x=9$. 解得 $u=8, v=6, x=1, y=9$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3 给定一个正整数 $n(\geqslant 6)$, 有多少个满足条件
+$$
+1 \leqslant a<b \leqslant c<d \leqslant n
+$$
+的四元有序数组 $(a, b, c, d)$ ?
+%%<SOLUTION>%%
+作映射 $f:(a, b, c, d) \mapsto(a, b, c+1, d+1)$, 于是 $f$ 是从四元整数集 $A=\{(a, b, c, d) \mid 1 \leqslant a<b \leqslant c<d \leqslant n\}$ 到四元整数集 $B=\left\{\left(a^{\prime}, b^{\prime},c^{\prime}, d^{\prime}\right) \mid 1 \leqslant a^{\prime}<b^{\prime}<c^{\prime}<d^{\prime} \leqslant n+1\right\}$ 的一个一一映射, 所以 $|A|=|B|= \mathrm{C}_{n+1}^4$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4 已知 $f(2 x-1)=x^2, x \in \mathbf{R}$, 求函数 $f(f(x))$ 的值域.
+%%<SOLUTION>%%
+令 $y=2 x-1$, 则 $x=\frac{1}{2}(y+1)$, 所以 $f(y)=\frac{1}{4}(y+1)^2 \cdot f(f(x))= \frac{1}{4}\left[\frac{1}{4}(x+1)^2+1\right]^2=\frac{1}{64}\left[(x+1)^2+4\right]^2$. 函数 $f(f(x))$ 的定义域是 $\mathbf{R}$. 当 $x=-1$ 时, $f(f(x))$ 取最小值.
+即 $f(f(x)) \geqslant \frac{1}{4}$. 所以 $f(f(x))$ 的值域是 $\left[\frac{1}{4},+\infty\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5 已知 $f\left(x-\frac{1}{x}\right)=x^2+\frac{1}{x^2}+1$, 求 $f(x+1)$.
+%%<SOLUTION>%%
+设 $u=x-\frac{1}{x}$, 则 $u^2=x^2+\frac{1}{x^2}-2$, 于是 $f(u)=u^2+3$, 所以 $f(x+ 1) =(x+1)^2+3=x^2+2 x+4$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6 已知两个实数集 $A=\left\{a_1, a_2, \cdots, a_{100}\right\}, B=\left\{b_1, b_2, \cdots, b_{50}\right\}$, 若从 $A$ 到 $B$ 的映射 $f$ 使得 $B$ 中每一个元素都有原象，且 $f\left(a_1\right) \leqslant f\left(a_2\right) \leqslant \cdots \leqslant f\left(a_{100}\right)$, 则这样的映射共有多少个? 
+%%<SOLUTION>%%
+不妨设 $b_1<b_2<\cdots<b_{50}$, 将 $A$ 中元素 $a_1, a_2, \cdots, a_{100}$ 按顺序分为非空的 50 组.
+定义映射 $f: A \rightarrow B$, 使第 $i$ 组的元素在 $f$ 之下的象都是 $b_i$ ( $i=1, 2, \cdots, 50)$, 易知这样的 $f$ 满足题设要求.
+而所有这样的分组与满足条件的映射一一对应, 于是满足题设要求的映射 $f$ 的个数与 $A$ 按下标顺序分为 50 组的分法相等,而 $A$ 的分法数为 $\mathrm{C}_{99}^{49}$,故这样的映射共有 $\mathrm{C}_{99}^{49}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7 设 $f(x)=\frac{9^x}{9^x+3}$, 计算:
+$$
+f\left(\frac{1}{2006}\right)+f\left(\frac{2}{2006}\right)+f\left(\frac{3}{2006}\right)+\cdots+f\left(\frac{2005}{2006}\right) .
+$$
+%%<SOLUTION>%%
+因为 $f(x)+f(1-x)=1$, 故有 $f\left(\frac{1}{2006}\right)+f\left(\frac{2}{2006}\right)+f\left(\frac{3}{2006}\right)+\cdots+ f\left(\frac{2005}{2006}\right)=\left[f\left(\frac{1}{2006}\right)+f\left(\frac{2005}{2006}\right)\right]+\left[f\left(\frac{2}{2006}\right)+f\left(\frac{2004}{2006}\right)\right]+\cdots+ \left[f\left(\frac{1002}{2006}\right)+f\left(\frac{1004}{2006}\right)\right]+f\left(\frac{1003}{2006}\right)=1002+f\left(\frac{1}{2}\right)=1002 \frac{1}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8 当 $x \in[-1,1]$ 时, 求
+$$
+f(x)=\frac{x^4+4 x^3+17 x^2+26 x+106}{x^2+2 x+7}
+$$
+的值域.
+%%<SOLUTION>%%
+$f(x)=x^2+2 x+7+\frac{64}{x^2+2 x+7}-1$, 令 $u=x^2+2 x+7=(x+1)^2+6$ , 则 $6 \leqslant u \leqslant 10$. 当 $u \in[6,8]$ 时, $f(u)=u+\frac{64}{u}-1$ 递减, 当 $u \in[8,10]$ 时, $f(u)=u+\frac{64}{u}-1$ 递增.
+又 $f(6)>f(10)$, 故 $f(8) \leqslant f(u) \leqslant f(6)$, 即 $15 \leqslant f(u) \leqslant 15 \frac{2}{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9 已知函数 $f(x)$ 对于任意实数 $x$, 都有
+$$
+f(x)=f(398-x)=f(2158-x)=f(3214-x),
+$$
+$\therefore$ 问: 函数值列 $f(0), f(1), f(2), \cdots, f(999)$ 中最多有多少个不同的值?
+%%<SOLUTION>%%
+由 $f(398-x)=f(2158-x)$, 得 $f(x)=f(x+1760)$. 由 $f(2158- x)=f(3214-x)$, 得 $f(x)=f(x+1056)$. 故 $f(x)=f(x+1056)= f(x+2112)=f(x+352)$. 从而 $f(x)$ 为周期函数, 且它的一个周期为 352 . 又由于 $f(x)=f(398-x)$, 故 $f(x)$ 关于 $x=199$ 对称.
+于是当 $f$ 在 $x \in[23,199]$ 定义后, 由 $f(x)$ 的对称性知 $x \in[199,375]$ 时, $f$ 亦可定义; 再由 $f(x)$ 的周期性知对任意 $x \in \mathbf{R}, f$ 可定义.
+故在一个周期内, 每一个函数值至少对应两个不同的 $x$, 其中 $x \neq 199+352 k(k \in \mathbf{Z})$. 因此, $f(0), f(1), \cdots, f(999)$ 至多有 $\frac{1}{2} \cdot 352+1=177$ 个不同的值, 且当 $f(23), f(24), \cdots, f(199)$ 两两不等时, 177 可以取到.
+因此, 所求的最大值为 177. 
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10 设 $f$ 为 $\mathbf{R}^{+} \rightarrow \mathbf{R}^{+}$的函数, 对任意正实数 $x, f(3 x)=3 f(x)$, 且
+$$
+f(x)=1-|x-2|, 1 \leqslant x \leqslant 3 .
+$$
+求最小的实数 $x$, 使得 $f(x)=f(2004)$.
+%%<SOLUTION>%%
+由已知条件得 $f(x)=\left\{\begin{array}{l}x-1, 当1\leqslant x \leqslant 2时; \\ 3-x , 当2\leqslant x \leqslant 3时.
+\end{array}\right.$ 
+当 $3\leq x\leq6$ 时, 令 $t=\frac{x}{3}$, 则 $1 \leqslant t \leqslant 2$, 此时 $f(x)=f(3 t)=3 f(t)=3(t-1)=x-3$. 即得 $f(x)=|x-3|, 2 \leqslant x \leqslant 6$. 当 $6 \leqslant x \leqslant 18$ 时, 令 $t=\frac{x}{3}$, 则 $2 \leqslant t \leqslant 6$,
+于是 $f(x)=f(3 t)=3 f(t)=3|t-3|=|x-9|$. 依次类推, 得
+$$
+f(x)= \begin{cases}x-1, & \text { 当 } 1 \leqslant x \leqslant 2 \text { 时; } \\ |x-3|, & \text { 当 } 2 \leqslant x \leqslant 6 \text { 时; } \\ |x-9|, & \text { 当 } 6 \leqslant x \leqslant 18 \text { 时; } \\ |x-27|, & \text { 当 } 18 \leqslant x \leqslant 54 \text { 时; } \\ |x-243|, & \text { 当 } 54 \leqslant x \leqslant 162 \text { 时; } \\ |x-729|, & \text { 当 } 162 \leqslant x \leqslant 486 \text { 时; } \\ |x-2187|, & \text { 当 } 1458 \leqslant x \leqslant 1458 \text { 时; }\end{cases}
+$$
+所以 $f(2004)=2187-2004=183$. 由于 $162-81<183,486-243>183$, 而 $243-162<183$, 所以, 最小的满足 $f(x)=f(2004)$ 的实数 $x=243+ 183=426$.
+%%PROBLEM_END%%
+
+

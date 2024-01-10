@@ -1,0 +1,262 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1 如果抛物线 $y=x^2-(k-1) x-k-1$ 与 $x$ 轴的交点为 $A 、 B$, 顶点为 $C$, 求 $\triangle A B C$ 的面积的最小值.
+%%<SOLUTION>%%
+首先, 由 $\Delta=(k-1)^2+4(k+1)=k^2+2 k+5=(k+1)^2+4>0$ 知, 对任意的 $k$ 值, 抛物线与 $x$ 轴总有两个交点.
+设抛物线与 $x$ 轴的两个交点的横坐标分别为 $x_1 、 x_2$, 那么 $|A B|=\left|x_2-x_1\right|=\sqrt{\left(x_2-x_1\right)^2}= \sqrt{\left(x_1+x_2\right)^2-4 x_1 x_2}=\sqrt{k^2+2 k+5}$. 又抛物线的顶点坐标是$C\left(\frac{k-1}{2},-\frac{k^2+2 k+5}{4}\right)$, 所以, $S_{\triangle A B C}=\frac{1}{2} \sqrt{k^2+2 k+5} \cdot\left|-\frac{k^2+2 k+5}{4}\right|= \frac{1}{8} \sqrt{\left(k^2+2 k+5\right)^3}$. 因为 $k^2+2 k+5=(k+1)^2+4 \geqslant 4$, 当且仅当 $k=-1$ 时等号成立, 所以 $S_{\triangle A B C} \geqslant \frac{1}{8} \sqrt{4^3}=1$. 故 $\triangle A B C$ 的面积的最小值为 1 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2 设二次函数 $f(x)=x^2+x+a(a>0)$ 满足 $f(m)<0$, 判断 $f(m+1)$ 的符号.
+%%<SOLUTION>%%
+因为 $a>0, f(m)=m^2+m+a<0$, 所以 $m^2+m=m(m+1)<0$, 于是 $\left\{\begin{array}{l}m<0, \\ m+1>0 .\end{array}\right.$ 所以 $f(m+1)=(m+1)^2+m+1+a>0$, 故 $f(m+1)$ 的符号为正.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3 已知 $f(x)=x^2+2 x+11$ 在 $[t, t+1]$ 上的最小值为 $g(t)$, 求 $g(t)$.
+%%<SOLUTION>%%
+$f(x)$ 的对称轴为 $x=-1$. 
+(1) 当 $t+1<-1$ 时, 即 $t<-2$ 时, 有 $f_{\text {min }}(x)=f(t+1)=t^2+4 t+14$. 
+(2) 当 $t+1 \geqslant-1$, 且 $t \leqslant-1$ 时, 即 $-2 \leqslant t \leqslant-1$ 时, $f_{\text {min }}(x)=10$. 
+(3) 当 $t>-1$ 时, 有 $f_{\text {min }}(x)=f(t)= t^2+2 t+11$. 
+所以 $g(t)= \begin{cases}t^2+4 t+14, & \text { 当 } t<-2 \text { 时; } \\ 10, & \text { 当 }-2 \leqslant t \leqslant-1 \text { 时; } \\ t^2+2 t+11, & \text { 当 } t>-1 \text { 时.
+}\end{cases}$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4 已知 $a$ 是正整数, 抛物线 $y==a x^2+b x+c$ 过点 $A(-1,4), B(2,1)$, 并且与 $x$ 轴有两个不同的交点, 求:
+(1) $a$ 的最小值;
+(2) $b+c$ 的最大值.
+%%<SOLUTION>%%
+(1) 因为抛物线过点 $A(-1,4), B(2,1)$, 所以 $a-b+c=4 \cdots(1)$ , $4 a+ 2 b+c=1 \cdots(2)$ , 且 $\Delta=b^2-4 a c>0 \cdots(3)$ . 由(1)、(2)可得 $b=-1-a, c= 3-2 a$. 代入 (3), 得 $(-1-a)^2-4 a(3-2 a)>0,(9 a-1)(a-1)>0$. 由于 $a \geqslant 1$, 故 $9 a-1>0$, 所以 $a>1$, 从而 $a \geqslant 2$. 又当 $a=2, b=-3, c=-1$ 时, 满足题意.
+所以 $a$ 的最小值为 2 . 
+(2) 由上题知, $b+c=2-3 a \leqslant 2-3 \times 2=-4$, 当 $a=2, b=-3, c=-1$ 时等号成立, 所以 $b+c$ 的最大值为 -4 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5 设 $f(x)=x^2+a x+3-a$, 若 $f(x)$ 在闭区间 $[-2,2]$ 上恒为非负数, 求实数 $a$ 的取值范围.
+%%<SOLUTION>%%
+$f(x)=\left(x+\frac{a}{2}\right)^2+3-a-\frac{a^2}{4} . f(x) \geqslant 0$ 在 $x \in[-2,2]$ 上恒成立, 等价于 $f(x)$ 在 $[-2,2]$ 上的最小值非负.
+(1) 当 $-\frac{a}{2}<-2$, 即 $a>4$ 时, $f_{\min }(x)=f(-2)=7-3 a \geqslant 0$. 解不等式, 得 $a \leqslant \frac{7}{3}$, 与 $a>4$ 矛盾.
+(2) 当 $-2 \leqslant-\frac{a}{2} \leqslant 2$, 即 $-4 \leqslant a \leqslant 4$ 时, 有 $f_{\text {min }}(x)=f\left(-\frac{a}{2}\right)=3-a-\frac{a^2}{4} \geqslant 0$, 解不等式得 $-6 \leqslant a \leqslant 2$. 故此时可得 $-4 \leqslant a \leqslant 2$. 
+(3) 当 $-\frac{a}{2}>2$, 即 $a<$ -4 时, 有 $f_{\text {min }}(x)=f(2)=7+a \geqslant 0$, 解不等式得 $a \geqslant-7$. 故此时 $-7 \leqslant a<-4$. 综上, $a$ 的范围为 $[-7,2]$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $a 、 b$ 分别是方程 $\log _2 x+x-3=0$ 和 $2^x+x-3=0$ 的根, 求 $a+b$ 及 $\log _2 a+2^b$ 的值.
+%%<SOLUTION>%%
+在直角坐标系内分别作出函数 $y=2^x$ 和 $y=\log _2 x$ 的图象, 再作直线 $y=x$ 和 $y=-x+3$, 如图(<FilePath:./figures/fig-c3p6.png>)所示.
+由于 $y=2^x$ 和 $y=\log _2 x$ 互为反函数, 故它们的图象关于直线 $y=x$ 对称.
+方程 $\log _2 x+x-3=0$ 的根 $a$ 就是直线 $y=-x+3$ 与对数曲线 $y=\log _2 x$ 的交点 $A$ 的横坐标, 方程 $2^x+x-3=0$ 的根 $b$ 就是直线 $y=-x+3$ 与指数曲线 $y=2^x$ 的交点 $B$ 的横坐标.
+设 $y=-x+3$ 与 $y=x$ 的交点为 $M$, 则点 $M$ 的坐标为 $\left(\frac{3}{2}, \frac{3}{2}\right)$. 所以 $a+b=2 x_M=3, \log _2 a+2^b= 2 y_M=3$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7 (1) 已知函数 $y=f\left(\log _2 x\right)$ 的定义域为 $\left[\frac{1}{2}, 2\right]$, 求函数 $f\left(\left(\frac{1}{2}\right)^x-2\right)$ 的定义域;
+(2) 设函数 $f(x)=\log _{\frac{1}{2}}\left(x^2+2 x+2 a\right)$ 的值域为 $\mathbf{R}$, 求实数 $a$ 的取值范围.
+%%<SOLUTION>%%
+(1) 由题意知, $\frac{1}{2} \leqslant x \leqslant 2$, 所以, $\log _2 \frac{1}{2} \leqslant \log _2 x \leqslant \log _2 2$, 即 $-1 \leqslant \log _2 x \leqslant 1$. 故 $y=f(x)$ 的定义域为 $[-1,1]$. 解不等式 $-1 \leqslant\left(\frac{1}{2}\right)^x-2 \leqslant 1$, 得 $-\log _2 3 \leqslant x \leqslant 0$, 所以, $f\left(\left(\frac{1}{2}\right)^x-2\right)$ 的定义域为 $\left[-\log _2 3,0\right]$.
+(2) 只需 $x^2+2 x+2 a$ 能取到一切正实数, 从而 $\Delta=4-8 a<0$, 故 $a>\frac{1}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8 函数 $f(x)=a^{2 x}+2 a^x-1(a>0$, 且 $a \neq 1)$ 在区间 $[-1,1]$ 上的最大值为 14 , 求 $a$ 的值.
+%%<SOLUTION>%%
+令 $t=a^x$, 则 $y=t^2+2 t-1$. 因为 $x \in[-1,1]$, 所以有如下两种情形: 
+(1) 当 $0<a<1$ 时, 则 $a \leqslant t \leqslant \frac{1}{a}$, 于是 $y=(t+1)^2-2$ 的对称轴为 $t= -1<a$, 所以 $y=t^2+2 t-1$ 在 $\left[a, \frac{1}{a}\right]$ 上是单调增函数, 故当 $t=\frac{1}{a}$ 时, $y$ 取最大值 14 , 即 $\frac{1}{a^2}+\frac{2}{a}-1=14$. 
+解方程得 $a=\frac{1}{3}$ 或 $a=-\frac{1}{5}$ (舍去), 故 $a= \frac{1}{3}$. 
+(2) 当 $a>1$ 时, $\frac{1}{a} \leqslant t \leqslant a$, 于是 $y=(t+1)^2-2$ 的对称轴 $t=-1< \frac{1}{a}$, 故 $y=t^2+2 t-1$ 在 $\left[\frac{1}{a}, a\right]$ 上为单调增函数,所以, 当 $t=a$ 时, $y$ 取最大值 14 , 即 $a^2+2 a-1=14$. 
+解方程得 $a=3$ 或 $a=-5$ (舍去), 故 $a=3$. 
+综上所述, $a$ 的值为 $\frac{1}{3}$ 或 3 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9 设 $f(x)=\min \left\{3+\log _{\frac{1}{4}} x, \log _2 x\right\}$, 其中 $\min \{p, q\}$ 表示 $p 、 q$ 中的较小者, 求 $f(x)$ 的最大值.
+%%<SOLUTION>%%
+易知 $f(x)$ 的定义域是 $(0,+\infty)$. 
+因为 $y_1= 3+\log _{\frac{1}{4}} x$ 在 $(0,+\infty)$ 上是减函数, $y_2=\log _2 x$ 在 $(0$, $+\infty)$ 上是增函数, 而当 $y_1=y_2$, 即 $3+\log _{\frac{1}{4}} x=\log _2 x$ 时, $x=4$, 所以由 $y_1=3+\log _{\frac{1}{4}} x$ 和 $y_2=\log _2 x$ 的图象(<FilePath:./figures/fig-c3p9.png>)可知 $f(x)=\left\{\begin{array}{ll}3+\log _{\frac{1}{4}} x, & \text { 当 } x \geqslant 4 \text { 时; } \\ \log _2 x, & \text { 当 } 0<x<4 \text { 时.
+}\end{array}\right.$ 
+故当 $x=4$ 时, 得 $f(x)$ 的最大值为 2 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10 解方程:
+$$
+\lg ^2 x-[\lg x]-2=0,
+$$
+其中 $[x]$ 表示不超过 $x$ 的最大整数.
+%%<SOLUTION>%%
+由 $[x]$ 的定义知, $[x] \leqslant x$, 故原方程可变为不等式 $\lg ^2 x-\lg x-2 \leqslant 0,(\lg x+1)(\lg x-2) \leqslant 0$, 所以 $-1 \leqslant \lg x \leqslant 2$. 
+当 $-1 \leqslant \lg x<0$ 时, $[\lg x]=-1$, 原方程为 $\lg ^2 x=1$, 所以 $\lg x=-1, x=\frac{1}{10}$. 
+当 $0 \leqslant \lg x<1$ 时, $[\lg x]=0$, 原方程为 $\lg ^2 x=2$, 所以 $\lg x= \pm \sqrt{2}$, 均不符合 $[\lg x]=0$. 
+当 $1 \leqslant \lg x<2$ 时, $[\lg x]=1$, 原方程为 $\lg ^2 x=3$, 所以 $\lg x=\sqrt{3}, x=10^{\sqrt{3}}$. 当 $\lg x=2$ 时, 即 $x=100$ 满足原方程.
+所以原方程的解为 $x_1=\frac{1}{10}, x_2= 10^{\sqrt{3}}, x_3=100$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11 求函数 $f(x)=\frac{x^2+5}{\sqrt{x^2+4}}$ 的最小值.
+%%<SOLUTION>%%
+$f(x)=\sqrt{x^2+4}+\frac{1}{\sqrt{x^2+4}}$. 设 $\sqrt{x^2+4}=t, t \in[2,+\infty)$. 令 $g(t)=t+\frac{1}{t}$, 则 $g(t)$ 在 $[2,+\infty)$ 上是单调递增的, 所以 $g_{\text {min }}(t)=g(2)= 2+\frac{1}{2}=\frac{5}{2}$. 从而 $f(x)$ 的最小值为 $\frac{5}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12 求证: $\sin ^2 x+\frac{4}{\sin ^2 x} \geqslant 5$.
+%%<SOLUTION>%%
+令 $t=\sin ^2 x$, 则 $0<t \leqslant 1$. 设 $f(t)=t+\frac{4}{t}, t \in(0,1]$. 则 $f(t)$ 在 $(0,1]$ 上是单调递减的, 从而 $f(t) \geqslant f(1)=5$, 故 $\sin ^2 x+\frac{4}{\sin ^2 x} \geqslant 5$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13 求 $f(x)=\frac{4 \sin x \cos x+1}{\sin x+\cos x+1}\left(0 \leqslant x \leqslant \frac{\pi}{2}\right)$ 的最大值和最小值.
+%%<SOLUTION>%%
+设 $\sin x+\cos x=t$, 则 $1 \leqslant t \leqslant \sqrt{2}$, 于是 $f(x)=\frac{2 t^2-1}{t+1}=2(t+1)+ \frac{1}{t+1}-4$. 令 $g(t)=2(t+1)+\frac{1}{t+1}$, 则 $g(t)$ 在 $[1, \sqrt{2}]$ 上单调递增, 故 $g(t)$ 的最小值为 $g(1)=\frac{9}{2}, g(t)$ 的最大值为 $g(\sqrt{2})=3 \sqrt{2}+1$. 所以, $f(x)$ 的最小值为 $\frac{1}{2}$, 最大值为 $3(\sqrt{2}-1)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14 设实数 $a 、 b 、 c 、 m$ 满足条件:
+$$
+\frac{a}{m+2}+\frac{b}{m+1}+\frac{c}{m}=0,
+$$
+且 $a \geqslant 0, m>0$. 求证: 方程 $a x^2+b x+c=0$ 有一根 $x_0$ 满足 $0<x_0<1$. 
+%%<SOLUTION>%%
+当 $a=0$ 时, 若 $b \neq 0$, 则 $x_0=-\frac{c}{b}=\frac{m}{m+1}$, 此时 $0<x_0<1$; 若 $b=0$, 则 $c=0$, 这时一切实数 $x$ 都满足方程, 当然也有 $0<x_0<1$, 故当 $a=0$ 时, 结论成立.
+当 $a>0$ 时, 令 $f(x)=a x^2+b x+c$, 则 $f\left(\frac{m}{m+1}\right)=a\left(\frac{m}{m+1}\right)^2 +b\left(\frac{m}{m+1}\right)+c=a\left(\frac{m}{m+1}\right)^2-\frac{a m}{m+2}=-\frac{a m}{(m+1)^2(m+2)}<0$. 若 $c>0$, 因 $f(0)=c>0$, 故必有一根 $x_0$ 满足 $0<x_0<\frac{m}{m+1}<1$; 若 $c \leqslant 0$, 因 $f(1)=a+b+c=(m+2) \frac{a}{m+2}+(m+1) \frac{b}{m+1}+c=\frac{a}{m+2}+(m+1)\left(\frac{a}{m+2}+\frac{b}{m+1}+\frac{c}{m}\right)-\frac{c}{m}=\frac{a}{m+2}-\frac{c}{m}>0$, 故必有一根 $x_0$ 满足 $0< \frac{m}{m+1}<x_0<1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15 设 $a 、 b$ 是整数, $f(x)=x^2+a x+b$. 证明: 若对于所有整数 $x$, 都有 $f(x)>0$, 则对于所有实数 $x$, 有 $f(x) \geqslant 0$.
+%%<SOLUTION>%%
+用反证法.
+若 $\Delta=a^2-4 b>0$, 则由 $a^2-4 b$ 是整数知, $a^2-4 b \geqslant 1$. 设方程 $x^2+a x+b=0$ 的两实根为 $x_1 、 x_2$, 则 $\left|x_1-x_2\right|= \sqrt{\left(x_1+x_2\right)^2-4 x_1 x_2}=\sqrt{a^2-4 b} \geqslant 1$, 从而在 $x_1$ 与 $x_2$ 之间一定存在一个整数 $x_0$, 对于这个整数 $x_0$, 有 $f\left(x_0\right) \leqslant 0$, 与题设矛盾.
+所以 $\Delta \leqslant 0$, 从而对一切实数 $x$, 都有 $f(x) \geqslant 0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16 求实数 $a$ 的取值范围, 使得对任意实数 $x$ 和任意 $\theta \in\left[0, \frac{\pi}{2}\right]$, 恒有
+$$
+(x+3+2 \sin \theta \cos \theta)^2+(x+a \sin \theta+a \cos \theta)^2 \geqslant \frac{1}{8} .
+$$
+%%<SOLUTION>%%
+原不等式等价于 $(3+2 \sin \theta \cos \theta-a \sin \theta-a \cos \theta)^2 \geqslant \frac{1}{4}, \theta \in \left[0, \frac{\pi}{2}\right]$. 
+解不等式得 $a \geqslant \frac{3+2 \sin \theta \cos \theta+\frac{1}{2}}{\sin \theta+\cos \theta}, \theta \in\left[0, \frac{\pi}{2}\right]$ 或 $a \leqslant \frac{3+2 \sin \theta \cos \theta-\frac{1}{2}}{\sin \theta+\cos \theta}, \theta \in\left[0, \frac{\pi}{2}\right]$. 
+先求 $\frac{3+2 \sin \theta \cos \theta+\frac{1}{2}}{\sin \theta+\cos \theta}\left(\theta \in\left[0, \frac{\pi}{2}\right]\right)$ 的最大值.
+令 $x=\sin \theta+\cos \theta$, 则 $x \in[1, \sqrt{2}]$, 于是 $f(x)=\frac{3+\left(x^2-1\right)+\frac{1}{2}}{x}= x+\frac{5}{2} \cdot \frac{1}{x}$. 易知 $f(x)$ 在 $[1, \sqrt{2}]$ 上是减函数, 所以 $f_{\text {max }}(x)=f(1)=\frac{7}{2}$, 从而 $a \geqslant \frac{7}{2}$. 
+再求 $\frac{3+2 \sin \theta \cos \theta-\frac{1}{2}}{\sin \theta+\cos \theta}\left(\theta \in\left[0, \frac{\pi}{2}\right]\right)$ 的最小值.
+令 $x=\sin \theta+ \cos \theta$, 则 $x \in[1, \sqrt{2}]$, 于是 $g(x)=\frac{3+\left(x^2-1\right)-\frac{1}{2}}{x}=x+\frac{3}{2} \cdot \frac{1}{x} \geqslant 2 \sqrt{\frac{3}{2}}=\sqrt{6}$, 当 $\sin \theta+\cos \theta=x=\frac{\sqrt{6}}{2}$ 时等号成立.
+从而 $a \leqslant g_{\min }(x)=\sqrt{6}$. 
+综上, $a$ 的取值范围为 $(-\infty, \sqrt{6}] \cup\left[\frac{7}{2},+\infty\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17 已知当 $x \in[0,1]$ 时,不等式
+$$
+x^2 \cos \theta-x(1-x)+(1-x)^2 \sin \theta>0
+$$
+恒成立, 其中 $0 \leqslant \theta \leqslant 2 \pi$, 求 $\theta$ 的取值范围.
+%%<SOLUTION>%%
+设 $f(x)=x^2 \cos \theta-x(1-x)+(1-x)^2 \sin \theta=(1+\sin \theta+\cos \theta) x^2- (1+2 \sin \theta) x+\sin \theta$. 因为, $f(0)=\sin \theta>0, f(1)=\cos \theta>0$, 所以 $\theta \in\left(0, \frac{\pi}{2}\right)$, 由于 $f(x)$ 的对称轴 $x=\frac{1+2 \sin \theta}{2(1+\sin \theta+\cos \theta)}>0$, 且 $\frac{1+2 \sin \theta}{2(1+\sin \theta+\cos \theta)}= \frac{1+2 \sin \theta}{1+2 \sin \theta+1+2 \cos \theta}<1$, 所以 $f(x)$ 在 $[0,1]$ 上的最小值就是 $f(x)$ 在 $\mathbf{R}$ 上的最小值, 它大于 0. 故 $\frac{4 \sin \theta}{(1+\sin \theta+\cos \theta)-(1+2 \sin \theta)^2}->0$. 即 $4 \sin \theta \cos \theta-1>0, \sin 2 \theta>\frac{1}{2}$. 所以 $\frac{\pi}{6}<2 \theta<\frac{5 \pi}{6}, \frac{\pi}{12}<\theta<\frac{5 \pi}{12}$. $\theta$ 的取值范围是 $\frac{\pi}{12}<\theta<\frac{5 \pi}{12}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题18 已知 $f(x)=a x^2+b x+c$ 在 $[0,1]$ 上的函数值的绝对值不超过 1 , 求 $|a|+|b|+|c|$ 的最大值.
+%%<SOLUTION>%%
+由已知得 $\left\{\begin{array}{l}a=2 f(1)+2 f(0)-4 f\left(\frac{1}{2}\right), \\ b=4 f\left(\frac{1}{2}\right)-f(1)-3 f(0), \\ c=f(0) .\end{array}\right.$ 因此 $|a|=|2 f(1)+ 2 f(0)-4 f\left(\frac{1}{2}\right)|\leqslant 2| f(1)|+2| f(0)|+4| f\left(\frac{1}{2}\right)|\leqslant 8,\, | b|=| 4 f\left(\frac{1}{2}\right)- f(1)-3 f(0)|\leqslant 4| f\left(\frac{1}{2}\right)|+| f(1)|+3| f(0)|\leqslant 8,\,|c|=| f(0)| \leqslant 1$. $|a|+|b|+|c| \leqslant 8+8+1=17$. 对于二次函数 $f(x)=8 x^2-8 x+1$, 当 $x \in[0,1]$ 时, $|f(x)| \leqslant 1$, 且 $|a|+|b|+|c|=17$, 所以 $|a|+|b|+|c|$ 的最大值为 17 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题19 设函数 $f(x)=a x^2+8 x+3(a<0)$, 对于给定的负数 $a$, 有一个最大的正数 $l(a)$, 使得在整个区间 $[0, l(a)]$ 上,不等式 $|f(x)| \leqslant 5$ 都成立.
+问:
+$a$ 为何值时, $l(a)$ 最大? 求出这个最大的 $l(a)$.
+%%<SOLUTION>%%
+$f(x)=a\left(x+\frac{4}{a}\right)^2+3-\frac{16}{a}$.
+ (1) 当 $3-\frac{16}{a}>5$, 即 $-8<a<0$ 时, $l(a)$ 是方程 $a x^2+8 x+3=5$ 的较小根, 故 $l(a)=\frac{-8+\sqrt{64+8 a}}{2 a}$.
+(2) 当 $3-\frac{16}{a} \leqslant 5$, 即 $a \leqslant-8$ 时, $l(a)$ 是方程 $a x^2+8 x+3=-5$ 的较大根, 故 $l(a)=\frac{-8-\sqrt{64-32 a}}{2 a}$. 
+综上, $l(a)= \begin{cases}\frac{-8-\sqrt{64-32 a}}{2 a}, & \text { 当 } a \leqslant-8 \text { 时; } \\ \frac{-8+\sqrt{64+8 a}}{2 a}, & \text { 当 }-8<a<0 \text { 时.
+}\end{cases}$
+当 $a \leqslant-8$ 时, $l(a)=\frac{-8-\sqrt{64-32 a}}{2 a}=\frac{4}{\sqrt{4-2 a-2}} \leqslant \frac{4}{\sqrt{20}-2}= a=-8$ 时, $l(a)$ 取到最大值 $\frac{\sqrt{5}+1}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题20 设函数 $f(x)=x|x-a|+b$, 常数 $b<2 \sqrt{2}-3$, 且对任意 $x \in[0,1]$, $f(x)<0$ 恒成立.
+求常数 $a$ 的取值范围.
+%%<SOLUTION>%%
+因 $b<2 \sqrt{2}-3$, 当 $x=0$ 时,显然 $a$ 取任意实数.
+下面考虑 $x \in(0$, $1]$, 则 $f(x)=x \cdot|x-a|+b<0 \Leftrightarrow x|x-a|<-b \Leftrightarrow|x-a|<-\frac{b}{x} \Leftrightarrow x+\frac{b}{x}<a<x-\frac{b}{x}$
+此不等式对任意 $x \in(0,1]$ 恒成立,故上式 $\Leftrightarrow a>\left(x+\frac{b}{x}\right)_{\text {max }} \quad\quad(1)$
+且 $a<\left(x-\frac{b}{x}\right)_{\text {min }}$ (其中, $x \in(0,1]$ ). $\quad\quad(2)$
+对式(1), $b<0$, 由耐克函数性质知, $g(x)=x+\frac{b}{x}$ 在 $(0,1]$ 上单调递增, 故
+$$
+a>\left(x+\frac{b}{x}\right)_{\max }=g(1)=1+b .  \quad\quad(3)
+$$
+对式(2), 当 $-1 \leqslant b<0$ 时, 由均值不等式 $x-\frac{b}{x}=x+\frac{-b}{x} \geqslant 2 \sqrt{-b}$, 当且仅当 $x=\sqrt{-b} \in(0,1]$ 时等号成立, 所以 $\left(x-\frac{b}{x}\right)_{\text {min }}=2 \sqrt{-b}$, 故
+$$
+a<2 \sqrt{-b} .  \quad\quad(4)
+$$
+由式(3)、(4)要使 $a$ 存在, 必须 $\left\{\begin{array}{l}1+b<2 \sqrt{-b}, \\ -1 \leqslant b<2 \sqrt{2}-3,\end{array}\right.$ 此时, 存在 $1+b<$ $a<2 \sqrt{-b}$.
+当 $b<-1$ 时, $f(x)=x-\frac{b}{x}$ 在 $(0,1]$ 上单调递减(耐克函数性质), 所以
+$$
+\left(x-\frac{b}{x}\right)_{\min }=f(1)=1-b .
+$$
+综上所述, 当 $-1 \leqslant b<2 \sqrt{2}-3$ 时, $a \in(1+b, 2 \sqrt{-b})$; 当 $b<-1$ 时, $a \in(1+b, 1-b)$.
+说明: (1) 本题多次用到耐克函数性质;
+(2) 若 $f(x)$ 在区间 $D$ 上存在最大值或最小值, 则 $f(x) \geqslant a(\leqslant a), a$ 是常数, $\forall x \in D \Leftrightarrow f(x)_{\min } \geqslant a\left(f(x)_{\max } \leqslant a\right)$.
+%%PROBLEM_END%%
+
+

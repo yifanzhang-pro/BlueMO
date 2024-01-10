@@ -1,0 +1,168 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 将 $n+1$ 件不同奖品全部发给 $n$ 个同学, 每人至少一件, 则发放的方法数为
+%%<SOLUTION>%%
+由题意 $n$ 个同学中恰有 1 人得 2 件, 其余 $n-1$ 个人每人得 1 件, 故发放奖品的方法数为 $\mathrm{C}_{n+1}^2 \mathrm{~A}_n^n=\frac{(n+1) \cdot n \cdot n !}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 从 5 位男同学和 4 位女同学中选出 4 人组成一个代表团参加全校辩论比赛.
+若要求男同学和女同学都至少一人,则不同的选择种数为
+%%<SOLUTION>%%
+不同的选法种数为 $\mathrm{C}_5^1 \mathrm{C}_4^3+\mathrm{C}_5^2 \mathrm{C}_4^2+\mathrm{C}_5^3 \mathrm{C}_4^1=120$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 如果自然数 $a$ 的各位数字之和等于 7 , 那么称 $a$ 为 "吉祥数". 将所有 "吉祥数" 从小到大排成一列 $a_1, a_2, a_3, \cdots$, 若 $a_n=2005$, 则 $a_{5 n}=$ . 
+%%<SOLUTION>%%
+设 $k$ 位 "吉祥数" 的各位数字从高位到低位依次为 $x_1, x_2, \cdots, x_k$, 则 $x_1+x_2+\cdots+x_k=7$ 其中 $x_1 \geqslant 1, x_i \geqslant 0(2 \leqslant i \leqslant k)$, 令 $y_1=x_1-1, y_i= x_i(2 \leqslant i \leqslant k)$, 则 $y_1+y_2+\cdots+y_k=6$ 其中 $y_i \geqslant 0(1 \leqslant i \leqslant k)$ (1), 故 $k$ 位"吉祥数" 的个数 $p(k)$ 等于不定方程 (1) 的非负整数解的个数, 即 $p(k)=\mathrm{C}_{k+5}^6$. 而 2005 是形如 $\overline{2 a b c}$ 的 "吉祥数" 中最小的一个, 且 $p(1)=\mathrm{C}_6^6=1, p(2)=\mathrm{C}_7^6=7$, $p(3)=\mathrm{C}_8^6=28$, 以及形如 $\overline{1 a b c}$ 的 "吉祥数" 的个数等于不定方程 $a+b+c=6$ 的非负整数解的个数, 即 $\mathrm{C}_{6+3-1}^6=28$ 个.
+故 2005 是第 $1+7+28+28+1=65$ 个 "吉祥数", 即 $a_{65}=2005$, 从而 $n=65,5 n=325$. 又 $p(4)=\mathrm{C}_9^6=84, p(5)= \mathrm{C}_{10}^6=210, \sum_{k=1}^5 p(k)=330$ 即 $a_{330}=70000$, 从而 $a_{329}=61000, a_{328}=60100$, $a_{327}=60010, a_{326}=60001, a_{325}=52000$, 即 $a_{5 n}=a_{325}=52000$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设三位数 $n=\overline{a b c}$, 若以 $a, b, c$ 为 3 条边的长可以构成一个等腰(含等边) 三角形,则这样的三位数 $n$ 有个.
+%%<SOLUTION>%%
+显然 $a, b, c \in\{1,2,3, \cdots, 9\}$. (1) 若构成等边三角形, 则这样的三位数的个数为 $n_1=\mathrm{C}_9^1=9$ 个; (2) 若构成等腰 (非等边) 三角形, 设这样的三位数有 $n_2$ 个.
+当小数为底边长时, 设小数为 $i$, 则大数可以为 $i+1, i+ 2, \cdots, 9$, 有 $9-i(1 \leqslant i \leqslant 8)$ 个.
+这时三角形的个数为 $\sum_{i=1}^8(9-i)=\frac{1}{2}(1+$ 8) $\bullet 8=36$ 个; 当大数为底边时, 可能构成二角形的数码如下表, 共 16 种情况,
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline 小数 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+\hline 大数 & 3 & 4,5 & $5,6,7$ & $6,7,8,9$ & $7,8,9$ & 8,9 & 9 \\
+\hline
+\end{tabular}
+故等腰(非等边)三角形共有 $36+16=52$ 个, 对应的三位数的个数为 $n_2= \mathrm{C}_3^2 \times 52=156$. 综上知满足题目条件的三位数 $n$ 共有 $n_1+n_2=9+156=165$ 个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 从 $1,2,3,4,5,7,9$ 这 7 个数字中任取两个数字分别做成对数的底数和真数, 则可构成不相等的对数值的数目是
+%%<SOLUTION>%%
+由 $1,2,3,4,5,7,9$ 这 7 个数字中任取两个不同数字做成对数的底数和真数有 $A_7^2$ 种方法, 但 1 不能做底数,故应减去 $A_6^1$, 又以 $2,3,4,5,7,9$ 中任何一个做底数, 1 做真数时, 得到的对数值都等于 0 , 故又要减去 $\mathrm{A}_6^1-1$ 个, 此外 $\log _2 4=\log _3 9, \log _4 2=\log _9 3, \log _3 2=\log _9 4, \log _2 3=\log _4 9$, 故还应减去 4 个, 因此, 不同的对数值共有 $\mathrm{A}_7^2-\mathrm{A}_6^1-\left(\mathrm{A}_6^1-1\right)-4=27$ 个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 某次兵乓球单打比赛, 原计划每两名选手比赛一场, 但有 3 名选手各比赛了 2 场后退出了比赛, 这样全部比赛一共进行了 50 场, 那么上述 3 名选手之间比赛的场次数是 . 
+%%<SOLUTION>%%
+设共有 $n$ 名选手,该 3 名选手之间比赛的场数为 $r$, 则 $50=\mathrm{C}_{n-3}^2+(3 \times 2-r)$, 即 $(n-3)(n-4)=88+2 r$, 经检验仅当 $r=1$ 时, $n=13$ 为正整数, 故 3 名选手之间比赛了 1 场.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 已知直线 $a x+b y+c=0$ 中, $a, b, c$ 取自集合 $\{-3,-2,-1,0,1,2$, $3\}$ 中三个不同元素, 并没该直线的倾斜角为锐角, 那么这样直线的条数是 . 
+%%<SOLUTION>%%
+设倾斜角为 $\theta$, 则 $\tan \theta=-\frac{a}{b}>0$, 由 $a, b$ 取值集合的对称性,不失一般性可设 $a>0, b<0$. (1) 当 $c=0$ 时, $a$ 有 $\mathrm{C}_3^1$ 种取法, $b$ 有 $\mathrm{C}_3^1$ 种取法, 排除 2 个重复 (因 $x-y=0,2 x-2 y=0,3 x-3 y=0$ 表示同一直线), 故这样的直线有 $\mathrm{C}_3^1 \mathrm{C}_3^1-2=7$ 条; (2) 当 $c \neq 0$ 时, $a$ 有 $\mathrm{C}_3^1$ 种取法, $b$ 有 $\mathrm{C}_3^1$ 种取法, $c$ 有 $\mathrm{C}_4^1$ 种取法, 故这样的直线有 $\mathrm{C}_3^1 \mathrm{C}_3^1 \cdot \mathrm{C}_4^1=36$ 条, 从而符合条件的直线共有 $7+36=43$ 条.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. $2 \times 3$ 的矩形花坛被分成 6 个 $1 \times 1$ 的小正方形区域: $A, B, C, D, E, F$, 在每个区域内栽种一种植物, 相邻两个区域内栽种的植物不同, 今有 6 种植物可供选择,则共有种不同的栽种方法.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c1a8.png>), $A$ 与 $B$ 内栽种植物的方法有 $\mathrm{A}_6^2$ 种.
+若 $C$ 与 $B$ 内栽种同一种植物, 则 $C$ 和 $D$ 内栽种植物的方法有 $\mathrm{C}_5^1$ 种; 若 $C$ 与 $B$ 内栽种不同的植物, 则 $C$ 与 $D$ 内栽种植物的方法有 $\mathrm{C}_4^1 \mathrm{C}_4^1$ 种,故 $C$ 与 $D$ 内栽种植物的方法有 $\mathrm{C}_5^1+\mathrm{C}_4^1 \mathrm{C}_4^1=21$ 种, 同理 $E$ 与 $F$ 内栽种植物的方法也有 21 种, 故符合条件的栽种方法共有 $\mathrm{A}_6^2 \times 21^2=13230$ 种.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 甲、乙两队各抽出 7 名队员按事先排好的顺序出场参加围棋擂台赛, 双方先由 1 号队员比赛, 负者被淘汰, 胜者再与负方 2 号队员比赛, $\cdots \cdots \cdot$, 直到一方队员全部被淘汰为止, 另一方获得胜利, 形成一个比赛过程, 那么所有可能出现的比赛过程的种数为 . 
+%%<SOLUTION>%%
+先考虑甲获胜的比赛过程的种数,设甲队第 $i$ 号队员胜了 $x_i$ 场 $(i= 1,2, \cdots, 7)$, 于是 $x_1+x_2+\cdots+x_7=7$, 且甲队获胜的比赛过程同不定方程 $x_1+x_2+\cdots+x_7=7$ 的非负整数解组 $\left(x_1, x_2, \cdots, x_7\right)$ 成一一对应, 故甲队不同的比赛过程的数目等于不定方程 $x_1+x_2+\cdots+x_7=7$ 的非负整数解组的数目为 $\mathrm{C}_{13}^6$. 同理, 乙获胜的不同比赛过程的数目也为 $\mathrm{C}_{13}^6$, 故不同的比赛过程共有 $2 \mathrm{C}_{13}^6=3432$ 种.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 在一次射击比赛中, 有 8 个泥制的靶子挂成如图(<FilePath:./figures/fig-c1p10.png>)所示的三列 (其中两列 3 个,一列 2 个),一位神枪手每一枪按下面规则打中靶子:
+(1) 选择一列;
+(2)打中所选一列的最下面未打过的靶子.
+问打中这 8 个靶子共有多少种不同的顺序?
+%%<SOLUTION>%%
+随意射击 8 个靶子有 8 ! 种方法, 由于每列靶子的顺序已经确定, 故现在的射击方法共有 $\frac{8 !}{3 ! 2 ! 3 !}=560$ 种不同的顺序.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 将正四棱雉的顶点染色, 要求同一条棱的两个端点不同色.
+如果只有 5 种颜色可供使用,那么不同的染色方法共有多少种?(假设经过绕对称轴旋转后可以变相同的染色方法是同一种染色方法)
+%%<SOLUTION>%%
+因侧面三角形的三个顶点互不同色,故最少要用 3 种颜色.
+(1)使用 5 种颜色时, 从 5 种颜色中取 1 种颜色染上顶点有 $\mathrm{C}_5^1$ 种方法, 其余 4 色染底面 4 个顶点(4 个元素的圆排列)有 3 ! 种方法.
+于是, 这时不同的染色方法有 $\mathrm{C}_5^1 \cdot 3 !=30$ 种; (2) 使用 4 种颜色时, 从 5 色中取出 4 色有 $\mathrm{C}_5^4$ 种方法, 从取出的 4 色中取一种颜色染上顶点有 $\mathrm{C}_4^1$ 种方法,其余 3 色染下底面的 4 个顶点,其中必有一对顶点同色, 从 3 色中取 1 色染一对顶点有 $\mathrm{C}_3^1$ 种方法, 其余 2 色染剩下 2 个顶点 (2 个元素的圆排列)有 1 ! 种方法, 这时不同的染色方法有 $\mathrm{C}_5^4 \mathrm{C}_4^1 \mathrm{C}_3^1 \cdot 1 !=60$ 种; (3)使用 3 种颜色时, 从 5 色中取出 3 色有 $\mathrm{C}_5^3$ 种方法, 从取出的 3 色中取出 1 色染上顶点有 $\mathrm{C}_3^1$ 种方法, 其余 2 色染下底面的 4 个顶点, 其中两对顶点分别同色, 用 2 色染这两对顶点 (2个元素的圆排列) 只有 1 ! 种方法, 这时不同的染色方法有 $\mathrm{C}_5^3 \mathrm{C}_3^1 \cdot 1 !=30$ 种.
+综上知满足题目要求的不同染色方法共有 $30+60+30=120$ 种.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 已知两个实数集合 $A=\left\{a_1, a_2, \cdots, a_{100}\right\}$ 与 $B=\left\{b_1, b_2, \cdots, b_{50}\right\}$, 若从 $A$ 到 $B$ 的映射 $f$ 使得 $B$ 中每个元素都有原象,且 $f\left(a_1\right) \leqslant f\left(a_2\right) \leqslant \cdots \leqslant f\left(a_{100}\right)$, 则这样的映射的总个数为 . 
+%%<SOLUTION>%%
+不妨设 $b_1<b_2<\cdots<b_{50}$, 将 $A$ 中元素按顺序分成 50 个非空子集, 并设第 $i$ 个非空子集中有 $x_i$ 个数, 则 $x_1+x_2+\cdots+x_{50}=100\left(x_i \geqslant 1\right.$, $i=1,2, \cdots, 50)$. 定义映射 $f: A \rightarrow B$, 使得第 $i$ 组元素在 $f$ 下的象都是 $b_i(i=1,2, \cdots, 50)$. 易知这样的 $f$ 满足题目要求, 并且每个这样的分组都一一对应满足条件的映射, 于是满足题目要求的映射个数等于 $A$ 按顺序分成 50 个非空子集的分法数.
+从而也等于不定方程 $x_1+x_2+\cdots+x_{50}=100$ 的正整数解组的个数 $\mathrm{C}_{100-1}^{50-1}=\mathrm{C}_{99}^{49}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. $n$ 对夫妻任意排成一行, 求没有任何一对夫妻相邻的排法总数.
+%%<SOLUTION>%%
+$S$ 表示 $n$ 对夫妻排成一行的所有全排列组成的集合, $A_i$ 表示其中第 $i$ 对夫妻相邻的全排列集合, 则由容斥原理得所求排列的总数为
+$\left|\complement_S A_1 \cap \complement_S A_2 \cap \cdots \cap \complement_S A_n\right|=|S|-\sum_{i=1}^n\left|A_i\right|+\sum_{1 \leqslant i<j \leqslant n}\left|A_i \cap A_j\right|- \cdots+(-1)^n \cdot\left|A_1 \cap A_2 \cap \cdots \cap A_n\right|=(2 n) !-\mathrm{C}_n^1 \cdot 2(2 n-1) !+\mathrm{C}_n^2 2^2 \cdot (2 n-2) !-\cdots+(-1)^k \mathrm{C}_n^k 2^k(2 n-k) !+\cdots+(-1)^n \mathrm{C}_{2 n}^{2 n} \cdot 2^n \cdot n !$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 将与 105 互素的正整数从小到大排列成数列, 求出这个数列的第 1000 项.
+%%<SOLUTION>%%
+(解法一) 设这个数列的第 1000 项为 $n$, 因 $105=3 \times 5 \times 7$, 故依题意知道.
+$n$ 不能被 $3 、 5 、 7$ 中任何一个数整除, 且在小于或等于 $n$ 的正整数中不能被 3、5、7 中任何一个数整除的恰有 1000 个.
+记 $S=\{1,2, \cdots, n\}$, $A_i=\{m \mid m \in S, m$ 被 $i$ 整除 $\}(i=3,5,7)$, 于是由容斥原理得 $1000= \left|\complement_S A_3 \cap \complement_S A_5 \cap \complement_S A_7\right|=|S|-\left|A_3\right|-\left|A_5\right|-\left|A_7\right|+\left|A_3 \cap A_5\right|+ \left|A_3 \cap A_7\right|+\left|A_5 \cap A_7\right|-\left|A_3 \cap A_5 \cap A_7\right|=n-\left[\frac{n}{3}\right]-\left[\frac{n}{5}\right]-\left[\frac{n}{7}\right]+ \left[\frac{n}{3 \times 5}\right]+\left[\frac{n}{3 \times 7}\right]+\left[\frac{n}{5 \times 7}\right]-\left[\frac{n}{3 \times 5 \times 7}\right] \cdots$ (1). 利用 $\alpha-1<[\alpha] \leqslant \alpha$, 由(1) 得 $1000>n-\left(\frac{n}{3}+\frac{n}{5}+\frac{n}{7}\right)+\left(\frac{n}{3 \times 5}-1+\frac{n}{3 \times 7}-1+\frac{n}{5 \times 7}-1\right)- \frac{n}{3 \times 5 \times 7}$ 和 $1000<n-\left(\frac{n}{3}-1+\frac{n}{5}-1+\frac{n}{7}-1\right)+\left(\frac{n}{3 \times 5}+\frac{n}{3 \times 7}+\frac{n}{5 \times 7}\right)- \left(\frac{n}{3 \times 5 \times 7}-1\right)$, 即 $2178 \frac{3}{4}<n<2194 \frac{1}{16}$, 又 $n$ 与 105 互素, 所以 $n$ 只可能为 $2179,2182,2183,2186,2188,2189,2192,2194$, 经检验, 其中只有 $n=2186$ 满足方程 (1), 故此数列的第 1000 项为 2186 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 将与 105 互素的正整数从小到大排列成数列, 求出这个数列的第 1000 项.
+%%<SOLUTION>%%
+(解法二) 记 $S=\{1,2,3, \cdots, 105\}, A_i=\{m \mid m \in S$ 且 $m$ 被 $i$ 整除 $\} (i=3,5,7)$. 于是 $S$ 内与 105 互素的数的个数等于 $\left|\complement_S A_3 \cap \complement_S A_5 \cap \complement_S A_7\right|= |S|-\left|A_3\right|-\left|A_5\right|-\left|A_7\right|+\left|A_3 \cap A_5\right|+\left|A_3 \cap A_7\right|+\left|A_5 \cap A_7\right|- \left|A_3 \cap A_5 \cap A_7\right|=105-\left[\frac{105}{3}\right]-\left[\frac{105}{5}\right]-\left[\frac{105}{7}\right]+\left[\frac{105}{3 \times 5}\right]+\left[\frac{105}{3 \times 7}\right]+ \left[\frac{105}{5 \times 7}\right]-\left[\frac{105}{3 \times 5 \times 7}\right]=48$. 设所有正整数中与 105 互质的正整数从小到大排成的数列为 $\left\{a_n\right\}$, 于是 $a_1=1, a_2=2, a_3=4, \cdots, a_{46}=101, a_{47}=103$, $a_{48}=104$, 并记 $P=\left\{a_1, a_2, \cdots, a_{48}\right\}$. 一方面数列 $\left\{a_n\right\}$ 中的每一项 $a_n$ 可表成为 $a_n=105 k+r(k, r$ 为非负整数, $0 \leqslant r \leqslant 105)$, 由 $\left(a_n, 105\right)=(105 k+ r, 105)=(r, 105)=1$, 知 $r \in P$. 另一方面, 对任意非负整数 $k$ 及任意 $r \in P$, 由 $(105 k+r, 105)=(r, 105)=1$ 知数列 $\left\{a_n\right\}$ 中必有某一项 $a_n=105 k+ r$. 可见,数列 $\left\{a_n\right\}$ 由且仅由形如 $105 k+r$ ( $k$ 为非负整数, $r \in P$ ) 的数组成.
+因为每一个固定的 $k$, 当 $r$ 取遍 $P$ 中的数时, 形如 $105 k+r$ 的数有 48 个, 即得到数列中 48 个项.
+又因为 $1000=48 \times 20+40$, 所以 $a_{1000}=105 \times 20+a_{40}$, 而 $a_{48}=104, a_{47}=103, a_{46}=101, a_{45}=97, a_{44}=94, a_{43}=92, a_{42}=89$, $a_{41}=88, a_{40}=86$, 所以 $a_{1000}=105 \times 20+86=2186$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 由数字 $1,2,3$ 组成 $n$ 位数 $(n \geqslant 3)$, 要求 $n$ 位数中数字 $1,2,3$ 中每一个至少出现一次, 求这种 $n$ 位数的个数.
+%%<SOLUTION>%%
+设由 $1,2,3$ 组成的 $n$ 位数全体构成的集合为 $S . A_i=\{m \mid m \in S$, $m$ 的各位数字中不出现 $i\}(i=1,2,3)$. 于是所求 $n$ 位数的个数等于 $\left|\complement_S A_1 \cap \complement_S A_2 \cap \complement_S A_3\right|=|S|-\left(\left|A_1\right|+\left|A_2\right|+\left|A_3\right|\right)+\left(\left|A_1 \cap A_2\right|+\right. \left|A_1 \bigcap A_3\right|+\left|A_2 \cap A_3\right|-\left|A_1 \cap A_2 \cap A_3\right|=3^n-\left(2^n+2^n+2^n\right)+\left(1^n+\right. \left.1^n+1^n\right)-0=3^n-3 \cdot 2^n+3$.
+%%PROBLEM_END%%
+
+

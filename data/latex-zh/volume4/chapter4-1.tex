@@ -1,0 +1,797 @@
+
+%%TEXT_BEGIN%%
+4.1 柯西不等式在证明不等式中的应用.
+运用柯西不等式,证明其他不等式的关键是构造两组数,并按照柯西不等式形式进行探索, 巧妙选取两组数.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知 $a, b, c \in \mathbf{R}^{+}$, 且 $a+b+c=1$, 求证:
+$$
+36 \leqslant \frac{1}{a}+\frac{4}{b}+\frac{9}{c} .
+$$
+%%<SOLUTION>%%
+证明:由柯西不等式,得
+$$
+\begin{aligned}
+\frac{1}{a}+\frac{4}{b}+\frac{9}{c} & =\left(\frac{1}{a}+\frac{4}{b}+\frac{9}{c}\right) \cdot(a+b+c) \\
+& \geqslant\left(\sqrt{a} \cdot \frac{1}{\sqrt{a}}+\sqrt{b} \cdot \frac{2}{\sqrt{b}}+\sqrt{c} \cdot-\frac{3}{\sqrt{c}}\right)^2=36,
+\end{aligned}
+$$
+所以
+$$
+\frac{1}{a}+\frac{4}{b}+\frac{9}{c} \geqslant 36 \text {. }
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $a, b, c \in \mathbf{R}^{+}$, 满足 $a \cos ^2 \alpha+b \sin ^2 \alpha<c$, 求证:
+$$
+\sqrt{a} \cos ^2 \alpha+\sqrt{b} \sin ^2 \alpha<\sqrt{c} .
+$$
+%%<SOLUTION>%%
+证明:由柯西不等式, 得
+$$
+\begin{aligned}
+\sqrt{a} \cos ^2 \alpha+\sqrt{b} \sin ^2 \alpha & =\sqrt{a} \cos \alpha \cdot \cos \alpha+\sqrt{b} \sin \alpha \cdot \sin \alpha \\
+& \leqslant\left[(\sqrt{a} \cos \alpha)^2+(\sqrt{b} \sin \alpha)^2\right]^{\frac{1}{2}} \cdot\left(\cos ^2 \alpha+\sin ^2 \alpha\right)^{\frac{1}{2}} \\
+& =\left(a \cos ^2 \alpha+b \sin ^2 \alpha\right)^{\frac{1}{2}}<\sqrt{c},
+\end{aligned}
+$$
+故命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $a_i>0(i=1,2, \cdots, n)$ 满足 $\sum_{i=1}^n a_i=1$, 求证:
+$$
+\frac{a_1^2}{a_1+a_2}+\frac{a_2^2}{a_2+a_3}+\cdots+\frac{a_n^2}{a_n+a_1} \geqslant \frac{1}{2} .
+$$
+%%<SOLUTION>%%
+证明:令 $a_{n+1}=a_1$, 由柯西不等式, 得
+$$
+\begin{aligned}
+&\left(\sum_{i=1}^n a_i\right)^2=\left(\sum_{i=1}^n \frac{a_i}{\sqrt{a_i+a_{i+1}}} \cdot \sqrt{a_i+a_{i+1}}\right)^2 \\
+& \leqslant \sum_{i=1}^n \frac{a_i^2}{a_i+a_{i+1}} \cdot \sum_{i=1}^n\left(a_i+a_{i+1}\right) \\
+&=2 \sum_{i=1}^n \frac{a_i^2}{a_i+a_{i+1}} \cdot \sum_{i=1}^n a_i, \\
+& \sum_{i=1}^n \frac{a_i^2}{a_i+a_{i+1}} \geqslant \frac{1}{2} \sum_{i=1}^n a_i=\frac{1}{2} .
+\end{aligned}
+$$
+于是
+$$
+\sum_{i=1}^n \frac{a_i^2}{a_i+a_{i+1}} \geqslant \frac{1}{2} \sum_{i=1}^n a_i=\frac{1}{2} .
+$$
+%%<REMARK>%%
+注:在证明过程中,注意条件的利用和不等式的变形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $a 、 b 、 c$ 是正实数, 且满足 $a+b+c=1$. 证明:
+$$
+\frac{a-b c}{a+b c}+\frac{b-c a}{b+c a}+\frac{c-a b}{c+a b} \leqslant \frac{3}{2} .
+$$
+%%<SOLUTION>%%
+证明:注意到
+$$
+1-\frac{a-b c}{a+b c}=\frac{2 b c}{a+b c}=\frac{2 b c}{1-b-c+b c}=\frac{2 b c}{(1-b)(1-c)} .
+$$
+同理, $1-\frac{b-c a}{b+c a}=\frac{2 c a}{(1-c)(1-a)}, 1-\frac{c-a b}{c+a b}=\frac{2 a b}{(1-a)(1-b)}$. 故原不等式等价于
+$$
+\frac{2 b c}{(1-b)(1-c)}+\frac{2 c a}{(1-c)(1-a)}+\frac{2 a b}{(1-a)(1-b)} \geqslant \frac{3}{2} .
+$$
+化简后得
+$$
+\begin{aligned}
+& 4(b c+c a+a b-3 a b c) \\
+\geqslant & 3(b c+c a+a b+1-a-b-c-a b c),
+\end{aligned}
+$$
+即
+$$
+a b+b c+c a \geqslant 9 a b c .
+$$
+从而要证 $\frac{1}{a}+\frac{1}{b}+\frac{1}{c} \geqslant 9$.
+而 $\frac{1}{a}+\frac{1}{b}+\frac{1}{c}=(a+b+c)\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right) \geqslant 9$, 因此, 原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设正实数 $a 、 b 、 c$ 满足 $a+b+c=3$. 证明:
+$$
+\frac{1}{2+a^2+b^2}+\frac{1}{2+b^2+c^2}+\frac{1}{2+c^2+a^2} \leqslant \frac{3}{4} .
+$$
+%%<SOLUTION>%%
+证明:用符号 $\sum$ 表示循环和, 即证明:
+$$
+\sum \frac{1}{2+a^2+b^2} \leqslant \frac{3}{4} . \label{eq1}
+$$
+由柯西不等式得
+$$
+\left(\sum \frac{a^2+b^2}{2+a^2+b^2}\right) \sum\left(2+a^2+b^2\right) \geqslant\left(\sum \sqrt{a^2+b^2}\right)^2 .
+$$
+又 $\quad\left(\sum \sqrt{a^2+b^2}\right)^2=2 \sum a^2+2 \sum \sqrt{\left(a^2+b^2\right)\left(a^2+c^2\right)}$,
+及
+$$
+\sqrt{\left(a^2+b^2\right)\left(a^2+c^2\right)} \geqslant a^2+b c,
+$$
+则
+$$
+\begin{aligned}
+& \left(\sum \sqrt{a^2+b^2}\right)^2 \\
+\geqslant & 2 \sum a^2+2 \sum a^2+2 \sum a b \\
+= & 3 \sum a^2+(a+b+c)^2=9+3 \sum a^2 \\
+= & \frac{3}{2}\left(6+2 \sum a^2\right)=\frac{3}{2} \sum\left(2+a^2+b^2\right) .
+\end{aligned}
+$$
+故 $\left(\sum \frac{a^2+b^2}{2+a^2+b^2}\right) \sum\left(2+a^2+b^2\right) \geqslant \frac{3}{2} \sum\left(2+a^2+b^2\right)$.
+所以,
+$$
+\sum \frac{a^2+b^2}{2+a^2+b^2} \geqslant \frac{3}{2} . \label{eq2}
+$$
+式\ref{eq2}两边乘以 -1 , 再加 3 , 再除以 2 即得式 \ref{eq1}.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 已知 $x, y, z>0$, 且 $x y z=1$. 求证:
+$$
+\frac{(x+y-1)^2}{z}+\frac{(y+z-1)^2}{x}+\frac{(z+x-1)^2}{y} \geqslant 4(x+y+z)-12+\frac{9}{x+y+z} .
+$$
+%%<SOLUTION>%%
+证明:因为
+$$
+(a-b)^2=a^2-2 a b+b^2,
+$$
+所以
+$$
+\begin{gathered}
+a^2=2 a b-b^2+(a-b)^2, \\
+\frac{a^2}{b}=2 a-b+\frac{(a-b)^2}{b} .
+\end{gathered}
+$$
+利用上式及柯西不等式,可知
+$$
+\begin{aligned}
+& \frac{(x+y-1)^2}{z}+\frac{(y+z-1)^2}{x}+\frac{(z+x-1)^2}{y} \\
+= & 2(x+y-1)-z+\frac{(x+y-z-1)^2}{z} \\
+& +2(y+z-1)-x+\frac{(y+z-x-1)^2}{x} \\
+& +2(z+x-1)-y+\frac{(z+x-y-1)^2}{y} \\
+= & 3(x+y+z)-6+\frac{(x+y-z-1)^2}{z}+\frac{(y+z-x-1)^2}{x}+\frac{(z+x-y-1)^2}{y} \\
+\geqslant & 3(x+y+z)-6+\frac{(x+y+z-3)^2}{x+y+z} \\
+= & 3(x+y+z)-6+\frac{(x+y+z)^2-6(x+y+z)+9}{x+y+z} \\
+= & 4(x+y+z)-12+\frac{9}{x+y+z} .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设非负实数 $a_1, a_2, \cdots, a_n$ 与 $b_1, b_2, \cdots, b_n$ 同时满足以下条件:
+(1) $\sum_{i=1}^n\left(a_i+b_i\right)=1$;
+(2) $\sum_{i=1}^n i\left(a_i-b_i\right)=0$;
+(3) $\sum_{i=1}^n i^2\left(a_i+b_i\right)=10$.
+求证: 对任意 $1 \leqslant k \leqslant n$, 都有 $\max \left\{a_k, b_k\right\} \leqslant \frac{10}{10+k^2}$.
+%%<SOLUTION>%%
+证明:对任意 $1 \leqslant k \leqslant n$, 有
+$$
+\begin{aligned}
+\left(k a_k\right)^2 & \leqslant\left(\sum_{i=1}^n i a_i\right)^2=\left(\sum_{i=1}^n i b_i\right)^2 \\
+& \leqslant\left(\sum_{i=1}^n i^2 b_i\right) \cdot\left(\sum_{i=1}^n b_i\right) \quad \text { (柯西不等式) } \\
+& =\left(10-\sum_{i=1}^n i^2 a_i\right) \cdot\left(1-\sum_{i=1}^n a_i\right) \\
+& \leqslant\left(10-k^2 a_k\right) \cdot\left(1-a_k\right)=10-\left(10+k^2\right) a_k+k^2 a_k^2,
+\end{aligned}
+$$
+(柯西不等式)
+从而 $a_k \leqslant \frac{10}{10+k^2}$.
+同理有 $b_k \leqslant \frac{10}{10+k^2}$, 所以 $\max \left\{a_k, b_k\right\} \leqslant \frac{10}{10+k^2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设 $a_i \in \mathbf{R}^{+}(i=1,2, \cdots, n)$, 如果对任意 $x_i \geqslant 0$,
+$$
+\sum_{i=1}^n r_i\left(x_i-a_i\right) \leqslant \sqrt{\sum_{i=1}^n x_i^2}-\sqrt{\sum_{i=1}^n a_i^2} .
+$$
+求 $r_i(i=1,2, \cdots, n)$.
+%%<SOLUTION>%%
+解:令 $x_i=0$, 则
+$$
+\sum_{i=1}^n r_i a_i \geqslant \sqrt{\sum_{i=1}^n a_i^2}
+$$
+再令 $x_i=2 a_i$, 则 $\sum_{i=1}^n r_i a_i \leqslant \sqrt{\sum_{i=1}^n a_i^2}$.
+于是
+$$
+\sum_{i=1}^n r_i a_i=\sqrt{\sum_{i=1}^n a_i^2}
+$$
+令 $x_i=r_i$, 则 $\sum_{i=1}^n r_i\left(r_i-a_i\right) \leqslant \sqrt{\sum_{i=1}^n r_i^2}-\sqrt{\sum_{i=1}^n a_i^2}$,
+推出
+$$
+\sum_{i=1}^n r_i^2 \leqslant \sqrt{\sum_{i=1}^n r_i^2}
+$$
+即 $\sum_{i=1}^n r_i^2 \leqslant 1$. 由柯西不等式, 得
+$$
+\left(\sum_{i=1}^n r_i a_i\right)^2 \leqslant\left(\sum_{i=1}^n r_i^2\right)\left(\sum_{i=1}^n a_i^2\right),
+$$
+等号成立充要条件是 $r_i=\lambda a_i$.
+从而 $\sum_{i=1}^n r_i^2 \geqslant 1$, 于是
+$$
+\sum_{i=1}^n r_i^2=1, \lambda=\frac{1}{\sqrt{\sum_{i=1}^n a_i^2}}, r_i=-\frac{a_i}{\sqrt{\sum_{i=1}^n a_i^2}} .
+$$
+经验证, $r_i=\frac{a_i}{\sqrt{\sum_{i=1}^n a_i^2}}(i=1,2, \cdots, n)$ 为所求.
+上面的条件可以改为一般的形式:
+$$
+\sum_{i=1}^n r_i\left(x_i-a_i\right) \leqslant\left(\sum_{i=1}^n x_i^m\right)^{\frac{1}{m}}-\left(\sum_{i=1}^n a_i^m\right)^{\frac{1}{m}},
+$$
+其中 $m>1$ 为给定的常数.
+利用赫尔得不等式, 得
+$$
+r_i=\left[\frac{a_i^m}{\sum_{i=1}^n a_i^m}\right]^{\frac{m-1}{m}}(i=1,2, \cdots, n) .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设 $x_i, y_i, \cdots, z_i \in \mathbf{R}(i=1,2, \cdots, n)$, 求证:
+$$
+\sum_{i=1}^n \sqrt{x_i^2+y_i^2+\cdots+z_i^2} \geqslant \sqrt{\left(\sum_{i=1}^n x_i\right)^2+\left(\sum_{i=1}^n y_i\right)^2+\cdots+\left(\sum_{i=1}^n z_i\right)^2} .
+$$
+%%<SOLUTION>%%
+证明:令 $a=\sum_{i=1}^n x_i, b=\sum_{i=1}^n y_i, \cdots, c=\sum_{i=1}^n z_i$. 不妨设 $a^2+b^2+\cdots+ c^2 \neq 0$, 则由柯西不等式, 得
+$$
+\left(a^2+b^2+\cdots+c^2\right)\left(x_i^2+y_i^2+\cdots+z_i^2\right) \geqslant\left(a x_i+b y_i+\cdots+c z_i\right)^2,
+$$
+即
+$$
+a x_i+b y_i+\cdots+c z_i \leqslant \sqrt{a^2+b^2+\cdots+c^2} \cdot \sqrt{x_i^2+y_i^2+\cdots+z_i^2} .
+$$
+求和, 得
+$$
+a^2+b^2+\cdots+c^2 \leqslant \sqrt{a^2+b^2+\cdots+c^2} \sum_{i=1}^n \sqrt{x_i^2+y_i^2+\cdots+z_i^2} .
+$$
+故 $\quad \sum_{i=1}^n \sqrt{x_i^2+y_i^2+\cdots+z_i^2} \geqslant \sqrt{a^2+b^2+\cdots+c^2}$.
+本例如果用向量方法证明, 会更简洁.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设 $a_i \in \mathbf{R}^{+}, 1 \leqslant i \leqslant n$. 证明:
+$$
+\frac{1}{\frac{1}{1+a_1}+\frac{1}{1+a_2}+\cdots+\frac{1}{1+a_n}}-\frac{1}{\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}} \geqslant \frac{1}{n} \text {. }
+$$
+%%<SOLUTION>%%
+证明:令 $\sum_{i=1}^n \frac{1}{a_i}=a$, 则 $\sum_{i=1}^n \frac{1+a_i}{a_i}=n+a$. 由柯西不等式, 得
+$$
+\sum_{i=1}^n \frac{a_i}{1+a_i} \cdot \sum_{i=1}^n \frac{1+a_i}{a_i} \geqslant n^2 .
+$$
+所以 $\sum_{i=1}^n \frac{a_i}{a_i+1} \geqslant \frac{n^2}{n+a}$, 以及
+$$
+\begin{aligned}
+\sum_{i=1}^n \frac{1}{a_i+1} & =\sum_{i=1}^n\left(1-\frac{a_i}{a_i+1}\right)=n-\sum_{i=1}^n \frac{a_i}{a_i+1} \\
+& \leqslant n-\frac{n^2}{n+a}=-\frac{n a}{n+a} .
+\end{aligned}
+$$
+于是
+$$
+\begin{aligned}
+& \frac{1}{\frac{1}{1+a_1}+\frac{1}{1+a_2}+\cdots+\frac{1}{1+a_n}}-\frac{1}{\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}} \\
+\geqslant & \frac{1}{\frac{n a}{n+a}}-\frac{1}{a}=\frac{n+a}{n a}-\frac{1}{a}=\frac{a}{n a}=\frac{1}{n},
+\end{aligned}
+$$
+故命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 设 $n$ 为正整数, $x_1 \leqslant x_2 \leqslant \cdots \leqslant x_n$ 为实数, 证明:
+(1) $\left(\sum_{i, j=1}^n\left|x_i-x_j\right|\right)^2 \leqslant \frac{2\left(n^2-1\right)}{3} \sum_{i, j=1}^n\left(x_i-x_j\right)^2$;
+(2) 第 (1) 小题等号成立的充要条件是 $x_1, x_2, \cdots, x_n$ 为等差数列.
+%%<SOLUTION>%%
+证明:(1) 不失一般性, 可设 $\sum_{i=1}^n x_i=0$, 得
+$$
+\sum_{i, j=1}^n\left|x_i-x_j\right|=2 \sum_{i<j}\left(x_j-x_i\right)=2 \sum_{i=1}^n(2 i-n-1) x_i .
+$$
+由柯西不等式, 得
+$$
+\begin{aligned}
+\left(\sum_{i, j=1}^n\left|x_i-x_j\right|\right)^2 & \leqslant 4 \sum_{i=1}^n(2 i-n-1)^2 \sum_{i=1}^n x_i^2 \\
+& =4 \times \frac{n(n-1)(n+1)}{3} \sum_{i=1}^n x_i^2 .
+\end{aligned}
+$$
+另一方面,
+$$
+\sum_{i, j=1}^n\left(x_i-x_j\right)^2=n \sum_{i=1}^n x_i^2-\sum_{i=1}^n x_i \sum_{j=1}^n x_j+n \sum_{j=1}^n x_j^2=2 n \sum_{i=1}^n x_i^2,
+$$
+从而
+$$
+\left(\sum_{i, j=1}^n\left|x_i-x_j\right|\right)^2 \leqslant \frac{2\left(n^2-1\right)}{3} \sum_{i, j=1}\left(x_i-x_j\right)^2 ;
+$$
+(2) 如果等号成立, 则对某个 $k, x_i=k(2 i-n-1)$, 则 $x_1, x_2, \cdots, x_n$ 为等差数列.
+另一方面, 如果 $x_1, x_2, \cdots, x_n$ 为等差数列, 公差为 $d$, 则
+$$
+x_i=\frac{d}{2}(2 i-n-1)+\frac{x_1+x_n}{2} .
+$$
+将每个 $x_i$ 减去 $\frac{x_1+x_n}{2}$, 就有 $x_i=\frac{d}{2}(2 i-n-1)$, 且 $\sum_{i=1}^n x_i=0$, 这时等号成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 证明: 满足条件
+(1) $a_1+a_2+\cdots+a_n \geqslant n^2$;
+(2) $a_1^2+a_2^2+\cdots+a_n^2 \leqslant n^3+1$
+的整数只有 $\left(a_1, a_2, \cdots, a_n\right)=(n, n, \cdots, n)$.
+%%<SOLUTION>%%
+证明:设 $\left(a_1, a_2, \cdots, a_n\right)$ 是满足条件的整数组, 则由柯西不等式, 得
+$$
+a_1^2+a_2^2+\cdots+a_n^2 \geqslant \frac{1}{n}\left(a_1+a_2+\cdots+a_n\right)^2 \geqslant n^3 .
+$$
+结合 $a_1^2+a_2^2+\cdots+a_n^2 \leqslant n^3+1$, 可知只能 $\sum_{i=1}^n a_i^2=n^3$ 或者 $\sum_{i=1}^n a_i^2= n^3+1$.
+当 $\sum_{i=1}^n a_i^2=n^3$ 时, 由柯西不等式取等号得 $a_1=a_2=\cdots=a_n$, 即 $a_i^2=n^2$, $1 \leqslant i \leqslant n$. 再由 $\sum_{i=1}^n a_i \geqslant n^2$, 则只有 $a_1=a_2=\cdots=a_n=n$.
+当 $\sum_{i=1}^n a_i=n^3+1$ 时, 则令 $b_i=a_i-n$, 得
+$$
+\sum_{i=1}^n b_i^2=\sum_{i=1}^n a_i^2-2 n \sum_{i=1}^n a_i+n^3 \leqslant 2 n^3+1-2 n \sum_{i=1}^n a_i \leqslant 1 .
+$$
+于是 $b_i^2$ 只能是 0 或者 1 , 且 $b_1^2, b_2^2, \cdots, b_n^2$ 中至多有一个为 1 . 如果都为零, 则 $a_i=n, \sum_{i=1}^n a_i^2=n^3 \neq n^3+1$, 矛盾.
+如果 $b_1^2, b_2^2, \cdots, b_n^2$ 中有一个为 1 , 则 $\sum_{i=1}^n a_i^2=n^3 \pm 2 n+1 \neq n^3+1$, 也矛盾.
+故只有 $\left(a_1, a_2, \cdots, a_n\right)=(n$, $n, \cdots, n)$ 为唯一一组整数解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13. 证明: 关于两个三角形的匹㪡不等式
+$$
+a^2\left(b_1^2+c_1^2-a_1^2\right)+b^2\left(c_1^2+a_1^2-b_1^2\right)+c^2\left(a_1^2+b_1^2-c_1^2\right) \geqslant 16 S S_1,
+$$
+这里 $a 、 b 、 c 、 S ; a_1 、 b_1 、 c_1 、 S_1$ 分别为两个三角形的边长和面积.
+%%<SOLUTION>%%
+证明:由柯西不等式, 得
+$$
+\begin{aligned}
+& 16 S S_1+2 a^2 a_1^2+2 b^2 b_1^2+2 c^2 c_1^2 \\
+\leqslant & \left(16 S_1^2+2 a_1^4+2 b_1^4+2 c_1^4\right)^{\frac{1}{2}}\left(16 S^2+2 a^4+2 b^4+2 c^4\right)^{\frac{1}{2}} \\
+= & \left(a_1^2+b_1^2+c_1^2\right)\left(a^2+b^2+c^2\right),
+\end{aligned}
+$$
+所以
+$$
+a^2\left(b_1^2+c_1^2-a_1^2\right)+b^2\left(c_1^2+a_1^2-b_1^2\right)+c^2\left(a_1^2+b_1^2-c_1^2\right) \geqslant 16 S S_1 .
+$$
+%%<REMARK>%%
+注:在证明过程中,常常进行一些恒等的变形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14. 设 $a 、 b 、 c$ 是三角形的三边长,求证:
+$$
+a^2 b(a-b)+b^2 c(b-c)+c^2 a(c-a) \geqslant 0 .
+$$
+%%<SOLUTION>%%
+证明:显然存在正数 $x 、 y 、 z$ 使得 $a=y+z, b=z+x, c=x+y$. 由
+$$
+\begin{aligned}
+& a^2 b(a-b)=(y+z)^2(z+x)(y-x) \\
+= & (y+z)(z+x)\left(y^2-z^2\right)+(y+z)^2\left(z^2-x^2\right),
+\end{aligned}
+$$
+同样处理 $b^2 c(b-c), c^2 a(c-a)$, 所以
+$$
+\begin{aligned}
+& a^2 b(a-b)+b^2 c(b-c)+c^2 a(c-a) \\
+= & 2 x(y-z) y^2+2 y(z-x) z^2+2 z(x-y) x^2 .
+\end{aligned}
+$$
+原不等式等价于
+$$
+x y z(x+y+z) \leqslant x y^3+y z^3+z x^3 .
+$$
+由柯西不等式,得
+$$
+\begin{gathered}
+x+y+z \leqslant\left(\frac{x^2}{y}+\frac{y^2}{z}+\frac{z^2}{x}\right)^{\frac{1}{2}}(x+y+z)^{\frac{1}{2}}, \\
+x+y+z \leqslant \frac{x^2}{y}+\frac{y^2}{z}+\frac{z^2}{x} .
+\end{gathered}
+$$
+则
+$$
+x+y+z \leqslant \frac{x^2}{y}+\frac{y^2}{z}+\frac{z^2}{x} .
+$$
+于是原不等式成立, 且当 $a=b=c$ 时等号成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例15. 设 $x_i>0, x_i y_i-z_i^2>0, i=1,2$, 求证:
+$$
+\frac{8}{\left(x_1+x_2\right)\left(y_1+y_2\right)-\left(z_1+z_2\right)^2} \leqslant \frac{1}{x_1 y_1-z_1^2}+\frac{1}{x_2 y_2-z_2^2} .
+$$
+%%<SOLUTION>%%
+证明:注意到不等式的右边 $\geqslant \frac{2}{\left[\left(x_1 y_1-z_1^2\right)\left(x_2 y_2-z_2^2\right)\right]^{\frac{1}{2}}}$, 考虑证明一个更强的结论:
+$$
+\left(x_1+x_2\right)\left(y_1+y_2\right)-\left(z_1+z_2\right)^2 \geqslant 4\left[\left(x_1 y_1-z_1^2\right)\left(x_2 y_2-z_2^2\right)\right]^{\frac{1}{2}} .
+$$
+令 $u_i=\sqrt{x_i y_i-z_i^2}, i=1,2$, 由于 $4 u_1 u_2 \leqslant\left(u_1+u_2\right)^2$, 则只要证明
+$$
+\left(x_1+x_2\right)\left(y_1+y_2\right)-\left(z_1+z_2\right)^2 \geqslant\left(u_1+u_2\right)^2 \text {, }
+$$
+等价于
+$$
+\left(x_1+x_2\right)\left(y_1+y_2\right) \geqslant\left(u_1+u_2\right)^2+\left(z_1+z_2\right)^2 .
+$$
+由柯西不等式,得
+$$
+\begin{aligned}
+\left(x_1+x_2\right)\left(y_1+y_2\right) & \geqslant\left(\sqrt{x_1 y_1}+\sqrt{x_2 y_2}\right)^2 \\
+& =\left(\sqrt{u_1^2+z_1^2}+\sqrt{u_2^2+z_2^2}\right)^2 \\
+& =\left(u_1^2+z_1^2\right)+2 \sqrt{u_1^2+z_1^2} \sqrt{u_2^2+z_2^2}+\left(u_2^2+z_2^2\right) \\
+& \geqslant\left(u_1^2+z_1^2\right)+2\left(u_1 u_2+z_1 z_2\right)+\left(u_2^2+z_2^2\right) \\
+& =\left(u_1+u_2\right)^2+\left(z_1+z_2\right)^2 .
+\end{aligned}
+$$
+从而原不等式成立, 且等号成立的充分必要条件为 $x_1=x_2, y_1=y_2$, $z_1=z_2$.
+%%<REMARK>%%
+注:.
+该例题也可以直接用柯西不等式证明, 关于它的推广, 可以参见引文或练习.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例16. 设 $a_i, b_i, c_i, d_i \in \mathbf{R}^{+}(i=1,2, \cdots, n)$, 求证:
+$$
+\left(\sum a_i b_i c_i d_i\right)^4 \leqslant \sum a_i^4 \cdot \sum b_i^4 \cdot \sum c_i^4 \cdot \sum d_i^4 .
+$$
+%%<SOLUTION>%%
+证明:两次利用柯西不等式, 得
+$$
+\begin{aligned}
+\text { 左边 } & =\left[\sum\left(a_i b_i\right)\left(c_i d_i\right)\right]^4 \\
+& \leqslant\left[\sum\left(a_i b_i\right)^2\right]^2 \cdot\left[\sum\left(c_i d_i\right)^2\right]^2=\left[\sum a_i^2 b_i^2\right]^2\left[\sum c_i^2 d_i^2\right]^2 \\
+& \leqslant \sum a_i^4 \cdot \sum b_i^4 \cdot \sum c_i^4 \cdot \sum d_i^4 .
+\end{aligned}
+$$
+故命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例17. 设 $t_a 、 t_b 、 t_c$ 分别是 $\triangle A B C$ 的 $\angle A 、 \angle B 、 \angle C$ 的角平分线的长, 证明:
+$$
+\sum \frac{b c}{t_a^2} \geqslant 4
+$$
+%%<SOLUTION>%%
+证明:不难求得 $t_a^2=\frac{b c\left[(b+c)^2-a^2\right]}{(b+c)^2}$, 则 $\frac{b c}{t_a^2}=\frac{(b+c)^2}{(b+c)^2 \div a^2}$.
+同理可得
+$$
+\frac{a c}{t_b^2}=\frac{(a+c)^2}{(a+c)^2-b^2}, \frac{a b}{t_c^2}=\frac{(a+b)^2}{(a+b)^2-c^2}
+$$
+则
+$$
+\sum \frac{b c}{t_a^2}=\sum \frac{(a+b)^2}{(a+b)^2-c^2} \geqslant \frac{4(a+b+c)^2}{\sum\left[(a+b)^2-c^2\right]}=\frac{4(a+b+c)^2}{(a+b+c)^2}=4 .
+$$
+所以原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例18. 设 $a 、 b 、 c 、 d$ 为正实数, 满足 $a b+c d=1$, 点 $P_i\left(x_i, y_i\right)(i=1$, $2,3,4)$ 是以原点为圆心的单位圆上的四点.
+求证:
+$$
+\begin{aligned}
+& \left(a y_1+b y_2+c y_3+d y_4\right)^2+\left(a x_4+b x_3+c x_2+d x_1\right)^2 \\
+\leqslant & 2\left(\frac{a^2+b^2}{a b}+\frac{c^2+d^2}{c d}\right) .
+\end{aligned}
+$$
+%%<SOLUTION>%%
+证明:令 $\alpha=a y_1+b y_2+c y_3+d y_4, \beta=a x_4+b x_3+c x_2+d x_1$, 由柯西不等式, 得
+$$
+\begin{aligned}
+\alpha^2= & \left(a y_1+b y_2+c y_3+d y_4\right)^2 \\
+\leqslant & {\left[\left(\sqrt{a d} y_1\right)^2+\left(\sqrt{b c} y_2\right)^2+\left(\sqrt{b c} y_3\right)^2+\left(\sqrt{a d} y_4\right)^2\right] } \\
+& {\left[\left(\sqrt{\frac{a}{d}}\right)^2+\left(\sqrt{\frac{b}{c}}\right)^2+\left(\sqrt{\frac{c}{b}}\right)^2+\left(\sqrt{\frac{d}{a}}\right)^2\right] } \\
+= & \left(a d y_1^2+b c y_2^2+b c y_3^2+a d y_4^2\right) \cdot\left(\frac{a}{d}+\frac{b}{c}+\frac{c}{b}+\frac{d}{a}\right) .
+\end{aligned}
+$$
+同理可得
+$$
+\beta^2 \leqslant\left(a d x_4^2+b c x_3^2+b c x_2^2+a d x_1^2\right) \cdot\left(\frac{a}{d}+\frac{b}{c}+\frac{c}{b}+\frac{d}{a}\right) .
+$$
+将它们相加, 并利用 $x_i^2+y_i^2=1(i=1,2,3,4), a b+c d=1$, 得
+$$
+\begin{aligned}
+\alpha^2+\beta^2 & \leqslant(2 a d+2 b c)\left(\frac{a}{d}+\frac{b}{c}+\frac{c}{b}+\frac{d}{a}\right) \\
+& =2(a d+b c)\left(\frac{a b+c d}{b d}+\frac{a b+c d}{a c}\right) \\
+& =2(a d+b c)\left(\frac{1}{b d}+\frac{1}{a c}\right) \\
+& =2\left(\frac{a^2+b^2}{a b}+\frac{c^2+d^2}{c d}\right),
+\end{aligned}
+$$
+故命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例19. 给定正整数 $n \geqslant 2$, 设正整数 $a_i(i=1,2, \cdots, n)$ 满足 $a_1< a_2<\cdots<a_n$ 以及 $\sum_{i=1}^n \frac{1}{a_i} \leqslant 1$. 求证: 对任意实数 $x$, 有
+$$
+\left(\sum_{i=1}^n \frac{1}{a_i^2+x^2}\right)^2 \leqslant \frac{1}{2} \cdot \frac{1}{a_1\left(a_1-1\right)+x^2} .
+$$
+%%<SOLUTION>%%
+证明:当 $x^2 \geqslant a_1\left(a_1-1\right)$ 时, 由于 $\sum \frac{1}{a_i} \leqslant 1$, 得
+$$
+\begin{aligned}
+\left(\sum_{i=1}^n \frac{1}{a_i^2+x^2}\right)^2 & \leqslant\left(\sum_{i=1}^n \frac{1}{2 a_i|x|}\right)^2=\frac{1}{4 x^2}\left(\sum_{i=1}^n \frac{1}{a_i}\right)^2 \\
+& \leqslant \frac{1}{4 x^2} \leqslant \frac{1}{2} \cdot \frac{1}{a_1\left(a_1-1\right)+x^2} .
+\end{aligned}
+$$
+当 $x^2<a_1\left(a_1-1\right)$ 时, 由柯西不等式, 得
+$$
+\begin{aligned}
+\left(\sum_{i=1}^n \frac{1}{a_i^2+x^2}\right)^2 & \leqslant\left(\sum_{i=1}^n \frac{1}{a_i}\right) \sum_{i=1}^n \frac{a_i}{\left(a_i^2+x^2\right)^2} \\
+& \leqslant \sum_{i=1}^n \frac{a_i}{\left(a_i^2+x^2\right)^2} .
+\end{aligned}
+$$
+对于正整数 $a_1<a_2<\cdots<a_n$, 有 $a_{i+1} \geqslant a_i+1, i=1,2, \cdots, n-1$, 且
+$$
+\begin{aligned}
+\frac{2 a_i}{\left(a_i^2+x^2\right)^2} & \leqslant \frac{2 a_i}{\left(a_i^2+x^2+\frac{1}{4}\right)^2-a_i^2} \\
+& =\frac{1}{\left(a_i-\frac{1}{2}\right)^2+x^2}-\frac{1}{\left(a_i+\frac{1}{2}\right)^2+x^2} \\
+& \leqslant \frac{1}{\left(a_i-\frac{1}{2}\right)^2+x^2}-\frac{1}{\left(a_{i+1}-\frac{1}{2}\right)^2+x^2}, i=1,2, \cdots, n-1 .
+\end{aligned}
+$$
+同理
+$$
+\begin{aligned}
+\frac{2 a_n}{\left(a_n^2+x^2\right)^2} & \leqslant \frac{1}{\left(a_n-\frac{1}{2}\right)^2+x^2}-\frac{1}{\left(a_n+\frac{1}{2}\right)^2+x^2} \\
+& \leqslant \frac{1}{\left(a_n-\frac{1}{2}\right)^2+x^2},
+\end{aligned}
+$$
+所以
+$$
+\begin{aligned}
+\sum_{i=1}^n \frac{a_i}{\left(a_i^2+x^2\right)^2} \leqslant & \frac{1}{2} \sum_{i=1}^{n-1}\left[\frac{1}{\left(a_i-\frac{1}{2}\right)^2+x^2}-\frac{1}{\left(a_{i+1}-\frac{1}{2}\right)^2+x^2}\right] \\
+& +\frac{1}{\left(a_n-\frac{1}{2}\right)^2+x^2} \\
+\leqslant & \frac{1}{2} \cdot \frac{1}{\left(a_1-\frac{1}{2}\right)^2+x^2} \leqslant \frac{1}{2} \cdot \frac{1}{a_1\left(a_1-1\right)+x^2},
+\end{aligned}
+$$
+故命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例20. 设 $x \in\left(0, \frac{\pi}{2}\right), n \in \mathbf{N}$, 求证:
+$$
+\left(\frac{1-\sin ^{2 n} x}{\sin ^{2 n} x}\right)\left(\frac{1-\cos ^{2 n} x}{\cos ^{2 n} x}\right) \geqslant\left(2^n-1\right)^2 .
+$$
+%%<SOLUTION>%%
+证明:因为
+$$
+\begin{aligned}
+1-\sin ^{2 n} x & =\left(1-\sin ^2 x\right)\left(1+\sin ^2 x+\sin ^4 x+\cdots+\sin ^{2(n-1)} x\right) \\
+& =\cos ^2 x\left(1+\sin ^2 x+\sin ^4 x+\cdots+\sin ^{2(n-1)} x\right), \\
+1-\cos ^{2 n} x & =\left(1-\cos ^2 x\right)\left(1+\cos ^2 x+\cos ^4 x+\cdots+\cos ^{2(n-1)} x\right) \\
+& =\sin ^2 x\left(1+\cos ^2 x+\cos ^4 x+\cdots+\cos ^{2(n-1)} x\right),
+\end{aligned}
+$$
+所以由柯西不等式, 得
+$$
+\begin{aligned}
+& \left(\frac{1-\sin ^{2 n} x}{\sin ^{2 n} x}\right)\left(\frac{1-\cos ^{2 n} x}{\cos ^{2 n} x}\right) \\
+= & \frac{1}{\sin ^{2 n-2} x}\left(1+\sin ^2 x+\sin ^4 x+\cdots+\sin ^{2 n-2} x\right) \\
+& \cdot \frac{1}{\cos ^{2 n-2} x}\left(1+\cos ^2 x+\cos ^4 x+\cdots+\cos ^{2 n-2} x\right) \\
+= & \left(1+\frac{1}{\sin ^2 x}+\frac{1}{\sin ^4 x}+\cdots+\frac{1}{\sin ^{2 n-2} x}\right) \\
+& \cdot\left(1+\frac{1}{\cos ^2 x}+\frac{1}{\cos ^4 x}+\cdots+\frac{1}{\cos ^{2 n-2} x}\right) \\
+\geqslant & {\left[1+\frac{1}{\sin x \cos x}+\frac{1}{(\sin x \cos x)^2}+\cdots+\frac{1}{(\sin x \cos x)^{n-1}}\right]^2 } \\
+= & {\left[1+\frac{2}{\sin 2 x}+\frac{4}{(\sin 2 x)^2}+\cdots+\frac{2^{n-1}}{(\sin 2 x)^{n-1}}\right]^2 } \\
+\geqslant & \left(1+2+2^2+\cdots+2^{n-1}\right)^2=\left(2^n-1\right)^2 .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例21. 设 $a_1, a_2, \cdots, a_n$ 是一个有无穷项的实数列, 对于所有正整数 $i$, 存在一个实数 $c$, 使得 $0 \leqslant a_i \leqslant c$, 且 $\left|a_i-a_j\right| \geqslant \frac{1}{i+j}$ 对所有正整数 $i, j (i \neq j)$ 成立.
+证明: $c \geqslant 1$.
+%%<SOLUTION>%%
+证明:对于 $n \geqslant 2$, 设 $\sigma(1), \sigma(2), \cdots, \sigma(n)$ 是 $1,2, \cdots, n$ 的一个排列, 且满足
+$$
+0 \leqslant a_{\sigma(1)}<a_{\sigma(2)}<\cdots<a_{\sigma(n)} \leqslant c,
+$$
+则
+$$
+c \geqslant a_{\sigma(n)}-a_{\sigma(1)},
+$$
+$$
+\begin{aligned}
+& \left(a_{\sigma(n)}-a_{\sigma(n-1)}\right)+\left(a_{\sigma(n-1)}-a_{\sigma(n-2)}\right)+\cdots+\left(a_{\sigma(2)}-a_{\sigma(1)}\right) \\
+\geqslant & \frac{1}{\sigma(n)+\sigma(n-1)}+\frac{1}{\sigma(n-1)+\sigma(n-2)}+\cdots+\frac{1}{\sigma(2)+\sigma(1)} .
+\end{aligned}
+$$
+由柯西不等式,得
+$$
+\begin{gathered}
+{\left[\frac{1}{\sigma(n)+\sigma(n-1)}+\frac{1}{\sigma(n-1)+\sigma(n-2)}+\cdots+\frac{1}{\sigma(2)+\sigma(1)}\right] .} \\
+{[(\sigma(n)+\sigma(n-1))+(\sigma(n-1)+\sigma(n-2))+\cdots+(\sigma(2)+\sigma(1))] \geqslant(n-1)^2 .}
+\end{gathered}
+$$
+对所有正整数 $n \geqslant 2$, 我们有
+$$
+\begin{aligned}
+c & \geqslant \frac{1}{\sigma(n)+\sigma(n-1)}+\frac{1}{\sigma(n-1)+\sigma(n-2)}+\cdots+\frac{1}{\sigma(2)+\sigma(1)} \\
+& \geqslant \frac{(n-1)^2}{2[\sigma(1)+\sigma(2)+\cdots+\sigma(n)]-\sigma(1)-\sigma(n)} \\
+& =\frac{(n-1)^2}{n(n+1)-\sigma(1)-\sigma(n)} \\
+& \geqslant \frac{(n-1)^2}{n^2+n-3} \geqslant \frac{n-1}{n+3}=1-\frac{4}{n+3} .
+\end{aligned}
+$$
+故 $c \geqslant 1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例22. 设 $a 、 b 、 c$ 为正实数.
+求证:
+$$
+\frac{(2 a+b+c)^2}{2 a^2+(b+c)^2}+\frac{(a+2 b+c)^2}{2 b^2+(a+c)^2}+\frac{(a+b+2 c)^2}{2 c^2+(b+a)^2} \leqslant 8 .
+$$
+%%<SOLUTION>%%
+证明:在第二章中, 我们用了两种不同的方法证明了这个不等式, 这里, 用柯西不等式给出另一种新的证明.
+由柯西不等式, 得
+$$
+\sqrt{\frac{2 a^2+\frac{(b+c)^2}{2}+\frac{(b+c)^2}{2}}{3}} \geqslant \frac{\sqrt{2} a+\frac{\sqrt{2}}{2}(b+c)+\frac{\sqrt{2}}{2}(b+c)}{3}
+$$
+$$
+=\frac{\sqrt{2}(a+b+c)}{3} \text {. }
+$$
+于是 $2 a^2+(b+c)^2 \geqslant \frac{2(a+b+c)^2}{3}$. 同理可得
+$$
+2 b^2+(c+a)^2 \geqslant \frac{2(a+b+c)^2}{3}, 2 c^2+(a+b)^2 \geqslant \frac{2(a+b+c)^2}{3} .
+$$
+如果 $4 a \geqslant b+c, 4 b \geqslant c+a, 4 c \geqslant a+b$, 则
+$$
+\begin{aligned}
+\frac{(2 a+b+c)^2}{2 a^2+(b+c)^2} & =2+\frac{(4 a-b-c)(b+c)}{2 a^2+(b+c)^2} \\
+& \leqslant 2+\frac{3\left(4 a b+4 a c-b^2-2 b c-c^2\right)}{2(a+b+c)^2} .
+\end{aligned}
+$$
+同理可得
+$$
+\begin{aligned}
+& \frac{(a+2 b+c)^2}{2 b^2+(a+c)^2} \leqslant 2+\frac{3\left(4 b c+4 b a-a^2-2 a c-c^2\right)}{2(a+b+c)^2} . \\
+& \frac{(a+b+2 c)^2}{2 c^2+(a+b)^2} \leqslant 2+\frac{3\left(4 c b+4 c a-a^2-2 b a-b^2\right)}{2(a+b+c)^2} .
+\end{aligned}
+$$
+三式相加, 得
+$$
+\begin{aligned}
+& \frac{(2 a+b+c)^2}{2 a^2+(b+c)^2}+\frac{(a+2 b+c)^2}{2 b^2+(a+c)^2}+\frac{(a+b+2 c)^2}{2 c^2+(a+b)^2} \\
+\leqslant & 6+\frac{3\left(6 a b+6 b c+6 c a-2 a^2-2 b^2-2 c^2\right)}{2(a+b+c)^2} \\
+= & \frac{21}{2}-\frac{15}{2} \cdot \frac{a^2+b^2+c^2}{(a+b+c)^2} \\
+\leqslant & \frac{21}{2}-\frac{15}{2} \times \frac{1}{3}=8 .
+\end{aligned}
+$$
+当上述假设不成立时,不妨设 $4 a<b+c$, 则
+$$
+\frac{(2 a+b+c)^2}{2 a^2+(b+c)^2}<2
+$$
+由柯西不等式,得
+$$
+[b+b+(c+a)]^2 \leqslant\left(b^2+b^2+(c+a)^2\right)(1+1+1) .
+$$
+于是
+$$
+\frac{(2 b+a+c)^2}{2 b^2+(a+c)^2} \leqslant 3
+$$
+同理可得
+$$
+\frac{(2 c+b+a)^2}{2 c^2+(a+b)^2} \leqslant 3
+$$
+所以
+$$
+\frac{(2 a+b+c)^2}{2 a^2+(b+c)^2}+\frac{(a+2 b+c)^2}{2 b^2+(a+c)^2}+\frac{(a+b+2 c)^2}{2 c^2+(a+b)^2} \leqslant 8 .
+$$
+综上可知原不等式成立.
+当且仅当 $a=b=c$ 时等号成立.
+对于三种不同的证明方法, 希望大家能好好理解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例23. 设 $a_i>0$, 且 $\sum_{i=1}^n a_i=k$, 求证:
+$$
+\sum_{i=1}^n\left(a_i+\frac{1}{a_i}\right)^2 \geqslant n\left(\frac{n^2+k^2}{n k}\right)^2 .
+$$
+%%<SOLUTION>%%
+证明:由柯西不等式, 得
+$$
+\begin{aligned}
+& \left(1^2+1^2+\cdots+1^2\right) \sum_{i=1}^n\left(a_i+\frac{1}{a_i}\right)^2 \\
+\geqslant & {\left[\sum_{i=1}^n\left(a_i+\frac{1}{a_i}\right)\right]^2=\left(k+\sum_{i=1}^n \frac{1}{a_i}\right)^2 } \\
+\geqslant & \left(k+\frac{n^2}{\sum_{i=1}^n a_i}\right]^2=\left(\frac{k^2+n^2}{k}\right)^2,
+\end{aligned}
+$$
+所以
+$$
+\sum_{i=1}^n\left(a_i+\frac{1}{a_i}\right)^2 \geqslant n\left(\frac{n^2+k^2}{n k}\right)^2 .
+$$
+利用变形的赫尔得不等式可以证明下列不等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例24. 证明: 对正实数 $a 、 b 、 c$, 有
+$$
+\frac{a}{\sqrt{a^2+8 b c}}+\frac{b}{\sqrt{b^2+8 a c}}+\frac{c}{\sqrt{c^2+8 a b}} \geqslant 1 .
+$$
+%%<SOLUTION>%%
+证明:由变形的柯西不等式,
+$$
+\text { 左边 }=\sum \frac{a}{\sqrt{a^2+8 b c}}=\sum \frac{a^{\frac{3}{2}}}{\sqrt{a^3+8 a b c}} \geqslant \frac{\left(\sum a\right)^{\frac{3}{2}}}{\left[\sum\left(a^3+8 a b c\right)\right]^{\frac{1}{2}}} \text {. }
+$$
+所以要证明原不等式, 只需要证明
+$$
+\frac{\left(\sum a\right)^{\frac{3}{2}}}{\left[\sum\left(a^3+8 a b c\right)\right]^{\frac{1}{2}}} \geqslant 1,
+$$
+等价于
+$$
+\left(\sum a\right)^3 \geqslant \sum a^3+24 a b c
+$$
+等价于
+$$
+\sum a^3+3 \sum\left(a^2 b+a b^2\right)+6 a b c \geqslant \sum a^3+24 a b c,
+$$
+等价于
+$$
+\sum\left(a^2 b+a b^2\right) \geqslant 6 a b c .
+$$
+易知该不等式成立,故原不等式成立.
+%%<REMARK>%%
+注:前面, 我们用平均值不等式证明了这个不等式, 读者还可以用其他方法证明.
+%%PROBLEM_END%%
+
+

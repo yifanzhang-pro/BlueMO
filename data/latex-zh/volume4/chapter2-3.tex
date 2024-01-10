@@ -1,0 +1,439 @@
+
+%%TEXT_BEGIN%%
+2.3 平均值不等式在几何不等式中的应用.
+对于几何中出现的不等式证明, 常用的方法有: 几何方法、代数方法和三角方法, 当然, 我们不能将它们截然地分开, 常常是要综合地运用各种知识.
+如果采用代数方法证明几何命题, 那么, 灵活运用平均值不等式和柯西不等式,对解决问题将有极大的帮助.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 对于任意一个 $\triangle A B C$, 记其面积为 $S$, 周长为 $l, P 、 Q 、 R$ 依次为 $\triangle A B C$ 内切圆在边 $B C 、 C A 、 A B$ 上的切点.
+证明 :
+$$
+\left(\frac{A B}{P Q}\right)^3+\left(\frac{B C}{Q R}\right)^3+\left(\frac{C A}{R P}\right)^3 \geqslant \frac{2}{\sqrt{3}} \cdot \frac{l^2}{S}
+$$
+%%<SOLUTION>%%
+证明:记 $B C=a, C A=b, A B=c, Q R=p, R P=q, P Q=r$. 设 $A R=x, B P=y, C Q=z$. 由 $x+y=c, y+z=a, z+x=b$, 得
+$$
+x=t-a, y=t-b, z=t-c\left(t=\frac{a+b+c}{2}\right) .
+$$
+在 $\triangle A B C 、 \triangle A R Q$ 中, 由余弦定理分别得
+$$
+\begin{gathered}
+a^2=b^2+c^2-2 b c \cos A=(b-c)^2+2 b c(1-\cos A), \\
+p^2=2 x^2(1-\cos A)=2(t-a)^2(1-\cos A) .
+\end{gathered}
+$$
+两式消去 $1-\cos A$ 有
+$$
+\begin{aligned}
+p^2 & =(t-a)^2 \frac{a^2-(b-c)^2}{b c} \\
+& =\frac{4(t-a)(t-b)(t-c)}{a b c} a(t-a) . \label{eq1}
+\end{aligned}
+$$
+注意到
+$$
+4(t-a)(t-b)=(b+c-a)(a-b+c)=c^2-(b-a)^2 \leqslant c^2 .
+$$
+同理, $4(t-b)(t-c) \leqslant a^2, 4(t-c)(t-a) \leqslant b^2$. 则
+$$
+8(t-a)(t-b)(t-c) \leqslant a b c .
+$$
+代入式\ref{eq1}得
+$$
+p^2 \leqslant \frac{a(t-a)}{2} \text { 或 }\left(\frac{a}{p}\right)^3 \geqslant 2 \sqrt{2}\left(\frac{a}{t-a}\right)^{\frac{3}{2}} .
+$$
+同理, $\left(\frac{b}{q}\right)^3 \geqslant 2 \sqrt{2}\left(\frac{b}{t-b}\right)^{\frac{3}{2}},\left(\frac{c}{r}\right)^3 \geqslant 2 \sqrt{2}\left(\frac{c}{t-c}\right)^{\frac{3}{2}}$. 记 $M$ 为所证不等式左边.
+则
+$$
+\begin{aligned}
+M & \geqslant 2 \sqrt{2}\left[\left(\frac{a}{t-a}\right)^{\frac{3}{2}}+\left(\frac{b}{t-b}\right)^{\frac{3}{2}}+\left(\frac{c}{t-c}\right)^{\frac{3}{2}}\right] \\
+& \geqslant \frac{2 \sqrt{2}}{\sqrt{3}}\left(\frac{a}{t-a}+\frac{b}{t-b}+\frac{c}{t-c}\right)^{\frac{3}{2}} .
+\end{aligned} \label{eq2}
+$$
+又 $a \geqslant b \geqslant c \Leftrightarrow \frac{1}{t-a} \geqslant \frac{1}{t-b} \geqslant \frac{1}{t-c}$.
+由切比雪夫不等式及均值不等式得
+$$
+\frac{a}{t-a}+\frac{b}{t-b}+\frac{c}{t-c}
+$$
+$$
+\begin{aligned}
+& \geqslant \frac{1}{3}(a+b+c)\left(\frac{1}{t-a}+\frac{1}{t-b}+\frac{1}{t-c}\right) \\
+& \geqslant \frac{a+b+c}{[(t-a)(t-b)(t-c)]^{\frac{1}{3}}} \\
+& =\frac{(a+b+c) t^{\frac{1}{3}}}{[t(t-a)(t-b)(t-c)]^{\frac{1}{3}}} \\
+& =\frac{1}{2^{\frac{1}{3}}}\left(\frac{l^2}{S}\right)^{\frac{2}{3}} .
+\end{aligned} \label{eq3}
+$$
+由式\ref{eq2}、\ref{eq3}得
+$$
+M \geqslant \frac{2 \sqrt{2}}{\sqrt{3}} \cdot \frac{1}{\sqrt{2}} \cdot \frac{l^2}{S}=\frac{2}{\sqrt{3}} \cdot \frac{l^2}{S} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $a 、 b 、 c$ 分别为一个三角形的三边长.
+令
+$$
+\begin{aligned}
+& A=\sum \frac{a^2+b c}{b+c}, \\
+& B=\sum \frac{1}{\sqrt{(a+b-c)(b+c-a)}},
+\end{aligned}
+$$
+其中, " $\sum$ " 表示轮换对称和.
+求证: $A B \geqslant 9$.
+%%<SOLUTION>%%
+证明:设 $a=y+z, b=x+z, c=x+y$ ( $x 、 y 、 z$ 为正数). 则
+$$
+\begin{aligned}
+B & =\sum \frac{1}{2 \sqrt{x y}}, \\
+A & =\sum \frac{x^2+y^2+z^2+x y+z x+3 y z}{2 x+y+z}, \\
+A B & =\left(\sum \frac{1}{2 \sqrt{y z}}\right) \sum \frac{x^2+y^2+z^2+x y+3 y z+z x}{2 x+y+z} \\
+& \geqslant\left(\sum \sqrt{\frac{1}{2 \sqrt{y z}} \cdot \frac{x^2+y^2+z^2+x y+3 y z+z x}{2 x+y+z}}\right)^2 .
+\end{aligned}
+$$
+下面证明上式中每个根号内的数都大于或等于 1 . 只需证第一个根号内的数大于或等于 1 , 即
+$$
+\frac{1}{2 \sqrt{y z}} \cdot \frac{x^2+y^2+z^2+x y+z x+3 y z}{2 x+y+z} \geqslant 1
+$$
+$$
+\begin{aligned}
+\Leftrightarrow & \left(x^2+y^2+z^2+x y+3 y z+z x\right)^2 \geqslant 4 y z(2 x+y+z)^2 \\
+\Leftrightarrow & x^4+y^4+z^4+3 x^2 y^2+3 x^2 z^2+3 y^2 z^2+2 x^3 y+2 x y^3 \\
+& +2 x^3 z+2 x z^3+2 y^3 z+2 y z^3 \\
+\geqslant & 8 x y^2 z+8 x^2 y z+8 x y z^2 . \label{eq1}
+\end{aligned}
+$$
+由幂平均不等式得
+$$
+x^4+y^4+z^4 \geqslant \frac{1}{27}(x+y+z)^4 \geqslant x y z(x+y+z)=x y^2 z+x^2 y z+x y z^2 .
+$$
+由均值不等式得
+$$
+\begin{gathered}
+3 x^2 y^2+3 x^2 z^2+3 y^2 z^2 \geqslant 3\left(x y^2 z+x^2 y z+x y z^2\right), \\
+x^3 y+x y^3+x^3 z+x z^3+y^3 z+y z^3-2 x y z(x+y+z) \\
+=\left(x^3 y+y z^3-x y z^2-x^2 y z\right)+\left(y^3 z+x^3 z-x^2 y z-x y^2 z\right) \\
++\left(z^3 x+x y^3-x y^2 z-x y z^2\right) \\
+=y(x+z)(x-z)^2+z(x+y)(x-y)^2+x(y+z)(y-z)^2 \geqslant 0 .
+\end{gathered}
+$$
+相加即得式 \ref{eq1} 成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. $\triangle A B C$ 的三边长 $a, b, c$ 满足 $a+b+c=1$. 求证:
+$$
+5\left(a^2+b^2+c^2\right)+18 a b c \geqslant \frac{7}{3} .
+$$
+%%<SOLUTION>%%
+证明:因为 $a^2+b^2+c^2$
+$$
+\begin{aligned}
+& =(a+b+c)^2-2(a b+b c+c a) \\
+& =1-2(a b+b c+c a),
+\end{aligned}
+$$
+所以, 欲证的不等式等价于
+$$
+\frac{5}{9}(a b+b c+c a)-a b c \leqslant \frac{4}{27} .
+$$
+构造函数
+$$
+f(x)=(x-a)(x-b)(x-c),
+$$
+一方面,
+$$
+f(x)=x^3-(a+b+c) x^2+(a b+b c+c a) x-a b c,
+$$
+所以,
+$$
+f\left(\frac{5}{9}\right)=\left(\frac{5}{9}\right)^3-\left(\frac{5}{9}\right)^2+\frac{5}{9}(a b+b c+c a)-a b c .
+$$
+另一方面, 因为 $a, b, c$ 是三角形三边长, 所以 $0<a, b, c<\frac{1}{2}$, 且 $\frac{5}{9}- a, \frac{5}{9}-b, \frac{5}{9}-c$ 均为正数, 利用平均值不等式, 有
+$$
+\begin{aligned}
+f\left(\frac{5}{9}\right) & =\left(\frac{5}{9}-a\right)\left(\frac{5}{9}-b\right)\left(\frac{5}{9}-c\right) \\
+& \leqslant \frac{1}{27}\left[\left(\frac{5}{9}-a\right)+\left(\frac{5}{9}-b\right)+\left(\frac{5}{9}-c\right)\right]^3 \\
+& =\frac{8}{729} .
+\end{aligned}
+$$
+所以,
+$$
+\begin{aligned}
+& \frac{5}{9}(a b+b c+c a)-a b c \\
+\leqslant & \frac{8}{729}-\left(\frac{5}{9}\right)^3+\left(\frac{5}{9}\right)^2 \\
+= & \frac{4}{27} .
+\end{aligned}
+$$
+从而, 欲证不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $P$ 是锐角 $\triangle A B C$ 内的任意一点, 直线 $A P 、 B P 、 C P$ 分别交 $\triangle P B C 、 \triangle P C A 、 \triangle P A B$ 的外接圆于另一点 $A_1 、 B_1 、 C_1$ (不同于 $P$ ). 求证:
+$$
+\left(1+2 \cdot \frac{P A}{P A_1}\right)\left(1+2 \cdot \frac{P B}{P B_1}\right)\left(1+2 \cdot \frac{P C}{P C_1}\right) \geqslant 8 .
+$$
+%%<SOLUTION>%%
+证明:如图, 连结 $A_1 B 、 A_1 C 、 B_1 C 、 B_1 A 、 C_1 A$ 、 $C_1 B$, 并记 $\angle B A_1 C=\angle C A B_1=\angle B A C_1=\alpha$, $\angle C B_1 A=\angle A B C_1=\angle C B A_1=\beta, \angle A C_1 B= \angle B C A_1=\angle A C B_1=\gamma$.
+在四边形 $P B A_1 C$ 中, 由 Ptolemy 定理得
+$$
+\begin{gathered}
+P A_1 \cdot B C=P B \cdot A_1 C+P C \cdot A_1 B, \\
+P A_1=\frac{A_1 C}{B C} \cdot P B+\frac{A_1 B}{B C} \cdot P C,
+\end{gathered}
+$$
+再在 $\triangle A_1 B C$ 中, 由正弦定理得
+$$
+P A_1=\frac{\sin \beta}{\sin \alpha} \cdot P B+\frac{\sin \gamma}{\sin \alpha} \cdot P C, \label{eq1}
+$$
+同理可得
+$$
+\begin{aligned}
+& P B_1=\frac{\sin \gamma}{\sin \beta} \cdot P C+\frac{\sin \alpha}{\sin \beta} \cdot P A, \label{eq2} \\
+& P C_1=\frac{\sin \alpha}{\sin \gamma} \cdot P A+\frac{\sin \beta}{\sin \gamma} \cdot P B . \label{eq3}
+\end{aligned}
+$$
+由 式\ref{eq1}、\ref{eq2}、式\ref{eq3} 联立方程组解得
+$$
+\begin{aligned}
+& 2 \cdot P A=\frac{\sin \beta}{\sin \alpha} \cdot P B_1+\frac{\sin \gamma}{\sin \alpha} \cdot P C_1-P A_1, \\
+& 2 \cdot P B=\frac{\sin \gamma}{\sin \beta} \cdot P C_1+\frac{\sin \alpha}{\sin \beta} \cdot P A_1-P B_1, \\
+& 2 \cdot P C=\frac{\sin \alpha}{\sin \gamma} \cdot P A_1+\frac{\sin \beta}{\sin \gamma} \cdot P B_1-P C_1 .
+\end{aligned}
+$$
+于是
+$$
+\begin{aligned}
+2 \cdot P A+P A_1 & =\frac{\sin \beta}{\sin \alpha} \cdot P B_1+\frac{\sin \gamma}{\sin \alpha} \cdot P C_1 \\
+& \geqslant 2 \cdot \sqrt{\frac{\sin \beta}{\sin \alpha} \cdot P B_1 \cdot \frac{\sin \gamma}{\sin \alpha} \cdot P C_1},
+\end{aligned}
+$$
+同理
+$$
+\begin{aligned}
+& 2 \cdot P B+P B_1 \geqslant 2 \cdot \sqrt{\frac{\sin \gamma}{\sin \beta} \cdot P C_1 \cdot \frac{\sin \alpha}{\sin \beta} \cdot P A_1}, \\
+& 2 \cdot P C+P C_1 \geqslant 2 \cdot \sqrt{\frac{\sin \alpha}{\sin \gamma} \cdot P A_1 \cdot \frac{\sin \beta}{\sin \gamma} \cdot P B_1},
+\end{aligned}
+$$
+将以上三个不等式相乘, 得
+$$
+\begin{gathered}
+\left(2 \cdot P A+P A_1\right)\left(2 \cdot P B+P B_1\right)\left(2 \cdot P C+P C_1\right) \\
+\geqslant 8 \cdot P A_1 \cdot P B_1 \cdot P C_1,
+\end{gathered}
+$$
+故
+$$
+\left(1+2 \cdot \frac{P A}{P A_1}\right)\left(1+2 \cdot \frac{P B}{P B_1}\right)\left(1+2 \cdot \frac{P C}{P C_1}\right) \geqslant 8 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $P$ 为 $\triangle A B C$ 内一点, $D, E, F$ 分别为 $P$ 到 $B C, C A, A B$ 各边的垂足.
+试确定点 $P$, 使 $P D \times P E \times P F$ 最大.
+%%<SOLUTION>%%
+解:记 $\triangle A B C$ 的三个内角为 $A, B, C$, 其对边为 $a, b, c$. 记 $\triangle A B C$ 的面积为 $S$ (以下各题记号均同, 不再注明).
+设 $P D=x, P E=y, P F=z$. 连结 $A P, B P, C P$. 易知 $S_1(\triangle P B C$ 面积 $)=\frac{1}{2} a x, S_2(\triangle P C A$ 面积 $)=\frac{1}{2} b y, S_3(\triangle P A B$ 面积 $)=\frac{1}{2} c z$.
+从而有 $a x+b y+c z=2\left(S_1+S_2+S_3\right)=2 S=$ 定值.
+由平均值不等式, 得
+$$
+\begin{gathered}
+a x \cdot b y \cdot c z \leqslant\left(\frac{a x+b y+c z}{3}\right)^3=\left(\frac{2 S}{3}\right)^3, \\
+x y z \leqslant \frac{8 S^3}{27 a b c} .
+\end{gathered}
+$$
+即上式等号当且仅当 $a x=b y=c z$ 时成立.
+这就是说, $S_1=S_2=S_3=\frac{1}{3} S$ 使得 $x y z$ 取最大.
+这时 $P$ 为 $\triangle A B C$ 的重心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $a, b, c$ 为三角形的三条边的长度, $\delta$ 为面积.
+求证:
+$$
+\delta \leqslant \frac{\sqrt{3}}{4}\left(\frac{a+b+c}{3}\right)^2
+$$
+当且仅当 $a=b=c$ 时等号成立.
+%%<SOLUTION>%%
+证明:由海伦公式, 原不等式等价干
+$$
+\sqrt{p(p-a)(p-b)(p-c)} \leqslant \frac{\sqrt{3}}{4}\left(\frac{2 p}{3}\right)^2=\sqrt{3}\left(\frac{p}{3}\right)^2,
+$$
+等价于
+$$
+(p-a)(p-b)(p-c) \leqslant \frac{p^3}{27} \text {. }
+$$
+由平均值不等式, 得
+$$
+(p-a)(p-b)(p-c) \leqslant\left(\frac{3 p-a-b-c}{3}\right)^3=\frac{p^3}{27} .
+$$
+此式当且仅当 $p-a=p-b=p-c$, 即 $a=b=c$ 时等号成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $T_a, T_b, T_c$ 为 $\triangle A B C$ 的角平分线的延长线与外接圆相交所得的线段长.
+求证:
+$$
+a b c \leqslant \frac{3 \sqrt{3}}{8} T_a T_b T_c
+$$
+%%<SOLUTION>%%
+证明:设 $|A E|=T_a, D$ 为 $A E$ 与 $B C$ 的交点, 则
+$$
+B E^2=c^2+T_a^2-2 c T_a \cos \frac{A}{2}, C E^2=b^2+T_a^2-2 b T_a \cos \frac{A}{2} .
+$$
+因为 $B E=C E$, 所以
+$$
+T_a=\frac{b+c}{2 \cos \frac{A}{2}} .
+$$
+再由平均值不等式, 得 $T_a \geqslant \frac{\sqrt{b c}}{\cos \frac{A}{2}}$.
+同理可得 $T_b \geqslant \frac{\sqrt{a c}}{\cos \frac{B}{2}}, T_c \geqslant \frac{\sqrt{a b}}{\cos \frac{C}{2}}$. 于是
+$$
+T_a T_b T_c \geqslant \frac{a b c}{\cos \frac{A}{2} \cos \frac{B}{2} \cos \frac{C}{2}} .
+$$
+再由
+$$
+\cos \frac{A}{2} \cos \frac{B}{2} \cos \frac{C}{2} \leqslant \frac{3 \sqrt{3}}{8}
+$$
+得到命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设 $P$ 为 $\triangle A B C$ 内部或边界上一点, 点 $P$ 到三边的距离分别为 $P D 、 P E 、 P F$. 求证:
+$$
+P A+P B+P C \geqslant 2(P D+P E+P F) .
+$$
+%%<SOLUTION>%%
+证明:设 $P A=x, P B=y, P C=z, P D=p, P E=q, P F=r$, 其中 $D 、 E 、 F$ 为点 $P$ 在三边上的射影.
+则 $C 、 D 、 P 、 E$ 四点共圆, 得
+$$
+\begin{aligned}
+D E & =\sqrt{p^2+q^2+2 p q \cos C} \\
+& =\sqrt{(p \sin B+q \sin A)^2+(p \cos B-q \cos A)^2} \\
+& \geqslant p \sin B+q \sin A,
+\end{aligned}
+$$
+从而 $z=\frac{D E}{\sin C} \geqslant \frac{p \sin B+q \sin A}{\sin C}$.
+同理可得
+$$
+x \geqslant \frac{r \sin B+q \sin C}{\sin A}, y \geqslant \frac{r \sin A+p \sin C}{\sin B} .
+$$
+于是
+$$
+\begin{aligned}
+x+y+z & \geqslant \frac{r \sin B+q \sin C}{\sin A}+\frac{r \sin A+p \sin C}{\sin B}+\frac{p \sin B+q \sin A}{\sin C} \\
+& \geqslant 2(p+q+r),
+\end{aligned}
+$$
+等号成立当且仅当 $\triangle A B C$ 为正三角形, 且 $P$ 为 $\triangle A B C$ 的中心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设 $A B C D E F$ 是凸六边形, 且 $A B / / E D, B C / / F E, C D / / A F$. 又设 $R_A 、 R_C 、 R_E$ 分别表示 $\triangle F A B 、 \triangle B C D 、 \triangle D E F$ 的外接圆半径, $p$ 表示六边形的周长, 证明:
+$$
+R_A+R_B+R_C \geqslant \frac{p}{2}
+$$
+%%<SOLUTION>%%
+证明:过点 $A$ 作 $B C$ 的垂线,记该垂线夹在平行线 $E F 、 B C$ 之间线段的长度为 $h$, 设 $A B 、 B C 、 C D 、 D E 、 E F 、 F A$ 的长度分别为 $a 、 b 、 c 、 d 、 e 、 f$. 则
+$$
+B F \geqslant h=a \sin B+f \sin F .
+$$
+由于
+$A B / / D E, B C / / E F, A F / / C D$,
+所以
+$$
+\begin{gathered}
+\angle A=\angle D, \angle B=\angle E, \angle C=\angle F . \\
+2 R_A=\frac{B F}{\sin A} \geqslant a \frac{\sin B}{\sin A}+f \frac{\sin F}{\sin A} .
+\end{gathered}
+$$
+同理可得
+$$
+\begin{aligned}
+& 2 R_C=\frac{B D}{\sin C} \geqslant b \frac{\sin B}{\sin C}+c \frac{\sin D}{\sin C}, \\
+& 2 R_E=\frac{D F}{\sin E} \geqslant d \frac{\sin D}{\sin E}+e \frac{\sin F}{\sin E},
+\end{aligned}
+$$
+所以
+$$
+\begin{aligned}
+& 2\left(R_A+R_C+R_E\right) \\
+\geqslant & a \frac{\sin B}{\sin A}+b \frac{\sin B}{\sin C}+c \frac{\sin D}{\sin C}+d \frac{\sin D}{\sin E}+e \frac{\sin F}{\sin E}+f \frac{\sin F}{\sin A} .
+\end{aligned}
+$$
+分两种情况讨论:
+(1)当 $a=d$ 时,由题设
+$$
+A B / / D E, B C / / E F, C D / / F A,
+$$
+则
+$$
+\begin{aligned}
+& 2\left(R_A+R_C+R_E\right) \\
+\geqslant & a\left(\frac{\sin B}{\sin A}+\frac{\sin D}{\sin E}\right)+b\left(\frac{\sin B}{\sin C}+\frac{\sin F}{\sin E}\right)+c\left(\frac{\sin D}{\sin C}+\frac{\sin F}{\sin A}\right) \\
+\geqslant & 2(a+b+c),
+\end{aligned}
+$$
+所以
+$$
+R_A+R_C+R_E \geqslant a+b+c=\frac{p}{2} .
+$$
+(2)当 $a \neq d$ 时,不妨设 $a>d$. 作
+$$
+F A_1 \Perp A B, F E_1 \Perp D E,
+$$
+连 $D E_1$, 连 $B A_1$ 延长交 $D E_1$ 于点 $C_1$, 则
+$$
+\angle E_1 A_1 C_1=\pi-A, \angle A_1 C_1 E_1=\pi-C, \angle C_1 E_1 A_1=\pi-E=\pi-B
+$$
+且
+$$
+\begin{aligned}
+& \frac{\sin A}{\sin B}=\frac{C_1 E_1}{A_1 C_1}, \frac{\sin B}{\sin C}=\frac{A_1 C_1}{A_1 E_1}, \frac{\sin C}{\sin A}=\frac{A_1 E_1}{C_1 E_1} . \\
+& a=d+A_1 E_1, e=b+E_1 C_1, c=f+C_1 A_1 .
+\end{aligned}
+$$
+利用平均值不等式, 得
+$$
+\begin{aligned}
+& 2\left(R_A+R_B+R_C\right) \\
+\geqslant & 2(b+d+f)+\frac{A_1 E_1 \cdot A_1 C_1}{E_1 C_1}+\frac{E_1 C_1 \cdot A_1 E_1}{A_1 C_1}+\frac{A_1 C_1 \cdot E_1 C_1}{A_1 E_1} .
+\end{aligned}
+$$
+再由排序不等式, 得
+$$
+\frac{A_1 E_1 \cdot A_1 C_1}{E_1 C_1}+\frac{E_1 C_1 \cdot A_1 E_1}{A_1 C_1}+\frac{A_1 C_1 \cdot E_1 C_1}{A_1 E_1} \geqslant A_1 E_1+C_1 A_1+E_1 C_1 .
+$$
+从而
+$$
+2\left(R_A+R_B+R_C\right) \geqslant 2(b+d+f)+A_1 E_1+C_1 A_1+E_1 C_1=p .
+$$
+综合 (1)、(2) 知命题成立.
+%%PROBLEM_END%%
+
+

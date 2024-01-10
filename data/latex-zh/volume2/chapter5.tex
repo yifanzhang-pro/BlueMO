@@ -1,0 +1,422 @@
+
+%%TEXT_BEGIN%%
+构造函数解题我们在处理某些方程、不等式、最值问题及一些组合问题时, 常常构造一个函数,然后利用函数的图象和性质来解决问题.
+5.1 构造函数证明不等式
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1 设 $a 、 b 、 c$ 是绝对值小于 1 的实数, 证明:
+$$
+a b+b c+c a+1>0 .
+$$
+%%<SOLUTION>%%
+证构造一次函数:
+$$
+f(x)=(b+c) x+b c+1,-1<x<1 .
+$$
+它的图象是一条线段, 但不包括两个端点 $(-1, f(-1)),(1, f(1))$, 若能证明其两个端点的函数值 $f(-1)$ 和 $f(1)$ 均大于 0 , 则对定义域内的每一点 $x, f(x)$ 恒大于 0 .
+因为
+$$
+\begin{gathered}
+f(-1)=-(b+c)+b c+1=(b-1)(c-1)>0, \\
+f(1)=(b+c)+b c+1=(b+1)(c+1)>0,
+\end{gathered}
+$$
+所以当 $-1<x<1$ 时, $f(x)$ 恒大于 0 ,
+即 $f(a)=a(b+c)+b c+1=a b+b c+c a+1>0$.
+说明利用一次函数的单调性来证明不等式是一种常用的方法.
+如何 “构造”好这个一次函数是解题的关键.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2 证明柯西不等式: 设 $a_1, a_2, \cdots, a_n, b_1, b_2, \cdots, b_n$ 是实数, 则 $\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right) \geqslant\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2$.
+%%<SOLUTION>%%
+证若 $a_1^2+a_2^2+\cdots+a_n^2=0$, 则 $a_1=a_2=\cdots=a_n=0$, 此时命题显然成立.
+若 $a_1^2+a_2^2+\cdots+a_n^2 \neq 0$, 构造一个二次函数
+$$
+\begin{aligned}
+f(x) & =\left(a_1^2+a_2^2+\cdots+a_n^2\right) x^2-2\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right) x+\left(b_1^2+b_2^2+\cdots+b_n^2\right) \\
+& =\left(a_1 x-b_1\right)^2+\left(a_2 x-b_2\right)^2+\cdots+\left(a_n x-b_n\right)^2 .
+\end{aligned} .
+$$
+这是一条开口向上的抛物线, 而且 $f(x) \geqslant 0$ 恒成立, 所以
+$$
+\begin{aligned}
+\Delta= & 4\left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2- \\
+& 4\left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right) \leqslant 0, \\
+& \left(a_1^2+a_2^2+\cdots+a_n^2\right)\left(b_1^2+b_2^2+\cdots+b_n^2\right) \\
+\geqslant & \left(a_1 b_1+a_2 b_2+\cdots+a_n b_n\right)^2 .
+\end{aligned}
+$$
+即其中等号当且仅当 $a_i=k b_i, i=1,2, \cdots, n, k$ 是某个常数时成立.
+说明对于要证明
+$$
+A C \leqslant(\text { 或 } \geqslant) B^2,
+$$
+这类不等式,我们先把不等式变形为
+$$
+4 A C \leqslant(\text { 或 } \geqslant)(2 B)^2,
+$$
+然后构造一个二次函数
+$$
+f(x)=A x^2-(2 B) x+C,
+$$
+再设法证明其判别式 $\geqslant 0$ (或 $\leqslant 0$ ).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3 设 $x_1, x_2, \cdots, x_n, y_1, y_2, \cdots, y_n(n \geqslant 2)$ 都是实数, 且满足
+$$
+x_1^2+x_2^2+\cdots+x_n^2 \leqslant 1 \text {. }
+$$
+求证: $\quad\left(x_1 y_1+x_2 y_2+\cdots+x_n y_n-1\right)^2 \geqslant\left(x_1^2+x_2^2+\cdots+x_n^2-1\right)\left(y_1^2+y_2^2+\cdots+y_n^2-1\right) .$
+%%<SOLUTION>%%
+证当 $x_1^2+x_2^2+\cdots+x_n^2=1$ 时, 原不等式显然成立.
+当 $x_1^2+x_2^2+\cdots+x_n^2<1$ 时, 构造如下关于 $t$ 的二次函数
+$$
+\begin{aligned}
+f(t)= & \left(x_1^2+x_2^2+\cdots+x_n^2-1\right) t^2-2\left(x_1 y_1+x_2 y_2+\cdots+x_n y_n-1\right) t \\
+& +\left(y_1^2+y_2^2+\cdots+y_n^2-1\right) \\
+= & \left(x_1 t-y_1\right)^2+\left(x_2 t-y_2\right)^2+\cdots+\left(x_n t-y_n\right)^2-(t-1)^2 .
+\end{aligned}
+$$
+此二次函数的图象是一条开口向下的抛物线, 因为
+$$
+f(1)=\left(x_1-y_1\right)^2+\left(x_2-y_2\right)^2+\cdots+\left(x_n-y_n\right)^2 \geqslant 0,
+$$
+所以此抛物线一定与 $x$ 轴有交点, 从而
+$$
+\Delta=4\left(x_1 y_1+x_2 y_2+\cdots+x_n y_n-1\right)^2-
+$$
+$$
+\begin{aligned}
+& 4\left(x_1^2+x_2^2+\cdots+x_n^2-1\right)\left(y_1^2+y_2^2+\cdots+y_n^2-1\right) \geqslant 0, \\
+& \left(x_1 y_1+x_2 y_2+\cdots+x_n y_n-1\right)^2 \\
+\geqslant & \left(x_1^2+x_2^2+\cdots+x_n^2-1\right)\left(y_1^2+y_2^2+\cdots+y_n^2-1\right) .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4 设 $x, y \in \mathbf{R}^{+}, x+y=c, c$ 为定值且 $0<c \leqslant 2$, 求 $\left(x+\frac{1}{x}\right)\left(y+\frac{1}{y}\right)$ 的最小值.
+%%<SOLUTION>%%
+解:令 $u=\left(x+\frac{1}{x}\right)\left(y+\frac{1}{y}\right)$, 则
+$$
+\begin{gathered}
+u=x y+\frac{1}{x y}+\frac{x}{y}+\frac{y}{x} \geqslant x y+\frac{1}{x y}+2 . \\
+0<x y \leqslant \frac{(x+y)^2}{4}=\frac{c^2}{4}
+\end{gathered}
+$$
+因为构造辅助函数 $f(t)=t+\frac{1}{t}, 0<t \leqslant \frac{c^2}{4}$.
+由于 $0<c \leqslant 2$, 所以 $\frac{c^2}{4} \leqslant 1$. 于是函数 $f(t)$ 在 $0<t \leqslant \frac{c^2}{4}$ 上是递减的, 从而 $f(t)$ 的最小值为
+$$
+\begin{aligned}
+& f\left(\frac{c^2}{4}\right)=\frac{c^2}{4}+\frac{4}{c^2} . \\
+& u \geqslant \frac{c^2}{4}+\frac{4}{c^2}+2 .
+\end{aligned}
+$$
+所以
+$$
+u \geqslant \frac{c^2}{4}+\frac{4}{c^2}+2
+$$
+当 $x=y=\frac{c}{2}$ 时, 上面等于成立.
+所以 $\left(x+\frac{1}{x}\right)\left(y+\frac{1}{y}\right)$ 的最小值为 $\frac{c^2}{4}+\frac{4}{c^2}+2$.
+说明利用函数的单调性来证明不等式或求函数最值, 也是非常有用的方法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5 $\triangle A B C$ 的三边长 $a, b, c$ 满足 $a+b+c=1$, 求证:
+$$
+5\left(a^2+b^2+c^2\right)+18 a b c \geqslant \frac{7}{3} .
+$$
+%%<SOLUTION>%%
+证因为
+$$
+\begin{aligned}
+a^2+b^2+c^2 & =(a+b+c)^2-2(a b+b c+c a) \\
+& =1-2(a b+b c+c a),
+\end{aligned}
+$$
+所以原不等式等价于
+$$
+5-10(a b+b c+c a)+18 a b c \geqslant \frac{7}{3},
+$$
+即
+$$
+\frac{5}{9}(a b+b c+c a)-a b c \leqslant \frac{4}{27} .
+$$
+构造辅助函数
+$$
+\begin{aligned}
+f(x) & =(x-a)(x-b)(x-c) \\
+& =x^3-x^2+(a b+b c+c a) x-a b c .
+\end{aligned}
+$$
+一方面
+$$
+f\left(\frac{5}{9}\right)=\left(\frac{5}{9}\right)^3-\left(\frac{5}{9}\right)^2+\frac{5}{9}(a b+b c+c a)-a b c .
+$$
+另一方面, 由于 $a 、 b 、 c$ 是三角形的三边长, 所以, $0<a 、 b 、 c<\frac{1}{2}$, 从而 $\frac{5}{9}-a, \frac{5}{9}-b, \frac{5}{9}-c$ 均大于 0 , 故
+$$
+\begin{aligned}
+f\left(\frac{5}{9}\right) & =\left(\frac{5}{9}-a\right)\left(\frac{5}{9}-b\right)\left(\frac{5}{9}-c\right) \\
+& \leqslant \frac{1}{27}\left[\left(\frac{5}{9}-a\right)+\left(\frac{5}{9}-b\right)+\left(\frac{5}{9}-c\right)\right]^3 \\
+& =\frac{8}{729} .
+\end{aligned}
+$$
+所以 $\frac{8}{729} \geqslant\left(\frac{5}{9}\right)^3-\left(\frac{5}{9}\right)^2+\frac{5}{9}(a b+b c+c a)-a b c$, 即
+$$
+\frac{5}{9}(a b+b c+c a)-a b c \leqslant \frac{4}{27} .
+$$
+此即 $\circledast$ 式, 从而命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6 已知方程
+$$
+(a x+1)^2=a^2\left(1-x^2\right),
+$$
+其中, $a>1$. 证明: 方程的正根比 1 小, 负根比 -1 大.
+%%<SOLUTION>%%
+证原方程整理后, 得 $2 a^2 x^2+2 a x+1-a^2=0$.
+令 $\quad f(x)=2 a^2 x^2+2 a x+1-a^2$,
+则 $f(x)$ 是开口向上的抛物线, 且 $f(0)=1-a^2<0$. 故此二次函数 $f(x)=0$ 有一个正根, 一个负根.
+要证明正根比 1 小, 只需证 $f(1)>0$. 要证明负根比 -1 大, 只需证 $f(-1)>0$. 因为
+$$
+\begin{gathered}
+f(1)=2 a^2+2 a+1-a^2=(a+1)^2>0, \\
+f(-1)=2 a^2-2 a+1-a^2=(a-1)^2>0,
+\end{gathered}
+$$
+从而命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7 求 $y=(3 x-1)\left(\sqrt{9 x^2-6 x+5}+1\right)+(2 x-3) (\sqrt{4 x^2-12 x+13}+ 1)$ 的图象与 $x$ 轴的交点的坐标.
+%%<SOLUTION>%%
+分析:仔细观察所给式子的特点,发现
+$$
+\begin{aligned}
+y= & (3 x-1)\left(\sqrt{(3 x-1)^2+4}+1\right)+ \\
+& (2 x-3)\left(\sqrt{(2 x-3)^2+4}+1\right),
+\end{aligned}
+$$
+从而可以找到解题的途径.
+解因为
+$$
+\begin{aligned}
+y= & (3 x-1)\left(\sqrt{(3 x-1)^2+4}+1\right)+ \\
+& (2 x-3)\left(\sqrt{(2 x-3)^2+4}+1\right) .
+\end{aligned}
+$$
+构造函数
+$$
+f(t)=t\left(\sqrt{t^2+4}+1\right) .
+$$
+因为 $f(-t)=-t\left(\sqrt{t^2+4}+1\right)=-f(t)$, 所以 $f(t)$ 是奇函数.
+又因为当 $t \geqslant 0$ 时, $f(t)$ 是递增的, 所以, 当 $t \in \mathbf{R}$ 时, $f(t)$ 也是递增的(易证), 而
+$$
+y=f(3 x-1)+f(2 x-3) .
+$$
+当 $y=0$ 时, 得
+$$
+f(3 x-1)=-f(2 x-3)=f(3-2 x),
+$$
+所以
+$$
+3 x-1=3-2 x .
+$$
+解方程, 得 $x=\frac{4}{5}$.
+故图象与 $x$ 轴的交点坐标为 $\left(\frac{4}{5}, 0\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8 设 $f(x)$ 是一个 98 次的多项式,使得
+$$
+f(k)=\frac{1}{k}, k=1,2, \cdots, 99
+$$
+求 $f(100)$ 的值.
+%%<SOLUTION>%%
+解:构造一个函数
+$$
+g(x)=x f(x)-1,
+$$
+则
+$$
+g(1)=g(2)=\cdots=g(99)=0,
+$$
+并且 $g(x)$ 是 99 次多项式, 所以
+$$
+g(x)=a(x-1)(x-2) \cdots(x-99) .
+$$
+其中 $g(x)$ 的首项系数 $a$ 是一个待定常数.
+由于
+$$
+f(x)=\frac{g(x)+1}{x}=\frac{a(x-1)(x-2) \cdots(x-99)+1}{x}
+$$
+是一个 98 次多项式, 故 $a(x-1)(x-2) \cdots(x-99)+1$ 的常数项必须为 0 , 即
+$$
+-99 ! a+1=0
+$$
+所以
+$$
+a=\frac{1}{99 !}
+$$
+因此 $f(x)=\frac{\frac{1}{99 !}(x-1)(x-2) \cdots(x-99)+1}{x}$, 所以
+$$
+f(100)=\frac{1+1}{100}=\frac{1}{50} .
+$$
+说明对于二次三项式 $f(x)=a x^2+b x+c$, 若 $f(x)=0$ 有两个根 $x_1$ 、 $x_2$, 则 $f(x)=a\left(x-x_1\right)\left(x-x_2\right)$. 一般地, 一个 $n(\geqslant 2)$ 次多项式 $f(x)= a_n x^n+a_{n-1} x^{n-1}+\cdots+a_1 x+a_0$, 若它的 $n$ 个根为 $x_1, x_2, \cdots, x_n$, 则 $f(x)= a_n\left(x-x_1\right)\left(x-x_2\right) \cdots\left(x-x_n\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9 整数 $a 、 b 、 c$ 使得 $\frac{a}{b}+\frac{b}{c}+\frac{c}{a}$ 和 $\frac{a}{c}+\frac{c}{b}+\frac{b}{a}$ 仍为整数, 求证: $|a|=|b|=|c|$.
+%%<SOLUTION>%%
+证先证一个引理.
+引理设 $p(x)=a_n x^n+a_{n-1} x^{n-1}+\cdots+a_1 x+a_0$ 是整系数多项式, 若
+$\frac{p}{q}$ ( $p$ 和 $q$ 是互质的整数) 是它的一个有理根, 则 $p\left|a_0, q\right| a_n$.
+事实上,我们有
+$$
+\begin{aligned}
+& a_n\left(\frac{p}{q}\right)^n+a_{n-1}\left(\frac{p}{q}\right)^{n-1}+\cdots+a_1\left(\frac{p}{q}\right)+a_0=0, \\
+& \frac{a_n p^n}{q}+a_{n-1} p^{n-1}+\cdots+a_1 p q^{n-2}+a_0 q^{n-1}=0 .
+\end{aligned}
+$$
+所以 $q \mid a_n p^n$,而 $\left(q, p^n\right)=1$,所以 $q \mid a_n$.
+又因为
+$$
+a_n p^n+a_{n-1} p^{n-1} q+\cdots+a_1 p q^{n-1}+a_0 q^n=0 .
+$$
+所以 $p \mid a_0 q^n$, 而 $\left(p, q^n\right)=1$, 从而 $p \mid a_0$.
+下面我们来证明本题.
+构造一个三次函数
+$$
+\begin{aligned}
+f(x) & =\left(x-\frac{a}{b}\right)\left(x-\frac{b}{c}\right)\left(x-\frac{c}{a}\right) \\
+& =x^3-\left(\frac{a}{b}+\frac{b}{c}+\frac{c}{a}\right) x^2+\left(\frac{a}{c}+\frac{c}{b}+\frac{b}{a}\right) x-1,
+\end{aligned}
+$$
+由题设知, $f(x)$ 是一个整系数多项式, 它的三个有理根为 $\frac{a}{b}, \frac{b}{c}, \frac{c}{a}$, 而由引理, $f(x)$ 的有理根只能为 $\pm 1$ , 从而
+$$
+\left|\frac{a}{b}\right|=\left|\frac{b}{c}\right|=\left|\frac{c}{a}\right|=1,
+$$
+故
+$$
+|a|=|b|=|c| \text {. }
+$$
+说明本题当然用数论的方法也能解决, 但是我们通过构造一个三次多项式,利用引理来解显得非常巧妙.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10 正五边形的每个顶点对应一个整数, 使得这五个整数的和为正; 若其中三个相邻顶点对应的整数依次为 $x 、 y 、 z$, 而中间的 $y<0$, 则要进行如下的变换: 整数 $x 、 y 、 z$ 分别换为 $x+y 、-y 、 x+y$. 要是所得的五个整数中还有一个为负时, 这种变换就继续进行, 问: 这样的变换进行有限次后是否必定终止?
+%%<SOLUTION>%%
+解:问题的答案是肯定的.
+也就是说, 这样的变换进行有限次后必定终止.
+为了方便起见,把五个数的环列写成横列
+$$
+v, w, x, y, z .
+$$
+这里的 $v 、 z$ 在环列中是相邻的.
+并且由题设知
+$$
+v+w+x+y+z>0 .
+$$
+不妨设 $y<0$, 经变换后得到的环列是
+$$
+v, w, x+y,-y, y+z .
+$$
+构造函数
+$$
+\begin{aligned}
+f\left(x_1, x_2, x_3, x_4, x_5\right)= & x_1^2+x_2^2+x_3^2+x_4^2+x_5^2+\left(x_1+x_2\right)^2+ \\
+& \left(x_2+x_3\right)^2+\left(x_3+x_4\right)^2+ \\
+& \left(x_4+x_5\right)^2+\left(x_5+x_1\right)^2,
+\end{aligned}
+$$
+那么, 变换前后函数值的差为
+$$
+\begin{aligned}
+& f(v, w, x+y,-y, y+z)-f(v, w, x, y, z) \\
+= & {\left[v^2+w^2+(x+y)^2+(-y)^2+(y+z)^2+(v+w)^2+(w+\right.} \\
+& \left.x+y)^2+x^2+z^2+(y+z+v)^2\right]-\left[v^2+w^2+x^2+y^2+z^2+\right. \\
+& \left.(v+w)^2+(w+x)^2+(x+y)^2+(y+z)^2+(z+v)^2\right] \\
+= & 2 y(v+w+x+y+z)<0 .
+\end{aligned}
+$$
+由于当变量取整数值时 $f$ 的函数值为非负整数,所以
+$$
+f(v, w, x+y,-y, y+z) \leqslant f(v, w, x, y, z)-1,
+$$
+即每经一次变换, $f$ 的值至少减少 1. 所以经有限次变换后, 就不能再变换下去了.
+说明本题是第 27 届国际数学奥林匹克竞赛中的一道试题,是那届得分最低的一题.
+但美国选手约瑟夫 - 基内对这题的解法获得了特别奖.
+他构造的辅助函数是
+$$
+\begin{aligned}
+f\left(x_1, x_2, x_3, x_4, x_5\right)= & \sum_{i=1}^5\left|x_i\right|+\sum_{i=1}^5\left|x_i+x_{i+1}\right|+ \\
+& \sum_{i=1}^5\left|x_i+x_{i+1}+x_{i+2}\right|+ \\
+& \sum_{i=1}^5\left|x_i+x_{i+1}+x_{i+2}+x_{i+3}\right|,
+\end{aligned}
+$$
+其中, $x_6=x_1, x_7=x_2, x_8=x_3$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11 设 $a_n$ 为下述自然数 $N$ 的个数: $N$ 的各位数字之和为 $n$ 且每位数字只能取 1,3 或 4 . 求证 $a_{2 n}$ 是完全平方数, 这里 $n=1,2, \cdots$.
+%%<SOLUTION>%%
+证记集 $A$ 为数码仅有 $1,3,4$ 的数的全体, $A_n=\{N \in A \mid N$ 的各位数码之和为 $n\}$, 则 $\left|A_n\right|=a_n$. 欲证 $a_{2 n}$ 是完全平方数.
+再记集 $B$ 为数码仅有 1,2 的数的全体, $B_n=\{N \in B \mid N$ 的各位数码之和为 $n\}$, 令 $\left|B_n\right|=b_n$, 下证 $a_{2 n}=b_n^2$.
+作映射 $f: B \rightarrow \mathbf{N}_{+}$, 对于 $N \in B, f(N)$ 是由 $N$ 按如下法则得到的一个数: 把 $N$ 的数码从左向右看, 凡见到 2 , 把它与后面的一个数相加, 用和代替, 再继续看下去, 直到不能做为止(例如 $f(1221212)=14$ 132, $f(21121221$ ) = $31341)$. 易知 $f$ 是单射.
+于是
+$$
+f\left(B_{2 n}\right)=A_{2 n} \cup A_{2 n-2}^{\prime} \text {. }
+$$
+其中, $A_{2 n-2}^{\prime}=\left\{10 k+2 \mid k \in A_{2 n-2}\right\}$. 所以
+$$
+\begin{gathered}
+b_{2 n}=a_{2 n}+a_{2 n-2} . \\
+b_{2 n}=b_n^2+b_{n-1}^2,
+\end{gathered}
+$$
+这是因为 $B_{2 n}$ 中的数或是两个 $B_n$ 中的数拼接而成, 或是两个 $B_{n-1}$ 中的数中间放 2 拼接而成.
+所以
+$$
+a_{2 n}+a_{2 n-2}=b_n^2+b_{n-1}^2 \quad(n \geqslant 2) .
+$$
+因为 $a_2=b_1^2=1$, 由上式便知, 对-一切正整数 $n, a_{2 n}=b_n^2$, 即 $a_{2 n}$ 是完全平方数.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,241 @@
+
+%%TEXT_BEGIN%%
+复数与向量的应用.
+本章中主要介绍复数与向量的一些应用, 特别是其在平面几何中的应用.
+另外还将运用复数来解决一类函数的迭代问题.
+复数的几何意义构建了代数与几何之间的相互联系, 当中的要害之处在于怎样选取恰当的坐标系, 进而建立几何元素的复数表示, 以借助复数的运算来探究平面几何问题的解决方案.
+一、设复平面上两点 $Z_1 、 Z_2$ 对应的复数分别是 $z_1 、 z_2$, 那么这两点间的距离满足
+$$
+\begin{aligned}
+\left|Z_1 Z_2\right|^2 & =\left|z_1-z_2\right|^2 \\
+& =\left(z_1-z_2\right)\left(\overline{z_1}-\overline{z_2}\right) \\
+& =\left|z_1\right|^2+\left|z_2\right|^2-\left(z_1 \overline{z_2}+\overline{z_1} z_2\right) .
+\end{aligned}
+$$
+二、设复平面上两点 $Z_1 、 Z_2$ 对应的复数分别是 $z_1 、 z_2$, 那么线段 $Z_1 Z_2$ 定比分点 $Z$ 对应的复数 $z$ 可以表示为
+$$
+z=\frac{z_1+\lambda z_2}{1+\lambda} .(\lambda \in \mathbf{R}, \lambda \neq-1)
+$$
+三、设复平面上三点 $Z_1 、 Z_2 、 Z_3$ 对应的复数分别是 $z_1 、 z_2 、 z_3$, 这三点共线的充要条件是存在不全为零的实数 $\lambda_1 、 \lambda_2 、 \lambda_3$, 使如下两式同时成立:
+$$
+\left\{\begin{array}{l}
+\lambda_1+\lambda_2+\lambda_3=0, \\
+\lambda_1 z_1+\lambda_2 z_2+\lambda_3 z_3=0 .
+\end{array}\right.
+$$
+四、设不共线的四点 $A 、 B 、 C 、 D$ 对应的复数分别是 $z_1 、 z_2 、 z_3 、 z_4$, 则 $A 、 B 、 C 、 D$ 四点共圆的充要条件是
+$$
+\frac{z_3-z_1}{z_4-z_1}: \frac{z_3-z_2}{z_4-z_2}=\lambda
+$$
+其中 $\lambda$ 是非零实数.
+五、设不共线的三点 $A 、 B 、 C$ 对应的复数分别是 $z_1 、 z_2 、 z_3$, 则 $\triangle A B C$
+的面积公式是
+$$
+S_{\triangle A B C}=\frac{\mathrm{i}}{4} \cdot\left|\begin{array}{ccc}
+1 & 1 & 1 \\
+z_1 & z_2 & z_3 \\
+\overline{z_1} & \overline{z_2} & \overline{z_3}
+\end{array}\right| .
+$$
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 求经过 $W$ 且与某条直线 $O A$ 垂直的直线方程, 这里 $W 、 A$ 对应的复数分别为 $w 、 \alpha(\alpha \neq 0), O$ 为原点.
+%%<SOLUTION>%%
+分析:与解对于平面上异于 $O$ 的点 $A$, 设其对应复数为 $\alpha$, 则以此点与原点为端点的中垂线方程为 $\frac{z}{\alpha}+\frac{\bar{z}}{\bar{\alpha}}=1$, 这只要用 $|z|=|z-\alpha|$ 即可证明.
+一般地, $\frac{z}{\alpha}+\frac{\bar{z}}{\bar{\alpha}}=k$ ( $k$ 为实数, 包括为零), 便是与 $O$ 及 $\alpha$ 连线垂直的所有直线.
+因此, 经过 $W$ 且与 $O A$ 垂直的直线方程为 $\frac{z}{\alpha}+\frac{\bar{z}}{\bar{\alpha}}=\frac{w}{\alpha}+\frac{\bar{w}}{\bar{\alpha}}$.
+%%<REMARK>%%
+注:若将 $\alpha$ 换成 $\mathrm{i} \alpha$, 则得 $\frac{z}{\alpha}-\frac{\bar{z}}{\bar{\alpha}}=k \mathrm{i}$, 因此, 经过复数为 $w$ 的且与 $\frac{z}{\alpha}+ \frac{\bar{z}}{\bar{\alpha}}=k$ 垂直的直线方程是
+$$
+\frac{z}{\alpha}-\frac{\bar{z}}{\bar{\alpha}}=\frac{w}{\alpha}-\frac{\bar{w}}{\bar{\alpha}} .
+$$
+复数的这个基本性质十分重要,具有广泛的用途.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 已知 $\triangle Z_1 Z_2 Z_3$ 三顶点对应复数为 $z_1 、 z_2 、 z_3$, 求其面积, 并以此求出过两复数 $z_1$ 与 $z_2$ 的直线方程.
+%%<SOLUTION>%%
+分析:与解 $\triangle Z_1 Z_2 Z_3$ 的面积 $S_{\triangle Z_1 z_2 z_3}$
+$$
+\begin{aligned}
+& =\frac{1}{2} \cdot Z_1 Z_2 \cdot Z_1 Z_3 \cdot \sin \angle Z_2 Z_1 Z_3 \\
+& =\frac{1}{2} \cdot\left|z_2-z_1\right| \cdot\left|z_3-z_1\right| \cdot \operatorname{Im} \frac{z_3-z_1}{z_2-z_1} \cdot\left|\frac{z_2-z_1}{z_3-z_1}\right| \\
+& =\frac{1}{2} \cdot \operatorname{Im}\left(\bar{z}_1 z_2+\bar{z}_2 z_3+\bar{z}_3 z_1\right),\label{eq1} \\
+& =\frac{\mathrm{i}}{4}\left|\begin{array}{ccc}
+1 & 1 & 1 \\
+z_1 & z_2 & z_3 \\
+\frac{z_1}{z_2} & \overline{z_3}
+\end{array}\right| . \label{eq2}
+\end{aligned}
+$$
+\ref{eq1}式和\ref{eq2}式中给出的面积表达式可能是负的, 这是因为它们表示的是有向面积, 满足 $S_{\triangle z_1 z_2 z_3}=-S_{\triangle z_2 z_1 z_3}$. 如果是通常意义下的面积, 就取模, 为
+$\frac{1}{2}\left|\operatorname{Im}\left(\overline{z_1} z_2+\overline{z_2} z_3+\overline{z_3} z_1\right)\right|=\frac{1}{4}|| \begin{array}{ccc}1 & 1 & 1 \\ z_1 & z_2 & z_3 \\ \overline{z_1} & \overline{z_2} & \overline{z_3}\end{array}||$. 而复平面上三点 $Z_1$ 、 $Z_2 、 Z_3$ 共线的充要条件是
+$$
+\left|\begin{array}{ccc}
+1 & 1 & 1 \\
+z_1 & z_2 & z_3 \\
+\overline{z_1} & \overline{z_2} & \overline{z_3}
+\end{array}\right|=0
+$$
+即 $z_1 \overline{z_2}+z_2 \overline{z_3}+z_3 \overline{z_1}=\overline{z_1} z_2+\overline{z_2} z_3+\overline{z_3} z_1$, 于是直线 $Z_1 Z_2$ 的方程为:
+$$
+\left(\overline{z_1}-\overline{z_2}\right) z-\left(z_1-z_2\right) \bar{z}+z_1 \overline{z_2}-\overline{z_1} z_2=0 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 试根据复数的几何意义推导出用复数表示点到直线距离的公式.
+%%<SOLUTION>%%
+分析:与解设 $Z_1 、 Z_2$ 为直线 $l$ 上的两点, $Z_3$ 为直线 $l$ 外一点, 则 $\overrightarrow{Z_1 Z_2}$ 方向上的单位向量为 $\frac{z_2-z_1}{\left|z_2-z_1\right|}$, 而 $\overrightarrow{Z_1 Z_3}$ 方向上的单位向量为 $\frac{z_3-z_1}{\left|z_3-z_1\right|}$. 根据复数除法的几何意义, 由 $\overrightarrow{Z_1 Z_2}$ 旋转到 $\bar{Z}_1 \vec{Z}_3$ 所转过的角 $\varphi$ 由下式确定:
+$$
+\begin{aligned}
+\sin \varphi & ==\operatorname{Im}\left(\frac{\left|z_2-z_1\right|}{\left|z_3-z_1\right|} \cdot \frac{\left(z_3-z_1\right)\left(\overline{z_2}-\overline{z_1}\right)}{\left(z_2-z_1\right)\left(\overline{z_2}-\overline{z_1}\right)}\right) \\
+& =\frac{1}{\left|z_3-z_1\right| \cdot\left|\overline{z_2}-z_1\right|} \operatorname{Im}\left(-\overline{z_1} \overline{z_2}+\overline{z_2} z_3-z_3 \overline{z_1}+z_1 \overline{z_1}\right) .
+\end{aligned}
+$$
+因为 $\left|z_1^2\right| \in \mathbf{R},--\operatorname{Im} z_1 \overline{z_2}=\operatorname{Im} \overline{z_1} z_2,-\operatorname{Im} z_3 \overline{z_1}=\operatorname{Im} \overline{z_3} z_1$, 由上式知 $Z_3$ 到直线 $Z_1 Z_2$ 的距离为 $d=\frac{1}{\left|z_2-z_1\right|} \cdot \operatorname{Im}\left(\overline{z_1} z_2+\overline{z_2} z_3+\overline{z_3} z_1\right)$. 约定距离 $d$ 非负,所以上式取绝对值.
+%%<REMARK>%%
+注:由此可知复数 $z_1 、 z_2 、 z_3$ 为顶点的三角形面积为
+$$
+S_{\triangle z_1 z_2 z_3}=\frac{1}{2} \cdot\left|\operatorname{Im}\left(\overline{z_1} z_2+\overline{z_2} z_3+\overline{z_3} z_1\right)\right|,
+$$
+当 $z_1 、 z_2 、 z_3$ 逆时针排列时,绝对值去掉; 当顺时针排列时,去掉绝对值后添负号.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 求证: $A 、 B 、 C 、 D$ 共圆的充要条件是: $\frac{\left(z_1-z_3\right)\left(z_2-z_4\right)}{\left(z_1-z_4\right)\left(z_2-z_3\right)}$ 为实数,其中 $z_1 、 z_2 、 z_3 、 z_4$ 分别为 $A 、 B 、 C 、 D$ 所对应的复数.
+%%<SOLUTION>%%
+分析:与解易知无论 $A 、 B 、 C 、 D$ 如何在圆上分布, 总有 $\arg \left[\frac{\left(z_1-z_3\right)}{\left(z_1-z_4\right)} \frac{\left(z_2-z_4\right)}{\left(z_2-z_3\right)}\right]=\arg \left(\frac{z_3-z_1}{z_4-z_1}\right)-\arg \left(\frac{z_3-z_2}{z_4-z_2}\right)=0$ 或 $\pi$. 因此这与 $\frac{\left(z_1-z_3\right)\left(z_2-z_4\right)}{\left(z_1-z_4\right)\left(z_2-z_3\right)}$ 为实数等价, 亦与 $A 、 B 、 C 、 D$ 共圆等价, 证毕.
+%%<REMARK>%%
+注:根据圆排列的公式, 四个点排列的方式共有 6 种, 如果有兴趣的话, 读者可一一加以验证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $\triangle Z_1 Z_2 Z_3$ 与 $\triangle Z_1^{\prime} Z_2^{\prime} Z_3^{\prime}$ 顺相似, 求其顶点对应复数 (如 $Z_1$ 对应 $z_1$ 等)满足的充要条件,并由此推出中垂线的方程.
+%%<SOLUTION>%%
+分析:与解由于 $z_1=z_2 \Rightarrow\left|z_1\right|=\left|z_2\right|$ 且 $\arg z_1=\arg z_2$,于是 $\triangle Z_1 Z_2 Z_3$ 与 $\triangle Z^{\prime}{ }_1 Z^{\prime}{ }_2 Z^{\prime}{ }_3$ 顺相似的充要条件即为 $\frac{z_3-z_1}{z_2-z_1}=\frac{z_3^{\prime}-z_1^{\prime}}{z_2^{\prime}-z_1^{\prime}}$, 这等价于 $\left|\begin{array}{ccc}1 & 1 & 1 \\ z_1 & z_2 & z_3 \\ z_1^{\prime} & z_2^{\prime} & z_3^{\prime}\end{array}\right|=0$
+由此推知 $\triangle Z_1 Z_2 Z_3$ 与 $\triangle Z_1^{\prime} \triangle Z_2^{\prime} \triangle Z_3^{\prime}$ 逆相似的充要条件为 $\left|\begin{array}{ccc}1 & 1 & 1 \\ z_1 & z_2 & z_3 \\ \bar{z}_1^{\prime} & \bar{z}_2^{\prime} & \bar{z}_3^{\prime}\end{array}\right|=0$, 而 $Z_1 、 Z_2$ 的中垂线方程为 $\triangle Z Z_1 Z_2$ 逆相似于 $\triangle Z Z_2 Z_1$ 所满足的方程, 即
+$$
+\left|\begin{array}{ccc}
+1 & 1 & 1 \\
+z & z_1 & z_2 \\
+\bar{z} & \overline{z_2} & \overline{z_1}
+\end{array}\right|=0
+$$
+即 $\frac{z}{z_1-z_2}+\frac{\bar{z}}{z_1-z_2}=\frac{\left|z_1\right|^2-\left|z_2\right|^2}{\left|z_1-z_2\right|^2}$.
+%%<REMARK>%%
+注:当 $z_2=0$ 时, 中垂线方程为 $\frac{z}{z_1}+\frac{\bar{z}}{z_1}=1$.
+顺相似的依据是复数的三角形式, 这十分有用.
+例如我们还可以证明: $\triangle Z_1 Z_2 Z_3$ 为正三角形的充要条件是 $z_1^2+z_2^2+z_3^2=z_1 z_2+z_2 z_3+z_3 z_1$ (当然 $z_1$ 、 $z_2 、 z_3$ 两两不等).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $\odot O$ 圆心在原点, $A 、 B$ 在圆上, 所对应复数分别为 $t_1 、 t_2$, 过 $A$ 与 $B$ 作切线交于 $P$, 求证: $P$ 所对应的复数为 $\frac{2 t_1 t_2}{t_1+t_2}$.
+%%<SOLUTION>%%
+分析:与解设 $P$ 对应的复数为 $t$. 由于 $P A \perp O A$, 故由例 1 知 $t$ 满足 $\frac{t}{2 t_1}+ \frac{\bar{t}}{2 \overline{t_1}}=1$, 同理 $\frac{t}{2 t_2}+\frac{\bar{t}}{2 \overline{t_2}}=1$, 于是 $\frac{t}{2 t_1 \overline{t_2}}-\frac{t}{2 t_2 \overline{t_1}}=\frac{1}{\overline{t_2}}-\frac{1}{\overline{t_1}}$.
+考虑到 $t_1 \overline{t_1}=t_2 \overline{t_2}=r^2, r$ 为 $\odot O$ 半径, 故 $\left(\frac{t_2}{t_1}-\frac{t_1}{t_2}\right) t=2\left(t_2-t_1\right)$, 解得 $t=\frac{2 t_1 t_2}{t_1+t_2}$
+%%<REMARK>%%
+注:过圆上两点 $t_1 、 t_2$ (此圆圆心为原点, 半径为 $r$ ) 的直线方程为 $z+\frac{t_1 t_2}{r^2} \bar{z}=t_1+t_2$. 让 $t_1 、 t_2 \rightarrow t$, 则过 $t$ 的切线方程为 $z+\frac{t^2}{r^2} \bar{z}=2 t$. 这也是一种便于记忆的形式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 凸四边形 $A B C D$ 的对角线交于点 $M$, 点 $P 、 Q$ 分别是 $\triangle A M D$ 和 $\triangle C M B$ 的重心, $R 、 S$ 分别是 $\triangle D M C$ 和 $\triangle M A B$ 的垂心.
+求证: $P Q \perp R S$.
+%%<SOLUTION>%%
+分析:与解以任意点 $O$ 为原点, 利用向量证明.
+$$
+\begin{aligned}
+\overrightarrow{S R} \cdot \overrightarrow{P Q}= & (\overrightarrow{S M}+\overrightarrow{M R}) \cdot(\vec{Q}-\vec{P}) \\
+= & (\overrightarrow{S M}+\overrightarrow{M R}) \cdot \frac{1}{3} \cdot(\vec{B}+\vec{M}+\vec{C}-\vec{A}-\vec{D}-\vec{M}) \\
+= & \frac{1}{3}(\overrightarrow{S M}+\overrightarrow{M R})(\overrightarrow{A B}+\overrightarrow{D C}) \\
+= & \frac{1}{3}(\overrightarrow{S M} \cdot \overrightarrow{A B}+\overrightarrow{S M} \cdot \overrightarrow{D C}+\overrightarrow{M R} \cdot \overrightarrow{A B}+\overrightarrow{M R} \cdot \overrightarrow{D C}) \\
+= & \frac{1}{3}(\overrightarrow{S M} \cdot \overrightarrow{D C}+\overrightarrow{M R} \cdot \overrightarrow{A B}) \\
+= & \frac{1}{3}\left[|S M| \cdot|D C| \cdot \cos \left(\frac{3}{2} \pi-\angle A D C-\angle D A B\right)+\right. \\
+& \left.|M R| \cdot|A B| \cdot \cos \left(\angle A D C+\angle D A B-\frac{\pi}{2}\right)\right] \\
+= & \frac{1}{3}(|A B| \cdot \cot \angle A M B \cdot|D C|-\cot \angle D M C \cdot|C D| \cdot \\
+& |A B|) \cdot \cos \left(\frac{3}{2} \pi-\angle A D C-\angle D A B\right) \\
+= & 0 .
+\end{aligned}
+$$
+所以, 命题成立, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 如图(<FilePath:./figures/fig-c9i1.png>), 设 $A A^{\prime} 、 B B^{\prime} 、 C C^{\prime}$ 是 $\triangle A B C$ 的外接圆的三条直径, $P$ 是 $\triangle A B C$ 所在平面上任意一点, 点 $P$ 在 $B C 、 C A 、 A B$ 上的射影分别为 $D$ 、 $E 、 F, X$ 是点 $A^{\prime}$ 关于点 $D$ 的对称点, $Y$ 是点 $B^{\prime}$ 关于点 $E$ 的对称点, $Z$ 是点 $C^{\prime}$ 关于点 $F$ 的对称点.
+求证: $\triangle X Y Z \backsim \triangle A B C$.
+%%<SOLUTION>%%
+分析:与解引人原点为 $O$ 的复平面, 设圆 $O$ 的半径为 1 , 仍以各点字母表示所在位置的复数,
+由 $A 、 B 、 C$ 在圆 $O$ 上知 $\bar{A}=\frac{1}{A}, \bar{B}=\frac{1}{B}, \bar{C}=\frac{1}{C}$, 于是由 $P D \perp B C$ 于 $D$ 知
+$$
+\begin{cases}\frac{P-D}{C-B}=-\frac{\bar{P}-\bar{D}}{\bar{C}-\bar{B}}, & (P D \perp B C) \\ \frac{C-D}{C-B}=\frac{\bar{C}}{\bar{C}-\bar{D}}, \quad(D \in B C) & \end{cases}
+$$
+视为关于 $D 、 \bar{D}$ 的方程, 解出 $D=\frac{P+C-B C \bar{P}+B}{2}$. 由 $A^{\prime}$ 是圆 $O$ 中 $A$ 的对径点, 知 $A^{\prime}=-A$, 故
+$$
+\begin{aligned}
+X & =2 D-A^{\prime}=2 D+A=(P+A+B+C)-B C \bar{P} \\
+& =(P+A+B+C)-(A B C \bar{P}) \bar{A} .
+\end{aligned}
+$$
+类似地有
+$$
+\begin{aligned}
+& Y=(P+A+B+C)-(A B C \bar{P}) \bar{B}, \\
+& Z=(P+A+B+C)-(A B C \bar{P}) \bar{C} .
+\end{aligned}
+$$
+但复平面上的变换 $\phi: Z \mapsto(A+B+C+P)+(-A B C \bar{P}) Z$ 可以视为由平移, 对称, 旋转, 位似变换迭加的变换, 因此 $\phi$ 是保角的, 故以 $\phi(A), \phi(B), \phi(C)$ 为顶点的三角形 (顶点按顺序) 与 $\triangle A B C$ 相似, 即 $\triangle X Y Z \backsim \triangle A B C$. 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设 $H=\left\{h(x) \mid h(x)=\frac{a x+b}{-b x+a}, a \in \mathbf{R}, b \in \mathbf{R}\right\}$, 求证: 若 $h_1(x)$ 、 $h_2(x) \in H$, 则 $h_1\left[h_2(x)\right] 、 h_2\left[h_1(x)\right] \in H$, 且 $h_1\left[h_2(x)\right]=h_2\left[h_1(x)\right]$.
+%%<SOLUTION>%%
+分析:与解设 $h_1(x)=\frac{a x+b}{-b x+a}, h_2(x)=\frac{c x+d}{-d x+c}$, 则
+$$
+\begin{aligned}
+& h_1\left[h_2(x)\right]=\frac{a \cdot \frac{c x+d}{-d x+c}+b}{-b \cdot \frac{c x+d}{-d x+c}+a}=\frac{(a c-b d) x+(a d+b c)}{-(a d+b c) x+(a c-b d)} \in H, \\
+& h_2\left[h_1(x)\right]=\frac{c \cdot \frac{a x+b}{-b x+a}+d}{-d \cdot \frac{a x+b}{-b x+a}+a}=\frac{(a c-b d) x+(a d+b c)}{-(a d+b c) x+(a c-b d)} \in H,
+\end{aligned}
+$$
+且有 $h_1\left[h_2(x)\right]=h_2\left[h_1(x)\right]$.
+以上可以推广到任意个 $H$ 型函数, 即若 $h_1(x) 、 h_2(x) 、 \cdots h_n(x) \in H$, 则 $h_1\left\{h_2 \cdots\left[h_n(x)\right]\right\} \in H$, 且 $h_1\left\{h_2 \cdots\left[h_n(x)\right]\right\}=h_1^{\prime}\left\{h_2^{\prime} \cdots h_n^{\prime}(x)\right\}$, 这里 $h_1^{\prime}(x)$ 、 $h_2^{\prime}(x) \cdots h_n^{\prime}(x)$ 是 $h_1(x) 、 h_2(x) \cdots h_n(x)$ 的任一个排列.
+%%<REMARK>%%
+注:从上面的证明过程中可受到启发:
+若 $h_1(x)=\frac{a x+b}{-b x+a}$ 对应复数 $a+b \mathrm{i}, h_2(x)=\frac{c x+d}{-d x+c}$ 对应复数 $c+d \mathrm{i}$, 则
+$$
+h_1\left[h_2(x)\right]=\frac{(a c-b d) x+(a d+b c)}{-(a d+b c) x+(a c-b d)} \text { 对应复数 }(a c-b d)+(a d+
+$$
+$b c) \mathrm{i}$,
+且 $(a c-b d)+(a d+b c) \mathrm{i}$ 恰好等于它们的乘积 $(a+b \mathrm{i})(c+d \mathrm{i})$.
+由此可得到解法如下:
+要求由任意个 $H$ 型函数迭代式所确定的函数表达式, 首先将已知函数所对应的复数写出, 然后加以相乘, 最后写出乘积复数所对应的 $H$ 型函数即为所求.
+%%PROBLEM_END%%
+
+

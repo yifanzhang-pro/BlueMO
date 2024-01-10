@@ -1,0 +1,451 @@
+
+%%TEXT_BEGIN%%
+一、递推数列对于一个数列 $\left\{x_n\right\}$, 若存在正整数 $k$ 和一个把 $x_{n+k}$ 和前面 $k$ 项 $x_{n+k-1}$, $x_{n+k-2}, \cdots, x_n$ 联系起来的方程
+$$
+\Phi\left(x_{n+k}, x_{n+k-1}, \cdots, x_n\right)=0, k=0,1,2, \cdots, \label{eq1}
+$$
+则称数列 $\left\{x_n\right\}$ 为 $k$ 阶递推数列, 且称方程(1)是数列 $\left\{x_n\right\}$ 的递推方程.
+从式\ref{eq1} 解出
+$$
+x_{n+k}=\varphi\left(x_{n+k-1}, x_{n+k-2}, \cdots, x_n\right), \label{eq2}
+$$
+又称为数列 $\left\{x_n\right\}$ 的递推公式, 数列 $\left\{x_n\right\}$ 开头 $k$ 项的值.
+$$
+x_1=a_1, x_2=a_2, \cdots, x_k=a_k\left(a_1, a_2, \cdots, a_k \text { 为已知常数 }\right) \text {, } \label{eq3}
+$$
+称为递推方程式\ref{eq1} 或递推公式\ref{eq2} 的初始条件或初始值, 显然, 一个 $k$ 阶递推数列 $\left\{x_n\right\}$ 可由递推公式\ref{eq2}和初始值式\ref{eq3}唯一确定.
+由递推公式
+$$
+\begin{aligned}
+& x_{n+k}=p_1 x_{n+k-1}+p_2 x_{n+k-2}+\cdots+p_k x_n+q, \\
+& \left(n=1,2,3, \cdots ; p_1, p_2, \cdots, p_k \text { 为常数且 } p_k \neq 0\right)
+\end{aligned}  \label{eq4}
+$$
+及初始值式\ref{eq3}确定的数列 $\left\{x_n\right\}$ 称为 $k$ 阶常系数线性递推数列, 特别 $q \equiv 0$ 时, 称为 $k$ 阶常系数线性齐次递推数列.
+二、求递推数列通项的方法
+(1)换元方法这种方法的基本思想是: 选择适当的变换函数 $\varphi(x)$, 令 $x_n=\varphi\left(y_n\right)$ 或 $\varphi\left(x_n\right)=y_n$, 代入到 $\left\{x_n\right\}$ 的递推关系中, 得到 $\left\{y_n\right\}$ 的一个新的递推关系.
+如果从这个新的递推关系中能求出 $y_n$ 的通项, 那么代入到 $x_n=\varphi\left(y_n\right)$ 或 $\varphi\left(x_n\right)=y_n$ 中, 便可求出 $x_n$ 的通项.
+因此, 换元的关键是选择变换函数 $\varphi(x)$.
+(2)特征根法考虑二阶常系数线性齐次递推数列 $\left\{x_n\right\}$ :
+$$
+x_{n+2}=p x_{n+1}+q x_n(n=0,1,2, \cdots, p, q \text { 为常数, } q \neq 0) . \label{eq5}
+$$
+若有等比数列 $\left\{r^n\right\}$ 满足 式\ref{eq5},则易知 $r$ 必须满足下列二次方程
+$$
+r^2=p r+q, \label{eq6}
+$$
+我们称方程式\ref{eq6}为\ref{eq5}的特征方程, 并称式\ref{eq6}的根为特征根, 反之若 $r_0$ 是式\ref{eq6}的一个根, 则易证等比数列 $\left\{r_0^n\right\}$ 满足递推公式(5).
+若式\ref{eq6}有两个不相等的根 $r_1$ 和 $r_2$, 则数列 $\left\{r_1^n\right\}$ 和 $\left\{r_2^n\right\}$ 都是式\ref{eq5}的解, 并且对任意常数 $c_1, c_2$, 数列 $\left\{c_1 r_1^n+c_2 r_2^n\right\}$ 也是 式\ref{eq5} 的解.
+如果给出初始值 $x_0=a$, $x_1=b$, 则由
+$$
+\left\{\begin{array}{l}
+c_1+c_2=a, \\
+c_1 r_1+c_2 r_2=b,
+\end{array}\right.
+$$
+可唯一确定 $c_1$ 和 $c_2$, 从而得出式\ref{eq5}的满足初始值 $x_0=a, x_1=b$ 的唯一解为
+$$
+x_n=c_1 r_1^n+c_2 r_2^n .
+$$
+若式\ref{eq6}有二重根 $r=\frac{p}{2}$, 则由
+$$
+\left\{\begin{array}{l}
+2 r-p=0, \\
+r^2-p r-q=0, \\
+r^2=-q .
+\end{array}\right.
+$$
+可得 $p r+2 q=0$, 从而有
+$$
+\begin{aligned}
+& n r^n-p(n-1) r^{n-1}-q(n-2) r^{n-2} \\
+= & n r^{n-2}\left(r^2-p r-q\right)+r^{n-2}(p r+2 q) \\
+= & 0 .
+\end{aligned}
+$$
+即数列 $\left\{n r^{n-1}\right\}$ 是式\ref{eq5}的解, 并且对任意常数 $c_1$ 和 $c_2 .\left\{c_1 r^n+c_2 n r^n\right\}$ 也是(5)的解.
+再由初始值 $x_0=a, x_1=b$, 可唯一确定 $c_1, c_2$, 从而得到式\ref{eq5}的满足初始值
+$x_0=a, x_1=b$ 的唯一解为 $x_n=\left(c_1+c_2 n\right) r^n$.
+(3) 数学归纳法,这个方法的基本思想是 : 从初始值出发, 利用所给的递推关系逐次算出数列前面若干项的值, 从中找出规律, 归纳出通项的表达式, 再用数学归纳法给予证明.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知 $a_1=1, a_n=\frac{2}{3} a_{n-1}+n^2-15(n \geqslant 2)$, 求 $a_n$.
+%%<SOLUTION>%%
+解:引人待定常数 $a, b, c$, 使
+$$
+a_n+\left(a n^2+b n+c\right)=\frac{2}{3}\left\{a_{n-1}+\left[a(n-1)^2+b(n-1)+c\right]\right\},
+$$
+整理后,有
+$$
+a_n=\frac{2}{3} a_{n-1}+\left(-\frac{1}{3} a\right) n^2+\left(-\frac{4}{3} a-\frac{1}{3} b\right) n+\frac{2}{3} a-\frac{2}{3} b-\frac{1}{3} c,
+$$
+与 $a_n=\frac{2}{3} a_{n-1}+n^2-15$, 比较得
+$$
+\left\{\begin{array} { l } 
+{ - \frac { 1 } { 3 } a = 1 , } \\
+{ - \frac { 4 } { 3 } a - \frac { 1 } { 3 } b = 0 , } \\
+{ \frac { 2 } { 3 } a - \frac { 2 } { 3 } b - \frac { 1 } { 3 } c = - 1 5 }
+\end{array} \Rightarrow \left\{\begin{array}{l}
+a=-3, \\
+b=12, \\
+c=15
+\end{array}\right.\right.
+$$
+故
+$$
+a_n-3 n^2+12 n+15=\frac{2}{3}\left[a_{n-1}-3(n-1)^2+12(n-1)+15\right] \text {. }
+$$
+令 $b_n=a_n-3 n^2+12 n+15$, 则 $b_n=\frac{2}{3} b_{n-1}, b_1=a_1-3+12+15=25$, 由等比数列通项公式得 $b_n=25\left(\frac{2}{3}\right)^{n-1}$, 所以
+$$
+a_n=25\left(\frac{2}{3}\right)^{n-1}+3 n^2-12 n-15 .
+$$
+一般说来,对于递推公式 $a_n=p a_{n-1}+f(n)(n \geqslant 2, p$ 为常数, $f(n)$ 是 $k$ 次多项式), 当 $p \neq 1$ 时, 可用待定系数法确定 $k$ 次多项式 $g(n)$ 使 $a_n+ g(n)=p\left(a_{n-1}+g(n-1)\right)$, 再通过代换 $b_n=a_n+g(n)$ 转化成等比数列 $b_n= p b_{n-1}$, 从而求出 $b_n=b_1 p^{n-1}=\left(a_1+g(1)\right) p^{n-1}$, 于是 $a_n=\left(a_1+g(1)\right) p^{n-1}- g(n)$. 当 $p=1$ 时, 则由 $a_n=a_{n-1}+f(n)$, 逐次递推可得 $a_n=a_1+f(2)+ f(3)+\cdots+f(n)$ 或用公式得 $a_n=a_1+\sum_{k=2}^n\left(a_k-a_{k-1}\right)=a_1+\sum_{k=2}^n f(k)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设数列 $\left\{a_n\right\}$ 满足 $a_1=1, a_{n+1} a_n=4\left(a_{n+1}-1\right), n=1,2,3, \cdots$, 求
+$a_1 a_2 \cdots a_n$.
+%%<SOLUTION>%%
+解:由 $a_{n+1} a_n=4\left(a_{n+1}-1\right)$ 得 $a_{n+1}=\frac{4}{4-a_n}$, 于是
+$$
+a_{n+1}-2=\frac{4}{4-a_n}-2=\frac{2\left(a_n-2\right)}{4-a_n} .
+$$
+所以
+$$
+\frac{1}{a_{n+1}-2}=\frac{4-a_n}{2\left(a_n-2\right)}=\frac{1}{a_n-2}-\frac{1}{2},
+$$
+又 $\frac{1}{a_1-2}=-1$, 故由等差数列通项公式得
+$$
+\frac{1}{a_n-2}=-1+(n-1) \cdot\left(-\frac{1}{2}\right)=-\frac{n+1}{2} \text {. }
+$$
+由此得出 $a_n=2 \cdot \frac{n}{n+1}$, 所以
+$$
+a_1 a_2 \cdots a_n=\left(2 \cdot \frac{1}{2}\right)\left(2 \cdot \frac{2}{3}\right)\left(2 \cdot \frac{3}{4}\right) \cdots\left(2 \cdot \frac{n}{n+1}\right)=\frac{2^n}{n+1} .
+$$
+%%<REMARK>%%
+注:本题中 2 是方程 $x^2=4(x-1)$ 的二重根.
+一般说来,对于分式线性递推数列 $a_{n+1}=\frac{a a_n+b}{c a_n+d}$, 其中 $c \neq 0, a d-b c \neq 0, a_1 \neq \frac{a a_1+b}{c a_1+d}$, 我们称方程 $x=\frac{a x+b}{c x+d}$ 的根为该数列的不动点.
+若该数列只有唯一不动点 $p$ (即方程 $x(c x+d)=a x+b$ 有二重根 $p$ ), 则
+$$
+\frac{1}{a_{n+1}-p}=-\frac{1}{a_n-p}+\frac{2 c}{a+d} \text {. }
+$$
+若该数列有两个不同的不动点 $p$ 和 $q$, 则
+$$
+\frac{a_{n+1}-p}{a_{n+1}-q}=\frac{a-p c}{a-q c} \cdot \frac{a_n-p}{a_n-q} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $\frac{1}{2}<a_1<\frac{2}{3}, a_{n+1}=a_n\left(2-a_{n+1}\right), n=1,2,3, \cdots$, 证明
+$$
+n+\frac{1}{2}<\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}<n+2 \text {. }
+$$
+%%<SOLUTION>%%
+解:由 $a_{n+1}=a_n\left(2-a_{n+1}\right)$ 得 $a_{n+1}=\frac{2 a_n}{a_n+1}$. 解方程 $x=\frac{2 x}{x+1}$, 得到两个不动点 $x_1=0, x_2=1$, 再由 $a_{n+1}=\frac{2 a_n}{1+a_n}$ 和 $a_{n+1}-1=\frac{a_n-1}{1+a_n}$, 可得
+$$
+\frac{a_{n+1}-1}{a_{n+1}}=-\frac{1}{2}\left(\frac{a_n-1}{a_n}\right) .
+$$
+于是, 由等比数列的通项公式得
+$$
+\frac{a_n-1}{a_n}=\frac{a_1-1}{a_1} \cdot\left(-\frac{1}{2}\right)^{n-1},
+$$
+由此得出
+$$
+\frac{1}{a_n}=1+\left(\frac{1}{a_1}-1\right)\left(\frac{1}{2}\right)^{n-1} .
+$$
+注意到 $\frac{1}{2}<a_1<\frac{2}{3}$ 时, $\frac{1}{2}<\frac{1}{a_1}-1<1$, 故
+$$
+1+\frac{1}{2^n}<\frac{1}{a_n}<1+\frac{1}{2^{n-1}},
+$$
+所以
+$$
+\begin{aligned}
+\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n} & <\left(1+\frac{1}{1}\right)+\left(1+\frac{1}{2}\right)+\cdots+\left(1+\frac{1}{2^{n-1}}\right) \\
+& =n+2-\frac{1}{2^{n-1}}<n+2, \\
+\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n} & >\left(1+\frac{1}{2}\right)+\left(1+\frac{1}{2^2}\right)+\cdots+\left(1+\frac{1}{2^n}\right) \\
+& =n+1-\frac{1}{2^n}>n+1-\frac{1}{2}=n+\frac{1}{2} .
+\end{aligned}
+$$
+即
+$$
+n+\frac{1}{2}<\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}<n+2 .
+$$
+前面我们通过实例介绍了如何通过待定系数法、不动点去寻找变换函数.
+但对一般的递推数列, 如何确定变换函数 $\varphi(x)$,并无统一规律可循,下面我们再举例介绍一些其他的换元方法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 已知 $a_1=1, a_{n+1}=\frac{1}{16}\left(1+4 a_n+\sqrt{1+24 a_n}\right)(n \geqslant 1)$, 求 $a_n$.
+%%<SOLUTION>%%
+解:为了使递推关系不含根号, 我们自然令 $b_n=\sqrt{1+24 a_n}$, 即 $a_n= \frac{1}{24}\left(b_n^2-1\right)$, 代入原递推关系得
+$$
+\frac{1}{24}\left(b_{n+1}^2-1\right)=\frac{1}{16}\left[1+4 \times \frac{1}{24}\left(b_n^2-1\right)+b_n\right],
+$$
+即 $\left(2 b_{n+1}\right)^2=\left(b_n+3\right)^2$. 因为 $b_n>0$, 故有 $b_{n+1}=\frac{1}{2} b_n+\frac{3}{2}$, 即
+$$
+b_{n+1}-3=\frac{1}{2}\left(b_n-3\right),
+$$
+又 $b_1=\sqrt{1+24 a_1}=5$, 由等比数列通项公式得
+$$
+b_n-3=\left(b_1-3\right)\left(\frac{1}{2}\right)^{n-1}=2^{2-n} \text {. }
+$$
+所以
+$$
+\begin{aligned}
+a_n & =\frac{1}{24}\left(b_n^2-1\right)=\frac{1}{24}\left[\left(2^{2-n}+3\right)^2-1\right] \\
+& =\frac{1}{3}\left(2^{1-2 n}+3 \cdot 2^{-n}+1\right) .
+\end{aligned}
+$$
+%%<REMARK>%%
+注:本例中由 $b_{n+1}=\frac{1}{2} b_n+\frac{3}{2}$ 变为 $b_{n+1}-3=\frac{1}{2}\left(b_n-3\right)$ 时, 其中 3 是方程 $x=\frac{1}{2} x+\frac{3}{2}$ 的根.
+也称为函数 $f(x)=\frac{1}{2} x+\frac{3}{2}$ 的不动点.
+一般说来, 对于一阶常系数线性递推数列 $b_{n+1}=p b_n+q(p, q$ 为常数, $p \neq 1)$, 通过解方程 $x=p x+q$, 解出 $x=-\frac{q}{p-1}$, 便可化为 $b_{n+1}+\frac{q}{p-1}=p\left(b_n+\frac{q}{p-1}\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设数列 $\left\{a_n\right\},\left\{b_n\right\}$ 定义如下:
+$$
+\begin{aligned}
+& a_0=\frac{\sqrt{2}}{2}, a_{n+1}=\frac{\sqrt{2}}{2} \sqrt{1-\sqrt{1-a_n^2}}, \\
+& b_0=1, b_{n+1}=\frac{1}{b_n}\left(\sqrt{b_n^2+1}-1\right), n=0,1,2,3, \cdots
+\end{aligned}
+$$
+%%<SOLUTION>%%
+证明: 对每一个 $n=0,1,2,3, \cdots$ 有下列不等式成立:
+$$
+2^{n+2} a_n<\pi<2^{n+2} b_n \text {. }
+$$
+证明用归纳法易证 $0<a_n<1, b_n>0$. 令 $a_n=\sin \lambda_n\left(0<\lambda_n<\frac{\pi}{2}\right.$, $n \geqslant 0)$, 则
+$$
+\sin \lambda_{n+1}=\frac{\sqrt{2}}{2} \sqrt{1-\sqrt{1-\sin ^2 \lambda_n}}=\frac{\sqrt{2}}{2} \sqrt{1-\cos \lambda_n}=\sin \frac{\lambda_n}{2} .
+$$
+从而有 $\lambda_{n+1}=\frac{1}{2} \lambda_n(n \geqslant 0)$, 又 $\lambda_0=\arcsin a_0=\arcsin \frac{\sqrt{2}}{2}=\frac{\pi}{4}$, 所以
+$$
+\lambda_n=\frac{\pi}{4}\left(\frac{1}{2}\right)^n=\frac{\pi}{2^{n+2}}, a_n=\sin \lambda_n=\sin \frac{\pi}{2^{n+2}}(n \geqslant 0) .
+$$
+类似地, 令 $b_n=\tan \delta_n$, 可求得 $b_n=\tan \frac{\pi}{2^{n+2}}(n \geqslant 0)$. 由于当 $0<x<\frac{\pi}{2}$ 时, $\sin x<x<\tan x$, 所以 $a_n<\frac{\pi}{2^{n+2}}<b_n$, 即 $2^{n+2} a_n<\pi<2^{n+2} b_n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. (斐波那契数列) 假设开始时有雌雄各一的一对小兔, 一个月后长成大兔, 再一个月后生了一对雌雄各一的小兔, 而这对小兔经过一个月后就长成大兔, 此后, 每对大兔每月生一对雌雄各一的小兔, 每对小兔经过一个月又长成大兔,问经过 $n$ 个月一共有多少对兔?
+%%<SOLUTION>%%
+解:设经过 $n$ 个月有小兔 $a_n$ 对, 大兔 $b_n$ 对, 大、小兔共 $F_n$ 对.
+于是, $b_n$ 由两部分组成, 第一部分是上月已有的大兔数, 即 $b_{n-1}$, 另一部分是上月的小兔长成的大兔数, 即 $a_{n-1}$, 故得 $\quad b_n=b_{n-1}+a_{n-1}=F_{n-1}, \label{eq1}$, 
+而 $a_n$ 是上一月大兔生出来的,故应等于 $b_{n-1}$. 于是有 $a_n=b_{n-1}, \label{eq2}$, 
+由式\ref{eq1}及\ref{eq2}可得
+$$
+F_n=a_n+b_n=b_{n-1}+b_n=F_{n-2}+F_{n-1}, \label{eq3}
+$$
+并且显然 $F_0=1$ (开始时只有一对小兔), $F_1=1$ (经过一个月后只有一对大兔). 式\ref{eq3}的特征方程是 $r^2=r+1$. 特征根为 $r_1=\frac{1+\sqrt{5}}{2}, r_2=\frac{1-\sqrt{5}}{2}$, 故
+$$
+\begin{array}{r}
+F_n=c_1\left(\frac{1+\sqrt{5}}{2}\right)^n+c_2\left(\frac{1-\sqrt{5}}{2}\right)^n, \\
+\text { 由 } F_0=1, F_1=1 \text { 得 }\left\{\begin{array}{l}
+c_1+c_2=1, \\
+c_1\left(\frac{1+\sqrt{5}}{2}\right)+c_2\left(\frac{1-\sqrt{5}}{2}\right)=1 .
+\end{array}\right.
+\end{array}
+$$
+解得 $c_1=\frac{1+\sqrt{5}}{2 \sqrt{5}}, c_2=-\frac{1-\sqrt{5}}{2 \sqrt{5}}$, 故得
+$$
+F_n=\frac{1}{\sqrt{5}}\left[\left(\frac{1+\sqrt{5}}{2}\right)^{n+1}-\left(\frac{1-\sqrt{5}}{2}\right)^{n+1}\right], n=0,1,2, \cdots
+$$
+满足 $F_n=F_{n-1}+F_{n-2}(n=2,3, \cdots), F_0=F_1=1$ 的数列, 叫做斐波那契 (Fibonacci) 数列.
+它的前面 10 项是
+$$
+1,1,2,3,5,8,13,21,34,55, \cdots
+$$
+许多组合计数问题和数学竞赛试题都与斐波那契数列有关.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 用 $1,2,3$ 组成 $n$ 位数, 如果要求没有 2 个 1 相邻, 问这样的 $n$ 位数共有多少个?
+%%<SOLUTION>%%
+解:用 $a_n$ 表示所求 $n$ 位数的个数,显然, $a_1=3, a_2=8$. (因满足要求的 2 位数只有 $12,13,21,22,23,31,32,33$ 共 8 个). 当 $n \geqslant 3$ 时, 如果第一个数字为 1 , 那么第 2 个数字只能是 2 或 3 , 余下的数字有 $a_{n-2}$ 种不同的取法; 如果第 1 位数字是 2 或 3 , 那么余下的数字有 $a_{n-1}$ 种不同的取法, 由加法法则和乘法法则得 $a_n=2 a_{n-1}+2 a_{n-2}(n \geqslant 3)$. 特征方程为 $r^2-2 r-2=0$, 特征根为 $r_1=1+\sqrt{3}, r_2=1-\sqrt{3}$, 故得
+$$
+a_n=c_1(1+\sqrt{3})^n+c_2(1-\sqrt{3})^n,
+$$
+补充定义 $a_0$ 满足 $a_2=2 a_1+2 a_0$, 即 $a_0=\frac{1}{2}\left(a_2-2 a_1\right)=1$. 由 $a_0=1, a_1=$ 3 , 得
+$$
+\left\{\begin{array}{l}
+c_1+c_2=1, \\
+c_1(1+\sqrt{3})+c_2(1-\sqrt{3})=3 .
+\end{array}\right.
+$$
+解得 $c_1=\frac{2+\sqrt{3}}{2 \sqrt{3}}=\frac{(1+\sqrt{3})^2}{4 \sqrt{3}}, c_2=-\frac{2-\sqrt{3}}{2 \sqrt{3}}=-\frac{(1-\sqrt{3})^2}{4 \sqrt{3}}$, 所以
+$$
+a_n=\frac{1}{4 \sqrt{3}}\left[(1+\sqrt{3})^{n+2}-(1-\sqrt{3})^{n+2}\right] \text {. }
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 记 $a_n$ 为下述正整数 $N$ 的个数: $N$ 的各位数字之和为 $n$ 且每位数字只能取 1,3 和 4 . 求证: $a_{2 n}$ 是完全平方数, $n=1,2,3, \cdots$. 
+%%<SOLUTION>%%
+证明:因为各位数字之和为 $n$ 的 $a_n$ 个正整数中, 首位数字为 1,3 和 4 的分别有 $a_{n-1}, a_{n-3}$ 和 $a_{n-4}$ 个, 所以
+$$
+a_n=a_{n-1}+a_{n-3}+a_{n-4}(n \geqslant 5), \label{eq1}
+$$
+且用枚举法易知 $a_1=1, a_2=1, a_3=2, a_4=4$, 利用(1)逐次计算 $a_n$ 可得下表.
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline$n$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & $\cdots$ \\
+\hline$a_n$ & 1 & 1 & 2 & 4 & 6 & 9 & 15 & 25 & 40 & 64 & 104 & 169 & $\cdots$ \\
+\hline 特征 & & $1^2$ & $1 \times 2$ & $2^2$ & $2 \times 3$ & $3^2$ & $3 \times 5$ & $5^2$ & $5 \times 8$ & $8^2$ & $8 \times 13$ & $13^2$ & $\cdots$ \\
+\hline
+\end{tabular}
+由上表我们猜想:
+设 $\left\{f_n\right\}$ 为斐波那契数列: $f_1=1, f_2=2, f_n=f_{n-1}+f_{n-2}(n \geqslant 3)$, 那么
+$$
+\left\{\begin{array}{l}
+a_{2 n}=f_n^2, \label{eq2} \\
+a_{2 n+1}=f_n f_{n+1}, \label{eq3}
+\end{array} \quad n=1,2,3, \cdots\right.
+$$
+我们用数学归纳法证明上述猜想成立.
+$n=1,2$ 时,直接计算知式\ref{eq2}及\ref{eq3}成立.
+设 $n=k-1$ 及 $n=k$ 时式\ref{eq2},\ref{eq3}成立, 那么由式\ref{eq1}及归纳假设和数列 $\left\{f_n\right\}$ 的定义得
+$$
+\begin{aligned}
+a_{2 k+2} & =a_{2 k+1}+a_{2 k-1}+a_{2 k-2} \\
+& =f_k f_{k+1}+f_{k-1} f_k+f_{k-1}^2 \\
+& =f_k f_{k+1}+f_{k-1}\left(f_k+f_{k-1}\right) \\
+& =f_k f_{k+1}+f_{k-1} f_{k+1} \\
+& =f_{k+1}\left(f_k+f_{k-1}\right)=f_{k+1}^2, \\
+a_{2 k+3} & =a_{2 k+2}+a_{2 k}+a_{2 k-1} \\
+& =f_{k+1}^2+f_k^2+f_{k-1} f_k \\
+& =f_{k+1}^2+f_k\left(f_k+f_{k-1}\right) \\
+& =f_{k+1}^2+f_k f_{k+1} \\
+& =f_{k+1}\left(f_{k+1}+f_k\right) \\
+& =f_{k+1} f_{k+2},
+\end{aligned}
+$$
+即 $n=k+1$ 时式\ref{eq2},\ref{eq3}成立.
+这就证明了我们的猜想成立.
+由式\ref{eq2}即知 $a_{2 n}=f_n^2$ 为完全平方数.
+%%<REMARK>%%
+注:本例也可猜出 $a_{2 n}=\left(\sqrt{a_{2 n-2}}+\sqrt{a_{2 n-4}}\right)^2$ 后, 再由式\ref{eq1}推出
+$$
+a_{2 n+4}=2 a_{2 n+2}+2 a_{2 n}-a_{2 n-2} . \label{eq4}
+$$
+然后由式\ref{eq4}用数学归纳法证明这一猜想成立.
+具体证明留给读者自己完成.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 数列 $\left\{a_n\right\},\left\{b_n\right\}$ 满足 $a_0=1, b_0=0$, 且
+$$
+\left\{\begin{array}{l}
+a_{n+1}=7 a_n+6 b_n-3, \label{eq1}\\
+b_{n+1}=8 a_n+7 b_n-4, \label{eq2}
+\end{array} n=0,1,2, \cdots\right.
+$$
+证明: $a_n(n=0,1,2, \cdots)$ 是完全平方数.
+%%<SOLUTION>%%
+证明由 式\ref{eq1} 得 $b_n=\frac{1}{6}\left(a_{n+1}-7 a_n+3\right)$, 代入 式\ref{eq2} 后整理得
+$$
+a_{n+2}=14 a_{n+1}-a_n-6, \label{eq3}
+$$
+于是 $a_0=1=1^2, a_1=7 a_0+6 b_0-3=4=2^2$,
+$$
+a_2=14 a_1-a_0-6=49=7^2, a_3=14 a_2-a_1-6=676=26^2 \text {, }
+$$
+$$
+a_4=14 a_3-a_2-6=9409=97^2, \cdots
+$$
+由此我们猜想 $a_n=d_n^2$, 其中 $d_0=1, d_1=2, d_{n+2}=4 d_{n+1}-d_n(n \geqslant 0)$.
+下面我们用数学归纳法证明这一猜想成立.
+$n=0,1$ 时, $a_0=1=d_0^2, a_1=4=d_1^2$.
+设 $n=k-1$ 时 $a_{k-1}=d_{k-1}^2, n=k$ 时, $a_k=d_k^2$, 那么
+$$
+\begin{aligned}
+a_{k+1} & =14 a_k-a_{k-1}-6=14 d_k^2-d_{k-1}^2-6 \\
+& =\left(4 d_k-d_{k-1}\right)^2-2\left(d_k^2+d_{k-1}^2-4 d_k d_{k-1}+3\right) \\
+& =d_{k+1}^2-2\left(d_k^2+d_{k-1}^2-4 d_k d_{k-1}+3\right),
+\end{aligned}
+$$
+其中
+$$
+\begin{aligned}
+d_k^2+d_{k-1}^2-4 d_k d_{k-1}+3 & =d_k\left(4 d_{k-1}-d_{k-2}\right)+d_{k-1}^2-4 d_k d_{k-1}+3 \\
+& =d_{k-1}^2-d_{k-2} d_k+3 \\
+& =d_{k-1}^2-d_{k-2}\left(4 d_{k-1}-d_{k-2}\right)+3 \\
+& =\dot{d}_{k-1}^2+d_{k-2}^2-4 d_{k-1} d_{k-2}+3 \\
+& \cdots \cdots \\
+& =d_1^2+d_0^2-4 d_1 d_0+3 \\
+& =2^2+1^2-4 \times 2 \times 1+3 \\
+& =0 .
+\end{aligned}
+$$
+所以 $a_{k+1}=d_{k+1}^2$, 这就证明了对一切非负整数 $n, a_n=d_n^2$ 是完全平方数.
+%%<REMARK>%%
+注:本题也可用特征根法求出 $a_n$ 的通项来完成证明.
+令 $x_n=a_n-\frac{1}{2}$ ( $\frac{1}{2}$ 为方程 $x=14 x-x-6$ 的根), 则 $x_0=\frac{1}{2}, x_1=\frac{7}{2}$, 并且由 式\ref{eq3} 可得 $x_{n+2}=14 x_{n+1}-x_n(n \geqslant 0)$. 用特征根法可求得
+$$
+\begin{aligned}
+x_n & =\frac{1}{4}(7+4 \sqrt{3})^n+\frac{1}{4}(7-4 \sqrt{3})^n \\
+& =\frac{1}{4}(2+\sqrt{3})^{2 n}+\frac{1}{4}(2-\sqrt{3})^{2 n}, \\
+a_n & =x_n+\frac{1}{2}=\left[\frac{1}{2}(2+\sqrt{3})^n+\frac{1}{2}(2-\sqrt{3})^n\right]^2 .
+\end{aligned}
+$$
+令 $(2+\sqrt{3})^n=A_n+B_n \sqrt{3}\left(A_n, B_n\right.$ 为正整数 $)$, 则 $(2-\sqrt{3})^n=A_n-B_n \sqrt{3}$, 于是 $a_n=A_n^2(n=0,1, \cdots)$ 为完全平方数.
+下面的例子表明,通过建立递推关系可以使有些数学问题很容易得到解决.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 试确定 $(\sqrt{2}+\sqrt{3})^{2004}$ 小数点前一位数字和小数点后一位数字.
+%%<SOLUTION>%%
+解:记 $N=(\sqrt{2}+\sqrt{3})^{2004}=(5+2 \sqrt{6})^{1002}$, 令 $x_n=(5+2 \sqrt{6})^n+(5- 2 \sqrt{6})^n$, 则数列 $\left\{x_n\right\}$ 对应的特征方程是
+$$
+[r-(5+2 \sqrt{6})][r-(5-2 \sqrt{6})]=0,
+$$
+即 $r^2-10 r+1=0$, 所以数列 $\left\{x_n\right\}$ 满足的递推关系是
+$$
+x_n=10 x_{n-1}-x_{n-2}(n \geqslant 3), \label{eq1}
+$$
+其中 $x_1=(5+2 \sqrt{6})+(5-2 \sqrt{6})=10, x_2=(5+2 \sqrt{6})^2+(5-2 \sqrt{6})^2=$ 98 皆为整数.
+若 $x_{n-2}, x_{n-1}$ 为整数,则由 式\ref{eq1}知 $x_n$ 也为整数,故对一切 $n \in \mathbf{N}_{+}$, $x_n$ 为整数, 且由 式\ref{eq1}得
+$$
+x_n=10 x_{n-1}-\left(10 x_{n-3}-x_{n-4}\right)=10\left(x_{n-1}-x_{n-3}\right)+x_{n-4} .
+$$
+故 $x_n \equiv x_{n-4}(\bmod 10)$. 特别 $x_{1002} \equiv x_2(\bmod 10)$, 即知 $x_{1002}$ 的个位数字是 8 . 又因为 $0<5-2 \sqrt{6}<0.2$, 于是
+$$
+0<(5-2 \sqrt{6})^{1002}<0.2^{1002}=0.008^{334}<0.01^{334}=\underbrace{0.00 \cdots 0}_{668 \uparrow 0} 1,
+$$
+即
+$$
+x_{1002}=N+(5-2 \sqrt{6})^{1002}=N+0 . \underbrace{00 \cdots 0} * * * \cdots 668 个 0
+$$
+因 $x_{1002}$ 的个位数字是 8 , 所以 $N$ 的小数点前一位数字是 7 ,小数点后一位数字是 9 .
+%%PROBLEM_END%%
+
+

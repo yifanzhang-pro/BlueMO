@@ -1,0 +1,128 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 证明,对任意整数 $a \geqslant 3$, 有无穷多个正整数 $n$, 使得 $a^n-1$ 被 $n$ 整除.
+%%<SOLUTION>%%
+因 $a \geqslant 3$, 故 $a-1$ 有素因子 $p$. 由费马小定理知, $a^p \equiv a \equiv 1(\bmod p)$. 用归纳法易证, $n=p^k(k=1,2, \cdots)$ 均符合要求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $n_1, \cdots, n_k$ 为正整数, 具有下面的性质:
+$$
+n_1\left|\left(2^{n_2}-1\right), n_2\right|\left(2^{n_3}-1\right), \cdots, n_k \mid\left(2^{n_1}-1\right) .
+$$
+证明: $n_1=\cdots=n_k=1$.
+%%<SOLUTION>%%
+已知条件可重述为
+$$
+2^{n_2} \equiv 1\left(\bmod n_1\right), 2^{n_3} \equiv 1\left(\bmod n_2\right), \cdots, 2^{n_1} \equiv 1\left(\bmod n_k\right) .
+$$
+设 $D=\left[n_1, \cdots, n_k\right]$. 则由上式得出
+$$
+2^D \equiv 1\left(\bmod n_i\right)(i=1, \cdots, k),
+$$
+从而 $2^D \equiv 1(\bmod D)$, 故由第 8 单元中例 2 知 $D=1$, 所以 $n_1=n_2=\cdots=n_k=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设正整数 $a 、 b$ 满足 $a^2 b \mid\left(a^3+b^3\right)$, 证明 $a=b$.
+%%<SOLUTION>%%
+设 $a^3+b^3=m a^2 b$, 则 $\left(\frac{a}{b}\right)^3-m\left(\frac{a}{b}\right)^2+1=0$, 即有理数 $\frac{a}{b}$ 是首项系数为 1 的整系数方程
+$$
+x^3-m x^2+1=0 . \label{eq1}
+$$
+的一个根, 故 $\frac{a}{b}$ 必是整数 . 另一方面, 方程式\ref{eq1}的任一整数根必然整除常数项 1 , 从而只能是 \pm 1 ; 又 $a, b$ 为正数, 故 $\frac{a}{b}=1$, 即 $a=b$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 证明: 不定方程 $x^n+1=y^{n+1}$ 没有正整数解 $(x, y, n)$, 其中 $(x, n+1)=1$, $n>1$.
+%%<SOLUTION>%%
+显然 $y>1$. 原方程可分解为
+$$
+(y-1)\left(y^n+y^{n-1}+\cdots+y+1\right)=x^n . \label{eq1}
+$$
+关键是证明, $y-1$ 与 $y^n+y^{n-1}+\cdots+y+1$ 互素.
+若它们的最大公约数 $d>$ 1 , 则 $d$ 有素因子 $p$. 由 $y \equiv 1(\bmod p)$ 知, $y^i \equiv 1(\bmod p)$, 从而有
+$$
+y^n+y^{n-1}+\cdots+y+1 \equiv n+1(\bmod p),
+$$
+于是 $p \mid(n+1)$; 但由 式\ref{eq1} 又推出 $p \mid x^n$, 从而素数 $p \mid x$, 这与 $(x, n+1)=1$ 相违, 故 $d=1$. 现在由式\ref{eq1}推出, 存在正整数 $a, b$, 使得
+$$
+y-1=a^n, y^n+y^{n-1}+\cdots+y+1=b^n . \label{eq2}
+$$
+但 $y^n<y^n+y^{n-1}+\cdots+y+1<(y+1)^n$, 即 $y^n+y^{n-1}+\cdots+y+1$ 界于两个相邻的 $n$ 次幂之间, 故它不能是整数的 $n$ 次幂, 这与已证得的 式\ref{eq2} 相矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. (1) 证明: 对任意给定的正整数 $n$, 存在非整数的正有理数 $a 、 b, a \neq b$, 使得 $a-b, a^2-b^2, \cdots, a^n-b^n$ 均为整数.
+(2) 设 $a 、 b$ 为正有理数, $a \neq b$. 若有无穷多个正整数 $n$,使 $a^n-b^n$ 为整数, 则 $a 、 b$ 都是整数.
+%%<SOLUTION>%%
+(1) 例如可取 $a=2^n+\frac{1}{2}, b=\frac{1}{2}$, 则对 $k=1, \cdots, n$,
+$$
+\begin{aligned}
+a^k-b^k & =(a-b)\left(a^{k-1}+a^{k-2} b+\cdots+a b^{k-2}+b^{k-1}\right) \\
+& =2^n \cdot a^{k-1}+2^n \cdot a^{k-2} b+\cdots+2^n \cdot a b^{k-2}+2^n \cdot b^{k-1} .
+\end{aligned}
+$$
+由于 $k \leqslant n$, 易知上式右边每一项均是整数, 故它们的和是整数.
+(2) 设 $a=\frac{x}{z}, b=\frac{y}{z}, x, y, z$ 都是正整数, 且 $(x, y, z)=1$. 则 $a^n-b^n$ 为整数, 等价于
+$$
+x^n \equiv y^n\left(\bmod z^n\right) . \label{eq1}
+$$
+我们要证明 $z=1$, 由此即知 $a, b$ 都是整数.
+设 $z>1$, 则 $z$ 有素因子.
+若 $z$ 有奇素数因子 $p$, 我们设 $r$ 是使 $x^r \equiv y^r(\bmod p)$ 成立的最小正整数.
+由 式\ref{eq1} 知 $x^n \equiv y^n(\bmod p)$, 故 $r \mid n$. 设 $p^\alpha\left\|n, p^\beta\right\|\left(x^r-y^r\right)$ (注意, 因 $a \neq b$, 故 $x \neq y$ ), 则 知 $p^{\alpha+\beta} \|\left(x^n-y^n\right)$, 但 式\ref{eq1} 意味着 $p^n \mid\left(x^n-y^n\right)$, 因此 $p^n \leqslant p^{\alpha+\beta}$, 故 $n \leqslant \alpha+\beta$, 又 $p^\alpha \leqslant n$, 故 $\alpha \leqslant \log _p n$, 从而
+$$
+n \leqslant \log _p n+\beta,
+$$
+这在 $n$ 充分大时不能成立 (注意 $\beta$ 是一个固定的数), 因此 式\ref{eq1}不可能对无穷多个 $n$ 成立, 矛盾.
+若 $z$ 没有奇素数, 则 $z$ 是 2 的幂.
+由 式\ref{eq1}及 $(x, y, z)=1$ 知, $x, y$ 都是奇数.
+当 $n$ 为奇数时, 由
+$$
+x^n-y^n=(x-y)\left(x^{n-1}+x^{n-2} y+\cdots+x y^{n-2}+y^{n-1}\right),
+$$
+并注意到上式右边第二个因子是奇数, 从而 $2^n \mid\left(x^n-y^n\right)$ 意味着 $2^n \mid(x-y)$, 因 $x \neq y$, 故这样的 $n$ 只有有限多个.
+当 $n$ 为偶数时, 设 $2^s \|\left(x^2-y^2\right)$, 若 $2^\alpha \| n$, 则 $2^{\alpha+5-1} \|\left(x^n-y^n\right)$. 结合 式\ref{eq1}得 $n \leqslant \alpha+s-$ 1. 因 $\alpha \leqslant \log _2 n$, 故
+$$
+n \leqslant \log _2 n+s-1,
+$$
+这对充分大的偶数 $n$ 不能成立,矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $n \geqslant 4$ 是整数, $a_1, \cdots, a_n$ 是小于 $2 n$ 的互不相同的正整数.
+证明: 从这些数中可取出若干个,使它们的和被 $2 n$ 整除.
+%%<SOLUTION>%%
+若每个 $a_i$ 都不等于 $n$, 则结论易证.
+因为 $2 n$ 个数
+$$
+a_1, a_2, \cdots, a_n, 2 n-a_1, 2 n-a_2, \cdots, 2 n-a_n .
+$$
+都是正整数, 且小于 $2 n$, 故其中必有两个相等, 即有 $i, j$ 使 $a_i=2 n-a_j$. 因 $i= j$ 意味着 $a_i=n$, 这与假设不符, 故 $i \neq j$, 从而 $a_i+a_j=2 n$, 可被 $2 n$ 整除.
+现在无妨设 $a_n=n$. 考虑 $n-1(\geqslant 3)$ 个整数 $a_1, a_2, \cdots, a_{n-1}$, 这其中必有两个数的差不被 $n$ 整除, 因为,若所有的 $\mathrm{C}_{n-1}^2$ 个两数之差都被 $n$ 整除, 则因 $\mathrm{C}_{n-1}^2 \geqslant 3$, 故有三个数 $a_i<a_j<a_k$, 使 $n\left|\left(a_j-a_i\right), n\right|\left(a_k-a_j\right)$, 从而 $a_k- a_i=\left(a_k-a_j\right)+\left(a_j-a_i\right) \geqslant 2 n$, 这不可能.
+无妨设 $a_1-a_2$ 不被 $n$ 整除.
+考虑下面 $n$ 个数
+$$
+a_1, a_2, a_1+a_2, a_1+a_2+a_3, \cdots, a_1+a_2+\cdots+a_{n-1} . \label{eq1}
+$$
+若它们模 $n$ 互不同余, 则其中有一个被 $n$ 整除; 若式\ref{eq1}中的数有两个模 $n$ 同余, 则这两数的差被 $n$ 整除,因此必产生 $a_1, \cdots, a_{n-1}$ 中某些数之和被 $n$ 整除(因 $a_1-a_2$ 不被 $n$ 整除), 记这个和为 $k n$. 若 $k$ 是偶数,则结论已成立; 若 $k$ 是奇数, 将 $a_n=n$ 添人所说的和, 即得结果.
+%%PROBLEM_END%%
+
+

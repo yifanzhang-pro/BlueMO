@@ -1,0 +1,66 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 证明: 费马数 $F_k=2^{2^k}+1(k \geqslant 0)$ 的任一个约数均 $\equiv 1\left(\bmod 2^{k+1}\right)$.
+%%<SOLUTION>%%
+只要证明 $F_k$ 的任一个素因子 $p$ 满足 $p \equiv 1\left(\bmod 2^{k+1}\right)$. 显然 $p \neq 2$. 设 2 模 $p$ 的阶为 $r$, 由 $p \mid F_k$ 得
+$$
+2^{2^k} \equiv-1(\bmod p), \label{eq1}
+$$
+故 $2^{2^{k+1}} \equiv 1(\bmod p)$, 从而 $r \mid 2^{k+1}$, 所以 $r$ 是 2 的方幂.
+设 $r=2^l$, 其中 $0 \leqslant l \leqslant k+1$. 若 $l \leqslant k$, 则由 $2^{2^l} \equiv 1(\bmod p)$ 反复平方, 可推出 $2^{2^k} \equiv 1(\bmod p)$, 结合 式\ref{eq1} 得 $p=2$, 这不可能.
+故必须 $l=k+1$. 又 $2^{p-1} \equiv 1(\bmod p)$ 从而有 $r \mid(p- 1)$, 故 $2^{k+1} \mid(p-1)$, 即 $p \equiv 1\left(\bmod 2^{k+1}\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. (1) 设 $m, n$ 是互素的正整数, $m, n>1 . a$ 是一个与 $m n$ 互素的整数.
+设 $a$ 模 $m$ 及模 $n$ 的阶分别为 $d_1 、 d_2$, 则 $a$ 模 $m n$ 的阶为 $\left[d_1, d_2\right]$;
+(2) 求出 3 模 $10^4$ 的阶.
+%%<SOLUTION>%%
+(1) 设 $a$ 模 $m n$ 的阶为 $r$. 由 $a^r \equiv 1(\bmod m n)$ 可得 $a^r \equiv 1(\bmod m)$ 及 $a^r \equiv 1(\bmod n)$. 故 $d_1 \mid r$ 及 $d_2 \mid r$, 从而 $\left[d_1, d_2\right] \mid r$. 另一方面, 由 $a^{d_1} \equiv 1(\bmod m)$ 及 $a^{d_2} \equiv 1(\bmod n)$, 推出 $a^{\left[d_1, d_2\right]} \equiv 1(\bmod m)$, 及 $a^{\left[d_1, d_2\right]} \equiv 1(\bmod n)$. 因 $(m, n)=1$, 故 $a^{\left[d_1, d_2\right]} \equiv 1(\bmod m m)$, 于是 $r \mid\left[d_1, d_2\right]$. 综合两方面的结果即知 $r=\left[d_1 ; d_2\right]$.
+(2)直接验算可知 3 模 $2^4$ 的阶为 4 . 又易知 3 模 5 的阶为 4 ,故由例 5 中 (1) 可知, 3 模 $5^4$ 的阶为 $4 \times 5^3$. 因此由本题的 (1) 推出, 3 模 $10^4$ 的阶为 $[4,4 \times 5^3]=500$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 证明, 对任何整数 $k>0$, 都存在正整数 $n$, 使得 $2^k \mid\left(3^n+5\right)$.
+%%<SOLUTION>%%
+采用归纳法.
+$k=1,2$ 时结论显然成立.
+设对 $k \geqslant 3$ 有 $n_0$ 使得 $2^k \left(3^{n_0}+5\right)$, 设 $3^{n_0}=2^k u-5$. 若 $u$ 是偶数,则 $2^{k+1} \mid\left(3^{n_0}+5\right)$. 以下设 $u$ 是奇数.
+论证的关键是注意, 对 $k \geqslant 3$ 有
+$$
+3^{2^{k-2}}=1+2^k v, v \text { 是奇数.
+}
+$$
+现在我们有
+$$
+\begin{aligned}
+3^{n_0+2^{k-2}} & =3^{n_0} \cdot 3^{2^{k^{-2}}}=\left(-5+2^k u\right)\left(1+2^k v\right) \\
+& =-5+\left(u-5 v+2^k u v\right) \cdot 2^k .
+\end{aligned}
+$$
+上式括号内的数是偶数,故 $2^{k+1}$ 整除 $3^{n_0+2^{k-2}}+5$. 这就完成了归纳证明.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 证明, 若整数 $n>1$, 则 $n \nmid 3^n-2^n$.
+%%<SOLUTION>%%
+反证法,设有 $n>1$, 使 $n \mid 3^n-2^n$. 设 $p$ 是 $n$ 的最小素因子, 则 $3^n \equiv 2^n(\bmod p)$, 从而 $p \geqslant 5$. 故有整数 $a$, 使得 $2 a \equiv 1(\bmod p)$. 因此有
+$$
+(3 a)^n \equiv 1(\bmod p) .
+$$
+设 $d$ 是 $3 a$ 模 $p$ 的阶.
+由上式知 $d \mid n$. 又费马小定理给出 $(3 a)_{-3}^{p-1} \equiv 1(\bmod p)$ ,
+故 $d \mid p-1$. 若 $d>1$, 则 $d$ 有素因子 $q$, 而由 $d \mid n$ 知 $q \mid n$; 由 $d \mid p-1$ 知 $q< p$, 这与 $p$ 的选取相违,故 $d=1$. 从而 $3 a \equiv 1(\bmod p)$, 结合 $2 a \equiv 1(\bmod p)$ 可知 $a \equiv 1(\bmod p)$, 进而 $2 a \equiv 2(\bmod p)$, 产生矛盾.
+%%PROBLEM_END%%
+
+

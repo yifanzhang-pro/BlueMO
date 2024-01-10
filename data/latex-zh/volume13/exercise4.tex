@@ -1,0 +1,38 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $0<p \leqslant a_1, a_2, \cdots, a_n \leqslant q$, 求 $F=\left(a_1+a_2+\cdots+\right. \left.a_n\right)\left(\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}\right)$ 的最大值.
+%%<SOLUTION>%%
+$F$ 的最大值为: $n^2+\left[\frac{n}{2}\right]\left[\frac{n+1}{2}\right]\left(\sqrt{\frac{p}{q}}-\sqrt{\frac{q}{p}}\right)^2$. 由于 $F$ 在闭域上连续, 所以必存在最大值.
+固定 $a_1, a_2, \cdots, a_{n-1}$, 令 $a_1+a_2+\cdots+a_{n-1}=A$, $\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_{n-1}}=B$, 则 $A, B$ 为常数, 且 $F=\left(A+a_n\right)\left(B+\frac{1}{a_n}\right)=1+A B+B a_n+\frac{A}{a_n}$. 考察 $f(x)=B x+\frac{A}{x}$, 易知, 当 $x \leqslant \sqrt{\frac{A}{B}}$ 时, $f(x)$ 单调递减, 当 $x \geqslant \sqrt{\frac{A}{B}}$ 时, $f(x)$ 单调递增.
+于是, $\sqrt{\frac{A}{B}}$ 是 $f(x)$ 的最小值点.
+注意到 $p \leqslant a_n \leqslant q$, 所以 $f\left(a_n\right)=B a_n+\frac{A}{a_n}$ 只能在其端点 $a_n=p$ 或 $a_n=q$ 处取最大值.
+由对称性, $F$ 只能在 $a_1, a_2, \cdots, a_n \in\{p, q\}$ 时取最大值.
+于是, 不妨设 $F$ 取最大值时, $a_1, a_2, \cdots, a_n$ 中有 $k$ 个为 $p, n-k$ 个为 $q$, 则 $F$ 的最大值是如下形式的 $F(k)$ 的最大值: $F(k)=[k p+(n-k) q]\left(\frac{k}{p}+\frac{n-k}{q}\right)=k^2+(n- k)^2+\left(n k-k^2\right)\left(\frac{p}{q}+\frac{q}{p}\right)=\left[2-\left(\frac{p}{q}+\frac{q}{p}\right)\right] k^2+\left[n\left(\frac{p}{q}+\frac{q}{p}\right)-2 n\right] k+n^2$. 在二次函数 $F(k)$ 中, 二次项系数 $2-\left(\frac{p}{q}+\frac{q}{p}\right)<0$, 顶点横坐标为 $\frac{n}{2}$. 但 $k \in \mathbf{N}$, 于是, 当 $n$ 为偶数时, $F(k) \leqslant F\left(\frac{n}{2}\right)=\left(\frac{n}{2}\right)^2+\left(n-\frac{n}{2}\right)^2+ \left[n \cdot \frac{n}{2}-\left(\frac{n}{2}\right)^2\right]\left(\frac{p}{q}+\frac{q}{p}\right)=n^2+\left(\frac{n}{2}\right)^2\left(\sqrt{\frac{p}{q}}-\sqrt{\frac{q}{p}}\right)^2=n^2+ \left[\frac{n}{2}\right]\left[\frac{n+1}{2}\right]\left(\sqrt{\frac{p}{q}}-\sqrt{\frac{q}{p}}\right)^2$. 当 $n$ 为奇 数时, $F(k) \leqslant F\left(\left[\frac{n}{2}\right]\right)= F\left(\left[\frac{n+1}{2}\right]\right)=n^2+\left[\frac{n}{2}\right]\left[\frac{n+1}{2}\right]\left(\sqrt{\frac{p}{q}}-\sqrt{\frac{q}{p}}\right)^2$. 所以 $F_{\text {max }}=n^2+ \left[\frac{n}{2}\right]\left[\frac{n+1}{2}\right]\left(\sqrt{\frac{p}{q}}-\sqrt{\frac{q}{p}}\right)^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $x_{i}\in\mathbb{R},\;\;|\;x_{i}\;|\leq1\;(1\leq i\leq n)$ ,求 $F=\sum_{1\leq i<j\leq n}x_{i}x_{j}$ 的最小值.
+%%<SOLUTION>%%
+由于 $F$ 在闭域上连续, 所以, 必定存在最小值.
+固定 $x_2, x_3, \cdots, x_n$, 则 $F\left(x_1\right)$ 是关于 $x_1$ 的一次函数.
+又 $-1 \leqslant x_1 \leqslant 1$, 于是, 当 $F\left(x_1\right)$ 取最小值时, 必有 $x_1 \in\{-1,1\}$. 由对称性, 知 $F$ 取最小值时, 必有 $x_i \in\{-1,1\} \quad(1 \leqslant i \leqslant n)$. 设 $F$ 取最小值时, $x_i$ 中有 $k$ 个为 $1, n-k$ 个为 -1 , 则 $F$ 的最值是如下形式的 $F(k)$ 的最小值: $F(k)=\mathrm{C}_k^2+\mathrm{C}_{n-k}^2-\mathrm{C}_k^1 \mathrm{C}_{n-k}^1=2\left(k-\frac{n}{2}\right)^2-\frac{n}{2} \geqslant-\frac{n}{2}$. 但 $F(k)$ 为整数, 所以 $F(k) \geqslant-\left[\frac{n}{2}\right]$, 其中等式在 $k=\left[\frac{n}{2}\right]$ 时成立.
+所以, $F$ 的最小值为 $-\left[\frac{n}{2}\right]$. 或者, 当 $x_i \in\{-1,1\}$ 时, $F=\frac{1}{2}\left(\sum_{i=1}^n x_i\right)^2-\sum_{i=1}^n \frac{1}{2} x_i^2= \frac{1}{2}\left(\sum_{i=1}^n x_i\right)^2-\sum_{i=1}^n \frac{1}{2}=\frac{1}{2}\left(\sum_{i=1}^n x_i\right)^2-\frac{n}{2} \geqslant-\frac{n}{2}$, 于是 $-F \leqslant \frac{n}{2}$. 但 $-F$ 为整数, 所以 $-F \leqslant\left[\frac{n}{2}\right]$, 即 $F \geqslant-\left[\frac{n}{2}\right]$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 给定自然数 $n>2, \lambda$ 是一个给定的常数.
+确定函数: $F=x_1^2+x_2^2+\cdots+ x_n^2+\lambda x_1 x_2 \cdots x_n$ 的最大值与最小值, 这里 $x_1, x_2, \cdots, x_n$ 是非负实数, 且 $x_1+x_2+\cdots+x_n=1$. 
+%%<SOLUTION>%%
+因为 $F$ 在闭域 $0 \leqslant x_i \leqslant 1$ 上连续, 所以 $F$ 必有最大值和最小值.
+不妨设 $\left(x_1, x_2, \cdots, x_n\right)$ 是 $F$ 的最值点, 我们证明, 对任何 $i \neq j, x_i x_j=0$, 或 $x_i=x_j$. 实际上, 由对称性, 我们只须考察 $x_1 、 x_2$. 固定 $x_3, x_4, \cdots, x_n$, 则 $x_1+x_2=1-\left(x_3+x_4+\cdots+x_n\right)=c($ 常数 $) . F=\left(x_1+x_2\right)^2+x_3^2+\cdots+ x_n^2-2 x_1 x_2+\lambda x_1 x_2 \cdots x_n=\left(x_1+x_2\right)^2+x_3^2+\cdots+x_n^2+\left(\lambda x_3 x_4 \cdots x_n-2\right) \cdot x_1\left(c-x_1\right)$. 令 $f\left(x_1\right)=x_1\left(c-x_1\right)$, 因为 $0 \leqslant x_1 \leqslant c$, 由二次函数的性质, 当 $f\left(x_1\right)$ 达到最值时, $x_1 \in\left\{0, c, \frac{c}{2}\right\}$. 注意此时 $x_1+x_2=c$, 于是 $x_1 、 x_2$ 之间有以下关系: (1) $x_1=0, x_2=c$. (2) $x_1=c, x_2=0$. (3) $x_1=x_2=\frac{c}{2}$. 于是, 要么 $x_1 x_2=0$, 要么 $x_1=x_2$. 由上面讨论可知, 若 $\left(x_1, x_2, \cdots, x_n\right)$ 是 $F$ 的最值点, 则 $x_1, x_2, \cdots, x_n$ 中的非零数都相等.
+不妨设 $x_1=x_2=\cdots=x_k \neq 0$, $x_{k+1}+x_{k+2}+\cdots+x_n=0$, 有以下情况: (1) 若 $k=n$, 那么 $F$ 在 $x_1=x_2=\cdots= x_n=\frac{1}{n}$ 达到最值, 此时 $F=\sum_{i=1}^n \frac{1}{n^2}+\lambda \prod_{i=1}^n \frac{1}{n}=\frac{\lambda+n^{n-1}}{n^n}$. (2) 若 $k<n$, 那么 $F$ 在 $x_1=x_2=\cdots=x_k=\frac{1}{k}, x_{k+1}=x_{k+2}=\cdots=x_n=0$ 达到最值, 此时 $F=\sum_{i=1}^k \frac{1}{k^2}=\frac{1}{k}$. 注意到 $1 \leqslant k \leqslant n-1$, 所以 $\frac{1}{n-1} \leqslant F \leqslant 1$. 所以 $F$ 的最值的集合是 $\left\{1, \frac{1}{n-1}, \frac{\lambda+n^{n-1}}{n^n}\right\}$. 故 $F_{\text {min }}=\min \left\{\frac{1}{n-1}, \frac{\lambda+n^{n-1}}{n^n}\right\}, F_{\max }= \max \left\{1, \frac{\lambda+n^{n-1}}{n^n}\right\}$.
+%%PROBLEM_END%%
+
+

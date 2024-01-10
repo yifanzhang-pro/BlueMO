@@ -1,0 +1,1146 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 证明: 对任意非空有限集, 都可以将它的所有子集排成一列, 使得任意两个相邻的子集的元素个数相差 1 .
+%%<SOLUTION>%%
+对该非空有限集的元素个数 $n$ 归纳.
+记该集合为 $S_n$, 当 $n=1$ 时, 其子集可排列为 $\varnothing, S_1$, 符合要求.
+设命题对 $n$ 成立, 即 $S_n$ 的子集可排列为 $A_1$, $A_2, \cdots, A_{2^n}$, 使相邻两个集合元素个数相差 1 . 考虑 $S_{n+1}=\left\{a_1, \cdots, a_{n+1}\right\}$, 对其 $n$ 元子集 $S_n=\left\{a_1, \cdots, a_n\right\}$, 依归纳假设对 $S$ 的子集有符合要求的排列 $A_1, \cdots, A_{2^n}$;于是, 下面的排列:
+$$
+A_1, \cdots, A_{2^n}, A_{2^n} \cup\left\{a_{n+1}\right\}, \cdots, A_1 \cup\left\{a_{n+1}\right\} .
+$$
+是 $S_{n+1}$ 所有子集的排列, 它们符合要求.
+说明这里构造的集合列中相邻两个子集的不同元素都恰好只有一个, 比要求的结论更强.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 数列 $\left\{a_n\right\}$ 满足 $a_0=0, a_n+a_{n-2} \geqslant 2 a_{n-1}, n=2,3, \cdots$.
+证明: 对任意 $n \in \mathbf{N}^*$ 及 $k \in \mathbf{Z}$, 只要 $0 \leqslant k \leqslant n$, 就有 $n a_k \leqslant k a_n$.
+%%<SOLUTION>%%
+当 $k=0$ 时, 命题显然成立.
+对 $k>0$ 的情形, 要证的结论等价于 $\frac{a_k}{k} \leqslant \frac{a_n}{n}$, 它是下述命题的推论: 对 $k \geqslant 0$, 都有(1)
+$$
+(k+1) a_k \leqslant k a_{k+1} .
+$$
+对 $k$ 归纳来证明(1)成立: 在 $k=0$ 时, 由 $a_0=0$, 知(1)成立; 现设(1)对 $k$ 成立, 则由条件知
+$$
+\begin{aligned}
+(k+2) a_{k+1} & =2(k+1) a_{k+1}-k a_{k+1} \leqslant 2(k+1) a_{k+1}-(k+1) a_k \\
+& =(k+1)\left(2 a_{k+1}-a_k\right) \leqslant(k+1) a_{k+2} .
+\end{aligned}
+$$
+所以, (1) 对 $k+1$ 也成立.
+命题获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 一个由正实数组成的数列 $\left\{a_n\right\}$ 满足 $a_n^2 \leqslant a_n-a_{n+1}, n=1,2, \cdots$. 证明: 对任意 $n \in \mathbf{N}^*$, 都有 $a_n<\frac{1}{n}$.
+%%<SOLUTION>%%
+当 $n=1$ 时, $a_1^2 \leqslant a_1-a_2<a_1$, 故 $a_1<1$, 同时 $a_2 \leqslant a_1-a_1^2=\frac{1}{4}- \left(a_1-\frac{1}{2}\right)^2 \leqslant \frac{1}{4}<\frac{1}{2}$. 所以, 命题对 $n=1,2$ 成立.
+现设命题对 $n(\geqslant 2)$ 成立,
+则 $a_{n+1} \leqslant a_n-a_n^2=\frac{1}{4}-\left(\frac{1}{2}-a_n\right)^2$, 注意到, 由归纳假设知 $a_n<\frac{1}{n} \leqslant \frac{1}{2}$, 所以 $\frac{1}{2}-a_n>\frac{1}{2}-\frac{1}{n} \geqslant 0$, 因此 $a_{n+1}<\frac{1}{4}-\left(\frac{1}{2}-\frac{1}{n}\right)^2=\frac{1}{n}-\frac{1}{n^2}=\frac{n-1}{n^2}< \frac{1}{n+1}$. 即命题对 $n+1$ 成立, 获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设实数 $a_1, \cdots, a_n(n \geqslant 2)$ 满足 $a_1<a_2<\cdots<a_n$. 证明:
+$$
+a_1 a_2^4+a_2 a_3^4+\cdots+a_n a_1^4 \geqslant a_2 a_1^4+a_3 a_2^4+\cdots+a_n a_{n-1}^4+a_1 a_n^4 .
+$$
+%%<SOLUTION>%%
+当 $n=2$ 时,命题显然成立; 设命题对 $n$ ( $\geqslant 2)$ 成立, 考虑 $n+1$ 的情形.
+由归纳假设知
+$$
+\begin{aligned}
+& a_1 a_2^4+a_2 a_3^4+\cdots+a_n a_{n+1}^4+a_{n+1} a_1^4 \\
+\geqslant & a_2 a_1^4+a_3 a_2^4+\cdots+a_n a_{n-1}^4+a_1 a_n^4-a_n a_1^4+a_n a_{n+1}^4+a_{n+1} a_1^4 .
+\end{aligned}
+$$
+为证命题对 $n+1$ 成立, 只需证明:(1)
+$$
+a_1 a_n^4-a_n a_1^4+a_n a_{n+1}^4+a_{n+1} a_1^4 \geqslant a_{n+1} a_n^4+a_1 a_{n+1}^4 .
+$$
+为方便起见, 记 $a_1=x, a_n=y, a_{n+1}=z$, 则 $x<y<z$, (1) 转为证明:(2)
+$$
+x y^4+y z^4+z x^4-y x^4-z y^4-x z^4 \geqslant 0 .
+$$
+注意到,
+$$
+\begin{aligned}
+\text { 式左边 }= & x y\left(y^3-x^3\right)+y z\left(z^3-y^3\right)-z x\left(z^3-x^3\right) \\
+= & (x y-z x)\left(y^3-x^3\right)+(y z-z x)\left(z^3-y^3\right) \\
+= & -x(z-y)(y-x)\left(y^2+x y+x^2\right)+z(y-x)(z-y)\left(z^2+\right. \\
+& \left.z y+y^2\right) \\
+= & (y-x)(z-y)\left(z^3+z^2 y+z y^2-x y^2-x^2 y-x^3\right) \\
+= & (y-x)(z-y)(z-x)\left(z^2+z x+x^2+z y+x y+y^2\right) \\
+= & \frac{1}{2}(y-x)(z-y)(z-x)\left((x+y)^2+(y+z)^2+(z+x)^2\right) \\
+\geqslant & 0 .
+\end{aligned}
+$$
+所以,(2)成立,进而,(1)成立,命题对 $n+1$ 成立,获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $a_1=1, a_2=2, a_{n+1}=\frac{a_n a_{n-1}+1}{a_{n-1}}, n=2,3, \cdots$.
+证明: 对任意正整数 $n \geqslant 3$, 都有 $a_n>\sqrt{2 n}$.
+%%<SOLUTION>%%
+由条件, 知 $a_{n+1}=a_n+\frac{1}{a_{n-1}}$, 而结合初始条件及数学归纳法可知, 对任意 $n \in \mathbf{N}^*$, 有 $a_n>0$, 从而 $n \geqslant 2$ 时,有 $a_{n+1}=a_n+\frac{1}{a_{n-1}}>a_n$, 结合 $a_1<a_2$ 知, 对任意 $n \in \mathbf{N}^*$, 有 $a_n<a_{n+1}$, 所以,当 $n \geqslant 2$ 时,有(1)
+$$
+a_{n+1}=a_n+\frac{1}{a_{n-1}}>a_n+\frac{1}{a_n} .
+$$
+由 $a_3=\frac{a_2 a_1+1}{a_1}=3$, 知 $a_3>\sqrt{6}$, 即 $n=3$ 时, 有 $a_n>\sqrt{2 n}$. 现设当 $n= m(\geqslant 3)$ 时, 有 $a_m>\sqrt{2 m}$, 则由 (1) 知 $a_{m+1}^2>\left(a_m+\frac{1}{a_m}\right)^2=a_m^2+2+\frac{1}{a_m^2}> a_m^2+2>2 m+2$, 故 $a_{m+1}>\sqrt{2(m+1)}$, 即命题对 $m+1$ 成立.
+获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $a$ 为正实数.
+证明: 对任意 $n \in \mathbf{N}^*$, 都有
+$$
+\frac{1+a^2+a^4+\cdots+a^{2 n}}{a+a^3+a^5+\cdots+a^{2 n-1}} \geqslant \frac{n+1}{n} .
+$$
+%%<SOLUTION>%%
+当 $n=1$ 时,由 $\frac{1+a^2}{a}=\frac{1}{a}+a \geqslant 2 \sqrt{\frac{1}{a} \cdot a}=2$ 知命题成立.
+现设 $n$ 时命题成立, 即 $\frac{1+a^2+\cdots+a^{2 n}}{a+a^3+\cdots+a^{2 n-1}} \geqslant \frac{n+1}{n}$, 则 $\frac{a+a^3+\cdots+a^{2 n-1}}{1+a^2+\cdots+a^{2 n}} \leqslant \frac{n}{n+1}$.
+注意到
+$$
+\begin{aligned}
+& \frac{1+a^2+\cdots+a^{2 n+2}}{a+a^3+\cdots+a^{2 n+1}}+\frac{a+a^3+\cdots+a^{2 n-1}}{1+a^2+\cdots+a^{2 n}} \\
+= & \frac{1+a^2+\cdots+a^{2 n+2}}{a\left(1+a^2+\cdots+a^{2 n}\right)}+\frac{a+a^3+\cdots+a^{2 n-1}}{1+a^2+\cdots+a^{2 n}} \\
+= & \frac{1+a^2+\cdots+a^{2 n+2}+a\left(a+a^3+\cdots+a^{2 n-1}\right)}{a\left(1+a^2+\cdots+a^{2 n}\right)} \\
+= & \frac{\left(1+a^2+\cdots+a^{2 n}\right)+a^2\left(1+a^2+\cdots+a^{2 n}\right)}{a\left(1+a^2+\cdots+a^{2 n}\right)} \\
+= & \frac{a^2+1}{a}=a+\frac{1}{a} \geqslant 2 .
+\end{aligned}
+$$
+所以
+$$
+\frac{1+a^2+\cdots+a^{2 n+2}}{a+a^3+\cdots+a^{2 n+1}} \geqslant 2-\frac{n}{n+1}=\frac{n+2}{n+1}
+$$
+即命题对 $n+1$ 成立, 获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 证明: 对任意 $n \in \mathbf{N}^*, n \geqslant 2$, 都有
+$$
+\lg (n !)>\frac{3 n}{10}\left(\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}\right) .
+$$
+%%<SOLUTION>%%
+当 $n=2$ 时, 由于 $2^{10}>1000$, 故 $\lg 2>\frac{3}{10}$, 命题成立.
+现设命题对 $n (n \geqslant 2)$ 成立, 由均值不等式知 $\frac{1+2+\cdots+n}{n}>\sqrt[n]{1 \times 2 \times \cdots \times n}$, 即 $n+1> 2(n !)^{\frac{1}{n}}$, 于是
+$$
+\begin{aligned}
+\lg ((n+1) !) & >\lg \left((n !) \cdot 2(n !)^{\frac{1}{n}}\right) \\
+& =\lg 2+\frac{n+1}{n} \lg (n !) \\
+& >\lg 2+\frac{n+1}{n} \times \frac{3 n}{10}\left(\frac{1}{2}+\cdots+\frac{1}{n}\right) \\
+& >\frac{3}{10}+\frac{3(n+1)}{10}\left(\frac{1}{2}+\cdots+\frac{1}{n}\right)
+\end{aligned}
+$$
+$$
+=\frac{3(n+1)}{10}\left(\frac{1}{2}+\cdots+\frac{1}{n+1}\right) .
+$$
+所以,命题对 $n+1$ 成立, 获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 正实数数列 $\left\{a_n\right\}$ 满足: 对任意正整数 $n$, 都有 $\sum_{j=1}^n a_j^3=\left(\sum_{j=1}^n a_j\right)^2$.
+证明: 对任意 $n \in \mathbf{N}^*$, 都有 $a_n=n$.
+%%<SOLUTION>%%
+当 $n=1$ 时, $a_1^3=a_1^2$, 而 $a_1>0$, 故 $a_1=1$, 即命题对 $n=1$ 成立.
+现设命题对 $1,2, \cdots, n-1$ 都成立, 即 $a_k=k, k=1,2, \cdots, n-1$. 则
+$$
+\left(\sum_{k=1}^{n-1} k^3\right)+a_n^3=\sum_{k=1}^n a_k^3=\left(\sum_{k=1}^n a_k\right)^2=\left(\left(\sum_{k=1}^{n-1} k\right)+a_n\right)^2,
+$$
+于是 $a_n^3=a_n^2+n(n-1) a_n$, 解得 $a_n=0,-(n-1)$ 或 $n$, 结合 $a_n>0$, 知 $a_n= n$. 所以, 命题对 $n$ 成立, 获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 设 $a_1, \cdots, a_n$ 是 $n$ 个不同的正整数.
+证明: $a_1^2+\cdots+a_n^2 \geqslant \frac{2 n+1}{3}\left(a_1+\cdots+a_n\right)$.
+%%<SOLUTION>%%
+不妨设 $a_1<a_2<\cdots<a_n$. 当 $n=1$ 时, 不等式 $a_1^2 \geqslant \frac{2+1}{3} a_1$ 成立; 假设不等式对 $n$ 成立, 即 $a_1^2+\cdots+a_n^2 \geqslant \frac{2 n+1}{3}\left(a_1+\cdots+a_n\right)$, 考虑 $n+1$ 的情形, 只需证明: $a_{n+1}^2 \geqslant \frac{2}{3}\left(a_1+\cdots+a_n\right)+\frac{2 n+3}{3} a_{n+1}$, 这里 $a_1<a_2<\cdots< a_n<a_{n+1}$, 且 $a_i \in \mathbf{N}^*$.
+注意到 $a_n \leqslant a_{n+1}-1, a_{n-1} \leqslant a_n-1 \leqslant a_{n+1}-2, \cdots, a_1 \leqslant a_{n+1}-n$, 所以, 只需证明: $a_{n+1}^2 \geqslant \frac{2}{3} \sum_{k=1}^n\left(a_{n+1}-k\right)+\frac{2 n+3}{3} a_{n+1}$, 这等价于 $a_{n+1}^2-\frac{4 n+3}{3} a_{n+1}+ \frac{n(n+1)}{3} \geqslant 0$, 即只需证明: $\left(a_{n+1}-(n+1)\right)\left(a_{n+1}-\frac{n}{3}\right) \geqslant 0$, 这个不等式利用 $a_{n+1} \geqslant a_1+n \geqslant n+1$ 可得.
+所以, 原不等式对 $n+1$ 成立, 获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 实数数列 $a_1, a_2, \cdots$ 满足:
+(1) $a_1=2, a_2=500, a_3=2000$;
+(2) $\frac{a_{n+2}+a_{n+1}}{a_{n+1}+a_{n-1}}=\frac{a_{n+1}}{a_{n-1}}, n=2,3, \cdots$.
+证明: 数列 $\left\{a_n\right\}$ 的每一项都是整数,并且对任意正整数 $n$, 都有 $2^n \mid a_n$.
+%%<SOLUTION>%%
+由递推式可知 $a_{n+1}^2=a_{n-1} a_{n+2}, n=2,3, \cdots$, 由初始条件结合数学归纳法得 $a_n \neq 0$. 于是, 上式可变形为
+$$
+\frac{a_{n+2}}{a_{n+1} a_n}=\frac{a_{n+1}}{a_n a_{n-1}}, n=2,3, \cdots .
+$$
+依此倒推, 可知 $\frac{a_{n+2}}{a_{n+1} a_n}=\frac{a_{n+1}}{a_n a_{n-1}}=\cdots=\frac{a_3}{a_2 a_1}=2$, 即 $a_{n+2}=2 a_{n+1} a_n, n=2$, $3, \cdots$. 由此递推式及 $a_1, a_2, a_3 \in \mathbf{Z}$ 知, $a_n$ 都为整数, 并且 $\frac{a_{n+2}}{a_{n+1}}=2 a_n$ (注意, 此式对 $n=1$ 也成立), 可知对任意 $n \in \mathbf{N}^*, \frac{a_{n+2}}{a_{n+1}}$ 为偶数, 这样, $a_n=\left(\frac{a_n}{a_{n-1}}\right)$. $\left(\frac{a_{n-1}}{a_{n-2}}\right) \cdots\left(\frac{a_2}{a_1}\right) \cdot a_1$ 是 $n$ 个偶数之积, 于是 $2^n \mid a_n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 设 $k$ 为给定的正整数,数列 $\left\{a_n\right\}$ 满足
+$$
+a_1=k+1, a_{n+1}=a_n^2-k a_n+k, n=1,2, \cdots .
+$$
+证明: 对任意不同的正整数 $m 、 n$, 数 $a_m$ 与 $a_n$ 互素.
+%%<SOLUTION>%%
+由递推式, 知 $a_{n+1}-k=a_n\left(a_n-k\right)$, 于是 $a_n-k=a_{n-1}\left(a_{n-1}-k\right)= a_{n-1} a_{n-2}\left(a_{n-2}-k\right)=\cdots=a_{n-1} \cdots a_1\left(a_1-k\right)=a_{n-1} \cdots a_1$, 即(1)
+$$
+a_n=a_{n-1} \cdots a_1+k \text {. }
+$$
+对任意 $m 、 n \in \mathbf{N}^*, m \neq n$, 我们不妨设 $m<n$, 则由 (1) 知
+$$
+\left(a_n, a_m\right)=\left(a_{n-1} \cdots a_1+k, a_m\right)=\left(k, a_m\right) .
+$$
+下证: 对任意 $m \in \mathbf{N}^*$, 都有 $a_m \equiv 1(\bmod k)$.
+当 $m=1$ 时, 由 $a_1=k+1$ 知结论成立.
+现设 $m$ 时成立, 即 $a_m \equiv 1(\bmod k$ ), 则 $a_{m+1}=a_m^2-k a_m+k \equiv a_m^2 \equiv 1^2 \equiv 1(\bmod k)$. 所以, 对任意 $m \in \mathbf{N}^*$, 有 $a_m \equiv 1(\bmod k)$.
+利用上述结论知 $\left(a_m, k\right)=1$, 进而 $\left(a_n, a_m\right)=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 数列 $\left\{a_n\right\}$ 满足 $a_0=1, a_n=a_{n+1}+a_{\left[\frac{n}{3}\right]}, n=1,2, \cdots$. 证明: 对任意不大于 13 的素数 $p$, 数列 $\left\{a_n\right\}$ 中有无穷多项是 $p$ 的倍数.
+%%<SOLUTION>%%
+对照第 1 节例 5. 试算 $\left\{a_n\right\}$ 的最初 21 项, 它们的值依次为 $1,2,3,5$, $7,9,12,15,18,23,28,33,40,47,54,63,72,81,93,105,117$, 其中 $a_1, a_2, a_3, a_4, a_{11}, a_{20}$ 分别是 $2,3,5,7,11,13$ 的倍数.
+因此, 对任意 $p \in \{2,3,5,7,11,13\}$, 都有一项 $a_n$ 为 $p$ 的倍数.
+如果 $a_{3 n-1} \equiv 0(\bmod p)$, 那么我们从 $a_n$ 出发找到了下个 $p$ 的倍数.
+如果 $a_{3 n-1} \neq \equiv 0(\bmod p)$, 那么由递推式及 $a_n \equiv 0(\bmod p)$ 知 $a_{3 n+2} \equiv a_{3 n+1} \equiv a_{3 n} \equiv a_{3 n-1}(\bmod p)$, 记它们除以 $p$ 所得余数为 $r$, 同例题 - 样讨论, 下面的 13 个数
+$$
+a_{9 n-4}, a_{9 n-3}, \cdots, a_{9 n+8}
+$$
+在 $\bmod p$ 下分别与 $a_{9 n-4}, a_{9 n-4}+r, \cdots, a_{9 n-4}+12 r$ 同余, 而 $p \leqslant 13$, 故这 13 个数至少覆盖 $\bmod p$ 的一个完系, 这样, 从 $a_n$ 出发就可找到下一个 $p$ 的倍数, 命题获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 用 $\{x\}$ 表示实数 $x$ 的小数部分.
+证明: 对任意 $n \in \mathbf{N}^*$, 都有
+$$
+\sum_{k=1}^{n^2}\{\sqrt{k}\} \leqslant \frac{n^2-1}{2} .
+$$
+%%<SOLUTION>%%
+对 $n$ 归纳, 只需注意到
+$$
+\begin{aligned}
+\sum_{k=1}^{(n+1)^2}\{\sqrt{k}\} & =\sum_{k=1}^{n^2}\{\sqrt{k}\}+\sum_{k=n^2+1}^{(n+1)^2}\{\sqrt{k}\} \\
+& \leqslant \frac{1}{2}\left(n^2-1\right)+\sum_{k=1}^{2 n}\left(\sqrt{n^2+k}-n\right) \\
+& \leqslant \frac{1}{2}\left(n^2-1\right)+\sum_{k=1}^{2 n}\left(\sqrt{\left(n+\frac{k}{2 n}\right)^2}-n\right) \\
+& =\frac{1}{2}\left(n^2-1\right)+\frac{1}{2 n} \sum_{k=1}^{2 n} k \\
+& =\frac{1}{2}\left(n^2-1\right)+\frac{1}{2}(2 n+1)
+\end{aligned}
+$$
+$$
+=\frac{1}{2}\left((n+1)^2-1\right) .
+$$
+即可实现归纳过渡.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 设 $m 、 n \in \mathbf{N}^*$, 记 $S_m(n)=\sum_{k=1}^n\left[\sqrt[k^2]{k^m}\right]$. 证明:
+$$
+S_m(n) \leqslant n+m\left(\sqrt[4]{2^m}-1\right) .
+$$
+这里 $[x]$ 表示不超过 $x$ 的最大整数.
+%%<SOLUTION>%%
+当 $n \leqslant m$ 时, 通过对正整数 $k$ 归纳, 易证 $k^4 \leqslant 2^{k^2}$, 于是 $\sqrt[k^2]{k^m} \leqslant \sqrt[4]{2^m}$, 这时 $S_m(n) \leqslant \sum_{k=1}^n k^{\frac{m}{2}}=n+\sum_{k=1}^n\left(k^{\frac{m}{2}}-1\right) \leqslant n+\sum_{k=1}^n\left(k k^{\frac{m}{2}}-1\right) \leqslant n+m\left(2^{\frac{m}{4}}-\right.$ 1), 原不等式成立.
+当 $n>m$ 时,注意到, 对任意 $k \in \mathbf{N}^*, k>m$,均有
+$$
+1<k^{\frac{m}{k^2}}<k^{\frac{1}{k}}<2
+$$
+这里 $k^{\frac{1}{k}}<2$ 等价于 $k<2^k$, 它可通过对 $k$ 归纳予以证明.
+于是 $S_m(n+1)= S_m(n)+1$, 依此结合 $n \leqslant m$ 时不等式成立, 及数学归纳法, 可知对任意 $m 、 n \in \mathbf{N}^*$, 均有 $S_m(n) \leqslant n+m\left(\sqrt[4]{2^m}-1\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 设 $k$ 为给定的正整数, 考虑数列 $\left\{a_n\right\}$ :
+$$
+a_0=1, a_{n+1}=a_n+\left[\sqrt[k]{a_n}\right], n=0,1,2, \cdots .
+$$
+对每个 $k$, 求数列 $\left\{\sqrt[k]{a_n}\right\}$ 中所有是整数的项组成的集合.
+%%<SOLUTION>%%
+用 $A_k$ 表示数列 $\left\{\sqrt[k]{a_n}\right\}$ 中为整数的项组成的集合.
+我们断言: 对任意 $k \in \mathbf{N}^*, A_k=\left\{2^m \mid m=0,1,2, \cdots\right\}$ (即 $A_k$ 与 $k$ 的具体值无关, 它由所有 2 的幂组成).
+由 $a_0=1$, 知 $1 \in A_k$,下设 $x \in A_k$, 我们证明: $A_k$ 中比 $x$ 大的数中最小的那个是 $2 x$. 依此结论结合数学归纳法可知断言成立.
+事实上, 设 $x \in A_k$, 即存在 $n \in \mathbf{N}$, 使得 $a_n=x^k$, 则对所有满足 $x^k \leqslant a_j< (x+1)^k$ 的下标 $j$, 有 $a_{j+1}=a_j+x$, 即 $a_{j+1} \equiv a_j(\bmod x)$. 从 $a_n$ 出发, 可知对这样的 $j$, 有 $a_{j+1} \equiv a_j \equiv 0(\bmod x)$, 现在取上述条件中最大的 $j$, 这时 $a_j<(x+ 1)^k$, 而 $a_{j+1} \geqslant(x+1)^k$. 记 $a_{j+1}=(x+1)^k+m_1$, 则由 $a_{j+1}=a_j+x$ 知 $0 \leqslant m_1<x$, 而 $a_{j+1} \equiv 0(\bmod x)$, 故 $m_1+1 \equiv 0(\bmod x)$, 所以 $m_1=x-1$, 从而 $a_{j+1}=(x+1)^k+x-1$.
+重复上述讨论, 通过每次加上 $x+1$, 得到形如 $(x+2)^k+m_2$ 的项, $0 \leqslant m_2<n+1$, 并由 $x-1 \equiv(x+2)^k+m_2 \equiv 1+m_2(\bmod x+1)$ 可确定 $m_2= x-2$, 依次递推, 一般地, 利用同余式 $m_i \equiv(x+i+1)^k+m_{i+1}(\bmod x+i)$, 可确定 $m_i=x-i, i=1,2, \cdots, x$. 从而数列 $\left\{a_n\right\}$ 中的下一个 $k$ 次方数在 $m_i$ 第一次取零时得到, 这时 $i=x$, 即下一个 $k$ 次方数为 $(x+x)^k=(2 x)^k$. 也就是说 $A_k$ 中比 $x$ 大的数中最小的那个是 $2 x$.
+问题获解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16. 数列 $\left\{x_n\right\}$ 定义如下 $x_1=\frac{1}{2}, x_n=\frac{2 n-3}{2 n} x_{n-1}, n=2,3, \cdots$. 证明: 对任意正整数 $n$, 都有 $x_1+x_2+\cdots+x_n<1$.
+%%<SOLUTION>%%
+由递推关系可知, 对任意 $n \in \mathbf{N}^*$, 都有 $x_n>0$. 进一步, 由 $2 n x_n= 2(n-1) x_{n-1}-x_{n-1}$, 得 $x_{n-1}=2(n-1) x_{n-1}-2 n x_n$. 求和, 得
+$$
+\begin{aligned}
+x_1+\cdots+x_n & =\sum_{k=2}^{n+1}\left(2(k-1) x_{k-1}-2 k x_k\right) \\
+& =2 \sum_{k=1}^n\left(k x_k-(k+1) x_{k+1}\right)=2\left(x_1-(n+1) x_{n+1}\right) \\
+& =1-2(n+1) x_{n+1}<1 .
+\end{aligned}
+$$
+命题获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17. 数列 $\{f(n)\}$ 满足
+$$
+f(1)=2, f(n+1)=(f(n))^2-f(n)+1, n=1,2,3, \cdots .
+$$
+证明: 对任意整数 $n>1$, 都有 $1-\frac{1}{2^{2^{n-1}}}<\frac{1}{f(1)}+\frac{1}{f(2)}+\cdots+\frac{1}{f(n)}<1-\frac{1}{2^{2^{n^2}}}$.
+%%<SOLUTION>%%
+由条件可知 $f(n+1)=(f(n)-1) f(n)+1$, 结合数学归纳法及 $a_1>$ 1 , 可得对任意 $n \in \mathbf{N}^*$, 都有 $f(n)>1$,于是, 取倒数就有
+$$
+\frac{1}{f(n+1)-1}=\frac{1}{f(n)(f(n)-1)}=\frac{1}{f(n)-1}-\frac{1}{f(n)} .
+$$
+即 $\frac{1}{f(n)}=\frac{1}{f(n)-1}-\frac{1}{f(n+1)-1}$, 裂项求和得
+$$
+\sum_{k=1}^n \frac{1}{f(k)}=\frac{1}{f(1)-1}-\frac{1}{f(n+1)-1}=1-\frac{1}{f(n+1)-1} .
+$$
+回到递推关系式, 知 $f(n+1)-1=f(n)(f(n)-1)>(f(n)-1)^2> (f(n-1)-1)^{2^2}>\cdots>(f(2)-1)^{2^{n-1}}=\left(2^2-2\right)^{2^{n-1}}=2^{2^{n-1}}$.
+$$
+\text { 故 } \sum_{k=1}^n \frac{1}{f(k)}>1-\frac{1}{2^{2^{n-1}}} \text {. }
+$$
+另一方面, $f(n+1)=f(n)^2-(f(n)-1)<f(n)^2$, 故
+$$
+f(n+1)<f(n)^2<f(n-1)^{2^2}<\cdots<f(1)^{2^n}=2^{2^n},
+$$
+更有 $f(n+1)-1<2^{2^n}$, 进而, $\sum_{k=1}^n \frac{1}{f(k)}<1-\frac{1}{2^{2^n}}$. 命题获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题18. 两个实数数列: $x_1, x_2, \cdots$ 和 $y_1, y_2, \cdots$, 满足 $x_1=y_1=\sqrt{3}$,
+$$
+x_{n+1}=x_n+\sqrt{1+x_n^2}, y_{n+1}=\frac{y_n}{1+\sqrt{1+y_n^2}}, n \geqslant 1 .
+$$
+证明: 当 $n>1$ 时, 都有 $2<x_n y_n<3$.
+%%<SOLUTION>%%
+记 $x_1=\cot \alpha, y_1=\tan \beta$, 这里 $\alpha=\frac{\pi}{6}, \beta=\frac{\pi}{3}$. 则
+$$
+x_2=\cot \alpha+\csc \alpha=\frac{1+\cos \alpha}{\sin \alpha}=\frac{2 \cos ^2 \frac{\alpha}{2}}{2 \sin \frac{\alpha}{2} \cos \frac{\alpha}{2}}=\cot \frac{\alpha}{2},
+$$
+依此结合数学归纳法易证: $x_n=\cot \frac{\alpha}{2^{n-1}}$. 类似地, 可证: $y_n=\tan \frac{\beta}{2^{n-1}}$. 从而当 $n>1$ 时, 有
+$$
+x_n y_n=\cot \frac{\alpha}{2^{n-1}} \tan \frac{\beta}{2^{n-1}}=\cot \frac{\pi}{2^n \times 3} \tan \frac{\pi}{2^{n-1} \times 3}
+$$
+$$
+=\frac{2}{1-\tan ^2 \frac{\pi}{2^n \times 3}} .
+$$
+由于 $\tan ^2 \frac{\pi}{2^n \times 3} \in\left(0, \tan ^2 \frac{\pi}{6}\right)$, 即 $\tan ^2 \frac{\pi}{2^n \times 3} \in\left(0, \frac{1}{3}\right)$, 故 $2<x_n y_n<3$. 命题获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题19. 数列 $\left\{a_n\right\}$ 定义如下 $a_0=\frac{1}{2}, a_{n+1}=\frac{2 a_n}{1+a_n^2}, n \geqslant 0$; 而数列 $\left\{c_n\right\}$ 满足 $c_0= 4, c_{n+1}=c_n^2-2 c_n+2, n \geqslant 0$.
+证明: 对任意 $n \geqslant 1$, 都有 $a_n=\frac{2 c_0 c_1 \cdots c_{n-1}}{c_n}$.
+%%<SOLUTION>%%
+由条件, 可知 $c_n-1=\left(c_{n-1}-1\right)^2$, 于是 $c_n-1=\left(c_{n-1}-1\right)^2= \left(c_{n-2}-1\right)^4=\cdots=\left(c_0-1\right)^{2^n}=3^{2^n}$, 故 $c_n=3^{2^n}+1$.
+另一方面, $1-a_{n+1}=\frac{\left(1-a_n\right)^2}{1+a_n^2}, 1+a_{n+1}=\frac{\left(1+a_n\right)^2}{1+a_n^2}$, 于是 $\frac{1-a_{n+1}}{a+a_{n+1}}= \left(\frac{1-a_n}{1+a_n}\right)^2$, 进而 $\frac{1-a_n}{1+a_n}=\left(\frac{1-a_{n-1}}{1+a_{n-1}}\right)^2=\cdots=\left(\frac{1-a_0}{1+a_0}\right)^{2^n}=\left(\frac{1}{3}\right)^{2^n}$, 故 $a_n=\frac{3^{2^n}-1}{3^{2^n}+1}$.
+注意到 $2 c_0 c_1 \cdots \cdots \cdot c_{n-1}=(3-1)(3+1)\left(3^2+1\right) \cdot \cdots \cdot\left(3^{2^{n-1}}+1\right)= \left(3^2-1\right)\left(3^2+1\right) \cdots \cdots\left(3^{2^{n-1}}+1\right)=\cdots=3^{2^n}-1$. 所以, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题20. 数列 $\left\{a_n\right\}$ 满足 $a_1=1, a_{n+1}=\frac{a_n}{n}+\frac{n}{a_n}, n \geqslant 1$. 证明: 对任意 $n \in \mathbf{N}^*, n \geqslant$ 4 , 都有 $\left[a_n^2\right]=n$.
+%%<SOLUTION>%%
+记 $f(x)=\frac{x}{n}+\frac{n}{x}$, 则由 $f(a)-f(b)=\frac{(a-b)\left(a b-n^2\right)}{a b n}$, 可知函数 $f(x)$ 是区间 $(0, n]$ 上的减函数.
+下面我们对 $n$ 运用数学归纳法, 先证明: $\sqrt{n}<a_n<\frac{n}{\sqrt{n-1}}, n \geqslant 3$.
+注意到 $a_1=1$, 可知 $a_2=2, a_3=2$, 于是 $n=3$ 时, 上述不等式成立.
+进一步, 设 $\sqrt{n}<a_n<\frac{n}{\sqrt{n-1}}, n \geqslant 3$, 由单调性可知 $f\left(a_n\right)<f(\sqrt{n})=\frac{n+1}{\sqrt{n}}$, 即 $a_{n+1}<\frac{n+1}{\sqrt{n}}$, 并且 $a_{n+1}=f\left(a_n\right)>f\left(\frac{n}{\sqrt{n-1}}\right)=\frac{n}{\sqrt{n-1}}>\sqrt{n+1}$. 故对一切 $n \in \mathbf{N}^*, n \geqslant 3$,均有 $\sqrt{n}<a_n<\frac{n}{\sqrt{n-1}}$.
+下面再证当 $n \geqslant 4$ 时, $a_n<\sqrt{n+1}$.
+事实上, 由于当 $n \geqslant 3$ 时, $a_{n+1}=f\left(a_n\right)>f\left(\frac{n}{\sqrt{n-1}}\right)=\frac{n}{\sqrt{n-1}}$, 故当 $n \geqslant 4$ 时,有 $a_n>\frac{n-1}{\sqrt{n-2}}$. 进而, 当 $n \geqslant 4$ 时, 有
+$$
+a_{n+1}=f\left(a_n\right)<f\left(\frac{n-1}{\sqrt{n-2}}\right)=\frac{(n-1)^2+n^2(n-2)}{(n-1) n \sqrt{n-2}}<\sqrt{n+2} .
+$$
+$\left( \text{最后一个不等式等价于} 2 n^2(n-3)+4 n-1>0\right)$, 而 $a_4=\frac{13}{6}<\sqrt{6}$ 是显然的.
+于是, 当 $n \geqslant 4$ 时,均有 $\sqrt{n}<a_n<\sqrt{n+1}$, 从而, 此时有 $\left[a_n^2\right]=n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题21. 设 $a$ 为无理数, $n$ 为大于 1 的整数.
+证明: $\left(a+\sqrt{a^2-1}\right)^{\frac{1}{n}}+(a- \left.\sqrt{a^2-1}\right)^{\frac{1}{n}}$ 为无理数.
+%%<SOLUTION>%%
+如果存在 $n \in \mathbf{N}^*$, 使得 $\left(a+\sqrt{a^2-1}\right)^{\frac{1}{n}}+\left(a-\sqrt{a^2-1}\right)^{\frac{1}{n}}$ 为有理数, 记 $x=\left(a+\sqrt{a^2-1}\right)^{\frac{1}{n}}, y=\left(a-\sqrt{a^2-1}\right)^{\frac{1}{n}}$, 那么 $x+y$ 为有理数, 而 $x^n+y^n=2 a$ 为无理数.
+下面对 $m$ 归纳来证: (1) 若 $x+y \in \mathbf{Q}$, 则对任意 $m \in \mathbf{N}^*$, 都有 $x^m+y^m \in \mathbf{Q}$ 
+注意到 $x^2+y^2=(x+y)^2-2 x y=(x+y)^2-2$, 结合 $x+y \in \mathbf{Q}$, 可知当 $m=1,2$ 时, (1) 都成立.
+现设 $x^m+y^m, x^{m+1}+y^{m+1} \in \mathbf{Q}$, 则由 $x^{m+2}+y^{m+2}= (x+y)\left(x^{m+1}+y^{m+1}\right)-x y\left(x^m+y^m\right)$, 结合 $x+y, x y(=1)$ 为有理数可知 $x^{m+2}+y^{m+2} \in \mathbf{Q}$. 从而 (1) 成立.
+利用(1)可知 $x^n+y^n \in \mathbf{Q}$, 这是一个矛盾.
+所以,命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题22. 设 $\left\{a_n\right\}$ 为一个实数数列, 定义如下: $a_1=t, a_{n+1}=4 a_n\left(1-a_n\right), n=1$, $2, \cdots$. 问:有多少个不同的实数 $t$, 使得 $a_{2011}=0$ ?
+%%<SOLUTION>%%
+若 $t>1$, 则 $a_2<0$, 依此结合数学归纳法, 可知当 $n \geqslant 2$ 时, 都有 $a_n<$ 0 , 从而 $a_{2011} \neq 0$; 若 $t<0$, 同上可得 $n \geqslant 1$ 时, 都有 $a_n<0$, 也不会有 $a_{2011}=$ 0 . 因此, 使 $a_{2011}=0$ 的 $t \in[0,1]$.
+现可设 $t=\sin ^2 \alpha, 0 \leqslant \alpha \leqslant \frac{\pi}{2}$, 则 $a_1=\sin ^2 \alpha$. 若 $a_n=\sin ^2\left(2^{n-1} \alpha\right)$, 则 $a_{n+1}=4 \sin ^2\left(2^{n-1} \alpha\right) \cos ^2\left(2^{n-1} \alpha\right)=\sin ^2\left(2^n \alpha\right)$. 于是, 由数学归纳法原理知对任意 $n$, 有 $a_n=\sin ^2\left(2^{n-1} \alpha\right)$. 因此, 由 $a_{2011}=0$, 得 $\sin ^2\left(2^{2010} \alpha\right)=0$, 从而 $2^{2010} \alpha= k \pi$, 即 $\alpha=\frac{k \pi}{2^{2010}}, k \in \mathbf{Z}$. 结合 $0 \leqslant \alpha \leqslant \frac{\pi}{2}$, 知 $0 \leqslant k \leqslant 2^{2009}$, 利用正弦函数在 $\left[0, \frac{\pi}{2}\right]$ 上是非负的, 且是单调递增的, 可得有 $2^{2009}+1$ 个不同的实数 $t$, 使得 $a_{2011}=0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题23. 实数数列 $x_1, x_2, \cdots, x_{2011}$ 满足: 对 $i=1,2, \cdots, 2010$, 都有 $\mid x_i-x_{i+1} \mid \leqslant 1$. 求代数式 $\sum_{i=1}^n\left|x_i^*\right|-|| \sum_{i=1}^n x_i \mid$ 的最大可能值.
+%%<SOLUTION>%%
+所求的最大值为 $(1+2+\cdots+1005) \times 2=1011030$, 在 $x_1=1005$, $x_2=1004, \cdots, x_{1005}=1, x_{1006}=0, x_{1007}=-1, \cdots, x_{2011}=-1005$ 时, 可以取到.
+下面证明:对满足条件的数列, 有(1)
+$$
+\sum_{i=1}^{2011}\left|x_i\right|-\left|\sum_{i=1}^{2011} x_i\right| \leqslant 2(1+2+\cdots+1005) .
+$$
+注意到, 将 $x_1, \cdots, x_{2011}$ 从大到小排列为 $y_1, y_2, \cdots, y_{2011}$ 后, 对 $1 \leqslant i \leqslant$ 2010 , 设 $y_i=x_m, y_{i+1}=x_n$. 我们总可以找到一个下标 $j$, 使得 $x_j \in\left\{y_1, \cdots\right.$, $\left.y_i\right\}, x_{j+1} \in\left\{y_{i+1}, \cdots, y_{2011}\right\}$ 或者 $x_j \in\left\{y_{i+1}, \cdots, y_{2011}\right\}, x_{j+1} \in\left\{y_1, \cdots\right.$, $\left.y_i\right\}$ (这个结论可从 $x_1 \in\left\{y_1, \cdots, y_i\right\}$ 和 $x_1 \in\left\{y_{i+1}, \cdots, y_{2011}\right\}$ 两种情形结合反证法推出). 不妨设为前者, 并设 $x_j=y_r, x_{j+1}=y_t$, 则 $r \leqslant i, t \geqslant i+1$, 此时 $1 \geqslant\left|x_j-x_{j+1}\right|=\left|y_r-y_t\right|=\mid\left(y_r-y_{r+1}\right)+\left(y_{r+1}-y_{r+2}\right)+\cdots+\left(y_i-\right.$
+$$
+\left.y_{i+1}\right)+\cdots+\left(y_{t-1}-y_t\right)|=| y_r-y_{r+1}|+| y_{r+1}-y_{r+2}|+\cdots+| y_i-y_{i+1} \mid+\cdots+
+$$
+$\left|y_{t-1}-y_t\right| \geqslant\left|y_i-y_{i+1}\right|$ (这里用到 $y_1, \cdots, y_{2011}$ 递减排列), 因此, 仍有 $\left|y_i-y_{i+1}\right| \leqslant 1$.
+进一步, 我们不妨设 $\sum_{i=1}^{2011} x_i \leqslant 0$ (若 $\sum_{i=1}^{2011} x_i>0$, 则用 $-x_i$ 代替 $x_i$ 后讨论), 排序后, 设 $y_1 \geqslant \cdots \geqslant y_k \geqslant 0 \geqslant y_{k+1} \geqslant \cdots \geqslant y_{2011}$. 那么
+$$
+\begin{aligned}
+S & =\sum_{i=1}^{2011}\left|x_i\right|-\left|\sum_{i=1}^{2011} x_i\right| \\
+& =\left(y_1+\cdots+y_k\right)-\left(y_{k+1}+\cdots+y_{2011}\right)+\left(y_1+\cdots+y_{2011}\right) \\
+& =2\left(y_1+\cdots+y_k\right) .
+\end{aligned}
+$$
+为证明(1)成立,我们只需证明:(2)
+$$
+y_1+\cdots+y_k \leqslant 1+2+\cdots+1005 \text {. }
+$$
+分两种情形来处理.
+情形一: 若 $k \geqslant 1006$, 则由 $y_1+\cdots+y_{2011} \leqslant 0$, 知
+$$
+y_1+\cdots+y_k \leqslant-\left(y_{k+1}+\cdots+y_{2011}\right),
+$$
+结合 $y_{k+1} \geqslant y_k-1, \cdots, y_{2011} \geqslant y_k-(2011-k)$ 可知
+$$
+\begin{aligned}
+& y_1+\cdots+y_k \leqslant-\left(\left(y_k-1\right)+\cdots+\left(y_k-(2011-k)\right)\right) \\
+= & -(2011-k) y_k+1+2+\cdots+(2011-k) \\
+\leqslant & 1+2+\cdots+(2011-k) \leqslant 1+2+\cdots+1005 .
+\end{aligned}
+$$
+此时, (2)成立.
+情形二:若 $k \leqslant 1005$, 则同上可知
+$$
+\begin{aligned}
+y_1+\cdots+y_k & \leqslant\left(y_{k+1}+k\right)+\left(y_{k+1}+(k-1)\right)+\cdots+\left(y_{k+1}+1\right) \\
+& =k y_{k+1}+1+\cdots+k \leqslant 1+2+\cdots+k \leqslant 1+2+\cdots+1005 .
+\end{aligned}
+$$
+(2)亦成立.
+综上可知,所求的最大值为 1011030 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题24. 设 $a_0, a_1, a_2, \cdots$ 是一个由正实数组成的无穷数列.
+证明: 存在无穷多个正整数 $n$, 使得 $1+a_n>\sqrt[n]{2} a_{n-1}$.
+%%<SOLUTION>%%
+采用反证法处理, 如果命题不成立, 那么, 存在正整数 $N$, 使得对任意 $n \geqslant N$, 都有(1)
+$$
+1+a_n \leqslant \sqrt[n]{2} \cdot a_{n-1} .
+$$
+现在定义一个正实数数列 $\left\{c_n\right\}: c_0=1, c_n=\frac{a_{n-1}}{1+a_n} c_{n-1}, n=1,2, \cdots$.
+则由 (1) 可知, (2):对 $n \geqslant N$, 都有 $c_n \geqslant 2^{-\frac{1}{n}} \cdot c_{n-1}$.
+注意到, 对 $n \in \mathbf{N}^*$, 有 $c_n\left(1+a_n\right)=a_{n-1} c_{n-1}$, 即 $c_n=a_{n-1} c_{n-1}-a_n c_n$, 裂项求和, 得
+$$
+c_1+\cdots+c_n=a_0-a_n c_n<a_0 .
+$$
+这表明和数列 $\left\{s_n\right\}$ 是一个有界数列, 这里 $s_n=c_1+\cdots+c_n$.
+另一方面, 由(2)可知,当 $n>N$ 时,有
+$$
+\begin{aligned}
+c_n & \geqslant c_{n-1} \cdot 2^{-\frac{1}{n}} \geqslant c_{n-2} \cdot 2^{-\left(\frac{1}{n-1}+\frac{1}{n}\right)} \geqslant \cdots \geqslant c_N \cdot 2^{-\left(\frac{1}{N+1}+\cdots+\frac{1}{n}\right)} \\
+& =C \cdot 2^{-\left(1+\frac{1}{2}+\cdots+\frac{1}{n}\right)} .
+\end{aligned}
+$$
+这里 $C=c_N \cdot 2^{-\left(1+\frac{1}{2}+\cdots+\frac{1}{N}\right)}$ 为常数.
+对任意 $k \in \mathbf{N}^*$, 若 $2^{k-1} \leqslant n<2^k$, 则
+$$
+\begin{aligned}
+1+\frac{1}{2}+\cdots+\frac{1}{n} \leqslant & 1+\left(\frac{1}{2}+\frac{1}{3}\right)+\left(\frac{1}{4}+\cdots+\frac{1}{7}\right)+\cdots \\
+& +\left(\frac{1}{2^{k-1}}+\cdots+\frac{1}{2^k-1}\right) \\
+\leqslant & 1+\left(\frac{1}{2}+\frac{1}{2}\right)+\left(\frac{1}{4}+\cdots+\frac{1}{4}\right)+\cdots \\
+& +\left(\frac{1}{2^{k-1}}+\cdots+\frac{1}{2^{k-1}}\right)=k .
+\end{aligned}
+$$
+所以, 此时有 $c_n \geqslant C \cdot 2^{-k}\left(2^{k-1} \leqslant n<2^k\right)$.
+现在设 $2^{r-1} \leqslant N<2^r, r \in \mathbf{N}^*$, 那么对任意 $m>r$, 有
+$$
+\begin{aligned}
+c_{2^r}+c_{2^r+1}+\cdots+c_{2^m-1} & =\left(c_{2^r}+\cdots+c_{2^{r+1}-1}\right)+\cdots+\left(c_{2^{m-1}}+\cdots+c_{2^m-1}\right) \\
+& \geqslant\left(C \cdot 2^{-(r+1)}\right) \cdot 2^r+\cdots+\left(C \cdot 2^{-(m+1)}\right) \cdot 2^m \\
+& =\frac{C(m-r)}{2} .
+\end{aligned}
+$$
+这表明 $s_{2^m-1}>\frac{C(m-r)}{2}$, 当 $m \rightarrow+\infty$ 时, 有 $s_{2^m-1} \rightarrow+\infty$, 与 $\left\{s_n\right\}$ 为有界数列矛盾.
+所以, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题25. 函数 $F: \mathbf{N} \rightarrow \mathbf{N}$, 具有下述性质: 对任意 $n \in \mathbf{N}$, 都有
+(1) $F(4 n)=F(2 n)+F(n)$;
+(2) $F(4 n+2)=F(4 n)+1$;
+(3) $F(2 n+1)=F(2 n)+1$.
+证明: 对任意正整数 $m$, 满足 $0 \leqslant n \leqslant 2^m$, 且 $F(4 n)=F(3 n)$ 的整数 $n$ 的个数为 $F\left(2^{m+1}\right)$.
+%%<SOLUTION>%%
+在条件 (1) 中令 $n=0$, 可知 $F(0)=0$. 对 $n \in \mathbf{N}^*$, 设 $n$ 的二进制表示为 $n=\left(n_k n_{k-1} \cdots n_0\right)=n_k \cdot 2^k+\cdots+n_0 \cdot 2^0$, 这里 $n_k=1$, 而对 $0 \leqslant i \leqslant k-$ 1 , 有 $n_i \in\{0,1\}$.
+我们对 $k$ 归纳来证明: 对任意 $n \in \mathbf{N}^*$, 都有(1):
+$$
+F(n)=n_k F_k+n_{k-1} F_{k-1}+\cdots+n_0 F_0,
+$$
+这里数列 $\left\{F_m\right\}$ 定义为 $F_0=F_1=1, F_{m+2}=F_{m+1}+F_m, m=0,1,2, \cdots$ (它是本书中 Fibonacci 数列下标向前平移一项所得).
+事实上, 由 $F(0)=0$ 及条件 (3) 可知 $F(1)=1$, 进而可得 $F(2)=1$, $F(3)=F(2)+1=F_0+F_1, F(4)=F(2)+F(1)=2=F_2$. 所以, 命题对 $k=0,1$ 成立.
+现设 (1) 对 $k$ 和 $k+1$ 成立, 考虑 $k+2$ 的情形, 此时可设 $n= \left(n_{k+2} n_{k+1} \cdots n_0\right)_2$. 如果 $\left(n_1, n_0\right)=(0,0)$, 那么由 (1) 知 $F(n)= F\left(\left(n_{k+2} n_{k+1} \cdots n_1\right)_2\right)+F\left(\left(n_{k+2} \cdots n_2\right)_2\right)=n_{k+2} F_{k+1}+\cdots+n_1 F_0+n_{k+2} F_k+\cdots+ n_2 F_0=n_{k+2}\left(F_{k+1}+F_k\right)+\cdots+n_2\left(F_1+F_0\right)+n_1 F_0=n_{k+2} F_{k+2}+\cdots+n_2 F_2+ n_1 F_1+n_0 F_0$ (这里用到 $\left.n_1=n_0=0\right)$, (1) 对 $k+2$ 成立; 如果 $\left(n_1, n_0\right)=(1,0)$, 那么由 (2) 知 $F(n)=F\left(\left(n_{k+2} n_{k+1} \cdots n_2 n_1^{\prime} n_0^{\prime}\right)_2\right)+1$, 这里 $n_1^{\prime}=n_0^{\prime}=0$, 于是, $F(n)=n_{k+2} F_{k+2}+\cdots+n_2 F_2+1=n_{k+2} F_{k+2}+\cdots+n_2 F_2+n_1 F_1+n_0 F_0$, (1) 也成立; 如果 $\left(n_1, n_0\right)=(0,1)$, 那么 $F(n)=F\left(\left(n_{k+2} \cdots n_2 n_1^{\prime} n_0^{\prime}\right)_2\right)+1$, 这里 $n_1^{\prime}=n_0^{\prime}=0$, 利用条件 (1) 及前面的结论可知 (1) 成立; 如果 $\left(n_1, n_0\right)=(1$, $1)$, 那么 $F(n)=F\left(\left(n_{k+2} \cdots n_1 n_0^{\prime}\right)\right)+1$, 这里 $n_0^{\prime}=0$, 利用条件 (2) 及前面的结论可知 (1) 成立.
+所以, (1) 对任意 $n \in \mathbf{N}^*$ 都成立.
+利用(1)可知 $F(4 n)=F(3 n)$ 的充要条件是 $n$ 的二进制表示 $\left(n_k n_{k-1} \cdots n_0\right)_2$ 中没有相邻的两个数都等于 1 (这里还用到数列 $\left\{F_m\right\}$ 的定义). 在 $0 \leqslant n<2^m$ 中, 记二进制表示中没有相邻的两个 1 的数的个数为 $f_m$, 则 $f_0=1, f_1=2$, 而去掉 $n$ 的末位数字 $n_0$ 后, 依 $n_0=0 、 1$ 分类, 分别有 $f_{m-1}$ 和 $f_{m-2}$ (因为 $n_0=1$ 时, 必有 $\left.n_1=0\right)$, 故 $f_m=f_{m-1}+f_{m-2}$. 这表明, 在 $0 \leqslant n<2^m$ 中, 有 $F_{m+1}(= \left.F\left(2^{m+1}\right)\right)$ 个数 $n$ 满足 $F(4 n)=F(3 n)$, 从而命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题26. 函数 $f: \mathbf{N}^* \rightarrow \mathbf{N}^*$ 定义如下 $f(1)=1$, 且对任意正整数 $n$, 都有
+$$
+f(n+1)=\left\{\begin{array}{l}
+f(n)+2, \text { 若 } n=f(f(n)-n+1), \\
+f(n)+1, \text { 其他 } n .
+\end{array}\right.
+$$
+(1)证明: 对任意正整数 $n$, 都有 $f(f(n)-n+1) \in\{n, n+1\}$;
+(2)求 $f(n)$ 的表达式.
+%%<SOLUTION>%%
+由递推式, 可知 $f(n) \leqslant f(n-1)+2 \leqslant \cdots \leqslant f(1)+2(n-1)= 2 n-1$. 故 $f(n)-n+1 \leqslant n$. 因此, 如果 $f(1), \cdots, f(n)$ 的值确定了, 那么 $f(n+1)$ 的值唯一确定.
+从而, 存在唯一的函数 $f$ 满足条件.
+现在, 令 $g(n)=\left[\frac{1+\sqrt{5}}{2} n\right]$, 记 $\alpha=\frac{1+\sqrt{5}}{2}$, 则 $g(1)=1$, 且对任意 $n \in \mathbf{N}^*$, 都有
+$$
+g(n+1)-g(n)=[\alpha(n+1)]-[\alpha n]=[\alpha+\varepsilon],
+$$
+这里 $\varepsilon=\{\alpha n\}=\alpha n-[\alpha n]$.
+另一方面, $g(g(n)-n+1)=[\alpha(g(n)-n+1)]=[\alpha(\alpha n-\varepsilon-n+1)]= \left[\left(\alpha^2-\alpha\right) n+\alpha(1-\varepsilon)\right]=n+[\alpha(1-\varepsilon)]$, 这里用到 $\alpha^2-\alpha-1=0$.
+注意到 $\varepsilon \neq 2-\alpha=\frac{3-\sqrt{5}}{2}$ (否则 $1=\frac{[\alpha n]+\varepsilon}{\alpha}=\frac{[\alpha n]+2}{\alpha}-1$, 导致 $\alpha$ 为有理数,矛盾), 利用上述结论, 若 $0 \leqslant \varepsilon<2-\alpha$, 则 $\alpha(1-\varepsilon)>\alpha(\alpha-1)=1$,
+从而 $g(g(n)-n+1)=n+1$, 此时 $1<\alpha+\varepsilon<\alpha+2-\alpha=2$, 即有 $g(n+ 1)-g(n)=1$; 若 $2-\alpha<\varepsilon<1$, 则 $\alpha(1-\varepsilon)<\alpha(\alpha-1)=1$, 从而 $g(g(n)- n+1)=n$, 这时 $2<\alpha+\varepsilon<3$, 即 $g(n+1)-g(n)=2$.
+上述讨论表明: $g: \mathbf{N}^* \rightarrow \mathbf{N}^*$ 满足 $f$ 所满足的所有条件, 从而对任意 $n \in \mathbf{N}^*$, 有 $f(n)=g(n)$, 这给出了 (2) 要求的答案.
+结合(1)知 (1)成立.
+问题获解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题27. 数列 $\left\{a_n\right\}$ 定义如下 $a_1=0, a_n=a_{\left[\frac{n}{2}\right]}+(-1)^{\frac{n(n+1)}{2}}, n=2,3, \cdots$. 对每个非负整数 $k$, 求满足 $2^k \leqslant n<2^{k+1}$, 且 $a_n=0$ 的下标 $n$ 的个数.
+%%<SOLUTION>%%
+对每个 $n \in \mathbf{N}^*$, 设 $n$ 在二进制表示下, 相邻数对中 00 与 11 出现的次数和为 $x_n$, 相邻数对中 01 与 10 出现的次数和为 $y_n$. 我们证明: $a_n=x_n-y_n$, (1).
+事实上,当 $n=1$ 时, $x_1=y_1=0$,故 (1) 对 $n=1$ 成立.
+现设(1)对下标 $1,2, \cdots, n-1(n \geqslant 2)$ 都成立, 考虑 $n$ 的情形.
+如果二进制表示下, $n$ 的末两位为 00 或 11 ,则 $n \equiv 0$ 或 $3(\bmod 4)$,这时, $a_n=a_{\left[\frac{n}{2}\right]}+1$, 而此时, $x_n=x_{\left[\frac{n}{2}\right]}+1, y_n=y_{\left[\frac{n}{2}\right]}$. 所以, (1) 对 $n$ 成立.
+如果二进制表示下, $n$ 的末两位为 01 或 10 , 则 $n \equiv 1$ 或 $2(\bmod 4)$; 这时 $a_n=a_{\left[\frac{n}{2}\right]}-1$, 此时 $x_n=x_{\left[\frac{n}{2}\right]}, y_n=y_{\left[\frac{n}{2}\right]}+1$, 所以, (1) 对 $n$ 成立.
+综上, (1) 对任意 $n \in \mathbf{N}^*$ 都成立.
+现在需要计算 $2^k \leqslant n<2^{k+1}$ 中, 在二进制表示下使得 $x_n$ 与 $y_n$ 相等的 $n$ 的个数.
+这时 $n$ 在二进制表示下是一个 $k+1$ 位数, 设为 $B_n$, 当 $k \geqslant 1$ 时, 将 $B_n$ 的从左到右每一位减去它的下一位数, 然后取绝对值, 可得一个 $k$ 元的 $0 、 1$ 数组 $C_n$ (例如: 若 $B_n=(1101)_2$, 则 $C_n=(011)_2$ ), 注意到, $B_n$ 每一个相邻数对 00 与 11 变为 $C_n$ 中的一个 0 , 而 01 与 10 变为 $C_n$ 中的一个 1 . 所以,若 $x_n=y_n$, 则 $C_n$ 中 1 的个数与 0 的个数相同.
+反过来, 对一个由 $0 、 1$ 组成的 $k$ 元数组 $C_n=\left(C_1 C_2 \cdots C_k\right)$, 则在 $\bmod 2$ 意义下求下面的和 $b_1=1+c_1, b_2=b_1+c_2, \cdots$, $b_k=b_{k-1}+b_k$, 这里 $b_0=1$, 那么, $B_n=\left(b_0 b_1 \cdots b_k\right)_2$ 是一个满足 $2^k \leqslant n<2^{k+1}$ 的数 $n$ 的二进制表示.
+这表明 $B_n$ 与 $C_n$ 之间是一个一一对应.
+所以, 原题中所求答案等于 $k$ 元 $0 、 1$ 数组中 0 与 1 的个数相等的数组的个数.
+因此,
+当 $k$ 为奇数时, 答案为 0 ; 当 $k$ 为偶数时, 答案为 $\mathrm{C}_k^{\frac{k}{2}}$ (注意, 这里认为 $\mathrm{C}_0^0=1$ ).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题28. 数列 $\left\{x_n\right\}$ 满足 $x_1=1, x_{n+1}=\left\{\begin{array}{l}x_n-2, \text { 若 } x_n-2>0, \text { 且 } x_n-2 \notin \\ x_n+3, \text { 其他情形, }\end{array}\right. \left\{x_1, \cdots, x_n\right\}$, 证明: 对任意大于 1 的正整数 $k$, 存在下标 $n$, 使得 $x_{n+1}= x_n+3=k^2$.
+%%<SOLUTION>%%
+我们证明: 对任意 $n \in \mathbf{N}$, 都有(1):
+$$
+\begin{aligned}
+& x_{5 n+1}=5 n+1, x_{5 n+2}=5 n+4, x_{5 n+3}=5 n+2, \\
+& x_{5 n+4}=5 n+5, x_{5 n+5}=5 n+3 .
+\end{aligned}
+$$
+(利用此结果及 $k^2 \equiv 0,1$ 或 $4(\bmod 5)$, 即可知命题成立).
+事实上,当 $n=0$ 时, 由 $a_1=1$ 知 $a_2=4, a_3=2, a_4=5, a_5=3$, 故 (1) 对 $n=0$ 成立.
+现设(1)对 $n=0,1,2, \cdots, m-1\left(m \in \mathbf{N}^*\right)$ 都成立, 考虑 $n=m$ 的情形, 由 (1) 的结构 $\left(a_{5 n+1}, \cdots, a_{5 n+5}\right.$ 是 $5 n+1, \cdots, 5 n+5$ 的一个排列) 可知 $a_1$, $a_2, \cdots, a_{5 m}$ 是 $1,2, \cdots, 5 m$ 的一个排列, 利用递推关系式可知 $a_{5 m+1}=a_{5 m}- 2=5 m+1, a_{5 m+2}=a_{5 m+1}+3=5 m+4, a_{5 m+3}=a_{5 m+2}-2=5 m+2, a_{5 m+4}= a_{5 m+3}+3=5 m+5, a_{5 m+5}=a_{5 m+4}-2=5 m+2$. 所以, 结论 (1) 对 $m$ 也成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题29. 设 $n$ 是一个正奇数, $\theta$ 是一个实数, 满足: $\frac{\pi}{\theta}$ 是一个无理数.
+记 $a_k= \tan \left(\theta+\frac{k \pi}{n}\right), k=1,2, \cdots, n$. 证明: $\frac{a_1+a_2+\cdots+a_n}{a_1 a_2 \cdots a_n}$ 是一个整数,并确定其值.
+%%<SOLUTION>%%
+利用 $\frac{\pi}{\theta}$ 为无理数, 可知 $a_1, a_2, \cdots, a_n$ 是 $n$ 个两两不同的实数.
+为确定所求代数式的值, 我们去寻找一个以 $a_1, \cdots, a_n$ 为根的 $n$ 次多项式.
+注意到 $\mathrm{e}^{\mathrm{i} \theta}=\cos \theta+\mathrm{i} \sin \theta, \mathrm{e}^{-\mathrm{i} \theta}=\cos \theta-\mathrm{i} \sin \theta$, 于是, 有 $\sec \theta \mathrm{e}^{\mathrm{i} \theta}= 1+\mathrm{i} \tan \theta, \sec \theta \cdot \mathrm{e}^{-\mathrm{i} \theta}=1-\mathrm{i} \tan \theta$, 所以(1)
+$$
+1+\mathrm{itan} \theta=\mathrm{e}^{2 \mathrm{i} \theta}(1-\mathrm{i} \tan \theta) .
+$$
+令 $\omega=\mathrm{e}^{2 i n \theta}$, 则多项式 $Q_n(x)=(1+\mathrm{i} x)^n-\omega(1-\mathrm{i} x)^n$ 有 $n$ 个根 $a_1, a_2, \cdots$, $a_n$. (这一点由 (1) 可知, 因为 $\omega$ 的 $n$ 次方根为 $\left.\mathrm{e}^{2 \mathrm{i}\left(\theta+\frac{k}{n} \pi\right)}, k=1,2, \cdots, n\right)$, 而 $Q_n(x)$ 是一个 $n$ 次多项式, 所以, $a_1, \cdots, a_n$ 是 $Q_n(x)$ 的所有根.
+记 $Q_n(x)=c_n x^n+\cdots+c_0$, 则由韦达定理知 $a_1+\cdots+a_n=-\frac{c_{n-1}}{c_n}, a_1 \cdots a_n=(-1)^n \cdot \frac{c_0}{c_n}$, 所以 $\frac{a_1+\cdots+a_n}{a_1 \cdots a_n}=(-1)^{n-1} \cdot \frac{c_{n-1}}{c_0}$.
+对 $Q_n(x)$ 用二项式定理, 知 $c_{n-1}=n \cdot \mathrm{i}^{n-1}-\omega n(-\mathrm{i})^{n-1}=n \mathrm{i}^{n-1}(1-\omega), c_0= 1-\omega$, 从而 $\frac{a_1+\cdots+a_n}{a_1 \cdots a_n}=n \cdot(-\mathrm{i})^{n-1}$, 结合 $n$ 为奇数, 可得
+$$
+\frac{a_1+\cdots+a_n}{a_1 \cdots a_n}=(-1)^{\frac{n-1}{2}} \cdot n \text {. }
+$$
+问题获解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题30. 证明: 对任意 $n \in \mathrm{N}^*$, 存在一个首项系数为 1 的 $n$ 次整系数多项式 $P(x)$, 使得 $2 \cos n \varphi=P(2 \cos \varphi)$, 这里 $\varphi$ 为任意实数.
+%%<SOLUTION>%%
+当 $n=1$ 时, 取 $P(x)=x$ 即可; 当 $n=2$ 时, $2 \cos 2 \varphi=(2 \cos \varphi)^2-2$, 命题也成立.
+假设命题对 $n=k$ 和 $k+1$ 成立, 即存在首项系数为 1 的整系数多项式 $f(x)$ 和 $g(x)$, 使得
+$$
+2 \cos k \varphi=f(2 \cos \varphi), 2 \cos (k+1) \varphi=g(2 \cos \varphi) .
+$$
+其中 $f 、 g$ 的次数分别为 $k$ 和 $k+1$.
+下面考虑 $n=k+2$ 的情形.
+注意到
+$$
+\begin{aligned}
+2 \cos (k+2) \varphi=2 \cos [(k+1) \varphi+\varphi] \\
+& =2 \cos (k+1) \varphi \cos \varphi-2 \sin (k+1) \varphi \sin \varphi . \label{(1)}\\
+2 \cos k \varphi & =2 \cos [(k+1) \varphi-\varphi] \\
+& =2 \cos (k+1) \varphi \cos \varphi+2 \sin (k+1) \varphi \cos \varphi . \label{(2)}
+\end{aligned}
+$$
+将(1)与(2)相加, 得
+$$
+2 \cos (k+2) \varphi+2 \cos k \varphi=4 \cos (k+1) \varphi \cos \varphi .
+$$
+利用归纳假设, 可知
+$$
+2 \cos (k+2) \varphi=(2 \cos \varphi) g(2 \cos \varphi)-f(2 \cos \varphi) .
+$$
+故令 $h(x)=x g(x)-f(x)$ (易知 $h(x)$ 是一个首项系数为 1 的整系数多项式), 就有
+$$
+2 \cos (k+2) \varphi=h(2 \cos \varphi)
+$$
+命题对 $k+2$ 成立.
+所以, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题31. 设 $\alpha$ 为有理数, $\cos \alpha \pi$ 也是有理数.
+求 $\cos \alpha \pi$ 的所有可能值.
+%%<SOLUTION>%%
+记 $\theta=\alpha \pi$, 由 $\alpha$ 为有理数, 知存在 $n \in \mathbf{N}^*$, 使得 $n \theta=2 k \pi, k \in \mathbf{Z}$, 即 $\cos n \theta=1$. 由上题的结论知存在整系数多项式 $f(x)=x^n+a_{n-1} x^{n-1}+\cdots+ a_0$, 使得 $2 \cos n \theta=f(2 \cos \theta)$, 从而有
+$$
+(2 \cos \theta)^n+a_{n-1}(2 \cos \theta)^{n-1}+\cdots+a_1(2 \cos \theta)+a_0-2=0,
+$$
+这表明 $2 \cos \theta$ (注意 $\cos \alpha \pi \in \mathbf{Q})$ 是方程(1)
+$$
+x^n+a_{n-1} x^{n-1}+\cdots+a_1 x+a_0-2=0
+$$
+的有理根.
+然而(1)左边是一个首项系数为 1 的多项式, 故(1)的有理根都是整数根.
+所以 $2 \cos \theta$ 为整数, 结合 $|\cos \theta| \leqslant 1$, 知 $2 \cos \theta \in\{-2,-1,0,1,2\}$, 于是 $\cos \alpha \pi \in\left\{0, \pm \frac{1}{2}, \pm 1\right\}$ (集合中的每个值都存在 $\alpha$ 取到是显然的).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题32. 单位圆上是否存在无穷多个点, 使得其中任意两点之间的距离都是有理数?
+%%<SOLUTION>%%
+不妨设所给单位圆方程为 $x^2+y^2=1$, 现取 $\theta=\arccos \frac{3}{5}$, 则 $\cos \theta= \frac{3}{5}, \sin \theta=\frac{4}{5}$. 考虑由 $P_n(\cos 2 n \theta, \sin 2 n \theta)$ 组成的点集 $M, n=1,2, \cdots$.
+对任意 $i 、 j \in \mathbf{N}^*$, 我们有
+$$
+\begin{aligned}
+\left|P_i P_j\right|^2 & =(\cos 2 i \theta-\cos 2 j \theta)^2+(\sin 2 i \theta-\sin 2 j \theta)^2 \\
+& =2-2 \cos 2(i-j) \theta \\
+& =4 \sin ^2(i-j) \theta
+\end{aligned}
+$$
+所以, $\left|P_i P_j\right|=2|\sin (i-j) \theta|$.
+注意到, $\cos \theta 、 \sin \theta \in \mathbf{Q}$, 由 $\sin (n+1) \theta=\sin n \theta \cos \theta+\cos n \theta \sin \theta$ 及 $\cos (n+-1) \theta=\cos n \theta \cos \theta-\sin n \theta \sin \theta$ 结合数学归纳法易证: 对任意 $n \in \mathbf{N}^*$, 都有 $\sin n \theta 、 \cos n \theta \in \mathbf{Q}$. 因此, $M$ 中任意两点之间的距离都是有理数.
+现在还需要证明: $M$ 是一个无穷点集.
+若否, 设 $M$ 是一个有限集, 则存在 $m 、 n \in \mathbf{N}^*, m \neq n$, 使得 $2 m \theta=2 n \theta+ 2 k \pi, k \in \mathbf{Z}$, 这表明 $\theta=\alpha \pi, \alpha \in \mathbf{Q}$. 又 $\cos \theta=\frac{3}{5} \in \mathbf{Q}$, 由上题的结论, 知 $\cos \alpha \pi \in\left\{0, \pm \frac{1}{2}, \pm 1\right\}$, 但 $\cos \theta=\frac{3}{5} \notin\left\{0, \pm \frac{1}{2}, \pm 1\right\}$, 矛盾.
+所以, $M$ 是一个无限集.
+综上, 存在满足条件的无穷多个点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题33. 设 $n$ 为不小于 2 的正整数.
+求所有的实系数多项式
+$$
+P(x)=a_n x^n+a_{n-1} x^{n-1}+\cdots+a_0,\left(a_n \neq 0\right),
+$$
+使得 $P(x)$ 恰有 $n$ 个不大于- 1 的实根, 并且
+$$
+a_0^2+a_1 a_n=a_n^2+a_0 a_{n-1} .
+$$
+%%<SOLUTION>%%
+由条件,可设
+$$
+P(x)=a_n\left(x+\beta_1\right)\left(x+\beta_2\right) \cdots\left(x+\beta_n\right) .
+$$
+这里 $\beta_i \geqslant 1, i=1,2, \cdots, n$,且 $a_n \neq 0$.
+利用 $a_0^2+a_1 a_n=a_n^2+a_0 a_{n-1}$ 可知
+$$
+a_n^2\left(\prod_{i=1}^n \beta_i\right)^2+a_n^2\left(\prod_{i=1}^n \beta_i\right) \sum_{i=1}^n \frac{1}{\beta_i}=a_n^2+\left(\prod_{i=1}^n \beta_i\right)\left(\sum_{i=1}^n \beta_i\right) a_n^2 .
+$$
+于是
+$$
+\prod_{i=1}^n \beta_i-\frac{1}{\prod_{i=1}^n \beta_i}=\sum_{i=1}^n \beta_i-\sum_{i=1}^n \frac{1}{\beta_i} . \label{(1)}
+$$
+下面对 $n$ 运用数学归纳法证明: 当 $\beta_i \geqslant 1, i=1,2, \cdots, n$ 时,都有
+$$
+\prod_{i=1}^n \beta_i-\frac{1}{\prod_{i=1}^n \beta_i} \geqslant \sum_{i=1}^n \beta_i-\sum_{i=1}^n \frac{1}{\beta_i} .
+$$
+等号当且仅当 $\beta_1, \cdots, \beta_n$ 中有 $n-1$ 个数等于 1 时成立.
+当 $n=2$ 时,若 $\beta_1 、 \beta_2 \geqslant 1$, 则有如下等价关系成立
+$$
+\begin{aligned}
+\beta_1 \beta_2-\frac{1}{\beta_1 \beta_2} & \geqslant\left(\beta_1+\beta_2\right)-\left(\frac{1}{\beta_1}+\frac{1}{\beta_2}\right) \\
+& \Leftrightarrow\left(\beta_1 \beta_2\right)^2-1 \geqslant\left(\beta_1+\beta_2\right)\left(\beta_1 \beta_2-1\right) \\
+& \Leftrightarrow\left(\beta_1 \beta_2-1\right)\left(\beta_1-1\right)\left(\beta_2-1\right) \geqslant 0 .
+\end{aligned}
+$$
+所以 $n=2$ 时, 上述命题成立.
+设命题对 $n=k$ 时成立, 当 $n=k+1$ 时, 我们令 $\alpha=\beta_k \beta_{k+1}$, 由归纳假设, 可知
+$$
+\prod_{i=1}^{k+1} \beta_i-\frac{1}{\prod_{i=1}^{k+1} \beta_i} \geqslant\left(\sum_{i=1}^{k-1} \beta_i-\sum_{i=1}^{k-1} \frac{1}{\beta_i}\right)+\alpha-\frac{1}{\alpha},
+$$
+等号当且仅当 $\beta_1, \beta_2, \cdots, \beta_{k-1}, \alpha$ 中有 $k-1$ 个等于 1 时成立.
+又由 $n=2$ 的情形, 可知 $\alpha-\frac{1}{\alpha}=\beta_k \beta_{k+1}-\frac{1}{\beta_k \beta_{k+1}} \geqslant \beta_k+\beta_{k+1}-\frac{1}{\beta_k}-\frac{1}{\beta_{k+1}}$. 于是
+$$
+\prod_{i=1}^{k+1} \beta_i-\frac{1}{\prod_{i=1}^{k+1} \beta_i} \geqslant \sum_{i=1}^{k+1} \beta_i-\sum_{i=1}^{k+1} \frac{1}{\beta_i},
+$$
+等号当且仅当 $\beta_1, \cdots, \beta_{k-1}, \alpha$ 中有 $k-1$ 个为 1 , 并且 $\beta_k$ 与 $\beta_{k+1}$ 中有一个为 1 时成立,而这等价于 $\beta_1, \cdots, \beta_{k+1}$ 中有 $k$ 个为 1 时成立.
+由上述结论及(1)式可知, 形如 $P(x)=a_n(x+1)^{n-1}(x+\beta), a_n \neq 0$, $\beta \geqslant 1$ 的多项式为所有满足条件的多项式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题34. 设 $P(x)$ 是一个整系数多项式, 满足: 对任意 $n \in \mathbf{N}^*$, 都有 $P(n)>n$. 并且对任意 $m \in \mathbf{N}^*$, 数列
+$$
+P(1), P(P(1)), P(P(P(1))), \cdots
+$$
+中都有一项是 $m$ 的倍数.
+证明: $P(x)=x+1$.
+%%<SOLUTION>%%
+记 $x_1=1, x_{n+1}=P\left(x_n\right), n=1,2, \cdots$, 对固定的 $n \in \mathbf{N}^*, n \geqslant 2$, 记 $x_n-1=M$, 则 $x_1 \equiv 1 \equiv x_n(\bmod M)$, 从而 $P\left(x_1\right) \equiv P\left(x_n\right)(\bmod M)$, 即 $x_2 \equiv x_{n+1}(\bmod M)$. 这样利用数学归纳法, 可证: 对任意 $k \in \mathbf{N}^*$, 都有
+$$
+x_k \equiv x_{n+k-1}(\bmod M) . \label{(1)}
+$$
+由条件 $x_1, x_2, \cdots$ 中有一项为 $M$ 的倍数,故存在 $r \in \mathbf{N}^*$, 使得 $x_r \equiv 0 (\bmod M)$. 而由 (1) 知数列 $\left\{x_k\right\}$ 在 $\bmod M$ 的意义下是一个以 $n-1$ 为周期的数列,故可设 $1 \leqslant r \leqslant n-1$.
+现由 $P(n)>n$, 可知 $x_1<x_2<\cdots<x_n$, 故 $x_{n-1} \leqslant x_n-1=M$, 进而 $x_r \leqslant M$. 但 $M \mid x_r$, 故 $x_r=M=x_n-1$, 这要求 $r=n-1$, 即 $x_n-1==x_{n-1}$, 所以 $P\left(x_{n-1}\right)=x_n=x_{n-1}+1$. 由于此式对任意 $n \geqslant 2$ 都成立, 结合 $\left\{x_n\right\}$ 为单调递增数列, 知 $P(x)=x+1$ 对无穷多个不同的正整数成立.
+所以 $P(x)=x+1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题35. 设 $P(x)$ 是一个奇次实系数多项式, 满足: 对任意 $x \in \mathbf{R}$, 都有
+$$
+P\left(x^2-1\right)=P(x)^2-1 .
+$$
+证明: $P(x)=x$.
+%%<SOLUTION>%%
+由条件, 得 $P(-x)^2-1=P\left((-x)^2-1\right)=P\left(x^2-1\right)=P(x)^2-$ 1 , 故 $P(x)^2=P(-x)^2$. 现设 $P(x)=a_{2 k+1} x^{2 k+1}+a_{2 k} x^{2 k}+\cdots+a_1 x+ a_0\left(a_{2 k+1} \neq 0\right)$. 对比 $P(x)^2$ 与 $P(-x)^2$ 展开后的各项系数, 可得 $a_{2 k}= a_{2 k-2}=\cdots=a_0=0$. 因此, $P(x)$ 只有非零的奇次项系数, 即有 $P(-x)= -P(x)$. 从而 $P(0)=0$, 进而
+$$
+P(-1)=P\left(0^2-1\right)=P(0)^2-1=-1, P(1)=-P(-1)=1 \text {. }
+$$
+考虑数列 $b_1=1, b_{n+1}=\sqrt{b_n+1}, n=1,2, \cdots$. 注意到 $b_1<b_2=\sqrt{2}$. 现设 $b_n<b_{n+1}$, 则 $b_n+1<b_{n+1}+1, \sqrt{b_n+1}<\sqrt{b_{n+1}+1}$, 即 $b_{n+1}<b_{n+2}$. 依此由数学归纳法原理知 $\left\{b_n\right\}$ 是一个递增数列.
+另外 $P\left(b_1\right)=P(1)=1=b_1$, 现设 $P\left(b_n\right)=b_n$, 则
+$$
+P\left(b_{n+1}\right)^2=P\left(b_{n+1}^2-1\right)+1=P\left(b_n\right)+1=b_n \dot{+}=b_{n+1}^2 .
+$$
+于是 $P\left(b_{n+1}\right)= \pm b_{n+1}$, 但若 $P\left(b_{n+1}\right)=-b_{n+1}$, 则 $P\left(b_{n+2}\right)^2=P\left(b_{n+1}\right)+1= 1-b_{n+1}=1-\sqrt{b_n+1}<0$,矛盾.
+故 $P\left(b_{n+1}\right)=b_{n+1}$. 从而, 由数学归纳法原理知, 对任意 $n \in \mathbf{N}^*$, 都有 $P\left(b_n\right)=b_n$.
+综上可知, 有无穷多个不同的实数 $x$, 使得 $P(x)=x$. 故对任意 $x$, 都有 $P(x)=x$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题36. 函数 $f: \mathbf{R} \rightarrow \mathbf{R}$ 满足下述条件:
+(1) 对任意实数 $x 、 y$, 都有 $|f(x)-f(y)| \leqslant|x-y|$;
+(2) 存在正整数 $k$ 使得 $f^{(k)}(0)=0$, 这里 $f^{(1)}(x)=f(x), f^{(n+1)}(x)= f\left(f^{(n)}(x)\right), n=1,2, \cdots$.
+证明: $f(0)=0$ 或者 $f(f(0))=0$.
+%%<SOLUTION>%%
+由 (2), 不妨设 $k$ 是最小的使 $f^{(k)}(0)=0$ 成立的正整数,若 $k \geqslant 3$,则
+$$
+\begin{aligned}
+& \mid \begin{aligned}
+f(0) \mid & =|f(0)-0| \geqslant\left|f^{(2)}(0)-f(0)\right| \geqslant \cdots \geqslant\left|f^{(k)}(0)-f^{(k-1)}(0)\right| \\
+& =\left|f^{(k-1)}(0)\right|,
+\end{aligned} \\
+& \text { 而 }\left|f^{(k-1)}(0)\right|=\left|f^{(k-1)}(0)-0\right| \geqslant\left|f^{(k)}(0)-f(0)\right|=|f(0)| .
+\end{aligned}
+$$
+所以 $|f(0)|==\left|f^{(k-1)}(0)\right|$.
+如果 $f(0)=f^{(k-1)}(0)$, 那么 $f(f(0))=f^{(k)}(0)=0$, 矛盾.
+如果 $f(0)=-f^{(k-1)}(0)$, 那么, 由 (1) 可知
+$$
+\begin{gathered}
+|f(0)|=|f(0)+0|=\left|f^{(k)}(0)-f^{(k-1)}(0)\right| \leqslant \\
+\left|f^{\left(k^{-1}\right)}(0)-f^{(k-2)}(0)\right| \leqslant \cdots \leqslant \\
+\left|f^{(2)}(0)-f(0)\right| \leqslant|f(0)-0|=|f(0)| .
+\end{gathered}
+$$
+所以, 上述不等号全部取等号.
+注意到 $f(0), \cdots, f^{(k-1)}(0)$ 都不为零, 于是, 由方程组
+$$
+\left\{\begin{array}{l}
+\left|f^{(2)}(0)-f(0)\right|=|f(0)|, \\
+\left|f^{(3)}(0)-f^{(2)}(0)\right|=|f(0)|, \\
+\cdots \\
+\left|f^{(k-1)}(0)-f^{(k-2)}(0)\right|=|f(0)| .
+\end{array}\right.
+$$
+可知, 对 $2 \leqslant j \leqslant k-1$, 都有 $f^{(j)}(0)-f^{(j-1)}(0)= \pm f(0)$, 于是 $f^{(2)}(0)= 2 f(0), f^{(3)}(0) \in\{f(0), 3 f(0)\}, f^{(4)}(0) \in\{2 f(0), 4 f(0)\}$, 依次递推, 可得 $f^{(k-1)}(0)$ 是 $f(0)$ 的正整数倍, 与 $f^{(k-1)}(0)=-f(0)$ 矛盾.
+综上可知, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题37. 数列 $\left\{p_n\right\}$ 满足 $p_1=2, p_2=5, p_{n+2}=2 p_{n+1}+p_n, n=1,2, \cdots$. 证明: 对任意正整数 $n$, 都有
+$$
+p_n=\sum \frac{(i+j+k) !}{i ! j ! k !} .
+$$
+这里求和对满足 $i+j+2 k=n$ 的所有非负整数组 $(i, j, k)$ 进行.
+%%<SOLUTION>%%
+构造一个组合模型: 用 $f(n)$ 表示由 $1 \times 1$ 的红色方块, $1 \times 1$ 的蓝色方块和 $1 \times 2$ 的白色方块拼成的 $1 \times n$ 的长条的数目.
+直接计算可知
+$$
+f(n)=\sum \frac{(i+j+k) !}{i ! j ! k !}
+$$
+这里的求和对 $i+j+2 k=n$ 的所有非负整数组 $(i, j, k)$ 进行.
+另一方面, 采用递推方法来计算 $f(n)$, 可知 $f(1)=2, f(2)=5$, 而对长为 $n+2$ 的 $1 \times(n+2)$ 的长条, 如果第一个小方块为红色或蓝色, 去掉后共有 $f(n+1)$ 个符合条件的长条; 如果第一个小方块为白色 (其长度为 2 ), 去掉后共有 $f(n)$ 个符合条件的长条,故 $f(n+2)=2 f(n+1)+f(n)$.
+对比数列 $\{f(n)\}$ 与 $\left\{p_n\right\}$ 的初始值和递推关系式可知对任意 $n \in \mathbf{N}^*$, 都有 $f(n)=p_n$.
+所以, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题38. 记 $A_n=\left\{1+\frac{\alpha_1}{\sqrt{2}}+\cdots+\frac{\alpha_n}{(\sqrt{2})^n}\right\} \mid \alpha_i=1$ 或 -1 , 这里 $i=1,2, \cdots, n$.
+(1) 对每个正整数 $n$, 求集合 $A_n$ 中不同元素的个数;
+(2) 对每个正整数 $n$, 求集合 $A_n$ 中任意两个不同元素之积的和.
+%%<SOLUTION>%%
+引理对任意 $n \in \mathbf{N}^*$, 都有
+$$
+\begin{aligned}
+& \left\{\frac{\beta_1}{2}+\frac{\beta_2}{2^2}+\cdots+\frac{\beta_n}{2^n} \mid \beta_i \in\{-1,1\}, i=1,2, \cdots, n\right\} \\
+= & \left\{\frac{j}{2^n} \mid j \text { 为奇数, 且 }|j|<2^n\right\} .
+\end{aligned}
+$$
+引理的证明可通过对 $n$ 归纳来处理.
+当 $n=1$ 时,引理显然成立.
+现设引理对所有小于 $n$ 的正整数成立, 考虑 $n$ 的情形.
+对 $\beta_i \in\{-1,1\}$, 记 $j=2^{n-1} \beta_1+2^{n-2} \beta_2+\cdots+2^0 \beta_n$, 则 $\sum_{i=1}^n \frac{\beta_i}{2^i}=\frac{j}{2^n}$, 并且 $j$ 为奇数.
+进一步, 还有
+$$
+\left|\frac{j}{2^n}\right|=\left|\sum_{i=1}^n \frac{\beta_i}{2^i}\right| \leqslant \sum_{i=1}^n \frac{\left|\beta_i\right|}{2^i}=\sum_{i=1}^n \frac{1}{2^i}=1-\frac{1}{2^n}<1,
+$$
+故 $|j|<2^n$.
+反过来, 对 $j$ 为奇数, 且 $|j|<2^n$. 注意到 $\frac{j-1}{2}$ 与 $\frac{j+1}{2}$ 具有不同的奇偶性, 我们设 $j_0$ 是 $\frac{j-1}{2}$ 和 $\frac{j+1}{2}$ 中的那个奇数.
+则 $\left|j_0\right| \leqslant \frac{1}{2}(1+|j|) \leqslant 2^{n-1}+\frac{1}{2}$, 结合 $j_0$ 为奇数, 知 $\left|j_0\right|<2^{n-1}$. 从而由归纳假设知, 存在 $\beta_1, \beta_2, \cdots, \beta_{n-1} \in\{-1$, $1\}$, 使得
+$$
+\frac{\beta_1}{2}+\frac{\beta_2}{2^2}+\cdots+\frac{\beta_{n-1}}{2^{n-1}}=\frac{j_0}{2^{n-1}},
+$$
+令 $\beta_n=j-2 j_0$, 则 $\beta_n \in\{-1,1\}$, 并且
+$$
+\sum_{i=1}^n \frac{\beta_i}{2^i}=\frac{j_0}{2^{n-1}}+\frac{j-2 j_0}{2^n}=\frac{j}{2^n} .
+$$
+所以,引理获证.
+(1)由引理的结论及 $A_n$ 中元素的结构, 可知 $A_n=\left\{1+\frac{j}{2^{\left\lfloor\frac{n}{2}\right\rfloor}}+\frac{k}{2^{\left\lceil\frac{n}{2}\right\rceil}} \sqrt{2} \mid j\right.$, $2^{\left\lceil\frac{n}{2}\right\rceil}=2^n$.
+(2) 记 $S=\sum_{\substack{a, b \in A_n \\ a<b}} a b$, 那么 $S=\frac{1}{2}\left(\left(\sum_{a \in A_n} a\right)^2-\sum_{a \in A_n} a^2\right)$.
+将 $A_n$ 中的元素 $1+\frac{j}{2^{\left\lfloor\frac{n}{2}\right\rfloor}}+\frac{k}{2^{\left\lceil\frac{n}{2}\right\rceil}} \sqrt{2}$ 与 $1-\frac{j}{2^{\left\lfloor\frac{n}{2}\right\rfloor}}-\frac{k}{2^{\left\lceil\frac{n}{2}\right\rceil}} \sqrt{2}$ 配对求和, 并利用(1) 的结论, 可知 $\sum_{a \in A_n} a=2^n$.
+进一步, 利用结论: 若 $X 、 Y$ 都是有限集, 且 $\sum_{x \in X} x=\sum_{y \in Y} y=0$, 则 $\sum_{x \in X} \sum_{y \in Y}(1+x+y)^2=|X| \cdot|Y|+|Y| \cdot \sum_{x \in X} x^2+|X| \cdot \sum_{y \in Y} y^2$. 结合 $A_n$ 的结构, 可得
+$$
+\begin{aligned}
+\sum_{a \in A_n} a^2 & =\sum_{\substack{j \text { 奇数 } \\
+|j|<2\left\lfloor\frac{n}{2}\right\rfloor}} \sum_{\substack{k \text { 为奇数 } \\
+|k|<2^{\left\lceil\frac{n}{2}\right\rceil}}}\left(1+\frac{j}{2^{\left\lfloor\frac{n}{2}\right\rfloor}}+\frac{k}{2^{\left\lceil\frac{n}{2}\right\rceil}} \sqrt{2}\right)^2 \\
+& =2^{\left\lceil\frac{n}{2}\right\rceil} \cdot 2^{\left\lfloor\frac{n}{2}\right\rfloor}+\sum_{\substack{j \text { 为奇数 } \\
+|j|<2^{\left\lfloor\frac{n}{2}\right\rfloor}}} \frac{j^2 \cdot 2^{\left\lceil\frac{n}{2}\right\rceil}}{2^{2\left\lfloor\frac{n}{2}\right\rfloor}}+\sum_{\substack{k \text { 为奇数 } \\
+|k|<2^{\left.\frac{n}{2}\right\rceil}}} \frac{2 k^2 \cdot 2^{\left\lfloor\frac{n}{2}\right\rfloor}}{2^{2\left\lceil\frac{n}{2}\right\rceil}} \\
+& =2^n+\frac{1}{3}\left(\frac{2^{\left\lceil\frac{n}{2}\right\rceil} \cdot 2^{\left\lfloor\frac{n}{2}\right\rfloor}\left(2^{2\left\lfloor\frac{n}{2}\right\rfloor}-1\right)}{2^{2\left\lfloor\frac{n}{2}\right\rfloor}}+\frac{2^{\left\lfloor\frac{n}{2}\right\rfloor} \cdot 2^{\left\lceil\frac{n}{2}\right\rceil}\left(2^{2\left\lceil\frac{n}{2}\right\rceil}-1\right)}{2^{2\left\lceil\frac{n}{2}\right\rceil 1}}\right) \\
+& =2^n+\frac{2^n}{3}\left(3-\frac{1}{2^{2\left\lfloor\frac{n}{2}\right\rfloor}}-\frac{1}{2^{2\left\lceil\frac{n}{2}\right\rceil-1}}\right) \\
+& =2^{n+1}-1 .
+\end{aligned}
+$$
+综上, (1) 的答案是 $2^n$, 而 (2) 的答案为 $\frac{1}{2}\left(2^{2 n}-2^{n+1}+1\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题39. 数列 $\left\{x_n\right\}$ 定义如下
+$$
+x_0=4, x_1=x_2=0, x_3=3, x_{n+4}=x_n+x_{n+1}, n=0,1,2, \cdots .
+$$
+证明: 对任意素数 $p$,都有 $p \mid x_p$.
+%%<SOLUTION>%%
+引理设 $n \in \mathbf{N}^*$, 将 $n$ 表示为若干个 3 或 4 之和的有序分拆排成一个矩阵,则 $x_n$ 为该矩阵中第一列上各数之和.
+例如: 当 $n=15$ 时, 所得的矩阵为而直接由递推式可算得 $x_{15}=18$ 等于上述矩阵中第一列各数之和.
+引理的证明: 对 $n$ 归纳来证, 当 $n=1,2,3,4$ 时直接验证可知命题成立.
+现设引理对所有小于 $n(\geqslant 5)$ 的下标都成立, 考虑 $n$ 的情形.
+依 $n$ 表为 3 或 4 的有序分拆的最后一项为 $3 、 4$ 分为两类: 末项为 3 的有序分拆全部去掉末项 3 后得到 $n-3$ 的所有有序分拆; 末项为 4 的全部去掉末项 4 后得到 $n-4$ 的所有有序分拆.
+结合 $n \geqslant 5$, 其分拆若存在, 则至少有两项, 可知 $n$ 的有序分拆构成的矩阵的第一列上各数之和为 $x_{n-3}+x_{n-4}$ (这里用到归纳假设),故引理对 $n$ 成立, 命题获证.
+回到原题, 当 $p=2,3$ 时 $x_p=0$, 命题成立, 对素数 $p(\geqslant 5)$, 设将 $p$ 表为 3 或 4 的有序分拆作出的矩阵为 $M$, 则 $M$ 的每一行的长度 $l$ 满足 $\frac{p}{4} \leqslant l \leqslant \frac{p}{3}$.
+对 $M$ 中长度相同的行合成的子矩阵 $\boldsymbol{T}$ 作下面的分析 : 设 $\boldsymbol{T}$ 中第一列的元素和为 $S$, 由于 $\boldsymbol{T}$ 的每一行中必同时出现 3 和 4 (仅出现 3 或 4 时, $p$ 是 3 或 4 的倍数, 不为素数), 从而将该行中的这对 3 和 4 对换位置所得的 $p$ 的分拆是 $\boldsymbol{T}$ 的另一行.
+这表明: $T$ 中任意两列上的元素和相同 (因为这两列上对应位置上的数, 如果不同, 那么必有另一行与此两列交出的数正好是它们的对换), 记 $T$ 中每一列的和为 $S$. 设 $\boldsymbol{T}$ 的列数为 $l$, 则 $\boldsymbol{T}$ 中所有数之和为 $s l$, 而 $\boldsymbol{T}$ 中每一行中所有数之和都为 $p$, 故 $s l$ 是 $p$ 的倍数, 结合 $\frac{p}{4} \leqslant l \leqslant \frac{p}{3}$, 可知 $p \mid s$.
+依上述讨论可得, 对 $M$ 中第一列上各数之和而言, 它也是 $p$ 的倍数, 即有 $p \mid x_p$. 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题40. 求所有的正整数数列 $a_0, a_1, \cdots, a_n$, 使得
+(1) $\frac{a_0}{a_1}+\frac{a_1}{a_2}+\cdots+\frac{a_{n-1}}{a_n}=\frac{99}{100}$;
+(2) $a_0=1$, 且 $\left(a_{k+1}-1\right) a_{k-1} \geqslant a_k^2\left(a_k-1\right), k=1,2, \cdots, n-1$.
+%%<SOLUTION>%%
+设 $a_1, \cdots, a_n$ 是符合条件的正整数, 则由 (1) 可知对 $1 \leqslant k \leqslant n$, 都有 $a_k>a_{k-1}$ (否则左边 $\geqslant 1$, 而右边 $<1$ ), 从而, 有 $a_k>1$, 于是, 由 (2) 知
+$$
+\frac{a_{k-1}}{a_k\left(a_k-1\right)} \geqslant \frac{a_k}{a_{k+1}-1},
+$$
+即 $\frac{a_{k-1}}{a_k-1}-\frac{a_{k-1}}{a_k} \geqslant \frac{a_k}{a_{k+1}-1}$, 所以 $\frac{a_{k-1}}{a_k} \leqslant \frac{a_{k-1}}{a_k-1}-\frac{a_k}{a_{k+1}-1}$, 对 $k=i+1, \cdots$,
+$n-1$ 求和, 就有
+$$
+\frac{a_i}{a_{i+1}}+\cdots+\frac{a_{n-1}}{a_n} \leqslant \frac{a_i}{a_{i+1}-1}-\frac{a_{n-1}}{a_n-1}+\frac{a_{n-1}}{a_n}<\frac{a_i}{a_{i+1}-1} . \label{eq1}
+$$
+在式\ref{eq1}中令 $i=0$, 利用 (1) 就有 $\frac{1}{a_1} \leqslant \frac{99}{100}=\sum_{i=0}^{n-1} \frac{a_i}{a_{i+1}}<\frac{1}{a_1-1}$, 故 $a_1=2$. 类似地, 在 式\ref{eq1} 中取 $i=1$, 结合 (1) 就有
+$$
+\frac{1}{a_2} \leqslant \frac{1}{a_1}\left(\frac{99}{100}-\frac{1}{a_1}\right)<\frac{1}{a_2-1},
+$$
+可得 $\frac{1}{a_2} \leqslant \frac{49}{200}<\frac{1}{a_2-1}$, 知 $a_2=5$. 重复这样的讨论, 在 式\ref{eq1} 中分别取 $i=2 、 3$, 可得 $a_3=56, a_4=25 \times 56^2=78400$. 此时
+$$
+\frac{1}{a_5} \leqslant \frac{1}{a_4}\left(\frac{99}{100}-\frac{1}{2}-\frac{2}{5}-\frac{5}{56}-\frac{56}{25 \times 56^2}\right)=0 .
+$$
+故 $a_5$ 不存在.
+综上可知, 仅当 $n=4$ 时, 这样的数列存在, 对应地 $a_1, a_2, a_3, a_4$ 为 2,5 , 56, 78400 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题41. 数列 $\left\{y_n\right\}$ 定义如下 $y_2=y_3=1$, 且
+$$
+(n+1)(n-2) y_{n+1}=n\left(n^2-n-1\right) y_n-(n-1)^3 y_{n-1}, n=3,4, \cdots
+$$
+证明: $y_n$ 为整数的充要条件是 $n$ 为素数.
+%%<SOLUTION>%%
+令 $x_n=n y_n, n=2,3, \cdots$, 则 $x_2=2, x_3=3$, 且当 $n \geqslant 3$ 时, 有 $(n-2) x_{n+1}=\left(n^2-n-1\right) x_n-(n-1)^2 x_{n-1}$, 即
+$$
+\frac{x_{n+1}-x_n}{n-1}=(n-1) \cdot \frac{x_n-x_{n-1}}{n-2} . \label{(1)}
+$$
+利用(1)递推可得
+$$
+\begin{aligned}
+\frac{x_{n+1}-x_n}{n-1} & =(n-1) \cdot \frac{x_n-x_{n-1}}{n-2}=(n-1)(n-2) \cdot \frac{x_{n-1}-x_{n-2}}{n-3} \\
+& =\cdots=(n-1) \cdots 2 \cdot \frac{x_3-x_2}{1}=(n-1) !
+\end{aligned}
+$$
+得 $x_{n+1}-x_n=n !-(n-1)$ !, 裂项求和, 知 $x_n=x_2+\sum_{k=2}^{n-1}\left(x_{k+1}-x_k\right)=x_2+ \sum_{k=2}^{n-1}(k !--(k-1) !)=x_2+(n-1) !-1=(n-1) !+1$.
+结合 Wilson 定理: 当且仅当 $n$ 为素数时, $n \mid(n-1) !+1$, 可知 $y_n \in \mathbf{Z}$ 的充要条件是 $n$ 为素数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题42. 给定素数 $p>3$, 令 $q=p^3$. 定义数列 $a_n$ 如下
+$$
+a_n=\left\{\begin{array}{l}
+n, n=0,1,2, \cdots p-1, \\
+a_{n-1}+a_{n-p}, n>p-1 .
+\end{array}\right.
+$$
+求 $a_q$ 除以 $p$ 所得的余数.
+%%<SOLUTION>%%
+引理设 $n 、 k \in \mathbf{N}^*, n \geqslant k p$, 则(1)
+$$
+a_n=\sum_{i=0}^k \mathrm{C}_k^i a_{n-i(p-1)-k} .
+$$
+对 $k$ 归纳予以证明.
+当 $k=1$ 时, (1) 就是 $a_n=a_{n-1}+a_{n-p}$, 故 (1) 对 $k=1$ 成立.
+现设 (1) 对 $k$ 成立, 考虑 $k+1$ 的情形.
+此时 $n \geqslant(k+1) p$,下标 $n-i(p- 1)-k(0 \leqslant i \leqslant k)$ 的最小值在 $i=k$ 时取到, 该最小值为 $n-k p \geqslant p$, 所以, 下面求和式中的每一项都可用条件中的递推式.
+由归纳假设知, 当 $n \geqslant(k+1) p$ 时, 有
+$$
+\begin{aligned}
+a_n & =\sum_{i=0}^k \mathrm{C}_k^i a_{n-i(p-1)-k} \\
+& =\sum_{i=0}^k \mathrm{C}_k^i\left(a_{n-i(p-1)-k-1}+a_{n-i(p-1)-k-p}\right) \\
+& =\mathrm{C}_k^0 a_{n-k-1}+\sum_{i=1}^k \mathrm{C}_k^i a_{n-i(p-1)-k-1}+\sum_{i=0}^{k-1} \mathrm{C}_k^i a_{n-i(p-1)-k-p}+\mathrm{C}_k^k a_{n-(k+1) p} \\
+& =\mathrm{C}_{k+1}^0 a_{n-(k+1)}+\sum_{i=0}^{k-1} \mathrm{C}_k^{i+1} a_{n-(i+1)(p-1)-(k+1)}+\sum_{i=0}^{k-1} \mathrm{C}_k^i a_{n-(i+1)(p-1)-(k+1)}+\mathrm{C}_{k+1}^{k+1} a_{n-(k+1) p} \\
+& =\mathrm{C}_{k+1}^0 a_{n-(k+1)}+\sum_{i=0}^{k-1}\left(\mathrm{C}_k^{i+1}+\mathrm{C}_k^i\right) a_{n-(i+1)(p-1)-(k+1)}+\mathrm{C}_{k+1}^{k+1} a_{n-(k+1) p} \\
+& =\sum_{i=0}^{k+1} \mathrm{C}_{k+1}^i a_{n-(i+1)(p-1)-(k+1)} .
+\end{aligned}
+$$
+最后一步,用到 $\mathrm{C}_k^{i+1}+\mathrm{C}_k^i=\mathrm{C}_{k+1}^{i+1}$. 所以, (1)对 $k+1$ 成立,引理获证.
+下面利用引理来处理原题.
+当 $n \geqslant p^2$ 时, 在引理中令 $k=p$, 就有
+$$
+a_n=\sum_{i=0}^p \mathrm{C}_p^i a_{n-i(p-1)-p},
+$$
+熟知, 当 $1 \leqslant i \leqslant p-1$ 时, 有 $\mathrm{C}_p^i \equiv 0(\bmod p)$, 所以, $a_n \equiv a_{n-p}+a_{n-p^2}(\bmod p)$, 这时结合 $a_n=a_{n-1}+a_{n-p}$, 可得 $a_{n-1} \equiv a_{n-p^2}(\bmod p)$, 这表明对任意 $t \geqslant p^2-$ 1 , 有 $a_t \equiv a_{t+p^2-1}(\bmod p)$.
+由于 $p^3=p\left(p^2-1\right)+p$, 故 $a_{p^3}=a_{p+p\left(p^2-1\right)} \equiv a_p(\bmod p)$, 而 $a_p=a_0+ a_{p-1}=p-1$, 所以 $a_{p^3} \equiv p-1(\bmod p)$, 即 $a_{p^3}$ 除以 $p$ 所得的余数为 $p-1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题43. 设 $n$ 为不小于 2 的正整数, $2 \leqslant b_0 \leqslant 2 n-1, b_0$ 为整数,考虑由递推式
+$$
+b_{i+1}=\left\{\begin{array}{l}
+2b_i-1, \text { 若 } b_i \leqslant n, \\
+2b_i-2 n, \text { 若 } b_i>n
+\end{array}\right.
+$$
+定义的数列 $\left\{b_i\right\}$. 用 $p\left(b_0, n\right)$ 表示满足 $b_p=b_0$ 的最小下标 $p$.
+(1) 设 $k$ 为给定的正整数,求 $p\left(2,2^k\right)$ 和 $p\left(2,2^k+1\right)$ 的值;
+(2) 证明: 对任意 $n$ 和 $b_0$ 都有 $p\left(b_0, n\right) \mid p(2, n)$.
+%%<SOLUTION>%%
+为方便计, 记 $m=n-1, b_i=a_i+1$, 则 $1 \leqslant a_0 \leqslant 2 m$, 且
+$$
+a_{i+1}= \begin{cases}2 a_i, & \text { 若 } a_i \leqslant m, \\ 2 a_i-(2 m+1), & \text { 若 } a_i>m .\end{cases}
+$$
+这表明 $a_{i+1} \equiv 2 a_i(\bmod 2 m+1)$, 且 $1 \leqslant a_i \leqslant 2 m, i=1,2, \cdots$.
+(1) 题中的 $p\left(2,2^k\right)$ 和 $p\left(2,2^k+1\right)$ 等价于针对 $\left\{a_i\right\}$ 求 $p\left(1,2^k-1\right)$ 和 $p\left(1,2^k\right)$. 前者等价于求最小 $l \in \mathbf{N}^*$, 使得 $2^l \equiv 1\left(\bmod 2\left(2^k-1\right)+1\right)$, 后者等价于求最小的 $l \in \mathbf{N}^*$, 使得 $2^l \equiv 1\left(\bmod 2^{k+1}+1\right)$.
+显然 $2^{k+1} \equiv 1\left(\bmod 2\left(2^k-1\right)+1\right)$, 而对 $1 \leqslant t \leqslant k$, 都有 $1 \leqslant 2^t-1< 2^{k+1}-1=2\left(2^k-1\right)+1$, 故 $p\left(1,2^k-1\right)=k+1$.
+又 $2^{2(k+1)} \equiv 1\left(\bmod 2^{k+1}+1\right)$, 从而 $p\left(1,2^k\right) \mid 2(k+1)$, 又对 $1 \leqslant t \leqslant k+$ 1 , 都有 $1 \leqslant 2^t-1<2^{k+1}+1$, 于是 $p\left(1,2^k\right)>k+1$, 故 $p\left(1,2^k\right)=2(k+1)$.
+所以, 针对 $\left\{b_i\right\}$ 有 $p\left(2,2^k\right)=k+1, p\left(2,2^k+1\right)=2(k+1)$.
+(2) 还是转到 $\left\{a_i\right\}$ 上讨论, 要求证明: $p\left(a_0, m\right) \mid p(1, m)$. 现设 $p(1$, $m)=t$, 则 $2^t \equiv 1(\bmod 2 m+1)$, 从而 $2^t a_0 \equiv a_0(\bmod 2 m+1)$, 这表明 $p\left(a_0\right.$, $m) \mid t$ (这里用到类似于初等数论中阶的性质), 即有 $p\left(a_0, m\right) \mid p(1, m)$, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题44. 在坐标平面上任给一条起点为 $(0,0)$, 终点为 $(1,0)$ 的折线.
+证明: 对任意 $n \in \mathbf{N}^*$, 在该折线上存在两点, 它们的纵坐标相同, 而横坐标相差 $\frac{1}{n}$.
+%%<SOLUTION>%%
+先建立一个引理 : 对任意 $\alpha \in(0,1)$, 折线上存在两点, 它们的纵坐标相同,横坐标相差 $\alpha$ 或 $1-\alpha$.
+事实上, 设 $\Gamma$ 为题中所给的折线, $\Gamma_1$ 为 $\Gamma$ 向左平移 $\alpha$ 个单位得到的折线, $\Gamma_2$ 为 $\Gamma$ 向右平移 $1-\alpha$ 个单位得到的折线, 容易得到 $\Gamma$ 与 $\Gamma_1 U \Gamma_2$ 至少有一个交点, 而这就是引理要求的结果 (如图 (<FilePath:./figures/fig-c1p44.png>) 所示, 从 $\Gamma$ 的最高点与最低点出发讨论
+ 即可知 $\Gamma$ 与 $\Gamma_1 \cup \Gamma_2$ 有交点).
+下面利用引理来证明需要的结论.
+取 $\alpha=\frac{1}{2}$, 可知 $n=2$ 时, 结论成立; 取 $\alpha=\frac{1}{3}$, 则折线上有两点 $A 、 B$, 使得 $A B / / x$ 轴, 且 $|A B|=\frac{1}{3}$ 或 $|A B|=\frac{2}{3}$, 若 $|A B|=\frac{1}{3}$, 则 $n=3$ 已成立, 若 $|A B|=\frac{2}{3}$, 则考虑连结 $A 、 B$ 的 $\Gamma$ 的子折线, 利用引理及 $n=2$ 的结论, 可知该子折线上存在点 $C 、 D$, 使 $C D / / A B$, 且 $|C D|=\frac{1}{2}|A B|=\frac{1}{3}$, 故 $n=3$ 时, 结论也成立.
+依此类推, 结合数学归纳法, 可知结论对任意 $n \geqslant 2$ 均成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题45. 有一个黑盒和标号为 $1,2, \cdots, n$ 的 $n$ 个白盒, 在 $n$ 个白盒中共放了 $n$ 个白球, 允许进行如下操作: 若标号为 $k$ 的白盒中恰有 $k$ 个白球, 则从中取出这 $k$ 个球, 分别在黑盒和标号为 $1,2, \cdots, k-1$ 的白盒中各放人一个球.
+证明: 对任意 $n \in \mathbf{N}^*$, 存在唯一的一种放置方式, 使得 $n$ 个球最初全在白盒中, 但经有限次操作后, $n$ 个球全部在黑盒中.
+%%<SOLUTION>%%
+先用数学归纳法证明存在性.
+当 $n=1$ 时,显然存在; 设 $n$ 时,存在满足条件的放法 $T$, 考虑 $n+1$ 的情形, 这时先将 $n$ 个球依放法 $T$ 放人标号为 $1,2, \cdots, n$ 的白盒中, 并设放好后, 最小的空盒号码为 $i(1 \leqslant i \leqslant n)$, 则依下法放人第 $n+1$ 个球: 从 $1,2, \cdots, i-1$号白盒中各取一个球放人第 $i$ 号盒中, 并将第 $n+1$ 个球也放人 $i$ 号盒中, 易知这样的放置方法满足条件.
+再用数学归纳法 (仍对 $n$ 归纳) 证明: 放法是唯一的.
+当 $n=1 、 2$ 时, 唯一性显然成立; 设对 $n(\geqslant 2)$ 时, 满足条件的放置方法只有一种, 记为 $T$.
+易知 $n+1 \geqslant 3$ 时, 满足条件的放法中, 第 $n+1$ 个白盒子必为空盒, 于是, 若 $n+1$ 时存在两种满足条件的放法 $T_1$ 和 $T_2$. 注意到, 第 $n+1$ 号白盒 (为空盒) 可以拆走, 并且 $T_1$ 与 $T_2$ 经一步操作后, 白盒中有 $n$ 个球, 白盒个数也为 $n$ 个, 故它们都变为 $T$.
+设 $T_1 、 T_2$ 的第一次操作的白盒号分别为 $i_1 、 i_2$. 若 $i_1>i_2$, 则 $T_1$ 经第一次操作后第 $i_2$ 号白盒中有至少 1 个球,而 $T_2$ 经第一次操作后第 $i_2$ 号白盒中没有球, 不能都变为 $T$, 所以 $i_1 \leqslant i_2$, 同理 $i_2 \leqslant i_1$, 即有 $i_1=i_2$. 这时 $T_1 、 T_2$ 中盒号大于 $i_1$ 的白盒子中的球数相同, 小于 $i_1$ 的白盒子中的球数也相同 (否则, $T_1$ 与 $T_2$ 经一次操作后, 不能都变为 $T$ ), 因此 $i_1$ 号盒中的球数也相同, 从而 $T_1=T_2$. 这表明,存在唯一的满足条件的放置方法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题46. 设 $R_0$ 是一个 $n$ 元数组, 其中每个数都属于 $\{A, B, C\}$. 定义序列 $R_0, R_1$, $R_2, \cdots$ 如下: 如果 $R_j=\left(x_1, \cdots, x_n\right)$, 那么 $R_{j+1}=\left(y_1, y_2, \cdots, y_n\right)$, 这里
+$$
+y_i=\left\{\begin{array}{l}
+x_i, \text { 若 } x_i=x_{i+1}, \\
+\{A, B, C\} \backslash\left\{x_i, x_{i+1}\right\}, \text { 若 } x_i \neq x_{i+1} .
+\end{array}\right.
+$$
+其中 $x_{n+1}=x_1$. 例如: 若 $R_0=(A, A, B, C)$, 则 $R_1=(A, C, A, B)$, $R_2=(B, B, C, C), \cdots$.
+(1) 求所有的 $n \in \mathbf{N}^*$, 使得存在 $m \in \mathbf{N}^*$, 满足: 对任意 $R_0$ 都有 $R_m=R_0$.
+(2) 对 $n=3^k\left(k \in \mathbf{N}^*\right)$, 求满足 (1) 的最小正整数 $m$.
+%%<SOLUTION>%%
+(1) 分别用 $0 、 1 、 2$ 表示 $A 、 B 、 C$, 在模 3 的意义来把握序列 $R_0$, $R_1, \cdots$ 的变化情况.
+设 $R_j=\left(x_1, \cdots, x_n\right), R_{j+1}=\left(y_1, y_2, \cdots, y_n\right)$, 则对 $1 \leqslant i \leqslant n$, 均有 $y_i \equiv-\left(x_i+x_{i+1}\right)(\bmod 3)$.
+如果 $n$ 为偶数, 取 $R_0=(1,2,1,2, \cdots, 1,2)$, 那么对任意 $m \geqslant 1$, 均有 $R_m=(0,0, \cdots, 0,0)$, 所以此时不存在符合要求的正整数 $m$. 如果 $n$ 为奇数, 由于不同的 $n$ 元数组 $\left(x_1, \cdots, x_n\right)$ 至多 $3^n$ 组, 故对任意 $R_0$, 存在 $m_{R_0} \in \mathbf{N}^*$, 及 $k \in \mathbf{N}$, 使得 $R_k=R_{m_{R_0}+k}$. 我们证明: 若 $k \geqslant 1$, 则 $R_{k-1}=R_{m_{R_0}+k-1}$ (从而依此类推可知 $R_0=R_{m_{R_0}}$ ).
+事实上, 设 $R_{k-1}=\left(x_1, \cdots, x_n\right), R_{m_{R_0}+k-1}=\left(y_1, \cdots, y_n\right)$, 则由 $R_k= R_{m_{R_0}+k}$, 可知 $-\left(x_i+x_{i+1}\right) \equiv-\left(y_i+y_{i+1}\right)(\bmod 3)$, 所以 $\sum_{j=1}^n(-1)^j\left(x_j+\right. \left.x_{j+1}\right) \equiv \sum_{j=1}^n(-1)^j\left(y_j+y_{j+1}\right)(\bmod 3)$, 结合 $n$ 为奇数, 可知 $-x_1+(-1)^n x_{n+1} \equiv -y_1+(-1)^n y_{n+1}(\bmod 3)$, 即 $-2 x_1 \equiv-2 y_1(\bmod 3), x_1 \equiv y_1(\bmod 3)$, 所以 $x_1=y_1$, 同理可证对 $i \in\{2, \cdots, n\}$, 均有 $x_i=y_i$, 所以 $R_{k-1}=R_{m_{R_0}+k-1}$.
+依上可知, 对任意 $R_0$, 存在 $m_{R_0}$, 使得 $R_0=R_{m_{R_0}}$, 于是, 在 $R_0$ 变化时, 取所有 $m_{R_0}$ 的最小公倍数 $m$, 则对任意 $R_0$, 均有 $R_0=R_m$.
+综上可知, 当且仅当 $n$ 为奇数时, 存在满足条件的 $m$.
+(2) 对 $n=3^k, k \in \mathbf{N}^*$, 满足条件((1) 中的条件) 的 $m$ 的最小值 $m=3^k$. 事实上, 对任意 $R_0=\left(x_1, \cdots, x_n\right)$, 设 $R_{3^k}=\left(y_1, \cdots, y_n\right)$, 则由前推出的模 3 意义下的关系式,易知
+$$
+y_p \equiv-\sum_{i=0}^{3^k} \mathrm{C}_{3^i k} x_{i+p}(\bmod 3),
+$$
+这里 $x_{i+p}$ 的下标在模 $n$ 的意义下取值, $p=1,2, \cdots, n$. 注意到对 $1 \leqslant i \leqslant 3^k-1, \mathrm{C}_{3^k}^i \equiv 0(\bmod 3)$, 所以 $y_p \equiv-x_p-x_{3^k+p}=-2 x_p \equiv x_p(\bmod 3)$, 从而 $R_{3^k}=R_0$.
+另一方面, 设 $R_0=(0,0, \cdots, 0,1)$, 则对 $0<m<3^k, R_m$ 的第 $3^k-m$ 个分量不等于 0 , 所以满足 (1) 的 $m$ 的最小值为 $3^k$.
+%%PROBLEM_END%%
+
+

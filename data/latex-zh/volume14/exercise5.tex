@@ -1,0 +1,244 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 在所有 $n$ 位数中, 求数码 $1,2,3$ 都出现, 但其他数码均不出现的数的个数.
+%%<SOLUTION>%%
+设不出现数码 $4,5, \cdots, 9,0$ 的全体 $n$ 位数组成集合 $I$.
+对 $k=1,2,3$, 记 $I$ 中不含数码 $k$ 的 $n$ 位数全体组成集合 $A_k$. 显然, 满足条件的数的全体组成集合 $\overline{A_1} \cap \overline{A_2} \cap \overline{A_3}$.
+由于
+$$
+\begin{gathered}
+|I|=3^n,\left|A_1\right|=\left|A_2\right|=\left|A_3\right|=2^n, \\
+\left|A_1 \cap A_2\right|=\left|A_2 \cap A_3\right|=\left|A_3 \cap A_1\right|=1,\left|A_1 \cap A_2 \cap A_3\right|=0,
+\end{gathered}
+$$
+由容斥原理得
+$$
+\begin{aligned}
+\left|\overline{A_1} \cap \overline{A_2} \cap \overline{A_3}\right|= & |I|-\left|A_1\right|-\left|A_2\right|-\left|A_3\right|+\left|A_1 \cap A_2\right| \\
+& +\left|A_2 \cap A_3\right|+\left|A_3 \cap A_1\right|-\left|A_1 \cap A_2 \cap A_3\right| \\
+= & 3^n-3 \cdot 2^n+3 .
+\end{aligned}
+$$
+故所求 $n$ 位数有 $3^n-3 \cdot 2^n+3$ 个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 全体正整数中凡是 3 的倍数或 4 的倍数都划去,但其中 5 的倍数都保留 (例如, $15,20,30,40,60, \cdots$ 都保留). 将留下的数,按从小到大的顺序写成了一个数列 $\left\{a_n\right\}: a_1=1, a_2=2, a_3=5, \cdots$. 求 $a_{2005}$.
+%%<SOLUTION>%%
+设 $a_{2005}=n$. 记 $s=\{1,2, \cdots, n\}, A_i=\{k \mid k \in s$ 且 $k$ 被 $i$ 整除 $\}$.
+$A_i$ 在 $s$ 中的补集为 $\overline{A_i}(i=3,4,5)$.
+$$
+\begin{aligned}
+2005= & \left|\left(\bar{A}_3 \cap \bar{A}_4 \cap \bar{A}_5\right) \cup A_5\right| \\
+= & \left|\bar{A}_3 \cap \bar{A}_4 \cap \bar{A}_5\right|+\left|A_5\right| \\
+= & |s|-\left|A_3\right|-\left|A_4\right|-\left|A_5\right|+\left|A_3 \cap A_4\right|+\left|A_3 \cap A_5\right|+\left|A_4 \cap A_5\right| \\
+& -\left|A_3 \cap A_4 \cap A_5\right|+\left|A_5\right| \\
+= & n-\left[\frac{n}{3}\right]-\left[\frac{n}{4}\right]-\left[\frac{n}{5}\right]+\left[\frac{n}{12}\right]+\left[\frac{n}{15}\right]+\left[\frac{n}{20}\right]-\left[\frac{n}{60}\right]+\left[\frac{n}{5}\right] . \label{eq1}
+\end{aligned}
+$$
+利用 $x-1<[x] \leqslant x$, 由 式\ref{eq1} 得
+$$
+\left\{\begin{array}{l}
+2005<n-\left(\frac{n}{3}-1\right)-\left(\frac{n}{4}-1\right)+\frac{n}{12}+\frac{n}{15}+\frac{n}{20}-\left(\frac{n}{60}-1\right) \\
+2005>n-\frac{n}{3}-\frac{n}{4}+\left(\frac{n}{12}-1\right)+\left(\frac{n}{15}-1\right)+\left(\frac{n}{20}-1\right)-\frac{n}{60}
+\end{array}\right.
+$$
+解得 $3336 \frac{2}{3}<n<3346 \frac{2}{3}$. 所以 $3337 \leqslant n \leqslant 3346$, 且 $n$ 不为 3 和 4 的倍数.
+故 $n=3337,3338,3340,3341,3343,3345,3346$.
+$n=3341$ 代入 式\ref{eq1} 满足等式且 $n$ 唯一知 $a_{2005}=3341$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 对有限集合 $S, n(S)$ 表示 $S$ 的子集的个数.
+设 $A 、 B 、 C$ 为三个集合, $n(A)+ n(B)+n(C)=n(A \cup B \cup C),|A|=|B|=100$. 求 $|A \cap B \cap C|$ 的最小值.
+%%<SOLUTION>%%
+已知: $2^{100}+2^{100}+2^{|C|}=2^{|A \cup B \cup C|}$, 即 $1+2^{|C|-101}=2^{|A \cup B \cup C|-101}$, 所以 $|C|=101,|A \cup B \cup C|=102$.
+由容斥原理: $|A \cup B \cup C|=|A|+|B|+|C|-|A \cap B|-|B \cap C|- |C \cap A|+|A \cap B \cap C|$, 所以 $|A \cap B \cap C|^{\circ}=102-(100+100+101)+|A \cap B|+|B \cap C|+|C \cap A|=|A \cap B|+|B \cap C|+|C \cap A|-199$, 但 $|A \cup B \cup C|=102 \geqslant|A \cup B|=|A|+|B|-|A \cap B|=200-\mid A \cap B \mid$, 所以,
+$$
+|A \cap B| \geqslant 200-102=98,
+$$
+同理: $|A \cap C| \geqslant 99,|B \cap C| \geqslant 99$, 所以 $|A \cap B \cap C| \geqslant 98+99+ 99-199=97$.
+当 $A=\{1,2,3, \cdots, 100\}, B=\{3,4,5, \cdots, 102\}, C=\{1,2,3,4$ , $5,6, \cdots, 101,102\}$ 时,
+$$
+|A \cap B \cap C|=|\{4,5, \cdots, 100\}|=97 .
+$$
+综上, $|A \cap B \cap C|$ 的最小值为 97 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 将 $a \times b \times c\left(a, b, c \in \mathbf{N}^*\right)$ 的长方体分成 $a b c$ 个 $1 \times 1 \times 1$ 的小正方体.
+求长方体的一条对角线穿过的小正方体的个数.
+%%<SOLUTION>%%
+设长方体占据的空间区域为 $\{(x, y, z) \mid 0 \leqslant x \leqslant a, 0 \leqslant y \leqslant b, 0 \leqslant z \leqslant c\}$.
+将质点沿对角线从 $(0,0,0)$ 穿行到 $(a, b, c)$ 的路径用参数 $t$ 表示为
+$$
+x=a t, y=b t, z=c t, t \in[0,1] .
+$$
+在 $t$ 递增的过程中, 当且仅当 $x, y, z$ 中至少有一个为整数时, 质点将穿人一个新的小正方体,这里 $t \in[0,1)$. 设
+$$
+\begin{aligned}
+& A_x=\{t \mid t \in[0,1), \text { at } \in \mathbf{Z}\}, \\
+& A_y=\{t \mid t \in[0,1), b t \in \mathbf{Z}\}, \\
+& A_z=\{t \mid t \in[0,1), c t \in \mathbf{Z}\},
+\end{aligned}
+$$
+则有 $\left|A_x\right|=a,\left|A_y\right|=b,\left|A_z\right|=c$.
+又记 $d_1=(a, b), d_2=(b, c), d_3=(c, a), d=(a, b, c)$, 则
+$$
+A_x \cap \dot{A_y}=\left\{t \mid t \in[0,1), d_1 t \in \mathbf{Z}\right\},
+$$
+从而
+$$
+\left|A_x \cap A_y\right|=d_1 .
+$$
+同理得 $\left|A_y \cap A_z\right|=d_2,\left|A_z \cap A_x\right|=d_3,\left|A_x \cap A_y \cap A_z\right|=d$.
+故由容斥原理得, 质点一共穿过的小正方体个数为
+$$
+\begin{aligned}
+\left|A_x \cup A_y \cup A_z\right|= & \left|A_x\right|+\left|A_y\right|+\left|A_z\right|-\left|A_x \cap A_y\right|-\left|A_y \cap A_z\right|- \\
+& \left|A_z \cap A_x\right|+\left|A_x \cap A_y \cap A_z\right| \\
+= & a+b+c-(a, b)-(b, c)-(c, a)+(a, b, c) .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 在面积为 1001 的区域中,有 2001 个面积为 1 的区域 $S_i(1 \leqslant i \leqslant 2001)$. 求证,必有两个区域 $S_i, S_j(1 \leqslant i<j \leqslant 2001)$, 它们公共部分的面积不小于 $\frac{1}{2001}$.
+%%<SOLUTION>%%
+不妨用符号 $\left|S_i\right|$ 来记区域 $S_i$ 的面积.
+由已知得
+$$
+\left|S_1 \cup S_2 \cup \cdots \cup S_{2001}\right| \leqslant 1001,\left|S_i\right|=1(1 \leqslant i \leqslant 2001),
+$$
+从而结合容斥原理可得
+$$
+\begin{aligned}
+1001 & \geqslant\left|S_1 \cup S_2 \cup \cdots \cup S_{2001}\right| \geqslant \sum_{i=1}^{2001}\left|S_i\right|-\sum_{1 \leqslant i<j \leqslant 2001}\left|S_i \cap S_j\right| \\
+& =2001-\sum_{1 \leqslant i<j \leqslant 2001}\left|S_i \cap S_j\right| \\
+& \geqslant 2001-\frac{2001 \times 2000}{2} \cdot S,
+\end{aligned}
+$$
+其中 $S=\max _{1 \leqslant i<j \leqslant 2001}\left|S_i \cap S_j\right|$.
+由上式立即可知 $S \geqslant \frac{1}{2001}$, 故命题得证.
+%%<REMARK>%%
+注:这是容斥原理的面积重叠形式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 在一次实战军事演习中, 红方的一条直线防线上设有 20 个岗位.
+为了试验 5 种不同的新式武器, 打算安排 5 个岗位配备这些新式武器, 要求第一个和最后一个岗位不配备, 每相邻 5 个岗位至少有一个岗位配备, 相邻 2
+个岗位不同时配备.
+:共有多少种配备新式武器的方案?
+%%<SOLUTION>%%
+设配备新式武器的 5 个岗位序号从小到大依次是 $a_1, a_2, a_3, a_4, a_5$. 作代换
+$$
+\begin{gathered}
+x_1=a_1, x_2=a_2-a_1, x_3=a_3-a_2, \\
+x_4=a_4-a_3, x_5=a_5-a_4, x_6=20-a_5 .
+\end{gathered}
+$$
+则有
+$$
+x_1+x_2+x_3+x_4+x_5+x_6=20,2 \leqslant x_k \leqslant 5(1 \leqslant k \leqslant 5), 1 \leqslant x_6 \leqslant 4 .
+$$
+再作代换 $y_k=x_k-1(1 \leqslant k \leqslant 5), y_6=x_6$, 从而有
+$$
+y_1+y_2+y_3+y_4+y_5+y_6=15,1 \leqslant y_k \leqslant 4(1 \leqslant k \leqslant 6) .
+$$
+设 $I$ 为不定方程 $y_1+y_2+y_3+y_4+y_5+y_6=15$ 的正整数解全体, $A_k$ 为 $I$ 中有 $y_k>4$ 成立的解的全体, 则
+$$
+\left|\bigcap_{k=1}^6 \overline{A_k}\right|=|I|-\left|\bigcup_{k=1}^6 A_k\right|=|I|-\sum_{k=1}^6\left|A_k\right|+\sum_{1 \leqslant j<k \leqslant 6}\left|A_j \cap A_k\right| .
+$$
+上式成立的原因是 $A_i \cap A_j \cap A_k=\varnothing$, 因为 $I$ 中不具有同时使 $y_i, y_j$, $y_k>4$ 成立的解.
+又根据对应原理可知上式中 $|I|=\mathrm{C}_{14}^5,\left|A_k\right|=\mathrm{C}_{10}^5$, $\left|A_j \cap A_k\right|=\mathrm{C}_6^5$, 所以
+$$
+\left|\bigcap_{k=1}^6 \overline{A_k}\right|=\mathrm{C}_{14}^5-6 \mathrm{C}_{10}^5+\mathrm{C}_6^2 \mathrm{C}_6^5=2002-1512+90=580 .
+$$
+上面求得了 5 个岗位的选取方法数.
+考虑到 5 种新式武器在 5 个岗位的排列方法有 $5 !=120$ 种, 故总共配备新式武器的方案数为
+$$
+580 \times 120=69600 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 对给定 $m, n \in \mathbf{N}^*$, 设满足条件 $\bigcup_{i=1}^m A_i=\{1,2, \cdots, n\}$ 的非空集合 $A_1$, $A_2, \cdots, A_m$ 的组数为 $f(m, n)$. 证明 $f(m, n)=\sum_{k=0}^{m-1}(-1)^k \mathrm{C}_m^k\left(2^{m-k}-1\right)^n$. 
+%%<SOLUTION>%%
+设 $P_0$ 是满足 $\bigcup_{i=1}^m A_i=\{1,2, \cdots, n\}$ 的一切有序集组 $\left(A_1, A_2, \cdots\right.$, $\left.A_m\right)$ 的集合; 对 $1 \leqslant i \leqslant m$, 设 $P_i=\left\{\left(A_1, A_2, \cdots, A_m\right) \in P_0 \mid A_i=\varnothing\right\}$.
+对每个 $x \in\{1,2, \cdots, n\}, x$ 关于集合 $A_1, A_2, \cdots, A_m$ 有 $2^m$ 种不同的归属状况, 其中使 $x \in \bigcup_{i=1}^m A_i$ 的情况数为 $2^m-1$. 根据乘法原理得,
+$$
+\left|P_0\right|=\left(2^m-1\right)^n .
+$$
+对 $1 \leqslant i_1<i_2<\cdots<i_s \leqslant m$, 同理可得
+$$
+\left|P_{i_1} \cap P_{i_2} \cap \cdots \cap P_{i_s}\right|=\left(2^{m-s}-1\right)^n .
+$$
+根据容斥原理有
+$$
+\begin{aligned}
+\left|\bigcap_{k=1}^m \overline{P_k}\right|= & \left|P_0\right|-\sum_{i=1}^m\left|P_i\right|+\sum_{1 \leqslant i<j \leqslant m}\left|P_i \cap P_j\right|-\cdots+ \\
+& (-1)^m\left|P_1 \cap P_2 \cap \cdots \cap P_m\right| \\
+= & \left(2^m-1\right)^n-\mathrm{C}_m^1\left(2^{m-1}-1\right)^n+\mathrm{C}_m^2\left(2^{m-2}-1\right)^n-\cdots+ \\
+& (-1)^m \mathrm{C}_m^m\left(2^{m-m}-1\right)^n .
+\end{aligned}
+$$
+上式最后一项等于零, 所以
+$$
+f(m, n)=\left|\bigcap_{k=1}^m \overline{P_k}\right|=\sum_{k=0}^{m-1}(-1)^k \mathrm{C}_m^k\left(2^{m-k}-1\right)^n .
+$$
+%%<REMARK>%%
+注:关于本题, 有个很有趣的结论: $f(m, n)=f(n, m)$. 事实上, 考虑只含元素 0 和 1 的所有 $m \times n$ 矩阵,可以通过对应原理证明: 每行、每列都出现 1 的矩阵个数既等于 $f(m, n)$, 又等于 $f(n, m)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设 $a, b, c>1$, 且满足 $\frac{1}{a}+\frac{1}{b}+\frac{1}{c}>1$. 定义集合 $S(x)=\{[k x] \mid k \in \mathbf{N}^*$ \}.证明: 在 $S(a), S(b), S(c)$ 中必有两个的交集是无限集.
+%%<SOLUTION>%%
+记 $I_n=\{1,2, \cdots, n\}$. 我们将 $I_n$ 看成全集, 对集合
+$$
+A_n=S(a) \cap I_n, B_n=S(b) \cap I_n, C_n=S(c) \bigcap I_n
+$$
+用容厉原理, 可得
+$$
+\begin{aligned}
+\left|A_n \cup B_n \cup C_n\right|= & \left|A_n\right|+\left|B_n\right|+\left|C_n\right|-\left|A_n \cap B_n\right|- \\
+& \left|B_n \cap C_n\right|-\left|C_n \cap A_n\right|+\left|A_n \cap B_n \cap C_n\right| .
+\end{aligned}
+$$
+上式中有 $\left|A_n \cup B_n \cup C_n\right| \leqslant n,\left|A_n \cap B_n \cap C_n\right| \geqslant 0$, 又注意到
+$$
+\left|A_n\right| \geqslant\left[\frac{n}{a}\right]>\frac{n}{a}-1,\left|B_n\right| \geqslant\left[\frac{n}{b}\right]>\frac{n}{b}-1,\left|C_n\right| \geqslant\left[\frac{n}{c}\right]>\frac{n}{c}-1,
+$$
+所以
+$$
+n>\left(\frac{n}{a}+\frac{n}{b}+\frac{n}{c}-3\right)--\left|A_n \cap B_n\right|-\left|B_n \cap C_n\right|-\left|C_n \cap A_n\right| .
+$$
+由此可知
+$$
+\left|A_n \cap B_n\right|+\left|B_n \cap C_n\right|+\left|C_n \cap A_n\right|>\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}-1\right) n-3 .
+$$
+由于 $\frac{1}{a}+\frac{1}{b}+\frac{1}{c}>1$, 故当 $n \rightarrow \infty$ 时上式右端可以任意大, 但对任意 $n \in \mathbf{N}^*$, 总有 $A_n \subseteq S(a), B_n \subseteq S(b), C_n \subseteq S(c)$, 所以 $S(a), S(b), S(c)$ 中必有两个的交集为无限集.
+%%PROBLEM_END%%
+
+

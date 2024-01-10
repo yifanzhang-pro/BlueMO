@@ -1,0 +1,181 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 证明: 如果偶图 $G=(X, Y ; E)$ 是 $\delta$ 正则的,则 $|X|=|Y|$.
+%%<SOLUTION>%%
+由 $\delta|X|=\delta|Y|=$ 总边数, 得 $|X|=|Y|$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 作一个不含三角形的, 有 20 个顶点, 100 条边的简单图.
+%%<SOLUTION>%%
+作完全偶图 $K_{10,10}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. (1) 证明: $e_m(n)=\mathrm{C}_{n-k}^2+(m-1) \mathrm{C}_{k+1}^2$, 其中 $k=\left[\frac{n}{m}\right]$.
+(2) 设 $G$ 为有 $n$ 个顶点的完全 $m$ 部图, 则 $e(G) \leqslant e_m(n)$.
+%%<SOLUTION>%%
+(1) 令 $n=m k+r(0 \leqslant r<m)$, 则由 $T_{m, n}$ 定义有 $e_m(n)=\mathrm{C}_n^2-r \mathrm{C}_{k+1}^2- (m-r) \mathrm{C}_k^2$, 用 $r=n-m k$ 代入化简整理即得.
+(2) 设完全 $m$ 部图 $G$ 的 $m$ 个部分的顶点数分别为 $n_1, n_2, \cdots, n_m$, 若 $G$ 与 $T_m(n)$ 不同构, 则存在 $n_i-n_j>$ 1. 考虑完全 $m$ 部图 $G^{\prime}$, 它的 $m$ 部分顶点数分别为 $n_1, n_2, \cdots, n_i-1, \cdots, n_j+ 1, \cdots, n_m$. 由于 $e(G)=\frac{1}{2} \sum_{k=1}^m\left(n-n_k\right) n_k, e\left(G^{\prime}\right)=\frac{1}{2} \sum_{\substack{k=1 \\ k \neq i, j}}^m\left(n-n_k\right) n_k+\frac{1}{2}(n- \left.n_i+1\right)\left(n_i-1\right)+\frac{1}{2}\left(n-n_j-1\right)\left(n_j+1\right)=e(G)+\left(n_i-n_j\right)-1>e(G)$. 若 $G^{\prime}$ 与 $T_m(n)$ 同构,结论成立, 否则重复上述过程直至所得的图与 $T_m(n)$ 同构为止.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设图 $G$ 有 $n(n>5)$ 个顶点, 则在 $G$ 和 $G$ 的补图 $\bar{G}$ 中总共含有至少 $\frac{1}{24} n(n-$ 1) $(n-5)$ 个三角形.
+%%<SOLUTION>%%
+设 $G=(V, E)$, 有 $d(x)\{n-1-d(x)\}$ 个三点组 $\{x, y, z\}$, 它们在 $G$ 或 $\bar{G}$ 中都不构成三角形, 且在 $G$ 中有唯一的一条边以 $x \in V$ 为端点.
+在 $G$ 或 $\bar{G}$ 中不构成三角形的每一个三点组 $\{x, y, z\}$ 含有 $G$ 的一条边或两条边.
+设 $(x$, $y)$ 是 $G$ 的一条边, $(x, z) 、(y, z)$ 是 $\bar{G}$ 的两条边, 在总和 $\sum_{x \in V} d(x)\{n-1- d(x)\}$ 中, 三点组 $\{x, y, z\}$ 被计算两次: 一次关于 $x$, 一次关于 $y$. 而如果 $(x$, $y) 、(y, z)$ 是 $G$ 的边, $(x, z)$ 是 $\bar{G}$ 的边, 则上述和数中三点组 $\{x, y, z\}$ 也是被计算两次:一次关于 $x$, 另一次关于 $z$. 因此在 $G$ 和 $\bar{G}$ 中三角形的总数为
+$$
+\begin{aligned}
+\mathrm{C}_n^3-\frac{1}{2} \sum_{x \in V} d(x)\{n-1-d(x)\} & \geqslant \mathrm{C}_n^3-\frac{n}{2}\left(\frac{n-1}{2}\right)^2 \\
+& =\frac{1}{24} n(n-1)(n-5) .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. $X 、 Y$ 两国留学生各 $n(n>2)$ 人, 每个 $X$ 国学生都与一些(不是所有) $Y$国学生跳过舞, 每个 $Y$ 国学生至少与一个 $X$ 国学生跳过舞, 证明一定可以找到两个 $X$ 国学生 $x, x^{\prime}$ 及两个 $Y$ 国学生 $y, y^{\prime}$, 使得 $x$ 与 $y, x^{\prime}$ 与 $y^{\prime}$跳过舞, 而 $x$ 与 $y^{\prime}, x^{\prime}$ 与 $y$ 没有跳过舞.
+%%<SOLUTION>%%
+作偶图 $G=(X, Y ; E), X$ 的每个顶点表示一个 $X$ 国学生, $Y$ 的每一个顶点表示一个 $Y$ 国学生.
+如果一个 $X$ 国学生与一个 $Y$ 国学生跳过舞, 就在相应的两个点之间连一条边.
+设 $x$ 是集 $X$ 中度最大的点, 因 $d(x)<n$. 在 $Y$ 中存在一点 $y^{\prime}$ 与 $x$ 不相邻.
+又设 $X$ 中的 $x^{\prime}$ 与 $y^{\prime}$ 相邻, 因除 $y^{\prime}$ 外与 $x^{\prime}$ 相邻的点为 $d\left(x^{\prime}\right)-1$, 且 $d\left(x^{\prime}\right)-1 \leqslant d(x)-1<d(x)$, 所以在与 $x$ 相邻的点中一定有一个点 $y$ 与 $x^{\prime}$ 不相邻.
+这样得出的 4 个点 $x, x^{\prime}, y, y^{\prime}$ 就代表了 4 个符合要求的人.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. $X$ 是一个 $n$ 元集, 指定它的 $m$ 个 $k$ 元子集 $A_1, A_2, \cdots, A_m$ 为红 $k$ 子集.
+证: 若 $m>\frac{(k-1)(n-k)+k}{k^2} \cdot \mathrm{C}_n^{k-1}$, 则必存在一个 $X$ 的 $k+1$ 元子集,它的所有 $k$ 元子集都是红 $k$ 子集.
+%%<SOLUTION>%%
+假设没有所求的 $k+1$ 元集, 我们证明此时
+$$
+m \leqslant \frac{(k-1)(n-k)+k}{k^2} \cdot \mathrm{C}_n^{k-1} .
+$$
+记所有红 $k$ 子集构成子集族 $S$,所有 $k-1$ 元子集构成的子集族为 $\beta$. 对于任一个 $k-1$ 元子集 $B$, 记 $\alpha(B)$ 为包含 $B$ 的红 $k$ 子集个数.
+对于任一个 $A \in S, A$ 包含有 $k$ 个 $k-1$ 元子集.
+对于 $X \backslash A$ 的任一元素 $x$, $x$ 与 $A$ 中 $k$ 个 $k-1$ 元集的至多 $k-1$ 个构成红 $k$ 子集(不然存在 $k+1$ 元集, 其所有 $k$ 元子集都是红 $k$ 子集). 因此 $\sum_{\substack{B \subset A \\|B|=k-1}} \alpha(B) \leqslant(n-k)(k-1)+k$.
+故
+$$
+\begin{gathered}
+m[(n-k)(k-1)+k] \geqslant \sum_{A \in S} \sum_{\substack{B C A \\
+|B|=k-1}} \alpha(B) \\
+=\sum_{B \in \beta}(\alpha(B))^2 \geqslant \frac{1}{|\beta|}\left(\sum_{B \in \beta} \alpha(B)\right)^2 \geqslant \frac{1}{\mathrm{C}_n^{k-1}}(\mathrm{~km})^2 . \\
+m \leqslant \frac{[(n-k)(k-1)+k] \cdot \mathrm{C}_n^{k-1}}{k^2} .
+\end{gathered}
+$$
+故
+$$
+m \leqslant \frac{[(n-k)(k-1)+k] \cdot \mathrm{C}_n^{k-1}}{k^2} .
+$$
+因此当 $m>\frac{(n-k)(k-1)+k}{k^2} \cdot \mathrm{C}_n^{k-1}$ 时, 必存在一个 $X$ 的 $k+1$ 元子集, 它的所有 $k$ 元子集都是红 $k$ 子集.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 记 $K_{3,3}$ 为图, 求证: 一个有 10 个顶点 40 条边的图, 必含有一个 $K_{3,3}$.
+%%<SOLUTION>%%
+因为 $\mathrm{C}_{10}^2=45$, 所以一个 10 阶完全图中含边 45 条.
+因此题中图为 10 阶完全图中去掉 5 边后所得, 把这 5 边称为 "去掉边", 记 10 个顶点为 $A_1 A_2, \cdots, A_{10}$.
+不妨设 $A_1 A_2$ 为 "去掉边", 则把点 $A_1$ 及其连边去掉, 于是余下的 9 点图中至多有 4 条"去掉边".
+不妨设 $A_2 A_3$ 为一条"去掉边", 把 $A_2$ 及其连边去掉 (如果已不含 "去掉边", 则任去一点,下同), 于是余下的 8 阶图中至多有 3 条"去掉边".
+不妨设 $A_3 A_4$ 为一条 "去掉边", 把 $A_3$ 及其连边去掉, 于是余下的 7 阶图中至多有 2 条"去掉边".
+不妨设 $A_4 A_5$ 为一条 "去掉边", 把 $A_4$ 及其连边去掉, 于是余下的 6 阶图中至多有 1 条"去掉边".
+即此图为 6 阶完全图或从 6 阶完全图中去掉一边后所得的图, 不论如何必含有二部完全图 $K_{3,3}$.
+本题的推广: 若 $n$ 个顶点, $m$ 边图不含 $K_{r, r}$, 求证: $m<C \cdot n^{2-\frac{1}{r}}$, 这里 $C$ 仅依赖于 $r$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 半径为 6 公里的圆形城市, 有 18 辆警车巡逻, 它们之间用无线电通讯联系.
+若无线电使用范围为 9 公里, 证明不管什么时候最少有两辆车, 每一辆车可以和其余五辆车通讯联系.
+%%<SOLUTION>%%
+用 18 个点 $x_1, x_2, \cdots, x_{18}$ 表示 18 辆警车所在的位置, 令
+$$
+E=\left\{\left(x_i, x_j\right) \mid \frac{d\left(x_i, x_j\right)}{12} \leqslant \frac{\sqrt{2}}{2}<\frac{9}{12}\right\},
+$$
+根据定理三, 有 $|E| \geqslant \mathrm{C}_{18}^2-\left[\frac{18^2}{3}\right]=45$. 即最少有 45 对车可以互相通讯.
+若题目所述情况不成立, 就是不存在两个 5 度以上的点, 则 $|E| \leqslant \frac{1}{2}(1 \times 17+ 4 \times 17)<43$,矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 设空间中有 $2 n(n \geqslant 2)$ 个点, 其中任意 4 点不共面, 它们之间连有 $n^2+1$条线段,则这些线段至少构成 $n$ 个不同的三角形.
+%%<SOLUTION>%%
+当 $n=2$ 时, $n^2+1=5,4$ 点间连有 5 条线段,恰构成两个三角形, 即命题成立.
+设命题于 $n=k$ 时成立, 当 $n=k+1$ 时, 我们先来证明这时至少存在一个三角形.
+设 $A B$ 是一条已知线段并记由 $A 、 B$ 向其余 $2 k$ 个点所引出的线段条数分别为 $a$ 和 $b$.
+(1) 若 $a+b \geqslant 2 k+1$, 则存在点 $C$ 异于 $A$ 和 $B$, 使线段 $A C 、 B C$ 都存在, 从而存在 $\triangle A B C$.
+(2) 若 $a+b \leqslant 2 k$, 则当把 $A 、 B$ 两点除去后, 余下的 $2 k$ 个点间至少连有 $k^2+1$ 条线段,于是由归纳假设知至少存在一个三角形.
+设 $\triangle A B C$ 是这些线段所构成的三角形之一, 由 $A 、 B 、 C$ 三点向其余 $2 k-1$ 点引出的线段数分别为 $\alpha 、 \beta 、 \gamma$.
+(3) 若 $\alpha+\beta+\gamma \geqslant 3 k-1$, 则恰以 $A B 、 B C 、 C A$ 三者之一为一边的三角形的总数至少有 $k$ 个, 再加上原来的 $\triangle A B C$ 即至少有 $k+1$ 个三角形.
+(4) 若 $\alpha+\beta+\gamma \leqslant 3 k-2$, 则 $\alpha+\beta, \beta+\gamma, \gamma+\alpha$ 三个数中至少有 1 个不大于 $2 k-2$. 不妨设 $\alpha+\beta \leqslant 2 k-2$. 于是当把 $A 、 B$ 两点除去后, 余下的 $2 k$ 点间至少还连有 $k^2+1$ 条线段.
+于是由归纳假设和它们至少构成 $k$ 个三角形.
+再加上 $\triangle A B C$ 即至少有 $k+1$ 个三角形, 命题于 $n=k+1$ 时成立, 这就完成了归纳证明.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 设 $n$ 为给定的正整数, 求正整数 $m$ 的最小值, 使得任意一个有 $m$ 条边的 $n$阶简单图 $G$ 中存在两个恰有一个公共顶点的三角形.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c3a10.png>), 
+先证明: $m=\left[\frac{n^2}{4}\right]+1$ 时, 存在图 $G$, 在 $G$ 中没有两个三角形, 它们恰有一个公共顶点.
+考虑 2 部图: 顶点集为 $M_1 、 M_2$, 在 $M_1$ 中有 $\left[\frac{n+1}{2}\right]$ 个顶点, $M_2$ 中有 $\left[\frac{n}{2}\right]$ 个顶点, 将 $M_1$ 中每个点与 $M_2$ 中的每个点连边, 且 $M_1$ 中某两个点连边, 其余顶点之间不连边, 则此图中有 $\left[\frac{n}{2}\right]\left[\frac{n+1}{2}\right]+1=\left[\frac{n^2}{4}\right]+1$ 条边, 但该图中没有两个三角形恰有一个公共顶点.
+再证明: $m=\left[\frac{n^2}{4}\right]+2$, 任意一个有 $m$ 条边的 $n$ 阶简单图 $G_n$ 中, 存在两个恰.
+有一个公共顶点的三角形.
+当 $n=5$ 时, $G_5$ 的边数 $=8$, 即完全图 $K_5$ 去掉 2 条边, 由于 $K_5$ 中每个顶点的度为 4 , 故去掉两条边后, 仍有一个顶点的度为 4 , 不妨设 $d(a)=4$, 于是 2 条边是由剩下的 $K_4$ 中去掉的, 这时剩下的 4 个点 $b 、 c 、 d 、 e$ 形成的三组对边中, 必有一组对边 (不妨设为 $b c 、 d e$ ) 同时存在, 所以, $a 、 b 、 c 、 d 、 e$ 构成满足条件的 5 个点.
+设命题对 $n-1(n \geqslant 6)$ 成立, 考虑 $n$ 的情形.
+(1) 若 $G_n$ 中有一个点的度 $\leqslant\left[\frac{n}{2}\right]$, 则删去此点及其引出的边后, 剩下 $n-$ 1 个点之间所引的边数不小于
+$$
+\begin{aligned}
+{\left[\frac{n^2}{4}\right]+2-\left[\frac{n}{2}\right] } & =2+\left[\frac{n}{2}\right]\left(\left[\frac{n+1}{2}\right]-1\right) \\
+& =2+\left[\frac{n}{2}\right]\left[\frac{n-1}{2}\right] \\
+& =2+\left[\frac{(n-1)^2}{4}\right],
+\end{aligned}
+$$
+利用归纳假设可知命题成立.
+(2) 若 $G_n$ 中每个点的度均 $\geqslant\left[\frac{n}{2}\right]+1$. 则当 $n=2 k$ 时,
+$$
+e \geqslant k(k+1)>k^2+2=\left[\frac{n^2}{4}\right]+2,
+$$
+而当 $n=2 k+1$ 时,
+$$
+\begin{aligned}
+e & \geqslant \frac{1}{2}(2 k+1)(k+1) \\
+& =k(k+1)+\frac{k+1}{2} \\
+& \geqslant\left[\frac{n^2}{4}\right]+2,
+\end{aligned}
+$$
+其中等号仅当 $k=3$, 即 $n=7$ 时取到.
+如果 $e>\left[\frac{n^2}{4}\right]+2$, 则从 $G_n$ 中去掉一条边, 重复上述讨论,除 $n=7$ 的情形, 其余情况必可转为情形一.
+所以, 只需讨论 $n=7$, 每个点的度均为 4 的情形.
+在这种情形中, 考虑与 $a$ 相邻的 4 个顶点 $b 、 c 、 d$ 、 $e$, 在 $b 、 c 、 d 、 e$ 组成的子图中, 每个点的度不小于 1 . 不妨设 $b 、 c$ 之间连有边, 这时若 $d 、 e$ 之间连有边, 则命题获证,故 $d 、 e$ 不连边.
+此时, 若 $d 、 e$ 分别与 $b 、 c$ (或 $c 、 b$ ) 连有边, 命题也获证, 从而 $d 、 e$ 同时与 $b$ (或与 $c$ ) 相邻, 不妨设 $d 、 e$ 与 $b$ 均相邻, 而 $c 、 d 、 e$ 之间两两不连边.
+考虑另外两个点 $f 、 g$, 由于 $c 、 d 、 e$ 的度都是 4 , 故 $c 、 d 、 e$ 都与点 $f 、 g$ 同时相邻, 而 $f 、 g$ 的度也都为 4 , 故 $f 、 g$ 相邻 (因为 $f 、 g$ 与 $a 、 b$ 都不相邻), 这样, 我们得到下边的图,此时 $e a 、 e b 、, e f 、 e g 、 a b 、 f g$ 满足题中的要求.
+综上可知, $m=\left[\frac{n^2}{4}\right]+2$.
+%%PROBLEM_END%%
+
+

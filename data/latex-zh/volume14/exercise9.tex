@@ -1,0 +1,162 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 已给数表
+$$
+\left(\begin{array}{cccc}
+-1 & 2 & -3 & 4 \\
+-1.2 & 0.5 & -3.9 & 9 \\
+\pi & -12 & 4 & -2.5 \\
+63 & 1.4 & 7 & -9
+\end{array}\right)
+$$
+将它的任一行或任一列中的所有数同时变号,称为一次"变换". 问能否经过若干次变换,使表中的数全变为正数.
+%%<SOLUTION>%%
+因为每次变换改变表中 4 个数的符号, 但是 $(-1)^4=1$, 因此变换不会改变所变动的那行 (或列) 中 4 个数乘积的符号.
+开始时, 数表中 16 个数的乘积是负数(整体), 于是无论作多少次变换, 表中的 16 个数的乘积总是负的.
+因而, 要使表中的数全变为正数, 这是办不到的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $a_1, a_2, \cdots, a_9$ 都是非零实数,证明:下面的 6 个数:
+$$
+a_1 a_5 a_9, a_2 a_6 a_7, a_3 a_4 a_8,-a_3 a_5 a_7,-a_1 a_6 a_8,-a_2 a_4 a_9
+$$
+中至少有一个是负数.
+%%<SOLUTION>%%
+我们考虑这 6 个数的乘积:
+$$
+\begin{aligned}
+& \left(a_1 a_5 a_9\right)\left(a_2 a_6 a_7\right)\left(a_3 a_4 a_8\right)\left(-a_3 a_5 a_7\right)\left(-a_1 a_6 a_8\right)\left(-a_2 a_4 a_9\right) \\
+= & -\left(a_1 a_2 a_3 a_4 a_5 a_6 a_7 a_8 a_9\right)^2<0,
+\end{aligned}
+$$
+所以,这 6 个数中至少有一个是负数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 已知: $S=\{1,2, \cdots, 21\}$, 有限集 $A \subseteq \mathbf{N}^*$, 使得 $S$ 中任一元素或者属于 $A$,或者等于 $A$ 中两个不同元素的和.
+求满足条件的集合 $A$ 元素个数的最小值.
+%%<SOLUTION>%%
+设 $A=\left\{a_1, a_2, \cdots, a_t\right\}$.
+$A$ 中元素个数为 $t$, 二元子集数为 $\mathrm{C}_t^2$, 故至多有 $t+\mathrm{C}_t^2=\frac{t(t+1)}{2}$ 个正整数值出现在 $A$ 中-一个元素或两个元素的和所对应的值中.
+由题意得, $\frac{t(t+1)}{2} \geqslant|S|=21 \Rightarrow t \geqslant 6$.
+若 $t=6$, 则 $S$ 中每个元素恰能表示成 $a_i(i=1,2, \cdots, 6)$ 或 $a_i+a_j(1 \leqslant i<j \leqslant 6)$ 形式中的唯一一种方式.
+记 $B=\left\{a_i+a_j \mid 1 \leqslant i<j \leqslant 6, i, j \in \mathbf{N}^*\right\}$. 此时计算 $\sum_{x \in S} x$.
+一方面, $\sum_{x \in S} x=1+2+\cdots+21=231$ ;
+另一方面,
+$$
+\sum_{x \in S} x=\sum_{x \in A} x+\sum_{x \in B} x=\sum_{i=1}^6 a_i+\sum_{1 \leqslant i<j \leqslant 6}\left(a_i+a_j\right)=\sum_{i=1}^6 a_i+5 \sum_{i=1}^6 a_i=6 \sum_{i=1}^6 a_i,
+$$
+这是偶数,因此矛盾! 从而 $t \geqslant 7$.
+又当 $t=7$ 时, 取 $A=\{1,2,3,6,10,14,18\}$, 验证知该集合满足条件.
+综上,集合 $A$ 元素个数的最小值是 7 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 若实数 $x_1, x_2, x_3, x_4, x_5$ 满足方程组:
+$$
+\left\{\begin{array}{l}
+x_1 x_2+x_1 x_3+x_1 x_4+x_1 x_5=-1, \\
+x_2 x_1+x_2 x_3+x_2 x_4+x_2 x_5=-1, \\
+x_3 x_1+x_3 x_2+x_3 x_4+x_3 x_5=-1, \\
+x_4 x_1+x_4 x_2+x_4 x_3+x_4 x_5=-1, \\
+x_5 x_1+x_5 x_2+x_5 x_3+x_5 x_4=-1 .
+\end{array}\right.
+$$
+求 $x_1$ 的所有可能值.
+%%<SOLUTION>%%
+设 $S=x_1+x_2+x_3+x_4+x_5$, 则由已知得 $x_1, x_2, x_3, x_4, x_5$ 均满足方程 $x^2-S x-1=0$.
+由此可知 $x_1, x_2, x_3, x_4, x_5$ 取值于 $\frac{S \pm \sqrt{S^2+4}}{2}$, 所以
+$$
+x_1+x_2+x_3+x_4+x_5=\frac{5 S+\varepsilon \sqrt{S^2+4}}{2},
+$$
+其中 $\varepsilon \in\{ \pm 1, \pm 3, \pm 5\}$. 从而有 $S=\frac{5 S+\varepsilon \sqrt{S^2+4}}{2}$, 即 $3 S=-\varepsilon \sqrt{S^2+4}$.
+进一步由 $|3 S|=\left|-\varepsilon \sqrt{S^2+4}\right|>|\varepsilon S|$ 可知只能是 $\varepsilon= \pm 1$, 故易得 $S= \pm \frac{\sqrt{2}}{2}$
+当 $S=\frac{\sqrt{2}}{2}$ 时, $x_1^2-\frac{\sqrt{2}}{2} x_1-1=0$, 解得 $x_1=\sqrt{2}$ 或 $x_1=-\frac{\sqrt{2}}{2}$; 当 $S=-\frac{\sqrt{2}}{2}$ 时, 同理得 $x_1=-\sqrt{2}$ 或 $x_1=\frac{\sqrt{2}}{2}$.
+所以 $x_1$ 的所有可能值为 $\pm \sqrt{2}, \pm \frac{\sqrt{2}}{2}$.
+%%<REMARK>%%
+注:条件中的 5 个方程具有明显的循环特征,这就提示我们从整体考虑问题.
+纵观全局, 联想到引人辅助量 $S=x_1+x_2+x_3+x_4+x_5$, 从而将原先具有 5 个变元的方程组转化为考虑 " $x_1, x_2, x_3, x_4, x_5$ 可能取 $x^2-S x-1=0$ 两根各多少次" 的简单问题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 给定 $n(n>1)$ 个二次三项式 $x^2-a_i x+b_i(1 \leqslant i \leqslant n)$, 其中 $2 n$ 个实数 $a_i, b_i$ 互不相同.
+试问: 是否可能 $a_i, b_i(1 \leqslant i \leqslant n)$ 中的每个数都是其中某个多项式的根? 
+%%<SOLUTION>%%
+假定有这样的可能性.
+因二次三项式至多有两个实根, 而 $2 n$ 个实数 $a_i, b_i$ 互不相同, 所以每个二次三项式 $x^2-a_i x+b_i(1 \leqslant i \leqslant n)$ 必含有两个不相等的实根 $u_i, v_i$, 且 $\left(a_1, a_2, \cdots, a_n, b_1, b_2, \cdots, b_n\right)$ 构成 $\left(u_1, u_2, \cdots, u_n\right.$, $\left.v_1, v_2, \cdots, v_n\right)$ 的一个排列.
+对 $1 \leqslant i \leqslant n$, 由韦达定理知 $u_i+v_i=a_i, u_i v_i=b_i$. 所以,
+$$
+\sum_{i=1}^n a_i=\sum_{i=1}^n\left(u_i+v_i\right)=\sum_{i=1}^n a_i+\sum_{i=1}^n b_i,
+$$
+因此 $\sum_{i=1}^n b_i=0$.
+另一方面,还有 $u_i^2+v_i^2=\left(u_i+v_i\right)^2-2 u_i v_i=a_i^2-2 b_i$, 从而,
+$$
+\sum_{i=1}^n\left(a_i^2+b_i^2\right)=\sum_{i=1}^n\left(u_i^2+v_i^2\right)=\sum_{i=1}^n\left(a_i^2-2 b_i\right)=\sum_{i=1}^n a_i^2 .
+$$
+这表明了 $\sum_{i=1}^n b_i^2=0$, 于是所有 $b_i$ 全为 0 ,矛盾.
+因此不可能 $a_i, b_i(1 \leqslant i \leqslant n)$ 中的每个数都是其中某个多项式的根.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 沿着圆周放着一些数,如果有依次相连的 4 个数 $a, b, c, d$ 满足不等式 $(a-d)(b-c)>0$, 那么就可以交换 $b, c$ 的位置, 这称为一次操作.
+(1)若圆周上依次放着数 $1,2,3,4,5,6$, 问: 是否能经过有限次操作后, 对圆周上任意依次相连的 4 个数 $a, b, c, d$, 都有 $(a-d)(b-c) \leqslant 0$ ? 请说明理由.
+(2)若圆周上从小到大按顺时针方向依次放着 2006 个正整数 $1,2, \cdots$, 2006, 问: 是否能经过有限次操作后, 对圆周上任意依次相连的 4 个数 $a, b, c, d$, 都有 $(a-d)(b-c) \leqslant 0$ ? 请说明理由.
+%%<SOLUTION>%%
+(1) 答案是肯定的.
+具体操作如图(<FilePath:./figures/fig-c9a6.png>)
+(2) 答案是肯定的.
+考虑这 2006 个数的相邻两数乘积之和为 $P$.
+开始时, $P_0=1 \times 2+2 \times 3+3 \times 4+\cdots+2005 \times 2006+2006 \times 1$, 经过 $k(k \geqslant 0)$ 次操作后, 这 2006 个数的相邻两数乘积之和为 $P_k$, 此时若圆周上依次相连的 4 个数 $a, b, c, d$ 满足不等式 $(a-d)(b-c)>0$, 即 $a b+c d>a c+ b d$, 交换 $b, c$ 的位置后, 这 2006 个数的相邻两数乘积之和为 $P_{k+1}$, 有
+$$
+P_{k+1}-P_k=(a c+c b+b d)-(a b+b c+c d)=a c+b d-a b-c d<0 .
+$$
+所以 $P_{k+1}-P_k \leqslant-1$, 即每一次操作, 相邻两数乘积的和至少减少 1 , 由于相邻两数乘积总大于 0 ,故经过有限次操作后, $P$ 无法变得更小, 此时对任意依次相连的 4 个数 $a, b, c, d$, 一定有 $(a-d)(b-c) \leqslant 0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 在由实数构成的 $n \times n(n \geqslant 2)$ 数表中, 第 $i$ 行 $n$ 个数之和为 $s_i$, 第 $j$ 列 $n$ 个数之和为 $t_j$. 记 $a_{i j}=s_i-t_j, i, j=1,2, \cdots, n$, 求 $n^2$ 个数 $a_{i j} ( i, j=1$, $2, \cdots, n)$ 中正数个数的最大值.
+%%<SOLUTION>%%
+记数表中所有实数之和为 $S$, 显然 $s_1+s_2+\cdots+s_n=t_1+t_2+\cdots+ t_n=S$. 对 $k=0,1, \cdots, n-1$, 在下标关于 $n$ 同余的意义下,有
+$$
+\sum_{i=1}^n a_{i, i+k}=\sum_{i=1}^n\left(s_i-t_{i+k}\right)=\sum_{i=1}^n s_i-\sum_{i=1}^n t_{i+k}=\sum_{i=1}^n s_i-\sum_{i=1}^n t_i=0,
+$$
+因此 $a_{1,1+k}, a_{2,2+k}, \cdots, a_{n, n+k}$ 这 $n$ 个数中至多只有 $n-1$ 个正数.
+令 $k=0$, $1, \cdots, n-1$ 可知 $a_{i j}(i, j=1,2, \cdots, n)$ 中至多只有 $n(n-1)$ 个正数.
+另一方面, 若取如下数表,
+$\begin{array}{cccc}0 & 0 & \cdots & 0 \\ 1 & 1 & \cdots & 1 \\ \cdots & \cdots & \cdots & \cdots \\ 1 & 1 & \cdots & 1\end{array}$
+则容易验证
+$$
+\begin{gathered}
+a_{1 j}=s_1-t_j=-(n-1), j=1,2, \cdots, n, \\
+a_{i j}=s_i-t_j=1, i=2,3, \cdots, n, j=1,2, \cdots, n,
+\end{gathered}
+$$
+此时 $a_{i j}(i, j=1,2, \cdots, n)$ 中正数个数为 $n(n-1)$.
+综上可知 $n^2$ 个数 $a_{i j}(i, j=1,2, \cdots, n)$ 中正数个数的最大值为 $n(n-1)$.
+%%<REMARK>%%
+注:由于 $a_{i j}$ 的值受到数表中第 $i$ 行与第 $j$ 列共 $2 n-2$ 个数的影响 (说明: 其中第 $i$ 行第 $j$ 列位置的数的改变并不影响 $a_{i j}$ 的值), 故先将 $n^2$ 个数 $a_{i j}(i$, $j=1,2, \cdots, n)$ 按对角线分成 $n$ 个组.
+在每组中, 整体考虑 $n$ 个实数, 推得它们的和为 0 , 因此容易看出每组最多只有 $n-1$ 个正数.
+通常情况下, 某些对象在一个整体中可能是相互制约的, 因此将一个对象置于整体的视角下看待会比孤立地看待它获得更有用的信息.
+%%PROBLEM_END%%
+
+

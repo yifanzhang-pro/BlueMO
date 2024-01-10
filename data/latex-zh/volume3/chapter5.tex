@@ -1,0 +1,701 @@
+
+%%TEXT_BEGIN%%
+我们知道, 用不等号连接起来的式子叫做不等式.
+含有未知数的三角函数的不等式叫做三角不等式.
+三角不等式的解集, 通常借助于三角函数或三角函数的图象, 即利用 "数形结合" 的数学思想求解.
+如解三角不等式 $\sin x>a(|a|<1)$, 可作出如图(<FilePath:./figures/fig-c5i1.png>) 所示的单位圆, 在纵轴上取点 $A(0, a)$, 过 $A$ 作 $M N / / O x$ 轴交单位圆于 $M$ 和 $N$, 根据三角函数的定义可知阴影部分的角度满足 $\sin x>a$, 即其解集为 $\{x \mid 2 k \pi+\arcsin a<x<2 k \pi+\pi-\arcsin a, k \in \mathbf{Z}\}$. 也可作出一个周期的正弦曲线, 如图(<FilePath:./figures/fig-c5i2.png>) 所示, 在 $y$ 轴上取点 $A(0, a)$, 过 $A$ 作 $x$ 轴的平行线, 在这条平行线上方的图象,其三角函数值满足不等式 $\sin x>a$, 从而其解集为 $\{x \mid 2 k \pi+\arcsin a<x<2 k \pi+\pi-\arcsin a, k \in \mathbf{Z}\}$.
+关于三角不等式的证明, 如同证明代数不等式一样, 通常有比较法 (作差比较法和求商比较法)、综合法以及分析法等方法, 但三角函数又有它的一些特殊性质, 如正弦曲线和余弦曲线的有界性、三角函数的单调性和周期性.
+因此, 证明三角函数不等式还有一些不同于代数不等式的方法.
+为了便于读者理解, 我们把常用的基本不等式列举如下: (1) $(a-b)^2 \geqslant$ 0 ; (2) 若 $a, b \in \mathbf{R}$, 则 $a^2+b^2 \geqslant 2 a b$ (当且仅当 $a=b$ 时取等号); (3) 若 $a>0$, $b>0, c>0$, 则有 $a+b \geqslant 2 \sqrt{a b}$ (当且仅当 $a=b$ 时取等号); $a+b+c \geqslant$
+$3 \sqrt[3]{a b c}$ (当且仅当 $a=b=c$ 时取等号); $a^3+b^3+c^3 \geqslant 3 a b c$ (当且仅当 $a= b=c$ 时取等号).
+另外, 在三角函数中, 有一个重要不等式: 若 $x \in\left(0, \frac{\pi}{2}\right)$, 则 $\sin x<x<\tan x$, 这可从图(<FilePath:./figures/fig-c5i3.png>) 来证明.
+在单位圆上作 $\angle A O M=x, A T \perp O x$ 轴, $N M \perp O x$ 轴, 则 $\sin x=N M, \tan x=A T$, 由 $S_{\triangle A O M}<S_{\text {扇形 } A O M}<S_{\triangle A O T}$ 得
+$$
+\frac{1}{2} M N<\frac{1}{2} x<\frac{1}{2} A T,
+$$
+即 $\sin x<x<\tan x$.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知 $0<\alpha<\beta<\frac{\pi}{2}$, 求证: $\frac{\cot \beta}{\cot \alpha}<\frac{\cos \beta}{\cos \alpha}<\frac{\beta}{\alpha}$.
+%%<SOLUTION>%%
+分析:可以构造函数, 用单调性来证明.
+证明设 $y=\cos x, x \in\left(0, \frac{\pi}{2}\right)$. 在其图象上取两点 $A(\alpha, \cos \alpha), B(\beta$, $\cos \beta)$, 由 $y=\cos x$ 在 $\left(0, \frac{\pi}{2}\right)$ 上是减函数, 点 $A$ 在点 $B$ 的上方, 所以
+$$
+\begin{gathered}
+k_{O A}>k_{O B} \Rightarrow \frac{\cos \alpha}{\alpha}>\frac{\cos \beta}{\beta}, \\
+\frac{\cos \beta}{\cos \alpha}<\frac{\beta}{\alpha} .
+\end{gathered}
+$$
+所以
+$$
+\frac{\cos \beta}{\cos \alpha}<\frac{\beta}{\alpha}
+$$
+再设 $y=\cot x, x \in\left(0, \frac{\pi}{2}\right)$, 在其图象上取点 $C(\alpha, \cot \alpha), D(\beta, \cot \beta)$, 同理 $k_{O C}>k_{O D}$, 所以 $\frac{\cot \alpha}{\alpha}>\frac{\cot \beta}{\beta}$, 所以
+$$
+\frac{\cot \beta}{\cot \alpha}<\frac{\beta}{\alpha} \text {. }
+$$
+又因为 $\frac{\cos \beta}{\cos \alpha}-\frac{\cot \beta}{\cot \alpha}=\frac{\cos \beta}{\cos \alpha}\left(1-\frac{\sin \alpha}{\sin \beta}\right), 0<\alpha<\beta<\frac{\pi}{2}$,
+所以
+$$
+0<\sin \alpha<\sin \beta, \frac{\sin \alpha}{\sin \beta}<1,
+$$
+所以
+$$
+\frac{\cos \beta}{\cos \alpha}>\frac{\cot \beta}{\cot \alpha}
+$$
+即
+$$
+\frac{\cot \beta}{\cot \alpha}<\frac{\cos \beta}{\cos \alpha}<\frac{\beta}{\alpha}
+$$
+评注本例进一步可得如下结论, 若 $0<\alpha<\beta<\frac{\pi}{2}$, 则
+$$
+\frac{\cot \beta}{\cot \alpha}<\frac{\cos \beta}{\cos \alpha}<\frac{\sin \beta}{\sin \alpha}<\frac{\beta}{\alpha}<\frac{\tan \beta}{\tan \alpha} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 在 $\triangle A B C$ 中, $\angle C \geqslant 60^{\circ}$, 求证:
+$$
+(a+b)\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right) \geqslant 4+\frac{1}{\sin \frac{C}{2}} .
+$$
+%%<SOLUTION>%%
+分析:由 $(a+b)\left(\frac{1}{a}+\frac{1}{b}\right) \geqslant 4$, 所证不等式可化为求证 $(a+b) \frac{1}{c} \geqslant \frac{1}{\sin \frac{C}{2}}$, 但取例以后发现此路不通, 原因是放缩过头了.
+证明
+$$
+\begin{aligned}
+& (a+b)\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right) \\
+= & (\sin A+\sin B)\left(\frac{1}{\sin A}+\frac{1}{\sin B}+\frac{1}{\sin C}\right) \\
+= & 2+\frac{\sin A+\sin B}{\sin C}+\frac{\sin B}{\sin A}+\frac{\sin A}{\sin B} \\
+= & 4+\frac{(\sin A-\sin B)^2}{\sin A \cdot \sin B}+\frac{\sin B+\sin A}{\sin C} \\
+= & 4+\frac{8 \cos ^2 \frac{A+B}{2} \sin ^2 \frac{A-B}{2}}{\cos (A-B)-\cos (A+B)}+\frac{2 \sin \frac{A+B}{2} \cos \frac{A-B}{2}}{2 \sin \frac{C}{2} \cos \frac{C}{2}} \\
+= & 4+\frac{8 \cos ^2 \frac{A+B}{2} \sin ^2 \frac{A-B}{2}}{\cos (A-B)-\cos (A+B)}+\frac{1-2 \sin ^2 \frac{A-B}{4}}{\sin ^2 \frac{C}{2}}- \\
+= & 4+\frac{1}{\sin \frac{C}{2}}+2 \sin ^2 \frac{A-B}{4} \cdot\left[\frac{8 \sin ^2 \frac{C}{2} \cos ^2 \frac{A-B}{4}}{\cos ^2 \frac{A-B}{2}-\sin ^2 \frac{C}{2}}-\frac{1}{\sin \frac{C}{2}}\right], \quad\quad(1)
+\end{aligned}
+$$
+因为
+$$
+0<\left|\frac{A-B}{2}\right|<\frac{A+B}{2}<\frac{\pi}{2}
+$$
+所以 $\cos ^2 \frac{A-B}{2}>\cos ^2 \frac{A+B}{2}=\sin ^2 \frac{C}{2} \quad\quad(2)$.
+又因为 $\angle C \geqslant 60^{\circ}$, 所以 $8 \sin ^3 \frac{C}{2} \geqslant 1$, 所以
+$$
+8 \sin ^3 \frac{C}{2} \cos ^2 \frac{A-B}{2} \geqslant \cos ^2 \frac{A-B}{4} \geqslant \cos ^2 \frac{A-B}{2} \geqslant \cos ^2 \frac{A-B}{2}-\sin ^2 \frac{C}{2},
+$$
+再由 (2) 得代入(1), 得
+$$
+(a+b)\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right) \geqslant 4+\frac{1}{\sin \frac{C}{2}} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 已知 $\theta_i(i=1,2, \cdots, n)$ 均为实数且满足 $\sum_{i=1}^n\left|\cos \theta_i\right| \leqslant \frac{2}{n+1}$, ( $n>1$ 且 $\left.n \in \mathbf{N}^*\right)$, 求证:
+$$
+\left|\sum_{i=1}^n i \cos \theta_i\right| \leqslant\left\lceil\frac{n^2}{4}\right]+1 .
+$$
+%%<SOLUTION>%%
+分析:通过适当的放缩去掉绝对值, 利用已知证明.
+证明 (1) 当 $n=2 k$ 时,
+$$
+\begin{aligned}
+& {\left[\frac{n^2}{4}\right]+1-\left|\sum_{i=1}^n i \cos \theta_i\right|=k^2+1-\left|\sum_{i=1}^n i \cos \theta_i\right| } \\
+\geqslant & k^2+1-\sum_{i=1}^n\left|i \cos \theta_i\right|=n+(n-1)+\cdots+(k+1) \\
+& -k-(k-1)-\cdots-1+1-\left(\left|\cos \theta_1\right|+\left|2 \cos \theta_2\right|\right. \\
+& \left.+\left|3 \cos \theta_3\right|+\cdots+\left|n \cos \theta_n\right|\right) \\
+= & n\left(1-\left|\cos \theta_n\right|\right)+(n-1)\left(1-\left|\cos \theta_{n-1}\right|\right)+\cdots+ \\
+& (k+1)\left(1-\left|\cos \theta_{k+1}\right|\right)-k\left(1+\left|\cos \theta_k\right|\right)-(k-1)(1+ \\
+& \left.\left|\cos \theta_{k-1}\right|\right)-\cdots-1 \cdot\left(1+\left|\cos \theta_1\right|\right)+1 \\
+\geqslant & k\left[\left(1-\left|\cos \theta_n\right|\right)+\left(1-\left|\cos \theta_{n-1}\right|\right)+\cdots+\left(1-\left|\cos \theta_{k+1}\right|\right)-\right. \\
+& \left.\left(1+\left|\cos \theta_k\right|\right)-\left(1+\left|\cos \theta_{k-1}\right|\right)-\cdots-\left(1+\left|\cos \theta_1\right|\right)\right]+1 \\
+= & -k \sum_{i=1}^n\left|\cos \theta_i\right|+1 \geqslant-\frac{2}{n+1} \cdot k+1=\frac{1}{n+1}>0 .
+\end{aligned}
+$$
+(2) 当 $n=2 k+1$ 时同样有
+$$
+\begin{aligned}
+& {\left[\frac{n^2}{4}\right]+1-\left|\sum_{i=1}^n i \cos \theta_i\right| } \\
+= & n+(n-1)+\cdots+(k+2)+0-k-(k-1)-\cdots-1-\left|\sum_{i=1}^n i \cos \theta_i\right|+1 \\
+\geqslant(k+1)\left(k-\left|\cos \theta_n\right|-\left|\cos \theta_{n-1}\right|-\cdots-\left|\cos \theta_{k+2}\right|\right. & \left.\quad-\left|\cos \theta_{k+1}\right|-k-\left|\cos \theta_k\right|-\left|\cos \theta_{k-1}\right|-\cdots-\left|\cos \theta_1\right|\right)+1 \\
+= & -(k+1) \sum_{i=1}^n\left|\cos \theta_i\right|+1 \geqslant-(k+1) \cdot \frac{2}{n+1}+1=0 .
+\end{aligned}
+$$
+综上, (1)、(2), 得证.
+评注本题只不过用三角函数做个样子, 本身并没有用到多少三角函数性质.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 求证: $\left|\sum_{k=1}^n \frac{\sin k x}{k}\right| \leqslant 2 \sqrt{\pi}$, 对一切实数 $x$ 成立.
+%%<SOLUTION>%%
+分析:当 $\theta \in(0,+\infty)$ 时, 有 $\sin \theta<\theta$. 当 $\theta \in\left(0, \frac{\pi}{2}\right)$ 时, 有 $\sin \theta \geqslant \frac{2}{\pi} \theta$, 再结合函数的奇偶性, 周期性, 可得证明.
+证明首先考查 $x \in(0, \pi)$, 取 $m$ 为某个自然数,使 $m \leqslant \frac{\sqrt{\pi}}{x}<m+1$ 成立.
+则 $\left|\sum_{k=1}^n \frac{\sin k x}{k}\right| \leqslant \sum_{k=1}^m\left|\frac{\sin }{k} \frac{k x}{k}\right|+\left|\sum_{k=m+1}^n \frac{\sin k x}{k}\right|$, 这里当 $m=0$ 时, 右边第一项为 0 ; 当 $m \geqslant n$ 时,右边第二项为 0 , 由于 $\sin k x<k x$, 故
+$$
+\sum_{k=1}^m\left|\frac{\sin k x}{k}\right| \leqslant \sum_{k=1}^m \frac{k x}{k}=m x \leqslant \sqrt{\pi}, \quad\quad(1)
+$$
+利用阿贝尔不等式, 有 $\quad\left|\sum_{k=m+1}^n \frac{\sin k x}{k}\right| \leqslant \frac{1}{\sin \frac{x}{2}} \cdot \frac{1}{m+1}$,
+又当 $t \in\left[0, \frac{\pi}{2}\right]$ 时, $\sin t \geqslant \frac{2}{\pi} t$, 故 $\sin \frac{x}{2}>\frac{x}{\pi}$, 又 $m+1>\frac{\sqrt{\pi}}{x}$, 故
+$$
+\left|\sum_{k=m+1}^n \frac{\sin k x}{k}\right| \leqslant \frac{1}{\frac{x}{\pi} \cdot \frac{\sqrt{\pi}}{x}}=\sqrt{\pi}, \quad\quad(2)
+$$
+由(1)、(2), 知当 $x \in(0, \pi)$ 时, 原式得证.
+当 $x \in(-\pi, 0)$ 时, 由于 $f(x)=\left|\sum_{k=1}^n \frac{\sin k x}{k}\right|$ 为偶函数.
+所以原式也成立, 当 $x= \pm \pi, 0$ 时, 显然成立.
+又由于 $f(x)$ 是以 $2 \pi$ 为周期的周期函数, 故原式对一切 $x \in \mathbf{R}$ 都成立, 得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 三个数 $a 、 b 、 c$ 属干开区间 $\left(0, \frac{\pi}{2}\right)$, 且满足下列等式 $a=\cos a$, $b=\sin (\cos b), c=\cos (\sin c)$, 试按从小到大的顺序排列这三个数.
+%%<SOLUTION>%%
+分析:从题目条件来看, 直接计算 $a 、 b 、 c$ 的值是极为困难的, 所以考虑用图象法解之.
+解法一 $\cos a=a$ 表示曲线 $y=\cos x$ 与 $y=x$ 的交点的横坐标即为 $a$.
+同理, 曲线 $y=\sin (\cos x)$ 与 $y=x$ 的交点的横坐标即为 $b$. 而曲线 $y= \cos (\sin x)$ 与 $y=x$ 的交点的横坐标即为 $c$.
+在同一坐标系中作出曲线 $y=\cos x$, $y=\cos (\sin x), y=\sin (\cos x)$ 及直线 $y=x$. (如图(<FilePath:./figures/fig-c5i4.png>) 所示)
+由于当 $x \in\left(0, \frac{\pi}{2}\right)$ 时, 有 $\sin x<x$. 所以 $\cos (\sin x)>\cos x$. 即当 $x \in\left(0, \frac{\pi}{2}\right)$ 时, $y=\cos (\sin x)$ 的图象在 $y=\cos x$ 的上方.
+由于 $x \in\left(0, \frac{\pi}{2}\right)$ 时, $\cos x \in(0,1)$. 在$\sin x<x$ 中用 $\cos x$ 代 $x$, 就得 $x \in\left(0, \frac{\pi}{2}\right)$ 时, $\sin (\cos x)<\cos x$. 即当 $x \in\left(0, \frac{\pi}{2}\right)$ 时, $y=\sin (\cos x)$ 的图象在 $y=\cos x$ 的下方.
+由此可知 $b<a<c$.
+解法二如图(<FilePath:./figures/fig-c5i5.png>) 所示.
+由 $\cos a=a$, 知 $a$ 是 $y=\cos x$ 与 $y=x$ 交点的横坐标.
+而 $\sin (\cos b)=b$, 可看成 $\cos b= \arcsin b$. 即为 $y=\cos x$ 与 $y=\arcsin x$ 的交点的横坐标.
+注意到 $x \in\left(0, \frac{\pi}{2}\right)$ 时, $0< \sin x<x$, 即 $y=\sin x$ 的图象在 $x \in\left(0, \frac{\pi}{2}\right)$ 时在直线 $y=x$ 的下方.
+于是其反函数 $y= \arcsin x$ 的图象在 $x \in(0,1)$ 时应在直线 $y=$
+$x$ 的上方.
+又 $\cos (\sin c)=c$, 可看成 $\arccos c=\sin c$, 但 $y=\sin x, x \in\left(0, \frac{\pi}{2}\right)$ 的图象在 $y=x$ 的下方.
+由此可作图, 从图中也可看出 $b<a<c$.
+解法三利用反证法.
+假设 $a \geqslant c$, 则由 $a, c \in\left(0, \frac{\pi}{2}\right)$ 得 $\cos a \leqslant \cos c$, 即 $a \leqslant \cos c$, 而 $0<\sin c<c$, 所以 $\cos (\sin c)>\cos c$, 从而 $a<\cos (\sin c)$, 即 $a< c$, 两者矛盾, 所以假设错误, 得 $a<c$;
+假设 $a \leqslant b$, 则由 $a, b \in\left(0, \frac{\pi}{2}\right)$ 得 $\cos a \geqslant \cos b$, 即 $a \geqslant \cos b$, 又因 $0< \sin (\cos b)<\cos b$, 所以 $a>\sin (\cos b)=b$, 两者也矛盾.
+所以 $a>b$, 综上所述 $b<a<c$.
+评注本题应用了三角函数的重要性质: 当 $x \in\left(0, \frac{\pi}{2}\right)$ 时, $0<\sin x<x$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 在锐角 $\triangle A B C$ 中, 求证: $\cos A \cos B+ \cos A \cos C+\cos B \cos C \leqslant 6 \sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2} \leqslant \sin \frac{A}{2} \sin \frac{B}{2}+\sin \frac{A}{2} \sin \frac{C}{2}+\sin \frac{B}{2} \sin \frac{C}{2}$.
+%%<SOLUTION>%%
+证明:如图,设 $A D 、 B E 、 C F$ 为三角形 $A B C$ 的高, $H$ 为垂心, $I$ 为内心, $\triangle A B C$ 的外接圆, 内切圆半径分别为 $R$ 与 $r$.
+由 $A 、 F 、 H 、 E$ 四点共圆, $A H$ 为此圆直径.
+$\angle A E F=\angle A H F= \angle C H D=\angle B \Rightarrow A F=A H \sin \angle B A D=A H \cos B=2 R \cos A \cos B$.
+同理可得
+$$
+H D+H E+H F=2 R(\cos A \cos B+\cos B \cos C+\cos A \cos C),
+$$
+则
+$$
+\begin{gathered}
+\cos A \cos B+\cos B \cos C+\cos C \cos A=\frac{H D+H E+H F}{2 R}, \quad\quad(1) \\
+r=4 R \sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2} \Rightarrow 6 \sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2}=\frac{3 r}{2 R}, \quad\quad(2) \\
+\frac{B I}{\sin \frac{C}{2}}=\frac{2 R \sin A}{\sin \left(\frac{C}{2}+\frac{B}{2}\right)}=\frac{2 R \sin A}{\cos \frac{A}{2}} \Rightarrow B I=4 R \sin \frac{A}{2} \sin \frac{C}{2}
+\end{gathered}
+$$
+同理可得
+$$
+\begin{aligned}
+& A I+B I+C I=4 R\left(\sin \frac{A}{2} \sin \frac{B}{2}+\sin \frac{A}{2} \sin \frac{C}{2}+\sin \frac{B}{2} \sin \frac{C}{2}\right), \\
+& \sin \frac{A}{2} \sin \frac{B}{2}+\sin \frac{A}{2} \sin \frac{C}{2}+\sin \frac{B}{2} \sin \frac{C}{2}=\frac{A I+B I+C I}{4 R} .\quad\quad(3)
+\end{aligned}
+$$
+比较(1)、(2)、(3), 本例等价于证明
+$$
+H D+H E+H F \leqslant 3 r \leqslant \frac{1}{2}(A I+B I+C I) .
+$$
+(1) 先证前一半.
+不妨设 $a \geqslant b \geqslant c$, 则 $\cos A \leqslant \cos B \leqslant \cos C$, 于是
+$$
+\cos A \cos B \leqslant \cos A \cos C \leqslant \cos B \cos C \Rightarrow H F \leqslant H E \leqslant H D,
+$$
+而
+$$
+\begin{aligned}
+2 S_{\triangle A B C} & =H D \cdot a+H E \cdot b+H F \cdot c \\
+& \geqslant \frac{1}{3}(H D+H E+H F)(a+b+c),
+\end{aligned}
+$$
+ (契比雪夫不等式)
+$$
+\begin{gathered}
+2 S_{\triangle A B C}=2 p r=(a+b+c) r \Rightarrow \frac{1}{3}(H D+H E+H F)(a+b+c) \\
+\leqslant(a+b+c) r \Rightarrow H D+H E+H F \leqslant 3 r .
+\end{gathered}
+$$
+(2) 再证后一半, $\left(\sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2} \leqslant \frac{7}{8}\right)$, 由于 $r=A I \sin \frac{A}{2}$, 故得
+$$
+\begin{aligned}
+& A I+B I+C I \\
+= & \frac{r}{\sin \frac{A}{2}}+\frac{r}{\sin \frac{B}{2}}+\frac{r}{\sin \frac{C}{2}} \\
+= & r\left[\frac{1}{\sin \frac{A}{2}}+\frac{1}{\sin \frac{B}{2}}+\frac{1}{\sin \frac{C}{2}}\right] \\
+\geqslant & 3 r \sqrt[3]{\frac{1}{\sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2}}} \geqslant 6 r .
+\end{aligned}
+$$
+综上, 本例得证.
+评注本例后半部分用函数的凹凸性也可证明.
+令 $f(x)=\frac{1}{\sin x}, x \in\left(0, \frac{\pi}{2}\right)$, 因为 $f^{\prime}(x)=\frac{-\cos x}{\sin ^2 x}$,
+$$
+f^{\prime \prime}(x)=\frac{\sin ^3 x+2 \sin x \cos ^2 x}{\sin ^4 x}=\frac{\sin ^2 x+2 \cos ^2 x}{\sin ^3 x}>0,
+$$
+故 $f(x)=\frac{1}{\sin x}$ 是 $\left(0, \frac{\pi}{2}\right)$ 上的下凸函数.
+所以 $\frac{1}{\sin \frac{A}{2}}+\frac{1}{\sin \frac{B}{2}}+\frac{1}{\sin \frac{C}{2}} \geqslant 3 \frac{1}{\sin \frac{A+B+C}{6}}=6$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $\theta_i \in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right), i=1 、 2 、 3 、 4$, 证明: 存在 $\theta \in \mathbf{R}$, 使得如下两个不等式:
+$$
+\begin{aligned}
+& \cos ^2 \theta_1 \cos ^2 \theta_2-\left(\sin \theta_1 \sin \theta_2-x\right)^2 \geqslant 0, \quad\quad(1)\\
+& \cos ^2 \theta_3 \cos ^2 \theta_4-\left(\sin \theta_3 \sin \theta_4-x\right)^2 \geqslant 0, \quad\quad(2)
+\end{aligned}
+$$
+同时成立的充分必要条件是
+$$
+\sum_{i=1}^4 \sin ^2 \theta_i \leqslant 2\left(1+\prod_{i=1}^4 \sin \theta_i+\prod_{i=1}^4 \cos \theta_i\right) .\quad\quad(3)
+$$
+%%<SOLUTION>%%
+证明:式(1)、(2)分别等价于
+$$
+\begin{aligned}
+& \sin \theta_1 \sin \theta_2-\cos \theta_1 \cos \theta_2 \leqslant x \leqslant \sin \theta_1 \sin \theta_2+\cos \theta_1 \cos \theta_2,\quad\quad(4)\\
+& \sin \theta_3 \sin \theta_4-\cos \theta_3 \cos \theta_4 \leqslant x \leqslant \sin \theta_3 \sin \theta_4+\cos \theta_3 \cos \theta_4,\quad\quad(5)
+\end{aligned}
+$$
+易知存在 $x \in \mathbf{R}$, 使得(4)、(5)同时成立的充要条件是
+$$
+\begin{aligned}
+& \sin \theta_1 \sin \theta_2+\cos \theta_1 \cos \theta_2-\sin \theta_3 \sin \theta_4+\cos \theta_3 \cos \theta_4 \geqslant 0, \quad\quad(6)\\
+& \sin \theta_3 \sin \theta_4+\cos \theta_3 \cos \theta_4-\sin \theta_1 \sin \theta_2+\cos \theta_1 \cos \theta_2 \geqslant 0, \quad\quad(7)
+\end{aligned}
+$$
+另一方面,利用 $\sin ^2 \alpha=1-\cos ^2 \alpha$, 可将(3)式化为
+$$
+\begin{aligned}
+& \quad \cos ^2 \theta_1 \cos ^2 \theta_2+2 \cos \theta_1 \cos \theta_2 \cos \theta_3 \cos \theta_4+\cos ^2 \theta_3 \cos ^2 \theta_4-\sin ^2 \theta_1 \sin ^2 \theta_2+ \\
+& 2 \sin \theta_1 \sin \theta_2 \sin \theta_3 \sin \theta_4-\sin ^2 \theta_3 \sin ^2 \theta_4 \geqslant 0 \\
+& \Leftrightarrow\left(\cos \theta_1 \cos \theta_2+\cos \theta_3 \cos \theta_4\right)^2-\left(\sin \theta_1 \sin \theta_2-\sin \theta_3 \sin \theta_4\right)^2 \geqslant 0 \\
+& \quad \Leftrightarrow\left(\sin \theta_1 \sin \theta_2+\cos \theta_1 \cos \theta_2-\sin \theta_3 \sin \theta_4+\cos \theta_1 \cos \theta_4\right)\left(\sin \theta_3 \sin \theta_4+\right. \\
+& \left.\quad \cos \theta_3 \cos \theta_4-\sin \theta_1 \sin \theta_2+\cos \theta_1 \cos \theta_2\right) \geqslant 0. \quad\quad(8)
+\end{aligned}
+$$
+当存在 $x \in \mathbf{R}$, 使(1)(2)成立时 $\Rightarrow$ (4)(5)成立 $\Rightarrow$ (6)(7)成立 $\Rightarrow$ (8)式成立 $\Rightarrow$ (3)式成立.
+另一方面, 当(3)式也即(8)式成立, 但(6)(7)式不成立.
+则
+$$
+\sin \theta_1 \sin \theta_2+\cos \theta_1 \cos \theta_2-\sin \theta_3 \sin \theta_4+\cos \theta_3 \cos \theta_4<0,
+$$
+$$
+\sin \theta_3 \sin \theta_4+\cos \theta_3 \cos \theta_4-\sin \theta_1 \sin \theta_2+\cos \theta_1 \cos \theta_2<0,
+$$
+两式相加 $\Rightarrow 2\left(\cos \theta_1 \cos \theta_2+\cos \theta_3 \cos \theta_4\right)<0$, 这与 $\theta_i \in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right), i=1,2$, 3,4 矛盾.
+故必有(3) $\Rightarrow$ (8) $\Rightarrow$ (6) (7) 成立 $\Rightarrow$ 存在 $x \in \mathbf{R}$, (4)(5)成立 $\Rightarrow$ 存在 $x \in \mathbf{R}$, (1) (2) 成立.
+综上, 得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 若 $0<\beta<\alpha<\frac{\pi}{2}$, 求证: $\sin \alpha-\sin \beta<\alpha-\beta<\tan \alpha-\tan \beta$.
+%%<SOLUTION>%%
+分析:构造单位圆, 借助于三角函数线与三角函数式的关系, 把数的比较转化为几何图形面积的比较.
+证明如图(<FilePath:./figures/fig-c5i7.png>), 作单位圆, 记 $\overparen{A P_1}=\beta$, $\overparen{A P_2}=\alpha$. 则 $\overparen{P_1 P_2}=\alpha-\beta, M_1 P_1=\sin \beta, M_2 P_2= \sin \alpha, A T_1=\tan \beta, A T_2=\tan \alpha, S_{\triangle A P_2 O}=\frac{1}{2} \sin \alpha$, $S_{\triangle A P_1 O}=\frac{1}{2} \sin \beta, S_{\triangle A T_2 O}=\frac{1}{2} \tan \alpha, S_{\triangle A T_1 O}=\frac{1}{2} \tan \beta$, $S_{\text {扇形 } O A P_2}=\frac{1}{2} \alpha, S_{\text {扇形 } O A P_1}=\frac{1}{2} \beta, S_{\text {扇形 } O P_1 P_2}=\frac{1}{2}(\alpha- \beta), S_{\triangle O T_1 T_2}=\frac{1}{2}(\tan \alpha-\tan \beta)$, 设 $\triangle O P_2 C$ 的面积为 $S_1$, 则 $S_1<S_{\text {扇形 } O P_1 P_2}<S_{\triangle O T_1 T_2}$, 因为
+$$
+S_{\triangle O A P_2}-S_{\triangle O A P_1}<S_{\triangle O A P_2}-S_{\triangle O A C}=S_1,
+$$
+所以
+$$
+\frac{1}{2} \sin \alpha-\frac{1}{2} \sin \beta<S_1,
+$$
+从而 $\frac{1}{2} \sin \alpha-\frac{1}{2} \sin \beta<-\frac{1}{2}(\alpha-\beta)<\frac{1}{2} \tan \alpha-\frac{1}{2} \tan \beta$, 即
+$$
+\sin \alpha-\sin \beta<\alpha-\beta<\tan \alpha-\tan \beta .
+$$
+评注本题的证明方法与三角函数基本不等式 $\sin x<x<\tan x\left(x \in \left(0, \frac{\pi}{2}\right)\right)$ 的证明方法相同.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 已知 $\alpha, \beta, \gamma \in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$, 求证:
+$$
+(\tan \alpha-\tan \beta)^2 \geqslant(\tan \gamma-2 \tan \alpha)(2 \tan \beta-\tan \gamma) .
+$$
+%%<SOLUTION>%%
+分析:观察所证不等式的特征, 发现其与一元二次方程的根的判别式类似, 所以利用构造一元二次方程的方法解决问题.
+证明当 $\tan \gamma-2 \tan \alpha=0$ 时, 原不等式显然成立.
+当 $\tan \gamma-2 \tan \alpha \neq 0$ 时, 作一元二次方程
+$$
+(\tan \gamma-2 \tan \alpha) x^2+2(\tan \alpha-\tan \beta) x+(2 \tan \beta-\tan \gamma)=0,
+$$
+因为 $(\tan \gamma-2 \tan \alpha)+2(\tan \alpha-\tan \beta)+(2 \tan \beta-\tan \gamma)=0$,
+所以所作方程必有一根 $x=1$, 从而
+$$
+\Delta=4(\tan \alpha-\tan \beta)^2-4(\tan \gamma-2 \tan \alpha)(2 \tan \beta-\tan \gamma) \geqslant 0,
+$$
+即
+$$
+(\tan \alpha-\tan \beta)^2 \geqslant(\tan \gamma-2 \tan \alpha)(2 \tan \beta-\tan \gamma) .
+$$
+评注观察和分析欲证不等式的结构特点, 构造相应的代数方程, 是一种行之有效的解题方法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 求证: $\sin (\cos \theta)<\cos (\sin \theta)$.
+%%<SOLUTION>%%
+分析:转化为同名三角函数,利用三角函数的单调性来证明.
+证明因为 而
+$$
+\begin{aligned}
+& \cos \theta \in[-1,1] \varsubsetneqq\left[-\frac{\pi}{2}, \frac{\pi}{2}\right], \\
+& \sin \theta \in[-1,1], \frac{\pi}{2}-\sin \theta \in\left[\frac{\pi}{2}-1, \frac{\pi}{2}+1\right], \\
+& \frac{\pi}{2}+\sin \theta \in\left[\frac{\pi}{2}-1, \frac{\pi}{2}+1\right],
+\end{aligned}
+$$
+而 $\frac{\pi}{2}+1>\frac{\pi}{2}$, 所以对 $\sin \theta$ 值进行分类讨论.
+当 $\sin \theta \in[0,1]$ 时, $\frac{\pi}{2}-\sin \theta \in\left[\frac{\pi}{2}-1, \frac{\pi}{2}\right] \varsubsetneqq\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$, $\sin (\cos \theta)<\cos (\sin \theta)$, 即 $\sin (\cos \theta)<\sin \left(\frac{\pi}{2}-\sin \theta\right)$.
+因 $y=\sin x$ 在 $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$ 上是单调递增函数,而
+$$
+\cos \theta-\left(\frac{\pi}{2}-\sin \theta\right)=\cos \theta+\sin \theta-\frac{\pi}{2}=\sqrt{2} \sin \left(\theta+\frac{\pi}{4}\right)-\frac{\pi}{2}<0,
+$$
+所以 $\cos \theta<\frac{\pi}{2}-\sin \theta$, 从而 $\sin (\cos \theta)<\sin \left(\frac{\pi}{2}-\sin \theta\right)$ 成立;
+当 $\sin \theta \in[-1,0)$ 时, $\frac{\pi}{2}+\sin \theta \in\left[\frac{\pi}{2}-1, \frac{\pi}{2}\right] \varsubsetneqq\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$, $\sin (\cos \theta)<\cos (\sin \theta)$, 即 $\sin (\cos \theta)<\sin \left(\frac{\pi}{2}+\sin \theta\right)$, 而
+$$
+\cos \theta-\left(\frac{\pi}{2}+\sin \theta\right)=\sqrt{2} \cos \left(\theta+\frac{\pi}{4}\right)-\frac{\pi}{2}<0,
+$$
+所以 $\cos \theta<\frac{\pi}{2}+\sin \theta$, 得 $\sin (\cos \theta)<\sin \left(\frac{\pi}{2}+\sin \theta\right)$, 成立.
+综上所述, 原不等式成立.
+评注利用函数的单调性证明不等式是一种很好的方法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 在 $\triangle A B C$ 中, 求证: (1) $\sin A+\sin B+\sin C \leqslant \frac{3 \sqrt{3}}{2}$;
+(2) $\sin \frac{A}{2}+\sin \frac{B}{2}+\sin \frac{C}{2} \leqslant \frac{3}{2}$.
+%%<SOLUTION>%%
+分析:利用函数凹凸性的有关性质证明.
+证法一先确定 $f(x)=\sin x$ 在 $(0, \pi)$ 内的凹凸性.
+设 $x_1, x_2 \in(0, \pi)$, 且 $x_1 \neq x_2$, 则 $\left|\frac{x_1-x_2}{2}\right|<\frac{\pi}{2}, \frac{1}{2}\left[f\left(x_1\right)+f\left(x_2\right)\right]=\frac{1}{2}\left(\sin x_1+\sin x_2\right)= \sin \frac{x_1+x_2}{2} \cos \frac{x_1-x_2}{2}<\sin \frac{x_1+x_2}{2}=f\left(\frac{x_1+x_2}{2}\right)$, 所以 $f(x)=\sin x$ 在 $(0$, $\pi)$ 上是凸函数.
+在 $\triangle A B C$ 中, $A, B, C \in(0, \pi)$, 得
+$$
+\frac{\sin A+\sin B+\sin C}{3} \leqslant \sin \frac{A+B+C}{3}=\sin \frac{\pi}{3}=\frac{\sqrt{3}}{2},
+$$
+所以 $\sin A+\sin B+\sin C \leqslant \frac{3 \sqrt{3}}{2}$, (等号当且仅当 $A=B=C=\frac{\pi}{3}$ 时成立)
+同理 $\sin \frac{A}{2}+\sin \frac{B}{2}+\sin \frac{C}{2} \leqslant 3 \sin \frac{\frac{A}{2}+\frac{B}{2}+\frac{C}{2}}{3}=\frac{3}{2}$.
+证法二本题不利用凸函数性质也可证明:
+$$
+\begin{aligned}
+& \sin A+\sin B+\sin C=2 \sin \frac{A+B}{2} \cos \frac{A-B}{2}+\sin C \\
+\leqslant & 2 \sin \frac{\pi-C}{2}+2 \sin \frac{C}{2} \cos \frac{C}{2}=2 \cos \frac{C}{2}\left(1+\sin \frac{C}{2}\right) \\
+= & 2 \sqrt{1-\sin ^2 \frac{C}{2}} \cdot\left(1+\sin \frac{C}{2}\right)=2 \sqrt{\left(1-\sin \frac{C}{2}\right)\left(1+\sin \frac{C}{2}\right)^3}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& =2 \sqrt{\left(1-\sin \frac{C}{2}\right)\left(1+\sin \frac{C}{2}\right)\left(1+\sin \frac{C}{2}\right)\left(1+\sin \frac{C}{2}\right)} \\
+& =2 \sqrt{27\left(1-\sin \frac{C}{2}\right) \cdot \frac{1+\sin \frac{C}{2}}{3} \cdot \frac{1+\sin \frac{C}{2}}{3} \cdot \frac{1+\sin \frac{C}{2}}{3}} \\
+& \leqslant 2 \sqrt{27 \cdot\left(\frac{1+1}{4}\right)^4}=\frac{3 \sqrt{3}}{2} . \\
+& \text { 等号当且仅当 }\left\{\begin{array} { l } 
+{ 1 - \operatorname { s i n } \frac { C } { 2 } = \frac { 1 + \operatorname { s i n } \frac { C } { 2 } } { 3 } , } \\
+{ \operatorname { c o s } \frac { A - B } { 2 } = 1 , }
+\end{array} \text { 即 } \left\{\begin{array}{l}
+\sin \frac{C}{2}=\frac{1}{2}, \\
+\cos \frac{A-B}{2}=\cos 0 .
+\end{array} \right.\right.
+\end{aligned}
+$$
+即$A=B=C=\frac{\pi}{3}$ 时成立.
+评注本题提及的凹、凸函数定义如下: 设 $y=f(x)$ 是 $[a, b]$ 上的连续函数, 若对 $(a, b)$ 内任意 $x_1 、 x_2\left(x_1 \neq x_2\right)$, 恒有 $f\left(\frac{x_1+x_2}{2}\right)>\frac{1}{2}\left[f\left(x_1\right)+\right. \left.f\left(x_2\right)\right]$, 则称 $f(x)$ 在区间 $[a, b]$ 上是凸函数; 若恒有 $f\left(\frac{x_1+x_2}{2}\right)<\frac{1}{2}\left[f\left(x_1\right)+\right. \left.f\left(x_2\right)\right]$, 则称 $f(x)$ 在区间 $[a, b]$ 上是凹函数.
+它们的性质是:
+若 $f(x)$ 是 $[a, b]$ 上的凸函数, 则对于该区间内任意 $n$ 个自变量 $x_1$, $x_2, \cdots, x_n$, 都有 $f\left(\frac{x_1+x_2+\cdots+x_n}{n}\right) \geqslant \frac{f\left(x_1\right)+f\left(x_2\right)+\cdots+f\left(x_n\right)}{n}$; 同理, 若 $f(x)$ 为 $[a, b]$ 上的凹函数则取 " $\leqslant$ " 号, 当且仅当 $x_1=x_2=\cdots=x_n$ 时等号成立.
+证法二引用了不等式: $\frac{a_1+a_2+\cdots+a_n}{n} \geqslant \sqrt[n]{a_1 a_2 \cdots a_n}$, 其中 $a_1, a_2, \cdots$, $a_n$ 为正数.
+利用上述不等式以及本题结论, 想一想 $\sin A \sin B \sin C \leqslant \frac{3}{8} \sqrt{3}$, 如何证?
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 设 $\alpha, \beta \in\left(0, \frac{\pi}{2}\right)$, 求证: $\frac{1}{\cos ^2 \alpha}+\frac{1}{\sin ^2 \alpha \sin ^2 \beta \cos ^2 \beta} \geqslant 9$, 并讨论 $\alpha 、 \beta$ 为何值时, 等号成立.
+%%<SOLUTION>%%
+分析:当不等式中出现两个变量时, 先通过局部调整, 消元化为一个变量再证明.
+证明因为 $\sin ^2 \beta \cos ^2 \beta=\frac{1}{4} \sin ^2 2 \beta \leqslant \frac{1}{4}$,
+所以左边 $\geqslant \frac{1}{\cos ^2 \alpha}+\frac{4}{\sin ^2 \alpha}=1+\tan ^2 \alpha+4+4 \cot ^2 \alpha$
+$$
+=5+\tan ^2 \alpha+\frac{4}{\tan ^2 \alpha} \geqslant 5+2 \sqrt{4}=9 .
+$$
+当且仅当 $\sin ^2 2 \beta=1, \tan ^2 \alpha=\frac{4}{\tan ^2 \alpha}$, 即 $\alpha=\arctan \sqrt{2}, \beta=\frac{\pi}{4}$ 时, 等号成立.
+评注本题还可加强为 $\frac{1}{\cos ^2 \alpha}+\frac{1}{\sin ^2 \alpha \sin ^2 \beta \cos ^2 \beta} \geqslant 9+\left(\frac{2 \cot \alpha}{\sin 2 \beta}-\tan \alpha\right)^2$.
+可这样证明: 因为 $\left(\cos ^2 \alpha+\sin ^2 \alpha\right)\left(\frac{1}{\cos ^2 \alpha}+\frac{1}{\sin ^2 \alpha \sin ^2 \beta \cos ^2 \beta}\right)-(1+ \left.\frac{1}{\sin \beta \cos \beta}\right)^2=\left(\frac{\cos \alpha}{\sin \alpha \sin \beta \cos \beta}-\frac{\sin \alpha}{\cos \alpha}\right)^2$,
+所以 $\frac{1}{\cos ^2 \alpha}+\frac{1}{\sin ^2 \alpha \sin ^2 \beta \cos ^2 \beta}=\left(1+\frac{2}{\sin 2 \beta}\right)^2+\left(\frac{2 \cot \alpha}{\sin 2 \beta}-\tan \alpha\right)^2 \geqslant 9+ \left(\frac{2 \cot \alpha}{\sin 2 \beta}-\tan \alpha\right)^2$, 当且仅当 $\sin 2 \beta=1$, 即 $\beta=\frac{\pi}{4}$ 时, 原不等式中等号成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13. (1) 求证: $\tan ^2 \alpha+\tan ^2 \beta+\tan ^2 \gamma \geqslant \tan \alpha \tan \beta+\tan \beta \tan \gamma+\tan \gamma \tan \alpha$;
+ (2)若 $\alpha+\beta+\gamma=\frac{\pi}{2}$, 则 $\tan ^2 \alpha+\tan ^2 \beta+\tan ^2 \gamma \geqslant 1$.
+%%<SOLUTION>%%
+分析:利用基本不等式或拉格朗日恒等式证明.
+证明 (1) 根据 $a^2+b^2 \geqslant 2 a b$, 得
+$$
+\begin{aligned}
+& \tan ^2 \alpha+\tan ^2 \beta \geqslant 2 \tan \alpha \tan \beta, \\
+& \tan ^2 \beta+\tan ^2 \gamma \geqslant 2 \tan \beta \tan \gamma, \\
+& \tan ^2 \gamma+\tan ^2 \alpha \geqslant 2 \tan \gamma \tan \alpha,
+\end{aligned}
+$$
+三式相加, 即得
+$$
+\tan ^2 \alpha+\tan ^2 \beta+\tan ^2 \gamma \geqslant \tan \alpha \tan \beta+\tan \beta \tan \gamma+\tan \gamma \tan \alpha .
+$$
+也可利用拉格朗日公式 $\left(\alpha_1^2+\alpha_2^2+\alpha_3^2\right)\left(\beta_1^2+\beta_2^2+\beta_3^2\right)-\left(\alpha_1 \beta_1+\alpha_2 \beta_2+\right. \left.\alpha_3 \beta_3\right)^2=\left(\alpha_1 \beta_2-\alpha_2 \beta_1\right)^2+\left(\alpha_1 \beta_3-\alpha_3 \beta_1\right)^2+\left(\alpha_2 \beta_3-\alpha_3 \beta_2\right)^2$ 证明.
+因为
+$$
+\begin{aligned}
+& \left(\tan ^2 \alpha+\tan ^2 \beta+\tan ^2 \gamma\right)\left(\tan ^2 \beta+\tan ^2 \gamma+\tan ^2 \alpha\right) \\
+& -(\tan \alpha \tan \beta+\tan \beta \tan \gamma+\tan \gamma \tan \alpha)^2 \\
+= & \left(\tan \alpha \tan \gamma-\tan ^2 \beta\right)^2 \\
+& +\left(\tan ^2 \alpha-\tan \beta \tan \gamma\right)^2+\left(\tan \alpha \tan \beta-\tan ^2 \gamma\right)^2 \\
+\geqslant & 0,
+\end{aligned}
+$$
+所以
+$$
+\left(\tan ^2 \alpha+\tan ^2 \beta+\tan ^2 \gamma\right)^2 \geqslant(\tan \alpha \tan \beta+\tan \beta \tan \gamma+\tan \gamma \tan \alpha)^2 .
+$$
+即
+$$
+\tan ^2 \alpha+\tan ^2 \beta+\tan ^2 \gamma \geqslant \tan \alpha \tan \beta+\tan \beta \tan \gamma+\tan \gamma \tan \alpha .
+$$
+ (2)因 $\alpha+\beta+\gamma=\frac{\pi}{2}$, 得 $\alpha+\beta=\frac{\pi}{2}-\gamma$, 所以
+$$
+\tan (\alpha+\beta)=\tan \left(\frac{\pi}{2}-\gamma\right)
+$$
+即
+$$
+\tan \alpha \tan \beta+\tan \beta \tan \gamma+\tan \gamma \tan \alpha=1,
+$$
+由 (1) 得 $\tan ^2 \alpha+\tan ^2 \beta+\tan ^2 \gamma \geqslant 1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14. 已知当 $x \in[0,1]$ 时,不等式 $x^2 \cos \theta-x(1-x)+(1-x)^2 \sin \theta>$ 0 恒成立, 试求 $\theta$ 的取值范围.
+%%<SOLUTION>%%
+分析:将原不等式看作关于 $x$ 的一元二次不等式,结合二次函数的图象,列出关于 $\theta$ 的三角不等式,求出 $\theta$ 的取值范围.
+解令
+$$
+\begin{aligned}
+f(x) & =x^2 \cos \theta-x(1-x)+(1-x)^2 \sin \theta \\
+& =(\cos \theta+\sin \theta+1) x^2-(1+2 \sin \theta) x+\sin \theta .
+\end{aligned}
+$$
+对称轴 $x=\frac{1+2 \sin \theta}{2(\cos \theta+\sin \theta+1)}=\frac{2 \sin \theta+1}{2 \sin \theta+2 \cos \theta+2}$.
+由条件知 $\left\{\begin{array}{l}f(0)=\sin \theta>0, \\ f(1)=\cos \theta>0,\end{array}\right.$ 从而 $\frac{2 \sin \theta+1}{2 \sin \theta+2 \cos \theta+2} \in(0,1)$, 要使 $f(x)$ 在 $[0,1]$ 时 $f(x)>0$ 恒成立, 必须有
+$$
+\Delta=(1+2 \sin \theta)^2-4 \sin \theta(\cos \theta+\sin \theta+1)<0,
+$$
+解得 $\sin 2 \theta>\frac{1}{2}$, 又 $\sin \theta>0, \cos \theta>0$, 所以
+$$
+2 k \pi+\frac{\pi}{12}<\theta<2 k \pi+\frac{5 \pi}{12}(k \in \mathbf{Z}) .
+$$
+评注本题中对称轴的范围是关键.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例15. 求实数 $a$ 的取值范围, 使不等式 $\sin 2 \theta-(2 \sqrt{2}+\sqrt{2} a) \sin \left(\theta+\frac{\pi}{4}\right)- \frac{2 \sqrt{2}}{\cos \left(\theta-\frac{\pi}{4}\right)}>-3-2 a$, 在 $\theta \in\left[0, \frac{\pi}{2}\right]$ 时恒成立.
+%%<SOLUTION>%%
+分析:题中出现 $\sin \left(\theta+\frac{\pi}{4}\right)=\cos \left(\theta-\frac{\pi}{4}\right)=(\sin \theta+\cos \theta) \frac{\sqrt{2}}{2}$, 宜利用换元法,化归为有理不等式来求解.
+解设 $\sin \theta+\cos \theta=x$, 则由 $\theta \in\left[0, \frac{\pi}{2}\right]$ 得 $x \in[1, \sqrt{2}], \sin 2 \theta= x^2-1, \sin \left(\theta+\frac{\pi}{4}\right)=\cos \left(\theta-\frac{\pi}{4}\right)=\frac{\sqrt{2}}{2} x$, 原不等式化为
+$$
+x^2-1-(2+a) x-\frac{4}{x}+3+2 a>0,
+$$
+因式分解得
+$$
+(x-2)\left(x+\frac{2}{x}-a\right)>0,
+$$
+因为 $x \in[1, \sqrt{2}]$, 所以 $x+\frac{2}{x}-a<0$, 即 $a>x+\frac{2}{x}$.
+记 $f(x)=x+\frac{2}{x}$, 可证 $f(x)$ 在 $[1, \sqrt{2}]$ 上单调递减, 所以
+$$
+f(x)_{\max }=f(1)=1+\frac{2}{1}=3 .
+$$
+故 $a>3$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例16. 函数 $F(x)=\left|\cos ^2 x+2 \sin x \cos x-\sin ^2 x+A x+B\right|$ 在 $0 \leqslant x \leqslant \frac{3 \pi}{2}$ 上的最大值 $M$ 与参数 $A 、 B$ 有关, 问 $A 、 B$ 取什么值时, $M$ 为最小? 证明你的结论.
+%%<SOLUTION>%%
+分析:通过赋值猜想 $M$ 的最小值,再证明.
+解 $F(x)=|\cos 2 x+\sin 2 x+A x+B|=\left|\sqrt{2} \sin \left(2 x+\frac{\pi}{4}\right)+A x+B\right|$, 若 $A=B=0$, 则
+$$
+F(x)=\left|\sqrt{2} \sin \left(2 x+\frac{\pi}{4}\right)\right| .
+$$
+当 $x=\frac{\pi}{8}, \frac{5 \pi}{8}, \frac{9 \pi}{8}$ 时, $F(x)$ 取得最大值 $M=\sqrt{2}$.
+下面证明对于任意实数 $A 、 B$,均有 $M \geqslant \sqrt{2}$.
+利用反证法.
+假设对于某一组实数 $A 、 B$, 有 $M \leqslant \sqrt{2}$, 则 $F\left(\frac{\pi}{8}\right) 、 F\left(\frac{5 \pi}{8}\right)$ 、
+$F\left(\frac{9 \pi}{8}\right)$ 均不大于 $\sqrt{2}$, 从而
+$$
+\left\{\begin{array}{l}
+\sqrt{2}+\frac{\pi}{8} A+B \leqslant \sqrt{2}, \quad\quad(1)\\
+-\sqrt{2}+\frac{5 \pi}{8} A+B \geqslant-\sqrt{2}, \quad\quad(2)\\
+\sqrt{2}+\frac{9 \pi}{8} A+B \leqslant \sqrt{2}, \quad\quad(3)
+\end{array}\right.
+$$
+(1)+(3)-(2) $\times 2$ 得 $0 \leqslant 0$, 从而(1)(2)(3)等号成立, 有 $A=B=0$, 因此 $M \geqslant \sqrt{2}$, 当且仅当 $A=B=0$ 时, $M$ 取得最小值 $\sqrt{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例17. (1) 设函数 $f(x), g(x)$ 对所有 $x$ 满足 $-\frac{\pi}{2}<f(x) \pm g(x)<\frac{\pi}{2}$, 证明: 对所有 $x$, 有 $\cos (f(x))>\sin (g(x))$;
+ (2)利用或不利用(1), 证明:对所有 $x$, 有 $\cos (\cos x)>\sin (\sin x)$.
+%%<SOLUTION>%%
+证明:(1) 不妨设 $g(x)>0$, 所以 $-\frac{\pi}{2}+g(x)<f(x)<\frac{\pi}{2}-g(x)$.
+若 $f(x) \geqslant 0$, 因为 $\cos x$ 在 $\left[0, \frac{\pi}{2}\right]$ 内是减函数, 所以 $\cos (f(x))>\cos \left(\frac{\pi}{2}-\right. g(x))$, 即 $\cos (f(x))>\sin (g(x))$;
+若 $f(x)<0$, 因为 $\cos x$ 在 $\left(-\frac{\pi}{2}, 0\right)$ 内是增函数, 所以 $\cos \left(-\frac{\pi}{2}+g(x)\right)< \cos (f(x))$, 即 $\cos (f(x))>\sin (g(x))$;
+同理可证 $g(x) \leqslant 0$ 时,仍有 $\cos (f(x))>\sin (g(x))$.
+综上所述, 对所有 $x$, 都有 $\cos (f(x))>\sin (g(x))$.
+(2) 因为
+$$
+\begin{gathered}
+|\cos x-\sin x|=\left|\sqrt{2} \cos \left(x+\frac{\pi}{4}\right)\right| \leqslant \sqrt{2}<\frac{\pi}{2}, \\
+|\cos x+\sin x|=\left|\sqrt{2} \sin \left(x+\frac{\pi}{4}\right)\right| \leqslant \sqrt{2}<\frac{\pi}{2},
+\end{gathered}
+$$
+所以令 $f(x)=\cos x, g(x)=\sin x$, 则符合第(1) 题条件, 于是对于所有 $x$, 都有 $\cos (\cos x)>\sin (\sin x)$.
+评注第(1)题的证明过程运用了分类讨论的数学思想以及三角函数的单调性;第 (2)题利用了重要不等式及三角函数的有界性.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例18. 已知 $a 、 b 、 A 、 B$ 都是实数, 若对于一切实数 $x$, 都有
+$$
+f(x)=1-a \cos x-b \sin x-A \cos 2 x-B \sin 2 x \geqslant 0 .
+$$
+求证: $a^2+b^2 \leqslant 2, A^2+B^2 \leqslant 1$.
+%%<SOLUTION>%%
+分析:题中所给函数有较多的参数 $a 、 b 、 A 、 B$, 结合结论, 应引人辅助参数:
+$$
+\begin{aligned}
+a \cos x+b \sin x & =\sqrt{a^2+b^2} \sin (x+\theta), \\
+A \cos 2 x+B \sin 2 x & =\sqrt{A^2+B^2} \sin (2 x+\varphi),
+\end{aligned}
+$$
+这样就使待证的参数较为集中, 再利用 $f(x) \geqslant 0$ 恒成立, 选取适当的 $x$ 值以证明结论.
+证明若 $a^2+b^2=0, A^2+B^2=0$, 则结论显然成立;
+若 $a^2+b^2 \neq 0, A^2+B^2 \neq 0$, 令
+$$
+\begin{aligned}
+& \sin \theta=\frac{a}{\sqrt{a^2+b^2}}, \cos \theta=-\frac{b}{\sqrt{a^2+b^2}}, \\
+& \sin \varphi=\frac{A}{\sqrt{A^2+B^2}}, \cos \varphi=\frac{B}{\sqrt{A^2+B^2}},
+\end{aligned}
+$$
+于是
+$$
+\begin{gathered}
+f(x)=1-\sqrt{a^2+b^2} \sin (x+\theta)-\sqrt{A^2+B^2} \sin (2 x+\varphi) \geqslant 0,  \quad\quad(1)\\
+f\left(x+\frac{\pi}{2}\right)=1-\sqrt{a^2+b^2} \cos (x+\theta)+\sqrt{A^2+B^2} \sin (2 x+\varphi) \geqslant 0,  \quad\quad(2)
+\end{gathered}
+$$
+(1) +(2)得
+$$
+2-\sqrt{a^2+b^2}[\sin (x+\theta)+\cos (x+\theta)] \geqslant 0,
+$$
+即
+$$
+2-\sqrt{2\left(a^2+b^2\right)} \cdot \sin \left(x+\theta+\frac{\pi}{4}\right) \geqslant 0,
+$$
+所以 $\sqrt{a^2+b^2} \sin \left(x+\theta+\frac{\pi}{4}\right) \leqslant \sqrt{2}$ 对一切 $x$ 均成立.
+取 $x+\theta+\frac{\pi}{4}=\frac{\pi}{2}$, 得 $x=\frac{\pi}{4}-\theta$, 有 $\sqrt{a^2+b^2} \leqslant \sqrt{2}$, 即 $a^2+b^2 \leqslant 2$.
+又
+$$
+f(x+\pi)=1+\sqrt{a^2+b^2} \sin (x+\theta)-\sqrt{A^2+B^2} \sin (2 x+\varphi) \geqslant 0,  \quad\quad(3)
+$$
+(1)+(3)得
+$$
+2-2 \sqrt{A^2+B^2} \sin (2 x+\varphi) \geqslant 0,
+$$
+即 $\sqrt{A^2+B^2} \sin (2 x+\varphi) \leqslant 1$, 取 $2 x+\varphi=\frac{\pi}{2}$, 即 $x=\frac{\pi}{4}-\frac{\varphi}{2}$ 时, 有 $\sqrt{A^2+B^2} \leqslant 1$, 即 $A^2+B^2 \leqslant 1$.
+评注对于恒等式或恒成立的不等式, 通常利用赋值法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例19. 求证: $\frac{1}{3}<\sin 20^{\circ}<\frac{7}{20}$.
+%%<SOLUTION>%%
+分析:因 $60^{\circ}=3 \times 20^{\circ}$, 所以利用倍角公式将 $\sin 20^{\circ}$ 转化到 $\sin 60^{\circ}$ 后构造方程来证明.
+证明设 $\sin 20^{\circ}=x$, 则 $\sin 60^{\circ}=\sin 3 \times 20^{\circ}=3 \sin 20^{\circ}-4 \sin ^3 20^{\circ}$, 从而 $4 x^3-3 x+\frac{\sqrt{3}}{2}=0$, 令 $f(x)=4 x^3-3 x+\frac{\sqrt{3}}{2}$, 则
+$$
+\begin{aligned}
+& f(-1)=-1+\frac{\sqrt{3}}{2}<0, \\
+& f(0)=\frac{\sqrt{3}}{2}>0, \\
+& f\left(\frac{1}{3}\right)=\frac{4}{27}-1+\frac{\sqrt{3}}{2}>0, \\
+& f\left(\frac{7}{20}\right)=4 \times \frac{343}{8000}-\frac{21}{20}+\frac{\sqrt{3}}{2}<0, \\
+& f\left(\frac{1}{2}\right)=\frac{1}{2}-\frac{3}{2}+\frac{\sqrt{3}}{2}<0, \\
+& f(1)=1+\frac{\sqrt{3}}{2}>0,
+\end{aligned}
+$$
+所以 $f(x)$ 在 $(-1,0) 、\left(\frac{1}{3}, \frac{7}{20}\right) 、\left(\frac{1}{2}, 1\right)$ 内各有一根, 但 $0<\sin 20^{\circ}< \sin 30^{\circ}$, 所以 $\sin 20^{\circ} \in\left(\frac{1}{3}, \frac{7}{20}\right)$.
+即 $\frac{1}{3}<\sin 20^{\circ}<\frac{7}{20}$.
+评注方程的根与函数的图象有密切联系, 即函数图象与 $x$ 轴的交点横坐标就是方程的根.
+它可通过作出函数图象来观察根的分布情况.
+如函数 $y= f(x)$ 中, $f(a) f(b)<0$, 则方程 $f(x)=0$ 必有一根在 $(a, b)$ 中.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例20. 平面上任给五个相异的点, 它们之间的最大距离与最小距离之比记为 $\lambda$, 求证: $\lambda \geqslant 2 \sin 54^{\circ}$, 并讨论等号成立的充要条件.
+%%<SOLUTION>%%
+分析:为什么出现 $54^{\circ}$, 恰与正五边形有关, 因此, 应考虑这五个点与正五边形的关系.
+证明  (1)若五点中有三点共线, 不妨设 $A 、 B 、 C$ 三点共线,且 $B$ 在线段 $A C$ 上, 若 $A B \leqslant B C$, 则 $\frac{A C}{A B} \geqslant 2>2 \sin 54^{\circ}$. 但这五点中最大的距离 $\geqslant A C$, 最小的距离 $\leqslant A B$, 从而 $\lambda \geqslant 2>2 \sin 54^{\circ}$.
+ (2)若五点组成凸五边形, 则这个五边形必有一内角 $\geqslant 108^{\circ}$, 不妨设为 $A$,与 $A$ 相邻的顶点为 $B$ 和 $C$, 在 $\triangle A B C$ 中, $A \geqslant 108^{\circ}$, 若 $B \leqslant C$, 则 $B \leqslant 36^{\circ}$, 于是
+$$
+\frac{B C}{A C}=\frac{\sin (B+C)}{\sin B} \geqslant \frac{\sin 2 B}{\sin B}=2 \cos B \geqslant 2 \cos 36^{\circ}=2 \sin 54^{\circ},
+$$
+从而 $\lambda \geqslant \frac{B C}{A C}>2 \sin 54^{\circ}$, 等号当且仅当这个五边形为正五边形时成立.
+(3) 若五点组成一个四边形 $A B C D$, 第五个点 $E$ 在四边形 $A B C D$ 内, 如图(<FilePath:./figures/fig-c5i8.png>), 连 $A C$, 则 $E$ 必在 $\triangle A B C$ 或 $\triangle A C D$ 内, 不妨设 $E$ 在 $\triangle A B C$ 内, 则 $\angle A E B 、 \angle A E C$ 、 $\angle B E C$ 中至少有一个角 $\geqslant 120^{\circ}>108^{\circ}$, 可以化归为(2), 可证 $\lambda>2 \sin 54^{\circ}$.
+ (4)当这五点组成 $\triangle A B C$, 而第四、五两点在 $\triangle A B C$ 内, 任取其中一点 $E$, 则可化归为情形 (3), 仍可证 $\lambda>2 \sin 54^{\circ}$.
+综上所述, $\lambda \geqslant 2 \sin 54^{\circ}$, 当且仅当这五点是正五边形的顶点时等号成立.
+评注分类讨论是本题的主要思想方法.
+%%PROBLEM_END%%
+
+

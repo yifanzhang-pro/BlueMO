@@ -1,0 +1,82 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 一次考试中有 30 个选择题, 答对一题得 5 分, 答错得 0 分, 不答的题每题得 1 分.
+甲考试的得分多于 80 , 他把分数告诉了乙, 则乙能推算出甲答对了几道题.
+如果甲的得分少些,但仍大于 80 , 则乙就无法推算了.
+问此次考试甲得了多少分?
+%%<SOLUTION>%%
+甲的得分 $S$ 由他答题情况确定, 因而可引人参数: 设甲答对、不答、答错的题数分别为 $x 、 y 、 z, x+y+z=30$, 则甲的得分 $S=5 x+y+0 z= 5 x+y$. 所谓 "甲的得分少些, 但仍大于 80 , 则乙就无法推算了", 则意味着要求出 $S>80$, 使对应的 $x$ 是唯一的且 $S$ 是最小的.
+因为由 $S$ 可猜想 $(x, y)$, 也可猜想 $(x-1, y+5)$, 还可猜想 $(x+1, y-5)$, 要使猜想的结果只能是 $(x$, $y)$, 必须 $(x-1, y+5) 、(x+1, y-5)$ 都不存在.
+因为 $(x-1, y+5)$ 都不存在, 所以 $x-1<0$ 或 $(x-1)+(y+5)>30$. 但 $x \geqslant 1$, 所以只能是 $(x-1)+(y+5)>30$. 于是, $x+y \geqslant 27$. 因为 $(x+1, y-5)$ 不存在, 所以 $y-5<0$ 或 $(x+1)+(y-5)>30$. 但 $x+y+z=30$ 得 $x+y \leqslant 30$, 所以只能是 $y- 5<0$. 于是, $y \leqslant 4$. 所以 $S=5 x+y=5(x+y)-4 y \geqslant 5 \times 27-4 y \geqslant 5 \times 27-4 \times 4=119$. 等式在 $x=23, y=4$ 时成立.
+故 $S_{\min }=119$, 即此次考试甲得了 119 分.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 某班有 47 个学生, 所用教室有 6 排, 每排有 8 个座位, 用 $(i, j)$ 表示位于第 $i$ 排第 $j$ 列的座位.
+新学期准备调整座位, 设一个学生原来的座位为 $(i$, $j)$, 如果调整后的座位为 $(m, n)$, 则称该生作了移动 $[a, b]=[i-m, j- n]$, 并称 $a+b$ 为该生的位置数, 所有学生的位置数之和记为 $S$. 求 $S$ 的最大可能值与最小可能值之差.
+%%<SOLUTION>%%
+称 $i+j$ 为格 $(i, j)$ 的特征值, 则学生的位置数即是他前后位置的特征值之差.
+记所有格的特征值之和为 $M$. 引人参数: 设最初空格的位置为 $(x$, $y)$, 调整后为 $(p, q)$, 那么最初所有学生的特征值之和为 $M-(x+y)$, 调整后所有学生的特征值之和为 $M-(p+q)$, 于是 $S=M-(x+y)-[M-(p+ q)]=p+q-(x+y) . S_{\max }=6+8-(x+y), S_{\min }=1+1-(x+y)$, $S_{\max }-S_{\min }=[6+8-(x+y)]-[1+1-(x+y)]=14-2=12$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 已知共有 12 个剧团参加为期 7 天的演出, 要求每个剧团都能看到其他所有剧团的演出, 而只能是当天没演出的在台下观看, 问最少共要演出多少场?
+%%<SOLUTION>%%
+设 $A=\{1,2, \cdots, 7\}$ 为演出日期的集合, $A_i$ 为第 $i$ 个剧团演出的日期的集合 $(i=1,2, \cdots, 12)$. 易知, $A_1, A_2, \cdots, A_{12}$ 互不包含.
+否则对 $i \neq j$, 设 $A_i$ 包含于 $A_j$ 内, 则第 $j$ 团看不到第 $i$ 团的演出.
+考察演出场数 $t=\sum_{i=1}^{12}\left|A_i\right|$, 若有某个 $\left|A_i\right|=0$, 则其他团都看不到第 $i$ 团的演出, 矛盾.
+因此, 对任何 $i$, 有 $\left|A_i\right| \geqslant 1$. 引人参数: 设其中恰有 $k$ 个集合是单元集,而其他集合中的元素个数至少是 2 , 于是 $t=\sum_{i=1}^{12}\left|A_i\right| \geqslant \underbrace{1+1+\cdots+1}_{k \uparrow 1}+\underbrace{2+2+\cdots+2}_{12-k \uparrow 2}= 24-k$. 不妨设 $\left\{a_1\right\}=A_1,\left\{a_2\right\}=A_2, \cdots,\left\{a_k\right\}=A_k$. 因为 $A_1, A_2, \cdots, A_{12}$ 互不包含, 从而 $a_1, a_2, \cdots, a_k$ 都不在 $A_{k+1}, A_{k+2}, \cdots, A_{12}$ 中, 所以 $A_{k+1}$, $A_{k+2}, \cdots, A_7$ 都是 $\left\{a_{k+1}, a_{k+2}, \cdots, a_7\right\}$ 的子集, 即 $\left\{A_{k+1}, A_{k+2}, \cdots, A_{12}\right\}$ 是 $A \backslash\left\{a_1, a_2, \cdots, a_k\right\}$ 的互不包含子集族, 所以 $\mathrm{C}_{7-k}^{\left[\frac{7-k}{2}\right]} \geqslant 12-k$. 此式在 $7-k= 1,2,3,4$ 时不成立, 所以 $7-k \geqslant 5$, 即 $k \leqslant 2$. 所以 $t \geqslant 24-k \geqslant 22$. 最后, 当 $t=$ 22 时, 令 $A_1=\{1\} 、 A_2=\{2\}$, 而 $A_3, A_4, \cdots, A_{12}$ 取 $\{3,4,5,6,7\}$ 中的 10 个互异二元集即可.
+比如 $A_3=\{3,4\} 、 A_4=\{3,5\} 、 A_5=\{3,6\} 、 A_6=\{3$ , 7\}、 $A_7=\{4,5\} 、 A_8=\{4,6\} 、 A_9=\{4,7\} 、 A_{10}=\{5,6\} 、 A_{11}=\{5,7\} 、 A_{12}=\{6,7\}$. 所以, 演出场数的最小值为 22 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 对每个正整数 $n$, 用 $s(n)$ 表示满足下列条件的最大整数: 对任何正整数 $k \leqslant s(n), n^2$ 可以表成 $k$ 个正整数的平方和.
+(1) 求证: $s(n) \leqslant n^2- 14(n \geqslant 4)$. (2) 找出一个 $n$, 使 $s(n)=n^2-14$. (3) 求证: 存在无数个 $n$, 使 $s(n)=n^2-14$. 
+%%<SOLUTION>%%
+(1) 反设 $n^2=a_1^2+a_2^2+\cdots+a_k^2$, 其中 $k=n^2-13$, 不妨设 $a_1 \leqslant a_2 \leqslant a_3 \leqslant \cdots \leqslant a_k$, 则 $a_k^2=n^2-\left(a_1^2+a_2^2+\cdots+a_{k-1}^2\right) \leqslant n^2-(k-1)=n^2-\left(n^2-\right. 14)=14$. 所以 $a_k \leqslant 3$. 不妨设 $a_1, a_2, \cdots, a_k$ 中有 $i$ 个为 $1 、 j$ 个为 $2 、 t$ 个为 3 , 其中 $i+j+t=k=n^2-13$, 那么 $n^2=\left(a_1^2+a_2^2+\cdots+a_k^2\right)=i+4 j+9 t= \left(n^2-13\right)+3 j+8 t$, 所以 $3 j+8 t=13,8 t=13-3 j \leqslant 13$, 所以 $t \leqslant 1$. 当 $t=$ 0 时, $3 j=13$, 矛盾.
+当 $t=1$ 时, $3 j=5$, 亦矛盾.
+所以, 当 $s(n) \geqslant n^2-13$ 时, 都存在 $k=n^2-13 \leqslant s(n)$, 使 $n^2$ 不能表成 $k$ 个正整数的平方和.
+所以 $s(n) \leqslant n^2-14$. 
+(2) 若 $s(n)=n^2-14$, 则对任何自然数 $k \leqslant n^2-14$, 正整数 $n$ 都可表成 $k$ 个正整数的平方和.
+考察其中的任意一个正整数 $k \leqslant n^2-14$, 令 $k=n^2- r\left(14 \leqslant r \leqslant n^2-1\right)$, 我们要找到一个 $n$, 使 $n^2$ 存在相应分拆: $n^2=a_1^2+ a_2^2+\cdots+a_k^2$ (其中 $a_1 \leqslant a_2 \leqslant a_3 \leqslant \cdots \leqslant a_k$ ). 引人参数: 不妨设 $a_1, a_2, \cdots, a_k$ 中有 $i$ 个为 $1, j$ 个为 $2 、 t$ 个为 3 , 其中 $i+j+t=k=n^2-r$. 我们记此 $k-$ 分拆为 $k(i, j, t)$, 那么, $n^2=\left(a_1^2+a_2^2+\cdots+a_k^2\right)=i+4 j+9 t=\left(n^2-r\right)+ 3 j+8 t$, 所以 $3 j+8 t=r . \label{eq1}$. 使 $n$ 合乎要求的一个必要条件是, 对所有 $14 \leqslant r \leqslant n^2-1$, 方程 式\ref{eq1} 有非负整数解.
+实际上, 若 $r \equiv 1(\bmod 3)$, 令 $r=3 r_1+ 1\left(r_1 \geqslant 5\right)$, 此时, $(j, t)=\left(r_1-3,1\right)$ 是 式\ref{eq1} 的解.
+若 $r \equiv 2(\bmod 3)$, 令 $r=3 r_1+ 2\left(r_1 \geqslant 4\right)$, 此时, $(j, t)=\left(r_1-2,1\right)$ 是 式\ref{eq1} 的解.
+若 $r \equiv 0(\bmod 3)$, 令 $r=3 r_1 \left(r_1 \geqslant 5\right)$, 此时, $(j, t)=\left(r_1, 0\right)$ 是 式\ref{eq1} 的解.
+注意到 $k=n^2-r$, 所以 式\ref{eq1} 等价于 $3 j+8 t=n^2-k .\label{eq2}$ . 于是, $n^2$ 存在 $k(i, j, t)$ 分拆, 则 $j 、 t 、 k$ 满足 式\ref{eq2}. 注意 式\ref{eq2} 中不含对 $i$ 的要求, 所以 $k 、 i 、 j 、 t$ 还要满足: $i=k-(j+t) \geqslant 0$, 即 $k \geqslant j+t$. 于是, 对任何 $n$, 只要分拆的项数 $k$ 不小于 $j+t$, 其中 $j 、 t$ 满足 式\ref{eq2}, 则 $n$ 存在相应的 $k$ 一分拆 $k(i, j, t)$. 注意到 $\left(n^2-k\right)=3 j+8 t \geqslant 3(j+t)$, 从而使 $k \geqslant j+t$ 的一个充分条件是 $k \geqslant \frac{n^2-k}{3}$, 即 $k \geqslant \frac{n^2}{4}$. 于是, 当 $k \geqslant \frac{n^2}{4}$ 时, 对所有 $n$, 都存在相应的 $k(i, j, t)$ 分拆.
+若分拆的项数 $k<\frac{n^2}{4}$, 则 $n$ 不一定存在 $k (i, j, t)$ 分拆.
+此时应立足于找其他形式的分拆.
+若 $k<\frac{n^2}{4}$, 则当 $n$ 较小时, 分拆的项数的可能取值较少.
+于是, 可从较小的自然数 $n$ 开始一一验证.
+为了便于利用勾股数, 可取 $3 、 4 、 5 、 6 、 8 、 10 、 12$, 这些都难于分解.
+取 $n=13$, 有 $13^2=12^2+5^2=12^2+\left(3^2+4^2\right)=8^2+8^2+5^2+4^2$. 又 $8^2=4^2+4^2+4^2+ 4^2, 4^2=2^2+2^2+2^2+2^2, 2^2=1^2+1^2+1^2+1^2$, 所以 $13^2$ 可以进行 7,10 , $13, \cdots, 43$ 分拆.
+又 $5^2=4^2+3^2$, 于是 $13^2$ 又可进行 $5,8,11, \cdots, 44$ 分拆.
+再由 $12^2=6^2+6^2+6^2+6^2, 6^2=3^2+3^2+3^2+3^2, 4^2=2^2+2^2+2^2+2^2$, $2^2=1^2+1^2+1^2+1^2$, 可知, $13^2$ 可以进行 $3,6,9, \cdots, 33$ 分拆.
+最后, $13^2= 3^2+3^2+\cdots+3^2+4^2, 3^2=2^2+2^2+1^2$, 于是选择其中 9 个或 12 个 $3^2$ 拆开, 则 $13^2$ 又可进行 $18+2 \times 9=36 、 18+2 \times 12=42$ 分拆.
+于是, $13^2$ 可进行 1 , $2, \cdots, 44$ 分拆.
+而对 $k \geqslant 45$, 有 $k \geqslant \frac{13^2}{4}$, 所以 $13^2$ 可以进行 $k(i, j, t)$ 分拆.
+故 $s(13)=13^2-14$. 
+(3) 我们证明当 $n=2^m \times 13$ 时, $s(n)=n^2-14$. 实际上, $n^2=\left(2^m \times 13\right)^2=4^4\left(2^{m-t} \times 13\right)^2(0 \leqslant t \leqslant m)$. 因为 $13^2$ 可以进行 $1,2,3, \cdots$, 分拆, 所以 $n^2$ 可以进行 $1,2,3, \cdots, 4^m \times 155$ 分拆.
+但 $4^m \times 155> \frac{\left(2^m \times 13\right)^2}{4}=\frac{n^2}{4}$, 由前面的讨论, $n^2$ 可以进行 $1,2,3, \cdots, n^2-14$ 分拆, 故 $s\left(2^m \times 13\right)=\left(2^m \times 13\right)^2-14$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 实数 $a_1, a_2, \cdots, a_n(n>3)$ 满足: $a_1+a_2+\cdots+a_n \geqslant n$, 且 $a_1^2+a_2^2+\cdots+ a_n^2 \geqslant n^2$. 求 $\max \left\{a_1, a_2, \cdots, a_n\right\}$ 的最小值.
+%%<SOLUTION>%%
+取 $n=4, a_1=a_2=a_3=a_4=2$, 则 $a_1+a_2+a_3+a_4=8 \geqslant 4, a_1^2+ a_2^2+a_3^2+a_n^2=16 \geqslant 4^2$. 所以 $a_1 、 a_2 、 a_3 、 a_4$ 合乎题目条件, 此时 $\max \left\{a_1\right.$, $\left.a_2, \cdots, a_n\right\}=2$. 下面证明, 对任何满足 $a_1+a_2+\cdots+a_n \geqslant n$, 且 $a_1^2+a_2^2+\cdots+ a_n^2 \geqslant n^2$ 的实数 $a_1, a_2, \cdots, a_n(n>3)$, 有 $\max \left\{a_1, a_2, \cdots, a_n\right\} \geqslant 2$. 假设 $\max \left\{a_1, a_2, \cdots, a_n\right\}<2$, 并设 $a_1, a_2, \cdots, a_n$ 中有 $i$ 个非负数, 记为 $x_1$, $x_2, \cdots, x_i$, 有 $j$ 个负数, 记为 $-y_1,-y_2, \cdots,-y_j$, 其中 $y_1, y_2, \cdots, y_j>0$, $i>0, j \geqslant 0, i+j=n$. 那么, $\max \left\{x_1, x_2, \cdots, x_i\right\}<2$. 因为 $x_1+x_2+\cdots+ x_i+\left[\left(-y_1\right)+\left(-y_2\right)+\cdots+\left(-y_j\right)\right] \geqslant n$, 所以 $x_1+x_2+\cdots+x_i \geqslant n+ y_1+y_2+\cdots+y_j$. 又 $\max \left\{x_1, x_2, \cdots, x_i\right\}<2, y_1, y_2, \cdots, y_j>0$, 于是 $2 i= 2+2+\cdots+2>x_1+x_2+\cdots+x_i \geqslant n+y_1+y_2+\cdots+y_j=i+j+y_1+ y_2+\cdots+y_j$. 移项得 $i-j>y_1+y_2+\cdots+y_j$. 因为 $x_1^2+x_2^2+\cdots+x_i^2+\left(-y_1\right)^2+ \left(-y_2\right)^2+\cdots+\left(-y_j\right)^2 \geqslant n^2$, 所以 $x_1^2+x_2^2+\cdots+x_i^2 \geqslant n^2-\left(y_1^2+y_2^2+\cdots+\right. \left.y_j^2\right) \geqslant n^2-\left(y_1+y_2+\cdots+y_j\right)^2>n^2-(i-j)^2=(i+j)^2-(i-j)^2=4 i j$. 又 $i>0$, 所以 $j<1$, 即 $j=0$, 故 $a_1, a_2, \cdots, a_n$ 都是非负数, 所以 $0 \leqslant a_i< 2(i=1,2, \cdots, n)$, 所以 $4 n>a_1^2+a_2^2+\cdots+a_n^2 \geqslant n^2$, 解得 $n<4$, 与条件 $n>3$ 矛盾.
+综上所述, $\max \left\{a_1, a_2, \cdots, a_n\right\}=2$.
+%%PROBLEM_END%%
+
+

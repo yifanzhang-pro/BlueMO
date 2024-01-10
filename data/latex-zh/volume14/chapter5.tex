@@ -1,0 +1,312 @@
+
+%%TEXT_BEGIN%%
+我们知道加法原理是一个重要的计数原理, 然而应用加法原理时, 须将集合分划成若干个两两不交的子集, 以便达到分别计数的目的.
+但有时候要做出便于计数的分划并不容易.
+这就需要把加法原理加以推广.
+我们允许一些元素被重复计数,然后将重复计数的予以排除, 再将多被排除的补上, 如此反复地排除与补充, 最终得出精确的结果.
+这个计数的过程体现于如下的容斥原理.
+容斥原理 I : 对 $n$ 个有限集 $A_1, A_2, \cdots, A_n$, 有
+$$
+\begin{gathered}
+\left|A_1 \cup A_2 \cup \cdots \cup A_n\right|=\sum_{i=1}^n\left|A_i\right|-\sum_{1 \leqslant i<j \leqslant n}\left|A_i \cap A_j\right|+ \\
+\sum_{1 \leqslant i<j<k \leqslant n}\left|A_i \cap A_j \cap A_k\right|-\cdots+(-1)^{n-1}\left|A_1 \cap A_2 \cap \cdots \cap A_n\right|,
+\end{gathered}
+$$
+其中, $|X|$ 表示有限集合 $X$ 的元素个数.
+该结论可用数学归纳法或"贡献法"来证明.
+在本节中,我们用符号 $\bar{X}$ 表示集合 $X$ 在某个给定全集 $I$ 下的补集, 用 $|X|$ 表示有限集 $X$ 的元素个数.
+注意到对 $n$ 个集合 $A_1, A_2, \cdots, A_n$, 有如下的交、并对偶律:
+$$
+\overline{A_1} \cap \overline{A_2} \cap \cdots \cap \overline{A_n}=\overline{A_1 \cup A_2 \cup \cdots \cup A_n},
+$$
+故当全集 $I$ 为有限集时, 有
+$$
+\left|\overline{A_1} \cap \overline{A_2} \cap \cdots \cap \overline{A_n}\right|=|I|-\left|A_1 \cup A_2 \cup \cdots \cup A_n\right| .
+$$
+这样, 容斥原理 I 即与下面的容斥原理 II (或称为逐步淘汰原理) 等价.
+容斥原理 II : 对有限集 $I$ 的 $n$ 个子集 $A_1, A_2, \cdots, A_n$, 有
+$$
+\begin{aligned}
+& \left|\overline{A_1} \cap \overline{A_2} \cap \cdots \cap \overline{A_n}\right|=|I|-\sum_{i=1}^n\left|A_i\right|+\sum_{1 \leqslant i<j \leqslant n}\left|A_i \cap A_j\right|- \\
+& \quad \sum_{1 \leqslant i<j<k \leqslant n}\left|A_i \cap A_j \cap A_k\right|+\cdots+(-1)^n\left|A_1 \cap A_2 \cap \cdots \cap A_n\right| .
+\end{aligned}
+$$
+上述两种形式的容厈原理在 $n=2,3$ 的情形是基本且重要的.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 在不大于 1000 的正整数中, 有多少个数既不被 5 整除又不被 7 整除? 这些正整数的和是多少?
+%%<SOLUTION>%%
+解:设不大于 1000 的正整数组成集合 $I$, 对 $k=5,7,35$, 设 $I$ 中所有 $k$ 的倍数组成集合 $A_k$, 其中 $A_{35}=A_5 \cap A_7$.
+由容厉原理得, 所求正整数的个数为
+$$
+\begin{aligned}
+& \left|\overline{A_5} \cap \overline{A_7}\right|=|I|-\left|A_5\right|-\left|A_7\right|+\left|A_{35}\right| \\
+= & 1000-\left[\frac{1000}{5}\right]-\left[\frac{1000}{7}\right]+\left[\frac{1000}{35}\right] \\
+= & 1000-200-142+28=686 .
+\end{aligned}
+$$
+这些正整数的和为
+$$
+\begin{aligned}
+& \sum_{i=1}^{1000} i-\sum_{i \in A_5} i-\sum_{i \in A_7} i+\sum_{i \in A_{35}} i=\sum_{i=1}^{1000} i-\sum_{i=1}^{200} 5 i-\sum_{i=1}^{142} 7 i+\sum_{i=1}^{28} 35 i \\
+= & \frac{1000 \times 1001}{2}-\frac{5 \times 200 \times 201}{2}-\frac{7 \times 142 \times 143}{2}+\frac{35 \times 28 \times 29}{2} \\
+= & 343139 .
+\end{aligned}
+$$
+%%<REMARK>%%
+注:在求元素个数时, 我们直截了当地应用容斥原理; 在求元素之和时, 则采用了与容斥原理同样的思想.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $0<a_1<a_2<\cdots<a_{3 n-2}$, 其中 $n \in \mathbf{N}^*$. 证明: 对 $\left(a_1, a_2, \cdots\right.$, $\left.a_{3 n-2}\right)$ 的任意两个排列 $\left(b_1, b_2, \cdots, b_{3 n-2}\right),\left(c_1, c_2, \cdots, c_{3 n-2}\right)$, 必存在某个 $i \in\{1,2, \cdots, 3 n-2\}$, 使得 $a_i b_i c_i \geqslant a_n^3$.
+%%<SOLUTION>%%
+证明:记 $A=\left\{i \mid a_i \geqslant a_n\right\}, B=\left\{i \mid b_i \geqslant a_n\right\}, C=\left\{i \mid c_i \geqslant a_n\right\}$, 则 $A$, $B, C$ 均为 $2 n-1$ 元集合.
+从而根据容斥原理,依次可得
+$$
+\begin{gathered}
+|A \cap B|=|A|+|B|-|A \cup B| \geqslant 2(2 n-1)-(3 n-2)=n, \\
+|A \cap B \cap C|=|A \cap B|+|C|-|(A \cap B) \cup C| \\
+\geqslant n+(2 n-1)-(3 n-2)=1 .
+\end{gathered}
+$$
+不妨设 $i \in A \cap B \cap C$, 则 $a_i b_i c_i \geqslant a_n^3$.
+%%<REMARK>%%
+注:本题是用容斥原理证明存在性的一个例子.
+本题也可以这样证明 $|A \cap B \cap C| \geqslant 1$ :
+$$
+\begin{aligned}
+|A \cap B \cap C|= & |A|+|B|+|C|-|A \cup B|-|B \cup C|-|C \cup A|+ \\
+& |A \cup B \cup C| \\
+= & 3 \times(2 n-1)+(|A \cup B \cup C|-|A \cup B|)-|B \cup C|-
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& |C \cup A| \\
+\geqslant & 3 \times(2 n-1)+0-(3 n-2)-(3 n-2) \geqslant 1 .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 在 $(1,2, \cdots, n)$ 的一个排列 $\left(a_1, a_2, \cdots, a_n\right)$ 中, 如果 $a_i \neq i(i= 1,2, \cdots, n$ ), 则称这种排列为一个错位排列 (也称更列). 求错位排列的个数 $D_n$.
+%%<SOLUTION>%%
+解:设 $(1,2, \cdots, n)$ 的所有排列组成集合 $I$, 并将 $I$ 中满足条件 $a_i=i$ 的排列全体记为 $A_i$. 显然 $D_n=\left|\overline{A_1} \cap \overline{A_2} \cap \cdots \cap \overline{A_n}\right|$. 易知
+$$
+|I|=\mathrm{P}_n^n=n !,\left|A_i\right|=\mathrm{P}_{n-1}^{n-1}=(n-1) !(1 \leqslant i \leqslant n),
+$$
+同理, 对 $1 \leqslant i_1<i_2<\cdots<i_s \leqslant n$ 可得
+$$
+\left|A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_s}\right|=\mathrm{P}_{n-s}^{n-s}=(n-s) ! .
+$$
+由容斥原理得
+$$
+\begin{aligned}
+D_n & =|I|-\sum_{i=1}^n\left|A_i\right|+\sum_{1 \leqslant i<j \leqslant n}\left|A_i \cap A_j\right|-\cdots+(-1)^n\left|A_1 \cap A_2 \cap \cdots \cap A_n\right| \\
+& =\sum_{k=0}^n(-1)^k \mathrm{C}_n^k(n-k) !=\sum_{k=0}^n(-1)^k \frac{n !}{k !}=n ! \sum_{k=0}^n \frac{(-1)^k}{k !}
+\end{aligned}
+$$
+%%<REMARK>%%
+注:本题是 "错位排列"计数问题.
+由于所设的集合 $A_i$ 恰好含有那些需被排除的排列, 且每个 $\left|A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_s}\right|$ 都很容易计算, 故采用容质原理计数条理清晰, 确保不重复不遗漏.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 求 $1,2,3,4,5$ 这 5 个数字满足如下性质的排列的种数: 第 1 个到第 $i(1 \leqslant i \leqslant 4)$ 个位置不能由 $1,2, \cdots, i$ 组成.
+%%<SOLUTION>%%
+解:令 $A_i(1 \leqslant i \leqslant 4)$ 为 $1,2,3,4,5$ 排列组成的集合, 它的任意一个元素的前 $i$ 个数是 $1,2, \cdots, i$ 的一个排列.
+则
+$$
+\begin{gathered}
+\left|A_1\right|=4 !=24,\left|A_2\right|=2 ! \times 3 !=12,\left|A_3\right|=3 ! \times 2 !=12, \\
+\left|A_4\right|=4 !=24,\left|A_1 \cap A_2\right|=3 !=6,\left|A_1 \cap A_3\right|=2 ! \times 2 !=4, \\
+\left|A_1 \cap A_4\right|=3 !=6,\left|A_2 \cap A_3\right|=2 ! \times 2 !=4,\left|A_2 \cap A_4\right|= \\
+2 ! \times 2 !=4,\left|A_3 \cap A_4\right|=3 !=6,\left|A_1 \cap A_2 \cap A_3\right|= \\
+2 !=2,\left|A_1 \cap A_2 \cap A_4\right|=2 !=2,\left|A_1 \cap A_3 \cap A_4\right|=2 !=2, \\
+\left|A_2 \cap A_3 \cap A_4\right|=2 !=2,\left|A_1 \cap A_2 \cap A_3 \cap A_4\right|=1 .
+\end{gathered}
+$$
+所以,由容厉原理得
+$$
+\begin{aligned}
+\mid & A_1 \cup A_2 \cup A_3 \cup A_4|=| A_1|+| A_2|+| A_3|+| A_4|-| A_1 \cap \\
+& A_2|-| A_1 \cap A_3|-| A_1 \cap A_4|-| A_2 \cap A_3|-| A_2 \cap A_4 \mid-
+\end{aligned}
+$$
+$$
+\begin{gathered}
+\left|A_3 \cap A_4\right|+\left|A_1 \cap A_2 \cap A_3\right|+\left|A_1 \cap A_2 \cap A_4\right|+\left|A_1 \cap A_3 \cap A_4\right|+ \\
+\left|A_2 \cap A_3 \cap A_4\right|-\left|A_1 \cap A_2 \cap A_3 \cap A_4\right| \\
+=24+12+12+24-6-4-6-4-4-6+2+2+2+2-1=49,
+\end{gathered}
+$$
+所以,满足题意的排列有 $5 !-49=120-49=71$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 给定正整数 $n$, 某个协会中恰好有 $n$ 个人,他们属于 6 个委员会, 每个委员会至少由 $\frac{n}{4}$ 个人组成.
+证明: 必有两个委员会, 他们的公共成员数不小于 $\frac{n}{30}$.
+%%<SOLUTION>%%
+证明:设 $A_1, A_2, \cdots, A_6$ 表示 6 个委员会的成员集合.
+则
+$$
+n=\left|A_1 \cup A_2 \cup \cdots \cup A_6\right| \geqslant \sum_{i=1}^6\left|A_i\right|-\sum_{1 \leqslant i<j \leqslant 6}\left|A_i \cap A_j\right|, \label{eq1}
+$$
+所以 $\sum_{1 \leqslant i<j \leqslant 6}\left|A_i \cap A_j\right| \geqslant \sum_{i=1}^6\left|A_i\right|-n \geqslant 6 \times \frac{n}{4}-n=\frac{n}{2}$, 于是, 必存在 $1 \leqslant i<j \leqslant 6$, 使得
+$$
+\left|A_i \cap A_j\right| \geqslant \frac{1}{\mathrm{C}_6^2} \times \frac{n}{2}=\frac{n}{30} .
+$$
+%%<REMARK>%%
+注:上述证明中 \ref{eq1} 式的一般情形如下:
+$$
+\left|A_1 \cup A_2 \cup \cdots \cup A_n\right| \geqslant \sum_{i=1}^n\left|A_i\right|-\sum_{1 \leqslant i<j \leqslant n}\left|A_i \cap A_j\right| .
+$$
+该式常用于估计某些集合的元素个数(请思考该式的正确性).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $n \in \mathbf{N}^*$, 我们称集合 $\{1,2, \cdots, 2 n\}$ 的一个排列 $\left(x_1, x_2, \cdots, x_{2 n}\right)$ 具有性质 $P$, 是指在 $\{1,2, \cdots, 2 n-1\}$ 中至少有一个 $i$, 使得 $\left|x_i-x_{i+1}\right|=n$. 证明: 具有性质 $P$ 的排列比不具有性质 $P$ 的排列的个数多.
+%%<SOLUTION>%%
+证明:设 $\{1,2, \cdots, 2 n\}$ 的排列中, 使 $k$ 与 $k+n$ 相邻的排列组成集合 $A_k (1 \leqslant k \leqslant n)$, 则 $A=\bigcup_{k=1}^n A_k$ 是有性质 $P$ 的排列的集合.
+由容斥原理得
+$$
+|A| \geqslant \sum_{i=1}^n\left|A_i\right|-\sum_{1 \leqslant i<j \leqslant n}\left|A_i \cap A_j\right| .\label{eq1}
+$$
+上式中, 有
+$$
+\left|A_i\right|=2 \cdot(2 n-1) !,\left|A_i \cap A_j\right|=2^2 \cdot(2 n-2) !
+$$
+(将 $i$ 与 $i+n, j$ 与 $j+n$ 并在一起各有两种位置顺序, 又将这 2 个数对与剩下的 $2 n-4$ 个数进行全排列, 排列数为 $(2 n-2) !)$. 所以
+$$
+|A| \geqslant 2 n \cdot(2 n-1) !-\mathrm{C}_n^2 \cdot 2^2 \cdot(2 n-2) !==(2 n) ! \cdot \frac{n}{2 n-1}>\frac{1}{2} \cdot(2 n) !,
+$$
+即 $A$ 中元素数超过总排列数的一半.
+故具有性质 $P$ 的排列比不具有性质 $P$ 的排列的个数多.
+%%<REMARK>%%
+注:在找到集合 $A_k$ 后, 根据 \ref{eq1} 式可以对 $|A|$ 作出下界估计.
+如果完整地应用容斥原理的等式,我们则可进一步将 $|A|$ 表示成关于 $n$ 的求和式
+$$
+|A|=\sum_{k=1}^n(-1)^{k-1} 2^k C_n^k(2 n-k) ! .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 证明: 对 $n$ 个有限集 $A_1, A_2, \cdots, A_n$, 有
+$$
+\begin{gathered}
+\left|A_1 \cap A_2 \cap \cdots \cap A_n\right|=\sum_{i=1}^n\left|A_i\right|-\sum_{1 \leqslant i<j \leqslant n}\left|A_i \cup A_j\right|+ \\
+\sum_{1 \leqslant i<j<k \leqslant n}\left|A_i \cup A_j \cup A_k\right|-\cdots+(-1)^{n-1}\left|A_1 \cup A_2 \cup \cdots \cup A_n\right| .
+\end{gathered}
+$$
+%%<SOLUTION>%%
+证明:取一个包含 $A_1 \cup A_2 \cup \cdots \cup A_n$ 的有限集 $I$ 为全集.
+注意到 $A_i$ 与 $\overline{A_i}$ 互为补集,由容斥原理可得
+$$
+\begin{aligned}
+& \left|A_1 \cap A_2 \cap \cdots \cap A_n\right|=|I|-\sum_{i=1}^n\left|\overline{A_i}\right|+\sum_{1 \leqslant i<j \leqslant n}\left|\overline{A_i} \cap \overline{A_j}\right|- \\
+& \sum_{1 \leqslant i<j<k \leqslant n}\left|\overline{A_i} \cap \overline{A_j} \cap \overline{A_k}\right|+\cdots+(-1)^n\left|\overline{A_1} \cap \overline{A_2} \cap \cdots \cap \overline{A_n}\right| . \label{eq1}
+\end{aligned}
+$$
+对任意 $1 \leqslant i_1<i_2<\cdots<i_s \leqslant n$, 有
+$$
+\begin{aligned}
+& \left|\overline{A_{i_1}} \cap \overline{A_{i_2}} \cap \cdots \cap \overline{A_{i_s}}\right|=\left|\overline{A_{i_1} \cup \overline{A_{i_2} \cup \cdots \cup A_{i_s}}}\right| \\
+& =|I|-\left|A_{i_1} \cup A_{i_2} \cup \cdots \cup A_{i_s}\right|  
+\end{aligned}
+$$
+故对这样的 $i_1, i_2, \cdots, i_s$ 求和可知
+$$
+\begin{aligned}
+& \sum_{i_1, i_2, \cdots, i_s}\left|\overline{A_{i_1}} \cap \overline{A_{i_2}} \cap \cdots \cap \overline{A_{i_s}}\right| \\
+= & \mathrm{C}_n^s \cdot|I|-\sum_{i_1, i_2, \cdots, i_s}\left|A_{i_1} \cup A_{i_2} \cup \cdots \cup A_{i_s}\right| . \label{eq2}
+\end{aligned}
+$$
+记须证等式的右端为 $S$, 则由 式\ref{eq1}, \ref{eq2}得
+$$
+\begin{aligned}
+& \left|A_1 \cap A_2 \cap \cdots \cap A_n\right| \\
+= & |I|-\left(\mathrm{C}_n^1 \cdot|I|-\sum_{i=1}^n\left|A_i\right|\right)+\left(\mathrm{C}_n^2 \cdot|I|-\sum_{1 \leqslant i<j \leqslant n}\left|A_i \cap A_j\right|\right)-
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& \left(\mathrm{C}_n^3 \cdot|I|-\sum_{1 \leqslant i<j<k \leqslant n}\left|A_i \cap A_j \cap A_k\right|\right)+\cdots+(-1)^n\left(\mathrm{C}_n^n \cdot\right. \\
+& \left.|I|-\left|A_1 \cap A_2 \cap \cdots \cap A_n\right|\right) . \\
+= & |I|\left(\mathrm{C}_n^0-\mathrm{C}_n^1+\mathrm{C}_n^2-\cdots+(-1)^n \mathrm{C}_n^n\right)+S=S .
+\end{aligned}
+$$
+证毕.
+%%<REMARK>%%
+注:本题结论由容斥原理推得, 并与容厈原理形式互为对偶.
+这个结论并不具有容斥原理或逐步淘汰原理那样明显的计数意义, 但仍给出了关于 $n$ 个有限集及其交、并形式之间的一个计数关系.
+对本题也可给出直接的证明, 做法类似于容厉原理本身的推导过程.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设有限集 $A_1, A_2, \cdots, A_n$ 满足
+$$
+\left|A_i \cap A_{i+1}\right|>\frac{n-2}{n-1}\left|A_{i+1}\right|, i=1,2, \cdots, n\left(A_{n+1}=A_1\right) .
+$$
+证明: $\bigcap_{i=1}^n A_i \neq \varnothing$. 
+%%<SOLUTION>%%
+证明:对 $k=2,3, \cdots, n$, 令 $B_k=\bigcap_{i=1}^k A_i$. 下面证明: 当 $k=2,3, \cdots, n$ 时, 有
+$$
+\left|B_k\right|>\frac{n-2}{n-1}\left|A_k\right|-\frac{1}{n-1} \sum_{i=2}^{k-1}\left|A_i\right| \label{eq1}
+$$
+用数学归纳法.
+当 $k=2$ 时, $\left|B_2\right|=\left|A_1 \cap A_2\right|>\frac{n-2}{n-1}\left|A_2\right|$, (1)成立.
+设 式\ref{eq1} 已对 $k$ 成立, 并且 $2 \leqslant k<n$, 考虑 $k+1$ 的情形.
+对 $B_k$ 和 $A_k \cap A_{k+1}$ 用容斥原理得
+$$
+\left|B_k \cup\left(A_k \cap A_{k+1}\right)\right|=\left|B_k\right|+\left|A_k \cap A_{k+1}\right|-\left|B_k \cap\left(A_k \cap A_{k+1}\right)\right| . \label{eq2}
+$$
+显然 $B_k, A_k \cap A_{k+1} \subseteq A_k$, 故 $B_k \cup\left(A_k \cap A_{k+1}\right) \subseteq A_k$, 因此(2)的左端满足
+$$
+\left|B_k \cup\left(A_k \cap A_{k+1}\right)\right| \leqslant\left|A_k\right| \text {. }
+$$
+对 式\ref{eq2} 的右端, 注意 式\ref{eq1} 已对 $k$ 成立, 又由已知得 $\left|A_k \cap A_{k+1}\right|>\frac{n-2}{n-1}\left|A_{k+1}\right|$, 并且 $B_k \cap\left(A_k \cap A_{k+1}\right)=B_{k+1}$.
+综合以上各方面可得
+$$
+\left|A_k\right|>\frac{n-2}{n-1}\left|A_k\right|-\frac{1}{n-1} \sum_{i=2}^{k-1}\left|A_i\right|+\frac{n-2}{n-1}\left|A_{k+1}\right|-\left|B_{k+1}\right|,
+$$
+整理即得 式\ref{eq1} 对 $k+1$ 成立.
+由数学归纳法可知, 特别地, 式\ref{eq1} 对 $n$ 成立, 即
+$$
+\left|B_n\right|>\frac{n-2}{n-1}\left|A_n\right|-\frac{1}{n-1} \sum_{i=2}^{n-1}\left|A_i\right| .
+$$
+不失一般性, 不妨一开始就设 $\left|A_n\right|=\max _{1 \leqslant i \leqslant n}\left|A_i\right|$, 则由上式得 $\left|B_n\right|>0$, 从而
+$$
+\bigcap_{i=1}^n A_i=B_n \neq \varnothing .
+$$
+%%<REMARK>%%
+注:本例反复运用容斥原理在 $n=2$ 的情形, 配合数学归纳法证明(1)式.
+考虑到已知条件具有轮换结构, 故可得到 $n$ 个形如(1)式的不等关系.
+因此, 无论利用平均数原理还是上述证明中的极端原理,均可证得结论.
+%%PROBLEM_END%%
+
+

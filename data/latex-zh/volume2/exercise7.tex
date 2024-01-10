@@ -1,0 +1,508 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1 求函数方程:
+$$
+2 f(x)+x^2 f\left(\frac{1}{x}\right)=\sin x(x>0)
+$$
+在 $(0,+\infty)$ 上的解.
+%%<SOLUTION>%%
+将函数方程中的 $x$ 用 $\frac{1}{x}$ 代换, 得 $2 f\left(\frac{1}{x}\right)+\frac{1}{x^2} f(x)=\sin \frac{1}{x}$, 即 $f(x)+ 2 x^2 f\left(\frac{1}{x}\right)=x^2 \sin \frac{1}{x}$. 将上面方程与原方程联立消去 $f\left(\frac{1}{x}\right)$, 得 $f(x)= \frac{2}{3}\left(\sin x-\frac{x^2}{2} \sin \frac{1}{x}\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2 已知 $f(x)$ 是偶函数, $g(x)$ 是奇函数, 并且
+$$
+f(x)+g(x)=1993 x \sqrt{9-x^2}+x^{1994},
+$$
+求 $f(x)$ 和 $g(x)$.
+%%<SOLUTION>%%
+由题设知, $f(x), g(x)$ 的定义域为 $[-3,3]$. 用 $-x$ 代换方程中的 $x$, 并将原方程与所得的新方程联立得 $\left\{\begin{array}{l}f(x)+g(x)=1993 x \sqrt{9-x^2}+x^{1994}, \\ f(x)-g(x)=-1993 x \sqrt{9-x^2}+x^{1994} .\end{array}\right.$ 解方程组得 $f(x)=x^{1994}, g(x)=1993 x \sqrt{9-x^2}(-3 \leqslant x \leqslant 3)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3 求所有满足方程:
+$$
+f(x)+f(y)+g(x)-g(y)=\sin x+\cos y, x, y \in \mathbf{R}
+$$
+的函数 $f(x)$ 与 $g(x)$.
+%%<SOLUTION>%%
+令 $x=y$ 代入题设方程, 得 $f(x)=\frac{\sin x+\cos x}{2}$. 于是 $\frac{\sin x+\cos x}{2}+ \frac{\sin y+\cos y}{2}+g(x)-g(y)=\sin x+\cos y$, 即 $g(x)-\frac{1}{2} \sin x+\frac{1}{2} \cos x= g(y)-\frac{1}{2} \sin y+\frac{1}{2} \cos y$. 令 $h(x)=g(x)-\frac{1}{2} \sin x+\frac{1}{2} \cos x$, 那么对任意的 $x, y \in \mathbf{R}$, 都有 $h(x) \equiv h(y)$. 因此, $h(x)$ 恒等于一个常数.
+所以满足题设方程的函数是 $f(x)=\frac{\sin x+\cos x}{2}, g(x)=\frac{\sin x-\cos x}{2}+C$, 其中 $C$ 为常数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4 设 $f: \mathbf{R}^{+} \rightarrow \mathbf{R}^{+}$严格递减, 对所有 $x, y \in \mathbf{R}^{+}, f(x+y)+f(f(x)+f(y))=$ $f(f(x+f(y))+f(y+f(x)))$.
+求证: $f(f(x))=x$.
+%%<SOLUTION>%%
+令 $y=x$, 得 $f(2 x)+f(2 f(x))=f(2 f(x+f(x))) \cdots$ (1). 将 $x$ 换成 $f(x)$, 有 $f(2 f(x))+f(2 f(f(x)))=f(2 f(f(x)+f(f(x)))) \cdots$ (2). (1)、 (2) 两式相减得 $f(2 f(f(x)))-f(2 x)=f(2 f(f(x)+f(f(x))))- f(2 f(x+f(x)))$. 若 $f(f(x))>x$, 则上式左边为负, 而右边却为正, 矛盾! 同样, 若 $f(f(x))<x$ 也会导致左右符号不一致的矛盾.
+所以 $f(f(x))=x$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5 求出满足以下要求的所有 $\mathbf{R} \rightarrow \mathbf{R}$ 的函数 $f 、 g 、 h$, 对任意的 $x, y \in \mathbf{R}$, 有
+$$
+f(x)-g(y)=(x-y) h(x+y) .
+$$
+%%<SOLUTION>%%
+记原式为(1)式.
+在(1)中令 $x=y$, 得 $f(x)-g(x)=0$, 所以 $f(x)= g(x)$. 于是(1)式为 $f(x)-f(y)=(x-y) h(x+y) \cdots$ (2). 在(2)中令 $y=0$, 并记 $f(0)=c$, 得 $f(x)=c+x h(x) \cdots$ (3). 将 (3) 代入 (2) 中, 得 $x h(x)- y h(y)=(x-y) h(x+y) \cdots$ (4). 在(4)中令 $y=-x$, 并记 $h(0)=b$, 则 $x(h(x)+ h(-x))=2 b x$. 从而 $h(x)+h(-x)=2 b \cdots$ (5). 再在(4)式中用 $x+y$ 代换 $x$, $-y$ 代换 $y$, 得 $(x+y) h(x+y)+y h(-y)=(x+2 y) h(x) \cdots$ (6), 在(6)式中将 $x, y$ 互换, 得 $(x+y) h(x+y)+x h(-x)=(2 x+y) h(y) \cdots$ (7). (7)一(6), 得 $x h(-x)+x h(x)-y h(-y)-y h(y)=2 x h(y)-2 y h(x) \cdots$ (8). 由(5)和(8), 便得 $2 b x-2 b y=2 x h(y)-2 y h(x)$. 即 $x h(y)-y h(x)=b(x-y), x(h(y)-b)=y(h(x)-b)$. 对 $x \neq 0, y \neq 0$, 有 $\frac{h(x)-b}{x}=\frac{h(y)-b}{y}$. 于是对任意的 $x(\neq 0), \frac{h(x)-b}{x}$ 为常数, 设为 $a$. 那么 $h(x)=a x+b, x \neq 0 \cdots$ (9), 易知(9)式对 $x=0$ 也成立.
+将(9)代入(3), 得 $f(x)=a x^2+b x+c$. 所以 $f(x)=g(x)= a x^2+b x+c, h(x)=a x+b$. 其中的 $a 、 b 、 c$ 为任意常数.
+经检验, $f(x)$, $g(x), h(x)$ 满足题设方程.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $f:[0,1] \rightarrow \mathbf{R}$ 满足: 对所有 $x \in[0,1], f(x) \leqslant 0 ; f(1)=1$ 并且对所有 $x, y \in[0,1]$ 以及 $x+y \in[0,1]$ 的 $x, y$, 有
+$$
+f(x)+f(y) \leqslant f(x+y) .
+$$
+求证: $f(x) \leqslant 2 x$.
+%%<SOLUTION>%%
+对于条件 $f(x)+f(y) \leqslant f(x+y) \cdots$ (1). 在(1)中令 $y=1-x$, 得 $f(x)+f(1-x) \leqslant f(1)=1$. 故对任意 $x \in[0,1], f(x) \leqslant 1$. 且 $f(0) \leqslant 0$ (取 $x=1$ 即可). 在(1)中令 $y=x$, 可得对所有 $x \in\left[0, \frac{1}{2}\right]$, 有 $2 f(x) \leqslant f(2 x)$. 利用数学归纳法, 我们有 $2^n f(x) \leqslant f\left(2^n x\right)$. 对所有使得 $2^n x \in[0,1]$ 的 $x$ 成立.
+即 $x \in\left[0, \frac{1}{2^n}\right]$. 如果 $x>\frac{1}{2}$, 那么 $f(x) \leqslant 1<2 x$. 现在假设 $0< x \leqslant \frac{1}{2}$, 选取 $n \geqslant 1$, 使得 $\frac{1}{2^{n+1}}<x \leqslant \frac{1}{2^n}$. 于是有 $2^n x \in[0,1]$, 并且 $2^n f(x) \leqslant f\left(2^n x\right) \leqslant 1<2^{n+1} x=2^n(2 x)$, 所以, 同样有 $f(x)<2 x$. 综上所述, 对所有 $x \in[0,1]$, 都有 $f(x) \leqslant 2 x$ 成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7 $f$ 是定义在 $(1,+\infty)$ 上且在 $(1,+\infty)$ 中取值的函数, 满足条件: 对任何 $x 、 y>1$ 及 $u 、 v>0$,
+$$
+f\left(x^u y^v\right) \leqslant f(x)^{\frac{1}{4 u}} f(y)^{\frac{1}{4 v}}
+$$
+都成立, 试确定所有这样的函数 $f$.
+%%<SOLUTION>%%
+本题所给的是一个函数不等式, 而不是一个等式, 我们设法先把它变成一个等式.
+令 $x=y, u=v$, 代入(1), 得 $f\left(x^{2 u}\right) \leqslant f(x)^{\frac{1}{2 u}}$. 再将 $2 u$ 用 $u$ 代换得, 对所有 $x>1, u>0$, 均有 $f\left(x^u\right) \leqslant f(x)^{\frac{1}{u}} \cdots (2)$. 令 $y=x^u, v=\frac{1}{u}$, 则 $x=y^{\frac{1}{u}}=y^v, u=\frac{1}{v}$, 代入(2)式, 得 $f(y) \leqslant f\left(y^v\right)^v$, 用 $x$ 代换 $y, u$ 代换 $v$, 则对所有 $x>1, u>0$, 又有 $f\left(x^u\right) \geqslant f(x)^{\frac{1}{u}} \cdots (3)$. 由(2)、(3)便知 $f\left(x^u\right)= f(x)^{\frac{1}{u}}\cdots (4)$. 现在来求(4)的解.
+取 $x=\mathrm{e}, t=\mathrm{e}^u$ (则 $u=\ln t$ ), 当 $u$ 从 0 变化到 $+\infty$ 时, $t$ 从 1 变化到 $+\infty$, 于是(4)式为 $f(t)=f(\mathrm{e})^{\frac{1}{\ln } t}$ 、令 $f(\mathrm{e})=a>1$, 用 $x$ 代换 $t$, 便得 $f(x)=a^{\frac{1}{1 \ln }}, a>1, \cdots(5)$ . 下面验证(5)所给出的函数满足(1) $\frac{1}{4 u \ln x}+\frac{1}{4 v \ln y} \geqslant \frac{1}{u \ln x+v \ln y}$, 从而 $f\left(x^u y^v\right)=a^{\frac{1}{u \ln x+v \ln y}} \leqslant a^{\frac{1}{4 u \ln x}+\frac{1}{4 v \ln y}}= f(x)^{\frac{1}{4 u}} f(y)^{\frac{1}{4 x}}$. 这就证明了对所有 $a>1$, (5)式所给出的函数 $f(x)$ 即为所求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 证明:如果函数 $f: \mathbf{R} \rightarrow \mathbf{R}$ 满足下面两个恒等式中的一个, 则必满足另一个:
+$$
+\begin{gathered}
+f(x+y) \equiv f(x)+f(y), x, y \in \mathbf{R} ; \\
+f(x y+x+y) \equiv f(x y)+f(x)+f(y), x, y \in \mathbf{R} .
+\end{gathered}
+$$
+%%<SOLUTION>%%
+如果函数 $f(x)$ 满足第一个恒等式, 那么 $f(x y+x+y) \equiv f(x y)+ f(x+y) \equiv f(x y)+f(x)+f(y), x, y \in \mathbf{R}$, 即 $f(x)$ 也满足第二个恒等式.
+现在设函数 $f(x)$ 满足第二个恒等式, 令 $y=u+v+u v$, 得 $f(x+u+v+u v+x u+x v+x u v) \equiv f(x)+f(u+v+u v)+f(x u+x v+x u v)$. 又 $f(u+ v+u v) \equiv f(u)+f(v)+f(u v)$. 故 $f(x+u+v+x u+x v+u v+x u v) \equiv f(x)+f(u)+f(v)+f(u v)+f(x u+x v+x u v) \cdots$ (1). 在(1)中变换变量 $x$ 和 $u$ 的位置, 又得 $f(x+u+v+x u+x v+u v+x u v) \equiv f(x)+f(u)+f(v)+ f(x v)+f(x u+v v+x u v) \cdots$ (2). 由(1)和(2), 有 $f(u v)+f(x u+x v+x u v) \equiv f(x v)+f(x u+w v+x u v) \cdots$ (3). 在(3)中令 $x=1$, 有 $f(u v)+f(u+v+u v) \equiv f(v)+f(u+2 w v)$. 所以 $f(u v)+f(u)+f(v)+f(u v) \equiv f(v)+f(u+2 u v)$, 即 $f(u)+2 f(u v) \equiv f(u+2 u v) \cdots$ (4). 在(4)中令 $u=0$, 易得 $f(0)=0 \cdots$ (5). 在 (4)中令 $u=-1$, 有 $f(-u) \equiv f(u)+2 f(-u)$. 从而 $f(-u)=-f(u)$. 在(4) 中令 $v=-\frac{1}{2}$, 有 $f(0) \equiv f(u)+2 f\left(-\frac{u}{2}\right) \cdots$ (6). 由(5)和 (6), 我们得到 $f(u) \equiv 2 f\left(\frac{u}{2}\right)$, 即 $f(2 u)=2 f(u) \cdots$ (7). 由(4)和(7), 有 $f(u+2 u v) \equiv f(u)+ f(2 u v)$. 在上式中再令 $2 v=t$, 得到 $f(u+u t) \equiv f(u)+f(u t) \cdots$ (8). 所以当 $x \neq 0$ 时, 由 (8), 有 $f(x+y) \equiv f\left(x+\frac{y}{x}\right) \equiv f(x)+f\left(x \cdot \frac{y}{x}\right) \equiv f(x)+ f(y)$. 另一方面, 当 $x=0$ 时, 由(5), $f(x+y) \equiv f(x)+f(y)$ 成立.
+因此, $f(x, y)$ 满足第一个恒等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9 求所有函数 $f, g: \mathbf{R} \rightarrow \mathbf{R}$, 使得对任意 $x, y \in \mathbf{R}$,
+$$
+f(x+y g(x))=g(x)+x f(y) .
+$$
+%%<SOLUTION>%%
+(1) $f(x) \equiv 0, g(x) \equiv 0$ 为此函数方程的平凡解.
+(2) 下面我们考虑非平凡解.
+令 $x=0$, 则 $f(y g(0))=g(0)$. 若 $g(0) \neq 0$, 则 $f(x)=g(0)$, 即 $f(x)$ 为常数 $c$; 于是 $g(0)=g(x)+x g(0), g(x)=(1-x) g(0)$. 故 $f(x)=c$, $g(x)=(1-x) c$ 为解.
+(3) 若 $g(0)=0$, 则 $f(0)=0$. 令 $y=0$, 有 $f(x)=g(x)+x f(0)=g(x)$, 任意 $x \in \mathbf{R}$. 
+故问题转化为求一个函数方程: $f(x+y f(x))=f(x)+x f(y)$ (对任意 $x, y \in \mathbf{R}$ ) 的解.
+令 $y=0$, 则 $f(x)=f(x)+x f(0)$, 故 $f(0)=0$; 若 $f(x)=0$, 则 $0=x f(y)$, 因而 $x=0$. 即 $f(x)=0 \Leftrightarrow x=0 \cdots \circledast$. 令 $x=1$, 得 $f(1+y f(1))=f(1)+f(y) \cdots$ (1). 
+若 $f(1) \neq 1$, 取 $y=\frac{1}{1-f(1)}$, 代入 (1), 得 $f(1)=0$, 与 $\circledast$ 矛盾.
+所以 $f(1)=1$, 故 $f(1+y)=1+f(y)$, 任意 $y \in \mathbf{R} \cdots$ (2). 
+特别地, $f(n)=n$, $n \in \mathbf{Z}$. 取 $x=n \in \mathbf{Z}, y=z-1$, 代入方程得 $f(n z)=f(n+f(z-1) f(n))= n+n f(z-1)=n f(z)$, 任意 $n \in \mathbf{Z}, z \in \mathbf{R}$. 
+因此 $f(r z)=r f(z)$, 任意 $r \in \mathbf{Q}, z \in \mathbf{R} \cdots$ (3). 
+由(3), $f(a)+f(-a)=0=f(a-a)$. 当 $a+b \neq 0$ 时, $f(a)+ f(b)=f\left(\frac{a+b}{2}+\frac{\frac{a-b}{2}}{f\left(\frac{a+b}{2}\right)} \cdot f\left(\frac{a+b}{2}\right)\right)+f\left(\frac{a+b}{2}+\frac{\frac{b-a}{2}}{f\left(\frac{a+b}{2}\right)} \cdot f\left(\frac{a+b}{2}\right)\right)=\cdot f\left(\frac{a+b}{2}\right)+\frac{a+b}{2} \cdot f\left(\frac{\frac{a-b}{2}}{f\left(\frac{a+b}{2}\right)}\right)+f\left(\frac{a+b}{2}\right)+\frac{a+b}{2} f\left(\frac{\frac{b-a}{2}}{f\left(\frac{a+b}{2}\right)}\right)= 2 f\left(\frac{a+b}{2}\right)=f(a+b)$. 
+所以 $f(x+y f(x))=f(x)+f(y f(x)), x+y f(x) \neq$ 0. 
+又 $f(x+y f(x))=f(x)+x f(y)$, 因此 $f(y f(x))=x f(y)$. 
+令 $y=1$, 则 $f(f(x))=x$, 故 $f$ 为双射.
+将 $x$ 换成 $f(x)$, 有 $f(x y)=f(x) f(y)$, 任意 $x$, $y \in \mathbf{R}$. 令 $y=x$, 则$f\left(x^2\right)=f^2(x)>0$. 
+令 $y=-x$, 则 $f\left(-x^2\right)=f(x) f(-x)$, 故 $f(x)>0 \Leftrightarrow x>0$. 
+又因为 $f(x-f(x))=f(x)-x=-(x- f(x)$ ), 所以 $f(x)-x=0, x \in \mathbf{R}$. 从而 $f(x)=g(x)=x$, 任意 $x \in \mathbf{R}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10 求所有满足下面方程的函数 $f: \mathbf{R} \rightarrow \mathbf{R}$ : 对任意实数 $x 、 y$, 有
+$$
+x f(y)+y f(x)=(x+y) f(x) f(y) .
+$$
+%%<SOLUTION>%%
+取 $x=y=1$ 代入题设方程, 得 $2 f(1)=2(f(1))^2$, 所以 $f(1)=0$ 或 $f(1)=1$. (1) 若 $f(1)=0$. 取 $y=1$ 代入原方程, 得 $x f(1)+f(x)= (x+1) f(x) f(1)$, 所以 $f(x)=0$. (2) 若 $f(1)=1$, 取 $y=1$ 代入原方程, 得 $x+f(x)=(x+1) f(x), x(f(x)-1)=0$. 所以 $f(x)= \begin{cases}1,  \text { 当 } x \neq 0 \text { 时; } \\ \text { 任意实数, 当 } x=0 \text { 时.
+}\end{cases}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11 设函数 $f: \mathbf{R} \rightarrow \mathbf{R}$ 满足
+$$
+f(x y)=\frac{f(x)+f(y)}{x+y}, \quad x, y \in \mathbf{R}, x+y \neq 0 .
+$$
+求 $f(x)$.
+%%<SOLUTION>%%
+令 $y=1$, 得 $f(x)=\frac{f(x)+f(1)}{x+1}, x \neq-1$. 故 $x f(x)=f(1)$. 当 $x=0$ 时, $f(1)=0$. 从而当 $x \neq 0, x \neq-1$ 时, $f(x)=0$. 令 $x=2, y=0$, 得 $f(0)=\frac{f(2)+f(0)}{2}$, 所以 $f(0)=f(2)=0$. 令 $x=-1, y=0$, 得 $f(0)=\frac{f(-1)+f(0)}{2}$, 所以 $f(-1)=f(0)=0$. 综上所述, $f(x)=0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 设 $M$ 是满足 $f(0) \neq 0$ 与
+$$
+f(n) f(m) \equiv f(n+m)+f(n-m), n, m \in \mathbf{Z}
+$$
+的函数 $f: \mathbf{Z} \rightarrow \mathbf{R}$ 之集合, 试求:
+(1) 满足 $f(1)=\frac{5}{2}$ 的所有函数 $f(n) \in M$;
+(2) 满足 $f(1)=\sqrt{3}$ 的所有函数 $f(n) \in M$.
+%%<SOLUTION>%%
+在题述的恒等式中, 取 $n=m=0$, 得 $(f(0))^2=2 f(0)$. 但是 $f(0) \neq 0$, 因此 $f(0)=2$. 再在恒等式中取 $m=1$, 得 $f(n) f(1) \equiv f(n+ 1) +f(n-1), n \in \mathbf{Z}$. 如果在 $n=0$ 与 $n=1$ 时函数值 $f(n)$ 确定, 那么由上面的恒等式可唯一确定 $f(2)$ 与 $f(-1)$ 的值, 继而可确定 $f(3)$ 与 $f(-2)$ 的值, 等等.
+这样一来对每个 $n \in \mathbf{Z}$ 皆可确定 $f(n)$ 的值.
+于是, 若已知 $f(0)=2$, 且 $f(1)=\frac{5}{2}$ (在 (1)中)或 $f(1)=\sqrt{3}$ (在 (2) 中), 则我们可唯一确定 $f(n)$. 下面证明: 函数 $f(n)=2^n+\frac{1}{2^n}$ 与函数 $f(n)=2 \cos \frac{n \pi}{6}$ 分别满足 (1) 和 (2). 
+事实上, 有 (1) $f(0)=2^0+2^0, f(1)=2^1+\frac{1}{2^1}=\frac{5}{2}, f(n) f(m)= \left(2^n+\frac{1}{2^n}\right)\left(2^m+\frac{1}{2^m}\right)=\left(2^{n+m}+\frac{1}{2^{n+m}}\right)+\left(2^{n-m}+\frac{1}{2^{n-m}}\right)=f(n+m)+f(n-m), m, n \in \mathbf{Z}$.
+(2) $f(0)=2 \cos 0, f(1)=2 \cos \frac{\pi}{6}=\sqrt{3}, f(n) f(m)= 4 \cos \frac{n \pi}{6} \cos \frac{m \pi}{6}=2 \cos \frac{(m+n) \pi}{6}+2 \cos \frac{(n-m) \pi}{6}=f(n+m)+f(n-m), m, n \in \mathbf{Z}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13 设 $f(n)$ 是定义在整数集 $\mathbf{Z}$ 上的函数, 且满足:
+(1) $f(0)=1, f(1)=0$;
+(2) $f(m+n)+f(m-n)=2 f(m) f(n), m 、 n \in \mathbf{Z}$.
+求 $f(n)$.
+%%<SOLUTION>%%
+在条件 (2) 中令 $n=1$, 得 $f(m+1)+f(m-1)=0$. 即 $f(m+1)= -f(m-1) \cdots$ (1). 
+在(1)式中用 $m+2$ 代换 $m$, 得 $f(m+3)=-f(m+1) \cdots$ (2). 
+由(1)、(2)式, 可得 $(m+3)=f(m-1)$. 即 $f(m+4)=f(m)$. 
+因此, $f(n)$ 是周期为 4 的周期函数.
+取 $m=1$ 代入(1), 得 $f(2)=-f(0)=-1$. 取 $m=2$ 代入(1), 得 $f(3)=-f(1)=0$. 
+所以 $f(n)= \begin{cases}0, & \text { 当 } n \text { 为奇数时; } \\ 1, & \text { 当 } n=4 k, k \in \mathbf{Z} \text { 时; } \\ -1, & \text { 当 } n=4 k+2, k \in \mathbf{Z} \text { 时.
+}\end{cases}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 设 $f: \mathbf{R} \rightarrow \mathbf{R}$ 满足: 对任意实数 $x 、 y$, 有
+$$
+f(2 x)+f(2 y)=f(x+y) f(x-y) .
+$$
+又 $f(\pi)=0$, 但 $f(x)$ 不恒等于零.
+(1) 确定函数 $f(x)$ 的奇偶性;
+(2) 证明: $f(x)$ 是周期函数.
+%%<SOLUTION>%%
+(1) 取 $x=y=\frac{1}{2}$ 代入(1), 得 $2 f(t)=f(t) f(0)$. 因 $f(x)$ 不恒等于零, 所以 $f(0)=2$. 取 $x=\frac{1}{2}, y=-\frac{1}{2}$ 代入 (1), 得 $f(t)+f(-t)= f(0) f(t)$, 即 $f(-t)=f(t)$, 所以, $f(x)$ 是偶函数; 
+(2) 令 $x=t+\frac{\pi}{2}, y= t-\frac{\pi}{2}$ 代入(1), 得 $f(2 t+\pi)+f(2 t-\pi)=f(2 t) f(\pi)$, 所以 $f(2 t+\pi)= -f(2 t-\pi) \cdots$ (2). 取 $x=2 t-\pi$ 代入(2), 得 $f(x+2 \pi)=-f(x)$. 故 $f(x+ 4 \pi)=-f(x+2 \pi)=f(x)$, 即 $f(x)$ 是以 $4 \pi$ 为周期的周期函数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15 设 $f: \mathbf{R} \rightarrow \mathbf{R}$, 对任意 $x, y \in \mathbf{R} \backslash\{\ln 2\}$, 有
+$$
+f(x+y)+f(x-y)=\mathrm{e}^{x+y}(f(x)+f(y)),
+$$
+若 $f(0)=1$, 求 $f(x)$.
+%%<SOLUTION>%%
+在所给等式中令 $x=0$, 并将 $y$ 用 $x$ 代替, 得 $f(x)+f(-x)= \mathrm{e}^x(f(x)+1)$. 即 $\left(1-\mathrm{e}^x\right) f(x)+f(-x)=\mathrm{e}^x$. 注意到当 $x, y$ 互换后所给等式的右边不变, 则有 $f(x-y)=f(y-x)$. 在上式中取 $y=0$, 则 $f(x)=f(-x)$, 故 $f(x)$ 为偶函数.
+因而 $\left(2-\mathrm{e}^x\right) f(x)=\mathrm{e}^x$. 于是 $f(x)=\frac{\mathrm{e}^x}{2-\mathrm{e}^x}, x \in \mathbf{R} \backslash\{\ln 2\}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16 $a$ 为已知实数, $0<a<1 . f$ 为 $[0,1]$ 上的函数, 满足 $f(0)=0, f(1)=$ 1 及对所有 $x \leqslant y$,
+$$
+f\left(\frac{x+y}{2}\right)=(1-a) f(x)+a f(y),
+$$
+求 $f\left(\frac{1}{7}\right)$ 的值.
+%%<SOLUTION>%%
+在恒等式中, 取 $x=0, y=1$, 有 $f\left(\frac{1}{2}\right)=a \cdots$ (1). 又有 $f\left(\frac{1}{4}\right)= f\left(\frac{0+\frac{1}{2}}{2}\right)=a f\left(\frac{1}{2}\right)=a^2 \cdots(2), f\left(\frac{3}{4}\right)=f\left(\frac{\frac{1}{2}+1}{2}\right)=(1-a) a+a \cdots$ (3). 因此, $f\left(\frac{1}{2}\right)=f\left(\frac{\frac{1}{4}+\frac{3}{4}}{2}\right)=(1-a) a^2+a(a+a(1-a)) \cdots$ (4). 由(1)和 (4), 得 $a=(1-a) a^2+a(a+a(1-a))$, 因为 $a \neq 0,1$, 由上式可解出 $a=\frac{1}{2}$.
+从而原恒等式化为 $f\left(\frac{x+y}{2}\right)=\frac{f(x)+f(y)}{2}$. 设 $f\left(\frac{1}{7}\right)=t$, 则 $t= f\left(\frac{0+\frac{2}{7}}{2}\right)=\frac{1}{2} f\left(\frac{2}{7}\right)$, 所以 $f\left(\frac{2}{7}\right)=2 t$. 进而由 $f\left(\frac{1}{7}\right)=t, f\left(\frac{2}{7}\right)=2 t$, 可知 $f\left(\frac{3}{7}\right)=3 t$. 依次类推.
+最后, 我们有 $f(1)=7 t$. 故 $f\left(\frac{1}{7}\right)=t=\frac{1}{7}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17 已知多项式 $f(x)$ 满足:
+$$
+f\left(2 x^2+1\right)-4 f(x)=4(f(x))^2+1 .
+$$
+且 $f(0)=0$, 求 $f(x)$.
+%%<SOLUTION>%%
+原函数方程可化为 $f\left(2 x^2+1\right)=(2 f(x)+1)^2 \cdots$ (1). 
+取 $x=0$ 代入 (1), 得 $f(1)=(2 f(0)+1)^2=1$. 
+取 $x=1$ 代入 (1), 并利用 $f(1)=1$, 得 $f(3)=(2 f(1)+1)^2=3^2$. 
+取 $x=3$ 代入(1), 并利用 $f(3)=3^2$, 得 $f(19)= (2 f(3)+1)^2=19, \cdots$. 
+作数列 $\left\{a_n\right\}, a_1=0, a_{n+1}=2 a_n^2+1, n=1,2, \cdots$. 
+用数学归纳法易证 $f\left(a_n\right)=a_n^2, n \in \mathbf{N}_{+}$
+事实上, 假设 $f\left(a_k\right)=a_k^2$, 那么 $f\left(a_{k+1}\right)=f\left(2 a_k^2+1\right)=\left(2 f\left(a_k\right)+1\right)$ (利用(1) $)=\left(2 a_k^2+1\right)^2$ (利用归纳假设) $=a_{k+1}^2$. 
+设 $f(x)-x^2$ 是 $m$ 次多项式, 由代数基本定理知它有 $m$ 个根.
+但上面已证 $f(x)-x^2$ 有无穷多个根, 从而 $f(x)-x^2 \equiv 0$. 即 $f(x)=x^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题18 对任意 $x, y \in \mathbf{Q}^{+}$( $\mathbf{Q}^{+}$为正有理数集), 恒有: $f(x f(y))=\frac{f(x)}{y}$.
+若 $f(2)=a, f(3)=b$, 求 $f\left(3^n\right), f(486)$.
+%%<SOLUTION>%%
+取 $x=y=1$, 有 $f(f(1))=f(1) \cdots$ (1). 
+取 $y=f(1)$, 有 $f(x f(f(1)))=\frac{f(x)}{f(1)} \cdots$ (2). 
+取 $y=1$, 有 $f(x f(1))=f(x) \cdots$ (3). 
+把(1)代入 (3)并利用(2), 有 $f(x)=f(x f(f(1)))=\frac{f(x)}{f(1)}$. 所以 $f(1)=1$. 
+在原恒等式中令 $x=1$, 有 $f(f(y))=\frac{f(1)}{y}=\frac{1}{y} \cdots$ (4). 
+取 $y=f(t)$, 由原恒等式及(4)有 $f(x)=f(t) f(x f(f(t)))=f(t) f\left(\frac{x}{t}\right)$. 
+令 $x=s t$, 由上式, 得 $f(s t)= f(s) f(t)$. 
+因此 $f\left(3^n\right)=(f(3))^n=b^n, f(486)=f\left(3^5 \times 2\right)=a b^5$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题19 设 $f(x)$ 的定义域、值域都为 $\mathbf{R}$, 解函数方程
+$$
+f^{n+1}(x)=f^n(x)+\mathrm{e} f^n(x), x \in \mathbf{R} .
+$$
+%%<SOLUTION>%%
+因为 $f(x)$ 值域为 $\mathbf{R}$, 所以对任意 $y_0 \in \mathbf{R}$, 存在 $x_0 \in \mathbf{R}$, 满足: $f\left(x_0\right)=y_0$. 
+又因为 $x_0 \in \mathbf{R}$, 所以存在 $x_1 \in \mathbf{R}$, 满足 $f\left(x_1\right)=x_0$. 
+即 $y_0= f\left(f\left(x_1\right)\right)=f^2\left(x_1\right), \cdots$, 依次继续下去, 则必存在 $x_{n-1} \in \mathbf{R}$, 使得 $y_0= f^n\left(x_{n-1}\right)$. 
+把 $x_{n-1}$ 代入原方程, 有 $f\left(y_0\right)=y_0+\mathrm{e}^{y_0}$. 
+由于 $y_0$ 是任意取的, 所以 $f(x)=x+\mathrm{e}^x, x \in \mathbf{R}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题20 记 $N$ 为所有非负整数的集合, 求所有函数 $f: N \rightarrow N, g: N \rightarrow N, h: N \rightarrow N$ 满足下述两个条件:
+(1) 对任何 $m, n \in N, f(m+n)=g(m)+h(n)+2 m n$;
+(2) $g(1)=h(1)=1$.
+%%<SOLUTION>%%
+在 (1) 中, 令 $n=0$, 有 $f(m)=g(m)+h(0)$, 即 $g(m)=f(m)- h(0) \cdots$ (1). 
+在 (1) 中, 令 $m=0$, 有 $f(n)=g(0)+h(n)$, 即 $h(n)=f(n)- g(0) \cdots$ (2). 
+在 (1) 中, 令 $m=n=0$, 有 $f(0)=g(0)+h(0) \cdots$ (3). 
+将(1)、(2)、 (3)代入(1)中, 得 $f(m+n)=f(m)+f(n)+2 m n-f(0)$. 
+注意: 原来有三个函数的方程, 现在只剩下一个了: 在上式中, 令 $m=1$, 得 $f(n+1)=f(n)+ 2 n+(f(1)-f(0))$. 
+用 $n-1, n-2, \cdots, 0$ 依次替换上式中的 $n$, 有 $f(n)=f(n-1)+2(n-1)+(f(1)-f(0)), f(n-1)=f(n-2)+2(n-2)+(f(1)-f(0)), \cdots, f(2)=f(1)+2 \cdot 1+(f(1)-f(0)), f(1)=f(0)+ 2 \cdot 0+(f(1)-f(0))$. 
+把以上 $n$ 个等式相加, 得 $f(n)=f(0)+2 \cdot[1+2+ \cdots+(n-1)]+n(f(1)-f(0))$, 也即 $f(n)=n(n-1)+n f(1)-(n-$ 1) $f(0) \cdots$ (4). 
+在(1)式中, 令 $m=1$, 有 $g(1)=f(1)-h(0)$. 
+在(2)式中, 令 $n= 1$ , 有 $h(1)=f(1)-g(0)$. 
+利用条件 (2), 有 $f(1)=h(0)+1=g(0)+1$. 因而 $h(0)=g(0)=a$ ( $a$ 为非负整数). 
+代入(3), 得 $f(0)=2 a$. 并且有 $f(1)= h(0)+1=a+1$. 将以上两式代入(4), 有 $f(n)=n(n-1)+n(a+1)-(n- 1) \cdot 2 a$. 即 $f(n)=n^2-a n+2 n \cdots$ (5). 
+将(5)代入(1)、(2), 得 $g(n)=n^2-a n+ a \cdots$ (6). $h(n)=n^2-a n+a \cdots$ (7). 
+下面讨论 $a$ 的取值范围.
+显然, 当 $n$ 为非负整数时, 如果 $g(n)$ 是非负整数, 那么 $f(n), g(n), h(n)$ 都是非负整数.
+因此只需对 $g(n)$ 作讨论.
+如果 $a=2 k$ ( $k$ 为非负整数), 那么 $g(n)=n^2-2 k n+2 k= (n-k)^2-k^2+2 k$. 
+于是, $g(n)$ 的最小值为 $g(k)=-k^2+2 k$. 由题意, $g(k) \geqslant$ 0 . 所以 $k=0,1,2$. 从而 $a=0,2,4$. 
+如果 $a=2 k+1$ ( $k$ 为非负整数), 那么 $g(n)=n^2-(2 k+1) n+(2 k+1)=\left(n-\frac{2 k+1}{2}\right)^2-\frac{1}{4}(2 k+1)^2+(2 k+1)$. 而 $n$ 为非负整数, 则 $g(n)$ 的最小值为 $g(k)=g(k+1)=-k^2+k+1$. 
+由题意 $g(k) \geqslant 0$. 即 $-k^2+k+1=-\left(k-\frac{1}{2}\right)^2+\frac{5}{4} \geqslant 0$. 所以 $k=0,1$. 从而 $a=1,3$.  
+反之, 当 $a \in\{0,1,2,3,4\}$ 时, 易检验: 函数 $f(n)=n^2-a n+ 2 a, g(n)=h(n)=n^2-a n+a$ 符合题意, 
+综上, 本题的全部解为 $f(n)=n^2- a n+2 a, g(n)=h(n)=n^2-a n+a$. 其中 $a \in\{0,1,2,3,4\}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题21 已知 $f(x)$ 是定义在 $\mathbf{R}$ 上的连续函数, 且满足:
+$$
+f(x+y)=f(x) f(y) \text {, 对任意 } x, y \in \mathbf{R} \text {. }
+$$
+求 $f(x)$.
+%%<SOLUTION>%%
+由原恒等式知 $f(x)=\left(f\left(\frac{x}{2}\right)\right)^2 \geqslant 0$. 
+(1) 若上式等号成立, 则存在 $x_0 \in \mathbf{R}$, 使 $f\left(x_0\right)=0$. 
+那么 $f(x)=f\left(x-x_0+x_0\right)=f\left(x-x_0\right) f\left(x_0\right) \equiv 0$, $x \in \mathbf{R}$. 
+在这种情形下, 有 $f(x) \equiv 0, x \in \mathbf{R}$. 
+(2) 若等号恒不成立, 即对任意 $x \in \mathbf{R}, f(x)>0$. 对原恒等式两端取对数, 有 $\ln f(x+y)=\ln f(x)+ \ln f(y)$. 
+令 $g(x)=\ln f(x)$, 则 $g(x)$ 满足柯西方程 $\circledast$, 因此 $g(x)=a x$, 其中 $a=g(1)=\ln f(1)$. 
+从而 $f(x)=\mathrm{e}^{a x}=c^x$. 其中 $c=f(1)$. 
+综上所述, 原方程的连续解为 $f(x)=c^x, c=f(1)>0$ 或 $f(x) \equiv 0, x \in \mathbf{R}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题22 求函数方程 $f(x y)=f(x) f(y)$, 对任意 $x>0, y>0$ 都成立的连续解.
+%%<SOLUTION>%%
+除去 $f(x) \equiv 0, x>0$ 这样的平凡解外, 若 $f(x)$ 不恒为 0 , 则必有 $f(x)>0$, 对任意 $x>0$. 令 $u=\ln x, v=\ln y$. 原方程转化为 $f\left(\mathrm{e}^{u+0}\right)= f\left(\mathrm{e}^u\right) f\left(\mathrm{e}^v\right)$, 任意 $u, v \in \mathbf{R} \cdots$ (1). 令 $\varphi(x)=f\left(\mathrm{e}^x\right)$, 则(1)又成为 $\varphi(u+v)= \varphi(u) \varphi(v)$, 任意 $a, u \in \mathbf{R} \cdots$ (2). 
+由上题知 (2) 的连续解只有 $\varphi(x) \equiv 0$ 或 $\varphi(x)=[\varphi(1)]^x$, 因此, 原方程的连续解只能为 $f(x) \equiv 0$ 或 $f(x)=\varphi(\ln x)=(\varphi(1))^{\ln x}=x^a$, 其中 $a=\ln \varphi(1)=\ln f(\mathrm{e})$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题23 设 $f: \mathbf{R} \rightarrow \mathbf{R}$ 是连续函数, 且满足:
+$$
+2 f\left(\frac{x+y}{2}\right)=f(x)+f(y), x, y \in \mathbf{R} .
+$$
+求 $f(x)$.
+%%<SOLUTION>%%
+设 $f(0)=b$. 由题给函数方程得 $f\left(\frac{x}{2}\right)=f\left(\frac{x+0}{2}\right)=\frac{1}{2}[f(x)+ f(0)]=\frac{1}{2}[f(x)+b]$. 另外 $\frac{1}{2}[f(x)+f(y)]=f\left(\frac{x+y}{2}\right)=\frac{1}{2}[f(x+ y)+b]$. 所以 $f(x+y)=f(x)+f(y)-b$. 
+令 $g(x)=f(x)-b$, 代入上式得 $g(x+y)=g(x)+g(y)$. 这正是柯西方程, 所以 $g(x)=a x$, 其中 $a= g(1)=f(1)-b$. 所以 $f(x)=a x+b$. 其中 $a=f(1)-f(0), b=f(0)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题24. 设 $f(x)$ 满足柯西方程 $\circledast$, 但存在某一个数 $\alpha$, 使 $f(\alpha) \neq \alpha f(1)$. 求证: 对任给的区间 $(u, v)$ 和 $(s, t)$, 必存在 $c \in(u, v)$, 使 $f(c) \in(s, t)$.
+%%<SOLUTION>%%
+因为 $f(x)$ 满足柯西方程 $\circledast$, 不难证明对所有的有理数 $x$, 有 $f(x)= f(1) x$. 因而 $\alpha$ 必为无理解.
+令 $p=\frac{u+v}{2}, q=\frac{s+t}{2}$. 考虑下列方程组: $\left\{\begin{array}{l}\alpha x+y=p, \\ f(\alpha) x+f(1) y=q .\end{array}\right. \cdots$ (1), 由于此方程组的行列式 $\left|\begin{array}{cc}\alpha & 1 \\ f(\alpha) & f(1)\end{array}\right|=\alpha f(1)- f(\alpha) \neq 0$, 故它必有唯一解 $(x, y)$, 但 $x, y$ 不一定是有理数.
+在 $x 、 y$ 附近取两个有理数 $x_0, y_0$, 使 $\left|x_0-x\right|$ 和 $\left|y_0-y\right|$ 非常小, 以至: $\left\{\begin{array}{l}\left|\alpha\left(x_0-x\right)\right|+\left|y_0-y\right|<\frac{1}{4}|u-v|, \\ \left|f(\alpha)\left(x_0-x\right)\right|+\left|f(1)\left(y_0-y_1\right)\right|<\frac{1}{4}|s-t| .\end{array}\right.$
+所以, 由 $p, q$ 意义及 (1)知 $\left\{\begin{array}{l}\left(\alpha x_0+y_0\right) \in(u, v), \\ \left(f(\alpha) x_0+f(1) y_0\right) \in(s, t) .\end{array}\right.$ 
+取 $c=\alpha x_0+y_0$, 则 $c \in(u, v)$, 又 $x_0$, $y_0 \in \mathbf{Q}$, 故 $f(c)=f\left(\alpha x_0+y_0\right)=f\left(\alpha x_0\right)+f\left(y_0\right)=x_0 f(\alpha)+y_0 f(1) \in(s$, $t$ ). 因此结论成立.
+可见, 柯西方程的解 $f(x)$, 只要在某一点连续, 或只要在某一小区间上有上界或下界, 则必为 $f(1) x$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题25 求满足函数方程:
+$$
+\frac{f(x)+f(y)}{f(x)-f(y)}=f\left(\frac{x+y}{x-y}\right)(x \neq y)
+$$
+的所有连续函数 $f(x)$.
+%%<SOLUTION>%%
+显然 $f(x)=x$ 是原方程的解, 下证只有这个解.
+在原恒等式中令 $y=k x$, 得 $\frac{f(x)+f(k x)}{f(x)-f(k x)}=f\left(\frac{x+k x}{x-k x}\right)=f\left(\frac{1+k}{1-k}\right)=\frac{f(1)+f(k)}{f(1)-f(k)}$. 
+从而, $f(k x)=\frac{f(x)}{f(1)} \cdot f(k)$. 令 $k=0$, 有 $f(0) \cdot\left(1-\frac{f(x)}{f(1)}\right)=0$. 
+由于 $f(x)$ 不恒等于 $f(1)$, 所以 $f(0)=0$. 在原恒等式中令 $y=0$, 得 $f(1)=1$. 于是 $f(k x)=f(k) f(x) \cdots$ (1). 
+我们的目标是去证对 $n \in \mathbf{N}_{+}$, 有 $f(n)=n$. 先证明 $f(2)=2$. 
+由(1), $f(4)=f^2(2) \cdots$ (2). 再由原恒等式及(1), $\frac{f(2)+1}{f(2)-1}=f(3) \cdots$ (3), $\frac{f(4)+1}{f(4)-1}=f\left(\frac{5}{3}\right)=\frac{f(5)}{f(3)} \cdots$ (4), $\frac{f(3)+f(2)}{f(3)-f(2)}=f(5) \cdots$ (5). 
+在(2)、 (3)、 (4)、 (5)中消去 $f(3) 、 f(4) 、 f(5)$, 有 $\frac{f^2(2)+1}{f^2(2)-1}=\frac{\left(f^2(2)+1\right)(f(2)-1)}{(f(2)+1)\left(1+2 f(2)-f^2(2)\right)}$,
+即 $f^2(2)=2 f(2)$. 如果 $f(2)=0$, 那么 $f\left(2 \times \frac{1}{2}\right)=0$, 与 $f(1)=1$ 矛盾.
+所以 $f(2)=2$. 若 $f(n)=n$ 对 $n<2 m$ 成立, 则 $f(2 m)=f(2) f(m)=2 f(m)=2 m$, $f(2 m+1)=\frac{f(m+1)+f(m)}{f(m+1)-f(m)}=\frac{m+1+m}{m+1-m}=2 m+1$. 
+故 $f(n)=n$ 对一切 $n \in \mathbf{N}_{+}$成立.
+在原恒等式中令 $y=-x$, 得 $f(x)+f(-x)=0$. 即 $f(-x)= -f(x)$. 故 $f(n)=n$ 对一切整数 $n$ 成立.
+再由 $f\left(\frac{p}{q}\right)=\frac{f(p)}{f(q)}=\frac{p}{q}$, 所以 $f(n)=n$ 对一切有理数 $n=\frac{p}{q}$ 成立.
+最后利用连续性, 即知 $f(x)=x$, 任意 $x \in \mathbf{R}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题26. 试解函数方程: $f(n+1)=2 f(n)+1$, 且 $f(1)=1, n \in \mathbf{N}_{+}$.
+%%<SOLUTION>%%
+因为 $f(1)=1, f(n+1)=2 f(n)+1$. 所以 $f(1)+1=2, f(n+ 1)+1=2[f(n)+1]$. 即 $\{f(n)+1\}$ 是首次为 2 , 公比为 2 的等比数列.
+从而有 $f(n)+1=2 \cdot 2^{n-1}=2^n$. 故 $f(n)=2^n-1$ 即为所求函数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题27 定义在正整数集 $\mathbf{N}_{+}$上的函数 $f$ 满足 $f(1)=1$, 且对任意正整数 $m$ 、 $n$, 有
+$$
+f(m)+f(n)=f(m+n)-m n .
+$$
+求 $f$.
+%%<SOLUTION>%%
+在(1)中令 $n=1$, 得 $f(m)+f(1)=f(m+1)-m$, 即 $f(m+1)- f(m)=m+1$. 于是有 $f(m)-f(m-1)=m, f(m-1)-f(m-2)=m- 1, \cdots, f(2)-f(1)=2$. 将上面这 $m-1$ 个等式相加, 得 $f(m)-f(1)=2+ 3+\cdots+m$, 所以 $f(m)=\frac{m(m+1)}{2}$. 经检验, $f(m)=\frac{m(m+1)}{2}$ 是原方程的解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题28. 求函数方程:
+$$
+f(4 x)=f(2 x)+f(x)(x \in(-\infty,+\infty))
+$$
+的所有解.
+%%<SOLUTION>%%
+在原恒等式中取 $x=0$, 得 $f(0)=0$. 若任取 $x=a \neq 0$, 设 $f(a)=b_1, f(2 a)=b_2$. 
+由原恒等式可得 $\left\{\begin{array}{l}f(4 a)=b_1+b_2, \\ f(8 a)=b_1+2 b_2, \\ f(18 a)=2 b_1+3 b_2, \\ \ldots \ldots\end{array}\right.$ 
+将原恒等式改写为 $f(x)=f(4 x)-f(2 x)$. 于是 $f\left(\frac{x}{2}\right)=f(2 x)-f(x)$. 从而 $\left\{\begin{array}{l}f\left(\frac{a}{2}\right)=b_2-b_1, \\ f\left(\frac{a}{4}\right)=-b_2+2 b_1, \\ f\left(\frac{9}{8}\right)=2 b_2-3 b_1, \\ \ldots \ldots\end{array}\right.$ 合 $\left\{2^n a \mid n=0, \pm 1, \pm 2, \cdots\right\}$ 上的取值就唯一确定了下来.
+因此, 只要任给了 $f(x)$ 在区间 $[1,2)$ 和 $[2,4)$ 上的值, $f$ 在 $(0,+\infty)$ 上就完全确定了.
+同样, 再给定 $f$ 在 $[-4,-2]$ 和 $(-2,-1]$ 上的值, $f$ 在 $(-\infty, 0)$ 上也唯一确定了.
+记 $t_n=f\left(2^n x\right)$. 
+于是, 由函数方程 $f(4 x)=f(2 x)+f(x)$, 知 $t_n=t_{n-1}+t_{n-2}$. 对应的特征方程为 $x^2=x+1$. 其根 $x_{1,2}=\frac{1 \pm \sqrt{5}}{2}$. 故 $t_n=\alpha_1 x_1^n+\alpha_2 x_2^n$. 由于 $\left\{\begin{array}{l}\alpha_1=\frac{1}{\sqrt{5}}\left(f(2 x)-\frac{1-\sqrt{5}}{2} f(x)\right), \\ \alpha_2=-\frac{1}{\sqrt{5}}\left(f(2 x)-\frac{1+\sqrt{5}}{2} f(x)\right) .\end{array}\right.$
+因此, 函数方程的解可表达如下: $f(x)=\left\{\begin{aligned} g(x), \text { 当 } 1 \leqslant x<4 \text { 或 }-4<x \leqslant 1, g(x) \text { 任意给定； } \\ \alpha_1 \cdot\left(\frac{1+\sqrt{5}}{2}\right)^n+\alpha_2\left(\frac{1-\sqrt{5}}{2}\right)^n, \text { 当 } 2^n \leqslant x<2^{n+1} \text { 或者 } \\ \quad-2^{n+1}<x \leqslant-2^n, n=-1, \pm 2, \pm 3, \pm 4, \cdots ;\end{aligned}\right.$ 其中 $\left\{\begin{array}{l}\alpha_1=\frac{1}{\sqrt{5}}\left(g\left(\frac{x}{2^{n-1}}\right)-\frac{1-\sqrt{5}}{2} g\left(\frac{x}{2 n}\right)\right), \\ \alpha_2=\frac{1}{\sqrt{5}}\left(-g\left(\frac{x}{2^{n-1}}\right)+\frac{1+\sqrt{5}}{2} g\left(\frac{x}{2^n}\right)\right) .\end{array}\right.$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题29 函数 $f$ 定义在有序正整数对的集合上, 且满足下列性质:
+(1) $f(x, x)=x$;
+(2) $f(x, y)=f(y, x)$;
+(3) $(x+y) f(x, y)=y f(x, x+y)$.
+求 $f(14,52)$.
+%%<SOLUTION>%%
+令 $y=z-x$ 代入所给条件 (3) 中, 得 $f(x, z)=\frac{z}{z-x} f(x, z-x) \cdots$ (1). 利用条件 (2) 和 (1)式, 有 $f(14,52)=\frac{52}{38} f(14,38)=\frac{52}{24} f(14,24)= \frac{52}{10} f(14,10)=\frac{52}{10} f(10,14)=\frac{52 \times 14}{10 \times 4} f(10,4)=\frac{52 \times 14}{10 \times 4} f(4,10)= \frac{52 \times 14}{4 \times 6} f(4,6)=\frac{52 \times 14}{4 \times 2} f(4,2)=\frac{52 \times 14}{4 \times 2} f(2,4)=\frac{52 \times 14}{4} f(2,2)$, 因为由条件 (1) 知, $f(2,2)=2$, 所以 $f(14,52)=364$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题30 证明存在唯一的一个 $f: \mathbf{R}^{+} \rightarrow \mathbf{R}^{+}$, 使得对任意 $x \in \mathbf{R}^{+}$, 都有
+$$
+f(f(x))=6 x-f(x) .
+$$
+%%<SOLUTION>%%
+构造正数列 $\left\{a_n\right\}$ 如下: $a_1=6, a_{n+1}=\frac{6}{1+a_{n-1}} \cdots$ (1). 用数学归纳法容易证明 (证明留给读者) : $\left\{a_{2 n-1}\right\}$ 递减, $\left\{a_{2 n}\right\}$ 递增, 并且 $a_{2 n-1}>2>a_{2 n}$. 因此 $\left\{a_{2 n-1}\right\}$ 和 $\left\{a_{2 n}\right\}$ 均有极限, 分别设为 $\alpha 、 \beta$. 由(1)式知 $\alpha=\frac{6}{1+\beta}, \beta=\frac{6}{1+\alpha}$. 解得 $\alpha=\beta=2$. 对每个正实数 $x$, 显然有 $f(x)<6 x=a_1 x$. 若对每个 $x \in \mathbf{R}^{+}$, 有 $f(x)<a_{n-1} x$, 那么 $6 x-f(x)=f(f(x))<a_{n-1} f(x)$. 即 $f(x)>\frac{6 x}{1+a_{n-1}}=a_n x$. 同样, 若对每个 $x \in \mathbf{R}^{+}$, 有 $f(x)>a_n x$, 则必有 $f(x)<a_{n+1} x$. 于是不难得到对每个 $n \in \mathbf{N}_{+}$, 有 $a_{2 n} x<f(x)<a_{2 n-1} x$. 令 $n \rightarrow+\infty$, 得 $\lim _{n \rightarrow+\infty} a_{2 n}= \lim _{n \rightarrow+\infty} a_{2 n-1}=2$. 所以 $f(x)=2 x$. 容易验证 $f(x)=2 x$ 满足题设条件.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题31 证明: 存在唯一的函数 $f(x, y)$, 这里 $x, y \in \mathbf{N}_{+}$, 使得对任意 $x, y \in \mathbf{N}_{+}$, 均有
+$$
+\begin{gathered}
+f(x, x)=x, \\
+f(x, y)=f(y, x), \\
+(x+y) f(x, y)=y f(x, x+y) .
+\end{gathered}
+$$
+%%<SOLUTION>%%
+我们依次来定 $f(x, y)$ 的值.
+(1) 对任意 $n \in \mathbf{N}_{+}$, 均有 $f(1, n)= f(n, 1)=n$. 上式只需在条件中令 $x=1$, 利用数学归纳法易证.
+(2) $f(2$, $2 n)=2 n ; f(2,2 n+1)=2(2 n+1)$. 事实上, 由条件, $\frac{f(x, x+y)}{x+y}= \frac{f(x, y)}{y}$, 
+故 $\frac{f(2,2 n)}{2 n}=\frac{f(2,2 n-2)}{2(n-1)}=\cdots=\frac{f(2,2)}{2}=1$, 所以 $f(2,2 n)=2 n$. 又 $\frac{f(2,2 n+1)}{2 n+1}=\frac{f(2,2 n-1)}{2 n-1}=\cdots=\frac{f(2,1)}{1}=2$, 所以 $f(2$, $2 n+1)=2(2 n+1)$. 
+一般地, 设 $f(n, y)$ 的值都已确定, 这里 $n \geqslant 2,1 \leqslant y \leqslant n-1$, 下面来确定 $f(n, m), m>n$ 的值.
+考虑带余除法 $m=q n+r, 0 \leqslant r \leqslant n-1$. 若 $r=0$, 则有 $\frac{f(n, n q)}{n q}=\frac{f(n, n(q-1))}{n(q-1)}=\cdots=\frac{f(n, n)}{n}=1$, 所以 $f(n, n q)=n q$. 
+若 $1 \leqslant r \leqslant n-1$, 则有 $\frac{f(n, n q+r)}{n q+r}= \frac{f(n, n(q-1)+r)}{n(q-1)+r}=\cdots=\frac{f(n, r)}{r}$, 故 $f(n, m)=\frac{m}{r} f(n, r)$. 
+综上所述, 满足条件的 $f(x, y)$ 可由上述递推式加以确定.
+故它存在且唯一.
+%%PROBLEM_END%%
+
+

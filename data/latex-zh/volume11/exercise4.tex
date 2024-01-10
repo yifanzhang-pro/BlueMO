@@ -1,0 +1,114 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设正数列 $a_0, a_1, \cdots, a_n, \cdots$ 满足
+(1) $\sqrt{a_n a_{n-2}}-\sqrt{a_{n-1} a_{n-2}}=2 a_{n-1} ;(n \geqslant 2)$
+(2) $a_0=a_1=1$.
+求 $\left\{a_n\right\}$ 的通项.
+%%<SOLUTION>%%
+(1) 式两边除以 $\sqrt{a_{n-1} a_{n-2}}$ 得 $\sqrt{\frac{a_n}{a_{n-1}}}=1+2 \sqrt{\frac{a_{n-1}}{a_{n-2}}}$, 令 $b_n= \sqrt{\frac{a_n}{a_{n-1}}}(n \geqslant 1)$, 则 $b_n=1+2 b_{n-1}$, 即 $b_n+1=2\left(b_{n-1}+1\right)$. 从而 $b_n+1=\left(b_1+\right.$ 1) $\cdot 2^{n-1}=2^n$, 即 $\frac{a_n}{a_{n-1}}=\left(2^n-1\right)^2$. 所以 $a_n=\frac{a_n}{a_{n-1}} \cdot \frac{a_{n-1}}{a_{n-2}} \cdots \frac{a_2}{a_1} \cdot a_1=\left(2^n-\right. 1)^2\left(2^{n-1}-1\right)^2 \cdots\left(2^2-1\right)^2 \cdot\left(2^1-1\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 试确定实数 $a_0$, 使得由递推关系 $a_{n+1}=-3 a_n+2^n(n=0,1,2, \cdots)$ 决定的数列 $\left\{a_n\right\}$ 严格递增, 即对 $n \geqslant 0, a_{n+1}>a_n$.
+%%<SOLUTION>%%
+两边除以 $2^{n+1}$ 得 $\frac{a_{n+1}}{2^{n+1}}=-\frac{3}{2} \frac{a_n}{2^n}+\frac{1}{2}$, 令 $b_n=\frac{a_n}{2^n}$, 则 $b_{n+1}=-\frac{3}{2} b_n+\frac{1}{2}$, 即 $b_{n+1}-\frac{1}{5}=-\frac{3}{2}\left(b_n-\frac{1}{5}\right)$ (注意, 这是 $\frac{1}{5}$ 是 $f(x)=-\frac{3}{2} x+\frac{1}{2}$ 的不动点, 即方程 $f(x)=x$ 的根). 于是 $b_n-\frac{1}{5}=\left(b_0-\frac{1}{5}\right)\left(-\frac{3}{2}\right)^n=\left(a_0-\frac{1}{5}\right)\left(-\frac{3}{2}\right)^n$, 所以 $a_n=2^n b_n=2^n\left[\left(a_0-\frac{1}{5}\right)\left(-\frac{3}{2}\right)^n+\frac{1}{5}\right]==(-3)^n\left[\left(a_0-\frac{1}{5}\right)+\frac{1}{5}\left(-\frac{2}{3}\right)^n\right]$. 
+因为当 $n$ 足够大时, $\left(\frac{2}{3}\right)^n$ 趋于 0 ,于是, 若 $a_0-\frac{1}{5} \neq 0$, 则上式中括号内的数在 $n$ 足够大时与 $a_0-\frac{1}{5}$ 同号, 但 $(-3)^n(n=0,1,2, \cdots)$ 轮流为正、负数, 从而不可能严格递增, 因此, 当且仅当 $a_0-\frac{1}{5}=0$, 即 $a_0=\frac{1}{5}$ 时, $a_n=\frac{2^n}{5}$ 严格递增.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设数列 $a_1, a_2, \cdots, a_n, \cdots$ 满足 $a_1=\frac{1}{2}, a_1+a_2+\cdots+a_n=n^2 a_n(n \geqslant 1)$, 确定 $a_n(n \geqslant 1)$ 的值.
+%%<SOLUTION>%%
+令 $S_n=a_1+a_2+\cdots+a_n$, 则 $a_n=S_n-S_{n-1}=n^2 a_n-(n-1)^2 a_{n-1}$, 解得 $a_n=\frac{n-1}{n+1} a_{n-1}$. 所以 $a_n=\frac{a_n}{a_{n-1}} \cdot \frac{a_{n-1}}{a_{n-2}} \cdots \frac{a_2}{a_1} \cdot a_1=\frac{n-1}{n+1} \cdot \frac{n-2}{n} \cdot \frac{n-3}{n-1} \cdots \frac{1}{3} \cdot \frac{1}{2}= \frac{1}{n(n+1)}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 数列 $\left\{a_n\right\}$ 定义如下: $a_0=0, a_1=1, a_n=2 a_{n-1}+a_{n-2}(n \geqslant 2)$, 证明 $2^k \mid a_n$ 的充要条件是 $2^k \mid n$. 这里 $a \mid b$ 表示 $a$ 整除 $b$. 
+%%<SOLUTION>%%
+特征方程为 $r^2-2 r-1=0$, 特征根为 $r_{1,2}=1 \pm \sqrt{2}$, 所以 $a_n= c_1(1+\sqrt{2})^n+c_2(1-\sqrt{2})^n$, 由 $a_0=0, a_1=1$, 得 $c_1=\frac{1}{2 \sqrt{2}}, c_2=-\frac{1}{2 \sqrt{2}}$, 故 $a_n=\frac{1}{2 \sqrt{2}}(1+\sqrt{2})^n-\frac{1}{2 \sqrt{2}}(1-\sqrt{2})^n$. 令 $(1+\sqrt{2})^n=A_n+B_n \sqrt{2},\left(A_n, B_n \in \mathbf{N}_{+}\right)$, 则 $(1-\sqrt{2})^n=A_n-B_n \sqrt{2}$, 于是 $a_n=B_n, A_n^2-2 B_n^2=(-1)^n$, 从而 $A_n$ 为奇数.
+设 $n=2^k(2 t+1)$ ( $k, t$ 均为非负整数), 要证题中结论成立, 只要证 $2^k \mid B_n$
+并且 $2^{k+1} \times B_n$, 对 $k$ 用归纳法.
+$k=0$ 时, $n=2 t+1$ 为奇数.
+又 $A_n$ 为奇数, 所以 $2 B_n^2=A_n^2+1 \equiv 2(\bmod 4)$, 所以 $B_n$ 为奇数,故 $2^0 \mid B_n$ 并且 $2^1 \times B_n$, 设 $k=m$ 时, $2^m \mid B_n$ 并且 $2^{m+1} \times B_n$, 则 $k=m+1$ 时, 由 $\left(A_n+\sqrt{2} B_n\right)^2=(1+\sqrt{2})^{2 n}= A_{2 n}+B_{2 n} \sqrt{2}$ 得 $B_{2 n}=2 A_n B_n$. 又 $A_n$ 为奇数, 故 $2^{m+1} \mid B_{2 n}$ 并且 $2^{m+2} \times B_{2 n}$, 而 $2 n=2^{k+1}(2 t+1)$, 这就证明了 $k=m+1$ 时结论成立.
+于是, 我们证明了当且仅当 $2^k \mid n$ 时 $2^k \mid a_n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 用 $n$ 块 $1 \times 2$ 的纸片覆盖一个 $2 \times n$ 的棋盘(没有重叠也没有空隙)共有多少种不同的方法?
+%%<SOLUTION>%%
+设共有 $a_n$ 种不同的覆盖方法, 显然 $a_1=1, a_2=2$. 对于 $2 \times n$ 的棋盘, 若一开始用一张 $1 \times 2$ 的纸片坚方向盖住最左边一列的 2 格, 则剩下的 $2 \times (n-1)$ 个方格有 $a_{n-1}$ 种覆盖方法, 若一开始用 2 张 $1 \times 2$ 的纸片横方向盖住最左边的 $2 \times 2$ 的方格, 则剩下 $2 \times(n-2)$ 个方格有 $a_{n-2}$ 种覆盖方法.
+所以 $a_n= a_{n-1}+a_{n-2}(n \geqslant 3)$. 可见 $\left\{a_n\right\}$ 为斐波那契数列, 由例 6 得 $a_n= \frac{1}{\sqrt{5}}\left[\left(\frac{1+\sqrt{5}}{2}\right)^{n+1}-\left(\frac{1-\sqrt{5}}{2}\right)^{n+1}\right](n \geqslant 1)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 球面上有 $n$ 个大圆, 其中没有 3 个大圆通过同一点,求这 $n$ 个大圆将球面分成的区域的个数 $a_n$.
+%%<SOLUTION>%%
+显然 $a_1=2$, 球面上 $n-1$ 个大圆将球面分成 $a_{n-1}$ 个区域,再加上第 $n$ 个大圆, 它同前 $n-1$ 个大圆无三圆交于一点, 故有 $2(n-1)$ 个不同的交点, 将第 $n$ 个圆分成 $2(n-1)$ 段弧, 每段弧将原有区域一分为二, 故增加了 $2(n-1)$ 个区域, 故 $a_n=a_{n-1}+2(n-1)$, 所以 $a_n=a_1+\sum_{k=2}^n\left(a_k-a_{k-1}\right)=2+ \sum_{k=2}^n 2(k-1)=2+2 \cdot \frac{n(n-1)}{2}=n^2-n+2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 用 $1,2,3,4$ 可组成多少个含偶数个 1 的 $n$ 位数?
+%%<SOLUTION>%%
+首位数字为 1 时, 余下 $n-1$ 位数是含奇数个 1 的 $n-1$ 位数有 $4^{n-1}- a_{n-1}$ 个; 首位数字不为 1 时,首位数字有 3 种不同取法余下 $n-1$ 余数字有 $a_{n-1}$ 种取法, 这样的 $n$ 位数有 $3 a_{n-1}$ 个, 故 $a_n=4^{n-1}-a_{n-1}+3 a_{n-1}=2 a_{n-1}+4^{n-1}$ 并且显然 $a_1=3$. 于是 $\frac{a_n}{4^n}=\frac{1}{2} \frac{a_{n-1}}{4^{n-1}}+\frac{1}{4}$, 令 $b_n=\frac{a_n}{4^n}$ 则 $b_n=\frac{1}{2} b_{n-1}+\frac{1}{4}$, 即 $b_n- \frac{1}{2}=\frac{1}{2}\left(b_{n-1}-\frac{1}{2}\right)$, 所以 $b_n-\frac{1}{2}=\left(b_1-\frac{1}{2}\right)\left(\frac{1}{2}\right)^{n-1}=\left(\frac{3}{4}-\frac{1}{2}\right)\left(\frac{1}{2}\right)^{n-1}= \frac{1}{2^{n+1}}$, 故 $a_n=4^n b_n=4^n\left(\frac{1}{2^{n+1}}+\frac{1}{2}\right)=\frac{1}{2}\left(2^n+4^n\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设数列 $\left\{a_n\right\}$ 满足: $a_0=1, a_{n+1}=\frac{7 a_n+\sqrt{45 a_n^2-36}}{2}, n \in \mathbf{N}_{+}$, 求证:
+第(1)问:对任意 $n \in \mathbf{N}, a_n$ 为正整数; 第(2)问: 对任意 $n \in \mathbf{N}, a_n a_{n+1}-1$ 为完全平方数.
+%%<SOLUTION>%%
+第(1)问: 依题意 $\left(2 a_{n+1}-7 a_n\right)^2=45 a_n^2-36$. 即 $a_{n+1}^2-7 a_{n+1} a_n+a_n^2+9= 0 \cdots$ (1), 
+$n$ 用 $n-1$ 代替得 $a_n^2-7 a_n a_{n-1}+a_{n-1}^2+9=0 \cdots$ (2), 
+(2) - (1) 分解因式得 $\left(a_{n+1}-a_{n-1}\right)\left(a_{n+1}+a_{n-1}-7 a_n\right)=0$ 
+由已知条件用数学归纳法易证 $a_{n+1}>a_n>$ 0 . 
+从而 $a_{n+1}-a_n>0$, 故 $a_{n+1}=7 a_n-a_{n-1} \cdots$ (3). 
+又 $a_0=1, a_1=\frac{7+\sqrt{45-36}}{2} =5$ 为正整数且 $a_{n+1}>a_n$. 
+用数学归纳法及 (3) 式便知对一切 $n \in \mathbf{N}, a_n$ 为正整数; 
+第(2)问: 由 (1) 得 $a_n a_{n+1}-1=\left(\frac{a_{n+1}+a_n}{3}\right)^2$. 
+并且由 $a_0+a_1=6$ 是 3 的倍数, 以及 $a_{n+1}+a_n=9 a_n-\left(a_n+a_{n-1}\right)$ 
+用数学归纳法可知对一切 $n \in \mathbf{N}, a_{n+1}+ a_n$ 是 3 的倍数,故对一切 $n \in \mathbf{N}, a_n a_{n+1}-1$ 是完全平方数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 证明: 对任何非负整数, $\left[(1+\sqrt{3})^{2 n+1}\right]$ 能被 $2^{n+1}$ 整除.
+这里 $[x]$ 表示不超过 $x$ 的最大整数
+%%<SOLUTION>%%
+设 $a_n=(1+\sqrt{3})^{2 n+1}+(1-\sqrt{3})^{2 n+1}=(1+\sqrt{3})(4+2 \sqrt{3})^n+(1-\sqrt{3}) (4-2 \sqrt{3})^n, b_n=\frac{a_n}{2^{n+1}}=\frac{1+\sqrt{3}}{2}(2+\sqrt{3})^n+\frac{1-\sqrt{3}}{2}(2-\sqrt{3})^n \quad n=0,1, \cdots$. 于是数列 $\left\{b_n\right\}$ 对应的特征根为 $2 \pm \sqrt{3}$, 特征方程为 $[r-(2+\sqrt{3})][r-(2- \sqrt{3})]=0$, 即 $r^2-4 r+1=0$, 所以 $b_n$ 满足递推关系 $b_n=4 b_{n-1}-b_{n-2}(n \geqslant 2)$, 因 $b_0=\frac{1+\sqrt{3}}{2}+\frac{1-\sqrt{3}}{2}=1$ 和 $b_1=\frac{1+\sqrt{3}}{2}(2+\sqrt{3})+\frac{1-\sqrt{3}}{2}(2-\sqrt{3})=5$ 为整数.
+设 $b_{n-2}, b_{n-1}$ 为整数.
+则 $b_n$ 为整数, 故对一切非负整数 $n, b_n=\frac{a_n}{2^{n+1}}$ 为整数, 即 $a_n$ 被 $2^{n+1}$ 整除, 而 $0<-(1-\sqrt{3})^{2 n+1}<1$, 故 $a_n=(1+\sqrt{3})^{2 n+1}+(1- \sqrt{3})^{2 n+1}=\left[(1+\sqrt{3})^{2 n+1}\right]$, 所以 $\left[(1+\sqrt{3})^{2 n+1}\right]$ 被 $2^{n+1}$ 整除.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 证明: 对任何非负整数 $n, \sum_{k=0}^n \mathrm{C}_{2 n+1}^{2 k+1} 2^{3 k}$ 不能被 35 整除.
+%%<SOLUTION>%%
+令 $x_n=\sum_{k=0}^n \mathrm{C}_{2 n+1}^{2 k+1} 2^{3 k}=\frac{1}{\sqrt{8}} \sum_{k=0}^n \mathrm{C}_{2 n+1}^{2 k+1}(\sqrt{8})^{2 k+1}, y_n=\frac{1}{\sqrt{8}} \cdot \sum_{k=0}^n \mathrm{C}_{2 n+1}^{2 k}(\sqrt{8})^{2 k}$, 于是 $x_n+y_n=\frac{1}{2 \sqrt{2}}(\sqrt{8}+1)^{2 n+1}, x_n-y_n=\frac{1}{2 \sqrt{2}}(\sqrt{8}-1)^{2 n+1}$, 所以 $x_n= \frac{1}{4 \sqrt{2}}\left[(\sqrt{8}+1)^{2 n+1}+(\sqrt{8}-1)^{2 n+1}\right]=\frac{1}{4 \sqrt{2}}\left[(\sqrt{8}+1)(9+4 \sqrt{2})^n+(\sqrt{8}-1)\right. \left.(9-4 \sqrt{2})^n\right]$, 可见数列 $\left\{x_n\right\}$ 的特征根为 $r_{1,2}==9 \pm 4 \sqrt{2}$, 由 $r_1+r_2=18$, $r_1 r_2=49$ 知 $\left\{x_n\right\}$ 对应的特征方程为 $r^2-18 r+49=0$, 所以 $x_n$ 满足递推关系 $x_n=18 x_{n-1}-49 x_{n-2}$, 从而 $2 x_{n-1}=36 x_{n-2}-98 x_{n-3}$, 两式相减整理得 $x_n= 20 x_{n-1}-85 x_{n-2}+98 x_{n-3} \equiv 3 x_{n-3}(\bmod 5)$. 可见 5 整除 $x_n$ 的充要条件是 5 整除 $x_{n-3}$. 但 $x_0=1, x_1=\mathrm{C}_3^1 2^0+\mathrm{C}_3^3 2^3=11$ 和 $x_2=\mathrm{C}_5^1 2^0+\mathrm{C}_5^3 \cdot 2^3+\mathrm{C}_5^5 2^6=149$ 都不被 5 整除.
+故对一切非负整数 $n, x_n=\sum_{k=0}^n \mathrm{C}_{2 n+1}^{2 k+1} 2^{3 k}$ 不被 5 整除, 又 $x_n= 18 x_{n-1}-49 x_{n-2} \equiv 4 x_{n-1}(\bmod 7)$, 可见 $7\left|x_n \Leftrightarrow 7\right| x_{n-1}$, 但 $x_0=1$, 7 $x_0$, 所以 $7 \times x_n$. 又 $(5,7)=1$, 故对一切非负整数 $n, x_n=\sum_{k=0}^n \mathrm{C}_{2 n+1}^{2 k+1} 2^{3 k}$ 不被 35 整除.
+%%PROBLEM_END%%
+
+

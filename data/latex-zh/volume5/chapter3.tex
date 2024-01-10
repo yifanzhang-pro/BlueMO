@@ -1,0 +1,627 @@
+
+%%TEXT_BEGIN%%
+变量代换是数学中常用的解题方法之一, 将一个较复杂的式子视为一个整体,用一个字母去代换它, 从而使复杂问题简单化.
+有时候, 有些式子可以用三角换元,从而使问题简化.
+当问题的条件或结论中出现 " $x^2+y^2=r^2$ "、 " $x^2+y^2 \leqslant r^2$ "、" $\sqrt{r^2-x^2}$ "或" $|x| \leqslant 1$ " 等形式时, 可以考虑用" $\sin \alpha$ 与 " $\cos \alpha$ "代换; 当问题的条件或结论中出现 " $\sqrt{r^2+x^2}$ "、 " $\sqrt{x^2-r^2}$ "形式时,可作 " $x=r \tan \alpha$ "或 " $x=r \sec \alpha$ " 代换等.
+在作代换时,要特别注意 $\alpha$ 的取值范围是由原变量 $x$ 的取值范围所决定的.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知 $0^{\circ} \leqslant \alpha \leqslant 90^{\circ}$, 求证:
+$$
+2 \leqslant \sqrt{5-4 \sin \alpha}+\sin \alpha \leqslant \frac{9}{4} .
+$$
+%%<SOLUTION>%%
+证明:令 $x=\sqrt{5-4 \sin \alpha}$, 则 $\sin \alpha=\frac{5-x^2}{4}$, 由于 $0 \leqslant \sin \alpha \leqslant 1$, 所以 $1 \leqslant x \leqslant \sqrt{5}$. 令
+$$
+\begin{aligned}
+y & =\sqrt{5-4 \sin \alpha}+\sin \alpha \\
+& =x+\frac{5-x^2}{4} \\
+& =-\frac{1}{4}(x-2)^2+\frac{9}{4},
+\end{aligned}
+$$
+由 $1 \leqslant x \leqslant \sqrt{5}$ 便知 $2 \leqslant y \leqslant \frac{9}{4}$. 从而
+$$
+2 \leqslant \sqrt{5-4 \sin \alpha}+\sin \alpha \leqslant \frac{9}{4} .
+$$
+说明本题中令 $x=\sqrt{5-4 \sin \alpha}$, 可以使式子变成容易处理的二次函数形式, 从而获得解决.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 已知实数 $x 、 y$ 满足 $x^2+y^2-4 x-6 y+9=0$, 求证:
+$$
+19 \leqslant x^2+y^2+12 x+6 y \leqslant 99 .
+$$
+%%<SOLUTION>%%
+证明:题设条件可化为
+即
+$$
+\begin{aligned}
+& (x-2)^2+(y-3)^2=4, \\
+& \left(\frac{x-2}{2}\right)^2+\left(\frac{y-3}{2}\right)^2=1 .
+\end{aligned}
+$$
+令 $\frac{x-2}{2}=\cos \theta, \frac{y-3}{2}=\sin \theta$, 其中 $\theta \in[0,2 \pi)$, 所以
+$$
+\begin{aligned}
+& x^2+y^2+12 x+6 y \\
+= & (4 x+6 y-9)+12 x+6 y \\
+= & 16 x+12 y-9 \\
+= & 16(2 \cos \theta+2)+12(2 \sin \theta+3)-9 \\
+= & 32 \cos \theta+24 \sin \theta+59 \\
+= & 8(4 \cos \theta+3 \sin \theta)+59 \\
+= & \left.40 \cos (\theta+\varphi)+59 \text { (其中 } \tan \varphi=\frac{3}{4}\right), \\
+& 19 \leqslant 40 \cos (\theta+\varphi)+59 \leqslant 99, \\
+& 19 \leqslant x^2+y^2+12 x+6 y \leqslant 99 .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $a 、 b 、 c$ 是三角形的三边长,求证:
+$$
+a^2 b(a-b)+b^2 c(b-c)+c^2 a(c-a) \geqslant 0 .
+$$
+%%<SOLUTION>%%
+证明:令 $a=y+z, b=z+x, c=x+y, x, y, z \in \mathbf{R}^{+}$, 则欲证的不等式等价于
+$$
+\begin{aligned}
+& (y+z)^2(z+x)(y-x)+(z+x)^2(x+y) \\
+& (z-y)+(x+y)^2(y+z)(x-z) \geqslant 0 \\
+& \Leftrightarrow \quad x y^3+y z^3+z x^3 \geqslant x^2 y z+x y^2 z+x y z^2 \\
+& \Leftrightarrow \\
+& \frac{x^2}{y}+\frac{y^2}{z}+\frac{z^2}{x} \geqslant x+y+z . \\
+&
+\end{aligned}
+$$
+因为
+$$
+\frac{x^2}{y}+y \geqslant 2 x, \frac{y^2}{z}+z \geqslant 2 y, \frac{z^2}{x}+x \geqslant 2 z,
+$$
+所以
+$$
+\frac{x^2}{y}+\frac{y^2}{z}+\frac{z^2}{x} \geqslant x+y+z .
+$$
+从而原不等式得证.
+说明在涉及到三角形三边长 $a 、 b 、 c$ 的不等式时,常常作代换 $a=y+z, b=z+x, c=x+y$, 其中 $x, y, z \in \mathbf{R}^{+}$. 其实, 如图(<FilePath:./figures/fig-c3i1.png>) 所示, $D 、 E 、 F$ 分别是 $\triangle A B C$ 的内切圆与边 $B C 、 C A 、 A B$ 的切点, 令 $A E=A F=x, B D=B F=y, C D=C E=z$, 则 $a=y+z, b=z+x, c=x+y$.
+通过代换,关于 $a 、 b 、 c$ 的不等式就转化为关于正实数 $x 、 y 、 z$ 的不等式了.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $a, b, c, d \in \mathbf{R}^{+}$, 且
+$$
+\frac{a^2}{1+a^2}+\frac{b^2}{1+b^2}+\frac{c^2}{1+c^2}+\frac{d^2}{1+d^2}=1 .
+$$
+求证: $a b c d \leqslant \frac{1}{9}$.
+%%<SOLUTION>%%
+证明:令 $a=\tan \alpha, b=\tan \beta, c=\tan \gamma, d=\tan \delta . \alpha, \beta, \gamma, \delta \in \left(0, \frac{\pi}{2}\right)$. 于是 $\sin ^2 \alpha+\sin ^2 \beta+\sin ^2 \gamma+\sin ^2 \delta=1$. 所以
+$3 \cdot \sqrt[3]{\sin ^2 \alpha \sin ^2 \beta \sin ^2 \gamma} \leqslant \sin ^2 \alpha+\sin ^2 \beta+\sin ^2 \gamma=\cos ^2 \delta$,
+$3 \cdot \sqrt[3]{\sin ^2 \alpha \sin ^2 \beta \sin ^2 \delta} \leqslant \sin ^2 \alpha+\sin ^2 \beta+\sin ^2 \delta=\cos ^2 \gamma$,
+$3 \cdot \sqrt[3]{\sin ^2 \alpha \sin ^2 \gamma \sin ^2 \delta} \leqslant \sin ^2 \alpha+\sin ^2 \gamma+\sin ^2 \delta=\cos ^2 \beta$,
+$3 \cdot \sqrt[3]{\sin ^2 \beta \sin ^2 \gamma \sin ^2 \delta} \leqslant \sin ^2 \beta+\sin ^2 \gamma+\sin ^2 \delta=\cos ^2 \alpha$.
+上面四式相乘, 得 $\tan ^2 \alpha \tan ^2 \beta \tan ^2 \gamma \tan ^2 \delta \leqslant \frac{1}{81}$.
+因此 $\quad a b c d=\tan \alpha \tan \beta \tan \gamma \tan \delta \leqslant \frac{1}{9}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $a 、 b 、 c$ 是正实数, 求
+$$
+\frac{a+3 c}{a+2 b+c}+\frac{4 b}{a+b+2 c}-\frac{8 c}{a+b+3 c}
+$$
+的最小值.
+%%<SOLUTION>%%
+解:令
+$$
+\left\{\begin{array}{l}
+x=a+2 b+c, \\
+y=a+b+2 c, \\
+z=a+b+3 c,
+\end{array}\right.
+$$
+则有 $x-y=b-c, z-y=c$, 由此可得
+$$
+\left\{\begin{array}{l}
+a+3 c=2 y-x, \\
+b=z+x-2 y, \\
+c=z-y .
+\end{array}\right.
+$$
+从而
+$$
+\begin{aligned}
+& \frac{a+3 c}{a+2 b+c}+\frac{4 b}{a+b+2 c}-\frac{8 c}{a+b+3 c} \\
+= & \frac{2 y-x}{x}+\frac{4 \cdot(z+x-2 y)}{y}-\frac{8(z-y)}{z} \\
+= & -17+2 \frac{y}{x}+4 \frac{x}{y}+4 \frac{z}{y}+8 \frac{y}{z} \\
+\geqslant & -17+2 \sqrt{8}+2 \sqrt{32}=-17+12 \sqrt{2} .
+\end{aligned}
+$$
+上式中的等号可以成立.
+事实上, 由上述推导过程知, 等号成立, 当且仅当平均不等式中的等号成立, 而这等价于
+$$
+\left\{\begin{array} { l } 
+{ 2 \frac { y } { x } = 4 \frac { x } { y } , } \\
+{ 4 \frac { z } { y } = 8 \frac { y } { z } , }
+\end{array} \text { 即 } \left\{\begin{array} { l } 
+{ y ^ { 2 } = 2 x ^ { 2 } , } \\
+{ z ^ { 2 } = 2 y ^ { 2 } , }
+\end{array} \text { 即 } \left\{\begin{array}{l}
+y=\sqrt{2} x, \\
+z=2 x,
+\end{array}\right.\right.\right.
+$$
+亦即
+$$
+\left\{\begin{array}{l}
+a+b+2 c=\sqrt{2}(a+2 b+c), \\
+a+b+3 c=2(a+2 b+c) .
+\end{array}\right.
+$$
+解该不定方程,得到
+$$
+\left\{\begin{array}{l}
+b=(1+\sqrt{2}) a, \\
+c=(4+3 \sqrt{2}) a .
+\end{array}\right.
+$$
+不难算出, 对任何正实数 $a$, 只要 $b=(1+\sqrt{2}) a, c=(4+3 \sqrt{2}) a$, 就都有
+$$
+\frac{a+3 c}{a+2 b+c}+\frac{4 b}{a+b+2 c}-\frac{8 c}{a+b+3 c}=-17+12 \sqrt{2},
+$$
+所以所求的最小值为 $-17+12 \sqrt{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 已知 $a, b, c \geqslant 0, a+b+c=1$. 求证:
+$$
+\sqrt{a+\frac{1}{4}(b-c)^2}+\sqrt{b}+\sqrt{c} \leqslant \sqrt{3} .
+$$
+%%<SOLUTION>%%
+证法 1 不妨设 $b \geqslant c$. 令 $\sqrt{b}=x+y, \sqrt{c}=x-y$, 则
+$$
+b-c=4 x y, a=1-2 x^2-2 y^2, x \leqslant \frac{1}{\sqrt{2}} .
+$$
+原式左边 $=\sqrt{1-2 x^2-2 y^2+4 x^2 y^2}+2 x$
+$$
+\leqslant \sqrt{1-2 x^2}+x+x \leqslant \sqrt{3} \text {. }
+$$
+最后一步由柯西不等式得到.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 已知 $a, b, c \geqslant 0, a+b+c=1$. 求证:
+$$
+\sqrt{a+\frac{1}{4}(b-c)^2}+\sqrt{b}+\sqrt{c} \leqslant \sqrt{3} .
+$$
+%%<SOLUTION>%%
+证法 2 令 $a=u^2, b=v^2, c=w^2$, 则 $u^2+v^2+w^2=1$, 于是待证不等式变为
+$$
+\sqrt{u^2+\frac{\left(v^2-w^2\right)^2}{4}}+v+w \leqslant \sqrt{3} . \label{(1)}
+$$
+注意到
+$$
+\begin{aligned}
+u^2+\frac{\left(v^2-w^2\right)^2}{4} & =1-\left(v^2+w^2\right)+\frac{\left(v^2-w^2\right)^2}{4}=\frac{4-4\left(v^2+w^2\right)+\left(v^2-w^2\right)^2}{4} \\
+& =\frac{4-4\left(v^2+w^2\right)+\left(v^2+w^2\right)^2-4 v^2 w^2}{4} \\
+& =\frac{\left(2-v^2-w^2\right)^2-4 v^2 w^2}{4} \\
+& =\frac{\left(2-v^2-w^2-2 w w\right)\left(2-v^2-w^2+2 w w\right)}{4} \\
+& =\frac{\left[2-(v+w)^2\right]\left[2-(v-w)^2\right]}{4} \leqslant 1-\frac{(v+w)^2}{2} .
+\end{aligned}
+$$
+(注意 $(v+w)^2 \leqslant 2\left(v^2+w^2\right) \leqslant 2$) 将上式代入 (1), 得
+$$
+\sqrt{1-\frac{(v+w)^2}{2}}+v+w \leqslant \sqrt{3}
+$$
+令 $\frac{v+w}{2}=x$, 将上述不等式改写为 $\sqrt{1-2 x^2}+2 x \leqslant \sqrt{3}$, 以下同证法 1 . 说明证法 2 解释了证法 1 中替换的动机.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $a, b, c \in \mathbf{R}^{+}$, 且 $a b c=1$, 求证:
+(1) $\frac{1}{1+2 a}+\frac{1}{1+2 b}+\frac{1}{1+2 c} \geqslant 1$;
+(2) $\frac{1}{1+\frac{1}{a+b}}+\frac{1}{1+b+c}+\frac{1}{1+c+a} \leqslant 1$.
+%%<SOLUTION>%%
+证明:(1) 证法 1 设 $a=\frac{x}{y}, b=\frac{y}{z}, c=\frac{z}{x}, x, y, z \in \mathbf{R}^{+}$, 则原不等式等价于
+$$
+s=\frac{y}{y+2 x}+\frac{z}{z+2 y}+\frac{x}{x+2 z} \geqslant 1 .
+$$
+利用 Cauchy 不等式, 得
+$$
+s \cdot[y(y+2 x)+z(z+2 y)+x(x+2 z)] \geqslant(x+y+z)^2,
+$$
+即有 $s \geqslant 1$ 成立.
+证法 2 首先我们证明
+$$
+\frac{1}{1+2 a} \geqslant \frac{a^{-\frac{2}{3}}}{a^{-\frac{2}{3}}+b^{-\frac{2}{3}}+c^{-\frac{2}{3}}} . \label{eq1}
+$$
+式\ref{eq1}等价于
+$$
+b^{-\frac{2}{3}}+c^{-\frac{2}{3}} \geqslant 2 a^{\frac{1}{3}} \text {. }
+$$
+又由于 $b^{-\frac{2}{3}}+c^{-\frac{2}{3}} \geqslant 2 \cdot(b c)^{-\frac{1}{3}}=2 a^{\frac{1}{3}}$, 故(1)成立.
+同理, 有
+$$
+\begin{aligned}
+& \frac{1}{1+2 b} \geqslant \frac{b^{-\frac{2}{3}}}{a^{-\frac{2}{3}}+b^{-\frac{2}{3}}+c^{-\frac{2}{3}}}, \label{eq2} \\
+& \frac{1}{1+2 c} \geqslant \frac{c^{-\frac{2}{3}}}{a^{-\frac{2}{3}}+b^{-\frac{2}{3}}+c^{-\frac{2}{3}}} . \label{eq3}
+\end{aligned}
+$$
+将式\ref{eq1},\ref{eq2},式\ref{eq3}相加即得原不等式成立.
+(2) 令 $a=x^3, b=y^3, c==z^3, x, y, z \in \mathbf{R}^{+}$. 那么, 由题设得 $x y z=1$. 利用 $x^3+y^3 \geqslant x^2 y+y^2 x$, 有
+$$
+\begin{aligned}
+\frac{1}{1+a+b} & =\frac{1}{1+x^3+y^3} \leqslant \frac{1}{1+x^2 y+x y^2} \\
+& =\frac{1}{x y z+x^2 y+y^2 x}=\frac{1}{x y(x+y+z)} \\
+& =\frac{z}{x+y+z} .
+\end{aligned}
+$$
+同理,有
+$$
+\begin{aligned}
+& \frac{1}{1+b+c} \leqslant \frac{x}{x+y+z}, \\
+& \frac{1}{1+c+a} \leqslant \frac{y}{x+y+z} .
+\end{aligned}
+$$
+三式相加即得原不等式成立.
+说明当三数的乘积为 1 时, 本题的两种代换方法都是常用的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设 $x, y, z \in \mathbf{R}^{+}$, 且 $\frac{1}{x}+\frac{1}{y}+\frac{1}{z}=1$, 求证:
+$$
+\sqrt{x+y z}+\sqrt{y+z x}+\sqrt{z+x y} \geqslant \sqrt{x y z}+\sqrt{x}+\sqrt{y}+\sqrt{z} .
+$$
+%%<SOLUTION>%%
+证明:令 $x=\frac{1}{\alpha}, y=\frac{1}{\beta}, z=\frac{1}{\gamma}$, 则 $\alpha+\beta+\gamma=1$.
+原不等式等价于
+$$
+\sum_{c y c} \sqrt{\frac{1}{\alpha}+\frac{1}{\beta \gamma}} \geqslant \sqrt{\frac{1}{\alpha \beta \gamma}}+\sum_{c y c} \sqrt{\frac{1}{\alpha}},
+$$
+即
+$$
+\sum_{c y c} \sqrt{\alpha+\beta \gamma} \geqslant \sum_{c y c} \sqrt{\alpha^2}+\sum_{c y c} \sqrt{\beta \gamma},
+$$
+即
+$$
+\begin{aligned}
+& \sum_{c y c} \sqrt{\alpha \cdot \sum_{c y c} \alpha+\beta \gamma} \geqslant \sum_{c y c} \sqrt{\alpha^2}+\sum_{c y c} \sqrt{\beta \gamma}, \\
+& \sum_{c y c} \sqrt{(\alpha+\beta)(\alpha+\gamma)} \geqslant \sum_{c y c}\left(\sqrt{\alpha^2}+\sqrt{\beta \gamma}\right) .
+\end{aligned}
+$$
+又不难证明 $\quad \sqrt{(\alpha+\beta)(\alpha+\gamma)} \geqslant \sqrt{\alpha^2}+\sqrt{\beta \gamma}$.
+故原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设 $x, y, z \in \mathbf{R}^{+}$, 求证:
+$$
+\frac{y^2-x^2}{z+x}+\frac{z^2-y^2}{x+y}+\frac{x^2-z^2}{y+z} \geqslant 0 \text {. (W. Janous 不等式) }
+$$
+%%<SOLUTION>%%
+分析:左端式子分母是变量和的形式, 难以直接处理, 故先将它们代换掉,简化分母.
+证明令 $x+y=c, y+z=a, z+x=b$, 原不等式等价于
+$$
+\frac{c(a-b)}{b}+\frac{a(b-c)}{c}+\frac{b(c-a)}{a} \geqslant 0,
+$$
+即
+$$
+\frac{a c^2(a-b)+a^2 b(b-c)+b^2 c(c-a)}{a b c} \geqslant 0 .
+$$
+故只须证明
+$$
+a^2 c^2+a^2 b^2+b^2 c^2-a b c^2-a^2 b c-a b^2 c \geqslant 0 .
+$$
+这是很显然的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设 $x_1 、 x_2 、 x_3$ 是正数,求证:
+$$
+x_1 x_2 x_3 \geqslant\left(x_2+x_3-x_1\right)\left(x_1+x_3-x_2\right)\left(x_1+x_2-x_3\right) .
+$$
+%%<SOLUTION>%%
+证明:不妨设 $x_1 \geqslant x_2 \geqslant x_3>0$.
+令 $x_1=x_3+\delta_1, x_2=x_3+\delta_2$, 则 $\delta_1 \geqslant \delta_2 \geqslant 0$. 于是
+$$
+\begin{aligned}
+& x_1 x_2 x_3-\left(x_2+x_3-x_1\right)\left(x_1+x_3-x_2\right)\left(x_1+x_2-x_3\right) \\
+= & \left(x_3+\delta_1\right)\left(x_3+\delta_2\right) x_3-\left(x_3+\delta_2-\delta_1\right)\left(x_3+\delta_1-\delta_2\right)\left(x_3+\delta_1+\delta_2\right) \\
+= & \left(x_3^2+\delta_1 x_3+\delta_2 x_3+\delta_1 \delta_2\right) x_3-\left[x_3^2-\left(\delta_1-\delta_2\right)^2\right]\left(x_3+\delta_1+\delta_2\right) \\
+= & x_3 \delta_1 \delta_2+x_3^2\left(x_3+\delta_1+\delta_2\right)-\left[x_3^2-\left(\delta_1-\delta_2\right)^2\right]\left(x_3+\delta_1+\delta_2\right) \\
+= & x_3 \delta_1 \delta_2+\left(\delta_1-\delta_2\right)^2\left(x_3+\delta_1+\delta_2\right) \\
+\geqslant & 0 .
+\end{aligned}
+$$
+所以
+$$
+x_1 x_2 x_3 \geqslant\left(x_2+x_3-x_1\right)\left(x_1+x_3-x_2\right)\left(x_1+x_2-x_3\right) .
+$$
+说明本题用的代换方法称为"增量代换法".
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 求最大的正整数 $n$, 使得存在 $n$ 个不同的实数 $x_1, x_2, \cdots, x_n$, 满足: 对任意 $1 \leqslant i<j \leqslant n$, 有
+$$
+\left(1+x_i x_j\right)^2 \leqslant 0.9\left(1+x_i^2\right)\left(1+x_j^2\right) .
+$$
+%%<SOLUTION>%%
+解:$$
+\left(1+x_i x_j\right)^2 \leqslant 0.9\left(1+x_i^2\right)\left(1+x_j^2\right)
+$$
+等价于
+$$
+0.1\left(x_i x_j+1\right)^2 \leqslant 0.9\left(x_i-x_j\right)^2,
+$$
+也即
+$$
+\left|x_i x_j+1\right| \leqslant 3\left|x_i-x_j\right| \text {. }
+$$
+令 $x_i=\tan \alpha_i(1 \leqslant i \leqslant n)$, 不妨设 $0 \leqslant \alpha_1<\cdots<\alpha_n<\pi$.
+则原不等式等价于 $\left|\tan \left(\alpha_i-\alpha_j\right)\right| \geqslant \frac{1}{3}$, 即
+$$
+\pi-\theta \geqslant \alpha_j-\alpha_i \geqslant \theta \text {, 其中 } \theta=\arctan \frac{1}{3} .
+$$
+因此, 只需求出最大的 $n$, 使得存在 $n$ 个角: $0 \leqslant \alpha_1<\alpha_2<\cdots<\alpha_n<\pi$, 满足:
+$$
+\alpha_n-\alpha_1 \leqslant \pi-\theta \text {, 且 } \alpha_{i+1}-\alpha_i \geqslant \theta .
+$$
+考虑复数 $z=3+\mathrm{i}$, 则 $\theta=\arg z$.
+由 $z^8=16(-527+336 \mathrm{i}), z^9=16(-1917+481 \mathrm{i}), z^{10}=16(-(1917 \times 3+481)-474 \mathrm{i})$, 知 $z^9$ 的辐角主值 $<\pi, z^{10}$ 的辐角主值 $>\pi$. 所以
+$$
+9 \theta<\pi<10 \theta .
+$$
+又因为 $\pi-\theta \geqslant \alpha_n-\alpha_1 \geqslant(n-1) \theta$, 则 $n \leqslant 9$.
+当 $\alpha_1=0, \alpha_2=\theta, \alpha_3=2 \theta, \cdots, \alpha_9=8 \theta$ 时, 等号可以取到.
+故 $n$ 的最大值为 9 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 已知 $x 、 y 、 z$ 都是正数,求证:
+$$
+\begin{aligned}
+& x(y+z-x)^2+y(z+x-y)^2+z(x+y-z)^2 \\
+\geqslant & 2 x y z\left(\frac{x}{y+z}+\frac{y}{z+x}+\frac{z}{x+y}\right),
+\end{aligned}
+$$
+等号当且仅当 $x=y=z$ 时成立.
+%%<SOLUTION>%%
+证明:令 $a=y+z-x, b=x+z-y, c=x+y-z$, 则
+$$
+x=\frac{b+c}{2}, y=\frac{a+c}{2}, z=\frac{a+b}{2} .
+$$
+于是原不等式等价于
+$$
+\frac{1}{2} \sum a^2(b+c) \geqslant 2 \frac{(a+b)(b+c)(c+a)}{8} \cdot \sum \frac{\frac{b+c}{2}}{a+\frac{b+c}{2}},
+$$
+即
+$$
+\begin{aligned}
+& 2\left[a^2(b+c)+b^2(c+a)+c^2(a+b)\right] \\
+\geqslant & (a+b)(b+c)(c+a) \cdot \sum \frac{b+c}{2 a+b+c} .
+\end{aligned}
+$$
+下面我们证明
+$$
+a^2(b+c)+b^2(c+a) \geqslant(a+b)(b+c)(c+a) \cdot \frac{a+b}{2 c+a+b} . \label{(1)}
+$$
+注意到(1)等价于 $\frac{a^2}{a+c}+\frac{b^2}{b+c} \geqslant \frac{(a+b)^2}{a+b+2 c}$.
+由 Cauchy 不等式,这是显然的.
+同理还有类似(1)的其他两式, 相加即得原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13. 设 $a, b, c \in \mathbf{R}^{+}$, 求证:
+$$
+\frac{b^3}{a^2+8 b c}+\frac{c^3}{b^2+8 c a}+\frac{a^3}{c^2+8 a b} \geqslant \frac{a+b+c}{9} .
+$$
+%%<SOLUTION>%%
+证明:记不等式的左端为 $M$, 令
+$$
+\begin{aligned}
+S & =\left(a^2+8 b c\right)+\left(b^2+8 c a\right)+\left(c^2+8 a b\right) \\
+& =(a+b+c)^2+6(a b+b c+c a) \\
+& \leqslant 3(a+b+c)^2 .
+\end{aligned}
+$$
+所以
+$$
+\begin{aligned}
+3= & \frac{1}{M} \cdot\left(\frac{b^3}{a^2+8 b c}+\frac{c^3}{b^2+8 c a}+\frac{a^3}{c^2+8 a b}\right)+\frac{1}{S}\left(\left(a^2+8 b c\right)\right. \\
+& \left.+\left(b^2+8 c a\right)+\left(c^2+8 a b\right)\right)+\frac{1+1+1}{3} \\
+= & \sum\left[\frac{b^3}{M\left(a^2+8 b c\right)}+\frac{a^2+8 b c}{S}+\frac{1}{3}\right] \\
+\geqslant & 3 \sqrt[3]{\frac{b^3}{3 S M}}+3 \sqrt[3]{\frac{a^3}{3 S M}}+3 \sqrt[3]{\frac{c^3}{3 S M}} \\
+= & \frac{3(a+b+c)}{\sqrt[3]{3 S M}} .
+\end{aligned}
+$$
+因此 $3 S M \geqslant(a+b+c)^3$, 故有 $M \geqslant \frac{1}{9}(a+b+c)$ 成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14. 已知非负实数 $a 、 b 、 c$ 满足: $a+b+c=1$, 求证:
+$$
+\begin{aligned}
+2 & \leqslant\left(1-a^2\right)^2+\left(1-b^2\right)^2+\left(1-c^2\right)^2 \\
+& \leqslant(1+a)(1+b)(1+c),
+\end{aligned}
+$$
+并求出等号成立的条件.
+%%<SOLUTION>%%
+证明:设 $a b+b c+c a=m, a b c=n$, 则
+$$
+(x-a)(x-b)(x-c)=x^3-x^2+m x-n .
+$$
+令 $x=a$, 则有 $a^3=a^2-m a+n$ (注意: 这起到了降次的作用!). 于是
+$$
+\begin{aligned}
+\sum_{c y c} a^3 & =\sum_{c y c} a^2-m \cdot \sum_{c y c} a+3 n . \\
+\sum_{c y c} a^4 & =\sum_{c y c} a^3-m \sum_{c y c} a^2+n \sum_{c y c} a \\
+& =(1-m) \sum_{c y c} a^2-m \sum_{c y c} a+n \sum_{c y c} a+3 n \\
+& =(1-m)(1-2 m)-m+n+3 n .
+\end{aligned}
+$$
+所以
+$$
+\begin{aligned}
+\sum_{c y c}\left(1-a^2\right)^2 & =3-2 \sum_{c y c} a^2+\sum_{c y c} a^4 \\
+& =3-2(1-2 m)+2 m^2-3 m+1-m+4 n \\
+& =2 m^2+4 n+2 \geqslant 2,
+\end{aligned}
+$$
+等号当 $a 、 b 、 c$ 中有 2 个为 0 时取到.
+又因为
+$$
+(1+a)(1+b)(1+c)=2+m+n,
+$$
+则 $2 m^2+4 n+2 \leqslant 2+m+n$ 相当于 $3 n \leqslant m-2 m^2$, 即
+$$
+3 a b c \leqslant m(1-2 m)=(a b+b c+c a)\left(a^2+b^2+c^2\right),
+$$
+即
+$$
+3 \leqslant\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right)\left(a^2+b^2+c^2\right) . \label{(1)}
+$$
+而由 Cauchy 不等式可得
+$$
+3\left(a^2+b^2+c^2\right) \geqslant(a+b+c)^2=a+b+c .
+$$
+于是
+$$
+\begin{aligned}
+& 3\left(a^2+b^2+c^2\right)\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right) \\
+\geqslant & (a+b+c)\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right) \geqslant 9 .
+\end{aligned}
+$$
+故(1)成立,且等号当 $a=b=c=\frac{1}{3}$ 时成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例15. (1)设实数 $x 、 y 、 z$ 都不等于 $1, x y z=1$, 求证:
+$$
+\frac{x^2}{(x-1)^2}+\frac{y^2}{(y-1)^2}+\frac{z^2}{(z-1)^2} \geqslant 1 \text {. }
+$$
+(2) 求证: 存在无穷多组三元有理数组 $(x, y, z)$, 使得上述不等式等号成立.
+%%<SOLUTION>%%
+证法 1 (1)
+$$
+\begin{gathered}
+\text { 令 } \frac{x}{x-1}=a, \frac{y}{y-1}=b, \frac{z}{z-1}=c, \text { 则 } \\
+x==\frac{a}{a-1}, y=\frac{b}{b-1}, z=\frac{c}{c-1} .
+\end{gathered}
+$$
+由题设条件 $x y z=1$ 得,
+$$
+\begin{aligned}
+& a b c=(a-1)(b-1)(c-1), \\
+& a+b+c-1=a b+b c+c a,
+\end{aligned}
+$$
+即
+$$
+a+b+c-1=a b+b c+c a
+$$
+所以
+$$
+\begin{aligned}
+a^2+b^2+c^2 & =(a+b+c)^2-2(a b+b c+c a) \\
+& =(a+b+c)^2-2(a+b+c-1) \\
+& =(a+b+c-1)^2+1 \geqslant 1, \\
+\frac{x^2}{(x-1)^2} & +\frac{y^2}{(y-1)^2}+\frac{z^2}{(z-1)^2} \geqslant 1 .
+\end{aligned}
+$$
+从而
+$$
+\frac{x^2}{(x-1)^2}+\frac{y^2}{(y-1)^2}+\frac{z^2}{(z-1)^2} \geqslant 1 \text {. }
+$$
+(2) 令 $(x, y, z)=\left(-\frac{k}{(k-1)^2}, k-k^2, \frac{k-1}{k^2}\right), k$ 是正整数, 则 $(x, y, z)$ 是三元有理数组, $x 、 y 、 z$ 都不等于 1 , 且对于不同的正整数 $k$, 三元有理数组 $(x, y, z)$ 是互不相同的.
+此时
+$$
+\begin{aligned}
+& \frac{x^2}{(x-1)^2}+\frac{y^2}{(y-1)^2}+\frac{z^2}{(z-1)^2} \\
+= & \frac{k^2}{\left(k^2-k+1\right)^2}+\frac{\left(k-k^2\right)^2}{\left(k^2-k+1\right)^2}+\frac{(k-1)^2}{\left(k^2-k+1\right)^2} \\
+= & \frac{k^4-2 k^3+3 k^2-2 k+1}{\left(k^2-k+1\right)^2}=1,
+\end{aligned}
+$$
+从而命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例15. (1)设实数 $x 、 y 、 z$ 都不等于 $1, x y z=1$, 求证:
+$$
+\frac{x^2}{(x-1)^2}+\frac{y^2}{(y-1)^2}+\frac{z^2}{(z-1)^2} \geqslant 1 \text {. }
+$$
+(2) 求证: 存在无穷多组三元有理数组 $(x, y, z)$, 使得上述不等式等号成立.
+%%<SOLUTION>%%
+证法 2 (1) 由 $x y z=1$, 可设 $p=x, q=1, r=\frac{1}{y}$, 得 $x=\frac{p}{q}, y=\frac{q}{r}, z= \frac{1}{x y}=\frac{r}{p}, p 、 q 、 r$ 互不相等.
+故
+$$
+\begin{gathered}
+\frac{x^2}{(x-1)^2}+\frac{y^2}{(y-1)^2}+\frac{z^2}{(z-1)^2} \geqslant 1 \\
+\Leftrightarrow \frac{p^2}{(p-q)^2}+\frac{q^2}{(q-r)^2}+\frac{r^2}{(r-p)^2} \geqslant 1 .
+\end{gathered} \label{eq1}
+$$
+令 $a=\frac{p}{p-q}, b=\frac{q}{q-r}, c=\frac{r}{r-p}$, 则 式\ref{eq1} 化为 $\sum_{c y c} a^2 \geqslant 1$. 由于
+$$
+\begin{gathered}
+\frac{-1+a}{a}=\frac{q}{p}, \frac{-1+b}{b}=\frac{r}{q}, \frac{-1+c}{c}=\frac{p}{r}, \\
+\frac{-1+a}{a} \cdot \frac{-1+b}{b} \cdot \frac{-1+c}{c}=1, \\
+1-\sum_{c y c} a+\sum_{c y c} a b=0,
+\end{gathered} \label{eq2}
+$$
+由式\ref{eq2}可得
+$$
+1-\sum_{c y c} a^2=-(a+b+c-1)^2 \leqslant 0
+$$
+所以 $\sum_{c y c} a^2 \geqslant 1$, 从而\ref{eq1}式成立.
+(2) 令 $b=\frac{t^2+t}{t^2+t+1}, c=\frac{t+1}{t^2+t+1}, a=-\frac{b c}{b+c}$, 其中 $t$ 可取除 0、- 1 外的一切有理数, 改变 $t$, 其中使得 $b 、 c 、 a$ 中有某个为 1 的至多只有有限个, 这样就得到无穷多组三元有理数组 $(a, b, c), a 、 b 、 c$ 都不等于 1 , 使得 $\sum_{c y c} a= \sum_{c y c} a^2=1$, 而由 $(x, y, z)=\left(\frac{a}{a-1}, \frac{b}{b-1}, \frac{c}{c-1}\right)$ 知 (2)成立.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,244 @@
+
+%%TEXT_BEGIN%%
+4.4 柯西不等式在组合计数估计中的应用.
+在研究组合, 特别是组合计数问题时, 常常需要由给定的条件, 对一些不等式进行估计.
+如果能灵活地应用, 柯西不等式在解决这些问题中能发挥很好的作用.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 将 1650 个学生排成 22 行, 75 列的方阵, 已知任意给定的两列处于同一行的两个人中, 性别相同的学生不超过 11 对, 证明: 男生的人数不超过 928.
+%%<SOLUTION>%%
+解:设第 $i$ 行的男生数为 $x_i$, 则女生数为 $75-x_i$, 依题意, 得
+$$
+\sum_{i=1}^{22}\left(\mathrm{C}_{x_i}^2+\mathrm{C}_{75-x_i}^2\right) \leqslant 11 \times \mathrm{C}_{75}^2
+$$
+于是
+$$
+\sum_{i=1}^{22}\left(x_i^2-75 x_i\right) \leqslant-30525,
+$$
+即 $\sum_{i=1}^{22}\left(2 x_i-75\right)^2 \leqslant 1650$. 由柯西不等式, 得
+$$
+\left[\sum_{i=1}^{22}\left(2 x_i-750\right)\right]^2 \leqslant 22 \sum_{i=1}^{22}\left(2 x_i-75\right)^2 \leqslant 36300,
+$$
+因此 $\sum_{i=1}^{22}\left(2 x_i-75\right)<191$, 从而
+$$
+\sum_{i=1}^{22} x_i<\frac{191+1650}{2}<921,
+$$
+故男生的人数不超过 928 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 在一群数学家中, 每一个人都有一些朋友 (关系是互相的). 证明: 存在一个数学家他所有的朋友的平均值不小于这群人的朋友的平均数.
+%%<SOLUTION>%%
+证明:记 $M$ 为这群数学家的集合, $n=|M|, F(m)$ 表示数学家 $m$ 的朋友的集合, $f(m)$ 表示数学家 $m$ 的朋友数 $(f(m)=|F(m)|)$. 即命题等价于证明:必有一个 $m_0$ 使
+$$
+\frac{1}{f\left(m_0\right)} \sum_{m \in F\left(m_0\right)} f(m) \geqslant \frac{1}{n} \sum_{m \in M} f(m) .
+$$
+我们用反证法来证明这个命题, 如果不存在这样的数学家 $m_0$. 则对任意的 $m_0$, 有
+$$
+n \cdot \sum_{m \in F\left(m_0\right)} f(m)<f\left(m_0\right) \sum_{m \in M} f(m) .
+$$
+对一切 $m_0$ 求和, 得
+$$
+n \cdot \sum_{m_0} \sum_{m \in F\left(m_0\right)} f(m)=n \sum_m \sum_{m \in F\left(m_0\right)} f(m)=n \sum_{m \in M} f^2(m)<\left(\sum_{m \in M} f(m)\right)^2 .
+$$
+这与柯西不等式矛盾, 故命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设空间中有 $2 n(n \geqslant 2)$ 个点,其中任何 4 点都不共面.
+在它们之间任意连接 $N$ 条线段,这些线段都至少构成一个三角形.
+求 $N$ 的最小值.
+%%<SOLUTION>%%
+解:将 $2 n$ 个已知点均分为 $A$ 和 $B$ 两组:
+$$
+A=\left\{A_1, A_2, \cdots, A_n\right\}, B=\left\{B_1, B_2, \cdots, B_n\right\} .
+$$
+现将每对点 $A_i$ 和 $B_i$ 之间都连接一条线段 $A_i B_i$, 而同组的任意两点之间不连线, 则共有 $n^2$ 条线段.
+这时, $2 n$ 个已知点中的任何 3 点中至少有两点属于同一组, 两者之间没有连线.
+因而这 $n^2$ 条线段不能构成任何三角形.
+这表明 $N$ 的最小值必大于 $n^2$. 由于 $2 n$ 个点之间连有 $n^2+1$ 条线段, 平均每点引出 $n$ 条线段还多,故可以猜想有一条线段的两个端点引出的线段之和不小于 $2 n+1$.
+下面证明 $N$ 的最小值为 $2 n+1$.
+设从 $A_1, A_2, \cdots, A_{2 n}$ 引出的线段条数分别为 $a_1, a_2, \cdots, a_{2 n}$, 且对于任一线段 $A_i A_j$ 都有 $a_i+a_j \leqslant 2 n$. 于是, 所有线段的两端点所引出的线段条数之和不超过 $2 n\left(n^2+1\right)$. 但在此计数中, $A_i$ 点恰被计算了 $a_i$ 次,故有
+$$
+\begin{gathered}
+\sum_{i=1}^{2 n} a_i^2 \leqslant 2 n\left(n^2+1\right) . \\
+\sum_{i=1}^{2 n} a_i=2\left(n^2+1\right),
+\end{gathered}
+$$
+$$
+\text { 另一方面,显然有 } \quad \sum_{i=1}^{2 n} a_i=2\left(n^2+1\right) \text {, }
+$$
+故由柯西不等式,得
+$$
+\left(\sum_{i=1}^{2 n} a_i\right)^2 \leqslant 2 n\left(\sum_{i=1}^{2 n} a_i^2\right)
+$$
+即
+$$
+\sum_{i=1}^{2 n} a_i^2 \geqslant \frac{1}{2 n} \cdot 4\left(n^2+1\right)^2>2 n\left(n^2+1\right) .
+$$
+于是矛盾, 从而证明了必有一条线段, 从它的两端点引出的线段数之和不小于 $2 n+1$. 不妨设 $A_1 A_2$ 是一条这样的线段, 从而又有 $A_k(k \geqslant 3)$, 使线段 $A_1 A_k, A_2 A_k$ 都存在, 于是 $\triangle A_1 A_2 A_k$ 即为所求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 在 $m \times m$ 方格纸中, 至少要挑出多少个小方格,才能使得这些小方格中存在四个小方格, 它们的中心组成一个矩形的 4 个顶点, 而矩形的边平行于原正方形的边.
+%%<SOLUTION>%%
+解:所求的最小值为 $\left[\frac{m}{2}(1+\sqrt{4 m-3})-1\right]+1$. 设最多能挑出 $k$ 个小方格, 使得这些小方格中不存在任何四个小方格, 它们的中点组成一个矩形的 4 个顶点 (矩形的边平行于原正方形的边). 并假设位于第 $i$ 行的有 $k_i(i= 1,2, \cdots, m)$ 个, 则
+$$
+\sum_{i=1}^n k_i=k
+$$
+设第 $i$ 行的 $k_i$ 个小方格位于这行的第 $j_1, j_2, \cdots, j_{k_i}$ 列, $1 \leqslant j_1<j_2< \cdots<j_{k_i} \leqslant m$. 如果第 $r$ 行的第 $j_p, j_q$ 列的两个方格已经挑出, 则任意的第 $s (s \neq r)$ 行的 $j_p, j_q$ 列的两个方格不能同时挑出, 否则将组成一个矩形的 4 个顶点.
+所以对于每个 $i$, 考虑 $j_1, j_2, \cdots, j_{k_i}$ 中每两个的组合, 可得到 $\mathrm{C}_{k_i}^2$ 个组合.
+对 $i=1,2, \cdots, m$, 可得 $\sum \mathrm{C}_{k_i}^2$ 个组合, 且其中任意两个不相同 (即无重复), 这些组合都是 $1,2, \cdots, m$ 中取两个的组合, 总数为 $\mathrm{C}_m^2$. 所以
+$$
+\sum_{i=1}^m \mathrm{C}_{k_i}^2 \leqslant \mathrm{C}_m^2
+$$
+即
+$$
+\frac{1}{2} \sum_{i=1}^m k_i\left(k_i-1\right) \leqslant \frac{1}{2} m(m-1) .
+$$
+由 $\sum_{i=1}^m k_i=k$, 得到 $\sum_{i=1}^m k_i^2 \leqslant m(m-1)+k$. 由柯西不等式, 得
+$$
+\sum_{i=1}^m k_i^2 \geqslant \frac{\left(\sum_{i=1}^m k_i\right)^2}{m}=\frac{k^2}{m} .
+$$
+所以 $\frac{k^2}{m} \leqslant m(m-1)+k$, 故 $k \leqslant \frac{m}{2}(1+\sqrt{4 m-3})$.
+因此, 至少要挑出 $\left[\frac{m}{2}(1+\sqrt{4 m-3})-1\right]+1$ 个小方格.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $A_1, A_2, \cdots, A_{30}$ 是集 $\{1,2, \cdots, 2003\}$ 的子集, 且 $\left|A_i\right| \geqslant 660 (i=1,2, \cdots, 30)$. 证明:存在 $i, j \in\{1,2, \cdots, 30\}, i \neq j$, 使得
+$$
+\left|A_i \cap A_j\right| \geqslant 2003 \text {. }
+$$
+%%<SOLUTION>%%
+证明:不妨设每个 $A_i$ 的元素都为 660 个(否则去除一些元素),我们作一个集合、元素的关系表:表中每一行(除最上面的一行)表示 30 个集合, 表的 $n$ 列(最左面一列除外)表示 2003 个元素 $1,2, \cdots, 2003$. 如果 $i \in A_j(i=1$ , $2, \cdots, 2003,1 \leqslant j \leqslant 30)$, 则在 $i$ 所在的列与 $A_j$ 所在的交叉处填上 1 , 如果 $i \notin A_j$, 则写上 0 . 表中每一行有 660 个 1 , 因此共有 $30 \times 660$ 个 1 . 第 $j$ 列有 $m_j$ 个 $1(j=1,2, \cdots, 2003)$, 则
+$$
+\sum_{j=1}^{2003} m_j=30 \times 660 .
+$$
+由于每个元素 $j$ 属于 $\mathrm{C}_{m_j}^2$ 个交集 $A_s \cap A_t$, 因此
+$$
+\sum_{j=1}^{2003} \mathrm{C}_{m_j}^2=\sum_{1 \leqslant s<t \leqslant 30}\left|A_s \cap A_t\right| \text {. }
+$$
+由柯西不等式, 得
+$$
+\sum_{j=1}^{2003} \mathrm{C}_{m_j}^2=\frac{1}{2}\left(\sum_{j=1}^{2003} m_j^2-\sum_{j=1}^{2003} m_j\right) \geqslant \frac{1}{2}\left[-\frac{1}{2003}\left(\sum_{j=1}^{2003} m_i\right)^2-\sum_{j=1}^{2003} m_j\right] .
+$$
+所以,必有 $i \neq j$, 满足
+$$
+\begin{aligned}
+\left|A_i \cap A_j\right| & \geqslant \frac{1}{\mathrm{C}_{30}^2} \times \frac{1}{2}\left[\frac{1}{2003}\left(\sum_{j=1}^{2003} m_j\right)^2-\sum_{j=1}^{2003} m_j\right] \\
+& =\frac{660(30 \times 660-2003)}{29 \times 2003}>2002,
+\end{aligned}
+$$
+故 $\left|A_i \cap A_j\right| \geqslant 2003$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 给定平面上的 $n$ 个相异点.
+证明: 其中距离为单位长的点对少于 $2 \sqrt{n^3}$ 对.
+%%<SOLUTION>%%
+证明:对于平面上的点集 $\left\{P_1, P_2, \cdots, P_n\right\}$, 令 $a_i$ 为与 $P_i$ 相距为单位长的点 $P_i$ 的个数.
+不妨设 $a_i \geqslant 1$, 则相距为单位长的点对的对数是
+$$
+A=\frac{a_1+a_2+\cdots+a_n}{2} .
+$$
+设 $C_i$ 是以点 $P_i$ 为圆心, 以 1 为半径的圆.
+因为每对圆至多有 2 个交点,故所有的 $C_i$ 至多有
+$$
+2 \mathrm{C}_n^2=n(n-1)
+$$
+个交点.
+点 $P_i$ 作为 $C_j$ 的交点出现 $\mathrm{C}_{a_j}^2$ 次, 因此
+$$
+n(n-1) \geqslant \sum_{j=1}^n \mathrm{C}_{a_j}^2=\sum_{j=1}^n \frac{a_j\left(a_j-1\right)}{2} \geqslant \frac{1}{2} \sum_{j=1}^n\left(a_j-1\right)^2 .
+$$
+由柯西不等式, 得
+$$
+\left[\sum_{j=1}^n\left(a_j-1\right)\right]^2 \leqslant n \cdot \sum_{j=1}^n\left(a_j-1\right)^2 \leqslant n \cdot 2 n(n-1)<2 n^3,
+$$
+于是从而
+$$
+\sum_{j=1}^n\left(a_j-1\right)<\sqrt{2} \cdot \sqrt{n^3}
+$$
+$$
+A=\frac{\sum_{j=1}^n a_j}{2}<\frac{n+\sqrt{2 n^3}}{2}<2 \sqrt{n^3},
+$$
+故命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 在三维空间中给定一点 $O$ 以及由总长度为 1988 的若干条线段组成的有限集 $A$, 证明: 存在一个平面与集 $A$ 不相交且到点 $O$ 的距离不超过 574 .
+%%<SOLUTION>%%
+证明:以点 $O$ 为原点建立直角坐标系, 并将所给的线段分别向 3 条坐标轴投影.
+设 $A$ 中共有 $n$ 条线段且它们在 3 条轴上的投影长分别为
+$$
+x_i, y_i, z_i, i=1,2, \cdots, n \text {. }
+$$
+记 $x=\sum x_i, y=\sum y_i, z=\sum z_i$. 于是, 由柯西不等式, 得
+$$
+\begin{aligned}
+x^2+y^2+z^2 & =\left(\sum x_i\right)^2+\left(\sum y_i\right)^2+\left(\sum z_i\right)^2 \\
+& =\sum_{i=1}^n \sum_{j=1}^n\left(x_i x_j+y_i y_j+z_i z_j\right) \\
+& \leqslant \sum_{i=1}^n \sum_{j=1}^n \sqrt{\left(x_i^2+y_i^2+z_i^2\right)\left(x_j^2+y_j^2+z_j^2\right)} \\
+& =\left(\sum_{i=1}^n \sqrt{x_i^2+y_i^2+z_i^2}\right)^2=1988^2 .
+\end{aligned}
+$$
+不妨设 $x=\min \{x, y, z\}$, 于是
+$$
+x \leqslant \frac{1988}{\sqrt{3}}<2 \times 574 .
+$$
+从而在 $x$ 轴上的区间 $[-574,574]$ 内必有一点不在 $n$ 条给定线段的投影
+136. 上,过这点作与 $x$ 轴垂直的平面便满足题中的要求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设 $O x y z$ 是空间直角坐标系, $S$ 是空间中一个有限点集, $S_x, S_y, S_z$ 分别是 $S$ 中所有点在 $O y z$ 平面, $O z x$ 平面和 $O x y$ 平面上的正投影所成的集合.
+求证:
+$$
+|S|^2 \leqslant\left|S_x\right| \cdot\left|S_y\right| \cdot\left|S_z\right| .
+$$
+说明所谓一个点在一个平面上的正投影是指由点向平面所作垂线的 垂足.
+%%<SOLUTION>%%
+证明:设共有 $n$ 个平行于 $O x y$ 平面的平面上有 $S$ 中的点, 这些平面分别记为 $M_1, M_2, \cdots, M_n$. 对于平面 $M_i, 1 \leqslant i \leqslant n$, 设它与 $O z x, O z y$ 平面分别交于直线 $l_y$ 和 $l_x$, 并设 $M_i$ 上有 $m_i$ 个 $S$ 中的点.
+显然, $m_i \leqslant\left|S_z\right|$.
+设 $M_i$ 上的点在 $l_x, l_y$ 上的正投影的集合分别为 $A_i$ 和 $B_i$, 记 $a_i=\left|A_i\right|$, $b_i=\left|B_i\right|$, 则有 $m_i \leqslant a_i b_i$. 又因为
+$$
+\sum_{i=1}^n a_i=\left|S_y\right|, \sum_{i=1}^n b_i=\left|S_x\right|, \sum_{i=1}^n m_i=|S|,
+$$
+从而由柯西不等式,得
+$$
+\begin{aligned}
+\left|S_x\right| \cdot\left|S_y\right| \cdot\left|S_z\right| & =\left(\sum_{i=1}^n b_i\right)\left(\sum_{i=1}^n a_i\right) \cdot\left|S_z\right| \\
+& \geqslant\left(\sum_{i=1}^n \sqrt{a_i b_i}\right)^2 \cdot\left|S_z\right| \\
+& =\left(\sum_{i=1}^n \sqrt{a_i b_i \mid S_z}\right)^2 \\
+& \geqslant\left(\sum_{i=1}^n m_i\right)^2=|S|^2 .
+\end{aligned}
+$$
+得证.
+%%PROBLEM_END%%
+
+

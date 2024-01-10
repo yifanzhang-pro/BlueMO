@@ -1,0 +1,173 @@
+
+%%TEXT_BEGIN%%
+从整体考虑问题.
+在研究某些数学问题时,我们需从问题的整体考虑,通过研究整体结构、 整体形式来把握问题的本质.
+运用整体化思想解题的策略主要体现在以下两点:
+第一, 若某些问题的条件或结论具有整体性特征, 则应加以利用使本质显现或问题简化;
+第二, 若问题的条件或结论是局部性的,但从局部难以人手, 就不妨改从整体出发, 把貌似散乱实则紧密联系的对象捏合起来,或者构造适当的整体结构,通过对问题的整体认识来解决问题.
+我们先通过两个简单例子来感受一下整体性策略.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设数列 $\left\{a_n\right\}$ 与 $\left\{b_n\right\}$ 满足 $a_1=1, b_1=3$, 且
+$$
+\left\{\begin{array}{l}
+a_{n+1}=a_n+b_n-\sqrt{a_n^2-a_n b_n+b_n^2}, \\
+b_{n+1}=b_n+a_n+\sqrt{b_n^2-b_n a_n+a_n^2},
+\end{array} n=1,2, \cdots .\right.
+$$
+求数列 $\left\{a_n\right\}$ 与 $\left\{b_n\right\}$ 的通项公式.
+%%<SOLUTION>%%
+解:已知得:
+$$
+\begin{aligned}
+& a_{n+1}+b_{n+1}=2\left(a_n+b_n\right), \\
+& a_{n+1} b_{n+1}=\left(a_n+b_n\right)^2-\left(a_n^2-a_n b_n+b_n^2\right)=3 a_n b_n .
+\end{aligned}
+$$
+从而
+$$
+\begin{aligned}
+& a_n+b_n=2^{n-1}\left(a_1+b_1\right)=2^{n+1}, \\
+& a_n b_n=3^{n-1} a_1 b_1=3^n,
+\end{aligned}
+$$
+故 $a_n, b_n$ 是方程 $x^2-2^{n+1} x+3^n=0$ 的两个实根, 且根据条件得 $a_n<b_n$, 所以
+$$
+a_n=2^n-\sqrt{4^n-3^n}, b_n=2^n+\sqrt{4^n-3^n} .
+$$
+%%<REMARK>%%
+注:本题中的两个递推式具有明显的对偶特征,故将它们联系起来整体考虑, 求解十分简明.
+由此反映出一个基本想法: 对条件或结论中的整体性特征, 应积极加以利用.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 已知: 三元集 $A=\{a b, 2 b, 3 c\}, B=\left\{a, 2 b^2, 3 b c\right\}$, 其中 $a 、 b 、 c$ 是非零实数,使得 $A=B$. 求 $b$ 的所有可能值.
+%%<SOLUTION>%%
+解:一设 $A=B$, 由已知条件, 对集合 $B$ 中 $a$ 的取值分三类情况讨论.
+若 $a=a b$, 则两边同除以非零常数 $a$, 知: $b=1$.
+若 $a=2 b$, 则 $a b=2 b^2, A$ 和 $B$ 中分别剩下的还有 $3 c$ 和 $3 b c$, 它们相等.
+考虑到 $c$ 是非零常数,有: $b=1$.
+若 $a=3 c$, 则 $a b=3 b c, A$ 和 $B$ 中分别剩下的还有 $2 b$ 和 $2 b^2$, 它们相等.
+考虑到 $b$ 是非零常数,仍有: $b=1$.
+最后检验一下: 当 $b=1$ 时, $A=\{a, 2,3 c\}=B$, 只要适当取非零的 $a 、 c$, 使得 $a 、 2 、 3 c$ 两两不等, 即可保证 $A 、 B$ 为满足条件的三元集.
+故 $b=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 已知: 三元集 $A=\{a b, 2 b, 3 c\}, B=\left\{a, 2 b^2, 3 b c\right\}$, 其中 $a 、 b 、 c$ 是非零实数,使得 $A=B$. 求 $b$ 的所有可能值.
+%%<SOLUTION>%%
+解:二设 $A=B$, 则它们各自的元素积相等, 即 $a b \cdot 2 b \cdot 3 c=a \cdot 2 b^2$. $3 b c$. 考虑到 $a 、 b 、 c$ 是非零实数,两边同除以 $6 a b^2 c$ 知: $b=1$.
+以下检验过程同原解.
+%%<REMARK>%%
+注:本题思路很宽, 求解不难.
+上述解法一已表达得十分清晰自然, 但解法二明显更为精简.
+对有限集合来说,可以用元素之和、元素之积等"轮换对称式"来考察两个具有待定参数的相等集合, 这是因为轮换对称式中所有元素的"地位"相同, 任意打乱元素的排列不影响它的值.
+这里轮换对称式所反映的是集合整体的一种属性, 而解法二正是从这个角度来考虑集合 $A 、 B$ 的.
+本题也可以通过 $A 、 B$ 各自的元素之和相等列出方程求解, 只不过解答会麻烦一些.
+这样的整体性方法在特定情况下会取得良好的效果.
+与上一个例子相比, 本题虽不具有鲜明的整体结构特征, 但仍能给我们一些启示: 在解题中,如能将孤立的量捏合起来,得到一些有效的信息, 则可避免过多纠缠于细枝末节, 显著简化求解步骤.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设集合 $M=\{1,2, \cdots, 19\}, A=\left\{a_1, a_2, \cdots, a_k\right\} \subseteq M$. 求最小的正整数 $k$, 使得对任意 $b \in M$, 存在 $a_i, a_j \in A$, 满足 $a_i=b$ 或 $a_i \pm a_j=b\left(a_i\right.$, $a_j$ 可以相同). 
+%%<SOLUTION>%%
+解:照题意, $A$ 中元素至多给出 $k+k+2 \mathrm{C}_k^2=k(k+1)$ 种可能的运算结果, 故 $k(k+1) \geqslant 19$, 即 $k \geqslant 4$.
+对 $k=4$, 假定有 $A=\left\{a_1, a_2, a_3, a_4\right\}$ 满足题意, 不妨设 $a_1<a_2<a_3< a_4$. 由于在 $\left\{a_i \mid i=1,2,3,4\right\},\left\{2 a_i \mid i=1,2,3,4\right\}$ 及 $\left\{a_i \pm a_j \mid 1 \leqslant j<\right. \left.i \leqslant 4, i, j \in \mathbf{N}^*\right\}$ 的所有数中, $2 a_4$ 最大, 故 $2 a_4 \geqslant 19$, 从而必有 $2 a_4 \geqslant 20$.
+于是, $a_i(i=1,2,3,4), 2 a_i(i=1,2,3), a_i \pm a_j(1 \leqslant j<i \leqslant 4)$ 这 19 个数应恰好表示出 $M$ 中的所有元素 $1,2, \cdots, 19$, 对它们求和并化简得
+$$
+3 a_1+5 a_2+7 a_3+7 a_4=1+2+\cdots+19=190 .
+$$
+注意这 19 个数中最大的显然是 $a_3+a_4=19$, 故 $3 a_1+5 a_2=190-7 \times 19=$ 57 , 易知 $3 \mid a_2$, 又 $a_2<a_3 \leqslant 9$, 故 $a_2 \leqslant 6$. 然而此时 $3 a_1+5 a_2<8 a_2<57$, 矛盾!
+从而假设不成立, 即 $k_{\min } \geqslant 5$.
+容易验证 $A=\{1,3,5,9,16\}$ 满足题目要求, 从而 $k_{\min }=5$.
+%%<REMARK>%%
+注:虽然这个问题难度上升,但求解思想完全可以与例 2 相对照.
+原解法中为否定 $k=4$, 对 $a_4$ 的值进行分类讨论, 共多达 8 种情形.
+相比之下, 上述解法从元素和的角度建立等式(1)是一种从整体考虑问题的思路, 再辅以放缩与整除性, 完全规避了分类讨论, 是以成为解答本题的一条捷径.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 正五边形的每个顶点对应一个整数,使得这五个整数的和为正.
+若其中三个相邻顶点对应的整数依次为 $x, y, z$, 而中间的 $y<0$, 则要进行如下的变换: 整数 $x, y, z$ 分别换为 $x+y,-y, z+y$. 要是所得的五个整数中至少还有一个为负时, 这种变换就继续进行.
+问: 这样的变换进行有限次是否必定终止?
+%%<SOLUTION>%%
+解:案是肯定的.
+为了方便起见, 我们把五个数的环列写成横列 $v, w, x, y, z$ (这里 $z$ 和 $v$ 是相邻的). 不妨设 $y<0$, 经变换后得 $v, w, x+y,-y, z+y$. 这是一个局部的变化, 考虑五个数的平方和再加上每相邻两数和的平方这一整体, 那么变换前后的差是 $\left(v^2+w^2+(x+y)^2+(-y)^2+(z+y)^2+(v+w)^2+(w+\right. \left.x+y)^2+x^2+z^2+(z+y+v)^2\right)-\left(v^2+w^2+x^2+y^2+z^2+(v+w)^2+\right. \left.(w+x)^2+(x+y)^2+(y+z)^2+(z+v)^2\right)=2 y(v+w+x+y+z)<0$.
+由此可得,这一整体每经过一次变换都要减小,但最初这一整体是正整数, 经变换后还是正整数, 而正整数是不能无限减小的, 所以变换必定有终止的时候.
+%%<REMARK>%%
+注:题目所述的操作有两个明显的特征:一是整体上 5 个顶点上的数字之和不变; 二是从局部看, 若 $y<0$, 则经过操作后变成 $y>0$, 但两侧的数字也减小了, 是否会产生新的负数未尝可知.
+如此讨论下去无济于事.
+上述解答中找到了"五个数的平方和再加上每相邻两数和的平方"这一整体结构, 它比"5 个顶点上的数字之和"优越的地方在于: 前者在操作中具有递减性(当然这依赖于后者在操作中的不变性), 因此有助于判定操作的有限性.
+本题中,也可借助下面的整体结构 $f$ 来证明操作的有限性:
+将 5 个整数依次写为 $u_1, u_2, u_3, u_4, u_5$, 其中 $u_1, u_5$ 也相邻.
+令
+$$
+\begin{aligned}
+f\left(u_1, u_2, u_3, u_4, u_5\right)= & \sum_{i=1}^5\left|u_i\right|+\sum_{i=1}^5\left|u_i+u_{i+1}\right|+\sum_{i=1}^5 \mid u_i+u_{i+1}+ \\
+& u_{i+2}\left|+\sum_{i=1}^5\right| u_i+u_{i+1}+u_{i+2}+u_{i+3} \mid,
+\end{aligned}
+$$
+其中 $u_{5+i}=u_i, i=1,2,3$. 可证明每次操作使 $f$ 的值严格递减.
+纵观两个方法, 关键在于找到一个恰当的整体化的结构, 这种结构往往具有一定的对称美.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 在 $n \times n(n \geqslant 4)$ 的表格的一条对角线上的每个方格内有一个 "十",其余每个方格内有一个"一". 将任一行或一列中所有的正负号变号称为一次操作.
+证明: 经过任意有限次操作后, 表格中至少有 $n$ 个"+". 
+%%<SOLUTION>%%
+证明:用 $(i, j)$ 表示第 $i$ 行第 $j$ 列的方格.
+不妨设一开始表格内 $(i, i)$ 中有 "+", $i=1,2, \cdots, n$. 对每个组
+$$
+\{(a, c),(a, d),(b, c),(b, d)\}, 1 \leqslant a<b \leqslant n, 1 \leqslant c<d \leqslant n, \label{eq1}
+$$
+每次操作不改变这四个位置中"+"的个数的奇偶性.
+在 式\ref{eq1} 中取 $a=c=i, b \equiv i+1(\bmod n), d \equiv i+2(\bmod n), i=1,2, \cdots,n$, 由 $n \geqslant 4$ 易知每个组在初始时刻恰有一个位置含"十", 故以后永远至少一个位置含 "十", 且这 $n$ 个组两两不交, 所以任何时刻表格中至少还有 $n$ 个 "+".
+%%<REMARK>%%
+注:上述证法中,我们构建了 $n$ 个两两不交的"小组". 这些"小组"既是局部的整体,也是整体的局部:在每个小组中, "+"号的个数具有整体奇偶不变性,因此任何时刻至少含有一个"+"号; 但从整个表格来讲, 小组则是"局部", 最后是通过局部贡献足够的"+"号使问题得以解决.
+从中可以看出,整体与局部具有辩证统一性.
+我们所要寻找的"恰当的整体"或许正是某些"恰当的局部",解题时应当把握好这种灵活性.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 求证: 对任意 $n$ 个实数 $r_1, r_2, \cdots, r_n$, 总能找到 $\{1,2, \cdots, n\}$ 的一个子集 $S$, 满足对任意 $i \in\{1,2, \cdots, n-2\}$, 有 $1 \leqslant|S \cap\{i, i+1, i+2\}| \leqslant$ 2 (其中 $|X|$ 代表有限集 $X$ 的元素个数), 且 $\left|\sum_{i \in S} r_i\right| \geqslant \frac{1}{6} \sum_{i=1}^n\left|r_i\right|$.
+%%<SOLUTION>%%
+证明:记 $s=\sum_{i=1}^n\left|r_i\right|$, 并设 $s_i=\sum_{\substack{r_j \geqslant 0, j \equiv i(\bmod 3)}} r_j, t_i=\sum_{\substack{r_j<0, j \equiv i(\bmod 3)}} r_j$, 其中 $i=1,2$, 3 , 则 $s=s_1+s_2+s_3-t_1-t_2-t_3$, 故有
+$$
+2 s=\left(s_1+s_2\right)+\left(s_2+s_3\right)+\left(s_3+s_1\right)-\left(t_1+t_2\right)-\left(t_2+t_3\right)-\left(t_3+t_1\right) .
+$$
+从上式看出: 存在 $a, b \in\{1,2,3\}, a \neq b$, 使得 $s_a+s_b \geqslant \frac{s}{3}$ 与 $t_a+t_b \leqslant-\frac{s}{3}$ 中至少有一个成立.
+不失一般性, 设 $\left|s_a+s_b\right| \geqslant\left|t_a+t_b\right|$, 则 $s_a+s_b \geqslant \frac{s}{3}$, 因此
+$$
+\left|s_a+s_b+t_a\right|+\left|s_a+s_b+t_b\right|=2\left(s_a+s_b\right)+\left(t_a+t_b\right) \geqslant \frac{s}{3} .
+$$
+若 $\left|s_a+s_b+t_a\right| \geqslant\left|s_a+s_b+t_b\right|$, 则 $\left|s_a+s_b+t_a\right| \geqslant \frac{s}{6}$, 取集合 $S=\{j \mid j \equiv a(\bmod 3) 1 \leqslant j \leqslant n\} \cup\left\{j \mid r_j \geqslant 0, j \equiv b(\bmod 3) 1 \leqslant j \leqslant n\right\} ;$ 若 $\left|s_a+s_b+t_a\right|<\left|s_a+s_b+t_b\right|$, 则 $\left|s_a+s_b+t_b\right| \geqslant \frac{s}{6}$, 取集合 $S=\left\{j \mid r_j \geqslant 0, j \equiv a(\bmod 3) 1 \leqslant j \leqslant n\right\} \cup\{j \mid j \equiv b(\bmod 3) 1 \leqslant j \leqslant n\}$. 无论何种情形, $1 \leqslant|S \cap\{i, i+1, i+2\}| \leqslant 2$ 对任何 $i \in\{1,2, \cdots, n-2\}$ 成立, 且此时 $\left|\sum_{i \in S} r_i\right| \geqslant \frac{s}{6}=\frac{1}{6} \sum_{i=1}^n\left|r_i\right|$.
+%%<REMARK>%%
+注:本题中, $1 \leqslant|S \cap\{i, i+1, i+2\}| \leqslant 2$ 刻画了集合 $S$ 的局部性质, 而另一方面, $\left|\sum_{i \in S} r_i\right| \geqslant \frac{1}{6} \sum_{i=1}^n\left|r_i\right|$ 的右端涉及 $n$ 个实数 $r_1, r_2, \cdots, r_n$ 的整体性质.
+这就势必要求我们处理好整体与局部的关系.
+具体操作时, 我们先将 $r_1, r_2, \cdots, r_n$ 按下标除以 3 的余数划分为 3 组, 有利于构造满足局部性质的下标集 $S$, 再按 $r_1, r_2, \cdots, r_n$ 的正负特性将上述 3 组分为 6 组, 通过整体上 $s=s_1+s_2+s_3-t_1-t_2-t_3$ 的制约, 设法找到几个组, 它们含有的数 $r_i$ (下标集为 $S$ ) 进一步满足 $\left|\sum_{i \in S} r_i\right| \geqslant \frac{s}{6}$.
+从这个例子可以看出,整体与局部思想在解题中应当兼顾并有机结合.
+%%PROBLEM_END%%
+
+

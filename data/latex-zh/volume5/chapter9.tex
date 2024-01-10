@@ -1,0 +1,532 @@
+
+%%TEXT_BEGIN%%
+一些特殊的证明万法和技巧.
+不等式形形色色,变化万千,在前面几节里我们已经学过了不少证明方法和技巧,这一章我们再学习几种证题方法, 以供读者借鉴.
+9.1 断开求和法.
+断开求和法是指把和式分为两部分, 分别用不同的估计方法处理, 最后再结合起来给出证明.
+这种方法的技巧性很强, 请读者认真体会.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+9.2 枚举 法在应用枚举法证题时一定要细心, 不要漏了可能的情况.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+9.3 加"序"条件在无序的不等式中引人"序关系", 可以为我们增加有利条件, 帮助证题.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+9.4 一些非 "对称"不等式的处理方法我们经常会遇到一些不等式题, 其变元的地位不尽相同, 我们在处理时就不能再用"平均"的方法了, 而了解等号成立的条件是大有益处的.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 求证: $\left|\sum_{k=1}^n(-1)^k\left\{\frac{n}{k}\right\}\right| \leqslant 3 \sqrt{n}\left(n \in \mathbf{N}_{+}\right)$.
+%%<SOLUTION>%%
+分析:对于单调递降、正负交错的数列, 我们可以采用下列处理方法:
+设 $a_1>a_2>\cdots>a_k>0$, 则有
+$$
+-a_1<a_1-a_2+a_3-a_4+\cdots<a_1 . \label{eq1}
+$$
+式\ref{eq1}是不难证明的.
+回到原题,估计左边出现了两种可能的方法:
+(1) 平凡估计每一项, 都放到最大, 则左边 $\leqslant n$.
+(2) 利用式\ref{eq1}可得
+$$
+\begin{aligned}
+\left|\sum_{k=1}^n(-1)^k\left\{\frac{n}{k}\right\}\right| & =\left|\sum_{k=1}^n(-1)^k \frac{n}{k}-\sum_{k=1}^n(-1)^k\left[\frac{n}{k}\right]\right| \\
+& \leqslant\left|\sum_{k=1}^n(-1)^k \cdot \frac{n}{k}\right|+\left|\sum_{k=1}^n(-1)^k \cdot\left[\frac{n}{k}\right]\right| \\
+& \leqslant n+n=2 n .
+\end{aligned} \label{eq2}
+$$
+我们发现 (2)估计太宽松, 原因关键在于式\ref{eq2}中的第一项,也就是式\ref{eq1}中的 $a_1$ 太大了, 但是 (1) 估计的项数太多也不合适,故我们应考虑断开求和.
+证明
+$$
+\left|\sum_{k=A}^n(-1)^k \frac{n}{k}-\sum_{k=A}^n(-1)^k\left[\frac{n}{k}\right]\right|
+$$
+$$
+\begin{aligned}
+& \leqslant\left|\sum_{k=A}^n(-1)^k \cdot \frac{n}{k}\right|+\left|\sum_{k=A}^n(-1)^k\left[\frac{n}{k}\right]\right| \\
+& \leqslant \frac{n}{A}+\left[\frac{n}{A}\right] \leqslant \frac{2 n}{A} \text {. (A 为参数) }
+\end{aligned}
+$$
+故原式左边 $\leqslant\left|\sum_{k \leqslant A-1}(-1)^k\left\{\frac{n}{k}\right\}\right|+\left|\sum_{k \geqslant A}(-1)^k\left\{\frac{n}{k}\right\}\right|$
+$$
+\begin{aligned}
+& \leqslant\left|\sum_{k \leqslant A-1}(-1)^k\left\{\frac{n}{k}\right\}\right|+\left|\sum_{k \geqslant A}(-1)^k \frac{n}{k}\right|+\left|\sum_{k \geqslant A}(-1)^k\left[\frac{n}{k}\right]\right| \\
+& \leqslant(A-1)+\frac{2 n}{A} .
+\end{aligned}
+$$
+其中最后一步分别用了 (1) 和 (2)两种估计方法.
+取 $A=[\sqrt{2 n}]+1$, 则原式左边 $<\sqrt{2 n}+\sqrt{2 n}<3 \cdot \sqrt{n}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 实数 $a_1, a_2, \cdots, a_n(n \geqslant 3)$ 满足: $a_1+a_2+\cdots+a_n=0$, 且
+$$
+2 a_k \leqslant a_{k-1}+a_{k+1}, k=2,3, \cdots, n-1 .
+$$
+求最小的 $\lambda(n)$, 使得对所有 $k \in\{1,2, \cdots, n\}$, 都有
+$$
+\left|a_k\right| \leqslant \lambda(n) \cdot \max \left\{\left|a_1\right|,\left|a_n\right|\right\} .
+$$
+%%<SOLUTION>%%
+解:首先, 取 $a_1=1, a_2=-\frac{n+1}{n-1}, a_k=\frac{n+1}{n-1}+\frac{2 n(k-2)}{(n-1)(n-2)}, k=3$, $4, \cdots, n$, 则满足 $a_1+a_2+\cdots+a_n=0$ 及 $2 a_k \leqslant a_{k-1}+a_{k+1}, k=2,3, \cdots$, $n-1$. 此时
+$$
+\lambda(n) \geqslant \frac{n+1}{n-1} .
+$$
+下证当 $\lambda(n)=\frac{n+1}{n-1}$ 时, 对所有 $k \in\{1,2, \cdots, n\}$, 都有
+$$
+\left|a_k\right| \leqslant \lambda(n) \cdot \max \left\{\left|a_1\right|,\left|a_n\right|\right\} .
+$$
+因为 $2 a_k \leqslant a_{k-1}+a_{k+1}$, 所以 $a_{k+1}-a_k \geqslant a_k-a_{k-1}$, 于是
+$$
+a_n-a_{n-1} \geqslant a_{n-1}-a_{n-2} \geqslant \cdots \geqslant a_2-a_1,
+$$
+所以 $(k-1)\left(a_n-a_1\right)=(k-1)\left[\left(a_n-a_{n-1}\right)+\left(a_{n-1}-a_{n-2}\right)+\cdots+\left(a_2-a_1\right)\right]$
+$$
+\begin{aligned}
+& \geqslant(n-1)\left[\left(a_k-a_{k-1}\right)+\left(a_{k-1}-a_{k-2}\right)+\cdots+\left(a_2-a_1\right)\right] \\
+& =(n-1)\left(a_k-a_1\right),
+\end{aligned}
+$$
+故 $\quad a_k \leqslant \frac{k-1}{n-1}\left(a_n-a_1\right)+a_1=\frac{1}{n-1}\left[(k-1) a_n+(n-k) a_1\right], \label{(1)}$.
+同(1)可得, 对固定的 $k, k \neq 1, n$, 当 $1 \leqslant j \leqslant k$ 时,
+$$
+a_j \leqslant \frac{1}{k-1}\left[(j-1) a_k+(k-j) a_1\right],
+$$
+当 $k \leqslant j \leqslant n$ 时,
+$$
+a_j \leqslant \frac{1}{n-k}\left[(j-k) a_n+(n-j) a_k\right],
+$$
+所以 $\sum_{j=1}^k a_j \leqslant \frac{1}{k-1} \sum_{j=1}^k\left[(j-1) a_k+(k-j) a_1\right]=\frac{k}{2}\left(a_1+a_k\right), \label{(2)}$,
+$$
+\sum_{j=k}^n a_j \leqslant \frac{1}{n-k} \sum_{j=k}^n\left[(j-k) a_n+(n-j) a_k\right]=\frac{n+1-k}{2}\left(a_k+a_n\right),
+$$
+相加得
+$$
+\begin{aligned}
+a_k & =\sum_{j=1}^k a_j+\sum_{j=k}^n a_j \leqslant \frac{k}{2}\left(a_1+a_k\right)+\frac{n+1-k}{2}\left(a_k+a_n\right) \\
+& =\frac{k}{2} a_1+\frac{n+1}{2} a_k+\frac{n+1-k}{2} a_n,
+\end{aligned}
+$$
+所以
+$$
+a_k \geqslant-\frac{1}{n-1}\left[k a_1+(n+1-k) a_n\right] \text {. }
+$$
+由(1)(2)得
+$$
+\begin{aligned}
+\left|a_k\right| & \leqslant \max \left\{\frac{1}{n-1}\left|(k-1) a_n+(n-k) a_1\right|, \frac{1}{n-1}\left|k a_1+(n+1-k) a_n\right|\right\} \\
+& \leqslant \frac{n+1}{n-1} \max \left\{\left|a_1\right|,\left|a_n\right|\right\}, k=2,3, \cdots, n-1 .
+\end{aligned}
+$$
+综上所述, $\lambda(n)_{\min }=\frac{n+1}{n-1}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $a_1, a_2, \cdots, a_n$ 是正数, $\sum_{i=1}^n a_i=1$, 记 $k_i$ 是满足 $\frac{1}{2^i} \leqslant a_j<\frac{1}{2^{i-1}}$ 的 $a_j$ 的个数,求证:
+$$
+\sum_{i=1}^{\infty} \sqrt{\frac{k_i}{2^i}} \leqslant \sqrt{2}+\sqrt{\log _2 n} .
+$$
+%%<SOLUTION>%%
+分析:我们已经知道, $k_1+k_2+\cdots+k_l=n$ ( $l$ 已知 $)$,
+由(1)很自然地想到对原式的左端用 Cauchy 不等式来估计:
+$$
+\left(\sum_{i=1}^l \sqrt{\frac{k_i}{2^i}}\right)^2 \leqslant \sum_{i=1}^l k_i \cdot \sum_{i=1}^l \frac{1}{2^i} \leqslant n \cdot 1=n . \label{eq1}
+$$
+故左边 $\leqslant \sqrt{n}$.
+(注意: 若用最平凡的估计方法: $\sum_{i=1}^l \sqrt{\frac{k_i}{2^i}} \leqslant \sum_{i=1}^l\left(k_i+\frac{1}{2^i}\right) \cdot \frac{1}{2}=\frac{1}{2} n+ \frac{1}{2}$, 则得到一个更弱的结果.)
+条件应该怎么用呢?
+把每个 $a_j \in\left[\frac{1}{2^i}, \frac{1}{2^{i-1}}\right)$ 均缩小到 $\frac{1}{2^i}$, 得不等式
+$$
+\sum_{i=1}^l k_i \cdot \frac{1}{2^i} \leqslant 1
+$$
+于是得到第二种估计方法:
+$$
+\left(\sum_{i=1}^l \sqrt{\frac{k_i}{2^i}}\right)^2 \leqslant \sum_{i=1}^l 1 \cdot \sum_{i=1}^l \frac{k_i}{2^i} \leqslant l \leqslant n, \label{eq2}
+$$
+也有左边 $\leqslant \sqrt{n}$, 问题出在式\ref{eq1}的 $\sum_{i=1}^l \frac{1}{2^i}$ 与 式\ref{eq2} 的 $\sum_{i=1}^l 1$ 中, 故我们应该考虑断开求和.
+证明
+$$
+\sum_{i=1}^l \sqrt{\frac{k_i}{2^i}}=\sum_{i \leqslant t} \sqrt{\frac{k_i}{2^i}}+\sum_{i>t} \sqrt{\frac{k_i}{2^i}},
+$$
+其中
+$$
+\left(\sum_{i \leqslant t} \sqrt{\frac{k_i}{2^i}}\right)^2 \leqslant \sum_{i=1}^t 1 \cdot \sum_{i=1}^t \frac{k_i}{2^i} \leqslant t,
+$$
+即
+$$
+\begin{aligned}
+& \sum_{i \leqslant t} \sqrt{\frac{k_i}{2^i}} \leqslant \sqrt{t}, \\
+& )^2 \leqslant \sum_{i=t+1}^l k_i \cdot \sum_{i=t+1}^l \frac{1}{2^i} \leqslant n \cdot \frac{1}{2^t},
+\end{aligned}
+$$
+$$
+\begin{gathered}
+\left(\sum_{i>t} \sqrt{\frac{k_i}{2^i}}\right)^2 \leqslant \sum_{i=t+1}^l k_i \cdot \sum_{i=t+1}^l \frac{1}{2^i} \leqslant n \cdot \frac{1}{2^t}, \\
+\sum_{i>t} \sqrt{\frac{k_i}{2^i}} \leqslant \sqrt{n} \cdot \frac{1}{2^{\frac{t}{2}}},
+\end{gathered}
+$$
+因此原不等式左边 $\leqslant \sqrt{t}+\frac{\sqrt{n}}{2^{\frac{t}{2}}}$.
+取 $t=\left[\log _2 n\right]$, 即有原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设正整数 $n \geqslant 2, x_1, x_2, \cdots, x_n \in[0,1]$, 求证: 存在某个 $i, 1 \leqslant i \leqslant n-1$, 使得不等式
+$$
+x_i\left(1-x_{i+1}\right) \geqslant \frac{1}{4} x_1\left(1-x_n\right)
+$$
+成立.
+%%<SOLUTION>%%
+证明:令 $m=\min \left\{x_1, x_2, \cdots, x_n\right\}$, 且设 $x_r=m, 0 \leqslant m \leqslant 1$, 分两种情况讨论:
+(1) 如果 $x_2 \leqslant \frac{1}{2}(m+1)$, 取 $i=1$, 就有
+$$
+\begin{aligned}
+x_1\left(1-x_2\right) & \geqslant x_1\left(1-\frac{1+m}{2}\right)=\frac{1}{2} x_1(1-m) \\
+& \geqslant \frac{1}{2} x_1\left(1-x_n\right)\left(\text { 利用了 } m \leqslant x_n \leqslant 1\right) \\
+& \geqslant \frac{1}{4} x_1\left(1-x_n\right) .
+\end{aligned}
+$$
+(2) 如果 $x_2>\frac{1}{2}(m+1)$, 则有以下两种可能:
+(i) $x_1=m, x_2>\frac{1}{2}(1+m), \cdots, x_n>\frac{1}{2}(1+m)$, 设 $x_k$ 是 $x_2, x_3, \cdots$, $x_n$ 中的最小值.
+取 $i=k-1$, 就有
+$$
+x_{k-1}\left(1-x_k\right) \geqslant x_1\left(1-x_n\right) \geqslant \frac{1}{4} x_1\left(1-x_n\right),
+$$
+其中第一个不等号利用了 $x_{k-1} \geqslant x_1$ 及 $1-x_k \geqslant 1-x_n$.
+(ii) 存在某个 $t, 3 \leqslant t \leqslant n$, 使得 $x_t=m \leqslant \frac{1}{2}(1+m)$.
+于是一定存在某个正整数 $i, 2 \leqslant i \leqslant n-1$, 满足:
+$$
+x_i>\frac{1}{2}(1+m), x_{i+1} \leqslant \frac{1}{2}(1+m) .
+$$
+对于这个 $i$, 有
+$$
+\begin{aligned}
+x_i\left(1-x_{i+1}\right) & >\frac{1}{2}(1+m)\left(1-\frac{m+1}{2}\right) \\
+& =\frac{1}{2}(1+m) \cdot \frac{1}{2}(1-m) \\
+& =\frac{1}{4}\left(1-m^2\right) \geqslant \frac{1}{4}(1-m) \geqslant \frac{1}{4} x_1\left(1-x_n\right) .
+\end{aligned}
+$$
+综上所述, 结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 已知 $x_1 、 x_2 、 x_3 、 x_4 、 y_1 、 y_2$ 满足:
+$$
+\begin{gathered}
+y_2 \geqslant y_1 \geqslant x_4 \geqslant x_3 \geqslant x_2 \geqslant x_1 \geqslant 2, \\
+x_1+x_2+x_3+x_4 \geqslant y_1+y_2,
+\end{gathered}
+$$
+求证: $x_1 x_2 x_3 x_4 \geqslant y_1 y_2$.
+%%<SOLUTION>%%
+证明:保持 $y_1+y_2$ 不变, 将 $y_1$ 调大至 $y_1 、 y_2$ 相等, 且相等于 $\frac{y_1+y_2}{2}$, 则 $y_1 y_2$ 在此过程中增大, 因此我们只需对 $y_1=y_2=y$ 的情况作出证明.
+即已知
+$$
+\begin{gathered}
+y \geqslant x_4 \geqslant x_3 \geqslant x_2 \geqslant x_1 \geqslant 2, \\
+x_1+x_2+x_3+x_4 \geqslant 2 y,
+\end{gathered}
+$$
+要证明:
+$$
+x_1 x_2 x_3 x_4 \geqslant y^2 \text {. }
+$$
+下面分三种情况讨论:
+(1) $y \leqslant 4$, 显然 $x_1 x_2 x_3 x_4 \geqslant 2^4 \geqslant y^2$.
+(2) $4<y \leqslant 6$. 保持 $x_1+x_4, x_2+x_3$ 不变, 将 $x_1 、 x_2$ 调整为 2 , 接着保持 $x_3+x_4$ 不变,再将 $x_3$ 调整为 2 .
+由于 $x_1 x_2 x_3 x_4$ 在调整过程中减小,故只需证明:
+$$
+2^3 \cdot x_4 \geqslant y^2 \text {. }
+$$
+而
+$$
+2^3 \cdot x_4 \geqslant 8(2 y-6) \text {, }
+$$
+故只需证明 $8(2 y-6) \geqslant y^2$, 即 $(y-4)(y-12) \leqslant 0$.
+由于 $4<y \leqslant 6$, 上式显然成立.
+(3) $y>6$. 保持和 $x_1+x_4 、 x_2+x_3$ 不变, 分情况作调整:
+(i) 如果这两个和均 $\geqslant y+2$, 则将 $x_4 、 x_3$ 调整为 $y$, 此时结论显然成立.
+(ii) 如果两个和中只有 1 个 $\geqslant y+2$. 不妨设 $x_1+x_4 \geqslant y+2$, 则将 $x_4$ 调整为 $y, x_2$ 调整为 2 , 再保持 $x_1+x_3$ 不变, 将 $x_1$ 调整为 2 , 则 $x_1 x_2 x_3 x_4 \geqslant 2^2 y(y-4)>y^2$, 结论成立.
+(iii) 如果两个和都 $<y+2$, 则将 $x_1 、 x_2$ 调整为 2 , 再保持 $x_3+x_4$ 不变, 将其中较大的那个调整为 $y$, 同样有 $x_1 x_2 x_3 x_4 \geqslant 2^2 y(y-4)>y^2$, 故结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $a_1, a_2, \cdots, a_n(n \geqslant 3)$ 是实数,求证:
+$$
+\sum_{i=1}^n a_i^2-\sum_{i=1}^n a_i a_{i+1} \leqslant\left[\frac{n}{2}\right](M-m)^2,
+$$
+其中 $a_{n+1}=a_1, M=\max _{1 \leqslant i \leqslant n} a_i, m=\min _{1 \leqslant i \leqslant n} a_i,[x]$ 表示不超过 $x$ 的最大整数.
+%%<SOLUTION>%%
+证明:若 $n=2 k$ ( $k$ 为正整数), 则
+$$
+2\left(\sum_{i=1}^n a_i^2-\sum_{i=1}^n a_i a_{i+1}\right)=\sum_{i=1}^n\left(a_i-a_{i+1}\right)^2 \leqslant n \times(M-m)^2,
+$$
+从而
+$$
+\sum_{i=1}^n a_i^2-\sum_{i=1}^n a_i a_{i+1} \leqslant \frac{n}{2}(M-m)^2=\left[\frac{n}{2}\right](M-m)^2 .
+$$
+若 $n=2 k+1$ ( $k$ 为正整数), 则对于循环排列的 $2 k+1$ 个数, 必有连续三项递增或递减 (因为 $\prod_{i=1}^{2 k+1}\left(a_i-a_{i-1}\right)\left(a_{i+1}-a_i\right)=\prod_{i=1}^{2 k+1}\left(a_i-a_{i-1}\right)^2 \geqslant 0$, 所以不可能对于每一个 $i$, 都有 $a_i-a_{i-1}$ 与 $a_{i+1}-a_i$ 异号), 不妨设为 $a_1 、 a_2 、 a_3$, 则有
+$$
+\left(a_1-a_2\right)^2+\left(a_2-a_3\right)^2 \leqslant\left(a_1-a_3\right)^2,
+$$
+从而
+$$
+2\left(\sum_{i=1}^n a_i^2-\sum_{i=1}^n a_i a_{i+1}\right)=\sum_{i=1}^n\left(a_i-a_{i+1}\right)^2 \leqslant\left(a_1-a_3\right)^2+\sum_{i=3}^n\left(a_i-a_{i+1}\right)^2,
+$$
+这就将问题化为了 $2 k$ 个数的情形.
+我们有
+$$
+2\left(\sum_{i=1}^n a_i^2-\sum_{i=1}^n a_i a_{i+1}\right) \leqslant\left(a_1-a_3\right)^2+\sum_{i=3}^n\left(a_i-a_{i+1}\right)^2 \leqslant 2 k(M-m)^2,
+$$
+即
+$$
+\left(\sum_{i=1}^n a_i^2-\sum_{i=1}^n a_i a_{i+1}\right) \leqslant k(M-m)^2=\left[\frac{n}{2}\right](M-m)^2,
+$$
+证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. (1) 若 $x 、 y 、 z$ 为不全相等的正整数,求 $(x+y+z)^3-27 x y z$ 的最小值;
+(2) 若 $x 、 y 、 z$ 为全不相等的正整数,求 $(x+y+z)^3-27 x y z$ 的最小值.
+%%<SOLUTION>%%
+解:(1)
+$$
+\begin{aligned}
+& (x+y+z)^3-27 x y z \\
+= & x^3+y^3+z^3+3\left(x^2 y+y^2 z+z^2 x\right)+3\left(x y^2+y z^2+z x^2\right)+6 x y z \\
+& -27 x y z \\
+= & (x+y+z)\left(x^2+y^2+z^2-x y-y z-z x\right)+3\left(x^2 y+y^2 z+\right.
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& \left.z^2 x+x y^2+y z^2+z x^2-6 x y z\right) \\
+= & \frac{x+y+z}{2}\left[(x-y)^2+(y-z)^2+(z-x)^2\right]+3\left[x(y-z)^2+\right. \\
+& \left.y(z-x)^2+z(x-y)^2\right] .
+\end{aligned}
+$$
+不妨设 $x \geqslant y \geqslant z$, 则 $z \geqslant 1, y \geqslant 1, x \geqslant 2$.
+于是
+$$
+\begin{aligned}
+& (x+y+z)^3-27 x y z \\
+\geqslant & \frac{1+1+2}{2} \cdot\left[(x-y)^2+(y-z)^2+(z-x)^2\right]+3\left[(y-z)^2+\right. \\
+& \left.(z-x)^2+(x-y)^2\right] \\
+= & 5 \cdot\left[(x-y)^2+(y-z)^2+(z-x)^2\right] \\
+\geqslant & 10 .
+\end{aligned}
+$$
+因此 $(x+y+z)^3-27 x y z \geqslant 10$, 且等号当 $(x, y, z)=(2,1,1)$ 时取到.
+(2) 不妨设 $x>y>z$, 则 $z \geqslant 1, y \geqslant 2, x \geqslant 3$.
+由第(1)小题,
+$$
+\begin{aligned}
+(x+y+z)^3-27 x y z \geqslant & \frac{6}{2} \cdot\left[(x-y)^2+(y-z)^2+(z-x)^2\right]+3 \cdot[3(y \\
+& \left.-z)^2+2(z-x)^2+(x-y)^2\right] \\
+\geqslant & 3 \cdot\left(1^2+1^2+2^2\right)+3 \cdot\left(3 \cdot 1^2+2 \cdot 2^2+1^2\right) \\
+= & 54 .
+\end{aligned}
+$$
+因此 $(x+y+z)^3-27 x y z \geqslant 54$, 且等号当 $(x, y, z)=(3,2,1)$ 时取到.
+%%<REMARK>%%
+说明第(1) 小题等价于下列命题:
+对于不全相等的正整数 $a 、 b 、 c$, 有
+$$
+\frac{a+b+c}{3} \geqslant \sqrt[3]{a b c+\frac{10}{27}} . \label{eq1}
+$$
+当然, 式\ref{eq1}也可以用以下方法(增量代换)来证明:
+证明不妨设 $1 \leqslant a \leqslant b \leqslant c, b=a+x, c=a+y$. 则 $x, y \geqslant 0$, 且 $x$ 、 $y$ 不全为 $0(x \leqslant y)$.
+此时, \ref{eq1}式等价于证明:
+$$
+9 a\left(x^2-x y+y^2\right)+(x+y)^3 \geqslant 10 .
+$$
+由于 $a \geqslant 1, x^2-x y+y^2 \geqslant 1, x+y \geqslant 1$, 上式显然成立, 并且等号当 $a=1, x^2-x y+y^2=1, x+y=1$, 即 $(a, x, y)=(1,0,1)$ 时取到.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设 $a_1, a_2, \cdots$ 为无限实数序列, 满足: 存在一个实数 $c$, 对所有 $i$ 有
+$0 \leqslant a_i \leqslant c$, 并且 $\left|a_i-a_j\right| \geqslant \frac{1}{i+j}$ 成立 (对所有 $i \neq j$ ), 求证: $c \geqslant 1$.
+%%<SOLUTION>%%
+证明:对固定的 $n \geqslant 2$, 设序列前 $n$ 项可排序为
+$$
+0 \leqslant a_{\sigma(1)}<a_{\sigma(2)}<\cdots<a_{\sigma(n)} \leqslant c,
+$$
+其中, $\sigma(1), \sigma(2), \sigma(3), \cdots, \sigma(n)$ 是 $1,2,3, \cdots, n$ 的一个排列.
+于是, $c \geqslant a_{\sigma(n)}-a_{\sigma(1)}$
+$$
+\begin{aligned}
+& =\left(a_{\sigma(n)}-a_{\sigma(n-1)}\right)+\left(a_{\sigma(n-1)}-a_{\sigma(n-2)}\right)+\cdots+\left(a_{\sigma(2)}-a_{\sigma(1)}\right) \\
+& \geqslant \frac{1}{\sigma(n)+\sigma(n-1)}+\frac{1}{\sigma(n-1)+\sigma(n-2)}+\cdots+\frac{1}{\sigma(2)+\sigma(1)} .
+\end{aligned} \label{eq1}
+$$
+利用 Cauchy 不等式可得:
+$$
+\begin{gathered}
+\left(\frac{1}{\sigma(n)+\sigma(n-1)}+\cdots+\frac{1}{\sigma(2)+\sigma(1)}\right)((\sigma(1)+\sigma(n-1))+\cdots+ \\
+(\sigma(2)+\sigma(1))) \geqslant(n-1)^2 .
+\end{gathered}
+$$
+所以
+$$
+\begin{aligned}
+& \frac{1}{\sigma(n)+\sigma(n-1)}+\cdots+\frac{1}{\sigma(2)+\sigma(1)} \\
+\geqslant & \frac{(n-1)^2}{2(\sigma(1)+\cdots+\sigma(n))-\sigma(1)-\sigma(n)} \\
+= & \frac{(n-1)^2}{n(n+1)-\sigma(1)-\sigma(n)} \\
+\geqslant & \frac{(n-1)^2}{n^2+n-3} \geqslant \frac{n-1}{n+3} .
+\end{aligned}
+$$
+故由\ref{eq1}式知 $c \geqslant 1-\frac{4}{n+3}$ 对所有 $n \geqslant 2$ 成立, 因此 $c \geqslant 1$, 结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设 $a \leqslant b<c$ 是直角三角形 $A B C$ 的三边长, 求最大的常数 $M$, 使得 $\frac{1}{a}+\frac{1}{b}+\frac{1}{c} \geqslant \frac{M}{a+b+c}-$ 恒成立.
+%%<SOLUTION>%%
+分析:我们从熟悉的等腰直角三角形人手, 这时, 仅 $a$ 与 $b$ 地位相同, 在证明过程中应注意这一点.
+解当 $a=b=\frac{\sqrt{2}}{2} c$, 即 $\triangle A B C$ 为等腰直角三角形时, 有
+$$
+M \leqslant 2+3 \sqrt{2} .
+$$
+下面证明
+$$
+\frac{1}{a}+\frac{1}{b}+\frac{1}{c} \geqslant \frac{2+3 \sqrt{2}}{a+b+c}
+$$
+即
+$$
+a^2(b+c)+b^2(c+a)+c^2(a+b) \geqslant(2+3 \sqrt{2}) a b c
+$$
+恒成立.
+$$
+\begin{aligned}
+\text { 上式左端 } & =c\left(a^2+b^2\right)+\left(a^2 b+b \cdot \frac{c^2}{2}\right)+\left(a b^2+\frac{c^2}{a \cdot 2}\right)+\frac{1}{2} c^2(a+b) \\
+& \geqslant 2 a b c+\sqrt{2} a b c+\sqrt{2} a b c+\frac{1}{2} c \cdot \sqrt{a^2+b^2} \cdot(a+b) \\
+& \geqslant 2 a b c+2 \sqrt{2} a b c+\frac{1}{2} c \cdot \sqrt{2 a b} \cdot 2 \sqrt{a b} \\
+& =(2+3 \sqrt{2}) a b c .
+\end{aligned}
+$$
+故
+$$
+M_{\max }=2+3 \sqrt{2} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 实数 $a$ 使得对于任意实数 $x_1 、 x_2 、 x_3 、 x_4 、 x_5$, 不等式
+$$
+x_1^2+x_2^2+x_3^2+x_4^2+x_5^2 \geqslant a\left(x_1 x_2+x_2 x_3+x_3 x_4+x_4 x_5\right)
+$$
+都成立, 求 $a$ 的最大值.
+%%<SOLUTION>%%
+解:$a$ 的最大值为 $\frac{2 \sqrt{3}}{3}$.
+因为当 $x_1=1, x_2=\sqrt{3}, x_3=2, x_4=\sqrt{3}, x_5=1$ 时, 得 $a \leqslant \frac{2}{\sqrt{3}}$.
+又由于当 $a=\frac{2}{\sqrt{3}}$ 时,不等式恒成立.
+事实上
+$$
+\begin{aligned}
+x_1^2+x_2^2+x_3^2+x_4^2+x_5^2 & =\left(x_1^2+\frac{x_2^2}{3}\right)+\left(\frac{2 x_2^2}{3}+\frac{x_3^2}{2}\right)+\left(\frac{x_3^2}{2}+\frac{2 x_4^2}{3}\right)+\left(\frac{x_4^2}{3}+x_5^2\right) \\
+& \geqslant \frac{2}{\sqrt{3}} x_1 x_2+\frac{2}{\sqrt{3}} x_2 x_3+\frac{2}{\sqrt{3}} x_3 x_4+\frac{2}{\sqrt{3}} x_4 x_5
+\end{aligned}
+$$
+所以, $a$ 的最大值为 $\frac{2 \sqrt{3}}{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 已知 $a 、 b 、 c$ 为正数, $a+b+c=10$, 且 $a \leqslant 2 b, b \leqslant 2 c, c \leqslant 2 a$, 求 $a b c$ 的最小值.
+%%<SOLUTION>%%
+解:令 $x=2 b-a, y=2 c-b, z=2 a-c$,
+则
+$$
+x+y+z=10, x \geqslant 0, y \geqslant 0, z \geqslant 0,
+$$
+且 $\quad a=\frac{x+2 y+4 z}{7}, b=\frac{y+2 z+4 x}{7}, c=\frac{z+2 x+4 y}{7}$,
+故 $\quad a b c=\frac{1}{343} \cdot[(x+2 y+4 z)(y+2 z+4 x)(z+2 x+4 y)]$,
+而
+$$
+\begin{aligned}
+& (x+2 y+4 z)(y+2 z+4 x)(z+2 x+4 y) \\
+= & (10+y+3 z)(10+z+3 x)(10+x+3 y) \\
+= & 1000+400(x+y+z)+130(x y+y z+z x)+30\left(x^2+y^2+z^2\right)+\left(3 y^2 z\right. \\
+& \left.+3 x^2 y+9 x y^2+3 x z^2+9 y z^2+9 x^2 z+28 x y z\right) \\
+= & 1000+4000+30(x+y+z)^2+\left[70(x y+y z+z x)+3\left(y^2 z+x^2 y+\right.\right. \\
+& \left.\left.x z^2\right)+9\left(x y^2+y z^2+x^2 z\right)+28 x y z\right] \\
+\geqslant & 8000 .
+\end{aligned}
+$$
+等号当且仅当 $x=y=0, z=10$ 时取到, 此时 $a=\frac{40}{7}, b=\frac{20}{7}, c=\frac{10}{7}$.
+故 $a b c_{\min }=\frac{8000}{343}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 设 $a, b, c, d \in \mathbf{R}^{+}, a b c d=1$, 令 $T=a(b+c+d)+b(c+d)+c d$.
+(1) 求 $a^2+b^2+T$ 的最小值;
+(2) 求 $a^2+b^2+c^2+T$ 的最小值.
+%%<SOLUTION>%%
+分析:对 (1), 我们把 $a 、 b$ 放在一起, $c 、 d$ 放在一起考虑, 对 $T$ 作适当变形.
+对 (2),则应看到 $a 、 b 、 c$ 的地位是相同的.
+解 (1)
+$$
+\begin{aligned}
+a^2+b^2+T & =a^2+b^2+(a+b)(c+d)+a b+c d \\
+& \geqslant 2 a b+2 \sqrt{a b} \cdot 2 \sqrt{c d}+a b+c d \\
+& =4+3 a b+c d \geqslant 4+2 \cdot \sqrt{3 a b c d} \\
+& =4+2 \sqrt{3} .
+\end{aligned}
+$$
+当 $a=b, c=d, 3 a b=c d$, 即 $a=b=\left(\frac{1}{3}\right)^{\frac{1}{4}}, c=d=3^{\frac{1}{4}}$ 时等号成立.
+所以, $a^2+b^2+T$ 的最小值为 $4+2 \sqrt{3}$.
+$$
+\begin{aligned}
+a^2+b^2+c^2+T & =a^2+b^2+c^2+(a+b+c) d+a b+b c+c a \\
+& \geqslant 3 \sqrt[3]{a^2 b^2 c^2}+3 \sqrt[3]{a b c} \cdot d+3 \cdot \sqrt[3]{(a b c)^2} \\
+& =3 \cdot\left[2 \sqrt[3]{(a b c)^2}+\sqrt[3]{a b c} \cdot d\right] \\
+& \geqslant 3 \cdot 2 \cdot \sqrt{2 \sqrt[3]{(a b c)^2}} \cdot \sqrt[3]{a b c} \cdot d \\
+& =6 \sqrt{2}
+\end{aligned}
+$$
+等号当 $a=b=c=\left(\frac{1}{2}\right)^{\frac{1}{4}}, d=2^{\frac{3}{1}}$ 时取到.
+所以, $a^2+b^2+c^2+T$ 的最小值为 $6 \sqrt{2}$.
+%%PROBLEM_END%%
+
+

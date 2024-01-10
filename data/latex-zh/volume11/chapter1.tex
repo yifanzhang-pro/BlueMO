@@ -1,0 +1,430 @@
+
+%%TEXT_BEGIN%%
+计数原理和计数公式.
+一、加法原理和乘法原理加法原理 如果做一件事, 完成它有 $m$ 类不同的方法, 在第 1 类方法中有 $n_1$ 种不同的方法, 在第 2 类方法中有 $n_2$ 种不同的方法 ......在第 $m$ 类方法中有 $n_m$ 种不同的方法, 那么完成这件事共有 $n_1+n_2+\cdots+n_m$ 种不同的方法.
+乘法原理如果做一件事, 完成它需要 $m$ 个步骤, 做第 1 步有 $n_1$ 种不同的方法,做第 2 步有 $n_2$ 种不同的方法 $\cdots \cdots$. 做第 $m$ 步有 $n_m$ 种不同的方法, 那么完成这件事共有 $n_1 n_2 \cdots n_m$ 种不同的方法.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+二、无重复的排列与组合排列 从 $n$ 个不同元素中取 $m(m \leqslant n)$ 个不同元素, 按照一定的顺序排成一列, 叫做从 $n$ 个不同元素中取出 $m$ 个元素的一个排列.
+因为这个排列中无重复元素, 故又叫做无重复的排列.
+从 $n$ 个不同元素中取 $m(m \leqslant n)$ 个不同元素的排列的个数记为 $\mathrm{A}_n^m$ 或 $\mathrm{P}_n^m$, 则
+$$
+\mathrm{A}_n^m=n(n-1)(n-2) \cdots(n-m+1)=\frac{n !}{(n-m) !},
+$$
+其中 $m \leqslant n$, 并约定 $0 !=1$.
+特别地, 当 $m=n$ 时, 从 $n$ 个不同元素中取 $n$ 个不同元素的排列, 叫做 $n$ 个不同元素的全排列.
+$n$ 个不同元素的全排列的个数为
+$$
+\mathrm{A}_n^n=n \cdot(n-1) \cdot(n-2) \cdot \cdots \cdot 3 \cdot 2 \cdot 1=n ! .
+$$
+组合从 $n$ 个不同元素中取出 $m(m \leqslant n)$ 个不同元素并成一组, 叫做从 $n$ 个不同元素中取出 $m$ 个元素的一个组合.
+因为这个组合中无重复元素, 故又叫做无重复的组合.
+从 $n$ 个不同元素中取出 $m(m \leqslant n)$ 个元素的组合的个数记为 $\mathrm{C}_n^m$ 或 $\left(\begin{array}{c}n \\ m\end{array}\right)$, 则
+$$
+\mathrm{C}_n^m=\frac{\mathrm{A}_n^m}{\mathrm{~A}_m^m}=\frac{n(n-1) \cdots \cdots(n-m+1)}{m !}=\frac{n !}{m !(n-m) !} .
+$$
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+三、可重复的排列与组合可重复的排列 从 $n$ 个不同元素中取 $m$ 个元素 (同一元素允许重复取出), 按照一定的顺序排成一列, 叫做从 $n$ 个不同元素中取 $m$ 个元素的可重复排列, 这种排列的个数为 $n^m$.
+这个结论不难用乘法原理证明.
+可重复的组合从 $n$ 个不同元素中取 $m$ 个元素 (同一元素允许重复取出)并成一组, 叫做从 $n$ 个不同元素中取 $m$ 个元素的可重复组合, 这种组合的个数为 $\mathrm{C}_{n+m-1}^n$.
+证明用 $1,2, \cdots, n$ 表示 $n$ 个不同元素, 这时从这 $n$ 个不同元素中取 $m$ 个元素的可重复组合具有下列形式:
+$$
+\left\{i_1, i_2, \cdots, i_m\right\}\left(1 \leqslant i_1 \leqslant i_2 \leqslant \cdots \leqslant i_m \leqslant n\right) .
+$$
+因为允许重复选取,其中等号可以成立.
+将上述每个组合自左向右逐个分别加上: $0,1,2, \cdots,(m-1)$, 得到 $\left\{j_1, j_2, \cdots, j_m\right\}$, 其中 $j_1=i_1, j_2=i_2+1, \cdots, j_m=i_m+(m-1)$, 满足 $1 \leqslant j_1<j_2<\cdots<j_m \leqslant n+m-1$. 而 $\left\{j_1, j_2, \cdots, j_m\right\}$ 恰是从 $n+m-1$ 个不同元素 $1,2,3, \cdots, n+m-1$ 中取 $m$ 个不同元素的组合.
+所以从 $n$ 个不同元素中取 $m$ 个元素的可重复的组合数为 $\mathrm{C}_{n+m-1}^m$.
+不全相异元素的全排列如果 $n$ 个元素中,分别有 $n_1, n_2, \cdots, n_k$ 个元素相同, 且 $n_1+n_2+\cdots+n_k=n$, 则这 $n$ 个元素的全排列称为不全相异元素的全排列, 其不同的排列个数记为 $\left(\begin{array}{cccc} & n & & \\ n_1 & n_2 & \cdots & n_k\end{array}\right)$, 则 $\left(\begin{array}{cccc} & n & \\ n_1 & n_2 & \cdots & n_k\end{array}\right)=\frac{n !}{n_{1} ! n_{2} ! \cdots n_{k} !}$.
+证明设符合条件的排列数为 $f$,因为每类相同元素交换排列顺序,仍属于同一种排列, 如果每类元素都换成互不相同的元素, 则有 $n_{1} ! \cdot n_{2} ! \cdots \cdots n_k$ ! 种变化,于是由乘法原理得 $n$ 个不同元素的排列数为 $f \cdot n_{1} ! \cdot n_{2} ! \cdots \cdots n_k$ !, 而实际上, $n$ 个不同元素的排列数应为 $n$ !, 于是得 $f \cdot n_{1} ! \cdot n_{2} ! \cdots \cdots n_{k} !=n !$, 故多组组合 把 $n$ 个相异元素分为 $k(k \leqslant n)$ 个按照一定顺序排列的组, 其中第 $i$ 组有 $n_i$ 个元素 $\left(i=1,2, \cdots, k, n_1+n_2+\cdots+n_k=n\right)$, 则不同的分证明 从 $n$ 个元素中取出 $n_1$ 个元素有 $\mathrm{C}_n^{n_1}$ 种方法, 从剩下 $n-n_1$ 个元素中取出 $n_2$ 个元素有 $\mathrm{C}_{n^2 n_1}^{n_n}$ 种方法, 再依次选出 $n_3, \cdots, n_k$ 个元素, 分别有 $\mathrm{C}_{n-n_1-n_2}^{n_3}, \cdots, \mathrm{C}_{n-n_1-\cdots-n_{k-1}}^{n_n}$ 种方法, 故由乘法原理得不同的分组方法的种数是
+$$
+\begin{aligned}
+& \mathrm{C}_n^{n_1} \cdot \mathrm{C}_{n n_1}^{n_2} \cdots \cdots \mathrm{C}_n^{n_k} n_1-\cdots-n_{k-1} \\
+= & \frac{n !}{n_{1} !\left(n-n_1\right) !} \cdot \frac{\left(n-n_1\right) !}{n_{2} !\left(n-n_1-n_2\right) !} \cdots \cdot \frac{\left(n-n_1-\cdots-n_{k-1}\right) !}{n_{k} !\left(n-n_1-\cdots-n_{k-1}-n_k\right) !} \\
+= & \frac{n !}{n_{1} ! n_{2} ! \cdots n_{k} !} .
+\end{aligned}
+$$
+注意多组组合与不全相异元素的全排列的计数公式完全相同,但它们的组合意义是不相同的.
+们也可用前面在证明不全相异元素的全排列公式的方法来证明多组组合公式,我们把这个证明留给读者自己去完成.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+四、相异元素的圆排列和项链数圆排列 将 $n$ 个不同元素不分首尾排成一圈,称为 $n$ 个相异元素的圆排列, 其排列种数为 $(n-1) !$.
+证明因为 $n$ 个不同的直线排列 $A_1 A_2 \cdots A_{n-1} A_n, A_2 A_3 \cdots A_n A_1$, $A_3 A_4 \cdots A_1 A_2, \cdots, A_n A_1 \cdots A_{n-2} A_{n-1}$, 分别将其首尾相连排成一圈得到的是同一种圆排列, 而 $n$ 个相异元素的全排列有 $n$ ! 个,故 $n$ 个相异元素的圆排列个数为 $\frac{n !}{n}=(n-1) !$.
+项链数将 $n$ 粒不同的珠子用线串成一副项链, 则得到的不同项链数当 $n=1$ 或 2 时为 1 , 当 $n \geqslant 3$ 时为 $\frac{1}{2}(n-1) !$.
+证明若 $n=1$ 或 2 , 则项链数显然为 1 . 当 $n \geqslant 3$ 时,若 $n$ 粒不同珠子的两个圆排列仅有顺时针与逆时针方向上的区别, 则这两个圆排列对应的是同一副项链.
+故当 $n \geqslant 3$ 时, 项链数应为对应的圆排列数的一半, 即为 $\frac{1}{2}(n -1) !$.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+五、一类不定方程的非负整数解的个数不定方程 $x_1+x_2+\cdots+x_m=n\left(m, n \in \mathbf{N}_{+}\right)$的非负整数解 $\left(x_1, x_2, \cdots\right.$, $\left.x_m\right)$ 的个数为 $\mathrm{C}_{n+m-1}^{m-1}$.
+证明将方程 $x_1+x_2+\cdots+x_m=n$ 的一组非负整数解 $\left(x_1, x_2, \cdots, x_m\right)$, 对应于一个由 $n$ 个圈" $\bigcirc$ "和 $m-1$ 条坚线"|"组成的排列其中第一条坚线"|"左侧有 $x_1$ 个圈" $\bigcirc$ ",第 $i$ 条坚线"|"与第 $i+1$ 条"|"之间数解 $\left(x_1, x_2, \cdots, x_m\right)$ 的个数等于 $n$ 个圈" $\bigcirc$ "和 $m-1$ 条坚线 "|"共 $n+m-1$ 个元素的直线排列的个数 $\mathrm{C}_{n+m-1}^n=\mathrm{C}_{n+m-1}^{m-1}$.
+注意不定方程 $x_1+x_2+\cdots+x_m=n$ 的非负整数解的个数与可重复组合的计数是相同的.
+推论不定方程 $x_1+x_2+\cdots+x_m=n\left(m, n \in \mathbf{N}_{+}, m \leqslant n\right)$ 的正整数解 $\left(x_1, x_2, \cdots, x_m\right)$ 的个数为 $\mathrm{C}_{n-1}^{m-1}$.
+证明令 $y_i=x_i-1(i=1,2, \cdots, m)$, 则 $y_1+y_2+\cdots+y_m=n-m$, 所以不定方程 $x_1+x_2+\cdots+x_m=n$ 的正整数解的个数 $S$ 等于不定方程 $y_1+ y_2+\cdots+y_m=n-m$ 的非负整数解的个数, 即 $S=\mathrm{C}_{n-m+m-1}^{m-1}=\mathrm{C}_{n-1}^{m-1}$.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+六、容斥原理容斥原理 设 $A_1, A_2, \cdots, A_n$ 为有限集合, 用 $\left|A_i\right|$ 表示集合 $A_i$ 中的元素个数,那么
+$$
+\begin{aligned}
+& \left|A_1 \cup A_2 \cup \cdots \cup A_n\right|=\sum_{i=1}^n\left|A_i\right|-\sum_{1 \leqslant i<j \leqslant n}\left|A_i \cap A_j\right|+ \\
+& \quad \sum_{1 \leqslant i<j<k \leqslant n}\left|A_i \cap A_j \cap A_k\right|-\cdots+(-1)^{n-1}\left|A_1 \cap A_2 \cap \cdots \cap A_n\right| . \label{eq1}
+\end{aligned}
+$$
+证明若 $a \in A_1 \cup A_2 \cup \cdots \cup A_n$, 则 $a$ 至少属于 $A_1, A_2, \cdots, A_n$ 中一个集合.
+不妨设 $a$ 属于 $A_1, A_2, \cdots, A_k(1 \leqslant k \leqslant n)$ 而不属于其他集合.
+于是 $a$ 在 \ref{eq1} 式左端计算了一次.
+而 $a$ 在右端的第一个和中计算了 $\mathrm{C}_k^1$ 次, 在第 2 个和中计算了 $\mathrm{C}_k^2$ 次, $\cdots$,可见, $a$ 在右端算式中, 它被计算的总次数为
+$$
+\begin{aligned}
+& \mathrm{C}_k^1-\mathrm{C}_k^2+\mathrm{C}_k^3-\cdots+(-1)^{k-1} \mathrm{C}_k^k \\
+= & \mathrm{C}_k^0-\left(\mathrm{C}_k^0-\mathrm{C}_k^1+\cdots+(-1)^k \mathrm{C}_k^k\right) \\
+= & 1-(1-1)^k \\
+= & 1 .
+\end{aligned}
+$$
+若 $a \notin A_1 \cup A_2 \cup \cdots \cup A_n$, 则显然 $a$ 在 \ref{eq1} 式两端计算的次数都为 0 . 这表明  \ref{eq1} 式右端的确表示至少属于 $A_1, A_2, \cdots, A_n$ 中一个集合的元素的总数 $\mid A_1 \cup A_2 \cup \cdots \cup A_n \mid$, 从而(1)式成立.
+上述证明 \ref{eq1} 式成立的方法叫做贡献法.
+逐步淘汰原理(篮法公式),设 $S$ 是有限集合, $A_i \subset S(i=1,2, \cdots, n)$, $A_i$ 在 $S$ 中的补集为 $\complement_S A_i(i=1,2, \cdots, n)$ 则
+$$
+\left|\complement_S A_1 \cap \complement_S A_2 \cap \cdots \cap \complement_S A_n\right|=|S|-\sum_{i=1}^n\left|A_i\right|+\sum_{1 \leqslant i<j \leqslant n}\left|A_i \cap A_j\right|-\sum_{1 \leqslant i<j<k \leqslant n}\left|A_i \cap A_j \cap A_k\right|+\cdots+(-1)^n\left|A_1 \cap A_2 \cap \cdots \cap A_n\right| . \label{eq2}
+$$
+证明因为 $\left|A_1 \cup A_2 \cup \cdots \cup A_n\right|=|S|-\left|\complement_S\left(A_1 \cup A_2 \cup \cdots \cup A_n\right)\right|$, 而由集合论中德・摩根律, 我们有
+$$
+\complement_S\left(A_1 \cup A_2 \cup \cdots \cup A_n\right)=\complement_S A_1 \cap \complement_S A_2 \cap \cdots \cap \complement_S A_n .
+$$
+由上述两式及 \ref{eq1} 式即得 \ref{eq2} 式.
+公式 \ref{eq1} 和 \ref{eq2} 都源于同一思想,即不断地使用包含与排除, 逐步篮去重复的计数.
+因此, 这两个公式又统称为包含与排除原理, 今后我们统称为容斥原理.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $S=\{1,2,3, \cdots, 499,500\}$, 从 $S$ 中任取 4 个不同的数,按照从小到大的顺序排列成一个公比为正整数的等比数列, 求这样的等比数列的个数.
+%%<SOLUTION>%%
+解:设所求等比数列为 $a_1, a_1 q, a_1 q^2, a_1 q^3\left(a_1, q \in \mathbf{N}_{+}, q \geqslant 2\right)$, 则 $a_1 q^3 \leqslant 500, q \leqslant \sqrt[3]{\frac{500}{a_1}} \leqslant \sqrt[3]{500}$, 所以 $2 \leqslant q \leqslant 7$, 且 $1 \leqslant a_1 \leqslant\left[\frac{500}{q^3}\right]$, 即公比为 $q$ 的等比数列有 $\left[\frac{500}{q^3}\right]$ 个.
+由加法原理得满足条件的等比数列共有 $\sum_{q=2}^7\left[\frac{500}{q^3}\right]=62+18+7+4+ 2+1=94$ (个).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 已知集合 $A=\{x \mid 5 x-a \leqslant 0\}, B=\{x \mid 6 x-b>0\}, a, b \in \mathbf{N}$, 且 $A \cap B \cap \mathbf{N}=\{2,3,4\}$, 则整数对 $(a, b)$ 的个数为
+(A) 20
+(B) 25
+(C) 30
+(D) 42
+%%<SOLUTION>%%
+解:$5 x-a \leqslant 0 \Rightarrow x \leqslant \frac{a}{5} ; 6 x-b>0 \Rightarrow x>\frac{b}{6}$. 要使 $A \cap B \cap \mathbf{N}=\{2$,
+$3,4\}$, 其充要条件是 $\left\{\begin{array}{l}1 \leqslant \frac{b}{6}<2 \\ 4 \leqslant \frac{a}{5}<5\end{array}\right.$, 即 $\left\{\begin{array}{l}6 \leqslant b<12 \\ 20 \leqslant a<25\end{array}\right.$, 故 $b$ 有 $\mathrm{C}_6^1$ 种取法, $a$ 有 $\mathrm{C}_5^1$ 种取法, 由乘法原理得数对 $(a, b)$ 的个数为 $\mathrm{C}_5^1 \mathrm{C}_6^1=30$ 个, 所以选 $\mathrm{C}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 由 $1,2,3,4,5$ 可以组成多少个没有重复数字, 并且大于 21300 的正整数?
+%%<SOLUTION>%%
+解:法 1 由 $1,2,3,4,5$ 组成的没有重复数字, 并且大于 21300 的正整数可分为 3 类:
+万位数字为 $3,4,5$ 的有 $\mathrm{A}_3^1 \cdot \mathrm{A}_4^4$ 个;
+万位数字为 2 ,千位数字为 $3,4,5$ 的有 $\mathrm{A}_3^1 \cdot \mathrm{A}_3^3$ 个;
+万位数字为 2 ,千位数字为 1 的有 $\mathrm{A}_3^3$ 个.
+由加法原理, 符合条件的正整数的个数是
+$$
+\mathrm{A}_3^1 \cdot \mathrm{A}_4^4+\mathrm{A}_3^1 \cdot \mathrm{A}_3^3+\mathrm{A}_3^3=96 .
+$$
+解法 2 由 $1,2,3,4,5$ 组成的没有重复数字的 5 位数共有 $\mathrm{A}_5^5$ 个, 其中只有万位数字为 1 的数不大于 21300 ,这样的 5 位数有 $\mathrm{A}_4^4$ 个,故符合条件的正整数的个数是
+$$
+\mathrm{A}_5^5-\mathrm{A}_4^4=5 !-4 !=96 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 从银行中取出伍角、壹元、式元、伍元、拾元、伍拾元、壹百元的纸币共 10 张,共有多少种不同的取法?
+%%<SOLUTION>%%
+解:本题为从 7 种不同的纸币中取 10 种纸币可重复的组合数, 依可重复的组合数公式得不同的取法数目为
+$$
+\mathrm{C}_{7+10-1}^{10}=\mathrm{C}_{16}^6=\frac{16 \times 15 \times 14 \times 13 \times 12 \times 11}{1 \times 2 \times 3 \times 4 \times 5 \times 6}=8008 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 将 3 面红旗、4 面蓝旗、2 面黄旗依次悬挂在旗杆上,问可以组成多少种不同的标志?
+%%<SOLUTION>%%
+解:由不全相异元素的全排列公式得所求标志数目为
+$$
+\left(\begin{array}{lll} 
+& 9 & \\
+3 & 4 & 2
+\end{array}\right)=\frac{9 !}{3 ! 4 ! 2 !}=1260 \text {. }
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 从 $n(n \geqslant 6)$ 名乒乓球选手中选拔出 3 对选手准备参加双打比赛, 问共有多少种不同的方法?
+%%<SOLUTION>%%
+解:法 1 从 $n$ 名选手中选出 6 名选手有 $\mathrm{C}_n^6$ 种方法, 将这 6 名选手分成 3 个不同的组,每组 2 名有 $\left(\begin{array}{lll} & 6 & \\ 2 & 2 & 2\end{array}\right)$ 种方法, 但 3 对选手是不计顺序的,故所求的方法数应为
+解法 2 从 $n$ 名选手中选出 6 人有 $\mathrm{C}_n^6$ 种方法, 选出的 6 人中选出 2 人配成一对有 $\mathrm{C}_6^2$ 种方法, 剩下 4 人中选 2 人配成一对有 $\mathrm{C}_4^2$ 种方法, 最后剩下的 2 人配成一对有 $\mathrm{C}_2^2$ 种方法.
+但因选出的 3 对是不计顺序的, 故所求方法数为
+$$
+\frac{\mathrm{C}_n^6 \mathrm{C}_6^2 \mathrm{C}_4^2 \mathrm{C}_2^2}{3 !}=\frac{n !}{48(n-6) !} .
+$$
+注意本题若改为从 $n$ 名选手中选出 3 对选手分别列为第 $1 、 2 、 3$ 号种子选手,则其不同的选法数目为
+$$
+\mathrm{C}_n^6 \mathrm{C}_6^2 \mathrm{C}_4^2 \mathrm{C}_2^2=\frac{n !}{8(n-6) !} .
+$$
+这是因为选出的 3 对选手是排了序的,故不要除以 $3 !$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7.  6 位女同学和 15 位男同学围成一圈跳集体舞,要求每两名女同学之间至少有两名男同学,那么共有多少种不同的围圈跳舞的方法?
+%%<SOLUTION>%%
+解法一,首先让每位女同学选择两名男同学作为她的舞伴, 一人排在她左侧, 另一人排在她右侧.
+由于 6 位女同学互不相同,故第 1 名女同学有 $15 \times 14$ 种选法,第 2 名有 $13 \times 12$ 种选法……共有 $\mathrm{A}_{15}^{12}$ 种"配对"方法.
+将每名女同学和她的舞伴看成一组,剩下 $15-12=3$ 名男同学每人看成一组,一共有 9 个组, 把这 9 个组排成一圈, 共有 $(9-1) !=8$ ! 种排法.
+由乘法原理得满足条件的排列数为
+$$
+\mathrm{A}_{15}^{12} \cdot 8 !=\frac{15 ! \cdot 8 !}{3 !}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7.  6 位女同学和 15 位男同学围成一圈跳集体舞,要求每两名女同学之间至少有两名男同学,那么共有多少种不同的围圈跳舞的方法?
+%%<SOLUTION>%%
+解法二,以女同学为组长, 15 位男同学分人 6 个组每组至少有两位男同学, 且记各组内男同学数分别为 $x_1, x_2, \cdots, x_6$, 则分组的方法数等于不定方程
+$$
+x_1+x_2+\cdots+x_6=15, x_i \geqslant 2(i=1,2, \cdots, 6). \label{eq1}
+$$
+的整数解的个数, 令 $y_i=x_i-2(i=1,2, \cdots, 6)$ 则
+$$
+y_1+y_2+\cdots+y_6=3, y_i \geqslant 0(i=1,2, \cdots, 6) . \label{eq2}
+$$
+故式\ref{eq1}的整数解的个数等于式\ref{eq2}的非负整数解的个数 $\mathrm{C}_{3+6-1}^{6-1}=\mathrm{C}_8^5=\mathrm{C}_8^3$, 即 15 位男同学分人 6 个组, 每组至少 2 人的方法数为 $\mathrm{C}_8^3 .6$ 个组排成一个圆圈有 5 ! 种方法 (这时女同学排在每组的首位, 她的位置已排定), 又 15 个男同学站人的方法数为 $\mathrm{A}_{15}^{15}$, 故满足条件的排列数为 $\mathrm{C}_8^3 \cdot 5 ! \cdot \mathrm{A}_{15}^{15}=\frac{8 ! 15 !}{3 !}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 将 24 个志愿者名额分配给 3 个学校,则每校至少有一个名额且各校名额互不相同的分配方法共有?种.
+%%<SOLUTION>%%
+解:设分配给 3 个学校的名额数分别为 $x_1, x_2, x_3$, 则每个学校至少有一个名额的分配方法数为不定方程 $x_1+x_2+x_3=24$ 的正整数解的个数,即 $\mathrm{C}_{24-1}^{3-1}=\mathrm{C}_{23}^2=\frac{23 \times 22}{2}=253$. 但上述分配方法中"至少有两个学校名额数相同"的分配方法有下列 31 种:
+$$
+\begin{aligned}
+& (i, i, 24-2 i) 、(i, 24-2 i, i) 、(24-2 i, i, i) \\
+& (i=1,2,3,4,5,6,7,9,10,11) \text { 及 }(8,8,8) .
+\end{aligned}
+$$
+故满足条件的分配方法共有 $253-31=222$ (种).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 方程 $x+y+z=2010$ 满足 $x \leqslant y \leqslant z$ 的正整数解 $(x, y, z)$ 的个数是? 
+%%<SOLUTION>%%
+解:首先易知 $x+y+z=2010$ 的正整数解的个数为 $\mathrm{C}_{2009}^2=2009 \times 1004$; 其次,把 $x+y+z=2010$ 满足 $x \leqslant y \leqslant z$ 的正整数解分为三类:
+(1) $x=y=z$ 的正整数解只有 1 个: $(670,670,670)$;
+(2) $x, y, z$ 中恰有 2 个相等的正整数解有下列 1003 个: $(x, x, 2010- 2 x) 、(x=1,2, \cdots, 669)$ 以及 $(2010-2 y, y, y)(y=671,672, \cdots, 1004)$;
+(3) 设 $x, y, z$ 两两不等的正整数解有 $k$ 个,于是
+$$
+1+1003 \times \mathrm{C}_3^1+k \times 3 !=\mathrm{C}_{2009}^2=2009 \times 1004,
+$$
+所以
+$$
+\begin{aligned}
+k & =\frac{1}{6}(2009 \times 1004-3 \times 1003-1) \\
+& =\frac{1}{6}(2009 \times 1005-2009-3 \times 1005+3 \times 2-1) \\
+& =\frac{1}{6}(2006 \times 1005-2004)=1003 \times 335-334
+\end{aligned}
+$$
+$$
+=335671 \text {. }
+$$
+故满足 $x \leqslant y \leqslant z$ 的正整数解 $(x, y, z)$ 的个数为
+$$
+1+1003+335671=336675 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 有 $n$ 封不同的信和 $n$ 个配套的写有收信人地址的信封, 现将 $n$ 封信一对一地套人到 $n$ 个信封中去, 结果发现没有一封信套对 (即每封信都没有按地址套人其应套人的信封), 问有多少种不同的套法?
+%%<SOLUTION>%%
+解:设 $S$ 是所有套法组成的集合,则显然有 $|S|=n$ !. 我们把每封信和对应的信封都分别用 $1,2,3, \cdots, n$ 进行编号, 并记 $A_i(i=1,2, \cdots, n)$ 为第 $i$ 封信恰套人第 $i$ 个信封 (即套正确) 的所有套法构成的集合, 故所求的方法数即为 $\left|\complement_S A_1 \cap \complement_S A_2 \cap \cdots \cap \complement_S A_\eta\right|$, 而易知
+$$
+\begin{aligned}
+& \left|A_i\right|=(n-1) !(1 \leqslant i \leqslant n), \\
+& \left|A_i \cap A_j\right|=(n-2) !(1 \leqslant i<j \leqslant n), \\
+& \cdots \cdots . \\
+& \left|A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_k}\right|=(n-k) !\left(1 \leqslant i_1<i_2<\cdots<i_k \leqslant n\right), \\
+& \left|A_1 \cap A_2 \cap \cdots \cap A_n\right|=0 !=1 .
+\end{aligned}
+$$
+于是由篮法公式有
+$$
+\begin{aligned}
+& \left|\complement_S A_1 \cap \complement_S A_2 \cap \cdots \cap \complement_S A_n\right| \\
+= & n !-\mathrm{C}_n^1(n-1) !+\mathrm{C}_n^2(n-2) !-\mathrm{C}_n^3(n-3) !+\cdots+(-1)^n \mathrm{C}_n^n \cdot 0 ! \\
+= & n !-\frac{n !}{1 !}+\frac{n !}{2 !}-\frac{n !}{3 !}+\cdots+(-1)^n \frac{n !}{n !} \\
+= & n !\left(1-\frac{1}{1 !}+\frac{1}{2 !}-\frac{1}{3 !}+\cdots+(-1)^n \frac{1}{n !}\right) .
+\end{aligned}
+$$
+%%<REMARK>%%
+注:本例通常又称为乱序排列问题.
+所谓乱序排列指的是: 将 $n$ 个不同元素重新排列, 使每个元素都不在原来位置上.
+置换及其不动点给定集合 $X=\{1,2,3, \cdots, n\}, \varphi$ 是从 $X$ 到 $X$ 上的一一映射,通常记为
+$$
+\varphi=\left\{\begin{array}{cccc}
+1 & 2 & \cdots & n \\
+\varphi(1) & \varphi(2) & \cdots & \varphi(n)
+\end{array}\right\},
+$$
+则称 $\varphi$ 是 $X$ 上的置换, 其中 $\varphi(i)$ 是元素 $i$ 在映射 $\varphi$ 下的象.
+因为是一一映射, 所以 $\varphi(1), \varphi(2), \cdots, \varphi(n)$ 实际上是 $1,2, \cdots, n$ 的一个排列.
+满足 $\varphi(i)=i$ 的数 $i$ 称为 $\varphi$ 的一个不动点.
+由上例立即可得下列结论:
+推论集合 $X=\{1,2, \cdots, n\}$ 上没有任何不动点的置换 $\varphi$ 的个数是
+$$
+D_n=n !\left(1-\frac{1}{1 !}+\frac{1}{2 !}-\frac{1}{3 !}+\cdots+\frac{(-1)^n}{n !}\right) .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 设 $\varphi$ 是集合 $X=\{1,2, \cdots, n\}$ 上的置换, 将 $X$ 上没有不动点的置换个数记为 $f_n$, 恰有一个不动点的置换个数记为 $g_n$, 证明: $\left|f_n-g_n\right|=1$. 
+%%<SOLUTION>%%
+证明:设 $g_{n_i}(i=1,2, \cdots, n)$ 表示 $X$ 上恰有唯一不动点 $i$ 的置换个数.
+于是
+$$
+g_n=g_{n_1}+g_{n_2}+\cdots+g_{n_n} .
+$$
+由上述推论, 有
+$$
+f_n=D_n, g_{n_i}=D_{n-1}(i=1,2, \cdots, n),
+$$
+故
+$$
+g_n=n D_{n-1}
+$$
+所以
+$$
+\begin{aligned}
+\left|f_n-g_n\right|= & \left|D_n-n D_{n-1}\right| \\
+= & \mid n !\left(1-\frac{1}{1 !}+\frac{1}{2 !}-\cdots+\frac{(-1)^{n-1}}{(n-1) !}+\frac{(-1)^n}{n !}\right)- \\
+& n \cdot(n-1) !\left(1-\frac{1}{1 !}+\frac{1}{2 !}-\cdots+\frac{(-1)^{n-1}}{(n-1) !}\right) \mid \\
+= & \left|n ! \cdot \frac{(-1)^n}{n !}\right| \\
+= & 1 .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 从全体正整数 $1,2,3, \cdots$ 中划去 3 和 4 的倍数, 但其中凡是 5 的倍数都保留 (例如 $15,20,60, \cdots$ 等都保留), 划完后, 将剩下的数从小到大排成一个数列: $a_1=1, a_2=2, a_3=5, a_4=7, a_5=10, \cdots$, 求 $a_{2011}$ 之值.
+%%<SOLUTION>%%
+解法 1 设 $a_{2011}=n$, 令 $S=\{1,2,3, \cdots, n\}, A_i=\{k \mid k \in S$ 且 $k$ 被 $i$ 整除\}, 于是 $S$ 中没有被划去的数的集合为 ( $\left.C_S A_3 \cap C_S A_4 \cap C_S A_5\right) \cup A_5$, 依题意并利用篣法公式得
+$$
+\begin{aligned}
+2011= & \left|\left(\complement_S A_3 \cap \complement_S A_4 \cap \complement_S A_5\right) \cup A_5\right| \\
+= & \left|\complement_S A_3 \cap \complement_S A_4 \cap \complement_S A_5\right|+\left|A_5\right| \\
+= & |S|-\left|A_3\right|-\left|A_4\right|-\left|A_5\right|+\left|A_3 \cup A_4\right|+\left|A_3 \cup A_5\right|+\left|A_4 \cup A_5\right|- \\
+& \left|A_3 \cap A_4 \cap A_5\right|+\left|A_5\right|
+\end{aligned}
+$$
+$$
+=n-\left[\frac{n}{3}\right]-\left[\frac{n}{4}\right]+\left[\frac{n}{3 \times 4}\right]+\left[\frac{n}{3 \times 5}\right]+\left[-\frac{n}{4 \times 5}\right]-\left[\frac{n}{3 \times 4 \times 5}\right] .\label{eq1}
+$$
+利用 $\alpha-1<[\alpha] \leqslant \alpha$, 由 式\ref{eq1} 得
+$$
+\begin{aligned}
+& 2011<n-\left(\frac{n}{3}-1\right)-\left(\frac{n}{4}-1\right)+\frac{n}{3 \times 4}+\frac{n}{3 \times 5}+\frac{n}{4 \times 5}- \\
+& \left(\frac{n}{3 \times 4 \times 5}-1\right)=\frac{3}{5} n+3 . \label{eq2}
+\end{aligned}
+$$
+和
+$$
+\begin{aligned}
+2011 & >n-\frac{n}{3}-\frac{n}{4}+\left(\frac{n}{3 \times 4}-1\right)+\left(\frac{n}{3 \times 5}-1\right)+\left(\frac{n}{4 \times 5}-1\right)- \\
+\frac{n}{3 \times 4 \times 5} & =\frac{3}{5} n-3 . \label{eq3}
+\end{aligned}
+$$
+由 式\ref{eq2} 和 \ref{eq3} 联立解得
+$$
+3346 \frac{2}{3}<n<3356 \frac{2}{3} . \label{eq4}
+$$
+又 $n$ 为正整数,并且满足 式\ref{eq4} 的 $n$ 中凡是 3 或 4 的倍数而同时不是 5 的倍数的数应去掉, 故 $n$ 只可能是 $3347,3349,3350,3353,3355,3356$. 经检验知 $n=$ 3350 满足 (1), 并且由实际意义知本题的解是唯一的, 所以 $a_{2011}=3350$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 从全体正整数 $1,2,3, \cdots$ 中划去 3 和 4 的倍数, 但其中凡是 5 的倍数都保留 (例如 $15,20,60, \cdots$ 等都保留), 划完后, 将剩下的数从小到大排成一个数列: $a_1=1, a_2=2, a_3=5, a_4=7, a_5=10, \cdots$, 求 $a_{2011}$ 之值.
+%%<SOLUTION>%%
+解法 2 因为 $3,4,5$ 的最小公倍数为 60 , 故先考虑集合 $S_0=\{1,2$, $3, \cdots, 60\}$ 中含有多少个没有被划去的数.
+令 $B_i=\left\{k \mid k \in S_0\right.$, 且 $k$ 被 $i$ 整除 $\} (i=3,4,5)$, 则 $S_0$ 中没有被划去的数的集合为 $\left(\complement_{S_0} B_3 \cap \complement_{S_0} B_4 \cap \complement_{S_0} B_5\right) \cup B_5$, 由篮法公式得
+$$
+\begin{aligned}
+& \left|\left(\complement_{s_0} B_3 \cap \complement_{s_0} B_4 \cap \complement_{S_0} B_5\right) \cup B_5\right| \\
+= & \left|\complement_{S_0} B_3 \cap \complement_{S_0} B_4 \cap \complement_{S_0} B_5\right|+\left|B_5\right| \\
+= & \left|S_0\right|-\left|B_3\right|-\left|B_4\right|-\left|B_5\right|+\left|B_3 \cap B_4\right|+\left|B_3 \cap B_5\right|+\left|B_4 \cap B_5\right|- \\
+& \left|B_3 \cap B_4 \cap B_5\right|+\left|B_5\right| \\
+= & 60-\left[\frac{60}{3}\right]-\left[\frac{60}{4}\right]+\left[\frac{60}{3 \times 4}\right]+\left[\frac{60}{3 \times 5}\right]+\left[\frac{60}{4 \times 5}\right]-\left[\frac{60}{3 \times 4 \times 5}\right] \\
+= & 36,
+\end{aligned}
+$$
+即 $S_0$ 中没有被划去的数有 36 个: $a_1=1, a_2=2, a_3=5, a_4=7, \cdots, a_{36}=$ 60 . 记 $P=\left\{a_1, a_2, \cdots, a_{36}\right\}$, 令 $a_n=60 k+r,(k, r$ 为非负整数, 且 $1 \leqslant r \leqslant 60)$.
+若 $\left(a_n, 12\right)=(60 k+r, 12)=1$, 则 $(r, 12)=1$, 于是 $r \in P$. 若 $\left(a_n,12\right)=(60 k+r, 12) \neq 1$, 则 $(r, 12) \neq 1$, 但由 $5 \mid a_n$ 得 $5 \mid r$, 也有 $r \in P$.
+反之, 对任意形如 $60 k+r$ ( $k$ 为非负整数, $r \in P$ ) 的正整数.
+若 $(r, 12)=$ 1 , 则 $(60 k+r, 12)=1$, 这时 $60 k+r$ 是数列 $\left\{a_n\right\}$ 中的一项.
+若 $(r, 12) \neq 1$, 则由 $r \in P$ 知 $5 \mid r$. 从而 $5 \mid(60 k+r)$, 故 $60 k+r$ 仍是数列 $\left\{a_n\right\}$ 中一项.
+可见,数列 $\left\{a_n\right\}$ 中的项由且只由形如 $60 k+r$ ( $k$ 为非负整数, $r \in P$ ) 的正整数组成, 且对每一个固定的 $k$. 当 $r$ 取遍 $P$ 中的数时, 可得数列 $\left\{a_n\right\}$ 中相邻的 36 项.
+又 $2011=36 \times 55+31$, 所以 $a_{2011}=60 \times 55+a_{31}=3300+a_{31}$. 而 $a_{36}=60, a_{35}=59, a_{34}=58, a_{33}=55, a_{32}=53, a_{31}=50$, 故
+$$
+a_{2011}=3300+50=3350 .
+$$
+%%<REMARK>%%
+注:本题解法 1 中所用的方法称为估值法, 首先估计解的取值范围, 如果解的取值范围只有有限种可能, 并且从问题的意义知解是唯一的, 则只有从取值范围的中间值 (本题中 $n=3350$ ) 开始检验(若不满足条件,则在两侧中的一个中间值处再检验), 其中满足条件的值就是问题的唯一解.
+解法 2 中所使用的方法称为组合分析法, 它是先弄清所求数列的结构后, 再进行计算.
+%%PROBLEM_END%%
+
+

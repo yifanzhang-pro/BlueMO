@@ -1,0 +1,194 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 已知 $\triangle P_1 P_2 P_3$ 及三角形内任意一点 $P$, 直线 $P_1 P, P_2 P, P_3 P$ 分别交对边于 $Q_1, Q_2, Q_3$. 求证: 在 $\frac{P_1 P}{P Q_1}, \frac{P_2 P}{P Q_2}, \frac{P_3 P}{P Q_3}$ 这三个比值中, 至少有一个不大于 2 ,也至少有一个不小于 2. 
+%%<SOLUTION>%%
+设 $S_{\triangle P P_2 P_3}=S_1, S_{\triangle P P_3 P_1}=S_2, S_{\triangle P P_1 P_2}=S_3$.
+易知 $\frac{P_1 P}{P Q_1}=\frac{S_{\triangle P_1 P_2 P}}{S_{\triangle P P_2 Q_1}}=\frac{S_{\triangle P_1 P_3 P}}{S_{\triangle P P_3 Q_1}}$, 故
+$$
+\frac{P_1 P}{P Q_1}=\frac{S_{\triangle P_1 P_2 P}+S_{\triangle P_1 P_3 P}}{S_{\triangle P P_2 Q_1}+S_{\triangle P P_3 Q_1}}=\frac{S_2+S_3}{S_1} .
+$$
+同理可得
+$$
+\frac{P_2 P}{P Q_2}=\frac{S_3+S_1}{S_2}, \frac{P_3 P}{P Q_3}=\frac{S_1+S_2}{S_3} .
+$$
+由对称性, 不妨设 $S_1 \geqslant S_2 \geqslant S_3$, 则有 $\frac{P_1 P}{P Q_1} \leqslant 2, \frac{P_3 P}{P Q_3} \geqslant 2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 求证: 同时平分一个三角形的面积和周长的直线一定经过三角形的内心.
+%%<SOLUTION>%%
+设直线 $l$ 平分 $\triangle A B C$ 的周长.
+如果 $l$ 过一个顶点, 例如过顶点 $A$, 则不难知道必有 $A B=A C$, 从而 $l$ 过内心 $I$.
+如图(<FilePath:./figures/fig-c8a2.png>), 如果 $l$ 经过 $\triangle A B C$ 的两条边, 设它与 $A B 、 A C$ 交于点 $E 、 D$. 我们证明 $S_{\triangle D E}=0$.
+设 $\triangle A B C$ 的内切圆半径为 $r, p$ 为半周长, 则
+$$
+\begin{gathered}
+A E+A D=p, \\
+S_{\triangle A E}+S_{\triangle A I D}=\frac{1}{2} r \cdot A E+\frac{1}{2} r \cdot A D=\frac{1}{2} r p=\frac{1}{2} S_{\triangle A B C},
+\end{gathered}
+$$
+但 $S_{\triangle A E D}=\frac{1}{2} S_{\triangle A B C}$, 从而 $S_{\triangle D E}=0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 如图(<FilePath:./figures/fig-c8p3.png>),  在四边形 $A B C D$ 中, $\triangle A B D, \triangle B C D$, $\triangle A B C$ 的面积之比为 $3: 4: 1$. 点 $M, N$ 分别在 $A C, C D$ 上, 满足 $\frac{A M}{A C}=\frac{C N}{C D}$, 并且 $B, M, N$ 三点共线.
+求证: $M$ 与 $N$ 分别是 $A C$ 与 $C D$ 的中点.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c8a3.png>), 设 $\frac{A M}{A C}=\frac{C N}{C D}=r(0<r<1)$.
+不妨设 $S_{\triangle A B C}=1$, 则由已知条件可得
+$$
+S_{\triangle A B D}=3, S_{\triangle B C D}=4, S_{\triangle A C D}=3+4-1=6 .
+$$
+从而有
+$$
+\begin{aligned}
+& S_{\triangle B M C}=\frac{S_{\triangle B M C}}{S_{\triangle A B C}}=\frac{M C}{A C}=1 \quad r, \\
+& S_{\triangle M N C}=\frac{6 S_{\triangle M N C}}{S_{\triangle A C D}}=6 \cdot \frac{M C}{A C} \cdot \frac{C N}{C D}=6 r(1-r), \\
+& S_{\triangle N B C}=\frac{4 S_{\triangle N B C}}{S_{\triangle B C D}}=\frac{4 C N}{C D}=4 r .
+\end{aligned}
+$$
+因此 $4 r=S_{\triangle N B C}=S_{\triangle M N C}+S_{\triangle B M C}=6 r(1-r)+1-r$,
+化简得 $6 r^2-r-1=0$, 又 $0<r<1$, 故 $r=\frac{1}{2}$, 即 $M$ 与 $N$ 分别是 $A C$ 与 $C D$ 的中点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设直线 $l$ 过 $\triangle A B C$ 的重心 $G$, 与边 $A B 、 A C$ 分别相交于点 $B_1, C_1, \frac{A B_1}{A B}=\lambda, \frac{A C_1}{A C}=\mu$. 求证: $\frac{1}{\lambda}+\frac{1}{\mu}=3$.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c8a4.png>), 作边 $B C$ 上的中线 $A D$. 设 $\triangle A B C$ 的面积为 1, $\triangle A B_1 C_1$ 的面积为 $S$. 我们用两种方法计算 $S$.
+一方面, $S=\frac{S}{1}=\frac{A B_1 \cdot A C_1}{A B \cdot A C}=\lambda \mu$.
+另一方面, $S=S_{\triangle A B_1 G}+S_{\triangle A G C_1}$.
+与(1)类似地, $S_{\triangle A B_1 G}=\frac{\lambda}{3}, S_{\triangle A G C_1}=\frac{\mu}{3}$,
+所以
+$$
+S=\frac{\lambda+\mu}{3} .
+$$
+综合两方面可得
+$$
+\lambda \mu=\frac{\lambda+\mu}{3},
+$$
+两边同乘 $\frac{3}{\lambda \mu}$, 即证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 凸六边形 $A B C D E F$ 中, $P, Q, R, S, T, U$ 分别为 $A B, B C, C D, D E$, $E F, F A$ 的中点.
+若 $P S, Q T, R U$ 均平分六边形 $A B C D E F$ 的面积, 证明: $P S, Q T, R U$ 三线共点.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c85.png>), 设 $Q T, R U$ 交于点 $X$. 连接 $X A, X B, X C, X D, X E, X F, X P, X S$. 由已知得
+$$
+S_{A B Q T F}=\frac{1}{2} S_{A B C D E F}=S_{A B C R U},
+$$
+两边减去 $S_{A B Q X U}$, 得
+$$
+S_{X T F U}=S_{X Q C R} .
+$$
+又
+$$
+\begin{aligned}
+& S_{X E F A}=S_{\triangle X E F}+S_{\triangle X F A}=2 S_{\triangle X T F}+2 S_{\triangle X F U}=2 S_{X T F U}, \\
+& S_{X B C D}=S_{\triangle X B C}+S_{\triangle X C D}=2 S_{\triangle X Q C}+2 S_{\triangle X C R}=2 S_{X Q C R},
+\end{aligned}
+$$
+所以 $S_{X E F A}=S_{X B C D}$. 结合 $S_{\triangle X A P}=S_{\triangle X B P}, S_{\triangle X E S}=S_{\triangle X D S}$ 可知, 折线 $P X S$ 平分凸六边形 $A B C D E F$ 的面积.
+考虑到 $P S$ 也平分 $A B C D E F$ 的面积, 故 $P S$ 过点 $X$.
+从而 $P S, Q T, R U$ 三线共点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 记凸四边形的面积为 $S$. 对它的每个顶点, 都作其关于不经过它的对角线的对称点.
+将所得到的四个像点组成的四边形的面积记作 $S^{\prime}$. 证明: $\frac{S^{\prime}}{S}<$ 3. 
+%%<SOLUTION>%%
+记原凸四边形为 $A B C D$, 其中 $A, B, C, D$ 的像点分别为 $A^{\prime}, B^{\prime}, C^{\prime}$, $D^{\prime}, A C$ 与 $B D$ 交于点 $P$.
+设 $A C$ 与 $B D$ 的夹角为 $\alpha, A^{\prime} C^{\prime}$ 与 $B^{\prime} D^{\prime}$ 的夹角为 $\beta$. 根据对称性, 四边形 $A^{\prime} B^{\prime} C^{\prime} D^{\prime}$ 的对角线 $A^{\prime} C^{\prime}$ 与 $B^{\prime} D^{\prime}$ 过点 $P$, 且 $A^{\prime} C^{\prime}=A C, B^{\prime} D^{\prime}=B D$, 且 $\beta=3 \alpha$ 或 $\pi-3 \alpha$ 或 $3 \alpha-\pi$, 无论何种情形下均有 $\sin \beta=|\sin 3 \alpha|=\sin \alpha \cdot\left|3-4 \sin ^2 \alpha\right|$.
+由四边形面积公式得
+$$
+\begin{aligned}
+S & =\frac{1}{2} A C \cdot B D \cdot \sin \alpha, S^{\prime}=\frac{1}{2} A^{\prime} C^{\prime} \cdot B^{\prime} D^{\prime} \cdot \sin \beta \\
+& =\frac{1}{2} A C \cdot B D \cdot \sin \alpha \cdot\left|3-4 \sin ^2 \alpha\right|,
+\end{aligned}
+$$
+从而易知: $\frac{S^{\prime}}{S}=\left|3-4 \sin ^2 \alpha\right|<3$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 如图(<FilePath:./figures/fig-c8p7.png>), 在 $\triangle A B C$ 中, $M$ 为 $B C$ 中点, $N, P, Q$ 分别在线段 $A M, A B, A C$ 内,使 $A, P, N, Q$ 四点共圆.
+证明: $A P \cdot A B+A Q \cdot A C=2 A N \cdot A M$.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c8a7.png>), 连接 $P Q, P N, N Q$. 记 $\angle P A N=\alpha, \angle Q A N= \beta$. 由于 $M$ 为 $B C$ 中点, 故 $S_{\triangle A B C}=2 S_{\triangle A B M}=2 S_{\triangle A M C}$, 即
+$$
+\begin{gathered}
+\frac{1}{2} A B \cdot A C \cdot \sin (\alpha+\beta)=A B \cdot A M \cdot \sin \alpha= \\
+A M \cdot A C \cdot \sin \beta,
+\end{gathered}
+$$
+所以 $\frac{\sin \alpha}{\sin (\alpha+\beta)}=\frac{A C}{2 A M}, \frac{\sin \beta}{\sin (\alpha+\beta)}=\frac{A B}{2 A M}$. \label{eq1}
+由正弦定理得
+$$
+\frac{N P}{\sin \alpha}=\frac{N Q}{\sin \beta}=\frac{P Q}{\sin (\alpha+\beta)} . \label{eq2}
+$$
+因为 $A, P, N, Q$ 四点共圆, 由托勒密定理得
+$$
+A N \cdot P Q=A P \cdot N Q+A Q \cdot N P,
+$$
+结合 式\ref{eq1}, \ref{eq2}可得
+$$
+\begin{aligned}
+A N & =A P \cdot \frac{N Q}{P Q}+A Q \cdot \frac{N P}{P Q}=\frac{A P \cdot \sin \beta}{\sin (\alpha+\beta)}+\frac{A Q \cdot \sin \alpha}{\sin (\alpha+\beta)} \\
+& =\frac{A P \cdot A B}{2 A M}+\frac{A Q \cdot A C}{2 A M} .
+\end{aligned}
+$$
+从而 $A P \cdot A B+A Q \cdot A C=2 A N \cdot A M$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 在凸五边形 $A B C D E$ 中, $A D$ 与 $B E$ 相交于 $F, B E$ 与 $C A$ 相交于 $G, C A$ 与 $D B$ 相交于 $H, D B$ 与 $E C$ 相交于 $I, E C$ 与 $A D$ 相交于 $J$. 设 $A^{\prime} 、 B^{\prime} 、 C^{\prime} 、 D^{\prime} 、 E^{\prime}$ 分别为 $A I$ 与 $B E 、 B J$ 与 $C A 、 C F$ 与 $D B 、 D G$ 与 $E C 、 E H$ 与 $A D$ 的交点, 求证:
+$$
+\frac{A B^{\prime}}{B^{\prime} C} \cdot \frac{C D^{\prime}}{D^{\prime} E} \cdot \frac{E A^{\prime}}{A^{\prime} B} \cdot \frac{B C^{\prime}}{C^{\prime} D} \cdot \frac{D E^{\prime}}{E^{\prime} A}=1 .
+$$
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c8a8.png>), 由共边定理, 有 $\frac{A B^{\prime}}{B^{\prime} C}=\frac{S_{\triangle A B J}}{S_{\triangle C B J}}$, 其他的比例线段用同样的方法转化, 即只须证明
+$$
+\frac{S_{\triangle A B J}}{S_{\triangle C B J}} \cdot \frac{S_{\triangle C D G}}{S_{\triangle E D G}} \cdot \frac{S_{\triangle E A I}}{S_{\triangle B A I}} \cdot \frac{S_{\triangle B C F}}{S_{\triangle D C F}} \cdot \frac{S_{\triangle D E H}}{S_{\triangle A E H}}=1 .
+$$
+因为
+$$
+\frac{S_{\triangle A B J}}{S_{\triangle B A I}}=\frac{S_{\triangle A B J}}{S_{\triangle A B D}} \cdot \frac{S_{\triangle A B D}}{S_{\triangle B A I}}=\frac{A J}{A D} \cdot \frac{B D}{B I},
+$$
+用同样方法转化面积比,并消去上下相同的线段,只须证明:
+$$
+\frac{A J}{B I} \cdot \frac{B F}{C J} \cdot \frac{C G}{D F} \cdot \frac{D H}{E G} \cdot \frac{E I}{A H}=1,
+$$
+或
+$$
+\frac{A J}{C J} \cdot \frac{B F}{D F} \cdot \frac{C G}{E G} \cdot \frac{D H}{A H} \cdot \frac{E I}{B I}=1 .
+$$
+利用正弦定理转换上式的线段比, 只须证明
+$$
+\frac{\sin \angle E C A}{\sin \angle C A D} \cdot \frac{\sin \angle A D B}{\sin \angle D B E} \cdot \frac{\sin \angle B E C}{\sin \angle E C A} \cdot \frac{\sin \angle C A D}{\sin \angle A D B} \cdot \frac{\sin \angle D B E}{\sin \angle B E C}=1,
+$$
+这显然成立.
+证毕.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,363 @@
+
+%%TEXT_BEGIN%%
+从前面几个单元的内容, 可以看出初等数论的一个显著特点一一灵活多样,数学竞赛中的数论问题尤其如此.
+本单元再选取一些这样的例子.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $m \geqslant n \geqslant 1$, 证明: $\frac{(m, n)}{m} \mathrm{C}_m^n$ 是整数.
+%%<SOLUTION>%%
+证明:因 $\frac{x}{m} \mathrm{C}_m^n$ 在 $x=m$ 时为 $\mathrm{C}_m^n$, 是一个整数; 在 $x=n$ 时, 它是 $\frac{n}{m} \frac{m}{n} \mathrm{C}_{m-1}^{n-1}=\mathrm{C}_{m-1}^{n-1}$, 也是整数.
+又由裴蜀等式知, 存在整数 $u 、 v$, 使得
+$$
+(m, n)=m u+n v,
+$$
+故 $\frac{(m, n)}{m} \mathrm{C}_m^n=u \mathrm{C}_m^n+v \frac{n}{m} \mathrm{C}_m^n$ 是整数.
+%%<REMARK>%%
+注:由例 1 推出, 若 $m 、 n$ 为互素的正整数,则 $m \mid \mathrm{C}_m^n$. 这一结论也可如下证明: 因 $\mathrm{C}_m^n=\frac{m}{n} \mathrm{C}_{m-1}^{n-1}$, 故 $n \mathrm{C}_m^n=m \mathrm{C}_{m-1}^{n-1}$. 由于 $\mathrm{C}_{m-1}^{n-1}$ 为整数, 故 $m \mid n \mathrm{C}_m^n$, 但 $(m$, $n)=1$, 从而 $m \mid \mathrm{C}_m^n$.
+特别地, 设 $p$ 是一个素数, 由于每个 $k=1, \cdots, p-1$ 均与 $p$ 互素, 故我们有 $p \mid \mathrm{C}_p^k$, 对 $k=1, \cdots, p-1$ 成立, 这一结论, 用处很多.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $a 、 b$ 是两个不同的正整数, $a b(a+b)$ 是 $a^2+a b+b^2$ 的倍数.
+证明: $|a-b|>\sqrt[3]{a b}$.
+%%<SOLUTION>%%
+证明:由于 $a b(a+b)$ 被 $a^2+a b+b^2$ 整除,我们首先用 $a^2+a b+b^2$ 除 $a b(a+b)$, 得
+$$
+a b(a+b)=\left(a^2+a b+b^2\right) a-a^3,
+$$
+故 $\left(a^2+a b+b^2\right) \mid a^3$. 同样 $\left(a^2+a b+b^2\right) \mid b^3$, 即 $a^2+a b+b^2$ 是 $a^3$ 与 $b^3$ 的一个公约数,故 $\left(a^2+a b+b^2\right) \mid\left(a^3, b^3\right)$. (见第 2 单元中的 (3). ) 又 $\left(a^3, b^3\right)=(a$ , $b)^3$ (见下面的注), 从而
+$$
+\left(a^2+a b+b^2\right) \mid(a, b)^3 . \label{eq1}
+$$
+记 $d=(a, b), a=a_1 d, b=b_1 d$, 则式\ref{eq1}成为 $\left(a_1^2+a_1 b_1+b_1^2\right) \mid d$. 从而 $d \geqslant a_1^2+a_1 b_1+b_1^2$, 更有 $d>a_1 b_1$. 因 $a \neq b$, 故整数 $a_1 \neq b_1$, 因此 $\left|a_1-b_1\right| \geqslant$ 1 , 进而我们得出
+$$
+|a-b|^3=d^3\left|a_1-b_1\right|^3 \geqslant d^3>d^2 a_1 b_1=a b,
+$$
+即 $|a-b|>\sqrt[3]{a b}$.
+%%<REMARK>%%
+注:对任意整数 $k \geqslant 1$, 有 $\left(a^k, b^k\right)=(a, b)^k$. 这可如下证明: 当 $(a, b) \doteq$ 1 时, 则 $\left(a^k, b^k\right)=1=(a, b)^k$ (见第 2 单元 $(6)$ ). 当 $(a, b)=d>1$ 时, 则有 $\left(\frac{a}{d}, \frac{b}{d}\right)=1$, 从而由上述结果知, $\left(\left(\frac{a}{d}\right)^k,\left(\frac{b}{d}\right)^k\right)=1$, 故 $d^k= d^k\left(\frac{a^k}{d^k}, \frac{b^k}{d^k}\right)=\left(\frac{a^k}{d^k} \cdot d^k, \frac{b^k}{d^k} \cdot d^k\right)=\left(a^k, b^k\right)$, 从而结论得证.
+这一论证, 是将一般情形的问题, 化为特殊情形来解决的一个简单例子.
+本题的证明, 先由整数的整除等性质导出整除关系式\ref{eq1}, 再由此过渡到不等式, 这是处理涉及整数的不等式问题以及用估计法解决数论问题的一种基本手法,下面两个例子均是这样做的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 在两个相邻的完全平方数 $n^2$ 与 $(n+1)^2$ 之间任取若干个不同整数, 证明它们中两两乘积互不相同.
+%%<SOLUTION>%%
+证明:设整数 $a 、 b 、 c 、 d$ 满足 $n^2<a<b<c<d<(n+1)^2$, 显然, 我们只需证明 $a d \neq b c$. 采用反证法, 设有上述 $a 、 b 、 c 、 d$ 满足 $a d=b c$, 则由第 3 单元例 3 的证明一可知, 有正整数 $p 、 q 、 u 、 v$, 使得
+$$
+a=p u, b=q u, c=p v, d=q v .
+$$
+由 $b>a$ 及 $c>a$, 得出 $q>p$ 及 $v>u$. 因 $p 、 q 、 u 、 v$ 都是整数, 故 $q \geqslant p+1, v \geqslant u+1$. 因此我们得出 (注意 $a=p u>n^2$ )
+$$
+\begin{aligned}
+& d=q v \geqslant(p+1)(u+1)=p u+(p+u)+1 \\
+& >n^2+2 \sqrt{p u}+1>n^2+2 n+1=(n+1)^2,
+\end{aligned}
+$$
+矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 求出不定方程
+$$
+(n-1) !=n^k-1 . \label{eq1}
+$$
+的全部正整数解.
+%%<SOLUTION>%%
+解:当 $n=2$ 时, 由式\ref{eq1}得解 $(n, k)=(2,1)$. 当 $n>2$ 时, 式\ref{eq1} 的左边是偶数, 故其右边也是偶数, 从而 $n$ 是奇数.
+当 $n=3,5$ 时, 由式\ref{eq1}解出 $(n, k)=(3,1), (5,2)$.
+以下设 $n>5$ 且 $n$ 为奇数.
+此时 $\frac{n-1}{2}$ 是整数且 $\frac{n-1}{2}<n-3$, 故 $2 \cdot \frac{n-1}{2} \mid(n-2) !$, 即 $(n-1) \mid(n-2)$ !. 因此 $(n-1)^2 \mid(n-1)$ ! , 即
+$$
+(n-1)^2 \mid\left(n^k-1\right) . \label{eq2}
+$$
+另一方面, 由二项式定理知
+$$
+\begin{aligned}
+n^k-1 & =((n-1)+1)^k-1 \\
+& =(n-1)^k+\mathrm{C}_k^1(n-1)^{k-1}+\cdots+\mathrm{C}_k^{k-2}(n-1)^2+k(n-1) . \label{eq3}
+\end{aligned}
+$$
+由式\ref{eq2}、\ref{eq3}推出 $(n-1)^2 \mid k(n-1)$, 即 $(n-1) \mid k$. 故 $k \geqslant n-1$, 从而
+$$
+n^k-1 \geqslant n^{n-1}-1>(n-1) ! .
+$$
+这表明, 当 $n>5$ 时方程式\ref{eq1}没有正整数解, 即式\ref{eq1}的全部正整数解为 $(n, k)= (2,1),(3,1),(5,2)$.
+%%<REMARK>%%
+注1 上面解法的关键是在 $n>5$ 时,利用整除给出 $k$ 的下界: $k \geqslant n-1$, 进而 (利用不等式)证明式\ref{eq1}无解.
+论证的第一步, 是对奇数 $n>5$ 证明 $(n-1)^2 \mid (n-1)$ !. 这个事实是下面结果的一个特别情形设 $m$ 是大于 4 的整数, 且不是素数, 则 $m \mid(m-1) !$. 
+注2 论证的第二步, 是用 $(n-1)^2$ 除 $n^k-1$, 这其实不必应用二项式定理, 只需注意: $(x+1)^k-1$ 的展开式, 是一个关于 $x$ 的整系数多项式, 其中常数项为零, 而一次项系数为 $k$.
+若应用下一单元讲的同余, 则可更为直接地证明 $(n-1) \mid k$ :
+因为 $n^k-1=(n-1)\left(n^{k-1}+n^{k-2}+\cdots+n+1\right)$, 而 $n^i \equiv 1(\bmod n-1)$, $i=1, \cdots, k-1$, 故
+$$
+n^{k-1}+n^{k-2}+\cdots+n+1 \equiv \underbrace{1+1+\cdots+1}_{k \text { 个 }}=k(\bmod n-1) .
+$$
+从而 $n^k-1 \equiv k(n-1)\left(\bmod (n-1)^2\right)$, 于是由 $(n-1)^2 \mid n^k-1$, 得出 $(n-1)^2 \mid k(n-1)$, 即 $(n-1) \mid k$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 求出不定方程:
+$$
+x^3+x^2 y+x y^2+y^3=8\left(x^2+x y+y^2+1\right)
+$$
+的全部整数解.
+%%<SOLUTION>%%
+解:法一原方程左端是关于 $x 、 y$ 的三次多项式,右边是二次多项式.
+而对于整数 $x 、 y$, 三次式的值的绝对值一般应大于二次式的值的绝对值, 因此本题有希望用估计法解决.
+现将方程分解为
+$$
+\left(x^2+y^2\right)(x+y-8)=8(x y+1) . \label{eq1}
+$$
+若 $x+y-8 \geqslant 6$, 则 $x+y \geqslant 14$, 从而
+$$
+x^2+y^2 \geqslant \frac{(x+y)^2}{2}>4 \text {. }
+$$
+这时式\ref{eq1}的左端
+$$
+\begin{aligned}
+& \geqslant 6\left(x^2+y^2\right)=4\left(x^2+y^2\right)+2\left(x^2+y^2\right) \\
+& \geqslant 8 x y+2\left(x^2+y^2\right)>8(x y+1),
+\end{aligned}
+$$
+故此时方程无整数解.
+若 $x+y-8 \leqslant-4$, 则 $x+y \leqslant 4$, 这时式\ref{eq1}的左端
+$$
+\leqslant-4\left(x^2+y^2\right) \leqslant-4 \times 2|x y| \leqslant 8 x y<8(x y+1),
+$$
+此时方程亦无整数解.
+因此, 方程的整数解 $(x, y)$ 应满足
+$$
+-3 \leqslant x+y-8 \leqslant 5 .
+$$
+另一方面, 式\ref{eq1}的左端应是偶数,这推出 $x, y$ 的奇偶性必须相同, 从而 $x+ y-8$ 是偶数, 故它只能是 $-2 、 0 、 2 、 4$. 结合 式\ref{eq1}, 通过检验不难得知, 所求的解为 $(x, y)=(2,8),(8,2)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 求出不定方程:
+$$
+x^3+x^2 y+x y^2+y^3=8\left(x^2+x y+y^2+1\right)
+$$
+的全部整数解.
+%%<SOLUTION>%%
+解法二记 $u=x+y, v=x y$, 则原方程可变形为
+$$
+u\left(u^2-2 v\right)=8\left(u^2-v+1\right), \label{eq2}
+$$
+即
+$$
+u^3-2 u v=8 u^2-8 v+8,
+$$
+由此可见 $u$ 是偶数,设 $u=2 w$, 则
+$$
+2 w^3-w w=8 w^2-2 v+2 . \label{eq3}
+$$
+我们解出 $v$, 得到
+$$
+v=\frac{2 w^3-8 w^2-2}{w-2}=2 w^2-4 w-8-\frac{18}{w-2} . \label{eq4}
+$$
+因此 $w-2$ 是 18 的约数, 即是 $\pm 1, \pm 2, \pm 3, \pm 6, \pm 9, \pm 18$. 对于 $w$ 的每一个可能值, 结合式\ref{eq4}可确定 $v$, 进而求得相应的整数解 $(x, y)$ 只有 $(2,8)$ 及 $(8$, 2 ). (注意, 求得一组 $w, v$ 的值, 则相应的 $x, y$ 为整数等价于 $w^2-v$ 为完全平方数.)
+%%<REMARK>%%
+注:原方程的左、右两边均是关于 $x 、 y$ 的二元对称多项式,因此必能表示为关于 $u=x+y, v=x y$ 的多项式 (见 式\ref{eq2}). 对本题而言, 这一表示的优点在于, 导出的方程式\ref{eq3}关于 $v$ 是一次方程, 从而可解出 $v$ (用 $w$ 表示).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 求出具有下述性质的正整数 $n$ : 它被 $\leqslant \sqrt{n}$ 的所有正整数整除.
+%%<SOLUTION>%%
+解:法一我们首先证明, 每个正整数 $n$ 可唯一地表示为形式
+$$
+n=q^2+r, 0 \leqslant r \leqslant 2 q. \label{eq1}
+$$
+这是因为任意正整数 $n$ 必介于两个相邻的平方数之间, 即有正整数 $q$, 使得 $q^2 \leqslant n<(q+1)^2$. 令 $r=n-q^2$, 则 $r \geqslant 0$, 又 $r<(q+1)^2-q^2=2 q+1$, 故整数 $r \leqslant 2 q$, 从而 $n$ 有形如式\ref{eq1}的表示.
+另一方面, 若 $n$ 可表示为式\ref{eq1}的形式, 则易知 $q^2 \leqslant n<(q+1)^2$, 故 $q= [\sqrt{n}]$, 由此即知 $q$ 被 $n$ 唯一确定, 相应的 $r$ 因此也被确定.
+利用式\ref{eq1}便不难解决例 6. 因已知 $q=[\sqrt{n}]$ 整除 $n$, 结合式\ref{eq1}知 $q \mid r$, 故 $r=0$ 、 $q$ 或 $2 q$, 即 $n$ 具有形式
+$$
+n=q^2, q^2+q, q^2+2 q .
+$$
+$n=1,2,3$ 显然合要求.
+设 $n>3$, 则 $q=[\sqrt{n}] \geqslant 2$, 故由已知条件知
+$(q-1) \mid n$. 若 $n=q^2$, 由
+$$
+q^2=q(q-1)+q \quad \text { 及 } \quad(q-1, q)=1
+$$
+可见,必须 $q-1=1$, 即 $q=2$, 所以 $n=4$.
+同样, 若 $n=q^2+q$, 则 $q=2,3$, 从而 $n=6,12$; 若 $n=q^2+2 q$, 则 $q=$ 2 或 4 , 相应地 $n=8,24$. 因此, $n$ 只可能是 $1,2,3,4,6,8,12,24$, 经检验它们均符合要求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 求出具有下述性质的正整数 $n$ : 它被 $\leqslant \sqrt{n}$ 的所有正整数整除.
+%%<SOLUTION>%%
+解法二设 $q=[\sqrt{n}]$, 我们证明 $q \geqslant 6$ 时没有符合要求的 $n$. 反证法, 假设有这样的 $n$, 我们将利用 $q 、 q-1 、 q-2$ 均整除 $n$ 来产生矛盾.
+因为 $q$ 与 $q-2$ 整除 $n$, 故 $[q, q-2] \mid n$, 即 $\frac{q(q-2)}{(q, q-2)} \mid n$ (见第 2 单元 (10)). 又 $q-1 \mid n$, 故 $q-1$ 与 $\frac{q(q-2)}{(q, q-2)}$ 的最小公倍数 $D$ 整除 $n$. 但 $q-1$ 与 $q$ 及 $q-2$ 均互素, 故 $q-1$ 与 $q(q-2)$ 互素, 从而 $D=(q-1) \cdot \frac{q(q-2)}{(q, q-2)}$. 因此
+$$
+\frac{q(q-1)(q-2)}{(q, q-2)} \leqslant n
+$$
+但显然 $(q, q-2) \leqslant 2$, 故
+$$
+q(q-1)(q-2) \leqslant 2 n .
+$$
+注意 $\sqrt{n}<q+1$, 故由上式可得 $q(q-1)(q-2)<2(q+1)^2$, 这可化简为
+$$
+q^3-5 q^2-2 q-2<0 .
+$$
+但当 $q \geqslant 6$ 时, 上式的左边 $=q^2(q-5)-2 q-2 \geqslant q^2-2 q-2>0$, 矛盾.
+因此 $q \geqslant 6$ 时无解.
+而当 $q \leqslant 5$ 时易通过逐一检验求出所有符合要求的 $n: 1,2$, $3,4,6,8,12$ 及 24 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 证明: 从 $1,2, \cdots, 100$ 中任意取出 51 个数,其中必有两个数互素.
+%%<SOLUTION>%%
+证明:问题点破了极为简单: 我们从 $1,2, \cdots, 100$ 中依次取相邻的两个数,配成下面 50 个数对
+$$
+\{1,2\},\{3,4\}, \cdots,\{99,100\},
+$$
+则任意取出的 51 个数必然包含了上述数对中的某一对, 因这两数相邻, 它们当然互素.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 证明: 存在连续 1000 个正整数,其中恰有 10 个素数.
+%%<SOLUTION>%%
+证明:这一证明的基础是习题 3 第 1 题, 由这结论可知, 存在连续 1000 个正整数
+$$
+a, a+1, \cdots, a+999, \label{eq1}
+$$
+其中每个数都不是素数.
+现将式\ref{eq1}中的数施行如下操作: 删去式\ref{eq1}中最右边的 $a+999$, 而在最左边添上 $a-1$. 显然,所得的数列
+$$
+a-1, a, \cdots, a+998
+$$
+中至多有一个素数.
+重复这一手续, 直至达到 $1,2, \cdots, 1000$ 后停止.
+我们注意, 一次操作后所得的 (连续 1000 个) 正整数中的素数个数, 与操作前的 1000 个正整数中的素数个数相比, 或相等, 或增、减 1 . 而最终得到的数 $1,2, \cdots$, 1000 中, 显然有多于 10 个素数, 因此, 上述操作过程中, 必有一次所产生的 1000 个连续整数中恰包含 10 个素数.
+%%<REMARK>%%
+例 7 和例 8 都是所谓的"存在性问题",即证明存在"某事物"具有"某种性质". 这里的论证并未实际地构造出符合要求的事物, 而是用逻辑的力量表明了它们的存在.
+例 7 应用了众所周知的 "抽庶原理", 例 8 则应用了一述的原则, 这有时被称作"离散的零点定理":
+设 $f(n)$ 为一个定义在 (正) 整数集上的函数, 取值也为整数.
+若对所有 $n$ 有 $|f(n)-f(n+1)| \leqslant 1$, 并且存在整数 $a$ 及 $b$, 使得 $f(a) f(b)<0$, 则在数 $a 、 b$ 之间必有一整数 $c$, 使 $f(c)=0$. (例 8 中, 我们可取 $g(n)$ 为从 $n$ 开始的连续 1000 个正整数中素数的个数,而取 $f(n)=g(n)-10$. )
+处理存在性问题的另一种有效的方法是所谓的构造法, 即实际地造出符合要求的事物.
+构造法是一种重要的数学方法, 灵活多样.
+数论中有许多问题可以(甚至必须)用构造法来论证.
+我们举几个这样的例子.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 若一个正整数的标准分解中, 每个素约数的幂次都大于 1 , 则称它为幂数.
+证明: 存在无穷多个互不相同的正整数, 它们及它们中任意多个不同数的和都不是幂数.
+%%<SOLUTION>%%
+证明:设 $2=p_1<p_2<\cdots<p_n<\cdots$ 是全体素数, 则
+$$
+p_1, p_1^2 p_2, p_1^2 p_2^2 p_3, \cdots, p_1^2 p_2^2 \cdots p_{n-1}^2 p_n, \cdots . \label{eq1}
+$$
+符合要求.
+为了验证这一断言, 我们将数列中第 $n$ 个数记作 $a_n$. 首先, 每个 $a_n$ 都不是幂数.
+对任意 $r, s, \cdots, n(1 \leqslant r<s<\cdots<n)$, 由式\ref{eq1}知, $p_r \mid a_r$ 但 $p_r^2 \nmid a_r$, 并且 $p_r\left|\frac{a_s}{a_r}, \cdots, p_r\right| \frac{a_n}{a_r}$. 因此, 在
+$$
+a_r+a_s+\cdots+a_n=a_r\left(\frac{a_s}{a_r}+\cdots+\frac{a_n}{a_r}+1\right)
+$$
+中, 第二个因数与 $p_r$ 互素, 于是素数 $p_r$ 在 $a_r+a_s+\cdots+a_n$ 的标准分解中恰出现一次, 故 $a_r+a_s+\cdots+a_n$ 不是幂数.
+此外, 由于素数有无穷多个, 所以式\ref{eq1}中的数也有无穷多个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 证明: 有无穷多个正整数 $n$ 满足 $n \mid\left(2^n+1\right)$.
+%%<SOLUTION>%%
+证明:一考察最初几个 $n$ 的值, 小于 10 的数只有 $n=3^0, 3^1, 3^2$ 符合要求.
+我们可期望 $n=3^k(k \geqslant 0)$ 都符合要求.
+证实这件事是一个简单的归纳练习.
+奠基是显然的.
+假设对 $k \geqslant 0$ 已有 $3^k \mid\left(2^{3^k}+1\right)$, 即
+$$
+2^{3^k}=-1+3^k u, u \text { 为整数.
+}
+$$
+则 $2^{3^{k+1}}=\left(-1+3^k u\right)^3=-1+3^{k+1} v$ ( $v$ 是一个整数), 故 $3^{k+1} \mid\left(2^{3^{k+1}}+1\right)$, 这 .表明 $n=3^{k+1}$ 也符合要求, 从而完成了上述断言的归纳证明.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 证明: 有无穷多个正整数 $n$ 满足 $n \mid\left(2^n+1\right)$.
+%%<SOLUTION>%%
+证明二这是一个不同的构造法.
+关键是注意到: 若 $n \mid\left(2^n+1\right)$, 则对
+$m=2^n+1$, 有 $m \mid\left(2^m+1\right)$.
+事实上, 由于 $2^n+1$ 是奇数, 若 $2^n+1=n k$ ( $k$ 为整数), 则 $k$ 必是奇数, 所以
+$$
+2^m+1=\left(2^n\right)^k+1=\left(2^n+1\right)\left(\left(2^n\right)^{k-1}-\left(2^n\right)^{k-2}+\cdots-2^n+1\right)
+$$
+是 $m=2^n+1$ 的倍数.
+由上述的结果, 便递推地给出无穷多个符合要求的数: $1,3,9,513, \cdots$.
+两种方法得出的解不全相同, 但它们 (除 1 之外) 都是 3 的倍数.
+这一点并非偶然, 实际可知, 符合本题要求的 $n(>1)$ 都被 3 整除.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 证明: 有无穷多个正整数 $n$, 满足 $n \mid\left(2^n+2\right)$.
+%%<SOLUTION>%%
+证明:我们仍采用归纳构造法, 其中的关键一着是加强归纳假设.
+面证明: 若 $n$ 满足
+$$
+2|n, n|\left(2^n+2\right),(n-1) \mid\left(2^n+1\right), \label{eq1}
+$$
+则对于 $m=2^n+2$, 有
+$$
+2|m, m|\left(2^m+2\right),(m-1) \mid\left(2^m+1\right) . \label{eq2}
+$$
+事实上, 由于 $2^n+2=2\left(2^{n-1}+1\right)$ 是奇数的 2 倍及 $2 \mid n$, 故 $2^n+2=n k$ 中的整数 $k$ 是一个奇数, 所以
+$$
+2^m+1=2^{n k}+1=\left(2^n\right)^k+1
+$$
+是 $2^n+1=m-1$ 的倍数.
+同样, 从 $2^n+1=(n-1) l$ 知 $l$ 为奇数, 故
+$$
+2^m+2=2\left(2^{m-1}+1\right)=2\left(\left(2^{n-1}\right)^l+1\right)
+$$
+为 $2\left(2^{n-1}+1\right)=2^n+2=m$ 的倍数.
+又 $m=2^n+2$ 显然为偶数, 故上述的断言得到了证明.
+现在, 由于 $n=2$ 满足 式\ref{eq1}, 于是用 式\ref{eq2} 便递推地构造出无穷多个符合要求的数: $2,6,66, \cdots$.
+我们注意, 式\ref{eq1}中的 $2 \mid n$ 是必要的, 即满足本题要求的数都是偶数.
+因为若有奇数 $n>1$, 适合 $n \mid\left(2^n+2\right)$, 则 $n \mid\left(2^{n-1}+1\right)$, 这将与第 8 单元例 3 的结论相违.
+%%PROBLEM_END%%
+
+

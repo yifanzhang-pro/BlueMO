@@ -1,0 +1,1265 @@
+
+%%TEXT_BEGIN%%
+证明不等式的基本万法现实世界中的量, 相等是局部的、相对的, 而不等则是普遍的、绝对的,不等式的本质是研究"数量关系"中的"不等关系".
+对于两个量, 我们常常要比较它们之间的大小, 或者证明一个量大于另一个量, 这就是不等式的证明.
+不等式的证明因题而异, 灵活多变, 常常要用到一些基本的不等式,如平均不等式、柯西不等式等,其中还需用到一些技巧性高的代数变形.
+本节将介绍证明不等式的一些最基本的方法.
+1.1 比较法比较法一般有两种形式:
+(1) 差值比较欲证 $A \geqslant B$, 只需证 $A-B \geqslant 0$;
+(2) 商值比较若 $B>0$, 欲证 $A \geqslant B$, 只需证 $\frac{A}{B} \geqslant 1$.
+在用比较法时, 常常需要对式子进行适当变形, 如因式分解、拆项、合并项等.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+1.2. 放缩 法有时我们直接证明不等式 $A \leqslant B$ 比较困难, 可以试着去找一个中间量 $C$,
+如果有 $A \leqslant C$ 及 $C \leqslant B$ 同时成立, 自然就有 $A \leqslant B$ 成立.
+所谓"放缩" 即将 $A$ 放大到 $C$, 再把 $C$ 放大到 $B$ 或者反过来把 $B$ 缩小到 $C$ 再缩小到 $A$. 不等式证明的技巧, 常体现在对放缩尺度的把握上.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+1.3 分析法就是先假定要证的不等式成立, 然后由它出发推出一系列与之等价的不等式 (即要求推理过程的每一步都可逆), 直到得到一个较容易证明的不等式或者一个明显成立的不等式.
+分析法是一种执果索因的证明方法, 在寻求证明思路时尤为有效.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+1.4 待定系数法引人适当的参数, 根据题中式子的特点, 将参数确定, 从而使不等式获得证明.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+1.5 标准化(归一化)
+当不等式为齐次式的时候, 常可设变量之和为 $k$ (某个常数), 这样不仅简化了式子,而且增加了条件,有助于我们解决问题.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+1.6 Schur 不等式
+Schur 不等式: 设 $x, y, z \in \mathbf{R}^{+}$, 则
+$$
+x(x-y)(x-z)+y(y-z)(y-x)+z(z-x)(z-y) \geqslant 0 . \label{(1)}
+$$
+(即: $\sum_{c y c}[x(x-y)(x-z)] \geqslant 0$. .).
+一般地, Schur 不等式为: 设 $x, y, z \geqslant 0, r>0$, 则
+$$
+\sum_{c y c} x^r(x-y)(x-z) \geqslant 0 . \label{(2)}
+$$
+证明不妨设 $x \geqslant y \geqslant z$, 则
+$$
+\begin{aligned}
+\text { 左边 } & \geqslant x^r(x-y)(x-z)-y^r(x-y)(y-z) \\
+& \geqslant y^r(x-y)^2 \geqslant 0 .
+\end{aligned}
+$$
+Schur 不等式的如下两个变形形式在解题中非常有用:
+变形 I : $\quad \sum_{c y c} x^3-\sum_{c y c}\left[x^2(y+z)\right]+3 x y z \geqslant 0$.
+变形 II : $\quad\left(\sum_{c y c} x\right)^3-4\left(\sum_{c y c} x\right)\left(\sum_{c y c} y z\right)+9 x y z \geqslant 0$.
+事实上, 把(1)展开即得变形 $\mathrm{I}$, 因为 $\left(\sum_{c x} x\right)^3=\sum_{c x} x^3+3 \sum_{c x}\left[x^2(y+z)\right]+ 6 x y z$, 代入变形 $\mathrm{I}$, 得
+$$
+\begin{gathered}
+\left(\sum_{c y c} x\right)^3-3 \sum_{c y c}\left[x^2(y+z)\right]-6 x y z-\sum_{c y c}\left[x^2(y+z)\right]+3 x y z \geqslant 0, \\
+\left(\sum_{c y c} x\right)^3-4 \sum_{c y c}\left[x^2(y+z)\right]-3 x y z \geqslant 0,
+\end{gathered}
+$$
+所以
+$$
+\left(\sum_{c y c} x\right)^3-4\left(\sum_{c y c} x\right)\left(\sum_{c y c} y z\right)+9 x y z \geqslant 0 .
+$$
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+1.7 Hölder 不等式
+Hölder 不等式: 设 $w_1, w_2, \cdots, w_n$ 是正实数, $w_1+w_2+\cdots+w_n=1$, 对任意正实数 $a_{i j}$, 有
+$$
+\begin{aligned}
+& \left(a_{11}+a_{12}+\cdots+a_{1 m}\right)^{w_1}\left(a_{21}+a_{22}+\cdots+a_{2 m}\right)^{w_2} \cdots\left(a_{n 1}+a_{n 2}+\cdots+a_{n m}\right)^{w_n} \\
+\geqslant & a_{11}^{w_1} a_{21}^{w_2} \cdots a_{n 1}^{w_n}+a_{12}^{w_1} a_{22}^{w_2} \cdots a_{n 2}^{w_n}+\cdots+a_{1 m}^{w_1} a_{2 m}^{w_2} \cdots a_{n m}^{w_n} .
+\end{aligned} \label{(1)}
+$$
+(即: $\prod_{i=1}^n\left(\sum_{j=1}^m a_{i j}\right)^{w_i} \geqslant \sum_{j=1}^m \prod_{i=1}^n a_{i j}^{w_i}$. )
+证明记 $A_\alpha=\sum_{j=1}^m a_{\alpha j}(\alpha=1,2, \cdots, n)$, 则(1)式为
+$$
+\begin{gathered}
+\left(A_1^{w_1} A_2^{w_2} \cdots A_n^{w_n}\right)^{-1} \sum_{j=1}^m a_{1 j}^{w_1} a_{2 j}^{w_2} \cdots a_{n j}^{w_n} \leqslant 1, \\
+\sum_{j=1}^m\left(\frac{a_{1 j}}{A_1}\right)^{w_1}\left(\frac{a_{2 j}}{A_2}\right)^{w_2} \cdots\left(\frac{a_{n j}}{A_n}\right)^{w_n} \leqslant 1 .
+\end{gathered}
+$$
+即因为 $f(x)=\ln x(x>0)$ 是向上凸函数 (因为 $f^{\prime \prime}(x)=-\frac{1}{x^2}<0$), 由加权的 Jensen 不等式, 可得
+$$
+\begin{aligned}
+& w_1 \ln \frac{a_{1 j}}{A_1}+w_2 \ln \frac{a_{2 j}}{A_2}+\cdots+w_n \ln \frac{a_{n j}}{A_n} \\
+= & \frac{1}{w_1+w_2+\cdots+w_n}\left(w_1 \ln \frac{a_{1 j}}{A_1}+w_2 \ln \frac{a_{2 j}}{A_2}+\cdots+w_n \ln \frac{a_{n j}}{A_n}\right) \\
+\leqslant & \ln \frac{w_1 \frac{a_{1 j}}{A_1}+w_2 \frac{a_{2 j}}{A_2}+\cdots+w_n \frac{a_{n j}}{A_n}}{w_1+w_2+\cdots+w_n} \\
+\leqslant & \ln \left(w_1 \frac{a_{1 j}}{A_1}+w_2 \frac{a_{2 j}}{A_2}+\cdots+w_n \frac{a_{n j}}{A_n}\right),
+\end{aligned}
+$$
+所以 $\left(\frac{a_{1 j}}{A_1}\right)^{w_1}\left(\frac{a_{2 j}}{A_2}\right)^{w_2} \cdots\left(\frac{a_{n j}}{A_n}\right)^{w_n} \leqslant w_1 \frac{a_{1 j}}{A_1}+w_2 \frac{a_{2 j}}{A_2}+\cdots+w_n \frac{a_{n j}}{A_n}$,
+把上式对 $j$ 从 1 到 $m$ 求和, 得
+$$
+\sum_{j=1}^m\left(\frac{a_{1 j}}{A_1}\right)^{w_1}\left(\frac{a_{2 j}}{A_2}\right)^{w_2} \cdots\left(\frac{a_{n j}}{A_n}\right)^{w_n} \leqslant w_1+w_2+\cdots+w_n=1,
+$$
+从而命题得证.
+特别地, 当 $w_1=w_2=\cdots=w_n=\frac{1}{n}$ 时, 有
+$$
+\begin{aligned}
+& \left(a_{11}^n+a_{12}^n+\cdots+a_{1 m}^n\right)\left(a_{21}^n+a_{22}^n+\cdots+a_{2 m}^n\right) \cdots\left(a_{n 1}^n+a_{n 2}^n+\cdots+a_{n m}^n\right) \\
+\geqslant & \left(a_{11} a_{21} \cdots a_{n 1}+a_{12} a_{22} \cdots a_{n 2}+\cdots+a_{1 m} a_{2 m} \cdots a_{n m}\right)^n . \label{(2)}
+\end{aligned}
+$$
+在(2)中, 取 $n=3, m=3$, 有
+$$
+\begin{aligned}
+& \left(a_{11}^3+a_{12}^3+a_{13}^3\right)\left(a_{21}^3+a_{22}^3+a_{23}^3\right)\left(a_{31}^3+a_{32}^3+a_{33}^3\right) \\
+\geqslant & \left(a_{11} a_{21} a_{31}+a_{12} a_{22} a_{32}+a_{13} a_{23} a_{33}\right)^3 . \label{(3)}
+\end{aligned}
+$$
+在(2)中, 取 $n=3, m=2$, 有
+$$
+\left(a_{11}^3+a_{12}^3\right)\left(a_{21}^3+a_{22}^3\right)\left(a_{31}^3+a_{32}^3\right) \geqslant\left(a_{11} a_{21} a_{31}+a_{12} a_{22} a_{32}\right)^3 . \label{(4)}
+$$
+在(1)中, 取 $n=2$, 有
+$$
+\left(\sum_{i=1}^m a_i\right)^\alpha\left(\sum_{i=1}^m b_i\right)^\beta \geqslant \sum_{i=1}^m a_i^\alpha b_i^\beta, \label{(5)}
+$$
+其中 $\alpha 、 \beta$ 是正实数, 且 $\alpha+\beta=1$. 当 $\alpha=\beta=\frac{1}{2}$ 时,(5) 即为 Cauchy 不等式.
+在(5)中, 令 $m=n, a_i^\alpha=x_i, b_i^\beta=y_i, \alpha=\frac{1}{p}, \beta=\frac{1}{q}$, 则(5)式为
+$$
+\sum_{i=1}^n x_i y_i \leqslant\left(\sum_{i=1}^n x_i^p\right)^{\frac{1}{p}}\left(\sum_{i=1}^n y_i^q\right)^{\frac{1}{q}}, \label{(6)}
+$$
+其中 $p>0, q>0, \frac{1}{p}+\frac{1}{q}=1$.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $a 、 b 、 c$ 是正实数,求证:
+$$
+\frac{a^2+b c}{b+c}+\frac{b^2+c a}{c+a}+\frac{c^2+a b}{a+b} \geqslant a+b+c .
+$$
+%%<SOLUTION>%%
+证明:上式左边一右边
+$$
+\begin{aligned}
+& =\frac{a^2+b c}{b+c}-a+\frac{b^2+c a}{c+a}-b+\frac{c^2+a b}{a+b}-c \\
+& =\frac{a^2+b c-a b-a c}{b+c}+\frac{b^2+c a-b c-b a}{c+a}+\frac{c^2+a b-c a-b}{a+b} \\
+& =\frac{(a-b)(a-c)}{b+c}+\frac{(b-c)(b-a)}{c+a}+\frac{(c-a)(c-b)}{a+b} \\
+& =\frac{\left(a^2-b^2\right)\left(a^2-c^2\right)+\left(b^2-c^2\right)\left(b^2-a^2\right)+\left(c^2-a^2\right)\left(c^2-b^2\right)}{(b+c)(c+a)(a+b)}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& =\frac{a^4+b^4+c^4-a^2 b^2-b^2 c^2-c^2 a^2}{(a+b)(b+c)(c+a)} \\
+& =\frac{\left(a^2-b^2\right)^2+\left(b^2-c^2\right)^2+\left(c^2-a^2\right)^2}{2(a+b)(b+c)(c+a)} \geqslant 0,
+\end{aligned}
+$$
+所以
+$$
+\frac{a^2+b c}{b+c}+\frac{b^2+c a}{c+a}+\frac{c^2+a b}{a+b} \geqslant a+b+c .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 实数 $x 、 y 、 z$ 满足 $x y+y z+z x=-1$, 求证:
+$$
+x^2+5 y^2+8 z^2 \geqslant 4 \text {. }
+$$
+%%<SOLUTION>%%
+证明:因为
+$$
+\begin{aligned}
+& x^2+5 y^2+8 z^2-4 \\
+= & x^2+5 y^2+8 z^2+4(x y+y z+z x) \\
+= & (x+2 y+2 z)^2+(y-2 z)^2 \geqslant 0,
+\end{aligned}
+$$
+所以
+$$
+x^2+5 y^2+8 z^2 \geqslant 4 .
+$$
+说明本题的拆项配方, 有一定的技巧, 需要有较强的观察能力.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $a, b, c \in \mathbf{R}^{+}$, 试证: 对任意实数 $x 、 y 、 z$, 有:
+$$
+\begin{aligned}
+& x^2+y^2+z^2 \\
+\geqslant & 2 \sqrt{\frac{a b c}{(a+b)(b+c)(c+a)}}\left(\sqrt{\frac{a+b}{c}} x y+\sqrt{\frac{b+c}{a}} y z+\sqrt{\frac{c+a}{b}} z x\right) .
+\end{aligned}
+$$
+并指出等号成立的充要条件.
+%%<SOLUTION>%%
+分析:熟知 $x^2+y^2+z^2-x y-y z-z x=\frac{1}{2}\left[(x-y)^2+(y-z)^2+\right. \left.(z-x)^2\right] \geqslant 0$, 我们用类似的方法证明本题.
+证明上式左边一右边
+$$
+\begin{aligned}
+= & {\left[\frac{b}{b+c} x^2+\frac{a}{c+a} y^2-2 \sqrt{\left.\frac{a b}{(b+c)(c+a)} x y\right]}\right.} \\
+& +\left[\frac{c}{c+a} y^2+\frac{b}{a+b} z^2-2 \sqrt{\frac{b c}{(c+a)(a+b)}} y z\right] \\
+& +\left[\frac{c}{b+c} x^2+\frac{a}{a+b} z^2-2 \sqrt{\frac{c a}{(b+c)(a+b)}} x z\right] \\
+= & \sum_{c y c} a b\left[\frac{x}{\sqrt{a(b+c)}}-\frac{y}{\sqrt{b(c+a)}}\right]^2 \\
+\geqslant & 0 \text { (这里 } \sum_{c y c} \text { 表示循环和号), }
+\end{aligned}
+$$
+故原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $a, b, c \in \mathbf{R}^{+}$, 求证: $a^{2 a} b^{2 b} c^{2 c} \geqslant a^{b+c} b^{c+a} c^{a+} b$.
+%%<SOLUTION>%%
+证明:由于不等式是关于 $a 、 b 、 c$ 对称的, 不妨设 $a \geqslant b \geqslant c$, 于是
+$$
+\frac{a^{2 a} b^{2 b} c^{2 c}}{a^{b+c} b^{c+a} c^{a+b}}=\left(\frac{a}{b}\right)^{a-b}\left(\frac{b}{c}\right)^{b-c}\left(\frac{a}{c}\right)^{a-c} \geqslant 1,
+$$
+所以
+$$
+a^{2 a} b^{2 b} c^{2 c} \geqslant a^{b+c} b^{c+a} c^{a+b} .
+$$
+说明由本题的结论得
+$$
+\begin{gathered}
+a^{3 a} b^{3 b} c^{3 c} \geqslant a^{a+b+c} b^{a+b+c} c^{a+b+c}, \\
+a^a b^b c^c \geqslant(a b c)^{\frac{a+b+c}{3}} .
+\end{gathered}
+$$
+一般地, 设 $x_i \in \mathbf{R}^{+}, i=1,2, \cdots, n$, 则有
+$$
+x_1^{x_1} \cdot x_2^{x_2} \cdots \cdots \cdot x_{n^n}^{x_n} \geqslant\left(x_1 x_2 \cdots x_n\right)^{\frac{x_1+x_3+\cdots+x_n}{n}},
+$$
+证法与本例完全一样.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $a, b, c \in \mathbf{R}^{+}, a^2+b^2+c^2=1$, 求
+$$
+S=\frac{1}{a^2}+\frac{1}{b^2}+\frac{1}{c^2}-\frac{2\left(a^3+b^3+c^3\right)}{a b c}
+$$
+的最小值.
+%%<SOLUTION>%%
+解:当 $a=b=c$ 时, $S=3$. 猜测: $S \geqslant 3$.
+事实上,
+$$
+\begin{aligned}
+S-3 & =\frac{1}{a^2}+\frac{1}{b^2}+\frac{1}{c^2}-3-\frac{2\left(a^3+b^3+c^3\right)}{a b c} \\
+& =\frac{a^2+b^2+c^2}{a^2}+\frac{a^2+b^2+c^2}{b^2}+\frac{a^2+b^2+c^2}{c^2}-3-2\left(\frac{a^2}{b c}+\frac{b^2}{c a}+\frac{c^2}{a b}\right) \\
+& =a^2\left(\frac{1}{b^2}+\frac{1}{c^2}\right)+b^2\left(\frac{1}{a^2}+\frac{1}{c^2}\right)+c^2\left(\frac{1}{a^2}+\frac{1}{b^2}\right)-2\left(\frac{a^2}{b c}+\frac{b^2}{c a}+\frac{c^2}{a b}\right) \\
+& =a^2\left(\frac{1}{b}-\frac{1}{c}\right)^2+b^2\left(\frac{1}{c}-\frac{1}{a}\right)^2+c^2\left(\frac{1}{a}-\frac{1}{b}\right)^2 \\
+& \geqslant 0 .
+\end{aligned}
+$$
+综上所述, $S$ 的最小值为 3 .
+说明先猜后证是处理许多最值问题的有效手段.
+猜, 一猜答案, 二猜等号成立的条件;证明的时候要注意等号是否能取到.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $n$ 是正整数, $a_1, a_2, \cdots, a_n$ 是正实数,求证:
+$$
+\begin{aligned}
+& \quad \frac{1}{a_1^2}+\frac{1}{a_2^2}+\cdots+\frac{1}{a_n^2}+\frac{1}{\left(a_1+a_2+\cdots+a_n\right)^2} \geqslant \frac{n^3+1}{\left(n^2+2011\right)^2}\left(\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\right. \\
+& \left.\frac{1}{a_n}+\frac{2011}{a_1+a_2+\cdots+a_n}\right)^2 .
+\end{aligned}
+$$
+%%<SOLUTION>%%
+证明:由柯西不等式可得,
+$$
+\begin{gathered}
+\left(1+1+\cdots+1+\frac{1}{n^2}\right)\left(\frac{1}{a_1^2}+\frac{1}{a_2^2}+\cdots+\frac{1}{a_n^2}+\frac{1}{\left(a_1+a_2+\cdots+a_n\right)^2}\right) \\
+\geqslant\left(\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}+\frac{1}{n\left(a_1+a_2+\cdots+a_n\right)}\right)^2,
+\end{gathered}
+$$
+所以
+$$
+\begin{aligned}
+& \frac{1}{a_1^2}+\frac{1}{a_2^2}+\cdots+\frac{1}{a_n^2}+\frac{1}{\left(a_1+a_2+\cdots+a_n\right)^2} \\
+\geqslant & \frac{n^2}{n^3+1}\left(\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}+\frac{1}{n\left(a_1+a_2+\cdots+a_n\right)}\right)^2,
+\end{aligned}
+$$
+于是只需证 $\frac{n^2}{n^3+1}\left(\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}+\frac{1}{n\left(a_1+a_2+\cdots+a_n\right)}\right)^2$
+$$
+\begin{array}{ll} 
+& \geqslant \frac{n^3+1}{\left(n^2+2011\right)^2}\left(\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}+\frac{2011}{a_1+a_2+\cdots+a_n}\right)^2 \\
+\Leftrightarrow \quad & n\left(n^2+2011\right)\left(\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}+\frac{1}{n\left(a_1+a_2+\cdots+a_n\right)}\right) \\
+& \geqslant\left(n^3+1\right)\left(\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}+\frac{2011}{a_1+a_2+\cdots+a_n}\right) \\
+\Leftrightarrow \quad & \left(n^3+2011 n\right) \sum_{i=1}^n \frac{1}{a_i}+\left(n^2+2011\right) \frac{1}{\sum_{i=1}^n a_i} \\
+& \geqslant\left(n^3+1\right) \sum_{i=1}^n \frac{1}{a_i}+\left(2011 n^3+2011\right) \frac{1}{\sum_{i=1}^n a_i} \\
+\Leftrightarrow \quad & (2011 n-1) \sum_{i=1}^n \frac{1}{a_i} \geqslant(2011 n-1) n^2-\frac{1}{\sum_{i=1}^n a_i} \\
+\Leftrightarrow \quad & \sum_{i=1}^n a_i \sum_{i=1}^n \frac{1}{a_i} \geqslant n^2,
+\end{array}
+$$
+从而命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 求证: 对任意正实数 $a 、 b 、 c$,均有
+$$
+\frac{1}{a^3+b^3+a b c}+\frac{1}{b^3+c^3+a b c}+\frac{1}{c^3+a^3+a b c} \leqslant-\frac{1}{a b c} .
+$$
+%%<SOLUTION>%%
+证明:因为
+$$
+a^3+b^3=(a+b)\left(a^2+b^2-a b\right) \geqslant(a+b) a b,
+$$
+所以
+$$
+\frac{1}{a^3+b^3+a b c} \leqslant \frac{1}{a b(a+b)+a b c}==\frac{c}{a b c(a+b+c)},
+$$
+同理可得
+$$
+\begin{aligned}
+& \frac{1}{b^3+c^3+a b c} \leqslant \frac{a}{a b c(a+b+c)}, \\
+& \frac{1}{c^3+a^3+a b c} \leqslant \frac{b}{a b c(a+b+c)},
+\end{aligned}
+$$
+把上面三式相加, 便得
+$$
+\frac{1}{a^3+b^3+a b c}+\frac{1}{b^3+c^3+a b c}+\frac{1}{c^3+a^3+a b c} \leqslant \frac{1}{a b c} .
+$$
+说明在处理分式不等式时, 通分只有在不得已的情况下才进行, 若想变为同分母比较简便的一种思想就是"放缩".
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设 $a_i \geqslant 1(i=1,2, \cdots, n)$, 求证:
+$$
+\left(1+a_1\right)\left(1+a_2\right) \cdots\left(1+a_n\right) \geqslant \frac{2^n}{n+1}\left(1+a_1+a_2+\cdots+a_n\right) .
+$$
+%%<SOLUTION>%%
+分析:观察两边的式子, 首先要设法让左边"变出" $2^n$.
+证明
+$$
+\begin{aligned}
+& \left(1+a_1\right)\left(1+a_2\right) \cdots\left(1+a_n\right) \\
+= & 2^n\left(1+\frac{a_1-1}{2}\right)\left(1+\frac{a_2-1}{2}\right) \cdots\left(1+\frac{a_n-1}{2}\right) .
+\end{aligned}
+$$
+由于 $a_i-1 \geqslant 0$, 可得:
+$$
+\begin{aligned}
+& \left(1+a_1\right)\left(1+a_2\right) \cdots\left(1+a_n\right) \\
+\geqslant & 2^n\left(1+\frac{a_1-1}{2}+\frac{a_2-1}{2}+\cdots+\frac{a_n-1}{2}\right) \\
+\geqslant & 2^n\left(1+\frac{a_1-1}{n+1}+\frac{a_2-1}{n+1}+\cdots+\frac{a_n-1}{n+1}\right) \\
+= & \frac{2^n}{n+1}\left[n+1+\left(a_1-1\right)+\left(a_2-1\right)+\cdots+\left(a_n-1\right)\right] \\
+= & \frac{2^n}{n+1}\left(1+a_1+a_2+\cdots+a_n\right) .
+\end{aligned}
+$$
+故原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 求最大的实数 $\alpha$, 使得 $\frac{x}{\sqrt{y^2+z^2}}+\frac{y}{\sqrt{x^2+z^2}}+\frac{z}{\sqrt{x^2+y^2}}>\alpha$ 对所有正实数 $x 、 y 、 z$ 成立.
+%%<SOLUTION>%%
+解法 1 令 $x=y, z \rightarrow 0$, 则原式左端 $\rightarrow 2$, 因此, 若 $\alpha>2$, 将出现矛盾, 故 $\alpha \leqslant 2$.
+下面证明: $\frac{x}{\sqrt{y^2+z^2}}+\frac{y}{\sqrt{z^2+x^2}}+\frac{z}{\sqrt{x^2+y^2}}>2$.
+不妨设 $x \leqslant y \leqslant z$, 我们设法证明
+$$
+\frac{x}{\sqrt{y^2+z^2}}+\frac{y}{\sqrt{z^2+x^2}}+\frac{z}{\sqrt{x^2+y^2}}>\frac{\sqrt{x^2+y^2}}{\sqrt{x^2+z^2}}+\frac{\sqrt{x^2+z^2}}{\sqrt{x^2+y^2}} .
+$$
+将 $\frac{y}{\sqrt{z^2+x^2}} 、 \frac{z}{\sqrt{x^2+y^2}}$ 移到右边, 即证
+$$
+\frac{x}{\sqrt{y^2+z^2}}>\frac{\sqrt{x^2+y^2}-y}{\sqrt{x^2+z^2}}+\frac{\sqrt{x^2+z^2}-z}{\sqrt{x^2+y^2}} \text {. }
+$$
+也即
+$$
+\frac{x}{\sqrt{y^2+z^2}}>\frac{x^2}{\sqrt{x^2+y^2}\left(\sqrt{x^2+y^2}+y\right)}+\frac{x^2}{\sqrt{x^2+y^2}\left(\sqrt{x^2+z^2}+z\right)} .
+$$
+两边约去 $x$, 并且由于 $\sqrt{x^2+y^2}+y>2 y, \sqrt{x^2+z^2}+z>2 z$, 所以, 只要证明
+$$
+\frac{1}{\sqrt{y^2+z^2}} \geqslant \frac{x}{2 y \sqrt{x^2+z^2}}+\frac{x}{2 z \sqrt{x^2+y^2}} .
+$$
+由于 $\frac{x}{\sqrt{x^2+z^2}}=\frac{1}{\sqrt{1+\left(\frac{z}{x}\right)^2}}$, 所以 $\frac{x}{\sqrt{x^2+z^2}}$ 随 $x$ 的增大而增大.
+同样, $\frac{x}{\sqrt{x^2+y^2}}$ 也随 $x$ 的增大而增大.
+所以我们只须考虑 $x=y$ 时的情况.
+令 $x=y$, 即证
+$$
+\frac{1}{\sqrt{y^2+z^2}} \geqslant \frac{1}{2 \sqrt{y^2+z^2}}+\frac{1}{2 \sqrt{2} z}
+$$
+也就是 $\frac{1}{2 \sqrt{y^2+z^2}} \geqslant \frac{1}{2 \sqrt{2} z}$, 即证 $\sqrt{2} z \geqslant \sqrt{y^2+z^2}$.
+这是显然成立的.
+因此,
+$$
+\frac{x}{\sqrt{y^2+z^2}}+\frac{y}{\sqrt{x^2+z^2}}+\frac{z}{\sqrt{x^2+y^2}}>\frac{\sqrt{x^2+y^2}}{\sqrt{x^2+z^2}}+\frac{\sqrt{x^2+z^2}}{\sqrt{x^2+y^2}} \geqslant 2 \text {. }
+$$
+故 $\alpha_{\max }=2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 求最大的实数 $\alpha$, 使得 $\frac{x}{\sqrt{y^2+z^2}}+\frac{y}{\sqrt{x^2+z^2}}+\frac{z}{\sqrt{x^2+y^2}}>\alpha$ 对所有正实数 $x 、 y 、 z$ 成立.
+%%<SOLUTION>%%
+解法 2 同样,我们来证明
+$$
+\frac{x}{\sqrt{y^2+z^2}}+\frac{y}{\sqrt{z^2+x^2}}+\frac{z}{\sqrt{x^2+y^2}}>2 .
+$$
+设
+$$
+\frac{x}{\sqrt{y^2+z^2}} \geqslant \frac{2 x^a}{x^a+y^a+z^a} . \label{eq1}
+$$
+其中 $a$ 为待定参数.
+注意到式\ref{eq1}等价于 $\left(x^a+y^a+z^a\right)^2 \geqslant 4 x^{2 a-2}\left(y^2+z^2\right)$.
+上式左边 $\geqslant 4 x^a\left(y^a+z^a\right)$, 故只须保证
+$$
+y^a+z^a \geqslant x^{a-2}\left(y^2+z^2\right) .
+$$
+不难发现, 取 $a=2$ 即可.
+于是
+$$
+\sum \frac{x}{\sqrt{y^2+z^2}} \geqslant \sum \frac{2 x^2}{x^2+y^2+z^2}=2 \text {. }
+$$
+而等号显然不可能成立, 所以 $\sum \frac{x}{\sqrt{y^2+z^2}}>2$.
+故 $\alpha_{\max }=2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设非负实数 $a_1, a_2, \cdots, a_n$ 与 $b_1, b_2, \cdots, b_n$ 同时满足以下条件:
+(1) $\sum_{i=1}^n\left(a_i+b_i\right)=1$;
+(2) $\sum_{i=1}^n i\left(a_i-b_i\right)=0$;
+(3) $\sum_{i=1}^n i^2\left(a_i+b_i\right)=10$.
+求证: 对任意 $1 \leqslant k \leqslant n$, 都有 $\max \left\{a_k, b_k\right\} \leqslant \frac{10}{10+k^2}$. (2010 年中国西部数学奥林匹克)
+%%<SOLUTION>%%
+证明:对任意 $1 \leqslant k \leqslant n$, 有
+$$
+\begin{aligned}
+\left(k a_k\right)^2 & \leqslant\left(\sum_{i=1}^n i a_i\right)^2=\left(\sum_{i=1}^n i b_i\right)^2 \leqslant\left(\sum_{i=1}^n i^2 b_i\right) \cdot\left(\sum_{i=1}^n b_i\right) \\
+& =\left(10-\sum_{i=1}^n i^2 a_i\right) \cdot\left(1-\sum_{i=1}^n a_i\right) \\
+& \leqslant\left(10-k^2 a_k\right) \cdot\left(1-a_k\right)=10-\left(10+k^2\right) a_k+k^2 a_k^2,
+\end{aligned}
+$$
+从而 $a_k \leqslant \frac{10}{10+k^2}$.
+同理有 $b_k \leqslant \frac{10}{10+k^2}$, 所以 $\max \left\{a_k, b_k\right\} \leqslant \frac{10}{10+k^2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 正实数 $x 、 y 、 z$ 满足 $x y z \geqslant 1$, 证明
+$$
+\frac{x^5-x^2}{x^5+y^2+z^2}+\frac{y^5-y^2}{y^5+z^2+x^2}+\frac{z^5-z^2}{z^5+x^2+y^2} \geqslant 0 \text {. }
+$$
+%%<SOLUTION>%%
+证明:原不等式可变形为
+$$
+\frac{x^2+y^2+z^2}{x^5+y^2+z^2}+\frac{x^2+y^2+z^2}{y^5+z^2+x^2}+\frac{x^2+y^2+z^2}{z^5+x^2+y^2} \leqslant 3 .
+$$
+由柯西不等式及题设条件 $x y z \geqslant 1$, 得
+$\left(x^5+y^2+z^2\right)\left(y z+y^2+z^2\right) \geqslant\left(x^2(x y z)^{\frac{1}{2}}+y^2+z^2\right)^2 \geqslant\left(x^2+y^2+z^2\right)^2$, 即
+$$
+\begin{aligned}
+& \frac{x^2+y^2+z^2}{x^5+y^2+z^2} \leqslant \frac{y z+y^2+z^2}{x^2+y^2+z^2}, \\
+& \frac{x^2+y^2+z^2}{y^5+z^2+x^2} \leqslant \frac{z x+z^2+x^2}{x^2+y^2+z^2}, \\
+& \frac{x^2+y^2+z^2}{z^5+x^2+y^2} \leqslant \frac{x y+x^2+y^2}{x^2+y^2+z^2},
+\end{aligned}
+$$
+把上面三个不等式相加, 并利用 $x^2+y^2+z^2 \geqslant x y+y z+z x$, 得
+$$
+\frac{x^2+y^2+z^2}{x^5+y^2+z^2}+\frac{x^2+y^2+z^2}{y^5+z^2+x^2}+\frac{x^2+y^2+z^2}{z^5+x^2+y^2} \leqslant 2+\frac{x y+y z+z x}{x^2+y^2+z^2} \leqslant 3 .
+$$
+摩尔多瓦选手 Boreico Iurie 的解法获得了特别奖.
+他的证法如下: 因为
+$$
+\frac{x^5-x^2}{x^5+y^2+z^2}-\frac{x^5-x^2}{x^3\left(x^2+y^2+z^2\right)}=\frac{x^2\left(x^3-1\right)^2\left(y^2+z^2\right)}{x^3\left(x^5+y^2+z^2\right)\left(x^2+y^2+z^2\right)} \geqslant 0,
+$$
+所以
+$$
+\begin{aligned}
+\sum_{c y c} \frac{x^5-x^2}{x^5+y^2+z^2} & \geqslant \sum_{c y c} \frac{x^5-x^2}{x^3\left(x^2+y^2+z^2\right)}=\frac{1}{x^2+y^2+z^2} \sum_{c y c}\left(x^2-\frac{1}{x}\right) \\
+& \left.\geqslant \frac{1}{x^2+y^2+z^2} \sum_{c y c}\left(x^2-y z\right) \text { (因为 } x y z \geqslant 1\right) \\
+& \geqslant 0 .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 若 $x, y \in \mathbf{R}, y \geqslant 0$, 且 $y(y+1) \leqslant(x+1)^2$, 求证: $y(y-1) \leqslant x^2$.
+%%<SOLUTION>%%
+证明:若 $0 \leqslant y \leqslant 1$, 则 $y(y-1) \leqslant 0 \leqslant x^2$.
+若 $y>1$, 由题设知
+$$
+\begin{gathered}
+y(y+1) \leqslant(x+1)^2, \\
+y \leqslant \sqrt{(x+1)^2+\frac{1}{4}}-\frac{1}{2} .
+\end{gathered}
+$$
+要证明 $y(y-1) \leqslant x^2$, 即只需证明
+$$
+\begin{array}{lc} 
+& \sqrt{(x+1)^2+\frac{1}{4}}-\frac{1}{2} \leqslant \sqrt{x^2+\frac{1}{4}}+\frac{1}{2}, \\
+\Leftrightarrow & (x+1)^2+\frac{1}{4} \leqslant x^2+\frac{1}{4}+2 \sqrt{x^2+\frac{1}{4}}+1 \\
+\Leftrightarrow & 2 x \leqslant 2 \sqrt{x^2+\frac{1}{4}} .
+\end{array}
+$$
+最后这个不等式是显然的, 从而原不等式得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13. 设 $a, b, c \in \mathbf{R}^{+}$, 求证:
+$$
+a+b+c-3 \sqrt[3]{a b c} \geqslant a+b-2 \sqrt{a b} .
+$$
+%%<SOLUTION>%%
+证明:注意到
+$$
+a+b+c-3 \sqrt[3]{a b c} \geqslant a+b-2 \sqrt{a b}
+$$
+$\Leftrightarrow \quad c+2 \sqrt{a b} \geqslant 3 \sqrt[3]{a b c}$.
+因为
+$$
+\begin{aligned}
+c+2 \sqrt{a} \bar{b} & =c+\sqrt{a b}+\sqrt{a b} \\
+& \geqslant 3 \sqrt[3]{c \sqrt{a b} \sqrt{a b}} \\
+& =3 \sqrt[3]{a b c},
+\end{aligned}
+$$
+从而
+$$
+a+b+c-3 \sqrt[3]{a b c} \geqslant a+b-2 \sqrt{a b} .
+$$
+说明在不等式的证明中, 分析法和综合法有时需交替使用.
+本题在用分析法得到 $c+2 \sqrt{a b} \geqslant 3 \sqrt[3]{a b c}$, 再用分析法继续证明下去的话, 会使问题变得复杂, 此时结合综合法便使问题迎刃而解了.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14. 已知 $n \in \mathbf{N}_{+}$, 求证:
+$$
+\frac{1}{n+1}\left(1+\frac{1}{3}+\cdots+\frac{1}{2 n-1}\right) \geqslant \frac{1}{n}\left(\frac{1}{2}+\frac{1}{4}+\cdots+\frac{1}{2 n}\right) . \label{(1)}
+$$
+%%<SOLUTION>%%
+证明:要证明(1), 我们只要证
+$$
+n\left(1+\frac{1}{3}+\cdots+\frac{1}{2 n-1}\right) \geqslant(n+1)\left(\frac{1}{2}+\frac{1}{4}+\cdots+\frac{1}{2 n}\right) . \label{(2)}
+$$
+(2)的左边为
+$$
+\frac{n}{2}+\frac{n}{2}+n\left(\frac{1}{3}+\cdots+\frac{1}{2 n-1}\right), \label{(3)}
+$$
+(2)的右边为
+$$
+\begin{aligned}
+& n\left(\frac{1}{2}+\frac{1}{4}+\cdots+\frac{1}{2 n}\right)+\left(\frac{1}{2}+\frac{1}{4}+\cdots+\frac{1}{2 n}\right) \\
+= & \frac{n}{2}+n\left(\frac{1}{4}+\cdots+\frac{1}{2 n}\right)+\left(\frac{1}{2}+\frac{1}{4}+\cdots+\frac{1}{2 n}\right) .
+\end{aligned} \label{(4)}
+$$
+比较(3)式和(4)式,若有
+$$
+\frac{n}{2} \geqslant \frac{1}{2}+\frac{1}{4}+\cdots+\frac{1}{2 n}, \label{(5)}
+$$
+及
+$$
+\frac{1}{3}+\frac{1}{5}+\cdots+\frac{1}{2 n-1} \geqslant \frac{1}{4}+\cdots+\frac{1}{2 n}, \label{(6)}
+$$
+则(2)得证.
+而(5)、(6)两式显然成立, 因此(1)得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例15. 已知 $a, b, c \in \mathbf{R}^{+}, a b c=1$. 求证:
+$$
+(a+b)(b+c)(c+a) \geqslant 4(a+b+c-1) .
+$$
+%%<SOLUTION>%%
+分析:想法是把 $a$ 当作参数, 将其看成是关于 $b+c$ 的一元二次方程, 用判别式的方法来证明.
+证明不妨设 $a \geqslant 1$, 则原不等式等价于
+$$
+a^2(b+c)+b^2(c+a)+c^2(a+b)+6 \geqslant 4(a+b+c), \label{(1)}
+$$
+即
+$$
+\begin{aligned}
+& \left(a^2-1\right)(b+c)+b^2(c+a)+c^2(a+b)+6 \\
+\geqslant & 4 a+3(b+c)
+\end{aligned}
+$$
+由于
+$$
+(a+1)(b+c) \geqslant 2 \sqrt{a} \cdot 2 \sqrt{b c}=4,
+$$
+所以如果我们能够证明
+$$
+4(a-1)+b^2(c+a)+c^2(a+b)+6 \geqslant 4 a+3(b+c), \label{(2)}
+$$
+则(1)式成立.
+而(2)等价于
+$$
+2+a\left(b^2+c^2\right)+b c(b+c)-3(b+c) \geqslant 0,
+$$
+故只需证
+$$
+\frac{a}{2}(b+c)^2+(b c-3)(b+c)+2 \geqslant 0 .
+$$
+记
+$$
+f(x)=\frac{a}{2} \cdot x^2+(b c-3) x+2,
+$$
+则其判别式
+$$
+\Delta=(b c-3)^2-4 a .
+$$
+我们只要证明 $\Delta \leqslant 0$ 即可, 这相当于
+$$
+\left(\frac{1}{a}-3\right)^2-4 a \leqslant 0 .
+$$
+即
+$$
+\begin{gathered}
+1-6 a+9 a^2-4 a^3 \leqslant 0 . \\
+(a-1)^2(4 a-1) \geqslant 0 . \label{(3)}
+\end{gathered}
+$$
+也即由 $a \geqslant 1$, (3)显然成立, 进而(1)成立.
+由上知等号在 $a=b=c=1$ 时成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例16. 设 $x 、 y 、 z$ 是 3 个不全为零的实数, 求 $\frac{x y+2 y z}{x^2+y^2+z^2}$ 的最大值.
+%%<SOLUTION>%%
+分析:欲求 $\frac{\dot{x} y+2 y z}{x^2+y^2+z^2}$ 的最大值, 只需先证明存在一个常数 $c$, 使
+$$
+\frac{x y+2 y z}{x^2+y^2+z^2} \leqslant c, \label{(1)}
+$$
+且 $x 、 y 、 z$ 取某组数时, 等号成立.
+(1)式可化为 $x^2+y^2+z^2 \geqslant \frac{1}{c}(x y+2 y z)$. 由于右边两项为 $x y$ 和 $2 y z$, 所以左边的 $y^2$ 需拆成两项 $\alpha y^2$ 和 $(1-\alpha) y^2$. 由
+$$
+\begin{gathered}
+x^2+\alpha y^2 \geqslant 2 \sqrt{\alpha} x y, \\
+(1-\alpha) y^2+z^2 \geqslant 2 \sqrt{1-\alpha} y z,
+\end{gathered}
+$$
+又由 $\frac{2 \sqrt{1-\alpha}}{2 \sqrt{\alpha}}=2$, 得 $\alpha=\frac{1}{5}$.
+从而解 因为
+$$
+x^2+y^2+z^2 \geqslant \frac{2}{\sqrt{5}}(x y+2 y z) .
+$$
+$$
+\begin{aligned}
+& x^2+\frac{1}{5} y^2 \geqslant \frac{2}{\sqrt{5}} x y, \\
+& \frac{4}{5} y^2+z^2 \geqslant \frac{4}{\sqrt{5}} y z,
+\end{aligned}
+$$
+所以
+$$
+x^2+y^2+z^2 \geqslant \frac{2}{\sqrt{5}}(x y+2 y z),
+$$
+即
+$$
+\frac{x y+2 y z}{x^2+y^2+z^2} \leqslant \frac{\sqrt{5}}{2} \text {. }
+$$
+当 $x=1, y=\sqrt{5}, z=2$ 时, 等号成立.
+所以, 欲求的最大值为 $\frac{\sqrt{5}}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例17. 对于 $\frac{1}{2} \leqslant x \leqslant 1$, 求 $(1+x)^5(1-x)(1-2 x)^2$ 的最大值.
+%%<SOLUTION>%%
+解:我们考虑 $[\alpha(1+x)]^5[\beta(1-x)][\gamma(2 x-1)]^2$ 的最大值, 这里 $\alpha 、 \beta$ 、 $\gamma$ 是正整数, 满足 $5 \alpha-\beta+4 \gamma=0, \alpha(1+x)=\beta(1-x)=\gamma(2 x-1)$. 后者即
+$$
+\frac{\beta-\alpha}{\beta+\alpha}=\frac{\beta+\gamma}{2 \gamma+\beta}
+$$
+代入 $\beta=5 \alpha+4 \gamma$, 得
+$$
+0=2\left(3 \alpha \gamma+5 \alpha^2-2 \gamma^2\right)=2(5 \alpha-2 \gamma)(\alpha+\gamma),
+$$
+我们取 $(\alpha, \beta, \gamma)=(2,30,5)$, 由平均不等式得,
+$$
+[2(1+x)]^5[30(1-x)][5(2 x-1)]^2 \leqslant\left(\frac{15}{4}\right)^8,
+$$
+此时 $x=\frac{7}{8}$. 所以, 当 $x=\frac{7}{8}$ 时, $(1+x)^5(1-x)(1-2 x)^2$ 的最大值为 $\frac{3^7 \cdot 5^5}{2^{22}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例18. (Ostrowski) 设实数 $a_1, a_2, \cdots, a_n$ 与 $b_1, b_2, \cdots, b_n$ 不成比例.
+实数 $x_1, x_2, \cdots, x_n$ 满足:
+$$
+\left\{\begin{array}{l}
+a_1 x_1+a_2 x_2+\cdots+a_n x_n=0, \\
+b_1 x_1+b_2 x_2+\cdots+b_n x_n=1 .
+\end{array}\right.
+$$
+求证: $x_1^2+x_2^2+\cdots+x_n^2 \geqslant \frac{\sum_{i=1}^n a_i^2}{\sum_{i=1}^n a_i^2 \cdot \sum_{i=1}^n b_i^2-\left(\sum_{i=1}^n a_i b_i\right)^2}$.
+%%<SOLUTION>%%
+证法 1 设 $\sum_{i=1}^n x_i^2=\sum_{i=1}^n x_i^2+\alpha \cdot \sum_{i=1}^n a_i x_i+\beta\left(\sum_{i=1}^n b_i x_i-1\right)$,
+其中 $\alpha 、 \beta$ 为待定系数.
+于是
+$$
+\begin{aligned}
+\sum_{i=1}^n x_i^2 & =\sum_{i=1}^n\left(x_i+\frac{\alpha a_i+\beta b_i}{2}\right)^2-\sum_{i=1}^n \frac{\left(\alpha a_i+\beta b_i\right)^2}{4}-\beta \\
+& \geqslant-\sum_{i=1}^n \frac{\left(\alpha a_i+\beta b_i\right)^2}{4}-\beta .
+\end{aligned}
+$$
+上述不等式等号成立, 当且仅当
+$$
+x_i=-\frac{\alpha a_i+\beta b_i}{2}(i=1,2, \cdots, n) . \label{(1)}
+$$
+将(1)式代回 $\sum_{i=1}^n a_i x_i=0$ 及 $\sum_{i=1}^n b_i x_i=1$ 中, 有:
+$$
+\left\{\begin{array}{l}
+-\frac{1}{2} \alpha A-\frac{1}{2} \beta C=0 \\
+-\frac{1}{2} \alpha C-\frac{1}{2} \beta B=1
+\end{array}\right.
+$$
+其中, $A=\sum_{i=1}^n a_i^2, B=\sum_{i=1}^n b_i^2, C=\sum_{i=1}^n a_i b_i$. 因此,
+$$
+\alpha=\frac{2 C}{A B-C^2}, \beta=-\frac{2 A}{A B-C^2} .
+$$
+故
+$$
+\sum_{i=1}^n x_i^2 \geqslant-\sum_{i=1}^n\left(\frac{\alpha a_i+\beta b_i}{2}\right)^2-\beta=\frac{A}{A B-C^2} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例18. (Ostrowski) 设实数 $a_1, a_2, \cdots, a_n$ 与 $b_1, b_2, \cdots, b_n$ 不成比例.
+实数 $x_1, x_2, \cdots, x_n$ 满足:
+$$
+\left\{\begin{array}{l}
+a_1 x_1+a_2 x_2+\cdots+a_n x_n=0, \\
+b_1 x_1+b_2 x_2+\cdots+b_n x_n=1 .
+\end{array}\right.
+$$
+求证: $x_1^2+x_2^2+\cdots+x_n^2 \geqslant \frac{\sum_{i=1}^n a_i^2}{\sum_{i=1}^n a_i^2 \cdot \sum_{i=1}^n b_i^2-\left(\sum_{i=1}^n a_i b_i\right)^2}$.
+%%<SOLUTION>%%
+证法 2 由 Cauchy 不等式可得, 对任意 $t \in \mathbf{R}$,
+$$
+\left[\sum_{i=1}^n\left(a_i t+b_i\right)^2\right] \cdot\left(x_1^2+x_2^2+\cdots+x_n^2\right) \geqslant\left[\sum_{i=1}^n\left(a_i t+b_i\right) x_i\right]^2=1,
+$$
+即
+$$
+\left(x_1^2+x_2^2+\cdots+x_n^2\right)\left(A t^2+2 C t+B\right)-1 \geqslant 0
+$$
+恒成立.
+由判别式 (关于 $t$ 的) $\Delta \leqslant 0$, 即有:
+$$
+\sum_{i=1}^n x_i^2 \geqslant \frac{A}{A B-C^2} \text {. }
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例18. (Ostrowski) 设实数 $a_1, a_2, \cdots, a_n$ 与 $b_1, b_2, \cdots, b_n$ 不成比例.
+实数 $x_1, x_2, \cdots, x_n$ 满足:
+$$
+\left\{\begin{array}{l}
+a_1 x_1+a_2 x_2+\cdots+a_n x_n=0, \\
+b_1 x_1+b_2 x_2+\cdots+b_n x_n=1 .
+\end{array}\right.
+$$
+求证: $x_1^2+x_2^2+\cdots+x_n^2 \geqslant \frac{\sum_{i=1}^n a_i^2}{\sum_{i=1}^n a_i^2 \cdot \sum_{i=1}^n b_i^2-\left(\sum_{i=1}^n a_i b_i\right)^2}$.
+%%<SOLUTION>%%
+证法 3 (综合运用上述两种方法)
+由条件, 对任意 $\lambda \in \mathbf{R}$, 有 $\sum_{i=1}^n\left(b_i-\lambda a_i\right) x_i=1$.
+利用 Cauchy 不等式可得
+$$
+\sum_{i=1}^n x_i^2 \cdot \sum_{i=1}^n\left(b_i-\lambda a_i\right)^2 \geqslant\left[\sum_{i=1}^n\left(b_i-\lambda a_i\right) x_i\right]^2=1 .
+$$
+所以
+$$
+\sum_{i=1}^n x_i^2 \geqslant \frac{1}{B+\lambda^2 A-2 \lambda C} .
+$$
+我们的目标是证明
+$$
+\sum_{i=1}^n x_i^2 \geqslant \frac{1}{B-\frac{C^2}{A}},
+$$
+因此, 只需即
+$$
+\lambda^2 A-2 \lambda C \leqslant-\frac{C^2}{A} .
+$$
+$\lambda^2 A^2-2 \lambda A C+C^2 \leqslant 0$.
+取 $\lambda=\frac{C}{A}$ 即可满足上述条件.
+说明 2 可以从本题证明 Fan-Todd 定理:
+设 $a_k 、 b_k(k=1,2, \cdots, n)$ 为两组不成比例的实数列, 已知 $a_i b_k \neq a_k b_i(i \neq k)$, 则
+$$
+\frac{\sum_{k=1}^n a_k^2}{\sum_{k=1}^n a_k^2 \sum_{k=1}^n b_k^2-\left(\sum_{k=1}^n a_k b_k\right)^2} \leqslant\left(\mathrm{C}_n^2\right)^{-2} \cdot \sum_{k=1}^n\left(\sum_{i \neq k} \frac{a_k}{a_i b_k-a_k b_i}\right)^2 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例18. (Ostrowski) 设实数 $a_1, a_2, \cdots, a_n$ 与 $b_1, b_2, \cdots, b_n$ 不成比例.
+实数 $x_1, x_2, \cdots, x_n$ 满足:
+$$
+\left\{\begin{array}{l}
+a_1 x_1+a_2 x_2+\cdots+a_n x_n=0, \\
+b_1 x_1+b_2 x_2+\cdots+b_n x_n=1 .
+\end{array}\right.
+$$
+求证: $x_1^2+x_2^2+\cdots+x_n^2 \geqslant \frac{\sum_{i=1}^n a_i^2}{\sum_{i=1}^n a_i^2 \cdot \sum_{i=1}^n b_i^2-\left(\sum_{i=1}^n a_i b_i\right)^2}$.
+%%<SOLUTION>%%
+证明:只需在本题中令 $x_k=\left(\mathrm{C}_n^2\right)^{-1} \cdot \sum_{r \neq k} \frac{a_r}{a_r b_k-a_k b_r}$, 读者不难自行验证 $1, x_2, \cdots, x_n$ 满足全部条件.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例19. 求函数 $f_n\left(x_1, x_2, \cdots, x_n\right)=\frac{x_1}{\left(1+x_1+\cdots+x_n\right)^2}+ \frac{x_2}{\left.1+x_2+\cdots+x_n\right)^2}+\cdots+\frac{x_n}{\left(1+x_n\right)^2}$ 的最大值 $m_n$ (其中 $x_i \geqslant 0$ ). 用 $m_{n-1}$ 表宗 $m_n$, 并求 $\lim _{n \rightarrow \infty} m_n$.
+%%<SOLUTION>%%
+分析:$f_n$ 的每一项分母都很复杂, 自然应先作代换将其简化.
+解令 $a_i=\frac{1}{1+x_i+\cdots+x_n}, 1 \leqslant i \leqslant n$, 并约定 $a_{n+1}=1$. 则
+$$
+\begin{gathered}
+1+x_i+x_{i+1}+\cdots+x_n=\frac{1}{a_i} . \\
+1+x_{i+1}+x_{i+2}+\cdots+x_n=\frac{1}{a_{i+1}}, \\
+x_i=\frac{1}{a_i}-\frac{1}{a_{i+1}} . \\
+f_n=\sum_{i=1}^n a_i^2\left(\frac{1}{a_i}-\frac{1}{a_{i+1}}\right)=\sum_{i=1}^n\left(a_i-\frac{a_i^2}{a_{i+1}}\right) \\
+=\left(a_1+a_2+\cdots+a_n\right)-\left(\frac{a_1^2}{a_2}+\frac{a_2^2}{a_3}+\cdots+\frac{a_n^2}{1}\right) .
+\end{gathered}
+$$
+因此
+$$
+\begin{aligned}
+f_n & =\sum_{i=1}^n a_i^2\left(\frac{1}{a_i}-\frac{1}{a_{i+1}}\right)=\sum_{i=1}^n\left(a_i-\frac{a_i^2}{a_{i+1}}\right) \\
+& =\left(a_1+a_2+\cdots+a_n\right)-\left(\frac{a_1^2}{a_2}+\frac{a_2^2}{a_3}+\cdots+\frac{a_n^2}{1}\right) .
+\end{aligned}
+$$
+为求 $f_n$ 之最大值, 构造下列不等式:
+$$
+\left\{\begin{array}{l}
+\frac{a_1^2}{a_2}+\lambda_1^2 a_2 \geqslant 2 \lambda_1 a_1, \\
+\frac{a_2^2}{a_3}+\lambda_2^2 a_3 \geqslant 2 \lambda_2 a_2, \\
+\cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots . . . \cdots \cdots \cdots . . . \\
+\frac{a_n^2}{1}+\lambda_n^2 \geqslant 2 \lambda_n a_n .
+\end{array}\right. \label{(1)}
+$$
+其中 $\lambda_1, \lambda_2, \cdots, \lambda_n$ 为参数, $\lambda_i \geqslant 0$.
+将(1)中 $n$ 个不等式相加, 只须使
+$$
+\left\{\begin{array}{l}
+2 \lambda_1=1 \\
+2 \lambda_2=1+\lambda_1^2 \\
+\cdots \cdots \cdots \cdots \cdots \cdots \\
+2 \lambda_n=1+\lambda_{n-1}^2
+\end{array}\right. \label{(2)}
+$$
+即有 $f_n \leqslant \lambda_n^2$.
+注意到 $\lambda_i \geqslant \lambda_{i-1}$, 且 $0 \leqslant \lambda_i \leqslant 1$, 故 $\lim _{n \rightarrow \infty} \lambda_n$ 存在, 易见它的值为 1 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例20. 设 $a 、 b 、 c$ 是正实数,求证:
+$$
+\frac{(2 a+b+c)^2}{2 a^2+(b+c)^2}+\frac{(2 b+c+a)^2}{2 b^2+(c+a)^2}+\frac{(2 c+a+b)^2}{2 c^2+(a+b)^2} \leqslant 8 .
+$$
+%%<SOLUTION>%%
+证明:因为左边的式子是齐次的,所以不妨设 $a+b+c=3$, 于是只需证明
+$$
+\begin{gathered}
+\frac{(a+3)^2}{2 a^2+(3-a)^2}+\frac{(b+3)^2}{2 b^2+(3-b)^2}+\frac{(c+3)^2}{2 c^2+(3-c)^2} \leqslant 8 . \\
+f(x)=\frac{(x+3)^2}{2 x^2+(3-x)^2}, x \in \mathbf{R}^{\perp} .
+\end{gathered}
+$$
+令
+$$
+f(x)=\frac{(x+3)^2}{2 x^2+(3-x)^2}, x \in \mathbf{R}^{+} .
+$$
+则
+$$
+\begin{aligned}
+f(x) & =\frac{x^2+6 x+9}{3\left(x^2-2 x+3\right)} \\
+& =\frac{1}{3}\left(1+\frac{8 x+6}{x^2-2 x+3}\right)=\frac{1}{3}\left(1+\frac{8 x+6}{(x-1)^2+2}\right) \\
+& \leqslant \frac{1}{3}\left(1+\frac{8 x+6}{2}\right)=\frac{1}{3}(4 x+4),
+\end{aligned}
+$$
+所以
+$$
+f(a)+f(b)+f(c) \leqslant \frac{1}{3}(4 a+4+4 b+4+4 c+4)=8 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例21. 已知 $a+b+c>0, a x^2+b x+c=0$ 有实根, 求证:
+$$
+4 \min \{a, b, c\} \leqslant a+b+c \leqslant \frac{9}{4} \max \{a, b, c\} .
+$$
+%%<SOLUTION>%%
+证明:不妨设 $a+b+c=1$, 否则可用 $\frac{a}{a+b+c} 、 \frac{b}{a+b+c} 、 \frac{c}{a+b+c}$ 代替 $a, b 、 c$.
+先证明: $\max \{a, b, c\} \geqslant \frac{4}{9}$.
+(1) 若 $b \geqslant \frac{4}{9}$, 则结论成立.
+(2) 若 $b<\frac{4}{9}$, 因为 $b^2 \geqslant 4 a c$, 有 $a c<\frac{4}{81}$.
+又 $a+c=1-b>\frac{5}{9}$, 所以如果 $a<0$ 或 $c<0$, 即有 $c>\frac{5}{9}$ 或 $a>\frac{5}{9}$, 结论成立.
+如果 $a, c \geqslant 0$, 则 $\left(\frac{5}{9}-c\right) \cdot c<a c<\frac{4}{81}$, 得 $c<\frac{1}{9}$ 或 $c>\frac{4}{9}$.
+若 $c<\frac{1}{9}$, 此时 $a>\frac{4}{9}$, 故结论成立.
+再证明: $\min \{a, b, c\} \leqslant \frac{1}{4}$.
+(1) 若 $a \leqslant \frac{1}{4}$, 则无须证明.
+(2) 若 $a>\frac{1}{4}$, 则有 $b^2 \geqslant 4 a c \geqslant c, b+c=1-a<\frac{3}{4}$.
+不妨设 $c \geqslant 0$ (否则 $c<0$, 结论已得), 故 $\sqrt{c}+c \leqslant b+c<\frac{3}{4}$, 于是 $\left(\sqrt{c}+\frac{3}{4}\right)\left(\sqrt{c}-\frac{1}{2}\right)<0$.
+因此 $c<\frac{1}{4}$, 结论成立.
+说明本题的结论是最佳的.
+方程 $\frac{4}{9} x^2+\frac{4}{9} x+\frac{1}{9}=0$ 表明 $\frac{9}{4}$ 不能改为更小的数; 而方程 $\frac{1}{4} x^2+ \frac{2}{4} x+\frac{1}{4}=0$ 表明 4 不能改为更大的数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例22. 非负实数 $a 、 b 、 c 、 d$ 满足: $a^2+b^2+c^2+d^2=4$, 求证:
+$$
+a^3+b^3+c^3+d^3+a b c+b c d+c d a+d a b \leqslant 8 .
+$$
+%%<SOLUTION>%%
+证明:原不等式等价于
+$$
+\left(a^3+b^3+c^3+d^3+a b c+b c d+c d a+d a b\right)^2 \leqslant\left(a^2+b^2+c^2+d^2\right)^3 .
+$$
+因为
+$$
+\begin{aligned}
+& a^3+b^3+c^3+d^3+a b c+b c d+c d a+d a b=a\left(a^2+b c\right)+b\left(b^2+c d\right)+ \\
+& c\left(c^2+d a\right)+d\left(d^2+a b\right) .
+\end{aligned}
+$$
+所以, 由柯西不等式, 得
+$$
+\begin{aligned}
+& \quad\left(a^3+b^3+c^3+d^3+a b c+b c d+c d a+d a b\right)^2 \leqslant\left(a^2+b^2+c^2+d^2\right) \\
+& {\left[\left(a^2+b c\right)^2+\left(b^2+c d\right)^2+\left(c^2+d a\right)^2+\left(d^2+a b\right)^2\right] .}
+\end{aligned}
+$$
+于是只需证明
+$$
+\begin{gathered}
+\left(a^2+b c\right)^2+\left(b^2+c d\right)^2+\left(c^2+d a\right)^2+\left(d^2+a b\right)^2 \leqslant\left(a^2+b^2+c^2+d^2\right)^2 . \\
+2\left(a^2 b c+b^2 c d+c^2 d a+d^2 a b\right) \leqslant a^2 b^2+c^2 d^2+a^2 d^2+b^2 c^2+2\left(a^2 c^2+b^2 d^2\right), \\
+(a b-a c)^2+(a c-c d)^2+(b c-b d)^2+(a d-b d)^2 \geqslant 0 .
+\end{gathered}
+$$
+从而命题得证.
+说明本题把右边的常数 8 利用已知条件化为关于 $a 、 b 、 c 、 d$ 的表达式,使得两边的次数一样, 从而有利于解题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例23. 给定整数 $n \geqslant 4$, 对任意满足
+$$
+a_1+a_2+\cdots+a_n=b_1+b_2+\cdots+b_n>0
+$$
+的非负实数 $a_1, a_2, \cdots, a_n, b_1, b_2, \cdots, b_n$, 求 $\frac{\sum_{i=1}^n a_i\left(a_i+b_i\right)}{\sum^n b_i\left(a_i+b_i\right)}$ 的最大值.
+%%<SOLUTION>%%
+解:由齐次性可知, 不妨假设 $\sum_{i=1}^n a_i=\sum_{i=1}^n b_i=1$. 首先, 当 $a_1=1, a_2= a_3=\cdots=a_n=0, b_1=0, b_2=b_3=\cdots=b_n=\frac{1}{n-1}$ 时, $\sum_{i=1}^n a_i\left(a_i+b_i\right)=$ 1, $\sum_{i=1}^n b_i\left(a_i+b_i\right)=\frac{1}{n-1}$, 故
+$$
+\frac{\sum_{i=1}^n a_i\left(a_i+b_i\right)}{\sum_{i=1}^n b_i\left(a_i+b_i\right)}=n-1 .
+$$
+下证对任意满足 $\sum_{i=1}^n a_i=\sum_{i=1}^n b_i=1$ 的 $a_1, a_2, \cdots, a_n, b_1, b_2, \cdots, b_n$, 都有
+$$
+\frac{\sum_{i=1}^n a_i\left(a_i+b_i\right)}{\sum_{i=1}^n b_i\left(a_i+b_i\right)} \leqslant n-1
+$$
+由于分母是正数,故上式等价于
+$$
+\begin{aligned}
+& \sum_{i=1}^n a_i\left(a_i+b_i\right) \leqslant(n-1) \sum_{i=1}^n b_i\left(a_i+b_i\right), \\
+& (n-1) \sum_{i=1}^n b_i^2+(n-2) \sum_{i=1}^n a_i b_i \geqslant \sum_{i=1}^n a_i^2 .
+\end{aligned}
+$$
+即由对称性, 不妨设 $b_1$ 是 $b_1, b_2, \cdots, b_n$ 中最小的一个, 则有
+$$
+\begin{aligned}
+(n-1) \sum_{i=1}^n b_i^2+(n-2) \sum_{i=1}^n a_i b_i \geqslant(n-1) b_1^2+(n-1) \sum_{i=2}^n b_i^2+(n-2) \sum_{i=1}^n a_i b_1 \\
+\geqslant(n-1) b_1^2+\left(\sum_{i=2}^n b_i\right)^2+(n-2) b_1 \\
+=(n-1) b_1^2+\left(1-b_1\right)^2+(n-2) b_1 \\
+=n b_1^2+(n-4) b_1+1 \\
+\geqslant 1=\sum_{i=1}^n a_i \geqslant \sum_{i=1}^n a_i^2
+\end{aligned}
+$$
+所以, 所求的最大值为 $n-1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例24. 证明: 在 $\triangle A B C$ 中, 有
+$$
+\sum_{c y c} a^3-2 \sum_{c y c} a^2(b+c)+9 a b c \leqslant 0 .
+$$
+%%<SOLUTION>%%
+证明:令 $x=\frac{b+c-a}{2}, y=\frac{c+a-b}{2}, z=\frac{a+b-c}{2}$, 则由 Schur 不等式可得
+$$
+\begin{aligned}
+& \sum_{c y c}\left(\frac{b+c-a}{2}\right)(b-a)(c-a) \geqslant 0, \\
+& \sum_{c y c}(a-b)(a-c)(b+c-a) \geqslant 0, \\
+& -\sum_{c y c} a^3+2 \sum_{c y c} a^2(b+c)-9 a b c \geqslant 0,
+\end{aligned}
+$$
+所以
+$$
+\sum_{\text {cyc }} a^3-2 \sum_{c y c} a^2(b+c)+9 a b c \leqslant 0 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例25. 设 $x, y, z \geqslant 0$, 且 $x+y+z=1$, 求证:
+$$
+0 \leqslant y z+z x+x y-2 x y z \leqslant \frac{7}{27} .
+$$
+%%<SOLUTION>%%
+证明:由 Schur 不等式的变形 II , 得
+$$
+\left(\sum_{\mathrm{cyc}} x\right)^3-4\left(\sum_{c y c} x\right)\left(\sum_{c y c} y z\right)+9 x y z \geqslant 0,
+$$
+由题设条件 $\sum_{c y c} x=1$, 得
+$$
+\begin{gathered}
+1-4 \cdot \sum_{c y c} y z+9 x y z \geqslant 0 \\
+\sum_{c y c} y z-2 x y z \leqslant \frac{1}{4}+\frac{1}{4} x y z \leqslant \frac{1}{4}+\frac{1}{4}\left(\frac{x+y+z}{3}\right)^3=\frac{7}{27} .
+\end{gathered}
+$$
+另一方面, $\sum_{c y c} y z-2 x y z \geqslant \sum_{c y c} y z-x y-y z=z x \geqslant 0$.
+从而命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例26. 设 $x, y, z \in \mathbf{R}^{+}$, 且 $x+y+z=x y z$, 求证:
+$$
+x^2+y^2+z^2-2(x y+y z+z x)+9 \geqslant 0 . \label{(3)}
+$$
+%%<SOLUTION>%%
+证明:因为 $x+y+z=x y z$, 所以(3)等价于
+$$
+\begin{gathered}
+{\left[x^2+y^2+z^2-2(x y+y z+z x)\right](x+y+z)+9 x y z \geqslant 0} \\
+\Leftrightarrow x^3+y^3+z^3-\left(x^2 y+y^2 z+z^2 x+x y^2+y z^2+z x^2\right)+3 x y z \geqslant 0
+\end{gathered}
+$$
+即
+$$
+\sum_{c y c} x^3-\sum_{c y c} x^2(y+z)+3 x y z \geqslant 0,
+$$
+这就是 Schur 不等式的变形 I. 故命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例27. 设 $a, b, c \in \mathbf{R}^{+}$, 求证:
+$$
+\sqrt{a b c}(\sqrt{a}+\sqrt{b}+\sqrt{c})+(a+b+c)^2 \geqslant 4 \sqrt{3 a b c(a+b+c)} .
+$$
+%%<SOLUTION>%%
+证明:由 Schur 不等式(在(2)中, 令 $r=2$ ), 得
+$$
+\sum_{c y c} x^2(x-y)(x-z) \geqslant 0, x, y, z \in \mathbf{R}^{+},
+$$
+所以
+$$
+\sum_{c y c} x^4+x y z \sum_{c y c} x \geqslant \sum_{c y c} x^3(y+z) . \label{(4)}
+$$
+又因为 $\sum_{c y c} x^3(y+z)=2 \sum_{c y c} y^2 z^2+\sum_{c y c} y z(y-z)^2 \geqslant 2 \sum_{c y c} y^2 z^2$, 所以
+$$
+\sum_{c y c} x^4+x y z \sum_{c y c} x \geqslant 2 \sum_{c y c} y^2 z^2 .
+$$
+在(4)式中, 令 $x=\sqrt{a}, y=\sqrt{b}, z=\sqrt{c}$, 得
+$$
+\begin{gathered}
+\sum_{c y c} a^2+\sqrt{a b c} \sum_{c y c} \sqrt{a} \geqslant 2 \sum_{c y c} b c, \\
+\sqrt{a b c} \sum_{c y c} \sqrt{a}+\left(\sum_{c y c} a\right)^2 \geqslant 4 \sum_{c y c} b c .
+\end{gathered}
+$$
+下证 $\sum_{c y c} b c \geqslant \sqrt{3 a b c(a+b+c)}$.
+事实上, 由 $(u+v+w)^2 \geqslant 3(u v+v w+w u)$, 得
+$$
+\begin{aligned}
+(a b+b c+c a)^2 & \geqslant 3(a b \cdot b c+b c \cdot c a+c a \cdot a b) \\
+& =3 a b c(a+b+c),
+\end{aligned}
+$$
+所以
+$$
+\sum_{c y c} b c \geqslant \sqrt{3 a b c(a+b+c)},
+$$
+故 $\quad \sqrt{a b c}(\sqrt{a}+\sqrt{b}+\sqrt{c})+(a+b+c)^2 \geqslant 4 \sqrt{3 a b c(a+b+c)}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例28. 设 $a, b \in \mathbf{R}^{+}$.
+(1) 求 $S=\frac{(a+1)^2}{b}+\frac{(b+3)^2}{a}$ 的最小值;
+(2) 求 $T=\frac{(a+1)^3}{b^2}+\frac{(b+3)^3}{a^2}$ 的最小值.
+%%<SOLUTION>%%
+解:(1) 由柯西不等式, 得所以
+$$
+\begin{aligned}
+& S \cdot(b+a) \geqslant(a+1+b+3)^2, \\
+& S \geqslant \frac{(a+b+4)^2}{a+b}=(a+b)+\frac{16}{a+b}+8 \\
+& \geqslant 2 \sqrt{16}+8=16,
+\end{aligned}
+$$
+故 $S$ 的最小值为 16 .
+(2) 由(3) (Hölder 不等式),有
+$$
+\left(\frac{(a+1)^3}{b^2}+\frac{(b+3)^3}{a^2}\right)(b+a)(b+a) \geqslant(a+1+b+3)^3,
+$$
+所以
+$$
+\begin{aligned}
+T & \geqslant \frac{(a+b+4)^3}{(a+b)^2}=x+12+\frac{48}{x}+\frac{64}{x^2}(\text { 记 } a+b=x) \\
+& =x+\frac{64}{x}+\left(\frac{64}{x^2}-\frac{16}{x}+1\right)+11 \\
+& =\left(x+\frac{64}{x}\right)+\left(\frac{8}{x}-1\right)^2+11 \geqslant 2 \sqrt{64}+0+11 \\
+& =27 .
+\end{aligned}
+$$
+当 $a=\frac{22}{5}, b=\frac{18}{5}$ 时等号成立.
+所以 $T$ 的最小值为 27 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例29. 设 $a, b, c \in \mathbf{R}^{+}$, 求证:
+$$
+\frac{a+b+c}{3} \geqslant \sqrt[3]{\frac{(a+b)(b+c)(c+a)}{8}} \geqslant \frac{\sqrt{a b}+\sqrt{b c}+\sqrt{c a}}{3} .
+$$
+%%<SOLUTION>%%
+证明:由平均不等式, 得
+$$
+\begin{gathered}
+\frac{(a+b)+(b+c)+(c+a)}{3} \geqslant \sqrt[3]{(a+b)(b+c)(c+a)}, \\
+\frac{a+b+c}{3} \geqslant \sqrt[3]{\frac{(a+b)(b+c)(c+a)}{8}} .
+\end{gathered}
+$$
+所以
+$$
+\frac{a+b+c}{3} \geqslant \sqrt[3]{\frac{(a+b)(b+c)(c+a)}{8}} .
+$$
+由(2)(Hölder 不等式), 有
+$$
+\begin{aligned}
+\frac{(a+b)(b+c)(c+a)}{8} & =\frac{1}{27}\left(\frac{a+b}{2}+b+a\right)\left(b+\frac{b+c}{2}+c\right)\left(a+c+\frac{a+c}{2}\right) \\
+& \geqslant \frac{1}{27}\left(\sqrt[3]{\frac{a+b}{2} \cdot b \cdot a}+\sqrt[3]{b \cdot \frac{b+c}{2} \cdot c}+\sqrt[3]{a \cdot c \cdot \frac{a+c}{2}}\right)^3 \\
+& \geqslant \frac{1}{27}(\sqrt[3]{\sqrt{a b} \cdot a \cdot b}+\sqrt[3]{\sqrt{b c} \cdot b \cdot c}+\sqrt[3]{\sqrt{c a} \cdot c \cdot a})^3 \\
+& =\frac{1}{27}(\sqrt{a b}+\sqrt{b c}+\sqrt{c a})^3,
+\end{aligned}
+$$
+所以 $\sqrt[3]{\frac{(a+b)(b+c)(c+a)}{8}} \geqslant \frac{\sqrt{a b}+\sqrt{b c}+\sqrt{c a}}{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例30. 设 $a 、 b 、 c$ 是正实数,求证:
+$$
+\left(a^5-a^2+3\right)\left(b^5-b^2+3\right)\left(c^5-c^2+3\right) \geqslant(a+b+c)^3 .
+$$
+%%<SOLUTION>%%
+证明:对于 $x \in \mathbf{R}^{+}, x^2-1$ 与 $x^3-1$ 具有相同的符号, 所以
+$$
+\left(x^2-1\right)\left(x^3-1\right) \geqslant 0 \text {, }
+$$
+即
+$$
+x^5-x^2+3 \geqslant x^3+2 .
+$$
+于是 $\left(a^5-a^2+3\right)\left(b^5-b^2+3\right)\left(c^5-c^2+3\right) \geqslant\left(a^3+2\right)\left(b^3+2\right)\left(c^3+2\right)$.
+而由(2)(Hölder 不等式),有
+$$
+\begin{aligned}
+\left(a^3+2\right)\left(b^3+2\right)\left(c^3+2\right) & =\left(a^3+1+1\right)\left(1+b^3+1\right)\left(1+1+c^3\right) \\
+& \geqslant(a+b+c)^3,
+\end{aligned}
+$$
+从而命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例31.(幂平均不等式) 设 $a_1, a_2, \cdots, a_n$ 是正实数, $\alpha>\beta>0$, 则
+$$
+\left(\frac{1}{n} \sum_{i=1}^n a_i^\beta\right)^{\frac{1}{\beta}} \leqslant\left(\frac{1}{n} \sum_{i=1}^n a_i^\alpha\right)^{\frac{1}{\alpha}}
+$$
+%%<SOLUTION>%%
+证明:在(6)中 (Hölder 不等式), 令 $x^i=1, i=1,2, \cdots, n$, 有
+$$
+\sum_{i=1}^n y_i \leqslant n^{\frac{1}{p}}\left(\sum_{i=1}^n y_i^q\right)^{\frac{1}{q}}
+$$
+由于 $\frac{1}{p}=1-\frac{1}{q}$, 所以上式可以写成
+$$
+\frac{1}{n} \sum_{i=1}^n y_i \leqslant\left(\frac{1}{n} \sum_{i=1}^n y_i^q\right)^{\frac{1}{q}} .
+$$
+在上式中, 令 $y_i=a_i^\beta, q=\frac{\alpha}{\beta}>1$, 得 $\frac{1}{n} \sum_{i=1}^n a_i^\beta \leqslant\left(\frac{1}{n} \sum_{i=1}^n a_i^\alpha\right)^{\frac{\beta}{\alpha}}$, 于是 $\left(\frac{1}{n} \sum_{i=1}^n a_i^\beta\right)^{\frac{1}{\beta}} \leqslant\left(\frac{1}{n} \sum_{i=1}^n a_i^\alpha\right)^{\frac{1}{\alpha}}$.
+%%PROBLEM_END%%
+
+

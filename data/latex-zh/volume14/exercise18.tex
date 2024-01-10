@@ -1,0 +1,254 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 试构造恒等式证明下述不定方程均有无穷多组正整数解:
+(1) $x^2+y^2+1=z^2$;
+(2) $2 x^2+2 y^2+1=z^2$;
+(3) $x^2+y^2+1=2 z^2$.
+%%<SOLUTION>%%
+(1) $\left(2 k^2\right)^2+(2 k)^2+1=\left(2 k^2+1\right)^2$;
+(2) $2\left(k^2+k\right)^2+2\left(k^2-k\right)^2+1=\left(2 k^2+1\right)^2$;
+(3) $\left(k^2\right)^2+\left((k+1)^2\right)^2+1=2\left(k^2+k+1\right)^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 求方程组
+$$
+\left\{\begin{array}{l}
+x^3+y^3+z^3=x+y+z, \\
+x^2+y^2+z^2=x y z
+\end{array}\right.
+$$
+的所有正实数解.
+%%<SOLUTION>%%
+构造方程 $f(x, y, z)=\left(x^3-x\right)+\left(y^3-y\right)+\left(z^3-z\right)$, 则第一个方程等价于 $f(x, y, z)=0$.
+若 $x, y, z \geqslant 1$, 则 $f(x, y, z) \geqslant 0$ 当且仅当 $x=y=z=1$ 时等号成立.
+但若 $x=y=z=1$, 则不满足第二个方程.
+所以, 如果假设此方程组解存在, 则任意一组解中至少有一个未知数小于 1 , 不妨设 $x<1$, 则 $x^2+y^2+z^2>y^2+z^2 \geqslant 2 y z>x y z$ 与已知矛盾, 因此原方程组没有正实数解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $x \in \mathbf{R}$, 求函数 $f(x)=\sqrt{x^2+1}+\sqrt{(x-12)^2+16}$ 的最小值.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c18a3.png>), 取 $A$ 为数轴原点, $A B=12$, 再作 $A B$ 垂线 $A C, B D$,使 $A C=1, B D=4$,在数轴上取点 $P$,使 $A P=x$, 则 $f(x)=|C P|+|D P|$, 当 $C, P, D$ 共线时, $f$ 值最小, 此时 $f_{\text {min }}=|C D|= |A E|=\sqrt{12^2+5^2}=13$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 已知 $x, y \in\left[-\frac{\pi}{4}, \frac{\pi}{4}\right], a \in \mathbf{R}$, 且满足
+$$
+\left\{\begin{array}{l}
+x^3+\sin x-2 a=0, \\
+4 y^3+\frac{1}{2} \sin 2 y+a=0,
+\end{array}\right.
+$$
+求 $\cos (x+2 y)$ 的值.
+%%<SOLUTION>%%
+由 $\left\{\begin{array}{l}x^3+\sin x-2 a=0, \\ 4 y^3+\frac{1}{2} \sin 2 y+a=0\end{array}\right.$ 可得 $\left\{\begin{array}{l}x^3+\sin x=2 a, \\ 8 y^3+\sin 2 y=-2 a .\end{array}\right.$
+构造函数 $f(t)=t^3+\sin t$, 则 $f(t)$ 为单调增函数, 因为 $f(x)= -f(2 y)=f(-2 y)$, 所以, $x+2 y=0$, 故 $\cos (x+2 y)=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 实数 $\alpha$ 与 $\beta$ 满足 $\alpha^3-3 \alpha^2+5 \alpha=1, \beta^3-3 \beta^2+5 \beta=5$, 求 $\alpha+\beta$ 的值.
+%%<SOLUTION>%%
+因为 $x^3-3 x^2+5 x-3=\left(x^3-3 x^2+3 x-1\right)+2(x-1)=(x- 1)^3+2(x-1)$, 构造函数 $f(t)=t^3+2 t$, 显然 $t$ 为奇函数.
+$$
+\text { 由 }\left\{\begin{array} { l } 
+{ \alpha ^ { 3 } - 3 \alpha ^ { 2 } + 5 \alpha = 1 } \\
+{ \beta ^ { 3 } - 3 \beta ^ { 2 } + 5 \beta = 5 }
+\end{array} \Rightarrow \left\{\begin{array}{l}
+\alpha^3-3 \alpha^2+5 \alpha-3=-2, \\
+\beta^3-3 \beta^2+5 \beta-3=2,
+\end{array}\right.\right.
+$$
+所以
+$$
+f(\alpha-1)=-f(\beta-1)=f(1-\beta) .
+$$
+由于 $f(x)$ 在 $\mathbf{R}$ 上为单调增函数, 所以 $\alpha-1=1-\beta$, 故 $\alpha+\beta=2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 解方程组 $\sum_{i=1}^n x_i^k=n(k=1,2, \cdots, n)$.
+%%<SOLUTION>%%
+当 $n=1$ 时,就一个方程,显然解为 $x_1=1$.
+以下不妨设 $n \geqslant 2$. 此时构造函数
+$$
+f(t)=\left(t-x_1\right)\left(t-x_2\right) \cdots\left(t-x_n\right)=t^n+a_1 t^{n-1}+a_2 t^{n-2}+\cdots+a_{n-1} t+a_n .
+$$
+则 $f\left(x_1\right)=f\left(x_2\right)=\cdots=f\left(x_n\right)=0$. 而另一方面,结合原方程组可得
+$$
+\begin{aligned}
+\sum_{i=1}^n f\left(x_i\right) & =\sum_{i=1}^n x_i^n+a_1 \sum_{i=1}^n x_i^{n-1}+a_2 \sum_{i=1}^n x_i^{n-2}+\cdots+a_{n-1} \sum_{i=1}^n x_i+a_n \sum_{i=1}^n 1 \\
+& =n+a_1 n+a_2 n+\cdots+a_{n-1} n+a_n n=n f(1),
+\end{aligned}
+$$
+对照可得 $f(1)=0$, 这说明 $x_1, x_2, \cdots, x_n$ 中有一个为 1 , 不妨设 $x_n=1$, 则剩下的未知数 $x_1, x_2, \cdots, x_{n-1}$ 满足方程组 $\sum_{i=1}^{n-1} x_i^k=n-1(k=1,2, \cdots, n)$. 以此类推可得所有的 $x_i=1$. 从而原方程组的解为 $x_1=x_2=\cdots=x_n=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. (1) 能否将集合 $\{1,2, \cdots, 96\}$ 表示为它的 32 个三元子集的并集,且三元子集的元素之和都相等?
+(2)能否将集合 $\{1,2, \cdots, 99\}$ 表示为它的 33 个三元子集的并集,且三元子集的元素之和都相等?
+%%<SOLUTION>%%
+(1) 不能.
+因为 $1+2+\cdots+96=\frac{96 \times(96+1)}{2}=48 \times 97$ 不被 32 整除.
+(2) 能.
+每个三元集的元素和为 $\frac{1+2+\cdots+99}{33}=\frac{99 \times(99+1)}{33 \times 2}=150$. 将 $1,2,3, \cdots, 66$ 每两个一组, 分成 33 个组, 每组两数之和可以排成一个公差为 1 的等差数列:
+$$
+1+50,3+49, \cdots, 33+34,2+66,4+65, \cdots, 32+51 .
+$$
+故如下 33 组数, 每组三个数之和均相等:
+$$
+\begin{aligned}
+& \{1,50,99\},\{3,49,98\}, \cdots,\{33,34,83\}, \\
+& \{2,66,82\},\{4,65,81\}, \cdots,\{32,51,67\} .
+\end{aligned}
+$$
+%%<REMARK>%%
+注:此题的一般情况是
+对哪些正整数 $n$, 能将集合 $M=\{1,2,3, \cdots, 3 n\}$ 表示为它的 $n$ 个三元子集的并集,且这几个三元子集的元素之和都相等?
+解首先, 要求 $n \mid 1+2+3+\cdots+3 n$, 即
+$$
+n\left|\frac{3 n(3 n+1)}{2} \Rightarrow 2\right| 3 n+1 \text {. }
+$$
+所以, $n$ 为奇数.
+当 $n$ 为奇数时, 可将 $1,2,3, \cdots, 2 n$ 每两个一组, 分成 $n$ 个组, 每组两数之和可以排成一个公差为 1 的等差数列:
+$$
+\begin{aligned}
+& 1+\left(n+\frac{n+1}{2}\right), 3+\left(n+\frac{n-1}{2}\right), \cdots, n+(n+1) ; \\
+& 2+2 n, 4+(2 n-1), \cdots,(n-1)+\left(n+\frac{n+3}{2}\right) .
+\end{aligned}
+$$
+其通项公式为
+$$
+a_k=\left\{\begin{array}{l}
+2 k-1+\left(n+\frac{n+1}{2}+1-k\right), 1 \leqslant k \leqslant \frac{n+1}{2}, \\
+{[1-n+2(k-1)]+\left[2 n+\frac{n+1}{2}-(k-1)\right], \frac{n+3}{2} \leqslant k \leqslant n .}
+\end{array}\right.
+$$
+易知 $a_k+3 n+1-k=\frac{9 n+3}{2}$ 为一常数, 故如下 $n$ 组数每组三个数之和均相等:
+$$
+\begin{gathered}
+\left\{1, n+\frac{n+1}{2}, 3 n\right\},\left\{3, n+\frac{n--1}{2}, 3 n-1\right\}, \cdots,\left\{n, n+1,3 n+1-\frac{n+1}{2}\right\} ; \\
+\left\{2,2 n, 3 n+1-\frac{n+3}{2}\right\}, \cdots,\left\{n-1, n+\frac{n+3}{2}, 2 n+1\right\} .
+\end{gathered}
+$$
+当 $n$ 为奇数时, 依次取上述数组为 $A_1, A_2, \cdots, A_n$, 则其为满足题设的三元子集族.
+故 $n$ 为所有的奇数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 能否用 2009 种颜色将所有正整数如下染色:
+(1) 每种颜色的数都有无穷多个;
+(2)不存在三个两两不同色的正整数 $a, b, c$, 满足 $a=b c$ ?
+%%<SOLUTION>%%
+能.
+取 2008 个素数 $p_1<p_2<\cdots<p_{2008}$. 构造正整数集合 $\mathbf{N}^*$ 的子集 $A_1$, $A_2, \cdots, A_{2009}$ 如下: $A_1$ 表示所有被 $p_1$ 整除的数所组成的集合; $A_2$ 表示所有被 $p_2$ 整除但不被 $p_1$ 整除的数所组成的集合; $\cdots \cdots . . . A_{2008}$ 表示所有被 $p_{2008}$ 整除但不被 $p_1, p_2, \cdots, p_{2007}$ 整除的数所组成的集合; $A_{2009}$ 表示所有不被 $p_1$, $p_2, \cdots, p_{2008}$ 整除的数所组成的集合.
+则 $A_1, A_2, \cdots, A_{2009}$ 两两不交且并集为 $\mathbf{N}^*$.
+此时, 对任意 $x \in A_m, y \in A_n, m<n$, 有 $p_m \mid x$, 故 $p_m \mid x y$; 另一方面, $x, y$ 均不被 $p_1, p_2, \cdots, p_{m-1}$ 整除,故 $x y$ 不被 $p_1, p_2, \cdots, p_{m-1}$ 整除.
+从而 $x y \in A_m$.
+故将每个集合 $A_i$ 各染上一种颜色即满足题意.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 证明: 存在无穷多组正整数 $(m, n)$, 使得 $\frac{n+1}{m}+\frac{m+1}{n}$ 是一个整数.
+%%<SOLUTION>%%
+首先, $m=1, n=2$ 使得 $\frac{n+1}{m}+\frac{m+-1}{n}$ 是一个整数.
+设正整数 $m, n(m<n)$ 使得 $\frac{n+1}{m}+\frac{m+1}{n} \in \mathbf{N}$, 记 $\frac{n+1}{m}+\frac{m+1}{n}=t$, 则
+$$
+t n=\frac{n(n+1)}{m}+m+1
+$$
+所以, $\frac{n(n+1)}{m} \in \mathbf{N}$. 令 $\frac{n(n+1)}{m}=s$, 则 $s>n$,于是
+$$
+t n=\frac{n(n+1)}{m}+m+1=s+\frac{n(n+1)}{s}+1,
+$$
+所以
+$$
+t=\frac{s+1}{n}+\frac{n+1}{s} .
+$$
+即若 $(m, n)$ 是满足题意的数对, 则 $(n, s)$ 也是满足题意的数对.
+且 $s> n>m$.
+故存在无穷多组正整数 $(m, n)$, 使得 $\frac{n+1}{m}+\frac{m+1}{n}$ 是一个整数.
+%%<REMARK>%%
+注:试比较第 6 节极端原理中的例 8 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 对于周长为 $n\left(n \in \mathbf{N}^*\right)$ 的圆, 称满足如下条件的最小的正整数 $P_n$ 为 "圆剖分数": 如果在圆周上有 $P_n$ 个点 $A_1, A_2, \cdots, A_{p_n}$, 对于 $1,2, \cdots, n-1$ 中的每一个整数 $m$, 都存在两个点 $A_i, A_j\left(1 \leqslant i, j \leqslant P_n\right)$, 以 $A_i$ 和 $A_j$ 为端点的一条弧长等于 $m$; 圆周上每相邻两点间的弧长顺次构成的序列 $T_n=\left(a_1, a_2, \cdots, a_{P_n}\right)$ 称为 "圆剖分序列". 例如: 当 $n==13$ 时, 圆剖分数为 $P_{13}=4$, 如图(<FilePath:./figures/fig-c18p10.png>)所示, 图中所标数字为相邻两点之间的弧长, 圆剖分序列为 $T_{13}=(1,3,2,7)$ 或 $(1,2,6,4)$.
+求 $P_{21}$ 和 $P_{31}$, 并各给出一个相应的圆剖分序列.
+%%<SOLUTION>%%
+由于 $k$ 个点中, 每两个点间可得一段优弧和一段劣弧, 故至多可得
+$k(k-1)$ 个弧长值.
+当 $k(k-1) \geqslant 20$ 时, 则 $k \geqslant 5$;
+而当 $k(k-1) \geqslant 30$ 时, 则 $k \geqslant 6$.
+另一方面, 在 $k=5$ 时, 可以给出剖分图如图(<FilePath:./figures/fig-c18a10-1.png>)
+所以, $P_{21}=5, T_{21}=(1,3,10,2,5)$.
+对于 $n=31$, 在 $k=6$ 时,类似可给出剖分图如图(<FilePath:./figures/fig-c18a10-2.png>)
+所以, $P_{31}=6, T_{31}=(1,2,7,4,12,5),(1,2,5,4,6,13)$, (1, 3, $2,7,8,10),(1,3,6,2,5,14)$ 或 $(1,7,3,2,4,14)$ 等.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 给定整数 $n \geqslant 3$. 用 $f(x)$ 表示有限数集 $X$ 中元素的算术平均.
+(1) 证明: 存在 $n$ 元正整数集 $S_1$, 满足对任意两个不同的非空集 $A, B \subseteq S_1, f(A)$ 和 $f(B)$ 是两个不相等的正整数;
+(2) 若集合 $S_1$ 满足 (1) 中的条件, 证明: 对给定正整数 $K>\max _{A_1 \subseteq S_1} f\left(A_1\right)$ 及任意 $x \in \mathbf{N}^*$, 集合 $S_2=\left\{K ! x \alpha+1 \mid \alpha \in S_1\right\}$ 满足:对任意两个不同的非空集 $A, B \subseteq S_2, f(A)$ 与 $f(B)$ 是两个互素的整数;
+(3)证明: 在 (2) 的基础上,可适当选择一个正整数 $x$, 使 $S_2$ 进一步满足: 对每个非空集 $A \subseteq S_2, f(A)$ 为合数.
+%%<SOLUTION>%%
+(1) 取定整数 $q>n$, 取 $S_1=\left\{n ! q, n ! q^2, \cdots, n ! q^n\right\}$, 则对任意两个不同的非空集 $A, B \subseteq S_1, f(A)$ 和 $f(B)$ 显然是正整数.
+假设此时 $f(A)= f(B)$, 那么
+$$
+|B| \sum_{n ! q^i \in A} q^i=|A| \sum_{n ! q^j \in B} q^j .
+$$
+因为 $q>n \geqslant \max \{|A|,|B|\}$, 故上述等式中的正整数 $|B| \sum_{n ! q^i \in A} q^i$ 与 $|A| \sum_{n ! q^i \in B} q^j$ 的 $q$ 进制表示分别是 $\sum_{n ! q^i \in A}|B| q^i$ 与 $\sum_{n ! q^j \in B}|A| q^j$, 从而它们的形式应当完全相同,由此可得 $A=B$,矛盾!
+所以对 $S_1$ 的任意两个不同的非空子集 $A, B, f(A)$ 和 $f(B)$ 是两个不相等的正整数.
+(2)由 $S_2$ 的定义易知,对任意两个不同的非空集 $A, B \subseteq S_2$, 有两个非空集 $A_1, B_1 \subseteq S_1$ 满足 $\left|A_1\right|=|A|,\left|B_1\right|=|B|$, 且
+$$
+f(A)=K ! x f\left(A_1\right)+1, f(B)=K ! x f\left(B_1\right)+1 . \label{eq1}
+$$
+显然 $f(A)$ 与 $f(B)$ 都是正整数.
+若正整数 $d$ 是 $f(A)$ 与 $f(B)$ 的一个公约数, 则 $d \mid f(A) f\left(B_1\right)- f(B) f\left(A_1\right)$, 故由 式\ref{eq1} 可知 $d \mid f\left(A_1\right)-f\left(B_1\right)$, 但由 $K$ 的选取及 $S_1$ 的构作可知, $\left|f\left(A_1\right)-f\left(B_1\right)\right|$ 是小于 $K$ 的非零整数, 故为 $K$ ! 的约数, 从而 $d \mid K !$ ! 再结合 $d \mid f(A)$ 及 式\ref{eq1} 可知 $d=1$, 因此 $f(A)$ 与 $f(B)$ 互素.
+(3)显然可选择 $2^n-1$ 个大于 $K$ 且互不相同的素数 $p_1, p_2, \cdots, p_{2^n-1}$. 将 $S_1$ 中一切非空子集的元素平均值分别记为 $\alpha_1, \alpha_2, \cdots, \alpha_2{ }^n-1$, 则
+$$
+\left(p_i, K ! \alpha_i\right)=1,1 \leqslant i \leqslant 2^n-1,
+$$
+且
+$$
+\left(p_i^2, p_j^2\right)=1,1 \leqslant i<j \leqslant 2^n-1 .
+$$
+故由中国剩余定理可知, 同余方程组
+$$
+K ! x \alpha_i=-1\left(\bmod p_i^2\right), i=1,2, \cdots, 2^n-1
+$$
+有正整数解.
+任取这样一个解 $x$, 则对任意非空集 $A \subseteq S_2, f(A)=K ! x f\left(A_1\right)+1$ 是某个 $p_i^2$ 的倍数, 故为合数, 因此 $S_2=\left\{K ! x \alpha+1 \mid \alpha \in S_1\right\}$ 满足题意.
+%%PROBLEM_END%%
+
+

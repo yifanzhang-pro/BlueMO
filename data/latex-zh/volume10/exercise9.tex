@@ -1,0 +1,114 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 证明不定方程
+$$
+x^2+3 x y-2 y^2=122
+$$
+没有整数解.
+%%<SOLUTION>%%
+将方程配方成
+$$
+(2 x+3 y)^2=17 y^2+4 \times 122,
+$$
+模 17 得 $(2 x+3 y)^2 \equiv 12(\bmod 17)$. 但易于验证,一个整数的平方模 17 只可能取 $0 、 1 、 2 、 4 、 8 、 9 、 13 、 15 、 16$ 之一, 不能为 12 . 因此原方程无整数解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 求所有正整数 $m 、 n$, 使得 $\left|12^m-5^n\right|=7$.
+%%<SOLUTION>%%
+模 4 即知方程
+$$
+12^m-5^n=-7
+$$
+无正整数解.
+方程
+$$
+12^m-5^n=7 . \label{eq1}
+$$
+显然有解 $m=n=1$. 下面证明当 $m>1$ 时它无正整数解.
+将 式\ref{eq1}模 3 得 $-(-1)^n \equiv 1(\bmod 3)$, 故 $n$ 为奇数, 因此 $5^n \equiv 5(\bmod 8)$. 又 $m \geqslant 2$, 故 $8 \mid 12^m$.
+将 式\ref{eq1} 模 8 得出 $-5 \equiv 7(\bmod 8)$, 这不可能.
+所以 $m=1$, 从而 $n=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 求所有素数 $p$, 使得 $2^p+3^p$ 为一个整数的 $k$ 次幂 (这里的 $k \geqslant 2$ ).
+%%<SOLUTION>%%
+$p=2,5$ 均不合要求.
+设素数 $p>2$ 且 $p \neq 5$. 由二项式定理易知
+$$
+\begin{aligned}
+2^p+3^p & =2^p+(5-2)^p=5^p-\mathrm{C}_p^1 5^{p-1} \times 2+\cdots+5 \mathrm{C}_p^{p-1} 2^{p-1} \\
+& =5^2 u+5 p \times 2^{p-1}, u \text { 为一个整数.
+}
+\end{aligned}
+$$
+故 $5 \|\left(2^p+3^p\right)$, 从而 $2^p+3^p$ 不能是整数的 $k$ 次幂 $(k>1)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 证明: 不定方程
+$$
+5^x-3^y=2
+$$
+仅有正整数解 $x=y=1$.
+%%<SOLUTION>%%
+方程显然有解 $x=y=1$. 将方程模 4 易知 $y$ 为奇数.
+若 $y>1$, 将方程模 9 得
+$$
+5^x \equiv 2(\bmod 9) . \label{eq1}
+$$
+不难求得对 $x=1,2, \cdots, 5^x$ 模 9 周期地为 $5,7,8,4,2,1$. 故由 式\ref{eq1} 知 $x$ 必有形式 $6 k+5$. 再将原方程模 7 ,易验证,对奇数 $y$, 有
+$$
+3^y \equiv 3,5,6(\bmod 7) \text {. }
+$$
+而 $x=6 k+5$ 时, 由费马小定理知 $5^6 \equiv 1(\bmod 7)$, 故
+$$
+5^x=5^{6 k+5} \equiv 5^5 \equiv 3(\bmod 7),
+$$
+从而原方程两边模 7 不等, 因此它没有 $y>1$ 的解, 故仅有的正整数解为 $y= 1, x=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 证明 $x^3+y^4=7$ 没有整数解.
+%%<SOLUTION>%%
+易于验证, $x^3 \equiv 0,1,5,8,12(\bmod 13) ; y^4 \equiv 0,1,3,9(\bmod 13)$.
+由这些易知 $x^3+y^4 \neq 7(\bmod 13)$, 故方程无整数解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $p$ 是给定的奇素数, 求 $p^x-y^p=1$ 的全部正整数解 $x 、 y$.
+%%<SOLUTION>%%
+由 $p^x=y^p+1=(y+1)\left(y^{p-1}-y^{p-2}+\cdots-y+1\right)$ 可知, $y+1=p^n$, $n$ 为一 个整数.
+因 $y>0$, 故 $n>0$. 因此
+$$
+\begin{aligned}
+p^x & =\left(p^n-1\right)^p+1 \\
+& =p^{n p}-p \cdot p^{n(p-1)}+\mathrm{C}_p^2 p^{n(p-2)}-\cdots-\mathrm{C}_p^{p-2} p^{2 n}+p \cdot p^n . \label{eq1}
+\end{aligned}
+$$
+易知, 上式右边除最后一项外,均被 $p^{n+2}$ 整除 (注意, 因 $p$ 是素数,故所有 $\mathrm{C}_p^i$ 对 $i=1, \cdots, p-2$ 均被 $p$ 整除), 因此 $p^{n+1}$ 是 式\ref{eq1} 的右边的 $p$ 的最高次幂, 故必须 $x=n+1$, 此时式\ref{eq1}化为
+$$
+p^{n p}-p \cdot p^{n(p-1)}+\mathrm{C}_p^2 p^{n(p-2)}-\cdots-\mathrm{C}_p^{p-2} p^{2 n}=0 . \label{eq2}
+$$
+当 $p=3$ 时, 式\ref{eq2} 即为 $3^{3 n}-3 \cdot 3^{2 n}=0$, 得 $n=1$, 故 $x=y=2$. 若 $p \geqslant 5$, 注意到 $\mathrm{C}_p^{p-2}$ 不被 $p^2$ 整除,易知 式\ref{eq2} 的左边除最后一项外,均被 $p^{2 n+2}$ 整除, 但最后一项不能被 $p^{2 n+2}$ 整除, 这表明 式\ref{eq2} 不能成立.
+因此, 本题仅在 $p=3$ 时有解 $x=y=2$.
+%%PROBLEM_END%%
+
+

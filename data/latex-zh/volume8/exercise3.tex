@@ -1,0 +1,155 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. $p^2 \geqslant 4 q$ 是关于 $x$ 的实系数方程 $x^4+p x^2+q=0$ 有实根的 ( ).
+(A) 充分而不必要条件
+(B) 必要而不充分条件
+(C) 充分且必要条件
+(D) 非充分又非必要条件
+%%<SOLUTION>%%
+B.
+令 $x^2=t$, 则原方程变形为 $t^2+p t+q=0$.
+原方程有实根的充要条件是关于 $t$ 的方程 有非负实根, 从而可知 $p^2 \geqslant 4 q$ 是该方程 有非负实根的必要而不充分条件.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设方程 $x^2-2 \sqrt{2} x+m=0$ 的两个虚根为 $\alpha$ 、 $\beta$, 且 $|\alpha-\beta|=1$, 则实数 $m$ 的值等于 ( ).
+(A) $-\frac{1}{4}$
+(B) $\frac{1}{4}$
+(C) $-\frac{9}{4}$
+(D) $\frac{9}{4}$
+%%<SOLUTION>%%
+D.
+由 $\alpha+\beta=2 \sqrt{2},|\alpha-\beta|=1$, 而 $\alpha-\beta$ 是纯虚数, 从而 $\alpha-\beta= \pm \mathrm{i}$.
+$$
+4 \alpha \beta=(\alpha+\beta)^2-(\alpha-\beta)^2=(2 \sqrt{2})^2+1=9 \text {, 所以 } m=\alpha \beta=\frac{9}{4} \text {. }
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 方程 $a x^2+b|x|+c=0(a 、 b 、 c \in \mathbf{R}, a \neq 0)$ 在复数集内的根的个数是 $n$, 则 ( ).
+(A) $n$ 最大是 2
+(B) $n$ 最大是 4
+(C) $n$ 最大是 6
+(D) $n$ 最大是 8
+%%<SOLUTION>%%
+C.
+不妨设 $a=1$.
+由 $b 、 c 、|x|$ 均是实数,可知 $x^2$ 必是实数,因此 $x$ 是实数或纯虚数.
+若 $x$ 是实数 $u$, 则 $u^2+b u+c=0(u \geqslant 0)$ 或 $u^2-b u+c=0(u<0)$.
+若 $x$ 是纯虚数 $v \mathrm{i}$, 则 $v^2-b v-c=0(v \geqslant 0)$ 或 $v^2+b v-c=0(v<0)$.
+对 $b 、 c$ 异号时, 有 6 个根满足要求; 对其他的情况, 满足要求的根都不足 6 个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $z$ 是模不为 1 的虚数, 记 $w=z+\frac{1}{z}$, 设实数 $a$ 满足 $w^2+a w+1=0$, 证明: $-2<a<2$.
+%%<SOLUTION>%%
+由题意可设 $z=r(\cos \theta+i \sin \theta),(r>0, r \neq 1, \theta \neq k \pi)$, 则
+$$
+\begin{aligned}
+w & =z+\frac{1}{z}=r(\cos \theta+\mathrm{i} \sin \theta)+\frac{1}{r}(\cos \theta-\mathrm{i} \sin \theta) \\
+& =\left(r+\frac{1}{r}\right) \cos \theta+\mathrm{i}\left(r-\frac{1}{r}\right) \sin \theta,
+\end{aligned}
+$$
+因为 $\theta \neq k \pi, r>0$ 且 $r \neq 1$, 所以 $\left(r-\frac{1}{r}\right) \sin \theta \neq 0$, 故 $w$ 是虚数, 即方程 $w^2+a w+1=0$ 有虚数根, 所以 $\Delta=a^2-4<0$, 故 $-2<a<2$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设非零复数 $z_1 、 z_2$ 在复平面内的对应点分别为 $A 、 B$, 且满足 $\left|z_2\right|=2$, $z_1^2-2 z_1 z_2+4 z_2^2=0$.
+(1) 试判断 $\triangle A O B$ ( $O$ 为原点) 的形状;
+(2) 求 $\triangle A O B$ 的面积.
+%%<SOLUTION>%%
+(1) 由 $z_1^2-2 z_1 z_2+4 z_2^2=0$ 得 $z_1=\frac{2 z_2 \pm 2 \sqrt{3} i z_2}{2}$, 即 $z_1=(1 \pm \sqrt{3} i) z_2$, 亦即 $z_1=2\left(\cos \frac{\pi}{3} \pm i \sin \frac{\pi}{3}\right) z_2$.
+由此得 $\triangle A O B$ 是直角三角形, 且 $\angle A O B=60^{\circ}, \angle A B O=90^{\circ}$;
+(2) $S_{\triangle A O B}=\frac{1}{2}|A O| \cdot|B O| \sin \frac{\pi}{3}=\frac{\sqrt{3}}{4} \cdot 2 \cdot|B O|^2=2 \sqrt{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 已知 $P(x)=0$ 与 $Q(x)=0$ 是两个实系数方程, 且对所有的实数 $x$ 满足恒等式 $P(Q(x))=Q(P(x))$, 若方程 $P(x)=Q(x)$ 无实根, 求证: 方程 $P(P(x))=Q(Q(x))$ 也无实根.
+%%<SOLUTION>%%
+由实系数方程 $P(x)-Q(x)=0$ 无实根, 可知其虚根成对出现.
+$$
+\begin{aligned}
+P(x)-Q(x)= & A\left[x-\left(a_1+b_1 \mathrm{i}\right)\right]\left[x-\left(a_1-b_1 \mathrm{i}\right)\right] \cdots \\
+& {\left[x-\left(a_n+b_n \mathrm{i}\right)\right]\left[x-\left(a_n-b_n \mathrm{i}\right)\right] } \\
+= & A\left[\left(x-a_1\right)^2+b_1^2\right] \cdots\left[\left(x-a_n\right)^2+b_n^2\right] .
+\end{aligned}
+$$
+不妨设常数 $A>0$, 于是, 对任意 $x \in \mathbf{R}$, 有 $P(x)-Q(x)>0$. 而 $P(x) 、 Q(x)$ 亦是实数, 从而
+$$
+P(P(x))-Q(Q(x))=\{P(P(x))-Q(P(x))\}+\{P(Q(x))-Q(Q(x))\}>0 \text {. }
+$$
+故方程 $P(P(x))=Q(Q(x))$ 无实根, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 已知关于 $x$ 的二次方程 $a(1+\mathrm{i}) x^2+\left(1+a^2 \mathrm{i}\right) x+a^2+\mathrm{i}=0$ 有实根, 求实数 $a$ 的值.
+%%<SOLUTION>%%
+设原方程有一实根 $x_0$, 则
+$$
+a(1+\mathrm{i}) x_0^2+\left(1+a^2 \mathrm{i}\right) x_0+a^2+\mathrm{i}=0,
+$$
+即
+$$
+\left(a x_0^2+x_0+a^2\right)+\mathrm{i}\left(a x_0^2+a^2 x_0+1\right)=0 .
+$$
+根据复数相等的充要条件,有
+$$
+\left\{\begin{array}{l}
+a x_0^2+x_0+a^2=0, \\
+a x_0^2+a^2 x_0+1=0 .
+\end{array}\right.
+$$
+解得 $x_0=1$ 或 $a= \pm 1$.
+当 $x_0=1$ 时, 代入 $a x_0^2+x_0+a^2=0$ 得 $a^2+a+1=0$. 因为 $a \in \mathbf{R}, a^2+ a+1=\left(a+\frac{1}{2}\right)^2+\frac{3}{4}>0$, 所以不成立.
+同理,当 $a=1$ 时,也不成立.
+当 $a=-1$ 时,方程变为 $x_0^2-x_0-1=0$, 所以 $x_0=\frac{1 \pm \sqrt{5}}{2}$ 满足题意, 故 $a=-1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设 $a 、 b 、 c \in \mathbf{R}, b \neq a c, a \neq-c$. $z$ 是复数, $z^2-(a-c) z-b=0$. 求证 $\left|\frac{a^2+b-(a+c) z}{a c-b}\right|=1$ 的充分必要条件是 $(a-c)^2+4 b \leqslant 0$.
+%%<SOLUTION>%%
+一方面, 若 $(a-c)^2+4 b \leqslant 0$, 则由求根公式, 得
+$$
+z==\frac{a-c \pm \sqrt{-(a-c)^2-4 b} \cdot \mathrm{i}}{2} .
+$$
+于是
+$$
+\begin{aligned}
+\left|\frac{a^2+b-(a+c) z}{a c-b}\right| & =\left|\frac{a^2+c^2+2 b \mp(a+c) \sqrt{-(a-c)^2-4 b} \cdot \mathrm{i}}{2(a c-b)}\right| \\
+& =\sqrt{\frac{\left(a^2+c^2+2 b\right)^2-(a+c)^2\left[(a-c)^2+4 b\right]}{(2 a c-2 b)^2}} \\
+& =\sqrt{\frac{\left(a^2+c^2+2 b\right)^2-\left(a^2-c^2\right)^2-4 b(a+c)^2}{4(a c-b)^2}} \\
+& =\sqrt{\frac{\left(a^2+b\right)\left(c^2+b\right)-b\left(a^2+c^2+2 a c\right)}{(a c-b)^2}} \\
+& =\sqrt{\frac{a^2 c^2+b^2-2 a b c}{(a c-b)^2}}=1 .
+\end{aligned}
+$$
+另一方面, 若 $\left|\frac{a^2+b-(a+c) z}{a c-b}\right|=1$, 假设 $(a-c)^2+4 b>0$, 则 $z^2- (a-c) z-b=0$ 有两个不相等的实根.
+于是 $\frac{a^2+b-(a+c) z}{a c-b}=1$ 或 -1 , 即 $z=a$ 或 $z=\frac{-a^2+a c-2 b}{-(a+c)}$.
+当把 $z=a$ 代入 $z^2-(a-c) z-b=0$ 时, 得到 $a c-b=0$,与 $b \neq a c$ 相矛盾.
+当把 $z=\frac{-a^2+a c-2 b}{-(a+c)}$ 代入 $z^2-(a-c) z-b=0$ 时, 得到 $(b-a c)[(a- \left.c)^2+4 b\right]=0$, 这与条件 $b \neq a c$ 及前面的假设 $(a-c)^2+4 b>0$ 相矛盾.
+于是, $a 、 \frac{-a^2+a c-2 b}{-(a+c)}$ 均不是方程 $z^2-(a-c) z-b=0$ 的根,矛盾.
+故一定有 $(a-c)^2+4 b \leqslant 0$, 证毕.
+%%PROBLEM_END%%
+
+

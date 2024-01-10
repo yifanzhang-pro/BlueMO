@@ -1,0 +1,93 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $x_i \geqslant 0(1 \leqslant i \leqslant n), \sum_{i=1}^n x_i \leqslant \frac{1}{2}, n \geqslant 2$. 求 $F=\left(1-x_1\right)\left(1-x_2\right) \cdots\left(1-x_n\right)$ 的最小值.
+%%<SOLUTION>%%
+当 $n=2$ 时, $x_1+x_2 \leqslant \frac{1}{2},\left(1-x_1\right)\left(1-x_2\right)=1+x_1 x_2-\left(x_1+x_2\right) \geqslant 1-x_1-x_2 \geqslant \frac{1}{2}$. 其中等号在 $x_1+x_2=\frac{1}{2}, x_1 x_2=0$, 即 $x_1=\frac{1}{2}, x_2=0$ 时成立.
+当 $n=3$ 时, $x_1+x_2+x_3 \leqslant \frac{1}{2}$, 利用上述变换, 有 $\left(1-x_1\right)\left(1-x_2\right)(1- \left.x_3\right) \geqslant\left(1-x_1\right)\left[1-\left(x_2+x_3\right)\right] \geqslant 1-x_1-\left(x_2+x_3\right) \geqslant \frac{1}{2}$. 其中注意 $0 \leqslant x_i<1,1-x_i>0$. 等号在 $x_1+x_2+x_3=\frac{1}{2}$, 且 $x_2 x_3=x_1\left(x_2+x_3\right)=0$, 即 $x_1=\frac{1}{2}, x_2=x_3=0$ 时成立.
+由上可以猜想, 一般情况下的极值点为:
+$\left(\frac{1}{2}, 0,0, \cdots, 0\right)$. 采用磨光变换.
+先证明引理: 若 $0 \leqslant x, y \leqslant 1$, 则 $(1- x)(1-y) \geqslant 1-x-y$. 此式左边直接展开即证.
+此磨光工具相当于 $(x, y) \rightarrow (x+y, 0)$. 设 $n \geqslant 2$, 对自变量组 $\left(x_1, x_2, \cdots, x_n\right)$, 不妨设 $x_1 \geqslant x_2 \geqslant \cdots \geqslant x_n$, 则 $F=\left(1-x_1\right)\left(1-x_2\right) \cdots\left(1-x_n\right) \geqslant\left(1-x_1\right)\left(1-x_2\right) \cdots\left(1-x_{n-2}\right)(1- \left.x_{n-1}-x_n\right) \geqslant\left(1-x_1\right)\left(1-x_2\right) \cdots\left(1-x_{n-3}\right)\left(1-x_{n-2}-x_{n-1}-x_n\right) \geqslant \cdots \geqslant 1- x_1-x_2-\cdots-x_n \geqslant \frac{1}{2}$. 取等号时变量组变为 $\left(\frac{1}{2}, 0,0, \cdots, 0\right)$, 此时, $F$ 达到最小值 $\frac{1}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $x_i \geqslant 0(1 \leqslant i \leqslant n, n \geqslant 4), \sum_{i=1}^n x_i=1$, 求 $F=\sum_{i=1}^n x_i x_{i+1}$ 的最大值.
+%%<SOLUTION>%%
+仿上题方法, 可求得 $F$ 的最大值为 $F\left(\frac{1}{2}, \frac{1}{2}, 0,0, \cdots, 0\right)=\frac{1}{4}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $x_i \geqslant 0(1 \leqslant i \leqslant n), \sum_{i=1}^n x_i=\pi, n \geqslant 2$. 求 $F=\sum_{i=1}^n \sin ^2 x_i$ 的最大值.
+%%<SOLUTION>%%
+当 $n=2$ 时, $x_1+x_2=\pi, F=\sin ^2 x_1+\sin ^2 x_2=2 \sin ^2 x_1 \leqslant 2$. 其中等式在 $x_1=x_2=\frac{\pi}{2}$ 时成立.
+当 $n \geqslant 3$ 时, 设 $x_3, x_4, \cdots, x_n$ 为常数, 则 $x_1+x_2$ 亦为常数.
+考察 $\mathrm{A}=\sin ^2 x_1+\sin ^2 x_2, 2-2 \mathrm{~A}=1-2 \sin ^2 x_1+1-2 \sin ^2 x_2= \cos 2 x_1+\cos 2 x_2=2 \cos \left(x_1+x_2\right) \cos \left(x_1-x_2\right)$. 为了找到磨光工具, 我们考察 $\cos \left(x_1-x_2\right)$ 的极值以及 $\cos \left(x_1+x_2\right)$ 的符号.
+注意到 $x_1+x_2 \leqslant \frac{\pi}{2}$ 时, $\cos \left(x_1+x_2\right) \geqslant 0, x_1+x_2>\frac{\pi}{2}$ 时, $\cos \left(x_1+x_2\right)<0$. 所以当 $x_1+x_2 \leqslant \frac{\pi}{2}$ 时, $\left|x_1-x_2\right|$ 越大, $A$ 越大.
+此时的磨光工具为 $\left(x_1, x_2\right) \rightarrow\left(x_1+x_2, 0\right)$; 当 $x_1+ x_2>\frac{\pi}{2}$ 时, $\left|x_1-x_2\right|$ 越小, $A$ 越大.
+此时需要 $x_1=x_2$. 磨光工具为 $\left(x_1, x_2\right) \rightarrow \left(\frac{x_1+x_2}{2}, \frac{x_1+x_2}{2}\right)$. 为了保证存在 $x_1 、 x_2$, 使 $x_1+x_2 \leqslant \frac{\pi}{2}$, 一个充分条件是 $n \geqslant 4$. 于是, $n \geqslant 4$ 时, 可利用如下的磨光工具.
+引理: 若 $0 \leqslant x_1 、 x_2 \leqslant \frac{\pi}{2}$, 且 $x_1+x_2 \leqslant \frac{\pi}{2}$, 则 $\sin ^2 x_1+\sin ^2 x_2 \leqslant \sin ^2\left(x_1+x_2\right)$. 实际上, 由 $0 \leqslant x_1 、 x_2 \leqslant \frac{\pi}{2}$ , $x_1+x_2 \leqslant \frac{\pi}{2}$ 知, $\left|x_1-x_2\right| \leqslant\left|x_1+x_2\right| \leqslant \frac{\pi}{2}$. 所以 $\cos \left(x_1-x_2\right) \geqslant \cos \left(x_1+\right. x_2$ ), 所以 $2-2\left(\sin ^2 x_1+\sin ^2 x_2\right)=\cos 2 x_1+\cos 2 x_2=2 \cos \left(x_1+x_2\right) \cos \left(x_1-\right. \left.x_2\right) \geqslant 2 \cos \left(x_1+x_2\right) \cos \left(x_1+x_2\right)=2 \cos ^2\left(x_1+x_2\right)=2\left[1-\sin ^2\left(x_1+x_2\right)\right]= 2-2 \sin ^2\left(x_1+x_2\right)$, 移项, 引理即证.
+下面分情况讨论.
+当 $n=3$ 时, 若三个角为 $\left(\frac{\pi}{2}, \frac{\pi}{2}, 0\right)$, 则调整为 $\left(\frac{\pi}{2}, \frac{\pi}{4}, \frac{\pi}{4}\right), F$ 的值由 2 增大到 $1+\sqrt{2}$, 所以不妨设
+$x_1 \leqslant x_2 \leqslant x_3$, 且 $\left(x_1, x_2, x_3\right) \neq\left(0, \frac{\pi}{2}, \frac{\pi}{2}\right)$. 则 $x_2<\frac{\pi}{2}, x_1+x_3>\frac{\pi}{2}$, $x_1 \leqslant \frac{\pi}{3} \leqslant x_3$. 将 $\left(x_1, x_2, x_3\right)$ 磨光到 $\left(\frac{\pi}{3}, x_2, x_1+x_3-\frac{\pi}{3}\right)$, 由以上叙述可知, $F$ 增大.
+再作一次磨光变换, 便得到 $\left(\frac{\pi}{3}, \frac{\pi}{3}, \frac{\pi}{3}\right)$, 所以, $F \leqslant \frac{9}{4}$. 当 $n \geqslant 4$ 时, 不妨设 $x_1 \geqslant x_2 \geqslant \cdots \geqslant x_{n-1} \geqslant x_n$, 则必有两个角: $x_{n-1}+x_n \leqslant \frac{\pi}{2}$. 由引理, $F=\sin ^2 x_1+\cdots+\sin ^2 x_{n-1}+\sin ^2 x_n \geqslant \sin ^2 x_1+\sin ^2 x_2+\cdots+\sin ^2\left(x_{n-1}+\right. x_n$ ) $=\sin ^2 x_1^{\prime}+\cdots+\sin ^2 x_{n-2}^{\prime}+\sin ^2 x_{n-1}^{\prime}$ (其中 $x_1^{\prime}, x_2^{\prime}, \cdots, x_{n-2}^{\prime}, x_{n-1}^{\prime}$ 是 $x_1$, $x_2, \cdots, x_{n-2}, x_{n-1}+x_n$ 由大到小排列). 如果 $n-1 \geqslant 4$, 则必有两个角: $x_{n-2}^{\prime}+ x_{n-1}^{\prime} \leqslant \frac{\pi}{2}$. 再继续利用引理进行上述变换, 如此至多进行 $n-3$ 次变换, 可将变量组变为 $\left(x_1^{\prime}, x_2^{\prime}, x_3^{\prime}, 0,0, \cdots, 0\right)$. 再利用 $n=3$ 时的结果, 可知, $F \leqslant \frac{9}{4}$, 等号在 $x_1=x_2=x_3=\frac{\pi}{3}, x_4=x_5=\cdots=x_n=0$ 时成立.
+故当 $n=2$ 时, $F$ 的最大值为 2 ; 当 $n>2$ 时, $F$ 的最大值为 $\frac{9}{4}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $0<a_1 \leqslant a_2 \leqslant \cdots \leqslant a_n<\pi, a_1+a_2+\cdots+a_n=A$, 求 $\sin a_1+ \sin a_2+\cdots+\sin a_n$ 的最大值.
+%%<SOLUTION>%%
+仿上题方法, 可求得 $\sin a_1+\sin a_2+\cdots+\sin a_n$ 的最大值为 $n \sin \frac{A}{n}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $x_1 、 x_2 、 x_3 、 x_4$ 都是正实数, 且 $x_1+x_2+x_3+x_4=\pi$, 求$A=\left(2 \sin ^2 x_1+\frac{1}{\sin ^2 x_1}\right)\left(2 \sin ^2 x_2+\frac{1}{\sin ^2 x_2}\right)\left(2 \sin ^2 x_3+\frac{1}{\sin ^2 x_3}\right)\left(2 \sin ^2 x_4+\frac{1}{\sin ^2 x_4}\right)$ 的最小值.
+%%<SOLUTION>%%
+首先注意, 如果 $x_1+x_2=a$ (常数), 则由 $2 \sin x_1 \sin x_2=\cos \left(x_1-x_2\right)- \cos a$, 及 $\left|x_1-x_2\right|<\pi$ 可知, $\sin x_1 \sin x_2$ 的值随 $\left|x_1-x_2\right|$ 变小而增大(磨光工具).
+如果 $x_1 、 x_2 、 x_3 、 x_4$ 不全等, 则其中必有一个大于 $\frac{\pi}{4}$, 也必有一个小于 $\frac{\pi}{4}$.
+不妨设 $x_1>\frac{\pi}{4}>x_2$, 则固定 $x_3, x_4$, 对 $x_1 、 x_2$ 作磨光变换: 即令 $x_1^{\prime}=\frac{\pi}{4}$, $x_2^{\prime}=x_1+x_2-\frac{\pi}{4}, x_3^{\prime}=x_3, x_4^{\prime}=x_4$, 则 $x_1^{\prime}+x_2^{\prime}=x_1+x_2,\left|x_1^{\prime}-x_2^{\prime}\right|<\left|x_1-x_2\right|$, 于是, 由上述磨光工具, 有
+$\sin x_1 \sin x_2<\sin x_1^{\prime} \sin x^{\prime}{ }_2$, 所以 $\sin ^2 x_1 \sin ^2 x_2<\sin ^2 x_1^{\prime} \sin ^2 x^{\prime}{ }_2$.
+记 $f(x, y)=\left(2 \sin ^2 x+\frac{1}{\sin ^2 x}\right)\left(2 \sin ^2 y+\frac{1}{\sin ^2 y}\right)$, 则
+$$
+\begin{aligned}
+f\left(x_1, x_2\right) & =\left(2 \sin ^2 x_1+\frac{1}{\sin ^2 x_1}\right)\left(2 \sin ^2 x_2+\frac{1}{\sin ^2 x_2}\right) \\
+& =2\left(2 \sin ^2 x_1 \sin ^2 x_2+\frac{1}{2 \sin ^2 x_1 \sin ^2 x_2}\right)+2\left(\frac{\sin ^2 x_1}{\sin ^2 x_2}+\frac{\sin ^2 x_2}{\sin ^2 x_1}\right)
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& =2\left(2 \sin ^2 x_1 \sin ^2 x_2+\frac{1}{2 \sin ^2 x_1 \sin ^2 x_2}\right)+2\left(\frac{\sin ^4 x_1+\sin ^4 x_2}{\sin ^2 x_1 \sin ^2 x_2}\right) \\
+& =2 g\left(2 \sin ^2 x_1 \sin ^2 x_2\right)+2\left(\frac{\sin ^4 x_1+\sin ^4 x_2}{\sin ^2 x_1 \sin ^2 x_2}\right) \text {, 其中 } g(x)=x+\frac{1}{x} \text {. } \\
+&
+\end{aligned}
+$$
+注意到 $g(x)$ 在 $(0,1)$ 上递减, 而 $2 \sin ^2 x_1 \sin ^2 x_2 \leqslant 2 \sin ^2 x_2<2 \sin ^2 \frac{\pi}{4}=1$, 所以
+$$
+g\left(2 \sin ^2 x_1 \sin ^2 x_2\right)>g\left(2 \sin ^2 x_1^{\prime} \sin ^2 x_2^{\prime}\right) .
+$$
+所以, $f\left(x_1, x_2\right)=2 g\left(2 \sin ^2 x_1 \sin ^2 x_2\right)+2\left(\frac{\sin ^2 x_1}{\sin ^2 x_2}+\frac{\sin ^2 x_2}{\sin ^2 x_1}\right)$
+$$
+\begin{aligned}
+& >2 g\left(2 \sin ^2 x_1^{\prime} \sin ^2 x_2^{\prime}\right)+2\left(\frac{\sin ^4 x_1^{\prime}+\sin ^4 x_2^{\prime}}{\sin ^2 x_1^{\prime} \sin ^2 x_2^{\prime}}\right)=f\left(x_1^{\prime}, x_2^{\prime}\right), \\
+& A\left(x_1, x_2, x_3, x_4\right)=f\left(x_1, x_2\right) f\left(x_3, x_4\right)>f\left(x_1^{\prime}, x_2^{\prime}\right) f\left(x_3^{\prime}, x_4^{\prime}\right)=
+\end{aligned}
+$$
+$A\left(x_1^{\prime}, x_2^{\prime}, x_3^{\prime}, x_4^{\prime}\right)$.
+这样, 我们将 $x_1$ 磨光到 $\frac{\pi}{4}$, 函值减小.
+如果 $x_2^{\prime} 、 x_3^{\prime} 、 x_4^{\prime}$ 中仍有不等于 $-\frac{\pi}{4}$ 者, 则继续上述变换, 由此可见, $A$ 在 $x_1=x_2=x_3=x_4=\frac{\pi}{4}$ 时达到最小.
+综上所述, $A$ 的最小值为 $\left[2 \sin ^2 \frac{\pi}{4}+\frac{1}{\sin ^2 \frac{\pi}{4}}\right)^4=81$.
+%%PROBLEM_END%%
+
+

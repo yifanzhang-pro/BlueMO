@@ -1,0 +1,142 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 已知复数 $Z_1 、 Z_2$ 满足 $\left|Z_1\right|=2,\left|Z_2\right|=3$. 若它们所对应向量的夹角为 $60^{\circ}$, 则 $\left|\frac{Z_1+Z_2}{Z_1-Z_2}\right|=$
+%%<SOLUTION>%%
+由余弦定理得
+$$
+\begin{gathered}
+\left|Z_1+Z_2\right|=\sqrt{\left|Z_1\right|^2+\left|Z_2\right|^2-2\left|Z_1\right|\left|Z_2\right| \cos 120^{\circ}}=\sqrt{19}, \\
+\left|Z_1-Z_2\right|=\sqrt{\left|Z_1\right|^2+\left|Z_2\right|^2-2\left|Z_1\right|\left|Z_2\right| \cos 60^{\circ}}=\sqrt{7},
+\end{gathered}
+$$
+所以
+$$
+\frac{\left|Z_1+Z_2\right|}{\left|Z_1-Z_2\right|}=\frac{\sqrt{19}}{\sqrt{7}}=\frac{\sqrt{133}}{7} \text {. }
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $a 、 b 、 c$ 是给定复数, 记 $|a+b|=m,|a-b|=n$, 已知 $m n \neq 0$, 求证:
+$$
+\max \{|a c+b|,|a+b c|\} \geqslant-\frac{m m}{\sqrt{m^2+n^2}} .
+$$
+%%<SOLUTION>%%
+因为
+$$
+\begin{aligned}
+\max \{|a c+b|,|a+b c|\} & \geqslant \frac{|b||a c+b|+|a||a+b c|}{|b|+|a|} \\
+& \geqslant \frac{|b(a c+b)-a(a+b c)|}{|a|+|b|} \\
+& =\frac{\left|b^2-a^2\right|}{|a|+|b|} \\
+& \geqslant \frac{|b+a||b-a|}{\sqrt{2\left(|a|^2+|b|^2\right)}},
+\end{aligned}
+$$
+又
+$$
+m^2+n^2=|a-b|^2+|a+b|^2=2\left(|a|^2+|b|^2\right),
+$$
+所以
+$$
+\max \{|a c+b|,|a+b c|\} \geqslant \frac{m m}{\sqrt{m^2+n^2}},
+$$
+证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $r \in \mathbf{N}^*$, 求证: 二次三项式 $x^2-r x-1$ 不可能是任何一个各项系数的绝对值都小于 $r$ 的非零整系数多项式的因式.
+%%<SOLUTION>%%
+先证明: 若 $\alpha$ 是多项式 $f(x)=a_n x^n+\cdots+a_0\left(a_n \neq 0\right)$ 的根, 则 $|\alpha|< M+1$, 这里 $M=\max _{0 \leqslant i \leqslant n-1}\left|\frac{a_i}{a_n}\right|$.
+事实上, 若 $|\alpha| \leqslant 1$, 则上述结论显然成立.
+若 $|\alpha|>1$, 由 $f(\alpha)=0$, 可知 $-a_n \alpha^n=a_0+a_1 \alpha+\cdots+a_{n-1} \alpha^{n-1}$, 于是 $|\alpha|^n=\left|\frac{a_0}{a_n}+\frac{a_1}{a_n} \alpha+\cdots+\frac{a_{n-1}}{a_n} \alpha^{n-1}\right| \leqslant M\left(1+|\alpha|+\cdots+|\alpha|^{n-1}\right)=\frac{M\left(|\alpha|^n-1\right)}{|\alpha|-1}<\frac{M \cdot|\alpha|^n}{|\alpha|-1}$, 故 $|\alpha|<M+1$.
+回到原题, 设 $x^2-r x-1$ 是整系数多项式 $g(x)=b_n x^n+\cdots+b_0$ 的因式, 则 $\frac{r+\sqrt{r^2+4}}{2}(>r)$ 是 $g(x)$ 的根, 利用上面的结论, 可知 $r<\frac{r+\sqrt{r^2+4}}{2} <1+\max _{0 \leqslant i \leqslant n-1}\left|\frac{b_i}{b_n}\right|$, 从而 $\max _{0 \leqslant i \leqslant n-1}\left|\frac{b_i}{b_n}\right|>r-1, \max _{0 \leqslant i \leqslant n-1}\left|b_i\right|>r-1$. 由于 $b_i \in \mathbf{Z}$, 所以 $\max _{0 \leqslant i \leqslant n-1}\left|b_i\right| \geqslant r$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $b 、 k \in \mathbf{N}^*, 1<k<b$, 多项式 $f(x)=a_n x^n+a_{n-1} x^{n-1}+\cdots+a_0$ 满足下述条件:
+(1) $a_i$ 都是非负整数, $0 \leqslant i \leqslant n$;
+(2) $f(b)=k p$, 这里 $p$ 为某个质数;
+(3) $f(x)$ 的每个复根 $r$, 都满足 $|r-b|>\sqrt{k}$.
+求证: $f(x)$ 在整系数范围内不可约.
+%%<SOLUTION>%%
+若 $f(x)=g(x) h(x)$, 这里 $g(x), h(x)$ 为非常数的整系数多项式, 则 $k p=|f(b)|=|g(b)||h(b)|$, 于是质数 $p$ 整除 $|g(b)| 、|h(b)|$ 中的一个.
+不妨设 $p|| h(b) \mid$, 则 $|g(b)| \leqslant k$. 设 $g(x)=b_0\left(x-r_1\right) \cdots\left(x-r_j\right)$. 因为 $\left|b-r_i\right|>\sqrt{k}, 1 \leqslant i \leqslant j$, 所以 $k \geqslant|g(b)|=\left|b_0\right|\left|b-r_1\right| \cdots\left|b-r_j\right|> \sqrt{k^j}$, 从而 $j=1$, 即 $g(x)=b_0 x+b_1, b_0 、 b_1 \in \mathbf{Z}$. 不妨设 $b_0>0$ (否则, 用 $-g(x) 、-h(x)$ 代替 $g(x) 、 h(x))$. 若 $b_1<0$, 则 $f(x)$ 有一个正实根, 与条件 (1) 矛盾,故 $b_1 \geqslant 0$. 但这又导致 $b>k \geqslant|g(b)|=b_0 b+b_1 \geqslant b$. 矛盾.
+证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设多项式 $P(x)=x^n+a_1 x^{n-1}+\cdots+a_{n-1} x+a_n$ 有复根 $x_1 、 x_2 、 \cdots 、 x_n$, $\alpha=\frac{1}{n} \sum_{k=1}^n x_k, \beta^2=\frac{1}{n} \sum_{k=1}^n\left|x_k\right|^2$, 且 $\beta^2<1+|\alpha|^2$. 若复数 $x_0$ 满足 $\left|\alpha-x_0\right|^2<1-\beta^2+|\alpha|^2$, 求证: $\left|P\left(x_0\right)\right|<1$.
+%%<SOLUTION>%%
+$\left|P\left(x_0\right)\right|^2=P\left(x_0\right) \cdot \overline{P\left(x_0\right)}=\prod_{j=1}^n\left(x_0-x_j\right)\left(\overline{x_0}-\overline{x_j}\right)$
+$$
+=\prod_{j=1}^n\left(\left|x_0\right|^2-x_0 \overline{x_j}-\overline{x_0} x_j+\left|x_j\right|^2\right) . \label{eq1}
+$$
+由平均不等式有 $\left[\prod_{j=1}^n\left(\left|x_0\right|^2-x_0 \overline{x_j}-\overline{x_0} x_j+\left|x_j\right|^2\right)\right]^{\frac{1}{n}} \leqslant \frac{1}{n} \sum_{j=1}^n\left(\left|x_0\right|^2-\right. \left.x_0 \overline{x_j}-\overline{x_0} x_j+\left|x_j\right|^2\right)=\frac{1}{n}\left[n\left|x_0\right|^2-x_0 \sum_{j=1}^n \overline{x_j}-\overline{x_0} \sum_{j=1}^n x_j+\sum_{j=1}^n\left|x_j\right|^2\right]= \left|x_0-\alpha\right|^2+\beta^2-|\alpha|^2<1$, 故代入 式\ref{eq1} 即知 $\left|P\left(x_0\right)\right|<1$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $n$ 是正整数, $z_1, z_2, \cdots, z_n, \omega_1, \omega_2, \cdots, \omega_n$ 为复数, 对任意的 $\varepsilon_1$, $\varepsilon_2, \cdots, \varepsilon_n \in\{-1,1\}$, 不等式 $\left|\varepsilon_1 z_1+\varepsilon_2 z_2+\cdots+\varepsilon_n z_n\right| \leqslant \mid \varepsilon_1 \omega_1+ \varepsilon_2 \omega_2+\cdots+\varepsilon_n \omega_n \mid$ 成立.
+证明:
+$$
+\left|z_1\right|^2+\left|z_2\right|^2+\cdots+\left|z_n\right|^2 \leqslant\left|\omega_1\right|^2+\left|\omega_2\right|^2+\cdots+\left|\omega_n\right|^2 . \label{eq1}
+$$
+%%<SOLUTION>%%
+对于 $\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n \in\{-1,1\}$ 的所有选择, 表达式 $\mid \varepsilon_1 z_1+\varepsilon_2 z_2+\cdots+ \left.\varepsilon_n z_n\right|^2$ 可以加在一起, 有 $2^n$ 个加数.
+首先证明:
+$$
+\sum_{\varepsilon_1, \cdots, \varepsilon_n \in\{-1,1\}}\left|\varepsilon_1 z_1+\cdots+\varepsilon_n z_n\right|^2=2^n\left(\left|z_1\right|^2+\left|z_2\right|^2+\cdots+\left|z_n\right|^2\right) .
+$$
+根据性质: 对于 $u 、 v \in \mathbf{C}$, 平行四边形中有等式 $|u+v|^2+|u-v|^2= 2|u|^2+2|v|^2$ 成立, 下面我们用数学归纳法证明式\ref{eq1}.
+当 $n=1$ 时, \ref{eq1}式显然成立.
+假设 $n>1$, 且对于 $n-1 \in \mathbf{N}^*$ ,\ref{eq1}式成立.
+下面证明对于 $n$ ,\ref{eq1}式也成立.
+$$
+\begin{aligned}
+& \sum_{\varepsilon_1, \cdots, \varepsilon_n \in\{-1,1\}}\left|\varepsilon_1 z_1+\varepsilon_2 z_2+\cdots+\varepsilon_{n-1} z_{n-1}+\varepsilon_n z_n\right|^2 \\
+= & \sum_{\varepsilon_1}, \cdots, \varepsilon_{n-1} \in\{-1,1\} \\
+= & \sum_{\varepsilon_1}, \cdots, \varepsilon_{n-1} \in\{-1,1\} \\
+= & 2 \sum_{\varepsilon_1, \cdots, \varepsilon_{n-1} \in\{-1,1\}}\left(2\left|\varepsilon_1+\cdots+\varepsilon_{n-1} z_{n-1}+z_n\right|^2+\left|\varepsilon_1 z_1+\cdots+\varepsilon_{n-1} z_{n-1}\right|^2+2\left|z_n\right|^2\right) \\
+= & 2\left[2^{n-1}\left(\left|z_1\right|^2+\cdots+\left.z_n\right|^2\right)\right. \\
+= & 2^n\left(\left|z_1\right|^2+\left|z_2\right|^2+\cdots+\left.\varepsilon_{n-1} z_{n-1}\right|^2+\left|z_n\right|^2\right)
+\end{aligned}
+$$
+故(1)式成立.
+对于 $\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n \in\{-1,1\}$ 的所有选择,现将下面的不等式 $\mid \varepsilon_1 z_1+\cdots+ \left.\varepsilon_n z_n\right|^2 \leqslant\left|\varepsilon_1 \omega_1+\cdots+\varepsilon_n \omega_n\right|^2$ 相加得 $2^n\left(\left|z_1\right|^2+\cdots+\left|z_n\right|^2\right) \leqslant 2^n\left(\left|\omega_1\right|^2+\cdots\right. \left.+\left|\omega_n\right|^2\right)$, 故 $\left|z_1\right|^2+\cdots+\left|z_n\right|^2 \leqslant\left|\omega_1\right|^2+\cdots+\left|\omega_n\right|^2$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 已知复系数多项式 $P(z)=\sum_{i=0}^n a_i z^i\left(n \in \mathbf{N}^*\right)$. 求证: 存在一个复数 $z$, 满足 $|z| \leqslant 1$, 且
+$$
+|P(z)| \geqslant\left|a_0\right|+\frac{\left|a_1\right|}{n} .
+$$
+%%<SOLUTION>%%
+将 $P(z)$ 乘以一个模长为 1 的单位向量, 可使 $a_0 \geqslant 0$, 再将 $z$ 乘以一个单位向量, 可使 $a_1 \geqslant 0$. 现在, 如果对任意 $|z| \leqslant 1$, 均有 $|P(z)|<a_0+\frac{a_1}{n}$, 记
+$$
+f(z)=a_0+\frac{a_1}{n}-P(z)=\frac{a_1}{n}-a_1 z-\cdots-a_n z^n .
+$$
+则 $f(z)$ 的复根的模长都大于 1 , 特别地, $a_1 \neq 0$. 于是, 将 $\frac{n}{a_1} f(z)$ 分解因式有
+$$
+1-n z-\cdots-\frac{n a_n}{a_1} z^n=\left(1-b_1 z\right)\left(1-b_2 z\right) \cdots\left(1-b_n z\right) .
+$$
+其中 $b_i \in \mathbf{C}$, 且 $\left|b_i\right|<1,1 \leqslant i \leqslant n$, 这导致 $n=\left|b_1+\cdots+b_n\right| \leqslant\left|b_1\right|+\cdots+ \left|b_n\right|<n$, 矛盾.
+证毕.
+%%PROBLEM_END%%
+
+

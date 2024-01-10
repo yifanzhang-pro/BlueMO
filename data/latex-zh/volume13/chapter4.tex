@@ -1,0 +1,157 @@
+
+%%TEXT_BEGIN%%
+对称处理.
+这种方法适应于求对称多项式型函数的极值.
+它的基本思想是, 先证明函数必定存在极大值或极小值.
+然后固定若干变元, 保留少数几个变元, 讨论函数关于这少数几个变元的极值点所具有的性质.
+再由对称性, 得出函数关于其他变元的极值点具有同样的性质, 进而确定极值点, 求出极值.
+基本步骤是: 证明最值存在一一尽可能多地固定变量, 化为一元或二元函数求出最值点一一利用对称性发现多元函数的最值点一一求出最值.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $0<p \leqslant a, b, c, d, e \leqslant q$, 求 $F=(a+b+c+d+$ e) $\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}+\frac{1}{d}+\frac{1}{e}\right)$ 的最大值.
+%%<SOLUTION>%%
+解:于 $F$ 在闭域上连续, 所以必存在最大值.
+固定 $a 、 b 、 c 、 d$, 令 $a+ b+c+d=A, \frac{1}{a}+\frac{1}{b}+\frac{1}{c}+\frac{1}{d}=B$, 则 $A 、 B$ 为常数, 且 $F=(A+$ e) $\left(B+\frac{1}{e}\right)=1+A B+e B+\frac{A}{e}$.
+考察 $f(e)=e B+\frac{A}{e}$, 易知, 当 $e \leqslant \sqrt{\frac{A}{B}}$ 时, $f(e)$ 单调递减, 当 $e \geqslant \sqrt{\frac{A}{B}}$ 时, $f(e)$ 单调递增.
+于是, $\sqrt{\frac{A}{B}}$ 是 $f(e)$ 的最小值点.
+注意到 $p \leqslant e \leqslant q$, 所以 $f(e)$ 只能在其端点: $e=p$ 或 $e=q$ 处取最大值.
+由对称性, $F$ 只能在 $a 、 b 、 c$ 、 $d 、 e \in\{p, q\}$ 时取最大值.
+于是, 不妨设 $F$ 取最大值时, $a, b, c, d, e$ 中有 $k$ 个为 $p, 5-k$ 个为 $q$, 则 $F$ 的最大值是具有如下形式的 $F(k)$ 的最大值:
+$$
+\begin{aligned}
+F(k) & =[k p+(5-k) q]\left(\frac{k}{p}+\frac{5-k}{q}\right) \\
+& =k^2+(5-k)^2+\left(5 k-k^2\right)\left(\frac{p}{q}+\frac{q}{p}\right) \\
+& =\left[2-\left(\frac{p}{q}+\frac{q}{p}\right)\right] k^2+\left[5\left(\frac{p}{q}+\frac{q}{p}\right)-10\right] k+25 .
+\end{aligned}
+$$
+在上述二次函数 $F(k)$ 中, 二次项系数 $2-\left(\frac{p}{q}+\frac{q}{p}\right)<0$, 顶点横坐标为 $\frac{5}{2}$, 但 $k \in \mathbf{N}$, 于是, $F(k)<F(2)=F(3)=13+6\left(\frac{p}{q}+\frac{q}{p}\right)$. 又
+$$
+a=b=c=p, c=d=q \text { 时, } F=13+6\left(\frac{p}{q}+\frac{q}{p}\right) \text {, }
+$$
+所以
+$$
+F_{\max }=13+6\left(\frac{p}{q}+\frac{q}{p}\right)=25+6\left(\sqrt{\frac{p}{q}}-\sqrt{\frac{q}{p}}\right)^2 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $0 \leqslant x_i \leqslant 1(1 \leqslant i \leqslant n)$, 求 $F=\sum_{1 \leqslant i<j \leqslant n}\left|x_i-x_j\right|$ 的最大值.
+%%<SOLUTION>%%
+分析:解本题的原解答很繁, 但利用对称性, 可得到非常简单的解法.
+我们先证明下面的引理:
+设 $0 \leqslant x \leqslant 1$, 则 $F(x)=\left|x-x_1\right|+\left|x-x_2\right|+\cdots+\left|x-x_n\right|$ 取最大值 (其中 $0 \leqslant x_i \leqslant 1$ ) 时, 必有 $x \in\{0,1\}$.
+实际上, 因为 $F(x)$ 在闭区间 $0 \leqslant x \leqslant 1$ 上连续, 所以 $F(x)$ 一定存在最大值.
+不妨设 $x_1 \leqslant x_2 \leqslant \cdots \leqslant x_n$, 并令 $x_0=0, x_{n+1}=1$.
+(1) 若存在 $i(i=0,1,2, \cdots, n)$, 使得 $x_i<x<x_{i+1}$, 则令
+$$
+\left.x^{\prime}=x_i \text { (当 } i \leqslant\left[\frac{n}{2}\right] \text { 时), 及 } x^{\prime}=x_{i+1} \text { (当 } i>\left[\frac{n}{2}\right] \text { 时 }\right) \text {. }
+$$
+我们证明 $F(x)<F\left(x^{\prime}\right)$.
+若 $i \leqslant\left[\frac{n}{2}\right]$, 记 $d=x-x_i$, 则将 $x$ 调整到 $x^{\prime}=x_i$ 后, $\left|x-x_1\right|, \mid x- x_2|, \cdots| x-,x_i \mid$ 都减少 $d$, , 一共减少 $i$ 个 $d$. 但 $\left|x-x_{i+1}\right|,\left|x-x_{i+2}\right|, \cdots$, $\left|x-x_n\right|$ 都增加 $d$, 一共增加 $n-i$ 个 $d$. 于是调整后, $F$ 增加了 $(n-2 i)$ 个 $d$, 即 $F^{\prime}(x)-F(x)=(n-2 i) d$. 因为 $i \leqslant\left[\frac{n}{2}\right] \leqslant \frac{n}{2}$, 所以 $F(x) \leqslant F\left(x^{\prime}\right)$, 于是 $x$ 不是最大值点,矛盾.
+若 $i>\left[\frac{n}{2}\right]$, 记 $d=x_{i+1}-x$, 则将 $x$ 调整到 $x^{\prime}=x_{i+1}$ 后, $\left|x-x_1\right|$, $\left|x-x_2\right|, \cdots,\left|x-x_i\right|$ 都增加 $d$, 一共增加 $i$ 个 $d$. 而 $\left|x-x_{i+1}\right|,\left|x-x_{i+2}\right|$, $\cdots,\left|x-x_n\right|$ 都减少 $d$, 一共减少 $n-i$ 个 $d$. 于是调整后, $F$ 增加了 $(2 i-n)$ 个 $d$, 即 $F^{\prime}(x)-F(x)=(2 i-n) d$. 因为 $i>\left[\frac{n}{2}\right]$, 又 $i 、 n$ 都是正整数, 所以当 $n$ 为偶数时, $i>\frac{n}{2}$, 当 $n$ 为奇数时, $i \geqslant \frac{n+1}{2}>\frac{n}{2}$. 所以恒有 $2 i-n>0, F^{\prime}(x)>F(x)$, 于是 $x$ 不是最大值点,矛盾.
+(2) 若存在 $i(i=1,2, \cdots, n)$, 使得 $x=x_i$, 则令
+$$
+\left.x^{\prime}=x_{i-1} \text { (当 } i \leqslant\left[\frac{n}{2}\right] \text { 时), 及 } x^{\prime}=x_{i+1} \text { (当 } i>\left[\frac{n}{2}\right] \text { 时 }\right) \text {. }
+$$
+我们证明 $F(x)<F\left(x^{\prime}\right)$.
+若 $i \leqslant\left[\frac{n}{2}\right]$, 记 $d=x-x_{i-1}$, 则将 $x$ 调整到 $x^{\prime}=x_{i-1}$ 后, $\left|x-x_1\right|$, $\left|x-x_2\right|, \cdots,\left|x-x_{i-1}\right|$ 都减少 $d$, 一共减少 $i-1$ 个 $d$. 但 $\left|x-x_i\right|$, $\left|x-x_{i+1}\right|, \cdots,\left|x-x_n\right|$ 都增加 $d$, 一共增加 $n-i+1$ 个 $d$. 于是调整后, $F$ 增加了 $(n-2 i+2)$ 个 $d$, 即 $F^{\prime}(x)-F(x)=(n-2 i+2) d$, 因为 $i \leqslant\left[\frac{n}{2}\right] \leqslant \frac{n}{2}$, 所以 $F(x)<F\left(x^{\prime}\right), x$ 不是最大值点,矛盾.
+若 $i>\left[\frac{n}{2}\right]$, 记 $d=x_{i+1}-x$, 则将 $x$ 调整到 $x^{\prime}=x_{i+1}$ 后, $\left|x-x_1\right|$, $\left|x-x_2\right|, \cdots,\left|x-x_i\right|$ 都增加 $d$,一共增加 $i$ 个 $d$. 而 $\left|x-x_{i+1}\right|,\left|x-x_{i+2}\right|$, $\cdots,\left|x-x_n\right|$ 都减少 $d$, 一共减少 $n-i$ 个 $d$. 于是调整后, $F$ 增加了 $(2 i-n)$ 个 $d$, 即 $F^{\prime}(x)-F(x)=(2 i-n) d$. 因为 $i>\left[\frac{n}{2}\right]$, 又 $i 、 n$ 都是正整数,所以当 $n$ 为偶数时, $i>\frac{n}{2}$, 当 $n$ 为奇数时, $i \geqslant \frac{n+1}{2}>\frac{n}{2}$. 所以恒有 $2 i-n>0$, $F^{\prime}(x)>F(x)$, 于是 $x$ 不是最大值点,矛盾.
+综上所述, $F$ 取最大值时, 必有 $x \in\{0,1\}$.
+下面解答原题.
+由于 $F$ 在闭域上连续, 所以必定存在最大值.
+固定 $x_2, x_3, \cdots, x_n$, 则 $F\left(x_1\right)$ 是关于 $x_1$ 的函数:
+$$
+F\left(x_1\right)=\left|x_1-x_2\right|+\left|x_1-x_3\right|+\cdots+\left|x_1-x_n\right|+\sum_{2 \leqslant i<j \leqslant n}\left|x_i-x_j\right| .
+$$
+于是, $F\left(x_1\right)$ 取最大值, 等价于 $\left|x_1-x_2\right|+\left|x_1-x_3\right|+\cdots+\left|x_1-x_n\right|$ 取最大值.
+又 $0 \leqslant x_i \leqslant 1$, 所以由上面的引理, 当 $F\left(x_1\right)$ 取最大值时, 必有 $x_1 \in\{0$, $1\}$. 由对称性, 当 $F$ 取最大值时, 必有 $x_i \in\{0,1\}(1 \leqslant i \leqslant n)$.
+于是, 可设 $F$ 取最大值时, $x_i$ 中有 $k$ 个为 $0, n-k$ 个为 1 , 那么
+$$
+\begin{aligned}
+F & \leqslant(0-0) \times \mathrm{C}_k^2+(1-1) \times \mathrm{C}_{n-k}^2+\mathrm{C}_k^1 \mathrm{C}_{n-k}^1 \\
+& =k(n-k) \leqslant\left[\frac{k+(n-k)}{2}\right]^2=\frac{n^2}{4} .
+\end{aligned}
+$$
+又 $F$ 为整数, 所以 $F \leqslant\left[\frac{n^2}{4}\right]$.
+其中等式在 $x_1=x_2=\cdots=x\left[\frac{n}{2}\right]=0, x\left[\frac{n}{2}\right]+1=\cdots=x_n=1$ 时成立.
+所以 $F$ 的最大值为 $\left[\frac{n^2}{4}\right]$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设实数 $x_1, x_2, \cdots, x_{1997}$ 满足如下两个条件:
+(1) $-\frac{1}{\sqrt{3}} \leqslant x_i \leqslant \sqrt{3}(i=1,2, \cdots, 1997)$;
+(2) $x_1+x_2+\cdots+x_{1997}=-318 \sqrt{3}$.
+试求 $x_1^{12}+x_2^{12}+\cdots+x_{1997}^{12}$ 的最大值, 并说明理由.
+%%<SOLUTION>%%
+解:为 $x_1+x_2+\cdots+x_{1997}$ 是闭域上的连续函数, 所以 $x_1^{12}+x_2^{12}+\cdots+ x_{1997}^{12}$ 一定存在最大值.
+固定 $x_3, x_4, \cdots, x_{1997}$, 则 $x_1+x_2=c$ (常数), 记 $x_1= x$, 则 $x_2=c-x$,于是
+$$
+x_1^{12}+x_2^{12}+\cdots+x_{1997}^{12}=x^{12}+(x-c)^{12}+A=f(x) .
+$$
+因为 $f^{\prime \prime}(x)=132 x^{10}+132(x-c)^{10}>0$, 所以 $f(x)$ 是凸函数, 所以当 $f(x)\left(-\frac{1}{\sqrt{3}} \leqslant x \leqslant \sqrt{3}\right)$ 达到最大时, 必有 $x \in\left\{-\frac{1}{\sqrt{3}}, \sqrt{3}\right\}$. 由对称性, 对任何两个变量 $x_i 、 x_j(1 \leqslant i<j \leqslant 1997)$, 当 $x_1^{12}+x_2^{12}+\cdots+x_{1997}^{12}$ 达到最大值时, $x_i 、 x_j$ 中必有一个属于 $\left\{-\frac{1}{\sqrt{3}}, \sqrt{3}\right\}$. 因此, 当 $x_1^{12}+x_2^{12}+\cdots+x_{1997}^{12}$ 达到最大值时, $x_1, x_2, \cdots, x_{1997}$ 中至少有 1996 个属于 $\left\{-\frac{1}{\sqrt{3}}, \sqrt{3}\right\}$. 不妨设 $x_1, x_2, \cdots$, $x_{1997}$ 中有 $u$ 个为 $-\frac{1}{\sqrt{3}}, v$ 个为 $\sqrt{3}, w$ 个属于区间 $\left(-\frac{1}{\sqrt{3}}, \sqrt{3}\right)$, 其中 $w=0$ 或 1. 当 $w=1$ 时, 记那个属于区间 $\left(-\frac{1}{\sqrt{3}}, \sqrt{3}\right)$ 的变量为 $t$, 则
+$$
+u+v+w=1997,-\frac{1}{\sqrt{3}} u+\sqrt{3} v+t w=-318 \sqrt{3} .
+$$
+消去 $u$, 得 $4 v+(\sqrt{3} t+1) w=1043$, 所以 $(\sqrt{3} t+1) w$ 为整数, 且 $(\sqrt{3} t+1) w \equiv 1043 \equiv 3(\bmod 4)$. 又由 $-\frac{1}{\sqrt{3}}<t<\sqrt{3}$, 得 $0<\sqrt{3} t+1<4$. 而 $w=0$ 或 1 , 所以 $0 \leqslant(\sqrt{3} t+1) w<4$. 所以 $(\sqrt{3} t+1) w=3$, 于是 $w \neq 0$, 即 $w=1$, 所以 $t=\frac{2}{\sqrt{3}}$. 进而 $4 v+3=1043$, 解得 $v=260$, 所以 $u=1997-v-w=1736$.
+综上所述, $x_1^{12}+x_2^{12}+\cdots+x_{1997}^{12}$ 的最大值为
+$$
+\begin{aligned}
+\left(-\frac{1}{\sqrt{3}}\right)^{12} u+(\sqrt{3})^{12} v+t^{12} & =\left(\frac{1}{3}\right)^6 \times 1736+3^6 \times 260+\left(\frac{2}{\sqrt{3}}\right)^{12} \\
+& =189548 .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $x_1, x_2, \cdots, x_n$ 取值于某个长度为 1 的区间, 记 $x=\frac{1}{n} \sum_{j=1}^n x_j$, $y=\frac{1}{n} \sum_{j=1}^n x_j^2$, 求 $f=y-x^2$ 的最大值.
+%%<SOLUTION>%%
+解: $x_1, x_2, \cdots, x_n \in[a, a+1](a \in \mathbf{R})$, 当 $n=1$ 时, $f=0$, 此时 $f_{\text {max }}=0$.
+当 $n>1$ 时,若固定设 $x_2, x_3, \cdots, x_n$, 则
+$$
+\begin{aligned}
+f & =y-x^2=\frac{1}{n} \sum_{j=1}^n x_j^2-\left(\frac{1}{n} \sum_{j=1}^n x_j\right)^2 \\
+& =\frac{n-1}{n^2} x_1^2-\left(\frac{2}{n^2} \sum_{j=2}^n x_j\right) x_1+\frac{1}{n} \sum_{j=2}^n x_j^2-\left(\frac{1}{n} \sum_{j=2}^n x_j\right)^2,
+\end{aligned}
+$$
+由于 $f$ 是 $x_1$ 在区间 $[a, a+1]$ 上的二次函数, 且二次项系数 $\frac{n-1}{n^2}>0$, 所以
+$$
+f \leqslant \max \left\{f\left(a, x_2, x_3, \cdots, x_n\right), f\left(a+1, x_2, x_3, \cdots, x_n\right)\right\} .
+$$
+这表明, 当 $f$ 达到最大值时, 必有 $x_1 \in\{a, a+1\}$, 由对称性, 当 $f$ 达到最大值时, 必有 $x_1, x_2, \cdots, x_n \in\{a, a+1\}$, 即
+$$
+f \leqslant \max _{x_i \in\{a, a+1\}, 1 \leqslant i \leqslant n}\left\{f\left(x_1, x_2, x_3, \cdots, x_n\right)\right\} .
+$$
+设 $f$ 达到最大值时, $x_1, x_2, \cdots, x_n$ 中有 $s$ 个为 $a$, 另 $n-s$ 个为 $a+1$, 则
+$$
+\begin{aligned}
+& \max _{x_i \in\{a, a+1\}, 1 \leqslant i \leqslant n}\left\{f\left(x_1, x_2, x_3, \cdots, x_n\right)\right\} \\
+= & \frac{1}{n}\left[s a^2+(n-s)(a+1)^2\right]-\frac{1}{n^2}[s a+(n-s)(a+1)]^2 \\
+= & \frac{1}{n^2} s(n-s) \leqslant\left\{\begin{array}{cl}
+\frac{n^2-1}{4 n^2} & (n \text { 为奇 }) ; \\
+\frac{1}{4} & (n \text { 为偶 }) .
+\end{array}\right.
+\end{aligned}
+$$
+当 $x_1, x_2, \cdots, x_n$ 中有 $\left[\frac{n+1}{2}\right]$ 个为 $a$, 另 $n-\left[\frac{n+1}{2}\right]$ 个为 $a+1$ 时, 上式等号成立, 故
+$$
+f_{\max }=\left\{\begin{array}{cl}
+\frac{n^2-1}{4 n^2} & (n \text { 为奇 }) ; \\
+\frac{1}{4} & (n \text { 为偶 }) .
+\end{array}\right.
+$$
+%%PROBLEM_END%%
+
+

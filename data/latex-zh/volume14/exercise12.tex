@@ -1,0 +1,207 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 在一个圆周上如此选定 $n$ 个点,使得它们两两之间连以弦之后, 任何三条弦之间除端点外不交于同一个点, 问: 这时圆内一共有多少个交点?
+%%<SOLUTION>%%
+圆上每 4 个点构成一个凸四边形, 它的两条对角线 (弦) 交于一点, 因此每 4 点组成的集合对应一个交点, 由于没有三条弦交于一点,所以不同的 4 个点对应于不同的交点.
+反之, 设点 $P$ 是弦 $A_1 A_3$ 与 $A_2 A_4$ 的交点, 那么 $P$ 是 4 点集 $\left\{A_1, A_2, A_3, A_4\right\}$ 对应的点.
+从而交点个数就是这 $n$ 个点中取 4 点的取法总数 $\mathrm{C}_n^4$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 对于集合 $\{1,2, \cdots, n\}\left(n \in \mathbf{N}^*\right)$ 和它的每个非空子集,我们定义"交替和" 如下: 把集合中的数按从大到小顺序排列, 然后从最大的数开始交替地加减各数(例如 $\{1,2,4,6,9\}$ 的交替和是 $9-6+4-2+1=6$, 而 $\{5\}$ 的交替和就是 5$)$. 求所有这些交替和的总和.
+%%<SOLUTION>%%
+记集合 $A \subseteq\{1,2, \cdots, n\}$ 的交替和为 $f(A)$. 约定 $f(\varnothing)=0$, 不影响结果.
+对每个 $X \subseteq\{1,2, \cdots, n-1\}$, 设 $Y=X \cup\{n\}=\left\{a_1, a_2, \cdots, a_k\right\}$ 是 $\{1,2, \cdots, n\}$ 中含有元素 $n$ 的子集, 其中 $n=a_1>a_2>\cdots>a_k \geqslant 1, k \in \mathbf{N}^*$. 则对集组 $(X, Y)$ 有
+$$
+\begin{aligned}
+f(Y)+f(X) & =\sum_{i=1}^k(-1)^{i-1} a_i+\sum_{j=2}^k(-1)^j a_j \\
+& =n+\sum_{i=2}^k(-1)^{i-1} a_i-\sum_{j=2}^k(-1)^{j-1} a_j=n .
+\end{aligned}
+$$
+由于 $\{1,2, \cdots, n\}$ 的所有子集可以分成 $2^{n-1}$ 个这样的集组 $(X, Y)$, 故所有这些交替和的总和为 $n \cdot 2^{n-1}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 已知正整数 $r 、 n$ 满足.
+$1 \leqslant r \leqslant n$, 求 $\{1,2, \cdots, n\}$ 的一切 $r$ 元子集中最小数的算术平均值 $f(r, n)$.
+%%<SOLUTION>%%
+$\{1,2, \cdots, n\}$ 共 $\mathrm{C}_n^r$ 个 $r$ 元子集, 下求这 $\mathrm{C}_n^r$ 个子集中最小数的总和.
+对于 $P=\{1,2, \cdots, n\}$ 的 $r$ 元子集 $A$, 设其最小数为 $a$, 作 $n+1$ 元集 $Q= \{0,1, \cdots, n\}$ 的 $r+1$ 元子集 $A \cup\{a-1\}, A \cup\{a-2\}, \cdots, A \cup\{0\}$ 与之对应, 这样的 $r+1$ 元子集的个数恰好等于 $A$ 的最小数 $a$. 又显然不同的 $A$ 对应 $Q$ 中不同的子集, 因此, 所有 $P$ 的 $r$ 元子集的最小数之和即为 $Q$ 的 $r+1$ 元子集的总个数 $\mathrm{C}_{n+1}^{+1}$.
+所以, $f(r, n)=\frac{\mathrm{C}_{n+1}^{r+1}}{\mathrm{C}_n^r}=\frac{n+1}{r+1}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $A$ 是 $X$ 的子集.
+若 $A$ 中所有数的和为奇数, 则称 $A$ 为 $X$ 的奇子集.
+若 $A$ 中所有数的和为偶数,则称 $A$ 为 $X$ 的偶子集.
+(1) 对 $n \in \mathbf{N}^*$ 求 $\{1,2, \cdots, n\}$ 的奇子集的个数与偶子集的个数;
+(2) 对 $n \in \mathbf{N}^*, n \geqslant 3$, 求 $\{1,2, \cdots, n\}$ 的所有奇子集的元素和的总和.
+%%<SOLUTION>%%
+(1) 设 $A$ 是 $\{1,2, \cdots, n\}$ 的奇子集.
+考虑映射 $f$ :
+$$
+\left\{\begin{array}{l}
+A \mapsto A-\{1\}, \text { 若 } 1 \in A, \\
+A \mapsto A \cup\{1\}, \text { 若 } 1 \notin A .
+\end{array}\right.
+$$
+显然 $f$ 是将奇子集映为偶子集的映射.
+$f$ 是单射, 即对不同的 $A, f(A)$ 不同.
+$f$ 是满射, 即对每一个偶子集 $B$, 都有一个 $A$, 满足 $f(A)=B$. 事实上, 当 $1 \in B$ 时, 令 $A=B-\{1\}$; 当 $1 \notin B$ 时, 令 $A=B \cup\{1\}$, 则 $f(A)=B$.
+于是 $f$ 是从奇子集族到偶子集族的一一对应.
+从而 $\{1,2, \cdots, n\}$ 的奇子集与偶子集个数相等, 都等于 $\frac{1}{2} \times 2^n=2^{n-1}$.
+(2) 若集合族 $P$ 含有有限个数集, 且每个数集的元素个数有限, 则将所有这些数集的元素和的总和 $\sum_{A \in P} \sum_{x \in A} x$ 称为"相应于 $P$ 的和", 记为 $m(P)$.
+对集合 $X=\{1,2, \cdots, n\}(n \geqslant 3)$, 将其含有元素 $n, n-1$ 的奇、偶子集全体分别记为 $S_1 、 T_1$; 含有 $n$ 但不含 $n-1$ 的奇、偶子集全体分别记为 $S_2 、 T_2$; 不含 $n$ 但含有 $n-1$ 的奇、偶子集全体分别记为 $S_3 、 T_3$; 不含 $n, n-1$ 的奇、偶子集全体分别记为 $S_4 、 T_4$. 作为 (1) 的推论, $S_i$ 与 $T_i$ 中的集合个数都等于 $2^{(n-2)-1}=2^{n-3}, i=1,2,3,4$.
+我们可将 $S_1$ 中每个集合去掉元素 $n, n-1$, 对应于 $T_4$ 中的一个集合, 因此考虑相应于 $S_1$ 的和及相应于 $T_4$ 的和, 有
+$$
+m\left(S_1\right)=m\left(T_4\right)+2^{n-3}(2 n-1),
+$$
+同理可得
+$$
+\begin{gathered}
+m\left(S_4\right)=m\left(T_1\right)-2^{n-3}(2 n-1), \\
+m\left(S_2\right)=m\left(T_3\right)+2^{n-3}, \\
+m\left(S_3\right)=m\left(T_2\right)-2^{n-3} .
+\end{gathered}
+$$
+上述 4 式相加可知, 相应于 $X$ 的所有奇子集的和 $m\left(S_1 \cup S_2 \cup S_3 \cup S_4\right)$ 与相应于 $X$ 的所有偶子集的和 $m\left(T_1 \cup T_2 \cup T_3 \cup T_4\right)$ 相等.
+注意到
+$$
+m(X)=2^{n-1} \times(1+2+\cdots+n)=2^{n-2} n(n+1)
+$$
+(因为每个 $i \in X$ 均在 $2^{n-1}$ 个子集中出现), 故所求奇子集元素和的总和为 $m(X)$ 的一半, 即 $2^{n-3} n(n+1)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $n \equiv 1(\bmod 4)$ 且 $n>1, P=\left(a_1, a_2, \cdots, a_n\right)$ 是 $(1,2, \cdots, n)$ 的任意排列, $k_P$ 表示使不等式 $a_1+a_2+\cdots+a_k<a_{k+1}+a_{k+2}+\cdots+a_n$ 成立的最大下标 $k$. 试对一切可能的不同排列 $P$, 求对应的 $k_P$ 的和.
+%%<SOLUTION>%%
+记 $S=1+2+\cdots+n=\frac{n(n+1)}{2}$. 当 $n \equiv 1(\bmod 4)$ 时, 显然 $S$ 是奇数.
+对 $(1,2, \cdots, n)$ 的给定排列 $P=\left(a_1, a_2, \cdots, a_n\right)$, 由 $k_P$ 的定义可知
+$$
+\begin{gathered}
+a_1+a_2+\cdots+a_{k_P}<a_{k_P+1}+a_{k_P+2}+\cdots+a_n, \\
+a_1+a_2+\cdots+a_{k_P+1} \geqslant a_{k_P+2}+a_{k_P+3}+\cdots+a_n,
+\end{gathered}
+$$
+注意到 $\left(a_1+a_2+\cdots+a_{k_P+1}\right)+\left(a_{k_P+2}+a_{k_P+3}+\cdots+a_n\right)=1+2+\cdots+n= S$ 为奇数,故上述不等式取不到等号.
+取 $P$ 的反序排列 $P^{\prime}=\left(b_1, b_2, \cdots, b_n\right)=\left(a_n, a_{n-1}, \cdots, a_1\right)$, 由上面的讨论可知:
+$$
+\begin{aligned}
+& b_1+b_2+\cdots+b_{n-k_P-1}<b_{n-k_p}+b_{n-k_P+1}+\cdots+b_n, \\
+& b_1+b_2+\cdots+b_{n-k_P}<b_{n-k_p+1}+b_{n-k_P+2}+\cdots+b_n,
+\end{aligned}
+$$
+故 $k_{P^{\prime}}=n-k_P-1$, 即对互为反序的排列 $P$ 与 $P^{\prime}$ 有: $k_P+k_{P^{\prime}}=n-1$.
+注意到 $(1,2, \cdots, n)$ 的 $n$ ! 个排列可两两配对,使每对中的两个排列互为反序, 则所有 $k_P$ 的和等于 $\frac{n !}{2} \cdot(n-1)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $n$ 为大于 2 的正整数,证明:在 $1,2, \cdots, n$ 中,与 $n$ 互素的数的立方和能被 $n$ 整除.
+%%<SOLUTION>%%
+设 $a<n$, 且 $(a, n)=1$, 则 $n-a<n$, 且 $(n-a, n)=1$. 而且都有 $a= n-a$, 将导出 $a=\frac{n}{2}$, 仅在 $n$ 为偶数时发生, 而这时 $a$ 与 $n$ 不互素.
+所以 $a$ 与 $n-a$ 可以两两配对, 而
+$$
+a^3+(n-a)^3=n\left[a^2-a(n-a)+(n-a)^2\right]
+$$
+是 $n$ 的倍数, 从而命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 对素数 $p \geqslant 3$,证明: $p$ 整除 $\sum_{k=1}^{p-1} k^{k^2-k+1}$.
+%%<SOLUTION>%%
+下面证明对 $k=1,2, \cdots, \frac{p-1}{2}$, 有
+$$
+k^{k^2-k+1}+(p-k)^{(p-k)^2-(p-k)+1} \equiv 0(\bmod p) . \label{eq1}
+$$
+事实上,此时有
+$(p-k)^2-(p-k)+1=k^2-k+1+(p-2 k)(p-1) \equiv k^2-k+1(\bmod p-1)$, 又注意 $(p-k, p)=1$, 由 Fermat 小定理得 $(p-k)^{p-1} \equiv 1(\bmod p)$,所以
+$$
+\begin{aligned}
+(p-k)^{(p-k)^2-(p-k)+1} & \equiv(p-k)^{k^2-k+1} \equiv(-k)^{k^2-k+1}=(-1)^{k(k-1)+1} k^{k^2-k+1} \\
+& \equiv-k^{k^2-k+1}(\bmod p),
+\end{aligned}
+$$
+从而 式\ref{eq1} 成立.
+在 式\ref{eq1} 中令 $k=1,2, \cdots, \frac{p-1}{2}$, 并求和得
+$$
+\sum_{k=1}^{p-1} k^{k^2-k+1}=\sum_{k=1}^{\frac{p-1}{2}}\left(k^{k^2-k+1}+(p-k)^{(p-k)^2-(p-k)+1}\right) \equiv 0(\bmod p),
+$$
+故 $p$ 整除 $\sum_{k=1}^{p-1} k^{k^2-k+1}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设 $k$ 是给定的正整数.
+证明: 若 $A=k+\frac{1}{2}+\sqrt{k^2+\frac{1}{4}}$, 则对一切正整数 $n, A^n$ 的整数部分 $\left[A^n\right]$ 能被 $k$ 整除.
+%%<SOLUTION>%%
+构造 $A$ 的对偶式 $B=k+\frac{1}{2}-\sqrt{k^2+\frac{1}{4}}$, 则 $A+B=2 k+1, A B= k$, 故 $A, B$ 是方程 $x^2-(2 k+1) x+k=0$ 的两个实根, 从而对任意正整数 $n \geqslant$ 3 , 有
+$$
+\begin{aligned}
+& A^n-(2 k+1) A^{n-1}+k A^{n-2}=0, \\
+& B^n-(2 k+1) B^{n-1}+k B^{n-2}=0 .
+\end{aligned}
+$$
+记 $a_n=A^n+B^n-1$, 将上述两式相加得
+$$
+\left(a_n+1\right)-(2 k+1)\left(a_{n-1}+1\right)+k\left(a_{n-2}+1\right)=0,
+$$
+即
+$$
+a_n=(2 k+1) a_{n-1}-k a_{n-2}+k, \label{eq1}
+$$
+再注意到 $a_1=A+B-1=2 k, a_2=A^2+B^2-1=4 k^2+2 k$ 均为 $k$ 的整数倍,结合递推关系可知对一切正整数 $n, a_n$ 被 $k$ 整除.
+又 $0<B<1$, 所以
+$$
+a_n=\left[a_n\right]=\left[A^n+B^n-1\right]=\left[A^n\right],
+$$
+故 $\left[A^n\right]$ 能被 $k$ 整除.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 设 $O x y z$ 是空间直角坐标系, $S$ 是空间中的有限点集, 而 $S_1, S_2, S_3$ 分别是 $S$ 中所有的点在 $O y z, O z x, O x y$ 坐标平面上的投影所成的点集.
+求证这些集合的点数之间有如下关系:
+$$
+|S|^2 \leqslant\left|S_1\right| \cdot\left|S_2\right| \cdot\left|S_3\right| \text {. }
+$$
+%%<SOLUTION>%%
+记 $S_{i, j}$ 是 $S$ 中形如 $(x, i, j)$ 的点的集合, 即在 $O y z$ 平面内投影坐标为 $(i, j)$ 的一切点的集合.
+显然 $S=\bigcup_{(i, j) \in S_1} S_{i, j}$. 由柯西不等式得
+$$
+|S|^2=\left(\sum_{(i, j) \in S_1}\left|S_{i, j}\right|\right)^2 \leqslant \sum_{(i, j) \in S_1} 1^2 \times \sum_{(i, j) \in S_1}\left|S_{i, j}\right|^2=\left|S_1\right| \sum_{(i, j) \in S_1}\left|S_{i, j}\right|^2 .
+$$
+构作集合 $X=\bigcup_{(i, j) \in S_1}\left(S_{i, j} \times S_{i, j}\right)$, 那么 $|X|=\sum_{(i, j) \in S_1}\left|S_{i, j}\right|^2$.
+作映射
+$$
+f: X \rightarrow S_2 \times S_3 \text { 为 } f\left((x, i, j),\left(x^{\prime}, i, j\right)\right)=\left((x, j),\left(x^{\prime}, i\right)\right) \text {. }
+$$
+显然 $f$ 是单射, 所以 $|X| \leqslant\left|S_2\right| \cdot\left|S_3\right|$. 从而有
+$$
+|S|^2=\left|S_1\right| \cdot|X| \leqslant\left|S_{1^*}\right| \cdot\left|S_2\right| \cdot\left|S_3\right| \text {. }
+$$
+%%PROBLEM_END%%
+
+

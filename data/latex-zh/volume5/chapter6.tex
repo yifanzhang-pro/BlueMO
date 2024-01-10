@@ -1,0 +1,350 @@
+
+%%TEXT_BEGIN%%
+局部不等式.
+对于和式类不等式, 如果从整体考虑较难人手的话, 不妨先估计局部的性质,导出一些局部的不等式,再综合这些局部不等式推断出整体的性质.
+这里所说的局部, 既可以是由一个单项,也可以是由几项组成.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $a, b, c, d \in \mathbf{R}^{+}$, 求证:
+$$
+\begin{aligned}
+& \frac{a^3+b^3+c^3}{a+b+c}+\frac{b^3+c^3+d^3}{b+c+d}+\frac{c^3+d^3+a^3}{c+d+a}+\frac{d^3+a^3+b^3}{d+a+b} \\
+\geqslant & a^2+b^2+c^2+d^2 .
+\end{aligned}
+$$
+%%<SOLUTION>%%
+分析:直接证明这个不等式, 有点难以下手, 我们若能证明(局部不等式)
+$$
+\frac{a^3+b^3+c^3}{a+b+c} \geqslant \frac{a^2+b^2+c^2}{3}, \label{(1)}
+$$
+则同理可得 $\frac{b^3+c^3+d^3}{b+c+d} \geqslant \frac{b^2+c^2+d^2}{3}, \frac{c^3+d^3+a^3}{c+d+a} \geqslant \frac{c^2+d^2+a^2}{3}$, $\frac{d^3+a^3+b^3}{d+a+b} \geqslant \frac{d^2+a^2+b^2}{3}$, 把这些不等式相加, 便得所要证明的式子.
+所以, 要证明本题, 只需证明一个局部不等式(1).
+证明先证: 对 $x, y, z \in \mathbf{R}^{+}$, 有
+$$
+\frac{x^3+y^3+z^3}{x+y+z} \geqslant \frac{x^2+y^2+z^2}{3} .
+$$
+事实上,由柯西不等式, 得
+$$
+\begin{aligned}
+(x+y+z)\left(x^3+y^3+z^3\right) & \geqslant\left(x^2+y^2+z^2\right)^2 \\
+& \geqslant\left(x^2+y^2+z^2\right) \cdot \frac{(x+y+z)^2}{3},
+\end{aligned}
+$$
+所以
+$$
+\frac{x^3+y^3+z^3}{x+y+z} \geqslant \frac{x^2+y^2+z^2}{3} .
+$$
+于是有
+$$
+\begin{aligned}
+& \frac{a^3+b^3+c^3}{a+b+c} \geqslant \frac{a^2+b^2+c^2}{3}, \frac{b^3+c^3+d^3}{b+c+d} \geqslant \frac{b^2+c^2+d^2}{3}, \\
+& \frac{c^3+d^3+a^3}{c+d+a} \geqslant \frac{c^2+d^2+a^2}{3}, \frac{d^3+a^3+b^3}{d+a+b} \geqslant \frac{d^2+a^2+b^2}{3} .
+\end{aligned}
+$$
+把上面这 4 个不等式相加便得
+$$
+\begin{aligned}
+& \frac{a^3+b^3+c^3}{a+b+c}+\frac{b^3+c^3+d^3}{b+c+d}+\frac{c^3+d^3+a^3}{c+d+a}+\frac{d^3+a^3+b^3}{d+a+b} \\
+\geqslant & a^2+b^2+c^2+d^2 .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $x, y, z \in \mathbf{R}^{+}$, 求证:
+$$
+\sqrt{\frac{x}{y+z}}+\sqrt{\frac{y}{z+x}}+\sqrt{\frac{z}{x+y}} \geqslant 2 .
+$$
+%%<SOLUTION>%%
+分析:对不等式左边进行处理似有难度, 我们也拟从局部考虑, 先证 $\sqrt{\frac{x}{y+z}} \geqslant \frac{2 x}{x+y+z}$ 即可.
+证明先证明
+$$
+\sqrt{\frac{x}{y+z}} \geqslant \frac{2 x}{x+y+z} .
+$$
+事实上,由平均不等式可得
+$$
+\sqrt{\frac{-x}{y+z}}=\frac{x}{\sqrt{x} \sqrt{y+z}} \geqslant \frac{x}{\frac{x+y+z}{2}}=\frac{2 x}{x+y+z} .
+$$
+同理可得
+$$
+\begin{aligned}
+& \sqrt{\frac{y}{z+x}} \geqslant \frac{2 y}{x+y+z}, \\
+& \sqrt{\frac{z}{x+y}} \geqslant \frac{2 z}{x+y+z} .
+\end{aligned}
+$$
+把上面 3 个不等式相加, 便得
+$$
+\sqrt{\frac{x}{y+z}}+\sqrt{\frac{y}{z+x}}+\sqrt{\frac{z}{x+y}} \geqslant 2 .
+$$
+说明本题中的等号是不成立的.
+因为若等号成立, 则 $x=y+z, y= z+x, z=x+y$, 从而 $x+y+z=0$, 不可能.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $0 \leqslant a, b, c \leqslant 1$, 求证:
+$$
+\frac{a}{b c+1}+\frac{b}{c a+1}+\frac{c}{a b+1} \leqslant 2 .
+$$
+%%<SOLUTION>%%
+分析:我们发现等号成立并不是当 $a=b=c$, 而是当 $a 、 b 、 c$ 中有一个为 0 , 另两个为 1 时取到, 因此, 不应从整体去考虑问题, 而应考虑局部的性质, 即单项性质.
+证明我们先证明
+$$
+\frac{a}{b c+1} \leqslant \frac{2 a}{a+b+c} . \label{(1)}
+$$
+注意到(1)等价于 $a+b+c \leqslant 2 b c+2$, 即
+$$
+(b-1)(c-1)+b c+1 \geqslant a .
+$$
+而 $a, b, c \in[0,1]$, 上式显然成立,因此(1)成立.
+同理, 我们有
+$$
+\begin{aligned}
+& \frac{b}{c a+1} \leqslant \frac{2 b}{a+b+c}, \label{(2)} \\
+& \frac{c}{a b+1} \leqslant \frac{2 c}{a+b+c} . \label{(3)}
+\end{aligned}
+$$
+三式相加即得原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 已知 $x_i \geqslant 1, i=1,2, \cdots, n$, 且 $x_1 x_2 \cdots x_n=a^n$. 记 $a_{n+1}=x_1$. 求证: 当 $n>2$ 时,有 $\sum_{i=1}^n x_i x_{i+1}-\sum_{i=1}^n x_i \geqslant \frac{n}{2}\left(a^2-1\right)$.
+%%<SOLUTION>%%
+分析:为了联系 $x_i x_{i+1}$ 与 $x_i$, 自然想到 $\left(x_i-1\right)\left(x_{i+1}-1\right)$, 利用条件, 此式 $\geqslant 0$.
+证明由已知可得 $\left(x_i-1\right)\left(x_{i+1}-1\right) \geqslant 0$, 故
+$$
+2 x_i x_{i+1}-x_i-x_{i+1} \geqslant x_i x_{i+1}-1,
+$$
+上式对 $i$ 从 1 到 $n$ 求和,有 $2\left(\sum_{i=1}^n x_i x_{i+1}-\sum_{i=1}^n x_i\right) \geqslant \sum_{i=1}^n x_i x_{i+1}-n$.
+利用平均不等式, 有
+$$
+\sum_{i=1}^n x_i x_{i+1} \geqslant n \cdot \sqrt[n]{\left(a^n\right)^2}=n a^2 .
+$$
+因此 $2\left(\sum_{i=1}^n x_i x_{i+1}-\sum_{i=1}^n x_i\right) \geqslant n\left(a^2-1\right)$, 所以原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设实数 $a_1, a_2, \cdots, a_n \in(-1,1]$, 求证:
+$$
+\sum_{i=1}^n \frac{1}{1+a_i a_{i+1}} \geqslant \sum_{i=1}^n \frac{1}{1+a_i^2} \text { (约定 } a_{n+1}=a_1 \text { ). }
+$$
+%%<SOLUTION>%%
+证明:首先证明:若 $x, y \in(-1,1]$, 则
+$$
+\frac{2}{1+x y} \geqslant \frac{1}{1+x^2}+\frac{1}{1+y^2} . \label{(1)}
+$$
+(1)等价于 $2\left(1+x^2\right)\left(1+y^2\right)-(1+x y)\left(2+x^2+y^2\right) \geqslant 0$,
+即 $(x-y)^2-x y(x-y)^2 \geqslant 0$. 故(1)成立.
+因此
+$$
+\begin{aligned}
+& \frac{2}{1+a_1 a_2} \geqslant \frac{1}{1+a_1^2}+\frac{1}{1+a_2^2}, \\
+& \frac{2}{1+a_2 a_3} \geqslant \frac{1}{1+a_2^2}+\frac{1}{1+a_3^2} \text {, } \\
+& \frac{2}{1+a_n a_1} \geqslant \frac{1}{1+a_n^2}+\frac{1}{1+a_1^2} \text {. } \\
+&
+\end{aligned}
+$$
+上述 $n$ 个式子相加即得原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $x, y, z \geqslant 0$, 且 $x^2+y^2+z^2=1$, 求证:
+$$
+\frac{x}{1+y z}+\frac{y}{1+z x}+\frac{z}{1+x y} \geqslant 1 . \label{(1)}
+$$
+%%<SOLUTION>%%
+证明:我们只须证明局部不等式
+而
+$$
+\begin{aligned}
+& \frac{x}{1+y z} \geqslant x^2 . \\
+& x+x y z \leqslant 1 .
+\end{aligned}
+$$
+(1)等价于
+$$
+\begin{aligned}
+x+x y z & \leqslant x+\frac{1}{2} x\left(y^2+z^2\right)=\frac{1}{2}\left(3 x-x^3\right) \\
+& =\frac{1}{2}\left[2-(x-1)^2(x+2)\right] \leqslant 1 .
+\end{aligned}
+$$
+故(1)成立, 进而原不等式获证.
+说明我们可得一串不等式
+$$
+\begin{aligned}
+1 & \leqslant \frac{x}{1+y z}+\frac{y}{1+z x}+\frac{z}{1+x y} \\
+& \leqslant \frac{x}{1-y z}+\frac{y}{1-z x}+\frac{z}{1-x y} \\
+& \leqslant \frac{3 \sqrt{3}}{2} .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 已知 $x, y, z \in \mathbf{R}^{+}$, 求证:
+$$
+\frac{x z}{x^2+x z+y z}+\frac{x y}{y^2+x y+x z}+\frac{y z}{z^2+y z+x y} \leqslant 1 . \label{(1)}
+$$
+%%<SOLUTION>%%
+证明:不妨设 $x y z=1$.
+首先证明
+$$
+\frac{x z}{x^2+x z+y z} \leqslant \frac{1}{1+y+\frac{1}{z}} .
+$$
+(1)等价于
+$$
+x^2+x z+y z \geqslant x z+1+x,
+$$
+即 $x^2+\frac{1}{x} \geqslant 1+x$, 也即 $(x-1)^2(x+1) \geqslant 0$. 故(1)成立.
+・又由于
+$$
+\frac{1}{1+y+\frac{1}{z}}=\frac{z}{y z+z+1},
+$$
+且同理有
+$$
+\frac{x y}{y^2+x y+x z} \leqslant \frac{1}{1+z+\frac{1}{x}}=\frac{1}{1+z+y z}
+$$
+$$
+\frac{y z}{z^2+y z+x y} \leqslant \frac{1}{1+x+\frac{1}{y}}=\frac{x y z}{x y z+x+x z}=\frac{y z}{1+z+y z} \text {. }
+$$
+故 $\sum_{c y c} \frac{x z}{x^2+x z+y z} \leqslant \frac{1+z+y z}{1+z+y z}=1$, 结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设实数 $a 、 b 、 c$ 满足: $a+b+c=3$. 求证:
+$$
+\frac{1}{5 a^2-4 a+11}+\frac{1}{5 b^2-4 b+11}+\frac{1}{5 c^2-4 c+11} \leqslant \frac{1}{4} .
+$$
+%%<SOLUTION>%%
+证明:若 $a 、 b 、 c$ 都小于 $\frac{9}{5}$, 则可以证明
+$$
+-\frac{1}{5 a^2-4 a+11} \leqslant \frac{1}{24}(3-a) . \label{(1)}
+$$
+事实上,
+$$
+\begin{aligned}
+(1) & \Leftrightarrow(3-a)\left(5 a^2-4 a+11\right) \geqslant 24 \\
+& \Leftrightarrow 5 a^3-19 a^2+23 a-9 \leqslant 0 \\
+& \Leftrightarrow(a-1)^2(5 a-9) \leqslant 0 \\
+& \Leftrightarrow a<\frac{9}{5} .
+\end{aligned}
+$$
+同理, 对 $b 、 c$ 也有类似的不等式, 相加便得
+$$
+\begin{gathered}
+\frac{1}{5 a^2-4 a+11}+\frac{1}{5 b^2-4 b+11}+\frac{1}{5 c^2-4 c+11} \\
+\leqslant \frac{1}{24}(3-a)+\frac{1}{24}(3-b)+\frac{1}{24}(3-c)=\frac{1}{4} .
+\end{gathered}
+$$
+若 $a 、 b 、 c$ 中有一个不小于 $\frac{9}{5}$, 不妨设 $a \geqslant \frac{9}{5}$, 则
+$$
+\begin{gathered}
+5 a^2-4 a+11=5 a\left(a-\frac{4}{5}\right)+11 \\
+\geqslant 5 \cdot \frac{9}{5} \cdot\left(\frac{9}{5}-\frac{4}{5}\right)+11=20, \\
+\frac{1}{5 a^2-4 a+11} \leqslant \frac{1}{20} .
+\end{gathered}
+$$
+由于 $5 b^2-4 b+11 \geqslant 5\left(\frac{2}{5}\right)^2-4 \cdot\left(\frac{2}{5}\right)+11=11-\frac{4}{5}>10$, 所以 $\frac{1}{5 b^2-4 b+11}<\frac{1}{10}$, 同理, $\frac{1}{5 c^2-4 c+11}<\frac{1}{10}$, 所以
+$$
+\frac{1}{5 a^2-4 a+11}+\frac{1}{5 b^2-4 b+11}+\frac{1}{5 c^2-4 c+11}<\frac{1}{20}+\frac{1}{10}+\frac{1}{10}=\frac{1}{4} .
+$$
+因此, 总有 $\frac{1}{5 a^2-4 a+11}+\frac{1}{5 b^2-4 b+11}+\frac{1}{5 c^2-4 c+11} \leqslant \frac{1}{4}$, 当且仅当 $a=b=c=1$ 时等号成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设 $n(\geqslant 3)$ 是整数,求证: 对正实数 $x_1 \leqslant x_2 \leqslant \cdots \leqslant x_n$, 有不等式
+$$
+\frac{x_n x_1}{x_2}+\frac{x_1 x_2}{x_3}+\cdots+\frac{x_{n-1} x_n}{x_1} \geqslant x_1+x_2+\cdots+x_n .
+$$
+%%<SOLUTION>%%
+证明:先证明一个引理: 若 $0<x \leqslant y, 0<a \leqslant 1$, 则
+$$
+x+y \leqslant a x+\frac{y}{a} . \label{(1)}
+$$
+事实上, 由 $a x \leqslant x \leqslant y$ 得 $(1-a)(y-a x) \geqslant 0$, 即
+$$
+a^2 x+y \geqslant a x+a y \text {. }
+$$
+因此
+$$
+x+y \leqslant a x+\frac{y}{a} .
+$$
+现在, 令 $(x, y, a)=\left(x_i, x_{n-1} \cdot \frac{x_{i+1}}{x_2}, \frac{x_{i+1}}{x_{i+2}}\right) i=1,2, \cdots, n-2$. 代入
+(1), 有
+$$
+x_i+\frac{x_{n-1} x_{i+1}}{x_2} \leqslant \frac{x_i x_{i+1}}{x_{i+2}}+x_{n-1} \cdot \frac{x_{i+2}}{x_2} . \label{(2)}
+$$
+(2)式对 $i=1,2, \cdots, n-2$ 求和, 即得
+$$
+\begin{aligned}
+& x_1+x_2+\cdots+x_{n-2}+\frac{x_{n-1}}{x_2}\left(x_2+x_3+\cdots+x_{n-1}\right) \\
+\leqslant & \frac{x_1 x_2}{x_3}+\frac{x_2 x_3}{x_4}+\cdots+\frac{x_{n-2} x_{n-1}}{x_n}+\frac{x_{n-1}}{x_2}\left(x_3+x_4+\cdots+x_n\right),
+\end{aligned}
+$$
+所以
+$$
+x_1+x_2+\cdots+x_{n-2}+x_{n-1} \leqslant \frac{x_1 x_2}{x_3}+\cdots+\frac{x_{n-2} x_{n-1}}{x_n}+\frac{x_{n-1} x_n}{x_2} . \label{(3)}
+$$
+另外, 令 $(x, y, a)=\left(x_n, x_n \cdot \frac{x_{n-1}}{x_2}, \frac{x_1}{x_2}\right)$, 又有
+$$
+x_n+\frac{x_n x_{n-1}}{x_2} \leqslant \frac{x_n x_1}{x_2}+\frac{x_{n-1} x_n}{x_1} . \label{(4)}
+$$
+由(3)十(4)即得原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设 $n$ 是正整数, 且 $n \geqslant 3$. 又设 $a_1, a_2, \cdots, a_n$ 是实数, 其中 $2 \leqslant a_i \leqslant 3, i=1,2, \cdots, n$. 若取 $S=a_1+a_2+\cdots+a_n$, 求证:
+$$
+\frac{a_1^2+a_2^2-a_3^2}{a_1+a_2-a_3}+\frac{a_2^2+a_3^2-a_4^2}{a_2+a_3-a_4}+\cdots+\frac{a_n^2+a_1^2-a_2^2}{a_n+a_1-a_2} \leqslant 2 S-2 n .
+$$
+%%<SOLUTION>%%
+分析:为了处理右边的 $2 S$ 可以采用类似"分母有理化"的方法, 从左边每一项中分离出 $a_i+a_{i+1}+a_{i+2}$, 它们的一部分和恰为 $2 S$.
+证明 $\frac{a_i^2+a_{i+1}^2-a_{i+2}^2}{a_i+a_{i+1}-a_{i+2}}=a_i+a_{i+1}+a_{i+2}-\frac{2 a_i a_{i+1}}{a_i+a_{i+1}-a_{i+2}}$.
+注意到 $1=2+2-3 \leqslant a_i+a_{i+1}-a_{i+2} \leqslant 3+3-2=4$, 并且由 $\left(a_i-\right. 2)\left(a_{i+1}-2\right) \geqslant 0$ 可得 $-2 a_i a_{i+1} \leqslant-4\left(a_i+a_{i+1}-2\right)$, 所以
+$$
+\begin{aligned}
+& \frac{a_i^2+a_{i+1}^2-a_{i+2}^2}{a_i+a_{i+1}-a_{i+2}} \\
+\leqslant & a_i+a_{i+1}+a_{i+2}-4 \cdot \frac{a_i+a_{i+1}-2}{a_i+a_{i+1}-a_{i+2}} \\
+= & a_i+a_{i+1}+a_{i+2}-4\left(1+\frac{a_{i+2}-2}{a_i+a_{i+1}-a_{i+2}}\right) \\
+\leqslant & a_i+a_{i+1}+a_{i+2}-4\left(1+\frac{a_{i+2}-2}{4}\right)
+\end{aligned}
+$$
+$$
+=a_i+a_{i+1}-2 .
+$$
+记 $a_{n+1}=a_1, a_{n+2}=a_2$. 在上式中令 $i=1,2, \cdots, n$, 得 $n$ 个不等式, 再依次相加, 得
+$$
+\frac{a_1^2+a_2^2-a_3^2}{a_1+a_2-a_3}+\frac{a_2^2+a_3^2-a_4^2}{a_2+a_3-a_4}+\cdots+\frac{a_n^2+a_1^2-a_2^2}{a_n+a_1-a_2} \leqslant 2 S-2 n .
+$$
+%%PROBLEM_END%%
+
+

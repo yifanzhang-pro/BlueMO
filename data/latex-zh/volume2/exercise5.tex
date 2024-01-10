@@ -1,0 +1,162 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1 设 $x, y, z \in(0,1)$, 求证:
+$$
+x(1-y)+y(1-z)+z(1-x)<1 .
+$$
+%%<SOLUTION>%%
+设 $f(x)=(1-y-z) x+y+z-y z-1$. 把 $y 、 z$ 看作常数, 则 $f(x)$ 是关于 $x$ 的一次函数.
+因为 $f(0)=y+z-y z-1=-(y-1)(z-1)<0$, $f(1)=(1-y-z)+y+z-y z-1=-y z<0$, 所以, 对于 $0<x<1$, 都有 $f(x)<0$, 即 $(1-y-z) x+y+z-y z-1<0$, 所以 $x(1-y)+y(1- z)+z(1-x)<1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2 已知实数 $x, y$ 满足
+$$
+(3 x+y)^5+x^5+4 x+y=0,
+$$
+求 $4 x+y$ 的值.
+%%<SOLUTION>%%
+原方程可写成 $(3 x+y)^5+(3 x+y)=(-x)^5+(-x)$. 令 $f(t)= t^5+t$, 则 $f(t)$ 在 $\mathbf{R}$ 上是单调增加的, 于是由 $f(3 x+y)=f(-x)$, 得 $3 x+ y=-x$, 故 $4 x+y=0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3 设 $x, y \in \mathbf{R}$, 且满足
+$$
+\left\{\begin{array}{l}
+(x-1)^3+2005(x-1)=-1, \\
+(y-1)^3+2005(y-1)=1,
+\end{array}\right.
+$$
+求 $x+y$ 的值.
+%%<SOLUTION>%%
+原方程组可变形为 $\left\{\begin{array}{l}(x-1)^3+2005(x-1)=-1, \\ (1-y)^3+2005(1-y)=-1 .\end{array}\right.$ 所以 $(x-1)^3+ 2005(x-1)=(1-y)^3+2005(1-y)$. 令 $f(t)=t^3+2005 t$, 则 $f(t)$ 是 $\mathbf{R}$ 上的增函数,故由 $f(x-1)=f(1-y)$, 得 $x-1=1-y$, 故 $x+y=2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4 设 $a, b, c, d \in \mathbf{R}$, 且满足
+$$
+(a+b+c)^2 \geqslant 2\left(a^2+b^2+c^2\right)+4 d,
+$$
+求证: $a b+b c+c a \geqslant 3 d$.
+%%<SOLUTION>%%
+题设不等式可变形为 $c^2-2(a+b) c+\left[\left(a^2+b^2\right)-2 a b+4 d\right] \leqslant 0$, 于是可构造函数 $f(x)=x^2-2(a+b) x+a^2+b^2-2 a b+4 d . f(x)$ 是开口向上的抛物线, 且 $f(c) \leqslant 0$, 从而抛物线与 $x$ 轴有交点, 于是 $\Delta=4(a+b)^2-4\left(a^2+\right. \left.b^2-2 a b+4 d\right) \geqslant 0$, 所以 $a b \geqslant d$. 同理可证 $b c \geqslant d, c a \geqslant d$. 所以 $a b+b c+ c a \geqslant 3 d$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5 设 $a_1, a_2, \cdots, a_n, b_1, b_2, \cdots, b_n$ 均为正实数, 且 $a_1^2>a_2^2+\cdots+a_n^2$, 求证:
+$$
+\begin{aligned}
+& \left(a_1^2-a_2^2-\cdots-a_n^2\right)\left(b_1^2-b_2^2-\cdots-b_n^2\right) \\
+\leqslant & \left(a_1 b_1-a_2 b_2-\cdots-a_n b_n\right)^2 .
+\end{aligned}
+$$
+%%<SOLUTION>%%
+若 $\frac{b_1}{a_1}, \frac{b_2}{a_2}, \cdots, \frac{b_n}{a_n}$ 都相等, 记它们等于 $k$, 则 $b_i=k a_i, i=1,2, \cdots, n$, 代入原不等式知等式成立.
+若这 $n$ 个比值不全相等, 不妨设 $\frac{b_1}{a_1} \neq \frac{b_2}{a_2}$, 则 $\frac{b_1}{a_1} a_2- b_2 \neq 0$. 构造二次函数 $f(x)=\left(a_1^2-a_2^2-\cdots-a_n^2\right) x^2-2\left(a_1 b_1-a_2 b_2-\cdots-\right. \left.a_n b_n\right) x+\left(b_1^2-b_2^2-\cdots-b_n^2\right)=\left(a_1 x-b_1\right)^2-\left(a_2 x-b_2\right)^2-\cdots-\left(a_n x-b_n\right)^2$, $f(x)$ 的二次项系数为正, 且当 $x=\frac{b_1}{a_1}$ 时, 有 $f\left(\frac{b_1}{a_1}\right)<0$. 因此 $f(x)$ 与 $x$ 轴有交点, 其判别式 $\Delta \geqslant 0$, 故 $\left(a_1^2-a_2^2-\cdots-a_n^2\right)\left(b_1^2-b_2^2-\cdots-b_n^2\right) \leqslant\left(a_1 b_1-a_2 b_2-\cdots-a_n b_n\right)^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 已知 $a 、 b$ 为不全为 0 的实数, 求证: 方程
+$$
+3 a x^2+2 b x-(a+b)=0
+$$
+在 $(0,1)$ 内至少有一个实根.
+%%<SOLUTION>%%
+若 $a=0$, 则 $b \neq 0$, 此时方程的根为 $x=\frac{1}{2}$, 满足题意.
+当 $a \neq 0$ 时, 令 $f(x)=3 a x^2+2 b x-(a+b)$. 
+(1) 若 $a(a+b)<0$, 则 $f(0) f\left(\frac{1}{2}\right)= -(a+b) \cdot\left(-\frac{1}{4} a\right)=\frac{1}{4} a(a+b)<0$, 所以 $f(x)$ 在 $\left(0, \frac{1}{2}\right)$ 内有一实根.
+(2) 若 $a(a+b) \geqslant 0$, 则 $f\left(\frac{1}{2}\right) f(1)=-\frac{1}{4} a(2 a+b)=-\frac{1}{4} a^2-\frac{1}{4} a(a+ b)<0$, 所以 $f(x)$ 在 $\left(\frac{1}{2}, 1\right)$ 内有一实根.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. $\triangle A B C$ 的三边长分别为 $a 、 b 、 c$, 周长为 2 , 求证:
+$$
+a^2+b^2+c^2+2 a b c<2 .
+$$
+%%<SOLUTION>%%
+由 $a+b+c=2$, 得 $a^2+b^2+c^2=4-2(a b+b c+c a)$, 原不等式等价于 $a b+b c+c a-a b c>1$. 令 $f(x)=(x-a)(x-b)(x-c)=x^3-2 x^2+ (a b+b c+c a) x-a b c$, 则 $f(1)=1-2+(a b+b c+c a)-a b c=a b+b c+ c a-a b c-1$. 另一方面, 由 $a, b, c \in(0,1)$, 得 $f(1)=(1-a)(1-b)(1-$ c) $>0$, 所以 $a b+b c+c a-a b c>1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8 已知方程 $x^2+b x+c=0$ 有两个实数根 $s$ 、 $t$, 并且 $|s|<2,|t|<2$. 求证:
+(1) $|c|<4$
+(2) $|b|<4+c$.
+%%<SOLUTION>%%
+(1) 由韦达定理知 $|c|=|s t|=|s||t|<4$. 
+(2) 设 $f(x)=x^2+ b x+c$, 则 $y=f(x)$ 的图象是开口向上的抛物线, 且与 $x$ 轴的两交点在一 2 与 2 之间, 所以 $f( \pm 2)>0$, 即 $4+2 b+c>0,4-2 b+c>0$, 所以 $\pm 2 b<4+ c, 2|b|<4+c$, 故 $|b| \leqslant 2|b|<4+c$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9 设 $a+b+c=1, a^2+b^2+c^2=1$, 且 $a>b>c$, 求证: $-\frac{1}{3}<c<0$.
+%%<SOLUTION>%%
+因为 $a+b+c=1$, 所以 $a+b=1-c$. 所以 $a^2+b^2+2 a b=1+c^2-2 c$, 而 $a^2+b^2=1-c^2$, 于是 $a b=c^2-c$. 则 $a 、 b$ 为方程 $x^2-(1-c) x+c^2-c=0$ 的两实根.
+而 $a>b>c$, 故方程有均大于 $c$ 的两个不等实根.
+设 $f(x)=x^2- (1-c) x+c^2-c$, 则 $\left\{\begin{array}{l}\Delta>0, \\ \frac{1-c}{2}>0, \\ f(c)>0,\end{array}\left\{\begin{array}{l}(1-c)^2+4\left(c^2-c\right)>0, \\ \frac{1-c}{2}>c, \\ c^2-(1-c) c+c^2-c>0,\end{array}\right.\right.$ 解不等式组, 得 $-\frac{1}{3}<c<0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10 若抛物线 $y=x^2+a x+2$ 与连接两点 $M(0,1) 、 N(2,3)$ 的线段 (包括 $M 、 N$ 两点)有两个相异的交点, 求 $a$ 的取值范围.
+%%<SOLUTION>%%
+易知过点 $(0,1),(2,3)$ 的直线方程为 $y=x+1$, 而抛物线 $y= x^2+a x+2$ 与线段 $M N$ 有两个交点就是方程 $x^2+a x+2=x+1$. 在区间 $[0$, $2]$ 上有两个不等实根.
+令 $f(x)=x^2+(a-1) x+1$, 则 $\left\{\begin{array}{l}0<-\frac{a-1}{2}<2, \\ \Delta=(a-1)^2-4>0, \text { 解不等式组, 得 } a \text { 的范围是 }-\frac{3}{2} \leqslant a<-1 . \\ f(0)=1 \geqslant 0, \\ f(2)=2 a+3 \geqslant 0 .\end{array}\right.$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11 设 $x_1 \geqslant x_2 \geqslant x_3 \geqslant x_4 \geqslant 2$, 且 $x_2+x_3+x_4 \geqslant x_1$, 求证:
+$$
+\left(x_1+x_2+x_3+x_4\right)^2 \leqslant 4 x_1 x_2 x_3 x_4 .
+$$
+%%<SOLUTION>%%
+令 $a=x_2+x_3+x_4, b=x_2 x_3 x_4$, 则原不等式为 $\left(x_1+a\right)^2 \leqslant 4 x_1 b$, 即 $x_1^2+2(a-2 b) x_1+a^2 \leqslant 0$. 令 $f(x)=x^2+2(a-2 b) x+a^2$, 则只需证明 $f\left(x_1\right) \leqslant 0$. 因为 $\Delta=4(a-2 b)^2-4 a^2=16 b(b-a)$, 而 $\frac{a}{b}=\frac{x_2+x_3+x_4}{x_2 x_3 x_4}= \frac{1}{x_3 x_4}+\frac{1}{x_2 x_4}+\frac{1}{x_2 x_3} \leqslant \frac{1}{4}+\frac{1}{4}+\frac{1}{4}=\frac{3}{4}<1$, 所以 $b>a$, 从而 $\Delta>0, f(x)$ 与 $x$ 轴有两个不同的交点.
+易知这两个交点为 $u=2 b-a-2 \sqrt{b(b-a)}, v= 2 b-a+2 \sqrt{b(b-a)}$. 下面证明 $x_1 \in[u, v]$. 因 $a \leqslant 3 x_1 \leqslant 3 a$, 故 $x_1 \in \left[\frac{a}{3}, a\right]$, 只需证 $\left[\frac{a}{3}, a\right] \subset[u, v]$, 即 $u \leqslant \frac{a}{3}, a \leqslant v$. 由于 $v=2 b-a+2 \sqrt{b(b-a)}>2 b-a>a, u=2 b-a-2 \sqrt{b(b-a)}=(\sqrt{b}-\sqrt{b-a})^2= \left(\frac{a}{\sqrt{b}+\sqrt{b-a}}\right)^2=\frac{a}{\left(\sqrt{\frac{b}{a}}+\sqrt{\frac{b}{a}-1}\right)^2} \leqslant \frac{a}{\left(\sqrt{\frac{4}{3}}+\sqrt{\frac{1}{3}}\right)^2}=\frac{a}{3}$, 所以 $x_1 \in[u, v]$, 从而必有 $f\left(x_1\right) \leqslant 0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12 证明: 存在两个函数 $f, g: \mathbf{R} \rightarrow \mathbf{R}$, 使得函数 $f(g(x))$ 在 $\mathbf{R}$ 上是严格递减的, 而 $g(f(x))$ 在 $\mathbf{R}$ 上是严格递增的.
+%%<SOLUTION>%%
+设 $A=\bigcup_{k \in \mathbf{Z}}\left([-2^{2 k+1},-2^{2 k}) \bigcup(2^{2 k}, 2^{2 k+1}]\right), B=\bigcup_{k \in \mathbf{Z}}\left(\left[-2^{2 k},-2^{2 k-1}\right) \cup\left(2^{2 k-1}, 2^{2 k}\right]\right)$, 则 $A=2 B, B=2 A, A=-A, B=-B, A \cap B=\varnothing$, 并且 $A \cup B \cup\{0\}=\mathbf{R}$. 现在令
+$$
+f(x)=\left\{\begin{array}{ll}
+x, & x \in A, \\
+-x, & x \in B, \\
+0, & x=0,
+\end{array} \text { 而 } g(x)=2 f(x),\right.
+$$
+那么, $f(g(x))=f(2 f(x))=-2 x$, 而 $g(f(x))=2 f(f(x))=2 x$. 所以, 满足条件的函数存在.
+%%PROBLEM_END%%
+
+

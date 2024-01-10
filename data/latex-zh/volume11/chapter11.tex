@@ -1,0 +1,141 @@
+
+%%TEXT_BEGIN%%
+局部调整方法就是按照题目的要求逐步进行调整 (或作变换), 以减少与目标的差别, 而逐步逼近目标, 从而保证经过有限步可以达到预定目标.
+在组合数学中应用局部调整法可以解决下列几类问题:
+(1)证明给定的一种组合对象具有某种性质;
+(2) 求解组合最值问题;
+(3)证明存在具有某种性质的组合对象;
+(4) 求解单人操作达到预定目标的问题.
+我们分别举例说明如下.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 有 $n \times n(n \geqslant 4)$ 的一张空白方格表, 在它的每一个方格内任意填人 +1 或 -1 两个数中的一个.
+现将表内 $n$ 个两两既不同(横)行又不同(竖)列的方格中的数的乘积称为一个基本项.
+试证: 按上述所填成的每一方格表,它的全部基本项的和 $S$ 总能被 4 整除.
+%%<SOLUTION>%%
+证明:显然不论用怎样的填法, 所填成的表格总有 $n$ ! 个基本项.
+设第 $i$ 行第 $j$ 列的方格内填的数是 $a_{i j}(1 \leqslant i, j \leqslant n, n \geqslant 4)$. 当把方格表中某一个 $a_{i j}$ 改变符号时 (即把 +1 换成 -1 或将 -1 换成 +1 ), 注意到 $a_{i j}$ 出现在和式 $S$ 的 $(n-1)$ ! 个基本项中, 故 $S$ 中将有 $(n-1)$ ! 个基本项变号, 设其中有 $h$ 项由 -1 变为 +1 , 有 $(n-1) !-h$ 项由 +1 变成 -1 . 所有基本项之和由 $S$ 变为 $S^{\prime}$ 则 $S^{\prime}-S=2 h-2[(n-1) !-h]=4 h-2 \cdot(n-1) !$, 因为 $n \geqslant 4$, 所以 $S^{\prime}-S$ 是 4 的倍数, 即当某个数 $a_{i j}$ 改变符号时, 引起 $S$ 的改变值一定是 4 的倍数.
+若一张方格表内所有 $a_{i j}$ 全为 +1 , 则全部基本项之和 $S=n !(n \geqslant 4)$ 显然能够被 4 整除.
+若 $a_{i j}$ 不全为 +1 时,则可将其中 -1 逐个改成 +1 , 每次均使基本项之和的改变值能被 4 整除, 于是经过有限步可使表中每个数都为 +1 , 并且最后得到的表格中所有基本项之和是 4 的倍数,所以一开始时,表中所有基本项之和也是 4 的倍数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 试将 1000 分成若干个互不相等的正整数之和,并且使得这些正整数的乘积为最大, 求这个最大值.
+%%<SOLUTION>%%
+解:因分法个数有限, 故乘积最大的分法 $S$ 必存在, 设将 1000 分为不相等的正整数 $a_1, a_2, \cdots, a_k$ 之和时, 其乘积为最大.
+用 $S=\left\{a_1, a_2, \cdots, a_k\right\}$ 表示分法, $\sum S$ 表示 $S$ 中各数之和.
+$\prod S$ 表示 $S$ 中各数之积.
+$S$ 中最小数为 $a_1$, 最大数为 $a_k$ 则 $S$ 具有下列性质:
+(1) $S$ 中不属于 $\left[a_1, a_k\right]$ 的正整数至多只有一个.
+事实上, 若 $a, b \notin S (a<b)$, 但 $a-1 \in S, b+1 \in S$, 则令 $S^{\prime}=(S \backslash\{a-1, b+1\}) \cup\{a, b\}$. 于是 $\sum S^{\prime}=\sum S=1000$, 且
+$$
+\frac{\prod S^{\prime}}{\prod S}=\frac{a b}{(a-1)(b+1)}=\frac{a b}{a b-(b-a)-1}>1, \prod S^{\prime}>\prod S .
+$$
+这与 $\prod S$ 最大矛盾.
+(2) $a_1 \neq 1$, 因为若 $a_1=1$, 则令 $S^{\prime}=\left(S \backslash\left\{1, a_k\right\}\right) \cup\left\{1+a_k\right\}$, 于是 $\sum S^{\prime}=\sum S=1000$, 且
+$$
+\frac{\prod S^{\prime}}{\prod S}=\frac{1+a_k}{1 \cdot a_k}>1
+$$
+这与 $I S$ 最大矛盾.
+(3) $a_1=2$ 或 3 .
+(i) 若 $a_1=4$ 且 $5 \in S$, 则令 $S^{\prime}=(S \backslash\{5\}) \cup\{2,3\}$, 于是 $\sum S^{\prime}= \sum S=1000$ 且 $\frac{\prod S^{\prime}}{\prod S}=\frac{2 \times 3}{5}>1$, 矛盾.
+(ii) 若 $a_1=4$, 且 $j \notin S(j=5,6, \cdots, k-1)$, 但 $k \in S(k \geqslant 6)$, 则令 $S^{\prime}=(S \backslash\{4, k\}) \cup\{2,3, k-1\}$, 于是 $\sum S^{\prime}=\sum S=1000$, 而 $\frac{\prod S^{\prime}}{\prod S}= \frac{2 \times 3 \times(k-1)}{4 k}=\frac{4 k+2(k-3)}{4 k}>1$, 矛盾.
+(iii) 若 $a_1 \geqslant 5$, 则令 $S^{\prime}=\left(S \backslash\left\{a_1\right\}\right) \cup\left\{2, a_1-2\right\}$, 于是 $\sum S^{\prime}= \sum S=1000$, 而 $\frac{\prod S}{\prod S}=\frac{2\left(a_1-2\right)}{a_1}=\frac{a_1+\left(a_1-4\right)}{a_1}>1$, 矛盾.
+由上述 (1), (2), (3) 知, 若 $a_1=3$, 则必有 $3+4+5+\cdots+n-k=1000$, 即 $(n-2)(n+3)=2000+2 k$, 于是 $n=45, k=32$, 即 $S=\{3,4, \cdots, 30$,
+$31,33,34, \cdots, 44,45\}$. 令 $\left.S^{\prime}=(S \backslash\{34\}) \cup\{2,32\}\right)$, 则 $\sum S^{\prime}=\sum S=$ 1000 , 而 $\frac{\prod S^{\prime}}{\prod S}=\frac{2 \times 32}{34}>1$, 矛盾.
+故只有 $a_1=2$, 这时 $S=\{2,3, \cdots, 33$, $35,36, \cdots, 45\}$, 使乘积 $\prod S=\frac{45 !}{34}$ 最大.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 14 人进行一种日本棋循环赛, 每人都与另外 13 人对弯.
+在比赛中没有平局, 求 "三角联" 个数的最大值 (这里 "三角联"指 3 人间的比赛每人皆一胜一负). 
+%%<SOLUTION>%%
+解:用 $A_1, A_2, \cdots, A_{14}$ 表示 14 个人,并设 $A_i$ 胜了 $a_i$ 局 $(i=1,2, \cdots$, 14). 若 3 人不形成"三角联",则一定是其中 1 人胜了其他两人,故不构成"三角联"的数目为 $\sum_{i=1}^{14} \mathrm{C}_{a_i}^2$ (约定 $\mathrm{C}_0^2=\mathrm{C}_1^2=0$ ), 于是 "三角联" 的总数为 $S \mathrm{C}_{14}^3-\sum_{t=1}^{14} \mathrm{C}_{a_i}^2$, 要 $S$ 最大, 必须且只须 $\sum_{t=1}^{14} \mathrm{C}_{a_t}^2$ 最小, 下面我们证明当 $\sum_{i=1}^{14} \mathrm{C}_{a_i}^2$ 取最小值时必有 $\left|a_i-a_j\right| \leqslant 1(1 \leqslant i<j \leqslant 14)$.
+事实上, 若存在 $a_i-a_j \geqslant 2(i \neq j, 1 \leqslant i, j \leqslant 14)$. 则令 $a_i{ }^{\prime}=a_i-1$, $a_j{ }^{\prime}=a_j+1, a_k{ }^{\prime}=a_k(k \neq i, j, 1 \leqslant k \leqslant 14)$ 于是 $\sum_{t=1}^{14} a_t{ }^{\prime}=\sum_{t=1}^{14} a_t=\mathrm{C}_{14}^2=91$, 而 $\sum_{t=1}^{14} \mathrm{C}_{a_t}^2-\sum_{t=1}^{14} \mathrm{C}_{a_t}^2=\mathrm{C}_{a_i-1}^2+\mathrm{C}_{a_j+1}^2-\left(\mathrm{C}_{a_i}^2+\mathrm{C}_{a_j}^2\right)=-\left(\mathrm{C}_{a_i-1}^1-\mathrm{C}_{a_j}^1\right)=-\left[\left(a_i-\right.\right.$ 1) $\left.-a_j\right]=-\left(a_i-a_j\right)+1 \leqslant-2+1 \leqslant-1$, 从而 $\sum_{t=1}^{14} \mathrm{C}_{a_t}^2<\sum_{t=1}^{14} \mathrm{C}_{a_t}^2$, 这与 $\sum_{t=1}^{14} \mathrm{C}_{a_t}^2$ 取最小值矛盾.
+由 $\sum_{t=1}^{14} a_t=91$ 及 $\left|a_i-a_j\right| \leqslant 1(1 \leqslant i<j \leqslant 14)$ 得 $a_1, a_2, \cdots, a_{14}$ 中有 7 个 6 和 7 个 7 , 故 $\sum_{t=1}^{14} \mathrm{C}_{a_t}^2$ 的最小值为 $7 \mathrm{C}_7^2+7 \mathrm{C}_6^2=252$, 所以 $S=\mathrm{C}_{14}^3-\sum_{t=1}^{14} \mathrm{C}_{a_t}^2$ 的最大值为 $\mathrm{C}_{14}^3-252=112$.
+另一方面, 当 $1 \leqslant i \leqslant 7$ 时, 令 $A_i$ 胜 $A_{i+1}, A_{i+2}, \cdots, A_{i+6}$ 这 6 个队而败于 $A_{i+7}, A_{i+8}, \cdots, A_{i+13}$ (约定 $A_{j+14}=A_j$ ) 这 7 个队, 当 $8 \leqslant i \leqslant 14$ 时, 令 $A_i$ 胜 $A_{i+1}, A_{i+2}, \cdots, A_{i+7}$ 这 7 个队而败于 $A_{i+8}, A_{i+9}, \cdots, A_{i+13}$ 这 6 个队(约定 $A_{14+j}=A_j$ ), 则这种安排可使 $\sum_{t=1}^{14} \mathrm{C}_{a_t}^2=252$ 成立.
+综上可知,所求 "三角联" 数目的最大值为 112 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设圆周上放若干堆小球,每堆中的小球数都是 3 的倍数,但各堆中的球数不必相等.
+按下列规则调整各堆中的球数; 把各堆球三等分, 本堆留一份, 其余两份分别放人左、右两堆中, 如果某堆球数不是 3 的倍数,则可从布袋中取出一球或两球补人, 使该堆球数是 3 的倍数,然后按上述方法继续调整, 问能否经过有限次调整使各堆的球数相等?
+%%<SOLUTION>%%
+解:设某次调整前, 球数最多的堆有 $3 m$ 个球,最少的有 $3 n$ 个球且 $m> n$, 那么
+(1)经过调整后,各堆中的球数仍在 $3 m$ 与 $3 n$ 之间(包括 $3 n$ 和 $3 m$ 在内、 下同).
+事实上,设某堆有 $3 l$ 个球,它的左、右两堆的球数分别为 $3 k$ 和 $3 h(3 m \geqslant 3 l \geqslant 3 n, 3 m \geqslant 3 k \geqslant 3 n, 3 m \geqslant 3 h \geqslant 3 n)$ 于是调整后该堆球数为 $k+l+h$, 满足 $3 m \geqslant k+l+h \geqslant 3 n$, 若这堆球数不是 3 的倍数 (即 $3 m>k+l+h>3 n$ ), 则补充一个或两个球成为 3 的倍数,其球数仍在 $3 n$ 与 $3 m$ 之间.
+(2) 原来球数大于 $3 n$ 的堆,调整后的球数仍大于 $3 n$.
+事实上同 (1) 知道若 $3 l>3 n, 3 k \geqslant 3 n, 3 h \geqslant 3 n$, 则 $k+l+h>3 n$.
+(3) 原来球数为 $3 n$ 的堆中, 经过调整, 至少有一堆的球数大于 $3 n$.
+事实上, 原来球数为 $3 n$ 的堆中, 至少有一堆, 它的左或右堆中的球数大于 $3 n$, 同(1)记号不妨设 $3 k>3 n, 3 l=3 n, 3 h \geqslant 3 n$, 则 $k+l+h>3 n$.
+于是, 每调整一次, 球数为 $3 n$ 的堆至少减少一堆.
+故经过有限次调整, 可使每堆球数都大于 $3 n$. 而含球数最多的堆中的球数不会增大, 于是含球数最多的堆与含球数最少的堆所含球数之差 $f$ 将严格地减少.
+故经过有限步, 这个差数 $f$ 必为零, 即各堆球数相等.
+%%<REMARK>%%
+注:在解单人操作能否达到预定目标的问题时, 常常根据题目条件建立一个取非负整数值的目标函数 $f$, 若没有达到目标, 则证明经过适当调整后可使 $f$ 严格减少一个正整数.
+于是由 $f$ 恒取非负整数值知, 这种调整过程不可能无限次继续下去, 这就证明了可经过有限次操作达到预定目标, 在本题中目标函数 $f=3 m-3 n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. $n(\geqslant 4)$ 个盘子里放有总数不少于 4 的糖块, 从任意选出的两个盘子里各取一块糖放人另一个盘子中称为一次操作, 问能否经过有限次操作, 把所有的糖块集中到一个盘子里去? 证明你的结论.
+%%<SOLUTION>%%
+解法一,首先证明可经过有限步操作使所有糖块集中到 2 个或 3 个盘子中.
+事实上,如果放糖的盘子不少于 3 个,任取其中 3 个盘子, 分别记为 $A$ 、 $B 、 C$, 并设 $A 、 B 、 C$ 中分别有 $a 、 b 、 c(0<a \leqslant b \leqslant c)$ 块糖, 于是可如下进行操作 $a$ 次:
+$(a, b, c) \rightarrow(a-1, b-1, c+2) \rightarrow \cdots \rightarrow(0, b-a, c+2 a)$. 即放有糖块的盘子的总数减少 1 个 ( $a \neq b$ 时) 或 2 个 ( $a=b$ 时). 于是, 这样继续下去, 总可以将糖块集中在 2 个或 3 个盘子中.
+其次, 不妨设所有糖块集中在盘子 $A, B, C$ 中, 每个盘中放的糖块数分别为 $a, b, c(a \geqslant b \geqslant c \geqslant 0)$. 另取一个空盘 $D$ (因 $n \geqslant 4$, 至少有 4 个盘子) 上述状态简记为 $(a, b, c, 0)$. 如果 $a, b, c$ 有两个相等, 那么由上述证明知可经有限步将糖果集中到一个盘子中, 故只要考虑 $a>b>c \geqslant 0$ 的情形, 又分为下列两种情形.
+(1)如果 $a=c+2$, 则 $b=c+1$, 因 $a+b+c=3 c+3 \geqslant 4$, 所以 $c \geqslant 1$. 于是可按下列步骤操作, 经过有限步将所有糖块集中到一个盘子中:
+$$
+\begin{aligned}
+\quad(c+2, c+1, c, 0) \rightarrow(c+1, c, c, 2) \rightarrow(c, c+2, c, 1) \rightarrow(c-1, c+2, \\
+c+2,0) \rightarrow \cdots+(3 c+3,0,0,0) .
+\end{aligned}
+$$
+(2) 如果 $a>c+2$ 时, 那么先作如下一次操作: $(a, b, c) \rightarrow(a-1$, $b-1, c+2)$ 因 $a>b>c$ 及 $a>c+2$, 所以 $a-1>b-1 \geqslant c, a-1 \geqslant (c+3)-1 \geqslant c+2$, 故经过调整后, 三盘中所放糖块量的最大数减少 1 , 而最小数不减少, 故经过有限步调整可归结为有两盘糖块数相等或前述情形 (1). 于是由前面证明可知经过有限步操作可将糖块集中到一个盘子中.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. $n(\geqslant 4)$ 个盘子里放有总数不少于 4 的糖块, 从任意选出的两个盘子里各取一块糖放人另一个盘子中称为一次操作, 问能否经过有限次操作, 把所有的糖块集中到一个盘子里去? 证明你的结论.
+%%<SOLUTION>%%
+解法二设共有 $m$ 块糖 $(m \geqslant 4)$. 我们对 $m$ 用数学归纳法.
+(1) $m=4$ 时, 4 块糖至多放在 4 个盘子中, 其分布情况 (不考虑顺序) 只有以下 4 种: $1^{\circ}(1,1,1,1), 2^{\circ}(1,1,2,0), 3^{\circ}(1,3,0,0), 4^{\circ}(2,2,0,0)$. 每种情形按下列步骤进行操作, 都可以经过有限步将所有糖块集中到一个盘子中:
+$$
+\begin{aligned}
+& 1^{\circ}(1,1,1,1) \rightarrow(1,3,0,0) \rightarrow(0,2,2,0) \rightarrow(2,1,1,0) \rightarrow(4,0,0,0) . \\
+& 2^{\circ}(1,1,2,0) \rightarrow(0,0,4,0) . \\
+& 3^{\circ} \text { 同 } 1^{\circ} \text { 中第 } 2 \text { 步以后操作.
+} \\
+& 4^{\circ}(2,2,0,0) \rightarrow(1,1,2,0) \rightarrow(0,0,4,0) .
+\end{aligned}
+$$
+$3^{\circ}$ 同 $1^{\circ}$ 中第 2 步以后操作.
+(2)设 $m=k$ 时结论成立,考虑 $m=k+1$ 的情形,这时我们只考虑其中 $k$ 块糖, 由归纳假设, 总可以经过有限步操作将这 $k$ 块糖集中到一个盘子中.
+如果第 $k+1$ 块糖也在这个盘子中, 那么结论已成立, 否则只会出现这 $k$ 块糖在一个盘子中, 而第 $k+1$ 块糖在另一个盘子中的情形, 这时, 可按下列步骤, 经过有限步操作将 $k+1$ 块糖集中到一个盘子中.
+$$
+\begin{aligned}
+& \quad(k, 1,0,0) \rightarrow(k-1,0,2,0) \rightarrow(k-2,2,1,0) \rightarrow(k-3,2,0,2) \\
+& \rightarrow(k-1,1,0,1) \rightarrow(k+1,0,0,0) .
+\end{aligned}
+$$
+于是 $m=k+1$ 时结论成立, 这就证明了总可以经过有限步操作将所有糖块集中到一个盘子中.
+%%PROBLEM_END%%
+
+

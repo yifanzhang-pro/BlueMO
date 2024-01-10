@@ -1,0 +1,121 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 证明: 能将不同的完全平方数填满 $m \times n$ 的矩形方格表中的每一个小方格, 使每行、每列的和也是完全平方数.
+%%<SOLUTION>%%
+$a_1^2, a_2^2, \cdots, a_n^2$ 与 $b_1^2, b_2^2, \cdots, b_m^2$ 可组成 $m n$ 个乘积, 分别填人 $m \times n$ 的矩形表的各格内.
+为了保证各行、各列的和都为平方数, 只要 $a_1^2+a_2^2+ \cdots+a_n^2$ 及 $b_1^2+b_2^2+\cdots+b_m^2$ 为完全平方数.
+联想到 $(2 k+1)+k^2=(k+1)^2$, 可取 $a_1$ 为奇数, $a_j(j=2,3, \cdots, n-1)$ 均为偶数且 $0<a_1<a_2<\cdots<a_{n-1}$. 记 $\sum_{j=1}^{n-1} a_j^2=2 M+1$, 再令 $a_n=M$, 则 $a_1^2+a_2^2+\cdots+a_n^2=(M+1)^2$. 为了保证表中各数不等, 可加大表中各行数的 "距离". 例如取 $b_1>2 a_n$ 为奇数,
+$b_i(i=2,3, \cdots, m-1)$ 为偶数且 $b_{i+1}>b_i \cdot a_n(i=2,3, \cdots, m-2)$. 记 $\sum_{i=1}^{m-1} b_i^2=2 S+1$, 再取 $b_m=S$, 则 $b_1^2+b_2^2+\cdots+b_m^2=(S+1)^2$. 不难验证, 上述填法符合题目要求.
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline$a_1^2 b_1^2$ & $a_2^2 b_1^2$ & $\cdots$ & $a_j^2 b_1^2$ & $\cdots$ & $a_{n-1}^2 b_1^2$ & $a_n^2 b_1^2$ \\
+\hline$a_1^2 b_2^2$ & $a_2^2 b_2^2$ & $\cdots$ & $a_j^2 b_2^2$ & $\cdots$ & $a_{n-1}^2 b_2^2$ & $a_n^2 b_2^2$ \\
+\hline$\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ \\
+\hline$a_1^2 b_i^2$ & $a_2^2 b_i^2$ & $\cdots$ & $a_j^2 b_i^2$ & $\cdots$ & $a_{n-1}^2 b_i^2$ & $a_n^2 b_i^2$ \\
+\hline$\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ \\
+\hline$a_1^2 b_{m-1}^2$ & $a_2^2 b_{m-1}^2$ & $\cdots$ & $a_j^2 b_{m-1}^2$ & $\cdots$ & $a_{n-1}^2 b_{m-1}^2$ & $a_n^2 b_{m-1}^2$ \\
+\hline$a_1^2 b_m^2$ & $a_2^2 b_m^2$ & $\cdots$ & $a_j^2 b_m^2$ & $\cdots$ & $a_{n-1}^2 b_m^2$ & $a_n^2 b_m^2$ \\
+\hline
+\end{tabular}
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 求证: 对任意正整数 $k$, 存在一个由有理数组成的等差数列 $\frac{a_1}{b_1}, \frac{a_2}{b_2}, \cdots$, $\frac{a_k}{b_k}$, 其中 $a_i$ 与 $b_i$ 是互素正整数 $(i=1,2, \cdots, k)$, 且 $a_1, b_1, a_2, b_2, \cdots$, $a_k, b_k$ 互不相同.
+ 
+%%<SOLUTION>%%
+取 $a_i=\frac{(k !)^2+i}{i}, b_i=\frac{k !}{i}(i=1,2, \cdots, k)$, 则 $\frac{a_1}{b_1}=\frac{(k !)^2+1}{k !}$, $\frac{a_2}{b_2}=\frac{(k !)^2+2}{k !}, \cdots, \frac{a_k}{b_k}=\frac{(k !)^2+k}{k !}$ 是公差为 $\frac{1}{k !}$ 的等差数列.
+因为 $\left((k !)^2+\right. i, k !)=i$, 故 $\left(a_i, b_i\right)=\left(\frac{(k !)^2+i}{i}, \frac{k !}{i}\right)=1(i=1,2, \cdots, k)$. 又 $a_i> b_i(i=1,2, \cdots, k)$ 且对任意 $1 \leqslant i<j \leqslant k, a_i=\frac{(k !)^2+i}{i}>a_j=\frac{(k !)^2+j}{j} >b_i=\frac{k !}{i}>b_j=\frac{k !}{j}$, 此时, 数列 $\frac{a_1}{b_1}, \frac{a_2}{b_2}, \cdots, \frac{a_k}{b_k}$ 满足题中条件.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 能否将下列 $m \times n$ 矩形完全剖分为若干个形如 $\square$ 的" $L$ 形"?
+(1) $m \times n=2003 \times 2005$ ;(2) $m \times n=2005 \times 2007$.
+%%<SOLUTION>%%
+(1)因 $2003 \times 2005$ 不被 3 整除,而每个 L 型含 3 个方格,故 $2003 \times 2005$ 矩形不能完全剖分成若干个 L 形.
+(2) 因 L 形既可拼成 $2 \times 3$ 的矩形又可拼成 $7 \times 9$ 的矩形 (如图(<FilePath:./figures/fig-c12a3.png>)), 而 $2005 \times 2007=1998 \times 2007+ 7 \times 2007=(2 \times 3) \times(999 \times 669)+(7 \times 9) \times 223$. 故知 $2005 \times 2007$ 的矩形可完全剖分为若干个 $\mathrm{L}$ 形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 平面内 4 条直线, 其中任意 2 条不平行且任意 3 条不共点, 从而每条直线上有 3 个点, 在此条直线上截出两条线段.
+问所得 8 条线段的长度能否为
+(1) $1,2,3,4,5,6,7,8$ ?
+(2) 互不相等的正整数?
+%%<SOLUTION>%%
+(1) 不能.
+事实上, 设如图(<FilePath:./figures/fig-c12a4-1.png>) 所得 8 条线段的长分别为 $1,2,3,4,5,6$, 7,8 . 因为三角形中任意一边大于其余两边之差的绝对值, 所以边长为正整数的非等腰三角形中任何一边的长均大于 1 , 故图中长为 1 的线段只可能是 $A B$ 或 $A F$. 不妨设 $A B=1$, 由 $1=A B>|B E-A E|$, 得 $B E=A E$. 在 $\triangle A B E$ 中由余弦定理得 $\cos E=\frac{B E^2+A E^2-A B^2}{2 B E \cdot A E}=1-\frac{1}{2 A E^2}$. 又在 $\triangle D E F$ 中应用余弦定理得 $D F^2=D E^2+E F^2-2 D E \cdot E F \cos E=D E^2+E F^2-2 D E \cdot E F \cdot\left(1-\frac{1}{2 A E^2}\right)= D E^2+E F^2-2 D E \cdot E F+\frac{E F}{A E} \cdot \frac{D E}{B E}$. 上式中 $\frac{E F}{A E} \cdot \frac{D E}{B E}$ 为小于 1 的正分数, 其余各项为正整数,矛盾! 故不存在 4 条满足要求的直线.
+(2) 能.
+如图(<FilePath:./figures/fig-c12a4-2.png>) 我们从边长为 $3,4,5$ 的直角三角形出发,适当找出正整数 $k>1$ 及 $m, n$ 使图形符合要求.
+从相似三角形性质得 $(5+4 k): m:(n+ 3)=(4+5 k): n:(m+3 k)=3: 4: 5$. 这要求 $5+4 k$ 及 $4+5 k$ 均为 3 的倍数, 不难得到 $k=4, m=28, n=32$ 时满足要求.
+即如图(<FilePath:./figures/fig-c12a4-3.png>) 所示的图形满足题目要求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 证明: 全体正整数可分成 100 个非空子集, 使得任何 3 个满足关系式 $a+ 99 b=c$ 的正整数 $a 、 b 、 c$, 都可以从中找到两个数属于同一个子集.
+%%<SOLUTION>%%
+构造 100 个子集如下:
+$A_i=\left\{k \mid k \equiv i-1(\bmod 99)\right.$ 且 $k \in \mathbf{N}_{+}$为偶数 $\}, i=1,2, \cdots, 99$.
+$A_{100}=\left\{k ! k \in \mathbf{N}_{+}\right.$为奇数 $\}$.
+注意到当正整数 $a 、 b 、 c$ 满足 $a+99 b=c$ 时, $a 、 b 、 c$ 中奇数的个数或为 0 或为 2 且 $a \equiv c(\bmod 99)$. 若 $a 、 b 、 c$ 中有 2 个数为奇数时, 那么它们都属于 $A_{100}$ 结论成立.
+若 $a 、 b 、 c$ 中奇数个数为 0 , 即 $a 、 b 、 c$ 全为偶数时, 又因为 $a \equiv c(\bmod 99)$, 故 $a$ 和 $c$ 属于同一子集 $A_{i_0}\left(1 \leqslant i_0 \leqslant 99\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 证明: 存在无穷多个正整数 $n$, 使得集合 $S_n=\{1,2, \cdots, 3 n\}$ 可划分为三个不相交的集合: $A=\left\{a_1, a_2, \cdots, a_n\right\}, B=\left\{b_1, b_2, \cdots, b_n\right\}, C= \left\{c_1, c_2, \cdots, c_n\right\}$ 满足对任意 $i=1,2, \cdots, n$ 都有 $a_i+b_i=c_i$.
+%%<SOLUTION>%%
+(证明一) $n=1$ 时,取 $A=\{1\}, B=\{2\}, C=\{3\}$ 知结论成立.
+设对 $n \in \mathbf{N}_{+}$, 结论成立.
+即 $S_n=\{1,2, \cdots, 3 n\}$ 可剖分为三个不相交的子集: $A= \left\{a_1, a_2, \cdots, a_n\right\}, B=\left\{b_1, b_2, \cdots, b_n\right\}, C=\left\{c_1, c_2, \cdots, c_n\right\}$ 满足 $a_i+b_i= c_i(i=1,2, \cdots, n)$. 那么对 $4 n \in \mathbf{N}_{+}$, 将集合 $S_{4 n}=\{1,2,3, \cdots, 12 n\}$ 剖分为三个集合: $A^{\prime}=\left\{a_1{ }^{\prime}, a_2{ }^{\prime}, \cdots, a_{4 n}{ }^{\prime}\right\}, B^{\prime}=\left\{b_1{ }^{\prime}, b_2{ }^{\prime}, \cdots, b_{4 n}{ }^{\prime}\right\}, C^{\prime}=\left\{c_1{ }^{\prime}\right.$, $\left.c_2{ }^{\prime}, \cdots, c_{4 n}{ }^{\prime}\right\}$. 其中 $a_i{ }^{\prime}=2 i-1(i=1,2, \cdots, 3 n), a_{3 n+k}{ }^{\prime}=2 a_k(k=1,2$, $\cdots, n), b_i{ }^{\prime}=9 n+1-i(i=1,2, \cdots, 3 n), b_{3 n+k}{ }^{\prime}=2 b_k(k=1,2, \cdots, n)$, $c_i{ }^{\prime}=9 n+i(i=1,2, \cdots, 3 n), c_{3 n+k}{ }^{\prime}=2 c_k(k=1,2, \cdots, n)$, 则对任意 $i(1 \leqslant i \leqslant 4 n)$ 都有 $a_i{ }^{\prime}+b_i{ }^{\prime}=c_i{ }^{\prime}$. 因此, 存在无穷多个 $n=1,4,4^2, 4^3, \cdots$ 满足题目要求.
+%%<PROBLEM>%%
+(证明二) $n=1$ 时结论成立.
+设对 $n \in \mathbf{N}_{+}$, 结论成立.
+即 $S_n=\{1,2,3$ , $\cdots, 3 n\}$ 可剖分为不相交的三个子集 $A=\left\{a_1, a_2, \cdots, a_n\right\}, B=\left\{b_1, b_2, \cdots\right.$,
+$\left.b_n\right\}, C=\left\{c_1, c_2, \cdots, c_n\right\}$, 使 $a_i+b_i=c_i(i=1,2, \cdots, n)$. 于是对 $3 n+1$, $S_{3 n+1}=\{1,2, \cdots, 3(3 n+1)\}$ 可剖分为三个不相交的子集 $A^{\prime}=\left\{a_1{ }^{\prime}, a_2{ }^{\prime}\right.$, $\left.\cdots, a_{3 n+1}{ }^{\prime}\right\}, B^{\prime}=\left\{b_1{ }^{\prime}, b_2{ }^{\prime}, \cdots, b_{3 n+1}{ }^{\prime}\right\}, C^{\prime}=\left\{c_1{ }^{\prime}, c_2{ }^{\prime}, \cdots, c_{3 n+1}{ }^{\prime}\right\}$, 其中 $a_i{ }^{\prime}=3 a_i-1, b_i{ }^{\prime}=3 b_i, c_i{ }^{\prime}=3 c_i-1(i=1,2, \cdots, n), a_{n+i}{ }^{\prime}=3 a_i, b_{n+i}{ }^{\prime}= 3 b_i+1, c_{n+i}{ }^{\prime}=3 c_i+1(i=1,2, \cdots, n), a_{2 n+i}{ }^{\prime}=3 a_i+1, b_{2 n+i}{ }^{\prime}=3 b_i-1$, $c_{2 n+i}{ }^{\prime}=3 c_i(i=1,2, \cdots, n), a_{3 n+1}{ }^{\prime}=1, b_{3 n+1}{ }^{\prime}=9 n+2, c_{3 n+1}{ }^{\prime}=9 n+3$. 则 $a_i{ }^{\prime}+b_i{ }^{\prime}=c_i{ }^{\prime}(i=1,2, \cdots, 3 n+1)$, 这就证明了存在无穷多个 $n=1,4,13$, $40,121, \cdots$, 即 $n=\frac{1}{2}\left(3^k-1\right)(k=1,2, \cdots)$ 满足题目要求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 证明: 除了有限个正整数外,其他任何正整数 $n$ 都可表示成为 2004 个不同的正整数之和: $n=a_1+a_2+\cdots+a_{2004}$ 满足 $1 \leqslant a_1<a_2<\cdots<a_{2004}$ 且 $a_i \mid a_{i+1}(i=1,2, \cdots, 2003)$ 
+%%<SOLUTION>%%
+我们先证明下列一般性结论: 对任意正整数 $m \geqslant 2$, 存在正整数 $t_m$, 当 $n \geqslant t_m$ 时,正整数 $n$ 可表成 $m$ 个不同的正整数之和: $n=a_1+a_2+\cdots+a_m$ 满足 $1 \leqslant a_1<a_2<\cdots<a_m$ 且 $a_i \mid a_{i+1}(i=1,2, \cdots, m-1)$. 事实上, $m=2$ 时, 取 $t_2=3$, 则为 $n \geqslant t_2=3$ 时, 令 $n=1+(n-1)=a_1+a_2$ 则满足命题要求.
+设对 $m=k$ 时, 存在正整数 $t_k$ 使命题结论成立.
+那么 $m=k+1$ 时, 取 $t_{k+1}=2^{2\left(2 t_k+1\right)}$, 则当 $n \geqslant t_{k+1}$ 时, 可将 $n$ 写成下列形式 $n=2^r(2 t+1)(r, t$ 为非负整数). 由 $n=2^r(2 t+1) \geqslant 2^{2\left(2 t_k+1\right)}$ 知 $2^r$ 及 $2 t+1$ 中必有一个不小于 $\sqrt{2^{2\left(2 t_k+1\right)}} =2^{2 t_k+1}$. (1) 若 $2 t+1 \geqslant 2^{2 t_k+1}>2 t_k+1$, 则 $t>t_k$, 由归纳假设 $t$ 可表成 $k$ 个不同正整数之和: $t=b_1+b_2+\cdots+b_k$ 满足 $1 \leqslant b_1<b_2<\cdots<b_k$ 且 $b_i \mid b_{i+1}(i=1,2, \cdots, k-1)$. 于是 $n=2^r(2 t+1)=2^r+2^{r+1} t=2^r+2^{r+1} b_1 +2^{r+1} b_2+\cdots+2^{r+1} b_k=a_1+a_2+\cdots+a_{k+1}$, 其中 $a_1=2^r, a_i=2^{r+1} b_{i-1}(i= 2,3, \cdots, k+1)$ 满足 $1 \leqslant a_1<a_2<\cdots<a_{k+1}$ 且 $a_i \mid a_{i+1}(i=1,2, \cdots, k)$. (2) 若 $2^r \geqslant 2^{2 t_k+1}$, 则 $r \geqslant 2 t_k+1$, 存在 $r_1=0$ 或 1 使 $r-r_1=2 p$ 为偶数, $\left(p \in \mathbf{N}_{+}\right)$. 由 $r=2 p+r_1 \geqslant 2 t_k+1$ 知 $p \geqslant t_k$. 从而 $2^p \geqslant 1+p \geqslant t_k+1,2^p- 1 \geqslant t_k$. 由归纳假设 $2^p-1$ 可写成 $k$ 个不同的正整数之和 $2^p-1=b_1+b_2+\cdots +b_k$ 满足 $1 \leqslant b_1<b_2<\cdots<b_k$ 且 $b_i \mid b_{i+1}(i=1,2, \cdots, k-1)$. 于是 $n= 2^r(2 t+1)=2^{r_1}(2 t+1)+2^{r_1}(2 t+1)\left(2^p+1\right)\left(2^p-1\right)=2^{r_1}(2 t+1)+2^{r_1} (2 t+1) \cdot\left(2^p+1\right)\left(b_1+b_2+\cdots+b_k\right)=a_1+a_2+\cdots+a_{k+1}$, 其中 $a_1= 2^{r_1}(2 t+1), a_i=2^{r_1}(2 t+1)\left(2^p+1\right) b_{i-1}(i=2,3, \cdots, k+1)$ 满足 $1 \leqslant a_1< a_2<\cdots<a_{k+1}$ 且 $a_i \mid a_{i+1}(i=1,2, \cdots, k+1)$, 于是一般性命题得证.
+在一般性命题中取 $n=2004$, 即得要证题目结论.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 证明: 对每一个正整数 $n$, 存在一个十进制 $n$ 位正整数 $N$,满足:
+(1) $N$ 的各位数字都不等于 0 ;
+(2) $N$ 能被它的各位数字之和整除.
+%%<SOLUTION>%%
+先证下列两个引理.
+引理 1 . 对任意正整数 $t, \underbrace{11 \cdots 1}_{3^t \text { 个 }}$ 能被它的各位数字之和整除.
+事实上,当 $t=1$ 时 $111=3 \times 37$ 能被 $3^1$ 整除, 设 $\underbrace{1 \cdots 1}_{3^k \uparrow}$ 能被 $3^k$ 整除.
+那么 $\underbrace{11 \cdots 1}_{3^{k+1} \uparrow}=\frac{1}{9} \times \underbrace{99 \cdots 9}_{3^{k+1} \uparrow}=\frac{1}{9}\left(10^{3^{k+1}}-1\right)=\frac{1}{9} \times\left(10^{3^k}-1\right)\left(10^{2 \times 3^k}+10^{3^k}+1\right)= \underbrace{11 \cdots 1}_{3^k \uparrow} \times\left(10^{2 \times 3^t}+10^{3 t}+1\right)$, 由归纳假设知 $\underbrace{11 \cdots 1}_{3^k \uparrow}$ 能被 $3^k$ 整除, 又 $10^{2 \times 3^t}+10^{3 t}+1$ 能被 3 整除(因为它的各位数字之和等于 3 ), 故 $\underbrace{1 \cdots 1}_{3^{k+1} \uparrow}$ 能被 $3^{k+1}$ 整除.
+于是引理 1 得证.
+引理 2. 对任意个位数字不为零的 $j$ 位正整数 $\overline{a_1 a_2 \cdots a_j}=a_1 \times 10^j+a_2 \times 10^{j-1}+ \cdots+a_{j-1} \times 10+a_j$, 其中 $a_i \in\{0,1,2, \cdots, 9\}(i=1,2, \cdots, j), a_1 \neq 0, a_j \neq 0$. 当 $k \geqslant j$ 时, $\overline{a_1 a_2 \cdots a_j} \times \underbrace{99 \cdots 9}_{k \uparrow}$ 的各位数字之和等于 $9 k$. 事实上, $\overline{a_1 a_2 \cdots a_j} \times \underbrace{99 \cdots 9}_{k \uparrow}$ 数字之和为 $a_1+a_2+\cdots+a_{j-1}+\left(a_j-1\right)+\underbrace{9+\cdots+9}_{k-j \uparrow}+\left(9-a_1\right)+\left(9-a_2\right) +\cdots+\left(9-a_{j-1}\right)+\left(10-a_j\right)=9 k$. 回到原题.
+对任意正整数 $n$, 存在唯一非负整数 $t$ 使 $3^t \leqslant n<3^{t+1}$. (1) 若 $n=3^t$, 则由引理 1 知 $N=\underbrace{1 \cdots 1}_{3^t \uparrow}$ 满足题目条件; (2) 若 $3^t<n \leqslant 2 \times 3^t$, 则设 $k=3^t, 1 \leqslant j=n-k \leqslant 2 \times 3^t-3^t=3^t$, 选择 $a_1 a_2 \cdots a_j=\underbrace{1 \cdots 1}_{j-1 \uparrow} 2$, 则由引理 2 知各位数字都不为 0 的 $n=k+j$ 位数 $N= \underbrace{11 \cdots 1}_{j-1 \uparrow} 2 \times \underbrace{99 \cdots 9}_{k \uparrow}$ 的各位数字之和为 $9 k=3^{t+2}$, 而由引理 1 知 $\underbrace{11 \cdots 1}_{3^t \uparrow}$ 被 $3^t$ 整除, 从而 $\underbrace{9 \cdots \cdots 9}_{3^t \uparrow}=9 \times \underbrace{11 \cdots 1}_{3^t \uparrow}$ 被 $9 \times 3^t=3^{t+2}=9 k$ 整除.
+故 $N$ 能被它的各位数字之和整除; (3) 若 $2 \times 3^t<n<3^{t+1}$, 则设 $k=2 \times 3^i, 1 \leqslant j=n-k< 3^{t+1}-2 \times 3^t=3^t<k$, 由引理 2 知各位数字都不为 0 的 $n$ 位数 $N=\underbrace{1 \cdots 1}_{j-1 \uparrow} 2 \times \underbrace{99 \cdots 9}_{k \uparrow}$ 的各位数字之和为 $9 k=2 \times 3^{t+2}$, 且同前一种情形知 $\underbrace{9 \cdots 9}_{k \uparrow}=9 \times \underbrace{11 \cdots 1}_{3^l \uparrow} \times\left(10^{3^t}+1\right)$ 能被 $9 \times 3^t=3^{t+2}$ 整除, 又 $N$ 为偶数, 故 $N$ 能被它的各位数字之和 $2 \times 3^{t-2}=9 k$ 整除.
+综上知题目结论成立.
+%%PROBLEM_END%%
+
+

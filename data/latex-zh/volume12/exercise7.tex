@@ -1,0 +1,124 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 求证:设 $G$ 是简单平面图, 则它一定有一个度数 $\leqslant 5$ 的顶点.
+%%<SOLUTION>%%
+设 $G$ 是连通的, 否则考虑它的每一个连通分支.
+若每个顶点的度 $\geqslant$ 6 , 则 $6 v \leqslant 2 e$, 即 $v \leqslant \frac{e}{3}$. 又因为 $f \leqslant \frac{2 e}{3}$, 故 $2==v-e+f \leqslant \frac{e}{3}-e+\frac{2 e}{3}=$ 0 , 矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 证明: 小于 30 条边的简单平面图有一个顶点度数 $\leqslant 4$.
+%%<SOLUTION>%%
+设每个点的度数 $>4$, 则 $2 e=\sum_{i=1}^v d\left(v_i\right) \geqslant 5 v$, 即 $v \leqslant \frac{2}{5} e$, 由于 $e \leqslant 3 v-6$, 代入得 $e \leqslant \frac{6}{5} e-6$, 即有 $e \geqslant 30$, 矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 证明: 在 6 个顶点 12 条边的连通简单平面图中, 每个面用 3 条边围成.
+%%<SOLUTION>%%
+由欧拉公式, $f=2+e-v=8$. 因为平均每个面有边 $\frac{2 e}{f}=3$ 条, 由于每个面至少有三条边, 所以每个面恰有三条边.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $G$ 是有.
+11 个或更多顶点的图,证明 $G$ 或 $\bar{G}$ 是非平面图.
+%%<SOLUTION>%%
+设 $G$ 和 $\bar{G}$ 都是平面图, 图 $G$ 和 $\bar{G}$ 的顶点数是 $v$, 边数分别为 $e$ 和 $e^{\prime}$, 则 $e+e^{\prime}=\frac{1}{2} v(v-1)$. 由不等式 $e \leqslant 3 v-6, e^{\prime} \leqslant 3 v-6$, 相加得 $\frac{1}{2} v(v-1)= e+e^{\prime} \leqslant 6 v-12, v^2-13 v+24 \leqslant 0, v \leqslant 11$, 与题设矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 将平面分成 $f$ 个区域,每两个区域都相邻, 问 $f$ 最大为多少?
+%%<SOLUTION>%%
+考虑对偶图, 由于 $K_5$ 不是平面图, 所以 $f \leqslant 4$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 证明: 除四面体外, 不存在这样一个凸多面体, 它的每一个顶点和所有其余的顶点之间都有棱相连接.
+%%<SOLUTION>%%
+$n$ 个顶点的凸多面体有 $\mathrm{C}_n^2$ 条棱, 每个面至少有 3 条棱, 故多面体的面数不大于 $\frac{2}{3} \mathrm{C}_n^2$, 由欧拉公式得: $n+\frac{2}{3} \mathrm{C}_n^2 \geqslant \mathrm{C}_n^2+2$, 化简得 $n^2-7 n+12 \leqslant 0, n$ 只能取 3 或 4 ,命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 有 $n$ 个车站组成的公路网, 每个站至少有 6 条公路引出, 求证必有两条公路在平面上相交.
+%%<SOLUTION>%%
+设 $G$ 是连通的, 否则考虑它的每一个连通分支.
+若每个顶点的度 $\geqslant$ 6 , 则 $6 v \leqslant 2 e$, 即 $v \leqslant \frac{e}{3}$. 又因为 $f \leqslant \frac{2 e}{3}$, 故 $2==v-e+f \leqslant \frac{e}{3}-e+\frac{2 e}{3}=$ 0 , 矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 对哪些 $n$, 存在 $n$ 条棱的多面体?
+%%<SOLUTION>%%
+以多面体的顶点为图的顶点, 以多面体的棱为边, 构成一个连通平面图.
+则 $v \geqslant 4, f \geqslant 4$. 由欧拉公式 $e=v+f-2 \geqslant 6$, 即没有棱数少于 6 的多面体.
+若有 $e=7$ 的图, 则 $3 f \leqslant 2 \times 7$, 即 $f=4$, 但四个面的多面体只有 6 条棱, 故无 7 条棱的多面体.
+考虑 $k \geqslant 4$, 以 $k$ 边形为底的棱雉为 $2 k$ 条棱的多面体,而把 $k-1$ 边形为底的棱雉底角处的一个三面角"锯掉一个小尖儿", 得 $2 k+1$ 条棱的多面体.
+综上, $n \geqslant 6, n \neq 7$ 时, 有 $n$ 条棱的多面体.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 一个凸多面体有 $10 n$ 个面.
+求证: 有 $n$ 个面边数相同.
+%%<SOLUTION>%%
+设这个凸多面体有 $x$ 个顶点,且设 $10 n$ 个面上分别有 $C_1, C_2, \cdots, C_{10 n}$ 个顶点和 $a_1, a_2, \cdots, a_{10 n}$ 条边,故凸多面体棱的数目为 $\frac{1}{2} \sum_{i=1}^{10 n} a_i$. 由欧拉定理得 $10 n+x=\frac{1}{2} \sum_{i=1}^{10 n} a_i+2$. 又 $x \leqslant \frac{1}{3} \sum_{i=1}^{10 n} a_i$, 所以 $\frac{1}{2} \sum_{i=1}^{10 n} a_i+2-10 n \leqslant \frac{1}{3} \sum_{i=1}^{10 n} a_i$, 即 $\sum_{i=1}^{10 n} a_i \leqslant 60 n-12$.
+若 $10 n$ 个面中不存在 $n$ 个面边数相同, 则 $\sum_{i=1}^{10 n} a_i \geqslant(3+4+\cdots+12) (n-1)+13 \times 10=75 n+55>60 n-12$, 矛盾, 所以至少有 $n$ 个面边数相同.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 证明如图(<FilePath:./figures/fig-c7p10.png>)无哈密顿圈.
+%%<SOLUTION>%%
+图中的面只有 2 边形及 6 边形两种, 分别有 3 个.
+若此图有哈密顿圈, 根据定理四, $4\left(f_6^{\prime}-f_6^{\prime \prime}\right)=0$, 即 $f_6^{\prime}=f_6^{\prime \prime}$, 但 $f_6^{\prime}+f_6^{\prime \prime}=3$, 这不可能.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 如图(<FilePath:./figures/fig-c7p11.png>), 有哈密顿圈, 证明任一哈密顿圈如果有边 $e$, 那么这个圈一定不含边 $e^{\prime}$.
+%%<SOLUTION>%%
+由定理四, $2\left(f_4^{\prime}-f_4^{\prime \prime}\right)+3\left(f_5^{\prime}-f_5^{\prime \prime}\right)=0$. 所以 $f_4^{\prime}-f_4^{\prime \prime}$ 是 3 的倍数, 即 5 个四边形中有 4 个在圈外,一个在圈内或 4 个在圈内, 一个在圈外.
+如果这个哈密顿圈既过 $e$, 又过 $e^{\prime}$, 则 $e$ 的两侧的两个四边形分别在哈密顿圈的内部与外部, $e^{\prime}$ 的两侧的两个四边形也分别在圈的内部与外部, 从而圈内、圈外至少各有两个四边形,矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 设 $S=\left\{x_1, x_2, \cdots, x_n\right\}(n \geqslant 3)$ 是平面上的一个点集, 它的任意两点间的距离至少为 1 . 证明最多有 $3 n-6$ 个点对, 它们之间的距离为 1 .
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c7a12.png>), 作图 $G=(V, E)$, 其中 $V=\left\{x_1, x_2, \cdots, x_n\right\}, G$ 中两顶点 $x_i, x_j$ 相邻的充要条件是 $d\left(x_i, x_j\right)=1$. 设 $G$ 中存在不相同的两边 $A B 、 C D$ 交于 $O$ 点, 如图所示.
+因为 $d(A, B)=1, d(C, D)=1$, 不失一般性,设 $d(O, A) \leqslant \frac{1}{2}, d(O, C) \leqslant \frac{1}{2}, A B$ 与 $C D$ 间夹角为 $\theta$, 则 $d(A, C)= \left\{d^2(O, A)+d^2(O, C)-2 d(O, A) \times d(O, C) \cos \theta\right\}^{\frac{1}{2}}$,
+按上述条件仅当 $\theta=\pi$ 且 $d(O, A)=\frac{1}{2}, d(O, C)=\frac{1}{2}$ 时, $d(A, C)=1$. 但这时 $A$ 和 $D$ 重合, $B$ 和 $C$ 重合.
+即 $A B$ 与 $D C$ 为同一边,这与假设是两条不相同的边矛盾.
+除此情况外, 还有 $d(A, C)<1$, 这与 $S$ 中任意两点距离不小于 1 的假设条件矛盾.
+综上所述, $G$ 为平面图, 于是 $G$ 的边数 $e \leqslant 3 n-6$.
+%%PROBLEM_END%%
+
+

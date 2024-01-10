@@ -1,0 +1,181 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知 $x_1, x_2, \cdots, x_{40}$ 都是正整数, 且 $x_1+x_2+\cdots+x_{40}=58$, 若 $x_1^2+x_2^2+\cdots+x_{40}^2$ 的最大值为 $A$, 最小值为 $B$, 求 $A+B$ 的值.
+%%<SOLUTION>%%
+解:为把 58 写成 40 个正整数的和的写法只有有限种, 故 $x_1^2+ x_2^2+\cdots+x_{40}^2$ 的最小值和最大值是存在的.
+不妨设 $x_1 \leqslant x_2 \leqslant \cdots \leqslant x_{40}$, 若 $x_1>1$, 则 $x_1+x_2=\left(x_1-1\right)+\left(x_2+1\right)$, 且
+$$
+\left(x_1-1\right)^2+\left(x_2+1\right)^2=x_1^2+x_2^2+2\left(x_2-x_1\right)+2>x_1^2+x_2^2 .
+$$
+所以,当 $x_1>1$ 时, 可以把 $x_1$ 逐步调整到 1 , 这时, $x_1^2+x_2^2+\cdots+x_{40}^2$ 将增大; 同样地, 可以把 $x_2, x_3, \cdots, x_{39}$ 逐步调整到 1 , 这时 $x_1^2+x_2^2+\cdots+x_{40}^2$ 将增大.
+于是, 当 $x_1, x_2, \cdots, x_{39}$ 均为 $1, x_{40}=19$ 时, $x_1^2+x_2^2+\cdots+x_{40}^2$ 取得最大值, 即
+$$
+A=\underbrace{1^2+1^2+\cdots+1^2}_{39 \uparrow}+19^2=400 .
+$$
+若存在两个数 $x_i, x_j$, 使得 $x_j-x_i \geqslant 2(1 \leqslant i<j \leqslant 40)$, 则
+$$
+\left(x_i+1\right)^2+\left(x_j-1\right)^2=x_i^2+x_j^2-2\left(x_j-x_i-1\right)<x_i^2+x_j^2,
+$$
+这说明在 $x_1, x_2, \cdots, x_{39}, x_{40}$ 中, 如果有两个数的差大于 1 , 则把较小的数加 1 , 较大的数减 1 , 这时, $x_1^2+x_2^2+\cdots+x_{40}^2$ 将减小.
+所以, 当 $x_1^2+x_2^2+\cdots+x_{40}^2$ 取到最小时, $x_1, x_2, \cdots, x_{40}$ 中任意两个数的差都不大于 1 . 于是当 $x_1=x_2=\cdots=x_{22}=1, x_{23}=x_{24}=\cdots=x_{40}=2$ 时, $x_1^2+x_2^2+\cdots+x_{40}^2$ 取得最小值, 即
+$$
+B=\underbrace{1^2+1^2+\cdots+1^2}_{22 \uparrow}+\underbrace{2^2+2^2+\cdots+2^2}_{18 \uparrow}=94 \text {. }
+$$
+故 $A+B=494$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 将 2006 表示成 5 个正整数 $x_1, x_2, x_3, x_4, x_5$ 之和.
+记 $S= \sum_{1 \leqslant i<j \leqslant 5} x_i x_j$. 问:
+(1)当 $x_1, x_2, x_3, x_4, x_5$ 取何值时, $S$ 取到最大值?
+(2) 进一步地, 对任意 $1 \leqslant i, j \leqslant 5$ 有 $\left|x_i-x_j\right| \leqslant 2$, 当 $x_1, x_2, x_3, x_4, x_5$ 取何值时, $S$ 取到最小值? 说明理由.
+%%<SOLUTION>%%
+解:(1) 首先这样的 $S$ 的值是有界集, 故必存在最大值与最小值.
+若 $x_1+ x_2+x_3+x_4+x_5=2006$, 且使 $S=\sum_{1 \leqslant i<j \leqslant 5} x_i x_j$ 取到最大值, 则必有
+$$
+\left|x_i-x_j\right| \leqslant 1(1 \leqslant i, j \leqslant 5) . \label{eq1}
+$$
+事实上, 假设 式\ref{eq1} 不成立, 不妨假设 $x_1-x_2 \geqslant 2$. 则令 $x_1^{\prime}=x_1-1, x_2^{\prime}=x_2+1$, $x_i^{\prime}=x_i(i=3,4,5)$, 有 $x_1^{\prime}+x_2^{\prime}=x_1+x_2, x_1^{\prime} \cdot x_2^{\prime}=x_1 x_2+x_1-x_2-1>x_1 x_2$. 将 $S$ 改写成
+$$
+S=\sum_{1 \leqslant i<j \leqslant 5} x_i x_j=x_1 x_2+\left(x_1+x_2\right)\left(x_3+x_4+x_5\right)+x_3 x_4+x_3 x_5+x_4 x_5,
+$$
+同时有
+$$
+S^{\prime}=x_1^{\prime} x_2^{\prime}+\left(x_1^{\prime}+x_2^{\prime}\right)\left(x_3+x_4+x_5\right)+x_3 x_4+x_3 x_5+x_4 x_5 .
+$$
+于是有 $S^{\prime}-S=x_1^{\prime} x_2^{\prime}-x_1 x_2>0$. 这与 $S$ 在 $x_1, x_2, x_3, x_4, x_5$ 时取到最大值矛盾.
+所以必有 $\left|x_i-x_j\right| \leqslant 1(1 \leqslant i, j \leqslant 5)$. 因此当 $x_1=402, x_2= x_3=x_4=x_5=401$ 取到最大值.
+(2) 当 $x_1+x_2+x_3+x_4+x_5=2006$ 且 $\left|x_i-x_j\right| \leqslant 2$ 时,只有
+(I ) 402, 402, 402, 400, 400;
+( II ) 402, 402, 401, 401, 400;
+(III) $402 , 401 , 401 , 401 , 401$ 三种情形满足要求.
+而后面两种情形是在第一组情形下作 $x_i^{\prime}=x_i-1, x_j^{\prime}=x_j+1$ 调整下得到的.
+根据上一小题的证明可以知道, 每调整一次, 和式 $S=\sum_{1 \leqslant i<j \leqslant 5} x_i x_j$ 变大.
+所以在 $x_1=x_2=x_3=402, x_4=x_5=400$ 情形取到最小值.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $A, B, C$ 是 $\triangle A B C$ 的三个内角.
+求 $\sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2}$ 的最大值.
+%%<SOLUTION>%%
+解:暂时固定 $A$, 让 $B, C$ 变动, 令 $u=\sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2}$, 那么
+$$
+\begin{aligned}
+u & =\sin \frac{A}{2} \times-\frac{1}{2}\left(\cos \frac{B-C}{2}-\cos \frac{B+C}{2}\right) \\
+& =\frac{1}{2} \sin \frac{A}{2}\left(\cos \frac{B-C}{2}-\sin \frac{A}{2}\right) .
+\end{aligned}
+$$
+显然,当 $B=C$ 时, $\cos \frac{B-C}{2}$ 取得最大值 1 , 从而有
+$$
+u \leqslant \frac{1}{2} \sin \frac{A}{2}\left(1-\sin \frac{A}{2}\right)
+$$
+现在考察 $A$ 的变化对 $u$ 的值的影响,易知
+$$
+\sin \frac{A}{2}\left(1-\sin \frac{A}{2}\right) \leqslant\left(\frac{\sin \frac{A}{2}+\left(1-\sin \frac{A}{2}\right)}{2}\right)^2=\frac{1}{4},
+$$
+所以 $u \leqslant \frac{1}{8}$. 并且当 $A=B=C=60^{\circ}$ 时取到最大值 $\frac{1}{8}$.
+%%<REMARK>%%
+注:本题中, 第一步是将原始的一般状态 $P_0$ 调整到 " $B=C$ " 这样一种较优的状态 $P_1$. 实际上此时我们立即能看出当且仅当 $A=B=C$ 时, $\sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2}$ 取最大值, 但在初等数学框架下, 要承认这点又嫌理由不足,事实上这涉及到连续函数的极限以及最大值必然存在等问题, 中学生不易搞清.
+于是我们在状态 $P_1$ 下将 $u$ 看成 $A$ 的函数, 改用函数方法将 $P_1$ 调整为更优的状态 $P_2$, 即 $A=B=C=60^{\circ}$. 由于状态 $P_2$ 是上述调整策略下唯一的 "终点",故易知此时原式的取值 $\frac{1}{8}$ 是所求的最大值.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 给定不小于 3 的正整数 $n$. 设圆周上依次写了 $n$ 个数 $a_1, a_2, \cdots$, $a_n$ (这里约定 $a_n$ 与 $a_1$ 也相邻). 现对这 $n$ 个数做操作.
+每次操作是: 任选两个相邻的数,使它们加上同一个正整数, 而其他数不变.
+求所有 $n$, 使得当 $a_1$, $a_2, \cdots, a_n$ 是 $1^2, 2^2, \cdots, n^2$ 的任一排列时, 都能经过不多于 $n$ 次操作, 使圆周上所有数全相等.
+%%<SOLUTION>%%
+解:圆内接 $n$ 边形 $A_1 A_2 \cdots A_n$ 的顶点 $A_i$ 对应数 $a_i(i=1,2, \cdots, n)$, 将题目所述的对相邻数字的操作视为对 $n$ 边形相邻顶点的操作 (约定 $A_{i+n}= \left.A_i, a_{i+n}=a_i\right)$.
+假定经过若干步操作后, 所有数都变为 $S$.
+当 $n$ 为偶数时, 记 $A_1, A_3, \cdots, A_{n-1}$ 位置的数之和为 $P, A_2, A_4, \cdots, A_n$ 位置的数之和为 $Q$, 考虑到任何一次操作对 $P$ 与 $Q$ 的改变量相同, 故不改变 $P-Q$ 的值, 而最终时刻 $P-Q$ 等于 0 , 所以初始时刻 $P-Q=a_1-a_2+ a_3-\cdots+a_{n-1}-a_n=0$, 但若取 $\left(a_1, a_2, \cdots, a_n\right)=\left(1^2, 2^2, \cdots, n^2\right)$, 则 $a_1- a_2+a_3-\cdots+a_{n-1}-a_n<0$, 矛盾! 故 $n$ 只能是奇数.
+另一方面, 当 $n$ 为奇数时, 我们证明更强的结论: 无论 $a_1, a_2, \cdots, a_n$ 取怎样的一组正整数,都能经过不多于 $n$ 次操作, 使 $n$ 个顶点的数全相等.
+若对 $A_i$ 与 $A_{i+1}, A_{i+2}$ 与 $A_{i+3}, \cdots, A_{i+n-1}$ 与 $A_{i+n}\left(=A_i\right)$ 各做一次加 1 的操作, $A_i$ 对应的数就增大 2 , 其余数各增大 1 . 称这样的 $\frac{n+1}{2}$ 次操作是对 $A_i$ 的一组操作.
+不妨设 $a_j=\max \left\{a_1, a_2, \cdots, a_n\right\}$. 现对 $A_i$ 做 $a_j-a_i$ 组操作, $i=1,2, \cdots, n$, 共进行了 $\sum_{k=1}^n\left(a_j-a_k\right)$ 组操作.
+操作之后 $A_i$ 对应的数变成
+$$
+\begin{aligned}
+a_i+2\left(a_j-a_i\right)+\sum_{\substack{k=1 \\
+k \neq i}}^n\left(a_j-a_k\right) & =a_i+\left(a_j-a_i\right)+\sum_{k=1}^n\left(a_j-a_k\right) \\
+& =a_j+\sum_{k=1}^n\left(a_j-a_k\right),
+\end{aligned}
+$$
+显然 $n$ 个顶点的数全相等.
+将这 $\sum_{k=1}^n\left(a_j-a_k\right)$ 组操作看作 $\frac{n+1}{2} \sum_{k=1}^n\left(a_j-a_k\right)$ 次 "对相邻两数加 1 " 的操作, 再将其中对 $A_i, A_{i+1}$ 的所有 $q_i$ 次操作合并成一次 "对 $A_i, A_{i+1}$ 各加上 $q_i$ " 的操作, 这样总共只有不超过 $n$ 次操作, 将这些操作作用于 $A_1, A_2, \cdots$, $A_n$ 可使 $n$ 个顶点的数变为相同.
+所以, $n$ 为奇数时, 这个更强的结论成立.
+综上所述,满足条件的一切 $n$ 是全体大于等于 3 的奇数.
+%%<REMARK>%%
+注:本题中对 $n$ 为奇数与 $n$ 为偶数的情形均使用了调整策略.
+当 $n$ 为偶数时, 先仔细分析条件, 弄清可变的是 $n$ 个数 $a_1, a_2, \cdots, a_n$ 的初始排列顺序, 不变的是每次操作前后 $P-Q$ 的值, 这就掌握了操作变换过程的内在不变规律,通过适当选取初始排列顺序即可举出反例.
+当 $n$ 为奇数时, 先忽略"不多于 $n$ 次操作" 的限制, 并且考虑一个自然且基本的问题: 能否做到只调整一个给定位置上的数字, 将其变成最小的单位-1? 题中所述的"一组操作"恰可达到这样的效果, 从而可利用这种操作方式逐步将所有数调整成一样.
+最后通过对调整过程的重组, 确保"不多于 $n$ 次操作"的限制条件也可以满足.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 已知 $a, b, c$ 为非零有理数, 且方程 $a x^2+b y^2+c z^2=0$ 有一组不全为零的有理数解 $\left(x_0, y_0, z_0\right)$, 求证: 对任意 $N>0$, 方程 $a x^2+b y^2+c z^2=$ 1 必有一组有理数解 $\left(x_1, y_1, z_1\right)$, 使得 $x_1^2+y_1^2+z_1^2>N$.
+%%<SOLUTION>%%
+证明:已知得 $a x_0^2+b y_0^2+c z_0^2=0$, 不妨设其中 $x_0 \neq 0$, 令
+$$
+x=k+t x_0, y=t y_0, z=t z_0,
+$$
+其中 $k, t$ 为待定有理数,则
+$$
+\begin{aligned}
+a x^2+b y^2+c z^2 & =a\left(k+t x_0\right)^2+b t^2 y_0^2+c t^2 z_0^2 \\
+& =a k^2+2 a k x_0 t+t^2\left(a x_0^2+b y_0^2+c z_0^2\right) \\
+& =a k^2+2 a k x_0 t,
+\end{aligned}
+$$
+取 $t$ 使 $a k^2+2 a k x_0 t=1$, 即 $t=\frac{1-a k^2}{2 a k x_0}$, 可得
+$$
+\left\{\begin{array}{l}
+x_1=k+t x_0=k+\frac{1-a k^2}{2 a k}, \\
+y_1=t y_0=\frac{1-a k^2}{2 a k} \cdot \frac{y_0}{x_0}, \\
+z_1=t z_0=\frac{1-a k^2}{2 a k} \cdot \frac{z_0}{x_0},
+\end{array}\right.
+$$
+是方程 $a x^2+b y^2+c z^2=1$ 的一组有理数解 (其中 $k$ 仍为待定参数, 但 $k \neq 0$ ).
+由于 $x_1=k+\frac{1-a k^2}{2 a k}=\frac{k}{2}+\frac{1}{2 a k}$, 取 $k>\max \left\{2 \sqrt{n}+1, \frac{1}{|a|}\right\}$ 且 $k$ 为有理数, 则
+$$
+\frac{k}{2}>\sqrt{N}+\frac{1}{2},\left|\frac{1}{2 a k}\right|<\frac{1}{2|a|} \cdot|a|=\frac{1}{2},
+$$
+从而 $x_1=\frac{k}{2}+\frac{1}{2 a k}>\sqrt{N}+\frac{1}{2}-\frac{1}{2}=\sqrt{N}$, 故对这样一组有理数解 $\left(x_1, y_1\right.$, $z_1$ ), 有 $x_1^2+y_1^2+z_1^2>N$.
+%%<REMARK>%%
+注:对于本题, 想到如何构造出一组有理数解是很关键的, 整个解题过程也是先找到构造有理数解 $\left(x_1, y_1, z_1\right)$ 的一种策略, 再对构造过程进行调整, 使限制条件 $x_1^2+y_1^2+z_1^2>N$ 也得以满足.
+引入待定参数 $k$ 的目的正是为了留出调整余地, 使最终 $x_1$ 的选取仍具有足够的自由度, 从而 $x_1^2+y_1^2+z_1^2$ 能取到任意大的值.
+事实上, 本题是作者由一道陈题添加限制条件 $x_1^2+y_1^2+ z_1^2>N$ 所得, 上述解法中, 若只留有待定参数 $t$, 而平凡地取 $k=1$, 即给出原题的一种证明.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设 $A_1, A_2, \cdots, A_n$ 是集合 $X$ 的 $n$ 个非空子集, 且对任意 $i, j \in \{1,2, \cdots, n\}, A_i \cap A_j$ 不是单元集, 求证: 可把集合 $X$ 的元素分成两类, 使每个子集 $A_i(i=1,2, \cdots, n)$ 的元素不全在同一类中.
+%%<SOLUTION>%%
+证明:每个子集 $A_i$ 非空, 且 $A_i=A_i \cap A_i$ 不是单元集, 故 $A_i$ 至少含两个元素.
+在集合 $X$ 的某种分类下, 若 $A_i$ 的元素只出现在一类中, 则称 $A_i$ 为单类集, 若 $A_i$ 的元素出现在两类中, 则称 $A_i$ 为双类集.
+记 $t$ 为 $A_i(i=1,2, \cdots, n)$ 中双类集的数目,若 $t$ 能取到 $n$ 则命题得证.
+因为 $A_1$ 至少含两个元素, 故先将集合 $X$ 的元素分成两类且使 $A_1$ 为双类集, 此时 $t \geqslant 1$.
+下面证明,对使 $t<n$ 的任意一种分类, 经适当调整必可使 $t$ 的值增加.
+设集合 $X$ 中 $x_1, x_2, \cdots, x_r$ 在第一类, $x_{r+1}, x_{r+2}, \cdots, x_n$ 在第二类.
+不妨设此时 $A_1, A_2, \cdots, A_t$ 为双类集, $A_{t+1}, A_{t+2}, \cdots, A_n$ 是单类集, 且 $A_{t+1}= \left\{x_1, x_2, \cdots, x_s\right\}$, 其中 $A_{t+1}$ 至少含两个元素, 故 $2 \leqslant s \leqslant r$, 这也说明第一类元素不少于 2 个.
+现将 $X$ 中的元素 $x_1$ 调到第二类, 其余元素类别不变, 此时集合 $X$ 仍有两类元素,而 $A_{t+1}$ 变成双类集.
+若 $A_i(1 \leqslant i \leqslant t)$ 不含元素 $x_1$, 则 $A_i$ 仍为双类集; 若 $A_i(1 \leqslant i \leqslant t)$ 含元素 $x_1$, 则根据条件, $A_i$ 与 $A_{t+1}$ 必有除 $x_1$ 之外另一公共元素 $x_j(2 \leqslant j \leqslant s)$, 故
+$x_1$ 调到第二类后, $A_i$ 中仍有第一类元素, 即 $A_i$ 仍为双类集.
+综上,调整之后至少 $A_1, A_2, \cdots, A_{t+1}$ 为双类集,故双类集数目不小于 $t+1$. 经有限次这样的调整后必有 $t=n$, 证毕.
+%%<REMARK>%%
+注:本题有两个限制条件:条件 $\mathrm{A}$ 是"把集合 $X$ 的元素分成两类",条件 $\mathrm{B}$ 是 "每个子集 $A_i(i=1,2, \cdots, n)$ 的元素不全在同一类中". 解题过程中,先让条件 $\mathrm{A}$ 实现,再调整元素的分类,在确保 $\mathrm{A}$ 成立的前提下逐步使条件 B 也成立.
+%%PROBLEM_END%%
+
+

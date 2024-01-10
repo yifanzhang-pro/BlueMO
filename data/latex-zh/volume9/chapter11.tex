@@ -1,0 +1,275 @@
+
+%%TEXT_BEGIN%%
+四面体中的不等式.
+三角形是平面上最简单的多边形, 四面体是三维空间中最简单的多面体, 因此四面体可看作是三角形在空间的推广.
+三角形中的许多不等式都可推广到四面体中.
+关于四面体的几何不等式和极值问题已有丰富的结果, 这里介绍几个典型例题.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $d$ 是一个四面体的三组相对棱距离的最小值, $h$ 是四面体的最小高, 求证:
+$$
+2 d>h
+$$
+%%<SOLUTION>%%
+分析:本例是一个典型的立体几何问题, 解决的关键是寻找或者确定一个数量关系比较集中的平面, 从而将问题化归为平面问题来处理.
+证明如图(<FilePath:./figures/fig-c11i1.png>). 不妨设 $A H=h, A C$ 与 $B D$ 的距离为 $d$. 现作 $A F 、 C N$ 分别垂直 $B D$ 于 $F 、 N$, 显然
+$$
+H F / / C N \text {, }
+$$
+于是可在平面 $B C D$ 内作矩形 $F E C N$.
+现考虑 $\triangle A E F, A H$ 为其边 $E F$ 上的高, 边 $A E$ 上的高 $F G=d$, 高 $E M$ 为 $C$ 到面 $A B D$ 的距离, 因此 $E M \geqslant A H$.
+这样一来, 题中的数量关系都集中到了平面 $A E F$ 内, 问题就转化为一个平面几何问题.
+即在 $\triangle A E F$ 中求证 $\frac{A H}{F G}<2$.
+这是不难的, 事实上由 $A H \leqslant E M$ 可知
+$$
+A F \leqslant E F .
+$$
+再注意到 $\triangle A E H \backsim \triangle F E G$, 便有
+$$
+\frac{h}{d}=\frac{A H}{F G}=\frac{A E}{E F}<\frac{(A F+E F)}{E F} \leqslant 2 .
+$$
+%%<REMARK>%%
+注:本例的结果实际上给出了四面体宽度的最好的下界估计(常数 2 是最佳的), 这个结果被袁淑峰和笔者推广到了一般的 $n$ 维单形.
+般 $n$ 维单形宽度的严格上界估计已由杨路、张景中两位先生得到, 对于四面体, 这个结果就是
+$$
+d \leqslant \frac{9 \sqrt{6}}{2} \sqrt{\sum_{i=1}^4 \frac{1}{h_i^2}},
+$$
+等号成立当且仅当这个四面体为正四面体, 由此还可推出 "一切维数相同体积相等的四面体中, 正四面体具有最大的宽度". 有兴趣的读者可参看论文 "杨路, 张景中.
+度量方程用于 Sallee 猜想.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设四面体 $A B C D$ 的内切球半径为 $r$,一组对棱 $A B=a, C D=b$, 求证:
+$$
+r<\frac{a b}{2(a+b)}
+$$
+%%<SOLUTION>%%
+证明:设四面体的体积为 $V$, 表面积为 $S$, 则熟知
+$$
+r=\frac{3 V}{S}, \label{eq1}
+$$
+又由熟知的 Steiner 定理
+$$
+V=\frac{1}{6} a b d \sin \theta, \label{eq2}
+$$
+其中 $d$ 为对棱 $A B$ 与 $C D$ 之间的距离, $\theta$ 为它们所成的角.
+由式\ref{eq1}、\ref{eq2}有
+$$
+r \leqslant \frac{1}{2} \frac{a b d}{S} . \label{eq3}
+$$
+另一方面,如图(<FilePath:./figures/fig-c11i2.png>), 由四面体的棱 $A B$ 之端点到棱 $C D$ 的距离均不小于 $d$, 且其中必有一个大于 $d$, 这样一来
+$$
+S_{\triangle A D C}+S_{\triangle B D C}>b d
+$$
+同理
+$$
+S_{\triangle D A B}+S_{\triangle C A B}>a d
+$$
+相加即得
+$$
+S>(a+b) d
+$$
+由式\ref{eq3}、\ref{eq4}可得
+$$
+r<\frac{a b d}{2(a+b) d}=\frac{a b}{2(a+b)} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $r$ 是四面体 $A_1 A_2 A_3 A_4$ 的内切球半径, $r_1 、 r_2 、 r_3 、 r_4$ 分别是四个面 $\triangle A_2 A_3 A_4 、 \triangle A_1 A_3 A_4 、 \triangle A_1 A_2 A_4 、 \triangle A_1 A_2 A_3$ 的内切圆半径, 求证
+$$
+\frac{1}{r_1^2}+\frac{1}{r_2^2}+\frac{1}{r_3^2}+\frac{1}{r_4^2} \leqslant \frac{2}{r^2}
+$$
+等号成立当且仅当 $A_1 A_2 A_3 A_4$ 是正四面体.
+%%<SOLUTION>%%
+证明:先证一个简单的引理.
+引理设四面体 $A_1 A_2 A_3 A_4$ 的体积为 $V$, 记 $S_1$ 为 $\triangle A_2 A_3 A_4$ 的面积, 等等.
+记 $\widetilde{a_{12}}$ 表示棱 $A_3 A_4$ 的长, 等等.
+则对任意的 $1 \leqslant i<j \leqslant 4$ 有
+$$
+\frac{\widetilde{a_{i j}}}{S_i S_j \sin \theta_{i j}}=\frac{2}{3 V},
+$$
+其中 $\theta_{i j}$ 为顶点 $A_i$ 所对的面与顶点 $A_j$ 所对的面所夹的二面角.
+证明只需证明
+$$
+\frac{\widetilde{a_{12}}}{S_1 S_2 \sin \theta_{12}}=\frac{2}{3 V} .
+$$
+事实上, 如图(<FilePath:./figures/fig-c11i3.png>), 作 $A_1 H \perp$ 面 $A_2 A_3 A_4$, 垂足为 $H$. 作 $H D \perp A_3 A_4$, 则
+$$
+\begin{aligned}
+3 V & =A_1 H \cdot S_1 \\
+& =S_1 \cdot A_1 D \cdot \sin \theta_{12} \\
+& =S_1 \frac{A_1 D \cdot A_3 A_4}{\widetilde{a_{12}}} \sin \theta_{12} \\
+& =\frac{2 S_1 S_2 \sin \theta_{12}}{\widetilde{a_{12}}} .
+\end{aligned}
+$$
+引理得证.
+下证原题.
+设 $A_1 A_2 A_3 A_4$ 的表面积为 $S$, 由引理和公式 $3 V=r S$ 有
+$$
+\widetilde{a_{i j}}=\frac{2}{r S} S_i S_j \sin \theta_{i j},
+$$
+于是
+$$
+\sum_{j \neq i} \widetilde{a_{i j}}=\left(\frac{2}{r S}\right) S_i \sum_{j \neq i} S_j \sin \theta_{i j} . \label{eq1}
+$$
+又由四面体的射影公式
+$$
+S_i=\sum_{j \neq i} S_j \cos \theta_{i j},
+$$
+并应用 Cauchy 公式有
+$$
+\begin{aligned}
+\sum_{j \neq i} S_j \sin \theta_{i j} & =\sum_{j \neq i} \sqrt{\left(S_j+S_j \cos \theta_{i j}\right)\left(S_j-S_j \cos \theta_{i j}\right)} \\
+& \leqslant\left(\sum_{j \neq i} S_j+S_j \cos \theta_{i j}\right)^{\frac{1}{2}}\left(\sum_{j \neq i} S_j-S_j \cos \theta_{i j}\right)^{\frac{1}{2}} \\
+& =S^{\frac{1}{2}}\left(S-2 S_i\right)^{\frac{1}{2}}
+\end{aligned} \label{eq2}
+$$
+注意到
+$$
+\frac{2 S_i}{\sum_{j \neq i} \widetilde{a_{i j}}}=r_i, \label{eq3}
+$$
+由式\ref{eq1}、\ref{eq2}、式\ref{eq3}可得
+$$
+\frac{1}{r_i} \leqslant\left(\frac{1}{r S}\right) \cdot S^{\frac{1}{2}}\left(S-2 S_i\right)^{\frac{1}{2}}
+$$
+由此得
+$$
+\frac{r}{r_i} \leqslant\left(\frac{S-2 S_i}{S}\right)^{\frac{1}{2}}
+$$
+故有
+$$
+\sum_{i=1} \frac{r^2}{r_i^2} \leqslant \sum_{i=1}^4\left(\frac{S-2 S_i}{S}\right)=2
+$$
+此即
+$$
+\frac{1}{r_1^2}+\frac{1}{r_2^2}+\frac{1}{r_3^2}+\frac{1}{r_4^2} \leqslant \frac{2}{r^2} .
+$$
+%%<REMARK>%%
+注:问题产生的背景: 关于三角形的面积有著名的 Pölya 不等式
+$$
+S \leqslant \frac{\sqrt{3}}{4}(a b c)^{\frac{2}{3}} .
+$$
+在上世纪五十年代末到六十年代初, 几位作者同时独立的将 Pölya 不等式推广到了 $n$ 维单形, 现称为单形的体积优化定理.
+特别地, 对于四面体有
+$$
+V \leqslant \frac{2^{\frac{3}{2}}}{3^{\frac{7}{4}}}\left(\prod_{k=1}^4 S_k\right)^{\frac{3}{8}} .
+$$
+一个自然的平行问题是: 四面体的内切球半径和各个面的内切圆的半径是否有类似的优化不等式?
+为了回答这个问题, 笔者在 1992 年和加拿大数学家 Klamkin 的一次私人通信中介绍了上例中的不等式及推论 $r_1 r_2 r_3 r_4 \geqslant 4 r^4$. 随后这个结果被 Klamkin 推荐发表在 Crux. Math. (Problem. 1990,1994) 上.
+这个结果不久便被唐立华和笔者推广到了 $n$ 维单形, 发表在 Geom. Dedicata, 1996:61 上.
+上面提供的证明和 Crux. Math. 上发表的证明有些不同,完全适用于 $n$ 维空间.
+值得指出,关于单形体积优化定理一类更深刻的推广被张景中和杨路两位先生得到,这已成为距离几何和几何不等式研究中被广泛引用的经典结果.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $R$ 是一个含外心的四面体的外接球半径, $R_1 、 R_2 、 R_3 、 R_4$ 分别是 $\triangle A_2 A_3 A_4 、 \triangle A_1 A_3 A_4 、 \triangle A_1 A_2 A_4 、 \triangle A_1 A_2 A_3$ 的外接圆半径, 求证
+$$
+1 \leqslant \frac{R}{\max \left(R_1, R_2, R_3, R_4\right)} \leqslant \frac{3 \sqrt{2}}{4} . \label{eq1}
+$$
+%%<SOLUTION>%%
+证明:记 $\Sigma=A_1 A_2 A_3 A_4$ 并设 $O$ 是四面体 $\Sigma$ 的外心且 $O$ 在体内.
+显见 $O$ 在某个面上的射影 $O_i$ 一定是面三角形的外心.
+由 $A_i O_i \leqslant A_i O, i=1,2,3,4$ 便得 $R_i \leqslant R$,且等号可以成立, 式\ref{eq1} 左边的不等式得证.
+现以 $O$ 为中心作一个包含在 $\Sigma$ 内的最大球, 设这个最大球的半径为 $d$, 这个球至少与 $\Sigma$ 的某一个面相切, 不妨设与面 $A_2 A_3 A_4$ 相切, 则切点一定是 $A_2 A_3 A_4$ 的外心, 因此
+$$
+R_1^2=R^2-d^2 . \label{eq2}
+$$
+因包含于 $\Sigma$ 中的球以内切球半径为最大, 由著名不等式 $r \leqslant \frac{R}{3}$ 可得
+$$
+d \leqslant \frac{R}{3}. \label{eq3}
+$$
+由式\ref{eq1}、\ref{eq2}、式\ref{eq3}便得
+$$
+R^2-R_1^2 \leqslant \frac{R^2}{9}
+$$
+由此得
+$$
+R \leqslant \frac{3}{\sqrt{8}} R_1 \leqslant \frac{3}{\sqrt{8}}-\max \left(R_1, R_2, R_3, R_4\right),
+$$
+右边的不等式得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $G$ 为四面体 $A_1 A_2 A_3 A_4$ 的重心, $G$ 到棱 $A_i A_j$ 的距离为 $h_{i j}, G$ 到 $A_i$ 的距离为 $D_i$, 求证:
+$$
+\sum_{1 \leqslant i<j \leqslant 4} h_{i j} \leqslant \frac{\sqrt{3}}{2} \sum_{i=1}^4 D_i . \label{eq1}
+$$
+%%<SOLUTION>%%
+证明:一个基本的想法是将 $\triangle A_i A_j G$ 中的高 $h_{i j}$ 转化为这个三角形中相应的内角平分线来处理.
+为此先证引理.
+引理设 $A T$ 是 $\triangle A B C$ 的内角平分线, 则
+$$
+A T^2 \leqslant \frac{1}{2}(\overrightarrow{A B} \cdot \overrightarrow{A C}+|\overrightarrow{A B}| \cdot|\overrightarrow{A C}|) .
+$$
+证明由角平分线公式有
+$$
+A T=\frac{b c}{2(b+c)} \cos \frac{A}{2} \leqslant \sqrt{b c} \cos \frac{A}{2} .
+$$
+因此
+$$
+A T^2 \leqslant b c \cos ^2 \frac{A}{2}=\frac{1}{2} b c(1+\cos A)=\frac{1}{2}(\overrightarrow{A B} \cdot \overrightarrow{A C}+|\overrightarrow{A B}| \cdot|\overrightarrow{A C}|) .
+$$
+引理得证.
+下面回证原题.
+为简单起见, 记 $\overrightarrow{G A_i}=\overrightarrow{A_i}, i=1,2,3,4$, 则
+$$
+\sum_{i=1}^4 \overrightarrow{A_i}=\overrightarrow{0},
+$$
+因此
+$$
+\left(\sum_{i=1}^4 \overrightarrow{A_i}\right)^2=0
+$$
+也即
+$$
+\sum_{i=1}^4 D_i^2+2 \sum_{1 \leqslant i<j \leqslant 4} \overrightarrow{A_i} \cdot \overrightarrow{A_j}=0 . \label{eq2}
+$$
+另一方面, 由引理知
+$$
+h_{i j}^2 \leqslant \frac{1}{2}\left(\overrightarrow{A_i} \cdot \overrightarrow{A_j}+\left|\overrightarrow{A_i}\right| \cdot\left|\overrightarrow{A_j}\right|\right),
+$$
+因此
+$$
+\begin{aligned}
+\left(\sum_{1 \leqslant i<j \leqslant 4} h_{i j}\right)^2 & \leqslant 6 \sum_{1 \leqslant i<j \leqslant 4} h_{i j}^2 \\
+& \leqslant 3 \sum_{1 \leqslant i<j \leqslant 4}\left(\overrightarrow{A_i} \cdot \overrightarrow{A_j}+\left|\overrightarrow{A_i}\right| \cdot\left|\overrightarrow{A_j}\right|\right) \\
+& =3 \sum_{1 \leqslant i<j \leqslant 4} \overrightarrow{A_i} \cdot \overrightarrow{A_j}+3 \sum_{1 \leqslant i<j \leqslant 4} D_i \cdot D_j,
+\end{aligned} \label{eq3}
+$$
+将式\ref{eq2}代入\ref{eq3}可得
+$$
+\begin{aligned}
+\left(\sum_{1 \leqslant i<j \leqslant 4} h_{i j}\right)^2 & \leqslant-\frac{3}{2} \sum_{i=1}^4 D_i^2+3 \sum_{1 \leqslant i<j \leqslant 4} D_i \cdot D_j \\
+& =\frac{3}{2}\left(-\sum_{i=1}^4 D_i^2+\left[\left(\sum_{i=1}^4 D_i\right)^2-\sum_{i=1}^4 D_i^2\right]\right) \\
+& =\frac{3}{2}\left[\left(\sum_{i=1}^4 D_i\right)^2-2 \sum_{i=1}^4 D_i^2\right] \\
+& \leqslant \frac{3}{2}\left[\left(\sum_{i=1}^4 D_i\right)^2-\frac{1}{2}\left(\sum_{i=1}^4 D_i\right)^2\right] \\
+& =\frac{3}{4}\left(\sum_{i=1}^4 D_i\right)^2,
+\end{aligned} \label{eq4}
+$$
+上面的最后一个不等式用到了 Cauchy 不等式.
+由式\ref{eq4}便立得所证的不等式.
+%%<REMARK>%%
+注:本例是陈计先生一个猜想的特例.
+陈计先生的猜想是: 设 $P$ 是四面体 $A_1 A_2 A_3 A_4$ 内一点, $P$ 到棱 $A_i A_j$ 的距离为 $h_{i j}, P$ 到顶点 $A_i$ 的距离为 $R_i$, 则
+$$
+\sum_{1 \leqslant i<j \leqslant 4} h_{i j} \leqslant \frac{\sqrt{3}}{2} \sum_{i=1}^4 R_i .
+$$
+%%PROBLEM_END%%
+
+

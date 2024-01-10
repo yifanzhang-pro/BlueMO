@@ -1,0 +1,235 @@
+
+%%TEXT_BEGIN%%
+阶及其应用.
+设 $n>1, a$ 是满足 $(a, n)=1$ 的整数,则必有一个 $r(1 \leqslant r \leqslant n-1)$ 使得 $a^r \equiv 1(\bmod n)$.
+事实上, 由于 $n$ 个数 $a^0, a^1, \cdots, a^{n-1}$ 都与 $n$ 互素, 故它们模 $n$ 至多有 $n-$ 1 个不同的余数, 因此其中必有两个模 $n$ 同余, 即有 $0 \leqslant i<j \leqslant n-1$, 使得 $a^i \equiv a^j(\bmod n)$, 故 $a^{j-i} \equiv 1(\bmod n)$,于是取 $r=j-i$ 则符合要求.
+满足 $a^r \equiv 1(\bmod n)$ 的最小正整数 $r$, 称为 $a$ 模 $n$ 的阶.
+由上面的论证可知 $1 \leqslant r \leqslant n-1$. 下述的 (1) 表明, $a$ 模 $n$ 的阶具有一个非常锐利的性质:
+(1) 设 $(a, n)=1, a$ 模 $n$ 的阶为 $r$. 若正整数 $N$ 使得 $a^N \equiv 1(\bmod n)$, 则 $r \mid N$.
+这是因为, 设 $N=r q+k(0 \leqslant k<r)$, 则
+$$
+1 \equiv a^N \equiv\left(a^r\right)^q \cdot a^k \equiv a^k(\bmod n) .
+$$
+因 $0 \leqslant k<r$, 故由上式及 $r$ 的定义知, 必须有 $k=0$, 从而 $r \mid N$.
+性质 (1) 结合欧拉定理(第 7 单元中 (2)) 可推出
+(2) 设 $(a, n)=1$, 则 $a$ 模 $n$ 的阶 $r$ 整除 $\varphi(n)$. 特别地, 若 $n$ 是素数 $p$, 则 $a$ 模 $p$ 的阶整除 $p-1$.
+许多问题中,求出 $a$ 模 $n$ 的阶往往非常重要.
+利用 $a$ 模 $n$ 的阶及性质 (1), 便能由某些整数幂的指数产生整除关系, 这是数论中导出整除的一个基本方法.
+另一方面, 确定 $a$ 模 $n$ 的阶通常极其困难, 当问题具有某种特殊性时方有可能实现.
+对于具体的 $a$ 和 $n$, 逐一计算 $a, a^2, \cdots$, 模 $n$ 的余数可以求得 $a$ 模 $n$ 的阶; 若利用(2), 这一手续能稍被简化.
+阶是解决许多问题的有力工具, 我们举些例子作为说明.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $n>1, n \mid\left(2^n+1\right)$, 证明 $3 \mid n$.
+%%<SOLUTION>%%
+证明:显然 $n$ 是奇数.
+设 $p$ 是 $n$ 的最小素因子,我们证明 $p=3$, 从而 31 $n$. 设 2 模 $p$ 的阶是 $r$. 由 $2^n \equiv-1(\bmod n)$ 知
+$$
+2^{2 n} \equiv 1(\bmod p) . \label{eq1}
+$$
+又因 $p \geqslant 3$, 故费马小定理给出
+$$
+2^{p-1} \equiv 1(\bmod p) . \label{eq2}
+$$
+由 式\ref{eq1}、\ref{eq2}及阶的性质推出 $r \mid 2 n$ 及 $r \mid(p-1)$, 故 $r \mid(2 n, p-1)$. 不难证明 $( 2 n, p-1)=2$. 这是因为, 由 $2 \nmid n$ 知 $2 \mid(2 n, p-1)$, 但 $2^2 \nmid(2 n, p-1)$; 另一方面, 若有奇素数 $q \mid(2 n, p-1)$, 则 $q \mid(p-1)$, 及 $q \mid n$, 但前者表明 $q<p$, 这与 $p$ 是 $n$ 的最小素因子相违.
+所以 $(2 n, p-1)=2$, 从而 $r=2$, 故 $p=3$.
+一个关键想法是考虑 $n$ 的 (最小) 素因子 $p$, 通过模 $p$ 而导出结果.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $n>1$, 证明 $n \nmid\left(2^n-1\right)$.
+%%<SOLUTION>%%
+证明:一反证法, 设有一个 $n>1$, 使 $n \mid\left(2^n-1\right)$. 对 $n$ 的任一个素因子 $p$, 有 $p \geqslant 3$. 设 2 模 $p$ 的阶为 $r$, 则显然 $r>1$. 由 $2^n \equiv 1(\bmod n)$ 推出
+$$
+2^n \equiv 1(\bmod p) . \label{eq1}
+$$
+又由费马小定理得
+$$
+2^{p-1} \equiv 1(\bmod p) . \label{eq2}
+$$
+因此 $r \mid n$ 及 $r \mid(p-1)$, 从而 $r \mid(n, p-1)$. 现在我们特别地取 $p$ 为 $n$ 的最小素因子, 则必有 $(n, p-1)=1$. 因为否则就有素数 $q \mid(n, p-1)$, 故 $q \mid (p-1)$, 及 $q \mid n$, 但前者意味着 $q<p$, 这与 $p$ 的选取矛盾, 因此 $(n, p-1)=$ 1 , 故 $r=1$,矛盾!
+%%<REMARK>%%
+注:1 证明一这一解法的一个要点仍是考虑 $n$ 的素因子.
+因 $n>1$ 等价于 $n$ 有一个素因子, 因此, 从 $2^n \equiv 1(\bmod n)$ 过渡到同余式 \ref{eq1}, 虽然减弱了反证法假设, 但仍刻画了 $n>1$.
+模一个素数的同余, 往往有一些更适用的性质 (或结果), 就本题而言, 这样做的益处在于此时有同余式\ref{eq2}. 例 1 及下面的例 3 均如此.
+注:2 同余式\ref{eq1}和\ref{eq2}对于 $n$ 的任一素因子 $p$ 均成立.
+因此, 在证法一的开始阶段, 我们将 $p$ 视为一待定参量, 导出 $r \mid(p-1, n)$, 便提供了选择 $p$ 以产生矛盾的机会.
+保留参量, 使我们的处理留有选择的余地, 保持了某种灵活性, 这是一种非常基本的手法.
+注:3 由第 5 单元例 10 可知, 满足例 1 条件的 $n$ 有无穷多个, 这与例 2 的结论完全相反.
+读者可查看一下, 是论证中的哪些差异, 使得导出的结果如此的不同.
+注:4 顺便提一下, 不利用阶也能解决例 2. 设 $p$ 是 $n$ 的最小素因子, 则 $(p-1, n)=1$. 而由 式\ref{eq1}, \ref{eq1} 知 $p \mid\left(2^{p-1}-1,2^n-1\right)$, 故由第 2 单元例 4 推出
+$p \mid\left(2^{(p-1, n)}-1\right)$, 从而 $p \mid 1$,矛盾!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $n>1$, 证明 $n \nmid\left(2^n-1\right)$.
+%%<SOLUTION>%%
+证明二这一解法不必考虑 $n$ 的素因子.
+设有 $n>1$, 使 $n \mid\left(2^n-1\right)$, 则 $n$ 为奇数, 设 $r$ 是 2 模 $n$ 的阶, 则由 $2^n \equiv 1(\bmod n)$ 知 $r \mid n$. 又 $2^r \equiv 1(\bmod n)$, 故更有 $2^r \equiv 1(\bmod r)$, 即
+$$
+r \mid\left(2^r-1\right) . \label{eq3}
+$$
+因阶 $r$ 满足 $1 \leqslant r<n$, 而显然 $r \neq 1$ (否则导出 $n=1$ ), 故 $1<r<n$. 由 式\ref{eq3} 重复上述论证, 可得出无穷多个整数 $r_i(i=1,2, \cdots)$, 满足 $r_i \mid 2^{r_i}-1$, 且 $n>r>r_1>r_2>\cdots>1$, 这显然不可能.
+这一证明,也可采用下面更为简单的表述: 取 $n>1$ 是最小的使 $n \mid\left(2^n-1\right)$ 的整数, 上面论证产生了一个整数 $r$, 使得 $r \mid\left(2^r-1\right)$ 且 $1<r<n$, 这与 $n$ 的选取相违.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $n>1,2 \nmid n$, 则对任意整数 $m>0$, 有 $n \nmid\left(m^{n-1}+1\right)$.
+%%<SOLUTION>%%
+证明:假设有大于 1 的奇数 $n$, 满足 $n \mid\left(m^{n-1}+1\right)$, 则 $(m, n)=1$. 设 $p$ 是 $n$ 的任一个素约数, $r$ 是 $m$ 模 $p$ 的阶 (注意 $p \nmid m$ ). 又设 $n-1=2^k t, k \geqslant 1,2 \nmid t$. 那么就有
+$$
+m^{2^k t} \equiv-1(\bmod p), \label{eq1}
+$$
+从而 $m^{2^{k+1} t} \equiv 1(\bmod p)$,故 $r \mid 2^{k+1} t$.
+关键的一点是证明 $2^{k+1} \mid r$. 假设这结论不对, 那么 $r=2^s r_1$, 其中 $0 \leqslant s \leqslant k, r_1 \mid t$. 则由 $m^r \equiv 1(\bmod p)$ 推出 $m^{2^k t} \equiv 1(\bmod p)$, 结合 式\ref{eq1} 得 $p=2$, 矛盾! 故 $2^{k+1} \mid r$.
+现在由 $(p, m)=1$, 得出 $m^{p-1} \equiv 1(\bmod p)$, 从而 $r \mid(p-1)$, 故 $2^{k+1} \mid (p-1)$, 即 $p \equiv 1\left(\bmod 2^{k+1}\right)$. 由于 $p$ 是 $n$ 的任一素因子, 将 $n$ 作标准分解, 即知 $n \equiv 1\left(\bmod 2^{k+1}\right)$, 即 $2^{k+1} \mid(n-1)$, 但这与前面所设的 $2^k \|(n-1)$ 相违.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $p$ 是一个奇素数.
+%%<SOLUTION>%%
+证明: $\frac{p^{2 p}+1}{p^2+1}$ 的任一正约数均 $\equiv 1(\bmod 4 p)$. 证明我们只要证明 $\frac{p^{2 p}+1}{p^2+1}$ 的任一个素约数 $q$ 满足 $q \equiv 1(\bmod 4 p)$ 即可.
+首先注意
+$$
+\frac{p^{2 p}+1}{p^2+1}=p^{2(p-1)}-p^{2(p-2)}+\cdots-p^2+1 . \label{eq1}
+$$
+故 $q \neq p$. 设 $r$ 是 $p$ 模 $q$ 的阶, 因
+$$
+p^{2 p} \equiv-1(\bmod q), \label{eq2}
+$$
+故 $p^{4 p} \equiv 1(\bmod q)$, 所以 $r \mid 4 p$. 于是 $r=1,2,4, p, 2 p$ 或 $4 p$.
+若 $r=1,2, p, 2 p$, 将导出 $p^{2 p} \equiv 1(\bmod q)$, 结合 式\ref{eq2} 得到 $q=2$, 这不可能; 若 $r=4$, 则因 $q$ 是素数, 我们推出 $q \mid\left(p^2-1\right)$ 或 $q \mid\left(p^2+1\right)$. 前者已证明为不可能.
+若后者成立, 即 $p^2 \equiv-1(\bmod q)$. 我们将 \ref{eq1} 式模 $q$, 其左边模 $q$ 当然为 0 , 而右边 $\equiv(-1)^{p-1}-(-1)^{p-2}+\cdots-(-1)+1 \equiv p(\bmod q)$. 因此 $p= q$, 这不可能,故 $r \neq 4$. 因此只能 $r=4 p$.
+最后, 因 $(p, q)=1$, 故由费马小定理得 $p^{q-1} \equiv 1(\bmod q)$, 于是 $r \mid(q-- 1)$, 即 $4 p \mid(q-1)$, 因此 $q \equiv 1(\bmod 4 p)$.
+上面的解法中, 关键是确定 $p$ 模 $q$ 的阶.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. (1)设 $p$ 是奇素数, $a \neq \pm 1, p \nmid a$. 设 $r$ 是 $a$ 模 $p$ 的阶, $k_0$ 满足 $p^{k_0} \|\left(a^r-1\right)$. 记 $r_k$ 是 $a$ 模 $p^k$ 的阶, 则有
+$$
+r_k=\left\{\begin{array}{l}
+r, \text { 若 } k=1, \cdots, k_0, \\
+r p^{k-k_0}, \text { 若 } k>k_0 .
+\end{array}\right.
+$$
+(2)设 $a$ 是奇数, $a \equiv 1(\bmod 4), a \neq 1, k_0$ 满足 $2^{k_0} \|(a-1)$. 记 $l_k$ 是 $a$ 模 $2^k$ 的阶, 则有
+$$
+l_k=\left\{\begin{array}{l}
+1, \text { 若 } k=1, \cdots, k_0, \\
+2^{k-k_0}, \text { 若 } k>k_0 .
+\end{array}\right.
+$$
+(3)设 $a$ 是奇数, $a \equiv-1(\bmod 4), a \neq-1, k_0$ 满足 $2^{k_0} \|(a+1)$. 记 $l_k$ 是 $a$ 模 $2^k$ 的阶, 则有
+$$
+l_k=\left\{\begin{array}{l}
+1, \text { 若 } k=1, \\
+2, \text { 若 } k=2, \cdots, k_0+1, \\
+2^{k-k_0}, \text { 若 } k>k_0+1 .
+\end{array}\right.
+$$
+%%<SOLUTION>%%
+证明:(1) 当 $1 \leqslant k \leqslant k_0$ 时, 由 $a^{r_k} \equiv 1\left(\bmod p^k\right)$ 推出 $a^r \equiv 1(\bmod p)$, 故由 $r$ 的定义知 $r \mid r_k$. 另一方面, 由 $a^r \equiv 1\left(\bmod p^{k_0}\right)$ 可得 $a^r \equiv 1\left(\bmod p^k\right)$, 故由 $r_k$ 的定义推出 $r_k \mid r$, 从而 $r_k=r\left(k=1, \cdots, k_0\right)$.
+现在设 $k>k_0$. 我们先证明, 对每个 $i=0,1, \cdots$, 有 $p^{k_0+i} \|\left(a^{r p^i}-1\right)$,
+即有
+$$
+a^{r p^i}==1+p^{k_0+i} u_i,\left(u_i, p\right)=1 . \label{eq1}
+$$
+这可用归纳法来证明: 当 $i=0$ 时, 由 $k_0$ 的定义知 式\ref{eq1} 成立.
+设 式\ref{eq1} 对 $i \geqslant 0$ 时已成立, 则由二项式定理易知
+$$
+\begin{aligned}
+a^{r p^{i+1}} & =\left(1+p^{k_0+i} u_i\right)^p=1+p^{k_0+i+1} u_i+\mathrm{C}_p^2 p^{2 k_0+2 i} u_i^2+\cdots \\
+& =1+p^{k_0+i+1}\left(u_i+\mathrm{C}_p^2 p^{k_0+i-1} u_i^2+\cdots\right) \\
+& =1+p^{k_0+i+1} u_{i+1}
+\end{aligned}
+$$
+易知 $p \nmid u_{i+1}$ (注意, 我们这里需要 $p \geqslant 3$ ), 于是 式\ref{eq1} 对所有 $i \geqslant 0$ 都成立:
+利用式\ref{eq1}, 我们对 $k \geqslant k_0$ 归纳证明 $r_k=r p^{k-k_0}$. 当 $k=k_0$ 时, 前面已证明了结论成立.
+若 $k>k_0$, 设已有 $r_{k-1}=r p^{k-k_0-1}$. 一方面, 在 式\ref{eq1} 中取 $i=k-k_0$ 可知 $a^{r p^{k-k_0}} \equiv 1\left(\bmod p^k\right)$,故 $r_k \mid r p^{k-k_0}$. 另一方面, 由 $a^{r_k} \equiv 1\left(\bmod p^k\right)$ 可推出 $a^{r_k} \equiv 1\left(\bmod p^{k-1}\right)$, 故 $r_{k-1} \mid r_k$, 因此 $r_k=r p^{k-k_0}$ 或 $r p^{k-k_0-1}$. 但在 (1) 中取 $i=k- k_0-1$, 可知 $a^{r p^{k-k_0-1}} \not \equiv 1\left(\bmod p^k\right)$, 故必须 $r_k=r p^{k-k_0}$.
+(2)当 $1 \leqslant k \leqslant k_0$ 时,结论显然成立.
+当 $k>k_0$ 时,注意 $a \equiv 1(\bmod 4)$, $a \neq 1$ 意味着 $k_0 \geqslant 2$, 由此极易用归纳法对 $i=0,1, \cdots$ 证明
+$$
+a^{2^i}=1+2^{k_0+i} u_i, 2 \nmid u_i . \label{eq2}
+$$
+由式\ref{eq2}则不难与 (1)中相同的论证推出, $l_k=2^{k-k_0}\left(k \geqslant k_0\right)$.
+(3) 由 $a \equiv-1(\bmod 4)$, 易证明 $k=1,2, \cdots, k_0+1$ 时的结论.
+又用归纳法不难得知, 对 $i=1,2, \cdots$, 有
+$$
+a^{2^i}=1+2^{k_0+i} u_i, 2 \nmid u_i . \label{eq3}
+$$
+由此可与 (1) 中论证相同地得到 $l_k=2^{k-k_0}$ (对 $k \geqslant k_0+1$ ).
+%%<REMARK>%%
+注1 设 $a$ 和 $n>0$ 为给定的互素的整数, 且均不是 \pm 1 , 并设 $n$ 的标准分解为 $n=2^\alpha p_1^{\alpha_1} \cdots p_k^{\alpha_2}$ ( $p_i$ 是奇素数, $\alpha \geqslant 0$ ). 若已求得 $a$ 模 $p_i$ 的阶, 则由例 5 可确定 $a$ 模 $p_i^\alpha$ 的阶, 也可求得 $a$ 模 $2^\alpha$ 的阶.
+进而, 由习题 8 第 2 题的结果, 可求得 $a$ 模 $n$ 的阶.
+因此, 为确定 $a$ 模一个整数 $n$ 的阶, 最终均化归为求 $a$ 模一个奇素数 $p$ 的阶.
+后者一般而言, 是一个极其困难的问题, 但对于较小的 $a$ 和 $p$, 可以通过手算求得结果.
+注2 设 $p$ 是奇素数, $a \neq \pm 1, p \nmid a, r$ 是 $a$ 模 $p$ 的阶, $k_0$ 满足 $p^{k_0} \|\left(a^r-1\right)$ , 则由例 5 中 式\ref{eq1} 的证明可见, 对任意与 $p$ 互素的正整数 $m$, 有
+$$
+a^{m r p^i}=1+p^{k_0+i} u_i^{\prime},\left(u_i^{\prime}, p\right)=1, i=0,1, \cdots .
+$$
+由此并注意 $p$ 必与 $r$ 互素, 我们易得:
+(1)设正整数 $n$ 满足 $r \mid n, p^l \| n$, 则 $p^l \| \frac{a^n-1}{a^r-1}$.
+此外,设 $a$ 为奇数, $a \neq \pm 1, k_0$ 满足 $2^{k_0} \|\left(a^2-1\right), m$ 为任意正奇数,则有
+$$
+a^{2^i m}=1+2^{k_0+i-1} u_i^{\prime}, 2 \nmid u_i^{\prime}, i=1,2, \cdots .
+$$
+由此即知:
+(2) 设 $n$ 为正整数, $2^l \| n$. 若 $l \geqslant 1$, 则 $2^{l-1} \| \frac{a^n-1}{a^2-1}$.
+注3 设 $p$ 是奇素数, $a, b$ 为整数, $p \nmid a b$. 则必有正整数 $r$, 使得
+$$
+a^r \equiv b^r(\bmod p) . \label{eq4}
+$$
+这是因为有 $b_1$ 使 $b b_1 \equiv 1(\bmod p)$, 又有正整数 $r$ 满足 $\left(a b_1\right)^r \equiv 1(\bmod p)$, 由此导出 式\ref{eq4}. 此外, 易知使 式\ref{eq4}成立的最小正整数 $r$ 与 $a b_1$ 模 $p$ 的阶相等.
+由此推出, 若正整数 $n$ 满足 $a^n \equiv b^n(\bmod p)$, 则 $r \mid n$
+注2 中的 (1) 与 (2) 有下面的推广, 其证明则完全类似.
+(1) 设 $a \neq \pm b, n$ 为正整数, 若 $r \mid n, p^l \| n$, 则 $p^l \| \frac{a^n-b^n}{a^r-b^r}$.
+(2)设 $a 、 b$ 为奇数, $a \neq \pm b, n$ 为正整数, $2^l \| n$. 若 $l \geqslant 1$, 则有 $2^{l-1} \| \frac{a^n-b^n}{a^2-b^2}$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $a$ 和 $n$ 为整数,均不为 \pm 1 , 且 $(a, n)=1$. 证明: 至多有有限个 $k$, 使得 $n^k \mid\left(a^k-1\right)$.
+%%<SOLUTION>%%
+证明:因 $n \neq \pm 1$, 故 $n$ 有素因子.
+首先设 $n$ 有奇素数因子 $p$, 则 $p \nmid a$. 设 $a$ 模 $p$ 的阶为 $r$, 因 $a \neq \pm 1$, 故有正整数 $k_0$ 使得 $p^{k_0} \|\left(a^r-1\right)$.
+若有无穷多个 $k$ 使得 $n^k \mid\left(a^k-1\right)$, 从而有无穷多个 $k>k_0$ 满足
+$$
+a^k \equiv 1\left(\bmod p^k\right) . \label{eq1}
+$$
+但由例 5 得知, $a$ 模 $p^k$ 的阶是 $r p^{k-k_0}$, 故由 式\ref{eq1}知 $r p^{k-k_0} \mid k$, 从而 $k \geqslant r p^{k-k_0} \geqslant 3^{k-k_0}$, 这样的 $k$ 显然只有有限多个, 产生矛盾.
+若 $n$ 没有奇素数因子, 则 $n$ 是 2 的方幕.
+首先注意, 若奇数 $k$ 使得 $n^k \mid\left(a^k-1\right)$, 则
+$$
+a^k-1=(a-1)\left(a^{k-1}+\cdots+a+1\right) . \label{eq2}
+$$
+被 $2^k$ 整除.
+但式\ref{eq2}中后一个因数是奇数个奇数之和, 故是奇数, 从而 $2^k \mid(a-1)$. 因 $a \neq 1$, 这样的 $k$ 至多有有限多个.
+设有无穷多个偶数 $k=2 l$ 使得 $n^k \mid\left(a^k-1\right)$, 则
+$$
+\left(a^2\right)^\iota \equiv 1\left(\bmod 2^\iota\right) . \label{eq3}
+$$
+定义 $k_0$ 满足 $2^{k_0} \|\left(a^2-1\right)$, 则 $k_0 \geqslant 3$. 由例 5 知, 当 $l>k_0$ 时, $a^2$ 模 $2^l$ 的阶为 $2^{l-k_0}$, 故在 $l>k_0$ 时, 由式\ref{eq3}推出 $2^{l-k_0} \mid l$, 从而 $l \geqslant 2^{l-k_0}$, 但这样的 $l$ 至多有有限多个,矛盾!
+%%PROBLEM_END%%
+
+

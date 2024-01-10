@@ -1,0 +1,58 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $m$ 为大于 4 的整数, 且不是素数.
+证明 $m \mid(m-1)$ !.
+%%<SOLUTION>%%
+因 $m$ 不是素数,故 $m$ 可表示为 $m=a b$, 其中 $1<a 、 b<n$. 当 $a \neq b$ 时, $a 、 b$ 是数列 $1,2, \cdots, m-1$ 中两个不同的项, 故 $(m-1) !=1 \cdot 2 \cdots \cdots \cdot (m-1)$ 被 $m=a \cdot b$ 整除.
+当 $a=b$ 时, $m=a^2$. 由于 $m>4$, 故 $a>2$, 因而 $a^2>2 a$, 即 $m>2 a$. 所以 $a$ 与 $2 a$ 是数列 $1,2, \cdots, m-1$ 中两个不同的项, 因此 $(m-1)$ ! 被 $a \cdot 2 a= 2 m$ 整除.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 证明: 正整数 $n$ 可以表示为连续若干个(至少两个) 正整数之和的充分必要条件是, $n$ 不是 2 的方幕.
+%%<SOLUTION>%%
+设 $n=x+(x+1)+\cdots+(x+k-1), x$ 为正整数, $k \geqslant 2$. 即
+$$
+(2 x+k-1) k=2 n .
+$$
+若 $n$ 为 2 的方幂, 则 $k$ 与 $2 x-1+k$ 都是 2 的方幂, 但 $2 x-1$ 为奇数, 故必须 $k=1$, 这与题设不合.
+反过来, 若 $n$ 不是 2 的方幕, 设 $n=2^{m-1}(2 t+1), m \geqslant 1, t \geqslant 1$. 当 $t \geqslant 2^{m-1}$ 时, 可取 $k=2^m, x=t+1-2^{m-1}$; 当 $t<2^{m-1}$ 时, 可取 $k=2 t+1, x= 2^{m-1}-t$. 则 $k$ 与 $x$ 都是正整数且 $k \geqslant 2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 证明: 任意正整数 $n$ 可表示为 $a-b$ 的形式,其中 $a 、 b$ 为正整数,且 $a 、 b$ 的不同素因子的个数相同.
+%%<SOLUTION>%%
+当 $n$ 为偶数时, 可取 $a=2 n, b=n$. 若 $n$ 为奇数, 设 $p$ 是不整除 $n$ 的最小奇素数,则 $p-1$ 或者没有奇素数因子 (即是 2 的幂), 或者其奇素数因子都整除 $n$. 因此 $a=p n, b=(p-1) n$ 的不同素因子的个数都等于 $n$ 的不同素因子个数加上 1 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 任意给定整数 $n \geqslant 3$, 证明, 存在一个由正整数组成的 $n$ 项的等差数列(公差不为 0$)$,其中任意两项互素.
+%%<SOLUTION>%%
+数列 $\{k \cdot n !+1\}(k=1, \cdots, n)$ 符合要求.
+假设有 $s 、 t(1 \leqslant s<t \leqslant n)$ 使 $s \cdot n !+1$ 与 $t \cdot n !+1$ 不互素, 则有素数 $p$ 整除这两个数, 从而整除它们的差, 即 $p \mid(t-s) n$ !. 因 $p$ 是素数, 故 $p \mid(t-s)$ 或 $p \mid n$ !. 但 $1 \leqslant t-s<n$, 故若 $p \mid(t-s)$, 则也有 $p \mid n !$. 因此我们总有 $p \mid n !$, 再结合 $p \mid s \cdot n !+1$ 可知 $p \mid 1$, 矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 证明: 对每个 $n \geqslant 2$, 存在 $n$ 个互不相等的正整数 $a_1, a_2, \cdots, a_n$, 使得 ( $a_i \left.a_j\right) \mid\left(a_i+a_j\right)(1 \leqslant i, j \leqslant n, i \neq j)$.
+%%<SOLUTION>%%
+采用归纳构造法.
+$n=2$ 时, 可取 $a_1=1, a_2=2$. 假设在 $n=k$ 时已有 $a_1, \cdots, a_k$ 符合要求, 令 $b_0$ 为 $a_1, \cdots, a_k, a_i-a_j(1 \leqslant i, j \leqslant k, i \neq j)$ 的最小公倍数, 则 $k+1$ 个数
+$$
+b_0, a_1+b_0, \cdots, a_k+b_0
+$$
+符合要求.
+%%PROBLEM_END%%
+
+

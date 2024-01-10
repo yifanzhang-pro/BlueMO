@@ -1,0 +1,465 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $n \geqslant a_1>\cdots>a_k \geqslant 1$, 满足: 对任意 $i 、 j$,有 $\left[a_i, a_j\right] \leqslant n$ 成立.
+求证:
+$$
+k \leqslant 2 \sqrt{n}+1 \text {. }
+$$
+%%<SOLUTION>%%
+证法 1 : 取定一个参量 $t, a_i \leqslant t$ 的至多有 $t$ 个, 下面估计大于 $t$ 的那些 $a_i$ 的个数.
+首先,对任意两个 $a_i, a_j$, 有 $\left[a_i, a_j\right] \leqslant n$, 即
+$$
+\frac{a_i a_j}{\left(a_i, a_j\right)} \leqslant n . \label{(1)}
+$$
+而 $\left(a_i, a_j\right) \mid a_i-a_j(\neq 0)$, 故 $\left|a_i-a_j\right| \geqslant\left(a_i, a_j\right)$.
+由(1), $\frac{\left(a_i, a_j\right)}{a_i a_j} \geqslant \frac{1}{n}$, 故 $\frac{\left|a_i-a_j\right|}{a_i a_j} \geqslant \frac{1}{n}$, 即
+$$
+\left|\frac{1}{a_i}-\frac{1}{a_j}\right| \geqslant \frac{1}{n} . \label{(2)}
+$$
+对于 $a_1>a_2>\cdots>a_l>t$, 有 $\frac{1}{n}<\frac{1}{a_1}<\cdots<\frac{1}{a_l}<\frac{1}{t}$.
+结合(2)知 $l \leqslant\left(\frac{1}{t}-\frac{1}{n}\right) \cdot n$.
+综上所述, $k \leqslant t+\left(\frac{1}{t}-\frac{1}{n}\right) \cdot n=\frac{n}{t}+t-1$.
+取 $t=[\sqrt{n}]$, 即有 $k \leqslant 2 \sqrt{n}+1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $n \geqslant a_1>\cdots>a_k \geqslant 1$, 满足: 对任意 $i 、 j$,有 $\left[a_i, a_j\right] \leqslant n$ 成立.
+求证:
+$$
+k \leqslant 2 \sqrt{n}+1 \text {. }
+$$
+%%<SOLUTION>%%
+证法 2 : 我们来估计每一项有些什么性质:
+由 $\left[a_1, a_2\right]=\frac{a_1 \cdot a_2}{\left(a_1, a_2\right)} \leqslant n$, 故 $a_2 \cdot\left[\frac{a_1}{\left(a_1, a_2\right)}\right] \leqslant n$.
+由于 $a_1>a_2$, 易证 $\frac{a_1}{\left(a_1, a_2\right)} \geqslant 2$, 故 $2 a_2 \leqslant n$.
+于是, 我们已有 $a_1 \leqslant n, 2 a_2 \leqslant n$, 猜测对所有 $i(1 \leqslant i \leqslant k)$, 都有
+$$
+i a_i \leqslant n . \label{(3)}
+$$
+假设(3)是正确的,那么
+$k=$ 不超过 $a_t$ 的数的个数 + 大于 $a_t$ 的数的个数
+$\leqslant$ 不超过 $a_t$ 的数的个数 $+t$
+$$
+\leqslant a_t+t \leqslant \frac{n}{t}+t \text {. }
+$$
+取 $t=[\sqrt{n}]+1$, 亦有 $k \leqslant 2 \sqrt{n}+1$. 可见(3)可能是正确的.
+用数学归纳法.
+设 $(i-1) a_{i-1} \leqslant n$, 要证 $i a_i \leqslant n$.
+事实上, $\left[a_i, a_{i-1}\right]=A a_i=B a_{i-1}$, 并且 $\left[a_i, a_{i-1}\right] \leqslant n$.
+(1) 如果 $A \geqslant i$, 则 $i a_i \leqslant n$ 成立.
+(2) 如果 $A<i$, 由于 $a_i<a_{i-1}$, 则 $B<A$.
+$$
+i a_i=\frac{i B}{A} a_{i-1}=\frac{(i-1) i B a_{i-1}}{A(i-1)} \leqslant n \frac{i B}{(i-1)} A,
+$$
+又由于 $A \geqslant B+1$, 故 $n \cdot \frac{i B}{(i-1) A} \leqslant n \frac{i(A-1)}{(i-1) A}<n \frac{i}{i-1} \cdot\left(1-\frac{1}{i}\right)=n$.
+因此(3)成立,证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 对任意 $x \in \mathbf{R}$ 及 $n \in \mathbf{N}_{+}$, 求证:
+(1) $\left|\sum_{k=1}^n \frac{\sin k x}{k}\right| \leqslant 2 \sqrt{\pi}$;
+(2) $\sum_{k=1}^n \frac{|\sin k x|}{k} \geqslant|\sin n x|$.
+%%<SOLUTION>%%
+(1) 记不等式左端和式为 $f(x)$, 易见当 $x=0$ 或者 $\pi$ 时, 不等式成立.
+又由于 $|f(x)|$ 是偶函数, 且以 $\pi$ 为周期,故只须就 $x \in(0, \pi)$ 证明即可.
+对任何固定的 $x \in(0, \pi)$, 取 $m \in \mathbf{N}$, 使得 $m \leqslant \frac{\sqrt{\pi}}{x}<m+1$, 又有
+$$
+\left|\sum_{k=1}^n \frac{\sin k x}{k}\right| \leqslant\left|\sum_{k=1}^m \frac{\sin k x}{k}\right|+\left|\sum_{k=m+1}^n \frac{\sin k x}{k}\right| .
+$$
+这里约定, 当 $m=0$ 时, 上式右边第一个和式为 0 ; 当 $m \geqslant n$ 时, 第二个和式为 0 ,且第一个和式的 $k$ 取 1 到 $n$.
+因为 $|\sin x| \leqslant|x|$, 故 $\left|\sum_{k=1}^m \frac{\sin k x}{k}\right| \leqslant \sum_{k=1}^m, \frac{k x}{k}=m x \leqslant \sqrt{\pi}$. 又记
+$$
+\begin{aligned}
+s_i=\sum_{k=m+1}^i \sin k x(i= & m+1, m+2, \cdots, n), \text { 则 } \\
+s_i \cdot \sin \frac{x}{2} & =\frac{1}{2} \sum_{k=m+1}^i\left[\cos \left(k-\frac{1}{2}\right) x-\cos \left(k+\frac{1}{2}\right) x\right] \\
+& =\frac{1}{2} \cdot\left[\cos \left(m+\frac{1}{2}\right) x-\cos \left(i+\frac{1}{2}\right) x\right],
+\end{aligned}
+$$
+故 $\left|s_i\right| \leqslant \frac{1}{\sin \frac{x}{2}}(i=m+1, m+2, \cdots, n)$.
+从而 $m=\max s_i \leqslant \frac{1}{\sin \frac{x}{2}}, m_0=\min s_i \geqslant-\frac{1}{\sin \frac{x}{2}}$.
+令 $a_k=\sin k x, b_k=\frac{1}{k}(k=m+1, m+2, \cdots, n)$, 有
+$$
+b_{m+1} \geqslant b_{m+2} \geqslant \cdots \geqslant b_n
+$$
+于是, 由 Abel 不等式, $m_0 b_{m+1} \leqslant \sum_{k=m+1}^n \frac{\sin k x}{k} \leqslant m b_{m+1}$, 即
+$$
+\left|\sum_{k=m+1}^n \frac{\sin k x}{k}\right| \leqslant \frac{1}{m+1} \cdot \frac{1}{\sin \frac{x}{2}} .
+$$
+由于当 $x \in\left(0, \frac{\pi}{2}\right]$ 时, $\sin x>\frac{2}{\pi} x$, 故 $x \in(0, \pi)$ 时, $\sin \frac{x}{2}>\frac{2}{\pi} \cdot \frac{x}{2}= \frac{x}{\pi}$
+于是, $\left|\sum_{k=m+1}^n \frac{\sin k x}{k}\right| \leqslant \frac{\pi}{x} \cdot \frac{1}{m+1} \leqslant \frac{\pi}{x} \cdot \frac{x}{\sqrt{\pi}}=\sqrt{\pi}$.
+所以, $\left|\sum_{k=1}^n \frac{\sin k x}{k}\right| \leqslant \sqrt{\pi}+\sqrt{\pi}=2 \sqrt{\pi}$.
+%%<REMARK>%%
+注: 利用此法可以证明下述命题:
+设 $\left\{a_n\right\}$ 为非增的正数数列, 求证: 若对 $n \geqslant 2001, n a_n \leqslant 1$, 则对任意自然数 $m \geqslant 2001, x \in \mathbf{R}$, 有 $\left|\sum_{k=2001}^m a_k \sin k x\right| \leqslant 1+\pi$.
+证明如下:
+令 $f_{m, n}(x)=\sum_{k=n}^m a_k \sin k x(n=2001)$, 则 $f_{m, n}(x)$ 为奇函数, 且为周期函数,故只要在 $[0, \pi]$ 上考虑即可.
+(i) $x \in\left[\frac{\pi}{n}, \pi\right]$, 则
+$$
+|\sin n x+\cdots+\sin m x|=\left|\frac{\cos \left(n-\frac{1}{2}\right) x-\cos \left(m+\frac{1}{2}\right) x}{2 \sin \frac{x}{2}}\right|
+$$
+$$
+\leqslant-\frac{1}{\sin \frac{x}{2}} \leqslant \frac{\pi}{x}
+$$
+因此, $\left|f_{m, n}(x)\right| \leqslant a_n \cdot \frac{\pi}{x} \leqslant n a_n \leqslant 1$.
+(ii) $x \in\left[0, \frac{\pi}{m}\right)$, 则 $\left|f_{m, n}(x)\right| \leqslant a_n n x+\cdots+a_m m x \leqslant(m-n) x \leqslant \pi$.
+(iii) $x \in\left[\frac{\pi}{m}, \frac{\pi}{n}\right]$, 则 $n \leqslant \frac{\pi}{x} \leqslant m$, 记 $k=\left[\frac{\pi}{x}\right]$.
+因此, $\left|f_{m, n}(x)\right| \leqslant\left|a_n \sin n x+\cdots+a_k \sin k x\right|+\mid a_{k+1} \sin (k+1) x+\cdots+ a_m \sin m x \mid$.
+由 $0<x \leqslant \frac{\pi}{k}$ 及 (ii) 知 $\left|a_n \sin n x+\cdots+a_k \sin k x\right| \leqslant \pi$.
+由 $\frac{\pi}{k+1} \leqslant x \leqslant \pi$ 及 (i) 知 $\left|f_{m, k+1}(x)\right| \leqslant 1$, 于是 $\left|f_{m, n}(x)\right| \leqslant\left|f_{k, n}(x)\right|+ \left|f_{m, k+1}(x)\right| \leqslant 1+\pi$.
+(2)用第 2 章习题第 13 题的结论即可证明.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $x_1, x_2, \cdots, x_n(n \geqslant 2)$ 均为正数,求证:
+$$
+\frac{x_1^2}{x_1^2+x_2 x_3}+\frac{x_2^2}{x_2^2+x_3 x_4}+\cdots+\frac{x_{n-1}^2}{x_{n-1}^2+x_n x_1}+\frac{x_n^2}{x_n^2+x_1 x_2} \leqslant n-1 .
+$$
+%%<SOLUTION>%%
+令 $y_{i}={\frac{x_{i+1}x_{i+2}}{x_{i}^{2}}} (i = 1,2,\cdots,n,x_{n+1} =x_1,x_{n+2}=x_2)$ 则原不等式等价于
+$$
+\frac{1}{1+y_1}+\frac{1}{1+y_2}+\cdots+\frac{1}{1+y_n} \leqslant n-1 . \label{(1)}
+$$
+由 $y_i$ 的定义知, $y_1 y_2 \cdots y_n=1$.
+如果(1)中有两项 $\leqslant \frac{1}{2}$, 由于 $\frac{1}{1+y_i}<1$, 结论已成立.
+如果仅有 $\frac{1}{1+y_1} \leqslant \frac{1}{2}$, 即 $y_1 \geqslant 1, y_2 \leqslant 1, y_3 \leqslant 1, \cdots, y_n \leqslant 1$, 那么 $\frac{1}{1+y_1}+\frac{1}{1+y_2} \leqslant \frac{1}{1+y_1}+\frac{1}{1+y_2 y_3 \cdots y_n}=\frac{1}{1+y_1}+\frac{1}{1+\frac{1}{y_1}}=1$.
+故(1)左边前两项之和 $\leqslant 1$, 其余 $n-2$ 项均 $<1$, 所以(1)成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $x_1, x_2, \cdots, x_n$ 是非负实数,且满足:
+$$
+\sum_{i=1}^n x_i^2+\sum_{1 \leqslant i<j \leqslant n}\left(x_i x_j\right)^2=\frac{n(n+1)}{2} .
+$$
+(1) 求 $\sum_{i=1}^n x_i$ 的最大值;
+(2)求所有正整数 $n$,使得 $\sum_{i=1}^n x_i \geqslant \sqrt{\frac{n(n+1)}{2}}$.
+%%<SOLUTION>%%
+(1) $\left(\sum_{i=1}^n x_i\right)^2=\sum_{i=1}^n x_i^2+2 \sum_{1 \leqslant i<j \leqslant n} x_i x_j=\sum_{i=1}^n x_i^2+\sum_{1 \leqslant i<j \leqslant n}\left(x_i x_j\right)^2+ \sum_{1 \leqslant i<j \leqslant n}\left(2 x_i x_j-\left(x_i x_j\right)^2\right) \leqslant \frac{n(n+1)}{2}+\sum_{1 \leqslant i<j \leqslant n} 1=n^2$, 故 $\sum_{i=1}^n x_i \leqslant n$, 等号在 $x_1=x_2=\cdots=x_n=1$ 时取到.
+(2)当 $n=1$ 时, $x_1=1$, 满足 $\sum_{i=1}^n x_i \geqslant \sqrt{\frac{n(n+1)}{2}}$.
+当 $n=2$ 时, 由条件知 $x_1^2+x_2^2+\left(x_1 x_2\right)^2=3$, 于是 $x_1 x_2 \leqslant \sqrt{3}$, 所以
+$$
+\left(x_1+x_2\right)^2=3-x_1^2 x_2^2+2 x_1 x_2=3+x_1 x_2\left(2-x_1 x_2\right) \geqslant 3,
+$$
+故 $x_1+x_2 \geqslant \sqrt{3}$, 等号在 $x_1=\sqrt{3}, x_2=0$ 时取到.
+当 $n=3$ 时, 由题设, $x_1^2+x_2^2+x_3^2+x_1^2 x_2^2+x_2^2 x_3^2+x_3^2 x_1^2=6$.
+若 $\max \left\{x_1 x_2, x_2 x_3, x_3 x_1\right\} \leqslant 2$, 则
+$$
+\begin{aligned}
+\left(x_1+x_2+x_3\right)^2 & =6+x_1 x_2\left(2-x_1 x_2\right)+x_2 x_3\left(2-x_2 x_3\right)+x_3 x_1\left(2-x_3 x_1\right) \\
+& \geqslant 6 .
+\end{aligned}
+$$
+若 $\max \left\{x_1 x_2, x_2 x_3, x_3 x_1\right\}>2$, 不妨设 $x_1 x_2>2$, 则
+$$
+x_1+x_2+x_3 \geqslant x_1+x_2 \geqslant 2 \sqrt{x_1 x_2}>2 \sqrt{2}>\sqrt{6} .
+$$
+当 $n \geqslant 4$ 时,令 $x_1=x_2=x, x_3=x_4=\cdots=x_n=0$.
+则 $2 x^2+x^4=\frac{n(n+1)}{2}$, 故 $x= \pm \sqrt{\frac{\sqrt{2 n(n+1)+4}-2}{2}}$ (负的舍去).
+此时, $\sum_{i=1}^n x_i=\sqrt{2 \sqrt{2 n(n+1)+4}-4}<\sqrt{\frac{1}{2} n(n+1)}$.
+综上所述, 所求的正整数 $n=1,2$ 或 3 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 已知 $a \geqslant b \geqslant c>0$, 且 $a+b+c=3$. 求证:
+$$
+\frac{a}{c}+\frac{b}{a}+\frac{c}{b} \geqslant 3+Q
+$$
+其中 $Q=|(a-1)(b-1)(c-1)|$.
+%%<SOLUTION>%%
+(1) 当 $a \geqslant 1 \geqslant b \geqslant c$ 时, $\theta=2+a b c-a b-b c-c a$.
+因为 $\frac{a}{c}+a c+\frac{b}{a}+a b+\frac{c}{b}+b c \geqslant 2 a+2 b+2 c=6$, 又 $a+b+c \geqslant 3 \sqrt[3]{a b c}$, $a b c \leqslant 1$, 故左边 $\geqslant 6+a b c-1-a b-b c-a c=3+\theta$.
+(2)当 $a \geqslant b \geqslant 1 \geqslant c$ 时, $\theta=a b+b c+c a-2-a b c \geqslant 0$, 故 $a b+b c+c a \geqslant 2+a b c$.
+又由于 $\frac{a}{c}+a b^2 c \geqslant 2 a b, \frac{b}{a}+a b c^2 \geqslant 2 b c, \frac{c}{b}+a^2 b c \geqslant 2 a c$, 故左边 $\geqslant 2(a b+b c+c a)-3 a b c \geqslant a b+b c+c a+2-2 a b c \geqslant a b+b c+c a+1-a b c= 3+\theta$.
+%%<REMARK>%%
+注:: 我们可以证明更强的结论: $\frac{a}{c}+\frac{b}{a}+\frac{c}{b} \geqslant 3+4 \theta$.
+证明: 由于 $\left(\frac{a}{c}+\frac{b}{a}+\frac{c}{b}\right)-\left(\frac{a}{b}+\frac{b}{c}+\frac{c}{a}\right)=\frac{(a-b)(b-c)}{b c}+ \frac{(b-c)(b-a)}{a b}=\frac{(a-b)(b-c)(a-c)}{a b c} \geqslant 0$,
+故 $\frac{a}{c}+\frac{b}{a}+\frac{c}{b}-3 \geqslant \frac{1}{2}\left(\frac{a}{c}+\frac{b}{a}+\frac{c}{b}+\frac{a}{b}+\frac{b}{c}+\frac{c}{a}\right)-3=\frac{a(b-c)^2}{+b(c-a)^2+c(a-b)^2}-$, 以下分两种情况:
+(i) $a \geqslant 1 \geqslant b \geqslant c$, 设 $1-b=\alpha, 1-c=\beta, \alpha \beta \geqslant 0$, 则 $a-1=\alpha+\beta$, $\alpha+\beta \leqslant 2$. 那么
+$$
+\begin{aligned}
+& \frac{a(b-c)^2+b(c-a)^2+c(a-b)^2}{2 a b c} \\
+= & \frac{a(\alpha-\beta)^2+b(\alpha+2 \beta)^2+c(\beta+2 \alpha)^2}{2 a b c} \\
+\geqslant & \frac{b(\alpha+2 \beta)^2+c(\beta+2 \alpha)^2}{2 a b c} \\
+\geqslant & \frac{2 \sqrt{b c} \cdot(\alpha+2 \beta)(\beta+2 \alpha)}{2 a b c} \\
+= & \frac{(\alpha+2 \beta)(\beta+2 \alpha)}{a \sqrt{b c} \geqslant \frac{9 \alpha \beta}{a \sqrt{b c}}}=\frac{9 \alpha \beta}{\sqrt{4 \cdot\left(\frac{a}{2}\right)^2 b c}} \\
+\geqslant & \frac{\sqrt{9 \alpha \beta}}{\sqrt{4 \cdot\left(\frac{a}{2}+\frac{a}{2}+b+c\right.}}=\frac{9 \alpha \beta}{\frac{9}{8}} \\
+= & 8 \alpha \beta \geqslant 4(\alpha+\beta)_{\alpha \beta}=4 \theta .
+\end{aligned}
+$$
+(ii) $a \geqslant b \geqslant 1 \geqslant c$, 设 $1+\alpha=a, 1+\beta=b, c=1-\alpha-\beta$, 则 $\alpha+\beta \leqslant 1$, $\alpha-\beta \geqslant 0$. 此时
+$$
+\begin{aligned}
+& \frac{a(b-c)^2+b(c-a)^2+c(a-b)^2}{2 a b c} \\
+= & \frac{a(2 \beta+\alpha)^2+b(2 \alpha+\beta)^2+c(\alpha-\beta)^2}{2 a b c} \\
+\geqslant & \frac{a(2 \beta+\alpha)^2+b(2 \alpha+\beta)^2}{2 a b c} \\
+\geqslant & \frac{2 \sqrt{a b}(2 \beta+\alpha)(2 \alpha+\beta)}{2 a b c} \\
+\geqslant & 9 \alpha \beta \geqslant 9(\alpha+\beta) \alpha \beta=9 \theta .
+\end{aligned}
+$$
+综上, $\frac{a}{c}+\frac{b}{a}+\frac{c}{b} \geqslant 3+4 \theta$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 已知 $a, b, c \in \mathbf{R}^{+}$, 且 $a b c \leqslant 1$, 求证:
+$$
+\frac{a}{c}+\frac{b}{a}+\frac{c}{b} \geqslant Q+a+b+c,
+$$
+其中 $Q=|(a-1)(b-1)(c-1)|$.
+%%<SOLUTION>%%
+(1) 当 $a \leqslant 1, b \leqslant 1, c \leqslant 1$ 时, 我们来证左式 $\geqslant 3 \geqslant a+b+c+\theta$. 这等价于 $a b+b c+c a \leqslant 2+a b c$.
+利用 $(1-a)(1-b) \geqslant 0$, 得 $2-a-b \geqslant 1-a b \geqslant c(1-a b)$, 故
+$$
+2+a b c \geqslant a+b+c \geqslant a b+b c+c a .
+$$
+(2)当 $a \geqslant 1, b \leqslant 1, c \leqslant 1$ 时, 由 $\theta \geqslant 0$, 有
+$$
+a+b+c \geqslant a b+b c+c a+1-a b c .
+$$
+而左式 $+a c+a b+b c \geqslant 2(a+b+c)$, 则
+$$
+\text { 左式 } \geqslant 2 \sum a-\sum a c+a b c-1=a+b+c+\theta \text {. }
+$$
+(3)当 $a \geqslant 1, b \geqslant 1, c \leqslant 1$ 时,易证 $a+b+c \geqslant a+1+b c \geqslant 2+a b c$.
+又由 $\theta \geqslant 0$, 得 $a b+b c+c a \geqslant a+b+c+a b c-1$.
+$$
+\begin{aligned}
+& \sum a^2 b+\sum b \geqslant 2 \sum a b \geqslant \sum a b+\sum a+a b c-1, \\
+& \sum a^2 b \geqslant \sum a b+a b c-1 \geqslant a b c\left(\sum a b+1-a b c\right),
+\end{aligned}
+$$
+故因此
+$$
+\text { 左端 } \geqslant \sum a b+1-a b c=a+b+c+\theta \text {. }
+$$
+对 $a \geqslant 1, c \geqslant 1, b \leqslant 1$ 的情况也可类似证明.
+综上所述, 原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 在平面上, 将半径分别为 $1 、 2 、 3 、 4 、 5 、 6$ 的六个圆, 沿直线 $l$ 排成一串 (即六圆与 $l$ 外切于六点, 切点相邻的两圆外切). 求首尾两圆外公切线长的最值.
+%%<SOLUTION>%%
+(1)下面证明: 依次按半径为1、3、5、6、4、2或2、4、6、5、3、1的顺序排列6个圆时,首尾两圆外公切线为最长.
+设六个圆依次为 $O_1, O_2, \cdots, O_6, O_i$ 半径为 $r_i$, 且与 $l$ 相切于 $T_i(1 \leqslant i \leqslant 6)$, 对于 $1 \leqslant i \leqslant 5$, 由勾股定理易知: $T_i T_{i+1}^2=4 r_i r_{i+1}$.
+因此, $T_1 T_6=2\left(\sqrt{r_1 r_2}+\sqrt{r_2 r_3}+\sqrt{r_3 r_4}+\sqrt{r_5 r_6}\right)$.
+由于 $r_1, r_2, \cdots, r_6$ 是 $1,2, \cdots, 6$ 的一个排列, 故 $T_1 T_6$ 的表达式可写为
+$$
+T_1 T_6=2\left(\sqrt{1 r_1^{\prime}}+\sqrt{2 r_2^{\prime}}+\sqrt{3 r_3^{\prime}}+\sqrt{4 r_4^{\prime}}+\sqrt{5 r_5^{\prime}}\right) .
+$$
+由上式及排序原理易知, 在 $r_1^{\prime} \leqslant r_2^{\prime} \leqslant r_3^{\prime} \leqslant r_4^{\prime} \leqslant r_5^{\prime}$ 且每个数尽可能大时, $T_1 T_6$ 值最大, 于是试着取 $r_5^{\prime}=r_4^{\prime}=6$.
+另一方面, $r_1^{\prime} 、 r_2^{\prime} 、 r_3^{\prime}$ 只能是 $1 、 2 、 3 、 4 、 5$ 中的某三个, 且互不相等, 所以取 $r_1^{\prime}=3, r_2^{\prime}=4, r_3^{\prime}=5$, 按前面所说的, 这样选取的 $r_1^{\prime}, r_2^{\prime}, \cdots, r_6^{\prime}$ 将使 $T_1 T_6$ 值最大.
+由于此时 $\sum_{i=1}^5 \sqrt{i_i^{\prime}}=\sqrt{1 \times 3}+\sqrt{2 \times 4}+\sqrt{3 \times 5}+\sqrt{4 \times 6}+\sqrt{5 \times 6}= \sqrt{1 \times 3}+\sqrt{3 \times 5}+\sqrt{5 \times 6}+\sqrt{6 \times 4}+\sqrt{4 \times 2}=\sqrt{2 \times 4}+\sqrt{4 \times 6}+ \sqrt{6 \times 5}+\sqrt{5 \times 3}+\sqrt{3 \times} \overline{1}$, 故上述取法是符合要求的.
+(2) 下面证明: 依次按半径为 $6 、 1 、 4 、 3 、 2 、 5$ 或 $5 、 2 、 3 、 4 、 1 、 6$ 的顺序排时, 将使 $M=T_1 T_6$ 的值最小.
+求 $T_1 T_6=2\left(\sum_{i=1}^6 \sqrt{r_i r_{i+1}}-\sqrt{r_n r_{n+1}}\right)\left(r_1 \sim r_6\right.$ 的圆周排列断开 $)$ 时, 由于 $1 \times 6 \leqslant 2 \times 3$, 易见 1 不能在两端.
+由对称性知需研究 1 在第 2 、第 3 个位置中的最小者即可.
+当 $\left\{r_2, r_3, \cdots, r_6\right\}=\{2,3, \cdots, 6\}$ 时, 排法 $r_2, r_3, 1, r_4, r_5, r_6$ 的 $T_1 T_6=\sqrt{r_2 r_3}+\sqrt{r_3}+\sqrt{r_4}+\sqrt{r_4 r_5}+\sqrt{r_5 r_6}$, 设 $\{a, b\} \subset\{2,3,4,5,6\}$ 且 $a<b$.
+(i) 当 $r_4 、 r_5 、 r_6$ 固定时,易知 $r_2>r_3$ 时 $T_1 T_6$ 较小;
+(ii) 当 $r_2 、 r_3 、 r_6$ 固定时, 设 $\left\{r_4, r_5\right\}=\{a, b\}$, 相应 $T_1 T_6$ 值之差为 $\sqrt{a}+\sqrt{b r_6}-\sqrt{b}-\sqrt{a r_6}=(\sqrt{b}-\sqrt{a})\left(\sqrt{r_6}-1\right)>0$, 从而 $r_4>r_5$ 时 $T_1 T_6$ 值较小.
+这时, 设 $\left\{r_4, r_5, r_6\right\}=\{a, b, c\}$, 且 $a<b<c$.
+由于 $\sqrt{c}+\sqrt{c b}+\sqrt{b a}>\sqrt{c}+\sqrt{c a}+\sqrt{a b}>\sqrt{b}+\sqrt{b a}+\sqrt{a c}$, 故 $r_6> r_4>r_5$ 时, $T_1 T_6$ 值较小.
+(iii) 当 $r_3 、 r_4 、 r_5$ 固定时, 设 $\left\{r_2, r_6\right\}=\{a, b\}$, 相应 $T_1 T_6$ 值之差为 $\sqrt{a r_3}+\sqrt{r_5 b}-\sqrt{b r_3}-\sqrt{r_5 a}=(\sqrt{b}-\sqrt{a})\left(\sqrt{r_5}-\sqrt{r_3}\right)$.
+由此知当 $r_5>r_3$ 且 $r_2>r_6$, 或 $r_5<r_3$ 且 $r_2<r_6$ 时, $T_1 T_6$ 值较小.
+综上所述, 当 $r_2>r_6>r_4>r_5>r_3$ 或 $r_6>r_4>r_5, r_6>r_2>r_3>r_5$ 时, $T_1 T_6$ 值较小, 它们分别对应如下排法:
+(a) $6,2,1,4,3,5$;
+(b) $4,3,1,5,2,6$;
+(c) $5,3,1,4,2,6$; (d) $5,4,1,3,2,6$.
+对应 $T_1 T_6$ 的值分别为 $M_1=4 \sqrt{3}+\sqrt{2}+2+\sqrt{15}, M_2=5 \sqrt{3}+\sqrt{5}+ \sqrt{10}, M_3=\sqrt{15}+3 \sqrt{3}+2+2 \sqrt{2}, M_4=2 \sqrt{5}+2+\sqrt{6}+3 \sqrt{3}$.
+此时 $M_3$ 最小, 即以排法 $5,3,1,4,2,6$ 时 $T_1 T_6$ 值最小.
+下面再研究排法 $r_2, 1, r_3, r_4, r_5, r_6$ 的 $T_1 T_6$ 值.
+此时,
+$$
+T_1 T_6=\sqrt{r_2}+\sqrt{r_3}+\sqrt{r_3 r_4}+\sqrt{r_4 r_5}+\sqrt{r_5 r_6} .
+$$
+用同样的方法可得在 $r_2>r_6>r_3>r_4>r_5$ 或 $r_2>r_3>r_6>r_5>r_4$ 时 $T_1 T_6$ 值较小, 相应排法为:
+(a) $6,1,4,3,2,5$;
+(b) $6,1,5,2,3,4$.
+对应 $T_1 T_6$ 值分别为 $M_1=2 \sqrt{6}+2+2 \sqrt{3}+\sqrt{10}<M_2=2 \sqrt{6}+\sqrt{5}+ 2 \sqrt{3}+\sqrt{10}$.
+综合上述所讨论的不同情况, 最后有排法为 $6,1,4,3,2,5$ (或 $5,2,3$, $4,1,6)$ 为使首尾两圆外公切线最短者.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 有 5 个正数满足条件:
+(1) 其中一数为 $\frac{1}{2}$;
+(2) 从这 5 个数中任取 2 个数,在剩下的 3 个数中必有一个数, 与前面取出的两数之和为 1 .
+求这 5 个数.
+%%<SOLUTION>%%
+设这 5 个数为 $0<x_1 \leqslant x_2 \leqslant x_3 \leqslant x_4 \leqslant x_5$.
+首先 $x_4<\frac{1}{2}$, 否则 $x_4 \geqslant \frac{1}{2}, x_5 \geqslant \frac{1}{2}$, 得 $x_4+x_5 \geqslant 1$, 矛盾! 故 $x_5=\frac{1}{2}$.
+取 $x_1 、 x_2$, 存在 $x_i(3 \leqslant i \leqslant 5)$, 使 $x_2+x_1+x_i=1$.
+取 $x_4 、 x_5$, 存在 $x_j(1 \leqslant j \leqslant 3)$, 使 $x_4+x_5+x_j=1$.
+则 $1=x_1+x_2+x_i \leqslant x_1+x_3+x_i \leqslant x_1+x_4+x_i \leqslant x_1+x_4+x_5 \leqslant x_j+ x_4+x_5=1$.
+故 $x_1+x_2+x_i=x_1+x_3+x_i=x_1+x_4+x_i$, 于是 $x_2=x_3=x_4=x$.
+所以 $\left\{\begin{array}{l}x_1+\frac{1}{2}+x=1, \\ x_1+x+x=1 .\end{array}\right. \label{(1)}$
+或 $\left\{\begin{array}{l}x_1+\frac{1}{2}+x=1, \\ 2 x+x=1 .\end{array}\right. \label{(2)}$
+或 $\left\{\begin{array}{l}x_1+\frac{1}{2}+x=1, \\ 2 x+\frac{1}{2}=1 .\end{array}\right. \label{(3)}$
+(1)无解, 由(2)得 $x=\frac{1}{3}, x_1=\frac{1}{6}$, 由(3)得 $x=\frac{1}{4}, x_1=\frac{1}{4}$.
+故 $\left(x_1, x_2, x_3, x_4, x_5\right)=\left(\frac{1}{2}, \frac{1}{3}, \frac{1}{3}, \frac{1}{3}, \frac{1}{6}\right)$ 或 $\left(\frac{1}{2}, \frac{1}{4}, \frac{1}{4}\right.$, $\left.\frac{1}{4}, \frac{1}{4}\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 已知 $x \geqslant 0, y \geqslant 0, z \geqslant 0, x+y+z=1$, 求 $x^2 y^2+y^2 z^2+z^2 x^2+x^2 y^2 z^2$ 的最大值.
+%%<SOLUTION>%%
+不妨设 $x \geqslant y \geqslant z$,于是
+$$
+\begin{aligned}
+& x^2 y^2+y^2 z^2+z^2 x^2+x^2 y^2 z^2 \\
+= & x^2 \cdot\left[(1-x)^2-2 y z\right]+y^2 z^2+x^2 y^2 z^2 \\
+= & x^2(1-x)^2-2 x^2 y z+y^2 z^2+x^2 y^2 z^2 \\
+\leqslant & \frac{1}{16}-\left(x^2 y z-y^2 z^2\right)-\left(x^2 y z-x^2 y^2 z^2\right) \\
+\leqslant & \frac{1}{16} .
+\end{aligned}
+$$
+当 $x=y=\frac{1}{2}, z=0$ 时等号成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 设 $x, y, z \geqslant 0$, 且 $x+y+z=1$, 求 $x^2 y+y^2 z+z^2 x$ 的最大值和最小值.
+%%<SOLUTION>%%
+首先 $x^2 y+y^2 z+z^2 x \geqslant 0$, 当 $x=1, y=z=0$ 时等号成立, 故最小值为 0 . 不妨设 $x=\max \{x, y, z\}$, 那么
+(1)当 $x \geqslant y \geqslant z$ 时, 有 $x^2 y+y^2 z+z^2 x \leqslant x^2 y+y^2 z+z^2 x+z[x y+(x-y)(y-z)]=(x+z)^2 y=(1-y)^2 y \leqslant \frac{4}{27}$.
+(2)当 $x \geqslant z \geqslant y$ 时, 由 $(x-y)(y-z)(z-x)=\left(x y^2+y z^2+z x^2\right)- \left(x^2 y+y^2 z+z^2 x\right)$ 知 $x^2 y+y^2 z+z^2 x \leqslant x^2 y+y^2 z+z^2 x+(x-y)(y-z) (z-x)=x^2 z+z^2 y+y^2 x \leqslant \frac{4}{27}$. 因此最大值即为 $\frac{4}{27}$, 且当 $x=\frac{2}{3}, y=\frac{1}{3}$, $z=0$ 时取到.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 已知 $a 、 b 、 c$ 是 $\triangle A B C$ 的三边长, 求证:
+$$
+\left|\frac{(a-b)(b-c)(c-a)}{(a+b)(b+c)(c+a)}\right|<\frac{1}{22} .
+$$
+%%<SOLUTION>%%
+不妨设 $a \geqslant b \geqslant c$, 令 $b=c+x, a=b+y=c+x+y$, 由 $a<b+ c$ 知 $y<c$. 若 $x y=0$ 命题显然成立.
+下设 $x y \neq 0$, 则 $x>0, y>0$.
+$$
+\begin{aligned}
+\text { 左式 } & =\frac{y x(x+y)}{(2 x+y+2 c)(x+2 c)(x+y+2 c)} \\
+& <\frac{x^2 y+y^2 x}{(2 x+3 y)(x+2 y)(x+3 y)} \\
+& =\frac{x^2 y+y^2 x}{2 x^3+13 x^2 y+27 x y^2+18 y^3} .
+\end{aligned}
+$$
+令 $x=k y, k>0$, 则
+$$
+\begin{aligned}
+& 2 x^3+13 x^2 y+27 x y^2+18 y^3 \\
+= & 2 x^2 \cdot k y+13 x^2 y+22 x y^2+\frac{5}{k} x^2 y+\frac{18}{k^2} x^2 y \\
+= & \left(2 k+\frac{5}{k}+\frac{18}{k^2}\right) x^2 y+13 x^2 y+22 x y^2 \\
+\geqslant & 5 \cdot \sqrt[5]{\left(\frac{2}{3} k\right)^3 \cdot \frac{5}{k} \cdot \frac{18}{k^2}} \cdot x^2 y+13 x^2 y+22 x y^2 \\
+> & 22\left(x^2 y+y^2 x\right),
+\end{aligned}
+$$
+故原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 求最大常数 $k$, 使 $\frac{k a b c}{a+b+c} \leqslant(a+b)^2+(a+b+4 c)^2$ 对所有正实数 $a$, $b, c$ 成立.
+%%<SOLUTION>%%
+取 $a=b=2 c$, 有 $k \leqslant 100$. 又由于
+$$
+\begin{aligned}
+& \frac{a+b+c}{a b c} \cdot\left[(a+b)^2+(a+b+4 c)^2\right] \\
+\geqslant & \frac{a+b+c}{a b c} \cdot\left[(a+b)^2+(a+2 c+b+2 c)^2\right] \\
+\geqslant & \frac{a+b+c}{a b c} \cdot\left[4 a b+(2 \sqrt{2 a c}+2 \sqrt{2 b c})^2\right] \\
+= & \frac{a+b+c}{a b c} \cdot(4 a b+8 a c+8 b c+16 \sqrt{a c} \cdot c) \\
+= & (a+b+c)\left(\frac{4}{c}+\frac{8}{a}+\frac{8}{b}+\frac{16}{\sqrt{a b}}\right)
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& =\left(\frac{a}{2}+\frac{a}{2}+\frac{b}{2}+\frac{b}{2}+c\right) \cdot\left(\frac{4}{c}+\frac{8}{a}+\frac{8}{b}+\frac{8}{\sqrt{a b}}+\frac{8}{\sqrt{a b}}\right) \\
+& \geqslant\left(5 \sqrt[5]{\frac{a^2 b^2 c}{2^4}}\right) \cdot\left(5 \sqrt[5]{\frac{2^{14}}{a^2 b^2 c}}\right)=100 .
+\end{aligned}
+$$
+故 $k_{\max }=100$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. (1) 求证:对任意实数 $p 、 q$, 有 $p^2+q^2+1>p(q+1)$;
+(2)求最大的实数 $b$, 使得对任意实数 $p 、 q$, 都有 $p^2+q^2+1>b p(q+1)$;
+(3)求最大的实数 $c$, 使得对任意整数 $p 、 q$, 都有 $p^2+q^2+1>c p(q+1)$.
+%%<SOLUTION>%%
+(1) $p^2+q^2+1>p(q+1)$ 等价于 $\left(q-\frac{p}{2}\right)^2+\left(\frac{p}{2}-1\right)^2+\frac{p^2}{2}>0$, 显然成立.
+(2) 令 $p=\sqrt{2}, q=1$, 则 $b \leqslant \sqrt{2}$, 下证不等式 $p^2+q^2+1 \geqslant \sqrt{2} p(q+1)$ 对所有实数 $p 、 q$ 都成立.
+事实上, 由 $\left(\frac{p}{\sqrt{2}}-q\right)^2+\left(\frac{p}{\sqrt{2}}-1\right)^2 \geqslant 0$, 即得此不等式成立, 因而 $b_{\max }=\sqrt{2}$.
+(3) 令 $p=q=1$, 有 $c \leqslant \frac{3}{2}$. 下证不等式 $p^2+q^2+1 \geqslant \frac{3}{2} p(q+1)$ 对所有整数 $p 、 q$ 都成立.
+上式等价于 $(3 p-4 q)^2+\left(7 p^2-24 p+16\right) \geqslant 0$.
+由于 $p \geqslant 3$ 或 $p \leqslant 0$ 时, $7 p^2-24 p+16 \geqslant 0$, 故结论成立.
+当 $p=1,2$ 时,也不难验证结论成立,故 $c_{\text {max }}=\frac{3}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. (1) 设 $a 、 b 、 c$ 为 $\triangle A B C$ 的三边长, $n \geqslant 2$ 为整数, 求证:
+$$
+\frac{\sqrt[n]{a^n+b^n}+\sqrt[n]{b^n+c^n}+\sqrt[n]{c^n+a^n}}{a+b+c}<1+\frac{\sqrt[n]{2}}{2} .
+$$
+(2)设 $a 、 b 、 c$ 为三角形的三边长, 求最小正实数 $k$, 使得:
+$$
+\frac{\sqrt[3]{a^3+b^3}+\sqrt[3]{b^3+c^3}+\sqrt[3]{c^3+a^3}}{(\sqrt{a}+\sqrt{b}+\sqrt{c})^2}<k
+$$
+恒成立.
+%%<SOLUTION>%%
+(1) 不妨设 $a \leqslant b \leqslant c$, 则 $a+b>c$. 原不等式等价于
+$$
+\sqrt[n]{a^n+b^n}+\sqrt[n]{b^n+c^n}+\sqrt[n]{c^n+a^n}<(a+b+c)+\frac{\sqrt[n]{2}}{2}(a+b+c) .
+$$
+由于 $\frac{\sqrt[n]{2}}{2}(a+b+c)>\sqrt[n]{2} \cdot c=\sqrt[n]{c^n+c^n} \geqslant \sqrt{b^n+c^n}$ ,
+又不难证明 $\sqrt[n]{a^n+b^n} \leqslant \frac{a}{2}+b$ 及 $\sqrt[n]{c^n+a^n} \leqslant \frac{a}{2}+c$, 相加即得原不等式成立.
+(2) 令 $a=b, c \rightarrow 0$, 有左边 $\rightarrow \frac{2+\sqrt[3]{2}}{4}$, 故 $k \geqslant \frac{2+\sqrt[3]{2}}{4}$.
+下证: 不等式左端 $<\frac{2+\sqrt[3]{2}}{4}$.
+首先注意到, 若 $a 、 b 、 c$ 为三角形三边长, 则 $\sqrt{a} 、 \sqrt{b} 、 \sqrt{c}$ 也为三角形的三边长.
+不妨设 $\sqrt{a}+\sqrt{b}+\sqrt{c}=2$, 且 $x=\sqrt{a}, y=\sqrt{b}, z=\sqrt{c}$, 则 $x+y+z= 2, x, y, z \in(0,1)$.
+下证: $\quad \sqrt[3]{x^6+y^6}+\sqrt[3]{y^6+z^6}+\sqrt[3]{z^6+x^6}<2+\sqrt[3]{2}, \label{eq1}$.
+由于 $x, y, z<1$, 故 式\ref{eq1} 左边 $<\sqrt[3]{x^3+y^3}+\sqrt[3]{y^3+z^3}+\sqrt[3]{z^3+x^3}$, 而当 $x \geqslant y>0$ 时, 不难证明: $x^3+y^3 \leqslant[x+(\sqrt[3]{2}-1) y]^3$.
+现在设 $x \geqslant y \geqslant z$, 则\ref{eq1}式
+$$
+\begin{aligned}
+\text { 左边 } & \leqslant x+(\sqrt[3]{2}-1) y+y+(\sqrt[3]{2}-1) z+x+(\sqrt[3]{2}-1) z \\
+& =2 x+\sqrt[3]{2} y+2(\sqrt[3]{2}-1) z(\text { 希望 } x, y \rightarrow 1, z \rightarrow 0) \\
+& =2 x+\sqrt[3]{2} y+(2 \sqrt[3]{2}-2)(2-x-y) \\
+& =4 \sqrt[3]{2}-4+(4-2 \sqrt[3]{2}) x+(2-\sqrt[3]{2}) y \\
+& \leqslant 4 \sqrt[3]{2}-4+4-2 \sqrt[3]{2}+2-\sqrt[3]{2} \\
+& =2+\sqrt[3]{2}
+\end{aligned}
+$$
+因此式\ref{eq1}成立.
+%%PROBLEM_END%%
+
+

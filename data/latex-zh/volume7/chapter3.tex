@@ -1,0 +1,385 @@
+
+%%TEXT_BEGIN%%
+三角形的重心、垂心、内心、外心、旁心称之为三角形的五心.
+五心有很多重要性质.
+1. 重心:三角形的三条中线交于一点,该点叫做三角形的重心.
+主要性质有:
+(1) 重心到顶点的距离与重心到对边中点的距离之比为 $2: 1$;
+(2) 重心和三角形任意两个顶点组成的 3 个三角形面积相等.
+即重心到三条边的距离与三条边的长成反比;
+(3) 重心到三角形 3 个顶点距离的平方和最小;
+(4) 在平面直角坐标系中, 重心的坐标是顶点坐标的算术平均数.
+即设 $A 、 B$ 、 $C$ 的坐标分别为 $\left(x_i, y_i\right)(i=1,2,3)$, 则重心 $G\left(\frac{x_1+x_2+x_3}{3}, \frac{y_1+y_2+y_3}{3}\right)$.
+2. 垂心:三角形的三条高(所在直线)交于一点,该点叫做三角形的垂心.
+023 与垂心有关性质:
+(1) 三角形三个顶点、三个垂足、垂心这 7 个点可以得到 6 个四点圆;
+(2) 三角形外心 $O$ 、重心 $G$ 、垂心 $H$ 三点共线, 且 $O G: G H=1: 2$; (此直线称为三角形的欧拉线 (Euler line))
+(3) 垂心到三角形一顶点距离等于此三角形外心到此顶点对边距离的 2 倍.
+(可用三角知识证得)
+3. 内心: 三角形内切圆的圆心,叫做三角形的内心.
+主要性质有:
+(1) 三角形的三条内角平分线交于一点,该点即为三角形的内心;
+(2) 直角三角形内心到边的距离等于两直角边的和减去斜边的差的二分之一;
+(3) 三角形的内心到边的距离 (即内切圆的半径 $r$ ) 与三边长及面积之间有关系: $r=\frac{2 S_{\triangle}}{a+b+c}$.
+4. 外心: 三角形外接圆的圆心, 叫做三角形的外心.
+有关性质:
+(1) 三角形的三条边的垂直平分线交于一点, 该点即为三角形外心;
+(2) 若 $O$ 是 $\triangle A B C$ 的外心, 则 $\angle B O C=2 \angle A$ ( $\angle A$ 为锐角或直角) 或
+$\angle B O C=360^{\circ}-2 \angle A$ ( $\angle A$ 为钝角 $)$;
+(3) 当三角形为锐角三角形时,外心在三角形内部; 当三角形为钝角三角形时,外心在三角形外部; 当三角形为直角三角形时,外心在斜边的中点上;
+(4) 外心到三顶点的距离相等.
+5. 旁心: 三角形的旁边圆 (与三角形的一边和其他两边的延长线相切的圆) 的圆心, 叫做三角形的旁心.
+有关性质:
+(1) 三角形一内角平分线和另外两顶点处的外角平分线交于一点, 该点即为三角形的旁心;
+(2) 每个三角形都有三个旁心;
+(3) 旁心到三边的距离相等;
+(4) 旁心与半周长 $(p)$ 形影不离.
+如图(<FilePath:./figures/fig-c3i1.png>), $I_A$ 是 $\triangle A B C$ 的一个旁心.
+作 $I_A E \perp A B$ 于点 $E, I_A F \perp A C$ 于点 $F, I_A D \perp B C$ 于点 $D$. 显然, $B E=B D, C F=C D$, $A E=A F . A E+A F=(A B+B D)+(A C+C D)= A B+B C+A C$. 即 $A E=A F=\frac{a+b+c}{2}=p$.
+6. 三角形各心之间的相互联系.
+(1) 等腰三角形的内心、外心、重心、垂心共线 (均在对称轴上);
+(2) 等边三角形的内心、外心、重心、垂心共点;
+(3) $\triangle A B C$ 的内心 $I$ 是切点 $\triangle D E F$ 的外心;
+(4) $\triangle A B C$ 的外心 $O$ 是中点 $\triangle D E F$ 的垂心;
+(5) $\triangle A B C$ 的垂心 $H$ 是垂足 $\triangle D E F$ 的内心;
+(6) $\triangle A B C$ 的重心 $G$ 是中点 $\triangle D E F$ 的重心;
+(7) 若三角形中同时出现内心、旁心, 就构成了三组三点共线、三组四点共圆.
+如图(<FilePath:./figures/fig-c3i2.png>), $I$ 为 $\triangle A B C$ 的内心, $I_A 、 I_B 、 I_C$ 是 $\triangle A B C$ 的三个旁心.
+显然, $A 、 I 、 I_A$ 等三点共线; $I_A$ 、 $C 、 I 、 B$ 等四点共圆, 且 $I I_A$ 等是三个圆的直径.
+7. 三角形五心的一个向量统一表示:三角形五心有一个向量的表示 $\lambda_1 \cdot \overrightarrow{P A}+\lambda_2 \cdot \overrightarrow{P B}+\lambda_3 \cdot \overrightarrow{P C}=\overrightarrow{0}\left(\lambda_1\right.$, $\left.\lambda_2, \lambda_3 \in k\right)$.
+(1) 当 $P$ 为 $\triangle A B C$ 的外心 $O$ 时, $\sin 2 A \cdot \overrightarrow{O A}+\sin 2 B \cdot \overrightarrow{O B}+\sin 2 C \cdot \overrightarrow{O C}=\overrightarrow{0}$; (证明见例 2)
+(2) 当 $P$ 为 $\triangle A B C$ 的内心 $I$ 时, $\sin A \cdot \overrightarrow{I A}+\sin B \cdot \overrightarrow{I B}+\sin C \cdot \overrightarrow{I C}=\overrightarrow{0}$;
+(3) 当 $P$ 为非直角三角形的垂心 $H$ 时,
+$$
+\tan A \cdot \overrightarrow{H A}+\tan B \cdot \overrightarrow{H B}+\tan C \cdot \overrightarrow{H C}=\overrightarrow{0}
+$$
+(4) 当 $P$ 为三角形重心 $G$ 时,则 $\overrightarrow{G A}+\overrightarrow{G B}+\overrightarrow{G C}=\overrightarrow{0}$;
+(5) 当 $P$ 为三角形旁心 $I$ 时, 则: 对旁心 $I_A$, 有 $-\sin A \cdot \overrightarrow{I_A A}+\sin B \cdot \overrightarrow{I_A B}+ \sin C \cdot \overrightarrow{I_A C}=\overrightarrow{0}$; 对旁心 $I_B$ 有 $-\sin B \cdot \overrightarrow{I_B B}+\sin A \cdot \overrightarrow{I_B A}+\sin C \cdot \overrightarrow{I_B C}=\overrightarrow{0}$; 对旁心 $I_C$ 有 $\sin A \cdot \overrightarrow{I_C A}+\sin B \cdot \overrightarrow{I_C B}-\sin C \cdot \overrightarrow{I_C C}=\overrightarrow{0}$.
+关于旁心的向量性质我们只证(1)(例 2), (2)留作习题, 其余留着大家思考.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 如图(<FilePath:./figures/fig-c3i3.png>), $\odot I$ 切 $\triangle A B C$ 的边 $B C 、 C A$ 、 $A B$ 于 $A^{\prime} 、 B^{\prime} 、 C^{\prime}$. 求证: $A A^{\prime} 、 B B^{\prime} 、 C C^{\prime}$ 必交于一点 $Q$, 则 $\sum \frac{A Q}{A A^{\prime}}=2$.
+%%<SOLUTION>%%
+证明:由切线性质, 可设 $A C^{\prime}=A B^{\prime}=x$, $B C^{\prime}=B A^{\prime}=y, C A^{\prime}=C B^{\prime}=z$, 则
+$$
+\frac{A^{\prime} B}{A^{\prime} C} \cdot \frac{B^{\prime} C}{B^{\prime} A} \cdot \frac{C^{\prime} A}{C^{\prime} B}=\frac{y}{z} \cdot \frac{z}{x} \cdot \frac{x}{y}=1,
+$$
+由 ceva 定理逆定理知, $A A^{\prime} 、 B B^{\prime} 、 C C^{\prime}$ 共点 $\mathrm{Q}$.
+考虑直线 $C C^{\prime}$ 截 $\triangle A B A^{\prime}$, 由梅氏定理有
+$$
+\frac{A C^{\prime}}{C^{\prime} B} \cdot \frac{B C}{C A^{\prime}} \cdot \frac{A^{\prime} Q}{Q A}=\frac{x}{y} \cdot \frac{y+z}{z} \cdot \frac{A^{\prime} Q}{Q A}=1 \Rightarrow \frac{A^{\prime} Q}{Q A}=\frac{y z}{x(y+z)} .
+$$
+所以
+$$
+\frac{A A^{\prime}}{A Q}=\frac{A Q+Q A^{\prime}}{A Q}=\frac{x y+y z+z x}{x(y+z)} .
+$$
+同理 $\frac{B B^{\prime}}{B Q}=\frac{x y+y z+z x}{y(z+x)}, \frac{C C^{\prime}}{C Q}=\frac{x y+y z+z x}{z(x+y)}$.
+故 $\quad \sum \frac{A Q}{A A^{\prime}}=\frac{x(y+z)+y(z+x)+z(x+y)}{x y+y z+z x}=2$.
+%%<REMARK>%%
+注:这一点 $Q$ 通常称之为"切心".
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 求证: 当 $P$ 为三角形外心 $O$ 时,则 $\sin 2 A \overrightarrow{O A}+\sin 2 B \cdot \overrightarrow{O B}+\sin 2 C \cdot \overrightarrow{O C}=\overrightarrow{0}$.
+%%<SOLUTION>%%
+证设 $\triangle A B C$ 的外心为 $O$, 如图(<FilePath:./figures/fig-c3i4.png>),连结 $A O$ 交 $B C$ 于 $D$, 交外接圆于 $E$, 连结 $C O$ 交 $A B$ 于 $F$.
+由共边定理可得
+$$
+\begin{aligned}
+\frac{B D}{C D} & =\frac{S_{\triangle A B D}}{S_{\triangle A C D}} \\
+& =\frac{A B \cdot A D \sin \angle B A D}{A C \cdot A D \sin \angle C A D} \\
+& =\frac{2 R \sin C}{2 R \sin B} \cdot \frac{\sin \angle B A D}{\sin \angle C A D} \\
+& =\frac{2 \sin C}{2 \sin B} \cdot \frac{\sin \angle B C E}{\sin \angle C B E} \\
+& =\frac{\sin 2 C}{\sin 2 B} .
+\end{aligned}
+$$
+同理可得
+$$
+\frac{A F}{F B}=\frac{\sin 2 B}{\sin 2 A} .
+$$
+所以
+$$
+\begin{aligned}
+\frac{B D}{B C} & =\frac{\sin 2 C}{\sin 2 B+\sin 2 C}, \\
+\frac{C D}{B C} & =\frac{\sin 2 B}{\sin 2 B+\sin 2 C}
+\end{aligned}
+$$
+在 $\triangle A B D$ 中由梅涅劳斯定理可得:
+$$
+\begin{aligned}
+& \frac{A F}{F B} \cdot \frac{B C}{C D} \cdot \frac{D O}{O A}=1 \\
+& \Rightarrow \frac{D O}{O A}=\frac{F B}{A F} \cdot \frac{C D}{B C} \\
+& =\frac{\sin 2 A}{\sin 2 B} \cdot \frac{\sin 2 B}{\sin 2 B+\sin 2 C} \\
+& =\frac{\sin 2 A}{\sin 2 B+\sin 2 C} .
+\end{aligned}
+$$
+过 $D$ 作 $D M / / O B, D N / / O C$, 则由三角形相似可知
+$$
+\overrightarrow{O N}=\frac{C D}{B C} \cdot \overrightarrow{O B}, \overrightarrow{O M}=\frac{B D}{B C} \cdot \overrightarrow{O C}
+$$
+因为
+$$
+\overrightarrow{O D}=\overrightarrow{O M}+\overrightarrow{O N}
+$$
+又
+$$
+\overrightarrow{O D}=-\frac{\sin 2 A}{\sin 2 B+\sin 2 C} \overrightarrow{O A} \text {, }
+$$
+所以 $-\frac{\sin 2 A}{\sin 2 B+\sin 2 C} \overrightarrow{O A}=\frac{\sin 2 B}{\sin 2 B+\sin 2 C} \overrightarrow{O B}+\frac{\sin 2 C}{\sin 2 B+\sin 2 C} \overrightarrow{O C}$.
+故 $\sin 2 A \cdot \overrightarrow{O A}+\sin 2 B \cdot \overrightarrow{O B}+\sin 2 C \cdot \overrightarrow{O C}=\overrightarrow{0}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 过不等边三角形外心和内心的直线是具有以下性质的点的轨迹: 该点在三角形三边或其延长线上的射影将三边分为六段, 其中相互间隔的三个有向线段的长度的代数和等于另外三个有向线段的长度的代数和.
+如图(<FilePath:./figures/fig-c3i5.png>) 所示, $O 、 I$ 分别为 $\triangle A B C$ 的外心和内心, $P$ 为 $\triangle A B C$ 所在平面内的一点, 从 $P$ 作 $P D \perp B C, P E \perp C A, P F \perp A B$, 垂足分别为 $D 、 E 、 F$, 若
+$$
+A F+B D+C E=F B+D C+E A, \label{eq1}
+$$
+则 $P$ 点的轨迹为直线 $O I$.
+式\ref{eq1}中的线段均为有向线段, 它们的正方向分别为 $A \rightarrow B, B \rightarrow C$ 和 $C \rightarrow A$. 例如, 若 $F$ 在线段 $A B$ 的内部, 则 $A F$ 和 $F B$ 的长度均为正值, 若 $F$ 在 $A B$ 的延长线上, 则 $A F$ 的长度为正, $F B$ 的长度为负.
+以下证明和讨论中涉及到的线段, 凡属于三角形的边所在直线的, 其长度的正负号均服从这一规定.
+%%<SOLUTION>%%
+证明:首先证明: 直线 $O I$ 上的任意点 $P$ 都满足式\ref{eq1}. 为方便起见, 设 $O P: O I=k, O P$ 和 $O I$ 的方向以 $O \rightarrow I$ 为正.
+设 $O 、 P 、 I$ 在三边上的射影分别为 $D_1 、 D 、 D_2 ; E_1 、 E 、 E_2$ 和 $F_1 、 F 、 F_2$, 如图所示, 则由外心和内心的性质可知
+$$
+\begin{aligned}
+& A F_1+B D_1+C E_1=F_1 B+D_1 C+E_1 A . \label{eq2} \\
+& A F_2+B D_2+C E_2=F_2 B+D_2 C+E_2 A . \label{eq3}
+\end{aligned}
+$$
+从而
+$$
+\begin{aligned}
+& 2\left(F_1 F_2+D_1 D_2+E_1 E_2\right) \\
+= & \left(A F_2-A F_1\right)+\left(F_1 B-F_2 B\right)+\left(B D_2-B D_1\right) \\
+& +\left(D_1 C-D_2 C\right)+\left(C E_2-C E_1\right)+\left(E_1 A-E_2 A\right) \\
+= & 0 .
+\end{aligned} \label{eq4}
+$$
+此外, 由于 $O D_1 / / P D / / I D_2, O E_1 / / P E / / I E_2, O F_1 / / P F / / I F_2$, 有以下比例关系:
+$$
+\begin{aligned}
+D_1 D: D_1 D_2 & =E_1 E: E_1 E_2=F_1 F: F_1 F_2 \\
+& =O P: O I=k .
+\end{aligned} \label{eq5}
+$$
+由式\ref{eq2}、\ref{eq4}、式\ref{eq5}可得
+$$
+\begin{aligned}
+& (A F+B D+C E)-(F B+D C+E A) \\
+= & \left(A F_1+F_1 F+B D_1+D_1 D+C E_1+E_1 E\right) \\
+& -\left(F_1 B-F_1 F+D_1 C-D_1 D+E_1 A-E_1 E\right) \\
+= & \left(A F_1+B D_1+C E_1\right)-\left(F_1 B+D_1 C+E_1 A\right) \\
+& +2\left(F_1 F+D_1 D+E_1 E\right) \\
+= & 2 k\left(F_1 F_2+D_1 D_2+E_1 E_2\right) \\
+= & 0,
+\end{aligned}
+$$
+因此式\ref{eq1}成立.
+如图(<FilePath:./figures/fig-c3i6.png>) 中,外心 $O$ 在 $\triangle A B C$ 的内部, $P$ 为线段 $O I$ 内部的点,这并非必要.
+对于其他情况, 例如外心在三角形的外部以及 $P$ 在 $O I$ 或 $I O$ 延长线上的情况,包括 $P$ 在三角形外部的情况, 只要统一执行上述关于线段长度的符号规定,证明过程都是相同的,这里不一一论述.
+其次, 可证明: 若 $P$ 不是直线 $O I$ 上的点,则式\ref{eq1}一定不成立.
+由此可知,直线 $O I$ 就是 $P$ 点的轨迹.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 平面内两条直线 $l_1 / / l_2$, 它们之间的距离等于 $a$. 一块正方形的硬纸板 $A B C D$ 的边长也等于 $a$. 现将这块硬纸板平放在两条平行线上, 使得 $l_1$ 与 $A B 、 A D$ 都相交, 交点为 $E 、 F ; l_2$ 与 $C B 、 C D$ 都相交, 交点为 $G 、 H$. 设 $\triangle A E F$ 的周长为 $m_1, \triangle C G H$ 的周长为 $m_2$. 证明: 无论怎样放置正方形硬纸板 $A B C D, m_1+m_2$ 总是一个定值.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c3i7.png>), 连结 $E H 、 F G$ 得交点 $O$.
+因为点 $H$ 到 $A B 、 l_1$ 距离相等, 所以 $E H$ 平分 $\angle B E F$, 也平分 $\angle D H G$.
+又点 $G$ 到 $A D 、 l_1$ 等距离, 所以 $F G$ 平分 $\angle D F E$, 也平分 $\angle B G H$.
+由此可知, $O$ 既是 $\triangle A E F$ 的旁心, 又是 $\triangle C G H$ 的旁心, 作出两个旁切圆, 易知它们是同心圆.
+设 $P 、 M 、 Q 、 N$ 分别是 $A B 、 A D 、 C D 、 C B$ 上的切点, 易证 $P 、 Q 、 O$ 共线; $M 、 O 、 N$ 共线, 且 $P Q= A D=a, M N=A B=a$.
+由旁心性质(4)知
+$$
+A P=A M=\frac{1}{2} m_1, C Q=C N=\frac{1}{2} m_2
+$$
+故 $m_1+m_2=2 A P+2 C Q=2 O M+2 O N=2 M N=2 a$ 为定值.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设点 $O$ 是锐角 $\triangle A B C$ 的外心.
+分别以 $\triangle A B C$ 三边的中点为圆心作过点 $O$ 的圆, 这三个圆两两的异于 $O$ 的交点分别为 $K 、 L 、 M$. 证明 : 点 $O$ 是 $\triangle K L M$ 的内心.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c3i8.png>) 设三边中点分别为 $A^{\prime} 、 B^{\prime}$ 、 $C^{\prime}$, 我们发现 $B^{\prime} C^{\prime}$ 垂直平分公共弦 $O K$, 并设交点为 $K^{\prime}$, 那么 $O K^{\prime}=\frac{1}{2} \cdot O K$, 类似地定义 $L^{\prime} 、 M^{\prime}$, 我们有 $\triangle K^{\prime} L^{\prime} M^{\prime}$ 位似于 $\triangle K L M$, 相似比为 $\frac{1}{2}$, 位似中心为 $O$, 于是原命题 $\Leftrightarrow O$ 是 $\triangle K^{\prime} L^{\prime} M^{\prime}$ 的内心 , 结合前面的性质: 三角形的垂心是其垂足三角形的内心.
+只需证明, $O$ 为 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 的垂心, 且 $K^{\prime} 、 L^{\prime}$ 、$M^{\prime}$ 分别是 $O$ 在三边上的垂足.
+$A^{\prime}$ 为边 $B C$ 中点, 故 $O A^{\prime} \perp B C \Rightarrow O A^{\prime} \perp B^{\prime} C^{\prime}$, 又 $O K^{\prime} \perp B^{\prime} C^{\prime}$, 所以 $A^{\prime}$ 、 $O 、 K^{\prime}$ 共线且该线垂直于 $B^{\prime} C^{\prime}$.
+故原命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 如图(<FilePath:./figures/fig-c3i9.png>), 在锐角三角形 $\triangle A B C$ 中, $A B<A C, A D$ 是边 $B C$ 上的高, $P$ 是线段 $A D$ 内一点.
+过 $P$ 作 $P E \perp A C$, 垂足为 $E$, 作 $P F \perp A B$, 垂足为 F. $O_1 、 O_2$ 分别是 $\triangle B D F 、 \triangle C D E$ 的外心.
+求证: $O_1 、 O_2 、 E 、 F$ 四点共圆的充分必要条件为 $P$ 是 $\triangle A B C$ 的垂心.
+%%<SOLUTION>%%
+证明:连结 $B P 、 C P 、 O_1 O_2 、 E O_2 、 E F 、 F O_1$.
+因为 $P D \perp B C, P F \perp A B$, 故 $B 、 D 、 P 、 F$ 四点共圆, 且 $B P$ 为该圆的直径.
+又因为 $O_1$ 是 $\triangle B D F$ 的外心, 故 $O_1$ 在 $B P$ 上且是 $B P$ 的中点.
+同理可证 $C 、 D 、 P 、 E$ 四点共圆,且 $O_2$ 是 $C P$ 的中点.
+综上, $O_1 O_2 / / B C$, 所以 $\angle P O_2 O_1=\angle P C B$.
+因为 $A F \cdot A B=A P \cdot A D=A E \cdot A C$, 所以 $B 、 C 、 E 、 F$ 四点共圆.
+充分性: 若 $P$ 是 $\triangle A B C$ 的垂心, 由于 $P E \perp A C, P F \perp A B$, 所以 $B 、 O_1$ 、 $P 、 E$ 四点共线, $C 、 F 、 O_2 、 P$ 四点共线, $\angle F O_2 O_1=\angle F C B=\angle F E B= \angle F E O_1$, 故 $O_1 、 O_2 、 E 、 F$ 四点共圆.
+必要性: 设 $O_1 、 O_2 、 E 、 F$ 四点共圆, 故 $\angle O_1 O_2 E+\angle E F O_1=180^{\circ}$. 由于 $\angle P O_2 O_1=\angle P C B=\angle A C B-\angle A C P$, 又因为 $O_2$ 是直角 $\triangle C E P$ 的斜边中点,也就是 $\triangle C E P$ 的外心, 所以 $\angle P O_2 E=2 \angle A C P$.
+因为 $O_1$ 是直角 $\triangle B F P$ 的斜边中点,
+$$
+\angle P F O_1=90^{\circ}-\angle B F O_1=90^{\circ}-\angle A B P .
+$$
+因为 $B 、 C 、 E 、 F$ 四点共圆, 所以
+$$
+\angle A F E=\angle A C B, \angle P F E=90^{\circ}-\angle A C B .
+$$
+于是 $180^{\circ}=\angle O_1 O_2 E+\angle O_1 F E$
+$$
+\begin{aligned}
+= & \angle P O_2 O_1+\angle P O_2 E+\angle O_1 F P+\angle P F E \\
+= & (\angle A C B-\angle A C P)+2 \angle A C P+\left(90^{\circ}-\angle A B P\right) \\
+& +\left(90^{\circ}-\angle A C B\right),
+\end{aligned}
+$$
+即
+$$
+\angle A B P=\angle A C P,
+$$
+设 $B^{\prime}$ 是 $B$ 关于 $A D$ 的对称点, 由 $A B<A C$ 知 $B^{\prime}$ 在线段 $C D$ 上, 又 $\angle A B^{\prime} P= \angle A B P=\angle A C P$, 于是 $A 、 P 、 B^{\prime} 、 C$ 四点共圆, 所以 $\angle P B^{\prime} B=\angle D A C= 90^{\circ}-\angle C$, 从而 $\angle C=90^{\circ}-\angle P B^{\prime} D=90^{\circ}-\angle P B D \Rightarrow P B \perp A C$, 又 $A P \perp B C$, 故 $P$ 为垂心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 如图(<FilePath:./figures/fig-c3i10.png>), 在 $\triangle A B C$ 中, 设 $A B> A C$, 过 $A$ 作 $\triangle A B C$ 的外接圆的切线 $l$, 又以 $A$ 为圆心, $A C$ 为半径作圆分别交线段 $A B$ 于 $D$; 交直线 $l$ 于 $E 、 F$. 证明:直线 $D E 、 D F$ 分别通过 $\triangle A B C$ 的内心与一个旁心.
+(注: 与三角形的一边及另两边的延长线均相切的圆称为三角形的旁切圆, 旁切圆的圆心称为旁心.)
+%%<SOLUTION>%%
+证明:(1) 先证 $D E$ 过 $\triangle A B C$ 的内心.
+如图(<FilePath:./figures/fig-c3i10.png>), 连结 $D E 、 D C$, 作 $\angle B A C$ 的平分线分别交 $D C$ 于 $G 、 D E$ 于 $I$, 连结 $I C$, 则由 $A D=A C$, 得 $A G \perp D C, I D=I C$.
+又 $D 、 C 、 E$ 在 $\odot A$ 上, 所以 $\angle I A C=\frac{1}{2} \angle D A C=\angle I E C$, 因而 $A 、 I 、 C 、 E$ 四点共圆.
+从而 $\angle C I E=\angle C A E=\angle A B C$, 而 $\angle C I E=2 \angle I C D$, 则 $\angle I C D= \frac{1}{2} \angle A B C$.
+故 $\angle A I C=\angle I G C+\angle I C G=90^{\circ}+\frac{1}{2} \angle A B C$, 所以 $\angle A C I=\frac{1}{2} \angle A C B$,
+故 $I$ 为 $\triangle A B C$ 的内心.
+(2) 再证 $D F$ 过 $\triangle A B C$ 的一个旁心.
+连结 $F D$ 并延长交 $\angle A B C$ 的外角平分线于 $I_1$, 连结 $I I_1 、 B I_1 、 B I$, 由 (1) 知, $I$ 为内心.
+所以 $\angle I B I_1=90^{\circ}=\angle E D I_1$, 故 $D 、 B 、 I_1 、 I$ 四点共圆.
+因为 $\angle B I I_1=\angle B D I_1=90^{\circ}-\angle A D I$
+$$
+=\left(\frac{1}{2} \angle B A C+\angle A D G\right)-\angle A D I=\frac{1}{2} \angle B A C+\angle I D G,
+$$
+所以 $A 、 I 、 I_1$ 共线.
+故 $I_1$ 是 $\triangle A B C$ 的 $B C$ 边外的旁心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 如图(<FilePath:./figures/fig-c3i11.png>) 在锐角三角形 $A B C$ 中, $A A_1$ 、 $B B_1$ 是两条角平分线, $I 、 O 、 H$ 分别是 $\triangle A B C$ 的内心、外心、垂心, 连结 $H O$, 分别交 $A C 、 B C$ 于点 $P$, Q. 已知 $C 、 A_1 、 I 、 B_1$ 四点共圆.
+求证: (1) $\angle C= 60^{\circ}$; (2) $P Q=A P+B Q$.
+%%<SOLUTION>%%
+证明:(1) 因为 $C 、 A_1 、 I 、 B_1$ 四点共圆, 所以
+$$
+\begin{aligned}
+\angle C & =180^{\circ}-\angle A I B=\angle I A B+\angle I B A \\
+& =\frac{1}{2} \angle A+\frac{1}{2} \angle B=90^{\circ}-\frac{1}{2} \angle C,
+\end{aligned}
+$$
+所以
+$$
+\angle C=60^{\circ} \text {. }
+$$
+(2)因为
+$$
+\begin{aligned}
+& \angle A H B=180^{\circ}-\angle C=120^{\circ}, \\
+& \angle A O B=2 \angle A C B=120^{\circ},
+\end{aligned}
+$$
+所以 $A 、 H 、 O 、 B$ 四点共圆,于是
+$$
+\angle P H A=\angle O B A=\frac{1}{2}\left(180^{\circ}-\angle A O B\right)=30^{\circ},
+$$
+又所以
+于是同理可得
+故
+$$
+\angle P A H=90^{\circ}-\angle C=30^{\circ},
+$$
+$$
+\begin{aligned}
+\angle P A H & =\angle P H A, \\
+A P & =P H, \\
+B Q & =Q H,
+\end{aligned}
+$$
+$$
+P Q=A P+B Q .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 如图(<FilePath:./figures/fig-c3i12.png>), 圆 $O$ 、圆 $I$ 分别是 $\triangle A B C$ 的外接圆和内切圆, 圆 $O$ 半径为 $R$, 圆 $I$ 半径为 $r$, 圆 $I$ 分别切 $A B 、 A C 、 B C$ 于点 $F 、 E 、 D$, 若 $M$ 为 $\triangle D E F$ 的重心, 试求 $\frac{I M}{O M}$ 的值 (其中 $R \neq 2 r$ ).
+%%<SOLUTION>%%
+解:取 $\triangle D E F$ 的垂心 $H$, 设 $D H 、 E H 、 F H$ 分别交 $\odot I$ 于 $A^{\prime} 、 B^{\prime} 、 C^{\prime}$.
+则 $\angle H A^{\prime} C^{\prime}=\angle D F C^{\prime}=\angle D E B^{\prime}=\angle D A^{\prime} B^{\prime}$.
+同理 $\angle H C^{\prime} A^{\prime}=\angle H C^{\prime} B^{\prime}$. 故 $H$ 为 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 的内心.
+注意到 $D$ 是 $\bar{B}^{\prime} D C^{\prime}$ 的中心, 则 $I D \perp B^{\prime} C^{\prime}$.
+又 $I D \perp B C$, 所以 $B^{\prime} C^{\prime} / / B C$.
+同理 $A^{\prime} B^{\prime} / / A B, A^{\prime} C^{\prime} / / A C$, 所以 $\triangle A^{\prime} B^{\prime} C^{\prime} \backsim \triangle A B C$.
+而 $O 、 I$ 分别是 $\triangle A B C$ 的外心和内心, $I 、 H$ 分别是 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 的外心和内心.
+所以 $\frac{O I}{I H}=k, k$ 为 $\triangle A B C$ 与 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 的相似比.
+又 $k=\frac{R}{r}$, 则 $\frac{O I}{I H}=\frac{R}{r}$.
+又 $O I 、 I H$ 为 $\triangle A B C$ 与 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 中的对应线段.
+则 $O I$ 与 $B C$ 所成的角等于 $I H$ 与 $B^{\prime} C^{\prime}$ 所成的角, 则 $O 、 I 、 H$ 共线.
+又由欧拉定理知 $\triangle D E F$ 中, $I 、 M 、 H$ 分别为外心、重心和垂心.
+所以 $\frac{I M}{M H}=\frac{1}{2}, \frac{I M}{I H}=\frac{1}{3}$.
+从而 $O M=O I+I M=\frac{R}{r} I H+I M=\left(\frac{R}{r} \cdot 3+1\right) \cdot I M$.
+故 $\frac{I M}{O M}=\frac{1}{\frac{3 R}{r}+1}=\frac{r}{3 R+r}$, 得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 如图(<FilePath:./figures/fig-c3i13.png>), 锐角 $\triangle A B C$ 中, $B C> A C>A B, A C$ 上的点 $E$ 与 $B C$ 上的点 $D$ 满足 $A E=B D, C D+C E=A B, B E$ 交 $A D$ 于 $K$. 求证: $K H=2 I O$.
+%%<SOLUTION>%%
+证设 $H 、 I 、 O 、 G$ 分别为 $\triangle A B C$ 垂心、内心、外心、重心.
+注意到 $H 、 G 、 O$ 三点共线且 $H G=2 O G$.
+故我们只需证 $K 、 G 、 I$ 共线且 $K G=2 I G$.
+取 $B C$ 中点 $M, A C$ 中点 $L$, 延长 $A I$ 交 $B C$ 于 $N$.
+设 $B C=a, C A=b, A B=c$, 则由条件易知
+$$
+C M=\frac{1}{2} a, C D=\frac{1}{2}(a+c-b) .
+$$
+由角平分线性质定理 $\frac{C N}{B N}=\frac{A C}{A B}$ 知 $C N=\frac{a b}{b+c}$ 及
+$$
+\frac{N I}{A I}=\frac{B N}{A B}=\frac{C N}{A C}=\frac{B N+C N}{A B+A C}=\frac{a}{b+c} .
+$$
+则 $\frac{N M}{M D}=\frac{C N-C M}{C M-C D}=\frac{\frac{a b}{b+c}-\frac{1}{2} a}{\frac{1}{2} a-\frac{1}{2}(a+c-b)}=\frac{a}{b+c}=\frac{N I}{I A}$.
+所以 $I M / / A D$, 同理 $I L / / B E$.
+结合 $M L / / A B$, 故 $\triangle I M L$ 与 $\triangle K A B$ 对应边均平行.
+故两三角形位似, 位似中心为 $A M$ 与 $B L$ 交点 $G$, 位似比为 $\frac{M L}{A B}=\frac{1}{2}$.
+故 $I 、 G 、 K$ 三点共线且 $I G=\frac{1}{2} G K$.
+结合前面的讨论知原命题成立.
+%%PROBLEM_END%%
+
+
