@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $n 、 a 、 b$ 是整数, $n>0$ 且 $a \\neq b$. 证明: 若 $n \\mid\\left(a^n-b^n\\right)$, 则 $n \\mid \\frac{a^n-b^n}{a-b}$.",
+    "solution": "证明:设 $p$ 是一个素数, 且 $p^\\alpha \\| n$. 我们来证明 $p^\\alpha \\mid \\frac{a^n-b^n}{a-b}$, 由此即导出本题的结论(参见下面的注).\n记 $t=a-b$, 若 $p \\nmid t$, 则 $\\left(p^\\alpha, t\\right)=1$. 因 $n \\mid\\left(a^n-b^n\\right)$, 故 $p^\\alpha \\mid\\left(a^n-b^n\\right)$. 又 $a^n-b^n=t \\cdot \\frac{a^n-b^n}{t}$, 于是 $p^\\alpha \\mid \\frac{a^n-b^n}{t}$.\n若 $p \\mid t$, 用二项式定理, 得\n$$\n\\frac{a^n-b^n}{t}=\\frac{(b+t)^n-b^n}{t}=\\sum_{i=1}^n \\mathrm{C}_n^i b^{n-i} t^{i-1} . \\label{eq1}\n$$\n设 $p^\\beta \\| i(i \\geqslant 1)$, 则 $2 \\beta \\leqslant p^\\beta \\leqslant i$, 由此易知 $\\beta \\leqslant i-1$. 因此 $\\mathrm{C}_n^i t^{i-1}=\\frac{n}{i} \\mathrm{C}_{n-1}^{i-1} t^{i-1}$ 中所含的 $p$ 的幕次至少是 $\\alpha-\\beta+(i-1) \\geqslant \\alpha$, 故 式\\ref{eq1} 右边和中每一项均被 $p^\\alpha$ 整除, 故 $p^\\alpha \\mid \\frac{a^n-b^n}{t}$, 即 $p^\\alpha \\mid \\frac{a^n-b^n}{a-b}$.",
+    "remark": "注:为了证明 $b \\mid a$, 可将 $b$ 作标准分解 $b=p_1^{\\alpha_1} p_2^{\\alpha_2} \\cdots p_k^{\\alpha_k}$, 进而将问题分解为证明 $p_i^{\\alpha_i} \\mid a(i=1,2, \\cdots, k)$ , 这样做的益处在于能够应用素数的锐利性质, 例 5 的论证清楚地表现了这一点.",
+    "figures": []
+}

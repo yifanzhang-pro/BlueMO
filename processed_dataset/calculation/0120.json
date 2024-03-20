@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题19 设 $S=\\{1,2, \\cdots, 280\\}$. 求最小自然数 $n$, 使得 $S$ 的每个 $n$ 元子集中都含有 5 个两两互素的数.",
+    "solution": "令 $A_i=\\left\\{i k \\mid k=1,2, \\cdots,\\left[\\frac{280}{i}\\right]\\right\\}, i=1,2, \\cdots, A=A_2 \\cup A_3 \\cup A_5 \\cup A_7$. 则由容瓜原理可以算出 $|A|=216$. 由于在 $A$ 中任取 5 个数时, 必有两个数在同一个 $A_i(i \\in\\{2,3,5,7\\})$ 之中, 二者不互素, 故知所求的最小自然数 $n \\geqslant 217$.\n另一方面, 设 $T \\subset S$ 且 $|T|==217$. 记 $S$ 中所有素数与 1 所成的集合为 $M$, 则 $|M|=60$.\n(1) 若 $|T \\cap M| \\geqslant 5$, 则问题已解决.\n(2) 若 $|T \\cap M|=4$, 设其余的素数从小到大排列为 $p_1, p_2, p_3, \\cdots$,显然有 $p_1 \\leqslant 11, p_2 \\leqslant 13, p_3 \\leqslant 17, p_4 \\leqslant 19, p_5 \\leqslant 23$. 于是有 $\\left\\{p_1^2, p_1 p_2, p_1 p_3\\right.$, $\\left.p_1 p_4, p_1 p_5, p_2^2, p_2 p_3, p_2 p_4\\right\\} \\subset S$. 因为 $S$ 中共有 220 个合数而这时 $T$ 中有 213 个合数,故在 $S-T$ 中的合数只有 7 个,从而上面集合中的 8 个元素中总有一个含在 $T$ 中, 它与 $T \\cap M$ 中的 4 个数一起即满足题中要求.\n(3) 设 $|T \\cap M| \\leqslant 3$. 这时, 至多有 $S$ 中的 6 个合数不在 $T$ 中.\n若集合 $\\left\\{2^2, 3^2, 5^2, 7^2, 11^2, 13^2\\right\\}$ 中有 5 个或 4 个元素含在 $T$ 中, 则问题化为前两种情形.\n以下设这 6 个合数中至多有 3 个含在 $T$ 中, 于是其他合数至多有 3 个不在 $T$ 中.\n因此, 集合 $\\{2 \\times 41,3 \\times 37,5 \\times 31,7 \\times 29,11 \\times 23,13 \\times 19\\}$, $\\{2 \\times 37,3 \\times 31,5 \\times 29,7 \\times 23,11 \\times 19,13 \\times 17\\}$ 的 12 个合数中至多有 3 个不在 $T$ 中.\n由抽屉原理知必有一个集合的至少 5 个数含在 $T$ 中.\n显然, 这 5 个数两两互素.\n综上可知,所求的最小自然数 $n=217$.",
+    "remark": "",
+    "figures": []
+}

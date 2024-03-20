@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 设 $D$ 是锐角 $\\triangle A B C$ 内部一点, 使 $\\angle A D B=\\angle A C B+90^{\\circ}$, 且 $A C \\cdot B D= A D \\cdot B C$, 求 $\\frac{A B \\cdot C D}{A C \\cdot B D}$ 的值.",
+    "solution": "如图(<FilePath:./images/volume8/figures/fig-c9a4.png>), 以 $C$ 为原点建立复平面, 设 $\\angle A C B= \\theta, C A=1$,\n$$\n\\begin{aligned}\n\\overrightarrow{D B} & =\\frac{|B D|}{|D A|} \\cdot \\overrightarrow{D A} \\cdot \\mathrm{e}^{\\mathrm{i}\\left(\\theta+90^{\\circ}\\right)} \\\\\n& =\\frac{|B C|}{|A C|} \\cdot\\left(1-z_D\\right) \\cdot \\mathrm{i} \\cdot \\mathrm{e}^{\\mathrm{i} \\theta} \\\\\n& =\\overrightarrow{C B} \\cdot\\left(1-z_D\\right) \\cdot \\mathrm{i} \\\\\n& =z_B\\left(1-z_D\\right) \\cdot \\mathrm{i} .\n\\end{aligned}\n$$\n而 $\\overrightarrow{D B}=z_B-z_D$, 所以 $z_D=\\frac{z_B(i-1)}{z_B i-1}$, 从而\n$$\n\\frac{|A B| \\cdot \\mid C D}{|A C| \\cdot|B D|}=\\frac{\\left|z_B-1\\right| \\frac{z_B \\mathrm{i}-z_B}{z_B \\mathrm{i}-1} \\mid}{\\left|z_B-\\frac{z_B \\mathrm{i}-z_B}{z_B \\mathrm{i}-1}\\right|}=\\frac{\\left|z_B\\right| \\cdot\\left|z_B-1\\right| \\cdot|\\mathrm{i}-1|}{\\left|z_B\\right| \\cdot\\left|z_B-1\\right|}=\\sqrt{2} .\n$$",
+    "remark": "注:这题可用纯几何方法做, 但需要构造一个适当的角 (类似于旋转, 并且此题可推广为: 设 $D$ 是 $\\triangle A B C$ 内一点, 使得 $\\angle B D C=\\angle B A C+\\alpha$, $\\angle C D A=\\angle C B A+\\beta, \\angle A D B=\\angle A C B+\\gamma$, 则 $(B C \\cdot A D):(C A \\cdot B D): (A B \\cdot C D)=\\sin \\alpha: \\sin \\beta: \\sin \\gamma$.",
+    "figures": [
+        "./images/volume8/figures/fig-c9a4.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 某班共 30 名学生, 每名学生在班的内部都有同样多的朋友, 期末考试后, 任何两人的成绩都可以分出优劣, 没有并列者.\n比自己的多半朋友的成绩都好的学生称之为好学生, 问好学生最多有几名?",
+    "solution": "解法二若每位学生有 $2 k-1$ 个朋友, 那么 30 人中所有朋友对的数目为 $\\frac{1}{2} \\times 30 \\times(2 k-1)=30 k-15$. 每对朋友中给成绩较优的发一张奖状, 这样共发出了 $30 k-15$ 张奖状.\n第 1 名总是拿 $2 k-1$ 张奖状,第 2 名至少拿 $2 k-2$ 张奖状, $\\cdots$,第 $k$ 名至少拿 $k$ 张奖状,于是这 $k$ 名好学生至少一共拿了 $(2 k-1)+(2 k- 2)+\\cdots+k=\\frac{1}{2} k(3 k-1)$ 张奖状, 至多还剩 $30 k-15-\\frac{1}{2} k(3 k-1)$ 张奖状, 因为每个好学生至少得 $k$ 张奖状, 故至多还有 $\\frac{1}{k}\\left[30 k-15-\\frac{1}{2} k(3 k-1)\\right]$ 个好学生.\n所以,好学生的人数 $n$ 至多为\n$$\n\\begin{gathered}\nk+\\frac{1}{k}\\left[30 k-15-\\frac{1}{2} k(3 k-1)\\right]=30 \\frac{1}{2}-\\left(\\frac{15}{k}+\\frac{k}{2}\\right) \\\\\n\\leqslant 30 \\frac{1}{2}-2 \\sqrt{\\frac{15}{k} \\times \\frac{k}{2}}=30 \\frac{1}{2}-\\sqrt{30}<30 \\frac{1}{2}-5=25 \\frac{1}{2},\n\\end{gathered}\n$$\n因此, $n \\leqslant 25$.\n若每位学生有 $2 k$ 个朋友, 则完全类似地可发出 $30 k$ 张奖状, 至少得 $k+1$ 张奖状的为好学生.\n第 1 名至第 $k$ 名至少共得了 $2 k+(2 k-1)+\\cdots+(k+ 1)=\\frac{1}{2} k(3 k+1)$ 张奖状, 故好学生人数 $n$ 至多为\n$$\n\\begin{aligned}\n& k+\\frac{1}{k+1}\\left[30 k-\\frac{1}{2} k(3 k+1)\\right] \\\\\n= & \\frac{1}{k+1}\\left[30 k-\\frac{1}{2} k(k-1)\\right] \\\\\n= & \\frac{1}{k+1}\\left[30(k+1)-30-\\frac{1}{2} k(k-1)\\right]=30-\\left(\\frac{31}{k+1}+\\frac{k-2}{2}\\right) \\\\\n= & 31 \\frac{1}{2}-\\left(\\frac{31}{k+1}+\\frac{k+1}{2}\\right) \\leqslant 31 \\frac{1}{2}-2 \\sqrt{\\frac{31}{k+1} \\cdot \\frac{k+1}{2}} \\\\\n= & 31 \\frac{1}{2}-\\sqrt{62}<25 .\n\\end{aligned}\n$$\n综合两种情形知,好学生至多有 25 人,下同解法一.",
+    "remark": "",
+    "figures": []
+}

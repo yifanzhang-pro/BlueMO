@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例16. 设 $a_i, b_i, c_i, d_i \\in \\mathbf{R}^{+}(i=1,2, \\cdots, n)$, 求证:\n$$\n\\left(\\sum a_i b_i c_i d_i\\right)^4 \\leqslant \\sum a_i^4 \\cdot \\sum b_i^4 \\cdot \\sum c_i^4 \\cdot \\sum d_i^4 .\n$$",
+    "solution": "证明:两次利用柯西不等式, 得\n$$\n\\begin{aligned}\n\\text { 左边 } & =\\left[\\sum\\left(a_i b_i\\right)\\left(c_i d_i\\right)\\right]^4 \\\\\n& \\leqslant\\left[\\sum\\left(a_i b_i\\right)^2\\right]^2 \\cdot\\left[\\sum\\left(c_i d_i\\right)^2\\right]^2=\\left[\\sum a_i^2 b_i^2\\right]^2\\left[\\sum c_i^2 d_i^2\\right]^2 \\\\\n& \\leqslant \\sum a_i^4 \\cdot \\sum b_i^4 \\cdot \\sum c_i^4 \\cdot \\sum d_i^4 .\n\\end{aligned}\n$$\n故命题成立.",
+    "remark": "",
+    "figures": []
+}

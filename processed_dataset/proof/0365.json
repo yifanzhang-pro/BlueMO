@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise15.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 设平面点集 $P=\\left\\{P_1, P_2, \\cdots, P_{1994}\\right\\}, P$ 中任意 3 点不共线,将 $P$ 中所有点任意分成 83 组,使每组至少 3 个点且每点恰属于一组, 然后将同一组的任意两点用线段相连,不同组的任意两点不连线段,这样得到一个图案 $G$. 不同的分组方式得到不同的图案, 将图案中以 $P$ 中点为顶点的三角形个数记为 $m(G)$. (1) 求 $m(G)$ 的最小值 $m_0$ ;(2) 设 $G^*$ 是使 $m\\left(G^*\\right)=m_0$ 的一个图案, 若将 $G^*$ 中线段 (指以 $P$ 中点为端点的线段) 用四种颜色染色, 每条线段恰染一色.\n证明: 存在一种染色方案,使 $G^*$ 染色后, 不存在以 $P$ 中点为顶点的三边颜色相同的三角形.",
+    "solution": "(1) 因分组方法有限, 故使 $m(G)=m_0$ 的图案 $G$ 存在.\n设图案 $G$ 满足 $m(G)=m_0 . G$ 由分组 $X_1, X_2$, $\\cdots, X_{83}$ 组成.\n其中 $X_i$ 为第 $i$ 组点构成的集合, 并记 $\\left|X_i\\right|=x_i$, 于是 $x_1+ x_2+\\cdots+x_{83}=1994, m_0=\\sum_{i=1}^{83} \\mathrm{C}_{x_i}^3$.\n证明这时, 对任意 $1 \\leqslant i<j \\leqslant 83$, 有 $\\left|x_i-x_j\\right| \\leqslant 1$. 又因为 $1994=83 \\times 24+2=81 \\times 24+ 2 \\times 25$, 故使 $m(G)=m_0$ 的 $x_1, x_2, \\cdots, x_{83}$ 中有 81 等于 24,2 个等于 25 ,所以 $m_0=81 \\mathrm{C}_{24}^3+2 \\mathrm{C}_{25}^3=168544$.\n(2) 由 (1) 知 $G^*$ 可分为 83 个互相没有线段相连的子图 $G_1^*, G_2^*, \\cdots$, $G_{83}^*$, 其中 $G_1^*, \\cdots, G_{81}^*$ 含 24 个点, $G_{82}^*, G_{83}^*$ 含 25 个点, 设 $G_i^*$ 所含点集为 $X_i(i=1,2, \\cdots, 83)$, 对于 $G_{83}^*$, 令 $X_{83}=P_1 \\cup P_2 \\cup \\cdots \\cup P_5, P_i \\cap P_j= \\varnothing(1 \\leqslant i<j \\leqslant 5)$ 且 $\\left|P_i\\right|=5(1 \\leqslant i \\leqslant 5)$. 每个 $P_i$ 用如图(<FilePath:./images/volume11/figures/fig-c15a7-1.png>) 所示方法染色, 而不同的 $P_i$ 与 $P_j$ 所连线段用如图(<FilePath:./images/volume11/figures/fig-c15a7-2.png>) 所示方法染色, 其中 $a, b, c, d$ 表示 4 种不同颜色.\n这样染好色的 $G_{83}^*$ 显然不包含三边颜色相同的三角形.\n对 $G_{82}^*$ 可同染 $G_{83}^*$ 的方法去染色.\n而对 $G_i^*(1 \\leqslant i \\leqslant 81)$, 可先增加一点并与原 24 个点都连一线段, 然后按染 $G_{83}^*$ 的方法染好色后, 再去掉该点及从该点连出的线段,这样染好色的 $G_i^*$ 显然不含三边颜色相同的三角形.\n综上便知结论成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume11/figures/fig-c15a7-1.png",
+        "./images/volume11/figures/fig-c15a7-2.png"
+    ]
+}

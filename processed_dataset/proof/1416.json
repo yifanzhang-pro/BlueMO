@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 求证:在开区间 $(0,1)$ 内一定能找到四对两两不同的正数 $(a, b)(a \\neq b)$, 满足:\n$$\n\\sqrt{\\left(1-a^2\\right)\\left(1-b^2\\right)}>\\frac{a}{2 b}+\\frac{b}{2 a}-a b-\\frac{1}{8 a b} .\n$$",
+    "solution": "令 $a=\\cos \\alpha, b=\\cos \\beta, \\alpha, \\beta \\in\\left(0, \\frac{\\pi}{2}\\right)$, 则\n$$\na b+\\sqrt{\\left(1-a^2\\right)\\left(1-b^2\\right)}=\\cos (\\alpha-\\beta) .\n$$\n两边平方, 有 $\\sqrt{\\left(1-a^2\\right)\\left(1-b^2\\right)}=\\frac{1}{2 a b} \\cdot\\left[\\cos ^2(\\alpha-\\beta)-1\\right]+\\frac{a}{2 b}+\\frac{b}{2 a}-a b$.\n当 $0<|\\alpha-\\beta|<\\frac{\\pi}{6}$ 时, $\\cos (\\alpha-\\beta)>\\frac{\\sqrt{3}}{2}$, 则\n$$\n\\frac{1}{2 a b} \\cdot\\left[\\cos ^2(\\alpha-\\beta)-1\\right]>-\\frac{1}{8 a b},\n$$\n原不等式成立.\n显见, 在开区间 $\\left(0, \\frac{\\pi}{2}\\right)$ 内选择 4 对两两不同的角对 $\\left(\\alpha_i, \\beta_i\\right)$, 使得存在某两个角对 $(\\alpha, \\beta)$, 满足 $0<|\\alpha-\\beta|<\\frac{\\pi}{6}$ 是可以办到的, 因此结论成立.",
+    "remark": "",
+    "figures": []
+}

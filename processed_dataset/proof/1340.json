@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例18. 已知正整数 $n \\geqslant 2$, 实数 $a_1 \\geqslant a_2 \\geqslant \\cdots \\geqslant a_n>0, b_1 \\geqslant b_2 \\geqslant \\cdots \\geqslant b_n>0$, 并且有: $a_1 a_2 \\cdots a_n=b_1 b_2 \\cdots b_n, \\sum_{1 \\leqslant i<j \\leqslant n}\\left(a_i-a_j\\right) \\leqslant \\sum_{1 \\leqslant i<j \\leqslant n}\\left(b_i-b_j\\right)$, 问: 是否一定有 $\\sum_{i=1}^n a_i \\leqslant(n-2) \\sum_{i=1}^n b_i$ ?",
+    "solution": "解:不一定.\n令\n$$\n\\begin{gathered}\na_1=a_2=\\cdots=a_{n-1}=h, a_n=\\frac{1}{h^{n-1}} ; \\\\\nb_1=k, b_2=b_3=\\cdots=b_{n-1}=1, b_n=\\frac{1}{k}(k \\geqslant 1) .\n\\end{gathered}\n$$\n(想法是把 $h$ 取的充分大, 这样 $\\sum_{i=1}^n a_i$ 可以充分大, 为了不让 $\\sum_{1 \\leqslant i<j \\leqslant n}\\left(a_i-a_j\\right)$ 过大, 可以把 $a_1, a_2, \\cdots, a_{n-1}$ 取成相同的数, 反向考虑 $b_i$ 的取法.\n)\n$$\n\\begin{gathered}\n\\text { 则 } \\sum_{1 \\leqslant i<j \\leqslant n}\\left(a_i-b_j\\right) \\leqslant \\sum_{1 \\leqslant i<j \\leqslant n}\\left(b_i-b_j\\right) \\text { 等价于 } \\\\\n(n-1) h-\\frac{n-1}{h^{n-1}} \\leqslant(n-1) k-\\frac{n-1}{k} . \\\\\nk-h \\geqslant \\frac{1}{k}-\\frac{1}{h^{n-1}} .\n\\end{gathered}\n$$\n即\n$$\nk-h \\geqslant \\frac{1}{k}-\\frac{1}{h^{n-1}} .\n$$\n注意到 $k \\geqslant 1, h>0$, 故只须 $k-h \\geqslant 1$, 即 $k \\geqslant h+1$ 即可.\n而 $\\sum_{i=1}^n a_i>(n-2) \\sum_{i=1}^n b_i$ 等价于\n$$\n(n-1) h+\\frac{1}{h^{n-1}}>(n-2)\\left[k+(n-2)+\\frac{1}{k}\\right] .\n$$\n为简便起见, 取 $k=h+1$, 仅需 $(n-1) h>(n-2)[h+1+(n-2)+1]$, 即 $h>n^2-2 n$ 即可.\n取 $h=n^2-2 n+1=(n-1)^2$, 此时, 便有 $\\sum_{i=1}^n a_i> (n-2) \\sum_{i=1}^n b_i$.\n说明.\n事实上, 我们可以证明 $\\sum_{i=1}^n a_i \\leqslant(n-1) \\sum_{i=1}^n b_i$.",
+    "remark": "",
+    "figures": []
+}

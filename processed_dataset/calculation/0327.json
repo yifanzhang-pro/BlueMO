@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例9. 在 $7 \\times 8$ 的方格棋盘中, 每个方格都放有一只棋.\n如果两只棋所在的方格有公共顶点, 则称这两只棋是相连的.\n现在从这些棋中取出 $r$ 只棋, 使剩下的棋中没有 5 只棋在一条直线 (横、坚、斜 $45^{\\circ}$ 或 $135^{\\circ}$ 方向) 上依次相连, 求 $r$ 的最小值.",
+    "solution": "解:称去掉棋的方格为\"空\", 并设棋盘中共有 $k$ 个空.\n如图(<FilePath:./images/volume13/figures/fig-c7i6.png>),用 4 条直线将棋盘划分为 $A 、B 、 C 、 D 、 E 、 F 、 G 、 H 、 O$ 共 9 个区域.\n由条件, $A \\cup G$ 中至少 2 个空, $E \\cup O$ 中至少 3 个空, $C \\cup H$ 中至少 2 个空, $D \\cup F$ 中至少 3 个空, 从而 $k \\geqslant 2+3+2+3=10$.\n如果 $k=10$, 则区域 $D$ 中没有空, 由对称性, 区域 $A 、 B 、 C 、 D$ 中都没有空.\n进而, 因为 $A \\cup G$ 中至少 2 个空,而 $A$ 中没有空, 从而 $G$ 中至少 2 个空, 同理, $H$ 中至少 2 个空, 因为 $A \\cup E$ 中至少 3 个空, 而 $A$ 中没有空, 从而 $E$\n中至少 3 个空, 同理, $F$ 中至少 3 个空, 于是, $E 、 F 、 G 、 H$ 中共至少 10 个空, 又棋盘中恰有 10 个空, 从而 $E 、 F$ 中各有 3 个空, $G 、 H$ 中各有 2 个空, 区域 $O$ 中没有空.\n因为 $A \\cup E$ 中每列至少 1 个空, 而 $A$ 中没有空, 从而 $E$ 中每列至少 1 个空.\n又 $E$ 中只有 3 个空, 所以 $E$ 中每列恰有 1 个空, 于是格 $1 、 2$ 中至少有一个\n不是空, 于是, 图中 2 条直线中有一条是 5 子相连,矛盾, 所以 $k \\geqslant 11$.\n当 $k=11$ 时, 如图(<FilePath:./images/volume13/figures/fig-c7i7.png>)\n\\begin{tabular}{|l|l|l|l|l|l|l|l|}\n\\hline 1 & & & & & 6 & & \\\\\n\\hline & & & 5 & & & & \\\\\n\\hline & 2 & & & & & 9 & \\\\\n\\hline & & & & 8 & & & \\\\\n\\hline & & 3 & & & & & 11 \\\\\n\\hline 7 & & & & & 10 & & \\\\\n\\hline & & & 4 & & & & \\\\\n\\hline\n\\end{tabular}\n(比\"评分标准\"中的构造更自然), 我们采用 \"马步\" 布子, 则棋盘中没有同一直线上的 5 子相连.\n综上所述, $k_{min}=11$.",
+    "remark": "",
+    "figures": [
+        "./images/volume13/figures/fig-c7i6.png",
+        "./images/volume13/figures/fig-c7i7.png"
+    ]
+}

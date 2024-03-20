@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter14.tex",
+    "problem_type": "proof",
+    "problem": "例2. 一个社团内, 每两个人不是友好的就是敌对的.\n设这个社团共有 $n$ 个人和 $q$ 个友好对子, 并且任何三人中至少有两个人是敌对的.\n证明: 这个社团至少存在一个成员, 他的敌人组成的集合中友好对子不多于 $q\\left(1-\\frac{4 q}{n^2}\\right)$.",
+    "solution": "证法一只要证明存在一名成员 $a$ 使得两人中有一人是 $a$ 或有一人与 $a$ 友好的友好对子个数不少于 $q-q\\left(1-\\frac{4 q}{n^2}\\right)=\\frac{4 q^2}{n^2}$.\n设 $n$ 个人为 $a_1, a_2, \\cdots, a_n$, 这 $n$ 个人中友好对子组成的集合为 $S$, 与 $a_i$ 友好的人的个数为 $d_i(i=1,2, \\cdots, n)$, 于是 $\\sum_{i=1}^n d_i=2|S|=2 q$, 作 $n \\times n$ 数表,其中第 $i$ 行第 $j$ 列处的数为\n$$\nx_{i j}=\\left\\{\\begin{array}{l}\n1, i \\neq j \\text { 且 } a_i \\text { 与 } a_j \\text { 友好, } \\\\\n0, i=j \\text { 或 } i \\neq j \\text { 且 } a_i \\text { 与 } a_j \\text { 敌对, }\n\\end{array} i, j=1,2, \\cdots, n .\\right.\n$$\n则 $d_i=\\sum_{j=1}^n x_{i j}=\\sum_{j=1}^n x_{j i}(i=1,2, \\cdots, n)$, 且 $\\sum_{j=1}^n x_{i j} d_j$ 表示这样一类友好对子的个数, 这类对子中或有一人是 $a_i$ 或有一人与 $a_i$ 友好 (因为任何三人中必有两人是敌对的,故此式中没有重复计数), 于是 $|S|-\\sum_{j=1}^n x_{i j} d_j$ 表示 $a_i$ 的敌人中友好对子的个数.\n由柯西不等式有\n$$\n\\sum_{i=1}^n \\sum_{j=1}^n x_{i j} d_j=\\sum_{j=1}^n\\left(\\sum_{i=1}^n x_{i j}\\right) d_j=\\sum_{j=1}^n d_j^2 \\geqslant \\frac{\\left(\\sum_{i=1}^n d_j\\right)^2}{\\sum_{j=1}^n 1^2}=\\frac{4 q^2}{n},\n$$\n即 $\\frac{1}{n} \\sum_{i=1}^n \\sum_{j=1}^n x_{i j} d_j \\geqslant \\frac{4 q^2}{n^2}$, 故由平均值原理知道: 存在 $i_0\\left(1 \\leqslant i_0 \\leqslant n\\right)$ 使得 $\\sum_{j=1}^n x_{i_0 j} d_j \\geqslant \\frac{4 q^2}{n^2}$, 故 $a_{i_0}$ 的敌人集合中友好对子的个数为 $|S|-\\sum_{j=1}^n x_{i_0 j} d_j \\leqslant q-\\frac{4 q^2}{n^2}=q\\left(1-\\frac{4 q}{n^2}\\right)$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 在不大于 1000 的正整数中, 有多少个数既不被 5 整除又不被 7 整除? 这些正整数的和是多少?",
+    "solution": "解:设不大于 1000 的正整数组成集合 $I$, 对 $k=5,7,35$, 设 $I$ 中所有 $k$ 的倍数组成集合 $A_k$, 其中 $A_{35}=A_5 \\cap A_7$.\n由容厉原理得, 所求正整数的个数为\n$$\n\\begin{aligned}\n& \\left|\\overline{A_5} \\cap \\overline{A_7}\\right|=|I|-\\left|A_5\\right|-\\left|A_7\\right|+\\left|A_{35}\\right| \\\\\n= & 1000-\\left[\\frac{1000}{5}\\right]-\\left[\\frac{1000}{7}\\right]+\\left[\\frac{1000}{35}\\right] \\\\\n= & 1000-200-142+28=686 .\n\\end{aligned}\n$$\n这些正整数的和为\n$$\n\\begin{aligned}\n& \\sum_{i=1}^{1000} i-\\sum_{i \\in A_5} i-\\sum_{i \\in A_7} i+\\sum_{i \\in A_{35}} i=\\sum_{i=1}^{1000} i-\\sum_{i=1}^{200} 5 i-\\sum_{i=1}^{142} 7 i+\\sum_{i=1}^{28} 35 i \\\\\n= & \\frac{1000 \\times 1001}{2}-\\frac{5 \\times 200 \\times 201}{2}-\\frac{7 \\times 142 \\times 143}{2}+\\frac{35 \\times 28 \\times 29}{2} \\\\\n= & 343139 .\n\\end{aligned}\n$$",
+    "remark": "注:在求元素个数时, 我们直截了当地应用容斥原理; 在求元素之和时, 则采用了与容斥原理同样的思想.",
+    "figures": []
+}

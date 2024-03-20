@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题19. 设 $n \\in \\mathbf{N}^*, n>1$, 记 $h(n)$ 为 $n$ 的最大素因数.\n证明: 存在无穷多个 $n \\in \\mathbf{N}^*$, 使得(1)\n$$\nh(n)<h(n+1)<h(n+2) .\n$$",
+    "solution": "我们从每一个奇素数 $p$ 出发找一个满足条件的 $n$.\n注意到, 对任意 $m \\in \\mathbf{N}^*,\\left(p^{2^m}-1, p^{2^m}+1\\right)=2$, 从而由平方差公式结合数学归纳法可证:\n$$\np+1, p^2+1, \\cdots, p^{2^m}+1 .\n$$\n中任意两个数没有相同的奇素因数, 而这些数都不是 $p$ 的倍数.\n所以, 存在 $m \\in \\mathbf{N}^*$, 使得\n$$\nh\\left(p^{2^{m-1}}+1\\right)<p<h\\left(p^{2^m}+1\\right),\n$$\n取满足(1)的最小正整数 $m_0$, 令 $n=p^{2^{m_0}}-1$, 我们断言:\n$$\nh(n)<h(n+1)<h(n+2) .\n$$\n事实上, $n=p^{2^{m_0}}-1=(p-1)(p+1)\\left(p^2+1\\right) \\cdots\\left(p^{2^{m_0}}+1\\right)$, 而 $m_0$ 是满足 (1) 的最小正整数, 故 $h(n)<p=h(n+1)$, 又 $h(n+2)=h\\left(p^{2^{m_0}}+1\\right)$, 由 (1) 知 $h(n+1)<h(n+2)$.\n上述讨论表明: 对每个奇素数 $p$, 都有一个 $n$ (显然, 不同的 $p$ 对应的 $n$ 是不同的)满足条件, 而奇素数有无穷多个, 故满足条件的 $n$ 有无穷多个.",
+    "remark": "",
+    "figures": []
+}

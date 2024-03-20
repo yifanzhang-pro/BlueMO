@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 如图(<FilePath:./images/volume8/figures/fig-c5p9.png>), 设 $O$ 是 $\\triangle A B C$ 的外心, $D$ 是 $A B$ 的中点, $E$ 是 $\\triangle A C D$ 的重心, 求证: 如果 $A B=A C$, 那么 $O E \\perp C D$.",
+    "solution": "$\\overrightarrow{O E}=\\frac{1}{3}(\\overrightarrow{O C}+\\overrightarrow{O A}+\\overrightarrow{O D})=\\frac{1}{3}\\left(\\overrightarrow{O C}+\\frac{3}{2} \\overrightarrow{O A}+\\frac{1}{2} \\overrightarrow{O B}\\right)$,\n$$\n\\overrightarrow{C D}=\\frac{1}{2}(\\overrightarrow{C A}+\\overrightarrow{C B})=\\frac{1}{2}(\\overrightarrow{O A}+\\overrightarrow{O B}-2 \\overrightarrow{O C}) .\n$$\n因为 $A B=A C$, 所以 $\\overrightarrow{A O} \\perp \\overrightarrow{B C}$, 从而\n$$\n\\begin{aligned}\n12 \\overrightarrow{O E} \\cdot \\overrightarrow{C D} & =(2 \\overrightarrow{O C}+3 \\overrightarrow{O A}+\\overrightarrow{O B}) \\cdot(\\overrightarrow{O A}+\\overrightarrow{O B}-2 \\overrightarrow{O C}) \\\\\n& =3 \\overrightarrow{O A}^2+\\overrightarrow{O B}^2-4 \\overrightarrow{O C}^2+4 \\overrightarrow{O A} \\cdot \\overrightarrow{O B}-4 \\overrightarrow{O C} \\cdot \\overrightarrow{O A} \\\\\n& =3 R^2+R^2-4 R^2+4 \\overrightarrow{O A} \\cdot(\\overrightarrow{O B}-\\overrightarrow{O C})=0 .\n\\end{aligned}\n$$\n故 $O E \\perp C D$, 证毕.",
+    "remark": "",
+    "figures": [
+        "./images/volume8/figures/fig-c5p9.png"
+    ]
+}

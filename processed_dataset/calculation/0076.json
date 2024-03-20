@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题7 $X=\\{1,2, \\cdots, n\\}, A 、 B 、 C$ 是 $X$ 的分划, 即 $A \\cup B \\cup C=X$, 并且 $A 、 B$ 、 $C$ 两两的交集都是空集.\n如果从 $A 、 B 、 C$ 中各取一个元素, 那么每两个的和都不等于第三个.\n求\n$$\n\\max \\{\\min (|A|,|B|,|C|)\\} .\n$$",
+    "solution": "考虑奇偶性.\n如果 $A$ 由 $X$ 中的奇数组成, $B \\cup C$ 由 $X$ 中的偶数组成, 那么它们合乎题设要求.\n这时 $\\min (|A|,|B|,|C|)=\\left[\\frac{n}{4}\\right]$. 由此, 猜测 $\\max \\{\\min (|A|,|B|,|C|)\\}=\\left[\\frac{n}{4}\\right]$, 也就是恒有 $\\min (|A|,|B|$, $|C|) \\leqslant \\frac{n}{4}$.",
+    "remark": "",
+    "figures": []
+}

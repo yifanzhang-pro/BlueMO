@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-6.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 设数列 $\\left\\{a_n\\right\\}$ 是一个三阶等差数列, 其前面的若干项为 $1,2,8,22$, $47,86, \\cdots$. 求 $\\left\\{a_n\\right\\}$ 的通项公式.",
+    "solution": "解法一计算 $\\left\\{a_n\\right\\}$ 的各阶差分数列,得\n$$\n\\begin{aligned}\n& \\left\\{b_n\\right\\}: 1,6,14,25,39, \\cdots ; \\\\\n& \\left\\{c_n\\right\\}: 5,8,11,14, \\cdots ; \\\\\n& \\left\\{d_n\\right\\}: 3,3, \\cdots .\n\\end{aligned}\n$$\n由 $\\left\\{a_n\\right\\}$ 为三阶等差数列, 知 $\\left\\{d_n\\right\\}$ 是一个常数数列, 进而 $c_n=c_1+3(n-1)= 3 n+2$, 于是\n$$\nb_{n+1}-b_n=3 n+2, n=1,2, \\cdots\n$$\n从而 $b_n-b_1=\\left(b_n-b_{n-1}\\right)+\\cdots+\\left(b_2-b_1\\right)=\\sum_{k=1}^{n-1}(3 k+2)=\\frac{3 n(n-1)}{2}+ 2(n-1)=\\frac{(3 n+4)(n-1)}{2}$, 所以 $b_n=\\frac{3}{2} n^2+\\frac{1}{2} n-1$.\n同上可得\n$$\n\\begin{gathered}\na_n-a_1=\\sum_{k=1}^{n-1}\\left(\\frac{3}{2} k^2+\\frac{1}{2} k-1\\right) \\\\\n=\\frac{(n-1) n(2 n-1)}{4}+\\frac{n(n-1)}{4}-(n-1) .\n\\end{gathered}\n$$\n解得 $a_n=\\frac{1}{2} n^3-\\frac{1}{2} n^2-n+2$.\n说明这里用到裂项求和的方法及求和公式 $\\sum_{k=1}^m k=\\frac{m(m+1)}{2}, \\sum_{k=1}^m k^2= \\frac{1}{6} m(m+1)(2 m+1)$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $f(x)$ 是一个整系数多项式, $a_1, \\cdots, a_m$ 是给定的非零整数,具有下面的性质: 对任意整数 $n$, 数 $f(n)$ 被 $a_1, \\cdots, a_m$ 中的一个整除.\n证明: 存在一个 $a_i(1 \\leqslant i \\leqslant m)$, 使得对所有整数 $n, f(n)$ 均被 $a_i$ 整除.",
+    "solution": "证明:若 $a_1, \\cdots, a_m$ 中有一个数为 \\pm 1 , 则结论显然成立.\n以下设每个 $a_i \\neq \\pm 1$. 假设结论不对, 则对每个 $a_i$ 均相应地有一个整数 $x_i$, 使得 $a_i \\nmid f\\left(x_i\\right)$. $i=1, \\cdots, m$. 我们将由此作出一个整数 $n$, 使得所有 $a_i$ 均不整除 $f(n)$, 这将与已知条件矛盾.\n对 $i=1, \\cdots, m$, 因为 $a_i \\nmid f\\left(x_i\\right)$, 故有一个素数幕 $p_i^{\\alpha_i}$, 使得 $p_i^{\\alpha_i} \\mid a_i$, 但 $p_i^{\\alpha_i} \\nmid f\\left(x_i\\right)$. 若 $p_1^{\\alpha_1}, \\cdots, p_m^{\\alpha_n}$ 中有同一个素数的幂, 则仅留下一个幂次最低的, 而将那些高次 (及同次) 幕删去.\n经过这种手续, 不妨设剩下的素数幕为 $p_1^{\\alpha_1}, \\cdots p_t^{\\alpha_t}(1 \\leqslant t \\leqslant m)$, 则它们两两互素, 故由中国剩余定理知, 同余式组\n$$\nn \\equiv x_i\\left(\\bmod p_i^{\\alpha_i}\\right), i=1, \\cdots, t. \\label{eq1}\n$$\n有整数解 $n$.\n由于 $f(x)$ 是整系数多项式, 故由式\\ref{eq1}可知\n$$\nf(n) \\equiv f\\left(x_i\\right)\\left(\\bmod p_i^{\\alpha_i}\\right), i=1, \\cdots, t .\n$$\n对于 $i=1, \\cdots, t$, 由于 $p_i^{\\alpha_i} \\nmid f\\left(x_i\\right)$, 故由上式知 $p_i^{\\alpha_i} \\nmid f(n)$, 更有 $a_i \\nmid f(n)$, 而㞹 于 $j=t+1, \\cdots, m$, 由前面的手续及假设知, 每个 $p_j$ 等于某一个 $p_i(1 \\leqslant i \\leqslant t)$, 且 $p_i^{\\alpha_i} \\mid p_j^{\\alpha_j}$. 因此由 $p_i^{\\alpha_i} \\nmid f(n)$, 推出 $p_j^{\\alpha_j} \\nmid f(n)$, 进而 $a_j \\nmid f(n)$. 因此 $f(n)$ 不被 $a_1, \\cdots, a_m$ 中的任一个整除, 这与问题中的条件相违.\n从而本题的结论成立.\n证毕.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例1. 已知 $a, b, c \\in \\mathbf{R}^{+}$, 且 $a+b+c=1$, 求证:\n$$\n36 \\leqslant \\frac{1}{a}+\\frac{4}{b}+\\frac{9}{c} .\n$$",
+    "solution": "证明:由柯西不等式,得\n$$\n\\begin{aligned}\n\\frac{1}{a}+\\frac{4}{b}+\\frac{9}{c} & =\\left(\\frac{1}{a}+\\frac{4}{b}+\\frac{9}{c}\\right) \\cdot(a+b+c) \\\\\n& \\geqslant\\left(\\sqrt{a} \\cdot \\frac{1}{\\sqrt{a}}+\\sqrt{b} \\cdot \\frac{2}{\\sqrt{b}}+\\sqrt{c} \\cdot-\\frac{3}{\\sqrt{c}}\\right)^2=36,\n\\end{aligned}\n$$\n所以\n$$\n\\frac{1}{a}+\\frac{4}{b}+\\frac{9}{c} \\geqslant 36 \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

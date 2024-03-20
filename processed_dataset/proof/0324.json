@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例14. 集合 $M$ 由 48 个不同的正整数组成, 其中每个正整数的素因子均不大于 30. 证明: $M$ 中存在 4 个不同的正整数, 它们之积是完全平方数.",
+    "solution": "证明:不大于 30 的素数有 10 个: $p_1=2, p_2=3, p_3=5, p_4=7$, $p_5=11, p_6=13, p_7=17, p_8=19, p_9=23, p_{10}=29$. 令 $Y=\\left\\{p_1^{\\alpha_1} p_2^{\\alpha_2} \\cdots p_{10}^{\\alpha_{10}}\\right. \\alpha_i=0$ 或 $\\left.1, i=1,2, \\cdots, 10\\right\\}, X$ 是 $M$ 的所有二元子集组成的集族.\n对任意 $\\{a, b\\} \\in X$, 乘积 $a b$ 可唯一写成下列形式: $a b=K_{a b}^2 \\cdot m_{a b}$, 其中 $K_{a b} \\in \\mathbf{N}_{+}, m_{a b} \\in Y$. 我们就令 $\\{a, b\\}$ 与 $m_{a b}$ 对应, 构成一个从 $X$ 到 $Y$ 的映射 $f$. 因为 $|X|=\\mathrm{C}_{48}^2=1128,|Y|=2^{10}=1024$, 有 $|X|>|Y|$, 所以 $f$ 不是单射, 故存在 $\\{a, b\\},\\{c, d\\} \\in X,\\{a, b\\} \\neq\\{c, d\\}$ 使 $m_{a b}=f(\\{a, b\\})= f(\\{c, d\\})=m_{c d}$, 从而\n$$\na b c d=K_{a b}^2 m_{a b} \\cdot K_{c d}^2 m_{c d}=\\left(K_{a b} K_{c d} m_{a b}\\right)^2\n$$\n为完全平方数, 如果 $a, b, c, d$ 互不相等, 那么结论成立.\n否则 $\\{a, b\\}$ 中恰有一个数与 $\\{c, d\\}$ 中一个数相等.\n不妨设 $a \\neq c, b=d$. 于是由 $a b c d=a c b^2$ 是完全平方数知 $a c$ 是完全平方数, 从 $M$ 中去掉 $a, c$ 两个数, 还剩 46 个数, 因为 $\\mathrm{C}_{46}^2=1035>1024=|Y|$, 故同理可证 $X \\backslash\\{\\{a, c\\}\\}$ 中存在两个不同的二元子集 $\\left\\{a^{\\prime}, b^{\\prime}\\right\\},\\left\\{c^{\\prime}, d^{\\prime}\\right\\}$ 使 $a^{\\prime} b^{\\prime} c^{\\prime} d^{\\prime}$ 为完全平方数.\n如果 $a^{\\prime}, b^{\\prime}, c^{\\prime}, d^{\\prime}$ 互不相同, 那么结论成立, 否则同理可以不妨设 $a^{\\prime} \\neq c^{\\prime}, b^{\\prime}=d^{\\prime}$ 且 $a^{\\prime} c^{\\prime}$ 为完全平方数, 于是存在两个没有公共元的二元子集 $\\{a, c\\},\\left\\{a^{\\prime}, c^{\\prime}\\right\\}$, 使 $a c a^{\\prime} c^{\\prime}$ 为完全平方数.\n证毕.\n除了上述一对一的映射方法外, 有时还要用到一个对多个的对应方法.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise12.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 证明: 能将不同的完全平方数填满 $m \\times n$ 的矩形方格表中的每一个小方格, 使每行、每列的和也是完全平方数.",
+    "solution": "$a_1^2, a_2^2, \\cdots, a_n^2$ 与 $b_1^2, b_2^2, \\cdots, b_m^2$ 可组成 $m n$ 个乘积, 分别填人 $m \\times n$ 的矩形表的各格内.\n为了保证各行、各列的和都为平方数, 只要 $a_1^2+a_2^2+ \\cdots+a_n^2$ 及 $b_1^2+b_2^2+\\cdots+b_m^2$ 为完全平方数.\n联想到 $(2 k+1)+k^2=(k+1)^2$, 可取 $a_1$ 为奇数, $a_j(j=2,3, \\cdots, n-1)$ 均为偶数且 $0<a_1<a_2<\\cdots<a_{n-1}$. 记 $\\sum_{j=1}^{n-1} a_j^2=2 M+1$, 再令 $a_n=M$, 则 $a_1^2+a_2^2+\\cdots+a_n^2=(M+1)^2$. 为了保证表中各数不等, 可加大表中各行数的 \"距离\". 例如取 $b_1>2 a_n$ 为奇数,\n$b_i(i=2,3, \\cdots, m-1)$ 为偶数且 $b_{i+1}>b_i \\cdot a_n(i=2,3, \\cdots, m-2)$. 记 $\\sum_{i=1}^{m-1} b_i^2=2 S+1$, 再取 $b_m=S$, 则 $b_1^2+b_2^2+\\cdots+b_m^2=(S+1)^2$. 不难验证, 上述填法符合题目要求.\n\\begin{tabular}{|c|c|c|c|c|c|c|}\n\\hline$a_1^2 b_1^2$ & $a_2^2 b_1^2$ & $\\cdots$ & $a_j^2 b_1^2$ & $\\cdots$ & $a_{n-1}^2 b_1^2$ & $a_n^2 b_1^2$ \\\\\n\\hline$a_1^2 b_2^2$ & $a_2^2 b_2^2$ & $\\cdots$ & $a_j^2 b_2^2$ & $\\cdots$ & $a_{n-1}^2 b_2^2$ & $a_n^2 b_2^2$ \\\\\n\\hline$\\cdots$ & $\\cdots$ & $\\cdots$ & $\\cdots$ & $\\cdots$ & $\\cdots$ & $\\cdots$ \\\\\n\\hline$a_1^2 b_i^2$ & $a_2^2 b_i^2$ & $\\cdots$ & $a_j^2 b_i^2$ & $\\cdots$ & $a_{n-1}^2 b_i^2$ & $a_n^2 b_i^2$ \\\\\n\\hline$\\cdots$ & $\\cdots$ & $\\cdots$ & $\\cdots$ & $\\cdots$ & $\\cdots$ & $\\cdots$ \\\\\n\\hline$a_1^2 b_{m-1}^2$ & $a_2^2 b_{m-1}^2$ & $\\cdots$ & $a_j^2 b_{m-1}^2$ & $\\cdots$ & $a_{n-1}^2 b_{m-1}^2$ & $a_n^2 b_{m-1}^2$ \\\\\n\\hline$a_1^2 b_m^2$ & $a_2^2 b_m^2$ & $\\cdots$ & $a_j^2 b_m^2$ & $\\cdots$ & $a_{n-1}^2 b_m^2$ & $a_n^2 b_m^2$ \\\\\n\\hline\n\\end{tabular}",
+    "remark": "",
+    "figures": []
+}

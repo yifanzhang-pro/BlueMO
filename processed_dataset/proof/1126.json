@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例15. 设 $x_i>0, x_i y_i-z_i^2>0, i=1,2$, 求证:\n$$\n\\frac{8}{\\left(x_1+x_2\\right)\\left(y_1+y_2\\right)-\\left(z_1+z_2\\right)^2} \\leqslant \\frac{1}{x_1 y_1-z_1^2}+\\frac{1}{x_2 y_2-z_2^2} .\n$$",
+    "solution": "证明:注意到不等式的右边 $\\geqslant \\frac{2}{\\left[\\left(x_1 y_1-z_1^2\\right)\\left(x_2 y_2-z_2^2\\right)\\right]^{\\frac{1}{2}}}$, 考虑证明一个更强的结论:\n$$\n\\left(x_1+x_2\\right)\\left(y_1+y_2\\right)-\\left(z_1+z_2\\right)^2 \\geqslant 4\\left[\\left(x_1 y_1-z_1^2\\right)\\left(x_2 y_2-z_2^2\\right)\\right]^{\\frac{1}{2}} .\n$$\n令 $u_i=\\sqrt{x_i y_i-z_i^2}, i=1,2$, 由于 $4 u_1 u_2 \\leqslant\\left(u_1+u_2\\right)^2$, 则只要证明\n$$\n\\left(x_1+x_2\\right)\\left(y_1+y_2\\right)-\\left(z_1+z_2\\right)^2 \\geqslant\\left(u_1+u_2\\right)^2 \\text {, }\n$$\n等价于\n$$\n\\left(x_1+x_2\\right)\\left(y_1+y_2\\right) \\geqslant\\left(u_1+u_2\\right)^2+\\left(z_1+z_2\\right)^2 .\n$$\n由柯西不等式,得\n$$\n\\begin{aligned}\n\\left(x_1+x_2\\right)\\left(y_1+y_2\\right) & \\geqslant\\left(\\sqrt{x_1 y_1}+\\sqrt{x_2 y_2}\\right)^2 \\\\\n& =\\left(\\sqrt{u_1^2+z_1^2}+\\sqrt{u_2^2+z_2^2}\\right)^2 \\\\\n& =\\left(u_1^2+z_1^2\\right)+2 \\sqrt{u_1^2+z_1^2} \\sqrt{u_2^2+z_2^2}+\\left(u_2^2+z_2^2\\right) \\\\\n& \\geqslant\\left(u_1^2+z_1^2\\right)+2\\left(u_1 u_2+z_1 z_2\\right)+\\left(u_2^2+z_2^2\\right) \\\\\n& =\\left(u_1+u_2\\right)^2+\\left(z_1+z_2\\right)^2 .\n\\end{aligned}\n$$\n从而原不等式成立, 且等号成立的充分必要条件为 $x_1=x_2, y_1=y_2$, $z_1=z_2$.",
+    "remark": "注:.\n该例题也可以直接用柯西不等式证明, 关于它的推广, 可以参见引文或练习.",
+    "figures": []
+}

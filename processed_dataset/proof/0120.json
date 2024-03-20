@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题4 一次 10 名选手参加的循环赛中无平局, 胜者得 1 分,负者得 0 分.\n证明: 各选手得分的平方和不超过 285 .",
+    "solution": "由于得分的情况仅有有限多种, 其中必有一种的平方和取最大值.\n这时各选手的得分 $p_1, p_2, \\cdots, p_{10}$ 必互不相同, 因为若 $p_i=p_j$, 则改变选手 $i$ 与 $j$ 之间的胜负, 即用 $p_i-1 、 p_j+1$ 来代替 $p_i 、 p_j$ 时, 由于 $\\left(p_i-1\\right)^2+ \\left(p_j+1\\right)^2-\\left(p_i^2+p_j^2\\right)=2>0$, 而平方和中其他项不变, 故平方和严格增大, 这与平方和已取得最大值矛盾.\n于是, 在 $p_i=i-1(i=1,2, \\cdots, 10)$ 时, $\\sum_{i=1}^{10} p_i^2$ 最大, 这时的值 $\\sum_{i=0}^9 i^2=285$.",
+    "remark": "",
+    "figures": []
+}

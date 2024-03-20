@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $A$ 是正整数集合 $\\mathbf{N}^*$ 的子集, 对任何 $x, y \\in A, x \\neq y$, 有 $\\mid x- y \\mid \\geqslant \\frac{x y}{25}$. 求 $|A|$ 的最大值.",
+    "solution": "分析:考虑能否去掉条件中含有的绝对值符号, 这就要求集合中的任两个元素都具有确定的大小关系.\n由此想到将集合中的元素排序, 进而利用条件,得到元素的间距估计.\n解不妨设 $A=\\left\\{a_1<a_2<\\cdots<a_n\\right\\}$, 则条件变为: 对任何 $i<j$, 有 $a_j-a_i \\geqslant \\frac{a_j a_i}{25}$. 于是, $a_{i+1}-a_i \\geqslant \\frac{a_i a_{i+1}}{25}$, 即 $\\frac{1}{a_i}-\\frac{1}{a_{i+1}} \\geqslant \\frac{1}{25}$.\n令 $i=1,2, \\cdots, n-1$, 并将得到的各式累加, 得 $\\frac{1}{a_1}-\\frac{1}{a_n} \\geqslant \\frac{n-1}{25}$, 所以 $\\frac{1}{a_1}>\\frac{n-1}{25}$. 所以 $n-1<\\frac{25}{a_1} \\leqslant 25, n \\leqslant 25$. 但此估计过宽, 我们采用\"起点后移\" 的办法对之进行改进.\n令 $i=2,3, \\cdots, n-1$, 并将得到的各式累加, 得 $\\frac{1}{a_2}-\\frac{1}{a_n} \\geqslant \\frac{n-2}{25}$. 所以 $\\frac{1}{a_2}>\\frac{n-2}{25}$, 所以 $2 \\leqslant a_2<\\frac{25}{n-2}, n<\\frac{29}{2}, n \\leqslant 14$. 经试验, 还要继续改进估计.\n类似地, 有 $3 \\leqslant a_3<\\frac{25}{n-3}, n \\leqslant 11 ; 4 \\leqslant a_4<\\frac{25}{n-4}, n \\leqslant 10 ; 5 \\leqslant a_5< \\frac{25}{n-5}, n \\leqslant 9 ; 6 \\leqslant a_6<\\frac{25}{n-6}, n \\leqslant 10$. 由 $n$ 的范围的变化趋势, 可猜想 $n \\leqslant$ 9 是最好的估计.\n下面证明存在合乎条件的 9 元子集 $A$. 首先, 当 $x y \\leqslant 25$ 时, 条件 $\\mid x- y \\mid \\geqslant \\frac{x y}{25}$ 显然满足.\n从而可取 $1,2,3,4,5 \\in A$, 此时, $6 \\notin A$. 否则 $|6-5|< \\frac{30}{25}$, 不合条件.\n如此下去, 发现可取 $7,10,17,54 \\in A$. 所以, $A=\\{1,2,3,4$, $5,7,10,17,54\\}$ 为所求.\n综上所述, $|A|$ 的最大值为 9 .",
+    "remark": "",
+    "figures": []
+}

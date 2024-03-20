@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设 $P$ 是 $\\triangle A B C$ 所在平面上任一点,求证:\n$$\na \\cdot P B \\cdot P C+b \\cdot P C \\cdot P A+c \\cdot P A \\cdot P B \\geqslant a b c .\n$$",
+    "solution": "证明:视 $\\triangle A B C$ 所在平面为复平面, 设 $P 、 A 、 B 、 C$ 分别对应着复数 $z$ 、 $z_1, z_2, z_3$, 令\n$$\nf(z)=\\frac{\\left(z-z_2\\right)\\left(z-z_3\\right)}{\\left(z_1-z_2\\right)\\left(z_1-z_3\\right)}+\\frac{\\left(z-z_3\\right)\\left(z-z_1\\right)}{\\left(z_2-z_3\\right)\\left(z_2-z_1\\right)}+\\frac{\\left(z-z_1\\right)\\left(z-z_2\\right)}{\\left(z_3-z_1\\right)\\left(z_3-z_2\\right)},\n$$\n则 $f(z)$ 是关于 $z$ 的二次多项式,且易见\n$$\nf\\left(z_1\\right)=f\\left(z_2\\right)=f\\left(z_3\\right)=1,\n$$\n故 $f(z) \\equiv 1$. 因此\n$$\n\\begin{aligned}\n& \\frac{P B \\cdot P C}{b c}+\\frac{P C \\cdot P A}{c a}+\\frac{P A \\cdot P B}{a b} \\\\\n= & \\left|\\frac{\\left(z-z_2\\right)\\left(z-z_3\\right)}{\\left(z_1-z_2\\right)\\left(z_1-z_3\\right)}\\right|+\\left|\\frac{\\left(z-z_3\\right)\\left(z-z_1\\right)}{\\left(z_2-z_3\\right)\\left(z_2-z_1\\right)}\\right|+\\left|\\frac{\\left(z-z_1\\right)\\left(z-z_2\\right)}{\\left(z_3-z_1\\right)\\left(z_3-z_2\\right)}\\right| \\\\\n\\geqslant & |f(z)|=1 .\n\\end{aligned}\n$$\n由此立得所证不等式.",
+    "remark": "",
+    "figures": []
+}

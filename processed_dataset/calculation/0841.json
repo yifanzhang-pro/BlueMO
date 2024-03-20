@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 已知 $0<a<1,0<b<1$, 且 $a b=\\frac{1}{36}$. 求 $u=\\frac{1}{1-a}+\\frac{1}{1-b}$ 的最小值.",
+    "solution": "由均值不等式 $u \\geqslant-\\frac{2}{\\sqrt{(1-a)(1-b)}} \\geqslant \\frac{2}{\\frac{1-a+1-b}{2}}= \\frac{4}{2-(a+b)} \\geqslant \\frac{4}{2-2 \\sqrt{a b}}=\\frac{4}{2-\\frac{1}{3}}=\\frac{12}{5}$. 当 $a=b=\\frac{1}{6}$ 时, 上式取等号, 故 $u$ 的最小值为 $\\frac{12}{5}$.",
+    "remark": "",
+    "figures": []
+}

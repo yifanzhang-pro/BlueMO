@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 设 $a_1 \\geqslant a_2 \\geqslant \\cdots \\geqslant a_n \\geqslant a_{n+1}=0$ 是实数序列, 求证:\n$$\n\\sqrt{\\sum_{k=1}^n a_k} \\leqslant \\sum_{k=1}^n \\sqrt{k}\\left(\\sqrt{a_k}-\\sqrt{a_{k+1}}\\right) .\n$$",
+    "solution": "$\\left[\\sum_{k=1}^n(\\sqrt{k}-\\sqrt{k-1}) \\sqrt{a_k}\\right]^2=\\sum_{i=1}^n(\\sqrt{i}-\\sqrt{i-1})^2 a_i+2 \\sum_{i<j}(\\sqrt{i}- \\sqrt{i-1})(\\sqrt{j}-\\sqrt{j-1}) \\sqrt{a_i a_j} \\geqslant \\sum_{i=1}^n(\\sqrt{i}-\\sqrt{i-1})^2 a_i+2 \\sum_{i<j}(\\sqrt{i}- \\sqrt{i-1})(\\sqrt{j}-\\sqrt{j-1}) a_j=\\sum_{i=1}^n(\\sqrt{i}-\\sqrt{i-1})^2 a_i+2 \\sum_{j=1}^n \\sqrt{j-1}(\\sqrt{j}- \\sqrt{j-1}) a_j=\\sum_{i=1}^n a_i$, 因此结论成立.\n易见,等号成立时需存在 $m, a_1=a_2=\\cdots=a_m$, 而当 $k>m$ 时, $a_k=0$. 注:下面再给出两种证法.",
+    "remark": "",
+    "figures": []
+}

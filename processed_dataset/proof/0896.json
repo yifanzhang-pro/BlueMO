@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例22 设 $M$ 为整数集 $\\mathbf{Z}$ 的一个含 0 的有限子集, 又设 $f, g: M \\rightarrow M$ 为两个单调减函数, 且满足 $g(f(0)) \\geqslant 0$. 求证: 在 $M$ 中存在整数 $p$ 使得 $g(f(p))=p$.",
+    "solution": "证定义 $F: M \\rightarrow M$,\n$$\nF(x)=g(f(x)), x \\in M .\n$$\n则 $F$ 是单调增函数.\n事实上, 对任意的 $x, y \\in M, x \\leqslant y$, 由 $f$ 的单调减性知, $f(x) \\geqslant f(y)$. 由 $f(x), f(y) \\in M$ 及 $g$ 的单调减性, 有 $F(x)=g(f(x)) \\leqslant g(f(y))=F(y)$. 因此, $F$. 是单调增函数.\n如果 $g(f(0))=0$, 取 $p=0$ 即可.\n否则, $F(0)>0$. 又由 $F(0), 0 \\in M$ 及 $F$ 的单调增性, 有 $F(F(0)) \\geqslant F(0)$. 令 $D=\\{x \\in M \\mid x \\leqslant F(x)\\}$. 则 $F(0) \\in D$.\n由 $D \\subset M$, 而 $M$ 是有限集, 故 $D$ 是有限集.\n设 $p \\in D$ 为 $D$ 中的最大数,则 $p \\leqslant F(p)$.\n再由 $F$ 的单调增性, 有 $F(p) \\leqslant F(F(p))$, 从而 $F(p) \\in D$. 由 $p$ 是 $D$ 中的最大数, 有 $F(p)=g(f(p))=p$.",
+    "remark": "",
+    "figures": []
+}

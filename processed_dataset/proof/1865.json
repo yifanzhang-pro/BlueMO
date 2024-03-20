@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 圆 $\\Gamma_1$ 和圆 $\\Gamma_2$ 相交于点 $M$ 和 $N$. 设 $l$ 是圆 $\\Gamma_1$ 和圆 $\\Gamma_2$ 的两条公切线中距离 $M$ 较近的那条公切线.\n$l$ 与圆 $\\Gamma_1$ 相切于点 $A$, 与圆 $\\Gamma_2$ 相切于点 $B$. 设经过点 $M$ 且与 $l$ 平行的直线与圆 $\\Gamma_1$ 还相交于点 $C$, 与圆 $\\Gamma_2$ 还相交于点 $D$. 直线 $C A$ 和 $D B$ 相交于点 $E$, 直线 $A N$ 和 $C D$ 相交于点 $P$, 直线 $B N$ 和 $C D$ 相交于点 $Q$. 证明: $E P=E Q$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c5a4.png>), 令 $K$ 为 $M N$ 和 $A B$ 的交点.\n根据圆幂定理: $A K^2=K N \\cdot K M=B K^2$. 换言之, $K$ 是 $A B$ 的中点, 因为 $P Q / / A B$, 所以 $M$ 是 $P Q$ 的中点, 故只需证明 $E M \\perp P Q$.\n因为 $C D // A B$, 所以点 $A$ 是圆 $\\Gamma_1$ 的弧 $C M$ 的中点, 点 $B$ 是圆 $\\Gamma_2$ 的弧 $D M$ 的中点.\n于是, $\\triangle A C M$ 与 $\\triangle B D M$ 都是等腰三角形.\n从而 $\\angle B A M= \\angle A M C=\\angle A C M=\\angle E A B, \\angle A B M= \\angle B M D=\\angle B D M=\\angle E B A$. 故 $E M \\perp A B$. 再由 $PQ // AB$, 即得 $E M\\perp P Q$ .",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5a4.png"
+    ]
+}

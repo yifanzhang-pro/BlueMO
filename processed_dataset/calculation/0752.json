@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题3 若 $\\arcsin x+\\arctan \\frac{1}{7}=\\frac{\\pi}{4}$, 则 $x$ 等于 ( ).\n(A) $\\frac{6}{7}$\n(B) $\\frac{3}{5}$\n(C) $\\frac{5}{6}$\n(D) $\\frac{3}{7}$",
+    "solution": "B. 由已知等式得 $x=\\sin \\left(\\frac{\\pi}{4}-\\arctan \\frac{1}{7}\\right)=\\frac{\\sqrt{2}}{2} \\times \\frac{7}{5 \\sqrt{2}}-\\frac{\\sqrt{2}}{2} \\times \\frac{1}{5 \\sqrt{2}}= \\frac{3}{5}$, 故选 B.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设 $a 、 b 、 c 、 d$ 为正整数,证明: $a^{4 b+d}-a^{4 c+d}$ 被 240 整除.",
+    "solution": "证明:由于 $240=2^4 \\times 3 \\times 5$, 我们将分别证明 $a^{4 b+d}-a^{4 c+d}$ 被 3、5、16 整除,由此便证得了结论 (参见第 3 单元例 5 的注).\n首先证明 $3 \\mid\\left(a^{4 b+d}-a^{4 c+d}\\right)$. 由(12)中的结果 $a^2 \\equiv 0,1(\\bmod 3)$, 可知 $a^{4 b} \\equiv a^{4 c} \\equiv 0,1(\\bmod 3)$. 从而\n$$\na^{4 b+d}-a^{4 c+d}=a^d\\left(a^{4 b}-a^{4 c}\\right) \\equiv 0(\\bmod 3) .\n$$\n类似地, 由 $a^2 \\equiv 0, \\pm 1(\\bmod 5)$, 可知 $a^4 \\equiv 0,1(\\bmod 5)$, 从而 $a^{4 b} \\equiv a^{4 c} \\equiv 0,1(\\bmod 5)$. 于是 $a^{4 b+d}-a^{4 c+d} \\equiv 0(\\bmod 5)$.\n最后, 由 $a^4 \\equiv 0,1(\\bmod 16)$, 可知 $a^{4 b} \\equiv a^{4 c} \\equiv 0,1(\\bmod 16)$, 故 $a^{4 b+d}- a^{4 c+d} \\equiv 0(\\bmod 16)$. 这就证明了我们的结论.",
+    "remark": "",
+    "figures": []
+}

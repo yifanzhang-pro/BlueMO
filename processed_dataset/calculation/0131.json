@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 求 $x^3=y^3+2 y^2+1$ 的全部整数解.",
+    "solution": "首先注意, 若 $y^2+3 y>0$, 则由原方程推出 $(y+1)^3>x^3>y^3$, 即 $x^3$ 介于两个相邻的完全立方之间, 这不可能.\n故必有 $y^2+3 y \\leqslant 0$, 得整数 $y= -3,-2,-1,0$. 代入原方程检验, 可求得全部整数解为 $(x, y)=(1,0)$, $(1,-2),(-2,-3)$.",
+    "remark": "",
+    "figures": []
+}

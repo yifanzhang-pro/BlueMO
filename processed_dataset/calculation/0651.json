@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例9 在 $\\triangle A B C$ 中, 若角 $A 、 B 、 C$ 成等差数列, 外接圆直径为 1 , 若三个角所对的边分别为 $a 、 b 、 c$, 求 $a^2+c^2$ 的取值范围.",
+    "solution": "解:法一由条件得 $2 B=A+C$, 故有 $B=60^{\\circ}, A+C=120^{\\circ}$.\n由正弦定理得 \n$$\n\\begin{aligned}\na^2+c^2 & =(2 R \\sin A)^2+(2 R \\sin C)^2 \\\\\n& =\\sin ^2 A+\\sin ^2 C=\\frac{1-\\cos 2 A+1-\\cos 2 C}{2} \\\\\n& =1-\\cos (A+C) \\cos (A-C) \\\\\n& =1+\\frac{1}{2} \\cos (A-C), \\\\\n\\end{aligned}\n$$\n因为 $-120^{\\circ}<A-C<120^{\\circ}$\n所以 $-\\frac{1}{2}<\\cos (A-C) \\leqslant 1$. 从而 $a^2+c^2 \\in\\left(\\frac{3}{4}, \\frac{3}{2}\\right]$.\n解法二同解法一得 $B=60^{\\circ}$, 于是由正弦定理得 $b=2 R \\sin B=\\frac{\\sqrt{3}}{2}$, 由余弦定理得 $b^2=\\frac{3}{4}=a^2+c^2-2 a c \\cos 60^{\\circ}$.\n因为 $a^2+c^2 \\geqslant 2 a c$, 所以 $a^2+c^2=\\frac{3}{4}+2 a c \\cos 60^{\\circ} \\leqslant \\frac{3}{4}+\\frac{1}{2}\\left(a^2+c^2\\right)$. 从而 $a^2+c^2 \\leqslant \\frac{3}{2}$.\n显然 $a^2+c^2=\\frac{3}{4}+2 a c \\cos 60^{\\circ}>\\frac{3}{4}$, 故 $a^2+c^2 \\in\\left(\\frac{3}{4}, \\frac{3}{2}\\right]$.\n评注在三角形中, 三角成等差数列, 则 $B=60^{\\circ}, A+C=120^{\\circ}$, 由此结合其他条件可求三角形中的有关问题.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题16. $A D$ 是直角三角形 $A B C$ 斜边 $B C$ 上的高, $(A B<A C), I_1 、 I_2$ 分别是 $\\triangle A B D 、 \\triangle A C D$ 的内心, $\\triangle A I_1 I_2$ 的外接圆 $\\odot O$ 分别交 $A B 、 A C$ 于 $E$ 、 $F$, 直线 $E F 、 B C$ 交于点 $M$. 证明: $I_1 、 I_2$ 分别是 $\\triangle O D M$ 的内心与旁心.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c3a16.png>),因为 $\\angle B A C=90^{\\circ}$, 又 $O$ 为 $\\triangle A E F$ 外心, 所以 $O \\in E F$. 又 $O I_1==O I_2$, $2 \\angle I_1 A I_2=\\angle I_1 O I_2=90^{\\circ}$. 由此可得 $\\angle O I_2 I_1= \\angle O I_1 I_2=\\angle I_1 D O=\\angle I_2 D O=45^{\\circ}$. 所以, $O \\in A D$, 所以 $\\angle A I_1 O=\\angle I_1 A O=\\angle I_1 A E$, $\\angle I_1 O D=\\angle I_1 O M=\\angle E A D$. 故 $\\angle M O D$ 平分线为 $O I_1$, 又 $I_1 D$ 平分 $\\angle A D B$, 即 $I_1$ 为 $\\triangle O D M$ 内心.\n又 $\\angle I_1 O I_2=90^{\\circ}, O I_2$ 平分 $\\angle M O D$, 所以 $O I_2$ 平分 $\\angle F O D$, 而 $I_2 D$ 为 $\\angle A D C$ 平分线.\n所以 $I_2$ 为 $\\triangle O D M$ 旁心.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c3a16.png"
+    ]
+}

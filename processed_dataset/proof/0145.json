@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例6. 任给 $n>1$, 证明: 有正整数 $a$, 使得 $a^a+1, a^{a^a}+1, \\cdots$ 中所有数均被 $n$ 整除.",
+    "solution": "解:我们注意, 若 $a$ 是奇数, 则 $a^a, a^{a^a}, \\cdots$ 均是奇数, 从而由 (6) 知, $a^a+ 1, a^{a^a}+1=a^{\\left(a^a\\right)}+1, \\cdots$ 均有因子 $a+1$. 因此取 $a=2 n-1$ 则符合问题中的要求.",
+    "remark": "",
+    "figures": []
+}

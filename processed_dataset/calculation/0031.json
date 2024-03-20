@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter9.tex",
+    "problem_type": "calculation",
+    "problem": "例5. 设 $S$ 是有理数 $r$ 的集合, 其中 $0<r<1$, 且 $r$ 有循环小数的展开形式为 $\\overline{0 . a b c a b c a b c \\cdots}=\\overline{0 .\\dot{a} b \\dot{c}}, a 、 b 、 c$ 不一定相异.\n在 $S$ 的元素中, 能写成最简分数的不同的分子有多少个?",
+    "solution": "解:因为 $\\overline{0 . \\dot{a} b \\dot{c}}=\\frac{\\overline{a b c}}{999}$, 又 $999=3^3 \\cdot 37$, 故如果 $\\overline{a b c}$ 既不能被 3 整除也不能被 37 整除,则分数就是最简形式.\n设 $A_1=\\{$ 不超过 1000 的正整数中 3 的倍数 $\\}, A_2=$ \\{不超过 1000 的正整数中 37 的倍数 $\\}$. 易知\n$$\n\\begin{gathered}\n\\left|A_1\\right|=\\frac{999}{3}=333,\\left|A_2\\right|=\\frac{999}{37}=27, \\\\\n\\left|A_1 \\cap A_2\\right|=\\frac{999}{3 \\cdot 37}=9 .\n\\end{gathered}\n$$\n由定理 2 , 有\n$$\n\\begin{aligned}\n& 999-\\left(\\left|A_1\\right|+\\left|A_2\\right|\\right)+\\left|A_1 \\cap A_2\\right| \\\\\n= & 999-(333+27)+9=648 .\n\\end{aligned}\n$$\n即此类最简分数的不同分子有 648 个.\n此外, 还有形如 $\\frac{k}{37}$ 的数, 其中自然数 $k$ 是小于 37 的 3 的倍数, 这样的 $k$ 有 $3,6,9, \\cdots, 36$ 共 12 个.\n故满足条件的分子有 $648+12=660$ 个.",
+    "remark": "",
+    "figures": []
+}

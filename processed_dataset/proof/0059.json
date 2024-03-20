@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题13: 设 $E=\\{1,2,3, \\cdots, 200\\}, G=\\left\\{a_1, a_2, a_3, \\cdots, a_{100}\\right\\} \\subseteq E$, 且 $G$ 具有下列两条性质:\n(1)对任何 $1 \\leqslant i<j \\leqslant 100$, 恒有 $a_i+a_j \\neq 201$;\n(2) $\\sum_{i=1}^{100} a_i=10080$.\n试证明: $G$ 中的奇数的个数是 4 的倍数, 且 $G$ 中所有数字的平方和为一个定数.",
+    "solution": "解: 由已知得 $\\sum_{k=1}^{200} k^2=\\sum_{i=1}^{100} a_i^2+\\sum_{i=1}^{100}\\left(201-a_i\\right)^2=2 \\sum_{i=1}^{100} a_i^2-402 \\sum_{i=1}^{100} a_i+201^2 \\times 100$. 由 (2) 及上式得 $\\sum_{i=1}^{100} a_i^2$ 为常数.\n设 $G$ 中有 $x$ 个奇数, 则由上式可得 $4 \\equiv 2 x-0+4(\\bmod 8)$, 故 $x \\equiv 0(\\bmod 4)$.",
+    "remark": "",
+    "figures": []
+}

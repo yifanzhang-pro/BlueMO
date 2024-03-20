@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 求证: $\\sin 1+\\sin 2+\\cdots+\\sin n \\leqslant \\frac{1}{\\sin \\frac{1}{2}}$.",
+    "solution": "$\\left|\\sum_{k=1}^n \\sin k\\right| \\leqslant\\left|\\sum_{k=1}^n \\mathrm{e}^{\\mathrm{i} k}\\right|=\\left|\\frac{\\mathrm{e}^{\\mathrm{i}}\\left(1-\\mathrm{e}^{\\mathrm{i} n}\\right)}{1-\\mathrm{e}^{\\mathrm{i}}}\\right|=\\left|\\frac{1-\\mathrm{e}^{\\mathrm{i} n}}{1-\\mathrm{e}^{\\mathrm{i}}}\\right|=\\frac{\\left|\\mathrm{i}-\\mathrm{e}^{\\mathrm{i} n}\\right|}{2 \\sin \\frac{1}{2}} \\leqslant \\frac{1+\\left|\\mathrm{e}^{\\mathrm{in}}\\right|}{2 \\sin \\frac{1}{2}}=\\frac{1}{\\sin \\frac{1}{2}}$, 证毕.",
+    "remark": "",
+    "figures": []
+}

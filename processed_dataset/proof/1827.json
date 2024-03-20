@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 如图(<FilePath:./images/volume7/figures/fig-c3p1.png>),已知 $\\triangle A B C$ 内一点 $P$, 设 $D 、 E 、 F$ 分别为点 $P$ 在边 $B C 、 C A 、 A B$ 上的投影.\n假设 $A P^2+ P D^2=B P^2+P E^2=C P^2+P F^2$, 且 $\\triangle A B C$ 的三个旁心分别为 $I_A 、 I_B 、 I_C$. 证明: $P$ 是 $\\triangle I_A I_B I_C$ 的外心.",
+    "solution": "证明: 由已知条件可得, $B F^2-C E^2=\\left(B P^2-P F^2\\right)-\\left(C P^2-P E^2\\right)= \\left(B P^2+P E^2\\right)-\\left(C P^2+P F^2\\right)=0$. 从而, $B F=C E$. 设 $x=B F=C E$. 同理可设 $y=C D=A F, z=A E=B D$. 若 $D 、 E 、 F$ 中有一个点在三边的延长线上, 如点 $D$ 在 $B C$ 的延长线上, 则有 $A B+B C=(x+y)+(z-y)=x+z=A C$, 矛盾: 因此, $D 、 E 、 F$ 三个点都在 $\\triangle A B C$ 的三边上.\n设 $a=B C, b=C A, c= A B, p=\\frac{1}{2}(a+b+c)$, 则 $x=p-a, y=p-b, z=p-c$. 因为 $B D=p-c$, $C D=p-b$, 所以, $D$ 是 $\\triangle A B C$ 的 $\\angle B A C$ 内的旁切圆与边 $B C$ 的切点.\n同理, $E, F$ 分别是 $\\angle A B C 、 \\angle A C B$ 内的旁切圆与边 $C A 、 A B$ 的切点.\n由于 $P D$ 和 $I_A D$ 均垂直于 $B C$, 所以, $P 、 D 、 I_A$ 三点共线.\n同理, $P 、 E 、 I_B$ 和 $P 、 F 、 I_C$ 均三点共线.\n因为 $I_A 、 C 、 I_B$ 三点共线, 且 $\\angle P I_A C=\\angle P I_B C=\\frac{\\angle A C B}{2}$,\n所以, $P I_A=P I_C$. 同理可得, $P I_A=P I_B=P I_C$. 因此, $P$ 是 $\\triangle I_A I_B I_C$ 的外心.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c3p1.png"
+    ]
+}

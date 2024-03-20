@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例15. (1)设实数 $x 、 y 、 z$ 都不等于 $1, x y z=1$, 求证:\n$$\n\\frac{x^2}{(x-1)^2}+\\frac{y^2}{(y-1)^2}+\\frac{z^2}{(z-1)^2} \\geqslant 1 \\text {. }\n$$\n(2) 求证: 存在无穷多组三元有理数组 $(x, y, z)$, 使得上述不等式等号成立.",
+    "solution": "证法 1 (1)\n$$\n\\begin{gathered}\n\\text { 令 } \\frac{x}{x-1}=a, \\frac{y}{y-1}=b, \\frac{z}{z-1}=c, \\text { 则 } \\\\\nx==\\frac{a}{a-1}, y=\\frac{b}{b-1}, z=\\frac{c}{c-1} .\n\\end{gathered}\n$$\n由题设条件 $x y z=1$ 得,\n$$\n\\begin{aligned}\n& a b c=(a-1)(b-1)(c-1), \\\\\n& a+b+c-1=a b+b c+c a,\n\\end{aligned}\n$$\n即\n$$\na+b+c-1=a b+b c+c a\n$$\n所以\n$$\n\\begin{aligned}\na^2+b^2+c^2 & =(a+b+c)^2-2(a b+b c+c a) \\\\\n& =(a+b+c)^2-2(a+b+c-1) \\\\\n& =(a+b+c-1)^2+1 \\geqslant 1, \\\\\n\\frac{x^2}{(x-1)^2} & +\\frac{y^2}{(y-1)^2}+\\frac{z^2}{(z-1)^2} \\geqslant 1 .\n\\end{aligned}\n$$\n从而\n$$\n\\frac{x^2}{(x-1)^2}+\\frac{y^2}{(y-1)^2}+\\frac{z^2}{(z-1)^2} \\geqslant 1 \\text {. }\n$$\n(2) 令 $(x, y, z)=\\left(-\\frac{k}{(k-1)^2}, k-k^2, \\frac{k-1}{k^2}\\right), k$ 是正整数, 则 $(x, y, z)$ 是三元有理数组, $x 、 y 、 z$ 都不等于 1 , 且对于不同的正整数 $k$, 三元有理数组 $(x, y, z)$ 是互不相同的.\n此时\n$$\n\\begin{aligned}\n& \\frac{x^2}{(x-1)^2}+\\frac{y^2}{(y-1)^2}+\\frac{z^2}{(z-1)^2} \\\\\n= & \\frac{k^2}{\\left(k^2-k+1\\right)^2}+\\frac{\\left(k-k^2\\right)^2}{\\left(k^2-k+1\\right)^2}+\\frac{(k-1)^2}{\\left(k^2-k+1\\right)^2} \\\\\n= & \\frac{k^4-2 k^3+3 k^2-2 k+1}{\\left(k^2-k+1\\right)^2}=1,\n\\end{aligned}\n$$\n从而命题得证.",
+    "remark": "",
+    "figures": []
+}

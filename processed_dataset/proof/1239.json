@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 已知 $\\lambda$ 为正实数.\n求 $\\lambda$ 的最大值,使得对于所有满足条件\n$$\nu \\sqrt{w w}+v \\sqrt{w u}+w \\sqrt{u v} \\geqslant 1\n$$\n的正实数 $u 、 v 、 w$,均有\n$$\nu+v+w \\geqslant \\lambda .\n$$",
+    "solution": "首先, 易观察出当 $u=v=w=\\frac{\\sqrt{3}}{3}$ 时, $u \\sqrt{v w}+v \\sqrt{w u}+w \\sqrt{u v}=$ 1 及 $u+v+w=\\sqrt{3}$. 因此, $\\lambda$ 的最大值不超过 $\\sqrt{3}$. 下面证明: 对于所有 $u, v$, $w>0$, 且满足 $u \\sqrt{v w}+v \\sqrt{w u}+w \\sqrt{u v} \\geqslant 1$, 均有 $u+v+w \\geqslant \\sqrt{3}$. 由均值不等式及柯西不等式有 $\\frac{(u+v+w)^4}{9}=\\left(\\frac{u+v+w}{3}\\right)^3 \\cdot 3(u+v+w) \\geqslant 3 u v w(u+v+w)=(u w w+v w u+r u v)(u+v+w) \\geqslant(u \\sqrt{v w}+v \\sqrt{w u}+ w \\sqrt{u v})^2 \\geqslant 1$. 因此, $u+v+w \\geqslant \\sqrt{3}$. 当且仅当 $u=v=w=\\frac{\\sqrt{3}}{3}$ 时, 上式等号成立.\n综上, 所求 $\\lambda$ 的最大值为 $\\sqrt{3}$.",
+    "remark": "",
+    "figures": []
+}

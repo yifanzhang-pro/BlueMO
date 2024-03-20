@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 求 $1,2,3,4,5$ 这 5 个数字满足如下性质的排列的种数: 第 1 个到第 $i(1 \\leqslant i \\leqslant 4)$ 个位置不能由 $1,2, \\cdots, i$ 组成.",
+    "solution": "解:令 $A_i(1 \\leqslant i \\leqslant 4)$ 为 $1,2,3,4,5$ 排列组成的集合, 它的任意一个元素的前 $i$ 个数是 $1,2, \\cdots, i$ 的一个排列.\n则\n$$\n\\begin{gathered}\n\\left|A_1\\right|=4 !=24,\\left|A_2\\right|=2 ! \\times 3 !=12,\\left|A_3\\right|=3 ! \\times 2 !=12, \\\\\n\\left|A_4\\right|=4 !=24,\\left|A_1 \\cap A_2\\right|=3 !=6,\\left|A_1 \\cap A_3\\right|=2 ! \\times 2 !=4, \\\\\n\\left|A_1 \\cap A_4\\right|=3 !=6,\\left|A_2 \\cap A_3\\right|=2 ! \\times 2 !=4,\\left|A_2 \\cap A_4\\right|= \\\\\n2 ! \\times 2 !=4,\\left|A_3 \\cap A_4\\right|=3 !=6,\\left|A_1 \\cap A_2 \\cap A_3\\right|= \\\\\n2 !=2,\\left|A_1 \\cap A_2 \\cap A_4\\right|=2 !=2,\\left|A_1 \\cap A_3 \\cap A_4\\right|=2 !=2, \\\\\n\\left|A_2 \\cap A_3 \\cap A_4\\right|=2 !=2,\\left|A_1 \\cap A_2 \\cap A_3 \\cap A_4\\right|=1 .\n\\end{gathered}\n$$\n所以,由容厉原理得\n$$\n\\begin{aligned}\n\\mid & A_1 \\cup A_2 \\cup A_3 \\cup A_4|=| A_1|+| A_2|+| A_3|+| A_4|-| A_1 \\cap \\\\\n& A_2|-| A_1 \\cap A_3|-| A_1 \\cap A_4|-| A_2 \\cap A_3|-| A_2 \\cap A_4 \\mid-\n\\end{aligned}\n$$\n$$\n\\begin{gathered}\n\\left|A_3 \\cap A_4\\right|+\\left|A_1 \\cap A_2 \\cap A_3\\right|+\\left|A_1 \\cap A_2 \\cap A_4\\right|+\\left|A_1 \\cap A_3 \\cap A_4\\right|+ \\\\\n\\left|A_2 \\cap A_3 \\cap A_4\\right|-\\left|A_1 \\cap A_2 \\cap A_3 \\cap A_4\\right| \\\\\n=24+12+12+24-6-4-6-4-4-6+2+2+2+2-1=49,\n\\end{gathered}\n$$\n所以,满足题意的排列有 $5 !-49=120-49=71$.",
+    "remark": "",
+    "figures": []
+}

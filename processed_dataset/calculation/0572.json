@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题2 设二次函数 $f(x)=x^2+x+a(a>0)$ 满足 $f(m)<0$, 判断 $f(m+1)$ 的符号.",
+    "solution": "因为 $a>0, f(m)=m^2+m+a<0$, 所以 $m^2+m=m(m+1)<0$, 于是 $\\left\\{\\begin{array}{l}m<0, \\\\ m+1>0 .\\end{array}\\right.$ 所以 $f(m+1)=(m+1)^2+m+1+a>0$, 故 $f(m+1)$ 的符号为正.",
+    "remark": "",
+    "figures": []
+}

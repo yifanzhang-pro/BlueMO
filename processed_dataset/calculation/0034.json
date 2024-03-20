@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题1: 已知三元实数集 $A=\\{x, x y, x+y\\}, B=\\{0,|x|, y\\}$, 且 $A=B$, 则$x^{2005}+y^{2005}=$",
+    "solution": "解: 0 .",
+    "remark": "",
+    "figures": []
+}

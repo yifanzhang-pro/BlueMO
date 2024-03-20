@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设 $O$ 是锐角 $\\triangle A B C$ 的外心, $\\angle B<\\angle C, A O$ 交边 $B C$ 于点 D. $\\triangle A B D$ 和 $\\triangle A C D$ 的外心分别为 $E 、 F$. 在 $B A$ 和 $C A$ 的延长线上分别取点 $G$ 和 $H$, 使得 $A G=A C, A H=A B$. 证明: 四边形 $E F G H$ 是矩形的充分必要条件是 $\\angle A C B-\\angle A B C=60^{\\circ}$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c7a3.png>), 设 $E F$ 交 $A B$ 于点 $K$, 点 $E 、 F$ 在 $B C$ 上的射影分别为 $E^{\\prime}, F^{\\prime}$. 显然, $\\triangle A G H \\cong \\triangle A C B$, $E F=\\frac{E^{\\prime} F^{\\prime}}{\\sin \\angle E^{\\prime} E F}=\\frac{B C}{2 \\sin \\angle A D C}=\\frac{B C}{2 \\sin \\left(B+90^{\\circ}-C\\right)}= \\frac{B C}{2 \\cos (C-B)}$.\n必要性.\n由 $E F=G H=B C$, 得 $\\cos (C-B)=\\frac{1}{2}$, 故 $\\angle A C B-\\angle A B C=60^{\\circ}$.\n充分性.\n由 $\\angle A C B-\\angle A B C=60^{\\circ}$, 得 $E F=B C=G H$. 由 $E F \\perp A D$, 则 $\\angle F K A=90^{\\circ}-\\angle O A B=\\angle A C B=\\angle A G H$. 故 $E F / / G H$. 因此, 四边形 $E F G H$ 为平行四边形.\n因 $\\angle A D C=\\angle A B C+90^{\\circ}- \\angle A C B=30^{\\circ}$, 则 $\\angle A F C=60^{\\circ}$. 故 $\\triangle A F C$ 为正三角形, 有 $A F=A C=A G$. 又 $A K=\\frac{A D}{2 \\sin \\angle A K F}=\\frac{A D}{2 \\sin C}=A F$, 故 $\\angle K F G==90^{\\circ}$. 从而, 四边形 $E F G H$ 为矩形.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c7a3.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设正实数 $a 、 b 、 c$ 满足 $a b+b c+c a=\\frac{1}{3}$. 证明:\n$$\n\\frac{a}{a^2-b c+1}+\\frac{b}{b^2-c a+1}+\\frac{c}{c^2-a b+1} \\geqslant \\frac{1}{a+b+c} .\n$$",
+    "solution": "等式左边的分母显然为正数.\n由柯西不等式得 $\\frac{a}{a^2-b c+1}+$\n$$\n\\begin{aligned}\n& \\frac{b}{b^2-c a+1}+\\frac{c}{c^2-a b+1}=\\frac{a^2}{a^3-a b c+a}+\\frac{b^2}{b^3-a b c+b}+\\frac{c^2}{c^3-a b c+c} \\geqslant \\\\\n& \\frac{(a+b+c)^2}{a^3+b^3+c^3+a+b+c-3 a b c}=\\frac{(a+b+c)^2}{(a+b+c)\\left(a^2+b^2+c^2-a b-b c-c a\\right)+(a+b+c)} \\\\\n& =\\frac{a+b+c}{a^2+b^2+c^2-a b-b c-c a+1}=\\frac{a+b+c}{a^2+b^2+c^2+2(a b+b c+c a)}= \\\\\n& \\frac{1}{a+b+c} \\text {. 命题得证.\n}\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

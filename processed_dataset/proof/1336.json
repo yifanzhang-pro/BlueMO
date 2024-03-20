@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例13. 设 $x_n=\\sqrt{2+\\sqrt[3]{3+\\cdots+\\sqrt[n]{n}}}$, 求证:\n$$\nx_{n+1}-x_n<\\frac{1}{n !}, n=2,3, \\cdots \\text {. }\n$$",
+    "solution": "证明:当 $n=2$ 时, $x_3-x_2=\\sqrt{2+\\sqrt[3]{3}}-\\sqrt{2}<\\frac{1}{2 !}$.\n当 $n \\geqslant 3$ 时,构造数列 $\\left\\{a_i\\right\\} 、\\left\\{b_i\\right\\} 、\\left\\{c_i\\right\\}$ 如下:\n$$\n\\begin{aligned}\n& a_i=\\sqrt[i]{i+\\sqrt[i+1]{(i+1)+\\cdots+\\sqrt[n]{n+\\sqrt[n]{1+1}}}}, i=2, \\cdots, n+1 ; \\\\\n& b_i=\\sqrt[i]{i+\\sqrt[i+1]{(i+1)+\\cdots+\\sqrt[n]{n}}}, i=2,3, \\cdots, n, b_{n+1}=0 \\\\\n& c_i=a_i^{i-1}+a_i^{i-2} b_i+\\cdots+a_i b_i^{i-2}+b_i^{i-1}, i=2,3, \\cdots .\n\\end{aligned}\n$$\n显然, $x_{n+1}=a_2, x_n=b_2$, 且\n$$\n\\left(a_i-b_i\\right) c_i=a_i^i-b_i^i=a_{i+1}-b_{i+1} .\n$$\n故\n$$\na_i-b_i=\\frac{a_{i+1}-b_{i+1}}{c_i}, i=2,3, \\cdots, n .\n$$\n将以上 $n-1$ 个等式相乘, 并注意到\n$$\na_{n+1}-b_{n+1}=(n+1)^{\\frac{1}{n+1}},\n$$\n则有\n$$\na_2-b_2=\\frac{a_{n+1}-b_{n+1}}{c_2 c_3 \\cdots c_n}=\\frac{(n+1)^{\\frac{1}{n+1}}}{c_2 c_3 \\cdots c_n} .\n$$\n又因为 $a_k>b_k \\geqslant \\sqrt[k]{k}$, 故 $c_k \\geqslant k \\cdot k^{\\frac{k-1}{k}}>k \\cdot k^{\\frac{k-1}{k+1}}$, 于是\n$$\nx_{n+1}-x_n=a_2-b_2<\\frac{1}{n !} \\cdot \\frac{(n+1)^{\\frac{1}{n+1}}}{n^{\\frac{n+1}{n+1}}}<\\frac{1}{n !} .\n$$\n上式中当 $n>2$ 时, $\\frac{n+1}{n^{n-1}}<\\frac{2 n}{n^2}<1$ 是明显的.",
+    "remark": "",
+    "figures": []
+}

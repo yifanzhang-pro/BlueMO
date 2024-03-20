@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter9.tex",
+    "problem_type": "calculation",
+    "problem": "例5. 由 $2 \\times 2$ 的方格纸去掉一个方格余下的图形称为拐形.\n用这种拐形去覆盖 $5 \\times 7$ 的方格板, 每个拐形恰覆盖 3 个方格, 可以重叠但不能超出方格板的边界.\n问能否使方格板上每个方格被覆盖的层数都相同? 说明理由.",
+    "solution": "解:将 $5 \\times 7$ 方格板的每一个小方格内填写数 -2 和 1 如图(<FilePath:./images/volume11/figures/fig-c9i9.png>) 所示.\n易见每个拐形覆盖的 3 个数之和非负.\n因而无论用多少个拐形覆盖多少次, 盖住的所有数字之和 (一个数被覆盖了几层就计算几次)都是非负的.\n另一方面, 方格板上数字的总和为 $12 \\times(-2)+23 \\times 1=-1$, 当被覆盖 $k$ 层时, 盖住的数字之和等于 $-k$, 这表明不存在\n\\begin{tabular}{|c|c|c|c|c|c|c|}\n\\hline-2 & 1 & -2 & 1 & -2 & 1 & -2 \\\\\n\\hline 1 & 1 & 1 & 1 & 1 & 1 & 1 \\\\\n\\hline-2 & 1 & -2 & 1 & -2 & 1 & -2 \\\\\n\\hline 1 & 1 & 1 & 1 & 1 & 1 & 1 \\\\\n\\hline-2 & 1 & -2 & 1 & -2 & 1 & -2 \\\\\n\\hline\n\\end{tabular}\n满足题中要求的覆盖.",
+    "remark": "",
+    "figures": [
+        "./images/volume11/figures/fig-c9i9.png"
+    ]
+}

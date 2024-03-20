@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例7. 如图(<FilePath:./images/volume7/figures/fig-c9i11.png>), $\\triangle A B C$ 的内切圆 $\\odot I$ 切 $B C$ 、 $C A 、 A B$ 于 $D 、 E 、 F, A D$ 与 $\\odot I$ 的另一个交点 $X$, $B X 、 C X$ 分别交 $\\odot I$ 于 $P 、 Q$. 又记 $B C$ 中点为 $M$. 若 $A X=X D$, 求证: $F P / / E Q$.",
+    "solution": "证明:连结 $E Q$, 设 $E D$ 与 $C X$ 交于 $R$, 由定理 3 知, 四边形 $E Q D X$ 为调和四边形, 于是 $E E$ (过 $E$ 的切线)、 $E D, E Q 、 E X$ 成调和线束, 或 $E A 、 E D, E X 、 E Q$ 成调和线束, 结合 $A X=X D$ 即知 $E Q / / A D$, 同理, $P F / / A D$, 故 $P F / / E Q$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9i11.png"
+    ]
+}

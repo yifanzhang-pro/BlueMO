@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 设 $a 、 b 、 c$ 是给定复数, 记 $|a+b|=m,|a-b|=n$, 已知 $m n \\neq 0$, 求证:\n$$\n\\max \\{|a c+b|,|a+b c|\\} \\geqslant-\\frac{m m}{\\sqrt{m^2+n^2}} .\n$$",
+    "solution": "因为\n$$\n\\begin{aligned}\n\\max \\{|a c+b|,|a+b c|\\} & \\geqslant \\frac{|b||a c+b|+|a||a+b c|}{|b|+|a|} \\\\\n& \\geqslant \\frac{|b(a c+b)-a(a+b c)|}{|a|+|b|} \\\\\n& =\\frac{\\left|b^2-a^2\\right|}{|a|+|b|} \\\\\n& \\geqslant \\frac{|b+a||b-a|}{\\sqrt{2\\left(|a|^2+|b|^2\\right)}},\n\\end{aligned}\n$$\n又\n$$\nm^2+n^2=|a-b|^2+|a+b|^2=2\\left(|a|^2+|b|^2\\right),\n$$\n所以\n$$\n\\max \\{|a c+b|,|a+b c|\\} \\geqslant \\frac{m m}{\\sqrt{m^2+n^2}},\n$$\n证毕.",
+    "remark": "",
+    "figures": []
+}

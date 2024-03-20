@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例3. 已知 5 根细棍中任意 3 根都可以首尾相接得到一个三角形.\n证明: 这些三角形中必存在锐角三角形.",
+    "solution": "证明:反证法, 假设 $a, b, c, d, e(0<a \\leqslant b \\leqslant c \\leqslant d \\leqslant e)$ 为 5 根细棍的长度, 且它们中任意三根首尾相接得到的是钝角或直角三角形.\n由 $a 、 b 、 e$ 为三角形的三边长知: $a+b>e$;\n由 $a 、 b 、 c$ 为针角或直角三角形的三边长知: $a^2+b^2 \\leqslant c^2$;\n由 $c 、 d 、 e$ 为钝角或直角三角形的三边长知: $c^2+d^2 \\leqslant e^2$, 于是\n$$\nc^2+d^2 \\leqslant e^2<(a+b)^2 \\leqslant 2\\left(a^2+b^2\\right) \\leqslant 2 c^2 \\leqslant c^2+d^2,\n$$\n矛盾!\n故假设不成立, 从而命题得证.",
+    "remark": "注:本例中可供利用的信息甚少, 若能通过反证法的假设获得较多可供利用的信息,则有利于打开局面.\n上述解法在反证法假设之下, 再辅以对 5 根细棍的长度排序, 这样就创设了大量明确的条件, 容易从中大做文章, 直到矛盾产生为止 (上述解答已经过 \"修枝剪叶\", 将不需要用来导出矛盾的条件全都去除了, 故而显得相对精简).",
+    "figures": []
+}

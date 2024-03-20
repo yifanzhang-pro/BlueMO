@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例9. 设 $x_i, y_i, \\cdots, z_i \\in \\mathbf{R}(i=1,2, \\cdots, n)$, 求证:\n$$\n\\sum_{i=1}^n \\sqrt{x_i^2+y_i^2+\\cdots+z_i^2} \\geqslant \\sqrt{\\left(\\sum_{i=1}^n x_i\\right)^2+\\left(\\sum_{i=1}^n y_i\\right)^2+\\cdots+\\left(\\sum_{i=1}^n z_i\\right)^2} .\n$$",
+    "solution": "证明:令 $a=\\sum_{i=1}^n x_i, b=\\sum_{i=1}^n y_i, \\cdots, c=\\sum_{i=1}^n z_i$. 不妨设 $a^2+b^2+\\cdots+ c^2 \\neq 0$, 则由柯西不等式, 得\n$$\n\\left(a^2+b^2+\\cdots+c^2\\right)\\left(x_i^2+y_i^2+\\cdots+z_i^2\\right) \\geqslant\\left(a x_i+b y_i+\\cdots+c z_i\\right)^2,\n$$\n即\n$$\na x_i+b y_i+\\cdots+c z_i \\leqslant \\sqrt{a^2+b^2+\\cdots+c^2} \\cdot \\sqrt{x_i^2+y_i^2+\\cdots+z_i^2} .\n$$\n求和, 得\n$$\na^2+b^2+\\cdots+c^2 \\leqslant \\sqrt{a^2+b^2+\\cdots+c^2} \\sum_{i=1}^n \\sqrt{x_i^2+y_i^2+\\cdots+z_i^2} .\n$$\n故 $\\quad \\sum_{i=1}^n \\sqrt{x_i^2+y_i^2+\\cdots+z_i^2} \\geqslant \\sqrt{a^2+b^2+\\cdots+c^2}$.\n本例如果用向量方法证明, 会更简洁.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例1 设 $x, y \\in \\mathbf{R}$, 求 $u=x^2+x y+y^2-x-2 y+3$ 的最小值.",
+    "solution": "分析:把 $u$ 写成若干个非负数的和再加上一个常数, 从而 $u$ 就大于等于这个常数,再说明当 $x, y$ 取某值时, $u$ 可以取到这个常数即可.\n解 $u=x^2+(y-1) x+y^2-2 y+3$\n$$\n=\\left[x^2+(y-1) x+\\frac{(y-1)^2}{4}\\right]+y^2-2 y+3-\\frac{(y-1)^2}{4}\n$$\n$$\n\\begin{aligned}\n& =\\left(x+\\frac{y-1}{2}\\right)^2+\\frac{3}{4}\\left(y^2-2 y+1\\right)+2 \\\\\n& =\\left(x+\\frac{y-1}{2}\\right)^2+\\frac{3}{4}(y-1)^2+2 \\geqslant 2,\n\\end{aligned}\n$$\n又当 $x=0, y=1$ 时等号成立, 所以 $u$ 的最小值为 2 .\n说明在估计 $u$ 的下界时, 进行了配方, 需要注意的是这些非负项是可以同时达到 0 的.",
+    "remark": "",
+    "figures": []
+}

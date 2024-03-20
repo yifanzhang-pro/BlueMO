@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 如图(<FilePath:./images/volume7/figures/fig-c5p1.png>),已知 $\\odot O_1$ 和 $\\odot O_2$ 相交于 $A$ 和 $B, P$ 是线段 $A B$ 上一点, $K M$ 是过 $P$ 点的 $\\odot O_1$ 的弦, $L N$ 是过 $P$ 点的 $\\odot O_2$ 的弦.\n求证: $K 、 L 、 M 、 N$ 四点共圆.",
+    "solution": "证明: 因为 $K M, A B$ 为 $\\odot O_1$ 的两条相交弦, 所以 $P K \\cdot P M=P A \\cdot P B$. 同理, $P L \\cdot P N=P A \\cdot P B$, 所以 $P K \\cdot P M=P L \\cdot P N$. 由相交弦定理的逆定理得到 $K 、 L 、 M 、 N$ 四点共圆.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5p1.png"
+    ]
+}

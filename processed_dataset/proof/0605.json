@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $A_i=\\{i, i+1, i+2, \\cdots, i+59\\}(i=1,2, \\cdots, 11), A_{11+j}=\\{11+j$, $12+j, \\cdots, 70,1,2, \\cdots, j\\}(j=1,2, \\cdots, 59)$. 在这 70 个集合中存在 $k$ 个集合,其中任 7 个集合的交非空.\n求 $k$ 的最大值.",
+    "solution": "令 $A_i=\\{i, i+1, i+2, \\cdots, i+59\\}(i=1,2, \\cdots, 70)$, 其集合中的元素按模 70 理解, 即 $x>70$ 时, 将 $x$ 换作 $x-70$. 显然, $60 \\in A_1, A_2, \\cdots, A_{60}$, 所以 $k_{\\text {max }} \\geqslant 60$. 我们猜想, $k_{\\text {max }}=60$. 这只须证明任何满足条件的 $k$, 有 $k \\leqslant 60$. 用反证法.\n若 $k \\geqslant 61$, 我们证明取出的任何 $k$ 个集合,都能找到 7 个集合的交为空集.\n要找到 7 个集合 $A_{i_1}, A_{i_2}, \\cdots, A_{i_7}$, 其交为空集, 只须它们的补集的并为全集, 即 $\\bar{A}_{i_1} \\cup \\bar{A}_{i_2} \\cup \\cdots \\cup \\bar{A}_{i_7}=I$, 注意到 $\\bar{A}_{i_1}, \\bar{A}_{i_2}, \\cdots, \\bar{A}_{i_7}$ 都是 10 元集, 而 $I$ 有 70 个元素, 要使 $\\bar{A}_{i_1}, \\bar{A}_{i_2}, \\cdots, \\bar{A}_{i_7}$ 包含所有元素, 则它们应在 $A_1, A_2, \\cdots, A_{70}$ 中均匀分布, 即 $A_{i_1}, A_{i_2}, \\cdots, A_{i_7}$ 在 $A_1, A_2, \\cdots, A_{70}$ 中均匀分布, 所以要找的 7 个集合具有形式: $A_i, A_{10+i}, \\cdots, A_{60+i}$. 现在的问题是, 这样的 7 个集合是否都被取出.\n注意到这 7 个集合的共同特征是下标的个位数都是 $i$. 因为取出了 $k \\geqslant 61$ 个集合后, 至多剩下 9 个集合, 它们不能同时含有下标的个位数为 $0,1,2, \\cdots, 9$ 这 10 种可能, 即存在 $0 \\leqslant i \\leqslant 9$, 使 $i$ 不是剩下的 9 . 个集合的下标的个位数.\n也即集合 $A_i, A_{10+i}, \\cdots, A_{60+i}$ 都是取出的集合.\n $A_i \\cap A_{10+i} \\cap \\cdots \\cap A_{60+i}=\\Phi$,矛盾.",
+    "remark": "",
+    "figures": []
+}

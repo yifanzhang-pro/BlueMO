@@ -1,0 +1,12 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题12 平面上的点集 $H$ 称为是好的, 如果 $H$ 中任意 3 个点都存在一条对称轴, 使得这 3 个点关于这条对称轴对称.\n证明:\n(1) 一个好的集合不一定是轴对称的;\n(2) 如果一个好的集合中恰有 2003 个点,则这 2003 个点在一条直线上.",
+    "solution": "(1) 如图(<FilePath:./images/volume1/figures/fig-c6p12-1.png>), $\\triangle A B C 、 \\triangle A D C 、 \\triangle B C D$ 均为等腰三角形, $A 、 B 、 D$ 也共线.\n所以, 任意三个点皆有一条对称轴.\n故它是一个好的集合.\n但是 $A 、 B$ 、 $C 、 D$ 不是轴对称的.\n(2) 反证法.\n假设结论不成立.\n于是, 不可能有集合中的 6 个点共线.\n否则, 在这条直线外必有 1 个属于集合的点 $K$, 过点 $K$ 作此直线的垂线, 则此直线上必有至少 3 个点在这条垂线的同侧, 记为 $A 、 B 、 C$ (如图(<FilePath:./images/volume1/figures/fig-c6p12-2.png>)). 因为 $\\angle K C B>\\frac{\\pi}{2}$, 所以, $B K>B C$. 由于 $K 、 C 、 B$ 有对称轴, 则 $B C=C K$. 同理, $A C=C K$,矛盾.\n故不可能有集合中的 6 个点共线.\n不妨设 $A 、 B$ 为这个集合中距离最短的两个点(如图(<FilePath:./images/volume1/figures/fig-c6p12-3.png>)). 则其余 2001 个点有以下 4 种情况:(i) 在线段 $A B$ 中垂线上; (ii) 在 $A B$ 所在直线上; (iii) 在以 $A$ 为圆心、 $A B$ 长为半径的圆上; (iv) 在以 $B$ 为圆心、 $A B$ 长为半径的圆上.\n由前面的证明可知, (i)、(ii) 两种情况点的总数不超过 10 个.\n又因为 $A B$ 的距离最小, 所以 (iii)、(iv)两种情况点的总数不超过 10 个.\n故 $10+10+2<2003$. 矛盾.",
+    "remark": "",
+    "figures": [
+        "./images/volume1/figures/fig-c6p12-1.png",
+        "./images/volume1/figures/fig-c6p12-2.png",
+        "./images/volume1/figures/fig-c6p12-3.png"
+    ]
+}

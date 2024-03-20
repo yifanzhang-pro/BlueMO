@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题15 函数 $f(x)=\\sqrt{\\sin 2 x+\\sqrt{3} \\cos 2 x-1}$ 的定义域是",
+    "solution": "$\\left[k \\pi-\\frac{\\pi}{12}, k \\pi+\\frac{\\pi}{4}\\right](k \\in \\mathbf{Z})$. 由原函数得 $\\sin 2 x+\\sqrt{3} \\cos 2 x-1 \\geqslant 0$, 即 $2 \\sin \\left(2 x+\\frac{\\pi}{3}\\right) \\geqslant 1,2 k \\pi+\\frac{\\pi}{6} \\leqslant 2 x+\\frac{\\pi}{3} \\leqslant 2 k \\pi+\\frac{5 \\pi}{6}$, 解得 $k \\pi-\\frac{\\pi}{12} \\leqslant x \\leqslant k \\pi+\\frac{\\pi}{4}$, 所以定义域为 $\\left[k \\pi-\\frac{\\pi}{12}, k \\pi+\\frac{\\pi}{4}\\right](k \\in \\mathbf{Z})$.",
+    "remark": "",
+    "figures": []
+}

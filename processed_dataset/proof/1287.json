@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例4. 实数集 $\\left\\{a_0, a_1, \\cdots, a_n\\right\\}$ 满足以下条件:\n(1) $a_0=a_n=0$;\n(2) 对 $1 \\leqslant k \\leqslant n-1, a_k=c+\\sum_{i=k}^{n-1} a_{i-k}\\left(a_i+a_{i+1}\\right)$.\n求证:\n$$\nc \\leqslant \\frac{1}{4 n} \\text {. }\n$$",
+    "solution": "证明:记 $\\quad s_k=\\sum_{i=0}^k a_i, k=1,2, \\cdots, n$,\n则\n$$\ns_n=\\sum_{k=0}^n a_k=\\sum_{k=0}^{n-1} a_k=n c+\\sum_{k=0}^{n-1} \\sum_{i=k}^{n-1} a_{i-k}\\left(a_i+a_{i+1}\\right) .\n$$\n补充定义\n$$\na_{-1}=a_{-2}=\\cdots=a_{-(n-1)}=0,\n$$\n则\n$$\ns_n=n c+\\sum_{k=0}^{n-1} \\sum_{i=0}^{n-1} a_{i-k}\\left(a_i+a_{i+1}\\right)\n$$\n$$\n\\begin{aligned}\n= & n c+\\sum_{i=0}^{n-1} \\sum_{k=0}^{n-1} a_{i-k}\\left(a_i+a_{i+1}\\right) \\\\\n= & n c+\\sum_{i=0}^{n-1} \\sum_{k=0}^i a_{i-k}\\left(a_i+a_{i+1}\\right) \\\\\n= & n c+\\sum_{i=0}^{n-1}\\left(a_i+a_{i+1}\\right) \\sum_{k=0}^i a_{i-k} \\\\\n= & n c+\\sum_{i=0}^{n-1}\\left(a_i+a_{i+1}\\right) \\cdot s_i \\\\\n= & n c+s_1 s_0+\\left(s_2-s_0\\right) s_1+\\left(s_3-s_1\\right) s_2 \\\\\n& +\\cdots+\\left(s_{n-1}-s_{n-3}\\right) s_{n-2}+\\left(s_n-s_{n-2}\\right) s_{n-1} \\\\\n= & n c+s_n s_{n-1} \\\\\n= & n c+s_n^2,\n\\end{aligned}\n$$\n故\n$$\ns_n^2-s_n+n c=0 .\n$$\n由 $\\Delta=1-4 n c \\geqslant 0$ 即知 $c \\leqslant \\frac{1}{4 n}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例11. 如图(<FilePath:./images/volume7/figures/fig-c8i22.png>), 圆 $O_1$ 和圆 $O_2$ 与 $\\triangle A B C$ 的三边所在的三条直线都相切, $E 、 F 、 G 、 H$ 为切点,并且 $E G 、 F H$ 的延长线交于点 $P$. 求证: 直线 $P A$ 与 $B C$ 垂直.",
+    "solution": "证明:设直线 $P A$ 交 $B C$ 于点 $D$.\n对 $\\triangle A B D$ 及截线 $P H F$, 对 $\\triangle A D C$ 及截线 $P G E$ 分别应用梅涅劳斯定理, 有\n$$\n\\frac{A H}{H} \\bar{B} \\cdot \\frac{B F}{F D} \\cdot \\frac{D P}{P A}=1=\\frac{D P}{P A} \\cdot \\frac{A G}{G} \\cdot \\frac{C E}{E D} .\n$$\n由切线性质, 有 $B F=H B, C E=G C$, 有 $\\frac{A H}{F D}=\\frac{A G}{E D}$, 即 $\\frac{E D}{D F}=\\frac{A G}{A H}$. 连结 $O_1 G 、 O_2 H$, 由 Rt $\\triangle A G O_1 \\backsim$ Rt $\\triangle A H O_2$, 知 $\\frac{A G}{A H}=\\frac{O_1 G}{O_2 H}$.\n连结 $O_1 E 、 O_2 F$, 则 $\\frac{A G}{A H}=\\frac{O_1 E}{O_2 F}$.\n连结 $O_1 D 、 O_2 D$, 则在 Rt $\\triangle O_1 E D$ 与 Rt $\\triangle O_2 F D$ 中, 有 $\\frac{E D}{D F}=\\frac{O_1 E}{O_2 F}$.\n于是, Rt $\\triangle O_1 E D \\backsim$ Rt $\\triangle O_2 F D$, 即有 $\\angle O_1 D E=\\angle O_2 D C$, 从而直线 $D F$ 为 $\\triangle O_1 D O_2$ 的 $\\angle O_1 D O_2$ 的外角平分线.\n设直线 $O_1 O_2$ 与直线 $E F$ 交于点 $Q$ (或无穷远点 $Q$ ), 从而点 $A 、 Q$ 调和分割 $O_1 O_2$ (由于 $A 、 Q$ 分别是内、外位似中心, $\\frac{O_1 A}{O_2 A}=\\frac{r_1}{r_2}=\\frac{O_1 Q}{Q O_2}$, 这里 $r_1 、 r_2$ 分别为 $\\odot O_1 、 \\odot O_2$ 的半径), 即 $D O_1 、 D O_2 、 D A 、 D Q$ 为调和线束, 于是知 $D A \\perp P Q$, 故 $P A \\perp B C$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8i22.png"
+    ]
+}

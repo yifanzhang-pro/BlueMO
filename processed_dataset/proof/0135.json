@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题8 一次会议有 1990 位数学家参加, 每人至少有 1327 位合作者.\n证明: 可以找到 4 位数学家,他们中每两个人都合作过.",
+    "solution": "记数学家为 $v_1, v_2, \\cdots, v_i, \\cdots, v_{1990}$, 与 $v_i$ 合作过的数学家的集合为 $A_i$. 不妨设数学家 $v_1$ 与 $v_2$ 合作过.\n由 $\\left|A_1 \\cap A_2\\right|=\\left|A_1\\right|+\\left|A_2\\right|-\\mid A_1 \\cup A_2 \\mid \\geqslant 2 \\times 1327-1990>0$ 知, 有数学家不妨设为 $v_3$ 与 $v_1, v_2$ 都合作过.\n又 $\\left|A_1 \\cap A_2 \\cap A_3\\right|=\\left|A_1 \\cap A_2\\right|+\\left|A_3\\right|-\\left|\\left(A_1 \\cap A_2\\right) \\cup A_3\\right| \\geqslant 3 \\times 1327- 2 \\times 1990=1$, 故存在数学家, 不妨设为 $v_4 \\in A_1 \\cap A_2 \\cap A_3$, 即 $v_4$ 与 $v_1 、 v_2$ 、 $v_3$ 都合作过.\n从而有数学家 $v_1 、 v_2 、 v_3 、 v_4$ 两两合作过.",
+    "remark": "",
+    "figures": []
+}

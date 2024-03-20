@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter2.tex",
+    "problem_type": "calculation",
+    "problem": "例5. 如图(<FilePath:./images/volume7/figures/fig-c2i10.png>), 在四边形 $A B C D$ 中, $\\angle C A B=30^{\\circ}, \\angle A B D=26^{\\circ}, \\angle A C D=13^{\\circ}, \\angle D B C= 51^{\\circ}$. 求 $\\angle A D B$ 的度数.",
+    "solution": "解:设 $\\angle A D B=x$, 则由于 $\\angle C A B=30^{\\circ}$, $\\angle A B D=26^{\\circ}, \\angle D B C=51^{\\circ}, \\angle A C D=13^{\\circ}$, 则 $\\angle A C B=73^{\\circ}, \\angle B D C=43^{\\circ}$, 所以 $\\angle A D C=x+43^{\\circ}$.\n对 $\\triangle B C D$ 和点 $A$ 应用角元塞瓦定理有\n$$\n\\begin{aligned}\n1 & =\\frac{\\sin \\angle D C A}{\\sin \\angle A C B} \\cdot \\frac{\\sin \\angle C B A}{\\sin \\angle A B D} \\cdot \\frac{\\sin \\angle B D A}{\\sin \\angle A D C} \\\\\n& =\\frac{\\sin 13^{\\circ}}{\\sin 73^{\\circ}} \\cdot \\frac{\\sin 77^{\\circ}}{\\sin 26^{\\circ}} \\cdot \\frac{\\sin x}{\\sin \\left(x+43^{\\circ}\\right)} .\n\\end{aligned}\n$$\n则 $\\frac{\\sin \\left(x+43^{\\circ}\\right)}{\\sin x}=\\frac{\\sin 13^{\\circ} \\cdot \\sin 77^{\\circ}}{\\sin 73^{\\circ} \\cdot \\sin 26^{\\circ}}$\n$$\n\\begin{aligned}\n& =\\frac{\\sin 13^{\\circ} \\cdot \\cos 13^{\\circ}}{\\sin 73^{\\circ} \\cdot \\sin 26^{\\circ}}=\\frac{1}{2 \\sin 73^{\\circ}}=\\frac{\\sin 30^{\\circ}}{\\sin 73^{\\circ}} \\\\\n& =\\frac{\\sin 150^{\\circ}}{\\sin 107^{\\circ}}=\\frac{\\sin \\left(107^{\\circ}+43^{\\circ}\\right)}{\\sin 107^{\\circ}} .\n\\end{aligned}\n$$\n故 $\\cos 43^{\\circ}+\\cot x \\cdot \\sin 43^{\\circ}=\\cos 43^{\\circ}+\\cot 107^{\\circ}$. $\\sin 43^{\\circ}$.\n所以, $\\angle A D B=x=107^{\\circ}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2i10.png"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例9. 如图(<FilePath:./images/volume7/figures/fig-c7i9.png>), $A B$ 为圆 $\\omega$ 的直径, 直线 $l$ 切 $\\odot \\omega$ 于 $A . C 、 M 、 D$ 在 $I$ 上满足 $C M=D M$, 又设 $B C 、 B D$ 交 $\\odot \\omega$ 于 $P 、 Q, \\odot \\omega$ 切线 $P R 、 Q R$ 交于 $R$. 求证: $R$ 在 $B M$ 上.",
+    "solution": "证明:连结 $P A 、 Q A$, 设 $B R$ 交 $\\odot \\omega$ 于 $T$, 连结\n$P T, Q T$.\n在 $\\triangle B M C$ 与 $\\triangle B M D$ 中用正弦定理得\n$$\n\\frac{\\sin \\angle C B M}{\\sin C}=\\frac{C M}{B M}=\\frac{D M}{B M}=\\frac{\\sin \\angle D B M}{\\sin D} .\n$$\n于是\n$$\n\\frac{\\sin \\angle C B M}{\\sin \\angle D B M}=\\frac{\\sin C}{\\sin D} \\text {. }\n$$\n注意到 $\\angle B P A=\\angle B A C=\\angle B A D=\\angle B Q A=90^{\\circ}$.\n故\n$$\n\\angle C=\\angle B A P, \\angle D=\\angle B A Q .\n$$\n则\n$$\n\\frac{\\sin \\angle C B M}{\\sin \\angle \\overline{D B M}}=\\frac{\\sin \\angle B A P}{\\sin \\angle B A Q}=\\frac{B P}{B Q} . \\label{eq1}\n$$\n另一方面, 易知 $\\triangle R T P \\backsim \\triangle R P B, \\triangle R T Q \\backsim \\triangle R Q B$.\n因此\n$$\n\\begin{gathered}\n\\frac{B P}{P T}=\\frac{B R}{P R}=\\frac{B R}{Q R}=\\frac{B Q}{Q T} . \\\\\n\\frac{B P}{B Q}=\\frac{P T}{Q T}=\\frac{\\sin \\angle P B T}{\\sin \\angle Q B T}=\\frac{\\sin \\angle C B R}{\\sin \\angle D B R} . \\label{eq2}\n\\end{gathered}\n$$\n由式\\ref{eq1},\\ref{eq2}两式知 $\\frac{\\sin \\angle C B M}{\\sin \\angle D B M}=\\frac{\\sin \\angle C B R}{\\sin \\angle D B R}$.\n又 $\\quad \\angle C B M+\\angle D B M=\\angle C B R+\\angle D B R<\\pi$.\n由上式易知 $\\quad \\angle D B M=\\angle D B R$.\n(事实上, 上式等价于 $\\sin \\angle C B D \\cot \\angle D B M-\\cos \\angle C B D== \\sin \\angle C B D \\cos \\angle D B R-\\cos \\angle C B D)$.\n所以 $B 、 M 、 R$ 三点共线, 得证.",
+    "remark": "注:在有圆的情况下, 角度较易转化, 因此应尽量把线段比化为角度比, 再通过角度比求解题目.",
+    "figures": [
+        "./images/volume7/figures/fig-c7i9.png"
+    ]
+}

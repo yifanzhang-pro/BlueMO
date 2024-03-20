@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例15 方程 $\\sin 2 x=\\sin x$ 在区间 $(0,2 \\pi)$ 内解的个数是 ( ).\n(A) 1\n(B) 2\n(C) 3\n(D) 4",
+    "solution": "分析:对于选择题来说, 可利用直接求解法或通项求解法.\n解法一将原方程化为 $\\sin x(2 \\cos x-1)=0$, 在区间 $(0,2 \\pi)$ 内 $\\sin x=$ 0 有一解 $x=\\pi ; 2 \\cos x-1=0$ 有两解 $x=\\frac{\\pi}{3}$ 或 $\\frac{5 \\pi}{3}$; 故共有三解.\n解法二对于简单的三角方程 $\\sin x=\\sin \\alpha$, 其解是 $x=n \\pi+(-1)^n \\alpha$, $(n \\in \\mathbf{Z})$, 因此本题解法二, 由原方程得 $2 x=n \\pi+(-1)^n x$, 即 $x=2 k \\pi$ 或 $x= \\frac{2 k+1}{3} \\pi$,在区间 $(0,2 \\pi)$ 内, 取 $k=0 、 1 、 2$ 得三解.\n解法三遇到形如 $\\sin \\alpha \\pm \\sin \\beta$ 等形式的三角函数式也可联想到和差化积, 即原方程化为 $\\sin 2 x-\\sin x=0$, 得 $2 \\cos \\frac{3 x}{2} \\sin \\frac{x}{2}=0$, 从而在区间 $(0,2 \\pi)$ 内得三解.\n所以, 选 C.",
+    "remark": "",
+    "figures": []
+}

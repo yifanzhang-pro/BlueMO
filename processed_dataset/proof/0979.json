@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例16 在 $\\triangle A B C$ 中, 若角 $A 、 B 、 C$ 的三角关系式是 $y=2+\\cos C \\cdot \\cos (A-B)-\\cos ^2 C$.\n(1) 若任意交换 $A 、 B 、 C$ 的位置, $y$ 的值是否会发生变化? 试证明你的结论;\n(2) 求 $y$ 的最大值.",
+    "solution": "分析:如此问题,应猜想 $y$ 是轮换对称式,其值才不变,故将原关系式进行恒等变形, 分析其特征, 从而判断之.\n至于最值求法则通过放缩而得.\n解 (1)\n$$\n\\begin{aligned}\ny & =2+\\cos C \\cdot \\cos (A-B)-\\cos ^2 C \\\\\n& =2-\\cos (A+B) \\cdot \\cos (A-B)-\\cos ^2 C \\\\\n& =2-\\cos ^2 A \\cdot \\cos ^2 B+\\sin ^2 A \\cdot \\sin ^2 B-\\cos ^2 C \\\\\n& =\\sin ^2 A+\\sin ^2 B+\\sin ^2 C,\n\\end{aligned}\n$$\n由此可知任意交换 $A 、 B 、 C$ 的位置, $y$ 的值不会发生变化.\n(2) 不妨设 $C$ 为锐角, 则 $\\cos C>0, \\cos (A-B) \\leqslant 1$, 从而\n$$\ny \\leqslant 2+\\cos C-\\cos ^2 C=-\\left(\\cos C-\\frac{1}{2}\\right)^2+\\frac{9}{4},\n$$\n当 $A=B=C=\\frac{\\pi}{3}$ 时, $y_{\\text {max }}=\\frac{9}{4}$.\n评注 “大胆猜想, 小心求证” 是数学发现的至理名言.\n题中问题具有探索性, 须经猜想, 方可确定目标.\n对于题 (2), 也许有的学生以为既然“ $y$ 的值不会发生变化”, 那为什么又要求最大值呢? 这是混淆了 “无论 $A 、 B 、 C$ 取何值, $y$ 的值不会发生变化”与 “任意交换 $A 、 B 、 C$ 的位置, $y$ 的值不会发生变化”的意义.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 已知梯形 $A B C D$,边 $A B / / C D$,对角线 $A C 、 B D$ 交于点 $O$, 在 $A D$ 上取一点 $P$, 使 $\\angle B P A=\\angle C P D$, 在 $B C$ 上取一点 $Q$, 使 $\\angle A Q B=\\angle D Q C$. 求证: $O$ 到 $P 、 Q$ 的距离相等.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c11a11.png>), 连结 $P N$, 过 $O$ 作 $M N / / A B$, 交 $A D$ 于 $M, B C$ 于 $N$, 则 $\\frac{B P}{A B}=\\frac{\\sin \\angle B A P}{\\sin \\angle B P A}=\\frac{\\sin \\angle A D C}{\\sin \\angle B P A}= \\frac{\\sin \\angle P D C}{\\sin \\angle B P A}=\\frac{\\sin \\angle P D C}{\\sin \\angle D P C}=\\frac{P C}{D C}$.\n于是 $\\frac{B P}{C P}=\\frac{A B}{D C}=\\frac{B O}{O D}=\\frac{B N}{N C}$. 故 $P N$ 平分 $\\angle B P C$, 结合 $\\angle B P A=\\angle C P D$ 知 $N P \\perp A D$, 又 $O M=A B \\cdot \\frac{D O}{D B}=A B \\cdot \\frac{C O}{C A}=O N$, 所以 $O P$ 为 Rt $\\triangle M N P$ 斜边 $M N$ 的中线, 故 $O P=\\frac{1}{2} \\cdot M N$, 同理 $O Q=\\frac{1}{2} M N$. 故 $O P=O Q$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c11a11.png"
+    ]
+}

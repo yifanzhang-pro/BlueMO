@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-2.tex",
+    "problem_type": "calculation",
+    "problem": "例5. 设 $a 、 b 、 c 、 x 、 y 、 z$ 为实数, 且\n$$\na^2+b^2+c^2=25, x^2+y^2+z^2=36, a x+b y+c z=30 .\n$$\n求 $\\frac{a+b+c}{x+y+z}$ 的值.",
+    "solution": "解:由柯西不等式, 得\n$$\n25 \\times 36=\\left(a^2+b^2+c^2\\right)\\left(x^2+y^2+z^2\\right) \\geqslant(a x+b y+c z)^2=30^2 .\n$$\n上述不等式等号成立, 得\n$$\n\\frac{a}{x}=\\frac{b}{y}=\\frac{c}{z}=k\n$$\n于是 $k^2\\left(x^2+y^2+z^2\\right)=25$, 所以 $k= \\pm \\frac{5}{6}$ (负的舍去). 从而\n$$\n\\frac{a+b+c}{x+y+z}=k=\\frac{5}{6} \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

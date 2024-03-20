@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 设 $M=\\{1,2, \\cdots, 2005\\}, A$ 是 $M$ 的子集, 若对任何 $a_i, a_j \\in A$, $a_i \\neq a_j$, 都能以 $a_i 、 a_j$ 为边长唯一地确定一个等腰三角形, 求 $|A|$ 的最大值.",
+    "solution": "分析:考虑在什么条件下, 两个数 $a 、 b(a<b)$ 能唯一地确定一个以 $a 、 b$ 为其两边的等腰三角形, 这等价于 (注意 $a 、 b 、 b$ 必构成等腰三角形) 三数组 $(a, a, b)$ 不构成等腰三角形.\n也等价于 $a+a \\leqslant b$, 即 $2 a \\leqslant b$. 由此, 即可作间距估计.\n解当 $a<b$ 时, $a 、 b 、 b$ 必构成等腰三角形,所以,两个数 $a 、 b$ 唯一地确定一个以 $a 、 b$ 为其两边的等腰三角形,等价于 $a 、 a 、 b$ 不构成等腰三角形,即 $2 a \\leqslant b$.\n设 $A=\\left\\{a_1<a_2<\\cdots<a_n\\right\\}$ 是 $M$ 的一个合乎条件的子集, 则 $2 a_i \\leqslant a_{i+1}$ (间距估计). 于是, $2005 \\geqslant a_n \\geqslant 2 a_{n-1} \\geqslant \\cdots \\geqslant 2^{n-1} a_1 \\geqslant 2^{n-1}$, 所以 $n \\leqslant 11$.\n其次, 令 $A=\\{1,2,4, \\cdots, 1024\\}$, 则 $|A|=11$. 且对任何 $a_i 、 a_j \\in A$, 设 $i<j$, 则 $a_i=2^{i-1}, a_j=2^{j-1}$, 有 $2 a_i=2^i \\leqslant 2^{j-1}=a_j$, 从而以 $a_i 、 a_j$ 只能作唯一的等腰三角形 $\\left(a_i, a_j, a_j\\right)$, 所以 $A$ 合乎条件.\n综上所述, $|A|$ 的最大值为 11 .",
+    "remark": "",
+    "figures": []
+}

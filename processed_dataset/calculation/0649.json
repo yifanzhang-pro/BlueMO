@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例1 如图(<FilePath:./images/volume3/figures/fig-c3e1-1.png>), 走廊宽为 $3 \\mathrm{~m}$, 夹角为 $120^{\\circ}$, 地面是水平的, 走廊两端足够长, 问: 保持水平位置通过走廊的木棒 (不计粗细) 的最大长度是多少?",
+    "solution": "分析:本题的关键是把棒的长度表示为某一个变量的函数, 然后求最值.\n解如图(<FilePath:./images/volume3/figures/fig-c3e1-2.png>), 过走廊转角内顶点 $P$ 任作水平直线与走廊外侧交于点 $A 、 B$. 则在水平位置通过走廊的木棒长度小于或等于 $A B$.\n设 $\\angle B A Q=\\alpha$, 则 $\\angle A B Q=60^{\\circ}-\\alpha$,\n$$\nA B=A P+P B=\\frac{3}{\\sin \\alpha}+\\frac{3}{\\sin \\left(60^{\\circ}-\\alpha\\right)} .\n$$\n当 $\\alpha$ 变化时, 上式的最小值即是在水平位置通过走廊的木棒的最大长度.\n由平均不等式及积化和差得:\n$$\n\\begin{aligned}\nA B & \\geqslant 6 \\sqrt{\\frac{1}{\\sin \\alpha \\cdot \\sin \\left(60^{\\circ}-\\alpha\\right)}}=6 \\sqrt{\\frac{1}{\\frac{1}{2}\\left[\\cos \\left(60^{\\circ}-2 \\alpha\\right)-\\cos 60^{\\circ}\\right]}} \\\\\n& \\geqslant 6 \\sqrt{\\frac{2}{1-\\frac{1}{2}}}=12 .\n\\end{aligned}\n$$\n当且仅当 $\\alpha=30^{\\circ}$ 时, $A B=12$.\n故在水平位置能通过走廊的木棒的最大长度为 $12 \\mathrm{~m}$.\n评注本题是求最小值中的最大值.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c3e1-1.png",
+        "./images/volume3/figures/fig-c3e1-2.png"
+    ]
+}

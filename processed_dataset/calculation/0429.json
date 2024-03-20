@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise13.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 试求将如下表达式去括号和合并同类项之后所得的多项式中 $x^2$ 的系数: $\\left(\\left(\\cdots\\left(\\left((x-2)^2-2\\right)^2-2\\right)^2-\\cdots-2\\right)^2-2\\right)^2$ (共 $n$ 重括号).",
+    "solution": "记 $P_k(x)=\\left(\\left(\\cdots\\left(\\left((x-2)^2-2\\right)^2-2\\right)^2-\\cdots-2\\right)^2-2\\right)^2$ (共 $k$ 重括号), 其常数项等于 $P(0)=\\left(\\left(\\cdots\\left(\\left((0-2)^2-2\\right)^2-2\\right)^2-\\cdots-2\\right)^2-2\\right)^2=4$.\n再以 $A_k$ 和 $B_k$ 表示 $P_k(x)$ 的一次项和二次项系数, 其中由于 $P_1(x)= (x-2)^2$, 故 $A_1=-4, B_1=1$.\n下面寻找 $A_k$ 和 $B_k$ 的递推关系.\n一方面, $P_k(x)=4+A_k x+B_k x^2+O(x)$ (其中 $O(x)$ 代表一个多项式, 它不含小于等于二次的项,下同); 另一方面, 当 $k \\geqslant 2$ 时,\n$$\n\\begin{aligned}\nP_k(x) & =\\left(P_{k-1}(x)-2\\right)^2=\\left(4+A_{k-1} x+B_{k-1} x^2+O(x)-2\\right)^2 \\\\\n& =4+4 A_{k-1} x+\\left(4 B_{k-1}+A_{k-1}^2\\right) x^2+O(x),\n\\end{aligned}\n$$\n比较两式中 $P_k(x)$ 的 $x, x^2$ 项系数可得:\n$$\nA_k=4 A_{k-1}, B_k=4 B_{k-1}+A_{k-1}^2(k \\geqslant 2) .\n$$\n由此可先推出 $A_n=4^{n-1} A_1=-4^n$. 再将后一个递推式变形为 $\\frac{B_k}{4^k}=\\frac{B_{k-1}}{4^{k-1}}+\\frac{A_{k-1}^2}{4^k}$, 故\n$$\n\\begin{aligned}\n\\frac{B_n}{4^n} & =\\frac{B_1}{4}+\\frac{A_{n-1}^2}{4^n}+\\frac{A_{n-2}^2}{4^{n-1}}+\\cdots+\\frac{A_1^2}{4^2} \\\\\n& =\\frac{1}{4}+4^{n-2}+4^{n-3}+\\cdots+4^0=\\frac{1}{4} \\cdot \\frac{4^n-1}{3} .\n\\end{aligned}\n$$\n因此 $P_n(x)$ 中 $x^2$ 的系数 $B_n=\\frac{4^{n-1}\\left(4^n-1\\right)}{3}$.",
+    "remark": "",
+    "figures": []
+}

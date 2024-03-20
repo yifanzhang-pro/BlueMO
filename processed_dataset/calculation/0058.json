@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题11 设 $m, n \\in \\mathbf{N}^*$, 且 $m>n$, 集合 $A=\\{1,2, \\cdots, m\\}, B=\\{1,2, \\cdots, n\\}$, 又 $C \\subset A, B \\cap C \\neq \\varnothing$. 则这样的集合 $C$ 的个数是",
+    "solution": "$2^{m-n}\\left(2^n-1\\right)$. 由于 $A$ 的子集中只有由自然数 $n+1, n+2, \\cdots, m$ 中任取若干个数组成的集合 $C^{\\prime}$,才能使 $B \\cap C^{\\prime}=\\varnothing$, 而这样的集合 $C^{\\prime}$ 有 $2^{m-n}$ 个.\n所以满足 $B \\cap C \\neq \\varnothing$ 的集合 $C$ 的个数是 $2^m-2^{m-n}$.",
+    "remark": "",
+    "figures": []
+}

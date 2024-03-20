@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设非负整数 $a_1, a_2, \\cdots, a_{2004}$ 满足 $a_i+a_j \\leqslant a_{i+j} \\leqslant a_i+a_j+1(1 \\leqslant i 、 j$, $i+j \\leqslant 2004)$. 求证: 存在 $x \\in \\mathbf{R}$, 对所有 $n(1 \\leqslant n \\leqslant 2004)$, 有 $a_n= [n x]$.",
+    "solution": "若存在 $x$, 使得 $a_n=[n x]$, 则 $\\frac{a_n}{n} \\leqslant x<\\frac{a_n+1}{n}$, 此不等式应对 $n=1$, $2, \\cdots, 2004$ 都成立, 于是, $x$ 应同时属于 2004 个区间: $\\left[\\frac{a_n}{n}, \\frac{a_n+1}{n}\\right)$. 如果 $x$ 存在, $x$ 可取为 $\\max \\left\\{\\frac{a_m}{m}\\right\\}$.\n这样, 只要证明对一切 $n \\in\\{1,2, \\cdots, 2004\\}$, 都有 $\\frac{a_n+1}{n}>x \\geqslant \\frac{a_m}{m}$.\n下面证明: 若 $m 、 n$ 是正整数,且 $m 、 n \\leqslant 2004$, 则有\n$$\nm a_n+m>n a_m . \\label{(1)}\n$$\n当 $m=n$ 时,(1)式成立; 又由于当 $m=1, n=2$ 和 $m=2, n=1$ 时,有 $a_2+1>2 a_1$ 及 $2 a_1+2>a_2$, 由题设知(1)式成立.\n假设当 $m 、 n$ 都小于 $k(3 \\leqslant k \\leqslant 2004)$ 时命题成立.\n当 $m=k$ 时, 设 $m=n q+r, q \\in \\mathbf{N}_{+}, 0 \\leqslant r<n$. 则 $a_m=a_{n q+r} \\leqslant a_{n q}+a_r+ 1 \\leqslant a_{(q-1) n}+a_n+a_r+2 \\leqslant \\cdots \\leqslant q a_n+a_r+q$. 故 $n a_m \\leqslant n\\left(q a_n+a_r+q\\right)=m a_n+ m+\\left(n a_r-r a_n-r\\right)$. 利用归纳假设, $r a_n+r>n a_r$, 故 $n a_m<m a_n+m$.\n当 $n=k$ 时, 设 $n=m q+r, q \\in \\mathbf{N}_{+}, 0 \\leqslant r<m$. 则 $a_n \\geqslant a_{q m}+a_r \\geqslant \\cdots \\geqslant q a_m+a_r . m a_n+m \\geqslant m q a_m+m a_r+m=n a_m+m a_r+m-r a_m$. 由归纳假设, $m a_r+m>r a_m$, 故 $m a_n+m>n a_m$, 因此(1)式成立, 故 $\\frac{a_n+1}{n}>\\frac{a_m}{m}$. 令 $x= \\max _{1 \\leqslant m \\leqslant 2004} \\frac{a_m}{m}$, 则 $\\frac{a_n+1}{n}>x$, 故 $n x-1<a_n \\leqslant n x$. 因此 $a_n=[n x]$.",
+    "remark": "",
+    "figures": []
+}

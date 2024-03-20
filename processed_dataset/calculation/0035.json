@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题2: 设集合 $S=\\left\\{(x, y) \\mid x-\\frac{1}{2} y^2\\right.$ 为奇数, $\\left.x, y \\in \\mathbf{R}\\right\\}, T=\\{(x, y) \\left.\\sin (2 \\pi x)-\\sin \\left(\\pi y^2\\right)=\\cos (2 \\pi x)-\\cos \\left(\\pi y^2\\right), x, y \\in \\mathbf{R}\\right\\}$. 则 $S$ 与 $T$ 的关系是",
+    "solution": "解: $S \\varsubsetneqq T$. 当 $x=\\frac{1}{2} y^2+$ 奇数时, 显然 $\\sin (2 \\pi x)-\\sin \\left(\\pi y^2\\right)=\\cos (2 \\pi x)-\\cos \\left(\\pi y^2\\right)$ 成立, $S \\subseteq T$. 但满足 $x=\\frac{1}{2} y^2$ 的点 $(x, y) \\in T$, 而不属于 $S$, 故 $S \\varsubsetneqq T$.",
+    "remark": "",
+    "figures": []
+}

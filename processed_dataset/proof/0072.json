@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题9 设 $A$ 是一个正整数的集合, 且对任意 $x, y \\in A$, 都有 $|x-y| \\geqslant \\frac{x y}{25}$. 求证: $A$ 中最多有 9 个元素.",
+    "solution": "设 $A=\\left\\{x_1, x_2, \\cdots, x_n\\right\\}, x_{i+1}=x_i+d_i, d_i>0$. 由条件 $|x-y| \\geqslant \\frac{x y}{25}$ 易知, $A$ 中至多有 1 个元素不小于 25 , 从而有 $x_{n-1} \\leqslant 24$. 由 $d_i=\\mid x_{i+1}- x_i \\mid \\geqslant \\frac{x_{i+1} \\cdot x_i}{25}=\\frac{\\left(x_i+d_i\\right) x_i}{25}$, 解得 $d_i \\geqslant \\frac{x_i^2}{25-x_i}$. 若 $x_5 \\geqslant 5$, 则 $d_5 \\geqslant \\frac{25}{20}>1$, 故有 $x_6 \\geqslant 7$. 从而 $d_6>2, x_7 \\geqslant 10 ; d_7>6, x_8 \\geqslant 17 ; d_8>36, x_9 \\geqslant 54>25$. 可见, $A$ 中至多有 9 个元素.\n另一方面, 容易验证集合 $\\{1,2,3,4,5,7,10$, 17,543 满足题中要求.\n从而知集合 $A$ 中最多有 9 个元素.",
+    "remark": "",
+    "figures": []
+}

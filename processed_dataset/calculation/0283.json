@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. $n$ 为何值时,完全图 $K_n$ 是圈? $n$ 为何值时, $K_n$ 是一条链? 当 $m, n$ 为何值时,完全偶图 $K_{m, n}$ 是圈?",
+    "solution": "$n(n \\geqslant 2)$ 为奇数时, $K_n$ 是圈; $n=2$ 时, $K_2$ 是链.\n当 $m, n$ 均为偶数时, $K_{m, n}$ 是圈.",
+    "remark": "",
+    "figures": []
+}

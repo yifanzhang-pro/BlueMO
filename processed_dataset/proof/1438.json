@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 求所有的实数 $a$, 使得不等式 $x^2+y^2+z^2 \\leqslant a(x y+y z+z x)$ 的任何正整数解都是某个三角形的三边长.",
+    "solution": "取 $x=2, y=z=1$, 有 $a \\geqslant \\frac{6}{5}$. 因此, 当 $a \\geqslant \\frac{6}{5}$ 时, 原不等式有整根 $(2,1,1)$, 但 $(x, y, z)$ 不能组成一个三角形, 因此有 $a<\\frac{6}{5}$.\n又由于当 $a<1$ 时, $x^2+y^2+z^2 \\leqslant a(x y+y z+z x)<x y+y z+z x$,矛盾! 故 $a \\geqslant 1$. 下证: 当 $1 \\leqslant a<\\frac{6}{5}$ 时, 原不等式的所有正整数根皆能组成三角形的三边长.\n首先, $(1,1,1)$ 是原不等式的解, 且它们能组成一个三角形.\n如果不等式有整根 $\\left(x_1, y_1, z_1\\right)$, 且不能组成三角形的三边长, 那么, 将原方程变形为: (不妨设 $\\left.x_1 \\geqslant y_1+z_1\\right) x^2-a(y+z) x+y^2+z^2-a y z \\leqslant 0$.\n考察函数 $f(x)=x^2-a\\left(y_1+z_1\\right) x+y_1^2+z_1^2-a y_1 z_1$, 其对称轴 $x= \\frac{a}{2}\\left(y_1+z_1\\right)<\\frac{3}{5}\\left(y_1+z_1\\right)<y_1+z_1 \\leqslant x_1$, 故有 $\\left(y_1+z_1, y_1, z_1\\right)$ 也是原不等式的解.\n因此 $a \\geqslant \\frac{\\left(y_1+z_1\\right)^2+y_1^2+z_1^2}{\\left(y_1+z_1\\right) y_1+\\left(y_1+z_1\\right) z_1+y_1 z_1}=u$, 则 $(u-2) y_1^2+(3 u-$ 2) $y_1 z_1+(u-2) z_1^2 \\doteq 0$.\n显然 $u \\neq 2$, 故 $\\Delta=(3 u-2)^2-4(u-2)^2 \\geqslant 0$, 于是 $u \\geqslant \\frac{6}{5}$, 那么 $a \\geqslant u \\geqslant \\frac{6}{5}$,矛盾!",
+    "remark": "",
+    "figures": []
+}

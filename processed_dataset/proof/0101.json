@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题14 试证: 存在一个具有如下性质的正整数的集合 $A$, 使对任何由无限多个素数组成的集合 $S$, 都存在自然数 $k \\geqslant 2, m \\in A$ 及 $n \\notin A, m$ 和 $n$ 均为 $S$ 中 $k$ 个不同元素的乘积.",
+    "solution": "设 $q_1, q_2, \\cdots, q_j, \\cdots$ 是全体素数从小到大排成的数列, 即有 $q_1=2, q_2=3, q_3=5, q_4=7, q_5=11, q_6=13, \\cdots$. 令 $A_1=\\left\\{2 q_i \\mid i=2,3, \\cdots\\right\\}$, $A_2=\\left\\{3 q_i q_j \\mid i<j, i=3,4, \\cdots, j=4,5, \\cdots\\right\\}$. 一般地, 对正整数 $h$, 令 $A_h=\\left\\{q_h q_{i_1} q_{i_2} \\cdots q_{i_h} \\mid h<i_1<i_2<\\cdots<i_h\\right\\}$. 最后再令 $A==\\bigcup_{h=1}^{\\infty} A_h$.\n设 $S$ 是由无限多个素数组成的集合 $S=\\left\\{p_1, p_2, \\cdots, p_t, \\cdots\\right\\}$, 其中 $p_1<p_2<\\cdots<p_t<\\cdots$. 于是有 $p_1 \\geqslant 2, p_2 \\geqslant 3, p_3 \\geqslant 5, \\cdots$. 设 $p_i=q_{j_i}, i=1,2, \\cdots$. 于是 $m=p_1 p_2 \\cdots p_{j_1+1}=q_{j_1} q_{j_2} \\cdots q_{j_{j_1+1}} \\in A, n=p_2 p_3 \\cdots p_{j_1+2}= q_{j_2} q_{j_3} \\cdots q_{j_{j_2+2}} \\notin A$. 可见, 只要取 $k=j_1+1$ 就可以了.",
+    "remark": "",
+    "figures": []
+}

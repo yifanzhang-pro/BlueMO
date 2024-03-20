@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例17. (Ceva 定理) $P$ 是 $\\triangle A B C$ 外的一点,直线 $P A 、 P B 、 P C$ 依次与 $\\triangle A B C$ 的三边 $B C 、 C A 、 A B$ 或者它们的延长线相交于 $D 、 E 、 F$, 求证: $\\frac{A F}{F B} \\cdot \\frac{B D}{D C} \\cdot \\frac{C E}{E A}=1$.",
+    "solution": "分析:$A 、 B 、 F$ 在一条直线上, 且 $A F 、 F B$ 分别是 $\\triangle P A F 、 \\triangle P F B$ 的边, 可以用这两个三角形面积之比表示 $\\frac{A F}{F B}$.\n证明如图(<FilePath:./images/volume3/figures/fig-c6i5.png>), 设 $\\angle B P F=\\alpha, \\angle A P B=\\beta$,\n$$\n\\begin{gathered}\n\\frac{A F^2}{F B^2}=\\frac{\\frac{1}{2} P A \\cdot P F \\cdot \\sin (\\alpha+\\beta)}{\\frac{1}{2} P B \\cdot P F \\cdot \\sin \\alpha}=\\frac{P A \\sin (\\alpha+\\beta),}{P B \\cdot \\sin \\alpha}, \\\\\n\\frac{B D^2}{D C^2}=\\frac{\\frac{1}{2} P B \\cdot P D \\cdot \\sin \\beta}{\\frac{1}{2} P C \\cdot P D \\cdot \\sin \\left[180^{\\circ}-(\\alpha+\\beta)\\right]}=\\frac{P B \\sin \\beta}{P C \\sin (\\alpha+\\beta)}, \\\\\n\\frac{C E^2}{E A^2}=\\frac{\\frac{1}{2} P C \\cdot P E \\cdot \\sin \\alpha}{\\frac{1}{2} P A \\cdot P E \\cdot \\sin \\left(180^{\\circ}-\\beta\\right)}=\\frac{P C \\sin \\alpha}{P A \\sin \\beta},\n\\end{gathered}\n$$\n所以\n$$\n\\frac{A F}{F B} \\cdot \\frac{B D}{D C} \\cdot \\frac{C E}{E A}=1\n$$\n评注可以证明 Ceva 定理的逆命题也是正确的.\n在平面几何的竞赛题中, 常用它们来论证有关三线共点的问题.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c6i5.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例11. 证明: 有无穷多个正整数 $n$, 满足 $n \\mid\\left(2^n+2\\right)$.",
+    "solution": "证明:我们仍采用归纳构造法, 其中的关键一着是加强归纳假设.\n面证明: 若 $n$ 满足\n$$\n2|n, n|\\left(2^n+2\\right),(n-1) \\mid\\left(2^n+1\\right), \\label{eq1}\n$$\n则对于 $m=2^n+2$, 有\n$$\n2|m, m|\\left(2^m+2\\right),(m-1) \\mid\\left(2^m+1\\right) . \\label{eq2}\n$$\n事实上, 由于 $2^n+2=2\\left(2^{n-1}+1\\right)$ 是奇数的 2 倍及 $2 \\mid n$, 故 $2^n+2=n k$ 中的整数 $k$ 是一个奇数, 所以\n$$\n2^m+1=2^{n k}+1=\\left(2^n\\right)^k+1\n$$\n是 $2^n+1=m-1$ 的倍数.\n同样, 从 $2^n+1=(n-1) l$ 知 $l$ 为奇数, 故\n$$\n2^m+2=2\\left(2^{m-1}+1\\right)=2\\left(\\left(2^{n-1}\\right)^l+1\\right)\n$$\n为 $2\\left(2^{n-1}+1\\right)=2^n+2=m$ 的倍数.\n又 $m=2^n+2$ 显然为偶数, 故上述的断言得到了证明.\n现在, 由于 $n=2$ 满足 式\\ref{eq1}, 于是用 式\\ref{eq2} 便递推地构造出无穷多个符合要求的数: $2,6,66, \\cdots$.\n我们注意, 式\\ref{eq1}中的 $2 \\mid n$ 是必要的, 即满足本题要求的数都是偶数.\n因为若有奇数 $n>1$, 适合 $n \\mid\\left(2^n+2\\right)$, 则 $n \\mid\\left(2^{n-1}+1\\right)$, 这将与第 8 单元例 3 的结论相违.",
+    "remark": "",
+    "figures": []
+}

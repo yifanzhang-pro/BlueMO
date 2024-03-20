@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题9 已知向量 $\\overrightarrow{O P}=\\left(2 \\cos \\left(\\frac{\\pi}{2}+x\\right),-1\\right), \\overrightarrow{O Q}=\\left(-\\sin \\left(\\frac{\\pi}{2}-x\\right), \\cos 2 x\\right)$, $f(x)=\\overrightarrow{O P} \\cdot \\overrightarrow{O Q}$. 若 $a 、 b 、 c$ 分别是锐角 $\\triangle A B C$ 中 $\\angle A 、 \\angle B 、 \\angle C$ 的对边, 且满足 $f(A)=1, b+c=5+3 \\sqrt{2}, a=\\sqrt{13}$, 则 $\\triangle A B C$ 的面积 $S=$\n(A) $15 \\sqrt{2}$\n(B) 15\n(C) $\\frac{15 \\sqrt{2}}{2}$\n(D) $\\frac{15}{2}$",
+    "solution": "D. 由条件知 $f(x)=\\overrightarrow{O P} \\cdot \\overrightarrow{O Q}=-2 \\cos \\left(\\frac{\\pi}{2}+x\\right) \\sin \\left(\\frac{\\pi}{2}-x\\right)- \\cos 2 x=2 \\sin x \\cos x-\\cos 2 x=\\sqrt{2} \\sin \\left(2 x-\\frac{\\pi}{4}\\right) \\Rightarrow \\sqrt{2} \\sin \\left(2 A-\\frac{\\pi}{4}\\right)=1 \\Rightarrow \\sin \\left(2 A-\\frac{\\pi}{4}\\right)=\\frac{\\sqrt{2}}{2}$, 又 $\\angle A$ 为锐角 $\\Rightarrow-\\frac{\\pi}{4}<2 \\angle A-\\frac{\\pi}{4}<\\frac{3 \\pi}{4} \\Rightarrow 2 \\angle A-\\frac{\\pi}{4}= \\frac{\\pi}{4} \\Rightarrow \\angle A=\\frac{\\pi}{4}$. 由 $b+c=5+3 \\sqrt{2}, a=\\sqrt{13} \\Rightarrow 13=b^2+c^2-2 b c \\cos A=(b+ c)^2-2 b c-2 b c \\cos A \\Rightarrow 13=43+30 \\sqrt{2}-(2+\\sqrt{2}) b c \\Rightarrow b c=15 \\sqrt{2}$, 所以 $\\triangle A B C$ 的面积 $S=\\frac{1}{2} b c \\sin A=\\frac{1}{2} \\times 15 \\sqrt{2} \\times \\frac{\\sqrt{2}}{2}=\\frac{15}{2}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 作一个不含三角形的, 有 20 个顶点, 100 条边的简单图.",
+    "solution": "作完全偶图 $K_{10,10}$.",
+    "remark": "",
+    "figures": []
+}

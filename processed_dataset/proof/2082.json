@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 已知钝角三角形 $A B C$ 的外接圆半径为 1 , 证明: 存在一个斜边长为 $\\sqrt{2}+1$ 的等腰三角形覆盖 $\\triangle A B C$.",
+    "solution": "不妨设 $\\angle C>90^{\\circ}$, 于是 $\\min \\{\\angle A, \\angle B\\}<45^{\\circ}$. 不妨设 $\\angle A<45^{\\circ}$. 以 $A B$ 为直径, 在顶点 $C$ 的同侧作半圆 $O$, 则 $C$ 位于半圆 $O$ 内.\n作射线 $A T$ 使得 $\\angle B A T=45^{\\circ}$. 再作射线 $O E$ 使得 $\\angle B O E=45^{\\circ}$, 且与半圆相交于点 $E$. 过点 $E$ 作半圆的切线, 分别交 $A B$ 的延长线和 $A T$ 于点 $D$ 和 $F$, 则等腰直角三角形 $A D F$ 覆盖 $\\triangle A B C$, 并且 $A D=A O+O D=\\frac{1}{2} A B+\\frac{\\sqrt{2}}{2} A B=\\frac{1}{2}(1+\\sqrt{2}) \\cdot A B<\\frac{1}{2}(1+\\sqrt{2}) 2 R=1+\\sqrt{2}$.",
+    "remark": "",
+    "figures": []
+}

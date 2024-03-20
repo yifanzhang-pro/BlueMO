@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-5.tex",
+    "problem_type": "proof",
+    "problem": "例3. (1)设 3 个正实数 $a 、 b 、 c$ 满足\n$$\n\\left(a^2+b^2+c^2\\right)^2>2\\left(a^4+b^4+c^4\\right),\n$$\n求证: $a 、 b 、 c$ 一定是某个三角形的 3 条边长;\n(2)设 $n$ 个正实数 $a_1, a_2, \\cdots, a_n$ 满足\n$$\n\\left(a_1^2+a_2^2+\\cdots+a_n^2\\right)^2>(n-1)\\left(a_1^4+a_2^4+\\cdots+a_n^4\\right) .\n$$\n求证: 这些数中任意 3 个一定是某个三角形的 3 条边长.",
+    "solution": "证明:(1) 不妨设 $a \\geqslant b \\geqslant c>0$, 由题设,得\n$$\n\\left(a^2+b^2+c^2\\right)^2-2\\left(a^4+b^4+c^4\\right)>0 .\n$$\n分解因式, 得\n$$\n(a+b+c)(a+b-c)(a+c-b)(b+c-a)>0,\n$$\n所以 $b+c-a>0$, 即 $b+c>a$, 从而 $a, b, c$ 是某个三角形的 3 条边长;\n(2) 在 $a_1, a_2, \\cdots, a_n$ 中任取 3 个, 不妨设为 $a_1, a_2, a_3$. 由带参数的柯西不等式,得\n$$\n\\begin{aligned}\n&(n-1)\\left(\\sum a_i^4\\right) \\\\\n&<\\left(\\sum_{i=1}^n a_i^2\\right)^2 \\\\\n&= {\\left[\\lambda\\left(a_1^2+a_2^2+a_3^2\\right) \\cdot \\frac{1}{\\lambda}+\\sum_{i=4}^n a_i^2\\right]^2 } \\\\\n& \\leqslant {\\left[\\lambda^2\\left(a_1^2+a_2^2+a_3^2\\right)^2+\\sum_{i=4}^n a_i^4\\right]\\left(\\frac{1}{\\lambda^2}+n-3\\right) . } \\\\\n& \\text { 令 } \\frac{1}{\\lambda^2}+n-3=n-1, \\text { 即 } \\lambda=\\sqrt{\\frac{1}{2}}, \\text { 所以 } \\\\\n& \\quad\\left(a_1^2+a_2^2+a_3^2\\right)^2>2\\left(a_1^4+a_2^4+a_3^4\\right) .\n\\end{aligned}\n$$\n由 (1) 知, $a_1, a_2, a_3$ 为某个三角形的三边长.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise19.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 在平面上画一个 $4 \\times 4$ 的方格表, 在这些小方格的每一个中都任意地填人 1 或 -1 . 下面的一种改变填人数字的方式称为一次操作: 对任意一个小方格, 凡是与此小方格有一条公共边的所有小方格(不包括此小方格本身) 中的数作连乘积, 于是每取一格, 就算出了一个数.\n在所有小方格都取遍后, 再将这些算出的数放人相应的小方格中.\n问: 对任意的一种初始填表方式, 是否能经过有限次操作后, 使得所有小方格中的数都变为 1 ?",
+    "solution": "答案是否定的.\n对于如图(<FilePath:./images/volume14/figures/fig-c19a3.png>)所示的一个 $4 \\times 4$ 的数表, 每经过一次操作, 仍然是它本身, 即这个数表在上述操作中是不变量.\n所以, 这个数表不可能经过有限次操作后, 使得所有的小方格中的数都变为 1 .\n\\begin{tabular}{|c|c|c|c|}\n\\hline 1 & -1 & -1 & 1 \\\\\n\\hline-1 & 1 & 1 & -1 \\\\\n\\hline-1 & 1 & 1 & -1 \\\\\n\\hline 1 & -1 & -1 & 1 \\\\\n\\hline\n\\end{tabular}",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c19a3.png"
+    ]
+}

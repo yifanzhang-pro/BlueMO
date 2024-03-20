@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $m 、 n$ 是非负整数,证明: $\\frac{(2 m) !(2 n) !}{m ! n !(m+n) !}$ 是一个整数.",
+    "solution": "证明:我们只需证明, 对每个素数 $p$, 分母 $m ! n !(m+n) !$ 的标准分解中 $p$ 的幕次, 不超过分子 $(2 m) !(2 n)$ ! 中 $p$ 的幕次.\n由 (7) 中的公式可知, 这等价于证明\n$$\n\\sum_{l=1}^{\\infty}\\left(\\left[\\frac{2 m}{p^l}\\right]+\\left[\\frac{2 n}{p^l}\\right]\\right) \\geqslant \\sum_{l=1}^{\\infty}\\left(\\left[\\frac{m}{p^l}\\right]+\\left[\\frac{n}{p^l}\\right]+\\left[\\frac{m+n}{p^l}\\right]\\right) . \\label{eq1}\n$$\n事实上,我们能够证明下述更强的结果:\n对任意实数 $x 、 y$, 有\n$$\n[2 x]+[2 y] \\geqslant[x]+[y]+[x+y] . \\label{eq2}\n$$\n为了证明式\\ref{eq2}, 我们注意, 对任意整数 $k$ 及任意实数 $\\alpha$, 有 $[k+\\alpha]=[\\alpha]+k$. 由此易知, 若 $x$ 或 $y$ 改变一个整数量, 则不等式\\ref{eq2}两边改变一个相同的量.\n因此只要对 $0 \\leqslant x<1,0 \\leqslant y<1$ 的情形证明式\\ref{eq2}, 于是问题化为证明不等式\n$$\n[2 x]+[2 y] \\geqslant[x+y] \\text {. }\n$$\n注意现在 $0 \\leqslant[x+y] \\leqslant 1$. 若 $[x+y]=0$, 则结论显然成立.\n若 $[x+y]=$ 1 , 则 $x+y \\geqslant 1$, 从而 $x 、 y$ 中至少有一个大于或等于 $\\frac{1}{2}$, 不妨设 $x \\geqslant \\frac{1}{2}$, 因此\n$[2 x]+[2 y] \\geqslant[2 x]=1$, 这就证明了式\\ref{eq2}, 从而更有式\\ref{eq1}成立, 这就证明了本题的结论.",
+    "remark": "",
+    "figures": []
+}

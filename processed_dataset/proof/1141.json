@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-3.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $a_i, b_i, i \\geqslant 1$ 为正数,满足 $\\sum_{i=1}^n a_i=\\sum_{i=1}^n b_i$. 求证:\n$$\n\\sum_{i=1}^n \\frac{a_i^2}{a_i+b_i} \\geqslant \\frac{1}{2}\\left(\\sum_{i=1}^n a_i\\right) .\n$$",
+    "solution": "证明:由柯西不等式, 得\n$$\n\\left(\\sum_{i=1}^n \\frac{a_i^2}{a_i+b_i}\\right) \\sum_{i=1}^n\\left(a_i+b_i\\right) \\geqslant\\left(\\sum_{i=1}^n a_i\\right)^2 .\n$$\n由于 $\\sum_{i=1}^n a_i=\\sum_{i=1}^n b_i$, 所以上式即为\n$$\n2\\left(\\sum_{i=1}^n a_i\\right)\\left(\\sum_{i=1}^n \\frac{a_i^2}{a_i+b_i}\\right) \\geqslant\\left(\\sum_{i=1}^n a_i\\right)^2\n$$\n故命题成立.",
+    "remark": "",
+    "figures": []
+}

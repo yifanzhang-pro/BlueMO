@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例1. 已知四边形 $A B C D$ 是圆的内接四边形,证明:\n$$\n|A B-C D|+|A D-B C| \\geqslant 2|A C-B D| .\n$$",
+    "solution": "证明:如图(<FilePath:./images/volume9/figures/fig-c3i1.png>), 设四边形 $A B C D$ 外接圆的圆心为 $O$, 该外接圆的半径为 $1, \\angle A O B=2 \\alpha, \\angle B O C=2 \\beta$, $\\angle C O D=2 \\gamma, \\angle D O A=2 \\delta$, 则\n$$\n\\alpha+\\beta+\\gamma+\\delta=\\pi \\text {. }\n$$\n不妨设 $\\alpha \\geqslant \\gamma, \\beta \\geqslant \\delta$, 则\n$$\n\\begin{aligned}\n& |A B-C D|=2|\\sin \\alpha-\\sin \\gamma| \\\\\n= & 4\\left|\\sin \\frac{\\alpha-\\gamma}{2} \\cos \\frac{\\alpha+\\gamma}{2}\\right|=4\\left|\\sin \\frac{\\alpha-\\gamma}{2} \\sin \\frac{\\beta+\\delta}{2}\\right| .\n\\end{aligned}\n$$\n同理\n$$\n\\begin{aligned}\n& |A D-B C|=4\\left|\\sin \\frac{\\beta-\\delta}{2} \\sin \\frac{\\alpha+\\gamma}{2}\\right| \\\\\n& |A C-B D|=4\\left|\\sin \\frac{\\beta-\\delta}{2} \\sin \\frac{\\alpha-\\gamma}{2}\\right|\n\\end{aligned}\n$$\n因此\n$$\n\\begin{aligned}\n|A B-C D|-|A C-B D| & =4\\left|\\sin \\frac{\\alpha-\\gamma}{2}\\right|\\left(\\left|\\sin \\frac{\\beta+\\delta}{2}\\right|-\\left|\\sin \\frac{\\beta-\\delta}{2}\\right|\\right) \\\\\n& =4\\left|\\sin \\frac{\\alpha-\\gamma}{2}\\right|\\left(\\sin \\frac{\\beta+\\delta}{2}-\\sin \\frac{\\beta-\\delta}{2}\\right)\n\\end{aligned}\n$$\n$$\n\\begin{aligned}\n& =4\\left|\\sin \\frac{\\alpha-\\gamma}{2}\\right| \\cdot\\left(2 \\cos \\frac{\\beta}{2} \\cdot \\sin \\frac{\\delta}{2}\\right) \\\\\n& \\geqslant 0 .\n\\end{aligned}\n$$\n故\n$$\n|A B-C D| \\geqslant|A C-B D| \\text {. }\n$$\n同理\n$$\n|A D-B C| \\geqslant|A C-B D| \\text {. }\n$$\n将这两个不等式相加即得求证结果.\n圆内接四边形中又有一种更特殊的四边形叫双圆四边形.\n所谓双圆四边形是既有外接圆又有内切圆的四边形.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c3i1.png"
+    ]
+}

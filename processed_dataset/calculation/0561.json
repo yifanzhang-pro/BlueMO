@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题8 当 $x \\in[-1,1]$ 时, 求\n$$\nf(x)=\\frac{x^4+4 x^3+17 x^2+26 x+106}{x^2+2 x+7}\n$$\n的值域.",
+    "solution": "$f(x)=x^2+2 x+7+\\frac{64}{x^2+2 x+7}-1$, 令 $u=x^2+2 x+7=(x+1)^2+6$ , 则 $6 \\leqslant u \\leqslant 10$. 当 $u \\in[6,8]$ 时, $f(u)=u+\\frac{64}{u}-1$ 递减, 当 $u \\in[8,10]$ 时, $f(u)=u+\\frac{64}{u}-1$ 递增.\n又 $f(6)>f(10)$, 故 $f(8) \\leqslant f(u) \\leqslant f(6)$, 即 $15 \\leqslant f(u) \\leqslant 15 \\frac{2}{3}$.",
+    "remark": "",
+    "figures": []
+}

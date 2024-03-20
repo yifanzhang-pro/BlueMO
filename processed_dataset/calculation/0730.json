@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题3 在 $\\triangle A B C$ 中, $A=60^{\\circ}, a=\\sqrt{6}, b=4$, 则满足条件的三角形有( ).\n(A) 一解\n(B) 两解\n(C) 无解\n(D) 不能确定",
+    "solution": "C. 由正弦定理, 得 $\\frac{a}{\\sin A}=\\frac{b}{\\sin B}$, 于是 $\\sin B=\\frac{b \\sin A}{a}=\\frac{4 \\sin 60^{\\circ}}{\\sqrt{6}}= \\sqrt{2}>1$, 故无解.",
+    "remark": "",
+    "figures": []
+}

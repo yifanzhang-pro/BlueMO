@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $m 、 n$ 是互素的正整数, 证明: $m ! n ! \\mid(m+n-1) !$.",
+    "solution": "证法一, 我们证明, 对每个素数 $p$, 有\n$$\n\\sum_{l=1}^{\\infty}\\left[\\frac{m+n-1}{p^l}\\right] \\geqslant \\sum_{l=1}^{\\infty}\\left(\\left[\\frac{m}{p^l}\\right]+\\left[\\frac{n}{p^l}\\right]\\right) . \\label{eq1}\n$$\n为此,我们(与上例相同地)希望证明\"单项不等式\":\n$$\n\\left[\\frac{m+n-1}{p^l}\\right] \\geqslant\\left[\\frac{m}{p^l}\\right]+\\left[\\frac{n}{p^l}\\right]. \\label{eq2}\n$$\n对任意素数 $p$ 及任意正整数 $l$ 成立, 从而式\\ref{eq1}得证.\n然而, 现在的情形下, 我们不能指望建立像例 6 中式\\ref{eq2}那样的对所有实数成立的结果来导出式\\ref{eq2}, 我们需要利用所说整数的特别性质:\n由带余除法, $m=p^l q_1+r_1, n=p^l q_2+r_2$, 这里 $0 \\leqslant r_1 、 r_2<q^l$, 而 $q_1$ 、 $q_2$ 均为非负整数,则有 (参见第 1 单元的 (4))\n$$\n\\left[\\frac{m}{p^l}\\right]=q_1 \\text { 及 }\\left[\\frac{n}{p^l}\\right]=q_2 .\n$$\n但 $(m, n)=1$, 故 $r_1$ 与 $r_2$ 不能同时为零, 从而 $r_1+r_2 \\geqslant 1$, 故\n$$\n\\left[\\frac{m+n-1}{p^l}\\right]=q_1+q_2+\\left[\\frac{r_1+r_2-1}{p^l}\\right] \\geqslant q_1+q_2 .\n$$\n这就证明了式\\ref{eq2}. 证毕.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 由 $1,2,3,4,5,6$ 组成的, 至少有三个数位上的数码不同的 5 位数中, 有多少个数使得数码 1 和 6 不相邻?",
+    "solution": "设 $S$ 为由 $1,2,3,4,5,6$ 组成的 5 位数集合, $A$ 是其中至多由两个不同数码组成的 5 位数构成的集合, $B$ 为其中 1,6 相邻的 5 位数构成的集合.\n于是所求 5 位数的个数为 $m=\\left|\\complement_S A \\cap \\complement_S B\\right|=|S|-|A|-|B|+|A \\cap B|$, 其中 $|S|=6^5,|A|=6+\\mathrm{C}_6^2\\left(\\mathrm{C}_5^1+\\mathrm{C}_5^2+\\mathrm{C}_5^3+\\mathrm{C}_5^4\\right)=456,|A \\cap B|=\\mathrm{C}_5^1+ \\mathrm{C}_5^2+\\mathrm{C}_5^3+\\mathrm{C}_5^4=30$, 设 $b_n$ 为 1,6 相邻的 $n$ 位数的个数, $c_n$ 为首位为 1 或 6 且 1,6 相邻的 $n$ 位数个数, 则 $b_n=c_n+4 b_{n-1}$. 再根据前二位为 16 或 61 ; 前二位为 11 或 66 ; 第一位为 1 或 6 第二位不为 1,6 , 三种情形得 $c_n=2 \\times 6^{n-2}+ c_{n-1}+8 b_{n-2}$, 代入上式得 $b_n=2 \\times 6^{n-2}+4 b_{n-2}+5 b_{n-1}$, 结合 $b_1=0, b_2=2$. 可算出 $|B|=b_5=1470$, 故所求 5 位数的个数为 $m=6^5-456-1470+30=$ 5880 个.",
+    "remark": "",
+    "figures": []
+}

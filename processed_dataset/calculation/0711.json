@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题8 已知 $\\alpha 、 \\beta$ 是锐角, $\\sin \\alpha=x, \\cos \\beta=y, \\cos (\\alpha+\\beta)=-\\frac{3}{5}$, 则 $y$ 与 $x$ 之间的函数关系为 ( ).\n(A) $y=-\\frac{3}{5} \\sqrt{1-x^2}+\\frac{4}{5} x\\left(\\frac{3}{5}<x<1\\right)$\n(B) $y=-\\frac{3}{5} \\sqrt{1-x^2}+\\frac{4}{5} x(0<x<1)$\n(C) $y=-\\frac{3}{5} \\sqrt{1-x^2}-\\frac{4}{5} x\\left(0<x<\\frac{3}{5}\\right)$\n(D) $y=-\\frac{3}{5} \\sqrt{1-x^2}-\\frac{4}{5} x(0<x<1)$",
+    "solution": "A. 因 $\\alpha 、 \\beta$ 为锐角, 所以 $\\sin (\\alpha+\\beta)=\\frac{4}{5}, \\cos \\alpha=\\sqrt{1-x^2}$, 于是 $y= \\cos \\beta=\\cos (\\alpha+\\beta-\\alpha)=\\cos (\\alpha+\\beta) \\cos \\alpha+\\sin (\\alpha+\\beta) \\sin \\beta=-\\frac{3}{5} \\sqrt{1-x^2}+ \\frac{4}{5} x$. 因 $y>0$, 所以 $-\\frac{3}{5} \\sqrt{1-x^2}+\\frac{4}{5} x>0$. 即 $4 x>3 \\sqrt{1-x^2}$, 平方得 $25 x^2>9$, 所以 $x>\\frac{3}{5}$. 又 $x<1$, 故 $\\frac{3}{5}<x<1$.",
+    "remark": "",
+    "figures": []
+}

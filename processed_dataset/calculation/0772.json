@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题26 若 $x_1 、 x_2$ 是方程 $x^2-6 x+7=0$ 的两根, 求 $\\arctan x_1+\\arctan x_2$ 的值.",
+    "solution": "参照例 11 , 得原式 $=\\frac{3 \\pi}{4}$.",
+    "remark": "",
+    "figures": []
+}

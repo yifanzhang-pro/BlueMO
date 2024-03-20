@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 设 $a, b, c>0$ 且 $a^2+b^2+c^2+(a+b+c)^2 \\leqslant 4$. 求证:\n$$\n\\frac{a b+1}{(a+b)^2}+\\frac{b c+1}{(b+c)^2}+\\frac{c a+1}{(c+a)^2} \\geqslant 3 .\n$$",
+    "solution": "证明: 由 $a^2+b^2+c^2+(a+b+c)^2 \\leqslant 4$ 可知 $a^2+b^2+c^2+a b+b c+ c a \\leqslant 2$, 因此 $\\frac{2(a b+1)}{(a+b)^2} \\geqslant \\frac{2 a b+a^2+b^2+c^2+a b+b c+c a}{(a+b)^2}= \\frac{(a+b)^2+(c+a)(c+b)}{(a+b)^2}$ 即 $\\frac{a b+1}{(a+b)^2} \\geqslant \\frac{1}{2}\\left(1+\\frac{(c+a)(c+b)}{(a+b)^2}\\right) \\cdots$ (4). 同理可得 $\\frac{b c+1}{(b+c)^2} \\geqslant \\frac{1}{2}\\left(1+\\frac{(a+b)(a+c)}{(b+c)^2}\\right), \\frac{c a+1}{(c+a)^2} \\geqslant \\frac{1}{2}\\left(1+\\frac{(b+c)(b+a)}{(c+a)^2}\\right) \\cdots$ (5). 另外由均值不等式显然有 $\\frac{(c+a)(c+b)}{(a+b)^2}+\\frac{(a+b)(a+c)}{(b+c)^2}+\\frac{(b+c)(b+a)}{(c+a)^2} \\geqslant 3 \\cdots$ (6). 综合(4)(5)(6)可得 $\\frac{a b+1}{(a+b)^2}+\\frac{b c+1}{(b+c)^2}+\\frac{c a+1}{(c+a)^2} \\geqslant 3$.",
+    "remark": "",
+    "figures": []
+}

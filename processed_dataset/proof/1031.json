@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题24 知 $\\triangle A B C$ 的外接圆、内切圆半径分别为 $R$ 和 $r$, 求证:\n$$\n\\frac{\\cos A}{\\sin ^2 A}+\\frac{\\cos B}{\\sin ^2 B}+\\frac{\\cos C}{\\sin ^2 C} \\geqslant \\frac{R}{r} \\text {. }\n$$",
+    "solution": "设 $a 、 b 、 c$ 为 $\\triangle A B C$ 的三边长, 则 $\\frac{b^2+c^2}{a}+2 a \\geqslant \\frac{(b+c)^2}{2 a}+2 a \\geqslant 2(b+c)$, 故 $\\frac{b^2+c^2}{a} \\geqslant 2(b+c-a)$, 同理可得 $\\frac{c^2+a^2}{b} \\geqslant 2(a+c-b)$, $\\frac{a^2+b^2}{c} \\geqslant 2(a+b-c)$, 以上三式相加得 $\\frac{b^2+c^2}{a}+\\frac{c^2+a^2}{b}+\\frac{a^2+b^2}{c} \\geqslant 2(a+ b+c)$. 根据正、余弦定理及 $a b c=2 R r(a+b+c)$, 并利用上式可得 $\\frac{\\cos A}{\\sin ^2 A}+ \\frac{\\cos B}{\\sin ^2 B}+\\frac{\\cos C}{\\sin ^2 C}=\\frac{2 R^2}{a b c}\\left(\\frac{a^2+b^2}{c}+\\frac{b^2+c^2}{a}+\\frac{c^2+a^2}{b}-a-b-c\\right) \\geqslant \\frac{2 R^2(a+b+c)}{a b c}=\\frac{R}{r}$, 当且仅当 $a=b=c$ 时等号成立.",
+    "remark": "",
+    "figures": []
+}

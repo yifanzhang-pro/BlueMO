@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-3.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $a, b, c$ 为三角形的三条边的长度, $\\delta$ 为面积.\n求证:\n$$\n\\delta \\leqslant \\frac{\\sqrt{3}}{4}\\left(\\frac{a+b+c}{3}\\right)^2\n$$\n当且仅当 $a=b=c$ 时等号成立.",
+    "solution": "证明:由海伦公式, 原不等式等价干\n$$\n\\sqrt{p(p-a)(p-b)(p-c)} \\leqslant \\frac{\\sqrt{3}}{4}\\left(\\frac{2 p}{3}\\right)^2=\\sqrt{3}\\left(\\frac{p}{3}\\right)^2,\n$$\n等价于\n$$\n(p-a)(p-b)(p-c) \\leqslant \\frac{p^3}{27} \\text {. }\n$$\n由平均值不等式, 得\n$$\n(p-a)(p-b)(p-c) \\leqslant\\left(\\frac{3 p-a-b-c}{3}\\right)^3=\\frac{p^3}{27} .\n$$\n此式当且仅当 $p-a=p-b=p-c$, 即 $a=b=c$ 时等号成立.",
+    "remark": "",
+    "figures": []
+}

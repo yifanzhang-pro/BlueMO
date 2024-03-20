@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例6. 一个以点 $O$ 为圆心的圆经过 $\\triangle A B C$ 的顶点 $A 、 C$, 又与边 $A B 、 B C$ 分别相交于点 $K 、 N, \\triangle A B C$ 与 $\\triangle K B N$ 的外接圆交于点 $B 、 M$. 求证: $\\angle O M B=90^{\\circ}$.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c6i6.png>), 设过点 $O$ 且垂直于 $B M$ 的直线为 $l$.\n于是, 只需证点 $M$ 在直线 $l$ 上.\n以 $l$ 为反射轴, 作轴反射变换 $S(l)$.\n设 $C \\rightarrow C^{\\prime}, K \\rightarrow K^{\\prime}$.\n则 $C C^{\\prime} \\perp l, K K^{\\prime} \\perp l$.\n所以, $C C^{\\prime} / / K K^{\\prime} / / B M$.\n连结 $C^{\\prime} K 、 K M 、 C K^{\\prime} 、 C M 、 C C^{\\prime}$.\n又 $\\angle K C^{\\prime} C=\\angle K A C=\\angle B N K=\\angle B M K$, 所以 $C^{\\prime} 、 K 、 M$ 三点共线.\n由 $\\angle B M C+\\angle C^{\\prime} C K^{\\prime}=\\angle B M C+\\angle C C^{\\prime} K$\n$$\n=\\angle B M C+\\angle B A C=180^{\\circ},\n$$\n知 $C 、 K^{\\prime} 、 M$ 三点共线.\n因此, $C^{\\prime} K 、 C K^{\\prime}$ 交于点 $M$.\n故点 $M$ 在直线 $l$ 上.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6i6.png"
+    ]
+}

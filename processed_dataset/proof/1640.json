@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题24. 是否存在一个由正整数组成的无穷数列? 使得\n(1) 每一项都不是另外任意一项的倍数;\n(2) 该数列中任意两项都不互素, 但没有一个大于 1 的正整数能够整除该数列的每一项.",
+    "solution": "存在符合条件的数列.\n将所有大于 5 的素数从小到大排列, 得到数列 $p_0, p_1, \\cdots$; 再定义数列 $\\left\\{q_n\\right\\}$ 如下 $q_{3 k}=6, q_{3 k+1}=10, q_{3 k+2}=15, k=0,1,2, \\cdots$. 现在定义数列 $\\left\\{a_n\\right\\}$ 为 $a_n=p_n q_n, n=0,1,2, \\cdots$, 我们证明数列 $\\left\\{a_n\\right\\}$ 符合条件.\n注意到, 对下标 $i \\neq j$ 有 $p_i \\neq p_j$, 所以 $\\left\\{a_n\\right\\}$ 中没有一项是另外任何一项的倍数, 故 (1) 满足.\n进一步, 若 $i \\equiv j(\\bmod 3)$, 则 $\\left(a_i, a_j\\right)=\\left(q_i, q_j\\right)=6,10$ 或 15 ; 若 $i \\neq \\equiv j(\\bmod 3)$, 由于 $6,10,15$ 两两不互素, 可知 $\\left(a_i, a_j\\right)==\\left(q_i, q_j\\right)>$ 1. 另外, $5 \\nmid a_0, 3 \\nmid a_1, 2 \\nmid a_3$, 而且每一个大于 5 的素数至多整除 $\\left\\{a_n\\right\\}$ 中的一项, 因此, 没有一个大于 1 的正整数能整除 $\\left\\{a_n\\right\\}$ 中的每一项, 故 (2) 亦满足.",
+    "remark": "",
+    "figures": []
+}

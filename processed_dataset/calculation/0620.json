@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题15 设 $f: \\mathbf{R} \\rightarrow \\mathbf{R}$, 对任意 $x, y \\in \\mathbf{R} \\backslash\\{\\ln 2\\}$, 有\n$$\nf(x+y)+f(x-y)=\\mathrm{e}^{x+y}(f(x)+f(y)),\n$$\n若 $f(0)=1$, 求 $f(x)$.",
+    "solution": "在所给等式中令 $x=0$, 并将 $y$ 用 $x$ 代替, 得 $f(x)+f(-x)= \\mathrm{e}^x(f(x)+1)$. 即 $\\left(1-\\mathrm{e}^x\\right) f(x)+f(-x)=\\mathrm{e}^x$. 注意到当 $x, y$ 互换后所给等式的右边不变, 则有 $f(x-y)=f(y-x)$. 在上式中取 $y=0$, 则 $f(x)=f(-x)$, 故 $f(x)$ 为偶函数.\n因而 $\\left(2-\\mathrm{e}^x\\right) f(x)=\\mathrm{e}^x$. 于是 $f(x)=\\frac{\\mathrm{e}^x}{2-\\mathrm{e}^x}, x \\in \\mathbf{R} \\backslash\\{\\ln 2\\}$.",
+    "remark": "",
+    "figures": []
+}

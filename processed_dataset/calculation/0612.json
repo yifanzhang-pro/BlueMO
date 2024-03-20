@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题1 求函数方程:\n$$\n2 f(x)+x^2 f\\left(\\frac{1}{x}\\right)=\\sin x(x>0)\n$$\n在 $(0,+\\infty)$ 上的解.",
+    "solution": "将函数方程中的 $x$ 用 $\\frac{1}{x}$ 代换, 得 $2 f\\left(\\frac{1}{x}\\right)+\\frac{1}{x^2} f(x)=\\sin \\frac{1}{x}$, 即 $f(x)+ 2 x^2 f\\left(\\frac{1}{x}\\right)=x^2 \\sin \\frac{1}{x}$. 将上面方程与原方程联立消去 $f\\left(\\frac{1}{x}\\right)$, 得 $f(x)= \\frac{2}{3}\\left(\\sin x-\\frac{x^2}{2} \\sin \\frac{1}{x}\\right)$.",
+    "remark": "",
+    "figures": []
+}

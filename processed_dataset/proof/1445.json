@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 已知 $\\alpha 、 \\beta 、 \\gamma$ 都是锐角, 且 $\\cos ^2 \\alpha+\\cos ^2 \\beta+\\cos ^2 \\gamma=1$, 求证:\n$$\n\\frac{3 \\pi}{4}<\\alpha+\\beta+\\gamma<\\pi \\text {. }\n$$",
+    "solution": "由条件, 作一个长、宽、高分别为 $\\cos \\alpha$ 、 $\\cos \\beta 、 \\cos \\gamma$ 的长方体 $A B C D-A_1 B_1 C_1 D_1$. 如图(<FilePath:./images/volume5/figures/fig-c5p10.png>)所示, $A B=\\cos \\alpha, B C=\\cos \\beta, B B_1=\\cos \\gamma$. 则此长方体对角线长恰为 1 . 同时, 易见 $\\angle A B D_1=\\alpha$, $\\angle C B B_1=\\beta, \\angle B_1 B D_1=\\gamma$.\n在三面角 $B-A D_1 C$ 中, 有 $\\angle A B D_1+\\angle D_1 B C> \\angle A B C=\\frac{\\pi}{2}$, 故 $\\alpha+\\beta>\\frac{\\pi}{2}$, 同理, $\\beta+\\gamma>\\frac{\\pi}{2}, \\gamma+ \\alpha>\\frac{\\pi}{2}$, 则 $\\alpha+\\beta+\\gamma>\\frac{3 \\pi}{4}$.\n取 $B D_1$ 的中点 $O$, 则 $\\angle A O D_1=2 \\alpha, \\angle C O D_1=2 \\beta, \\angle B B_1 D_1=2 \\gamma$. 易证 $\\angle C O B_1=\\angle A O D_1=2 \\alpha$, 考虑三面角 $O-C B_1 D_1$, 有 $\\angle C O B_1+\\angle B_1 O D_1+ \\angle C O D_1<2 \\pi$, 于是即得 $\\alpha+\\beta+\\gamma<\\pi$.",
+    "remark": "",
+    "figures": [
+        "./images/volume5/figures/fig-c5p10.png"
+    ]
+}

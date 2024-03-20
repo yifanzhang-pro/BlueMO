@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter13.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 凸 $n$ 边形的任意 3 条对角线不交于形内一点, 求这些对角线将凸 $n$ 边形分成的区域的个数.",
+    "solution": "解法一设凸 $n$ 边形被对角线分成的区域中边数最多的为 $m$ 边形, 其中三角形有 $n_3$ 个, 四边形有 $n_4$ 个, $\\cdots, m$ 边形有 $n_m$ 个, 于是凸 $n$ 边形被分成的区域个数为\n$$\nS=n_3+n_4+\\cdots+n_m .\n$$\n一方面各区域的顶点数的总和为 $3 n_3+4 n_4+\\cdots+m m_m$, 另一方面, 对角线在形内有 $\\mathrm{C}_n^4$ 个交点,每个交点是 4 个区域的公共顶点 (因无 3 条对角线交于形内一点), 又凸 $n$ 边形有 $n$ 个顶点, 每个顶点是 $n-2$ 个区域的公共顶点, 所以\n$$\n3 n_3+4 n_4+\\cdots+m m_m=4 \\mathrm{C}_n^4+n(n-2) . \\label{eq1}\n$$\n其次, 各区域的内角总和为 $n_3 \\cdot 180^{\\circ}+n_4 \\cdot 360^{\\circ}+\\cdots+n_m \\cdot(m-2) \\cdot 180^{\\circ}$,\n另一方面, 原凸 $n$ 边形的 $n$ 个顶点处的内角和为 $(n-2) \\cdot 180^{\\circ}$, 又 $\\mathrm{C}_n^4$ 个对角线交点处的内角和为 $\\mathrm{C}_n^4 \\cdot 360^{\\circ}$, 所以\n$$\n\\begin{aligned}\n& n_3 \\cdot 180^{\\circ}+n_4 \\cdot 360^{\\circ}+\\cdots+n_m \\cdot(m-2) \\cdot 180^{\\circ} \\\\\n= & (n-2) \\cdot 180^{\\circ}+\\mathrm{C}_n^4 \\cdot 360^{\\circ},\n\\end{aligned}\n$$\n即\n$$\nn_3+2 n_4+\\cdots+(m-2) n_m=2 \\mathrm{C}_n^4+(n-2), \\label{eq2}\n$$\n$[式\\ref{eq1} - \\ref{eq2}] \\div 2$, 得\n$$\n\\begin{aligned}\nS & =n_3+n_4+\\cdots+n_m=\\mathrm{C}_n^4+\\frac{1}{2}(n-1)(n-2) \\\\\n& =\\frac{1}{24}(n-1)(n-2)\\left(n^2-3 n+12\\right) .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

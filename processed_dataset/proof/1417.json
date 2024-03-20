@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 设 $s$ 是所有满足下列条件的三角形集合:\n$$\n5\\left(\\frac{1}{A P}+\\frac{1}{B Q}+\\frac{1}{C R}\\right)-\\frac{3}{\\min \\{A P, B Q, C R\\}}=\\frac{6}{r},\n$$\n其中 $r$ 为 $\\triangle A B C$ 内切圆半径, $P 、 Q 、 R$ 分别是内切圆切边 $A B 、 B C 、 C A$ 的切点.\n求证: $s$ 中所有三角形都是等腰三角形并且均相似.",
+    "solution": "设 $a=\\max \\{a, b, c\\}$, 则 $A P=\\min \\{A P, B Q, C R\\}$, 由题意可得\n$$\n\\begin{aligned}\n& \\frac{4}{-a+b+c}+\\frac{10}{-b+a+c}+\\frac{10}{-c+a+b}=\\frac{6}{r} . \\\\\n& \\text { 令 }-a+b+c=2 x,-b+a+c=2 y,-c+a+b=2 z, x, y, z>0 .\n\\end{aligned}\n$$\n则上式等价于: $\\frac{2}{x}+\\frac{5}{y}+\\frac{5}{z}=6 \\cdot \\sqrt{\\frac{1}{x y}+\\frac{1}{y z}+\\frac{1}{z x}}$, 故\n$$\n\\begin{gathered}\n2\\left(\\frac{1}{x}-\\frac{4}{y}\\right)^2+2\\left(\\frac{1}{x}-\\frac{4}{z}\\right)^2=7\\left(\\frac{1}{y}-\\frac{1}{z}\\right)^2 . \\\\\n\\text { 令 } p=-\\frac{1}{x}-\\frac{4}{y}, q=\\frac{1}{x}-\\frac{4}{z} \\text {, 则 } 25 p^2+14 p q+25 q^2=0 .\n\\end{gathered}\n$$\n易证 $p=q=0$, 故 $y=z=4 x$, 于是易见结论成立.",
+    "remark": "",
+    "figures": []
+}

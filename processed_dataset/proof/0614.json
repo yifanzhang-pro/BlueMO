@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例4. 求出所有满足下列条件的正整数数列 $x_1, x_2, \\cdots, x_n, \\cdots$ :\n(1) 对每个 $n, x_n \\leqslant n \\sqrt{n}$;\n(2) 对任意不同的正整数 $m 、 n,(m-n) \\mid\\left(x_m-x_n\\right)$.",
+    "solution": "证明: 由(1)知, $x_1 \\leqslant 1, x_2 \\leqslant 2 \\sqrt{2}$, 所以 $x_1=1, x_2=1$ 或 2 .\n[1] 若 $x_2=1$, 由 (2) 知, $n-1\\left|x_n-x_1, n-2\\right| x_n-x_2$, 即\n$$\nn-1\\left|x_n-1, n-2\\right| x_n-1,\n$$\n由于 $(n-1, n-2)=1$, 所以 $(n-1)(n-2) \\mid x_n-1$.\n若 $x_n \\neq 1$, 则\n$$\nx_n \\geqslant(n-1)(n-2)+1=n^2-3 n+3 .\n$$\n当 $n \\geqslant 9$ 时, $x_n \\geqslant n^2-3 n+3>n(n-3)>n \\sqrt{n}$, 这与 (1) 矛盾, 从而当 $n \\geqslant 9$ 时, $x_n=1$.\n于是对每个 $n(\\geqslant 9), n-i \\mid 1-x_i(i=3,4, \\cdots, 8)$; 所以 $x_3= x_4=\\cdots=x_8=1$.\n因此,数列 $1,1,1, \\cdots$ 是满足题意的一个数列.\n[2] 若 $x_2=2$, 令 $x_n^{\\prime}=x_n-(n-1), n=1,2, \\cdots$. 那么数列 $\\left\\{x_n^{\\prime}\\right\\}$ 是满足题设条件 (1), (2) 的.\n事实上, 对每个 $n, x_n^{\\prime}=x_n-(n-1) \\leqslant n \\sqrt{n}-(n-1) \\leqslant n \\sqrt{n}$, 对任意不同的正整数 $m 、 n, x_n^{\\prime}-x_n^{\\prime}=x_m-(m-1)-x_n+(n-1)=\\left(x_m-x_n\\right)- (m-n)$, 从而 $m-n \\mid x_m^{\\prime}-x_n^{\\prime}$.\n由于 $x_1^{\\prime}=1, x_2^{\\prime}=1$, 由[1]知, $\\left\\{x_n^{\\prime}\\right\\}$ 是常数列 $1,1,1 \\cdots$. 所以, $x_n=n$.\n综上所述, 满足题设的正整数数列有 2 个, 它们是\n$$\n\\begin{aligned}\n& 1,1,1, \\cdots, 1, \\cdots, \\\\\n& 1,2,3, \\cdots, n, \\cdots .\n\\end{aligned}\n$$",
+    "remark": "注:本题的第(1)种情形是容易解的.\n对于第(2)种情形, 我们通过一个代换, 把它化归为第(1)种情形, 也就是我们曾解决的一个问题, 进而求得解答, 这是一种常用的手法.",
+    "figures": []
+}

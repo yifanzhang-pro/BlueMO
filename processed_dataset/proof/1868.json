@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 如图(<FilePath:./images/volume7/figures/fig-c5p7.png>), $\\triangle A B C$ 中, $E 、 F$ 分别为 $A B 、 A C$ 中点, $C M 、 B N$ 为高, $E F$ 交 $M N$ 于 $P$, $O 、 H$ 分别为三角形的外心与垂心.\n求证: $A P \\perp O H$.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c5a7.png>), 由 $\\angle B M C=\\angle B N C=90^{\\circ}$ 知 $B 、 C$ 、 $N 、 M$ 四点共圆.\n所以 $A M \\cdot A B=A N \\cdot A C$. 又 $A E=\\frac{1}{2} A B, A F=\\frac{1}{2} A C$, 则 $A M \\cdot A E=A N \\cdot A F$, 即 $E 、 F 、 N 、 M$ 共圆.\n注意到由 $\\angle A M H= \\angle A N H=\\angle A E O=\\angle A F O=90^{\\circ}$ 知 $A H 、 A O$ 分别为 $\\triangle A M N 、 \\triangle A E F$ 外接圆的直径.\n过 $A H$ 中点 $H^{\\prime}$ 与 $A O$ 中点 $O^{\\prime}$ 分别为 $\\triangle A M N$ 与 $\\triangle A E F$ 的外心, 且易知 $O^{\\prime} H^{\\prime} / / O H$. 故只需证 $A P \\perp O^{\\prime} H^{\\prime}$, 只需证 $A 、 P$ 为 $\\triangle A M N 、 \\triangle A E F$ 外接圆的等幂点即可.\n注意到 $A$ 为两圆公共点, 而由 $E 、 F 、 N 、 M$ 共圆知 $P M \\cdot P N=P E \\cdot P F$. 故 $P$ 也为等幂点.\n综上所述, 原命题成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5p7.png",
+        "./images/volume7/figures/fig-c5a7.png"
+    ]
+}

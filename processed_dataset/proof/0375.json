@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 数列 $\\left\\{a_n\\right\\}$ 定义如下: $a_0=0, a_1=1, a_n=2 a_{n-1}+a_{n-2}(n \\geqslant 2)$, 证明 $2^k \\mid a_n$ 的充要条件是 $2^k \\mid n$. 这里 $a \\mid b$ 表示 $a$ 整除 $b$.",
+    "solution": "特征方程为 $r^2-2 r-1=0$, 特征根为 $r_{1,2}=1 \\pm \\sqrt{2}$, 所以 $a_n= c_1(1+\\sqrt{2})^n+c_2(1-\\sqrt{2})^n$, 由 $a_0=0, a_1=1$, 得 $c_1=\\frac{1}{2 \\sqrt{2}}, c_2=-\\frac{1}{2 \\sqrt{2}}$, 故 $a_n=\\frac{1}{2 \\sqrt{2}}(1+\\sqrt{2})^n-\\frac{1}{2 \\sqrt{2}}(1-\\sqrt{2})^n$. 令 $(1+\\sqrt{2})^n=A_n+B_n \\sqrt{2},\\left(A_n, B_n \\in \\mathbf{N}_{+}\\right)$, 则 $(1-\\sqrt{2})^n=A_n-B_n \\sqrt{2}$, 于是 $a_n=B_n, A_n^2-2 B_n^2=(-1)^n$, 从而 $A_n$ 为奇数.\n设 $n=2^k(2 t+1)$ ( $k, t$ 均为非负整数), 要证题中结论成立, 只要证 $2^k \\mid B_n$\n并且 $2^{k+1} \\times B_n$, 对 $k$ 用归纳法.\n$k=0$ 时, $n=2 t+1$ 为奇数.\n又 $A_n$ 为奇数, 所以 $2 B_n^2=A_n^2+1 \\equiv 2(\\bmod 4)$, 所以 $B_n$ 为奇数,故 $2^0 \\mid B_n$ 并且 $2^1 \\times B_n$, 设 $k=m$ 时, $2^m \\mid B_n$ 并且 $2^{m+1} \\times B_n$, 则 $k=m+1$ 时, 由 $\\left(A_n+\\sqrt{2} B_n\\right)^2=(1+\\sqrt{2})^{2 n}= A_{2 n}+B_{2 n} \\sqrt{2}$ 得 $B_{2 n}=2 A_n B_n$. 又 $A_n$ 为奇数, 故 $2^{m+1} \\mid B_{2 n}$ 并且 $2^{m+2} \\times B_{2 n}$, 而 $2 n=2^{k+1}(2 t+1)$, 这就证明了 $k=m+1$ 时结论成立.\n于是, 我们证明了当且仅当 $2^k \\mid n$ 时 $2^k \\mid a_n$.",
+    "remark": "",
+    "figures": []
+}

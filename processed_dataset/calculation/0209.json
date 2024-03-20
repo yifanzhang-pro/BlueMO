@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题12. 已知两个实数集合 $A=\\left\\{a_1, a_2, \\cdots, a_{100}\\right\\}$ 与 $B=\\left\\{b_1, b_2, \\cdots, b_{50}\\right\\}$, 若从 $A$ 到 $B$ 的映射 $f$ 使得 $B$ 中每个元素都有原象,且 $f\\left(a_1\\right) \\leqslant f\\left(a_2\\right) \\leqslant \\cdots \\leqslant f\\left(a_{100}\\right)$, 则这样的映射的总个数为 .",
+    "solution": "不妨设 $b_1<b_2<\\cdots<b_{50}$, 将 $A$ 中元素按顺序分成 50 个非空子集, 并设第 $i$ 个非空子集中有 $x_i$ 个数, 则 $x_1+x_2+\\cdots+x_{50}=100\\left(x_i \\geqslant 1\\right.$, $i=1,2, \\cdots, 50)$. 定义映射 $f: A \\rightarrow B$, 使得第 $i$ 组元素在 $f$ 下的象都是 $b_i(i=1,2, \\cdots, 50)$. 易知这样的 $f$ 满足题目要求, 并且每个这样的分组都一一对应满足条件的映射, 于是满足题目要求的映射个数等于 $A$ 按顺序分成 50 个非空子集的分法数.\n从而也等于不定方程 $x_1+x_2+\\cdots+x_{50}=100$ 的正整数解组的个数 $\\mathrm{C}_{100-1}^{50-1}=\\mathrm{C}_{99}^{49}$.",
+    "remark": "",
+    "figures": []
+}

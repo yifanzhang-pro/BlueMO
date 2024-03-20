@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 如图(<FilePath:./images/volume8/figures/fig-c4p6.png>), 任意四边形 $A B C D$ 中, $M 、 N$ 分别为 $A D$ 、 $B C$ 的中点, $G$ 为 $M N$ 的中点, $O$ 为平面内的任意一点, 求证:\n(1) $\\overrightarrow{G A}+\\overrightarrow{G B}+\\overrightarrow{G C}+\\overrightarrow{G D}=\\overrightarrow{0}$;\n(2) $\\overrightarrow{O G}=\\frac{1}{4}(\\overrightarrow{O A}+\\overrightarrow{O B}+\\overrightarrow{O C}+\\overrightarrow{O D})$.",
+    "solution": "(1) 设 $\\overrightarrow{G M}=\\vec{a}, \\overrightarrow{M D}=\\vec{m}, \\overrightarrow{N C}=\\vec{n}$, 则 $\\overrightarrow{G N}=-\\vec{a}, \\overrightarrow{M A}=-\\vec{m}, \\overrightarrow{N B}= -\\vec{n}$\n从而 $\\overrightarrow{G A}=\\vec{a}-\\vec{m}, \\overrightarrow{G C}=-\\vec{a}+\\vec{n}, \\overrightarrow{G B}=-\\vec{a}-\\vec{n}, \\overrightarrow{G D}=\\vec{a}+\\vec{m}$.\n所以 $\\overrightarrow{G A}+\\overrightarrow{G B}+\\overrightarrow{G C}+\\overrightarrow{G D}=\\overrightarrow{0}$.\n(2) $\\overrightarrow{O A}=\\overrightarrow{O G}+\\overrightarrow{G A}, \\overrightarrow{O C}=\\overrightarrow{O G}+\\overrightarrow{G C}, \\overrightarrow{O B}=\\overrightarrow{O G}+\\overrightarrow{G B}, \\overrightarrow{O D}=\\overrightarrow{O G}+ \\overrightarrow{G D}$\n从而 $\\overrightarrow{O A}+\\overrightarrow{O B}+\\overrightarrow{O C}+\\overrightarrow{O D}=4 \\overrightarrow{O G}+\\overrightarrow{G A}+\\overrightarrow{G B}+\\overrightarrow{G C}+\\overrightarrow{G D}=4 \\overrightarrow{O G}$, 即 $\\overrightarrow{O G}=\\frac{1}{4}(\\overrightarrow{O A}+\\overrightarrow{O B}+\\overrightarrow{O C}+\\overrightarrow{O D})$, 证毕.",
+    "remark": "",
+    "figures": [
+        "./images/volume8/figures/fig-c4p6.png"
+    ]
+}

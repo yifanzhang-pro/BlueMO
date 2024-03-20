@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 空间四点 $A, B, C, D$ 满足 $|\\overrightarrow{A B}|=3,|\\overrightarrow{B C}|=7,|\\overrightarrow{C D}|=11,|\\overrightarrow{D A}|=$ 9 , 则 $\\overrightarrow{A C} \\cdot \\overrightarrow{B D}$ 的取值 ( ).\n(A) 只有一个\n(B) 有两个\n(C) 有四个\n(D) 有无穷多个",
+    "solution": "A.\n因为 $\\overrightarrow{A B}^2+\\overrightarrow{C D}^2=3^2+11^2=130=7^2+9^2=\\overrightarrow{B C}^2+\\overrightarrow{D A}^2$, 由 $\\overrightarrow{A B}+\\overrightarrow{B C}+ \\overrightarrow{C D}+\\overrightarrow{D A}=\\overrightarrow{0}$, 得 $\\overrightarrow{A B}+\\overrightarrow{C D}=-(\\overrightarrow{B C}+\\overrightarrow{D A})$, 两边平方得 $\\overrightarrow{A B} \\cdot \\overrightarrow{C D}=\\overrightarrow{B C} \\cdot \\overrightarrow{D A}$, 故 $\\overrightarrow{A B} \\cdot \\overrightarrow{C D}=-\\overrightarrow{A D} \\cdot \\overrightarrow{B C}$, 于是\n$$\n\\begin{aligned}\n\\overrightarrow{A C} \\cdot \\overrightarrow{B D} & =(\\overrightarrow{A B}+\\overrightarrow{B C})(\\overrightarrow{B C}+\\overrightarrow{C D}) \\\\\n& =(\\overrightarrow{A B}+\\overrightarrow{B C}+\\overrightarrow{C D}) \\overrightarrow{B C}+\\overrightarrow{A B} \\cdot \\overrightarrow{C D} \\\\\n& =\\overrightarrow{A D} \\cdot \\overrightarrow{B C}+\\overrightarrow{A B} \\cdot \\overrightarrow{C D}=0 .\n\\end{aligned}\n$$\n$\\overrightarrow{A C} \\cdot \\overrightarrow{B D}$ 只有一个值 0. 故选 A.",
+    "remark": "",
+    "figures": []
+}

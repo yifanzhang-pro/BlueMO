@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题5 在集合 $\\{1,2, \\cdots, n\\}$ 中, 任意取出一个子集, 计算它的元素之和.\n问所有子集元素之和的总和是多少?",
+    "solution": "$\\{1,2, \\cdots, n\\}$ 中含 $k(1 \\leqslant k \\leqslant n)$ 的子集有 $2^{n-1}$ 个, 故其总和为 $2^{n-1}(1+2+\\cdots+n)=2^{n-2} n(n+1)$.",
+    "remark": "",
+    "figures": []
+}

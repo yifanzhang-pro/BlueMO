@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题17. 函数 $y=\\tan \\left(\\frac{1}{2} x+\\frac{\\pi}{6}\\right)$ 图象的对称中心是",
+    "solution": "$\\left(2 k \\pi-\\frac{\\pi}{3}, 0\\right)(k \\in \\mathbf{Z})$. 由 $\\frac{1}{2} x+\\frac{\\pi}{6}=k \\pi$, 得对称中心 $\\left(2 k \\pi-\\frac{\\pi}{3}, 0\\right)$.",
+    "remark": "",
+    "figures": []
+}

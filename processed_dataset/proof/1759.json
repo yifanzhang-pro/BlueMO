@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例6. 如图(<FilePath:./images/volume7/figures/fig-c9i10.png>), $A B$ 为圆 $\\omega$ 的直径, 直线 $l$ 切 $\\odot \\omega$ 于 $A$. C、M、D 在 $l$ 上满足 $C M=D M$, 又设 $B C 、 B D$ 交 $\\odot \\omega$ 于 $P 、 Q, \\odot \\omega$ 切线 $P R 、 Q R$ 交于 $R$. 求证: $R$ 在 $B M$ 上.",
+    "solution": "证明:过 $B$ 作 $C D$ 平行线 $l^{\\prime}$, 则 $B C 、 B D, B M 、 l^{\\prime}$ 成调和线束, $A B$ 过圆心, $C D$ 为切线, $l^{\\prime} / / C D$, 所以 $l^{\\prime}$ 为圆的切线, 于是, $B B$ (过 $B$ 的切线)、 $B P$ 、 $B T 、 B Q$ 成调和线束, 因此结合定理 2 有, 四边形 $B P T Q$ 为调和四边形, 根据定理 $3, R$ 为直线 $P Q$ 的极点, 因此在直线 $B T(B M)$ 上.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9i10.png"
+    ]
+}

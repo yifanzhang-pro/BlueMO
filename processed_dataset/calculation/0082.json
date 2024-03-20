@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题2 设集合 $M=\\{1,2, \\cdots, 1000\\}$, 现对 $M$ 的任一非空子集 $X$, 令 $\\alpha_X$ 表示 $X$ 中最大数与最小数之和.\n则所有这样的 $\\alpha_X$ 的算术平均值为",
+    "solution": "1001 . 构造子集 $X^{\\prime}=\\{1001-x \\mid x \\in X\\}$, 则所有非空子集分成两类 $X^{\\prime}=X$ 和 $X^{\\prime} \\neq X$. 当 $X^{\\prime}=X$ 时, 必有 $X^{\\prime}=X=M$, 于是 $\\alpha_X=1001$. 当 $X^{\\prime} \\neq X$ 时, 设 $x 、 y$ 分别是 $X$ 中的最大数与最小数, 则 $1001-x 、 1001-y$ 分别是 $X^{\\prime}$ 中的最小数与最大数.\n于是, $\\alpha_X=x+y, \\alpha_{X^{\\prime}}=2002-x-y$. 从而, $\\frac{\\alpha_X+\\alpha_{X^{\\prime}}}{2}=1001$. 因此, 所求的 $\\alpha_X$ 的算术平均值为 1001 .",
+    "remark": "",
+    "figures": []
+}

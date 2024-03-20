@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 以 $\\triangle A B C$ 的三边各为一边, 分别在形外作 $\\triangle C B D 、 \\triangle C A E 、 \\triangle A B F$, 使得 $\\angle B A F=\\angle C A E, \\angle A B F=\\angle C B D, \\angle A C E=\\angle B C D$.\n求证: $A D 、 B E 、 C F$ 三线共点.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c2a11.png>), 记 $\\angle B A F=\\angle C A E=\\alpha$, $\\angle A B F=\\angle C B D=\\beta, \\angle B C D=\\angle A C E=\\gamma$.\n关于 $\\triangle A B C$ 分别与点 $D 、 E 、 F$ 应用角元塞瓦定理有 $\\frac{\\sin \\angle B A D}{\\sin \\angle D A C} \\cdot \\frac{\\sin \\angle A C D}{\\sin \\angle D C B} \\cdot \\frac{\\sin \\angle C B D}{\\sin \\angle D B A}=1$. 则 $\\frac{\\sin \\angle B A D}{\\sin \\angle D A C}=\\frac{\\sin \\gamma \\cdot \\sin (B+\\beta)}{\\sin (C+\\gamma) \\cdot \\sin \\beta}$.\n同理, $\\frac{\\sin \\angle A C F}{\\sin \\angle F C B}=\\frac{\\sin \\beta \\cdot \\sin (A+\\alpha)}{\\sin (B+\\beta) \\cdot \\sin \\alpha}$,\n$$\n\\frac{\\sin \\angle C B E}{\\sin \\angle E B A}=\\frac{\\sin \\alpha \\cdot \\sin (C+\\gamma)}{\\sin (A+\\alpha) \\cdot \\sin \\gamma} \\text {. }\n$$\n以上三式相乘得 $\\frac{\\sin \\angle B A D}{\\sin \\angle D A C} \\cdot \\frac{\\sin \\angle A C F}{\\sin \\angle F C B} \\cdot \\frac{\\sin \\angle C B E}{\\sin \\angle E B A}=1$.\n由角元 Ceva 定理的逆定理知结论成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2a11.png"
+    ]
+}

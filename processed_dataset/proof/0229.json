@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 设 $n_1, \\cdots, n_k$ 为正整数, 具有下面的性质:\n$$\nn_1\\left|\\left(2^{n_2}-1\\right), n_2\\right|\\left(2^{n_3}-1\\right), \\cdots, n_k \\mid\\left(2^{n_1}-1\\right) .\n$$\n证明: $n_1=\\cdots=n_k=1$.",
+    "solution": "已知条件可重述为\n$$\n2^{n_2} \\equiv 1\\left(\\bmod n_1\\right), 2^{n_3} \\equiv 1\\left(\\bmod n_2\\right), \\cdots, 2^{n_1} \\equiv 1\\left(\\bmod n_k\\right) .\n$$\n设 $D=\\left[n_1, \\cdots, n_k\\right]$. 则由上式得出\n$$\n2^D \\equiv 1\\left(\\bmod n_i\\right)(i=1, \\cdots, k),\n$$\n从而 $2^D \\equiv 1(\\bmod D)$, 故由第 8 单元中例 2 知 $D=1$, 所以 $n_1=n_2=\\cdots=n_k=1$.",
+    "remark": "",
+    "figures": []
+}

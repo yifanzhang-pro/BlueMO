@@ -1,0 +1,13 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例11 若方程 $\\sin ^2 x+\\cos x+a=0$ 有解,求实数 $a$ 的取值范围.",
+    "solution": "分析:将原方程化归为一元二次方程后, 根据根的分布特征求 $a$ 的取值范围;也可将原方程化归为二次函数后, 根据值域求 $a$ 的取值范围.\n解法一原方程可变形为 $\\cos ^2 x-\\cos x-1-a=0$, 当 $\\Delta=(-1)^2- 4(-1-a)=5+4 a \\geqslant 0$, 即 $a \\geqslant-\\frac{5}{4}$ 时, $\\cos x=\\frac{1 \\pm \\sqrt{5+4 a}}{2}$. 但 $|\\cos x| \\leqslant$ 1 , 所以 $-1 \\leqslant \\frac{1+\\sqrt{5+4 a}}{2} \\leqslant 1$ 或 $-1 \\leqslant \\frac{1-\\sqrt{5+4 a}}{2} \\leqslant 1$, 解这两个不等式,得 $-\\frac{5}{4} \\leqslant a \\leqslant 1$.\n解法二设 $t=\\cos x$, 则 $f(t)=t^2-t-a-1$, 且 $t \\in[-1,1]$, 因原方程有解, 所以 $f(t)$ 的图象与横轴 $t$ 在 $[-1,1]$ 上有交点, 有下列三种情形:\n如图 (<FilePath:./images/volume3/figures/fig-c1e11-1.png>) (<FilePath:./images/volume3/figures/fig-c1e11-2.png>) , 满足 $f(1) f(-1) \\leqslant 0$;\n如图 (<FilePath:./images/volume3/figures/fig-c1e11-3.png>) , 满足\n$$\n\\left\\{\\begin{array}{l}\nf(1) \\geqslant 0, \\\\\nf(-1) \\geqslant 0, \\\\\n\\Delta \\geqslant 0, \\\\\n-1<\\frac{1}{2}<1,\n\\end{array}\\right.\n$$\n即 $(1-a)(-1-a) \\leqslant 0$, 或 $\\left\\{\\begin{array}{l}1-a \\geqslant 0, \\\\ -1-a \\geqslant 0, \\text { 解之得 }-\\frac{5}{4} \\leqslant a \\leqslant 1 \\text {, 所以 } a \\text { 的取 } \\\\ 5+4 a \\geqslant 0 .\\end{array}\\right.$ 值范围为 $\\left[-\\frac{5}{4}, 1\\right]$.\n解法三原方程可变形为 $a=\\cos ^2 x-\\cos x-1=\\left(\\cos x-\\frac{1}{2}\\right)^2-\\frac{5}{4}$, 因为 $|\\cos x| \\leqslant 1$, 所以 $a_{\\max }=1, a_{\\min }=-\\frac{5}{4}$, 故 $a$ 的取值范围为 $\\left[-\\frac{5}{4}, 1\\right]$.\n评注有关 $\\sin x$ 和 $\\cos x$ 的三角方程有解的问题,转化为二次函数的方法最为简洁.\n另外, 在本题中因二次函数的对称轴为 $t==\\frac{1}{2}$, 所以图(<FilePath:./images/volume3/figures/fig-c1e11-1.png>)实际上是不可能的, 可不考虑.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c1e11-1.png",
+        "./images/volume3/figures/fig-c1e11-2.png",
+        "./images/volume3/figures/fig-c1e11-3.png",
+        "./images/volume3/figures/fig-c1e11-1.png"
+    ]
+}

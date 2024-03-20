@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 凸四边形 $A B C D$ 中, 点 $M, N$ 在边 $A B$ 上, 使 $A M=M N=N B$, 点 $P 、 Q$ 在边 $C D$ 上, 使 $C P=P Q=Q D$. 求证: $S_{\\text {四边形 } A M C P}=S_{\\text {四边形 } M N P Q}== \\frac{1}{3} S_{\\text {四边形 } A B C D}$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c11a9.png>), 连结 $A C 、 M P$. 因 $S_{\\triangle A C P}= \\frac{1}{3} S_{\\triangle A C D}, S_{\\triangle A C M}=\\frac{1}{3} S_{\\triangle A C B}$, 则 $S_{\\triangle A C P}+S_{\\triangle A C M}= \\frac{1}{3}\\left(S_{\\triangle A C D}+S_{\\triangle A C B}\\right)$, 即 $S_{\\text {四边形 } A M C P}=\\frac{1}{3} S_{\\text {四边形 } A B C D \\text {. 又 }} S_{\\triangle M P Q}=S_{\\triangle M P C}, S_{\\triangle M P N}=S_{\\triangle M P A}$, 则 $S_{\\triangle M P Q}+S_{\\triangle M P N}= S_{\\triangle M P C}+S_{\\triangle M P A}$, 即 $S_{\\text {四边形 } M N P Q}=S_{\\text {四边形 } A M C P}$. 综上,\n$S_{\\text {四边形 } A M C P}=S_{\\text {四边形 } M N P Q}=\\frac{1}{3} \\cdot S_{\\text {四边形 } A B C D}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c11a9.png"
+    ]
+}

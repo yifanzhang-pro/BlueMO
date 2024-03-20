@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例4 设 $x, y \\in \\mathbf{R}^{+}, x+y=c, c$ 为定值且 $0<c \\leqslant 2$, 求 $\\left(x+\\frac{1}{x}\\right)\\left(y+\\frac{1}{y}\\right)$ 的最小值.",
+    "solution": "解:令 $u=\\left(x+\\frac{1}{x}\\right)\\left(y+\\frac{1}{y}\\right)$, 则\n$$\n\\begin{gathered}\nu=x y+\\frac{1}{x y}+\\frac{x}{y}+\\frac{y}{x} \\geqslant x y+\\frac{1}{x y}+2 . \\\\\n0<x y \\leqslant \\frac{(x+y)^2}{4}=\\frac{c^2}{4}\n\\end{gathered}\n$$\n因为构造辅助函数 $f(t)=t+\\frac{1}{t}, 0<t \\leqslant \\frac{c^2}{4}$.\n由于 $0<c \\leqslant 2$, 所以 $\\frac{c^2}{4} \\leqslant 1$. 于是函数 $f(t)$ 在 $0<t \\leqslant \\frac{c^2}{4}$ 上是递减的, 从而 $f(t)$ 的最小值为\n$$\n\\begin{aligned}\n& f\\left(\\frac{c^2}{4}\\right)=\\frac{c^2}{4}+\\frac{4}{c^2} . \\\\\n& u \\geqslant \\frac{c^2}{4}+\\frac{4}{c^2}+2 .\n\\end{aligned}\n$$\n所以\n$$\nu \\geqslant \\frac{c^2}{4}+\\frac{4}{c^2}+2\n$$\n当 $x=y=\\frac{c}{2}$ 时, 上面等于成立.\n所以 $\\left(x+\\frac{1}{x}\\right)\\left(y+\\frac{1}{y}\\right)$ 的最小值为 $\\frac{c^2}{4}+\\frac{4}{c^2}+2$.\n说明利用函数的单调性来证明不等式或求函数最值, 也是非常有用的方法.",
+    "remark": "",
+    "figures": []
+}

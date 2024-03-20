@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设 $a_1, a_2, \\cdots$ 为无限实数序列, 满足: 存在一个实数 $c$, 对所有 $i$ 有\n$0 \\leqslant a_i \\leqslant c$, 并且 $\\left|a_i-a_j\\right| \\geqslant \\frac{1}{i+j}$ 成立 (对所有 $i \\neq j$ ), 求证: $c \\geqslant 1$.",
+    "solution": "证明:对固定的 $n \\geqslant 2$, 设序列前 $n$ 项可排序为\n$$\n0 \\leqslant a_{\\sigma(1)}<a_{\\sigma(2)}<\\cdots<a_{\\sigma(n)} \\leqslant c,\n$$\n其中, $\\sigma(1), \\sigma(2), \\sigma(3), \\cdots, \\sigma(n)$ 是 $1,2,3, \\cdots, n$ 的一个排列.\n于是, $c \\geqslant a_{\\sigma(n)}-a_{\\sigma(1)}$\n$$\n\\begin{aligned}\n& =\\left(a_{\\sigma(n)}-a_{\\sigma(n-1)}\\right)+\\left(a_{\\sigma(n-1)}-a_{\\sigma(n-2)}\\right)+\\cdots+\\left(a_{\\sigma(2)}-a_{\\sigma(1)}\\right) \\\\\n& \\geqslant \\frac{1}{\\sigma(n)+\\sigma(n-1)}+\\frac{1}{\\sigma(n-1)+\\sigma(n-2)}+\\cdots+\\frac{1}{\\sigma(2)+\\sigma(1)} .\n\\end{aligned} \\label{eq1}\n$$\n利用 Cauchy 不等式可得:\n$$\n\\begin{gathered}\n\\left(\\frac{1}{\\sigma(n)+\\sigma(n-1)}+\\cdots+\\frac{1}{\\sigma(2)+\\sigma(1)}\\right)((\\sigma(1)+\\sigma(n-1))+\\cdots+ \\\\\n(\\sigma(2)+\\sigma(1))) \\geqslant(n-1)^2 .\n\\end{gathered}\n$$\n所以\n$$\n\\begin{aligned}\n& \\frac{1}{\\sigma(n)+\\sigma(n-1)}+\\cdots+\\frac{1}{\\sigma(2)+\\sigma(1)} \\\\\n\\geqslant & \\frac{(n-1)^2}{2(\\sigma(1)+\\cdots+\\sigma(n))-\\sigma(1)-\\sigma(n)} \\\\\n= & \\frac{(n-1)^2}{n(n+1)-\\sigma(1)-\\sigma(n)} \\\\\n\\geqslant & \\frac{(n-1)^2}{n^2+n-3} \\geqslant \\frac{n-1}{n+3} .\n\\end{aligned}\n$$\n故由\\ref{eq1}式知 $c \\geqslant 1-\\frac{4}{n+3}$ 对所有 $n \\geqslant 2$ 成立, 因此 $c \\geqslant 1$, 结论成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例1. 证明: 对任意 $m, n \\in \\mathbf{N}^*$, 都有 $\\left(F_m, F_n\\right)=F_{(m, n)}$. 即针对 Fibonaccia 数列的项求最大公因数可以转化到下标上去.",
+    "solution": "证明:当 $m=n$ 时显然成立.\n考虑 $m \\neq n$ 的情形, 不妨设 $m>n$.\n利用 Fibonaccia 数列的递推式, 可知\n$$\n\\begin{aligned}\nF_m= & F_{m-1}+F_{m-2}=F_2 F_{m-1}+F_1 F_{m-2} \\\\\n= & F_2\\left(F_{m-2}+F_{m-3}\\right)+F_1 F_{m-2} \\\\\n= & \\left(F_2+F_1\\right) F_{m-2}+F_2 F_{m-3} \\\\\n= & F_3 F_{m-2}+F_2 F_{m-3} \\\\\n& \\cdots \\\\\n= & F_n F_{m-n+1}+F_{n-1} F_{m-n} .\n\\end{aligned}\n$$\n于是 $\\left(F_m, F_n\\right)=\\left(F_{n-1} F_{m-n}, F_n\\right)=\\left(F_{m-n}, F_n\\right)$ (这里用到 $\\left(F_{n-1}, F_n\\right)=1$, 它可以通过对 $n$ 用数学归纳法证得, 具体过程留给读者).\n在上面的结论中, 用 $(m-n, n)$ 代替 $(m, n)$ 继续讨论, 表明求 $F_m$ 与 $F_n$ 的最大公因数的过程实质上是对下标 $m 、 n$ 作辗转相除.\n所以 $\\left(F_m, F_n\\right)= F_{(m, n)}$.\n说明利用本题的结论可证出下述命题: 如果 $F_n$ 为素数, 那么 $n=4$ 或者 $n$ 为素数.\n事实上, 如果 $n \\neq 4$ 且 $n$ 不是素数, 那么可写 $n=p q, 2 \\leqslant p \\leqslant q$, 并且\n$q \\geqslant 3$. 此时 $\\left(F_n, F_q\\right)=F_{(n, q)}=F_q$, 而 $F_q \\geqslant 2, F_n>F_q$, 由此导出 $F_n$ 为合数.",
+    "remark": "",
+    "figures": []
+}

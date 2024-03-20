@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-8.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $f(x)$ 是一个整系数多项式, 数列 $\\left\\{a_n\\right\\}$ 依如下方式定义\n$$\na_0=0, a_{n+1}=f\\left(a_n\\right), n=0,1,2, \\cdots .\n$$",
+    "solution": "证明: 若 $\\left\\{a_n\\right\\}$ 是一个纯周期数列, 则其最小正周期不大于 2 .\n证明问题可转化为证明: 若存在 $m \\in \\mathbf{N}^*$, 使得 $a_m=0$, 则 $a_1$ 或 $a_2$ 中有一个等于 0 .\n利用因式定理, 由于 $f(x)$ 为整系数多项式, 可知对 $m 、 n \\in \\mathbf{Z}(m \\neq n)$, 都有 $m-n \\mid f(m)-f(n)$.\n现令 $b_n=a_{n+1}-a_n, n=0,1,2, \\cdots$, 由上述结论及数列 $\\left\\{a_n\\right\\}$ 的定义可知 $b_n \\mid b_{n+1}$ (注意, 这里若 $b_n=0$, 则有 $b_{n+1}=f\\left(a_{n+1}\\right)-f\\left(a_n\\right)=0$ ).\n因为 $a_m=a_0=0$, 故 $a_{m+1}=f\\left(a_0\\right)=a_1$, 所以 $b_m=b_0$.\n如果 $b_0=0$, 那么 $a_0=a_1=\\cdots=a_m$, 命题已成立; 否则 $\\left|b_0\\right|=\\left|b_m\\right| \\neq$ 0 , 结合 $b_0\\left|b_1, b_1\\right| b_2, \\cdots, b_{m-1} \\mid b_m$, 可得 $\\left|b_0\\right|=\\left|b_1\\right|=\\cdots=\\left|b_m\\right|$.\n注意到\n$$\nb_0+b_1+\\cdots+b_{m-1}=a_m-a_0=0,\n$$\n因此, $b_0, b_1, \\cdots, b_{m-1}$ 中有一半为正整数, 另一半为负整数, 从而, 存在 $k \\in \\{1,2, \\cdots, m-2\\}$, 使得 $b_{k-1}=-b_k$, 得 $a_{k-1}=a_{k+1}$, 依 $\\left\\{a_n\\right\\}$ 的定义知, 对 $n \\geqslant k-1$, 都有 $a_{n+2}=a_n$. 取 $n=m$, 就有\n$$\n\\begin{aligned}\na_0 & =a_m=a_{m+2}=f\\left(a_{m+1}\\right)=f\\left(f\\left(a_m\\right)\\right) \\\\\n& =f\\left(f\\left(a_0\\right)\\right)=a_2 .\n\\end{aligned}\n$$\n即有 $a_2=0$.\n所以, 命题成立.",
+    "remark": "",
+    "figures": []
+}

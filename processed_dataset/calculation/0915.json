@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题10. 如图(<FilePath:./images/volume7/figures/fig-c1p10.png>), 设 $I$ 为 $\\triangle A B C$ 的内心, 过 $I$ 分别作 $A B$ 、 $B C 、 C A$ 的平行线 $A_1 B_2 、 B_1 C_2 、 C_1 A_2$. 求 $\\frac{A_1 B_2}{A B}+\\frac{B_1 C_2}{B C}+\\frac{C_1 A_2}{C A}$ 的值.",
+    "solution": "解: 设 $r$ 为 $\\triangle A B C$ 的内切圆半径, $h_a 、 h_b 、 h_c$ 分别为顶点 $A 、 B 、 C$ 对应的高.\n因为 $A_1 B_2 / / A B$, 所以, $\\triangle A_1 C B_2 \\backsim \\triangle A C B$. 从而, $\\frac{A_1 B_2}{A B}=\\frac{h_c-r}{h_c}$. 同理, $\\frac{B_1 C_2}{B C}=\\frac{h_a-r}{h_a}, \\frac{C_1 A_2}{C A}=\\frac{h_b-r}{h_b}$. 故 $S=\\frac{A_1 B_2}{A B}+\\frac{B_1 C_2}{B C}+\\frac{C_1 A_2}{C A}=\\frac{h_c-r}{h_c}+ \\frac{h_a-r}{h_a}+\\frac{h_b-r}{h_b}=3-r\\left(\\frac{1}{h_c}+\\frac{1}{h_a}+\\frac{1}{h_b}\\right)$. 设 $S$ 为 $\\triangle A B C$ 的面积.\n则 $2 S= a h_a=b h_b=c h_c=r(a+b+c)$. 于是, $S=3-r\\left(\\frac{a}{2 S}+\\frac{b}{2 S}+\\frac{c}{2 S}\\right)=2$.",
+    "remark": "注:: 事实上, $I$ 为 $\\triangle A B C$ 内任意一点时, 均有 $S=2$, 这是因为 $\\frac{B_1 C_2}{B C}= \\frac{A B_1}{A B}, \\frac{C_1 A_2}{C A}=\\frac{A_2 B}{A B}$. 故 $S=\\frac{A_1 B_2+A B_1+A_2 B}{A B}=\\frac{A_1 I+I B_2+A B_1+A_2 B}{A B}= \\frac{A A_2+B_1 B+A B_1+A_2 B}{A B}=2$.",
+    "figures": [
+        "./images/volume7/figures/fig-c1p10.png"
+    ]
+}

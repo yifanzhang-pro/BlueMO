@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例5 已知 $\\frac{\\sin ^4 x}{a}+\\frac{\\cos ^4 x}{b}=\\frac{1}{a+b}$, 求证: $\\frac{\\sin ^{4 n} x}{a^{2 n-1}}+\\frac{\\cos ^{4 n} x}{b^{2 n-1}}=\\frac{1}{(a+b)^{2 n-1}}$, $n \\in \\mathbf{N}^*$.",
+    "solution": "证明:一令 $\\left\\{\\begin{array}{l}u=\\sin ^2 x, \\\\ v=\\cos ^2 x,\\end{array}\\right.$ 则 $0 \\leqslant u, v \\leqslant 1$, 且 $u+v=1$.\n因为\n$$\n\\left\\{\\begin{array} { l } \n{ \\frac { u ^ { 2 } } { a } + \\frac { v ^ { 2 } } { b } = \\frac { 1 } { a + b } } \\\\\n{ u + v = 1 }\n\\end{array} \\Leftrightarrow \\left\\{\\begin{array}{l}\nu=\\frac{a}{a+b}, \\\\\nv=\\frac{b}{a+b},\n\\end{array}\\right.\\right.\n$$\n所以 $\\frac{\\sin ^{4 n} x}{a^{2 n-1}}+\\frac{\\cos ^{4 n} x}{b^{2 n-1}}=\\frac{u^{2 n}}{a^{2 n-1}}+\\frac{v^{2 n}}{b^{2 n-1}}=\\frac{\\left(\\frac{a}{a+b}\\right)^{2 n}}{a^{2 n-1}}+\\frac{\\left(\\frac{b}{a+b}\\right)^{2 n}}{b^{2 n-1}}$\n$$\n=\\frac{a}{(a+b)^{2 n}}+\\frac{b}{(a+b)^{2 n}}=\\frac{1}{(a+b)^{2 n-1}} \\text {. }\n$$\n证明二因为 $\\frac{\\sin ^4 x}{a}+\\frac{\\cos ^4 x}{b} \\geqslant \\frac{\\left(\\sin ^2 x+\\cos ^2 x\\right)^2}{a+b}=\\frac{1}{a+b}$,\n当且仅当 $\\frac{\\sin ^2 x}{a}=\\frac{\\cos ^2 x}{b}$ 即 $\\frac{\\sin ^2 x}{a}=\\frac{\\cos ^2 x}{b}=\\frac{\\sin ^2 x+\\cos ^2 x}{a+b}=\\frac{1}{a+b}$ 时,等号成立.\n所以 $\\sin ^2 x=\\frac{a}{a+b}, \\cos ^2 x=\\frac{b}{a+b}$, 代入即可.\n评注证明二中我们利用不等式的方式来证明等式, 有时是迫不得已， 有时是出奇制胜.",
+    "remark": "",
+    "figures": []
+}

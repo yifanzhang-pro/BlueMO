@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题7. 用 $1,2,3,4$ 可组成多少个含偶数个 1 的 $n$ 位数?",
+    "solution": "首位数字为 1 时, 余下 $n-1$ 位数是含奇数个 1 的 $n-1$ 位数有 $4^{n-1}- a_{n-1}$ 个; 首位数字不为 1 时,首位数字有 3 种不同取法余下 $n-1$ 余数字有 $a_{n-1}$ 种取法, 这样的 $n$ 位数有 $3 a_{n-1}$ 个, 故 $a_n=4^{n-1}-a_{n-1}+3 a_{n-1}=2 a_{n-1}+4^{n-1}$ 并且显然 $a_1=3$. 于是 $\\frac{a_n}{4^n}=\\frac{1}{2} \\frac{a_{n-1}}{4^{n-1}}+\\frac{1}{4}$, 令 $b_n=\\frac{a_n}{4^n}$ 则 $b_n=\\frac{1}{2} b_{n-1}+\\frac{1}{4}$, 即 $b_n- \\frac{1}{2}=\\frac{1}{2}\\left(b_{n-1}-\\frac{1}{2}\\right)$, 所以 $b_n-\\frac{1}{2}=\\left(b_1-\\frac{1}{2}\\right)\\left(\\frac{1}{2}\\right)^{n-1}=\\left(\\frac{3}{4}-\\frac{1}{2}\\right)\\left(\\frac{1}{2}\\right)^{n-1}= \\frac{1}{2^{n+1}}$, 故 $a_n=4^n b_n=4^n\\left(\\frac{1}{2^{n+1}}+\\frac{1}{2}\\right)=\\frac{1}{2}\\left(2^n+4^n\\right)$.",
+    "remark": "",
+    "figures": []
+}

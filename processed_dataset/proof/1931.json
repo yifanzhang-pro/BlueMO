@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 四边形 $A B C D$ 有内切圆 $\\odot I, E 、 F 、 G 、 H$ 分别是 $\\odot I$ 在四边 $A B 、 B C$ 、 $C D 、 D A$ 上的切点.\n求证: $A C 、 B D 、 E G 、 F H$ 四线共点.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c9a12.png>), 设 $A B$ 和 $C D$ 交于点 $O, A D$ 和 $B C$ 交于点 $P$. 则对于 $\\odot I, O$ 的极线为 $E G, P$ 的极线为 $F H$, 于是 $E G$ 和 $F H$ 交于点 $X, X$ 为 $O P$ 的极点.\n令 $E H$ 交 $F G$ 于点 $N, E F$ 交 $G H$ 于点 $M$, 则 $M$ 为 $D$ 的极线与 $B$ 的极线的交点, 因此 $M$ 的极线过 $B 、 D$, 即 $M$ 的极线为直线 $B D$. 同理, $N$ 的极线为直线 $A C$, 设 $A C$ 交 $B D$ 于 $Y$, 又由配极定理 1 知, $M$ 的极线过 $N, N$ 的极线过 $M$. 我们发现 $Y$ 的极线过 $M 、 N$. 故 $Y$ 的极线为直线 $M N$. 对六边形 $E E H G G F$ (退化六边形) 使用帕斯卡定理 $O 、 M 、 N$ 共线, 同理 $M 、 N 、 P$ 共线.\n于是 $X$ 的极线 $=Y$ 的极线, 所以 $X=Y$. 即 $A C$ 、 $B D 、 E G 、 F H$ 四线共点.",
+    "remark": "注:: 此题虽然可以由三角方法解决 (见本章例 13 引理), 但这里我们用配极方法给出另一种解答, 供读者欣赏.",
+    "figures": [
+        "./images/volume7/figures/fig-c9a12.png"
+    ]
+}

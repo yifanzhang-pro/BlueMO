@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例10. 设 $a_i \\in \\mathbf{R}^{+}, 1 \\leqslant i \\leqslant n$. 证明:\n$$\n\\frac{1}{\\frac{1}{1+a_1}+\\frac{1}{1+a_2}+\\cdots+\\frac{1}{1+a_n}}-\\frac{1}{\\frac{1}{a_1}+\\frac{1}{a_2}+\\cdots+\\frac{1}{a_n}} \\geqslant \\frac{1}{n} \\text {. }\n$$",
+    "solution": "证明:令 $\\sum_{i=1}^n \\frac{1}{a_i}=a$, 则 $\\sum_{i=1}^n \\frac{1+a_i}{a_i}=n+a$. 由柯西不等式, 得\n$$\n\\sum_{i=1}^n \\frac{a_i}{1+a_i} \\cdot \\sum_{i=1}^n \\frac{1+a_i}{a_i} \\geqslant n^2 .\n$$\n所以 $\\sum_{i=1}^n \\frac{a_i}{a_i+1} \\geqslant \\frac{n^2}{n+a}$, 以及\n$$\n\\begin{aligned}\n\\sum_{i=1}^n \\frac{1}{a_i+1} & =\\sum_{i=1}^n\\left(1-\\frac{a_i}{a_i+1}\\right)=n-\\sum_{i=1}^n \\frac{a_i}{a_i+1} \\\\\n& \\leqslant n-\\frac{n^2}{n+a}=-\\frac{n a}{n+a} .\n\\end{aligned}\n$$\n于是\n$$\n\\begin{aligned}\n& \\frac{1}{\\frac{1}{1+a_1}+\\frac{1}{1+a_2}+\\cdots+\\frac{1}{1+a_n}}-\\frac{1}{\\frac{1}{a_1}+\\frac{1}{a_2}+\\cdots+\\frac{1}{a_n}} \\\\\n\\geqslant & \\frac{1}{\\frac{n a}{n+a}}-\\frac{1}{a}=\\frac{n+a}{n a}-\\frac{1}{a}=\\frac{a}{n a}=\\frac{1}{n},\n\\end{aligned}\n$$\n故命题成立.",
+    "remark": "",
+    "figures": []
+}

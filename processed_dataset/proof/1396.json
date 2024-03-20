@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题20. 设正实数 $a 、 b 、 c$ 满足: $a b c=1$, 求证: 对于整数 $k \\geqslant 2$, 有 $\\frac{a^k}{a+b}+\\frac{b^k}{b+c}+\\frac{c^k}{c+a} \\geqslant \\frac{3}{2}$. (2007 年中国东南数学奥林匹克)",
+    "solution": "因为 $\\frac{a^k}{a+b}+\\frac{1}{4}(a+b)+\\underbrace{\\frac{1}{2}+\\frac{1}{2}+\\cdots+\\frac{1}{2}}_{k-2 \\uparrow \\frac{1}{2}} \\geqslant k \\cdot \\sqrt[k]{\\frac{a^k}{2^k}}=\\frac{k}{2} a$,\n所以 $\\frac{a^k}{a+b} \\geqslant \\frac{k}{2} a-\\frac{1}{4}(a+b)-\\frac{k-2}{2}$.\n同理可得 $\\frac{b^k}{b+c} \\geqslant \\frac{k}{2} b-\\frac{1}{4}(b+c)-\\frac{k-2}{2}, \\frac{c^k}{c+a} \\geqslant \\frac{k}{2} c-\\frac{1}{4}(c+a)-\\frac{k-2}{2}$\n三式相加可得 $\\frac{a^k}{a+b}+\\frac{b^k}{b+c}+\\frac{c^k}{c+a} \\geqslant \\frac{k}{2}(a+b+c)-\\frac{1}{2}(a+b+c)-$\n$$\n\\frac{3}{2}(k-2)=\\frac{(k-1)}{2}(a+b+c)-\\frac{3}{2}(k-2) \\geqslant \\frac{3}{2}(k-1)-\\frac{3}{2}(k-2)=\\frac{3}{2} \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

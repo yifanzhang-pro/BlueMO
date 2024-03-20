@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题28. 试证明: 对于任何实数 $x,|\\sin x|$ 与 $|\\sin (x+1)|$ 中至少有一个大于 $\\frac{1}{3}$.",
+    "solution": "用反证法.\n设 $|\\sin x| \\leqslant \\frac{1}{3},|\\sin (x+1)| \\leqslant \\frac{1}{3}$, 如图(<FilePath:./images/volume3/figures/fig-c5p28.png>), 作两条平行直线 $y= \\pm \\frac{1}{3}$, 则角 $x, x+1$ 的终边与单位圆的交点都落在 $\\overparen{A B}$ 或 $\\overparen{B^{\\prime} A^{\\prime}}$ 上, 由于 $\\sin \\angle A O B=\\sin \\left(2 \\arcsin \\frac{1}{3}\\right)=\\frac{4 \\sqrt{2}}{9}<\\frac{\\sqrt{2}}{2}= \\sin \\frac{\\pi}{4}<\\sin 1$, 所以 $\\angle A O B<1(\\mathrm{rad})$, 导致矛盾.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c5p28.png"
+    ]
+}

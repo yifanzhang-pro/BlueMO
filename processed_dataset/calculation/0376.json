@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter12.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 对于数集 $M$, 称 $M$ 中最大数与最小数之和为 $M$ 的 \"特征\", 记作 $m(M)$. 求集合 $X=\\{1,2, \\cdots, n\\}$ 的所有非空子集的特征的平均数.",
+    "solution": "解: $Y$ 是 $X$ 的子集全体组成的集.\n对于 $A \\in Y$, 令\n$$\nA^{\\prime}=\\{n+1-a \\mid a \\in A\\},\n$$\n那么 $A^{\\prime} \\in Y$. 所以\n$$\nf: A \\mapsto A^{\\prime}\n$$\n是集 $Y$ 到 $Y$ 自身的一一对应(双射).\n特征的平均数\n$$\ng=\\frac{1}{|Y|} \\sum_{A \\in Y} m(A)=\\frac{1}{2|Y|} \\sum_{A \\in Y}\\left(m(A)+m\\left(A^{\\prime}\\right)\\right) .\n$$\n由于 $A$ 中最大数是 $A^{\\prime}$ 中的最小数, 且它们的和为 $n+1, A$ 中最小数是 $A^{\\prime}$ 中的最大数, 它们的和也为 $n+1$. 于是\n$$\ng=\\frac{1}{2|Y|} \\sum_{A \\in Y} 2(n+1)=(n+1) \\cdot \\frac{1}{|Y|} \\sum_{A \\in Y} 1=n+1 .\n$$",
+    "remark": "注:善于使用配对技巧,常常能使一些表面看来很复杂甚至棘手的问题迎刃而解.\n本题中须求 \"平均数\", 我们将 $A$ 与 $A^{\\prime}=\\{n+1-a \\mid a \\in A\\}$ 对应 (也可以看成一种配对, 只不过有时会与自身配对), 从而化简了计算.\n这与等差数列求和的精神实质是一样的.\n又如在考虑某些集合或排列问题时, 可根据问题的特征采取\"互补集合对\"、\"倒序排列\"等配对方式,同样十分有效.",
+    "figures": []
+}

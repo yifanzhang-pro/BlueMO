@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例2. $P$ 是平行四边形 $A B C D$ 内一点, 且 $\\angle P A B=\\angle P C B$. 求证: $\\angle P B A=\\angle P D A$.",
+    "solution": "证明:将 $\\triangle A B P$ 沿向量 $\\overrightarrow{A D}$ 平移至 $D C P^{\\prime}$, 如图(<FilePath:./images/volume7/figures/fig-c6i2.png>) 设角, 则四边形 $A P P^{\\prime} D$ 和四边形 $B P P^{\\prime} C$ 均为平行四边形, $\\angle 8=\\angle 2=\\angle 1= \\angle 5$, 于是四边形 $P D P^{\\prime} C$ 为圆内接四边形, 因此, $\\angle 4=\\angle 7=\\angle 6=\\angle 3$.\n即 $\\angle P B A=\\angle P D A$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6i2.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 如果在一次会议上, 每个人都至少与 $\\delta \\geqslant 2$ 个人交换过意见, 证明一定可以找到 $k$ 个人 $v_1, v_2, \\cdots, v_k$, 使得 $v_1$ 与 $v_2$ 交换过意见, $v_2$ 和 $v_3$ 交换过意见, $\\cdots, v_{k-1}$ 与 $v_k$ 交换过意见, $v_k$ 与 $v_1$ 交换过意见.\n其中 $k$ 为大于 $\\delta$ 的某个整数.",
+    "solution": "作图 $G$ : 顶点表示人, 两人交换过意见就在相应的顶点之间连一条边.\n在 $G$ 中取一条最长的链 $\\mu$, 设 $\\mu$ 的一个端点为 $v_1$, 则与 $v_1$ 相邻的 $\\delta$ 个点 $v_2, \\cdots$, $v_{\\delta+1}$ 均在链 $\\mu$ 上, 否则 $\\mu$ 还可延长.\n沿着链 $\\mu$ 走过 $v_2, v_3, \\cdots, v_{\\delta+1}$, 然后再回到 $v_1$, 这就是一个长度大于 $\\delta$ 的圈.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题3: 集合 $M=\\{u \\mid u=12 m+8 n+4 l, m, n, l \\in \\mathbf{Z}\\}$ 与 $N=\\{u \\mid u=20 p+ 16 q+12 r, p, q, r \\in \\mathbf{Z}\\}$ 的关系为",
+    "solution": "解: $M=N$. 因 $12 m+8 n+4 l=4(3 m+2 n+l), 20 p+16 q+12 r=4(5 p+4 q+3 r),(3,2,1)=1,(5,4,3)=1$, 由裴蜀定理可知 $3 m+2 n+ l$ 与 $5 p+4 q+3 r$ 均可表示所有整数.\n所以, $M=N=\\{k \\mid k=4 t, t \\in \\mathbf{Z}\\}$.",
+    "remark": "",
+    "figures": []
+}

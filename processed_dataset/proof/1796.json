@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题15. 如图, 设 $\\triangle A B C$ 内存在一点 $F$, 使得 $\\angle A F B= \\angle B F C=\\angle C F A$, 直线 $B F 、 C E$ 分别交 $A C$ 、 $A B$ 于 $D 、 E$. 证明: $A B+A C \\geqslant 4 D E$.",
+    "solution": "证明: 设 $A F=x, B F=y, C F=z$. 由 $S_{\\triangle A C F}=S_{\\triangle A D F}+S_{\\triangle C D F}$, 得 $D F=\\frac{x z}{x+z}$. 同理, $E F=\\frac{x y}{x+y}$. 于是, 只要证明 $\\sqrt{x^2+x y+y^2}+\\sqrt{x^2+x z+z^2} \\geqslant 4 \\sqrt{\\left(\\frac{x y}{x+y}\\right)^2+\\left(\\frac{x z}{x+z}\\right)^2+\\left(\\frac{x y}{x+y}\\right)\\left(\\frac{x z}{x+z}\\right)}$. 因为 $x+ y \\geqslant \\frac{4 x y}{x+y}, x+z \\geqslant \\frac{4 x z}{x+z}$, 所以, 只要证 $\\sqrt{x^2+x y+y^2}+\\sqrt{x^2+x z+z^2} \\geqslant \\sqrt{(x+y)^2+(x+z)^2+(x+y)(x+z)}$.\n平方化简后得 $2 \\sqrt{\\left(x^2+x y+y^2\\right)\\left(x^2+x z+z^2\\right)} \\geqslant x^2+2(y+z) x+y z$, 再平方化简后得 $3\\left(x^2-y z\\right)^2 \\geqslant 0$, 即原不等式成立.",
+    "remark": "",
+    "figures": []
+}

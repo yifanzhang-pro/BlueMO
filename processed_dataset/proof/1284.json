@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例1. 证明 Lagrange 恒等式:\n$$\n\\left(\\sum_{i=1}^n a_i^2\\right) \\cdot\\left(\\sum_{i=1}^n b_i^2\\right)=\\left(\\sum_{i=1}^n a_i b_i\\right)^2+\\sum_{1 \\leqslant i<j \\leqslant n}\\left(a_i b_j-a_j b_i\\right)^2,\n$$\n并由此式说明 Cauchy 不等式成立.",
+    "solution": "证明:$$\n\\begin{aligned}\n& \\left(\\sum_{i=1}^n a_i^2\\right) \\cdot\\left(\\sum_{i=1}^n b_i^2\\right)-\\left(\\sum_{i=1}^n a_i b_i\\right)^2 \\\\\n= & \\sum_{i=1}^n \\sum_{j=1}^n a_i^2 b_j^2-\\sum_{i=1}^n \\sum_{j=1}^n a_i b_i a_j b_j \\\\\n= & \\frac{1}{2} \\sum_{i=1}^n \\sum_{j=1}^n\\left(a_i^2 b_j^2+a_j^2 b_i^2-2 a_i b_i a_j b_j\\right) \\\\\n= & \\frac{1}{2} \\sum_{i=1}^n \\sum_{j=1}^n\\left(a_i b_j-a_j b_i\\right)^2 \\\\\n= & \\sum_{1 \\leqslant i<j \\leqslant n}\\left(a_i b_j-a_j b_i\\right)^2,\n\\end{aligned}\n$$\n故 Lagrange 恒等式成立.\n又因为 $\\sum_{1 \\leqslant i<j \\leqslant n}\\left(a_i b_j-a_j b_i\\right)^2 \\geqslant 0$, 所以有\n$$\n\\left(\\sum_{i=1}^n a_i^2\\right) \\cdot\\left(\\sum_{i=1}^n b_i^2\\right) \\geqslant\\left(\\sum_{i=1}^n a_i b_i\\right)^2\n$$\n即 Cauchy 不等式成立.",
+    "remark": "",
+    "figures": []
+}

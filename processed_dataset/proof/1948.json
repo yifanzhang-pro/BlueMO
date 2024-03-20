@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例3. 有 7 个向量, 其中任意 3 个向量之和的长度都与其余 4 个向量之和的长度相等,求证: 这 7 个向量的和是零向量.",
+    "solution": "分析:与解将这 7 个向量记为 $\\overrightarrow{a_1} 、 \\overrightarrow{a_2} 、 \\cdots 、 \\overrightarrow{a_7}$, 和为 $\\vec{b}$.\n设 $\\overrightarrow{c_i}=\\overrightarrow{a_i}+\\overrightarrow{a_{i+1}}+\\overrightarrow{a_{i+2}}\\left(i=1,2,3, \\cdots, 7, \\overrightarrow{a_{i+7}}=\\overrightarrow{a_i}\\right)$, 有 $\\left|\\overrightarrow{c_i}\\right|=\\mid \\vec{b}- \\overrightarrow{c_i} \\mid$, 则\n$$\n{\\overrightarrow{c_i}}^2=\\vec{b}^2-2 \\vec{b} \\cdot{\\overrightarrow{c_i}}+{\\overrightarrow{c_i}}^2,\n$$\n即\n$$\n\\vec{b}^2-2 \\vec{b} \\cdot \\overrightarrow{c_i}=0 .\n$$\n累加得 $\\quad 7 \\vec{b}^2-2 \\vec{b} \\cdot\\left(\\overrightarrow{c_1}+\\overrightarrow{c_2}+\\cdots+\\overrightarrow{c_7}\\right)=0$,\n即 $7 \\vec{b}^2-6 \\vec{b}^2=0$, 得 $|\\vec{b}|^2=0$, 即 $\\vec{b}=\\overrightarrow{0}$, 证毕.",
+    "remark": "",
+    "figures": []
+}

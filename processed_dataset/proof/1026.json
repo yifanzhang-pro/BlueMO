@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题25 求证: $\\sum_{k=0}^n\\left(\\frac{1}{3}\\right)^k \\sin ^3\\left(3^k \\alpha\\right)=\\frac{3}{4} \\sin \\alpha-\\frac{1}{4 \\cdot 3^n} \\sin 3^{n+1} \\alpha$.",
+    "solution": "令 $a_n=\\sum_{k=0}^n\\left(\\frac{1}{3}\\right)^k \\sin ^3\\left(3^k \\alpha\\right)+\\frac{1}{4 \\cdot 3^n} \\sin 3^{n+1} \\alpha-\\frac{3}{4} \\sin \\alpha$, 容易验证 $a_{n+1}-a_n=0$, 所以成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例8. 锐角三角形 $A B C$ 外接圆在 $A$ 和 $B$ 处的切线相交于 $D, M$ 是 $A B$ 中点, 证明: $\\angle A C M=\\angle B C D$.",
+    "solution": "证明:用复数法.\n如图(<FilePath:./images/volume14/figures/fig-c10i1.png>),不妨设 $\\triangle A B C$ 外接圆为复平面上的单位圆 ( $O$ 为圆心), 且射线 $O M$ 方向为实轴正向.\n由已知条件易得 $D$ 在 $O M$ 延长线上, 且 $O M$ ・ $O D=O A^2=1$.\n不妨设 $A, B$ 分别对应复数 $z, \\bar{z}$, 则点 $M$ 对应的复数为 $\\operatorname{Re} z$, 点 $D$ 对应的复数为 $\\frac{1}{\\operatorname{Re} z}$. 又设点 $C$ 对应复数 $c$.\n显然 $\\angle A C M$ 与 $\\angle B C D$ 均为锐角, 故只需证明 $H=\\frac{c-z}{c-\\frac{1}{\\operatorname{Re} z}}: \\frac{c-\\operatorname{Re} z}{c-\\bar{z}} \\in \\mathbf{R}$, 即证 $\\bar{H}=H$.\n记 $(c-z)(c-\\bar{z})=P,\\left(c-\\frac{1}{\\operatorname{Re} z}\\right)(c-\\operatorname{Re} z)=Q$, 则 $H=\\frac{P}{Q}$.\n注意到 $z \\cdot \\bar{z}=c \\cdot \\bar{c}=1$, 则\n$$\n\\begin{gathered}\n\\bar{P}=(\\bar{c}-\\bar{z})(\\bar{c}-z)=\\left(\\frac{1}{c}-\\frac{1}{z}\\right)\\left(\\frac{1}{c}-\\frac{1}{\\bar{z}}\\right)=\\frac{1}{c^2}(z-c)(\\bar{z}-c)=\\frac{P}{c^2}, \\\\\n\\bar{Q}=\\left(\\frac{1}{c}-\\frac{1}{\\operatorname{Re} z}\\right)\\left(\\frac{1}{c}-\\operatorname{Re} z\\right)=\\frac{1}{c^2 \\operatorname{Re} z}(\\operatorname{Re} z-c)(1-c \\operatorname{Re} z) \\\\\n=\\frac{1}{c^2 \\operatorname{Re} z} \\cdot Q \\operatorname{Re} z=\\frac{Q}{c^2},\n\\end{gathered}\n$$\n故 $\\bar{H}=\\frac{\\bar{P}}{\\bar{Q}}=\\frac{P}{Q}=H$. 从而 $\\angle A C M=\\angle B C D$.",
+    "remark": "注:本题中 $A, B$ 两点地位对称, 而 $D, M$ 两点与 $A, B$ 关系密切, 因此在不失一般性的前提下, 将 $A, B$ 分别对应单位圆上的复数 $z, \\bar{z}$, 并将需证的角相等的结论转化为\"一个复数式取实数值\"这样一类表述.\n复数法是一种代数方法,然而复数的乘除在模、辐角等方面又具有清晰的几何意义, 这是复数法的优点所在.\n复数的几种表示形式 (代数、三角、指数形式等)在解题中也可适当选用, 它们揭示了代数、三角、几何等知识的联系.\n凡与旋转、位似有关的问题, 常常可以利用复数法求解.",
+    "figures": [
+        "./images/volume14/figures/fig-c10i1.png"
+    ]
+}

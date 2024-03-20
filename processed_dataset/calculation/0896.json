@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题12. 求最大常数 $k$, 使 $\\frac{k a b c}{a+b+c} \\leqslant(a+b)^2+(a+b+4 c)^2$ 对所有正实数 $a$, $b, c$ 成立.",
+    "solution": "取 $a=b=2 c$, 有 $k \\leqslant 100$. 又由于\n$$\n\\begin{aligned}\n& \\frac{a+b+c}{a b c} \\cdot\\left[(a+b)^2+(a+b+4 c)^2\\right] \\\\\n\\geqslant & \\frac{a+b+c}{a b c} \\cdot\\left[(a+b)^2+(a+2 c+b+2 c)^2\\right] \\\\\n\\geqslant & \\frac{a+b+c}{a b c} \\cdot\\left[4 a b+(2 \\sqrt{2 a c}+2 \\sqrt{2 b c})^2\\right] \\\\\n= & \\frac{a+b+c}{a b c} \\cdot(4 a b+8 a c+8 b c+16 \\sqrt{a c} \\cdot c) \\\\\n= & (a+b+c)\\left(\\frac{4}{c}+\\frac{8}{a}+\\frac{8}{b}+\\frac{16}{\\sqrt{a b}}\\right)\n\\end{aligned}\n$$\n$$\n\\begin{aligned}\n& =\\left(\\frac{a}{2}+\\frac{a}{2}+\\frac{b}{2}+\\frac{b}{2}+c\\right) \\cdot\\left(\\frac{4}{c}+\\frac{8}{a}+\\frac{8}{b}+\\frac{8}{\\sqrt{a b}}+\\frac{8}{\\sqrt{a b}}\\right) \\\\\n& \\geqslant\\left(5 \\sqrt[5]{\\frac{a^2 b^2 c}{2^4}}\\right) \\cdot\\left(5 \\sqrt[5]{\\frac{2^{14}}{a^2 b^2 c}}\\right)=100 .\n\\end{aligned}\n$$\n故 $k_{\\max }=100$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter2.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 已知复数 $z_1 、 z_2$ 满足 $\\left|z_1\\right|=2,\\left|z_2\\right|=3,3 z_1-2 z_2=\\frac{6}{5}(3+\\mathrm{i})$, 试求 $z_1 z_2$ 的值.",
+    "solution": "分析:与解由 $\\left|z_1\\right|==2,\\left|z_2\\right|=3$ 知, $z_1 \\overline{z_1}=4, z_2 \\overline{z_2}=9$.\n由 $3 z_1-2 z_2=\\frac{1}{3} z_2 \\overline{z_2} z_1-\\frac{1}{2} z_1 \\overline{z_1} z_2$\n$$\n\\begin{aligned}\n& =\\frac{1}{6} z_1 z_2\\left(2 \\overline{z_2}-3 \\overline{z_1}\\right) \\\\\n& =-\\frac{1}{6} z_1 z_2\\left(\\overline{3 z_1-2} \\overline{z_2}\\right),\n\\end{aligned}\n$$\n可知\n$$\n\\begin{aligned}\nz_1 z_2 & =-6 \\cdot \\frac{3 z_1-2 z_2}{3 z_1-2 z_2} \\\\\n& =-6 \\cdot \\frac{3+\\mathrm{i}}{3-\\mathrm{i}} \\\\\n& =-\\frac{24}{5}-\\frac{18}{5} \\mathrm{i} .\n\\end{aligned}\n$$",
+    "remark": "注:本题亦可设出 $z_1 、 z_2$ 的三角形式求解, 计算较为复杂, 读者不妨一试.",
+    "figures": []
+}

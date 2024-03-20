@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. $G$ 是 $\\triangle A B C$ 的重心, $M 、 N$ 分别是 $A C 、 A B$ 的中点.\n设 $\\triangle A N C$ 和 $\\triangle A M B$ 的外接圆相交于 $A$ 和 $P, \\triangle A M N$ 的外接圆交 $A P$ 于 $T$. 求 $A T: A P$.",
+    "solution": "解: 如图(<FilePath:./images/volume7/figures/fig-c9a4-1.png>), 以 $A$ 为反演中心, 单位长度为反演幂,\n并记 $K$ 点的反象为 $K^{\\prime}$. 则由 $A 、 M 、 P 、 B$ 四点共圆及定理 5 知 $M^{\\prime} 、 P^{\\prime} 、 B^{\\prime}$ 三点共线.\n同理 $N^{\\prime} 、 P^{\\prime} 、 C^{\\prime}$ 也共线.\n又 $\\frac{A N^{\\prime}}{A B^{\\prime}}=\\frac{\\frac{1}{A N}}{\\frac{1}{A B}}=\\frac{A B}{A N}=2$. 所以 $B^{\\prime}$ 为 $A N^{\\prime}$ 的中点, 同理 $C^{\\prime}$ 为 $A M^{\\prime}$ 中点, 于是 $P^{\\prime}$ 为 $\\triangle A N^{\\prime} B^{\\prime}$ 的重心.\n反演后的图形成为图(<FilePath:./images/volume7/figures/fig-c9a4-2.png>), , 于是 $\\frac{A T}{A P}=\\frac{\\frac{1}{A T^{\\prime}}}{\\frac{1}{A P^{\\prime}}}=\\frac{A P^{\\prime}}{A T^{\\prime}}=\\frac{2}{3}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9a4-1.png",
+        "./images/volume7/figures/fig-c9a4-2.png"
+    ]
+}

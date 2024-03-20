@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 在 $3 \\times 4$ 的长方形中, 任意放置 6 个点, 证明:一定可以找到两个点, 它们的距离不大于 $\\sqrt{5}$.",
+    "solution": "如图(<FilePath:./images/volume14/figures/fig-c4a4.png>)所示, 把 $3 \\times 4$ 的矩形分成如下 5 个部分, 由勾股定理可以算得每个部分的任两点之间的距离不大于 $\\sqrt{5}$. 从而命题得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c4a4.png"
+    ]
+}

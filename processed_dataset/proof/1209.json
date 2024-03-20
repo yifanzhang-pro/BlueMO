@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题21. 设 $\\triangle A B C$ 的三边长为 $a 、 b 、 c$, 现将 $A B 、 A C$ 分别延长 $a$ 单位长度, 将 $B C 、 B A$ 分别延长 $b$ 单位长度.\n$C A, C B$ 分别延长 $c$ 单位长度.\n设这样得到六个端点所构成的凸多边形面积为 $G, \\triangle A B C$ 的面积为 $F$. 证明:\n$$\n\\frac{G}{F} \\geqslant 13 \\text {. }\n$$",
+    "solution": "如图(<FilePath:./images/volume4/figures/fig-c2p21.png>)所示, 知 $S_{\\triangle A B_2 C_1}=S_{\\triangle B C_2 A_1}=S_{\\triangle C A_2 B_1}=S_{\\triangle A B C}$\n所以 $$\n\\begin{aligned}\n& \\frac{G}{F} \\\\\n& = \\frac{S_{A B C_2 C_1}+S_{B C A_2 A_2}+S_{A C B_1 B_2}+4 F}{F} \\\\\n& =\\frac{S_{\\triangle A A_1 A_2}+S_{\\triangle B B_1 B_2}+S_{\\triangle C C_1 C_2}+F}{F} \\\\\n& =1+ \\frac{(b+a)(c+a)}{b c}+\\frac{(a+b)(c+b)}{a c}+\\frac{(a+c)(b+c)}{a b}\\\\\n& =1+3+\\frac{a}{b}+\\frac{a}{c}+\\frac{b}{a}+\\frac{b}{c}+\\frac{c}{a}+\\frac{c}{b}+\\frac{a^2}{b c}+\\frac{b^2}{a c}+\\frac{c^2}{a b} \\geqslant 4+9 \\sqrt[9]{\\frac{a}{b} \\cdot \\frac{a}{c} \\cdot \\frac{b}{a} \\cdot \\frac{b}{c} \\cdot \\frac{c}{a} \\cdot \\frac{c}{b} \\cdot \\frac{a^2}{b c} \\cdot \\frac{b^2}{a c} \\cdot \\frac{c^2}{a b}} \\\\\n& =13\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume4/figures/fig-c2p21.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例15 确定所有的函数 $f: \\mathbf{R} \\rightarrow \\mathbf{R}$, 其中 $\\mathbf{R}$ 的实数集, 使得对任意 $x, y \\in\\mathbf{R}$, 恒有\n$$\nf(x-f(y))=f(f(y))+x f(y)+f(x)-1 .  \\quad\\quad (1)\n$$",
+    "solution": "解:记 $I$ 为函数 $f$ 的象集.\n设 $f(0)=c$.\n在(1)中令 $x=y=0$, 有\n$$\nf(-c)=f(c)+c-1\n$$\n所以 $c \\neq 0$.\n在(1)中令 $x=f(y)$, 有\n$$\nf(0)=f(x)+x^2+f(x)-1,\n$$\n故\n$$\nf(x)=\\frac{c+1}{2}-\\frac{x^2}{2}, x \\in \\mathbf{R} . \\quad\\quad (2)\n$$\n在(1)中令 $y=0$, 又有\n$$\nf(x-c)=f(c)+c x+f(x)-1 .\n$$\n所以\n$$\nf(x-c)-f(x)=f(c)-1+c x, x \\in \\mathbf{R} .\n$$\n注意到 $c \\neq 0$, 因此当 $x$ 取遍实数集的时候, $c x+f(c)-1$ 也取遍整个实数集.\n即\n$$\n\\{f(c)-1+c x \\mid x \\in \\mathbf{R}\\}=\\mathbf{R} .\n$$\n于是\n$$\n\\{f(x-c)-f(x) \\mid x \\in \\mathbf{R}\\}=\\mathbf{R} \\text {. }\n$$\n因此, 对任何实数 $x$, 存在 $y_1=f\\left(x^{\\prime}-c\\right)$ 及 $y_2=f\\left(x^{\\prime}\\right)$, 使得\n$$\nx=y_1-y_2 .\n$$\n再利用(2), 有\n$$\n\\begin{aligned}\nf(x) & =f\\left(y_1-y_2\\right) \\\\\n& =f\\left(y_2\\right)+y_1 y_2+f\\left(y_1\\right)-1 \\\\\n& =\\frac{c+1}{2}-\\frac{y_2^2}{2}+y_1 y_2+\\frac{c+1}{2}-\\frac{y_1^2}{2}-1 \\\\\n& =c-\\frac{1}{2}\\left(y_1-y_2\\right)^2 \\\\\n& =c-\\frac{1}{2} x^2 . \\quad\\quad  (3)\n\\end{aligned}\n$$\n比较(2)、(3)两式即得 $c=1$.\n于是, 所求的函数为 $f(x)=1-\\frac{x^2}{2}, x \\in \\mathbf{R}$, 不难验证其满足所有条件.\n说明解法中蕴含的“算两次”的思想值得我们重视.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 1650 个学生排成 22 行、75 列.\n已知其中任意两列处于同一行的两个人中, 性别相同的学生都不超过 11 对.\n证明: 男生的个数不超过 928.",
+    "solution": "设第 $i$ 行的男生数为 $a_i$, 则女生数为 $75-a_i$. 依题意, 可知, $\\sum_{i=1}^{22}\\left(\\mathrm{C}_{a_i}^2+\\right. \\left.\\mathrm{C}_{75-a_i}^2\\right) \\leqslant 11 \\times \\mathrm{C}_{75}^2$. 这是因为任意给定的两列处于同一行的两个人中, 性别相同的学生不超过 11 对, 故所有性别相同的两人对的个数不大于 $11 \\times \\mathrm{C}_{75}^2$. 于是, 我们有 $\\sum_{i=1}^{22}\\left(a_i^2-75 a_i\\right) \\leqslant-30525$, 即 $\\sum_{i=1}^{22}\\left(2 a_i-75\\right)^2 \\leqslant 1650$. 利用柯西不等式, 可知 $\\left[\\sum_{i=1}^{22}\\left(2 a_i-75\\right)\\right]^2 \\leqslant 22 \\sum_{i=1}^{22}\\left(2 a_i-75\\right)^2 \\leqslant 36300$, 因此, $\\sum_{i=1}^{22}\\left(2 a_i-75\\right)<$ 191 , 从而 $\\sum_{i=1}^{22} a_i<\\frac{191+1650}{2}<921$. 所以,男生的个数不超过 928 .",
+    "remark": "",
+    "figures": []
+}

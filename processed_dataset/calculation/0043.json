@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题10: 非空集合 $S$ 满足:\n(1) $S \\subseteq\\{1,2, \\cdots, 2 n+1\\}, n \\in \\mathbf{N}^*$;\n(2) 若 $a \\in S$, 则有 $2 n+2-a \\in S$.\n那么, 同时满足 (1)、(2) 的非空集合 $S$ 的个数是",
+    "solution": "解: $2^{n+1}-1$. 把自然数 $1,2, \\cdots, 2 n+1$ 搭配成 $n+1$ 个数组 $\\{1,2 n+1\\}, \\{2,2 n\\}, \\cdots,\\{n, n+2\\},\\{n+1\\} . S$ 的元素从以上 $n+1$ 组选取, 有 $\\mathrm{C}_{n+1}^1+ \\mathrm{C}_{n+1}^2+\\cdots+\\mathrm{C}_{n+1}^{n+1}=2^{n+1}-1$ 种取法.",
+    "remark": "",
+    "figures": []
+}

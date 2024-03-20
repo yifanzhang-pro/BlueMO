@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题15 在 $\\triangle A B C$ 中, 已知 $2 \\lg \\left(a^2+b^2-c^2\\right)=\\lg 2+2 \\lg a+2 \\lg b$, 则角 $C=$",
+    "solution": "$45^{\\circ}$. 由条件得 $\\left(a^2+b^2-c^2\\right)^2=2 a^2 b^2$, 所以 $a^2+b^2-c^2=\\sqrt{2} a b$, $\\cos C=\\frac{\\sqrt{2}}{2}$, 故 $C=45^{\\circ}$.",
+    "remark": "",
+    "figures": []
+}

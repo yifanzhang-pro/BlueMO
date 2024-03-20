@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 已知 $a, b, c \\in \\mathbf{R}^{+}$, 且 $a b c \\leqslant 1$, 求证:\n$$\n\\frac{a}{c}+\\frac{b}{a}+\\frac{c}{b} \\geqslant Q+a+b+c,\n$$\n其中 $Q=|(a-1)(b-1)(c-1)|$.",
+    "solution": "(1) 当 $a \\leqslant 1, b \\leqslant 1, c \\leqslant 1$ 时, 我们来证左式 $\\geqslant 3 \\geqslant a+b+c+\\theta$. 这等价于 $a b+b c+c a \\leqslant 2+a b c$.\n利用 $(1-a)(1-b) \\geqslant 0$, 得 $2-a-b \\geqslant 1-a b \\geqslant c(1-a b)$, 故\n$$\n2+a b c \\geqslant a+b+c \\geqslant a b+b c+c a .\n$$\n(2)当 $a \\geqslant 1, b \\leqslant 1, c \\leqslant 1$ 时, 由 $\\theta \\geqslant 0$, 有\n$$\na+b+c \\geqslant a b+b c+c a+1-a b c .\n$$\n而左式 $+a c+a b+b c \\geqslant 2(a+b+c)$, 则\n$$\n\\text { 左式 } \\geqslant 2 \\sum a-\\sum a c+a b c-1=a+b+c+\\theta \\text {. }\n$$\n(3)当 $a \\geqslant 1, b \\geqslant 1, c \\leqslant 1$ 时,易证 $a+b+c \\geqslant a+1+b c \\geqslant 2+a b c$.\n又由 $\\theta \\geqslant 0$, 得 $a b+b c+c a \\geqslant a+b+c+a b c-1$.\n$$\n\\begin{aligned}\n& \\sum a^2 b+\\sum b \\geqslant 2 \\sum a b \\geqslant \\sum a b+\\sum a+a b c-1, \\\\\n& \\sum a^2 b \\geqslant \\sum a b+a b c-1 \\geqslant a b c\\left(\\sum a b+1-a b c\\right),\n\\end{aligned}\n$$\n故因此\n$$\n\\text { 左端 } \\geqslant \\sum a b+1-a b c=a+b+c+\\theta \\text {. }\n$$\n对 $a \\geqslant 1, c \\geqslant 1, b \\leqslant 1$ 的情况也可类似证明.\n综上所述, 原不等式成立.",
+    "remark": "",
+    "figures": []
+}

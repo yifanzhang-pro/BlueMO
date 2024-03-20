@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 证明: 在任何 19 个人中, 总有 3 个人互相认识或者 6 个人互相不认识.",
+    "solution": "由定理三, $r(3,6) \\leqslant r(3,5)+r(2,6)-1=14+6-1=19$.",
+    "remark": "",
+    "figures": []
+}

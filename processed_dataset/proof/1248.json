@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题20. 设 $s, t, u, v \\in\\left(0, \\frac{\\pi}{2}\\right)$, 满足 $s+t+u+v=\\pi$, 证明: $\\frac{\\sqrt{2} \\sin s-1}{\\cos s}+$",
+    "solution": "令 $a=\\tan s, b=\\tan t, c=\\tan u, d=\\tan v$, 则 $a, b, c, d \\in \\mathbf{R}^{+}$, 由 $s+t+u+v=\\pi$, 得 $\\tan (s+t)+\\tan (u+v)=0$. 即 $\\frac{a+b}{1-a b}+\\frac{c+d}{1-c d}=$ 0 . 两边乘以 $(1-a b)(1-c d)$, 得 $a+b+c+d=a b c+b c d+c d a+d a b$. 推出 $(a+b)(a+c)(a+d)=\\left(a^2+1\\right)(a+b+c+d)$, 即 $\\frac{a^2+1}{a+b}= \\frac{(a+c)(a+d)}{a+b+c+d}$. 类似, 得到 $\\frac{a^2+1}{a+b}+\\frac{b^2+1}{b+c}+\\frac{c^2+1}{c+d}+\\frac{d^2+1}{d+a}=a+b+c+ d$. 由柯西不等式, 得 $2(a+b+c+d)^2=2(a+b+c+$ d) $\\left(\\frac{a^2+1}{a+b}+\\frac{b^2+1}{b+c}+\\frac{c^2+1}{c+d}+\\frac{d^2+1}{d+a}\\right) \\geqslant\\left(\\sqrt{a^2+1}+\\sqrt{b^2+1}+\\sqrt{c^2+1}+\\right. \\left.\\sqrt{d^2+1}\\right)^2$, 即 $\\sqrt{a^2+1}+\\sqrt{b^2+1}+\\sqrt{c^2+1}+\\sqrt{d^2+1} \\leqslant \\sqrt{2}(a+b+c+ d)$, 等价于 $\\frac{1}{\\cos s}+\\frac{1}{\\cos t}+\\frac{1}{\\cos u}+\\frac{1}{\\cos v} \\leqslant \\sqrt{2}\\left(\\frac{\\sin s}{\\cos s}+\\frac{\\sin t}{\\cos t}+\\frac{\\sin u}{\\cos u}+\\frac{\\sin v}{\\cos v}\\right)$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $n>1$, 证明: $\\underbrace{11 \\cdots 1}_{n \\text { 个1 } 1}$ 不是完全平方数.",
+    "solution": "证明:反证法,设有某个 $n>1$ 及整数 $x$,使得\n$$\n\\underbrace{11 \\cdots 1}_{n \\text { 个1 }}=x^2 . \\label{eq1}\n$$\n由式\\ref{eq1}可知 $x$ 是奇数 (实际上是将式\\ref{eq1}模 2 , 注意 $x^2 \\equiv x(\\bmod 2)$ ). 进一步, 因 $2 \\nmid x$, 故 $x^2 \\equiv 1(\\bmod 4)$. 但\n$$\n\\underbrace{11 \\cdots 1}_{n \\uparrow 1}-1=\\underbrace{11 \\cdots 10}_{n-1 \\uparrow 1}\n$$\n只能被 2 整除, 而不被 4 整除, 即式\\ref{eq1}的左边非 $(\\bmod 4)$,矛盾!\n用同余处理问题,关键在于选择模.\n但究竟怎样选择, 却并无简单的规则可循, 得视具体问题而定.\n在例 4 中, 我们先将式\\ref{eq1}模 2 , 虽不能解决问题, 但基于此得出的信息进一步模 4 , 则导出了矛盾.",
+    "remark": "",
+    "figures": []
+}

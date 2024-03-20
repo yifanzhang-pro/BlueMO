@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例2. 如图(<FilePath:./images/volume7/figures/fig-c2i7.png>), $\\triangle A B C$ 中, $D$ 为线段 $B C$ 上一点, 满足 $A D \\perp B C$, 取边 $A B$ 上点 $E$, 边 $A C$ 上点 $F$, 连结 $D E 、 D F$, 满足 $\\angle E D A=\\angle F D A$, 求证: $A D 、 B F 、 C E$ 三线共点.",
+    "solution": "法二: 设 $\\angle E D A=\\angle F D A=\\alpha$, 则 $\\triangle A E D$ 中, 由正弦定理 $\\frac{\\sin \\alpha}{A E}= \\frac{\\sin \\angle A E D}{A D}$.\n同理 $\\triangle B E D$ 中, $\\frac{\\sin \\left(90^{\\circ}-\\alpha\\right)}{B E}=\\frac{\\sin \\angle B E D}{B D}$, 由于 $\\sin \\angle A E D= \\sin \\angle B E D$,\n所以\n$$\n\\tan \\alpha=\\frac{B D \\cdot A E}{B E \\cdot A D}, \\label{eq1}\n$$\n同理 $\\triangle A D F, \\triangle D F C$ 中,\n$$\n\\tan \\alpha=\\frac{C D \\cdot A F}{C F \\cdot A D} . \\label{eq2}\n$$\n由式\\ref{eq1}, \\ref{eq2}, $1=\\frac{A E}{E B} \\cdot \\frac{B D}{D C} \\cdot \\frac{C F}{F A} \\Leftrightarrow A D 、 B F 、 C E$ 三线共点.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2i7.png"
+    ]
+}

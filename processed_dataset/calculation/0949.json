@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例5. 试求一切有序正整数对 $(n, k)$, 使得 $x^n+x+1$ 被 $x^k+x+1$ 整除.",
+    "solution": "分析:与解显然, $n \\geqslant k$.\n当 $n>k$ 时, 设 $\\omega$ 是 $x^k+x+1=0$ 的一个根, 则 $\\omega \\neq 0, \\omega^n+\\omega+1=0$, 于是\n$$\n\\omega^n-\\omega^k=\\omega^k\\left(\\omega^{n-k}-1\\right)=0 .\n$$\n从而有\n$$\n\\omega^{n-k}=1 \\text {. }\n$$\n由 $|\\omega|^{n-k}=\\left|\\omega^{n-k}\\right|=1$, 知 $|\\omega|=1$.\n由 $1=|\\omega|^k=\\left|\\omega^k\\right|=|\\omega+1|$, 可知 $\\omega$ 的实部为 $-\\frac{1}{2}$, 则 $k \\geqslant 2$.\n$\\omega_1=\\frac{-1+\\sqrt{3} \\mathrm{i}}{2}$ 或 $\\omega_2=\\frac{-1-\\sqrt{3} \\mathrm{i}}{2}$ 是 $x^k+x+1=0$ 的所有根, 从而有\n$$\nx^k+x+1=\\left(x-\\omega_1\\right)^{k_1}\\left(x-\\omega_2\\right)^{k-k_1}, k_1 \\in \\mathbf{Z}, 0 \\leqslant k_1 \\leqslant k .\n$$\n若 $k>2$, 考虑上面等式两边含 $x^{k-1}$ 的项的系数, 便有 $k_1 \\omega_1+\\left(k-k_1\\right) \\omega_2=$ 0 ,考虑实部即有 $k=0$, 产生矛盾.\n若 $k=2$, 令 $n \\equiv l(\\bmod 3), 0 \\leqslant l<3$. 由 $\\omega^n+\\omega+1=\\omega^l+\\omega+1=0$, 得 $l=2, n \\equiv 2(\\bmod 3)$.\n故知 $(n, k)=(k, k)$ 或 $(3 m+2,2), m$ 是正整数.",
+    "remark": "",
+    "figures": []
+}

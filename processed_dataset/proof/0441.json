@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例5. 如果一个正方形被划分为 $n$ 个凸多边形, 当 $n$ 为定值时, 求这些凸多边形边数的最大值.",
+    "solution": "证明:由欧拉公式知一个凸多边形被划分为 $n$ 个多边形, 则 $v-e+n=$ 1(因为 $f=n+1$ ).\n由于一个正方形被划分为 $n$ 个凸多边形,因此这些多边形的每个顶点,如果它不是正方形的顶点, 必是至少 3 个凸多边形的顶点.\n用 $A 、 B 、 C 、 D$ 分别表示正方形的顶点,用 $v$ 表示除 $A 、 B 、 C 、 D$ 外的任一顶点,则\n$$\nd(v) \\leqslant 3(d(v)-2) .\n$$\n由上式对除 $A 、 B 、 C 、 D$ 外的所有点求和, 得\n$$\n\\begin{aligned}\n& 2 e-(d(A)+d(B)+d(C)+d(D)) \\\\\n\\leqslant & 3(2 e-(d(A)+d(B)+d(C)+d(D))-6(v-4)),\n\\end{aligned}\n$$\n于是\n$$\n4 e \\geqslant 2(d(A)+d(B)+d(C)+d(D))+6(v-4),\n$$\n由于 $d(A) \\geqslant 2, d(B) \\geqslant 2, d(C) \\geqslant 2, d(D) \\geqslant 2$, 所以\n$$\n2 e \\geqslant 8+3(v-4) \\text {. }\n$$\n由\n$$\nv-e+n=1,\n$$\n得\n$$\n3(e+1)=3 v+3 n \\leqslant 2 e+4+3 n,\n$$\n即\n$$\ne \\leqslant 3 n+1 \\text {. }\n$$\n过正方形的一边相继作 $n-1$ 条邻边的平行线,将这个正方形分为 $n$ 个矩形, 总边数为 $4+3(n-1)=3 n+1$.\n综上,所求边的最大值为 $3 n+1$.",
+    "remark": "",
+    "figures": []
+}

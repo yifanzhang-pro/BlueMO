@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题18. 证明: 对任意边长为 $a 、 b 、 c$, 且面积为 $S$ 的三角形, 有\n$$\n\\frac{a b+b c+c a}{4 S} \\geqslant \\sqrt{3} \\text {. }\n$$",
+    "solution": "如图(<FilePath:./images/volume4/figures/fig-c2p18.png>)所示, 在 $\\triangle A B C$ 中, 设 $A B=c, A C=b$, $B C=a$, 且 $\\angle B A C=\\alpha$, 考虑 $\\triangle A B C$ 的外接圆周上边 $B C$ 的对弧 $\\overparen{B A C}$, 因为弧的中点 $D$ 是弧上离弦 $B C$ 最远的点, 所以对 $\\triangle A B C$ 与 $\\triangle D B C$ 的高 $A H=h$ 与 $D K$, 有 $h \\leqslant D K=B K \\cdot \\cot \\frac{\\angle B D C}{2}=\\frac{a}{2} \\cot \\frac{\\alpha}{2}$. 由平均值不等式, 得\n$\\frac{a b+a c+b c}{4 S} \\geqslant \\frac{3}{4 S} \\sqrt[3]{a^2 b^2 c^2}=\\frac{3}{4} \\sqrt[3]{\\frac{a^2 b^2 c^2}{\\left(\\frac{1}{2} b c \\sin \\alpha\\right)^2 \\cdot \\frac{1}{2} a h}}=\\frac{3}{2} \\sqrt[3]{\\frac{a}{h \\sin ^2 \\alpha}} \\geqslant \\frac{3}{2} \\sqrt[3]{\\frac{2}{\\sin ^2 \\alpha \\cot \\frac{\\alpha}{2}}}$. 令 $\\cos \\alpha=x$, 再由平均值不等式, 得 $\\frac{1}{2} \\sin ^2 \\alpha \\cot \\frac{\\alpha}{2}=\\sin \\alpha \\cos ^2 \\frac{\\alpha}{2}=\\frac{1}{2} \\sin \\alpha(1+\\cos \\alpha)=\\frac{1}{2} \\sqrt{1-x^2}(1+x)=\\frac{1}{2} \\sqrt{(1+x)^3(1-x)}=\\frac{1}{2} \\sqrt{27\\left(\\frac{1+x}{3}\\right)^3(1-x)} \\leqslant \\frac{1}{2} \\sqrt{27}\\left[\\frac{1}{4}\\left(3 \\cdot \\frac{1+x}{3}+(1-x)\\right)\\right]^2 =\\frac{1}{2} \\sqrt{27}\\left(\\frac{2}{4}\\right)^2=\\left(\\frac{\\sqrt{3}}{2}\\right)^3$. 从而 $\\frac{a b+b c+c a}{4 S} \\geqslant \\frac{3}{2} \\cdot-\\frac{2}{\\sqrt{3}}=\\sqrt{3}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume4/figures/fig-c2p18.png"
+    ]
+}

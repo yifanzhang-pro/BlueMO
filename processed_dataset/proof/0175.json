@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $m 、 n$ 是互素的正整数, 证明: $m ! n ! \\mid(m+n-1) !$.",
+    "solution": "证法二首先, 与例 6 类似地不难证明, 对任意正整数 $a 、 b$, 数 $\\frac{(a+b) !}{a ! b !}$ 是一个整数.\n(这也可以利用 $\\frac{(a+b) !}{a ! b !}=\\mathrm{C}_{a+b}^a$, 而由后者的组合意义知, 它必定为一个整数,下面的注中给出了一个更为直接的证明)\n由上述结果可知, $\\frac{(m+n-1) !}{m !(n-1) !} \\frac{(m+n-1) !}{(m-1) ! n !}$ 均是整数.\n因此, 若设 $A= \\frac{(m+n-1) !}{m ! n !}$, 则 $m A$ 与 $n A$ 均是整数, 故 $m n A=m \\cdot n A$ 是 $m$ 的倍数.\n又 $m n A=n \\cdot m A$, 而由 $m \\mid n \\cdot m A$ 及 $(m, n)=1$, 可知 $m \\mid m A$, 而这表明, $A$ 本身是一个整数.\n证毕.",
+    "remark": "注:这儿给出 $\\frac{(a+b) !}{a ! b !}$ 为整数的一个证明:\n我们对 $a+b$ 归纳.\n易知 $a+b=2$ 时结论成立.\n设对所有满足 $a+b=n$ 的正整数 $a 、 b$ 结论均.\n成立.\n现在设 $a 、 b$ 满足 $a+b=n+1$. 若 $a 、 b$ 中有 1 , 则结论显然成立, 故设 $a>1, b>1$. 由 $(a-1)+b=n, a+(b-1)=n$, 及归纳假设可见\n$$\n(a-1) ! b !|(a+b-1) !, a !(b-1) !|(a+b-1) !, \\label{eq3}\n$$\n我们又有\n$$\n(a+b) !=(a+b-1) ! \\cdot(a+b)=(a+b-1) ! \\cdot a+(a+b-1) ! \\cdot b . \\label{eq4}\n$$\n由式\\ref{eq3}易知 $a ! b !=a \\cdot(a-1) ! b !$ 整除 $(a+b-1) ! \\cdot a$. 同样 $a ! b$ ! 整除 $(a+b- 1) ! \\cdot b$, 故 $a ! b !$ 整除式\\ref{eq4}的右端, 从而 $a ! b ! \\mid(a+b)$ !, 即 $a+b=n+1$ 时结论也成立, 这就完成了归纳证明.",
+    "figures": []
+}

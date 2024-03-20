@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设多项式 $P(x)=x^n+a_1 x^{n-1}+\\cdots+a_{n-1} x+a_n$ 有复根 $x_1 、 x_2 、 \\cdots 、 x_n$, $\\alpha=\\frac{1}{n} \\sum_{k=1}^n x_k, \\beta^2=\\frac{1}{n} \\sum_{k=1}^n\\left|x_k\\right|^2$, 且 $\\beta^2<1+|\\alpha|^2$. 若复数 $x_0$ 满足 $\\left|\\alpha-x_0\\right|^2<1-\\beta^2+|\\alpha|^2$, 求证: $\\left|P\\left(x_0\\right)\\right|<1$.",
+    "solution": "$\\left|P\\left(x_0\\right)\\right|^2=P\\left(x_0\\right) \\cdot \\overline{P\\left(x_0\\right)}=\\prod_{j=1}^n\\left(x_0-x_j\\right)\\left(\\overline{x_0}-\\overline{x_j}\\right)$\n$$\n=\\prod_{j=1}^n\\left(\\left|x_0\\right|^2-x_0 \\overline{x_j}-\\overline{x_0} x_j+\\left|x_j\\right|^2\\right) . \\label{eq1}\n$$\n由平均不等式有 $\\left[\\prod_{j=1}^n\\left(\\left|x_0\\right|^2-x_0 \\overline{x_j}-\\overline{x_0} x_j+\\left|x_j\\right|^2\\right)\\right]^{\\frac{1}{n}} \\leqslant \\frac{1}{n} \\sum_{j=1}^n\\left(\\left|x_0\\right|^2-\\right. \\left.x_0 \\overline{x_j}-\\overline{x_0} x_j+\\left|x_j\\right|^2\\right)=\\frac{1}{n}\\left[n\\left|x_0\\right|^2-x_0 \\sum_{j=1}^n \\overline{x_j}-\\overline{x_0} \\sum_{j=1}^n x_j+\\sum_{j=1}^n\\left|x_j\\right|^2\\right]= \\left|x_0-\\alpha\\right|^2+\\beta^2-|\\alpha|^2<1$, 故代入 式\\ref{eq1} 即知 $\\left|P\\left(x_0\\right)\\right|<1$, 证毕.",
+    "remark": "",
+    "figures": []
+}

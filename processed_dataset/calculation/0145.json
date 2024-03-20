@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例9. 方程 $x+y+z=2010$ 满足 $x \\leqslant y \\leqslant z$ 的正整数解 $(x, y, z)$ 的个数是?",
+    "solution": "解:首先易知 $x+y+z=2010$ 的正整数解的个数为 $\\mathrm{C}_{2009}^2=2009 \\times 1004$; 其次,把 $x+y+z=2010$ 满足 $x \\leqslant y \\leqslant z$ 的正整数解分为三类:\n(1) $x=y=z$ 的正整数解只有 1 个: $(670,670,670)$;\n(2) $x, y, z$ 中恰有 2 个相等的正整数解有下列 1003 个: $(x, x, 2010- 2 x) 、(x=1,2, \\cdots, 669)$ 以及 $(2010-2 y, y, y)(y=671,672, \\cdots, 1004)$;\n(3) 设 $x, y, z$ 两两不等的正整数解有 $k$ 个,于是\n$$\n1+1003 \\times \\mathrm{C}_3^1+k \\times 3 !=\\mathrm{C}_{2009}^2=2009 \\times 1004,\n$$\n所以\n$$\n\\begin{aligned}\nk & =\\frac{1}{6}(2009 \\times 1004-3 \\times 1003-1) \\\\\n& =\\frac{1}{6}(2009 \\times 1005-2009-3 \\times 1005+3 \\times 2-1) \\\\\n& =\\frac{1}{6}(2006 \\times 1005-2004)=1003 \\times 335-334\n\\end{aligned}\n$$\n$$\n=335671 \\text {. }\n$$\n故满足 $x \\leqslant y \\leqslant z$ 的正整数解 $(x, y, z)$ 的个数为\n$$\n1+1003+335671=336675 .\n$$",
+    "remark": "",
+    "figures": []
+}

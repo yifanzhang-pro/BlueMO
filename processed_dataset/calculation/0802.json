@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题9. 求满足下列等式的实数 $x 、 y 、 z:\\left(1+x^2\\right)\\left(1+y^2\\right)\\left(1+z^2\\right)=4 x y\\left(1-z^2\\right)$.",
+    "solution": "原等式变形为 $\\frac{2 \\dot{x}}{1+x^2} \\cdot \\frac{2 y}{1+y^2} \\cdot \\frac{1-z^2}{1+z^2}=1$, 设 $x=\\tan \\alpha, y=\\tan \\beta$, $z=\\tan \\gamma$, 其中 $\\alpha, \\beta, \\gamma \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$, 则 $\\sin 2 \\alpha \\cdot \\sin 2 \\beta \\cdot \\cos 2 \\gamma=1$. 但 $|\\sin 2 \\alpha| \\leqslant 1,|\\sin 2 \\beta| \\leqslant 1,|\\cos 2 \\gamma| \\leqslant 1$, 又 $2 \\alpha, 2 \\beta, 2 \\gamma \\in(-\\pi, \\pi)$, 所以 $\\sin 2 \\alpha=\\sin 2 \\beta=\\cos 2 \\gamma=1$ 或 $\\sin 2 \\alpha=\\sin 2 \\beta=-1, \\cos 2 \\gamma=1$, 即 $\\alpha=\\beta= \\frac{\\pi}{4}, \\gamma=0$ 或 $\\alpha=\\beta=-\\frac{\\pi}{4}, \\gamma=0$. 从而 $x=y=1$ 及 $z=0$ 或 $x=y=-1$ 及 $z=0$.",
+    "remark": "",
+    "figures": []
+}

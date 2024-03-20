@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $\\alpha=\\frac{r}{s}$, 这里 $r 、 s$ 是正整数,且 $r>s,(r, s)=1$. 令集合\n$$\nN_\\alpha=\\{[n \\alpha] \\mid n=1,2, \\cdots\\} .\n$$\n求证：对任何 $m \\in N_\\alpha, r \\nmid m+1$.",
+    "solution": "分析:$n \\alpha=n \\cdot \\frac{r}{s}$. 当 $s=1$ 时, 结论显然成立.\n当 $s>1$ 时, 若 $1 \\leqslant n \\leqslant s-1$, 由 $\\frac{r}{s}>1$ 知, $1 \\leqslant n \\alpha \\leqslant r-\\frac{r}{s}<r-1$, 即 $1 \\leqslant[n \\alpha]<r-1$, 结论成立; 若 $n \\geqslant s$, 令 $n=q s+k\\left(0 \\leqslant k \\leqslant s-1, q \\in \\mathbf{N}^*\\right)$, 则 $n \\alpha=q r+k \\alpha,[n \\alpha]= q r+\\left[k_\\alpha\\right]$, 又转化为前面情形的讨论.\n证明分两种情形讨论.\n(1) 若 $s=1$, 则 $N_\\alpha=\\{r n \\mid n=1,2, \\cdots\\}$. 因 $r>1$, 结论显然成立.\n(2) 若 $s>1$, 因 $\\frac{r}{s}>1$, 故\n$$\n1 \\leqslant\\left[\\frac{r}{s}\\right]<\\left[\\frac{2 r}{s}\\right]<\\cdots<\\left[\\frac{(s-1) r}{s}\\right]=r+\\left[-\\frac{r}{s}\\right]<r-1 .\n$$\n任取 $m=\\left[n_0 \\alpha\\right] \\in N_\\alpha$, 令 $n_0=q s+k(0 \\leqslant k \\leqslant s-1)$, 则\n$$\n\\begin{aligned}\n& {\\left[n_0 \\alpha\\right]=[q r+k \\alpha]=q r+[k \\alpha],} \\\\\n& m+1=\\left[n_0 \\alpha\\right]+1=q r+[k \\alpha]+1 .\n\\end{aligned}\n$$\n但由不等式<1>, 有 $0 \\leqslant[k \\alpha]<r-1$, 即\n$$\n1 \\leqslant[k \\alpha]+1<r \\text {. }\n$$\n于是, 由(2)式可知 $r \\nmid m+1$.\n综上可知, 命题成立.",
+    "remark": "",
+    "figures": []
+}

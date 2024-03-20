@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例11. 已知 $|u| \\leqslant \\sqrt{2}, v$ 是正实数,求证:\n$$\nS=(u-v)^2+\\left(\\sqrt{2-u^2}-\\frac{9}{v}\\right)^2 \\geqslant 8 .\n$$",
+    "solution": "证明:关键是看出 $S$ 的表达式恰为直角坐标系中点 $A\\left(u, \\sqrt{2-u^2}\\right)$ 与点 $B\\left(u, \\frac{9}{v}\\right)$ 之间距离的平方.\n显然, 点 $A$ 在圆 $x^2+y^2=2$ 上, 点 $B$ 在双曲线 $x y=9$ 上.\n因此, 问题就转化为求圆 $x^2+y^2=2$ 到双曲线 $x y=9$ 之间的最短距离,\n在图形上易见此最短距离即点 $A(1,1)$ 与 $B(3,3)$ 的距离, 长为 $2 \\sqrt{2}$.\n所以 $S$ 的最小值为 $(2 \\sqrt{2})^2=8$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题17 已知当 $x \\in[0,1]$ 时,不等式\n$$\nx^2 \\cos \\theta-x(1-x)+(1-x)^2 \\sin \\theta>0\n$$\n恒成立, 其中 $0 \\leqslant \\theta \\leqslant 2 \\pi$, 求 $\\theta$ 的取值范围.",
+    "solution": "设 $f(x)=x^2 \\cos \\theta-x(1-x)+(1-x)^2 \\sin \\theta=(1+\\sin \\theta+\\cos \\theta) x^2- (1+2 \\sin \\theta) x+\\sin \\theta$. 因为, $f(0)=\\sin \\theta>0, f(1)=\\cos \\theta>0$, 所以 $\\theta \\in\\left(0, \\frac{\\pi}{2}\\right)$, 由于 $f(x)$ 的对称轴 $x=\\frac{1+2 \\sin \\theta}{2(1+\\sin \\theta+\\cos \\theta)}>0$, 且 $\\frac{1+2 \\sin \\theta}{2(1+\\sin \\theta+\\cos \\theta)}= \\frac{1+2 \\sin \\theta}{1+2 \\sin \\theta+1+2 \\cos \\theta}<1$, 所以 $f(x)$ 在 $[0,1]$ 上的最小值就是 $f(x)$ 在 $\\mathbf{R}$ 上的最小值, 它大于 0. 故 $\\frac{4 \\sin \\theta}{(1+\\sin \\theta+\\cos \\theta)-(1+2 \\sin \\theta)^2}->0$. 即 $4 \\sin \\theta \\cos \\theta-1>0, \\sin 2 \\theta>\\frac{1}{2}$. 所以 $\\frac{\\pi}{6}<2 \\theta<\\frac{5 \\pi}{6}, \\frac{\\pi}{12}<\\theta<\\frac{5 \\pi}{12}$. $\\theta$ 的取值范围是 $\\frac{\\pi}{12}<\\theta<\\frac{5 \\pi}{12}$.",
+    "remark": "",
+    "figures": []
+}

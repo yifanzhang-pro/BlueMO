@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题24. 已知函数 $f(x)=\\sin (\\omega x+\\varphi)(\\omega>0,0 \\leqslant \\varphi \\leqslant \\pi)$ 为 $\\mathbf{R}$ 上的偶函数, 其图象关于点 $M\\left(\\frac{3 \\pi}{4}, 0\\right)$ 对称, 且在区间 $\\left[0, \\frac{\\pi}{2}\\right]$ 上是单调函数, 求 $\\varphi$ 和 $\\omega$ 的值.",
+    "solution": "由 $f(x)$ 是偶函数, 得 $f(-x)=f(x)$, 即 $\\sin (-\\omega x+\\varphi)=\\sin (\\omega x+ \\varphi$ ), 所以 $-\\cos \\varphi \\sin \\omega x=\\cos \\varphi \\sin \\omega x$ 对任意 $x \\in \\mathbf{R}$ 都成立, 且 $\\omega>0$, 所以 $\\cos \\varphi=0$. 依题设 $0 \\leqslant \\varphi \\leqslant \\pi$, 所以解得 $\\varphi=\\frac{\\pi}{2}$. 由 $f(x)$ 的图象关于点 $M$ 对称, 得 $f\\left(\\frac{3 \\pi}{4}-x\\right)=f\\left(\\frac{3 \\pi}{4}+x\\right)$, 取 $x=0$, 得 $f\\left(\\frac{3 \\pi}{4}\\right)=\\sin \\left(\\frac{3 \\omega \\pi}{4}+\\frac{\\pi}{2}\\right)= \\cos \\frac{3 \\omega \\pi}{4}$, 所以 $f\\left(\\frac{3 \\pi}{4}\\right)=\\sin \\left(\\frac{3 \\omega \\pi}{4}+\\frac{\\pi}{2}\\right)=\\cos \\frac{3 \\omega \\pi}{4}$. 所以 $\\cos \\frac{3 \\omega \\pi}{4}=0$, 又 $\\omega=0$, 得 $\\frac{3 \\omega \\pi}{4}=\\frac{\\pi}{2}+k \\pi, k=1,2,3, \\cdots$. 所以 $\\omega=\\frac{2}{3}(2 k+1), k=0,1,2, \\cdots$. 当 $k=0$ 时, $\\omega=\\frac{2}{3}, f(x)=\\sin \\left(\\frac{2}{3} x+\\frac{\\pi}{2}\\right)$ 在 $\\left[0, \\frac{\\pi}{2}\\right]$ 上是减函数; 当 $k=1$ 时, $\\omega=2, f(x)=\\sin \\left(2 x+\\frac{\\pi}{2}\\right)$ 在 $\\left[0, \\frac{\\pi}{2}\\right]$ 上是减函数; 当 $k \\geqslant 2$ 时, $\\omega \\geqslant \\frac{10}{3}$, $f(x)=\\sin \\left(\\omega x+\\frac{\\pi}{2}\\right)$ 在 $\\left[0, \\frac{\\pi}{2}\\right]$ 上不是单调函数; 所以,综上得 $\\omega=\\frac{2}{3}$ 或 $\\omega=2$.",
+    "remark": "",
+    "figures": []
+}

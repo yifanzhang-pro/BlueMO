@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 已知等边 $\\triangle A B C$ 的两个顶点坐标是 $A(2,1), B(3,2)$, 求顶点 $C$ 的对应坐标.",
+    "solution": "记 $A, B, C$ 的对应复数分别为 $z_A=2+\\mathrm{i}, z_B=3+2 \\mathrm{i}, z_C$, 则由\n$$\nz_C=z_A+\\left(z_B-z_A\\right)\\left(\\cos 60^{\\circ} \\pm \\operatorname{isin} 60^{\\circ}\\right),\n$$\n得\n$$\nz_C=(2+i)+(1+i)\\left(\\frac{1}{2} \\pm \\frac{\\sqrt{3}}{2} i\\right)=\\frac{5 \\mp \\sqrt{3}}{2}+\\frac{3 \\pm \\sqrt{3}}{2} i,\n$$\n即 $C$ 点坐标是 $C\\left(\\frac{5-\\sqrt{3}}{2}, \\frac{3+\\sqrt{3}}{2}\\right)$ 或 $C\\left(\\frac{5+\\sqrt{3}}{2}, \\frac{3-\\sqrt{3}}{2}\\right)$.",
+    "remark": "",
+    "figures": []
+}

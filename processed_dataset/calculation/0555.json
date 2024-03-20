@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题2 设集合\n$$\n\\begin{aligned}\n& M=\\{x \\mid 1 \\leqslant x \\leqslant 9, x \\in N\\}, \\\\\n& F=\\{(a, b, c, d) \\mid a, b, c, d \\in M\\} .\n\\end{aligned}\n$$\n定义 $F$ 到 $Z$ 的映射\n$$\nf:(a, b, c, d) \\mapsto a b-c d .\n$$\n若 $u 、 v 、 x 、 y$ 都是 $M$ 中的元素, 且满足\n$$\n\\begin{aligned}\n& f:(u, v, x, y) \\mapsto 39, \\\\\n& (u, y, x, v) \\mapsto 66 .\n\\end{aligned}\n$$\n求 $x 、 y 、 u 、 v$.",
+    "solution": "由题意, 得 $\\left\\{\\begin{array}{l}u v-x y=39, \\quad\\quad (1) \\\\ u y-x v=66 .\\quad\\quad (2) \\end{array}\\right.$\n(1) + (2), (2) - (1), 得 $(u-x)(v+ y)=3 \\times 5 \\times 7 \\cdots$, $(y-v)(u+x)=3 \\times 3 \\times 3 \\cdots \\quad (4)$. 因为 $|u-x|<9$, $0<v+y \\leqslant 18,|y-v|<9,0<u+x \\leqslant 18$, 所以, 由(3), (4), 得 $u-x=7$, $v+y=15, y-v=3, u+x=9$. 解得 $u=8, v=6, x=1, y=9$.",
+    "remark": "",
+    "figures": []
+}

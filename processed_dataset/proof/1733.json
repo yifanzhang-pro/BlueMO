@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例3. 如图(<FilePath:./images/volume7/figures/fig-c7i3.png>), 在三角形 $A B C$ 中, $\\angle B A C=40^{\\circ}, \\angle A B C=60^{\\circ}, D$ 和 $E$ 分别是边 $A C$ 和 $A B$ 上点, 使得 $\\angle C B D=40^{\\circ}, \\angle B C E=70^{\\circ}, F$ 是直线 $B D$ 和 $C E$ 的交点.\n证明: 直线 $A F$ 和直线 $B C$ 垂直.",
+    "solution": "证明:设 $B C=1$, 分别在 $\\triangle A B C$ 和 $\\triangle B C F$ 中用正弦定理, 得\n$A B=\\frac{\\sin 80^{\\circ}}{\\sin 40^{\\circ}}, A C=\\frac{\\sin 60^{\\circ}}{\\sin 40^{\\circ}}, B F=\\frac{\\sin 70^{\\circ}}{\\sin 70^{\\circ}}, C F=\\frac{\\sin 40^{\\circ}}{\\sin 70^{\\circ}}$,\n而\n$$\n\\begin{aligned}\n& A F \\perp B C \\Leftrightarrow A B^2-A C^2=B F^2-C F^2 \\\\\n\\Leftrightarrow & \\frac{\\sin ^2 80^{\\circ}-\\sin ^2 60^{\\circ}}{\\sin ^2 40^{\\circ}}=\\frac{\\sin ^2 70^{\\circ}-\\sin ^2 40^{\\circ}}{\\sin ^2 70^{\\circ}} \\\\\n\\Leftrightarrow & \\frac{\\frac{1}{2}\\left(\\cos 120^{\\circ}-\\cos 160^{\\circ}\\right)}{\\sin ^2 40^{\\circ}}=\\frac{\\frac{1}{2}\\left(\\cos 80^{\\circ}-\\cos 140^{\\circ}\\right)}{\\sin ^2 70^{\\circ}} \\\\\n\\Leftrightarrow & \\frac{\\sin 140^{\\circ} \\sin 20^{\\circ}}{\\sin ^2 40^{\\circ}}=\\frac{\\sin 110^{\\circ} \\sin 30^{\\circ}}{\\sin ^2 70^{\\circ}} \\\\\n\\Leftrightarrow & \\sin 40^{\\circ} \\sin 30^{\\circ}=\\sin 20^{\\circ} \\sin 70^{\\circ} \\\\\n\\Leftrightarrow & \\sin 40^{\\circ}=2 \\sin 20^{\\circ} \\cos 20^{\\circ} .\n\\end{aligned}\n$$\n这是显然的,故命题得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c7i3.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例3. 证明: 在任意 $n(\\geqslant 4)$ 个人中都存在 2 人 $A$ 和 $B$ 使得其余 $n-2$ 人中至少有 $\\left[\\frac{n}{2}\\right]-1$ 人满足: 他们中每个人或者同 $A, B$ 都互相认识或者同 $A$, $B$ 都互相不认识.",
+    "solution": "证法二用平面内 $n$ 个点 $A_1, A_2, \\cdots, A_n$ 表示 $n$ 个人(其中任意三点不共线). 若两人互相认识 (互相不认识), 则对应两点的连线染红 (蓝)色.\n如果某点 $C$ 与另两点 $A, B$ 的连线同色, 那么称 $\\angle A C B$ 为从 $C$ 点引出的同色角, 也叫做点 $C$ 对 $(A, B)$ 所张的同色角,简称同色角.\n因此原题结论等价于证明: 存在两点 $A, B$, 使其余 $n-2$ 点中至少有 $\\left[\\frac{n}{2}\\right]-1$ 个点对 $(A, B)$ 张有同色角.\n如果结论不成立, 那么对任意两点 $A, B$, 对 $(A, B)$ 张有同色角的点至多有 $\\left[\\frac{n}{2}\\right]-2$ 个.\n又 $(A, B)$ 有 $C_n^2$ 种不同取法, 故图中同色角的个数 $S$ 满足\n$$\nS \\leqslant\\left(\\left[\\frac{n}{2}\\right]-2\\right) \\mathrm{C}_n^2 \\leqslant\\left(\\frac{n}{2}-2\\right) \\cdot \\frac{n(n-1)}{2}=\\frac{n(n-1)(n-4)}{4} . \\label{eq3}\n$$\n另一方面, 设从 $A_i$ 出发有 $x_i$ 条红线, $n-1-x_i$ 条蓝线, 那么从 $A_i$ 引出的同色角的个数为\n$$\n\\begin{aligned}\n\\mathrm{C}_{x_i}^2+\\mathrm{C}_{n-1-x_i}^2 & =\\frac{1}{2} x_i\\left(x_i-1\\right)+\\frac{1}{2}\\left(n-1-x_i\\right)\\left(n-2-x_i\\right) \\\\\n& =x_i^2-(n-1) x_i+\\frac{(n-1)(n-2)}{2}\n\\end{aligned}\n$$\n$$\n=\\left(x_i-\\frac{n-1}{2}\\right)^2+\\frac{(n-1)(n-3)}{4} \\geqslant \\frac{(n-1)(n-3)}{4} .\n$$\n所以图中同色角的个数 $S$ 满足\n$$\nS=\\sum_{i=1}^n\\left(\\mathrm{C}_{x_i}^2+\\mathrm{C}_{n-1-x_i}^2\\right) \\geqslant \\frac{n(n-1)(n-3)}{4}, \\label{eq4}\n$$\n式\\ref{eq4}与\\ref{eq3}矛盾,故题中结论成立.",
+    "remark": "",
+    "figures": []
+}

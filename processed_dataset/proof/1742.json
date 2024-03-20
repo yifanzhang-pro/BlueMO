@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例12. 如图(<FilePath:./images/volume7/figures/fig-c7i12.png>), 凸四边形 $A B F D$ 中, $A B+ B F=A D+D F$. 延长 $A B$ 与 $D F$ 相交于点 $C$, 延长 $A D$ 与 $B F$ 相交于 $E$. 求证: $A C+C F=A E+E F$.",
+    "solution": "证明:连结 $A F$,并分别记角如图(<FilePath:./images/volume7/figures/fig-c7i12.png>) 所示.\n首先, 在 $\\triangle A B F$ 中, 由正弦定理有:\n$$\n\\frac{A B}{\\sin \\gamma}=\\frac{B F}{\\sin \\alpha}=\\frac{A F}{\\sin (\\gamma+\\alpha)},\n$$\n所以 $A B+B F=A F \\cdot \\frac{\\sin \\gamma+\\sin \\alpha}{\\sin (\\gamma+\\alpha)}$.\n同理, $A D+D F=A F \\cdot \\frac{\\sin \\theta+\\sin \\beta}{\\sin (\\theta+\\beta)}$.\n所以 $A B+B F=A D+D F \\Leftrightarrow \\frac{\\sin \\gamma+\\sin \\alpha}{\\sin (\\gamma+\\alpha)}=\\frac{\\sin \\theta+\\sin \\beta}{\\sin (\\theta+\\beta)}\\Leftrightarrow \\cos \\frac{\\gamma-\\alpha}{2} \\cos \\frac{\\theta+\\beta}{2}=\\cos \\frac{\\theta-\\beta}{2} \\cos \\frac{\\gamma+\\alpha}{2}$\n$$\n\\begin{aligned}\n& \\Leftrightarrow \\cos \\frac{\\theta+\\beta+\\gamma-\\alpha}{2}+\\cos \\frac{\\theta+\\beta-\\gamma+\\alpha}{2} \\\\\n& =\\cos \\frac{\\gamma+\\alpha+\\theta-\\beta}{2}+\\cos \\frac{\\gamma+\\alpha-\\theta+\\beta}{2} .\n\\end{aligned}\n$$\n另一方面: $A C+C F=A E+E F \\Leftrightarrow \\frac{\\sin \\theta+\\sin \\alpha}{\\sin (\\theta-\\alpha)}=\\frac{\\sin \\gamma+\\sin \\beta}{\\sin (\\gamma-\\beta)}$,\n$$\n\\Leftrightarrow \\sin \\frac{\\theta+\\alpha}{2} \\sin \\frac{\\gamma-\\beta}{2}=\\sin \\frac{\\gamma+\\beta}{2} \\sin \\frac{\\theta-\\alpha}{2},\n$$\n即 $-\\frac{1}{2}\\left[\\cos \\frac{\\theta+\\alpha+\\gamma-\\beta}{2}-\\cos \\frac{\\theta+\\alpha-\\gamma+\\beta}{2}\\right]=-\\frac{1}{2}\\left[\\cos \\frac{\\gamma+\\beta+\\theta-\\alpha}{2}-\\right.$\n$$\n\\begin{aligned}\n& \\left.\\cos \\frac{\\gamma+\\beta-\\theta+\\alpha}{2}\\right] \\Leftrightarrow \\cos \\frac{\\theta+\\alpha+\\gamma-\\beta}{2}-\\cos \\frac{\\theta+\\alpha-\\gamma+\\beta}{2}=\\cos \\frac{\\gamma+\\beta+\\theta-\\alpha}{2}- \\\\\n& \\cos \\frac{\\gamma+\\beta-\\theta+\\alpha}{2} .\n\\end{aligned}\n$$\n故由 $A B+B F=A D+D F$ 可以推出 $A C+C F=A E+E F$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c7i12.png",
+        "./images/volume7/figures/fig-c7i12.png"
+    ]
+}

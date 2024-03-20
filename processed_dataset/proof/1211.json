@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题27. 对每个正整数 $n$, 求证:\n$$\n\\sum_{j=1}^n \\frac{2 j+1}{j^2}>n\\left[(n+1)^{\\frac{2}{n}}-1\\right] .\n$$",
+    "solution": "显然 $2 j+1=(j+1)^2-j^2$, 由平均值不等式, 得 $\\sum_{j=1}^n \\frac{2 j+1}{j^2}= \\sum_{j=1}^n\\left[\\frac{(j+1)^2}{j^2}-1\\right]=\\sum_{j=1}^n \\frac{(j+1)^2}{j^2}-n \\geqslant n\\left[\\frac{2^2}{1^2} \\cdot \\frac{3^2}{2^2} \\cdot \\cdots \\cdot \\frac{(n+1)^2}{n^2}\\right]^{\\frac{1}{n}}-n= n\\left[(n+1)^{\\frac{2}{n}}-1\\right]$.",
+    "remark": "",
+    "figures": []
+}

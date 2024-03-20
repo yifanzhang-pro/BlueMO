@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 设图 $G$ 有 $n(n>5)$ 个顶点, 则在 $G$ 和 $G$ 的补图 $\\bar{G}$ 中总共含有至少 $\\frac{1}{24} n(n-$ 1) $(n-5)$ 个三角形.",
+    "solution": "设 $G=(V, E)$, 有 $d(x)\\{n-1-d(x)\\}$ 个三点组 $\\{x, y, z\\}$, 它们在 $G$ 或 $\\bar{G}$ 中都不构成三角形, 且在 $G$ 中有唯一的一条边以 $x \\in V$ 为端点.\n在 $G$ 或 $\\bar{G}$ 中不构成三角形的每一个三点组 $\\{x, y, z\\}$ 含有 $G$ 的一条边或两条边.\n设 $(x$, $y)$ 是 $G$ 的一条边, $(x, z) 、(y, z)$ 是 $\\bar{G}$ 的两条边, 在总和 $\\sum_{x \\in V} d(x)\\{n-1- d(x)\\}$ 中, 三点组 $\\{x, y, z\\}$ 被计算两次: 一次关于 $x$, 一次关于 $y$. 而如果 $(x$, $y) 、(y, z)$ 是 $G$ 的边, $(x, z)$ 是 $\\bar{G}$ 的边, 则上述和数中三点组 $\\{x, y, z\\}$ 也是被计算两次:一次关于 $x$, 另一次关于 $z$. 因此在 $G$ 和 $\\bar{G}$ 中三角形的总数为\n$$\n\\begin{aligned}\n\\mathrm{C}_n^3-\\frac{1}{2} \\sum_{x \\in V} d(x)\\{n-1-d(x)\\} & \\geqslant \\mathrm{C}_n^3-\\frac{n}{2}\\left(\\frac{n-1}{2}\\right)^2 \\\\\n& =\\frac{1}{24} n(n-1)(n-5) .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

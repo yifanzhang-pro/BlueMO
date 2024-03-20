@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例2. 若 $a 、 b 、 c 、 d$ 为非负整数, 且 $(a+b)^2+3 a+2 b=(c+d)^2+3 c+ 2 d$. 求证:\n$$\na=c, b=d .\n$$",
+    "solution": "证明:先证明 $a+b=c+d$. 用反证法.\n若 $a+b \\neq c+d$, 不妨设 $a+b>c+d$, 则 $a+b \\geqslant c+d+1$. 故\n$$\n\\begin{aligned}\n(a+b)^2+3 a+2 b & =(a+b)^2+2(a+b)+a \\\\\n& \\geqslant(c+d+1)^2+2(c+d+1)+a \\\\\n& =(c+d)^2+4(c+d)+3+a \\\\\n& >(c+d)^2+3 c+2 d .\n\\end{aligned}\n$$\n矛盾! 所以 $a+b=c+d$, 代入原式即得 $a=c$, 进而有 $b=d$.\n说明对于整数 $x 、 y$, 若 $x>y$, 则 $x \\geqslant y+1$. 这一性质在处理与整数有关的不等式时很有用.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题10. 由数字 $1 、 2$ 和 3 组成 $n$ 位数, 要求 $n$ 位数中 $1 、 2$ 和 3 中的每一个至少出现一次.\n求所有这些 $n$ 位数的个数.",
+    "solution": "设 $S=\\{$ 由 $1,2,3$ 组成的 $n$ 位数 $\\}$, 则 $|S|=3^n$. 记 $A_1=\\{S$ 中所有不含 1 的 $n$ 位数 $\\}, A_2=\\{S$ 中所有不含 2 的 $n$ 位数 $\\}, A_3=\\{S$ 中所有不含 3 的 $n$ 位数 $\\}$. 于是 $\\bar{A}_i$ 表示所有含有数字 $i$ 的 $n$ 位数, 且 $\\left|A_i\\right|=2^n, i=1,2,3$, $\\left|A_i \\cap A_j\\right|=1, i \\neq j, i, j=1,2,3$. 因此, $\\left|\\bar{A}_1 \\cap \\bar{A}_2 \\cap \\bar{A}_3\\right|=|S|- \\left|A_1\\right|-\\left|A_2\\right|-\\left|A_3\\right|+\\left|A_1 \\cap A_2\\right|+\\left|A_1 \\cap A_3\\right|-\\left|A_1 \\cap A_2 \\cap A_3\\right|=3^n- 3 \\times 2^n+3$.",
+    "remark": "",
+    "figures": []
+}

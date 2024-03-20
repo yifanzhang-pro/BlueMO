@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 证明: 在任何 18 个人中, 总有 4 个人相互认识, 或者相互不认识.",
+    "solution": "由定理三, $r(4,4) \\leqslant r(4,3)+r(3,4)=9+9=18$.",
+    "remark": "",
+    "figures": []
+}

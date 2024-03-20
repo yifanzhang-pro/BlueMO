@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例4. 如图(<FilePath:./images/volume7/figures/fig-c5i6.png>), $\\odot O_1$ 与 $\\odot O_2$ 相交于点 $C 、 D$, 过点 $D$ 的一条直线分别与 $\\odot O_1 、 \\odot O_2$ 相交于点 $A 、 B$, 点 $P$ 在 $\\odot O_1$ 的弧 $A D$ 上, $P D$ 与线段 $A C$ 的延长线交于点 $M$, 点 $Q$ 在 $\\odot O_2$ 的弧 $B D$ 上, $Q D$ 与线段 $B C$ 的延长线交于点 $N . O$ 是 $\\triangle A B C$ 的外心.\n求证: $O D \\perp M N$ 的充要条件是 $P 、 Q 、 M 、 N$ 四点共圆.",
+    "solution": "证明:设 $\\triangle A B C$ 的外接圆 $O$ 的半径为 $R$, 则 $M, N$ 对 $\\odot O$ 的幂分别为\n$$\n\\begin{aligned}\n& M O^2-R^2=M C \\cdot M A, \\label{eq1} \\\\\n& N O^2-R^2=N C \\cdot N B . \\label{eq2}\n\\end{aligned}\n$$\n又因为 $A 、 C 、 D 、 P$ 四点共圆, 所以\n$$\nM C \\cdot M A=M D \\cdot M P, \\label{eq3}\n$$\n同理 $Q 、 D 、 C 、 B$ 四点共圆, 所以\n$$\nN C \\cdot N B=N D \\cdot N Q . \\label{eq4}\n$$\n由式\\ref{eq1}、\\ref{eq2}、式\\ref{eq3}、\\ref{eq4}得\n$$\n\\begin{aligned}\nN C^2-M O^2 & =N D \\cdot N Q-M D \\cdot M P \\\\\n& =N D \\cdot(N D+D Q)-M D \\cdot(M D+D P) \\\\\n& =N D^2-M D^2+(N D \\cdot D Q-M D \\cdot D P) .\n\\end{aligned}\n$$\n所以, $O D \\perp M N \\Leftrightarrow N O^2-M O^2=N D^2-M D^2 \\Leftrightarrow N D \\cdot D Q=M D$ • $D P \\Leftrightarrow P 、 Q 、 M 、 N$ 四点共圆.",
+    "remark": "注:上面证题的过程中, 用到了这样一个结论: $O D \\perp M N \\Leftrightarrow N O^2- M O^2=N D^2-M D^2$. 它是一个非常重要的结论, 在证明垂直一类问题中常用到它.",
+    "figures": [
+        "./images/volume7/figures/fig-c5i6.png"
+    ]
+}

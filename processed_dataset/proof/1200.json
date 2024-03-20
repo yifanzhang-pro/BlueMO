@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设 $x, y \\in \\mathbf{R}^{+}, x \\neq y$. 令\n$$\nQ=\\sqrt{\\frac{x^2+y^2}{2}}, A=\\frac{x+y}{2}, G=\\sqrt{x y}, H=\\frac{2 x y}{x+y} .\n$$\n证明: $G-H<Q-A<A-G$.",
+    "solution": "$$\n\\begin{aligned}\n&  \\frac{x+y}{2}-\\sqrt{x y}>\\sqrt{\\frac{x^2+y^2}{2}}-\\frac{x+y}{2} \\Leftrightarrow x+y>\\sqrt{\\frac{x^2+y^2}{2}}+\\sqrt{x y} \\Leftrightarrow \\\\\n& (x+y)^2>\\frac{x^2+y^2}{2}+x y+\\sqrt{2 x y\\left(x^2+y^2\\right)} \\Leftrightarrow \\frac{1}{2}(x+y)^2>\\sqrt{2 x y\\left(x^2+y^2\\right)} \\Leftrightarrow \\\\\n& (x+y)^4>8 x y\\left(x^2+y^2\\right) \\Leftrightarrow x^4+4 x^3 y+6 x^2 y^2+4 x y^3+y^4 \\geqslant 8 x^3 y+8 x y^3 \\Leftrightarrow\n\\end{aligned}\n$$\n$(x-y)^4>0$. 因为 $x \\neq y$, 所以上面最后一个不等式成立, 即 $A-G>Q-A$.\n下面证明 $Q-A>G-H$. 因为 $\\sqrt{\\frac{x^2+y^2}{2}}-\\frac{x+y}{2}>\\sqrt{x y}-\\frac{2 x y}{x+y} \\Leftrightarrow$\n$$\n\\sqrt{\\frac{x^2+y^2}{2}}-\\sqrt{x y}>\\frac{x+y}{2}-\\frac{2 x y}{x+y} \\Leftrightarrow \\frac{\\frac{1}{2}\\left(x^2+y^2\\right)-x y}{\\sqrt{\\frac{x^2+y^2}{2}}+\\sqrt{x y}}>\\frac{(x-y)^2}{2(x+y)} \\Leftrightarrow x+\n$$\n$y>\\sqrt{\\frac{x^2+y^2}{2}}+\\sqrt{x y}$. 此不等式前面已经证明成立, 所以 $Q-A>G-H$.",
+    "remark": "",
+    "figures": []
+}

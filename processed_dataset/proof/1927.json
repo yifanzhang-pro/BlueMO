@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 已知圆内接四边形 $A B C D$, 直线 $A D$ 和 $B C$ 交于点 $E$, 且点 $C$ 在点 $B 、 E$ 之间, 对角线 $A C 、 B D$ 交于 $F$, 设点 $M$ 为边 $C D$ 的中点, 点 $N$ 是 $\\triangle A B M$ 的外接圆上的不同于 $M$ 的点, 且满足 $\\frac{A N}{B N}=\\frac{A M}{B M}$. 证明: $E 、 F 、 N$ 三点共线.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c9a8.png>), 延长 $C D 、 B A$ 交于点 $P$, 则直线 $E F$ 即为点 $P$ 关于 $\\odot O$ 的极线.\n(定理 1) 欲证 $N$ 在直线 $E F$ 上, 只需证 $N$ 对 $\\odot O$ 的极线过 $P$ 点.\n设 $\\triangle A M B$ 外接圆为 $\\odot O^{\\prime}$, 因为 $A 、 M 、 B 、 N$ 均在 $\\odot O^{\\prime}$ 上, 且 $\\frac{A M}{M B}= \\frac{A N}{N B} \\cdot A M \\cdot N B=A N \\cdot M B$, 故 $A M B N$ 为调和四边形.\n所以点 $M 、 N$\n处的两条切线交于直线 $A B$ 上,设为 $R$, 取 $A B$ 中点 $S$.\n可知, 点 $N$ 对 $\\odot O$ 的幂等于点 $N$ 对 $\\triangle O S M$ 外接圆的幂.\n过 $P$ 作 $P W \\perp O N$ 于 $W$, 则 $O 、 M 、 P 、 W 、 S$ 共圆.\n则 $N$ 为 $\\odot O$ 的幂等于 $N$ 对 $\\triangle O W P$ 外接圆的幂.\n从而 $P$ 点在 $N$ 关于 $\\odot O$ 的极线上,故结论成立,得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9a8.png"
+    ]
+}

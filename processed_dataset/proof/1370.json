@@ -1,0 +1,12 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例10. 求证: 在周长为定值 $l$ 的一切 $n$ 边形中, 正 $n$ 边形有最大的面积.",
+    "solution": "证明:(1) 首先, 凹多边形不可能具有最大面积.\n如图(<FilePath:./images/volume5/figures/fig-c8i1.png>), 设 $A_1 A_2 \\cdots A_n$ 为一凹多边形, 则当将 $\\triangle A_{i-1} A_i A_{i+1}$ 以线段 $A_{i+1} A_{i-1}$ 的中点为中心, 中心对称为 $\\triangle A_{i-1} A_i^{\\prime} A_{i+1}$ 时, 得到的凸多边形 $A_1 \\cdots A_{i-1} A_i^{\\prime} A_{i+1} \\cdots A_n$ 的周长也是 $l$, 但面积却变大了.\n因此, 我们在以下的讨论中只考虑凸多边形的情形.\n(2) 设凸多边形 $A_1 A_2 \\cdots A_n$ 不等边, 且其中存在两条邻边, 一边小于 $\\frac{l}{n}$ 而另一边大于 $\\frac{l}{n}$, 不妨设是边 $A_1 A_2$ 和 $A_2 A_3$, 连接 $A_1 A_3$, 以 $A_1 A_3, \\frac{l}{n}, A_1 A_2+ A_2 A_3-\\frac{l}{n}$ 为三边长作 $\\triangle A_1 A_2^{\\prime} A_3$ (如图(<FilePath:./images/volume5/figures/fig-c8i2.png>) 所示).\n则 $A_1 A_2<A_1 A_2^{\\prime}, A_2^{\\prime} A_3<A_2 A_3$, 且 $A_1 A_2^{\\prime}+A_2^{\\prime} A_3=A_1 A_2+A_2 A_3$.\n于是由海伦公式知 $S_{\\triangle A_1 A_2^{\\prime} A_3}>S_{\\triangle A_1 A_2 A_3}$, 从而 $A_1 A_2^{\\prime} A_3 \\cdots A_n$ 的面积大于 $A_1 A_2 \\cdots A_n$ 的面积, 且前者中有一边 $A_1 A_2^{\\prime}$ 的长度为 $\\frac{l}{n}$.\n若多边形 $A_1 A_2^{\\prime} A_3 \\cdots A_n$ 仍不等边, 又可重复上述磨光变换而使边长为 1 的边数每次至少增加 1 条, 故至多经过 $n-1$ 次变换, 就可变为等边 $n$ 边形.\n于是, 不等边 $n$ 边形的面积必小于某等边 $n$ 边形的面积.\n(3) 设凸 $n$ 边形 $A_1 A_2 \\cdots A_n$ 不等边, 于是 $n$ 边中存在两边 $A_i A_{i+1}<\\frac{l}{n}<A_j A_{j+1}$, 但两边不相邻.\n连接 $A_i A_j$ 并作 $A_i A_j$ 的垂直平分线 $M N$, 以 $M N$ 为对称轴将多边形 $A_i A_{i+1} \\cdots A_j$ 对称为多边形 $A_i A_{i+1}^{\\prime} \\cdots A_j$ (如图(<FilePath:./images/volume5/figures/fig-c8i3.png>) 所示).\n于是, 得到的新 $n$ 边形与原 $n$ 边形周长、面积都相等, 但新多边形中有两条邻边, 一边大于\n$\\frac{l}{n}$, 另一边小于 $\\frac{l}{n}$, 这样就化为了情形 (2).\n故知任一周长为 $l$ 的不等边 $n$ 边形的面积都小于某一个周长为 $l$ 的等边 $n$ 边形的面积.\n(4) 由克拉美定理, 在 $n$ 条边长都为定值的 $n$ 边形中, 内接于圆的多边形面积最大.\n故在周长为 $l$ 的所有等边 $n$ 边形中, 正 $n$ 边形面积最大.\n综上所述, 在周长为 $l$ 的所有等边 $n$ 边形中, 正 $n$ 边形面积最大.",
+    "remark": "",
+    "figures": [
+        "./images/volume5/figures/fig-c8i1.png",
+        "./images/volume5/figures/fig-c8i2.png",
+        "./images/volume5/figures/fig-c8i3.png"
+    ]
+}

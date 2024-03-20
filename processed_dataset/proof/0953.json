@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例18 函数 $F(x)=\\mid \\cos ^2 x+2 \\sin x \\cos x- \\sin ^2 x+A x+B \\mid$ 在 $0 \\leqslant x \\leqslant \\frac{3}{2} \\pi$ 上的最大值 $M$ 与参数 $A 、 B$ 有关, 问 $A 、 B$ 取什么值时, $M$ 为最小? 证明你的结论.",
+    "solution": "分析:$\\left|\\cos ^2 x+2 \\sin x \\cdot \\cos x-\\sin ^2 x+A x+B\\right|=\\mid \\sqrt{2} \\sin \\left(2 x+\\frac{\\pi}{4}\\right)+ A x+B \\mid$. 故 $F(x)$ 是一个三角函数与一个一次函数之和, 因为三角函数是一个周期函数, 而 $A x+B$ 是一个一次或零次函数, 所以不管怎样, 只要 $A 、 B$ 中有一个不为 $0, F(x)$ 最大值显然增大.\n故猜想 $M$ 的最小值在 $A=B=0$ 时取得.\n解 $F(x)=\\left|\\sqrt{2} \\sin \\left(2 x+\\frac{\\pi}{4}\\right)+A x+B\\right|$. 取 $g(x)=\\sqrt{2} \\sin \\left(2 x+\\frac{\\pi}{4}\\right)$, 则 $g\\left(\\frac{\\pi}{8}\\right)=g\\left(\\frac{9 \\pi}{8}\\right)=\\sqrt{2}, g\\left(\\frac{5 \\pi}{8}\\right)=-\\sqrt{2}$.\n取 $h(x)=A x+B$, 若 $A=0, B \\neq 0$, 则当 $B>0$ 时, $F\\left(\\frac{\\pi}{8}\\right)>\\sqrt{2}$, 当 $B<0$ 时, $F\\left(\\frac{5 \\pi}{8}\\right)<\\sqrt{2}$. 从而 $M>\\sqrt{2}$.\n若 $A \\neq 0$, 则当 $h\\left(\\frac{5 \\pi}{8}\\right)<0$ 时, $F\\left(\\frac{5 \\pi}{8}\\right)>\\sqrt{2}$, 当 $h\\left(\\frac{5 \\pi}{8}\\right) \\geqslant 0$ 时, 由于 $h(x)$ 是一次函数, 当 $A>0$ 时, $h(x)$ 递增, $h\\left(\\frac{9 \\pi}{8}\\right)>h\\left(\\frac{5 \\pi}{8}\\right)>0$, 此时 $F\\left(\\frac{9 \\pi}{8}\\right)>\\sqrt{2}$; 当 $A<0$ 时, $h(x)$ 递减, $h\\left(\\frac{\\pi}{8}\\right)>h\\left(\\frac{5 \\pi}{8}\\right)>0$, 此时 $F\\left(\\frac{\\pi}{8}\\right)>\\sqrt{2}$. 故此时 $M>\\sqrt{2}$. 若 $A=B=0$ ，显然有 $M=\\sqrt{2}$.\n从而 $M$ 的最小值为 $\\sqrt{2}$, 这个最小值在 $A=B=0$ 时取得.",
+    "remark": "",
+    "figures": []
+}

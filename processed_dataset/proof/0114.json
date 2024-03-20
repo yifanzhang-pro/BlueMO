@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题16 $x, y$ 是互素的自然数, $k$ 是大于 1 的自然数.\n找出满足 $3^n=x^k+y^k$ 的所有自然数 $n$, 并给出证明.",
+    "solution": "设 $3^n=x^k+y^k$, 其中 $x$ 与 $y$ 互素(不妨设 $x>y$ ), $k>1, n$ 是自然数.\n显然, $x 、 y$ 中的任何一个都不能被 3 整除.\n如果 $k$ 是偶数, 则 $x^k$ 和 $y^k$ 被 3 除的余数都是 1 . 这样, $x^k$ 与 $y^k$ 的和除以 3 的余数是 2 , 而不是 3 的整数次幂.\n于是, 推出矛盾,所以 $k$ 不是偶数.\n如果 $k$ 是奇数且 $k>1$, 则 $3^n=(x+y)\\left(x^{k-1}-\\cdots+y^{k-1}\\right)$. 这样, $x+y= 3^m, m \\geqslant 1$.\n以下证明: $n \\geqslant 2 m$. 因为 $k$ 可被 3 整除, 取 $x_1=x^{\\frac{k}{3}}, y_1=y^{\\frac{k}{3}}$ 代入后, 可以认为 $k=3$. 这样, $x^3+y^3=3^n, x+y=3^m$. 要证明 $n \\geqslant 2 m$, 只要证明 $x^3+ y^3 \\geqslant(x+y)^2$, 即证明 $x^2-x y+y^2 \\geqslant x+y$. 由于 $x \\geqslant y+1$, 则 $x^2-x= x(x-1) \\geqslant x y$. $\\left(x^2-x-x y\\right)+\\left(y^2-y\\right) \\geqslant 0$. 不等式 $n \\geqslant 2 m$ 得证.\n由恒等式 $(x+y)^3-\\left(x^3+y^3\\right)=3 x y(x+y)$ 推出: $(*) 3^{2 m-1}-3^{n-m-1}= x y$, 而 $2 m-1 \\geqslant 1$, 且 $(* *) n-m-1 \\geqslant n-2 m \\geqslant 0$. 因此, 如果 (**) 中至少有一个不等号是严格不等号, 那么 $(*)$ 式中的左端可被 3 整除, 但右端不能被 3 整除, 推出矛盾.\n如果 $n-m-1=n-2 m=0$, 那么, $m=1, n=2$ 且 $3^2=2^3+1^3$. 故 $n=2$.",
+    "remark": "",
+    "figures": []
+}

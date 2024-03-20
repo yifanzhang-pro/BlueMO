@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例16. 设 $a_1, a_2, \\cdots, a_n$ 是 $1,2, \\cdots, n$ 的一个排列.\n求证:\n$$\n\\frac{1}{2}+\\frac{2}{3}+\\cdots+\\frac{n-1}{n} \\leqslant \\frac{a_1}{a_2}+\\frac{a_2}{a_3}+\\cdots+\\frac{a_{n-1}}{a_n} .\n$$",
+    "solution": "证明:因为 $a_1, a_2, \\cdots, a_n$ 是 $1,2, \\cdots, n$ 的一个排列, 所以\n$$\n\\begin{aligned}\n& \\left(1+a_1\\right)\\left(1+a_2\\right) \\cdots\\left(1+a_{n-1}\\right) \\\\\n\\geqslant & (1+1)(1+2) \\cdots[1+(n-1)] \\\\\n= & a_1 a_2 \\cdots a_n .\n\\end{aligned}\n$$\n于是\n$$\n\\begin{aligned}\n& \\frac{a_1}{a_2}+\\frac{a_2}{a_3}+\\cdots+\\frac{a_{n-1}}{a_n}+\\frac{1}{1}+\\frac{1}{2}+\\cdots+\\frac{1}{n} \\\\\n= & \\frac{a_1}{a_2}+\\frac{a_2}{a_3}+\\cdots+\\frac{a_{n-1}}{a_n}+\\frac{1}{a_1}+\\frac{1}{a_2}+\\cdots+\\frac{1}{a_n} \\\\\n= & \\frac{1}{a_1}+\\frac{1+a_1}{a_2}+\\frac{1+a_2}{a_3}+\\cdots+\\frac{1+a_{n-1}}{a_n} \\\\\n\\geqslant & n \\sqrt[n]{\\frac{\\left(1+a_1\\right)\\left(1+a_2\\right) \\cdots\\left(1+a_{n-1}\\right)}{a_1 a_2 \\cdots a_n}} \\geqslant n .\n\\end{aligned}\n$$\n又因为 $n=\\left(1+\\frac{1}{2}+\\frac{1}{3}+\\cdots+\\frac{1}{n}\\right)+\\left(\\frac{1}{2}+\\frac{2}{3}+\\cdots+\\frac{n-1}{n}\\right)$, 所以\n$$\n\\frac{a_1}{a_2}+\\frac{a_2}{a_3}+\\cdots+\\frac{a_{n-1}}{a_n} \\geqslant \\frac{1}{2}+\\frac{2}{3}+\\cdots+\\frac{n-1}{n} .\n$$",
+    "remark": "注:对于该不等式的证明, 首先要充分理解 $a_1, a_2, \\cdots, a_n$ 是 $1,2, \\cdots, n$ 的一个排列, 此外, 两边同时相加 $1+\\frac{1}{2}+\\frac{1}{3}+\\cdots+\\frac{1}{n}\\left(\\right.$ 即 $\\left.\\frac{1}{a_1}+\\frac{1}{a_2}+\\cdots+\\frac{1}{a_n}\\right)$ 也是很重要的一步.",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例10. 设 $a_i>0, b_i>0$ 且满足 $a_1+a_2+\\cdots+a_n \\leqslant 1, b_1+b_2+\\cdots+ b_n \\leqslant n$. 求证:\n$$\n\\left(\\frac{1}{a_1}+\\frac{1}{b_1}\\right)\\left(\\frac{1}{a_2}+\\frac{1}{b_2}\\right) \\cdots\\left(\\frac{1}{a_n}+\\frac{1}{b_n}\\right) \\geqslant(n+1)^n .\n$$",
+    "solution": "证明:由已知条件和平均值不等式, 得\n$$\n\\begin{gathered}\na_1 a_2 \\cdots a_n \\leqslant\\left(\\frac{a_1+a_2+\\cdots+a_n}{n}\\right)^n \\leqslant \\frac{1}{n^n}, \\\\\nb_1 b_2 \\cdots b_n \\leqslant\\left(\\frac{b_1+b_2+\\cdots+b_n}{n}\\right)^n \\leqslant 1 . \\\\\n\\frac{1}{a_i}+\\frac{1}{b_i}=\\frac{1}{n a_i}+\\cdots+\\frac{1}{n a_i}+\\frac{1}{b_i} \\\\\n\\geqslant(n+1) \\sqrt[n+1]{\\left(\\frac{1}{n a_i}\\right)^n\\left(\\frac{1}{b_i}\\right)}, \\\\\n\\left(\\frac{1}{a_1}+\\frac{1}{b_1}\\right)\\left(\\frac{1}{a_2}+\\frac{1}{b_2}\\right) \\cdots\\left(\\frac{1}{a_n}+\\frac{1}{b_n}\\right) \\\\\n\\geqslant(n+1)^n \\sqrt[n+1]{\\frac{1}{\\left(n^n\\right)^n} \\frac{1}{\\left(a_1 a_2 \\cdots a_n\\right)^n} \\frac{1}{b_1 b_2 \\cdots b_n}} \\\\\n\\geqslant(n+1)^n .\n\\end{gathered}\n$$\n故命题成立.",
+    "remark": "注:此题证明的关键是将 $\\frac{1}{a_i}$ 写成 $\\frac{1}{n a_i}+\\cdots+\\frac{1}{n a_i}$.",
+    "figures": []
+}

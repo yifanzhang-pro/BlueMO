@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例3 证明: 恰有一个定义在所有非零实数上的函数 $f$, 满足条件:\n(1) 对所有非零实数 $x, f(x)=x f\\left(\\frac{1}{x}\\right)$;\n(2) 对所有 $x \\neq-y$ 的非零实数对 $(x, y)$, 有\n$$\nf(x)+f(y)=1+f(x+y) .\n$$",
+    "solution": "证 $f(x)=x+1$ 显然适合 (1)、(2).下证唯一性.\n即设 $f(x)$ 满足 (1)、 (2), 那么 $f(x)=x+1$.\n在(2)中, 令 $y=1$, 得\n$$\nf(x)+f(1)=1+f(x+1)(x \\neq-1, x \\neq 0) . \\quad\\quad <1>\n$$\n在 (2) 中, 以- $x$ 代换 $x, x+1$ 代换 $y$, 得\n$$\nf(-x)+f(x+1)=1+f(1)(x \\neq-1, x \\neq 0) . \\quad\\quad <2>\n$$\n综合<1>、<2>, 得\n$$\nf(x)+f(-x)=2(x \\neq-1, x \\neq 0) .  \\quad\\quad <3>\n$$\n<3>在 $x=1$ 时成立,所以在 $x=-1$ 时也成立.\n由(1)及<3>, 当 $x \\neq 0$ 时,\n$$\n\\begin{aligned}\nf(x) & =x f\\left(\\frac{1}{x}\\right)=x\\left[2-f\\left(-\\frac{1}{x}\\right)\\right] \\\\\n& =2 x+\\left[-x f\\left(-\\frac{1}{x}\\right)\\right] \\\\\n& =2 x+f(-x) .\n\\end{aligned}\n$$\n所以\n$$\nf(x)-f(-x)=2 x .  \\quad\\quad <4>\n$$\n从<3>、<4>中消去 $f(-x)$, 得 $f(x)=x+1$.",
+    "remark": "",
+    "figures": []
+}

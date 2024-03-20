@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 设图 $G=(V, E), V=\\left\\{v_1, v_2, \\cdots, v_5\\right\\}, E=\\left\\{\\left(v_1, v_2\\right),\\left(v_2, v_4\\right),\\left(v_3\\right.\\right.$, $\\left.\\left.v_4\\right),\\left(v_4, v_5\\right),\\left(v_1, v_3\\right)\\right\\}$. 画出 $G$ 的图形.",
+    "solution": "$G$ 的图形如图(<FilePath:./images/volume12/figures/fig-c1a1.png>)所示.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c1a1.png"
+    ]
+}

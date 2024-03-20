@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设 $n>1, n \\mid\\left(2^n+1\\right)$, 证明 $3 \\mid n$.",
+    "solution": "证明:显然 $n$ 是奇数.\n设 $p$ 是 $n$ 的最小素因子,我们证明 $p=3$, 从而 31 $n$. 设 2 模 $p$ 的阶是 $r$. 由 $2^n \\equiv-1(\\bmod n)$ 知\n$$\n2^{2 n} \\equiv 1(\\bmod p) . \\label{eq1}\n$$\n又因 $p \\geqslant 3$, 故费马小定理给出\n$$\n2^{p-1} \\equiv 1(\\bmod p) . \\label{eq2}\n$$\n由 式\\ref{eq1}、\\ref{eq2}及阶的性质推出 $r \\mid 2 n$ 及 $r \\mid(p-1)$, 故 $r \\mid(2 n, p-1)$. 不难证明 $( 2 n, p-1)=2$. 这是因为, 由 $2 \\nmid n$ 知 $2 \\mid(2 n, p-1)$, 但 $2^2 \\nmid(2 n, p-1)$; 另一方面, 若有奇素数 $q \\mid(2 n, p-1)$, 则 $q \\mid(p-1)$, 及 $q \\mid n$, 但前者表明 $q<p$, 这与 $p$ 是 $n$ 的最小素因子相违.\n所以 $(2 n, p-1)=2$, 从而 $r=2$, 故 $p=3$.\n一个关键想法是考虑 $n$ 的 (最小) 素因子 $p$, 通过模 $p$ 而导出结果.",
+    "remark": "",
+    "figures": []
+}

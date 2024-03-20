@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例10 证明: 若函数 $y=f(x)$ 在 $\\mathbf{R}$ 上的图象关于点 $A\\left(a, y_0\\right)$ 和直线 $x=b(b>a)$ 皆对称, 则函数 $f(x)$ 是 $\\mathbf{R}$ 上的周期函数.",
+    "solution": "证已知函数 $y=f(x)$ 的图象关于点 $A\\left(a, y_0\\right)$ 与直线 $x=b$ 对称, 所以对任意 $x \\in \\mathbf{R}$, 分别有\n$$\n\\begin{aligned}\nf(a+x)-y_0 & =y_0-f(a-x), \\\\\nf(b+x) & =f(b-x) .\n\\end{aligned}\n$$\n下面证明 $4(b-a)$ 是 $f(x)$ 的周期.\n事实上, 对任意 $x \\in \\mathbf{R}$, 反复利用 (1), (2), 有\n$$\n\\begin{aligned}\nf[x+4(b-a)] & =f[b+(x+3 b-4 a)] \\\\\n& =f[b-(x+3 b-4 a)] \\\\\n& =f[a+(3 a-2 b-x)] \\\\\n& =2 y_0-f[a-(3 a-2 b-x)] \\\\\n& =2 y_0-f[b+(b-2 a+x)] \\\\\n& =2 y_0-f[b-(b-2 a+x)] \\\\\n& =2 y_0-f[a+(a-x)] \\\\\n& =2 y_0-2 y_0+f[a-(a-x)] \\\\\n& =f(x) .\n\\end{aligned}\n$$\n同理可证 $f[x-4(b-a)]=f(x)$.\n所以 $4(b-a)$ 是函数 $f(x)$ 在 $\\mathbf{R}$ 上的一个周期.\n故 $f(x)$ 是周期函数.\n用完全相同的方法可以证明, 若函数 $f(x)$ 在 $\\mathbf{R}$ 上的图象关于直线 $x=a$ 与 $x=b(b>a)$ 对称, 则函数 $f(x)$ 是周期函数 $(2(b-a)$ 是它的一个周期).",
+    "remark": "",
+    "figures": []
+}

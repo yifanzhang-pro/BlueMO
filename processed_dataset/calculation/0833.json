@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-2.tex",
+    "problem_type": "calculation",
+    "problem": "例11. 设 $x_i \\geqslant 0, i=1,2, \\cdots, n$, 满足\n$$\n\\sum_{i=1}^n x_i^2+2 \\sum_{1 \\leqslant j<k \\leqslant n} \\sqrt{\\frac{j}{k}} x_j x_k=1 .\n$$\n求 $x_1+x_2+\\cdots+x_n$ 的最小值和最大值.",
+    "solution": "解:由\n$$\n\\left(x_1+x_2+\\cdots+x_n\\right)^2=\\sum_{i=1}^n x_i^2+2 \\sum_{1 \\leqslant j<k \\leqslant n} x_j x_k \\geqslant 1,\n$$\n取 $x_1=1, x_2=\\cdots=x_n=0$, 则 $x_1+x_2+\\cdots+x_n$ 的最小值为 1 . 再令 $y_i= \\frac{x_i}{\\sqrt{i}}$, 则条件化为\n$$\n\\sum_{i=1}^n i y_i^2+2 \\sum_{1 \\leqslant j<k \\leqslant n} j y_j y_k=1\n$$\n等价于\n$$\n\\sum_{i=1}^n\\left(y_i+y_{i+1}+\\cdots+y_n\\right)^2=1 \\text {. }\n$$\n令 $t_i=y_i+y_{i+1}+\\cdots+y_n$, 则 $y_i=t_i-t_{i+1}, x_i \\geqslant 0$, 推出 $y_i \\geqslant 0, t_i$ 不增, 则 $x_i=\\sqrt{i} y_i=\\sqrt{i}\\left(t_i-t_{i+1}\\right)$, 令 $t_{i+1}=0$, 则\n$$\nx_1+x_2+\\cdots+x_n=\\sum_{i=1}^n \\sqrt{i}\\left(t_i-t_{i+1}\\right)=\\sum_{i=1}^n t_i(\\sqrt{i}-\\sqrt{i-1}) .\n$$\n所以由 $\\sum_{i=1}^n t_i^2=1$ 以及柯西不等式, 得\n$$\n\\begin{aligned}\n\\left(x_1+x_2+\\cdots+x_n\\right)^2 & =\\left[\\sum_{i=1}^n t_i(\\sqrt{i}-\\sqrt{i-1})\\right]^2 \\\\\n& \\leqslant \\sum_{i=1}^n(\\sqrt{i}-\\sqrt{i-1})^2\\left(\\sum_{i=1}^n t_i^2\\right) \\\\\n& =\\sum_{i=1}^n(\\sqrt{i}-\\sqrt{i-1})^2,\n\\end{aligned}\n$$\n等号成立当且仅当 $\\frac{t_1}{1}=\\frac{t_2}{\\sqrt{2}-1}=\\cdots=\\frac{t_n}{\\sqrt{n}-\\sqrt{n-1}}$ 及 $x_1^2+x_2^2+\\cdots+ x_n^2=1$ 时, $\\left(t_1, t_2, \\cdots, t_n\\right)$ 唯一确定推出 $\\left(x_1, x_2, \\cdots, x_n\\right)$ 唯一确定.\n故 $x_1+ x_2+\\cdots+x_n$ 的最大值为 $\\sqrt{\\sum_{i=1}^n(\\sqrt{i}-\\sqrt{i-1})^2}$.",
+    "remark": "",
+    "figures": []
+}

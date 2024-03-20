@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题14 证明: 任意 28 个介于 104 与 208 之间 (包括 104 和 208) 的不同的正整数,其中必有两个数不互质.",
+    "solution": "设 $I=\\{x \\mid 104 \\leqslant x \\leqslant 208, x \\in \\mathbf{N}\\}$, 并记 $E_k=\\{x \\mid x \\equiv 0(\\bmod k)$, $x \\in I\\}, k=2,3,5,7$. 由容斥原理得 $\\left|E_2 \\cup E_3 \\cup E_5 \\cup E_7\\right|=(53+35+ 21+15)-(17+10+7+7+5+3)+(3+2+1+1)-0=82$. 这说明 $[104$, $208]$ 中不能被 $2,3,5,7$ 任何一个整除的整数共有 $(208-103)-82=23$ 个.\n于是任意取 104 和 208 之间的 28 个数, 至少有 5 个数属于 $E_2 \\cup E_3 \\cup E_5 \\cup E_7$. 根据抽席原则知, 必有两个数属于某个 $E_k(k=2,3,5,7)$, 故结论成立.",
+    "remark": "",
+    "figures": []
+}

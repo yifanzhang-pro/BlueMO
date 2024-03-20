@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题14. 设 $f: \\mathbf{R} \\rightarrow \\mathbf{R}$ 满足: 对任意实数 $x 、 y$, 有\n$$\nf(2 x)+f(2 y)=f(x+y) f(x-y) .\n$$\n又 $f(\\pi)=0$, 但 $f(x)$ 不恒等于零.\n(1) 确定函数 $f(x)$ 的奇偶性;\n(2) 证明: $f(x)$ 是周期函数.",
+    "solution": "(1) 取 $x=y=\\frac{1}{2}$ 代入(1), 得 $2 f(t)=f(t) f(0)$. 因 $f(x)$ 不恒等于零, 所以 $f(0)=2$. 取 $x=\\frac{1}{2}, y=-\\frac{1}{2}$ 代入 (1), 得 $f(t)+f(-t)= f(0) f(t)$, 即 $f(-t)=f(t)$, 所以, $f(x)$ 是偶函数; \n(2) 令 $x=t+\\frac{\\pi}{2}, y= t-\\frac{\\pi}{2}$ 代入(1), 得 $f(2 t+\\pi)+f(2 t-\\pi)=f(2 t) f(\\pi)$, 所以 $f(2 t+\\pi)= -f(2 t-\\pi) \\cdots$ (2). 取 $x=2 t-\\pi$ 代入(2), 得 $f(x+2 \\pi)=-f(x)$. 故 $f(x+ 4 \\pi)=-f(x+2 \\pi)=f(x)$, 即 $f(x)$ 是以 $4 \\pi$ 为周期的周期函数.",
+    "remark": "",
+    "figures": []
+}

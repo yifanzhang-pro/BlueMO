@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题11. Fibonacci 数列 $\\left\\{F_n\\right\\}$ 定义如下: $F_1=F_2=1, F_{n+2}=F_{n+1}+F_n, n=1$, $2, \\cdots$. 求所有的正整数数对 $(k, m), m>k$. 使得如下定义的数列 $\\left\\{x_n\\right\\}$ :\n$$\nx_1=\\frac{F_k}{F_m}, x_{n+1}=\\left\\{\\begin{array}{ll}\n\\frac{2 x_n-1}{1-x_n}, & \\text { 若 } x_n \\neq 1, \\\\\n1, & \\text { 若 } x_n=1\n\\end{array}(n=1,2, \\cdots)\\right.\n$$\n包含等于 1 的项.",
+    "solution": "若 $m \\geqslant k+2$, 则 $F_m \\geqslant F_{k+2}=F_{k+1}+F_k \\geqslant 2 F_k$ (因为数列 $\\left\\{F_n\\right\\}$ 是不减数列), 于是 $x_1 \\leqslant \\frac{1}{2}$, 结合 $\\left\\{x_n\\right\\}$ 的定义可知 $x_2 \\leqslant 0$, 进而利用数学归纳法易证: 对 $n \\geqslant 2$, 都有 $x_n \\leqslant 0$. 此时, $\\left\\{x_n\\right\\}$ 中不包含等于 1 的项.\n所以 $m<k+2$, 而 $m>k$, 故只能是 $m=k+1$.\n另一方面, 对任意 $k \\in \\mathbf{N}^*$, 若 $m=k+1$, 则由 $\\left\\{x_n\\right\\}$ 的定义可知 $x_2=$\n130 $\\frac{2 F_k-F_{k+1}}{F_{k+1}-F_k}$ (除非 $k=1, m=2$, 此时 $x_1=1$, 数列中已包含 1 ), 得 $x_2= \\frac{F_k-F_{k-1}}{F_{k-1}}=\\frac{F_{k-2}}{F_{k-1}}$, 依此递推, 当 $k$ 为奇数时, 设 $k=2 n+1$, 则有 $x_3=\\frac{F_{2 n-3}}{F_{2 n-2}}, \\cdots x_{n+1}=\\frac{F_1}{F_2}=1$, 符合题意; 当 $k$ 为偶数时, 设 $k=2 n$, 则有 $x_3=\\frac{F_{2 n-4}}{F_{2 n-3}}, \\cdots, x_n= \\frac{F_2}{F_3}=\\frac{1}{2}$, 此后数列的每一项都不大于零, 不符合题意.\n综上可知,所求正整数对 $(k, m)=(2 n-1,2 n), n \\in \\mathbf{N}^*$.",
+    "remark": "",
+    "figures": []
+}

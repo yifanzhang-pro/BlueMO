@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $P$ 为 $\\triangle A B C$ 内一点,证明:\n$$\n\\sqrt{P A}+\\sqrt{P B}+\\sqrt{P C}<\\frac{\\sqrt{5}}{2}(\\sqrt{B C}+\\sqrt{C A}+\\sqrt{A B}) . \\label{eq1}\n$$",
+    "solution": "当然, 上面的例 6 还可用等高线方法来证明.\n所谓等高线就是在讨论极值问题时引进的特殊平面曲线,如圆、椭圆等.\n这里用的等高线是椭圆.\n另外的证法:\n设 $B C=a, C A=b, A B=c$, 且不妨设 $a \\leqslant b, c$.\n现过 $P$ 点作一个以 $B 、 C$ 为焦点的椭圆, 与 $A B$ 、 $A C$ 分别交于 $E$ 和 $F$,如图(<FilePath:./images/volume9/figures/fig-c1i7.png>),则\n$$\nP A \\leqslant \\max (E A, F A) \\text {. }\n$$\n不妨设 $E A \\geqslant F A$, 则 $P A \\leqslant E A$.\n又\n$\\sqrt{P B}+\\sqrt{P C} \\leqslant \\sqrt{2(P B+P C)}=\\sqrt{2(E B+E C)}$,\n因此\n$$\n\\begin{aligned}\n& \\sqrt{P A}+\\sqrt{P B}+\\sqrt{P C} \\\\\n< & \\sqrt{E A}+\\sqrt{2(E B+E C)} \\\\\n\\leqslant & {\\left[5 E A+\\frac{5}{2}(E B+E C)\\right]^{\\frac{1}{2}} } \\\\\n= & {\\left[5(E A+E B)+\\frac{5}{2}(E C-E B)\\right]^{\\frac{1}{2}} } \\\\\n< & \\sqrt{5}\\left(a+\\frac{a}{2}\\right)^{\\frac{1}{2}} \\\\\n< & \\frac{\\sqrt{5}}{2}(\\sqrt{a}+\\sqrt{b}+\\sqrt{c}),\n\\end{aligned}\n$$\n得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c1i7.png"
+    ]
+}

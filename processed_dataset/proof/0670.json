@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter18.tex",
+    "problem_type": "proof",
+    "problem": "例10. 对任何正整数 $n$, 证明恒等式: $\\sum_{k=0}^n 2^k \\mathrm{C}_n^k \\mathrm{C}_{n-k}^{\\left[\\frac{n-k}{2}\\right]}=\\mathrm{C}_{2 n+1}^n$.",
+    "solution": "证法一(构造函数方法)\n考虑函数 $f(x)=(1+x)^{2 n+1}$. 一方面,需证等式右边显然是 $f(x)$ 的 $n$ 次项系数.\n另一方面,\n$$\n\\begin{aligned}\nf(x) & =(1+x)\\left(1+2 x+x^2\\right)^n=(1+x) \\sum_{k=0}^n \\mathrm{C}_n^k\\left(1+x^2\\right)^{n-k}(2 x)^k \\\\\n& =\\sum_{k=0}^n 2^k \\mathrm{C}_n^k(1+x)\\left(1+x^2\\right)^{n-k} x^k,\n\\end{aligned}\n$$\n当 $n-k$ 为偶数时, $(1+x)\\left(1+x^2\\right)^{n-k}$ 中 $x^{n-k}$ 的系数为 $\\mathrm{C}_{n-k}^{\\frac{n-k}{2}}$;\n当 $n-k$ 为奇数时, $(1+x)\\left(1+x^2\\right)^{n-k}$ 中 $x^{n-k}$ 的系数为 $\\mathrm{C}_{n-k}^{\\frac{n-k-1}{2}}$.\n所以对 $k=0,1, \\cdots, n$, 在 $2^k \\mathrm{C}_n^k(1+x)\\left(1+x^2\\right)^{n-k} x^k$ 中 $x^n$ 的系数总是 $2^k \\mathrm{C}_n^k \\mathrm{C}_{n-k}^{\\left[\\frac{n-k}{2}\\right]}$.\n从而 $f(x)$ 的 $n$ 次项系数为 $\\sum_{k=0}^n 2^k \\mathrm{C}_n^k \\mathrm{C}_{n-k}^{\\left[\\frac{n-k}{2}\\right]}$.\n综合两方面可得: $\\sum_{k=0}^n 2^k \\mathrm{C}_n^k \\mathrm{C}_{n-k}^{\\left[\\frac{n-k}{2}\\right]}=\\mathrm{C}_{2 n+1}^n$.",
+    "remark": "",
+    "figures": []
+}

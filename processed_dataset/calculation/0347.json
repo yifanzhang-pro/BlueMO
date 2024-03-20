@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 在不减正整数序列 $a_1, a_2, \\cdots, a_m, \\cdots$ 中, 对任何正整数 $m$, 定义 $b_m= \\min \\left\\{n \\mid a_n \\geqslant m\\right\\}$. 已知, $a_{19}=85$, 求 $S=a_1+a_2+\\cdots+a_{19}+b_1+b_2+\\cdots+ b_{85}$ 的最大值.",
+    "solution": "首先, 最大的数一定存在.\n由条件有 $a_1 \\leqslant a_2 \\leqslant \\cdots \\leqslant a_{19}=85$. 我们猜想, 极值点是各个 $a_i$ 尽可能大且各个 $a_i$ 相等, 各个 $b_j$ 相等.\n实际上, 若有 $a_i<a_{i+1}(1 \\leqslant i \\leqslant 18)$, 则令 $a_i^{\\prime}=a_i+1$. 对任何 $j \\neq i$, 令 $a_j^{\\prime}=a_j$, 对应的 $b_j$ 记为 $b_j^{\\prime}$. 那么, 因为 $a_{i+1}>a_i$, 所以 $a_{i+1} \\geqslant a_i+1$. 但 $a_i<a_i+1$, 所以 $b_{a_i+1}=i+1$, $b_{a_i+1}^{\\prime}=i=b_{a_i+1}-1, b_j^{\\prime}=b_j$ (当 $j \\neq a_i+1$ 时). 由此可知, 调整使得 $b_{a_i+1}$ 减少 1 , 其余的 $b_i$ 不变.\n于是, $S$ 的值不减.\n综上所述, 有 $S \\leqslant 19 \\times 85+1 \\times 85=$ 1700 , 等号在 $a_i=85, b_j=1(1 \\leqslant i \\leqslant 19,1 \\leqslant j \\leqslant 85)$ 时成立.",
+    "remark": "",
+    "figures": []
+}

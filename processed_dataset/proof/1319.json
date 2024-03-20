@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设对于任意实数 $x$ 都有 $\\cos (a \\sin x)>\\sin (b \\cos x)$, 求证:\n$$\na^2+b^2<\\frac{\\pi^2}{4}\n$$",
+    "solution": "证明:用反证法.\n设 $a^2+b^2 \\geqslant \\frac{\\pi^2}{4}$, 将 $a \\sin x+b \\cos x$ 表示为 $\\sqrt{a^2+b^2} \\sin (x+ \\varphi)$ 的形式.\n其中, $\\cos \\varphi=\\frac{a}{\\sqrt{a^2+b^2}}, \\sin \\varphi=\\frac{b}{\\sqrt{a^2+b^2}}$.\n由于 $\\sqrt{a^2+b^2} \\geqslant \\frac{\\pi}{2}$, 故存在实数 $x_0$, 使得\n$$\n\\sqrt{a^2+b^2} \\sin \\left(x_0+\\varphi\\right)=\\frac{\\pi}{2} \\text {. }\n$$\n即\n$$\na \\sin x_0+b \\cos x_0=\\frac{\\pi}{2} .\n$$\n由此即得 $\\cos \\left(a \\sin x_0\\right)=\\sin \\left(b \\cos x_0\\right)$, 与题设矛盾!\n所以\n$$\na^2+b^2<\\frac{\\pi^2}{4} .\n$$",
+    "remark": "",
+    "figures": []
+}

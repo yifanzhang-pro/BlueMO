@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设凸四边形 $A B C D$ 对角线交于 $O$ 点.\n$\\triangle O A D 、 \\triangle O B C$ 的外接圆交于 $O 、 M$ 两点,直线 $O M$ 分别交 $\\triangle O A B 、 \\triangle O C D$ 的外接圆于 $T 、 S$ 两点.\n求证: $M$ 是线段 $T S$ 的中点.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c1i8.png>), 连结 $B T, C S, M A, M B$, $M C, M D$.\n由 $\\angle B T O=\\angle B A O, \\angle B C O=\\angle B M O$, 故 $\\triangle B T M \\backsim \\triangle B A C$, 得\n$$\n\\frac{T M}{A C}=\\frac{B M}{B C} . \\label{eq1}\n$$\n同理, $\\triangle C M S \\backsim \\triangle C B D$, 得\n$$\n\\frac{M S}{B D}=\\frac{C M}{B C} . \\label{eq2}\n$$\n式\\ref{eq1} $\\div$ 式\\ref{eq2} 得 \n$$\n\\frac{T M}{M S}=\\frac{B M}{C M} \\cdot \\frac{A C}{B D} . \\label{eq3}\n$$\n又 $\\angle M B D=\\angle M C A, \\angle M D B=\\angle M A C$.\n故 $\\triangle M B D \\backsim \\triangle M C A$, 得\n$$\n\\frac{B M}{C M}=\\frac{B D}{A C}, \\label{eq4}\n$$\n将式\\ref{eq4}代入\\ref{eq3}, 即得 $T M=M S$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1i8.png"
+    ]
+}

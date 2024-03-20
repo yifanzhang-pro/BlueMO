@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "Tsintsifas 的不等式轨迹问题.\n欧氏几何中下面的结论是熟知的.\n如果 $A 、 B 、 C 、 D$ 是一个平面上的任意四点, 则 $A D \\cdot B C 、 B D \\cdot C A$ 和 $C D \\cdot A B$ 是某一个三角形的三边长; 当 $A 、 B 、 C 、 D$ 四点共圆时, 这个三角形是退化的(在这种情况下,我们有著名的 Ptolemy 定理).\n这个结论的证明并不难, 用复数就更为简单.\n事实上,设 $A 、 B 、 C 、 D$ 对应的复数分别为 $z_1 、 z_2 、 z_3 、 z_4$, 用下面的恒等式\n$$\n\\left(z_1-z_4\\right)\\left(z_2-z_3\\right)+\\left(\\dot{z}_2-z_4\\right)\\left(z_3-z_1\\right)+\\left(z_3-z_4\\right)\\left(z_1-z_2\\right)=0,\n$$\n便可立得结论.\nTsintsifas 在 1983 年的 Crux. Math. (9) 上提出问题:\n问题设 $T$ 是一个给定的 $\\triangle A B C, P$ 是 $T$ 所在平面上的一点,现记以 $a \\cdot P A 、 b \\cdot P B 、 c \\cdot P C$ 为边的三角形为 $T_0$ (可能是退化的). 现设 $R 、 R_0$ 分别是 $T 、 T_0$ 的外接圆半径,求使得不等式\n$$\nP A \\cdot P B \\cdot P C \\leqslant R R_0\n$$\n成立的点 $P$ 的轨迹.",
+    "solution": "解法 2 设 $\\triangle A B C$ 的外心为 $O$, 现以 $P$ 为反演中心, $\\lambda=P A \\cdot P B \\cdot P C$ 为反演幂做反演变换.\n设 $A 、 B 、 C$ 反演后变为 $A^{\\prime} 、 B^{\\prime} 、 C^{\\prime}$, 则\n$$\nB^{\\prime} C^{\\prime}=B C \\cdot \\frac{\\lambda}{P B \\cdot P C}=a \\cdot P A .\n$$\n同理\n$$\nC^{\\prime} A^{\\prime}=b \\cdot P B, A^{\\prime} B^{\\prime}=c \\cdot P C .\n$$\n因此 $\\triangle A^{\\prime} B^{\\prime} C^{\\prime}$ 即为以 $a \\cdot P A 、 b \\cdot P B 、 c \\cdot P C$ 为边的三角形.\n而 $\\odot(O, R)$ 反演后的半径为\n$$\nR_0=R \\frac{\\lambda}{|P O|^2-R^2},\n$$\n因此 $P A \\cdot P B \\cdot P C \\leqslant R R_0$ 等价于\n$$\n\\lambda \\leqslant R^2 \\cdot \\frac{\\lambda}{|P O|^2-R^2},\n$$\n这又等价于\n$$\n|P O| \\leqslant \\sqrt{2} R\n$$\n这说明 $P$ 的轨迹是以 $O$ 为圆心, 半径为 $\\sqrt{2} R$ 的圆及内部.",
+    "remark": "注:由上面的解法看出存在 $\\triangle A B C$ 的反演像与点 $P$ 的垂足三角形相似.",
+    "figures": []
+}

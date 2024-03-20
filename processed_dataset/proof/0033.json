@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例3. 在平面上给定无穷多个点, 已知它们之间的距离都是整数, 求证这些点都在一条直线上.",
+    "solution": "分析:“无穷” 和“整数” 是两个关键词, 去其一, 则结论不成立.\n下面我们就是利用这两点“制造”矛盾来反证结论成立.\n证明若不然, 则存在三点 $A 、 B 、 C$, 使三点不共线且 $A B=r$ 和 $A C=s$ 都是整数.\n设点 $P$ 是任一给定点, 则由三角不等式有\n$$\n|P A-P B| \\leqslant A B=r,\n$$\n即 $|P A-P B|$ 是整数 $0,1,2, \\cdots, r$ 中之一.\n因此, 点 $P$ 或位于直线\n$H_0=$ 直线 $A B$ 的垂直平分线,\n$H_r=$ 直线 $A B$\n之一上,或落在双曲线\n$$\nH_i=\\{X|| X A-X B \\mid=i\\}, i=1,2, \\cdots, r-1\n$$\n之一上.\n同理, 点 $P$ 又或者位于直线\n$$\n\\begin{aligned}\n& K_0=\\text { 线段 } A C \\text { 的垂直平分线, } \\\\\n& K_s=\\text { 直线 } A C\n\\end{aligned}\n$$\n之一上, 或者落在双曲线\n$$\nK_j=\\{X|| X A-X C \\mid=j\\}, j==1,2, \\cdots, s-1\n$$\n之一上.\n由此可知,任一给定点必落在集合\n$$\nH_i \\cap K_j, i=0,1, \\cdots, r, j=0,1, \\cdots, s\n$$\n之一上.\n由于直线 $A B$ 与 $A C$ 不重合, 所以任一 $H_i$ 与任一 $K_j$ 都不相同.\n从而知(1)中每个集合都不多于 4 点,故知集合\n$$\nM=\\bigcup_{i, j}\\left(H_i \\cap K_j\\right)\n$$\n的点数不多于 $4(r+1)(s+1)$, 此与给定点有无穷多个矛盾.",
+    "remark": "",
+    "figures": []
+}

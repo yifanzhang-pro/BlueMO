@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题4 集合 $\\{00,01, \\cdots, 98,99\\}$ 的子集 $X$ 满足: 在任一无穷的数字序列中均有 2 个相邻数字构成 $X$ 的元素.\n$X$ 最少应含多少个元素?",
+    "solution": "对任意的 $i, j \\in\\{0,1, \\cdots, 9\\}, X$ 应包含 $\\overline{i j}$ 或 $\\overline{j i}$ 之一.\n这种无序对 $(i$, $j$ ) 共有 $10+\\frac{1}{2} \\cdot 10 \\cdot 9=55$ 个, 故 $|X| \\geqslant 55$. 又如取 $X=\\{\\overline{i j} \\mid 0 \\leqslant i \\leqslant j \\leqslant 9\\}$, 则 $|X|=55$, 且对任一无穷序列, 设 $i$ 为它所含的最小数字, $j$ 为 $i$ 的后一项,则 $\\overline{i j} \\in X$. 故 $X$ 最少含 55 个元素.",
+    "remark": "",
+    "figures": []
+}

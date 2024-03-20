@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 已知 $a, b, c \\in \\mathbf{R}$, 且 $a+b+c>0, a b+b c+c a>0, a b c>0$. 求证:\n$$\na>0, b>0, c>0 \\text {. }\n$$",
+    "solution": "若不然, 由于 $a b c>0$, 不妨设 $a<0, b<0, c>0$. 由 $a+b+c>0$ 得 $c>|a+b|$, 而 $a b>c \\cdot|a+b|$, 则 $a b>|a+b|^2$,矛盾!",
+    "remark": "",
+    "figures": []
+}

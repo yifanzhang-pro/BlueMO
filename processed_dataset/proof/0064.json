@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题20: 若 $x \\geqslant 1, x^x=x_0, x_0 \\in\\left(k^k,(k+1)^{(k+1)}\\right) \\cap \\mathbf{Q}$, 其中 $k \\in \\mathbf{N}^*$. 求证: $x \\in \\mathbf{Q}^C$. (其中, $\\mathbf{Q}$ 为有理数集, $\\mathbf{Q}^C$ 为无理数集)",
+    "solution": "解: 因为当 $x_2 \\geqslant x_1 \\geqslant 1$ 时, 有 $x_2^{x_2} \\geqslant x_1^{x_2} \\geqslant x_1^{x_1}$. 所以 $y=x^x$ 在 $[1,+\\infty)$ 上单调递增.\n所以 $x^x=x_0$ 在 $[1,+\\infty)$ 上有且仅有一解, 且 $x \\in(k, k+1)$. 假设 $x^x=x_0$ 的解为有理数, 可设 $x=\\frac{n}{m}, m, n \\in \\mathbf{N}^*,(m, n)=1$, 且 $m \\neq 1$;$p, q \\in \\mathbf{R}^{+},\\left(\\frac{q}{p}\\right)^m=\\frac{n}{m}$. 所以 $x^x=\\left(\\frac{n}{m}\\right)^{\\frac{n}{m}}=\\left(\\frac{q}{p}\\right)^n=x_0 \\in \\mathbf{Q}$. 又因为 $(m$, $n)=1$, 所以存在 $a, b \\in \\mathbf{Z}$, 使得 $a m+b n=1$, 所以 $\\frac{q}{p}=\\left(\\frac{q}{p}\\right)^{a m+b n}= \\left[\\left(\\frac{q}{p}\\right)^m\\right]^a \\cdot\\left[\\left(\\frac{q}{p}\\right)^n\\right]^b \\in \\mathbf{Q}$. 所以不妨设 $p, q \\in \\mathbf{N}^*$, 且 $(p, q)=1$, 则 $\\left(p^m\\right.$, $\\left.q^m\\right)=1, \\frac{n}{m}=\\frac{q^m}{p^m}$. 易得 $m \\mid p^m$, 且 $p^m \\mid m$, 所以 $m=p^m$. 注意到 $m$ 为大于 1 的整数,矛盾.\n所以 $x$ 为无理数.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 半径为 6 公里的圆形城市, 有 18 辆警车巡逻, 它们之间用无线电通讯联系.\n若无线电使用范围为 9 公里, 证明不管什么时候最少有两辆车, 每一辆车可以和其余五辆车通讯联系.",
+    "solution": "用 18 个点 $x_1, x_2, \\cdots, x_{18}$ 表示 18 辆警车所在的位置, 令\n$$\nE=\\left\\{\\left(x_i, x_j\\right) \\mid \\frac{d\\left(x_i, x_j\\right)}{12} \\leqslant \\frac{\\sqrt{2}}{2}<\\frac{9}{12}\\right\\},\n$$\n根据定理三, 有 $|E| \\geqslant \\mathrm{C}_{18}^2-\\left[\\frac{18^2}{3}\\right]=45$. 即最少有 45 对车可以互相通讯.\n若题目所述情况不成立, 就是不存在两个 5 度以上的点, 则 $|E| \\leqslant \\frac{1}{2}(1 \\times 17+ 4 \\times 17)<43$,矛盾.",
+    "remark": "",
+    "figures": []
+}

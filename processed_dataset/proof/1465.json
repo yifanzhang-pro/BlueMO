@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 设数列 $a_1, a_2, \\cdots, a_{2 n+1}$ 满足: $a_i-2 a_{i+1}+a_{i+2} \\geqslant 0(i=1,2, \\cdots, 2 n-1)$, 求证:\n$$\n\\frac{a_1+a_3+\\cdots+a_{2 n+1}}{n+1} \\geqslant \\frac{a_2+a_4+\\cdots+a_{2 n}}{n} .\n$$",
+    "solution": "设 $(k-1)\\left(a_1+a_3+\\cdots+a_{2 k-1}\\right) \\geqslant k\\left(a_2+a_4+\\cdots+a_{2 k-2}\\right)$, 要证命题对 $n$ 成立, 只须证 $a_1+a_2+\\cdots+a_{2 k-1}+k a_{2 k+2} \\geqslant a_2+a_4+\\cdots+a_{2 k-2}+(k+$ 1) $a_{2 k}$, 即 $k\\left(a_{2 k+1}-a_{2 k}\\right) \\geqslant\\left(a_2-a_1\\right)+\\cdots+\\left(a_{2 k}-a_{2 k-1}\\right)$, 由条件 $a_{i+2}-a_{i+1} \\geqslant a_{i+1}-a_i$, 这是显然的.",
+    "remark": "",
+    "figures": []
+}

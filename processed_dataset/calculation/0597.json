@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题10 设 $x 、 y 、 z$ 是 3 个不全为零的实数, 求 $\\frac{x y+2 y z}{x^2+y^2+z^2}$ 的最大值.",
+    "solution": "引人两个正参数 $\\alpha 、 \\beta$, 有 $\\alpha^2 x^2+y^2 \\geqslant 2 \\alpha x y, \\beta^2 y^2+z^2 \\geqslant 2 \\beta y z$. 所以 $x y \\leqslant \\frac{\\alpha}{2} x^2+\\frac{1}{2 \\alpha} y^2, 2 y z \\leqslant \\beta y^2+\\frac{1}{\\beta} z^2$. 因此 $x y+2 y z \\leqslant \\frac{\\alpha}{2} x^2+\\left(\\frac{1}{2 \\alpha}+\\beta\\right) y^2+ \\frac{1}{\\beta} z^2$. 令 $\\frac{\\alpha}{2}=\\frac{1}{2 \\alpha}+\\beta=\\frac{1}{\\beta}$, 解得 $\\alpha=\\sqrt{5}, \\beta=\\frac{2 \\sqrt{5}}{5}$. 故 $x y+2 y z \\leqslant \\frac{\\sqrt{5}}{2}\\left(x^2+\\right. \\left.y^2+z^2\\right)$, 即 $\\frac{x y+2 y z}{x^2+y^2+z^2} \\leqslant \\frac{\\sqrt{5}}{2}$. 解方程组 $\\left\\{\\begin{array}{l}\\frac{\\alpha}{2} x^2=\\frac{1}{2 \\alpha} y^2, \\\\ \\beta y^2=\\frac{1}{\\beta} z^2,\\end{array}\\right.$ 可得一组解 $(x, y, z)=(1, \\sqrt{5}, 2)$, 即当 $x=1, y=\\sqrt{5}, z=2$ 时, $\\frac{x y+2 y z}{x^2+y^2+z^2}$ 取 $\\frac{\\sqrt{5}}{2}$. 从而它的最大值为 $\\frac{\\sqrt{5}}{2}$.",
+    "remark": "",
+    "figures": []
+}

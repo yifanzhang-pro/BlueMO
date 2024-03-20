@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题16. 设 $a_1, a_2, \\cdots, a_n$ 为正实数,证明:\n$$\n\\frac{\\left(\\sum_{i=1}^n a_i\\right)^2}{2 \\sum_{i=1}^n a_i^2} \\leqslant \\frac{a_1}{a_2+a_3}+\\frac{a_2}{a_3+a_4}+\\cdots+\\frac{a_n}{a_1+a_2} .\n$$",
+    "solution": "令 $a_{n+1}=a_1, a_{n+2}=a_2$, 则 $\\sum_{i=1}^n a_i\\left(a_{i+1}+a_{i+2}\\right) \\sum_{i=1}^n \\frac{a_i}{a_{i+1}+a_{i+2}} \\geqslant \\left(\\sum_{i=1}^n a_i\\right)^2$. 于是 $\\sum_{i=1}^n \\frac{a_i}{a_{i+1}+a_{i+2}} \\geqslant \\frac{\\left(\\sum_{i=1}^n a_i\\right)^2}{\\sum_{i=1}^n a_i\\left(a_{i+1}+a_{i+2}\\right)}$. 只需证 $2 \\sum_{i=1}^n a_i^2 \\geqslant \\sum_{i=1}^n a_i\\left(a_{i+1}+a_{i+2}\\right)$, 即 $\\frac{1}{2} \\sum_{i=1}^n\\left[\\left(a_i^2+a_{i+1}^2\\right)+\\left(a_i^2+a_{i+2}^2\\right)\\right] \\geqslant \\sum_{i=1}^n a_i\\left(a_{i+1}+a_{i+2}\\right)$. 由 $a_i^2+a_{i+1}^2 \\geqslant 2 a_i a_{i+1}$, 便得到命题成立.",
+    "remark": "",
+    "figures": []
+}

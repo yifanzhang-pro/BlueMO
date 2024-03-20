@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 一条河的两岸有一些城市, 城市的总数不少于 3 个.\n城市由一些航线连接着, 每条航线将位于两岸的一对城市联系在一起, 每个城市恰好与另一边的 $k$ 个城市连接.\n人们可以在任何两座城市之间往来.\n证明: 如果航线中有一条被取消,人们还是可以在任何两座城市之间往来.",
+    "solution": "不妨称河的两岸分别为北岸与南岸.\n北岸的 $n$ 个城市用点 $x_1$, $x_2, \\cdots, x_n$ 表示, 其全体记为 $X=\\left\\{x_1, x_2, \\cdots, x_n\\right\\}$; 南岸的 $m$ 个城市用点 $y_1, y_2, \\cdots, y_m$ 表示, 其全体记为 $Y=\\left\\{y_1, y_2, \\cdots, y_m\\right\\}$. 如果北岸的城市 $x_i$ 与南岸的城市 $y_j$ 之间有航线, 则连接成为边 $\\left(x_i, y_i\\right)$, 所有的边组成的集合记为 $E$. 这就得到了一个由顶点集 $X 、 Y$ 与边集 $E$ 构成的图, 称为 2 部分图, 也称为偶图, 记为 $G=(X, Y ; E)$. 题中的后两个条件即是: 由任一顶点引出的边都是 $k$ 条; 图 $G$ 是连通的, 即任意两个顶点之间都有由若干条边连接而成的路.\n题目的结论是: 从 $E$ 中删去任意一条边 $e$, 图 $G^{\\prime}=(X, Y ; E-e)$ 仍然是连通的.\n因为每个顶点恰与 $k$ 条边相关联, 所以有\n$$\n|X| k=|E|=|Y| k,\n$$\n其中 $|X|,|E|,|Y|$ 表示集合 $X, E, Y$ 中元素的个数.\n于是有 $|X|=|Y|$, 即 $n=m$. 又因 $|X|+|Y| \\geqslant 3$, 所以 $|X|=|Y| \\geqslant 2$.\n现去掉 $G$ 的一条边, 得到的图为 $G^{\\prime}$. 若 $G^{\\prime}$ 不连通, 则 $G^{\\prime}$ 由两个连通部分 $G_1, G_2$ 构成.\n设\n$$\n\\begin{aligned}\n& X=X_1 \\cup X_2, X_1 \\cap X_2=\\varnothing \\\\\n& Y=Y_1 \\cup Y_2, Y_1 \\cap Y_2=\\varnothing . \\\\\n& G_1=\\left(X_1, Y_1 ; E_1\\right), G_2=\\left(X_2, Y_2 ; E_2\\right) .\n\\end{aligned}\n$$\n去掉的一条边是连接 $X_1$ 与 $Y_2$ 的顶点, 则\n$$\n\\begin{aligned}\n& \\left|X_1\\right| k-1=\\left|E_1\\right|=\\left|Y_1\\right| k, \\\\\n& \\left|X_2\\right| k=\\left|E_2\\right|=\\left|Y_2\\right| k-1,\n\\end{aligned}\n$$\n从而 $\\left(\\left|X_1\\right|-\\left|Y_1\\right|\\right) k=1$, 得 $k=1$.\n又 $G$ 连通, 则 $|X|=1$,与 $|X| \\geqslant 2$ 矛盾.\n故 $G^{\\prime}$ 连通, 从而结论成立.",
+    "remark": "",
+    "figures": []
+}

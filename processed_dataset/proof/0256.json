@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 证明: 费马数 $F_k=2^{2^k}+1(k \\geqslant 0)$ 的任一个约数均 $\\equiv 1\\left(\\bmod 2^{k+1}\\right)$.",
+    "solution": "只要证明 $F_k$ 的任一个素因子 $p$ 满足 $p \\equiv 1\\left(\\bmod 2^{k+1}\\right)$. 显然 $p \\neq 2$. 设 2 模 $p$ 的阶为 $r$, 由 $p \\mid F_k$ 得\n$$\n2^{2^k} \\equiv-1(\\bmod p), \\label{eq1}\n$$\n故 $2^{2^{k+1}} \\equiv 1(\\bmod p)$, 从而 $r \\mid 2^{k+1}$, 所以 $r$ 是 2 的方幂.\n设 $r=2^l$, 其中 $0 \\leqslant l \\leqslant k+1$. 若 $l \\leqslant k$, 则由 $2^{2^l} \\equiv 1(\\bmod p)$ 反复平方, 可推出 $2^{2^k} \\equiv 1(\\bmod p)$, 结合 式\\ref{eq1} 得 $p=2$, 这不可能.\n故必须 $l=k+1$. 又 $2^{p-1} \\equiv 1(\\bmod p)$ 从而有 $r \\mid(p- 1)$, 故 $2^{k+1} \\mid(p-1)$, 即 $p \\equiv 1\\left(\\bmod 2^{k+1}\\right)$.",
+    "remark": "",
+    "figures": []
+}

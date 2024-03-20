@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise19.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 已知三个数 $5,12,18$. 每一次操作是从这三个数中任意选出两个 $a, b$, 并用 $\\frac{\\sqrt{2}}{2}(a+b), \\frac{\\sqrt{2}}{2}(a-b)$ 代替它们.\n问: 是否能进行有限次操作, 使得得到的三个数为 $3,13,20$ ?",
+    "solution": "因为\n$$\n\\left[\\frac{\\sqrt{2}}{2}(a+b)\\right]^2+\\left[\\frac{\\sqrt{2}}{2}(a-b)\\right]^2=a^2+b^2,\n$$\n所以, 每一次操作后, 这三个数的平方和保持不变 (即三个数的平方和是不变量). 而 $5^2+12^2+18^2=493,3^2+13^2+20^2=578$, 于是, 无论如何操作, 数 $5,12,18$ 不会变为数 $3,13,20$.",
+    "remark": "",
+    "figures": []
+}

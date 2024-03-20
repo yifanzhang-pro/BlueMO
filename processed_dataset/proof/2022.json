@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $P$ 为平行四边形 $A B C D$ 内一点, 求证:\n$$\nP A \\cdot P C+P B \\cdot P D \\geqslant A B \\cdot B C, \\label{eq1}\n$$\n并指出等号成立的条件.",
+    "solution": "证明:如图(<FilePath:./images/volume9/figures/fig-c2i5.png>), 作 $P Q$ 平行并等于 $C D$, 连接 $C Q 、 B Q$, 则 $C D P Q$ 与 $A B Q P$ 均是平行四边形,所以\n$$\nC Q=P D, B Q=P A, P Q=A B .\n$$\n在四边形 $P B Q C$ 中由 Ptolemy 不等式有\n$$\nB Q \\cdot P C+P B \\cdot C Q \\geqslant P Q \\cdot B C,\n$$\n即\n$$\nP A \\cdot P C+P B \\cdot P D \\geqslant A B \\cdot B C,\n$$\n等号成立当且仅当 $P 、 B 、 Q 、 C$ 四点共圆, 即 $\\angle C P B+\\angle C Q B=\\pi$, 而 $\\angle C Q B=\\angle A P D$, 所以式\\ref{eq1}等号成立的条件为\n$$\n\\angle A P D+\\angle C P B=\\pi .\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c2i5.png"
+    ]
+}

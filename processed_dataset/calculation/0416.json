@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise10.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 求所有正整数 $n$, 使得 $n=d^2(n)(d(n)$ 表示正整数 $n$ 的正约数个数).",
+    "solution": "显然 $d^2(1)=1$, 故 $n=1$ 时满足题意.\n下面考虑 $n$ 和 $d(n)$ 大于 1 的情况.\n设 $d(n)=p_1^{\\alpha_1} p_2^{\\alpha_2} \\cdots p_k^{\\alpha_k}$ 为 $d(n)$ 的标准素因数分解, 由已知得 $n$ 的标准分解为 $n=p_1^{2 \\alpha_1} p_2^{2 \\alpha_2} \\cdots p_k^{2 \\alpha_k}$, 从而又有 $d(n)=\\left(2 \\alpha_1+1\\right)\\left(2 \\alpha_2+1\\right) \\cdots\\left(2 \\alpha_k+1\\right)$, 即\n$$\np_1^{\\alpha_1} p_2^{\\alpha_2} \\cdots p_{k^k}^{\\alpha_k}=\\left(2 \\alpha_1+1\\right)\\left(2 \\alpha_2+1\\right) \\cdots\\left(2 \\alpha_k+1\\right) . \\label{eq1}\n$$\n显然式\\ref{eq1}右边为奇数,故 $p_1, p_2, \\cdots, p_k$ 为奇素数, 所以\n$$\np_i^{\\alpha_i} \\geqslant 3^{\\alpha_i}=(1+2)^{\\alpha_i} \\geqslant 1+2 \\alpha_i(i=1,2, \\cdots, k),\n$$\n且等号当且仅当 $p_i=3, \\alpha_i=1$ 时成立.\n因此, 为使式\\ref{eq1}成立, 只能是 $k=1, p_1=3, \\alpha_1=1$, 即 $n=3^2=9$.\n综上可知满足条件的正整数 $n$ 是 1 和 9 .",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 沿着圆周放着一些数,如果有依次相连的 4 个数 $a, b, c, d$ 满足不等式 $(a-d)(b-c)>0$, 那么就可以交换 $b, c$ 的位置, 这称为一次操作.\n(1)若圆周上依次放着数 $1,2,3,4,5,6$, 问: 是否能经过有限次操作后, 对圆周上任意依次相连的 4 个数 $a, b, c, d$, 都有 $(a-d)(b-c) \\leqslant 0$ ? 请说明理由.\n(2)若圆周上从小到大按顺时针方向依次放着 2006 个正整数 $1,2, \\cdots$, 2006, 问: 是否能经过有限次操作后, 对圆周上任意依次相连的 4 个数 $a, b, c, d$, 都有 $(a-d)(b-c) \\leqslant 0$ ? 请说明理由.",
+    "solution": "(1) 答案是肯定的.\n具体操作如图(<FilePath:./images/volume14/figures/fig-c9a6.png>)\n(2) 答案是肯定的.\n考虑这 2006 个数的相邻两数乘积之和为 $P$.\n开始时, $P_0=1 \\times 2+2 \\times 3+3 \\times 4+\\cdots+2005 \\times 2006+2006 \\times 1$, 经过 $k(k \\geqslant 0)$ 次操作后, 这 2006 个数的相邻两数乘积之和为 $P_k$, 此时若圆周上依次相连的 4 个数 $a, b, c, d$ 满足不等式 $(a-d)(b-c)>0$, 即 $a b+c d>a c+ b d$, 交换 $b, c$ 的位置后, 这 2006 个数的相邻两数乘积之和为 $P_{k+1}$, 有\n$$\nP_{k+1}-P_k=(a c+c b+b d)-(a b+b c+c d)=a c+b d-a b-c d<0 .\n$$\n所以 $P_{k+1}-P_k \\leqslant-1$, 即每一次操作, 相邻两数乘积的和至少减少 1 , 由于相邻两数乘积总大于 0 ,故经过有限次操作后, $P$ 无法变得更小, 此时对任意依次相连的 4 个数 $a, b, c, d$, 一定有 $(a-d)(b-c) \\leqslant 0$.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c9a6.png"
+    ]
+}

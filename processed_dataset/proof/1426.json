@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 设 $m, n \\in \\mathbf{Z}^{+}, a_1, a_2, \\cdots, a_m$ 是集合 $\\{1,2, \\cdots, n\\}$ 中的不同元素,每当\n$a_i+a_j \\leqslant n, 1 \\leqslant i \\leqslant j \\leqslant m$, 就有某个 $k, 1 \\leqslant k \\leqslant m$, 使得 $a_i+a_j=a_k$. 求证: $\\frac{1}{m}\\left(a_1+a_2+\\cdots+a_m\\right) \\geqslant \\frac{1}{2}(n+1)$.",
+    "solution": "不妨设 $a_1>a_2>\\cdots>a_m$, 下面证明: 对任意满足 $1 \\leqslant i \\leqslant m$ 的正整数 $i$, 有\n$$\na_i+a_{n+1-i} \\geqslant n+1 . \\label{(1)}\n$$\n如果(1)成立, 则 $2\\left(a_1+a_2+\\cdots+a_m\\right)=\\left(a_1+a_m\\right)+\\left(a_2+a_{m-1}\\right)+\\cdots+ \\left(a_m+a_1\\right) \\geqslant m(n+1)$, 因此结论成立.\n对(1)可以用反证法, 若存在某个正整数 $i, 1 \\leqslant i \\leqslant m$, 使得 $a_i+a_{m+1-i} \\leqslant n$,于是 $a_i<a_i+a_m<a_i+a_{m-1}<\\cdots<a_i+a_{m+1-i} \\leqslant n . a_i+a_m, a_i+a_{m-1}, \\cdots$, $a_i+a_{m+1-i}$ 是 $i$ 个正整数,且每个都 $\\leqslant n$. 由题目条件, 这 $i$ 个正整数每个都是 $a_k$ 的形式 $(1 \\leqslant k \\leqslant m)$, 且两两不同, 而它们都大于 $a_i$, 故必为 $a_1, a_2, \\cdots, a_{i-1}$ 之一.\n盾!",
+    "remark": "",
+    "figures": []
+}

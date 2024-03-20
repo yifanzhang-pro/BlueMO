@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题9.求证: 将自然数 $1,2, \\cdots, N$ 分到 $n$ 个类中, 则在 $N$ 充分大时,一定有一个类同时含有数 $x 、 y$ 及这两个数的差 $|x-y|$. (许尔(Schur) 定理)",
+    "solution": "考虑 $n$ 色完全图 $K_{r_n}$, 染色方法是当且仅当 $|x-y|$ 在第 $i$ 类时,将 $(x$, $y$ ) 染上第 $i$ 种颜色.\n由定理二, $K_{r_n}$ 中一定有一个同色的三角形.\n设这三角形的三边均为第 $j$ 种颜色, 则在 $1,2, \\cdots, r_n$ 中有三个自然数 $a>b>c$, 使 $x= a-c, y=a-b, z=b-c=x-y$ 均在第 $j$ 类中.",
+    "remark": "",
+    "figures": []
+}

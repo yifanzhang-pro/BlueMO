@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 设 $g(\\theta)=\\lambda_1 \\cos \\theta+\\lambda_2 \\cos 2 \\theta+\\cdots+\\lambda_n \\cos n \\theta$, 其中 $\\lambda_1, \\lambda_2, \\cdots, \\lambda_n, \\theta$ 均为实数.\n若对一切实数 $\\theta$, 恒有 $g(\\theta) \\geqslant-1$. 求证: $\\lambda_1+\\lambda_2+\\cdots+\\lambda_n \\leqslant n$.",
+    "solution": "令 $\\theta_k=\\frac{2 k \\pi}{n+1}, k=0,1,2, \\cdots, n$, 则有\n$$\n\\sum_{k=0}^n \\cos m \\theta_k=\\sum_{k=0}^n \\sin m \\theta_k=0, m=1,2, \\cdots, n . \\label{eq1}\n$$\n(事实上, $\\sum_{k=0}^n \\mathrm{e}^{\\mathrm{i} n \\theta_k}=\\frac{1-\\mathrm{e}^{\\mathrm{i} m \\cdot 2 \\pi}}{1-\\mathrm{e}^{\\mathrm{i} m \\frac{2 \\pi}{n+1}}}=0$, 于是\\ref{eq1}式成立), 因此\n$$\n\\begin{aligned}\n& g(0)+g\\left(\\theta_1\\right)+g\\left(\\theta_2\\right)+\\cdots+g\\left(\\theta_n\\right) \\\\\n= & \\lambda_1\\left(\\cos 0+\\cos \\theta_1+\\cdots+\\cos \\theta_n\\right)+\\lambda_2\\left(\\cos 0+\\cos 2 \\theta_1+\\cdots+\\cos 2 \\theta_n\\right) \\\\\n& +\\cdots+\\lambda_n\\left(\\cos 0+\\cos n \\theta_1+\\cdots+\\cos n \\theta_n\\right)=0 .\n\\end{aligned}\n$$\n故由 $g\\left(\\theta_1\\right) \\geqslant-1, g\\left(\\theta_2\\right) \\geqslant-1, \\cdots, g\\left(\\theta_n\\right) \\geqslant-1$ 得\n$$\n\\lambda_1+\\lambda_2+\\cdots+\\lambda_n=g(0)=-\\left[g\\left(\\theta_1\\right)+g\\left(\\theta_2\\right)+\\cdots+g\\left(\\theta_n\\right)\\right] \\leqslant n,\n$$\n证毕.",
+    "remark": "",
+    "figures": []
+}

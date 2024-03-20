@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例18. (Ostrowski) 设实数 $a_1, a_2, \\cdots, a_n$ 与 $b_1, b_2, \\cdots, b_n$ 不成比例.\n实数 $x_1, x_2, \\cdots, x_n$ 满足:\n$$\n\\left\\{\\begin{array}{l}\na_1 x_1+a_2 x_2+\\cdots+a_n x_n=0, \\\\\nb_1 x_1+b_2 x_2+\\cdots+b_n x_n=1 .\n\\end{array}\\right.\n$$\n求证: $x_1^2+x_2^2+\\cdots+x_n^2 \\geqslant \\frac{\\sum_{i=1}^n a_i^2}{\\sum_{i=1}^n a_i^2 \\cdot \\sum_{i=1}^n b_i^2-\\left(\\sum_{i=1}^n a_i b_i\\right)^2}$.",
+    "solution": "证法 3 (综合运用上述两种方法)\n由条件, 对任意 $\\lambda \\in \\mathbf{R}$, 有 $\\sum_{i=1}^n\\left(b_i-\\lambda a_i\\right) x_i=1$.\n利用 Cauchy 不等式可得\n$$\n\\sum_{i=1}^n x_i^2 \\cdot \\sum_{i=1}^n\\left(b_i-\\lambda a_i\\right)^2 \\geqslant\\left[\\sum_{i=1}^n\\left(b_i-\\lambda a_i\\right) x_i\\right]^2=1 .\n$$\n所以\n$$\n\\sum_{i=1}^n x_i^2 \\geqslant \\frac{1}{B+\\lambda^2 A-2 \\lambda C} .\n$$\n我们的目标是证明\n$$\n\\sum_{i=1}^n x_i^2 \\geqslant \\frac{1}{B-\\frac{C^2}{A}},\n$$\n因此, 只需即\n$$\n\\lambda^2 A-2 \\lambda C \\leqslant-\\frac{C^2}{A} .\n$$\n$\\lambda^2 A^2-2 \\lambda A C+C^2 \\leqslant 0$.\n取 $\\lambda=\\frac{C}{A}$ 即可满足上述条件.\n说明 2 可以从本题证明 Fan-Todd 定理:\n设 $a_k 、 b_k(k=1,2, \\cdots, n)$ 为两组不成比例的实数列, 已知 $a_i b_k \\neq a_k b_i(i \\neq k)$, 则\n$$\n\\frac{\\sum_{k=1}^n a_k^2}{\\sum_{k=1}^n a_k^2 \\sum_{k=1}^n b_k^2-\\left(\\sum_{k=1}^n a_k b_k\\right)^2} \\leqslant\\left(\\mathrm{C}_n^2\\right)^{-2} \\cdot \\sum_{k=1}^n\\left(\\sum_{i \\neq k} \\frac{a_k}{a_i b_k-a_k b_i}\\right)^2 .\n$$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise18.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 设 $x \\in \\mathbf{R}$, 求函数 $f(x)=\\sqrt{x^2+1}+\\sqrt{(x-12)^2+16}$ 的最小值.",
+    "solution": "如图(<FilePath:./images/volume14/figures/fig-c18a3.png>), 取 $A$ 为数轴原点, $A B=12$, 再作 $A B$ 垂线 $A C, B D$,使 $A C=1, B D=4$,在数轴上取点 $P$,使 $A P=x$, 则 $f(x)=|C P|+|D P|$, 当 $C, P, D$ 共线时, $f$ 值最小, 此时 $f_{\\text {min }}=|C D|= |A E|=\\sqrt{12^2+5^2}=13$.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c18a3.png"
+    ]
+}

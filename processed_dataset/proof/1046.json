@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题30. 设 $x 、 y 、 z$ 为实数, $0<x<y<z<\\frac{\\pi}{2}$, 证明:\n$$\n\\frac{\\pi}{2}+2 \\sin x \\cos y+2 \\sin y \\cos z>\\sin 2 x+\\sin 2 y+\\sin 2 z .\n$$",
+    "solution": "原不等式等价于 $\\frac{\\pi}{2}>2 \\sin x(\\cos x- \\cos y)+2 \\sin y(\\cos y-\\cos z)+\\sin 2 z$, 即 $\\frac{\\pi}{4}> \\sin x(\\cos x-\\cos y)+\\sin y(\\cos y-\\cos z)+ \\sin z \\cos z$, 如图(<FilePath:./images/volume3/figures/fig-c5p30.png>)在单位圆中, 设半径 $O A 、 O B 、 O C$ 与 $O x$ 的夹角分别为 $x 、 y 、 z$, 则 $S_1=\\sin x(\\cos x- \\cos y), S_2=\\sin y(\\cos y-\\cos z), S_3=\\sin z \\cdot \\cos z$, 显然 $S_1+S_2+S_3<\\frac{\\pi}{4}$, 故得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c5p30.png"
+    ]
+}

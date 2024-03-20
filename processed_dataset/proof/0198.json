@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例8. 连结正 $n$ 边形的顶点, 得到一个闭的 $n$ 一折线.\n证明: 若 $n$ 为偶数, 则在连线中有两条平行线; 若 $n$ 为奇数,连线中不可能恰有两条平行线.",
+    "solution": "证明:这是一个不宜用几何方法解决的几何问题, 它与模 $n$ 的完全剩余系有关.\n依逆时针顺序将顶点标上数 $0,1, \\cdots, n-1$. 设问题中的闭折线为 $a_0 \\rightarrow a_1 \\rightarrow \\cdots \\rightarrow a_{n-1} \\rightarrow a_n=a_0$, 这里 $a_0, a_1, \\cdots, a_{n-1}$ 是 $0,1, \\cdots, n-1$ 的一个排列.\n首先, 由诸 $a_i$ 是正 $n$ 边形的顶点易知\n$$\n\\begin{aligned}\n& a_i a_{i+1} / / a_j a_{j+1} \\Leftrightarrow \\widetilde{a_{i+1} a_j}=\\widehat{a_{j+1} a_i} \\\\\n& \\Leftrightarrow a_i+a_{i+1} \\equiv a_j+a_{j+1}(\\bmod n) .\n\\end{aligned}\n$$\n当 $n$ 为偶数时, $2 \\nmid(n-1)$, 故模 $n$ 的任一完系之和 $\\equiv 0+1+\\cdots+(n-1)= \\frac{n(n-1)}{2} \\not \\equiv 0(\\bmod n)$.\n但另一方面,我们总有\n$$\n\\begin{aligned}\n\\sum_{i=0}^{n-1}\\left(a_i+a_{i+1}\\right) & =\\sum_{i=0}^{n-1} a_i+\\sum_{i=0}^{n-1} a_{i+1}=2 \\sum_{i=0}^{n-1} a_i=2 \\times \\frac{n(n-1)}{2} \\\\\n& =n(n-1) \\equiv 0(\\bmod n) . \\label{eq1}\n\\end{aligned}\n$$\n所以 $a_i+a_{i+1}(i=0,1, \\cdots, n-1)$ 不能构成模 $n$ 的完全剩余系, 即必有 $i \\neq j(0 \\leqslant i, j \\leqslant n-1)$, 使得\n$$\na_i+a_{i+1} \\equiv a_j+a_{j+1}(\\bmod n),\n$$\n因而必有一对边 $a_i a_{i+1} / / a_j a_{j+1}$.\n当 $n$ 为奇数时, 若恰有一对边 $a_i a_{i+1} / / a_j a_{j+1}$, 则 $n$ 个数 $a_0+a_1, a_1+ a_2, \\cdots, a_{n-1}+a_0$ 之中恰有一个剩余类 $r$ 出现两次, 从而也恰缺少一个剩余类 $s$, 于是 (这时 $2 \\mid(n-1)$ )\n$$\n\\begin{aligned}\n\\sum_{i=0}^{n-1}\\left(a_i+a_{i+1}\\right) & \\equiv 0+1+\\cdots+(n-1)+r-s=\\frac{n(n-1)}{2}+r-s \\\\\n& \\equiv r-s(\\bmod n) .\n\\end{aligned}\n$$\n结合式\\ref{eq1}得 $r \\equiv s(\\bmod n)$, 矛盾! 这表明在 $n$ 为奇数时, 不可能恰有一对边平行.",
+    "remark": "",
+    "figures": []
+}

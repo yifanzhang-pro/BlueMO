@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-5.tex",
+    "text": "4.5 带参数的柯西不等式如果 $a_i, b_i \\in \\mathbf{R}, \\lambda_i>0, i=1,2, \\cdots, n$, 则\n$$\n\\left(\\sum_{i=1}^n a_i b_i\\right)^2 \\leqslant \\sum_{i=1}^n \\lambda_i a_i^2 \\cdot \\sum_{i=1}^n \\frac{1}{\\lambda_i} b_i^2 .\n$$",
+    "figures": []
+}

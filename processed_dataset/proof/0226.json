@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $n$ 个整数具有下述性质: 其中任意 $n-1$ 个数之积与剩下那个数的差都能被 $n$ 整除.\n证明: 这 $n$ 个数的平方和也能被 $n$ 整除.",
+    "solution": "设 $a_1, \\cdots, a_n$ 是具有所说性质的整数, $A$ 是它们的积, 对于 $1 \\leqslant i \\leqslant n$, 数 $n$ 整除 $\\frac{A}{a_i}-a_i$, 因而能整除\n$$\na_i\\left(\\frac{A}{a_i}-a_i\\right)=A-a_i^2 .\n$$\n故 $n$ 整除这些数的和 $\\left(A-a_1^2\\right)+\\cdots+\\left(A-a_n^2\\right)=n A-\\left(a_1^2+\\cdots+a_n^2\\right)$. 从而 $n$ 整除 $a_1^2+\\cdots+a_n^2$.",
+    "remark": "",
+    "figures": []
+}

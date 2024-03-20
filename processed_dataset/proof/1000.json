@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例12. 设 $\\alpha, \\beta \\in\\left(0, \\frac{\\pi}{2}\\right)$, 求证: $\\frac{1}{\\cos ^2 \\alpha}+\\frac{1}{\\sin ^2 \\alpha \\sin ^2 \\beta \\cos ^2 \\beta} \\geqslant 9$, 并讨论 $\\alpha 、 \\beta$ 为何值时, 等号成立.",
+    "solution": "分析:当不等式中出现两个变量时, 先通过局部调整, 消元化为一个变量再证明.\n证明因为 $\\sin ^2 \\beta \\cos ^2 \\beta=\\frac{1}{4} \\sin ^2 2 \\beta \\leqslant \\frac{1}{4}$,\n所以左边 $\\geqslant \\frac{1}{\\cos ^2 \\alpha}+\\frac{4}{\\sin ^2 \\alpha}=1+\\tan ^2 \\alpha+4+4 \\cot ^2 \\alpha$\n$$\n=5+\\tan ^2 \\alpha+\\frac{4}{\\tan ^2 \\alpha} \\geqslant 5+2 \\sqrt{4}=9 .\n$$\n当且仅当 $\\sin ^2 2 \\beta=1, \\tan ^2 \\alpha=\\frac{4}{\\tan ^2 \\alpha}$, 即 $\\alpha=\\arctan \\sqrt{2}, \\beta=\\frac{\\pi}{4}$ 时, 等号成立.\n评注本题还可加强为 $\\frac{1}{\\cos ^2 \\alpha}+\\frac{1}{\\sin ^2 \\alpha \\sin ^2 \\beta \\cos ^2 \\beta} \\geqslant 9+\\left(\\frac{2 \\cot \\alpha}{\\sin 2 \\beta}-\\tan \\alpha\\right)^2$.\n可这样证明: 因为 $\\left(\\cos ^2 \\alpha+\\sin ^2 \\alpha\\right)\\left(\\frac{1}{\\cos ^2 \\alpha}+\\frac{1}{\\sin ^2 \\alpha \\sin ^2 \\beta \\cos ^2 \\beta}\\right)-(1+ \\left.\\frac{1}{\\sin \\beta \\cos \\beta}\\right)^2=\\left(\\frac{\\cos \\alpha}{\\sin \\alpha \\sin \\beta \\cos \\beta}-\\frac{\\sin \\alpha}{\\cos \\alpha}\\right)^2$,\n所以 $\\frac{1}{\\cos ^2 \\alpha}+\\frac{1}{\\sin ^2 \\alpha \\sin ^2 \\beta \\cos ^2 \\beta}=\\left(1+\\frac{2}{\\sin 2 \\beta}\\right)^2+\\left(\\frac{2 \\cot \\alpha}{\\sin 2 \\beta}-\\tan \\alpha\\right)^2 \\geqslant 9+ \\left(\\frac{2 \\cot \\alpha}{\\sin 2 \\beta}-\\tan \\alpha\\right)^2$, 当且仅当 $\\sin 2 \\beta=1$, 即 $\\beta=\\frac{\\pi}{4}$ 时, 原不等式中等号成立.",
+    "remark": "",
+    "figures": []
+}

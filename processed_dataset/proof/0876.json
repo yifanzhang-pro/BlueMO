@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例1 设 $a 、 b 、 c$ 是绝对值小于 1 的实数, 证明:\n$$\na b+b c+c a+1>0 .\n$$",
+    "solution": "证构造一次函数:\n$$\nf(x)=(b+c) x+b c+1,-1<x<1 .\n$$\n它的图象是一条线段, 但不包括两个端点 $(-1, f(-1)),(1, f(1))$, 若能证明其两个端点的函数值 $f(-1)$ 和 $f(1)$ 均大于 0 , 则对定义域内的每一点 $x, f(x)$ 恒大于 0 .\n因为\n$$\n\\begin{gathered}\nf(-1)=-(b+c)+b c+1=(b-1)(c-1)>0, \\\\\nf(1)=(b+c)+b c+1=(b+1)(c+1)>0,\n\\end{gathered}\n$$\n所以当 $-1<x<1$ 时, $f(x)$ 恒大于 0 ,\n即 $f(a)=a(b+c)+b c+1=a b+b c+c a+1>0$.\n说明利用一次函数的单调性来证明不等式是一种常用的方法.\n如何 “构造”好这个一次函数是解题的关键.",
+    "remark": "",
+    "figures": []
+}

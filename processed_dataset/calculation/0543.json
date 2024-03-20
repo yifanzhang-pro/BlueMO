@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例12 函数 $f, g: \\mathbf{R} \\rightarrow \\mathbf{R}$ 均非常数, 且满足:\n$$\n\\left\\{\\begin{array}{l}\nf(x+y)=f(x) g(y)+g(x) f(y), \\quad\\quad (1)\\\\\ng(x+y)=g(x) g(y)-f(x) f(y) .\\quad\\quad (2)\n\\end{array}\\right.\n$$\n求 $f(0)$ 与 $g(0)$ 的所有可能值.",
+    "solution": "解:自然地,令 $x=y=0$, 代入(1)、(2), 得\n$$\n\\left\\{\\begin{array}{l}\nf(0)=2 f(0) g(0), \\quad\\quad (3)\\\\\ng(0)=g^2(0)-f^2(0) . \\quad\\quad (4)\n\\end{array}\\right.\n$$\n若 $f(0) \\neq 0$, 则由 (3), $g(0)=\\frac{1}{2}$. 由 (4), 有\n$$\nf^2(0)=g^2(0)-g(0)=-\\frac{1}{4}<0 \\text {,矛盾! }\n$$\n所以 $f(0)=0$, 因此\n$$\ng(0)=g^2(0) .\n$$\n若 $g(0)=0$, 在 (1) 中令 $y=0$, 得\n$$\nf(x) \\equiv 0 .\n$$\n与题设不符.\n所以 $g(0)=1$.\n综上所述, $f(0)=0, g(0)=1$.\n说明我们经常会遇到函数在某个点上取值可能不确定的情况, 这就需要我们去伪存真,并意识到题目可能会有多解.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题21. 设锐角 $\\triangle A B C$ 的外心为 $O, \\triangle B O C$ 的外心为 $T$, 点 $M$ 为边 $B C$ 的中点, 在边 $A B 、 A C$ 上分别取点 $D 、 E$, 使得 $\\angle A D M=\\angle A E M=\\angle B A C$. 证明: $A T \\perp D E$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c5a21.png>), 由 $O$ 是 $\\triangle A B C$ 的外心, $T$ 是 $\\triangle B O C$ 的外心知, $O 、 M 、 T$ 三点共线, 且 $O T \\perp B C$.\n延长 $D M 、 A C$ 交于点 $G$, 延长 $E M 、 A B$ 交于点 $F$, 连结 $F T 、 B T 、 G T$. 于是, 有\n$$\n\\begin{aligned}\n\\angle B T O & =2 \\angle B C O=180^{\\circ}-\\angle B O C \\\\\n& =180^{\\circ}-2 \\angle B A C=\\angle A F E .\n\\end{aligned}\n$$\n故 $B 、 F 、 T 、 M$ 四点共圆.\n则 $\\angle B F T=180^{\\circ}-\\angle B M T=90^{\\circ}$.\n同理, $\\angle C G T=90^{\\circ}$.\n过点 $T$ 作 $T H \\perp D E$ 于点 $H$, 于是, $D 、 F 、 T 、 H$ 和 $H 、 T 、 G 、 E$ 分别四点共圆, 记两圆为 $\\odot S_1$ 和 $\\odot S_2$.\n又 $\\angle F D G=180^{\\circ}-\\angle A D G=180^{\\circ}-\\angle A E F=\\angle F E G$,\n所以, $D 、 F 、 G 、 E$ 四点共圆, 记之为 $\\odot S_3$.\n由于直线 $T H 、 G E 、 D F$ 恰为 $\\odot S_1 、 \\odot S_2 、 \\odot S_3$ 两两之间的三条根轴, 且 $G E$ 与 $D F$ 交于点 $A$, 故由根心定理知 $T H$ 过点 $A$.\n因为 $T H \\perp D E$, 所以, $A T \\perp D E$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5a21.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-4.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $x_i \\in\\left[0, \\frac{\\pi}{2}\\right], i=1,2, \\cdots, 10$, 满足 $\\sin ^2 x_1+\\sin ^2 x_2+\\cdots+ \\sin ^2 x_{10}=1$. 证明:\n$$\n3\\left(\\sin x_1+\\cdots+\\sin x_{10}\\right) \\leqslant \\cos x_1+\\cdots+\\cos x_{10} .\n$$",
+    "solution": "证明:由于 $\\sin ^2 x_1+\\sin ^2 x_2+\\cdots+\\sin ^2 x_{10}=1$ ,\n$$\n\\cos x_i=\\sqrt{\\sum_{j \\neq i} \\sin ^2 x_j}\n$$\n则对 $1 \\leqslant i \\leqslant 10$, 得\n$$\n\\cos x_i=\\sqrt{\\sum_{j \\neq i} \\sin ^2 x_j} \\geqslant \\frac{\\sum_{j \\neq i} \\sin x_j}{3} .\n$$\n从而\n$$\n\\sum_{i=1}^{10} \\cos x_i \\geqslant \\sum_{i=1}^{10} \\sum_{j \\neq i} \\frac{\\sin x_j}{3}=\\sum_{i=1}^{10} 9 \\cdot \\frac{\\sin x_i}{3}=3 \\sum_{i=1}^{10} \\sin x_i .\n$$\n故命题成立.",
+    "remark": "",
+    "figures": []
+}

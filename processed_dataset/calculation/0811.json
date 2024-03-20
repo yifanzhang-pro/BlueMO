@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-2.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 设 $a, b, c$ 为正实数,求\n$$\n\\frac{a+3 c}{a+2 b+c}+\\frac{4 b}{a+b+2 c}-\\frac{8 c}{a+b+3 c}\n$$\n的最小值.",
+    "solution": "解法二不妨设 $a+b+c=1$, 则\n$$\n\\begin{aligned}\n& \\frac{a+3 c}{a+2 b+c}+\\frac{4 b}{a+b+2 c}-\\frac{8 c}{a+b+3 c} \\\\\n= & \\frac{1+2 c-b}{1+b}+\\frac{4 b}{1+c}-\\frac{8 c}{1+2 c} \\\\\n= & -1+\\frac{2+2 c}{1+b}+\\frac{4 b+4}{1+c}-\\frac{4}{1+c}+\\frac{4}{1+2 c}-4 \\\\\n= & -5+2 \\frac{1+c}{1+b}+4 \\frac{1+b}{1+c}-\\frac{4 c}{(1+c)(1+2 c)} \\\\\n\\geqslant & -5+2 \\sqrt{8}-\\frac{4}{\\frac{1}{c}+3+2 c} \\geqslant-5+4 \\sqrt{2}-\\frac{4}{3+2 \\sqrt{2}} \\\\\n= & 12 \\sqrt{2}-17 .\n\\end{aligned}\n$$\n取 $a=3-2 \\sqrt{2}, b=\\sqrt{2}-1, c=\\sqrt{2}$ 时,等号成立.\n故最小值为 $-17+12 \\sqrt{2}$.",
+    "remark": "",
+    "figures": []
+}

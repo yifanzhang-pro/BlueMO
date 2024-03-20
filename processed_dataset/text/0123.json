@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "text": "(2) 递归法设 $f(x)$ 是定义在 $D$ 上且取值于 $D$ 的函数, 由此定义数列 $\\left\\{a_n\\right\\}: a_0$ 已知, 且 $a_0 \\in D, a_n=f\\left(a_{n-1}\\right), n \\geqslant 1$. 一方面, 若已求得 $f^{(n)}(x)=g(x)$, 则 $a_n= f\\left(a_{n-1}\\right)=f^{(2)}\\left(a_{n-2}\\right)=\\cdots=f^{(n)}\\left(a_0\\right)$, 即 $\\left\\{a_n\\right\\}$ 的通项公式; 另一方面, 如果已求得 $\\left\\{a_n\\right\\}$ 的通项公式 $a_n=g\\left(a_0\\right)$, 则取 $a_0=x, a_n=g(x)$, 而 $a_n=f\\left(a_{n-1}\\right)=\\cdots= f^{(n)}\\left(a_0\\right)=f^{(n)}(x)$, 从而 $f^{(n)}(x)=g(x)$, 即 $f^{(n)}(x)$ 的表达式.\n由上述知, 函数的 $n$ 次迭代可以通过构造数列的方法来解, 其步骤为\n(1) 设 $a_0=x, a_n=f^{(n)}(x)$ ;\n(2) 由 $a_n=f^{(n)}(x)=f\\left(a_{n-1}\\right)$, 求出 $a_n=g\\left(a_0\\right)$;\n(3) $f^{(n)}(x)=g\\left(a_0\\right)=g(x)$.",
+    "figures": []
+}

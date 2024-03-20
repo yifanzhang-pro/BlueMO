@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 求证: 同时平分一个三角形的面积和周长的直线一定经过三角形的内心.",
+    "solution": "设直线 $l$ 平分 $\\triangle A B C$ 的周长.\n如果 $l$ 过一个顶点, 例如过顶点 $A$, 则不难知道必有 $A B=A C$, 从而 $l$ 过内心 $I$.\n如图(<FilePath:./images/volume14/figures/fig-c8a2.png>), 如果 $l$ 经过 $\\triangle A B C$ 的两条边, 设它与 $A B 、 A C$ 交于点 $E 、 D$. 我们证明 $S_{\\triangle D E}=0$.\n设 $\\triangle A B C$ 的内切圆半径为 $r, p$ 为半周长, 则\n$$\n\\begin{gathered}\nA E+A D=p, \\\\\nS_{\\triangle A E}+S_{\\triangle A I D}=\\frac{1}{2} r \\cdot A E+\\frac{1}{2} r \\cdot A D=\\frac{1}{2} r p=\\frac{1}{2} S_{\\triangle A B C},\n\\end{gathered}\n$$\n但 $S_{\\triangle A E D}=\\frac{1}{2} S_{\\triangle A B C}$, 从而 $S_{\\triangle D E}=0$.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c8a2.png"
+    ]
+}

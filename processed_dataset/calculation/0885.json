@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 设 $F(x)=|f(x) \\cdot g(x)|$, 其中 $f(x)=a x^2 \\dashv b x+c, x \\in[-1,1]$; $g(x)=c x^2+b x+a, x \\in[-1,1]$, 且对任意参数 $a 、 b 、 c$, 恒有 $|f(x)| \\leqslant 1$, 求 $F(x)$ 的最大值.",
+    "solution": "$|g(x)|=\\left|c x^2-c+b x+a+c\\right| \\leqslant|c| \\cdot\\left|x^2-1\\right|+|b x+a+c| \\leqslant 1+|b x+a+c|$.\n考察一次函数 $T(x)=|b x+a+c|,-1 \\leqslant x \\leqslant 1$.\n当 $x=-1$ 时, $T(-1)=|a-b+c| \\leqslant 1$; 当 $x=1$ 时, $T(1)=\\mid a+b+ c \\mid \\leqslant 1$. 故当 $|x| \\leqslant 1$ 时, $T(x) \\leqslant 1$. 则 $|g(x)| \\leqslant 1+T(x) \\leqslant 2$. 于是 $F(x) \\leqslant 2$. 且当 $x= \\pm 1$ 时取到此最值.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 如果连通图 $G$ 的顶点数 $\\geqslant 2$, 则 $G$ 中至少存在两个顶点, 将这两个顶点及其关联的边去掉后,图仍然连通 (没有顶点的\"图\"也看作是连通图).",
+    "solution": "$G$ 的生成树有两个悬挂点, 去掉这两点后, 图仍然连通.",
+    "remark": "",
+    "figures": []
+}

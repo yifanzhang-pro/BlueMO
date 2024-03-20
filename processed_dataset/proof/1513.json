@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-3.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $P_1, P_2, \\cdots, P_n$ 是平面上不共线的 $n$ 个点.\n证明: 至少有一条直线恰过其中的两个点.",
+    "solution": "证明:这是著名的 Sylvester 定理,有许多证明方法, 其中较简洁的一个证明就是用最小数原理获得的.\n考虑过 $P_1, \\cdots, P_n$ 中至少两点的直线 $P_i P_j$, 该直线外的点到它的距离大于 0 , 这样的距离只有有限个 (因为直线的条数至多 $\\mathrm{C}_n^2$ 条, 而 $P_1, \\cdots, P_n$ 在每条直线外的点也是有限个), 从而这些距离中有一个最小值.\n不妨设,在上面的距离中, 点 $P_1$ 到直线 $P_2 P_3$ 的距离最短.\n我们证明直线 $P_2 P_3$ 上没有 $P_1, \\cdots, P_n$ 中的其他点.\n若直线 $P_2 P_3$ 上还有 $P_1, \\cdots, P_n$ 中的点, 不妨设 $P_4$ 在直线 $P_2 P_3$ 上, 设 $P_1$ 到直线 $P_2 P_3$ 的射影为 $Q$, 则 $P_2, P_3, P_4$ 中必有两点在 $Q$ 的同侧, 不妨设 $P_2$, $P_3$ 在 $Q$ 的同侧, 并设 $\\left|Q P_2\\right|<\\left|Q P_3\\right|$ (如图 (<FilePath:./images/volume6/figures/fig-c1i4.png>) 所示). 则 $P_2$ 到直线 $P_1 P_3$ 的距离不超过 $Q$ 到直线 $P_1 P_3$ 的距离 $Q R$, 而 $Q R<P_1 Q$, 这与 $P_1 Q$ 的最小性矛盾.\n从而 $P_2 P_3$ 上没有 $P_1, \\cdots, P_n$ 中的其他点.\n所以, 命题成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume6/figures/fig-c1i4.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-4.tex",
+    "problem_type": "proof",
+    "problem": "例7. 在三维空间中给定一点 $O$ 以及由总长度为 1988 的若干条线段组成的有限集 $A$, 证明: 存在一个平面与集 $A$ 不相交且到点 $O$ 的距离不超过 574 .",
+    "solution": "证明:以点 $O$ 为原点建立直角坐标系, 并将所给的线段分别向 3 条坐标轴投影.\n设 $A$ 中共有 $n$ 条线段且它们在 3 条轴上的投影长分别为\n$$\nx_i, y_i, z_i, i=1,2, \\cdots, n \\text {. }\n$$\n记 $x=\\sum x_i, y=\\sum y_i, z=\\sum z_i$. 于是, 由柯西不等式, 得\n$$\n\\begin{aligned}\nx^2+y^2+z^2 & =\\left(\\sum x_i\\right)^2+\\left(\\sum y_i\\right)^2+\\left(\\sum z_i\\right)^2 \\\\\n& =\\sum_{i=1}^n \\sum_{j=1}^n\\left(x_i x_j+y_i y_j+z_i z_j\\right) \\\\\n& \\leqslant \\sum_{i=1}^n \\sum_{j=1}^n \\sqrt{\\left(x_i^2+y_i^2+z_i^2\\right)\\left(x_j^2+y_j^2+z_j^2\\right)} \\\\\n& =\\left(\\sum_{i=1}^n \\sqrt{x_i^2+y_i^2+z_i^2}\\right)^2=1988^2 .\n\\end{aligned}\n$$\n不妨设 $x=\\min \\{x, y, z\\}$, 于是\n$$\nx \\leqslant \\frac{1988}{\\sqrt{3}}<2 \\times 574 .\n$$\n从而在 $x$ 轴上的区间 $[-574,574]$ 内必有一点不在 $n$ 条给定线段的投影\n136. 上,过这点作与 $x$ 轴垂直的平面便满足题中的要求.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题2 在 $1,2, \\cdots, 99$ 这 99 个正整数中, 任意取出 $k$ 个数, 使得其中必有两个数 $a 、 b(a \\neq b)$ 满足 $\\frac{1}{2} \\leqslant \\frac{b}{a} \\leqslant 2$, 则 $k$ 的最小可能值等于",
+    "solution": "$7$. 将 $1 \\sim 99$ 这 99 个正整数分为 6 组, 使得每组中任意两个数的比值在闭区间 $\\left[\\frac{1}{2}, 2\\right]$ 中, 且每组元素个数尽量地多.\n分组如下: $A_1=\\{1,2\\}$, $A_2=\\{3,4,5,6\\}, A_3=\\{7,8, \\cdots, 14\\}, A_4=\\{15,16, \\cdots, 30\\}, A_5=\\{31, 32, \\cdots, 62\\}, A_6=\\{63,64, \\cdots, 99\\}$. 当任取 6 个数时, 比如在 $A_1, A_2, A_3, A_4, A_5, A_6$ 中各取一个数时, 如取 $1,3,7,15,31,63$, 这 6 个数中任 2 个数的比值都不在闭区间 $\\left[\\frac{1}{2}, 2\\right]$ 中, 可见 $k>6$. 所以, $k \\geqslant 7$.\n当 $k=7$ 时, 在 99 个数中任取 7 个数, 由抽屟原理知, 必有 2 个数属于同一个 $A_i(1 \\leqslant i \\leqslant 6)$, 这 2 个数的比值在闭区间 $\\left[\\frac{1}{2}, 2\\right]$ 中.",
+    "remark": "",
+    "figures": []
+}

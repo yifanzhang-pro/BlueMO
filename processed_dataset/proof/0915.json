@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题1 设 $X$ 和 $Y$ 是两个集合, $B \\subset A \\subset X$. 举例说明, 存在着映射 $f: X \\rightarrow Y$, 使得\n$$\nf(A-B) \\neq f(A)-f(B) .\n$$\n并证明, 当 $f$ 是单射时, $f(A-B)=-f(A)--f(B)$.",
+    "solution": "取 $A=\\{1,2,3\\}, B=\\{1,2\\}, X=Y=\\mathbf{N}_{+}$. 则 $f: 1 \\mapsto 4,2 \\mapsto 5$, $3 \\mapsto 4$, 则 $f(A-B)=\\{4\\}, f(A)-f(B)=\\{4,5\\}-\\{4,5\\}=\\varnothing$, 故 $f(A- B) \\neq f(A)-f(B)$. 当 $f$ 是单射时, 若 $y \\in f(A)-f(B)$, 则 $y \\in f(A)$, 且 $y \\bar{\\epsilon} f(B)$, 故存在 $x \\in A$, 使得 $f(x)=y$, 由于 $f$ 是单射, 故 $x \\bar{\\epsilon} B$, 从而 $x \\in A-B$, 于是 $y \\in f(A-B)$, 所以 $f(A)-f(B) \\subseteq f(A-B)$; 若 $y \\in f(A- B)$, 则存在 $x \\in A-B$, 使得 $y=f(x)$, 所以 $y \\in f(A)$, 但 $x \\bar{\\in} B$, 且 $f$ 是单射, 故 $y \\bar{\\epsilon} f(B)$, 从而 $y \\in f(A)-f(B)$, 即 $f(A-B) \\subseteq f(A)-f(B)$. 故当 $f$ 为单射时,有 $f(A-B)=f(A)-f(B)$.",
+    "remark": "",
+    "figures": []
+}

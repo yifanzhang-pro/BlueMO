@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-5.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $k(\\geqslant 2)$ 为给定的正整数,对任意 $1 \\leqslant i \\leqslant k$, 数 $a_i 、 d_i$ 都是正整数, 等差数列 $\\left\\{a_i+n d_i\\right\\}$ ( $\\left.n=0,1,2, \\cdots\\right)$ 对应的集合为 $A_i=\\left\\{a_i+n d_i \\mid n=\\right. 0,1,2, \\cdots\\}, 1 \\leqslant i \\leqslant k$. 已知 $A_1, A_2, \\cdots, A_k$ 构成 $\\mathbf{N}^*$ 的一个 $k$-分划 (即 $A_1$, $\\cdots, A_k$ 两两的交为空集, 且 $\\left.A_1 \\cup \\cdots \\cup A_k=\\mathbf{N}^*\\right)$. 证明下述结论:\n(1) $\\frac{1}{d_1}+\\cdots+\\frac{1}{d_k}=1$;\n(2) $\\frac{a_1}{d_1}+\\cdots+\\frac{a_k}{d_k}=\\frac{k+1}{2}$.",
+    "solution": "证明:利用母函数方法来处理, 依题中条件可知, 对 $|x|<1$, 有\n$$\n\\sum_{m=1}^{+\\infty} x^m=\\sum_{i=1}^k\\left(\\sum_{n=0}^{+\\infty} x^{a_i+n d_i}\\right)\n$$\n利用无穷递缩等比数列求和公式, 知\n$$\n\\frac{x}{1-x}=\\sum_{i=1}^k \\frac{x^{a_i}}{1-x^{d_i}} .\n$$\n于是,有\n$$\nx=\\sum_{i=1}^k \\frac{x^{a_i}}{1+x+\\cdots+x^{d_i-1}} . \\label{eq1}\n$$\n上式两边让 $x$ 从左边趋向于 1 , 取极限即有 $\\sum_{i=1}^k \\frac{1}{d_i}=1$, 从而 式\\ref{eq1} 成立.\n现在对\\ref{eq1}式两边关于 $x$ 求导数,得\n$$\n1=\\sum_{i=1}^k \\frac{a_i x^{a_i-1}\\left(1+x+\\cdots+x^{d_i-1}\\right)-x^{a_i}\\left(0+1+2 x+\\cdots+\\left(d_i-1\\right) x^{d_i-2}\\right)}{\\left(1+x+\\cdots+x^{d_i-1}\\right)^2},\n$$\n再在上式两边让 $x$ 从左边趋向于 1 , 取极限得\n$$\n1=\\sum_{i=1}^k \\frac{a_i d_i-\\left(1+2+\\cdots+\\left(d_i-1\\right)\\right)}{d_i^2} .\n$$\n于是\n$$\n\\begin{aligned}\n\\sum_{i=1}^k \\frac{a_i}{d_i} & =1+\\sum_{i=1}^k \\frac{\\left(d_i-1\\right) d_i}{2 d_i^2} \\\\\n& =1+\\frac{1}{2} \\sum_{i=1}^k\\left(1-\\frac{1}{d_i}\\right) \\\\\n& =1+\\frac{1}{2}(k-1)=\\frac{k+1}{2}\n\\end{aligned}\n$$\n这里用到结论 式\\ref{eq1}.\n所以,命题成立.",
+    "remark": "",
+    "figures": []
+}

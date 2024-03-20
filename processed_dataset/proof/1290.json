@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例7. (钟开莱不等式) 设 $a_1 \\geqslant a_2 \\geqslant \\cdots \\geqslant a_n>0$, 且 $\\sum_{i=1}^k a_i \\leqslant \\sum_{i=1}^k b_i(1 \\leqslant k \\leqslant n)$, 则\n(1) $\\sum_{i=1}^n a_i^2 \\leqslant \\sum_{i=1}^n b_i^2$;\n(2) $\\sum_{i=1}^n a_i^3 \\leqslant \\sum_{i=1}^n a_i b_i^2$.",
+    "solution": "证明:(1)由 Abel 变换公式,\n$$\n\\begin{aligned}\n\\sum_{i=1}^n a_i^2 & =a_n\\left(\\sum_{i=1}^n a_i\\right)+\\sum_{k=1}^{n-1}\\left(\\sum_{i=1}^k a_i\\right)\\left(a_k-a_{k+1}\\right) \\\\\n& \\leqslant a_n\\left(\\sum_{i=1}^n b_i\\right)+\\sum_{k=1}^{n-1}\\left(\\sum_{i=1}^k b_i\\right)\\left(a_k-a_{k+1}\\right) \\\\\n& =\\sum_{i=1}^n a_i b_i .\n\\end{aligned}\n$$\n再由 Cauchy 不等式, 有\n$$\n\\sum_{i=1}^n a_i b_i \\leqslant\\left(\\sum_{i=1}^n a_i^2\\right)^{\\frac{1}{2}} \\cdot\\left(\\sum_{i=1}^n b_i^2\\right)^{\\frac{1}{2}},\n$$\n即得\n$$\n\\sum_{i=1}^n a_i^2 \\leqslant \\sum_{i=1}^n b_i^2 .\n$$\n$$\n\\begin{aligned}\n& \\sum_{i=1}^n a_i^3=a_n^2\\left(\\sum_{i=1}^n a_i\\right)+\\sum_{k=1}^{n-1}\\left(\\sum_{i=1}^k a_i\\right)\\left(a_k^2-a_{k+1}^2\\right) \\\\\n& \\leqslant a_n^2\\left(\\sum_{i=1}^n b_i\\right)+\\sum_{k=1}^{n-1}\\left(\\sum_{i=1}^k b_i\\right)\\left(a_k^2-a_{k+1}^2\\right) \\\\\n&=\\sum_{i=1}^n a_i^2 b_i \\\\\n&=\\sum_{i=1}^n\\left(a_i^{\\frac{3}{2}} \\cdot a_i^{\\frac{1}{2}} b_i\\right) \\\\\n& \\leqslant\\left(\\sum_{i=1}^n a_i^3\\right)^{\\frac{1}{2}} \\cdot\\left(\\sum_{i=1}^n a_i b_i^2\\right)^{\\frac{1}{2}} . \\\\\n& \\sum_{i=1}^n a_i^3 \\leqslant \\sum_{i=1}^n a_i b_i^2 .\n\\end{aligned}\n$$\n即$\\sum_{i=1}^n a_i^3 \\leqslant \\sum_{i=1}^n a_i b_i^2$.",
+    "remark": "",
+    "figures": []
+}

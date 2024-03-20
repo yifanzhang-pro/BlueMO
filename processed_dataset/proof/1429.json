@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 给定非增的正数列 $a_1 \\geqslant a_2 \\geqslant a_3 \\geqslant \\cdots \\geqslant a_n \\geqslant \\cdots$, 其中 $a_1=\\frac{1}{2 k}(k \\in \\mathbf{N}$, $k \\geqslant 2)$, 且 $a_1+a_2+\\cdots+a_n+\\cdots=1$. 求证: 从数列中可找出 $k$ 个数, 最小数超过最大数的一半.",
+    "solution": "用反证法.\n若不存在这样的 $k$ 个数, 则对 $a_1, a_2, \\cdots, a_k$, 有 $a_k \\leqslant \\frac{1}{2} a_1$; 对 $a_k, a_{k+1}, \\cdots, a_{2 k-1}$, 有 $a_{2 k-1} \\leqslant \\frac{1}{2} a_k \\leqslant \\frac{1}{2^2} a_1 ; \\cdots$; 对 $a_{(n-1)(k-1)+1}$, $a_{(n-1)(k-1)+2}, \\cdots, a_{n(k-1)+1}$, 有 $a_{n(k-1)+1} \\leqslant \\frac{1}{2^n} a_1 . n \\in \\mathbf{Z}^{+}$, 则\n$$\n\\begin{gathered}\nS_1=a_1+a_k+a_{2 k-1}+\\cdots \\leqslant a_1+\\frac{1}{2} a_1+\\frac{1}{2^2} a_1+\\cdots=2 a_1 ; \\\\\nS_2=a_2+a_{k+1}+a_{2 k}+\\cdots \\leqslant 2 a_2 \\leqslant 2 a_1 ; \\\\\n\\cdots \\cdots \\\\\nS_{k-1}=a_{k-1}+a_{2 k-2}+a_{3 k-3}+\\cdots \\leqslant 2 a_{k-1} \\leqslant 2 a_1 .\n\\end{gathered}\n$$\n故 $S=S_1+S_2+\\cdots+S_{k-1} \\leqslant 2(k-1) a_1=\\frac{k-1}{k}<1$,矛盾!",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例12 在约束条件 $x \\geqslant 0, y \\geqslant 0$ 及 $3 \\leqslant x+y \\leqslant 5$ 下, 求函数 $u=x^2- x y+y^2$ 的最大值和最小值.",
+    "solution": "解:令 $x=a \\sin ^2 \\theta, y=a \\cos ^2 \\theta, \\theta \\in[0,2 \\pi)$, 则 $3 \\leqslant a \\leqslant 5$. 于是\n$$\n\\begin{aligned}\n& \\begin{aligned}\nu & =a^2 \\sin ^4 \\theta-a^2 \\sin ^2 \\theta \\cos ^2 \\theta+a^2 \\cos ^4 \\theta \\\\\n& =a^2\\left[\\left(\\sin ^2 \\theta+\\cos ^2 \\theta\\right)^2-3 \\sin ^2 \\theta \\cos ^2 \\theta\\right] \\\\\n& =a^2\\left(1-\\frac{3}{4} \\sin ^2 2 \\theta\\right) .\n\\end{aligned} \\\\\n& \\leqslant 2 \\text {. 所以 } u_{\\text {min }}=\\frac{9}{4}, u_{\\text {max }}=25 .\n\\end{aligned}\n$$\n从而 $\\frac{9}{4} \\leqslant u \\leqslant 25$. 所以 $u_{\\text {min }}=\\frac{9}{4}, u_{\\text {max }}=25$.\n注意, $\\frac{9}{4}$ 和 25 都是能取到的.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设一条平面闭折线周长为 1 . 证明: 可以用一个半径为 $\\frac{1}{4}$ 的圆完全盖住这条折线.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c10i1.png>), 令 $A B$ 平分折线周长, $O$ 为线段 $A B$ 的中点,任取折线上一点 $M$, 则 $M A+M B$ 不超过 $A$ 与 $B$ 之间的折线总长 $\\frac{1}{2}$, 故 $O M \\leqslant \\frac{1}{2}(M A+M B) \\leqslant \\frac{1}{4}$.\n于是以 $O$ 为圆心 $\\frac{1}{4}$ 为半径的圆可以盖住这条折线.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c10i1.png"
+    ]
+}

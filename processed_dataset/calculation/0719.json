@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题16 已知 $\\sin \\frac{\\theta}{2}=\\sqrt{\\frac{x-1}{2 x}}$, 并且 $0<\\theta<\\frac{\\pi}{2}$, 则 $\\tan \\theta=?$, $ \\sin 2 \\theta=?$ , $\\cos 2 \\theta=?$",
+    "solution": "$\\sqrt{x^2-1}, \\frac{2 \\sqrt{x^2-1}}{x^2}, \\frac{2-x^2}{x^2}$.",
+    "remark": "",
+    "figures": []
+}

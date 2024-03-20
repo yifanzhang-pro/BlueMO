@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 设 $x_k, y_k \\in \\mathbf{R}, j_k=x_k+\\mathrm{i} y_k(k=1,2, \\cdots, n, \\mathrm{i}=\\sqrt{-1}) . r$ 是 $\\pm \\sqrt{j_1^2+j_2^2+\\cdots+j_n^2}$ 的实部的绝对值.\n求证:\n$$\nr \\leqslant\\left|x_1\\right|+\\left|x_2\\right|+\\cdots+\\left|x_n\\right| .\n$$",
+    "solution": "设 $a+\\mathrm{i} b$ 是 $j_{\\mathrm{i}}^2+j_2^2+\\cdots+j_n^2$ 的任一平方根, 则 $r=|a|$, 且 $(a+\\mathrm{i} b)^2= \\sum_{k=1}^n j_k^2=\\sum_{k=1}^n\\left(x_k+\\mathrm{i} y_k\\right)^2$.\n故 $a^2-b^2=\\sum_{k=1}^n x_k^2-\\sum_{k=1}^n y_k^2, a b=\\sum_{k=1}^n x_k y_k$.\n反设 $r>\\sum_{k=1}^n\\left|x_k\\right|$, 则 $a^2=r^2,\\left(\\sum_{k=1}^n\\left|x_k\\right|\\right)^2 \\geqslant \\sum_{k=1}^n x_k^2$.\n于是 $b^2>\\sum_{k=1}^n y_k^2$,从而 $a^2 b^2>\\sum_{k=1}^n x_k^2 \\cdot \\sum_{k=1}^n y_k^2 \\geqslant\\left(\\sum_{k=1}^n x_k y_k\\right)^2=a^2 b^2$,矛盾!",
+    "remark": "",
+    "figures": []
+}

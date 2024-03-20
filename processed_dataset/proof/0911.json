@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例30 设 $f$ 是一个定义在整数集上取值为正整数的函数, 已知对任意两个整数 $m 、 n$, 差 $f(m)-f(n)$ 能被 $f(m-n)$ 整除.\n证明: 对所有整数 $m 、 n$, 若$f(m) \\leqslant f(n)$, 则 $f(n)$ 被 $f(m)$ 整除.",
+    "solution": "证设整数 $x 、 y$ 使得 $f(x)<f(y)$ (若 $f(x)=f(y)$, 结论显然成立), 令 $m=x, n=y$, 得 $f(x-y)|| f(x)-f(y) \\mid$,\n即\n$$\nf(x-y) \\mid f(y)-f(x), \\quad\\quad (1)\n$$\n所以\n$$\nf(x-y) \\leqslant f(y)-f(x)<f(y),\n$$\n故差 $d=f(x)-f(x-y)$ 满足\n$$\n-f(y)<-f(x-y)<d<f(x)<f(y) .\n$$\n令 $m=x, n=x-y$, 得 $f(y) \\mid d$, 故 $d=0$, 从而 $f(x)=f(x-y)$.\n由(1)式,得 $f(x) \\mid f(y)-f(x)$, 故 $f(x) \\mid f(y)$. 从而命题得证.",
+    "remark": "",
+    "figures": []
+}

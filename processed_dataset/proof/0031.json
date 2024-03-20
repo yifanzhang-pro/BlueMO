@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例1. 已知数集 $M$ 至少有 3 个元素, 且对 $M$ 中任何两个不同的元素 $a 、 b$, 数 $a^2+b \\sqrt{2}$ 都是有理数,证明: 对于 $M$ 中任何数 $a$,数 $a \\sqrt{2}$ 都是有理数.",
+    "solution": "分析:设 $a, b \\in M$ 且 $a \\neq b$, 则 $a^2+b \\sqrt{2} \\in \\mathbf{Q}, b^2+a \\sqrt{2} \\in \\mathbf{Q}$. 于是有 $a^2+ b \\sqrt{2}-\\left(b^2+a \\sqrt{2}\\right)=\\frac{1}{2}(a \\sqrt{2}-b \\sqrt{2})(a \\sqrt{2}+b \\sqrt{2}-2) \\in \\mathbf{Q}$. 若能证明 $a \\sqrt{2}- b \\sqrt{2} \\in \\mathbf{Q}$ 或 $a \\sqrt{2}+b \\sqrt{2} \\in \\mathbf{Q}$, 则问题迎刃而解.\n但已给条件似乎不够用! 不过另设 $c \\in M, c \\neq a, c \\neq b$, 则 $c^2+a \\sqrt{2} \\in \\mathbf{Q}, c^2+b \\sqrt{2} \\in \\mathbf{Q}$, 便得到\n$$\nc^2+a \\sqrt{2}-\\left(c^2+b \\sqrt{2}\\right)=a \\sqrt{2}-b \\sqrt{2} \\in \\mathbf{Q} .\n$$\n证明任取 $a, b, c \\in M$, 且 $a 、 b 、 c$ 互不相等, 则 $a^2+b \\sqrt{2}, b^2+a \\sqrt{2}, c^2+ a \\sqrt{2}, c^2+b \\sqrt{2} \\in \\mathbf{Q}$. 因此\n$$\n\\begin{aligned}\n& a^2+b \\sqrt{2}-\\left(b^2+a \\sqrt{2}\\right)=(a-b)(a+b-\\sqrt{2}) \\\\\n= & \\frac{1}{2}(a \\sqrt{2}-b \\sqrt{2})(a \\sqrt{2}+b \\sqrt{2}-2) \\in \\mathbf{Q}, \\\\\n& c^2+a \\sqrt{2}-\\left(c^2+b \\sqrt{2}\\right)=(a \\sqrt{2}-b \\sqrt{2}) \\in \\mathbf{Q} .\n\\end{aligned}\n$$\n从而\n$$\na \\sqrt{2}+b \\sqrt{2}-2 \\in \\mathbf{Q}\n$$\n所以 $a \\sqrt{2}+b \\sqrt{2} \\in \\mathbf{Q}$.\n所以\n$$\na \\sqrt{2}=\\frac{1}{2}(a \\sqrt{2}+b \\sqrt{2}+a \\sqrt{2}-b \\sqrt{2}) \\in \\mathbf{Q} .\n$$",
+    "remark": "",
+    "figures": []
+}

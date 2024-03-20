@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例13. 设四边形 $A B C D$ 内接于圆 $O, A B$ 延长线与 $D C$ 延长线交于 $E$,\n$A D$ 延长线与 $B C$ 延长线交于 $F, A C$ 中点为 $M, B D$ 中点为 $N$.\n求证: $\\frac{M N}{A B}=\\frac{1}{2}\\left(\\frac{A C}{B D}-\\frac{B D}{A C}\\right)$.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c1i16.png>), 首先延长 $M N$ 交 $E F$ 于 $P, M N P$ 为牛顿线 $(A C 、 B D 、 E F$ 中点共线, 称为牛顿线), 于是 $P$ 为 $E F$ 中点, 下面证明\n$$\n2 \\cdot \\frac{M P}{E F}=\\frac{A C}{B D} \\text {. }\n$$\n取 $E C$ 中点 $Q$, 由于 $\\angle M Q P=\\angle M Q D+\\angle D Q P=\\angle A E D+\\angle D C F=\\angle A E D+\\angle E A D= \\angle E D F, \\frac{A E}{D E}=\\frac{\\sin \\angle A D E}{\\sin \\angle E A D}=\\frac{\\sin \\angle E D F}{\\sin \\angle D C F}=\\frac{C F}{D F}$, 从而 $\\frac{A E}{C F}=\\frac{D E}{D F}, \\frac{M Q}{Q P}=\\frac{D E}{D F}$, 故 $\\triangle M Q P \\backsim \\triangle E D F$.\n于是 $M P=\\frac{E F \\cdot M Q}{E D}=\\frac{E F \\cdot A E}{2 \\cdot E D}$, 即 $2 \\cdot \\frac{M P}{E F}=\\frac{A C}{B D}$.\n同理, $2 \\cdot \\frac{N P}{E F}=\\frac{B D}{A C}$, 两式相减即得原命题.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1i16.png"
+    ]
+}

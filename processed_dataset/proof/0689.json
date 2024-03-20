@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter20.tex",
+    "problem_type": "proof",
+    "problem": "例3. 空间中的 $n$ 条直线满足任意三条中必有两条异面, 且不存在 3 条两两异面的直线, 求 $n$ 的最大可能值.",
+    "solution": "解:先证明 $n \\leqslant 5$.\n假设存在 6 条直线满足题意, 将这 6 条直线 $l_i$ 对应到 6 个顶点 $v_i(1 \\leqslant i \\leqslant 6)$ ,当 $l_i$ 与 $l_j$ 共面时,在 $v_i, v_j$ 间连一条红边; 当 $l_i$ 与 $l_j$ 异面时,在 $v_i, v_j$ 间连一条蓝边,构成一个 2 色完全图 $K_6$. 由 Ramsey 定理可知, 2 色完全图 $K_6$ 中必存在同色三角形,这说明有 3 条线两两共面或两两异面, 但均与已知条件矛盾! 故假设不成立.\n因此 $n \\leqslant 5$.\n当 $n=5$ 时,如图(<FilePath:./images/volume14/figures/fig-c20i1.png>) 作正方体 $A B C D- E F G H$, 记 $E H$ 中点为 $M$, 易验证直线 $A B, B F, F H$, $H M, M A$ 满足题意.\n综上, $n$ 的最大可能值为 5 .",
+    "remark": "注:本题中,若只从空间形态来考虑问题将不胜其烦, 而一旦转化成图论语言, 回到了拉姆赛(Ramsey)问题这一图论中的重要背景(参考第 14 节例 1), 解题目标就变得十分明确了.",
+    "figures": [
+        "./images/volume14/figures/fig-c20i1.png"
+    ]
+}

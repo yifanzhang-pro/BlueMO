@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题27 已知 $\\frac{\\sin ^2 \\gamma}{\\sin ^2 \\alpha}=1-\\frac{\\tan (\\alpha-\\beta)}{\\tan \\alpha}$, 求证: $\\tan ^2 \\gamma=\\tan \\alpha \\cdot \\tan \\beta$.",
+    "solution": "$\\sin ^2 \\gamma=\\sin ^2 \\alpha \\cdot\\left[1-\\frac{\\tan (\\alpha-\\beta)}{\\tan \\alpha}\\right]=\\sin ^2 \\alpha \\frac{\\sin \\alpha \\cos (\\alpha-\\beta)-\\cos \\alpha \\sin (\\alpha-\\beta)}{\\sin \\alpha \\cos (\\alpha-\\beta)}= \\frac{\\sin \\alpha \\cdot \\sin \\beta}{\\cos (\\alpha-\\beta)}$, 所以 $\\tan ^2 \\gamma=\\frac{\\sin ^2 \\gamma}{1-\\sin ^2 \\gamma}=\\frac{\\frac{\\sin \\alpha \\sin \\beta}{\\cos (\\alpha-\\beta)}}{1-\\frac{\\sin \\alpha \\sin \\beta}{\\cos (\\alpha-\\beta)}}=\\frac{\\sin \\alpha \\sin \\beta}{\\cos (\\alpha-\\beta)-\\sin \\alpha \\sin \\beta}= \\frac{\\sin \\alpha \\sin \\beta}{\\cos \\alpha \\cos \\beta}=\\tan \\alpha \\cdot \\tan \\beta$.",
+    "remark": "",
+    "figures": []
+}

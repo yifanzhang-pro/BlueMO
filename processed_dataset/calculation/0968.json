@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 设非零复数 $z_1 、 z_2$ 在复平面内的对应点分别为 $A 、 B$, 且满足 $\\left|z_2\\right|=2$, $z_1^2-2 z_1 z_2+4 z_2^2=0$.\n(1) 试判断 $\\triangle A O B$ ( $O$ 为原点) 的形状;\n(2) 求 $\\triangle A O B$ 的面积.",
+    "solution": "(1) 由 $z_1^2-2 z_1 z_2+4 z_2^2=0$ 得 $z_1=\\frac{2 z_2 \\pm 2 \\sqrt{3} i z_2}{2}$, 即 $z_1=(1 \\pm \\sqrt{3} i) z_2$, 亦即 $z_1=2\\left(\\cos \\frac{\\pi}{3} \\pm i \\sin \\frac{\\pi}{3}\\right) z_2$.\n由此得 $\\triangle A O B$ 是直角三角形, 且 $\\angle A O B=60^{\\circ}, \\angle A B O=90^{\\circ}$;\n(2) $S_{\\triangle A O B}=\\frac{1}{2}|A O| \\cdot|B O| \\sin \\frac{\\pi}{3}=\\frac{\\sqrt{3}}{4} \\cdot 2 \\cdot|B O|^2=2 \\sqrt{3}$.",
+    "remark": "",
+    "figures": []
+}

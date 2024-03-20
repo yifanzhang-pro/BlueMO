@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题30. $\\triangle A B C$ 中, 若 $\\frac{\\cos A}{\\sin B}+\\frac{\\cos B}{\\sin A}=2$, 且该三角形的周长为 12 , 求这个三角形面积的最大值.",
+    "solution": "由 $\\frac{\\cos A}{\\sin B}+\\frac{\\cos B}{\\sin A}=2$ 得 $\\sin A \\cos A+\\sin B \\cos B=2 \\sin A \\sin B$, 即 $\\sin A(\\cos A-\\sin B)+\\sin B(\\cos B-\\sin A)=0 \\cdots$ (1). 也可以变形为 $\\frac{1}{2}(\\sin 2 A+ \\sin 2 B)=2 \\sin A \\sin B, \\sin (A+B) \\cos (A-B)=\\cos (A-B)-\\cos (A+B)$, $\\cos (A+B)=\\cos (A-B)[1-\\sin (A+B)] \\cdots$ (2). 若 $A+B<\\frac{\\pi}{2}$, 则 $A$ 、 $B \\in\\left(0, \\frac{\\pi}{2}\\right), A<\\frac{\\pi}{2}-B, \\cos A>\\sin B, \\sin A<\\cos B$. 所以 (1) 不成立; 若 $A+B>\\frac{\\pi}{2}$, 则 $\\cos (A+B)<0$, 由 (2) 得 $\\cos (A-B)<0$, 且 $\\cos (A+B)> \\cos (A-B)$, 从而 $A+B<|A-B|$. 这不可能, 所以 (2) 不成立.\n综上所述, 可知 $A+B=\\frac{\\pi}{2}, \\triangle A B C$ 是直角三角形.\n由 $a+b+c=12$ 得 $c(1+\\sin A+ \\cos A)=12, c=\\frac{12}{1+\\sin A+\\cos A} . \\triangle A B C$ 的面 积 $S=\\frac{1}{2} a b= \\frac{36\\left(t^2-1\\right)}{(1+t)^2}=\\frac{36(t-1)}{t+1}=36\\left(1+\\frac{-2}{t+1}\\right)$, 且由 $t=\\sqrt{2} \\sin \\left(A+\\frac{\\pi}{4}\\right)$ 及 $0< A<\\frac{\\pi}{2}$ 得 $1<t \\leqslant \\sqrt{2}$. 当 $t=\\sqrt{2}$ 时, 即 $A=B=\\frac{\\pi}{4}$ 时, $S_{\\text {max }}=36\\left(1+\\frac{-2}{\\sqrt{2}+1}\\right)= 36(3-2 \\sqrt{2})$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise8.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 已知复数 $Z_1 、 Z_2$ 满足 $\\left|Z_1\\right|=2,\\left|Z_2\\right|=3$. 若它们所对应向量的夹角为 $60^{\\circ}$, 则 $\\left|\\frac{Z_1+Z_2}{Z_1-Z_2}\\right|=$",
+    "solution": "由余弦定理得\n$$\n\\begin{gathered}\n\\left|Z_1+Z_2\\right|=\\sqrt{\\left|Z_1\\right|^2+\\left|Z_2\\right|^2-2\\left|Z_1\\right|\\left|Z_2\\right| \\cos 120^{\\circ}}=\\sqrt{19}, \\\\\n\\left|Z_1-Z_2\\right|=\\sqrt{\\left|Z_1\\right|^2+\\left|Z_2\\right|^2-2\\left|Z_1\\right|\\left|Z_2\\right| \\cos 60^{\\circ}}=\\sqrt{7},\n\\end{gathered}\n$$\n所以\n$$\n\\frac{\\left|Z_1+Z_2\\right|}{\\left|Z_1-Z_2\\right|}=\\frac{\\sqrt{19}}{\\sqrt{7}}=\\frac{\\sqrt{133}}{7} \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 设四边形 $A B C D$ 的对角线交于点 $O$, 点 $M$ 、 $N$ 分别是 $A D 、 B C$ 的中点, 点 $H_1 、 H_2$ (不重合)分别是 $\\triangle A O B$ 与 $\\triangle C O D$ 的垂心.\n求证: $H_1 H_2 \\perp M N$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c5a9.png>), 以 $A B$ 为直径作圆 $S$ 交 $A C$ 于 $F$, 交 $B D$ 于 $E$, 那么 $A E \\perp B O, B F \\perp A O$, 从而有 $H_1$ 为 $A E 、 B F$ 交点, 显然, $F$ 在以 $N$ 为圆心、 $N B$ 为半径 (即以 $B C$ 为直径) 的 $O N$ 上, $E$ 在以 $A O$ 为直径的 $\\odot M$ 上, 因而, 直线 $B F$ 是 $\\odot S 、 \\odot N$ 的根轴, 直线 $A E$ 是 $\\odot S 、 \\odot M$ 的根轴.\n从而 $H_1=B F \\cap A E$ 是 $\\odot S 、 \\odot M 、 \\odot N$ 的根心 $\\Rightarrow H_1$ 在 $\\odot M 、 \\odot N$ 根轴上, 同理可证, $H_2$ 在 $\\odot M 、 \\odot N$ 根轴上, 故 $H_1 H_2 \\perp M N$ (根轴 $\\perp$ 连心线).",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5a9.png"
+    ]
+}

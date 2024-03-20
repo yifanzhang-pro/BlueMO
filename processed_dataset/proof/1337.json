@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例14. 实数 $a_1, a_2, \\cdots, a_n$ 满足: $a_1+a_2+\\cdots+a_n=0$, 求证:\n$$\n\\max _{1 \\leqslant k \\leqslant n}\\left(a_k^2\\right) \\leqslant \\frac{n}{3} \\sum_{i=1}^{n-1}\\left(a_i-a_{i+1}\\right)^2 .\n$$",
+    "solution": "证明:只需对任意 $1 \\leqslant k \\leqslant n$, 证明不等式成立即可.\n记 $d_k=a_k-a_{k+1}, k=1,2, \\cdots, n-1$, 则\n$$\n\\begin{gathered}\na_k=a_k, \\\\\na_{k+1}=a_k-d_k, a_{k+2}=a_k-d_k-d_{k+1}, \\cdots, a_n=a_k-d_k-d_{k+1}-\\cdots-d_{n-1}, \\\\\nk=a_k+d_{k-1}, a_{k-2}=a_k+d_{k-1}+d_{k-2}, \\cdots, a_1=a_k+d_{k-1}+d_{k-2}+\\cdots+d_1,\n\\end{gathered}\n$$\n把上面这 $n$ 个等式相加, 并利用 $a_1+a_2+\\cdots+a_n=0$, 可得\n$$\n\\begin{gathered}\nn a_k-(n-k) d_k-(n-k-1) d_{k+1}-\\cdots-d_{n-1}+ \\\\\n(k-1) d_{k-1}+(k-2) d_{k-2}+\\cdots+d_1=0 .\n\\end{gathered}\n$$\n由 Cauchy 不等式可得\n$$\n\\begin{aligned}\n\\left(n a_k\\right)^2= & \\left((n-k) d_k+(n-k-1) d_{k+1}+\\cdots+d_{n-1}\\right. \\\\\n& \\left.-(k-1) d_{k-1}-(k-2) d_{k-2}-\\cdots-d_1\\right)^2 \\\\\n\\leqslant & \\left(\\sum_{i=1}^{k-1} i^2+\\sum_{i=1}^{n-k} i^2\\right)\\left(\\sum_{i=1}^{n-1} d_i^2\\right) \\\\\n\\leqslant & \\left(\\sum_{i=1}^{n-1} i^2\\right)\\left(\\sum_{i=1}^{n-1} d_i^2\\right)=\\frac{n(n-1)(2 n-1)}{6}\\left(\\sum_{i=1}^{n-1} d_i^2\\right) \\\\\n\\leqslant & \\frac{n^3}{3}\\left(\\sum_{i=1}^{n-1} d_i^2\\right), \\\\\n& a_k^2 \\leqslant \\frac{n}{3} \\sum_{i=1}^{n-1}\\left(a_i-a_{i+1}\\right)^2 .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

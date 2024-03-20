@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题15. 函数 $y=\\sqrt{\\cos 2 x}+\\sqrt{3-2 \\sqrt{3} \\tan x-3 \\tan ^2 x}$ 的定义域为",
+    "solution": "$\\left[k \\pi-\\frac{\\pi}{4}, k \\pi+\\frac{\\pi}{6}\\right], k \\in \\mathbf{Z}$. 由不等式组 $\\left\\{\\begin{array}{l}\\cos 2 x \\geqslant 0, \\\\ 3-2 \\sqrt{3} \\tan x-3 \\tan ^2 x \\geqslant 0\\end{array}\\right.$ 解得.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例11. 求证: Euler 公式, 即 $O I^2=R^2-2 R r$. 其中 $R, r$ 分别为 $\\triangle A B C$ 的外接圆和内切圆半径.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c1i14.png>), 延长 $A I$ 交 $\\overparen{B C}$ 于 $D$, 作 $D$ 的对径点 $E$, 作 $I F \\perp A B$ 于 $F$, 连结 $E C 、 D C 、 E D$, 则有 $\\angle E D C=\\frac{\\pi-A}{2}=\\angle A I F$, 于是 $\\triangle E D C \\backsim \\triangle A I F$.\n不难证明 $\\angle I C D=\\angle C I D=\\frac{A+C}{2}$, 即 $D I= D C$, 由 $\\triangle E D C \\backsim \\triangle A I F$, 知\n$$\n2 \\mathrm{R} r=I F \\cdot E D=A I \\cdot C D=A I \\cdot D I=R^2-O I^2 .\n$$\n最后一步用到了圆幂定理.\n有关圆幂定理读者可参看第 5 章.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1i14.png"
+    ]
+}

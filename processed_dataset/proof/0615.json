@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $n(>4)$ 是给定的整数, $x_1, x_2, \\cdots, x_n \\in[0,1]$, 求证:\n$$\n2\\left(x_1^3+x_2^3+\\cdots+x_n^3\\right)-\\left(x_1^2 x_2+x_2^2 x_3+\\cdots x_n^2 x_1\\right) \\leqslant n .\n$$",
+    "solution": "证明:我们先证明一个简单的命题: 若 $x, y \\in[0,1]$, 则 $x^3+y^3 \\leqslant x^2 y+1$.\n事实上,当 $x \\leqslant y$ 时, $x^3 \\leqslant x^2 y, y^3 \\leqslant 1$, 所以 $x^3+y^3 \\leqslant x^2 y+1$;\n当 $x>y$ 时, $x^3 \\leqslant 1, y^3 \\leqslant x^2 y$, 所以 $x^3+y^3 \\leqslant x^2 y+1$.\n于是\n$$\n\\begin{aligned}\n& x_1^3+x_2^3 \\leqslant x_1^2 x_2+1, \\\\\n& x_2^3+x_3^3 \\leqslant x_2^2 x_3+1, \\\\\n& \\cdots \\cdots \\\\\n& x_n^3+x_1^3 \\leqslant x_n^2 x_1+1 .\n\\end{aligned}\n$$\n把上面这 $n$ 个不等式相加, 便得到要证明的命题.",
+    "remark": "注:化归,有时是将一个问题转化为与它等价的问题, 有时, 新的问题与原来的问题并不等价, 但是, 从新的问题可以很容易得到原问题的解.\n这种不等价的化归并不鲜见, 在不等式的证明中常常用到.",
+    "figures": []
+}

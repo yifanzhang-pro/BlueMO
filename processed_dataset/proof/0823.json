@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 在 $50 \\times 50$ 表格中, 每格写有一个正整数,使整个表格中 $1,2, \\cdots, 50$ 各出现 50 次.\n证明: 存在某行或某列至少包含 8 个不同数.",
+    "solution": "记 $M=\\{1,2, \\cdots, 50\\}$.\n引理: 每个 $i \\in M$ 至少出现在 15 个行与列中.\n证明: 设 $i \\in M$ 出现在 $x$ 个行中, 由抽屉原理, 有某一行出现了至少 $\\left\\lceil\\frac{50}{x}\\right\\rceil$ 次, 从而含 $i$ 的行数与列数之和 $S_i \\geqslant x+\\frac{50}{x} \\geqslant 2 \\sqrt{50}>14$, 故引理成立.\n以下对每个 $i \\in M$ 标出有它出现的一切行与列, 当 $i$ 取遍 $M$ 中元素时, 至少标出了 $50 \\times 15=750$ 个行与列, 但表格只有 $50+50=100$ 个行与列, 从而根据抽㞕原理, 必有某个行或列被标了不少于 8 次, 即它包含了至少 8 个不同的数.",
+    "remark": "",
+    "figures": []
+}

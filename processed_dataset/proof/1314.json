@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例3. 已知 12 个实数 $a_1, a_2, \\cdots, a_{12}$ 满足:\n$$\n\\left\\{\\begin{array}{l}\na_2\\left(a_1-a_2+a_3\\right)<0, \\\\\na_3\\left(a_2-a_3+a_4\\right)<0, \\\\\n\\cdots \\cdots \\\\\na_{11}\\left(a_{10}-a_{11}+a_{12}\\right)<0 .\n\\end{array}\\right.\n$$\n求证: 从这些数中至少可找到 3 个正数和 3 个负数.",
+    "solution": "证明:用反证法, 不妨设 $a_1, a_2, \\cdots, a_{12}$ 中至多有两个负数, 则存在 $1 \\leqslant k \\leqslant 9$ 使 $a_k 、 a_{k+1} 、 a_{k+2} 、 a_{k+3}$ 都是非负实数.\n由题设可得 $\\left\\{\\begin{array}{l}a_{k+1}\\left(a_k-a_{k+1}+a_{k+2}\\right)<0, \\\\ a_{k+2}\\left(a_{k+1}-a_{k+2}+a_{k+3}\\right)<0 .\\end{array}\\right.$\n又因为 $a_{k+1} \\geqslant 0, a_{k+2} \\geqslant 0$, 则 $a_{k+1}>0, a_{k+2}>0$, 且\n$$\n\\left\\{\\begin{array}{l}\na_k-a_{k+1}+a_{k+2}<0, \\\\\na_{k+1}-a_{k+2}+a_{k+3}<0 .\n\\end{array}\\right.\n$$\n两式相加得 $a_k+a_{k+3}<0$, 此式与 $a_k \\geqslant 0, a_{k+3} \\geqslant 0$ 矛盾! 所以 $a_1, a_2, \\cdots, a_{12}$ 中至少有 3 个正数和 3 个负数.",
+    "remark": "",
+    "figures": []
+}

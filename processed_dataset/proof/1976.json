@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例9. 设 $H=\\left\\{h(x) \\mid h(x)=\\frac{a x+b}{-b x+a}, a \\in \\mathbf{R}, b \\in \\mathbf{R}\\right\\}$, 求证: 若 $h_1(x)$ 、 $h_2(x) \\in H$, 则 $h_1\\left[h_2(x)\\right] 、 h_2\\left[h_1(x)\\right] \\in H$, 且 $h_1\\left[h_2(x)\\right]=h_2\\left[h_1(x)\\right]$.",
+    "solution": "分析:与解设 $h_1(x)=\\frac{a x+b}{-b x+a}, h_2(x)=\\frac{c x+d}{-d x+c}$, 则\n$$\n\\begin{aligned}\n& h_1\\left[h_2(x)\\right]=\\frac{a \\cdot \\frac{c x+d}{-d x+c}+b}{-b \\cdot \\frac{c x+d}{-d x+c}+a}=\\frac{(a c-b d) x+(a d+b c)}{-(a d+b c) x+(a c-b d)} \\in H, \\\\\n& h_2\\left[h_1(x)\\right]=\\frac{c \\cdot \\frac{a x+b}{-b x+a}+d}{-d \\cdot \\frac{a x+b}{-b x+a}+a}=\\frac{(a c-b d) x+(a d+b c)}{-(a d+b c) x+(a c-b d)} \\in H,\n\\end{aligned}\n$$\n且有 $h_1\\left[h_2(x)\\right]=h_2\\left[h_1(x)\\right]$.\n以上可以推广到任意个 $H$ 型函数, 即若 $h_1(x) 、 h_2(x) 、 \\cdots h_n(x) \\in H$, 则 $h_1\\left\\{h_2 \\cdots\\left[h_n(x)\\right]\\right\\} \\in H$, 且 $h_1\\left\\{h_2 \\cdots\\left[h_n(x)\\right]\\right\\}=h_1^{\\prime}\\left\\{h_2^{\\prime} \\cdots h_n^{\\prime}(x)\\right\\}$, 这里 $h_1^{\\prime}(x)$ 、 $h_2^{\\prime}(x) \\cdots h_n^{\\prime}(x)$ 是 $h_1(x) 、 h_2(x) \\cdots h_n(x)$ 的任一个排列.",
+    "remark": "注:从上面的证明过程中可受到启发:\n若 $h_1(x)=\\frac{a x+b}{-b x+a}$ 对应复数 $a+b \\mathrm{i}, h_2(x)=\\frac{c x+d}{-d x+c}$ 对应复数 $c+d \\mathrm{i}$, 则\n$$\nh_1\\left[h_2(x)\\right]=\\frac{(a c-b d) x+(a d+b c)}{-(a d+b c) x+(a c-b d)} \\text { 对应复数 }(a c-b d)+(a d+\n$$\n$b c) \\mathrm{i}$,\n且 $(a c-b d)+(a d+b c) \\mathrm{i}$ 恰好等于它们的乘积 $(a+b \\mathrm{i})(c+d \\mathrm{i})$.\n由此可得到解法如下:\n要求由任意个 $H$ 型函数迭代式所确定的函数表达式, 首先将已知函数所对应的复数写出, 然后加以相乘, 最后写出乘积复数所对应的 $H$ 型函数即为所求.",
+    "figures": []
+}

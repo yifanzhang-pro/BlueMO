@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter18.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $a, b, c$ 是绝对值小于 1 的实数, 证明: $a b+b c+c a+1>0$.",
+    "solution": "证明:造函数 $f(x)=(b+c) x+b c+1$, 它的图象是一条直线, 若能证明函数值 $f(-1), f(1)$ 都大于 0 , 则以点 $(-1, f(-1))$ 和 $(1, f(1))$ 为端点的线段上的每一点的函数值都大于 0 , 即对满足 $-1<x<1$ 的每一个 $x$, 都有 $f(x)>0$, 从而命题得证.\n因为\n$$\n\\begin{gathered}\nf(-1)=-(b+c)+b c+1=(b-1)(c-1)>0, \\\\\nf(1)=(b+c)+b c+1=(b+1)(c+1)>0,\n\\end{gathered}\n$$\n所以\n$$\nf(a)=a(b+c)+b c+1>0 .\n$$",
+    "remark": "",
+    "figures": []
+}

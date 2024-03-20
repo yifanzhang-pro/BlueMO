@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 设 $a_1, a_2, \\cdots, a_n$ 为实数,证明:\n$$\n\\sqrt[3]{a_1^3+a_2^3+\\cdots+a_n^3} \\leqslant \\sqrt{a_1^2+a_2^2+\\cdots+a_n^2} .\n$$",
+    "solution": "由 $\\left(\\sum_{i=1}^n a_i^3\\right)^2 \\leqslant \\sum_{i=1}^n a_i^2 \\sum_{i=1}^n a_i^4 \\leqslant \\sum_{i=1}^n a_i^2\\left(\\sum_{i=1}^n a_i^2\\right)^2=\\left(\\sum_{i=1}^n a_i^2\\right)^3$, 则 $\\left(\\sum_{i=1}^n a_i^3\\right)^{\\frac{1}{3}} \\leqslant\\left(\\sum_{i=1}^n a_i^2\\right)^{\\frac{1}{2}}$",
+    "remark": "",
+    "figures": []
+}

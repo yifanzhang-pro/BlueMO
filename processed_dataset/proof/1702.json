@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例10. 如图(<FilePath:./images/volume7/figures/fig-c3i13.png>), 锐角 $\\triangle A B C$ 中, $B C> A C>A B, A C$ 上的点 $E$ 与 $B C$ 上的点 $D$ 满足 $A E=B D, C D+C E=A B, B E$ 交 $A D$ 于 $K$. 求证: $K H=2 I O$.",
+    "solution": "证设 $H 、 I 、 O 、 G$ 分别为 $\\triangle A B C$ 垂心、内心、外心、重心.\n注意到 $H 、 G 、 O$ 三点共线且 $H G=2 O G$.\n故我们只需证 $K 、 G 、 I$ 共线且 $K G=2 I G$.\n取 $B C$ 中点 $M, A C$ 中点 $L$, 延长 $A I$ 交 $B C$ 于 $N$.\n设 $B C=a, C A=b, A B=c$, 则由条件易知\n$$\nC M=\\frac{1}{2} a, C D=\\frac{1}{2}(a+c-b) .\n$$\n由角平分线性质定理 $\\frac{C N}{B N}=\\frac{A C}{A B}$ 知 $C N=\\frac{a b}{b+c}$ 及\n$$\n\\frac{N I}{A I}=\\frac{B N}{A B}=\\frac{C N}{A C}=\\frac{B N+C N}{A B+A C}=\\frac{a}{b+c} .\n$$\n则 $\\frac{N M}{M D}=\\frac{C N-C M}{C M-C D}=\\frac{\\frac{a b}{b+c}-\\frac{1}{2} a}{\\frac{1}{2} a-\\frac{1}{2}(a+c-b)}=\\frac{a}{b+c}=\\frac{N I}{I A}$.\n所以 $I M / / A D$, 同理 $I L / / B E$.\n结合 $M L / / A B$, 故 $\\triangle I M L$ 与 $\\triangle K A B$ 对应边均平行.\n故两三角形位似, 位似中心为 $A M$ 与 $B L$ 交点 $G$, 位似比为 $\\frac{M L}{A B}=\\frac{1}{2}$.\n故 $I 、 G 、 K$ 三点共线且 $I G=\\frac{1}{2} G K$.\n结合前面的讨论知原命题成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c3i13.png"
+    ]
+}

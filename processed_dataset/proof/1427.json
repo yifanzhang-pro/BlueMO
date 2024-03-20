@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 对于任意 $n \\in \\mathbf{Z}^{+}$以及实数序列 $a_1, a_2, \\cdots, a_n$, 求证存在 $k \\in \\mathbf{Z}^{+}$, 满足:\n$$\n\\left|\\sum_{i=1}^k a_i-\\sum_{i=k+1}^n a_i\\right| \\leqslant \\max _{1 \\leqslant i \\leqslant n}\\left|a_i\\right| .\n$$",
+    "solution": "用反证法, 若对任意 $k \\in\\{1,2, \\cdots, n\\}$, 有 $\\left|S_k\\right|=\\left|\\cdot \\sum_{i=1}^k a_i-\\sum_{i=k+1}^n a_i\\right|> \\max _{1 \\leqslant i \\leqslant n}\\left|a_i\\right|$. 记 $A=\\max _{1 \\leqslant i \\leqslant n}\\left|a_i\\right|$.\n补充定义 $S_0=-S_n$, 则 $S_0$ 与 $S_n$ 中有一个 $>A$, 另一个 $<-A$. 不妨设 $S_0<-A, S_n>A$ (否则可用 $-a_i$ 代替 $a_i$ ), 于是, 存在 $j, 0 \\leqslant j \\leqslant n-1$, 使得 $S_j<-A, S_{j+1}>A$. 故 $\\left|S_{j+1}-S_j\\right|>2 A$, 即 $2\\left|a_{j+1}\\right|>2 A$, 则 $\\left|a_{j+1}\\right|> A$,与 $A$ 的定义矛盾!",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise8.tex",
+    "problem_type": "calculation",
+    "problem": "问题3 (Garfunkel-Baukoff)\n$$\n\\tan ^2 \\frac{A}{2}+\\tan ^2 \\frac{B}{2}+\\tan ^2 \\frac{C}{2} \\geqslant 2-8 \\sin \\frac{A}{2} \\sin \\frac{B}{2} \\sin \\frac{C}{2} .\n$$",
+    "solution": "提示: 在嵌入不等式中令 $x=\\tan \\frac{A}{2}, y=\\tan \\frac{B}{2}, z=\\tan \\frac{C}{2}$, 再通过一系列三角恒等变形即得.",
+    "remark": "",
+    "figures": []
+}

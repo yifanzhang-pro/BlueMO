@@ -1,0 +1,13 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter12.tex",
+    "problem_type": "proof",
+    "problem": "例3. 是否存在平面内一个有限点集, 使得对于其中每个点, 点集中恰有三个距离它最近的点.",
+    "solution": "分析:如图(<FilePath:./images/volume11/figures/fig-c12i1.png>), 由两个有公共底边的正三角形组成的图形共有 4 个顶点, 其中有 2 个点恰有三个距离它最近的点, 但另 2 个点却只有两个距离它最近的点, 不满足要求.\n其次,如图(<FilePath:./images/volume11/figures/fig-c12i2.png>) 考虑用 $m$ 条线段将 $m$ 个这样的图形连起来看能否组成一个满足条件的图形.\n图 (<FilePath:./images/volume11/figures/fig-c12i2.png>) 中为了保证每个点恰有三个距离它最近的点, 只要 $90^{\\circ}<\\alpha \\leqslant 120^{\\circ}$, 并且由凸多边形内角和公式有\n$$\nm \\cdot 120^{\\circ}+2 m\\left(\\alpha+60^{\\circ}\\right)=(3 m-2) \\cdot 180^{\\circ},\n$$\n即 $\\alpha=150^{\\circ}-\\frac{180^{\\circ}}{m}$, 代入 $90^{\\circ}<\\alpha \\leqslant 120^{\\circ}$ 解得 $3<m \\leqslant 6$. 所以 $m=4,5$ 或 6 , 当 $m=4$ 时 $\\alpha=105^{\\circ} ; m=5$ 时 $\\alpha=114^{\\circ} ; m=6$ 时 $\\alpha=120^{\\circ}$.\n解存在,如图(<FilePath:./images/volume11/figures/fig-c12i3.png>) 所示的三个点集都具有题目中要求的性质(图中已将每点与它距离最近的三个点相连)",
+    "remark": "注:本例中我们用部件组成法得到了满足题目条件的点集, 而且不止一个, 显然若干个这样点集的并集 (只要每两个这样点集之间点的最小距离大于原点集中任意两点之间距离的最小值) 也满足题目的所有条件, 而在解答中常常将组成的设计及探索过程省略, 只写出了构造的结果.",
+    "figures": [
+        "./images/volume11/figures/fig-c12i1.png",
+        "./images/volume11/figures/fig-c12i2.png",
+        "./images/volume11/figures/fig-c12i2.png",
+        "./images/volume11/figures/fig-c12i3.png"
+    ]
+}

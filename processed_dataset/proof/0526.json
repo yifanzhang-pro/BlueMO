@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $a_1, a_2, \\cdots, a_6 ; b_1, b_2, \\cdots, b_6$ 和 $c_1, c_2, \\cdots, c_6$ 都是 $1,2, \\cdots, 6$ 的排列, 求 $\\sum_{i=1}^6 a_i b_i c_i$ 的最小值.",
+    "solution": "解: $S=\\sum_{i=1}^6 a_i b_i c_i$, 由平均不等式得\n$$\nS \\geqslant 6 \\sqrt[6]{\\prod_{i=1}^6 a_i b_i c_i}=6 \\sqrt[6]{(6 !)^3}=6 \\sqrt{6 !}=72 \\sqrt{5}>160 .\n$$\n下证 $S>161$.\n因为 $a_1 b_1 c_1, a_2 b_2 c_2, \\cdots, a_6 b_6 c_6$ 这 6 个数的几何平均为 $12 \\sqrt{5}$, 而 $26< 12 \\sqrt{5}<27$, 所以 $a_1 b_1 c_1, a_2 b_2 c_2, \\cdots, a_6 b_6 c_6$ 中必有一个数不小于 27 , 也必有一个数不大于 26 , 而 26 不是 $1,2,3,4,5,6$ 中某三个 (可以重复) 的积, 所以必有一个数不大于 25 .\n不妨设 $a_1 b_1 c_1 \\geqslant 27, a_2 b_2 c_2 \\leqslant 25$,于是\n$$\n\\begin{aligned}\nS= & \\left(\\sqrt{a_1 b_1 c_1}-\\sqrt{a_2 b_2 c_2}\\right)^2+2 \\sqrt{a_1 b_1 c_1 a_2 b_2 c_2}+\\left(a_3 b_3 c_3+a_4 b_4 c_4\\right)+\\left(a_5 b_5 c_5+\\right. \\\\\n& \\left.a_6 b_6 c_6\\right) \\\\\n\\geqslant & (\\sqrt{27}-\\sqrt{25})^2+2 \\sqrt{a_1 b_1 c_1 a_2 b_2 c_2}+2 \\sqrt{a_3 b_3 c_3 a_4 b_4 c_4}+2 \\sqrt{a_5 b_5 c_5 a_6 b_6 c_6} \\\\\n\\geqslant & (3 \\sqrt{3}-5)^2+2 \\cdot 3 \\sqrt[6]{\\prod_{i=1}^6 a_i b_i c_i} \\\\\n= & (3 \\sqrt{3}-5)^2+72 \\sqrt{5}>161,\n\\end{aligned}\n$$\n所以 $S \\geqslant 162$.\n又当 $a_1, a_2, \\cdots, a_6 ; b_1, b_2, \\cdots, b_6$ 和 $c_1, c_2, \\cdots, c_6$ 都分别为 $1,2,3$ , $4,5,6 ; 5,4,3,6,1,2 ; 5,4,3,1,6,2$ 时, 有 $S=1 \\times 5 \\times 5+2 \\times 4 \\times 4+3 \\times 3 \\times 3+4 \\times 6 \\times 1+5 \\times 1 \\times 6+6 \\times 2 \\times 2=162$, 所以, $S$ 的最小值为 162.",
+    "remark": "",
+    "figures": []
+}

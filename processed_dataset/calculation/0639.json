@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例9 求函数 $y=\\cos x(1+\\cos x) \\tan \\frac{x}{2}$ 的周期.",
+    "solution": "分析:利用半角的正切公式变形可将函数解析式化为 $y=\\cos x(1+ \\cos x) \\frac{\\sin x}{1+\\cos x}=\\frac{1}{2} \\sin 2 x$, 虽然最后所得函数形式的周期为 $\\pi$, 但由于在运用公式变形过程中 $x$ 的范围有了变化, 原函数中要求 $x \\neq 2 k \\pi$, 即根据等价变形的要求, 最后原函数等价于函数 $y=\\frac{1}{2} \\sin 2 x(x \\neq 2 k \\pi)$, 故原函数的周期为 $2 \\pi$.\n评注由于有些三角公式本身只是一般的恒等式, 而两边的范围并非是等价的, 因此运用这些公式需要附加一定的条件, 或者说可能会出现运用公式的前后范围不相同.",
+    "remark": "",
+    "figures": []
+}

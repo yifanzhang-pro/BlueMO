@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $a_1=3, a_n=a_{n-1}^2-n(n=2,3, \\cdots)$, 求证: $a_n>0$.",
+    "solution": "用数学归纳法去证明 $a_n>n$.",
+    "remark": "",
+    "figures": []
+}

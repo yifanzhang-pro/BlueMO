@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设 $\\triangle A B C$ 的边 $A B$ 的中点为 $N, \\angle A>\\angle B, D$ 是射线 $A C$ 上一点, 满足 $C D=B C, P$ 是射线 $D N$ 上一点, 且与点 $A$ 在边 $B C$ 的同侧, 满足\n$\\angle P B C=\\angle A, P C$ 与 $A B$ 交于点 $E, B C$ 与 $D P$ 交于点 $T$. 求表达式 $\\frac{B C}{T C}- \\frac{E A}{E B}$ 的值.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c2a6.png>), 延长 $B P$ 交直线 $A C$ 于 $F$. 于是, $\\triangle A C B \\backsim \\triangle B C F$. 从而, $A C \\cdot C F=B C^2$. 故 $C F=\\frac{B C^2}{A C}$. 注意到直线 $D T N$ 截 $\\triangle A B C$, 应用梅涅劳斯定理得 $\\frac{A N}{N B}$ ・ $\\frac{B T}{T C} \\cdot \\frac{C D}{D A}=1$. 则 $\\frac{B T}{T C}=\\frac{D A}{C D} \\cdot \\frac{B N}{A N}=\\frac{D A}{C D}=\\frac{A C}{B C}+1$. 故 $\\frac{B C}{T C}=\\frac{B T}{T C}+1=\\frac{A C}{B C}+2$. 同理, 由直线 $D N P$ 截 $\\triangle A B F$, 得 $\\frac{F P}{P B} \\cdot \\frac{B N}{N A} \\cdot \\frac{A D}{D F}=1$. 由直线 $C E P$ 截 $\\triangle A B F$, 得 $\\frac{F P}{P B} \\cdot\\frac{B E}{E A} \\cdot \\frac{A C}{C F}=1$. 故 $\\frac{E A}{B E}=\\frac{F P}{P B} \\cdot \\frac{A C}{C F}=\\frac{A N}{B N} \\cdot \\frac{F D}{A D} \\cdot \\frac{A C}{C F}= \\frac{F D}{A D} \\cdot \\frac{A C}{C F}=\\frac{\\frac{B C^2}{A C}+B C}{A C+B C} \\cdot \\frac{A C}{\\frac{B C^2}{A C}}=\\frac{B C}{A C} \\cdot \\frac{A C^2}{B C^2}=\\frac{A C}{B C}$. 因此, $\\frac{B C}{T C}-\\frac{E A}{B E}=2$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2a6.png"
+    ]
+}

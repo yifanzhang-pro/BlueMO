@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例3 设 $f(x)=a x^2+b x+c(a>0)$, 方程 $f(x)=x$ 的两个根是 $x_1$ 和 $x_2$, 且 $x_1>0, x_2-x_1>\\frac{1}{a}$. 又若 $0<t<x_1$, 试比较 $f(t)$ 与 $x_1$ 的大小.",
+    "solution": "解:因为 $x_1 、 x_2$ 是方程\n$$\na x^2+b x+c=x\n$$\n的两个根, 所以\n$$\n\\begin{gathered}\nx_1+x_2=-\\frac{b-1}{a}, x_1 x_2=\\frac{c}{a}, \\\\\na x_1^2+b x_1+c=x_1 .\n\\end{gathered}\n$$\n因此\n$$\n\\begin{aligned}\nf(t)-x_1 & =\\left(a t^2+b t+c\\right)-\\left(a x_1^2+b x_1+c\\right) \\\\\n& =a\\left(t+x_1\\right)\\left(t-x_1\\right)+b\\left(t-x_1\\right) \\\\\n& =a\\left(t-x_1\\right)\\left(t+x_1+\\frac{b}{a}\\right) .\n\\end{aligned}\n$$\n由\n$$\n\\begin{aligned}\nt+x_1+\\frac{b}{a} & =t+\\left(\\frac{1}{a}-x_2\\right) \\\\\n& =\\left(t+\\frac{1}{a}\\right)-x_2<\\left(x_1+\\frac{1}{a}\\right)-x_2<0,\n\\end{aligned}\n$$\n及 $a>0, t-x_1<0$, 得 $f(t)-x_1>0$.\n所以,当 $0<t<x_1$ 时,有 $f(t)>x_1$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题27 已知函数 $y=\\cos (2 \\arccos x)+4 \\sin \\left(\\arcsin \\frac{x}{2}\\right)$, 求它的最大值与最小值.",
+    "solution": "$y=2 x^2-1+2 x=2\\left(x+\\frac{1}{2}\\right)^2-\\frac{3}{2}$, 因 $x \\in[-1,1]$, 所以 $y_{\\text {max }}=3, y_{\\min }=-\\frac{3}{2}$.",
+    "remark": "",
+    "figures": []
+}

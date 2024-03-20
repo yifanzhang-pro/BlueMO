@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 设 $n$ 为正整数.\n证明: 若 $n$ 的所有正因子之和是 2 的整数次幂, 则这些正因子的个数也是 2 的整数次幂.",
+    "solution": "设 $n=p_1^{\\alpha_1} p_2^\\alpha \\cdots p_k^{\\alpha_k}$ 为 $n$ 的素因数分解,则 $n$ 的所有正因子之和可表示为 $\\left(1+p_1+\\cdots+p_1^{\\alpha_1}\\right)\\left(1+p_2+\\cdots+p_2^{\\alpha_2}\\right) \\cdots\\left(1+p_k+\\cdots+p_{k^k}^{\\alpha_k}\\right)$.\n若它是 2 的幂, 则每个因子 $f_i=1+p_i+\\cdots+p_i^{\\alpha_i}(i=1,2, \\cdots, k)$ 都是 2 的幂, 从而所有的 $p_i, \\alpha_i$ 均为奇数.\n若有某个 $\\alpha_i>1$, 则\n$$\nf_i=\\left(1+p_i\\right)\\left(1+p_i^2+p_i^4+\\cdots+p_i^{\\alpha_i-1}\\right),\n$$\n后一个因式必须为偶数, 从而 $\\frac{\\alpha_i-1}{2}$ 为奇数, 于是进一步可得: $1+p_i^2$ 也是 $f_i$ 的因子.\n由于 $1+p_i$ 与 $1+p_i^2$ 均为 2 的幕, 所以 $\\left(1+p_i\\right) \\mid\\left(1+p_i^2\\right)$, 但\n$$\n1+p_i^2=\\left(1+p_i\\right)\\left(p_i-1\\right)+2,\n$$\n故 $\\left(1+p_i\\right) \\mid 2$,矛盾.\n因此必有 $\\alpha_i=1(i=1,2, \\cdots, k)$.\n从而 $n$ 的正因子个数是 2 的幕.",
+    "remark": "",
+    "figures": []
+}

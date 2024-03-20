@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter2.tex",
+    "problem_type": "calculation",
+    "problem": "例7 已知函数 $f(x)=\\frac{\\sin (\\pi x)-\\cos (\\pi x)+2}{\\sqrt{x}}\\left(\\frac{1}{4} \\leqslant x \\leqslant \\frac{5}{4}\\right)$, 求 $f(x)$ 的最小值.",
+    "solution": "解:因为 $f(x)=\\frac{\\sqrt{2} \\sin \\left(\\pi x-\\frac{\\pi}{4}\\right)+2}{\\sqrt{x}}\\left(\\frac{1}{4} \\leqslant x \\leqslant \\frac{5}{4}\\right)$, 故可设 $g(x)= \\sqrt{2} \\sin \\left(\\pi x-\\frac{\\pi}{4}\\right)\\left(\\frac{1}{4} \\leqslant x \\leqslant \\frac{5}{4}\\right)$, 则 $g(x) \\geqslant 0, g(x)$ 在 $\\left[\\frac{1}{4}, \\frac{3}{4}\\right]$ 上是增函数, 在 $\\left[\\frac{3}{4}, \\frac{5}{4}\\right]$ 上是减函数, 且 $y=g(x)$ 的图象关于直线 $x=\\frac{3}{4}$ 对称.\n那么对任意 $x_1 \\in\\left[-\\frac{1}{4}, \\frac{3}{4}\\right]$, 存在 $x_2 \\in\\left[\\frac{3}{4}, \\frac{5}{4}\\right]$, 使得 $g\\left(x_2\\right)=g\\left(x_1\\right)$. 于是\n$$\n\\begin{aligned}\nf\\left(x_1\\right) & =\\frac{g\\left(x_1\\right)+2}{\\sqrt{x_1}}=\\frac{g\\left(x_2\\right)+2}{\\sqrt{x_1}} \\\\\n& \\geqslant \\frac{g\\left(x_2\\right)+2}{\\sqrt{x_2}}=f\\left(x_2\\right),\n\\end{aligned}\n$$\n而 $f(x)$ 在 $\\left[\\frac{3}{4}, \\frac{5}{4}\\right]$ 上是减函数, 所以 $f(x) \\geqslant f\\left(\\frac{5}{4}\\right)=\\frac{4 \\sqrt{5}}{5}$, 即 $f(x)$ 在\n$\\left[\\frac{1}{4}, \\frac{5}{4}\\right]$ 上的最小值是 $\\frac{4 \\sqrt{5}}{5}$.",
+    "remark": "",
+    "figures": []
+}

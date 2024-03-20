@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题8 设 $D=\\{1,2, \\cdots, 10\\}, f: D \\rightarrow D$, 且 $f$ 是一一映射, 令 $f^{(1)}(x)=f(x)$, $f^{(n+1)}(x)=f\\left(f^{(n)}(x)\\right)$, 试求 $D$ 的某一个排列 $\\left\\{x_i\\right\\}_{i=1}^{10}$, 使 $\\sum_{i=1}^{10} x_i f^{(2520)}(i)=$ 220.",
+    "solution": "对 $i=1,2, \\cdots, 10$, 由 $\\left\\{i, f_1(i), \\cdots, f_{10}(i)\\right\\} \\subseteq D$, 据抽屈原则, 并注意到 $f$ 是一一映射, 知存在 $1 \\leqslant r_i \\leqslant 10$, 使 $f r_i(i)=i$. 又 $2520=2^3 \\cdot 3^2$ ・ $5 \\cdot 7$ 为 $1,2, \\cdots, 10$ 的最小公倍数, 故上述 $r_i \\mid 2520$, 于是 $f_{2520}(i)=i$ 对一切 $i \\in D$ 成立, 原式为 $\\sum_{i=1}^{10} x_i \\cdot i=220$. 又由排序不等式 $\\sum_{i=1}^{10} x_i \\cdot i \\geqslant 1 \\times 10+\\cdots+$ $10 \\times 1=220$. 从而所求排列为 $10,9,8, \\cdots, 1$.",
+    "remark": "",
+    "figures": []
+}

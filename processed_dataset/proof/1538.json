@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-8.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $m$ 是一个给定的大于 1 的正整数,数列 $\\left\\{x_n\\right\\}$ 定义如下 $x_1=1$,\n$$\nx_2=2, \\cdots, x_m=m \\text {, 而 }\n$$\n$$\nx_{n+m}=x_{n+m-1}+x_n, n=1,2, \\cdots . \\label{eq1}\n$$",
+    "solution": "证明: 数列 $\\left\\{x_n\\right\\}$ 中存在连续的 $m-1$ 项, 它们都是 $m$ 的倍数.\n证明考察数列 $\\left\\{x_k(\\bmod m)\\right\\}$, 这里 $x_k(\\bmod m)$ 表示 $x_k$ 除以 $m$ 所得的余数, 将它记为 $y_k$. 转为证明: 数列 $\\left\\{y_k\\right\\}$ 中有连续 $m-1$ 个零.\n利用定理 2, 由 式\\ref{eq1} 可知, 存在 $n_0$ 及 $T \\in \\mathbf{N}^*$, 使得对任意 $k \\geqslant n_0$, 都有 $y_{k+T}=y_k$. 特别地, 有\n$$\ny_{n_0+m-1}=y_{n_0+m-1+T}, y_{n_0+m-2}=y_{n_0+n-2+T} .\n$$\n两式相减, 结合 式\\ref{eq1}及 $y_k$ 的定义可知 $y_{n_0-1}=y_{n_0-1+T}$, 依此倒推可知, 对任意 $k \\geqslant$ 1 , 都有 $y_k=y_{k+T}$.\n为得到我们的结论及计算上的方便, 我们将数列 $\\left\\{x_n\\right\\}$ 的下标依式\\ref{eq1}确定的递推关系向负整数延拓, 结合上面的讨论, 可知对任意 $k \\in \\mathbf{Z}$, 都有 $y_k=y_{k+T}$.\n现在由 $x_n=x_{n+m}-x_{n+m-1}$ 可知 $x_0=x_{-1}=\\cdots=x_{-(m-2)}=1$ (这里用到初始条件: 对任意 $1 \\leqslant j \\leqslant m$, 都有 $\\left.x_j=j\\right)$, 进而, 有 $x_{-(m-1)}=x_{-m}=\\cdots= x_{-(2 m-3)}=0$. 结合 $y_k=y_{k+T}$, 可知\n$$\n\\begin{aligned}\n& \\left(y_{-(2 m-3)+T}, \\cdots, y_{-(m-1)+T}\\right) \\\\\n= & \\left(y_{-(2 m-3)}, \\cdots, y_{-(m-1)}\\right)=(0, \\cdots, 0) .\n\\end{aligned}\n$$\n而 $y_{-(m-2)}=\\cdots=y_0=1$, 故 $-(2 m-3)+T \\geqslant 1$, 这表明: 数列 $\\left\\{y_k\\right\\}$ 中存在下标为正整数的连续 $m-1$ 项都等于零.\n所以, 命题成立.",
+    "remark": "",
+    "figures": []
+}

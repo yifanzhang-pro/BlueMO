@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例9. 设 $a \\leqslant b<c$ 是直角三角形 $A B C$ 的三边长, 求最大的常数 $M$, 使得 $\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c} \\geqslant \\frac{M}{a+b+c}-$ 恒成立.",
+    "solution": "分析:我们从熟悉的等腰直角三角形人手, 这时, 仅 $a$ 与 $b$ 地位相同, 在证明过程中应注意这一点.\n解当 $a=b=\\frac{\\sqrt{2}}{2} c$, 即 $\\triangle A B C$ 为等腰直角三角形时, 有\n$$\nM \\leqslant 2+3 \\sqrt{2} .\n$$\n下面证明\n$$\n\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c} \\geqslant \\frac{2+3 \\sqrt{2}}{a+b+c}\n$$\n即\n$$\na^2(b+c)+b^2(c+a)+c^2(a+b) \\geqslant(2+3 \\sqrt{2}) a b c\n$$\n恒成立.\n$$\n\\begin{aligned}\n\\text { 上式左端 } & =c\\left(a^2+b^2\\right)+\\left(a^2 b+b \\cdot \\frac{c^2}{2}\\right)+\\left(a b^2+\\frac{c^2}{a \\cdot 2}\\right)+\\frac{1}{2} c^2(a+b) \\\\\n& \\geqslant 2 a b c+\\sqrt{2} a b c+\\sqrt{2} a b c+\\frac{1}{2} c \\cdot \\sqrt{a^2+b^2} \\cdot(a+b) \\\\\n& \\geqslant 2 a b c+2 \\sqrt{2} a b c+\\frac{1}{2} c \\cdot \\sqrt{2 a b} \\cdot 2 \\sqrt{a b} \\\\\n& =(2+3 \\sqrt{2}) a b c .\n\\end{aligned}\n$$\n故\n$$\nM_{\\max }=2+3 \\sqrt{2} .\n$$",
+    "remark": "",
+    "figures": []
+}

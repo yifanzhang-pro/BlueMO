@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter19.tex",
+    "problem_type": "proof",
+    "problem": "例7. 已知数列\n$$\n1,0,1,0,1,0,3, \\cdots\n$$\n中,每一项等于它前面 6 项之和的末位数字.\n证明: 在这个数列中不存在连续的 6 项依次是 $0,1,0,1,0,1$.",
+    "solution": "证明:这个数列中每连续的 6 项 $x, y, z, u, v, w$ 对应于数\n$$\n2 x+4 y+6 z+8 u+10 v+12 w\n$$\n的个位数字.\n例如对于开始的六项 $1,0,1,0,1,0$, 对应的数是\n$$\n2 \\times 1+4 \\times 0+6 \\times 1+8 \\times 0+10 \\times 1+12 \\times 0=18\n$$\n的个位数字 8 .\n如果 $x, y, z, u, v, w, r$ 是顺次的 7 项, 那么 $y, z, u, v, w, r$ 所对应的数 $B$ 与 $x, y, z, u, v, w$ 所对应的数 $A$ 应满足:\n$$\n\\begin{aligned}\nB-A & =(2 y+4 z+6 u+8 v+10 w+12 r)-(2 x+4 y+6 z+8 u+10 v+12 w) \\\\\n& =12 r-2(x+y+z+u+v+w) \\equiv 12 r-2 r \\equiv 0(\\bmod 10) .\n\\end{aligned}\n$$\n所以, 在每一项换成它后面一项时, 连续 6 项所对应的数保持不变, 即对于这个数列, 每连续 6 项所对应的数永远是 8 .\n假如 $0,1,0,1,0,1$ 能作为这个数列中的连续 6 项, 这时对应的数为\n$$\n2 \\times 0+1 \\times 1+6 \\times 0+8 \\times 1+10 \\times 0+12 \\times 1=24\n$$\n的个位数字 4 , 不等于 8 . 所以数列中不存在连续 6 项依次是 $0,1,0,1,0,1$.",
+    "remark": "注:本题递推阶数较高, 不宜从数列的周期性着手, 又若从模周期性 (例如奇偶性)考虑, 并不能推出矛盾.\n因此不妨设出一个具有 $a x+b y+c z+d u+ e v+f w$ 形式的不变量, 其中 $a$ 至 $f$ 为待定的整数.\n注意到若 $r \\equiv x+y+z+u+v+w(\\bmod 10)$, 则有\n$$\n\\begin{gathered}\n(a y+b z+c u+d v+e w+f r)-(a x+b y+c z+d u+e v+f w) \\\\\n\\equiv(f-a) x+(a+f-b) y+(b+f-c) z \\\\\n+(c+f-d) u+(d+f-e) v+e w(\\bmod 10),\n\\end{gathered}\n$$\n因此,适当地取整数 $a$ 至 $f$, 使 $x, y, z, u, v, w$ 前的系数均被 10 整除, 即可构造出这样的不变量.\n本题便是通过这样的不变量证明了结论.",
+    "figures": []
+}

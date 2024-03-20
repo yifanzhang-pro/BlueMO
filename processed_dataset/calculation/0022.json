@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 已知 $a>0, a \\neq 1$, 解关于 $x$ 的不等式:\n$$\n2 \\log _a(x-1)>\\log _a[1+a(x-2)] .\n$$",
+    "solution": "分析:解对数不等式必然要考虑对数函数的单调性.\n于是, 将底数 $a$ 分为 $0<a<1$ 和 $a>1$ 两种情形讨论.\n解 (1) 当 $0<a<1$ 时, 原不等式等价于\n$$\n\\begin{aligned}\n& \\left\\{\\begin{array}{l}\nx-1>0, \\\\\n1+a(x-2)>0, \\\\\n(x-1)^2<1+a x-2 a,\n\\end{array}\\right. \\\\\n& \\left\\{\\begin{array}{l}\nx>1, \\\\\nx>2-\\frac{1}{a}, \\\\\na<x<2 .\n\\end{array}\\right.\n\\end{aligned}\n$$\n即因为 $0<a<1$, 所以 $1>2-\\frac{1}{a}$. 所以此时原不等式的解为 $1<x<2$.\n(2) 当 $a>1$ 时,原不等式等价于\n$$\n\\begin{aligned}\n& \\left\\{\\begin{array}{l}\nx-1>0, \\\\\n1+a(x-2)>0, \\\\\n(x-1)^2>1+a x-2 a,\n\\end{array}\\right. \\\\\n& \\left\\{\\begin{array}{l}\nx>2-\\frac{1}{a}, \\\\\n(x-2)(x-a)>0 .\n\\end{array}\\right.\n\\end{aligned}\n$$\ni) 当 $1<a<2$ 时, 由(2)得 $x<a$ 或 $x>2$.\n因为 $a>1$, 所以 $a-\\left(2-\\frac{1}{a}\\right)=a+\\frac{1}{a}-2>2 \\sqrt{a \\cdot \\frac{1}{a}}-2=0$, 所以 $a>2-\\frac{1}{a}$.\n所以, 此时原不等式的解为 $2-\\frac{1}{a}<x<a$ 或 $x>2$.\nii) 当 $a \\geqslant 2$ 时,由 (2) 得 $x<2$ 或 $x>a$.\n因为 $a \\geqslant 2$, 所以 $2>2-\\frac{1}{a}$.\n所以, 此时原不等式的解为 $2-\\frac{1}{a}<x<2$ 或 $x>a$.\n综上, 当 $0<a<1$ 时, 原不等式的解集为 $(1,2)$; 当 $1<a<2$ 时, 原不等式的解集为 $\\left(2-\\frac{1}{a}, a\\right) \\cup(2,+\\infty)$; 当 $a \\geqslant 2$ 时, 原不等式的解集为 $\\left(2-\\frac{1}{a}, 2\\right) \\cup(a,+\\infty)$.\n说明上述解答中的分类讨论有如下特点:\n1. 讨论是围绕参数 $a$ 展开的.\n2. 采用了二级分类的方式: 第一级的分类是由对数函数的单调性引起的, 我们将参数 $a$ 分为两大类: (1) $0<a<1$, (2) $a>1$; 第二级的分类是为了比较不等式 (2) 对应的方程 $(x-2)(x-a)=0$ 的两根的大小, 我们将 $a>1$ 又分成两小类: i) $1<a<2$, ii) $a \\geqslant 2$. 每级分类都严格遵循分类原则, 这种分类方式可推”到更多级的情形.\n3. 最后的结论是依不同情况下解的状况重新按一级分类叙述的.",
+    "remark": "",
+    "figures": []
+}

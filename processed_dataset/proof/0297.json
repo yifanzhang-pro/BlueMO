@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $\\alpha$ 是正实数, $n$ 为正整数,求证: 存在正整数 $p, q$ 使\n$$\n\\left|\\alpha-\\frac{q}{p}\\right| \\leqslant \\frac{1}{n p} \\text {. }\n$$",
+    "solution": "证明:先证下列命题:\n任给 $x_0, x_1, \\cdots, x_n \\in[0,1)$, 一定存在 $i, j(0 \\leqslant i<j \\leqslant n)$, 使得 $\\left|x_i-x_j\\right|<\\frac{1}{n}$. (只要将 $[0,1) n$ 等分为 $n$ 个小区间 $\\left[0, \\frac{1}{n}\\right),\\left[\\frac{1}{n}, \\frac{2}{n}\\right.$ ), $\\cdots,\\left[\\frac{n-1}{n}, 1\\right)$, 根据抽庶原理知 $n+1$ 个数 $x_0, x_1, \\cdots, x_n$ 中必有两个数 $x_i, x_j(0 \\leqslant i<j \\leqslant n)$ 落在同一区间内, 从而有 $\\left|x_i-x_j\\right|<\\frac{1}{n}$. )\n下面令 $m_i=[i \\alpha], i=0,1,2, \\cdots, n$. 于是 $m_i \\leqslant i \\alpha<m_i+1$, 即 $0 \\leqslant i \\alpha- m_i<1$, 由上述命题知, 存在 $0 \\leqslant k<l \\leqslant n$, 使得 $\\left|\\left(l_\\alpha-m_l\\right)-\\left(k \\alpha-m_k\\right)\\right|<\\frac{1}{n}$, 即\n$$\n\\left|(l-k) \\alpha-\\left(m_l-m_k\\right)\\right|<\\frac{1}{n} . \\label{eq1}\n$$\n令 $p=l-k, q=m_l-m_k$, 则 $p, q$ 为正整数, 代入 式\\ref{eq1} 得\n$$\n|p \\alpha-q|<\\frac{1}{n} \\text {, 即 }\\left|\\alpha-\\frac{q}{p}\\right|<\\frac{1}{n p} \\text {. }\n$$\n由例 3 我们可以得到一个关于实数的重要性质: 因 $p \\geqslant 1$, 故 $\\left|\\alpha-\\frac{q}{p}\\right|< \\frac{1}{n p} \\leqslant \\frac{1}{n}$, 它说明了实数可用有理数逼近到任意精确的程度.",
+    "remark": "",
+    "figures": []
+}

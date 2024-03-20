@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 证明: 存在无穷多对正整数 $(m, n)$, 满足方程\n$$\nm^2+25 n^2=10 m n+7(m+n) .\n$$",
+    "solution": "证法一:原方程可以写为\n$$\nm^2-(10 n+7) m+25 n^2-7 n=0,\n$$\n于是\n$$\n\\Delta=(10 n+7)^2-4\\left(25 n^2-7 n\\right)=168 n+49\n$$\n是完全平方数.\n取 $168 n+49=49(12 k+1)^2$, 其中 $k$ 是任意一个正整数,则 $n=42 k^2+7 k$.\n于是\n$$\n\\begin{aligned}\nm & =\\frac{10 n+7 \\pm \\sqrt{\\Delta}}{2}=\\frac{10\\left(42 k^2+7 k\\right)+7 \\pm 7(12 k+1)}{2} \\\\\n& =210 k^2-7 k \\text { 或 } 210 k^2+77 k+7 .\n\\end{aligned}\n$$\n所以, 存在无穷多对正整数 $(m, n)=\\left(210 k^2-7 k, 42 k^2+7 k\\right)$ (其中 $k$ 是正整数) 满足题设方程.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题18 对任意 $x, y \\in \\mathbf{Q}^{+}$( $\\mathbf{Q}^{+}$为正有理数集), 恒有: $f(x f(y))=\\frac{f(x)}{y}$.\n若 $f(2)=a, f(3)=b$, 求 $f\\left(3^n\\right), f(486)$.",
+    "solution": "取 $x=y=1$, 有 $f(f(1))=f(1) \\cdots$ (1). \n取 $y=f(1)$, 有 $f(x f(f(1)))=\\frac{f(x)}{f(1)} \\cdots$ (2). \n取 $y=1$, 有 $f(x f(1))=f(x) \\cdots$ (3). \n把(1)代入 (3)并利用(2), 有 $f(x)=f(x f(f(1)))=\\frac{f(x)}{f(1)}$. 所以 $f(1)=1$. \n在原恒等式中令 $x=1$, 有 $f(f(y))=\\frac{f(1)}{y}=\\frac{1}{y} \\cdots$ (4). \n取 $y=f(t)$, 由原恒等式及(4)有 $f(x)=f(t) f(x f(f(t)))=f(t) f\\left(\\frac{x}{t}\\right)$. \n令 $x=s t$, 由上式, 得 $f(s t)= f(s) f(t)$. \n因此 $f\\left(3^n\\right)=(f(3))^n=b^n, f(486)=f\\left(3^5 \\times 2\\right)=a b^5$.",
+    "remark": "",
+    "figures": []
+}

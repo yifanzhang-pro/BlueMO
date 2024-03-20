@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设 $p$ 是素数, $a \\geqslant 2, m \\geqslant 1, a^m \\equiv 1(\\bmod p), a^{p-1} \\equiv 1\\left(\\bmod p^2\\right)$. 证明: $a^m \\equiv 1\\left(\\bmod p^2\\right)$.",
+    "solution": "由 $a^m \\equiv 1(\\bmod p)$ 得 $a^m=1+p x$. 因此\n$$\na^{p m}=(1+p x)^p=1+p^2 x+C_p^2 p^2 x^2+\\cdots \\equiv 1\\left(\\bmod p^2\\right) . \\label{eq1}\n$$\n又 $a^{p-1} \\equiv 1\\left(\\bmod p^2\\right)$, 故 $a^{(p-1) m} \\equiv 1\\left(\\bmod p^2\\right)$, 从而 $a^{p m} \\equiv a^m\\left(\\bmod p^2\\right)$. 结合 式\\ref{eq1} 知 $a^m \\equiv 1\\left(\\bmod p^2\\right)$.",
+    "remark": "",
+    "figures": []
+}

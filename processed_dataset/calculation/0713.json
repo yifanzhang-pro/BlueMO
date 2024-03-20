@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题10. 若 $\\alpha$ 适合条件 $\\sin \\frac{\\alpha}{2}=\\frac{1}{2}(\\sqrt{1+\\sin \\alpha}+\\sqrt{1-\\sin \\alpha})$, 则 $\\frac{\\alpha}{2}$ 的取值范围是 ( ).\n(A) $\\left[2 k \\pi, 2 k \\pi+\\frac{\\pi}{2}\\right](k \\in \\mathbf{Z})$\n(B) $\\left[2 k \\pi+\\frac{\\pi}{2},(2 k+1) \\pi\\right](k \\in$\n(C) $\\left[2 k \\pi+\\frac{\\pi}{4}, 2 k \\pi+\\frac{3 \\pi}{4}\\right](k \\in$\n(D) $\\left[2 k \\pi+\\frac{3 \\pi}{4}, 2 k \\pi+\\frac{5 \\pi}{4}\\right](k \\in$",
+    "solution": "C. 因 $\\frac{1}{2}(\\sqrt{1+\\sin \\alpha}+\\sqrt{1-\\sin \\alpha})=\\frac{1}{2}\\left(\\left|\\sin \\frac{\\alpha}{2}+\\cos \\frac{\\alpha}{2}\\right|+\\right. \\left.\\left|\\sin \\frac{\\alpha}{2}-\\cos \\frac{\\alpha}{2}\\right|\\right)$, 所以要使原等式成立, 则 $\\sin \\frac{\\alpha}{2}+\\cos \\frac{\\alpha}{2} \\geqslant 0$, 且 $\\sin \\frac{\\alpha}{2}- \\cos \\frac{\\alpha}{2} \\geqslant 0$. 故选 C.",
+    "remark": "",
+    "figures": []
+}

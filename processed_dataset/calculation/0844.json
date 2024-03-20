@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题13. 求乘积 $x^2 y^2 z^2 u$ 在条件 $x, y, z, u \\geqslant 0$ 与 $2 x+x y+z+y z u=1$ 下的最大值.",
+    "solution": "由平均值不等式, 得 $\\sqrt[4]{2 x^2 y^2 z^2 u} \\leqslant \\frac{2 x+x y+z+z y u}{4}=\\frac{1}{4}$, 即\n$x^2 y^2 z^2 u \\leqslant \\frac{1}{512}$. 而且当 $2 x=x y=z=y z u=\\frac{1}{4}$, 即 $x=\\frac{1}{8}, y=2, z==\\frac{1}{4}$, $u=\\frac{1}{2}$ 时等式成立.\n于是, 所求的最大值为 $\\frac{1}{512}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题7. 将数集 $A=\\left\\{a_1, a_2, \\cdots, a_n\\right\\}$ 中所有元素的算术平均值记为 $P(A)\\left(P(A)=\\frac{a_1+a_2+\\cdots+a_n}{n}\\right)$. 若 $B$ 是 $A$ 的非空子集, 且 $P(B)= P(A)$, 则称 $B$ 是 $A$ 的均衡子集.\n试求数集 $M=\\{1,2,3,4,5,6,7,8$, $9\\}$ 的所有均衡子集的个数.",
+    "solution": "由于 $p(M)=5$. 令 $M^{\\prime}=\\{x-5 \\mid x \\in M\\}=\\{-4,-3,-2,-1,0,1,2,3,4\\}$, 则 $p\\left(M^{\\prime}\\right)=0$. 依照平移关系, $M$ 与 $M^{\\prime}$ 的平衡子集可一一对应.\n用 $f(k)$ 表示 $M^{\\prime}$ 的含 $k$ 个元素的均衡子集的个数.\n注意到若 $B \\neq M^{\\prime}$ 且 $B$ 是 $M^{\\prime}$ 的均衡子集, 则 $B$ 的补集 $B^{\\prime}=C_{M^{\\prime}} B$ 也是 $M^{\\prime}$ 的均衡子集, 二者一一对应.\n因此, $f(9-k)=f(k) . k=1,2,3,4$. 显然 $f(9)=1, f(1)=1$ (因 $M^{\\prime}$ 的 9 元均衡子集只有 $M^{\\prime}$, 一元均衡子集只有 $\\left.\\{0\\}\\right)$. 并且用分类枚举法不难求出 $f(2)=4, f(3)=8, f(4)=12$. 故 $M$ 的均衡子集的个数 $=M^{\\prime}$ 的均衡子集的个数 $=f(9)+2 \\sum_{k=1}^4 f(k)=1+2(1+4+8+12)=51$.",
+    "remark": "",
+    "figures": []
+}

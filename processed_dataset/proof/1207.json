@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题19. 证明: 如果 $A D 、 B E$ 与 $C F$ 是 $\\triangle A B C$ 的角平分线, 则 $\\triangle D E F$ 的面积不超过 $\\triangle A B C$ 的面积的四分之一.",
+    "solution": "记 $a=B C, b=A C, c=A B, S=S_{\\triangle A B C}, S_0=S_{\\triangle D E F}$. 由三角形平分线的性质, 得 $\\frac{A F}{b}=\\frac{B F}{a}=\\frac{A F+B F}{b+a}=\\frac{c}{a+b}$. 从而 $A F=\\frac{b c}{a+b}$, 同理可得 $A E=\\frac{b c}{a+c}$. 因此, $S_{\\triangle A E F}=\\frac{1}{2} A F \\cdot A E \\sin \\angle B A C=\\frac{1}{2} b c \\sin \\angle B A C \\cdot\\frac{b c}{(a+b)(a+c)}=\\frac{b c S}{(a+b)(a+c)}$. 同理可得 $S_{\\triangle B D F}=\\frac{a c S}{(a+b)(b+c)}, S_{\\triangle C D E}= \\frac{a b S}{(a+c)(b+c)}$. 由平均值不等式, 得 $S-S_0=S_{\\triangle A E F}+S_{\\triangle B D F}+S_{\\triangle C D E}= \\left[\\frac{b c}{(a+b)(a+c)}+\\frac{a c}{(b+a)(b+c)}+\\frac{a b}{(c+a)(c+b)}\\right] S \\geqslant \\frac{6 a b c S}{(a+b)(b+c)(c+a)}= 3\\left[1-\\frac{b c}{(a+b)(a+c)}-\\frac{a c}{(a+b)(c+b)}-\\frac{a b}{(a+c)(c+b)}\\right] S=3\\left(S-S_{\\triangle A E F}-\\right. \\left.S_{\\triangle B D F}-S_{\\triangle C D E}\\right)=3 S_0$. 于是, $S_0 \\leqslant \\frac{1}{4} S$, 即命题成立.",
+    "remark": "",
+    "figures": []
+}

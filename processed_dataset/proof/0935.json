@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题5 设 $f(x)=4\\left(x-\\frac{1}{2}\\right)^2, 0 \\leqslant x \\leqslant 1$. 求证: 对任意给定的 $n \\in \\mathbf{N}_{+}$, 必有 $x_0$ 使 $f^{(n)}\\left(x_0\\right)=x_0$, 但当 $k<n, k \\in \\mathbf{N}_{+}$时, $f^{(k)}\\left(x_0\\right) \\neq x_0$.",
+    "solution": "令 $x=\\phi(t)=\\frac{1}{2}(1+\\cos t)$, 则 $f(\\phi(t))=\\frac{1}{2}(1+\\cos 2 t)=\\phi(2 t)$. 故取 $t=\\varphi(x)=\\phi^{-1}(x)=\\arccos (2 x-1), g(x)=2 x$, 得 $f(x)=$ $\\varphi^{-1}(g(\\varphi(x)))$, 于是 $f^{(n)}(x)=\\varphi^{-1}\\left(g^{(n)}(\\varphi(x))\\right)=\\frac{1}{2}\\left\\{1+\\cos \\left[2^n \\arccos (2 x-\\right.\\right.$ 1) ] \\}, $0 \\leqslant x \\leqslant 1$. 方程 $f^{(n)}(x)=x$ 化为 $\\frac{1}{2}\\left\\{1+\\cos \\left[2^n \\arccos (2 x-1)\\right]\\right\\}=x$, 即 $\\cos \\left[2^n \\arccos (2 x-1)\\right]=2 x-1$, 故此方程有且只有 $2^n$ 个不同实根.\n由于 $f^{(k)}(x)=x$ 是 $2^k$ 次方程, 至多有 $2^k$ 个根, 故当一切正整数 $k<n$, 方程 $f^{(k)}(x)=x$ 的根的总数目不超过 $2+2^2+\\cdots+2^{n-1}=2^n-2$, 于是有实数 $x_0$, 它是 $f^{(n)}(x)=x$ 的根而不是任一方程 $f^{(k)}(x)=x(k=1,2, \\cdots, n-1)$ 的根.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例1. (Erdös-Mordell 不等式) 设 $P$ 为 $\\triangle A B C$ 内任意一点, $P$ 到三边 $B C 、 C A 、 A B$ 的距离分别为 $P D=p 、 P E=q 、 P F=r$, 并记 $P A=x$, $P B=y, P C=z$, 则\n$$\nx+y+z \\geqslant 2(p+q+r),\n$$\n等号成立当且仅当 $\\triangle A B C$ 为正三角形并且 $P$ 为此三角形的中心.",
+    "solution": "要点是将三角形的高转化为内角平分线来处理,并运用嵌人不等式.\n证明 4 如图(<FilePath:./images/volume9/figures/fig-c5i4.png>), 设 $\\angle B P C=2 \\alpha, \\angle C P A=2 \\beta, \\angle A P B=2 \\gamma$, 设它们的内角平分线长分别是 $w_a 、 w_b 、 w_c$, 则我们只需证明更强的不等式\n$$\nx+y+z \\geqslant 2\\left(w_a+w_b+w_c\\right) .\n$$\n事实上,注意到内角平分线公式有\n$$\nw_a=\\frac{2 y z}{y+z} \\cos \\frac{1}{2} \\angle B P C \\leqslant \\sqrt{y z} \\cos \\alpha,\n$$\n同理\n$$\n\\begin{aligned}\n& w_b \\leqslant \\sqrt{x z} \\cos \\beta, \\\\\n& w_c \\leqslant \\sqrt{x y} \\cos \\gamma .\n\\end{aligned}\n$$\n由于 $\\alpha+\\beta+\\gamma=\\pi$, 所以由嵌人不等式可得\n$$\n\\begin{aligned}\n2\\left(w_a+w_b+w_c\\right) & \\leqslant 2(\\sqrt{y z} \\cos \\alpha+\\sqrt{x z} \\cos \\beta+\\sqrt{x y} \\cos \\gamma) \\\\\n& \\leqslant x+y+z .\n\\end{aligned}\n$$\n证完.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c5i4.png"
+    ]
+}

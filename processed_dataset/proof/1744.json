@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例1. 如图(<FilePath:./images/volume7/figures/fig-c8i12.png>), $R K 、 R L$ 是圆的两条切线, 过 $R$ 的割线交圆于 $S 、 T$ 两点, 交 $K L$ 于 $V$, 则 $R 、 V 、 S 、 T$ 是调和点列.",
+    "solution": "证明:连结 $S L 、 T L$, 注意到 $\\angle S L R=\\angle L T R$, 于是 $\\triangle S L R \\backsim \\triangle L T R$,\n$\\frac{S L}{L T}=\\frac{S R}{R L}=\\frac{R L}{R T}=\\sqrt{\\frac{S R}{R T}}$, 同理可证, $\\frac{S K}{K T}= \\sqrt{\\frac{S R}{R T}}$, 另一方面, $\\frac{S V}{V T}=\\frac{S_{\\triangle S K L}}{S_{\\triangle T K L}}=\\frac{S K \\cdot S L}{T K \\cdot T L}= \\frac{S L}{L T} \\cdot \\frac{S K}{K T}=\\frac{S R}{R T}$, 即 $R 、 V 、 S 、 T$ 成调和点列.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8i12.png"
+    ]
+}

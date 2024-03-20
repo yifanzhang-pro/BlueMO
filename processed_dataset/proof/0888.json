@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例6 设 $f(x)=a x+b$, 求 $f^{(n)}(x)$.",
+    "solution": "解:$f(x)=a x+b$,\n$$\n\\begin{aligned}\nf^{(2)}(x) & =f(f(x))=a(a x+b)+b=a^2 x+a b+b, \\\\\nf^{(3)}(x) & =f\\left(f^{(2)}(x)\\right)=a\\left(a^2 x+a b+b\\right)+b \\\\\n& =a^3 x+a^2 b+a b+b,\n\\end{aligned}\n$$\n由此猜测\n$$\nf^{(n)}(x)=a^n x+a^{n-1} b+a^{n-2} b+\\cdots+a b+b .\n$$\n下面用数学归纳法证明.\n(1) 当 $n=1$ 时,命题成立.\n(2) 假设 $f^{(k)}(x)=a^k x+a^{k-1} b+\\cdots+a b+b$ 成立, 那么\n$$\n\\begin{aligned}\nf^{(k+1)}(x) & =f\\left(f^{(k)}(x)\\right)=a\\left(a^k x+a^{k-1} b+\\cdots+a b+b\\right)+b \\\\\n& =a^{k+1} x+a^k b+\\cdots+a b+b,\n\\end{aligned}\n$$\n即 $n=k+1$ 时,命题亦成立.\n由(1)、(2)就证得了\n$$\nf^{(n)}(x)=a^n x+a^{n-1} b+\\cdots+a b+b .\n$$",
+    "remark": "",
+    "figures": []
+}

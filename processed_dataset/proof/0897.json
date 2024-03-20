@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例23 将一张地图按比例缩小之后放人原地图中, 证明: 有且仅有一点代表了两张地图的同一位置 (不动点).",
+    "solution": "证如图 (<FilePath:./images/volume2/figures/fig-c6e23.png>)所示, 先把两张地图放人一个复平面上.\n记 $A, B$ 两点对应的复数为 $0,1, A^{\\prime}$, $B^{\\prime}$ 两点对应的复数为 $z_1, z_2$, 那么 $\\left|z_1-z_2\\right|<1$.\n在小地图中任取一点 $P$ (对应复数 $z$ ), 连结 $P A, P B$. 再在小地图中另找一点 $Q$ (对应复数 $f(z))$, 使 $\\triangle Q A^{\\prime} B^{\\prime} \\backsim \\triangle P A B$.\n若 $f(z)=z$, 则点 $P$ 就是不动点.\n否则, 再计算 $f^{(2)}(z), \\cdots$. 下面证明 $: \\lim _{n \\rightarrow \\infty} f^{(n)}(z)$ 一定存在.\n因为\n$$\n\\triangle Q A^{\\prime} B^{\\prime} \\backsim \\triangle P A B\n$$\n所以\n$$\n\\frac{f(z)-z_1}{z_2-z_1}=\\frac{z-O}{1-O}\n$$\n$$\n\\begin{aligned}\n& f(z)=\\left(z_2-z_1\\right) z+z_1, \\\\\n& f^{(2)}(z)=\\left(z_2-z_1\\right) f(z)+z_1=\\left(z_2-z_1\\right)^2 z+\\left(z_2-z_1\\right) z_1+z_1, \\\\\n& \\cdots \\cdots \\\\\n& f^{(n)}(z)=\\left(z_2-z_1\\right)^n z+\\frac{1-\\left(z_2-z_1\\right)^n}{1+z_1-z_2} z_1 .\n\\end{aligned}\n$$\n因为 $\\left|z_2-z_1\\right|<1$, 故 $\\lim _{n \\rightarrow \\infty} f^{(n)}(z)=\\frac{z_1}{1+z_1-z_2}$.\n因此, $\\frac{z_1}{1+z_1-z_2}$ 对应的点即为所求.\n而不可能有两个不动点, 否则两张地图一样大.\n证毕.",
+    "remark": "",
+    "figures": [
+        "./images/volume2/figures/fig-c6e23.png"
+    ]
+}

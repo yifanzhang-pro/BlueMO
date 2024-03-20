@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题10. (反向 Cauchy 不等式-Polya-Szego 不等式)\n设 $0<m_1 \\leqslant a_i \\leqslant M_1, 0<m_2 \\leqslant b_i \\leqslant M_2, i=1,2, \\cdots, n$, 则有:\n$$\n\\frac{\\left(\\sum_{i=1}^n a_i^2\\right)\\left(\\sum_{i=1}^n b_i^2\\right)}{\\left(\\sum_{i=1}^n a_i b_i\\right)^2} \\leqslant \\frac{1}{4} \\cdot\\left(\\sqrt{\\frac{M_1 M_2}{m_1 m_2}}+\\sqrt{\\frac{m_1 m_2}{M_1 M_2}}\\right)^2 .\n$$",
+    "solution": "由已知条件, $\\frac{m_2}{M_1} \\leqslant \\frac{b_i}{a_i} \\leqslant \\frac{M_2}{m_1}, \\frac{m_2}{M_1} a_i \\leqslant b_i \\leqslant \\frac{M_2}{m_1} a_i$, 则\n$$\n\\left(b_i-\\frac{M_2}{m_1} a_i\\right)\\left(b_i-\\frac{m_2}{M_1} a_i\\right) \\leqslant 0 .\n$$\n因此 $b_i^2-\\left(\\frac{M_2}{m_1}+\\frac{m_2}{M_1}\\right) a_i b_i+\\frac{M_2 m_2}{M_1 m_1} a_i^2 \\leqslant 0$.\n由平均值不等式, $2\\left(\\sum b_i^2 \\cdot \\frac{M_2 m_2}{M_1 m_1} \\sum a_i^2\\right)^{\\frac{1}{2}} \\leqslant \\sum b_i^2+\\frac{M_2 m_2}{M_1 m_1} \\sum a_i^2$, 于是 $2\\left(\\sum b_i^2 \\cdot \\frac{M_2 m_2}{M_1 m_1} \\cdot \\sum a_i^2\\right)^{\\frac{1}{2}} \\leqslant\\left(\\frac{M_2}{m_1}+\\frac{m_2}{M_1}\\right) \\sum a_i b_i$, 故 $\\frac{\\sum a_i^2 \\sum b_i^2}{\\left(\\sum a_i b_i\\right)^2} \\leqslant \\frac{1}{4}\\left(\\frac{\\frac{M_2}{m_1}+\\frac{m_2}{M_1}}{M_2 m_2 / M_1 m_1}\\right)^2=\\frac{1}{4} \\cdot\\left(\\sqrt{\\frac{M_1 M_2}{m_1 m_2}}+\\sqrt{\\frac{m_1 m_2}{M_1 M_2}}\\right)^2$.",
+    "remark": "",
+    "figures": []
+}

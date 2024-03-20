@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 已知复系数多项式 $P(z)=\\sum_{i=0}^n a_i z^i\\left(n \\in \\mathbf{N}^*\\right)$. 求证: 存在一个复数 $z$, 满足 $|z| \\leqslant 1$, 且\n$$\n|P(z)| \\geqslant\\left|a_0\\right|+\\frac{\\left|a_1\\right|}{n} .\n$$",
+    "solution": "将 $P(z)$ 乘以一个模长为 1 的单位向量, 可使 $a_0 \\geqslant 0$, 再将 $z$ 乘以一个单位向量, 可使 $a_1 \\geqslant 0$. 现在, 如果对任意 $|z| \\leqslant 1$, 均有 $|P(z)|<a_0+\\frac{a_1}{n}$, 记\n$$\nf(z)=a_0+\\frac{a_1}{n}-P(z)=\\frac{a_1}{n}-a_1 z-\\cdots-a_n z^n .\n$$\n则 $f(z)$ 的复根的模长都大于 1 , 特别地, $a_1 \\neq 0$. 于是, 将 $\\frac{n}{a_1} f(z)$ 分解因式有\n$$\n1-n z-\\cdots-\\frac{n a_n}{a_1} z^n=\\left(1-b_1 z\\right)\\left(1-b_2 z\\right) \\cdots\\left(1-b_n z\\right) .\n$$\n其中 $b_i \\in \\mathbf{C}$, 且 $\\left|b_i\\right|<1,1 \\leqslant i \\leqslant n$, 这导致 $n=\\left|b_1+\\cdots+b_n\\right| \\leqslant\\left|b_1\\right|+\\cdots+ \\left|b_n\\right|<n$, 矛盾.\n证毕.",
+    "remark": "",
+    "figures": []
+}

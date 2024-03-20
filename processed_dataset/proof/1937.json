@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $\\alpha 、 \\beta$ 为复数且 $|\\alpha|=k$, 证明:\n$$\n\\left|k| \\beta |^{\\frac{1}{2}}-\\alpha \\frac{\\beta}{|\\beta|^{\\frac{1}{2}}}\\right|^2=2 k[k|\\beta|-\\operatorname{Re}(\\alpha \\beta)] .\n$$",
+    "solution": "证法 2 利用恒等式: $|\\alpha-\\beta|^2=|\\alpha|^2+|\\beta|^2-2 \\operatorname{Re} \\bar{\\alpha} \\beta$, 则\n$$\n\\begin{aligned}\n\\left|k| \\beta |^{\\frac{1}{2}}-\\alpha \\frac{\\beta}{|\\beta|^{\\frac{1}{2}}}\\right|^2 & =\\left(k|\\beta|^{\\frac{1}{2}}\\right)^2+\\left(k|\\beta|^{\\frac{1}{2}}\\right)^2-2 \\operatorname{Re}(k \\alpha \\beta) \\\\\n& =2 k[k|\\beta|-\\operatorname{Re}(\\alpha \\beta)],\n\\end{aligned}\n$$\n证毕.",
+    "remark": "注:事实上,证法 1 中的那个形式上简单一些的恒等式也可以由证法 2 中的那个恒等式推出.\n这是一个熟知的结论, 但是有相当多的学生不习惯, 或者说不喜欢用这个式子, 因为觉得这个式子破坏了对称性, 不如 $|\\alpha-\\beta|^2= |\\alpha|^2+|\\beta|^2-\\bar{\\alpha} \\beta-\\alpha \\bar{\\beta}$ 来得美观.\n但在本题中, 恰恰是这个实形式的恒等式对解题所起的作用要比对称形式的那个式子大 (读者可以自行比较).",
+    "figures": []
+}

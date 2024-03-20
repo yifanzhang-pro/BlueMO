@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter1.tex",
+    "text": "五、一类不定方程的非负整数解的个数不定方程 $x_1+x_2+\\cdots+x_m=n\\left(m, n \\in \\mathbf{N}_{+}\\right)$的非负整数解 $\\left(x_1, x_2, \\cdots\\right.$, $\\left.x_m\\right)$ 的个数为 $\\mathrm{C}_{n+m-1}^{m-1}$.\n证明将方程 $x_1+x_2+\\cdots+x_m=n$ 的一组非负整数解 $\\left(x_1, x_2, \\cdots, x_m\\right)$, 对应于一个由 $n$ 个圈\" $\\bigcirc$ \"和 $m-1$ 条坚线\"|\"组成的排列其中第一条坚线\"|\"左侧有 $x_1$ 个圈\" $\\bigcirc$ \",第 $i$ 条坚线\"|\"与第 $i+1$ 条\"|\"之间数解 $\\left(x_1, x_2, \\cdots, x_m\\right)$ 的个数等于 $n$ 个圈\" $\\bigcirc$ \"和 $m-1$ 条坚线 \"|\"共 $n+m-1$ 个元素的直线排列的个数 $\\mathrm{C}_{n+m-1}^n=\\mathrm{C}_{n+m-1}^{m-1}$.\n注意不定方程 $x_1+x_2+\\cdots+x_m=n$ 的非负整数解的个数与可重复组合的计数是相同的.\n推论不定方程 $x_1+x_2+\\cdots+x_m=n\\left(m, n \\in \\mathbf{N}_{+}, m \\leqslant n\\right)$ 的正整数解 $\\left(x_1, x_2, \\cdots, x_m\\right)$ 的个数为 $\\mathrm{C}_{n-1}^{m-1}$.\n证明令 $y_i=x_i-1(i=1,2, \\cdots, m)$, 则 $y_1+y_2+\\cdots+y_m=n-m$, 所以不定方程 $x_1+x_2+\\cdots+x_m=n$ 的正整数解的个数 $S$ 等于不定方程 $y_1+ y_2+\\cdots+y_m=n-m$ 的非负整数解的个数, 即 $S=\\mathrm{C}_{n-m+m-1}^{m-1}=\\mathrm{C}_{n-1}^{m-1}$.",
+    "figures": []
+}

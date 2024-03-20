@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $P$ 是锐角三角形 $\\triangle A B C$ 内一点, 关于 $P$ 的垂足三角形为 $\\triangle D E F$. 求证: 总可以以 $\\triangle D E F$ 的某两边为邻边作一平行四边形使之位于 $\\triangle A B C$ 内.",
+    "solution": "证明:设 $O$ 是 $\\triangle A B C$ 的外心, 因为 $\\triangle A B C$ 为锐角三角形, 所以 $O$ 位于 $\\triangle A B C$ 内.\n不妨设 $P$. 落在 $\\triangle A O B$ 内, 如图(<FilePath:./images/volume9/figures/fig-c4i8.png>).\n我们证明以 $F E 、 F D$ 为邻边作的平行四边形 $D F E G$ 位于 $\\triangle A B C$ 内.\n为此, 只需证明\n$$\n\\begin{aligned}\n& \\angle F E G \\leqslant \\angle F E C, \\label{eq1}\\\\\n& \\angle F D G \\leqslant \\angle F D C . \\label{eq2}\n\\end{aligned}\n$$\n下证式\\ref{eq1}, \\ref{eq2}类似可证.\n因为\n$$\n\\begin{gathered}\n\\angle F E G=\\angle A F E+\\angle B F D, \\\\\n\\angle F E C=\\angle A F E+\\angle A,\n\\end{gathered}\n$$\n因此要证式\\ref{eq1}, 只需证明\n$$\n\\angle B F D \\leqslant \\angle A . \\label{eq3}\n$$\n事实上, 由 $B 、 F 、 P 、 D$ 四点共圆知\n$$\n\\angle B F D=\\angle B P D . \\label{eq4}\n$$\n现过 $O$ 作 $O H \\perp B C$, 垂足为 $H$, 则由\n$$\n\\angle P B D \\geqslant \\angle O B H\n$$\n可知\n$$\n\\angle B P D \\leqslant \\angle B O H, \\label{eq5}\n$$\n而 $O$ 为 $\\triangle A B C$ 的外心, 因此\n$$\n\\angle B O H=\\angle B A C=\\angle A . \\label{eq6}\n$$\n由式\\ref{eq4}、\\ref{eq5}、式\\ref{eq6}, \\ref{eq3}得证.",
+    "remark": "注:由例 2 我们知, 对锐角三角形, 由定理 1 可推出命题 2 .\n上例曾被用作第 2 届中国西部数学奥林匹克试题 (笔者为了降低难度, 加上了 $P$ 位于 $\\triangle A O B$ 内这一条件).\n下面的话题转向三角形内的五点问题,这个问题是 A. Soifer 提供给 Colorado 数学奥林匹克的一个试题.\n他提出并证明了: 在单位面积的三角形内任给五点, 则至少有三点组成的三角形的面积不超过 $\\frac{1}{4}$.\n不难证明, 五点问题的点数不能减少, 但着眼于结论中三角形的个数, 我们仍能改进问题的结论.",
+    "figures": [
+        "./images/volume9/figures/fig-c4i8.png"
+    ]
+}

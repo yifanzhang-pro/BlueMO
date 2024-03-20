@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-2.tex",
+    "problem_type": "proof",
+    "problem": "例8. 对满足 $a+b=1$ 的正实数 $a 、 b$, 求\n$$\n\\left(a+\\frac{1}{a}\\right)^2+\\left(b+\\frac{1}{b}\\right)^2\n$$\n的最小值.",
+    "solution": "解:当 $a=b=\\frac{1}{2}$ 时, 我们有\n$$\n\\left(a+\\frac{1}{a}\\right)^2+\\left(b+\\frac{1}{b}\\right)^2=\\frac{25}{2} .\n$$\n下面证明\n$$\n\\left(a+\\frac{1}{a}\\right)^2+\\left(b+\\frac{1}{b}\\right)^2 \\geqslant \\frac{25}{2} .\n$$\n从而最小值为 $\\frac{25}{2}$.\n令 $x=a+\\frac{1}{a}, y=b+\\frac{1}{b}$, 由\n$$\n\\frac{x^2+y^2}{2} \\geqslant\\left(\\frac{x+y}{2}\\right)^2 \\text {. }\n$$\n于是\n$$\n\\begin{aligned}\n\\frac{1}{2}\\left[\\left(a+\\frac{1}{a}\\right)^2+\\left(b+\\frac{1}{b}\\right)^2\\right] & \\geqslant\\left\\{\\frac{1}{2}\\left[\\left(a+\\frac{1}{a}\\right)+\\left(b+\\frac{1}{b}\\right)\\right]\\right\\}^2 \\\\\n& =\\left[\\frac{1}{2}\\left(1+\\frac{1}{a}+\\frac{1}{b}\\right)\\right]^2\n\\end{aligned}\n$$\n由柯西不等式, 得 $\\left(\\frac{1}{a}+\\frac{1}{b}\\right)(a+b) \\geqslant(1+1)^2=4$. 则\n$$\n\\left[\\frac{1}{2}\\left(1+\\frac{1}{a}+\\frac{1}{b}\\right)\\right]^2 \\geqslant\\left[\\frac{1}{2}\\left(1+\\frac{4}{a+b}\\right)\\right]^2=\\left(\\frac{1+4}{2}\\right)^2=\\frac{25}{4} \\text {. }\n$$\n从而命题成立.",
+    "remark": "",
+    "figures": []
+}

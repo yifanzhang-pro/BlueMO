@@ -1,0 +1,12 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例6. 如图(<FilePath:./images/volume8/figures/fig-c4i2.png>), 在 $\\triangle A B C$ 的内部任选点 $O$, 证明: $S_A \\cdot \\overrightarrow{O A}+S_B \\cdot \\overrightarrow{O B}+S_C \\cdot \\overrightarrow{O C}=\\overrightarrow{0}$, 其中 $S_A$ 、 $S_B 、 S_C$ 分别为 $\\triangle B C O 、 \\triangle C A O 、 \\triangle A B O$ 的面积.",
+    "solution": "分析:与解如图(<FilePath:./images/volume8/figures/fig-c4i2.png>), 设 $\\overrightarrow{O A} 、 \\overrightarrow{O B} 、 \\overrightarrow{O C}$ 上的单位向量分别为 $\\overrightarrow{e_1} 、 \\overrightarrow{e_2} 、 \\overrightarrow{e_3}$, 作 $\\triangle P Q R$, 使 $P Q / / O A, Q R / / O B$, $P R / / O C$, (如图(<FilePath:./images/volume8/figures/fig-c4i3.png>)) 则 $\\sin \\angle R=\\sin \\alpha, \\sin \\angle P= \\sin \\beta, \\sin \\angle Q=\\sin \\gamma$.\n因为 $\\overrightarrow{Q P}+\\overrightarrow{P R}+\\overrightarrow{R Q}=\\overrightarrow{Q Q}=\\overrightarrow{0}$, 所以 $|\\overrightarrow{Q P}| \\overrightarrow{e_1}+ |\\overrightarrow{P R}| \\overrightarrow{e_2}+|\\overrightarrow{R Q}| \\overrightarrow{e_3}=0$.\n设 $R$ 为 $\\triangle P Q R$ 的外接圆半径, 则\n$2 R \\sin \\alpha \\cdot \\overrightarrow{e_1}+2 R \\sin \\beta \\cdot \\overrightarrow{e_2}+2 R \\sin \\gamma \\cdot \\overrightarrow{e_3}=\\overrightarrow{0}$, $\\sin \\alpha \\cdot \\overrightarrow{e_1}+\\sin \\beta \\cdot \\overrightarrow{e_2}+\\sin \\gamma \\cdot \\overrightarrow{e_3}=\\overrightarrow{0}$.\n$$\n\\begin{gathered}\n\\frac{1}{2}|O A| \\cdot|O B| \\cdot|O C| \\cdot \\sin \\alpha \\overrightarrow{e_1}+\\frac{1}{2}|O A| \\cdot|O B| \\cdot|O C| \\cdot \\sin \\beta \\overrightarrow{e_2} \\\\\n+\\frac{1}{2}|O A| \\cdot|O B| \\cdot|O C| \\cdot \\sin \\gamma \\overrightarrow{e_3}=\\overrightarrow{0}\n\\end{gathered}\n$$\n$$\n\\begin{gathered}\n\\left(\\frac{1}{2}|O B| \\cdot|O C| \\sin \\alpha\\right)\\left(|O A| \\cdot \\overrightarrow{e_1}\\right)+\\left(\\frac{1}{2}|O A| \\cdot|O C| \\sin \\beta\\right)\\left(|O B| \\cdot \\overrightarrow{e_2}\\right) \\\\\n+\\left(\\frac{1}{2}|O A| \\cdot|O B| \\sin \\gamma\\right)\\left(|O C| \\cdot \\overrightarrow{e_3}\\right)=\\overrightarrow{0}\n\\end{gathered}\n$$\n所以 $S_A \\cdot \\overrightarrow{O A}+S_B \\cdot \\overrightarrow{O B}+S_C \\cdot \\overrightarrow{O C}=\\overrightarrow{0}$, 证毕.",
+    "remark": "",
+    "figures": [
+        "./images/volume8/figures/fig-c4i2.png",
+        "./images/volume8/figures/fig-c4i2.png",
+        "./images/volume8/figures/fig-c4i3.png"
+    ]
+}

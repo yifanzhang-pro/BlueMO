@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例15. (1)设实数 $x 、 y 、 z$ 都不等于 $1, x y z=1$, 求证:\n$$\n\\frac{x^2}{(x-1)^2}+\\frac{y^2}{(y-1)^2}+\\frac{z^2}{(z-1)^2} \\geqslant 1 \\text {. }\n$$\n(2) 求证: 存在无穷多组三元有理数组 $(x, y, z)$, 使得上述不等式等号成立.",
+    "solution": "证法 2 (1) 由 $x y z=1$, 可设 $p=x, q=1, r=\\frac{1}{y}$, 得 $x=\\frac{p}{q}, y=\\frac{q}{r}, z= \\frac{1}{x y}=\\frac{r}{p}, p 、 q 、 r$ 互不相等.\n故\n$$\n\\begin{gathered}\n\\frac{x^2}{(x-1)^2}+\\frac{y^2}{(y-1)^2}+\\frac{z^2}{(z-1)^2} \\geqslant 1 \\\\\n\\Leftrightarrow \\frac{p^2}{(p-q)^2}+\\frac{q^2}{(q-r)^2}+\\frac{r^2}{(r-p)^2} \\geqslant 1 .\n\\end{gathered} \\label{eq1}\n$$\n令 $a=\\frac{p}{p-q}, b=\\frac{q}{q-r}, c=\\frac{r}{r-p}$, 则 式\\ref{eq1} 化为 $\\sum_{c y c} a^2 \\geqslant 1$. 由于\n$$\n\\begin{gathered}\n\\frac{-1+a}{a}=\\frac{q}{p}, \\frac{-1+b}{b}=\\frac{r}{q}, \\frac{-1+c}{c}=\\frac{p}{r}, \\\\\n\\frac{-1+a}{a} \\cdot \\frac{-1+b}{b} \\cdot \\frac{-1+c}{c}=1, \\\\\n1-\\sum_{c y c} a+\\sum_{c y c} a b=0,\n\\end{gathered} \\label{eq2}\n$$\n由式\\ref{eq2}可得\n$$\n1-\\sum_{c y c} a^2=-(a+b+c-1)^2 \\leqslant 0\n$$\n所以 $\\sum_{c y c} a^2 \\geqslant 1$, 从而\\ref{eq1}式成立.\n(2) 令 $b=\\frac{t^2+t}{t^2+t+1}, c=\\frac{t+1}{t^2+t+1}, a=-\\frac{b c}{b+c}$, 其中 $t$ 可取除 0、- 1 外的一切有理数, 改变 $t$, 其中使得 $b 、 c 、 a$ 中有某个为 1 的至多只有有限个, 这样就得到无穷多组三元有理数组 $(a, b, c), a 、 b 、 c$ 都不等于 1 , 使得 $\\sum_{c y c} a= \\sum_{c y c} a^2=1$, 而由 $(x, y, z)=\\left(\\frac{a}{a-1}, \\frac{b}{b-1}, \\frac{c}{c-1}\\right)$ 知 (2)成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题3 设集合 $A \\cup B=\\{1,2, \\cdots, 9\\}, A \\cap B=\\varnothing$. 求证: 在 $A$ 或 $B$ 中含有三个元素 $x 、 y 、 z$, 使得 $x+z=2 y$.",
+    "solution": "假设结论不成立.\n不妨设 $5 \\in A$, 则 $1 、 9$ 不同时属于 $A$. 若 $1 \\in A$, 且 $9 \\in B$, 则 $3 \\in B \\Rightarrow 6 \\in A \\Rightarrow 4,7 \\in B \\Rightarrow 2,8 \\in A$, 与 $5 \\in A$ 矛盾.\n若 $1,9 \\in B$, 当 $7 \\in A \\Rightarrow 3,6 \\in B$, 与 $9 \\in B$ 矛盾; 当 $7 \\in B \\Rightarrow 8,4 \\in A \\Rightarrow 3 \\in B \\Rightarrow 2 \\in A$, $2,5,8 \\in A$ 矛盾.",
+    "remark": "",
+    "figures": []
+}

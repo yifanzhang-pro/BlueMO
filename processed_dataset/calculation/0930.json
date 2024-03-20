@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 已知非零复数 $a 、 b 、 c$ 满足 $\\frac{a}{b}=\\frac{b}{c}=\\frac{c}{a}$, 试求 $\\frac{a+b-c}{a-b+c}$ 的一切可能值.",
+    "solution": "分析:与解设 $\\frac{a}{b}=\\frac{b}{c}=\\frac{c}{a}=k$, 则 $a=b k, b=c k, c=a k$, 也就有 $c= a k, b=a k \\cdot k=a k^2, a=a k^2 \\cdot k=a k^3$. 因为 $a \\neq 0$, 所以有 $k^3=1$, 解得 $k=1$ 或 $k=-\\frac{1}{2} \\pm \\frac{\\sqrt{3}}{2} \\mathrm{i}$.\n所以 $\\frac{a+b-c}{a-b+c}=\\frac{a+a k^2-a k}{a-a k^2+a k}=\\frac{1+k^2-k}{1-k^2+k}$.\n若 $k=1$, 则原式 $=1$;\n若 $k=-\\frac{1}{2}+\\frac{\\sqrt{3}}{2} \\mathrm{i}$, 则原式 $=-\\frac{1}{2}-\\frac{\\sqrt{3}}{2} \\mathrm{i}$ ;\n若 $k=-\\frac{1}{2}-\\frac{\\sqrt{3}}{2} \\mathrm{i}$, 则原式 $=-\\frac{1}{2}+\\frac{\\sqrt{3}}{2} \\mathrm{i}$.\n综上所述, $\\frac{a+b-c}{a-b+c}$ 的一切可能值为 $1 、-\\frac{1}{2}-\\frac{\\sqrt{3}}{2} \\mathrm{i}$ 和 $-\\frac{1}{2}+\\frac{\\sqrt{3}}{2} \\mathrm{i}$.",
+    "remark": "注:连等式设 $k$ 是常用的解题技巧.",
+    "figures": []
+}

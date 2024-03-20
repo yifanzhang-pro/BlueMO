@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题28 解方程:\n(1) $\\cos ^2\\left(x+\\frac{5}{8} \\pi\\right)-\\sin 4 x=2$;\n(2) $\\sqrt{1+\\sin x}-\\sqrt{1-\\sin x}=2 \\cos x$;\n(3) $\\tan \\left(\\frac{x}{2}+\\frac{\\pi}{4}\\right)+\\sin x+1=0$;\n(4) $\\frac{\\sin 2 x}{\\cos x}=\\frac{\\cos 2 x}{\\sin x}$.",
+    "solution": "(1)因 $\\cos ^2\\left(x+\\frac{5}{8} \\pi\\right)-\\sin 4 x \\leqslant 2$, 所以只有当 $\\cos ^2\\left(x+\\frac{5}{8} \\pi\\right)=1$ 且 $\\sin 4 x=-1$ 时原方程成立.\n但这是不可能的,所以原方程无解.\n(2) 原方程可化为 $\\left|\\sin \\frac{x}{2}+\\cos \\frac{x}{2}\\right|-\\left|\\sin \\frac{x}{2}-\\cos \\frac{x}{2}\\right|=2 \\cos x$, 由此可解得 $x=k \\pi+ \\frac{\\pi}{3}(k \\in \\mathbf{Z})$. (3) 原方程化为 $\\tan \\left(\\frac{x}{2}+\\frac{\\pi}{4}\\right)-\\cos \\left(x+\\frac{\\pi}{2}\\right)+1=0$, 从而 $\\tan \\left(\\frac{x}{2}+\\frac{\\pi}{4}\\right)-1+2 \\sin ^2\\left(\\frac{x}{2}+\\frac{\\pi}{4}\\right)+1=0$. 所以 $\\tan \\left(\\frac{x}{2}+\\frac{\\pi}{4}\\right)+2 \\sin ^2\\left(\\frac{x}{2}+\\right. \\left.\\frac{\\pi}{4}\\right)=0$, 即 $\\sin \\left(\\frac{x}{2}+\\frac{\\pi}{4}\\right) \\cdot \\frac{1+\\sin \\left(x+\\frac{\\pi}{2}\\right)}{\\cos \\left(\\frac{x}{2}+\\frac{\\pi}{4}\\right)}=0$, 故 $\\sin \\left(\\frac{x}{2}+\\frac{\\pi}{4}\\right)=0$ 或 $\\cos x=-1$. 从而解集为 $\\left\\{x \\mid x=\\frac{3 \\pi}{2}+2 k \\pi, k \\in \\mathbf{Z}\\right\\} \\bigcup\\{x \\mid x=(2 k+1) \\pi$, $k \\in \\mathbf{Z}\\}$. (4) 原方程化为 $2 \\sin ^2 x=1-2 \\sin ^2 x$ 且 $\\sin 2 x \\neq 0$, 所以解集为 $\\left\\{x \\mid x=\\frac{\\pi}{6}+\\frac{k \\pi}{3}, k \\in \\mathbf{Z}\\right.$, 且 $\\left.k \\neq \\frac{3 p-1}{2}, p \\in \\mathbf{Z}\\right\\}$.",
+    "remark": "",
+    "figures": []
+}

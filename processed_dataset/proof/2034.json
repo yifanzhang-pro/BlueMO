@@ -1,0 +1,12 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例3. 在单位面积的三角形中任给五点,则其中必存在两个不同的三点组使得以它们为顶点构成的三角形的面积不超过 $\\frac{1}{4}$.",
+    "solution": "证明:我们需要下面常用的引理.\n引理设凸四边形位于一个单位面积的三角形内,则这个凸四边形的四个顶点中必有三个顶点组成的三角形的面积不超过 $\\frac{1}{4}$.\n凸四边形的四个顶点本质上都可化归到三角形的边上, 因此这个引理实质上就是大家熟知的首届冬令营的试题的第二题: 设 $P_1 、 P_2 、 P_3 、 P_4$ 位于 $\\triangle A B C$ 的三边上, 求证: $\\triangle P_1 P_2 P_3 、 \\triangle P_1 P_3 P_4 、 \\triangle P_2 P_3 P_4 、 \\triangle P_1 P_2 P_4$ 中必有一个面积小于或等于 $\\frac{1}{4} S_{\\triangle A B C}$.\n下面回证原题.\n当这五点的凸包为线段时,结论显然成立.\n当这五点的凸包为三角形时,则可以以这五个点为顶点作出五个互不相交的三角形, 如图(<FilePath:./images/volume9/figures/fig-c4i9.png>), 而且它们的总面积小于或等于 1 , 故必有两个三角形的面积不超过 $\\frac{1}{4}$.\n若这五点的凸包为凸四边形时, 不妨设五点分布如图(<FilePath:./images/volume9/figures/fig-c4i10.png>), 即 $P_5$ 位于凸四边形 $P_1 P_2 P_3 P_4$ 内, 由引理可知 $P_1 、 P_2 、 P_3 、 P_4$ 中必有三点组成的三角形的面积不超过 $\\frac{1}{4}$, 又\n$$\n\\begin{gathered}\nS_{\\triangle P_1 P_2 P_5}+S_{\\triangle P_2 P_3 P_5}+S_{\\triangle P_3 P_4 P_5}+S_{\\triangle P_4 P_1 P_5} \\\\\n\\leqslant S\\left(P_1 P_2 P_3 P_4\\right) \\leqslant S_{\\triangle A B C}=1,\n\\end{gathered}\n$$\n因此 $\\triangle P_1 P_2 P_5 、 \\triangle P_2 P_3 P_5 、 \\triangle P_3 P_4 P_5 、 \\triangle P_4 P_1 P_5$ 中必有一个的面积小于或等于 $\\frac{1}{4}$, 结论成立.\n若这五点的凸包为凸五边形, 则其中任何四顶点均可构成嵌人 $\\triangle A B C$ 中的凸四边形, 如图(<FilePath:./images/volume9/figures/fig-c4i11.png>), 这样的凸四边形共有 $\\mathrm{C}_5^4=5$ 个.\n因而包括重复计算, 必有 5 个面积不超过 $\\frac{1}{4}$ 的三角形, 又每个三角形至多重复两次,故面积不超过 $\\frac{1}{4}$ 的三角形的个数大于 $\\left[\\frac{5}{2}\\right]=2$,\n得证.",
+    "remark": "注:1 可以证明上例的结论还可以改进, 其中存在的两个三角形可改进为三个三角形 (不能改进为四个三角形) 不超过 $\\frac{1}{4}$. 但这个证明篇幅很大, 这里从略.\n注:2 任给一个图形 $F$, 令 $S(F)$ 表示满足下面条件的最小的正整数 $n$ : 在 $F$ 的内部 (含边界) 任给 $n$ 个点使得总存在其中的三个点, 它们构成的三角形的面积不超过 $\\frac{|F|}{4}$, 这里 $|F|$ 表示 $F$ 的面积.",
+    "figures": [
+        "./images/volume9/figures/fig-c4i9.png",
+        "./images/volume9/figures/fig-c4i10.png",
+        "./images/volume9/figures/fig-c4i11.png"
+    ]
+}

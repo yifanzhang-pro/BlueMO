@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $a_1, a_2, \\cdots, a_n$ 为 $1,2, \\cdots, n$ 的一个排列, $f_k=\\mid\\{a_i \\mid a_i<a_k, i>k\\}\\left|, g_k=\\right|\\left\\{a_i \\mid a_i>a_k, i<k\\right\\} \\mid$, 其中 $k=1,2, \\cdots, n$. 证明:\n$$\n\\sum_{k=1}^n g_k=\\sum_{k=1}^n f_k\n$$",
+    "solution": "分析:一般来说 $f_k \\neq g_k$, 且分别计算 $f_k 、 g_k$ 是困难的.\n令 $A_k=\\left\\{a_i\\mid a_i<a_k, i>k\\right\\}$, 对 $A_k$ 换一种写法: $A_k=\\left\\{\\left(a_i, a_k\\right) \\mid a_i<a_k, i>k\\right\\}$, 显然是合理的.\n易知 $k \\neq k^{\\prime}$ 时, $A_k \\cap A_k{ }^{\\prime}=\\varnothing$. 所以, $\\sum_{k=1}^n f_k=\\left|A_1\\right|+\\left|A_2\\right|+\\cdots+\\left|A_n\\right|=\\left|A_1 \\cup A_2 \\cup \\cdots \\cup A_n\\right|=\\left|\\left\\{\\left(a_i, a_j\\right) \\mid a_i<a_j, i>j\\right\\}\\right|$.\n证明考虑集合 $A=\\left\\{\\left(a_i, a_j\\right) \\mid a_i<a_j, i>j\\right\\}$ 的元素的数目 $|A|$. 一方面, 固定 $a_j$ 时, $a_i$ 的个数为 $f_j$. 所以\n$$\n|A|=\\sum_{j=1}^n f_j .\n$$\n另一方面, 固定 $a_i$ 时, $a_j$ 的个数为 $g_i$, 所以\n$$\n|A|=\\sum_{i=1}^n g_i\n$$\n所以, $\\sum_{k=1}^n g_k=\\sum_{k=1}^n f_k$.\n说明在这里, 我们没有直接证明 $\\sum_{k=1}^n g_k=\\sum_{k=1}^n f_k$, 而是引人一个中间量 $|A|=\\left|\\left\\{\\left(a_i, a_j\\right) \\mid a_i<a_j, i>j\\right\\}\\right|$ 来过渡.",
+    "remark": "",
+    "figures": []
+}

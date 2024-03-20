@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例3. 证明: $\\sum_{k=0}^{\\left[\\frac{n-1}{2}\\right]}(-1)^k \\mathrm{C}_{n+1}^k \\mathrm{C}_{2 n-2 k-1}^n=\\frac{1}{2} n(n+1)(n \\geqslant 1)$.",
+    "solution": "证明:一方面 $(1+x)^{n+1}=\\sum_{k=0}^{n+1} \\mathrm{C}_{n+1}^k x^k$ 中 $x^{n-1}$ 的系数为 $\\mathrm{C}_{n+1}^{n-1}=\\mathrm{C}_{n+1}^2= \\frac{1}{2} n(n+1)$, 另一方面, $(1+x)^{n+1}=\\frac{\\left(1-x^2\\right)^{n+1}}{(1-x)^{n+1}}=\\left(\\sum_{k=0}^n(-1)^k \\mathrm{C}_{n+1}^k x^{2 k}\\right)\\left(\\sum_{j=0}^{\\infty} \\mathrm{C}_{n+j}^n x^j\\right)$ 中 $x^{n-1}$ 的系数为 $\\sum_{k=0}^{\\left[\\frac{n-1}{2}\\right]}(-1)^k \\mathrm{C}_{n+1}^k \\mathrm{C}_{n+(n-1-2 k)}^n=\\sum_{k=0}^{\\left[\\frac{n-1}{2}\\right]}(-1)^k \\mathrm{C}_{n+1}^k \\mathrm{C}_{2 n-2 k-1}^n$, 所以 $\\sum_{k=0}^{\\left[\\frac{n-1}{2}\\right]}(-1)^k \\mathrm{C}_{n+1}^k \\mathrm{C}_{2 n-2 k-1}^n=\\frac{1}{2} n(n+1)$.",
+    "remark": "注:当恒等式中流动标号只出现在组合数 $\\mathrm{C}_m^n$ 的下位 $m$ 时, 可考虑用公式 $\\frac{1}{(1-x)^{n+1}}=\\sum_{j=0}^{\\infty} \\mathrm{C}_{n+j}^n x^j$.",
+    "figures": []
+}

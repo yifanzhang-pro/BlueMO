@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例5. 在象棋赛中, 每两名选手都要赛一场, 证明: 我们可以给所有参赛选手编号, 使得无论哪一一个选手都没有输给紧接在他后面编号的那个选手.",
+    "solution": "证明:设有 $n$ 名选手, 用 $n$ 个顶点 $v_1, v_2, \\cdots, v_n$ 表示这 $n$ 名选手, 当选手 $v_i$ 没有输给 $v_j$ 时, 从 $v_i$ 向 $v_j$ 引一条弧 $\\left(v_i, v_j\\right)$, 这样就得到了一个竞赛图 $\\bar{K}_n$. 由定理三, $\\bar{K}_n$ 中有哈密顿路, 则按此路上选手出现的顺序为他们编号即可.",
+    "remark": "",
+    "figures": []
+}

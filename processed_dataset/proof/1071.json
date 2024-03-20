@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例11. 假设 $a 、 b 、 c$ 都是正数,证明:\n$$\na b c \\geqslant(a+b-c)(b+c-a)(c+a-b) .\n$$",
+    "solution": "证明:如果 $a+b-c, b+c-a, c+a-b$ 中有负数, 不妨设 $a+b-c<0$,\n则 $c>a+b$. 故 $b+c-a$ 与 $c+a-b$ 均为正数, 则结论显然成立.\n若 $a+b-c, b+c-a, c+a-b$ 均非负, 则由平均值不等式, 得\n$$\n\\sqrt{(a+b-c)(b+c-a)} \\leqslant \\frac{(a+b-c)+(b+c-a)}{2}=b .\n$$\n同理可得\n$$\n\\begin{aligned}\n& \\sqrt{(b+c-a)(c+a-b)} \\leqslant \\frac{(b+c-a)+(c+a-b)}{2}=c, \\\\\n& \\sqrt{(c+a-b)(a+b-c)} \\leqslant \\frac{(c+a-b)+(a+b-c)}{2}=a .\n\\end{aligned}\n$$\n将三式相乘,即得到我们要证明的问题,故命题成立.",
+    "remark": "注:通过对部分变量应用平均值不等式,而且轮换使用, 从而得到结论的证明.",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 设 $x_i \\geqslant 0(1 \\leqslant i \\leqslant n, n \\geqslant 4), \\sum_{i=1}^n x_i=1$, 求 $F=\\sum_{i=1}^n x_i x_{i+1}$ 的最大值.",
+    "solution": "仿上题方法, 可求得 $F$ 的最大值为 $F\\left(\\frac{1}{2}, \\frac{1}{2}, 0,0, \\cdots, 0\\right)=\\frac{1}{4}$.",
+    "remark": "",
+    "figures": []
+}

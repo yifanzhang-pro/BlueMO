@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题10. 设 $a 、 b$ 是正常数, $\\theta \\in\\left(0, \\frac{\\pi}{2}\\right)$, 求 $y=a \\sqrt{\\sin \\theta}+b \\sqrt{\\cos \\theta}$ 的最大值.",
+    "solution": "设 $\\sqrt{u}=a \\cdot \\sqrt{\\sin \\theta}, \\sqrt{v}=b \\cdot \\sqrt{\\cos \\theta}$, 则条件转化为: $\\frac{u^2}{a^4}+\\frac{v^2}{b^4}=1, u$ 、 $v \\geqslant 0$, 利用 Cauchy 不等式,\n$$\n\\begin{aligned}\ny & =\\sqrt{u}+\\sqrt{v} \\leqslant \\sqrt{\\left(\\frac{u}{a^{\\frac{1}{3}}}+\\frac{v}{b^{\\frac{1}{3}}}\\right)\\left(a^{\\frac{4}{3}}+b^{\\frac{4}{3}}\\right)} \\\\\n& \\leqslant \\sqrt{\\sqrt{\\left(\\frac{u^2}{a^4}+\\frac{v^2}{b^4}\\right)\\left(a^{\\frac{1}{3}}+b^{\\frac{1}{3}}\\right)} \\cdot\\left(a^{\\frac{4}{3}}+b^{\\frac{4}{3}}\\right)} \\\\\n& =\\left(a^{\\frac{1}{3}}+b^{\\frac{1}{3}}\\right)^{\\frac{3}{4}},\n\\end{aligned}\n$$\n并且易求得等号成立的条件.",
+    "remark": "注:: 在求解过程中, 幂次都可以用待定系数法来确定.",
+    "figures": []
+}

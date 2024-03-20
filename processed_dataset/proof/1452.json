@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题17. 设 $a_i$ 为正实数 $(i=1,2, \\cdots, n)$, 令:\n$$\n\\begin{gathered}\nk b_k=a_1+a_2+\\cdots+a_k(k=1,2, \\cdots, n), \\\\\nC_n=\\left(a_1-b_1\\right)^2+\\left(a_2-b_2\\right)^2+\\cdots+\\left(a_n-b_n\\right)^2, \\\\\nD_n=\\left(a_1-b_n\\right)^2+\\left(a_2-b_n\\right)^2+\\cdots+\\left(a_n-b_n\\right)^2 .\n\\end{gathered}\n$$\n求证: $C_n \\leqslant D_n \\leqslant 2 C_n$.",
+    "solution": "构造数列 $x_n=2 C_n-D_n, y_n=D_n-C_n, n \\in \\mathbf{N}_{+}$. 则\n$$\n\\begin{aligned}\nx_{n+1}-x_n= & 2\\left(C_{n+1}-C_n\\right)-\\left(D_{n+1}-D_n\\right) \\\\\n= & 2\\left(a_{n+1}-b_{n+1}\\right)^2-\\left(a_{n+1}-b_{n+1}\\right)^2-n\\left(b_{n+1}^2-b_n^2\\right) \\\\\n& +2\\left(b_{n+1}-b_n\\right)\\left(a_1+a_2+\\cdots+a_n\\right) \\\\\n= & \\left(a_{n+1}-b_{n+1}\\right)^2-n\\left(b_{n+1}^2-b_n^2\\right)+2 n b_n\\left(b_{n+1}-b_n\\right) \\\\\n= & {\\left[(n+1) b_{n+1}-n b_n-b_{n+1}\\right]^2-n\\left(b_{n+1}^2-b_n^2\\right)+2 n\\left(b_n b_{n+1}-b_n^2\\right) } \\\\\n= & \\left(n^2-n\\right)\\left(b_{n+1}-b_n\\right)^2 \\geqslant 0 .\n\\end{aligned}\n$$\n又由于 $x_1=2 C_1-D_1=\\left(a_1-b_1\\right)^2=0$, 故对一切 $n, x_n \\geqslant 0\\left(n \\in \\mathbf{N}_{+}\\right)$, 同样, $y_{n+1}-y_n=n\\left(b_{n+1}^2-b_n^2\\right)-2\\left(b_{n+1}-b_n\\right)\\left(a_1+a_2+\\cdots+a_n\\right)=n\\left(b_{n+1}-\\right. \\left.b_n\\right)^2 \\geqslant 0$, 又 $y_1=D_1-C_1=0$, 故对一切 $n \\in \\mathbf{N}^{+}, y_n \\geqslant 0$.\n综上所述, $C_n \\leqslant D_n \\leqslant 2 C_n$.",
+    "remark": "",
+    "figures": []
+}

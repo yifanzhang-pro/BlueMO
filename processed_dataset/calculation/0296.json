@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题8. 对哪些 $n$, 存在 $n$ 条棱的多面体?",
+    "solution": "以多面体的顶点为图的顶点, 以多面体的棱为边, 构成一个连通平面图.\n则 $v \\geqslant 4, f \\geqslant 4$. 由欧拉公式 $e=v+f-2 \\geqslant 6$, 即没有棱数少于 6 的多面体.\n若有 $e=7$ 的图, 则 $3 f \\leqslant 2 \\times 7$, 即 $f=4$, 但四个面的多面体只有 6 条棱, 故无 7 条棱的多面体.\n考虑 $k \\geqslant 4$, 以 $k$ 边形为底的棱雉为 $2 k$ 条棱的多面体,而把 $k-1$ 边形为底的棱雉底角处的一个三面角\"锯掉一个小尖儿\", 得 $2 k+1$ 条棱的多面体.\n综上, $n \\geqslant 6, n \\neq 7$ 时, 有 $n$ 条棱的多面体.",
+    "remark": "",
+    "figures": []
+}

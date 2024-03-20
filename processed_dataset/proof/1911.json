@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 已知四边形 $A B C D$ 内接于以 $B D$ 为直径的圆.\n设 $A^{\\prime}$ 为点 $A$ 关于 $B D$ 的对称点, $B^{\\prime}$ 为点 $B$ 关于 $A C$ 的对称点, 直线 $A^{\\prime} C$ 与 $B D 、 A C$ 与 $B^{\\prime} D$ 分别交于点 $P 、 Q$. 证明: $P Q \\perp A C$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c8a4.png>), 设 $A C$ 与 $B D$ 交于点 $R^{\\circ}$. 因为四边形 $A B A^{\\prime} C$ 为圆内接四边形, 所以, $\\angle B A R=\\angle B A C=\\angle B A^{\\prime} P=\\angle B A P$, 即 $A B$ 为 $\\angle C A P$ 的角平分线.\n又 $B D$ 为直径, 则 $\\angle D A B=90^{\\circ}$. 故 $D A$ 为 $\\angle R A P$ 的外角平分线.\n因此, $P 、 R 、 B 、 D$ 为调和点列.\n进而, $Q P$ 、 $Q R 、 Q B 、 Q D$ 为调和线束.\n因为 $\\angle B Q R=\\angle B^{\\prime} Q R=\\angle D Q R$, 所以, $\\angle R Q P=90^{\\circ}$, 故 $P Q \\perp A C$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8a4.png"
+    ]
+}

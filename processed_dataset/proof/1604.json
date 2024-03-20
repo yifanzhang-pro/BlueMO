@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题32. 单位圆上是否存在无穷多个点, 使得其中任意两点之间的距离都是有理数?",
+    "solution": "不妨设所给单位圆方程为 $x^2+y^2=1$, 现取 $\\theta=\\arccos \\frac{3}{5}$, 则 $\\cos \\theta= \\frac{3}{5}, \\sin \\theta=\\frac{4}{5}$. 考虑由 $P_n(\\cos 2 n \\theta, \\sin 2 n \\theta)$ 组成的点集 $M, n=1,2, \\cdots$.\n对任意 $i 、 j \\in \\mathbf{N}^*$, 我们有\n$$\n\\begin{aligned}\n\\left|P_i P_j\\right|^2 & =(\\cos 2 i \\theta-\\cos 2 j \\theta)^2+(\\sin 2 i \\theta-\\sin 2 j \\theta)^2 \\\\\n& =2-2 \\cos 2(i-j) \\theta \\\\\n& =4 \\sin ^2(i-j) \\theta\n\\end{aligned}\n$$\n所以, $\\left|P_i P_j\\right|=2|\\sin (i-j) \\theta|$.\n注意到, $\\cos \\theta 、 \\sin \\theta \\in \\mathbf{Q}$, 由 $\\sin (n+1) \\theta=\\sin n \\theta \\cos \\theta+\\cos n \\theta \\sin \\theta$ 及 $\\cos (n+-1) \\theta=\\cos n \\theta \\cos \\theta-\\sin n \\theta \\sin \\theta$ 结合数学归纳法易证: 对任意 $n \\in \\mathbf{N}^*$, 都有 $\\sin n \\theta 、 \\cos n \\theta \\in \\mathbf{Q}$. 因此, $M$ 中任意两点之间的距离都是有理数.\n现在还需要证明: $M$ 是一个无穷点集.\n若否, 设 $M$ 是一个有限集, 则存在 $m 、 n \\in \\mathbf{N}^*, m \\neq n$, 使得 $2 m \\theta=2 n \\theta+ 2 k \\pi, k \\in \\mathbf{Z}$, 这表明 $\\theta=\\alpha \\pi, \\alpha \\in \\mathbf{Q}$. 又 $\\cos \\theta=\\frac{3}{5} \\in \\mathbf{Q}$, 由上题的结论, 知 $\\cos \\alpha \\pi \\in\\left\\{0, \\pm \\frac{1}{2}, \\pm 1\\right\\}$, 但 $\\cos \\theta=\\frac{3}{5} \\notin\\left\\{0, \\pm \\frac{1}{2}, \\pm 1\\right\\}$, 矛盾.\n所以, $M$ 是一个无限集.\n综上, 存在满足条件的无穷多个点.",
+    "remark": "",
+    "figures": []
+}

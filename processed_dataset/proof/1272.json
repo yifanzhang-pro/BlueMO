@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例18. (Ostrowski) 设实数 $a_1, a_2, \\cdots, a_n$ 与 $b_1, b_2, \\cdots, b_n$ 不成比例.\n实数 $x_1, x_2, \\cdots, x_n$ 满足:\n$$\n\\left\\{\\begin{array}{l}\na_1 x_1+a_2 x_2+\\cdots+a_n x_n=0, \\\\\nb_1 x_1+b_2 x_2+\\cdots+b_n x_n=1 .\n\\end{array}\\right.\n$$\n求证: $x_1^2+x_2^2+\\cdots+x_n^2 \\geqslant \\frac{\\sum_{i=1}^n a_i^2}{\\sum_{i=1}^n a_i^2 \\cdot \\sum_{i=1}^n b_i^2-\\left(\\sum_{i=1}^n a_i b_i\\right)^2}$.",
+    "solution": "证明:只需在本题中令 $x_k=\\left(\\mathrm{C}_n^2\\right)^{-1} \\cdot \\sum_{r \\neq k} \\frac{a_r}{a_r b_k-a_k b_r}$, 读者不难自行验证 $1, x_2, \\cdots, x_n$ 满足全部条件.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题21 计算:(1) $\\tan \\left(2 \\arcsin \\frac{5}{13}\\right)+\\tan \\left(\\frac{1}{2} \\arctan \\frac{3}{4}\\right)$;\n(2) $\\sin \\left(\\arcsin \\frac{3}{5}+\\arccos \\frac{4}{5}\\right)$.",
+    "solution": "(1) 原式 $=\\frac{2 \\times \\frac{5}{12}}{1-\\left(\\frac{5}{12}\\right)^2}+\\frac{1-\\frac{4}{5}}{\\frac{3}{5}}=\\frac{120}{119}+\\frac{1}{3}=\\frac{479}{357}$. $\\quad$ (2) 原式 $= 2 \\times \\frac{3}{5} \\times \\frac{4}{5}=\\frac{24}{25}$",
+    "remark": "",
+    "figures": []
+}

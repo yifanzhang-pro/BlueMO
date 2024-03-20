@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题7. 平面上有 $n(n \\geqslant 3)$ 条线段, 其中任意 3 条都有公共端点, 则这 $n$ 条线段有一个公共端点.",
+    "solution": "作图 $G, n$ 条线段的端点为 $G$ 的顶点, 线段为 $G$ 的边, 依题意, $G$ 连通无圈, 故 $G$ 是树, 且最长的链长度为 2 , 故 $G$ 只有一个顶点不是悬挂点, 这点即为 $n$ 条线段的公共端点.",
+    "remark": "",
+    "figures": []
+}

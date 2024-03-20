@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例10 证明函数 $g(x)=\\cos \\sqrt[3]{x}$ 不是周期函数.",
+    "solution": "分析:当结论出现否定的形式时,宜采用反证法.\n证明假设 $g(x)$ 是周期函数, 非零常数 $T$ 是它的一个周期, 则 $\\cos \\sqrt[3]{x+T}=\\cos \\sqrt[3]{x}$ 对一切实数 $x$ 都成立.\n取 $x=0$, 得 $\\cos \\sqrt[3]{T}=1$, 从而 $\\sqrt[3]{T}=2 k \\pi(k \\neq 0, k \\in \\mathbf{Z})$.\n取 $x=T$, 得 $\\cos \\sqrt[3]{2 T}=\\cos \\sqrt[3]{T}=1$, 有 $\\sqrt[3]{2 T}=2 e \\pi(e \\neq 0, e \\in \\mathbf{Z})$. 于是 $\\frac{\\sqrt[3]{2 T}}{\\sqrt[3]{T}}=\\frac{2 e \\pi}{2 k \\pi}=\\frac{e}{k}$, 即 $\\sqrt[3]{2}=\\frac{e}{k}$, 从而 $\\sqrt[3]{2}$ 是有理数, 这与 $\\sqrt[3]{2}$ 是无理数相矛盾,故函数 $g(x)=\\cos \\sqrt[3]{x}$ 不是周期函数.\n评注当结论是肯定或否定形式, 含有 “至多”、“至少”等字样时, 可利用反证法证明问题.\n又如: 求证函数 $y=|\\sin x|+|\\cos x|$ 的最小正周期是 $\\frac{\\pi}{2}$.\n易知 $\\frac{\\pi}{2}$ 是它的周期, 再证 $\\frac{\\pi}{2}$ 是它的最小正周期.\n假设 $0<T<\\frac{\\pi}{2}$ 是 $y=|\\sin x|+|\\cos x|$ 的周期, 则 $|\\sin (x+T)|+|\\cos (x+T)|=|\\sin x|+ |\\cos x|$ 对任意 $x$ 都成立, 于是取 $x=0$, 得 $|\\sin T|+|\\cos T|=|\\sin 0|+ |\\cos 0|=1$, 但 $|\\sin T|+|\\cos T|=\\sin T+\\cos T=\\sqrt{2} \\sin \\left(T+\\frac{\\pi}{4}\\right)>1$, 故矛盾,所以 $T$ 不存在,原命题正确.",
+    "remark": "",
+    "figures": []
+}

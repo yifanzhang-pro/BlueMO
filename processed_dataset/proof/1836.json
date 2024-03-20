@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 如图(<FilePath:./images/volume7/figures/fig-c3p10.png>), 在 $\\triangle A B C$ 中, $A B=A C$, 一个圆内切于 $\\triangle A B C$ 的外接圆 $\\odot O$ 于 $M$, 并与 $A B 、 A C$ 分别相切于 $P$ 、 $Q$ 两点.\n求证: 线段 $P Q$ 的中点是 $\\triangle A B C$ 内切圆的圆心.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c3a10.png>),因为 $A B=A C$ 且都是 $\\odot O$ 的两条弦,所以 $O$ 点到 $A B 、 A C$ 的距离相等, 则 $O$ 在 $\\angle B A C$ 的平分线上.\n又因为小圆与 $A B, A C$ 都相切,所以小圆的圆心也在 $\\angle B A C$ 的平分线上, 所以小圆的圆心、 $O$ 点及 $A$ 点三点共线且该直线经过两圆切点 $M, A M$ 为图形对称轴.\n设 $A M$ 交 $P Q$ 于 $I$, 由对称性可知, $I$ 为 $P Q$ 中点.\n因为 $A M \\perp P Q, A M \\perp B C$, 所以 $P Q / / B C$. 设 $\\angle A P Q= 2 \\beta$, 则 $\\angle A B C=\\angle A P Q=2 \\beta$. 连结 $M P 、 M Q 、 M B 、 B I$, 则 $\\angle P M Q=\\angle A P Q=2 \\beta$, 由轴对称性知, $\\angle P M I=\\frac{1}{2} \\angle P M Q=\\beta$. 因为 $A M$ 为 $\\odot O$ 直径, 所以 $\\angle P B M= 90^{\\circ}$, 所以 $P 、 B 、 M 、 I$ 四点共圆.\n所以 $\\angle P B I=\\angle P M I=\\beta$, 所以 $B I$ 平分 $\\angle A B C$. 又因为 $A I$ 平分 $\\angle B A C$, 所以 $I$ 为 $\\triangle A B C$ 内心, 所以线段 $P Q$ 的中点是 $\\triangle A B C$ 内切圆的圆心.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c3p10.png",
+        "./images/volume7/figures/fig-c3a10.png"
+    ]
+}

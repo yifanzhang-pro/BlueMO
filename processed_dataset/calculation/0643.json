@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例17 设 $x \\geqslant y \\geqslant z \\geqslant \\frac{\\pi}{12}$, 且 $x+y+z=\\frac{\\pi}{2}$.\n求乘积 $\\cos x \\cdot \\sin y \\cdot \\cos z$ 的最大值及最小值.",
+    "solution": "解:由于 $x \\geqslant y \\geqslant z \\geqslant \\frac{\\pi}{12}$, 故\n$$\n\\frac{\\pi}{6} \\leqslant x \\leqslant \\frac{\\pi}{2}-\\frac{\\pi}{12} \\times 2=\\frac{\\pi}{3} .\n$$\n所以 $\\cos x \\sin y \\cos z=\\cos x \\times \\frac{1}{2}[\\sin (y+z)+\\sin (y-z)]=\\frac{1}{2} \\cos ^2 x+ \\frac{1}{2} \\cos x \\sin (y-z) \\geqslant \\frac{1}{2} \\cos ^2 \\frac{\\pi}{3}=\\frac{1}{8}$. 即为最小值 (由于 $\\frac{\\pi}{6} \\leqslant x \\leqslant \\frac{\\pi}{3}, y \\geqslant z$, 故 $\\cos x \\sin (y-z) \\geqslant 0)$, 当 $y=z=\\frac{\\pi}{12}, x=\\frac{\\pi}{3}$ 时, $\\cos x \\sin y \\cos z=\\frac{1}{8}$.\n因为\n$$\n\\begin{aligned}\n\\cos x \\sin y \\cos z & =\\cos z \\times \\frac{1}{2}[\\sin (x+y)-\\sin (x-y)] \\\\\n& =\\frac{1}{2} \\cos ^2 z-\\frac{1}{2} \\cos z \\sin (x-y),\n\\end{aligned}\n$$\n由于 $\\sin (x-y) \\geqslant 0, \\cos z>0$, 故\n$$\n\\cos x \\sin y \\cos z \\leqslant \\frac{1}{2} \\cos ^2 z==\\frac{1}{2} \\cos ^2 \\frac{\\pi}{12}=\\frac{1}{4}\\left(1+\\cos \\frac{\\pi}{6}\\right)=\\frac{2+\\sqrt{3}}{8} .\n$$\n当 $x=y=\\frac{5 \\pi}{12}, z=\\frac{\\pi}{12}$ 时取得最大值.\n所以最大值 $\\frac{2+\\sqrt{3}}{8}$, 最小值 $\\frac{1}{8}$.\n评注本题是 1997 年全国高中数学联赛试题.\n巧妙应用积化和差公式及放缩法是解本题的关键.",
+    "remark": "",
+    "figures": []
+}

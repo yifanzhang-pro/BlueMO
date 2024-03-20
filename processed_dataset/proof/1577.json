@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 一个由正实数组成的数列 $\\left\\{a_n\\right\\}$ 满足 $a_n^2 \\leqslant a_n-a_{n+1}, n=1,2, \\cdots$. 证明: 对任意 $n \\in \\mathbf{N}^*$, 都有 $a_n<\\frac{1}{n}$.",
+    "solution": "当 $n=1$ 时, $a_1^2 \\leqslant a_1-a_2<a_1$, 故 $a_1<1$, 同时 $a_2 \\leqslant a_1-a_1^2=\\frac{1}{4}- \\left(a_1-\\frac{1}{2}\\right)^2 \\leqslant \\frac{1}{4}<\\frac{1}{2}$. 所以, 命题对 $n=1,2$ 成立.\n现设命题对 $n(\\geqslant 2)$ 成立,\n则 $a_{n+1} \\leqslant a_n-a_n^2=\\frac{1}{4}-\\left(\\frac{1}{2}-a_n\\right)^2$, 注意到, 由归纳假设知 $a_n<\\frac{1}{n} \\leqslant \\frac{1}{2}$, 所以 $\\frac{1}{2}-a_n>\\frac{1}{2}-\\frac{1}{n} \\geqslant 0$, 因此 $a_{n+1}<\\frac{1}{4}-\\left(\\frac{1}{2}-\\frac{1}{n}\\right)^2=\\frac{1}{n}-\\frac{1}{n^2}=\\frac{n-1}{n^2}< \\frac{1}{n+1}$. 即命题对 $n+1$ 成立, 获证.",
+    "remark": "",
+    "figures": []
+}

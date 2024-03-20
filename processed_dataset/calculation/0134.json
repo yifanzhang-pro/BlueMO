@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 求所有素数 $p$, 使得 $2^p+3^p$ 为一个整数的 $k$ 次幂 (这里的 $k \\geqslant 2$ ).",
+    "solution": "$p=2,5$ 均不合要求.\n设素数 $p>2$ 且 $p \\neq 5$. 由二项式定理易知\n$$\n\\begin{aligned}\n2^p+3^p & =2^p+(5-2)^p=5^p-\\mathrm{C}_p^1 5^{p-1} \\times 2+\\cdots+5 \\mathrm{C}_p^{p-1} 2^{p-1} \\\\\n& =5^2 u+5 p \\times 2^{p-1}, u \\text { 为一个整数.\n}\n\\end{aligned}\n$$\n故 $5 \\|\\left(2^p+3^p\\right)$, 从而 $2^p+3^p$ 不能是整数的 $k$ 次幂 $(k>1)$.",
+    "remark": "",
+    "figures": []
+}

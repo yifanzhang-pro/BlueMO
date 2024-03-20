@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例1. 如图(<FilePath:./images/volume7/figures/fig-c2i6.png>), $K$ 是 $\\triangle A B C$ 边 $B C$ 上一点且不为 $B C$ 中点, $D_1 、 D_2$ 是 $A K$ 延长线上不同的两点, $B D_i$ 与 $A C$ 交于点 $N_i, C D_i$ 与 $A B$ 交于点 $M_i, i=1$, 2. 求证: $M_1 N_1$ 不平行于 $M_2 N_2$.",
+    "solution": "证明:由塞瓦定理, 有\n$$\n\\frac{M_1 B}{B A} \\cdot \\frac{A C}{C N_1}=\\frac{M_1 E_1}{E_1 N_1}, \\label{eq1}\n$$\n其中 $E_1$ 为直线 $A K$ 与直线 $M_1 N_1$ 交点;\n$$\n\\frac{M_2 B}{B A} \\cdot \\frac{A C}{C N_2}=\\frac{M_2 E_2}{E_2 N_2} \\label{eq2}\n$$\n其中 $E_2$ 为直线 $A K$ 与直线 $M_2 N_2$ 交点.\n注意到 $A 、 E_1 、 E_2$ 共线于 $A K$, 假设 $M_1 N_1 / / M_2 N_2$, 于是有\n$$\n\\frac{M_1 E_1}{E_1 N_1}=\\frac{M_2 E_2}{E_2 N_2} . \\label{eq3}\n$$\n由式\\ref{eq1}、\\ref{eq2}、式\\ref{eq3}, $\\frac{M_1 B}{C N_1}=\\frac{M_1 E_1}{E_1 N_1} \\cdot \\frac{B A}{A C}=\\frac{M_2 E_2}{E_2} \\frac{B A}{N_2} \\cdot \\frac{B A}{A C}=\\frac{M_2 B}{C N_2}$ 或 $\\frac{M_1 B}{M_1 M_2}=\\frac{N_1 C}{N_1 N_2}$,\n结合 $M_1 N_1 / / M_2 N_2$ 有 $M_1 N_1 / / M_2 N_2 / / B C$. 因此 $\\frac{M_1 B}{B A}=\\frac{N_1 C}{C A}$.\n回到第一个等式: $\\frac{M_1 B}{B A} \\cdot \\frac{A C}{C N_1}=\\frac{M_1 E_1}{E_1 N_1}$, 左边等于 1 , 但右边 $\\frac{M_1 E_1}{E_1 N_1}=\\frac{B K}{K C} \\neq$ 1. 矛盾! 故假设不成立, 即 $M_1 N_1$ 不可能平行于 $M_2 N_2$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2i6.png"
+    ]
+}

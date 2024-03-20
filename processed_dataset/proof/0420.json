@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例5. 证明:设 $G$ 是 $n$ 阶简单图, $G$ 中不含四边形, 则其边数\n$$\ne \\leqslant \\frac{1}{4} n(1+\\sqrt{4 n-3}) .\n$$",
+    "solution": "证设 $V=\\left\\{v_1, v_2, \\cdots, v_n\\right\\}$ 是图 $G$ 的顶点集,对于任意的顶点 $v_i \\in V$, 与 $v_i$ 相邻的顶点对 $\\{x, y\\}$ 有 $\\mathrm{C}_{d\\left(v_i\\right)}^2$ 个.\n由于图 $G$ 中没有四边形, 所以, 当 $v_i$ 在 $V$ 中变化时, 所有的顶点对 $\\{x, y\\}$ 都是互不相同的, 否则, 点对 $\\{x, y\\}$ 分别在 $\\mathrm{C}_{d\\left(v_i\\right)}^2$ 和 $\\mathrm{C}_{d\\left(v_j\\right)}^2$ 中被计数, 那么 $v_i, x, v_j, y$ 就组成一个四边形.\n所以\n$$\n\\sum_{i=1}^n \\mathrm{C}_{d\\left(v_i\\right)}^2 \\leqslant \\mathrm{C}_n^2\n$$\n由柯西不等式,有\n$$\n\\begin{aligned}\n\\sum_{i=1}^n \\mathrm{C}_{d\\left(v_i\\right)}^2 & =\\frac{1}{2} \\sum_{i=1}^n d^2\\left(v_i\\right)-e \\\\\n& \\geqslant \\frac{1}{2} \\cdot \\frac{1}{n}\\left(\\sum_{i=1}^n d\\left(v_i\\right)\\right)^2-e \\\\\n& =\\frac{2}{n} e^2-e,\n\\end{aligned}\n$$\n所以\n$$\n\\begin{gathered}\n\\frac{2}{n} e^2-e \\leqslant \\mathrm{C}_n^2, \\\\\ne^2-\\frac{n}{2} e-\\frac{1}{4} n^2(n-1) \\leqslant 0, \\\\\ne \\leqslant \\frac{n}{4}(1+\\sqrt{4 n-3}) .\n\\end{gathered}\n$$\n解得说明 本题得到了一个 $n$ 阶简单图不含四边形, 其边数的一个上界.\n但这还不是最大值, 对于一般的 $n$, 边数的最大值还有待于进一步的研究.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设 $X$ 是有限集, $A_1, A_2, \\cdots, A_m$ 是 $X$ 的子集, 且 $\\left|A_i\\right|=r(1 \\leqslant i \\leqslant m)$. 若对任何 $i \\neq j$, 有 $\\left|A_i \\cap A_j\\right| \\leqslant k$. 求证: $|X| \\geqslant \\frac{m r^2}{r+(m-1) k}$.",
+    "solution": "解: 1: 考察 $m$ 个集合与 $n$ 个元素的关系表 $B(n, m)$. 计算表中 1 的个数.\n设第 $i$ 行有 $t_i$ 个 $1(i=1,2, \\cdots, n)$, 那么, $\\sum_{i=1}^n t_i=S=\\sum_{j=1}^m\\left|A_j\\right|=r m$. 再计算各元素在集合对的交集中出现的总次数, 有 $\\sum_{i=1}^n \\mathrm{C}_{t_i}^2=\\mathrm{T}= \\sum_{1 \\leqslant i<j \\leqslant m}\\left|A_i \\cap A_j\\right|$. 于是, 由 Cauchy 不等式, 有 $2 k \\mathrm{C}_m^2 \\geqslant 2 \\sum_{1 \\leqslant i<j \\leqslant m} \\mid \\dot{A_i} \\cap A_j \\mid=2 \\sum_{i=1}^n \\mathrm{C}_{t_i}^2=\\sum_{i=1}^n t_i^2-\\sum_{i=1}^n t_i \\geqslant \\frac{\\left(\\sum_{i=1}^n t_i\\right)^2}{\\sum_{i=1}^n 1^2}-\\sum_{i=1}^n t_i=\\frac{r^2 \\cdot m^2}{n}-r m$. 所以, $k m(m-1) \\geqslant \\frac{\\dot{r}^2 \\cdot m^2}{n}-r m$, 解得 $n \\geqslant \\frac{m r^2}{r+(m-1)} \\cdot$.",
+    "remark": "",
+    "figures": []
+}

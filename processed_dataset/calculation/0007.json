@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter2.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 已知集合 $A=\\{(x, y) \\mid a x+y=1\\}, B=\\{(x, y) \\mid x+a y=1\\}$, $C=\\left\\{(x, y) \\mid x^2+y^2=1\\right\\}$. 问:\n(1) 当 $a$ 取何值时, $(A \\cup B) \\cap C$ 为含有两个元素的集合?\n(2) 当 $a$ 取何值时, $(A \\cup B) \\cap C$ 为含有三个元素的集合?",
+    "solution": "分析:因为 $(A \\cup B) \\cap C=(A \\cap C) \\cup(B \\cap C)$, 故可从解 $A \\cap C$ 及 $B \\cap C$ 对应的方程组人手.\n解: $(A \\cup B) \\cap C=(A \\cap C) \\cup(B \\cap C), A \\cap C$ 与 $B \\cap C$ 分别为方程组\n(i) $\\left\\{\\begin{array}{l}a x+y=1, \\\\ x^2+y^2=1,\\end{array}\\right.$\n(ii) $\\left\\{\\begin{array}{l}x+a y=1, \\\\ x^2+y^2=1\\end{array}\\right.$\n的解集.\n由 (i) 解得 $(x, y)=(0,1),\\left(\\frac{2 a}{1+a^2}, \\frac{1-a^2}{1+a^2}\\right)$;\n由(ii) 解得 $(x, y)=(1,0),\\left(\\frac{1-a^2}{1+a^2}, \\frac{2 a}{1+a^2}\\right)$.\n(1) 使 $(A \\cup B) \\cap C$ 恰有两个元素的情况只有两种可能:\n<1> $\\left\\{\\begin{array}{l}\\frac{2 a}{1+a^2}=0, \\\\ \\frac{1-a^2}{1+a^2}=1 ;\\end{array}\\right.$\n<2> $\\left\\{\\begin{array}{l}\\frac{2 a}{1+a^2}=1, \\\\ \\frac{1-a^2}{1+a^2}=0 .\\end{array}\\right.$\n由<1>得 $a=0$; 由<2>得 $a=1$.\n故当 $a=0$ 或 1 时, $(A \\cup B) \\cap C$ 恰有两个元素.\n(2) 使 $(A \\cup B) \\cap C$ 恰有三个元素的情况是\n$$\n\\frac{2 a}{1+a^2}=\\frac{1-a^2}{1+a^2}\n$$\n解得 $a=-1 \\pm \\sqrt{2}$.\n故当 $a=-1 \\pm \\sqrt{2}$ 时, $(A \\cup B) \\cap C$ 恰有三个元素.",
+    "remark": "",
+    "figures": []
+}

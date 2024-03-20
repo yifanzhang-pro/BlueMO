@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter17.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 设 $A, B, C$ 是 $\\triangle A B C$ 的三个内角.\n求 $\\sin \\frac{A}{2} \\sin \\frac{B}{2} \\sin \\frac{C}{2}$ 的最大值.",
+    "solution": "解:暂时固定 $A$, 让 $B, C$ 变动, 令 $u=\\sin \\frac{A}{2} \\sin \\frac{B}{2} \\sin \\frac{C}{2}$, 那么\n$$\n\\begin{aligned}\nu & =\\sin \\frac{A}{2} \\times-\\frac{1}{2}\\left(\\cos \\frac{B-C}{2}-\\cos \\frac{B+C}{2}\\right) \\\\\n& =\\frac{1}{2} \\sin \\frac{A}{2}\\left(\\cos \\frac{B-C}{2}-\\sin \\frac{A}{2}\\right) .\n\\end{aligned}\n$$\n显然,当 $B=C$ 时, $\\cos \\frac{B-C}{2}$ 取得最大值 1 , 从而有\n$$\nu \\leqslant \\frac{1}{2} \\sin \\frac{A}{2}\\left(1-\\sin \\frac{A}{2}\\right)\n$$\n现在考察 $A$ 的变化对 $u$ 的值的影响,易知\n$$\n\\sin \\frac{A}{2}\\left(1-\\sin \\frac{A}{2}\\right) \\leqslant\\left(\\frac{\\sin \\frac{A}{2}+\\left(1-\\sin \\frac{A}{2}\\right)}{2}\\right)^2=\\frac{1}{4},\n$$\n所以 $u \\leqslant \\frac{1}{8}$. 并且当 $A=B=C=60^{\\circ}$ 时取到最大值 $\\frac{1}{8}$.",
+    "remark": "注:本题中, 第一步是将原始的一般状态 $P_0$ 调整到 \" $B=C$ \" 这样一种较优的状态 $P_1$. 实际上此时我们立即能看出当且仅当 $A=B=C$ 时, $\\sin \\frac{A}{2} \\sin \\frac{B}{2} \\sin \\frac{C}{2}$ 取最大值, 但在初等数学框架下, 要承认这点又嫌理由不足,事实上这涉及到连续函数的极限以及最大值必然存在等问题, 中学生不易搞清.\n于是我们在状态 $P_1$ 下将 $u$ 看成 $A$ 的函数, 改用函数方法将 $P_1$ 调整为更优的状态 $P_2$, 即 $A=B=C=60^{\\circ}$. 由于状态 $P_2$ 是上述调整策略下唯一的 \"终点\",故易知此时原式的取值 $\\frac{1}{8}$ 是所求的最大值.",
+    "figures": []
+}

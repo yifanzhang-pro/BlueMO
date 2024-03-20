@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 设 $P$ 为 $\\triangle A B C$ 内一点, 且满足 $\\angle B P C=90^{\\circ}, \\angle B A P=\\angle B C P, M 、 N$ 分别是边 $A C 、 B C$ 的中点.\n若 $B P=2 P M$, 证明: $A 、 P 、 N$ 三点共线.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c4a7.png>), 作 $\\triangle P A B$ 的外接圆 $\\odot O$, 延长 $C P$ 交 $\\odot O$ 于点 $C^{\\prime}$, 连结\n$B C^{\\prime} 、 A C^{\\prime}$. 因为 $\\angle B C^{\\prime} P=\\angle B A P=\\angle B C P$, $\\angle B P C=90^{\\circ}$, 所以, $P C^{\\prime}=P C, B C^{\\prime}=B C$. 又 $M 、 P$ 分别为 $A C 、 C C^{\\prime}$ 的中点, 则 $A C^{\\prime} / / P M \\Rightarrow A C^{\\prime}=2 P M=P B$. 由 $A 、 C^{\\prime} 、 B 、 P$ 四点共圆, 故 $A P / / B C^{\\prime}$. 因为 $P$ 为 $C C^{\\prime}$ 的中点, 所以, $P N / / B C^{\\prime}$. 故 $A 、 P 、 N$ 三点共线.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4a7.png"
+    ]
+}

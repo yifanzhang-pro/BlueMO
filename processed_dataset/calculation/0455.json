@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. (1) 是否存在正整数 $m 、 n$, 使得 $m(m+2)=n(n+1)$;\n(2) 设 $k(\\geqslant 3)$ 是给定的正整数, 是否存在正整数 $m 、 n$, 使得\n$$\nm(m+k)=n(n+1) .\n$$",
+    "solution": "(1) 答案是否定的.\n若存在正整数 $m, n$, 使得 $m(m+2)=n(n+1)$, 则\n$$\n(m+1)^2=n^2+n+1,\n$$\n显然 $n>1$, 于是\n$$\nn^2<n^2+n+1<(n+1)^2,\n$$\n所以, $n^2+n+1$ 不是平方数,矛盾.\n(2)当 $k=3$ 时,若存在正整数 $m, n$, 满足 $m(m+3)=n(n+1)$, 则\n$$\n\\begin{gathered}\n4 m^2+12 m=4 n^2+4 n, \\\\\n(2 m+3)^2=(2 n+1)^2+8, \\\\\n(2 m+3-2 n-1)(2 m+3+2 n+1)=8, \\\\\n(m-n+1)(m+n+2)=2,\n\\end{gathered}\n$$\n而 $m+n+2>2$, 故上式不可能成立.\n当 $k \\geqslant 4$ 时, 若 $k=2 t$ ( $t$ 是不小于 2 的整数) 为偶数, 取\n$$\nm=t^2-t, n=t^2-1,\n$$\n则\n$$\n\\begin{gathered}\nm(\\dot{m}+k)=\\left(t^2-t\\right)\\left(t^2+t\\right)=t^4-t^2, \\\\\nn(n+1)=\\left(t^2-1\\right) t^2=t^4-t^2,\n\\end{gathered}\n$$\n故这样的 $(m, n)$ 满足条件.\n若 $k=2 t+1$ ( $t$ 是不小于 2 的整数) 为奇数, 取\n$$\nm=\\frac{t^2-t}{2}, n=\\frac{t^2+t-2}{2},\n$$\n则\n$$\n\\begin{gathered}\nm(m+k)=\\frac{t^2-t}{2}\\left(\\frac{t^2-t}{2}+2 t+1\\right)=\\frac{1}{4}\\left(t^4+2 t^3-t^2-2 t\\right), \\\\\nn(n+1)=\\frac{t^2+t-2}{2} \\cdot \\frac{t^2+t}{2}=\\frac{1}{4}\\left(t^4+2 t^3-t^2-2 t\\right),\n\\end{gathered}\n$$\n故这样的 $(m, n)$ 满足条件.\n综上所述, 当 $k=3$ 时,答案是否定的; 当 $k \\geqslant 4$ 时, 答案是肯定的.",
+    "remark": "",
+    "figures": []
+}

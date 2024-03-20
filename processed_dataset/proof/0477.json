@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题3. (1) 证明: $e_m(n)=\\mathrm{C}_{n-k}^2+(m-1) \\mathrm{C}_{k+1}^2$, 其中 $k=\\left[\\frac{n}{m}\\right]$.\n(2) 设 $G$ 为有 $n$ 个顶点的完全 $m$ 部图, 则 $e(G) \\leqslant e_m(n)$.",
+    "solution": "(1) 令 $n=m k+r(0 \\leqslant r<m)$, 则由 $T_{m, n}$ 定义有 $e_m(n)=\\mathrm{C}_n^2-r \\mathrm{C}_{k+1}^2- (m-r) \\mathrm{C}_k^2$, 用 $r=n-m k$ 代入化简整理即得.\n(2) 设完全 $m$ 部图 $G$ 的 $m$ 个部分的顶点数分别为 $n_1, n_2, \\cdots, n_m$, 若 $G$ 与 $T_m(n)$ 不同构, 则存在 $n_i-n_j>$ 1. 考虑完全 $m$ 部图 $G^{\\prime}$, 它的 $m$ 部分顶点数分别为 $n_1, n_2, \\cdots, n_i-1, \\cdots, n_j+ 1, \\cdots, n_m$. 由于 $e(G)=\\frac{1}{2} \\sum_{k=1}^m\\left(n-n_k\\right) n_k, e\\left(G^{\\prime}\\right)=\\frac{1}{2} \\sum_{\\substack{k=1 \\\\ k \\neq i, j}}^m\\left(n-n_k\\right) n_k+\\frac{1}{2}(n- \\left.n_i+1\\right)\\left(n_i-1\\right)+\\frac{1}{2}\\left(n-n_j-1\\right)\\left(n_j+1\\right)=e(G)+\\left(n_i-n_j\\right)-1>e(G)$. 若 $G^{\\prime}$ 与 $T_m(n)$ 同构,结论成立, 否则重复上述过程直至所得的图与 $T_m(n)$ 同构为止.",
+    "remark": "",
+    "figures": []
+}

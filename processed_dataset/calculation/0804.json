@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题15. 某体育馆拟用运动场的边角地建一个矩形的健身室,如图(<FilePath:./images/volume3/figures/fig-c6p15.png>)所示, $A B C D$ 是一块边长为 50 米的正方形地皮, 扇形 $C E F$ 是运动场的一部分, 其半径为 40 米,矩形 $A G H M$ 就是拟建的健身室, 其中 $G$ 、 $M$ 分别在 $A B$ 和 $A D$ 上, $H$ 在 $\\overparen{E F}$ 上, 设矩形 $A G H M$ 的面积为 $S, \\angle H C F=\\theta$, 请将 $S$ 表示为 $\\theta$ 的函数,并找出点 $H$ 在 $\\overparen{E F}$ 的何处时,该健身室的面积最大,并求出最大面积.",
+    "solution": "延长 $G H$ 交 $C D$ 于 $P$, 则 $H P \\perp C D, H P=C H \\sin \\theta=40 \\sin \\theta$, $C P=C H \\cos \\theta=40 \\cos \\theta, H G=50-40 \\sin \\theta, H M=50-40 \\cos \\theta$, 所以 $S= H G \\cdot H M=(50-40 \\sin \\theta)(50-40 \\cos \\theta)=100[25-20(\\sin \\theta+\\cos \\theta)+ 16 \\sin \\theta \\cos \\theta]$, 其中 $0 \\leqslant \\theta \\leqslant \\frac{\\pi}{2}$, 设 $t=\\sin \\theta+\\cos \\theta$, 则 $2 \\sin \\theta \\cos \\theta=t^2-1,1 \\leqslant t \\leqslant \\sqrt{2}$, 故 $S=800\\left(t-\\frac{5}{4}\\right)^2+450$, 当 $t=1$ 时, $S_{\\text {max }}=500\\left(\\right.$ 米 $\\left.^2\\right)$. 此时 $\\theta=0$ 或 $\\frac{\\pi}{2}$, 即 $H$ 在 $\\overparen{E F}$ 的端点 $E$ 或 $F$ 处.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c6p15.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题7 若集合 $A=\\{x \\mid-2 \\leqslant x \\leqslant 5\\}, B=\\{x \\mid m+1 \\leqslant x \\leqslant 2 m-1\\}$, 且 $A \\cap B=B$, 则实数 $m$ 的取值范围是",
+    "solution": "$m \\leqslant 3$. 当 $B=\\varnothing$ 时, $m+1>2 m-1$, 得 $m<2$; 当 $B \\neq \\varnothing$ 时, 须 $-2 \\leqslant m+1$, $2 m-1 \\leqslant 5, m+1 \\leqslant 2 m-1$ 同时满足, 解得 $2 \\leqslant m \\leqslant 3$.",
+    "remark": "",
+    "figures": []
+}

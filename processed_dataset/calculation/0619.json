@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题13 设 $f(n)$ 是定义在整数集 $\\mathbf{Z}$ 上的函数, 且满足:\n(1) $f(0)=1, f(1)=0$;\n(2) $f(m+n)+f(m-n)=2 f(m) f(n), m 、 n \\in \\mathbf{Z}$.\n求 $f(n)$.",
+    "solution": "在条件 (2) 中令 $n=1$, 得 $f(m+1)+f(m-1)=0$. 即 $f(m+1)= -f(m-1) \\cdots$ (1). \n在(1)式中用 $m+2$ 代换 $m$, 得 $f(m+3)=-f(m+1) \\cdots$ (2). \n由(1)、(2)式, 可得 $(m+3)=f(m-1)$. 即 $f(m+4)=f(m)$. \n因此, $f(n)$ 是周期为 4 的周期函数.\n取 $m=1$ 代入(1), 得 $f(2)=-f(0)=-1$. 取 $m=2$ 代入(1), 得 $f(3)=-f(1)=0$. \n所以 $f(n)= \\begin{cases}0, & \\text { 当 } n \\text { 为奇数时; } \\\\ 1, & \\text { 当 } n=4 k, k \\in \\mathbf{Z} \\text { 时; } \\\\ -1, & \\text { 当 } n=4 k+2, k \\in \\mathbf{Z} \\text { 时.\n}\\end{cases}$.",
+    "remark": "",
+    "figures": []
+}

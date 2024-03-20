@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例5 $\\triangle A B C$ 的三边长 $a, b, c$ 满足 $a+b+c=1$, 求证:\n$$\n5\\left(a^2+b^2+c^2\\right)+18 a b c \\geqslant \\frac{7}{3} .\n$$",
+    "solution": "证因为\n$$\n\\begin{aligned}\na^2+b^2+c^2 & =(a+b+c)^2-2(a b+b c+c a) \\\\\n& =1-2(a b+b c+c a),\n\\end{aligned}\n$$\n所以原不等式等价于\n$$\n5-10(a b+b c+c a)+18 a b c \\geqslant \\frac{7}{3},\n$$\n即\n$$\n\\frac{5}{9}(a b+b c+c a)-a b c \\leqslant \\frac{4}{27} .\n$$\n构造辅助函数\n$$\n\\begin{aligned}\nf(x) & =(x-a)(x-b)(x-c) \\\\\n& =x^3-x^2+(a b+b c+c a) x-a b c .\n\\end{aligned}\n$$\n一方面\n$$\nf\\left(\\frac{5}{9}\\right)=\\left(\\frac{5}{9}\\right)^3-\\left(\\frac{5}{9}\\right)^2+\\frac{5}{9}(a b+b c+c a)-a b c .\n$$\n另一方面, 由于 $a 、 b 、 c$ 是三角形的三边长, 所以, $0<a 、 b 、 c<\\frac{1}{2}$, 从而 $\\frac{5}{9}-a, \\frac{5}{9}-b, \\frac{5}{9}-c$ 均大于 0 , 故\n$$\n\\begin{aligned}\nf\\left(\\frac{5}{9}\\right) & =\\left(\\frac{5}{9}-a\\right)\\left(\\frac{5}{9}-b\\right)\\left(\\frac{5}{9}-c\\right) \\\\\n& \\leqslant \\frac{1}{27}\\left[\\left(\\frac{5}{9}-a\\right)+\\left(\\frac{5}{9}-b\\right)+\\left(\\frac{5}{9}-c\\right)\\right]^3 \\\\\n& =\\frac{8}{729} .\n\\end{aligned}\n$$\n所以 $\\frac{8}{729} \\geqslant\\left(\\frac{5}{9}\\right)^3-\\left(\\frac{5}{9}\\right)^2+\\frac{5}{9}(a b+b c+c a)-a b c$, 即\n$$\n\\frac{5}{9}(a b+b c+c a)-a b c \\leqslant \\frac{4}{27} .\n$$\n此即 $\\circledast$ 式, 从而命题成立.",
+    "remark": "",
+    "figures": []
+}

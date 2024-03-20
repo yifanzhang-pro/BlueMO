@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 如图(<FilePath:./images/volume7/figures/fig-c9p7.png>), 在线段 $A B$ 上取点 $C$, 以线段 $A C 、 B C 、 A B$ 为直径分别作圆, $\\odot O$ 与这三个圆都相切.\n证明: $\\odot O$ 的直径等于它的圆心到直线 $A B$ 的距离.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c9a7.png>), 以点 $C$ 为反演中心作反演变换.\n以 $A C$ 、 $B C 、 A B$ 为直径的圆分别反演成直线 $A^{\\prime} D 、 B^{\\prime} E$ 、以 $A^{\\prime} B^{\\prime}$ 为直径的圆, 且直线 $A^{\\prime} D 、 B^{\\prime} E$ 与 $A^{\\prime} B^{\\prime}$ 垂直, $\\odot O$ 反演成 $\\odot O^{\\prime}$, 且与直线 $A^{\\prime} D 、 B^{\\prime} E$ 及以 $A^{\\prime} B^{\\prime}$ 为直径的圆都相切.\n由于 $\\odot O 、 \\odot O^{\\prime}$ 关于点 $C$ 位似, 所以, $\\odot O$ 的直径与圆心到 $A B$ 的距离的比等于 $\\odot O^{\\prime}$ 的直径与圆心到 $A^{\\prime} B^{\\prime}$ 的距离的比.\n易知后者的比值为 1 .",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9p7.png",
+        "./images/volume7/figures/fig-c9a7.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 小城共有 15 部电话, 能否用电线连接它们, 使得每部电话恰好与 5 部别的电话相连?",
+    "solution": "不能.\n由定理二即得.",
+    "remark": "",
+    "figures": []
+}

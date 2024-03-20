@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 数列 $\\left\\{a_n\\right\\}$ 满足 $a_0=1, a_n=a_{n+1}+a_{\\left[\\frac{n}{3}\\right]}, n=1,2, \\cdots$. 证明: 对任意不大于 13 的素数 $p$, 数列 $\\left\\{a_n\\right\\}$ 中有无穷多项是 $p$ 的倍数.",
+    "solution": "对照第 1 节例 5. 试算 $\\left\\{a_n\\right\\}$ 的最初 21 项, 它们的值依次为 $1,2,3,5$, $7,9,12,15,18,23,28,33,40,47,54,63,72,81,93,105,117$, 其中 $a_1, a_2, a_3, a_4, a_{11}, a_{20}$ 分别是 $2,3,5,7,11,13$ 的倍数.\n因此, 对任意 $p \\in \\{2,3,5,7,11,13\\}$, 都有一项 $a_n$ 为 $p$ 的倍数.\n如果 $a_{3 n-1} \\equiv 0(\\bmod p)$, 那么我们从 $a_n$ 出发找到了下个 $p$ 的倍数.\n如果 $a_{3 n-1} \\neq \\equiv 0(\\bmod p)$, 那么由递推式及 $a_n \\equiv 0(\\bmod p)$ 知 $a_{3 n+2} \\equiv a_{3 n+1} \\equiv a_{3 n} \\equiv a_{3 n-1}(\\bmod p)$, 记它们除以 $p$ 所得余数为 $r$, 同例题 - 样讨论, 下面的 13 个数\n$$\na_{9 n-4}, a_{9 n-3}, \\cdots, a_{9 n+8}\n$$\n在 $\\bmod p$ 下分别与 $a_{9 n-4}, a_{9 n-4}+r, \\cdots, a_{9 n-4}+12 r$ 同余, 而 $p \\leqslant 13$, 故这 13 个数至少覆盖 $\\bmod p$ 的一个完系, 这样, 从 $a_n$ 出发就可找到下一个 $p$ 的倍数, 命题获证.",
+    "remark": "",
+    "figures": []
+}

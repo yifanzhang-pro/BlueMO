@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $0<a<1, x_0=1, x_{n+1}=\\frac{1}{x_n}+a(n \\in \\mathbf{N})$. 证明: 对一切 $n \\in \\mathbf{N}^*$, 有 $x_n>1$.",
+    "solution": "证法 1 我们用数学归纳法证明结论.\n当 $n=1,2$ 时, $x_1=1+a>1, x_2=\\frac{1}{1+a}+a=\\frac{1+a+a^2}{1+a}>1$, 命题成立.\n设 $n=k$ 时命题成立, 则 $n=k+2$ 时, 根据归纳假设和递推关系得\n$$\n0<x_{k+1}=\\frac{1}{x_k}+a<1+a,\n$$\n继而有\n$$\nx_{k+2}=\\frac{1}{x_{k+1}}+a>\\frac{1}{1+a}+a=\\frac{1+a+a^2}{1+a}>1,\n$$\n所以 $n=k+2$ 时命题成立.\n因此对任意 $n \\in \\mathbf{N}^*$, 有 $x_n>1$.",
+    "remark": "",
+    "figures": []
+}

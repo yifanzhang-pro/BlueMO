@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 平面五点间的最小距离为 1 , 若最大距离小于 $2 \\sin 70^{\\circ}$, 证明或否定:这五点是凸五边形的顶点.",
+    "solution": "结论是肯定的, 下用反证法证之.\n显然无三点共线的情况.\n若凸包为三角形时, 内部有两点, 此时这五点距离的最大值与最小值的比 $\\lambda \\geqslant 2> 2 \\sin 70^{\\circ}$, 矛盾.\n若凸包为四边形 $A B C D, E$ 在其内部, 不妨设 $A C$ 和 $B D$ 交于$F$, 且 $E$ 在 $\\triangle A F B$ 内, 如图(<FilePath:./images/volume9/figures/fig-c10a2.png>), 假设 $\\lambda<2 \\sin 70^{\\circ}$. 先考虑两条引理: 引理 1 对任意 $\\triangle A B C, \\frac{B C}{\\min (B A, C A)} \\geqslant 2 \\sin \\frac{A}{2}$. 引理 2 设 $D$ 为 $\\triangle A B C$ 内一点, 则及假设, 必有 $\\angle A E C<140^{\\circ}, \\angle A E B<140^{\\circ}$, 于是 $\\angle B E C>80^{\\circ}$, 同理 $\\angle A E D>80^{\\circ} \\cdots$ (1). 又由引理 2 及假设, 有 $\\angle A B C<70^{\\circ}, \\angle B A D<70^{\\circ}$, 于是 $\\max (\\angle A D C, \\angle B C D)>110^{\\circ}$. 不妨设 $\\angle B C D>110^{\\circ}$, 由 (1) 有 $B C \\geqslant \\frac{B C}{\\min (C E, B E)} \\geqslant 2 \\sin \\frac{\\angle C E B}{2} \\geqslant 2 \\sin 40^{\\circ}$, 于是有 $\\lambda \\geqslant B D> \\sqrt{1+4 \\sin ^2 40^{\\circ}+4 \\sin 40^{\\circ} \\cos 70^{\\circ}}=2 \\sin 70^{\\circ}$, 矛盾! 因此, 五点构成一个凸五边形.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c10a2.png"
+    ]
+}

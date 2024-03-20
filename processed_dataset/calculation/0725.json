@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题22. 设 $\\cos \\left(\\alpha-\\frac{\\beta}{2}\\right)=-\\frac{1}{9}, \\sin \\left(\\frac{\\alpha}{2}-\\beta\\right)=\\frac{2}{3}$, 且 $\\frac{\\pi}{2}<\\alpha<\\pi, 0<\\beta<\\frac{\\pi}{2}$, 求 $\\sin \\frac{\\alpha+\\beta}{2}$ 和 $\\cos (\\alpha+\\beta)$ 的值.",
+    "solution": "由 $\\frac{\\pi}{2}<\\alpha<\\pi, 0<\\beta<\\frac{\\pi}{2}$, 得 $\\frac{\\pi}{4}<\\alpha-\\frac{\\beta}{2}<\\pi,-\\frac{\\pi}{4}<\\frac{\\alpha}{2}-\\beta<\\frac{\\pi}{2}$,\n故由 $\\cos \\left(\\alpha-\\frac{\\beta}{2}\\right)=-\\frac{1}{9}$, 得 $\\sin \\left(\\alpha-\\frac{\\beta}{2}\\right)=\\frac{4 \\sqrt{5}}{9}$, 由 $\\sin \\left(\\frac{\\alpha}{2}-\\beta\\right)=\\frac{2}{3}$ 得 $\\cos \\left(\\frac{\\alpha}{2}-\\beta\\right)=\\frac{\\sqrt{5}}{3}$, 所以 $\\sin \\frac{\\alpha+\\beta}{2}=\\sin \\left[\\left(\\alpha-\\frac{\\beta}{2}\\right)-\\left(\\frac{\\alpha}{2}-\\beta\\right)\\right]= \\sin \\left(\\alpha-\\frac{\\beta}{2}\\right) \\cos \\left(\\frac{\\alpha}{2}-\\beta\\right)-\\cos \\left(\\alpha-\\frac{\\beta}{2}\\right) \\sin \\left(\\frac{\\alpha}{2}-\\beta\\right)=\\frac{4 \\sqrt{5}}{9} \\times \\frac{\\sqrt{5}}{3}-\\left(-\\frac{1}{9}\\right) \\times \\frac{2}{3}=\\frac{22}{27}$. 从而 $\\cos (\\alpha+\\beta)=1-2 \\sin ^2 \\frac{\\alpha+\\beta}{2}=1-2 \\times\\left(\\frac{22}{27}\\right)^2=-\\frac{239}{729}$.",
+    "remark": "",
+    "figures": []
+}

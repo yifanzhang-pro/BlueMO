@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 已知 9 个人 $v_1, v_2, \\cdots, v_9$ 中 $v_1$ 和 2 个人握过手, $v_2 、 v_3$ 各和 4 个人握过手, $v_4 、 v_5 、 v_6 、 v_7$ 各和 5 个人握过手, $v_8 、 v_9$ 各和 6 个人握过手, 证明这 9 个人中一定可以找出 3 个人,他们互相握过手.",
+    "solution": "作图 $G$ : 用 9 个点表示 9 个人,两顶点相邻当且仅当这两人握过手.\n因为 $d\\left(v_9\\right)=6$, 所以存在 $v_k \\neq v_1, v_2, v_3$ 与 $v_9$ 相邻.\n显然 $d\\left(v_k\\right) \\geqslant 5$. 在与 $v_9$ 相邻的其余五个点中一定有一个点 $v_h$ 与 $v_k$ 相邻 (否则 $d\\left(v_k\\right) \\leqslant 9-5-1=3$ ), 于是 $v_9, v_k, v_h$ 即为所求.",
+    "remark": "",
+    "figures": []
+}

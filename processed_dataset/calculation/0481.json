@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例13 作出函数 $y=\\left|x^2+x-6\\right|$ 的图象.",
+    "solution": "解:先作出 $y=x^2+x-6$ 的图象, 然后将此图象在 $x$ 轴下方的部分对称地翻折到 $x$ 轴的上方即可,如图(<FilePath:./images/volume2/figures/fig-c1e13.png>)实线所示部分.",
+    "remark": "",
+    "figures": [
+        "./images/volume2/figures/fig-c1e13.png"
+    ]
+}

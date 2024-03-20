@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 从银行中取出伍角、壹元、式元、伍元、拾元、伍拾元、壹百元的纸币共 10 张,共有多少种不同的取法?",
+    "solution": "解:本题为从 7 种不同的纸币中取 10 种纸币可重复的组合数, 依可重复的组合数公式得不同的取法数目为\n$$\n\\mathrm{C}_{7+10-1}^{10}=\\mathrm{C}_{16}^6=\\frac{16 \\times 15 \\times 14 \\times 13 \\times 12 \\times 11}{1 \\times 2 \\times 3 \\times 4 \\times 5 \\times 6}=8008 .\n$$",
+    "remark": "",
+    "figures": []
+}

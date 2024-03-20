@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题12 设 $n$ 是大于 3 的自然数,且具有下列性质: 把集合 $S_n=\\{1,2, \\cdots, n\\}$ 任意分为两个不相交的子集, 总有某个子集, 它含有三个数 $a 、 b 、 c$ (允许 $a=b)$, 使得 $a b=c$. 求这样的 $n$ 的最小值.",
+    "solution": "若 $n \\geqslant 3^5$, 则 $3,3^2, 3^4, 3^5 \\in S_n$. 设集合 $S_n$ 分为两个不相交的子集 $A$ 和 $B, 3 \\in A$, 且 $A$ 和 $B$ 不满足题中条件.\n于是 $3^2 \\in B, 3^4 \\in A, 3^3 \\in B, 3^5 \\in B$. 这时 $B$ 中三个元素 $3^2, 3^3, 3^5$ 满足 $a b=c$ 矛盾.\n这表明 $n \\geqslant 3^5$ 时, 把集合 $S_n$ 任意分为两组, 总有某个组, 具有题中性质, 即所求最小值不超过 $3^5=243$.\n另一方面, 取 $n=242$, 且设 $A=\\{k \\mid 9 \\leqslant k \\leqslant 80\\}, B=\\{k \\mid 3 \\leqslant k \\leqslant 8$,或 $81 \\leqslant k \\leqslant 242\\}$, 则 $S_{242}=A \\cup B$, 而且 $A$ 和 $B$ 都不具有题中性质.\n当 $n<$ 242 时, 将 $S_n$ 分为两组 $A \\cap S_n$ 和 $B \\cap S_n$, 则 $A \\cap S_n$ 和 $B \\cap S_n$ 也都不具有题中性质.\n故 $n$ 的最小值为 243 .",
+    "remark": "",
+    "figures": []
+}

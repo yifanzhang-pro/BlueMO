@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题9. 方程 $\\lg x=\\cos 2 x$ 的解有( ).\n(A) 2 个\n(B) 5 个\n(C) 7 个\n(D) 无数个",
+    "solution": "B. 分别作出 $y=\\lg x$ 与 $y=\\cos 2 x$ 的图象而观察.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 实数数列 $a_1, a_2, \\cdots$ 满足:\n(1) $a_1=2, a_2=500, a_3=2000$;\n(2) $\\frac{a_{n+2}+a_{n+1}}{a_{n+1}+a_{n-1}}=\\frac{a_{n+1}}{a_{n-1}}, n=2,3, \\cdots$.\n证明: 数列 $\\left\\{a_n\\right\\}$ 的每一项都是整数,并且对任意正整数 $n$, 都有 $2^n \\mid a_n$.",
+    "solution": "由递推式可知 $a_{n+1}^2=a_{n-1} a_{n+2}, n=2,3, \\cdots$, 由初始条件结合数学归纳法得 $a_n \\neq 0$. 于是, 上式可变形为\n$$\n\\frac{a_{n+2}}{a_{n+1} a_n}=\\frac{a_{n+1}}{a_n a_{n-1}}, n=2,3, \\cdots .\n$$\n依此倒推, 可知 $\\frac{a_{n+2}}{a_{n+1} a_n}=\\frac{a_{n+1}}{a_n a_{n-1}}=\\cdots=\\frac{a_3}{a_2 a_1}=2$, 即 $a_{n+2}=2 a_{n+1} a_n, n=2$, $3, \\cdots$. 由此递推式及 $a_1, a_2, a_3 \\in \\mathbf{Z}$ 知, $a_n$ 都为整数, 并且 $\\frac{a_{n+2}}{a_{n+1}}=2 a_n$ (注意, 此式对 $n=1$ 也成立), 可知对任意 $n \\in \\mathbf{N}^*, \\frac{a_{n+2}}{a_{n+1}}$ 为偶数, 这样, $a_n=\\left(\\frac{a_n}{a_{n-1}}\\right)$. $\\left(\\frac{a_{n-1}}{a_{n-2}}\\right) \\cdots\\left(\\frac{a_2}{a_1}\\right) \\cdot a_1$ 是 $n$ 个偶数之积, 于是 $2^n \\mid a_n$.",
+    "remark": "",
+    "figures": []
+}

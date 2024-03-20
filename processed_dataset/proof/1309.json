@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例14. 已知非负实数 $a 、 b 、 c$ 满足: $a+b+c=1$, 求证:\n$$\n\\begin{aligned}\n2 & \\leqslant\\left(1-a^2\\right)^2+\\left(1-b^2\\right)^2+\\left(1-c^2\\right)^2 \\\\\n& \\leqslant(1+a)(1+b)(1+c),\n\\end{aligned}\n$$\n并求出等号成立的条件.",
+    "solution": "证明:设 $a b+b c+c a=m, a b c=n$, 则\n$$\n(x-a)(x-b)(x-c)=x^3-x^2+m x-n .\n$$\n令 $x=a$, 则有 $a^3=a^2-m a+n$ (注意: 这起到了降次的作用!). 于是\n$$\n\\begin{aligned}\n\\sum_{c y c} a^3 & =\\sum_{c y c} a^2-m \\cdot \\sum_{c y c} a+3 n . \\\\\n\\sum_{c y c} a^4 & =\\sum_{c y c} a^3-m \\sum_{c y c} a^2+n \\sum_{c y c} a \\\\\n& =(1-m) \\sum_{c y c} a^2-m \\sum_{c y c} a+n \\sum_{c y c} a+3 n \\\\\n& =(1-m)(1-2 m)-m+n+3 n .\n\\end{aligned}\n$$\n所以\n$$\n\\begin{aligned}\n\\sum_{c y c}\\left(1-a^2\\right)^2 & =3-2 \\sum_{c y c} a^2+\\sum_{c y c} a^4 \\\\\n& =3-2(1-2 m)+2 m^2-3 m+1-m+4 n \\\\\n& =2 m^2+4 n+2 \\geqslant 2,\n\\end{aligned}\n$$\n等号当 $a 、 b 、 c$ 中有 2 个为 0 时取到.\n又因为\n$$\n(1+a)(1+b)(1+c)=2+m+n,\n$$\n则 $2 m^2+4 n+2 \\leqslant 2+m+n$ 相当于 $3 n \\leqslant m-2 m^2$, 即\n$$\n3 a b c \\leqslant m(1-2 m)=(a b+b c+c a)\\left(a^2+b^2+c^2\\right),\n$$\n即\n$$\n3 \\leqslant\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\right)\\left(a^2+b^2+c^2\\right) . \\label{(1)}\n$$\n而由 Cauchy 不等式可得\n$$\n3\\left(a^2+b^2+c^2\\right) \\geqslant(a+b+c)^2=a+b+c .\n$$\n于是\n$$\n\\begin{aligned}\n& 3\\left(a^2+b^2+c^2\\right)\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\right) \\\\\n\\geqslant & (a+b+c)\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\right) \\geqslant 9 .\n\\end{aligned}\n$$\n故(1)成立,且等号当 $a=b=c=\\frac{1}{3}$ 时成立.",
+    "remark": "",
+    "figures": []
+}

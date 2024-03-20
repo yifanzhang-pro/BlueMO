@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例24. 证明: 在 $\\triangle A B C$ 中, 有\n$$\n\\sum_{c y c} a^3-2 \\sum_{c y c} a^2(b+c)+9 a b c \\leqslant 0 .\n$$",
+    "solution": "证明:令 $x=\\frac{b+c-a}{2}, y=\\frac{c+a-b}{2}, z=\\frac{a+b-c}{2}$, 则由 Schur 不等式可得\n$$\n\\begin{aligned}\n& \\sum_{c y c}\\left(\\frac{b+c-a}{2}\\right)(b-a)(c-a) \\geqslant 0, \\\\\n& \\sum_{c y c}(a-b)(a-c)(b+c-a) \\geqslant 0, \\\\\n& -\\sum_{c y c} a^3+2 \\sum_{c y c} a^2(b+c)-9 a b c \\geqslant 0,\n\\end{aligned}\n$$\n所以\n$$\n\\sum_{\\text {cyc }} a^3-2 \\sum_{c y c} a^2(b+c)+9 a b c \\leqslant 0 .\n$$",
+    "remark": "",
+    "figures": []
+}

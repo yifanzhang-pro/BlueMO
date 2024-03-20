@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter2.tex",
+    "problem_type": "calculation",
+    "problem": "例5. 已知集合 $A=\\left\\{(x, y) \\mid \\frac{y-3}{x-2}=a+1\\right\\}, B=\\{(x, y) \\mid(a^2- 1) x+(a-1) y=15\\}$, 且 $A \\cap B=\\varnothing$, 求 $a$ 的值.",
+    "solution": "分析:当 $a=1$ 时, $B=\\varnothing$, 这时 $A \\cap B=\\varnothing$; 当 $a \\neq 1$ 时, $A \\cap B=\\varnothing$, 即 $A 、 B$ 对应的直线无公共点.\n解由 $\\frac{y-3}{x-2}=a+1$, 得\n$$\n(a+1) x-y-2 a+1=0, \\text { 且 } x \\neq 2 .\n$$\n这表明集合 $A$ 表示一条缺一个点的直线.\n而\n$$\n\\left(a^2-1\\right) x+(a-1) y=15,\n$$\n当 $a \\neq 1$ 时,表示一条直线; 当 $a=1$ 时,满足等式的点 $(x, y)$ 不存在.\n因此,当且仅当以下三种情况之一发生时, $A \\cap B=\\varnothing$.\n(1)当 $a=1$ 时, $B=\\varnothing$, 显然有 $A \\cap B=\\varnothing$.\n(2)当 $a=-1$ 时, $A$ 表示直线 $y=3(x \\neq 2), B$ 表示直线 $y=-\\frac{15}{2}$, 它们互相平行.\n所以, $A \\cap B=\\varnothing$.\n(3)当 $a \\neq \\pm 1$ 时, 直线 (1) 与 (2) 相交.\n但直线 (1) 上缺一点 $(2,3)$, 令 $(2, 3) \\in B$, 得\n$$\n\\left(a^2-1\\right) \\cdot 2+(a-1) \\cdot 3=15,\n$$\n解得 $a=-4$ 或 $a=\\frac{5}{2}$.\n综上所述, $a \\in\\left\\{-4,-1,1, \\frac{5}{2}\\right\\}$.\n说明 $a \\neq 1$ 时, $A \\cap B=\\varnothing$, 并不表明直线 (1) 与 (2) 必须平行, 由于直线 (1) 上缺了一个点 $(2,3)$, 当直线 (2) 穿过点 $(2,3)$ 时, 同样有 $A \\cap B=\\varnothing$.",
+    "remark": "",
+    "figures": []
+}

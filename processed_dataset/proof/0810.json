@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 数列 $\\left\\{a_n\\right\\}$ 定义如下: $a_1=3, a_{n+1}=3^{a_n}, n=1,2, \\cdots$, 数列 $\\left\\{b_n\\right\\}$ 定义如下: $b_1=8, b_{n+1}=8^{b_n}, n=1,2, \\cdots$. 求证: 对一切正整数 $n$, 有 $a_{n+1}>b_n$.",
+    "solution": "下面证明加强的命题: $a_{n+1}>3 b_n$.\n当 $n=1$ 时, $a_2=3^3=27>24=3 b_1$, 即 $n=1$ 时命题成立.\n假设 $n=k$ 时命题成立, 即 $a_{k+1}>3 b_k$, 则\n$$\na_{k+2}=3^{a_{k+1}}>3^{3 b_k}=27^{b_k}>2^{b_k} \\cdot 8^{b_k} \\geqslant 2 b_{k+1},\n$$\n故由数学归纳法知, 加强的命题成立.",
+    "remark": "",
+    "figures": []
+}

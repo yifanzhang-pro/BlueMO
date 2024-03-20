@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例2. 如图(<FilePath:./images/volume7/figures/fig-c5i3.png>), 圆 $\\Gamma$ 与 $\\triangle A B C$ 的外接圆相切于点 $A$, 与边 $A B$ 交于点 $K$, 且和边 $B C$ 相交.\n过点 $C$ 作圆 $\\Gamma$ 的切线, 切点为 $L$, 连结 $K L$, 交边 $B C$ 于点 $T$. 求证: 线段 $B T$ 的长等于点 $B$ 到圆 $\\Gamma$ 的切线长.",
+    "solution": "分析:由圆幂定理知: 点 $B$ 到圆 $\\Gamma$ 的切线长的平方等于 $B K \\cdot B A$. 故问题等价于求证: $B T^2=B K$ ・ $B A$.\n证明过 $A$ 作两圆的公切线 $D E$, 连结 $A C$ 交圆 $\\Gamma$ 于 $M$.\n则 $\\angle D A B=\\angle A C B=\\angle A M K \\Rightarrow K M / / B C$.\n注意到 $A 、 K 、 L 、 M$ 四点共圆, 所以 $\\angle A M K=\\angle A L K=\\angle A C B \\Rightarrow A$ 、 $C 、 L 、 T$ 四点共圆,所以 $\\angle A L C=\\angle A T C$.\n又因 $C L$ 是圆 $\\Gamma$ 的切线, $\\angle A L C=\\angle A K L$.\n所以 $\\angle A T C=\\angle A K L$, 从而它们的补角也相等, 即 $\\angle B K T=\\angle B T A$. 又 $\\angle K B T=\\angle T B A$, 故 $\\triangle A B T \\backsim \\triangle T B K \\Rightarrow B T^2==B K \\cdot B A$.\n由圆幂定理知, $B T$ 的长等于 $B$ 到圆 $\\Gamma$ 的切线长.",
+    "remark": "注:若两圆相内切于点 $A$, 过 $A$ 出发的两条射线与两圆分别交于 $B_1 、 C_1$ 和 $B_2 、 C_2$, 则 $B_1 C_1 / / B_2 C_2$. 这个基本结论常用到.\n(如图(<FilePath:./images/volume7/figures/fig-c5i4.png>))",
+    "figures": [
+        "./images/volume7/figures/fig-c5i3.png",
+        "./images/volume7/figures/fig-c5i4.png"
+    ]
+}

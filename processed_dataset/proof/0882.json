@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例7 求 $y=(3 x-1)\\left(\\sqrt{9 x^2-6 x+5}+1\\right)+(2 x-3) (\\sqrt{4 x^2-12 x+13}+ 1)$ 的图象与 $x$ 轴的交点的坐标.",
+    "solution": "分析:仔细观察所给式子的特点,发现\n$$\n\\begin{aligned}\ny= & (3 x-1)\\left(\\sqrt{(3 x-1)^2+4}+1\\right)+ \\\\\n& (2 x-3)\\left(\\sqrt{(2 x-3)^2+4}+1\\right),\n\\end{aligned}\n$$\n从而可以找到解题的途径.\n解因为\n$$\n\\begin{aligned}\ny= & (3 x-1)\\left(\\sqrt{(3 x-1)^2+4}+1\\right)+ \\\\\n& (2 x-3)\\left(\\sqrt{(2 x-3)^2+4}+1\\right) .\n\\end{aligned}\n$$\n构造函数\n$$\nf(t)=t\\left(\\sqrt{t^2+4}+1\\right) .\n$$\n因为 $f(-t)=-t\\left(\\sqrt{t^2+4}+1\\right)=-f(t)$, 所以 $f(t)$ 是奇函数.\n又因为当 $t \\geqslant 0$ 时, $f(t)$ 是递增的, 所以, 当 $t \\in \\mathbf{R}$ 时, $f(t)$ 也是递增的(易证), 而\n$$\ny=f(3 x-1)+f(2 x-3) .\n$$\n当 $y=0$ 时, 得\n$$\nf(3 x-1)=-f(2 x-3)=f(3-2 x),\n$$\n所以\n$$\n3 x-1=3-2 x .\n$$\n解方程, 得 $x=\\frac{4}{5}$.\n故图象与 $x$ 轴的交点坐标为 $\\left(\\frac{4}{5}, 0\\right)$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例23. 给定整数 $n \\geqslant 4$, 对任意满足\n$$\na_1+a_2+\\cdots+a_n=b_1+b_2+\\cdots+b_n>0\n$$\n的非负实数 $a_1, a_2, \\cdots, a_n, b_1, b_2, \\cdots, b_n$, 求 $\\frac{\\sum_{i=1}^n a_i\\left(a_i+b_i\\right)}{\\sum^n b_i\\left(a_i+b_i\\right)}$ 的最大值.",
+    "solution": "解:由齐次性可知, 不妨假设 $\\sum_{i=1}^n a_i=\\sum_{i=1}^n b_i=1$. 首先, 当 $a_1=1, a_2= a_3=\\cdots=a_n=0, b_1=0, b_2=b_3=\\cdots=b_n=\\frac{1}{n-1}$ 时, $\\sum_{i=1}^n a_i\\left(a_i+b_i\\right)=$ 1, $\\sum_{i=1}^n b_i\\left(a_i+b_i\\right)=\\frac{1}{n-1}$, 故\n$$\n\\frac{\\sum_{i=1}^n a_i\\left(a_i+b_i\\right)}{\\sum_{i=1}^n b_i\\left(a_i+b_i\\right)}=n-1 .\n$$\n下证对任意满足 $\\sum_{i=1}^n a_i=\\sum_{i=1}^n b_i=1$ 的 $a_1, a_2, \\cdots, a_n, b_1, b_2, \\cdots, b_n$, 都有\n$$\n\\frac{\\sum_{i=1}^n a_i\\left(a_i+b_i\\right)}{\\sum_{i=1}^n b_i\\left(a_i+b_i\\right)} \\leqslant n-1\n$$\n由于分母是正数,故上式等价于\n$$\n\\begin{aligned}\n& \\sum_{i=1}^n a_i\\left(a_i+b_i\\right) \\leqslant(n-1) \\sum_{i=1}^n b_i\\left(a_i+b_i\\right), \\\\\n& (n-1) \\sum_{i=1}^n b_i^2+(n-2) \\sum_{i=1}^n a_i b_i \\geqslant \\sum_{i=1}^n a_i^2 .\n\\end{aligned}\n$$\n即由对称性, 不妨设 $b_1$ 是 $b_1, b_2, \\cdots, b_n$ 中最小的一个, 则有\n$$\n\\begin{aligned}\n(n-1) \\sum_{i=1}^n b_i^2+(n-2) \\sum_{i=1}^n a_i b_i \\geqslant(n-1) b_1^2+(n-1) \\sum_{i=2}^n b_i^2+(n-2) \\sum_{i=1}^n a_i b_1 \\\\\n\\geqslant(n-1) b_1^2+\\left(\\sum_{i=2}^n b_i\\right)^2+(n-2) b_1 \\\\\n=(n-1) b_1^2+\\left(1-b_1\\right)^2+(n-2) b_1 \\\\\n=n b_1^2+(n-4) b_1+1 \\\\\n\\geqslant 1=\\sum_{i=1}^n a_i \\geqslant \\sum_{i=1}^n a_i^2\n\\end{aligned}\n$$\n所以, 所求的最大值为 $n-1$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设集合 $A_1, A_2, \\cdots, A_n$ 和 $B_1, B_2, \\cdots, B_n$ 是集合 $M$ 的两个 $n$ 一分划, 已知对任意两个交集为空集的集合 $A_i, B_j(1 \\leqslant i, j \\leqslant n)$, 均有 $\\left|A_i \\cup B_j\\right| \\geqslant n$. 求证: $|M| \\geqslant \\frac{n^2}{2}$.",
+    "solution": "分析:由 $A_i 、 B_j$ 的交集为空集,有 $\\left|A_i \\cup B_j\\right|=\\left|A_i\\right|+\\left|B_j\\right| \\geqslant n$. 当每一个 $\\left|A_i\\right| \\geqslant \\frac{n}{2}$ 时, 结论显然成立.\n当某个 $\\left|A_i\\right|$, 不妨设为 $\\left|A_1\\right|$ 小于 $\\frac{n}{2}$ 时, 设 $\\left|A_1\\right|=k$, 这时与 $A_1$ 相交的 $B_j$ 至多有 $k$ 个; 而至少有 $n-k$ 个集合与 $A_1$ 不相交, 它们每一个的元素个数不小于 $n-k$. 假如 $k$ 是所有 $\\left|A_i\\right| 、\\left|B_j\\right|$ 中最小的, 则有 $|M| \\geqslant k \\cdot k+(n-k)(n-k) \\geqslant \\frac{n^2}{2}$.\n证明设 $k=\\min \\left\\{\\left|A_i\\right|,\\left|B_j\\right|, 1 \\leqslant i, j \\leqslant n\\right\\}$, 不妨设 $\\left|A_1\\right|=k$.\n若 $k \\geqslant \\frac{n}{2}$, 则\n$$\n|M|=\\sum_{i=1}^n\\left|A_i\\right| \\geqslant n k \\geqslant \\frac{n^2}{2}\n$$\n若 $k<\\frac{n}{2}$, 由于 $B_1, B_2, \\cdots, B_n$ 两两不相交, 故 $B_1, B_2, \\cdots, B_n$ 中至多有 $k$ 个集合与 $A_1$ 的交集不空, 从而另外的 $n-k$ 个集合均与 $A_1$ 的交集为空集, 且这些集合的元素个数不小于 $n-k$. 由 $n>2 k$, 得 $n-k>k$. 于是我们有\n$$\n\\begin{aligned}\n|M| & =-\\sum_{i=1}^n\\left|B_i\\right| \\geqslant k \\cdot k+(n-k) \\cdot(n-k) \\\\\n& =k^2+(n-k)^2 \\\\\n& \\geqslant \\frac{1}{2}(k+(n-k))^2=\\frac{n^2}{2} .\n\\end{aligned}\n$$\n综上所述,命题成立.\n说明本例的解答应用了最小数原理.\n关于最小数原理的应用, 我们将在后面作专门的介绍.",
+    "remark": "",
+    "figures": []
+}

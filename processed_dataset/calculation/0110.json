@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题5 三边长为互不相等的自然数的三角形中, 最大边长恰为 $n$ 的共有 600 个.\n求 $n$ 的值.",
+    "solution": "设三角形三边的长是 $x 、 y 、 n$, 且 $x<y<n$, 其中 $x 、 y 、 n$ 都是自然数, 显然, 最短边的长 $x$ 满足 $2 \\leqslant x \\leqslant n-2$. 现固定 $x$ 来求所构成的三角形的个数.\n当 $n$ 为奇数时,由下表\n$\\begin{array}{ccc}x & y & \\text { 三角形个数 } \\\\ 2 & n-1 & 1 \\\\ 3 & n-1, n-2 & 2 \\\\ \\vdots & \\vdots & \\vdots \\\\ \\frac{n-1}{2} & n-1, n-2, \\cdots, \\frac{n-1}{2}+2 & \\frac{n-3}{2} \\\\ \\frac{n+1}{2} & n-1, n-2, \\cdots, \\frac{n-1}{2}+2 & \\frac{n-3}{2} \\\\ \\vdots & \\vdots & \\vdots \\\\ n-3 & n-1, n-2 & 2 \\\\ n-2 & n-1 & 1 \\end{array}$ 知三角形的个数为 $f(n)=2\\left(1+2+3+\\cdots+\\frac{n-3}{2}\\right)=\\frac{1}{4}(n-1)(n-3)$. 类似地, 当 $n$ 为偶数时, $f(n)=\\frac{1}{4}(n-2)^2$. 令 $f(n)=600$, 解得 $n=51$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-7.tex",
+    "problem_type": "proof",
+    "problem": "例6. 实数数列 $\\left\\{a_n\\right\\}$ 满足: 对任意不同的正整数 $i 、 j$, 都有 $\\left|a_i-a_j\\right| \\geqslant \\frac{1}{i+j}$, 且存在正实数 $c$, 使得对任意 $n \\in \\mathbf{N}^*$, 都有 $0 \\leqslant a_n \\leqslant c$.\n求证: $c \\leqslant 1$.",
+    "solution": "证明:此题不是以等式形式给出的数列各项之间的关系,它只是用一个不等式刻画了项与项之间的差距.\n整个解决过程有一定的分析味道, 基于裂项求和的思想.\n对 $n \\geqslant 2$, 设 $\\pi(1), \\cdots, \\pi(n)$ 是 $1,2, \\cdots, n$ 的一个排列, 使得\n$$\n0 \\leqslant a_{\\pi(1)}<a_{\\pi(2)}<\\cdots<a_{\\pi(n)} \\leqslant c . \\label{eq1}\n$$\n注意,由条件可知 $\\left\\{a_n\\right\\}$ 中任意两项不同,而式\\ref{eq1}只是将 $a_1, \\cdots, a_n$ 从小到大作了一个排列.\n利用式\\ref{eq1}及条件, 可知\n$$\n\\begin{aligned}\nc & \\geqslant a_{\\pi(n)}-a_{\\pi(1)}=\\sum_{k=1}^{n-1}\\left(a_{\\pi(k+1)}-a_{\\pi(k)}\\right) \\\\\n& \\geqslant \\sum_{k=1}^{n-1} \\frac{1}{\\pi(k+1)+\\pi(k)} .\n\\end{aligned}\n$$\n由 Cauchy 不等式, 知\n$$\n\\begin{aligned}\n& \\sum_{k=1}^{n-1} \\frac{1}{\\pi(k+1)+\\pi(k)} \\geqslant \\frac{(n-1)^2}{\\sum_{k=1}^{n-1}(\\pi(k+1)+\\pi(k))} \\\\\n= & \\frac{(n-1)^2}{2 \\sum_{k=1}^n \\pi(k)-\\pi(1)-\\pi(n)}=\\frac{(n-1)^2}{n(n+1)-\\pi(1)--\\pi(n)} \\\\\n\\geqslant & \\frac{(n-1)^2}{n(n+1)-1-2}>\\frac{(n-1)^2}{n(n+1)-2}=\\frac{n-1}{n+2}=1-\\frac{3}{n+2} .\n\\end{aligned}\n$$\n所以, 我们有\n$$\nc \\geqslant 1-\\frac{3}{n+-2}\n$$\n令 $n \\rightarrow+\\infty$, 即可得 $c \\geqslant 1$.\n命题获证.",
+    "remark": "",
+    "figures": []
+}

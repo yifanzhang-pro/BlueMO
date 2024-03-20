@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $x, y, z \\geqslant 0$, 且 $x^2+y^2+z^2=1$, 求证:\n$$\n\\frac{x}{1+y z}+\\frac{y}{1+z x}+\\frac{z}{1+x y} \\geqslant 1 . \\label{(1)}\n$$",
+    "solution": "证明:我们只须证明局部不等式\n而\n$$\n\\begin{aligned}\n& \\frac{x}{1+y z} \\geqslant x^2 . \\\\\n& x+x y z \\leqslant 1 .\n\\end{aligned}\n$$\n(1)等价于\n$$\n\\begin{aligned}\nx+x y z & \\leqslant x+\\frac{1}{2} x\\left(y^2+z^2\\right)=\\frac{1}{2}\\left(3 x-x^3\\right) \\\\\n& =\\frac{1}{2}\\left[2-(x-1)^2(x+2)\\right] \\leqslant 1 .\n\\end{aligned}\n$$\n故(1)成立, 进而原不等式获证.\n说明我们可得一串不等式\n$$\n\\begin{aligned}\n1 & \\leqslant \\frac{x}{1+y z}+\\frac{y}{1+z x}+\\frac{z}{1+x y} \\\\\n& \\leqslant \\frac{x}{1-y z}+\\frac{y}{1-z x}+\\frac{z}{1-x y} \\\\\n& \\leqslant \\frac{3 \\sqrt{3}}{2} .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

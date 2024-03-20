@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例1. 求经过 $W$ 且与某条直线 $O A$ 垂直的直线方程, 这里 $W 、 A$ 对应的复数分别为 $w 、 \\alpha(\\alpha \\neq 0), O$ 为原点.",
+    "solution": "分析:与解对于平面上异于 $O$ 的点 $A$, 设其对应复数为 $\\alpha$, 则以此点与原点为端点的中垂线方程为 $\\frac{z}{\\alpha}+\\frac{\\bar{z}}{\\bar{\\alpha}}=1$, 这只要用 $|z|=|z-\\alpha|$ 即可证明.\n一般地, $\\frac{z}{\\alpha}+\\frac{\\bar{z}}{\\bar{\\alpha}}=k$ ( $k$ 为实数, 包括为零), 便是与 $O$ 及 $\\alpha$ 连线垂直的所有直线.\n因此, 经过 $W$ 且与 $O A$ 垂直的直线方程为 $\\frac{z}{\\alpha}+\\frac{\\bar{z}}{\\bar{\\alpha}}=\\frac{w}{\\alpha}+\\frac{\\bar{w}}{\\bar{\\alpha}}$.",
+    "remark": "注:若将 $\\alpha$ 换成 $\\mathrm{i} \\alpha$, 则得 $\\frac{z}{\\alpha}-\\frac{\\bar{z}}{\\bar{\\alpha}}=k \\mathrm{i}$, 因此, 经过复数为 $w$ 的且与 $\\frac{z}{\\alpha}+ \\frac{\\bar{z}}{\\bar{\\alpha}}=k$ 垂直的直线方程是\n$$\n\\frac{z}{\\alpha}-\\frac{\\bar{z}}{\\bar{\\alpha}}=\\frac{w}{\\alpha}-\\frac{\\bar{w}}{\\bar{\\alpha}} .\n$$\n复数的这个基本性质十分重要,具有广泛的用途.",
+    "figures": []
+}

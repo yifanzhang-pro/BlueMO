@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter17.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 已知 $x_1, x_2, \\cdots, x_{40}$ 都是正整数, 且 $x_1+x_2+\\cdots+x_{40}=58$, 若 $x_1^2+x_2^2+\\cdots+x_{40}^2$ 的最大值为 $A$, 最小值为 $B$, 求 $A+B$ 的值.",
+    "solution": "解:为把 58 写成 40 个正整数的和的写法只有有限种, 故 $x_1^2+ x_2^2+\\cdots+x_{40}^2$ 的最小值和最大值是存在的.\n不妨设 $x_1 \\leqslant x_2 \\leqslant \\cdots \\leqslant x_{40}$, 若 $x_1>1$, 则 $x_1+x_2=\\left(x_1-1\\right)+\\left(x_2+1\\right)$, 且\n$$\n\\left(x_1-1\\right)^2+\\left(x_2+1\\right)^2=x_1^2+x_2^2+2\\left(x_2-x_1\\right)+2>x_1^2+x_2^2 .\n$$\n所以,当 $x_1>1$ 时, 可以把 $x_1$ 逐步调整到 1 , 这时, $x_1^2+x_2^2+\\cdots+x_{40}^2$ 将增大; 同样地, 可以把 $x_2, x_3, \\cdots, x_{39}$ 逐步调整到 1 , 这时 $x_1^2+x_2^2+\\cdots+x_{40}^2$ 将增大.\n于是, 当 $x_1, x_2, \\cdots, x_{39}$ 均为 $1, x_{40}=19$ 时, $x_1^2+x_2^2+\\cdots+x_{40}^2$ 取得最大值, 即\n$$\nA=\\underbrace{1^2+1^2+\\cdots+1^2}_{39 \\uparrow}+19^2=400 .\n$$\n若存在两个数 $x_i, x_j$, 使得 $x_j-x_i \\geqslant 2(1 \\leqslant i<j \\leqslant 40)$, 则\n$$\n\\left(x_i+1\\right)^2+\\left(x_j-1\\right)^2=x_i^2+x_j^2-2\\left(x_j-x_i-1\\right)<x_i^2+x_j^2,\n$$\n这说明在 $x_1, x_2, \\cdots, x_{39}, x_{40}$ 中, 如果有两个数的差大于 1 , 则把较小的数加 1 , 较大的数减 1 , 这时, $x_1^2+x_2^2+\\cdots+x_{40}^2$ 将减小.\n所以, 当 $x_1^2+x_2^2+\\cdots+x_{40}^2$ 取到最小时, $x_1, x_2, \\cdots, x_{40}$ 中任意两个数的差都不大于 1 . 于是当 $x_1=x_2=\\cdots=x_{22}=1, x_{23}=x_{24}=\\cdots=x_{40}=2$ 时, $x_1^2+x_2^2+\\cdots+x_{40}^2$ 取得最小值, 即\n$$\nB=\\underbrace{1^2+1^2+\\cdots+1^2}_{22 \\uparrow}+\\underbrace{2^2+2^2+\\cdots+2^2}_{18 \\uparrow}=94 \\text {. }\n$$\n故 $A+B=494$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 如图(<FilePath:./images/volume7/figures/fig-c8p3.png>), 凸四边形 $A B C D$ 的一组对边 $B A$ 和 $C D$ 的延长线交于 $M$, 且 $A D$ 不平行于 $B C$, 过 $M$ 作截线交另一组对边所在直线于 $H 、 L$, 交对角线所在直线于 $H^{\\prime} 、 L^{\\prime}$. 求证: $\\frac{1}{M H}+\\frac{1}{M L}=\\frac{1}{M H^{\\prime}}+\\frac{1}{M L}$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c8a3.png>), 延长 $B C 、 A D$ 交于 $P$, 设 $B D 、 A C$ 交于 $Q$, 连结 $M P, P Q$ 分别与 $M C, M L$ 交于 $N$ 、 $K$,连结 $M Q$ 交 $B C$ 于 $R$. 交 $A D$ 于 $T$.\n由完全四边形的性质知, $M 、 Q 、 T 、 R$ 成调和点列, 考虑过 $P$ 点的四条直线 $P M 、 P A 、 P K$ 、 $P B$ 构成的直线束.\n由上述引理知 $M 、 K 、 H 、 L$ 成调和点列.\n所以\n$$\n\\frac{1}{M H}+\\frac{1}{M L}=\\frac{2}{M K} \\text { (调和点列的性质) } \\cdots \\text { (1). }\n$$\n同理, $B 、 C 、 R 、 P$ 为调和点列, 考虑过 $Q$ 的四条直线 $Q B 、 Q C 、 Q R 、 Q P$ 构成的直线束.\n现 $M L$ 去截直线束, 由上述引理知, $L^{\\prime} 、 H^{\\prime} 、 M 、 K$ 也成调和点列, 即 $M 、 K 、 L^{\\prime} 、 H^{\\prime}$ 也成调和点列.\n所以 $\\frac{1}{M L^{\\prime}}+\\frac{1}{M H^{\\prime}}=\\frac{2}{M K} \\cdots$ (2).\n由(1)、(2)知: $\\frac{1}{M H}+\\frac{1}{M L}=\\frac{1}{M H^{\\prime}}+\\frac{1}{M L^{\\prime}}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8p3.png",
+        "./images/volume7/figures/fig-c8a3.png"
+    ]
+}

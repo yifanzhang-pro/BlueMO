@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例23. 设 $a_i>0$, 且 $\\sum_{i=1}^n a_i=k$, 求证:\n$$\n\\sum_{i=1}^n\\left(a_i+\\frac{1}{a_i}\\right)^2 \\geqslant n\\left(\\frac{n^2+k^2}{n k}\\right)^2 .\n$$",
+    "solution": "证明:由柯西不等式, 得\n$$\n\\begin{aligned}\n& \\left(1^2+1^2+\\cdots+1^2\\right) \\sum_{i=1}^n\\left(a_i+\\frac{1}{a_i}\\right)^2 \\\\\n\\geqslant & {\\left[\\sum_{i=1}^n\\left(a_i+\\frac{1}{a_i}\\right)\\right]^2=\\left(k+\\sum_{i=1}^n \\frac{1}{a_i}\\right)^2 } \\\\\n\\geqslant & \\left(k+\\frac{n^2}{\\sum_{i=1}^n a_i}\\right]^2=\\left(\\frac{k^2+n^2}{k}\\right)^2,\n\\end{aligned}\n$$\n所以\n$$\n\\sum_{i=1}^n\\left(a_i+\\frac{1}{a_i}\\right)^2 \\geqslant n\\left(\\frac{n^2+k^2}{n k}\\right)^2 .\n$$\n利用变形的赫尔得不等式可以证明下列不等式.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题7. 在集合 $X=\\{1,2, \\cdots, 50\\}$ 的子集 $S$ 中, 任何两个元素的平方和不是 7 的倍数, 求 $|S|$ 的最大值.",
+    "solution": "将 $X$ 划分为 2 个子集: $A_1=\\{x \\mid x \\equiv 0(\\bmod 7), x \\in X\\}, A_2= X \\backslash A_1$. 则 $\\left|A_1\\right|=7,\\left|A_2\\right|=43$. 显然, $S$ 最多含有 $A_1$ 中的 1 个数, 于是 $|S| \\leqslant 43+1=44$. 另一方面, 对任何整数 $x$, 若 $x \\equiv 0 、 \\pm 1 、 \\pm 2 、 \\pm 3(\\bmod 7)$, 则 $x^2 \\equiv 0 、 1 、 4 、 2(\\bmod 7)$, 由此可见, 如果 $x^2+y^2 \\equiv 0(\\bmod 7)$, 则 $x^2 \\equiv y^2 \\equiv 0(\\bmod 7)$, 于是, 令 $S=A_2 \\cup\\{7\\}$, 则 $S$ 合乎要求, 此时 $|S|=44$. 故 $|S|$ 的最大值为 44 .",
+    "remark": "",
+    "figures": []
+}

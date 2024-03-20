@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题29 试求正整数 $k$, 使 $f(x)=\\sin k x \\cdot \\sin ^k x+\\cos k x \\cdot \\cos ^k x-\\cos ^k 2 x$ 的值不依赖于 $x$.",
+    "solution": "若 $f(x)$ 的值不依赖于 $x$, 即 $f(x)$ 为常数.\n由 $f(0)=0$, 得 $f(x)=0$, 取 $x=\\frac{\\pi}{k}$, 得 $f\\left(\\frac{\\pi}{k}\\right)=-\\cos ^k \\frac{\\pi}{k}-\\cos ^k \\frac{2 \\pi}{k}=0$, 若 $k$ 为正偶数, 则 $\\cos ^k \\frac{\\pi}{k} \\geqslant 0$, $\\cos ^k \\frac{2 \\pi}{k} \\geqslant 0$, 从而 $\\cos \\frac{\\pi}{k}=\\cos \\frac{2 \\pi}{k}=0$, 此时无解; 若 $k$ 为正奇数, 则由 $\\cos ^k \\frac{\\pi}{k}= -\\cos ^k \\frac{2 \\pi}{k}$, 得 $\\cos \\frac{\\pi}{k}=-\\cos \\frac{2 \\pi}{k}$, 所以 $\\frac{2 \\pi}{k}=2 n \\pi \\pm\\left(\\pi-\\frac{\\pi}{k}\\right)$,即 $\\frac{3}{k}=2 n \\neq 1$ 或 $\\frac{1}{k}=2 n-1$,故 $k=\\frac{3}{2 n+1}$ 或 $\\frac{1}{2 n-1}$, 从而 $k=1$ 或 3 , 但 $k=1$ 时, $f(x)$ 不为常数, $k=3$ 时, $f(x)$ 为常数, 所以 $k=3$.",
+    "remark": "",
+    "figures": []
+}

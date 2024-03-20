@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题1 方格表中具有公共点的小方格称为相邻的.\n试问, 在 $n \\times n(n \\geqslant 2)$ 的方格表中共有多少对相邻的小方格?",
+    "solution": "可将相邻方格对分为 3 类: 坚向相邻对, 横向相邻对, 斜向相邻对 (如图(<FilePath:./images/volume1/figures/fig-c9p1.png>)). 易知, 坚向相邻对与横向相邻对各有 $n(n-1)$ 个; 斜向相邻对有 $2(n-1)^2$ 个.\n故共有相邻的小方格 $2 n(n-1)+2(n-1)^2=2(n-1)(2 n-1)$ 个.",
+    "remark": "",
+    "figures": [
+        "./images/volume1/figures/fig-c9p1.png"
+    ]
+}

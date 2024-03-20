@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 已知 $|\\vec{a}|=\\sqrt{2},|\\vec{b}|=3, \\vec{a}$ 与 $\\vec{b}$ 的夹角为 $45^{\\circ}$, 求使 $\\vec{a}+\\lambda \\vec{b}$ 与 $\\lambda \\vec{a}+\\vec{b}$ 的夹角为锐角时, $\\lambda$ 的取值范围.",
+    "solution": "由题意得 $(\\vec{a}+\\lambda \\vec{b}) \\cdot(\\lambda \\vec{a}+\\vec{b})>0$, 则\n$$\n\\lambda \\vec{a}^2+\\left(\\lambda^2+1\\right) \\vec{a} \\cdot \\vec{b}+\\lambda \\vec{b}^2>0 .\n$$\n又 $\\vec{a} \\cdot \\vec{b}=|\\vec{a}||\\vec{b}| \\cos 45^{\\circ}=3$, 于是\n$$\n3 \\lambda^2+11 \\lambda+3>0 .\n$$\n解得 $\\lambda<\\frac{-11-\\sqrt{85}}{6}$ 或 $\\lambda>\\frac{-11+\\sqrt{85}}{6}$.",
+    "remark": "",
+    "figures": []
+}

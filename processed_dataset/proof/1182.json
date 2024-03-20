@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 设 $a, b, c$ 为正数,且 $a+b+c=3$. 求证:\n$$\n\\sqrt{a}+\\sqrt{b}+\\sqrt{c} \\geqslant a b+b c+c a .\n$$",
+    "solution": "由条件等式有 $(a+b+c)^2=9$. 于是 $a b+b c+c a=\\frac{9-a^2-b^2-c^2}{2}$. 只需证明 $2 \\sqrt{a}+2 \\sqrt{b}+2 \\sqrt{c}+a^2+b^2+c^2 \\geqslant 9$ 为此先证 $2 \\sqrt{a}+a^2 \\geqslant 3 a$. 事实上, $2 \\sqrt{a}+a^2=\\sqrt{a}+\\sqrt{a}+a^2 \\geqslant 3 \\sqrt[3]{a^3}=3 a$. 类似可得其余两个不等式, 从而就有 $2 \\sqrt{a}+2 \\sqrt{b}+2 \\sqrt{c}+a^2+b^2+c^2 \\geqslant 3(a+b+c)=9$.",
+    "remark": "",
+    "figures": []
+}

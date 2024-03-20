@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 路求所有的正整数 $n$, 使得由 $n-1$ 个数码 1 与一个数码 7 构成的十进制整数, 都是素数.",
+    "solution": "由 $n-1$ 个数码 1 与一个数码 7 构成的正整数 $N$ 可表示为形式 $N= A_n+6 \\times 10^k$, 这里 $0 \\leqslant k \\leqslant n-1, A_n$ 是由 $n$ 个 1 所构成的整数.\n当 $3 \\mid n$ 时, $A_n$ 的数码之和被 3 整除, 故 $3 \\mid A_n$,于是 $3 \\mid N$, 但 $N>3$, 故此时 $N$ 不是素数.\n现在设 $3 \\nmid n$. 注意 $10^6 \\equiv 1(\\bmod 7)$, 我们因此将 $n$ 模 6 分类, 来讨论 $A_n$ 模 7 的值 $(n \\equiv 0,3(\\bmod 6)$ 的情形已不必考虑). 易于得知, 对 $l \\geqslant 0$,\n$$\n\\begin{aligned}\nA_{6 l+1} & =\\frac{1}{9} \\times\\left(10^{6 l+1}-1\\right)=\\frac{1}{9} \\times\\left(10^{6 l}-1\\right) \\times 10+\\frac{1}{9} \\times(10-1) \\\\\n& \\equiv 1(\\bmod 7), \\\\\nA_{6 l+2} & \\equiv 4, A_{6 l+4} \\equiv 5, A_{6 l+5} \\equiv 2(\\bmod 7) .\n\\end{aligned}\n$$\n此外, $10^0, 10^2, 10^4, 10^5$ 模 7 依次同余于 $1,2,4,5$. 因而当 $n>6$ 时, 按 $n \\equiv 1,2,4,5(\\bmod 6)$, 分别取 $k=0,4,5,2$, 即知\n$$\nN=A_n+6 \\times 10^k \\equiv A_n-10^k \\equiv 0(\\bmod 7),\n$$\n故 $N$ 不是素数, 从而大于 5 的 $n$ 均不合要求.\n在 $n \\leqslant 5$ 时, 不难验证只有 $n=$ 1,2 合要求.",
+    "remark": "",
+    "figures": []
+}

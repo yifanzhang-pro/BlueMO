@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例3. 已知正项数列 $\\left\\{a_n\\right\\}$ 对 $n \\in \\mathbf{N}_{+}$都有 $a_n^2 \\leqslant a_n-a_{n+1}$ 成立.\n求证: $a_n<\\frac{1}{n}$.",
+    "solution": "证法 1 首先, 由 $a_{n+1} \\leqslant a_n-a_n^2=a_n\\left(1-a_n\\right)$ 以及 $\\left\\{a_n\\right\\}$ 每一项恒正, 有:\n$$\na_n\\left(1-a_n\\right)>0 \\Rightarrow 0<a_n<1 \\text {. }\n$$\n下面我们用数学归纳法证明: $a_n<\\frac{1}{n}$.\n当 $n=1$ 时,命题显然成立.\n当 $n=2$ 时, 如果 $\\frac{1}{2} \\leqslant a_1<1$, 那么有 $0<1-a_1 \\leqslant \\frac{1}{2}$; 如果 $0<a_1<\\frac{1}{2}$, 那么有 $\\frac{1}{2}<1-a_1<1$. 因此总有 $a_2 \\leqslant a_1\\left(1-a_1\\right)<\\frac{1}{2}$. 所以命题也成立.\n现在假设当 $n=k$ 时, $a_k<\\frac{1}{k}(k \\geqslant 2)$ 成立.\n那么, 当 $n=k+1$ 时,\n$$\na_{k+1} \\leqslant a_k-a_k^2=\\frac{1}{4}-\\left(a_k-\\frac{1}{2}\\right)^2 .\n$$\n因为 $0<a_k<\\frac{1}{k}$, 所以\n$$\n\\begin{gathered}\n-\\frac{1}{2}<a_k-\\frac{1}{2}<\\frac{1}{k}-\\frac{1}{2} \\leqslant 0 . \\\\\n0<\\frac{1}{4}-\\left(a_k-\\frac{1}{2}\\right)^2<-\\frac{1-k}{k^2}<\\frac{k-1}{k^2-1}=\\frac{1}{k+1} .\n\\end{gathered}\n$$\n即 $a_{k+1}<\\frac{1}{k+1}$, 命题对 $k+1$ 也成立.\n综上所述, 对一切 $n \\in \\mathbf{N}_{+}$, 有 $a_n<\\frac{1}{n}$.\n说明本题在 $k$ 推 $k+1$ 时可以使用不同的方法.",
+    "remark": "",
+    "figures": []
+}

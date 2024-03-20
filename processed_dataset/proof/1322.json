@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例11. 设 $a_1, a_2, \\cdots, a_n$ 为正实数, 满足 $a_1+a_2+\\cdots+a_n=\\frac{1}{a_1}+ \\frac{1}{a_2}+\\cdots+\\frac{1}{a_n}$. 求证:\n$$\n\\frac{1}{n-1+a_1}+\\frac{1}{n-1+a_2}+\\cdots+\\frac{1}{n-1+a_n} \\geqslant 1 .\n$$",
+    "solution": "证明:令 $b_i=\\frac{1}{n-1+a_i}, i=1,2, \\cdots, n$, 则 $b_i<\\frac{1}{n-1}$, 且\n$$\na_i=\\frac{1-(n-1) b_i}{b_i}, i=1,2, \\cdots, n \\text {. }\n$$\n故条件转化为\n$$\n\\sum_{i=1}^n \\frac{1-(n-1) b_i}{b_i}=\\sum_{i=1}^n \\frac{b_i}{1-(n-1) b_i} .\n$$\n下面用反证法, 假设\n$$\nb_1+b_2+\\cdots+b_n<1 . \\label{(1)}\n$$\n由 Cauchy 不等式可得\n$$\n\\sum_{j \\neq i}\\left(1-(n-1) b_j\\right) \\cdot \\sum_{j \\neq i} \\frac{1}{1-(n-1) b_j} \\geqslant(n-1)^2,\n$$\n由(1),\n$$\n\\sum_{j \\neq i}\\left(1-(n-1) b_j\\right)<(n-1) b_i,\n$$\n所以\n$$\n\\sum_{j \\neq i} \\frac{1}{1-(n-1) b_j}>\\frac{n-1}{b_i},\n$$\n故 $\\quad \\sum_{j \\neq i} \\frac{1-(n-1) b_i}{1-(n-1) b_j}>(n-1) \\cdot \\frac{1-(n-1) b_i}{b_i}$.\n上式对 $i=1,2, \\cdots, n$ 求和, 有即\n$$\n\\begin{gathered}\n\\sum_{i=1}^n \\sum_{j \\neq i} \\frac{1-(n-1) b_i}{1-(n-1) b_j}>(n-1) \\sum_{i=1}^n \\frac{1-(n-1) b_i}{b_i}, \\\\\n\\sum_{j=1}^n \\sum_{j \\neq i} \\frac{1-(n-1) b_i}{1-(n-1) b_j}>(n-1) \\sum_{i=1}^n \\frac{1-(n-1) b_i}{b_i}, \\label{(2)}\n\\end{gathered}\n$$\n而由(1),\n$$\n\\sum_{i \\neq j}\\left(1-(n-1) b_i\\right)<b_j(n-1),\n$$\n故利用(2),有\n$$\n(n-1) \\sum_{j=1}^n \\frac{b_j}{1-(n-1) b_j}>(n-1) \\sum_{i=1}^n \\frac{1-(n-1) b_i}{b_i} .\n$$\n矛盾!",
+    "remark": "",
+    "figures": []
+}

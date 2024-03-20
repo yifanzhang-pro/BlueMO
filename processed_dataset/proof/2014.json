@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter11.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设 $d$ 是一个四面体的三组相对棱距离的最小值, $h$ 是四面体的最小高, 求证:\n$$\n2 d>h\n$$",
+    "solution": "分析:本例是一个典型的立体几何问题, 解决的关键是寻找或者确定一个数量关系比较集中的平面, 从而将问题化归为平面问题来处理.\n证明如图(<FilePath:./images/volume9/figures/fig-c11i1.png>). 不妨设 $A H=h, A C$ 与 $B D$ 的距离为 $d$. 现作 $A F 、 C N$ 分别垂直 $B D$ 于 $F 、 N$, 显然\n$$\nH F / / C N \\text {, }\n$$\n于是可在平面 $B C D$ 内作矩形 $F E C N$.\n现考虑 $\\triangle A E F, A H$ 为其边 $E F$ 上的高, 边 $A E$ 上的高 $F G=d$, 高 $E M$ 为 $C$ 到面 $A B D$ 的距离, 因此 $E M \\geqslant A H$.\n这样一来, 题中的数量关系都集中到了平面 $A E F$ 内, 问题就转化为一个平面几何问题.\n即在 $\\triangle A E F$ 中求证 $\\frac{A H}{F G}<2$.\n这是不难的, 事实上由 $A H \\leqslant E M$ 可知\n$$\nA F \\leqslant E F .\n$$\n再注意到 $\\triangle A E H \\backsim \\triangle F E G$, 便有\n$$\n\\frac{h}{d}=\\frac{A H}{F G}=\\frac{A E}{E F}<\\frac{(A F+E F)}{E F} \\leqslant 2 .\n$$",
+    "remark": "注:本例的结果实际上给出了四面体宽度的最好的下界估计(常数 2 是最佳的), 这个结果被袁淑峰和笔者推广到了一般的 $n$ 维单形.\n般 $n$ 维单形宽度的严格上界估计已由杨路、张景中两位先生得到, 对于四面体, 这个结果就是\n$$\nd \\leqslant \\frac{9 \\sqrt{6}}{2} \\sqrt{\\sum_{i=1}^4 \\frac{1}{h_i^2}},\n$$\n等号成立当且仅当这个四面体为正四面体, 由此还可推出 \"一切维数相同体积相等的四面体中, 正四面体具有最大的宽度\". 有兴趣的读者可参看论文 \"杨路, 张景中.\n度量方程用于 Sallee 猜想.",
+    "figures": [
+        "./images/volume9/figures/fig-c11i1.png"
+    ]
+}

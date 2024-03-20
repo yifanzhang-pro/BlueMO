@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $x_1, x_2, x_3, y_1, y_2, y_3 \\in \\mathbf{R}$, 且满足 $x_1^2+x_2^2+x_3^2 \\leqslant 1$, 求证:\n$$\n\\begin{aligned}\n& \\left(x_1 y_1+x_2 y_2+x_3 y_3-1\\right)^2 \\\\\n\\geqslant & \\left(x_1^2+x_2^2+x_3^2-1\\right)\\left(y_1^2+y_2^2+y_3^2-1\\right) .\n\\end{aligned}\n$$",
+    "solution": "证明:当 $x_1^2+x_2^2+x_3^2=1$ 时,原不等式显然成立.\n当 $x_1^2+x_2^2+x_3^2<1$ 时, 构造二次函数\n$$\n\\begin{aligned}\nf(t) & =\\left(x_1^2+x_2^2+x_3^2-1\\right) t^2-2\\left(x_1 y_1+x_2 y_2+x_3 y_3-1\\right) t+\\left(y_1^2+y_2^2+y_3^2-1\\right) \\\\\n& =\\left(x_1 t-y_1\\right)^2+\\left(x_2 t-y_2\\right)^2+\\left(x_3 t-y_3\\right)^2-(t-1)^2\n\\end{aligned}\n$$\n这是一个开口向下的抛物线, 又因为\n$$\nf(1)=\\left(x_1-y_1\\right)^2+\\left(x_2-y_2\\right)^2+\\left(x_3-y_3\\right)^2 \\geqslant 0,\n$$\n所以,此抛物线的图象与 $x$ 轴一定有交点,从而\n$$\n\\Delta=4\\left(x_1 y_1+x_2 y_2+x_3 y_3-1\\right)^2-4\\left(x_1^2+x_2^2+x_3^2-1\\right)\\left(y_1^2+y_2^2+y_3^2-1\\right) \\geqslant 0,\n$$\n故\n$$\n\\begin{aligned}\n& \\left(x_1 y_1+x_2 y_2+x_3 y_3-1\\right)^2 \\\\\n\\geqslant & \\left(x_1^2+x_2^2+x_3^2-1\\right)\\left(y_1^2+y_2^2+y_3^2-1\\right) .\n\\end{aligned}\n$$\n说明对于要证明 \" $A \\cdot C \\geqslant($ 或 $\\leqslant) B^2$ \" 这类不等式, 我们先把不等式变形为\n$$\n4 A \\cdot C \\geqslant(\\text { 或 } \\leqslant)(2 B)^2,\n$$\n然后构造一个二次函数 $f(x)=A x^2-(2 B) x+C$, 再设法证明其判别式 $\\Delta \\leqslant$ 0 (或 $\\geqslant 0)$.",
+    "remark": "",
+    "figures": []
+}

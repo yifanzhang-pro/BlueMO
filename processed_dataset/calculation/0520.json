@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例17 求函数 $y=\\sqrt{2 x^2-3 x+1}+\\sqrt{x^2}-2 x$ 的最小值.",
+    "solution": "解:先求定义域,再研究函数的单调区间.\n易知定义域为 $(-\\infty, 0] \\cup[2,+\\infty)$.\n因为 $2 x^2-3 x+1$ 在 $(-\\infty, 0]$ 上递减, 在 $[2,+\\infty)$ 上递增, 所以 $\\sqrt{2 x^2-3 x+1}$ 在 $(-\\infty, 0]$ 上递减, 在 $[2,+\\infty)$ 上递增.\n同理, $\\sqrt{x^2-} \\overline{2 x}$ 在 $(-\\infty, 0]$ 上递减, 在 $[2,+\\infty)$ 上递增.\n所以 $y==\\sqrt{2 x^2-3 x+1}+\\sqrt{x^2-2 x}$ 在 $(-\\infty, 0]$ 上递减, 在 $[2,+\\infty)$ 上递增.\n所以 $y_{\\min }=\\min \\{f(0), f(2)\\}=\\min \\{\\sqrt{1}, \\sqrt{8-6+1}\\}=1$.\n所以 $y_{\\text {min }}=1$ (在 $x=0$ 时取到).\n说明本题的函数可看成两个函数的和, 而这两个函数在定义域内的单调性是一致的,利用“单调性一致的两个函数的和仍具有相同单调性”这一性质求出各个单调区间上的最小值, 再比较得出结论.",
+    "remark": "",
+    "figures": []
+}

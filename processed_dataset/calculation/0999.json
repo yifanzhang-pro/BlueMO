@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 在 3 条边长为 1 、一个内角是 $30^{\\circ}$ 的四边形中, 找出具有最大面积 $S$ 的四边形, 并求出 $S$.",
+    "solution": "设四边形的三边 $A B=B C=C D=1$, 显然具有最大面积的四边形为凸四边形.\n由对称性, 可只考虑 $\\angle A$ 或 $\\angle B$ 等于 $30^{\\circ}$ 的情形.\n(1) 若 $\\angle B=30^{\\circ}$, 则易知这时四边形 $A B C D$ 的最大值 $S_1=\\frac{\\sqrt{6}-\\sqrt{2}+1}{4}$. (2) 若 $\\angle A=30^{\\circ}$, 作 $B 、 C$ 关于直线 $A D$ 的对称点 $B^{\\prime} 、 C^{\\prime}$. 连接 $A B^{\\prime} 、 B^{\\prime} C^{\\prime} 、 C^{\\prime} D 、 B B^{\\prime}$, 则 $\\triangle A B B^{\\prime}$ 是边长为 1 的正三角形, 五边形 $B C D C^{\\prime} B^{\\prime}$ 是边长均为 1 的五边形, 当且仅当它是正五边形时面积取得最大值 $\\frac{\\sqrt{25+10 \\sqrt{5}}}{4}$. 故四边形 $A B C D$ 的最大值 $S_2=\\frac{1}{2}\\left[\\frac{\\sqrt{3}}{4}+\\frac{\\sqrt{25+10 \\sqrt{5}}}{4}\\right]=\\frac{\\sqrt{3}}{8}+\\frac{\\sqrt{25+10 \\sqrt{5}}}{8}$. 易知 $S_2>S_1$, 故所求最大值 $S=\\frac{\\sqrt{3}}{8}+\\frac{\\sqrt{25+10 \\sqrt{5}}}{8}$, 且具有最大面积 $S^{\\prime}$ 的四边形 $A B C D$ 中, $\\angle A=30^{\\circ}$, $\\angle B=168^{\\circ}, \\angle C=108^{\\circ}, \\angle D=54^{\\circ}, A B=B C=C D=1$.",
+    "remark": "",
+    "figures": []
+}

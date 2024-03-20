@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例9. 如图(<FilePath:./images/volume7/figures/fig-c9i14.png>),已知圆 $O$ 中, $C G$ 为直径, 过点 $G$ 作一条直线.\n在直线上截取 $A G=B G(A$, $B$ 均在圆外). 连结 $A C, B C$. 分别交圆 $O$ 于点 $D$, $E$. 过 $D, E$ 分别作圆 $O$ 切线.\n交于一点 $P$, 连结 $P G$. 求证: $P G$ 垂直于 $A B$.",
+    "solution": "证明:过 $C$ 作 $A B$ 平行线交圆 $O$ 于 $Y$, 过 $G$ 做圆 $O$ 切线交直线 $D E$ 于 $X$,则 $X$ 在 $G$ 的极线即过 $G$ 的切线上, $X$ 还在 $P$ 的极线 $D E$ 上,所以 $X$ 的极线过 $G 、 P$, 又 $A G=G B$, 故 $A 、 B, G 、 \\infty$ 成调和点列, 所以 $C A 、 C B 、 C G 、 C \\infty$ 成调和线束,于是 $D G E Y$ 是调和四边形.\n从而 $X Y$ 是切线, 即 $X$ 在 $Y$ 的极线上, 那么 $X$ 的极线 $G P$ 过 $Y$ 点, 结合 $G Y$ 垂直于 $C Y$, 即 $P G$ 垂直于 $A B$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9i14.png"
+    ]
+}

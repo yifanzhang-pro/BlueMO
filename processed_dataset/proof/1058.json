@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题23. 如果 $x, y, z>1$, 且 $\\frac{1}{x}+\\frac{1}{y}+\\frac{1}{z}=2$, 证明:\n$$\n\\sqrt{x+y+z} \\geqslant \\sqrt{x-1}+\\sqrt{y-1}+\\sqrt{z-1} .\n$$",
+    "solution": "设 $\\alpha, \\beta, \\gamma \\in\\left(0, \\frac{\\pi}{2}\\right)$, 则有 $0<\\cos ^2 \\alpha, \\cos ^2 \\beta, \\cos ^2 \\gamma<1$, 且 $\\frac{1}{\\cos ^2 \\alpha}>1, \\frac{1}{\\cos ^2 \\beta}>1, \\frac{1}{\\cos ^2 \\gamma}>1$, 令 $x=\\frac{1}{\\cos ^2 \\alpha}, y=\\frac{1}{\\cos ^2 \\beta}, z=\\frac{1}{\\cos ^2 \\gamma}$, 则 $\\frac{1}{x}+\\frac{1}{y}+ \\frac{1}{z}=\\cos ^2 \\alpha+\\cos ^2 \\beta+\\cos ^2 \\gamma=2$. 即 $\\sin ^2 \\alpha+\\sin ^2 \\beta+\\sin ^2 \\gamma=1 \\cdots$ (1). 待证的不等\n(1) 式, 对 (2) 式用柯西不等式有 $\\frac{\\sin \\alpha}{\\cos \\alpha}+\\frac{\\sin \\beta}{\\cos \\beta}+\\frac{\\sin \\gamma}{\\cos \\gamma} \\leqslant \\sqrt{\\sin ^2 \\alpha+\\sin ^2 \\beta+\\sin ^2 \\gamma} \\sin \\alpha \\cos \\alpha=\\sin \\beta \\cos \\beta=\\sin \\gamma \\cos \\gamma$. 即 $\\alpha=\\beta=\\gamma$ 时 (3) 等号成立,故 (2) 式成立, 所以原不等式得证.\n评注此题解三角代换 $x=\\frac{1}{\\sin ^2 \\alpha}, y=\\frac{1}{\\sin ^2 \\beta}, z=\\frac{1}{\\sin ^2 \\gamma}$ 证法一样.",
+    "remark": "",
+    "figures": []
+}

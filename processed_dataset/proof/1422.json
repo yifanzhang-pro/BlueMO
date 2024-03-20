@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设实数 $a 、 b 、 c 、 d 、 p 、 q$ 满足:\n$$\na b+c d=2 p q, a c \\geqslant p^2>0,\n$$\n求证: $b d \\leqslant q^2$.",
+    "solution": "如果 $b d>q^2$, 则 $4 a b c d=4(a c)(b d)>4 p^2 q^2=(a b+c d)^2=a^2 b^2+ 2 a b c d+c^2 d^2$, 故 $(a b-c d)^2<0$. 矛盾!",
+    "remark": "",
+    "figures": []
+}

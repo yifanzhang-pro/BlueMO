@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题23 证明下列恒等式:\n(1) $\\tan \\frac{3 x}{2}-\\tan \\frac{x}{2}=\\frac{2 \\sin x}{\\cos x+\\cos 2 x}$;\n(2) $\\frac{\\sin ^2 A-\\sin ^2 B}{\\sin A \\cos A-\\sin B \\cos B}=\\tan (A+B)$.",
+    "solution": "(1) 左边 $=\\frac{\\sin \\frac{3 x}{2}}{\\cos \\frac{3 x}{2}}-\\frac{\\sin \\frac{x}{2}}{\\cos \\frac{x}{2}}=\\frac{\\sin \\frac{3 x}{2} \\cos \\frac{x}{2}-\\sin \\frac{x}{2} \\cos \\frac{3 x}{2}}{\\cos \\frac{3}{2} x \\cos \\frac{x}{2}}=\\frac{\\sin \\left(\\frac{3}{2} x-\\frac{x}{2}\\right)}{\\frac{1}{2}(\\cos x+\\cos 2 x)}=\\frac{2 \\sin x}{\\cos x+\\cos 2 x}=$ 右边.\n(2) 左边 $=\\frac{\\frac{1}{2}(1-\\cos 2 A)-\\frac{1}{2}(1-\\cos 2 B)}{\\frac{1}{2} \\sin 2 A-\\frac{1}{2} \\sin 2 B}=\\frac{\\cos 2 B-\\cos 2 A}{\\sin 2 A-\\sin 2 B} =\\frac{-2 \\sin (A+B) \\sin (B-A)}{2 \\cos (A+B) \\sin (A-B)}=\\tan (A+B)=$ 右边.",
+    "remark": "",
+    "figures": []
+}

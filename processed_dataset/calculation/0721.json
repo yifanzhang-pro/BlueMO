@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题18 计算 $\\tan 5^{\\circ}+\\cot 5^{\\circ}-\\frac{2}{\\cos 80^{\\circ}}=$",
+    "solution": "0 . 原式 $=\\frac{\\sin 5^{\\circ}}{\\cos 5^{\\circ}}+\\frac{\\cos 5^{\\circ}}{\\sin 5^{\\circ}}-\\frac{2}{\\cos 80^{\\circ}}=\\frac{\\sin ^2 5^{\\circ}+\\cos ^2 5^{\\circ}}{\\sin 5^{\\circ} \\cos 5^{\\circ}}-\\frac{2}{\\cos 80^{\\circ}}= \\frac{2}{\\sin 10^{\\circ}}-\\frac{2}{\\sin 10^{\\circ}}=0$.",
+    "remark": "",
+    "figures": []
+}

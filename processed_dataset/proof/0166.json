@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $k$ 为正奇数,证明: $1+2+\\cdots+n$ 整除 $1^k+2^k+\\cdots+n^k$.",
+    "solution": "证明:因为 $1+2+\\cdots+n=\\frac{n(n+1)}{2}$, 故问题等价于证明: $n(n+1)$ 整除 $2\\left(1^k+2^k+\\cdots+n^k\\right)$. 因 $n$ 与 $n+1$ 互素, 所以这又等价于证明\n$$\nn \\mid 2\\left(1^k+2^k+\\cdots+n^k\\right)\n$$\n及\n$$\n(n+1) \\mid 2\\left(1^k+2^k+\\cdots+n^k\\right) .\n$$\n事实上,由于 $k$ 为奇数,故由第 1 单元中分解公式 (6), 可知\n$$\n\\begin{aligned}\n& 2\\left(1^k+2^k+\\cdots+n^k\\right) \\\\\n= & {\\left[1^k+(n-1)^k\\right]+\\left[2^k+(n-2)^k\\right]+\\cdots+\\left[(n-1)^k+1^k\\right]+2 n^k }\n\\end{aligned}\n$$\n是 $n$ 的倍数.\n同理,\n$$\n2\\left(1^k+2^k+\\cdots+n^k\\right)=\\left[1^k+n^k\\right]+\\left[2^k+(n-1)^k\\right]+\\cdots+\\left[n^k+1^k\\right]\n$$\n是 $n+1$ 的倍数.",
+    "remark": "注:整除问题中, 有时直接证明 $b \\mid a$ 不易人手.\n若 $b$ 可分解为 $b=b_1 b_2$, 其中 $\\left(b_1, b_2\\right)=1$, 则我们可将原命题 $b \\mid a$ 分解为等价的两个命题 $b_1 \\mid a$ 及 $b_2 \\mid a$, 后者可能更容易导出来.\n例 7 应用了这一基本手法, 例 6 中证明 $a_1 b_1 \\mid c$ 也是这样做的.\n更一般地, 为了证明 $b \\mid a$, 可将 $b$ 分解为若干个两两互素的整数 $b_1$, $b_2, \\cdots, b_n$ 之积, 而证明等价的 $b_i \\mid a(i=1,2, \\cdots, n)$ (参见性质 (11), 并可比较第 1 单元例 3 的注 1 中说的想法).",
+    "figures": []
+}

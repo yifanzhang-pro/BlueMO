@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter2.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 设 $A 、 B$ 都是不超过 9 的正整数组成的全集 $U$ 的子集, $A \\cap B= \\{2\\},\\left(\\complement_U A\\right) \\cap\\left(\\complement_U B\\right)=\\{1,9\\},\\left(\\complement_U A\\right) \\cap B=\\{4,6,8\\}$, 求 $A \\backslash B$.",
+    "solution": "分析:直接进行集合间的运算和推理似乎较难人手, 但我们可从维恩图(<FilePath:./images/volume1/figures/fig-c2e3.png>)中得到解题思路的提示.\n解因为 $\\complement_U(A \\cup B)=\\left(\\complement_U A\\right) \\cap\\left(\\complement_U B\\right)= \\{1,9\\}$, 所以\n$$\nA \\cup B=\\{2,3,4,5,6,7,8\\} .\n$$\n又\n$$\n\\begin{gathered}\nA \\cap B=\\{2\\}, \\\\\n\\left(\\complement_U A\\right) \\cap B=\\{4,6,8\\}, \\\\\nB=U \\cap B=\\left(A \\cup \\complement_U A\\right) \\cap B \\\\\n=(A \\cap B) \\cup\\left(\\left(\\complement_U A\\right) \\cap B\\right) \\\\\n=\\{2,4,6,8\\} .\n\\end{gathered}\n$$\n所以\n$$\n\\begin{aligned}\nB & =U \\cap B=\\left(A \\cup \\complement_U A\\right) \\cap B \\\\\n& =(A \\cap B) \\cup\\left(\\left(\\complement_U A\\right) \\cap B\\right) \\\\\n& =\\{2,4,6,8\\} .\n\\end{aligned}\n$$\n所以, $A \\backslash B=(A \\cup B) \\backslash B=\\{3,5,7\\}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume1/figures/fig-c2e3.png"
+    ]
+}

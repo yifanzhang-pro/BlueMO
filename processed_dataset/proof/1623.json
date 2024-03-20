@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设 $a_1, \\cdots, a_n$ 是一个由非负实数 (不全为零) 组成的数列, 定义\n$$\nm_k=\\max _{1 \\leqslant i \\leqslant k} \\frac{a_{k-i+1}+a_{k-i+2}+\\cdots+a_k}{i}, k=1,2, \\cdots, n .\n$$\n证明: 对任意正实数 $\\mu$, 满足 $m_k>\\mu$ 的下标 $k$ 的个数小于 $\\frac{a_1+a_2+\\cdots+a_n}{\\mu}$.",
+    "solution": "当 $n=1$ 时, $m_1=a_1$, 若 $\\mu \\geqslant a_1$, 则满足 $m_k>\\mu$ 的下标 $k$ 不存在,此时命题显然, 若 $\\mu<a_1$, 恰有一个下标 $k$ 符合要求, 由 $1<\\frac{a_1}{\\mu}$ 知, 命题也成立.\n现设命题对 $1,2, \\cdots, n-1(n \\geqslant 2)$ 都成立, 设 $n$ 时, $r$ 为满足 $m_k>\\mu$ 的下标 $k$ 的个数.\n如果 $m_n \\leqslant \\mu$, 那么对数列 $a_1, \\cdots, a_{n-1}$ 而言, 满足 $m_k>\\mu$ 的下标 $k$ 的个数也为 $r$, 此时由归纳假设知\n$$\nr<\\frac{a_1+\\cdots+a_{n-1}}{\\mu} \\leqslant \\frac{a_1+\\cdots+a_n}{\\mu} .\n$$\n命题对 $n$ 成立.\n如果 $m_n>\\mu$, 那么, 存在 $i \\in\\{1,2, \\cdots, n\\}$, 使得 $\\frac{a_{n-i+1}+\\cdots+a_n}{i}>\\mu$. 对这个 $i$, 就数列 $a_1, a_2, \\cdots, a_{n-i}$ 而言, 至少有 $r-i$ 个下标 $k$ 满足 $m_k>\\mu$, 从而, 由归纳假设知\n$$\nr-i<\\frac{a_1+\\cdots+a_{n-i}}{\\mu}\n$$\n于是\n$$\n\\left(a_1+\\cdots+a_{n-i}\\right)+\\left(a_{n-i+1}+\\cdots+a_n\\right)>(r-i) \\mu+i \\mu=r \\mu,\n$$\n故 $r<\\frac{a_1+a_2+\\cdots+a_n}{\\mu}$.\n命题获证.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例4. 求证: $A 、 B 、 C 、 D$ 共圆的充要条件是: $\\frac{\\left(z_1-z_3\\right)\\left(z_2-z_4\\right)}{\\left(z_1-z_4\\right)\\left(z_2-z_3\\right)}$ 为实数,其中 $z_1 、 z_2 、 z_3 、 z_4$ 分别为 $A 、 B 、 C 、 D$ 所对应的复数.",
+    "solution": "分析:与解易知无论 $A 、 B 、 C 、 D$ 如何在圆上分布, 总有 $\\arg \\left[\\frac{\\left(z_1-z_3\\right)}{\\left(z_1-z_4\\right)} \\frac{\\left(z_2-z_4\\right)}{\\left(z_2-z_3\\right)}\\right]=\\arg \\left(\\frac{z_3-z_1}{z_4-z_1}\\right)-\\arg \\left(\\frac{z_3-z_2}{z_4-z_2}\\right)=0$ 或 $\\pi$. 因此这与 $\\frac{\\left(z_1-z_3\\right)\\left(z_2-z_4\\right)}{\\left(z_1-z_4\\right)\\left(z_2-z_3\\right)}$ 为实数等价, 亦与 $A 、 B 、 C 、 D$ 共圆等价, 证毕.",
+    "remark": "注:根据圆排列的公式, 四个点排列的方式共有 6 种, 如果有兴趣的话, 读者可一一加以验证.",
+    "figures": []
+}

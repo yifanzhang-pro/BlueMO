@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例10. 平面内有 $n(\\geqslant 4)$ 个不同的点, 每两点间连一线段, 已知这些线段中恰有 $n+1$ 条长度等于 $d$ 的线段.\n证明: 其中必有一点, 从它出发的线段中至少有 3 条长度等于 $d$ 的线段.",
+    "solution": "证明:设 $n$ 个点为 $P_1, P_2, \\cdots, P_n$, 从 $P_i$ 出发的线段中恰有 $d_i$ 条长度为 $d$ 的线段 $(i=1,2, \\cdots, n)$, 于是\n$$\n\\begin{aligned}\n& d_1+d_2+\\cdots+d_n=2(n+1), \\\\\n& \\frac{1}{n}\\left(d_1+d_2+\\cdots+d_n\\right)=\\frac{2(n+1)}{n}>2,\n\\end{aligned}\n$$\n故其中必有某个 $d_i \\geqslant 3$, 即从 $P_i$ 出发至少有 3 条长度等于 $d$ 的线段.",
+    "remark": "",
+    "figures": []
+}

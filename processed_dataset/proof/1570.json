@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter2-7.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设 $a 、 b$ 是两个大于 2 的整数.\n证明: 存在正整数 $k$ 及由正整数组成的有穷数列 $n_1, n_2, \\cdots, n_k$, 使得 $n_1=a, n_k=b$, 而对 $1 \\leqslant i \\leqslant k-1$, 都有\n$$\n\\left(n_i+n_{i+1}\\right) \\mid n_i n_{i+1} .\n$$",
+    "solution": "证明:\"我们用 \" $a \\sim b$ \" 表示正整数 $a 、 b$ 可以用上述数列连接, 那么\"若 $a \\sim b$ 成立, 则 $b \\sim a$ 亦成立\".\n一个自然的想法是证明: 任意两个相邻正整数 (都大于 2) 之间是\"可达\" 的.\n利用下面的两个结论可达此目的.\n结论 1 对任意 $n \\in \\mathbf{N}^*, n \\geqslant 3$, 都有 $n \\sim 2 n$.\n下面的数列表明结论 1 成立.\n$$\nn, n(n-1), n(n-1)(n-2), n(n-2), 2 n \\text {. }\n$$\n结论 2 对任意 $n \\in \\mathbf{N}^*, n \\geqslant 4$, 都有 $n \\sim n-1$.\n利用数列\n$$\nn, n(n-1), n(n-1)(n-2), n(n-1)(n-2)(n-3), 2(n-1)(n-2) .\n$$\n结合结论 1 知 $2(n-1)(n-2) \\sim(n-1)(n-2)$, 而 $(n-1)(n-2)+(n-1)= (n-1)^2$ 是 $(n-1)(n-2) \\cdot(n-1)$ 的约数.\n故结论 2 成立.\n对大于 2 的整数 $a 、 b$, 不妨设 $a \\leqslant b$, 如果 $a=b$, 那么利用 $a \\sim a+1 \\sim b(=a)$ 可知命题成立; 如果 $a<b$, 那么利用 $a \\sim a+1 \\sim a+2 \\sim \\cdots \\sim b$ 可知命题亦成立.\n说明解决的关键是对结论 1 和结论 2 的直接构造, 这是处理存在性问题的最自然的思路.",
+    "remark": "",
+    "figures": []
+}

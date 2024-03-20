@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 方程 $x^3+a x^2+b x+c=0$ 的三根 $\\alpha 、 \\beta 、 \\gamma$ 均为实数, 且 $a^2=2 b+2$, 求证: $|a-c| \\leqslant 2$.",
+    "solution": "考察恒等式 $(\\alpha+\\beta+\\gamma-\\alpha \\beta \\gamma)^2=2(\\alpha \\beta-1)(\\beta \\gamma-1)\\left(\\gamma_\\alpha-1\\right)+2- \\alpha^2 \\beta^2 \\gamma^2+\\alpha^2+\\beta^2+\\gamma^2$.",
+    "remark": "",
+    "figures": []
+}

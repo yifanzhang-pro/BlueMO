@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题21. 证明:\n$$\n\\sqrt{\\frac{A B_1}{A B}}+\\sqrt{\\frac{B C_1}{B C}}+\\sqrt{\\frac{C A_1}{C A}} \\leqslant \\frac{3}{\\sqrt{2}},\n$$\n其中, $A_1 、 B_1 、 C_1$ 分别为 $\\triangle A B C$ 的内切圆与边 $B C 、 A C 、 A B$ 的切点.",
+    "solution": "设 $x=A B_1, y=B C_1, z=C A_1$. 要证 $\\sqrt{\\frac{x}{x+y}}+\\sqrt{\\frac{y}{y+z}}+\\sqrt{\\frac{z}{z+x}} \\leqslant \\frac{3}{\\sqrt{2}}$, 即证 $\\frac{1}{\\sqrt{1+a^2}}+\\frac{1}{\\sqrt{1+b^2}}+\\frac{1}{\\sqrt{1+c^2}} \\leqslant \\frac{3}{\\sqrt{2}}$, 其中 $a, b, c$ 为正实数, 且 $a b c=1$. 不妨设 $a b \\leqslant 1$. 由柯西一施瓦兹不等式得 $\\frac{1}{\\sqrt{1+a^2}}+ \\frac{1}{\\sqrt{1+b^2}} \\leqslant \\sqrt{2\\left(\\frac{1}{1+a^2}+\\frac{1}{1+b^2}\\right)}, \\frac{1}{1+a^2}+\\frac{1}{1+b^2}=1+\\frac{1-a^2 b^2}{\\left(1+a^2\\right)\\left(1+b^2\\right)} \\leqslant 1+ \\frac{1-a^2 b^2}{(1+a b)^2}=\\frac{2}{1+a b}, \\frac{1}{\\sqrt{1+c^2}} \\leqslant \\frac{\\sqrt{2}}{1+c}$. 由算术一几何均值不等式得 $\\frac{1}{\\sqrt{1+a^2}}+ \\frac{1}{\\sqrt{1+b^2}}+-\\frac{1}{\\sqrt{1+c^2}} \\leqslant 2 \\sqrt{\\frac{c}{1+c}}+\\frac{\\sqrt{2}}{1+c}=\\frac{\\sqrt{2}}{1+c}[\\sqrt{2 c(c+1)}+1] \\leqslant \\frac{\\sqrt{2}}{1+c}\\left(\\frac{2 c+c+1}{2}+1\\right)==\\frac{3}{\\sqrt{2}}$.",
+    "remark": "",
+    "figures": []
+}

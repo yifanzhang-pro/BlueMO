@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例5. 如图(<FilePath:./images/volume8/figures/fig-c6i5.png>) 所示, 平行六面体 $A B C D- A_1 B_1 C_1 D_1$ 的底面是菱形, 且 $\\angle C_1 C B=\\angle C_1 C D= \\angle B C D=60^{\\circ}$,\n(1) 证明: $C C_1 \\perp B D$;\n(2)当 $\\frac{C D}{C C_1}$ 为何值时 $A_1 C \\perp$ 平面 $C_1 B D$ ?",
+    "solution": "分析:与解 (1) 设 $\\overrightarrow{C D}=\\vec{x}, \\overrightarrow{C B}=\\vec{y}, \\overrightarrow{C C_1}= \\vec{z}$, 且 $|\\vec{x}|=a,|\\vec{y}|=a,|\\vec{z}|=b$, 则 $\\overrightarrow{B D}=\\vec{x}-\\vec{y}$,\n因为 $\\overrightarrow{C C_1} \\cdot \\overrightarrow{B D}=\\vec{z} \\cdot(\\vec{x}-\\vec{y})=\\vec{z} \\cdot \\vec{x}-\\vec{z} \\cdot \\vec{y}=a b \\cos 60^{\\circ}-a b \\cos 60^{\\circ}=0$,\n所以 $C C_1 \\perp B D$, 证毕.\n(2) $\\overrightarrow{C A_1}=\\vec{x}+\\vec{y}+\\vec{z}, \\overrightarrow{C_1 D}=\\vec{x}-\\vec{z}$.\n$$\n\\begin{aligned}\n\\overrightarrow{C A_1} \\cdot \\overrightarrow{C_1 D} & =(\\vec{x}+\\vec{y}+\\vec{z}) \\cdot(\\vec{x}-\\vec{z}) \\\\\n& =\\vec{x}^2-\\vec{x} \\cdot \\vec{z}+\\vec{y} \\cdot \\vec{x}-\\vec{y} \\cdot \\vec{z}+\\vec{z} \\cdot \\vec{x}-\\vec{z}^2 \\\\\n& =a^2+a^2 \\cos 60^{\\circ}-a b \\cos 60^{\\circ}-b^2 \\\\\n& =\\frac{3}{2} a^2-\\frac{1}{2} a b-b^2 \\\\\n& =(a-b)\\left(\\frac{3}{2} a+b\\right) .\n\\end{aligned}\n$$\n又因为 $A_1 C \\perp$ 平面 $C_1 B D$, 所以 $A_1 C \\perp C_1 D$, 即 $\\overrightarrow{C A_1} \\cdot \\overrightarrow{C_1 D}=0$, 且 $a>0$, $b>0$, 所以 $a=b$.\n另一方面,\n$$\n\\begin{aligned}\n\\overrightarrow{C A_1} \\cdot \\overrightarrow{B D} & =(\\vec{x}+\\vec{y}+\\vec{z}) \\cdot(\\vec{x}-\\vec{y}) \\\\\n& =x^2-\\vec{x} \\cdot \\vec{y}+\\vec{y} \\cdot \\vec{x}-\\vec{y}^2+\\vec{z} \\cdot \\vec{x}-\\vec{z} \\cdot \\vec{y} \\\\\n& =a^2-a^2+a b \\cos 60^{\\circ}-a b \\cos 60^{\\circ}=0,\n\\end{aligned}\n$$\n所以当 $\\frac{C D}{C C_1}=1$ 时, $A_1 C \\perp C_1 D$ 且 $A_1 C \\perp B D$ 即 $A_1 C \\perp$ 平面 $C_1 B D$.",
+    "remark": "",
+    "figures": [
+        "./images/volume8/figures/fig-c6i5.png"
+    ]
+}

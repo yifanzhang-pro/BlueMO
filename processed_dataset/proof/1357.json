@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设非负数列 $a_1, a_2, \\cdots$ 满足条件: $a_{m+n} \\leqslant a_n+a_m, m, n \\in \\mathbf{N}_{+}$, 求证: 对任意正整数 $n$, 均有 $a_n \\leqslant m a_1+\\left(\\frac{n}{m}-1\\right) a_m$.",
+    "solution": "证法 2 由条件有 $0 \\leqslant a_n \\leqslant a_{n-1}+a_1 \\leqslant \\cdots \\leqslant n a_1$.\n设 $n=m q+r$, 则\n$$\n\\begin{aligned}\nm a_n & =m a_{m q+r} \\\\\n& \\leqslant m \\cdot a_{m q}+m a_r \\\\\n& \\leqslant m q a_m+m a_r \\\\\n& =(n-r) a_m+m a_r \\\\\n& =(n-m) a_m+(m-r) a_m+m a_r \\\\\n& \\leqslant(n-m) a_m+(m-r) m a_1+m r a_1 \\\\\n& =(n-m) a_m+m^2 a_1 . \\\\\n& a_n \\leqslant m a_1+\\left(\\frac{n}{m}-1\\right) a_m .\n\\end{aligned}\n$$\n因此\n$$\na_n \\leqslant m a_1+\\left(\\frac{n}{m}-1\\right) a_m .\n$$",
+    "remark": "",
+    "figures": []
+}

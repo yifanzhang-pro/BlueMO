@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例1. 证明完全图 $K_5$ 不是平面图.",
+    "solution": "证明:因为 $v=5, e==10$ 不满足 $e \\leqslant 3 v-6$, 所以 $K_5$ 不是平面图.",
+    "remark": "",
+    "figures": []
+}

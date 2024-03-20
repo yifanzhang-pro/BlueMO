@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-6.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设 $a, b, c>0$, 求证:\n$$\n\\sum \\sqrt{\\frac{5 a^2+8 b^2+5 c^2}{4 a c}} \\geqslant 3 \\sqrt[9]{\\frac{8(a+b)^2(b+c)^2(c+a)^2}{(a b c)^2}} .\n$$",
+    "solution": "证明:由柯西不等式及均值不等式有\n$$\n\\begin{aligned}\n5 a^2+8 b^2+5 c^2 & \\geqslant 4\\left(a^2+b^2\\right)+4\\left(b^2+c^2\\right) \\\\\n& \\geqslant 2(a+b)^2+2(b+c)^2 \\\\\n& \\geqslant 4(a+b)(b+c),\n\\end{aligned}\n$$\n所以\n$$\n\\sum \\sqrt{\\frac{5 a^2+8 b^2+5 c^2}{4 a c}} \\geqslant \\sum \\sqrt{\\frac{(a+b)(b+c)}{a c}} \\geqslant 3 \\sqrt[6]{\\frac{(a+b)^2(b+c)^2(c+a)^2}{(a b c)^2}},\n$$\n只需要证明\n$$\n\\sqrt[6]{\\frac{(a+b)^2(b+c)^2(c+a)^2}{(a b c)^2}} \\geqslant \\sqrt[9]{\\frac{8(a+b)^2(b+c)^2(c+a)^2}{(a b c)^2}},\n$$\n等价于 $(a+b)(b+c)(c+a) \\geqslant 8 a b c$, 即 $\\sum a(b-c)^2 \\geqslant 0$, 明显成立.",
+    "remark": "",
+    "figures": []
+}

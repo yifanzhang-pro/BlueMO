@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 在一次乒乓球循环赛中, $n(n \\geqslant 3)$ 名选手中没有全胜的.\n证明:一定可以从中找出三名选手 $A, B, C$, 有 $A$ 胜 $B, B$ 胜 $C, C$ 胜 $A$.",
+    "solution": "取 $n$ 个选手中所赢局数最多的一位选手作 $A$ (取极端!), 由于 $A$ 未全胜, 所以存在选手 $C$ 胜 $A$. 考虑 $A$ 击败的选手全体, 知其中必有选手 $B$ 胜 $C$ (否则, $A$ 的败将也都是 $C$ 的败将, 从而 $C$ 赢的局数超过了 $A$ ). 于是所述的 $A, B, C$ 即为所求.",
+    "remark": "",
+    "figures": []
+}

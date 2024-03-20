@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题20 已知 $\\sin \\alpha+\\sin \\beta=\\frac{1}{2}, \\cos \\alpha+\\cos \\beta=\\frac{2}{3}$, 则 $\\cos (\\alpha-\\beta)=$",
+    "solution": "$-\\frac{47}{72}$. 两式平方和得 $2+2 \\cos (\\alpha-\\beta)=\\frac{25}{36}$, 所以原式 $=-\\frac{47}{72}$.",
+    "remark": "",
+    "figures": []
+}

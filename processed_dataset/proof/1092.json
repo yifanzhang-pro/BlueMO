@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-2.tex",
+    "problem_type": "proof",
+    "problem": "例9. 对满足 $a b c=1$ 的正实数 $a 、 b 、 c$, 求\n$$\n\\left(a-1+\\frac{1}{b}\\right)\\left(b-1+\\frac{1}{c}\\right)\\left(c-1+\\frac{1}{a}\\right)\n$$\n的最大值.",
+    "solution": "解:由于表达式关于 $a 、 b 、 c$ 是对称的, 当 $a=b=c=1$ 时, 得\n$$\n\\left(a-1+\\frac{1}{b}\\right)\\left(b-1+\\frac{1}{c}\\right)\\left(c-1+\\frac{1}{a}\\right)=1 .\n$$\n下面我们证明最大值为 1 , 即证明对任意满足 $a b c=1$ 的实数 $a 、 b 、 c$, 有\n$$\n\\left(a-1+\\frac{1}{b}\\right)\\left(b-1+\\frac{1}{c}\\right)\\left(c-1+\\frac{1}{a}\\right) \\leqslant 1 .\n$$\n首先, 我们将非齐次的式子转换为齐次式, 即对正实数 $x 、 y 、 z$, 令 $a= \\frac{x}{y}, b=\\frac{y}{z}, c=\\frac{z}{x}$ (例如 $x=1, y=\\frac{1}{a}, z=\\frac{1}{a b}$ ), 则上式等价于证明\n$$\n(x-y+z)(y-z+x)(z-x+y) \\leqslant x y z .\n$$\n令 $u=x-y+z, v=y-z+x, w=z-x+y$, 由于 $u, v, w$ 的任意两个之和为正, 所以它们中最多有一个为负, 所以不妨假设 $u \\geqslant 0, v \\geqslant 0$, 由平均值不等式, 得\n$$\n\\begin{aligned}\n\\sqrt{u v} & =\\sqrt{(x-y+z)(y-z+x)} \\\\\n& \\leqslant \\frac{1}{2}(x-y+z)(y-z+x)=x .\n\\end{aligned}\n$$\n同理, $\\sqrt{v w} \\leqslant y, \\sqrt{w u} \\leqslant z$, 故 $u v w \\leqslant x y z$.",
+    "remark": "",
+    "figures": []
+}

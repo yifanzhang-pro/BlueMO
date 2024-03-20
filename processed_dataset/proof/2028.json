@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例2. 凸四边形 $A B C D$ 既有内切圆又有外接圆,已知它的外接圆半径为 $R$, 面积为 $S$, 四边形的边长分别为 $a 、 b 、 c 、 d$, 证明:\n$$\na b c+a b d+a c d+b c d \\leqslant 2 \\sqrt{S}\\left(S+2 R^2\\right) . \\label{eq1}\n$$",
+    "solution": "证明 2 先证引理.\n引理设 $\\triangle A B C$ 中, $\\angle A \\geqslant 90^{\\circ}$, 则 $\\frac{b+c}{a} \\leqslant \\sqrt{2}$.\n证明\n$$\n\\begin{aligned}\n\\frac{b+c}{a} & =\\frac{\\sin B+\\sin C}{\\sin A}=2 \\frac{\\sin \\frac{B+C}{2} \\cos \\frac{B-C}{2}}{\\sin A} \\\\\n& \\leqslant \\frac{2 \\cos \\frac{A}{2}}{2 \\sin \\frac{A}{2} \\cos \\frac{A}{2}}=\\frac{1}{\\sin \\frac{A}{2}} \\leqslant \\sqrt{2} .\n\\end{aligned}\n$$\n下面证明原题中的不等式.\n如图(<FilePath:./images/volume9/figures/fig-c3i3.png>), 设四边形 $A B C D$ 的四边 $A B 、 B C 、 C D$ 、 $D A$ 的长分别为 $a 、 b 、 c 、 d$, 再设 $A B C D$ 的内切圆的半径为 1 . 注意到\n$$\na+c=b+d=\\frac{1}{2}(a+b+c+d) \\cdot 1=S,\n$$\n可得\n$$\n\\begin{aligned}\nH & =a b c+a b d+a c d+b c d \\\\\n& =a c(b+d)+b d(a+c)=(a c+b d) S . \\label{eq1}\n\\end{aligned}\n$$\n现设 $A C$ 的中垂线为 $l, D$ 关于 $l$ 的对称点为 $E$, 则\n$$\n\\triangle A C D \\cong \\triangle C A E .\n$$\n因此 $A E=c, C E=d$, 且 $\\angle E=\\angle D=\\pi-\\angle B$, 由此可知 $A 、 E 、 C 、 B$ 四点共圆, 故\n$$\nS=\\frac{1}{2}(a c+b d) \\sin \\alpha, \\label{eq2}\n$$\n其中 $\\alpha=\\angle E A B$.\n由式\\ref{eq1}、\\ref{eq2}知原不等式等价于\n$$\n\\frac{2 S}{\\sin \\alpha} \\cdot S \\leqslant 2 \\sqrt{S}\\left(S+2 R^2\\right) . \\label{eq3}\n$$\n注意到 $R=\\frac{B E}{2 \\sin \\alpha}$, 因此式\\ref{eq3}进一步等价于\n$$\nS^{\\frac{3}{2}} \\leqslant S \\sin \\alpha+\\frac{B E^2}{2 \\sin \\alpha}, \\label{eq4}\n$$\n但由平均值不等式\n\\ref{eq4} 的右端 $\\geqslant 2 \\sqrt{\\frac{S \\cdot B E^2}{2}}$.\n因此要证式\\ref{eq1}, 只需证明\n$$\n\\sqrt{2} B E \\geqslant S . \\label{eq5}\n$$\n事实上, 由 $\\angle E A B+\\angle E C B=180^{\\circ}$, 不妨设 $\\angle E A B \\geqslant 90^{\\circ}$. 对 $\\triangle A B E$ 应用引理可知 $\\frac{a+c}{B E} \\leqslant \\sqrt{2}$, 故\n$$\n\\sqrt{2} B E \\geqslant a+c=S,\n$$\n\\ref{eq1}式得证.\n上面的证法综合运用三角、几何的技巧,构造了一个新的共圆四边形,实现了问题的转化.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c3i3.png"
+    ]
+}

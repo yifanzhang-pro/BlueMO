@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 证明或否定命题: 若 $x 、 y$ 为实数且 $y \\geqslant 0, y(y+1) \\leqslant(x+1)^2$, 则 $y(y-1) \\leqslant x^2$.",
+    "solution": "反设 $y(y-1)>x^2$, 则由 $y \\geqslant 0$ 知 $y>1$. 进一步有 $y>\\frac{1}{2}+ \\sqrt{\\frac{1}{4}+x^2}$. 由假设 $y(y+1) \\leqslant(x+1)^2$ 和 $y>1$ 可知, $y \\leqslant-\\frac{1}{2}+ \\sqrt{\\frac{1}{4}+(x+1)^2}$, 于是得到 $\\frac{1}{2}+\\sqrt{\\frac{1}{4}+x^2}<-\\frac{1}{2}+\\sqrt{\\frac{1}{4}+(x+1)^2}$.\n由此不难推出 $\\sqrt{\\frac{1}{4}+x^2}<x$, 矛盾!故原命题成立.",
+    "remark": "",
+    "figures": []
+}

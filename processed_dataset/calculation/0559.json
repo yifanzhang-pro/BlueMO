@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题6 已知两个实数集 $A=\\left\\{a_1, a_2, \\cdots, a_{100}\\right\\}, B=\\left\\{b_1, b_2, \\cdots, b_{50}\\right\\}$, 若从 $A$ 到 $B$ 的映射 $f$ 使得 $B$ 中每一个元素都有原象，且 $f\\left(a_1\\right) \\leqslant f\\left(a_2\\right) \\leqslant \\cdots \\leqslant f\\left(a_{100}\\right)$, 则这样的映射共有多少个?",
+    "solution": "不妨设 $b_1<b_2<\\cdots<b_{50}$, 将 $A$ 中元素 $a_1, a_2, \\cdots, a_{100}$ 按顺序分为非空的 50 组.\n定义映射 $f: A \\rightarrow B$, 使第 $i$ 组的元素在 $f$ 之下的象都是 $b_i$ ( $i=1, 2, \\cdots, 50)$, 易知这样的 $f$ 满足题设要求.\n而所有这样的分组与满足条件的映射一一对应, 于是满足题设要求的映射 $f$ 的个数与 $A$ 按下标顺序分为 50 组的分法相等,而 $A$ 的分法数为 $\\mathrm{C}_{99}^{49}$,故这样的映射共有 $\\mathrm{C}_{99}^{49}$.",
+    "remark": "",
+    "figures": []
+}

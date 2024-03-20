@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $a, b, c, d$ 为奇数, $0<a<b<c<d$, 且 $a d=b c$. 证明: 如果 $a+d=2^k, b+c=2^m$ ( $k, m$ 为整数), 则 $a=1$.",
+    "solution": "证明:首先因为 $a d=b c$, 且 $d-a>c-b>0$, 所以\n$$\n(a+d)^2=(d-a)^2+4 a d>(c-b)^2+4 b c=(b+c)^2,\n$$\n故 $k>m$. 又\n$$\na\\left(2^k-a\\right)=a d=b c=b\\left(2^m-b\\right),\n$$\n从而 $2^m b-2^k a=b^2-a^2$, 即\n$$\n2^m\\left(b-2^{k-m} a\\right)=(b+a)(b-a), \\label{eq1}\n$$\n注意 $a, b$ 为奇数,故 $b+a$ 与 $b-a$ 均为偶数,且它们的差为 $2 a \\equiv 2(\\bmod 4)$,故其中必有一个只能被 2 整除而不能被 4 整除, 再注意 $b-2^{k-m} a$ 为奇数, 故只有两类情形:\n$$\n\\left\\{\\begin{array} { l } \n{ b + a = 2 ^ { m - 1 } u , } \\\\\n{ b - a = 2 v }\n\\end{array} \\text { 或 } \\left\\{\\begin{array}{l}\nb+a=2 v, \\\\\nb-a=2^{m-1} u,\n\\end{array}, u, v \\in \\mathbf{N}^*\\right.\\right. \\label{eq2}\n$$\n在其中任一情形下均有 $u v=b-2^{k-m} a<b-a \\leqslant 2 v$, 故 $u=1$, 又由于\n$$\nb-a<b<\\frac{b+c}{2}=2^{m-1},\n$$\n故第二类情形不会发生,故只可能\n$$\n\\left\\{\\begin{array}{l}\nb+a=2^{m-1} \\\\\nb-a=2\\left(b-2^{k-m} a\\right)\n\\end{array}\\right.\n$$\n消去 $b$ 得 $a=2^{2 m-2-k}$, 又 $a$ 为奇数,故 $a=1$.",
+    "remark": "注本题中, 奇偶分析思想的重要性体现在解题的一个关键环节之中:在得到形如 式\\ref{eq1} 的一个分解之后, 根据 $a, b$ 为奇数推得关于 $b+a, b-a$, $b-2^{k-m} a$ 的一系列奇偶性质,通过奇偶分析最终化整为零,归结为对 式\\ref{eq2} 的两种情形的考察.\n当然 式\\ref{eq1} 之前的铺垫与 式\\ref{eq2} 之后的收尾还涉及到放缩的思想, 整个问题具有较强的技巧性.\n最后附带指出, 本题中的整数 $k, m$ 应满足 $k=2 m-2, m \\geqslant 3$, 且 $a, b$, $c, d$ 的值分别为 $a=1, b=2^{m-1}-1, c=2^{m-1}+1, d=2^{2 m-2}-1$.",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 从集合 $S=\\{1,2, \\cdots, n\\}\\left(n \\in \\mathbf{N}_{+}\\right)$中先取出子集 $X$, 再取出子集 $Y$, 使 $X$ 不是 $Y$ 的子集, 且 $Y$ 也不是 $X$ 的子集, 问这种有序选取有多少种不同的方法?",
+    "solution": "由于 $S$ 中有 $2^n$ 个子集,故当 $X \\neq Y$ 时, 从 $S$ 中有序选取两个不同子集 $X$ 和 $Y$ 有 $\\mathrm{A}_{2^n}^2=2^n\\left(2^n-1\\right)$ 种方法.\n从这总的选法中减去 $X \\varsubsetneqq Y$ 和 $Y \\varsubsetneqq X$ 的情况, 即为所求的数 $m$. 当 $X \\varsubsetneqq Y$ 时, 设 $|Y|=i(1 \\leqslant i \\leqslant n)$, 则 $Y$ 有 $\\mathrm{C}_n^i$ 种取法,而 $X$ 是 $Y$ 的真子集, $X$ 有 $\\left(2^i-1\\right)$ 种取法, 故 $X \\varsubsetneqq Y$ 的取法种数为 $\\sum_{i=1}^n \\mathrm{C}_n^i\\left(2^i-1\\right)=\\sum_{i=0}^n \\mathrm{C}_n^i\\left(2^i-1\\right)=\\sum_{i=0}^n \\mathrm{C}_n^i 2^i-\\sum_{i=0}^n \\mathrm{C}_n^i=3^n-2^n$, 由对称性, $Y \\varsubsetneqq X$ 的取法也有 $3^n-2^n$ 种, 故得 $m=2^n\\left(2^n-1\\right)-2\\left(3^n-2^n\\right)=2^{2 n}-2 \\cdot 3^n+2^n$.",
+    "remark": "",
+    "figures": []
+}

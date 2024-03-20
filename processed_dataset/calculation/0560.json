@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题7 设 $f(x)=\\frac{9^x}{9^x+3}$, 计算:\n$$\nf\\left(\\frac{1}{2006}\\right)+f\\left(\\frac{2}{2006}\\right)+f\\left(\\frac{3}{2006}\\right)+\\cdots+f\\left(\\frac{2005}{2006}\\right) .\n$$",
+    "solution": "因为 $f(x)+f(1-x)=1$, 故有 $f\\left(\\frac{1}{2006}\\right)+f\\left(\\frac{2}{2006}\\right)+f\\left(\\frac{3}{2006}\\right)+\\cdots+ f\\left(\\frac{2005}{2006}\\right)=\\left[f\\left(\\frac{1}{2006}\\right)+f\\left(\\frac{2005}{2006}\\right)\\right]+\\left[f\\left(\\frac{2}{2006}\\right)+f\\left(\\frac{2004}{2006}\\right)\\right]+\\cdots+ \\left[f\\left(\\frac{1002}{2006}\\right)+f\\left(\\frac{1004}{2006}\\right)\\right]+f\\left(\\frac{1003}{2006}\\right)=1002+f\\left(\\frac{1}{2}\\right)=1002 \\frac{1}{2}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设 $n$ 为不小于 6 的整数,证明: 可将一个正方形分成 $n$ 个较小的正方形.",
+    "solution": "因为一个正方形可以等分为 4 个小正方形, 因此要将小正方形的数目增加 3 个是容易做到的,所以我们采用步长为 3 .\n当 $n=6,7,8$ 时, 可按图 (<FilePath:./images/volume14/figures/fig-c3a3.png>) 所示方式进行分割, 所以知命题成立.\n假设对某个 $n=k \\geqslant 6$, 已将正方形分为 $k$ 个小正方形, 那么只要在将其中一个小正方形等分为 4 个更小的正方形, 即可得到 $n=k+3$ 个小正方形.\n所以知命题对一切整数 $n \\geqslant 6$ 都成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c3a3.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 设 $P$ 是 $\\triangle A B C$ 所在平面上的一个动点, 点 $P$ 的垂足三角形的面积为 $F_P$, $\\triangle A B C$ 的面积为 $F$, 求平面上使得不等式\n$$\nF_P \\leqslant \\frac{1}{4} F\n$$\n成立的点 $P$ 的轨迹.",
+    "solution": "利用 Gergonne 公式可求得 $P$ 的轨迹是以 $O$ 为圆心, 半径为 $\\sqrt{2} R$ 的圆及其内部.",
+    "remark": "",
+    "figures": []
+}

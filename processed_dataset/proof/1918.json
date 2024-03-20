@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 如图(<FilePath:./images/volume7/figures/fig-c8p11.png>), 在 $\\triangle A B C$ 中, 设 $A B>A C$. 过点 $A$ 作 $\\triangle A B C$ 的外接圆的切线 $l$. 又以 $A$ 为圆心, $A C$ 为半径作圆分别交线段 $A B$ 于点 $D$, 交直线 $l$ 于点 $E 、 F$. 证明: 直线 $D E 、 D F$ 分别通过 $\\triangle A B C$ 的内心与一个旁心.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c8a11.png>), 作 $\\angle B A C$ 的平分线, 交 $D E$ 于 $I$, 易知 $\\triangle A D I \\cong \\triangle A C I$. 所以 $\\angle A C I=\\frac{1}{2}\\left(180^{\\circ}-\\angle B A C-\\right. \\angle A B C)=\\frac{1}{2} \\angle A C B$. 从而 $I$ 为 $\\triangle A B C$ 的内心.\n设射线 $A I$ 交 $B C$ 于 $M$, 交 $\\triangle A B C$ 的外接圆于 $A_1$, 交直线 $F D$ 于 $I_A$. 连 $C I_A$, 则知 $\\angle D I_A A=\\angle A I_A C$.\n延长 $C B$ 到 $P$, 使 $P B=B A$, 则 $\\angle A P C= \\frac{1}{2} \\angle A B C=\\frac{1}{2} \\angle B$.\n注意到 $\\frac{1}{2}(\\angle A+\\angle B+\\angle C)=90^{\\circ}=\\angle F D A+\\angle A D E= \\left(\\frac{1}{2} \\angle A+\\angle D I_A A\\right)+\\angle I C A=\\left(\\frac{1}{2} \\angle A+\\angle A I_A C\\right)+\\frac{1}{2} \\angle C$,\n从而 $\\angle A I_A C=\\frac{1}{2} \\angle B=\\angle A P C$, 于是, $A 、 P 、 I_A 、 C$ 四点共圆, 有 $\\angle A I_A P= \\angle A C P=\\angle A A_1 B$, 即有 $B A_1 / / P I_A$, 亦即有 $\\frac{I_A A_1}{A_1 M}=\\frac{P B}{B M}=\\frac{A B}{B M}=\\frac{A I}{I M}$.\n由性质 7 的推论 2 , 知 $I_A$ 是边 $B C$ 外的旁心.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8p11.png",
+        "./images/volume7/figures/fig-c8a11.png"
+    ]
+}

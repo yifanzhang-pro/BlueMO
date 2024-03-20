@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 设 $\\triangle A B C$ 内接于单位圆 $O, A 、 B 、 C$ 对应的复数分别为 $t_1 、 t_2 、 t_3$, 而 $P$ 为外接圆上任一点, 对应复数为 $t$, 证明: $P$ 关于 $\\triangle A B C$ 的西摩松线的方程为\n$$\nt z-s_3 \\bar{z}=\\frac{1}{2 t}\\left(t^3+t_1 t^2-s_2 t-s_3\\right), \\label{eq1}\n$$\n此处 $s_1=t_1+t_2+t_3, s_2=t_2 t_3+t_3 t_1+t_1 t_2, s_3=t_1 t_2 t_3$.",
+    "solution": "首先, 经过 $t_2 、 t_3$ 的直线方程为\n$$\n\\left(\\overline{t_2}-\\overline{t_3}\\right) z-\\left(t_2-t_3\\right) \\bar{z}=\\overline{t_2} t_3-t_2 \\overline{t_3} .\n$$\n我们只需证明 $P$ 在这直线上的垂足满足题设之方程, 由于题设方程是对称的, 同理可证另外两个垂足亦在其上.\n化简, 得 $z+t_2 t_3 \\bar{z}=t_2+t_3$, 当 $t_2+t_3 \\neq 0$ 时, 两边除以 $t_2+t_3$ 并转化, 于是 $\\frac{z}{t_2+t_3}+\\frac{\\bar{z}}{\\overline{t_2+t_3}}=1$. 由例 1 知, 过 $t$ 且与之垂直的直线方程是\n$$\n\\frac{z}{t_2+t_3}-\\frac{\\bar{z}}{\\overline{t_2+t_3}}=\\frac{t}{t_2+t_3}-\\frac{\\bar{t}}{\\overline{t_2+t_3}}\n$$\n或\n$$\nz-t_2 t_3 \\bar{z}=t-t_2 t_3 \\bar{t}=t-\\frac{t_2 t_3}{t} . \\label{eq2}\n$$\n注意\\ref{eq2}式也包括 $t_2+t_3=0$ 的情形,此式与 $z+t_2 t_3 \\bar{z}=t_2+t_3$ 联立,解出\n$$\nz=\\frac{1}{2}\\left(t+t_2+t_3-\\frac{t_2 t_3}{t}\\right)\n$$\n$$\n\\bar{z}=\\frac{1}{2}\\left(\\overline{t_2}+\\overline{t_3}+\\bar{t}-\\frac{\\overline{t_2 t_3}}{\\bar{t}}\\right)=\\frac{t_2+t_3+t_2 t_3-t^2}{2 t_2 t_3},\n$$\n于是 $t z-s_3 \\bar{z}=\\frac{1}{2}\\left(t^2+t_2+t_3-t_2 t_3\\right)-\\frac{1}{2 t}\\left(t_1 t_2+t_1 t_3+t_1 t_2 t_3-t_1 t^2\\right)$\n$$\n\\begin{aligned}\n& =\\frac{1}{2 t}\\left(t^3+t^2 t_2+t^2 t_3-t_2 t_3-t_1 t_2-t_1 t_3-t_1 t_2 t_3+t_1 t^2\\right) \\\\\n& =\\frac{1}{2 t}\\left(t^3+s_1 t^2-s_2 t-s_3\\right) .\n\\end{aligned}\n$$\n证毕.",
+    "remark": "",
+    "figures": []
+}

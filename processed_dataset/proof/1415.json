@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 设 $a 、 b 、 c$ 是正实数,求证:\n$$\na^2+b^2+c^2 \\geqslant \\frac{c\\left(a^2+b^2\\right)}{a+b}+\\frac{b\\left(c^2+a^2\\right)}{c+a}+\\frac{a\\left(b^2+c^2\\right)}{b+c} .\n$$",
+    "solution": "不妨设 $a \\geqslant b \\geqslant c$, 令 $\\frac{a}{c}=x, \\frac{b}{c}=y$, 则 $x \\geqslant y \\geqslant 1$.\n原不等式转化为 $x^2+y^2+1 \\geqslant \\frac{x^2+y^2}{x+y}+\\frac{y\\left(1+x^2\\right)}{1+x}+\\frac{x\\left(1+y^2\\right)}{1+y}$.\n去分母, 整理得 $\\left(x^4 y+x y^4\\right)+\\left(x^4+y^4+x+y\\right) \\geqslant\\left(x^3 y^2+x^2 y^3\\right)+\\left(x^3+\\right. \\left.y^3+x^2+y^2\\right)$, 即\n$$\nx y(x+y)(x-y)^2+x(x+1)(x-1)^2+y(y+1)(y-1)^2 \\geqslant 0 .\n$$\n故原不等式成立.",
+    "remark": "注:: 本题也可以直接证.\n证法如下:\n设 $a \\geqslant b \\geqslant c, a^2-\\frac{a\\left(b^2+c^2\\right)}{b+c}=\\frac{a^2 b+a^2 c-a b^2-a c^2}{b+c}=\\frac{a b(a-b)}{b+c}+ \\frac{a c(a-c)}{b+c}$, 由于 $\\frac{1}{b+c} \\geqslant \\frac{1}{a+c} \\geqslant \\frac{1}{a+b}$, 则左边 - 右边 $=\\left[\\frac{a b(a-b)}{b+c}-\\right. \\left.\\frac{a b(a-b)}{c+a}\\right]+\\left[\\frac{a c(a-c)}{b+c}-\\frac{a c(a-c)}{a+b}\\right]+\\left[\\frac{b c(b-c)}{c+a}-\\frac{b c(b-c)}{a+b}\\right] \\geqslant 0$, 故原不等式成立.",
+    "figures": []
+}

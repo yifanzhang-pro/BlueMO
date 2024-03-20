@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例3 解方程 $\\cos ^n x-\\sin ^n x=1,\\left(n \\in \\mathbf{N}^*\\right)$.",
+    "solution": "分析:直接求解有困难, 可以通过对 $n$ 奇偶讨论.\n解当 $n$ 为偶数时, $\\cos ^n x=1+\\sin ^n x \\geqslant 1$, 而 $\\cos ^n x \\leqslant 1$, 则必须有\n$\\cos ^n x=1 \\Rightarrow \\cos x= \\pm 1$, 所以 $x=k \\pi, k \\in \\mathbf{Z}$.\n当 $n$ 为奇数时, 由 $\\cos ^n x=1+\\sin ^n x \\geqslant 0$ 及 $\\sin ^n x=\\cos ^n x-1 \\leqslant 0$, 知原方程同解于 $|\\cos x|^n+|\\sin x|^n=1$, 比较公式 $\\sin ^2 x+\\cos ^2 x=1$ 可知.\n若 $x \\neq k \\cdot \\frac{\\pi}{2}$, 则 $0<|\\cos x|<1,0<|\\sin x|<1$, 于是当 $n>2$ 时, $|\\cos x|^n+|\\sin x|^n<\\cos ^2 x+\\sin ^2 x=1$, 故当 $x \\neq k \\cdot \\frac{\\pi}{2}$ 时, 方程无解.\n当 $n=1$ 时, $|\\cos x|^n+|\\sin x|^n=|\\cos x|+|\\sin x|= \\sqrt{(|\\cos x|+|\\sin x|)^2}>\\sqrt{|\\cos x|^2+|\\sin x|^2}=1$, 此时也无解.\n对 $x=\\frac{k \\pi}{2}, k \\in \\mathbf{Z}$, 通过验证可知, $x=2 k \\pi, x=2 k \\pi-\\frac{\\pi}{2}(k \\in \\mathbf{Z})$ 是原方程的解.\n综上可知, 当 $n$ 为偶数时, 原方程的解为 $x=k \\pi(k \\in \\mathbf{Z})$; 当 $n$ 为奇数时, $x=2 k \\pi$ 或 $x=2 k \\pi-\\frac{\\pi}{2}(k \\in \\mathbf{Z})$.\n评注由 $\\cos ^2 x+\\sin ^2 x=1$,联想 $\\left|\\cos ^n x\\right|+\\left|\\sin ^n x\\right|$ 与 1 的大小关系, 同时结合 $|\\cos x| \\leqslant 1,|\\sin x| \\leqslant 1$, 对解的情形进行估算.",
+    "remark": "",
+    "figures": []
+}

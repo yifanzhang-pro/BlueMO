@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设 $a$ 为正实数.\n证明: 对任意 $n \\in \\mathbf{N}^*$, 都有\n$$\n\\frac{1+a^2+a^4+\\cdots+a^{2 n}}{a+a^3+a^5+\\cdots+a^{2 n-1}} \\geqslant \\frac{n+1}{n} .\n$$",
+    "solution": "当 $n=1$ 时,由 $\\frac{1+a^2}{a}=\\frac{1}{a}+a \\geqslant 2 \\sqrt{\\frac{1}{a} \\cdot a}=2$ 知命题成立.\n现设 $n$ 时命题成立, 即 $\\frac{1+a^2+\\cdots+a^{2 n}}{a+a^3+\\cdots+a^{2 n-1}} \\geqslant \\frac{n+1}{n}$, 则 $\\frac{a+a^3+\\cdots+a^{2 n-1}}{1+a^2+\\cdots+a^{2 n}} \\leqslant \\frac{n}{n+1}$.\n注意到\n$$\n\\begin{aligned}\n& \\frac{1+a^2+\\cdots+a^{2 n+2}}{a+a^3+\\cdots+a^{2 n+1}}+\\frac{a+a^3+\\cdots+a^{2 n-1}}{1+a^2+\\cdots+a^{2 n}} \\\\\n= & \\frac{1+a^2+\\cdots+a^{2 n+2}}{a\\left(1+a^2+\\cdots+a^{2 n}\\right)}+\\frac{a+a^3+\\cdots+a^{2 n-1}}{1+a^2+\\cdots+a^{2 n}} \\\\\n= & \\frac{1+a^2+\\cdots+a^{2 n+2}+a\\left(a+a^3+\\cdots+a^{2 n-1}\\right)}{a\\left(1+a^2+\\cdots+a^{2 n}\\right)} \\\\\n= & \\frac{\\left(1+a^2+\\cdots+a^{2 n}\\right)+a^2\\left(1+a^2+\\cdots+a^{2 n}\\right)}{a\\left(1+a^2+\\cdots+a^{2 n}\\right)} \\\\\n= & \\frac{a^2+1}{a}=a+\\frac{1}{a} \\geqslant 2 .\n\\end{aligned}\n$$\n所以\n$$\n\\frac{1+a^2+\\cdots+a^{2 n+2}}{a+a^3+\\cdots+a^{2 n+1}} \\geqslant 2-\\frac{n}{n+1}=\\frac{n+2}{n+1}\n$$\n即命题对 $n+1$ 成立, 获证.",
+    "remark": "",
+    "figures": []
+}

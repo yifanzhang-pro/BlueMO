@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题15. 若方程 $x^4+a x^3+b x+c=0$ 的根都是实数, 求证: $a b \\leqslant 0$.",
+    "solution": "反设 $a b>0$, 不妨设 $a>0$, 则 $b>0$. 分三种情况讨论:\n(1) 若 $c>0, x^4+a x^3+b x+c=0$ 的根均为负根, 与 $x^2$ 前系数为 0 矛盾.\n(2) 若 $c<0$, 四个实根乘积为 $c<0$, 正根为 1 个或 3 个, 其余为负根, 再分别讨论:\n(i) 如果有 3 个正根 $x_2 、 x_3 、 x_4$, 负根为 $x_1$, 则 $x_1+x_2+x_3+x_4=-a<$ 0 , 故 $-x_1>-x_1-a=x_2+x_3+x_4$. 由于 $x^2$ 前系数为 0 , 应当有 $x_1\\left(x_2+\\right. \\left.x_3+x_4\\right)+x_2 x_3+x_2 x_4+x_3 x_4=0$.\n而 $x_2 x_3+x_2 x_4+x_3 x_4=-x_1\\left(x_2+x_3+x_4\\right)>\\left(x_2+x_3+x_4\\right)^2$, 矛盾!\n(ii) 如果仅有一个正根, 不妨设 $x_1$ 为正根, $x_2 、 x_3 、 x_4$ 为负根, $x_1 x_2 x_3 x_4\\left(\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+\\frac{1}{x_4}\\right)=-b<0$, 又由于 $x_1 x_2 x_3 x_4<0$, 则 $\\frac{1}{x_1}+\\frac{1}{x_2}+ \\frac{1}{x_3}+\\frac{1}{x_4}>0$. 由于 $-x_1\\left(x_2+x_3+x_4\\right)=x_2 x_3+x_3 x_4+x_2 x_4>0$, 两式相乘, 得到一 $\\left(x_2+x_3+x_4\\right)>\\left(-\\frac{1}{x_2}-\\frac{1}{x_3}-\\frac{1}{x_4}\\right)\\left(x_2 x_3+x_3 x_4+x_4 x_2\\right)=-2\\left(x_2+\\right. \\left.x_3+x_4\\right)-\\left(\\frac{x_2 x_3}{x_4}+\\frac{x_3 x_4}{x_2}+\\frac{x_4 x_2}{x_3}\\right)$,矛盾!\n(3) 若 $c=0, x^3+a x^2+b=0$ 有三个实根, 由于 $a>0, b>0$, 三个实数均为负根, 由于 $x$ 前面系数为 0 , 则根的两两乘积之和为 0 , 矛盾!\n综上所述, $a b \\leqslant 0$.",
+    "remark": "",
+    "figures": []
+}

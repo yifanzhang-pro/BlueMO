@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $T$ 是由 $60^{100}$ 的所有正因数组成的集合.\n$S$ 是 $T$ 的一个子集, 其中没有一个数是另一个数的倍数.\n求 $S$ 的元素个数的最大值.",
+    "solution": "解:约定下文中的 $a, b, c$ 都是非负整数.\n因为 $60=2^2 \\cdot 3 \\cdot 5$, 所以\n$$\n\\begin{gathered}\nT=\\left\\{2^a 3^b 5^c \\mid 0 \\leqslant a \\leqslant 200,0 \\leqslant b, c \\leqslant 100\\right\\} . \\\\\nS=\\left\\{2^{200-b-c} 3^b 5^c \\mid 0 \\leqslant b, c \\leqslant 100\\right\\},\n\\end{gathered}\n$$\n对任意 $0 \\leqslant b, c \\leqslant 100$, 有 $0 \\leqslant 200-b-c \\leqslant 200$, 所以 $S$ 是 $T$ 的一个子集且含 $101^2$ 个元素.\n下面我们证明 $S$ 中没有一个数是另一个数的倍数, 并且元素个数超过 $101^2$ 的子集都不满足这个条件.\n假设 $2^{200-b-c} 3^b 5^c$ 是 $2^{200-i-j} 3^i 5^j$ 的倍数, 且 $(b, c) \\neq(i, j)$, 则\n$$\n200-b-c \\geqslant 200-i-j, b \\geqslant i, c \\geqslant j,\n$$\n第一个不等式表明 $b+c \\leqslant i+j$, 与后两个不等式联立得 $b=i, c=j$. 矛盾.\n所以 $S$ 中没有一个元素是另一个的倍数.\n设 $U$ 是 $T$ 的一个超过 $101^2$ 个元素的子集.\n因为只有 $101^2$ 对互异的 $(b$, $c$ ), 由抽屉原理, $U$ 中必有两个元素 $u_1=2^{a_1} 3^{b_1} 5^{c_1}, u_2=2^{a_2} 3^{b_2} 5^{c_2}$, 其中 $b_1= b_2, c_1=c_2$, 而 $a_1 \\neq a_2$. 若 $a_1>a_2$, 则 $u_1$ 是 $u_2$ 的倍数; 若 $a_1<a_2$, 则 $u_2$ 是 $u_1$ 的倍数.\n因此 $U$ 不满足题设条件.\n所以 $T$ 的满足题设条件的子集最多可以含有 $101^2=10201$ 个元素.",
+    "remark": "",
+    "figures": []
+}

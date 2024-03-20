@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 设 $p$ 是给定的奇素数, 求 $p^x-y^p=1$ 的全部正整数解 $x 、 y$.",
+    "solution": "由 $p^x=y^p+1=(y+1)\\left(y^{p-1}-y^{p-2}+\\cdots-y+1\\right)$ 可知, $y+1=p^n$, $n$ 为一 个整数.\n因 $y>0$, 故 $n>0$. 因此\n$$\n\\begin{aligned}\np^x & =\\left(p^n-1\\right)^p+1 \\\\\n& =p^{n p}-p \\cdot p^{n(p-1)}+\\mathrm{C}_p^2 p^{n(p-2)}-\\cdots-\\mathrm{C}_p^{p-2} p^{2 n}+p \\cdot p^n . \\label{eq1}\n\\end{aligned}\n$$\n易知, 上式右边除最后一项外,均被 $p^{n+2}$ 整除 (注意, 因 $p$ 是素数,故所有 $\\mathrm{C}_p^i$ 对 $i=1, \\cdots, p-2$ 均被 $p$ 整除), 因此 $p^{n+1}$ 是 式\\ref{eq1} 的右边的 $p$ 的最高次幂, 故必须 $x=n+1$, 此时式\\ref{eq1}化为\n$$\np^{n p}-p \\cdot p^{n(p-1)}+\\mathrm{C}_p^2 p^{n(p-2)}-\\cdots-\\mathrm{C}_p^{p-2} p^{2 n}=0 . \\label{eq2}\n$$\n当 $p=3$ 时, 式\\ref{eq2} 即为 $3^{3 n}-3 \\cdot 3^{2 n}=0$, 得 $n=1$, 故 $x=y=2$. 若 $p \\geqslant 5$, 注意到 $\\mathrm{C}_p^{p-2}$ 不被 $p^2$ 整除,易知 式\\ref{eq2} 的左边除最后一项外,均被 $p^{2 n+2}$ 整除, 但最后一项不能被 $p^{2 n+2}$ 整除, 这表明 式\\ref{eq2} 不能成立.\n因此, 本题仅在 $p=3$ 时有解 $x=y=2$.",
+    "remark": "",
+    "figures": []
+}

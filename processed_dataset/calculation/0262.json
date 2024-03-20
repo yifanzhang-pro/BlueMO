@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 某 15 座城市,它们之间的航线分属三家航空公司.\n已知无论哪一家航空公司停飞,旅客总还能从任意城市飞往其他任何城市 (当然, 可能中途需要转机),那么至少需要多少条航线?",
+    "solution": "解:最少得有 21 条航线.\n首先, 如果用航线把 15 个城市连接起来, 还要求从任何一个城市飞往其他任何一个城市的话,那么这样的航线当然不能少于 14 条.\n下面我们把属于三家航空公司的航线数分别记为 $a 、 b$ 和 $c$. 由上所述, 可知任何两家公司的航线数和\n(1) 都不能少于 14 , 也就是说 $a+b \\geqslant 14, b+ c \\geqslant 14, c+a \\geqslant 14$. 把这三个不等式叠加后, 得 $2(a+b+c) \\geqslant 42$, 即三家航空公司航线总数不能少于 21 .\n如图(<FilePath:./images/volume12/figures/fig-c4i5.png>)列出 21 条航线的实例,其中用了不同线条来表示不同航空公司的航线.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c4i5.png"
+    ]
+}

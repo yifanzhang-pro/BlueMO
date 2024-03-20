@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $2 \\leqslant r \\leqslant \\frac{n}{2}, \\mathscr{A}$ 为 $Z=\\{1,2, \\cdots, n\\}$ 的一些 $r$ 元子集所成的集族.\n如果 $\\mathscr{A}$ 中的每两个元素 ( $Z$ 的 $r$ 元子集) 的交非空, 那么 $|\\mathscr{A}| \\leqslant \\mathrm{C}_{n-1}^{r-1}$, 当 $\\mathscr{A}=\\{A \\mid A$ 为 $Z$ 的 $r$ 元子集且含有 $Z$ 的一个固定元素 $x\\}$ 时等号成立 (ErdösKo-Rado 定理)",
+    "solution": "证明:把 $Z$ 的元素任意排在一个圆周上有 $(n-1)$ ! 种排列方法, 对于每种排列方法 $\\pi_j(j=1,2, \\cdots,(n-1) !)$, 如果 $A_i$ 中的元素在 $\\pi_j$ 中相连没有间断, 则将 $\\left(A_i, \\pi_j\\right)$ 配成一对, 这种对子的集合记为 $S$. 一方面, 因为 $\\mathscr{A}$ 中每两个元素 ( $Z$ 的 $r$ 元子集) 的交非空, 且 $2 \\leqslant r \\leqslant \\frac{n}{2}$, 故对每个排列 $\\pi_j$, 至多有 $r$ 个集合 $A_i \\in \\mathscr{A}$ 使得每个 $A_i$ 中的元素在 $\\pi_j$ 中是相连没有间断的, 即含 $\\pi_j$ 的对子 $\\left(A_i, \\pi_j\\right)$ 至多有 $r$ 个, 而 $\\pi_j$ 有 $(n-1)$ ! 个, 所以\n$$\n|S| \\leqslant r \\cdot(n-1) ! . \\label{eq1}\n$$\n另一方面, 对 $\\mathscr{A}$ 中每个 $A_i$, 使 $A_i$ 中元素在圆周上相连不间断的圆排列有 $r !(n-r) !$ 个,而 $\\mathscr{A}$ 中元素 $A_i$ 共有 $|\\mathscr{A}|$ 个,故\n$$\n|S|=|\\mathscr{A}| \\cdot r ! \\cdot(n-r) !,  \\label{eq2}\n$$\n由式\\ref{eq1}及\\ref{eq2}得\n$$\n|\\mathscr{A}| \\cdot r ! \\cdot(n-r) ! \\leqslant r(n-1) ! .\n$$\n由此可得 $|\\mathscr{A}| \\leqslant \\frac{(n-1) !}{(r-1) !(n-r) !}=\\mathrm{C}_{n-1}^{r-1}$.\n其次, 当 $\\mathscr{A}==\\{A \\mid A$ 为 $Z$ 的 $r$ 元子集且含 $Z$ 的一个固定元素 $x\\}$ 时, $\\mathscr{A}$ 中的 $A$ 恰有 $\\mathrm{C}_{n-1}^{r-1}$ 个, 这时 $|\\mathscr{A}|=\\mathrm{C}_{n-1}^{r-1}$ 成立.",
+    "remark": "注:进一步可以证明, 本题中等号成立的条件不仅是充分的, 也是必要的.",
+    "figures": []
+}

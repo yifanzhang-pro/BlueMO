@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 已知关于 $z$ 的实系数方程 $z^2-2 p z+q=0(p \\neq 0)$ 的两虚根 $z_1 、 z_2$ 在复平面内的对应点为 $F_1 、 F_2$, 求以 $F_1 、 F_2$ 为两焦点, 且经过原点的椭圆的普通方程.",
+    "solution": "分析:与解由原方程有两个虚根可知: $\\Delta= 4 p^2-4 q<0$, 因此 $q>p^2>0$.\n设 $z_1=a+b \\mathrm{i}(a 、 b \\in \\mathbf{R})$, 则 $z_2=a-b \\mathrm{i}$.\n由韦达定理得, $\\left\\{\\begin{array}{l}z_1+z_2=2 a=2 p , \\\\ z_1 z_2=a^2+b^2=q ,\\end{array}\\right.$\n于是 $a=p,\\left|O F_1\\right|=\\left|O F_2\\right|=\\sqrt{a^2+b^2}= \\sqrt{q}$ (如图).\n显然, 椭圆的半短轴长 $=|O M|=|a|=|p|$, 半焦距 $=|b|$, 则半长轴长 $=\\sqrt{a^2+b^2}=\\sqrt{q}$, 而椭圆的中心为 $(a, 0)$, 即 $(p, 0)$.\n所以椭圆的普通方程为 $\\frac{(x-p)^2}{p^2}+\\frac{y^2}{q}=1$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题18 一个正整数无穷等差数列, 包含一项是整数的平方, 另一项是整数的立方.\n证明: 此数列含有一项是整数的六次幂.",
+    "solution": "设数列 $\\{a+i h: i=0,1,2, \\cdots\\}$ 含 $x^2 、 y^3$ 项, $x 、 y$ 是整数.\n对公差 $h$ 用数学归纳法.\n$h=1$, 显然成立.\n对某个固定的 $h>1$, 假设其公差小于 $h$ 且满足题设条件的等差数列都成立.\n现考察在 $h$ 时的情形.\n令 $a 、 h$ 的最大公约数为 $d=(a, h), h=d e$. 分两种情况:\n情形 $1 \\quad(d, e)=1$. 易知 $x^2 \\equiv a \\equiv y^3(\\bmod h)$, 因而有 $x^2 \\equiv a \\equiv y^3(\\bmod e) . e$ 与 $a$ 互素, 故 $e$ 与 $x$ 和 $y$ 也互素.\n所以, 有整数 $t$, 使得 $t y \\equiv x(\\bmod e)$. 因此, $(t y)^6 \\equiv x^6(\\bmod e)$, 即 $t^6 a^2 \\equiv a^3(\\bmod e)$. 因 $(e, a)=1$, 故两端可除以 $a^2$ 有 $t^6 \\equiv a(\\bmod e)$. 又 $(d, e)=1$, 则对某个整数 $k$, 有 $t+k e \\equiv 0(\\bmod d)$. 于是, $(t+k e)^6 \\equiv 0 \\equiv a(\\bmod d)$. 因 $t^6 \\equiv a(\\bmod e)$, 由二项式公式, 可得 $(t+k e)^6 \\equiv a(\\bmod e)$. 又 $(d, e)=1, h=d e$, 由以上两同余式, 有 $(t+k e)^6 \\equiv a (\\bmod h)$. 显然, $k$ 可取任意大的整数, 故上式说明数列 $\\{a+i h \\mid i=0,1,2, \\cdots\\}$ 含一个整数的六次幂项.\n情形 $2(d, e)>1$. 令素数 $p, p|d, p| e$, 并设 $p^\\alpha$ 是整除 $a$ 的 $p$ 的最高次幂, $p^\\beta$ 是整除 $h$ 的 $p$ 的最高次幂.\n因 $h=d e,(e, a)=1$, 有 $\\beta>\\alpha \\geqslant 1$. 因而对 $\\{a+i h \\mid i=0,1, \\cdots\\}$ 中每一项, 能整除它的最高次幕是 $p^\\alpha$. 因 $x^2 、 y^3$ 是数列的两个项, $\\alpha$ 必被 2 和 3 整除, 故 $\\alpha=6 r$. 因此, $\\alpha \\geqslant 6$. 整数数列 $\\{p^{-6}(a+ i h) \\mid i=0,1,2, \\cdots\\}$ 的公差 $\\frac{h}{p^6}<h$, 且含有项 $\\left(\\frac{x}{p^3}\\right)^2 、\\left(\\frac{y}{p^2}\\right)^3$, 由归纳假设, 它含有项 $z^6$ ( $z$ 是整数). 所以, $(p z)^6$ 是原数列的一个项.",
+    "remark": "",
+    "figures": []
+}

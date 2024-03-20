@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 圆 $O_1$ 与圆 $O_2$ 交于 $A 、 B$ 两点.\n过点 $O_1$ 的直线 $D C$ 交圆 $O_1$ 于 $D$ 且切圆 $O_2$ 于 $C, C A$ 切圆 $O_1$ 于 $A$, 圆 $O_1$ 的弦 $A E$ 与直线 $D C$ 垂直.\n过 $A$ 作 $A F$ 垂直于 $D E, F$ 为垂足.\n求证: $B D$ 平分线段 $A F$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c9a2.png>), 延长 $C B$ 交 $\\odot O_1$ 于 $G$, 对于 $\\odot O_1$, 由 $C A$ 是切线, $C O_1 \\perp A E$ 知, 直线 $A E$ 是 $C$ 的极线,故 $E C$ 是过 $E$ 点的 $\\odot O_1$ 的切线.\n由配极定理 3 知四边形 $A B E G$ 为调和四边形.\n由配极定理 $2, D G 、 D B 、 D A 、 D E$ 成调和线束.\n设 $A E$ 与 $C D$ 交点为 $H$, 连 $A B 、 B E 、 G D$, 又 $\\angle B C D=\\angle B A C=\\angle B E A$, 所以 $H 、 E$ 、 $C 、 B$ 四点共圆.\n于是 $\\angle E B C=\\angle E H C=90^{\\circ}$, 故 $\\angle G D E=\\angle E B C=90^{\\circ}$, 即 $D G / / A F$, 结合\n$D G 、 D B 、 D A 、 D E$ 成调和线束知 $D B$ 平分 $A F$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9a2.png"
+    ]
+}

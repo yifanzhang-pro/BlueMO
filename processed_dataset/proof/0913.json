@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例33 设 $f: \\mathbf{R} \\rightarrow \\mathbf{R}$ 是一个定义在实数集上的实值函数, 满足对所有实数 $x 、 y$, 都有\n$$\nf(x+y) \\leqslant y f(x)+f(f(x)), \\quad\\quad (1)\n$$\n证明: 对所有实数 $x \\leqslant 0$, 有 $f(x)=0$.",
+    "solution": "证令 $y=t-x$, 则 (1) 式可写为\n$$\nf(t) \\leqslant t f(x)-x f(x)+f(f(x)) . \\quad\\quad (2)\n$$\n在(2)式中分别令 $t=f(a), x=b$ 和 $t=f(b), x=a$, 可得\n$$\n\\begin{aligned}\n& f(f(a))-f(f(b)) \\leqslant f(a) f(b)-b f(b), \\\\\n& f(f(b))-f(f(a)) \\leqslant f(a) f(b)-a f(a) .\n\\end{aligned}\n$$\n把上面两式相加得\n$$\n2 f(a) f(b) \\geqslant a f(a)+b f(b) .\n$$\n令 $b=2 f(a)$, 得 $2 f(a) f(b) \\geqslant a f(a)+2 f(a) f(b)$, 即 $a f(a) \\leqslant 0$. 所以\n$$\nf(a) \\geqslant 0 \\text {, 当 } a<0 \\text { 时.\n} \\quad\\quad (3)\n$$\n假设存在某个实数 $x$, 使得 $f(x)>0$. 由 (2) 式, 对每个 $t<\\frac{x f(x)-f(f(x))}{f(x)}$, 有 $f(t)<0$, 这与 (3) 矛盾.\n所以, 对所有实数 $x$\n$$\nf(x) \\leqslant 0, \\quad\\quad (4)\n$$\n结合 (3)知, 对所有实数 $x<0$, 有 $f(x)=0$.\n在(2)中令 $t=x<0$, 得 $f(x) \\leqslant f(f(x))$, 故 $0 \\leqslant f(0)$, 结合 (4), 知 $f(0)=0$.\n综上可知, 对任意 $x \\leqslant 0$, 都有 $f(x)=0$.",
+    "remark": "",
+    "figures": []
+}

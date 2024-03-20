@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 记凸四边形的面积为 $S$. 对它的每个顶点, 都作其关于不经过它的对角线的对称点.\n将所得到的四个像点组成的四边形的面积记作 $S^{\\prime}$. 证明: $\\frac{S^{\\prime}}{S}<$ 3.",
+    "solution": "记原凸四边形为 $A B C D$, 其中 $A, B, C, D$ 的像点分别为 $A^{\\prime}, B^{\\prime}, C^{\\prime}$, $D^{\\prime}, A C$ 与 $B D$ 交于点 $P$.\n设 $A C$ 与 $B D$ 的夹角为 $\\alpha, A^{\\prime} C^{\\prime}$ 与 $B^{\\prime} D^{\\prime}$ 的夹角为 $\\beta$. 根据对称性, 四边形 $A^{\\prime} B^{\\prime} C^{\\prime} D^{\\prime}$ 的对角线 $A^{\\prime} C^{\\prime}$ 与 $B^{\\prime} D^{\\prime}$ 过点 $P$, 且 $A^{\\prime} C^{\\prime}=A C, B^{\\prime} D^{\\prime}=B D$, 且 $\\beta=3 \\alpha$ 或 $\\pi-3 \\alpha$ 或 $3 \\alpha-\\pi$, 无论何种情形下均有 $\\sin \\beta=|\\sin 3 \\alpha|=\\sin \\alpha \\cdot\\left|3-4 \\sin ^2 \\alpha\\right|$.\n由四边形面积公式得\n$$\n\\begin{aligned}\nS & =\\frac{1}{2} A C \\cdot B D \\cdot \\sin \\alpha, S^{\\prime}=\\frac{1}{2} A^{\\prime} C^{\\prime} \\cdot B^{\\prime} D^{\\prime} \\cdot \\sin \\beta \\\\\n& =\\frac{1}{2} A C \\cdot B D \\cdot \\sin \\alpha \\cdot\\left|3-4 \\sin ^2 \\alpha\\right|,\n\\end{aligned}\n$$\n从而易知: $\\frac{S^{\\prime}}{S}=\\left|3-4 \\sin ^2 \\alpha\\right|<3$.",
+    "remark": "",
+    "figures": []
+}

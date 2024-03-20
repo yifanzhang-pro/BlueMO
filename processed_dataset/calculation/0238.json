@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 如果 (1) $a, b, c, d$ 都属于 $\\{1,2,3,4\\} ;$; (2) $a \\neq b, b \\neq c, c \\neq d, d \\neq a$; (3) $a$ 是 $a, b, c, d$ 中最小值, 那么可组成不同的四位数 $\\overline{a b c d}$ 的个数是 .",
+    "solution": "$\\overline{a b c d}$ 中恰有 2 个不同数字时, 从 4 个数字中取 2 个数字有 $\\mathrm{C}_4^2$ 种方法, 其中较小的数字放在第 1,3 位, 较大的数字放在第 2,4 位, 只能组成一个四位数, 故这时不同的四位数有 $\\mathrm{C}_4^2=6$ 个; $\\overline{a b c d}$ 中恰有 3 个不同数字时, 从 4 个数字中取 3 个数字有 $\\mathrm{C}_4^3$ 种取法.\n组成第 1,3 位数字相同的四位数有 $\\mathrm{A}_2^2$ 个,组成第 2,4 位数字相同的四位数也有 $\\mathrm{A}_2^2$ 个, 故这时不同的四位数有 $\\mathrm{C}_4^3\\left(\\mathrm{~A}_2^2+\\mathrm{A}_2^2\\right)=16$ 个; $\\overline{a b c d}$ 中恰有 4 个数字不同时, 取最小的数字放在第 1 位,其余 3 个数字任意排列, 这时不同的四位数有 $\\mathrm{A}_3^3=6$ 个.\n综上可得不同的四位数的个数为 $6+16+6=28$ 个.",
+    "remark": "",
+    "figures": []
+}

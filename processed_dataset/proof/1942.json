@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设正整数 $n_1<n_2<\\cdots<n_k$, 求证: $P(z)=1+z^{n_1}+z^{n_2}+\\cdots+ z^{n_k}=0$ 在 $|z|<\\frac{\\sqrt{5}-1}{2}$ 内没有根.",
+    "solution": "分析:与解用反证法.\n设 $P(z)=0$ 且 $|z|<\\frac{\\sqrt{5}-1}{2}$, 则\n$$\n|z|^2<1-|z|<1 . \\label{eq1}\n$$\n若 $n_1 \\geqslant 2$, 则 $n_2 \\geqslant 3$, 所以\n$$\n|z|^2 \\geqslant|z|^{n_1}=\\left|1+z^{n_2}+\\cdots+z^{n_k}\\right| \\geqslant 1-\\left(|z|^{n_2}+\\cdots+|z|^{n_k}\\right) \\geqslant 1-\n$$\n$\\frac{|z|^3}{1-|z|} \\geqslant 1-|z|$, 与式\\ref{eq1}矛盾!\n所以 $n_1=1$.\n若 $n_2 \\geqslant 3$, 则\n$$\n\\begin{aligned}\n\\left|z^2\\right| & =|1-(1-z)(1+z)|=\\left|1+(1-z)\\left(z^{n_2}+\\cdots+z^{n_k}\\right)\\right| \\\\\n& \\geqslant 1-\\left|\\left(z^{n_2}-z^{n_2+1}\\right)+\\left(z^{n_3}-z^{n_3+1}\\right)+\\cdots+\\left(z^{n_k}-z^{n_k+1}\\right)\\right|,\n\\end{aligned}\n$$\n若存在 $i$, 使 $n_i+1=n_{i+1}$, 则这两项抵消.\n所以\n$$\n|z|^2 \\geqslant 1-\\left(|z|^{n_2}+|z|^{n_2+1}+\\cdots\\right) \\geqslant 1-\\frac{|z|^3}{1-|z|} \\geqslant 1-|z|,\n$$\n矛盾!\n所以 $n_2=2$.\n$$\n\\begin{gathered}\nz^3=1-(1-z)\\left(1+z+z^2\\right)=1+(1-z)\\left(z^{n_3}+\\cdots+z^{n_k}\\right), \\text { 所以 } \\\\\n|z|^3 \\geqslant 1-\\left|\\left(z^{n_3}-z^{n_3+1}\\right)+\\cdots+\\left(z^{n_k}-z^{n_k+1}\\right)\\right| \\\\\n\\geqslant 1-\\left(|z|^{n_3}+|z|^{n_3+1}+\\cdots\\right) \\\\\n\\geqslant 1-\\frac{|z|^3}{1-|z|} \\geqslant 1-|z|>|z|^2,\n\\end{gathered}\n$$\n由此得到, $|z|>1$,与 $|z|<\\frac{\\sqrt{5}-1}{2}$ 矛盾.\n综上所述, 原命题成立, 证毕.",
+    "remark": "注:以上两例的技巧性比较高, 均是反证法结合模的放缩, 利用不等式解决了问题.",
+    "figures": []
+}

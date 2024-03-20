@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题24. 设 $\\triangle A B C$ 是锐角三角形, 其外接圆圆心为 $O$, 半径为 $R, A O$ 交 $\\triangle B O C$ 的外接圆于 $A^{\\prime}, B O$ 交 $\\triangle C O A$ 的外接圆于点 $B^{\\prime}, C O$ 交 $\\triangle A O B$ 的外接圆于点 $C^{\\prime}$. 证明: $O A^{\\prime} \\cdot O B^{\\prime} \\cdot O C^{\\prime} \\geqslant 8 R^3$, 并指出在什么条件下等号成立.",
+    "solution": "如图(<FilePath:./images/volume3/figures/fig-c6p24.png>), 作 $\\triangle B O C$ 的外接圆直径 $O D$, 连 $A^{\\prime} D 、 C D$, 则 $\\angle O A^{\\prime} D=\\angle O C D=90^{\\circ}$, 从而 $O A^{\\prime}=O D$. $\\cos \\angle A^{\\prime} O D=R \\cdot \\frac{\\cos \\angle A^{\\prime} O D}{\\cos \\angle C O D}$; 易知 $O D \\perp B C$, 于是 $\\angle C O D=\\angle A, \\angle A^{\\prime} O D=180^{\\circ}-\\angle C O D- \\angle A O C=180^{\\circ}-\\angle A-2 \\angle B=\\angle C-\\angle B$, 即 $O A^{\\prime}= R \\frac{\\cos (B-C)}{\\cos A}$, 同理 $O B^{\\prime}=R \\cdot \\frac{\\cos (A-C)}{\\cos B}, O C^{\\prime}= R \\frac{\\cos (B-A)}{\\cos C}$, 于是 $O A^{\\prime} \\cdot O B^{\\prime} \\cdot O C^{\\prime} \\geqslant 8 R^3 \\Leftrightarrow\\frac{\\cos (A-B)}{\\cos C} \\cdot \\frac{\\cos (A-C)}{\\cos B} \\cdot \\frac{\\cos (B-C)}{\\cos A} \\geqslant 8$, ( * ) 而 $\\frac{\\cos (A-B)}{\\cos C}= \\frac{\\cos A}{-\\cos A \\cos B+\\sin A \\sin B}=\\frac{1+\\cot A \\cdot \\cot B}{1-\\cot A \\cdot \\cot B}$, 令 $x=\\cot A \\cot B, y= \\cot B \\cot C, z=\\cot C \\cot A$. 则有 $x+y+z=1$, 又锐角三角形, 所以 $x, y$, $z>0, \\frac{1+x}{1-x}=\\frac{x+y+z+x}{x+y+z-x}=\\frac{(x+y)+(z+x)}{y+z} \\geqslant \\frac{2 \\sqrt{(x+y)(x+z)}}{y+z}$, 同理 $\\frac{1+y}{1-y} \\geqslant 2 \\frac{\\sqrt{(x+y)(y+z)}}{x+z}, \\frac{1+z}{1-z} \\geqslant 2 \\frac{\\sqrt{(x+z)(y+z)}}{x+y}$, 故( * ) 得证, 所以原结论获证.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c6p24.png"
+    ]
+}

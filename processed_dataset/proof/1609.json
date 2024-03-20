@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题37. 数列 $\\left\\{p_n\\right\\}$ 满足 $p_1=2, p_2=5, p_{n+2}=2 p_{n+1}+p_n, n=1,2, \\cdots$. 证明: 对任意正整数 $n$, 都有\n$$\np_n=\\sum \\frac{(i+j+k) !}{i ! j ! k !} .\n$$\n这里求和对满足 $i+j+2 k=n$ 的所有非负整数组 $(i, j, k)$ 进行.",
+    "solution": "构造一个组合模型: 用 $f(n)$ 表示由 $1 \\times 1$ 的红色方块, $1 \\times 1$ 的蓝色方块和 $1 \\times 2$ 的白色方块拼成的 $1 \\times n$ 的长条的数目.\n直接计算可知\n$$\nf(n)=\\sum \\frac{(i+j+k) !}{i ! j ! k !}\n$$\n这里的求和对 $i+j+2 k=n$ 的所有非负整数组 $(i, j, k)$ 进行.\n另一方面, 采用递推方法来计算 $f(n)$, 可知 $f(1)=2, f(2)=5$, 而对长为 $n+2$ 的 $1 \\times(n+2)$ 的长条, 如果第一个小方块为红色或蓝色, 去掉后共有 $f(n+1)$ 个符合条件的长条; 如果第一个小方块为白色 (其长度为 2 ), 去掉后共有 $f(n)$ 个符合条件的长条,故 $f(n+2)=2 f(n+1)+f(n)$.\n对比数列 $\\{f(n)\\}$ 与 $\\left\\{p_n\\right\\}$ 的初始值和递推关系式可知对任意 $n \\in \\mathbf{N}^*$, 都有 $f(n)=p_n$.\n所以, 命题成立.",
+    "remark": "",
+    "figures": []
+}

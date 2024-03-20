@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设 $a_1 、 a_2 、 a_3 、 b_1 、 b_2 、 b_3$ 为正实数, 求证:\n$$\n\\begin{aligned}\n& \\left(a_1 b_2+a_2 b_1+a_2 b_3+a_3 b_2+a_3 b_1+a_1 b_3\\right)^2 \\\\\n\\geqslant & 4\\left(a_1 a_2+a_2 a_3+a_3 a_1\\right)\\left(b_1 b_2+b_2 b_3+b_3 b_1\\right),\n\\end{aligned}\n$$\n等号当且仅当 $\\frac{a_1}{b_1}=\\frac{a_2}{b_2}=\\frac{a_3}{b_3}$ 时成立.",
+    "solution": "不妨设 $\\frac{b_1}{a_1} \\geqslant \\frac{b_2}{a_2} \\geqslant \\frac{b_3}{a_3}$. 考虑方程: $\\left(a_1 a_2+a_2 a_3+a_3 a_1\\right) x^2-\\left(a_1 b_2+\\right. \\left.a_2 b_1+a_3 b_2+a_2 b_3+a_3 b_1+a_1 b_3\\right) x+\\left(b_1 b_2+b_2 b_3+b_3 b_1\\right)=\\left(a_1 x-b_1\\right)\\left(a_2 x-\\right. \\left.b_2\\right)+\\left(a_2 x-b_2\\right)\\left(a_3 x-b_3\\right)+\\left(a_3 x-b_3\\right)\\left(a_1 x-b_1\\right)$.\n由于当 $x=\\frac{b_2}{a_2}$ 时, 上式右端 $=\\left(\\frac{a_3 b_2}{a_2}-b_3\\right)\\left(\\frac{a_1 b_2}{a_2}-b_1\\right) \\leqslant 0$, 因此这个关于 $x$ 的实系数二次三项式必有实根, 于是 $\\Delta \\geqslant 0$, 故原不等式成立.\n当不等式取等号时, $\\Delta=0$, 则上述关于 $x$ 的一元二次多项式必有等根 $\\frac{b_2}{a_2}$.\n于是, $\\frac{b_1}{a_1}=\\frac{b_2}{a_2}$ 与 $\\frac{b_2}{a_2}=\\frac{b_3}{a_3}$ 中至少有一个成立.\n不妨设 $\\frac{b_1}{a_1}=\\frac{b_2}{a_2}=\\lambda$. 有 $f(x)=\\left(a_1 a_2+a_2 a_3+a_3 a_1\\right)\\left(x-\\frac{b_2}{a_2}\\right)^2$.\n故 $\\left(a_1 a_2+a_2 a_3+a_3 a_1\\right)(x-\\lambda)^2=\\left(a_1 x-a_1 \\lambda\\right)\\left(a_2 x-a_2 \\lambda\\right)+\\left(a_2 x-\\right. \\left.a_2 \\lambda\\right)\\left(a_3 x-b_3\\right)+\\left(a_3 x-b_3\\right)\\left(a_1 x-a_1 \\lambda\\right)$.\n由此不难验证 $b_3=a_3 \\lambda$, 因此结论成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 如图(<FilePath:./images/volume7/figures/fig-c4p3.png>), 3 个圆有公共弦 $A B$. 任一条过点 $A$ 的直线 $l$ 与 3 个圆的交点依次为 $X 、 Y 、 Z$, 其中 $X \\neq B$. 证明: $\\frac{X Y}{Y} \\frac{Y}{}$ 为定值.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c4a3.png>), 因为 3 个圆有公共弦 $A B$, 故圆心 $O_1 、 O_2 、 O_3$ 共线.\n过 $O_1 、 O_2 、 O_3$ 分别作 $l$ 的垂线交 $l$ 于点 $H_1 、 H_2 、 H_3$. 易知 $A X=2 A H_1, A Y= 2 A H_2, A Z=2 A H_3$.\n故 $\\frac{X Y}{Y Z}=\\frac{H_1 H_2}{H_2 H_3}=\\frac{O_1 O_2}{O_2 O_3}$ 为定值.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4p3.png",
+        "./images/volume7/figures/fig-c4a3.png"
+    ]
+}

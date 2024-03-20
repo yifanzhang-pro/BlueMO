@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设 $x_1, x_2, \\cdots, x_n$ 都是正数, 且 $x_1+x_2+\\cdots+x_n=a$. 对 $m, n \\in \\mathbf{Z}^{+}, m$, $n>1$, 求证: $\\frac{x_1^m}{a-x_1}+\\frac{x_2^m}{a-x_2}+\\cdots+\\frac{x_n^m}{a-x_n} \\geqslant \\frac{a^{m-1}}{(n-1) n^{m-2}}$.",
+    "solution": "由平均不等式, $\\frac{x_i^m}{a-x_i}+\\frac{\\left(a-x_i\\right) a^{m-2}}{(n-1)^2 n^{m-2}}+\\underbrace{\\frac{a^{m-1}}{(n-1) n^{m-1}}+\\cdots+\\frac{a^{m-1}}{(n-1) n^{m-1}}}_{m-2 \\uparrow} \\geqslant$\n$$\nm \\cdot \\frac{x_i \\cdot a^{m-2}}{(n-1)} n^{n-2} \\text {. }\n$$\n故 $\\sum_{i=1}^n \\frac{x_i^m}{a-x_i} \\geqslant \\sum_{i=1}^n\\left[\\frac{m x_i a^{m-2}}{(n-1) n^{m-2}}-\\frac{\\left(a-x_i\\right) a^{m-2}}{(n-1)^2 n^{m-2}}-\\frac{(m-2) a^{m-1}}{(n-1) n^{m-1}}\\right]= \\frac{a^{m-1}}{(n-1) n^{m-2}}$.",
+    "remark": "注:: 本题也可利用 Cauchy 不等式及幕平均不等式加以解决.",
+    "figures": []
+}

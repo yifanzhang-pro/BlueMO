@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例6. 有 $m$ 个男孩与 $n$ 个女孩围坐在一个圆周上 $(m>0, n>0, m+ n \\geqslant 3)$, 将顺序相邻的 3 人中恰有 1 个男孩的组数记作 $a$, 顺序相邻的 3 人中恰有 1 个女孩的组数记作 $b$, 求证: $a-b$ 是 3 的倍数.",
+    "solution": "分析:与解用 $a_k$ 表示小孩, 且将 $a_k$ 赋值为 $a_k=\\left\\{\\begin{array}{l}\\omega, a_k \\text { 表示男孩时, } \\\\ \\bar{\\omega}, a_k \\text { 表示女孩时.\n}\\end{array}\\right.$\n其中 $\\omega=-\\frac{1}{2}+\\frac{\\sqrt{3}}{2} \\mathrm{i}$, 有 $\\omega^{3 m}=1$, 并且\n$$\na_k a_{k+1} a_{k+2}=\\left\\{\\begin{array}{l}\n\\omega^{-1},\\left(a_k, a_{k+1}, a_{k+2} \\text { 中恰有一个男孩 }\\right) \\\\\n\\omega,\\left(a_k, a_{k+1}, a_{k+2} \\text { 中恰有一个女孩 }\\right) \\\\\n1,\\left(a_k, a_{k+1}, a_{k+2} \\text { 中全都是男 (女) 孩 }\\right)\n\\end{array}\\right.\n$$\n从而得\n$$\n\\begin{aligned}\n1 & =\\left(a_1 a_2 \\cdots a_{m+n}\\right)^3 \\\\\n& =\\left(a_1 a_2 a_3\\right)\\left(a_2 a_3 a_4\\right) \\cdots\\left(a_{m+n} a_1 a_2\\right) \\\\\n& =\\omega^{b-a},\n\\end{aligned}\n$$\n故 $a-b$ 是 3 的倍数,证毕.",
+    "remark": "注:本题相当于是一个复数赋值问题.",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $0<a_1<a_2<\\cdots<a_{3 n-2}$, 其中 $n \\in \\mathbf{N}^*$. 证明: 对 $\\left(a_1, a_2, \\cdots\\right.$, $\\left.a_{3 n-2}\\right)$ 的任意两个排列 $\\left(b_1, b_2, \\cdots, b_{3 n-2}\\right),\\left(c_1, c_2, \\cdots, c_{3 n-2}\\right)$, 必存在某个 $i \\in\\{1,2, \\cdots, 3 n-2\\}$, 使得 $a_i b_i c_i \\geqslant a_n^3$.",
+    "solution": "证明:记 $A=\\left\\{i \\mid a_i \\geqslant a_n\\right\\}, B=\\left\\{i \\mid b_i \\geqslant a_n\\right\\}, C=\\left\\{i \\mid c_i \\geqslant a_n\\right\\}$, 则 $A$, $B, C$ 均为 $2 n-1$ 元集合.\n从而根据容斥原理,依次可得\n$$\n\\begin{gathered}\n|A \\cap B|=|A|+|B|-|A \\cup B| \\geqslant 2(2 n-1)-(3 n-2)=n, \\\\\n|A \\cap B \\cap C|=|A \\cap B|+|C|-|(A \\cap B) \\cup C| \\\\\n\\geqslant n+(2 n-1)-(3 n-2)=1 .\n\\end{gathered}\n$$\n不妨设 $i \\in A \\cap B \\cap C$, 则 $a_i b_i c_i \\geqslant a_n^3$.",
+    "remark": "注:本题是用容斥原理证明存在性的一个例子.\n本题也可以这样证明 $|A \\cap B \\cap C| \\geqslant 1$ :\n$$\n\\begin{aligned}\n|A \\cap B \\cap C|= & |A|+|B|+|C|-|A \\cup B|-|B \\cup C|-|C \\cup A|+ \\\\\n& |A \\cup B \\cup C| \\\\\n= & 3 \\times(2 n-1)+(|A \\cup B \\cup C|-|A \\cup B|)-|B \\cup C|-\n\\end{aligned}\n$$\n$$\n\\begin{aligned}\n& |C \\cup A| \\\\\n\\geqslant & 3 \\times(2 n-1)+0-(3 n-2)-(3 n-2) \\geqslant 1 .\n\\end{aligned}\n$$",
+    "figures": []
+}

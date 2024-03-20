@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题18. 方程 $2 \\cos ^2 x-\\sin x \\cos x=\\frac{1}{2}$ 的解集为",
+    "solution": "$\\left\\{x \\mid x=\\frac{k \\pi}{2}+\\frac{(-1)^k}{2} \\arcsin \\frac{1}{\\sqrt{5}}+\\frac{1}{2} \\arcsin \\frac{2}{\\sqrt{5}}, k \\in \\mathbf{Z}\\right\\}$.",
+    "remark": "",
+    "figures": []
+}

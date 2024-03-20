@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 如图(<FilePath:./images/volume7/figures/fig-c8p10.png>), $O 、 I$ 分别是 $\\triangle A B C$ 的外心、内心, $A D$ 是边 $B C$ 上的高, $I$ 在线段 $O D$ 上.\n求证: $\\triangle A B C$ 的外接圆半径等于边 $B C$ 上的旁切圆半径.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c8a10.png>), 设 $I_A$ 为旁心, $A I_A$ 交 $B C$ 于点 $E$, 交 $\\odot O$ 于点 $M$, 则 $M$ 为 $\\overparen{B C}$ 的中点.\n连结 $O M$, 则 $O M \\perp B C$. 作 $I_A F \\perp B C$ 于 $F$, 则由平行线性质, 有\n$$\n\\frac{A D}{A I}=\\frac{O M}{M I}(*), \\frac{A D}{I_A F}=\\frac{A E}{I_A E} .\n$$\n由性质 7 的推论 2 , 有 $\\frac{A I}{I E}=\\frac{I_A M}{M E}$, 即有 $\\frac{A I}{I_A M}=\\frac{I E}{M E}= \\frac{A I+I E}{I_A M+M E}=\\frac{A E}{I_A E}$. 从而 $\\frac{A D}{I_A F}=\\frac{A I}{I_A M}$, 亦即 $\\frac{A D}{A I}=\\frac{I_A F}{I_A M}$. \n注意到 (*) 式及 $M I=I_A M$. 故 $O M=I_A F$. 即 $\\triangle A B C$ 的外接圆半径 $O M$ 等于边 $B C$ 上的旁切圆半径 $I_A F$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8p10.png",
+        "./images/volume7/figures/fig-c8a10.png"
+    ]
+}

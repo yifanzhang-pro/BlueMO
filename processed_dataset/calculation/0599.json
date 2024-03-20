@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题13 当 $s$ 和 $t$ 取遍所有实数时, 求 $M=(s+5-3|\\cos t|)^2+(s-2|\\sin t|)^2$ 的最小值.",
+    "solution": "设$l:\\left\\{\\begin{array}{l}x=s+5,\\\\y=s,\\end{array}\\right.$, $C:\\left\\{\\begin{array}{l}x=3|cos t|,\\\\y=2|sin t|,\\end{array}\\right.$, 则$M$表示直线$l$上的点与曲线 $C$ 上的点之间距离的平方.\n作出直线 $l: y=x-5$ 及椭圆 $C: \\frac{x^2}{9}+\\frac{y^2}{4}=1 (x \\geqslant 0, y \\geqslant 0)$. 则所求的 $M$ 的最小值为 $A(3,0)$ 到直线 $l$ 的距离的平方.\n即为 2 .",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter12.tex",
+    "problem_type": "proof",
+    "problem": "例2. 求证能否将正整数集合 $\\mathbf{N}_{+}$分划为两个不相交的集合 $A$ 和 $B$, 满足:\n(1) $A$ 中任意三个数不成等差数列;\n(2) 不能由 $B$ 中元素组成一个非常数的无穷等差数列.",
+    "solution": "分析二同分析一知, 易构造满足条件 (1) 的 $A$, 为了使 $B=\\mathbf{N}_{+} \\backslash A$ 满足条件 (2), 只须满足对任意 $a, d \\in \\mathbf{N}_{+}$, 无穷等差数列 $\\{a+r d\\}(r=0,1,2$, …) 中至少有一项属于 $A$, 这只要 $A$ 中每一个数可写成 $a_i=b_i+c_i$ 的形式, 使得对任意 $a, d \\in \\mathbf{N}_{+}, b_i$ 可无穷多次取到 $a$ 的值, 且存在某个等于 $a$ 的 $b_i$, 它所对应的 $c_i$ 是任意 $d$ 的倍数.\n这只要 $A$ 中含有无穷多个形如 $a+m$ ! 的数即可.\n于是, 存在正整数 $m \\geqslant d$, 取 $r_0=\\frac{m !}{d}$, 则 $a+m !=a+r_0 d$ 为无穷等差数列 $\\{a+r d\\}$ 中一项.\n解法二令 $A=A_1 \\cup A_2 \\cup \\cdots \\cup A_n \\cup \\cdots$, 其中 $A_1=\\{1 !+1\\}, A_2= \\{2 !+1,3 !+2\\}, A_3=\\{4 !+1,5 !+2,6 !+3\\}, \\cdots, A_n=\\{m !+1, m !+ 2, \\cdots,(m+n-1) !+n\\}$ (其中 $\\left.m=\\frac{1}{2} n(n-1)+1\\right), \\cdots, B=\\mathbf{N}_{+} \\backslash A$, 则将 $A$ 中数从小到大排列时, 从第二项起, 每一项大于前面一项的 2 倍, 故 $A$ 中任意三个数不成等差数列, 其次 $B$ 中没有非常数列的无穷等差数列.\n事实上,若 $\\{a+n d\\}, n=0,1,2, \\cdots$ 是 $B$ 中一个非常数列的无穷等差数列, 这里 $a, d \\in \\mathbf{N}_{+}$, 由 $A$ 的构造知, 存在无穷多个 $m \\in \\mathbf{N}_{+}$使 $m !+a \\in A$, 故存在 $m \\geqslant d$, 使 $m !+a \\in A$. 令 $n_0=\\frac{m !}{d}$, 则 $m !+a=a+n_0 d \\in A$, 这与对任意 $n \\in \\mathbf{N}_{+}, a+n d \\in B$ 矛盾.\n可见存在满足条件 (1), (2) 的集合 $A$ 与 $B$.",
+    "remark": "",
+    "figures": []
+}

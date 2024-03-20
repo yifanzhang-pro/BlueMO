@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 已知数列 $\\left\\{a_n\\right\\}$ 中每项都是正整数且逐项递增, $a_2=2$. 若对任意 $m, n \\in\\mathbf{N}^*$, 有 $a_{m n}=a_m a_n$, 证明: $a_n=n$.",
+    "solution": "用反向数学归纳法.\n先证明对任意 $n=2^k\\left(k \\in \\mathbf{N}^*\\right)$, 有 $a_n=n$.\n$n=2$ 时结论显然成立.\n假设 $n=2^k$ 时成立, 即 $a_{2^k}=2^k$, 那么在已知条件中令 $m=2, n=2^k$ 得: $a_{2^{k+1}}=a_2 a_{2^k}=2 \\times 2^k=2^{k+1}$. 故 $n=2^{k+1}$ 时也成立.\n所以 $a_{2^k}=2^k$ 对任意正整数 $k$ 成立.\n再证明对任意正整数 $n \\geqslant 2$, 若 $a_n=n$, 则当 $1 \\leqslant k<n$ 时, $a_k=k$.\n事实上, 由已知得: $1 \\leqslant a_1<a_2<\\cdots<a_{n-1}<a_n=n$, 且 $a_1, a_2, \\cdots, a_{n-1} \\in \\mathbf{N}^*$, 所以必有 $a_1=1, a_2=2, \\cdots, a_{n-1}=n-1$.\n由反向归纳法可得 $a_n=n$ (经检验知这样的数列 $\\left\\{a_n\\right\\}$ 确实满足一切条件).",
+    "remark": "",
+    "figures": []
+}

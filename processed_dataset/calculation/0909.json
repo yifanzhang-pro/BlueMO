@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题22. 设 $\\left\\{a_n\\right\\}$ 为一个实数数列, 定义如下: $a_1=t, a_{n+1}=4 a_n\\left(1-a_n\\right), n=1$, $2, \\cdots$. 问:有多少个不同的实数 $t$, 使得 $a_{2011}=0$ ?",
+    "solution": "若 $t>1$, 则 $a_2<0$, 依此结合数学归纳法, 可知当 $n \\geqslant 2$ 时, 都有 $a_n<$ 0 , 从而 $a_{2011} \\neq 0$; 若 $t<0$, 同上可得 $n \\geqslant 1$ 时, 都有 $a_n<0$, 也不会有 $a_{2011}=$ 0 . 因此, 使 $a_{2011}=0$ 的 $t \\in[0,1]$.\n现可设 $t=\\sin ^2 \\alpha, 0 \\leqslant \\alpha \\leqslant \\frac{\\pi}{2}$, 则 $a_1=\\sin ^2 \\alpha$. 若 $a_n=\\sin ^2\\left(2^{n-1} \\alpha\\right)$, 则 $a_{n+1}=4 \\sin ^2\\left(2^{n-1} \\alpha\\right) \\cos ^2\\left(2^{n-1} \\alpha\\right)=\\sin ^2\\left(2^n \\alpha\\right)$. 于是, 由数学归纳法原理知对任意 $n$, 有 $a_n=\\sin ^2\\left(2^{n-1} \\alpha\\right)$. 因此, 由 $a_{2011}=0$, 得 $\\sin ^2\\left(2^{2010} \\alpha\\right)=0$, 从而 $2^{2010} \\alpha= k \\pi$, 即 $\\alpha=\\frac{k \\pi}{2^{2010}}, k \\in \\mathbf{Z}$. 结合 $0 \\leqslant \\alpha \\leqslant \\frac{\\pi}{2}$, 知 $0 \\leqslant k \\leqslant 2^{2009}$, 利用正弦函数在 $\\left[0, \\frac{\\pi}{2}\\right]$ 上是非负的, 且是单调递增的, 可得有 $2^{2009}+1$ 个不同的实数 $t$, 使得 $a_{2011}=0$.",
+    "remark": "",
+    "figures": []
+}

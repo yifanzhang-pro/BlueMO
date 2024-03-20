@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题17. 在 $\\triangle A B C$ 中, $A>B$, 下列三个不等式 (1) $\\sin A>\\sin B$; (2) $\\cos A<\\cos B$; (3) $\\tan A>\\tan B$, 其中正确的有",
+    "solution": "(1)(2). 在 $\\triangle A B C$ 中, $A>B$ 则 $a>b$, 所以 $2 R \\sin A>2 R \\sin B$, 即 (1) 正确; 又若 $A$ 为针角或直角, 则 $\\cos A \\leqslant 0<\\cos B$; 若 $A$ 为锐角, 则 $\\cos A< \\cos B$, 所以 (2) 正确; 若 $A$ 为钝角, $\\tan A<0$, 所以 (3) 错误.\n综上所述, 正确的有 (1)(2).",
+    "remark": "",
+    "figures": []
+}

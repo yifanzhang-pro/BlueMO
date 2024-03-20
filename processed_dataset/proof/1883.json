@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 已知梯形 $A B C D$ 的对角线 $A C 、 B D$ 交于点 $P$, 点 $Q$ 在平行线 $B C 、 A D$ 之间, 满足 $\\angle A Q D=\\angle C Q B$, 且 $P 、 Q$ 在直线 $C D$ 的两侧.\n证明: $\\angle B Q P=\\angle D A Q$.",
+    "solution": "证明: 设 $t=\\frac{A D}{B C}$, 以 $P$ 为位似中心, $-t$ 为位似比的位似变换 $h$ 将 $\\triangle P B C$ 变换到 $\\triangle P D A$.\n如图(<FilePath:./images/volume7/figures/fig-c6a1.png>), 设 $Q^{\\prime}=h(Q)$, 则 $Q 、 P 、 Q^{\\prime}$ 三点共线.\n由于点 $P 、 Q$ 在边 $A D$ 的同侧, 也在边 $B C$ 的同侧, 于是, 点 $Q^{\\prime} 、 P$ 也在边 $h(B C)=D A$ 的同侧.\n从而, 点 $Q 、 Q^{\\prime}$ 也在边 $A D$ 的同侧.\n此外, 点 $Q 、 C$\n在 $B D$ 的同侧, 点 $Q^{\\prime} 、 A$ 在 $B D$ 的另一侧.\n由位似变换 $h$ 知, $\\angle A Q^{\\prime} D= \\angle C Q B=\\angle A Q D$. 于是, $A 、 Q^{\\prime} 、 Q 、 D$ 四点共圆.\n从而, $\\angle D A Q=\\angle D Q^{\\prime} Q= \\angle D Q^{\\prime} P=\\angle B Q P$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6a1.png"
+    ]
+}

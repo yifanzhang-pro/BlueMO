@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-3.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设正数 $x_i$ 满足 $\\sum_{i=1}^n x_i==1$, 求证:\n$$\n\\sum_{i=1}^n \\frac{x_i}{\\sqrt{1-x_i}} \\geqslant \\frac{1}{\\sqrt{n-1}} \\sum_{i=1}^n \\sqrt{x_i} .\n$$",
+    "solution": "证明:由柯西不等式, 得\n$$\n\\sum_{i=1}^n \\frac{1}{\\sqrt{1-x_i}} \\cdot \\sum_{i=1}^n \\sqrt{1-x_i} \\geqslant n^2,\n$$\n以及\n$$\n\\sum_{i=1}^n \\sqrt{1-x_i} \\leqslant \\sqrt{\\sum_{i=1}^n 1 \\cdot \\sum_{i=1}^n\\left(1-x_i\\right)}=\\sqrt{n(n-1)},\n$$\n所以\n$$\n\\begin{aligned}\n\\sum_{i=1}^n \\frac{x_i}{\\sqrt{1-x_i}} & =\\sum_{i=1}^n \\frac{1}{\\sqrt{1-x_i}}-\\sum_{i=1}^n \\sqrt{1-x_i} \\\\\n& \\geqslant \\frac{n^2}{\\sum_{i=1}^n \\sqrt{1-x_i}}-\\sum_{i=1}^n \\sqrt{1-x_i} \\\\\n& \\geqslant \\frac{n^2}{\\sqrt{n(n-1)}}-\\sqrt{n(n-1)} \\\\\n& =\\sqrt{\\frac{n}{n-1}} .\n\\end{aligned}\n$$\n又由柯西不等式, 得\n$$\n\\sum_{i=1}^n \\sqrt{x_i} \\leqslant \\sqrt{\\sum_{i=1}^n 1 \\cdot \\sum_{i=1}^n x_i}=\\sqrt{n},\n$$\n故命题成立",
+    "remark": "",
+    "figures": []
+}

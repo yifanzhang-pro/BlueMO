@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例16. (Menelaus 定理) 直线 $l$ 与 $\\triangle A B C$ 的三边 $A B 、 B C 、 C A$ 或它们的延长线依次相交于 $D 、 E 、 F$, 求证: $\\frac{A D}{D B} \\cdot \\frac{B E}{E C} \\cdot \\frac{C F}{F A}=1$.",
+    "solution": "分析:结论的六条线段 $A D$ 和 $F A 、 B E$ 和 $D B 、 C F$ 和 $E C$ 分别是 $\\triangle A D F 、 \\triangle B D E 、 \\triangle C F E$ 的两条边, 可运用正弦定理, 将比值 $\\frac{A D}{F A} 、 \\frac{B E}{D B} 、 \\frac{C F}{E C}$ 表示成角的正弦的比值.\n证明如图(<FilePath:./images/volume3/figures/fig-c6i4.png>), 设 $\\angle A D F=\\alpha, \\angle C F E=\\beta$, $\\angle C E F=\\gamma$, 由正弦定理, 在 $\\triangle A D F$ 中, $\\frac{A D}{F A}=\\frac{\\sin \\beta}{\\sin \\alpha}$.\n在 $\\triangle B D E$ 中, $\\frac{B E}{D B}=\\frac{\\sin \\left(180^{\\circ}-\\alpha\\right)}{\\sin \\gamma}=\\frac{\\sin \\alpha}{\\sin \\gamma}$, 在 $\\triangle C F E$ 中, $\\frac{C F}{E C}=\\frac{\\sin \\gamma}{\\sin \\beta}$. 所以左边 $=\\frac{\\sin \\beta}{\\sin \\alpha}$.\n$\\frac{\\sin \\alpha}{\\sin \\gamma} \\cdot \\frac{\\sin \\gamma}{\\sin \\beta}=1$.\n评注可以证明, Menelaus 定理的逆命题也是正确的.\n在平面几何的竞赛中, 常用它们来证明有关三点共线的问题.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c6i4.png"
+    ]
+}

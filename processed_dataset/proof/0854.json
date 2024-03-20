@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 在由实数构成的 $n \\times n(n \\geqslant 2)$ 数表中, 第 $i$ 行 $n$ 个数之和为 $s_i$, 第 $j$ 列 $n$ 个数之和为 $t_j$. 记 $a_{i j}=s_i-t_j, i, j=1,2, \\cdots, n$, 求 $n^2$ 个数 $a_{i j} ( i, j=1$, $2, \\cdots, n)$ 中正数个数的最大值.",
+    "solution": "记数表中所有实数之和为 $S$, 显然 $s_1+s_2+\\cdots+s_n=t_1+t_2+\\cdots+ t_n=S$. 对 $k=0,1, \\cdots, n-1$, 在下标关于 $n$ 同余的意义下,有\n$$\n\\sum_{i=1}^n a_{i, i+k}=\\sum_{i=1}^n\\left(s_i-t_{i+k}\\right)=\\sum_{i=1}^n s_i-\\sum_{i=1}^n t_{i+k}=\\sum_{i=1}^n s_i-\\sum_{i=1}^n t_i=0,\n$$\n因此 $a_{1,1+k}, a_{2,2+k}, \\cdots, a_{n, n+k}$ 这 $n$ 个数中至多只有 $n-1$ 个正数.\n令 $k=0$, $1, \\cdots, n-1$ 可知 $a_{i j}(i, j=1,2, \\cdots, n)$ 中至多只有 $n(n-1)$ 个正数.\n另一方面, 若取如下数表,\n$\\begin{array}{cccc}0 & 0 & \\cdots & 0 \\\\ 1 & 1 & \\cdots & 1 \\\\ \\cdots & \\cdots & \\cdots & \\cdots \\\\ 1 & 1 & \\cdots & 1\\end{array}$\n则容易验证\n$$\n\\begin{gathered}\na_{1 j}=s_1-t_j=-(n-1), j=1,2, \\cdots, n, \\\\\na_{i j}=s_i-t_j=1, i=2,3, \\cdots, n, j=1,2, \\cdots, n,\n\\end{gathered}\n$$\n此时 $a_{i j}(i, j=1,2, \\cdots, n)$ 中正数个数为 $n(n-1)$.\n综上可知 $n^2$ 个数 $a_{i j}(i, j=1,2, \\cdots, n)$ 中正数个数的最大值为 $n(n-1)$.",
+    "remark": "注:由于 $a_{i j}$ 的值受到数表中第 $i$ 行与第 $j$ 列共 $2 n-2$ 个数的影响 (说明: 其中第 $i$ 行第 $j$ 列位置的数的改变并不影响 $a_{i j}$ 的值), 故先将 $n^2$ 个数 $a_{i j}(i$, $j=1,2, \\cdots, n)$ 按对角线分成 $n$ 个组.\n在每组中, 整体考虑 $n$ 个实数, 推得它们的和为 0 , 因此容易看出每组最多只有 $n-1$ 个正数.\n通常情况下, 某些对象在一个整体中可能是相互制约的, 因此将一个对象置于整体的视角下看待会比孤立地看待它获得更有用的信息.",
+    "figures": []
+}

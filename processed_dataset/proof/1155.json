@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-4.tex",
+    "problem_type": "proof",
+    "problem": "例2. 在一群数学家中, 每一个人都有一些朋友 (关系是互相的). 证明: 存在一个数学家他所有的朋友的平均值不小于这群人的朋友的平均数.",
+    "solution": "证明:记 $M$ 为这群数学家的集合, $n=|M|, F(m)$ 表示数学家 $m$ 的朋友的集合, $f(m)$ 表示数学家 $m$ 的朋友数 $(f(m)=|F(m)|)$. 即命题等价于证明:必有一个 $m_0$ 使\n$$\n\\frac{1}{f\\left(m_0\\right)} \\sum_{m \\in F\\left(m_0\\right)} f(m) \\geqslant \\frac{1}{n} \\sum_{m \\in M} f(m) .\n$$\n我们用反证法来证明这个命题, 如果不存在这样的数学家 $m_0$. 则对任意的 $m_0$, 有\n$$\nn \\cdot \\sum_{m \\in F\\left(m_0\\right)} f(m)<f\\left(m_0\\right) \\sum_{m \\in M} f(m) .\n$$\n对一切 $m_0$ 求和, 得\n$$\nn \\cdot \\sum_{m_0} \\sum_{m \\in F\\left(m_0\\right)} f(m)=n \\sum_m \\sum_{m \\in F\\left(m_0\\right)} f(m)=n \\sum_{m \\in M} f^2(m)<\\left(\\sum_{m \\in M} f(m)\\right)^2 .\n$$\n这与柯西不等式矛盾, 故命题成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题23. $ A 、 B 、 C$ 为 $\\triangle A B C$ 三内角, 证明:\n$$\n\\sqrt{\\tan \\frac{A}{2} \\tan \\frac{B}{2}+5}+\\sqrt{\\tan \\frac{B}{2} \\tan \\frac{C}{2}+5}+\\sqrt{\\tan \\frac{C}{2} \\tan \\frac{A}{2}+5} \\leqslant 4 \\sqrt{3} .\n$$",
+    "solution": "由 $\\tan \\frac{A}{2} \\tan \\frac{B}{2}+\\tan \\frac{B}{2} \\tan \\frac{C}{2}+\\tan \\frac{C}{2} \\tan \\frac{A}{2}=1$, 得 $\\left(\\tan \\frac{A}{2} \\tan \\frac{B}{2}+5\\right)+ \\left(\\tan \\frac{B}{2} \\tan \\frac{C}{2}+5\\right)+\\left(\\tan \\frac{C}{2} \\tan \\frac{A}{2}+5\\right)=16$, 所以 $\\left(\\sqrt{\\tan \\frac{A}{2} \\tan \\frac{B}{2}+5}+\\right. \\left.\\sqrt{\\tan \\frac{B}{2} \\tan \\frac{C}{2}+5}+\\sqrt{\\tan \\frac{A}{2} \\tan \\frac{C}{2}+5}\\right)^2=16+2 \\sqrt{\\tan \\frac{A}{2} \\tan \\frac{B}{2}+5} \\times \\sqrt{\\tan \\frac{B}{2} \\tan \\frac{C}{2}+5}+2 \\sqrt{\\tan \\frac{A}{2} \\tan \\frac{B}{2}+5} \\sqrt{\\tan \\frac{C}{2} \\tan \\frac{A}{2}+5}+2 \\sqrt{\\tan \\frac{B}{2} \\tan \\frac{C}{2}+5} \\sqrt{\\tan \\frac{C}{2} \\tan \\frac{A}{2}+5} \\leqslant 16+\\tan \\frac{A}{2} \\tan \\frac{B}{2}+5+\\tan \\frac{B}{2} \\tan \\frac{C}{2}+5+\\tan \\frac{A}{2} \\tan \\frac{B}{2}+ 5+\\tan \\frac{C}{2} \\tan \\frac{A}{2}+5+\\tan \\frac{B}{2} \\tan \\frac{C}{2}+5+\\tan \\frac{C}{2} \\tan \\frac{A}{2}+5=16+30+2=48$,\n所以 $\\sqrt{\\tan \\frac{A}{2} \\tan \\frac{B}{2}+5}+\\sqrt{\\tan \\frac{B}{2} \\tan \\frac{C}{2}+5}+\\sqrt{\\tan \\frac{C}{2} \\tan \\frac{A}{2}+5} \\leqslant \\sqrt{48}= 4 \\sqrt{3}$.",
+    "remark": "",
+    "figures": []
+}

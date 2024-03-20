@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 判断如图(<FilePath:./images/volume12/figures/fig-c5p3.png>)中的两个图形是否能一笔画.",
+    "solution": "这两个图都能一笔画.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c5p3.png"
+    ]
+}

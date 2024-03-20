@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题9 函数 $f(x)=\\frac{1}{\\sec ^2 x}+\\sin x$ 在 $|x| \\leqslant \\frac{\\pi}{4}$ 上的最小值是 ( ).\n(A) $\\frac{\\sqrt{2}-1}{2}$\n(B) $-\\frac{1+\\sqrt{2}}{2}$\n(C) -1\n(D) $\\frac{1-\\sqrt{2}}{2}$",
+    "solution": "D. 因 $f(x)=\\frac{1}{\\sec ^2 x}+\\sin x=\\cos ^2 x+\\sin x=-\\sin ^2 x+\\sin x+1= -\\left(\\sin x-\\frac{1}{2}\\right)^2+\\frac{5}{4}$, 当 $|x| \\leqslant \\frac{\\pi}{4}$ 时, $f(x)_{\\text {max }}=f\\left(\\frac{\\pi}{6}\\right)=\\frac{5}{4}, f(x)_{min}=f\\left(-\\frac{\\pi}{4}\\right)=\\frac{1-\\sqrt{2}}{2}$",
+    "remark": "",
+    "figures": []
+}

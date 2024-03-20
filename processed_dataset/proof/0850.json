@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 如图(<FilePath:./images/volume14/figures/fig-c8p7.png>), 在 $\\triangle A B C$ 中, $M$ 为 $B C$ 中点, $N, P, Q$ 分别在线段 $A M, A B, A C$ 内,使 $A, P, N, Q$ 四点共圆.\n证明: $A P \\cdot A B+A Q \\cdot A C=2 A N \\cdot A M$.",
+    "solution": "如图(<FilePath:./images/volume14/figures/fig-c8a7.png>), 连接 $P Q, P N, N Q$. 记 $\\angle P A N=\\alpha, \\angle Q A N= \\beta$. 由于 $M$ 为 $B C$ 中点, 故 $S_{\\triangle A B C}=2 S_{\\triangle A B M}=2 S_{\\triangle A M C}$, 即\n$$\n\\begin{gathered}\n\\frac{1}{2} A B \\cdot A C \\cdot \\sin (\\alpha+\\beta)=A B \\cdot A M \\cdot \\sin \\alpha= \\\\\nA M \\cdot A C \\cdot \\sin \\beta,\n\\end{gathered}\n$$\n所以 $\\frac{\\sin \\alpha}{\\sin (\\alpha+\\beta)}=\\frac{A C}{2 A M}, \\frac{\\sin \\beta}{\\sin (\\alpha+\\beta)}=\\frac{A B}{2 A M}$. \\label{eq1}\n由正弦定理得\n$$\n\\frac{N P}{\\sin \\alpha}=\\frac{N Q}{\\sin \\beta}=\\frac{P Q}{\\sin (\\alpha+\\beta)} . \\label{eq2}\n$$\n因为 $A, P, N, Q$ 四点共圆, 由托勒密定理得\n$$\nA N \\cdot P Q=A P \\cdot N Q+A Q \\cdot N P,\n$$\n结合 式\\ref{eq1}, \\ref{eq2}可得\n$$\n\\begin{aligned}\nA N & =A P \\cdot \\frac{N Q}{P Q}+A Q \\cdot \\frac{N P}{P Q}=\\frac{A P \\cdot \\sin \\beta}{\\sin (\\alpha+\\beta)}+\\frac{A Q \\cdot \\sin \\alpha}{\\sin (\\alpha+\\beta)} \\\\\n& =\\frac{A P \\cdot A B}{2 A M}+\\frac{A Q \\cdot A C}{2 A M} .\n\\end{aligned}\n$$\n从而 $A P \\cdot A B+A Q \\cdot A C=2 A N \\cdot A M$.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c8p7.png",
+        "./images/volume14/figures/fig-c8a7.png"
+    ]
+}

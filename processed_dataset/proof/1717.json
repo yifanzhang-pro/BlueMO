@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例5. 如图(<FilePath:./images/volume7/figures/fig-c5i7.png>), 从半圆上的一点 $C$ 向直径 $A B$ 引垂线, 设垂足为 $D$, 作圆 $O_1$ 分别切 $\\overparen{B C} 、 C D 、 D B$ 于点 $E 、 F 、 G$. 求证 : $A C=A G$.",
+    "solution": "证明:设半圆的圆心为 $O$, 则 $O 、 O_1 、 E$ 三点共线.\n连结 $O_1 F$ 知 $O_1 F \\perp C D$, 且 $O_1 F / / A B$, 连结 $E F 、 A E$.\n由 $\\angle F E O_1=\\frac{1}{2} \\angle F O_1 O=\\frac{1}{2} \\angle E O B=\\angle O E A \\Rightarrow E 、 F 、 A$ 三点共线.\n又因为 $\\angle A C B=90^{\\circ}$, 且 $C D \\perp A B$, 所以 $\\angle A C F=\\angle A B C=\\angle A E C$.\n从而 $A C$ 是 $\\triangle C E F$ 外接圆的切线, 故点 $A$ 对 $\\triangle C E F$ 外接圆的幕 $A C^2$ 等于点 $A$ 对 $\\odot O_1$ 的幕 $A G^2$ (也等于 $A E \\cdot A F$ ), 即 $A C=A G$.\n上面几道例题都是和幕相关的问题, 以下的问题都和根轴有关.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5i7.png"
+    ]
+}

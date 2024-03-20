@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 设 $m 、 n$ 都是正整数, $m$ 是奇数, 证明: $\\left(2^m-1,2^n+1\\right)=1$.",
+    "solution": "设 $d=\\left(2^m-1,2^n+1\\right)$. 则 $2^m-1=d u, 2^n+1=d v$, 这里 $u$ 、 $v$ 为整数.\n易知 $(d u+1)^n=(d v-1)^m$, 将两端展开 (注意 $m$ 为奇数), 得到 $d A+ 1=d B-1$ ( $A 、 B$ 为某两个整数), 由此可知 $d \\mid 2$, 即 $d=1$ 或 2 . 但显然 $d$ 只能是 1 .",
+    "remark": "",
+    "figures": []
+}

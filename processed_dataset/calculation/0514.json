@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例 11 已知 $x^2+4 y^2=4 x$, 求下列各式的最大值与最小值.\n(1) $u=x^2+y^2$; (2) $v=x+y$.",
+    "solution": "解:条件式可化为\n$$\n\\frac{(x-2)^2}{4}+y^2=1 .\n$$\n设 $\\left\\{\\begin{array}{l}x=2+2 \\cos \\theta, \\\\ y=\\sin \\theta\\end{array}\\right.$ ( $\\theta$ 为参数), 则\n(1) $u=(2+2 \\cos \\theta)^2+\\sin ^2 \\theta=3\\left(\\cos \\theta+\\frac{4}{3}\\right)^2-\\frac{1}{3}$,\n故\n$$\nu_{\\min }=0, u_{\\max }=16 \\text {. }\n$$\n(2) $v=2+2 \\cos \\theta+\\sin \\theta=\\sqrt{5} \\sin (\\theta+\\varphi)+2$,\n所以\n$$\nv_{\\min }=2-\\sqrt{5}, v_{\\max }=2+\\sqrt{5} \\text {. }\n$$\n说明若 $u^2+v^2=1$, 则令 $u=\\sin \\alpha, v=\\cos \\alpha, \\alpha \\in[0,2 \\pi)$. 若 $u, v \\in \\mathbf{R}^{+}$, 且 $u+v=1$, 则令 $u=\\sin ^2 \\alpha, v=\\cos ^2 \\alpha, \\alpha \\in\\left(0, \\frac{\\pi}{2}\\right)$ 等等.\n这些代换能帮助我们简化问题, 从而解决问题.",
+    "remark": "",
+    "figures": []
+}

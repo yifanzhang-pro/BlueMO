@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 若 $\\overrightarrow{O A}=\\vec{a}+\\vec{b}, \\overrightarrow{A B}=3(\\vec{a}-\\vec{b}), \\overrightarrow{C B}=3 \\vec{a}+\\vec{b}$, 则 $\\overrightarrow{O C}=$",
+    "solution": "$\\vec{a}-3 \\vec{b}$.\n$$\n\\begin{aligned}\n\\overrightarrow{O C} & =\\overrightarrow{O A}+\\overrightarrow{A B}+\\overrightarrow{B C}=\\overrightarrow{O A}+\\overrightarrow{A B}-\\overrightarrow{C B} \\\\\n& =\\vec{a}+\\vec{b}+3(\\vec{a}-\\vec{b})-(3 \\vec{a}+\\vec{b})=\\vec{a}-3 \\vec{b}\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

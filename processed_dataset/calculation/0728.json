@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题1 在 $\\triangle A B C$ 中, $a 、 b 、 c$ 三边成等差数列, 则 ( ).\n(A) $0<B<60^{\\circ}$\n(B) $0<B \\leqslant 60^{\\circ}$\n(C) $30^{\\circ}<B \\leqslant 60^{\\circ}$\n(D) $45^{\\circ}<B \\leqslant 60^{\\circ}$",
+    "solution": "B. 由条件得 $2 b=a+c$, 从而 $\\cos B=\\frac{a^2+c^2-b^2}{2 a c}=$\n$$\n\\begin{aligned}\n& \\frac{a^2+c^2-\\left[\\frac{1}{2}(a+c)\\right]^2}{2 a c}=\\frac{3 a^2+3 c^2-2 a c}{8 a c}=\\frac{3(a-c)^2+4 a c}{8 a c} \\geqslant \\frac{1}{2} \\text {, 故 } \\\\\n& 0<B \\leqslant 60^{\\circ} .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 凸六边形 $A B C D E F$ 中, $P, Q, R, S, T, U$ 分别为 $A B, B C, C D, D E$, $E F, F A$ 的中点.\n若 $P S, Q T, R U$ 均平分六边形 $A B C D E F$ 的面积, 证明: $P S, Q T, R U$ 三线共点.",
+    "solution": "如图(<FilePath:./images/volume14/figures/fig-c85.png>), 设 $Q T, R U$ 交于点 $X$. 连接 $X A, X B, X C, X D, X E, X F, X P, X S$. 由已知得\n$$\nS_{A B Q T F}=\\frac{1}{2} S_{A B C D E F}=S_{A B C R U},\n$$\n两边减去 $S_{A B Q X U}$, 得\n$$\nS_{X T F U}=S_{X Q C R} .\n$$\n又\n$$\n\\begin{aligned}\n& S_{X E F A}=S_{\\triangle X E F}+S_{\\triangle X F A}=2 S_{\\triangle X T F}+2 S_{\\triangle X F U}=2 S_{X T F U}, \\\\\n& S_{X B C D}=S_{\\triangle X B C}+S_{\\triangle X C D}=2 S_{\\triangle X Q C}+2 S_{\\triangle X C R}=2 S_{X Q C R},\n\\end{aligned}\n$$\n所以 $S_{X E F A}=S_{X B C D}$. 结合 $S_{\\triangle X A P}=S_{\\triangle X B P}, S_{\\triangle X E S}=S_{\\triangle X D S}$ 可知, 折线 $P X S$ 平分凸六边形 $A B C D E F$ 的面积.\n考虑到 $P S$ 也平分 $A B C D E F$ 的面积, 故 $P S$ 过点 $X$.\n从而 $P S, Q T, R U$ 三线共点.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c85.png"
+    ]
+}

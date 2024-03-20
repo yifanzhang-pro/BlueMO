@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例28 已知函数 $f(x)$ 满足 $f\\left(x^2\\right)-f(x)=1$, 求 $f(x)$.",
+    "solution": "解:构造数列 $\\left\\{x_n\\right\\}$ 如下:\n$$\nx_0, x_1=x_0^2, x_2=x_1^2, \\cdots, x=x_n=x_{n-1}^2 .\n$$\n将它们代入所给函数方程, 得\n$$\n\\begin{gathered}\nf\\left(x_1\\right)-f\\left(x_0\\right)=1, \\\\\nf\\left(x_2\\right)-f\\left(x_1\\right)=1, \\\\\n\\cdots \\cdots \\\\\nf\\left(x_n\\right)-f\\left(x_{n-1}\\right)=1 .\n\\end{gathered}\n$$\n将上面这些等式相加, 有 $f(x)-f\\left(x_0\\right)=n$.\n因为 $x=x_0^{2^n}$, 所以 $\\log _2 \\log _2 x-\\log _2 \\log _2 x_0=n$. 因此\n$$\nf(x)=f\\left(x_0\\right)+\\log _2 \\log _2 x-\\log _2 \\log _2 x_0 .\n$$\n令 $c=f\\left(x_0\\right)-\\log _2 \\log _2 x_0$, 那么\n$$\nf(x)=\\log _2 \\log _2 x+c .\n$$\n容易验证, 上面的 $f(x)$ 即为所求.",
+    "remark": "",
+    "figures": []
+}

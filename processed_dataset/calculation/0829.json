@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-2.tex",
+    "problem_type": "calculation",
+    "problem": "例6. 设实数 $a 、 b 、 c 、 d 、 e$ 满足\n$$\na+b+c+d+e=8, a^2+b^2+c^2+d^2+e^2=16,\n$$\n求 $e$ 的最大值.",
+    "solution": "解:将条件改写为\n$$\n8-e=a+b+c+d, 16-e^2=a^2+b^2+c^2+d^2,\n$$\n由此得到一个包含 $e$ 的不等式.\n由柯西不等式, 得\n$$\na+b+c+d \\leqslant(1+1+1+1)^{\\frac{1}{2}}\\left(a^2+b^2+c^2+d^2\\right)^{\\frac{1}{2}} .\n$$\n将条件代入并两边平方, 得\n$$\n\\begin{gathered}\n(8-e)^2 \\leqslant 4\\left(16-e^2\\right), \\\\\n64-16 e+e^2 \\leqslant 64-4 e^2, \\\\\n5 e^2-16 e \\leqslant 0, e(5-16 e) \\leqslant 0 .\n\\end{gathered}\n$$\n从此得到 $0 \\leqslant e \\leqslant \\frac{16}{5}$, 当 $a=b=c=d=\\frac{6}{5}$ 时达到最大值 $\\frac{16}{5}$.",
+    "remark": "注:用类似的方法可以证明下面的命题:\n设 $n(\\geqslant 3)$ 为正整数, $a 、 b$ 为给定的实数, 实数 $x_0, x_1, x_2, \\cdots, x_n$ 满足\n$$\n\\begin{aligned}\n& x_0+x_1+x_2+\\cdots+\\dot{x}_n=a, \\\\\n& x_0^2+x_1^2+x_2^2+\\cdots+x_n^2=b,\n\\end{aligned}\n$$\n则当 $b<\\frac{a^2}{n+1}$ 时, $x_0$ 不存在;\n当 $b=\\frac{a^2}{n+1}$ 时, $x_0=\\frac{a}{n+1}$;\n当 $b>\\frac{a^2}{n+1}$ 时, $x_0$ 满足\n$$\n\\frac{a-\\frac{1}{2} \\sqrt{\\delta}}{n+1} \\leqslant x_0 \\leqslant \\frac{a+\\frac{1}{2} \\sqrt{\\delta}}{n+1},\n$$\n其中 $\\delta$ 为二次方程 $(n+1) x_0^2-2 a x_0+a^2-n b=0$ 的判别式.",
+    "figures": []
+}

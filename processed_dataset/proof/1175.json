@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 已知 $a>0, b>0, a+2 b=1$. 求证: $\\frac{1}{a}+\\frac{2}{b} \\geqslant 9$.",
+    "solution": "$1=a+2 b=a+b+b \\geqslant 3 \\sqrt[3]{a b^2}$, 故 $\\frac{1}{\\sqrt[3]{a b^2}} \\geqslant 3 . \\frac{1}{a}+\\frac{2}{b}=\\frac{1}{a}+\\frac{1}{b}+$\n$$\n\\frac{1}{b} \\geqslant 3 \\sqrt[3]{\\frac{1}{a b^2}} \\geqslant 3 \\times 3=9\n$$",
+    "remark": "",
+    "figures": []
+}

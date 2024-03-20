@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter2-2.tex",
+    "problem_type": "proof",
+    "problem": "例3. 求所有的函数 $f: \\mathbf{N}^* \\rightarrow \\mathbf{N}^*$, 使得对任意 $n \\in \\mathbf{N}^*$ 及素数 $p$, 都有\n$$\nf(n)^p \\equiv n(\\bmod f(p)) . \\label{eq1}\n$$",
+    "solution": "解:对任意素数 $p$, 在式\\ref{eq1}中取 $n=p$, 可知\n$$\np \\equiv f(p)^p \\equiv 0(\\bmod f(p)) .\n$$\n故 $f(p) \\mid p$, 从而 $f(p)=1$ 或者 $p$.\n现在记 $S=\\{p \\mid p$ 为素数, $f(p)=p\\}$, 依下面的三种情形讨论:\n情形一 $S$ 是一个无限集.\n我们利用上例的方法证明: 对任意 $n \\in \\mathbf{N}^*$, 都有 $f(n)=n$.\n事实上, 此时存在无穷多个素数 $p$, 使得 $f(p)=p$, 因此, 对任意 $n \\in \\mathbf{N}^*$, 都存在无穷多个素数 $p$, 使得 $n \\equiv f(n)^p(\\bmod p)$. 利用费马 (Fermat) 小定理, 有 $f(n)^p \\equiv f(n)(\\bmod p)$. 所以 $f(n) \\equiv n(\\bmod p)$, 这表明 $f(n)-n$ 是无穷多个素数的倍数,故 $f(n)=n$.\n情形二 $S$ 为空集.\n则对任意素数 $p$, 都有 $f(p)=1$. 此时, 对其余的正整数 $n, f(n)$ 可取任意正整数 (\\ref{eq1} 式都满足).\n情形三 $S$ 是一个非空有限集.\n设 $p$ 为 $S$ 中最大的素数, 若 $p \\geqslant 3$, 我们证明这将导致矛盾, 从而, 得到 $S=\\{2\\}$.\n由 $p$ 的最大性, 知对任意素数 $q>p$, 都有 $f(q)=1$, 由 式\\ref{eq1} 得, $q \\equiv f(q)^p \\equiv 1(\\bmod p)$, 即 $q \\equiv 1(\\bmod p)$.\n现在记 $Q$ 为所有不超过 $p$ 的奇素数之积, 则 $Q+2$ 的每一个素因子都大于 $p$ (注意, 这里用到 $p \\geqslant 3$ ), 这样, 结合上面得出的结论知 $Q+-2 \\equiv 1(\\bmod p)$, 导致 $p \\mid Q+1$,与 $p \\mid Q$ 矛盾.\n上述讨论表明 $S=\\{2\\}$, 知 $f(2)=2$, 而对奇.\n数 $p$, 都有 $f(p)=1$. 由 式\\ref{eq1} 知, 只需 $f(n)^2 \\equiv n(\\bmod 2)$. 因此, 对其余的正整数 $n, f(n)$ 只需取与 $n$ 同奇偶的正整数即可.\n直接验证, 可知每一种情形所得的函数都符合要求, 它们即为所求.\n说明求 $\\mathbf{N}^* \\rightarrow \\mathbf{N}^*$ 上的函数, 本质上是讨论正整数数列 $\\{f(n)\\}$ 相关的问题, 这里都采用了素因数分析的方法, 它属于数论方法的迁移, 同样, 求解函数方程的一些思路也可用来讨论这类问题.",
+    "remark": "",
+    "figures": []
+}

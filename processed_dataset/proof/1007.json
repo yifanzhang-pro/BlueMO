@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例20. 平面上任给五个相异的点, 它们之间的最大距离与最小距离之比记为 $\\lambda$, 求证: $\\lambda \\geqslant 2 \\sin 54^{\\circ}$, 并讨论等号成立的充要条件.",
+    "solution": "分析:为什么出现 $54^{\\circ}$, 恰与正五边形有关, 因此, 应考虑这五个点与正五边形的关系.\n证明  (1)若五点中有三点共线, 不妨设 $A 、 B 、 C$ 三点共线,且 $B$ 在线段 $A C$ 上, 若 $A B \\leqslant B C$, 则 $\\frac{A C}{A B} \\geqslant 2>2 \\sin 54^{\\circ}$. 但这五点中最大的距离 $\\geqslant A C$, 最小的距离 $\\leqslant A B$, 从而 $\\lambda \\geqslant 2>2 \\sin 54^{\\circ}$.\n (2)若五点组成凸五边形, 则这个五边形必有一内角 $\\geqslant 108^{\\circ}$, 不妨设为 $A$,与 $A$ 相邻的顶点为 $B$ 和 $C$, 在 $\\triangle A B C$ 中, $A \\geqslant 108^{\\circ}$, 若 $B \\leqslant C$, 则 $B \\leqslant 36^{\\circ}$, 于是\n$$\n\\frac{B C}{A C}=\\frac{\\sin (B+C)}{\\sin B} \\geqslant \\frac{\\sin 2 B}{\\sin B}=2 \\cos B \\geqslant 2 \\cos 36^{\\circ}=2 \\sin 54^{\\circ},\n$$\n从而 $\\lambda \\geqslant \\frac{B C}{A C}>2 \\sin 54^{\\circ}$, 等号当且仅当这个五边形为正五边形时成立.\n(3) 若五点组成一个四边形 $A B C D$, 第五个点 $E$ 在四边形 $A B C D$ 内, 如图(<FilePath:./images/volume3/figures/fig-c5i8.png>), 连 $A C$, 则 $E$ 必在 $\\triangle A B C$ 或 $\\triangle A C D$ 内, 不妨设 $E$ 在 $\\triangle A B C$ 内, 则 $\\angle A E B 、 \\angle A E C$ 、 $\\angle B E C$ 中至少有一个角 $\\geqslant 120^{\\circ}>108^{\\circ}$, 可以化归为(2), 可证 $\\lambda>2 \\sin 54^{\\circ}$.\n (4)当这五点组成 $\\triangle A B C$, 而第四、五两点在 $\\triangle A B C$ 内, 任取其中一点 $E$, 则可化归为情形 (3), 仍可证 $\\lambda>2 \\sin 54^{\\circ}$.\n综上所述, $\\lambda \\geqslant 2 \\sin 54^{\\circ}$, 当且仅当这五点是正五边形的顶点时等号成立.\n评注分类讨论是本题的主要思想方法.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c5i8.png"
+    ]
+}

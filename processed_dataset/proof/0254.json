@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 设 $m \\geqslant 2, a_1, a_2, \\cdots, a_m$ 是给定的正整数.\n证明: 有无穷多个正整数 $n$, 使得数 $a_1 \\cdot 1^n+a_2 \\cdot 2^n+\\cdots+a_m \\cdot m^n$ 都是合数.",
+    "solution": "显然 $a_1+2 a_2+\\cdots+m a_m>1$, 故有素数 $p$ 整除 $a_1+2 a_2+\\cdots+m a_m$. 取 $n=k(p-1)+1, k=1,2, \\cdots$, 则对 $1 \\leqslant i \\leqslant m$, 若 $p \\nmid i$, 由费马小定理知\n$$\ni^n=i \\cdot\\left(i^k\\right)^{p-1} \\equiv i(\\bmod p) .\n$$\n若 $p \\mid i$, 上式显然也成立.\n因此\n$$\na_1 \\cdot 1^n+a_2 \\cdot 2^n+\\cdots+a_m \\cdot m^n \\equiv a_1+2 a_2+\\cdots+m a_m \\equiv 0(\\bmod p),\n$$\n又 $a_1 \\cdot 1^n+a_2 \\cdot 2^n+\\cdots+a_m \\cdot m^n$ 显然大于 $p$, 故它是一个合数.\n因此上述选取的 $n$ 符合要求, 这显然有无穷多个.",
+    "remark": "",
+    "figures": []
+}

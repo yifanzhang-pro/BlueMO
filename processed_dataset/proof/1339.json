@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例17. 求所有大于 1 的正整数 $n$, 使得对任意正实数 $x_1, x_2, \\cdots, x_n$, 都有不等式\n$$\n\\left(x_1+x_2+\\cdots+x_n\\right)^2 \\geqslant n\\left(x_1 x_2+x_2 x_3+\\cdots+x_n x_1\\right) .\n$$",
+    "solution": "解:当 $n=2$ 时, 不等式为 $\\left(x_1+x_2\\right)^2 \\geqslant 2\\left(x_1 x_2+x_2 x_1\\right)$, 即 $\\left(x_1-x_2\\right)^2 \\geqslant$ 0 , 故 $n=2$ 满足题意.\n当 $n=3$ 时,不等式 $\\quad\\left(x_1+x_2+x_3\\right)^2 \\geqslant 3\\left(x_1 x_2+x_2 x_3+x_3 x_1\\right) ,$\n等价于\n$$\n\\left(x_1-x_2\\right)^2+\\left(x_2-x_3\\right)^2+\\left(x_3-x_1\\right)^2 \\geqslant 0,\n$$\n故 $n=3$ 满足题意.\n当 $n=4$ 时, 不等式为\n$$\n\\begin{gathered}\n\\left(x_1+x_2+x_3+x_4\\right)^2 \\geqslant 4\\left(x_1 x_2+x_2 x_3+x_3 x_4+x_4 x_1\\right) \\\\\n\\Leftrightarrow\\left(x_1-x_2+x_3-x_4\\right)^2 \\geqslant 0 .\n\\end{gathered}\n$$\n故 $n=4$ 满足题意.\n下证当 $n>4$ 时, 不等式不可能对任意正实数 $x_1, x_2, \\cdots, x_n$ 都成立.\n取\n$$\nx_1=x_2=1, x_3=x_4=\\cdots=x_n=\\frac{1}{5(n-2)},\n$$\n则原不等式为\n$$\n\\left[1+1+(n-2) \\cdot \\frac{1}{5(n-2)}\\right]^2 \\geqslant n\\left(1+\\frac{2}{5(n-2)}+\\frac{n-3}{25(n-2)^2}\\right)\n$$\n$$\n\\Leftrightarrow \\frac{121}{25} \\geqslant n+\\frac{2 n}{5(n-2)}+\\frac{n(n-3)}{25(n-2)^2},\n$$\n这与 $\\frac{121}{25}<5 \\leqslant n$ 矛盾.\n所以满足题意的正整数 $n$ 为 $2 、 3 、 4$.",
+    "remark": "",
+    "figures": []
+}

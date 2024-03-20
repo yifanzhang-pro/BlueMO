@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例5. 已知 $x_1 、 x_2 、 x_3 、 x_4 、 y_1 、 y_2$ 满足:\n$$\n\\begin{gathered}\ny_2 \\geqslant y_1 \\geqslant x_4 \\geqslant x_3 \\geqslant x_2 \\geqslant x_1 \\geqslant 2, \\\\\nx_1+x_2+x_3+x_4 \\geqslant y_1+y_2,\n\\end{gathered}\n$$\n求证: $x_1 x_2 x_3 x_4 \\geqslant y_1 y_2$.",
+    "solution": "证明:保持 $y_1+y_2$ 不变, 将 $y_1$ 调大至 $y_1 、 y_2$ 相等, 且相等于 $\\frac{y_1+y_2}{2}$, 则 $y_1 y_2$ 在此过程中增大, 因此我们只需对 $y_1=y_2=y$ 的情况作出证明.\n即已知\n$$\n\\begin{gathered}\ny \\geqslant x_4 \\geqslant x_3 \\geqslant x_2 \\geqslant x_1 \\geqslant 2, \\\\\nx_1+x_2+x_3+x_4 \\geqslant 2 y,\n\\end{gathered}\n$$\n要证明:\n$$\nx_1 x_2 x_3 x_4 \\geqslant y^2 \\text {. }\n$$\n下面分三种情况讨论:\n(1) $y \\leqslant 4$, 显然 $x_1 x_2 x_3 x_4 \\geqslant 2^4 \\geqslant y^2$.\n(2) $4<y \\leqslant 6$. 保持 $x_1+x_4, x_2+x_3$ 不变, 将 $x_1 、 x_2$ 调整为 2 , 接着保持 $x_3+x_4$ 不变,再将 $x_3$ 调整为 2 .\n由于 $x_1 x_2 x_3 x_4$ 在调整过程中减小,故只需证明:\n$$\n2^3 \\cdot x_4 \\geqslant y^2 \\text {. }\n$$\n而\n$$\n2^3 \\cdot x_4 \\geqslant 8(2 y-6) \\text {, }\n$$\n故只需证明 $8(2 y-6) \\geqslant y^2$, 即 $(y-4)(y-12) \\leqslant 0$.\n由于 $4<y \\leqslant 6$, 上式显然成立.\n(3) $y>6$. 保持和 $x_1+x_4 、 x_2+x_3$ 不变, 分情况作调整:\n(i) 如果这两个和均 $\\geqslant y+2$, 则将 $x_4 、 x_3$ 调整为 $y$, 此时结论显然成立.\n(ii) 如果两个和中只有 1 个 $\\geqslant y+2$. 不妨设 $x_1+x_4 \\geqslant y+2$, 则将 $x_4$ 调整为 $y, x_2$ 调整为 2 , 再保持 $x_1+x_3$ 不变, 将 $x_1$ 调整为 2 , 则 $x_1 x_2 x_3 x_4 \\geqslant 2^2 y(y-4)>y^2$, 结论成立.\n(iii) 如果两个和都 $<y+2$, 则将 $x_1 、 x_2$ 调整为 2 , 再保持 $x_3+x_4$ 不变, 将其中较大的那个调整为 $y$, 同样有 $x_1 x_2 x_3 x_4 \\geqslant 2^2 y(y-4)>y^2$, 故结论成立.",
+    "remark": "",
+    "figures": []
+}

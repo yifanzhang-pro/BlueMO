@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 由沿河城市 $A$ 运货到城市 $B, B$ 离河岸最近点 $C$ 为 $30 \\mathrm{~km}, C$ 和 $A$ 的距离为 $40 \\mathrm{~km}$, 如果每公里运费水路比公路便宜一半, 如图(<FilePath:./images/volume3/figures/fig-c6i2.png>) 所示,计划沿 $B D$ 修一条公路,则 $A 、 D$ 之间距离为多少时,运费最低?",
+    "solution": "分析:利用函数求最值问题时, 关键是参数的假定, 究竟以哪个量作为自变量呢? 本题设$\\angle C D B=\\theta$ 最佳.\n解设 $\\angle B D C=\\theta$, 则 $B D=\\frac{30}{\\sin \\theta}, A D=40-\\frac{30}{\\tan \\theta}$, 且 $\\arctan \\frac{3}{4}<\\theta<\\frac{\\pi}{2}$.\n设每公里运费水路和公路分别为 $a$ 和 $2 a$, 不妨设由 $A$ 到 $B$ 的单程运费为 $y$, 则\n$$\ny=a\\left(40-\\frac{30}{\\tan \\theta}\\right)+2 a \\cdot \\frac{30}{\\sin \\theta}=10 a \\cdot\\left(4+3 \\cdot \\frac{2-\\cos \\theta}{\\sin \\theta}\\right),\n$$\n令 $k=\\frac{2-\\cos \\theta}{\\sin \\theta}$, 则 $\\cos \\theta+k \\sin \\theta=2, \\sqrt{1+k^2} \\sin (\\theta+\\varphi)=2$.\n其中 $\\sin \\varphi=\\frac{1}{\\sqrt{1+k^2}}, \\cos \\varphi=\\frac{k}{\\sqrt{1+k^2}}$, 于是 $\\frac{2}{\\sqrt{1+k^2}} \\leqslant 1$, 解得\n$$\nk \\geqslant \\sqrt{3} \\text {, 即 } y \\geqslant 10(4+3 \\sqrt{3}) a \\text {. }\n$$\n所以, 当 $k=\\sqrt{3}$, 即 $\\cos \\theta+\\sqrt{3} \\sin \\theta=2, \\theta=60^{\\circ}$ 时, $y$ 有最小值 $10(4+3 \\sqrt{3}) a$, 此时 $A D=40-10 \\sqrt{3}(\\mathrm{~km})$.\n答: 当 $A 、 D$ 之间距离为 $40-10 \\sqrt{3} \\mathrm{~km}$ 时, 运费最低.\n评注本题如直接设 $A D=x \\mathrm{~km}$, 则 $C D=40-x, B D= \\sqrt{30^2+(40-x)^2}$, 从而 $y=a x+2 a \\sqrt{900+(40-x)^2}$, 这个函数的最值问题, 仍宜采用三角换元法来解.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c6i2.png"
+    ]
+}

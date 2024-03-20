@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 求出所有可以表示为两个整数平方差的整数.",
+    "solution": "设整数 $n$ 可表示为两个整数的平方差: $n=x^2-y^2$, 即 $n=(x-y) (x+y)$. 由于 $x-y$ 与 $x+y$ 的奇偶相同,故或者 $n$ 是奇数,或者 $n$ 被 4 整除.\n反过来, 若 $n$ 为奇数, 可取 $x-y=1, x+y=n$, 即 $x=\\frac{n+1}{2}, y=\\frac{n-1}{2}$; 若\n$4 \\mid n$, 可取 $x-y=2, x+y=\\frac{n}{2}$, 即 $x=\\frac{n}{4}+1, y=\\frac{n}{4}-1$, 则 $x^2-y^2=n$.",
+    "remark": "",
+    "figures": []
+}

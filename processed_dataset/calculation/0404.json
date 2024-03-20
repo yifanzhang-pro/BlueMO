@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter9.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 设数列 $\\left\\{a_n\\right\\}$ 与 $\\left\\{b_n\\right\\}$ 满足 $a_1=1, b_1=3$, 且\n$$\n\\left\\{\\begin{array}{l}\na_{n+1}=a_n+b_n-\\sqrt{a_n^2-a_n b_n+b_n^2}, \\\\\nb_{n+1}=b_n+a_n+\\sqrt{b_n^2-b_n a_n+a_n^2},\n\\end{array} n=1,2, \\cdots .\\right.\n$$\n求数列 $\\left\\{a_n\\right\\}$ 与 $\\left\\{b_n\\right\\}$ 的通项公式.",
+    "solution": "解:已知得:\n$$\n\\begin{aligned}\n& a_{n+1}+b_{n+1}=2\\left(a_n+b_n\\right), \\\\\n& a_{n+1} b_{n+1}=\\left(a_n+b_n\\right)^2-\\left(a_n^2-a_n b_n+b_n^2\\right)=3 a_n b_n .\n\\end{aligned}\n$$\n从而\n$$\n\\begin{aligned}\n& a_n+b_n=2^{n-1}\\left(a_1+b_1\\right)=2^{n+1}, \\\\\n& a_n b_n=3^{n-1} a_1 b_1=3^n,\n\\end{aligned}\n$$\n故 $a_n, b_n$ 是方程 $x^2-2^{n+1} x+3^n=0$ 的两个实根, 且根据条件得 $a_n<b_n$, 所以\n$$\na_n=2^n-\\sqrt{4^n-3^n}, b_n=2^n+\\sqrt{4^n-3^n} .\n$$",
+    "remark": "注:本题中的两个递推式具有明显的对偶特征,故将它们联系起来整体考虑, 求解十分简明.\n由此反映出一个基本想法: 对条件或结论中的整体性特征, 应积极加以利用.",
+    "figures": []
+}

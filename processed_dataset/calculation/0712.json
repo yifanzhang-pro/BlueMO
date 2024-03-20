@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题9 设 $\\alpha 、 \\beta$ 为钝角, 且 $\\sin \\alpha=\\frac{\\sqrt{5}}{5}, \\cos \\beta=-\\frac{3 \\sqrt{10}}{10}$, 则 $\\alpha+\\beta$ 的值为 ( ).\n(A) $\\frac{3}{4} \\pi$\n(B) $\\frac{5}{4} \\pi$\n(C) $\\frac{7}{4} \\pi$\n(D) $\\frac{5 \\pi}{4}$ 或 $\\frac{7 \\pi}{4}$",
+    "solution": "C. 参照例 10 可知 $\\alpha+\\beta=\\frac{7 \\pi}{4}$.",
+    "remark": "",
+    "figures": []
+}

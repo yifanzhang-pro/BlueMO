@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 某次兵乓球单打比赛, 原计划每两名选手比赛一场, 但有 3 名选手各比赛了 2 场后退出了比赛, 这样全部比赛一共进行了 50 场, 那么上述 3 名选手之间比赛的场次数是 .",
+    "solution": "设共有 $n$ 名选手,该 3 名选手之间比赛的场数为 $r$, 则 $50=\\mathrm{C}_{n-3}^2+(3 \\times 2-r)$, 即 $(n-3)(n-4)=88+2 r$, 经检验仅当 $r=1$ 时, $n=13$ 为正整数, 故 3 名选手之间比赛了 1 场.",
+    "remark": "",
+    "figures": []
+}

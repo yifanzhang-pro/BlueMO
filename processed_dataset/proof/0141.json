@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $m>n \\geqslant 0$, 证明 : $\\left(2^{2^n}+1\\right) \\mid\\left(2^{2^m}-1\\right)$.",
+    "solution": "证明:取 $x=2^{2^{n+1}}, y=1$, 并以 $2^{m-n-1}$ 代替那里的 $n$, 得出\n$$\n2^{2^m}-1=\\left(2^{2^{n+1}}-1\\right)\\left[\\left(2^{2^{n+1}}\\right)^{2^{m-n-1}-1}+\\cdots+2^{2^{n+1}}+1\\right],\n$$\n故\n$$\n\\left(2^{2^{n+1}}-1\\right) \\mid\\left(2^{2^m}-1\\right) \\text {. }\n$$\n又\n$$\n\\begin{gathered}\n2^{2^{n+1}}-1=\\left(2^{2^n}-1\\right)\\left(2^{2^n}+1\\right), \\\\\n\\left(2^{2^n}+1\\right) \\mid\\left(2^{2^{n+1}}-1\\right) .\n\\end{gathered}\n$$\n从而于是由整除性质知 $\\left(2^{2^n}+1\\right) \\mid\\left(2^{2^m}-1\\right)$.",
+    "remark": "注:整除问题中,有时直接证明 $b \\mid a$ 不易人手,我们可以尝试着选择适当的\"中间量\" $c$, 来证明 $b \\mid c$ 及 $c \\mid a$, 由此及整除性质(1), 便导出了结论.",
+    "figures": []
+}

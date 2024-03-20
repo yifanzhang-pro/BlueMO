@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-2.tex",
+    "problem_type": "calculation",
+    "problem": "例11. 对 $a, b, c \\in \\mathbf{R}^{+}$, 求\n$$\n\\frac{(a+b)^2+(a+b+4 c)^2}{a b c}(a+b+c)\n$$\n的最小值.",
+    "solution": "解:由平均值不等式, 得\n$$\n\\begin{aligned}\n(a+b)^2+(a+b+4 c)^2 & =(a+b)^2+[(a+2 c)+(b+2 c)]^2 \\\\\n& \\geqslant(2 \\sqrt{a b})^2+(2 \\sqrt{2 a c}+2 \\sqrt{2 b c})^2 \\\\\n& =4 a b+8 a c+8 b c+16 c \\sqrt{a b},\n\\end{aligned}\n$$\n于是 $\\quad \\frac{(a+b)^2+(a+b+4 c)^2}{a b c} \\cdot(a+b+c)$\n$$\n\\begin{aligned}\n& \\geqslant \\frac{4 a b+8 a c+8 b c+16 c \\sqrt{a b}}{a b c} \\cdot(a+b+c) \\\\\n& =\\left(\\frac{4}{c}+\\frac{8}{b}+\\frac{8}{a}+\\frac{16}{\\sqrt{a b}}\\right)(a+b+c) \\\\\n& =8\\left(\\frac{1}{2 c}+\\frac{1}{b}+\\frac{1}{a}+\\frac{1}{\\sqrt{a b}}+\\frac{1}{\\sqrt{a b}}\\right)\\left(\\frac{a}{2}+\\frac{a}{2}+\\frac{b}{2}+\\frac{b}{2}+c\\right) \\\\\n& \\geqslant 8\\left(5 \\sqrt[5]{\\frac{1}{2 a^2 b^2 c}}\\right)\\left(5 \\sqrt[5]{\\frac{a^2 b^2 c}{2^4}}\\right)=100 .\n\\end{aligned}\n$$\n当 $a=b=2 c>0$ 时取等号.\n故所求最小值为 100 .",
+    "remark": "",
+    "figures": []
+}

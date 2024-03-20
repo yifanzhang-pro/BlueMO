@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例11. 设 $\\varphi$ 是集合 $X=\\{1,2, \\cdots, n\\}$ 上的置换, 将 $X$ 上没有不动点的置换个数记为 $f_n$, 恰有一个不动点的置换个数记为 $g_n$, 证明: $\\left|f_n-g_n\\right|=1$.",
+    "solution": "证明:设 $g_{n_i}(i=1,2, \\cdots, n)$ 表示 $X$ 上恰有唯一不动点 $i$ 的置换个数.\n于是\n$$\ng_n=g_{n_1}+g_{n_2}+\\cdots+g_{n_n} .\n$$\n由上述推论, 有\n$$\nf_n=D_n, g_{n_i}=D_{n-1}(i=1,2, \\cdots, n),\n$$\n故\n$$\ng_n=n D_{n-1}\n$$\n所以\n$$\n\\begin{aligned}\n\\left|f_n-g_n\\right|= & \\left|D_n-n D_{n-1}\\right| \\\\\n= & \\mid n !\\left(1-\\frac{1}{1 !}+\\frac{1}{2 !}-\\cdots+\\frac{(-1)^{n-1}}{(n-1) !}+\\frac{(-1)^n}{n !}\\right)- \\\\\n& n \\cdot(n-1) !\\left(1-\\frac{1}{1 !}+\\frac{1}{2 !}-\\cdots+\\frac{(-1)^{n-1}}{(n-1) !}\\right) \\mid \\\\\n= & \\left|n ! \\cdot \\frac{(-1)^n}{n !}\\right| \\\\\n= & 1 .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

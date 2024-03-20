@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 给定大于 1 的自然数 $a 、 b 、 n, A_{n-1}$ 和 $A_n$ 是 $a$ 进制数, $B_{n-1}$ 和 $B_n$ 是 $b$ 进制数, $A_{n-1} 、 A_n 、 B_{n-1} 、 B_n$ 定义为:\n$$\n\\begin{aligned}\n& A_n=x_n x_{n-1} \\cdots x_0, A_{n-1}=x_{n-1} x_{n-2} \\cdots x_0(\\text { 按 } a \\text { 进制写出 }) \\\\\n& B_n=x_n x_{n-1} \\cdots x_0, B_{n-1}=x_{n-1} x_{n-2} \\cdots x_0(\\text { 按 } b \\text { 进制写出 })\n\\end{aligned}\n$$\n其中 $x_n \\neq 0, x_{n-1} \\neq 0$. 求证: 当 $a>b$ 时,有 $\\frac{A_{n-1}}{A_n}<\\frac{B_{n-1}}{B_n}$.",
+    "solution": "由于 $A_n>0, B_n>0$, 所以只需证 $A_n B_{n-1}-A_{n-1} B_n>0$, 而\n$$\n\\begin{aligned}\n& A_n B_{n-1}-A_{n-1} B_n \\\\\n= & \\left(x_n \\cdot a^n+A_{n-1}\\right) B_{n-1}-A_{n-1}\\left(x_n b^n+B_{n-1}\\right) \\\\\n= & x_n\\left(a^n B_{n-1}-b^n A_{n-1}\\right) \\\\\n= & x_n\\left[x_{n-1}\\left(a^n b^{n-1}-a^{n-1} b^n\\right)+x_{n-2}\\left(a^n b^{n-2}-a^{n-2} b^n\\right)+\\cdots+x_0\\left(a^n-b^n\\right)\\right] .\n\\end{aligned}\n$$\n因为 $a>b$, 故当 $1 \\leqslant k \\leqslant n$ 时, $a^n \\cdot b^{n-k}>a^{n-k} \\cdot b^n$, 并且 $x_i \\geqslant 0(i=0$, $1,2, \\cdots, n-2), x_{n-1}, x_n \\geqslant 0$, 于是 $A_n B_{n-1}-A_{n-1} B_n>0$.",
+    "remark": "",
+    "figures": []
+}

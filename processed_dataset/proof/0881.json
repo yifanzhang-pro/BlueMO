@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例6 已知方程\n$$\n(a x+1)^2=a^2\\left(1-x^2\\right),\n$$\n其中, $a>1$. 证明: 方程的正根比 1 小, 负根比 -1 大.",
+    "solution": "证原方程整理后, 得 $2 a^2 x^2+2 a x+1-a^2=0$.\n令 $\\quad f(x)=2 a^2 x^2+2 a x+1-a^2$,\n则 $f(x)$ 是开口向上的抛物线, 且 $f(0)=1-a^2<0$. 故此二次函数 $f(x)=0$ 有一个正根, 一个负根.\n要证明正根比 1 小, 只需证 $f(1)>0$. 要证明负根比 -1 大, 只需证 $f(-1)>0$. 因为\n$$\n\\begin{gathered}\nf(1)=2 a^2+2 a+1-a^2=(a+1)^2>0, \\\\\nf(-1)=2 a^2-2 a+1-a^2=(a-1)^2>0,\n\\end{gathered}\n$$\n从而命题得证.",
+    "remark": "",
+    "figures": []
+}

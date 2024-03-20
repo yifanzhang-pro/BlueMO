@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例6. 在半径为 16 的圆中有 650 个红点, 证明: 可作一个内半径为 2 、外半径为 3 的圆环 $C$, 使 $C$ 内 (不含边界) 至少含有 10 个红点.",
+    "solution": "证明:以 650 个红点中的每一点为中心, 作内半径为 $2+\\varepsilon$, 外半径为 $3- \\varepsilon$ 的圆环 $C_i(1 \\leqslant i \\leqslant 650)$, 每个 $C_i$ 的面积为\n$$\nS_i=\\pi\\left((3-\\varepsilon)^2-(2+\\varepsilon)^2\\right)=5 \\pi(1-2 \\varepsilon),\n$$\n其中 $0<\\varepsilon<\\frac{1}{2}$.\n显然这些圆环都在一个半径为 19 的圆 $C_0$ 内, 其中 $C_0$ 的面积 $S_0=361 \\pi$.\n取定 $\\varepsilon=0.0001$, 则\n$$\n\\sum_{i=1}^{650} S_i=3250 \\pi \\times 0.9998>3249 \\pi=9 S_0,\n$$\n故由面积重叠原理可知, $C_0$ 中必有一点被不少于 10 个圆环 $C_i$ 覆盖.\n以这一点为中心, 作一个内半径为 2 、外半径为 3 的圆环 $C$, 其内部必含有 10 个 $C_i$ 的中心, 故圆环 $C$ 满足题意.",
+    "remark": "注:面积重叠原理可谓几何上的\"抽屉原理\". 在考虑一些覆盖、嵌人、重叠问题时, 常通过面积来证明一些存在性的结论(有时需辅以膨胀、收缩的技巧).",
+    "figures": []
+}

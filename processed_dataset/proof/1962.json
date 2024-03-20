@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $z_k(k=0,1, \\cdots, n-1)$ 是 $z^n-1=0$ 的 $n$ 个根, 定义\n$$\nf(x)=a_m x^m+a_{m-1} x^{m-1}+\\cdots+a_1 x+a_0,\n$$\n其中 $m$ 为小于 $n$ 的正整数, 求证: $-\\frac{1}{n} \\sum_{k=0}^{n-1} f\\left(z_k\\right)=a_0$.",
+    "solution": "分析:与解令 $z_k=\\cos \\frac{2 k \\pi}{n}+\\operatorname{isin} \\frac{2 k \\pi}{n}=z_1^k(k=0,1, \\cdots, n-1)$,\n则由 $l<n$ 时, $z_1^l \\neq 1, z_1^n=1$, 知 $\\sum_{k=0}^{n-1} z_1^{k l}=\\frac{1-\\left(z_1^l\\right)^n}{1-z_1^l}=0$.\n所以 $\\frac{1}{n} \\sum_{k=0}^{n-1} f\\left(z_k\\right)=a_0$, 证毕.",
+    "remark": "注:本题可以看作一个很重要的引理, 使用很方便, 读者可参考下例.",
+    "figures": []
+}

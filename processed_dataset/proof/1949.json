@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例4. 如图(<FilePath:./images/volume8/figures/fig-c5i1.png>), 求证: 圆内接四边形 $A B C D$ 的两组对边 $A B$ 和 $C D$ 的交角平分线 $l_1$ 与 $A D$ 和 $B C$ 的交角平分线 $l_2$ 互相垂直.",
+    "solution": "分析:与解设 $A B 、 C D$ 交于 $O_1, A D 、 B C$ 交于 $O_2$, 取 $\\overrightarrow{O_1 D} 、 \\overrightarrow{O_1 A} 、 \\overrightarrow{O_2 D} 、 \\overrightarrow{O_2 C}$ 方向上单位向量分别为 $\\vec{i} 、 \\vec{j} 、 \\vec{l} 、 \\vec{k}$, 则\n$$\n\\begin{aligned}\n\\cos \\left(180^{\\circ}-\\angle D A B\\right) & =\\vec{i} \\cdot \\vec{j} \\Rightarrow \\cos \\angle D A B=-\\vec{\\imath} \\cdot \\vec{j}, \\\\\n\\cos \\left(180^{\\circ}-\\angle D C B\\right) & =\\vec{i} \\cdot \\vec{k} \\Rightarrow \\cos \\angle D C B=-\\vec{i} \\cdot \\vec{k}, \\\\\n\\cos \\angle C D A= & \\vec{i} \\cdot \\vec{l}, \\cos \\angle B=\\vec{k} \\cdot \\vec{j} .\n\\end{aligned}\n$$\n而 $\\angle B+\\angle C D A=180^{\\circ}, \\angle D C B+\\angle D A B=180^{\\circ}$,\n所以 $\\vec{k} \\cdot \\vec{j}+\\vec{i} \\cdot \\vec{l}=0,-\\vec{i} \\cdot \\vec{k}-\\vec{l} \\cdot \\vec{j}=0 \\Leftrightarrow \\vec{i} \\cdot \\vec{k}+\\vec{l} \\cdot \\vec{j}=0$.\n于是 $(\\vec{i}+\\vec{j})(\\vec{k}+\\vec{l})=\\vec{k} \\cdot \\vec{j}+\\vec{k} \\cdot \\vec{i}+\\vec{i} \\cdot \\vec{l}+\\vec{j} \\cdot \\vec{l}=(\\vec{k} \\cdot \\vec{j}+\\vec{i} \\cdot \\vec{l})+ (\\vec{i} \\cdot \\vec{k}+\\vec{l} \\cdot \\vec{j})=0$.\n设 $P$ 为 $l_1$ 和 $l_2$ 的交点, 则 $O_1 P 、 O_2 P$ 分别平分 $\\angle D O_1 A$ 和 $\\angle C O_2 D \\Leftrightarrow \\vec{i}+\\vec{j}$ 与 $\\overrightarrow{O_1 P}$ 同向, $\\vec{l}+\\vec{k}$ 与 $\\overrightarrow{O_2 P}$ 同向, 所以 $\\overrightarrow{O_1 P}=\\lambda_1(\\vec{i}+\\vec{j}), \\overrightarrow{O_2 P}=\\lambda_2(\\vec{l}+\\vec{k}) \\left(\\lambda_1 \\neq 0, \\lambda_2 \\neq 0\\right)$.\n所以 $\\overrightarrow{O_1 P} \\cdot \\overrightarrow{O_2 P}=0$, 因此 $l_1 \\perp l_2$, 证毕.",
+    "remark": "",
+    "figures": [
+        "./images/volume8/figures/fig-c5i1.png"
+    ]
+}

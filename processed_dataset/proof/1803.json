@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题6. $A 、 B$ 为平面上的两个定点, $C$ 为平面上位于直线 $A B$ 同侧的一个动点, 以 $A C 、 B C$ 各为边,在 $\\triangle A B C$ 外作正方形 $C A D l 、 C B E J$. 证明: 无论 $C$ 点取在直线 $A B$ 同侧的任何位置, $D E$ 的中点 $M$ 位置不变.",
+    "solution": "如图(<FilePath:./images/volume7/figures/fig-c11a6.png>), 设图中各字母表示相应点的复数, 由题设, 应有\n$$\n\\begin{aligned}\n& D=A+(C-A) \\mathrm{i}, \\\\\n& E=B+(B-C) \\mathrm{i},\n\\end{aligned}\n$$\n从而 $M=\\frac{(D+E)}{2}=\\frac{A(1-\\mathrm{i})+B(1+\\mathrm{i})}{2}$ 与 $C$ 无关.\n(事实上, $\\triangle A M B$ 为等腰直角三角形).",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c11a6.png"
+    ]
+}

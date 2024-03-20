@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter14.tex",
+    "problem_type": "proof",
+    "problem": "例6. 在某次竞赛中共有 $a$ 个参赛选手和 $b$ 个裁判, 其中 $b \\geqslant 3$ 为奇数.\n设每一位裁判对每一位参赛选手的判决方式只有 \"通过\"或\"不通过\". 已知任意两个裁判至多对 $k$ 个参赛选手有相同的判决.\n证明: $\\frac{k}{a} \\geqslant \\frac{b-1}{2 b}$.",
+    "solution": "证明:设 $a$ 个参赛选手为 $A_1, A_2, \\cdots, A_a, b$ 个裁判为 $B_1, B_2, \\cdots, B_b$. 若两个裁判 $B_i, B_j(i \\neq j)$ 对选手 $A_m$ 的判决相同, 则将 $\\left(B_i, B_j, A_m\\right)$ 组成三元组, 这种三元组的个数记为 $S$. 一方面, 由已知条件知对任意一对裁判 $B_i$, $B_j(i \\neq j)$, 至多存在 $k$ 个选手 $A_j$ 组成 $k$ 个 \"三元组\" $\\left(B_i, B_j, A_m\\right)$, 而 $B_i, B_j$ 有 $\\mathrm{C}_b^2$ 种取法, 所以\n$$\nS \\leqslant k \\mathrm{C}_b^2 . \\label{eq1}\n$$\n另一方面, 假设对选手 $A_m$ 有 $r_m$ 个裁判对 $A_m$ 的判决是 \"通过\", $t_m$ 个裁判对 $A_k$ 的判决是 \"不通过\", 于是 $r_m+t_m=b$ 且含 $A_m$ 的三元组恰有 $\\mathrm{C}_{r_m}^2+\\mathrm{C}_{t_m}^2$ 个, 故\n$$\nS=\\sum_{m=1}^a\\left(\\mathrm{C}_{r_m}^2+\\mathrm{C}_{t_m}^2\\right)\n$$\n而\n$$\n\\begin{aligned}\n\\mathrm{C}_{r_m}^2+\\mathrm{C}_{t_m}^2 & =\\frac{1}{2}\\left(r_m^2-r_m+t_m^2-t_m\\right) \\\\\n& =\\frac{1}{2}\\left[\\left(r_m+t_m\\right)^2-\\left(r_m+t_m\\right)-2 r_m t_m\\right] \\\\\n& =\\frac{1}{2}\\left(b^2-b-2 r_m t_m\\right) .\n\\end{aligned}\n$$\n因 $b$ 为奇数, 且 $r_m+t_m=b$, 所以 $r_m t_m \\leqslant \\frac{(b-1)(b+1)}{4}=\\frac{b^2-1}{4}$, 故\n$$\n\\mathrm{C}_{r_m}^2+\\mathrm{C}_{t_m}^2 \\geqslant \\frac{1}{2}\\left[b^2-b-\\frac{2}{4}\\left(b^2-1\\right)\\right]=\\frac{1}{4}(b-1)^2 .\n$$\n所以\n$$\nS \\geqslant a \\cdot \\frac{1}{4}(b-1)^2 . \\label{eq2}\n$$\n由式\\ref{eq1}及\\ref{eq2}得 $k \\cdot \\mathrm{C}_b^2 \\geqslant a \\cdot \\frac{1}{4}(b-1)^2$, 即 $\\frac{k}{a} \\geqslant \\frac{b-1}{2 b}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题10. 求最小的正整数 $k$, 使得至少存在两个由正整数组成的数列 $\\left\\{a_n\\right\\}$ 满足下述条件:\n(1) 对任意正整数 $n$, 都有 $a_n \\leqslant a_{n+1}$;\n(2) 对任意正整数 $n$, 都有 $a_{n+2}=a_{n+1}+a_n$;\n(3) $a_9=k$.",
+    "solution": "利用 $a_{n+2}=a_{n+1}+a_n$ 可知 $a_9=a_8+a_7=2 a_7+a_6=\\cdots=21 a_2+13 a_1$, 依题中条件, 可知不定方程\n$$\n13 x+21 y=k . \\label{eq1}\n$$\n有至少两组正整数解 $(x, y)$, 使得 $x \\leqslant y$.\n注意到, 若 式\\ref{eq1} 有两组正整数解 $\\left(x_1, y_1\\right)$ 和 $\\left(x_2, y_2\\right)$, 使得 $x_1 \\leqslant y_1, x_2 \\leqslant y_2$, 则 $13 x_1+21 y_1=13 x_2+21 y_2=k$, 由对称性, 不妨设 $x_1 \\leqslant x_2$, 那么 $13\\left(x_2-\\right. \\left.x_1\\right)=21\\left(y_1-y_2\\right)$, 此时, 由 $x_1=x_2$ 可得 $y_1=y_2$, 导致 $\\left(x_1, y_1\\right)=\\left(x_2, y_2\\right)$ 矛盾, 故 $x_1<x_2$, 从而有 $21\\left|x_2-x_1, 13\\right| y_1-y_2$ (用到 $(13,21)=1$ ), 所以 $x_2- x_1 \\geqslant 21$, 得 $x_2 \\geqslant 21+x_1 \\geqslant 22$, 结合 $y_2 \\geqslant x_2$ 可知 $k \\geqslant 13 \\times 22+21 \\times 22=748$.\n另一方面, 当 $k=748$ 时, 式\\ref{eq1} 有两组不同的正整数解, 它们是 $(22,22)$ 和 $(1,35)$, 分别对应的 $\\left(a_1, a_2\\right)$ 形成两个符合要求的数列.\n综上可知,所求最小正整数为 748 .",
+    "remark": "",
+    "figures": []
+}

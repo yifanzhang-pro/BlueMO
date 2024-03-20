@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例8. 单位圆周上任意 $n$ 个点 $z_1, \\cdots, z_n$. 求证:\n$$\n\\max _{|z|=1}\\left|z-z_1\\right| \\cdots\\left|z-z_n\\right| \\geqslant 2, \\label{eq1}\n$$\n并证明等号成立的充要条件是 $z_1, \\cdots, z_n$ 构成正 $n$ 边形.",
+    "solution": "分析:与解因为通过适当的旋转, 可设 $z_1 z_2 \\cdots z_n=1$. 记\n$$\nP(z)=\\left(z-z_1\\right) \\cdots\\left(z-z_n\\right)=z^n+a_1 z^{n-1}+\\cdots+a_{n-1} z+1=z^n+f(z)+1,\n$$\n其中 $f(z)$ 或为零, 或次数不超过 $n-1$. 设 $\\zeta_1, \\zeta_2, \\cdots, \\zeta_n$ 是全部 $n$ 次单位根, 则由上例知\n$$\nf\\left(\\zeta_1\\right)+\\cdots+f\\left(\\zeta_n\\right)=0 .\n$$\n如果 $f(z)$ 不恒为 0 , 则存在 $j$ 使 $f\\left(\\zeta_j\\right) \\neq 0$, 且 $\\operatorname{Re} f\\left(\\zeta_j\\right) \\geqslant 0$, 故 $\\left|P\\left(\\zeta_j\\right)\\right|== \\left|2+f\\left(\\zeta_j\\right)\\right|>2$; 如 $f(z)$ 恒为 0 , 则当然有 $\\left|P\\left(\\zeta_j\\right)\\right|=2$. 这就证明了式\\ref{eq1}.\n上面的论证还表明,如果式\\ref{eq1}成立等号, 必须 $f\\left(\\zeta_j\\right)=0(j=1,2, \\cdots, n)$, 这意味着 $f(z)==0$, 即 $P(z)=z^n+1$, 所以 $z_1, \\cdots, z_n$ 构成正 $n$ 边形, 证毕.",
+    "remark": "",
+    "figures": []
+}

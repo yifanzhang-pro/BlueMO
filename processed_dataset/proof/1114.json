@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $a_i>0(i=1,2, \\cdots, n)$ 满足 $\\sum_{i=1}^n a_i=1$, 求证:\n$$\n\\frac{a_1^2}{a_1+a_2}+\\frac{a_2^2}{a_2+a_3}+\\cdots+\\frac{a_n^2}{a_n+a_1} \\geqslant \\frac{1}{2} .\n$$",
+    "solution": "证明:令 $a_{n+1}=a_1$, 由柯西不等式, 得\n$$\n\\begin{aligned}\n&\\left(\\sum_{i=1}^n a_i\\right)^2=\\left(\\sum_{i=1}^n \\frac{a_i}{\\sqrt{a_i+a_{i+1}}} \\cdot \\sqrt{a_i+a_{i+1}}\\right)^2 \\\\\n& \\leqslant \\sum_{i=1}^n \\frac{a_i^2}{a_i+a_{i+1}} \\cdot \\sum_{i=1}^n\\left(a_i+a_{i+1}\\right) \\\\\n&=2 \\sum_{i=1}^n \\frac{a_i^2}{a_i+a_{i+1}} \\cdot \\sum_{i=1}^n a_i, \\\\\n& \\sum_{i=1}^n \\frac{a_i^2}{a_i+a_{i+1}} \\geqslant \\frac{1}{2} \\sum_{i=1}^n a_i=\\frac{1}{2} .\n\\end{aligned}\n$$\n于是\n$$\n\\sum_{i=1}^n \\frac{a_i^2}{a_i+a_{i+1}} \\geqslant \\frac{1}{2} \\sum_{i=1}^n a_i=\\frac{1}{2} .\n$$",
+    "remark": "注:在证明过程中,注意条件的利用和不等式的变形.",
+    "figures": []
+}
