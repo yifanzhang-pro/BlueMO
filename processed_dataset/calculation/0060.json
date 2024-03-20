@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题14 给定自然数 $a \\geqslant 2$, 集合 $A=\\left\\{y \\mid y=a^x, x \\in \\mathbf{N}\\right\\}, B=\\{y \\mid y=(a+$ 1) $x+b, x \\in \\mathbf{N}\\}$. 在区间 $[1, a]$ 上是否存在 $b$, 使得 $C=A \\cap B \\neq \\varnothing$ ? 如果存在, 试求 $b$ 的一切可能值及相应的集合 $C$; 如果不存在, 试说明理由.",
+    "solution": "因 $a \\geqslant 2, a \\in \\mathbf{N}, x \\in \\mathbf{N}$, 所以 $a^x \\in \\mathbf{N}$, 且 $(a+1) x \\in \\mathbf{N}$. 又因为 $A \\cap B \\neq \\varnothing$, 所以 $b \\in \\mathbf{N}$. 只需求 $b \\in \\mathbf{N}$ 的 $b$ 值, 使得满足 $(a+1) x_2+b=a^{x_1}$, 即 $x_2=\\frac{a^{x_1}-b}{a+1}, x_1, x_2 \\in \\mathbf{N}$. 当 $x_1$ 为正偶数时, $x_2=-\\frac{1-a^{x_1}}{1+a}-\\frac{b-1}{1+a}$. 因为 $-\\frac{1-a^{x_1}}{1+a} \\in \\mathbf{N}, 1 \\leqslant b \\leqslant a$, 所以 $0 \\leqslant \\frac{b-1}{1+a}<1$. 因 $x_2 \\in \\mathbf{N}$, 故 $b=1$. 当 $x_1$ 为正奇数时, $x_2=\\frac{a^{x_1}+1}{a+1}-\\frac{b+1}{a+1}$. 因为 $\\frac{a^{x_1}+1}{a+1}$ 是大于 1 的自然数, $0 \\leqslant \\frac{b+1}{a+1} \\leqslant 1, x_2 \\in \\mathbf{N}$, 所以 $b=a$. 综上知, 在 $[1, a]$ 上存在 $b=1$ 或 $b=a$, 使得 $A \\cap B \\neq \\varnothing$. 当 $b=1$ 时, $A \\cap B=\\left\\{y \\mid y=a^{2 x}, x \\in \\mathbf{N}\\right\\}$; 当 $b=a$ 时, $A \\cap B=\\{y \\mid y=a^{2 x+1}, x \\in \\mathbf{N}\\}$.",
+    "remark": "",
+    "figures": []
+}

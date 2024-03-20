@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter18.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设实数 $x, y, z$ 满足 $0<x<y<z<\\frac{\\pi}{2}$, 证明:\n$$\n\\frac{\\pi}{2}+2 \\sin x \\cos y+2 \\sin y \\cos z>\\sin 2 x+\\sin 2 y+\\sin 2 z .\n$$",
+    "solution": "证明:直角坐标平面上以原点为圆心作单位 圆.\n考虑第一象限, 在单位圆上取点 $A_1, A_2, A_3$, 使得 $\\angle A_1 O x=x, \\angle A_2 O x=y, \\angle A_3 O x=z($ 如图(<FilePath:./images/volume14/figures/fig-c18i2.png>) 所示).\n由于三个矩形面积之和 $S_1+S_2+S_3$ 小于 $\\frac{1}{4}$ 单位圆的面积, 此即\n$$\n\\sin x(\\cos x-\\cos y)+\\sin y(\\cos y-\\cos z)+\\sin z \\cos z<\\frac{\\pi}{4},\n$$\n整理后便得\n$$\n\\frac{\\pi}{2}+2 \\sin x \\cos y+2 \\sin y \\cos z>\\sin 2 x+\\sin 2 y+\\sin 2 z .\n$$",
+    "remark": "注:例 4 和例 5 条件中的数量关系能以某种方式与几何图形建立联系或具有明显的几何意义, 从而构造图形, 将题设条件及数量关系直接在图形中得到实现,然后在所构造的图形中寻求所证的结论.",
+    "figures": [
+        "./images/volume14/figures/fig-c18i2.png"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题17. 证明 Desargues 定理:\n若 $\\triangle A B C$ 与 $\\triangle A^{\\prime} B^{\\prime} C^{\\prime}$ 的对应顶点连线 $A A^{\\prime}, B B^{\\prime}, C C^{\\prime}$ 相交于一点 $O$, 则对应边 $B C$ 与 $B^{\\prime} C^{\\prime}, C A$ 与 $C^{\\prime} A^{\\prime}, A B$ 与 $A^{\\prime} B^{\\prime}$ 的交点 $D, E, F$ 共线.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c2a17.png>), 对 $\\triangle O B C 、 \\triangle O C A 、 \\triangle O A B$ 及相应的截线 $D B^{\\prime} C^{\\prime} 、 E C^{\\prime} A^{\\prime} 、 F A^{\\prime} B^{\\prime}$, 由梅涅劳斯定理得\n$$\n\\begin{aligned}\n& \\frac{B D}{D C} \\cdot \\frac{C C^{\\prime}}{C^{\\prime} O} \\cdot \\frac{O B^{\\prime}}{B^{\\prime} B}=1, \\\\\n& \\frac{C E}{E A} \\cdot \\frac{A A^{\\prime}}{A^{\\prime} O} \\cdot \\frac{O C^{\\prime}}{C^{\\prime} C}=1, \\\\\n& \\frac{A F}{F B} \\cdot \\frac{B B^{\\prime}}{B^{\\prime} O} \\cdot \\frac{O A^{\\prime}}{A^{\\prime} A}=1,\n\\end{aligned}\n$$\n三式相乘化简得 $\\quad \\frac{B D}{D C} \\cdot \\frac{C E}{E A} \\cdot \\frac{A F}{F B}=1$.\n故对 $\\triangle A B C$ 由梅涅劳斯定理逆定理知, $D 、 E 、 F$ 共线.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2a17.png"
+    ]
+}

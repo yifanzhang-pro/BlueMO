@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例6. 已知 $x, y, z>0$, 且 $x y z=1$. 求证:\n$$\n\\frac{(x+y-1)^2}{z}+\\frac{(y+z-1)^2}{x}+\\frac{(z+x-1)^2}{y} \\geqslant 4(x+y+z)-12+\\frac{9}{x+y+z} .\n$$",
+    "solution": "证明:因为\n$$\n(a-b)^2=a^2-2 a b+b^2,\n$$\n所以\n$$\n\\begin{gathered}\na^2=2 a b-b^2+(a-b)^2, \\\\\n\\frac{a^2}{b}=2 a-b+\\frac{(a-b)^2}{b} .\n\\end{gathered}\n$$\n利用上式及柯西不等式,可知\n$$\n\\begin{aligned}\n& \\frac{(x+y-1)^2}{z}+\\frac{(y+z-1)^2}{x}+\\frac{(z+x-1)^2}{y} \\\\\n= & 2(x+y-1)-z+\\frac{(x+y-z-1)^2}{z} \\\\\n& +2(y+z-1)-x+\\frac{(y+z-x-1)^2}{x} \\\\\n& +2(z+x-1)-y+\\frac{(z+x-y-1)^2}{y} \\\\\n= & 3(x+y+z)-6+\\frac{(x+y-z-1)^2}{z}+\\frac{(y+z-x-1)^2}{x}+\\frac{(z+x-y-1)^2}{y} \\\\\n\\geqslant & 3(x+y+z)-6+\\frac{(x+y+z-3)^2}{x+y+z} \\\\\n= & 3(x+y+z)-6+\\frac{(x+y+z)^2-6(x+y+z)+9}{x+y+z} \\\\\n= & 4(x+y+z)-12+\\frac{9}{x+y+z} .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

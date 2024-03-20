@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 已知 $a, b, c$ 是实数, 且 $a>2000$, 证明: 至多存在两个整数 $x$, 使得\n$$\n\\left|a x^2+b x+c\\right| \\leqslant 1000 .\n$$",
+    "solution": "用反证法.\n假设存在三个不同的正整数 $x_1, x_2, x_3$, 使得\n$$\n\\left|a x_i^2+b x_i+c\\right| \\leqslant 1000,\n$$\n令 $f(x)=a x^2+b x+c$, 则 $x_1, x_2, x_3$ 中至少有两个在对称轴 $x=-\\frac{b}{2 a}$ 的一侧 (包括对称轴上), 不妨设 $x_1>x_2 \\geqslant-\\frac{b}{2 a}$, 则 $2 a x+b \\geqslant 0$. 因为\n$$\na x_1^2+b x_1+c \\leqslant 1000,-a x_2^2-b x_2-c \\leqslant 1000,\n$$\n所以\n$$\n\\left(x_1-x_2\\right)\\left[a\\left(x_1+x_2\\right)+b\\right] \\leqslant 2000 .\n$$\n又 $x_1, x_2$ 是整数, 所以 $x_1 \\geqslant x_2+1$, 于是\n$$\na\\left(x_1+x_2\\right)+b \\geqslant a\\left(x_2+1+x_2\\right)+b=a+2 a x_2+b \\geqslant a>2000,\n$$\n故\n$$\n\\left(x_1-x_2\\right)\\left[a\\left(x_1+x_2\\right)+b\\right]>2000 \\text {. }\n$$\n(1)与(2)矛盾, 从而命题得证.",
+    "remark": "",
+    "figures": []
+}

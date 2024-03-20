@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题17. 数列 $\\{f(n)\\}$ 满足\n$$\nf(1)=2, f(n+1)=(f(n))^2-f(n)+1, n=1,2,3, \\cdots .\n$$\n证明: 对任意整数 $n>1$, 都有 $1-\\frac{1}{2^{2^{n-1}}}<\\frac{1}{f(1)}+\\frac{1}{f(2)}+\\cdots+\\frac{1}{f(n)}<1-\\frac{1}{2^{2^{n^2}}}$.",
+    "solution": "由条件可知 $f(n+1)=(f(n)-1) f(n)+1$, 结合数学归纳法及 $a_1>$ 1 , 可得对任意 $n \\in \\mathbf{N}^*$, 都有 $f(n)>1$,于是, 取倒数就有\n$$\n\\frac{1}{f(n+1)-1}=\\frac{1}{f(n)(f(n)-1)}=\\frac{1}{f(n)-1}-\\frac{1}{f(n)} .\n$$\n即 $\\frac{1}{f(n)}=\\frac{1}{f(n)-1}-\\frac{1}{f(n+1)-1}$, 裂项求和得\n$$\n\\sum_{k=1}^n \\frac{1}{f(k)}=\\frac{1}{f(1)-1}-\\frac{1}{f(n+1)-1}=1-\\frac{1}{f(n+1)-1} .\n$$\n回到递推关系式, 知 $f(n+1)-1=f(n)(f(n)-1)>(f(n)-1)^2> (f(n-1)-1)^{2^2}>\\cdots>(f(2)-1)^{2^{n-1}}=\\left(2^2-2\\right)^{2^{n-1}}=2^{2^{n-1}}$.\n$$\n\\text { 故 } \\sum_{k=1}^n \\frac{1}{f(k)}>1-\\frac{1}{2^{2^{n-1}}} \\text {. }\n$$\n另一方面, $f(n+1)=f(n)^2-(f(n)-1)<f(n)^2$, 故\n$$\nf(n+1)<f(n)^2<f(n-1)^{2^2}<\\cdots<f(1)^{2^n}=2^{2^n},\n$$\n更有 $f(n+1)-1<2^{2^n}$, 进而, $\\sum_{k=1}^n \\frac{1}{f(k)}<1-\\frac{1}{2^{2^n}}$. 命题获证.",
+    "remark": "",
+    "figures": []
+}

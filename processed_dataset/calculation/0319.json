@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 设 $f(x)=a x^2+b x+c$ 的所有系数都是正的, 且 $a+b+c=1$. 对所有满足: $x_1 x_2 \\cdots x_n=1$ 的正数组 $x_1, x_2, \\cdots, x_n$, 求 $f\\left(x_1\\right) f\\left(x_2\\right) \\cdots f\\left(x_n\\right)$ 的最小值.",
+    "solution": "解:$f(1)=a+b+c=1$. 若 $x_1=x_2=\\cdots=x_n=1$, 则 $f\\left(x_1\\right) f\\left(x_2\\right) \\cdots f\\left(x_n\\right)=1$.\n若 $x_1, x_2, \\cdots, x_n$ 不全为 1 , 则由 $x_1 x_2 \\cdots x_n=1$ 知, 其中必有一个小于 1 , 也必有一个大于 1 . 不妨设 $x_1>1, x_2<1$, 将 $x_1 、 x_2$ 用 $1 、 x_1 x_2$ 代替, 考察其变化:\n$$\n\\begin{gathered}\nf\\left(x_1\\right) f\\left(x_2\\right)=\\left(a x_1^2+b x_1+c\\right)\\left(a x_2^2+b x_2+c\\right) \\\\\n=a^2 x_1^2 x_2^2+b^2 x_1 x_2+c^2+a b\\left(x_1^2 x_2+x_1 x_2^2\\right) \\\\\n+a c\\left(x_1^2+x_2^2\\right)+b c\\left(x_1+x_2\\right) \\\\\nf(1) f\\left(x_1 x_2\\right)=(a+b+c)\\left(a x_1^2 x_2^2+b x_1 x_2+c\\right) \\\\\n=a^2 x_1^2 x_2^2+b^2 x_1 x_2+c^2+a b\\left(x_1^2 x_2^2+x_1 x_2\\right) \\\\\n+a c\\left(x_1^2 x_2^2+1\\right)+b c\\left(x_1 x_2+1\\right), \\\\\nf\\left(x_1\\right) f\\left(x_2\\right)-f(1) f\\left(x_1 x_2\\right) \\\\\n=a b x_1 x_2\\left(x_1+x_2-x_1 x_2-1\\right)+a c\\left(x_1^2+x_2^2-x_1^2 x_2^2-1\\right) \\\\\n+b c\\left(x_1+x_2-x_1 x_2-1\\right) \\\\\n=-a b x_1 x_2\\left(x_1-1\\right)\\left(x_2-1\\right)-a c\\left(x_1^2-1\\right)\\left(x_2^2-1\\right) \\\\\n-b c\\left(x_1-1\\right)\\left(x_2-1\\right)>0 .\n\\end{gathered}\n$$\n反复进行上述变换, 得 $f\\left(x_1\\right) f\\left(x_2\\right) \\cdots f\\left(x_n\\right) \\geqslant f(1) f(1) \\cdots f(1)=1$. 故\n$f\\left(x_1\\right) f\\left(x_2\\right) \\cdots f\\left(x_n\\right)$ 的最小值为 1 .",
+    "remark": "",
+    "figures": []
+}

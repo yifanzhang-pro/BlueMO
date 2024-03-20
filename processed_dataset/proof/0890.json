@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例9 设 $f(x)=\\sqrt{2+x}$, 求 $f^{(n)}(x)$.",
+    "solution": "解:设 $a_0=x, a_n=f^{(n)}(x)$, 则 $a_n=\\sqrt{2+a_{n-1}}$.\n(1) 若 $|x| \\leqslant 2$, 则令 $x=2 \\cos \\theta$, 取 $\\theta=\\arccos \\frac{x}{2}$, 则\n$$\n\\begin{aligned}\n& a_0=2 \\cos \\theta, a_1=\\sqrt{2+2 \\cos \\theta}=2 \\cos \\frac{\\theta}{2}, a_2=2 \\cos \\frac{\\theta}{2^2}, \\cdots, \\\\\n& a_n=2 \\cos \\frac{\\theta}{2^n}=2 \\cos \\left(\\frac{1}{2^n} \\arccos \\frac{x}{2}\\right) \\text { (用数学归纳法易证). }\n\\end{aligned}\n$$\n因此 $f^{(n)}(x)=2 \\cos \\left(\\frac{1}{2^n} \\arccos \\frac{x}{2}\\right)(|x| \\leqslant 2)$.\n(2) 若 $|x|>2$, 则令 $x=t+\\frac{1}{t}$, 取 $t=\\frac{1}{2}\\left(x+\\sqrt{x^2-4}\\right)$, 则 $a_0=t+ \\frac{1}{t}, a_1=t^{\\frac{1}{2}}+t^{-\\frac{1}{2}}, a_2=t_{2^2}^{\\frac{1}{2}}+t^{-\\frac{1}{2^2}}$, 由数学归纳法易得\n$$\na_n=t^{\\frac{1}{n}}+t^{-\\frac{1}{2^n}}\n$$\n故 $\\quad f^{(n)}(x)=\\frac{1}{t 2^n}+t^{-\\frac{1}{2^n}}$\n$$\n=\\left(\\frac{x+\\sqrt{x^2-4}}{2}\\right)^{\\frac{1}{2^n}}+\\left(\\frac{x-\\sqrt{x^2-4}}{2}\\right)^{\\frac{1}{2^n}}(|x|>2) .\n$$\n综上所述，\n$$\nf^{(n)}(x)= \\begin{cases}2 \\cos \\left(\\frac{1}{2^n} \\arccos \\frac{x}{2}\\right), & \\text { 当 }|x| \\leqslant 2 \\text { 时; } \\\\ \\left(\\frac{x+\\sqrt{x^2-4}}{2}-\\right)^{\\frac{1}{2^n}}+\\left(\\frac{x-\\sqrt{x^2-4}}{2}\\right)^{\\frac{1}{2^n}}, & \\text { 当 }|x|>2 \\text { 时.\n}\\end{cases}\n$$",
+    "remark": "",
+    "figures": []
+}

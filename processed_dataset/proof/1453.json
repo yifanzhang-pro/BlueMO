@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $x_1, x_2, \\cdots, x_n$ 都是正实数,求证:\n$$\n\\begin{aligned}\n& \\frac{1}{x_1}+\\frac{1}{x_2}+\\cdots+\\frac{1}{x_n} \\\\\n\\geqslant & 2\\left(\\frac{1}{x_1+x_2}+\\frac{1}{x_2+x_3}+\\cdots+\\frac{1}{x_{n-1}+x_n}+\\frac{1}{x_n+x_1}\\right) .\n\\end{aligned}\n$$",
+    "solution": "不难证明: $\\frac{1}{x_i}+\\frac{1}{x_{i+1}} \\geqslant \\frac{4}{x_i+x_{i+1}}\\left(i=1,2, \\cdots, n, x_{n+1}=x_1\\right)$, 把 $n$ 个式子相加即得原不等式成立.",
+    "remark": "",
+    "figures": []
+}

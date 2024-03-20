@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例1 求函数 $y=\\sqrt{-\\tan x-1}+\\frac{\\sqrt{16-x^2}}{1-\\log \\frac{\\sqrt{3}}{2} \\sin x}$ 的定义域.",
+    "solution": "解:要使原函数有意义, 当且仅当\n$$\n\\left\\{\\begin{array}{l}\n-\\tan x-1 \\geqslant 0, \\quad\\quad (1)\\\\\n16-x^2 \\geqslant 0, \\quad\\quad (2)\\\\\n1-\\log \\frac{\\sqrt{3}}{2} \\sin x \\neq 0,\\quad\\quad (3) \\\\\n\\sin x>0 .\\quad\\quad (4)\n\\end{array}\\right.\n$$\n由(1)式, 得 $k \\pi+\\frac{\\pi}{2}<x \\leqslant k \\pi+\\frac{3}{4} \\pi, k \\in \\mathbf{Z}$.\n由(2)式, 得 $-4 \\leqslant x \\leqslant 4$.\n由(3)式, 得 $x \\neq 2 k \\pi+\\frac{\\pi}{3}$ 且 $x \\neq 2 k \\pi+\\frac{2}{3} \\pi, k \\in \\mathbf{Z}$.\n由(4)式, 得 $2 k \\pi<x<(2 k+1) \\pi, k \\in \\mathbf{Z}$.\n取交集有 $x \\in\\left[-4,-\\frac{5}{4} \\pi\\right) \\cup\\left(\\frac{\\pi}{2}, \\frac{2}{3} \\pi\\right) \\cup\\left(\\frac{2}{3} \\pi, \\frac{3}{4} \\pi\\right]$, 即为原函数定义域.\n评注求函数的定义域通常是解不等式组, 利用 “数形结合” 的数学思想, 借助于数轴画线求交集的方法进行.\n在求解三角函数, 特别是综合性较强的三角函数的定义域时, 我们同样可以利用 “数形结合” 的数学思想, 在单位圆中画三角函数线,求表示各三角不等式解集的扇形区域的交集来完成.",
+    "remark": "",
+    "figures": []
+}

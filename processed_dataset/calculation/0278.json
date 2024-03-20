@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 坐标纸上的 11 条纵线和 11 条横线构成一个图,图的顶点是纵、横线的交点 (格点), 边是格点间的纵、横线段, 问至少应当去掉多少条边才能使每点的度 $<4$ ? 至多可以去掉多少条边还能使图保持连通?",
+    "solution": "其中有 $9 \\times 9=81$ 个度为 4 的顶点,故至少要去掉 $\\left[\\frac{81}{2}\\right]+1=41$ 条边, 才能使每点的度 $<4$. 至多可以去掉 $2 \\times 11 \\times 10-120=100$ 条边, 还可以使图保持连通.",
+    "remark": "",
+    "figures": []
+}

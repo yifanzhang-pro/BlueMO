@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $I 、 G$ 分别是 $\\triangle A B C$ 的内心和重心,求证\n$$\nA I+B I+C I \\leqslant A G+B G+C G .\n$$",
+    "solution": "证明:令 $B C=a, A C=b, A B=c$, 不妨设 $a \\geqslant b \\geqslant c$, 如图(<FilePath:./images/volume9/figures/fig-c5i9.png>). 下面我们证明 $G$ 一定落在 $\\triangle B I C$ 内或边界上.\n先证 $G$ 不落在 $\\triangle A I B$ 内, 若不然, 假设 $G$ 落在 $\\triangle A I B$ 内, 则有\n$$\nS_{\\triangle A B G}<S_{\\triangle A I B},\n$$\n而\n$$\nS_{\\triangle A B G}=\\frac{1}{3} S_{\\triangle A B C},\n$$\n且 $\\quad \\frac{S_{\\triangle A I B}}{S_{\\triangle A B C}}=\\frac{c}{a+b+c} \\leqslant \\frac{1}{3}$,\n所以 $S_{\\triangle A I B} \\leqslant \\frac{1}{3} S_{\\triangle A B C}=S_{\\triangle A B G}$, 矛盾.\n再证 $G$ 也不落在 $\\triangle A I C$ 内, 若不然, 假设 $G$ 落在 $\\triangle A I C$ 内, 设 $C I$ 交 $A B$ 于 $T, C G$ 交 $A B$ 于 $L$, 则 $A T>A L$, 而 $A L=B L, \\frac{A T}{B T}=\\frac{b}{a} \\leqslant 1$, 所以 $A T \\leqslant \\frac{1}{2} A B=A L$,矛盾.\n因此 $G$ 落在 $\\triangle B I C$ 内或边界上, 且可证 $G$ 在 $A I$ 右侧.\n设 $\\angle A I G$ 的补角为 $\\theta$, 则 $0 \\leqslant \\theta \\leqslant \\frac{A+C}{2}$. 由此可知 $A G \\geqslant A I+G I \\cos \\theta$.\n同理\n$$\n\\begin{aligned}\n& B G \\geqslant B I+G I \\cos \\left(90^{\\circ}+\\frac{C}{2}-\\theta\\right), \\\\\n& C G \\geqslant C I-G I \\cos \\left(\\frac{A+C}{2}-\\theta\\right) .\n\\end{aligned}\n$$\n因此\n$$\n\\begin{aligned}\n& A G+B G+C G-(A I+B I+C I) \\\\\n\\geqslant & G I\\left(\\cos \\theta+\\cos \\left(90^{\\circ}+\\frac{C}{2}-\\theta\\right)-\\cos \\left(\\frac{A+C}{2}-\\theta\\right)\\right) \\\\\n= & G I\\left(\\cos \\theta-2 \\sin \\frac{B+C}{4} \\cos \\left(\\frac{B-C}{4}+\\theta\\right)\\right) .\n\\end{aligned}\n$$\n由于 $\\frac{B+C}{4} \\leqslant 30^{\\circ}, \\theta \\leqslant \\frac{B-C}{4}+\\theta<90^{\\circ}$, 所以\n$$\n\\cos \\theta-2 \\sin \\frac{B+C}{4} \\cos \\left(\\frac{B-C}{4}+\\theta\\right) \\geqslant \\cos \\theta-\\cos \\left(\\frac{B-C}{4}+\\theta\\right) \\geqslant 0,\n$$\n故 $A G+B G+C G \\geqslant A I+B I+C I$.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c5i9.png"
+    ]
+}

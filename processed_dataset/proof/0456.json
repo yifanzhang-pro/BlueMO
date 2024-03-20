@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 设图 $G=(V,\\,E)$ 是简单图, $\\vert V\\vert=n,\\vert E\\vert=e,$ ,证明 $e\\leq{\\frac{n(n-1)}{2}}.$",
+    "solution": "简单图每条边与两个不同顶点关联,且每两个顶点间至多有一条边连接, 现有 $n$ 个顶点, 故边数至多为 $\\mathrm{C}_n^2=\\frac{n(n-1)}{2}$, 由于简单图不一定是完全图, 所以 $e \\leqslant \\frac{n(n-1)}{2}$.",
+    "remark": "",
+    "figures": []
+}

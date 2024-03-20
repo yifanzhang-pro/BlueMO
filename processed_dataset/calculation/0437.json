@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise15.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 如图(<FilePath:./images/volume14/figures/fig-c15p4.png>), 是一个向右和向下无限的表格.\n一开始在左上角 $A$ 格内放一枚棋子, 此后每一步下棋规则如下: 若某格 $P$ 放有棋子, 且它的右边相邻两格 $Q$ 和 $R$ 都没有棋子, 则可将 $P$ 中的棋子去掉, 在 $Q 、 R$ 两格中各放一枚棋子; 同样若 $P$ 的下边相邻两格 $S$ 和 $T$ 都没有棋子, 则可将 $P$ 中的棋子去掉, 在 $S 、 T$ 两格中各放一枚棋子.\n问: 能否在有限步后让所有棋子都不出现在前 4 列中?",
+    "solution": "我们对第 $i$ 行第 $j$ 列的格子赋值 $\\lambda^{i+j}, i, j \\in \\mathbf{N}^*$, 其中 $\\lambda=\\frac{\\sqrt{5}-1}{2}$.\n由于 $\\lambda^{i+(j+1)}+\\lambda^{i+(j+2)}=\\lambda^{(i+1)+j}+\\lambda^{(i+2)+j}=\\lambda^{i+j}$, 故每下一步棋不改变所有棋子所在格的赋值之和, 记这个和为 $S$, 其中初始情况下的 $S=\\lambda^2$.\n假设下棋过程中某一时刻所有棋子都不出现在前 4 列, 那么此时\n$$\nS \\leqslant \\sum_{i=1}^{\\infty} \\sum_{j=5}^{\\infty} \\lambda^{i+j}=\\lambda^6\\left(\\sum_{i=0}^{\\infty} \\lambda^i\\right)^2=\\lambda^6\\left(\\frac{1}{1-\\lambda}\\right)^2=\\lambda^6\\left(\\frac{1}{\\lambda^2}\\right)^2=\\lambda^2,\n$$\n说明从第 5 列开始的所有格子都已被摆满,这是不可能的.\n因此,有限步后无法让所有棋子都不出现在前 4 列中.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c15p4.png"
+    ]
+}

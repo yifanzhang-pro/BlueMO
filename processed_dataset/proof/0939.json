@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题7 $f$ 是定义在 $(1,+\\infty)$ 上且在 $(1,+\\infty)$ 中取值的函数, 满足条件: 对任何 $x 、 y>1$ 及 $u 、 v>0$,\n$$\nf\\left(x^u y^v\\right) \\leqslant f(x)^{\\frac{1}{4 u}} f(y)^{\\frac{1}{4 v}}\n$$\n都成立, 试确定所有这样的函数 $f$.",
+    "solution": "本题所给的是一个函数不等式, 而不是一个等式, 我们设法先把它变成一个等式.\n令 $x=y, u=v$, 代入(1), 得 $f\\left(x^{2 u}\\right) \\leqslant f(x)^{\\frac{1}{2 u}}$. 再将 $2 u$ 用 $u$ 代换得, 对所有 $x>1, u>0$, 均有 $f\\left(x^u\\right) \\leqslant f(x)^{\\frac{1}{u}} \\cdots (2)$. 令 $y=x^u, v=\\frac{1}{u}$, 则 $x=y^{\\frac{1}{u}}=y^v, u=\\frac{1}{v}$, 代入(2)式, 得 $f(y) \\leqslant f\\left(y^v\\right)^v$, 用 $x$ 代换 $y, u$ 代换 $v$, 则对所有 $x>1, u>0$, 又有 $f\\left(x^u\\right) \\geqslant f(x)^{\\frac{1}{u}} \\cdots (3)$. 由(2)、(3)便知 $f\\left(x^u\\right)= f(x)^{\\frac{1}{u}}\\cdots (4)$. 现在来求(4)的解.\n取 $x=\\mathrm{e}, t=\\mathrm{e}^u$ (则 $u=\\ln t$ ), 当 $u$ 从 0 变化到 $+\\infty$ 时, $t$ 从 1 变化到 $+\\infty$, 于是(4)式为 $f(t)=f(\\mathrm{e})^{\\frac{1}{\\ln } t}$ 、令 $f(\\mathrm{e})=a>1$, 用 $x$ 代换 $t$, 便得 $f(x)=a^{\\frac{1}{1 \\ln }}, a>1, \\cdots(5)$ . 下面验证(5)所给出的函数满足(1) $\\frac{1}{4 u \\ln x}+\\frac{1}{4 v \\ln y} \\geqslant \\frac{1}{u \\ln x+v \\ln y}$, 从而 $f\\left(x^u y^v\\right)=a^{\\frac{1}{u \\ln x+v \\ln y}} \\leqslant a^{\\frac{1}{4 u \\ln x}+\\frac{1}{4 v \\ln y}}= f(x)^{\\frac{1}{4 u}} f(y)^{\\frac{1}{4 x}}$. 这就证明了对所有 $a>1$, (5)式所给出的函数 $f(x)$ 即为所求.",
+    "remark": "",
+    "figures": []
+}

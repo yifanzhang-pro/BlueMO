@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise16.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 在某学校里有 $b$ 名教师和 $c$ 名学生.\n假设满足下列条件:\n(1) 每名教师恰好教 $k$ 名学生;\n(2) 对任意两名学生, 恰好有 $h$ 名教师教他们两人.\n证明: $\\frac{b}{h}=\\frac{c(c-1)}{k(k-1)}$.",
+    "solution": "如果一名教师 $t_i(1 \\leqslant i \\leqslant b)$ 同时教两名学生 $s_j, s_l(1 \\leqslant j<l \\leqslant c)$, 则称三元组 $\\left(t_i, s_j, s_l\\right)$ 为一个 \"教学三人组\".\n一方面, 由条件(1)得, 对任意 $i(1 \\leqslant i \\leqslant b)$, 含教师 $t_i$ 的\"教学三人组\" 恰有 $\\mathrm{C}_k^2$ 个, 从而\"教学三人组\" 共 $b \\mathrm{C}_k^2$ 个.\n另一方面, 由条件(2)得, 对任意 $j, l(1 \\leqslant j<l \\leqslant c)$, 含学生 $s_j, s_l$ 的\"教学三人组\" 恰有 $h$ 个,而 $s_j, s_l$ 有 $\\mathrm{C}_c^2$ 种取法, 故\"教学三人组\" 共 $h \\mathrm{C}_c^2$ 个.\n综上可得 $b \\mathrm{C}_k^2=h \\mathrm{C}_c^2$, 即 $\\frac{b}{h}=\\frac{c(c-1)}{k(k-1)}$.",
+    "remark": "",
+    "figures": []
+}

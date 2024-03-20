@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 设 $x 、 y 、 z$ 为任意实数,求证:\n$$\n\\sqrt{x^2+x y+y^2}+\\sqrt{x^2+x z+z^2} \\geqslant \\sqrt{y^2+y z+z^2} .\n$$",
+    "solution": "建立平面直角坐标系 $x O y$, 取三点 $A(x, 0) 、 B\\left(-\\frac{y}{2},-\\frac{\\sqrt{3}}{2} y\\right) 、 C \\left(-\\frac{z}{2}, \\frac{\\sqrt{3}}{2} z\\right)$, 则原不等式转化为: $|A B|+|A C| \\geqslant|B C|$, 这是显然的.",
+    "remark": "",
+    "figures": []
+}

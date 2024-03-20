@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题20. 知 $\\triangle A B C$ 是锐角三角形, $m=\\log _{\\cos A} \\frac{1}{\\sin B}, n=\\log _{\\cos A} \\frac{1}{\\cos C}$, 则 $m$ 与 $n$ 的大小关系为",
+    "solution": "$m>n . \\triangle A B C$ 为锐角三角形, 得 $0<A<\\frac{\\pi}{2}, \\frac{\\pi}{2}<B+C<\\pi$, 所以 $B>\\frac{\\pi}{2}-C$, 又 $B 、 \\frac{\\pi}{2}-C$ 均为锐角, 故 $\\sin B>\\cos C>0$, 从而 $\\frac{1}{\\sin B}<\\frac{1}{\\cos C}$, 又 $0<\\cos A<1$. 所以 $m>n$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 已知 $C$ 是线段 $A B$ 的中点, 过点 $A 、 C$ 的圆 $\\odot O_1$ 与过点 $B 、 C$ 的 $\\odot O_2$ 相交于 $C 、 D$ 两点, $P$ 是 $\\odot O_1$ 上 $\\overparen{A D}$ (不包含点 $C$ ) 的中点, $Q$ 是 $\\odot O_2$ 上 $\\overparen{B D}$ (不包含点 $C$ ) 的中点.\n求证: $P Q \\perp C D$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c1a8.png>), 设 $A D 、 P C$ 相交于点 $E, B D$ 、 $Q C$ 相交于点 $F$. 由 $\\overparen{P A}=\\overparen{P D}$, 知 $\\angle P D E= \\angle P C D$. 又 $\\angle D P E=\\angle C P D$, 则 $\\triangle P D E \\backsim \\triangle P C D$. 于是, $\\frac{P D}{P C}=\\frac{P E}{P D}$, 即 $P D^2=P C \\cdot P E$. 同理, $Q D^2=Q C \\cdot Q F$, 由 $\\overparen{P A}=\\overparen{P D}$, 知 $\\angle A C P= \\angle D C E$. 又 $\\angle C P A=\\angle C D E$, 则 $\\triangle C P A \\backsim\\triangle C D E$. 于是, $\\frac{C A}{C E}=\\frac{C P}{C D}$, 即 $P C \\cdot C E=C A \\cdot C D$. 同理, $Q C \\cdot C F=C B \\cdot C D$. 而 $P D^2-Q D^2=P C \\cdot P E-Q C \\cdot Q F=P C(P C-C E)-Q C(Q C-C F)= P C^2-Q C^2+Q C \\cdot C F-P C \\cdot C E=P C^2-Q C^2+C B \\cdot C D-C A \\cdot C D= P C^2-Q C^2$. 所以, $P Q \\perp C D$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1a8.png"
+    ]
+}

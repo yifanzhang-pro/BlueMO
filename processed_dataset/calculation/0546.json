@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例17 求所有的函数 $f: \\mathbf{R} \\rightarrow \\mathbf{R}$, 使得对任意实数 $x 、 y 、 z$, 有\n$$\n\\frac{1}{2} f(x y)+\\frac{1}{2} f(x z)-f(x) f(y z) \\geqslant \\frac{1}{4} . \\quad\\quad (1)\n$$",
+    "solution": "解:题设所给的是一个不等式, 而不是方程, 而且变元有三个, 即 $x 、 y$ 、 $z$. 我们设法通过取一些特殊值来寻求结果.\n令 $x=y=z=1$, 代入 (1), 得\n$$\nf(1)-(f(1))^2 \\geqslant \\frac{1}{4} .\n$$\n所以 $\\left(f(1)-\\frac{1}{2}\\right)^2 \\leqslant 0$.\n故\n$$\nf(1)=\\frac{1}{2} \\text {. }  \\quad\\quad (2)\n$$\n令 $y=z=1$, 代入 (1) 并利用 (2), 得\n$$\nf(x)-\\frac{1}{2} f(x) \\geqslant \\frac{1}{4} .\n$$\n所以\n$$\nf(x) \\geqslant \\frac{1}{2} .  \\quad\\quad (3)\n$$\n令 $x=y=z=0$, 代入 (1), 得\n$$\nf(0)-f^2(0) \\geqslant \\frac{1}{4} .\n$$\n所以\n$$\nf(0)=\\frac{1}{2} . \\quad\\quad (4)\n$$\n令 $x=0$, 代入 (1) 并利用 (4), 得\n$$\n\\frac{1}{2}-\\frac{1}{2} f(y z) \\geqslant \\frac{1}{4} \\text {. }\n$$\n故\n$$\n\\begin{aligned}\n& f(y z) \\leqslant \\frac{1}{2}, \\\\\n& f(x) \\leqslant \\frac{1}{2} .  \\quad\\quad (5)\n\\end{aligned}\n$$\n综合(3)和(5), 即得 $f(x) \\equiv \\frac{1}{2}$.",
+    "remark": "",
+    "figures": []
+}

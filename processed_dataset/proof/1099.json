@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-3.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $T_a, T_b, T_c$ 为 $\\triangle A B C$ 的角平分线的延长线与外接圆相交所得的线段长.\n求证:\n$$\na b c \\leqslant \\frac{3 \\sqrt{3}}{8} T_a T_b T_c\n$$",
+    "solution": "证明:设 $|A E|=T_a, D$ 为 $A E$ 与 $B C$ 的交点, 则\n$$\nB E^2=c^2+T_a^2-2 c T_a \\cos \\frac{A}{2}, C E^2=b^2+T_a^2-2 b T_a \\cos \\frac{A}{2} .\n$$\n因为 $B E=C E$, 所以\n$$\nT_a=\\frac{b+c}{2 \\cos \\frac{A}{2}} .\n$$\n再由平均值不等式, 得 $T_a \\geqslant \\frac{\\sqrt{b c}}{\\cos \\frac{A}{2}}$.\n同理可得 $T_b \\geqslant \\frac{\\sqrt{a c}}{\\cos \\frac{B}{2}}, T_c \\geqslant \\frac{\\sqrt{a b}}{\\cos \\frac{C}{2}}$. 于是\n$$\nT_a T_b T_c \\geqslant \\frac{a b c}{\\cos \\frac{A}{2} \\cos \\frac{B}{2} \\cos \\frac{C}{2}} .\n$$\n再由\n$$\n\\cos \\frac{A}{2} \\cos \\frac{B}{2} \\cos \\frac{C}{2} \\leqslant \\frac{3 \\sqrt{3}}{8}\n$$\n得到命题成立.",
+    "remark": "",
+    "figures": []
+}

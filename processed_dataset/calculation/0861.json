@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例28. 设 $a, b \\in \\mathbf{R}^{+}$.\n(1) 求 $S=\\frac{(a+1)^2}{b}+\\frac{(b+3)^2}{a}$ 的最小值;\n(2) 求 $T=\\frac{(a+1)^3}{b^2}+\\frac{(b+3)^3}{a^2}$ 的最小值.",
+    "solution": "解:(1) 由柯西不等式, 得所以\n$$\n\\begin{aligned}\n& S \\cdot(b+a) \\geqslant(a+1+b+3)^2, \\\\\n& S \\geqslant \\frac{(a+b+4)^2}{a+b}=(a+b)+\\frac{16}{a+b}+8 \\\\\n& \\geqslant 2 \\sqrt{16}+8=16,\n\\end{aligned}\n$$\n故 $S$ 的最小值为 16 .\n(2) 由(3) (Hölder 不等式),有\n$$\n\\left(\\frac{(a+1)^3}{b^2}+\\frac{(b+3)^3}{a^2}\\right)(b+a)(b+a) \\geqslant(a+1+b+3)^3,\n$$\n所以\n$$\n\\begin{aligned}\nT & \\geqslant \\frac{(a+b+4)^3}{(a+b)^2}=x+12+\\frac{48}{x}+\\frac{64}{x^2}(\\text { 记 } a+b=x) \\\\\n& =x+\\frac{64}{x}+\\left(\\frac{64}{x^2}-\\frac{16}{x}+1\\right)+11 \\\\\n& =\\left(x+\\frac{64}{x}\\right)+\\left(\\frac{8}{x}-1\\right)^2+11 \\geqslant 2 \\sqrt{64}+0+11 \\\\\n& =27 .\n\\end{aligned}\n$$\n当 $a=\\frac{22}{5}, b=\\frac{18}{5}$ 时等号成立.\n所以 $T$ 的最小值为 27 .",
+    "remark": "",
+    "figures": []
+}

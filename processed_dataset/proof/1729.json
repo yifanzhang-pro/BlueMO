@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例7. 在 $\\triangle A B C$ 中, $A B=A C$, 圆 $O$ 是它的外接圆, $B N$ 平分 $\\angle A B C$, 点 $N$ 在圆 $O$ 上, 点 $E 、 F$ 分别在边 $A B 、 A C$ 上, 满足 $E O \\perp B N, E F \\perp E O$. 求证: $A E^2= B E \\cdot A F$.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c6i7.png>), 因为 $E F \\perp E O, B N \\perp E O$, 则 $E F / / B N$.\n所以, $\\frac{A E}{B E}=\\frac{A F}{F D}$.\n故 $A E \\cdot F D=B E \\cdot A F$.\n于是, 只需证 $A E=F D$.\n由于线段 $A E 、 F D$ 不在同一个三角形中, 故可考虑作平移变换.\n作沿向量 $\\overrightarrow{F E}$ 平移变换, 则四边形 $F E D^{\\prime} D$ 为 $\\square$, 设 $D$ 变为 $D^{\\prime}$.\n连结 $A O 、 B O 、 D^{\\prime} O 、 E D^{\\prime}$. 因为\n$$\n\\begin{aligned}\n& \\angle E D^{\\prime} B=\\angle F D B=\\angle C+-\\frac{1}{2} \\angle B, \\\\\n& \\angle E B O=\\angle E A O=\\frac{1}{2} \\angle A, \\\\\n& \\angle B E O=90^{\\circ}-\\angle A E F=90^{\\circ}-\\frac{1}{2} \\angle B,\n\\end{aligned}\n$$\n则 $\\angle E O B=180^{\\circ}-\\angle B E O-\\angle E B O$\n$$\n\\begin{aligned}\n& =180^{\\circ}-\\left(90^{\\circ}-\\frac{1}{2} \\angle B\\right)-\\frac{1}{2} \\angle A \\\\\n& =\\frac{1}{2}(\\angle A+\\angle B+\\angle C)+\\frac{1}{2} \\angle B-\\frac{1}{2} \\angle A \\\\\n& =\\angle B+\\frac{1}{2} \\angle C .\n\\end{aligned}\n$$\n易知 $\\angle B=\\angle C$.\n则 $\\angle E O B=\\angle E D^{\\prime} B$, 所以, $E, O, D^{\\prime}, B$ 四点共圆.\n故\n$$\n\\begin{aligned}\n\\text { 故 } & \\angle E D^{\\prime} O=\\angle E B O=\\angle E A O, \\\\\n\\angle B O D^{\\prime}+\\angle E O B+\\angle A O E & =\\angle B E D^{\\prime}+\\angle B+\\frac{1}{2} \\angle C+\\angle A O E \\\\\n& =\\angle A+\\angle B+\\frac{1}{2} \\angle C+\\angle A O E \\\\\n& =\\angle A O E+90^{\\circ}+\\frac{1}{2} \\angle B+\\frac{1}{2} \\angle A \\\\\n& =\\angle A O E+90^{\\circ}+\\angle A E F+\\angle E A O=180^{\\circ} .\n\\end{aligned}\n$$\n因此, $D^{\\prime}, O, A$ 三点共线.\n又 $\\angle E D^{\\prime} O=\\angle E A O$, 则 $A E=E D^{\\prime}=F D$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6i7.png"
+    ]
+}

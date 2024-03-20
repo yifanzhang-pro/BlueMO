@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 锐角三角形 $A B C$ 外接圆在 $A$ 和 $B$ 处的切线相交于 $D, M$ 是 $A B$ 的中点, 求证: $\\angle A C M=\\angle B C D$.",
+    "solution": "设 $\\triangle A B C$ 外接圆为复平面上的单位圆, 点 $A 、 B 、 C 、 D 、 M$ 分别用复数 $a 、 b 、 c 、 d 、 m$ 代表, 则\n$$\n\\angle A C M=\\angle B C D \\Leftrightarrow H \\triangleq \\frac{b-c}{d-c} / \\frac{m-c}{a-c} \\in \\mathbf{R} .\n$$\n$d=\\frac{2 a b}{a+b}, m=\\frac{a+b}{2}$. 故\n$$\nH=\\frac{(b-c)(a-c)}{c^2-\\frac{2 c a b}{a+b}-\\frac{a c+b c}{2}+a b}=\\bar{H} \\Rightarrow H \\in \\mathbf{R},\n$$\n证毕.",
+    "remark": "",
+    "figures": []
+}

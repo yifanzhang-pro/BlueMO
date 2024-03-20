@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例6. 已知 $a, b, c \\geqslant 0, a+b+c=1$. 求证:\n$$\n\\sqrt{a+\\frac{1}{4}(b-c)^2}+\\sqrt{b}+\\sqrt{c} \\leqslant \\sqrt{3} .\n$$",
+    "solution": "证法 2 令 $a=u^2, b=v^2, c=w^2$, 则 $u^2+v^2+w^2=1$, 于是待证不等式变为\n$$\n\\sqrt{u^2+\\frac{\\left(v^2-w^2\\right)^2}{4}}+v+w \\leqslant \\sqrt{3} . \\label{(1)}\n$$\n注意到\n$$\n\\begin{aligned}\nu^2+\\frac{\\left(v^2-w^2\\right)^2}{4} & =1-\\left(v^2+w^2\\right)+\\frac{\\left(v^2-w^2\\right)^2}{4}=\\frac{4-4\\left(v^2+w^2\\right)+\\left(v^2-w^2\\right)^2}{4} \\\\\n& =\\frac{4-4\\left(v^2+w^2\\right)+\\left(v^2+w^2\\right)^2-4 v^2 w^2}{4} \\\\\n& =\\frac{\\left(2-v^2-w^2\\right)^2-4 v^2 w^2}{4} \\\\\n& =\\frac{\\left(2-v^2-w^2-2 w w\\right)\\left(2-v^2-w^2+2 w w\\right)}{4} \\\\\n& =\\frac{\\left[2-(v+w)^2\\right]\\left[2-(v-w)^2\\right]}{4} \\leqslant 1-\\frac{(v+w)^2}{2} .\n\\end{aligned}\n$$\n(注意 $(v+w)^2 \\leqslant 2\\left(v^2+w^2\\right) \\leqslant 2$) 将上式代入 (1), 得\n$$\n\\sqrt{1-\\frac{(v+w)^2}{2}}+v+w \\leqslant \\sqrt{3}\n$$\n令 $\\frac{v+w}{2}=x$, 将上述不等式改写为 $\\sqrt{1-2 x^2}+2 x \\leqslant \\sqrt{3}$, 以下同证法 1 . 说明证法 2 解释了证法 1 中替换的动机.",
+    "remark": "",
+    "figures": []
+}

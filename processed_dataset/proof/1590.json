@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题16. 数列 $\\left\\{x_n\\right\\}$ 定义如下 $x_1=\\frac{1}{2}, x_n=\\frac{2 n-3}{2 n} x_{n-1}, n=2,3, \\cdots$. 证明: 对任意正整数 $n$, 都有 $x_1+x_2+\\cdots+x_n<1$.",
+    "solution": "由递推关系可知, 对任意 $n \\in \\mathbf{N}^*$, 都有 $x_n>0$. 进一步, 由 $2 n x_n= 2(n-1) x_{n-1}-x_{n-1}$, 得 $x_{n-1}=2(n-1) x_{n-1}-2 n x_n$. 求和, 得\n$$\n\\begin{aligned}\nx_1+\\cdots+x_n & =\\sum_{k=2}^{n+1}\\left(2(k-1) x_{k-1}-2 k x_k\\right) \\\\\n& =2 \\sum_{k=1}^n\\left(k x_k-(k+1) x_{k+1}\\right)=2\\left(x_1-(n+1) x_{n+1}\\right) \\\\\n& =1-2(n+1) x_{n+1}<1 .\n\\end{aligned}\n$$\n命题获证.",
+    "remark": "",
+    "figures": []
+}

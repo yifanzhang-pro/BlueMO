@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 证明: 不定方程\n$$\n5^x-3^y=2\n$$\n仅有正整数解 $x=y=1$.",
+    "solution": "方程显然有解 $x=y=1$. 将方程模 4 易知 $y$ 为奇数.\n若 $y>1$, 将方程模 9 得\n$$\n5^x \\equiv 2(\\bmod 9) . \\label{eq1}\n$$\n不难求得对 $x=1,2, \\cdots, 5^x$ 模 9 周期地为 $5,7,8,4,2,1$. 故由 式\\ref{eq1} 知 $x$ 必有形式 $6 k+5$. 再将原方程模 7 ,易验证,对奇数 $y$, 有\n$$\n3^y \\equiv 3,5,6(\\bmod 7) \\text {. }\n$$\n而 $x=6 k+5$ 时, 由费马小定理知 $5^6 \\equiv 1(\\bmod 7)$, 故\n$$\n5^x=5^{6 k+5} \\equiv 5^5 \\equiv 3(\\bmod 7),\n$$\n从而原方程两边模 7 不等, 因此它没有 $y>1$ 的解, 故仅有的正整数解为 $y= 1, x=1$.",
+    "remark": "",
+    "figures": []
+}

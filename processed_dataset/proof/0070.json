@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题19 设 $k \\geqslant 6$ 为自然数, $n=2 k-1$. $T$ 为所有 $n$ 元数组 $\\left(x_1, x_2, \\cdots, x_n\\right)$ 的集合, 其中 $x_i \\in\\{0,1\\}, i=1,2, \\cdots, n$. 对于 $x=\\left(x_1, x_2, \\cdots, x_n\\right), y= \\left(y_1, y_2, \\cdots, y_n\\right) \\in T$, 定义\n$$\nd(x, y)=\\sum_{i=1}^n\\left|x_i-y_i\\right| .\n$$\n特别地有 $d(x, x)=0$. 设有一个由 $T$ 的 $2^k$ 个元素组成的子集 $S$, 使对任何 $x \\in T$, 都存在惟一的 $y \\in S$, 使得 $d(x, y) \\leqslant 3$. 求证: $n=23$.",
+    "solution": "由于 $d(x, x)=0<3$, 所以 $S$ 中任何两个元素的距离都大于 3 . 因而当将 $S$ 中的元素 $x$ 的 $n$ 个分量改变 1 个、2 个或 3 个 (1 变为 0 或 0 变为 1 ) 时, 所得的元素都在 $T-S$ 中, 且 $S$ 中的不同元素按上述办法所得的元素也互不相同.\n按假设知, 对每个 $x \\in T$, 都有惟一的 $y \\in S$, 使得 $d(x, y) \\leqslant 3$, 所以 $T- S$ 中的每个元素都可由 $S$ 中的元素按上述办法生成.\n从而有 $2^n=2^k\\left(\\mathrm{C}_n^0+\\mathrm{C}_n^1+\\right. \\left.\\mathrm{C}_n^2+\\mathrm{C}_n^3\\right)$. 由于 $n=2 k-1$, 故有 $3 \\cdot 2^{k-2}=k\\left(2 k^2-3 k+4\\right)$. (1) 若 $3 \\times k$, 则 $k= 2^m$. 由于 $k \\geqslant 6$, 所以 $m \\geqslant 3$. 于是 $2 k^2-3 k+4$ 是 4 的倍数但不是 8 的倍数.\n从而由 (1) 可得 $2 k^2-3 k+4=12$, 这个方程无解, 所以 $k$ 为 3 的倍数.\n记 $k= 3 h=3 \\cdot 2^q, q \\geqslant 1$, 于是 (1) 式化为 $2^{3 h-2}=h\\left(18 h^2-9 h+4\\right)$. (2) 当 $q \\geqslant 3$ 时, $18 h^2-9 h+4$ 是 4 的倍数不是 8 的倍数.\n由 (2) 知 $18 h^2-9 h+4=4$, 无解.\n从而 $q=1$ 或 $2, h=2$ 或 4 . 代入 (2) 式知 $h=2$ 不是根而 $h=4$ 是根.\n所以得到 $n=2 k-1==6 h-1=23$.",
+    "remark": "",
+    "figures": []
+}

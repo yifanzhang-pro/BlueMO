@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 设实数 $a_1, a_2, \\cdots, a_{100}$ 满足:\n(1) $a_1 \\geqslant a_2 \\geqslant \\cdots \\geqslant a_{100} \\geqslant 0$;\n(2) $a_1+a_2 \\leqslant 100$;\n(3) $a_3+a_4+\\cdots+a_{100} \\leqslant 100$.\n求 $a_1^2+a_2^2+\\cdots+a_{100}^2$ 的最大值.",
+    "solution": "解:$$\n\\begin{aligned}\n& a_1^2+a_2^2+\\cdots+a_{100}^2 \\leqslant\\left(100-a_2\\right)^2+a_2^2+a_3^2+\\cdots+a_{100}^2 \\\\\n\\leqslant & 100^2-\\left(a_1+a_2+\\cdots+a_{100}\\right) a_2+2 a_2^2+a_3^2+\\cdots+a_{100}^2 \\\\\n= & 100^2-a_2\\left(a_1-a_2\\right)-a_3\\left(a_2-a_3\\right)-\\cdots-a_{100}\\left(a_2-a_{100}\\right) \\\\\n\\leqslant & 100^2 .\n\\end{aligned}\n$$\n等号成立, 当 $a_1=100, a_i=0(i>1)$ 或者 $a_1=a_2=a_3=a_4=50, a_j= 0(j>4)$ 时.",
+    "remark": "",
+    "figures": []
+}

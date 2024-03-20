@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $a, b, c \\in \\mathbf{R}^{+}$, 求证: $a^{2 a} b^{2 b} c^{2 c} \\geqslant a^{b+c} b^{c+a} c^{a+b}$.",
+    "solution": "由于关于 $a 、 b 、 c$ 的对称性, 不妨设 $a \\geqslant b \\geqslant c$, 则 $\\frac{a^{2 a} b^{2 b} c^{2 c}}{a^{b+c} b^{a+c} c^{a+b}}= \\left(\\frac{a}{b}\\right)^{a-b}\\left(\\frac{b}{c}\\right)^{b-c}\\left(\\frac{a}{c}\\right)^{a-c} \\geqslant 1$, 所以 $a^{2 a} b^{2 b} c^{2 c} \\geqslant a^{b+c} b^{c+a} c^{a+b}$.",
+    "remark": "",
+    "figures": []
+}

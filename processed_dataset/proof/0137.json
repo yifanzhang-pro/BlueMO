@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题16 空间中有 $2 m$ 个点, $m \\geqslant 2$, 其中任意四点不共面.\n证明: 如果这 $2 m$ 个点之间至少连有 $m^2+1$ 条线段,则所连的线段中至少有三条, 它们围成一个三角形.",
+    "solution": "对 $m$ 用归纳法.\n当 $m=2$ 时, 容易验证.\n假设对 $m$ 结论成立.\n对 $m+$ 1 , 空间有 $2 m+2$ 个点, $(m+1)^2+1$ 条连线.\n这 $2 m+2$ 个点中必有两点 $a$ 与 $b$, 它们之间有线段相连.\n其余 $2 m$ 个点的集合记为 $X$. 如果 $X$ 中 $2 m$ 个点之间至少连有 $m^2+1$ 条线段, 则结论成立.\n因此, 设 $X$ 中 $2 m$ 个点之间至多连有 $m^2$ 条线段.\n于是 $X$ 中的点与点 $a$ 或点 $b$ 所连线段至少有 $(m+1)^2+1-m^2-1= 2 m+1$ 条.\n记 $X$ 中与点 $a$ 有线段相连的点的集合为 $A$, 与点 $b$ 有线段相连的点的集合为 $B$. 则 $|A \\cup B| \\leqslant|X| \\leqslant 2 m$, 而且 $|A|+|B| \\geqslant 2 m+1$. 因此有 $2 m \\geqslant|A \\cup B|=|A|+|B|-|A \\cap B| \\geqslant 2 m+1-|A \\cap B|$, 由此得 $|A \\cap B| \\geqslant 1$. 于是必有点 $C \\in A \\cap B$. 点 $a$ 与 $b 、 c$ 之间两两均有线段相连.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 设 $x_{i}\\in\\mathbb{R},\\;\\;|\\;x_{i}\\;|\\leq1\\;(1\\leq i\\leq n)$ ,求 $F=\\sum_{1\\leq i<j\\leq n}x_{i}x_{j}$ 的最小值.",
+    "solution": "由于 $F$ 在闭域上连续, 所以, 必定存在最小值.\n固定 $x_2, x_3, \\cdots, x_n$, 则 $F\\left(x_1\\right)$ 是关于 $x_1$ 的一次函数.\n又 $-1 \\leqslant x_1 \\leqslant 1$, 于是, 当 $F\\left(x_1\\right)$ 取最小值时, 必有 $x_1 \\in\\{-1,1\\}$. 由对称性, 知 $F$ 取最小值时, 必有 $x_i \\in\\{-1,1\\} \\quad(1 \\leqslant i \\leqslant n)$. 设 $F$ 取最小值时, $x_i$ 中有 $k$ 个为 $1, n-k$ 个为 -1 , 则 $F$ 的最值是如下形式的 $F(k)$ 的最小值: $F(k)=\\mathrm{C}_k^2+\\mathrm{C}_{n-k}^2-\\mathrm{C}_k^1 \\mathrm{C}_{n-k}^1=2\\left(k-\\frac{n}{2}\\right)^2-\\frac{n}{2} \\geqslant-\\frac{n}{2}$. 但 $F(k)$ 为整数, 所以 $F(k) \\geqslant-\\left[\\frac{n}{2}\\right]$, 其中等式在 $k=\\left[\\frac{n}{2}\\right]$ 时成立.\n所以, $F$ 的最小值为 $-\\left[\\frac{n}{2}\\right]$. 或者, 当 $x_i \\in\\{-1,1\\}$ 时, $F=\\frac{1}{2}\\left(\\sum_{i=1}^n x_i\\right)^2-\\sum_{i=1}^n \\frac{1}{2} x_i^2= \\frac{1}{2}\\left(\\sum_{i=1}^n x_i\\right)^2-\\sum_{i=1}^n \\frac{1}{2}=\\frac{1}{2}\\left(\\sum_{i=1}^n x_i\\right)^2-\\frac{n}{2} \\geqslant-\\frac{n}{2}$, 于是 $-F \\leqslant \\frac{n}{2}$. 但 $-F$ 为整数, 所以 $-F \\leqslant\\left[\\frac{n}{2}\\right]$, 即 $F \\geqslant-\\left[\\frac{n}{2}\\right]$.",
+    "remark": "",
+    "figures": []
+}

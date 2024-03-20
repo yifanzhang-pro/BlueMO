@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题13. 设 $a, b \\in \\mathbf{R}^{+}$, 求证: $\\sqrt{a}+1>\\sqrt{b}$ 成立的充要条件是对任意 $x>1$, 有\n$$\na x+\\frac{x}{x-1}>b \\text {. }\n$$",
+    "solution": "已知 $a b>0, x-1>0$, 则 $a x+\\frac{x}{x-1}=\\left[a(x-1)+\\frac{1}{x-1}\\right]+a+1 \\geqslant 2 \\sqrt{a}+a+1=(\\sqrt{a}+1)^2$. 当且仅当 $a(x-1)=\\frac{1}{x-1}$, 即 $x=1+\\frac{1}{\\sqrt{a}}$ 时, $a x+\\frac{x}{x-1}$ 的最小值为 $(\\sqrt{a}+1)^2$, 于是 $a x+\\frac{x}{x-1}>b$ 对任意 $x>1$ 成立的.\n充要条件是 $(\\sqrt{a}+1)^2>b$, 即 $\\sqrt{a}+1>\\sqrt{b}$.",
+    "remark": "",
+    "figures": []
+}

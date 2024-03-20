@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 若整数 $a_1, a_2, \\cdots, a_n\\left(n \\in \\mathbf{N}^*\\right)$ 满足 $a_1 a_2 \\cdots a_n=n$ 且 $a_1+a_2+\\cdots+a_n=0$, 证明: $4 \\mid n$.",
+    "solution": "先证 $n$ 为偶数.\n用反证法.\n假设 $n$ 为奇数,则由 $a_1 a_2 \\cdots a_n=n$ 知 $a_1, a_2, \\cdots, a_n$ 均为奇数,故\n$$\na_1+a_2+\\cdots+a_n \\equiv n \\equiv 1(\\bmod 2),\n$$\n与 $a_1+a_2+\\cdots+a_n=0$ 矛盾.\n故 $n$ 为偶数.\n再证 $4 \\mid n$. 仍用反证法.\n如若不然, 则 $a_1, a_2, \\cdots, a_n$ 中有且仅一个偶数, 故\n$$\na_1+a_2+\\cdots+a_n \\equiv n-1 \\equiv 1(\\bmod 2),\n$$\n仍与 $a_1+a_2+\\cdots+a_n=0$ 矛盾.\n故 $4 \\mid n$.",
+    "remark": "",
+    "figures": []
+}

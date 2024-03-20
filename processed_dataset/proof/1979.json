@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 已知 $|z|=1, z^{11}+z=1$, 求复数 $z$.",
+    "solution": "由 $|z|=1$, 可设 $z=\\cos \\theta+i \\sin \\theta$, 且 $0 \\leqslant \\theta<2 \\pi$, 代入 $z^{11}+z=1$,\n得\n$$\n\\begin{gathered}\n(\\cos \\theta+i \\sin \\theta)^{11}+(\\cos \\theta+i \\sin \\theta)=1, \\\\\n(\\cos 11 \\theta+\\cos \\theta-1)+(\\sin 11 \\theta+\\sin \\theta) i=0,\n\\end{gathered}\n$$\n所以\n$$\n\\left\\{\\begin{array}{l}\n\\cos 11 \\theta+\\cos \\theta-1=0, \\\\\n\\sin 11 \\theta+\\sin \\theta=0,\n\\end{array}\\right.\n$$\n即\n$$\n\\cos 11 \\theta=1-\\cos \\theta, \\label{eq1}\n$$\n且\n$$\n\\sin 11 \\theta=-\\sin \\theta, \\label{eq2}\n$$\n由${ 式\\ref{eq1}}^2+{式\\ref{eq2}}^2$, 可知\n$$\n(1-\\cos \\theta)^2+(-\\sin \\theta)^2=1,\n$$\n于是\n$$\n\\begin{gathered}\n\\cos \\theta=\\frac{1}{2}, \\\\\n\\sin \\theta= \\pm \\frac{\\sqrt{3}}{2} .\n\\end{gathered}\n$$\n从而经验证知, $z=\\frac{1}{2} \\pm \\frac{\\sqrt{3}}{2} \\mathrm{i}$ 是原方程的解.",
+    "remark": "注:对 $z^{11}=1-z$ 两边取模, 得 $|z-1|=1$, 并结合 $|z|=1$, 亦可给出简明解法.",
+    "figures": []
+}

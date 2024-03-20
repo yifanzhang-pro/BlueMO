@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 在排球单循环赛中, 若 $A$ 队胜 $B$ 队, 或 $A$ 队胜 $C$ 队而 $C$ 队胜 $B$ 队, 则称 $A$ 队优于 $B$ 队.\n称优于所有对手的队为冠军.\n试问.\n按此规定, 是否会出现恰好两个冠军?",
+    "solution": "参见例 4 .",
+    "remark": "",
+    "figures": []
+}

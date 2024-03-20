@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例21. 设 $a_1, a_2, \\cdots, a_n$ 是一个有无穷项的实数列, 对于所有正整数 $i$, 存在一个实数 $c$, 使得 $0 \\leqslant a_i \\leqslant c$, 且 $\\left|a_i-a_j\\right| \\geqslant \\frac{1}{i+j}$ 对所有正整数 $i, j (i \\neq j)$ 成立.\n证明: $c \\geqslant 1$.",
+    "solution": "证明:对于 $n \\geqslant 2$, 设 $\\sigma(1), \\sigma(2), \\cdots, \\sigma(n)$ 是 $1,2, \\cdots, n$ 的一个排列, 且满足\n$$\n0 \\leqslant a_{\\sigma(1)}<a_{\\sigma(2)}<\\cdots<a_{\\sigma(n)} \\leqslant c,\n$$\n则\n$$\nc \\geqslant a_{\\sigma(n)}-a_{\\sigma(1)},\n$$\n$$\n\\begin{aligned}\n& \\left(a_{\\sigma(n)}-a_{\\sigma(n-1)}\\right)+\\left(a_{\\sigma(n-1)}-a_{\\sigma(n-2)}\\right)+\\cdots+\\left(a_{\\sigma(2)}-a_{\\sigma(1)}\\right) \\\\\n\\geqslant & \\frac{1}{\\sigma(n)+\\sigma(n-1)}+\\frac{1}{\\sigma(n-1)+\\sigma(n-2)}+\\cdots+\\frac{1}{\\sigma(2)+\\sigma(1)} .\n\\end{aligned}\n$$\n由柯西不等式,得\n$$\n\\begin{gathered}\n{\\left[\\frac{1}{\\sigma(n)+\\sigma(n-1)}+\\frac{1}{\\sigma(n-1)+\\sigma(n-2)}+\\cdots+\\frac{1}{\\sigma(2)+\\sigma(1)}\\right] .} \\\\\n{[(\\sigma(n)+\\sigma(n-1))+(\\sigma(n-1)+\\sigma(n-2))+\\cdots+(\\sigma(2)+\\sigma(1))] \\geqslant(n-1)^2 .}\n\\end{gathered}\n$$\n对所有正整数 $n \\geqslant 2$, 我们有\n$$\n\\begin{aligned}\nc & \\geqslant \\frac{1}{\\sigma(n)+\\sigma(n-1)}+\\frac{1}{\\sigma(n-1)+\\sigma(n-2)}+\\cdots+\\frac{1}{\\sigma(2)+\\sigma(1)} \\\\\n& \\geqslant \\frac{(n-1)^2}{2[\\sigma(1)+\\sigma(2)+\\cdots+\\sigma(n)]-\\sigma(1)-\\sigma(n)} \\\\\n& =\\frac{(n-1)^2}{n(n+1)-\\sigma(1)-\\sigma(n)} \\\\\n& \\geqslant \\frac{(n-1)^2}{n^2+n-3} \\geqslant \\frac{n-1}{n+3}=1-\\frac{4}{n+3} .\n\\end{aligned}\n$$\n故 $c \\geqslant 1$.",
+    "remark": "",
+    "figures": []
+}

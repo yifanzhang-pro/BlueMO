@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 已知 $k>a>b>c>0$, 求证:\n$$\nk^2-(a+b+c) k+(a b+b c+c a)>0 .\n$$",
+    "solution": "考察恒等式 $(k-a)(k-b)(k-c)=k^3-(a+b+c) k^2+(a b+b c+ c a) k-a b c$.",
+    "remark": "",
+    "figures": []
+}

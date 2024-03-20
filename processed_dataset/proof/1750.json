@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设凸四边形 $A B C D$ 的两组对边分别交于点 $E$ 、 $F$, 两条对角线的交点为 $P$, 过 $P$ 作 $P O \\perp E F$ 于点 $O$. 求证: $\\angle B O C= \\angle A O D$.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c8i18.png>), 延长 $A C 、 D B$ 分别与 $E F$ 交于点 $Q 、 R$. 若 $B D$ 与 $E F$ 平行, 则视点 $R$ 在无穷远处.\n由性质 2 知 $P 、 Q$ 调和分割线段 $A C, P$ 、 $R$ 调和分割线段 $B D$.\n因为 $P O \\perp E F$, 所以, 根据性质 5 中 (3) 和 (4) $\\Rightarrow(1)$ 和 (2), 知 $\\angle P O A=\\angle P O C$,\n$\\angle P O B=\\angle P O D$. 因此, $\\angle B O C=\\angle A O D$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8i18.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例11 求所有满足下列条件的 $f: \\mathbf{N}_{+} \\rightarrow \\mathbf{R}$ :\n$$\nf(n+m)+f(n-m)=f(3 n), n, m \\in \\mathbf{N}_{+}, n \\geqslant m .\n$$",
+    "solution": "解:令 $m=0$, 得\n$$\n2 f(n)=f(3 n), n \\in \\mathbf{N}_{+} .\n$$\n令 $m=n=0$, 得 $f(0)=0$.\n令 $m=n$, 得\n$$\nf(2 n)+f(0)=f(3 n),\n$$\n即 $f(2 n)=f(3 n)$.\n于是, 对任意 $m \\in \\mathbf{N}_{+}$, 有\n$$\nf(4 m)=f(6 m)=f(9 m) . \\quad\\quad (1)\n$$\n另一方面, 在原恒等式中令 $n=3 m$, 得\n$$\nf(4 m)+f(2 m)=f(9 m) .\n$$\n因此, 对任意 $m \\in \\mathbf{N}_{+}$, 都有 $f(2 m)=0$. 于是, 对任意 $n \\in \\mathbf{N}_{+}$, 都有\n$$\nf(n)=\\frac{1}{2} f(3 n)=\\frac{1}{2} f(2 n)=0 .\n$$\n故所求的 $f(n) \\equiv 0$ 才能满足题意.",
+    "remark": "",
+    "figures": []
+}

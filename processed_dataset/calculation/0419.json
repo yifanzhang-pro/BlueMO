@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise11.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 在关于 $x$ 的二次方程 $x^2+z_1 x+z_2+m=0$ 中, $z_1, z_2, m$ 均是复数, 且 $z_1^2-4 z_2=16+20 \\mathrm{i}$. 设这个方程的两根 $\\alpha, \\beta$ 满足 $|\\alpha-\\beta|=2 \\sqrt{7}$, 求 $|m|$ 的最大值和最小值.",
+    "solution": "由韦达定理有 $\\left\\{\\begin{array}{l}\\alpha+\\beta=-z_1, \\\\ \\alpha \\beta=z_2+m,\\end{array}\\right.$ 故\n$$\n(\\alpha-\\beta)^2=(\\alpha+\\beta)^2-4 \\alpha \\beta=z_1^2-4 z_2-4 m,\n$$\n所以 $\\left|(\\alpha-\\beta)^2\\right|=\\left|z_1^2-4 z_2-4 m\\right|=|16+20 \\mathrm{i}-4 m|=4|m-(4+5 \\mathrm{i})|$.\n另一方面, $\\left|(\\alpha-\\beta)^2\\right|=|\\alpha-\\beta|^2=28$, 故 $|m-(4+5 \\mathrm{i})|=7$, 即 $m$ 在以 $A(4,5)$ 为圆心, 以 7 为半径的圆上.\n因为 $|O A|=\\sqrt{4^2+5^2}=\\sqrt{41}<7$, 故原点 $O$ 在上述圆内, 连接 $O A$ 延长交上述圆于 $B$, 延长 $A O$ 交上述圆于 $C$, 则\n$$\n|m|_{\\max }=|O B|=\\sqrt{41}+7,|m|_{\\min }=|O C|=7-\\sqrt{41} .\n$$",
+    "remark": "",
+    "figures": []
+}

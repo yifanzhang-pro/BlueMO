@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 已知等腰 $\\triangle A B C$ 和等腰 $\\triangle D B C$ 有公共的底边 $B C$, 且 $\\angle A B D=90^{\\circ} . M$ 是 $B C$ 的中点, $E$ 是线段 $A B$ 内部一点, $P$ 是线段 $M C$ 内部一点, $F$ 是 $A C$ 延长线上一点, 且满足 $\\angle B D E=\\angle A D P=\\angle C D F$. 证明: $P$ 是线段 $E F$ 的中点, 且 $D P \\perp E F$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c1a6.png>), 连结 $E F$ 交 $B C$ 于 $P^{\\prime}$. 首先, $\\angle E B D= \\angle D C F=90^{\\circ}, B D=C D, \\angle B D E=\\angle C D F$, 故 $\\triangle B D E \\cong \\triangle C D F$. 进而, $D E=D F, \\triangle D E F$ 也是等腰三角形.\n则 $\\angle E D F=\\angle E D C+\\angle C D F=\\angle B D E+ \\angle E D C=\\angle B D C$. 因此, $\\triangle E D F \\backsim \\triangle B D C, \\angle D E F= \\angle D B C$. 于是, $E 、 B 、 D 、 P^{\\prime}$ 四点共圆.\n所以, $\\angle E P^{\\prime} D= \\angle E B D=90^{\\circ}$. 从而, $E P^{\\prime}=P^{\\prime} F, D P^{\\prime} \\perp E F$. 下面证明\n$P^{\\prime}$ 与 $P$ 重合.\n由 $\\angle B P^{\\prime} D=\\angle B E D, \\angle P^{\\prime} M D=\\angle E B D=90^{\\circ}$, 得 $\\triangle M P^{\\prime} D \\backsim \\triangle B E D, \\angle A D P^{\\prime}=\\angle B D E$. 所以, $P^{\\prime}$ 与 $P$ 重合.\n因此,所证结论成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1a6.png"
+    ]
+}

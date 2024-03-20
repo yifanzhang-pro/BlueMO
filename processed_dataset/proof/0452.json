@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例1. $n$ 个参赛者 $P_1, P_2, \\cdots, P_n(n>1)$ 进行循环赛, 每个参赛者同其他 $(n-1)$ 个参赛者都进行一局比赛.\n假设比赛结果没有平局出现, $w_r$ 和 $l_r$ 分别表示参赛者 $P_r$ 胜与负的局数,求证:\n$$\nw_1^2+w_2^2+\\cdots+w_n^2=l_1^2+l_2^2+\\cdots+l_n^2 .\n$$",
+    "solution": "证明:作一竞赛图 $\\bar{K}_n$, 每个顶点 $v_r$ 对应于参赛者 $P_r$, 如果参赛者 $P_i$ 胜了 $P_j$, 则在顶点 $v_i, v_j$ 之间作弧 $\\left(v_i, v_j\\right)$. 于是 $w_r$ 和 $l_r$ 分别是顶点 $v_r$ 的出度和人度.\n根据定理一,\n$$\nw_1+w_2+\\cdots+w_n=l_1+l_2+\\cdots+l_n .\n$$\n若注意到 $w_i+l_i=n-1(1 \\leqslant i \\leqslant n)$, 可得\n$$\n\\begin{aligned}\n& w_1^2+w_2^2+\\cdots+w_n^2-\\left(l_1^2+l_2^2+\\cdots+l_n^2\\right) \\\\\n= & \\left(w_1^2-l_1^2\\right)+\\left(w_2^2-l_2^2\\right)+\\cdots+\\left(w_n^2-l_n^2\\right) \\\\\n= & \\left(w_1+l_1\\right)\\left(w_1-l_1\\right)+\\left(w_2+l_2\\right)\\left(w_2-l_2\\right) \\\\\n& +\\cdots+\\left(w_n+l_n\\right)\\left(w_n-l_n\\right) \\\\\n= & (n-1)\\left[\\left(w_1+w_2+\\cdots+w_n\\right)-\\left(l_1+l_2+\\cdots+l_n\\right)\\right]=0 .\n\\end{aligned}\n$$\n从而有\n$$\nw_1^2+w_2^2+\\cdots+w_n^2=l_1^2+l_2^2+\\cdots+l_n^2 .\n$$\n在有向图 $D=(v, u)$ 中,一个由不同的弧组成的序列 $u_1, u_2, \\cdots, u_n$, 若其中 $u_i$ 的起点为 $v_i$, 终点为 $v_{i+1}(i=1,2, \\cdots, n)$, 称这个序列为从 $v_1$ 到 $v_{n+1}$ 的有向路 (简称路), $n$ 称为这个路的长.\n$v_1$ 为路的起点, $v_{n+1}$ 为路的终点.\n如果 $v_1=v_{n+1}$, 则称这个路为回路.",
+    "remark": "",
+    "figures": []
+}

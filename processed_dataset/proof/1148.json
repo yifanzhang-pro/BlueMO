@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-3.tex",
+    "problem_type": "proof",
+    "problem": "例10. 设 $n \\geqslant 2, a_1, a_2, \\cdots, a_n$ 是 $n$ 个正实数,满足:\n$$\n\\left(a_1+\\cdots+a_n\\right)\\left(\\frac{1}{a_1}+\\frac{1}{a_2}+\\cdots+-\\frac{1}{a_n}\\right) \\leqslant\\left(n+\\frac{1}{2}\\right)^2 .\n$$\n证明: $\\max \\left\\{a_1, \\cdots, a_n\\right\\} \\leqslant 4 \\min \\left\\{a_1, \\cdots, a_n\\right\\}$.",
+    "solution": "证明:不妨设\n$$\nm=a_1 \\leqslant a_2 \\leqslant \\cdots \\leqslant a_n=M,\n$$\n要证 $M \\leqslant 4 m$.\n当 $n=2$ 时,条件为\n$$\n(m+M)\\left(\\frac{1}{m}+\\frac{1}{M}\\right) \\leqslant \\frac{25}{4} .\n$$\n等价于\n$$\n4(m+M)^2 \\leqslant 25 m M,\n$$\n即\n$$\n(4 M-m)(M-4 m) \\leqslant 0,\n$$\n而\n$$\n4 M-m \\geqslant 3 M>0,\n$$\n故 $M \\leqslant 4 m$.\n当 $n \\geqslant 3$ 时,利用柯西不等式可知\n$$\n\\begin{gathered}\n\\left(n+\\frac{1}{2}\\right)^2 \\geqslant\\left(a_1+\\cdots+a_n\\right)\\left(\\frac{1}{a_1}+\\cdots+\\frac{1}{a_n}\\right) \\\\\n=\\left(m+a_2+\\cdots+a_{n-1}+M\\right)\\left(\\frac{1}{M}+\\frac{1}{a_2}+\\cdots+\\frac{1}{a_{n-1}}+\\frac{1}{m}\\right) \\\\\n\\geqslant(\\sqrt{\\frac{m}{M}}+\\underbrace{1+\\cdots+1}_{n-2 \\uparrow}+\\sqrt{\\frac{M}{m}})^2 .\n\\end{gathered}\n$$\n故\n$$\nn+\\frac{1}{2} \\geqslant \\sqrt{\\frac{m}{M}}+\\sqrt{\\frac{M}{m}}+n-2,\n$$\n于是\n$$\n\\sqrt{\\frac{M}{m}}+\\sqrt{\\frac{m}{M}} \\leqslant \\frac{5}{2} .\n$$\n从而\n$$\n2(m+M) \\leqslant 5 \\sqrt{m M},\n$$\n同 $n=2$ 的情形可得 $M \\leqslant 4 m$. 命题获证.",
+    "remark": "",
+    "figures": []
+}

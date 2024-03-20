@@ -1,0 +1,17 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 能否让马跳动几次, 将如图(<FilePath:./images/volume12/figures/fig-c1i6.png>) 所示的阵势变为如图(<FilePath:./images/volume12/figures/fig-c1i7.png>) 所示的阵势?(\"马\"按照国际象棋规则跳动)\n\\begin{tabular}{|l|l|l|}\n\\hline 1 & 4 & 7 \\\\\n\\hline 2 & 5 & 8 \\\\\n\\hline 3 & 6 & 9 \\\\\n\\hline\n\\end{tabular}",
+    "solution": "解:如图(<FilePath:./images/volume12/figures/fig-c1i8.png>) 所示, 将九个方格编号.\n再把每个方格对应为平面上一点.\n若马能从一个方格跳往另一个方格, 则在相应两点之间连一条边, 如图(<FilePath:./images/volume12/figures/fig-c1i9.png>).\n于是如图(<FilePath:./images/volume12/figures/fig-c1i6.png>) 所示的开始的阵势以及如图(<FilePath:./images/volume12/figures/fig-c1i7.png>) 所示的要求变成的阵势分别变成了如图(<FilePath:./images/volume12/figures/fig-c1i10.png>)、如图(<FilePath:./images/volume12/figures/fig-c1i11.png>) 中的两个图形.\n显然,马在一个圆上的前后跟随顺序是不变的,所以不能按要求改变阵势.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c1i6.png",
+        "./images/volume12/figures/fig-c1i7.png",
+        "./images/volume12/figures/fig-c1i8.png",
+        "./images/volume12/figures/fig-c1i9.png",
+        "./images/volume12/figures/fig-c1i6.png",
+        "./images/volume12/figures/fig-c1i7.png",
+        "./images/volume12/figures/fig-c1i10.png",
+        "./images/volume12/figures/fig-c1i11.png"
+    ]
+}

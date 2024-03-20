@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例5. 已知 $a 、 b 、 c$ 是正实数,满足 $a+b+c \\geqslant a b c$. 求证: 在下列三个式子中至少有两个成立\n$$\n\\frac{6}{a}+\\frac{3}{b}+\\frac{2}{c} \\geqslant 2, \\frac{6}{b}+\\frac{3}{c}+\\frac{2}{a} \\geqslant 2, \\frac{6}{c}+\\frac{3}{a}+\\frac{2}{b} \\geqslant 2 .\n$$",
+    "solution": "证明:用反证法.\n(i) 如果 $\\frac{6}{a}+\\frac{3}{b}+\\frac{2}{c}<2, \\frac{6}{b}+\\frac{3}{c}+\\frac{2}{a}<2, \\frac{6}{c}+\\frac{3}{a}+\\frac{2}{b}<2$, 则 $11\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\right)<6$, 与 $\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\right)^2 \\geqslant 3\\left(\\frac{1}{a b}+\\frac{1}{b c}+\\frac{1}{c a}\\right) \\geqslant 3$ 矛盾.\n(ii) 不妨设三式中仅有 2 个小于 2 , 即设\n$$\n\\left\\{\\begin{array}{l}\n\\frac{6}{b}+\\frac{3}{c}+\\frac{2}{a}<2, \\label{eq1} \\\\\n\\frac{6}{c}+\\frac{3}{a}+\\frac{2}{b}<2, \\label{eq2} \\\\\n\\frac{6}{a}+\\frac{3}{b}+\\frac{2}{c} \\geqslant 2 . \\label{eq3}\n\\end{array}\\right.\n$$\n由式\\ref{eq1} +\\ref{eq2} $\\times 7$-式\\ref{eq3} 可得 $\\frac{43}{c}+\\frac{17}{b}+\\frac{17}{a}<14$.\n但上式左端 $>17\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\right) \\geqslant 17 \\sqrt{3}>14$, 矛盾!\n因此结论成立.",
+    "remark": "",
+    "figures": []
+}

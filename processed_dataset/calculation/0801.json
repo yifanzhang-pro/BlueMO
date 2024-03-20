@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题8. 解方程组 $\\left\\{\\begin{array}{l}\\sqrt{x(1-y)}+\\sqrt{y(1-x)}=1, \\\\ \\sqrt{x y}+\\sqrt{(1-x)(1-y)}=1 .\\end{array}\\right.$",
+    "solution": "从原方程组得 $0 \\leqslant x \\leqslant 1,0 \\leqslant y \\leqslant 1$, 故设 $x=\\cos ^2 \\alpha, y=\\cos ^2 \\beta$, 其 $\\left\\{\\begin{array}{l}\\sin (\\alpha+\\beta)=1, \\\\ \\cos (\\alpha-\\beta)=1 .\\end{array}\\right.$ 所以 $\\alpha=\\beta=\\frac{\\pi}{4}$, 得 $x=y=\\frac{1}{2}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 证明:设 $x, y, z, w \\in \\mathbf{R}^{+}, \\alpha+\\beta+\\gamma+\\theta=(2 k+1) \\pi, k \\in \\mathbf{Z}$, 则\n$$\n|x \\sin \\alpha+y \\sin \\beta+z \\sin \\gamma+w \\sin \\theta| \\leqslant \\sqrt{\\frac{(x y+z w)(x z+y w)(x w+y z)}{x y z w}} .\n$$",
+    "solution": "记 $u=x \\sin \\alpha+y \\sin \\beta, v=z \\sin \\gamma+r \\sin \\theta$, 则 $u^2=(x \\sin \\alpha+y \\sin \\beta)^2 \\leqslant (x \\sin \\alpha+y \\sin \\beta)^2+(x \\cos \\alpha-y \\cos \\beta)^2=x^2+y^2-2 x y \\cos (\\alpha+\\beta)$. 同理可得 $v^2 \\leqslant z^2+w^2-2 z w \\cos (\\theta+\\gamma)$. 注意到已知条件 $\\alpha+\\beta+\\gamma+\\theta=(2 k+1) \\pi (k \\in \\mathbf{Z})$, 有 $\\cos (\\alpha+\\beta)+\\cos (\\gamma+\\theta)=0$, 因此 $\\frac{x^2+y^2-u^2}{2 x y}+\\frac{z^2+w^2-\\gamma^2}{2 z w} \\geqslant 0$, 即 $\\frac{u^2}{x y}+\\frac{v^2}{z w} \\leqslant \\frac{x^2+y^2}{x y}+\\frac{z^2+w^2}{z w}=\\frac{(x z+y w)(x w+y z)}{x y z w}$. 另外, 应用 Cauchy 不等式有 $|u+v| \\leqslant \\sqrt{\\left(\\frac{u^2}{x y}+\\frac{v^2}{z w}\\right)(x y+z w)} \\leqslant \\sqrt{\\frac{(x y+z w)(x z+y w)(x w+y z)}{x y z w}}$, 得证.",
+    "remark": "",
+    "figures": []
+}

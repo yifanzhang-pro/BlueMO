@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-4.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设正实数 $x 、 y 、 z$ 满足 $x^2+y^2+z^2=1$. 求证:\n$$\nx^2 y z+y^2 x z+z^2 x y \\leqslant \\frac{1}{3} .\n$$",
+    "solution": "证明:因为 $\\sqrt[3]{x y z} \\leqslant \\frac{x+y+z}{3} \\leqslant \\sqrt{\\frac{x^2+y^2+z^2}{3}}=\\frac{1}{\\sqrt{3}}$, 所以\n$$\nx y z \\leqslant \\frac{1}{3 \\sqrt{3}}, x+y+z \\leqslant \\sqrt{3},\n$$\n故\n$$\nx^2 y z+y^2 x z+z^2 x y \\leqslant-\\frac{1}{3} .\n$$",
+    "remark": "",
+    "figures": []
+}

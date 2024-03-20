@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例7. 假设 $a_1<a_2<\\cdots<a_n$ 是实数,求证:\n$$\na_1 a_2^4+a_2 a_3^4+\\cdots+a_n a_1^4 \\geqslant a_2 a_1^4+a_3 a_2^4+\\cdots+a_1 a_n^4 .\n$$",
+    "solution": "证明:对 $n$ 使用数学归纳法.\n当 $n=2$ 时, 不等式两边相等.\n现假设 $n-1$ 时有结论成立, 即\n$$\na_1 a_2^4+a_2 a_3^4+\\cdots+a_{n-1} a_1^4 \\geqslant a_2 a_1^4+a_3 a_2^4+\\cdots+a_1 a_{n-1}^4 .\n$$\n考虑 $n$ 时的情况.\n我们只需证明: $a_{n-1} a_n^4+a_n a_1^4-a_{n-1} a_1^4 \\geqslant a_n a_{n-1}^4+a_1 a_n^4-a_1 a_{n-1}^4$. (注意: 这正好是 $n=3$ 的情形!)\n不失一般性, 可设 $a_n-a_1=1$, 否则可以用 $a_n-a_1>0$ 除以 $a_1, a_{n-1}, a_n$ 中的每一个而不影响不等式.\n利用关于凸函数 $x^4$ 的 Jensen 不等式 (详见第 11 章), 有:\n$$\na_1^4\\left(a_n-a_{n-1}\\right)+a_n^4\\left(a_{n-1}-a_1\\right) \\geqslant\\left(a_1\\left(a_n-a_{n-1}\\right)+a_n\\left(a_{n-1}-a_1\\right)\\right)^4,\n$$\n展开即得结论成立.",
+    "remark": "",
+    "figures": []
+}

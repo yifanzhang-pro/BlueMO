@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 设 $x 、 y 、 z$ 为非负实数, $x+y+z=a(a \\geqslant 1)$, 求 $F=2 x^2+y+3 z^2$ 的最大值.",
+    "solution": "由 $x+y+z=a$, 得 $\\frac{x}{a}+\\frac{y}{a}+\\frac{z}{a}=1$, 令 $x=a u, y=a v, z=a w$, 则 $0 \\leqslant u, v, w \\leqslant 1, u+v+w=1, F=2 x^2+y+3 z^2=2 a^2 u^2+a v+3 a^2 w^2$. 因为 $a \\geqslant 1$ 时, $a^2 \\geqslant a \\geqslant 1$, 于是, $F=2 a^2 u^2+a v+3 a^2 w^2 \\leqslant 2 a^2 u^2+a^2 v+ 3 a^2 w^2 \\leqslant 3 a^2 u^2+3 a^2 v+3 a^2 w^2 \\leqslant 3 a^2 u+3 a^2 v+3 a^2 w=3 a^2$. 等号在 $u=v=0$ 、 $w=1$, 即 $x=y=0 、 z=a$ 时成立.\n所以 $2 x^2+y+3 z^2$ 的最大值为 $3 a^2$.",
+    "remark": "",
+    "figures": []
+}

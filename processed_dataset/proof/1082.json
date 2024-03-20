@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例21. 设 $a, b, c>0, a+b+c=1$. 证明: 若正实数 $x_1, x_2, \\cdots, x_5$ 满足 $x_1 x_2 \\cdots x_5=1$, 则\n$$\n\\prod_{i=1}^5\\left(a x_i^2+b x_i+c\\right) \\geqslant 1 .\n$$",
+    "solution": "证明:将问题一般化.\n考虑表达式 $\\prod_{i=1}^n\\left(a x_i^2+b x_i+c\\right)$.\n则含 $a^i b^j c^k(i+j+k=n)$ 的项为\n$$\na^i b^j c^k\\left[\\left(x_1 x_2 \\cdots x_i\\right)^2\\left(x_{i+1} x_{i+2} \\cdots x_{i+j}\\right)+\\cdots\\right] .\n$$\n因此,共有 $\\mathrm{C}_n^i \\mathrm{C}_{n-i}^j$ 项求和 (取 $a x_t^2$ 的 $i$ 个因式, 从剩余的 $n-i$ 个因式中, 取 $b x_s$ 中的 $j$ 个因式).\n由对称性知,含 $x_i^2$ 的项数为常数, 即为含 $x_i$ 的项数.\n因此,当求和后的项是全部的乘积时,对某个 $p$ 有 $\\left(x_1 x_2 \\cdots x_n\\right)^p=1$.",
+    "remark": "注:对于本题, 不必求出 $p$. 事实上,\n$$\np=2 \\mathrm{C}_{n-1}^{i-1} \\mathrm{C}_{n-i}^j+\\mathrm{C}_{n-1}^{j-1} \\mathrm{C}_{n-j}^i=\\frac{2 i+j}{n} \\mathrm{C}_n^i \\mathrm{C}_{n-i}^j .\n$$\n回到原题;由代数一几何均值不等式得\n$$\na^i b^j c^k\\left[\\left(x_1 x_2 \\cdots x_i\\right)^2\\left(x_{i+1} x_{i+2} \\cdots x_{i+j}\\right)+\\cdots\\right] \\geqslant a^i b^j c^k \\mathrm{C}_n^i \\mathrm{C}_{n-i}^j .\n$$\n故 $\\prod_{i=1}^n\\left(a x_i^2+b x_i+c\\right) \\geqslant \\sum_{i+j+k=n} a^i b^j c^k \\mathrm{C}_n^i \\mathrm{C}_{n-i}^j=(a+b+c)^n=1$ :",
+    "figures": []
+}

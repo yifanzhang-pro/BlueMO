@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 半圆 $\\Gamma$ 的直径是 $A B, M$ 是 $A B$ 的中点.\n在半圆 $\\Gamma$ 的同侧, 以 $M B$ 为直径作半圆 $\\Gamma_1$. 设 $X 、 Y$ 是半圆 $\\Gamma_1$ 上的点, 且 $\\overparen{B X}=1.5 \\overparen{B Y}$. 直线 $M Y$ 交 $B X$ 于点 $D$, 交半圆 $\\Gamma$ 于点 $C$. 证明: $Y$ 是线段 $C D$ 的中点.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c1a4.png>), 取 $\\overparen{B Y}$ 的中点 $Z$, 设 $B Z 、 M Y$ 相交于点 $E$, 在半圆 $\\Gamma_1$ 中, $\\angle M Z B$ 是直径 $M B$ 所对的圆心角, 于是, $M Z \\perp B Z$. 因为 $\\overparen{B Z}=\\overparen{Z Y}$, 所以, $\\angle Y M Z=\\angle B M Z$. 在 $\\triangle M Z B$ 和 $\\triangle M Z E$ 中, 由 $\\angle E M Z=\\angle B M Z, M Z=M Z, \\angle M Z E=\\angle M Z B=90^{\\circ}$, 所以, $\\triangle M Z B \\cong \\triangle M Z E$. 故 $M E=M B$. 因此, 点 $E$ 和 $C$ 重合.\n又 $\\angle M Y B$ 是直径 $M B$ 所对的圆心角, 于是, $M Y \\perp B Y$. 因为 $\\overparen{Z Y}=\\overparen{Y X}$, 所以, $\\angle Z B Y=\\angle Y B X$. 同理, $\\triangle B Y C \\cong \\triangle B Y D$. 故 $C Y=D Y$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1a4.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例24. 证明: 对正实数 $a 、 b 、 c$, 有\n$$\n\\frac{a}{\\sqrt{a^2+8 b c}}+\\frac{b}{\\sqrt{b^2+8 a c}}+\\frac{c}{\\sqrt{c^2+8 a b}} \\geqslant 1 .\n$$",
+    "solution": "证明:由变形的柯西不等式,\n$$\n\\text { 左边 }=\\sum \\frac{a}{\\sqrt{a^2+8 b c}}=\\sum \\frac{a^{\\frac{3}{2}}}{\\sqrt{a^3+8 a b c}} \\geqslant \\frac{\\left(\\sum a\\right)^{\\frac{3}{2}}}{\\left[\\sum\\left(a^3+8 a b c\\right)\\right]^{\\frac{1}{2}}} \\text {. }\n$$\n所以要证明原不等式, 只需要证明\n$$\n\\frac{\\left(\\sum a\\right)^{\\frac{3}{2}}}{\\left[\\sum\\left(a^3+8 a b c\\right)\\right]^{\\frac{1}{2}}} \\geqslant 1,\n$$\n等价于\n$$\n\\left(\\sum a\\right)^3 \\geqslant \\sum a^3+24 a b c\n$$\n等价于\n$$\n\\sum a^3+3 \\sum\\left(a^2 b+a b^2\\right)+6 a b c \\geqslant \\sum a^3+24 a b c,\n$$\n等价于\n$$\n\\sum\\left(a^2 b+a b^2\\right) \\geqslant 6 a b c .\n$$\n易知该不等式成立,故原不等式成立.",
+    "remark": "注:前面, 我们用平均值不等式证明了这个不等式, 读者还可以用其他方法证明.",
+    "figures": []
+}

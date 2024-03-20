@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题10. 设 $x, y, z \\in \\mathbf{R}^{+}$, 且满足 $x y z+x+z=y$, 求 $p=\\frac{2}{x^2+1}-\\frac{2}{y^2+1}+\\frac{3}{z^2+1}$ 的最大值.",
+    "solution": "由已知, $x+(-y)+z=x \\cdot(-y) \\cdot z$.\n设 $\\dot{x}=\\tan \\alpha, y=-\\tan \\beta, z=\\tan \\gamma,(\\alpha+\\beta+\\gamma=k \\pi)$.\n故 $p=2 \\cos ^2 \\alpha-2 \\cos ^2 \\beta+3 \\cos ^2 \\gamma=2 \\cos ^2 \\alpha-2 \\cos ^2 \\beta+3 \\cos ^2(\\alpha+\\beta)= -2 \\sin (\\alpha+\\beta) \\sin (\\alpha-\\beta)+3 \\cos ^2 \\gamma \\leqslant 2 \\sin \\gamma+3-3 \\sin ^2 \\gamma=-3\\left(\\sin \\gamma-\\frac{1}{3}\\right)^2+ \\frac{10}{3} \\leqslant \\frac{10}{3}$, 因此 $p_{\\max }=\\frac{10}{3}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例31.(幂平均不等式) 设 $a_1, a_2, \\cdots, a_n$ 是正实数, $\\alpha>\\beta>0$, 则\n$$\n\\left(\\frac{1}{n} \\sum_{i=1}^n a_i^\\beta\\right)^{\\frac{1}{\\beta}} \\leqslant\\left(\\frac{1}{n} \\sum_{i=1}^n a_i^\\alpha\\right)^{\\frac{1}{\\alpha}}\n$$",
+    "solution": "证明:在(6)中 (Hölder 不等式), 令 $x^i=1, i=1,2, \\cdots, n$, 有\n$$\n\\sum_{i=1}^n y_i \\leqslant n^{\\frac{1}{p}}\\left(\\sum_{i=1}^n y_i^q\\right)^{\\frac{1}{q}}\n$$\n由于 $\\frac{1}{p}=1-\\frac{1}{q}$, 所以上式可以写成\n$$\n\\frac{1}{n} \\sum_{i=1}^n y_i \\leqslant\\left(\\frac{1}{n} \\sum_{i=1}^n y_i^q\\right)^{\\frac{1}{q}} .\n$$\n在上式中, 令 $y_i=a_i^\\beta, q=\\frac{\\alpha}{\\beta}>1$, 得 $\\frac{1}{n} \\sum_{i=1}^n a_i^\\beta \\leqslant\\left(\\frac{1}{n} \\sum_{i=1}^n a_i^\\alpha\\right)^{\\frac{\\beta}{\\alpha}}$, 于是 $\\left(\\frac{1}{n} \\sum_{i=1}^n a_i^\\beta\\right)^{\\frac{1}{\\beta}} \\leqslant\\left(\\frac{1}{n} \\sum_{i=1}^n a_i^\\alpha\\right)^{\\frac{1}{\\alpha}}$.",
+    "remark": "",
+    "figures": []
+}

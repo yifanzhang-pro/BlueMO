@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 设 $a, b, c>1$, 且满足 $\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}>1$. 定义集合 $S(x)=\\{[k x] \\mid k \\in \\mathbf{N}^*$ \\}.证明: 在 $S(a), S(b), S(c)$ 中必有两个的交集是无限集.",
+    "solution": "记 $I_n=\\{1,2, \\cdots, n\\}$. 我们将 $I_n$ 看成全集, 对集合\n$$\nA_n=S(a) \\cap I_n, B_n=S(b) \\cap I_n, C_n=S(c) \\bigcap I_n\n$$\n用容厉原理, 可得\n$$\n\\begin{aligned}\n\\left|A_n \\cup B_n \\cup C_n\\right|= & \\left|A_n\\right|+\\left|B_n\\right|+\\left|C_n\\right|-\\left|A_n \\cap B_n\\right|- \\\\\n& \\left|B_n \\cap C_n\\right|-\\left|C_n \\cap A_n\\right|+\\left|A_n \\cap B_n \\cap C_n\\right| .\n\\end{aligned}\n$$\n上式中有 $\\left|A_n \\cup B_n \\cup C_n\\right| \\leqslant n,\\left|A_n \\cap B_n \\cap C_n\\right| \\geqslant 0$, 又注意到\n$$\n\\left|A_n\\right| \\geqslant\\left[\\frac{n}{a}\\right]>\\frac{n}{a}-1,\\left|B_n\\right| \\geqslant\\left[\\frac{n}{b}\\right]>\\frac{n}{b}-1,\\left|C_n\\right| \\geqslant\\left[\\frac{n}{c}\\right]>\\frac{n}{c}-1,\n$$\n所以\n$$\nn>\\left(\\frac{n}{a}+\\frac{n}{b}+\\frac{n}{c}-3\\right)--\\left|A_n \\cap B_n\\right|-\\left|B_n \\cap C_n\\right|-\\left|C_n \\cap A_n\\right| .\n$$\n由此可知\n$$\n\\left|A_n \\cap B_n\\right|+\\left|B_n \\cap C_n\\right|+\\left|C_n \\cap A_n\\right|>\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}-1\\right) n-3 .\n$$\n由于 $\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}>1$, 故当 $n \\rightarrow \\infty$ 时上式右端可以任意大, 但对任意 $n \\in \\mathbf{N}^*$, 总有 $A_n \\subseteq S(a), B_n \\subseteq S(b), C_n \\subseteq S(c)$, 所以 $S(a), S(b), S(c)$ 中必有两个的交集为无限集.",
+    "remark": "",
+    "figures": []
+}

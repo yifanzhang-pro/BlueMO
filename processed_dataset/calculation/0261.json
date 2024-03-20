@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter2.tex",
+    "problem_type": "calculation",
+    "problem": "例6. 国际乒乓球男女混合双打大奖赛有 24 对选手参加, 赛前一些选手屋了手,但同一对选手之间不握手.\n赛后某个男选手问每个选手的握手次数, 各人的回答各不相同,问这名男选手的女搭档和多少人握了手?",
+    "solution": "解:48 名选手用 48 个顶点 $v, v_0, v_1, \\cdots, v_{46}$ 表示, 其中 $v$ 代表那名男选手.\n两人握过手就在他们相应的顶点之间连一条边, 得图 $G$. 在 $G$ 中, $d\\left(v_i\\right) \\leqslant 46, i=0,1,2, \\cdots, 46$. 并且当 $i \\neq j$ 时, $d\\left(v_i\\right) \\neq d\\left(v_j\\right)$. 所以除顶点 $v$ 外,其他顶点的度分别为\n$$\n0,1,2, \\cdots, 45,46 \\text {. }\n$$\n不妨设 $d\\left(v_i\\right)=i, i=0,1,2, \\cdots, 46$. 对顶点 $v_{46}$ 来说, 它只和顶点 $v_0$ 不相邻, 故 $v_{46}$ 和 $v_0$ 是搭档.\n在 $G$ 中去掉顶点 $v_0 、 v_{46}$ 以及与它们相邻的边, 得图 $G_1$, 在 $G_1$ 中除 $v$ 外, 各顶点的度仍然不同, 且度都减小 1 , 同样道理, $v_{45}$ 和 $v_1$ 是搭档.\n依次可得 $v_{44}$ 和 $v_2, \\cdots, v_{24}$ 和 $v_{22}$ 是搭档.\n于是 $v_{23}$ 和 $v$ 是搭档.\n所以那个男选手的女搭档握了 23 次手.",
+    "remark": "注:本题证明中, 将 $G$ 的顶点编号, 按度的非降次序 $\\left(d_1 \\leqslant d_2 \\leqslant \\cdots \\leqslant\\right. \\left.d_n\\right)$ 排列, 得到 $\\left(d_1, d_2, \\cdots, d_n\\right)$ 称为图 $G$ 的度序列.\n利用度序列解题是一种重要方法.",
+    "figures": []
+}

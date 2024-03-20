@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题7 存在 $x \\in[0,2 \\pi)$, 使 $\\sin x-\\sqrt{3} \\cos x=\\frac{4 m-6}{4-m}$ 成立, 则 $m$ 的取值范围是\n(A) $\\left[-1, \\frac{7}{3}\\right]$\n(B) $\\left(-\\infty, \\frac{7}{3}\\right]$\n(C) $[-1,+\\infty)$\n(D) $(-\\infty,-1) \\cup\\left(\\frac{7}{3},+\\infty\\right)$",
+    "solution": "A. 等式左边 $=2\\left(\\sin x \\cos \\frac{\\pi}{3}-\\cos x \\sin \\frac{\\pi}{3}\\right)=2 \\sin \\left(x-\\frac{\\pi}{3}\\right)$. 因原等式成立, 所以 $\\left|\\frac{4 m-6}{4-m}\\right|=\\left|2 \\sin \\left(x-\\frac{\\pi}{3}\\right)\\right| \\leqslant 2$, 即 $4 m^2-12 m+9 \\leqslant m^2- 8 m+16$, 整理得 $3 m^2-4 m-7 \\leqslant 0$, 解得 $-1 \\leqslant m \\leqslant \\frac{7}{3}$.",
+    "remark": "",
+    "figures": []
+}

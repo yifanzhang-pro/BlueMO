@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-5.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $a=\\left(a_1, a_2, \\cdots, a_n\\right)$ 和 $b=\\left(b_1, b_2, \\cdots, b_n\\right)$ 是两个不成比例的实数序列, 又设 $x=\\left(x_1, x_2, \\cdots, x_n\\right)$ 是使\n$$\n\\sum_{i=1}^n a_i x_i=0, \\sum_{i=1}^n b_i x_i=1\n$$\n成立的任意实数序列.\n求证:\n$$\n\\sum_{i=1}^n x_i^2 \\geqslant \\frac{A}{A B-C^2},\n$$\n其中 $A=\\sum_{i=1}^n a_i^2, B=\\sum_{i=1}^n b_i^2, C=\\sum_{i=1}^n a_i b_i$.",
+    "solution": "证明:对任意实数 $\\lambda$,由柯西不等式,得\n$$\n\\left(\\sum_{i=1}^n x_i^2\\right) \\sum_{i=1}^n\\left(a_i \\lambda-b_i\\right)^2 \\geqslant\\left(\\lambda \\sum_{i=1}^n a_i x_i-\\sum_{i=1}^n b_i x_i\\right)^2=1 .\n$$\n从而\n$$\n\\left(\\sum_{i=1}^n x_i^2\\right)\\left(A \\lambda^2-2 C \\lambda+B\\right) \\geqslant 1,\n$$\n即对任意实数 $\\lambda$,有\n$$\nA \\lambda^2-2 C \\lambda+B-\\frac{1}{\\sum_{i=1}^n x_i^2} \\leqslant 0 .\n$$\n于是\n$$\n\\Delta=4 C^2-4 A B+\\frac{4 A}{\\sum_{i=1}^n x_i^2} \\leqslant 0,\n$$\n故命题成立.",
+    "remark": "注:该不等式的证明,也可通过构造一个新的序列 $\\left\\{y_i\\right\\}$ :\n$$\ny_i=\\frac{A b_i-C a_i}{A B-C^2}, i \\geqslant 1,\n$$\n则 $\\left\\{y_i\\right\\}$ 满足条件\n$$\n\\begin{gathered}\n\\sum_{i=1}^n x_i y_i=\\frac{A}{A B-C^2}, \\sum_{i=1}^n y_i^2=\\frac{A}{A B-C^2}, \\\\\n\\sum_{i=1}^n x_i^2-\\sum_{i=1}^n y_i^2=\\sum_{i=1}^n\\left(x_i-y_i\\right)^2,\n\\end{gathered}\n$$\n从而命题成立.",
+    "figures": []
+}

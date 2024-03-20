@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 设 $\\omega=\\cos \\frac{\\pi}{5}+i \\sin \\frac{\\pi}{5}$, 则以 $\\omega 、 \\omega^3 、 \\omega^7 、 \\omega^9$ 为根的方程是 $(\\quad)$.\n(A) $x^4+x^3+x^2+x+1=0$\n(B) $x^4-x^3+x^2-x+1=0$\n(C) $x^4-x^3-x^2+x+1=0$\n(D) $x^4+x^3+x^2-x-1=0$",
+    "solution": "B.\n由 $\\omega=\\cos \\frac{\\pi}{5}+\\mathrm{i} \\sin \\frac{\\pi}{5}$ 知, $\\omega, \\omega^2, \\omega^3, \\cdots, \\omega^{10}$ 是 1 的 10 个 10 次方根.\n于是\n$$\n(x-\\omega)\\left(x-\\omega^2\\right)\\left(x-\\omega^3\\right) \\cdots\\left(x-\\omega^{10}\\right)=x^{10}-1 . \\label{eq1}\n$$\n因为 $\\omega^2 、 \\omega^4 、 \\omega^6 、 \\omega^8 、 \\omega^{10}$ 是 1 的 5 个 5 次方根, 所以\n$$\n\\left(x-\\omega^2\\right)\\left(x-\\omega^4\\right)\\left(x-\\omega^6\\right)\\left(x-\\omega^8\\right)\\left(x-\\omega^{10}\\right)=x^5-1 . \\label{eq2}\n$$\n由式\\ref{eq1} $\\div$ 式\\ref{eq2}, 便有\n$$\n(x-\\omega)\\left(x-\\omega^3\\right)\\left(x-\\omega^5\\right)\\left(x-\\omega^7\\right)\\left(x-\\omega^9\\right)=x^5+1 . \\label{eq3}\n$$\n对\\ref{eq3}式两边同除以 $x-\\omega^5$, 也就是 $x+1$, 得 $(x-\\omega)\\left(x-\\omega^3\\right)\\left(x-\\omega^5\\right)\\left(x-\\omega^7\\right)\\left(x-\\omega^9\\right)=x^4-x^3+x^2-x+1$.",
+    "remark": "",
+    "figures": []
+}

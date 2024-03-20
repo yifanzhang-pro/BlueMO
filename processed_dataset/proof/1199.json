@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设 $a_i, b_i \\in \\mathbf{R}^{+}(i=1,2, \\cdots, n)$, 求证:\n$$\n\\left[\\prod_{i=1}^n\\left(a_i+b_i\\right)\\right]^{\\frac{1}{n}} \\geqslant\\left(\\prod_{i=1}^n a_i\\right)^{\\frac{1}{n}}+\\left(\\prod_{i=1}^n b_i\\right)^{\\frac{1}{n}},\n$$\n其中 $\\prod_{i=1}^n a_i=a_1 a_2 \\cdots a_n$.",
+    "solution": "右 $=\\left(\\prod \\frac{a_i}{a_i+b_i}\\right)^{\\frac{1}{n}}+\\left(\\prod \\frac{b_i}{a_i+b_i}\\right)^{\\frac{1}{n}} \\leqslant \\frac{1}{n}\\left(\\sum \\frac{a_i}{a_i+b_i}+\\sum \\frac{b_i}{a_i+b_i}\\right)=$ 1. 所以左 $\\geqslant$ 右.",
+    "remark": "",
+    "figures": []
+}

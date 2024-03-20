@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter15.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 把 $1,2,3, \\cdots, 2004$ 这 2004 个正整数随意放置在一个圆周上,统计所有相邻三个数的奇偶性得知: 三个数全是奇数的有 600 组, 恰好两个奇数的有 500 组, 问: 恰好一个奇数的有几组? 全部不是奇数的有几组?",
+    "solution": "解:设恰好 1 个奇数的有 $x$ 组, 则全部不是奇数的有\n$$\n2004-600-500-x=904-x .\n$$\n将圆周上的数从某个数开始, 依次计为 $x_1, x_2, \\cdots, x_{2004}$, 令\n$$\ny_i= \\begin{cases}-1, & \\text { 当 } x_i \\text { 为奇数时, } \\\\ 1, & \\text { 当 } x_i \\text { 为偶数, }\\end{cases}\n$$\n则 $y_1+y_2+\\cdots+y_{2004}=0$, 再令\n$$\nA_i=y_i+y_{i+1}+y_{i+2}= \\begin{cases}-3, & \\text { 当 } x_i, x_{i+1}, x_{i+2} \\text { 全为奇数时, } \\\\ -1, & \\text { 当 } x_i, x_{i+1}, x_{i+2} \\text { 恰好 } 2 \\text { 个奇数时, } \\\\ 1, & \\text { 当 } x_i, x_{i+1}, x_{i+2} \\text { 恰好一个奇数时, } \\\\ 3, & \\text { 当 } x_i, x_{i+1}, x_{i+2} \\text { 全为偶数时, }\\end{cases}\n$$\n其中约定 $x_{2004+i}=x_i(i=1,2)$. 于是\n$$\n\\begin{aligned}\n0 & =3\\left(y_1+y_2+\\cdots+y_{2004}\\right)=A_1+A_2+\\cdots+A_{2004} \\\\\n& =-3 \\times 600-500+x+3(904-x),\n\\end{aligned}\n$$\n解得 $x=206$.\n恰好一个奇数的有 206 组, 全部不是奇数的有 $904-206=698$ 组.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $G$ 是有.\n11 个或更多顶点的图,证明 $G$ 或 $\\bar{G}$ 是非平面图.",
+    "solution": "设 $G$ 和 $\\bar{G}$ 都是平面图, 图 $G$ 和 $\\bar{G}$ 的顶点数是 $v$, 边数分别为 $e$ 和 $e^{\\prime}$, 则 $e+e^{\\prime}=\\frac{1}{2} v(v-1)$. 由不等式 $e \\leqslant 3 v-6, e^{\\prime} \\leqslant 3 v-6$, 相加得 $\\frac{1}{2} v(v-1)= e+e^{\\prime} \\leqslant 6 v-12, v^2-13 v+24 \\leqslant 0, v \\leqslant 11$, 与题设矛盾.",
+    "remark": "",
+    "figures": []
+}

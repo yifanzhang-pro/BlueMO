@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题4 已知集合 $M$ 是 $\\{1,2, \\cdots, 2003\\}$ 的子集,且 $M$ 中任意两个元素之和均不能被 3 整除.\n求集合 $M$ 中元素个数的最大值.",
+    "solution": "考虑集合 $A=\\{3,6,9, \\cdots, 2001\\}, B=\\{1,4,7, \\cdots, 2002\\}, C= \\{2,5,8, \\cdots, 2003\\}$. 由 $A$ 中至多选一个元素与集合 $B$ 或 $C$ 构成一个新的集合 $M$. 因为 $|B|=|C|=668$, 所以 $M$ 中最多有 669 个元素.",
+    "remark": "",
+    "figures": []
+}

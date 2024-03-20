@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题1 在集合 $M=\\{1,2, \\cdots, 10\\}$ 的所有子集中,有这样一族不同的子集,它们两两的交集都不是空集,那么这族子集最多有?个.",
+    "solution": "$2^9$. 显然不含空集.\n按所含元素的多少把这族子集分为 10 类, 设含 $i$ 个元素的子集为 $A_i$, 其个数为 $a_i$. 易知 $a_1+a_2+\\cdots+a_{10} \\leqslant \\mathrm{C}_9^0+\\mathrm{C}_9^1+\\cdots+\\mathrm{C}_9^9=2^9$.",
+    "remark": "",
+    "figures": []
+}

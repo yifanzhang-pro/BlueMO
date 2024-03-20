@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter2.tex",
+    "problem_type": "calculation",
+    "problem": "例14 在 $\\mathbf{R}$ 上是否存在非常数的周期函数, 它没有最小正周期?",
+    "solution": "解:答案是肯定的.\n定义函数\n$$\nD(x)= \\begin{cases}1, & \\text { 当 } x \\text { 是有理数时, } \\\\ 0, & \\text { 当 } x \\text { 是无理数时.\n}\\end{cases}\n$$\n显然, 任何正的有理数都是 $D(x)$ 的周期, 因此 $D(x)$ 没有最小正周期.\n函数 $D(x)$ 称为狄利克莱函数, 在高等数学中还会遇到它.",
+    "remark": "",
+    "figures": []
+}

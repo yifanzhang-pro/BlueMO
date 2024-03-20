@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例6. 如图(<FilePath:./images/volume7/figures/fig-c4i7.png>) 在 $\\triangle A B C$ 中, $\\angle B A C= 90^{\\circ}$, 点 $E$ 在 $\\triangle A B C$ 的外接圆 $\\Gamma$ 的弧 $B C$ (不含点 $A)$ 内, $A E>E C$, 连结 $E C$ 并延长至点 $F$, 使得 $\\angle E A C=\\angle C A F$, 连结 $B F$ 交圆 $\\Gamma$ 于点 $D$, 连结 $E D$, 记 $\\triangle D E F$ 的外心为 $O$, 求证 : $A 、 C 、 O$ 三点共线.",
+    "solution": "证明:作 $\\triangle A E F$ 的外接圆交 $A C$ 延长线于点 $O^{\\prime}$, 连结 $O^{\\prime} E 、 O^{\\prime} F$. 注意到 $A C$ 平分 $\\angle E A F$, 所以 $A O^{\\prime}$ 在圆 $A E F$ 内平分 $\\angle A$, 则 $O^{\\prime}$ 为 $\\overparen{E F}$ 的中点, $O^{\\prime} E=O^{\\prime} F$.\n由于 $\\angle E O^{\\prime} F=180^{\\circ}-\\angle E A F=180^{\\circ}-2 \\angle E A O^{\\prime}, \\label{eq1}$,\n$$\n\\angle E D B=\\angle E A B=90^{\\circ}-\\angle E A O, \\label{eq2}\n$$\n由 式\\ref{eq1}、\\ref{eq2} 知\n$$\n\\angle E D B=\\frac{1}{2} \\angle E O^{\\prime} F \\text {. }\n$$\n从而 $D$ 在以 $O^{\\prime}$ 为圆心, $O^{\\prime} E$ 为半径的圆上.\n所以 $O^{\\prime} D=O^{\\prime} E=O^{\\prime} F, O^{\\prime}$ 与 $O$ 重合, 于是 $A 、 C 、 O$ 共线.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4i7.png"
+    ]
+}

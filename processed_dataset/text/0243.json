@@ -1,0 +1,7 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter2.tex",
+    "text": "Ptolemy 不等式及其应用.\n著名的 Ptolemy 不等式是关于任意四边形的一个距离不等式, 它可表述为\n定理 (Ptolemy 不等式) 在四边形 $A B C D$ 中有\n$$\nA B \\cdot C D+A D \\cdot B C \\geqslant A C \\cdot B D,\n$$\n等号成立当且仅当 $A 、 B 、 C 、 D$ 四点共圆.\n证明如图(<FilePath:./images/volume9/figures/fig-c2i1.png>), 在四边形 $A B C D$ 内取点 $E$, 使 $\\angle B A E=\\angle C A D, \\angle A B E=\\angle A C D$, 则 $\\triangle A B E \\backsim \\triangle A C D$. 因此 $A B \\cdot C D=A C \\cdot B E$. 又 $\\angle B A C= \\angle E A D$, 且 $\\frac{A B}{A E}=\\frac{A C}{A D}$, 所以 $\\triangle A B C \\backsim \\triangle A E D, A D$ ・ $B C=A C \\cdot D E$. 故\n$$\nA B \\cdot C D+A D \\cdot B C=A C(B E+D E) \\geqslant A C \\cdot B D,\n$$\n等号成立当且仅当点 $E$ 在 $B D$ 上, 此时 $\\angle A B D=\\angle A C D$, 故四边形 $A B C D$ 内接于圆.\n应用 Ptolemy 不等式, 我们可给出一些距离不等式的简洁证明.",
+    "figures": [
+        "./images/volume9/figures/fig-c2i1.png"
+    ]
+}

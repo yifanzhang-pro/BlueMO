@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题5 设 $S$ 是 $n$ 个不同实数的集合, $A_s$ 是由 $S$ 中所有互不相同的两元素的平均值所组成的集合.\n对给定 $n \\geqslant 2, A_s$ 最少可能有多少个元素?",
+    "solution": "设 $S=\\left\\{x_1, x_2, \\cdots, x_n\\right\\}$, 且 $x_1<x_2<\\cdots<x_n$, 则 $\\frac{x_1+x_2}{2}<\\frac{x_1+x_3}{2} <\\cdots<\\frac{x_1+x_n}{2}<\\frac{x_2+x_n}{2}<\\frac{x_3+x_n}{2}<\\cdots<\\frac{x_{n-1}+x_n}{2}$, 因此, $A_S$ 中至少有 $2 n-3$ 个元素.\n另一方面, 若取 $S=\\{2,4,6, \\cdots, 2 n\\}$, 则 $A_S=\\{3,4,5, \\cdots$, $2 n-1\\}$ 只有 $2 n-3$ 个元素.\n所以, $\\left|A_S\\right|$ 的最小值为 $2 n-3$.",
+    "remark": "",
+    "figures": []
+}

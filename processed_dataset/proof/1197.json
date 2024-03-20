@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设 $a_i \\in \\mathbf{R}^{+}(i=1,2, \\cdots, n, n \\geqslant 2)$, 求证:\n$$\n\\frac{a_1}{a_2+a_3}+\\frac{a_2}{a_3+a_4}+\\cdots+\\frac{a_{n-1}}{a_n+a_1}+\\frac{a_n}{a_1+a_2}>\\frac{n}{4} .\n$$",
+    "solution": "令 $a_{n+1}=a_1, a_{n+2}=a_2$. 又设 $a_{i_1}=\\max _{1 \\leqslant i \\leqslant n} a_i$, 原式左边为 $s, s$ 中分子含 $a_{i_1}$ 的项是 $\\frac{a_{i_1}}{a_{i_1+1}+a_{i_1+2}}$. 令 $a_{i_2}=\\max \\left\\{a_{i_1+1}, a_{i_1+2}\\right\\}$. 仿此取 $a_{i_3}=\\max \\left\\{a_{i_2+1}\\right.$, $\\left.a_{i_2+2}\\right\\}$. 将继续上面手续, 最终将回到 $a_{i_1}$. 即经 $r$ 次后, 有 $a_{i_r+1}=a_{i_1}$. 从取法易知 $r \\geqslant \\frac{n}{2}$. 于是, $s>\\frac{a_{i_1}}{2 a_{i_2}}+\\frac{a_{i_2}}{2 a_{i_3}}+\\cdots+\\frac{a_{i_r}}{2 a_{i_r+1}} \\geqslant \\frac{1}{2} r \\cdot \\sqrt[r]{\\frac{a_{i_1}}{a_{i_2}} \\cdot \\frac{a_{i_2}}{a_{i_3}} \\cdots \\cdots \\frac{a_{i_r}}{a_{i_1}}}= \\frac{1}{2} r \\geqslant \\frac{n}{4}$.",
+    "remark": "",
+    "figures": []
+}

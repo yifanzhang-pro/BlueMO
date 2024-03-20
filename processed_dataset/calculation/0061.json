@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题1 设 $f(x)=x^2+x-2, A=\\{n \\mid 1 \\leqslant n \\leqslant 100, n \\in \\mathbf{Z}\\}, B=\\{y \\mid y=f(n), n \\in A\\}$,则集合 $B \\bigcap\\{2 m \\mid m \\in \\mathbf{Z}\\}$ 的元素的个数是",
+    "solution": "$100$. 当 $n \\in A$ 时, $y=f(n)=n^2+n-2$ 恒为偶数.",
+    "remark": "",
+    "figures": []
+}

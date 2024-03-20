@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 设 $A_n=\\frac{a_1+a_2+\\cdots+a_n}{n}, a_i>0, i=1,2, \\cdots, n$. 求证:\n$$\n\\left(A_n-\\frac{1}{A_n}\\right)^2 \\leqslant \\frac{1}{n} \\sum_{i=1}^n\\left(a_i-\\frac{1}{a_i}\\right)^2 .\n$$",
+    "solution": "$n \\sum_{i=1}^n\\left(a_i-\\frac{1}{a_i}\\right)^2=n \\sum_{i=1}^n a_i^2+n \\sum_{i=1}^n \\frac{1}{a_i^2}-2 n^2 \\geqslant\\left(\\sum_{i=1}^n a_i\\right)^2+\\left(\\sum_{i=1}^n \\frac{1}{a_i}\\right)^2- 2 n^2 \\geqslant n^2\\left(A_n^2+\\frac{1}{A_n^2}-2\\right)=n^2\\left(A_n-\\frac{1}{A_n}\\right)^2$.",
+    "remark": "",
+    "figures": []
+}

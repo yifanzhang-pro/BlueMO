@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例8. 把 $n$ 个物体排成一行, 如果这些物体的某个子集合中任何两个元素均不相邻, 则称这个子集是不亲切的, 证明: 其中含有 $k$ 个元素的不亲切子集的个数是 $\\mathrm{C}_{n-k+1}^k$.",
+    "solution": "证明:我们将排成一行的物体记为 $a_1, a_2, \\cdots, a_n$, 且设 $\\left\\{a_{i_1}, a_{i_2}, \\cdots\\right.$, $a_{i_k}$ 是它的一个含 $k$ 个元素的不亲切子集 $\\left(1 \\leqslant i_1<i_2<\\cdots<i_k \\leqslant n\\right)$, 于是有 $i_{j+1}-i_j \\geqslant 2(j=1,2, \\cdots, k-1)$, 从而 $1 \\leqslant i_1<i_2-1<i_3-2<\\cdots< i_k-(k-1) \\leqslant n-k+1$, 故 $i_1, i_2-1, i_3-2, \\cdots, i_k-(k-1)$ 是 $1,2,3$, $\\cdots, n-k+1$ 中一个严格上升序列.\n反之, 对每一个这样的严格上升序列 $1 \\leqslant j_1<j_2<\\cdots<j_k \\leqslant n-k+1$, 则以 $a_{j_1}, a_{j_2+1}, \\cdots, a_{j_k+(k-1)}$ 为元素的集合是一个不亲切集合, 二者成一一对应.\n而从 $1,2, \\cdots, n-k+1$ 中选取 $k$ 个数组成严格上升序列有 $\\mathrm{C}_{n-k+1}^k$ 种方法, 故含 $k$ 个元素的不亲切子集的个数是 $\\mathrm{C}_{n-k+1}^k$.",
+    "remark": "",
+    "figures": []
+}

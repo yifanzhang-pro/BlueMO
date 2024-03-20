@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设 $f:[0,1] \\rightarrow \\mathbf{R}$ 满足: 对所有 $x \\in[0,1], f(x) \\leqslant 0 ; f(1)=1$ 并且对所有 $x, y \\in[0,1]$ 以及 $x+y \\in[0,1]$ 的 $x, y$, 有\n$$\nf(x)+f(y) \\leqslant f(x+y) .\n$$\n求证: $f(x) \\leqslant 2 x$.",
+    "solution": "对于条件 $f(x)+f(y) \\leqslant f(x+y) \\cdots$ (1). 在(1)中令 $y=1-x$, 得 $f(x)+f(1-x) \\leqslant f(1)=1$. 故对任意 $x \\in[0,1], f(x) \\leqslant 1$. 且 $f(0) \\leqslant 0$ (取 $x=1$ 即可). 在(1)中令 $y=x$, 可得对所有 $x \\in\\left[0, \\frac{1}{2}\\right]$, 有 $2 f(x) \\leqslant f(2 x)$. 利用数学归纳法, 我们有 $2^n f(x) \\leqslant f\\left(2^n x\\right)$. 对所有使得 $2^n x \\in[0,1]$ 的 $x$ 成立.\n即 $x \\in\\left[0, \\frac{1}{2^n}\\right]$. 如果 $x>\\frac{1}{2}$, 那么 $f(x) \\leqslant 1<2 x$. 现在假设 $0< x \\leqslant \\frac{1}{2}$, 选取 $n \\geqslant 1$, 使得 $\\frac{1}{2^{n+1}}<x \\leqslant \\frac{1}{2^n}$. 于是有 $2^n x \\in[0,1]$, 并且 $2^n f(x) \\leqslant f\\left(2^n x\\right) \\leqslant 1<2^{n+1} x=2^n(2 x)$, 所以, 同样有 $f(x)<2 x$. 综上所述, 对所有 $x \\in[0,1]$, 都有 $f(x) \\leqslant 2 x$ 成立.",
+    "remark": "",
+    "figures": []
+}

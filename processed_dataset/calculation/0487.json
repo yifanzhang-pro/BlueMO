@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter2.tex",
+    "problem_type": "calculation",
+    "problem": "例4 求 $y=(3 x-1)\\left(\\sqrt{9 x^2-6 x+5}+1\\right)+(2 x-3)\\left(\\sqrt{4 x^2-12 x+13}+ 1\\right)$ 的图象与 $x$ 轴的交点坐标.",
+    "solution": "分析:仔细观察所给的式子, 发现\n$$\ny=(3 x-1)\\left(\\sqrt{(3 x-1)^2+4}+1\\right)+(2 x-3)\\left(\\sqrt{(2 x-3)^2+4}+1\\right),\n$$\n从而找到了解题途径.\n解因为 $y=(3 x-1)\\left(\\sqrt{(3 x-1)^2+4}+1\\right)+(2 x-3) \\left(\\sqrt{(2 x-3)^2+4}+1\\right)$.\n令 $f(t)=t\\left(\\sqrt{t^2+4}+1\\right)$, 易知 $f(t)$ 是奇函数, 且 $f(t)$ 是增函数, 所以\n$$\ny=f(3 x-1)+f(2 x-3) \\text {. }\n$$\n当 $y=0$ 时, $f(3 x-1)=-f(2 x-3)=f(3-2 x)$, 所以\n$$\n3 x-1=3-2 x .\n$$\n解方程, 得 $x=\\frac{4}{5}$.\n故图象与 $x$ 轴的交点坐标为 $\\left(\\frac{4}{5}, 0\\right)$.",
+    "remark": "",
+    "figures": []
+}

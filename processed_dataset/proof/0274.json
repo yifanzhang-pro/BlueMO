@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter11.tex",
+    "problem_type": "proof",
+    "problem": "例5. $n(\\geqslant 4)$ 个盘子里放有总数不少于 4 的糖块, 从任意选出的两个盘子里各取一块糖放人另一个盘子中称为一次操作, 问能否经过有限次操作, 把所有的糖块集中到一个盘子里去? 证明你的结论.",
+    "solution": "解法一,首先证明可经过有限步操作使所有糖块集中到 2 个或 3 个盘子中.\n事实上,如果放糖的盘子不少于 3 个,任取其中 3 个盘子, 分别记为 $A$ 、 $B 、 C$, 并设 $A 、 B 、 C$ 中分别有 $a 、 b 、 c(0<a \\leqslant b \\leqslant c)$ 块糖, 于是可如下进行操作 $a$ 次:\n$(a, b, c) \\rightarrow(a-1, b-1, c+2) \\rightarrow \\cdots \\rightarrow(0, b-a, c+2 a)$. 即放有糖块的盘子的总数减少 1 个 ( $a \\neq b$ 时) 或 2 个 ( $a=b$ 时). 于是, 这样继续下去, 总可以将糖块集中在 2 个或 3 个盘子中.\n其次, 不妨设所有糖块集中在盘子 $A, B, C$ 中, 每个盘中放的糖块数分别为 $a, b, c(a \\geqslant b \\geqslant c \\geqslant 0)$. 另取一个空盘 $D$ (因 $n \\geqslant 4$, 至少有 4 个盘子) 上述状态简记为 $(a, b, c, 0)$. 如果 $a, b, c$ 有两个相等, 那么由上述证明知可经有限步将糖果集中到一个盘子中, 故只要考虑 $a>b>c \\geqslant 0$ 的情形, 又分为下列两种情形.\n(1)如果 $a=c+2$, 则 $b=c+1$, 因 $a+b+c=3 c+3 \\geqslant 4$, 所以 $c \\geqslant 1$. 于是可按下列步骤操作, 经过有限步将所有糖块集中到一个盘子中:\n$$\n\\begin{aligned}\n\\quad(c+2, c+1, c, 0) \\rightarrow(c+1, c, c, 2) \\rightarrow(c, c+2, c, 1) \\rightarrow(c-1, c+2, \\\\\nc+2,0) \\rightarrow \\cdots+(3 c+3,0,0,0) .\n\\end{aligned}\n$$\n(2) 如果 $a>c+2$ 时, 那么先作如下一次操作: $(a, b, c) \\rightarrow(a-1$, $b-1, c+2)$ 因 $a>b>c$ 及 $a>c+2$, 所以 $a-1>b-1 \\geqslant c, a-1 \\geqslant (c+3)-1 \\geqslant c+2$, 故经过调整后, 三盘中所放糖块量的最大数减少 1 , 而最小数不减少, 故经过有限步调整可归结为有两盘糖块数相等或前述情形 (1). 于是由前面证明可知经过有限步操作可将糖块集中到一个盘子中.",
+    "remark": "",
+    "figures": []
+}

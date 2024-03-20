@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题19. 设 $x_i \\in \\mathbf{R}(i=1,2, \\cdots, n)$ 且 $\\sum_{i=1}^n x_i^2=1$, 求证: 对任一整数 $k \\geqslant 3$ 存在不全为零的整数 $a_i,\\left|a_i\\right| \\leqslant k-1$. 使得\n$$\n\\left|\\sum_{i=1}^n a_i x_i\\right| \\leqslant \\frac{(k-1) \\sqrt{n}}{k^n-1}\n$$",
+    "solution": "不妨设 $x_i \\geqslant 0$, 考虑 $A=\\left\\{\\sum_{i=1}^n e_i x_i \\mid e_i \\in\\{0,1,2, \\cdots, k-1\\}\\right\\}$. 若 $A$ 中的数均不相同, 则 $|A|==k^n$. 由柯西不等式, 得 $0 \\leqslant \\sum e_i x_i \\leqslant(k-$ 1) $\\sum x_i \\leqslant(k-1) \\sqrt{\\sum x_i^2} \\cdot \\sqrt{n}=\\sqrt{n}(k-1)$. 所以 $A$ 中的 $k^n$ 个数落在 $[0$, $(k-1) \\sqrt{n}]$ 内, 将它分成 $k^n-1$ 个小区间, 每个小区间长 $\\frac{(k-1) \\sqrt{n}}{k^n-1}$, 依抽庶原理知存在 $\\sum e_i x_i, \\sum d_i x_i$ 落在同一小区间上(包括端点), 令 $a_i=e_i-d_i$, 则 $\\left|a_i\\right| \\leqslant k-1$, 满足要求.",
+    "remark": "",
+    "figures": []
+}

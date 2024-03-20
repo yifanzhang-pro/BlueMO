@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 已知 $0 \\leqslant x, y, z \\leqslant 1$, 解方程:\n$$\n\\frac{x}{1+y+z x}+\\frac{y}{1+z+x y}+\\frac{z}{1+x+y z}=\\frac{3}{x+y+z} .\n$$",
+    "solution": "不难证明: $\\frac{x}{1+y+z x} \\leqslant \\frac{1}{x+y+z}, \\frac{y}{1+z+x y} \\leqslant \\frac{1}{x+y+z}$,\n$\\frac{z}{1+x+y z} \\leqslant \\frac{1}{x+y+z}$. 因此不等式等号成立, 则易得 $x=y=z=1$.",
+    "remark": "注:: 本题也可以这样解: 先证明 $\\frac{x}{1+y+z x} \\leqslant \\frac{x}{x+y+z}$ 等, 这样就可以得到 $x+y+z \\geqslant 3$, 因而 $x=y=z=1$.",
+    "figures": []
+}

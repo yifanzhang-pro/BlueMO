@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例5. 求证: 对任意 $n \\in \\mathbf{N}, \\alpha \\in \\mathbf{R}$, 并且 $n \\neq 1, \\sin \\alpha \\neq 0$, 多项式 $P(x)= x^n \\sin \\alpha-x \\sin n \\alpha+\\sin (n-1) \\alpha$ 被多项式 $Q(x)=x^2-2 x \\cos \\alpha+1$ 整除.",
+    "solution": "证明:因为 $Q(x)=x^2-2 x \\cos \\alpha+1=[x-(\\cos \\alpha+i \\sin \\alpha)][x- (\\cos \\alpha-i \\sin \\alpha)$ ], 由 $P(\\cos \\alpha \\pm i \\sin \\alpha)=(\\cos \\alpha \\pm i \\sin \\alpha)^n \\sin \\alpha-(\\cos \\alpha \\pm i \\sin \\alpha) \\sin n \\alpha+\\sin (n-1) \\alpha=(\\cos n \\alpha \\pm i \\sin n \\alpha) \\sin \\alpha-(\\cos \\alpha \\pm i \\sin \\alpha) \\sin n \\alpha+\\sin (n-$ 1) $\\alpha=\\cos n \\alpha \\sin \\alpha-\\cos \\alpha \\sin n \\alpha+\\sin (n-1) \\alpha=\\sin (\\alpha-n \\alpha)-\\sin (n-1) \\alpha=0$.\n所以 $P(x)$ 被 $x-(\\cos \\alpha+i \\sin \\alpha)$ 与 $x-(\\cos \\alpha-i \\sin \\alpha)$ 整除, 从而被 $[x- (\\cos \\alpha+i \\sin \\alpha)][x-(\\cos \\alpha-i \\sin \\alpha)]=x^2-2 x \\cos \\alpha+1=Q(x)$ 整除.\n评注如果 $P(x)$ 是一个多次式函数, 且 $P(x)=0$ 有异根 $x_1, x_2, \\cdots$, $x_n$, 则 $\\prod_{i=1}^n\\left(x-x_i\\right) \\mid P(x)$.",
+    "remark": "",
+    "figures": []
+}

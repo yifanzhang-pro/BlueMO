@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise18.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 已知 $x, y \\in\\left[-\\frac{\\pi}{4}, \\frac{\\pi}{4}\\right], a \\in \\mathbf{R}$, 且满足\n$$\n\\left\\{\\begin{array}{l}\nx^3+\\sin x-2 a=0, \\\\\n4 y^3+\\frac{1}{2} \\sin 2 y+a=0,\n\\end{array}\\right.\n$$\n求 $\\cos (x+2 y)$ 的值.",
+    "solution": "由 $\\left\\{\\begin{array}{l}x^3+\\sin x-2 a=0, \\\\ 4 y^3+\\frac{1}{2} \\sin 2 y+a=0\\end{array}\\right.$ 可得 $\\left\\{\\begin{array}{l}x^3+\\sin x=2 a, \\\\ 8 y^3+\\sin 2 y=-2 a .\\end{array}\\right.$\n构造函数 $f(t)=t^3+\\sin t$, 则 $f(t)$ 为单调增函数, 因为 $f(x)= -f(2 y)=f(-2 y)$, 所以, $x+2 y=0$, 故 $\\cos (x+2 y)=1$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题20 设函数 $f(x)=x|x-a|+b$, 常数 $b<2 \\sqrt{2}-3$, 且对任意 $x \\in[0,1]$, $f(x)<0$ 恒成立.\n求常数 $a$ 的取值范围.",
+    "solution": "因 $b<2 \\sqrt{2}-3$, 当 $x=0$ 时,显然 $a$ 取任意实数.\n下面考虑 $x \\in(0$, $1]$, 则 $f(x)=x \\cdot|x-a|+b<0 \\Leftrightarrow x|x-a|<-b \\Leftrightarrow|x-a|<-\\frac{b}{x} \\Leftrightarrow x+\\frac{b}{x}<a<x-\\frac{b}{x}$\n此不等式对任意 $x \\in(0,1]$ 恒成立,故上式 $\\Leftrightarrow a>\\left(x+\\frac{b}{x}\\right)_{\\text {max }} \\quad\\quad(1)$\n且 $a<\\left(x-\\frac{b}{x}\\right)_{\\text {min }}$ (其中, $x \\in(0,1]$ ). $\\quad\\quad(2)$\n对式(1), $b<0$, 由耐克函数性质知, $g(x)=x+\\frac{b}{x}$ 在 $(0,1]$ 上单调递增, 故\n$$\na>\\left(x+\\frac{b}{x}\\right)_{\\max }=g(1)=1+b .  \\quad\\quad(3)\n$$\n对式(2), 当 $-1 \\leqslant b<0$ 时, 由均值不等式 $x-\\frac{b}{x}=x+\\frac{-b}{x} \\geqslant 2 \\sqrt{-b}$, 当且仅当 $x=\\sqrt{-b} \\in(0,1]$ 时等号成立, 所以 $\\left(x-\\frac{b}{x}\\right)_{\\text {min }}=2 \\sqrt{-b}$, 故\n$$\na<2 \\sqrt{-b} .  \\quad\\quad(4)\n$$\n由式(3)、(4)要使 $a$ 存在, 必须 $\\left\\{\\begin{array}{l}1+b<2 \\sqrt{-b}, \\\\ -1 \\leqslant b<2 \\sqrt{2}-3,\\end{array}\\right.$ 此时, 存在 $1+b<$ $a<2 \\sqrt{-b}$.\n当 $b<-1$ 时, $f(x)=x-\\frac{b}{x}$ 在 $(0,1]$ 上单调递减(耐克函数性质), 所以\n$$\n\\left(x-\\frac{b}{x}\\right)_{\\min }=f(1)=1-b .\n$$\n综上所述, 当 $-1 \\leqslant b<2 \\sqrt{2}-3$ 时, $a \\in(1+b, 2 \\sqrt{-b})$; 当 $b<-1$ 时, $a \\in(1+b, 1-b)$.\n说明: (1) 本题多次用到耐克函数性质;\n(2) 若 $f(x)$ 在区间 $D$ 上存在最大值或最小值, 则 $f(x) \\geqslant a(\\leqslant a), a$ 是常数, $\\forall x \\in D \\Leftrightarrow f(x)_{\\min } \\geqslant a\\left(f(x)_{\\max } \\leqslant a\\right)$.",
+    "remark": "",
+    "figures": []
+}

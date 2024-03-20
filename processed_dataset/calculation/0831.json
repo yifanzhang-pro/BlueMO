@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-2.tex",
+    "problem_type": "calculation",
+    "problem": "例9. 设 $n$ 和 $k$ 是给定的正整数 $(k<n)$, 已知正实数 $a_1, a_2, \\cdots, a_k$, 试求正实数 $a_{k+1}, a_{k+2}, \\cdots, a_n$ 使得和式\n$$\nM=\\sum_{i \\neq j} \\frac{a_i}{a_j}\n$$\n取最小值.",
+    "solution": "解:通过对 $n=1,2,3$ 计算, 得\n$$\nM=\\left(a_1+a_2+\\cdots+a_n\\right)\\left(\\frac{1}{a_1}+\\frac{1}{a_2}+\\cdots+\\frac{1}{a_n}\\right)-n .\n$$\n令 $a=a_1+a_2+\\cdots+a_k, b=\\frac{1}{a_1}+\\frac{1}{a_2}+\\cdots+\\frac{1}{a_k}$, 则由假设 $a 、 b$ 为给定的常数.\n因此由柯西不等式, 得\n$$\n\\begin{gathered}\nM=\\left(a+a_{k+1}+\\cdots+a_n\\right)\\left(b+\\frac{1}{a_{k+1}}+\\cdots+\\frac{1}{a_n}\\right)-n \\\\\n\\geqslant(\\sqrt{a b}+1+\\cdots+1)^2-n \\\\\n=(\\sqrt{a b}+n-k)^2-n, \\\\\n\\quad \\frac{\\sqrt{a_{k+1}}}{\\sqrt{a_{k+1}}}=\\cdots=\\frac{\\sqrt{a_n}}{\\frac{1}{\\sqrt{a_n}}}=\\frac{\\sqrt{a}}{\\sqrt{b}},\n\\end{gathered}\n$$\n且当\n$$\n\\frac{\\sqrt{a_{k+1}}}{\\frac{1}{\\sqrt{a_{k+1}}}}=\\cdots=\\frac{\\sqrt{a_n}}{\\frac{1}{\\sqrt{a_n}}}=\\frac{\\sqrt{a}}{\\sqrt{b}},\n$$\n即 $a_{k+1}=\\cdots=a_n=\\sqrt{\\frac{a}{b}}$ 时, $M$ 取最小值.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 球面上有 $n$ 个大圆, 其中没有 3 个大圆通过同一点,求这 $n$ 个大圆将球面分成的区域的个数 $a_n$.",
+    "solution": "显然 $a_1=2$, 球面上 $n-1$ 个大圆将球面分成 $a_{n-1}$ 个区域,再加上第 $n$ 个大圆, 它同前 $n-1$ 个大圆无三圆交于一点, 故有 $2(n-1)$ 个不同的交点, 将第 $n$ 个圆分成 $2(n-1)$ 段弧, 每段弧将原有区域一分为二, 故增加了 $2(n-1)$ 个区域, 故 $a_n=a_{n-1}+2(n-1)$, 所以 $a_n=a_1+\\sum_{k=2}^n\\left(a_k-a_{k-1}\\right)=2+ \\sum_{k=2}^n 2(k-1)=2+2 \\cdot \\frac{n(n-1)}{2}=n^2-n+2$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 设 $a=\\sin (-1), b=\\cos (-1), c=\\tan (-1)$, 则有 ( ).\n(A) $a<b<c$\n(B) $b<a<c$\n(C) $c<a<b$\n(D) $a<c<b$",
+    "solution": "C. 因 $-\\frac{\\pi}{2}<-1<0$, 故 $b>0, a<0, c<0$, 又 $\\tan (-1)=\\frac{\\sin (-1)}{\\cos (-1)}< \\sin (-1)$, 所以 $c<a<b$, 选 C.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 求证: 完全四边形 $A B C D E F$ 的三条对角线 $A D 、 B F 、 C E$ 的中点 $M 、 N$ 、 $P$ 三点共线.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c8a2.png>), 分别取 $C D 、 B D 、 B C$ 的中点 $Q 、 R 、 S$.\n于是, 在 $\\triangle A C D$ 中, $M 、 R 、 Q$ 三点共线; 在 $\\triangle B C F$ 中, $S 、 R 、 N$ 三点共线; 在 $\\triangle B C E$ 中, $S 、 Q 、 P$ 三点共线.\n由平行线性质有 $\\frac{M Q}{M R}=\\frac{A C}{A B}, \\frac{N R}{N S}=\\frac{F D}{F C}$,\n$\\frac{P S}{P Q}=\\frac{E B}{E D}$. 由于直线 $A F E$ 与 $\\triangle B C D$ 的边所在直线相截, 所以, 由梅涅劳斯定理知 $\\frac{A C}{A B} \\cdot \\frac{F D}{F C} \\cdot \\frac{E B}{E D}=1$. 从而, $\\frac{M Q}{M R} \\cdot \\frac{N R}{N S} \\cdot \\frac{P S}{P Q}=1$.\n再对 $\\triangle Q R S$ 应用梅涅劳斯定理的逆定理, 知 $N 、 M 、 P$ 三点共线.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8a2.png"
+    ]
+}

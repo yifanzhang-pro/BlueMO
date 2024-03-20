@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 证明: 在两色完全图 $K_7$ 中, 必有两个无公共边的同色三角形.",
+    "solution": "在 $A_1, A_2, \\cdots, A_7$ 中, 前 6 个点构成的三角形必有两个是同色的.\n它们如果没有公共边, 则命题已成立.\n如果有公共边, 不妨设为 $\\triangle A_1 A_2 A_3$ 、 $\\triangle A_1 A_2 A_4$, 现除去 $A_1$ 点, 加进 $A_7$ 点, 则又存在两个同色三角形, 在这两个同色三角形中必有一个不同于 $\\triangle A_2 A_3 A_4$, 这个三角形与 $\\triangle A_1 A_2 A_3$ 或 $\\triangle A_1 A_2 A_4$ 中的一个无公共边.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $\\frac{1}{2}<a_1<\\frac{2}{3}, a_{n+1}=a_n\\left(2-a_{n+1}\\right), n=1,2,3, \\cdots$, 证明\n$$\nn+\\frac{1}{2}<\\frac{1}{a_1}+\\frac{1}{a_2}+\\cdots+\\frac{1}{a_n}<n+2 \\text {. }\n$$",
+    "solution": "解:由 $a_{n+1}=a_n\\left(2-a_{n+1}\\right)$ 得 $a_{n+1}=\\frac{2 a_n}{a_n+1}$. 解方程 $x=\\frac{2 x}{x+1}$, 得到两个不动点 $x_1=0, x_2=1$, 再由 $a_{n+1}=\\frac{2 a_n}{1+a_n}$ 和 $a_{n+1}-1=\\frac{a_n-1}{1+a_n}$, 可得\n$$\n\\frac{a_{n+1}-1}{a_{n+1}}=-\\frac{1}{2}\\left(\\frac{a_n-1}{a_n}\\right) .\n$$\n于是, 由等比数列的通项公式得\n$$\n\\frac{a_n-1}{a_n}=\\frac{a_1-1}{a_1} \\cdot\\left(-\\frac{1}{2}\\right)^{n-1},\n$$\n由此得出\n$$\n\\frac{1}{a_n}=1+\\left(\\frac{1}{a_1}-1\\right)\\left(\\frac{1}{2}\\right)^{n-1} .\n$$\n注意到 $\\frac{1}{2}<a_1<\\frac{2}{3}$ 时, $\\frac{1}{2}<\\frac{1}{a_1}-1<1$, 故\n$$\n1+\\frac{1}{2^n}<\\frac{1}{a_n}<1+\\frac{1}{2^{n-1}},\n$$\n所以\n$$\n\\begin{aligned}\n\\frac{1}{a_1}+\\frac{1}{a_2}+\\cdots+\\frac{1}{a_n} & <\\left(1+\\frac{1}{1}\\right)+\\left(1+\\frac{1}{2}\\right)+\\cdots+\\left(1+\\frac{1}{2^{n-1}}\\right) \\\\\n& =n+2-\\frac{1}{2^{n-1}}<n+2, \\\\\n\\frac{1}{a_1}+\\frac{1}{a_2}+\\cdots+\\frac{1}{a_n} & >\\left(1+\\frac{1}{2}\\right)+\\left(1+\\frac{1}{2^2}\\right)+\\cdots+\\left(1+\\frac{1}{2^n}\\right) \\\\\n& =n+1-\\frac{1}{2^n}>n+1-\\frac{1}{2}=n+\\frac{1}{2} .\n\\end{aligned}\n$$\n即\n$$\nn+\\frac{1}{2}<\\frac{1}{a_1}+\\frac{1}{a_2}+\\cdots+\\frac{1}{a_n}<n+2 .\n$$\n前面我们通过实例介绍了如何通过待定系数法、不动点去寻找变换函数.\n但对一般的递推数列, 如何确定变换函数 $\\varphi(x)$,并无统一规律可循,下面我们再举例介绍一些其他的换元方法.",
+    "remark": "",
+    "figures": []
+}

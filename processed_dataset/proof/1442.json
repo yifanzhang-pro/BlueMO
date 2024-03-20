@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 设 $a_n \\in \\mathbf{R}$ 满足: $a_{n+1} \\geqslant a_n^2+\\frac{1}{5}, n \\geqslant 0$, 求证:\n$$\n\\sqrt{a_{n+5}} \\geqslant a_{n-5}^2, n \\geqslant 5 .\n$$",
+    "solution": "证法 3 : 只要证明 $a_{n+5} \\geqslant a_n^2(n \\geqslant 5)$.\n因为 $a_{n+5} \\geqslant a_{n+4}^2+\\frac{1}{5} ; \\cdots ; a_{n+1} \\geqslant a_n^2+\\frac{1}{5}$, 相加, 得\n$$\n\\begin{aligned}\na_{n+5} & \\geqslant \\sum_{i=1}^4\\left(a_{n+i}^2-a_{n+i}\\right)+1+a_n^2 \\\\\n& =\\sum_{i=1}^4\\left(a_{n+i}-\\frac{1}{2}\\right)^2+a_n^2 \\geqslant a_n^2 .\n\\end{aligned}\n$$\n因此结论成立.",
+    "remark": "",
+    "figures": []
+}

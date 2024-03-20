@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 将 1989 分成 10 个正整数的和,使其积最大.",
+    "solution": "当 1989 分拆成: $199+199+\\cdots+199+198$ 时, 对应的积为 $199^9 \\times 198$.\n下面证明它是最大的.\n因为分拆种数是有限的, 最大值一定存在, 所以可假定分拆 $\\left(x_1, x_2, \\cdots, x_{10}\\right)$, 其中 $x_1+x_2+\\cdots+x_{10}=1989$, 是相应的积 $x_1 x_2 \\cdots x_{10}$ 为最大的一种分拆.\n若 $x_1, x_2, \\cdots, x_{10}$ 中有小于 198 者, 设为 $x_1$, 那么其中必有大于 198 者, 设为 $x_{10}$. 令 $x_1^{\\prime}=x_1+\\left(x_{10}-198\\right), x_{10}^{\\prime}=198$, 则得到一种新的分拆 $\\left(x^{\\prime}{ }_1, x_2, \\cdots, x_9, x^{\\prime}{ }_{10}\\right)$, 相应的积为 $x^{\\prime}{ }_1 x_2 \\cdots x_9 x_{10}^{\\prime}$. 但 $x_1^{\\prime} x_{10}^{\\prime}-x_1 x_{10}=\\left[x_1+\\left(x_{10}-198\\right)\\right] \\cdot 198-x_1 x_{10}=198 x_1+198 x_{10}-198^2- x_1 x_{10}=\\left(198-x_1\\right)\\left(x_{10}-198\\right)>0$, 所以 $x_1^{\\prime} x_2 \\cdots x_9 x_{10}^{\\prime}>x_1 x_2 \\cdots x_{10}$, 矛盾.\n由此可见, $x_1, x_2, \\cdots, x_{10}$ 均不小于 198. 若 $x_1, x_2, \\cdots, x_{10}$ 中有大于 199 者, 设为 $x_1$, 那么其中必有小于 199 者, 设为 $x_{10}$. 因为 $x_{10}$ 不小于 198 , 所以 $x_{10}=$ 198. 令 $x_1^{\\prime}=x_1-1, x_{10}^{\\prime}=x_{10}+1$, 则得到一种新的分拆 $\\left(x_1^{\\prime}, x_2, \\cdots, x_9\\right.$, $\\left.x_{10}^{\\prime}\\right)$, 相应的积为 $x_1^{\\prime} x_2 \\cdots x_9 x_{10}^{\\prime}$. 但 $x_1^{\\prime} x_{10}^{\\prime}-x_1 x_{10}=\\left(x_1-1\\right)\\left(x_{10}+1\\right)- x_1 x_{10}=x_1 x_{10}+x_1-x_{10}-1-x_1 x_{10}=x_1-x_{10}-1=x_1-198-1=x_1- 199>0$, 所以 $x_1^{\\prime} x_2 \\cdots x_9 x_{10}^{\\prime}>x_1 x_2 \\cdots x_{10}$, 矛盾.\n所以 $x_1, x_2, \\cdots, x_{10}$ 均只能是 199 或 198 , 从而分拆: $199+199+\\cdots+199+198$ 对应的积为 $199^9 \\times 198$ 为最大.",
+    "remark": "",
+    "figures": []
+}

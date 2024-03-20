@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题9 设 $f(x)=\\min \\left\\{3+\\log _{\\frac{1}{4}} x, \\log _2 x\\right\\}$, 其中 $\\min \\{p, q\\}$ 表示 $p 、 q$ 中的较小者, 求 $f(x)$ 的最大值.",
+    "solution": "易知 $f(x)$ 的定义域是 $(0,+\\infty)$. \n因为 $y_1= 3+\\log _{\\frac{1}{4}} x$ 在 $(0,+\\infty)$ 上是减函数, $y_2=\\log _2 x$ 在 $(0$, $+\\infty)$ 上是增函数, 而当 $y_1=y_2$, 即 $3+\\log _{\\frac{1}{4}} x=\\log _2 x$ 时, $x=4$, 所以由 $y_1=3+\\log _{\\frac{1}{4}} x$ 和 $y_2=\\log _2 x$ 的图象(<FilePath:./images/volume2/figures/fig-c3p9.png>)可知 $f(x)=\\left\\{\\begin{array}{ll}3+\\log _{\\frac{1}{4}} x, & \\text { 当 } x \\geqslant 4 \\text { 时; } \\\\ \\log _2 x, & \\text { 当 } 0<x<4 \\text { 时.\n}\\end{array}\\right.$ \n故当 $x=4$ 时, 得 $f(x)$ 的最大值为 2 .",
+    "remark": "",
+    "figures": [
+        "./images/volume2/figures/fig-c3p9.png"
+    ]
+}

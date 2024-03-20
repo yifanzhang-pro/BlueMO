@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设有 $n(\\geqslant 7)$ 个圆, 其中任意 3 个圆都不两两相交 (包括相切), 求证:一定可以找到一个圆, 它至多只能与 5 个圆相交.",
+    "solution": "证明:如图(<FilePath:./images/volume14/figures/fig-c6i1.png>),设 $n$ 个圆的圆心分别为 $O_1, O_2, \\cdots, O_n$, 取 $n$ 个圆中半径最小的圆, 设为 $\\odot O_1$.\n若 $\\odot O_1$ 与 6 个 (或多于 6 个圆) 圆 $O_2, O_3, \\cdots, O_7$ 相交, 连接 $O_1 O_2$,\n$O_1 O_3, \\cdots, O_1 O_7$, 则 $\\angle O_2 O_1 O_3, \\angle O_3 O_1 O_4$, $\\angle O_4 O_1 O_5, \\angle O_5 O_1 O_6, \\angle O_6 O_1 O_7, \\angle O_7 O_1 O_2$ 中必有一个角不超过 $\\frac{360^{\\circ}}{6}=60^{\\circ}$, 不妨设 $\\angle O_2 O_1 O_3 \\leqslant 60^{\\circ}$.\n连接 $\\mathrm{O}_2 \\mathrm{O}_3$, 令 $\\odot O_1, \\odot O_2, \\odot O_3$ 的半径是 $r_1$, $r_2, r_3$, 则 $r_1 \\leqslant r_2, r_1 \\leqslant r_3$.\n由 $\\odot O_1$ 与 $\\odot O_2$ 相交, $\\odot O_1$ 与 $\\odot O_3$ 相交, 得 $r_1+ r_2 \\geqslant O_1 O_2, r_1+r_3 \\geqslant O_1 O_3$, 则\n$$\n\\begin{aligned}\n& O_1 O_2 \\leqslant r_1+r_2 \\leqslant r_2+r_3, \\\\\n& O_1 O_3 \\leqslant r_1+r_3 \\leqslant r_2+r_3 .\n\\end{aligned}\n$$\n而 $\\angle O_2 O_1 O_3 \\leqslant 60^{\\circ}$, 那么其余两个角中必有一个角 $\\geqslant 60^{\\circ}$, 令 $\\angle O_3 \\geqslant 60^{\\circ}$, 就有 $O_1 O_2 \\geqslant O_2 O_3$, 所以有\n$$\n\\mathrm{O}_2 \\mathrm{O}_3 \\leqslant \\dot{r}_1+r_2 \\leqslant r_2+r_3,\n$$\n从而知 $\\odot \\mathrm{O}_2$ 与 $\\odot \\mathrm{O}_3$ 必相交, 由此推得 $\\odot O_1, \\odot \\mathrm{O}_2, \\odot \\mathrm{O}_3$ 两两相交, 这与题中的条件是矛盾的.\n所以一定存在一个圆至多只能与 5 个圆相交.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c6i1.png"
+    ]
+}

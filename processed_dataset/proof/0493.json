@@ -1,0 +1,15 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 一个有限集合的全部子集, 可以如此排列, 使任何相邻的两个子集恰相差一个元素.",
+    "solution": "设集合 $A$ 有 $n$ 个元素, 把每个元素编号, 设 $A=\\{1,2,3, \\cdots, n\\}$, 我们用一个长度为 $n$ 的由 0 与 1 构成的序列来表达每个子集, 规则是 $A$ 的元素 $i$ 在该子集中, 则在序列的第 $i$ 位上写 1 , 否则写 0 . 例如空集 $\\varnothing=0,0,0, \\cdots, 0$. $\\{1\\}=1,0,0, \\cdots, 0,\\{n\\}=0,0, \\cdots, 1,\\{2,3\\}=0,1,1,0, \\cdots, 0$, 则 $A$ 的全部子集共有 $2^n$ 个.\n以这 $2^n$ 个子集对应的序列为顶点, 仅当两序列只一个同位数码相异时, 在此二顶点间连一边, 得一个图 $G$, 例如 $n=1$ 时为图(<FilePath:./images/volume12/figures/fig-c6a9-1.png>) 所示的单位线段, $n=2$ 时, $G$ 为图(<FilePath:./images/volume12/figures/fig-c6a9-2.png>) 所示的正方形, 图(<FilePath:./images/volume12/figures/fig-c6a9-2.png>) 是两个图(<FilePath:./images/volume12/figures/fig-c6a9-1.png>) 如下作成的: 在一个的 0,1 码前方都加上 0 , 变成 00,01 , 在另一个的 0,1 码前都加上 1 , 变成 10,11 , 再把一个放在另一个上方, 连上两个\"坚边\" 作成的一个正方形.\n复制两个图 2 , 把一个放在另一个的上方, 把上方的各顶点标志码前方都加一个 0 , 把下方各顶点标志码前方都加一个 1 , 再用 4 条坚线连接上下相对的顶点构成 $n=3$ 时的图 $G, G$ 是一个立方体.\n如果 $n=k$ 的图 $G$ 已作好, 则把 $n=k$ 的图及其复制品分别放在上方和下方各一个,再把上方的图的各顶点标码前方都加上一个 0 , 把下方的图的各顶点标码前方都加上一个 1 , 把上、下两方对应的顶点连一条竖直的边, 则得 $n=k+1$ 的图 $G$. 图(<FilePath:./images/volume12/figures/fig-c6a9-3.png>) 是 $n=3$ 的情形, 图(<FilePath:./images/volume12/figures/fig-c6a9-4.png>) 是 $n=4$ 的情形, $n= k$ 的图 $G$ 称为 $n$ 维立方体图.\n用数学归纳法容易证明 $n$ 维立方体图有哈密顿圈 $(n \\geqslant 2)$. 对于 $n=1$, 显然成立, 因为这时 1 维立方体图是 $K_2$, 是一条哈密顿链.\n对于 $n=2$, 是四边形, 显然是哈密顿圈, 对于 $n=k$, 若是哈密顿图, 考虑 $n=k+1$, 把 $G$ 中上方和下方的 $n==k$ 时的哈密顿圈上各删去一条对应边, 再把这两条对应边的对应端点间的两条边选来与上下方的哈密顿链并\n成一个 $n=k+1$ 时的哈密顿圈, 如图 4 中的粗线所示.\n把 $G$ 中的顶点按哈密顿圈上的顺序放在一个圆周上, 从任一顶点出发, 沿逆时针 (或顺时针) 为序, 则把全部子集排了序, 使得相邻子集恰相差一个元素.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c6a9-1.png",
+        "./images/volume12/figures/fig-c6a9-2.png",
+        "./images/volume12/figures/fig-c6a9-2.png",
+        "./images/volume12/figures/fig-c6a9-1.png",
+        "./images/volume12/figures/fig-c6a9-3.png",
+        "./images/volume12/figures/fig-c6a9-4.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-1.tex",
+    "problem_type": "proof",
+    "problem": "例1. 证明: 对任意 $n \\in \\mathbf{N}^*$, 都有\n$$\n\\frac{1}{1 \\times 2}+\\frac{1}{2 \\times 3}+\\cdots+\\frac{1}{n(n+1)}=1-\\frac{1}{n+1} . \\label{eq1}\n$$",
+    "solution": "证明:当 $n=1$ 时, \\ref{eq1} 式左边 $=\\frac{1}{2}$, \\ref{eq1} 式右边 $=1-\\frac{1}{1+1}=\\frac{1}{2}$, 故 $n=$ 1 时, \\ref{eq1} 式成立.\n现设\\ref{eq1}式对 $n$ 成立, 考虑 $n+1$ 的情形.\n利用 $\\frac{1}{k(k+1)}=\\frac{1}{k}-\\frac{1}{k+1}$, 知\n$$\n\\begin{aligned}\n& \\frac{1}{1 \\times 2}+\\frac{1}{2 \\times 3}+\\cdots+\\frac{1}{(n+1)(n+2)} \\\\\n= & \\left(1-\\frac{1}{2}\\right)+\\left(\\frac{1}{2}-\\frac{1}{3}\\right)+\\cdots+\\left(\\frac{1}{n+1}-\\frac{1}{n+2}\\right) \\\\\n= & 1-\\frac{1}{n+2} .\n\\end{aligned} \\label{eq2}\n$$\n所以, \\ref{eq1}式对 $n+1$ 成立.\n综上所述, 由数学归纳法原理知, \\ref{eq1}式对一切正整数 $n$ 成立.\n说明这是一个错误的证明, 其错误在于证明\\ref{eq1}式对 $n+1$ 成立时, 并没有用到归纳假设.\n正确的过程如下:\n由归纳假设知\n$$\n\\begin{aligned}\n& \\frac{1}{1 \\times 2}+\\frac{1}{2 \\times 3}+\\cdots+\\frac{1}{n(n+1)}+\\frac{1}{(n+1)(n+2)} \\\\\n= & \\left(1-\\frac{1}{n+1}\\right)+\\frac{1}{(n+1)(n+2)} \\\\\n= & \\left(1-\\frac{1}{n+1}\\right)+\\left(\\frac{1}{n+1}-\\frac{1}{n+2}\\right) \\\\\n= & 1-\\frac{1}{n+2} .\n\\end{aligned}\n$$\n所以, \\ref{eq1}式对 $n+1$ 成立.\n事实上, \\ref{eq2}式的得到是正确的, 但这是对\\ref{eq1}式的一个直接证明, 不应该套上数学归纳法这顶帽子.",
+    "remark": "",
+    "figures": []
+}

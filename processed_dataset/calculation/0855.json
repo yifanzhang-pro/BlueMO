@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题12. 对满足 $1 \\leqslant r \\leqslant s \\leqslant t$ 的一切实数 $r 、 s 、 t$. 求\n$$\nw=(r-1)^2+\\left(\\frac{s}{r}-1\\right)^2+\\left(\\frac{t}{s}-1\\right)^2+\\left(\\frac{4}{t}-1\\right)^2\n$$\n的最小值.",
+    "solution": "由柯西不等式, 得 $w \\geqslant \\frac{1}{4}\\left[(r-1)+\\left(\\frac{s}{r}-1\\right)+\\left(\\frac{t}{s}-1\\right)+\\left(\\frac{4}{t}-1\\right)\\right]^2 =\\frac{1}{4}\\left(r+\\frac{s}{r}+\\frac{t}{s}+\\frac{4}{t}-4\\right)^2$. 又 $r+\\frac{s}{r}+\\frac{t}{s}+\\frac{4}{t} \\geqslant 4 \\sqrt[4]{r \\cdot \\frac{s}{r} \\cdot \\frac{t}{s} \\cdot \\frac{4}{t}}= 4 \\sqrt{2}$, 所以 $w \\geqslant 4(\\sqrt{2}-1)^2$. 当且仅当 $r=\\sqrt{2}, s=2, t=2 \\sqrt{2}$ 时, 取等号.\n故 $w_{\\min }=4(\\sqrt{2}-1)^2$.",
+    "remark": "",
+    "figures": []
+}

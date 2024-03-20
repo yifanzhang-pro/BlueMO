@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设 $R 、 r$ 分别是一个四面体的外接球半径和内切球半径, $O 、 I$ 分别是这两个球的中心.\n求证: $R^2 \\geqslant 9 r^2+O I^2$.",
+    "solution": "设四面体 $A_1 A_2 A_3 A_4$ 中, 面 $A_2 A_3 A_4$ 的面积为 $F_1$, 等等, $P$ 是这个四面体中的任意给定内点.\n由 Cauchy 不等式有 $\\left(\\sum F_i\\right)\\left(\\sum F_i \\cdot P A_i^2\\right) \\geqslant\\left(\\sum F_i\\right.$. $\\left.P A_i\\right)^2 \\cdots$ (1). 现用 $\\vec{P} 、 \\overrightarrow{A_i}$ 和 $\\vec{I}$ 分别表示从 $O$ 到点 $P 、 A_i$ 和 $I$ 的向量, 则 $\\vec{I}= \\frac{\\sum F_i \\vec{A}_i}{\\sum F_i}$, 从而可得 $\\sum F_i \\cdot P A_i^2=\\sum F_i\\left(\\vec{P}-\\vec{A}_i\\right)^2=\\sum F_i\\left(R^2+\\vec{P}^2-\\right. \\left.2 \\vec{P} \\cdot \\vec{A}_i\\right)=F\\left(R^2+O P^2-2 \\vec{P} \\cdot \\vec{I}\\right)$, 这里 $F=\\sum F_i$. 因为 $2 \\vec{P} \\cdot \\vec{I}= \\vec{P}^2+\\vec{I}^2-(\\vec{P}-\\vec{I})^2$, 所以 $\\left(\\sum F_i\\right)\\left(\\sum F_i \\cdot P A_i^2\\right)=F^2\\left(R^2+P I^2-O I^2\\right)$, 因此由 (1) 得 $\\sum F_i \\cdot P A_i \\leqslant F\\left(R^2+P I^2-O I^2\\right)^{\\frac{1}{2}} \\cdots$ (2). 现设 $h_i$ 和 $r_i$ 分别表示点 $A_i$ 和 $P$ 到面 $F_i$ 的距离, 则 $P A_i \\geqslant h_i-r_i$, 因此 $\\sum F_i \\cdot P A_i \\geqslant \\sum F_i\\left(h_i-r_i\\right)= \\sum F_i h_i-\\sum F_i r_i=4 \\times 3 V-3 V=9 V$. 结合 (2) 和 (3) 并利用 $3 V=r F$, 可得 $R^2 \\geqslant 9^2 r^2+O I^2-P I^2$. 再选择 $P=I$, 立得所证不等式.",
+    "remark": "",
+    "figures": []
+}

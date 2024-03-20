@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题13. Fibonaccia 数列 $\\left\\{F_n\\right\\}$ 满足 $F_1=F_2=1, F_{n+2}=F_{n+1}+F_n, n=1,2, \\cdots$. 证明: 对任意正整数 $m$, 存在下标 $n$, 使得 $m \\mid\\left(F_n^4-F_n-2\\right)$.",
+    "solution": "当 $m=1$ 时显然成立,对于 $m \\geqslant 2$ 的情形.\n先证: $\\left\\{F_n(\\bmod m)\\right\\}$ 是一个纯周期数列这只需注意到, 在 $\\bmod m$ 意义下 $\\left(F_n, F_{n+1}\\right)$ 只有 $m^2$ 种不同情形, 用抽屉原则可知, 存在 $n<k$, 使 $\\left(F_n, F_{n+1}\\right) \\equiv\\left(F_k, F_{k+1}\\right)(\\bmod m)$, 然后结合递推公式可导出 $F_{n-1} \\equiv F_{k-1}(\\bmod m)$. 依次倒推即可得出.\n然后, 由 $F_1=F_2 \\equiv 1(\\bmod m)$ 知存在 $p \\in \\mathbf{N}^*$, 使得 $F_{p+1} \\equiv F_{p+2} \\equiv 1(\\bmod m)$, 从而 $F_p \\equiv 0(\\bmod m), F_{p-1} \\equiv 1(\\bmod m), F_{p-2} \\equiv-1(\\bmod m)$, 进而对 $t \\in \\mathbf{N}^*$, 有 $F_{t p-2} \\equiv-1(\\bmod m)$. 取 $n=t p-2$, 就有 $F_n^4-F_n-2 \\equiv 1+ 1-2 \\equiv 0(\\bmod m)$. 命题获证.",
+    "remark": "",
+    "figures": []
+}

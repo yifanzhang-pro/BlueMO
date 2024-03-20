@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例8. 如图(<FilePath:./images/volume7/figures/fig-c3i11.png>) 在锐角三角形 $A B C$ 中, $A A_1$ 、 $B B_1$ 是两条角平分线, $I 、 O 、 H$ 分别是 $\\triangle A B C$ 的内心、外心、垂心, 连结 $H O$, 分别交 $A C 、 B C$ 于点 $P$, Q. 已知 $C 、 A_1 、 I 、 B_1$ 四点共圆.\n求证: (1) $\\angle C= 60^{\\circ}$; (2) $P Q=A P+B Q$.",
+    "solution": "证明:(1) 因为 $C 、 A_1 、 I 、 B_1$ 四点共圆, 所以\n$$\n\\begin{aligned}\n\\angle C & =180^{\\circ}-\\angle A I B=\\angle I A B+\\angle I B A \\\\\n& =\\frac{1}{2} \\angle A+\\frac{1}{2} \\angle B=90^{\\circ}-\\frac{1}{2} \\angle C,\n\\end{aligned}\n$$\n所以\n$$\n\\angle C=60^{\\circ} \\text {. }\n$$\n(2)因为\n$$\n\\begin{aligned}\n& \\angle A H B=180^{\\circ}-\\angle C=120^{\\circ}, \\\\\n& \\angle A O B=2 \\angle A C B=120^{\\circ},\n\\end{aligned}\n$$\n所以 $A 、 H 、 O 、 B$ 四点共圆,于是\n$$\n\\angle P H A=\\angle O B A=\\frac{1}{2}\\left(180^{\\circ}-\\angle A O B\\right)=30^{\\circ},\n$$\n又所以\n于是同理可得\n故\n$$\n\\angle P A H=90^{\\circ}-\\angle C=30^{\\circ},\n$$\n$$\n\\begin{aligned}\n\\angle P A H & =\\angle P H A, \\\\\nA P & =P H, \\\\\nB Q & =Q H,\n\\end{aligned}\n$$\n$$\nP Q=A P+B Q .\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c3i11.png"
+    ]
+}

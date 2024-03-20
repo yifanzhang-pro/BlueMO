@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter9.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 设正整数 $a 、 b 、 c$ 为三角形三边长, $a+b=n, n \\in \\mathbf{N}^*, 1 \\leqslant c \\leqslant n-1$. 求这样的三角形的个数.",
+    "solution": "分析:设 $\\triangle A B C$ 的角 $A 、 B 、 C$ 的对应边分别为 $a 、 b 、 c$. 例 1 就是要计算有限集 $M=\\left\\{\\triangle A B C \\mid a+b=n, a, b \\in \\mathbf{N}^*, 1 \\leqslant c \\leqslant n-1\\right\\}$ 的阶.\n也就是要计算同时满足 $a+b>c, b+c>a, c+a>b$ 的三元正整数组 $\\{a, b, c\\}$ 的个数.\n解不妨设 $b \\geqslant a$, 则 $1 \\leqslant a \\leqslant\\left[\\frac{n}{2}\\right]$. 满足题设条件的三角形可分为两类:\n第一类: $c$ 为最大边.\n令 $a=i$, 则 $b=n-i, n-i \\leqslant c \\leqslant n-1$. 这样的三角形有 $(n-1)-(n-i)+1=i$ 个.\n第二类: $c$ 不为最大边.\n则 $b>c, c+a>b$, 故 $b-a=n-2 i, n-2 i< c<n-i$. 因此 $n-2 i+1 \\leqslant c \\leqslant n-i-1$. 这样的三角形有 $(n-i-1)- (n-2 i+1)+1=i-1$ 个.\n由加法原理, 满足题设条件的三角形的个数为\n$$\nf(n)=\\sum_{i=1}^{\\left[\\frac{n}{2}\\right]}(i+i-1)=\\sum_{i=1}^{\\left[\\frac{n}{2}\\right]}(2 i-1)=\\left(\\left[\\frac{n}{2}\\right]\\right)^2 .\n$$",
+    "remark": "",
+    "figures": []
+}

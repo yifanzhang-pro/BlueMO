@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $a, b, c, d \\geqslant 0$, 且 $a+b+c+d==4$. 求证:\n$$\nb c d+c d a+d a b+a b c-a b c d \\leqslant \\frac{1}{2}(a b+a c+a d+b c+b d+c d) .\n$$",
+    "solution": "当 $a 、 b 、 c 、 d$ 中有 1 个为 0 时, 不妨设 $d=0$, 则只须证明: $a b c \\leqslant \\frac{1}{2}(a b+b c+c a)$. 由于 $\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}+a+b+c \\geqslant 6$, 有 $\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c} \\geqslant 2$, 故上式成立.\n若 $a 、 b 、 c 、 d$ 均不为 0 , 则只须证: $f=\\sum \\frac{1}{a}-\\frac{1}{2} \\sum \\frac{1}{a b} \\leqslant 1$.\n不妨设 $a \\leqslant 1 \\leqslant b$, 则令 $a^{\\prime}=1, b^{\\prime}=a+b-1$, 有 $a^{\\prime} b^{\\prime} \\geqslant a b$, 于是\n$$\n\\begin{aligned}\n& f(a, b, c, d)-f\\left(a^{\\prime}, b^{\\prime}, c^{\\prime}, d^{\\prime}\\right) \\\\\n= & (a+b)\\left(\\frac{1}{a b}-\\frac{1}{a^{\\prime} b^{\\prime}}\\right)\\left[1-\\frac{1}{2}\\left(\\frac{1}{a+b}+\\frac{1}{c}+\\frac{1}{d}\\right)\\right] \\\\\n\\leqslant & (a+b) \\frac{a^{\\prime} b^{\\prime}-a b}{a^{\\prime} b^{\\prime} a b}\\left(1-\\frac{1}{2} \\cdot \\frac{32}{4}\\right) \\leqslant 0 .\n\\end{aligned}\n$$\n故 $f(a, b, c, d) \\leqslant f\\left(a^{\\prime}, b^{\\prime}, c^{\\prime}, d^{\\prime}\\right)==f(1, a+b-1, c, d)$.\n再经过上述两次磨光变换, 得\n$$\n\\begin{aligned}\nf(1, a+b-1, c, d) & \\leqslant f(1,1, a+b+c-2, d) \\\\\n& \\leqslant f(1,1,1, a+b+c+d-3) \\\\\n& =f(1,1,1,1)=1 .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

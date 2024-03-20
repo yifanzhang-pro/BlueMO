@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter13.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 凸 $n$ 边形的任意 3 条对角线不交于形内一点, 求这些对角线将凸 $n$ 边形分成的区域的个数.",
+    "solution": "解法四设凸 $n$ 边形被对角线分成的区域数为 $a_n$,于是 $a_3=1, a_4=4$. 在凸 $n-1$ 边形 $P_1 P_2 \\cdots P_{n-1}$ 基础上增加一个顶点 $P_n$ 得凸 $n$ 边形 $P_1 P_2 \\cdots P_n$, 则增加 1 个区域 $\\triangle P_1 P_{n-1} P_n$, 再增加从 $P_n$ 出发的 $n-3$ 条对角线, 则增加的区域数应为这 $n-3$ 条对角线上的交点数 $\\mathrm{C}_n^4-\\mathrm{C}_{n-1}^4$ 加上 $n-3$. 故得\n$$\n\\begin{aligned}\na_n & =a_{n-1}+\\left(\\mathrm{C}_n^4-\\mathrm{C}_{n-1}^4\\right)+(n-3)+1 \\\\\n& =a_{n-1}+\\left(\\mathrm{C}_n^4-\\mathrm{C}_{n-1}^4\\right)+n-2(n \\geqslant 5) .\n\\end{aligned}\n$$\n如果约定 $a_2=0, \\mathrm{C}_2^4=\\mathrm{C}_3^4=0$, 则上式当 $n=3,4$ 时也成立.\n所以\n$$\n\\begin{aligned}\na_n & =a_2+\\sum_{k=3}^n\\left(a_k-a_{k-1}\\right) \\\\\n& =0+\\sum_{k=3}^n\\left[\\left(\\mathrm{C}_k^4-\\mathrm{C}_{k-1}^4\\right)+(k-2)\\right] \\\\\n& =\\mathrm{C}_n^4+\\frac{1}{2}(n-1)(n-2) \\\\\n& =\\frac{1}{24}(n-1)(n-2)\\left(n^2-3 n+12\\right) .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

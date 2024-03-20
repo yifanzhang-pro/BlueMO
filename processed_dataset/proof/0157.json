@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例11. 设 $A$ 是正整数的 $n$ 元集合 $(n \\geqslant 2)$. 证明, $A$ 有一个子集 $B$, 满足 $|B|>\\frac{n}{3}$, 且对任意 $x, y \\in B$, 有 $x+y \\notin B$.",
+    "solution": "证明:记 $A$ 中的数为 $a_1, \\cdots, a_n$. 由习题 3 的第 2 题知, 模 3 为 -1 的素数有无穷多个, 故可取一个这样的素数 $p>a_i(1 \\leqslant i \\leqslant n)$, 设 $p=3 k-1$. 考虑下面 ( $p$ 行 $n$ 列的) $p n$ 个数\n$$\n\\begin{aligned}\n& a_1, a_2, \\cdots, a_n ; \\\\\n& 2 a_1, 2 a_2, \\cdots, 2 a_n ; \\\\\n& \\cdots . . \\\\\n& p a_1, p a_2, \\cdots, p a_n .\n\\end{aligned} \\label{eq1}\n$$\n由于 $p>a_i$, 故 $\\left(p, a_i\\right)=1$. 因此 式\\ref{eq1} 中每一列数均构成模 $p$ 的一个完系, 从而对每个 $j(0 \\leqslant j<p)$, 式\\ref{eq1}中的数共有 $n$ 个模 $p$ 为 $j$, 于是模 $p$ 为 $k, k+1, \\cdots, 2 k-1$ 之一的数共有 $k n$ 个.\n设式\\ref{eq1}中第 $i$ 行中共有 $x_i$ 个数模 $p$ 为 $k, k+1, \\cdots, 2 k-1$ 之一.\n则上面的论证表明\n$$\nx_1+\\cdots+x_p=k n \\text {. }\n$$\n故有一个 $x_i$ 满足\n$$\nx_i \\geqslant \\frac{k n}{\\dot{p}}=\\frac{k n}{3 k-1}>\\frac{n}{3},\n$$\n即有一个 $l(1 \\leqslant l \\leqslant p)$, 使 $l a_1, l a_2, \\cdots, l a_n$ 中模 $p$ 为 $k, k+1, \\cdots, 2 k-1$ 之一的个数大于 $\\frac{n}{3}$. 我们取\n$$\nB=\\{a \\in A \\mid l a \\text { 模 } p \\text { 为 } k, k+1, \\cdots, 2 k-1 \\text { 之一 }\\},\n$$\n则 $B$ 符合要求: 因为对任意 $x, y \\in B$, 易知 $l(x+y)(=l x+l y)$ 模 $p$ 的余数或 $\\geqslant 2 k$, 或 $\\leqslant k-1$, 从而 $x+y \\notin B$.",
+    "remark": "",
+    "figures": []
+}

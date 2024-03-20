@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 平面内给定 $n$ 个相异的点, 证明: 其中距离为单位长的点对数少于 $\\frac{n}{4}+ \\frac{\\sqrt{2}}{2} n^{\\frac{3}{2}}$",
+    "solution": "记 $I=\\left\\{P_1, P_2, \\cdots, P_n\\right\\}$ 为已知 $n$ 个点组成的集合, 设 $I$ 中距离为单位长的点对数为 $E$. 以 $P_i$ 为中心, 单位长为半径作圆 $C_i(i=1,2, \\cdots, n)$ 并设 $C_i$ 上有 $I$ 中 $e_i$ 个点 $(i=1,2, \\cdots, n)$, 于是 $\\sum_{i=1}^n e_i=2 E$. 我们称以 $I$ 中点为端点的线段为好线段,一方面好线段共有 $\\mathrm{C}_n^2$ 条.\n另一方面, 圆 $C_i$ 上有 $\\mathrm{C}_{e_i}^2$ 条弦是好线段, $n$ 个圆上一共有 $\\sum_{i=1}^n \\mathrm{C}_{e_i}^2$ 条弦为好线段,但其中有些公共弦被重复计数了, 而 $n$ 个圆的公共弦至多有 $\\mathrm{C}_n^2$ 条, 故不同的好线段数至少为 $\\sum_{i=1}^n \\mathrm{C}_{e_i}^2-\\mathrm{C}_n^2$. 所以 $\\sum_{i=1}^n \\mathrm{C}_{e_i}^2-\\mathrm{C}_n^2 \\leqslant \\mathrm{C}_n^2$. 由柯西 (Cauchy) 不等式得 $2 \\mathrm{C}_n^2 \\geqslant \\frac{1}{2}\\left(\\sum_{i=1}^n e_i^2-\\sum_{i=1}^n e_i\\right) \\geqslant \\frac{1}{2}\\left[\\frac{1}{n}\\left(\\sum_{i=1}^n e_i\\right)^2-\\sum_{i=1}^n e_i\\right]=\\frac{1}{2 n}\\left[4 E^2-2 n E\\right]$, 即 $2 E^2-n E-n^2(n-1) \\leqslant 0$, 所以 $E \\leqslant \\frac{n+n \\sqrt{8 n-7}}{2 \\times 2}<\\frac{n+n \\sqrt{8 n}}{4}=\\frac{n}{4}+\\frac{\\sqrt{2}}{2} n^{\\frac{3}{2}}$.",
+    "remark": "",
+    "figures": []
+}

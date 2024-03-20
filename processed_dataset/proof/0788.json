@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise18.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 试构造恒等式证明下述不定方程均有无穷多组正整数解:\n(1) $x^2+y^2+1=z^2$;\n(2) $2 x^2+2 y^2+1=z^2$;\n(3) $x^2+y^2+1=2 z^2$.",
+    "solution": "(1) $\\left(2 k^2\\right)^2+(2 k)^2+1=\\left(2 k^2+1\\right)^2$;\n(2) $2\\left(k^2+k\\right)^2+2\\left(k^2-k\\right)^2+1=\\left(2 k^2+1\\right)^2$;\n(3) $\\left(k^2\\right)^2+\\left((k+1)^2\\right)^2+1=2\\left(k^2+k+1\\right)^2$.",
+    "remark": "",
+    "figures": []
+}

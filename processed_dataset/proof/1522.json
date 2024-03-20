@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-5.tex",
+    "problem_type": "proof",
+    "problem": "例3. 两个由正整数组成的无穷数列满足:一个是以 $d(>0)$ 为公差的等差数列, 一个是以 $q(>1)$ 为公比的等比数列; 这里 $d 、 q$ 互素.\n证明: 如果这两个数列有一项相同, 那么存在无穷多项相同.",
+    "solution": "证明:可设所给的两个数列分别为 $\\{a+n d\\}, n=0,1,2, \\cdots ;\\left\\{b q^m\\right\\}$, $m=0,1,2, \\cdots$. 这里 $a 、 b 、 d 、 q$ 都是正整数,且 $q>1$.\n如果它们有一项相同, 不妨设两个数列的第一项相同, 否则去掉各数列中的前面的有限项后再讨论, 即 $a=b$. 此时, 为证两个数列有无穷多项相同, 只需证明:存在无穷多个 $m \\in \\mathbf{N}^*$, 使得\n$$\na q^m \\equiv a(\\bmod d),\n$$\n这只需 $q^m \\equiv 1(\\bmod d)$.\n注意到 $1, q, q^2, \\cdots, q^d$ 除以 $d$ 所得余数只有 $d$ 种不同取值, 由抽庶原则可知, 存在 $0 \\leqslant i<j \\leqslant d$, 使得 $q^j \\equiv q^i(\\bmod d)$, 结合 $(d, q)=1$, 得 $q^{j-i} \\equiv 1(\\bmod d)$, 进而, 对任意 $n \\in \\mathbf{N}^*$, 令 $m=(j-i) n$, 就有 $q^m=\\left(q^{j-i}\\right)^n \\equiv 1^n= 1(\\bmod d)$.\n所以,命题成立.\n说明熟悉 Euler 定理的同学还可利用当 $(d, q)=1$ 时, $q^{\\varphi(d)} \\equiv 1(\\bmod d)$ 来构造符合要求的 $m$.",
+    "remark": "",
+    "figures": []
+}

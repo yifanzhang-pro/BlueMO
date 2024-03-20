@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 若凸多面体有 6 个顶点和 12 条棱,证明: 它的每一个面都是三角形.",
+    "solution": "设凸多面体有 $F$ 个面, 又已知它的顶点数为 $V=6$, 棱数为 $E=12$, 代入 Euler 公式 $V+F-E=2$, 得 $F=E+2-V=12+2-6=8$. 设第 $i$ 个面上有 $x_i$ 条棱 $(i=1,2, \\cdots, 8)$, 于是 $x_i \\geqslant 3$ 且 $x_1+x_2+\\cdots+x_8= 2 E=24$, 平均值 $\\frac{1}{8} \\sum_{i=1}^8 x_i=3$. 若有某个 $x_{i_0}>3$, 则 $\\frac{1}{8} \\sum_{i=1}^8 x_i>3$, 矛盾.\n所以 $x_1=x_2=\\cdots=x_8=3$, 即每个面均为三角形.",
+    "remark": "",
+    "figures": []
+}

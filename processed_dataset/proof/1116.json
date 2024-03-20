@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设正实数 $a 、 b 、 c$ 满足 $a+b+c=3$. 证明:\n$$\n\\frac{1}{2+a^2+b^2}+\\frac{1}{2+b^2+c^2}+\\frac{1}{2+c^2+a^2} \\leqslant \\frac{3}{4} .\n$$",
+    "solution": "证明:用符号 $\\sum$ 表示循环和, 即证明:\n$$\n\\sum \\frac{1}{2+a^2+b^2} \\leqslant \\frac{3}{4} . \\label{eq1}\n$$\n由柯西不等式得\n$$\n\\left(\\sum \\frac{a^2+b^2}{2+a^2+b^2}\\right) \\sum\\left(2+a^2+b^2\\right) \\geqslant\\left(\\sum \\sqrt{a^2+b^2}\\right)^2 .\n$$\n又 $\\quad\\left(\\sum \\sqrt{a^2+b^2}\\right)^2=2 \\sum a^2+2 \\sum \\sqrt{\\left(a^2+b^2\\right)\\left(a^2+c^2\\right)}$,\n及\n$$\n\\sqrt{\\left(a^2+b^2\\right)\\left(a^2+c^2\\right)} \\geqslant a^2+b c,\n$$\n则\n$$\n\\begin{aligned}\n& \\left(\\sum \\sqrt{a^2+b^2}\\right)^2 \\\\\n\\geqslant & 2 \\sum a^2+2 \\sum a^2+2 \\sum a b \\\\\n= & 3 \\sum a^2+(a+b+c)^2=9+3 \\sum a^2 \\\\\n= & \\frac{3}{2}\\left(6+2 \\sum a^2\\right)=\\frac{3}{2} \\sum\\left(2+a^2+b^2\\right) .\n\\end{aligned}\n$$\n故 $\\left(\\sum \\frac{a^2+b^2}{2+a^2+b^2}\\right) \\sum\\left(2+a^2+b^2\\right) \\geqslant \\frac{3}{2} \\sum\\left(2+a^2+b^2\\right)$.\n所以,\n$$\n\\sum \\frac{a^2+b^2}{2+a^2+b^2} \\geqslant \\frac{3}{2} . \\label{eq2}\n$$\n式\\ref{eq2}两边乘以 -1 , 再加 3 , 再除以 2 即得式 \\ref{eq1}.",
+    "remark": "",
+    "figures": []
+}

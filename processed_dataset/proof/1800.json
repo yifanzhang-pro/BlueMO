@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 如图(<FilePath:./images/volume7/figures/fig-c11p3.png>),在 $\\square A B C D$ 两边 $B C 、 C D$ 向外分别作正方形 $B C N M 、 C D P Q$. 求证: $A C \\perp Q N$.",
+    "solution": "证明: $\\overrightarrow{A C} \\cdot \\overrightarrow{Q N}=(\\overrightarrow{A B}+\\overrightarrow{B C}) \\cdot(\\overrightarrow{Q C}+\\overrightarrow{C N})$\n$$\n=\\overrightarrow{A B} \\cdot \\overrightarrow{Q C}+\\overrightarrow{A B} \\cdot \\overrightarrow{C N}+\\overrightarrow{B C} \\cdot \\overrightarrow{Q C}+\\overrightarrow{B C} \\cdot \\overrightarrow{C N}\n$$\n$$\n\\begin{aligned}\n& =\\overrightarrow{A B} \\cdot \\overrightarrow{C N}+\\overrightarrow{B C} \\cdot \\overrightarrow{Q C} \\text { (因为 } \\overrightarrow{A B} \\perp \\overrightarrow{Q C}, \\overrightarrow{B C} \\perp \\overrightarrow{C N} \\text { ) } \\\\\n& =\\overrightarrow{C B} \\cdot \\overrightarrow{C Q}-\\overrightarrow{C D} \\cdot \\overrightarrow{C N} \\\\\n& =|\\overrightarrow{C B}| \\cdot|\\overrightarrow{C Q}| \\cdot \\cos \\angle B C Q-|\\overrightarrow{C D}| \\cdot|\\overrightarrow{C N}| \\cdot \\\\\n& =\\cos \\angle D C N .\n\\end{aligned}\n$$\n因为 $|\\overrightarrow{C B}|=|\\overrightarrow{C N}|,|\\overrightarrow{C Q}|=|\\overrightarrow{C D}|, \\angle B C Q=\\angle D C N$, 所以 $\\overrightarrow{A C}$. $\\overrightarrow{Q N}=0 \\Rightarrow \\overrightarrow{A C} \\perp \\overrightarrow{Q N}$, 即 $A C \\perp Q N$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c11p3.png"
+    ]
+}

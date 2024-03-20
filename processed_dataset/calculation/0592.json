@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题5 已知实数 $x 、 y$ 满足 $1 \\leqslant x^2+y^2 \\leqslant 4$, 求 $u=x^2+x y+y^2$ 的最大值和最小值.",
+    "solution": "利用不等式 $-\\frac{x^2+y^2}{2} \\leqslant x y \\leqslant \\frac{x^2+y^2}{2}$, 可得 $u=x^2+y^2+x y \\leqslant x^2+y^2+\\frac{x^2+y^2}{2}=\\frac{3}{2}\\left(x^2+y^2\\right) \\leqslant \\frac{3}{2} \\times 4=6$, 当 $x=y=\\sqrt{2}$ 时等号成立; $u=x^2+y^2+x y \\geqslant x^2+y^2-\\frac{x^2+y^2}{2}=\\frac{1}{2}\\left(x^2+y^2\\right) \\geqslant \\frac{1}{2} \\times 1=\\frac{1}{2}$, 当 $x= \\frac{\\sqrt{2}}{2}, y=-\\frac{\\sqrt{2}}{2}$ 时等号成立.\n所以, $u$ 的最大值为 6 , 最小值为 $\\frac{1}{2}$.",
+    "remark": "",
+    "figures": []
+}

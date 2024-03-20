@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题28. 已知 $\\cos \\alpha=\\tan \\beta, \\cos \\beta=\\tan \\gamma, \\cos \\gamma=\\tan \\alpha$, 则\n$$\n\\sin ^2 \\alpha=\\sin ^2 \\beta=\\sin ^2 \\gamma=\\cos ^4 \\alpha=\\cos ^4 \\beta=\\cos ^4 \\gamma=4 \\sin ^2 18^{\\circ} .\n$$",
+    "solution": "令 $x=\\cos \\alpha, y=\\cos \\beta, z=\\cos \\gamma$, 则 $x^2 y^2=\\tan ^2 \\beta \\cdot \\cos ^2 \\beta=\\sin ^2 \\beta= 1-y^2 \\cdots$ (1). $y^2 z^2=\\tan ^2 \\gamma \\cdot \\cos ^2 \\gamma=\\sin ^2 \\gamma=1-z^2 \\cdots$ (2). $z^2 x^2=\\tan ^2 \\alpha$. $\\cos ^2 \\alpha=\\sin ^2 \\alpha=1-x^2 \\cdots$ (3). 解之得, $x^2=y^2=z^2=\\frac{\\sqrt{5}-1}{2}=2 \\cdot \\sin 18^{\\circ}$. 所以 $\\cos ^4 \\alpha=\\cos ^4 \\beta=\\cos ^4 \\gamma=4 \\sin ^2 18^{\\circ}$, 又 $\\tan \\alpha=\\cos \\gamma$, 所以 $\\tan ^2 \\alpha=\\cos ^2 \\gamma= \\cos ^2 \\alpha$, 则 $\\sin ^2 \\alpha=\\cos ^4 \\alpha$, 同理, 可得 $\\sin ^2 \\alpha=\\sin ^2 \\beta=\\sin ^2 \\gamma=\\cos ^4 \\alpha=\\cos ^4 \\beta= \\cos ^4 \\gamma=4 \\sin ^2 18^{\\circ}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题30. 设 $x, y, z \\geqslant 0$, 且满足 $y z+z x+x y=1$, 求证:\n$$\nx\\left(1-y^2\\right)\\left(1-z^2\\right)+y\\left(1-z^2\\right)\\left(1-x^2\\right)+z\\left(1-x^2\\right)\\left(1-y^2\\right) \\leqslant \\frac{4}{9} \\sqrt{3} .\n$$",
+    "solution": "令 $x=\\tan \\frac{A}{2}, y=\\tan \\frac{B}{2}, z=\\tan \\frac{C}{2}$. 这里 $A, B, C \\in[0, \\pi)$. 由于 $\\tan \\left(\\frac{A}{2}+\\frac{B}{2}+\\frac{C}{2}\\right)=\\frac{\\tan \\frac{A}{2}+\\tan \\frac{B}{2}+\\tan \\frac{C}{2}-\\tan \\frac{A}{2} \\tan \\frac{B}{2} \\tan \\frac{C}{2}}{1-\\tan \\frac{A}{2} \\tan \\frac{B}{2}-\\tan \\frac{A}{2} \\tan \\frac{C}{2}-\\tan \\frac{B}{2} \\tan \\frac{C}{2}}$, 所以 $\\cot \\left(\\frac{A}{2}+\\frac{B}{2}+\\frac{C}{2}\\right)=\\frac{1-(x y+y z+z x)}{x+y+z-x y z}$. 由已知条件知 $y 、 z$ 不全为 0 且 $0 \\leqslant y z \\leqslant 1$, 从而 $x+y+z>x \\geqslant x y z \\geqslant 0$, 于是 $\\cot \\left(\\frac{A}{2}+\\frac{B}{2}+\\frac{C}{2}\\right)=0$. 所以 $0<\\frac{1}{2}(A+B+C)<\\frac{3 \\pi}{2}$, 得 $\\frac{1}{2}(A+B+C)=\\frac{\\pi}{2}$, 即 $A+B+C=\\pi$. 又 $x\\left(1-y^2\\right)\\left(1-z^2\\right)+y\\left(1-z^2\\right)\\left(1-x^2\\right)+z\\left(1-x^2\\right)\\left(1-y^2\\right)= =4 x y z$, 由平均值不等式, 得 $(x y z)^2 \\leqslant\\left(\\frac{x y+y z+z x}{3}\\right)^3=\\frac{1}{27}$, 从而 $x y z \\leqslant \\frac{1}{9} \\sqrt{3}$.",
+    "remark": "",
+    "figures": []
+}

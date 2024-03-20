@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题13 设 $S$ 为 $n$ 个正实数组成的集合, 对 $S$ 的每个非空子集 $A$, 令 $f(A)$ 为 $A$ 中所有元素的和.\n求证: 集合 $\\{f(A) \\mid A \\subseteq S, A \\neq \\varnothing\\}$ 可以分拆为 $n$ 个互不相交的子集, 每个子集中最大数与最小数之比小于 2 .",
+    "solution": "设 $S=\\left\\{u_1, u_2, \\cdots, u_n\\right\\}$, 且 $u_1<u_2<\\cdots<u_n . u_i>0(i=1, \\cdots$, $n)$. 令 $S_1=\\left\\{f(A) \\mid A=\\left\\{u_1\\right\\}\\right\\} . S_k=\\left\\{f(A) \\mid u_1+u_2+\\cdots+u_{k-1}<f(A) \\leqslant u_1+u_2+\\cdots+u_k\\right\\}, k=2,3, \\cdots, n$. 则 $S_1, S_2, \\cdots, S_n$ 是符合要求的分拆.\n事实上, 在 $S_1$ 中最大数与最小数都等于 $u_1$, 结论显然.\n当 $k \\geqslant 2$ 时, 若$u_{k}\\leq u_{1}+u_{2}+\\cdots+u_{k-1}$ ,则在 ${S_{k}}$ 中 $\\frac{最大数}{最小数}<{\\frac{u_{1}+\\cdots+u_{k-1}+u_{k}}{u_{1}+\\cdots+u_{k-1}}}<2;$ 若 $u_{k}\\ >u_{1}+u_{2}+\\cdots+u_{k-1}$ 则$\\frac{最大数}{最小数}={\\frac{u_{1}+u_{2}+\\cdots+u_{k-1}+u_{k}}{u_{k}}}<2$ .",
+    "remark": "",
+    "figures": []
+}

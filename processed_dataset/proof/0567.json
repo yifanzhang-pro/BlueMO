@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例4. 已知在一次数学竞赛中, 竞赛题的数目为 $n(n \\geqslant 4)$, 每道题恰有 4 个人解出, 对于任意两道题, 都恰有一人同时解出这两道题.\n若参赛人数不少于 $4 n$, 求 $n$ 的最小值, 使得总存在一个人解出全部竞赛题.",
+    "solution": "分析:解首先, 当 $4 \\leqslant n \\leqslant 13$ 时, 都可以构造反例.\n事实上, 因为参赛人数 $\\geqslant 4 n \\geqslant 16$, 考虑以下 13 个集合: $M_1=\\{1,2,3,4\\} 、 M_2=\\{1,5,6,7\\}$ 、 $M_3=\\{1,8,9,10\\} 、 M_4=\\{1,11,12,13\\} 、 M_5=\\{2,5,8,11\\} 、 M_6=\\{2$, $6,9,12\\}, M_7=\\{2,7,10,13\\}, M_8=\\{3,5,9,13\\}, M_9=\\{3,6,10$, 11\\}、 $M_{10}=\\{3,7,8,12\\} 、 M_{11}=\\{4,5,10,12\\} 、 M_{12}=\\{4,7,9,11\\}$ 、 $M_{13}=\\{4,6,8,13\\}$. 对 $4 \\leqslant n \\leqslant 13$, 取其中 $n$ 个集合 $M_i(1 \\leqslant i \\leqslant n)$, 容易验证 $\\left|M_i\\right|=4$, 且 $\\left|M_i \\cap M_j\\right|=1$, 但 $M_1, \\cdots, M_n$ 无公共元, 不合题意.\n由此猜想 $n_{\\min }=14$.\n下面只需证明: $n=14$ 满足要求.\n事实上,设做出第 $i$ 道题的人的编号的集合为 $M_i$, 则对任意 $1 \\leqslant i \\leqslant 14$ 都有 $\\left|M_i\\right|=4$, 且 $\\left|M_i \\cap M_j\\right|=1$. 设 $M_1=\\{a, b, c, d\\}$, 由于剩下的 13 个集合中每一个至少含 $a 、 b 、 c 、 d$ 中的一个元素, 故至少有一个, 比如 $a$, 在这 13 个集合中出现至少 4 次.\n不妨设 $M_2$ 、 $M_3 、 M_4 、 M_5$ 都含有 $a$, 我们证明一切 $M_i$ 都含有 $a$.\n用反证法.\n假定存在 $t(6 \\leqslant t \\leqslant 14)$, 使 $M_t$ 不含 $a$, 但 $M_t$ 与 $M_1 、 M_2 、 M_3$ 、 $M_4 、 M_5$ 各有一个公共元, 设 $M_t$ 与 $M_k(1 \\leqslant k \\leqslant 5)$ 的公共元为 $a_k(1 \\leqslant k \\leqslant 5)$, 则 $a_k \\neq a$. 如果存在 $i 、 j(1 \\leqslant i<j \\leqslant 5)$, 使 $a_i=a_j$, 则 $a 、 a_i$ 都属于\n$M_i \\cap M_j$,与 $\\left|M_i \\cap M_j\\right|=1$ 矛盾.\n于是 $a_1 、 a_2 、 a_3 、 a_4 、 a_5$ 互不相同,但它们都属于 $M_t$, 故 $\\left|M_t\\right| \\geqslant 5$, 矛盾.\n故一切 $M_t$ 都含有 $a$, 从而第 $a$ 个人做出所有题, 结论成立.\n故 $n_{\\min }=14$.",
+    "remark": "",
+    "figures": []
+}

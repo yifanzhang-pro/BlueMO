@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例2. 如图(<FilePath:./images/volume7/figures/fig-c4i3.png>), $\\triangle A B C$ 的内切圆 $I$ 切 $B C 、 C A$ 于 $D 、 E, K 、 L$ 为 $A B 、 A C$ 的中点, 则 $D E$ 与 $K L$ 的交点 $T$ 在 $B I$ 的延长线上.",
+    "solution": "证明:设直线 $B I$ 分别交 $E D 、 K L$ 于 $T^{\\prime \\prime} 、 T^{\\prime}$, 连结 $T^{\\prime} B 、 T^{\\prime \\prime} B 、 A T^{\\prime} 、 A I 、 I D 、 E T^{\\prime}$.\n易知 $\\angle K B T^{\\prime}=\\angle K T^{\\prime} B$.\n所以 $B K=K T^{\\prime}=A K$, 从而 $\\angle A T^{\\prime} B=90^{\\circ}$.\n又 $\\angle A E I=90^{\\circ}$, 故 $A 、 E 、 T^{\\prime} 、 I$ 四点共圆.\n又 $\\angle C E T^{\\prime}=\\frac{\\pi-\\angle A C B}{2}=\\angle A B C+\\angle B A C=\\angle A I T^{\\prime \\prime}$,\n故 $A 、 E 、 T^{\\prime \\prime} 、 I$ 四点共圆.\n又 $T^{\\prime} 、 T^{\\prime \\prime}$ 都在直线 $B I$ 上, 所以 $\\triangle A E I$ 的外接圆与直线 $B I$ 的交点为 $I$ 、 $T^{\\prime} 、 T^{\\prime \\prime}$, 故 $T^{\\prime}$ 与 $T^{\\prime \\prime}$ 重合, 即 $T$ 在直线 $B I$ 上.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4i3.png"
+    ]
+}

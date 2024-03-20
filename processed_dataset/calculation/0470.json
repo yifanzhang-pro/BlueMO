@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 设 $s=\\left(x_1, x_2, \\cdots, x_n\\right)$ 是前 $n(n \\geqslant 2)$ 个正整数 $1,2, \\cdots, n$ 依任意次序的排列, $f(s)$ 为 $s$ 中每两个相邻元素的差的绝对值的最小值.\n求 $f(s)$ 的最大值.",
+    "solution": "分两类情况讨论:\n(1) 若 $n$ 为奇数,则 $n \\geqslant 3$, 设 $n=2 k+1\\left(k \\in \\mathbf{N}^*\\right)$. 因为在排列 $s$ 中至少有一个数与 $k+1$ 相邻, 它与 $k+1$ 的差的绝对值不大于 $k$, 故 $f(s) \\leqslant k$; 另一方面, 对排列 $(k+1,1, k+2,2, \\cdots, 2 k, k, 2 k+1)$ 而言, $f(s)=k=\\frac{n-1}{2}$.\n(2) 若 $n$ 为偶数, 设 $n=2 k\\left(k \\in \\mathbf{N}^*\\right)$, 同理可知, 数 $k+1$ 与其相邻数之差的绝对值不大于 $k$, 故 $f(s) \\leqslant k$; 另一方面, 对排列 $(k+1,1, k+2,2, \\cdots$, $2 k, k)$ 而言, $f(s)=k=\\frac{n}{2}$.\n综上所述, $f(s)$ 的最大值为 $\\left[\\frac{n}{2}\\right]$.",
+    "remark": "",
+    "figures": []
+}

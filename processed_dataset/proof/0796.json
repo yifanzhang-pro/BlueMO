@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 已知点 $E, F, G, H$ 分别在单位正方形 $A B C D$ 的四条边上, 求证: 在四边形 $E F G H$ 中至少有一条边的长度不小于 $\\frac{\\sqrt{2}}{2}$.",
+    "solution": "假设四边形 $E F G H$ 每条边的长度都小于 $\\frac{\\sqrt{2}}{2}$, 则\n$$\nE F^2+F G^2<\\left(\\frac{\\sqrt{2}}{2}\\right)^2+\\left(\\frac{\\sqrt{2}}{2}\\right)^2=1 .\n$$\n又四边形 $E F G H$ 的四个内角中, 至少有一个内角不大于 $90^{\\circ}$ (否则, 四边形内角和将大于 $360^{\\circ}$ ), 因此, 不妨设 $\\angle E F G \\leqslant 90^{\\circ}$, 则 $E G^2 \\leqslant E F^2+E G^2$, 所以 $E G^2<1, E G<1$. 但在正方形 $A B C D$ 中, $A B / / C D$, 且 $A B$ 与 $C D$ 间距离为 1 , 所以 $E G \\geqslant 1$, 与 $E G<1$ 矛盾.",
+    "remark": "",
+    "figures": []
+}

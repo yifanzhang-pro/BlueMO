@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例1. (Erdös-Mordell 不等式) 设 $P$ 为 $\\triangle A B C$ 内任意一点, $P$ 到三边 $B C 、 C A 、 A B$ 的距离分别为 $P D=p 、 P E=q 、 P F=r$, 并记 $P A=x$, $P B=y, P C=z$, 则\n$$\nx+y+z \\geqslant 2(p+q+r),\n$$\n等号成立当且仅当 $\\triangle A B C$ 为正三角形并且 $P$ 为此三角形的中心.",
+    "solution": "证明 5 如图(<FilePath:./images/volume9/figures/fig-c5i5.png>), 过 $D 、 E$ 作 $D T_1 \\perp F P$ 于 $T_1, E T_2 \\perp F P$ 于 $T_2$. 由\n$$\nD E \\geqslant D T_1+E T_2, D T_1=p \\sin B, E T_2=q \\sin A,\n$$\n可得\n$$\n\\begin{aligned}\nz & =\\frac{D E}{\\sin C} \\geqslant \\frac{p \\sin B+q \\sin A}{\\sin C} \\\\\n& =p \\frac{\\sin B}{\\sin C}+q \\frac{\\sin A}{\\sin C},\n\\end{aligned}\n$$\n所以\n$$\n\\begin{aligned}\n& x+y+z \\\\\n= & P A+P B+P C \\\\\n\\geqslant & \\left(p \\frac{\\sin B}{\\sin C}+q \\frac{\\sin A}{\\sin C}\\right)+\\left(q \\frac{\\sin C}{\\sin A}+r \\frac{\\sin B}{\\sin A}\\right)+\\left(r \\frac{\\sin A}{\\sin B}+p \\frac{\\sin C}{\\sin B}\\right) \\\\\n= & p\\left(\\frac{\\sin B}{\\sin C}+\\frac{\\sin C}{\\sin B}\\right)+q\\left(\\frac{\\sin A}{\\sin C}+\\frac{\\sin C}{\\sin A}\\right)+r\\left(\\frac{\\sin B}{\\sin A}+\\frac{\\sin A}{\\sin B}\\right) \\\\\n\\geqslant & 2(p+q+r) .\n\\end{aligned}\n$$\n证完.",
+    "remark": "注:关于 Erdös-Mordell 不等式研究已有众多成果, 其中平面上的推广较为简单, 很早由 N. Ozeki 和 H. Vigler 完成, 后又被其他人多次重新发现.\nErdös-Mordell 不等式在空间,特别是 $n$ 维空间的推广是一个困难的问题,据我所知至今还未得到理想的结果.",
+    "figures": [
+        "./images/volume9/figures/fig-c5i5.png"
+    ]
+}

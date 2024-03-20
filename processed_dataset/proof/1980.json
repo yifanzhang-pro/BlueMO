@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 求证: $\\sin (4 \\arcsin x)=4 x \\cdot \\sqrt{1-x^2} \\cdot\\left(1-2 x^2\\right) .(|x| \\leqslant 1)$",
+    "solution": "因为\n$$\n(\\cos \\alpha+i \\sin \\alpha)^4=1 \\cdot(\\cos 4 \\alpha+i \\sin 4 \\alpha)=\\cos 4 \\alpha+i \\sin 4 \\alpha,\n$$\n又因为\n$$\n\\begin{aligned}\n(\\cos \\alpha+\\mathrm{i} \\sin \\alpha)^4 & =\\left[(\\cos \\alpha+\\mathrm{i} \\sin \\alpha)^2\\right]^2=\\left[\\left(\\cos ^2 \\alpha-\\sin ^2 \\alpha\\right)+2 \\sin \\alpha \\cos \\alpha \\cdot \\mathrm{i}\\right]^2 \\\\\n& =\\left(\\cos ^4 \\alpha-6 \\sin ^2 \\alpha \\cos ^2 \\alpha+\\sin ^4 \\alpha\\right)+4 \\sin \\alpha \\cos \\alpha\\left(\\cos ^2 \\alpha-\\sin ^2 \\alpha\\right) \\mathrm{i},\n\\end{aligned}\n$$\n所以\n$$\n\\cos 4 \\alpha+\\operatorname{isin} 4 \\alpha=\\left(\\cos ^4 \\alpha-6 \\sin ^2 \\alpha \\cos ^2 \\alpha+\\sin ^4 \\alpha\\right)+4 \\sin \\alpha \\cdot \\cos \\alpha\\left(\\cos ^2 \\alpha-\\sin ^2 \\alpha\\right) \\text {. }\n$$\n根据复数相等的定义得\n$$\n\\sin 4 \\alpha=4 \\sin \\alpha \\cos \\alpha\\left(\\cos ^2 \\alpha-\\sin ^2 \\alpha\\right) .\n$$\n将 $\\alpha=\\arcsin x$ 代入上式则有\n$$\n\\begin{aligned}\n\\sin (4 \\arcsin x) & =4 \\sin (\\arcsin x) \\cdot \\cos (\\arcsin x) \\cdot\\left[\\cos ^2(\\arcsin x)-\\sin ^2(\\arcsin x)\\right] \\\\\n& =4 x \\cdot \\sqrt{1-x^2} \\cdot\\left[\\left(\\sqrt{1-x^2}\\right)^2-x^2\\right] \\\\\n& =4 x \\cdot \\sqrt{1-x^2} \\cdot\\left(1-2 x^2\\right) .\n\\end{aligned}\n$$\n即 $\\sin (4 \\arcsin x)=4 x \\cdot \\sqrt{1-x^2} \\cdot\\left(1-2 x^2\\right)$, 证毕.",
+    "remark": "",
+    "figures": []
+}

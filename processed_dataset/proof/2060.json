@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $P$ 为 $\\triangle A B C$ 内部或边上任一点, 记 $P A=x, P B=y, P C=z$,\n求证\n$$\nx^2+y^2+z^2 \\geqslant \\frac{1}{3}\\left(a^2+b^2+c^2\\right) .\n$$",
+    "solution": "证明:如图(<FilePath:./images/volume9/figures/fig-c8i1.png>), 分别过 $A 、 B 、 C$ 作 $P A 、 P B$ 、 $P C$ 的垂线, 三垂线两两相交于 $A^{\\prime} 、 B^{\\prime} 、 C^{\\prime}$, 于是 $\\angle B P C=\\pi-A^{\\prime}, \\angle A P B=\\pi-C^{\\prime}, \\angle A P C=\\pi- B^{\\prime}$. 由余弦定理可得\n$$\n\\begin{aligned}\n& a^2=y^2+z^2+2 y z \\cos A^{\\prime}, \\\\\n& b^2=x^2+z^2+2 x z \\cos B^{\\prime}, \\\\\n& c^2=x^2+y^2+2 x y \\cos C^{\\prime},\n\\end{aligned}\n$$\n相加并应用嵌入不等式便得\n$$\n\\begin{aligned}\na^2+b^2+c^2 & =2\\left(x^2+y^2+z^2\\right)+2 x y \\cos C^{\\prime}+2 x z \\cos B^{\\prime}+2 y z \\cos A^{\\prime} \\\\\n& \\leqslant 2\\left(x^2+y^2+z^2\\right)+\\left(x^2+y^2+z^2\\right) \\\\\n& =3\\left(x^2+y^2+z^2\\right),\n\\end{aligned}\n$$\n得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c8i1.png"
+    ]
+}

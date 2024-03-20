@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题15. 在一个圆中, 两条弦 $A B 、 C D$ 相交于 $E$ 点, $M$ 为弦 $A B$ 上严格在 $E 、 B$ 之间的点, 过 $D 、 E 、 M$ 的圆在 $E$ 点的切线分别交 $B C 、 A C$ 于 $F 、 G$. 已知 $\\frac{A M}{A B}=t$, 求 $\\frac{G E}{E F}$ (用 $t$ 表示).",
+    "solution": "解: 如图(<FilePath:./images/volume7/figures/fig-c1a15.png>), 连结 $A D, D M, D B$. 由题设, 有 $\\angle C E F=\\angle D E G=\\angle E M D, \\angle E C F=\\angle M A D$, 于是 $\\triangle C E F \\backsim \\triangle A M D$.\n从而 $C E \\cdot M D=A M \\cdot E F \\cdots$ (1).\n另一方面, 又有 $\\angle E C G=\\angle M B D$, 于是 $\\angle C G E=\\angle C E F-\\angle E C G=\\angle E M D-\\angle M B D= \\angle B D M$, 故 $\\triangle C G E \\backsim \\triangle B D M$,\n从而 $G E \\cdot B M=C E \\cdot D M \\cdots$ (2).\n由 (1), (2)得 $G E \\cdot B M=A M \\cdot E F$, 故\n$$\n\\frac{G E}{E F}=\\frac{A M}{B M}=\\frac{t \\cdot A B}{(1-t) \\cdot A B}=\\frac{t}{1-t} .\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1a15.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例11. 设 $k 、 l$ 是两个给定的正整数.\n证明, 有无穷多个正整数 $m$, 使得 $\\mathrm{C}_m^k$ 与 $l$ 互素.",
+    "solution": "证法一我们需证明, 有无穷多个 $m$, 使得对于 $l$ 的任一个素因子 $p$, 有 $p \\nmid \\mathrm{C}_m^k$. 注意\n$$\nk ! \\mathrm{C}_m^k=m(m-1) \\cdots(m-(k-1)) . \\label{eq1}\n$$\n对于任意一个素数 $p \\mid l$, 设 $p^\\alpha \\| k$ !, 即 $p^\\alpha \\mid k$ !, 但 $p^{\\alpha+1} \\nmid k$ !, 这里 $\\alpha \\geqslant 0$. 我们取 (无穷多个) $m$, 使得(1)的右边 $\\neq \\equiv 0\\left(\\bmod p^{\\alpha+1}\\right)$. 这样的 $m$ 可以取为\n$$\nm \\equiv k\\left(\\bmod p^{\\alpha+1}\\right) . \\label{eq2}\n$$\n对满足式\\ref{eq2}的 $m$, 式\\ref{eq1} 的右边 (在模 $p^{\\alpha+1}$ 意义下) 被简化为: $\\equiv k(k-1) \\cdots 1=k$ ! $\\left(\\bmod p^{\\alpha+1}\\right)$, 即有\n$$\nk ! \\mathrm{C}_m^k \\equiv k !\\left(\\bmod p^{\\alpha+1}\\right) . \\label{eq3}\n$$\n因 $p^{\\alpha+1} \\nmid k !$, 故由上式知 $p \\nmid \\mathrm{C}_m^k$.\n现在设 $p_1, \\cdots, p_t$ 是 $l$ 的全部的不同素因子, 并设 $p_i^{a i} \\| k !$, 由上面的结果知, 若 $m \\equiv k\\left(\\bmod p_i^{\\alpha_i+1}\\right)(i=1, \\cdots, t)$, 即\n$$\nm \\equiv k\\left(\\bmod p_1^{\\alpha_1+1} \\cdots p_t^{\\alpha_t+1}\\right),\n$$\n则 $\\mathrm{C}_m^k$ 与 $p_1, \\cdots, p_t$ 均互素, 从而与 $l$ 互素.\n满足式\\ref{eq3}的正整数 $m$ 当然有无穷多个.\n证毕.\n注意, 由 $p_i$ 及 $p_i^{\\alpha_i}$ 的定义可见, $p_1^{\\alpha_1+1} \\cdots p_t^{\\alpha_t+1} \\mid l \\cdot k$ !, 因此, 若 $m$ 满足 $m \\equiv k(\\bmod l \\cdot k !)$, 则更满足式\\ref{eq3}, 故也可取 $m$ 为显式依赖于给定整数 $k, l$ 的正整数: $m \\equiv k(\\bmod l \\cdot k !)$.",
+    "remark": "",
+    "figures": []
+}

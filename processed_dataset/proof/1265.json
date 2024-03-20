@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例13. 设 $a, b, c \\in \\mathbf{R}^{+}$, 求证:\n$$\na+b+c-3 \\sqrt[3]{a b c} \\geqslant a+b-2 \\sqrt{a b} .\n$$",
+    "solution": "证明:注意到\n$$\na+b+c-3 \\sqrt[3]{a b c} \\geqslant a+b-2 \\sqrt{a b}\n$$\n$\\Leftrightarrow \\quad c+2 \\sqrt{a b} \\geqslant 3 \\sqrt[3]{a b c}$.\n因为\n$$\n\\begin{aligned}\nc+2 \\sqrt{a} \\bar{b} & =c+\\sqrt{a b}+\\sqrt{a b} \\\\\n& \\geqslant 3 \\sqrt[3]{c \\sqrt{a b} \\sqrt{a b}} \\\\\n& =3 \\sqrt[3]{a b c},\n\\end{aligned}\n$$\n从而\n$$\na+b+c-3 \\sqrt[3]{a b c} \\geqslant a+b-2 \\sqrt{a b} .\n$$\n说明在不等式的证明中, 分析法和综合法有时需交替使用.\n本题在用分析法得到 $c+2 \\sqrt{a b} \\geqslant 3 \\sqrt[3]{a b c}$, 再用分析法继续证明下去的话, 会使问题变得复杂, 此时结合综合法便使问题迎刃而解了.",
+    "remark": "",
+    "figures": []
+}

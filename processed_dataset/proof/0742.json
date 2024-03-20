@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例4. 已知圆内接六边形 $A B C D E F$ 中, $A B \\cdot C D \\cdot E F=B C \\cdot D E \\cdot F A$, 证明 $A D, B E, C F$ 三线共点.",
+    "solution": "证明: 如图(<FilePath:./images/volume14/figures/fig-c8i4.png>), 连接 $A C, C E, E A$. 记 $A C$ 交 $B E$ 于点 $P, C E$ 交 $A D$ 于点 $Q, E A$ 交 $C E$ 于点 $R$.\n在圆内接四边形 $A B C E$ 中, $\\angle B A E$ 与 $\\angle B C E$ 互补, 故 $\\sin \\angle B A E=\\sin \\angle B C E$. 从而由共边定理和三角形面积公式可得:\n$$\n\\frac{A P}{P C}=\\frac{S_{\\triangle B A E}}{S_{\\triangle B C E}}=\\frac{A B \\cdot A E}{B C \\cdot C E} .\n$$\n同理可得\n$$\n\\begin{aligned}\n& \\frac{C Q}{Q E}=\\frac{S_{\\triangle C A D}}{S_{\\triangle E A D}}=\\frac{A C \\cdot C D}{A E \\cdot D E}, \\\\\n& \\frac{E R}{R A}=\\frac{S_{\\triangle E C F}}{S_{\\triangle A C F}}=\\frac{C E \\cdot E F}{A C \\cdot A F} .\n\\end{aligned}\n$$\n以上三式相乘可得\n$$\n\\begin{aligned}\n\\frac{A P}{P C} \\cdot \\frac{C Q}{Q E} \\cdot \\frac{E R}{R A} & =\\frac{A B \\cdot A E}{B C} \\cdot \\frac{A C \\cdot C E}{A E \\cdot D E} \\cdot \\frac{C E \\cdot E F}{A C \\cdot A F} \\\\\n& =\\frac{A B \\cdot C D \\cdot E F}{B C \\cdot D E \\cdot F A}=1,\n\\end{aligned}\n$$\n又 $A D, B E, C F$ 不平行,故由 Ceva 定理的逆定理可得 $A D, B E, C F$ 三线共点.",
+    "remark": "注:本题通过两种不同的方式表示 $\\frac{S_{\\triangle B A E}}{S_{\\triangle B C E}}$ 等三个面积比例式, 建立了线段的比例关系,最后用 Ceva 定理的逆定理证明三线共点.\nCeva 定理有几种等价形式,使用时可选择适合的角度,例如本题用角元形式的 Ceva 定理书写会更为简洁, 但其本质是一样的.",
+    "figures": [
+        "./images/volume14/figures/fig-c8i4.png"
+    ]
+}

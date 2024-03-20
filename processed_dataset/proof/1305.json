@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例9. 设 $x, y, z \\in \\mathbf{R}^{+}$, 求证:\n$$\n\\frac{y^2-x^2}{z+x}+\\frac{z^2-y^2}{x+y}+\\frac{x^2-z^2}{y+z} \\geqslant 0 \\text {. (W. Janous 不等式) }\n$$",
+    "solution": "分析:左端式子分母是变量和的形式, 难以直接处理, 故先将它们代换掉,简化分母.\n证明令 $x+y=c, y+z=a, z+x=b$, 原不等式等价于\n$$\n\\frac{c(a-b)}{b}+\\frac{a(b-c)}{c}+\\frac{b(c-a)}{a} \\geqslant 0,\n$$\n即\n$$\n\\frac{a c^2(a-b)+a^2 b(b-c)+b^2 c(c-a)}{a b c} \\geqslant 0 .\n$$\n故只须证明\n$$\na^2 c^2+a^2 b^2+b^2 c^2-a b c^2-a^2 b c-a b^2 c \\geqslant 0 .\n$$\n这是很显然的.",
+    "remark": "",
+    "figures": []
+}

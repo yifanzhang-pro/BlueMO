@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter19.tex",
+    "problem_type": "calculation",
+    "problem": "例6. 设二次三项式 $f(x)$ 可以用 $x^2 f\\left(\\frac{1}{x}+1\\right)$ 或者 $(x-1)^2 f\\left(\\frac{1}{x-1}\\right)$ 来代换.\n问: 能否利用上述的代换, 把设二次三项式 $x^2+4 x+3$ 变为 $x^2+ 10 x+9$ ?",
+    "solution": "解:案是否定的.\n设 $f(x)=a x^2+b x+c$, 其判别式 $\\Delta=b^2-4 a c$.\n对于第一种代换: $x^2 f\\left(\\frac{1}{x}+1\\right)=(a+b+c) x^2+(b+2 a) x+a$, 其判别式\n$$\n\\Delta_1=(b+2 a)^2-4(a+b+c) a=b^2-4 a c ;\n$$\n对于第二种代换: $(x-1)^2 f\\left(\\frac{1}{x-1}\\right)=c x^2+(b-2 c) x+(a-b+c)$, 其判别式\n$$\n\\Delta_2=(b-2 c)^2-4 c(a-b+c)=b^2-4 a c,\n$$\n从而, 这两个代换不改变二次三项式的判别式 (即判别式是不变量!).\n因为 $x^2+4 x+3$ 的判别式为 $4^2-4 \\times 3=4$, 而 $x^2+10 x+9$ 的判别式为 $10^2-4 \\times 9=64$, 故通过上述的代换, 不能把二次三项式 $x^2+4 x+3$ 变为 $x^2+10 x+9$.",
+    "remark": "",
+    "figures": []
+}

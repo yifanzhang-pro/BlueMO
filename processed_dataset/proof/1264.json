@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例12. 若 $x, y \\in \\mathbf{R}, y \\geqslant 0$, 且 $y(y+1) \\leqslant(x+1)^2$, 求证: $y(y-1) \\leqslant x^2$.",
+    "solution": "证明:若 $0 \\leqslant y \\leqslant 1$, 则 $y(y-1) \\leqslant 0 \\leqslant x^2$.\n若 $y>1$, 由题设知\n$$\n\\begin{gathered}\ny(y+1) \\leqslant(x+1)^2, \\\\\ny \\leqslant \\sqrt{(x+1)^2+\\frac{1}{4}}-\\frac{1}{2} .\n\\end{gathered}\n$$\n要证明 $y(y-1) \\leqslant x^2$, 即只需证明\n$$\n\\begin{array}{lc} \n& \\sqrt{(x+1)^2+\\frac{1}{4}}-\\frac{1}{2} \\leqslant \\sqrt{x^2+\\frac{1}{4}}+\\frac{1}{2}, \\\\\n\\Leftrightarrow & (x+1)^2+\\frac{1}{4} \\leqslant x^2+\\frac{1}{4}+2 \\sqrt{x^2+\\frac{1}{4}}+1 \\\\\n\\Leftrightarrow & 2 x \\leqslant 2 \\sqrt{x^2+\\frac{1}{4}} .\n\\end{array}\n$$\n最后这个不等式是显然的, 从而原不等式得证.",
+    "remark": "",
+    "figures": []
+}

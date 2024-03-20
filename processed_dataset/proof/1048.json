@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 已知 $x 、 y 、 z$ 是非负实数,且 $x+y+z=1$, 求证:\n$$\n0 \\leqslant x y+y z+z x-2 x y z \\leqslant \\frac{7}{27} .\n$$",
+    "solution": "不妨设 $z<\\frac{1}{2}$, 作三角代换: $x=\\sin ^2 \\alpha \\cos ^2 \\beta, y=\\cos ^2 \\alpha \\cos ^2 \\beta, z=\\sin ^2 \\beta$, 则 $x y+y z+z x-2 x y z=x y(1-z)+z(x+y-x y)=\\sin ^2 \\alpha \\cos ^2 \\alpha \\cos ^6 \\beta+ \\sin ^2 \\beta \\cos ^2 \\beta\\left(1-\\sin ^2 \\alpha \\cos ^2 \\alpha \\cos ^2 \\beta\\right) \\geqslant 0$. 同理 $x y+y z+z x-2 x y z=x y(1- 2 z)+z(x+y)=\\sin ^2 \\alpha \\cos ^2 \\alpha \\cos ^4 \\beta \\cos 2 \\beta+\\frac{1}{4} \\sin ^2 2 \\beta=-\\frac{1}{4} \\sin ^2 2 \\alpha \\cdot \\frac{1}{4} (1+2 \\cos 2 \\beta)^2 \\cos 2 \\beta+\\frac{1}{4}\\left(1-\\cos ^2 2 \\beta\\right) \\leqslant \\frac{1}{4}+\\frac{1}{16} \\cos 2 \\beta(1+\\cos 2 \\beta)^2- \\frac{1}{4} \\cos ^2 2 \\beta=\\frac{1}{4}+\\frac{1}{32}\\left[2 \\cos 2 \\beta(1-\\cos 2 \\beta)^2\\right] \\leqslant \\frac{1}{4}+\\frac{1}{32} \\times\\left(\\frac{2}{3}\\right)^3=\\frac{7}{27}$.",
+    "remark": "",
+    "figures": []
+}

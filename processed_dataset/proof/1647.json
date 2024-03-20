@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题31. 函数 $f, g: \\mathbf{N}^* \\rightarrow \\mathbf{N}^*$, 其中 $f$ 是满射, 而 $g$ 是单射, 并且对任意正整数 $n$, 都有 $f(n) \\geqslant g(n)$. 证明: 对任意正整数 $n$, 都有 $f(n)=g(n)$.",
+    "solution": "对任意 $k \\in \\mathbf{N}^*$, 由 $f$ 是满射, 知集合 $f^{-1}(k)=\\left\\{x \\mid x \\in \\mathbf{N}^*, f(x)=k\\right\\}$ 是一个非空集, 于是, 由最小数原理知, 存在 $m_k \\in \\mathbf{N}^*$, 使得 $m_k= \\min f^{-1}(k)$.\n下面先证明 : (1), $g\\left(m_k\\right)=k$.\n对 $k$ 归纳, 当 $k=1$ 时, 由 $g\\left(m_1\\right) \\leqslant f\\left(m_1\\right)=1$ 结合 $g\\left(m_1\\right) \\in \\mathbf{N}^*$, 知 $g\\left(m_1\\right)=1$. 即 (1) 对 $k=1$ 成立.\n现设(1)对所有小于 $k$ 的正整数都成立, 即 $g\\left(m_1\\right)=1, \\cdots, g\\left(m_{k-1}\\right)=k-$ 1 , 讨论 $g\\left(m_k\\right)$ 的值.\n首先, $g\\left(m_k\\right) \\leqslant f\\left(m_k\\right)=k$, 其次 $\\left\\{g\\left(m_1\\right), \\cdots, g\\left(m_{k-1}\\right)\\right\\}=\\{1,2, \\cdots$, $k-1\\}, g$ 是单射, 而由 $m_i$ 的定义知 $m_1, \\cdots, m_k$ 两两不同, 故 $g\\left(m_k\\right) \\geqslant k$. 从而 $g\\left(m_k\\right)=k$. 所以, (1) 对 $k \\in \\mathbf{N}^*$ 都成立.\n利用 (1) 和 $g$ 为单射, 可知 $g$ 为 $\\mathbf{N}^*$ 到 $\\mathbf{N}^*$ 上的一一对应.\n现在对任意 $n \\in \\mathbf{N}^*$, 记 $g(n)=k$, 由 $g$ 为一一对应及 (1) 知 $n=m_k$, 从而 $f(n)=f\\left(m_k\\right)=k$, 所以 $f(n)=g(n)$. 命题获证.",
+    "remark": "",
+    "figures": []
+}

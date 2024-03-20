@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 已知锐角 $\\triangle A B C$, 其内切圆与边 $A B 、 A C$ 分别切于点 $D 、 E, X 、 Y$ 分别是 $\\angle A C B 、 \\angle A B C$ 的平分线与 $D E$ 的交点, $Z$ 是边 $B C$ 的中点.\n求证: 当且仅当 $\\angle A=60^{\\circ}$ 时, $\\triangle X Y Z$ 是等边三角形.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c11a12.png>), 设 $I$ 为 $\\triangle A B C$ 的内心.\n首先证明: $D 、 B 、 I 、 X$ 和 $E 、 I 、 C 、 Y$ 分别四点共圆.\n注意到 $\\angle X I B=180^{\\circ}-\\angle B I C=\\frac{1}{2} \\angle B+\\frac{1}{2} \\angle C=90^{\\circ}- \\frac{1}{2} \\angle A$. 由 $\\triangle A D E$ 为等腰三角形可得 $\\angle A D E=90^{\\circ}- \\frac{1}{2} \\angle A$. 所以, $\\angle X I B=\\angle A D E$. 因此, $D 、 B 、 I 、 X$ 四点共圆.\n同理, $E 、 I 、 C 、 Y$ 四点共圆.\n由此可知 $X Z=Y Z$, 且它们分别是 Rt $\\triangle X B C$ 和 Rt $\\triangle Y B C$ 的中线.\n所以, $\\triangle X Y Z$ 是等边三角形的充要条件是 $\\angle Y X Z=60^{\\circ}$. 易知 $\\angle Y X Z=60^{\\circ} \\Leftrightarrow \\angle Y X Z=\\angle Y X C+\\angle C X Z= \\angle A B Y+\\frac{1}{2} \\angle C=\\frac{1}{2}(\\angle B+\\angle C)=60^{\\circ} \\Leftrightarrow \\angle A=60^{\\circ}$. 因此, 所证命题成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c11a12.png"
+    ]
+}

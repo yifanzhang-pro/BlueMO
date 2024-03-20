@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $a>0$, 求证: 对任意正整数 $n$, 有不等式\n$$\n\\frac{1+a^2+\\cdots+a^{2 n}}{a+a^3+\\cdots+a^{2 n-1}} \\geqslant \\frac{n+1}{n} .\n$$",
+    "solution": "证明:对 $n$ 用数学归纳法.\n当 $n=1$ 时, $\\frac{1+a^2}{a} \\geqslant 2$, 故不等式成立.\n设当 $n=k$ 时不等式成立, 即\n$$\nA=\\frac{1+a^2+\\cdots+a^{2 k}}{a+a^3+\\cdots+a^{2 k-1}}>\\frac{k+1}{k} .\n$$\n我们的目标是证明:\n$$\nB=\\frac{1+a^2+\\cdots+a^{2 k+2}}{a+a^3+\\cdots+a^{2 k+1}}>\\frac{k+2}{k+1} .\n$$\n$A$ 和 $B$ 的分母不一样, 怎么把它们联系起来呢? 一个自然的想法是取 $A$ 的倒数.\n注意到: $\\frac{1}{A}<\\frac{k}{k+1}$.\n$$\n\\begin{aligned}\n\\text { 而 } \\frac{1}{A}+B & =\\frac{a+a^3+\\cdots+a^{2 k-1}}{1+a^2+\\cdots+a^{2 k}}+\\frac{1+a^2+\\cdots+a^{2 k+2}}{a+a^3+\\cdots+a^{2 k+1}} \\\\\n& =\\frac{1+2 a^2+2 a^4+\\cdots+2 a^{2 k}+a^{2 k+2}}{a+a^3+\\cdots+a^{2 k+1}}- \\\\\n& =\\frac{\\left(1+a^2\\right)+\\left(a^2+a^4\\right)+\\cdots+\\left(a^{2 k-2}+a^{2 k}\\right)+\\left(a^{2 k}+a^{2 k+2}\\right)}{a+a^3+\\cdots+a^{2 k+1}} \\\\\n& \\geqslant 2 .\n\\end{aligned}\n$$\n故\n$$\nB>2-\\frac{1}{A}>2-\\frac{k}{k+1}=\\frac{k+2}{k+1} .\n$$\n因此当 $n=k+1$ 时不等式成立.\n进而对一切正整数 $n$, 原不等式成立.",
+    "remark": "",
+    "figures": []
+}

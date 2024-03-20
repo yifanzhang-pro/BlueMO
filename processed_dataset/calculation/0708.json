@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题5 设 $a=\\sin 14^{\\circ}+\\cos 14^{\\circ}, b=\\sin 16^{\\circ}+\\cos 16^{\\circ}, c=\\frac{\\sqrt{6}}{2}$, 则 $a 、 b 、 c$ 的大小关系是 ( ).\n(A) $a<b<c$\n(B) $a<c<b$\n(C) $b<c<a$\n(D) $b<a<c$",
+    "solution": "B. 因 $a=\\sqrt{2} \\sin 59^{\\circ}, b=\\sqrt{2} \\sin 61^{\\circ}, c=\\sqrt{2} \\sin 60^{\\circ}$, 而 $59^{\\circ}<60^{\\circ}<61^{\\circ}$, 所以 $a<c<b$.",
+    "remark": "",
+    "figures": []
+}

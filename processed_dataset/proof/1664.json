@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例4.  设 $O$ 为 $\\triangle A B C$ 内一点, 且 $\\angle A O B=\\angle B O C=\\angle C O A=120^{\\circ}, P$ 为任意一点 (不是 $O$ ), 求证:\n$$\nP A+P B+P C>O A+O B+O C .\n$$",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c10i4.png>), 过 $\\triangle A B C$ 的顶点 $A, B, C$ 分别引 $O A, O B, O C$ 的垂线.\n设这三条垂线的交点为 $A_1, B_1, C_1$, 考虑四边形 $A O B C_1$. 因为 $\\angle O A C_1=\\angle O B C_1=90^{\\circ}, \\angle A O B= 120^{\\circ}$, 所以 $\\angle C_1=60^{\\circ}$. 同理, $\\angle A_1=\\angle B_1=60^{\\circ}$, 所以 $\\triangle A_1 B_1 C_1$ 为正三角形.\n设 $P$ 到 $\\triangle A_1 B_1 C_1$ 三边 $B_1 C_1 、 C_1 A_1 、 A_1 B_1$ 的距离分别为 $h_a 、 h_b 、 h_c$, 且 $\\triangle A_1 B_1 C_1$ 的边长为 $a$, 高为$h$. 由等式 $S_{\\triangle A_1 B_1 C_1}=S_{\\triangle P B_1 C_1}+S_{\\triangle P C_1 A_1}+S_{\\triangle P A_1 B_1}$ 知 $\\frac{1}{2} h a=\\frac{1}{2} h_a \\cdot a+\\frac{1}{2} h_b \\cdot a+\\frac{1}{2} h_c \\cdot a$, 所以 $h=h_a+ h_b+h_c$.\n这说明正三角形 $A_1 B_1 C_1$ 内任一点 $P$ 到三边的距离和等于 $\\triangle A_1 B_1 C_1$ 的高 $h$, 这是一个定值, 所以 $O A+O B+O C=h=$ 定值.\n显然, $P A+P B+ P C>P$ 到 $\\triangle A_1 B_1 C_1$ 三边距离和, 所以 $P A+P B+P C>h=O A+O B+ O C$. 这就是我们所要证的结论.\n由这个结论可知 $O$ 点具有如下性质: 它到三角形三个顶点的距离和小于其他点到三角形顶点的距离和, 这个点叫费马点.",
+    "remark": "注:当 $\\triangle A B C$ 的三个角 $\\angle A 、 \\angle B 、 \\angle C$ 都小于 $120^{\\circ}$ 时, 在它的内部一定存在一点 $O$, 使得 $\\angle A O B=\\angle B O C=\\angle C O A=120^{\\circ}$. 当 $\\angle A 、 \\angle B 、 \\angle C$ 中有一个 $\\geqslant 120^{\\circ}$ 时, 不妨设 $\\angle A \\geqslant 120^{\\circ}$, 则对于任意一点 $P$ 都有 $P A+P B+P C \\geqslant A B+$ AC.",
+    "figures": [
+        "./images/volume7/figures/fig-c10i4.png"
+    ]
+}

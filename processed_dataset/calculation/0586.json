@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题19 设函数 $f(x)=a x^2+8 x+3(a<0)$, 对于给定的负数 $a$, 有一个最大的正数 $l(a)$, 使得在整个区间 $[0, l(a)]$ 上,不等式 $|f(x)| \\leqslant 5$ 都成立.\n问:\n$a$ 为何值时, $l(a)$ 最大? 求出这个最大的 $l(a)$.",
+    "solution": "$f(x)=a\\left(x+\\frac{4}{a}\\right)^2+3-\\frac{16}{a}$.\n (1) 当 $3-\\frac{16}{a}>5$, 即 $-8<a<0$ 时, $l(a)$ 是方程 $a x^2+8 x+3=5$ 的较小根, 故 $l(a)=\\frac{-8+\\sqrt{64+8 a}}{2 a}$.\n(2) 当 $3-\\frac{16}{a} \\leqslant 5$, 即 $a \\leqslant-8$ 时, $l(a)$ 是方程 $a x^2+8 x+3=-5$ 的较大根, 故 $l(a)=\\frac{-8-\\sqrt{64-32 a}}{2 a}$. \n综上, $l(a)= \\begin{cases}\\frac{-8-\\sqrt{64-32 a}}{2 a}, & \\text { 当 } a \\leqslant-8 \\text { 时; } \\\\ \\frac{-8+\\sqrt{64+8 a}}{2 a}, & \\text { 当 }-8<a<0 \\text { 时.\n}\\end{cases}$\n当 $a \\leqslant-8$ 时, $l(a)=\\frac{-8-\\sqrt{64-32 a}}{2 a}=\\frac{4}{\\sqrt{4-2 a-2}} \\leqslant \\frac{4}{\\sqrt{20}-2}= a=-8$ 时, $l(a)$ 取到最大值 $\\frac{\\sqrt{5}+1}{2}$.",
+    "remark": "",
+    "figures": []
+}

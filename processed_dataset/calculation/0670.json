@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例14. 已知当 $x \\in[0,1]$ 时,不等式 $x^2 \\cos \\theta-x(1-x)+(1-x)^2 \\sin \\theta>$ 0 恒成立, 试求 $\\theta$ 的取值范围.",
+    "solution": "分析:将原不等式看作关于 $x$ 的一元二次不等式,结合二次函数的图象,列出关于 $\\theta$ 的三角不等式,求出 $\\theta$ 的取值范围.\n解令\n$$\n\\begin{aligned}\nf(x) & =x^2 \\cos \\theta-x(1-x)+(1-x)^2 \\sin \\theta \\\\\n& =(\\cos \\theta+\\sin \\theta+1) x^2-(1+2 \\sin \\theta) x+\\sin \\theta .\n\\end{aligned}\n$$\n对称轴 $x=\\frac{1+2 \\sin \\theta}{2(\\cos \\theta+\\sin \\theta+1)}=\\frac{2 \\sin \\theta+1}{2 \\sin \\theta+2 \\cos \\theta+2}$.\n由条件知 $\\left\\{\\begin{array}{l}f(0)=\\sin \\theta>0, \\\\ f(1)=\\cos \\theta>0,\\end{array}\\right.$ 从而 $\\frac{2 \\sin \\theta+1}{2 \\sin \\theta+2 \\cos \\theta+2} \\in(0,1)$, 要使 $f(x)$ 在 $[0,1]$ 时 $f(x)>0$ 恒成立, 必须有\n$$\n\\Delta=(1+2 \\sin \\theta)^2-4 \\sin \\theta(\\cos \\theta+\\sin \\theta+1)<0,\n$$\n解得 $\\sin 2 \\theta>\\frac{1}{2}$, 又 $\\sin \\theta>0, \\cos \\theta>0$, 所以\n$$\n2 k \\pi+\\frac{\\pi}{12}<\\theta<2 k \\pi+\\frac{5 \\pi}{12}(k \\in \\mathbf{Z}) .\n$$\n评注本题中对称轴的范围是关键.",
+    "remark": "",
+    "figures": []
+}

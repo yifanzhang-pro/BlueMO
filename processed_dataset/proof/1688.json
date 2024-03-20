@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例6. 如图(<FilePath:./images/volume7/figures/fig-c2i11.png>), 点 $D 、 E 、 F$ 分别在锐角 $\\triangle A B C$ 的边 $B C 、 C A 、 A B$ 上 (均不是端点), 满足 $B C / / E F, D_1$ 是边 $B C$ 上一点 (不同于 $B 、 D 、 C$ ), 过 $D_1$ 作 $D_1 E_1 / / D E, D_1 F_1 / / D F$, 分别交 $A C 、 A B$ 两边于点 $E_1 、 F_1$, 连结 $E_1 F_1$, 再在 $B C$ 上方 (与 $A$ 同侧) 作 $\\triangle P B C$, 使得 $\\triangle P B C \\backsim \\triangle D E F$, 连结 $P D_1$. 求证: $E F 、 E_1 F_1 、 P D_1$ 三线共点.",
+    "solution": "证明:连结 $P E_1 、 P F_1$, 设 $E_1 F_1$ 交 $E F$ 于 $K$, 易知 $K$ 在线段 $E_1 F_1$ 上.\n以下证 $K$ 在 $P D_1$ 上.\n注意 $\\triangle D E F \\backsim \\triangle P B C, E F / / B C$, 故 $D E / / B P / / D_1 E_1, D F / / C P / / D_1 F_1$.\n再连结 $C F_1 、 B E_1$, 由梅氏定理得\n$$\n\\begin{aligned}\n\\frac{F_1 K}{K E_1}= & \\frac{F_1 F}{F A} \\cdot \\frac{A E}{E} \\frac{D D_1}{E_1}=\\frac{B F_1}{B D_1} \\frac{A E}{F A} \\frac{A E}{D D_1 \\cdot \\frac{C E_1}{C D_1}}=\\frac{A E}{A F} \\cdot \\frac{C D_1}{B D_1} \\cdot \\frac{B F_1}{C E_1} \\\\\n= & \\frac{\\frac{1}{2} C D_1 \\cdot B F_1 \\sin B}{\\frac{1}{2} B D_1 \\cdot C E_1 \\sin C} \\\\\n= & \\frac{S_{\\triangle C D_1 F_1}}{S_{\\triangle B D_1 E_1}}=\\frac{S_{\\triangle D_1}}{S_{\\triangle P D_1} E_1} \\text {. (由 } C P / / D_1 F_1 \\text { 及 } B P / / D_1 E_1 \\text { ). }\n\\end{aligned}\n$$\n现仅需再注意 $K$ 在 $E_1 F_1$ 上(因 $D_1 F_1$ 与 $B$ 在 $C P$ 同侧, 而 $D_1 E_1$ 与 $C$ 在 $B P$ 同侧) 即可由上式知 $K$ 在 $P D_1$ 上.\n所以欲证结论成立,证毕.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2i11.png"
+    ]
+}

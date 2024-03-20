@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-4.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $a, b, c, d \\in \\mathbf{R}^{+}$, 求证:\n$$\n\\sqrt[3]{\\frac{a b c+b c d+c d a+a d b}{4}} \\leqslant \\sqrt{\\frac{a^2+b^2+c^2+d^2}{4}} .\n$$",
+    "solution": "证明:首先两次应用 $G_2 \\leqslant A_2$, 得\n$\\frac{a b c+b c d+c d a+a d b}{4}$\n$$\n\\begin{aligned}\n& =\\frac{1}{2}\\left(a b \\cdot \\frac{c+d}{2}+c d \\cdot \\frac{a+b}{2}\\right) \\\\\n& \\leqslant \\frac{1}{2}\\left[\\left(\\frac{a+b}{2}\\right)^2 \\cdot \\frac{c+d}{2}+\\left(\\frac{c+d}{2}\\right)^2 \\cdot \\frac{a+b}{2}\\right] \\\\\n& =\\frac{a+b}{2} \\cdot \\frac{c+d}{2} \\cdot \\frac{a+b+c+d}{4} \\\\\n& \\leqslant\\left(\\frac{\\frac{a+b}{2}+\\frac{c+d}{2}}{2}\\right)^2 \\frac{a+b+c+d}{4}=\\left(\\frac{a+b+c+d}{4}\\right)^3 .\n\\end{aligned}\n$$\n即再由 $A_4 \\leqslant Q_4$, 得\n$$\n\\frac{a+b+c+d}{4} \\leqslant \\sqrt{\\frac{a^2+b^2+c^2+d^2}{4}} .\n$$\n故原不等式成立.",
+    "remark": "",
+    "figures": []
+}

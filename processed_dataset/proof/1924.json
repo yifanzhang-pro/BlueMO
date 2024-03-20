@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 如图(<FilePath:./images/volume7/figures/fig-c9p6.png>), 在弓形中, 内接一对相切的圆, 对每一对相切的圆, 通过它们的切点引公切线.\n证明: 所有的切线通过一个点.",
+    "solution": "证明: 法一: 如图(<FilePath:./images/volume7/figures/fig-c9a6-1.png>), 设 $P$ 是两圆 $\\odot O_1 、 \\odot O_2$ 的切点.\n作以 $P$ 为反演中心的反演变换, 于是, 在点 $P$ 处相切的两圆反形为一对平行直线 $l_1 / / l_2$, 而和它们相切的弦和弧, 变为 $A^{\\prime} L^{\\prime} B^{\\prime}$ 和 $A^{\\prime} K^{\\prime} B^{\\prime}$, 且 $\\widehat{A^{\\prime} L^{\\prime} B^{\\prime}}=\\widehat{A^{\\prime} K^{\\prime} B^{\\prime}}$, 公切线 $K L$ 变为 $K^{\\prime} L^{\\prime}$, 且与 $l_1$ 、 $l_2$ 平行.\n所以,直线 $A^{\\prime} B^{\\prime}$ 垂直平分 $K^{\\prime} L^{\\prime}$. 换言之, 过点 $A 、 P 、 B$ 的弧平分弓形角 $A 、 B$ 且垂直直线 $K L$. 然而, 恰存在一个过点 $A 、 B$ 的圆, 平分 $\\angle A 、 \\angle B$ (它的中心 $O$ 是从点 $A 、 B$ 分别向 $\\angle A 、 \\angle B$ 的平分线引的垂线的交点), 直线 $K L$ 垂直这个圆, 因此, 通过它的中心.\n于是, 条件中所有直线都通过点 $O$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9p6.png",
+        "./images/volume7/figures/fig-c9a6-1.png"
+    ]
+}

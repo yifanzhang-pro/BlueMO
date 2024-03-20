@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例8. 给定正整数 $n(n \\geqslant 2)$, 求最大的 $\\lambda$, 使得: 若有 $n$ 个袋子,每一个袋子中都是一些重量为 2 的整数次幕克的小球, 且各个袋子中的小球的总重量都相等 (同一个袋子中可以有相等重量的小球), 则必有某一重量的小球的总个数至少为 $\\lambda$.",
+    "solution": "解:不妨设最重的小球的重量为 1 , 设每个袋子中小球的总重量为 $G$, 则 $G \\geqslant 1$.\n先证明: 当 $\\lambda=\\left[\\frac{n}{2}\\right]+1$ 合乎题意, 即必有某一重量的小球的总个数至少为 $\\left[\\frac{n}{2}\\right]+1$.\n反设任一个重量的小球的总个数都不大于 $\\left[\\frac{n}{2}\\right]$, 考察这 $n$ 个袋子中所有小球的总重量, 有 $n \\leqslant n G<\\left[\\frac{n}{2}\\right] \\cdot\\left(1+2^{-1}+2^{-2}+\\cdots\\right)=2\\left[\\frac{n}{2}\\right] \\leqslant 2 \\cdot \\frac{n}{2}=n$, 矛盾!\n其次证明: $\\lambda \\leqslant\\left[\\frac{n}{2}\\right]+1$. 取充分大的正整数 $s$, 使得 $2-2^{-s} \\geqslant \\frac{2 n}{n+1}$, 由于 $\\left[\\frac{n}{2}\\right]+1 \\geqslant \\frac{n+1}{2}$, 所以 $2-2^{-s} \\geqslant \\frac{2 n}{n+1} \\geqslant \\frac{n}{\\left[\\frac{n}{2}\\right]+1}$, 从而 $\\left(\\left[\\frac{n}{2}\\right]+1\\right)\\left(1+2^{-1}+\\cdots+\\right. \\left.2^{-s}\\right) \\geqslant n \\cdot 1$.\n所以可在 $\\underbrace{1,1, \\cdots, 1}_{\\left[\\frac{n}{2}\\right]+1}, \\underbrace{2^{-1}, 2^{-1}, \\cdots, 2^{-1}}_{\\left[\\frac{n}{2}\\right]+1}, \\cdots, \\underbrace{2^{-s}, 2^{-s}, \\cdots, 2^{-s}}_{\\left[\\frac{n}{2}\\right]+1}$ 中从前至后取出和为 1 的连续若干项, 且至少可取 $n$ 次, 所以 $\\lambda \\leqslant\\left[\\frac{n}{2}\\right]+1$.\n综上可知, $\\lambda_{\\text {max }}=\\left[\\frac{n}{2}\\right]+1$.",
+    "remark": "",
+    "figures": []
+}

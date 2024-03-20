@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 设数列 $\\left\\{a_n\\right\\}$ 满足 $a_1=1, a_{n+1} a_n=4\\left(a_{n+1}-1\\right), n=1,2,3, \\cdots$, 求\n$a_1 a_2 \\cdots a_n$.",
+    "solution": "解:由 $a_{n+1} a_n=4\\left(a_{n+1}-1\\right)$ 得 $a_{n+1}=\\frac{4}{4-a_n}$, 于是\n$$\na_{n+1}-2=\\frac{4}{4-a_n}-2=\\frac{2\\left(a_n-2\\right)}{4-a_n} .\n$$\n所以\n$$\n\\frac{1}{a_{n+1}-2}=\\frac{4-a_n}{2\\left(a_n-2\\right)}=\\frac{1}{a_n-2}-\\frac{1}{2},\n$$\n又 $\\frac{1}{a_1-2}=-1$, 故由等差数列通项公式得\n$$\n\\frac{1}{a_n-2}=-1+(n-1) \\cdot\\left(-\\frac{1}{2}\\right)=-\\frac{n+1}{2} \\text {. }\n$$\n由此得出 $a_n=2 \\cdot \\frac{n}{n+1}$, 所以\n$$\na_1 a_2 \\cdots a_n=\\left(2 \\cdot \\frac{1}{2}\\right)\\left(2 \\cdot \\frac{2}{3}\\right)\\left(2 \\cdot \\frac{3}{4}\\right) \\cdots\\left(2 \\cdot \\frac{n}{n+1}\\right)=\\frac{2^n}{n+1} .\n$$",
+    "remark": "注:本题中 2 是方程 $x^2=4(x-1)$ 的二重根.\n一般说来,对于分式线性递推数列 $a_{n+1}=\\frac{a a_n+b}{c a_n+d}$, 其中 $c \\neq 0, a d-b c \\neq 0, a_1 \\neq \\frac{a a_1+b}{c a_1+d}$, 我们称方程 $x=\\frac{a x+b}{c x+d}$ 的根为该数列的不动点.\n若该数列只有唯一不动点 $p$ (即方程 $x(c x+d)=a x+b$ 有二重根 $p$ ), 则\n$$\n\\frac{1}{a_{n+1}-p}=-\\frac{1}{a_n-p}+\\frac{2 c}{a+d} \\text {. }\n$$\n若该数列有两个不同的不动点 $p$ 和 $q$, 则\n$$\n\\frac{a_{n+1}-p}{a_{n+1}-q}=\\frac{a-p c}{a-q c} \\cdot \\frac{a_n-p}{a_n-q} .\n$$",
+    "figures": []
+}

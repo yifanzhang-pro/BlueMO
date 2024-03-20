@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 设 $a, b \\in \\mathbf{R}, \\frac{1}{a}+\\frac{1}{b}=1$. 求证: 对一切正整数 $n$, 有\n$$\n(a+b)^n-a^n-b^n \\geqslant 2^{2 n}-2^{n+1} .\n$$",
+    "solution": "$n=1$ 时显然成立.\n假设 $n=k$ 时, 有 $(a+b)^k-a^k-b^k \\geqslant 2^{2 k}-2^{k+1}$.\n则对 $n=k+1$, 由 $\\frac{1}{a}+\\frac{1}{b}=1$, 有 $a+b=a b$, 于是 $a b=a+b \\geqslant 2 \\sqrt{a b}$ 即 $a b=a+b \\geqslant 4$. 从而, $(a+b)^{k+1}-a^{k+1}-b^{k+1}=(a+b)\\left[(a+b)^k-a^k-\\right. \\left.b^k\\right]+a^k b+a b^k \\geqslant 4\\left(2^{2 k}-2^{k+1}\\right)+2 \\sqrt{a^{k+1} b^{k+1}} \\geqslant 2^{2 k+2}-2^{k+3}+2^{k+2}=2^{2(k+1)}- 2^{(k+1)+1}$.",
+    "remark": "",
+    "figures": []
+}

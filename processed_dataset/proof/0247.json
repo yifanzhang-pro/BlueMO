@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 任意给定整数 $n \\geqslant 3$, 证明, 存在一个由正整数组成的 $n$ 项的等差数列(公差不为 0$)$,其中任意两项互素.",
+    "solution": "数列 $\\{k \\cdot n !+1\\}(k=1, \\cdots, n)$ 符合要求.\n假设有 $s 、 t(1 \\leqslant s<t \\leqslant n)$ 使 $s \\cdot n !+1$ 与 $t \\cdot n !+1$ 不互素, 则有素数 $p$ 整除这两个数, 从而整除它们的差, 即 $p \\mid(t-s) n$ !. 因 $p$ 是素数, 故 $p \\mid(t-s)$ 或 $p \\mid n$ !. 但 $1 \\leqslant t-s<n$, 故若 $p \\mid(t-s)$, 则也有 $p \\mid n !$. 因此我们总有 $p \\mid n !$, 再结合 $p \\mid s \\cdot n !+1$ 可知 $p \\mid 1$, 矛盾.",
+    "remark": "",
+    "figures": []
+}

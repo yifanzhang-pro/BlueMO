@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例2. 已知实数 $x 、 y$ 满足 $x^2+y^2-4 x-6 y+9=0$, 求证:\n$$\n19 \\leqslant x^2+y^2+12 x+6 y \\leqslant 99 .\n$$",
+    "solution": "证明:题设条件可化为\n即\n$$\n\\begin{aligned}\n& (x-2)^2+(y-3)^2=4, \\\\\n& \\left(\\frac{x-2}{2}\\right)^2+\\left(\\frac{y-3}{2}\\right)^2=1 .\n\\end{aligned}\n$$\n令 $\\frac{x-2}{2}=\\cos \\theta, \\frac{y-3}{2}=\\sin \\theta$, 其中 $\\theta \\in[0,2 \\pi)$, 所以\n$$\n\\begin{aligned}\n& x^2+y^2+12 x+6 y \\\\\n= & (4 x+6 y-9)+12 x+6 y \\\\\n= & 16 x+12 y-9 \\\\\n= & 16(2 \\cos \\theta+2)+12(2 \\sin \\theta+3)-9 \\\\\n= & 32 \\cos \\theta+24 \\sin \\theta+59 \\\\\n= & 8(4 \\cos \\theta+3 \\sin \\theta)+59 \\\\\n= & \\left.40 \\cos (\\theta+\\varphi)+59 \\text { (其中 } \\tan \\varphi=\\frac{3}{4}\\right), \\\\\n& 19 \\leqslant 40 \\cos (\\theta+\\varphi)+59 \\leqslant 99, \\\\\n& 19 \\leqslant x^2+y^2+12 x+6 y \\leqslant 99 .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

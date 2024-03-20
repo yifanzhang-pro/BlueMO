@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 求证:下列不等式组无实数解\n$$\n\\left\\{\\begin{array}{l}\n|x|>|y-z+t|, \\\\\n|y|>|x-z+t|, \\\\\n|z|>|x-y+t|, \\\\\n|t|>|x-y+z| .\n\\end{array}\\right.\n$$",
+    "solution": "反设存在实数 $x 、 y 、 z 、 t$ 满足不等式组, 则两边平方后可得: $(x+y- z+t)(x-y+z-t)>0 ;(y+x-z+t)(y-x+z-t)>0 ;(z+x-y+$ t) $(z-x+y-t)>0 ;(t+x-y+z)(t-x+y-z)>0$. 从而有 $-(x+y- z+t)^2(x-y+z-t)^2(y-x+z-t)^2(z+x-y+t)^2>0$, 矛盾!",
+    "remark": "",
+    "figures": []
+}

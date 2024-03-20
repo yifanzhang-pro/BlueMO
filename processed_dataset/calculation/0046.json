@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题14: 称有限集 $S$ 的所有元素的乘积为 $S$ 的 “积数”, 给定数集 $M= \\left\\{\\frac{1}{2}, \\frac{1}{3}, \\cdots, \\frac{1}{100}\\right\\}$. 求集 $M$ 的所有含偶数个元素的子集的“积数”之和.",
+    "solution": "解: 设集合 $M$ 的所有含偶数个元数的子集的积数之和为 $x$, 所有含奇数个元素的子集的积数之和为 $y$, 则 $x+y=\\left(1+\\frac{1}{2}\\right)\\left(1+\\frac{1}{3}\\right) \\cdots\\left(1+\\frac{1}{100}\\right)-1, x-y=\\left(1-\\frac{1}{2}\\right)\\left(1-\\frac{1}{3}\\right) \\cdots\\left(1-\\frac{1}{100}\\right)-1$. 所以 $x+y=\\frac{99}{2}, x-y= -\\frac{99}{100}$. 解得 $x=\\frac{4851}{200}$.",
+    "remark": "",
+    "figures": []
+}

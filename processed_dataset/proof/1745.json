@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例2. 如图(<FilePath:./images/volume7/figures/fig-c8i13.png>), 已知 $P A 、 P B$ 是由圆 $O$ 外一点 $P$ 引出的两条切线, $M 、 N$ 分别为线段 $A P 、 A B$ 的中点, 延长 $M N$ 交圆 $O$ 于点 $C$, 点 $N$ 在 $M$ 与 $C$ 之间, $P C$ 交圆 $O$ 于点 $D$, 延长 $N D$ 交 $P B$ 于点 $Q$. 证明: 四边形 $M N Q P$ 为菱形.",
+    "solution": "证明:由例 1 结论知, $P 、 E 、 D 、 C$ 成调和点列.\n由于 $M N / / P B$, 由定理 1 , 以 $N$ 为中心, 由 $(P 、 E 、 D 、 C)$ 为调和点列可以得到 $(P 、 B 、 Q 、 \\infty)$ 为调和点列.\n所以, $Q$ 为 $P B$ 的中点.\n而 $P B=P A, M 、 N 、 Q$ 为 $P A 、 A B 、 P B$ 的中点, 故四边形 $M N Q P$ 为菱形.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8i13.png"
+    ]
+}

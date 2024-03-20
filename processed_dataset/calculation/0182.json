@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例9. 设凸 $n$ 边形的任意 3 条对角线不交于形内同一点,求它的对角线在形内的交点的个数.",
+    "solution": "解:依题意,一个交点 $P$ 由两条对角线 $l$ 和 $m$ 相交而得, 反之,两条相交对角线 $l$ 和 $m$, 确定一个交点 $P$, 从而 $P$ 与 $(l, m)$ 可建立一一对应.\n又因两条相交对角线 $l, m$ 分别由凸 $n$ 边形中两对顶点 $A 、 B$ 和 $C 、 D$ 连接而成, 而且对于凸 $n$ 边形的任意 4 个顶点,有且只有一对对角线相交于多边形内 (如图(<FilePath:./images/volume11/figures/fig-c6i3.png>)), 故 $(l, m)$ 又可与 4 顶点组 $(A, C, B, D)$ 建立一一对应, 即有 $P \\leftrightarrow(l, m) \\leftrightarrow(A, C, B, D)$. 因此, 形内对角线的交点总数等于凸 $n$ 边形的 4 顶点组数 $\\mathrm{C}_n^4$.",
+    "remark": "注:本题中结论是组合几何中一个重要结论, 今后可用它去解决组合几何中较为复杂的计数问题.",
+    "figures": [
+        "./images/volume11/figures/fig-c6i3.png"
+    ]
+}

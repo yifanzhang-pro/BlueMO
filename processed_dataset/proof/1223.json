@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题7. $x, y, z \\in \\mathbf{R}^{+}$, 且 $x y z \\geqslant 1$. 求证:\n$$\n\\frac{x^5-x^2}{x^5+y^2+z^2}+\\frac{y^5-y^2}{y^5+z^2+x^2}+\\frac{z^5-z^2}{z^5+x^2+y^2} \\geqslant 0 \\text {. }\n$$",
+    "solution": "原不等式等价于 $\\sum \\frac{1}{x^5+y^2+z^2} \\leqslant \\frac{3}{x^2+y^2+z^2}$. 利用 $x y z \\geqslant 1$ 及柯西不等式得 $\\left(x^5+y^2+z^2\\right) \\cdot\\left(y z+y^2+z^2\\right) \\geqslant\\left(\\sum x^2\\right)^2$. 而 $\\sum\\left(y z+y^2+z^2\\right) \\leqslant \\sum\\left(\\frac{y^2+z^2}{2}+y^2+z^2\\right)=3 \\sum x^2$. 代入即得结果.",
+    "remark": "",
+    "figures": []
+}

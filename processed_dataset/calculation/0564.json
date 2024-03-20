@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题1 已知 $f(x)=x^5+a x^3+b x+c \\sin x+8$ (其中 $a 、 b 、 c$ 是实常数), 且 $f(-2)=10$, 求 $f(2)$ 的值.",
+    "solution": "设 $g(x)=f(x)-8$, 则 $g(x)$ 是奇函数, 且 $g(-2)=f(-2)-8=10- 8=2$. 所以 $g(2)=-g(-2)=-2$. 从而 $f(2)=g(2)+8=-2+8=6$.",
+    "remark": "",
+    "figures": []
+}

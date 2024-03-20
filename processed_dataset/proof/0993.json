@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例5. 三个数 $a 、 b 、 c$ 属干开区间 $\\left(0, \\frac{\\pi}{2}\\right)$, 且满足下列等式 $a=\\cos a$, $b=\\sin (\\cos b), c=\\cos (\\sin c)$, 试按从小到大的顺序排列这三个数.",
+    "solution": "分析:从题目条件来看, 直接计算 $a 、 b 、 c$ 的值是极为困难的, 所以考虑用图象法解之.\n解法一 $\\cos a=a$ 表示曲线 $y=\\cos x$ 与 $y=x$ 的交点的横坐标即为 $a$.\n同理, 曲线 $y=\\sin (\\cos x)$ 与 $y=x$ 的交点的横坐标即为 $b$. 而曲线 $y= \\cos (\\sin x)$ 与 $y=x$ 的交点的横坐标即为 $c$.\n在同一坐标系中作出曲线 $y=\\cos x$, $y=\\cos (\\sin x), y=\\sin (\\cos x)$ 及直线 $y=x$. (如图(<FilePath:./images/volume3/figures/fig-c5i4.png>) 所示)\n由于当 $x \\in\\left(0, \\frac{\\pi}{2}\\right)$ 时, 有 $\\sin x<x$. 所以 $\\cos (\\sin x)>\\cos x$. 即当 $x \\in\\left(0, \\frac{\\pi}{2}\\right)$ 时, $y=\\cos (\\sin x)$ 的图象在 $y=\\cos x$ 的上方.\n由于 $x \\in\\left(0, \\frac{\\pi}{2}\\right)$ 时, $\\cos x \\in(0,1)$. 在$\\sin x<x$ 中用 $\\cos x$ 代 $x$, 就得 $x \\in\\left(0, \\frac{\\pi}{2}\\right)$ 时, $\\sin (\\cos x)<\\cos x$. 即当 $x \\in\\left(0, \\frac{\\pi}{2}\\right)$ 时, $y=\\sin (\\cos x)$ 的图象在 $y=\\cos x$ 的下方.\n由此可知 $b<a<c$.\n解法二如图(<FilePath:./images/volume3/figures/fig-c5i5.png>) 所示.\n由 $\\cos a=a$, 知 $a$ 是 $y=\\cos x$ 与 $y=x$ 交点的横坐标.\n而 $\\sin (\\cos b)=b$, 可看成 $\\cos b= \\arcsin b$. 即为 $y=\\cos x$ 与 $y=\\arcsin x$ 的交点的横坐标.\n注意到 $x \\in\\left(0, \\frac{\\pi}{2}\\right)$ 时, $0< \\sin x<x$, 即 $y=\\sin x$ 的图象在 $x \\in\\left(0, \\frac{\\pi}{2}\\right)$ 时在直线 $y=x$ 的下方.\n于是其反函数 $y= \\arcsin x$ 的图象在 $x \\in(0,1)$ 时应在直线 $y=$\n$x$ 的上方.\n又 $\\cos (\\sin c)=c$, 可看成 $\\arccos c=\\sin c$, 但 $y=\\sin x, x \\in\\left(0, \\frac{\\pi}{2}\\right)$ 的图象在 $y=x$ 的下方.\n由此可作图, 从图中也可看出 $b<a<c$.\n解法三利用反证法.\n假设 $a \\geqslant c$, 则由 $a, c \\in\\left(0, \\frac{\\pi}{2}\\right)$ 得 $\\cos a \\leqslant \\cos c$, 即 $a \\leqslant \\cos c$, 而 $0<\\sin c<c$, 所以 $\\cos (\\sin c)>\\cos c$, 从而 $a<\\cos (\\sin c)$, 即 $a< c$, 两者矛盾, 所以假设错误, 得 $a<c$;\n假设 $a \\leqslant b$, 则由 $a, b \\in\\left(0, \\frac{\\pi}{2}\\right)$ 得 $\\cos a \\geqslant \\cos b$, 即 $a \\geqslant \\cos b$, 又因 $0< \\sin (\\cos b)<\\cos b$, 所以 $a>\\sin (\\cos b)=b$, 两者也矛盾.\n所以 $a>b$, 综上所述 $b<a<c$.\n评注本题应用了三角函数的重要性质: 当 $x \\in\\left(0, \\frac{\\pi}{2}\\right)$ 时, $0<\\sin x<x$.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c5i4.png",
+        "./images/volume3/figures/fig-c5i5.png"
+    ]
+}

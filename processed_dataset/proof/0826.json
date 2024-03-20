@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 将圆周上的所有点染为 $N$ 种颜色之一.\n(1) 若 $N=2$, 证明: 必存在一个等腰三角形,其顶点同色;\n(2)证明:对任意给定正整数 $N \\geqslant 2$, 必存在一个梯形,它的四个顶点同色.",
+    "solution": "(1) 考虑圆内接正五边形, 由于每个顶点染两种颜色之一, 根据抽屉原理,一定存在三个同色顶点,而它们必构成等腰三角形.\n(2)如果圆周上依次有 $N+1$ 个点 $A_1, A_2, \\cdots, A_{N+1}$ 满足: 对于 $i(1 \\leqslant i \\leqslant N), \\widehat{A_i A_{i+1}}$ 的弧长都等于 $a>0$, 则称为一组点.\n将半圆分为 $N^2+1$ 段弧 $L_i\\left(1 \\leqslant i \\leqslant N^2+1\\right)$. 令 $a$ 充分小, 则可在每段弧 $L_i$ 上取一组点, 由抽屉原理, 这组点中必有两点同色, 且可用数组 $\\left(c_i, l_i\\right)$ 表示, 其中, $c_i$ 代表这两点的 $N$ 种颜色之一, $l_i$ 代表这两点对应的 $N$ 种可能的弧长之一.\n不同的数组 $\\left(c_i, l_i\\right)$ 只有 $N^2$ 种, 由抽屉原理, 一定存在 $i \\neq j$, 使 $\\left(c_i, l_i\\right)=\\left(c_j, l_j\\right)$, 于是这两组中存在四点同色,且构成等腰梯形.",
+    "remark": "",
+    "figures": []
+}

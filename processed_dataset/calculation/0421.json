@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise11.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 给定实数 $\\alpha$, 求最小实数 $\\lambda=\\lambda(\\alpha)$, 使得对任意复数 $z_1, z_2$ 和实数 $x \\in[0$, $1]$, 若 $\\left|z_1\\right| \\leqslant \\alpha\\left|z_1-z_2\\right|$, 则 $\\left|z_1-x z_2\\right| \\leqslant \\lambda\\left|z_1-z_2\\right|$.",
+    "solution": "如图(<FilePath:./images/volume14/figures/fig-c11a6.png>), 在复平面内, 点 $A, B, C$ 对应的复数分别为 $z_1, z_2, x z_2$. 显然, 点 $C$ 在线段 $O B$ 上.\n向量 $\\overrightarrow{B A}$ 对应的复数为 $z_1-z_2$. 向量 $\\overrightarrow{C A}$ 对应的复数为 $z_1-x z_2$. 由 $\\left|z_1\\right| \\leqslant \\alpha\\left|z_1-z_2\\right|$, 得 $|\\overrightarrow{O A}| \\leqslant \\alpha|\\overrightarrow{B A}|$. 于是,\n$$\n\\begin{aligned}\n\\left|z_1-x z_2\\right|_{\\max } & =|\\overrightarrow{A C}|_{\\max }=\\max \\{|\\overrightarrow{O A}|,|\\overrightarrow{B A}|\\} \\\\\n& =\\max \\left\\{\\left|z_1\\right|,\\left|z_1-z_2\\right|\\right\\} \\\\\n& =\\max \\left\\{\\alpha\\left|z_1-z_2\\right|,\\left|z_1-z_2\\right|\\right\\},\n\\end{aligned}\n$$\n故 $\\lambda(\\alpha)=\\max \\{\\alpha, 1\\}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c11a6.png"
+    ]
+}

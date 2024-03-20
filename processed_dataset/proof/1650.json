@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例2 $\\triangle P Q R$ 和 $\\triangle P^{\\prime} Q^{\\prime} R$ 是两个全等的等边三角形,六边形 $A B C D E F$ 的边长分别记为 $A B=a_1, B C=b_1, C D=a_2, D E=b_2, E F=a_3, F A=b_3$. 求证: $a_1^2+a_2^2+a_3^2=b_1^2+b_2^2+b_3^2$.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c1i3.png>), 因为 $\\angle P=\\angle Q=\\angle R= \\angle P^{\\prime}=\\angle Q^{\\prime}=\\angle R^{\\prime}=60^{\\circ}$, 再根据各组对顶角相等知\n$\\triangle P A B \\backsim \\triangle Q^{\\prime} C B \\backsim \\triangle Q C D \\backsim \\triangle R^{\\prime} E D \\backsim \\triangle R E F \\backsim \\triangle P^{\\prime} A F$.\n依次设上述六个三角形面积为: $S_1, S_1^{\\prime}, S_2, S_2^{\\prime}$, $S_3, S_3^{\\prime}$, 则有\n$$\n\\frac{S_1}{a_1^2}=\\frac{S_1^{\\prime}}{b_1^2}=\\frac{S_2}{a_2^2}=\\frac{S_2^{\\prime}}{b_2^2}=\\frac{S_3}{a_3^2}=\\frac{S_3^{\\prime}}{b_3^2} .\n$$\n设其比值为 $k$, 则由 $S_1+S_2+S_3=S_1^{\\prime}+S_2^{\\prime}+S_3^{\\prime}$ 得\n$$\nk\\left(a_1^2+a_2^2+a_3^2\\right)=k\\left(b_1^2+b_2^2+b_3^2\\right) \\text {, 即 } a_1^2+a_2^2+a_3^2=b_1^2+b_2^2+b_3^2 \\text {. }\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1i3.png"
+    ]
+}

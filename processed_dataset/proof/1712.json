@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例10. 已知 $\\odot O_1$ 与 $\\odot O_2$ 外切于点 $T$, 一直线与 $\\odot O_2$ 相切于点 $X$, 与 $\\odot O_1$ 交于点 $A 、 B$, 且点 $B$ 在线段 $A X$ 的内部, 直线 $X T$ 与 $\\odot O_1$ 交于另一点 $S, C$ 是不包含点 $A 、 B$ 的 $\\overparen{T S}$ 上的一点, 过点 $C$ 作 $\\odot O_2$ 的切线, 切点为 $Y$, 且线段 $C Y$ 与线段 $S T$ 不相交, 直线 $S C$ 与 $X Y$ 交于点 $I$. 证明: (1) $C 、 T 、 I 、 Y$ 四点共圆; (2) $I$ 是 $\\triangle A B C$ 的 $\\angle A$ 内的旁切圆的圆心.",
+    "solution": "证明:(1) 如图(<FilePath:./images/volume7/figures/fig-c4i13.png>), $T$ 为 $\\odot O_1$ 与 $\\odot O_2$ 的公切点, 则 $\\overparen{S T}$ 对应的度数等于 $\\overparen{X T}$ 对应的度数, 即 $\\angle S A T=\\angle X Y T$ <1>.\n而 $\\angle T C I=\\angle S A T$, 所以 $\\angle T C I=\\angle X Y T$, 即 $\\angle I Y T=\\angle I C T$.\n故 $C 、 I 、 T 、 Y$ 四点共圆 <2>. \n(2) 因为 $\\angle S A T=\\angle S B T, \\angle A X S=\\angle X Y T$, 结合 <1> 式得\n$$\n\\angle S A T=\\angle A X S, \\angle S B T=\\angle A X S .\n$$\n又 $\\angle A S T=\\angle X S A, \\angle B S T=\\angle B S X$, 所以 $\\triangle S A T \\backsim \\triangle S X A, \\triangle S B T \\backsim \\triangle S X B$.\n则 $S A^2=S T \\cdot S X, S B^2=S T \\cdot S X$.\n又 $\\angle S I T=\\angle C Y T$ (由 <2> 得), $\\angle S I T=\\angle S X I$, 而 $\\angle I S T=\\angle X S I$, 所以 $\\triangle S I T \\backsim \\triangle S X I$, 从而 $S I^2=S T \\cdot S X$.\n则 $S A=S I=S B$, 即 $S$ 为 $\\triangle A B I$ 的外心.\n所以 $\\angle X B I=\\frac{1}{2} \\angle A S I=\\frac{1}{2} \\angle A S C=\\frac{1}{2} \\angle C B X$.\n故 $B I$ 平分 $\\angle C B X$, 而 $\\angle B C I=\\angle B A S$, 又 $S$ 为 $\\triangle A B I$ 的外心, 则 $\\angle B A S=-\\frac{1}{2} \\angle A S B+90^{\\circ}$, 则 $2 \\angle B A S+\\angle A S B-90^{\\circ}$.\n又 $\\angle B A S=\\angle B C I, \\angle A S B=\\angle A C B$, 即 $2 \\angle B C I+\\angle A C B=90^{\\circ}$.\n所以 $C I$ 是 $\\angle A C B$ 的外角平分线, 又 $B I$ 平分 $\\angle C B X$.\n故 $I$ 为 $\\triangle A B C$ 的 $\\angle A$ 内的旁切圆圆心.\n证毕.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4i13.png"
+    ]
+}

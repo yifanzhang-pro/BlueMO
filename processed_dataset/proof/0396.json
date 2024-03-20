@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 运动会开了 $n(>1)$ 天, 共发出 $m$ 个奖牌, 第 1 天发出 1 个加上余下奖牌的 $\\frac{1}{7}$, 第 2 天发出 2 个加上余下奖牌的 $\\frac{1}{7}$, 如此继续下去, 最后第 $n$ 天刚好发出 $n$ 个奖牌恰无剩余.\n问运动会共开了几天? 共发出多少个奖牌?",
+    "solution": "设第 $k$ 天共发出 $a_k$ 个奖牌.\n则 $a_1=1+\\frac{1}{7}(m-1)=\\frac{1}{7}(m+6), a_k=k+ \\frac{1}{7}\\left(m-a_1-a_2-\\cdots-a_{k-1}-k\\right), a_{k+1}=k+1+\\frac{1}{7}\\left[m-a_1-a_2-\\cdots-a_k-(k+1)\\right]$, 两式相减得 $a_{k+1}-a_k=1+\\frac{1}{7}\\left(-a_k-1\\right)$, 即 $a_{k+1}-6=\\frac{6}{7}\\left(a_k-6\\right)$, 所以 $a_k-6= \\left(a_1-6\\right)\\left(\\frac{6}{7}\\right)^{k-1}=\\frac{1}{7}\\left(\\frac{6}{7}\\right)^{k-1}(m-36)$, 于是 $m=a_1+a_2+\\cdots+a_n=\\frac{1}{7}(m-$ 36) $\\left[1+\\frac{6}{7}+\\left(\\frac{6}{7}\\right)^2+\\cdots+\\left(\\frac{6}{7}\\right)^{n-1}\\right]+6 n=(m-36)\\left[1-\\left(\\frac{6}{7}\\right)^n\\right]+6 n$, 解出 $m$ 得 $m=\\frac{7^n}{6^{n-1}}(n-6)+36$. 因 $7^n$ 与 $6^{n-1}$ 互素, 且 $m, n$ 为正整数, 所以 $6^{n-1} \\mid n-6$. 又 $n>1$ 时易证 $6^{n-1}>|n-6|$. 故只能 $n=6$, 从而 $m=36$. 即运动会共开了 6 天, 一共发出 36 个奖牌.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 设有 $m m+1$ 个互不相等的实数组成数列 $a_1, a_2, \\cdots, a_{n n+1}$, 证明其中或有一个长为 $n+1$ 的递增子列或有一个长为 $m+1$ 的递减子列.\n(这里一个数列的长指的是该数列的项数)",
+    "solution": "作映射 $f$ 如下: 对数列中每一项 $a_i$, 令它与一个二元有序正整数组 $\\left(x_i, y_i\\right)$ 对应, 其中 $x_i$ 是以 $a_i$ 为首项的最长的递增子列的长度, $y_i$ 是以 $a_i$ 为首项的最长的递减子列的长度, 这里约定只有一项的子列既是递增的又是递减的.\n如果结论不成立, 那么 $1 \\leqslant x_i \\leqslant n, 1 \\leqslant y_i \\leqslant m$. 记 $X=\\left\\{a_1, a_2, \\cdots\\right.$, $\\left.a_{n m+1}\\right\\}, Y=\\left\\{\\left(x_i, y_i\\right) \\mid 1 \\leqslant x_i \\leqslant n, 1 \\leqslant y_i \\leqslant m, x_i, y_i \\in \\mathbf{N}_{+}\\right\\}$, 则 $|X|= n m+1>n m=|Y|$, 所以 $f$ 不是单射, 于是存在 $a_i, a_j \\in X(i \\neq j)$ 使 $\\left(x_i, y_i\\right)=f(i)=f(j)=\\left(x_j, y_j\\right)$, 但若 $a_i<a_j$, 则应有 $x_i \\geqslant x_j+1$ 矛盾, 若 $a_i>a_j$ 则应有 $y_i \\geqslant y_j+1$ 也矛盾, 于是命题得证.\n(注: 本题结论也可用抽屉原理去证明,这里就省略了)",
+    "remark": "",
+    "figures": []
+}

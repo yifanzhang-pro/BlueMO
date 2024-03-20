@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题4 若关于 $x$ 的不等式 $k x^2-2|x-1|+6 k<0$ 的解集为空集, 则 $k$ 的取值范围是",
+    "solution": "$k \\geqslant \\frac{1+\\sqrt{7}}{6}$. 对 $x \\in \\mathbf{R}$, 恒有 $k \\geqslant f(x)=\\frac{2|x-1|}{x^2+6}$. 所以, $k \\geqslant \\max f(x), x \\in \\mathbf{R}$. 当 $x \\geqslant 1$ 时, 令 $t=x-1, t \\geqslant 0$, 则 $f(x)=\\frac{2 t}{\\left(t^2+7\\right)+2 t} \\leqslant \\frac{2 t}{2 \\sqrt{7} t+2 t}=\\frac{\\sqrt{7}-1}{6}$. 当 $x<1$ 时, 令 $t=1-x, t>0$, 则 $f(x)=\\frac{2 t}{\\left(t^2+7\\right)-2 t} \\leqslant \\frac{2 t}{2 \\sqrt{7} t-2 t}=\\frac{\\sqrt{7}+1}{6}$, 当 $t=\\sqrt{7}$ 时, 等号成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题15 求最小的正整数 $n$, 使得 $S=\\{1,2, \\cdots, 150\\}$ 的每个 $n$ 元子集都含有 4 个两两互质的数 (已知 $S$ 中共有 35 个素数).",
+    "solution": "考虑 $S$ 中 2 或 3 或 5 的倍数的个数,有 $\\left[\\frac{150}{2}\\right]+\\left[\\frac{150}{3}\\right]+\\left[\\frac{150}{5}\\right]- \\left[\\frac{150}{2 \\times 3}\\right]-\\left[\\frac{150}{2 \\times 5}\\right]-\\left[\\frac{150}{3 \\times 5}\\right]+\\left[\\frac{150}{2 \\times 3 \\times 5}\\right]=110$. 当 $n=110$ 时, 可以全取 2 或 3 或 5 的倍数, 所以在这个子集里无论如何也找不到 4 个两两互素的数.\n因此, $n \\geqslant 111$.\n$n=111$ 合乎要求.\n为此构造如下 6 个数组: $A_1=\\{1\\} \\bigcup\\{S$ 中 35 个素数 $\\}, A_2=\\{2 \\times 67,3 \\times 43,5 \\times 17,7 \\times 19,11 \\times 13\\}, A_3=\\{2 \\times 53,3 \\times 47,5 \\times 23,7 \\times 17\\}, A_4=\\left\\{2^2, 3^2, 5^2, 7^2, 11^2\\right\\}, A_5= \\{2 \\times 19,3^3, 5 \\times 13,7 \\times 11\\}, A_6=\\left\\{2^3, 3 \\times 23,5 \\times 11,7 \\times 13\\right\\}$. 令 $A=A_1 \\cup A_2 \\cup A_3 \\cup \\cdots \\cup A_6$. 上述每一个 $A_i(i=1,2, \\cdots, 6)$ 中至少有 4 个元素并且两两互素, 且 $A_i \\cap A_j=\\varnothing(1 \\leqslant i<j \\leqslant 6),|A|=58$. 这样, 若从 $S$ 中取出 111 个数, 则 $A$ 中至少被取出 19 个数, 由抽屈原则必有某 $A_i(i=1,2, \\cdots, 6)$ 被选出 4 个, 而这四个数是两两互素的.",
+    "remark": "",
+    "figures": []
+}

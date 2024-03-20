@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设图 $G=(V, E),|V|=n,|E|=e$, 证明 $: \\delta \\leqslant \\frac{2 e}{n} \\leqslant \\Delta$.",
+    "solution": "因为 $\\sum_{i=1}^n d\\left(v_i\\right)=2 e, n \\delta \\leqslant 2 e \\leqslant n \\Delta$, 所以 $\\delta \\leqslant \\frac{2 e}{n} \\leqslant \\Delta$.",
+    "remark": "",
+    "figures": []
+}

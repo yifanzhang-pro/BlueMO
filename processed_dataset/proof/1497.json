@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题13. (1) 求证:对任意实数 $p 、 q$, 有 $p^2+q^2+1>p(q+1)$;\n(2)求最大的实数 $b$, 使得对任意实数 $p 、 q$, 都有 $p^2+q^2+1>b p(q+1)$;\n(3)求最大的实数 $c$, 使得对任意整数 $p 、 q$, 都有 $p^2+q^2+1>c p(q+1)$.",
+    "solution": "(1) $p^2+q^2+1>p(q+1)$ 等价于 $\\left(q-\\frac{p}{2}\\right)^2+\\left(\\frac{p}{2}-1\\right)^2+\\frac{p^2}{2}>0$, 显然成立.\n(2) 令 $p=\\sqrt{2}, q=1$, 则 $b \\leqslant \\sqrt{2}$, 下证不等式 $p^2+q^2+1 \\geqslant \\sqrt{2} p(q+1)$ 对所有实数 $p 、 q$ 都成立.\n事实上, 由 $\\left(\\frac{p}{\\sqrt{2}}-q\\right)^2+\\left(\\frac{p}{\\sqrt{2}}-1\\right)^2 \\geqslant 0$, 即得此不等式成立, 因而 $b_{\\max }=\\sqrt{2}$.\n(3) 令 $p=q=1$, 有 $c \\leqslant \\frac{3}{2}$. 下证不等式 $p^2+q^2+1 \\geqslant \\frac{3}{2} p(q+1)$ 对所有整数 $p 、 q$ 都成立.\n上式等价于 $(3 p-4 q)^2+\\left(7 p^2-24 p+16\\right) \\geqslant 0$.\n由于 $p \\geqslant 3$ 或 $p \\leqslant 0$ 时, $7 p^2-24 p+16 \\geqslant 0$, 故结论成立.\n当 $p=1,2$ 时,也不难验证结论成立,故 $c_{\\text {max }}=\\frac{3}{2}$.",
+    "remark": "",
+    "figures": []
+}

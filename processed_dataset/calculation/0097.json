@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题1 若 $\\frac{a+b}{c}=\\frac{b+c}{a}=\\frac{c+a}{b}=k$, 则直线 $y=k x+k$ 的图象必经过第?象限.",
+    "solution": "二、三.",
+    "remark": "",
+    "figures": []
+}

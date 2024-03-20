@@ -1,0 +1,13 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例15. 已知函数 $y=f(x)$ 的图象如图(<FilePath:./images/volume2/figures/fig-c1e15-1.png>) 所示.\n(1) 写出 $y=f(x)$ 的解析式;\n(2) 求 $y=f(2 x)$ 的解析式,并作出 $y=f(2 x)$ 的图象;\n(3) 求 $y=f(2 x-1)$ 的解析式,并作出 $y=f(2 x-1)$ 的图象.",
+    "solution": "解:(1) 由图 (<FilePath:./images/volume2/figures/fig-c1e15-1.png>), 可知 $f(x)=|x|(-1 \\leqslant x \\leqslant 1)$.\n(2) 由第 (1) 小题, 知 $f(2 x)=|2 x|=2|x|$, 注意到 $-1 \\leqslant 2 x \\leqslant 1$, 所以\n$$\nf(2 x)=2|x|\\left(-\\frac{1}{2} \\leqslant x \\leqslant \\frac{1}{2}\\right) .\n$$\n其图象如图 (<FilePath:./images/volume2/figures/fig-c1e15-2.png>)所示.\n(3) 同上, 可得 $f(2 x-1)=|2 x-1|(0 \\leqslant x \\leqslant 1)$, 其图象如图(<FilePath:./images/volume2/figures/fig-c1e15-3.png>)所示.",
+    "remark": "",
+    "figures": [
+        "./images/volume2/figures/fig-c1e15-1.png",
+        "./images/volume2/figures/fig-c1e15-1.png",
+        "./images/volume2/figures/fig-c1e15-2.png",
+        "./images/volume2/figures/fig-c1e15-3.png"
+    ]
+}

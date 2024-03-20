@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题4 已知 $f(x)=\\sin \\left(x+\\frac{\\pi}{2}\\right), g(x)=\\cos \\left(x-\\frac{\\pi}{2}\\right)$, 则 $f(x)$ 的图象 ( ).\n(A) 与 $g(x)$ 的图象相同\n(B) 与 $g(x)$ 的图象关于 $x$ 轴对称\n(C) 是由 $g(x)$ 的图象向左平移 $\\frac{\\pi}{2}$ 个单位得到\n(D) 是由 $g(x)$ 的图象向右平移 $\\frac{\\pi}{2}$ 个单位得到",
+    "solution": "C. 原函数变形为 $f(x)=\\cos x, g(x)=\\sin x$.",
+    "remark": "",
+    "figures": []
+}

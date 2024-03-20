@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 在 $\\triangle A B C$ 内部给定三点 $D 、 E 、 F$, 使得 $\\angle B A E=\\angle C A F, \\angle A B D= \\angle C B F$. 求证: $A D 、 B E 、 C F$ 三线共点的充分必要条件是 $\\angle A C D= \\angle B C E$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c2a10.png>), 记 $\\angle B A E=\\angle C A F=\\alpha$, $\\angle A B D=\\angle C B F=\\beta, \\angle A C D=x, \\angle B C E=y$. 对 $\\triangle A B C$ 分别与点 $D 、 E 、 F$ 应用角元塞瓦定理有\n$$\n\\begin{aligned}\n1 & =\\frac{\\sin \\angle B A D}{\\sin \\angle D A C} \\cdot \\frac{\\sin \\angle A C D}{\\sin \\angle D C B} \\cdot \\frac{\\sin \\angle C B D}{\\sin \\angle D B A} \\\\\n& =\\frac{\\sin \\angle B A D}{\\sin \\angle D A C} \\cdot \\frac{\\sin x}{\\sin (C-x)} \\cdot \\frac{\\sin (B-\\beta)}{\\sin \\beta}, \\\\\n1 & =\\frac{\\sin \\angle A C F}{\\sin \\angle F C B} \\cdot \\frac{\\sin \\angle C B F}{\\sin \\angle F B A} \\cdot \\frac{\\sin \\angle B A F}{\\sin \\angle F A C} \\\\\n& =\\frac{\\sin \\angle A C F}{\\sin \\angle F C B} \\cdot \\frac{\\sin \\beta}{\\sin (B-\\beta)} \\cdot \\frac{\\sin (A-\\alpha)}{\\sin \\alpha}, \\\\\n1 & =\\frac{\\sin \\angle C B E}{\\sin \\angle E B A} \\cdot \\frac{\\sin \\angle B A E}{\\sin \\angle E A C} \\cdot \\frac{\\sin \\angle A C E}{\\sin \\angle E C B} \\\\\n& =\\frac{\\sin \\angle C B E}{\\sin \\angle E B A} \\cdot \\frac{\\sin \\alpha}{\\sin (A-\\alpha)} \\cdot \\frac{\\sin (C-y)}{\\sin y} .\n\\end{aligned}\n$$\n将三式相乘并整理得\n$1=\\frac{\\sin \\angle B A D}{\\sin \\angle D A C} \\cdot \\frac{\\sin \\angle A C F}{\\sin \\angle F C B} \\cdot \\frac{\\sin \\angle C B E}{\\sin \\angle E B A}=\\frac{\\sin (C-x)}{\\sin x} \\cdot \\frac{\\sin y}{\\sin (C-y)}$.\n即 $\\sin C \\cdot \\cot x-\\cos C=\\sin C \\cdot \\cot y-\\cos C, \\cot x=\\cot y, x=y$.\n由角元 Ceva 定理及其逆定理知, $A D 、 B E 、 C F$ 共线的充要条件是 $x= y$, 即 $\\angle A C D=\\angle B C E$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2a10.png"
+    ]
+}

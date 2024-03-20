@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 已知 $a, b, c \\in \\mathbf{R}^{+}$, 且 $a+b+c=1$. 求证:\n$$\n\\frac{1}{1-a}+\\frac{1}{1-b}+\\frac{1}{1-c} \\geqslant \\frac{2}{1+a}+\\frac{2}{1+b}+\\frac{2}{1+c} \\text {. }\n$$",
+    "solution": "由柯西不等式, 当 $x, y>0$ 时, 有 $(x+y)\\left(\\frac{1}{x}+\\frac{1}{y}\\right) \\geqslant 4$, 于是, $\\frac{1}{x}+ \\frac{1}{y} \\geqslant \\frac{4}{x+y}$. 可以得到 $\\frac{1}{a+b}+\\frac{1}{b+c} \\geqslant \\frac{4}{a+2 b+c}, \\frac{1}{b+c}+\\frac{1}{c+a} \\geqslant \\frac{4}{b+2 c+a}$, $\\frac{1}{c+a}+\\frac{1}{a+b} \\geqslant \\frac{4}{c+2 a+b}$ 三式相加, 得 $\\frac{2}{b+c}+\\frac{2}{c+a}+\\frac{2}{a+b} \\geqslant \\frac{4}{a+2 b+c}+ \\frac{4}{b+2 c+a}+\\frac{4}{c+2 a+b}$, 将 $a+b+c=1$ 代入其中, 并约去 2 即得证.",
+    "remark": "",
+    "figures": []
+}

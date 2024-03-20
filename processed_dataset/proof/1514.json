@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-3.tex",
+    "problem_type": "proof",
+    "problem": "例4. 证明: 不定方程\n$$\nx^4+y^4=z^4\n$$\n没有正整数解.",
+    "solution": "证明:只需证方程\n$$\nx^4+y^4=z^2 . \\label{eq1}\n$$\n没有正整数解.\n若否, 设式\\ref{eq1}有正整数解 $(x, y, z)$, 我们取使 $z$ 最小的那组解.\n这时, 设 $x$ 、 $y$ 的最大公因数为 $d$, 记为 $(x, y)=d$, 则 $d^2 \\mid\\left(x^4+y^4\\right)$, 故 $d^2 \\mid z^2$, 进而 $d \\mid z$, 所以 $d=1$ (否则 $\\left(\\frac{x}{d}, \\frac{y}{d}, \\frac{z}{d}\\right)$ 也是(1) 的解), 因此, $\\left(x^2, y^2, z\\right)$ 是不定方程\n$$\nu^2+v^2=w^2 . \\label{eq2}\n$$\n的一组本原解, 不妨设 $y^2$ 为偶数, 由式\\ref{eq2}的通解, 知存在 $a, b \\in \\mathbf{N}^*,(a, b)= 1, a 、 b$ 一奇一偶, 使得\n$$\nx^2=a^2-b^2, y^2=2 a b, z=a^2+b^2 .\n$$\n由 $y^2$ 为偶数, 知 $x$ 为奇数, 进而, 由 $x^2+b^2=a^2$, 可知存在 $m 、 n \\in \\mathbf{N}^*,(m$, $n)=1, m 、 n$ 一奇一偶, 使得\n$$\nx=m^2-n^2, b=2 m n, a=m^2+n^2 .\n$$\n此时 $y^2=4 m n\\left(m^2+n^2\\right)$, 由 $(m, n)=1$, 知 $\\left(m, m^2+n^2\\right)=\\left(n, m^2+n^2\\right)=$ 1 , 于是 $m^2+n^2 、 m 、 n$ 都是完全平方数.\n这样, 可设 $m=r^2, n=s^2, m^2+n^2= z_1^2, r, s, z_1 \\in \\mathbf{N}^*$, 就有 $r^4+s^4=z_1^2$, 其中 $z_1^2=a<z$, 与 $(x, y, z)$ 是(1)的正整数解中 $z$ 最小那组矛盾.\n所以, 式\\ref{eq1}没有正整数解, 命题获证.\n说明这里用到无穷递降法的另一种表述: \"若命题 $P(n)$ 对某些 $n \\in \\mathbf{N}^*$ 成立, 设 $n_0$ 是使 $P(n)$ 成立的最小正整数 ( $n_0$ 的存在性由最小数原理可知), 则可以证明存在 $n_1 \\in \\mathbf{N}^*, n_1<n_0$ 使得 $P\\left(n_1\\right)$ 成立.\n\"依此导出对任意 $n \\in \\mathbf{N}^*$, 都有 $P(n)$ 不成立.",
+    "remark": "",
+    "figures": []
+}

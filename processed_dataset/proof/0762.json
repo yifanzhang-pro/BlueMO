@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 在空间直角坐标系内, 点 $A, B_1, B_2, \\cdots, B_6$ 与原点 $O$ 这八个点中, 任意三点不共线, 点 $A$ 的坐标 $(a, b, c)$ 满足 $a+b+c=0$, 点 $B_1, B_2, \\cdots, B_6$ 的坐标依次为 $\\left(x_1, x_2, x_3\\right),\\left(x_1, x_3, x_2\\right),\\left(x_2, x_1, x_3\\right),\\left(x_2, x_3, x_1\\right)$, $\\left(x_3, x_1, x_2\\right),\\left(x_3, x_2, x_1\\right)$. 证明: $\\angle A O B_i(i=1,2, \\cdots, 6)$ 中锐角至少有两个.",
+    "solution": "不妨设 $x_1>x_2>x_3, a \\geqslant b \\geqslant c$ (此处两个等号不同时取到), 由切比雪夫不等式得, $\\overrightarrow{O A} \\cdot \\overrightarrow{O B_1}=x_1 a+x_2 b+x_3 c>\\frac{1}{3}(a+b+c)\\left(x_1+x_2+x_3\\right)=0$. 所以 $\\cos \\angle A O B_1>0$, 又 $O, A, B_1$ 不共线,故 $\\angle A O B_1$ 为锐角.\n另一方面, 由切比雪夫不等式得,\n$$\nx_3 a+x_2 b+x_1 c<\\frac{1}{3}(a+b+c)\\left(x_3+x_2+x_1\\right)=0,\n$$\n故\n$$\n\\begin{aligned}\n& \\max \\left\\{\\overrightarrow{O A} \\cdot \\overrightarrow{O B_2}, \\overrightarrow{O A} \\cdot \\overrightarrow{O B_3}\\right\\}=\\max \\left\\{x_1 a+x_3 b+x_2 c, x_2 a+x_1 b+x_3 c\\right\\} \\\\\n\\geqslant & \\frac{1}{2}\\left(\\left(x_1 a+x_3 b+x_2 c\\right)+\\left(x_2 a+x_1 b+x_3 c\\right)\\right)=-\\frac{1}{2}\\left(x_3 a+x_2 b+x_1 c\\right)>0 .\n\\end{aligned}\n$$\n故 $\\angle A O B_2$ 与 $\\angle A O B_3$ 中至少有一个锐角.\n综上, $\\angle A O B_i(i=1,2, \\cdots, 6)$ 中锐角至少有两个.",
+    "remark": "",
+    "figures": []
+}

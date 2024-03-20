@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 设 $z 、 \\omega 、 \\lambda$ 为复数, $|\\lambda| \\neq 1$, 解关于 $z$ 的方程: $\\bar{z}-\\lambda z=\\omega$.",
+    "solution": "分析:与解方程两边取共轭得, $\\overline{\\bar{z}-\\lambda z}=\\bar{\\omega}$, 即 $z-\\bar{\\lambda} \\bar{z}=\\bar{\\omega}$. 两边同乘 $\\lambda$ 得\n$$\n\\lambda z-|\\lambda|^2 \\bar{z}=\\lambda \\bar{\\omega}, \\label{eq1}\n$$\n又因为\n$$\n\\bar{z}-\\lambda z=\\omega . \\label{eq2}\n$$\n所以式\\ref{eq1}+\\ref{eq2}可得 $\\bar{z}\\left(1-|\\lambda|^2\\right)==\\omega+\\lambda \\bar{\\omega}$, 取共轭得 $z\\left(1-|\\lambda|^2\\right)=\\bar{\\omega}+\\bar{\\lambda} \\omega$. 因为 $|\\lambda| \\neq 1$, 所以 $z=\\frac{\\bar{\\lambda} \\omega+\\bar{\\omega}}{1-|\\lambda|^2}$.",
+    "remark": "注:在解复数方程的问题中, 适当地取模或者共轭往往会简化很多计算过程.",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 设 $0<a_1 \\leqslant a_2 \\leqslant \\cdots \\leqslant a_n ; 0<b_1 \\leqslant b_2 \\leqslant \\cdots \\leqslant b_n$, 则\n$$\n\\frac{\\sum_{i=1}^n a_i^2 b_i}{\\sum_{i=1}^n a_i b_i} \\geqslant \\frac{\\sum_{i=1}^n a_i^2}{\\sum_{i=1}^n a_i} .\n$$",
+    "solution": "原不等式等价于 $\\left(\\sum a_i^2 b_i\\right)\\left(\\sum a_i\\right)-\\left(\\sum a_i^2\\right)\\left(\\sum a_i b_i\\right) \\geqslant 0$, 即\n$$\n\\frac{1}{2} \\sum \\sum\\left(a_i-a_j\\right)\\left(b_i-b_j\\right) a_i a_j \\geqslant 0 \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

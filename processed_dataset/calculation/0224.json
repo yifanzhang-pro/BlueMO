@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise15.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 设 $n$ 为给定的正整数, 求最大正整数 $k$, 使得存在三个由非负整数组成的集合 $A=\\left\\{x_1, x_2, \\cdots, x_k\\right\\}, B=\\left\\{y_1, y_2, \\cdots, y_k\\right\\}, C=\\left\\{z_1, z_2, \\cdots, z_k\\right\\}$ 满足: 对任意 $1 \\leqslant j \\leqslant k$, 都有 $x_j+y_j+z_j=n$.",
+    "solution": "由已知条件可知 $k n=\\sum_{i=1}^k\\left(x_i+y_i+z_i\\right) \\geqslant 3 \\sum_{i=1}^k(i-1)=\\frac{3 k(k-1)}{2}$, 因此, $k \\leqslant\\left[\\frac{2 n}{3}\\right]+1$. 下面给出一个 $k=\\left[\\frac{2 n}{3}\\right]+1$ 的例子: 令 $m \\in \\mathbf{N}_{+}$, 若 $n= 3 m$, 则 $k=2 m+1$, 对 $1 \\leqslant j \\leqslant m+1$, 令 $x_j=j-1, y_j=m+j-1, z_j= 2 m-2 j+2$; 对 $m+2 \\leqslant j \\leqslant 2 m+1$, 令 $x_j=j-1, y_j=j-m-2, z_j=4 m- 2 j+3$ 即可; 若 $n=3 m+1$, 则 $k=2 m+1$, 对 $1 \\leqslant j \\leqslant m$, 令 $x_j=j-1, y_j= m+j, z_j=2 m-2 j+2$; 对 $m+1 \\leqslant j \\leqslant 2 m$, 令 $x_j=j+1, y_j=j-m-1$, $\\boldsymbol{z}_j=4 m+1-2 j$; 而 $x_{2 m+1}=m, y_{2 m+1}=2 m+1, z_{2 m+1}=0$; 当 $n=3 m+2$ 时, $k=2 m+2$, 对 $1 \\leqslant j \\leqslant m+1$ 令 $x_j=j-1, y_j=m+j, z_j=2 m-2 j+3$ ; 对 $m+2 \\leqslant j \\leqslant 2 m+1$, 令 $x_j=j, y_j=j-m-2, z_j=4 m-2 j+4$, 而 $x_{2 m+2}=2 m+2, y_{2 m+2}=m, z_{2 m+2}=0$ 即可.",
+    "remark": "",
+    "figures": []
+}

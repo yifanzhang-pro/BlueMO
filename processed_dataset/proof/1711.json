@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例9. 如图(<FilePath:./images/volume7/figures/fig-c4i12.png>), 已知 $\\triangle A B C$ 内切圆 $\\odot I$ 分别与边 $A B 、 B C$ 切于点 $F 、 D$, 直线 $A D 、 C F$ 分别与 $\\odot I$ 交于另一点 $H 、 K$. 求证 : $\\frac{F D \\cdot H K}{F H \\cdot D K}=3$.",
+    "solution": "证明:设 $A F=x, B F=y, C D=z$. 由斯特瓦尔特定理得 $A D^2=\\frac{B D}{B C} \\cdot A C^2+\\frac{C D}{B} \\frac{D}{C} \\cdot A B^2- B D \\cdot D C=\\frac{y(x+z)^2+z(x+y)^2}{y+z}-y z=x^2+ \\frac{4 x y z}{y+z}$. 由切割线定理得: $A H=\\frac{A F^2}{A D}=\\frac{x^2}{A D}$. 故 $H D=A D-A H=\\frac{A D^2-x^2}{A D}=\\frac{4 x y z}{A D(y+z)}$.\n同理\n$$\nK F=\\frac{4 x y z}{C F(x+y)} .\n$$\n因为 $\\triangle C D K \\backsim \\triangle C F D$, 所以 $D K=\\frac{D F \\cdot C D}{C F}=\\frac{D F}{C F} \\cdot z$.\n又因为 $\\triangle A F H \\backsim \\triangle A D F$, 所以 $F H=\\frac{D F \\cdot A F}{A D}=\\frac{D F}{A D} \\cdot x$.\n由余弦定理得:\n$$\n\\begin{gathered}\nD F^2=B D^2+B F^2-2 B D \\cdot B F \\cos B \\\\\n=2 y^2\\left[1-\\frac{(y+z)^2+(x+y)^2-(x+z)^2}{2(x+y)}\\right] \\\\\n=\\frac{4 x y^2 z}{(x+y)(y+z)} . \\\\\n\\text { 故 } \\frac{K F \\cdot H \\cdot D}{F H \\cdot D K}=\\frac{\\frac{4 x y z}{C F(x+y)} \\cdot \\frac{4 x y z}{\\frac{A D(y+z)}{D F} \\cdot x \\cdot \\frac{D F}{C F} \\cdot z}}{\\frac{D D}{C D}} \\\\\n=\\frac{16 x y^2 z}{D F^2(x+y)(y+z)}=4\n\\end{gathered} \\label{eq1}\n$$\n对圆内接四边形 $D K H F$ 应用托勒密定理得\n$$\nK F \\cdot H D=D F \\cdot H K+F H \\cdot D K . \n$$\n再结合式\\ref{eq1}得\n$$\n\\frac{F D \\cdot H K}{F H \\cdot D K}=3 .\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4i12.png"
+    ]
+}

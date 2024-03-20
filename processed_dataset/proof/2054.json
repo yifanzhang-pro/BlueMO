@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设一个凸四边形 $Q$ 的四边满足 $a \\leqslant b \\leqslant c \\leqslant d$, 面积为 $F$, 求证\n$$\nF \\leqslant \\frac{3 \\sqrt{3}}{4} c^2 .\n$$\n这里用等周定理给出证明.",
+    "solution": "证明:如图(<FilePath:./images/volume9/figures/fig-c7i4.png>), 以四边形 $Q$ 的最大边为轴将 $Q$ 翻转过来, 则形成一个六边形 (有两种情况形成凸五边形和矩形, 这时结论同理可证). 注意到这个凸六边形的周长等于 $2(a+b+c)$, 为一定值.\n由等周定理 II,\n周长一定的 $n$ 边形中以正 $n$ 边形的面积为最大, 所以这个六边形的面积 $2 F$ 满足\n$$\n2 F \\leqslant \\frac{3 \\sqrt{3}}{2}\\left(\\frac{a+b+c}{3}\\right)^2,\n$$\n再应用 $a, b \\leqslant c$ 可得\n$$\nF \\leqslant \\frac{3 \\sqrt{3}}{4} c^2\n$$",
+    "remark": "注:由这个证明方法, 我们可将 Popa 不等式推广到 $n$ 边形中 .",
+    "figures": [
+        "./images/volume9/figures/fig-c7i4.png"
+    ]
+}

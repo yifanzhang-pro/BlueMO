@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题14. 若 $x \\in\\left(0, \\frac{\\pi}{2}\\right)$, 则 $\\cos (\\sin x)$ 与 $\\sin (\\cos x)$ 的大小关系是",
+    "solution": "$\\sin (\\cos x)<\\cos (\\sin x)$. 参照例 10 即可得结论.",
+    "remark": "",
+    "figures": []
+}

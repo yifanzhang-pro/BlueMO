@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题5 求出满足以下要求的所有 $\\mathbf{R} \\rightarrow \\mathbf{R}$ 的函数 $f 、 g 、 h$, 对任意的 $x, y \\in \\mathbf{R}$, 有\n$$\nf(x)-g(y)=(x-y) h(x+y) .\n$$",
+    "solution": "记原式为(1)式.\n在(1)中令 $x=y$, 得 $f(x)-g(x)=0$, 所以 $f(x)= g(x)$. 于是(1)式为 $f(x)-f(y)=(x-y) h(x+y) \\cdots$ (2). 在(2)中令 $y=0$, 并记 $f(0)=c$, 得 $f(x)=c+x h(x) \\cdots$ (3). 将 (3) 代入 (2) 中, 得 $x h(x)- y h(y)=(x-y) h(x+y) \\cdots$ (4). 在(4)中令 $y=-x$, 并记 $h(0)=b$, 则 $x(h(x)+ h(-x))=2 b x$. 从而 $h(x)+h(-x)=2 b \\cdots$ (5). 再在(4)式中用 $x+y$ 代换 $x$, $-y$ 代换 $y$, 得 $(x+y) h(x+y)+y h(-y)=(x+2 y) h(x) \\cdots$ (6), 在(6)式中将 $x, y$ 互换, 得 $(x+y) h(x+y)+x h(-x)=(2 x+y) h(y) \\cdots$ (7). (7)一(6), 得 $x h(-x)+x h(x)-y h(-y)-y h(y)=2 x h(y)-2 y h(x) \\cdots$ (8). 由(5)和(8), 便得 $2 b x-2 b y=2 x h(y)-2 y h(x)$. 即 $x h(y)-y h(x)=b(x-y), x(h(y)-b)=y(h(x)-b)$. 对 $x \\neq 0, y \\neq 0$, 有 $\\frac{h(x)-b}{x}=\\frac{h(y)-b}{y}$. 于是对任意的 $x(\\neq 0), \\frac{h(x)-b}{x}$ 为常数, 设为 $a$. 那么 $h(x)=a x+b, x \\neq 0 \\cdots$ (9), 易知(9)式对 $x=0$ 也成立.\n将(9)代入(3), 得 $f(x)=a x^2+b x+c$. 所以 $f(x)=g(x)= a x^2+b x+c, h(x)=a x+b$. 其中的 $a 、 b 、 c$ 为任意常数.\n经检验, $f(x)$, $g(x), h(x)$ 满足题设方程.",
+    "remark": "",
+    "figures": []
+}

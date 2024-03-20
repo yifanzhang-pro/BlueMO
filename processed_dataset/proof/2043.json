@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例3. 给定一个锐角 $\\triangle A B C$. 设 $h_a 、 h_b 、 h_c$ 分别表示 $\\triangle A B C$ 的三边 $B C$ 、 $C A 、 A B$ 上的高, $s$ 表示半周长.\n证明\n$$\n\\sqrt{3} \\cdot \\max \\left\\{h_a, h_b, h_c\\right\\} \\geqslant s .\n$$",
+    "solution": "证明:如果三角形 $\\triangle A B C$ 是正三角形,等号成立.\n下面证明: 如果 $\\triangle A B C$ 不是正三角形, 则问题可化归为等腰三角形的情形来证明.\n事实上, 如果 $\\angle A \\geqslant \\angle B>\\angle C$, 则 $\\angle A>\\frac{\\pi}{3}$, 且\n$$\nh_c>h_b \\geqslant h_a .\n$$\n设 $h$ 表示最大高 $h_c$, 如图(<FilePath:./images/volume9/figures/fig-c5i7.png>),延长 $\\triangle A B C$ 的最短边 $A B$ 到 $D$ 使得 $A D=A C$. 连接 $C D$. 因此如果 $\\sqrt{3} h \\geqslant s$ 对等腰 $\\triangle A C D$ 成立,则对一般的锐角 $\\triangle A B C$ 也成立.\n现在等腰 $\\triangle A C D$ 中证明 $\\sqrt{3} h \\geqslant s$.\n因为 $s=A C+\\frac{1}{2} C D, C D=2 A C \\cdot \\sin \\frac{A}{2}, h_c= A C \\cdot \\sin A$, 因此 $\\sqrt{3} h \\geqslant s$ 等价于\n$$\n\\sqrt{3} \\sin A \\geqslant 1+\\sin \\frac{A}{2}\\left(\\frac{\\pi}{3}<A<\\frac{\\pi}{2}\\right) . \\label{eq1}\n$$\n现令 $x=\\sin \\frac{A}{2}$, 则 $\\frac{1}{2}<x<\\frac{\\sqrt{2}}{2}$, 这时式 \\ref{eq1} 变为\n$$\n12 x^4-11 x^2+2 x+1 \\leqslant 0,\n$$\n即\n$$\n(2 x-1)(x+1)\\left(6 x^2-3 x-1\\right) \\leqslant 0 . \\label{eq2}\n$$\n注意到 $x$ 的取值范围, 易知 $2 x-1>0, x+1>0,6 x^2-3 x-1 \\leqslant 0$, 故 式\\ref{eq2} 成立,得证.",
+    "remark": "注:本例将一般三角形化归为等腰三角形证题的技巧值得注意, 这样的化归有时可大大简化问题的处理.",
+    "figures": [
+        "./images/volume9/figures/fig-c5i7.png"
+    ]
+}

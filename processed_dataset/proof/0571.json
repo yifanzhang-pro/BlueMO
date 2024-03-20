@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例1. 求最大的正整数 $A$, 使 $1,2, \\cdots, 100$ 的任何一个排列, 都有 10 个连续的项的和不小于 $A$.",
+    "solution": "分析: $1,2, \\cdots, 100$ 的一个排列, 要找到一个不小于 $A$ 的连续 10 个项的和比较困难, 我们可将所有没有公共项的连续 10 项的和一并考虑, 然后取其平均值进行估计.\n解设 $a_1, a_2, \\cdots, a_{100}$ 是 $1,2, \\cdots, 100$ 的任意一个排列, 令 $A_i=a_i+ a_{i+1}+\\cdots+a_{i+9}(i=1,2, \\cdots, 91)$, 则 $A_1=a_1+a_2+\\cdots+a_{10}, A_{11}=a_{11}+ a_{12}+\\cdots+a_{20}, \\cdots, A_{91}=a_{91}+a_{92}+\\cdots+a_{100}$.\n注意到 $A_1+A_{11}+\\cdots+A_{91}=a_1+a_2+\\cdots+a_{100}=5050$, 所以 $A_1$, $A_{11}, \\cdots, A_{91}$ 的平均值为 505 , 于是至少存在一个 $i(1 \\leqslant i \\leqslant 91)$, 使 $A_i \\geqslant 505$.\n当 $A \\geqslant 506$ 时,考察排列: $(100,1,99,2,98,3,97,4, \\cdots, 51,50)$, 其中各项满足 : $a_{2 i-1}=101-i(i=1,2, \\cdots, 50) ; a_{2 i}=i(i=1,2, \\cdots, 50)$. 所以 $a_{2 i-1}+a_{2 i}=101, a_{2 i}+a_{2 i+1}=100$. 此时, 可证明对任何 $i(1 \\leqslant i \\leqslant 91)$, 有 $A_i \\leqslant 505<A$.\n实际上,当 $i$ 为偶数时.\n令 $i=2 k$,则\n$$\n\\begin{aligned}\nA_{2 k} & =a_{2 k}+a_{2 k+1}+\\cdots+a_{2 k+9} \\\\\n& =\\left(a_{2 k}+a_{2 k+1}\\right)+\\left(a_{2 k+2}+a_{2 k+3}\\right)+\\cdots+\\left(a_{2 k+8}+a_{2 k+9}\\right) \\\\\n& =100 \\times 5=500<A .\n\\end{aligned}\n$$\n当 $i$ 为奇数时.\n令 $i=2 k-1$, 则\n$$\n\\begin{aligned}\nA_{2 k-1} & =a_{2 k-1}+a_{2 k}+\\cdots+a_{2 k+8} \\\\\n& =\\left(a_{2 k-1}+a_{2 k}\\right)+\\left(a_{2 k+1}+a_{2 k+2}\\right)+\\cdots+\\left(a_{2 k+7}+a_{2 k+8}\\right) \\\\\n& =101 \\times 5=505<A .\n\\end{aligned}\n$$\n故 $A_{\\text {max }}=505$.",
+    "remark": "",
+    "figures": []
+}

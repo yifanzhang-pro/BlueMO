@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter6.tex",
+    "text": "二、集合子集元素的性质设集合 $S=\\{x \\mid P(x)\\}$. 如果条件 $P^*$ 是条件 $P$ 的充分条件,那么集合\n$$\nS^*=\\left\\{x \\mid P^*(x), x \\in S\\right\\}\n$$\n是集合 $S$ 的子集, 即 $S^* \\subseteq S$. 这里 $P^*$ 是集合 $S$ 中部分元素的性质.\n我们还可以通过增加 $S$ 的“内涵”的方式来缩小它的“外延”: $S$ 是所有具备性质 $P$ 的元素 $x$ 的集合,增加新的性质 $P^*$, 得到集合\n$$\nS^*=\\left\\{x \\mid P(x) \\text { 且 } P^*(x), x \\in S\\right\\},\n$$\n显然 $S^*=\\left\\{x \\mid P^*(x), x \\in S\\right\\}$, 它是 $S$ 的子集, 即 $S^* \\subseteq S$.\n一类典型的问题就是从集合 $S$ 中分离出所有满足性质 $P^*$ 的元素, 从而得到所求的 $S^*$.",
+    "figures": []
+}

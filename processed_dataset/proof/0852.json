@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 设 $a_1, a_2, \\cdots, a_9$ 都是非零实数,证明:下面的 6 个数:\n$$\na_1 a_5 a_9, a_2 a_6 a_7, a_3 a_4 a_8,-a_3 a_5 a_7,-a_1 a_6 a_8,-a_2 a_4 a_9\n$$\n中至少有一个是负数.",
+    "solution": "我们考虑这 6 个数的乘积:\n$$\n\\begin{aligned}\n& \\left(a_1 a_5 a_9\\right)\\left(a_2 a_6 a_7\\right)\\left(a_3 a_4 a_8\\right)\\left(-a_3 a_5 a_7\\right)\\left(-a_1 a_6 a_8\\right)\\left(-a_2 a_4 a_9\\right) \\\\\n= & -\\left(a_1 a_2 a_3 a_4 a_5 a_6 a_7 a_8 a_9\\right)^2<0,\n\\end{aligned}\n$$\n所以,这 6 个数中至少有一个是负数.",
+    "remark": "",
+    "figures": []
+}

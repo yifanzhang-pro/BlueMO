@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 设数列 $\\left\\{a_n\\right\\}$ 满足: $a_0=1, a_{n+1}=\\frac{7 a_n+\\sqrt{45 a_n^2-36}}{2}, n \\in \\mathbf{N}_{+}$, 求证:\n第(1)问:对任意 $n \\in \\mathbf{N}, a_n$ 为正整数; 第(2)问: 对任意 $n \\in \\mathbf{N}, a_n a_{n+1}-1$ 为完全平方数.",
+    "solution": "第(1)问: 依题意 $\\left(2 a_{n+1}-7 a_n\\right)^2=45 a_n^2-36$. 即 $a_{n+1}^2-7 a_{n+1} a_n+a_n^2+9= 0 \\cdots$ (1), \n$n$ 用 $n-1$ 代替得 $a_n^2-7 a_n a_{n-1}+a_{n-1}^2+9=0 \\cdots$ (2), \n(2) - (1) 分解因式得 $\\left(a_{n+1}-a_{n-1}\\right)\\left(a_{n+1}+a_{n-1}-7 a_n\\right)=0$ \n由已知条件用数学归纳法易证 $a_{n+1}>a_n>$ 0 . \n从而 $a_{n+1}-a_n>0$, 故 $a_{n+1}=7 a_n-a_{n-1} \\cdots$ (3). \n又 $a_0=1, a_1=\\frac{7+\\sqrt{45-36}}{2} =5$ 为正整数且 $a_{n+1}>a_n$. \n用数学归纳法及 (3) 式便知对一切 $n \\in \\mathbf{N}, a_n$ 为正整数; \n第(2)问: 由 (1) 得 $a_n a_{n+1}-1=\\left(\\frac{a_{n+1}+a_n}{3}\\right)^2$. \n并且由 $a_0+a_1=6$ 是 3 的倍数, 以及 $a_{n+1}+a_n=9 a_n-\\left(a_n+a_{n-1}\\right)$ \n用数学归纳法可知对一切 $n \\in \\mathbf{N}, a_{n+1}+ a_n$ 是 3 的倍数,故对一切 $n \\in \\mathbf{N}, a_n a_{n+1}-1$ 是完全平方数.",
+    "remark": "",
+    "figures": []
+}

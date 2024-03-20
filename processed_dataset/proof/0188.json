@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例10. 证明: 有无穷多个正整数 $n$ 满足 $n \\mid\\left(2^n+1\\right)$.",
+    "solution": "证明:一考察最初几个 $n$ 的值, 小于 10 的数只有 $n=3^0, 3^1, 3^2$ 符合要求.\n我们可期望 $n=3^k(k \\geqslant 0)$ 都符合要求.\n证实这件事是一个简单的归纳练习.\n奠基是显然的.\n假设对 $k \\geqslant 0$ 已有 $3^k \\mid\\left(2^{3^k}+1\\right)$, 即\n$$\n2^{3^k}=-1+3^k u, u \\text { 为整数.\n}\n$$\n则 $2^{3^{k+1}}=\\left(-1+3^k u\\right)^3=-1+3^{k+1} v$ ( $v$ 是一个整数), 故 $3^{k+1} \\mid\\left(2^{3^{k+1}}+1\\right)$, 这 .表明 $n=3^{k+1}$ 也符合要求, 从而完成了上述断言的归纳证明.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 已知 $0<a, b, c<1$, 并且 $a b+b c+c a=1$. 证明: $\\frac{a}{1-a^2}+\\frac{b}{1-b^2}+ \\frac{c}{1-c^2} \\geqslant \\frac{3 \\sqrt{3}}{2}$.",
+    "solution": "设 $A=a\\left(1-a^2\\right)$, 则 $A^2=\\frac{1}{2} \\cdot 2 a^2\\left(1-a^2\\right)\\left(1-a^2\\right) \\leqslant \\frac{4}{27}$, 则 $A \\leqslant \\frac{2}{3 \\sqrt{3}}$, 所以 $\\frac{a}{1-a^2}=\\frac{a^2}{a\\left(1-a^2\\right)} \\geqslant \\frac{3 \\sqrt{3}}{2} a^2$, 同理可得其他二式, 则左边 $\\geqslant \\frac{3 \\sqrt{3}}{2}\\left(a^2+b^2+c^2\\right) \\geqslant \\frac{3 \\sqrt{3}}{2}(a b+b c+c a)=\\frac{3 \\sqrt{3}}{2}$.",
+    "remark": "",
+    "figures": []
+}

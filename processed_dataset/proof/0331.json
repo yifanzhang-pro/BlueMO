@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例7. 证明: $\\sum_{k=0}^n \\mathrm{C}_n^k 2^k \\mathrm{C}_{n=k}^{\\left[\\frac{n-k}{2}\\right]}=\\mathrm{C}_{2 n+1}^n$.",
+    "solution": "证明二:一方面 $2 n+1$ 个元素的集合 $S=\\left\\{a_1, a_2, \\cdots, a_{2 n+1}\\right\\}$ 的 $n$ 元子集共有 $\\mathrm{C}_{2 n+1}^n$ 个.\n另一方面将 $S$ 分为 $n$ 个二元子集和一个单元素集:\n$$\n\\left\\{a_1, a_2\\right\\},\\left\\{a_3, a_4\\right\\}, \\cdots,\\left\\{a_{2 n-1}, a_{2 n}\\right\\},\\left\\{a_{2 n+1}\\right\\}\n$$\n将 $S$ 的 $n$ 元子集分为 $n+1$ 类:第 $k$ 类的每一个 $n$ 元子集中恰有 $k$ 个元取自上述 $k$ 个二元子集 (每个二元子集恰取出一个元素), 其方法数为 $\\mathrm{C}_n^k \\cdot 2^k$, 其余\n$n-k$ 个元取自余下的子集 :\n当 $n-k$ 为偶数时, $a_{2 n+1}$ 必不取出,余下 $n-k$ 元取自剩下 $n-k$ 个二元子集中的 $\\frac{n-k}{2}$ 个子集(每个子集的两个元都取出), 共有 $\\mathrm{C}_{n-k}^{\\frac{n-k}{2}}=\\mathrm{C}_{n-k}^{\\left[\\frac{n-k}{2}\\right]}$ 种方法.\n当 $n-k$ 为奇数, $a_{2 n+1}$ 必取出, 余下 $n-k-1$ 个元取自余下的 $n-k$ 个二元子集中的 $\\frac{n-k-1}{2}$ 个(每个子集中的两个元都取出), 共有 $\\left.\\mathrm{C}_{n-k}^{\\frac{n-2-1}{2}}=\\mathrm{C}_{n-k}^{\\left[\\frac{n-k}{2}\\right.}\\right]$ 种方法.\n可见第 $k$ 类 $n$ 宇子集有 $\\left.\\mathrm{C}_n^k 2^k \\mathrm{C}_{n-k}^{\\left[\\frac{n-k}{2}\\right.}\\right]$ 个, 又 $k=0,1,2, \\cdots, n$. 故 $S$ 的 $n$ 元子集共有 $\\sum_{k=0}^n \\mathrm{C}_n^k 2^k \\mathrm{C}_{n-k}^{\\left[\\frac{n-k}{2}\\right]}$ 个.\n综合上述两个方面得 $\\sum_{k=0}^n \\mathrm{C}_n^k 2^k \\mathrm{C}_{n-k^2}^{\\left[\\frac{n-k}{2}\\right]}=\\mathrm{C}_{2 n+1}^n$.",
+    "remark": "",
+    "figures": []
+}

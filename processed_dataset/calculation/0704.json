@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题1 已知 $\\frac{1+\\sin \\theta+\\cos \\theta}{1+\\sin \\theta-\\cos \\theta}=\\frac{1}{2}$, 则 $\\cos \\theta$ 的值等于 ( ).\n(A) $\\frac{3}{5}$\n(B) $-\\frac{3}{5}$\n(C) $-\\frac{\\sqrt{5}}{5}$\n(D) $\\frac{4}{5}$",
+    "solution": "B. 因 $\\frac{1+\\sin \\theta+\\cos \\theta}{1+\\sin \\theta-\\cos \\theta}=\\frac{1}{2}$, 由合分比性质得 $\\frac{2 \\cos \\theta}{2+2 \\sin \\theta}=\\frac{-1}{3}$, 故 $\\cos \\theta=\\frac{1-\\tan ^2 \\frac{\\theta}{2}}{1+\\tan ^2 \\frac{\\theta}{2}}=\\frac{1-2^2}{1+2^2}=-\\frac{3}{5}$.",
+    "remark": "",
+    "figures": []
+}

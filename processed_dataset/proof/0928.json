@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题5 设 $a_1, a_2, \\cdots, a_n, b_1, b_2, \\cdots, b_n$ 均为正实数, 且 $a_1^2>a_2^2+\\cdots+a_n^2$, 求证:\n$$\n\\begin{aligned}\n& \\left(a_1^2-a_2^2-\\cdots-a_n^2\\right)\\left(b_1^2-b_2^2-\\cdots-b_n^2\\right) \\\\\n\\leqslant & \\left(a_1 b_1-a_2 b_2-\\cdots-a_n b_n\\right)^2 .\n\\end{aligned}\n$$",
+    "solution": "若 $\\frac{b_1}{a_1}, \\frac{b_2}{a_2}, \\cdots, \\frac{b_n}{a_n}$ 都相等, 记它们等于 $k$, 则 $b_i=k a_i, i=1,2, \\cdots, n$, 代入原不等式知等式成立.\n若这 $n$ 个比值不全相等, 不妨设 $\\frac{b_1}{a_1} \\neq \\frac{b_2}{a_2}$, 则 $\\frac{b_1}{a_1} a_2- b_2 \\neq 0$. 构造二次函数 $f(x)=\\left(a_1^2-a_2^2-\\cdots-a_n^2\\right) x^2-2\\left(a_1 b_1-a_2 b_2-\\cdots-\\right. \\left.a_n b_n\\right) x+\\left(b_1^2-b_2^2-\\cdots-b_n^2\\right)=\\left(a_1 x-b_1\\right)^2-\\left(a_2 x-b_2\\right)^2-\\cdots-\\left(a_n x-b_n\\right)^2$, $f(x)$ 的二次项系数为正, 且当 $x=\\frac{b_1}{a_1}$ 时, 有 $f\\left(\\frac{b_1}{a_1}\\right)<0$. 因此 $f(x)$ 与 $x$ 轴有交点, 其判别式 $\\Delta \\geqslant 0$, 故 $\\left(a_1^2-a_2^2-\\cdots-a_n^2\\right)\\left(b_1^2-b_2^2-\\cdots-b_n^2\\right) \\leqslant\\left(a_1 b_1-a_2 b_2-\\cdots-a_n b_n\\right)^2$.",
+    "remark": "",
+    "figures": []
+}

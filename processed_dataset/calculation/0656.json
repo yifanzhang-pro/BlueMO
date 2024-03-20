@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例18 已知 $\\triangle A B C$ 的三边 $a 、 b 、 c$ 和面积 $S$ 有如下关系: $S=a^2-(b- c)^2$, 且 $b+c=8$, 求 $\\triangle A B C$ 的面积 $S$ 的最大值.",
+    "solution": "分析:最值问题通常用函数性质来求.\n本题从条件出发, 利用余弦定理和三角形面积公式去求角 $A$ 的正弦函数值,再将面积 $S$ 转化为关于 $b$ 或 $c$ 的二次函数来求解.\n解法一由条件可得\n$$\nS=a^2-(b-c)^2=\\frac{1}{2} b c \\sin A,\n$$\n而\n$$\na^2-(b-c)^2=2 b c-2 b c \\cos A,\n$$\n所以\n$$\n2 b c-2 b c \\cos A=\\frac{1}{2} b c \\sin A .\n$$\n则\n$$\n\\cos A=1-\\frac{1}{4} \\sin A,\n$$\n故\n$$\n\\frac{1-\\cos A}{\\sin A}=\\frac{1}{4},\n$$\n即\n$$\n\\tan \\frac{A}{2}=\\frac{1}{4},\n$$\n所以\n$$\n\\sin A=\\frac{2 \\tan \\frac{A}{2}}{1+\\tan ^2 \\frac{A}{2}}=\\frac{8}{17}\n$$\n故\n$$\nS=\\frac{1}{2} b c \\sin A=\\frac{4}{17} b c=\\frac{4}{17} b(8-b)=\\frac{4}{17}\\left[-(b-4)^2+16\\right],\n$$\n当且仅当 $b=c=4$ 时, $S_{\\text {max }}=\\frac{64}{17}$.\n解法二利用海伦公式 $S=\\sqrt{p(p-a)(p-b)(p-c)}$ 和已知条件得\n$$\na^2-(b-c)^2=\\sqrt{\\frac{1}{16}(a+b+c)(b+c-a)(a+b-c)(a+c-b)},\n$$\n两边平方得 $a^2-(b-c)^2=\\frac{1}{16}(a+b+c)(b+c-a)$, 即\n$$\na^2=b^2+c^2-\\frac{30}{17} b c\n$$\n由此可得 $\\cos A=\\frac{15}{17}$, 故 $\\sin A=\\frac{8}{17}$.\n所以\n$$\nS=\\frac{1}{2} b c \\sin A=\\frac{4}{17} b c=\\frac{4}{17} b(8-b)=\\frac{4}{17}\\left[-(b-4)^2+16\\right],\n$$\n当且仅当 $b=c=4$ 时, $S_{\\text {max }}=\\frac{64}{17}$.",
+    "remark": "",
+    "figures": []
+}

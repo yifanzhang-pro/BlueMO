@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例8. 如图(<FilePath:./images/volume7/figures/fig-c9i12.png>), 设凸四边形 $A B C D$ 对角线交于 $O$ 点.\n$\\triangle O A D, \\triangle O B C$ 的外接圆交于 $O, M$ 两点, 直线 $O M$ 分别交 $\\triangle O A B, \\triangle O C D$ 的外接圆于 $T$, $S$ 两点.\n求证: $M$ 是线段 $T S$ 的中点.",
+    "solution": "证明:以 $O$ 为反演中心, 单位长度为反演半径作反演.\n反形如图(<FilePath:./images/volume7/figures/fig-c9i13.png>) 所示, 则 $S M=T M$ 的充要条件是 $T O-O M=O S+O M$, 即 $T O+2 O M=O S$, 这就等价于 $\\frac{1}{O S^{\\prime}}+\\frac{2}{O M^{\\prime}}=\\frac{1}{O T^{\\prime}}$.\n由上章性质 2 知, $T^{\\prime} 、 S^{\\prime}, O 、 M^{\\prime}$ 成调和点列, 于是 $\\frac{1}{O S^{\\prime}}+\\frac{2}{O M^{\\prime}}=\\frac{1}{O T^{\\prime}}$.",
+    "remark": "注:两圆相交时, 通常以其中一个交点为反演中心, 则两圆反形为两条相交的直线, 交点为两圆的另一个交点的反演点.",
+    "figures": [
+        "./images/volume7/figures/fig-c9i12.png",
+        "./images/volume7/figures/fig-c9i13.png"
+    ]
+}

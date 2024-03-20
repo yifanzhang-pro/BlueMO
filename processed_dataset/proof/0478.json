@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题5. $X 、 Y$ 两国留学生各 $n(n>2)$ 人, 每个 $X$ 国学生都与一些(不是所有) $Y$国学生跳过舞, 每个 $Y$ 国学生至少与一个 $X$ 国学生跳过舞, 证明一定可以找到两个 $X$ 国学生 $x, x^{\\prime}$ 及两个 $Y$ 国学生 $y, y^{\\prime}$, 使得 $x$ 与 $y, x^{\\prime}$ 与 $y^{\\prime}$跳过舞, 而 $x$ 与 $y^{\\prime}, x^{\\prime}$ 与 $y$ 没有跳过舞.",
+    "solution": "作偶图 $G=(X, Y ; E), X$ 的每个顶点表示一个 $X$ 国学生, $Y$ 的每一个顶点表示一个 $Y$ 国学生.\n如果一个 $X$ 国学生与一个 $Y$ 国学生跳过舞, 就在相应的两个点之间连一条边.\n设 $x$ 是集 $X$ 中度最大的点, 因 $d(x)<n$. 在 $Y$ 中存在一点 $y^{\\prime}$ 与 $x$ 不相邻.\n又设 $X$ 中的 $x^{\\prime}$ 与 $y^{\\prime}$ 相邻, 因除 $y^{\\prime}$ 外与 $x^{\\prime}$ 相邻的点为 $d\\left(x^{\\prime}\\right)-1$, 且 $d\\left(x^{\\prime}\\right)-1 \\leqslant d(x)-1<d(x)$, 所以在与 $x$ 相邻的点中一定有一个点 $y$ 与 $x^{\\prime}$ 不相邻.\n这样得出的 4 个点 $x, x^{\\prime}, y, y^{\\prime}$ 就代表了 4 个符合要求的人.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 证明: 不定方程 $x^n+1=y^{n+1}$ 没有正整数解 $(x, y, n)$, 其中 $(x, n+1)=1$, $n>1$.",
+    "solution": "显然 $y>1$. 原方程可分解为\n$$\n(y-1)\\left(y^n+y^{n-1}+\\cdots+y+1\\right)=x^n . \\label{eq1}\n$$\n关键是证明, $y-1$ 与 $y^n+y^{n-1}+\\cdots+y+1$ 互素.\n若它们的最大公约数 $d>$ 1 , 则 $d$ 有素因子 $p$. 由 $y \\equiv 1(\\bmod p)$ 知, $y^i \\equiv 1(\\bmod p)$, 从而有\n$$\ny^n+y^{n-1}+\\cdots+y+1 \\equiv n+1(\\bmod p),\n$$\n于是 $p \\mid(n+1)$; 但由 式\\ref{eq1} 又推出 $p \\mid x^n$, 从而素数 $p \\mid x$, 这与 $(x, n+1)=1$ 相违, 故 $d=1$. 现在由式\\ref{eq1}推出, 存在正整数 $a, b$, 使得\n$$\ny-1=a^n, y^n+y^{n-1}+\\cdots+y+1=b^n . \\label{eq2}\n$$\n但 $y^n<y^n+y^{n-1}+\\cdots+y+1<(y+1)^n$, 即 $y^n+y^{n-1}+\\cdots+y+1$ 界于两个相邻的 $n$ 次幂之间, 故它不能是整数的 $n$ 次幂, 这与已证得的 式\\ref{eq2} 相矛盾.",
+    "remark": "",
+    "figures": []
+}

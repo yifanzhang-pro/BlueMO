@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例26 已知函数 $f$ 定义在正整数集 $\\mathbf{N}_{+}$上, $f(1)=\\frac{3}{2}$, 并且对任意正整数 $m 、 n$,均有\n$$\nf(m+n)=\\left(1+\\frac{n}{m+1}\\right) f(m)+\\left(1+\\frac{m}{n+1}\\right) f(n)+m^2 n+m n+m n^2 .\n$$\n求 $f$.",
+    "solution": "解:令 $n=1$, 得\n$$\nf(m+1)=\\left(1+\\frac{1}{m+1}\\right) f(m)+\\left(1+\\frac{m}{2}\\right) \\cdot \\frac{3}{2}+m^2+2 m .\n$$\n整理, 得\n$$\n\\frac{f(m+1)}{m+2}-\\frac{f(m)}{m+1}=m+\\frac{3}{4} .\n$$\n于是,利用累差求和的方法,有\n$$\n\\begin{aligned}\n\\sum_{k=1}^{m-1}\\left(\\frac{f(k+1)}{k+2}-\\frac{f(k)}{k+1}\\right) & =\\sum_{k=1}^{m-1}\\left(k+\\frac{3}{4}\\right) \\\\\n& =\\frac{(m-1) m}{2}+\\frac{3}{4}(m-1) .\n\\end{aligned}\n$$\n所以\n$$\n\\frac{f(m)}{m+1}-\\frac{f(1)}{2}=\\frac{1}{4}(m-1)(2 m+3),\n$$\n故\n$$\nf(m)=\\frac{1}{4} m(m+1)(2 m+1) .\n$$\n因此所求的函数即为\n$$\nf(m)=\\frac{1}{4} m(m+1)(2 m+1) .\n$$",
+    "remark": "",
+    "figures": []
+}

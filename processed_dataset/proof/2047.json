@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $\\triangle A B C$ 和 $\\triangle A^{\\prime} B^{\\prime} C^{\\prime}$ 是同一个平面上的两个正三角形, 且顶点排列方向相同, 求证: 三条线段 $A A^{\\prime} 、 B B^{\\prime} 、 C C^{\\prime}$ 中任何两个之和大于或等于第三个.",
+    "solution": "证明:如图(<FilePath:./images/volume9/figures/fig-c6i1.png>), 对顶点排列方向相同的两个相似三角形 $\\triangle A B C$ 和 $\\triangle A^{\\prime} B^{\\prime} C^{\\prime}$ 总有一恒等式\n$$\n\\begin{aligned}\n& \\left(z_1^{\\prime}-z_1\\right)\\left(z_2-z_3\\right)+\\left(z_2^{\\prime}-z_2\\right)\\left(z_3-z_1\\right)+ \\\\\n& \\left(z_3^{\\prime}-z_3\\right)\\left(z_1-z_2\\right)=0, \\label{eq1}\n\\end{aligned}\n$$\n其中 $z_1 、 z_2 、 z_3$ 分别是 $A 、 B 、 C$ 对应的复数; $z_1^{\\prime}$ 、 $z_2^{\\prime} 、 z_3^{\\prime}$ 分别是 $A^{\\prime} 、 B^{\\prime} 、 C^{\\prime}$ 对应的复数.\n由复数模的性质从式\\ref{eq1}可得\n$$\n\\left|z_1^{\\prime}-z_1\\right| \\cdot\\left|z_2-z_3\\right|+\\left|z_2^{\\prime}-z_2\\right| \\cdot\\left|z_3-z_1\\right| \\geqslant\\left|\\left(z_3^{\\prime}-z_3\\right)\\left(z_1-z_2\\right)\\right| .\n$$\n注意到 $\\triangle A B C$ 是正三角形, 即\n$$\n\\left|z_2-z_3\\right|=\\left|z_3-z_1\\right|=\\left|z_1-z_2\\right|,\n$$\n故有\n$$\n\\left|z_1^{\\prime}-z_1\\right|+\\left|z_2^{\\prime}-z_2\\right| \\geqslant\\left|z_3^{\\prime}-z_3\\right|\n$$\n这就是\n$$\nA A^{\\prime}+B B^{\\prime} \\geqslant C C^{\\prime}\n$$\n同理可证另外的两个不等式.\n现回忆平面几何中一个简单的命题:三个正数 $a 、 b 、 c$ 构成一个三角形三边的充要条件是存在正数 $x 、 y 、 z$ 使得 $a=y+z, b=x+z, c=x+y$. (这个结论的充分性可直接验证,必要性可通过如图(<FilePath:./images/volume9/figures/fig-c6i2.png>) 中的分解看出.)\n依据这个命题,关于三角形的几何不等式总可以通过代换 $x=-a+b+c, y=a-b+c, z=a+b-c$ 将问题转化为涉及正数 $x 、 y 、 z$ 的不等式.\n利用正数代换的一个十分典型的问题是第 24 届 IMO 试题:\n在 $\\triangle A B C$ 中, 求证:\n$$\nb^2 c(b-c)+c^2 a(c-a)+a^2 b(a-b) \\geqslant 0 .\n$$\n这个问题的一种简洁证法是利用正数代换转化为 $x 、 y 、 z$ 的不等式\n$$\n\\frac{x^2}{y}+\\frac{y^2}{z}+\\frac{z^2}{x} \\geqslant x+y+z,\n$$\n从而用一下 Cauchy 不等式便可.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c6i1.png",
+        "./images/volume9/figures/fig-c6i2.png"
+    ]
+}

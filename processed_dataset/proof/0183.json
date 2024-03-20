@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例6. 求出具有下述性质的正整数 $n$ : 它被 $\\leqslant \\sqrt{n}$ 的所有正整数整除.",
+    "solution": "解:法一我们首先证明, 每个正整数 $n$ 可唯一地表示为形式\n$$\nn=q^2+r, 0 \\leqslant r \\leqslant 2 q. \\label{eq1}\n$$\n这是因为任意正整数 $n$ 必介于两个相邻的平方数之间, 即有正整数 $q$, 使得 $q^2 \\leqslant n<(q+1)^2$. 令 $r=n-q^2$, 则 $r \\geqslant 0$, 又 $r<(q+1)^2-q^2=2 q+1$, 故整数 $r \\leqslant 2 q$, 从而 $n$ 有形如式\\ref{eq1}的表示.\n另一方面, 若 $n$ 可表示为式\\ref{eq1}的形式, 则易知 $q^2 \\leqslant n<(q+1)^2$, 故 $q= [\\sqrt{n}]$, 由此即知 $q$ 被 $n$ 唯一确定, 相应的 $r$ 因此也被确定.\n利用式\\ref{eq1}便不难解决例 6. 因已知 $q=[\\sqrt{n}]$ 整除 $n$, 结合式\\ref{eq1}知 $q \\mid r$, 故 $r=0$ 、 $q$ 或 $2 q$, 即 $n$ 具有形式\n$$\nn=q^2, q^2+q, q^2+2 q .\n$$\n$n=1,2,3$ 显然合要求.\n设 $n>3$, 则 $q=[\\sqrt{n}] \\geqslant 2$, 故由已知条件知\n$(q-1) \\mid n$. 若 $n=q^2$, 由\n$$\nq^2=q(q-1)+q \\quad \\text { 及 } \\quad(q-1, q)=1\n$$\n可见,必须 $q-1=1$, 即 $q=2$, 所以 $n=4$.\n同样, 若 $n=q^2+q$, 则 $q=2,3$, 从而 $n=6,12$; 若 $n=q^2+2 q$, 则 $q=$ 2 或 4 , 相应地 $n=8,24$. 因此, $n$ 只可能是 $1,2,3,4,6,8,12,24$, 经检验它们均符合要求.",
+    "remark": "",
+    "figures": []
+}

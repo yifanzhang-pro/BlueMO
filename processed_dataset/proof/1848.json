@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设 $\\triangle A B C$ 的外接圆为 $\\Gamma$, 圆心为 $O$ 的圆与线段 $B C$ 切于点 $P$, 与不含点 $A$ 的弧 $\\overparen{B C}$ 切于点 $Q$. 若 $\\angle B A O=\\angle C A O$, 证明: $\\angle P A O=\\angle Q A O$.",
+    "solution": "证明: 若 $A B=A C$, 则点 $P 、 Q$ 均在 $\\angle B A C$ 的角平分线上, $\\angle P A O=\\angle Q A O=O$. 若 $A B \\neq A C$, 如图(<FilePath:./images/volume7/figures/fig-c4a6.png>), 设 $\\triangle A B C$ 的外接圆的圆心为 $O^{\\prime}, B C$ 的中垂线与 $\\odot O^{\\prime}$ 交于点 $P^{\\prime} 、 M$, 其中, $P^{\\prime}, A$ 在 $B C$ 的同侧.\n则 $O^{\\prime} 、 O 、 Q$ 三点共线.\n由 $\\angle B A O=\\angle C A O$, 则 $A 、 O 、 M$ 三点共线.\n设 $P^{\\prime} Q$ 与 $\\odot O$ 交于点 $R$. 由 $\\angle M P^{\\prime} R=\\angle O^{\\prime} P^{\\prime} Q= \\angle O^{\\prime} Q R=\\angle O R Q$, 得 $O R / / M P^{\\prime}$. 因为 $M P^{\\prime} \\perp B C$, 所以, $O R \\perp B C$. 从而, $R$ 为 $\\odot O$ 与 $B C$ 的切点, 即 $R=P$. 这也就意味着 $P^{\\prime} 、 P 、 Q$ 三点共线, 且有 $\\angle Q P^{\\prime} M=\\angle P Q O=\\angle Q P O$. 又 $\\angle Q A O=\\angle Q A M=\\angle Q P^{\\prime} M$, 则 $\\angle Q A O=\\angle Q P O$. 从而, $A 、 P 、 O 、 Q$ 四点共圆.\n故 $\\angle P A O=\\angle P Q O=\\angle Q P O=\\angle Q A O$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4a6.png"
+    ]
+}

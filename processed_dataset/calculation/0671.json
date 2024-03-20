@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 设 $a 、 b 、 c$ 是正实数且 $a b c+a+c=b$, 求 $P=\\frac{2}{a^2+1}+\\frac{3}{c^2+1}- \\frac{2}{b^2+1}$ 的最大值.",
+    "solution": "解:由 $a b c+a+c=b \\Rightarrow b=\\frac{a+c}{1-a c}(a c \\neq 1)$, 令 $a=\\tan \\alpha, b=\\tan \\beta$, $c=\\tan \\gamma\\left(\\alpha, \\beta, \\gamma \\in\\left(0, \\frac{\\pi}{2}\\right)\\right)$, 则 $\\tan \\beta=\\frac{\\tan \\alpha+\\tan \\gamma}{1-\\tan \\alpha \\tan \\gamma}=\\tan (\\alpha+\\gamma)$, 故 $\\beta= \\alpha+\\gamma$,从而\n$$\n\\begin{aligned}\nP & =\\frac{2}{1+\\tan ^2 \\alpha}-\\frac{2}{1+\\tan ^2 \\beta}+\\frac{3}{1+\\tan ^2 \\gamma} \\\\\n& =2 \\cos ^2 \\alpha-2 \\cos ^2(\\alpha+\\gamma)+3 \\cos ^2 \\gamma \\\\\n& =1+\\cos 2 \\alpha-[1+\\cos 2(\\alpha+\\gamma)]+3 \\cos ^2 \\gamma \\\\\n& =2 \\sin \\gamma \\sin (2 \\alpha+\\gamma)+3 \\cos ^2 \\gamma \\leqslant 2 \\sin \\gamma+3-3 \\sin ^2 \\gamma \\\\\n& =-3\\left(\\sin \\gamma-\\frac{1}{3}\\right)^2+\\frac{10}{3} \\leqslant \\frac{10}{3} .\n\\end{aligned}\n$$\n当且仅当 $2 \\alpha+\\gamma=\\frac{\\pi}{2}$ 且 $\\sin \\gamma=\\frac{1}{3}$ 时, 等号成立.\n即 $a=\\frac{\\sqrt{2}}{2}, b=\\sqrt{2}, c=$\n$$\n\\frac{\\sqrt{2}}{4} \\text { 时, } P_{\\text {max }}=\\frac{10}{3} \\text {. }\n$$\n评注形如 $\\frac{2 x}{1 \\pm x}, \\frac{1-x^2}{1+x^2}, \\frac{x-y}{1+x y}, \\frac{x+y}{1-x y}, \\sqrt{a^2+x^2}$ 等代数式中的 $x, y$,可用正 (余) 切代换, 而 $\\sqrt{1-x^2}$ 之类的 $x$ 常可用正 (余) 弦代换, $\\sqrt{x^2-a^2}$ 之类用正(余) 割代换.",
+    "remark": "",
+    "figures": []
+}

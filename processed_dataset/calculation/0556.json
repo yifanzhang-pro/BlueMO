@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题3 给定一个正整数 $n(\\geqslant 6)$, 有多少个满足条件\n$$\n1 \\leqslant a<b \\leqslant c<d \\leqslant n\n$$\n的四元有序数组 $(a, b, c, d)$ ?",
+    "solution": "作映射 $f:(a, b, c, d) \\mapsto(a, b, c+1, d+1)$, 于是 $f$ 是从四元整数集 $A=\\{(a, b, c, d) \\mid 1 \\leqslant a<b \\leqslant c<d \\leqslant n\\}$ 到四元整数集 $B=\\left\\{\\left(a^{\\prime}, b^{\\prime},c^{\\prime}, d^{\\prime}\\right) \\mid 1 \\leqslant a^{\\prime}<b^{\\prime}<c^{\\prime}<d^{\\prime} \\leqslant n+1\\right\\}$ 的一个一一映射, 所以 $|A|=|B|= \\mathrm{C}_{n+1}^4$.",
+    "remark": "",
+    "figures": []
+}

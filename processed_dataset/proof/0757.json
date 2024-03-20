@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 四边形 $A B C D$ 中, 以边 $A B, B C, C D, D A$ 为斜边分别向四边形外侧作等腰直角三角形 $\\triangle A B E, \\triangle B C F, \\triangle C D G, \\triangle D A H$. 证明 $E G$ 与 $F H$ 垂直且相等.",
+    "solution": "用复数法.\n设 $A, B, C, D, E, F, G, H$ 分别对应复数 $a, b, c, d, e, f, g, h$. 不妨设 $A, B, C, D$ 依逆时针排列, 则 $E G$ 所对应的复数\n$$\n\\begin{aligned}\ng-e & =(g-d)+(d-a)+(a-e) \\\\\n& =\\frac{\\sqrt{2}}{2} \\mathrm{e}^{\\frac{\\pi \\mathrm{i}}{4}}(c-d)+(d-a)+\\frac{\\sqrt{2}}{2} \\mathrm{e}^{-\\frac{\\pi \\mathrm{ij}}{4}}(a-b) \\\\\n& =\\frac{1+\\mathrm{i}}{2}(c-d)+(d-a)+\\frac{1-\\mathrm{i}}{2}(a-b) \\\\\n& =\\frac{-a-b+c+d}{2}+\\frac{-a+b+c-d}{2} \\mathrm{i} .\n\\end{aligned}\n$$\n同理可求得 $F H$ 所对应的复数\n$$\nh-f=\\frac{-b-c+d}{2}+\\frac{-a}{-}+\\frac{b+c+d-a}{2} \\text { i. }\n$$\n所以 $h-f=(g-e) \\mathrm{i}$, 即 $E G$ 与 $F H$ 垂直且相等.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设正整数 $a 、 b 、 c 、 d$ 满足 $a b=c d$, 证明: $a+b+c+d$ 不是素数.",
+    "solution": "证明:一本题不宜用代数式的分解来产生所需的分解.\n我们的第一种解法是应用数的分解,指出 $a+b+c+d$ 的一个真因子.\n由 $a b=c d$, 可设 $\\frac{a}{c}=\\frac{d}{b}=\\frac{m}{n}$, 其中 $m$ 和 $n$ 是互素的正整数.\n由 $\\frac{a}{c}=\\frac{m}{n}$ 意味着有理数 $\\frac{a}{c}$ 的分子、分母约去了某个正整数 $u$ 后, 得到既约分数 $\\frac{m}{n}$, 因此\n$$\na=m u, c=n u . \\label{eq1}\n$$\n同理,有正整数 $v$,使得\n$$\nb=n v, d=m v . \\label{eq2}\n$$\n因此, $a+b+c+d=(m+n)(u+v)$ 是两个大于 1 的整数之积, 从而不是素数.",
+    "remark": "",
+    "figures": []
+}

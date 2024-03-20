@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题15. 设 $k$ 为给定的正整数, 考虑数列 $\\left\\{a_n\\right\\}$ :\n$$\na_0=1, a_{n+1}=a_n+\\left[\\sqrt[k]{a_n}\\right], n=0,1,2, \\cdots .\n$$\n对每个 $k$, 求数列 $\\left\\{\\sqrt[k]{a_n}\\right\\}$ 中所有是整数的项组成的集合.",
+    "solution": "用 $A_k$ 表示数列 $\\left\\{\\sqrt[k]{a_n}\\right\\}$ 中为整数的项组成的集合.\n我们断言: 对任意 $k \\in \\mathbf{N}^*, A_k=\\left\\{2^m \\mid m=0,1,2, \\cdots\\right\\}$ (即 $A_k$ 与 $k$ 的具体值无关, 它由所有 2 的幂组成).\n由 $a_0=1$, 知 $1 \\in A_k$,下设 $x \\in A_k$, 我们证明: $A_k$ 中比 $x$ 大的数中最小的那个是 $2 x$. 依此结论结合数学归纳法可知断言成立.\n事实上, 设 $x \\in A_k$, 即存在 $n \\in \\mathbf{N}$, 使得 $a_n=x^k$, 则对所有满足 $x^k \\leqslant a_j< (x+1)^k$ 的下标 $j$, 有 $a_{j+1}=a_j+x$, 即 $a_{j+1} \\equiv a_j(\\bmod x)$. 从 $a_n$ 出发, 可知对这样的 $j$, 有 $a_{j+1} \\equiv a_j \\equiv 0(\\bmod x)$, 现在取上述条件中最大的 $j$, 这时 $a_j<(x+ 1)^k$, 而 $a_{j+1} \\geqslant(x+1)^k$. 记 $a_{j+1}=(x+1)^k+m_1$, 则由 $a_{j+1}=a_j+x$ 知 $0 \\leqslant m_1<x$, 而 $a_{j+1} \\equiv 0(\\bmod x)$, 故 $m_1+1 \\equiv 0(\\bmod x)$, 所以 $m_1=x-1$, 从而 $a_{j+1}=(x+1)^k+x-1$.\n重复上述讨论, 通过每次加上 $x+1$, 得到形如 $(x+2)^k+m_2$ 的项, $0 \\leqslant m_2<n+1$, 并由 $x-1 \\equiv(x+2)^k+m_2 \\equiv 1+m_2(\\bmod x+1)$ 可确定 $m_2= x-2$, 依次递推, 一般地, 利用同余式 $m_i \\equiv(x+i+1)^k+m_{i+1}(\\bmod x+i)$, 可确定 $m_i=x-i, i=1,2, \\cdots, x$. 从而数列 $\\left\\{a_n\\right\\}$ 中的下一个 $k$ 次方数在 $m_i$ 第一次取零时得到, 这时 $i=x$, 即下一个 $k$ 次方数为 $(x+x)^k=(2 x)^k$. 也就是说 $A_k$ 中比 $x$ 大的数中最小的那个是 $2 x$.\n问题获解.",
+    "remark": "",
+    "figures": []
+}

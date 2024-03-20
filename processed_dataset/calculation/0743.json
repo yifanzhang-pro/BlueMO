@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题16. 在 $\\triangle A B C$ 中, $a=4, b=6, S_{\\triangle}=6 \\sqrt{2}$, 则角 $C=$",
+    "solution": "$45^{\\circ}$ 或 $135^{\\circ}$. 由 $S_{\\Delta}=\\frac{1}{2} a b \\sin C$, 得 $\\frac{1}{2} \\times 4 \\times 6 \\sin C=6 \\sqrt{2}, \\sin C=\\frac{\\sqrt{2}}{2}$, 故 $C=45^{\\circ}$ 或 $135^{\\circ}$.",
+    "remark": "",
+    "figures": []
+}

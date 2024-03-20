@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题29 函数 $f$ 定义在有序正整数对的集合上, 且满足下列性质:\n(1) $f(x, x)=x$;\n(2) $f(x, y)=f(y, x)$;\n(3) $(x+y) f(x, y)=y f(x, x+y)$.\n求 $f(14,52)$.",
+    "solution": "令 $y=z-x$ 代入所给条件 (3) 中, 得 $f(x, z)=\\frac{z}{z-x} f(x, z-x) \\cdots$ (1). 利用条件 (2) 和 (1)式, 有 $f(14,52)=\\frac{52}{38} f(14,38)=\\frac{52}{24} f(14,24)= \\frac{52}{10} f(14,10)=\\frac{52}{10} f(10,14)=\\frac{52 \\times 14}{10 \\times 4} f(10,4)=\\frac{52 \\times 14}{10 \\times 4} f(4,10)= \\frac{52 \\times 14}{4 \\times 6} f(4,6)=\\frac{52 \\times 14}{4 \\times 2} f(4,2)=\\frac{52 \\times 14}{4 \\times 2} f(2,4)=\\frac{52 \\times 14}{4} f(2,2)$, 因为由条件 (1) 知, $f(2,2)=2$, 所以 $f(14,52)=364$.",
+    "remark": "",
+    "figures": []
+}

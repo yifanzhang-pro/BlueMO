@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例8 已知 $\\alpha 、 \\beta$ 为锐角, 则 $\\alpha+\\beta=\\frac{\\pi}{2}$ 的充要条件为: $\\frac{\\sin ^4 \\alpha}{\\cos ^2 \\beta}+\\frac{\\cos ^4 \\alpha}{\\sin ^2 \\beta}=1$.",
+    "solution": "证明:必要性: 因为 $\\alpha+\\beta=\\frac{\\pi}{2}$, 则 $\\sin ^2 \\alpha=\\cos ^2 \\beta, \\cos ^2 \\alpha=\\sin ^2 \\beta$, 则左边 $=\\sin ^2 \\alpha+\\cos ^2 \\alpha==1=$ 右边.\n充分性：\n证法一由 Cauchy 不等式知\n$$\n\\frac{\\sin ^4 \\alpha}{\\cos ^2 \\beta}+\\frac{\\cos ^4 \\alpha}{\\sin ^2 \\beta} \\geqslant \\frac{\\left(\\sin ^2 \\alpha+\\cos ^2 \\alpha\\right)^2}{\\cos ^2 \\beta+\\sin ^2 \\beta}=\\frac{1^2}{1}=1 .\n$$\n当且仅当\n$$\n\\frac{\\sin ^2 \\alpha}{\\cos ^2 \\beta}=\\frac{\\cos ^2 \\alpha}{\\sin ^2 \\beta},\n$$\n即\n$$\n\\sin ^2 \\alpha \\sin ^2 \\beta-\\cos ^2 \\alpha \\cos ^2 \\beta=0,\n$$\n即 $(\\cos \\alpha \\cos \\beta-\\sin \\alpha \\sin \\beta)(\\cos \\alpha \\cos \\beta+\\sin \\alpha \\sin \\beta)=0$,\n即 $\\cos (\\alpha+\\beta) \\cos (\\alpha-\\beta)=0$ 时等号成立.\n又因为 $\\alpha 、 \\beta \\in\\left(0, \\frac{\\pi}{2}\\right)$, 则 $-\\frac{\\pi}{2}<\\alpha-\\beta<\\frac{\\pi}{2}, 0<\\alpha+\\beta<\\pi$, 所以 $\\alpha+\\beta= \\frac{\\pi}{2}$.\n证法二\n$$\n\\begin{aligned}\n& \\frac{\\sin ^4 \\alpha}{\\cos ^2 \\beta}+\\cos ^2 \\beta \\geqslant 2 \\sin ^2 \\alpha, \\\\\n& \\frac{\\cos ^4 \\alpha}{\\sin ^2 \\beta}+\\sin ^2 \\beta \\geqslant 2 \\cos ^2 \\alpha,\n\\end{aligned}\n$$\n相加得: $\\frac{\\sin ^4 \\alpha}{\\cos ^2 \\beta}+\\frac{\\cos ^4 \\alpha}{\\sin ^2 \\beta} \\geqslant 1$, 所以 $\\left\\{\\begin{array}{l}\\sin ^2 \\alpha=\\cos ^2 \\beta, \\\\ \\cos ^2 \\alpha=\\sin ^2 \\beta,\\end{array}\\right.$ 同上可得.",
+    "remark": "",
+    "figures": []
+}

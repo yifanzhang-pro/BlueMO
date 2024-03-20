@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题40. 求所有的正整数数列 $a_0, a_1, \\cdots, a_n$, 使得\n(1) $\\frac{a_0}{a_1}+\\frac{a_1}{a_2}+\\cdots+\\frac{a_{n-1}}{a_n}=\\frac{99}{100}$;\n(2) $a_0=1$, 且 $\\left(a_{k+1}-1\\right) a_{k-1} \\geqslant a_k^2\\left(a_k-1\\right), k=1,2, \\cdots, n-1$.",
+    "solution": "设 $a_1, \\cdots, a_n$ 是符合条件的正整数, 则由 (1) 可知对 $1 \\leqslant k \\leqslant n$, 都有 $a_k>a_{k-1}$ (否则左边 $\\geqslant 1$, 而右边 $<1$ ), 从而, 有 $a_k>1$, 于是, 由 (2) 知\n$$\n\\frac{a_{k-1}}{a_k\\left(a_k-1\\right)} \\geqslant \\frac{a_k}{a_{k+1}-1},\n$$\n即 $\\frac{a_{k-1}}{a_k-1}-\\frac{a_{k-1}}{a_k} \\geqslant \\frac{a_k}{a_{k+1}-1}$, 所以 $\\frac{a_{k-1}}{a_k} \\leqslant \\frac{a_{k-1}}{a_k-1}-\\frac{a_k}{a_{k+1}-1}$, 对 $k=i+1, \\cdots$,\n$n-1$ 求和, 就有\n$$\n\\frac{a_i}{a_{i+1}}+\\cdots+\\frac{a_{n-1}}{a_n} \\leqslant \\frac{a_i}{a_{i+1}-1}-\\frac{a_{n-1}}{a_n-1}+\\frac{a_{n-1}}{a_n}<\\frac{a_i}{a_{i+1}-1} . \\label{eq1}\n$$\n在式\\ref{eq1}中令 $i=0$, 利用 (1) 就有 $\\frac{1}{a_1} \\leqslant \\frac{99}{100}=\\sum_{i=0}^{n-1} \\frac{a_i}{a_{i+1}}<\\frac{1}{a_1-1}$, 故 $a_1=2$. 类似地, 在 式\\ref{eq1} 中取 $i=1$, 结合 (1) 就有\n$$\n\\frac{1}{a_2} \\leqslant \\frac{1}{a_1}\\left(\\frac{99}{100}-\\frac{1}{a_1}\\right)<\\frac{1}{a_2-1},\n$$\n可得 $\\frac{1}{a_2} \\leqslant \\frac{49}{200}<\\frac{1}{a_2-1}$, 知 $a_2=5$. 重复这样的讨论, 在 式\\ref{eq1} 中分别取 $i=2 、 3$, 可得 $a_3=56, a_4=25 \\times 56^2=78400$. 此时\n$$\n\\frac{1}{a_5} \\leqslant \\frac{1}{a_4}\\left(\\frac{99}{100}-\\frac{1}{2}-\\frac{2}{5}-\\frac{5}{56}-\\frac{56}{25 \\times 56^2}\\right)=0 .\n$$\n故 $a_5$ 不存在.\n综上可知, 仅当 $n=4$ 时, 这样的数列存在, 对应地 $a_1, a_2, a_3, a_4$ 为 2,5 , 56, 78400 .",
+    "remark": "",
+    "figures": []
+}

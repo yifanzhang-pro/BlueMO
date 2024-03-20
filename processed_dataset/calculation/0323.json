@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 设 $X=\\{1,2, \\cdots, n\\}, A_i=\\left\\{a_i, b_i, c_i\\right\\}\\left(a_i<b_i<c_i, i=1\\right.$, $2, \\cdots, m)$ 是 $X$ 的 3 元子集, 对任何 $A_i 、 A_j(1 \\leqslant i<j \\leqslant m), a_i=a_j, b_i= b_j, c_i=c_j$ 至多有一个成立, 求 $m$ 的最大值.",
+    "solution": "解:于 $2 \\leqslant k \\leqslant n-1$, 考察以 $k$ 为中间元素的 3 元子集 $\\left\\{a_i, k, c_i\\right\\}$, 其中 $a_i<k<c_i$, 设这样的集合个数为 $f(k)$. 因为 $a_i$ 可在 $1,2, \\cdots, k-1$ 中取值, 于是 $f(k) \\leqslant k-1$. 又 $c_i$ 可在 $n, n-1, \\cdots, k+1$ 中取值, 于是 $f(k) \\leqslant n-k$. 所以 $f(k) \\leqslant \\min \\{k-1, n-k\\}$. 所以\n$$\nm=\\sum_{k=2}^{n-1} f(k) \\leqslant \\sum_{k=2}^{n-1} \\min \\{k-1, n-k\\}= \\begin{cases}\\frac{n(n-2)}{4} & (n \\text { 为偶数 }), \\\\ \\left(\\frac{n-1}{2}\\right)^2 & (n \\text { 为奇数 }) .\\end{cases}\n$$\n又取 $A_1, A_2, \\cdots, A_m$ 为所有满足 $a+c=2 b$ 的 3 元子集 $\\{a, b, c\\}$, 则\n$$\nm= \\begin{cases}\\frac{n(n-2)}{4} & (n \\text { 为偶数 }), \\\\ \\left(\\frac{n-1}{2}\\right)^2 & (n \\text { 为奇数 }) .\\end{cases}\n$$\n故\n$$\nm_{\\max }= \\begin{cases}\\frac{n(n-2)}{4} & (n \\text { 为偶数 }), \\\\ \\left(\\frac{n-1}{2}\\right)^2 & (n \\text { 为奇数 }) .\\end{cases}\n$$",
+    "remark": "",
+    "figures": []
+}

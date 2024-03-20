@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 在一次实战军事演习中, 红方的一条直线防线上设有 20 个岗位.\n为了试验 5 种不同的新式武器, 打算安排 5 个岗位配备这些新式武器, 要求第一个和最后一个岗位不配备, 每相邻 5 个岗位至少有一个岗位配备, 相邻 2\n个岗位不同时配备.\n:共有多少种配备新式武器的方案?",
+    "solution": "设配备新式武器的 5 个岗位序号从小到大依次是 $a_1, a_2, a_3, a_4, a_5$. 作代换\n$$\n\\begin{gathered}\nx_1=a_1, x_2=a_2-a_1, x_3=a_3-a_2, \\\\\nx_4=a_4-a_3, x_5=a_5-a_4, x_6=20-a_5 .\n\\end{gathered}\n$$\n则有\n$$\nx_1+x_2+x_3+x_4+x_5+x_6=20,2 \\leqslant x_k \\leqslant 5(1 \\leqslant k \\leqslant 5), 1 \\leqslant x_6 \\leqslant 4 .\n$$\n再作代换 $y_k=x_k-1(1 \\leqslant k \\leqslant 5), y_6=x_6$, 从而有\n$$\ny_1+y_2+y_3+y_4+y_5+y_6=15,1 \\leqslant y_k \\leqslant 4(1 \\leqslant k \\leqslant 6) .\n$$\n设 $I$ 为不定方程 $y_1+y_2+y_3+y_4+y_5+y_6=15$ 的正整数解全体, $A_k$ 为 $I$ 中有 $y_k>4$ 成立的解的全体, 则\n$$\n\\left|\\bigcap_{k=1}^6 \\overline{A_k}\\right|=|I|-\\left|\\bigcup_{k=1}^6 A_k\\right|=|I|-\\sum_{k=1}^6\\left|A_k\\right|+\\sum_{1 \\leqslant j<k \\leqslant 6}\\left|A_j \\cap A_k\\right| .\n$$\n上式成立的原因是 $A_i \\cap A_j \\cap A_k=\\varnothing$, 因为 $I$ 中不具有同时使 $y_i, y_j$, $y_k>4$ 成立的解.\n又根据对应原理可知上式中 $|I|=\\mathrm{C}_{14}^5,\\left|A_k\\right|=\\mathrm{C}_{10}^5$, $\\left|A_j \\cap A_k\\right|=\\mathrm{C}_6^5$, 所以\n$$\n\\left|\\bigcap_{k=1}^6 \\overline{A_k}\\right|=\\mathrm{C}_{14}^5-6 \\mathrm{C}_{10}^5+\\mathrm{C}_6^2 \\mathrm{C}_6^5=2002-1512+90=580 .\n$$\n上面求得了 5 个岗位的选取方法数.\n考虑到 5 种新式武器在 5 个岗位的排列方法有 $5 !=120$ 种, 故总共配备新式武器的方案数为\n$$\n580 \\times 120=69600 .\n$$",
+    "remark": "",
+    "figures": []
+}

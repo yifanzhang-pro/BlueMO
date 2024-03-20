@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例12 证明对所有 $n \\geqslant 2$ 的自然数 $n$, 有等式\n$$\n\\prod_{i=1}^n \\tan \\left[\\frac{\\pi}{3}\\left(1+\\frac{3^i}{3^n-1}\\right)\\right]=\\prod_{i=1}^n \\cot \\left[\\frac{\\pi}{3}\\left(1-\\frac{3^i}{3^n-1}\\right)\\right]\n$$\n这里 $\\prod_{k=1}^n k=1 \\times 2 \\times \\cdots \\times n$.",
+    "solution": "证明:令 $A_i=\\tan \\left[\\frac{\\pi}{3}\\left(1+\\frac{3^i}{3^n-1}\\right)\\right], B_i=\\tan \\left[\\frac{\\pi}{3}\\left(1-\\frac{3^i}{3^n-1}\\right)\\right]$, 因为 $\\tan 3 \\theta=\\tan \\theta \\tan \\left(\\frac{\\pi}{3}-\\theta\\right) \\tan \\left(\\frac{\\pi}{3}+\\theta\\right)$, 取 $\\theta=\\frac{\\pi}{3}\\left(1+\\frac{3^i}{3^n-1}\\right)$, 得\n$$\n\\tan \\pi\\left(1+\\frac{3^i}{3^n-1}\\right)=\\tan \\frac{\\pi}{3}\\left(1+\\frac{3^i}{3^n-1}\\right) \\tan \\left[\\frac{\\pi}{3}-\\frac{\\pi}{3}\\left(1+\\frac{3^i}{3^n-1}\\right)\\right] \\tan \\left[\\frac{\\pi}{3}+\\frac{\\pi}{3}\\left(1+\\frac{3^i}{3^n-1}\\right)\\right],\n$$\n化简得 $\\tan \\left[\\frac{\\pi}{3}\\left(1+\\frac{3^i}{3^n-1}\\right)\\right] \\cdot \\tan \\left[\\frac{\\pi}{3}\\left(1-\\frac{3^i}{3^n-1}\\right)\\right]=1$, 于是 $\\prod_{i=1}^n A_i B_i=1$, 变形即得证.",
+    "remark": "",
+    "figures": []
+}

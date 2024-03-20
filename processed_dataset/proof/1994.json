@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $b 、 k \\in \\mathbf{N}^*, 1<k<b$, 多项式 $f(x)=a_n x^n+a_{n-1} x^{n-1}+\\cdots+a_0$ 满足下述条件:\n(1) $a_i$ 都是非负整数, $0 \\leqslant i \\leqslant n$;\n(2) $f(b)=k p$, 这里 $p$ 为某个质数;\n(3) $f(x)$ 的每个复根 $r$, 都满足 $|r-b|>\\sqrt{k}$.\n求证: $f(x)$ 在整系数范围内不可约.",
+    "solution": "若 $f(x)=g(x) h(x)$, 这里 $g(x), h(x)$ 为非常数的整系数多项式, 则 $k p=|f(b)|=|g(b)||h(b)|$, 于是质数 $p$ 整除 $|g(b)| 、|h(b)|$ 中的一个.\n不妨设 $p|| h(b) \\mid$, 则 $|g(b)| \\leqslant k$. 设 $g(x)=b_0\\left(x-r_1\\right) \\cdots\\left(x-r_j\\right)$. 因为 $\\left|b-r_i\\right|>\\sqrt{k}, 1 \\leqslant i \\leqslant j$, 所以 $k \\geqslant|g(b)|=\\left|b_0\\right|\\left|b-r_1\\right| \\cdots\\left|b-r_j\\right|> \\sqrt{k^j}$, 从而 $j=1$, 即 $g(x)=b_0 x+b_1, b_0 、 b_1 \\in \\mathbf{Z}$. 不妨设 $b_0>0$ (否则, 用 $-g(x) 、-h(x)$ 代替 $g(x) 、 h(x))$. 若 $b_1<0$, 则 $f(x)$ 有一个正实根, 与条件 (1) 矛盾,故 $b_1 \\geqslant 0$. 但这又导致 $b>k \\geqslant|g(b)|=b_0 b+b_1 \\geqslant b$. 矛盾.\n证毕.",
+    "remark": "",
+    "figures": []
+}

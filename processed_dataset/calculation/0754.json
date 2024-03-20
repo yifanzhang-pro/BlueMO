@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 已知 $x \\in\\left(\\frac{\\pi}{4}, \\frac{5 \\pi}{4}\\right)$, 则 $\\arcsin \\frac{\\sin x+\\cos x}{\\sqrt{2}}$ 的值为 ( ).\n(A) $x+\\frac{\\pi}{4}$\n(B) $\\frac{\\pi}{2}-x$\n(C) $x-\\frac{3 \\pi}{4}$\n(D) $\\frac{3 \\pi}{4}-x$",
+    "solution": "D. $\\arcsin \\frac{\\sin x+\\cos x}{\\sqrt{2}}=\\arcsin \\left[\\sin \\left(\\frac{\\pi}{4}+x\\right)\\right]$, 因 $x \\in\\left(\\frac{\\pi}{4}, \\frac{5 \\pi}{4}\\right)$, 所以 $\\frac{\\pi}{4}+x \\in\\left(\\frac{\\pi}{2}, \\frac{3 \\pi}{2}\\right)$,故原式 $=\\pi-\\left(\\frac{\\pi}{4}+x\\right)=\\frac{3 \\pi}{4}-x$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设正整数 $n \\geqslant 2, x_1, x_2, \\cdots, x_n \\in[0,1]$, 求证: 存在某个 $i, 1 \\leqslant i \\leqslant n-1$, 使得不等式\n$$\nx_i\\left(1-x_{i+1}\\right) \\geqslant \\frac{1}{4} x_1\\left(1-x_n\\right)\n$$\n成立.",
+    "solution": "证明:令 $m=\\min \\left\\{x_1, x_2, \\cdots, x_n\\right\\}$, 且设 $x_r=m, 0 \\leqslant m \\leqslant 1$, 分两种情况讨论:\n(1) 如果 $x_2 \\leqslant \\frac{1}{2}(m+1)$, 取 $i=1$, 就有\n$$\n\\begin{aligned}\nx_1\\left(1-x_2\\right) & \\geqslant x_1\\left(1-\\frac{1+m}{2}\\right)=\\frac{1}{2} x_1(1-m) \\\\\n& \\geqslant \\frac{1}{2} x_1\\left(1-x_n\\right)\\left(\\text { 利用了 } m \\leqslant x_n \\leqslant 1\\right) \\\\\n& \\geqslant \\frac{1}{4} x_1\\left(1-x_n\\right) .\n\\end{aligned}\n$$\n(2) 如果 $x_2>\\frac{1}{2}(m+1)$, 则有以下两种可能:\n(i) $x_1=m, x_2>\\frac{1}{2}(1+m), \\cdots, x_n>\\frac{1}{2}(1+m)$, 设 $x_k$ 是 $x_2, x_3, \\cdots$, $x_n$ 中的最小值.\n取 $i=k-1$, 就有\n$$\nx_{k-1}\\left(1-x_k\\right) \\geqslant x_1\\left(1-x_n\\right) \\geqslant \\frac{1}{4} x_1\\left(1-x_n\\right),\n$$\n其中第一个不等号利用了 $x_{k-1} \\geqslant x_1$ 及 $1-x_k \\geqslant 1-x_n$.\n(ii) 存在某个 $t, 3 \\leqslant t \\leqslant n$, 使得 $x_t=m \\leqslant \\frac{1}{2}(1+m)$.\n于是一定存在某个正整数 $i, 2 \\leqslant i \\leqslant n-1$, 满足:\n$$\nx_i>\\frac{1}{2}(1+m), x_{i+1} \\leqslant \\frac{1}{2}(1+m) .\n$$\n对于这个 $i$, 有\n$$\n\\begin{aligned}\nx_i\\left(1-x_{i+1}\\right) & >\\frac{1}{2}(1+m)\\left(1-\\frac{m+1}{2}\\right) \\\\\n& =\\frac{1}{2}(1+m) \\cdot \\frac{1}{2}(1-m) \\\\\n& =\\frac{1}{4}\\left(1-m^2\\right) \\geqslant \\frac{1}{4}(1-m) \\geqslant \\frac{1}{4} x_1\\left(1-x_n\\right) .\n\\end{aligned}\n$$\n综上所述, 结论成立.",
+    "remark": "",
+    "figures": []
+}

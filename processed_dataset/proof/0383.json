@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 由平面格点 $(x, y)(1 \\leqslant x \\leqslant 12,1 \\leqslant y \\leqslant 12, x, y$ 为整数)组成点集 $M$, 将 $M$ 中每一点任意染上红、蓝、黑三色之一.\n证明: 其中必存在 4 个同色点, 它们是一个其边与 $x$ 轴、 $y$ 轴平行的矩形的 4 个顶点.",
+    "solution": "不妨设 $M$ 中红点最多, 由抽庶原理知红点的数目不少于 $\\left[\\frac{12 \\times 12-1}{3}\\right]+1=48$ 个.\n设纵坐标为 $i$ 的红点有 $a_i$ 个 $(i=1,2, \\cdots, 12)$ 则 $a_1+a_2+\\cdots+a_{12} \\geqslant 48$. 将第 $i$ 行的 $a_i$ 个红点两两配对, 可配成 $\\mathrm{C}_{a_i}^2=\\frac{1}{2} a_i\\left(a_i-1\\right)$  对, $i=1,2, \\cdots, 12$, 从而各行红点组成的点对数之和为 $\\sum_{i=1}^{12} \\mathrm{C}_{a_i}^2= \\frac{1}{2}\\left(\\sum_{i=1}^{12} a_i^2-\\sum_{i=1}^{12} a_i\\right) \\geqslant \\frac{1}{2}\\left[\\frac{1}{12}\\left(\\sum_{i=1}^{12} a_i\\right)^2-\\sum_{i=1}^{12} a_i\\right]=\\frac{1}{2}\\left(\\sum_{i=1}^{12} a_i\\right)\\left(\\sum_{i=1}^{12} a_i-12\\right) \\geqslant \\frac{1}{24} \\times 48 \\times(48-12)=72 \\cdots$ (1). \n如果不存在四顶点同为红色的符合条件的矩形, 那么各行中红色点对在 $x$ 轴上的投影两两互不重合, 因此各行中红色点对数之和不超过 $x$ 轴上的 12 个点 $(x, 0)(x=1,2, \\cdots, 12)$ 形成的点对个数 $\\mathrm{C}_{12}^2=66$. 这与(1)矛盾,故结论成立.",
+    "remark": "",
+    "figures": []
+}

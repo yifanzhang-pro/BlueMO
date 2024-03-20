@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例5. 有 $n$ 名选手 $A_1, A_2, \\cdots, A_n$ 参加数学竞赛, 其中有些选手是互相认识的, 而且任何两个不相识的选手都恰好有两个共同的熟人.\n若已知选手 $A_1$ 与 $A_2$ 互相认识,但他俩没有共同的熟人,证明他俩的熟人一样多.",
+    "solution": "证明:用 $n$ 个点 $v_1, v_2, \\cdots, v_n$ 表示这 $n$ 名选手 $A_1, A_2, \\cdots, A_n$, 如果两个选手互相认识, 那么就在相应的两个点之间连一条边, 这样就得到一个简单图 $G$. 图 $G$ 中的顶点满足: 任意两个不相邻的顶点都恰好有两个共同相邻的顶点.\n要证明的是相邻的两个顶点 $v_1$ 与 $v_2$ 各自引出的边的条数一样多.\n如果记与 $v_1$ 相邻的顶点集合为 $N\\left(v_1\\right)$, 与 $v_2$ 相邻的顶点集合为 $N\\left(v_2\\right)$. 若在 $N\\left(v_1\\right)$ 中除 $v_2$ 外还有点 $v_i$, 则 $v_i \\notin N\\left(v_2\\right)$. 否则 $A_1$ 与 $A_2$ 有共同熟人 $A_i$. 于是 $v_2$ 与 $v_i$ 除 $v_1$ 外还应有一个与它们共同相邻的点 $v_j$, 则 $v_j \\in N\\left(v_2\\right)$. 如图(<FilePath:./images/volume12/figures/fig-c1i14.png>) 所示.\n对于 $N\\left(v_1\\right)$ 中不同于 $v_2$ 的点 $v_i 、 v_k$, 它们不可能与 $N\\left(v_2\\right)$ 中除 $v_1$ 外的一个点 $v_j$ 都相邻 (否则, 两个不相邻的顶点 $v_1$, $v_j$ 有三个共同相邻的顶点 $v_2, v_i, v_k$ ). 因而, 对于 $N\\left(v_1\\right)$ 中不同于 $v_i$ 的 $v_k$, 必在 $N\\left(v_2\\right)$ 中存在不同于 $v_j$ 的相邻点 $v_l$. 由此可得 $N\\left(v_1\\right)$ 中的顶点个数不大于 $N\\left(v_2\\right)$ 中的顶点个数.\n同样地, $N\\left(v_2\\right)$ 中的顶点个数不大于 $N\\left(v_1\\right)$ 中的顶点个数.\n于是, 从点 $v_1$ 与 $v_2$ 引出的边的条数是相等的.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c1i14.png"
+    ]
+}

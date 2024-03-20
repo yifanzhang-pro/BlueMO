@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例10. 试确定 $(\\sqrt{2}+\\sqrt{3})^{2004}$ 小数点前一位数字和小数点后一位数字.",
+    "solution": "解:记 $N=(\\sqrt{2}+\\sqrt{3})^{2004}=(5+2 \\sqrt{6})^{1002}$, 令 $x_n=(5+2 \\sqrt{6})^n+(5- 2 \\sqrt{6})^n$, 则数列 $\\left\\{x_n\\right\\}$ 对应的特征方程是\n$$\n[r-(5+2 \\sqrt{6})][r-(5-2 \\sqrt{6})]=0,\n$$\n即 $r^2-10 r+1=0$, 所以数列 $\\left\\{x_n\\right\\}$ 满足的递推关系是\n$$\nx_n=10 x_{n-1}-x_{n-2}(n \\geqslant 3), \\label{eq1}\n$$\n其中 $x_1=(5+2 \\sqrt{6})+(5-2 \\sqrt{6})=10, x_2=(5+2 \\sqrt{6})^2+(5-2 \\sqrt{6})^2=$ 98 皆为整数.\n若 $x_{n-2}, x_{n-1}$ 为整数,则由 式\\ref{eq1}知 $x_n$ 也为整数,故对一切 $n \\in \\mathbf{N}_{+}$, $x_n$ 为整数, 且由 式\\ref{eq1}得\n$$\nx_n=10 x_{n-1}-\\left(10 x_{n-3}-x_{n-4}\\right)=10\\left(x_{n-1}-x_{n-3}\\right)+x_{n-4} .\n$$\n故 $x_n \\equiv x_{n-4}(\\bmod 10)$. 特别 $x_{1002} \\equiv x_2(\\bmod 10)$, 即知 $x_{1002}$ 的个位数字是 8 . 又因为 $0<5-2 \\sqrt{6}<0.2$, 于是\n$$\n0<(5-2 \\sqrt{6})^{1002}<0.2^{1002}=0.008^{334}<0.01^{334}=\\underbrace{0.00 \\cdots 0}_{668 \\uparrow 0} 1,\n$$\n即\n$$\nx_{1002}=N+(5-2 \\sqrt{6})^{1002}=N+0 . \\underbrace{00 \\cdots 0} * * * \\cdots 668 个 0\n$$\n因 $x_{1002}$ 的个位数字是 8 , 所以 $N$ 的小数点前一位数字是 7 ,小数点后一位数字是 9 .",
+    "remark": "",
+    "figures": []
+}

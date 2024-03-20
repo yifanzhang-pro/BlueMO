@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例20 解方程 $\\sin 30^{\\circ} \\cdot \\sin 80^{\\circ} \\cdot \\sin x=\\sin 20^{\\circ} \\cdot \\sin 50^{\\circ} \\cdot \\sin \\left(x+40^{\\circ}\\right)$.",
+    "solution": "解:原方程可化为 $\\frac{\\sin \\left(x+40^{\\circ}\\right)}{\\sin x}=\\frac{\\sin 30^{\\circ} \\cdot \\sin 80^{\\circ}}{\\sin 20^{\\circ} \\cdot \\sin 50^{\\circ}}$\n$$\n=\\frac{\\sin 40^{\\circ} \\cos 40^{\\circ}}{\\sin 20^{\\circ} \\cdot \\sin 50^{\\circ}}=\\frac{\\sin 40^{\\circ}}{\\sin 20^{\\circ}}=2 \\cos 20^{\\circ} \\text {. }\n$$\n即\n$$\n\\cos 40^{\\circ}+\\sin 40^{\\circ} \\cdot \\cot x=2 \\cos 20^{\\circ} \\text {. }\n$$\n所以\n$$\n\\begin{aligned}\n\\cot x & =\\frac{2 \\cos 20^{\\circ}-\\cos 40^{\\circ}}{\\sin 40^{\\circ}} \\\\\n& =\\frac{\\cos 20^{\\circ}+\\cos 20^{\\circ}-\\cos 40^{\\circ}}{\\sin 40^{\\circ}} \\\\\n& =\\frac{\\cos 20^{\\circ}+2 \\sin 30^{\\circ} \\sin 10^{\\circ}}{\\sin 40^{\\circ}} \\\\\n& =\\frac{\\sin 70^{\\circ}+\\sin 10^{\\circ}}{\\sin 40^{\\circ}} \\\\\n& =\\frac{2 \\sin 40^{\\circ} \\cos 30^{\\circ}}{\\sin 40^{\\circ}}=\\sqrt{3} .\n\\end{aligned}\n$$\n故所求解集为 $\\left\\{x \\mid x=k \\cdot 180^{\\circ}+30^{\\circ}, k \\in \\mathbf{Z}\\right\\}$.",
+    "remark": "",
+    "figures": []
+}

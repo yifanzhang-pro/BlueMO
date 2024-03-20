@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例10 求证: $\\arcsin x+\\arccos x=\\frac{\\pi}{2}$.",
+    "solution": "分析:证明反三角恒等式的基本步骤是: (1)证等式两边的角的同名三角函数值相等; (2)证角的唯一性.\n证明 $\\sin (\\arcsin x+\\arccos x)$\n$$\n\\begin{aligned}\n& =\\sin (\\arcsin x) \\cdot \\cos (\\arccos x)+\\cos (\\arcsin x) \\cdot \\sin (\\arccos x) \\\\\n& =x \\cdot x+\\sqrt{1-x^2} \\cdot \\sqrt{1-x^2}=1=\\sin \\frac{\\pi}{2} .\n\\end{aligned}\n$$\n又因为 $-\\frac{\\pi}{2} \\leqslant \\arcsin x \\leqslant \\frac{\\pi}{2}, 0 \\leqslant \\arccos x \\leqslant \\pi$, 所以\n$$\n-\\frac{\\pi}{2} \\leqslant \\arcsin x+\\arccos x \\leqslant \\frac{3 \\pi}{2}\n$$\n在 $\\left[-\\frac{\\pi}{2}, \\frac{3}{2} \\pi\\right]$ 上, $\\sin \\alpha=1$ 的角 $\\alpha$ 是唯一的, 只有 $\\frac{\\pi}{2}$, 即\n$$\n\\arcsin x+\\arccos x=\\frac{\\pi}{2}\n$$\n评注同理可证: $\\arcsin x+\\arcsin \\sqrt{1-x^2}=\\frac{\\pi}{2}$,\n$$\n\\arctan x+\\operatorname{arccot} x=\\frac{\\pi}{2} .\n$$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例4. 求证: $\\left|\\sum_{k=1}^n \\frac{\\sin k x}{k}\\right| \\leqslant 2 \\sqrt{\\pi}$, 对一切实数 $x$ 成立.",
+    "solution": "分析:当 $\\theta \\in(0,+\\infty)$ 时, 有 $\\sin \\theta<\\theta$. 当 $\\theta \\in\\left(0, \\frac{\\pi}{2}\\right)$ 时, 有 $\\sin \\theta \\geqslant \\frac{2}{\\pi} \\theta$, 再结合函数的奇偶性, 周期性, 可得证明.\n证明首先考查 $x \\in(0, \\pi)$, 取 $m$ 为某个自然数,使 $m \\leqslant \\frac{\\sqrt{\\pi}}{x}<m+1$ 成立.\n则 $\\left|\\sum_{k=1}^n \\frac{\\sin k x}{k}\\right| \\leqslant \\sum_{k=1}^m\\left|\\frac{\\sin }{k} \\frac{k x}{k}\\right|+\\left|\\sum_{k=m+1}^n \\frac{\\sin k x}{k}\\right|$, 这里当 $m=0$ 时, 右边第一项为 0 ; 当 $m \\geqslant n$ 时,右边第二项为 0 , 由于 $\\sin k x<k x$, 故\n$$\n\\sum_{k=1}^m\\left|\\frac{\\sin k x}{k}\\right| \\leqslant \\sum_{k=1}^m \\frac{k x}{k}=m x \\leqslant \\sqrt{\\pi}, \\quad\\quad(1)\n$$\n利用阿贝尔不等式, 有 $\\quad\\left|\\sum_{k=m+1}^n \\frac{\\sin k x}{k}\\right| \\leqslant \\frac{1}{\\sin \\frac{x}{2}} \\cdot \\frac{1}{m+1}$,\n又当 $t \\in\\left[0, \\frac{\\pi}{2}\\right]$ 时, $\\sin t \\geqslant \\frac{2}{\\pi} t$, 故 $\\sin \\frac{x}{2}>\\frac{x}{\\pi}$, 又 $m+1>\\frac{\\sqrt{\\pi}}{x}$, 故\n$$\n\\left|\\sum_{k=m+1}^n \\frac{\\sin k x}{k}\\right| \\leqslant \\frac{1}{\\frac{x}{\\pi} \\cdot \\frac{\\sqrt{\\pi}}{x}}=\\sqrt{\\pi}, \\quad\\quad(2)\n$$\n由(1)、(2), 知当 $x \\in(0, \\pi)$ 时, 原式得证.\n当 $x \\in(-\\pi, 0)$ 时, 由于 $f(x)=\\left|\\sum_{k=1}^n \\frac{\\sin k x}{k}\\right|$ 为偶函数.\n所以原式也成立, 当 $x= \\pm \\pi, 0$ 时, 显然成立.\n又由于 $f(x)$ 是以 $2 \\pi$ 为周期的周期函数, 故原式对一切 $x \\in \\mathbf{R}$ 都成立, 得证.",
+    "remark": "",
+    "figures": []
+}

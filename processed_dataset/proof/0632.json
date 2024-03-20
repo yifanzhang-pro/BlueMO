@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter11.tex",
+    "problem_type": "proof",
+    "problem": "例6. 求证: 对任意八个实数 $a_1, a_2, \\cdots, a_8$ 下列 6 个数\n$$\na_1 a_3+a_2 a_4, a_1 a_5+a_2 a_6, a_1 a_7+a_2 a_8, a_3 a_5+a_4 a_6, a_3 a_7+a_4 a_8, a_5 a_7+a_6 a_8\n$$\n中至少有一个是非负的, 并举例说明这 6 个数可能恰有一个是非负的.",
+    "solution": "证明:取平面直角坐标系内的点 $A\\left(a_1, a_2\\right), B\\left(a_3, a_4\\right), C\\left(a_5, a_6\\right)$, $D\\left(a_7, a_8\\right)$, 设 $O$ 为坐标原点.\n若 $A, B, C, D$ 中有某个点与 $O$ 重合, 例如 $A$ 与 $O$ 重合, 则 $a_1 a_3+ a_2 a_4=0$ 为非负数.\n以下假定 $A, B, C, D$ 中任意一点不与 $O$ 重合, 不妨设射线 $O A, O B$, $O C, O D$ 依逆时针顺序排列, 根据抽屉原理, 它们的夹角 $\\angle A O B, \\angle B O C$, $\\angle C O D, \\angle D O A$ 中必有一个不超过 $90^{\\circ}$, 不妨设 $0^{\\circ} \\leqslant \\angle A O B \\leqslant 90^{\\circ}$, 则 $a_1 a_3+ a_2 a_4=\\overrightarrow{O A} \\cdot \\overrightarrow{O B} \\geqslant 0$.\n另外, 取 $a_1=3, a_2=1, a_3=-1, a_4=2, a_5=-1, a_6=-2, a_7=3$, $a_8=-1$, 其中仅有 $a_1 a_7+a_2 a_8=8>0$, 则表明这 6 个数中可以恰有一个是非负的.",
+    "remark": "注:我们考虑形如 $a c+b d$ 的式子的几何意义: $a c+b d$ 可以看成平面直角坐标系中向量 $(a, b),(c, d)$ 的数量积, 而数量积的符号恰能反映两个向量的夹角是否大于 $90^{\\circ}$. 有了这样的认识, 本题便能构造几何模型证明结论.\n在最后举例时, 也不必盲目尝试, 而只需使射线 $O A, O B, O C, O D$ 中有且仅有一对夹角不超过 $90^{\\circ}$, 即可找到相应的 $a_1, a_2, \\cdots, a_8$ 的值.",
+    "figures": []
+}

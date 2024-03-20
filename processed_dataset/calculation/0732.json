@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题5 在直角三角形中, $\\angle C=90^{\\circ}$, 则 $\\sin A \\cos ^2\\left(45^{\\circ}-\\frac{B}{2}\\right)-\\sin \\frac{A}{2} \\cos \\frac{A}{2}(\\quad)$.\n(A) 有最大值 $\\frac{1}{4}$ 和最小值 0\n(B) 有最大值 $\\frac{1}{4}$ 但无最小值\n(C) 既无最大值又无最小值\n(D) 有最大值 $\\frac{1}{2}$ 但无最小值",
+    "solution": "B. 原式 $=\\sin A \\cdot \\frac{1+\\cos \\left(90^{\\circ}-B\\right)}{2}-\\frac{1}{2} \\sin A=\\frac{1}{2} \\sin A \\cdot \\sin B= \\frac{1}{2} \\sin A \\cos A=\\frac{1}{4} \\sin 2 A \\leqslant \\frac{1}{4}$.",
+    "remark": "",
+    "figures": []
+}

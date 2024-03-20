@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例7. 任给 $n \\geqslant 2$, 证明: 存在 $n$ 个互不相同的正整数,其中任意两个的和, 整除这 $n$ 个数的积.",
+    "solution": "解:我们任取 $n$ 个互不相同的正整数 $a_1, \\cdots, a_n$, 并选取一个 (正整数) 参数 $K$, 希望 $K a_1, \\cdots, K a_n$ 的积 $K^n a_1 \\cdots a_n$ 被任意两项的和 $K a_i+K a_j$ 整除 ( $1 \\leqslant i, j \\leqslant n, i \\neq j)$. 由于 $n \\geqslant 2$, 显然, 取\n$$\nK=\\prod_{1 \\leqslant i<j \\leqslant n}\\left(a_i+a_j\\right)\n$$\n即符合要求 (注意 $K a_1, \\cdots, K a_n$ 互不相同).",
+    "remark": "",
+    "figures": []
+}

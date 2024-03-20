@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter19.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 在黑板上写有 97 个数: $\\frac{48}{k}(k=1,2, \\cdots, 97)$, 每次可任意选择两个数 $a, b$, 将它们擦去, 用 $2 a b-a-b+1$ 代替, 这样经过 96 次操作后, 黑板上还剩下一个数, 问: 这个数是多少?",
+    "solution": "解:为\n$$\n2 a b-a-b+1=2\\left(a-\\frac{1}{2}\\right)\\left(b-\\frac{1}{2}\\right)+\\frac{1}{2},\n$$\n所以, 当 $a$ 或 $b$ 为 $\\frac{1}{2}$ 时, 得到的数还是 $\\frac{1}{2}$, 即黑板上这个 $\\frac{1}{2}$ 是不会消失的 (在操作过程中的不变量). 由于 $\\frac{48}{96}=\\frac{1}{2}$, 所以,最后剩下的数是 $\\frac{1}{2}$.\n在例 2 中, $\\frac{1}{2}$ 是不会消失的, 是在操作过程中的不变量.",
+    "remark": "",
+    "figures": []
+}

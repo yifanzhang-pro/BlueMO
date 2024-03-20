@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 在四边形 $P Q R S$ 中, $A 、 B 、 C 、 D$ 分别为边 $P Q 、 Q R 、 R S 、 S P$ 的中点, $M$ 为 $C D$ 的中点.\n假设 $A M$ 上有一点 $H$, 满足 $H C=B C$. 证明: $\\angle B H M= 90^{\\circ}$.",
+    "solution": "证明: 易知四边形 $A B C D$ 为平行四边形.\n如图(<FilePath:./images/volume7/figures/fig-c1a12.png>), 延长 $A M 、 B C$ 交于点 $N$. 由 $A D / / C N$, 则 $\\angle M A D=\\angle M N C$. 又 $\\angle A M D=\\angle N M C$, 且 $M D=M C$. 于是, $\\triangle A M D \\cong \\triangle N M C$. 因此, $C N=D A=C B=H C$. 从而, 点 $H$ 位于以点 $C$ 为圆心、 $B N$ 为直径的圆上.\n所以, $\\angle B H M=90^{\\circ}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1a12.png"
+    ]
+}

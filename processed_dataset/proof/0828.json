@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 对给定 $m, n \\in \\mathbf{N}^*$, 设满足条件 $\\bigcup_{i=1}^m A_i=\\{1,2, \\cdots, n\\}$ 的非空集合 $A_1$, $A_2, \\cdots, A_m$ 的组数为 $f(m, n)$. 证明 $f(m, n)=\\sum_{k=0}^{m-1}(-1)^k \\mathrm{C}_m^k\\left(2^{m-k}-1\\right)^n$.",
+    "solution": "设 $P_0$ 是满足 $\\bigcup_{i=1}^m A_i=\\{1,2, \\cdots, n\\}$ 的一切有序集组 $\\left(A_1, A_2, \\cdots\\right.$, $\\left.A_m\\right)$ 的集合; 对 $1 \\leqslant i \\leqslant m$, 设 $P_i=\\left\\{\\left(A_1, A_2, \\cdots, A_m\\right) \\in P_0 \\mid A_i=\\varnothing\\right\\}$.\n对每个 $x \\in\\{1,2, \\cdots, n\\}, x$ 关于集合 $A_1, A_2, \\cdots, A_m$ 有 $2^m$ 种不同的归属状况, 其中使 $x \\in \\bigcup_{i=1}^m A_i$ 的情况数为 $2^m-1$. 根据乘法原理得,\n$$\n\\left|P_0\\right|=\\left(2^m-1\\right)^n .\n$$\n对 $1 \\leqslant i_1<i_2<\\cdots<i_s \\leqslant m$, 同理可得\n$$\n\\left|P_{i_1} \\cap P_{i_2} \\cap \\cdots \\cap P_{i_s}\\right|=\\left(2^{m-s}-1\\right)^n .\n$$\n根据容斥原理有\n$$\n\\begin{aligned}\n\\left|\\bigcap_{k=1}^m \\overline{P_k}\\right|= & \\left|P_0\\right|-\\sum_{i=1}^m\\left|P_i\\right|+\\sum_{1 \\leqslant i<j \\leqslant m}\\left|P_i \\cap P_j\\right|-\\cdots+ \\\\\n& (-1)^m\\left|P_1 \\cap P_2 \\cap \\cdots \\cap P_m\\right| \\\\\n= & \\left(2^m-1\\right)^n-\\mathrm{C}_m^1\\left(2^{m-1}-1\\right)^n+\\mathrm{C}_m^2\\left(2^{m-2}-1\\right)^n-\\cdots+ \\\\\n& (-1)^m \\mathrm{C}_m^m\\left(2^{m-m}-1\\right)^n .\n\\end{aligned}\n$$\n上式最后一项等于零, 所以\n$$\nf(m, n)=\\left|\\bigcap_{k=1}^m \\overline{P_k}\\right|=\\sum_{k=0}^{m-1}(-1)^k \\mathrm{C}_m^k\\left(2^{m-k}-1\\right)^n .\n$$",
+    "remark": "注:关于本题, 有个很有趣的结论: $f(m, n)=f(n, m)$. 事实上, 考虑只含元素 0 和 1 的所有 $m \\times n$ 矩阵,可以通过对应原理证明: 每行、每列都出现 1 的矩阵个数既等于 $f(m, n)$, 又等于 $f(n, m)$.",
+    "figures": []
+}

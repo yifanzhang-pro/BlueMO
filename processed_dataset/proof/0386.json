@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 设 $A_i$ 是有限集合, $i=1,2, \\cdots, n$. 若 $\\sum_{1 \\leqslant i<j \\leqslant n} \\frac{\\left|A_i \\cap A_j\\right|}{\\left|A_i\\right| \\cdot\\left|A_j\\right|}<1$, 证明存在 $a_i \\in A_i(i=1,2, \\cdots, n)$ 使得当 $i \\neq j$ 时, $a_i \\neq a_j(1 \\leqslant i<j \\leqslant n)$.",
+    "solution": "考虑从集合 $S=\\{1,2, \\cdots, n\\}$ 到集合 $A_1 \\cup A_2 \\cup \\cdots \\cup A_n$ 的所有满足下列条件的映射 $f: f(i) \\in A_i(i=1,2, \\cdots, n)$ 构成的集合 $\\mathscr{M}$,于是 $\\mathscr{M}$ 中共有 $\\left|A_1\\right| \\cdot\\left|A_2\\right| \\cdots \\cdots \\cdot\\left|A_n\\right|$ 个映射, 下面证明其中至少有一个单射.\n如果 $\\mathscr{M}$ 中任何映射都不是单射, 那么对任意 $f \\in M$, 存在 $i, j \\in S$ 使得 $i \\neq j$ 而有 $f(i)= f(j)$, 这时 $f(i)=f(j) \\in A_i \\cap A_j, f(i)=f(j)$ 的取值最多有 $\\left|A_i \\cap A_j\\right|$ 种, 当 $k \\neq i, k \\neq j$ 时 $f(k)$ 的取值最多有 $\\left|A_k\\right|$ 种.\n故对固定的 $i \\neq j$, 满足 $f(i)=f(j)$ 的映射最多有 $\\left|A_i \\cap A_j\\right| \\prod_{k=1}^n\\left|A_k\\right|=\\frac{\\left|A_i \\cap A_j\\right|}{\\left|A_i\\right| \\cdot\\left|A_j\\right|} \\prod_{k=1}^n\\left|A_k\\right|$ 个, 中共有 $\\prod_{k=1}^n\\left|A_k\\right|$ 个映射矛盾.\n故 $\\mathscr{M}$ 中至少有一个单射 $f_0$. 令 $a_i=f_0(i)(i= 1,2, \\cdots, n)$, 则 $a_i \\in A_i(i=1,2, \\cdots, n)$ 并且当 $i \\neq j$ 时, $a_i=f_0(i) \\neq f_0(j)=a_j(1 \\leqslant i<j \\leqslant n)$.",
+    "remark": "",
+    "figures": []
+}

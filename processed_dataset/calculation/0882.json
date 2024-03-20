@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 已知 $a, b, c \\in \\mathbf{R}^{+}$. 求 $\\frac{a}{b+3 c}+\\frac{b}{8 c+4 a}+\\frac{9 c}{3 a+2 b}$ 的最小值.",
+    "solution": "令 $b+3 c=x, 8 c+4 a=y, 3 a+2 b=z$, 则原式 $=\\frac{1}{8}\\left(\\frac{y}{x}+\\frac{4 x}{y}\\right)+\\frac{1}{6}\\left(\\frac{z}{x}+\\frac{9 x}{z}\\right)+\\frac{1}{16}\\left(\\frac{4 z}{y}+\\frac{9 y}{z}\\right)-\\frac{61}{48} \\geqslant \\frac{47}{48}$.",
+    "remark": "",
+    "figures": []
+}

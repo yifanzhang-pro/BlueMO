@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise8.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 设 $x \\geqslant 0, y \\geqslant 0, z \\geqslant 0, x+y+z=1$, 求 $S=2 x^2+y+3 z^2$ 的最大值和最小值.",
+    "solution": "固定 $z$ 的值, 先求 $2 x^2+y$ 的最大、最小值, 然后让 $z$ 变动, 求出整体最大值 $S_{\\max }=3$, 最小值 $S_{\\min }=\\frac{57}{72}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题8 (1)证明：正整数集 $\\mathbf{N}^*$ 可以表示为三个彼此不相交的集合的并集,使得: 若 $m, n \\in \\mathbf{N}^*$, 且 $|m-n|=2$ 或 5 , 则 $m 、 n$ 属于不同的集合.\n(2)证明: 正整数集 $\\mathbf{N}^*$ 可以表示为 4 个彼此不相交的集合的并集,使得: 若 $m, n \\in \\mathbf{N}^*$, 且 $|m-n|=2 、 3$ 或 5 , 则 $m 、 n$ 属于不同的集合.\n并说明：此时将 $\\mathbf{N}^*$ 拆分为三个彼此不相交的集合的并集时,命题不成立.",
+    "solution": "(1) 令 $A=\\left\\{3 k \\mid k \\in \\mathbf{N}^*\\right\\}, B=\\left\\{3 k-2 \\mid k \\in \\mathbf{N}^*\\right\\}, C=\\{3 k- 1 \\mid k \\in \\mathbf{N}^*\\}$, 则 $A 、 B 、 C$ 彼此的交集为空集, 且 $A \\cup B \\cup C=\\mathbf{N}^*$, 并且此时属于同一集合的两个元素之差为 3 的倍数,不等于 2 或 5 .\n(2) 令 $A=\\left\\{4 k \\mid k \\in \\mathbf{N}^*\\right\\}, B=\\left\\{4 k-1 \\mid k \\in \\mathbf{N}^*\\right\\}, C=\\{4 k-2 \\mid k \\in \\mathbf{N}^*\\}, D=\\left\\{4 k-3 \\mid k \\in \\mathbf{N}^*\\right\\}$. 同上讨论, 可知命题成立.\n假设可以将 $\\mathbf{N}^*$ 表示为三个集合 $A 、 B 、 C$ (彼此不相交) 的并集, 使得：对任意的 $m, n \\in \\mathbf{N}^*$, 当 $|m-n|=2 、 3$ 或 5 时, $m 、 n$ 属于不同的集合.\n不妨设 $1 \\in A$, 则 $3 \\bar{\\epsilon} A$, 从而 $3 \\in B$ 或 $3 \\in C$. 不妨设 $3 \\in B$, 则 $6 \\bar{\\epsilon} A$ 且 $6 \\bar{\\in} B$, 故 $6 \\in C$. 依此类推, 可知 $4 \\in B, 8 \\in A, 5 \\in C, 7 \\in A$. 这时, 9 属于 $A 、 B 、 C$ 中任何一个集合均导致矛盾.",
+    "remark": "",
+    "figures": []
+}

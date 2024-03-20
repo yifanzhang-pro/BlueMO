@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 在 $\\triangle A B C$ 中, 求证:\n$$\n\\frac{c-a}{b+c-a}+\\frac{a-b}{c+a-b}+\\frac{b-c}{a+b-c} \\leqslant 0 .\n$$",
+    "solution": "设 $b+c-a=2 x, c+a-b=2 y, a+b-c=2 z$, 则 $x, y, z \\in \\mathbf{R}^{+}$, 且 $a=y+z, b=x+z, c=x+y$, 故原不等式等价于 $\\frac{x-z}{2 x}+\\frac{y-x}{2 y}+\\frac{z-y}{2 z} \\leqslant$ 0 , 即 $\\frac{z}{x}+\\frac{x}{y}+\\frac{y}{z} \\geqslant 3$, 显然成立.",
+    "remark": "",
+    "figures": []
+}

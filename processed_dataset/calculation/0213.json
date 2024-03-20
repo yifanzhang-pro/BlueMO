@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题15. 由数字 $1,2,3$ 组成 $n$ 位数 $(n \\geqslant 3)$, 要求 $n$ 位数中数字 $1,2,3$ 中每一个至少出现一次, 求这种 $n$ 位数的个数.",
+    "solution": "设由 $1,2,3$ 组成的 $n$ 位数全体构成的集合为 $S . A_i=\\{m \\mid m \\in S$, $m$ 的各位数字中不出现 $i\\}(i=1,2,3)$. 于是所求 $n$ 位数的个数等于 $\\left|\\complement_S A_1 \\cap \\complement_S A_2 \\cap \\complement_S A_3\\right|=|S|-\\left(\\left|A_1\\right|+\\left|A_2\\right|+\\left|A_3\\right|\\right)+\\left(\\left|A_1 \\cap A_2\\right|+\\right. \\left|A_1 \\bigcap A_3\\right|+\\left|A_2 \\cap A_3\\right|-\\left|A_1 \\cap A_2 \\cap A_3\\right|=3^n-\\left(2^n+2^n+2^n\\right)+\\left(1^n+\\right. \\left.1^n+1^n\\right)-0=3^n-3 \\cdot 2^n+3$.",
+    "remark": "",
+    "figures": []
+}

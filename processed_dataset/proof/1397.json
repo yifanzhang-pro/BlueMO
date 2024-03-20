@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $a, b, p, q>0$. 求证:\n$$\n\\frac{a^{p+q}+b^{p+q}}{2} \\geqslant\\left(\\frac{a^p+b^p}{2}\\right)\\left(\\frac{a^q+b^q}{2}\\right) .\n$$",
+    "solution": "原不等式等价于 $\\left(a^p-b^p\\right)\\left(a^q-b^q\\right) \\geqslant 0$.\n而 $a^p-b^p$ 与 $a^q-b^q$ 同号或同为零,故结论成立.",
+    "remark": "",
+    "figures": []
+}

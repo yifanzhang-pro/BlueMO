@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例13 求函数 $f(x)=2 \\arccos \\left(\\frac{x^2-x}{2}\\right)$ 的定义域、值域及单调区间.\n分析从定义出发, 根据反三角函数的图象与性质回答问题.",
+    "solution": "解:由 $-1 \\leqslant \\frac{x^2-x}{2} \\leqslant 1$, 得定义域是 $x \\in[-1,2]$;\n由 $\\frac{x^2-x}{2}=\\frac{1}{2}\\left[\\left(x-\\frac{1}{2}\\right)^2-\\frac{1}{4}\\right] \\in\\left[-\\frac{1}{8}, 1\\right]$,\n故值域是\n$$\ny \\in\\left[0,2 \\arccos \\left(-\\frac{1}{8}\\right)\\right]\n$$\n由上述两步可知 $x \\in\\left[-1, \\frac{1}{2}\\right]$ 时, $f(x)$ 是单调递增的, $x \\in\\left[\\frac{1}{2}, 2\\right]$ 时, $f(x)$ 是单调递减的.\n评注在求函数单调性时, 必须考虑函数定义域.\n有关复合函数的单调区间求法可根据“增增得增, 增减得减, 减减得增” 的记忆法则求之, 本题中设 $t=\\frac{1}{2}\\left(x^2-x\\right)$, 则 $y=2 \\arccos t$ 是复合函数.",
+    "remark": "",
+    "figures": []
+}

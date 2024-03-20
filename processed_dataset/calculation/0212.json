@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题14. 将与 105 互素的正整数从小到大排列成数列, 求出这个数列的第 1000 项.",
+    "solution": "(解法二) 记 $S=\\{1,2,3, \\cdots, 105\\}, A_i=\\{m \\mid m \\in S$ 且 $m$ 被 $i$ 整除 $\\} (i=3,5,7)$. 于是 $S$ 内与 105 互素的数的个数等于 $\\left|\\complement_S A_3 \\cap \\complement_S A_5 \\cap \\complement_S A_7\\right|= |S|-\\left|A_3\\right|-\\left|A_5\\right|-\\left|A_7\\right|+\\left|A_3 \\cap A_5\\right|+\\left|A_3 \\cap A_7\\right|+\\left|A_5 \\cap A_7\\right|- \\left|A_3 \\cap A_5 \\cap A_7\\right|=105-\\left[\\frac{105}{3}\\right]-\\left[\\frac{105}{5}\\right]-\\left[\\frac{105}{7}\\right]+\\left[\\frac{105}{3 \\times 5}\\right]+\\left[\\frac{105}{3 \\times 7}\\right]+ \\left[\\frac{105}{5 \\times 7}\\right]-\\left[\\frac{105}{3 \\times 5 \\times 7}\\right]=48$. 设所有正整数中与 105 互质的正整数从小到大排成的数列为 $\\left\\{a_n\\right\\}$, 于是 $a_1=1, a_2=2, a_3=4, \\cdots, a_{46}=101, a_{47}=103$, $a_{48}=104$, 并记 $P=\\left\\{a_1, a_2, \\cdots, a_{48}\\right\\}$. 一方面数列 $\\left\\{a_n\\right\\}$ 中的每一项 $a_n$ 可表成为 $a_n=105 k+r(k, r$ 为非负整数, $0 \\leqslant r \\leqslant 105)$, 由 $\\left(a_n, 105\\right)=(105 k+ r, 105)=(r, 105)=1$, 知 $r \\in P$. 另一方面, 对任意非负整数 $k$ 及任意 $r \\in P$, 由 $(105 k+r, 105)=(r, 105)=1$ 知数列 $\\left\\{a_n\\right\\}$ 中必有某一项 $a_n=105 k+ r$. 可见,数列 $\\left\\{a_n\\right\\}$ 由且仅由形如 $105 k+r$ ( $k$ 为非负整数, $r \\in P$ ) 的数组成.\n因为每一个固定的 $k$, 当 $r$ 取遍 $P$ 中的数时, 形如 $105 k+r$ 的数有 48 个, 即得到数列中 48 个项.\n又因为 $1000=48 \\times 20+40$, 所以 $a_{1000}=105 \\times 20+a_{40}$, 而 $a_{48}=104, a_{47}=103, a_{46}=101, a_{45}=97, a_{44}=94, a_{43}=92, a_{42}=89$, $a_{41}=88, a_{40}=86$, 所以 $a_{1000}=105 \\times 20+86=2186$.",
+    "remark": "",
+    "figures": []
+}

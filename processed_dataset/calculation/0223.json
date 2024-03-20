@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise15.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 对于有限集 $A$, 存在函数 $f: \\mathbf{N}_{+} \\rightarrow A$, 具有以下性质: 若 $i, j \\in \\mathbf{N}_{+}$, 且 $|i-j|$ 为素数,则 $f(i) \\neq f(j)$, 问集合 $A$ 中最少有几个元素?",
+    "solution": "因 1,3,6,8 中任意两个之差的绝对值为素数, 由题意知 $f(1)$, $f(3), f(6), f(8)$ 为 $A$ 中两两不同的数, 从而 $|A| \\geqslant 4$, 另一方面, 假设 $A= \\{0,1,2,3\\}$ 且对任意 $x \\in \\mathbf{N}_{+}, x=4 k+r(k \\in \\mathbf{N}, r=0,1,2,3)$, 定义 $f(x)=r$. 于是, 对任意 $x, y \\in \\mathbf{N}_{+}$, 若当 $|x-y|$ 为素数时有 $f(x)=f(y)$, 则 4||$x-y \\mid$, 这与 $|x-y|$ 为素数矛盾.\n故所作 $f: \\mathbf{N}_{+} \\rightarrow A$ 满足题目条件且 $|A|=4$, 所以 $A$ 中最少有 4 个元素.",
+    "remark": "",
+    "figures": []
+}

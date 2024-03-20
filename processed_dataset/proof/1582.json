@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 正实数数列 $\\left\\{a_n\\right\\}$ 满足: 对任意正整数 $n$, 都有 $\\sum_{j=1}^n a_j^3=\\left(\\sum_{j=1}^n a_j\\right)^2$.\n证明: 对任意 $n \\in \\mathbf{N}^*$, 都有 $a_n=n$.",
+    "solution": "当 $n=1$ 时, $a_1^3=a_1^2$, 而 $a_1>0$, 故 $a_1=1$, 即命题对 $n=1$ 成立.\n现设命题对 $1,2, \\cdots, n-1$ 都成立, 即 $a_k=k, k=1,2, \\cdots, n-1$. 则\n$$\n\\left(\\sum_{k=1}^{n-1} k^3\\right)+a_n^3=\\sum_{k=1}^n a_k^3=\\left(\\sum_{k=1}^n a_k\\right)^2=\\left(\\left(\\sum_{k=1}^{n-1} k\\right)+a_n\\right)^2,\n$$\n于是 $a_n^3=a_n^2+n(n-1) a_n$, 解得 $a_n=0,-(n-1)$ 或 $n$, 结合 $a_n>0$, 知 $a_n= n$. 所以, 命题对 $n$ 成立, 获证.",
+    "remark": "",
+    "figures": []
+}

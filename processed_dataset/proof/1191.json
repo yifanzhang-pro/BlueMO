@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题16. 设 $x_1, x_2, x_3 \\in \\mathbf{R}^{+}$, 证明:\n$$\n\\frac{x_2}{x_1}+\\frac{x_3}{x_2}+\\frac{x_1}{x_3} \\leqslant\\left(\\frac{x_1}{x_2}\\right)^2+\\left(\\frac{x_2}{x_3}\\right)^2+\\left(\\frac{x_3}{x_1}\\right)^2 .\n$$",
+    "solution": "由平均值不等式, 得 $\\frac{x_2}{x_1}=\\frac{x_2}{x_3} \\cdot \\frac{x_3}{x_1} \\leqslant \\frac{1}{2}\\left[\\left(\\frac{x_2}{x_3}\\right)^2+\\left(\\frac{x_3}{x_1}\\right)^2\\right], \\frac{x_3}{x_2}=\\frac{x_3}{x_1}$. $\\frac{x_1}{x_2} \\leqslant \\frac{1}{2}\\left[\\left(\\frac{x_3}{x_1}\\right)^2+\\left(\\frac{x_1}{x_2}\\right)^2\\right], \\frac{x_1}{x_3}=\\frac{x_1}{x_2} \\cdot \\frac{x_2}{x_3} \\leqslant \\frac{1}{2}\\left[\\left(\\frac{x_1}{x_2}\\right)^2+\\left(\\frac{x_2}{x_3}\\right)^2\\right]$. 将它们相加, 便得到命题成立.",
+    "remark": "",
+    "figures": []
+}

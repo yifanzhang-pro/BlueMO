@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 在圆上任取 $n(n>2)$ 个点, 把每个点用线段与其余各点相连接, 能否一笔画出所有这些线段,使它们首尾相接,最后回到出发点?",
+    "solution": "当 $n$ 是奇数时可以画成; 当 $n$ 是偶数时不能画成.",
+    "remark": "",
+    "figures": []
+}

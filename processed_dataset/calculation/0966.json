@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 设方程 $x^2-2 \\sqrt{2} x+m=0$ 的两个虚根为 $\\alpha$ 、 $\\beta$, 且 $|\\alpha-\\beta|=1$, 则实数 $m$ 的值等于 ( ).\n(A) $-\\frac{1}{4}$\n(B) $\\frac{1}{4}$\n(C) $-\\frac{9}{4}$\n(D) $\\frac{9}{4}$",
+    "solution": "D.\n由 $\\alpha+\\beta=2 \\sqrt{2},|\\alpha-\\beta|=1$, 而 $\\alpha-\\beta$ 是纯虚数, 从而 $\\alpha-\\beta= \\pm \\mathrm{i}$.\n$$\n4 \\alpha \\beta=(\\alpha+\\beta)^2-(\\alpha-\\beta)^2=(2 \\sqrt{2})^2+1=9 \\text {, 所以 } m=\\alpha \\beta=\\frac{9}{4} \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

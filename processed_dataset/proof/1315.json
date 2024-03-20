@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例4. 已知正整数 $a 、 b 、 c 、 d 、 n$ 满足: $n^2<a<b<c<d<(n+1)^2$, 求证: $a d \\neq b c$.",
+    "solution": "证明:用反证法.\n若 $\\frac{b}{a}=\\frac{d}{c}$, 令 $\\frac{b}{a}=\\frac{d}{c}=\\frac{p}{q}$, 其中 $p 、 q$ 是两个互素的正整数.\n因为 $\\frac{p}{q}>1$, 有 $p \\geqslant q+1$, 则\n$$\n\\frac{p}{q} \\geqslant 1+\\frac{1}{q} . \\label{eq1}\n$$\n又由 $b=\\frac{a p}{q}$ 得出 $q \\mid a p$, 故 $q \\mid a$, 同理有 $q \\mid c$. 于是 $q \\mid c-a$, 所以 $c-a \\geqslant q$, $c \\geqslant a+q$, 因此\n$$\n\\frac{p}{q}=\\frac{d}{c} \\leqslant \\frac{d}{a+q}<\\frac{(n+1)^2}{n^2+q} . \\label{eq2}\n$$\n由式\\ref{eq1},\\ref{eq2}可知 $\\frac{(n+1)^2}{n^2+q}>1+\\frac{1}{q}$, 即 $2 n>q+\\frac{n^2}{q}$. 矛盾!故 $a d \\neq b c$.",
+    "remark": "",
+    "figures": []
+}

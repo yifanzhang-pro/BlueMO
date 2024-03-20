@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 有三条长度分别为1,2,3的线段,现将长为3的线段任意分成 $n$ 段, $n \\geqslant 2$, 证明: 在所得的 $n+2$ 条线段中必有三段可组成三角形.",
+    "solution": "设分成的 $n$ 条线段的长度分别是 $a_1, a_2, \\cdots, a_n$. 若有某个 $a_k>1$, 则 $1,2, a_k$ 可组成三角形,故不妨设 $a_1 \\leqslant a_2 \\leqslant \\cdots \\leqslant a_n \\leqslant 1$. 若 $a_{n-1}>\\frac{1}{2}$, 则 $a_{n-1}+a_n>1$, 从而 $1, a_{n-1}, a_n$ 可组成三角形; 若 $a_{n-1} \\leqslant \\frac{1}{2}$, 且存在 $k$ 使 $a_k+ a_{k+1}>a_{k+2}$, 则 $a_k, a_{k+1}, a_{k+2}$ 可组成三角形; 若 $a_{n-1} \\leqslant \\frac{1}{2}$ 且对任何 $k$ 有 $a_k+ a_{k+1} \\leqslant a_{k+2}$, 则 $a_k \\leqslant \\frac{1}{2} a_{k+2}$, 从 $a_{n-1} \\leqslant \\frac{1}{2}$ 出发推出, 当 $n$ 为奇数时, $a_1+a_2+ \\cdots+a_n \\leqslant 2\\left(a_2+a_4+\\cdots+a_{n-1}\\right)+a_n \\leqslant 2\\left(\\frac{1}{2}+\\frac{1}{4}+\\cdots+\\frac{1}{2^{\\frac{n}{2}}}\\right)+1<3$. 当 $n$ 为偶数时, $a_1+a_2+\\cdots+a_n \\leqslant 2\\left(a_1+a_3+\\cdots+a_{n-1}\\right)+1 \\leqslant 2\\left(\\frac{1}{2}+\\frac{1}{4}+\\cdots+\\frac{1}{2^{\\frac{n}{2}}}\\right)+1<3$. 矛盾.\n故命题得证.",
+    "remark": "",
+    "figures": []
+}

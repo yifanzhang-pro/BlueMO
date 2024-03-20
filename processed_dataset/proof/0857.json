@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例6 给定一个正整数 $n$. 有多少个满足条件\n$$\n0 \\leqslant a \\leqslant b \\leqslant c \\leqslant d \\leqslant n\n$$\n的四元有序整数组 $(a, b, c, d)$ ?",
+    "solution": "解:作映射 $f$ :\n$$\n(a, b, c, d) \\mapsto(a, b+1, c+2, d+3) .\n$$\n于是 $f$ 是从集合 $A=\\{(a, b, c, d) \\mid 0 \\leqslant a \\leqslant b \\leqslant c \\leqslant d \\leqslant n\\}$ 到集合 $B=\\{(a,b^{\\prime}, c^{\\prime}, d^{\\prime}) \\mid 0 \\leqslant a<b^{\\prime}<c^{\\prime}<d^{\\prime} \\leqslant n+3 \\}$ 的一个映射.\n容易验证这个映射是一一对应.\n所以 $|A|=|B|$.\n由于 $|B|$ 就是集合 $\\{0,1,2, \\cdots, n+3\\}$ 的四元子集的个数, 即 $\\mathrm{C}_{n+4}^4$, 从而 $|A|=\\mathrm{C}_{n+4}^4$.\n说明利用一一对应, 可以帮助我们解决许多组合计数问题.\n当我们欲求集合 $A$ 的元素个数时, 可以寻找一个既能与集合 $A$ 建立一一对应又便于计数的集合 $B$, 算出集合 $B$ 的元素个数即可.\n本例就是如此,下面再看一个有趣的问题.",
+    "remark": "",
+    "figures": []
+}

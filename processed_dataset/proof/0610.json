@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设 $X$ 是有限集, $A_1, A_2, \\cdots, A_m$ 是 $X$ 的子集, 且 $\\left|A_i\\right|=r(1 \\leqslant i \\leqslant m)$. 若对任何 $i \\neq j$, 有 $\\left|A_i \\cap A_j\\right| \\leqslant k$. 求证: $|X| \\geqslant \\frac{m r^2}{r+(m-1) k}$.",
+    "solution": "解法 2: 设元素 $x$ 在 $A_1, A_2, \\cdots, A_m$ 中出现的总次数为 $d(x)$, 称为 $x$ 的度.\n则 $\\sum_{x \\in X} d(x)=\\sum_{i=1}^m\\left|A_i\\right|$. 对于集合 $A_i$, 它的所有元素的度的和称为 $A_i$ 的度, 记为 $d\\left(A_i\\right)$, 即 $d\\left(A_i\\right)=\\sum_{x \\in A_i} d(x)$. 考察所有集合的度的和 $S=\\sum_{i=1}^m d\\left(A_i\\right)$, 则二方面, $d\\left(A_i\\right)=\\sum_{\\substack{j \\neq i \\\\ 1 \\leqslant j \\leqslant m}}\\left|A_i \\cap A_j\\right|+\\left|A_i\\right| \\leqslant \\sum_{\\substack{j \\neq i \\\\ 1 \\leqslant j \\leqslant m}} k+r=(m-1) k+r$. 所以 $S=\\sum_{i=1}^m d\\left(A_i\\right) \\leqslant \\sum_{i=1}^m[r+(m-1) k]=m[r+(m-1) k]$. 另一方面, 对固定的 $A_i$, 当 $x \\in A_i$ 时, $x$ 对 $d\\left(A_i\\right)$ 的贡献为 $d(x)$. 又 $x$ 共在 $d(x)$ 个 $A_i$ 中出现,\n从而 $x$ 对 $S$ 的贡献为 $d(x)^2$. 于是, 由 Cauchy 不等式, 有 $S=\\sum_{i=1}^m \\sum_{x \\in A_i} d(x)= \\sum_{x \\in X} d(x)^2 \\geqslant \\frac{\\left(\\sum_{x \\in X} d(x)\\right)^2}{\\sum_{x \\in X} 1}=\\frac{\\left(\\sum_{i=1}^m\\left|A_i\\right|\\right)^2}{|X|}=\\frac{(m r)^2}{|X|}$. 命题获证.",
+    "remark": "",
+    "figures": []
+}

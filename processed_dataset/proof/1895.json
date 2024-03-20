@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题15. 已知圆 $W$ 的中心为 $O, B C$ 为直径.\n点 $A$ 位于圆 $W$ 上使得 $0^{\\circ}<\\angle A O B< 120^{\\circ}$. 设 $D$ 是不包含 $C$ 点的弧 $\\overparen{A B}$ 的中点.\n直线 $l$ 通过 $O$ 且平行于直线 $A D$, 设 $l$ 交直线 $A C$ 于 $J$. 线段 $O A$ 的垂直平分线交圆 $W$ 于 $E$ 和 $F$. 求证: $J$ 是 $\\triangle C E F$ 的内心.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c6a15.png>), 连结 $O D 、 D F 、 E J 、 O E 、 E A$. 我们首先证明 $J$ 位于 $\\angle F E C$ 的内角平分线上.\n事实上, 因为 $E$ 和 $F$ 是关于 $P$ 的一对反射点, $D 、 J$ 是关于 $P$ 的另一对反射点 (四边形 $A D O J$ 是平行四边形), 所以 $\\angle F E J=\\angle D F E$.\n因此我们只需证明 $\\angle D F E=\\frac{1}{2} \\angle F E C$. 这等价于证明 $\\angle D O E=\\frac{1}{2} \\angle F O C$. …11. 由已知条件易知\n$\\triangle A O E$ 是等边三角形, 由于 $\\angle D O E=\\angle A O E-\\angle A O D=60^{\\circ}-\\frac{1}{2} \\angle A O B= \\frac{1}{2}\\left(180^{\\circ}-\\left(\\angle A O B+60^{\\circ}\\right)\\right)=\\frac{1}{2}\\left(180^{\\circ}-(\\angle A O B+\\angle F O A)\\right)=\\frac{1}{2} \\angle F O C$.\n(1) 式得证, 从而证得 $J$ 位于 $\\angle F E C$ 的内角平分线上.\n又易见 $\\overparen{A F}=\\overparen{A E}$, 故 $J$ 位于 $\\angle F C E$ 的平分线上.\n故 $J$ 是 $\\triangle C E F$ 的内心.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6a15.png"
+    ]
+}

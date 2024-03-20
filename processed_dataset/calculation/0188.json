@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter8.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 整数 $1,2, \\cdots, n$ 的排列满足: 每个数或者大于它前面的所有的数, 或者小于它前面的所有的数, 试问有多少个这样的排列?",
+    "solution": "解:记所求排列的个数为 $a_n$.\n$n=1$ 时, 只有数 1 , 显然 $a_1=1 . n=2$ 时, 显然只有 2 个排列 1,2 和 2 , 1 , 所以 $a_2=2$.\n对于 $n>2$, 考虑 $n$ 在第 $i$ 个位置的排列, 这时 $n$ 之后的 $n-i$ 个数的位置唯一确定, 只能是 $n-i, n-i-1, \\cdots, 2,1$, 而它前面的 $i-1$ 个数有 $a_{i-1}$ 种排法 (约定 $a_0=1$ ), 又 $i=1,2, \\cdots, n$, 故必有\n$$\na_n=1+a_1+\\cdots+a_{n-1},\n$$\n从而\n$$\na_{n-1}=1+a_1+\\cdots+a_{n-2}(n \\geqslant 3),\n$$\n两式相减得 $a_n-a_{n-1}=a_{n-1}$, 即 $a_n=2 a_{n-1}(n \\geqslant 3)$, 所以 $a_n=a_2 \\cdot 2^{n-2}=2^{n-1}$, 经检验 $a_1=1, a_2=2$ 满足 $a_n=2^{n-1}$, 所以 $a_n=2^{n-1}(n \\geqslant 1)$, 即所求的排列个数为 $2^{n-1}$.",
+    "remark": "",
+    "figures": []
+}

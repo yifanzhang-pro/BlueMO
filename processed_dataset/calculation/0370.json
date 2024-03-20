@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter10.tex",
+    "problem_type": "calculation",
+    "problem": "例6. 求集合 $S=\\{1,2, \\cdots, n\\}$ 的不含两个相邻整数的非空子集的个数.",
+    "solution": "解:据正整数 Fibonacci 表示的性质可知, $S$ 的每个不含两个相邻整数的非空子集 $A$ 恰好对应一个小于 $\\left({\\overline{1}(\\underbrace{00 \\cdots 0}_{n \\uparrow 0})_F}^{0 \\text { 个 }}=F_{n+1}\\right.$ 的正整数 $m= \\left(\\overline{a_n a_{n-1} \\cdots a_1}\\right)_F$, 其中只需规定\n$$\na_i= \\begin{cases}1, & i \\in A \\\\ 0, & i \\notin A .\\end{cases}\n$$\n从而满足条件的非空子集个数为 $F_{n+1}-1$, 即 $\\frac{1}{\\sqrt{5}}\\left(\\left(\\frac{1+\\sqrt{5}}{2}\\right)^{n+2}- \\left(\\frac{1-\\sqrt{5}}{2}\\right)^{n+2}\\right)-1$",
+    "remark": "",
+    "figures": []
+}

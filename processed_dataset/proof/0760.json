@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 证明: 对任意实数 $x$, 均有\n$$\n\\left|\\sqrt{x^2+x+1}-\\sqrt{x^2-x+1}\\right|<1 .\n$$",
+    "solution": "因为 $\\left|\\sqrt{x^2+x+1}-\\sqrt{x^2-x+1}\\right|=$\n$$\n\\left|\\sqrt{\\left(x+\\frac{1}{2}\\right)^2+\\left(\\frac{\\sqrt{3}}{2}\\right)^2}-\\sqrt{\\left(x-\\frac{1}{2}\\right)^2+\\left(\\frac{\\sqrt{3}}{2}\\right)^2}\\right|\n$$\n这可以看作直角坐标系中点 $P\\left(x, \\frac{\\sqrt{3}}{2}\\right)$ 到点 $A\\left(-\\frac{1}{2}, 0\\right)$ 与点 $B\\left(\\frac{1}{2}, 0\\right)$ 的距离的差, 如图(<FilePath:./images/volume14/figures/fig-c11a1.png>)所示.\n根据三角形两边之差小于第三边及 $|A B|=1$, 得\n$$\n\\left|\\sqrt{x^2+x+1}-\\sqrt{x^2-x+1}\\right|<1 .\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c11a1.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题15 设 $Z$ 表示所有整数的集合.\n对于固定的 $A, B, C \\in \\mathbf{Z}$, 令\n$$\n\\begin{aligned}\n& M_1=\\left\\{x^2+A x+B \\mid x \\in \\mathbf{Z}\\right\\}, \\\\\n& M_2=\\left\\{2 x^2+2 x+C \\mid x \\in \\mathbf{Z}\\right\\},\n\\end{aligned}\n$$\n求证: 对任何 $A, B \\in \\mathbf{Z}$, 都可选取 $C \\in \\mathbf{Z}$, 使得集合 $M_1$ 与 $M_2$ 互不相交.",
+    "solution": "如果 $A$ 为奇数, 则有 $x(x+A)+B \\equiv B(\\bmod 2)$, 这表明 $M_1$ 中的所有数都与 $B$ 奇偶性相同.\n对于 $M_2$ 中的数, 有 $2 x(x+1)+C \\equiv C(\\bmod 2)$. 可见, 为使 $M_1 \\cap M_2=\\varnothing$, 只须取 $C=B+1$ 即可.\n如果 $A$ 为偶数, 则有 $2 x(x+1)+C \\equiv C(\\bmod 4)$. 又因 $\\left(x+\\frac{A}{2}\\right)^2$ 作为完全平方数模 4 时只能为 0 或 1 , 故由 $x^2+A x+B=\\left(x+\\frac{A}{2}\\right)^2-\\left(\\frac{A}{2}\\right)^2+B$ 知 $M_1$ 中元素模 4 时只能与 $B 、 B+1$ 或 $B+3$ 同余.\n因而, 当取 $C=B+2$ 时, $M_1 \\cap M_2=\\varnothing$.",
+    "remark": "",
+    "figures": []
+}

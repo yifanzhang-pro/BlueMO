@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 在六边形 $A_1 A_2 A_3 A_4 A_5 A_6$ 内存在一点 $O$, 使得 $\\angle A_i O A_{i+1}=\\frac{\\pi}{3} ( i=1$, $2,3,4,5,6$ ) (约定 $A_7=A_1$ ). 如果 $O A_1>O A_3>O A_5, O A_2>O A_4> O A_6$, 则\n$$\nA_1 A_2+A_3 A_4+A_5 A_6<A_2 A_3+A_4 A_5+A_6 A_1 .\n$$",
+    "solution": "作射线 $P X 、 P Y$ 使得 $\\angle X P Y=\\frac{\\pi}{3} . B_1 、 B_3 、 B_5$ 和 $B_2 、 B_4 、 B_6$ 分别位于 $P X 、 P Y$ 上且使得 $P B_i=O A_i$, 这样 $B_i B_{i+1}=A_i A_{i+1}$. 因为 $P B_1>P B_3> P B_5, P B_6<P B_4<P B_2$, 所以线段 $B_1 B_6$ 必与线段 $B_2 B_3 、 B_3 B_4 、 B_4 B_5$ 分别交于某三点 $C_1 、 C_2 、 C_3$. 因为 $B_1 B_2<B_1 C_1+C_1 B_2, B_3 C_2<B_3 C_1+C_1 C_2$, $C_2 B_4<C_2 C_3+C_3 B_4, B_5 B_6<B_5 C_3+C_3 B_6$, 相加便得 $B_1 B_2+B_3 B_4+B_5 B_6< B_2 B_3+B_4 B_5+B_6 B_1$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例2. 如图(<FilePath:./images/volume9/figures/fig-c7i2.png>),曲线 $L$ 将正三角形 $\\triangle A B C$ 分为两个等面积的部分.\n证明: $l \\geqslant \\frac{\\sqrt{\\pi} a}{2 \\sqrt[4]{3}}$, 其中 $l$ 为 $L$ 的长, $a$ 为正三角形的边长.",
+    "solution": "解:如图(<FilePath:./images/volume9/figures/fig-c7i3.png>), 我们将 $\\triangle A B C$ 连续翻转六次, 这时 $L$ 形成一条闭曲线.\n由于 $L$ 所围成的区域的面积等于 $3 S_{\\triangle A B C}$ 为一定值, 由定理 1 , 当此闭曲线为圆时周长为最小.\n因此\n$$\n6 l \\geqslant 2 \\pi \\sqrt{\\frac{3 S_{\\triangle A B C}}{\\pi}}=2 \\sqrt{\\pi} \\cdot \\sqrt{3 \\cdot \\frac{\\sqrt{3}}{4} a^2},\n$$\n由此即得 $l \\geqslant \\frac{\\sqrt{\\pi} a}{2 \\sqrt[4]{3}}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c7i2.png",
+        "./images/volume9/figures/fig-c7i3.png"
+    ]
+}

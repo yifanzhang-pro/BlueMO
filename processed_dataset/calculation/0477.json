@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例3 设 $A=\\left\\{a_1, a_2, a_3\\right\\}, B=\\left\\{b_1, b_2, b_3, b_4\\right\\}$.\n(1) 写出一个 $f: A \\rightarrow B$, 使得 $f$ 是单射, 并求 $A$ 到 $B$ 的单射个数;\n(2) 写出一个 $f: A \\rightarrow B$, 使得 $f$ 不是单射, 并求所有这种映射的个数;\n(3) $A$ 到 $B$ 的映射能否是满射?",
+    "solution": "解:(1) 映射\n$$\nf: a_1 \\mapsto b_1, a_2 \\mapsto b_2, a_3 \\mapsto b_3\n$$\n就是 $A$ 到 $B$ 的一个单射.\n这种映射的个数为 $\\mathrm{P}_4^3=24$ (个).\n(2) 映射\n$$\nf: a_1 \\mapsto b_1, a_2 \\mapsto b_1, a_3 \\mapsto b_1\n$$\n即为所求.\n这种映射的个数为 $4^3-\\mathrm{P}_4^3=40$ (个).\n(3) 答案是否定的.\n由于集合 $A$ 中的每一个元素恰与集合 $B$ 中的一个元素对应, 而 $|A|=3,|B|=4$ (用 $|A|$ 表示集合 $A$ 的元素个数), 所以集合 $B$ 中至少有一个元素,在集合 $A$ 中找不到与它对应的元素.\n因而 $A$ 到 $B$ 的满射不存在.\n一般地, 如果 $A$ 到 $B$ 有一个单射, 那么 $|A| \\leqslant|B|$; 如果 $A$ 到 $B$ 有一个满射, 那么 $|A| \\geqslant|B|$.",
+    "remark": "",
+    "figures": []
+}

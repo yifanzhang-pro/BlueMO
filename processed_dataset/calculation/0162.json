@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter13.tex",
+    "problem_type": "calculation",
+    "problem": "例6. 设 $M$ 为平面上坐标为 $(p \\times 1994,7 p \\times 1994)$ 的点, 其中 $p$ 为素数, 求满足下列条件的直角三角形的个数:\n(1)三角形的顶点都是整点, $M$ 是直角顶点;\n(2) 三角形的内心是坐标原点.",
+    "solution": "解法二记号同解法一, 并且同解法一可得 $M A=5 t, M B=5 t^{\\prime}\\left(t, t^{\\prime}\\right.$ 为正整数), 且 $r=p \\times 1994 \\times 5$, 记 $r_0=\\frac{r}{5}=2 \\times 997 \\times p(2,997, p$ 皆为素数 $)$ 于是 $A B=\\sqrt{M A^2+M B^2}=5 \\sqrt{t^2+t^{\\prime 2}}$. 由平面几何知识, 易知 $A B=M A+ M B-2 r$, 即 $5 \\sqrt{t^2+t^{\\prime 2}}=5 t+5 t^{\\prime}-10 r_0$, 两边除以 5 后, 再平方并经过整理可得\n$$\n\\left(t-2 r_0\\right)\\left(t^{\\prime}-2 r_0\\right)=2 r_0{ }^2=2^3 \\times 997^2 \\times p^2 .\n$$\n记 $m_0=t-2 r_0, n_0=t^{\\prime}-2 r_0$, 则\n$$\nm_0 n_0=2^3 \\times 997^2 \\times p^2 .\n$$\n易知所求 Rt $\\triangle M A B$ 的个数 $S$ 等于(2) 的正整数解组 $\\left(m_0, n_0\\right)$ 的个数, 同解法一可求得\n$$\nS=\\left\\{\\begin{array}{l}\n36, p \\neq 2 \\text { 且 } p \\neq 997, \\\\\n20, p=997, \\\\\n18, p=2 .\n\\end{array}\\right.\n$$",
+    "remark": "",
+    "figures": []
+}

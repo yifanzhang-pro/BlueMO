@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise18.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 求方程组\n$$\n\\left\\{\\begin{array}{l}\nx^3+y^3+z^3=x+y+z, \\\\\nx^2+y^2+z^2=x y z\n\\end{array}\\right.\n$$\n的所有正实数解.",
+    "solution": "构造方程 $f(x, y, z)=\\left(x^3-x\\right)+\\left(y^3-y\\right)+\\left(z^3-z\\right)$, 则第一个方程等价于 $f(x, y, z)=0$.\n若 $x, y, z \\geqslant 1$, 则 $f(x, y, z) \\geqslant 0$ 当且仅当 $x=y=z=1$ 时等号成立.\n但若 $x=y=z=1$, 则不满足第二个方程.\n所以, 如果假设此方程组解存在, 则任意一组解中至少有一个未知数小于 1 , 不妨设 $x<1$, 则 $x^2+y^2+z^2>y^2+z^2 \\geqslant 2 y z>x y z$ 与已知矛盾, 因此原方程组没有正实数解.",
+    "remark": "",
+    "figures": []
+}

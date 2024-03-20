@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题27 定义在正整数集 $\\mathbf{N}_{+}$上的函数 $f$ 满足 $f(1)=1$, 且对任意正整数 $m$ 、 $n$, 有\n$$\nf(m)+f(n)=f(m+n)-m n .\n$$\n求 $f$.",
+    "solution": "在(1)中令 $n=1$, 得 $f(m)+f(1)=f(m+1)-m$, 即 $f(m+1)- f(m)=m+1$. 于是有 $f(m)-f(m-1)=m, f(m-1)-f(m-2)=m- 1, \\cdots, f(2)-f(1)=2$. 将上面这 $m-1$ 个等式相加, 得 $f(m)-f(1)=2+ 3+\\cdots+m$, 所以 $f(m)=\\frac{m(m+1)}{2}$. 经检验, $f(m)=\\frac{m(m+1)}{2}$ 是原方程的解.",
+    "remark": "",
+    "figures": []
+}

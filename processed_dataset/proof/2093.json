@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $n$ 边形 $A_1 A_2 \\cdots A_n$ 内有一点 $P$ 到边 $A_1 A_2, A_2 A_3, \\cdots, A_n A_1$ 的距离分别为 $d_1, d_2, \\cdots, d_n$, 求证: $\\sum_{i=1}^n \\frac{a_i}{d_i} \\geqslant 2 n \\tan \\frac{\\pi}{n}$, 其中 $a_i=A_i A_{i+1}$ (约定 $A_{n+1}=A_1$ ), 并指出等号成立的充要条件.",
+    "solution": "设 $n$ 边形 $A_1 A_2 \\cdots A_n$ 的面积为 $S$, 由面积关系有 $\\sum_{i=1}^n a_i d_i=2 S$, 于是由 Cauchy 不等式和等周不等式有 $\\sum_{i=1}^n \\frac{a_i}{d_i}=\\sum_{i=1}^n \\frac{a_i^2}{a_i d_i} \\geqslant \\frac{\\left(\\sum a_i\\right)^2}{\\sum_{i=1}^n a_i d_i}=\\frac{\\left(\\sum a_i\\right)^2}{2 S} \\geqslant \\frac{1}{2 S} \\cdot 4 n \\cdot S \\cdot \\tan \\frac{\\pi}{n}=2 n \\tan \\frac{\\pi}{n}$.",
+    "remark": "",
+    "figures": []
+}

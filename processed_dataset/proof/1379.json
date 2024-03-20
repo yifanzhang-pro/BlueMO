@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $x, y, z \\in \\mathbf{R}$, 求证:\n$$\n\\left(x^2+y^2+z^2\\right)\\left[\\left(x^2+y^2+z^2\\right)^2-(x y+y z+z x)^2\\right]\n$$\n$$\n\\geqslant(x+y+z)^2\\left[\\left(x^2+y^2+z^2\\right)-(x y+y z+z x)\\right]^2 .\n$$",
+    "solution": "记 $a=x+y+z, b=x y+y z+z x$, 则 $x^2+y^2+z^2=a^2-2 b$, 故原式左边一右边 $=2 b^2\\left(a^2-3 b\\right)=b^2 \\cdot\\left[(x-y)^2+(y-z)^2+(z-x)^2\\right] \\geqslant 0$.",
+    "remark": "",
+    "figures": []
+}

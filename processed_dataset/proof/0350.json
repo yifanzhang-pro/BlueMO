@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise12.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 证明: 全体正整数可分成 100 个非空子集, 使得任何 3 个满足关系式 $a+ 99 b=c$ 的正整数 $a 、 b 、 c$, 都可以从中找到两个数属于同一个子集.",
+    "solution": "构造 100 个子集如下:\n$A_i=\\left\\{k \\mid k \\equiv i-1(\\bmod 99)\\right.$ 且 $k \\in \\mathbf{N}_{+}$为偶数 $\\}, i=1,2, \\cdots, 99$.\n$A_{100}=\\left\\{k ! k \\in \\mathbf{N}_{+}\\right.$为奇数 $\\}$.\n注意到当正整数 $a 、 b 、 c$ 满足 $a+99 b=c$ 时, $a 、 b 、 c$ 中奇数的个数或为 0 或为 2 且 $a \\equiv c(\\bmod 99)$. 若 $a 、 b 、 c$ 中有 2 个数为奇数时, 那么它们都属于 $A_{100}$ 结论成立.\n若 $a 、 b 、 c$ 中奇数个数为 0 , 即 $a 、 b 、 c$ 全为偶数时, 又因为 $a \\equiv c(\\bmod 99)$, 故 $a$ 和 $c$ 属于同一子集 $A_{i_0}\\left(1 \\leqslant i_0 \\leqslant 99\\right)$.",
+    "remark": "",
+    "figures": []
+}

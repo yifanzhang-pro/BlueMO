@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 若 $p 、 q$ 为实数, 且对于 $0 \\leqslant x \\leqslant 1$, 成立不等式:\n$$\n\\left|\\sqrt{1-x^2}-p x-q\\right| \\leqslant \\frac{\\sqrt{2}-1}{2} \\text {. }\n$$\n求证: $p=-1, q=\\frac{1+\\sqrt{2}}{2}$.",
+    "solution": "原不等式即 $\\sqrt{1-x^2}-\\frac{\\sqrt{2}-1}{2} \\leqslant p x+q \\leqslant \\sqrt{1-x^2}+\\frac{\\sqrt{2}-1}{2}(0 \\leqslant x \\leqslant 1)$.\n分别以点 $A\\left(0, \\frac{\\sqrt{2}-1}{2}\\right)$ 及 $B\\left(0,-\\frac{\\sqrt{2}-1}{2}\\right)$ 为圆心, 半径为 1 作圆 $A$ 和圆 $B$, 则它们的两个端点分别为 $\\left(0, \\frac{\\sqrt{2}+1}{2}\\right) 、\\left(1, \\frac{\\sqrt{2}-1}{2}\\right)$ 及 $\\left(0, \\frac{3-\\sqrt{2}}{2}\\right)$ 、 $\\left(1,-\\frac{\\sqrt{2}-1}{2}\\right)$\n记圆 $A$ 在第一象限内的弧为 $l_1$, 圆 $B$ 在第一、四象限内的弧为 $l_2$, 于是, 当 $0 \\leqslant x \\leqslant 1$ 时,直线 $y=p x+q$ 位于 $l_1$ 和 $l_2$ 之间.\n由于连接 $l_1$ 两个端点的直线恰与圆 $B$ 相切, 从而与 $l_2$ 相切.\n因此, 直线 $y=p x+q$ 必过 $l_1$ 两个端点, 故 $p=-1, q=\\frac{\\sqrt{2}+1}{2}$.",
+    "remark": "",
+    "figures": []
+}

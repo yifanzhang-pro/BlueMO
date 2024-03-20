@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter2-1.tex",
+    "text": "斐波那契(Fibonaccia) 数列 $\\left\\{F_n\\right\\}$ 定义如下\n$$\nF_1=F_2=1, F_{n+2}=F_{n+1}=F_n, n=1,2, \\cdots .\n$$\n它是一个非常著名的数列, 围绕它展开的讨论层出不穷, 有许多有趣而又深刻的结论.\n我们以例题的形式展示其中的一些.",
+    "figures": []
+}

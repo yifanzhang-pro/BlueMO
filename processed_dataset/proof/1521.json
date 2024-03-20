@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-4.tex",
+    "problem_type": "proof",
+    "problem": "例6. 我们称一个有穷数列 $a_0, a_1, \\cdots, a_n$ 为 $k$ 平衡的, 如果\n$$\na_0+a_k+a_{2 k}+\\cdots=a_1+a_{k+1}+a_{2 k+1}+\\cdots=\\cdots=a_{k-1}+a_{2 k-1}+a_{3 k-1}+\\cdots\n$$\n已知数列 $a_0, a_1, \\cdots, a_{49}$ 对 $k=3,5,7,11,13,17$ 而言, 都是 $k$ 平衡的.\n证明: $a_0=a_1=\\cdots=a_{49}=0$.",
+    "solution": "证明:考察多项式\n$$\nf(x)=a_0+a_1 x+\\cdots+a_{49} x^{49} . \\label{eq1}\n$$\n我们的思路是去证 $f(x)$ 有 50 个不同的复根, 从而导出 $f(x)$ 是一一个零多项式, 得到 $a_0=\\cdots=a_{49}=0$.\n对 $k \\in\\{3,5,7,11,13,17\\}$, 设 $\\varepsilon(\\neq 1)$ 是一个 $k$ 次单位根, 则当 $m \\equiv n(\\bmod k)$ 时, 有 $\\varepsilon^m=\\varepsilon^n$, 于是\n$$\n\\begin{aligned}\nf(\\varepsilon)= & \\left(a_0+a_k+a_{2 k}+\\cdots\\right)+\\left(a_1+a_{k+1}+\\cdots\\right) \\varepsilon+\\cdots \\\\\n& +\\left(a_{k-1}+a_{2 k-1}+\\cdots\\right) \\varepsilon^{k-1} \\\\\n= & \\left(a_0+a_k+a_{2 k}+\\cdots\\right)\\left(1+\\varepsilon+\\varepsilon^2+\\cdots+\\varepsilon^{k-1}\\right) \\\\\n= & 0\n\\end{aligned}\n$$\n这里已用到条件式及 $\\varepsilon$ 是多项式 $1+x+\\cdots+x^{k-1}$ 的根.\n因此, 对 $k \\in\\{3,5,7,11,13,17\\}$ 及 $\\varepsilon=\\mathrm{e}^{\\mathrm{i} \\frac{2 m_x}{k}}(1 \\leqslant m \\leqslant k-1)$, 可知 $\\varepsilon$ 都是式\\ref{eq1}的复根, 而 $k$ 取不同的素数,故所得复根互不相同.\n这表明, $f(x)$ 有 $(3-1)+(5-1)+\\cdots+(17-1)=50$ 个不同复根, 它只能是零多项式.\n命题获证.\n说明 式\\ref{eq1}所列出的多项式称为数列 $\\left\\{a_m\\right\\}$ 的母函数, 它在求数列通项中经常被用到,在第 7 讲中还会提到.",
+    "remark": "",
+    "figures": []
+}

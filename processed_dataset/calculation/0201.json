@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 设三位数 $n=\\overline{a b c}$, 若以 $a, b, c$ 为 3 条边的长可以构成一个等腰(含等边) 三角形,则这样的三位数 $n$ 有个.",
+    "solution": "显然 $a, b, c \\in\\{1,2,3, \\cdots, 9\\}$. (1) 若构成等边三角形, 则这样的三位数的个数为 $n_1=\\mathrm{C}_9^1=9$ 个; (2) 若构成等腰 (非等边) 三角形, 设这样的三位数有 $n_2$ 个.\n当小数为底边长时, 设小数为 $i$, 则大数可以为 $i+1, i+ 2, \\cdots, 9$, 有 $9-i(1 \\leqslant i \\leqslant 8)$ 个.\n这时三角形的个数为 $\\sum_{i=1}^8(9-i)=\\frac{1}{2}(1+$ 8) $\\bullet 8=36$ 个; 当大数为底边时, 可能构成二角形的数码如下表, 共 16 种情况,\n\\begin{tabular}{|c|c|c|c|c|c|c|c|}\n\\hline 小数 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\\\\n\\hline 大数 & 3 & 4,5 & $5,6,7$ & $6,7,8,9$ & $7,8,9$ & 8,9 & 9 \\\\\n\\hline\n\\end{tabular}\n故等腰(非等边)三角形共有 $36+16=52$ 个, 对应的三位数的个数为 $n_2= \\mathrm{C}_3^2 \\times 52=156$. 综上知满足题目条件的三位数 $n$ 共有 $n_1+n_2=9+156=165$ 个.",
+    "remark": "",
+    "figures": []
+}

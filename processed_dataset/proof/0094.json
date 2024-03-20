@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题7 $S$ 为 $m$ 个无序正整数对 $(a, b)(1 \\leqslant a<b \\leqslant n)$ 所成的集合.\n证明: 至少有 $4 m \\cdot \\frac{m-\\frac{n^2}{4}}{3 n}$ 个无序三元数组 $(a, b, c)$, 使得 $(a, b),(b, c),(c, a)$ 都属于 $S$.",
+    "solution": "考虑 $n$ 个点 $1,2, \\cdots, n$. 如果 $(i, j) \\in S$, 则在 $i$ 与 $j$ 之间连一条线.\n我们来求这个图中的三角形的个数.\n设 $(i, j) \\in S$, 并且自 $i$ 引出的线有 $d_i$ 条, 则以 $(i, j)$ 为边的三角形至少有 $d_i+d_j-n$ 个.\n由于每个三角形有三条边, 所以 $S$ 中至少有 $\\frac{1}{3} \\sum_{(i, j) \\in S}\\left(d_i+d_j-n\\right)$ (1)个三角形.\n$\\sum_{(i, j) \\in S} 1=m, \\sum_{(i, j) \\in S} n=n m$. (2)\n对于每个固定的 $i$, 恰有 $d_i$ 个 $j$ 使 $(i, j) \\in S$, 所以在(1)中的 $d_i$ 出现了 $d_i$ 次.\n注意 $(i, j)$ 既可作为自 $i$ 引出的边, 又可作为自 $j$ 引出的边, 被计算了 2 次.\n因此 $\\sum_{(i, j) \\in S}\\left(d_i+d_j\\right)=\\sum_{i=1}^n d_i^2$. 由柯西不等式, $\\sum_{i=1}^n d_i^2 \\geqslant \\frac{1}{n}\\left(\\sum_{i=1}^n d_i\\right)^2= \\frac{1}{n}(2 m)^2=\\frac{4 m^2}{n}$. 由(1)、(2)及上式得 $T \\geqslant \\frac{1}{3}\\left(\\frac{4 m^2}{n}-m m\\right)=4 m \\cdot \\frac{m-\\frac{n^2}{4}}{3 n}$.",
+    "remark": "",
+    "figures": []
+}

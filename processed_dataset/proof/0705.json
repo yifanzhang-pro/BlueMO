@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例10. 设 $f(m, n)$ 满足 $f(1, n)=f(m, 1)=1\\left(m, n \\in \\mathbf{N}^*\\right)$, 且当 $m$, $n \\geqslant 2$ 时有\n$$\nf(m, n) \\leqslant f(m, n-1)+f(m-1, n) .\n$$\n求证: $f(m, n) \\leqslant \\mathrm{C}_{m+n-2}^{m-1}$.",
+    "solution": "证明:将命题 $f(m, n) \\leqslant \\mathrm{C}_{m+n-2}^{m-1}$ 记为 $P(m, n)$. 下用数学归纳法证明 $P(m, n)$.\n因为对 $m, n \\in \\mathbf{N}^*$, 有 $f(1, n)=1=\\mathrm{C}_{1+n-2}^{1-1}, f(m, 1)=1=\\mathrm{C}_{m+1-2}^{m-1}$, 故 $P(1, n)$ 与 $P(m, 1)$ 成立.\n当 $m, n \\geqslant 2$ 时,假设 $P(m, n-1)$ 与 $P(m-1, n)$ 成立, 即\n$$\nf(m, n-1) \\leqslant \\mathrm{C}_{m+n-3}^{m-1}, f(m-1, n) \\leqslant \\mathrm{C}_{m+n-3}^{m-2},\n$$\n则结合已知条件得\n$$\nf(m, n) \\leqslant f(m, n-1)+f(m-1, n) \\leqslant \\mathrm{C}_{m+n-3}^{m-1}+\\mathrm{C}_{m \\nmid n-3}^{m-2}=\\mathrm{C}_{m \\nmid n-2}^{m-1},\n$$\n即命题 $P(m, n)$ 成立.\n由双参数数学归纳法知, 对任意 $m, n \\in \\mathbf{N}^*, P(m, n)$ 成立.",
+    "remark": "注:本例给出的是双参数数学归纳法的一种基本证题模式.\n双参数归纳法往往用来证明某个与正整数 $m, n$ 有关的命题 $P(m, n)$. 对双参数归纳法, 也有各种灵活多样的形式.",
+    "figures": []
+}

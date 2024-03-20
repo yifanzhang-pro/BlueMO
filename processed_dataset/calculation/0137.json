@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 已知集合 $A=\\{x \\mid 5 x-a \\leqslant 0\\}, B=\\{x \\mid 6 x-b>0\\}, a, b \\in \\mathbf{N}$, 且 $A \\cap B \\cap \\mathbf{N}=\\{2,3,4\\}$, 则整数对 $(a, b)$ 的个数为\n(A) 20\n(B) 25\n(C) 30\n(D) 42",
+    "solution": "解:$5 x-a \\leqslant 0 \\Rightarrow x \\leqslant \\frac{a}{5} ; 6 x-b>0 \\Rightarrow x>\\frac{b}{6}$. 要使 $A \\cap B \\cap \\mathbf{N}=\\{2$,\n$3,4\\}$, 其充要条件是 $\\left\\{\\begin{array}{l}1 \\leqslant \\frac{b}{6}<2 \\\\ 4 \\leqslant \\frac{a}{5}<5\\end{array}\\right.$, 即 $\\left\\{\\begin{array}{l}6 \\leqslant b<12 \\\\ 20 \\leqslant a<25\\end{array}\\right.$, 故 $b$ 有 $\\mathrm{C}_6^1$ 种取法, $a$ 有 $\\mathrm{C}_5^1$ 种取法, 由乘法原理得数对 $(a, b)$ 的个数为 $\\mathrm{C}_5^1 \\mathrm{C}_6^1=30$ 个, 所以选 $\\mathrm{C}$.",
+    "remark": "",
+    "figures": []
+}

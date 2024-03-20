@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题15 已知 $N=1990^{1990}$. 求满足条件 $1 \\leqslant n \\leqslant N$, 且 $\\left(n^2-1, N\\right)=1$ 的整数 $n$ 的个数.",
+    "solution": "因为 $1990=2 \\times 5 \\times 199$, 所以 $\\left(n^2-1, N\\right)=1 \\Leftrightarrow n^2-1 \\not \\neq 0(\\bmod 2,5,199)$, 即 $n \\neq 11(\\bmod 2)$ 且 $n \\neq 1,4(\\bmod 5)$ 且 $n \\neq 1,198(\\bmod 199)$.\n令全集 $I=\\{1,2, \\cdots, N\\}, A=\\{n \\mid n \\equiv 1(\\bmod 2), n \\in I\\}, B= \\{n \\mid n \\equiv 1,4(\\bmod 5), n \\in I\\}, C=\\{n \\mid n \\equiv 1,198(\\bmod 199), n \\in I\\}$. 则 $A \\cap B=\\{n \\mid n \\equiv 1,9(\\bmod 10), n \\in I\\}, B \\cap C=\\{n \\mid n \\equiv 1,994(\\bmod 995)$, $n \\in I\\}, C \\cap A=\\{n \\mid n \\equiv 1,397(\\bmod 398), n \\in I\\}, A \\cap B \\cap C=\\{n \\mid n \\equiv 1$, $1989(\\bmod 1990), n \\in I\\} .|\\bar{A} \\cap \\bar{B} \\cap \\vec{C}|==N-\\left(\\frac{N}{2}+\\frac{2 N}{5}+\\frac{2 N}{199}\\right)+ \\left(\\frac{2 N}{10}+\\frac{2 N}{995}+\\frac{2 N}{398}\\right)-\\frac{2 N}{1990}=\\frac{589}{1990} N$. 故满足条件的整数 $n$ 的个数为 $\\frac{589}{1990} N$.",
+    "remark": "",
+    "figures": []
+}

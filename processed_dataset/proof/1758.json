@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例5. 已知圆 $O$ 外一点 $X$, 由 $X$ 向圆 $O$ 引两条切线, 切点分别为 $A 、 B$, 过点 $X$ 作直线, 与圆 $O$ 交于两点 $C 、 D$, 且满足 $C A \\perp B D$. 若 $C A$ 与 $B D$ 交于点 $F, C D$ 与 $A B$ 交于点 $G, B D$ 与 $G X$ 的中垂线交于点 $H$. 证明: $X 、 F 、 G 、 H$ 四点共圆.",
+    "solution": "证明:由配极性质 3 可知 $(X 、 G 、 D 、 C)$ 为调和点列, 而 $C A \\perp B D$, 故由调和点列的有关性质知 $\\angle G F D=\\angle D F X$.\n如图(<FilePath:./images/volume7/figures/fig-c9i9.png>), 设 $\\triangle G F X$ 的外接圆与 $B F$ 交于点 $H^{\\prime}$. 则 $G H^{\\prime}=X H^{\\prime}$, 即点 $H^{\\prime}$ 在 $G X$ 的中垂线上.\n从而, $H^{\\prime}=H$. 因此, $X 、 F 、 G 、 H$ 四点共圆.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9i9.png"
+    ]
+}

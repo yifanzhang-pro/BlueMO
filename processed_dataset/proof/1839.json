@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题13. $ \\odot O_1$ 交 $\\odot O_2$ 于点 $P 、 Q, \\angle O_1 P O_2<90^{\\circ}$, 过 $O_1 、 O_2$ 、 $P$ 三点的圆分别交 $\\odot O_1 、 \\odot O_2$ 于点 $A 、 B$. 证明: $Q$ 是$\\triangle A B P$ 的旁心.",
+    "solution": "如图(<FilePath:./images/volume7/figures/fig-c3a13.png>), 连结 $A Q 、 A O_2$, 由于 $\\pi-\\angle P A Q=\\frac{1}{2} \\angle P O_1 Q=\\angle P O_1 O_2= \\angle P A O_2$, 于是 $A 、 O_2 、 Q$ 三点共线, 同理, $B 、 O_1 、 Q$ 三点共线.\n连 $O_1 Q, \\angle Q A B= \\angle Q O_1 O_2=\\frac{1}{2} \\angle Q O_1 P=\\frac{1}{2} \\angle B O_1 P=\\frac{1}{2} \\cdot\\left(\\pi^{-} \\angle B A P\\right)$. 所以 $A Q$ 外角平分 $\\angle P A B$, 同理可证, $B Q$ 外角平分 $\\angle P B A$, 于是 $Q$ 为 $\\triangle P B A$ 在 $\\angle P$ 内的旁心.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c3a13.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例12 设 $f(x)=2 x^2-1$, 求 $f^{(n)}(x)$.",
+    "solution": "解:令 $g(x)=2 x, \\varphi(x)=\\arccos x$, 则 $\\varphi^{-1}(x)=\\cos x$.\n$$\n\\begin{aligned}\nf(x) & =2 x^2-1 \\\\\n& =2 \\cos ^2(\\arccos x)-1 \\\\\n& =\\cos 2(\\arccos x) \\\\\n& =\\varphi^{-1}(g(\\varphi(x))) .\n\\end{aligned}\n$$\n所以 $f \\stackrel{\\varphi}{\\sim} g$. 而 $g^{(n)}(x)=2^n x$, 因此\n$$\n\\begin{aligned}\nf^{(n)}(x) & =\\varphi^{-1}\\left(g^{(n)}(\\varphi(x))\\right) \\\\\n& =\\cos \\left(2^n \\arccos x\\right) .\n\\end{aligned}\n$$\n这个迭代结果就是切比雪夫多项式.\n一般来说, 要找出桥函数 $\\varphi(x)$ 往往并不容易, 要对 $f(x)$ 进行观察、变形, 并利用经验来完成.",
+    "remark": "",
+    "figures": []
+}

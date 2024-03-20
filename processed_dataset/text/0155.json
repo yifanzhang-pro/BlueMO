@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-5.tex",
+    "text": "2.5 带参数的平均值不等式.\n引进适当的参数, 是解决不等式问题的重要技巧.\n一般地, 当 $a_i>0, \\lambda_i>0(i=1,2, \\cdots, n)$, 且 $\\prod_{i=1}^n \\lambda_i=1$ 时, 我们有\n$$\n\\frac{1}{n} \\sum_{i=1}^n \\lambda_i a_i \\geqslant \\sqrt[n]{a_1 a_2 \\cdots a_n} .\n$$",
+    "figures": []
+}

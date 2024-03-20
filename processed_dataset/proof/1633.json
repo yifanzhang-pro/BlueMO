@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题17. 定义数列 $\\left\\{u_n\\right\\}_{n=0}^{+\\infty}$ 如下: $u_0=0, u_1=1$, 且对任意 $n \\in \\mathbf{N}^*$, 数 $u_{n+1}$ 是满足下述条件的最小正整数:\n(1) 对任意 $n \\in \\mathbf{N}^*, u_{n+1}>u_n$;\n(2) 数 $u_0, u_1, \\cdots, u_{n+1}$ 中没有 3 个数成等差数列.\n求 $u_{100}$ 的值.",
+    "solution": "设二进制表示下, $n=\\left(a_k a_{k-1} \\cdots a_0\\right)_2$, 这里 $a_i \\in\\{0,1\\}, a_k=1$, 令 $t_n=\\left(a_k a_{k-1} \\cdots a_0\\right)_3$ (为一个 3 进制表示下的正整数), $t_0=0$.\n我们用数学归纳法证明: 对任意的 $n \\in \\mathbf{N}^*$, 均有 $u_n=t_n$.\n当 $n=1$ 时,命题显然成立.\n设对任意的 $m<n$, 均有 $u_m=t_m$. 下面证明 $u_n=t_n$.\n一方面, 集合 $\\left\\{t_0, t_1, \\cdots, t_n\\right\\}$ 中无任意 3 个数成等差数列, 这是因为对任意 $0 \\leqslant \\alpha<\\beta<\\gamma \\leqslant n$, 若 $t_\\alpha+t_\\gamma=2 t_\\beta$, 由于 $2 t_\\beta$ 在 3 进制表示下只出现数码 0 和 2 , 所以 $t_\\alpha 、 t_\\gamma$ 在 3 进制表示下相应的每个数码都需相同.\n从而 $t_\\alpha=t_\\gamma$, 要求 $\\alpha=\\gamma$, 矛盾.\n上述讨论表明 $u_n \\leqslant t_n$.\n另一方面, 若 $u_n<t_n$, 则由归纳假设知 $u_n \\in\\left\\{t_{n-1}+1, \\cdots, t_n-1\\right\\}$, 此时, 在 $u_n$ 的三进制表示中, 必出现数码 2 (因为仅出现数码 0,1 的 3 进制正整数 $\\in \\left.\\left\\{t_0, t_1, \\cdots\\right\\}\\right)$. 所以, 存在 $a 、 b \\in \\mathbf{N}$, 使得 $0 \\leqslant t_a<t_b<u_n$ 满足:\n(1)如果在 $u_n$ 的 3 进制表示中, 某一位为 0 (或者 1), 则在 $t_a, t_b$ 的 3 进制表示中,同样位置上的数码也为 0 (或者 1 );\n(2)如果在 $u_n$ 的 3 进制表示中,某一位为 2 , 则 $t_a$ 在该位上为 0 , 而 $t_b$ 在该位上为 1 .\n于是 $t_a+u_n=2 t_b$, 矛盾.\n所以 $u_n \\geqslant t_n$.\n综上所述, 可知 $u_n=t_n$. 鉴于 $100=(1100100)_2$, 所以\n$$\nu_{100}=(1100100)_3=981 \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

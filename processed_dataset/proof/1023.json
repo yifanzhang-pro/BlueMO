@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题28 已知函数 $f(x)=\\tan x, x \\in\\left(0, \\frac{\\pi}{2}\\right)$, 若 $x_1, x_2 \\in\\left(0, \\frac{\\pi}{2}\\right)$, 且 $x_1 \\neq x_2$, 求证: $\\frac{1}{2}\\left[f\\left(x_1\\right)+f\\left(x_2\\right)\\right]>f\\left(\\frac{x_1+x_2}{2}\\right)$.",
+    "solution": "要证明 $\\frac{1}{2}\\left[f\\left(x_1\\right)+f\\left(x_2\\right)\\right]>f\\left(\\frac{x_1+x_2}{2}\\right) \\Leftrightarrow \\frac{1}{2}\\left[\\tan x_1+\\tan x_2\\right]> \\tan \\frac{x_1+x_2}{2} \\Leftrightarrow \\tan \\frac{x_1+x_2}{2}-\\tan x_1<\\tan x_2-\\tan \\frac{x_1+x_2}{2} \\Leftrightarrow \\tan \\frac{x_2-x_1}{2}\\left(1+\\tan \\frac{x_1+x_2}{2} \\cdot \\tan x_1\\right)<\\tan \\frac{x_2-x_1}{2} \\cdot\\left(1+\\tan \\frac{x_1+x_2}{2} \\cdot \\tan x_2\\right)$, 不妨设 $x_1<x_2$, 则上式等价于 $\\tan x_1<\\tan x_2$. 显然成立.",
+    "remark": "",
+    "figures": []
+}

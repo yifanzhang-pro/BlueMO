@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题15 设 $a 、 b$ 是整数, $f(x)=x^2+a x+b$. 证明: 若对于所有整数 $x$, 都有 $f(x)>0$, 则对于所有实数 $x$, 有 $f(x) \\geqslant 0$.",
+    "solution": "用反证法.\n若 $\\Delta=a^2-4 b>0$, 则由 $a^2-4 b$ 是整数知, $a^2-4 b \\geqslant 1$. 设方程 $x^2+a x+b=0$ 的两实根为 $x_1 、 x_2$, 则 $\\left|x_1-x_2\\right|= \\sqrt{\\left(x_1+x_2\\right)^2-4 x_1 x_2}=\\sqrt{a^2-4 b} \\geqslant 1$, 从而在 $x_1$ 与 $x_2$ 之间一定存在一个整数 $x_0$, 对于这个整数 $x_0$, 有 $f\\left(x_0\\right) \\leqslant 0$, 与题设矛盾.\n所以 $\\Delta \\leqslant 0$, 从而对一切实数 $x$, 都有 $f(x) \\geqslant 0$.",
+    "remark": "",
+    "figures": []
+}

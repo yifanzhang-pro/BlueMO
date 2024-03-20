@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例10 设 $f(x)=a x+b$, 用相似法求 $f^{(n)}(x)$.",
+    "solution": "解:取 $g(x)=a x, \\varphi(x)=x-\\frac{b}{1-a}$, 则\n$$\n\\varphi^{-1}(x)=x+\\frac{b}{1-a} \\text {. }\n$$\n于是\n$$\n\\begin{aligned}\n\\varphi^{-1}(g(\\varphi(x))) & =\\varphi^{-1}(a \\varphi(x)) \\\\\n& =\\varphi^{-1}\\left(a\\left(x-\\frac{b}{1-a}\\right)\\right) \\\\\n& =a\\left(x-\\frac{b}{1-a}\\right)+\\frac{b}{1-a} \\\\\n& =a x+b=f(x) .\n\\end{aligned}\n$$\n所以 $f \\sim g$. 而 $g^{(n)}(x)=a^n x$, 因此\n$$\n\\begin{aligned}\nf^{(n)}(x) & =\\varphi^{-1}\\left(g^{(n)}(\\varphi(x))\\right) \\\\\n& =\\varphi^{-1}\\left(a^n \\varphi(x)\\right) \\\\\n& =a^n\\left(x-\\frac{b}{1-a}\\right)+\\frac{b}{1-a} .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

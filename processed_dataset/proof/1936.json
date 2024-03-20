@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $\\alpha 、 \\beta$ 为复数且 $|\\alpha|=k$, 证明:\n$$\n\\left|k| \\beta |^{\\frac{1}{2}}-\\alpha \\frac{\\beta}{|\\beta|^{\\frac{1}{2}}}\\right|^2=2 k[k|\\beta|-\\operatorname{Re}(\\alpha \\beta)] .\n$$",
+    "solution": "分析:与解给出两种证明方法.\n证法 1 先证明另一个形式上简单一些的恒等式:\n$$\n|| w|-w|^2=2|w|(|w|-\\operatorname{Re} w) \n$$\n这是因为令 $w=a+\\mathrm{i} b(a, b \\in \\mathbf{R})$, 则左边即为 $\\left(\\sqrt{a^2+b^2}-a\\right)^2+b^2$, 右边为 $2\\left(a^2+b^2\\right)-2 a \\sqrt{a^2+b^2}$, 两边显然是相等的.\n由此, 令 $w=\\alpha-\\frac{\\beta}{|\\beta|^{\\frac{1}{2}}}$, 注意到 $\\left|\\alpha \\frac{\\beta}{|\\beta|^{\\frac{1}{2}}}\\right|=k|\\beta|^{\\frac{1}{2}}$ 即知题目中的恒等式是成立的, 证毕.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $x, y, z \\in \\mathbf{R}^{+}$, 求证:\n$$\n\\sqrt{x+\\sqrt[3]{y+\\sqrt[4]{z}}} \\geqslant \\sqrt[32]{x y z}\n$$",
+    "solution": "证明:用反证法.\n若存在正实数 $x_0 、 y_0 、 z_0$, 使得 $\\sqrt{x_0+\\sqrt[3]{y_0+\\sqrt[4]{z_0}}}<\\sqrt[32]{x_0 y_0 z_0}$, 那么即\n$$\n\\begin{aligned}\n& \\left\\{\\begin{array}{l}\n\\sqrt{x_0}<\\sqrt[32]{x_0 y_0 z_0}, \\\\\n\\sqrt[6]{y_0}<\\sqrt[32]{x_0 y_0 z_0}, \\\\\n\\sqrt[24]{z_0}<\\sqrt[32]{x_0 y_0 z_0},\n\\end{array}\\right. \\\\\n& \\left\\{\\begin{array}{l}\nx_0^{16}<x_0 y_0 z_0 \\\\\ny_0^{16}<\\left(x_0 y_0 z_0\\right)^3 \\\\\nz_0^{16}<\\left(x_0 y_0 z_0\\right)^{12}\n\\end{array}\\right.\n\\end{aligned}\n$$\n上面三式相乘即得 $x_0^{16} \\cdot y_0^{16} \\cdot z_0^{16}<\\left(x_0 y_0 z_0\\right)^{16}$, 矛盾! 故原不等式成立.\n从而得证.",
+    "remark": "",
+    "figures": []
+}

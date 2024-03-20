@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题3 把集合 $\\left\\{1,2, \\cdots, 10^6\\right\\}$ 划分成两个不交的子集,一个是所有可以表示为一个完全平方数与一个完全立方数之和的数所成的子集, 另一个是集合中所有其余的数所成的子集.\n问哪一个子集元素较多? 说明理由.",
+    "solution": "将前一个子集记为 $A$, 依题设对任何 $n \\in A$, 都存在 $k, m \\in \\mathbf{N}^*$, 使得 $n=k^2+m^3$. 由于 $n \\leqslant 10^6$, 所以 $k \\leqslant 10^3, m \\leqslant 10^2$, 因而数对 $(k, m)$ 的个数不超过 $10^5$ 个, 从而 $n \\in A$ 的个数也不超过 $10^5$ 个.\n可见,第二个子集的元素多.",
+    "remark": "",
+    "figures": []
+}

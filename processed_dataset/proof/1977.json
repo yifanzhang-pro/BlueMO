@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 知复数 $z_1 、 z_2$ 满足 $2 z_1^2+z_2^2=2 z_1 z_2$, 且 $z_1+z_2$ 为纯虚数, 求证: 复数 $3 z_1-2 z_2$ 是实数.",
+    "solution": "令 $z_1+z_2=k \\mathrm{i}(k \\in \\mathbf{R}$, 且 $k \\neq 0)$, 由于 $2 z_1^2+z_2^2=2 z_1 z_2$ 等价于 $\\left(3 z_1-2 z_2\\right)^2=-\\left(z_1+z_2\\right)^2$.\n于是, 有 $3 z_1-2 z_2= \\pm \\mathrm{i}\\left(z_1+z_2\\right)= \\pm(k \\mathrm{i}) \\mathrm{i}= \\pm k \\in \\mathbf{R}$, 故知复数 $3 z_1-z_2$ 是实数.",
+    "remark": "",
+    "figures": []
+}

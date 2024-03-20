@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 两个等边三角形内接于一个半径为 $r$ 的圆, 设 $K$ 为两个三角形重叠处的面积,求证 $2 K \\geqslant r^2 \\sqrt{3}$.",
+    "solution": "设等边 $\\triangle A B C$ 的两边 $A B 、 A C$ 与等边 $\\triangle P Q R$ 的边 $P Q$ 交于 $D 、 E$, 由旋转对称性可得 $K=S_{\\triangle A B C}-3 S_{\\triangle A D E}=\\frac{3 \\sqrt{3}}{4} r^2-3 S_{\\triangle A D E}$, 注意到 $\\triangle A D E$ 有固定的周长 $\\sqrt{3} r$, 利用等周定理知 $\\triangle A D E$ 为正三角形 (即其边长等于 $\\triangle A B C$ 边长的 $\\frac{1}{3}$ ) 时面积最大.\n由此得 $K \\geqslant \\frac{\\sqrt{3} r^2}{2}$.",
+    "remark": "",
+    "figures": []
+}

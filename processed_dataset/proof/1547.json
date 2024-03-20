@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter2-2.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设函数 $f: \\mathbf{N}^* \\rightarrow[1,+\\infty)$ 满足:\n(1) $f(2)=2$;\n(2) 对任意 $m, n \\in \\mathbf{N}^*$, 有 $f(m n)=f(m) f(n)$;\n(3)当 $m<n$ 时,有 $f(m)<f(n)$.\n证明: 对任意正整数 $n$, 都有 $f(n)=n$.",
+    "solution": "证明:由条件 (1)、(2) 可知 $f(1)=1$, 现设 $f\\left(2^k\\right)=2^k, k \\in \\mathbf{N}$, 则 $f\\left(2^{k+1}\\right)=f\\left(2^k\\right) f(2)=2^k \\times 2=2^{k+1}$. 于是, 对任意 $k \\in \\mathbf{N}$, 都有 $f\\left(2^k\\right)=2^k$.\n现在来讨论 $f(n)$ 的值.\n设 $f(n)=l$, 则由 (2) 及数学归纳法, 可知对任意 $m \\in \\mathbf{N}^*$, 都有 $f\\left(n^m\\right)=l^m$.\n设 $2^k \\leqslant n^m<2^{k+1}$, 则由 (3) 知 $f\\left(2^k\\right) \\leqslant f\\left(n^m\\right)<f\\left(2^{k+1}\\right)$, 于是, 由前面的结论知 $2^k \\leqslant l^m<2^{k+1}$, 对比 $2^k \\leqslant n^m<2^{k+1}$, 可知\n$$\n\\frac{1}{2}<\\left(\\frac{n}{l}\\right)^m<2 . \\label{eq1}\n$$\n上式对任意 $m \\in \\mathbf{N}^*$ 都成立.\n若 $n>l$, 我们取 $m>\\frac{l}{n-l}$, 就有\n$$\n\\left(\\frac{n}{l}\\right)^m=\\left(1+\\frac{n-l}{l}\\right)^m \\geqslant 1+m \\cdot \\frac{n-l}{l}>2,\n$$\n与式\\ref{eq1}矛盾.\n同样地, 若 $n<l$, 取 $m>\\frac{n}{l-n}$, 就有 $\\left(\\frac{l}{n}\\right)^m>2$, 即 $\\left(\\frac{n}{l}\\right)^m<\\frac{1}{2}$, 也与 式\\ref{eq1}矛盾.\n所以, 只能是 $n=l$.\n综上可知, 对任意 $n \\in \\mathbf{N}^*$, 都有 $f(n)=n$.\n说明如果函数 $f$ 是 $\\mathbf{N}^*$ 到 $\\mathbf{N}^*$ 的映射, 那么问题要简单得多, 请读者给出证明.\n类似地,用此方法还可证明著名的 Jenson 不等式.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise16.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设 $x_1, x_2, \\cdots, x_n, y_1, y_2, \\cdots, y_n \\in \\mathbf{R}$, 矩阵 $A=\\left(a_{i j}\\right)_{1 \\leqslant i, j \\leqslant n}$ 满足\n$$\na_{i j}= \\begin{cases}1, & x_i+y_j \\geqslant 0, \\\\ 0, & x_i+y_j<0 .\\end{cases}\n$$\n证明: 若 $n \\times n$ 矩阵 $B$ 的元素为 0 或 1 , 使得 $B$ 的每一行和每一列的元素之和与 $A$ 的对应的和相等, 则 $B=A$.",
+    "solution": "设 $B=\\left(b_{i j}\\right)_{1 \\leqslant i, j \\leqslant n}$. 定义 $S=\\sum_{1 \\leqslant i, j \\leqslant n}\\left(x_i+y_j\\right)\\left(a_{i j}-b_{i j}\\right)$.\n一方面,有\n$$\nS=\\sum_{i=1}^n x_i\\left(\\sum_{j=1}^n a_{i j}-\\sum_{j=1}^n b_{i j}\\right)+\\sum_{j=1}^n y_j\\left(\\sum_{i=1}^n a_{i j}-\\sum_{i=1}^n b_{i j}\\right)=0 .\n$$\n另一方面, 对任意 $i, j\\left(1 \\leqslant i, j \\leqslant n\\right.$ ), 都有 $\\left(x_i+y_j\\right)\\left(a_{i j}-b_{i j}\\right) \\geqslant 0$ (事实上, 若 $x_i+y_j \\geqslant 0$, 则 $a_{i j}-b_{i j}=1-b_{i j} \\geqslant 0$; 若 $x_i+y_j<0$, 则 $a_{i j}- \\left.b_{i j}=-b_{i j} \\leqslant 0\\right)$.\n从而这些不等式只能同时取等号, 即 $\\left(x_i+y_j\\right)\\left(a_{i j}-b_{i j}\\right)=0$ 对所有 $i, j$ 成立.\n特别地, 若 $a_{i j}=0$, 则 $x_i+y_j<0$, 只能 $a_{i j}-b_{i j}=0$, 即 $b_{i j}=0$, 因此对所有 $i, j$, 总有 $a_{i j} \\geqslant b_{i j}$. 但 $B$ 的每一行元素之和与 $A$ 对应行的元素之和相等, 从而只能 $a_{i j}=b_{i j}$ 对所有 $i, j$ 成立, 即有 $B=A$.",
+    "remark": "",
+    "figures": []
+}

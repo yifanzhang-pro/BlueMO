@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-1.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $n \\in \\mathbf{N}^*$. 证明: 去掉 $2^n \\times 2^n$ 的方格表的任何一个方格后, 剩余的部分都可以用\" $\\square$ \" \"形状的 L 型无重叠地完全覆盖.",
+    "solution": "证明:当 $n=1$ 时, 由于一个\" $\\square$ \" 字型去掉任何一个方格后都是一个 \"回\"型,故命题对 $n=1$ 成立.\n现设 $n=k$ 时, 命题成立, 即去掉一个 $2^k \\times 2^k$ 的方格表的任何一个方格后,剩余部分都可用\" $\\square$ 型覆盖, 我们考虑 $n=k+1$ 的情形.\n如图 (<FilePath:./images/volume6/figures/fig-c1i1.png>) 所示, 将 $2^{k+1} \\times 2^{k+1}$ 的方格表依中心所在的两条方格线把表格分割为 4 个 $2^k \\times 2^k$ 的方格表, 则题设中要求去掉的那个小方格必落在某个 $2^k \\times 2^k$ 的方格表中.\n在剩余的部分先绕中心摆一个\" $\\square$ \" 型, 去掉图 (<FilePath:./images/volume6/figures/fig-c1i1.png>) 中所示的 4 个阴影方格后, 每个 $2^k \\times 2^k$ 的子表格都去掉了一个方格, 而由归纳假设可知, 它们都可以用 \" $\\square$ \" 型覆盖, 再补上绕中心所摆的那个\" $\\square$ \" 型就得出命题对 $n=k+1$ 成立.\n综上可知, 命题对一切正整数 $n$ 成立.\n说明本题采用的是数学归纳法证题时的常用表述方式.\n当然了, 表达方式可依个人的表达风格而定, 但都需要在归纳假设和结论之间进行正确地过渡, 它是完成数学归纳法证题时的关键步骤.",
+    "remark": "",
+    "figures": [
+        "./images/volume6/figures/fig-c1i1.png",
+        "./images/volume6/figures/fig-c1i1.png"
+    ]
+}

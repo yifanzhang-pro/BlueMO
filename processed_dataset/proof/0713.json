@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $m$ 为给定正整数.\n证明: 若集合 $A_1, A_2, \\cdots, A_m$ 两两交集为空, 且满足 $\\bigcup_{i=1}^m A_i=\\mathbf{N}^*$, 则必存在一个集合 $A_i(1 \\leqslant i \\leqslant m)$, 它含有任意正整数的倍数.",
+    "solution": "证明:我们考虑无穷数列 $\\{n !\\}$, 其中 $n ! \\in \\mathbf{N}^*$, 即 $n ! \\in \\bigcup_{i=1}^m A_i$. 根据抽屉原理, 在有限个集合 $A_1, A_2, \\cdots, A_m$ 中, 必存在一个集合, 不妨设为 $A_1$, 它含有上述数列中的无穷项.\n此时, 对任意正整数 $N$, 必存在一个正整数 $N_1 \\geqslant N$, 使 $N_{1} ! \\in A_1$, 因而集合 $A_1$ 含有 $N$ 的倍数 $N_1$ !. 由 $N$ 的任意性知结论成立.",
+    "remark": "注:本例所使用的是着眼于无限形式的抽屉原理 3. 注意题目中的条件 \"两两交集为空\"可以去掉而不影响结果.",
+    "figures": []
+}

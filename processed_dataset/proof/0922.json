@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题14 设实数 $a 、 b 、 c 、 m$ 满足条件:\n$$\n\\frac{a}{m+2}+\\frac{b}{m+1}+\\frac{c}{m}=0,\n$$\n且 $a \\geqslant 0, m>0$. 求证: 方程 $a x^2+b x+c=0$ 有一根 $x_0$ 满足 $0<x_0<1$.",
+    "solution": "当 $a=0$ 时, 若 $b \\neq 0$, 则 $x_0=-\\frac{c}{b}=\\frac{m}{m+1}$, 此时 $0<x_0<1$; 若 $b=0$, 则 $c=0$, 这时一切实数 $x$ 都满足方程, 当然也有 $0<x_0<1$, 故当 $a=0$ 时, 结论成立.\n当 $a>0$ 时, 令 $f(x)=a x^2+b x+c$, 则 $f\\left(\\frac{m}{m+1}\\right)=a\\left(\\frac{m}{m+1}\\right)^2 +b\\left(\\frac{m}{m+1}\\right)+c=a\\left(\\frac{m}{m+1}\\right)^2-\\frac{a m}{m+2}=-\\frac{a m}{(m+1)^2(m+2)}<0$. 若 $c>0$, 因 $f(0)=c>0$, 故必有一根 $x_0$ 满足 $0<x_0<\\frac{m}{m+1}<1$; 若 $c \\leqslant 0$, 因 $f(1)=a+b+c=(m+2) \\frac{a}{m+2}+(m+1) \\frac{b}{m+1}+c=\\frac{a}{m+2}+(m+1)\\left(\\frac{a}{m+2}+\\frac{b}{m+1}+\\frac{c}{m}\\right)-\\frac{c}{m}=\\frac{a}{m+2}-\\frac{c}{m}>0$, 故必有一根 $x_0$ 满足 $0< \\frac{m}{m+1}<x_0<1$.",
+    "remark": "",
+    "figures": []
+}

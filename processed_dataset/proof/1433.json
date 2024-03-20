@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题14. 设 $\\left\\{a_k\\right\\}$ 是一个非负实数的无限序列, $k=1,2, \\cdots$, 满足: $a_k-2 a_{k+1}+a_{k+2} \\geqslant$ 0 及 $\\sum_{j=1}^k a_j \\leqslant 1, k=1,2, \\cdots$. 求证: $0 \\leqslant a_k-a_{k+1} \\leqslant \\frac{2}{k^2}, k=1,2, \\cdots$.",
+    "solution": "先证明 $a_k-a_{k+1} \\geqslant 0$, 可以用反证法.\n假设存在某个 $a_k<a_{k+1}$, 则 $a_{k+1} \\leqslant a_k-a_{k+1}+a_{k+2}<a_{k+2}$, 序列 $\\left\\{a_S \\mid S=\\right. k, k+1, \\cdots\\}$ 是严格单调递增的.\n则 $\\sum_{S=k}^n a_S(n>k)$ 在 $n$ 趋向于无穷大时也趋向于无穷大, 矛盾! 故有 $a_k-$\n$$\n\\begin{aligned}\n& a_{k+1} \\geqslant 0, k=1,2, \\cdots \\\\\n& \\text { 令 } b_k=a_k-a_{k+1} \\geqslant 0, k=1,2, \\cdots . \\\\\n& 1 \\geqslant a_1+a_2+\\cdots+a_k \\\\\n& =b_1+2 b_2+3 b_3+\\cdots+k b_k+a_{k+1} \\\\\n& \\geqslant(1+2+3+\\cdots+k) b_k=\\frac{k(k+1)}{2} b_k .\n\\end{aligned}\n$$\n所以 $b_k \\leqslant \\frac{2}{k(k+1)}<\\frac{2}{k^2}$, 因此 $0 \\leqslant a_k-a_{k+1}<\\frac{2}{k^2}$.",
+    "remark": "",
+    "figures": []
+}

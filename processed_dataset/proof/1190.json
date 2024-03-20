@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题15. 设 $a 、 b 、 c$ 为正实数,求证:\n$$\n\\left(1+\\frac{a}{b}\\right)\\left(1+\\frac{b}{c}\\right)\\left(1+\\frac{c}{a}\\right) \\geqslant 2\\left(1+\\frac{a+b+c}{\\sqrt[3]{a b} c}\\right) .\n$$",
+    "solution": "由于 $\\left(1+\\frac{a}{b}\\right)\\left(1+\\frac{b}{c}\\right)\\left(1+\\frac{c}{a}\\right)=2+\\left(\\frac{a}{c}+\\frac{c}{b}+\\frac{b}{a}\\right)+ \\left(\\frac{a}{b}+\\frac{b}{c}+\\frac{c}{a}\\right)=2+\\left(\\frac{a}{c}+\\frac{a}{b}+\\frac{a}{a}\\right)+\\left(\\frac{b}{a}+\\frac{b}{c}+\\frac{b}{b}\\right)+\\left(\\frac{c}{b}+\\frac{c}{a}+\\frac{c}{c}\\right)- 3 \\geqslant-1+3 \\frac{a+b+c}{\\sqrt[3]{a b c}} \\geqslant 2\\left(1+\\frac{a+b+c}{\\sqrt[3]{a b c}}\\right)$.",
+    "remark": "",
+    "figures": []
+}

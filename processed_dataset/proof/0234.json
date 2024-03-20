@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $n$ 为整数,证明: $(12 n+5,9 n+4)=1$.",
+    "solution": "我们有 $4(9 n+4)-3(12 n+5)=1$.",
+    "remark": "",
+    "figures": []
+}

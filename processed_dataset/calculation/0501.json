@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例12 设 $f(x)=\\lg \\frac{1+2^x+4^x a}{3}$, 其中 $a \\in \\mathbf{R}$. 当 $x \\in(-\\infty, 1]$ 时, $f(x)$有意义,求 $a$ 的取值范围.",
+    "solution": "分析:首先需理解题意, 当 $x \\in(-\\infty, 1]$ 时, $f(x)$ 有意义, 说明当 $x \\leqslant 1$ 时, 恒有 $\\frac{1+2^x+4^x a}{3}>0$, 即\n$$\na>-\\left[\\left(\\frac{1}{4}\\right)^x+\\left(\\frac{1}{2}\\right)^x\\right]\n$$\n对 $x \\leqslant 1$ 恒成立, 故 $a$ 就大于 $-\\left[\\left(\\frac{1}{4}\\right)^x+\\left(\\frac{1}{2}\\right)^x\\right](x \\in(-\\infty, 1])$ 的最大值.\n解由题意知, 当 $x \\leqslant 1$ 时, 恒有\n$$\n\\frac{1+2^x+4^x a}{3}>0 .\n$$\n故\n$$\na>-\\left[\\left(\\frac{1}{4}\\right)^x+\\left(\\frac{1}{2}\\right)^x\\right], x \\leqslant 1 .\n$$\n令 $u=-\\left[\\left(\\frac{1}{4}\\right)^x+\\left(\\frac{1}{2}\\right)^x\\right], x \\leqslant 1$, 则\n$$\nu=-\\left[\\left(\\frac{1}{2}\\right)^x+\\frac{1}{2}\\right]^2+\\frac{1}{4}\n$$\n在 $(-\\infty, 1]$ 上单调递增,所以,当 $x=1$ 时,有\n$$\nu_{\\max }=-\\frac{3}{4} \\text {. }\n$$\n所以 $a$ 的取值范围为 $\\left(-\\frac{3}{4},+\\infty\\right)$.",
+    "remark": "",
+    "figures": []
+}

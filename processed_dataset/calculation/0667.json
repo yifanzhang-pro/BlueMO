@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例17 关于 $x$ 的方程 $\\sin x+\\sqrt{3} \\cos x+a=0$ 在 $(0,2 \\pi)$ 内有两个相异的实数解 $\\alpha 、 \\beta$, 求实数 $a$ 的取值范围及 $\\alpha+\\beta$ 之值.",
+    "solution": "分析:将原方程化为 $2 \\sin \\left(x+\\frac{\\pi}{3}\\right)+a=0$, 再由值域求 $a$ 的取值范围.\n也可将方程之解看成两个函数图象的交点横坐标, 从图象观察出 $a$ 的取值范围, 由此解法同时可求 $\\alpha+\\beta$ 之值.\n解法一由原方程得 $2 \\sin \\left(x+\\frac{\\pi}{3}\\right)+a=0$, 结合题设条件得\n$$\n\\left\\{\\begin{array}{l}\n|-a|<2, \\\\\n-a \\neq \\sqrt{3} .\n\\end{array}\\right.\n$$\n即 $-2<a<2$ 且 $a \\neq-\\sqrt{3}$.\n解法二设 $y_1=2 \\sin \\left(x+\\frac{\\pi}{3}\\right), y_2=-a$, 在同一直角坐标系中分别作出它们的图象, 如图(<FilePath:./images/volume3/figures/fig-c4e17.png>), 由此观察, 即得 $\\left\\{\\begin{array}{l}|-a|<2, \\\\ -a \\neq \\sqrt{3},\\end{array}\\right.$ 即 $-2<a<2$ 且 $a \\neq-\\sqrt{3}$;\n再从图象可知, 实数解 $\\alpha 、 \\beta$ 关于对称轴 $x= \\frac{\\pi}{6}$ 或 $x=\\frac{7 \\pi}{6}$ 对称, 从而 $\\alpha+\\beta=\\frac{\\pi}{3}$ 或 $\\frac{7 \\pi}{3}$.\n本题有关 $\\alpha+\\beta$ 之值的求法, 另有:\n因 $\\alpha 、 \\beta$ 是方程的实数解,故\n$$\n2 \\sin \\left(\\alpha+\\frac{\\pi}{3}\\right)+a=2 \\sin \\left(\\beta+\\frac{\\pi}{3}\\right)+a=0,\n$$\n由和差化积公式得 $\\cos \\left(\\frac{\\alpha+\\beta}{2}+\\frac{\\pi}{3}\\right) \\sin \\frac{\\alpha-\\beta}{2}=0, \\alpha \\neq \\beta$, 得 $\\cos \\left(\\frac{\\alpha+\\beta}{2}+\\frac{\\pi}{3}\\right)=$ 0 , 从而 $\\frac{\\alpha+\\beta}{2}+\\frac{\\pi}{3}=\\frac{\\pi}{2}+k \\pi$, 在 $(0,2 \\pi)$ 中, $\\alpha+\\beta=\\frac{\\pi}{3}$ 或 $\\frac{7 \\pi}{3}$.\n评注关于方程解的个数问题, 是 “数形结合” 的典型例题, 利用图象法判断, 既迅速又准确.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c4e17.png"
+    ]
+}

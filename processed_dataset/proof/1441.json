@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 设 $a_n \\in \\mathbf{R}$ 满足: $a_{n+1} \\geqslant a_n^2+\\frac{1}{5}, n \\geqslant 0$, 求证:\n$$\n\\sqrt{a_{n+5}} \\geqslant a_{n-5}^2, n \\geqslant 5 .\n$$",
+    "solution": "证法 2 : 对于任何非负整数 $k$, 因为 $\\left(a_k-\\frac{1}{2}\\right)^2 \\geqslant 0$, 故有\n$$\na_{k+1}+\\frac{1}{20} \\geqslant a_k^2+\\frac{1}{5}+\\frac{1}{20}=a_k^2+\\frac{1}{4} \\geqslant a_k .\n$$\n因此 $a_{k+1}+\\frac{1}{20} \\geqslant a_k$.\n对 $k=n+1, n+2, n+3, n+4$, 求和得 $a_{n+5}+\\frac{1}{5} \\geqslant a_{n+1} \\geqslant a_n^2+\\frac{1}{5}$.\n类似地, 我们有 $a_n \\geqslant a_{n-5}^2$. 于是 $a_{n+5} \\geqslant a_n^2 \\geqslant a_{n-5}^4$, 结论成立.",
+    "remark": "",
+    "figures": []
+}

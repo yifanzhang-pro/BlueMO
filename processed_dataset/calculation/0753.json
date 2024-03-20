@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 记 $a=\\arccos \\left(-\\frac{1}{3}\\right), b=\\arccos \\frac{1}{4}, c=\\arctan 1$, 则它们的关系是( ).\n(A) $a<b<c$\n(B) $a<c<b$\n(C) $b<c<a$\n(D) $c<b<a$",
+    "solution": "D. 显然 $a$ 最大, 而 $c=\\arctan 1=\\frac{\\pi}{4}, b=\\arccos \\frac{1}{4}=\\arctan \\frac{4}{\\sqrt{15}}> \\frac{\\pi}{4}$, 故选 D.",
+    "remark": "",
+    "figures": []
+}

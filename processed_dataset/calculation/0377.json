@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter12.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 给定绝对值都不大于 10 的整数 $a, b, c$, 三次多项式 $x^3+a x^2+ b x+c$ 满足条件 $|f(2+\\sqrt{3})|<0.0001$, 问: $2+\\sqrt{3}$ 是否一定是这个多项式的根?",
+    "solution": "解: $2+\\sqrt{3}$ 代入得\n$$\n\\begin{aligned}\nf(2+\\sqrt{3}) & =(2+\\sqrt{3})^3+a(2+\\sqrt{3})^2+b(2+\\sqrt{3})+c \\\\\n& =(26+7 a+2 b+c)+(15+4 a+b) \\sqrt{3} .\n\\end{aligned}\n$$\n记 $26+7 a+2 b+c=m, 15+4 a+b=n$, 则\n$$\n|m+n \\sqrt{3}|=|f(2+\\sqrt{3})|<0.0001,\n$$\n又 $m, n \\in \\mathbf{Z}$, 且 $|m| \\leqslant 126,|n| \\leqslant 65$, 所以\n$$\n|m-n \\sqrt{3}| \\leqslant|m|+|n| \\sqrt{3}<|m|+2|n| \\leqslant 256 .\n$$\n故\n$$\n\\left|m^2-3 n^2\\right|=|m+n \\sqrt{3}| \\cdot|m-n \\sqrt{3}|<0.0001 \\times 256<1,\n$$\n又 $m^2-3 n^2$ 为整数, 所以 $m^2-3 n^2=0$, 这样只能 $m=n=0$, 从而 $f(2+ \\sqrt{3})=0$, 即 $2+\\sqrt{3}$ 是这个多项式的根.",
+    "remark": "注:一般而言, 对于数的配对, 可以采取相反数、倒数、有理化根式、共轭复数等配对方法.\n在本题中, 将 $m+n \\sqrt{3}$ 与其对偶式 $m-n \\sqrt{3}$ 配对, 利用整数的离散性进行估计, 注意 $\\left|m^2-3 n^2\\right|$ 若小于 1 , 则必等于 0 .",
+    "figures": []
+}

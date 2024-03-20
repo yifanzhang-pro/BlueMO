@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设点 $A$ 是圆 $O$ 外一点, 过点 $A$ 作圆 $O$ 的切线, 切点分别为 $B 、 C$. 圆 $O$ 的切线 $l$ 与 $A B 、 A C$ 分别交于点 $P 、 Q$, 过点 $P$ 且平行于 $A C$ 的直线与 $B C$ 交于点 $R$. 求证: 无论 $l$ 如何变化, $Q R$ 恒过一定点.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c11a5.png>), 以 $O$ 为原点, $O A$ 所在直线为 $y$ 轴建立右手直角坐标系, 且不妨设 $\\odot O$ 半径为 1 . $B\\left(-x_0, y_0\\right), C\\left(x_0, y_0\\right)\\left(x_0^2+y_0^2=1\\right)$.\n取 $A B$ 与 $x$ 轴交点 $S$, 则 $A\\left(0, \\frac{1}{y_0}\\right)$, $S\\left(-\\frac{1}{x_0}, 0\\right)$. 设直线 $P Q: x_1 x+y_1 y=1, x_1^2+\\left.\\frac{x_1+x_0}{x_1 y_0+y_1 x_0}\\right)$. 同理, $Q\\left(\\frac{y_0-y_1}{x_1 y_0-y_1 x_0}, \\frac{x_1-x_0}{x_1 y_0-y_1 x_0}\\right)$ 则\n$$\nl_{P R}: y=-\\frac{x_0}{y_0}\\left(x-\\frac{y_0-y_1}{x_1 y_0+y_1 x_0}\\right)+\\frac{x_1+x_0}{x_1 y_0+y_1 x_0} \\cdots \\text { (1). }\n$$\n在(1)中令 $y=y_0$, 所以\n$$\nR\\left(\\frac{2 x_0 y_0-x_0 y_1+x_1 y_0-x_1 y_0^3-y_1 x_0 y_0^2}{x_0\\left(x_1 y_0+y_1 x_0\\right)}, y_0\\right) .\n$$\n下证: $Q 、 R 、 S$ 三点共线.\n(*)\n$$\n\\begin{aligned}\n& (*) \\Leftrightarrow K_{R S}=K_{Q S} \\Leftrightarrow \\frac{y_0 x_0\\left(x_1 y_0+y_1 x_0\\right)}{2 x_0 y_0-x_0 y_1+x_1 y_0-x_1 y_0^3-y_1 x_0 y_0^2+x_1 y_0+y_1 x_0}= \\\\\n& \\frac{x_0 x_1-x_0^2}{x_0 y_0+x_1 y_0-2 x_0 y_1} \\Leftrightarrow 2 x_0 x_1 y_0-x_0 x_1 y_1+x_1^2 y_0-x_1^2 y_0^3-x_0 x_1 y_0^2 y_1+x_1^2 y_0+ \\\\\n& x_0 x_1 y_1-2 x_0^2 y_0+x_0^2 y_1-x_0 x_1 y_0+x_0 x_1 y_0^3+x_0^2 y_1 y_0^2-x_0 x_1 y_0-x_0^2 y_1= \\\\\n& x_0 x_1 y_0^3+x_1^2 y_0^3-2 x_0 x_1 y_1 y_0^2+x_0^2 y_0^2 y_1+x_0 x_1 y_0^2 y_1-2 x_0^2 y_0 y_1^2 \\Leftrightarrow 2 x_1^2 y_0-2 x_1^2 y_0^3- \\\\\n& 2 x_0^2 y_0=-2 x_0^2 y_0 y_1^2\n\\end{aligned}\n$$\n由于 $y_0^2=1-x_0^2, y_1^2=1-x_1^2$. * 式显然成立成立.\n所以 $(*)$ 得证.\n又 $A$ 为定点, 所以 $B 、 C$ 均为定点.\n所以 $S$ 为定点.\n因此 $Q R$ 恒过定点 $\\left(-\\frac{1}{x_0}, 0\\right)$, 得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c11a5.png"
+    ]
+}

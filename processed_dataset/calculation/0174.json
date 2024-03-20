@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 已知 $a_1=1, a_{n+1}=\\frac{1}{16}\\left(1+4 a_n+\\sqrt{1+24 a_n}\\right)(n \\geqslant 1)$, 求 $a_n$.",
+    "solution": "解:为了使递推关系不含根号, 我们自然令 $b_n=\\sqrt{1+24 a_n}$, 即 $a_n= \\frac{1}{24}\\left(b_n^2-1\\right)$, 代入原递推关系得\n$$\n\\frac{1}{24}\\left(b_{n+1}^2-1\\right)=\\frac{1}{16}\\left[1+4 \\times \\frac{1}{24}\\left(b_n^2-1\\right)+b_n\\right],\n$$\n即 $\\left(2 b_{n+1}\\right)^2=\\left(b_n+3\\right)^2$. 因为 $b_n>0$, 故有 $b_{n+1}=\\frac{1}{2} b_n+\\frac{3}{2}$, 即\n$$\nb_{n+1}-3=\\frac{1}{2}\\left(b_n-3\\right),\n$$\n又 $b_1=\\sqrt{1+24 a_1}=5$, 由等比数列通项公式得\n$$\nb_n-3=\\left(b_1-3\\right)\\left(\\frac{1}{2}\\right)^{n-1}=2^{2-n} \\text {. }\n$$\n所以\n$$\n\\begin{aligned}\na_n & =\\frac{1}{24}\\left(b_n^2-1\\right)=\\frac{1}{24}\\left[\\left(2^{2-n}+3\\right)^2-1\\right] \\\\\n& =\\frac{1}{3}\\left(2^{1-2 n}+3 \\cdot 2^{-n}+1\\right) .\n\\end{aligned}\n$$",
+    "remark": "注:本例中由 $b_{n+1}=\\frac{1}{2} b_n+\\frac{3}{2}$ 变为 $b_{n+1}-3=\\frac{1}{2}\\left(b_n-3\\right)$ 时, 其中 3 是方程 $x=\\frac{1}{2} x+\\frac{3}{2}$ 的根.\n也称为函数 $f(x)=\\frac{1}{2} x+\\frac{3}{2}$ 的不动点.\n一般说来, 对于一阶常系数线性递推数列 $b_{n+1}=p b_n+q(p, q$ 为常数, $p \\neq 1)$, 通过解方程 $x=p x+q$, 解出 $x=-\\frac{q}{p-1}$, 便可化为 $b_{n+1}+\\frac{q}{p-1}=p\\left(b_n+\\frac{q}{p-1}\\right)$.",
+    "figures": []
+}

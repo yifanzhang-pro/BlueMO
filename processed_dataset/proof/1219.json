@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 已知 $a, b \\in \\mathbf{R}^{+}, n \\geqslant 2, n \\in \\mathbf{N}^{+}$. 求证:\n$$\n\\sum_{i=1}^n \\frac{1}{a+i b}<\\frac{n}{\\sqrt{a(a+n b)}} .\n$$",
+    "solution": "由柯西不等式, 有 $\\left(\\sum_{i=1}^n \\frac{1}{a+i b}\\right)^2 \\leqslant n \\sum_{i=1}^n\\left(\\frac{1}{a+i b}\\right)^2<$\n$$\n\\begin{aligned}\n& n\\left\\{\\frac{1}{a(a+b)}+\\frac{1}{(a+b)(a+2 b)}+\\cdots+\\frac{1}{[a+(n-1) b](a+n b)}\\right\\}= \\\\\n& \\frac{n}{b}\\left[\\left(\\frac{1}{a}-\\frac{1}{a+b}\\right)+\\left(\\frac{1}{a+b}-\\frac{1}{a+2 b}\\right)+\\cdots+\\left(\\frac{1}{a+(n-1) b}-\\frac{1}{a+n b}\\right)\\right]= \\\\\n& \\frac{n}{b}\\left(\\frac{1}{a}-\\frac{1}{a+n b}\\right)=\\frac{n^2}{a(a+n b)}, \\text { 即 } \\sum_{i=1}^n \\frac{1}{a+i b}<\\frac{n}{\\sqrt{a(a+n b)}} .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

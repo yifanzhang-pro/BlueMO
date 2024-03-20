@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例3. 已知正项数列 $\\left\\{a_n\\right\\}$ 对 $n \\in \\mathbf{N}_{+}$都有 $a_n^2 \\leqslant a_n-a_{n+1}$ 成立.\n求证: $a_n<\\frac{1}{n}$.",
+    "solution": "证法 2 (分区间讨论). 首先易证 $0<a_n<1$. 奠基同上法.\n假设当 $n=k$ 时,有 $a_k<\\frac{1}{k}$.\n现在把 $\\left(0, \\frac{1}{k}\\right)$ 分为 $\\left(0, \\frac{1}{k+1}\\right)$ 和 $\\left[\\frac{1}{k+1}, \\frac{1}{k}\\right)$ 两个子区间之异.\n于是, 当 $n=k+1$ 时,\n(i) 在 $\\left(0, \\frac{1}{k+1}\\right)$ 上, $a_{k+1} \\leqslant a_k\\left(1-a_k\\right)<a_k<\\frac{1}{k+1}$;\n(ii) 在 $\\left[\\frac{1}{k+1}, \\frac{1}{k}\\right)$ 上, $a_{k+1} \\leqslant a_k\\left(1-a_k\\right)<\\frac{1}{k}\\left(1-\\frac{1}{k+1}\\right)=\\frac{1}{k+1}$.\n综合上述, 对一切 $n$, 有 $a_n<\\frac{1}{n}$.",
+    "remark": "",
+    "figures": []
+}

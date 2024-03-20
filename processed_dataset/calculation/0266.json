@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 如图(<FilePath:./images/volume12/figures/fig-c6i1.png>) 有无哈密顿链或哈密顿圈?",
+    "solution": "解:按照如图(<FilePath:./images/volume12/figures/fig-c6i1.png>) 中所给的编号, 可以看出这样的一个圈是存在的.\n这里是采用\"直接求解\"的方法来解决环游世界的问题, 即从图的某一个顶点出发, 采用一步步试探的方法, 来找出图的哈密顿链 (圈). 如果找到了一条解就出来了, 如果找不到, 就可能没有解.\n这种方法一般只用在比较简单的图上, 而且多用在肯定有哈密顿链 (圈) 存在的情况.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c6i1.png",
+        "./images/volume12/figures/fig-c6i1.png"
+    ]
+}

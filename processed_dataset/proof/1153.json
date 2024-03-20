@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-3.tex",
+    "problem_type": "proof",
+    "problem": "例15. 已知 $x_i \\in \\mathbf{R}^{+}(i \\geqslant 1)$ 满足 $\\sum_{i=1}^n x_i=\\sum_{i=1}^n \\frac{1}{x_i}$, 求证:\n$$\n\\sum_{i=1}^n \\frac{1}{n-1+x_i} \\leqslant 1 .\n$$",
+    "solution": "证明:令 $y_i=\\frac{1}{n-1+x_i}$, 则 $x_i=\\frac{1}{y_i}-(n-1), 0<y_i<\\frac{1}{n-1}$.\n如果 $\\sum_{i=1}^n y_i>1$, 将证明 $\\sum_{i=1}^n x_i<\\sum_{i=1}^n \\frac{1}{x_i}$, 即等价于\n$$\n\\sum_{i=1}^n\\left[\\frac{1}{y_i}-(n-1)\\right]<\\sum_{i=1}^n \\frac{y_i}{1-(n-1) y_i} .\n$$\n对固定 $i$, 由柯西不等式, 得\n$$\n\\begin{aligned}\n& \\sum_{i \\neq j} \\frac{1-(n-1) y_i}{1-(n-1) y_j} \\\\\n\\geqslant & \\frac{\\left[1-(n-1) y_i\\right](n-1)^2}{\\sum_{i \\neq j}\\left[1-(n-1) y_i\\right]} \\\\\n> & \\frac{\\left[1-(n-1) y_i\\right](n-1)^2}{(n-1) y_i}=\\frac{(n-1)\\left[1-(n-1) y_i\\right]}{y_i} .\n\\end{aligned}\n$$\n对 $i$ 求和, 得\n$$\n\\sum_{i=1}^n \\sum_{i \\neq j} \\frac{1-(n-1) y_i}{1-(n-1) y_j} \\geqslant(n-1) \\sum_{i=1}\\left[\\frac{1}{y_i}-(n-1)\\right] .\n$$\n由于\n$$\n\\begin{gathered}\n\\sum_{i=1}^n \\sum_{i \\neq j} \\frac{1-(n-1) y_i}{1-(n-1) y_j} \\leqslant \\sum_{j=1}^n \\frac{(n-1) y_j}{1-(n-1) y_j}, \\\\\n\\sum_{i=1}^n \\frac{y_i}{1-(n-1) y_i}>\\sum_{j=1}^n\\left[\\frac{1}{y_j}-(n-1)\\right] .\n\\end{gathered}\n$$",
+    "remark": "",
+    "figures": []
+}

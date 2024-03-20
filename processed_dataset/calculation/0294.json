@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题8. 一位厨师用8种原料做菜,每种菜都用2种原料搭配.\n已知每种原料都至少用在4种菜里,问:能否从这位厨师做的菜中选出4种,恰好包括了 8 种不同的原料?",
+    "solution": "作图 $G$ : 顶点代表原料, 每种菜对应于一条边.\n在 $G$ 中, 每个顶点的度 $\\geqslant 4$, 根据定理四, $G$ 中有一个哈密顿圈.",
+    "remark": "",
+    "figures": []
+}

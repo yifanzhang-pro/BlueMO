@@ -1,0 +1,7 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter9.tex",
+    "text": "若有向图 $D$ 中有一条路包含图 $D$ 的一切顶点, 则称这条路为哈密顿路.\n对竟赛图 $\\bar{K}_n$, 有如下结论.\n定理三竞赛图 $\\bar{K}_n$ 中存在一条长为 $n-1$ 的哈密顿路.\n证明对顶点数 $n$ 用数学归纳法证明.\n$n=2$ 时显然.\n设命题对 $\\leqslant k$ 个顶点的竞赛图成立.\n当 $n=k+1$ 时, 从 $k+1$ 个顶点中任取一个 $v$, 在 $\\bar{K}_{k+1}$ 中去掉 $v$ 及其相邻的弧, 根据归纳假设, $\\bar{K}_{k+1}-v$ 中存在哈密顿路,设为 $v_1, v_2, \\cdots, v_k$.\n如果有弧 $\\left(v_k, v\\right)$, 那么 $v_1, v_2, \\cdots, v_k, v$ 就是一条哈密顿路.\n如果有弧 $\\left(v, v_1\\right)$, 那么 $v, v_1, v_2, \\cdots, v_k$ 就是一条哈密顿路.\n否则就存在弧 $\\left(v, v_k\\right),\\left(v_1, v\\right)$, 那么一定有一个 $i(1 \\leqslant i \\leqslant k-1)$, 使弧 $\\left(v_i, v\\right)$ 与 $\\left(v, v_{i+1}\\right)$ 同时存在, 这时 $v_1, \\cdots, v_i, v, v_{i+1}, \\cdots, v_k$ 就是所求的哈密顿路, 如图(<FilePath:./images/volume12/figures/fig-c9i2.png>) 所示.",
+    "figures": [
+        "./images/volume12/figures/fig-c9i2.png"
+    ]
+}

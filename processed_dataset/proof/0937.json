@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题4 设 $f: \\mathbf{R}^{+} \\rightarrow \\mathbf{R}^{+}$严格递减, 对所有 $x, y \\in \\mathbf{R}^{+}, f(x+y)+f(f(x)+f(y))=$ $f(f(x+f(y))+f(y+f(x)))$.\n求证: $f(f(x))=x$.",
+    "solution": "令 $y=x$, 得 $f(2 x)+f(2 f(x))=f(2 f(x+f(x))) \\cdots$ (1). 将 $x$ 换成 $f(x)$, 有 $f(2 f(x))+f(2 f(f(x)))=f(2 f(f(x)+f(f(x)))) \\cdots$ (2). (1)、 (2) 两式相减得 $f(2 f(f(x)))-f(2 x)=f(2 f(f(x)+f(f(x))))- f(2 f(x+f(x)))$. 若 $f(f(x))>x$, 则上式左边为负, 而右边却为正, 矛盾! 同样, 若 $f(f(x))<x$ 也会导致左右符号不一致的矛盾.\n所以 $f(f(x))=x$.",
+    "remark": "",
+    "figures": []
+}

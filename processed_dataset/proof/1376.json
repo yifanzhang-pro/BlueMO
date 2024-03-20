@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $a_1, a_2, \\cdots, a_n(n \\geqslant 3)$ 是实数,求证:\n$$\n\\sum_{i=1}^n a_i^2-\\sum_{i=1}^n a_i a_{i+1} \\leqslant\\left[\\frac{n}{2}\\right](M-m)^2,\n$$\n其中 $a_{n+1}=a_1, M=\\max _{1 \\leqslant i \\leqslant n} a_i, m=\\min _{1 \\leqslant i \\leqslant n} a_i,[x]$ 表示不超过 $x$ 的最大整数.",
+    "solution": "证明:若 $n=2 k$ ( $k$ 为正整数), 则\n$$\n2\\left(\\sum_{i=1}^n a_i^2-\\sum_{i=1}^n a_i a_{i+1}\\right)=\\sum_{i=1}^n\\left(a_i-a_{i+1}\\right)^2 \\leqslant n \\times(M-m)^2,\n$$\n从而\n$$\n\\sum_{i=1}^n a_i^2-\\sum_{i=1}^n a_i a_{i+1} \\leqslant \\frac{n}{2}(M-m)^2=\\left[\\frac{n}{2}\\right](M-m)^2 .\n$$\n若 $n=2 k+1$ ( $k$ 为正整数), 则对于循环排列的 $2 k+1$ 个数, 必有连续三项递增或递减 (因为 $\\prod_{i=1}^{2 k+1}\\left(a_i-a_{i-1}\\right)\\left(a_{i+1}-a_i\\right)=\\prod_{i=1}^{2 k+1}\\left(a_i-a_{i-1}\\right)^2 \\geqslant 0$, 所以不可能对于每一个 $i$, 都有 $a_i-a_{i-1}$ 与 $a_{i+1}-a_i$ 异号), 不妨设为 $a_1 、 a_2 、 a_3$, 则有\n$$\n\\left(a_1-a_2\\right)^2+\\left(a_2-a_3\\right)^2 \\leqslant\\left(a_1-a_3\\right)^2,\n$$\n从而\n$$\n2\\left(\\sum_{i=1}^n a_i^2-\\sum_{i=1}^n a_i a_{i+1}\\right)=\\sum_{i=1}^n\\left(a_i-a_{i+1}\\right)^2 \\leqslant\\left(a_1-a_3\\right)^2+\\sum_{i=3}^n\\left(a_i-a_{i+1}\\right)^2,\n$$\n这就将问题化为了 $2 k$ 个数的情形.\n我们有\n$$\n2\\left(\\sum_{i=1}^n a_i^2-\\sum_{i=1}^n a_i a_{i+1}\\right) \\leqslant\\left(a_1-a_3\\right)^2+\\sum_{i=3}^n\\left(a_i-a_{i+1}\\right)^2 \\leqslant 2 k(M-m)^2,\n$$\n即\n$$\n\\left(\\sum_{i=1}^n a_i^2-\\sum_{i=1}^n a_i a_{i+1}\\right) \\leqslant k(M-m)^2=\\left[\\frac{n}{2}\\right](M-m)^2,\n$$\n证毕.",
+    "remark": "",
+    "figures": []
+}

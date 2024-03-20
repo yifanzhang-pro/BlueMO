@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题9. $\\cos 2 x>\\cos 2 y$ 成立的一个充分非必要条件是( ).\n(A) $|\\cos x|>|\\cos y|$\n(B) $|\\cos x|>\\cos y$\n(C) $\\cos x>|\\cos y|$\n(D) $\\cos x+\\cos y>0$",
+    "solution": "C. $\\cos 2 x>\\cos 2 y \\Leftrightarrow 2 \\cos ^2 x-1>2 \\cos ^2 y-1 \\Leftrightarrow \\cos ^2 x>\\cos ^2 y \\Leftrightarrow |\\cos x|>|\\cos y|$. 故选 C.",
+    "remark": "",
+    "figures": []
+}

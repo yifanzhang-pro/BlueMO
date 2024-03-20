@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例3. 如图(<FilePath:./images/volume7/figures/fig-c9i6.png>), $Q$ 是以 $A B$ 为直径的圆上的一点, $Q \\neq A 、 B, Q$ 在 $A B$ 上的投影为 $H$. 以 $Q$ 为圆心、 $Q H$ 为半径的圆与以 $A B$ 为直径的圆交于点 $C$ 、 $D$. 证明: $C D$ 平分线段 $Q H$.",
+    "solution": "证明:作以 $Q$ 为反演中心、 $\\odot Q$ 为反演圆的反演变换.\n则 $\\odot O$ 反演为直线 $C D, A B$ 反演为以 $Q H$ 为直径且与 $\\odot Q$ 内切的圆 (如图(<FilePath:./images/volume7/figures/fig-c9i7.png>)).\n因为 $A B$ 是 $\\odot O$ 的直径, 所以 $A B$ 与 $\\odot O$ 正交.\n由反演的保角性知, $C D$ 与以 $Q H$ 为直径的圆正交, 故 $C D$ 平分线段 $Q H$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9i6.png",
+        "./images/volume7/figures/fig-c9i7.png"
+    ]
+}

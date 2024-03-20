@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例4. 如图(<FilePath:./images/volume7/figures/fig-c7i4.png>),已知 $\\triangle A B C$ 中, $O$ 是三角形内一点满足: $\\angle B A O=\\angle C A O=\\angle C B O=\\angle A C O$. 求证: $\\triangle A B C$ 三边长成等比数列.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c7i4.png>), 设 $\\angle B A O==\\angle C B O=\\angle A C O=\\alpha$.\n先证 $\\cot \\alpha=\\cot A+\\cot B+\\cot C, \\label{*}$.\n在 $\\triangle O A B$ 中, 由正弦定理: $\\frac{A B}{\\sin \\angle A O B}=\\frac{O B}{\\sin \\angle B A O}$,\n而 $\\sin \\angle A O B=\\sin (\\angle B A O+\\angle A B O)=\\sin (\\angle C B O+\\angle A B O)=\\sin B$, 所以\n$$\n\\frac{A B}{\\sin B}=\\frac{O B}{\\sin \\alpha} . \\label{eq1}\n$$\n同理 $\\triangle O B C$ 中有 $\\frac{B C}{\\sin C}=\\frac{O B}{\\sin (C-\\alpha)}, \\label{eq2}$.\n$\\frac{式\\ref{eq1}}{\\ref{eq2}}$, 有 $\\frac{A B \\sin C}{B C \\sin B}=\\frac{\\sin (C-\\alpha)}{\\sin \\alpha}$, 即 $\\frac{\\sin ^2 C}{\\sin A \\sin B}=\\frac{\\sin (C-\\alpha)}{\\sin \\alpha}$,\n而 $\\frac{\\sin (C-\\alpha)}{\\sin \\alpha}=\\frac{\\sin C \\cos \\alpha-\\cos C \\sin \\alpha}{\\sin \\alpha}=\\sin C \\cdot \\cot \\alpha-\\cos C$.\n所以 $\\frac{\\sin ^2 C}{\\sin A \\sin B}=\\sin C \\cdot \\cot \\alpha-\\cos C$, 即 $\\cot \\alpha=\\frac{\\sin C}{\\sin A \\sin B}+\\cot C= \\frac{\\sin (A+B)}{\\sin A \\sin B}+\\cot C=\\frac{\\sin A \\cos B+\\cos A \\sin B}{\\sin A \\sin B}+\\cot C=\\cot A+\\cot B+\\cot C$.\n\\ref{*}式得证, 由\\ref{*}式及已知条件知, $\\alpha=\\frac{A}{2}$. 从而有 $\\cot \\frac{A}{2}=\\cot A+\\cot B+\\cot C$,\n而 $\\cot \\frac{A}{2}-\\cot A=\\frac{\\cos \\frac{A}{2}}{\\sin \\frac{A}{2}}-\\frac{\\cos A}{\\sin A}=\\frac{\\sin \\frac{A}{2}}{\\sin \\frac{A}{2} \\sin A}=\\frac{1}{\\sin A}, \\cot B+\\cot C =\\frac{\\cos B}{\\sin B}+\\frac{\\cos C}{\\sin C}=\\frac{\\sin A}{\\sin B \\sin C}$,\n所以 $\\frac{1}{\\sin A}=\\frac{\\sin A}{\\sin B \\sin C}$, 所以 $\\sin ^2 A=\\sin B \\sin C$, 即 $b, a, c$ 成等比数列.",
+    "remark": "注: 若 $O$ 是 $\\triangle A B C$ 内一点, 满足 $\\angle B A O=\\angle C B O=\\angle A C O=\\alpha$ 这样的点 $O$ 称为布洛卡点, 布洛卡点的一个基本性质是: $\\cot \\alpha=\\cot A+\\cot B+ \\cot C$.",
+    "figures": [
+        "./images/volume7/figures/fig-c7i4.png",
+        "./images/volume7/figures/fig-c7i4.png"
+    ]
+}

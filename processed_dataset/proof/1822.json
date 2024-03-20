@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 锐角 $\\triangle A B C$ 内接于圆 $O$, 分别过点 $B 、 C$ 作圆 $O$ 的切线, 并分别交过点 $A$ 所作圆 $O$ 的切线于点 $M 、 N, A D$ 为边 $B C$ 上的高.\n求证: $A D$ 平分 $\\angle M D N$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c2a12.png>), 记 $\\angle M D A=\\alpha, \\angle N D A=\\beta$. 只需证明 $\\alpha=\\beta$.\n因为 $M N 、 M B 、 N C$ 都是圆 $O$ 的切线,所以,\n$$\n\\begin{gathered}\n\\angle M A B=\\angle M B A=\\angle A C B, \\\\\n\\angle N A C=\\angle N C A=\\angle A B C .\n\\end{gathered}\n$$\n对 $\\triangle D A B$ 和点 $M$ 应用角元塞瓦定理有\n$$\n\\begin{aligned}\n1 & =\\frac{\\sin \\angle A D M}{\\sin \\angle M D B} \\cdot \\frac{\\sin \\angle D B M}{\\sin \\angle M B A} \\cdot \\frac{\\sin \\angle B A M}{\\sin \\angle M A D} \\\\\n& =\\frac{\\sin \\alpha}{\\cos \\alpha} \\cdot \\frac{\\sin (B+C)}{\\sin \\angle M A D} \\\\\n& =\\tan \\alpha \\cdot \\frac{\\sin (B+C)}{\\sin \\angle M A D} . \n\\end{aligned} \\label{eq1}\n$$\n同理,对 $\\triangle D A C$ 和点 $N$ 应用角元塞瓦定理又有\n$$\n1=\\tan \\beta \\cdot \\frac{\\sin (B+C)}{\\sin \\angle N A D} . \\label{eq2}\n$$\n比较式\\ref{eq1}、\\ref{eq2}即得 $\\tan \\alpha=\\tan \\beta$.\n因此, $\\alpha=\\beta$, 即 $A D$ 平分 $\\angle M D N$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2a12.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题2 已知 $f(x)$ 是偶函数, $g(x)$ 是奇函数, 并且\n$$\nf(x)+g(x)=1993 x \\sqrt{9-x^2}+x^{1994},\n$$\n求 $f(x)$ 和 $g(x)$.",
+    "solution": "由题设知, $f(x), g(x)$ 的定义域为 $[-3,3]$. 用 $-x$ 代换方程中的 $x$, 并将原方程与所得的新方程联立得 $\\left\\{\\begin{array}{l}f(x)+g(x)=1993 x \\sqrt{9-x^2}+x^{1994}, \\\\ f(x)-g(x)=-1993 x \\sqrt{9-x^2}+x^{1994} .\\end{array}\\right.$ 解方程组得 $f(x)=x^{1994}, g(x)=1993 x \\sqrt{9-x^2}(-3 \\leqslant x \\leqslant 3)$.",
+    "remark": "",
+    "figures": []
+}

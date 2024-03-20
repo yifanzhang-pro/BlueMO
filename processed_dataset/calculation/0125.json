@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例5. 求出不定方程:\n$$\nx^3+x^2 y+x y^2+y^3=8\\left(x^2+x y+y^2+1\\right)\n$$\n的全部整数解.",
+    "solution": "解:法一原方程左端是关于 $x 、 y$ 的三次多项式,右边是二次多项式.\n而对于整数 $x 、 y$, 三次式的值的绝对值一般应大于二次式的值的绝对值, 因此本题有希望用估计法解决.\n现将方程分解为\n$$\n\\left(x^2+y^2\\right)(x+y-8)=8(x y+1) . \\label{eq1}\n$$\n若 $x+y-8 \\geqslant 6$, 则 $x+y \\geqslant 14$, 从而\n$$\nx^2+y^2 \\geqslant \\frac{(x+y)^2}{2}>4 \\text {. }\n$$\n这时式\\ref{eq1}的左端\n$$\n\\begin{aligned}\n& \\geqslant 6\\left(x^2+y^2\\right)=4\\left(x^2+y^2\\right)+2\\left(x^2+y^2\\right) \\\\\n& \\geqslant 8 x y+2\\left(x^2+y^2\\right)>8(x y+1),\n\\end{aligned}\n$$\n故此时方程无整数解.\n若 $x+y-8 \\leqslant-4$, 则 $x+y \\leqslant 4$, 这时式\\ref{eq1}的左端\n$$\n\\leqslant-4\\left(x^2+y^2\\right) \\leqslant-4 \\times 2|x y| \\leqslant 8 x y<8(x y+1),\n$$\n此时方程亦无整数解.\n因此, 方程的整数解 $(x, y)$ 应满足\n$$\n-3 \\leqslant x+y-8 \\leqslant 5 .\n$$\n另一方面, 式\\ref{eq1}的左端应是偶数,这推出 $x, y$ 的奇偶性必须相同, 从而 $x+ y-8$ 是偶数, 故它只能是 $-2 、 0 、 2 、 4$. 结合 式\\ref{eq1}, 通过检验不难得知, 所求的解为 $(x, y)=(2,8),(8,2)$.",
+    "remark": "",
+    "figures": []
+}

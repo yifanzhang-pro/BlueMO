@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例11 设 $f(x)=\\frac{x}{1+a x}$, 求 $f^{(n)}(x)$.",
+    "solution": "解:令 $g(x)=x+a, \\varphi(x)=\\frac{1}{x}$, 则 $\\varphi^{-1}(x)=\\frac{1}{x}$. 容易验证 $f(x)= \\varphi^{-1}(g(\\varphi(x)))$, 即 $f \\stackrel{\\varphi}{\\sim} g$. 所以\n$$\n\\begin{aligned}\nf^{(n)}(x) & =\\varphi^{-1}\\left(g^{(n)}(\\varphi(x))\\right) \\\\\n& =\\varphi^{-1}(\\varphi(x)+n a) \\\\\n& =\\frac{1}{\\frac{1}{x}+n a}=\\frac{x}{1+n a x} .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

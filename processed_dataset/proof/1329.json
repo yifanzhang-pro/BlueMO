@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例6. 已知不等式\n$$\n\\sqrt{2}(2 a+3) \\cos \\left(\\theta-\\frac{\\pi}{4}\\right)+\\frac{6}{\\sin \\theta+\\cos \\theta}-2 \\sin 2 \\theta<3 a+6\n$$\n对于 $\\theta \\in\\left[0, \\frac{\\pi}{2}\\right]$ 恒成立,求 $a$ 的取值范围.",
+    "solution": "解:设 $\\sin \\theta+\\cos \\theta=x$, 则 $x \\in[1, \\sqrt{2}]$, 且\n$$\n\\begin{aligned}\n\\sin 2 \\theta & =2 \\sin \\theta \\cos \\theta=x^2-1, \\\\\n\\cos \\left(\\theta-\\frac{\\pi}{4}\\right) & =\\frac{\\sqrt{2}}{2} \\cos \\theta+\\frac{\\sqrt{2}}{2} \\sin \\theta=\\frac{\\sqrt{2}}{2} x .\n\\end{aligned}\n$$\n从而原不等式可化为\n$$\n\\begin{gathered}\n(2 a+3) x+\\frac{6}{x}-2\\left(x^2-1\\right)<3 a+6, \\\\\n2 x^3-(2 a+3) x^2+(3 a+4) x-6>0, \\\\\n(2 x-3)\\left(x^2-a x+2\\right)>0,\n\\end{gathered}\n$$\n即因为 $x \\in[1, \\sqrt{2}]$, 所以 $2 x-3<0$, 从而不等式 $x^2-a x+2<0$ 对于 $x \\in[1$, $\\sqrt{2}]$ 恒成立, 即 $a>x+\\frac{2}{x}, x \\in[1, \\sqrt{2}]$ 恒成立.\n$$\n\\text { 令 } f(x)=x+\\frac{2}{x}, x \\in[1, \\sqrt{2}] \\text {, 则 } a>f_{\\text {max }}(x) \\text {. }\n$$\n因为 $f(x)=x+\\frac{2}{x}$ 在 $[1, \\sqrt{2}]$ 上单调递减, 所以 $f_{\\text {max }}(x)=f(1)=3$, 所以 $a$ 的取值范围为 $a>3$.\n说明利用函数的单调性, 以及求函数最值的方法可以帮助我们来证明不等式.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 设锐角 $\\triangle A B C$ 的外心为 $O$, 从 $A$ 作 $B C$ 的高, 垂足为 $P$, 且 $\\angle B C A \\geqslant \\angle A B C+30^{\\circ}$. 证明: $\\angle C A B+\\angle C O P<90^{\\circ}$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c7a9.png>), 延长 $C O 、 A O 、 A P$ 分别交 $\\odot O$ 于 $D 、 E 、 F$, 连结 $E F 、 B D$. 则 $\\angle E=\\angle C A P+\\angle A B C= 90^{\\circ}-\\angle A C B+\\angle A B P$. 故 $\\angle O A P=90^{\\circ}-\\angle E= \\angle A C B-\\angle A B P$. 设 $\\odot O$ 的半径为 $R$. 因为 $C P= 2 R \\sin B \\cdot \\cos C, A P=2 R \\sin B \\cdot \\sin C$, 所以 $O P^2= A P^2+O A^2-2 O A \\cdot A P \\cdot \\cos \\angle O A P=4 R^2 \\sin ^2 B \\cdot \\sin ^2 C+R^2-4 R^2 \\cdot \\sin B \\cdot \\sin C \\cdot \\cos (C-B)= 4 R^2\\left[\\sin ^2 B \\cdot \\sin ^2 C+\\frac{1}{4}-\\sin ^2 B \\cdot \\sin ^2 C-\\sin B \\cdot \\cos B \\cdot\\right.\\sin C \\cdot \\cos C]=4 R^2\\left(\\frac{1}{4}-\\sin B \\cdot \\cos B \\cdot \\sin C \\cdot \\cos C\\right)$. 所以 $O P^2- C P^2=4 R^2\\left[\\frac{1}{4}-\\sin B \\cdot \\cos C \\cdot \\sin (B+C)\\right]=4 R^2\\left[\\frac{1}{4}-\\frac{1}{2} \\sin ^2 A+\\right.\\left.\\frac{1}{2} \\sin A \\cdot \\sin (C-B)\\right]$. 因为 $\\angle C-\\angle B \\geqslant 30^{\\circ}$, 且 $\\angle C 、 \\angle B$ 都为锐角, 所以上式 $\\geqslant 4 R^2\\left[\\frac{1}{4}-\\frac{1}{2} \\sin ^2 A+\\frac{1}{4} \\sin A\\right]=R^2(2 \\sin A+1)(1-\\sin A)>0$. 所以 $O P^2>C P^2, O P>C P$. 有 $\\angle C O P<\\angle O C P$. 故 $\\angle C O P+\\angle C A B< \\angle O C P+\\angle D=90^{\\circ}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c7a9.png"
+    ]
+}

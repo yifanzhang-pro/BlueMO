@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 如图(<FilePath:./images/volume7/figures/fig-c5p6.png>), 某圆分别与凸四边形 $A B C D$ 的 $A B 、 B C$ 两边相切于 $G 、 H$ 两点, 与对角线 $A C$ 相交于 $E 、 F$ 两点: 问 $A B C D$ 应满足怎样的充要条件, 使得存在另一圆过 $E 、 F$ 两点,且分别与 $D A 、 D C$ 的延长线相切?",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c5a6.png>), 所求的充分必要条件是 $A B+ A D=C B+C D$.\n(1)必要性的证明.\n设过 $E 、 F$ 两点的另一圆分别与 $D A$ 的延长线和 $D C$ 延长线相切于 $J$ 和 $K$ 两点, 由于 $A J, A G$ 分别是大圆, 小圆的切线,所以由圆幕定理知 $A G^2=A E \\cdot A F$ (对小圆) $A J^2=A E$ ・ $A F$ (对大圆), 故 $A G=A J$. 同理, $C H=C K$. 则有 $A B+A D=B G+G A+A D=B G+J D=B H+ 2^{\\circ}$ \n(2)充分性的证明.\n设凸四边形 $A B C D$ 满足条件 $A B+A D=C B+C D$. 在 $D A$ 延长线和 $D C$ 延长线上分别取 $J$ 点和 $K$ 点, 使 $A J=A G, C K=C H$, 于是\n$D J=J A+A D=A G+A D=A B+A D-B G=C B+C D-B H=C H+ C D=D K$. 过 $J$ 点和 $K$ 点分别作 $D J$ 和 $D K$ 的垂线, 以两垂线交点为圆心作通过 $J$ 点和 $K$ 点的圆.\n因为 $A J=A G, C K=C H$, 所以 $A$ 点和 $C$ 点关于原有圆的幂分别等于这两点关于所作圆的幕.\n又因为直线 $A C$ 与原有的圆相交于 $E$ 和 $F$.两点,所以 $E F$ 是两圆的公共弦 (直线 $A C$ 是两圆的根轴).\n至此, 我们证明了所作的与 $D A$ 延长线和 $D C$ 延长线相切的圆通过 $E 、 F$ 两点.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5p6.png",
+        "./images/volume7/figures/fig-c5a6.png"
+    ]
+}

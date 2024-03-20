@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例17. (1) 设函数 $f(x), g(x)$ 对所有 $x$ 满足 $-\\frac{\\pi}{2}<f(x) \\pm g(x)<\\frac{\\pi}{2}$, 证明: 对所有 $x$, 有 $\\cos (f(x))>\\sin (g(x))$;\n (2)利用或不利用(1), 证明:对所有 $x$, 有 $\\cos (\\cos x)>\\sin (\\sin x)$.",
+    "solution": "证明:(1) 不妨设 $g(x)>0$, 所以 $-\\frac{\\pi}{2}+g(x)<f(x)<\\frac{\\pi}{2}-g(x)$.\n若 $f(x) \\geqslant 0$, 因为 $\\cos x$ 在 $\\left[0, \\frac{\\pi}{2}\\right]$ 内是减函数, 所以 $\\cos (f(x))>\\cos \\left(\\frac{\\pi}{2}-\\right. g(x))$, 即 $\\cos (f(x))>\\sin (g(x))$;\n若 $f(x)<0$, 因为 $\\cos x$ 在 $\\left(-\\frac{\\pi}{2}, 0\\right)$ 内是增函数, 所以 $\\cos \\left(-\\frac{\\pi}{2}+g(x)\\right)< \\cos (f(x))$, 即 $\\cos (f(x))>\\sin (g(x))$;\n同理可证 $g(x) \\leqslant 0$ 时,仍有 $\\cos (f(x))>\\sin (g(x))$.\n综上所述, 对所有 $x$, 都有 $\\cos (f(x))>\\sin (g(x))$.\n(2) 因为\n$$\n\\begin{gathered}\n|\\cos x-\\sin x|=\\left|\\sqrt{2} \\cos \\left(x+\\frac{\\pi}{4}\\right)\\right| \\leqslant \\sqrt{2}<\\frac{\\pi}{2}, \\\\\n|\\cos x+\\sin x|=\\left|\\sqrt{2} \\sin \\left(x+\\frac{\\pi}{4}\\right)\\right| \\leqslant \\sqrt{2}<\\frac{\\pi}{2},\n\\end{gathered}\n$$\n所以令 $f(x)=\\cos x, g(x)=\\sin x$, 则符合第(1) 题条件, 于是对于所有 $x$, 都有 $\\cos (\\cos x)>\\sin (\\sin x)$.\n评注第(1)题的证明过程运用了分类讨论的数学思想以及三角函数的单调性;第 (2)题利用了重要不等式及三角函数的有界性.",
+    "remark": "",
+    "figures": []
+}

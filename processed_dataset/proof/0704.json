@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例9. 设 $f(x)$ 是定义在非负实数集上的函数, $f(0)=0$, 且对任意 $x \\geqslant y \\geqslant 0$, 有 $|f(x)-f(y)| \\leqslant(x-y) f(x)$. 求 $f(x)$.",
+    "solution": "解:们用数学归纳法证明: 对任意正整数 $n$, 当 $\\frac{n-1}{2} \\leqslant x<\\frac{n}{2}$ 时, 有 $f(x)=0$.\n当 $n=1$ 时,在条件中取 $x, y$ 使 $0 \\leqslant x<\\frac{1}{2}, y=0$, 得\n$$\n|f(x)| \\leqslant x f(x) \\leqslant x|f(x)| \\leqslant \\frac{1}{2}|f(x)|,\n$$\n故 $|f(x)|=0$, 即 $f(x)=0$, 命题成立.\n设 $n=k$ 时命题成立, 则当 $n=k+1$ 时, 取 $x, y$ 使 $\\frac{k}{2} \\leqslant x<\\frac{k+1}{2}, y=x- \\frac{1}{2}$, 此时 $\\frac{k-1}{2} \\leqslant y<\\frac{k}{2}$, 由归纳假设知 $f(y)=0$, 代入已知条件得 $|f(x)| \\leqslant \\frac{1}{2} f(x)$, 类似前面的讨论可知 $f(x)=0$, 故 $n=k+1$ 时命题成立.\n注意到当 $n$ 取遍所有正整数时, $x \\in\\left[\\frac{n-1}{2}, \\frac{n}{2}\\right)$ 取遍一切非负实数, 从而由数学归纳法得: $f(x)$ 恒等于 0 .",
+    "remark": "注:这是在实数情形下使用数学归纳法的一个例子.\n与证明关于正整数的命题不同, 由于正实数集是 \"不可列\" 的, 换言之就是不存在一个数列取遍一切正实数值 (严格证明需要用到一点高等数学的知识), 因此我们势必对无穷多个起点进行验证.\n本题中, 我们的处理方式是将 $[0,+\\infty)$ 拆成 \"可列\" 区间 $\\left[\\frac{n-1}{2}, \\frac{n}{2}\\right)$, 通过对第一个区间的讨论统一完成了无穷个起点的验证过程, 再设置\"步长\"为 $\\frac{1}{2}$ 进行证明.",
+    "figures": []
+}

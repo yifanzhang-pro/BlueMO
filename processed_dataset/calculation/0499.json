@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例9 若函数 $g(x)$ 的图象与函数 $f(x)=\\frac{1-2^x}{1+2^x}$ 的图象关于直线 $y=x$ 对称, 求 $g\\left(\\frac{3}{5}\\right)$ 的值.",
+    "solution": "解:法一先求出 $g(x)$ 的解析式.\n因为\n$$\n\\begin{gathered}\nf(x)=\\frac{1-2^x}{1+2^x}, \\\\\n2^x=\\frac{1-f(x)}{1+f(x)}, \\\\\nx=\\log _2 \\frac{1-f(x)}{1+f(x)} .\n\\end{gathered}\n$$\n所以\n$$\n2^x=\\frac{1-f(x)}{1+f(x)}\n$$\n因此 $g(x)=f^{-1}(x)=\\log _2 \\frac{1-x}{1+x},(-1<x<1)$,\n所以 $g\\left(\\frac{3}{5}\\right)=\\log _2 \\frac{1-\\frac{3}{5}}{1+\\frac{3}{5}}=\\log _2 \\frac{1}{4}=-2$.\n解法二由题意知, 函数 $g(x)$ 与 $f(x)$ 互为反函数, 所以 $g\\left(\\frac{3}{5}\\right)$ 的值应是方程 $\\frac{1-2^x}{1+2^x}=\\frac{3}{5}$ 的解.\n解方程可得 $x=-2$, 故 $g\\left(\\frac{3}{5}\\right)=-2$.\n说明解法一是常规的方法, 在求反函数时注意定义域和值域.\n解法二巧妙地利用了反函数的概念, 这是一种非常简便有效的方法.",
+    "remark": "",
+    "figures": []
+}

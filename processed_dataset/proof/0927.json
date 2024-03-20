@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题4 设 $a, b, c, d \\in \\mathbf{R}$, 且满足\n$$\n(a+b+c)^2 \\geqslant 2\\left(a^2+b^2+c^2\\right)+4 d,\n$$\n求证: $a b+b c+c a \\geqslant 3 d$.",
+    "solution": "题设不等式可变形为 $c^2-2(a+b) c+\\left[\\left(a^2+b^2\\right)-2 a b+4 d\\right] \\leqslant 0$, 于是可构造函数 $f(x)=x^2-2(a+b) x+a^2+b^2-2 a b+4 d . f(x)$ 是开口向上的抛物线, 且 $f(c) \\leqslant 0$, 从而抛物线与 $x$ 轴有交点, 于是 $\\Delta=4(a+b)^2-4\\left(a^2+\\right. \\left.b^2-2 a b+4 d\\right) \\geqslant 0$, 所以 $a b \\geqslant d$. 同理可证 $b c \\geqslant d, c a \\geqslant d$. 所以 $a b+b c+ c a \\geqslant 3 d$.",
+    "remark": "",
+    "figures": []
+}

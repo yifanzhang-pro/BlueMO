@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题17 设 $[\\tan x]$ 表示不超过实数 $\\tan x$ 的最大整数, 则方程 $[\\tan x]=2 \\cos ^2 x$ 的解为",
+    "solution": "$x=k \\pi+\\frac{\\pi}{4}, k \\in \\mathbf{Z}$. 因为 $2 \\cos ^2 x \\in[0,2]$, 又 $[\\tan x]$ 表示整数,故 $[\\tan x]=0$ 时, $\\cos x=0$ (舍). [ $\\tan x]=2$ 时, $\\cos ^2 x=1$ (舍). [ $\\left.\\tan x\\right]=1$ 时, $\\cos x= \\pm \\frac{\\sqrt{2}}{2}, x= \\pm \\frac{\\pi}{4}+k \\pi, k \\in \\mathbf{Z}$. 验证知 $x=k \\pi+\\frac{\\pi}{4}, k \\in \\mathbf{Z}$.",
+    "remark": "",
+    "figures": []
+}

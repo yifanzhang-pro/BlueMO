@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例1. 如图(<FilePath:./images/volume7/figures/fig-c4i2.png>), 设 $B$ 是圆 $S_1$ 上的点, 过 $B$ 作圆 $S_1$ 的切线, $A$ 为该切线上异于 $B$ 的点, 又 $C$ 不是圆 $S_1$ 上的点, 且线段 $A C$ 交圆 $S_1$ 于两个不同的点.\n圆 $S_2$ 与 $A C$ 相切于点 $C$, 与圆 $S_1$ 相切于点 $D$, 且 $D$ 与 $B$ 在直线 $A C$ 的两侧.\n证明: $\\triangle B C D$ 的外心在 $\\triangle A B C$ 的外接圆上.",
+    "solution": "证明:作两圆公切线 $T T^{\\prime}$ 满足 $T$ 与 $A$ 在 $B D$ 同侧, 取 $B D$ 中点 $E, C D$ 中点 $F$, 连结$B K 、 E K 、 D K 、 F K 、 C K$.\n因 $\\angle T D B=\\angle A B D, \\angle T^{\\prime} D C=\\angle D C A$, 则\n$$\n\\begin{aligned}\n\\angle B D C & =180^{\\circ}-\\angle T D B+\\angle T^{\\prime} D C \\\\\n& =180^{\\circ}-\\angle A B D+\\angle D C A \\\\\n& =180^{\\circ}-(\\angle A B C-\\angle D B C)+(\\angle D C B-\\angle A C B) \\\\\n& =180^{\\circ}-\\angle A B C-\\angle A C B+\\angle D B C+\\angle D C B \\\\\n& =\\angle B A C+180^{\\circ}-\\angle B D C .\n\\end{aligned}\n$$\n于是\n$$\n2 \\angle B D C=180^{\\circ}+\\angle B A C .\n$$\n故\n$$\n\\begin{aligned}\n\\angle B K C & =\\angle B K D+\\angle D K C \\\\\n& =2 \\cdot(\\angle E K D+\\angle D K F) \\\\\n& =2 \\cdot \\angle E K F \\\\\n& =2 \\cdot\\left(180^{\\circ}-\\angle B D C\\right) \\\\\n& =180^{\\circ}-\\angle B A C .\n\\end{aligned}\n$$\n因此 $K$ 在 $\\triangle A B C$ 的外接圆上.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4i2.png"
+    ]
+}

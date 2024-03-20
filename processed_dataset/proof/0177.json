@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例4. 证明: 方程\n$$\ny+y^2=x+x^2+x^3\n$$\n没有 $x \\neq 0$ 的整数解.",
+    "solution": "证明:设方程有 $x \\neq 0$ 的整数解, 将它分解为\n$$\n(y-x)(y+x+1)=x^3 . \\label{eq1}\n$$\n我们先证明 $(y-x, y+x+1)=1$. 若这不正确, 则有一个素数 $p$ 为 $y- x$ 与 $y+x+1$ 的一个公约数.\n由式\\ref{eq1}知 $p \\mid x^3$, 故素数 $p$ 整除 $x$, 结合 $p \\mid(y-x)$ 知 $p \\mid y$, 但 $p \\mid(x+y+1)$, 从而 $p \\mid 1$, 这不可能, 故式\\ref{eq1}的左边两因数互素.\n因式\\ref{eq1}的右边是一个完全立方, 从而有整数 $a 、 b$, 使得\n$$\ny-x=a^3, y+x+1=b^3, x=a b .\n$$\n消去 $x, y$ 得到\n$$\nb^3-a^3=2 a b+1 . \\label{eq2}\n$$\n现在证明方程式\\ref{eq2}无整数解, 由此便导出了矛盾.\n我们将式\\ref{eq2}分解为\n$$\n(b-a)\\left(b^2+a b+a^2\\right)=2 a b+1 . \\label{eq3}\n$$\n注意 $x=a b$ 而 $x \\neq 0$, 故 $a b \\neq 0$. 若 $a b>0$, 则由式\\ref{eq3}易知 $b-a>0$, 因 $a 、 b$ 为整数,故 $b-a \\geqslant 1$, 于是(3)的左边 $\\geqslant b^2+a b+a^2>3 a b>$ 右边; 若 $a b<0$, 则 $|b-a| \\geqslant 2$, 故式\\ref{eq3}的左边的绝对值 $\\geqslant 2\\left(a^2+b^2-|a b|\\right)>2|a b|$, 而式\\ref{eq3}的右边的绝对值 $<2|a b|$, 因此式\\ref{eq3}不能成立, 这就证明了问题中的方程没有 $x \\neq 0$ 的整数解.\n方程式\\ref{eq3}无解的论证, 采用了不等式估计 (左边的绝对值总大于右边的绝对值), 这就是所谓的估计法.\n(数论中的) 估计法往往需着眼于整数, 利用整数的各种性质产生适用的不等式.\n例如, 上述论证应用了整数的最基本的性质: 若整数 $x>0$, 则 $x \\geqslant 1$.",
+    "remark": "",
+    "figures": []
+}

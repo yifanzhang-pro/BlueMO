@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例1. 求证: 对任何实数 $x 、 y 、 z$,下述三个不等式不可能同时成立:\n$$\n|x|<|y-z|,|y|<|z-x|,|z|<|x-y| .\n$$",
+    "solution": "证明:用反证法,假设三个不等式都成立,那么则有\n$$\n\\left\\{\\begin{array}{l}\nx^2<(y-z)^2, \\\\\ny^2<(z-x)^2, \\\\\nz^2<(x-y)^2 .\n\\end{array}\\right.\n$$\n$\\left\\{\\begin{array}{l}(x-y+z)(x+y-z)<0, \\\\ (y-z+x)(y+z-x)<0, \\\\ (z-x+y)(z+x-y)<0 .\\end{array}\\right.$\n上面三个不等式相乘即得\n$$\n(x+y-z)^2(y+z-x)^2(z+x-y)^2<0 .\n$$\n矛盾!",
+    "remark": "",
+    "figures": []
+}

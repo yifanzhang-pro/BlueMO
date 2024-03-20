@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 设 $a>0$, 求证:\n$$\n\\sqrt{a+\\sqrt{2 a+\\sqrt{3 a+\\cdots+\\sqrt{n a}}}}<\\sqrt{a}+1 .\n$$",
+    "solution": "我们用归纳法来证: 当 $1 \\leqslant k \\leqslant n$ 时,\n$$\n\\sqrt{k a+\\sqrt{(k+1) a+\\cdots+\\sqrt{n a}}}<1+\\sqrt{k a} . \\label{(1)}\n$$\n当 $k=n$ 时, 上式显然成立.\n设 $\\sqrt{(k+1) a+\\sqrt{(k+2) a+\\cdots+\\sqrt{n a}}}<1+ \\sqrt{(k+1) a}$, 则 $\\sqrt{k a+\\sqrt{(k+1) a+\\cdots+\\sqrt{n a}}}<\\sqrt{k a+1+\\sqrt{(k+1) a}}<\\sqrt{k a+1+2 \\sqrt{k a}}=1+\\sqrt{k a}$.\n因此, (1)对一切 $k(1 \\leqslant k \\leqslant n)$ 成立.\n特别地, 当 $k=1$ 时有原不等式成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 已知图 $G$ 至少要 $k$ 笔才能画成, 删去一边后得到图 $G^{\\prime}$, 问 $G^{\\prime}$ 至少需要几笔才能画成?",
+    "solution": "设 $G$ 至少有 $2 k$ 个奇顶点, 删去一边得 $G^{\\prime}$, 有三种情况: (1) $G^{\\prime}$ 的奇顶点数少 2 个, 则 $G^{\\prime}$ 至少需 $k-1$ 笔画成; (2) $G^{\\prime}$ 的奇顶点数多 2 个, $G^{\\prime}$ 至少需 $k+1$ 笔画成; (3) $G^{\\prime}$ 的奇顶点数不变, $G^{\\prime}$ 至少需 $k$ 笔画成.",
+    "remark": "",
+    "figures": []
+}

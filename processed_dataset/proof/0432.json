@@ -1,0 +1,12 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例3. 判断如图(<FilePath:./images/volume12/figures/fig-c6i4.png>) 所示的图 $G$ 有无哈密顿链或哈密顿圈?",
+    "solution": "解:我们将图中某个顶点标上 $A$, 例如把点 $a$ 标上 $A$, 所有与 $a$ 相邻的点均标上 $B$, 连续不断地用 $A$ 标记所有与已标上 $B$ 相邻的点, 用 $B$ 标记所有与已标上 $A$ 的相邻的点.\n直到图中所有点标记完毕.\n如图(<FilePath:./images/volume12/figures/fig-c6i5.png>) 所示.\n如果这个图 $G$ 中有一条哈密顿链, 那么它必定交替通过点 $A$ 和点 $B$, 因而点 $A$ 的数目与点 $B$ 的数目相等或相差 1. 但是图(<FilePath:./images/volume12/figures/fig-c6i5.png>) 中点 $A$ 有 9 个, 点 $B$ 有 7 个, 两者相差为 2 ,因此不可能有一条哈密顿链.\n一般地, 对于一个偶图 $G=\\left(V_1, V_2, E\\right)$, 有一个简单的方法可以断定它没有哈密顿链或哈密顿圈.\n定理一在偶图 $G=\\left(V_1, V_2, E\\right)$ 中, 如果 $\\left|V_1\\right| \\neq\\left|V_2\\right|$, 那么 $G$ 一定无哈密顿圈.\n如果 $\\left|V_1\\right|$ 与 $\\left|V_2\\right|$ 的差大于 1 , 那么 $G$ 一定无哈密顿链.\n可以采用同例 3 完全相同的方法证明.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c6i4.png",
+        "./images/volume12/figures/fig-c6i5.png",
+        "./images/volume12/figures/fig-c6i5.png"
+    ]
+}

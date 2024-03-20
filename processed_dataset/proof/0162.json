@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例3. 记 $F_k=2^{2^k}+1, k \\geqslant 0$. 证明: 若 $m \\neq n$, 则 $\\left(F_m, F_n\\right)=1$.",
+    "solution": "证明:不妨设 $m>n$. 论证的关键是利用 $F_n \\mid\\left(F_m-2\\right)$ (见第 1 单元例 $2)$, 即有一个整数 $x$, 使得\n$$\nF_m+x F_n=2 .\n$$\n设 $d=\\left(F_m, F_n\\right)$, 则由上式推出 $d \\mid 2$, 所以 $d=1$ 或 2 . 但 $F_n$ 显然是奇数,故必须 $d=1$.",
+    "remark": "注:$F_k(k \\geqslant 0)$ 称为费马 (Fermat) 数.\n例 3 表明,费马数两两互素, 这是费马数的一个有趣的基本性质.",
+    "figures": []
+}

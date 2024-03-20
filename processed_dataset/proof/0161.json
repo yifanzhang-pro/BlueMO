@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $n$ 是正整数,证明 $(n !+1,(n+1) !+1)=1$.",
+    "solution": "证明:我们有等式\n$$\n(n !+1)(n+1)-((n+1) !+1)=n . \\label{eq1}\n$$\n设 $d=(n !+1,(n+1) !+1)$, 则由 式\\ref{eq1} 知 $d \\mid n$.\n进一步,因 $d \\mid n$ 故 $d \\mid n !$, 结合 $d \\mid(n !+1)$ 可知 $d \\mid 1$, 故 $d=1$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-2.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $p(x)$ 是一个 $n$ 次实系数多项式, $a$ 是一个不小于 3 的实数.\n证明:下面的 $n+2$ 个数中至少有一个数不小于 1 .\n$$\n\\left|a^0-p(0)\\right|,\\left|a^1-p(1)\\right|, \\cdots,\\left|a^{n+1}-p(n+1)\\right| .\n$$",
+    "solution": "证明:对 $p(x)$ 的次数 $n$ 进行归纳.\n当 $n=0$ 时, $p(x)$ 是常数多项式, 设 $p(x)=c$, 此时, 由 $|1-c|+\\mid a- c|\\geqslant| a-1 \\mid \\geqslant 2$, 可知 $\\max \\{|1-c|,|a-c|\\} \\geqslant 1$, 即命题对 $n=0$ 成立.\n假设命题对所有次数小于 $n$ 的多项式都成立, 考虑次数为 $n$ 的多项式 $p(x)$.\n令 $f(x)=\\frac{1}{a-1}[p(x+1)-p(x)]$, 则 $f(x)$ 的次数 $\\leqslant n-1$. 由归纳假设知, 存在 $m \\in\\{0,1,2, \\cdots, n\\}$, 使得 $\\left|a^m-f(m)\\right| \\geqslant 1$, 即 $\\mid a^m-\\frac{1}{a-1}[p(m+$ 1) $-p(m)] \\mid \\geqslant 1$. 故\n$$\n\\left|a^{m+1}-p(m+1)+p(m)-a^m\\right| \\geqslant a-1 \\geqslant 2,\n$$\n从而 $\\max \\left\\{\\left|a^{m+1}-p(m+1)\\right|,\\left|a^m-p(m)\\right|\\right\\} \\geqslant 1$, 即存在 $r \\in\\{0,1,2, \\cdots$, $n+1\\}$, 使得 $\\left|a^r--p(r)\\right| \\geqslant 1$, 命题对 $n$ 成立.\n综上可知, 对任意次数为 $n$ 的多项式 $p(x)$, 命题都成立.\n说明在对多项式的次数用数学归纳法时, 常采用第二数学归纳法的形式,因为首项系数相同的两个 $n$ 次多项式之差的次数不一定是 $n-1$ 次, 但一定是一个次数小于 $n$ 的多项式.\n运用第二数学归纳法处理时就避开了讨论.",
+    "remark": "",
+    "figures": []
+}

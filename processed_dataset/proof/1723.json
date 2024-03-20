@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例1. 已知六边形 $A C_1 B A_1 C B_1$ 中, $A C_1=A B_1, B C_1=B A_1, C A_1= C B_1, \\angle A+\\angle B+\\angle C=\\angle A_1+\\angle B_1+\\angle C_1$.\n求证: $\\triangle A B C$ 面积是六边形 $A C_1 B A_1 C B_1$ 的一半.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c6i1.png>), 旋转 $\\triangle B C A_1$ 至 $B A_1^{\\prime} C_1$, 则 $\\triangle B C A_1 \\cong \\triangle B A_1^{\\prime} C_1$, 显然 $\\angle A C_1 B+\\angle B A_1 C+ \\angle C B_1 A=360^{\\circ}, \\angle A C_1 B+\\angle B C_1 A_1^{\\prime}+\\angle A C_1 A_1^{\\prime}= 360^{\\circ}$, 所以 $\\angle A C_1 B=\\angle A C_1 A_1^{\\prime}$.\n又 $C_1 A_1^{\\prime}=C A_1=B_1 C, A C_1=A B_1$, 则 $\\triangle A C_1 A_1^{\\prime} \\cong \\triangle A B_1 C$.\n又 $A A_1^{\\prime}=A C, A_1^{\\prime} B=B C, A B=A B$, 所以 $\\triangle A B C \\cong \\triangle A B A_1^{\\prime}$.\n故 $S_{\\triangle A B C}=S_{\\triangle A B A_1^{\\prime}}=S_{\\triangle A C_1 B}+S_{\\triangle A B_1 C}+S_{\\triangle B C A_1} \\Rightarrow S_{\\triangle A B C}=\\frac{1}{2} S_{A C_1 B A_1 C B_1}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6i1.png"
+    ]
+}

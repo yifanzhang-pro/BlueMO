@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise13.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. $A, B$ 两人轮流掷一个骰子, 第一次由 $A$ 先掷, 若 $A$ 掷到一点, 下次仍由 $A$ 掷.\n若 $A$ 掷不到一点, 下次换 $B$ 掷, 对 $B$ 同样适用规则.\n如此依次投掷, 记第 $n$ 次由 $A$ 掷的概率为 $A_n$. 求 $A_n$.",
+    "solution": "我们建立 $A_{n+1}$ 与 $A_n$ 之间的关系.\n第 $n$ 次可能由 $A$ 来掷, 也可能由 $B$ 来掷, 第 $n$ 次若由 $A$ 来掷, 则第 $n+1$ 次仍由 $A$ 来掷, 这样的事件发生的概率是 $\\frac{1}{6} A_n$, 若第 $n$ 次由 $B$ 来掷 (这样的概率是 $1-A_n$ ), 则第 $n+1$ 次由 $A$ 来掷, 这样的事件发生的概率是 $\\frac{5}{6}\\left(1-A_n\\right)$.\n故 $A_{n+1}=\\frac{1}{6} A_n+\\frac{5}{6}\\left(1-A_n\\right)=\\frac{5}{6}-\\frac{2}{3} A_n$, 且 $A_1=1$. 易得\n$$\nA_n=\\frac{1}{2}\\left(1+\\left(-\\frac{2}{3}\\right)^{n-1}\\right) \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

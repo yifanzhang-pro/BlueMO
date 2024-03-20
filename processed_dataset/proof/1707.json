@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例5. 如图(<FilePath:./images/volume7/figures/fig-c4i6.png>), 给定锐角三角形 $A B C, O$ 为外心, 直线 $A O$ 交边 $B C$ 于 $D$, 动点 $E 、 F$ 在 $A B 、 A C$ 上, 使得 $A 、 E 、 D 、 F$ 四点共圆.\n求证: 线段 $E F$ 在 $B C$ 上的投影为恒定长度.",
+    "solution": "证明:取 $A B$ 上一点 $E^{\\prime}, A C$ 上一点 $F^{\\prime}$ 满足 $A 、 E^{\\prime} 、 D 、 F^{\\prime}$ 四点共圆.\n下面证明: $E F$ 在 $B C$ 上的投影长度等于 $E^{\\prime} F^{\\prime}$ 在 $B C$ 上的投影长度, 由正弦定理,\n$$\n\\begin{aligned}\n\\frac{D E}{D F} & =\\frac{\\sin \\angle E F D}{\\sin \\angle D E F} \\\\\n& =\\frac{\\sin \\angle E A D}{\\sin \\angle D A F} \\\\\n& =\\frac{\\sin \\left(\\frac{\\pi}{2}-C\\right)}{\\sin \\left(\\frac{\\pi}{2}-B\\right)} \\\\\n& =\\frac{\\cos C}{\\cos B},\n\\end{aligned}\n$$\n连结 $D E 、 D E^{\\prime} 、 D F 、 D F^{\\prime}$, 则 $\\angle D E^{\\prime} B=\\angle D F^{\\prime} A, \\angle D E B=\\angle D F A$, 所以 $\\triangle D E E^{\\prime} \\backsim \\triangle D F F^{\\prime}$, 于是 $\\frac{E E^{\\prime}}{F F^{\\prime}}=\\frac{D E}{D F}=\\frac{\\cos C}{\\cos B}$, 即 $E E^{\\prime} \\cdot \\cos B=F F^{\\prime} \\cdot \\cos C$, 故 $E F$ 在 $B C$ 上的投影长度 $=A E$ 在 $B C$ 上的投影长度 $+A F$ 在 $B C$ 上的投影长度\n$$\n\\begin{aligned}\n= & A E \\cdot \\cos B+A F \\cdot \\cos C=A E \\cdot \\cos B+A F \\\\\n& \\cdot \\cos C+E E^{\\prime} \\cdot \\cos B-F F^{\\prime} \\cdot \\cos C \\\\\n= & A E^{\\prime} \\cdot \\cos B+A F^{\\prime} \\cdot \\cos C \\\\\n= & E^{\\prime} F^{\\prime} \\text { 在 } B C \\text { 上的投影长度, 为与 } E 、 F \\text { 具体位 }\n\\end{aligned}\n$$\n$=E^{\\prime} F^{\\prime}$ 在 $B C$ 上的投影长度, 为与 $E 、 F$ 具体位置无关的常数.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4i6.png"
+    ]
+}

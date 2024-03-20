@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题7. 在一个非钝角 $\\triangle A B C$ 中, $A B>A C, \\angle B=45^{\\circ}, O$ 和 $I$ 分别是 $\\triangle A B C$ 的外心和内心, 且 $\\sqrt{2} O I=A B-A C$. 求 $\\sin A$.",
+    "solution": "解:由已知条件及 Euler 公式得 $\\left(\\frac{c-b}{\\sqrt{2}}\\right)^2=O I^2=R^2-2 R r \\cdots$ (1). 再由熟知的几何关系得 $r=\\frac{c+a-b}{2} \\tan \\frac{B}{2}=\\frac{c+a-b}{2} \\tan \\frac{\\pi}{8}= \\frac{\\sqrt{2}-1}{2}(c+a-b) \\cdots(2)$.\n由(1)和(2)及正弦定理 $\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}=2 R$ 得, $1-2(\\sin C-\\sin B)^2= 2(\\sin A+\\sin C-\\sin B)(\\sqrt{2}-1)$. 因为 $\\angle B=\\frac{\\pi}{4}, \\sin B=\\frac{\\sqrt{2}}{2}, \\sin C= \\sin \\left(\\frac{3 \\pi}{4}-\\angle A\\right)=\\frac{\\sqrt{2}}{2}(\\sin A+\\cos A)$. 所以, $2 \\sin A \\cos A-(2-\\sqrt{2}) \\sin A- \\sqrt{2} \\cos A+\\sqrt{2}-1=0,(\\sqrt{2} \\sin A-1)(\\sqrt{2} \\cos A-\\sqrt{2}+1)=0$. 于是, $\\sin A= \\frac{\\sqrt{2}}{2}$ 或 $\\cos A=1-\\frac{\\sqrt{2}}{2}$ (这时 $\\sin A=\\sqrt{1-\\cos ^2 A}=\\sqrt{1-\\left(1-\\frac{\\sqrt{2}}{2}\\right)^2}=\\sqrt{\\sqrt{2}-\\frac{1}{2}}$\n总之,或 $\\sin A=\\frac{\\sqrt{2}}{2}$ 或 $\\sin A=\\sqrt{\\sqrt{2}-\\frac{1}{2}}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise8.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 设 $n \\geqslant 2$ 为正整数, 问存在多少个 $\\{1,2, \\cdots, n\\}$ 的排列 $\\left\\{a_1, a_2, \\cdots, a_n\\right\\}$ 满足 $i$ 整除 $a_i-a_{i+1}(i=1,2, \\cdots, n-1)$, 并求出一切这种排列.",
+    "solution": "将符合题目条件的排列 $\\left\\{a_1, a_2, \\cdots, a_n\\right\\}$ 称为长度等于 $n$ 的好排列, 并设其个数为 $S_n$. 因为 $n-1 \\mid a_{n-1}-a_n$ 又 $\\left|a_{n-1}-a_n\\right| \\leqslant n-1$, 故只有 $\\left|a_{n-1}-a_n\\right|=n-1$,\n所以 $\\left(a_{n-1}, a_n\\right)$ 只可能为 $(1, n)$ 或 $(n, 1)$. 当 $\\left(a_{n-1}, a_n\\right)=(1, n)$ 时, $\\left(a_1, a_2, \\cdots\\right.$, $\\left.a_{n-1}\\right)$ 是长度等于 $n-1$ 的好排列; 当 $\\left(a_{n-1}, a_n\\right)=(n, 1)$ 时, $\\left(a_1-1, a_2-1, \\cdots\\right.$, $\\left.a_{n-1}-1\\right)$ 是长度为 $n-1$ 的好排列, 可见每一个长度为 $n$ 的好排列对应于一个长度为 $n-1$ 的好排列, 反之亦然, 上述对应是一一对应, 所以 $S_n=S_{n-1}$. 而 $S_2=2$ (因 $\\{1,2\\}$ 的好排列有 2 个: $(1,2)$ 和 $(2,1))$, 故对一切 $n \\in \\mathbf{N}_{+}, n \\geqslant 2$ 符合条件的排列个数都为 $S_n=2$. 当 $n=2 m$ 时长为 $2 m$ 的好排列有下列 2 个: $(m, m+1, m-1$, $m+2, m-2, m+3, \\cdots, 2,2 m-1,1,2 m)$ 与 $(m+1, m, m+2, m-1, m+3$, $m-2, \\cdots, 2 m-1,2,2 m, 1)$. 当 $n=2 m+1$ 时长为 $2 m+1$ 的好排列有下列 2 个: $(m+1, m, m+2, m-1, m+3, m-2, \\cdots, 2,2 m, 1,2 m+1)$ 与 $(m+1, m+ 2, m, m+3, m-1, m+4, \\cdots, 2 m, 2,2 m+1,1)$.",
+    "remark": "",
+    "figures": []
+}

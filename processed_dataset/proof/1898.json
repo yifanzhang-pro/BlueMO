@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 已知圆 $W$ 是等边 $\\triangle A B C$ 的外接圆, 设圆 $W$ 与圆 $W_1$ 外切且切点异于点 $A 、 B 、 C$, 点 $A_1 、 B_1 、 C_1$ 在圆 $W_1$ 上, 且使得 $A A_1 、 B B_1 、 C C_1$ 与圆 $W_1$ 相切.\n证明: 线段 $A A_1 、 B B_1 、 C C_1$ 中的一线段的长度等于另两线段长度之和.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c7a2.png>), 设 $r 、 r_1$ 分别是圆 $W$ 、圆 $W_1$ 的半径.\n不失一般性, 设圆 $W$ 和圆 $W_1$ 的切点位于 $A B$ 间靠近 $A$ 的一边.\n记 $O 、 O_1$ 分别是圆 $W$ 、圆 $W_1$ 的圆心.\n设 $\\angle O_1 O A=\\alpha$, 则 $\\angle O_1 O B=120^{\\circ}-\\alpha$, $\\angle O_1 O C=120^{\\circ}+\\alpha$. 由余弦定理得 $A A_1^2=A O_1^2- r_1^2=r^2+\\left(r+r_1\\right)^2-2 r\\left(r+r_1\\right) \\cos \\alpha-r_1^2=2 r(r+\\left.r_1\\right)(1-\\cos \\alpha)=4 \\cdot \\sin ^2 \\frac{\\alpha}{2} \\cdot r\\left(r+r_1\\right)$. 注意到 $0<\\alpha<120^{\\circ}$, 所以, $A A_1= 2 \\sin \\frac{\\alpha}{2} \\cdot \\sqrt{r\\left(r+r_1\\right)}$. 同理, $B B_1=2 \\sin \\left(60^{\\circ}-\\frac{\\alpha}{2}\\right) \\cdot \\sqrt{r\\left(r+r_1\\right)}, C C_1= 2 \\sin \\left(60^{\\circ}+\\frac{\\alpha}{2}\\right) \\cdot \\sqrt{r\\left(r+r_1\\right)}$. 因此, $A A_1+B B_1=2 \\sqrt{r\\left(r+r_1\\right)}\\left[\\sin \\frac{\\alpha}{2}+\\right.$\n$$\n\\left.\\sin \\left(60^{\\circ}-\\frac{\\alpha}{2}\\right)\\right]=2 \\sqrt{r\\left(r+r_1\\right)} \\sin \\left(60^{\\circ}+\\frac{\\alpha}{2}\\right)=O C_1 .\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c7a2.png"
+    ]
+}

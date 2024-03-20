@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter9.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 用 $1 \\times 1,2 \\times 2,3 \\times 3$ 的瓷砖铺满 $23 \\times 23$ 的地(不允许重叠,也不留空隙), 问最少要用几块 $1 \\times 1$ 的瓷砖?(假设每块瓷砖不允许分割成小的瓷砖)",
+    "solution": "解:将 $23 \\times 23$ 的方格地面 (已画成 $1 \\times 1$ 的小方格) 中第 $1,4,7, \\cdots$, 19,22 列中小方格染成黑色,其余各列中小方格染成白色,则每块 $2 \\times 2$ 的瓷砖或盖住了 2 个白色方格和 2 个黑色方格或盖住了 4 个白色方格,而每块 $3 \\times$ 3 的瓷砖盖住了 3 个黑色方格和 6 个白色方格, 如果不用 $1 \\times 1$ 的瓷砖, 无论用多少块 $2 \\times 2$ 和 $3 \\times 3$ 的瓷砖,盖住的白色方格数总是一个偶数,但一共有 $15 \\times$ 23 个白色方格, 而 $15 \\times 23$ 是一个奇数,矛盾, 故不用 $1 \\times 1$ 的瓷砖不可能将 $23 \\times 23$ 的正方形铺满.\n其次,如图(<FilePath:./images/volume11/figures/fig-c9i1.png>) 表明用 $2 \\times 2$ 和 $3 \\times 3$ 的瓷砖可铺满 $12 \\times 11$ 的矩形,如图(<FilePath:./images/volume11/figures/fig-c9i2.png>) 表明只要用 1 块 $1 \\times 1$ 的瓷砖可将 $23 \\times 23$ 的正方形铺满.\n综上可知,最少要用 1 块 $1 \\times 1$ 的瓷砖.",
+    "remark": "",
+    "figures": [
+        "./images/volume11/figures/fig-c9i1.png",
+        "./images/volume11/figures/fig-c9i2.png"
+    ]
+}

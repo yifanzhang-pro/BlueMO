@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题22 已知 $f(x)=2 \\sin \\left(x+\\frac{\\theta}{2}\\right) \\cos \\left(x+\\frac{\\theta}{2}\\right)+2 \\sqrt{3} \\cos ^2\\left(x+\\frac{\\theta}{2}\\right)-\\sqrt{3}$.\n(1) 化简 $f(x)$ 的解析式;\n(2) 若 $0 \\leqslant \\theta \\leqslant \\pi$, 求 $\\theta$ 值,使函数 $f(x)$ 为偶函数;\n(3) 在 (2) 的条件下,求满足 $f(x)=1$ 在 $[-\\pi, \\pi]$ 上的 $x$ 集合.",
+    "solution": "(1) $f(x)=\\sin (2 x+\\theta)+\\sqrt{3} \\cos (2 x+\\theta)=2 \\cos \\left(2 x+\\theta-\\frac{\\pi}{6}\\right)$.\n(2) 要使 $f(x)$ 为偶函数, 只要满足 $\\theta-\\frac{\\pi}{6}=k \\pi$, 又 $0 \\leqslant \\theta \\leqslant \\pi$, 所以 $\\theta=\\frac{\\pi}{6}$.\n(3) 由 $f(x)=2 \\cos 2 x=1$, 得 $2 x=2 k \\pi \\pm \\frac{\\pi}{3}$, 因为 $x \\in[-\\pi, \\pi]$, 所以解集为 $\\left\\{x \\mid x= \\pm \\frac{5 \\pi}{6}, \\pm \\frac{\\pi}{6}\\right\\}$.",
+    "remark": "",
+    "figures": []
+}

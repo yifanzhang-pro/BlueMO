@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例2-2. 把 $1,2, \\cdots, 10$ 按任意次序排成一个圆圈.\n证明:一定可以找到三个相邻的数,它们的和不大于 15 .",
+    "solution": "证明:设这 10 个数在圆周上排列为 $10, b_1, b_2 \\cdots, b_9$ (如图(<FilePath:./images/volume14/figures/fig-c4i2.png>)). 由于\n$$\n\\left(b_1+b_2+b_3\\right)+\\left(b_4+b_5+b_6\\right)+\\left(b_7+b_8+b_9\\right)=1+2+\\cdots+9=45 \\text {, }\n$$\n所以, $b_1+b_2+b_3, b_4+b_5+b_6, b_7+b_8+b_9$ 这三个数中一定有一个数不大于 $\\frac{45}{3}=15$.",
+    "remark": "注:本例运用的是与抽屉原理本质相同的\"平均数原理\".",
+    "figures": [
+        "./images/volume14/figures/fig-c4i2.png"
+    ]
+}

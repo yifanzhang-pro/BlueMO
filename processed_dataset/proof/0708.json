@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例1-2. 已知集合 $S=\\{1,2, \\cdots, 100\\}$. 试证明:\n(2) 若 $B$ 是 $S$ 的 $n$ 元子集 $(2 \\leqslant n \\leqslant 100)$, 则必存在 $i, j \\in B$, 使得\n$$\n0<i-j<\\frac{100}{n-1}\n$$",
+    "solution": "证明:记 $\\frac{99}{n-1}=\\alpha$, 令 $B_k=\\{x \\in S \\mid 1+(k-1) \\alpha \\leqslant x \\leqslant 1+k \\alpha\\}, k=1$, $2, \\cdots, n-1$.\n由于 $\\bigcup_{k=1}^{n-1} B_k=S$, 根据抽屉原理, $n$ 元集合 $B$ 中必存在两个元素 $i, j(i>$ j) 属于同一个 $B_k$, 从而 $0<i-j \\leqslant \\alpha<\\frac{100}{n-1}$. 故结论成立.",
+    "remark": "",
+    "figures": []
+}

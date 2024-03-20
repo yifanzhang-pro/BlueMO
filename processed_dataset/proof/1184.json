@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 设 $x_1, x_2, \\cdots, x_n>0$, 且 $x_1 x_2 \\cdots x_n=1$. 求证: $\\frac{1}{x_1\\left(1+x_1\\right)}+\\frac{1}{x_2\\left(1+x_2\\right)} +\\cdots+\\frac{1}{x_n\\left(1+x_n\\right)} \\geqslant \\frac{n}{2}$.",
+    "solution": "证明: 显然原不等式等价于 $\\frac{1+x_1+x_1^2}{x_1\\left(1+x_1\\right)}+\\frac{1+x_2+x_2^2}{x_2\\left(1+x_2\\right)}+\\cdots+ \\frac{1+x_n+x_n^2}{x_n\\left(1+x_n\\right)} \\geqslant \\frac{3 n}{2}$. 注意到 $4\\left(1+x_i+x_i^2\\right) \\geqslant 3\\left(1+x_i\\right)^2$ 对任意的 $i=1,2, \\cdots$, $n$ 都成立, 因此要证明上式只需证明 $\\frac{3}{4}\\left(\\frac{1+x_1}{x_1}+\\frac{1+x_2}{x_2}+\\cdots+\\frac{1+x_n}{x_n}\\right) \\geqslant \\frac{3 n}{2}$, 即 $\\frac{1}{x_1}+\\frac{1}{x_2}+\\cdots+\\frac{1}{x_n} \\geqslant n \\cdots$ (3). 由 $x_1 x_2 \\cdots x_n=1$ 及均值不等式易知(3) 成立.",
+    "remark": "",
+    "figures": []
+}

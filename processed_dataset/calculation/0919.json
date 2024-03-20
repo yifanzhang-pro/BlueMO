@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise11.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 设 $A 、 B 、 C$ 为单位圆上的三个不同的点, $G 、 H$ 分别为 $\\triangle A B C$ 的重心、垂心.\n若 $F$ 为线段 $G H$ 的中点, 求 $|\\overrightarrow{A F}|^2+|\\overrightarrow{B F}|^2+|\\overrightarrow{C F}|^2$ 的值.",
+    "solution": "解:\n显然 $\\overrightarrow{O H}=\\overrightarrow{O A}+\\overrightarrow{O B}+\\overrightarrow{O C}, \\overrightarrow{O G}=\\frac{1}{3}(\\overrightarrow{O A}+\\overrightarrow{O B}+\\overrightarrow{O C})$.\n则 $\\overrightarrow{O F}=\\frac{\\overrightarrow{O G}+\\overrightarrow{O H}}{2}=\\frac{2}{3}(\\overrightarrow{O A}+\\overrightarrow{O B}+\\overrightarrow{O C})$.\n故 $|\\overrightarrow{A F}|^2+|\\overrightarrow{B F}|^2+|\\overrightarrow{C F}|^2=(\\overrightarrow{O A}-\\overrightarrow{O F}) \\cdot(\\overrightarrow{O A}-\\overrightarrow{O F})+(\\overrightarrow{O B}- \\overrightarrow{O F}) \\cdot(\\overrightarrow{O B}-\\overrightarrow{O F})+(\\overrightarrow{O C}-\\overrightarrow{O F}) \\cdot(\\overrightarrow{O C}-\\overrightarrow{O F})=|\\overrightarrow{O A}|^2+|\\overrightarrow{O B}|^2+ |\\overrightarrow{O C}|^2-2(\\overrightarrow{O A}+\\overrightarrow{O B}+\\overrightarrow{O C}) \\cdot \\overrightarrow{O F}+3 \\overrightarrow{O F} \\cdot \\overrightarrow{O F}=|\\overrightarrow{O A}|^2+|\\overrightarrow{O B}|^2+ |\\overrightarrow{O C}|^2-[2(\\overrightarrow{O A}+\\overrightarrow{O B}+\\overrightarrow{O C})-3 \\overrightarrow{O F}] \\cdot \\overrightarrow{O F}=|\\overrightarrow{O A}|^2+|\\overrightarrow{O B}|^2+|\\overrightarrow{O C}|^2=3$.",
+    "remark": "",
+    "figures": []
+}

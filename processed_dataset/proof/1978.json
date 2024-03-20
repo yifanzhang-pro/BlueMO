@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 求证: $[(2 a-b-c)+(b-c) \\sqrt{3} \\mathrm{i}]^3=[(2 b-c-a)+(c-a) \\sqrt{3} \\mathrm{i}]^3$.",
+    "solution": "设 $\\omega=-\\frac{1}{2}+\\frac{\\sqrt{3}}{2} \\mathrm{i}$, 则 $\\omega^3=1$.\n$$\n\\begin{aligned}\n\\text { 左边 } & =[2 a+b(-1+\\sqrt{3} \\mathrm{i})+c(-1-\\sqrt{3} \\mathrm{i})]^3=[2 a+2 b \\omega+2 c \\bar{\\omega}]^3, \\\\\n\\text { 右边 } & =[a(-1-\\sqrt{3} \\mathrm{i})+2 b+c(-1+\\sqrt{3} \\mathrm{i})]^3=(2 a \\bar{\\omega}+2 b+2 c \\omega)^3 \\\\\n& =\\left[\\bar{\\omega}\\left(2 a+2 b \\omega+2 c \\omega^2\\right)\\right]^3=(2 a+2 b \\omega+2 c \\bar{\\omega})^3 .\n\\end{aligned}\n$$\n所以左边 $=$ 右边, 等式成立, 证毕.",
+    "remark": "",
+    "figures": []
+}

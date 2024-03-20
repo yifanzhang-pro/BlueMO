@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "text": "函数的选代\n6.1 函数迭代的定义我们利用了一个函数自身复合多次.\n这便是函数的迭代.\n定义 6.1 设 $f: D \\mapsto D$ 是一个函数, 对任意 $x \\in D$, 记\n$$\n\\begin{aligned}\n& f^{(0)}(x)=x, \\\\\n& f^{(1)}(x)=f(x), \\\\\n& f^{(2)}(x)=f(f(x)), \\\\\n& f^{(3)}(x)=f(f(f(x))),\n\\end{aligned}\n$$\n$$\nf^{(n+1)}(x)=f\\left(f^{(n)}(x)\\right),\n$$\n则称 $f^{(n)}(x)$ 是函数 $f(x)$ 在 $D$ 上的 $n$ 次迭代, 并称 $n$ 是 $f^{(n)}(x)$ 的迭代指数.\n如果 $f^{(n)}(x)$ 有反函数, 则记为 $f^{(-n)}(x)$, 于是, 迭代指数可取所有整数.\n求一个函数的 $n$ 次迭代, 是数学竞赛中的一种基本题型.\n对于一些简单的函数, 它的 $n$ 次迭代是容易得到的.\n若 $f(x)=x+c$, 则 $f^{(n)}(x)=x+n c, f^{-1}(x)=x \\div c, f^{(\\rightarrow n)}(x)=x-n c$.\n若 $f(x)=x^3$, 则 $f^{(n)}(x)=x^{3^n}, f^{(-1)}(x)=x^{\\frac{1}{3}}, f^{(-n)}(x)=x^{\\frac{1}{3^n}}$.\n若 $f(x)=a x+b$, 则 $f^{(n)}(x)=a^n\\left(x-\\frac{b}{1-a}\\right)+\\frac{b}{1-a}, f^{(-1)}(x)= \\frac{1}{a}\\left(x-\\frac{b}{1-a}\\right)+\\frac{b}{1-a}, f^{(-n)}(x)=\\frac{1}{a^n}\\left(x-\\frac{b}{1-a}\\right)+\\frac{b}{1-a}$.",
+    "figures": []
+}

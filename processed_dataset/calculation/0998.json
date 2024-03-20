@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 设 $I$ 是 $\\triangle A B C$ 的内心.\n记 $\\triangle I B C 、 \\triangle I C A 、 \\triangle I A B$ 的内切圆半径分别为 $r_1 、 r_2 、 r_3$, 则\n$$\n3 \\sqrt{3}(2-\\sqrt{3}) r \\leqslant r_1+r_2+r_3 \\leqslant \\frac{3 \\sqrt{3}(2-\\sqrt{3})}{2} R,\n$$\n这里 $r 、 R$ 分别是 $\\triangle A B C$ 的内切圆半径和外接圆半径.",
+    "solution": "提示: 需要用到如下三角形不等式 $\\sin \\alpha \\sin \\beta \\sin \\gamma \\leqslant \\frac{3 \\sqrt{6}-5 \\sqrt{2}}{16} \\cdot \\cos (\\beta+ \\gamma) \\cos \\alpha+\\cos (\\gamma+\\alpha) \\cos \\beta+\\cos (\\alpha+\\beta) \\cos \\gamma \\leqslant \\frac{3 \\sqrt{6}+9 \\sqrt{2}}{8}, \\tan \\alpha \\cdot \\tan \\beta+ \\tan \\beta \\tan \\gamma+\\tan \\gamma \\tan \\alpha \\leqslant 3(7-4 \\sqrt{3})$, 其中 $A=4 \\alpha, B=4 \\beta, C=4 \\gamma$.",
+    "remark": "",
+    "figures": []
+}

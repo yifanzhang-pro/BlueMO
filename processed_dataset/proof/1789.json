@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 设 $A B C D E F$ 是凸六边形, 且 $A B=B C, C D=D E, E F=F A$, 证明: $\\frac{B C}{B E}+\\frac{D E}{D A}+\\frac{F A}{F C} \\geqslant \\frac{3}{2}$, 并指出等号成立的条件.",
+    "solution": "证明: 记 $A C=a, C E=b, A E=c$, 对四边形 $A C E F$ 运用 Ptolemy 不等式得 $A C \\cdot E F+C E \\cdot A F \\geqslant A E \\cdot C F$. 因为 $E F=A F$, 所以 $\\frac{F A}{F C} \\geqslant \\frac{c}{a+b}$. 同理 $\\frac{D E}{D A} \\geqslant \\frac{b}{c+a}, \\frac{B C}{B E} \\geqslant \\frac{a}{b+c}$. 故 $\\frac{B C}{B E}+\\frac{D E}{D A}+\\frac{F A}{F C} \\geqslant \\frac{a}{b+c}+\\frac{b}{c+a}+\\frac{c}{a+b}$, 令 $b+ c=x, c+a=y, a+b=z$, 则 $G=\\frac{y+z-x}{2}, b=\\frac{z+x-y}{2}, c=\\frac{x+y-z}{2}$, $\\frac{a}{b+c}+\\frac{b}{c+a}+\\frac{c}{a+b}=\\frac{1}{2}\\left(\\frac{y}{x}+\\frac{z}{x}+\\frac{z}{y}+\\frac{x}{y}+\\frac{x}{z}+\\frac{y}{z}-3\\right) \\geqslant \\frac{3}{2}$. 等号成立的条件为 $A B C D E F$ 是圆内接六边形且 $a=b=c$.",
+    "remark": "",
+    "figures": []
+}

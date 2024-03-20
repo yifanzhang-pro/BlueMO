@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例5. 如图(<FilePath:./images/volume7/figures/fig-c6i5.png>), 以 $B_0 、 B_1$ 为焦点的椭圆与 $\\triangle A B_0 B_1$ 的边 $A B_i$ 交于 $C_i(i=0,1)$. 在 $A B_0$ 的延长线上任取点 $P_0$, 以 $B_0$ 为圆心、 $B_0 P_0$ 为半径作圆弧 $\\overparen{P_0 Q_0}$ 交 $C_1 B_0$ 的延长线于点 $Q_0$; 以 $C_1$ 为圆心 $C_1 Q_0$ 为半径作圆弧 $\\overparen{Q_0 P_1}$ 交 $B_1 A$ 的延长线于点 $P_1$; 以 $B_1$ 为圆心 $B_1 P_1$ 为半径作圆弧 $\\overparen{P_1 Q_1}$ 交 $B_1 C_0$ 的延长线于点 $Q_1$; 以 $C_0$ 为圆心、 $C_0 Q_1$ 为半径作圆弧 $Q_1 P_0^{\\prime}$ 交 $A B_0$ 的延长线于 $P_0^{\\prime}$. 求证:\n(1) 点 $P_0^{\\prime}$ 与点 $P_0$ 重合, 且圆弧 $\\overparen{P_0 Q_0}$ 与 $\\overparen{P_0 Q_1}$ 相内切于点 $P_0$ ;\n(2) $P_0 、 Q_0 、 Q_1 、 P_1$ 四点共圆.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c6i5.png>), $\\angle Q_0 B_0 P_0$ 的角平分线与 $\\angle A C_1 B_0$ 的角平分线的交点 $O$ 即为由点 $P_0$ 到点 $P_1$ 的旋转变换的旋转中心, 旋转角度为 $\\angle P_0 B_0 Q_0+ \\angle Q_0 C_1 P_1$, 且 $O P_0=O P_1$.\n同理, $\\angle P_1 B_1 Q_1$ 的角平分线与 $\\angle Q_1 C_0 P_0^{\\prime}$ 的角平分线的交点 $O^{\\prime}$ 即为由点 $P_1$ 到点 $P_0^{\\prime}$ 的旋转变换的旋转中心, 旋转角度为 $\\angle P_1 B_1 Q_1+\\angle Q_1 C_0 P_0^{\\prime}$, 且\n$O^{\\prime} P_1=O^{\\prime} P_0^{\\prime}$.\n于是, 有 $\\angle P_0 B_0 Q_0+\\angle Q_0 C_1 P_1=\\pi-\\angle A=\\angle P_1 B_1 Q_1+\\angle Q_1 C_0 P_0^{\\prime}$.\n设点 $O 、 O^{\\prime}$ 在 $A B_1$ 上的投影分别为 $D 、 D^{\\prime}$, 则 $A D=\\frac{A C_1+A B_0-B_0 C_1}{2}$, $A D^{\\prime}=\\frac{A B_1+A C_0-B_1 C_0}{2}$.\n由于 $B_1 C_1+B_0 C_1=B_1 C_0+B_0 C_0$, 所以, $A D=A D^{\\prime}$, 即 $D$ 与 $D^{\\prime}$ 重合.\n又因为点 $O 、 O^{\\prime}$ 均在 $\\angle B_1 A B_0$ 的角平分线上, 所以 $O$ 与 $O^{\\prime}$ 重合.\n从而点 $P_0$ 与点 $P_0^{\\prime}$ 重合, 圆弧 $\\overparen{P_0 Q_0}$ 与 $\\overparen{P_0 Q_1}$ 相内切于点 $P_0$, 且 $P_0 、 Q_0$ 、 $Q_1 、 P_1$ 四点共圆.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6i5.png",
+        "./images/volume7/figures/fig-c6i5.png"
+    ]
+}

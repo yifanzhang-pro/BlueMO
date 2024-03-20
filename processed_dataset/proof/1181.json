@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设 $a_1, a_2, \\cdots, a_n>0$ 且 $a_1+a_2+\\cdots+a_n=1$. 求证:\n$$\n\\left(\\frac{1}{a_1^2}-1\\right)\\left(\\frac{1}{a_2^2}-1\\right) \\cdots\\left(\\frac{1}{a_n^2}-1\\right) \\geqslant\\left(n^2-1\\right)^n \\text {. }\n$$",
+    "solution": "因为 $a_1+a_2+\\cdots+a_n=1$, 所以由均值不等式可得 $1+a_i=a_1+a_2 +\\cdots+a_n+a_i \\geqslant(n+1)\\left(a_1 a_2 \\cdots a_n a_i\\right)^{1 /(n+1)}, 1-a_i=a_1+a_2+\\cdots+a_n-a_i \\geqslant (n-1)\\left(a_1 a_2 \\cdots a_n / a_i\\right)^{1 /(n-1)}$. 取 $i=1,2, \\cdots, n$ 再将之分别累积后得 $\\prod_{i=1}^n(1- \\left.a_i^2\\right) \\geqslant\\left(n^2-1\\right)^n \\prod_{i=1}^n a_i^2$, 从而 $\\left(\\frac{1}{a_1^2}-1\\right)\\left(\\frac{1}{a_2^2}-1\\right) \\cdots\\left(\\frac{1}{a_n^2}-1\\right) \\geqslant\\left(n^2-1\\right)^n$.",
+    "remark": "",
+    "figures": []
+}

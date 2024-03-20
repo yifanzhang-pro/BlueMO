@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设 $A$ 是圆 $O$ 的直径 $B B^{\\prime}$ 上或其延长线上任一定点,过 $A$ 引圆 $O$ 的割线 $M A M^{\\prime}$ 或 $A M M^{\\prime}$, 过 $A$ 作 $B B^{\\prime}$ 的垂线交 $B M$ 的延长线于点 $N$, 交 $B M^{\\prime}$ 的延长线于点 $N^{\\prime}$. 求证: $A N \\cdot A N^{\\prime}$ 是定值.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c5a5.png>), $\\angle B N A=90^{\\circ}-\\angle M B A=\\angle B B^{\\prime}M= BM'M$.从而有 $M、N、M'、N'$ 共圆,记此圆为 $\\Gamma$. 注意到圆$O$与 $\\Gamma$ 的交点为$M、M'$ ,所以 $M M^{\\prime}$ 是圆$O$和 $\\Gamma$ 的根轴, 又 $A$ 在 $M M^{\\prime}$ 上, 所以 $A$ 关于两圆等幂, 即 $A B \\cdot A B^{\\prime}=A N \\cdot A N^{\\prime}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5a5.png"
+    ]
+}

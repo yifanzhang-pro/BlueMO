@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $A D$ 是 $\\triangle A B C$ 的中线, $l$ 是垂直于 $A D$ 的一条直线, $M$ 是 $l$ 上一点, $E$ 、 $F$ 分别为 $M B 、 M C$ 的中点, 过点 $E 、 F$ 且垂直于 $l$ 的直线分别与 $A B 、 A C$ 交于点 $P 、 Q, l^{\\prime}$ 是过点 $M$ 且垂直于 $P Q$ 的直线.\n证明: $l^{\\prime}$ 总过一定点.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c11a4.png>), 以 $A D$ 所在直线为 $y$ 轴、直线 $l$ 为 $x$ 轴建立直角坐标系.\n设点 $A(0, a) 、 D(0$, $-d) 、 M(m, 0) 、 B(-b,-d+c) 、 C(b,-d-$ c).\n故 $l_{A B}: y=\\frac{a+d-c}{b} x+a$.\n又 $x_E=\\frac{m-b}{2}$, 而 $P E \\perp x$ 轴, 则\n$$\nP\\left(\\frac{m-b}{2}, \\frac{m-b}{2} \\cdot \\frac{a+d-c}{b}+a\\right) .\n$$\n同理, $Q\\left(\\frac{m+b}{2}, \\frac{m+b}{2} \\cdot \\frac{-(a+d+c)}{b}+a\\right)$.\n故直线 $d^{\\prime}$ 的斜率为\n$$\n\\begin{aligned}\nk & =\\frac{-1}{k_{p q}} \\\\\n& =\\frac{\\frac{m+b}{2}-\\frac{m-b}{2}}{\\frac{m-b}{2} \\cdot \\frac{a+d-c}{b}+a+\\frac{a+d+c}{b} \\cdot \\frac{m+b}{2}-a} \\\\\n& =\\frac{b^2}{m a+m d+b c} .\n\\end{aligned}\n$$\n又直线 $l^{\\prime}$ 过点 $M$, 则 $l^{\\prime}$ 的方程为\n$$\ny=\\frac{b^2}{m a+m d+b c}(x-m), \\label{eq1}\n$$\n其中, $m$ 为变量, $a 、 d 、 b 、 c$ 均为常量.\n由式 \\ref{eq1} 得\n$$\nm\\left[y(a+d)+b^2\\right]=b(b x-c y) .\n$$\n因此, 令 $y_0=\\frac{-b^2}{a+d}$. 则 $x_0=\\frac{-b c}{a+d}$.\n所以, 直线 $l^{\\prime}$ 恒过定点 $\\left(\\frac{-b c}{a+d}, \\frac{-b^2}{a+d}\\right)$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c11a4.png"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例5. 某地区网球俱乐部的 20 名成员已举行 14 场单打比赛,每人至少上场一次.\n求证: 其中必有 6 场比赛, 12 个参赛者各不相同.",
+    "solution": "证本题在第二节已经讲过,这里我们再从树的角度给出另一种证明.\n用 20 个点代表 20 名参赛者.\n若两人比一场则在他们之间连边.\n这样共有 14 条边, 每点至少连出 1 条边, 所证结论相当于: 可以找出 6 条边两两不相邻.\n设图中共有 $n$ 个连通分支, 其中第 $i$ 个分支点数为 $v_i$, 边数为 $e_i$, 显然 $e_i \\geqslant v_i-1$, 故 $\\sum_{i=1}^n e_i \\geqslant \\sum_{i=1}^n\\left(v_i-1\\right)=\\sum_{i=1}^n v_i-n$. 而 $\\sum_{i=1}^n e_i=14, \\sum_{i=1}^n v_i=20$, 故 $14 \\geqslant 20-n, n \\geqslant 20-14=16$. 由于每点至少连出一条边, 因此不可能存在一个连通分支, 它仅含一个孤立点.\n故从每个连通分支中各取一条边, 即可保证两两不相邻,边数至少为 6 . 原命题得证.\n如图(<FilePath:./images/volume12/figures/fig-c4i6.png>) 可知, 顶点数为 20 ,边数为 14 ,任选 7 条边,则必有两边在同一连通分支内, 它们必定相邻.\n故 6 为最佳结果.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c4i6.png"
+    ]
+}

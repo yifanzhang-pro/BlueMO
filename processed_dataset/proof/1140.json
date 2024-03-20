@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-3.tex",
+    "problem_type": "proof",
+    "problem": "例2. 已知正数 $a_1, a_2, \\cdots, a_n(n \\geqslant 2)$ 满足 $\\sum_{i=1}^n a_i=1$, 求证:\n$$\n\\sum_{i=1}^n \\frac{a_i}{2-a_i} \\geqslant \\frac{n}{2 n-1} \\text {. }\n$$",
+    "solution": "证明:因为\n$$\n\\sum_{i=1}^n \\frac{a_i}{2-a_i}=\\sum_{i=1}^n\\left(\\frac{2}{2-a_i}-1\\right)=\\sum_{i=1}^n \\frac{2}{2-a_i}-n .\n$$\n由柯西不等式, 得\n$$\n\\left(\\sum_{i=1}^n \\frac{1}{2-a_i}\\right)\\left[\\sum_{i=1}^n\\left(2-a_i\\right)\\right] \\geqslant n^2 .\n$$\n所以\n$$\n\\sum_{i=1}^n \\frac{1}{2-a_i} \\geqslant \\frac{n^2}{\\sum_{i=1}^n\\left(2-a_i\\right)}=\\frac{n^2}{2 n-1},\n$$\n故\n$$\n\\sum_{i=1}^n \\frac{a_i}{2-a_i} \\geqslant \\frac{2 n^2}{2 n-1}-n=\\frac{n}{2 n-1} .\n$$",
+    "remark": "",
+    "figures": []
+}

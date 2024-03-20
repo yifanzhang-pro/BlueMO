@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例6 求所有的函数 $f: \\mathbf{R} \\rightarrow \\mathbf{R}$ 使得\n$$\nf(f(x)+y)=f\\left(x^2-y\\right)+4 f(x) y . \\quad\\quad (1)\n$$\n对所有 $x, y \\in \\mathbf{R}$ 成立.",
+    "solution": "解:易见 $f(x) \\equiv 0$ 或 $f(x)=x^2$ 皆为上述方程 (1) 的解.\n我们来证明它们是唯一的解.\n设对某个 $a, f(a) \\neq a^2$.\n在(1)中令 $y=\\frac{x^2-f(x)}{2}$, 得\n$$\nf(x) \\cdot\\left(x^2-f(x)\\right)=0 .\\quad\\quad (2)\n$$\n由于 $f(a) \\neq a^2$, 故只能 $f(a)=0$, 并且可见 $a \\neq 0$ (否则 $a^2=0=f(a)$ 与 $a$ 的定义相违).\n于是我们得到, 对任何 $x$, 要么 $f(x)=0$, 要么 $f(x)=x^2$.\n在(2)中令 $x=0$, 有 $f(0)=0$.\n在(1)中令 $x=0$, 有\n$$\nf(y)=f(-y) .\n$$\n在(1)中令 $x=a$, 并用 $-y$ 替换 $y$, 得\n$$\nf\\left(a^2+y\\right)=f(-y)=f(y) .\n$$\n从上式可见 $f$ 以 $a^2$ 为周期, 进而我们有\n$$\nf(f(x))=f\\left(f(x)+a^2\\right)=f\\left(x^2-a^2\\right)+4 f(x) a^2 .\n$$\n在(1)中令 $y=0$, 有\n$$\nf(f(x))=f\\left(x^2\\right) .\n$$\n利用 $f(x)$ 的周期性, 得 $f(x) \\cdot a^2=0$.\n所以 $f(x)=0$ (因为 $a \\neq 0$ ).\n也就是说, 若 $f(x) \\neq x^2$, 则必有 $f(x) \\equiv 0$ 成立.\n因此结论成立.",
+    "remark": "",
+    "figures": []
+}

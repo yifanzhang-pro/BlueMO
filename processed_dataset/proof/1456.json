@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $a, b, c \\in \\mathbf{R}^{+}$, 且 $a b c=1$. 求证:\n$$\n\\sum_{c y c} \\frac{a b}{a^5+b^5+a b} \\leqslant 1\n$$\n并问等号何时成立?",
+    "solution": "由于 $a^5+b^5-a^2 b^2(a+b)=\\left(a^2-b^2\\right)\\left(a^3-b^3\\right) \\geqslant 0$, 故 $a^5+b^5 \\geqslant a^2 b^2(a+b)$, 于是\n$$\n\\begin{aligned}\n\\frac{a b}{a^5+b^5+a b} & =\\frac{a b \\cdot a b c}{a^5+b^5+a b \\cdot a b c}==\\frac{a^2 b^2 c}{a^5+b^5+a^2 b^2 c} \\\\\n& \\leqslant \\frac{a^2 b^2 c}{a^2 b^2(a+b)+a^2 b^2 c}=\\frac{c}{a+b+c} .\n\\end{aligned}\n$$\n同理, 有 $\\frac{b c}{b^5+c^5+b c} \\leqslant \\frac{a}{a+b+c}, \\frac{c a}{c^5+a^5+c a} \\leqslant \\frac{b}{a+b+c}$.\n三式相加即得不等式成立, 且等号当 $a=b=c=1$ 时取到.",
+    "remark": "",
+    "figures": []
+}

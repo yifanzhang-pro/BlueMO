@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 求最大正整数 $m$, 使 $m \\times m$ 的正方形可剖分为 7 个两两无公共内点的矩形且 7 个矩形的 14 条边长为 $1,2,3,4,5,6,7,8,9,10,11,12,13$, 14.",
+    "solution": "如图(<FilePath:./images/volume11/figures/fig-c11a3.png>), 考虑一般情形: 设 $a_1, a_2, \\cdots, a_{2 n}$ 是 $1,2, \\cdots, 2 n$ 的任意排列, 求 $S_n= a_1 a_2+a_3 a_4+\\cdots+a_{2 n-1} a_{2 n}$ 的最大值.\n对 $n$ 用归纳法, $n=1$ 时, $S_1=1 \\times 2$, $n=2$ 时, $S_2 \\leqslant \\max \\{1 \\times 2+3 \\times 4,1 \\times 3+2 \\times 4,1 \\times 4+2 \\times 3\\}=1 \\times 2+ 3 \\times 4$. 设 $S_k \\leqslant 1 \\times 2+3 \\times 4+\\cdots+(2 k-1)(2 k)$, 那么 $n=k+1$ 时, 设 $S_{k+1}=a_1 a_2+a_3 a_4+\\cdots+a_{2 k+1} a_{2 k+2}$, 分两种情形: (1)若 $2 k+1,2 k+2$ 出现在 $S_{k+1}$ 中同一项中, 不妨设 $a_{2 k+1} a_{2 k+2}=(2 k+1)(2 k+2)$, 则由归纳假设有 $S_{k+1}=a_1 a_2+\\cdots+a_{2 k-1} a_{2 k}+(2 k+1)(2 k+2) \\leqslant 1 \\times 2+3 \\times 4+\\cdots+(2 k-$ 1) $(2 k)+(2 k+1)(2 k+2)$; (2) 若 $2 k+1$ 与 $2 k+2$ 出现在 $S_{k+1}$ 的两个不同的项中, 不妨设 $a_{2 k-1}=2 k+1, a_{2 k+1}=2 k+2$, 注意到 $\\left[a_{2 k} a_{2 k+2}+(2 k+1)(2 k+\\right. 2)]-\\left[(2 k+1) a_{2 k}+(2 k+2) a_{2 k+2}\\right]=\\left[a_{2 k}-(2 k+2)\\right]\\left[a_{2 k+2}-(2 k+1)\\right]>$ 0 , 所以 $S_{k+1}<a_1 a_2+\\cdots+a_{2 k-3} a_{2 k-2}+a_{2 k} a_{2 k+2}+(2 k+1)(2 k+2) \\leqslant 1 \\times 2+ 3 \\times 4+\\cdots+(2 k-1)(2 k)+(2 k+1)(2 k+2)$. 这就证明了, 对一切 $n \\in \\mathbf{N}_{+}$, 有 $S_n \\leqslant 1 \\times 2+3 \\times 4+\\cdots+(2 n-1)(2 n)$. 回到原题, 若满足题目条件的分割存在, 则 $m^2 \\leqslant 1 \\times 2+3 \\times 4+\\cdots+13 \\times 14=504$, 所以 $m \\leqslant[\\sqrt{504}]=22$. 下面两个图形都说明 $m=22$ 可以达到.\n故所求 $m$ 的最大值为 22 .",
+    "remark": "",
+    "figures": [
+        "./images/volume11/figures/fig-c11a3.png"
+    ]
+}

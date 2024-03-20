@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 由 $n$ 个元素 $a_1, a_2, \\cdots, a_n$ 组成 $n$ 个元素对 $p_1, p_2, \\cdots, p_n$. 已知当且仅当 $a_i$ 与 $a_j$ 组成元素对时, $p_i$ 与 $p_j$ 有公共元.\n证明: $a_1, a_2, \\cdots, a_n$ 中每个元素恰属于两个元素对.",
+    "solution": "记 $A=\\left\\{a_1, a_2, \\cdots, a_n\\right\\}, P=\\left\\{p_1, p_2, \\cdots, p_n\\right\\}$, 把 $A$ 中元素 $a_i$ 看成平面内的点.\n$A$ 中元素对 $\\left\\{a_i, a_j\\right\\}$ 看成连接 $a_i$ 与 $a_j$ 的线段, 于是问题归结为证明 $A$ 中每一点恰是 $P$ 中两条线段的公共端点.\n设从 $a_i$ 出发恰有 $d_i$ 条线段 $(i=1,2$, $\\cdots, n)$ 于是 $d_1+d_2+\\cdots+d_n=2|P|=2 n \\cdots$ (1). \n若 $A$ 中点 $a_k$ 是 $P$ 中两条线段 $p_i, p_j$ 的公共端点, 则将 $\\left(a_k ; p_i, p_j\\right)$ 组成三元组, 这种三元组的集合记为 $S$. 则 $|S|=\\sum_{i=1}^n \\mathrm{C}_{d_i}^2$. \n另一方面, 当且仅当 $a_i$ 与 $a_j$ 连有线段时, $p_i$ 与 $p_j$ 有公共端点 $a_k$, 组成一个三元组 $\\left(a_k ; p_i, p_j\\right)$, 故三元组的个数等于所连线段数 $n$, 即 $|S|=n$. 于是 $n=\\sum_{i=1}^n \\mathrm{C}_{d_i}^2=\\frac{1}{2}\\left(\\sum_{i=1}^n d_i^2-\\sum_{i=1}^n d_i\\right) \\geqslant \\frac{1}{2}\\left[\\frac{1}{n}\\left(\\sum_{i=1}^n d_i\\right)^2-\\sum_{i=1}^n d_i\\right]= \\frac{1}{2 n}\\left[4 n^2-2 n^2\\right]=n$, 可见这个不等式的等号成立.\n由柯西 (Cauchy) 不等式中等号成立的充要条件得 $d_1=d_2=\\cdots=d_n$, 再结合(1)得 $d_1=d_2=\\cdots=d_n=2$. 即 $A$ 中每点恰是 $P$ 中两条线段的公共端点.\n证毕.",
+    "remark": "",
+    "figures": []
+}

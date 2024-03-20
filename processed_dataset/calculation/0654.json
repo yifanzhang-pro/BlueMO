@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例13 在 $\\triangle A B C$ 中, $A 、 B 、 C$ 分别表示它的三个内角, 且满足 $\\cos A \\cdot \\cos B \\cdot \\cos C=\\frac{1}{8}$, 试判断该三角形的形状.",
+    "solution": "解:不妨设 $0<A, B<\\frac{\\pi}{2}$, 因为 $A+B+C=\\pi$, 所以\n$$\n\\begin{aligned}\n\\cos A \\cdot \\cos B \\cdot \\cos C & =\\cos A \\cdot \\cos B \\cdot \\cos [\\pi-(A+B)] \\\\\n& =-\\cos A \\cdot \\cos B \\cdot \\cos (A+B)=\\frac{1}{8} .\n\\end{aligned}\n$$\n即\n$$\n\\cos A \\cdot \\cos B \\cdot \\cos (A+B)=-\\frac{1}{8} .\n$$\n从而\n$$\n\\begin{aligned}\n& \\cos A \\cdot \\cos B \\cdot \\cos (A+B) \\\\\n= & \\frac{1}{2}[\\cos (A+B)+\\cos (A-B)] \\cos (A+B)=-\\frac{1}{8},\n\\end{aligned}\n$$\n配方得\n$$\n\\begin{gathered}\n\\cos ^2(A+B)+\\cos (A-B) \\cos (A+B) \\\\\n+\\frac{1}{4}\\left[\\cos ^2(A-B)\\right]+\\frac{1}{4}\\left[\\sin ^2(A-B)\\right]=0 .\n\\end{gathered}\n$$\n故 $\\left[\\cos (A+B)+\\frac{1}{2} \\cos (A-B)\\right]^2+\\frac{1}{4} \\sin ^2(A-B)=0$.\n即\n$$\n\\left\\{\\begin{array}{l}\n\\cos (A+B)+\\frac{1}{2} \\cos (A-B)=0, \\quad (1)\\\\\n\\sin (A-B)=0 .\\quad (2)\n\\end{array}\\right.\n$$\n由(1)、(2)得 $A=B, \\cos (A+B)=-\\frac{1}{2}$. 所以 $A=B=\\frac{\\pi}{3}, C=\\frac{\\pi}{3}$. 即 $\\triangle A B C$ 为正三角形.\n评注从上面的推导过程知 $\\cos A \\cdot \\cos B \\cdot \\cos C \\leqslant \\frac{1}{8}$, 当 $A=B=C$ 时, 取最大值.\n其中 $A 、 B 、 C$ 为三角形内角.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 设 $\\alpha \\in\\left(\\frac{\\pi}{4}, \\frac{\\pi}{2}\\right)$, 则 $(\\cos \\alpha)^{\\cos \\alpha}=a,(\\sin \\alpha)^{\\cos \\alpha}=b,(\\cos \\alpha)^{\\sin \\alpha}=c$ 的大小顺序是 ( ).\n(A) $a<b<c$\n(B) $a<c<b$\n(C) $b<a<c$\n(D) $c<a<b$",
+    "solution": "D. 用特殊值法, 令 $\\alpha=\\frac{\\pi}{3}$, 可比较知 $c<a<b$.",
+    "remark": "",
+    "figures": []
+}

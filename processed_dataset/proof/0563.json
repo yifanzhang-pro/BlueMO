@@ -1,0 +1,15 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $n$ 是一个固定的正偶数,考虑一个 $n \\times n$ 的正方形棋盘,如果两个方格至少有一条公共边, 则称它们是相邻的.\n现在, 将棋盘上 $N$ 个方格作上标记, 使得棋盘上任何一个方格(作上标记的和未作上标记的) 都与至少一个作上标记的方格相邻.\n试确定 $N$ 的最小值.",
+    "solution": "解: $n \\times n$ 棋盘按如下方式染色: 如果 $n$ 不被 4 整除,则如图(<FilePath:./images/volume13/figures/fig-c7i1.png>)染色,\n否则如图(<FilePath:./images/volume13/figures/fig-c7i2.png>) 染色.\n考虑所有黑色方格, 若 $n=4 k$, 如图(<FilePath:./images/volume13/figures/fig-c7i2.png>) 染色后, 共有 $4 \\times 3+4 \\times 7+\\cdots+4 \\times(4 k-1)=2 k(4 k+2)$ 个黑色方格; 若 $n=4 k+2$, 染色后, 共有 $4 \\times 1+4 \\times 5+\\cdots+4 \\times(4 k+1)=2(k+1)(4 k+2)$ 个黑色方格.\n不论哪种情形, 黑色方格都是 $\\frac{1}{2} n(n+2)$ 个, 而其中任意三个都不能与同一个方格相邻.\n而由条件, 它们中任意一个应与某个作了标记的方格相邻, 于是 $N \\geqslant \\frac{1}{4} n(n+2)$.\n另一方面, 我们证明, 可适当标记 $N=\\frac{1}{4} n(n+2)$ 个格, 使之合乎题目要求.\n事实上, 如图(<FilePath:./images/volume13/figures/fig-c7i3.png>), 我们将棋盘的 \"第一层边框\" 的 4(n-1) 个方格从左上角开始, 按顺时针方向依次编号为 $1,2, \\cdots, 4 n-4$, 将编号被 4 除余 $1 、 2$ 的方格作标记(图(<FilePath:./images/volume13/figures/fig-c7i3.png>) 中阴影部分).\n去掉棋盘的外围两层边框, 对剩下的棋盘仍从左上角开始, 沿顺时针方向进行类似编号, 又将编号被 4 除余 $1 、 2$ 的方格作上标记, 如此下去, 直到此步骤不能再进行为止.\n这样, 我们恰对一半的黑色方格作了标记, 故共有 $\\frac{1}{4} n(n+2)$ 个方格作了标记.\n下面证明这种标记方法符合要求.\n事实上,如图(<FilePath:./images/volume13/figures/fig-c7i3.png>) 不难看出任意两个标记方格不会有一个公共的\"邻格\", 假设这些标记的方格为 $A_1, \\cdots, A_N$, 其中 $N=\\frac{1}{4} n(n+2)$, 与 $A_i$ 相邻的方格集合为 $M_i$, 则 $M_i(i=1,2, \\cdots, N)$ 两两不交.\n且对位于棋盘角上的格 $A_i,\\left|M_i\\right|=2$ (共有 2 个这样的格); 对位于棋盘边上的格 $A_i,\\left|M_i\\right|=3$ (共有 $2 n-4$ 个这样的格); 对位于非棋盘边界上的格 $A_i,\\left|M_i\\right|=4$ (共有 $\\frac{n^2-6 n+8}{4}$ 个这样的格). 于是 $\\left|M_1 \\cup M_2 \\cup \\cdots \\cup M_N\\right|=\\frac{n^2-6 n+8}{4} \\times4+(2 n-4) \\times 3+2 \\times 2=n^2$, 故 $M_1 \\cup M_2 \\cup \\cdots \\cup M_N$ 包含了所有的方格, 即每个方格都与某一个标记方格相邻.\n综上所述, $N_{\\min }=\\frac{1}{4} n(n+2)$.",
+    "remark": "",
+    "figures": [
+        "./images/volume13/figures/fig-c7i1.png",
+        "./images/volume13/figures/fig-c7i2.png",
+        "./images/volume13/figures/fig-c7i2.png",
+        "./images/volume13/figures/fig-c7i3.png",
+        "./images/volume13/figures/fig-c7i3.png",
+        "./images/volume13/figures/fig-c7i3.png"
+    ]
+}

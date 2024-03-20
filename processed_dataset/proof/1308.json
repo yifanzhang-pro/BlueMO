@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例13. 设 $a, b, c \\in \\mathbf{R}^{+}$, 求证:\n$$\n\\frac{b^3}{a^2+8 b c}+\\frac{c^3}{b^2+8 c a}+\\frac{a^3}{c^2+8 a b} \\geqslant \\frac{a+b+c}{9} .\n$$",
+    "solution": "证明:记不等式的左端为 $M$, 令\n$$\n\\begin{aligned}\nS & =\\left(a^2+8 b c\\right)+\\left(b^2+8 c a\\right)+\\left(c^2+8 a b\\right) \\\\\n& =(a+b+c)^2+6(a b+b c+c a) \\\\\n& \\leqslant 3(a+b+c)^2 .\n\\end{aligned}\n$$\n所以\n$$\n\\begin{aligned}\n3= & \\frac{1}{M} \\cdot\\left(\\frac{b^3}{a^2+8 b c}+\\frac{c^3}{b^2+8 c a}+\\frac{a^3}{c^2+8 a b}\\right)+\\frac{1}{S}\\left(\\left(a^2+8 b c\\right)\\right. \\\\\n& \\left.+\\left(b^2+8 c a\\right)+\\left(c^2+8 a b\\right)\\right)+\\frac{1+1+1}{3} \\\\\n= & \\sum\\left[\\frac{b^3}{M\\left(a^2+8 b c\\right)}+\\frac{a^2+8 b c}{S}+\\frac{1}{3}\\right] \\\\\n\\geqslant & 3 \\sqrt[3]{\\frac{b^3}{3 S M}}+3 \\sqrt[3]{\\frac{a^3}{3 S M}}+3 \\sqrt[3]{\\frac{c^3}{3 S M}} \\\\\n= & \\frac{3(a+b+c)}{\\sqrt[3]{3 S M}} .\n\\end{aligned}\n$$\n因此 $3 S M \\geqslant(a+b+c)^3$, 故有 $M \\geqslant \\frac{1}{9}(a+b+c)$ 成立.",
+    "remark": "",
+    "figures": []
+}

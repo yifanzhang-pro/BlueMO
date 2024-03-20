@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $\\triangle A B C$ 的三边分别为 $a 、 b 、 c$, 三边上的中线长分别为 $m_a 、 m_b 、 m_c$, 求证: $m_a\\left(b c-a^2\\right)+ m_b\\left(c a-b^2\\right)+m_c\\left(a b-c^2\\right) \\geqslant 0$.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c10i2.png>), 设 $\\triangle A B C$ 的三条中线分别为 $A D 、 B E 、 C F$, 重心为 $G$, 对四边形 $B D G F$ 应用托勒密不等式可得\n$$\nB G \\cdot D F \\leqslant G F \\cdot D B+D G \\cdot B F .\n$$\n即 $2 b m_b \\leqslant a m_c+c m_a$, 故 $2 b^2 m_b \\leqslant a b m_c+b c m_a$ 等等.\n三式相加即得 $m_a\\left(b c-a^2\\right)+m_b\\left(c a-b^2\\right)+m_c\\left(a b-c^2\\right) \\geqslant 0$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c10i2.png"
+    ]
+}

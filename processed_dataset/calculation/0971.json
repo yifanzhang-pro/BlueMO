@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 若 $\\overrightarrow{A B}=3 \\vec{e}, \\overrightarrow{C D}=4 \\vec{e}$, 且 $|\\overrightarrow{A D}|=|\\overrightarrow{C B}|$, 则四边形 $A B C D$ 是( ).\n(A) 平行四边形\n(B) 梯形\n(C) 等腰梯形\n(D) 菱形",
+    "solution": "C.\n$$\nA B / / C D, A D=C B \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

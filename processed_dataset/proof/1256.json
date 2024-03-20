@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $a, b, c \\in \\mathbf{R}^{+}, a^2+b^2+c^2=1$, 求\n$$\nS=\\frac{1}{a^2}+\\frac{1}{b^2}+\\frac{1}{c^2}-\\frac{2\\left(a^3+b^3+c^3\\right)}{a b c}\n$$\n的最小值.",
+    "solution": "解:当 $a=b=c$ 时, $S=3$. 猜测: $S \\geqslant 3$.\n事实上,\n$$\n\\begin{aligned}\nS-3 & =\\frac{1}{a^2}+\\frac{1}{b^2}+\\frac{1}{c^2}-3-\\frac{2\\left(a^3+b^3+c^3\\right)}{a b c} \\\\\n& =\\frac{a^2+b^2+c^2}{a^2}+\\frac{a^2+b^2+c^2}{b^2}+\\frac{a^2+b^2+c^2}{c^2}-3-2\\left(\\frac{a^2}{b c}+\\frac{b^2}{c a}+\\frac{c^2}{a b}\\right) \\\\\n& =a^2\\left(\\frac{1}{b^2}+\\frac{1}{c^2}\\right)+b^2\\left(\\frac{1}{a^2}+\\frac{1}{c^2}\\right)+c^2\\left(\\frac{1}{a^2}+\\frac{1}{b^2}\\right)-2\\left(\\frac{a^2}{b c}+\\frac{b^2}{c a}+\\frac{c^2}{a b}\\right) \\\\\n& =a^2\\left(\\frac{1}{b}-\\frac{1}{c}\\right)^2+b^2\\left(\\frac{1}{c}-\\frac{1}{a}\\right)^2+c^2\\left(\\frac{1}{a}-\\frac{1}{b}\\right)^2 \\\\\n& \\geqslant 0 .\n\\end{aligned}\n$$\n综上所述, $S$ 的最小值为 3 .\n说明先猜后证是处理许多最值问题的有效手段.\n猜, 一猜答案, 二猜等号成立的条件;证明的时候要注意等号是否能取到.",
+    "remark": "",
+    "figures": []
+}

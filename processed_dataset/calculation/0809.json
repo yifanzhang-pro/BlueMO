@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "calculation",
+    "problem": "例25. 设 $x, y, z \\in(0,1)$, 满足:\n$$\n\\sqrt{\\frac{1-x}{y z}}+\\sqrt{\\frac{1-y}{z x}}+\\sqrt{\\frac{1-z}{x y}}=2,\n$$\n求 $x y z$ 的最大值.",
+    "solution": "解:记 $u=\\sqrt[6]{x y z}$, 则由条件及均值不等式可知\n$$\n\\begin{aligned}\n2 u^3= & 2 \\sqrt{x y z}=\\frac{1}{\\sqrt{3}} \\sum \\sqrt{x(3-3 x)} \\\\\n\\leqslant & \\frac{1}{\\sqrt{3}} \\sum \\frac{x+(3-3 x)}{2} \\\\\n& =\\frac{3 \\sqrt{3}}{2}-\\frac{1}{\\sqrt{3}}(x+y+z) \\\\\n& \\leqslant \\frac{3 \\sqrt{3}}{2}-\\sqrt{3} \\cdot \\sqrt[3]{x y z} \\\\\n& =\\frac{3 \\sqrt{3}}{2}-\\sqrt{3} u^2 .\n\\end{aligned}\n$$\n故\n$$\n4 u^3+2 \\sqrt{3} u^2-3 \\sqrt{3} \\leqslant 0,\n$$\n即\n$$\n(2 u-\\sqrt{3})\\left(2 u^2+2 \\sqrt{3} u+3\\right) \\leqslant 0 .\n$$\n所以, $u \\leqslant \\frac{\\sqrt{3}}{2}$. 依此可知, $x y z \\leqslant \\frac{27}{64}$, 等号在\n$$\nx=y=z=\\frac{3}{4}\n$$\n时取得.\n因此, 所求最大值为 $\\frac{27}{64}$.",
+    "remark": "",
+    "figures": []
+}

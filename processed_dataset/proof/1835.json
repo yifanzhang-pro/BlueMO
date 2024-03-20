@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 在锐角 $\\triangle A B C$ 中, $A D$ 是高, $I 、 O$ 分别是内心、外心, 且 $D 、 I 、 O$ 三点共线.\n求证: $\\triangle A B C$ 的外接圆半径等于与边 $B C$ 相切的旁切圆半径.",
+    "solution": "解: 如图(<FilePath:./images/volume7/figures/fig-c3a9.png>),设与边 $B C$ 相切的旁切圆圆心为 $I_A$, 显然, $A 、 I 、 I_A$ 三点共线.\n作 $I E \\perp A B$ 于点 $E, I_A F \\perp A B$ 于点 $F$. 记 $I E=r$, $I_A F=r_a, B C=a, C A=b, A B=c, p$ 为 $\\triangle A B C$ 的半周长.\n设 $A D=h, \\triangle A B C$ 的外接圆半径 $O A=R$. 作 $I M \\perp B C$ 于点 $M, O N \\perp B C$ 于点 $N$.\n利用旁心性质 2 知 $A F=p$, 则\n$$\nA E=p-a .\n$$\n由 $\\triangle A I_A F \\backsim \\triangle A I E$, 得\n$$\n\\frac{r_a}{r}=\\frac{A F}{A E}=\\frac{p}{p-a} . \\label{eq1}\n$$\n由三角形外心性质易得 $\\angle B A D=\\angle O A C$. 但 $A I$ 平分 $\\angle B A C$, 知 $A I$ 平分\n$\\angle D A O$. 所以\n$$\n\\frac{R}{h}=\\frac{A O}{A D}=\\frac{O I}{I D}=\\frac{M N}{D M} . \\label{eq2}\n$$\n注意到\n$$\n\\begin{aligned}\nM N & =B N-B M \\\\\n& =\\frac{1}{2} a-\\frac{1}{2}(c+a-b)=\\frac{1}{2}(b-c), \\\\\nD M & =B M-B D=\\frac{1}{2}(c+a-b)-c \\cos B \\\\\n& =\\frac{1}{2}(c+a-b)-\\frac{1}{2 a}\\left(c^2+a^2-b^2\\right) \\\\\n& =\\frac{1}{2 a}(b-c)(b+c-a),\n\\end{aligned}\n$$\n代入式\\ref{eq2}得\n$$\n\\frac{R}{h}=\\frac{a}{b+c-a} .\n$$\n故\n$$\nR=\\frac{a h}{b+c-a}=\\frac{2 S_{\\triangle A B C}}{2(p-a)}=\\frac{p r}{p-a} .\n$$\n因此, $\\frac{R}{r}=\\frac{p}{p-a}$. 结合式 \\ref{eq1} 得 $r_a=R$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c3a9.png"
+    ]
+}

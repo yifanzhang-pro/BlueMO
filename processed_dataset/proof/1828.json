@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 已知圆内接四边形 $A B C D, K 、 L 、 M 、 N$ 分别是边 $A B 、 B C 、 C D 、 D A$ 的中点.\n证明: $\\triangle A K N$ 、 $\\triangle B K L 、 \\triangle C L M 、 \\triangle D M N$ 的垂心恰好是一个平行四边形的四个顶点.",
+    "solution": "证明: 由于 $N$ 是 $A D$ 的中点, 有 $O N \\perp A D$, 这里 $O$ 是圆心.\n由于 $K H_1$ 是一条高线, 所以, $K H_1 \\perp A D$. 因此, $K H_1 / / O N$. 同理可证 $O K / / N H_1$. 这表明四边形 $O N H_1 K$ 是平行四边形.\n类似地, 四边形 $O N H_4 M$ 也是平行四边形.\n于是, 四边形 $K H_1 H_4 M$ 也是平行四边形.\n考察 $K M$ 的另一侧, 易看出四边形 $\\mathrm{MKH}_2 \\mathrm{H}_3$ 也是平行四边形.\n利用上述结论, 便可断定四边形 $\\mathrm{H}_1 \\mathrm{H}_2 \\mathrm{H}_3 \\mathrm{H}_4$ 是平行四边形.",
+    "remark": "",
+    "figures": []
+}

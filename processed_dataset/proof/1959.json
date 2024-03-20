@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例3. 求证: 不存在四个整系数多项式 $f_k(x)(k \\doteq 1,2,3,4)$, 使得恒等式\n$$\n9 x+4=f_1^3(x)+f_2^3(x)+f_3^3(x)+f_4^3(x) . \\label{eq1}\n$$\n成立.",
+    "solution": "分析:与解本题看上去平平常常,但自己做起来却未必顺顺当当.\n记 $\\omega$ 是三次单位根 $(\\omega \\neq 1)$, 则对任意整系数多项式 $f(x)$, 利用 $\\omega^3=1$ 及 $\\omega^2=-1-\\omega$ 可将 $f(\\omega)$ 化为 $a+b \\omega$ ( $a 、 b$ 是整数), 于是 (注意 $\\left.1+\\omega+\\omega^2=0\\right)$\n$$\nf^3(\\omega)=(a+b \\omega)^3=a^3+b^3-3 a b^2+3 a b(a-b) \\omega .\n$$\n由于 $a b(a-b)$ 总是偶数,故若存在形如 式\\ref{eq1} 的恒等式, 以 $x=\\omega$ 代入, 即得\n$$\n9 \\omega+4=A+B \\omega . \\label{eq2}\n$$\n这里 $A 、 B$ 都是整数,且 $B$ 是偶数.\n但由式\\ref{eq2}易知 $B=9$, 这显然不可能,证毕.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例1. 已知 $a^2+b^2+c^2+d^2=1$, 求证:\n$$\n\\begin{gathered}\n(a+b)^4+(a+c)^4+(a+d)^4+(b+c)^4 \\\\\n+(b+d)^4+(c+d)^4 \\leqslant 6 .\n\\end{gathered} \\label{(1)}\n$$",
+    "solution": "分析:由已知可得 $\\left(a^2+b^2+c^2+d^2\\right)^2=1$, 我们要设法挖掘它与四次式 (1) 间的关系.\n注意到要使 $(a+b)^4$ 中 $a$ 的奇次项不在 $\\left(a^2+b^2+c^2+d^2\\right)^2$ 的展开式中出现, 可以配上 $(a-b)^4$ 与之相消, 这样就找到了突破口.\n证明考虑和式: $(a-b)^4+(a-c)^4+(a-d)^4+(b-c)^4+(b-d)^4+ (c-d)^4$, 不难发现它与(1)左端恰好构成恒等式, 即 :\n$$\n\\begin{gathered}\n(a+b)^4+(a-b)^4+(a+c)^4+(a-c)^4+(a+d)^4+(a-d)^4 \\\\\n+(b+c)^4+(b-c)^4+(b+d)^4+(b-d)^4+(c+d)^4+(c-d)^4 \\\\\n=6\\left(a^2+b^2+c^2+d^2\\right)^2\n\\end{gathered} \\label{(2)}\n$$\n由(2)立刻证得(1)成立.",
+    "remark": "",
+    "figures": []
+}

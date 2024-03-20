@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设整数 $a 、 b 、 c 、 d$ 满足 $a>b>c>d>0$, 且\n$$\na^2+a c-c^2=b^2+b d-d^2,\n$$\n证明: $a b+c d$ 不是素数.",
+    "solution": "反证法, 设有满足题设的一组 $a 、 b 、 c 、 d$, 使得 $a b+c d$ 为素数, 记之为 $p$, 将 $a=\\frac{p-c d}{b}$ 代入给出的等式, 得到\n$$\np(p-2 c d+b c)=\\left(b^2+c^2\\right)\\left(b^2+b d-d^2\\right) .\n$$\n因 $p$ 是素数,故 $p$ 整除 $b^2+c^2$, 或者 $p$ 整除 $b^2+b d-d^2$.\n若 $p \\mid\\left(b^2+c^2\\right)$, 则由 $0<b^2+c^2<2 a b<2(a b+c d)=2 p$, 推出 $b^2+ c^2=p$, 即 $a b+c d=b^2+c^2$, 从而 $b \\mid c(c-d)$. 显然 $(b, c)=1$ (因 $a b+c d$ 是素数), 故 $b \\mid(c-d)$, 这与 $0<c-d<c<b$ 矛盾.\n若 $p \\mid\\left(b^2+b d-d^2\\right)$, 则由 $0<b^2+b d-d^2<2(a b+c d)=2 p$ 知, $b^2+ b d-d^2=p$, 即 $a b+c d=b^2+b d-d^2=a^2+a c-c^2$, 故 $a \\mid(c+d) c$ 及 $b \\mid(c+d) d$ 都成立.\n但易知 $(a b, c d)=1$, 故 $c+d$ 被 $a$ 和 $b$ 整除.\n因 $0<c+ d<2 a, 0<c+d<2 b$, 从而必须有 $c+d=a$ 及 $c+d=b$,矛盾.",
+    "remark": "",
+    "figures": []
+}

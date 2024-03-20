@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例3. 求证: 以完全四边形的三条对角线为直径的圆共轴, 且完全四边形的四个三角形的垂心在这条根轴上.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c8i14.png>), 不妨设 $H_1$ 为 $\\triangle D E F$ 的垂心, 以 $C F 、 B E 、 A D$ 为直径的圆依次为 $O_1 、 O_2 、 O_3$, 连结 $H_1 F$ 与 $\\odot O_1$ 交于 $K$, 显然 $K$ 在 $D E$ 延长线上.\n$H_1$ 对 $\\odot O_1$ 的幂为 $H_1 K \\cdot H_1 F, H_1$ 对 $\\odot O_2$ 的幕为 $H_1 E \\cdot H_1 L$.\n而由 $K 、 F 、 L 、 E$ 四点共圆知, $H_1 K H_1 F=H_1 E \\cdot H_1 L$, 即 $H_1$ 对 $\\odot O_1 、 \\odot O_2$ 的幂相等.\n同理 $H_1$ 对 $\\odot O_2 、 \\odot O_3$ 的幂相等, 故 $H_1$ 对 $\\odot O_1 、 \\odot O_2 、 \\odot O_3$ 等幂.\n同理 $H_2 、 H_3 、 H_4$.也对 $\\odot O_1 、 \\odot O_2 、 \\odot O_3$ 等幂.\n显然 $H_1 、 H_2 、 H_3 、 H_4$ 不重合, (从而不可能都是根心), 这里有三个圆两两根轴相同,且 $H_1 、 H_2 、 H_3 、 H_4$ 均在这条根轴上.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8i14.png"
+    ]
+}

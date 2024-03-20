@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例5 函数 $y=\\frac{a x^2+3 x+b}{x^2+1}$ 的最大值为 $5 \\frac{1}{2}$, 最小值为 $\\frac{1}{2}$. 求 $a, b$ 的值.",
+    "solution": "解:将原式化为\n$$\n\\begin{aligned}\n& (a-y) x^2+3 x+(b-y)=0 . \\\\\n& \\Delta=9-4(a-y)(b-y) \\geqslant 0, \\\\\n& 4 y^2-4(a+b) y+4 a b-9 \\leqslant 0 .\n\\end{aligned}\n$$\n即显然 $y$ 的值在此不等式所对应的二次方程的两根之间, 根据求根公式,有\n$$\n\\begin{gathered}\n\\left\\{\\begin{array}{l}\na+b+\\sqrt{(a-b)^2+9}=11, \\\\\na+b-\\sqrt{(a-b)^2+9}=1\n\\end{array}\\right. \\\\\n\\Rightarrow\\left\\{\\begin{array} { l } \n{ a + b = 6 , } \\\\\n{ a - b = \\pm 4 }\n\\end{array} \\Rightarrow \\left\\{\\begin{array} { l } \n{ a = 5 , } \\\\\n{ b = 1 }\n\\end{array} \\text { 或 } \\left\\{\\begin{array}{l}\na=1, \\\\\nb=5 .\n\\end{array}\\right.\\right.\\right.\n\\end{gathered}\n$$\n以上两组都是满足题设的解.\n说明本题为判别式法的一种经典应用, 希望读者能熟练掌握.\n从严格意义上来说,此处的判别式法在应用时还必须考虑当 $a-y=0$ 的特殊情形, 可以推出, 此时 $b=a$, 进一步推下去 (用函数 $f(x)=x+\\frac{1}{x}$ 的值域的结论) 可以发现, 这种情形无法满足题设.\n虽然如此, 但这一点也必须考虑到.",
+    "remark": "",
+    "figures": []
+}

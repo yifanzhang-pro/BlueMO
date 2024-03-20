@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设正整数 $x 、 y 、 z$ 满足 $2 x^x=y^y+z^z$, 则 $x=y=z$.",
+    "solution": "证明:首先, 将 $(x+1)^{x+1}$ 展开即知\n$$\n(x+1)^{x+1}>x^{x+1}+(x+1) x^x>2 x^x, \\label{eq1}\n$$\n由此可知 $y 、 z$ 必须均 $\\leqslant x$ : 因若 $y 、 z$ 中有大于 $x$ 的, 无妨设 $y>x$, 因 $y 、 x$ 为整数,故 $y \\geqslant x+1$, 从而\n$$\ny^y+z^z>y^y \\geqslant(x+1)^y \\geqslant(x+1)^{x+1}>2 x^x \\text { (应用 式\\ref{eq1}), }\n$$\n产生矛盾.\n因此 $y \\leqslant x, z \\leqslant x$, 故\n$$\ny^y+z^z \\leqslant x^x+x^x=2 x^x,\n$$\n结合原方程知, 必须有 $y=x$, 且 $z=x$, 故 $x=y=z$. 证毕.",
+    "remark": "",
+    "figures": []
+}

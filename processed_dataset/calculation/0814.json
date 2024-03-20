@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-2.tex",
+    "problem_type": "calculation",
+    "problem": "例6. 已知两两不同的正整数 $a, b, c, d, e, f, g, h, n$ 满足\n$$\nn=a b+c d=e f+g h \\text {. }\n$$\n求 $n$ 的最小值.",
+    "solution": "解:若 $a, b, c, d, e, f, g, h$ 中没有一个等于 1 , 则\n$$\n\\begin{aligned}\n2 n & =a b+c d+e f+g h \\\\\n& \\geqslant 4 \\sqrt[4]{a b c d e f g h} \\\\\n& \\geqslant 4 \\sqrt[4]{2 \\times 3 \\times 4 \\times 5 \\times 6 \\times 7 \\times 8 \\times 9} \\\\\n& =4 \\sqrt[4]{2^7 \\times 3^4 \\times 5 \\times 7} \\\\\n& =4 \\times 4 \\times 3 \\times \\sqrt[4]{\\frac{35}{2}} \\\\\n& >4 \\times 4 \\times 3 \\times 2=96 .\n\\end{aligned}\n$$\n所以 $n \\geqslant 48$. 设 $a, b, c, d, e, f, g, h$ 中有一个等于 1 , 不妨设 $h=1$, 则 $2 n=a b+c d+e f+g$, 且存在最小值.\n此时 $g$ 一定是这些数中最大的一个.\n于是有\n$$\n\\begin{aligned}\n2 n & =a b+c d+e f+g \\\\\n& \\geqslant g+3 \\sqrt[3]{a b c d e f} \\\\\n& \\geqslant g+3 \\sqrt[3]{2 \\times 3 \\times 4 \\times 5 \\times 6 \\times 7} \\\\\n& =g+3 \\sqrt[3]{5040} \\\\\n& >g+3 \\sqrt[3]{4913}=g+51 .\n\\end{aligned}\n$$\n因为 $g \\geqslant 8$, 所以, $2 n \\geqslant 60, n \\geqslant 30$.\n如果 $g \\geqslant 9$, 则 $2 n \\geqslant 61, n \\geqslant 31$.\n假设 $n=30$, 则 $g=8$. 于是, $a, b, c, d, e, f, g, h$ 是集合 $\\{1,2,3,4$ , $5,6,7,8\\}$ 的一个排列, 特别地, 有一个数是 5 , 不妨设 $a=5$. 所以 $30=a b+ c d$, 即 $c d$ 可以被 5 整除.\n矛盾.\n因此 $n \\geqslant 31$. 又因为 $31=1 \\times 7+4 \\times 6=2 \\times 8+3 \\times 5$, 因此 $n$ 的最小值为 31 .",
+    "remark": "",
+    "figures": []
+}

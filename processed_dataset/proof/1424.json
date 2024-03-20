@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设 $f(x) 、 g(x)$ 是 $[0,1]$ 上的实值函数.\n求证: 存在 $x_0, y_0 \\in[0,1]$, 使得\n$$\n\\left|x_0 y_0-f\\left(x_0\\right)-g\\left(y_0\\right)\\right| \\geqslant \\frac{1}{4} \\text {. }\n$$",
+    "solution": "用反证法, 若不然, 则对一切 $x, y \\in[0,1]$, 都有: $\\mid x y-f(x)- g(y) \\mid<\\frac{1}{4}$, 分别取 $(x, y)=(0,0) 、(0,1) 、(1,0) 、(1,1)$, 有: $\\mid f(0)+ g(0)\\left|<\\frac{1}{4},\\right| f(0)+g(1)\\left|<\\frac{1}{4},\\right| f(1)+g(0)\\left|<\\frac{1}{4},\\right| 1-f(1)- g(1) \\mid<\\frac{1}{4}$.\n因此, $1=\\mid 1-f(1)-g(1)+f(0)+g(1)+f(1)+g(0)-f(0)- g(0)|\\leqslant| 1-f(1)-g(1)|+| f(0)+g(1)|+| f(1)+g(0)|+| f(0)+ g(0) \\mid<1$,矛盾!",
+    "remark": "",
+    "figures": []
+}

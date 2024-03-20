@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $n \\geqslant a_1>\\cdots>a_k \\geqslant 1$, 满足: 对任意 $i 、 j$,有 $\\left[a_i, a_j\\right] \\leqslant n$ 成立.\n求证:\n$$\nk \\leqslant 2 \\sqrt{n}+1 \\text {. }\n$$",
+    "solution": "证法 1 : 取定一个参量 $t, a_i \\leqslant t$ 的至多有 $t$ 个, 下面估计大于 $t$ 的那些 $a_i$ 的个数.\n首先,对任意两个 $a_i, a_j$, 有 $\\left[a_i, a_j\\right] \\leqslant n$, 即\n$$\n\\frac{a_i a_j}{\\left(a_i, a_j\\right)} \\leqslant n . \\label{(1)}\n$$\n而 $\\left(a_i, a_j\\right) \\mid a_i-a_j(\\neq 0)$, 故 $\\left|a_i-a_j\\right| \\geqslant\\left(a_i, a_j\\right)$.\n由(1), $\\frac{\\left(a_i, a_j\\right)}{a_i a_j} \\geqslant \\frac{1}{n}$, 故 $\\frac{\\left|a_i-a_j\\right|}{a_i a_j} \\geqslant \\frac{1}{n}$, 即\n$$\n\\left|\\frac{1}{a_i}-\\frac{1}{a_j}\\right| \\geqslant \\frac{1}{n} . \\label{(2)}\n$$\n对于 $a_1>a_2>\\cdots>a_l>t$, 有 $\\frac{1}{n}<\\frac{1}{a_1}<\\cdots<\\frac{1}{a_l}<\\frac{1}{t}$.\n结合(2)知 $l \\leqslant\\left(\\frac{1}{t}-\\frac{1}{n}\\right) \\cdot n$.\n综上所述, $k \\leqslant t+\\left(\\frac{1}{t}-\\frac{1}{n}\\right) \\cdot n=\\frac{n}{t}+t-1$.\n取 $t=[\\sqrt{n}]$, 即有 $k \\leqslant 2 \\sqrt{n}+1$.",
+    "remark": "",
+    "figures": []
+}

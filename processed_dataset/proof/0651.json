@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter15.tex",
+    "problem_type": "proof",
+    "problem": "例6. $k$ 个开关顺次排成一行, 分别指向上、下、左、右四个方向.\n若其中出现三个连续的开关,它们的方向各不相同,则将它们同时调整为第四个方向.\n证明: 这个操作不能无限次进行下去.",
+    "solution": "证明:将这 $k$ 个开关依次按 $1,2, \\cdots, k$ 进行编号.\n我们按下述方法对第 $n(1 \\leqslant n \\leqslant k)$ 个开关赋值 $f(n)$ :\n$n=1$ 时, $f(n)=1$;\n$n \\geqslant 2$ 时, 若第 $n-1$ 个开关和第 $n$ 个开关方向相同, 则 $f(n)=n$; 若不然, 则 $f(n)=1$.\n令 $h=f(1) f(2) \\cdots f(k)$, 显然 $h>0$. 可以证明, 随着操作次数的增加, $h$ 是递增的.\n事实上, 对任意的 $n(1 \\leqslant n \\leqslant k-2)$, 假定本次操作只对第 $n, n+1, n+2$ 个开关进行调整, 那么在这次操作之前, $f(n) \\leqslant n, f(n+1)=f(n+2)=1$, $f(n+3) \\leqslant n+3$, 所以\n$$\nf(n) f(n+1) f(n+2) f(n+3) \\leqslant n(n+3) .\n$$\n进行操作后, 得到 $f^{\\prime}(n) \\geqslant 1, f^{\\prime}(n+1)=n+1, f^{\\prime}(n+2)=n+2$, $f^{\\prime}(n+3) \\geqslant 1$.\n所以 $f^{\\prime}(n) f^{\\prime}(n+1) f^{\\prime}(n+2) f^{\\prime}(n+3) \\geqslant(n+1)(n+2)>f(n) f(n+$ 1) $f(n+2) f(n+3)$.\n而操作前后第 $i(1 \\leqslant i \\leqslant n-1$ 或 $n+4 \\leqslant i \\leqslant k)$ 个开关的值不变, 即 $f^{\\prime}(i)=f(i)$.\n于是 $h^{\\prime}=f^{\\prime}(1) f^{\\prime}(2) \\cdots f^{\\prime}(k)>f(1) f(2) \\cdots f(k)=h$.\n注意到 $h$ 有界 $(h \\leqslant 1 \\times 2 \\times \\cdots \\times k)$, 所以 $h$ 只能增长有限次.\n所以这个操作只能进行有限次.",
+    "remark": "注:本题中,如果仅简单地对 \"方向相同的相邻开关对\"进行计数, 则无法说明其恒增性.\n我们进行适当赋值, 构造出 \"高度函数\" $h$, 它是一个恒增量, 这就解决了困难.\n我们还可以定义其他的高度函数 $h$. 例如: 对第 $n$ 个开关赋值 $f(n)$ : 若第 $n$ 个开关和第 $n+1$ 个开关方向相反, 则 $f(n)=\\sqrt{n}$; 若不然, 则 $f(n)=0$. 定义高度函数 $h=\\sum_{n=1}^k f(n)$. 可以证明随着操作次数的增加, $h$ 是递减的.\n而 $h>0$, 所以 $h$ 只能减少有限次, 即得证.\n读者可以尝试用\"凹函数\" 来构造更多的高度函数 $h$. 关键是要定义一个正值函数 $f(n)$, 且对于所有的 $1 \\leqslant n \\leqslant k$, 满足 $f(n) \\cdot f(n+3)<f(n+1) \\cdot f(n+2)$, 或者 $f(n)+f(n+3)<f(n+1)+f(n+2)$.",
+    "figures": []
+}

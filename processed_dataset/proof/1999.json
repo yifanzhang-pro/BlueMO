@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 设 $A 、 B$ 为平面内异于原点 $O$ 的两点, 对应复数分别为 $t_1 、 t_2$.\n求证:\n$$\n\\begin{gathered}\n\\cos \\angle A O B=\\frac{t_1 \\overline{t_2}+\\overline{t_1} t_2}{2\\left|t_1 t_2\\right|}=\\frac{\\operatorname{Re}\\left(\\overline{t_1} t_2\\right)}{\\left|t_1 t_2\\right|}=\\frac{\\operatorname{Re}\\left(t_1 \\overline{t_2}\\right)}{\\left|t_1 t_2\\right|} . \\\\\nS_{\\triangle A O B}=\\frac{1}{2} \\operatorname{Im}\\left(\\overline{t_1} t_2\\right)=\\frac{1}{4 \\mathrm{i}}\\left(\\overline{t_1} t_2-t_1 \\overline{t_2}\\right), \\\\\n\\sin \\angle A O B=\\frac{\\operatorname{Im}\\left(\\overline{t_1} t_2\\right)}{\\left|t_1 t_2\\right|}=\\frac{\\overline{t_1} t_2-t_1 \\overline{t_2}}{2 \\mathrm{i}\\left|t_1 t_2\\right|},\n\\end{gathered}\n$$\n这里假定从 $O A$ 逆时针转过劣角而到 $O B$.",
+    "solution": "如图(<FilePath:./images/volume8/figures/fig-c9a2.png>), 由余弦定理,\n$$\n\\begin{aligned}\n\\cos \\angle A O B & =\\frac{t_1 \\overline{t_1}+t_2 \\overline{t_2}-\\left|t_1-t_2\\right|^2}{2\\left|t_1 t_2\\right|} \\\\\n& =\\frac{t_1 \\overline{t_1}+t_2 \\overline{t_2}-\\left(t_1-t_2\\right)\\left(\\overline{t_1}-\\overline{t_2}\\right)}{2\\left|t_1 t_2\\right|},\n\\end{aligned}\n$$\n化简即得求证式.\n至于面积, 不妨将 $A$ 顺时针转到横轴正方向, 即 $A \\rightarrow A^{\\prime}=t_1 \\mathrm{e}^{\\mathrm{i} \\theta}=$ 正实数 $=\\left|t_1\\right|$, 于是 $B \\rightarrow B^{\\prime}=t_2 \\mathrm{e}^{\\mathrm{i} \\theta}$.\n$$\nS_{\\triangle A O B}=S_{\\triangle A^{\\prime} O B^{\\prime}}=\\frac{1}{2}\\left|t_1\\right| \\cdot \\operatorname{Im}\\left(t_2 \\mathrm{e}^{\\mathrm{i} \\theta}\\right)=\\frac{1}{2}\\left|t_1\\right| \\cdot\n$$\n$\\operatorname{Im}\\left(\\frac{t_2}{t_1}\\left|t_1\\right|\\right)=\\frac{1}{2} \\operatorname{Im}\\left(\\overline{t_1} t_2\\right)=\\frac{\\overline{t_1} t_2-t_1 \\overline{t_2}}{4 \\mathrm{i}}, \\sin \\angle A O B$ 可即刻得出.\n证毕.",
+    "remark": "",
+    "figures": [
+        "./images/volume8/figures/fig-c9a2.png"
+    ]
+}

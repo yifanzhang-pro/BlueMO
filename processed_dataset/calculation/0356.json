@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 设 $X=\\{1,2,3, \\cdots, 1993\\}, A$ 是 $X$ 的子集, 且满足:(1)对 $A$ 中任何两个数 $x \\neq y$, 有 93 不整除 $x \\pm y$. (2) $S(A)=1993$. 求 $|A|$ 的最大值.",
+    "solution": "将 $X$ 划分为 47 个子集: $A_i=\\{x \\mid x \\equiv i$, 或 $x \\equiv 93-i(\\bmod 93)\\}$, $i=0,1,2, \\cdots, 46$. 对任何 $x, y \\in A_i$, 都有 $x-y \\equiv 0(\\bmod 93)$, 或 $x+y \\equiv 0(\\bmod 93)$, 所以 $A$ 至多含有 $A_i$ 中的一个数.\n于是 $|A| \\leqslant 47$. 令 $A=\\{10$, $11, \\cdots, 46\\} \\cup\\{93,94, \\cdots, 101\\} \\cup\\{84\\}$, 则 $A$ 合乎要求.\n故 $|A|$ 的最大值为 47.",
+    "remark": "",
+    "figures": []
+}

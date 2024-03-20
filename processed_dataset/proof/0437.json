@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例9. 若 $A_0 A_1 A_2 \\cdots A_{2 n-1}$ 为一个正 $2 n$ 边形,连接它的所有对角线, 这样得到一个图 $G$. 证明: 图 $G$ 的每个哈密顿圈都必定包含两条边, 它们在图中是平行线.",
+    "solution": "证明:设 $A_i A_j$ 与 $A_k A_l$ 平行, 由于 $A_i$ 与 $A_l$ 之间和 $A_j$ 与 $A_k$ 之间顶点数相同, 所以 $i-l=k-j$, 于是得到 $A_i A_j$ 与 $A_k A_l$ 平行的充要条件是\n$$\ni+j \\equiv k+l(\\bmod 2 n) \\text {. }\n$$\n设 $A_{i_0} A_{i_1} \\cdots A_{i_{2 n-1}}$ 是一个哈密顿圈 $\\left(i_0, i_1, \\cdots, i_{2 n-1}\\right.$ 是 $0,1, \\cdots, 2 n-1$ 的一个排列), 而其中任意的两条边在图中不是平行线.\n因此 $i_0+i_1, i_1+i_2, i_2+ i_3, \\cdots, i_{2 n-1}+i_0$ 这 $2 n$ 个数中的任意两个关于模 $2 n$ 都不同余, 即上述这 $2 n$ 个数是模 $2 n$ 的一组完全剩余系.\n于是\n$$\n\\begin{aligned}\n& \\left(i_0+i_1\\right)+\\left(i_1+i_2\\right)+\\cdots+\\left(i_{2 n-1}+i_0\\right) . \\\\\n\\equiv & 0+1+2+\\cdots+2 n-1=2 n^2-n \\\\\n\\equiv & n(\\bmod 2 n) .\n\\end{aligned}\n$$\n另一方面, 有\n$$\n\\begin{aligned}\n& \\left(i_0+i_1\\right)+\\left(i_1+i_2\\right)+\\cdots+\\left(i_{2 n-1}+i_0\\right) \\\\\n= & 2\\left(i_0+i_1+i_2+\\cdots+i_{2 n-1}\\right) \\\\\n= & 2(0+1+2+\\cdots+2 n-1) \\\\\n= & 2 n(2 n-1) \\\\\n\\equiv & 0(\\bmod 2 n) .\n\\end{aligned}\n$$\n上面得出了两个矛盾的结果, 从而命题得证.",
+    "remark": "",
+    "figures": []
+}

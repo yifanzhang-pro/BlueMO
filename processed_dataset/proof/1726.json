@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例4. 已知点 $A 、 B 、 C$ 在某平面上.\n设 $D 、 E 、 F 、 G 、 H 、 I$ 是同一平面上的点,且使得 $\\triangle A B D 、 \\triangle B A E 、 \\triangle C A F 、 \\triangle D F G 、 \\triangle E C H 、 \\triangle G H I$ 为正定向等边三角形.\n证明: 点 $E$ 是线段 $A I$ 的中点.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c6i4.png>) 所示, 连结 $C G 、 E I$ 在 $\\triangle A D F$ 和 $\\triangle C G F$ 中, 有 $A F=C F, D F=G F$, 又 $\\angle D F G= \\angle A F C=60^{\\circ}$, 于是, 绕点 $F$ 顺时针旋转 $60^{\\circ}, \\triangle A D F$ 变换为 $\\triangle C G F$.\n类似地, 绕点 $H$ 顺时针旋转 $60^{\\circ}$ 的几何变换中, $\\triangle H C G$ 变为 $\\triangle H E I$.\n又绕 $A$ 顺时针旋转 $120^{\\circ}$, 线段 $A D$ 变为线段 $A E$, 所以, $A E=A D=C G=E I$, 且 $A E$ 和 $E I$ 与 $A D$ 的夹角都等于 $120^{\\circ}$, 即 $A 、 E 、 I$ 三点共线, 综上,点 $E$ 是线段 $A I$ 的中点.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6i4.png"
+    ]
+}

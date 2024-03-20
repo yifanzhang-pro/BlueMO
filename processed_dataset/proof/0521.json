@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 某国 $N$ 个城市被航空线连接起来, 并且航线只向一个方向飞行.\n对于此航线, 下列条件 $f$ 是满足的: 从任一城市起飞, 不能沿着这些航线回到此城.\n求证: 能补充这个航线系统, 使每 2 个城市被航线连接, 并且新的航线系统也满足条件 $f$.",
+    "solution": "我们来证明, 如果现有的航线系统满足条件 $f$, 并且 2 个城市 $A$ 与 $B$ 没有航线联系, 那么这时可用航线 $A \\rightarrow B$ 或 $B \\rightarrow A$ 联系, 使所得航线系统仍旧满足条件.\n假设相反: 在新的航线系统中条件 $f$ 未被满足.\n那么在实现航线 $A \\rightarrow B$ 后出现闭合路线 $B \\rightarrow C_1 \\rightarrow \\cdots \\rightarrow C_n \\rightarrow A \\rightarrow B$. 类似地, 在实现航线 $B \\rightarrow A$ 后出现闭合路线 $A \\rightarrow D_1 \\rightarrow \\cdots \\rightarrow D_m \\rightarrow B \\rightarrow A$. 但是在实现 $A$ 与 $B$ 之间航线前已经有闭合航线 $A \\rightarrow D_1 \\rightarrow \\cdots \\rightarrow D_m \\rightarrow B \\rightarrow C_1 \\rightarrow \\cdots \\rightarrow C_n \\rightarrow A$ (可能有某些顶点 $C_i$ 与 $D_j$ 重合, 即以前的航线系统不满足条件 $f$, 因为可从 $A$ 地起飞然后返回.\n矛盾.",
+    "remark": "",
+    "figures": []
+}

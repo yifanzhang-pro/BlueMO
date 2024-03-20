@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 已知 $a \\in \\mathbf{R}$,试问:复数\n$$\nz=\\left(a^2-2 a+3\\right)-\\left(a^2-2 a+2\\right) \\mathrm{i}\n$$\n所对应的点在第几象限? 复数 $z$ 所对应点的轨迹是什么?",
+    "solution": "因为 $\\operatorname{Re}(z)=a^2-2 a+3=(a-1)^2+2 \\geqslant 2$,\n$$\n\\operatorname{Im}(z)=-\\left(a^2-2 a+2\\right)=-(a-1)^2-1 \\leqslant-1,\n$$\n所以 $\\operatorname{Re}(z)>0, \\operatorname{Im}(z)<0$, 故复数 $z$ 所对应的点在第四象限内.\n设 $z=x+y \\mathrm{i}(x, y \\in \\mathbf{R})$, 则 $\\left\\{\\begin{array}{l}x=a^2-2 a+3, \\\\ y=-\\left(a^2-2 a+2\\right),\\end{array}\\right.$ 消去 $a^2-2 a$, 得 $y= -x+1(x \\geqslant 2)$.\n所以, 复数 $z$ 所对应点的轨迹是以 $(2,-1)$ 为端点的一条射线 $y=-x+ 1(x \\geqslant 2)$.",
+    "remark": "",
+    "figures": []
+}

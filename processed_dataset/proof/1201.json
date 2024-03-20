@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 设 $a_1, a_2, \\cdots, a_{n+1}$ 为正等差数列(公差 $d \\geqslant 0$ ). 求证:\n$$\nn\\left(\\sqrt[n]{\\frac{a_{n+1}}{a_1}}-1\\right) \\leqslant \\sum_{i=1}^n \\frac{d}{a_i} \\leqslant \\frac{d}{d_1}+(n-1)\\left(1-\\sqrt[n-1]{\\frac{a_1}{a_n}}\\right) .\n$$",
+    "solution": "$\\sum_{k=1}^n \\frac{d}{a_k}=\\sum \\frac{a_{k+1}-a_k}{a_k}=\\sum \\frac{a_{k+1}}{a_k}-n \\geqslant n\\left(\\sqrt[n]{\\frac{a_2}{a_1} \\cdot \\frac{a_3}{a_2} \\cdot \\cdots \\cdot \\frac{a_{n+1}}{a_n}}-1\\right)=$\n$$\n\\begin{aligned}\n& n\\left(\\sqrt[n]{\\frac{a_{n+1}}{a_1}}-1\\right) . \\text { 又 } \\sum_{k=1}^n \\frac{d}{a_k}=\\frac{d}{a_1}+\\sum_{k=2}^n\\left(1-\\frac{a_{k-1}}{a_k}\\right) \\leqslant \\frac{d}{a_1}+(n-1)-(n-1) \\\\\n& \\sqrt[n-1]{\\frac{a_1}{a_n}}=\\frac{d}{a_1}+(n-1)\\left(1-\\sqrt[n-1]{\\frac{a_1}{a_n}}\\right) .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

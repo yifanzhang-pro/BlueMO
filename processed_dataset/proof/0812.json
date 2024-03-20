@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $M=2^{n_1}+2^{n_2}+\\cdots+2^{n_s}, n_1, n_2, \\cdots, n_s$ 是互不相同的正整数,求证:\n$$\n2^{\\frac{n_1}{2}}+2^{\\frac{n_2}{2}}+\\cdots+2^{\\frac{n_s}{2}}<(1+\\sqrt{2}) \\sqrt{M} .\n$$",
+    "solution": "对 $s$ 用数学归纳法.\n(1) 当 $s=1$ 时,结论显然成立.\n(2)假设结论对 $s=k$ 时成立, 则 $s=k+1$ 时, 不妨设 $n_1>n_2>\\cdots> n_k>n_{k+1}$. 对 $n_2, n_3, \\cdots, n_{k+1}$, 由归纳假设可知\n$$\n2^{\\frac{n_2}{2}}+2^{\\frac{n_3}{2}}+\\cdots+2^{\\frac{n_{k+1}}{2}}<(1+\\sqrt{2}) \\sqrt{M-2^{n_1}},\n$$\n则\n$$\n2^{\\frac{n_1}{2}}+2^{\\frac{n_2}{2}}+\\cdots+2^{\\frac{n_{k+1}}{2}}<(1+\\sqrt{2}) \\sqrt{M-2^{n_1}}+2^{\\frac{n_1}{2}} .\n$$\n以下只需证明\n$$\n(1+\\sqrt{2}) \\sqrt{M-2^{n_1}}+2^{\\frac{n_1}{2}}<(1+\\sqrt{2}) \\cdot \\sqrt{M} .\n$$\n由于 $M=2^{n_1}+2^{n_2}+\\cdots+2^{n_{k+1}} \\leqslant 2^{n_1}+2^{n_1-1}+\\cdots+2^{n_1-k}<2 \\times 2^{n_1}, M- 2^{n_1}<2^{n_1}$, 故 $\\sqrt{M-2^{n_1}}+\\sqrt{M}<(1+\\sqrt{2}) \\cdot 2^{\\frac{n_1}{2}}$, 两边乘以 $\\sqrt{M}-\\sqrt{M-2^{n_1}}$ 得\n$$\nM-\\left(M-2^{n_1}\\right)<(1+\\sqrt{2}) \\cdot 2^{\\frac{n_1}{2}}\\left(\\sqrt{M}-\\sqrt{M-2^{n_1}}\\right),\n$$\n即 $2^{\\frac{n_1}{2}}<(1+\\sqrt{2})\\left(\\sqrt{M}-\\sqrt{M-2^{n_1}}\\right)$, 此即(1). 从而 $s=k+1$ 时结论成立.\n因此, 由数学归纳法知, 命题对任意正整数 $s$ 均成立.",
+    "remark": "",
+    "figures": []
+}

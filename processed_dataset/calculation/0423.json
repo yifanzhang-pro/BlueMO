@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise12.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 对于集合 $\\{1,2, \\cdots, n\\}\\left(n \\in \\mathbf{N}^*\\right)$ 和它的每个非空子集,我们定义\"交替和\" 如下: 把集合中的数按从大到小顺序排列, 然后从最大的数开始交替地加减各数(例如 $\\{1,2,4,6,9\\}$ 的交替和是 $9-6+4-2+1=6$, 而 $\\{5\\}$ 的交替和就是 5$)$. 求所有这些交替和的总和.",
+    "solution": "记集合 $A \\subseteq\\{1,2, \\cdots, n\\}$ 的交替和为 $f(A)$. 约定 $f(\\varnothing)=0$, 不影响结果.\n对每个 $X \\subseteq\\{1,2, \\cdots, n-1\\}$, 设 $Y=X \\cup\\{n\\}=\\left\\{a_1, a_2, \\cdots, a_k\\right\\}$ 是 $\\{1,2, \\cdots, n\\}$ 中含有元素 $n$ 的子集, 其中 $n=a_1>a_2>\\cdots>a_k \\geqslant 1, k \\in \\mathbf{N}^*$. 则对集组 $(X, Y)$ 有\n$$\n\\begin{aligned}\nf(Y)+f(X) & =\\sum_{i=1}^k(-1)^{i-1} a_i+\\sum_{j=2}^k(-1)^j a_j \\\\\n& =n+\\sum_{i=2}^k(-1)^{i-1} a_i-\\sum_{j=2}^k(-1)^{j-1} a_j=n .\n\\end{aligned}\n$$\n由于 $\\{1,2, \\cdots, n\\}$ 的所有子集可以分成 $2^{n-1}$ 个这样的集组 $(X, Y)$, 故所有这些交替和的总和为 $n \\cdot 2^{n-1}$.",
+    "remark": "",
+    "figures": []
+}

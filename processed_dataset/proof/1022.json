@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题25 正实数 $\\alpha 、 \\beta 、 a 、 b$ 满足条件 $\\alpha<\\beta, \\alpha+\\beta<\\pi, a+b<\\pi$ 并且 $\\frac{\\sin a}{\\sin b} \\leqslant \\frac{\\sin \\alpha}{\\sin \\beta}$, 求证: $a<b$.",
+    "solution": "在 $x>0, y>0, x+y<\\pi$ 的条件下, $\\sin x<\\sin y$ 的充要条件是 $x<y$. 证明: 若 $0<x<y<\\frac{\\pi}{2}$, 则 $\\sin x<\\sin y$; 若 $\\frac{\\pi}{2}<y<\\pi-\\dot{x}$, 则 $\\sin y>\\sin (\\pi-x)=\\sin x$. 这样即得到当 $x<y$ 时均有 $\\sin x<\\sin y$. 反过来, 若 $\\sin x<\\sin y$, 则 $2 \\cos \\frac{x+y}{2} \\sin \\frac{x-y}{2}<0$, 而 $0<\\frac{x+y}{2}<\\frac{\\pi}{2}$, 所以 $\\sin \\frac{y-x}{2}>0$, 而 $0<\\frac{y-x}{2}<\\pi$ 得到 $y>x$. 利用上述结论由 $0<\\alpha<\\beta, \\alpha+\\beta<\\pi$ 可知 $\\sin \\alpha<\\sin \\beta$, 所以 $\\frac{\\sin a}{\\sin b} \\leqslant \\frac{\\sin \\alpha}{\\sin \\beta}<1$, 即 $\\sin a<\\sin b$, 再用一次上述结论可得 $a<b$.",
+    "remark": "",
+    "figures": []
+}

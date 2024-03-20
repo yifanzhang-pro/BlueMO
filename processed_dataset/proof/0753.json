@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 已知 $n$ 个实数 $x_1, x_2, \\cdots, x_n$ 的算术平均值为 $a$, 证明:\n$$\n\\sum_{k=1}^n\\left(x_k-a\\right)^2 \\leqslant \\frac{1}{2}\\left(\\sum_{k=1}^n\\left|x_k-a\\right|\\right)^2 .\n$$",
+    "solution": "当 $a=0$ 时,有\n$$\n0=\\left(x_1+x_2+\\cdots+x_n\\right)^2=\\sum_{k=1}^n x_k^2+2 \\sum_{1 \\leqslant i<j \\leqslant n} x_i x_j,\n$$\n所以于是\n$$\n\\begin{aligned}\n& \\sum_{k=1}^n \\dot{x}_k^2=-2 \\sum_{1 \\leqslant i<j \\leqslant n} x_i x_j, \\\\\n& \\sum_{k=1}^n x_k^2 \\leqslant 2 \\sum_{1 \\leqslant i<j \\leqslant n}\\left|x_i x_j\\right|,\n\\end{aligned}\n$$\n从而\n$$\n2 \\sum_{k=1}^n x_k^2 \\leqslant \\sum_{k=1}^n x_k^2+2 \\sum_{1 \\leqslant i<j \\leqslant n}\\left|x_i x_j\\right|=\\left(\\sum_{k=1}^n\\left|x_k\\right|\\right)^2,\n$$\n即 $a=0$ 时, 不等式成立.\n当 $a \\neq 0$ 时, 令 $y_k=x_k-a, k=1,2, \\cdots, n$, 则 $y_1, y_2, \\cdots, y_n$ 的算术平均值为 0 , 利用上面已经证明的结果, 可得\n$$\n\\sum_{k=1}^n y_k^2 \\leqslant \\frac{1}{2}\\left(\\sum_{k=1}^n\\left|y_k\\right|\\right)^2,\n$$\n故\n$$\n\\sum_{k=1}^n\\left(x_k-a\\right)^2 \\leqslant \\frac{1}{2}\\left(\\sum_{k=1}^n\\left|x_k-a\\right|\\right)^2 .\n$$",
+    "remark": "注:本题中 $a=0$ 这种情形是容易证明的.\n当 $a \\neq 0$ 时, 我们通过一个代换, 把它化归为 $a=0$ 时的情形,进而求得解答,这是一种常用的手法.",
+    "figures": []
+}

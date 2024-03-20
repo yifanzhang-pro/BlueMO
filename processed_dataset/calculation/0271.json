@@ -1,0 +1,13 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 说明下面两个图(<FilePath:./images/volume12/figures/fig-c1p3-1.png>)和(<FilePath:./images/volume12/figures/fig-c1p3-2.png>) 是同构的.",
+    "solution": "如图(<FilePath:./images/volume12/figures/fig-c1a3-1.png>)和如图(<FilePath:./images/volume12/figures/fig-c1a3-2.png>)所示建立点的对应关系为: $v_1 \\longleftrightarrow u_1, v_2 \\longleftrightarrow u_2, v_3 \\longleftrightarrow u_3, v_4 \\longleftrightarrow u_4, v_5 \\leftrightarrow u_5$, 边的对应关系为 $e_1 \\longleftrightarrow e_1^{\\prime}, e_2 \\longleftrightarrow e_2^{\\prime}, e_3 \\leftrightarrow e_3^{\\prime}, \\cdots, e_8 \\leftrightarrow e_8^{\\prime}$. 这两个图的顶点数相等, 边数相等, 且顶点和边相互对应, 因此这两图是同构的.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c1p3-1.png",
+        "./images/volume12/figures/fig-c1p3-2.png",
+        "./images/volume12/figures/fig-c1a3-1.png",
+        "./images/volume12/figures/fig-c1a3-2.png"
+    ]
+}

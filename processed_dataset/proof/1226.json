@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 设 $a, b, c \\in \\mathbf{R}^{+}$, 且 $a b c=1$, 求证:\n$$\n\\frac{1}{1+2 a}+\\frac{1}{1+2 b}+\\frac{1}{1+2 c} \\geqslant 1 \\text {. }\n$$",
+    "solution": "令 $a=\\frac{x}{y}, b=\\frac{y}{z}, c=\\frac{z}{x}$, 则原不等式等价于 $\\frac{y}{2 x+y}+\\frac{z}{2 y+z}+ \\frac{x}{2 z+x} \\geqslant 1$. 由柯西不等式, 得 $[x(x+2 z)+y(y+2 x)+z(z+ 2 y)]\\left(\\frac{x}{x+2 z}+\\frac{y}{y+2 x}+\\frac{z}{z+2 y}\\right) \\geqslant(x+y+z)^2$, 即 $(x+y+ z)^2\\left(\\frac{x}{x+2 z}+\\frac{y}{y+2 x}+\\frac{z}{z+2 y}\\right) \\geqslant(x+y+z)^2$.",
+    "remark": "",
+    "figures": []
+}

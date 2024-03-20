@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 已知 $a 、 b 、 c$ 是 $\\triangle A B C$ 的三边长, 求证:\n$$\n\\left|\\frac{(a-b)(b-c)(c-a)}{(a+b)(b+c)(c+a)}\\right|<\\frac{1}{22} .\n$$",
+    "solution": "不妨设 $a \\geqslant b \\geqslant c$, 令 $b=c+x, a=b+y=c+x+y$, 由 $a<b+ c$ 知 $y<c$. 若 $x y=0$ 命题显然成立.\n下设 $x y \\neq 0$, 则 $x>0, y>0$.\n$$\n\\begin{aligned}\n\\text { 左式 } & =\\frac{y x(x+y)}{(2 x+y+2 c)(x+2 c)(x+y+2 c)} \\\\\n& <\\frac{x^2 y+y^2 x}{(2 x+3 y)(x+2 y)(x+3 y)} \\\\\n& =\\frac{x^2 y+y^2 x}{2 x^3+13 x^2 y+27 x y^2+18 y^3} .\n\\end{aligned}\n$$\n令 $x=k y, k>0$, 则\n$$\n\\begin{aligned}\n& 2 x^3+13 x^2 y+27 x y^2+18 y^3 \\\\\n= & 2 x^2 \\cdot k y+13 x^2 y+22 x y^2+\\frac{5}{k} x^2 y+\\frac{18}{k^2} x^2 y \\\\\n= & \\left(2 k+\\frac{5}{k}+\\frac{18}{k^2}\\right) x^2 y+13 x^2 y+22 x y^2 \\\\\n\\geqslant & 5 \\cdot \\sqrt[5]{\\left(\\frac{2}{3} k\\right)^3 \\cdot \\frac{5}{k} \\cdot \\frac{18}{k^2}} \\cdot x^2 y+13 x^2 y+22 x y^2 \\\\\n> & 22\\left(x^2 y+y^2 x\\right),\n\\end{aligned}\n$$\n故原不等式成立.",
+    "remark": "",
+    "figures": []
+}

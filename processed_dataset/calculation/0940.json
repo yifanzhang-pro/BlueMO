@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 已知实系数方程\n$$\nx^3+2(k-1) x^2+9 x+5(k-1)=0, \\label{eq1}\n$$\n有一个模为 $\\sqrt{5}$ 的虚根.\n求 $k$ 的值, 并解此方程.",
+    "solution": "分析:与解因为 $x^3+2(k-1) x^2+9 x+5(k-1)=0$, 由虚根成对原理, 可知 式\\ref{eq1} 有一个实根和两个模长为 $\\sqrt{5}$ 的虚根, 它们互为共轭, 设这三个根为 $a+b \\mathrm{i}, a-b \\mathrm{i}, c(a 、 b 、 c \\in \\mathbf{R})$, 则\n$$\na^2+b^2=5 . \\label{eq2}\n$$\n由韦达定理, 有 $\\left\\{\\begin{array}{l}(a+b \\mathrm{i})+(a-b \\mathrm{i})+c=-2(k-1), \\\\ (a+b \\mathrm{i})(a-b \\mathrm{i})+c(a+b \\mathrm{i})+c(a-b \\mathrm{i})=9, \\\\ (a+b \\mathrm{i})(a-b \\mathrm{i}) c=-5(k-1) .\\end{array}\\right.$\n结合(2)整理得\n$$\n\\begin{gathered}\n2 a+c=-2(k-1), \\label{eq3} \\\\\na c=2, \\label{eq4}\\\\\nc=-k+1 . \\label{eq5}\n\\end{gathered}\n$$\n由式\\ref{eq3}, \\ref{eq5}知 $c=1-k, a=\\frac{1}{2}(1-k)$, 并将其代入 式\\ref{eq2}, 可得 $k=-1$ 或 3 .\n再求解方程式\\ref{eq1}知: 当 $k=-1$ 时, 式\\ref{eq1}的解为 $1+2 \\mathrm{i}, 1-2 \\mathrm{i}, 2$; 当 $k=3$ 时, 式\\ref{eq1}的解为 $-2,-1+2 \\mathrm{i},-1-2 \\mathrm{i}$.",
+    "remark": "注:利用虚根成对是本题的关键.",
+    "figures": []
+}

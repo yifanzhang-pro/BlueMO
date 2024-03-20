@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例6. 求 $\\left(x^2-y^2\\right)^2=1+16 y$ 的全部整数解.",
+    "solution": "解:因方程左边 $\\geqslant 0$, 故右边 $\\geqslant 0$, 从而 $y \\geqslant 0$. 又显然 $x^2-y^2 \\neq 0$, 而 $x_1 y$ 为整数, 故 $|x| \\geqslant y+1$, 或 $|x| \\leqslant y-1$.\n当 $|x| \\geqslant y+1$ 时,方程左边 $\\geqslant\\left((y+1)^2-y^2\\right)^2=(2 y+1)^2$.\n当 $|x| \\leqslant y-1$ 时, 此时 $y-1 \\geqslant 0$, 且 $y^2-x^2 \\geqslant y^2-(y-1)^2=2 y- 1>0$, 故方程左边 $\\geqslant(2 y-1)^2$.\n因此由原方程产生\n$$\n(2 y-1)^2 \\leqslant 1+16 y,\n$$\n故有 $0 \\leqslant y \\leqslant 5$. 逐一检验可求出全部整数解为 $\\left(x_1 y\\right)=( \\pm 1,0),( \\pm 4,3)$, $( \\pm 4,5)$.",
+    "remark": "",
+    "figures": []
+}

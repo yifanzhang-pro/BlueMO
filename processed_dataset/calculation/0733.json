@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 已知锐角 $\\triangle A B C$ 的边长分别为 $2 、 3 、 x$, 则第三边 $x$ 适合的条件是 ( ).\n(A) $1<x<5$\n(B) $\\sqrt{5}<x<\\sqrt{13}$\n(C) $\\sqrt{13}<x<5$\n(D) $1<x<\\sqrt{5}$",
+    "solution": "B. 由条件得 $2^2+3^2>x^2$, 且 $2^2+x^2>3^2$, 且 $1<x<5$, 解之得 $\\sqrt{5}< x<\\sqrt{13}$.",
+    "remark": "",
+    "figures": []
+}

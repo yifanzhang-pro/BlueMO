@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题22. 计算: (1) $\\arcsin \\left(\\sin \\frac{3 \\pi}{4}\\right)+\\arccos \\left(\\cos \\frac{3 \\pi}{4}\\right)$;\n(2) $\\arctan \\frac{1}{2}+\\arctan \\frac{1}{5}+\\arctan \\frac{1}{8}$.",
+    "solution": "(1) 原式 $=\\pi-\\frac{3 \\pi}{4}+\\frac{3 \\pi}{4}=\\pi$. (2) 原式 $=\\frac{\\pi}{4}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例4. (高灵不等式)设凸四边形 $A B C D$ 和 $A^{\\prime} B^{\\prime} C^{\\prime} D^{\\prime}$ 的四边分别为 $a$ 、 $b 、 c 、 d$ 和 $a^{\\prime} 、 b^{\\prime} 、 c^{\\prime} 、 d^{\\prime}$, 它们的面积分别为 $F 、 F^{\\prime}$. 令\n$$\nK=4(a d+b c)\\left(a^{\\prime} d^{\\prime}+b^{\\prime} c^{\\prime}\\right)-\\left(a^2-b^2-c^2+d^2\\right)\\left(a^{\\prime 2}-b^{\\prime 2}-c^{\\prime 2}+d^{\\prime 2}\\right) \\text {. }\n$$\n求证:\n$$\nK \\geqslant 16 F F^{\\prime} \\text {. }\n$$",
+    "solution": "证明:由于给定边长的四边形以圆的内接四边形具有最大面积, 因此仅需考虑 $A B C D$ 和 $A^{\\prime} B^{\\prime} C^{\\prime} D^{\\prime}$ 均为圆内接四边形的情况.\n如图(<FilePath:./images/volume9/figures/fig-c3i5.png>), 因为 $\\angle B+\\angle D=180^{\\circ}$, 所以\n$$\n2 F=(a d+b c) \\sin B , \\label{eq1}\n$$\n类似的有\n$$\n2 F^{\\prime}=\\left(a^{\\prime} d^{\\prime}+b^{\\prime} c^{\\prime}\\right) \\sin B^{\\prime} . \\label{eq2}\n$$\n另一方面, 由余弦定理\n$$\n\\begin{aligned}\nA C^2 & =b^2+c^2+2 b c \\cos B \\\\\n& =a^2+d^2-2 a d \\cos B,\n\\end{aligned}\n$$\n因此 $\\quad a^2-b^2-c^2+d^2=2(a d+b c) \\cos B, \\label{eq3}$,\n类似的有 $\\quad a^{\\prime 2}-b^{\\prime 2}-c^{\\prime 2}+d^{\\prime 2}=2\\left(a^{\\prime} d^{\\prime}+b^{\\prime} c^{\\prime}\\right) \\cos B^{\\prime}, \\label{eq4}$.\n由式\\ref{eq1}、\\ref{eq4}可得\n$$\nK-16 F F^{\\prime}=4(a d+b c)\\left(a^{\\prime} d^{\\prime}+b^{\\prime} c^{\\prime}\\right)\\left(1-\\cos \\left(B-B^{\\prime}\\right)\\right) \\geqslant 0,\n$$\n故原不等式成立.",
+    "remark": "注:由上面的证法, 实际上可把高灵不等式写的更一般一些:\n$$\n0 \\leqslant K-16 F F^{\\prime} \\leqslant 8(a d+b c)\\left(a^{\\prime} d^{\\prime}+b^{\\prime} c^{\\prime}\\right),\n$$\n左边的不等式即为高灵不等式.\n高灵不等式可看作是著名的 Neuberg-Pedoe 不等式在四边形中的推广.\n在这一节的最后, 我们研究一个难度较大的关于双圆四边形的极值问题, 这里要介绍的解法由向振同学 (原长沙市一中学生, 曾获 2003 年第 44 届 $\\mathrm{IMO}$ 金牌)给出.",
+    "figures": [
+        "./images/volume9/figures/fig-c3i5.png"
+    ]
+}

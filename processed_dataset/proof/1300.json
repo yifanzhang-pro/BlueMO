@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $a, b, c, d \\in \\mathbf{R}^{+}$, 且\n$$\n\\frac{a^2}{1+a^2}+\\frac{b^2}{1+b^2}+\\frac{c^2}{1+c^2}+\\frac{d^2}{1+d^2}=1 .\n$$\n求证: $a b c d \\leqslant \\frac{1}{9}$.",
+    "solution": "证明:令 $a=\\tan \\alpha, b=\\tan \\beta, c=\\tan \\gamma, d=\\tan \\delta . \\alpha, \\beta, \\gamma, \\delta \\in \\left(0, \\frac{\\pi}{2}\\right)$. 于是 $\\sin ^2 \\alpha+\\sin ^2 \\beta+\\sin ^2 \\gamma+\\sin ^2 \\delta=1$. 所以\n$3 \\cdot \\sqrt[3]{\\sin ^2 \\alpha \\sin ^2 \\beta \\sin ^2 \\gamma} \\leqslant \\sin ^2 \\alpha+\\sin ^2 \\beta+\\sin ^2 \\gamma=\\cos ^2 \\delta$,\n$3 \\cdot \\sqrt[3]{\\sin ^2 \\alpha \\sin ^2 \\beta \\sin ^2 \\delta} \\leqslant \\sin ^2 \\alpha+\\sin ^2 \\beta+\\sin ^2 \\delta=\\cos ^2 \\gamma$,\n$3 \\cdot \\sqrt[3]{\\sin ^2 \\alpha \\sin ^2 \\gamma \\sin ^2 \\delta} \\leqslant \\sin ^2 \\alpha+\\sin ^2 \\gamma+\\sin ^2 \\delta=\\cos ^2 \\beta$,\n$3 \\cdot \\sqrt[3]{\\sin ^2 \\beta \\sin ^2 \\gamma \\sin ^2 \\delta} \\leqslant \\sin ^2 \\beta+\\sin ^2 \\gamma+\\sin ^2 \\delta=\\cos ^2 \\alpha$.\n上面四式相乘, 得 $\\tan ^2 \\alpha \\tan ^2 \\beta \\tan ^2 \\gamma \\tan ^2 \\delta \\leqslant \\frac{1}{81}$.\n因此 $\\quad a b c d=\\tan \\alpha \\tan \\beta \\tan \\gamma \\tan \\delta \\leqslant \\frac{1}{9}$.",
+    "remark": "",
+    "figures": []
+}

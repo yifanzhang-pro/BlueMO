@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题13. 用 $\\{x\\}$ 表示实数 $x$ 的小数部分.\n证明: 对任意 $n \\in \\mathbf{N}^*$, 都有\n$$\n\\sum_{k=1}^{n^2}\\{\\sqrt{k}\\} \\leqslant \\frac{n^2-1}{2} .\n$$",
+    "solution": "对 $n$ 归纳, 只需注意到\n$$\n\\begin{aligned}\n\\sum_{k=1}^{(n+1)^2}\\{\\sqrt{k}\\} & =\\sum_{k=1}^{n^2}\\{\\sqrt{k}\\}+\\sum_{k=n^2+1}^{(n+1)^2}\\{\\sqrt{k}\\} \\\\\n& \\leqslant \\frac{1}{2}\\left(n^2-1\\right)+\\sum_{k=1}^{2 n}\\left(\\sqrt{n^2+k}-n\\right) \\\\\n& \\leqslant \\frac{1}{2}\\left(n^2-1\\right)+\\sum_{k=1}^{2 n}\\left(\\sqrt{\\left(n+\\frac{k}{2 n}\\right)^2}-n\\right) \\\\\n& =\\frac{1}{2}\\left(n^2-1\\right)+\\frac{1}{2 n} \\sum_{k=1}^{2 n} k \\\\\n& =\\frac{1}{2}\\left(n^2-1\\right)+\\frac{1}{2}(2 n+1)\n\\end{aligned}\n$$\n$$\n=\\frac{1}{2}\\left((n+1)^2-1\\right) .\n$$\n即可实现归纳过渡.",
+    "remark": "",
+    "figures": []
+}

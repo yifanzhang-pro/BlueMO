@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $a 、 b 、 c$ 为正实数,且 $a+b+c \\geqslant a b c$, 求证:\n$$\na^2+b^2+c^2 \\geqslant a b c .\n$$",
+    "solution": "若 $a^2+b^2+c^2<a b c$, 则 $a<b c, b<c a, c<a b$.\n故 $a+b+c<a b+b c+c a \\leqslant a^2+b^2+c^2<a b c$,矛盾!",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设 $n \\geqslant 4$ 是整数, $a_1, \\cdots, a_n$ 是小于 $2 n$ 的互不相同的正整数.\n证明: 从这些数中可取出若干个,使它们的和被 $2 n$ 整除.",
+    "solution": "若每个 $a_i$ 都不等于 $n$, 则结论易证.\n因为 $2 n$ 个数\n$$\na_1, a_2, \\cdots, a_n, 2 n-a_1, 2 n-a_2, \\cdots, 2 n-a_n .\n$$\n都是正整数, 且小于 $2 n$, 故其中必有两个相等, 即有 $i, j$ 使 $a_i=2 n-a_j$. 因 $i= j$ 意味着 $a_i=n$, 这与假设不符, 故 $i \\neq j$, 从而 $a_i+a_j=2 n$, 可被 $2 n$ 整除.\n现在无妨设 $a_n=n$. 考虑 $n-1(\\geqslant 3)$ 个整数 $a_1, a_2, \\cdots, a_{n-1}$, 这其中必有两个数的差不被 $n$ 整除, 因为,若所有的 $\\mathrm{C}_{n-1}^2$ 个两数之差都被 $n$ 整除, 则因 $\\mathrm{C}_{n-1}^2 \\geqslant 3$, 故有三个数 $a_i<a_j<a_k$, 使 $n\\left|\\left(a_j-a_i\\right), n\\right|\\left(a_k-a_j\\right)$, 从而 $a_k- a_i=\\left(a_k-a_j\\right)+\\left(a_j-a_i\\right) \\geqslant 2 n$, 这不可能.\n无妨设 $a_1-a_2$ 不被 $n$ 整除.\n考虑下面 $n$ 个数\n$$\na_1, a_2, a_1+a_2, a_1+a_2+a_3, \\cdots, a_1+a_2+\\cdots+a_{n-1} . \\label{eq1}\n$$\n若它们模 $n$ 互不同余, 则其中有一个被 $n$ 整除; 若式\\ref{eq1}中的数有两个模 $n$ 同余, 则这两数的差被 $n$ 整除,因此必产生 $a_1, \\cdots, a_{n-1}$ 中某些数之和被 $n$ 整除(因 $a_1-a_2$ 不被 $n$ 整除), 记这个和为 $k n$. 若 $k$ 是偶数,则结论已成立; 若 $k$ 是奇数, 将 $a_n=n$ 添人所说的和, 即得结果.",
+    "remark": "",
+    "figures": []
+}

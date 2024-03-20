@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例7. 凸四边形 $A B C D$ 的对角线交于点 $M$, 点 $P 、 Q$ 分别是 $\\triangle A M D$ 和 $\\triangle C M B$ 的重心, $R 、 S$ 分别是 $\\triangle D M C$ 和 $\\triangle M A B$ 的垂心.\n求证: $P Q \\perp R S$.",
+    "solution": "分析:与解以任意点 $O$ 为原点, 利用向量证明.\n$$\n\\begin{aligned}\n\\overrightarrow{S R} \\cdot \\overrightarrow{P Q}= & (\\overrightarrow{S M}+\\overrightarrow{M R}) \\cdot(\\vec{Q}-\\vec{P}) \\\\\n= & (\\overrightarrow{S M}+\\overrightarrow{M R}) \\cdot \\frac{1}{3} \\cdot(\\vec{B}+\\vec{M}+\\vec{C}-\\vec{A}-\\vec{D}-\\vec{M}) \\\\\n= & \\frac{1}{3}(\\overrightarrow{S M}+\\overrightarrow{M R})(\\overrightarrow{A B}+\\overrightarrow{D C}) \\\\\n= & \\frac{1}{3}(\\overrightarrow{S M} \\cdot \\overrightarrow{A B}+\\overrightarrow{S M} \\cdot \\overrightarrow{D C}+\\overrightarrow{M R} \\cdot \\overrightarrow{A B}+\\overrightarrow{M R} \\cdot \\overrightarrow{D C}) \\\\\n= & \\frac{1}{3}(\\overrightarrow{S M} \\cdot \\overrightarrow{D C}+\\overrightarrow{M R} \\cdot \\overrightarrow{A B}) \\\\\n= & \\frac{1}{3}\\left[|S M| \\cdot|D C| \\cdot \\cos \\left(\\frac{3}{2} \\pi-\\angle A D C-\\angle D A B\\right)+\\right. \\\\\n& \\left.|M R| \\cdot|A B| \\cdot \\cos \\left(\\angle A D C+\\angle D A B-\\frac{\\pi}{2}\\right)\\right] \\\\\n= & \\frac{1}{3}(|A B| \\cdot \\cot \\angle A M B \\cdot|D C|-\\cot \\angle D M C \\cdot|C D| \\cdot \\\\\n& |A B|) \\cdot \\cos \\left(\\frac{3}{2} \\pi-\\angle A D C-\\angle D A B\\right) \\\\\n= & 0 .\n\\end{aligned}\n$$\n所以, 命题成立, 证毕.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题13. 已知非等腰锐角 $\\triangle A B C, A A_1 、 B B_1$ 是它的两条高, 又线段 $A_1 B_1$ 与平行于 $A B$ 的中位线相交于点 $C^{\\prime}$. 证明: 经过 $\\triangle A B C$ 的外心和垂心的直线与直线 $C C^{\\prime}$ 垂直.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c5a13.png>), 在 $\\triangle A B C$ 中, 分别将边 $B C$ 、 $C A$ 的中点记作 $A_0 、 B_0$, 将三角形的垂心记作 $H$, 外心记作 $O$. 因为点 $A 、 B 、 A_1 、 B_1$ 位于同一圆周上 ( $A B$ 为其直径), 所以, $\\angle C B_1 A_1= \\angle C B A=\\angle C A_0 B_0$. 故点 $A_0 、 B_0 、 A_1 、 B_1$ 位于同一圆周 $W_1$ 上.\n将以 $C H$ 为直径的圆周记作 $W_2$, 将以 $C O$ 为直径的圆周记作 $W_3$. 易知, 点\n$A_1 、 B_1$ 位于圆周 $W_2$ 上, 而点 $A_0 、 B_0$ 位于圆周 $W_3$ 上.\n因此, 点 $C^{\\prime}$ 关于圆 $W_1$ 和圆 $W_2$ 有相同的幂, 关于圆 $W_1$ 和圆 $W_3$ 也有相同的幕.\n从而, 点 $C^{\\prime}$ 关于圆 $W_2$ 和圆 $W_3$ 有相同的幕, 即位于它们的根轴之上.\n所以, 直线 $C C^{\\prime}$ 就是圆 $W_2$ 和圆 $W_3$ 的根轴.\n故 $C C^{\\prime}$ 垂直于这两个圆的圆心连线.\n又圆 $W_2$ 和圆 $W_3$ 的圆心分别为线段 $C H$ 和 $C O$ 的中点, 它们的连线平行于直线 $O H$, 则 $O H \\perp C C^{\\prime}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5a13.png"
+    ]
+}

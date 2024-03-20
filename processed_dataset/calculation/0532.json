@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例15 用不动点法求解,已知 $f(x)$ 是一次函数, 且\n$$\nf^{(10)}(x)=1024 x+1023,\n$$\n求 $f(x)$ 的解析式.\n且设 $a \\neq 1$ ).",
+    "solution": "解:令 $f(x)=x$, 得 $f(x)$ 的唯一不动点 $x=\\frac{b}{1-a}$.\n故\n$$\nf(x)=a\\left(x-\\frac{b}{1-a}\\right)+\\frac{b}{1-a},\n$$\n$$\nf^{(2)}(x)=a^2\\left(x-\\frac{b}{1-a}\\right), 1-a,\n$$\n由归纳法, 得\n$$\nf^{(n)}(x)=a^n\\left(x-\\frac{b}{1-a}\\right)+\\frac{b}{1-a} .\n$$",
+    "remark": "",
+    "figures": []
+}

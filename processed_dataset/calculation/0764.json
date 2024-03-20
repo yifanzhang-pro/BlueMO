@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题16. 方程 $\\sin x=\\cos \\frac{2}{5} \\pi$ 的解集为",
+    "solution": "$\\left\\{x \\mid x=k \\pi+(-1)^k \\cdot \\frac{1}{10} \\pi, k \\in \\mathbf{Z}\\right\\}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例4. 求证:两端点在一圆周上且将此圆分成等面积的两部分的所有曲线中, 以此圆的直径具有最短的长度.",
+    "solution": "证明:设 $\\widehat{A B}$ 是一条满足题设条件的曲线.\n如果 $A 、 B$ 两点正好是某一条直径的两个端点, 那么显然 $\\widehat{A B}$ 的长度不会小于圆的直径.\n如果弦 $A B$ 不是直径, 如图(<FilePath:./images/volume9/figures/fig-c1i3.png>), 那么令与弦 $A B$ 平行的直径为 $C D$, 曲线 $\\widehat{A B}$ 至少与 $C D$ 交于不同的两点, 设不是圆心的那个交点为 $E$, 则曲线 $\\widehat{A B}$ 的长 $=$ 曲线 $\\widehat{A E}$ 的长 + 曲线 $\\widehat{E B}$ 的长 $\\geqslant A E+E B$. (这样将曲线化为了折线)\n下面再证折线 $(A E+E B)>$ 圆的直径.\n为此, 作 $B$ 关于 $C D$ 的对称点 $B^{\\prime}$, 则易证 $A B^{\\prime}$ 是圆的直径.\n于是\n$$\nA E+E B=A E+E B^{\\prime}>A B^{\\prime}=\\text { 圆的直径.\n}\n$$\n综上便知所证结论成立.\n下面的例题源于我们对垂足三角形极值性质的研究.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c1i3.png"
+    ]
+}

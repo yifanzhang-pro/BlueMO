@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $P$ 是锐角 $\\triangle A B C$ 所在平面上任一点, $u 、 v 、 w$ 分别为点 $P$ 到 $A$ 、 $B 、 C$ 的距离.\n求证:\n$$\nu^2 \\tan A+v^2 \\tan B+w^2 \\tan C \\geqslant 4 \\Delta,\n$$\n并指出等号成立的条件, 其中 $\\triangle$ 为 $\\triangle A B C$ 的面积.",
+    "solution": "证明:如图(<FilePath:./images/volume9/figures/fig-c6i4.png>), 取 $B C$ 所在的直线为 $X$ 轴, 过 $A$ 的高线所在的直线为 $Y$ 轴, 建立平面直角坐标系.\n设 $A 、 B 、 C$ 的坐标分别为 $(0, a) 、(-b, 0)$ 、 $(c, 0)$ (这里 $a, b, c>0)$, 于是\n$$\n\\tan A=-\\tan (B+C)=\\frac{a(b+c)}{a^2-b c} .\n$$\n由 $\\angle A$ 为锐角知 $a^2-b c>0$.\n现设点 $P$ 的坐标为 $(x, y)$, 则\n$$\n\\begin{aligned}\n& u^2 \\tan A+v^2 \\tan B+w^2 \\tan C \\\\\n= & {\\left[x^2+(y-a)^2\\right] \\frac{a(b+c)}{a^2-b c}+\\frac{a}{b}\\left[(x+b)^2+y^2\\right]+\\frac{a}{c}\\left[(x-c)^2+y^2\\right] } \\\\\n= & \\left(x^2+y^2+a^2-2 a y\\right) \\frac{a(b+c)}{a^2-b c}+\\frac{a(b+c)}{b c}\\left(x^2+y^2+b c\\right) \\\\\n= & \\frac{a(b+c)}{b c\\left(a^2-b c\\right)}\\left[a^2 x^2+(a y-b c)^2+2 b c\\left(a^2-b c\\right)\\right] \\\\\n\\geqslant & \\frac{a(b+c)}{b c\\left(a^2-b c\\right)} \\cdot 2 b c\\left(a^2-b c\\right) \\\\\n= & 2 a(b+c)=4 \\Delta .\n\\end{aligned}\n$$\n从上面的证明过程可看出, 等号成立的充要条件是 $x=0$ 且 $y=\\frac{b c}{a}$, 即点 $P$ 为 $\\triangle A B C$ 的垂心 $\\left(0, \\frac{b c}{a}\\right)$.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c6i4.png"
+    ]
+}

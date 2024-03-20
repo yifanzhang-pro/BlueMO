@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例3. 如图(<FilePath:./images/volume7/figures/fig-c5i5.png>), 圆内接四边形 $A B C D$ 中, $A D=A B$. 求证: $A B^2+B C C D=A C^2$.",
+    "solution": "证明:将 $\\triangle A C D$ 绕着 $A$ 点逆时针旋转, 使 $A D$ 与 $A B$ 重合.\n由 $A D=A B$, 且 $A B C D$ 是圆内接四边形知: $C 、 B 、 E$ 三点共线.\n以 $A$ 为圆心, $A C$ 为半径作圆, 考虑 $B$ 对此圆的幂: 一方面, 这个幂是 $B A^2-C A^2$; 另一方面, 它也是 $\\overrightarrow{B E} \\cdot \\overrightarrow{B C}$, 从而 $A C^2-A B^2=B E \\cdot B C$ (这里是线段的长度 $)=C D \\cdot B C \\Rightarrow A B^2+B C \\cdot C D=A C^2$.",
+    "remark": "注:此题的证法很多,也可通过相似的方法去证明.\n留给读者思考.",
+    "figures": [
+        "./images/volume7/figures/fig-c5i5.png"
+    ]
+}

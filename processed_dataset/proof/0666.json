@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter18.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $a \\geqslant c, b \\geqslant c, c>0$, 证明不等式\n$$\n\\sqrt{c(a-c)}+\\sqrt{c(b-c)} \\leqslant \\sqrt{a b} .\n$$",
+    "solution": "证明: $a=c$ 或 $b=c$ 时, 不等式显然成立.\n当 $a \\neq c$ 且 $b \\neq c$ 时, 讨论如下: 两个正数 $x 、 y$ 的乘积 $x y$ 可以看成边长为 $x$ 和 $y$ 的矩形的面积, 也可以看成直角边为 $x$ 和 $y$ 的直角三角形面积的两倍, 于是构造图形,如图(<FilePath:./images/volume14/figures/fig-c18i1.png>).\n$$\n\\begin{gathered}\nA B=D E=\\sqrt{c}, B C=\\sqrt{a-c}, \\\\\nC D=\\sqrt{b-c}, \\\\\n\\angle A B C=\\angle C D E=\\frac{\\pi}{2} .\n\\end{gathered}\n$$\n设 $\\angle A C E=\\alpha$, 则\n$$\n\\begin{aligned}\nS_{A B D E} & =\\sqrt{c}(\\sqrt{a-c}+\\sqrt{b-c})=S_{\\triangle A B C}+S_{\\triangle C D E}+S_{\\triangle A C E} \\\\\n& =\\frac{1}{2} \\sqrt{c} \\sqrt{a-c}+\\frac{1}{2} \\sqrt{c} \\sqrt{b-c}+\\frac{1}{2} \\sqrt{a} \\sqrt{b} \\sin \\alpha \\\\\n& \\leqslant \\frac{1}{2} \\sqrt{c}(\\sqrt{a-c}+\\sqrt{b-c})+\\frac{1}{2} \\sqrt{a b},\n\\end{aligned}\n$$\n所以\n$$\n\\sqrt{c(a-c)}+\\sqrt{c(b-c)} \\leqslant \\sqrt{a b},\n$$\n于是命题得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c18i1.png"
+    ]
+}

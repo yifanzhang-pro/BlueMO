@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例17. 设 $t_a 、 t_b 、 t_c$ 分别是 $\\triangle A B C$ 的 $\\angle A 、 \\angle B 、 \\angle C$ 的角平分线的长, 证明:\n$$\n\\sum \\frac{b c}{t_a^2} \\geqslant 4\n$$",
+    "solution": "证明:不难求得 $t_a^2=\\frac{b c\\left[(b+c)^2-a^2\\right]}{(b+c)^2}$, 则 $\\frac{b c}{t_a^2}=\\frac{(b+c)^2}{(b+c)^2 \\div a^2}$.\n同理可得\n$$\n\\frac{a c}{t_b^2}=\\frac{(a+c)^2}{(a+c)^2-b^2}, \\frac{a b}{t_c^2}=\\frac{(a+b)^2}{(a+b)^2-c^2}\n$$\n则\n$$\n\\sum \\frac{b c}{t_a^2}=\\sum \\frac{(a+b)^2}{(a+b)^2-c^2} \\geqslant \\frac{4(a+b+c)^2}{\\sum\\left[(a+b)^2-c^2\\right]}=\\frac{4(a+b+c)^2}{(a+b+c)^2}=4 .\n$$\n所以原不等式成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-3.tex",
+    "problem_type": "calculation",
+    "problem": "例6. 设 $\\alpha$ 为给定的正整数, 求最大的正整数 $\\beta$, 使得存在 $x, y \\in \\mathbf{N}^*$, 满足\n$$\n\\beta=\\frac{x^2+y^2+\\alpha}{x y} . \\label{eq1}\n$$",
+    "solution": "解:注意到, 当 $\\beta=\\alpha+2$ 时, 取 $x=y=1$, 就有式\\ref{eq1}成立, 所以 $\\beta_{\\max } \\geqslant \\alpha+2$. 另一方面, 设 $\\beta$ 是一个满足条件的正整数, 我们设 $(x, y)$ 是所有满足式\\ref{eq1}的正整数对中 (这里视 $\\beta$ 为常数), 使得 $x+y$ 最小的那一对.\n如果 $x=y$, 那么 $\\beta=\\frac{2 x^2+\\alpha}{x^2}=2+\\frac{\\alpha}{x^2} \\leqslant 2+\\alpha$.\n如果 $x \\neq y$, 不妨设 $x>y$, 这时关于 $x$ 的一元二次方程\n$$\nx^2-\\beta y \\cdot x+y^2+\\alpha=0 . \\label{eq2}\n$$\n还有一个实数解 $\\bar{x}$.\n由韦达定理及式\\ref{eq2}知 $\\bar{x}=\\beta y-x \\in \\mathbf{Z}$, 又 $x \\cdot \\bar{x}=y^2+\\alpha$, 即 $\\bar{x}=\\frac{y^2+\\alpha}{x}>$ 0 , 所以, $\\bar{x}$ 为正整数.\n此时, $(\\bar{x}, y)$ 也是满足式\\ref{eq1}的正整数对, 因此\n$$\n\\bar{x}+y=\\frac{y^2+\\alpha}{x}+y \\geqslant x+y,\n$$\n这里用到 $x+y$ 的最小性.\n于是, 我们有 $x^2 \\leqslant y^2+\\alpha$, 且 $x \\geqslant y+1$. 进而\n$$\n\\beta=\\frac{x^2+y^2+\\alpha}{x y} \\leqslant \\frac{2\\left(y^2+\\alpha\\right)}{x y} \\leqslant \\frac{2\\left(y^2+\\alpha\\right)}{y(y+1)}=\\frac{2 y^2}{y^2+y}+\\frac{2 \\alpha}{y(y+1)}<2+\\alpha .\n$$\n这表明 $\\beta_{\\max } \\leqslant 2+\\alpha$.\n综上可知, $\\beta$ 的最大值为 $\\alpha+2$.",
+    "remark": "",
+    "figures": []
+}

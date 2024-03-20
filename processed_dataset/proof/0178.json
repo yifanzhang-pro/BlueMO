@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $k$ 是给定的正整数, $k \\geqslant 2$, 证明: 连续三个正整数的积不能是整数的 $k$ 次幂.",
+    "solution": "证明:假设有正整数 $x \\geqslant 2$ 及 $y$, 使得\n$$\n(x-1) x(x+1)=y^k . \\label{eq1}\n$$\n请注意上面左端的三个因数 $x-1 、 x 、 x+1$ 并非总两两互素, 因此不能由式\\ref{eq1}推出它们都是 $k$ 次方幕.\n克服这个困难的一种方法是将式\\ref{eq1}变形为\n$$\n\\left(x^2-1\\right) x=y^k . \\label{eq2}\n$$\n因 $x$ 和 $x^2-1$ 互素,故由式\\ref{eq2}推出,有正整数 $a 、 b$,使得\n$$\nx=a^k, x^2-1=b^k, a b=y,\n$$\n由此我们有\n$$\n\\begin{aligned}\n1 & =a^{2 k}-b^k=\\left(a^2\\right)^k-b^k \\\\\n& =\\left(a^2-b\\right)\\left(a^{2 k-2}+a^{2 k-4} b+\\cdots+a^2 b^{k-2}+b^{k-1}\\right),\n\\end{aligned}\n$$\n由于 $x \\geqslant 2$, 故 $a \\geqslant 2$, 又 $k \\geqslant 2$, 故上式后一个因数必大于 1 , 导出矛盾.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise11.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 某家电影院的票价为每张 5 元, 现有 10 个人, 其中 5 个人手持 5 元钞票, 另外 5 个人手持 10 元钞票.\n假设开始售票时售票处没有钱, 这 10 个人随机排队买票.\n求售票处不会出现找不开钱的局面的概率.",
+    "solution": "考虑手持 5 元钞票的 5 个人在队中的位置, 共 $\\mathrm{C}_{10}^5=252$ 种等概率的排队方式.\n设 $p(m, n)$ 表示 $m$ 个手持 5 元钞票、 $n$ 个手持 10 元钞票的人满足条件的排队方式数, 则 $p(m, 0)=1$. 当 $m<n$ 时, $p(m, n)=0$, 且\n$$\np(m, n)=p(m, n-1)+p(m-1, n) .\n$$\n如图(<FilePath:./images/volume14/figures/fig-c11a2.png>), $p(5,5)$ 等于从 $A$ 到 $B$ 不能穿过对角线的路径数, 即 $p(5,5)=42$.\n故所求的概率为 $\\frac{42}{252}=\\frac{1}{6}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c11a2.png"
+    ]
+}

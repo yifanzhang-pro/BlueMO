@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-5.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 设 $a$ 为实数, 求函数 $f(x)=|\\sin x(a+\\cos x)|(x \\in \\mathbf{R})$ 的最大值.",
+    "solution": "解:设 $\\alpha$ 为参数, 使得\n$$\n\\begin{aligned}\nf^2(x) & =\\frac{1}{\\alpha^2} \\sin ^2 x(a \\alpha+\\alpha \\cos x)^2 \\leqslant \\frac{1}{\\alpha^2} \\sin ^2 x\\left(\\alpha^2+\\cos ^2 x\\right)\\left(a^2+\\alpha^2\\right) \\\\\n& \\leqslant \\frac{1}{\\alpha^2}\\left(\\frac{\\sin ^2 x+\\alpha^2+\\cos ^2 x}{2}\\right)^2\\left(a^2+\\alpha^2\\right)=\\frac{1}{\\alpha^2}\\left(\\frac{\\alpha^2+1}{2}\\right)^2\\left(a^2+\\alpha^2\\right),\n\\end{aligned}\n$$\n当且仅当 $\\alpha^2=a \\cos x, \\sin ^2 x=\\alpha^2+\\cos ^2 x$ 时等号成立.\n消除 $x$, 得 $2 \\alpha^4+a^2 \\alpha^2-a^2=0$.\n解方程, 得 $\\alpha^2=\\frac{1}{4}\\left(\\sqrt{a^4+8 a^2}-a^2\\right)$, 从而 $\\cos x=\\frac{1}{4}\\left(\\sqrt{a^2+8}-a\\right)$.\n所以当 $x=2 k \\pi \\pm \\arccos \\left[\\frac{1}{4}\\left(\\sqrt{a^2+8}-a\\right)\\right](k \\in \\mathbf{Z})$ 时,\n$$\nf(x)_{\\max }=\\frac{\\sqrt{a^4+8 a^2}-a^2+4}{8} \\cdot \\sqrt{\\frac{\\sqrt{a^4+8 a^2}+a^2+2}{2}} .\n$$",
+    "remark": "",
+    "figures": []
+}

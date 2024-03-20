@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例1 已知 $f(x)$ 是一次函数, 且\n$$\nf^{(10)}(x)=1024 x+1023,\n$$\n求 $f(x)$ 的解析式.",
+    "solution": "解:设 $f(x)=a x+b$, 则\n$$\nf^{(10)}(x)=a^{10}\\left(x-\\frac{b}{1-a}\\right)+\\frac{b}{1-a} .\n$$\n故 $\\quad a^{10}\\left(x-\\frac{b}{1-a}\\right)+\\frac{b}{1-a}=1024 x+1023$.\n比较上式两边系数, 得\n$$\n\\left\\{\\begin{array}{l}\na^{10}=1024, \\\\\n-\\frac{a^{10} b}{1-a}+\\frac{b}{1-a}=1023\n\\end{array}\\right.\n$$\n解方程组得 $a_1=2, b_1=1 ; a_2=-2, b_2=-3$.\n因此, 所求的一次函数为\n$$\nf(x)=2 x+1 \\text { 或 } f(x)=-2 x-3 .\n$$",
+    "remark": "",
+    "figures": []
+}

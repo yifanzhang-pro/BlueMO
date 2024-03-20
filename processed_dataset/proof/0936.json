@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题9 设 $f: \\mathbf{N}_{+} \\rightarrow \\mathbf{N}_{+}, p 、 k$ 是两个固定正整数, 且 $f^{(p)}(n)=n+k, n \\in \\mathbf{N}_{+}$, 求证: $f$ 存在的充要条件是 $p \\mid k$.",
+    "solution": "若 $k$ 是 $p$ 的倍数, 即存在 $s \\in \\mathbf{N}_{+}$, 使 $k=p \\cdot s$, 易知 $f(n)=n+s$ 满足条件 $f^{(p)}(n)=n+k$. 反过来, 设 $f$ 存在, 记 $A=\\mathbf{N}_{+} \\backslash f\\left(\\mathbf{N}_{+}\\right)$, 由于 $f^{(p)}(n)=$ $n+k,\\left|A_1\\right|$ 为有限值, 令 $A_2=\\mathbf{N}_{+} \\backslash f^{(2)}\\left(\\mathbf{N}_{+}\\right)=A_1 \\cup f\\left(A_1\\right), \\cdots, A_p= \\mathbf{N}_{+} \\backslash f^{(p)} \\backslash\\left(\\mathbf{N}_{+}\\right)=A_1 \\cup \\cdots \\cup f^{(p-1)}\\left(A_1\\right)$, 不难得到 $f^{(i)}\\left(A_1\\right) \\cap f^{(j)}\\left(A_1\\right)=\\varnothing (i \\neq j),\\left|f^{(i)}\\left(A_1\\right)\\right|=\\left|f^{(j)}\\left(A_1\\right)\\right|=\\left|A_1\\right|$, 故 $|A p|=k=p\\left|A_1\\right|$, 即 $p \\mid k$.",
+    "remark": "",
+    "figures": []
+}

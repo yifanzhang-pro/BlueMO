@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 对于正整数 $n$, 令 $f_n=\\left[2^n \\cdot \\sqrt{2008}\\right]+\\left[2^n \\cdot \\sqrt{2009}\\right]$. 求证: 数列 $f_1$, $f_2, \\cdots$ 中有无穷多个奇数和无穷多个偶数 ( [ $\\left.x\\right]$ 表示不超过 $x$ 的最大整数).",
+    "solution": "记 $x-[x]=\\{x\\}$, 设 $a, b$ 分别为 $\\{\\sqrt{2008}\\}$ 与 $\\{\\sqrt{2009}\\}$ 在二进制下的表示.\n由于 $\\sqrt{2008}$ 和 $\\sqrt{2009}$ 是无理数,故 $a, b$ 是不循环小数,而 $f_n$ 的奇偶性取决于 $a, b$ 小数点后第 $n$ 位是否相同.\n假设 $f_1, f_2, \\cdots$ 中只有有限个奇数, 则存在某个 $n \\in \\mathbf{N}^*$, 使 $f_n, f_{n+1}, \\cdots$ 均为偶数, 即小数点后第 $n$ 位起 $a, b$ 是一样的,故 $a-b$ 实际上是有限小数,但\n$a-b$ 显然是无理数, 矛盾! 再假设 $f_1, f_2, \\cdots$ 中只有有限个偶数, 则存在某个 $n \\in \\mathbf{N}^*$, 使 $f_n, f_{n+1}, \\cdots$ 均为奇数, 即 $a, b$ 在小数点后第 $n$ 位起的每个数位上都不一样,于是 $a+b$ 在该数位上等于 1 , 这样 $a+b$ 是有限小数, 但 $a+b$ 显然是无理数, 矛盾!\n从而原命题成立.",
+    "remark": "",
+    "figures": []
+}

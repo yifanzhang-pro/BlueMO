@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter11.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $R$ 是一个含外心的四面体的外接球半径, $R_1 、 R_2 、 R_3 、 R_4$ 分别是 $\\triangle A_2 A_3 A_4 、 \\triangle A_1 A_3 A_4 、 \\triangle A_1 A_2 A_4 、 \\triangle A_1 A_2 A_3$ 的外接圆半径, 求证\n$$\n1 \\leqslant \\frac{R}{\\max \\left(R_1, R_2, R_3, R_4\\right)} \\leqslant \\frac{3 \\sqrt{2}}{4} . \\label{eq1}\n$$",
+    "solution": "证明:记 $\\Sigma=A_1 A_2 A_3 A_4$ 并设 $O$ 是四面体 $\\Sigma$ 的外心且 $O$ 在体内.\n显见 $O$ 在某个面上的射影 $O_i$ 一定是面三角形的外心.\n由 $A_i O_i \\leqslant A_i O, i=1,2,3,4$ 便得 $R_i \\leqslant R$,且等号可以成立, 式\\ref{eq1} 左边的不等式得证.\n现以 $O$ 为中心作一个包含在 $\\Sigma$ 内的最大球, 设这个最大球的半径为 $d$, 这个球至少与 $\\Sigma$ 的某一个面相切, 不妨设与面 $A_2 A_3 A_4$ 相切, 则切点一定是 $A_2 A_3 A_4$ 的外心, 因此\n$$\nR_1^2=R^2-d^2 . \\label{eq2}\n$$\n因包含于 $\\Sigma$ 中的球以内切球半径为最大, 由著名不等式 $r \\leqslant \\frac{R}{3}$ 可得\n$$\nd \\leqslant \\frac{R}{3}. \\label{eq3}\n$$\n由式\\ref{eq1}、\\ref{eq2}、式\\ref{eq3}便得\n$$\nR^2-R_1^2 \\leqslant \\frac{R^2}{9}\n$$\n由此得\n$$\nR \\leqslant \\frac{3}{\\sqrt{8}} R_1 \\leqslant \\frac{3}{\\sqrt{8}}-\\max \\left(R_1, R_2, R_3, R_4\\right),\n$$\n右边的不等式得证.",
+    "remark": "",
+    "figures": []
+}

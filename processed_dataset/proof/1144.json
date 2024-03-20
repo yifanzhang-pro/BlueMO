@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-3.tex",
+    "problem_type": "proof",
+    "problem": "例 6 设 $a 、 b 、 c$ 是大于 -1 的实数,证明:\n$$\n\\frac{1+a^2}{1+b+c^2}+\\frac{1+b^2}{1+c+a^2}+\\frac{1+c^2}{1+a+b^2} \\geqslant 2 \\text {. }\n$$",
+    "solution": "证明:由假设我们有 $1+a^2, 1+b^2, 1+c^2, 1+b+c^2, 1+c+a^2, 1+-a+ b^2$ 均大于零.\n由柯西不等式,得\n$$\n\\begin{aligned}\n& \\left(\\frac{1+a^2}{1+b+c^2}+\\frac{1+b^2}{1+c+a^2}+\\frac{1+c^2}{1+a+b^2}\\right) \\cdot\\left[\\left(1+a^2\\right)\\left(1+b+c^2\\right)+\\right. \\\\\n& \\left.\\left(1+b^2\\right)\\left(1+c+a^2\\right)+\\left(1+c^2\\right)\\left(1+a+b^2\\right)\\right] \\\\\n\\geqslant & \\left(1+a^2+1+b^2+1+c^2\\right)^2 .\n\\end{aligned}\n$$\n于是\n$$\n\\begin{aligned}\n& \\frac{1+a^2}{1+b+c^2}+\\frac{1+b^2}{1+c+a^2}+\\frac{1+c^2}{1+a+b^2} \\\\\n\\geqslant & \\frac{\\left(a^2+b^2+c^2+3\\right)^2}{\\left(1+a^2\\right)\\left(1+b+c^2\\right)+\\left(1+b^2\\right)\\left(1+c+a^2\\right)+\\left(1+c^2\\right)\\left(1+a+b^2\\right)} \\\\\n= & \\frac{a^4+b^4+c^4+9+2 a^2 b^2+2 b^2 c^2+2 c^2 a^2+6 a^2+6 b^2+6 c^2}{a^2 b^2+b^2 c^2+c^2 a^2+2\\left(a^2+b^2+c^2\\right)+a^2 b+b^2 c+c^2 a+a+b+c+3} \\\\\n= & 2+\\frac{a^4+b^4+c^4+3+2 a^2+2 b^2+2 c^2-2\\left(a^2 b+b^2 c+c^2 a+a+b+c\\right)}{a^2 b^2+b^2 c^2+c^2 a^2+2\\left(a^2+b^2+c^2\\right)+a^2 b+b^2 c+c^2 a+a+b+c+3}\n\\end{aligned}\n$$\n$$\n\\begin{aligned}\n& =2+\\frac{\\left(a^2-b\\right)^2+\\left(b^2-c\\right)^2+\\left(c^2-a\\right)^2+(a-1)^2+(b-1)^2+(c-1)^2}{a^2 b^2+b^2 c^2+c^2 a^2+2\\left(a^2+b^2+c^2\\right)+a^2 b+b^2 c+c^2 a+a+b+c+3} \\\\\n& \\geqslant 2\n\\end{aligned}\n$$\n当且仅当 $a=b=c=1$ 时等号成立.",
+    "remark": "",
+    "figures": []
+}

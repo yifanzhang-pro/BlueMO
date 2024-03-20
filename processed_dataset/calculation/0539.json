@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例5 已知函数 $f: \\mathbf{R}^{+} \\bigcup\\{0\\} \\rightarrow \\mathbf{R}^{+} \\bigcup\\{0\\}$ 满足:\n(1) $f(x f(y)) f(y)=f(x+y)$;\n(2) $f(2)=0$;\n(3) 当 $0 \\leqslant x<2$ 时, $f(x) \\neq 0$.\n求函数 $f(x)$.",
+    "solution": "解:.\n当 $x>2$ 时, 令 $x=2+t(t>0)$, 有\n$$\nf(t f(2)) f(2)=f(t+2)=f(x) .\n$$\n因为 $f(2)=0$, 所以 $f(x)=0(x \\geqslant 2)$.\n当 $0 \\leqslant x<2$ 时, 令 $x+t=2(t>0)$, 有\n$$\n0=f(2)=f(x+t)=f(t f(x)) f(x) .\n$$\n又因为 $f(t f(x))=0$, 故 $t f(x) \\geqslant 2$, 即\n$$\nf(x) \\geqslant \\frac{2}{t}=\\frac{2}{-x+2} .\n$$\n但 $f(x)>\\frac{2}{2-x}$ 在 $x \\in[0,2]$ 时不成立.\n若有 $x_1 \\in[0,2]$,且\n$$\n\\begin{gathered}\nf\\left(x_1\\right)>\\frac{2}{2-x_1}, \\\\\nf\\left(x_1\\right)\\left(2-x_1\\right)>2 .\n\\end{gathered}\n$$\n则可得这时总可找到 $y<2-x_1$, 使 $f\\left(x_1\\right) \\cdot y \\geqslant 2$, 做\n$$\nf\\left(y f\\left(x_1\\right)\\right)=0,\n$$\n也即\n$$\nf\\left(x_1+y\\right)=f\\left(y f\\left(x_1\\right)\\right) f\\left(x_1\\right)=0 .\n$$\n此式与 $x_1+y \\geqslant 2$ 矛盾, 即 $f(x)=\\frac{2}{2-x}$.\n从而 $f(x)=\\left\\{\\begin{array}{l}0, \\text { 当 } x \\geqslant 2 \\text { 时; } \\\\ \\frac{2}{2-x}, \\text { 当 } 0 \\leqslant x<2 \\text { 时.\n}\\end{array}\\right.$",
+    "remark": "",
+    "figures": []
+}

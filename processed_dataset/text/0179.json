@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "text": "1.2. 放缩 法有时我们直接证明不等式 $A \\leqslant B$ 比较困难, 可以试着去找一个中间量 $C$,\n如果有 $A \\leqslant C$ 及 $C \\leqslant B$ 同时成立, 自然就有 $A \\leqslant B$ 成立.\n所谓\"放缩\" 即将 $A$ 放大到 $C$, 再把 $C$ 放大到 $B$ 或者反过来把 $B$ 缩小到 $C$ 再缩小到 $A$. 不等式证明的技巧, 常体现在对放缩尺度的把握上.",
+    "figures": []
+}

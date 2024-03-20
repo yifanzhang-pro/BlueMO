@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 设 $X=\\{1,2,3, \\cdots, 10\\}, A$ 是 $X$ 的子集, 且对任何 $x<y<z, x, y$, $z \\in A$, 都存在一个三角形三边的长分别为 $x 、 y 、 z$. 求 $|A|$ 的最大值.",
+    "solution": "首先, 令 $A_1=\\{1,2,3,5,8\\}, A_2=\\{4,6,10\\}, A_3=\\{7,9\\}$; 则 $A_i$ 中的任何 3 个数不构成三角形, 从而 $A$ 最多含有 $A_i$ 中的 2 个数, 所以 $|A| \\leqslant 2 \\times 3=6$. 其次, 令 $A=\\{5,6,7,8,9,10\\}$, 则 $A$ 合乎要求.\n故 $|A|$ 的最大值为 6 .",
+    "remark": "",
+    "figures": []
+}

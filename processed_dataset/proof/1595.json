@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题21. 设 $a$ 为无理数, $n$ 为大于 1 的整数.\n证明: $\\left(a+\\sqrt{a^2-1}\\right)^{\\frac{1}{n}}+(a- \\left.\\sqrt{a^2-1}\\right)^{\\frac{1}{n}}$ 为无理数.",
+    "solution": "如果存在 $n \\in \\mathbf{N}^*$, 使得 $\\left(a+\\sqrt{a^2-1}\\right)^{\\frac{1}{n}}+\\left(a-\\sqrt{a^2-1}\\right)^{\\frac{1}{n}}$ 为有理数, 记 $x=\\left(a+\\sqrt{a^2-1}\\right)^{\\frac{1}{n}}, y=\\left(a-\\sqrt{a^2-1}\\right)^{\\frac{1}{n}}$, 那么 $x+y$ 为有理数, 而 $x^n+y^n=2 a$ 为无理数.\n下面对 $m$ 归纳来证: (1) 若 $x+y \\in \\mathbf{Q}$, 则对任意 $m \\in \\mathbf{N}^*$, 都有 $x^m+y^m \\in \\mathbf{Q}$ \n注意到 $x^2+y^2=(x+y)^2-2 x y=(x+y)^2-2$, 结合 $x+y \\in \\mathbf{Q}$, 可知当 $m=1,2$ 时, (1) 都成立.\n现设 $x^m+y^m, x^{m+1}+y^{m+1} \\in \\mathbf{Q}$, 则由 $x^{m+2}+y^{m+2}= (x+y)\\left(x^{m+1}+y^{m+1}\\right)-x y\\left(x^m+y^m\\right)$, 结合 $x+y, x y(=1)$ 为有理数可知 $x^{m+2}+y^{m+2} \\in \\mathbf{Q}$. 从而 (1) 成立.\n利用(1)可知 $x^n+y^n \\in \\mathbf{Q}$, 这是一个矛盾.\n所以,命题成立.",
+    "remark": "",
+    "figures": []
+}

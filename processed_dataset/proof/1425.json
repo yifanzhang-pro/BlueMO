@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 求证: 对于任意实数 $a 、 b$, 存在 $[0,1]$ 中的 $x$ 和 $y$,使得\n$$\n|x y-a x-b y| \\geqslant \\frac{1}{3} \\text {. }\n$$\n并问上述命题中的 $\\frac{1}{3}$ 改为 $\\frac{1}{2}$ 或 0.33334 是否仍成立?",
+    "solution": "反设命题不成立,则存在实数 $a 、 b$, 使得对于 $[0,1]$ 中的任意 $x 、 y$,均有 $|x y-a x-b y|<\\frac{1}{3}$.\n分别取 $(x, y)=(1,0) ;(0,1) ;(1,1)$, 有 $|a|<\\frac{1}{3},|b|<\\frac{1}{3}$, $|1-a-b|<\\frac{1}{3}$, 则 $1=|a+b+1-a-b| \\leqslant|a|+|b|+|1-a-b|<$ 1 , 矛盾!",
+    "remark": "",
+    "figures": []
+}

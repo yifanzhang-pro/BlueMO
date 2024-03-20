@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise16.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 设 $d(n)$ 表示正整数 $n$ 的正约数个数, $[x]$ 表示不大于实数 $x$ 的最大整数, 求证:\n$$\n\\sum_{k=1}^n d(k)=\\sum_{k=1}^n\\left[\\frac{n}{k}\\right] .\n$$",
+    "solution": "用两种方法计算区域 $A==\\{(x, y) \\mid 1 \\leqslant x \\leqslant n, 1 \\leqslant x y \\leqslant n\\}$ 中的整点数目 $S$.\n一方面, 对每个固定的 $i(i=1,2, \\cdots, n)$, 使 $1 \\leqslant i y \\leqslant n$ 即 $\\frac{1}{i} \\leqslant y \\leqslant \\frac{n}{i}$ 的整数 $y$ 的个数为 $\\left[\\frac{n}{i}\\right]$, 因此区域 $A$ 中处在直线 $x=i(i=1,2, \\cdots, n)$ 上的整点数为 $\\left[\\frac{n}{i}\\right]$, 故有\n$$\nS=\\sum_{i=1}^n\\left[\\frac{n}{i}\\right] . \\label{eq1}\n$$\n另一方面, 对每个固定的 $j(j=1,2, \\cdots, n)$, 使 $x y=j$ 且 $1 \\leqslant x \\leqslant n$ 的整点数恰为 $j$ 的正约数个数 $d(j)$, 故有\n$$\nS=\\sum_{j=1}^n d(j) . \\label{eq2}\n$$\n由式\\ref{eq1},\\ref{eq2}得原式成立.",
+    "remark": "",
+    "figures": []
+}

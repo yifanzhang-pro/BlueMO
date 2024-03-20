@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise10.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 求集合 $\\{1,2,3, \\cdots, 2009\\}$ 的元素和为奇数的非空子集的个数.",
+    "solution": "令 $f(x)=(1+x)\\left(1+x^2\\right)\\left(1+x^3\\right) \\cdots\\left(1+x^{2009}\\right)$, 则问题中要求的答案为 $f(x)$ 的展开式中, $x$ 的奇次项的系数和.\n故所求的答案为 $\\frac{f(1)-f(-1)}{2}=$\n$$\n\\frac{2^{2009}-0}{2}=2^{2008} \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

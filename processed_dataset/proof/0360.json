@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise14.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设空间给定 $n$ 个点,其中任何 4 点不共面, 它们之间连有 $q$ 条线段,则这些线段至少构成 $\\frac{4 q}{3 n}\\left(q-\\frac{n^2}{4}\\right)$ 个不同的三角形.",
+    "solution": "设图中 $n$ 个点为 $A_1, A_2, \\cdots, A_n$, 若 $A_i$ 与 $A_j$ 连有线段, 则将该线段染红色, 若 $A_i$ 与 $A_j$ 没有连线, 则将 $A_i$ 与 $A_j$ 连一条蓝色线段, 得到一个 2 色完全图 $K_n$. 由已知条件知图 $K_n$ 有 $q$ 条红边.\n要证明图中至少有 $\\frac{4 q}{3 n}\\left(q-\\frac{n^2}{4}\\right)$ 个红色三角形 (三边为红色的三角形). \n设从 $A_i$ 出发有 $d_i$ 条红线, $n-1-d_i$ 条蓝线 $(i=1,2, \\cdots, n)$ 于是 $\\sum_{i=1}^n d_i=2 q \\cdots$ (1). \n设图中有 $\\alpha$ 个红色三角形, $\\beta$ 个两边红一边蓝的三角形, $\\gamma$ 个二边蓝一边红的三角形, 并称从一点出发的两条红线组成的角叫做红色角, 从一点出发的一条红线和一条蓝线组成的角叫做异色角, 于是红色角的个数为 $3 \\alpha+\\beta=\\sum_{i=1}^n \\mathrm{C}_{d_i}^2 \\cdots$ (2), \n异色角的个数为 $2(\\beta+\\gamma)=\\sum_{i=1}^n d_i\\left(n-1-d_i\\right) \\cdots$ (3). \n由(3)得 $\\beta \\leqslant \\beta+\\gamma=\\frac{1}{2} \\sum_{i=1}^n d_i(n- 1-d_i$ ), \n代入 (2) 并利用柯西不等式及 (1) 得 $\\alpha=\\frac{1}{3}\\left[\\sum_{i=1}^n \\mathrm{C}_{d_i}^2-\\beta\\right] \\geqslant \\frac{1}{3}\\left[\\sum_{i=1}^n \\frac{1}{2} d_i\\left(d_i-1\\right)-\\frac{1}{2} \\sum_{i=1}^n d_i\\left(n-1-d_i\\right)\\right]=\\frac{1}{3}\\left(\\sum_{i=1}^n d_i^2-\\frac{n}{2} \\sum_{i=1}^n d_i\\right) \\geqslant \\frac{1}{3}\\left[\\frac{1}{n}\\left(\\sum_{i=1}^n d_i\\right)^2-\\frac{n}{2} \\sum_{i=1}^n d_i\\right]=\\frac{1}{3}\\left[\\frac{1}{n}(2 q)^2-\\frac{n}{2}(2 q)\\right]=\\frac{4 q}{3 n}\\left(q-\\frac{n^2}{4}\\right)$, 于是原命题得证.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 等腰 $\\triangle A B C, A B=A C, P$ 在边 $B C$ 的延长线上, $X$ 和 $Y$ 分别是直线 $A B$ 和 $A C$ 上的点.\n$P X / / A C, P Y / / A B, T$ 是 $\\triangle A B C$ 外接圆上弧 $\\overparen{B C}$ 的中点.\n证明: $P T \\perp X Y$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c5a12.png>), 设 $M$ 和 $N$ 分别是 $T$ 在 $P X$ 和 $P Y$ 上的正交投影, 可以得到 $\\frac{P Y}{A B}=\\frac{P C}{B C}, P N=P B \\sin \\frac{A}{2}$. 所以, $P N \\cdot P Y=P B \\cdot P C \\cdot \\frac{A B}{B C} \\sin \\frac{A}{2}$. 同理可得 $P M \\cdot P X=P B \\cdot P C \\cdot \\frac{A C}{B C} \\sin \\frac{A}{2}$. 由于 $A B=A C$, 所以, $P X \\cdot P M=P N \\cdot P Y$. 因为 $M$ 和 $N$ 分别在以 $T X$ 和 $T Y$ 为直径的圆上,故点 $P$ 在分别以 $T X$ 和 $T Y$ 为直径的两圆的根轴上.\n设 $K$ 是分别以 $T X$ 和 $T Y$ 为直径的两圆的另外一个交点, 于是, $T 、 K$ 和 $P$ 三点共线.\n又 $\\overparen{Y K T}=\\overparen{X K T}=\\frac{\\pi}{2}$, 所以, $P T \\perp X Y$. 这样就证明了结论.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5a12.png"
+    ]
+}

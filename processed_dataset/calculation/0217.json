@@ -1,0 +1,12 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise12.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 平面内 4 条直线, 其中任意 2 条不平行且任意 3 条不共点, 从而每条直线上有 3 个点, 在此条直线上截出两条线段.\n问所得 8 条线段的长度能否为\n(1) $1,2,3,4,5,6,7,8$ ?\n(2) 互不相等的正整数?",
+    "solution": "(1) 不能.\n事实上, 设如图(<FilePath:./images/volume11/figures/fig-c12a4-1.png>) 所得 8 条线段的长分别为 $1,2,3,4,5,6$, 7,8 . 因为三角形中任意一边大于其余两边之差的绝对值, 所以边长为正整数的非等腰三角形中任何一边的长均大于 1 , 故图中长为 1 的线段只可能是 $A B$ 或 $A F$. 不妨设 $A B=1$, 由 $1=A B>|B E-A E|$, 得 $B E=A E$. 在 $\\triangle A B E$ 中由余弦定理得 $\\cos E=\\frac{B E^2+A E^2-A B^2}{2 B E \\cdot A E}=1-\\frac{1}{2 A E^2}$. 又在 $\\triangle D E F$ 中应用余弦定理得 $D F^2=D E^2+E F^2-2 D E \\cdot E F \\cos E=D E^2+E F^2-2 D E \\cdot E F \\cdot\\left(1-\\frac{1}{2 A E^2}\\right)= D E^2+E F^2-2 D E \\cdot E F+\\frac{E F}{A E} \\cdot \\frac{D E}{B E}$. 上式中 $\\frac{E F}{A E} \\cdot \\frac{D E}{B E}$ 为小于 1 的正分数, 其余各项为正整数,矛盾! 故不存在 4 条满足要求的直线.\n(2) 能.\n如图(<FilePath:./images/volume11/figures/fig-c12a4-2.png>) 我们从边长为 $3,4,5$ 的直角三角形出发,适当找出正整数 $k>1$ 及 $m, n$ 使图形符合要求.\n从相似三角形性质得 $(5+4 k): m:(n+ 3)=(4+5 k): n:(m+3 k)=3: 4: 5$. 这要求 $5+4 k$ 及 $4+5 k$ 均为 3 的倍数, 不难得到 $k=4, m=28, n=32$ 时满足要求.\n即如图(<FilePath:./images/volume11/figures/fig-c12a4-3.png>) 所示的图形满足题目要求.",
+    "remark": "",
+    "figures": [
+        "./images/volume11/figures/fig-c12a4-1.png",
+        "./images/volume11/figures/fig-c12a4-2.png",
+        "./images/volume11/figures/fig-c12a4-3.png"
+    ]
+}

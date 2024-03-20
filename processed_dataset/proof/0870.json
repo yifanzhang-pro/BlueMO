@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例15 设 $f(x)$ 是周期函数, $T$ 和 1 是 $f(x)$ 的周期且 $0<T<1$. 证明:\n(1) 若 $T$ 为有理数, 则存在素数 $p$, 使 $\\frac{1}{p}$ 是 $f(x)$ 的周期;\n(2) 若 $T$ 为无理数, 则存在各项均为无理数的数列 $\\left\\{a_n\\right\\}$ 满足 $1>a_n> a_{n+1}>0(n=1,2, \\cdots)$, 且每个 $a_n(n=1,2, \\cdots)$ 都是 $f(x)$ 的周期.",
+    "solution": "证 (1) 若 $T$ 是有理数,则存在正整数 $m 、 n$ 使得 $T=\\frac{n}{m}$ 且 $(m, n)=1$, 从而存在整数 $a 、 b$, 使得 $m a+n b=1$. 于是\n$$\n\\frac{1}{m}=\\frac{m a+n \\underline{b}}{m}=a+b T=a \\cdot 1+b \\cdot T\n$$\n是 $f(x)$ 的周期.\n又因 $0<T<1$, 从而 $m \\geqslant 2$. 设 $p$ 是 $m$ 的素因子, 则 $m=p m^{\\prime}, m^{\\prime} \\in \\mathbf{N}_{+}$, 从而\n$$\n\\frac{1}{p}=m^{\\prime} \\cdot \\frac{1}{m}\n$$\n是 $f(x)$ 的周期.\n(2) 若 $T$ 是无理数, 令 $a_1=1-\\left[\\frac{1}{T}\\right] T$, 则 $0<a_1<1$, 且 $a_1$ 是无理数,\n令\n$$\n\\begin{gathered}\na_2=1-\\left[\\frac{1}{a_1}\\right] a_1, \\\\\n\\ldots \\ldots \\\\\na_{n+1}=1-\\left[\\frac{1}{a_n}\\right] a_n, \\\\\n\\ldots \\ldots\n\\end{gathered}\n$$\n由数学归纳法易知 $a_n$ 均为无理数且 $0<a_n<1$. 又 $\\frac{1}{a_n}-\\left[\\frac{1}{a_n}\\right]<1$, 故 $1<a_n+\\left[\\frac{1}{a_n}\\right] a_n$, 即 $a_{n+1}=1-\\left[\\frac{1}{a_n}\\right] a_n<a_n$. 因此 $\\left\\{a_n\\right\\}$ 是递减数列.\n最后证每个 $a_n$ 是 $f(x)$ 的周期.\n事实上, 因 1 和 $T$ 是 $f(x)$ 的周期, 故 $a_1=1-\\left[\\frac{1}{T}\\right] T$ 亦是 $f(x)$ 的周期, 假设 $a_k\\left(k \\in \\mathbf{N}_{+}\\right)$是 $f(x)$ 的周期, 则 $a_{k+1}= 1-\\left[\\frac{1}{a_k}\\right] a_k$ 也是 $f(x)$ 的周期.\n由数学归纳法, 证得每个 $a_n(n=1,2, \\cdots)$ 均是 $f(x)$ 的周期.",
+    "remark": "",
+    "figures": []
+}

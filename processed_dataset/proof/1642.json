@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题26. 设 $f: \\mathbf{N}^* \\rightarrow \\mathbf{N}^*$ 是一个一一对应.\n(1) 证明: 存在正整数 $a 、 d$, 使得 $f(a)<f(a+d)<f(a+2 d)$;\n(2) 对不小于 5 的正整数 $m$, 是否也一定存在正整数 $a 、 d$, 使得\n$$\nf(a)<f(a+d)<\\cdots<f(a+m d) ?\n$$",
+    "solution": "(1) 任取 $a \\in \\mathbf{N}^*$, 由于只有有限个 $f$ 的值 $\\leqslant f(a)$, 故存在 $n \\in \\mathbf{N}^*$, 使对 $d \\geqslant n$, 都有 $f(a)<f(a+d)$. 考虑数列\n$$\nf(a), f(a+n), f(a+2 n), \\cdots, f\\left(a+2^k n\\right), f\\left(a+2^{k+1} n\\right), \\cdots\n$$\n如果存在 $k \\in \\mathbf{N}$, 使得 $f\\left(a+2^{k+1} n\\right)>f\\left(a+2^k n\\right)$, 那么取 $d=2^k n$, 可知 (1) 成立.\n所以, 对 $k \\in \\mathbf{N}$, 都有 $f\\left(a+2^{k+1} n\\right)<f\\left(a+2^k n\\right)$ (这里不取等号是因为 $f$ 是单射), 即 $f(a+n)>f(a+2 n)>\\cdots$, 但由于是满射知小于 $f(a+n)$ 的 $f$ 的值只有有限个, 矛盾.\n(2) 不一定存在.\n例如: 令 $f: \\mathbf{N}^* \\rightarrow \\mathbf{N}^*$ 如下\n$$\n\\begin{aligned}\n& n=1 ; 2 ; 3,4 ; 5,6,7,8 ; 9,10, \\cdots \\\\\n& f(n)=1 ; 2 ; 4,3 ; 8,7,6,5 ; 16,15, \\cdots\n\\end{aligned}\n$$\n上述定义中, 对 $n \\in \\mathbf{N}^*$, 有 $f\\left(2^n+1\\right)=2^{n+1}, f\\left(2^n+2\\right)=2^{n+1}-1, \\cdots$, $f\\left(2^{n+1}\\right)=2^n+1$, 而 $f(1)=1, f(2)=2$.\n下证: 在 $m \\geqslant 5$ 时,对 $a 、 d \\in \\mathbf{N}^*$, 都有 $f(a+(m-2) d)>f(a+-(m- 1) d)$ 或者 $f(a+(m-1) d)>f(a+m d)$.\n事实上, 若否, 则 $f(a+(m-2) d)<f(a+(m-1) d)<f(a+m d)$. 由 $f$ 的定义, 知 $f(a+(m-2) d), f(a+(m-1) d), f(a+m d)$ 分别落在 3 个不同的递减区间内, 而从 $2^n+1$ 到 $2^{n+1}$ 这个递减区间的长度为 $2^n$, 所以 $a+ (m-1) d$ 所在递减区间的长度 $\\geqslant \\frac{a+(m-1) d}{2}$, 又 $a+(m-2) d$ 与 $a+m d$ 都不落在 $a+(m-1) d$ 所在的递减区间, 故 $a+m d-(a+(m-2) d) \\geqslant \\frac{a+(m-1) d}{2}$, 导致 $4 d \\geqslant a+(m-1) d \\geqslant a+4 d$, 矛盾.\n从而 (2) 的结论是不一定.",
+    "remark": "",
+    "figures": []
+}

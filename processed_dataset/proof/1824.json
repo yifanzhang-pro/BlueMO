@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题14. 设三角形 $A B C$ 的两条角平分线为 $B E, C F$, 求证: 若 $B E=C F$, 则 $A B=A C$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c2a14.png>), 由 Stewart 定理知, $B E^2=B A \\cdot B C-E A \\cdot E C, C F^2= C B \\cdot C A-F B \\cdot F A$.\n设 $A B=c, B C=a, C A=b$, 则 $E A \\cdot E C^{\\prime}=\\frac{b c}{a+c} \\cdot \\frac{a b}{a+c}, F B \\cdot F A==\\frac{a c}{a+b} \\cdot \\frac{b c}{a+b}$, 从而, $a c-\\frac{a b^2 c}{(a+c)^2}=a b-\\frac{a b c^2}{(a+b)^2}$, 化简后有 $c-b=b c \\cdot \\frac{(b-c)\\left(a^2+b^2+c^2+2 a b+2 a c+b c\\right)}{(a+b)^2(a+c)^2}, * *$\n若 $c>b$, 则 $*$ 左边 $>0$, 右边 $<0$;\n若 $c<b$, 则 $*$ 左边 $<0$, 右边 $>0$;\n故 $c=b$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2a14.png"
+    ]
+}

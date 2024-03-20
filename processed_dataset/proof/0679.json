@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例2. 证明: 对任意三角形, 一定存在它的两条边长 $a, b$, 满足\n$$\n1 \\leqslant \\frac{a}{b}<\\frac{1+\\sqrt{5}}{2}\n$$",
+    "solution": "证明:若结论不成立, 则对于 $\\triangle A B C$ 的三边长 $a, b, c$, 不妨设 $a \\geqslant b \\geqslant c$, 于是\n$$\n\\frac{a}{b} \\geqslant \\frac{1+\\sqrt{5}}{2}, \\frac{b}{c} \\geqslant \\frac{1+\\sqrt{5}}{2},\n$$\n即 $\\frac{b}{a} \\leqslant \\frac{\\sqrt{5}-1}{2}, \\frac{c}{b} \\leqslant \\frac{\\sqrt{5}-1}{2}$.\n从而\n$$\n\\frac{b+c}{a}=\\frac{b}{a}\\left(1+\\frac{c}{b}\\right) \\leqslant \\frac{\\sqrt{5}-1}{2}\\left(1+\\frac{\\sqrt{5}-1}{2}\\right)=1,\n$$\n但这与 $\\triangle A B C$ 中 $b+c>a$ 矛盾! 从而命题得证.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 设 $S=\\left\\{x_1, x_2, \\cdots, x_n\\right\\}(n \\geqslant 3)$ 是平面上的一个点集, 它的任意两点间的距离至少为 1 . 证明最多有 $3 n-6$ 个点对, 它们之间的距离为 1 .",
+    "solution": "如图(<FilePath:./images/volume12/figures/fig-c7a12.png>), 作图 $G=(V, E)$, 其中 $V=\\left\\{x_1, x_2, \\cdots, x_n\\right\\}, G$ 中两顶点 $x_i, x_j$ 相邻的充要条件是 $d\\left(x_i, x_j\\right)=1$. 设 $G$ 中存在不相同的两边 $A B 、 C D$ 交于 $O$ 点, 如图所示.\n因为 $d(A, B)=1, d(C, D)=1$, 不失一般性,设 $d(O, A) \\leqslant \\frac{1}{2}, d(O, C) \\leqslant \\frac{1}{2}, A B$ 与 $C D$ 间夹角为 $\\theta$, 则 $d(A, C)= \\left\\{d^2(O, A)+d^2(O, C)-2 d(O, A) \\times d(O, C) \\cos \\theta\\right\\}^{\\frac{1}{2}}$,\n按上述条件仅当 $\\theta=\\pi$ 且 $d(O, A)=\\frac{1}{2}, d(O, C)=\\frac{1}{2}$ 时, $d(A, C)=1$. 但这时 $A$ 和 $D$ 重合, $B$ 和 $C$ 重合.\n即 $A B$ 与 $D C$ 为同一边,这与假设是两条不相同的边矛盾.\n除此情况外, 还有 $d(A, C)<1$, 这与 $S$ 中任意两点距离不小于 1 的假设条件矛盾.\n综上所述, $G$ 为平面图, 于是 $G$ 的边数 $e \\leqslant 3 n-6$.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c7a12.png"
+    ]
+}

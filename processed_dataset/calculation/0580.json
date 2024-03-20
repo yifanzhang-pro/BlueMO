@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题10 解方程:\n$$\n\\lg ^2 x-[\\lg x]-2=0,\n$$\n其中 $[x]$ 表示不超过 $x$ 的最大整数.",
+    "solution": "由 $[x]$ 的定义知, $[x] \\leqslant x$, 故原方程可变为不等式 $\\lg ^2 x-\\lg x-2 \\leqslant 0,(\\lg x+1)(\\lg x-2) \\leqslant 0$, 所以 $-1 \\leqslant \\lg x \\leqslant 2$. \n当 $-1 \\leqslant \\lg x<0$ 时, $[\\lg x]=-1$, 原方程为 $\\lg ^2 x=1$, 所以 $\\lg x=-1, x=\\frac{1}{10}$. \n当 $0 \\leqslant \\lg x<1$ 时, $[\\lg x]=0$, 原方程为 $\\lg ^2 x=2$, 所以 $\\lg x= \\pm \\sqrt{2}$, 均不符合 $[\\lg x]=0$. \n当 $1 \\leqslant \\lg x<2$ 时, $[\\lg x]=1$, 原方程为 $\\lg ^2 x=3$, 所以 $\\lg x=\\sqrt{3}, x=10^{\\sqrt{3}}$. 当 $\\lg x=2$ 时, 即 $x=100$ 满足原方程.\n所以原方程的解为 $x_1=\\frac{1}{10}, x_2= 10^{\\sqrt{3}}, x_3=100$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题16. 某城市有一条公路从正西方向 $O A$ 通过市中心 $O$ 后转向东北方向 $O B$, 现要修建一条铁路 $L, L$ 在 $O A$ 上设一车站 $A$, 在 $O B$ 上设一车站 $B$, 铁路在 $A B$ 部分为直线段, 现要求市中心 $O$ 与 $A B$ 之间距离为 10 千米, 问把 $A B$分别设在公路上距中心 $O$ 多远处才能使 $|A B|$ 最短? 并求出最短距离.",
+    "solution": "如图(<FilePath:./images/volume3/figures/fig-c6p16.png>), 由已知条件得 $O H \\perp A B, O H=10, \\angle A O B=135^{\\circ}$, 设 $\\angle O A B=\\alpha, \\angle O B A=45^{\\circ}-\\alpha$, 则 $A H=10 \\cot \\alpha, B H=10 \\cot \\left(45^{\\circ}-\\alpha\\right)$,于是 $A B=10 \\cot \\alpha+ 10 \\cot \\left(45^{\\circ}-\\alpha\\right)=\\frac{10}{\\tan \\alpha}+\\frac{10(1+\\tan \\alpha)}{1-\\tan \\alpha}= \\frac{10\\left(1+\\tan ^2 \\alpha\\right)}{\\tan \\alpha(1-\\tan \\alpha)}=\\frac{10}{\\sin \\alpha(\\cos \\alpha-\\sin \\alpha)}=\\frac{20}{\\sin 2 \\alpha+\\cos 2 \\alpha-1}=\\frac{20}{\\sqrt{2} \\sin \\left(2 \\alpha+45^{\\circ}\\right)-1}$, 所以当 $\\alpha=22.5^{\\circ}$ 时, $(A B)_{\\text {min }}= 20(\\sqrt{2}+1)$ 千米.\n此时 $O A=O B=\\frac{10}{\\sin 22.5^{\\circ}}=10 \\sqrt{4+2 \\sqrt{2}}$ (千米).",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c6p16.png"
+    ]
+}

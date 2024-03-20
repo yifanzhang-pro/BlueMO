@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 半径为 1 的球面上的两点用球内长度小于 2 的曲线段连接起来.\n证明这条曲线段一定落在这个球的某个半球内.",
+    "solution": "提示: 先考虑平面上的类似问题, 探究解题方法.\n只要过球心 $O$ 作垂直于 $\\angle A O B$ 的平分线 $O C$ 的平面 $\\pi$, 再利用点的对称性设法证明 $\\overparen{A B}$ 上不可能有平面 $\\pi$ 上的点,即不穿过 $\\pi$ 便可.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例8. 如图(<FilePath:./images/volume7/figures/fig-c2i13.png>), 点 $P 、 Q$ 是 $\\triangle A B C$ 的外接圆上(异于 $A 、 B 、 C$ ) 的两点, 点 $P$ 关于直线 $B C 、 C A$ 、 $A B$ 的对称点分别是 $U 、 V 、 W$, 连结 $Q U 、 Q V 、 Q W$ 分别与直线 $B C 、 C A 、 A B$ 交于点 $D 、 E 、 F$.\n求证: (1) $U 、 V 、 W$ 三点共线;\n(2) $D 、 E 、 F$ 三点共线.",
+    "solution": "证明:(1) 设从点 $P$ 向 $B C 、 C A 、 A B$ 作垂线, 垂足分别为 $X 、 Y 、 Z$.\n由对称知 $X Y$ 为 $\\triangle P U V$ 的中位线, 故 $U V / / X Y$.\n同理 $V W / / Y Z, W U / / X Z$.\n又由西姆松定理知 $X 、 Y 、 Z$ 三点共线.\n故 $U 、 V 、 W$ 三点共线.\n(2) 因为 $P 、 C 、 A 、 B$ 四点共圆, 所以 $\\angle P C E=\\angle A B P$.\n所以 $\\angle P C V=2 \\angle P C E=2 \\angle A B P=\\angle P B W$.\n又 $\\angle P C Q=\\angle P B Q$, 故 $\\angle P C V+\\angle P C Q=\\angle P B W+\\angle P B Q$, 即 $\\angle Q C V=\\angle Q B W$.\n从而 $\\frac{S_{\\triangle Q C V}}{S_{\\triangle Q B W}}=\\frac{C V \\cdot Q C}{Q B \\cdot B W}$.\n同理 $\\frac{S_{\\triangle Q A W}}{S_{\\triangle Q C U}}=\\frac{A W \\cdot A Q}{C Q \\cdot C U}, \\frac{S_{\\triangle Q B U}}{S_{\\triangle Q A V}}=\\frac{B Q \\cdot B U}{A Q \\cdot A V}$.\n所以 $\\frac{S_{\\triangle Q C V}}{S_{\\triangle Q B W}} \\cdot \\frac{S_{\\triangle Q A W}}{S_{\\triangle Q C U}} \\cdot \\frac{S_{\\triangle Q B U}}{S_{\\triangle Q A V}}=1$, (这里注意到 $O U=C V, A W=A V$, $B U=B W)$. 于是\n$$\n\\frac{B D}{D C} \\cdot \\frac{C E}{E A} \\cdot \\frac{A F}{F B}=\\frac{S_{\\triangle Q B U}}{S_{\\triangle Q C U}} \\cdot \\frac{S_{\\triangle Q C V}}{S_{\\triangle Q A V}} \\cdot \\frac{S_{\\triangle W A Q}}{S_{\\triangle W B Q}}=1 .\n$$\n故由梅氏定理逆定理知 $D 、 E 、 F$ 三点共线.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2i13.png"
+    ]
+}

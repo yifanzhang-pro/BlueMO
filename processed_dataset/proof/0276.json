@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter12.tex",
+    "problem_type": "proof",
+    "problem": "例1. 在平面直角坐标系中是否存在无穷多个圆组成的集合 $M_0$, 满足\n(1) $M_0$ 中任意两个圆至多有一个公共点;\n(2) $x$ 轴上每一个有理点都在 $M_0$ 中某个圆上.",
+    "solution": "解:对 $x$ 轴上任意有理点 $(r, 0)\\left(r=\\frac{p}{q}, p 、 q\\right.$ 为互素整数, $\\left.q>0\\right)$, 在 $x$ 轴上方作一个半径为 $R_r>0$ 的圆与 $x$ 轴切于点 $(r, 0)$, 并记这个圆为 $C_r\\left(R_r\\right)$, 所有这些圆组成的集合记为 $M_0$, 显然 $M_0$ 满足条件 (2), 为了使 $M_0$ 满足条件 (1), 我们来分析 $R_r$ 的值应该是多少.\n在 $M_0$ 中任取两个圆 $C_{r_i}\\left(R_{r_i}\\right)(i=1,2)$, 因为两个圆都在 $x$ 轴上方并且都与 $x$ 轴相切, 所以它们相交的充要条件是圆心距小于两圆半径之和, 即\n$$\n\\sqrt{\\left(r_2-r_1\\right)^2+\\left(R_{r_2}-R_{r_1}\\right)^2}<R_{r_2}+R_{r_1},\n$$\n这等价于 $\\left(r_1-r_2\\right)^2<4 R_{r_1} R_{r_2}$. 令 $r_i=\\frac{p_i}{q_i}\\left(p_i, q_i\\right.$ 为互素整数且 $q_i>0, i= 1,2)$, 得\n$$\n\\left(p_1 q_2-p_2 q_1\\right)^2<4 q_1^2 q_2^2 R_{r_1} R_{r_2} .\n$$\n若取 $R_{r_i}=\\frac{1}{k q_{r_i}^2}(k \\geqslant 2)$, 则上式化为\n$$\n\\left(p_1 q_2-p_2 q_1\\right)^2<\\frac{4}{k^2} \\leqslant 1\n$$\n当 $r_1 \\neq r_2$ 时, 上式左端为正整数, 矛盾.\n可见, 只要取 $R_r=\\frac{1}{k q^2}(k \\geqslant 2)$, 所作圆集合 $M_0$ 就满足题目的所有条件.\n于是我们证明了存在无穷多个圆组成的集合\n$$\nM_0=\\left\\{C_r\\left(R_r\\right) \\mid r=\\frac{p}{q}, R_r=\\frac{1}{k q^2}(k \\geqslant 2), p, q \\text { 为互素整数, } q>0\\right\\} .\n$$\n满足题目条件 (1)、(2), 显然这样的 $M_0$ 有无穷多个.",
+    "remark": "",
+    "figures": []
+}

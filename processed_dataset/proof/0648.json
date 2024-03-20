@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter15.tex",
+    "problem_type": "proof",
+    "problem": "例1. 已知 $n$ 个点 $A_1, A_2, \\cdots, A_n$ 顺次排在一条直线上, 每个点染上红色或蓝色之一.\n如果线段 $A_i A_{i+1}(1 \\leqslant i \\leqslant n-1)$ 的两端颜色不同, 就称它为标准线段.\n已知 $A_1$ 与 $A_n$ 的颜色不同, 证明: 在 $A_i A_{i+1}(i=1,2, \\cdots, n-1)$ 中,标准线段的条数为奇数.",
+    "solution": "证明: $A_1, A_2, \\cdots, A_n$ 中的每一个点 $A_i$ 赋值 $a_i$ : 若 $A_i$ 为红色, 则 $a_i=1$; 若 $A_i$ 为蓝色, 则 $a_i=-1$.\n设这 $n-1$ 条线段中有 $m$ 条是标准线段,那么\n$$\n\\left(a_1 a_2\\right)\\left(a_2 a_3\\right) \\cdots\\left(a_{n-1} a_n\\right)=(-1)^m .\n$$\n另一方面, 有\n$$\n\\left(a_1 a_2\\right)\\left(a_2 a_3\\right) \\cdots\\left(a_{n-1} a_n\\right)=a_1 a_2^2 a_3^2 \\cdots a_{n-1}^2 a_n=a_1 a_n=-1 .\n$$\n所以, $(-1)^m=-1$, 故 $m$ 是奇数, 即标准线段的条数为奇数.",
+    "remark": "注:本题解法颇多.\n上述解法中, 我们通过赋值使问题数值化, 并通过数的运算性质简洁而直接地解答了问题.\n另一种典型的赋值方法可表述为: 对各点 $A_i$ 中的红点赋值 $a_i=0$, 蓝点赋值 $a_i=1$, 并考察所有线段 $A_i A_{i+1}$ 对应的数值 $a_i+a_{i+1}$ 之和的奇偶性.\n这两种赋值方法在相差一个运算级别的意义下是一样的.",
+    "figures": []
+}

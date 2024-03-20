@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例21. 已知 $a+b+c>0, a x^2+b x+c=0$ 有实根, 求证:\n$$\n4 \\min \\{a, b, c\\} \\leqslant a+b+c \\leqslant \\frac{9}{4} \\max \\{a, b, c\\} .\n$$",
+    "solution": "证明:不妨设 $a+b+c=1$, 否则可用 $\\frac{a}{a+b+c} 、 \\frac{b}{a+b+c} 、 \\frac{c}{a+b+c}$ 代替 $a, b 、 c$.\n先证明: $\\max \\{a, b, c\\} \\geqslant \\frac{4}{9}$.\n(1) 若 $b \\geqslant \\frac{4}{9}$, 则结论成立.\n(2) 若 $b<\\frac{4}{9}$, 因为 $b^2 \\geqslant 4 a c$, 有 $a c<\\frac{4}{81}$.\n又 $a+c=1-b>\\frac{5}{9}$, 所以如果 $a<0$ 或 $c<0$, 即有 $c>\\frac{5}{9}$ 或 $a>\\frac{5}{9}$, 结论成立.\n如果 $a, c \\geqslant 0$, 则 $\\left(\\frac{5}{9}-c\\right) \\cdot c<a c<\\frac{4}{81}$, 得 $c<\\frac{1}{9}$ 或 $c>\\frac{4}{9}$.\n若 $c<\\frac{1}{9}$, 此时 $a>\\frac{4}{9}$, 故结论成立.\n再证明: $\\min \\{a, b, c\\} \\leqslant \\frac{1}{4}$.\n(1) 若 $a \\leqslant \\frac{1}{4}$, 则无须证明.\n(2) 若 $a>\\frac{1}{4}$, 则有 $b^2 \\geqslant 4 a c \\geqslant c, b+c=1-a<\\frac{3}{4}$.\n不妨设 $c \\geqslant 0$ (否则 $c<0$, 结论已得), 故 $\\sqrt{c}+c \\leqslant b+c<\\frac{3}{4}$, 于是 $\\left(\\sqrt{c}+\\frac{3}{4}\\right)\\left(\\sqrt{c}-\\frac{1}{2}\\right)<0$.\n因此 $c<\\frac{1}{4}$, 结论成立.\n说明本题的结论是最佳的.\n方程 $\\frac{4}{9} x^2+\\frac{4}{9} x+\\frac{1}{9}=0$ 表明 $\\frac{9}{4}$ 不能改为更小的数; 而方程 $\\frac{1}{4} x^2+ \\frac{2}{4} x+\\frac{1}{4}=0$ 表明 4 不能改为更大的数.",
+    "remark": "",
+    "figures": []
+}

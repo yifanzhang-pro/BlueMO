@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题15 已知函数 $f(x)=4 \\pi \\arcsin x-[\\arccos (-x)]^2$ 的最大值为 $M$, 最小值为 $m$, 则 $M-m=$",
+    "solution": "$3 \\pi^2$. 因为 $\\arccos (-x)=\\pi-\\arccos x, \\arcsin x=\\frac{\\pi}{2}-\\arccos x$, 所以 $f(x)=4 \\pi\\left(\\frac{\\pi}{2}-\\arccos x\\right)-(\\pi-\\arccos x)^2=-(\\arccos x)^2-2 \\pi \\arccos x+ \\pi^2=-(\\arccos x+\\pi)^2+2 \\pi^2$, 又因为 $0 \\leqslant \\arccos x \\leqslant \\pi$, 所以 $M=\\pi^2$,\n$m=-2 \\pi^2 \\Rightarrow M-m=3 \\pi^2$.",
+    "remark": "",
+    "figures": []
+}

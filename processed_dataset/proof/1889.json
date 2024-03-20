@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 学设 $E 、 F$ 分别为正方形 $A B C D$ 的边 $B C 、 C D$ 上的点, $A E 、 A F$ 分别与对角线 $B D$ 交于 $P 、 Q$ 两点, 且 $B E+D F=E F$. 求证: 五边形 $P E C F Q$ 内接于圆.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c6a8.png>), 以 $A$ 为旋转中心逆时针旋转 $90^{\\circ}$, 则 $B \\rightarrow D$, 设 $E \\rightarrow E^{\\prime}$, 则 $A E^{\\prime}$ 垂直且等于 $A E$, $D E^{\\prime}$ 垂直且等于 $B E$, 因而 $E^{\\prime}$ 在 $C D$ 的延长线上, 所以 $B E+F D=D E^{\\prime}+F D=E^{\\prime} F$, 于是, $B E+D F=E F \\Leftrightarrow E^{\\prime} F=E F \\Leftrightarrow \\triangle A E^{\\prime} F \\cong \\triangle A E F \\Leftrightarrow \\angle E^{\\prime} A F=\\angle E A F \\Leftrightarrow \\angle E A F=\\frac{1}{2} \\angle E A E^{\\prime} \\Leftrightarrow \\angle E A F=45^{\\circ}$. 注意到\"任意一条直线与其像直线的交角等于旋转角\" $A F$. 是 $A E$ 在旋转下的像.\n故 $\\angle A E Q=45^{\\circ}$, 所以 $E Q \\perp Q F$; 同理 $E P \\perp P F$. 即 $P 、 E$ 、 $C, F$ 和 $E 、 C 、 F 、 Q$ 分别四点共圆, 从而五边形 $P E C F Q$ 内接于圆.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6a8.png"
+    ]
+}

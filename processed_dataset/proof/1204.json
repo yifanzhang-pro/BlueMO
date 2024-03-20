@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 求证: $\\left(1-\\frac{1}{365}\\right)\\left(1-\\frac{2}{365}\\right) \\cdots\\left(1-\\frac{25}{365}\\right)<\\frac{1}{2}$.",
+    "solution": "由平均值不等式, 得左边 $\\leqslant\\left\\{\\frac{1}{25}\\left[\\left(1-\\frac{1}{365}\\right)+\\left(1-\\frac{2}{365}\\right)+\\cdots+\\right.\\right. \\left.\\left.\\left(1-\\frac{25}{365}\\right)\\right]\\right\\}^{25}=\\left(1-\\frac{13}{365}\\right)^{25}$. 在 $\\left(1-\\frac{13}{365}\\right)^{25}$ 的二项式展开中, 相邻两项的符号相反, 其绝对值的比为 $\\frac{\\mathrm{C}_{25}^{k+1}\\left(\\frac{13}{365}\\right)^{k+1}}{\\mathrm{C}_{25}^k\\left(\\frac{13}{365}\\right)^k}=\\frac{25+k}{k+1} \\cdot \\frac{13}{365} \\leqslant \\frac{25 \\times 13}{365}<1$.\n即 $\\mathrm{C}_{25}^k\\left(\\frac{13}{365}\\right)^k>\\mathrm{C}_{25}^{k+1}\\left(\\frac{13}{365}\\right)^{k+1}$. 所以 $\\left(1-\\frac{13}{365}\\right)^{25}=1- \\left[\\mathrm{C}_{25}^1\\left(\\frac{13}{365}\\right)-\\mathrm{C}_{25}^2\\left(\\frac{13}{365}\\right)^2\\right]-\\left[\\mathrm{C}_{25}^3\\left(\\frac{13}{365}\\right)^3-\\mathrm{C}_{25}^4\\left(\\frac{13}{365}\\right)^4\\right]-\\cdots-\\left(\\frac{13}{365}\\right)^{25}< 1-\\mathrm{C}_{25}^1 \\cdot \\frac{13}{365}+\\mathrm{C}_{25}^2\\left(\\frac{13}{365}\\right)^2=1-\\frac{65}{73}+\\frac{169 \\times 12}{75^2}=\\frac{2622}{5329}<\\frac{1}{2}$.",
+    "remark": "",
+    "figures": []
+}

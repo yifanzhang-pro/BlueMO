@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题22. 已知 $0<\\theta<\\frac{\\pi}{2}, a 、 b>0$, 求证:\n$$\n\\frac{a}{\\sin \\theta}+\\frac{b}{\\cos \\theta} \\geqslant\\left(a^{\\frac{2}{3}}+b^{\\frac{2}{3}}\\right)^{\\frac{3}{2}}\n$$",
+    "solution": "$\\frac{a}{\\sin \\theta}+\\frac{b}{\\cos \\theta} \\geqslant\\left(a^{\\frac{2}{3}}+b^{\\frac{2}{3}}\\right)^{\\frac{3}{2}} \\Leftrightarrow\\left(\\frac{a}{\\sin \\theta}+\\frac{b}{\\cos \\theta}\\right)^2 \\geqslant\\left(a^{\\frac{2}{3}}+b^{\\frac{2}{3}}\\right)^3 \\Leftrightarrow \\frac{a^2}{\\sin ^2 \\theta}+\\frac{2 a b}{\\sin \\theta \\cos \\theta}+\\frac{b^2}{\\cos ^2 \\theta} \\geqslant a^2+b^2+3 \\sqrt[3]{a^4 b^2}+3 \\sqrt[3]{a^2 b^4} \\Leftrightarrow a^2 \\cot ^2 \\theta+ b^2 \\tan ^2 \\theta+2 a b \\frac{\\sin ^2 \\theta+\\cos ^2 \\theta}{\\sin \\theta \\cos \\theta} \\geqslant 3 \\sqrt[3]{a^4 b^2}+3 \\sqrt[3]{a^2 b^4} \\Leftrightarrow a^2 \\cot ^2 \\theta+b^2 \\tan ^2 \\theta+ 2 a b \\tan \\theta+2 a b \\cot \\theta \\geqslant 3 \\sqrt[3]{a^4 b^2}+3 \\sqrt[3]{\\sqrt{a^2 b^4}},(*)$ 因为 $a^2 \\cot ^2 \\theta+2 a b \\tan \\theta= a^2 \\cot ^2 \\theta+a b \\tan \\theta+a b \\tan \\theta \\geqslant 3 \\sqrt[3]{a^4 b^2}$, 同理 $b^2 \\tan ^2 \\theta+2 a b \\cot \\theta \\geqslant 3 \\sqrt[3]{a^2 b^4}$, 所以 $(*)$ 成立, 原不等式得证.",
+    "remark": "",
+    "figures": []
+}

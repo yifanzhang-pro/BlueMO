@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 某国王有 $2n$个大臣,其中某些大臣互相有怨仇,但每个大臣的仇人(限于大臣内部)不超过 $n-1$ 人 (互为仇人), 问能否让他们围圆桌而坐, 使仇人不相邻?",
+    "solution": "用 $2 n$ 个顶点表示 $2 n$ 个大臣, 若两人不是仇人, 则相应的顶点相邻, 得图 $G$. 在 $G$ 中, 每个顶点 $v$ 的度 $d(v) \\geqslant(2 n-1)-(n-1)=n$, 根据定理四, $G$ 中有哈密顿圈, 按圈上顶点的顺序安排位置即可.",
+    "remark": "",
+    "figures": []
+}

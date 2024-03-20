@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题13. 在四边形 $A B C D$ 中, 对角线 $A C$ 平分 $\\angle B A D$. 在 $C D$ 上取一点 $E, B E$ 与 $A C$ 相交于 $F$, 延长 $D F$ 交 $B C$ 于 $G$. 求证: $\\angle G A C=\\angle E A C$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c2a13.png>),考虑直线 $G F D$ 截 $\\triangle B C E$, 由梅氏定理知 $1=\\frac{B G}{G C} \\cdot \\frac{C D}{D E} \\cdot \\frac{E F}{F B}= \\frac{S_{\\triangle A B G}}{S_{\\triangle A C G}} \\cdot \\frac{S_{\\triangle A C D}}{S_{\\triangle A D E}} \\cdot \\frac{S_{\\triangle A E F}}{S_{\\triangle A F B}}$. 设 $\\angle B A C=\\angle D A C=\\theta, \\angle G A C=\\alpha, \\angle E A C=\\beta$, 则\n$$\n\\frac{S_{\\triangle A B G}}{S_{\\triangle A O G}}=\\frac{A B \\cdot \\sin (\\theta-\\alpha)}{A C \\cdot \\sin \\alpha}, \\frac{S_{\\triangle A C D}}{S_{\\triangle A D E}}=\\frac{A C \\cdot \\sin \\theta}{A E \\cdot \\sin (\\theta-\\beta)}, \\frac{S_{\\triangle A E F}}{S_{\\triangle A F B}}=\\frac{A E \\cdot \\sin \\beta}{A B \\cdot \\sin \\theta} .\n$$\n所以, $\\sin \\alpha \\cdot \\sin (\\theta-\\beta)=\\sin \\beta \\cdot \\sin (\\theta-\\alpha), \\sin \\alpha \\cdot \\sin \\theta \\cdot \\cos \\beta-\\sin \\alpha \\cos \\theta \\cdot \\sin \\beta=\\sin \\beta \\cdot \\sin \\theta \\cdot \\cos \\alpha-\\sin \\beta \\cdot \\cos \\theta \\cdot \\sin \\alpha, \\tan \\alpha=\\tan \\beta$, 显然 $\\alpha, \\beta \\in(0$, $\\pi), \\alpha=\\beta$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2a13.png"
+    ]
+}

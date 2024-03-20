@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题4: 设 $A=\\{(x, y) \\mid 0 \\leqslant x \\leqslant 2,0 \\leqslant y \\leqslant 2\\}, B=\\{(x, y) \\mid x \\leqslant 10, y \\geqslant 2, y \\leqslant x-4\\}$ 是直角坐标平面 $x O y$ 上的点集.\n则 $C=\\left\\{frac{x_1+x_2}{2}\\frac{y_1+y_2}{2}\\right\\} \\mid\\left(x_1, y_1\\right) \\in A,\\left(x_2, y_2\\right) \\in B\\right\\}$ 所成图形的面积是",
+    "solution": "解: 7. 如图(<FilePath:./images/volume1/figures/fig-c1p4.png>),集合 $A$ 为正方形 $O A B C$, 集合 $B$ 为 Rt $\\triangle D E F . O D 、 A E 、 B F 、 C F$ 、 $C D$ 的中点依次为 $M(3,1) 、 N(6,1)$ 、 $P(6,4) 、 Q(5,4) 、 R(3,2)$. 所成图形面积 $S_{M N P Q R}=7$.",
+    "remark": "",
+    "figures": [
+        "./images/volume1/figures/fig-c1p4.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 已知对一切正整数 $n$, 都有 $a_n>0$, 且 $\\sum_{i=1}^n a_i^3=\\left(\\sum_{i=1}^n a_i\\right)^2$, 求证: $a_n=n$.",
+    "solution": "对 $n$ 用数学归纳法.\n当 $n=1$ 时, $a_1^3=a_1^2$, 故 $a_1=1$. 即 $n=1$ 时命题成立.\n假设 $n \\leqslant k$ 时命题成立, 即 $a_1=1, a_2=2, \\cdots, a_k=k$, 则由题设\n$$\n1^3+2^3+\\cdots+k^3+a_{k+1}^3=\\left(1+2+\\cdots+k+a_{k+1}\\right)^2,\n$$\n所以\n$$\na_{k+1}\\left(a_{k+1}^2-a_{k+1}-k(k+1)\\right)=0,\n$$\n考虑到 $a_{k+1}>0$, 从而 $a_{k+1}=k+1$, 故命题对 $n=k+1$ 也成立.",
+    "remark": "",
+    "figures": []
+}

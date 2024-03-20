@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题31 证明: 存在唯一的函数 $f(x, y)$, 这里 $x, y \\in \\mathbf{N}_{+}$, 使得对任意 $x, y \\in \\mathbf{N}_{+}$, 均有\n$$\n\\begin{gathered}\nf(x, x)=x, \\\\\nf(x, y)=f(y, x), \\\\\n(x+y) f(x, y)=y f(x, x+y) .\n\\end{gathered}\n$$",
+    "solution": "我们依次来定 $f(x, y)$ 的值.\n(1) 对任意 $n \\in \\mathbf{N}_{+}$, 均有 $f(1, n)= f(n, 1)=n$. 上式只需在条件中令 $x=1$, 利用数学归纳法易证.\n(2) $f(2$, $2 n)=2 n ; f(2,2 n+1)=2(2 n+1)$. 事实上, 由条件, $\\frac{f(x, x+y)}{x+y}= \\frac{f(x, y)}{y}$, \n故 $\\frac{f(2,2 n)}{2 n}=\\frac{f(2,2 n-2)}{2(n-1)}=\\cdots=\\frac{f(2,2)}{2}=1$, 所以 $f(2,2 n)=2 n$. 又 $\\frac{f(2,2 n+1)}{2 n+1}=\\frac{f(2,2 n-1)}{2 n-1}=\\cdots=\\frac{f(2,1)}{1}=2$, 所以 $f(2$, $2 n+1)=2(2 n+1)$. \n一般地, 设 $f(n, y)$ 的值都已确定, 这里 $n \\geqslant 2,1 \\leqslant y \\leqslant n-1$, 下面来确定 $f(n, m), m>n$ 的值.\n考虑带余除法 $m=q n+r, 0 \\leqslant r \\leqslant n-1$. 若 $r=0$, 则有 $\\frac{f(n, n q)}{n q}=\\frac{f(n, n(q-1))}{n(q-1)}=\\cdots=\\frac{f(n, n)}{n}=1$, 所以 $f(n, n q)=n q$. \n若 $1 \\leqslant r \\leqslant n-1$, 则有 $\\frac{f(n, n q+r)}{n q+r}= \\frac{f(n, n(q-1)+r)}{n(q-1)+r}=\\cdots=\\frac{f(n, r)}{r}$, 故 $f(n, m)=\\frac{m}{r} f(n, r)$. \n综上所述, 满足条件的 $f(x, y)$ 可由上述递推式加以确定.\n故它存在且唯一.",
+    "remark": "",
+    "figures": []
+}

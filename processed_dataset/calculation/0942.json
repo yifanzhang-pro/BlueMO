@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 已知 $\\vec{a}=\\{1,2\\}, \\vec{b}=\\{-3,2\\}$, 求实数 $k$ 使 $k \\vec{a}+\\vec{b}$ 与 $\\vec{a}-3 \\vec{b}$ 同方向或反方向.",
+    "solution": "分析:与解 $k \\vec{a}+\\vec{b}=\\{k-3,2 k+2\\}, \\vec{a}-3 \\vec{b}=\\{10,-4\\}$.\n由题意得 $k \\vec{a}+\\vec{b} / / \\vec{a}-3 \\vec{b}$, 所以 $\\frac{k-3}{10}=\\frac{2 k+2}{-4}$, 解得 $k=-\\frac{1}{3}$.",
+    "remark": "",
+    "figures": []
+}

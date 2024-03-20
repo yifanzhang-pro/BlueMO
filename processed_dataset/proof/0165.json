@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设正整数 $a 、 b 、 c$ 的最大公约数为 1 , 并且\n$$\n\\frac{a b}{a-b}=c \\text {. }\n$$\n证明: $a-b$ 是一个完全平方数.",
+    "solution": "证明:设 $(a, b)=d$, 则 $a=d a_1, b=d b_1$, 其中 $\\left(a_1, b_1\\right)=1$. 由于 $(a$, $b, c)=1$, 故有 $(d, c)=1$.\n现在, 问题中的等式可化为\n$$\nd a_1 b_1=c a_1-c b_1, \\label{eq1}\n$$\n由此可见 $a_1$ 整除 $c b_1$. 因 $\\left(a_1, b_1\\right)=1$, 故 $a_1 \\mid c$. 同样得 $b_1 \\mid c$. 再由 $\\left(a_1, b_1\\right)=$ 1 便推出 $a_1 b_1 \\mid c$.\n设 $c=a_1 b_1 k$, 其中 $k$ 是-一个正整数.\n一方面,显然 $k$ 整除 $c$; 另一方面,结合 \\ref{eq1} 式得 $d=k\\left(a_1-b_1\\right)$, 故 $k \\mid d$. 从而 $k \\mid(c, d)$ . 但 $(c, d)=1$, 故 $k=1$.\n因此 $d=a_1-b_1$. 故 $a-b=d\\left(a_1-b_1\\right)=d^2$. 这就证明了 $a-b$ 是一个完全平方数.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 已知三角形 $A B C$ 及其内切圆 $O, E 、 F 、 G$ 分别为 $B C 、 B A 、 A C$ 边上的切点, $H$ 为边 $B C$ 上高 $A D$ 的中心, $E H$ 交圆 $O$ 于 $I$. 求证: $I E$ 平分 $\\angle B I C$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c9a9.png>), 设直线 $G F$ 与直线 $B C$ 交于点 $K$, 延长 $K I$ 交圆 $O$ 于 $M$,并设 $A E$ 与 $I M$ 交于点 $L$, 连结 $M E$. 由上章例 2 的证明过程知 $C 、 B 、 E 、 K$ 成调和点列, 又注意到 $A$ 的极线 $F G$ 过 $K, E$ 的极线 $B C$ 过 $K$, 所以 $K$ 的极线过 $A 、 E$, 即 $K$ 的极线为直线 $A E$,于是, $K 、 L$ 共轭, 故 $K 、 L 、 I 、 M$ 成调和点列, 于是从 $E$ 点出发的线束 $E K 、 E L 、 E I 、 E M$ 或 $E D 、 E A 、 E H 、 E M$ 成调和线束, 结合 $D H=H A$, 于是 $D 、 A 、 H 、 \\infty$ 成调和点列, 仍由 $E$ 点出发知, $E D 、 E A 、 E H 、 E \\infty$ (即过 $E$ 平行于直线 $D A$ 的直线) 成调和线束, 那么 $E \\infty$ 与 $E M$ 重合, 即 $E M / / D A$, 或 $E M \\perp B C$, 注意到 $B C$ 是 $E$ 点处切线即 $O E \\perp B C$, 故 $M 、 O 、 E$ 三点共线, 于是 $M E$ 是圆 $O$ 的直径, $K I \\perp I E$, 结合 $K 、 E 、 B 、 C$ 成调和点列, 于是 $I E$ 平分 $\\angle B I C$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9a9.png"
+    ]
+}

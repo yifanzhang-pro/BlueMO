@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 分别以 $\\triangle A B C$ 的边 $A B$ 和 $A C$ 为边向外作正方形 $A B D E$ 和 $A C F G, P$ 、 $Q$ 为直线 $E G$ 上的两点使得 $B P$ 和 $C Q$ 垂直于 $B C$, 求证\n$$\nB P+C Q \\geqslant B C+E G,\n$$\n等号成立当且仅当 $A B=A C$.",
+    "solution": "不失一般性, 可设 $A=(0, h), B=(p, 0), C=(q, 0)(h>0, p<q)$, 则 $E=(-h, h-p), G=(h, h+q)$, 直线 $E G$ 的方程为 $y=h+\\frac{q-p}{2}+\\frac{p+q}{2 h} x$. 令 $x=p$ 和 $x=q$ 可得 $B P=h+\\frac{q-p}{2}+\\frac{p+q}{2 h} p, C Q=h+\\frac{q-p}{2}+\\frac{p+q}{2 h} q$, 因此 $B P+C Q=q-p+\\frac{4 h^2+(p+q)^2}{2 h}=B C+\\frac{E G^2}{2 h} \\geqslant B C+E G$, 上面用到了 $E G^2=4 h^2+(p+q)^2 \\geqslant 4 h^2$, 即 $E G \\geqslant 2 h$.",
+    "remark": "",
+    "figures": []
+}

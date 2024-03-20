@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例10. 给出斐波那契数列 $\\left\\{F_n\\right\\}$ 如下: $1,1,2,3,5,8, \\cdots$ (自第 3 项起, 每项等于前两项之和). 试问, 在数列的前一亿项中, 是否会有某项是 10000 的倍数?",
+    "solution": "解:结论是肯定的.\n为方便起见,约定 $F_0=0$.\n设 $f_n$ 是 $F_n$ 除以 10000 所得的余数 $(n \\in \\mathbf{N})$, 则 $0 \\leqslant f_n \\leqslant 9999$, 因此根据抽屉原理, 在 $10000^2+1=10^8+1$ 对整数对 $\\left(f_n, f_{n+1}\\right)\\left(0 \\leqslant n \\leqslant 10^8\\right)$ 中必有两对相同, 不妨设 $\\left(f_p, f_{p+1}\\right)=\\left(f_q, f_{q+1}\\right)$, 其中 $p, q \\in \\mathbf{N}, 0 \\leqslant p<q \\leqslant 10^8$, 此时 $F_p \\equiv F_q, F_{p+1} \\equiv F_{q+1}(\\bmod 10000)$.\n若 $p \\geqslant 1$, 则根据递推关系得\n$$\nF_{q-1}=F_{q+1}-F_q \\equiv F_{p+1}-F_p=F_{p-1}(\\bmod 10000),\n$$\n以下依次有\n$$\nF_{q-2} \\equiv F_{p-2}, \\cdots, F_{q-p+1} \\equiv F_1, F_{q-p} \\equiv F_0=0(\\bmod 10000) .\n$$\n若 $p=0$, 则 $F_{q-p} \\equiv F_0=0(\\bmod 10000)$ 仍成立.\n显然 $F_{q-p}>0$, 故 $F_{q-p}$ 是 10000 的倍数, 且 $1 \\leqslant q-p \\leqslant 10^8$, 说明 $F_{q-p}$ 的确是前一亿项中的一项.\n结论成立.",
+    "remark": "注:本例若直接递推或构造出某项是 10000 的倍数固然直截了当, 但显然困难重重, 而作为一个存在性命题, 抽屉原理也许是解决的办法之一.\n本例中用的是通过剩余类制造抽屉的方法, 然而若单纯地证明存在两项关于模 10000 同余并无多大用处, 关键在于如何使同余关系不断\"前置\", 最终得到某项与 $F_0=0$ 同余.\n考虑到有 $F_{n-1}=F_{n+1}-F_n$, 我们只需说明存在两个数组 $\\left(F_n, F_{n+1}\\right)$, 它们每个分量对应同余即可, 而这点仍可用抽屉原理给出证明.",
+    "figures": []
+}

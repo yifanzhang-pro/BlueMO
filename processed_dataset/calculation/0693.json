@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题16 函数 $y=\\sin \\left(2 x+\\frac{\\pi}{3}\\right)$ 图象的对称轴是",
+    "solution": "$x=\\frac{k \\pi}{2}+\\frac{\\pi}{12}(k \\in \\mathbf{Z})$. 由 $2 x+\\frac{\\pi}{3}=k \\pi+\\frac{\\pi}{2}$, 得对称轴 $x=\\frac{k \\pi}{2}+\\frac{\\pi}{12}$.",
+    "remark": "",
+    "figures": []
+}

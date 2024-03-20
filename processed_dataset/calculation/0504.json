@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例15 设 $x, y, z \\in \\mathbf{R}^{+}$, 且 $x+y+z=1$. 求\n$$\nu=\\frac{3 x^2-x}{1+x^2}+\\frac{3 y^2-y}{1+y^2}+\\frac{3 z^2-z}{1+z^2}\n$$\n的最小值.",
+    "solution": "分析:对于递增函数 $f(x), x \\in D$, 若 $x_1, x_2 \\in D$, 则\n$$\n\\left(x_1-x_2\\right)\\left[f\\left(x_1\\right)-f\\left(x_2\\right)\\right] \\geqslant 0 .\n$$\n对于递减函数 $f(x), x \\in D$, 若 $x_1, x_2 \\in D$, 则\n$$\n\\left(x_1-x_2\\right)\\left[f\\left(x_2\\right)-f\\left(x_1\\right)\\right] \\leqslant 0 .\n$$\n解令 $f(t)=\\frac{t}{1+t^2}, t \\in(0,+\\infty)$, 则\n$$\nf(t)=\\frac{1}{\\frac{1}{t}+t} .\n$$\n由于 $t+\\frac{1}{t}$ 在 $(0,1)$ 上递减, 所以 $f(t)$ 在 $(0,1)$ 上递增.\n设 $x \\in(0,1)$, 则\n$$\n\\begin{gathered}\n\\left(x-\\frac{1}{3}\\right)\\left[f(x)-f\\left(\\frac{1}{3}\\right)\\right] \\geqslant 0, \\\\\n\\left(x-\\frac{1}{3}\\right)\\left(\\frac{x}{1+x^2}-\\frac{3}{10}\\right) \\geqslant 0 .\n\\end{gathered}\n$$\n即\n$$\n\\left(x-\\frac{1}{3}\\right)\\left(\\frac{x}{1+x^2}-\\frac{3}{10}\\right) \\geqslant 0 \\text {. }\n$$\n整理, 得\n$$\n\\frac{3 x^2-x}{1+x^2} \\geqslant \\frac{9}{10}\\left(x-\\frac{1}{3}\\right) \\text {. }\n$$\n同理,得\n$$\n\\frac{3 y^2-y}{1+y^2} \\geqslant \\frac{9}{10}\\left(y-\\frac{1}{3}\\right), \\frac{3 z^2-z}{1+z^2} \\geqslant \\frac{9}{10}\\left(z-\\frac{1}{3}\\right) .\n$$\n所以\n$$\nu \\geqslant \\frac{9}{10}(x+y+z-1)=0 \\text {, }\n$$\n当 $x==y=z=\\frac{1}{3}$. 时等号成立.\n故 $u$ 的最小值为 0 .",
+    "remark": "",
+    "figures": []
+}

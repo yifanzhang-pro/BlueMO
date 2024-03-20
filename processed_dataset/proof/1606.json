@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题34. 设 $P(x)$ 是一个整系数多项式, 满足: 对任意 $n \\in \\mathbf{N}^*$, 都有 $P(n)>n$. 并且对任意 $m \\in \\mathbf{N}^*$, 数列\n$$\nP(1), P(P(1)), P(P(P(1))), \\cdots\n$$\n中都有一项是 $m$ 的倍数.\n证明: $P(x)=x+1$.",
+    "solution": "记 $x_1=1, x_{n+1}=P\\left(x_n\\right), n=1,2, \\cdots$, 对固定的 $n \\in \\mathbf{N}^*, n \\geqslant 2$, 记 $x_n-1=M$, 则 $x_1 \\equiv 1 \\equiv x_n(\\bmod M)$, 从而 $P\\left(x_1\\right) \\equiv P\\left(x_n\\right)(\\bmod M)$, 即 $x_2 \\equiv x_{n+1}(\\bmod M)$. 这样利用数学归纳法, 可证: 对任意 $k \\in \\mathbf{N}^*$, 都有\n$$\nx_k \\equiv x_{n+k-1}(\\bmod M) . \\label{(1)}\n$$\n由条件 $x_1, x_2, \\cdots$ 中有一项为 $M$ 的倍数,故存在 $r \\in \\mathbf{N}^*$, 使得 $x_r \\equiv 0 (\\bmod M)$. 而由 (1) 知数列 $\\left\\{x_k\\right\\}$ 在 $\\bmod M$ 的意义下是一个以 $n-1$ 为周期的数列,故可设 $1 \\leqslant r \\leqslant n-1$.\n现由 $P(n)>n$, 可知 $x_1<x_2<\\cdots<x_n$, 故 $x_{n-1} \\leqslant x_n-1=M$, 进而 $x_r \\leqslant M$. 但 $M \\mid x_r$, 故 $x_r=M=x_n-1$, 这要求 $r=n-1$, 即 $x_n-1==x_{n-1}$, 所以 $P\\left(x_{n-1}\\right)=x_n=x_{n-1}+1$. 由于此式对任意 $n \\geqslant 2$ 都成立, 结合 $\\left\\{x_n\\right\\}$ 为单调递增数列, 知 $P(x)=x+1$ 对无穷多个不同的正整数成立.\n所以 $P(x)=x+1$.",
+    "remark": "",
+    "figures": []
+}

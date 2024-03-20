@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题7. $R$ 是 $\\triangle A B C$ 的外接圆半径, 若 $a b<4 R^2 \\cos A \\cos B$, 则 $\\triangle A B C$ 的外心位于( ).\n(A) 三角形的外部\n(B) 三角形的边上\n(C) 三角形的内部\n(D) 无法判断",
+    "solution": "A. 由 $a b<4 R^2 \\cos A \\cos B$ 得 $\\sin A \\sin B<\\cos A \\cos B$, 即 $\\cos (A+ B)>0$, 所以 $A+B<\\frac{\\pi}{2}, \\triangle A B C$ 为钝角三角形,其外心在三角形外部.",
+    "remark": "",
+    "figures": []
+}

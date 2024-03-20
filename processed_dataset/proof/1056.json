@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题20. 等腰 $\\triangle A B C$ 的底边长为 $a$, 腰长为 $b$, 顶角为 $20^{\\circ}$, 求证: $a^3+b^3=3 a b^2$.",
+    "solution": "由条件得 $a=2 b \\sin 10^{\\circ}$, 于是 $a^3=8 b^3 \\sin ^3 10^{\\circ}=8 b^3 \\cdot \\frac{1-\\cos 20^{\\circ}}{2}$. $\\sin 10^{\\circ}=4 b^3\\left(\\sin 10^{\\circ}-\\sin 10^{\\circ} \\cos 20^{\\circ}\\right)=4 b^3\\left[\\sin 10^{\\circ}-\\frac{1}{2}\\left(\\sin 30^{\\circ}-\\sin 10^{\\circ}\\right)\\right]= 4 b^3\\left[-\\frac{3}{2} \\sin 10^{\\circ}-\\frac{1}{4}\\right]=6 b^3 \\sin 10^{\\circ}-b^3=3 a b^2-b^3$, 得证.",
+    "remark": "",
+    "figures": []
+}

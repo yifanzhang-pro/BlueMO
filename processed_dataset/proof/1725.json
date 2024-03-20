@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例3. Fagnano 问题: 设 $\\triangle D E F$ 的三顶点分别在 $\\triangle A B C$ 的三边上, 则 $\\triangle D E F$ 称为 $\\triangle A B C$ 的内接三角形.\n证明 : 在锐角三角形的所有内接三角形中, 垂足三角形的周长最短.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c6i3.png>) 所示, 首先以 $A B$ 为轴将 $\\triangle A B C$ 反射为 $\\triangle A B C_1$, 再以 $B C_1$ 为轴将 $\\triangle A B C_1$ 反射为 $\\triangle A_1 B C_1$, 再以 $A_1 C_1$ 为反射轴反射成 $\\triangle A_1 B_1 C_1$, 如此类推, 并设 $E$ 最终被反射成 $E^{\\prime}$, 设 $\\triangle D E F$ 的三边分别为 $d 、 e 、 f$, 不难由反射变换保距离知, 图中标注的几条边长分别为 $d 、 e 、 f 、 d 、 e 、 f$, 于是 $2(d+ e+f) \\geqslant E E^{\\prime}$, 不难知道 $A C / / A_2 C_2$, 于是 $E E^{\\prime}$ 是与 $D 、 E 、 F$ 无关的只与三角形本身有关的常数, 另一方面, 若 $\\triangle D E F$ 为垂足三角形, 则有 $\\angle D F B= \\angle E F A$ 等等, 于是 $E E^{\\prime}$ 折线上六点共线, 取到等号.\n所以垂足三角形的周长 $=\\frac{E E^{\\prime}}{2}$ 是所有内接三角形中周长最短的.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6i3.png"
+    ]
+}

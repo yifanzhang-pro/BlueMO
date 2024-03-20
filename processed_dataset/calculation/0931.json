@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 已知 $z \\in \\mathbf{C}$, 关于 $x$ 的一元二次方程\n$$\nx^2-z x+4+3 \\mathrm{i}=0\n$$\n有实根,求使复数 $z$ 的模取得最小值的复数 $z$.",
+    "solution": "分析:与解设出复数 $z$ 的代数形式, 利用方程的实根将实部, 虚部分离.\n设已知方程的实根为 $x_0$, 并记 $z=a+b \\mathrm{i}(a 、 b \\in \\mathbf{R})$, 则有\n$$\nx_0^2-(a+b \\mathrm{i}) x_0+4+3 \\mathrm{i}=0,\n$$\n即\n$$\n\\left(x_0^2-a x_0+4\\right)+\\left(-b x_0+3\\right) \\mathrm{i}=0 .\n$$\n于是, 有\n$$\n\\begin{gathered}\nx_0^2-a x_0+4=0, \\label{eq1} \\\\\n-b x_0+3=0 . \\label{eq2}\n\\end{gathered}\n$$\n因为 $b=0$ 时,方程 式\\ref{eq2} 无解, 所以 $b \\neq 0$.\n由式\\ref{eq2}有 $x_0=\\frac{3}{b}$, 代入 \\ref{eq1} 式,得 $\\left(\\frac{3}{b}\\right)^2-\\left(\\frac{3}{b}\\right) a+4=0$, 解得 $a=\\frac{4 b^2+9}{3 b}, \\label{eq3}$.\n于是 $|z|^2=a^2+b^2=\\left(\\frac{4 b^2+9}{3 b}\\right)^2+b^2=\\frac{25}{9} b^2+\\frac{9}{b^2}+8 \\geqslant 2 \\sqrt{\\frac{25}{9} b^2 \\cdot \\frac{9}{b^2}}+ 8=18$.\n当且仅当 $\\frac{25}{9} b^2=\\frac{9}{b^2}$, 也即 $b^2=\\frac{9}{5}$ 时, 上式中的等号成立.\n此时, 对应的 $a^2=18-\\frac{9}{5}=\\frac{81}{5}$.\n由\\ref{eq3}式可知 $a 、 b$ 同号, 从而所求的复数 $z= \\pm\\left(\\frac{9 \\sqrt{5}}{5}+\\frac{3 \\sqrt{5}}{5} \\mathrm{i}\\right)$.",
+    "remark": "",
+    "figures": []
+}

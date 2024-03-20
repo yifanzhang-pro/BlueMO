@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 证明: 对任意非空有限集, 都可以将它的所有子集排成一列, 使得任意两个相邻的子集的元素个数相差 1 .",
+    "solution": "对该非空有限集的元素个数 $n$ 归纳.\n记该集合为 $S_n$, 当 $n=1$ 时, 其子集可排列为 $\\varnothing, S_1$, 符合要求.\n设命题对 $n$ 成立, 即 $S_n$ 的子集可排列为 $A_1$, $A_2, \\cdots, A_{2^n}$, 使相邻两个集合元素个数相差 1 . 考虑 $S_{n+1}=\\left\\{a_1, \\cdots, a_{n+1}\\right\\}$, 对其 $n$ 元子集 $S_n=\\left\\{a_1, \\cdots, a_n\\right\\}$, 依归纳假设对 $S$ 的子集有符合要求的排列 $A_1, \\cdots, A_{2^n}$;于是, 下面的排列:\n$$\nA_1, \\cdots, A_{2^n}, A_{2^n} \\cup\\left\\{a_{n+1}\\right\\}, \\cdots, A_1 \\cup\\left\\{a_{n+1}\\right\\} .\n$$\n是 $S_{n+1}$ 所有子集的排列, 它们符合要求.\n说明这里构造的集合列中相邻两个子集的不同元素都恰好只有一个, 比要求的结论更强.",
+    "remark": "",
+    "figures": []
+}

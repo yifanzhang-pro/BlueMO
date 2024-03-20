@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $n \\in \\mathbf{N}$, 且 $n \\geqslant 15, A 、 B$ 都是 $\\{1,2, \\cdots, n\\}$ 的真子集, $A \\cap B=\\varnothing$, 且 $\\{1,2, \\cdots, n\\}=A \\cup B$. 证明: $A$ 或者 $B$ 中必有两个不同数的和为完全平方数.",
+    "solution": "证明:由题设, $\\{1,2, \\cdots, n\\}$ 的任何元素必属于且只属于它的真子集 $A$ 、$B$ 之一.\n假设结论不真, 则存在如题设的 $\\{1,2, \\cdots, n\\}$ 的真子集 $A 、B$, 使得无论是 $A$ 还是 $B$ 中的任何两个不同的数的和都不是完全平方数.\n不妨设 $1 \\in A$, 则 $3 \\notin A$. 否则 $1+3=2^2$, 与假设矛盾, 所以 $3 \\in B$. 同样, $6 \\notin B$, 所以 $6 \\in A$. 这时 $10 \\notin A$, 即 $10 \\in B$. 因 $n \\geqslant 15$, 而 15 或者在 $A$ 中, 或者在 $B$ 中,但当 $15 \\in A$ 时, 因 $1 \\in A, 1+15=4^2$, 矛盾; 当 $15 \\in B$ 时, 因 $10 \\in B, 10+15=5^2$, 仍然矛盾.\n因此假设不真, 即 $A$ 或者 $B$ 中必有两个不同数的和为完全平方数.\n说明由 $A 、 B$ 地位对称, 在上面的解法中我们采用了“不妨设 $1 \\in A$ ”这种技巧,有效简化了解题过程.\n例6 实际上给出了一个关于集合的方程组:\n$$\n\\left\\{\\begin{array}{l}\nA \\cup B=\\{1,2, \\cdots, n\\}, \\\\\nA \\cap B=\\varnothing .\n\\end{array}\\right.\n$$\n如果交换 $A 、 B$ 算两组解 (有序解), 那么这个方程组有多少组有序解呢?\n设 $U=\\{1,2, \\cdots, n\\}$, 由 $A \\cup B=U, A \\cap B=\\varnothing$,知 $A$ 与 $B$ 互补, 对于 $A \\subseteq U$, 可取 $B=\\complement_U A$. 故上述集合方程的有序解的个数为 $2^n$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter2-2.tex",
+    "problem_type": "proof",
+    "problem": "例2. 求所有的函数 $f: \\mathbf{N}^* \\rightarrow \\mathbf{N}^*$, 使得对任意 $m 、 n \\in \\mathbf{N}^*$, 都有\n$$\nf(m)^2+f(n) \\mid\\left(m^2+n\\right)^2 . \\label{eq1}\n$$",
+    "solution": "解:设 $f$ 是一个满足条件的函数, 在式\\ref{eq1}中令 $m=n==1$, 就有 $\\left(f(1)^2+\\right. f(1)) \\mid 4$, 即 $f(1)(f(1)+1) \\mid 4$, 由于 $f(1) \\geqslant 2$ 导致 $f(1)(f(1)+1) \\geqslant 6$, 故只能是 $f(1)=1$.\n下面我们先证明: 对任意素数 $p$, 都有 $f(p-1)=p-1, \\label{eq2}$.\n事实上, 对任意素数 $p$, 在 式\\ref{eq1} 中令 $m=1, n=p-1$, 则 $(f(1)+ f(p-1)) \\mid p^2$, 即 $(1+f(p-1)) \\mid p^2$, 从而 $f(p-1)+1=p$ 或 $p^2$, 若为前者, 则 (2) 已成立; 若为后者, 即 $f(p-1)=p^2-1$, 此时, 在 式\\ref{eq1} 中令 $m=p-1, n=$ 1 , 就有 $\\left(f(p-1)^2+f(1)\\right) \\mid\\left((p-1)^2+1\\right)^2$, 即 $\\left(\\left(p^2-1\\right)^2+1\\right) \\mid\\left((p-1)^2+1\\right)^2$, 但是 $\\left((p-1)^2+1\\right)^2 \\leqslant\\left((p-1)^2+(p-1)\\right)^2=p^2(p-1)^2<(p+1)^2(p- 1)^2+1=\\left(p^2-1\\right)^2+1$,矛盾.\n所以, 式\\ref{eq2} 成立.\n再证明: 对任意 $n \\in \\mathbf{N}^*$, 都有 $f(n)=n$.\n事实上,对任意正整数 $n$, 取 $k \\in \\mathbf{N}^*$, 使得 $k+1$ 为素数 (这样的 $k$ 有无穷多个), 在 式\\ref{eq1} 中令 $m=k$, 结合 式\\ref{eq2} 就有\n$$\n\\left(k^2+f(n)\\right) \\mid\\left(k^2+n\\right)^2 . \\label{eq3}\n$$\n注意到 $\\left(k^2+n\\right)^2=\\left(k^2+f(n)+n-f(n)\\right)^2=A\\left(k^2+f(n)\\right)+(n-f(n))^2$, 这里 $A$ 是某个整数.\n这样, 由式\\ref{eq3}知\n$$\n\\left(k^2+f(n)\\right) \\mid(n-f(n))^2 .\n$$\n上式表明, 数 $(n-f(n))^2$ 可以被无穷多个正整数整除(因为 $k$ 有无穷多种取法), 所以 $(n-f(n))^2=0$, 即 $f(n)=n$.\n综上可知, 只有一个函数满足条件, 即 $f(n)=n$.\n说明此题本质上只需证出对无穷多个 $k \\in \\mathbf{N}^*$, 有 $f(k)=k$, 然后将其余的漏洞补上, 选择式\\ref{eq2}作为突破口是希望让被除数的因数个数尽量少, 这个技巧在整除理论中经常用到.",
+    "remark": "",
+    "figures": []
+}

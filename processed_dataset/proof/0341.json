@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设 $n$ 为正整数, $M$ 是具有下列性质的 $n^2+1$ 个正整数构成的集合: $M$ 中任意 $n+1$ 个数中必有 2 个数, 使得其中一个数是另一个数的倍数, 证明: $M$ 中存在 $n+1$ 个数 $a_1, a_2, \\cdots, a_{n+1}$, 使得对任意 $i=1,2, \\cdots, n$, 都有 $a_i$ 整除 $a_{i+1}$.",
+    "solution": "对任意 $k$ 个正整数 $x_1, x_2, \\cdots, x_k$, 若对 $i=1,2, \\cdots, k-1$ 均有 $x_i$ 整除 $x_{i+1}$, 则称 $\\left(x_1, x_2, \\cdots, x_k\\right)$ 为一条长为 $k$ 的链, 且称 $x_1$ 为该链的首元.\n对 $M$ 中每个元 $x_i\\left(1 \\leqslant i \\leqslant n^2+1\\right)$, 考虑取自 $M$ 的以 $x_i$ 为首元的链中最长的链, 并记这个最长的链的链长为 $l_i\\left(i=1,2, \\cdots, n^2+1\\right)$. 下面我们只需证明: $l_1, l_2$, $\\cdots, l_{n^2+1}$ 中至少有一个数不小于 $n+1$. 若对任意 $1 \\leqslant i \\leqslant n^2+1$ 均有 $l_i \\leqslant n$, 则由抽庶原理 $l_1, l_2, \\cdots, l_n{ }^2+1$ 中至少有 $\\left[\\frac{\\left(n^2+1\\right)-1}{n}\\right]+1=n+1$ 个相等.\n不妨设 $l_1=l_2=\\cdots=l_{n+1}=r$, 而由 $M$ 的性质知 $x_1, x_2, \\cdots, x_{n+1}$ 中必有一个数是另一个数的倍数.\n不妨设 $x_1$ 整除 $x_2$. 于是将 $x_1$ 置于以 $x_2$ 为首元的那条最长的链的前面, 我们得到一条长为 $l_2+1=r+1$ 且以 $x_1$ 为首元的链, 这与以 $x_1$ 为首元的最长链的长为 $l_1=r$ 矛盾.\n故 $l_1, l_2, \\cdots, l_{n^2+1}$ 中必有一个数不小于 $n+1$. 不妨设 $l_1 \\geqslant n+1$, 即存在 $M$ 中 $n+1$ 个数 $a_1, a_2, \\cdots, a_{n+1}$ 使 $a_i$ 整除 $a_{i+1}(i=1,2, \\cdots, n)$.",
+    "remark": "",
+    "figures": []
+}

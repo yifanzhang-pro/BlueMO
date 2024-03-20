@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题16. 设 $a_0<a_1<\\cdots<a_n, a_0, \\cdots, a_n$ 都是正整数.\n证明:\n$$\n\\frac{1}{\\left[a_0, a_1\\right]}+\\frac{1}{\\left[a_1, a_2\\right]}+\\cdots+\\frac{1}{\\left[a_{n-1}, a_n\\right]} \\leqslant 1-\\frac{1}{2^n} .\n$$",
+    "solution": "用数学归纳法 (对 $n$ 归纳) 证明下述加强的命题:(1)\n$$\n\\frac{1}{\\left[a_0, a_1\\right]}+\\frac{1}{\\left[a_1, a_2\\right]}+\\cdots+\\frac{1}{\\left[a_{n-1}, a_n\\right]} \\leqslant \\frac{1}{a_0}\\left(1-\\frac{1}{2^n}\\right) .\n$$\n当 $n=1$ 时, 由条件 $a_0<a_1$, 故 $\\left[a_0, a_1\\right] \\geqslant 2 a_0$, 于是 $\\frac{1}{\\left[a_0, a_1\\right]} \\leqslant \\frac{1}{2 a_0}= \\frac{1}{a_0}\\left(1-\\frac{1}{2}\\right)$, 故 $n=1$ 时, 不等式(1)成立.\n设不等式(1)在 $n$ 时成立, 则对 $n+1$ 的情形, 有(2)\n$$\n\\begin{aligned}\n& \\frac{1}{\\left[a_0, a_1\\right]}+\\frac{1}{\\left[a_1, a_2\\right]}+\\cdots+\\frac{1}{\\left[a_n, a_{n+1}\\right]} \\\\\n\\leqslant & \\frac{1}{\\left[a_0, a_1\\right]}+\\frac{1}{a_1}\\left(1-\\frac{1}{2^n}\\right) .\n\\end{aligned}\n$$\n如果 $a_1 \\geqslant 2 a_0$, 则 (2) 式右边 $\\leqslant \\frac{1}{\\left[a_0, a_1\\right]}+\\frac{1}{2 a_0}\\left(1-\\frac{1}{2^n}\\right) \\leqslant \\frac{1}{2 a_0}\\left(2-\\frac{1}{2^n}\\right)= \\frac{1}{a_0}\\left(1-\\frac{1}{2^{n+1}}\\right)$; 如果 $a_0<a_1<2 a_0$, 则由 $\\left(a_0, a_1\\right) \\leqslant a_1-a_0$, 可知 (2) 式右边 $\\leqslant\\frac{a_1-a_0}{a_0 a_1}+\\frac{1}{a_1}\\left(1-\\frac{1}{2^n}\\right)=\\frac{1}{a_0}-\\frac{1}{a_1 \\cdot 2^n}<\\frac{1}{a_0}-\\frac{1}{2 a_0 \\cdot 2^n}=\\frac{1}{a_0}\\left(1-\\frac{1}{2^{n+1}}\\right)$. 所以, 不等式 (1) 对 $n+1$ 也成立.",
+    "remark": "",
+    "figures": []
+}

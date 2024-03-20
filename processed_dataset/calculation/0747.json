@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题20. 在 $\\triangle A B C$ 中, $B=60^{\\circ}$, 面积为 $10 \\sqrt{3}$, 外接圆半径为 $\\frac{7 \\sqrt{3}}{3}$, 则各边长为",
+    "solution": "5、7、8. 由条件得 $\\left\\{\\begin{array}{l}a^2+c^2-2 a c \\cos 60^{\\circ}=b^2, \\\\ \\frac{1}{2} a c \\sin 60^{\\circ}=10 \\sqrt{3}, \\\\ b=2 \\times \\frac{7 \\sqrt{3}}{3} \\sin 60^{\\circ} .\\end{array}\\right.$ 解得 $b=7, a=5, c=8$.",
+    "remark": "",
+    "figures": []
+}

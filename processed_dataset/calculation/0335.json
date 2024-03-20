@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 设 $a_1, a_2, \\cdots, a_n$ 是 $1,2, \\cdots, n$ 的一个排列, 求 $S_n=\\left|a_1-1\\right|+\\mid a_2- 2|+\\cdots+| a_n-n \\mid$ 的最大值.",
+    "solution": "解:的关键是去掉绝对值符号.\n注意到 $\\left|a_i-i\\right|$ 等于 $a_i-i$ 或 $i-a_i$,\n因此, 去掉绝对值符号后, 和式中负号的个数不变.\n即不论 $a_1, a_2, \\cdots, a_n$ 如何排列, 去掉绝对值符号后, 和式中均有 $n$ 个负号.\n这样, 当 $n$ 为偶数, $S_n \\leqslant n+n+(n-1)+(n-1)+\\cdots+\\left(\\frac{n}{2}+1\\right)+\\left(\\frac{n}{2}+1\\right)-\\frac{n}{2}-\\frac{n}{2}-\\cdots-1- 1=\\frac{n^2}{2}$. 当 $n$ 为奇数, 可得类似结果.\n总之, $S_n \\leqslant\\left[\\frac{n^2}{2}\\right]$. 又当 $\\left(a_1, a_2, \\cdots\\right.$, $\\left.a_n\\right)=(n, n-1, n-2, \\cdots, 2,1)$ 时, $S_n=\\left[\\frac{n^2}{2}\\right]$. 所以 $S_n$ 的最大值为 $\\left[\\frac{n^2}{2}\\right]$.",
+    "remark": "",
+    "figures": []
+}

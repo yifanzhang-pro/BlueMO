@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 设 $a_1 \\geqslant a_2 \\geqslant \\cdots \\geqslant a_n \\geqslant a_{n+1}=0$ 是实数序列, 求证:\n$$\n\\sqrt{\\sum_{k=1}^n a_k} \\leqslant \\sum_{k=1}^n \\sqrt{k}\\left(\\sqrt{a_k}-\\sqrt{a_{k+1}}\\right) .\n$$",
+    "solution": "证法 2:用 Abel 求和公式能把不等式转化为:\n$\\sqrt{\\sum_{k=1}^n a_k} \\leqslant \\sum_{k=1}^n \\sqrt{a_k}(\\sqrt{k}-\\sqrt{k-1})=\\sum_{k=1}^n \\sqrt{a_k c_k}$, 此处 $c_k=\\sqrt{k}-\\sqrt{k-1}$.\n由于 $a_1 \\geqslant a_2 \\geqslant \\cdots \\geqslant a_n, c_1 \\geqslant c_2 \\geqslant \\cdots \\geqslant c_n$, 诱使我们用 Chebyshev 不等式, 即\n$$\n\\sum_{k=1}^n \\sqrt{a_k} \\cdot c_k \\geqslant \\frac{1}{n} \\cdot \\sum_{k=1}^n \\sqrt{a_k} \\cdot \\sum_{k=1}^n c_k=\\frac{1}{\\sqrt{n}} \\sum_{k=1}^n \\sqrt{a_k},\n$$\n并无多大用处,现将欲证结论改述如下:\n$$\n\\sqrt{\\sum_{k=1}^n a_k} \\leqslant \\sum_{k=1}^{n-1} \\sqrt{k}\\left(\\sqrt{a_k}-\\sqrt{a_{k+1}}\\right)+\\sqrt{n a_n} . \\label{(1)}\n$$\n对 $n$ 用归纳法.\n当 $n=1$ 时, (1)显然成立.\n假设对某个 $n \\geqslant 1$, 每个非增、非负、长为 $n$ 的实数列有 (1) 成立, 考察长为 $n+1$, 满足 $a_1 \\geqslant a_2 \\geqslant \\cdots \\geqslant a_{n+1} \\geqslant 0$ 的实数列.\n由归纳假设, 只需证明: $\\sqrt{\\sum_{k=1}^{n+1} a_k}- \\sqrt{\\sum_{k=1}^n a_k} \\leqslant-\\sqrt{n a_{n+1}}+\\sqrt{(n+1) a_{n+1}}$. 不妨设 $a_{n+1}>0, S=\\sum_{k=1}^n a_k, m=\\frac{S}{a_{n+1}}$, 则上式等价于 $\\sqrt{m+1}-\\sqrt{m} \\leqslant \\sqrt{n+1}-\\sqrt{n}$, 显然成立.",
+    "remark": "",
+    "figures": []
+}

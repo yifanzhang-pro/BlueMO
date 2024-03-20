@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 如果 $n$ 个人 $v_1, v_2, \\cdots, v_n$ 中每两个人 $v_i$ 与 $v_j$ 有一个共同的祖先 $v_k$ (约定每个人可以算作他自己的祖先), 证明这 $n$ 个人有一个共同的祖先.",
+    "solution": "设 $v_1, v_2, \\cdots, v_n$ 中, $v_p$ 的子孙后代最多, 那么 $v_p$ 就是这 $n$ 个人的共同祖先, 否则设 $v_p$ 不是 $v_q$ 的祖先, 那么 $v_p$ 与 $v_q$ 的共同祖先 $v_r \\neq v_p$, 而 $v_r$ 的子孙后代至少比 $v_p$ 多 1 ,矛盾.",
+    "remark": "",
+    "figures": []
+}

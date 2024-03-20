@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例27 设 $f: \\mathbf{Q} \\rightarrow \\mathbf{Q}(\\mathbf{Q}$ 为有理数集 $)$ 且\n$$\nf(x+y)=f(x)+f(y)+4 x y \\text {, 对任意 } x, y \\in \\mathbf{Q} \\text {. } \\quad\\quad (1)\n$$\n如果 $f(-1) f(1) \\geqslant 4$, 求 $f(x)$.",
+    "solution": "解:取 $x=y=0$, 由 (1), 得 $f(0)=0$.\n在(1)中取 $x=1$ 和 $y=-1$, 得\n$$\nf(0)=f(1)+f(-1)-4,\n$$\n即 $f(1)+f(-1)=4$.\n因为 $f(-1) f(1) \\geqslant 4$, 所以 $f(1)$ 和 $f(-1)$ 皆为正数, 从而\n$$\n4=f(1)+f(-1) \\geqslant 2 \\sqrt{f(1) f(-1)} \\geqslant 4 .\n$$\n上式等号成立,所以 $f(1)=f(-1)=2$.\n再在(1)中取 $y=1$, 得\n$$\nf(x+1)=f(x)+4 x+2 . \\quad\\quad (2)\n$$\n对(2)递推,有\n$$\n\\begin{aligned}\n& f(2)=f(1+1)=f(1)+4 \\cdot 1+2, \\\\\n& f(3)=f(2+1)=f(2)+4 \\cdot 2+2 \\text {, } \\\\\n& f(n)=f(n-1+1)=f(n-1)+4(n-1)+2 . \\\\\n&\n\\end{aligned}\n$$\n因此\n$$\nf(n)=f(1)+4(1+2+\\cdots+(n-1))+2(n-1)=2 n^2 . \\quad\\quad (3)\n$$\n又因为 $\\quad f\\left(\\frac{k}{n}+\\frac{1}{n}\\right)=f\\left(\\frac{k}{n}\\right)+f\\left(\\frac{1}{n}\\right)+\\frac{4 k}{n^2}$,\n即\n$$\nf\\left(\\frac{k+1}{n}\\right)-f\\left(\\frac{k}{n}\\right)=f\\left(\\frac{1}{n}\\right)+\\frac{4 k}{n^2} .\n$$\n利用 $f(1)=2$, 对 $k$ 从 1 到 $n-1$ 求和,得\n$$\nf\\left(\\frac{1}{n}\\right)=\\frac{2}{n^2}   . \\quad\\quad (4)\n$$\n同理对 $k$ 从 1 到 $m-1$ 求和,得\n$$\nf\\left(\\frac{m}{n}\\right)=2 \\frac{m^2}{n^2}\n$$\n最后, 令 $x=\\frac{m}{n}, y=-\\frac{m}{n}$, 由 (1), 有\n$$\nf(0)=f\\left(\\frac{m}{n}-\\frac{m}{n}\\right)=f\\left(\\frac{m}{n}\\right)+f\\left(-\\frac{m}{n}\\right)-\\frac{4 m^2}{n^2},\n$$\n故\n$$\nf\\left(-\\frac{m}{n}\\right)=2 \\cdot \\frac{m^2}{n^2}\n$$\n因此对所有 $x \\in \\mathbf{Q}$, 有 $f(x)=2 x^2$.",
+    "remark": "",
+    "figures": []
+}

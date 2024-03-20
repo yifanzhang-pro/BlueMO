@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例7. 如图(<FilePath:./images/volume7/figures/fig-c4i8.png>), $M 、 N$ 分别为锐角 $\\triangle A B C (\\angle A<\\angle B)$ 的外接圆 $\\Gamma$ 上弧 $B C$ 、弧 $A C$ 的中点.\n过点 $C$ 作 $P C / / M N$ 交圆 $\\Gamma$ 于点 $P, I$ 为 $\\triangle A B C$ 的内心, 连结 $P I$ 并延长交圆 $\\Gamma$ 于 $T$.\n(1) 求证: $M P \\cdot M T=N P \\cdot N T$;\n(2) 在弧 $A B$ (不含点 $C)$ 上任取一点 $Q(\\neq A, T$, $B)$, 记 $\\triangle A Q C 、 \\triangle Q C B$ 的内心分别为 $I_1 、 I_2$. 求证 : $Q$ 、 $I_1 、 I_2 、 T$ 四点共圆.",
+    "solution": "证明:(1) $P C / / N M \\Rightarrow$ 等腰梯形 $P C M N$, 连结 $I M 、 I C 、 C M 、 A I 、 C N$, $I$ 为内心, 故 $A I$ 延长线过 $\\overparen{B C}$ 中点 $M$, 于是\n$$\n\\begin{aligned}\n\\angle C I M & =\\angle C A I+\\angle I C A \\\\\n& =\\angle B A I+\\angle I C A \\\\\n& =\\angle B A M+\\angle I C A \\\\\n& =\\angle B C M+\\angle I C B \\\\\n& =\\angle I C M,\n\\end{aligned}\n$$\n故 $I M=C M$, 又 $P C M N$ 为等腰梯形,有 $C M=P N$, 于是 $I M=N P$, 同理可证 $P M=I N$.\n由此可得四边形 $M I N P$ 为平行四边形, 即 $P I$ 平分 $M N$.\n所以 $T I$ 平分线段 $M N, S_{\\triangle P N T}=S_{\\triangle P M T} \\Rightarrow \\frac{1}{2} \\cdot P M \\cdot T M \\cdot \\sin \\angle P M T= \\frac{1}{2} \\cdot P N \\cdot T N \\cdot \\sin \\angle P N T$, 又 $\\angle P M T$ 与 $\\angle P N T$ 互补, $\\sin \\angle P M T= \\sin \\angle P N T$, 于是 $P M \\cdot T M=P N \\cdot T N$.\n(2)易知 $Q 、 I_1 、 N$ 共线; $Q 、 I_2 、 M$ 共线, 连结 $N Q 、 M Q 、 I_1 T 、 I_2 T$, 首先证明 $\\triangle I_1 N T \\backsim \\triangle I_2 M T$, 这是由于 $N I_1=N C . M I_2=M C$, 又 $\\frac{N I_1}{N T}=\\frac{N C}{N T}=\\frac{M P}{N T}= \\frac{N P}{M T}=\\frac{M C}{M T}=\\frac{M I_2}{M T}$,\n$\\angle I_1 N T=\\angle Q N T=\\angle Q M T=\\angle I_2 M T$, 由此可得 $\\triangle I_1 N T \\backsim \\triangle I_2 M T$, 从而有 $\\angle Q I_1 T=180^{\\circ}-\\angle N I_1 T=180^{\\circ}-\\angle M I_2 T=\\angle Q I_2 T$.\n于是, $Q 、 I_1 、 I_2 、 T$ 四点共圆.",
+    "remark": "注:1. (2)这道题多次在数学竟赛中出现, 是一道较难的问题,但是给出命题 (1)以后,两部分都不算太难.\n2. 如图(<FilePath:./images/volume7/figures/fig-c4i9.png>), $I$ 为 $\\triangle A B C$ 内心, $A I$ 与 $\\triangle A B C$ 外接圆交于 $D$, 则 $D B=D I=D C$, 本题用到了这个内心的重要性质, 有的人称之为\"鸡爪定理\".",
+    "figures": [
+        "./images/volume7/figures/fig-c4i8.png",
+        "./images/volume7/figures/fig-c4i9.png"
+    ]
+}

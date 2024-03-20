@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例25. 设 $x, y, z \\geqslant 0$, 且 $x+y+z=1$, 求证:\n$$\n0 \\leqslant y z+z x+x y-2 x y z \\leqslant \\frac{7}{27} .\n$$",
+    "solution": "证明:由 Schur 不等式的变形 II , 得\n$$\n\\left(\\sum_{\\mathrm{cyc}} x\\right)^3-4\\left(\\sum_{c y c} x\\right)\\left(\\sum_{c y c} y z\\right)+9 x y z \\geqslant 0,\n$$\n由题设条件 $\\sum_{c y c} x=1$, 得\n$$\n\\begin{gathered}\n1-4 \\cdot \\sum_{c y c} y z+9 x y z \\geqslant 0 \\\\\n\\sum_{c y c} y z-2 x y z \\leqslant \\frac{1}{4}+\\frac{1}{4} x y z \\leqslant \\frac{1}{4}+\\frac{1}{4}\\left(\\frac{x+y+z}{3}\\right)^3=\\frac{7}{27} .\n\\end{gathered}\n$$\n另一方面, $\\sum_{c y c} y z-2 x y z \\geqslant \\sum_{c y c} y z-x y-y z=z x \\geqslant 0$.\n从而命题得证.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题5: 已知非空数集 $M \\subseteq\\{1,2,3,4,5\\}$, 则满足条件“若 $x \\in M$, 则 $6-x \\in M$ ” 的集合 $M$ 的个数是",
+    "solution": "解: 7. 因为 $1+5=2+4=3+3$, 故 $M$可以是 $\\{3\\},\\{1,5\\},\\{2,4\\},\\{1,3,5\\},\\{2,3,4\\},\\{1,2,4,5\\},\\{1,2,3$, $4,5\\}$.",
+    "remark": "",
+    "figures": []
+}

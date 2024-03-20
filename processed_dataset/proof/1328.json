@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $\\triangle A B C$ 的三边长 $a 、 b 、 c$ 满足: $a+b+c=1$, 求证:\n$$\n5\\left(a^2+b^2+c^2\\right)+18 a b c \\geqslant \\frac{7}{3} .\n$$",
+    "solution": "证明:由 $a^2+b^2+c^2=(a+b+c)^2-2(a b+b c+c a)$\n$$\n=1-2(a b+b c+c a) \\text {, }\n$$\n可知原不等式等价于\n$$\n\\begin{gathered}\n\\frac{5}{9}(a b+b c+c a)-a b c \\leqslant \\frac{4}{27} . \\label{(1)} \\\\\n\\text { 令 } f(x)=(x-a)(x-b)(x-c)=x^3-x^2+(a b+b c+c a) x-a b c,\n\\end{gathered}\n$$\n则\n$$\nf\\left(\\frac{5}{9}\\right)=\\left(\\frac{5}{9}\\right)^3-\\left(\\frac{5}{9}\\right)^2+\\frac{5}{9}(a b+b c+c a)-a b c .\n$$\n由于 $a 、 b 、 c$ 为三角形三边长, 有 $a, b, c \\in\\left(0, \\frac{1}{2}\\right)$, 故 $\\frac{5}{9}-a 、 \\frac{5}{9}-b$ 及 $\\frac{5}{9}-c$ 都大于 0 ,所以\n$$\n\\begin{aligned}\nf\\left(\\frac{5}{9}\\right) & =\\left(\\frac{5}{9}-a\\right)\\left(\\frac{5}{9}-b\\right)\\left(\\frac{5}{9}-c\\right) \\\\\n& \\leqslant \\frac{1}{27} \\cdot\\left[\\left(\\frac{5}{9}-a\\right)+\\left(\\frac{5}{9}-b\\right)+\\left(\\frac{5}{9}-c\\right)\\right]^3 \\\\\n& =\\frac{8}{27^2} .\n\\end{aligned}\n$$\n因此 $\\frac{8}{27^2} \\geqslant\\left(\\frac{5}{9}\\right)^3-\\left(\\frac{5}{9}\\right)^2+\\frac{5}{9}(a b+b c+c a)-a b c$, 整理即得(1)式, 故原不等式得证.",
+    "remark": "",
+    "figures": []
+}

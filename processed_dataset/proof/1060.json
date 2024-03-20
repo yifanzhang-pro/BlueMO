@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题25. 已知正数 $m_i \\in \\mathbf{R}^{+}(i=1,2, \\cdots, n), p \\geqslant 2$ 且 $p \\in \\mathbf{N}$ 并满足 $\\sum_{i=1}^n \\frac{1}{1+m_i^p}=$ 1 , 求证: $\\prod_{i=1}^n m_i \\geqslant(n-1)^{\\frac{n}{p}}$.",
+    "solution": "令 $m_i^p=\\tan ^2 \\alpha_i, \\alpha_i \\in\\left(0, \\frac{\\pi}{2}\\right)$, 由已知条件应有 $\\sum_{i=1}^n \\cos ^2 \\alpha_i=1$, 于是 $\\sum_{i=1}^{n-1} \\cos ^2 \\alpha_i=\\sin ^2 \\alpha_n, \\cos ^2 \\alpha_1+\\cos ^2 \\alpha_2+\\cdots+\\cos ^2 \\alpha_{n-2}+\\cos ^2 \\alpha_n=\\sin ^2 \\alpha_{n-1}, \\cdots$, $\\cos ^2 \\alpha_2+\\cos ^2 \\alpha_3+\\cdots+\\cos ^2 \\alpha_n=\\sin ^2 \\alpha_1$, 以上各式利用均值不等式, 得 $(n-1) \\sqrt[n-1]{\\cos ^2 \\alpha_1 \\cos ^2 \\alpha_2 \\cdots \\cos ^2 \\alpha_{n-1}} \\leqslant \\sin ^2 \\alpha_n,(n-1) \\sqrt[n-1]{\\cos ^2 \\alpha_1 \\cos ^2 \\alpha_2 \\cdots \\cos ^2 \\alpha_{n-2} \\cos ^2 \\alpha_n} \\leqslant \\sin ^2 \\alpha_{n-1}, \\cdots, \\quad(n-1) \\sqrt[n-1]{\\cos ^2 \\alpha_2 \\cos ^2 \\alpha_3 \\cdots \\cos ^2 \\alpha_n} \\leqslant \\sin ^2 \\alpha_1$, 把上述几个不等式两边相乘得 $(n-1)^n\\left[\\cos ^2 \\alpha_1 \\cos ^2 \\alpha_2 \\cdots \\cos ^2 \\alpha_n\\right] \\leqslant \\sin ^2 \\alpha_1 \\sin ^2 \\alpha_2 \\cdots \\sin ^2 \\alpha_n$, 即 $\\tan ^2 \\alpha_1 \\tan ^2 \\alpha_2 \\cdots \\tan ^2 \\alpha_n \\geqslant(n-1)^n$, 由于 $m_i^p=\\tan ^2 \\alpha_i, i=1,2, \\cdots, n$, 故 $m_1$ • $m_2 \\cdots m_n \\geqslant(n-1)^{\\frac{n}{p}}$, 得证.\nEnd of \"cropped_page_174.png\"",
+    "remark": "",
+    "figures": []
+}

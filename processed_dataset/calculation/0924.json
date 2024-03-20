@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题9. 在 $\\triangle A B C$ 中, $A B=A C, \\angle A=20^{\\circ}$, 点 $D 、 E$ 分别在腰 $A B 、 A C$ 上, 且 $\\angle C B E=60^{\\circ}, \\angle D C B=50^{\\circ}$, 求 $\\angle D E B$.",
+    "solution": "解: 如图(<FilePath:./images/volume7/figures/fig-c6a9.png>), 注意到条件 $\\angle D C B=50^{\\circ}$ 和 $\\angle A=20^{\\circ}$, 得 $B D=B C$, 即 $\\triangle B C D$ 也为等腰三角形, 于是以 $\\triangle B C D$ 的对称轴为反射轴作轴反射变换, 则 $D \\rightarrow C$; 设直线 $B E$ 的像直线交 $A C$ 于 $F$, 则 $\\angle F B C=\\angle E B D=20^{\\circ}$, $\\angle B F C=80^{\\circ}=\\angle F C B$, 所以 $B F=B C=B D$. 又 $\\angle F B D=80^{\\circ}-20^{\\circ}=60^{\\circ}$, 因此 $\\triangle D B F$ 是一个正三角形, 所以 $F D=F B$, 又易知 $\\angle F B E= \\angle B E F\\left(=40^{\\circ}\\right)$, 从而 $F E=F B$, 于是 $F$ 为 $\\triangle B E D$ 的外心, 故 $\\angle D E B= \\frac{1}{2} \\angle D F B=30^{\\circ}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6a9.png"
+    ]
+}

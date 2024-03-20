@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter13.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 设 $n \\in \\mathbf{N}^*, n>1$. 求 $1,2, \\cdots, n$ 的满足下列性质的排列 $\\left(a_1\\right.$, $\\left.a_2, \\cdots, a_n\\right)$ 的个数: 仅存在一个 $i \\in\\{1,2, \\cdots, n-1\\}$, 使得 $a_i>a_{i+1}$.",
+    "solution": "解: $p_n$ 表示具有题设性质的排列的个数, $n \\geqslant 2$. 易知, $p_2=1$.\n对于 $n \\geqslant 3$, 若 $a_n=n$, 则这样的排列个数有 $p_{n-1}$ 个;\n若 $a_i=n, 1 \\leqslant i \\leqslant n-1$, 考虑所有这样的排列, 可以从 $n-1$ 个数 1 , $2, \\cdots, n-1$ 中选 $i-1$ 个数按从小到大的顺序排列成 $a_1, a_2, \\cdots, a_{i-1}$, 其余的按从小到大的顺序排列在剩下的位置, 于是有 $\\mathrm{C}_{n-1}^{i-1}$ 种排法, 所以\n$$\np_n=p_{n-1}+\\sum_{i=1}^{n-1} \\mathrm{C}_{n-1}^{i-1}=p_{n-1}+2^{n-1}-1 .\n$$\n即\n$$\n\\begin{gathered}\np_n-p_{n-1}=2^{n-1}-1, \\\\\np_{n-1}-p_{n-2}=2^{n-2}-1, \\\\\n\\cdots \\cdots \\\\\np_2-p_1=2-1 .\n\\end{gathered}\n$$\n把上面这些式子相加, 得\n$$\np_n=\\left(2^{n-1}-1\\right)+\\left(2^{n-2}-1\\right)+\\cdots+(2-1)=2^n-n-1 .\n$$",
+    "remark": "注:在解决一些计数问题时, 往往题目并不给出明显表达式, 需通过观察、分析、归纳、猜想、论证等来确定递推关系.\n本题中, 将 $p_n$ 分类计数,一类与 $n-1$ 个数的情形相联系, 另一类可直接计数, 从而得到了递推关系.",
+    "figures": []
+}

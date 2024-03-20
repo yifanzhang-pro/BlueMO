@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise12.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 对素数 $p \\geqslant 3$,证明: $p$ 整除 $\\sum_{k=1}^{p-1} k^{k^2-k+1}$.",
+    "solution": "下面证明对 $k=1,2, \\cdots, \\frac{p-1}{2}$, 有\n$$\nk^{k^2-k+1}+(p-k)^{(p-k)^2-(p-k)+1} \\equiv 0(\\bmod p) . \\label{eq1}\n$$\n事实上,此时有\n$(p-k)^2-(p-k)+1=k^2-k+1+(p-2 k)(p-1) \\equiv k^2-k+1(\\bmod p-1)$, 又注意 $(p-k, p)=1$, 由 Fermat 小定理得 $(p-k)^{p-1} \\equiv 1(\\bmod p)$,所以\n$$\n\\begin{aligned}\n(p-k)^{(p-k)^2-(p-k)+1} & \\equiv(p-k)^{k^2-k+1} \\equiv(-k)^{k^2-k+1}=(-1)^{k(k-1)+1} k^{k^2-k+1} \\\\\n& \\equiv-k^{k^2-k+1}(\\bmod p),\n\\end{aligned}\n$$\n从而 式\\ref{eq1} 成立.\n在 式\\ref{eq1} 中令 $k=1,2, \\cdots, \\frac{p-1}{2}$, 并求和得\n$$\n\\sum_{k=1}^{p-1} k^{k^2-k+1}=\\sum_{k=1}^{\\frac{p-1}{2}}\\left(k^{k^2-k+1}+(p-k)^{(p-k)^2-(p-k)+1}\\right) \\equiv 0(\\bmod p),\n$$\n故 $p$ 整除 $\\sum_{k=1}^{p-1} k^{k^2-k+1}$.",
+    "remark": "",
+    "figures": []
+}

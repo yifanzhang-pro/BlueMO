@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例8. 已知 $\\triangle A B C$ 中, $O$ 是三角形内一点满足: $\\angle B A O=\\angle C A O=\\angle C B O=\\angle A C O$. 求证: $\\triangle A B C$ 三边长成等比数列.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c1i11.png>), 过 $O$ 作 $A C$ 平行线交 $B C$, $A B$ 于 $D, E$, 设 $\\angle A O E=\\angle 1, \\angle C O D=\\angle 2$.\n则 $\\angle O A C=\\angle 1=\\angle B A O$, 而 $\\angle O A C=\\angle O C A$,\n所以 $A O=O C, A E=O E$, 且 $\\triangle A O E \\backsim \\triangle A C O$, 于是\n$$\n\\frac{A C}{A O}=\\frac{O C}{O E} . \\label{eq1}\n$$\n又因 $D E / / A C$, 所以\n$$\n\\frac{A B}{C B}=\\frac{A E}{C D}, \\label{eq2}\n$$\n再注意到 $\\angle 2=\\angle O B C, \\angle B C O=\\angle B C O$, 所以 $\\triangle O C D \\backsim \\triangle B C D$,\n$$\n\\frac{O C}{B C}=\\frac{C D}{O C} . \\label{eq3}\n$$\n式\\ref{eq1} $\\times$ 式\\ref{eq2} $\\times$ 式\\ref{eq3}得\n$$\n\\frac{A C}{A O} \\cdot \\frac{A B}{B C} \\cdot \\frac{O C}{B C}=\\frac{O C}{O E} \\cdot \\frac{A E}{C D} \\cdot \\frac{C D}{O C},\n$$\n即 $\\frac{A C \\cdot A B}{B C^2}=1(A O=O C, A E=O E), B C^2=A C \\cdot A B$.\n所以 $\\triangle A B C$ 三边成等比数列.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1i11.png"
+    ]
+}

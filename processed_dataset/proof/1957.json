@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例1. 已知单位圆的内接正 $n$ 边形 $A_1 A_2 \\cdots A_n$ 及圆周上一点 $P$, 求证: $\\sum_{k=1}^n\\left|P A_k\\right|^2=2 n$.",
+    "solution": "分析:与解设 $\\zeta=\\mathrm{e}^{\\frac{2 \\pi \\mathrm{i}}{n}}, A_1, \\cdots, A_n$ 对应的复数是 $1, \\zeta, \\zeta^2, \\cdots, \\zeta^{-1}$. 又设 $P$ 点 (对应的复数) 为 $z=\\mathrm{e}^{\\mathrm{i} \\theta}$. 则我们有\n$$\n\\begin{aligned}\n\\sum_{k=1}^n\\left|P A_k\\right|^2 & =\\sum_{k=0}^{n-1}\\left|z-\\zeta^k\\right|^2=\\sum_{k=0}^{n-1}\\left(z-\\zeta^k\\right)\\left(\\bar{z}-\\zeta^{-k}\\right) \\\\\n& =\\sum_{k=0}^{n-1}\\left(|z|^2-\\zeta^k \\bar{z}-\\zeta^{-k} z+1\\right) \\\\\n& =2 n-\\bar{z} \\sum_{k=0}^{n-1} \\zeta^k-z \\sum_{k=0}^{n-1} \\zeta^{-k}=2 n\n\\end{aligned}\n$$\n最后一步应用了 $1+\\zeta+\\zeta^2+\\cdots+\\zeta^{n-1}=0$, 证毕.",
+    "remark": "",
+    "figures": []
+}

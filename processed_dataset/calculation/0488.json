@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter2.tex",
+    "problem_type": "calculation",
+    "problem": "例5 设二次函数 $f(x)=a x^2+b x+c$ 的图象以 $y$ 轴为对称轴.\n已知 $a+b=1$, 并且若点 $(x, y)$ 在 $y=f(x)$ 的图象上, 则点 $\\left(x, y^2+1\\right)$ 在函数 $g(x)=f(f(x))$ 的图象上.\n(1) 求 $g(x)$ 的解析式;\n(2) 设 $F(x)=g(x)-\\lambda f(x)$, 问是否存在实数 $\\lambda$, 使 $F(x)$ 在 $\\left(-\\infty,-\\frac{\\sqrt{2}}{2}\\right)$ 内是减函数, 在 $\\left(-\\frac{\\sqrt{2}}{2}, 0\\right)$ 内是增函数.",
+    "solution": "解:(1) 因 $f(x)=a x^2+b x+c$ 的对称轴为 $y$ 轴, 即 $-\\frac{b}{2 a}=0$, 故 $b=0$,\n从而 $a=1, f(x)=x^2+c$.\n设 $\\left(x_0, y_0\\right)$ 在 $y=f(x)$ 的图象上, 由题意知, 点 $\\left(x_0, y_0^2+1\\right)$ 在 $y= f(f(x))$ 的图象上, 即\n$$\n\\begin{gathered}\ny_0=x_0^2+c, \\\\\ny_0^2+1=\\left(x_0^2+c\\right)^2+c .\n\\end{gathered}\n$$\n从上面两式易知 $c=1$. 因此 $f(x)=x^2+1$. 进而\n$$\ng(x)=\\left(x^2+1\\right)^2+1 .\n$$\n(2) 由第(1) 小题, 得\n$$\nF(x)=g(x)-\\lambda f(x)=x^4+(2-\\lambda) x^2+2-\\lambda .\n$$\n设 $x_1<x_2<-\\frac{\\sqrt{2}}{2}$, 则\n$$\nF\\left(x_1\\right)-F\\left(x_2\\right)=\\left(x_1^2-x_2^2\\right)\\left(x_1^2+x_2^2+2-\\lambda\\right) .\n$$\n要使 $F(x)$ 在 $\\left(-\\infty,-\\frac{\\sqrt{2}}{2}\\right)$ 内为减函数, 只需 $F\\left(x_1\\right)-F\\left(x_2\\right)>0$, 又因为 $x_1^2-x_2^2>0$, 故只要\n$$\nx_1^2+x_2^2+2-\\lambda>0 \\text {. }\n$$\n所以\n$$\n\\lambda<x_1^2+x_2^2+2 \\text {. }\n$$\n然而当 $x_1, x_2 \\in\\left(-\\infty,-\\frac{\\sqrt{2}}{2}\\right)$ 时,\n$$\nx_1^2+x_2^2+2>3 \\text {. }\n$$\n因此只要 $\\lambda \\leqslant 3, F(x)$ 在 $\\left(-\\infty,-\\frac{\\sqrt{2}}{2}\\right)$ 内是减函数.\n同理, 当 $\\lambda \\geqslant 3$ 时, $F(x)$ 在 $\\left(-\\frac{\\sqrt{2}}{2}, 0\\right)$ 内是增函数.\n综上讨论,存在唯一的实数 $\\lambda=3$, 使得对应的 $F(x)$ 满足要求.",
+    "remark": "",
+    "figures": []
+}

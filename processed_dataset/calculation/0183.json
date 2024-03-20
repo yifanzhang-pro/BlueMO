@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例10. 把正三角形 $A B C$ 各边 $n$ 等分, 过各分点在三角形内作边的平行线段将 $\\triangle A B C$ 完全分割成边长为 $\\frac{1}{n} B C$ 的小正三角形.\n求其中边长为 $\\frac{1}{n} B C$ 的小菱形个数.",
+    "solution": "如图(<FilePath:./images/volume11/figures/fig-c6i4.png>),解首先考虑边不平行 $B C$ 的小菱形,延长每个菱形的边顺次与 $B C$ 相交于 4 个分点(特殊情形下,第 2 个交点与第 3 个交点重合于菱形的一个顶点) 为了便于处理, 可延长 $A B$ 到 $B^{\\prime}$ 使 $B B^{\\prime}= \\frac{1}{n} A B$, 延长 $A C$ 到 $C^{\\prime}$ 使 $C C^{\\prime}=\\frac{1}{n} A C$, 并延长各平行线交线段 $B^{\\prime} C^{\\prime}$ 于 $n+2$ 个等分点, 记为 0,1 , $2, \\cdots, n+1$ (包括 $B^{\\prime}, C^{\\prime}$ 两个端点), 于是每边不平行 $B C$ 的小菱形的两组对边延长后交 $B^{\\prime} C^{\\prime}$ 于 4 个不同分点 $i, i+1, k, k+1$. 反之,任给这样 4 个分点必对应一个边不平行 $B C$ 的小菱形, 二者具有一一对应关系.\n由于有序数组 $(i, i+1, k, k+1)(0 \\leqslant i<i+1<k<k+1 \\leqslant n+1)$ 又与有序数组 $(i+1, k)(1 \\leqslant i+1<k \\leqslant n)$ 一一对应, 故边不平行于 $B C$ 的小菱形的个数为 $\\mathrm{C}_n^2$. 由对称性, 所求小菱形的个数为 $3 \\mathrm{C}_n^2$.",
+    "remark": "注:仿照例 10 的解题方法, 读者不难得出下列问题的解答为 $f(n)= 3 \\mathrm{C}_{n+2}^4$.\n问题将等边三角形每边 $n$ 等分, 过各分点在形内作各边的平行线段,所形成的平行四边形个数记为 $f(n)$, 求 $f(n)$ 的表达式.",
+    "figures": [
+        "./images/volume11/figures/fig-c6i4.png"
+    ]
+}

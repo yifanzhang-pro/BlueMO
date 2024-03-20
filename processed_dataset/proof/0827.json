@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 在面积为 1001 的区域中,有 2001 个面积为 1 的区域 $S_i(1 \\leqslant i \\leqslant 2001)$. 求证,必有两个区域 $S_i, S_j(1 \\leqslant i<j \\leqslant 2001)$, 它们公共部分的面积不小于 $\\frac{1}{2001}$.",
+    "solution": "不妨用符号 $\\left|S_i\\right|$ 来记区域 $S_i$ 的面积.\n由已知得\n$$\n\\left|S_1 \\cup S_2 \\cup \\cdots \\cup S_{2001}\\right| \\leqslant 1001,\\left|S_i\\right|=1(1 \\leqslant i \\leqslant 2001),\n$$\n从而结合容斥原理可得\n$$\n\\begin{aligned}\n1001 & \\geqslant\\left|S_1 \\cup S_2 \\cup \\cdots \\cup S_{2001}\\right| \\geqslant \\sum_{i=1}^{2001}\\left|S_i\\right|-\\sum_{1 \\leqslant i<j \\leqslant 2001}\\left|S_i \\cap S_j\\right| \\\\\n& =2001-\\sum_{1 \\leqslant i<j \\leqslant 2001}\\left|S_i \\cap S_j\\right| \\\\\n& \\geqslant 2001-\\frac{2001 \\times 2000}{2} \\cdot S,\n\\end{aligned}\n$$\n其中 $S=\\max _{1 \\leqslant i<j \\leqslant 2001}\\left|S_i \\cap S_j\\right|$.\n由上式立即可知 $S \\geqslant \\frac{1}{2001}$, 故命题得证.",
+    "remark": "注:这是容斥原理的面积重叠形式.",
+    "figures": []
+}

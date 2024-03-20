@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题12 函数 $y=\\sin x, x \\in\\left[\\pi, \\frac{3}{2} \\pi\\right]$ 的反函数是",
+    "solution": "$f^{-1}(x)=\\pi-\\arcsin x(-1 \\leqslant x \\leqslant 0)$.",
+    "remark": "",
+    "figures": []
+}

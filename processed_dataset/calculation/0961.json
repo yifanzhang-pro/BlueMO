@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 已知非零复数 $z$ 满足 $|z-\\mathrm{i}|=1$, 且 $\\arg z=\\theta$, 求\n(1) $\\theta$ 的取值范围; (2) 复数 $z$ 的模 (用 $\\theta$ 表示);(3)复数 $z^2-z i$ 的辐角.",
+    "solution": "(1) 因为 $|z-\\mathrm{i}|=1$, 故 $z$ 在复平面上的对应点 $P$ 在以 $(0,1)$ 为圆心, 半径为 1 的圆上 (去除 $(0,0)$ 点), 如图(<FilePath:./images/volume8/figures/fig-c2a3-1.png>), 所以 $\\theta$ 的取值范围是 $0< \\theta<\\pi$.\n(2) 如图(<FilePath:./images/volume8/figures/fig-c2a3-2.png>), 在 Rt $\\triangle A O P$ 中, 因为 $|O P|=2 \\sin \\theta$, 故 $|z|=2 \\sin \\theta$.\n(3) 由于 $|z-\\mathrm{i}|=1$, 故可令 $z-\\mathrm{i}=\\cos \\varphi+\\mathrm{i} \\sin \\varphi(\\varphi \\in \\mathbf{R})$, 于是\n$$\n\\begin{aligned}\nz^2-z \\mathrm{i} & =z(z-\\mathrm{i})=2 \\sin \\theta(\\cos \\theta+\\mathrm{i} \\sin \\theta) \\cdot(\\cos \\varphi+\\mathrm{i} \\sin \\varphi) \\\\\n& =2 \\sin \\theta[\\cos (\\theta+\\varphi)+\\mathrm{i} \\cdot \\sin (\\theta+\\varphi)] .\n\\end{aligned}\n$$\n又由 $\\cos \\varphi+\\mathrm{i} \\sin \\varphi=z-\\mathrm{i}$\n$$\n\\begin{aligned}\n& =2 \\sin \\theta(\\cos \\theta+i \\sin \\theta)-\\mathrm{i} \\\\\n& =2 \\sin \\theta \\cos \\theta+\\mathrm{i}\\left(2 \\sin ^2 \\theta-1\\right) .\n\\end{aligned}\n$$\n$$\n\\begin{aligned}\n& =\\sin 2 \\theta-i \\cos 2 \\theta \\\\\n& =\\cos \\left(2 \\theta-\\frac{\\pi}{2}\\right)+i \\sin \\left(2 \\theta-\\frac{\\pi}{2}\\right) .\n\\end{aligned}\n$$\n所以 $\\varphi=2 k \\pi+2 \\theta-\\frac{\\pi}{2}(k \\in \\mathbf{Z}), \\varphi+\\theta=2 k \\pi+3 \\theta-\\frac{\\pi}{2}(k \\in \\mathbf{Z})$.\n即 $\\operatorname{Arg}\\left(z^2-z \\mathrm{i}\\right)=2 k \\pi+3 \\theta-\\frac{\\pi}{2}(k \\in \\mathbf{Z})$.",
+    "remark": "注:对于已知 $|z|=r(r>0)$ 的有关问题, 可以从以下四个方面去思考:\n(1) 令 $z=r(\\cos \\theta+\\mathrm{i} \\sin \\theta)$;\n(2) 令 $z=a+b \\mathrm{i}(a, b \\in \\mathbf{R})$ 且 $a^2+b^2=r^2$;\n(3) 由 $|z|^2=r^2$ 得 $z \\bar{z}=r^2, z=\\frac{r^2}{\\bar{z}}, \\bar{z}=\\frac{r^2}{z}$;\n(4) $z$ 在复平面内的对应点在以原点为圆心 $r$ 为半径的圆上.",
+    "figures": [
+        "./images/volume8/figures/fig-c2a3-1.png",
+        "./images/volume8/figures/fig-c2a3-2.png"
+    ]
+}

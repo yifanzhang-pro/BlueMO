@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题15. 在 $\\triangle A B C$ 中, $A B=A C, \\angle A=20^{\\circ}$, 在边 $A B 、 A C$ 上分别取点 $D 、 E$, 使得 $\\angle E B C=60^{\\circ}, \\angle D C B=50^{\\circ}$. 求 $\\angle B E D$ 的度数.",
+    "solution": "解: 如图(<FilePath:./images/volume7/figures/fig-c2a15.png>), 设 $\\angle B E D=x$, 于是, $\\angle C E D=40^{\\circ}+x$. 对 $\\triangle B C E$ 和点 $D$ 应用角元塞瓦定理有\n$$\n\\begin{aligned}\n1 & =\\frac{\\sin \\angle B C D}{\\sin \\angle D C E} \\cdot \\frac{\\sin \\angle C E D}{\\sin \\angle D E B} \\cdot \\frac{\\sin \\angle E B D}{\\sin \\angle D B C} \\\\\n& =\\frac{\\sin 50^{\\circ}}{\\sin 30^{\\circ}} \\cdot \\frac{\\sin \\left(x+40^{\\circ}\\right)}{\\sin x} \\cdot \\frac{\\sin 20^{\\circ}}{\\sin 80^{\\circ}} .\n\\end{aligned}\n$$\n则 $\\frac{\\sin \\left(x+40^{\\circ}\\right)}{\\sin x}=\\frac{\\sin 80^{\\circ}}{2 \\cos 40^{\\circ} \\cdot \\sin 20^{\\circ}}=2 \\cos 20^{\\circ}=\\frac{\\sin 70^{\\circ}}{\\sin 30^{\\circ}}=\\frac{\\sin \\left(30^{\\circ}+40^{\\circ}\\right)}{\\sin 30^{\\circ}}$.\n因为 $\\frac{\\sin \\left(x+40^{\\circ}\\right)}{\\sin x}=\\cos 40^{\\circ}+\\cot x \\cdot \\sin 40^{\\circ}$,\n作为 $x$ 的函数在 $(0, \\pi)$ 上严格递减, 所以, $\\angle B E D=x=30^{\\circ}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2a15.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 已知 $a 、 b 、 c$ 为正实数,证明:\n$$\n\\frac{9}{a+b+c} \\leqslant 2\\left(\\frac{1}{a+b}+\\frac{1}{b+c}+\\frac{1}{c+a}\\right) .\n$$",
+    "solution": "由柯西不等式, 得 $2(a+b+c)\\left(\\frac{1}{a+b}+\\frac{1}{b+c}+\\frac{1}{c+a}\\right)=[(a+b)+(b+c)+(c+a)]\\left(\\frac{1}{a+b}+\\frac{1}{b+c}+\\frac{1}{c+a}\\right) \\geqslant 9$, 故命题成立.",
+    "remark": "",
+    "figures": []
+}

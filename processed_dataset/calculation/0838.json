@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-6.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 求\n$$\nx \\sqrt{1-y^2}+y \\sqrt{1-x^2}\n$$\n的最大值.",
+    "solution": "解:由柯西不等式, 得\n$$\n\\left|x \\sqrt{1-y^2}+y \\sqrt{1-x^2}\\right|^2 \\leqslant\\left(x^2+y^2\\right)\\left(2-x^2-y^2\\right) .\n$$\n再由平均值不等式, 得\n$$\n\\left|x \\sqrt{1-y^2}+y \\sqrt{1-x^2}\\right| \\leqslant \\frac{x^2+y^2+2-x^2-y^2}{2}=1 .\n$$\n若 $x=\\frac{1}{2}, y=\\frac{\\sqrt{3}}{2}$, 则\n$$\nx \\sqrt{1-y^2}+y \\sqrt{1-x^2}=1,\n$$\n于是所求的最大值为 1 .",
+    "remark": "",
+    "figures": []
+}

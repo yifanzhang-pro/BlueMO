@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题11. 设 $a, d \\geqslant 0, b, c>0$ 且 $b+c \\geqslant a+d$. 求 $\\frac{b}{c+d}+\\frac{c}{a+b}$ 的最小值.",
+    "solution": "由已知, 得 $b+c \\geqslant \\frac{1}{2}(a+b+c+d)$. 不妨设 $a+b=c+d$, 则 $\\frac{b}{c+d}+\\frac{c}{a+b}=\\frac{b+c}{c+d}+c\\left(\\frac{1}{a+b}-\\frac{1}{c+d}\\right) \\geqslant \\frac{\\frac{1}{2}(a+b+c+d)}{c+d}+(c+$ d) $\\left(\\frac{1}{a+b}-\\frac{1}{c+d}\\right)=\\frac{a+b}{2(c+d)}+\\frac{c+d}{a+b}-\\frac{1}{2} \\geqslant \\sqrt{2}-\\frac{1}{2}$. 当 $a=\\sqrt{2}+1, b= \\sqrt{2}-1, c=2, d=0$ 时, 取等号.\n故所求最小值为 $\\sqrt{2}-\\frac{1}{2}$.",
+    "remark": "",
+    "figures": []
+}

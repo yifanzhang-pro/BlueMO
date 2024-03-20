@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例11 根据条件,分别判定满足下列条件的 $\\triangle A B C$ 是怎样的三角形:\n(1) $a \\cos B=b \\cos A$;\n(2) $a \\cos A=b \\cos B$.",
+    "solution": "解:法一 (1)由正弦定理, 得 $2 R \\sin A \\cos B=2 R \\sin B \\cos A$, 即 $\\sin (A- B)=0$.\n又 $-\\pi<A-B<\\pi$, 所以 $A-B=0$, 即 $A=B, \\triangle A B C$ 是等腰三角形.\n(2) 由正弦定理, 得 $2 R \\sin A \\cos A=2 R \\sin B \\cos B$, 即 $\\sin 2 A=\\sin 2 B$.\n又 $0<2 A<2 \\pi, 0<2 B<2 \\pi$, 所以 $2 A=2 B$ 或 $2 A=\\pi-2 B, A=B$ 或 $A+B=\\frac{\\pi}{2}$.\n$\\triangle A B C$ 是等腰三角形或是直角三角形.\n解法二 (1) 由余弦定理得 $a \\cdot \\frac{a^2+c^2-b^2}{2 a c}=b \\cdot \\frac{b^2+c^2-a^2}{2 b c}$, \n化简得 $a=b, \\triangle A B C$ 是等腰三角形.\n(2) 由余弦定理得 $a \\cdot \\frac{b^2+c^2-a^2}{2 b c}=b \\cdot \\frac{a^2+c^2-b^2}{2 a c}$.\n$$\n\\begin{gathered}\na^2\\left(b^2+c^2-a^2\\right)=b^2\\left(a^2+c^2-b^2\\right), \\\\\na^2 c^2-a^4=b^2 c^2-b^4, \\\\\nc^2\\left(a^2-b^2\\right)=\\left(a^2+b^2\\right)\\left(a^2-b^2\\right) .\n\\end{gathered}\n$$\n所以 $a=b$ 或 $c^2=a^2+b^2, \\triangle A B C$ 是等腰三角形或是直角三角形.",
+    "remark": "",
+    "figures": []
+}

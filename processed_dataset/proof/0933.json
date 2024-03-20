@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题11 设 $x_1 \\geqslant x_2 \\geqslant x_3 \\geqslant x_4 \\geqslant 2$, 且 $x_2+x_3+x_4 \\geqslant x_1$, 求证:\n$$\n\\left(x_1+x_2+x_3+x_4\\right)^2 \\leqslant 4 x_1 x_2 x_3 x_4 .\n$$",
+    "solution": "令 $a=x_2+x_3+x_4, b=x_2 x_3 x_4$, 则原不等式为 $\\left(x_1+a\\right)^2 \\leqslant 4 x_1 b$, 即 $x_1^2+2(a-2 b) x_1+a^2 \\leqslant 0$. 令 $f(x)=x^2+2(a-2 b) x+a^2$, 则只需证明 $f\\left(x_1\\right) \\leqslant 0$. 因为 $\\Delta=4(a-2 b)^2-4 a^2=16 b(b-a)$, 而 $\\frac{a}{b}=\\frac{x_2+x_3+x_4}{x_2 x_3 x_4}= \\frac{1}{x_3 x_4}+\\frac{1}{x_2 x_4}+\\frac{1}{x_2 x_3} \\leqslant \\frac{1}{4}+\\frac{1}{4}+\\frac{1}{4}=\\frac{3}{4}<1$, 所以 $b>a$, 从而 $\\Delta>0, f(x)$ 与 $x$ 轴有两个不同的交点.\n易知这两个交点为 $u=2 b-a-2 \\sqrt{b(b-a)}, v= 2 b-a+2 \\sqrt{b(b-a)}$. 下面证明 $x_1 \\in[u, v]$. 因 $a \\leqslant 3 x_1 \\leqslant 3 a$, 故 $x_1 \\in \\left[\\frac{a}{3}, a\\right]$, 只需证 $\\left[\\frac{a}{3}, a\\right] \\subset[u, v]$, 即 $u \\leqslant \\frac{a}{3}, a \\leqslant v$. 由于 $v=2 b-a+2 \\sqrt{b(b-a)}>2 b-a>a, u=2 b-a-2 \\sqrt{b(b-a)}=(\\sqrt{b}-\\sqrt{b-a})^2= \\left(\\frac{a}{\\sqrt{b}+\\sqrt{b-a}}\\right)^2=\\frac{a}{\\left(\\sqrt{\\frac{b}{a}}+\\sqrt{\\frac{b}{a}-1}\\right)^2} \\leqslant \\frac{a}{\\left(\\sqrt{\\frac{4}{3}}+\\sqrt{\\frac{1}{3}}\\right)^2}=\\frac{a}{3}$, 所以 $x_1 \\in[u, v]$, 从而必有 $f\\left(x_1\\right) \\leqslant 0$.",
+    "remark": "",
+    "figures": []
+}
