@@ -1,12 +1,10 @@
 # BlueMO
 
-## BlueMO: A High-Quality Mathematical Olympiad Data Resources from Little Blue Book Series
+## BlueMO: A Comprehensive Collection of Challenging Mathematical Olympiad Problems from the Little Blue Book Series
 
 **BlueMO** is a comprehensive and challenging dataset comprising mathematical olympiad problems paired with detailed solutions, meticulously curated from the esteemed "Little Blue Book" (小蓝书) series (Second Edition)—a vital resource for Chinese students training for national and international olympiad math competitions.
 
 Designed to advance and assess sophisticated reasoning in LLMs, this dataset serves as a benchmark or training resource for high-level problem-solving in AI.
-
-If you have any problem, feel free to contact Yang Yuan and Yifan Luo.
 
 ## Introduction for "Little Blue Book" (小蓝书)
 
@@ -96,11 +94,9 @@ A case in `calculation`.
 If you use the BlueMO dataset in your research, please consider citing it as follows:
 
 ```bibtex
-@misc{chen2025bluemo,
-      title={BlueMO: A High-Quality Mathematical Olympiad Data Resources from Little Blue Book Series},
-      author={Chen, Yizhou, Luo, Yifan, Zhang, Yifan, Yuan, Yang},
-      year={2025},
-      publisher={GitHub},
-      howpublished={\url{https://github.com/Luobots/BlueMO}}
+@misc{bluemo2024,
+      title={BlueMO: A comprehensive collection of challenging mathematical olympiad problems from the little blue book series}, 
+      author={Zhang, Yifan and Luo, Yifan and Chen, Yizhou and Yuan, Yang},
+      year={2024},
 }
 ```
