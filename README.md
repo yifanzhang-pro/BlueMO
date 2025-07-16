@@ -6,7 +6,7 @@
 
 Designed to advance and assess sophisticated reasoning in LLMs, this dataset serves as a benchmark or training resource for high-level problem-solving in AI.
 
-If you have any problem, feel free to contact Yang Yuan (yuanyang@tsinghua.edu.cn) and Yifan Luo (luoyf24@mails.tsinghua.edu.cn).
+If you have any problem, feel free to contact Yang Yuan and Yifan Luo.
 
 ## Introduction for "Little Blue Book" (小蓝书)
 
@@ -104,7 +104,3 @@ If you use the BlueMO dataset in your research, please consider citing it as fol
       howpublished={\url{https://github.com/Luobots/BlueMO}}
 }
 ```
-
-## Addtional Information
-
-Author Yizhou Chen completed this work during his internship at the Shanghai Qi Zhi Institute from November 1, 2023, to January 5, 2024.
