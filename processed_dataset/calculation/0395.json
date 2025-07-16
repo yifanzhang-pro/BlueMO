@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter2.tex",
+    "problem_type": "calculation",
+    "problem": "例5. 是否存在单位圆内接三角形 $A B C$, 其三边长 $B C=a, C A=b$, $A B=c$, 且存在实数 $p$, 使得关于 $x$ 的方程 $x^3-2 a x^2+b c x=p$ 有三个实根, 且它们恰为 $\\sin A, \\sin B, \\sin C$ ?",
+    "solution": "解:定存在这样的三角形, 则由韦达定理得:\n$$\n\\left\\{\\begin{array}{l}\n2 a=\\sin A+\\sin B+\\sin C, \\\\\nb c=\\sin A \\sin B+\\sin B \\sin C+\\sin C \\sin A .\n\\end{array}\\right. \\label{eq1}\n$$\n又根据题目条件及正弦定理得:\n$$\n\\frac{\\sin A}{a}=\\frac{\\sin B}{b}=\\frac{\\sin C}{c}=\\frac{1}{2 R}=\\frac{1}{2} .  \\label{eq2}\n$$\n由式\\ref{eq1},\\ref{eq2}可知:\n$$\n\\left\\{\\begin{array}{l}\n2 a=\\frac{1}{2}(a+b+c), \\\\\nb c=\\frac{1}{4}(a b+b c+c a) \n\\end{array}\\right.\n$$\n即\n$$\n\\left\\{\\begin{array}{l}\n3 a=b+c, \\\\\n3 b c=a(b+c)\n\\end{array}\\right. \n$$\n所以\n$$\n3 b c=a(b+c)=3 a^2,\n$$\n故 $b c=a^2$.\n在 $\\triangle A B C$ 中, 由于 $b<a+c$, 故 $3 a=b+c<a+2 c$, 即 $a<c$; 根据 $c< a+b$ 同理可推得 $a<b$. 所以 $a^2<b c=a^2$, 矛盾! 故不存在满足题目条件的三角形.",
+    "remark": "注:对此类\"存在性\"有待确定的问题, 往往可以在\"假定存在\"的基础上进行正确、严密的逻辑推理, 得到一系列必须满足的结论, 以帮助搜索是否具有满足题意的例子, 在此过程中一旦出现矛盾, 则表明结论为 \"不存在\", 如此与反证法的思想一致.",
+    "figures": []
+}

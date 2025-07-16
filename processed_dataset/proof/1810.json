@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题14. 已知 $P$ 为正 $\\triangle A B C$ 内一点, $P$ 在边 $A B 、 B C 、 C A$ 上的投影分别为点 $A^{\\prime}$ 、 $B^{\\prime} 、 C^{\\prime}$. 记 $\\triangle A P C^{\\prime} 、 \\triangle B P A^{\\prime} 、 \\triangle C P B^{\\prime} 、 \\triangle A P A^{\\prime} 、 \\triangle B P B^{\\prime} 、 \\triangle C P C^{\\prime}$ 的内切圆半径分别为 $r_1 、 r_2 、 r_3 、 r_4 、 r_5 、 r_6$. 证明: $r_1+r_2+r_3=r_4+r_5+r_6$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c11a14.png>), 连结 $A P 、 B P 、 C P, \\triangle A B P$ 中, $A P^2- A A^{\\prime 2}=B P^2-B A^{\\prime 2}\\left(=P A^{\\prime 2}\\right)$, 同理 $B P^2-B B^{\\prime 2}= C P^2-C B^{\\prime 2}, C P^2-C C^{\\prime 2}=A P^2-A C^{\\prime 2}$, 以上三式相加, 得 $A A^{\\prime 2}+B B^{\\prime 2}+C C^{\\prime 2}=B A^{\\prime 2}+C B^{\\prime 2}+A C^{\\prime 2}$, 即 $\\left(A A^{\\prime 2}-B A^{\\prime 2}\\right)+\\left(B B^{\\prime 2}-C B^{\\prime 2}\\right)+\\left(C C^{\\prime 2}-A C^{\\prime 2}\\right)= 0,\\left(A A^{\\prime}+B A^{\\prime}\\right)\\left(A A^{\\prime}-B A^{\\prime}\\right)+\\left(B B^{\\prime}+C B^{\\prime}\\right)\\left(B B^{\\prime}-\\right.\\left.C B^{\\prime}\\right)+\\left(C C^{\\prime}+A C^{\\prime}\\right)\\left(C C^{\\prime}-A C^{\\prime}\\right)=0$. 注意到 $A A^{\\prime}+B A^{\\prime}=B B^{\\prime}+C B^{\\prime}= C C^{\\prime}+A C^{\\prime}$, 所以 $A A^{\\prime}-B A^{\\prime}+B B^{\\prime}-C B^{\\prime}+C C^{\\prime}-A C^{\\prime}=0$.\n即 $A A^{\\prime}+B B^{\\prime}+C C^{\\prime}=B A^{\\prime}+C B^{\\prime}+A C^{\\prime}$ . *\n显然, $r_1=-\\frac{A C^{\\prime}+C^{\\prime} P-A P}{2}, \\quad r_2=\\frac{B A^{\\prime}+A^{\\prime} P-B P}{2}, \\quad r_3=$\n$$\n\\begin{aligned}\n& \\frac{C B^{\\prime}+P B^{\\prime}-P C}{2}, r_4=\\frac{A A^{\\prime}+A^{\\prime} P-A P}{2}, r_5=\\frac{B B^{\\prime}+B^{\\prime} P-P B}{2}, r_6= \\\\\n& \\frac{O C^{\\prime}+C^{\\prime} P-C P}{2} .\n\\end{aligned}\n$$\n由 $*$ 即有: $r_1+r_2+r_3=r_4+r_5+r_6$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c11a14.png"
+    ]
+}

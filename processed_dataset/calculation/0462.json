@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 在所有 $n$ 位数中, 求数码 $1,2,3$ 都出现, 但其他数码均不出现的数的个数.",
+    "solution": "设不出现数码 $4,5, \\cdots, 9,0$ 的全体 $n$ 位数组成集合 $I$.\n对 $k=1,2,3$, 记 $I$ 中不含数码 $k$ 的 $n$ 位数全体组成集合 $A_k$. 显然, 满足条件的数的全体组成集合 $\\overline{A_1} \\cap \\overline{A_2} \\cap \\overline{A_3}$.\n由于\n$$\n\\begin{gathered}\n|I|=3^n,\\left|A_1\\right|=\\left|A_2\\right|=\\left|A_3\\right|=2^n, \\\\\n\\left|A_1 \\cap A_2\\right|=\\left|A_2 \\cap A_3\\right|=\\left|A_3 \\cap A_1\\right|=1,\\left|A_1 \\cap A_2 \\cap A_3\\right|=0,\n\\end{gathered}\n$$\n由容斥原理得\n$$\n\\begin{aligned}\n\\left|\\overline{A_1} \\cap \\overline{A_2} \\cap \\overline{A_3}\\right|= & |I|-\\left|A_1\\right|-\\left|A_2\\right|-\\left|A_3\\right|+\\left|A_1 \\cap A_2\\right| \\\\\n& +\\left|A_2 \\cap A_3\\right|+\\left|A_3 \\cap A_1\\right|-\\left|A_1 \\cap A_2 \\cap A_3\\right| \\\\\n= & 3^n-3 \\cdot 2^n+3 .\n\\end{aligned}\n$$\n故所求 $n$ 位数有 $3^n-3 \\cdot 2^n+3$ 个.",
+    "remark": "",
+    "figures": []
+}

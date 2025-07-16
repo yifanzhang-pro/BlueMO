@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例3. 如图(<FilePath:./images/volume7/figures/fig-c2i8.png>), $A_1 、 B_1 、 C_1$ 分别是 $\\triangle A B C$ 的边 $B C 、 C A 、 A B$ 内任意一点, $G_a, G_b, G_c$ 分别为 $\\triangle A B_1 C_1, \\triangle B C_1 A_1, \\triangle C A_1 B_1$ 的重心.\n求证: $A G_a$, $B G_b, C G_c$ 三线共点的充要条件是 $A A_1, B B_1, C C_1$ 三线共点.",
+    "solution": "证明:由角元塞瓦定理知 $A G_a, B G_b, C G_c$ 三线共点的充分必要条件为\n$$\n\\left(\\frac{\\sin \\angle B A G_a}{\\sin \\angle G_a A C}\\right) \\cdot\\left(\\frac{\\sin \\angle A C G_c}{\\sin \\angle G_c C B}\\right) \\cdot\\left(\\frac{\\sin \\angle C B G_b}{\\sin \\angle G_b B A}\\right)=1, \\label{eq1}\n$$\n又注意到 $G_a$ 为 $\\triangle A B_1 C_1$ 重心, 因此 $S_{\\triangle G_a A C_1}=S_{\\triangle G_a A B_1}$, 即\n$$\n\\frac{1}{2} \\cdot A C_1 \\cdot A G_a \\cdot \\sin \\angle C_1 A G_a=\\frac{1}{2} \\cdot A B_1 \\cdot A G_a \\cdot \\sin \\angle B_1 A G_a,\n$$\n由此可得\n$$\n\\frac{\\sin \\angle B A G_a}{\\sin \\angle G_a A C}=\\frac{\\sin \\angle C_1 A G_a}{\\sin \\angle G_a A B_1}=\\frac{A B_1}{A C_1},\n$$\n同理可知\n$$\n\\frac{\\sin \\angle A C G_c}{\\sin \\angle G_c C B}=\\frac{A_1 C}{B_1} \\frac{C}{\\operatorname{Con} \\angle C B G_b}=\\frac{B C_1}{\\sin \\angle G_b B A} .\n$$\n则 式\\ref{eq1}就等价于 $\\frac{A B_1}{B_1 C} \\cdot \\frac{C A_1}{A_1 B} \\cdot \\frac{B C_1}{C_1 A}=1$, 由塞瓦定理, 这就等价于 $A A_1 、 B B_1$ 、 $C C_1$ 三线共点.",
+    "remark": "注:此题完美地将塞瓦定理的边元形式与角元形式结合起来.\n角元塞瓦定理的使用是自然的.",
+    "figures": [
+        "./images/volume7/figures/fig-c2i8.png"
+    ]
+}

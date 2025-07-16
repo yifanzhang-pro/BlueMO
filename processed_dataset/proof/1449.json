@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题14. 已知 100 个正数 $x_1, x_2, \\cdots, x_{100}$, 满足:\n(1) $x_1^2+x_2^2+\\cdots+x_{100}^2>10000$;\n(2) $x_1+x_2+\\cdots+x_{100} \\leqslant 300$.\n求证: 可在它们之中找出 3 个数,使得这三个数之和大于 100 .",
+    "solution": "不妨设 $x_1 \\geqslant x_2 \\geqslant \\cdots \\geqslant x_{100}$, 下面我们借助图形(<FilePath:./images/volume5/figures/fig-c5p14.png>)来说明, $x_1+x_2+x_3>100$ 成立.\n把 $x_i^2$ 看作是边长为 $x_i$ 的正方形的面积 $(1 \\leqslant i \\leqslant 100)$.\n由于 $x_1+x_2+\\cdots+x_{100} \\leqslant 300$, 这些正方形可以一个接一个地排起来,其总长 $\\leqslant 300$, 它们全落在一个长为 300 , 宽为 100 的矩形中.\n这个矩形可分为 3 个边长为 100 的正方形, 如图所示.\n如果 $x_1+x_2+x_3 \\leqslant 100$, 第一个边长为 100 的正方形中含有三个带形,互不重叠, 宽分别为 $x_1 、 x_2 、 x_3$.\n由于 $x_i$ 递减,第 2 个边长为 100 的正方形中所含的小正方形(包括不完整的, 如图中阴影部分所示) 的边长 $x_i$ 均 $\\leqslant x_3$, 它们可以移至上述宽为 $x_2$ 的带形中.\n同样,第 3 个边长为 100 的正方形中所含的小正方形可以移至上述宽为 $x_3$ 的带形中, 于是, 面积之和 $x_1^2+x_2^2+\\cdots+x_{100}^2<100^2$, 矛盾!\n故 $x_1+x_2+x_3>100$.",
+    "remark": "注:: 下面给出第 2 种证法.\n证法 2 : 不妨设 $x_1 \\geqslant x_2 \\geqslant \\cdots \\geqslant x_{100}$. 记 $s=x_1+x_2+x_3, \\lambda=x_3$, 令 $\\delta= x_2-x_3 \\geqslant 0$, 由 $x_1 \\geqslant x_2$, 易知 $\\left(x_1+\\delta\\right)^2+\\left(x_2-\\delta\\right)^2 \\geqslant x_1^2+x_2^2$. 所以 $x_1^2+x_2^2+ x_3^2 \\leqslant(s-2 \\lambda)^2+2 \\lambda^2$.\n由 $\\lambda \\geqslant x_4 \\geqslant x_5 \\geqslant \\cdots \\geqslant x_{100}$ 和 $x_4+x_5+\\cdots+x_{100}<300-s$ 可得\n$$\nx_4^2+x_5^2+\\cdots+x_{100}^2 \\leqslant \\lambda\\left(x_4+x_5+\\cdots+x_{100}\\right) \\leqslant(300-s) \\lambda .\n$$\n故 $x_1^2+x_2^2+\\cdots+x_{100}^2 \\leqslant 6 \\lambda^2+(300-5 s) \\lambda+s^2$.\n记 $f(\\lambda)=6 \\lambda^2+(300-5 s) \\lambda+s^2$. 则由于 $0<\\lambda \\leqslant \\frac{s}{3}$, 又由于 $f(0)=s^2$, $f\\left(\\frac{s}{3}\\right)=100 s$, 有 $x_1^2+x_2^2+\\cdots+x_{100}^2 \\leqslant \\max \\left\\{s^2, 100 s\\right\\}$. 再由 $x_1^2+x_2^2+\\cdots+ x_{100}^2>10000$, 即可得 $s=x_1+x_2+x_3>100$.",
+    "figures": [
+        "./images/volume5/figures/fig-c5p14.png"
+    ]
+}

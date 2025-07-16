@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter10.tex",
+    "problem_type": "calculation",
+    "problem": "例5. 求具有如下性质的最小自然数 $n$ : 把正 $n$ 边形 $S$ 的任何 5 个顶点染红色时, 总有 $S$ 的一条对称轴 $L$, 使每一红点关于 $L$ 的对称点都不是红点.",
+    "solution": "解:正 $n$ 边形为 $A_1, A_2, \\cdots, A_n$, 它有 $n$ 条对称轴.\n记过边 $A_1 A_n$ 的中点的对称轴记为 $L_1$, 过 $A_1$ 的对称轴为 $L_2$, 过边 $A_1 A_2$ 的中点的对称轴记为 $L_3$, 过 $A_2$ 的对称轴为 $L_4, \\cdots$, 过边 $A_{\\left[\\frac{n}{2}\\right]} A_{\\left[\\frac{n+1}{2}\\right]}$ 的中点的对称轴记为 $L_n$ (其中 $A_{\\left[\\frac{n}{2}\\right]}$ 与 $A_{\\left[\\frac{n+1}{2}\\right]}$ 可能重合). 易知, $A_i$ 与 $A_j$ 关于 $L_m$ 对称, 等价于 $i+j=m(\\bmod n)$ (规定 $A_{n+i}=A_i$ ).\n对任意集合 $X=\\left\\{a_1, a_2, \\cdots, a_t\\right\\}$, 定义 $X^*=\\left\\{a_i+a_j \\mid 1 \\leqslant i \\leqslant j \\leqslant t\\right\\}$. 对于 $k \\in\\{3,4,5, \\cdots, 13\\}$, 将正 $k$ 边形的 5 个顶点 $A_1 、 A_2 、 A_4 、 A_6 、 A_7$ 染红色 (其中下标模 $k$ 理解, 且当互异顶点的个数少于 5 时, 将任意若干个点重复染红, 使之共有 5 个红点). 令 $P=\\{1,2,4,6,7\\}$, 则 $P^*=\\{2,3,4, \\cdots$, $14\\}$, 所以 $P^*$ 中含有模 $k$ 的完系 (含有 $k$ 个连续自然数, 各数模 $k$ 理解), 于是, 对任意 $m(1 \\leqslant m \\leqslant k), P^*$ 中必有某个 $x \\equiv m(\\bmod k)$, 即存在 $i+j \\equiv m(\\bmod k)$, 其中 $i 、 j \\in P$. 于是 $A_i 、 A_j$ 是关于 $L_m$ 对称的两个点.\n所以,对任何\n$k \\in\\{3,4,5, \\cdots, 13\\}$ 都不合乎要求,即 $n \\geqslant 14$.\n另一方面, 对正 14 边形, 将它的任意 5 个顶点 $A_{i_1}, A_{i_2}, \\cdots, A_{i_5}$ 染红色, 令 $P=\\left\\{i_1, i_2, \\cdots, i_5\\right\\}$,引人参数: 设 $P$ 中有 $r$ 个奇数, $5-r$ 个偶数, 则 $P^*$ 中奇数的个数为: $r(5-r) \\leqslant\\left[\\left(\\frac{5}{2}\\right)^2\\right]=6$ (其中 $P 、 P^*$ 中的数按模 14 理解, 这不改变各数的奇偶性). 于是, $\\{1,3,5,7,9,11,13\\}$ 中必有一个奇数 $m$, 使 $m \\notin P^*$, 即对任何 $i 、 j \\in P, i+j \\notin P^*, i+j \\neq m(\\bmod 14)$. 于是任何.\n个红点关于 $L_m$ 不对称.\n故 $n_{\\min }=14$.",
+    "remark": "",
+    "figures": []
+}

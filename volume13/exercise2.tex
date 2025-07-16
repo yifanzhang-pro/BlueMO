@@ -1,0 +1,47 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $x 、 y 、 z$ 为非负实数, $x+y+z=a(a \geqslant 1)$, 求 $F=2 x^2+y+3 z^2$ 的最大值.
+%%<SOLUTION>%%
+由 $x+y+z=a$, 得 $\frac{x}{a}+\frac{y}{a}+\frac{z}{a}=1$, 令 $x=a u, y=a v, z=a w$, 则 $0 \leqslant u, v, w \leqslant 1, u+v+w=1, F=2 x^2+y+3 z^2=2 a^2 u^2+a v+3 a^2 w^2$. 因为 $a \geqslant 1$ 时, $a^2 \geqslant a \geqslant 1$, 于是, $F=2 a^2 u^2+a v+3 a^2 w^2 \leqslant 2 a^2 u^2+a^2 v+ 3 a^2 w^2 \leqslant 3 a^2 u^2+3 a^2 v+3 a^2 w^2 \leqslant 3 a^2 u+3 a^2 v+3 a^2 w=3 a^2$. 等号在 $u=v=0$ 、 $w=1$, 即 $x=y=0 、 z=a$ 时成立.
+所以 $2 x^2+y+3 z^2$ 的最大值为 $3 a^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 求一个十进制 3 位数, 使它与其各位数字之和的比最小.
+%%<SOLUTION>%%
+设所求的三位数为 $100 x+20 y+z$, 考察 $F=\frac{100 x+10 y+z}{x+y+z}=1+ \frac{99 x+9 y}{x+y+a}$, 注意到上式右边, $z$ 仅在分母中出现, 从而 $F$ 是关于 $z$ 的单调函数.
+固定 $x 、 y$, 则由 $z \leqslant 9$, 得 $F \geqslant 1+\frac{99 x+9 y}{x+y+9}=10+\frac{90 x-81}{x+y+9}$. 注意到上式右边, $y$ 仅在分母中出现, 从而右边是关于 $y$ 的单调函数.
+再固定 $x$, 则由 $y \leqslant 9$, 得 $F \geqslant 10+\frac{90 x-81}{x+9+9}=100-\frac{1701}{18+x} \geqslant 100-\frac{1701}{19}=\frac{199}{99}$. 其中等式在 $x=1 、 y=z=9$ 时成立.
+故所求的三位数为 199 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $x_1, x_2, \cdots, x_n$ 是非负实数, 记 $H=\frac{x_1}{\left(1+x_1+x_2+\cdots+x_n\right)^2}+ \frac{x_2}{\left(1+x_2+x_3+\cdots+x_n\right)^2}+\cdots+\frac{x_n}{\left(1+x_n\right)^2}$ 的最大值为 $a_{n+1}$. 问: 当 $x_1$, $\dot{x}_2, \cdots, x_n$ 为何值时, $H$ 的值达到最大? 并求出 $a_n$ 与 $a_{n-1}$ 之间的关系及 $\lim _{n \rightarrow \infty} a_n$.
+%%<SOLUTION>%%
+先证明引理: 设 $g(x)=\frac{a}{x+b}+\frac{x}{(x+b)^2}$, 其中 $a \geqslant 0, b \geqslant 1$, 利用判别式方法可以求得: 当 $x=\frac{b(1-a)}{1+a}$ 时, $g(x)$ 的最大值为 $\frac{(1+a)^2}{4 b}$. 原题解答: 固定 $x_2, x_3, \cdots, x_n$, 则 $H$ 是关于 $x_1$ 的函数 $g\left(x_1\right)+C_1$, 其中 $a_1=0$, $b_1=1+x_2+\cdots+x_n$. 则由引理知, 当 $x_1=\frac{\left(1+x_2+x_3+\cdots+x_n\right)\left(1-a_1\right)}{1+a_1}$ 时, $g\left(x_1\right)+C_1$ 的最大值为: $\frac{\left(1+a_1\right)^2}{4} \cdot \frac{1}{1+x_2+x_3+\cdots+x_n}+ \frac{x_2}{\left(1+x_2+x_3+\cdots+x_n\right)^2}+\cdots+\frac{x_n}{\left(1+x_n\right)^2}=H_2$. 再固定 $x_3, x_4, \cdots, x_n$, 则 $H_2$ 是关于 $x_2$ 的函数 $g\left(x_2\right)+C_2$, 其中 $a_2=\frac{\left(1+a_1\right)^2}{4}, b_2=1+x_3+\cdots+x_n$. 则由引理知, 当 $x_2=\frac{\left(1+x_3+x_4+\cdots+x_n\right)\left(1-a_2\right)}{1+a_2}$ 时, $g\left(x_2\right)+C_2$ 的最大值为 $\frac{\left(1+a_2\right)^2}{4} \cdot \frac{1}{1+x_3+x_4+\cdots+x_n}+\frac{x_3}{\left(1+x_3+x_4+\cdots+x_n\right)^2}+\cdots+ \frac{x_n}{\left(1+x_n\right)^2}=H_3$. 如此下去, 可以得到 $\frac{\left(1+a_{n-1}\right)^2}{4} \cdot \frac{1}{1+x_n}+\frac{x_n}{\left(1+x_n\right)^2}=H_n$.
+再利用引理 $(b=1$ 时 $)$, 当 $x_n=\frac{1-a_n}{1+a_n}$ 时, $H_n$ 的最大值为 $\frac{\left(1+a_n\right)^2}{4}$. 其中 $a_n= \frac{\left(1+a_{n-1}\right)^2}{4}$. 由此可知, 设 $a_{n+1}$ 是 $H$ 的最大值, 则 $a_n$ 满足: $a_1=0, a_k= \frac{\left(1+a_{k-1}\right)^2}{4}$. 且最大值在 $x_n=\frac{1-a_n}{1+a_n}, x_{n-1}=\frac{\left(1+x_n\right)\left(1-a_{n-1}\right)}{1+a_{n-1}}, \cdots, x_1= \frac{\left(1+x_2+x_3+\cdots+x_n\right)\left(1-a_1\right)}{1+a_1}$ 时达到.
+易知, $a_n \geqslant a_{n-1}$, 且当 $0 \leqslant a_{n-1} \leqslant 1$ 时, $0 \leqslant a_n \leqslant 1$. 所以 $x_1, x_2, \cdots, x_n$ 都是非负数.
+注意到 $a_n$ 是单调有界序列, 所以必存在极限.
+设极限为 $a$, 则 $a=\frac{(1+a)^2}{4}$, 即 $a=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $n$ 是给定的整数 $(n>1)$, 正整数 $a 、 b 、 c 、 d$ 满足 $\frac{b}{a}+\frac{d}{c}<1, b+ d \leqslant n$, 求 $\frac{b}{a}+\frac{d}{c}$ 的最大值.
+%%<SOLUTION>%%
+记 $\frac{b}{a}+\frac{d}{c}$ 的最大值为 $f(n)$, 不妨设 $a \leqslant c$. 如果 $a \geqslant n+1$, 则 $\frac{b}{a}+\frac{d}{c} \leqslant \frac{b}{a}+\frac{d}{a}=\frac{b+d}{a} \leqslant \frac{n}{n+1}$. 如果 $a \leqslant n$, 则固定 $a$, 记 $x=a(n-a+1)+1$. 若 $c \leqslant x$, 则由 $\frac{b}{a}+\frac{d}{c}<1$, 得 $b c+a d<a c$, 即 $b c+a d \leqslant a c-1$, 所以 $\frac{b}{a}+\frac{d}{c}= \frac{b c+a d}{a c} \leqslant \frac{a c-1}{a c}=1-\frac{1}{a c} \leqslant 1-\frac{1}{a x}$. 若 $c>x$, 则由 $\frac{b}{a}+\frac{d}{c}<1$, 得 $\frac{b}{a}<1$, 于是 $a \geqslant b+1$. 所以 $\frac{b}{a}+\frac{d}{c}-\left(\frac{a-1}{a}+\frac{b+d-a+1}{c}\right)=(b+1-$ a) $\left(\frac{1}{a}-\frac{1}{c}\right) \leqslant 0$, 所以 $\frac{b}{a}+\frac{d}{c} \leqslant \frac{a-1}{a}+\frac{b+d-a+1}{c} \leqslant \frac{a-1}{a}+\frac{n-a+1}{c} \leqslant \frac{a-1}{a}+\frac{n-a+1}{x}=1-\frac{1}{a x}$. 所以, $a \leqslant n$ 时, 恒有 $\frac{b}{a}+\frac{d}{c} \leqslant 1-\frac{1}{a x}$, 且等式能够成立, 于是问题转化为求函数 $g(a)=1-\frac{1}{a x}=1-\frac{1}{a[a(n-a+1)+1]} \left(2 \leqslant a \leqslant n, a \in \mathbf{N}^*\right)$ 的最大值, 也就是求 $h(a)=a[a(n-a+1)+1](2 \leqslant \left.a \leqslant n, a \in \mathbf{N}^*\right)$ 的最大值.
+因为 $h^{\prime}(a)=-3 a^2+(2 n+2) a+1$, 所以 $h^{\prime}(a)=0$ 的正根为 $a_0=\frac{n+1+\sqrt{(n+1)^2+3}}{3}$. 而 $\frac{2 n+2}{3}<a_0<\frac{2 n+3}{3}=\frac{2 n}{3}+1$, 将与 $a_0$ 最接近的两个正整数代入 $h(a)$ 作比较.
+推出当 $a=\left[\frac{2 n}{3}\right]+1$ 时, $h(a)$ 达到最大值.
+此时 $g(a)$ 达到最大值 $1-\frac{1}{a[a(n-a+1)+1]}$, 其中 $a=\left[\frac{2 n}{3}\right]+1$.
+%%PROBLEM_END%%
+
+

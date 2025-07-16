@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题13. 在 $\\triangle A B C$ 中, $\\angle B 、 \\angle C$ 的角平分线分别为 $B E 、 C D$, 其中点 $D 、 E$ 分别在边 $A B 、 A C$ 上, 设 $D E$ 的中点 $P$ 在边 $B C 、 A B 、 A C$ 上的投影分别为 $Q 、 M 、 N$. 证明: $P Q=P M+P N$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c11a13.png>), 设 $B C=a, C A=b, A B=c$, 连结 $P A$ 、 $P B 、 P C$. 由 $S_{\\triangle P A C}=\\frac{1}{2} S_{\\triangle A C D}=\\frac{1}{2} \\cdot \\frac{b}{a+b} S_{\\triangle A B C}$, 知 $P N=\\frac{2 S_{\\triangle P A C}}{b}=\\frac{S_{\\triangle A B C}}{a+b}$. 由 $S_{\\triangle P A B}=\\frac{1}{2} S_{\\triangle A B E}=\\frac{1}{2}$. $\\frac{c}{a+c} S_{\\triangle A B C}$, 知 $P M=\\frac{2 S_{\\triangle P A B}}{c}=\\frac{S_{\\triangle A B C}}{a+c}$. 又 $S_{\\triangle P B C}= \\frac{1}{2}\\left(S_{\\triangle B C D}+S_{\\triangle B C E}\\right)=\\frac{1}{2}\\left(\\frac{a}{a+b}+\\frac{a}{a+c}\\right) S_{\\triangle A B C}=\\frac{a}{2}\\left(\\frac{1}{a+b}+\\frac{1}{a+c}\\right) S_{\\triangle A B C}$, 则 $P Q=\\frac{2 S_{\\triangle P B C}}{a}=\\left(\\frac{1}{a+b}+\\frac{1}{a+c}\\right) S_{\\triangle A B C}=P M+ P N$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c11a13.png"
+    ]
+}

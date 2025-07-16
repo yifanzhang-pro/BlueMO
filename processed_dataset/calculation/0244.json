@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 设 $n \\equiv 1(\\bmod 4)$ 且 $n>1, P=\\left\\{a_1, a_2, \\cdots, a_n\\right\\}$ 是 $\\{1,2,3, \\cdots, n\\}$ 的任意排列, $k_P$ 表示使下列不等式成立的最大下标 $k$ :\n$$\na_1+a_2+\\cdots+a_k<a_{k+1}+a_{k+2}+\\cdots+a_n,\n$$\n试对一切可能的排列 $P$, 求对应的 $k_P$ 的总和.",
+    "solution": "设 $n=4 m+1\\left(m \\in \\mathbf{N}_{+}\\right)$, 对 $\\{1,2, \\cdots, n\\}$ 的任意排列 $p==\\left\\{a_1, a_2, \\cdots, a_n\\right\\}$, 由 $k_P$ 定义得 $a_1+a_2+\\cdots+a_{k_p}<a_{k_p+1}+a_{k_p+2}+\\cdots+a_n \\cdots$ (1), \n且 $a_1+a_2+\\cdots+a_{k_{\\mathrm{p}}+1} \\geqslant a_{k_{\\mathrm{p}}+2}+a_{k_{\\mathrm{p}}+3}+\\cdots+a_n \\cdots$ (2). \n首先(2)中等号不可能成立, 否则, $2\\left(a_1+a_2+\\cdots+a_{k_p+1}\\right)=a_1+a_2+\\cdots+a_n=\\frac{1}{2} n(n+1)=(4 m+1) (2 m+1)$. 上式左端为偶数, 而右端为奇数, 矛盾.\n故 (2) 应为 $a_1+a_2+\\cdots+ a_{k_{\\mathrm{p}}+1}>a_{k_{\\mathrm{p}}+2}+a_{k_{\\mathrm{P}}+3}+\\cdots+a_n \\cdots$ (3). \n于是对于 $P$ 的反序排列 $P^{\\prime}=\\left\\{a_n, a_{n-1}\\right.$, $\\left.\\cdots, a_2, a_1\\right\\}$. \n由(1)及(3)得 $k_{P^{\\prime}}=n-\\left(k_P+1\\right)$, 即 $k_P+k_{P^{\\prime}}=n-1$. \n将 $\\{1,2, \\cdots$, $n\\}$ 的 $n$ ! 个排列两两配对, 每对中两个排列 $P$ 与 $P^{\\prime}$ 互为反序, 它们对应的 $k_P$ 与 $k_{P^{\\prime}}$ 之和为 $n-1$, 又一共可配成 $\\frac{n !}{2}$ 对, \n故对一切不同的排列 $P$, 所对应的 $k_P$ 之和为 $\\frac{1}{2}(n-1)(n !)$.",
+    "remark": "",
+    "figures": []
+}

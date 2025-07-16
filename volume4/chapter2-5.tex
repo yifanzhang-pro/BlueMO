@@ -1,0 +1,242 @@
+
+%%TEXT_BEGIN%%
+2.5 带参数的平均值不等式.
+引进适当的参数, 是解决不等式问题的重要技巧.
+一般地, 当 $a_i>0, \lambda_i>0(i=1,2, \cdots, n)$, 且 $\prod_{i=1}^n \lambda_i=1$ 时, 我们有
+$$
+\frac{1}{n} \sum_{i=1}^n \lambda_i a_i \geqslant \sqrt[n]{a_1 a_2 \cdots a_n} .
+$$
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $a, b, c, d$ 是不全为 0 的实数,求
+$$
+f=\frac{a b+2 b c+c d}{a^2+b^2+c^2+d^2}
+$$
+的最大值.
+%%<SOLUTION>%%
+解:如果假设 $f$ 的最大值为 $M$, 则
+$$
+a b+2 b c+c d \leqslant M\left(a^2+b^2+c^2+d^2\right),
+$$
+因此, 要建立一个上面形式的不等式, 并找一组 $a, b, c, d$ 的值, 使不等式等号成立.
+设 $\alpha, \beta, \gamma>0$, 则
+$$
+\frac{\alpha}{2} a^2+\frac{b^2}{2 \alpha} \geqslant a b, \beta b^2+\frac{c^2}{\beta} \geqslant 2 b c, \frac{\gamma}{2} c^2+\frac{d^2}{2 \gamma} \geqslant c d .
+$$
+将上面三式相加, 得
+$$
+\begin{gathered}
+\frac{\alpha}{2} a^2+\left(\frac{1}{2 \alpha}+\beta\right) b^2+\left(\frac{1}{\beta}+\frac{\gamma}{2}\right) c^2+\frac{d^2}{2 \gamma} \\
+\geqslant a b+2 b c+c d
+\end{gathered}
+$$
+令 $\frac{\alpha}{2}=\frac{1}{2 \alpha}+\beta=\frac{1}{\beta}+\frac{\gamma}{2}=\frac{1}{2 \gamma}$, 得 $\gamma=\frac{1}{\alpha}, \beta=\frac{1}{2}\left(\alpha-\frac{1}{\alpha}\right)$, 及 $\alpha^4- 6 \alpha^2+1=0$, 解方程得 $\alpha=\sqrt{2}+1$ (另外三个解不合要求), 于是
+$$
+\begin{gathered}
+\frac{\sqrt{2}+1}{2}\left(a^2+b^2+c^2+d^2\right) \geqslant a b+2 b c+c d, \\
+f \leqslant \frac{\sqrt{2}+1}{2} .
+\end{gathered}
+$$
+又当 $a=d=1, b=c=\sqrt{2}+1$ 时, 不等式等号成立, 故 $f$ 的最大值为 $\frac{\sqrt{2}+1}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 求出最大的正数 $\lambda$, 使得对于满足 $x^2+y^2+z^2=1$ 的任何实数 $x$, $y, z$ 成立不等式:
+$$
+|\lambda x y+y z| \leqslant \frac{\sqrt{5}}{2} .
+$$
+%%<SOLUTION>%%
+解:由于
+$$
+\begin{aligned}
+1 & =x^2+y^2+z^2=x^2+\frac{\lambda^2}{1+\lambda^2} y^2+\frac{1}{1+\lambda^2} y^2+z^2 \\
+& \geqslant \frac{2}{\sqrt{1+\lambda^2}}(\lambda|x y|+|y z|) \geqslant \frac{2}{\sqrt{1+\lambda^2}}(|\lambda x y+y z|),
+\end{aligned}
+$$
+且当 $y=\frac{\sqrt{2}}{2}, x=\frac{\sqrt{2} \lambda}{2 \sqrt{\lambda^2+1}}, z=\frac{\sqrt{2}}{2 \sqrt{\lambda^2+1}}$ 时, 上述两个等号可同时取到.
+因此 $\frac{\sqrt{1+\lambda^2}}{2}$ 是 $|\lambda x y+y z|$ 的最大值.
+令 $\frac{\sqrt{1+\lambda^2}}{2} \leqslant \frac{\sqrt{5}}{2}$, 解得 $|\lambda| \leqslant 2$.
+故 $\lambda$ 的最大值为 2 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 已知 $\alpha, \beta, \gamma>0$, 且
+$$
+\frac{1}{\alpha^2+1}+\frac{1}{\beta^2+1}+\frac{1}{\gamma^2+1}=1,
+$$
+求函数 $u=\frac{\alpha x y+\beta y z+\gamma z x}{x^2+y^2+z^2}$ 的最大值.
+%%<SOLUTION>%%
+解:对于任意正实数 $a, b, c$, 有
+$$
+\begin{aligned}
+& x^2+y^2+z^2 \\
+= & \frac{b}{b+c} x^2+\frac{c}{b+c} x^2+\frac{a}{a+c} y^2+\frac{c}{a+c} y^2+\frac{a}{a+b} z^2+\frac{b}{a+b} z^2 \\
+= & \left(\frac{b}{b+c} x^2+\frac{a}{a+c} y^2\right)+\left(\frac{c}{c+a} y^2+\frac{b}{b+a} z^2\right)+\left(\frac{a}{a+b} z^2+\frac{c}{c+b} x^2\right) \\
+\geqslant & 2\left(\sqrt{\frac{a b}{(a+c)(b+c)}} x y+\sqrt{\frac{b c}{(b+a)(c+a)}} y z+\sqrt{\frac{c a}{(c+b)(a+b)}} z x\right) \\
+= & 2 \sqrt{\frac{a b c}{(a+b)(b+c)(c+a)}}\left(\sqrt{\frac{a+b}{c}} x y+\sqrt{\frac{b+c}{a}} y z+\sqrt{\frac{c+a}{b}} z x\right) \\
+& \left\{\begin{array}{l}
+\sqrt{\frac{b}{b+c}} x=\sqrt{\frac{a}{a+c}} y, \\
+\sqrt{\frac{c}{c+a}} y=\sqrt{\frac{b}{b+a}} z, \\
+\sqrt{\frac{a}{a+b}} z=\sqrt{\frac{c}{c+b}} x,
+\end{array}\right.
+\end{aligned}
+$$
+当且仅当
+$$
+\left\{\begin{array}{l}
+\sqrt{\frac{b}{b+c} x}=\sqrt{\frac{a}{a+c} y,} \\
+\sqrt{\frac{c}{c+a} y}=\sqrt{\frac{b}{b+a}} z, \\
+\sqrt{\frac{a}{a+b} z}=\sqrt{\frac{c}{c+b}} x,
+\end{array}\right.
+$$
+亦即 $\frac{x}{\sqrt{a b+a c}}=\frac{y}{\sqrt{b a+b c}}=\frac{z}{\sqrt{c a+c b}}$ 时, 上式取等号.
+$$
+\begin{array}{r}
+\text { 令 } \alpha=\sqrt{\frac{a+b}{c}}, \beta=\sqrt{\frac{b+c}{a}}, \gamma=\sqrt{\frac{c+a}{b}}, \text { 则 } \\
+\frac{1}{\alpha^2+1}+\frac{1}{\beta^2+1}+\frac{1}{\gamma^2+1}=1,
+\end{array}
+$$
+且
+$$
+\begin{gathered}
+x^2+y^2+z^2 \geqslant \frac{2}{\alpha \beta \gamma}(\alpha x y+\beta y z+\gamma z x), \\
+\frac{\alpha x y+\beta y z+\gamma z x}{x^2+y^2+z^2} \leqslant \frac{\alpha \beta \gamma}{2},
+\end{gathered}
+$$
+所以, $u$ 的最大值为 $\frac{\alpha \beta \gamma}{2}$.
+%%<REMARK>%%
+注:(1) 如果 $\frac{1}{\alpha^2+k}+\frac{1}{\beta^2+k}+\frac{1}{\gamma^2+k}=\frac{1}{k}(\alpha, \beta, \gamma, k>0)$, 那么 $u= \frac{\alpha x y+\beta y z+\gamma z x}{x^2+y^2+z^2}$ 有最大值 $\frac{\alpha \beta y}{2 k}$.
+这是因为
+$$
+\begin{gathered}
+\frac{1}{\left(\frac{\alpha}{\sqrt{k}}\right)^2+1}+\frac{1}{\left(\frac{\beta}{\sqrt{k}}\right)^2+1}+\frac{1}{\left(\frac{\gamma}{\sqrt{k}}\right)^2+1}=1, \\
+\frac{\frac{\alpha}{\sqrt{k}} x y+\frac{\beta}{\sqrt{k}} y z+\frac{\gamma}{\sqrt{k}} z x}{x^2+y^2+z^2} \leqslant \frac{\frac{\alpha}{\sqrt{k}} \cdot \frac{\beta}{\sqrt{k}} \cdot \frac{\gamma}{\sqrt{k}}}{2}, \\
+\frac{\alpha x y+\beta y z+\gamma z x}{x^2+y^2+z^2} \leqslant \frac{\alpha \beta \gamma}{2 k} .
+\end{gathered}
+$$
+化简整理后 $\quad \frac{\alpha x y+\beta y z+\gamma z x}{x^2+y^2+z^2} \leqslant \frac{\alpha \beta \gamma}{2 k}$.
+(2) 若 $\frac{k_1 k_2}{\alpha^2+k_1 k_2 k}+\frac{k_2 k_3}{\beta^2+k_2 k_3 k}+\frac{k_1 k_3}{\gamma^2+k_1 k_3 k}=\frac{1}{k}\left(\alpha, \beta, \gamma, k_1, k_2, k_3\right.$, $k>0)$, 则函数 $\frac{\alpha x y+\beta y z+\gamma z x}{x^2+y^2+z^2}$ 有最大值 $\frac{\alpha \beta \gamma}{2 k_1 k_2 k_3 k}$.
+事实上, 只须令 $x^{\prime}=\sqrt{k_1} x, y^{\prime}=\sqrt{k_2} y, z^{\prime}=\sqrt{k_3} z, \alpha^{\prime}=\frac{\alpha}{\sqrt{k_1 k_2}}$, $\beta^{\prime}=\frac{\beta}{\sqrt{k_2 k_3}}, \gamma^{\prime}=\frac{\gamma}{\sqrt{k_1 k_3}}$ 即可化归为 (1) 的情形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $a$ 为实数, 求函数 $f(x)=|\sin x(a+\cos x)|(x \in \mathbf{R})$ 的最大值.
+%%<SOLUTION>%%
+解:设 $\alpha$ 为参数, 使得
+$$
+\begin{aligned}
+f^2(x) & =\frac{1}{\alpha^2} \sin ^2 x(a \alpha+\alpha \cos x)^2 \leqslant \frac{1}{\alpha^2} \sin ^2 x\left(\alpha^2+\cos ^2 x\right)\left(a^2+\alpha^2\right) \\
+& \leqslant \frac{1}{\alpha^2}\left(\frac{\sin ^2 x+\alpha^2+\cos ^2 x}{2}\right)^2\left(a^2+\alpha^2\right)=\frac{1}{\alpha^2}\left(\frac{\alpha^2+1}{2}\right)^2\left(a^2+\alpha^2\right),
+\end{aligned}
+$$
+当且仅当 $\alpha^2=a \cos x, \sin ^2 x=\alpha^2+\cos ^2 x$ 时等号成立.
+消除 $x$, 得 $2 \alpha^4+a^2 \alpha^2-a^2=0$.
+解方程, 得 $\alpha^2=\frac{1}{4}\left(\sqrt{a^4+8 a^2}-a^2\right)$, 从而 $\cos x=\frac{1}{4}\left(\sqrt{a^2+8}-a\right)$.
+所以当 $x=2 k \pi \pm \arccos \left[\frac{1}{4}\left(\sqrt{a^2+8}-a\right)\right](k \in \mathbf{Z})$ 时,
+$$
+f(x)_{\max }=\frac{\sqrt{a^4+8 a^2}-a^2+4}{8} \cdot \sqrt{\frac{\sqrt{a^4+8 a^2}+a^2+2}{2}} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $x, y, z \in \mathbf{R}^{+}$, 且 $x^4+y^4+z^4=1$, 求
+$$
+f(x, y, z)=\frac{x^3}{1-x^8}+\frac{y^3}{1-y^8}+\frac{z^3}{1-z^8}
+$$
+的最小值.
+%%<SOLUTION>%%
+解:将原式变形为
+$$
+f(x, y, z)=\frac{x^4}{x\left(1-x^8\right)}+\frac{y^4}{y\left(1-y^8\right)}+\frac{z^4}{z\left(1-z^8\right)} .
+$$
+对于 $w \in(0,1)$, 令 $\phi(w)=w\left(1-w^8\right)$, 先求 $\phi(w)$ 的最大值.
+选一参数 $a$, 并利用 $G_9 \leqslant A_9$, 得
+$$
+\begin{aligned}
+a(\phi(w))^8 & =a w^8\left(1-w^8\right)^8 \\
+& \leqslant\left[\frac{1}{9}\left(a w^8+8\left(1-w^8\right)\right)\right]^9 \\
+& =\left[\frac{1}{9}\left(8+(a-8) w^8\right)\right]^9 .
+\end{aligned}
+$$
+取 $a=8$, 得
+$$
+8(\phi(w))^8 \leqslant\left(\frac{8}{9}\right)^9
+$$
+由于 $\phi(w)>0$, 从而
+$$
+\phi(w) \leqslant \frac{8}{\sqrt[4]{3^9}}
+$$
+于是
+$$
+f(x, y, z) \geqslant \frac{x^4+y^4+z^4}{8} \cdot \sqrt[4]{3^9}=\frac{9}{8} \sqrt[4]{3},
+$$
+当 $x=y=z=\frac{1}{\sqrt[4]{3}}$ 时, 等号成立.
+故 $f(x, y, z)$ 的最小值为 $\frac{9}{8} \sqrt[4]{3}$.
+%%<REMARK>%%
+注:这里选择 $a=8$, 是为了消除变量 $w^8$, 使得右边为常数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 求最小的正整数 $k$, 使得对满足 $0 \leqslant a \leqslant 1$ 的所有 $a$ 和所有正整数 $n$, 都有不等式
+$$
+a^k(1-a)^n \leqslant \frac{1}{(n+1)^3} .
+$$
+%%<SOLUTION>%%
+解:先设法消除参数 $a$, 然后求 $k$ 的最小值.
+由平均值不等式, 得
+$$
+\begin{gathered}
+\sqrt[n+k]{a^k\left[\frac{k}{n}(1-a)\right]^n} \leqslant \frac{k a+n\left[\frac{k}{n}(1-a)\right]}{k+n}=\frac{k}{k+n}, \\
+a^k(1-a)^n \leqslant \frac{k^k n^n}{(n+k)^{n+k}},
+\end{gathered}
+$$
+所以
+$$
+a^k(1-a)^n \leqslant \frac{k^k n^n}{(n+k)^{n+k}}
+$$
+当且仅当 $a=\frac{k(1-a)}{n}$, 即 $a=\frac{k}{n+k}$ 时, 等号成立.
+于是我们要求出最小的正整数 $k$, 使得对任何正整数 $n$ 都有
+$$
+\frac{k^k n^n}{(n+k)^{n+k}}<\frac{1}{(1+n)^3} \text {. }
+$$
+当 $k=1$ 时,取 $n=1$, 上式为 $\frac{1}{2^2}<\frac{1}{2^3}$, 矛盾.
+当 $k=2$ 时,取 $n=1$, 则 $\frac{4}{27}<\frac{1}{8}$, 亦矛盾.
+当 $k=3$ 时,取 $n=3$, 则 $\frac{1}{64}<\frac{1}{64}$, 矛盾.
+因此 $k \geqslant 4$. 下面证明 $k=4$ 时命题成立, 即
+$$
+4^4 n^n(n+1)^3<(n+4)^{n+4} \text {. }
+$$
+当 $n=1,2,3$ 时,容易证明成立.
+当 $n \geqslant 4$ 时, 再由平均值不等式, 得
+$$
+\begin{aligned}
+\sqrt[n+4]{4^4 n^n(n+1)^3} & =\sqrt[n+4]{16(2 n)(2 n)(2 n)(2 n) n^{n-4}(n+1)^3} \\
+& \leqslant \frac{16+8 n+n(n-4)+3(n+1)}{n+4} \\
+& =\frac{n^2+7 n+19}{n+4}<\frac{n^2+8 n+16}{n+4}=n+4,
+\end{aligned}
+$$
+故 $k$ 的最小值为 4 .
+%%<REMARK>%%
+注:在第一次利用平均值不等式时, 引进参数 $\alpha=\frac{k}{n}$, 消除 $a$, 具有很强的技巧性.
+%%PROBLEM_END%%
+
+

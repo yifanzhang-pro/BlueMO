@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题3 求所有满足方程:\n$$\nf(x)+f(y)+g(x)-g(y)=\\sin x+\\cos y, x, y \\in \\mathbf{R}\n$$\n的函数 $f(x)$ 与 $g(x)$.",
+    "solution": "令 $x=y$ 代入题设方程, 得 $f(x)=\\frac{\\sin x+\\cos x}{2}$. 于是 $\\frac{\\sin x+\\cos x}{2}+ \\frac{\\sin y+\\cos y}{2}+g(x)-g(y)=\\sin x+\\cos y$, 即 $g(x)-\\frac{1}{2} \\sin x+\\frac{1}{2} \\cos x= g(y)-\\frac{1}{2} \\sin y+\\frac{1}{2} \\cos y$. 令 $h(x)=g(x)-\\frac{1}{2} \\sin x+\\frac{1}{2} \\cos x$, 那么对任意的 $x, y \\in \\mathbf{R}$, 都有 $h(x) \\equiv h(y)$. 因此, $h(x)$ 恒等于一个常数.\n所以满足题设方程的函数是 $f(x)=\\frac{\\sin x+\\cos x}{2}, g(x)=\\frac{\\sin x-\\cos x}{2}+C$, 其中 $C$ 为常数.",
+    "remark": "",
+    "figures": []
+}

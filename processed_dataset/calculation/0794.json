@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题18. 若函数 $f(1+\\cos x)=\\cos ^2 x$, 则 $f(1+\\cos x)$ 与 $f(1-\\cos x)$ 的大小关系是",
+    "solution": "$f(1+\\cos x)=f(1-\\cos x)$. 设 $1+\\cos x=t$, 则 $\\cos x=t-1$, $f(t)=(t-1)^2$, 所以 $f(1-\\cos x)=(1-\\cos x-1)^2=\\cos ^2 x$. 故 $f(1+\\cos x)= f(1-\\cos x)$.",
+    "remark": "",
+    "figures": []
+}

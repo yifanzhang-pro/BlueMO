@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设 $A 、 B 、 C 、 D$ 是一条直线上依次排列的四个不同的点, 分别以 $A C 、 B D$ 为直径的圆相交于 $X$ 和 $Y$, 直线 $X Y$ 交 $B C$ 于 $Z$. 若 $P$ 为 $X Y$ 上开于 $Z$ 的一点, 直线 $C P$ 与以 $A C$ 为直径的圆相交于 $C$ 和 $M$, 直线 $B P$ 与以 $B D$ 为直径的圆相交于 $B$ 和 $N$. 试证: $A M 、 D N$ 和 $X Y$ 三线共点.",
+    "solution": "证明: 设 $A M$ 交直线 $X Y$ 于点 $Q$, 而 $D N$ 交直线 $X Y$ 于点 $Q^{\\prime}$ (如图(<FilePath:./images/volume7/figures/fig-c5a3.png>), 注意: 这里只画出了点 $P$ 在线段 $X Y$ 上的情形, 其他情况可类似证明). 需证: $Q$ 与 $Q^{\\prime}$ 重合.\n由于 $X Y$ 为两圆的根轴, 故 $X Y \\perp A D$, 而 $A C$ 为直径, 所以 $\\angle Q M C= \\angle P Z C=90^{\\circ}$. 进而, $Q 、 M 、 Z 、 C$ 四点共圆.\n同理 $Q^{\\prime} 、 N 、 Z 、 B$ 四点共圆.\n这样, 利用圆幂定理, 可知 $Q P \\cdot P Z=M P \\cdot P C=X P \\cdot P Y, Q^{\\prime} P \\cdot P Z= N P \\cdot P B=X P \\cdot P Y$. 所以, $Q P=Q^{\\prime} P$. 而 $Q$ 与 $Q^{\\prime}$ 都在直线 $X Y$ 上且在直线 $A D$ 同侧, 从而, $Q$ 与 $Q^{\\prime}$ 重合.\n命题获证.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5a3.png"
+    ]
+}

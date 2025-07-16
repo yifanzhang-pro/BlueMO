@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题26. 求证: $1 \\leqslant \\sqrt{|\\sin \\alpha|}+\\sqrt{|\\cos \\alpha|} \\leqslant 2^{\\frac{3}{4}}$.",
+    "solution": "原不等式等价于 $1 \\leqslant|\\sin \\alpha|+|\\cos \\alpha|+2 \\sqrt{|\\sin \\alpha \\cos \\alpha|} \\leqslant 2 \\sqrt{2}$, 因为 $(|\\sin \\alpha|+|\\cos \\alpha|)^2=\\sin ^2 \\alpha+\\cos ^2 \\alpha+2|\\sin \\alpha \\cos \\alpha|=1+|\\sin 2 \\alpha| \\leqslant 2$, 所以 $1 \\leqslant|\\sin \\alpha|+|\\cos \\alpha| \\leqslant \\sqrt{2}$, 又 $2 \\sqrt{|\\sin \\alpha \\cos \\alpha|}=\\sqrt{2|\\sin 2 \\alpha|} \\leqslant \\sqrt{2}$, 故原不等式显然成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题19 若方程 $\\sin x=a$ 在 $\\left[\\frac{2 \\pi}{3}, \\frac{5 \\pi}{3}\\right]$ 中恰有两个不同的解, 则 $a$ 的取值范围是",
+    "solution": "$a \\in\\left(-1,-\\frac{1}{2}\\right]$.",
+    "remark": "",
+    "figures": []
+}

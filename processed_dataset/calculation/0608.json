@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 若 $x_1=a>2, x_{n+1}=\\frac{x_n^2}{2\\left(x_n-1\\right)}(n=1,2, \\cdots)$, 求 $\\left\\{x_n\\right\\}$ 的通项.",
+    "solution": "设 $f(x)=\\frac{x^2}{2(x-1)}=\\frac{1}{1-\\left(1-\\frac{2}{x}\\right)^2}$. 取 $\\varphi(x)=1-\\frac{2}{x}, g(x)=x^2$, 则 $f(x)=\\varphi^{-1}(g(\\varphi(x)))$, 于是 $f^{(n)}(x)=\\frac{2}{1-\\left(1-\\frac{2}{x}\\right)^{2^n}}$. 取 $x_1=a$, 则 $x_2=f\\left(x_1\\right), \\cdots, x_{n+1}=f\\left(x_n\\right)=f^{(n)}\\left(x_1\\right)$, 故 $x_{n+1}=\\frac{2}{1-\\left(1-\\frac{2}{a}\\right)^{2^n}}$.",
+    "remark": "",
+    "figures": []
+}

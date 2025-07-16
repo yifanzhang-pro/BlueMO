@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例6. 证明戈林伯格图 (如图(<FilePath:./images/volume12/figures/fig-c7i8.png>))无哈密顿圈.",
+    "solution": "证明:设这个图含哈密顿圈.\n因为它只有 5 边形、8 边形和 9 边形, 根据定理四有\n$$\n3\\left(f_5^{\\prime}-f_5^{\\prime \\prime}\\right)+6\\left(f_8^{\\prime}-f_8^{\\prime \\prime}\\right)+7\\left(f_9^{\\prime}-f_9^{\\prime \\prime}\\right)=0 .\n$$\n由此得 $7\\left(f_9^{\\prime}-f_9^{\\prime \\prime}\\right) \\equiv 0(\\bmod 3)$.\n这与 $f_9^{\\prime}+f_9^{\\prime \\prime}=1$ 矛盾.\n故戈林伯格图无哈密顿圈.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c7i8.png"
+    ]
+}

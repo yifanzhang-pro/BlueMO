@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题14. 设 $x_1, x_2 \\in \\mathbf{R}$, 且 $x_1^2+x_2^2 \\leqslant 1$. 求证: 对任意 $y_1, y_2 \\in \\mathbf{R}$, 有 $\\left(x_1 y_1+\\right. \\left.x_2 y_2-1\\right)^2 \\geqslant\\left(x_1^2+x_2^2-1\\right)\\left(y_1^2+y_2^2-1\\right)$.",
+    "solution": "若 $y_1^2+y_2^2-1 \\geqslant 0$, 不等式显然成立.\n若 $y_1^2+y_2^2-1<0$, 则由平均值不等式, 得 $x_1 y_1 \\leqslant \\frac{x_1^2+y_1^2}{2}, x_2 y_2 \\leqslant \\frac{x_2^2+y_2^2}{2}$. 则 $x_1 y_1+x_2 y_2 \\leqslant \\frac{1}{2}\\left(x_1^2+x_2^2+y_1^2\\right. \\left.+y_2^2\\right) \\leqslant 1$. 因为 $1-x_1 y_1-x_2 y_2 \\geqslant 1-\\frac{x_1^2+y_1^2}{2}-\\frac{x_2^2+y_2^2}{2}=\\frac{1-x_1^2-x_2^2+1-y_1^2-y_2^2}{2} >0$, 所以, $\\left(1-x_1 y_1-x_2 y_2\\right)^2 \\geqslant\\left(\\frac{1-x_1^2-x_2^2+1-y_1^2-y_2^2}{2}\\right)^2 \\geqslant\\left(x_1^2+x_2^2-1\\right)$  $\\left(y_1^2+y_2^2-1\\right)$.",
+    "remark": "",
+    "figures": []
+}

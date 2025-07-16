@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 设 $z=\\cos \\frac{\\pi}{4}+\\mathrm{i} \\sin \\frac{\\pi}{4}$, 若 $z^n=\\bar{z}\\left(n \\in \\mathbf{N}^*\\right)$, 则 $n$ 的最小值是 ( ).\n(A) 7\n(B) 8\n(C) 9\n(D) 10",
+    "solution": "A.\n由 $z^n=\\bar{z}$, 知\n$$\nz^{n+1}==z \\bar{z}=1, z^{n+1}=\\cos \\frac{(n+1) \\pi}{4}+\\mathrm{i} \\sin \\frac{(n+1) \\pi}{4}=1,\n$$\n所以得\n$$\n\\begin{aligned}\n& \\cos \\frac{(n+1) \\pi}{4}=1, \\text { 且 } i \\sin \\frac{(n+1) \\pi}{4}=0, \\\\\n& \\frac{n+1}{4} \\pi=2 k \\pi \\text { 且 } \\frac{n+1}{4} \\pi=k \\pi,(k \\in \\mathbf{Z})\n\\end{aligned}\n$$\n于是 $n=8 k-1$, 即 $n$ 的最小值是 7 .",
+    "remark": "",
+    "figures": []
+}

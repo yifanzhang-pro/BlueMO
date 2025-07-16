@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 已知实数 $x 、 y$ 满足 $x^2+y^2-8 x+6 y+21 \\leqslant 0$, 求证:\n$$\n2 \\sqrt{3} \\leqslant \\sqrt{x^2+y^2+3} \\leqslant 2 \\sqrt{13} .\n$$",
+    "solution": "原条件不等式可化为 $(x-4)^2+(y+3)^2 \\leqslant 4$, 设 $x=4+\\gamma \\cos \\theta, y= -3+\\gamma \\sin \\theta, \\gamma \\in[0,2], \\theta \\in[0,2 \\pi]$, 于是 $\\sqrt{x^2+y^2+3}= \\sqrt{25+8 \\gamma \\cos \\theta}-6 \\gamma \\sin \\theta+\\gamma^2+3=\\sqrt{\\gamma^2+10 \\gamma \\cos (\\theta+\\varphi)+28}$, 其中 $\\cos \\varphi= \\frac{4}{5}, \\sin \\varphi=\\frac{3}{5}$. 因为 $|\\cos (\\theta+\\varphi)| \\leqslant 1$, 所以 $\\sqrt{\\gamma^2-10 \\gamma+28} \\leqslant \\sqrt{\\gamma^2+10 \\gamma \\cos (\\overline{\\theta+\\varphi})+28} \\leqslant \\sqrt{\\gamma^2+10 \\gamma+28}$. 当 $\\gamma \\in[0,2]$ 时, $\\left(\\sqrt{\\gamma^2-10 \\gamma+28}\\right)_{\\min }=2 \\sqrt{3},\\left(\\sqrt{\\gamma^2+10 \\gamma+28}\\right)_{\\max }=2 \\sqrt{13}$. 故原不等式成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题10 若抛物线 $y=x^2+a x+2$ 与连接两点 $M(0,1) 、 N(2,3)$ 的线段 (包括 $M 、 N$ 两点)有两个相异的交点, 求 $a$ 的取值范围.",
+    "solution": "易知过点 $(0,1),(2,3)$ 的直线方程为 $y=x+1$, 而抛物线 $y= x^2+a x+2$ 与线段 $M N$ 有两个交点就是方程 $x^2+a x+2=x+1$. 在区间 $[0$, $2]$ 上有两个不等实根.\n令 $f(x)=x^2+(a-1) x+1$, 则 $\\left\\{\\begin{array}{l}0<-\\frac{a-1}{2}<2, \\\\ \\Delta=(a-1)^2-4>0, \\text { 解不等式组, 得 } a \\text { 的范围是 }-\\frac{3}{2} \\leqslant a<-1 . \\\\ f(0)=1 \\geqslant 0, \\\\ f(2)=2 a+3 \\geqslant 0 .\\end{array}\\right.$",
+    "remark": "",
+    "figures": []
+}

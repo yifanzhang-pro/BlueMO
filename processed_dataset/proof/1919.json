@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 如图(<FilePath:./images/volume7/figures/fig-c8p12.png>), $A D$ 为 $\\triangle A B C$ 的内角平分线, $\\angle A D C=60^{\\circ}$, 点 $M$ 在 $A D$ 上, 满足 $D M=D B$, 射线 $B M 、 C M$ 交 $A C 、 A B$ 于点 $E 、 F$. 证明: $D F \\perp E F$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c8a12.png>), 在 $A B$ 上取 $A S=A C$, 连结 $S M, D S$, 则由 $A D$ 平分 $\\angle B A C$ 知, $\\triangle A S D$ 与 $\\triangle A C D$ 关于 $A D$ 对称, 即有 $\\angle M D S= \\angle M D C=\\angle A D C=60^{\\circ}$, 亦即 $\\angle B D S=60^{\\circ}$. 又由 $D M=D B$, 知 $\\angle D S B=\\angle D S M=\\angle D C M$. 于是 $\\angle F C B+\\angle A C B=\\angle D C M+\\angle A C B=\\angle D S B+\\angle A S D= 180^{\\circ}$, 从而 $\\sin \\angle F C B=\\sin \\angle A C B$.\n由 $\\frac{F B}{F C}=\\frac{\\sin \\angle F C B}{\\sin \\angle F B C}=\\frac{\\sin \\angle A C B}{\\sin \\angle A B C}=\\frac{A B}{A C}=\\frac{B D}{D C}$, 知 $F D$ 平分 $\\angle B F C$.\n设直线 $F E$ 与直线 $B C$ 相交于点 $G$ (因角平分线 $A D$ 交 $B C$ 成 $60^{\\circ}$ 角, 必相交), 则由完全四边形对角线调和分割的性质, 知 $D 、 G$ 调和分割 $B C$, 即 $B$ 、 $C 、 D 、 G$ 为调和点列, 亦即 $F B 、 F C 、 F D 、 F G$ 为调和线束.\n而 $F D$ 平分 $\\angle B F C$, 则由性质 5 知 $D F \\perp E F$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8p12.png",
+        "./images/volume7/figures/fig-c8a12.png"
+    ]
+}

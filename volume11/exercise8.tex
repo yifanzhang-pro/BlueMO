@@ -1,0 +1,130 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 运动会开了 $n(>1)$ 天, 共发出 $m$ 个奖牌, 第 1 天发出 1 个加上余下奖牌的 $\frac{1}{7}$, 第 2 天发出 2 个加上余下奖牌的 $\frac{1}{7}$, 如此继续下去, 最后第 $n$ 天刚好发出 $n$ 个奖牌恰无剩余.
+问运动会共开了几天? 共发出多少个奖牌? 
+%%<SOLUTION>%%
+设第 $k$ 天共发出 $a_k$ 个奖牌.
+则 $a_1=1+\frac{1}{7}(m-1)=\frac{1}{7}(m+6), a_k=k+ \frac{1}{7}\left(m-a_1-a_2-\cdots-a_{k-1}-k\right), a_{k+1}=k+1+\frac{1}{7}\left[m-a_1-a_2-\cdots-a_k-(k+1)\right]$, 两式相减得 $a_{k+1}-a_k=1+\frac{1}{7}\left(-a_k-1\right)$, 即 $a_{k+1}-6=\frac{6}{7}\left(a_k-6\right)$, 所以 $a_k-6= \left(a_1-6\right)\left(\frac{6}{7}\right)^{k-1}=\frac{1}{7}\left(\frac{6}{7}\right)^{k-1}(m-36)$, 于是 $m=a_1+a_2+\cdots+a_n=\frac{1}{7}(m-$ 36) $\left[1+\frac{6}{7}+\left(\frac{6}{7}\right)^2+\cdots+\left(\frac{6}{7}\right)^{n-1}\right]+6 n=(m-36)\left[1-\left(\frac{6}{7}\right)^n\right]+6 n$, 解出 $m$ 得 $m=\frac{7^n}{6^{n-1}}(n-6)+36$. 因 $7^n$ 与 $6^{n-1}$ 互素, 且 $m, n$ 为正整数, 所以 $6^{n-1} \mid n-6$. 又 $n>1$ 时易证 $6^{n-1}>|n-6|$. 故只能 $n=6$, 从而 $m=36$. 即运动会共开了 6 天, 一共发出 36 个奖牌.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $n \geqslant 2$ 为正整数, 问存在多少个 $\{1,2, \cdots, n\}$ 的排列 $\left\{a_1, a_2, \cdots, a_n\right\}$ 满足 $i$ 整除 $a_i-a_{i+1}(i=1,2, \cdots, n-1)$, 并求出一切这种排列.
+%%<SOLUTION>%%
+将符合题目条件的排列 $\left\{a_1, a_2, \cdots, a_n\right\}$ 称为长度等于 $n$ 的好排列, 并设其个数为 $S_n$. 因为 $n-1 \mid a_{n-1}-a_n$ 又 $\left|a_{n-1}-a_n\right| \leqslant n-1$, 故只有 $\left|a_{n-1}-a_n\right|=n-1$,
+所以 $\left(a_{n-1}, a_n\right)$ 只可能为 $(1, n)$ 或 $(n, 1)$. 当 $\left(a_{n-1}, a_n\right)=(1, n)$ 时, $\left(a_1, a_2, \cdots\right.$, $\left.a_{n-1}\right)$ 是长度等于 $n-1$ 的好排列; 当 $\left(a_{n-1}, a_n\right)=(n, 1)$ 时, $\left(a_1-1, a_2-1, \cdots\right.$, $\left.a_{n-1}-1\right)$ 是长度为 $n-1$ 的好排列, 可见每一个长度为 $n$ 的好排列对应于一个长度为 $n-1$ 的好排列, 反之亦然, 上述对应是一一对应, 所以 $S_n=S_{n-1}$. 而 $S_2=2$ (因 $\{1,2\}$ 的好排列有 2 个: $(1,2)$ 和 $(2,1))$, 故对一切 $n \in \mathbf{N}_{+}, n \geqslant 2$ 符合条件的排列个数都为 $S_n=2$. 当 $n=2 m$ 时长为 $2 m$ 的好排列有下列 2 个: $(m, m+1, m-1$, $m+2, m-2, m+3, \cdots, 2,2 m-1,1,2 m)$ 与 $(m+1, m, m+2, m-1, m+3$, $m-2, \cdots, 2 m-1,2,2 m, 1)$. 当 $n=2 m+1$ 时长为 $2 m+1$ 的好排列有下列 2 个: $(m+1, m, m+2, m-1, m+3, m-2, \cdots, 2,2 m, 1,2 m+1)$ 与 $(m+1, m+ 2, m, m+3, m-1, m+4, \cdots, 2 m, 2,2 m+1,1)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 各项的值都等于 0 或 1 的数列称为 0,1 数列, 设 $A$ 是一个有限的 0,1 数列, $f(A)$ 表示在 $A$ 中把每个 1 都改为 0,1 , 每个 0 都改为 1,0 所得到的 0,1 数列, 例如
+$$
+f((1,0,0,1))=(0,1,1,0,1,0,0,1)
+$$
+试问 $f^{(n)}((1))$ 中连续两项是 0,0 的数对有多少个? 这里 $f^{(1)}(A)= f(A), f^{(k)}(A)=f\left(f^{(k-1)}(A)\right), k=2,3, \cdots$.
+%%<SOLUTION>%%
+记 $f^{(n)}((1))$ 为 $A_n$, 且 $A_n$ 中连续两项是 0,0 的数对个数为 $b_n$, 连续两项是 0,1 的数对个数记为 $c_n$. 依题意, $A_n$ 中的 0,0 数对仅能由 $A_{n-1}$ 中的 0,1 数对经变换 $f$ 而得到, 故 $b_n=c_{n-1}$. 又 $A_{n-1}$ 中的 0,1 数对, 必须由 $A_{n-2}$ 中的 1 或 0 , 0 数对经变换 $f$ 而得到.
+因为 $A_{n-2}$ 中共 $2^{n-2}$ 项, 其中恰有一半的项是 1 , 并且恰有 $b_{n-2}$ 个 0,0 数对, 所以 $b_n=c_{n-1}=2^{n-3}+b_{n-2}$, 逐步递推得 $b_n=2^{n-3}+ 2^{n-5}+\cdots+\left\{\begin{array}{l}2^0+b_1, 2 \times n, \\ 2^1+b_2, 2 \mid n \text {. }\end{array}\right.$ 其中 $b_1=0, b_2=1$. 由此可得 $b_n=\frac{1}{3}\left[2^{n-1}+(-1)^n\right]$, 即 $f^{(n)}((1))$ 中连续两项为 0,0 的数对的个数为 $b_n=\frac{1}{3}\left[2^{n-1}+(-1)^n\right]$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设有 2009 个人站成一排, 从第 1 名开始 1 至 3 报数, 全部报完数后, 凡是报到 3 的倍数的人就退出队伍, 其余的人向前靠拢站成新的一排, 再按此规则继续进行, 直到经过 $p$ 轮报数后只剩下 3 人为止, 试问最后剩下的 3 人最初在什么位置?
+%%<SOLUTION>%%
+$p$ 轮报数后只剩下的 3 人中前两人最初的位置显然是原来队伍中的第 1 和第 2 位置.
+设第 3 人的最初位置是第 $a_{p+1}$ 个位置,则第 1 次报数后他站到第 $a_p$ 个位置上, $\cdots \cdots$, 第 $p$ 次报数后他站在第 $a_1$ 个位置上, 显然 $a_1=3$. 由于 $a_2, a_3, \cdots, a_{p+1}$ 都没有被淘汰, 可见这些数都不是 3 的倍数,且由 $a_{p+1}$ 到 $a_p$ 变动的数目 $a_{p+1}-a_p$ 恰等于从 1 到 $a_{p+1}$ 内 3 的倍数的个数, 即 $a_{p+1}-a_p= \frac{1}{3}\left(a_{p+1}-r\right)(r$ 等于 1 或 2$)$, 故 $a_{p+1}=\frac{3 a_p-r}{2}$, 因 $a_p, a_{p+1}$ 均为正整数,所以当 $a_p$ 为奇数时 $r=1$, 当 $a_p$ 为偶数时 $r=2$. 由此可得 $a_1=3, a_{p+1}=\left[\frac{3 a_p-1}{2}\right] (p=1,2, \cdots) \cdots$ (1), 并且 $a_{p+1} \leqslant 2009<a_{p+2}$. 按 (1) 式可逐次算出 $a_2=$
+$$
+\begin{aligned}
+& {\left[\frac{3 \times 3-1}{2}\right]=4, a_3=\left[\frac{3 \times 4-1}{2}\right]=5, a_4=\left[\frac{3 \times 5-1}{2}\right]=7, a_5=} \\
+& {\left[\frac{3 \times 7-1}{2}\right]=10, a_6=\left[\frac{3 \times 10-1}{2}\right]=14, a_7=\left[\frac{3 \times 14-1}{2}\right]=20, a_8=} \\
+& {\left[\frac{3 \times 20-1}{2}\right]=29, a_9=\left[\frac{3 \times 29-1}{2}\right]=43, a_{10}=\left[\frac{3 \times 43-1}{2}\right]=64, a_{11}=}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& {\left[\frac{3 \times 64-1}{2}\right]=95, a_{12}=\left[\frac{3 \times 95-1}{2}\right]=142, a_{13}=\left[\frac{3 \times 142-1}{2}\right]=212,} \\
+& a_{14}=\left[\frac{3 \times 212-1}{2}\right]=317, a_{15}=\left[\frac{3 \times 317-1}{2}\right]=475, a_{16}= \\
+& {\left[\frac{3 \times 475-1}{2}\right]=712, a_{17}=\left[\frac{3 \times 712-1}{2}\right]=1067, a_{18}=\left[\frac{3 \times 1067-1}{2}\right]=} \\
+& 1600<2009, a_{19}=\left[\frac{3 \times 1600-1}{2}\right]=2399>2009 . \text { 综上可知,最后剩下 } 3 \text { 人 }
+\end{aligned}
+$$
+的最初位置是第 1 ,第 2 和第 1600 个位置.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 一副纸牌共 52 张, 其中 "方块"、"梅花"、"红心"、"黑桃"每种花色的牌各 13 张, 标号依次是 $2,3, \cdots, 10, \mathrm{~J}, \mathrm{Q}, \mathrm{K}, \mathrm{A}$, 其中相同花色、相邻标号的两张牌称为 "同花顺牌",并且 $A$ 与 2 也算顺牌 (即 $A$ 可当成 1 使用). 试确定, 从这副牌中取出 13 张牌, 使每种标号的牌都出现, 并且不含"同花顺牌"的取牌方法数.
+%%<SOLUTION>%%
+将一个圆盘分成 13 个相等的扇形, 每个扇形依次代表标号为 2 , $3, \cdots, 10, \mathrm{~J}, \mathrm{Q}, \mathrm{K}, \mathrm{A}$ 的一张牌.
+而"方块"、"梅花"、"红心"、"黑桃"分别用 4 种不同颜色表示.
+于是原问题等价于下列问题中 $n=13, m=4$ 的情形: 把圆分成 $n(\geqslant 2)$ 个扇形,设用 $m(\geqslant 2)$ 种颜色给这些扇形染色, 每个扇形恰染一种颜色, 并且要求相邻的扇形的颜色互不相同, 设共有 $a_n(m)$ 种不同的染色方法,求 $a_n(m)$. 解答如下: 
+(1) 求初始值, $n=2$ 时,给 $S_1$ 染色有 $m$ 种方法,继而给 $S_2$ 染色只有 $m-1$ 种方法 (因 $S_1$ 与 $S_2$ 不同色), 所以 $a_2(m)=m(m-1$ ). 
+(2) 求递推关系,因 $S_1$ 有 $m$ 种染色方法, $S_2$ 有 $m-1$ 种染色方法, $\cdots, S_{n-1}$ 有 $m-1$ 种染色方法, $S_n$ 仍有 $m-1$ 种染色方法 (不保证 $S_n$ 与 $S_1$ 不同色), 这样共有 $m(m-1)^{n-1}$ 种染色方法, 但这 $m(m-1)^{n-1}$ 种染色方法可分为两类: 一类是 $S_n$ 与 $S_1$ 不同色, 此时的染色方法有 $a_n(m)$ 种, 另一类是 $S_n$ 与 $S_1$ 同色.
+则将 $S_n$ 与 $S_1$ 合并成一个扇形, 并注意此时 $S_{n-1}$ 与 $S_1$ 不同色, 故这时的染色方法有 $a_{n-1}(m)$ 种, 由加法原理得 $a_n(m)+a_{n-1}(m)=m(m-1)^{n-1}(n \geqslant 2) \cdots, \label{eq1}$ .
+(3) 求 $a_n(m)$, 令 $b_n(m)=\frac{a_n(m)}{(m-1)^n}$, 则由式\ref{eq1}可得 $b_n(m)+\frac{1}{m-1} b_{n-1}(m)= \frac{m}{m-1}$, 即 $b_n(m)-1=-\frac{1}{m-1}\left(b_{n-1}(m)-1\right)$, 所以 $b_n(m)-1=\left(b_2(m)-1\right)\cdot\left(-\frac{1}{m-1}\right)^{n-2}=\left[\frac{a_2(m)}{(m-1)^2}-1\right]\left(-\frac{1}{m-1}\right)^{n-2}=\left[\frac{m(m-1)}{(m-1)^2}-1\right]\left(-\frac{1}{m-1}\right)^{n-2} =(-1)^n \frac{1}{(m-1)^{n-1}}$ 所以 $a_n(m)=(m-1)^n b_n(m)=(m-1)^n+(-1)^n(m-1)$. 即共有 $(m-1)^n+(-1)^n(m-1)$ 种不同的染色方法.
+于是原问题中所求取牌方法数为 $a_{13}(4)=3^{13}-3$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 在小于 $10^4$ 的正整数中, 有多少个正整数 $n$, 使 $2^n-n^2$ 被 7 整除.
+%%<SOLUTION>%%
+设 $b_n=2^n, c_n=n^2, a_n=b_n-c_n=2^n-n^2$. 因为 $b_{n \vdash 3}=2^{n+3}=8$ ・ $2^n \equiv 2^n=b_n(\bmod 7), c_{n+7}=(n+7)^2 \equiv n^2=c_n(\bmod 7)$, 所以 $a_{n+21}=b_{n+21}- c_{n+21} \equiv b_n-c_n=a_n(\bmod 7)$, 而 $a_1, a_2, \cdots, a_{21}$ 中只有 6 项 $a_2=0, a_4=0$, $a_5=7, a_6=28, a_{10}=924, a_{15}=32543$ 被 7 整除.
+又 $9999=476 \times 21+3$
+且 $a_1, a_2, a_3$ 中只有 $a_2$ 被 7 整除.
+故小于 $10^4$ 的正整数中使 $2^n-n^2$ 被 7 整除的正整数 $n$ 的个数为 $476 \times 6+1=2857$ 个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 是否存在无穷多组不同的正整数 $a, b$ 使 $a^2+b^2+1$ 被 $a b$ 整除?
+%%<SOLUTION>%%
+类似于例 7 可以先用数学归纳法证明下列命题: 设 $a_1=1, a_2=2$, $a_{n+2}=3 a_{n+1}-a_n\left(n \in \mathbf{N}_{+}\right)$, 则 $3 a_n a_{n+1}=a_n^2+a_{n+1}^2+1\left(n \in \mathbf{N}_{+}\right)$(证明留给读者自己完成)然后令 $a=a_n, b=a_{n+1}\left(n \in \mathbf{N}_{+}\right)$便知存在无穷多对不同的正整数 $a, b$ 满足 $a^2+b^2+1$ 被 $a b$ 整除.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 是否存在无穷多对不同的三数组 $(a, b, c)$, 满足: $a, b, c$ 是成等差数列的正整数 $(a<b<c)$ 且 $a b+1, a c+1, b c+1$ 都为完全平方数.
+%%<SOLUTION>%%
+(解法一) 作递推数列 $a_1=1, a_2=4, a_{n+2}=4 a_{n+1}-a_n(n \geqslant 1), b_n= 2 a_{n+1}, c_n=a_{n+2}$, 则 $c_n-b_n=a_{n+2}-2 a_{n+1}=2 a_{n+1}-a_n=b_n-a_n$, 故 $a_n, b_n$, $c_n$ 成等差数列.
+其次, 我们证明 $a_n c_n+1=a_n a_{n+2}+1=a_{n+1}^2$. 事实上, $a_3= 4 a_2-a_1=15, a_1 c_1+1=a_1 a_3+1=15+1=16=a_2^2$. 设 $a_{n-1} c_{n-1}+1= a_{n-1} a_{n+1}+1=a_n^2$, 那么 $a_n c_n+1=a_n a_{n+2}+1=a_n\left(4 a_{n+1}-a_n\right)+1= 4 a_n a_{n+1}-a_n^2+1=4 a_n a_{n+1}-\left(a_{n-1} a_{n+1}+1\right)+1=a_{n+1}\left(4 a_n-a_{n-1}\right)=a_{n+1}^2$, 故对一切 $n \in \mathbf{N}_{+}, a_n c_n+1=a_{n+1}^2$. 并且 $a_n b_n+1=a_n \cdot 2 a_{n+1}+\left(a_{n+1}^2-\right. \left.a_n a_{n+2}\right)=a_{n+1}^2-a_n\left(a_{n+2}-2 a_{n+1}\right)=a_{n+1}^2-a_n\left(2 a_{n+1}-a_n\right)=\left(a_{n+1}-a_n\right)^2$, $b_n c_n+1=2 a_{n+1} a_{n+2}+1=2 a_{n+1} a_{n+2}+a_{n+1}^2-a_n a_{n+2}=2 a_{n+1} a_{n+2}+a_{n+1}^2- \left(4 a_{n+1}-a_{n+2}\right) a_{n+2}=\left(a_{n+2}-a_{n+1}\right)^2$. 故存在无穷多组三数组 $(a, b, c)=\left(a_n\right.$, $\left.b_n, c_n\right)$ 满足题目条件.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 是否存在无穷多对不同的三数组 $(a, b, c)$, 满足: $a, b, c$ 是成等差数列的正整数 $(a<b<c)$ 且 $a b+1, a c+1, b c+1$ 都为完全平方数.
+%%<SOLUTION>%%
+(解法二) 设 $(2+\sqrt{3})^n=A_n+B_n \sqrt{3}\left(A_n, B_n\right.$ 为正整数, $\left.n \in \mathbf{N}_{+}\right)$, 则 $(2- \sqrt{3})^n=A_n-B_n \sqrt{3}, A_n^2-3 B_n^2=1$. 取 $a=2 B_n-A_n, b=2 B_n, c=2 B_n+A_n$, 则 $a, b, c$ 成等差数列并且可证 $a b+1=\left(A_n-B_n\right)^2, a c+1=B_n^2, b c+1= \left(A_n+B_n\right)^2$, 故存在无穷多组三数组 $(a, b, c)=\left(2 B_n-A_n, 2 B_n, 2 B_n-A_n\right)$ 满足题目条件.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 是否存在无穷多个 $\triangle A B C$, 使 $A B, B C, C A$ 的长是成等差数列的互素的正整数 $(A B<B C<C A)$, 且 $B C$ 边上的高及 $\triangle A B C$ 的面积均为正整数?
+%%<SOLUTION>%%
+设 $A B=a-d, B C=a, C A=a+d\left(a, d \in \mathbf{N}_{+}\right.$且 $\left.a>d\right) . \triangle A B C$ 的面积为 $S, B C$ 边上的高为 $h_a$, 则 $S=\sqrt{\frac{3 a}{2} \cdot\left(\frac{a}{2}+d\right) \cdot \frac{a}{2} \cdot\left(\frac{a}{2}-d\right)}= \frac{1}{2} a \sqrt{3\left[\left(\frac{a}{2}\right)^2-d^2\right]}$. 要使 $S$ 为正整数, $a$ 必须为偶数.
+令 $a=2 x\left(x \in \mathbf{N}_{+}\right)$, 则 $S=x \sqrt{3\left(x^2-d^2\right)}, h_a=\frac{2 S}{a}=\sqrt{3\left(x^2-d^2\right)}, h_a^2=3\left(x^2-d^2\right)$, 故 $h_a$ 必须为 3 的倍数.
+设 $h_a=3 y\left(y \in \mathbf{N}_{+}\right)$, 则 $x^2-3 y^2=d^2$. 为简单起见, 取 $d=$ 1 , 则 $x^2-3 y^2=1 \cdots$ (1), 于是 $(x, y)=(2,1)$ 为(1)的一个解.
+令 $(2+\sqrt{3})^n= x_n+y_n \sqrt{3}\left(x_n, y_n\right.$ 为正整数, $\left.n \in \mathbf{N}_{+}\right)$, 则 $(2-\sqrt{3})^n=x_n-y_n \sqrt{3}$, 于是 $x_n^2- 3 y_n^2=1$, 即 $(x, y)=\left(x_n, y_n\right)\left(n \in \mathbf{N}_{+}\right)$都为(1)的正整数解.
+由 $x_{n+1}+y_{n+1} \sqrt{3}=(2+\sqrt{3})^{n+1}=(2+\sqrt{3})\left(x_n+y_n \sqrt{3}\right)=\left(2 x_n+3 y_n\right)+\left(x_n+2 y_n\right) \sqrt{3}$ 得 $\left\{\begin{array}{l}x_{n+1}=2 x_n+3 y_n, \\ y_{n+1}=x_n+2 y_n .\end{array}\right.$ 且 $\left\{\begin{array}{l}x_1=2, \\ y_1=1 .\end{array}\right.$ 消去 $y_n$ 可得 $x_{n+2}=4 x_{n+1}-x_n, x_1=2$, $x_2=7$. 于是可取 $A B=2 x_n-1, B C=2 x_n, C A=2 x_n+1,(n=1,2, \cdots)$, 则 $A B, B C, C A$ 是成等差数列的互素的正整数 ( $A B<B C<C A)$. 且 $\triangle A B C$ 的面积为 $S=x_n \sqrt{3\left(x_n^2-1\right)}=3 x_n y_n$ 及 $B C$ 边上的高 $h_a=3 y_n$ 均为正整数,故存在无穷多个满足题目条件的 $\triangle A B C$.
+%%PROBLEM_END%%
+
+

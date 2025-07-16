@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例1. 如图(<FilePath:./images/volume7/figures/fig-c5i2.png>), $\\triangle A B C$ 中, $A B>B C$, 外接圆上点 $B$ 处的切线交直线 $A C$ 于点 $P, D$ 是 $B$ 点关于点 $P$ 的对称点, $E$ 是点 $C$ 关于直线 $B P$ 的对称点.\n求证: 四边形 $A B E D$ 是圆内接四边形.",
+    "solution": "证明:由于 $P B$ 是切线, 由切割线定理\n$$\nP A \\cdot P C=P B^2=P D^2 \\Rightarrow \\frac{P A}{P D}=\\frac{P D}{P C},\n$$\n又 $\\angle D P A=\\angle C P D$, 所以 $\\triangle D P A \\backsim \\triangle C P D . \\Rightarrow \\angle C A D=\\angle P D C$.\n再由 $P B$ 是切线知, $\\angle P B C=\\angle B A C$.\n故 $\\angle B A D=\\angle P B C+\\angle P D C=180^{\\circ}-\\angle B C D$.\n再根据 $C 、 E$ 的对称性知, $\\angle B C D=\\angle B E D$.\n于是, $\\angle B A D+\\angle B E D=180^{\\circ}$.\n从而, 四边形 $A B E D$ 是圆内接四边形.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5i2.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 一个面积为 $S$ 的凸四边形有外接圆, 且其外接圆圆心在该四边形内部.\n从此四边形对角线的交点向四条边作垂线, 证明: 以四个垂足为顶点的四边形的面积不超过 $\\frac{S}{2}$.",
+    "solution": "设这个凸四边形为 $A B C D$, 其外接圆圆心为 $O$, 半径为 $R, E$ 为 $A C$ 、 $B D$ 的交点, $M 、 N 、 P 、 Q$ 分别是 $E$ 到边 $A B 、 B C 、 C D 、 D A$ 的投影, 作 $E F \\perp M N, F$ 为垂足.\n由于 $B 、 M 、 E 、 N$ 四点共圆, 且在以 $B E$ 为直径的圆上,所以 $M N=B E \\cdot \\sin B=\\frac{B E \\cdot A C}{2 R}$, 而 $E F=E M \\cdot \\sin \\angle E M N= \\frac{A E \\cdot B E \\cdot \\sin \\angle A E B}{A B} \\cdot \\sin \\angle C B E$, 结合 $B E \\cdot \\sin \\angle E B C=C E \\cdot \\sin \\angle B C E= \\frac{C E \\cdot A B}{2 R}$, 又由于 $A E \\cdot E C=R^2-O E^2$. 于是 $E F=\\frac{R^2-O E^2}{2 R} \\cdot \\sin \\angle A E B$, 所以 $S_{\\triangle M E N}=\\frac{1}{2} M N \\cdot E F=\\frac{\\left(R^2-O E^2\\right) \\cdot A C \\cdot B E \\cdot \\sin \\angle A E B}{8 R^2}$. 类似地计算 $S_{\\triangle M E P} 、 S_{\\triangle P E Q} 、 S_{\\triangle Q E M}$, 求和可得 $S_{M N P Q}=\\frac{\\left(R^2-O E^2\\right) \\cdot A C \\cdot B D \\cdot \\sin \\angle A E B}{4 R^2}= \\frac{\\left(R^2-O E^2\\right) \\cdot S}{2 R^2} \\leqslant \\frac{S}{2}$.",
+    "remark": "",
+    "figures": []
+}

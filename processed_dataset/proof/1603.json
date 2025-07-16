@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题30. 证明: 对任意 $n \\in \\mathrm{N}^*$, 存在一个首项系数为 1 的 $n$ 次整系数多项式 $P(x)$, 使得 $2 \\cos n \\varphi=P(2 \\cos \\varphi)$, 这里 $\\varphi$ 为任意实数.",
+    "solution": "当 $n=1$ 时, 取 $P(x)=x$ 即可; 当 $n=2$ 时, $2 \\cos 2 \\varphi=(2 \\cos \\varphi)^2-2$, 命题也成立.\n假设命题对 $n=k$ 和 $k+1$ 成立, 即存在首项系数为 1 的整系数多项式 $f(x)$ 和 $g(x)$, 使得\n$$\n2 \\cos k \\varphi=f(2 \\cos \\varphi), 2 \\cos (k+1) \\varphi=g(2 \\cos \\varphi) .\n$$\n其中 $f 、 g$ 的次数分别为 $k$ 和 $k+1$.\n下面考虑 $n=k+2$ 的情形.\n注意到\n$$\n\\begin{aligned}\n2 \\cos (k+2) \\varphi=2 \\cos [(k+1) \\varphi+\\varphi] \\\\\n& =2 \\cos (k+1) \\varphi \\cos \\varphi-2 \\sin (k+1) \\varphi \\sin \\varphi . \\label{(1)}\\\\\n2 \\cos k \\varphi & =2 \\cos [(k+1) \\varphi-\\varphi] \\\\\n& =2 \\cos (k+1) \\varphi \\cos \\varphi+2 \\sin (k+1) \\varphi \\cos \\varphi . \\label{(2)}\n\\end{aligned}\n$$\n将(1)与(2)相加, 得\n$$\n2 \\cos (k+2) \\varphi+2 \\cos k \\varphi=4 \\cos (k+1) \\varphi \\cos \\varphi .\n$$\n利用归纳假设, 可知\n$$\n2 \\cos (k+2) \\varphi=(2 \\cos \\varphi) g(2 \\cos \\varphi)-f(2 \\cos \\varphi) .\n$$\n故令 $h(x)=x g(x)-f(x)$ (易知 $h(x)$ 是一个首项系数为 1 的整系数多项式), 就有\n$$\n2 \\cos (k+2) \\varphi=h(2 \\cos \\varphi)\n$$\n命题对 $k+2$ 成立.\n所以, 命题成立.",
+    "remark": "",
+    "figures": []
+}

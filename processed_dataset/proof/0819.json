@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 从 $1,2, \\cdots, 2 n$ 这 $2 n$ 个正整数中任取 $n+1$ 个数, 证明其中一定存在两个数是互素的.",
+    "solution": "把 $1,2, \\cdots, 2 n$ 这 $2 n$ 个正整数分成如下 $n$ 组:\n$$\n\\{1,2\\},\\{3,4\\}, \\cdots,\\{2 n-1,2 n\\} .\n$$\n从这 $n$ 组中任取 $n+1$ 个数, 由抽屉原理知, 其中一定有两个数取自同一组, 同一组中的两个数是相邻的正整数, 从而它们是互素的.",
+    "remark": "",
+    "figures": []
+}

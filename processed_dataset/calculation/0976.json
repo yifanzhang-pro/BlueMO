@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. $|\\vec{a}|=5,|\\vec{b}|=3,|\\vec{a}-\\vec{b}|=6, \\vec{a} \\cdot \\vec{b}=(\\quad)$.",
+    "solution": "-1 .\n$$\n|\\vec{a}-\\vec{b}|^2=\\vec{a}^2-2 \\vec{a} \\cdot \\vec{b}+\\vec{b}^2 .\n$$",
+    "remark": "",
+    "figures": []
+}

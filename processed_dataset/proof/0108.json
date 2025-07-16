@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题9 设整数 $k \\geqslant 14, P_k$ 是小于 $k$ 的最大质数.\n若 $P_k \\geqslant \\frac{3 k}{4}, n$ 是一个合数, 且 $n>2 P_k$, 证明: $n$ 能整除 $(n-k)$ !.",
+    "solution": "因为 $n$ 是合数,故设 $n=a b(2 \\leqslant a \\leqslant b)$.\n若 $a \\geqslant 3$, (i) $a \\neq b$, 则 $n>2 p_k \\geqslant \\frac{3 k}{2}, b \\leqslant \\frac{n}{3}$. 从而, $k<\\frac{2 n}{3}$. 故 $n-k> \\frac{n}{3} \\geqslant b>a$. 所以, $n \\mid(n-k) !$. (ii) $a=b$, 则 $n=a^2, n-k>\\frac{n}{3}=\\frac{a^2}{3}$. 因为 $k \\geqslant 14$, 则 $p_k \\geqslant 13, n>26, a \\geqslant 6$. 从而, $\\frac{a^2}{3} \\geqslant 2 a$. 故 $n-k>2 a$. 所以, $n \\mid(n-k)$ !. 若 $a=2$, 因为 $n>26$, 假设 $b$ 不为质数, 则 $b=b_1 b_2\\left(b_1 \\leqslant b_2\\right)$. 因为 $b>13$, 则 $b_2 \\geqslant 4$. 于是, $a b_1 \\geqslant 4$ 归人 $a \\geqslant 3$ 的情况.\n不妨设 $b$ 为质数, 则 $b= \\frac{n}{2}>p_k$. 因为 $p_k$ 是小于 $k$ 的最大质数, 则 $b>k$. 从而, $n-k=2 b-k>b$. 所以, $n \\mid(n-k) !$.",
+    "remark": "",
+    "figures": []
+}

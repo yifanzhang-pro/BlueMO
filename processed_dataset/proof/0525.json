@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 有一百种昆虫, 每两种中必有一种能消灭另一种 (但甲能消灭乙, 乙能消灭丙, 并不意味着甲一定能消灭丙), 证明可以将这一百种昆虫依某种顺序排列起来, 使得每一种能消灭紧接在它后面的那一种昆虫.",
+    "solution": "用定理三,竞赛图 $\\bar{K}_n$ 中存在一条长为 $n-1$ 的哈密顿路.",
+    "remark": "",
+    "figures": []
+}

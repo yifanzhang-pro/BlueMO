@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $p 、 q$ 是复数 $(q \\neq 0)$, 若关于 $x$ 的方程 $x^2+p x+q^2=0$ 的两根的模相等,求证: $\\frac{p}{q}$ 是实数.",
+    "solution": "分析:与解从韦达定理着手, 建立 $p 、 q$ 与方程根的联系.\n设方程 $x^2+p x+q^2=0$ 的两根是 $z_1 、 z_2$, 则\n$$\n\\left\\{\\begin{array}{l}\nz_1+z_2=-p, \\\\\nz_1 z_2=q^2\n\\end{array}\\right.\n$$\n根据题设, 有 $\\left|z_1\\right|=\\left|z_2\\right|$, 即 $\\left|z_1\\right|^2=\\left|z_2\\right|^2$, 有 $z_1 \\overline{z_1}=z_2 \\overline{z_2}$, 所以\n$$\n\\frac{p^2}{q^2}=\\frac{\\left(z_1+z_2\\right)^2}{z_1 z_2}=\\frac{z_1}{z_2}+\\frac{z_2}{z_1}+2=\\overline{\\left(\\frac{z_2}{z_1}\\right)}+\\left(\\frac{z_2}{z_1}\\right)+2=2 \\operatorname{Re}\\left(\\frac{z_2}{z_1}\\right)+2 \\in \\mathbf{R} .\n$$\n因为 $\\left|\\frac{z_2}{z_1}\\right|=1$, 所以 $\\left|\\operatorname{Re}\\left(\\frac{z_2}{z_1}\\right)\\right| \\leqslant\\left|\\frac{z_2}{z_1}\\right|=1$, 于是 $\\frac{p^2}{q^2} \\geqslant 0$. 故知 $\\frac{p}{q} \\in \\mathbf{R}$, 证毕.",
+    "remark": "",
+    "figures": []
+}

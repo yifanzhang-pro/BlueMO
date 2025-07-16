@@ -1,0 +1,393 @@
+
+%%TEXT_BEGIN%%
+复数的模与幅角.
+本章中, 我们将通过例题介绍一些关于复数的模和幅角的较高难度的技巧和方法.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 对于给定的角 $\alpha_1, \alpha_2, \cdots, \alpha_n$, 试讨论方程
+$$
+x^n+x^{n-1} \sin \alpha_1+x^{n-2} \sin \alpha_2+\cdots+x \sin \alpha_{n-1}+\sin \alpha_n=0
+$$
+是否有模大于 2 的复数根?
+%%<SOLUTION>%%
+分析:与解答案是否定的.
+可以考虑从反面人手去解决.
+假定存在 $x_0$ 是原方程的复数解, 并且 $\left|x_0\right|>2$, 则有
+$$
+x_0^n=-x_0^{n-1} \sin \alpha_1-\cdots-x_0 \sin \alpha_{n-1}-\sin \alpha_n,
+$$
+从而对上式两边取模, 并应用模的不等式, 得
+$$
+\begin{aligned}
+\left|x_0\right|^n & \leqslant\left|x_0\right|^{n-1}\left|\sin \alpha_1\right|+\cdots+\left|x_0\right|\left|\sin \alpha_{n-1}\right|+\left|\sin \alpha_n\right| \\
+& \leqslant\left|x_0\right|^{n-1}+\left|x_0\right|^{n-2}+\cdots+\left|x_0\right|+1 \\
+& =\frac{\left|x_0\right|^n-1}{\left|x_0\right|-1}<\frac{\left|x_0\right|^n}{\left|x_0\right|-1}<\frac{\left|x_0\right|^n}{2-1}=\left|x_0\right|^n .
+\end{aligned}
+$$
+这显然产生矛盾, 由此说明原方程没有模大于 2 的复数根.
+%%<REMARK>%%
+注:将一个等于 0 的式子中起主要作用的项移到 0 的那边, 再两边取模, 用不等式放缩, 是一个重要的技巧, 在之前第三章的例 7 , 例 8 中已有这样的手法, 在之后的例题中仍会出现, 望读者注意.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $n(\geqslant 3)$ 个复数 $z_1, z_2, \cdots, z_n$ 满足
+(1) $z_1+z_2+\cdots+z_n=0$;
+(2) $\left|z_i\right|<1, i=1,2, \cdots, n$.
+证明: 存在 $i 、 j$, 使得 $1 \leqslant i<j \leqslant n$, 且 $\left|z_i+z_j\right|<1$.
+%%<SOLUTION>%%
+分析:与解我们称两个复向量 (以原点为起点的复向量) 所成的角为它们之间所夹的不超过 $180^{\circ}$ 的部分所构成的几何图形.
+只需证明: 复数 $z_i(1 \leqslant i \leqslant n)$ 中, 必有两个复数 $z_k$ 和 $z_l(k \neq l)$, 它们之间的夹角不小于 $120^{\circ}$.
+对此用反证法予以证明,若不存在满足条件的 $z_k$ 和 $z_l$ 经过对复平面作适当的旋转,不妨设 $z_1$ 对应的向量 $\overrightarrow{O Z}_1$ 落在实轴的正半轴上, 作射线 $O A$, $O B$, 使得
+$$
+\angle x O A=120^{\circ}, \angle A O B=120^{\circ},
+$$
+则 $z_2, \cdots, z_n$ 对应的向量 $\overrightarrow{O Z}_2, \cdots, \overrightarrow{O Z}_n$ 都落在 $\angle x O A$ 与 $\angle x O B$ 内, 如图(<FilePath:./figures/fig-c8i1.png>) 所示.
+由条件 (1), $z_1+z_2+\cdots+z_n=0$, 可知 $z_2, \cdots$, $z_n$ 中必有一个复数的实部小于 0. 从而 $\overrightarrow{O Z}_2, \cdots, \overrightarrow{O Z_n}$ 中必有一个向量落在 $\angle y O A$ 或 $\angle y^{\prime} O B$ 内, 不妨设 $\overrightarrow{O Z_2}$ 落在 $\angle y O A$ 内.
+作射线 $O C$, 使得 $\angle Z_2 O C= 120^{\circ}$, 则 $z_3, \cdots, z_n$ 对应的向量不能落在 $\angle B O C$ 内.
+综上所述, 可知 $\overrightarrow{O Z}_1, \overrightarrow{O Z_2}, \cdots, \overrightarrow{O Z_n}$, 都落在 $\angle A O C$ 内, 于是, 将该复平面适当旋转后, 可使向量 $\overrightarrow{O Z}_1, \overrightarrow{O Z}_2, \cdots, \overrightarrow{O Z_n}$ 都落在 $y$ 轴的右方, 它们的实部都不小于零,这与 (1)矛盾.
+所以, 在 $z_1, z_2, \cdots, z_n$ 中, 存在 $i 、 j, 1 \leqslant i<j \leqslant n$, 使得 $\left|z_i+z_j\right|<1$, 证毕.
+%%<REMARK>%%
+注:证明中没有考虑存在某个 $z_i=0$ 的情形, 因为此时结论是平凡的.
+另外, 当证完存在向量 $\overrightarrow{O Z}_i 、 \overrightarrow{O Z}_j$ 所成的角不小于 $120^{\circ}$ 后, 只需利用图(<FilePath:./figures/fig-c8i2.png>) , 令 $z=z_i+z_j$, 则可知 $\angle Z_i O Z$ 和 $\angle Z O Z_j$ 中必有 -一个 $\geqslant 60^{\circ}$. 而 $\overrightarrow{Z_i Z}=\overrightarrow{O Z_j}, \overrightarrow{Z_j Z}=\overrightarrow{O Z}_i$ 及 $\angle O Z_i Z= \angle O Z_j Z=180^{\circ}-\angle Z_i O Z_j \leqslant 60^{\circ}$, 就可知
+$$
+|z| \leqslant \max \left\{\left|z_i\right|,\left|z_j\right|\right\}<1 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $p=\overline{a_n a_{n-1} \cdots a_0}=a_n \times 10^n+a_{n-1} \times 10^{n-1}+\cdots+a_1 \times 10+a_0$ 是十进制表示下的一个质数, 这里 $a_n>0$. 证明: $f(x)=a_n x^n+\cdots+a_0$ 在整系数范围内不可约.
+%%<SOLUTION>%%
+分析:与解从 $f(x)$ 的根 $x_0$ 出发, 先证明: $\operatorname{Re}\left(x_0\right) \leqslant 0$ 或者 $\left|x_0\right|<4$, 这里 $\operatorname{Re}\left(x_0\right)$ 表示 $x_0$ 的实部.
+事实上, 若 $\operatorname{Re}\left(x_0\right) \leqslant 0$ 或 $\left|x_0\right| \leqslant 1$, 则上述论断已成立.
+当 $\operatorname{Re}\left(x_0\right)>0$, 且 $\left|x_0\right|>1$ 时,有 $\operatorname{Re}\left(\frac{1}{x_0}\right)=\frac{\operatorname{Re}\left(x_0\right)}{\left|x_0\right|^2}>0$. 于是, 有
+$$
+0=\left|\frac{f\left(x_0\right)}{x_0^n}\right| \geqslant\left|a_n+\frac{a_{n-1}}{x_0}\right|-\frac{a_{n-2}}{\left|x_0\right|^2}-\cdots-\frac{a_0}{\left|x_0\right|^n}
+$$
+$$
+\begin{aligned}
+& \geqslant \operatorname{Re}\left(a_n+\frac{a_{n-1}}{x_0}\right)-\left(\frac{9}{\left|x_0\right|^2}+\cdots+\frac{9}{\left|x_0\right|^n}\right) \\
+& \geqslant a_n-\frac{9}{\left|x_0\right|^2-\left|x_0\right|} \geqslant 1-\frac{9}{\left|x_0\right|^2-\left|x_0\right|},
+\end{aligned}
+$$
+于是 $\left|x_0\right|^2-\left|x_0\right|-9 \leqslant 0$, 故 $\left|x_0\right| \leqslant \frac{1+\sqrt{37}}{2}<4$.
+下面,利用上述论断证明 $f(x)$ 在整系数范围内中不可约.
+若存在非常数的整系数多项式 $g(x)$ 和 $h(x)$, 使得 $f(x)=g(x) h(x)$, 设 $g(x)=b_m\left(x-r_1\right) \cdots\left(x-r_m\right)$. 对于 $g(10)$ 而言,一方面 $g(10) \in \mathbf{Z}$, 另一方面, 对 $1 \leqslant i \leqslant m$, 由于 $r_i$ 也是 $f(x)$ 的根, 如果 $r_i \in \mathbf{R}$, 则 $r_i \leqslant 0$ (否则, 由 $f(x)$ 的系数均非负, 将导数 $\left.f\left(r_i\right)>0,\right)$ 故 $10-r_i \geqslant 10$; 如果 $r_i \notin \mathbf{R}$, 则 $\bar{r}_i$ 也是 $f(x)$ 的根, 这时
+$$
+\left(10-r_i\right)\left(10-\bar{r}_i\right)=100-20 \operatorname{Re}\left(r_i\right)+\left|r_i\right|^2>20,
+$$
+所以, 总有 $|g(10)|>\left|b_m\right| \geqslant 1$, 同理 $|h(10)|>1$.
+但是, $f(10)=g(10) h(10)$ 为质数,矛盾.
+证毕.
+%%<REMARK>%%
+注:从本题的证明过程中我们知道: 多项式根的分布情况对多项式的分解起着举足轻重的作用.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 是否存在 2002 个不同的正实数 $a_1, a_2, \cdots, a_{2002}$, 使得对任意正整数 $k, 1 \leqslant k \leqslant 2002$, 多项式 $a_{k+2001} x^{2001}+a_{k+2000} x^{2000}+\cdots+a_{k+1} x+a_k$ 的每个复根 $z$ 都满足 $|\operatorname{Im} z| \leqslant|\operatorname{Re} z|$ ? (约定 $a_{2002+i}=a_i, i=1,2, \cdots, 2001$.)
+%%<SOLUTION>%%
+分析:与解不存在.
+用反证法.
+若存在正实数 $a_1, a_2, \cdots, a_{2002}$ 满足题设要求, 对一固定的 $k$, 设 $a_{k+2001} x^{2001}+a_{k+2000} x^{2000}+\cdots+a_{k+1} x+a_k=0$ 的复根为 $z_1, z_2, \cdots, z_{2001}$, 那么由于 $\left|\operatorname{Im} z_j\right| \leqslant\left|\operatorname{Re} z_j\right|(1 \leqslant j \leqslant 2001)$, 而
+$$
+\begin{aligned}
+z_j^2 & =\left(\operatorname{Re} z_j+\mathrm{i} \operatorname{Im} z_j\right)^2 \\
+& =\left(\operatorname{Re} z_j\right)^2-\left(\operatorname{Im} z_j\right)^2+2\left(\operatorname{Re} z_j\right)\left(\operatorname{Im} z_j\right) i,
+\end{aligned}
+$$
+即 $z_j^2$ 的实部 $\operatorname{Re}\left(z_j^2\right)=\left(\operatorname{Re} z_j\right)^2-\left(\operatorname{Im} z_j\right)^2 \geqslant 0(1 \leqslant j \leqslant 2001)$, 所以
+$$
+\operatorname{Re}\left(z_1^2+z_2^2+\cdots+z_{2001}^2\right)=\operatorname{Re}\left(z_1^2\right)+\operatorname{Re}\left(z_2^2\right)+\cdots+\operatorname{Re}\left(z_{2001}^2\right) \geqslant 0 . \label{eq1}
+$$
+而由韦达定理
+$$
+z_1+z_2+\cdots+z_{2001}=\frac{-a_{k+2000}}{a_{k+2001}}, \sum_{1 \leqslant j \leqslant l \leqslant 2001} z_j z_l=\frac{a_{k+1999}}{a_{k+2001}},
+$$
+所以
+$$
+\begin{aligned}
+z_1^2+z_2^2+\cdots+z_{2001}^2 & =\left(z_1+z_2+\cdots+z_{2001}\right)^2-2 \sum_{1 \leqslant j \leqslant l \leqslant 2001} z_j z_l \\
+& =\frac{a_{k+2000}^2-2 a_{k+1999} a_{k+2001}}{a_{k+2001}^2}
+\end{aligned}
+$$
+即 $z_1^2+z_2^2+\cdots+z_{2001}^2$ 是一个实数.
+又由 式\ref{eq1} 知, 其实部 $\geqslant 0$, 所以它是一个非负实数, 即
+$$
+\frac{a_{k+2000}^2-2 a_{k+1999} a_{k+2001}}{a_{k+2001}^2} \geqslant 0 \Rightarrow a_{k+2000}^2-2 a_{k+1999} a_{k+2001} \geqslant 0 .
+$$
+上式对每个 $1 \leqslant k \leqslant 2002$ 均成立, 即当 $1 \leqslant j \leqslant 2002$, 均有 $a_j^2- 2 a_{j-1} a_{j+1} \geqslant 0$. 但这是不可能的,事实上:
+设 $a_{j_0}$ 是 $a_1, a_2, \cdots, a_{2002}$ 中最小的一个, 那么 $a_{j_0}^2-2 a_{j_0-1} a_{j_0+1} \leqslant a_{j_0}^2- 2 a_{j_0} a_{j_0}=-a_{j_0}^2<0$, 矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. $n$ 是正整数, $a_j(j=1,2, \cdots, n)$ 为复数, 且对集合 $\{1,2, \cdots, n\}$ 的任一非空子集 $I$, 均有
+$$
+\left|\prod_{j \in I}\left(1+a_j\right)-1\right| \leqslant \frac{1}{2} . \label{eq1}
+$$
+证明: $\sum_{j=1}^n\left|a_j\right| \leqslant 3$.
+%%<SOLUTION>%%
+分析:与解设 $1+a_j=r_j \mathrm{e}^{\mathrm{i} \theta_j},\left|\theta_j\right| \leqslant \pi, j=1,2, \cdots, n$, 则题设条件变为
+$$
+\left|\prod_{j \in I} r_j \cdot \mathrm{e}^{\mathrm{i} \sum_{j \in I} \theta_j}-1\right| \leqslant \frac{1}{2} .
+$$
+先证如下引理: 设 $r 、 \theta$ 为实数, $r>0,|\theta| \leqslant \pi$, $\left|r \mathrm{e}^{\mathrm{i} \theta}-1\right| \leqslant \frac{1}{2}$, 则 $\frac{1}{2} \leqslant r \leqslant \frac{3}{2},|\theta| \leqslant \frac{\pi}{6}$, $\left|r \mathrm{e}^{\mathrm{i} \theta}-1\right| \leqslant|r-1|+|\theta|$.
+引理的证明: 如图图(<FilePath:./figures/fig-c8i3.png>), 由复数的几何意义, 有 $\frac{1}{2} \leqslant r \leqslant \frac{3}{2},|\theta| \leqslant \frac{\pi}{6}$.
+又由
+$$
+\begin{aligned}
+\left|r \mathrm{e}^{\mathrm{i} \theta}-1\right| & =|r(\cos \theta+\mathrm{i} \sin \theta)-1| \\
+& =|(r-1)(\cos \theta+\mathrm{i} \sin \theta)+[(\cos \theta-1)+\mathrm{i} \sin \theta]| \\
+& \leqslant|r-1|+\sqrt{(\cos \theta-1)^2+\sin ^2 \theta} \\
+& =|r-1|+\sqrt{2(1-\cos \theta)}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& =|r-1|+2\left|\sin \frac{\theta}{2}\right| \\
+& \leqslant|r-1|+|\theta|,
+\end{aligned}
+$$
+得引理的另一部分.
+由式\ref{eq1}及引理, 对 $|I|$ 用数学归纳法知:
+$$
+\frac{1}{2} \leqslant \prod_{j \in I} r_j \leqslant \frac{3}{2},\left|\sum_{j \in I} \theta_j\right| \leqslant \frac{\pi}{6}, \label{eq2}
+$$
+由式\ref{eq1}及引理知
+$$
+\left|a_j\right|=\left|r_j \mathrm{e}^{\mathrm{i} \theta_j}-1\right| \leqslant\left|r_j-1\right|+\left|\theta_j\right|,
+$$
+因此
+$$
+\begin{aligned}
+\sum_{j=1}^n\left|a_j\right| & \leqslant \sum_{j=1}^n\left|r_j-1\right|+\sum_{j=1}^n\left|\theta_j\right| \\
+& =\sum_{r_j \geqslant 1}\left|r_j-1\right|+\sum_{r_j<1}\left|r_j-1\right|+\sum_{\theta_j \geqslant 0}\left|\theta_j\right|+\sum_{\theta_j<0}\left|\theta_j\right| .
+\end{aligned}
+$$
+由式\ref{eq2}知
+$$
+\begin{aligned}
+\sum_{r_j \geqslant 1}\left|r_j-1\right| & =\sum_{r_j \geqslant 1}\left(r_j-1\right) \leqslant \prod_{r_j \geqslant 1}\left(1+r_j-1\right)-1 \\
+& \leqslant \frac{3}{2}-1=\frac{1}{2}, \\
+\sum_{r_j<1}\left|r_j-1\right| & =\sum_{r_j<1}\left(1-r_j\right) \leqslant \prod_{r_j<1}\left(1-\left(1-r_j\right)\right)^{-1}-1 \\
+& \leqslant 2-1=1, \\
+\sum_{j=1}^n\left|\theta_j\right| & =\sum_{\theta_j \geqslant 0} \theta_j-\sum_{\theta_j<0} \theta_j \leqslant \frac{\pi}{6}-\left(-\frac{\pi}{6}\right) \leqslant \frac{\pi}{3} .
+\end{aligned}
+$$
+综上, 有
+$$
+\sum_{j=1}^n\left|a_j\right| \leqslant \frac{1}{2}+1+\frac{\pi}{3}<3 .
+$$
+证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $z_1 、 z_2 、 z_3$ 是 3 个模不大于 1 的复数, wr 、 $w_2$ 是方程 $\left(z-z_1\right)(z- \left.z_2\right)+\left(z-z_2\right)\left(z-z_3\right)+\left(z-z_3\right)\left(z-z_1\right)=0$ 的两个根.
+证明: 对 $j=1,2$, 3 , 都有
+$$
+\min \left\{\left|z_j-w_1\right|,\left|z_j-w_2\right|\right\} \leqslant 1 .
+$$
+%%<SOLUTION>%%
+分析:与解由对称性, 只需证明: $\min \left\{\left|z_1-w_1\right|,\left|z_1-w_2\right|\right\} \leqslant 1$.
+不妨设 $z_1 \neq w_1, w_2$. 令 $f(z)=\left(z-z_1\right)\left(z-z_2\right)+\left(z-z_2\right)\left(z-z_3\right)+ \left(z-z_3\right)\left(z-z_1\right)$, 由
+$$
+f(z)=3\left(z-w_1\right)\left(z-w_2\right),
+$$
+得
+$$
+3\left(z_1-w_1\right)\left(z_1-w_2\right)=\left(z_1-z_2\right)\left(z_1-z_3\right),
+$$
+因此,若 $\left|z_1-z_2\right|\left|z_1-z_3\right| \leqslant 3$, 结论成立.
+另一方面, 由 $w_1+w_2=\frac{2}{3}\left(z_1+z_2+z_3\right), w_1 w_2=\frac{z_1 z_2+z_2 z_3+z_3 z_1}{3}$,
+又
+$$
+\frac{1}{z-w_1}+\frac{1}{z-w_2}=\frac{2 z-\left(w_1+w_2\right)}{\left(z-w_1\right)\left(z-w_2\right)}=\frac{3\left(2 z-\left(w_1+w_2\right)\right)}{f(z)},
+$$
+所以
+$$
+\begin{aligned}
+\frac{1}{z_1-w_1}+\frac{1}{z_1-w_2} & =\frac{3\left(2 z_1-\frac{2}{3}\left(z_1+z_2+z_3\right)\right)}{\left(z_1-z_2\right)\left(z_1-z_3\right)} \\
+& =\frac{2\left(2 z_1-z_2-z_3\right)}{\left(z_1-z_2\right)\left(z_1-z_3\right)},
+\end{aligned}
+$$
+因此, 当 $\left|\frac{2 z_1-z_2-z_3}{\left(z_1-z_2\right)\left(z_1-z_3\right)}\right| \geqslant 1$ 时,结论成立.
+下设 $\left|z_1-z_2\right|\left|z_1-z_3\right|>3,\left|\frac{2 z_1-z_2-z_3}{\left(z_1-z_2\right)\left(z_1-z_3\right)}\right|<1$.
+如图(<FilePath:./figures/fig-c8i4.png>), 考虑以 $A\left(z_1\right) 、 B\left(z_2\right) 、 C\left(z_3\right)$ 为顶点的三角形.
+记 $m_a$ 和 $h_a$ 分别是三角形 $A B C$ 的边 $B C$ 上的中线和高, 则 $b c>3,2 m_a<b c$.
+由于 $b 、 c<2$, 所以 $m_a<b, m_a<c$, 由此推出 $\angle B 、 \angle C$ 都小于 $90^{\circ}$.
+又因为 $b^2+c^2-a^2 \geqslant 2 b c-a^2>6-4>0$, 所以 $\angle A<90^{\circ}$, 即 $\triangle A B C$ 为锐角三角形.
+所以, $\triangle A B C$ 为单位圆内的锐角三角形.
+平移 $\triangle A B C$ 
+使 $B 、 C$ 在单位圆周内(或圆周上), 延长 $C A$ 交单位圆于 $D$, 则由 $\angle D \leqslant \angle A<\frac{\pi}{2}$ 得 $\sin A \geqslant \sin D$, 所以 $2 k=\frac{B C}{\sin A} \leqslant \frac{B C}{\sin D}=2$. 即 $\triangle A B C$ 外接圆半径 $R \leqslant 1$, 于是 $2 m_a<b c=2 R h_a \leqslant 2 m_a$, 矛盾! 因此这种情况不可能发生.
+综上所述, 原命题成立, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $x_1, x_2, \cdots, x_n(n \geqslant 2)$ 是 $n$ 个实数, 满足
+$$
+\begin{gathered}
+A=\left|\sum_{i=1}^n x_i\right| \neq 0, \\
+B=\max _{1 \leqslant i<j \leqslant n}\left|x_j-x_i\right| \neq 0 .
+\end{gathered}
+$$
+求证: 对平面上的任意 $n$ 个向量 $\alpha_1, \alpha_2, \cdots, \alpha_n$, 存在 $1,2, \cdots, n$ 的一个排列 $k_1, k_2, \cdots, k_n$ 使得
+$$
+\left|\sum_{i=1}^n x_{k_i} \alpha_i\right| \geqslant \frac{A B}{2 A+B} \max _{1 \leqslant i \leqslant n}\left|\alpha_i\right| .
+$$
+%%<SOLUTION>%%
+分析:与解设 $\left|\alpha_k\right|=\max _{1 \leqslant i \leqslant n}\left|\alpha_i\right|, k \in\{1,2, \cdots, n\}$. 我们只须证明
+$$
+\max _{\left(k_1, k_2, \cdots, k_n\right) \in S_n}\left|\sum_{i=1}^n x_{k_i} \alpha_i\right| \geqslant \frac{A B}{2 A+B}\left|\alpha_k\right|,
+$$
+其中 $S_n$ 为 $1,2, \cdots, n$ 的排列的集合.
+不妨设
+$$
+\begin{gathered}
+\left|x_n-x_1\right|=\max _{1 \leqslant i<j \leqslant n}\left|x_j-x_i\right|=B, \\
+\left|\alpha_n-\alpha_1\right|=\max _{1 \leqslant i<j \leqslant n}\left|\alpha_j-\alpha_i\right| .
+\end{gathered}
+$$
+考虑两个向量
+$$
+\begin{aligned}
+& \beta_1=x_1 \alpha_1+x_2 \alpha_2+\cdots+x_{n-1} \alpha_{n-1}+x_n \alpha_n, \\
+& \beta_2=x_n \alpha_1+x_2 \alpha_2+\cdots+x_{n-1} \alpha_{n-1}+x_1 \alpha_n,
+\end{aligned}
+$$
+则
+$$
+\begin{aligned}
+& \max _{\left(k_1, k_2, \cdots, k_n\right) \in S_n}\left|\sum_{i=1}^n x_{k_i} a_i\right| \geqslant \max \left\{\left|\beta_1\right|,\left|\beta_2\right|\right\} \\
+\geqslant & \frac{1}{2}\left(\left|\beta_1\right|+\left|\beta_2\right|\right) \geqslant \frac{1}{2}\left|\beta_2-\beta_1\right| \\
+= & \frac{1}{2}\left|x_1 \alpha_n+x_n \alpha_1-x_1 \alpha_1-x_n \alpha_n\right| \\
+= & \frac{1}{2}\left|x_n-x_1\right|\left|\alpha_n-\alpha_1\right| \\
+= & \frac{1}{2} B\left|\alpha_n-\alpha_1\right| .
+\end{aligned} \label{eq1}
+$$
+设 $\left|\alpha_n-\alpha_1\right|=x\left|a_k\right|$, 由三角形不等式易知 $0 \leqslant x \leqslant 2$. 因此式\ref{eq1}中的不等式可写为
+$$
+\max _{\left(k_1, k_2, \cdots, k_n\right) \in S_n}\left|\sum_{i=1}^n x_{k_i} \alpha_i\right| \geqslant \frac{1}{2} B x\left|\alpha_k\right| . \label{eq2}
+$$
+另一方面, 考虑 $n$ 个向量
+$$
+\begin{gathered}
+\gamma_1=x_1 \alpha_1+x_2 \alpha_2+\cdots+x_{n-1} \alpha_{n-1}+x_n \alpha_n, \\
+\gamma_2=x_2 \alpha_1+x_3 \alpha_2+\cdots+x_n \alpha_{n-1}+x_1 \alpha_n, \\
+\gamma_3=x_3 \alpha_1+x_4 \alpha_2+\cdots+x_1 \alpha_{n-1}+x_2 \alpha_n, \\
+\cdots \cdots \\
+\gamma_n=x_n \alpha_1+x_1 \alpha_2+\cdots+x_{n-2} \alpha_{n-1}+x_{n-1} \alpha_n .
+\end{gathered}
+$$
+则
+$$
+\begin{aligned}
+& \max _{\left(k_1, k_2, \cdots, k_n\right) \in S_n}\left|\sum_{i=1}^n x_{k_i} a_i\right| \\
+\geqslant & \max _{1 \leqslant i \leqslant n}\left|\gamma_i\right| \geqslant \frac{1}{n}\left(\left|\gamma_1\right|+\left|\gamma_2\right|+\cdots+\left|\gamma_n\right|\right) \\
+\geqslant & \frac{1}{n}\left|\gamma_1+\gamma_2+\cdots+\gamma_n\right|=\frac{A}{n}\left|\alpha_1+\alpha_2+\cdots+\alpha_n\right| \\
+= & \frac{A}{n}\left|n \alpha_k-\sum_{j \neq k}\left(\alpha_k-\alpha_j\right)\right| \geqslant \frac{A}{n}\left\{n\left|\alpha_k\right|-\sum_{j \neq k}\left|\alpha_k-\alpha_j\right|\right\} \\
+\geqslant & \frac{A}{n}\left\{n\left|\alpha_k\right|-(n-1)\left|\alpha_n-\alpha_1\right|\right\}=\frac{A}{n}\left\{n\left|\alpha_k\right|-(n-1) x\left|\alpha_k\right|\right\} \\
+= & A\left(1-\frac{n-1}{n} x\right)\left|\alpha_k\right| .
+\end{aligned} \label{eq3}
+$$
+结合式\ref{eq2}、\ref{eq3},可得
+$$
+\begin{aligned}
+\max _{\left(k_1, k_2, \cdots, k_n\right) \in S_n}\left|\sum_{i=1}^n x_{k_i} \alpha_i\right| & \geqslant \max \left\{\frac{B x}{2}, A\left(1-\frac{n-1}{n} x\right)\right\}\left|\alpha_k\right| \\
+& \geqslant \frac{\frac{B x}{2} \cdot A \cdot \frac{n-1}{n}+A\left(1-\frac{n-1}{n} x\right) \frac{B}{2}}{A \frac{n-1}{n}+\frac{B}{2}}\left|\alpha_k\right| \\
+& =\frac{A B}{2 A+B-\frac{2 A}{n}}\left|\alpha_k\right| \geqslant \frac{A B}{2 A+B}\left|\alpha_k\right| .
+\end{aligned}
+$$
+证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 复系数多项式 $f(z)=z^n+a_1 z^{n-1}+\cdots+a_{n-1} z+a_n$ 的 $n$ 个根为 $z_1$,
+$z_2, \cdots, z_n$, 且 $\sum_{k=1}^n\left|a_k\right|^2 \leqslant 1$, 求证: $\sum_{k=1}^n\left|z_k\right|^2 \leqslant n$.
+%%<SOLUTION>%%
+分析:与解引理 1 若正实数 $x_1, x_2, \cdots, x_m$ 都不大于 1 (或都不小于 1 ), 则
+$$
+x_1+x_2+\cdots+x_m \leqslant(m-1)+x_1 x_2 \cdots x_m .
+$$
+引理的证明因为
+$$
+\begin{aligned}
+& (m-1)+x_1 x_2 \cdots x_m-\left(x_1+x_2+\cdots+x_m\right) \\
+= & \left(1-x_1\right)\left(1-x_2\right)+\left(1-x_1 x_2\right)\left(1-x_3\right)+\left(1-x_1 x_2 x_3\right)\left(1-x_4\right)+\cdots+ \\
+& \left(1-x_1 x_2 \cdots x_{m-1}\right)\left(1-x_m\right) \geqslant 0,
+\end{aligned}
+$$
+故引理 1 成立.
+引理 2 若 $f(x)=g(x) h(x)(f, g, h$ 均为复系数多项式 $)$ 满足
+$$
+\begin{gathered}
+f(x)=a_0 x^n+a_1 x^{n-1}+\cdots+a_{n-1} x+a_n, \\
+g(x)=b_0 x^k+b_1 x^{k-1}+\cdots+b_{k-1} x+b_k, \quad(n=k+l) \\
+h(x)=c_0 x^l+c_1 x^{l-1}+\cdots+c_{l-1} x+c_l,
+\end{gathered}
+$$
+则 $\left|b_0 c_l\right|^2+\left|c_0 b_k\right|^2 \leqslant\left|a_0\right|^2+\left|a_1\right|^2+\cdots+\left|a_n\right|^2$.
+引理的证明由已知可知 $a_m=\sum_i b_i c_{m-i}(m=0,1,2, \cdots, n)$ (规定 $p \geqslant k+1$ 或 $p \leqslant-1$ 时, $b_p=0 ; q \geqslant l+1$ 或 $q \leqslant-1$ 时, $\left.c_q=0\right)$.
+考虑
+$$
+\begin{aligned}
+& \sum_{m^{\prime} \in \mathbf{Z}}\left|\sum_i b_i \overline{c_{m^{\prime}+i}}\right|^2 \\
+= & \sum_{m^{\prime} \in \mathbf{Z}}\left(\sum_i b_i \overline{c_{m^{\prime}+i}}\right)\left(\sum_i \overline{b_j c_{m^{\prime}+j}}\right) \\
+= & \sum_{m^{\prime} \in \mathbf{Z}}\left(\sum_{i, j} b_i c_{m^{\prime}+j}\right) \overline{b_j c_{m^{\prime}+i}} \\
+= & \sum_{m^{\prime} \in \mathbf{Z}, i, j} b_i c_{m^{\prime}+j} \overline{b_j c_{m^{\prime}+i}} \\
+= & \sum_{(m-i-j), i, j} b_i c_{m-i} \overline{b_j c_{m-j}} \\
+= & \sum_m \sum_{i, j} b_i c_{m-i} \overline{b_j c_{m-j}} \\
+= & \sum_m\left(\sum_i b_i c_{m-i}\right)\left(\sum_j \overline{b_j c_{m-j}}\right) \\
+= & \sum_m\left|a_m\right|^2\left(m \leqslant-1 \text { 或 } m \geqslant n+1 \text { 时 } a_m=0\right),
+\end{aligned}
+$$
+所以
+$$
+\begin{aligned}
+\sum_{m=0}^n\left|a_m\right|^2 & =\sum_{m^{\prime} \in \mathbf{Z}}\left|\sum_i b_i \overline{c_{m^{\prime}+i}}\right|^2 \\
+& \geqslant\left|\sum_i b_i \overline{c_{i-k}}\right|^2+\left|\sum_i b_i \overline{c_{i+l}}\right|^2 \\
+& =\left|b_k \overline{c_0}\right|^2+\left|b_0 \overline{c_l}\right|^2 \\
+& =\left|b_k c_0\right|^2+\left|b_0 c_l\right|^2,
+\end{aligned}
+$$
+引理 2 得证.
+下面看原命题: 设 $z_1, z_2, \cdots, z_n$ 中, $z_1, z_2, \cdots, z_k$ 的模小于 $1, z_{k+1}$, $z_{k+2}, \cdots, z_n$ 的模不小于 1 . 则由引理 1 可得
+$$
+\begin{aligned}
+\sum_{i=1}^n\left|z_i\right|^2 & =\sum_{i=1}^k\left|z_i\right|^2+\sum_{j=k+1}^n\left|z_j\right|^2 \\
+& \leqslant k-1+\left|z_1 z_2 \cdots z_k\right|^2+(n-k-1)+\left|z_{k+1} z_{k+2} \cdots z_n\right|^2 .
+\end{aligned}
+$$
+在引理 2 中令 $g(x)=\left(x^{-} z_1\right)\left(x-z_2\right) \cdots\left(x^{--} z_k\right), h(x)=\left(x-z_{k+1}\right)(x- \left.z_{k+2}\right) \cdots\left(x-z_n\right)$, 则有
+$$
+\begin{gathered}
+\left|z_1 z_2 \cdots z_k\right|^2+\left|z_{k+1} z_{k+2} \cdots z_n\right|^2 \\
+\leqslant 1^2+\left|a_1\right|^2+\cdots+\left|a_n\right|^2 \leqslant 2,
+\end{gathered}
+$$
+所以 $\sum_{i=1}^n\left|z_i\right|^2 \leqslant k-1+(n-k-1)+2=n$, 证毕.
+%%PROBLEM_END%%
+
+

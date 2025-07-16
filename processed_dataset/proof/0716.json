@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例6. 正实数 $a_1, a_2, \\cdots, a_{2011}$ 满足 $a_1<a_2<\\cdots<a_{2011}$. 证明: 其中一定存在两个数 $a_i, a_j(i<j)$, 使得\n$$\na_j-a_i<\\frac{\\left(1+a_i\\right)\\left(1+a_j\\right)}{2010} .\n$$",
+    "solution": "证明:令 $x_i=\\frac{2010}{1+a_i}, i=1,2, \\cdots, 2011$. 则 $0<x_{2011}<x_{2010}<\\cdots< x_1<2010$, 即 2011 个数 $x_{2011}, x_{2010}, \\cdots, x_1$ 在如下 2010 个区间里:\n$$\n(0,1],(1,2],(2,3], \\cdots,(2008,2009],(2009,2010) \\text {, }\n$$\n所以, 由抽屉原理知, 其中一定有两个数在同一个区间里, 故一定存在 $1 \\leqslant k \\leqslant 2010$, 使得 $x_k-x_{k+1}<1$, 从而\n$$\n\\frac{2010}{1+a_k}-\\frac{2010}{1+a_{k+1}}<1\n$$\n即\n$$\na_{k+-1}-a_k<\\frac{\\left(1+a_k\\right)\\left(1+a_{k+1}\\right)}{2010},\n$$\n故命题得证.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例6.. 已知复数 $z$ 满足 $11 z^{100}+10 \\mathrm{i} z^{99}+10 \\mathrm{i} z-11=0$, 求证: $|z|=1$.",
+    "solution": "分析:与解将已知复数方程变形为 $z^{99}=\\frac{11-10 \\mathrm{i} z}{11 z+10 \\mathrm{i}}$,\n要证 $|z|=1$, 只要证 $\\left|\\frac{11-10 \\mathrm{i} z}{11 z+10 \\mathrm{i}}\\right|=1$ 就行了, 这可以用反证法.\n设 $z=a+b \\mathrm{i}(a 、 b \\in \\mathbf{R})$, 则\n$$\n\\left|z^{99}\\right|=\\left|\\frac{11-10 \\mathrm{i} z}{11 z+10 \\mathrm{i}}\\right|=\\sqrt{\\frac{121+220 b+100\\left(a^2+\\overline{b^2}\\right)}{121\\left(a^2+b^2\\right)+220 b+100}} .\n$$\n记\n$$\n\\begin{aligned}\n& f(a, b)=121+220 b+100\\left(a^2+b^2\\right), \\\\\n& g(a, b)=121\\left(a^2+b^2\\right)+220 b+100 .\n\\end{aligned}\n$$\n若 $a^2+b^2>1$, 则 $f(a, b)<g(a, b)$, 即 $|z|^{99}<1$, 有 $|z|<1, a^2+ b^2<1$, 矛盾.\n若 $a^2+b^2<1$, 则 $f(a, b)>g(a, b)$, 即 $|z|^{99}>1$, 有 $|z|>1, a^2+ b^2>1$,矛盾.\n从而只能有 $a^2+b^2=1$, 故 $|z|=1$, 证毕.",
+    "remark": "注:本题处理技巧独特, 读者应仔细体会.",
+    "figures": []
+}

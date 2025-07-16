@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题11: 设由模为 1 的 $n(2<n<6)$ 个复数组成的集合 $S$ 满足下面两条:\n(1) $1 \\in S$;\n(2) 若 $z_1 \\in S, z_2 \\in S$, 则 $z_1-2 z_2 \\cos \\theta \\in S$, 其中 $\\theta=\\arg \\frac{z_1}{z_2}$.\n则集合 $S=$",
+    "solution": "解: $\\{1,-1, \\mathrm{i},-\\mathrm{i}\\}$. 当 $z_1=z_2=z$ 时, 若 $z \\in S$, 则 $z_1-2 z_2 \\cos \\theta=-z \\in S$. 因 $|z|=1$, 所以 $|z|=|-z|=1$. 这说明 $S$ 中含有偶数个元素.\n又 $2<n<6$, 所以 $n=4$. 由 $1 \\in S$, 得 $-1 \\in S$. 设 $z_1=\\cos \\alpha+i \\sin \\alpha(\\sin \\alpha \\neq 0$, $0 \\leqslant \\alpha<2 \\pi), z_2=1, \\theta=\\arg \\left(\\frac{z_1}{z_2}\\right)=\\alpha$. 若 $z_1 \\in S$, 则 $z_1-2 \\cos \\theta=-\\cos \\alpha+i \\sin \\alpha \\in S$. 因为 $\\sin \\alpha \\neq 0$, 故 $\\cos \\alpha+i \\sin \\alpha \\neq-(\\cos \\alpha+i \\sin \\alpha)$, 所以 $\\cos \\alpha+\\mathrm{i} \\sin \\alpha=-\\cos \\alpha+\\mathrm{i} \\sin \\alpha$, 即 $\\cos \\alpha=0, \\sin \\alpha= \\pm 1$. 所以 $i \\in S,-i \\in S$.",
+    "remark": "",
+    "figures": []
+}

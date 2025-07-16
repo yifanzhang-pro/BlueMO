@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 圆 $W$ 内切于四边形 $A B C D, I$ 是圆 $W$ 的圆心, 且有 $(A I+D I)^2+(B I+ C I)^2=(A B+C D)^2$. 证明 : 四边形 $A B C D$ 是等腰梯形.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c7a10.png>), 设角,由已知 $\\left(\\frac{r}{\\sin \\alpha}+\\frac{r}{\\sin \\theta}\\right)^2+ \\left(\\frac{r}{\\sin \\beta}+\\frac{r}{\\sin \\gamma}\\right)^2=\\left(r \\frac{\\cos \\alpha}{\\sin \\alpha}+r \\frac{\\cos \\beta}{\\sin \\beta}+r \\frac{\\cos \\gamma}{\\sin \\gamma}+\\right. \\left.r \\frac{\\cos \\theta}{\\sin \\theta}\\right)^2$, 所以 $\\left(\\frac{1}{\\sin \\alpha}+\\frac{1}{\\sin \\theta}\\right)^2-\\left(\\frac{\\cos \\alpha}{\\sin \\alpha}+\\frac{\\cos \\theta}{\\sin \\theta}\\right)^2+ \\left(\\frac{1}{\\sin \\beta}+\\frac{1}{\\sin \\gamma}\\right)^2-\\left(\\frac{\\cos \\beta}{\\sin \\beta}+\\frac{\\cos \\gamma}{\\sin \\gamma}\\right)^2=2\\left(\\frac{\\cos \\alpha}{\\sin \\alpha}+\\right. \\left.\\frac{\\cos \\theta}{\\sin \\theta}\\right)\\left(\\frac{\\cos \\beta}{\\sin \\beta}+\\frac{\\cos \\gamma}{\\sin \\gamma}\\right)$, 化简得 $2+\\frac{1-\\cos \\theta \\cos \\alpha}{\\sin \\alpha \\sin \\theta}+\\frac{1-\\cos \\beta \\cos \\gamma}{\\sin \\beta \\sin \\gamma}=\\frac{\\sin (\\alpha+\\theta) \\sin (\\beta+\\gamma)}{\\sin \\alpha \\sin \\beta \\sin \\gamma \\sin \\theta},[\\cos (\\beta-\\gamma)-\\cos (\\beta+\\gamma)][1+\\cos (\\beta+ \\gamma)]+[\\cos (\\alpha-\\theta)-\\cos (\\alpha+\\theta)] \\cdot[1+\\cos (\\alpha+\\theta)]=2 \\sin (\\alpha+\\theta) \\sin (\\beta+ \\gamma) \\cdots$ (1). 因为 $\\sin (\\beta+\\gamma)=\\sin (\\alpha+\\theta), \\cos (\\beta+\\gamma)=-\\cos (\\theta+\\alpha)$, 所以 (1) 式可化简为 $\\cos (\\alpha-\\theta) \\cos ^2 \\frac{\\beta+\\gamma}{2}+\\cos (\\beta-\\gamma) \\cdot \\cos ^2 \\frac{\\alpha+\\theta}{2}=1$. 所以 $\\cos (\\alpha- \\theta)=\\cos (\\beta-\\gamma)=1$. 所以 $\\alpha=\\theta, \\beta=\\gamma . \\angle A=\\angle D, \\angle B=\\angle C$.\n故 $A B C D$ 为等腰梯形.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c7a10.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题22. 在等腰 $\\triangle A B C$ 中, 顶角 $A=100^{\\circ}$, 角 $B$ 的平分线交 $A C$ 于 $D$, 求证: $A D+ B D=B C$.",
+    "solution": "在 $\\triangle A B D$ 中, $\\frac{A D}{\\sin 20^{\\circ}}=\\frac{B D}{\\sin 100^{\\circ}}=\\frac{A B}{\\sin 60^{\\circ}}$, 于是 $A D+B D= \\frac{A B}{\\sin 60^{\\circ}}\\left(\\sin 20^{\\circ}+\\sin 100^{\\circ}\\right)=\\frac{A B}{\\sin 60^{\\circ}} \\cdot 2 \\sin 60^{\\circ} \\cos 40^{\\circ}=2 A B \\cos 40^{\\circ}=B C$.",
+    "remark": "",
+    "figures": []
+}

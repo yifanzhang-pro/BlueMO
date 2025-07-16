@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题17 设 $x_1, x_2, \\cdots, x_n$ 都是非负实数, $a$ 是它们中的最小值, 记 $x_{n+1}= x_1$. 求证:\n$$\n\\sum_{j=1}^n \\frac{1+x_j}{1+x_{j+1}} \\leqslant n+\\frac{1}{(1+a)^2} \\sum_{j=1}^n\\left(x_j-a\\right)^2 .\n$$\n其中等号成立当且仅当 $x_1=x_2=\\cdots=x_n$.",
+    "solution": "用归纳法.\n当 $n=1$ 时要证的不等式显然成立.\n设当 $n=k$ 时结论成立.\n当 $n=k+1$ 时, 由轮换对称性, 不妨设 $x_{k+1}$ 最大.\n于是由归纳假设可得\n$$\n\\sum_{j=1}^{k-1} \\frac{1+x_j}{1+x_{j+1}}+\\frac{1+x_k}{1+x_1} \\leqslant k+\\frac{1}{(1+a)^2} \\sum_{j=1}^k\\left(x_j-a\\right)^2 .\n$$\n由(1)可知, 为证原不等式, 只需证\n$$\n\\frac{1+x_k}{1+x_{k+1}}+\\frac{1+x_{k+1}}{1+x_1}-\\frac{1+x_k}{1+x_1} \\leqslant 1+\\frac{1}{(1+a)^2}\\left(x_{k+1}-a\\right)^2 .\n$$\n即\n$$\n\\frac{\\left(x_{k+1}-x_k\\right)\\left(x_{k+1}-x_1\\right)}{\\left(1+x_{k+1}\\right)\\left(1+x_1\\right)} \\leqslant \\frac{1}{(1+a)^2}\\left(x_{k+1}-a\\right)^2 .\n$$\n由于 $a=\\min \\left\\{x_1, x_2, \\cdots, x_{k+1}\\right\\}, x_{k+1}=\\max \\left\\{x_1, x_2, \\cdots, x_{k+1}\\right\\}$, 显然(2) 成立.\n这就证明了当 $n=k+1$ 时要证的不等式成立.\n而且为使 $n=k+1$ 时要证的不等式中的等号成立, 当且仅当(1)和(2)中的等号成立.\n由归纳假设 (1)中等号成立的充要条件是 $a=x_1=x_2=\\cdots=x_k$. 从而(2)中等号成立的充要条件是 $x_{k+1}=a$. 故当 $n=k+1$ 时, 原不等式中等号成立当且仅当 $x_1= x_2=\\cdots=x_{k+1}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题18. 设 $n$ 是大于 1 的自然数,求证:\n$$\n\\sqrt{\\mathrm{C}_n^1}+2 \\cdot \\sqrt{\\mathrm{C}_n^2}+\\cdots+n \\cdot \\sqrt{\\mathrm{C}_n^n}<\\sqrt{2^{n-1} \\cdot n^3} .\n$$",
+    "solution": "当 $n=2$ 时,则 $\\sqrt{2}<2$. 命题成立.\n当 $n=3$ 时, 则 $1<\\sqrt{3}$. 所以可设 $n \\geqslant 4$. 由柯西不等式, 得 $1 \\cdot \\sqrt{\\mathrm{C}_n^1}+2 \\cdot \\sqrt{\\mathrm{C}_n^2}+\\cdots+n \\cdot \\sqrt{\\mathrm{C}_n^n} \\leqslant\\left(1^2+2^2\\right. \\left.+\\cdots+n^2\\right)^{\\frac{1}{2}}\\left(\\mathrm{C}_n^1+\\mathrm{C}_n^2+\\cdots+\\mathrm{C}_n^n\\right)^{\\frac{1}{2}}=\\left[\\frac{n(n+1)(2 n+1)}{6}\\right]^{\\frac{1}{2}} \\cdot\\left(2^n-1\\right)^{\\frac{1}{2}}$. 即证明: $\\frac{n(n+1)(2 n+1)}{6} \\cdot\\left(2^n-1\\right)<2^{n-1} \\cdot n^3$ 便可.\n等价于 $\\left(2 n^2+3 n+1\\right) \\left(2^n-1\\right)<3 n^2 \\cdot 2^n$. 因为 $n \\geqslant 4$, 故 $n^2>3 n, n^2 \\geqslant 3 n+1$, 进而 $3 n^2 \\geqslant 2 n^2+ 3 n+1$. 所以 $\\left(2 n^2+3 n+1\\right)\\left(2^n-1\\right)<3 n^2 \\cdot 2^n$. 从而, 命题成立.",
+    "remark": "",
+    "figures": []
+}

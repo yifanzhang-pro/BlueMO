@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 一个 $n$ 行 $n$ 列的数表 (矩阵), 每两行都不完全相同.\n证明一定存在某一列, 去掉这一列后, 每两行仍然不完全相同.",
+    "solution": "本题参见本节例 7 .",
+    "remark": "",
+    "figures": []
+}

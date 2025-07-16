@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter9.tex",
+    "problem_type": "calculation",
+    "problem": "例6. 对于任何的集合 $S$, 设 $n(S)$ 为集合 $S$ 的子集个数.\n如果 $A 、 B 、 C$ 是三个集合,满足下列条件:\n(1) $n(A)+n(B)+n(C)=n(A \\cup B \\cup C)$,\n(2) $|A|=|B|=100$,\n求 $|A \\cap B \\cap C|$ 的最小值.",
+    "solution": "解:如果一个集合有 $k$ 个元素, 那么它有 $2^k$ 个子集.\n由题设有\n$$\n2^{100}+2^{100}+2^{|C|}=2^{|A \\cup B \\cup C|},\n$$\n即\n$$\n1+2^{|C|-101}=2^{|A \\cup B \\cup C|-101} .\n$$\n因为 $1+2^{|C|-101}$ 是大于 1 且等于一个 2 的整数幂, 所以 $|C|=101$. 从而有\n$$\n|A \\cup B \\cup C|=102 \\text {. }\n$$\n由容斥原理得\n$$\n\\begin{aligned}\n|A \\cap B \\cap C|= & |A \\cup B \\cup C|+|A|+|B|+|C| \\\\\n& -|A \\cup B|-|A \\cup C|-|B \\cup C| .\n\\end{aligned}\n$$\n从而有\n$$\n|A \\cap B \\cap C|=403-|A \\cup B|-|A \\cup C|-|B \\cup C| \\text {. }\n$$\n由 $A \\cup B 、 A \\cup C 、 B \\cup C \\subseteq A \\cup B \\cup C$ 得， $|A \\cup B| 、|A \\cup C|$ 、 $|B \\cup C| \\leqslant 102$, 所以\n$$\n|A \\cap B \\cap C| \\geqslant 403-102 \\times 3=97 .\n$$\n另一方面, 取 $A=\\{1,2,3, \\cdots, 100\\}, B=\\{3,4,5, \\cdots, 102\\}, C=\\{1,2,4,5,6, \\cdots, 100,101,102\\}$, 满足题设条件.\n这时\n$$\n|A \\cap B \\cap C|=|\\{4,5,6, \\cdots, 100\\}|=97 .\n$$\n所以, $|A \\cap B \\cap C|$ 的最小值为 97 .",
+    "remark": "",
+    "figures": []
+}

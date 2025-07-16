@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 已知数列 $\\left\\{a_n\\right\\}, a_1=a_2=1, a_{n+2}=a_{n+1}+a_n$. 求证:对任意 $n \\in \\mathbf{N}_{+}$, 有 $\\operatorname{arccot} a_n \\leqslant \\operatorname{arccot} a_{n+1}+\\operatorname{arccot} a_{n+2}$,\n并指出等号成立的条件.",
+    "solution": "由 $a_n>0, \\operatorname{arccot} a_{n+1}+\\operatorname{arccot} a_{n+2} \\in(0, \\pi), \\cot x$ 在 $(0, \\pi)$ 上是减函数, 故只须证明: $\\cot \\left(\\operatorname{arccot} a_n\\right) \\geqslant \\cot \\left(\\operatorname{arccot} a_{n+1}+\\operatorname{arccot} a_{n+2}\\right)$, 即证 $\\left(a_{n+1}+\\right. \\left.a_{n+2}\\right) a_n \\geqslant a_{n+1} \\cdot a_{n+2}-1$.\n而 $a_{n+2}=a_{n+1}+a_n$, 故只要证明: $a_n a_{n+2}-a_{n+1}^2 \\geqslant-1$.\n用数学归纳法, 容易验证 $a_n a_{n+2}-a_{n+1}^2==(-1)^{n+1}$. 因此原不等式成立, 易见等号成立当且仅当 $n$ 为偶数.",
+    "remark": "",
+    "figures": []
+}

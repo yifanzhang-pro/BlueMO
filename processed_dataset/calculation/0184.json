@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例11. 试问,有多少种方式将数集 $\\left\\{2^0, 2^1, \\cdots, 2^n\\right\\}\\left(n \\in \\mathbf{N}_{+}\\right)$分拆为两个不相交的非空子集 $A$ 和 $B$, 使得方程 $n^2-S(A) x+S(B)=0$ 有整数根.\n其中 $S(M)$ 表示数集 $M$ 中所有元素的和?",
+    "solution": "解:设 $x_1 \\leqslant x_2$ 是方程 $x^2-S(A) x+S(B)=0$ 的两个整数根, 则 $x_1+ x_2=S(A)>0, x_1 \\cdot x_2=S(B)>0$, 从而 $0<x_1 \\leqslant x_2$ 且 $\\left(x_1+1\\right)\\left(x_2+\\right.$ 1) $=S(A)+S(B)+1=2^0+2^1+\\cdots+2^n+1=2^{n+1}$.\n由此可得 $x_1+1=2^k, x_2+1=2^{n+1-k}\\left(k=1,2,3, \\cdots,\\left[\\frac{n+1}{2}\\right]\\right)$, 反之当 $x_1+1=2^k, x_2+1=2^{n+1-k}\\left(k=1,2,3, \\cdots,\\left[\\frac{n+1}{2}\\right]\\right)$ 时, $0<x_1 \\leqslantx_2$ 是方程 $x^2-p x+q=0$ 的两个正整数根, 其中 $p=2^k+2^{n+1-k}-2, q=2^{n+1} -1-p$. 数 $p$ 有唯一的二进制表达式, 在该表达式中 2 的最高方幂不超过 $2^n$, 又由于 $p+q=2^{n+1}-1$. 所以在 $p$ 的二进制表达式中是 1 的地方, 在 $q$ 的二进制表达式中刚好是 0 , 反之亦然.\n由此可见, 对每个 $k\\left(1 \\leqslant k \\leqslant\\left[\\frac{n+1}{2}\\right]\\right)$, 都存在唯一的分法 $(A, B)$, 使方程 $x^2-S(A) x+S(B)=0$ 的 2 个正整数根恰好是 $x_1$ 和 $x_2\\left(x_1 \\leqslant x_2\\right)$, 这个对应是一一对应.\n故共有 $\\left[\\frac{n+1}{2}\\right]$ 种不同的分拆方式.",
+    "remark": "",
+    "figures": []
+}

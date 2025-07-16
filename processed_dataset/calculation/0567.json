@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题6 设函数 $y=f(x)$ 对一切实数 $x$ 都满足\n$$\nf(3+x)=f(3-x),\n$$\n且方程 $f(x)=0$ 恰有 6 个不同的实根, 求这 6 个实根的和.",
+    "solution": "由题设知, 函数 $f(x)$ 的图象是关于直线 $x=3$ 对称的,因而每两个关于 $x=3$ 对称的根的和为 6 . 于是这 6 个根的和为 $3 \\times 6=18$. 其实, 下面的说法似乎更自然一些.\n若 $3+x_0$ 为 $f(x)=0$ 的根, 则由题设知 $f\\left(3-x_0\\right)=f\\left(3+x_0\\right)=0$, 所以 $3-x_0$ 也是 $f(x)=0$ 的根.\n于是可设这 6 个根为 $3 \\pm x_1, 3 \\pm x_2, 3 \\pm x_3$, 故它们的和为 18 .",
+    "remark": "",
+    "figures": []
+}

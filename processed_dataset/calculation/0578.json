@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题8 函数 $f(x)=a^{2 x}+2 a^x-1(a>0$, 且 $a \\neq 1)$ 在区间 $[-1,1]$ 上的最大值为 14 , 求 $a$ 的值.",
+    "solution": "令 $t=a^x$, 则 $y=t^2+2 t-1$. 因为 $x \\in[-1,1]$, 所以有如下两种情形: \n(1) 当 $0<a<1$ 时, 则 $a \\leqslant t \\leqslant \\frac{1}{a}$, 于是 $y=(t+1)^2-2$ 的对称轴为 $t= -1<a$, 所以 $y=t^2+2 t-1$ 在 $\\left[a, \\frac{1}{a}\\right]$ 上是单调增函数, 故当 $t=\\frac{1}{a}$ 时, $y$ 取最大值 14 , 即 $\\frac{1}{a^2}+\\frac{2}{a}-1=14$. \n解方程得 $a=\\frac{1}{3}$ 或 $a=-\\frac{1}{5}$ (舍去), 故 $a= \\frac{1}{3}$. \n(2) 当 $a>1$ 时, $\\frac{1}{a} \\leqslant t \\leqslant a$, 于是 $y=(t+1)^2-2$ 的对称轴 $t=-1< \\frac{1}{a}$, 故 $y=t^2+2 t-1$ 在 $\\left[\\frac{1}{a}, a\\right]$ 上为单调增函数,所以, 当 $t=a$ 时, $y$ 取最大值 14 , 即 $a^2+2 a-1=14$. \n解方程得 $a=3$ 或 $a=-5$ (舍去), 故 $a=3$. \n综上所述, $a$ 的值为 $\\frac{1}{3}$ 或 3 .",
+    "remark": "",
+    "figures": []
+}

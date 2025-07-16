@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例7. 如图(<FilePath:./images/volume7/figures/fig-c5i9.png>), 已知两个半径不相等的圆 $O_1$ 与圆 $O_2$ 相交于 $M 、 N$ 两点, 且 $\\odot O_1$ 与 $\\odot O_2$ 分别与 $\\odot O$ 内切于 $S 、 T$ 两点.\n求证: $O M \\perp M N$ 的充分必要条件是 $S 、 N 、 T$ 三点共线.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c5i9.png>), 连结 $O S 、 O T 、 S T 、 S M$, 作公切线 $S P 、 T P$, 由根轴定理知, $P 、 M 、 N$ 三点共线.\n又 $\\angle O S P=\\angle O T P=90^{\\circ}$, 所以 $O 、 S 、 P 、 T$ 四点共圆.\n$O M \\perp M N \\Leftrightarrow \\angle O M P=\\angle O S P=90^{\\circ} \\Leftrightarrow O 、 M 、 T 、 P 、 S$ 五点共圆.\n注意到 $S P 、 T P$ 为切线, $\\angle N S P=\\angle S M P, \\angle N T P=\\angle T M P$.\n故 $O 、 M 、 T 、 P 、 S$ 共圆 $\\Leftrightarrow \\angle S M T+\\angle S P T=180^{\\circ} \\Leftrightarrow \\angle S M P+\\angle T M P+ \\angle S P T=180^{\\circ} \\Leftrightarrow \\angle S P T+\\angle P S N+\\angle P T N=180^{\\circ} \\Leftrightarrow S 、 N 、 T$ 共线.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5i9.png",
+        "./images/volume7/figures/fig-c5i9.png"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例4. 如图(<FilePath:./images/volume7/figures/fig-c2i9.png>), $P$ 为 $\\triangle A B C$ 内一点, 使得 $\\angle P A B=10^{\\circ}, \\angle P B A=20^{\\circ}, \\angle P C A=30^{\\circ}$, $\\angle P A C=40^{\\circ}$. 求证: $\\triangle A B C$ 是等腰三角形.",
+    "solution": "证明:设 $\\angle A C B=x$, 则 $\\angle B C P=x-30^{\\circ}$.\n对 $\\triangle A P C$ 和点 $B$ 应用角元塞瓦定理有\n$$\n1=\\frac{\\sin \\angle A P}{\\sin \\angle B P C} \\cdot \\frac{\\sin \\angle P C B}{\\sin \\angle B C A} \\cdot \\frac{\\sin \\angle C A B}{\\sin \\angle B A P}\n$$\n$$\n\\begin{aligned}\n=\\frac{\\sin 150^{\\circ}}{\\sin 100^{\\circ}} \\cdot \\frac{\\sin \\left(x-30^{\\circ}\\right)}{\\sin x} & \\cdot \\frac{\\sin 50^{\\circ}}{\\sin 10^{\\circ}} \\\\\n\\frac{\\sin \\left(x-30^{\\circ}\\right)}{\\sin x} & =\\frac{2 \\cos 10^{\\circ} \\cdot \\sin 10^{\\circ}}{\\sin 50^{\\circ}} \\\\\n& =\\frac{\\sin \\left(50^{\\circ}-30^{\\circ}\\right)}{\\sin 50^{\\circ}} .\n\\end{aligned}\n$$\n则\n$$\n\\begin{aligned}\n\\frac{\\sin \\left(x-30^{\\circ}\\right)}{\\sin x} & =\\frac{2 \\cos 10^{\\circ} \\cdot \\sin 10^{\\circ}}{\\sin 50^{\\circ}} \\\\\n& =\\frac{\\sin \\left(50^{\\circ}-30^{\\circ}\\right)}{\\sin 50^{\\circ}} .\n\\end{aligned}\n$$\n故 $\\cos 30^{\\circ}-\\cot x \\cdot \\sin 30^{\\circ}=\\cos 30^{\\circ}-\\cot 50^{\\circ} \\cdot \\sin 30^{\\circ}$.\n所以, $\\cot x=\\cot 50^{\\circ}$.\n因此 $x=50^{\\circ}$. 又因为 $\\angle B A C=10^{\\circ}+40^{\\circ}=50^{\\circ}=x=\\angle A C B$, 所以 $\\triangle A B C$ 为等腰三角形.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2i9.png"
+    ]
+}

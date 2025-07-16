@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例3. $ \\triangle A B C$ 中, 点 $O$ 为外心, $H$ 为垂心, 求证: $\\overrightarrow{O H}=\\overrightarrow{O A}+\\overrightarrow{O B}+\\overrightarrow{O C}$.",
+    "solution": "分析:与解作直径 $\\overrightarrow{B D}$, 连接 $D A 、 D C$, 有 $\\overrightarrow{O B}=-\\overrightarrow{O D}, D A \\perp A B, D C \\perp B C, A H \\perp B C, C H \\perp A B$.\n故 $C H / / D A, A H / / D C$, 得 $A H C D$ 是平行四边形, 进而 $\\overrightarrow{A H}=\\overrightarrow{D C}$.\n又 $\\overrightarrow{D C}=\\overrightarrow{O C}-\\overrightarrow{O D}=\\overrightarrow{O C}+\\overrightarrow{O B}$, 得 $\\overrightarrow{O H}=\\overrightarrow{O A}+\\overrightarrow{A H}=\\overrightarrow{O A}+\\overrightarrow{D C}=\\overrightarrow{O A}+ \\overrightarrow{O B}+\\overrightarrow{O C}$, 证毕.",
+    "remark": "",
+    "figures": []
+}

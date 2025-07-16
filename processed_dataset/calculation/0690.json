@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题13 函数 $y=\\sin x\\left(1+\\tan \\frac{x}{2}\\right)$ 的最小正周期是",
+    "solution": "$2 \\pi$. 由原函数变换得 $y=\\sin x+\\sin x \\cdot \\frac{1-\\cos x}{\\sin x}=\\sin x+1- \\cos x=\\sqrt{2} \\sin \\left(x-\\frac{\\pi}{4}\\right)+1$, 故 $T=\\frac{2 \\pi}{\\omega}=2 \\pi$.",
+    "remark": "",
+    "figures": []
+}

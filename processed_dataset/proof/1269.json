@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例18. (Ostrowski) 设实数 $a_1, a_2, \\cdots, a_n$ 与 $b_1, b_2, \\cdots, b_n$ 不成比例.\n实数 $x_1, x_2, \\cdots, x_n$ 满足:\n$$\n\\left\\{\\begin{array}{l}\na_1 x_1+a_2 x_2+\\cdots+a_n x_n=0, \\\\\nb_1 x_1+b_2 x_2+\\cdots+b_n x_n=1 .\n\\end{array}\\right.\n$$\n求证: $x_1^2+x_2^2+\\cdots+x_n^2 \\geqslant \\frac{\\sum_{i=1}^n a_i^2}{\\sum_{i=1}^n a_i^2 \\cdot \\sum_{i=1}^n b_i^2-\\left(\\sum_{i=1}^n a_i b_i\\right)^2}$.",
+    "solution": "证法 1 设 $\\sum_{i=1}^n x_i^2=\\sum_{i=1}^n x_i^2+\\alpha \\cdot \\sum_{i=1}^n a_i x_i+\\beta\\left(\\sum_{i=1}^n b_i x_i-1\\right)$,\n其中 $\\alpha 、 \\beta$ 为待定系数.\n于是\n$$\n\\begin{aligned}\n\\sum_{i=1}^n x_i^2 & =\\sum_{i=1}^n\\left(x_i+\\frac{\\alpha a_i+\\beta b_i}{2}\\right)^2-\\sum_{i=1}^n \\frac{\\left(\\alpha a_i+\\beta b_i\\right)^2}{4}-\\beta \\\\\n& \\geqslant-\\sum_{i=1}^n \\frac{\\left(\\alpha a_i+\\beta b_i\\right)^2}{4}-\\beta .\n\\end{aligned}\n$$\n上述不等式等号成立, 当且仅当\n$$\nx_i=-\\frac{\\alpha a_i+\\beta b_i}{2}(i=1,2, \\cdots, n) . \\label{(1)}\n$$\n将(1)式代回 $\\sum_{i=1}^n a_i x_i=0$ 及 $\\sum_{i=1}^n b_i x_i=1$ 中, 有:\n$$\n\\left\\{\\begin{array}{l}\n-\\frac{1}{2} \\alpha A-\\frac{1}{2} \\beta C=0 \\\\\n-\\frac{1}{2} \\alpha C-\\frac{1}{2} \\beta B=1\n\\end{array}\\right.\n$$\n其中, $A=\\sum_{i=1}^n a_i^2, B=\\sum_{i=1}^n b_i^2, C=\\sum_{i=1}^n a_i b_i$. 因此,\n$$\n\\alpha=\\frac{2 C}{A B-C^2}, \\beta=-\\frac{2 A}{A B-C^2} .\n$$\n故\n$$\n\\sum_{i=1}^n x_i^2 \\geqslant-\\sum_{i=1}^n\\left(\\frac{\\alpha a_i+\\beta b_i}{2}\\right)^2-\\beta=\\frac{A}{A B-C^2} .\n$$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例19 如图 (<FilePath:./images/volume3/figures/fig-c3e19.png>), 平面上有四个点 $A 、 B 、 P 、 Q$, 其中 $A 、 B$ 为定点, 且 $A B=\\sqrt{3}, P 、 Q$ 为动点, 满足 $A P=P Q=Q B=1$, 又 $\\triangle A P B$ 和 $\\triangle P Q B$ 的面积分别为 $S$ 和 $T$, 求 $S^2+T^2$ 的最大值.",
+    "solution": "$$\n\\text { 解 } \\begin{aligned}\nS & =\\frac{1}{2} P A \\cdot A B \\cdot \\sin A=\\frac{\\sqrt{3}}{2} \\sin A, \\\\\nT & =\\frac{1}{2} P Q \\cdot Q B \\cdot \\sin Q=\\frac{1}{2} \\sin Q,\n\\end{aligned}\n$$\n所以\n$$\nS^2+T^2=\\frac{3}{4} \\sin ^2 A+\\frac{1}{4} \\sin ^2 Q .\n$$\n由余弦定理, 在 $\\triangle P A B$ 中,\n$$\nP B^2=P A^2+A B^2-2 \\cdot P A \\cdot A B \\cdot \\cos A=4-2 \\sqrt{3} \\cos A,\n$$\n在 $\\triangle P Q B$ 中,\n$$\nP B^2=P Q^2+Q B^2-2 P Q \\cdot Q B \\cos Q=2-2 \\cos Q,\n$$\n所以\n$$\n4-2 \\sqrt{3} \\cos A=2-2 \\cos Q,\n$$\n即 $\\cos Q=\\sqrt{3} \\cos A-1$.\n所以\n$$\n\\begin{aligned}\nS^2+T^2 & =-\\frac{3}{4}\\left(1-\\cos ^2 A\\right)+\\frac{1}{4}\\left(1-\\cos ^2 Q\\right) \\\\\n& =-\\frac{3}{2} \\cos ^2 A+\\frac{\\sqrt{3}}{2} \\cos A+\\frac{3}{4} \\\\\n& =-\\frac{3}{2}\\left(\\cos A-\\frac{\\sqrt{3}}{6}\\right)^2+\\frac{7}{8}\n\\end{aligned}\n$$\n当 $\\cos A=\\frac{\\sqrt{3}}{6}$ 时, $S^2+T^2$ 有最大值 $\\frac{7}{8}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c3e19.png"
+    ]
+}

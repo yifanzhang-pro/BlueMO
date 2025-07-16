@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例7. 是否存在无穷多对不同的正整数对 $(a, b)$ 使 $a \\mid b^2+1$ 且 $b \\mid a^2+1$.",
+    "solution": "解法二先证下列引理.\n引理 2 设 $f_1=1, f_2=1, f_{n+2}=f_{n+1}+f_n\\left(n \\in \\mathbf{N}_{+}\\right)$, 则\n$$\nf_{2 n+1}^2+1=f_{2 n-1} f_{2 n+3} \\text {. }\n$$\n事实上, 因 $f_{2 n+1}=f_{2 n}+f_{2 n-1}=f_{2 n-1}+f_{2 n-2}+f_{2 n-1}=2 f_{2 n-1}+\\left(f_{2 n-1}-\\right. \\left.f_{2 n-3}\\right)=3 f_{2 n-1}-f_{2 n-3}$. 于是同引理 1 可证引理 2 结论成立(只要令 $a_n= f_{2 n-1}$, 由引理 1 便可推出引理 2), 再取 $a=f_{2 n+1}, b=f_{2 n+3}\\left(n \\in \\mathbf{N}_{+}\\right)$便知存在无穷多对不同的正整数 $a, b$ 满足 $a \\mid b^2+1$ 且 $b \\mid a^2+1$.",
+    "remark": "",
+    "figures": []
+}

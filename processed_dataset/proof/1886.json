@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 如图(<FilePath:./images/volume7/figures/fig-c6p4.png>), 圆 $W_1 、 W_2$ 的圆心分别为 $O_1 、 O_2$, 两圆相交于点 $A 、 B$. 由点 $A$ 分别向圆 $W_1 、 W_2$ 作切线 $l_1 、 l_2$, 点 $T_1 、 T_2$ 分别位于圆 $W_1 、 W_2$ 上, 使得 $\\angle T_1 O_1 A=\\angle A O_2 T_2$. 圆 $W_1$ 上过点 $T_1$ 的切线与 $l_2$ 相交于点 $M_1$, 圆 $W_2$ 上过点 $T_2$ 的切线与 $l_1$ 相交于点 $M_2$. 证明: 线段 $M_1 M_2$ 的中点位于一条不依赖于点 $T_1 、 T_2$ 位置的直线上.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c6a4.png>), 以 $A$ 为中心, 作系数为 $k(k>0)$ 的同位相似,将圆 $W_1$ 变为与圆 $W_2$ 相等的圆 $W_1^{\\prime}$. 用带撤的同一字母 (连同原来的下标) 表示各个点和各条直线在该变换之下的像,如图.\n设 $B_1$ 是圆 $W_2$ 与圆 $W_1^{\\prime}$ 的 (不同于 $A$ ) 第二个交点.\n圆 $W_1^{\\prime}$ 与圆 $W_2$ 关于直线 $A B_1$ 相互对称.\n在此对称之下, $T_1^{\\prime}$ 变为 $T_2, l_1^{\\prime}$ 变为 $l_2, M_1^{\\prime}$ 变为 $M_2$. 从而, $A M_2=A M_1^{\\prime}=k A M_1(k$ 不依赖于点 $T_1$ 和 $T_2$ 的位置). 于是, 不论点 $T_1 、 T_2$ 的位置如何变化, 所得到的 $\\triangle A M_1 M_2$ 都彼此为同位相似 (因为 $M_2, M_1$ 分别位于直线 $l_1 、 l_2$ 上, 它们都经过点 $A$, 且位于直线 $A B_1$ 的不同侧, 而比值 $A M_2$ : $A M_1$ 为常数). 由此即知, 线段 $M_1 M_2$ 的中点位于一条固定的经过点 $A$ 的直线上.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6p4.png",
+        "./images/volume7/figures/fig-c6a4.png"
+    ]
+}

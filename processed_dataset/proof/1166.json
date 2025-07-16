@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-6.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $x_i, i=1,2, \\cdots, n$ 为正数, 且满足 $\\sum_{i=1}^n x_i=a, a \\in \\mathbf{R}^{+}, m, n \\in \\mathbf{N}^*, n \\geqslant 2$, 求证:\n$$\n\\sum_{i=1}^n \\frac{x_i^m}{a-x_i} \\geqslant \\frac{a^{m-1}}{(n-1) n^{m-2}} .\n$$",
+    "solution": "证明:当 $m=1$ 时, 即证明\n$$\n\\sum_{i=1}^n \\frac{x_i}{a-x_i} \\geqslant \\frac{n}{n-1} .\n$$\n由于\n$$\n\\sum_{i=1}^n \\frac{x_i}{a-x_i}=\\sum_{i=1}^n\\left[\\left(\\frac{a}{a-x_i}\\right)-1\\right]=\\sum_{i=1}^n \\frac{a}{a-x_i}-n,\n$$\n由柯西不等式, 得\n$$\n\\sum_{i=1}^n \\frac{a}{a-x_i} \\cdot \\sum_{i=1}^n\\left(a-x_i\\right) \\geqslant a n^2,\n$$\n即\n$$\n\\sum_{i=1}^n \\frac{a}{a-x_i} \\geqslant \\frac{a n^2}{\\sum_{i=1}^n\\left(a-x_i\\right)}=\\frac{a n^2}{(n-1) a},\n$$\n所以\n$$\n\\sum_{i=1}^n \\frac{x_i}{a-x_i} \\geqslant \\frac{a n^2}{n a-a}-n=\\frac{n}{n-1},\n$$\n于是命题成立.\n当 $m \\geqslant 2$ 时, 由柯西不等式, 得\n$$\n\\sum_{i=1}^n \\frac{x_i^m}{a-x_i} \\cdot \\sum_{i=1}^n\\left(a-x_i\\right) \\geqslant\\left(\\sum_{i=1}^n x_i^{\\frac{m}{2}}\\right)^2 .\n$$\n再由幕平均值不等式, 得\n$$\n\\left(\\frac{1}{n} \\sum_{i=1}^n x_i^{\\frac{m}{2}}\\right)^2 \\geqslant\\left[\\frac{1}{n}\\left(\\sum_{i=1}^n x_i\\right)^{\\frac{m}{2}}\\right]^2=\\frac{a^m}{n^m} .\n$$\n由于 $\\sum_{i=1}^n\\left(a-x_i\\right)=(n-1) a$, 于是\n$$\n\\sum_{i=1}^n \\frac{x_i^m}{a-x_i} \\geqslant \\frac{a^{m-1}}{(n-1) n^{m-2}} .\n$$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter7.tex",
+    "text": "如果把一个图画在平面上时, 能够使它的边仅在端点处相交, 那么称这个图为平面图.\n有些图形从表面上看有几条边是相交的, 但是不能就此肯定它不是平面图,例如图(<FilePath:./images/volume12/figures/fig-c7i1-1.png>), 表面看有几条边相交,但是把它画成与它同构的如图(<FilePath:./images/volume12/figures/fig-c7i1-2.png>), 则可看出它是一个平面图.\n我们说到一个平面图, 总假定它已经按这样的要求画好了.\n一个平面图的顶点和边把平面分成一个一个互相隔开的区域, 每一个这样的区域称为平面图的一个面.\n这些面中有一个在所有边的外面, 称为外部面,其余的就称为内部面.\n例如图(<FilePath:./images/volume12/figures/fig-c7i2.png>) 中, $F_1 、 F_2 、 F_3 、 F_4$ 是内部面, $F_5$ 是外部面.\n在中学课本中已经见到过关于凸多面体的欧拉公式, 设凸多面体有 $v$ 个顶点、 $e$ 条棱和 $f$ 块面,则 $v-e+f=2$. 我们可以把这个公式推广到平面图上来.\n定理一(欧拉定理)如果一个连通的平面图 $G$ 有 $v$ 个顶点、 $e$ 条边、 $f$ 个面, 那么\n$$\nv-e+f=2 .\n$$\n证明对 $G$ 的边数用数学归纳法.\n若 $G$ 只有一个顶点, 则 $v=1, e=0, f=1$, 故 $v-e+f=2$ 成立.\n若 $G$ 为一条边, 则 $v=2, e=1, f=1$, 所以 $v-e+f=2$ 成立.\n设 $G$ 为 $k$ 条边时欧拉公式成立, 即 $v_k-e_k+f_k=2$. 现考察 $G$ 为 $k+1$ 条边时的情形.\n由于在 $k$ 条边的连通图上增加一条边, 使它仍为连通图, 只有两种情形:\n(i) 增加一个新顶点 $v^{\\prime}, v^{\\prime}$ 与图中的一点 $v$ 相邻, 如图(<FilePath:./images/volume12/figures/fig-c7i3-1.png>) 所示, 此时 $v_k$ 与 $e_k$ 都增加 1 , 而面数 $f_k$ 不变, 故\n$$\n\\left(v_k+1\\right)-\\left(e_k+1\\right)+f_k=v_k-e_k+f_k=2 .\n$$\n(ii) 用一条边连接图中的两个顶点 $v$ 和 $v^{\\prime}$, 如图(<FilePath:./images/volume12/figures/fig-c7i3-2.png>) 所示, 这时 $e_k$ 和 $f_k$ 都增加 1 而顶点数 $v_k$ 没有变, 故\n$$\nv_k-\\left(e_k+1\\right)+\\left(f_k+1\\right)=v_k-e_k+f_k=2 .\n$$\n按归纳法原理,定理对任何正整数 $e$ 成立.\n欧拉定理的一个重要应用是由此可以决定一个平面简单图中最多的边数.\n因为一个面上至少有 3 条边, $f$ 个面的边界上至少有 $3 f$ 条边.\n另外,一条边最多是 2 个面的边界,所以\n$$\n2 e \\geqslant 3 f, f \\leqslant \\frac{2}{3} e .\n$$\n代入欧拉公式:\n$$\n2=v-e+f \\leqslant v-e+\\frac{2}{3} e,\n$$\n即\n$$\ne \\leqslant 3 v-6\n$$\n这就证明了下面的定理.\n定理二一个连通的平面简单图 $G$ 有 $v(v \\geqslant 3)$ 个顶点及 $e$ 条边, 则 $e \\leqslant 3 v-6$.\n其实定理二对不连通的平面简单图也成立.\n应用定理二可以判定某些图是非平面图.",
+    "figures": [
+        "./images/volume12/figures/fig-c7i1-1.png",
+        "./images/volume12/figures/fig-c7i1-2.png",
+        "./images/volume12/figures/fig-c7i2.png",
+        "./images/volume12/figures/fig-c7i3-1.png",
+        "./images/volume12/figures/fig-c7i3-2.png"
+    ]
+}

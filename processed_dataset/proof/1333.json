@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例10. 设 $x 、 y 、 z 、 \\alpha 、 \\beta 、 \\gamma$ 为正数, $\\alpha 、 \\beta 、 \\gamma$ 中任意两数之和大于第三个且属于区间 $[0, \\pi)$, 求证:\n$$\n\\sqrt{x^2+y^2-2 x y \\cos \\alpha}+\\sqrt{y^2+z^2-2 y z \\cos \\beta} \\geqslant \\sqrt{z^2+x^2-2 z x \\cos \\gamma} .\n$$",
+    "solution": "分析:不等式中的项让我们联想到余弦定理的形式, 提示我们去构造一些三角形.\n证明因为 $\\alpha<\\beta+\\gamma<\\pi, \\beta<\\gamma+\\alpha<\\pi, \\gamma<\\alpha+\\beta<\\pi, \\gamma<\\alpha+\\beta<\\pi$, 故从空间一点 $P$ 可作一个三角面 $P-A B C$ 使得:\n$$\n\\begin{gathered}\n\\angle A P B=\\alpha, \\\\\n\\angle B P C=\\beta, \\\\\n\\angle C P A=\\gamma ; \\\\\nP A=x, P B=y, \\\\\nP C=z \n\\end{gathered}\n$$\n如图(<FilePath:./images/volume5/figures/fig-c5i3.png>).\n这样一来,利用 $A B+B C \\geqslant A C$, 有原不等式成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume5/figures/fig-c5i3.png"
+    ]
+}

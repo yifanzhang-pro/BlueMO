@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题7. 已知直线 $a x+b y+c=0$ 中, $a, b, c$ 取自集合 $\\{-3,-2,-1,0,1,2$, $3\\}$ 中三个不同元素, 并没该直线的倾斜角为锐角, 那么这样直线的条数是 .",
+    "solution": "设倾斜角为 $\\theta$, 则 $\\tan \\theta=-\\frac{a}{b}>0$, 由 $a, b$ 取值集合的对称性,不失一般性可设 $a>0, b<0$. (1) 当 $c=0$ 时, $a$ 有 $\\mathrm{C}_3^1$ 种取法, $b$ 有 $\\mathrm{C}_3^1$ 种取法, 排除 2 个重复 (因 $x-y=0,2 x-2 y=0,3 x-3 y=0$ 表示同一直线), 故这样的直线有 $\\mathrm{C}_3^1 \\mathrm{C}_3^1-2=7$ 条; (2) 当 $c \\neq 0$ 时, $a$ 有 $\\mathrm{C}_3^1$ 种取法, $b$ 有 $\\mathrm{C}_3^1$ 种取法, $c$ 有 $\\mathrm{C}_4^1$ 种取法, 故这样的直线有 $\\mathrm{C}_3^1 \\mathrm{C}_3^1 \\cdot \\mathrm{C}_4^1=36$ 条, 从而符合条件的直线共有 $7+36=43$ 条.",
+    "remark": "",
+    "figures": []
+}

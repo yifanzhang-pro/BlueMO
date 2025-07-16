@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例11. 如图(<FilePath:./images/volume7/figures/fig-c9i16.png>), 凸四边形 $A B C D$ 有内切圆, 且内切圆分别切边 $A B 、 B C 、 C D 、 D A$ 于 $A_1 、 B_1 、 C_1$ 、 $D_1$, 点 $E 、 F 、 G 、 H$ 分别为线段 $A_1 B_1 、 B_1 C_1 、 C_1 D_1$ 、 $D_1 A_1$ 的中点, 证明: 四边形 $E F G H$ 为矩形的充要条件是 $A 、 B 、 C 、 D$ 共圆.",
+    "solution": "证明:以 $A B C D$ 内切圆为反演圆作反演变换, 则由反演定理 4, $A 、 B 、 C 、 D$ 的反点分别为 $H 、 E 、 F 、 G$, 因为不过反演中心的圆的反形仍是一个圆, 于是 $A 、 B 、 C 、 D$ 共圆等价于 $E 、 F 、 G 、 H$ 共圆.\n注意 $E 、 F 、 G 、 H$ 分别是为四边形 $A_1 B_1 C_1 D_1$ 四边形的中点, 所以四边形 $E F G H$ 是一个平行四边形, 因而 $E 、 F 、 G 、 H$ 四点共圆的充要条件是平行四边形 $E F G H$ 是矩形, 这又等价于 $A 、 B 、 C 、 D$ 共圆.",
+    "remark": "注:此题曾在圆的初步中讲解过, 这里给出一种反演变换的解法.",
+    "figures": [
+        "./images/volume7/figures/fig-c9i16.png"
+    ]
+}

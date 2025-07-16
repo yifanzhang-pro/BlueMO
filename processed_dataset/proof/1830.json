@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 已知圆心分别为 $A 、 B$ 的两个圆交于点 $C 、 D$. 过点 $A 、 B 、 C$ 的圆与 $\\odot A$ 、 $\\odot B$ 分别交于点 $E 、 F$, 且不包含点 $C$ 的 $\\overparen{E F}$ 在 $\\odot A$ 和 $\\odot B$ 的外部.\n证明: $C D$ 平分这段弧 $\\overparen{E F}$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c3a4.png>),因为 $\\angle C E D=\\frac{1}{2} \\angle C A D= \\angle C A B, \\angle C A B=\\angle C E B$, 所以, $\\angle C E D= \\angle C E B$, 即 $E 、 D 、 B$ 三点共线.\n因为 $\\overparen{C B}=\\overparen{B F}$, 所以, $\\angle C E B=\\angle B E F$, 即 $D$ 在 $\\angle C E F$ 的角平分线上.\n同理, $D$ 在 $\\angle C F E$ 的角平分线上.\n因此, $D$ 是 $\\triangle C E F$ 的内心.\n从而, $C D$ 是\n$\\angle E C F$ 的角平分线, 即平分 $\\overparen{E F}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c3a4.png"
+    ]
+}

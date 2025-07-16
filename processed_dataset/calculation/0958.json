@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 设 $z_1 、 z_2 \\in \\mathbf{C}$, 且 $z_1 z_2 \\neq 0, A=z_1 \\overline{z_1}+z_2 \\overline{z_2}, B=z_1 \\overline{z_2}+\\overline{z_1} z_2$, 试问: $A$ 与 $B$ 能否比较大小关系? 若能, 请指明大小关系; 若不能, 请说明理由.",
+    "solution": "只有当 $A$ 与 $B$ 均为实数时, 二者之间才能比较大小.\n因为\n$$\nA=\\left|z_1\\right|^2+\\left|z_2\\right|^2,\n$$\n所以 $A$ 是实数.\n又因为\n$$\n\\bar{B}=\\overline{z_1 \\overline{z_2}+\\overline{z_1} z_2}=z_1 \\overline{z_2}+\\overline{z_1} z_2=B,\n$$\n所以 $B$ 也是实数.\n故 $A 、 B$ 二者之间可以比较大小.\n事实上\n$$\n\\begin{aligned}\nA-B & =z_1\\left(\\overline{z_1}-\\overline{z_2}\\right)-z_2\\left(\\overline{z_1}-\\overline{z_2}\\right) \\\\\n& =\\left(z_1-z_2\\right)\\left(\\overline{z_1}-\\overline{z_2}\\right) \\\\\n& =\\left|z_1-z_2\\right|^2 \\geqslant 0 .\n\\end{aligned}\n$$\n当 $z_1=z_2$ 时, $A=B$;\n当 $z_1 \\neq z_2$ 时, $A>B$.",
+    "remark": "注:(1) 在比较两实数的大小时, 对 \"不小于\"、\"不大于\"的情形, 要对其中的\"相等\"分而述之.\n(2) 以 $\\bar{z}=z$ 来说明 $z$ 为实数是复数问题中的常用做法.",
+    "figures": []
+}

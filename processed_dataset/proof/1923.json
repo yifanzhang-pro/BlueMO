@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设 $P$ 为 $\\triangle A B C$ 内一点, 令 $\\alpha=\\angle B P C-\\angle A, \\beta=\\angle C P A-\\angle B, \\gamma= \\angle A P B-\\angle C$. 求证: $\\frac{P A \\cdot \\sin A}{\\sin \\alpha}=\\frac{P B \\cdot \\sin B}{\\sin \\beta}=\\frac{P C \\cdot \\sin C}{\\sin \\gamma}$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c9a5.png>), 以 $P$ 为反演中心, 单位长度为反演幂, 设 $A 、 B 、 C$ 的反点分别为 $A^{\\prime} 、 B^{\\prime} 、 C^{\\prime}$, 因点 $P$ 在 $\\triangle A B C$ 内, 所以, 点 $P$ 也在 $\\triangle A^{\\prime} B^{\\prime} C^{\\prime}$ 内, 由定理 $1, \\angle B^{\\prime} A^{\\prime} P=\\angle P B A, \\angle P A^{\\prime} C^{\\prime}=\\angle A C P$, 所以 $\\angle B^{\\prime} A^{\\prime} C^{\\prime}=\\angle P B A+\\angle A C P=\\angle B P C-$. $\\angle A=\\alpha$; 同理 $\\angle C^{\\prime} B^{\\prime} A^{\\prime}=\\beta, \\angle A^{\\prime} C^{\\prime} B^{\\prime}=\\gamma$. 又由定理 2, 有 $B^{\\prime} C^{\\prime}=\\frac{B C}{P B \\cdot P C}, C^{\\prime} A^{\\prime}=\\frac{C A}{P C \\cdot P A}$, $B^{\\prime} A^{\\prime}=\\frac{A B}{P A \\cdot P B}$, 对 $\\triangle A^{\\prime} B^{\\prime} C^{\\prime}$ 用正弦定理并将上面三式代入即得\n$$\n\\frac{P A \\cdot B C}{\\sin \\alpha}=\\frac{P B \\cdot C A}{\\sin \\beta}=\\frac{P C \\cdot A B}{\\sin \\gamma} \\text {, 即等价于所证.\n}\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9a5.png"
+    ]
+}

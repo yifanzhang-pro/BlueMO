@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题20. 设 $a 、 b 、 c 、 d$ 是非负实数,满足 $a b+b c+c d+d a=1$. 求证:\n$$\n\\frac{a^3}{b+c+d}+\\frac{b^3}{a+c+d}+\\frac{c^3}{a+d+b}+\\frac{d^3}{a+b+c} \\geqslant \\frac{1}{3} \\text {. }\n$$",
+    "solution": "因为 $\\frac{a^3}{b+c+d}+\\frac{b+c+d}{18}+\\frac{1}{12} \\geqslant 3 \\sqrt[3]{\\frac{a^3}{a+c+d} \\cdot \\frac{b+c+d}{18} \\cdot \\frac{1}{12}}= \\frac{a}{2}$, 即 $\\frac{a^3}{b+c+d} \\geqslant \\frac{a}{2}-\\frac{b+c+d}{18}-\\frac{1}{12}$, 所以左 $\\geqslant \\frac{a+b+c+d}{2}-\\frac{1}{18}(3 a+ 3 b+3 c+3 d)-\\frac{4}{12}=\\frac{1}{3}(a+b+c+d)-\\frac{1}{3}$. 又由假设知 $a b+b c+c d+ d a=1$, 即 $(a+c)(b+d)=1$, 所以, $a+b+c+d=a+c+\\frac{1}{a+c} \\geqslant 2$. 故 $\\frac{a^3}{b+c+d}+\\frac{b^3}{a+c+d}+\\frac{c^3}{a+b+d}+\\frac{d^3}{a+b+c} \\geqslant \\frac{1}{3}$.",
+    "remark": "",
+    "figures": []
+}

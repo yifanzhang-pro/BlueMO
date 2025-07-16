@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例6. 求出具有下述性质的正整数 $n$ : 它被 $\\leqslant \\sqrt{n}$ 的所有正整数整除.",
+    "solution": "解法二设 $q=[\\sqrt{n}]$, 我们证明 $q \\geqslant 6$ 时没有符合要求的 $n$. 反证法, 假设有这样的 $n$, 我们将利用 $q 、 q-1 、 q-2$ 均整除 $n$ 来产生矛盾.\n因为 $q$ 与 $q-2$ 整除 $n$, 故 $[q, q-2] \\mid n$, 即 $\\frac{q(q-2)}{(q, q-2)} \\mid n$ (见第 2 单元 (10)). 又 $q-1 \\mid n$, 故 $q-1$ 与 $\\frac{q(q-2)}{(q, q-2)}$ 的最小公倍数 $D$ 整除 $n$. 但 $q-1$ 与 $q$ 及 $q-2$ 均互素, 故 $q-1$ 与 $q(q-2)$ 互素, 从而 $D=(q-1) \\cdot \\frac{q(q-2)}{(q, q-2)}$. 因此\n$$\n\\frac{q(q-1)(q-2)}{(q, q-2)} \\leqslant n\n$$\n但显然 $(q, q-2) \\leqslant 2$, 故\n$$\nq(q-1)(q-2) \\leqslant 2 n .\n$$\n注意 $\\sqrt{n}<q+1$, 故由上式可得 $q(q-1)(q-2)<2(q+1)^2$, 这可化简为\n$$\nq^3-5 q^2-2 q-2<0 .\n$$\n但当 $q \\geqslant 6$ 时, 上式的左边 $=q^2(q-5)-2 q-2 \\geqslant q^2-2 q-2>0$, 矛盾.\n因此 $q \\geqslant 6$ 时无解.\n而当 $q \\leqslant 5$ 时易通过逐一检验求出所有符合要求的 $n: 1,2$, $3,4,6,8,12$ 及 24 .",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题13. 试证: 对任意实数 $x$, 有 $\\sum_{k=1}^n \\frac{[k x]}{k} \\leqslant[n x]$, 其中 $[x]$ 表示不超过 $x$ 的最大整数.",
+    "solution": "令 $A_n=\\sum_{k=1}^n \\frac{[k x]}{k}$, 下用数学归纳法证明: $A_n \\leqslant[n x]$.\n当 $n=1$ 时, 显然成立.\n假设对 $1 \\leqslant k \\leqslant n-1$, 有 $A_k \\leqslant[k x]$, 则由分部求和公式,\n$$\n\\begin{aligned}\nn A_n & =\\sum_{k=1}^n k \\cdot \\frac{[k x]}{k}-\\sum_{k=1}^{n-1} A_k(k-(k+1)) \\\\\n& =\\sum_{k=1}^n[k x]+\\sum_{k=1}^{n-1} A_k \\leqslant \\sum_{k=1}^n[k x]+\\sum_{k=1}^{n-1}[k x] \\\\\n& =[n x]+\\sum_{k=1}^{n-1}([(n-k) x]+[k x]) \\\\\n& \\left.\\leqslant[n x]+\\sum_{k=1}^{n-1}[(n-k) x+k x] \\text { (因为 }[x]+[y] \\leqslant[x+y]\\right) \\\\\n& =n[n x],\n\\end{aligned}\n$$\n故 $A_n \\leqslant[n x]$, 命题得证.",
+    "remark": "",
+    "figures": []
+}

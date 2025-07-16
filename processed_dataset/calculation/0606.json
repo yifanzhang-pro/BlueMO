@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 已知 $f^{(3)}(x)=8 x+7$, 求一次函数 $f(x)$.",
+    "solution": "设 $f(x)=a x+b$, 代入求得 $f(x)=2 x+1$.",
+    "remark": "",
+    "figures": []
+}

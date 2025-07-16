@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 已知 $x, y, z \\in \\mathbf{R}^{+}$, 且 $x+y+z=1$. 求证: $\\left(\\frac{1}{x}-x\\right)\\left(\\frac{1}{y}-y\\right)\\left(\\frac{1}{z}-z\\right) \\geqslant \\left(\\frac{8}{3}\\right)^3$.",
+    "solution": "设 $\\frac{1}{x}=a, \\frac{1}{y}=b, \\frac{1}{z}=c$, 代入已知条件等式得 $\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}=1$, 即 $a b c=a b+b c+c a$, 由均值不等式易得到 $a b c \\geqslant 27$, 所以,\n$$\n\\begin{aligned}\n& \\left(\\frac{1}{x}-x\\right)\\left(\\frac{1}{y}-y\\right)\\left(\\frac{1}{z}-z\\right)=\\left(a-\\frac{1}{a}\\right)\\left(b-\\frac{1}{b}\\right)\\left(c-\\frac{1}{c}\\right)=\\frac{\\left(a^2-1\\right)\\left(b^2-1\\right)\\left(c^2-1\\right)}{a b c}= \\\\\n& \\frac{1}{a b c}\\left(a^2 b^2 c^2-a^2 b^2-b^2 c^2-c^2 a^2+a^2+b^2+c^2-1\\right)=\\frac{1}{a b c}\\left[(a b+b c+c a)^2-\\right. \\\\\n& \\left.a^2 b^2-b^2 c^2-c^2 a^2+a^2+b^2+c^2-1\\right]=\\frac{1}{a b c}\\left[2 a^2 b c+2 a b^2 c+2 a b c^2+a^2+b^2+\\right. \\\\\n& \\left.c^2-1\\right] \\geqslant \\frac{1}{a b c}\\left[2 a^2 b c+2 a b^2 c+2 a b c^2+a b+b c+c a-1\\right]=2(a+b+c)+1- \\\\\n& \\frac{1}{a b c} \\geqslant 6 \\sqrt[3]{a b c}+1-\\frac{1}{a b c} \\geqslant 6 \\times 3+1-\\frac{1}{27}=\\frac{512}{27}=\\left(\\frac{8}{3}\\right)^3 .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,370 @@
+
+%%TEXT_BEGIN%%
+线性几何不等式.
+许多线性几何不等式给人的印象是: 简单而不平凡, 特别容易被记住.
+线性几何不等式的证明要么平凡,要么使人棘手.
+数学竞赛中出现的线性几何不等式大都是富有挑战性的.
+Erdös-Mordell 不等式是最著名的线性几何不等式之一,下面首先介绍这个不等式.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. (Erdös-Mordell 不等式) 设 $P$ 为 $\triangle A B C$ 内任意一点, $P$ 到三边 $B C 、 C A 、 A B$ 的距离分别为 $P D=p 、 P E=q 、 P F=r$, 并记 $P A=x$, $P B=y, P C=z$, 则
+$$
+x+y+z \geqslant 2(p+q+r),
+$$
+等号成立当且仅当 $\triangle A B C$ 为正三角形并且 $P$ 为此三角形的中心.
+%%<SOLUTION>%%
+证明 1 如图(<FilePath:./figures/fig-c5i1.png>), 注意到 $\angle D P E=180^{\circ}- \angle C$, 由余弦定理
+$$
+\begin{aligned}
+D E & =\sqrt{p^2+q^2+2 p q \cos C} \\
+& =\sqrt{p^2+q^2+2 p q \sin A \sin B-2 p q \cos A \cos B} \\
+& =\sqrt{(p \sin B+q \sin A)^2+(p \cos B-q \cos A)^2} \\
+& \geqslant \sqrt{(p \sin B+q \sin A)^2} \\
+& =p \sin B+q \sin A .
+\end{aligned}
+$$
+又因 $P 、 D 、 C 、 E$ 四点共圆, 线段 $C P$ 为这圆的直径, 故
+$$
+z=\frac{D E}{\sin C} \geqslant\left(\frac{\sin B}{\sin C}\right) p+\left(\frac{\sin A}{\sin C}\right) q,
+$$
+同理
+$$
+\begin{aligned}
+& x \geqslant\left(\frac{\sin B}{\sin A}\right) r+\left(\frac{\sin C}{\sin A}\right) q, \\
+& x \geqslant\left(\frac{\sin A}{\sin B}\right) r+\left(\frac{\sin C}{\sin A}\right) p .
+\end{aligned}
+$$
+三式相加便得
+$$
+\begin{aligned}
+x+y+z & \geqslant\left(\frac{\sin B}{\sin C}+\frac{\sin C}{\sin B}\right) p+\left(\frac{\sin A}{\sin C}+\frac{\sin C}{\sin A}\right) q+\left(\frac{\sin B}{\sin A}+\frac{\sin A}{\sin B}\right) r \\
+& \geqslant 2(p+q+r),
+\end{aligned}
+$$
+得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. (Erdös-Mordell 不等式) 设 $P$ 为 $\triangle A B C$ 内任意一点, $P$ 到三边 $B C 、 C A 、 A B$ 的距离分别为 $P D=p 、 P E=q 、 P F=r$, 并记 $P A=x$, $P B=y, P C=z$, 则
+$$
+x+y+z \geqslant 2(p+q+r),
+$$
+等号成立当且仅当 $\triangle A B C$ 为正三角形并且 $P$ 为此三角形的中心.
+%%<SOLUTION>%%
+证明 2 如图(<FilePath:./figures/fig-c5i2.png>), 过点 $P$ 作直线 $M N$, 使得 $\angle A M N=\angle A C B$, 于是 $\triangle A M N \backsim \triangle A C B$.
+从而 $\frac{A N}{M N}=\frac{c}{a}, \frac{A M}{M N}=\frac{b}{a}$.
+由于 $S_{\triangle A M N}=S_{\triangle A M P}+S_{\triangle A N P}$,
+所以有 $A P \cdot M N \geqslant q \cdot A N+r \cdot A M$,
+所以 $x=A P \geqslant q \cdot \frac{A N}{M N}+r \cdot \frac{A M}{M N}$.
+即
+$$
+\begin{aligned}
+& x \geqslant \frac{c}{a} \cdot q+\frac{b}{a} \cdot r, \label{eq1}\\
+& y \geqslant \frac{c}{b} \cdot p+\frac{a}{b} \cdot r, \label{eq2}\\
+& z \geqslant \frac{b}{c} \cdot p+\frac{a}{c} \cdot q . \label{eq3}
+\end{aligned}
+$$
+将式\ref{eq1}、\ref{eq2}、式\ref{eq3}相加得
+$$
+x+y+z \geqslant p\left(\frac{c}{b}+\frac{b}{c}\right)+q\left(\frac{c}{a}+\frac{a}{c}\right)+r\left(\frac{b}{a}+\frac{a}{b}\right) \geqslant 2(p+q+r) .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. (Erdös-Mordell 不等式) 设 $P$ 为 $\triangle A B C$ 内任意一点, $P$ 到三边 $B C 、 C A 、 A B$ 的距离分别为 $P D=p 、 P E=q 、 P F=r$, 并记 $P A=x$, $P B=y, P C=z$, 则
+$$
+x+y+z \geqslant 2(p+q+r),
+$$
+等号成立当且仅当 $\triangle A B C$ 为正三角形并且 $P$ 为此三角形的中心.
+%%<SOLUTION>%%
+证明 3 如图(<FilePath:./figures/fig-c5i3.png>), 作点 $P$ 关于 $\angle A$ 平分线的对称点 $P^{\prime}$, 则易知 $P^{\prime}$ 到 $C A 、 A B$ 的距离分别为 $r$ 、 $q$, 且 $P^{\prime} A=P A=x$.
+设 $A 、 P^{\prime}$ 到 $B C$ 的距离分别为 $h_1 、 r_1^{\prime}$, 则
+$$
+P^{\prime} A+r_1^{\prime}=P A+r_1^{\prime} \geqslant h_1,
+$$
+两端乘 $a$ 可得
+$$
+\begin{aligned}
+a \cdot P A+a r_1^{\prime} & \geqslant a h_1 \\
+& =2 S_{\triangle A B C} \\
+& =a r_1^{\prime}+c q+b r .
+\end{aligned}
+$$
+因此同理
+$$
+\begin{aligned}
+& x \geqslant \frac{c}{a} \cdot q+\frac{b}{a} \cdot r, \\
+& y \geqslant \frac{a}{b} \cdot r+\frac{c}{b} \cdot p, \\
+& z \geqslant \frac{a}{c} \cdot q+\frac{b}{c} \cdot p .
+\end{aligned}
+$$
+将这三个不等式相加可得
+$$
+x+y+z=\left(\frac{c}{b}+\frac{b}{c}\right) p+\left(\frac{c}{a}+\frac{a}{c}\right) q+\left(\frac{b}{a}+\frac{a}{b}\right) r \geqslant 2(p+q+r) .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. (Erdös-Mordell 不等式) 设 $P$ 为 $\triangle A B C$ 内任意一点, $P$ 到三边 $B C 、 C A 、 A B$ 的距离分别为 $P D=p 、 P E=q 、 P F=r$, 并记 $P A=x$, $P B=y, P C=z$, 则
+$$
+x+y+z \geqslant 2(p+q+r),
+$$
+等号成立当且仅当 $\triangle A B C$ 为正三角形并且 $P$ 为此三角形的中心.
+%%<SOLUTION>%%
+要点是将三角形的高转化为内角平分线来处理,并运用嵌人不等式.
+证明 4 如图(<FilePath:./figures/fig-c5i4.png>), 设 $\angle B P C=2 \alpha, \angle C P A=2 \beta, \angle A P B=2 \gamma$, 设它们的内角平分线长分别是 $w_a 、 w_b 、 w_c$, 则我们只需证明更强的不等式
+$$
+x+y+z \geqslant 2\left(w_a+w_b+w_c\right) .
+$$
+事实上,注意到内角平分线公式有
+$$
+w_a=\frac{2 y z}{y+z} \cos \frac{1}{2} \angle B P C \leqslant \sqrt{y z} \cos \alpha,
+$$
+同理
+$$
+\begin{aligned}
+& w_b \leqslant \sqrt{x z} \cos \beta, \\
+& w_c \leqslant \sqrt{x y} \cos \gamma .
+\end{aligned}
+$$
+由于 $\alpha+\beta+\gamma=\pi$, 所以由嵌人不等式可得
+$$
+\begin{aligned}
+2\left(w_a+w_b+w_c\right) & \leqslant 2(\sqrt{y z} \cos \alpha+\sqrt{x z} \cos \beta+\sqrt{x y} \cos \gamma) \\
+& \leqslant x+y+z .
+\end{aligned}
+$$
+证完.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. (Erdös-Mordell 不等式) 设 $P$ 为 $\triangle A B C$ 内任意一点, $P$ 到三边 $B C 、 C A 、 A B$ 的距离分别为 $P D=p 、 P E=q 、 P F=r$, 并记 $P A=x$, $P B=y, P C=z$, 则
+$$
+x+y+z \geqslant 2(p+q+r),
+$$
+等号成立当且仅当 $\triangle A B C$ 为正三角形并且 $P$ 为此三角形的中心.
+%%<SOLUTION>%%
+证明 5 如图(<FilePath:./figures/fig-c5i5.png>), 过 $D 、 E$ 作 $D T_1 \perp F P$ 于 $T_1, E T_2 \perp F P$ 于 $T_2$. 由
+$$
+D E \geqslant D T_1+E T_2, D T_1=p \sin B, E T_2=q \sin A,
+$$
+可得
+$$
+\begin{aligned}
+z & =\frac{D E}{\sin C} \geqslant \frac{p \sin B+q \sin A}{\sin C} \\
+& =p \frac{\sin B}{\sin C}+q \frac{\sin A}{\sin C},
+\end{aligned}
+$$
+所以
+$$
+\begin{aligned}
+& x+y+z \\
+= & P A+P B+P C \\
+\geqslant & \left(p \frac{\sin B}{\sin C}+q \frac{\sin A}{\sin C}\right)+\left(q \frac{\sin C}{\sin A}+r \frac{\sin B}{\sin A}\right)+\left(r \frac{\sin A}{\sin B}+p \frac{\sin C}{\sin B}\right) \\
+= & p\left(\frac{\sin B}{\sin C}+\frac{\sin C}{\sin B}\right)+q\left(\frac{\sin A}{\sin C}+\frac{\sin C}{\sin A}\right)+r\left(\frac{\sin B}{\sin A}+\frac{\sin A}{\sin B}\right) \\
+\geqslant & 2(p+q+r) .
+\end{aligned}
+$$
+证完.
+%%<REMARK>%%
+注:关于 Erdös-Mordell 不等式研究已有众多成果, 其中平面上的推广较为简单, 很早由 N. Ozeki 和 H. Vigler 完成, 后又被其他人多次重新发现.
+Erdös-Mordell 不等式在空间,特别是 $n$ 维空间的推广是一个困难的问题,据我所知至今还未得到理想的结果.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $\triangle A B C$ 的三边为 $a 、 b 、 c$, 则
+$$
+h_a+m_b+t_c \leqslant \frac{\sqrt{3}}{2}(a+b+c),
+$$
+其中 $h_a 、 m_b 、 t_c$ 分别表示边 $B C 、 A C 、 A B$ 上的高、中线和内角平分线.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c5i6.png>), 将高线 $h_a$ 转化为内角平分线 $t_a$ 来考虑.
+为此仅需证明更强的不等式
+$$
+t_a+m_b+t_c \leqslant \frac{\sqrt{3}}{2}(a+b+c) . \label{eq1}
+$$
+要证式\ref{eq1}, 只需证明局部不等式
+$$
+m_b+2 t_a \leqslant \frac{\sqrt{3}}{2}(b+2 c) . \label{eq2}
+$$
+事实上,若式\ref{eq2}成立, 则类似的有
+$$
+m_b+2 t_c \leqslant \frac{\sqrt{3}}{2}(b+2 a) . \label{eq3}
+$$
+\ref{eq2}、式\ref{eq3}相加便是式\ref{eq1}.
+下证式\ref{eq2}.
+由内角平分线公式易知
+$$
+t_a^2=\frac{4}{(b+c)^2} \cdot b c p(p-a) \leqslant p(p-a)=\frac{1}{4}\left((b+c)^2-a^2\right), \label{eq4}
+$$
+又
+$$
+m_b^2=\frac{1}{4}\left(2 a^2+2 c^2-b^2\right) . \label{eq5}
+$$
+因此由 Cauchy 不等式及\ref{eq4}、\ref{eq5}可得
+$$
+\begin{aligned}
+m_b+2 t_a & \leqslant \sqrt{3\left(m_b^2+2 t_a^2\right)} \\
+& \leqslant \sqrt{\frac{3}{4}\left(2 a^2+2 c^2-b^2+2(b+c)^2-2 a^2\right)} \\
+& =\frac{\sqrt{3}}{2}(b+2 c) .
+\end{aligned}
+$$
+式\ref{eq2}得证,从而问题得证.
+%%<REMARK>%%
+注:(1) 仔细观察例 1 和例 2 的各种证法,我们认为将整体的线性几何不等式归结为局部的线性几何不等式是一个共同的技巧.
+例 1 的各种证法的目标都在于寻找局部不等式
+$$
+x \geqslant \lambda_1 q+\lambda_2 r,
+$$
+其中 $\lambda_1 、 \lambda_2$ 是与动点 $P$ 无关的几何量, 而例 2 却是通过转化为局部不等式
+$$
+m_b+2 t_a \leqslant \frac{\sqrt{3}}{2}(b+2 c)
+$$
+来达到目标.
+(2)例 2 用内角平分线代替高线来加强命题的技巧已在例 1 的证法 4 中应用过,还将在本书最后一章"四面体的不等式"例 5 的证明中再次用到.
+这种主动加强命题的技巧是十分有用的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 给定一个锐角 $\triangle A B C$. 设 $h_a 、 h_b 、 h_c$ 分别表示 $\triangle A B C$ 的三边 $B C$ 、 $C A 、 A B$ 上的高, $s$ 表示半周长.
+证明
+$$
+\sqrt{3} \cdot \max \left\{h_a, h_b, h_c\right\} \geqslant s .
+$$
+%%<SOLUTION>%%
+证明:如果三角形 $\triangle A B C$ 是正三角形,等号成立.
+下面证明: 如果 $\triangle A B C$ 不是正三角形, 则问题可化归为等腰三角形的情形来证明.
+事实上, 如果 $\angle A \geqslant \angle B>\angle C$, 则 $\angle A>\frac{\pi}{3}$, 且
+$$
+h_c>h_b \geqslant h_a .
+$$
+设 $h$ 表示最大高 $h_c$, 如图(<FilePath:./figures/fig-c5i7.png>),延长 $\triangle A B C$ 的最短边 $A B$ 到 $D$ 使得 $A D=A C$. 连接 $C D$. 因此如果 $\sqrt{3} h \geqslant s$ 对等腰 $\triangle A C D$ 成立,则对一般的锐角 $\triangle A B C$ 也成立.
+现在等腰 $\triangle A C D$ 中证明 $\sqrt{3} h \geqslant s$.
+因为 $s=A C+\frac{1}{2} C D, C D=2 A C \cdot \sin \frac{A}{2}, h_c= A C \cdot \sin A$, 因此 $\sqrt{3} h \geqslant s$ 等价于
+$$
+\sqrt{3} \sin A \geqslant 1+\sin \frac{A}{2}\left(\frac{\pi}{3}<A<\frac{\pi}{2}\right) . \label{eq1}
+$$
+现令 $x=\sin \frac{A}{2}$, 则 $\frac{1}{2}<x<\frac{\sqrt{2}}{2}$, 这时式 \ref{eq1} 变为
+$$
+12 x^4-11 x^2+2 x+1 \leqslant 0,
+$$
+即
+$$
+(2 x-1)(x+1)\left(6 x^2-3 x-1\right) \leqslant 0 . \label{eq2}
+$$
+注意到 $x$ 的取值范围, 易知 $2 x-1>0, x+1>0,6 x^2-3 x-1 \leqslant 0$, 故 式\ref{eq2} 成立,得证.
+%%<REMARK>%%
+注:本例将一般三角形化归为等腰三角形证题的技巧值得注意, 这样的化归有时可大大简化问题的处理.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. (Zirakzadeh 不等式) 设 $P 、 Q 、 R$ 分别位于 $\triangle A B C$ 的三条边 $B C 、 C A 、 A B$ 上且将三角形的周长三等分, 则
+$$
+Q R+R P+P Q \geqslant \frac{1}{2}(a+b+c) .
+$$
+%%<SOLUTION>%%
+证明:.下面用投影方法产生局部的线性几何不等式.
+如图(<FilePath:./figures/fig-c5i8.png>), 从 $Q 、 R$ 分别向直线 $B C$ 引垂线, 垂足分别记为 $M 、 N$, 则
+$$
+Q R \geqslant M N=a-(B R \cdot \cos B+C Q \cdot \cos C),
+$$
+同理有
+$$
+\begin{aligned}
+& R P \geqslant b-(C P \cdot \cos C+A R \cdot \cos A), \\
+& P Q \geqslant c-(A Q \cdot \cos A+B P \cdot \cos B) .
+\end{aligned}
+$$
+将三式相加, 并注意到
+$$
+A Q+A R=B R+B P=C P+C Q=\frac{1}{3}(a+b+c),
+$$
+即得
+$$
+Q R+R P+P Q \geqslant \frac{1}{3}(a+b+c)(3-\cos A-\cos B-\cos C),
+$$
+又
+$$
+\cos A+\cos B+\cos C \leqslant \frac{3}{2}
+$$
+立得
+$$
+Q R+R P+P Q \geqslant \frac{1}{2}(a+b+c) .
+$$
+%%<REMARK>%%
+注:上面的优美解法是杨学枝先生给出的.
+这个问题曾在国内引起了较为广泛的讨论.
+下面的例 5 是王振先生发现并证明的一个结果, 难度稍大.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $I 、 G$ 分别是 $\triangle A B C$ 的内心和重心,求证
+$$
+A I+B I+C I \leqslant A G+B G+C G .
+$$
+%%<SOLUTION>%%
+证明:令 $B C=a, A C=b, A B=c$, 不妨设 $a \geqslant b \geqslant c$, 如图(<FilePath:./figures/fig-c5i9.png>). 下面我们证明 $G$ 一定落在 $\triangle B I C$ 内或边界上.
+先证 $G$ 不落在 $\triangle A I B$ 内, 若不然, 假设 $G$ 落在 $\triangle A I B$ 内, 则有
+$$
+S_{\triangle A B G}<S_{\triangle A I B},
+$$
+而
+$$
+S_{\triangle A B G}=\frac{1}{3} S_{\triangle A B C},
+$$
+且 $\quad \frac{S_{\triangle A I B}}{S_{\triangle A B C}}=\frac{c}{a+b+c} \leqslant \frac{1}{3}$,
+所以 $S_{\triangle A I B} \leqslant \frac{1}{3} S_{\triangle A B C}=S_{\triangle A B G}$, 矛盾.
+再证 $G$ 也不落在 $\triangle A I C$ 内, 若不然, 假设 $G$ 落在 $\triangle A I C$ 内, 设 $C I$ 交 $A B$ 于 $T, C G$ 交 $A B$ 于 $L$, 则 $A T>A L$, 而 $A L=B L, \frac{A T}{B T}=\frac{b}{a} \leqslant 1$, 所以 $A T \leqslant \frac{1}{2} A B=A L$,矛盾.
+因此 $G$ 落在 $\triangle B I C$ 内或边界上, 且可证 $G$ 在 $A I$ 右侧.
+设 $\angle A I G$ 的补角为 $\theta$, 则 $0 \leqslant \theta \leqslant \frac{A+C}{2}$. 由此可知 $A G \geqslant A I+G I \cos \theta$.
+同理
+$$
+\begin{aligned}
+& B G \geqslant B I+G I \cos \left(90^{\circ}+\frac{C}{2}-\theta\right), \\
+& C G \geqslant C I-G I \cos \left(\frac{A+C}{2}-\theta\right) .
+\end{aligned}
+$$
+因此
+$$
+\begin{aligned}
+& A G+B G+C G-(A I+B I+C I) \\
+\geqslant & G I\left(\cos \theta+\cos \left(90^{\circ}+\frac{C}{2}-\theta\right)-\cos \left(\frac{A+C}{2}-\theta\right)\right) \\
+= & G I\left(\cos \theta-2 \sin \frac{B+C}{4} \cos \left(\frac{B-C}{4}+\theta\right)\right) .
+\end{aligned}
+$$
+由于 $\frac{B+C}{4} \leqslant 30^{\circ}, \theta \leqslant \frac{B-C}{4}+\theta<90^{\circ}$, 所以
+$$
+\cos \theta-2 \sin \frac{B+C}{4} \cos \left(\frac{B-C}{4}+\theta\right) \geqslant \cos \theta-\cos \left(\frac{B-C}{4}+\theta\right) \geqslant 0,
+$$
+故 $A G+B G+C G \geqslant A I+B I+C I$.
+%%PROBLEM_END%%
+
+

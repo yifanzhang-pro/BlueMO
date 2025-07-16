@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 若 $(a+1)(b+1)=2$, 则 $\\arctan a+\\arctan b=(\\quad)$.\n(A) $\\frac{\\pi}{4}$\n(B) $\\frac{5 \\pi}{4}$\n(C) $\\frac{\\pi}{4}$ 或 $\\frac{5 \\pi}{4}$\n(D) $\\frac{\\pi}{4}$ 或 $-\\frac{3 \\pi}{4}$",
+    "solution": "D. 因 $\\tan (\\arctan a+\\arctan b)=\\frac{a+b}{1-a b}=1$, 又 $\\arctan a+\\arctan b \\in (-\\pi, \\pi)$, 所以选 D.",
+    "remark": "",
+    "figures": []
+}

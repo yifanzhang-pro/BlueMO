@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter10.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 集合 $S=\\{1,2, \\cdots, 3000\\}$ 中是否包含一个具有 2000 个元素的子集 $A$, 它满足下述性质: 当 $x \\in A$ 时, $2 x \\notin A$ ?",
+    "solution": "解:答案是否定的.\n把每个正整数都表成 $2^s t$ 的形式,其中 $s$ 是非负整数, $t$ 是奇数.\n如果集合 $A \\subseteq S$ 具有性质: 当 $x \\in A$ 时, $2 x \\notin A$, 那么在 $2^s t \\in A$ 时, $2^{s+1} t \\notin A$. 因此, 对每个奇数 $t$, 有\n$$\n\\left|A \\cap\\left\\{t, 2 t, 2^2 t, \\cdots\\right\\}\\right| \\leqslant\\left|S \\cap\\left\\{t, 2^2 t, 2^4 t, \\cdots\\right\\}\\right|,\n$$\n其中 $|X|$ 表示有限集合 $X$ 的元素个数.\n从而, $|A|$ 不大于下述集合的元素个数:\n$$\n\\begin{gathered}\n\\left\\{1,3, \\cdots, 2999,1 \\times 2^2, 3 \\times 2^2, \\cdots, 749 \\times 2^2, 1 \\times 2^4, 3 \\times 2^4, \\cdots, 187 \\times 2^4,\\right. \\\\\n\\left.1 \\times 2^6, 3 \\times 2^6, \\cdots, 45 \\times 2^6, 1 \\times 2^8, 3 \\times 2^8, \\cdots, 11 \\times 2^8, 1 \\times 2^{10}\\right\\}\n\\end{gathered}\n$$\n即\n$$\n|A| \\leqslant 15000+375+94+23+6+1=1999<2000 .\n$$\n从而不存在含 2000 个元素的集合 $A$ 满足题述性质.",
+    "remark": "注:本例中的条件涉及 $x$ 及其两倍 $2 x$ 关于集合 $A$ 的从属关系,故而把正整数表成 $2^s t$ ( $t$ 为奇数) 的形式有助于讨论, 使问题迎刃而解.",
+    "figures": []
+}

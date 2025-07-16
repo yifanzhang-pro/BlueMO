@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例4. 求所有这样的 2 的幕, 将其(十进制表示中的)首位删去后, 剩下的数仍是一个 2 的幂.",
+    "solution": "解:问题即要求出方程\n$$\n2^n=2^k+a \\times 10^m . \\label{eq1}\n$$\n的全部正整数解 $(n, k, m, a)$, 其中 $a=1,2, \\cdots, 9$. 将式\\ref{eq1}变形为\n$$\n2^k\\left(2^{n-k}-1\\right)=a \\times 10^m . \\label{eq2}\n$$\n首先证明 $m=1$. 因为若 $m>1$, 则 \\ref{eq2} 式右边被 $5^2$ 整除, 从而 $5^2 \\mid\\left(2^{n-k}-1\\right)$. 又易知, 2 模 $5^2$ 的阶是 20 (这只需注意所说的阶整除 $\\varphi(25)=20$, 及 $2^{10} \\equiv-1(\\bmod 25))$, 因此,20 整除 $n-k$, 从而 $2^{20}-1$ 整除 式\\ref{eq2} 的左边, 但 $2^{20}-1= \\left(2^5\\right)^4-1$ 有因子 $2^5-1=31$, 而 31 不整除 式\\ref{eq1} 的右边,矛盾!因此 $m=1$.\n现在只需在为二位数的 2 的幕中, 检验符合要求的解, 易知这只有 32 和 64 .",
+    "remark": "",
+    "figures": []
+}

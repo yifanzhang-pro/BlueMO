@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设 $a, b, c>0$ 且 $a+b+c=3$. 求证:\n$$\n\\frac{a^2}{a+b^2}+\\frac{b^2}{b+c^2}+\\frac{c^2}{c+a^2} \\geqslant \\frac{3}{2} \\text {. }\n$$",
+    "solution": "由柯西不等式, 我们有 $\\sum \\frac{a^2}{a+b^2} \\sum a^2\\left(a+b^2\\right) \\geqslant\\left(a^2+b^2+c^2\\right)^2$, 因此只需要证明 $2\\left(a^2+b^2+c^2\\right)^2 \\geqslant 3\\left[a^2\\left(a+b^2\\right)+b^2\\left(b+c^2\\right)+c^2\\left(c+a^2\\right)\\right]$, 这等价于 $2\\left(a^4+b^4+c^4\\right)+a^2 b^2+b^2+c^2 \\geqslant 3\\left(a^3+b^3+c^3\\right)$, 由 $a+b+c=3$ 代入上式转化为 $a^4+b^4+c^4+a^2 b^2+b^2 c^2+c^2 a^2 \\geqslant a^3(b+c)+b^3(c+a)+ c^3(a+b)$, 由均值不等式 $\\left(a^4+a^2 b^2\\right)+\\left(a^4+a^2 c^2\\right) \\geqslant 2 a^3 b+2 a^3 c$, $\\left(b^4+b^2 c^2\\right)+\\left(b^4+b^2 a^2\\right) \\geqslant 2 b^3 c+2 b^3 a,\\left(c^4+c^2 a^2\\right)+\\left(c^4+c^2 b^2\\right) \\geqslant 2 c^3 a+ 2 c^3 b$. 上述三式相加除以 2 即得证.",
+    "remark": "",
+    "figures": []
+}

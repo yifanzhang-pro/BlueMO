@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 设$0 < x < \\frac{\\pi}{4}$,下列关系中正确的是 ( ).\n(A) $\\sin (\\sin x)<\\sin x<\\sin (\\tan x)$\n(B) $\\sin (\\sin x)<\\sin (\\tan x)<\\sin x$\n(C) $\\sin (\\tan x)<\\sin x<\\sin (\\sin x)$\n(D) $\\sin x<\\sin (\\tan x)<\\sin (\\sin x)$",
+    "solution": "A. 利用不等式 $\\sin x<x<\\tan x$ 得, 当 $0<x<\\frac{\\pi}{4}$ 时, $0<\\sin x< x<\\tan x<1$, 且 $y=\\sin x$ 在 $\\left[0, \\frac{\\pi}{2}\\right]$ 上单调递增, 所以 $\\sin (\\sin x)<\\sin x< \\sin (\\tan x)$, 故选 A.",
+    "remark": "",
+    "figures": []
+}

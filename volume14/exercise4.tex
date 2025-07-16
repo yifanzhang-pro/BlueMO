@@ -1,0 +1,208 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 从 $1,2, \cdots, 2 n$ 这 $2 n$ 个正整数中任取 $n+1$ 个数, 证明其中一定存在两个数是互素的.
+%%<SOLUTION>%%
+把 $1,2, \cdots, 2 n$ 这 $2 n$ 个正整数分成如下 $n$ 组:
+$$
+\{1,2\},\{3,4\}, \cdots,\{2 n-1,2 n\} .
+$$
+从这 $n$ 组中任取 $n+1$ 个数, 由抽屉原理知, 其中一定有两个数取自同一组, 同一组中的两个数是相邻的正整数, 从而它们是互素的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 在 $1,2,3, \cdots, 100$ 这 100 个正整数中任取 11 个数,证明其中一定有两个数的比值不超过 $\frac{3}{2}$.
+%%<SOLUTION>%%
+把 $1,2, \cdots, 100$ 这 100 个数分成如下 10 组 (10 个抽屉), 每一组中的最大数与最小数之比不超过 $\frac{3}{2}$ :
+$$
+\begin{aligned}
+& \{1\},\{2,3\},\{4,5,6\},\{7,8,9,10\},\{11,12, \cdots, 16\},\{17,18, \cdots, 25\}, \\
+& \{26,27, \cdots, 39\},\{40,41, \cdots, 60\},\{61,62, \cdots, 91\},\{92,93, \cdots, 100\} .
+\end{aligned}
+$$
+从 $1,2, \cdots, 100$ 中任取 11 个数, 即是从上面 10 组中任取 11 个数, 由抽庶原理知, 其中一定有两个数取自同一组, 这两个数的比值不超过 $\frac{3}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 任给 7 个实数, 求证: 其中必有两个数 $x, y$, 满足 $0 \leqslant \frac{x-y}{1+x y}<\frac{\sqrt{3}}{3}$. 
+%%<SOLUTION>%%
+不妨设这 7 个实数分别为 $\tan \alpha_i, i=1,2, \cdots, 7$, 其中
+$$
+-\frac{\pi}{2}<\alpha_1 \leqslant \alpha_2 \leqslant \cdots \leqslant \alpha_7<\frac{\pi}{2} .
+$$
+将区间 $\left[\alpha_1, \alpha_7\right.$ 平均分成 6 个区间, 根据抽屉原理知, 在 $\alpha_i(1 \leqslant i \leqslant 7)$ 中必有两个角 $\theta_1, \theta_2\left(\theta_1 \leqslant \theta_2\right)$ 同属于一个区间, 则 $0 \leqslant \theta_2-\theta_1 \leqslant \frac{\alpha_7-\alpha_1}{6}<\frac{\pi}{6}$.
+取 $x=\tan \theta_2, y=\tan \theta_1$, 则 $x, y$ 满足
+$$
+0 \leqslant \tan \left(\theta_2-\theta_1\right)=\frac{\tan \theta_2-\tan \theta_1}{1+\tan \theta_2 \tan \theta_1}=\frac{x-y}{1+x y}<\tan \frac{\pi}{6}=\frac{\sqrt{3}}{3} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 在 $3 \times 4$ 的长方形中, 任意放置 6 个点, 证明:一定可以找到两个点, 它们的距离不大于 $\sqrt{5}$. 
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c4a4.png>)所示, 把 $3 \times 4$ 的矩形分成如下 5 个部分, 由勾股定理可以算得每个部分的任两点之间的距离不大于 $\sqrt{5}$. 从而命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 已知集合 $A$ 与 $B$ 是 $\{1,2, \cdots, 100\}$ 的两个子集,满足: $A$ 与 $B$ 的元素个数相同,且 $A \cap B$ 为空集,且 $n \in A$ 时,总有 $2 n+2 \in B$. 求集合 $A \cup B$ 的元素个数最大值.
+%%<SOLUTION>%%
+对每个 $n \in A$, 由于 $2 n+2 \in B$, 故 $2 n+2 \leqslant$ 100 , 即 $n \leqslant 49$.
+$$
+\begin{aligned}
+& \{2 k-1,4 k\}, k=1,2, \cdots, 12 ; \\
+& \{2 k-1\}, k=13,14, \cdots, 25 ; \\
+& \{2,6\},\{10,22\},\{14,30\},\{18,38\} ; \\
+& \{26\},\{34\},\{42\},\{46\} .
+\end{aligned}
+$$
+若 $|A|>33$, 则根据抽屉原理, 上述 33 个集合中必有一个二元集包含于 $A$, 即存在 $n \in A$ 使 $2 n+2 \in A$, 故 $2 n+2 \in A \cap B$, 矛盾.
+从而 $|A| \leqslant 33$, 故 $|A \cup B| \leqslant 66$.
+另一方面, 如取
+$$
+\begin{aligned}
+& A=\{1,3,5, \cdots, 49,2,10,14,18,26,34,42,46\}, \\
+& B=\{2 n+2 \mid n \in A\},
+\end{aligned}
+$$
+则 $A, B$ 满足题设,且 $|A \cup B|=66$.
+综上可知 $|A \cup B|_{\text {max }}=66$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 某年级 $n$ 位同学参加语文和数学两门课的考试, 每门课的考分从 0 到 100 分.
+假如考试的结果没有两位同学的成绩是完全相同的 (即至少有一门课的成绩不同). 另外, "甲比乙好" 是指同学甲的语文和数学的考分均分别高于同学乙的语文和数学的考分.
+试问: 当 $n$ 最小为何值时, 必存在三位同学 (设为甲、乙、丙), 有甲比乙好, 乙比丙好?
+%%<SOLUTION>%%
+不妨将语文、数学分别考 $i$ 分、 $j$ 分的同学的成绩记为有序整数对 $(i$, $j)$, 其中 $A=\{(i, j) \mid 0 \leqslant i \leqslant 100,0 \leqslant j \leqslant 100, i, j \in \mathbf{N}\}$ 包含所有可能的成绩.
+对 $k=0, \pm 1, \pm 2, \cdots, \pm 100$, 这 201 个集合 $A_k=\{(i, j) \mid(i, j) \in A$, $j=i+k\}$ 的并集为 $A$, 且两两交集为空.
+若有 401 位同学参加考试, 由于 $A_{100}=\{(0,100)\}, A_{-100}=\{(100,0)\}$ 为单元集, 故至少有 399 人的成绩属于某个 $A_k(-99 \leqslant k \leqslant 99)$, 根据抽屉原理, 至少有 3 人的成绩属于同一集合, 按照定义可将他们排列为甲、乙、丙, 使甲比乙好, 乙比丙好.
+另一方面,若 400 位同学的考试成绩构成集合
+$$
+A=\{(i, j) \mid(i, j) \in A, \max \{i, j\} \geqslant 99\},
+$$
+那么不存在三位同学甲、乙、丙, 使甲比乙好, 乙比丙好.
+综上所述, $n$ 的最小值为 401 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 在 $50 \times 50$ 表格中, 每格写有一个正整数,使整个表格中 $1,2, \cdots, 50$ 各出现 50 次.
+证明: 存在某行或某列至少包含 8 个不同数.
+%%<SOLUTION>%%
+记 $M=\{1,2, \cdots, 50\}$.
+引理: 每个 $i \in M$ 至少出现在 15 个行与列中.
+证明: 设 $i \in M$ 出现在 $x$ 个行中, 由抽屉原理, 有某一行出现了至少 $\left\lceil\frac{50}{x}\right\rceil$ 次, 从而含 $i$ 的行数与列数之和 $S_i \geqslant x+\frac{50}{x} \geqslant 2 \sqrt{50}>14$, 故引理成立.
+以下对每个 $i \in M$ 标出有它出现的一切行与列, 当 $i$ 取遍 $M$ 中元素时, 至少标出了 $50 \times 15=750$ 个行与列, 但表格只有 $50+50=100$ 个行与列, 从而根据抽㞕原理, 必有某个行或列被标了不少于 8 次, 即它包含了至少 8 个不同的数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 整设正整数构成的数列 $\left\{a_n\right\}$ 使得
+$$
+a_{10 k-9}+a_{10 k-8}+\cdots+a_{10 k} \leqslant 19
+$$
+对一切 $k \in \mathbf{N}^*$ 恒成立.
+记该数列若干连续项的和 $\sum_{p=i+1}^j a_p$ 为 $S(i, j)$, 其中 $i, j \in \mathbf{N}^*$ 且 $i<j$. 求证: 所有 $S(i, j)$ 构成的集合等于 $\mathbf{N}^*$. (2009 年上海市高中数学竞赛试题 $)$
+%%<SOLUTION>%%
+证法一显然每个 $S(i, j) \in \mathbf{N}^*$. 下证对任意 $n_0 \in \mathbf{N}^*$, 存在 $S(i$, $j)=n_0$.
+用 $S_n$ 表示 $\left\{a_n\right\}$ 的前 $n$ 项和.
+考虑 $10 n_0+10$ 个前 $n$ 项和
+$$
+S_1<S_2<\cdots<S_{10 n_0+10}, \label{eq1}
+$$
+由题设, $S_{10 n_0+10}=\sum_{k=1}^{n_0+1}\left(a_{10 k-9}+a_{10 k-8}+\cdots+a_{10 k}\right) \leqslant 19\left(n_0+1\right)$.
+另外, 考虑如下 $10 n_0+10$ 个正整数:
+$$
+S_1+n_0<S_2+n_0<\cdots<S_{10 n_0+10}+n_0, \label{eq2}
+$$
+显然 $S_{10 n_0+10}+n_0 \leqslant 20 n_0+19$.
+这样, 式\ref{eq1}, \ref{eq2}中出现 $20 n_0+20$ 个正整数, 且都不超过 $20 n_0+19$, 由抽屉原理, 必有两个相等.
+由于 式\ref{eq1} 中各数两两不等, 式\ref{eq2}中各数也两两不等, 故存在 $i$, $j \in \mathbf{N}^*$, 使得 $S_j=S_i+n_0$, 即 $i<j$ 满足 $S(i, j)=S_j-S_i=n_0$.
+所以,所有 $S(i, j)$ 构成的集合等于 $\mathbf{N}^*$.
+证法二显然每个 $S(i, j) \in \mathbf{N}^*$. 对任意 $n_0 \in \mathbf{N}^*$, 构造 $19 n_0$ 个二元集合
+$$
+\begin{gathered}
+A_{p q}=\left\{2 n_0 p+q,\left(2 n_0 p+q\right)+n_0\right\}, p=0,1,2, \cdots, 18, \\
+q=1,2, \cdots, n_0, \\
+\bigcup_{p=0}^{18} \bigcup_{q=1}^{n_0} A_{p q}=\left\{1,2, \cdots, 38 n_0\right\} .
+\end{gathered}
+$$
+则
+$$
+\bigcup_{p=0}^{18} \bigcup_{q=1}^{n_0} A_{p q}=\left\{1,2, \cdots, 38 n_0\right\} .
+$$
+用 $S_n$ 表示 $\left\{a_n\right\}$ 的前 $n$ 项和, 则
+$$
+1 \leqslant S_1<S_2<\cdots<S_{20 n_0}=\sum_{k=1}^{2 n_0}\left(a_{10 k-9}+a_{10 k-8}+\cdots+a_{10 k}\right) \leqslant 38 n_0 .
+$$
+根据抽屉原理, 必存在两个数 $S_i, S_j, 1 \leqslant i<j \leqslant 20 n_0$ 属于同一个二元集 $A_{p q}$, 由 $A_{p q}$ 的取法可知, $S(i, j)=S_j-S_i=n_0$.
+所以,所有 $S(i, j)$ 构成的集合等于 $\mathbf{N}^*$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 已知无穷数列 $\left\{a_n\right\}$ 满足 $a_1=1, a_2=1, a_3=3, a_n=a_{n-1}+2 a_{n-2}+a_{n-3}$, $n=4,5, \cdots$. 求证: 对任何正整数 $m$, 存在某个正整数 $n$ 使得 $m \mid a_n$.
+%%<SOLUTION>%%
+记 $a_k$ 除以 $m$ 所得余数为 $b_k\left(0 \leqslant b_k \leqslant m^{-}-1\right), k=1,2, \cdots$. 考虑 $m^3+$ 1 个三元数组
+$$
+\left(b_1, b_2, b_3\right),\left(b_2, b_3, b_4\right), \cdots,\left(b_{m^3+1}, b_{m^3+2}, b_{m^3+3}\right),
+$$
+由于上述三元数组的不同取值最多为 $m^3$ 个, 由抽屉原理知, 其中一定有两组相同, 不妨设
+$$
+\left(b_i, b_{i+1}, b_{i+2}\right)=\left(b_j, b_{j+1}, b_{j+2}\right),\left(1 \leqslant i<j \leqslant m^3+1\right) .
+$$
+由 $a_n=a_{n-1}+2 a_{n-2}+a_{n-3}, n=4,5, \cdots$ 得
+$$
+b_i \equiv b_{i-1}+2 b_{i-2}+b_{i-3}(\bmod m), i=4,5, \cdots . \label{eq1}
+$$
+反复应用 式\ref{eq1} 得
+$$
+b_{j+p}=b_{i+p}, p \geqslant-(i-1) . \label{eq2}
+$$
+令 $n=j-i$, 在 式\ref{eq2} 中令 $p=-(i-1),-(i-2),-(i-3)$ 可得
+$$
+b_{n+1}=b_1=1, b_{n+2}=b_2=1, b_{n+3}=b_3==3 .
+$$
+于是
+$$
+b_n=b_{n+3}-2 b_{n+2}-b_{n+1}=0 .
+$$
+从而 $m \mid a_n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 将圆周上的所有点染为 $N$ 种颜色之一.
+(1) 若 $N=2$, 证明: 必存在一个等腰三角形,其顶点同色;
+(2)证明:对任意给定正整数 $N \geqslant 2$, 必存在一个梯形,它的四个顶点同色.
+%%<SOLUTION>%%
+(1) 考虑圆内接正五边形, 由于每个顶点染两种颜色之一, 根据抽屉原理,一定存在三个同色顶点,而它们必构成等腰三角形.
+(2)如果圆周上依次有 $N+1$ 个点 $A_1, A_2, \cdots, A_{N+1}$ 满足: 对于 $i(1 \leqslant i \leqslant N), \widehat{A_i A_{i+1}}$ 的弧长都等于 $a>0$, 则称为一组点.
+将半圆分为 $N^2+1$ 段弧 $L_i\left(1 \leqslant i \leqslant N^2+1\right)$. 令 $a$ 充分小, 则可在每段弧 $L_i$ 上取一组点, 由抽屉原理, 这组点中必有两点同色, 且可用数组 $\left(c_i, l_i\right)$ 表示, 其中, $c_i$ 代表这两点的 $N$ 种颜色之一, $l_i$ 代表这两点对应的 $N$ 种可能的弧长之一.
+不同的数组 $\left(c_i, l_i\right)$ 只有 $N^2$ 种, 由抽屉原理, 一定存在 $i \neq j$, 使 $\left(c_i, l_i\right)=\left(c_j, l_j\right)$, 于是这两组中存在四点同色,且构成等腰梯形.
+%%PROBLEM_END%%
+
+

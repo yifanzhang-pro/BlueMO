@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 已知 $z_1 、 z_2 \\in \\mathbf{C}$, 且 $\\left|z_1\\right|=2,\\left|z_2\\right|=9,\\left|5 z_1-z_2\\right|=9$, 试求 $\\mid 5 z_1+ z_2 \\mid$ 的值.",
+    "solution": "由模引人辐角, 设 $z_1=2(\\cos \\alpha+i \\sin \\alpha), z_2=9(\\cos \\beta+\\mathrm{i} \\sin \\beta)$, 代入 $\\left|5 z_1-z_2\\right|=9$, 便得\n$$\n\\sqrt{(10 \\cos \\alpha-9 \\cos \\beta)^2+(10 \\sin \\alpha-9 \\sin \\beta)^2}=9,\n$$\n即\n$$\n\\begin{gathered}\n181-180 \\cos (\\alpha-\\beta)=81, \\\\\n\\cos (\\alpha-\\beta)=\\frac{100}{180} .\n\\end{gathered}\n$$\n故 $\\quad\\left|5 z_1+z_2\\right|=\\sqrt{181+180 \\cos (\\alpha-\\beta)}=\\sqrt{281}$.",
+    "remark": "注:用如下恒等式, 可给出此题的另一种解法.\n$$\n\\left|z_1+z_2\\right|^2+\\left|z_1-z_2\\right|^2=2\\left(\\left|z_1\\right|^2+\\left|z_2\\right|^2\\right) \\text {. }\n$$",
+    "figures": []
+}

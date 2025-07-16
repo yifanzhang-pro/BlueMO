@@ -1,0 +1,228 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1 方格表中具有公共点的小方格称为相邻的.
+试问, 在 $n \times n(n \geqslant 2)$ 的方格表中共有多少对相邻的小方格?
+%%<SOLUTION>%%
+可将相邻方格对分为 3 类: 坚向相邻对, 横向相邻对, 斜向相邻对 (如图(<FilePath:./figures/fig-c9p1.png>)). 易知, 坚向相邻对与横向相邻对各有 $n(n-1)$ 个; 斜向相邻对有 $2(n-1)^2$ 个.
+故共有相邻的小方格 $2 n(n-1)+2(n-1)^2=2(n-1)(2 n-1)$ 个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2 在所有四位数的号码 (从 0000 到 9999) 中, 有多少个号码的前两位数字之和同末两位数字之和相等?
+%%<SOLUTION>%%
+它们的前两位数字之和与末两位数字之和等于固定的 $k=0,1, \cdots$, 18 , 共有这样的四位数 $1^2+2^2+\cdots+19^2=2470$ 个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3 用 $2 、 4 、 6$ 三个数字来构造六位数, 但是不允许有两个连着的 2 出现在六位数中 (例如 626442 是允许的, 226 426 就不允许), 问这样的六位数共有多少个?
+%%<SOLUTION>%%
+六位数中不可能出现 4 个或 4 个以上的 2 . 符合要求的六位数中, 不含 2 的有 $2^6$ 个,恰含 1 个 2 的有 $6 \cdot 2^5$ 个, 恰含 2 个 2 的有 $2^4 \cdot \mathrm{C}_5^2$ 个, 恰含 3 个 2的有 $2^3 \cdot \mathrm{C}_4^3$ 个.
+共有 448 个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4 某个国王的 25 位骑士围坐在他们的圆桌旁, 他们中间的 3 位被选派去杀一条恶龙.
+问被挑到的 3 位骑士中至少有两位是邻座的选派方法有多少种?
+%%<SOLUTION>%%
+一种情况是, 3 位骑士依次相邻, 有 25 种选法; 另一种情况是, 两位骑士是邻座, 此时第三位骑士就不选在已经邻座的两位骑士的两旁, 也就是说第三位只能在 25-4 位中任选一位, 这样有 25(25-4) 种选法.
+因此, 共有选法 $25+25(25-4)=550$ 种.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5 三边长为互不相等的自然数的三角形中, 最大边长恰为 $n$ 的共有 600 个.
+求 $n$ 的值.
+%%<SOLUTION>%%
+设三角形三边的长是 $x 、 y 、 n$, 且 $x<y<n$, 其中 $x 、 y 、 n$ 都是自然数, 显然, 最短边的长 $x$ 满足 $2 \leqslant x \leqslant n-2$. 现固定 $x$ 来求所构成的三角形的个数.
+当 $n$ 为奇数时,由下表
+$\begin{array}{ccc}x & y & \text { 三角形个数 } \\ 2 & n-1 & 1 \\ 3 & n-1, n-2 & 2 \\ \vdots & \vdots & \vdots \\ \frac{n-1}{2} & n-1, n-2, \cdots, \frac{n-1}{2}+2 & \frac{n-3}{2} \\ \frac{n+1}{2} & n-1, n-2, \cdots, \frac{n-1}{2}+2 & \frac{n-3}{2} \\ \vdots & \vdots & \vdots \\ n-3 & n-1, n-2 & 2 \\ n-2 & n-1 & 1 \end{array}$ 知三角形的个数为 $f(n)=2\left(1+2+3+\cdots+\frac{n-3}{2}\right)=\frac{1}{4}(n-1)(n-3)$. 类似地, 当 $n$ 为偶数时, $f(n)=\frac{1}{4}(n-2)^2$. 令 $f(n)=600$, 解得 $n=51$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6 在 $1,2, \cdots, 1000$ 中, 有多少个正整数既不是 2 的倍数, 又不是 5 的倍数?
+%%<SOLUTION>%%
+设 $S=\{1,2, \cdots, 1000\}, A_2=\{a|a \in S, 2| a\}, A_5=\{a \mid a \in S, 5 \mid a\}$. 于是 $\left|\left(\complement_S A_2\right) \cap\left(\complement_S A_5\right)\right|=S-\left(\left|A_2\right|+\left|A_5\right|\right)+\left|A_2 \cap A_5\right|= 1000-(500+200)+100=400$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7 已知某中学共有学生 900 人, 其中男生 528 人, 高中学生 312 人, 团员 670 人, 高中男生 192 人, 男团员 336 人, 高中团员 247 人, 高中男团员 175 人.
+试问这些统计数据是否有误?
+%%<SOLUTION>%%
+设 $A=\{$ 某中学男生 $\}, B=\{$ 某中学高中生 $\}, C=\{$ 某中学团员 $\}$, 则 $|A|=528,|B|=312,|C|=670,|A \cap B|=192,|B \cap C|=247$, $|C \cap A|=336,|A \cap B \cap C|=175$. 于是 $|A \cup B \cup C|=(528+312+ 670)-(192+336+247)+175=910$. 但某中学的学生总数仅为 900 , 矛盾.
+故统计有误.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8 一次会议有 1990 位数学家参加, 每人至少有 1327 位合作者.
+证明: 可以找到 4 位数学家,他们中每两个人都合作过.
+%%<SOLUTION>%%
+记数学家为 $v_1, v_2, \cdots, v_i, \cdots, v_{1990}$, 与 $v_i$ 合作过的数学家的集合为 $A_i$. 不妨设数学家 $v_1$ 与 $v_2$ 合作过.
+由 $\left|A_1 \cap A_2\right|=\left|A_1\right|+\left|A_2\right|-\mid A_1 \cup A_2 \mid \geqslant 2 \times 1327-1990>0$ 知, 有数学家不妨设为 $v_3$ 与 $v_1, v_2$ 都合作过.
+又 $\left|A_1 \cap A_2 \cap A_3\right|=\left|A_1 \cap A_2\right|+\left|A_3\right|-\left|\left(A_1 \cap A_2\right) \cup A_3\right| \geqslant 3 \times 1327- 2 \times 1990=1$, 故存在数学家, 不妨设为 $v_4 \in A_1 \cap A_2 \cap A_3$, 即 $v_4$ 与 $v_1 、 v_2$ 、 $v_3$ 都合作过.
+从而有数学家 $v_1 、 v_2 、 v_3 、 v_4$ 两两合作过.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9 计算不超过 120 的合数和素数的个数.
+%%<SOLUTION>%%
+设 $S_1=\{a|1 \leqslant a \leqslant 120,2| a\}, S_2=\{b|1 \leqslant b \leqslant 120,3| b\}$, $S_3=\{c|1 \leqslant c \leqslant 120,5| c\}, S_4=\{d|1 \leqslant d \leqslant 120,7| d\}$. 则由容斥原理可知 $\left|S_1 \cup S_2 \cup S_3 \cup S_4\right|=92$, 而 2、3、5、7 也在 92 个数之中, 它们都不是合数, 故合数为 $92-4=88$ (个). 又 1 不是素数, 故素数个数为 $120-88- 1=31$ (个).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 由数字 $1 、 2$ 和 3 组成 $n$ 位数, 要求 $n$ 位数中 $1 、 2$ 和 3 中的每一个至少出现一次.
+求所有这些 $n$ 位数的个数.
+%%<SOLUTION>%%
+设 $S=\{$ 由 $1,2,3$ 组成的 $n$ 位数 $\}$, 则 $|S|=3^n$. 记 $A_1=\{S$ 中所有不含 1 的 $n$ 位数 $\}, A_2=\{S$ 中所有不含 2 的 $n$ 位数 $\}, A_3=\{S$ 中所有不含 3 的 $n$ 位数 $\}$. 于是 $\bar{A}_i$ 表示所有含有数字 $i$ 的 $n$ 位数, 且 $\left|A_i\right|=2^n, i=1,2,3$, $\left|A_i \cap A_j\right|=1, i \neq j, i, j=1,2,3$. 因此, $\left|\bar{A}_1 \cap \bar{A}_2 \cap \bar{A}_3\right|=|S|- \left|A_1\right|-\left|A_2\right|-\left|A_3\right|+\left|A_1 \cap A_2\right|+\left|A_1 \cap A_3\right|-\left|A_1 \cap A_2 \cap A_3\right|=3^n- 3 \times 2^n+3$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11 由数字 $1,2, \cdots, 8$ 组成的 $n(n \geqslant 5)$ 位自然数中 (数字可以重复), 同时包含数字 $1,2,3,4,5$ 的数有多少个?
+%%<SOLUTION>%%
+设 $S=\{$ 由 $1,2,3,4,5,6,7,8$ 组成的可重复数字的 $n$ 位数 $\}$, 显然 $|S|=8^n$. 设 $A_i=\{S$ 中不含数字 $i$ 的 $n$ 位数 $\}(i=1,2, \cdots, 8)$, 有 $\left|A_i\right|=7^n$. 本题就是求 $\left|\bar{A}_1 \cap \bar{A}_2 \cap \bar{A}_3 \cap \bar{A}_4 \cap \bar{A}_5\right|$, 可计算出 $\mid \bar{A}_1 \cap \bar{A}_2 \cap \bar{A}_3 \cap \bar{A}_4 \cap \bar{A}_5 \mid=8^n-5 \cdot 7^n+10 \cdot 6^n-10 \cdot 5^n+5 \cdot 4^n-3^n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12 在区间 $1 \leqslant n \leqslant 10^6$ 中, 使得方程 $n=x^y$ 有非负整数解 $x 、 y$, 且 $x \neq n$ 的整数 $n$ 共有多少个?
+%%<SOLUTION>%%
+设 $N\left(x^y\right)$ 表示整数 $x^y$ 的个数.
+若 $1<x^y \leqslant 10^6$, 由于 $2^{19}= 524288<10^6, 2^{20}>10^6$, 则由容斥原理得 $N\left(x^y\right)=N\left(x^2\right)+N\left(x^3\right)+ N\left(x^5\right)+N\left(x^7\right)+N\left(x^{11}\right)+N\left(x^{13}\right)+N\left(x^{17}\right)+N\left(x^{19}\right)-N\left(x^6\right)-N\left(x^{10}\right)- N\left(x^{14}\right)-N\left(x^{15}\right)$. 由于大于 1 且不大于 $10^6$ 的平方数有 $10^3-1$ 个, 所以 $N\left(x^2\right)=999$. 大于 1 且不大于 $10^6$ 的立方数有 $10^2-1$ 个, 即 $N\left(x^3\right)=99$ 个.
+因为 $15^5=819375<10^6$, 所以大于 1 不大于 $10^6$ 的 5 次方数有 $15-1$ 个, 即 $N\left(x^5\right)=14$. 以此类推可得, $1<x^y \leqslant 10^6$ 时 $N\left(x^y\right)=999+99+14+6+ 2+1+1+1-9-2-1-1=1110$ 个.
+又 $n=1$ 时有非负整数解 $x>1$ 且 $y=0$. 于是满足题意的整数 $n$ 有 1111 个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13 对于 $0 \leqslant x \leqslant 100$, 求函数 $f(x)=[x]+[2 x]+\left[\frac{5 x}{3}\right]+[3 x]+[4 x]$ 所取的不同整数值的个数.
+%%<SOLUTION>%%
+以 $A_1, A_2, A_3, A_4, A_5$ 来分别表示函数 $[x],[2 x],[3 x],[4 x]$ 和 $\left[\frac{5 x}{3}\right]$ 的所有间断点的集合.
+则易知 $A_1 \subset A_2 \subset A_4$, 且 $A_3=\left\{\frac{n}{3} \mid n=1\right.$, $2, \cdots, 300\}, A_4=\left\{\frac{n}{4} \mid n=1,2, \cdots, 400\right\}, A_5=\left\{\frac{3 n}{5} \mid n=1,2, \cdots, 166\right\}$. 由此可得 $A_3 \cap A_4=\{n \mid n=1,2, \cdots, 100\}, A_3 \cap A_5=A_4 \cap A_5=A_3 \cap A_4 \cap A_5==\{3 n \mid n=1,2, \cdots, 33\}$. 由容斥原理知 $f(x)$ 的间断点的个数为 $\left|A_3\right|+\left|A_4\right|+\left|A_5\right|-\left|A_3 \cap A_4\right|-\left|A_3 \cap A_5\right|-\left|A_4 \cap A_5\right|+\mid A_3 \cap A_4 \cap A_5 \mid=300+400+166-100-33-33+33=733$. 故知 $f(x)$ 所取的不同整数值的个数为 734 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14 证明: 任意 28 个介于 104 与 208 之间 (包括 104 和 208) 的不同的正整数,其中必有两个数不互质.
+%%<SOLUTION>%%
+设 $I=\{x \mid 104 \leqslant x \leqslant 208, x \in \mathbf{N}\}$, 并记 $E_k=\{x \mid x \equiv 0(\bmod k)$, $x \in I\}, k=2,3,5,7$. 由容斥原理得 $\left|E_2 \cup E_3 \cup E_5 \cup E_7\right|=(53+35+ 21+15)-(17+10+7+7+5+3)+(3+2+1+1)-0=82$. 这说明 $[104$, $208]$ 中不能被 $2,3,5,7$ 任何一个整除的整数共有 $(208-103)-82=23$ 个.
+于是任意取 104 和 208 之间的 28 个数, 至少有 5 个数属于 $E_2 \cup E_3 \cup E_5 \cup E_7$. 根据抽席原则知, 必有两个数属于某个 $E_k(k=2,3,5,7)$, 故结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15 已知 $N=1990^{1990}$. 求满足条件 $1 \leqslant n \leqslant N$, 且 $\left(n^2-1, N\right)=1$ 的整数 $n$ 的个数.
+%%<SOLUTION>%%
+因为 $1990=2 \times 5 \times 199$, 所以 $\left(n^2-1, N\right)=1 \Leftrightarrow n^2-1 \not \neq 0(\bmod 2,5,199)$, 即 $n \neq 11(\bmod 2)$ 且 $n \neq 1,4(\bmod 5)$ 且 $n \neq 1,198(\bmod 199)$.
+令全集 $I=\{1,2, \cdots, N\}, A=\{n \mid n \equiv 1(\bmod 2), n \in I\}, B= \{n \mid n \equiv 1,4(\bmod 5), n \in I\}, C=\{n \mid n \equiv 1,198(\bmod 199), n \in I\}$. 则 $A \cap B=\{n \mid n \equiv 1,9(\bmod 10), n \in I\}, B \cap C=\{n \mid n \equiv 1,994(\bmod 995)$, $n \in I\}, C \cap A=\{n \mid n \equiv 1,397(\bmod 398), n \in I\}, A \cap B \cap C=\{n \mid n \equiv 1$, $1989(\bmod 1990), n \in I\} .|\bar{A} \cap \bar{B} \cap \vec{C}|==N-\left(\frac{N}{2}+\frac{2 N}{5}+\frac{2 N}{199}\right)+ \left(\frac{2 N}{10}+\frac{2 N}{995}+\frac{2 N}{398}\right)-\frac{2 N}{1990}=\frac{589}{1990} N$. 故满足条件的整数 $n$ 的个数为 $\frac{589}{1990} N$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16 空间中有 $2 m$ 个点, $m \geqslant 2$, 其中任意四点不共面.
+证明: 如果这 $2 m$ 个点之间至少连有 $m^2+1$ 条线段,则所连的线段中至少有三条, 它们围成一个三角形.
+%%<SOLUTION>%%
+对 $m$ 用归纳法.
+当 $m=2$ 时, 容易验证.
+假设对 $m$ 结论成立.
+对 $m+$ 1 , 空间有 $2 m+2$ 个点, $(m+1)^2+1$ 条连线.
+这 $2 m+2$ 个点中必有两点 $a$ 与 $b$, 它们之间有线段相连.
+其余 $2 m$ 个点的集合记为 $X$. 如果 $X$ 中 $2 m$ 个点之间至少连有 $m^2+1$ 条线段, 则结论成立.
+因此, 设 $X$ 中 $2 m$ 个点之间至多连有 $m^2$ 条线段.
+于是 $X$ 中的点与点 $a$ 或点 $b$ 所连线段至少有 $(m+1)^2+1-m^2-1= 2 m+1$ 条.
+记 $X$ 中与点 $a$ 有线段相连的点的集合为 $A$, 与点 $b$ 有线段相连的点的集合为 $B$. 则 $|A \cup B| \leqslant|X| \leqslant 2 m$, 而且 $|A|+|B| \geqslant 2 m+1$. 因此有 $2 m \geqslant|A \cup B|=|A|+|B|-|A \cap B| \geqslant 2 m+1-|A \cap B|$, 由此得 $|A \cap B| \geqslant 1$. 于是必有点 $C \in A \cap B$. 点 $a$ 与 $b 、 c$ 之间两两均有线段相连.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17 上届获得前 $n$ 名的 $n$ 个球队参加本届争夺前 $n$ 名的比赛.
+如果不设并列名次, 问: 没有一个队取得的名次恰好紧接在上届比他高一个名次的球队之后的比赛结果有多少种可能?
+%%<SOLUTION>%%
+以 $n$ 元有序数组 $\left(a_1, a_2, \cdots, a_n\right)$ 表示本届的比赛结果: 上届第 $i$ 名的球队在本届获得第 $a_i$ 名 $(i=1,2, \cdots, n)$. 以 $S$ 表示比赛可能结果的全体, 则 $|S|=n !$. 设 $A_i=\{i+1$ 号队获得的名次比 $i$ 号队低一名次的比赛结果 $\}, i=1,2, \cdots, n$. 易知 $\left|A_i\right|=(n-1) !(1 \leqslant i \leqslant n),\left|A_i \cap A_j\right|= (n-2) ! \quad(1 \leqslant i<j \leqslant n), \cdots,\left|\bigcap_{i=1}^n A_i\right|=1, \left|\bigcap_{i=1}^n \bar{A}_i\right|=n !-\mathrm{C}_{n-1}^1(n- 1) !+\mathrm{C}_{n-1}^2(n-2) !+\cdots+(-1)^{n-1} \mathrm{C}_{n-1}^{n-1}$. 此即所求比赛结果的种数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题18 由复数构成的有限集合 $A$ 满足: 对任意正整数 $n$, 若 $z \in A$, 则 $z^n \in A$. 证明:
+(1) $\sum_{z \in A} z$ 是整数;
+(2) 对任意整数 $k$, 可以找到一个集合 $A$, 使得 $A$ 满足条件且 $\sum_{z \in A} z=k$. 
+%%<SOLUTION>%%
+(1) 定义有限集合 $X$ 的元素和为 $S(X)$. 设 $0 \neq z \in A$. 因为 $A$ 是有限集合,故存在正整数 $m<n$, 且 $z^m=z^n$. 则 $z^{n-m}=1$. 设 $d$ 是使 $z^k=1$ 成立的 $k$ 的最小正整数.
+所以, $1, z, z^2, \cdots, z^{d-1}$ 互不相同, 且它们的 $d$ 次方均为 1 , 故这些数是 1 的 $d$ 次方根.
+这表明 $A \backslash\{0\}=\bigcup_{k=1}^m U_{n_k}$, 其中 $U_p= \left\{z \in \mathbf{C} \mid z^p=1\right\}$. 由于 $S\left(U_p\right)=0, p \geqslant 2, S\left(U_1\right)=1, U_p \cap U_q=U_{(p, q)}$, 所以 $S(A)=\sum_k S\left(U_{n_k}\right)-\sum_{k<l} S\left(U_{n_k} \cap U_{n_l}\right)+\sum_{k<l<s} S\left(U_{n_k} \cap U_{n_l} \cap U_{n_s}\right)+\cdots$ 为整数.
+(2) 设对某一个整数 $k$, 存在 $A=\bigcup_{i=1}^m U_{n_i}$ 满足 $S(A)=k$. 令互不相同的质数 $p_1, p_2, \cdots, p_6$ 均不是 $n_i$ 的因子, 则 $S\left(A \cup U_{p_1}\right)=S(A)+S\left(U_{p_1}\right)-S(A \cap \left.U_{p_1}\right)=k-S\left(U_1\right)=k-1$. 于是可得 $S\left(A \cup U_{p_1 p_2 p_3} \cup U_{p_1 p_4 p_5} \cup U_{p_2 p_4 p_6} \cup\right. \left.U_{p_3 p_5 p_6}\right)=S(A)+S\left(U_{p_1 p_2 p_3}\right)+S\left(U_{p_1 p_4 p_5}\right)+S\left(U_{p_2 p_4 p_6}\right)+S\left(U_{p_3 p_5 p_6}\right)-S(A \cap \left.U_{p_1 p_2 p_3}\right)-\cdots+S\left(A \cap U_{p_1 p_2 p_3} \cap U_{p_1 p_4 p_5}\right)+\cdots-S\left(A \cap U_{p_1 p_2 p_3} \cap U_{p_1 p_4 p_5} \cap\right. \left.U_{p_2 p_4 p_6}\right)-\cdots+S\left(A \cap U_{p_1 p_2 p_3} \cap U_{p_1 p_4 p_5} \cap U_{p_2 p_4 p_6} \cap U_{p_3 p_5 p_6}\right)=k+4 \times 0- 4 S\left(U_1\right)-\sum_{k=1}^6 S\left(U_{p_k}\right)+10 S\left(U_1\right)-5 S\left(U_1\right)+S\left(U_1\right)=k-4+10-5+1= k+2$. 于是, 如果存在 $A$ 使得 $S(A)=k$, 那么, 存在 $B 、 C$ 满足 $S(B)=k-1$, $S(C)=k+2$. 从而, 结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题19 设 $S=\{1,2, \cdots, 280\}$. 求最小自然数 $n$, 使得 $S$ 的每个 $n$ 元子集中都含有 5 个两两互素的数.
+%%<SOLUTION>%%
+令 $A_i=\left\{i k \mid k=1,2, \cdots,\left[\frac{280}{i}\right]\right\}, i=1,2, \cdots, A=A_2 \cup A_3 \cup A_5 \cup A_7$. 则由容瓜原理可以算出 $|A|=216$. 由于在 $A$ 中任取 5 个数时, 必有两个数在同一个 $A_i(i \in\{2,3,5,7\})$ 之中, 二者不互素, 故知所求的最小自然数 $n \geqslant 217$.
+另一方面, 设 $T \subset S$ 且 $|T|==217$. 记 $S$ 中所有素数与 1 所成的集合为 $M$, 则 $|M|=60$.
+(1) 若 $|T \cap M| \geqslant 5$, 则问题已解决.
+(2) 若 $|T \cap M|=4$, 设其余的素数从小到大排列为 $p_1, p_2, p_3, \cdots$,显然有 $p_1 \leqslant 11, p_2 \leqslant 13, p_3 \leqslant 17, p_4 \leqslant 19, p_5 \leqslant 23$. 于是有 $\left\{p_1^2, p_1 p_2, p_1 p_3\right.$, $\left.p_1 p_4, p_1 p_5, p_2^2, p_2 p_3, p_2 p_4\right\} \subset S$. 因为 $S$ 中共有 220 个合数而这时 $T$ 中有 213 个合数,故在 $S-T$ 中的合数只有 7 个,从而上面集合中的 8 个元素中总有一个含在 $T$ 中, 它与 $T \cap M$ 中的 4 个数一起即满足题中要求.
+(3) 设 $|T \cap M| \leqslant 3$. 这时, 至多有 $S$ 中的 6 个合数不在 $T$ 中.
+若集合 $\left\{2^2, 3^2, 5^2, 7^2, 11^2, 13^2\right\}$ 中有 5 个或 4 个元素含在 $T$ 中, 则问题化为前两种情形.
+以下设这 6 个合数中至多有 3 个含在 $T$ 中, 于是其他合数至多有 3 个不在 $T$ 中.
+因此, 集合 $\{2 \times 41,3 \times 37,5 \times 31,7 \times 29,11 \times 23,13 \times 19\}$, $\{2 \times 37,3 \times 31,5 \times 29,7 \times 23,11 \times 19,13 \times 17\}$ 的 12 个合数中至多有 3 个不在 $T$ 中.
+由抽屉原理知必有一个集合的至少 5 个数含在 $T$ 中.
+显然, 这 5 个数两两互素.
+综上可知,所求的最小自然数 $n=217$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题20. 46 个国家派代表队参加亚洲数学竞赛, 比赛共 4 个题.
+结果统计如下: 第 1 题对的学生有 235 人; 第 $1 、 2$ 两题都对的有 59 人; 第 $1 、 3$ 两题都对的有 29 人; 第 $1 、 4$ 两题都对的有 15 人; 四题全对的有 3 人.
+求证: 存在一个国家,这个国家派出的选手中至少有 4 人恰好只做对了第 1 题.
+%%<SOLUTION>%%
+设集合 $A=\{$ 全部选手 $\}, A_i=\{$ 第 $i$ 题对的考生 $\}, i=1,2,3,4$. 则 $\left|A_1\right|=235,\left|A_1 \cap A_2\right|=59,\left|A_1 \cap A_3\right|=29,\left|A_1 \cap A_4\right|=15$, $\left|\bigcap_{i=1}^4 A_i\right|=3$. 因为 $\left|A_1 \cap A_2 \cap A_3\right|>\left|\bigcap_{i=1}^4 A_i\right|=3$, 同理, $\left|A_1 \cap A_3 \cap A_4\right|>$ 3, $\left|A_1 \cap A_2 \cap A_4\right|>3$, 所以 $\left|A_1 \cap A_2 \cap A_3\right|+\left|A_1 \cap A_3 \cap A_4\right|+\mid A_1 \cap A_2 \cap A_4|-| \bigcap_{i=1}^4 A_i \mid>6$. 注意到 $\left|A_1 \cap \bar{A}_2 \cap \bar{A}_3 \cap \bar{A}_4\right|=\mid A_1 \cap \left(\overline{A_2 \cup A_3 \cup A_4}\right)|=| A_1 \cup A_2 \cup A_3 \cup A_4|-| A_2 \cup A_3 \cup A_4 \mid= \left(\sum_{i=1}^4\left|A_i\right|-\sum_{1 \leqslant i<j \leqslant 4}\left|A_i \cap A_j\right|+\sum_{1 \leqslant i<j<k \leqslant 4}\left|A_i \cap A_j \cap A_k\right|-\left|\bigcap_{i=1}^4 A_i\right|\right)- \left(\sum_{i=2}^4\left|A_i\right|-\sum_{2 \leqslant i<j \leqslant 4}\left|A_i \cap A_j\right|+\left|\bigcap_{i=2}^4 A_i\right|\right)=\left|A_1\right|-\left|A_1 \cap A_2\right|-\mid A_1 \cap A_3|-| A_1 \cap A_4|+| A_1 \cap A_2 \cap A_3|+| A_1 \cap A_2 \cap A_4|+| A_1 \cap A_3 \cap A_4 \mid- \left|\bigcap_{i=1}^4 A_i\right|>235-59-29-15+6=138$, 可见 $\left|A_1 \cap \bar{A}_2 \cap \bar{A}_3 \cap \bar{A}_4\right| \geqslant 139=3 \times 46+1>3 \times 46$. 故由抽屉原理知, 存在一个国家, 该国派出的选手中至少有 4 人做对了且只做对了第一题.
+%%PROBLEM_END%%
+
+

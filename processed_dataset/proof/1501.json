@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-1.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $x 、 y$ 是实数, 使得 $x+y 、 x^2+y^2 、 x^3+y^3 、 x^4+y^4$ 都是整数.\n证明: 对任意 $n \\in \\mathbf{N}^*$, 数 $x^n+y^n$ 都为整数.",
+    "solution": "证明:此题要用到第一数学归纳法的一种变形: 设 $P(n)$ 是关于正整数 $n$ 的一个命题(或性质), 如果\n(1) 当 $n=1,2$ 时, $P(n)$ 成立;\n(2) 由 $P(n) 、 P(n+1)$ 成立可以推出 $P(n+2)$ 成立.\n那么, 对任意 $n \\in \\mathbf{N}^*, P(n)$ 都成立.\n事实上, 这种变形只是调整了归纳过程中的跨度, 这样的例子在后面的讨论中会频繁出现.\n回到原题, 由条件 $x+y$ 与 $x^2+y^2$ 都是整数可知,命题对 $n=1,2$ 成立.\n设命题对 $n, n+1$ 成立, 即 $x^n+y^n$ 与 $x^{n+1}+y^{n+1}$ 都是整数, 考虑 $n+2$ 的情形.\n此时\n$$\nx^{n+2}+y^{n+2}=(x+y)\\left(x^{n+1}+y^{n+1}\\right)-x y\\left(x^n+y^n\\right) .\n$$\n因此, 为证 $x^{n+2}+y^{n+2} \\in \\mathbf{Z}$, 结合归纳假设及条件中的 $x+y \\in \\mathbf{Z}$, 我们只需证明 $x y \\in \\mathbf{Z}$.\n注意到 $x+y 、 x^2+y^2 \\in \\mathbf{Z}$, 故 $2 x y=(x+y)^2-\\left(x^2+y^2\\right) \\in \\mathbf{Z}$. 若 $x y \\notin \\mathbf{Z}$, 则可设 $x y=\\frac{m}{2}, m$ 为奇数, 再由 $x^2+y^2 、 x^4+y^4 \\in \\mathbf{z}$, 知 $2 x^2 y^2=\\left(x^2+\\right. \\left.y^2\\right)^2-\\left(x^4+y^4\\right) \\in \\mathbf{Z}$, 即 $2 \\times\\left(\\frac{m}{2}\\right)^2=\\frac{m^2}{2} \\in \\mathbf{Z}$. 但 $m$ 为奇数, 这是一个矛盾.\n所以 $x y \\in \\mathbf{Z}$. 进而, 命题对 $n+2$ 成立.\n综上所述, 对任意 $n \\in \\mathbf{N}^*$, 数 $x^n+y^n \\in \\mathbf{Z}$.",
+    "remark": "",
+    "figures": []
+}

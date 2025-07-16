@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例5. 给定正整数 $n$,设 $f(n)$ 是使 $\\sum_{k=1}^{f(n)} k$ 能被 $n$ 整除的最小正整数.\n证明: 当且仅当 $n$ 为 2 的幂时有 $f(n)=2 n-1$.",
+    "solution": "证明:问题的前一半甚为容易.\n如果 $n=2^m$, 则一方面\n$$\n\\sum_{k=1}^{2 n-1} k=\\frac{(2 n-1) \\times 2 n}{2}=\\left(2^{m+1}-1\\right) \\cdot 2^m\n$$\n被 $2^m=n$ 整除.\n另一方面,若 $r \\leqslant 2 n-2$, 则\n$$\n\\sum_{k=1}^r k=\\frac{r(r+1)}{2}\n$$\n不被 $2^m$ 整除, 这是因为 $r$ 和 $r+1$ 中有一个是奇数, 而另一个不超过 $(2 n- 2)+1=2^{m+1}-1$, 因而不被 $2^{m+1}$ 整除.\n综合上述两个方面, 即知 $f\\left(2^m\\right)=2^{m+1}-1$.\n现在设 $n$ 不是 2 的方幂,即 $n=2^m a$, 其中 $m \\geqslant 0, a>1$ 为奇数.\n我们证明, 存在正整数 $r<2 n-1$, 使得 $2^{m+1} \\mid r$, 且 $a \\mid(r+1)$, 于是\n$$\n\\sum_{k=1}^r k=\\frac{r(r+1)}{2}\n$$\n被 $2^m a==n$ 整除, 因而 $f(n)<2 n-1$.\n为证明.\n面的断言, 我们考虑\n$$\nx \\equiv 0\\left(\\bmod 2^{m+1}\\right), x \\equiv-1(\\bmod a) . \\label{eq1}\n$$\n因为 $\\left(2^{m+1}, a\\right)=1$,故由中国剩余定理知, 同余式组 式\\ref{eq1} 必有解 $x_0$, 并且其全部解为 $x \\equiv x_0\\left(\\bmod 2^{m+1} a\\right)$, 即 $x \\equiv x_0(\\bmod 2 n)$. 因此可确定一个 $r$ 满足 式\\ref{eq1} 且 $0<r \\leqslant 2 n$. 进一步, 由 式\\ref{eq1} 中第二个同余式知 $r \\neq 2 n$. 而由第一个同余式可见 $r \\neq 2 n-1$, 因此实际上 $r<2 n-1$. 这证明了存在满足要求的 $r$.",
+    "remark": "",
+    "figures": []
+}

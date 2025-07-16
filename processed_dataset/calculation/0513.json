@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例10 已知 $\\alpha \\in\\left[0, \\frac{\\pi}{2}\\right]$, 求 $y=\\sqrt{5-4 \\sin \\alpha}+\\sin \\alpha$ 的最小值和最大值.",
+    "solution": "分析:通过变量代换,把 $y$ 表示成二次函数的形式.\n解设 $x=\\sqrt{5-4 \\sin \\alpha}$, 因为 $0 \\leqslant \\sin \\alpha \\leqslant 1$, 所以 $1 \\leqslant x \\leqslant \\sqrt{5}$, 且\n$$\n\\begin{aligned}\n& \\text { i } \\sin \\alpha=\\frac{5-x^2}{4} \\text {, 于是 } \\\\\n& y=x+\\frac{5-x^2}{4}=-\\frac{1}{4}(x-2)^2+\\frac{9}{4}(1 \\leqslant x \\leqslant \\sqrt{5}) .\n\\end{aligned}\n$$\n故当 $x=2$ 时, $y$ 的最大值为 $\\frac{9}{4}$; 当 $x=1$ 时, $y$ 的最小值为 2 .\n说明通过换元, 常常可以把较复杂的形式转化为较简单的形式, 从而使问题得以解决.",
+    "remark": "",
+    "figures": []
+}

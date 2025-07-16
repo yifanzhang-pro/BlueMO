@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise8.tex",
+    "problem_type": "calculation",
+    "problem": "问题10 求所有的非空有限的正整数集 $S$, 使得对任意 $i, j \\in S$, 数 $\\frac{i+j}{(i, j)} \\in S$, 这里 $(i, j)$ 表示 $i$ 与 $j$ 的最大公约数.",
+    "solution": "设 $S$ 为满足条件的集合, 并设 $a \\in S$, 则 $\\frac{a+a}{(a, a)}=2 \\in S$, 如果 $1 \\in S$, 则 $\\frac{1+2}{(1,2)}=3 \\in S$. 一般地, 设 $n \\in S$, 则 $\\frac{n+1}{(n, 1)}=n+1 \\in S$. 这表明 $S=\\mathbf{N}^*$, 与 $S$ 为有限集矛盾.\n另一方面, 若 $S$ 中有大于 2 的元素, 取这些元素中的最小元素, 设为 $n$, 则 $\\frac{n+2}{(2, n)} \\in S$. 若 $(2, n)=2$, 则 $2<\\frac{n+2}{2}<n$, 这与 $n$ 为 $S$ 中比 2 大的最小元素矛盾, 故 $(2, n)=1$. 因此, $n+2 \\in S$. 进一步, $\\frac{n+(n+2)}{(n, n+2)}=2 n+2 \\in S$, $\\frac{n+(2 n+2)}{(n, 2 n+2)}=3 n+2 \\in S$, 依此类推, 可知对任意 $k \\in \\mathbf{N}^*$, 数 $k n+2 \\in S$, 与 $S$ 为有限集矛盾.\n综上可知, $S=\\{2\\}$.",
+    "remark": "",
+    "figures": []
+}

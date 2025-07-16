@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例15. 设 $a, b, c \\in \\mathbf{R}^{+}$, 且 $a^2+b^2+c^2=1$. 求证:\n$$\n\\frac{a}{1-a^2}+\\frac{b}{1-b^2}+\\frac{c}{1-c^2} \\geqslant \\frac{3 \\sqrt{3}}{2} \\text {. }\n$$",
+    "solution": "证明:原不等式\n$$\n\\frac{a}{1-a^2}+\\frac{b}{1-b^2}+\\frac{c}{1-c^2} \\geqslant \\frac{3 \\sqrt{3}}{2}\n$$\n等价于 $\\quad \\frac{a^2}{a\\left(1-a^2\\right)}+\\frac{b^2}{b\\left(1-b^2\\right)}+\\frac{c^2}{c\\left(1-c^2\\right)} \\geqslant \\frac{3 \\sqrt{3}}{2}$.\n由于 $a^2+b^2+c^2=1$, 如果能证明 $x\\left(1-x^2\\right) \\leqslant \\frac{2}{3 \\sqrt{3}}$, 则上述不等式成立.\n由平均值不等式, 得\n$$\n\\begin{aligned}\nx\\left(1-x^2\\right) & =\\sqrt{\\frac{2 x^2\\left(1-x^2\\right)\\left(1-x^2\\right)}{2}} \\\\\n& \\leqslant \\sqrt{\\frac{1}{2}\\left[\\frac{2 x^2+\\left(1-x^2\\right)+\\left(1-x^2\\right)}{3}\\right]^3} \\\\\n& =\\sqrt{\\frac{1}{2} \\cdot\\left(\\frac{2}{3}\\right)^3}=\\frac{2}{3 \\sqrt{3}},\n\\end{aligned}\n$$\n故不等式成立.",
+    "remark": "注:由于分子之和 $a^2+b^2+c^2=1$, 所以当各分母被控制在某个常数之内时, 便可以推出命题成立.\n这个方法在分式不等式证明中常常使用.",
+    "figures": []
+}

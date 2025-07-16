@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题6. $X$ 是一个 $n$ 元集, 指定它的 $m$ 个 $k$ 元子集 $A_1, A_2, \\cdots, A_m$ 为红 $k$ 子集.\n证: 若 $m>\\frac{(k-1)(n-k)+k}{k^2} \\cdot \\mathrm{C}_n^{k-1}$, 则必存在一个 $X$ 的 $k+1$ 元子集,它的所有 $k$ 元子集都是红 $k$ 子集.",
+    "solution": "假设没有所求的 $k+1$ 元集, 我们证明此时\n$$\nm \\leqslant \\frac{(k-1)(n-k)+k}{k^2} \\cdot \\mathrm{C}_n^{k-1} .\n$$\n记所有红 $k$ 子集构成子集族 $S$,所有 $k-1$ 元子集构成的子集族为 $\\beta$. 对于任一个 $k-1$ 元子集 $B$, 记 $\\alpha(B)$ 为包含 $B$ 的红 $k$ 子集个数.\n对于任一个 $A \\in S, A$ 包含有 $k$ 个 $k-1$ 元子集.\n对于 $X \\backslash A$ 的任一元素 $x$, $x$ 与 $A$ 中 $k$ 个 $k-1$ 元集的至多 $k-1$ 个构成红 $k$ 子集(不然存在 $k+1$ 元集, 其所有 $k$ 元子集都是红 $k$ 子集). 因此 $\\sum_{\\substack{B \\subset A \\\\|B|=k-1}} \\alpha(B) \\leqslant(n-k)(k-1)+k$.\n故\n$$\n\\begin{gathered}\nm[(n-k)(k-1)+k] \\geqslant \\sum_{A \\in S} \\sum_{\\substack{B C A \\\\\n|B|=k-1}} \\alpha(B) \\\\\n=\\sum_{B \\in \\beta}(\\alpha(B))^2 \\geqslant \\frac{1}{|\\beta|}\\left(\\sum_{B \\in \\beta} \\alpha(B)\\right)^2 \\geqslant \\frac{1}{\\mathrm{C}_n^{k-1}}(\\mathrm{~km})^2 . \\\\\nm \\leqslant \\frac{[(n-k)(k-1)+k] \\cdot \\mathrm{C}_n^{k-1}}{k^2} .\n\\end{gathered}\n$$\n故\n$$\nm \\leqslant \\frac{[(n-k)(k-1)+k] \\cdot \\mathrm{C}_n^{k-1}}{k^2} .\n$$\n因此当 $m>\\frac{(n-k)(k-1)+k}{k^2} \\cdot \\mathrm{C}_n^{k-1}$ 时, 必存在一个 $X$ 的 $k+1$ 元子集, 它的所有 $k$ 元子集都是红 $k$ 子集.",
+    "remark": "",
+    "figures": []
+}

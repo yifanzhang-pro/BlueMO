@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题12 证明: 存在两个函数 $f, g: \\mathbf{R} \\rightarrow \\mathbf{R}$, 使得函数 $f(g(x))$ 在 $\\mathbf{R}$ 上是严格递减的, 而 $g(f(x))$ 在 $\\mathbf{R}$ 上是严格递增的.",
+    "solution": "设 $A=\\bigcup_{k \\in \\mathbf{Z}}\\left([-2^{2 k+1},-2^{2 k}) \\bigcup(2^{2 k}, 2^{2 k+1}]\\right), B=\\bigcup_{k \\in \\mathbf{Z}}\\left(\\left[-2^{2 k},-2^{2 k-1}\\right) \\cup\\left(2^{2 k-1}, 2^{2 k}\\right]\\right)$, 则 $A=2 B, B=2 A, A=-A, B=-B, A \\cap B=\\varnothing$, 并且 $A \\cup B \\cup\\{0\\}=\\mathbf{R}$. 现在令\n$$\nf(x)=\\left\\{\\begin{array}{ll}\nx, & x \\in A, \\\\\n-x, & x \\in B, \\\\\n0, & x=0,\n\\end{array} \\text { 而 } g(x)=2 f(x),\\right.\n$$\n那么, $f(g(x))=f(2 f(x))=-2 x$, 而 $g(f(x))=2 f(f(x))=2 x$. 所以, 满足条件的函数存在.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题12 设 $n(\\geqslant 2)$ 是正整数, $x_i \\in[0,2], i=1,2, \\cdots, n$. 证明: 二次函数 $f(x)=n x^2-2\\left(\\sum_{i=1}^n x_i\\right) x+\\sum_{i=1}^n x_i^2$ 的最小值不超过 $n$.",
+    "solution": "由题设知 $f(x)=\\left(x-x_1\\right)^2+\\left(x-x_2\\right)^2+\\cdots+\\left(x-x_n\\right)^2$. 由于 $x_i \\in[0,2], i=1,2, \\cdots, n$, 所以 $0 \\leqslant\\left|1-x_i\\right| \\leqslant 1$, $0 \\leqslant\\left(1-x_i\\right)^2 \\leqslant 1$. 于是 $f(1)=\\left(1-x_1\\right)^2+\\left(1-x_2\\right)^2+\\cdots+\\left(1-x_n\\right)^2 \\leqslant n$. 所以, $f_{\\text {min }}(x) \\leqslant f(1) \\leqslant n$.",
+    "remark": "",
+    "figures": []
+}

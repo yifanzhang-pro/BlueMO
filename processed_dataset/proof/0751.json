@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 设 $b>a>e$, 证明: $a^b>b^a$.",
+    "solution": "取对数后只须证 $b \\ln a>a \\ln b$, 只须证 $f(x)=\\frac{\\ln x}{x}(x>\\mathrm{e})$ 单调减.\n此时显然 $f^{\\prime}(x)=\\frac{1-\\ln x}{x^2}<0$, 故结论成立.",
+    "remark": "注:本题用\"作商法\"也可证明,而\"作差法\" 将使问题大大复杂化.",
+    "figures": []
+}

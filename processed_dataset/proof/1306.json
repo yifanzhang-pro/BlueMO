@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例10. 设 $x_1 、 x_2 、 x_3$ 是正数,求证:\n$$\nx_1 x_2 x_3 \\geqslant\\left(x_2+x_3-x_1\\right)\\left(x_1+x_3-x_2\\right)\\left(x_1+x_2-x_3\\right) .\n$$",
+    "solution": "证明:不妨设 $x_1 \\geqslant x_2 \\geqslant x_3>0$.\n令 $x_1=x_3+\\delta_1, x_2=x_3+\\delta_2$, 则 $\\delta_1 \\geqslant \\delta_2 \\geqslant 0$. 于是\n$$\n\\begin{aligned}\n& x_1 x_2 x_3-\\left(x_2+x_3-x_1\\right)\\left(x_1+x_3-x_2\\right)\\left(x_1+x_2-x_3\\right) \\\\\n= & \\left(x_3+\\delta_1\\right)\\left(x_3+\\delta_2\\right) x_3-\\left(x_3+\\delta_2-\\delta_1\\right)\\left(x_3+\\delta_1-\\delta_2\\right)\\left(x_3+\\delta_1+\\delta_2\\right) \\\\\n= & \\left(x_3^2+\\delta_1 x_3+\\delta_2 x_3+\\delta_1 \\delta_2\\right) x_3-\\left[x_3^2-\\left(\\delta_1-\\delta_2\\right)^2\\right]\\left(x_3+\\delta_1+\\delta_2\\right) \\\\\n= & x_3 \\delta_1 \\delta_2+x_3^2\\left(x_3+\\delta_1+\\delta_2\\right)-\\left[x_3^2-\\left(\\delta_1-\\delta_2\\right)^2\\right]\\left(x_3+\\delta_1+\\delta_2\\right) \\\\\n= & x_3 \\delta_1 \\delta_2+\\left(\\delta_1-\\delta_2\\right)^2\\left(x_3+\\delta_1+\\delta_2\\right) \\\\\n\\geqslant & 0 .\n\\end{aligned}\n$$\n所以\n$$\nx_1 x_2 x_3 \\geqslant\\left(x_2+x_3-x_1\\right)\\left(x_1+x_3-x_2\\right)\\left(x_1+x_2-x_3\\right) .\n$$\n说明本题用的代换方法称为\"增量代换法\".",
+    "remark": "",
+    "figures": []
+}

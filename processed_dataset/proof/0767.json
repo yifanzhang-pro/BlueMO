@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise12.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 设 $O x y z$ 是空间直角坐标系, $S$ 是空间中的有限点集, 而 $S_1, S_2, S_3$ 分别是 $S$ 中所有的点在 $O y z, O z x, O x y$ 坐标平面上的投影所成的点集.\n求证这些集合的点数之间有如下关系:\n$$\n|S|^2 \\leqslant\\left|S_1\\right| \\cdot\\left|S_2\\right| \\cdot\\left|S_3\\right| \\text {. }\n$$",
+    "solution": "记 $S_{i, j}$ 是 $S$ 中形如 $(x, i, j)$ 的点的集合, 即在 $O y z$ 平面内投影坐标为 $(i, j)$ 的一切点的集合.\n显然 $S=\\bigcup_{(i, j) \\in S_1} S_{i, j}$. 由柯西不等式得\n$$\n|S|^2=\\left(\\sum_{(i, j) \\in S_1}\\left|S_{i, j}\\right|\\right)^2 \\leqslant \\sum_{(i, j) \\in S_1} 1^2 \\times \\sum_{(i, j) \\in S_1}\\left|S_{i, j}\\right|^2=\\left|S_1\\right| \\sum_{(i, j) \\in S_1}\\left|S_{i, j}\\right|^2 .\n$$\n构作集合 $X=\\bigcup_{(i, j) \\in S_1}\\left(S_{i, j} \\times S_{i, j}\\right)$, 那么 $|X|=\\sum_{(i, j) \\in S_1}\\left|S_{i, j}\\right|^2$.\n作映射\n$$\nf: X \\rightarrow S_2 \\times S_3 \\text { 为 } f\\left((x, i, j),\\left(x^{\\prime}, i, j\\right)\\right)=\\left((x, j),\\left(x^{\\prime}, i\\right)\\right) \\text {. }\n$$\n显然 $f$ 是单射, 所以 $|X| \\leqslant\\left|S_2\\right| \\cdot\\left|S_3\\right|$. 从而有\n$$\n|S|^2=\\left|S_1\\right| \\cdot|X| \\leqslant\\left|S_{1^*}\\right| \\cdot\\left|S_2\\right| \\cdot\\left|S_3\\right| \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

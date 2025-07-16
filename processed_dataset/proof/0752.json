@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设实数 $x 、 y 、 z$ 大于或等于 1 , 求证:\n$$\n\\left(x^2-2 x+2\\right)\\left(y^2-2 y+2\\right)\\left(z^2-2 z+2\\right) \\leqslant(x y z)^2-2 x y z+2 .\n$$",
+    "solution": "注意到 $x \\geqslant 1, y \\geqslant 1$, 所以\n$$\n\\begin{aligned}\n& \\left(x^2-2 x+2\\right)\\left(y^2-2 y+2\\right)-\\left((x y)^2-2 x y+2\\right) \\\\\n= & (-2 y+2) x^2+\\left(6 y-2 y^2-4\\right) x+\\left(2 y^2-4 y+2\\right)\n\\end{aligned}\n$$\n$$\n\\begin{aligned}\n& =-2(y-1)\\left(x^2+(y-2) x+1-y\\right) \\\\\n& =-2(y-1)(x-1)(x+y-1) \\leqslant 0,\n\\end{aligned}\n$$\n所以\n$$\n\\left(x^2-2 x+2\\right)\\left(y^2-2 y+2\\right) \\leqslant(x y)^2-2 x y+2 .\n$$\n同理, 因为 $x y \\geqslant 1, z \\geqslant 1$, 所以\n$$\n\\left((x y)^2-2 x y+2\\right)\\left(z^2-2 z+2\\right) \\leqslant(x y z)^2-2 x y z+2 .\n$$\n从而命题得证.",
+    "remark": "",
+    "figures": []
+}

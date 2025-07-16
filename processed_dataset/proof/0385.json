@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 在一个车厢中, 任何 $m(\\geqslant 3)$ 个旅客都有唯一的公共朋友 (当甲是乙的朋友时, 乙也是甲的朋友, 任何人不是自己的朋友). 问这个车厢中有朋友最多的人有多少个朋友?",
+    "solution": "设有朋友最多的人是 $A$, 他有 $k$ 个朋友 $B_1, B_2, \\cdots, B_k$, 记 $S=\\left\\{B_1\\right.$, $\\left.B_2, \\cdots, B_k\\right\\}$, 显然 $k \\geqslant m$. 若 $k>m$, 设 $\\left\\{B_{i_i}, B_{i_2}, \\cdots, B_{i_{m-1}}\\right\\}$ 是 $S$ 的任意 $m-1$ 元子集.\n于是 $A, B_{i_1}, \\cdots, B_{i_{m-1}}$ 有唯一的公共朋友 $C_i$. 因 $C_i$ 是 $A$ 的朋友,故 $C_i \\in S$. 我们令 $\\left\\{B_{i_1}, B_{i_2}, \\cdots, B_{i_{m-1}}\\right\\}$ 与 $C_i$ 对应,构成从 $S$ 的所有 $m-1$ 元子集构成的集族 $\\mathscr{B}$ 到 $S$ 的一个映射.\n下面证明 $f$ 为单射,若不然,则存在 $S$ 的两个不同的 $m-1$ 元子集 $\\left\\{B_{i_1}, B_{i_2}, \\cdots, B_{i_{m-2}}\\right\\}$ 和 $\\left\\{B_{j_1}, B_{j_2}, \\cdots, B_{j_{m-1}}\\right\\}$ 它们对应的元素 $C_i$ 与 $C_j$ 相同.\n(记为 $C$ ), 因 $C \\in S$, 故 $C \\neq A$, 于是 $\\left\\{B_{i_1}, \\cdots\\right.$, $\\left.B_{i_{m-1}}\\right\\} \\cup\\left\\{B_{j_1}, \\cdots, B_{j_{m-1}}\\right\\}$ 中至少有 $m$ 位旅客, 但他们却有两个公共朋友 $A$ 和 $C$, 这与已知矛盾.\n故 $f$ 是单射.\n所以 $|\\mathscr{B}| \\leqslant|S|$ 即 $\\mathrm{C}_k^{m-1} \\leqslant k$, 但已知 $m \\geqslant 3$ 且 $k>m$, 即 $k-2 \\geqslant m-1 \\geqslant 2$. 故 $\\mathrm{C}_k^{m-1} \\geqslant \\mathrm{C}_k^{k-2}=\\mathrm{C}_k^2>k$, 这与 $\\mathrm{C}_k^{m-1} \\leqslant k$ 矛盾.\n于是得到 $k=m$, 即有朋友最多的人有 $m$ 个朋友.",
+    "remark": "",
+    "figures": []
+}

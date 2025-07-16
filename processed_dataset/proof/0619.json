@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例1. 已知正整数 $p, q, r, a$ 满足 $p q=r a^2$,其中 $r$ 是素数, $p, q$ 互素.\n证明: $p, q$ 中有一个是完全平方数.",
+    "solution": "证明: $p=p_1^{\\alpha_1} p_2^{\\alpha_2} \\cdots p_k^{\\alpha_k}, q=q_1^{\\beta_1} q_2^{\\beta_2} \\cdots q_l^{\\beta_l}, a=a_1^{\\gamma_1} a_2^{\\gamma_2} \\cdots a_m^{\\gamma_m}$ 为 $p, q, a$ 的标准素因数分解,则有\n$$\np_1^{\\alpha_1} \\cdot p_2^{\\alpha_2} \\cdots p_k^{\\alpha_k} \\cdot q_1^{\\beta_1} \\cdot q_2^{\\beta_2} \\cdots q_l^{\\beta_l}=r a_1^{2 \\gamma_1} a_2^{2 \\gamma_2} \\cdots a_m^{2 \\gamma_m} .\n$$\n由于 $p, q$ 互素且 $r$ 是素数,故 $p, q$ 中不被 $r$ 整除的那个数每个素因子都具有偶数次幂, 它一定是完全平方数.",
+    "remark": "注:算术基本定理指的是: 任意一个大于 1 的整数 $n$ 有唯一的素因数分解\n$$\nn=p_1^\\alpha p_2^\\alpha \\cdots p_k^{\\alpha_k},\n$$\n其中 $p_1<p_2<\\cdots<p_k$ 为不同的素数, $\\alpha_1, \\alpha_2, \\cdots, \\alpha_k \\in \\mathbf{N}^*$ (有时为便于考虑问题,会设 $\\alpha_1, \\alpha_2, \\cdots, \\alpha_k \\in \\mathbf{N}$).\n这是一个极其重要的定理.\n一旦将正整数表示为标准分解的形式, 就可以考虑许多整除、互素、约数、方幂等问题, 本题中, 将 $p, q, r$ 进行标准分解后, 很便于利用素数的性质解决问题.\n这里列举几个以标准分解为出发点的基本结果:\n(1) 上述正整数 $n$ 的正约数个数 $d(n)=\\prod_{i=1}^k\\left(\\alpha_i+1\\right)$, 特别地, $n$ 为完全平方数的充分必要条件是 $d(n)$ 为奇数;\n(2) 上述正整数 $n$ 的所有正约数之和 $\\sigma(n)=\\prod_{i=1}^k \\frac{p_i^{\\alpha_i+1}-1}{p_i-1}$;\n(3) 当 $n \\geqslant 2$ 时, 小于 $n$ 且与 $n$ 互素的正整数个数 $\\varphi(n)=\\prod_{i=1}^k p_i^{\\alpha_i-1}\\left(p_i-1\\right)$.",
+    "figures": []
+}

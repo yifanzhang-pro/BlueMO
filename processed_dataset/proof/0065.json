@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题12 设 $\\left\\{a_n\\right\\}$ 为等差数列, $d$ 为公差, 且 $a_1$ 和 $d$ 均为实数, $d \\neq 0$, 它的前 $n$ 项和记作 $S_n$. 设集合 $A=\\left\\{\\left(a_n, \\frac{S_n}{n}\\right) \\mid n \\in \\mathbf{N}^*\\right\\}, B=\\{(x, y) \\mid \\frac{1}{4} x^2-y^2= 1, x, y \\in \\mathbf{R}\\}$. 下列结论是否正确? 如果正确, 请给出证明; 如果不正确, 请举一个例子说明:\n(1) 以集合 $A$ 中的元素为坐标的点都在同一直线上;\n(2) $A \\cap B$ 至多有一个元素;\n(3) $a_1 \\neq 0$ 时,一定有 $A \\cap B \\neq \\varnothing \\varnothing$.",
+    "solution": "(1) 正确.\n因 $S_n=\\frac{\\left(a_1+a_n\\right)^n}{2}$, 所以 $\\frac{S_n}{n}=\\frac{a_1+a_n}{2}$. 这说明点 $\\left(a_n, \\frac{S_n}{n}\\right)$ 在直线 $y=\\frac{a_1+x}{2}$ 上.\n(2) 正确.\n设 $(x, y) \\in A \\cap B$, 则 $y=\\frac{a_1+x}{2}$, 且 $\\frac{1}{4} x^2-y^2=1$. 消去 $y$, 得 $2 a_1 x+a_1^2=-4$. 当 $a_1=0$ 时, 方程组无解; 当 $a_1 \\neq 0$ 时, $x=\\frac{-4-a_1^2}{2 a_1}$, 方程组恰有一个解.\n故 $A \\cap B$ 至多有一个元素.\n(3) 不正确.\n举例如下: 取 $a_1=1, d=1$, 此时若有 $A \\cap B \\neq \\varnothing$, 则存在 $(x, y) \\in A \\cap B$. 由 (2) 有 $x=\\frac{-4-a_1^2}{2 a_1}=-\\frac{5}{2}<0$. 另一方面, 对一切 $n \\in \\mathbf{N}^*, a_n=n>0$, 所以 $(x, y) \\notin A$. 这与 $(x, y) \\in A \\cap B$ 矛盾.",
+    "remark": "",
+    "figures": []
+}

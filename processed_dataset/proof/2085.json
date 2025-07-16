@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $G$ 为 $\\triangle A B C$ 的重心, $A_1 、 B_1 、 C_1$ 分别为 $A G 、 B G 、 C G$ 与 $\\triangle A B C$ 的外接圆的交点,求证\n$$\nG A_1+G B_1+G C_1 \\geqslant G A+G B+G C,\n$$\n等号成立当且仅当 $\\triangle A B C$ 为正三角形.",
+    "solution": "提示: 问题转化为证明 $A A_1+B B_1+C C_1 \\geqslant \\frac{4}{3}\\left(m_a+m_b+m_c\\right)$, 其中 $m_a$ 为边 $a$ 上的中线, 等等.\n设 $A A_1=M_a$, 等等.\n由相交弦定理可得 $m_a \\cdot\\left(M_a-\\right. \\left.m_a\\right)=\\left(\\frac{a}{2}\\right)^2$, 将其与等式 $4 m_a^2=8 k^2-3 a^2$ 联立消去 $a$ 可得 $M_a= \\frac{2 k}{3}\\left(\\frac{k}{m_a}+\\frac{m_a}{k}\\right) \\geqslant \\frac{4}{3} k$, 等等, 其中 $k^2=\\frac{1}{4}\\left(a^2+b^2+c^2\\right)(k>0)$.",
+    "remark": "",
+    "figures": []
+}

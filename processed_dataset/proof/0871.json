@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例8 已知 $f(x)=\\left(\\frac{1}{2^x-1}+\\frac{1}{2}\\right) x$.\n(1) 请判断 $f(x)$ 的奇偶性, 并证明 $f(x)>0$;\n(2) 设 $F(x)=f(x+t)-f(x-t)(t \\neq 0)$, 判断 $F(x)$ 的奇偶性.",
+    "solution": "分析:第(1) 小题的解决可通过尝试的办法, 根据 $f(x)$ 的解析式的结构特点, 计算 $f(x)+f(-x)$ 及 $f(x)-f(-x)$ 可能比直接判断 $f(x)$ 与 $f(-x)$ 的关系来得更加方便.\n解决第 (2) 小题的关键在于理解 $t$ 是一个与 $x$ 无关的常数.\n解 (1) 首先容易确定 $f(x)$ 的定义域为 $\\{x \\mid x \\in \\mathbf{R}$, 且 $x \\neq 0\\}$, 关于原点对称, 而\n$$\nf(x)-f(-x)=\\left(\\frac{1}{2^x-1}+\\frac{1}{2}\\right) x-\\left(\\frac{1}{2^{-x}-1}+\\frac{1}{2}\\right)(-x)=0 .\n$$\n于是 $f(x)=f(-x)$. 故 $f(x)$ 是偶函数.\n当 $x>0$ 时, $2^x-1>0 \\Rightarrow f(x)>0$, 而当 $x<0$ 时, 由于 $f(x)$ 是偶函数及 $f(x)>0$, 所以 $f(x)$ 在其定义域上恒大于 0 .\n(2) 由 $\\left\\{\\begin{array}{l}x+t \\neq 0, \\\\ x-t \\neq 0,\\end{array}\\right.$ 知 $F(x)$ 的定义域为 $\\{x \\mid x \\in \\mathbf{R}$, 且 $x \\neq \\pm t\\}$.\n因为\n$$\n\\begin{aligned}\nF(-x) & =f(-x+t)-f(-x-t) \\\\\n& =f(-(x-t))-f(-(x+t)) \\\\\n& =f(x-t)-f(x+t)=-F(x) .\n\\end{aligned}\n$$\n所以 $F(x)$ 为奇函数.\n说明本题在两次判断函数的奇偶性时采用了不同的方法.\n这是因为一般来说如果函数的解析式中含有分式、指数式、对数式时, 判断奇偶性用作差法或作商法可能更加简洁自然.",
+    "remark": "",
+    "figures": []
+}

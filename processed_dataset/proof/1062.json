@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $x>0$, 证明: $2^{12 \\sqrt{x}}+2^{4 \\sqrt[4]{x}} \\geqslant 2 \\cdot 2^{\\sqrt[6]{x}}$.",
+    "solution": "证明:由该不等式的外形, 很容易想到平均值不等式.\n由平均值不等式, 得\n$$\n\\begin{gathered}\n2^{12 \\sqrt{x}}+2^{\\sqrt[4]{x}} \\geqslant 2 \\cdot \\sqrt{2^{12 \\sqrt{x}} 2^{4 \\sqrt{x}}}=2 \\cdot 2^{\\frac{12 \\sqrt{x}+4 \\sqrt{x}}{2}} . \\\\\n\\frac{\\sqrt[12]{x}+\\sqrt[4]{x}}{2} \\geqslant\\left(x^{\\frac{1}{12}} x^{\\frac{1}{4}}\\right)^{\\frac{1}{2}}=x^{\\frac{1}{6}} .\n\\end{gathered}\n$$\n所以\n$$\n2^{12 \\sqrt{x}}+2^{4 \\sqrt{x}} \\geqslant 2 \\cdot 2^{\\sqrt[6]{x}} \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

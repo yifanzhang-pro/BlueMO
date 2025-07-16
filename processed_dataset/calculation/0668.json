@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例18 就实数 $a$ 的取值范围,讨论关于 $x$ 的方程\n$$\n\\cos 2 x+2 \\sin x+2 a-3=0\n$$\n在 $[0,2 \\pi]$ 内解的情况.",
+    "solution": "分析:利用倍角公式将原方程化为关于 $\\sin x$ 的方程后, 再用 “图象法” 判断解的分布情况.\n解原方程化为 $\\sin ^2 x-\\sin x=a-1$, 配方得\n$$\n\\left(\\sin x-\\frac{1}{2}\\right)^2=a-\\frac{3}{4} \\text {. }\n$$\n设\n$$\ny_1=\\left(\\sin x-\\frac{1}{2}\\right)^2, y_2=a-\\frac{3}{4},\n$$\n分别作出它们的图象如图 (<FilePath:./images/volume3/figures/fig-c4e18.png>), 由此观察, 得\n(1)当 $a-\\frac{3}{4}<0$ 或 $a-\\frac{3}{4}>\\frac{9}{4}$,\n即 $a<\\frac{3}{4}$ 或 $a>3$ 时, 方程无解;\n(2)当 $a-\\frac{3}{4}=\\frac{9}{4}$, 即 $a=3$ 时,方程有一解 $x=\\frac{3}{2} \\pi$;\n(3)当 $\\frac{1}{4}<a-\\frac{3}{4}<\\frac{9}{4}$ 或 $a- \\frac{3}{4}=0$, 即 $1<a<3$ 或 $a=\\frac{3}{4}$ 时, 方程有两解;\n(4)当 $a-\\frac{3}{4}=\\frac{1}{4}$, 即 $a=1$ 时,方程有四解 $x=0, \\frac{1}{2} \\pi, \\pi, 2 \\pi$;\n(5) $0<a-\\frac{3}{4}<\\frac{1}{4}$, 即 $\\frac{3}{4}<a<1$ 时, 方程有四解.\n评注在 $[0,2 \\pi]$ 内, 以 $t=\\sin x$ 为横轴, 则函数 $y=a \\sin ^2 x+b \\sin x+c (a \\neq 0)$ 可化为 $y=a t^2+b t+c$ 的图象是在 $[-1,1]$ 上的一段曲线,再在区间 $[-1,1]$ 上加以讨论.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c4e18.png"
+    ]
+}

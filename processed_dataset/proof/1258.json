@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例7. 求证: 对任意正实数 $a 、 b 、 c$,均有\n$$\n\\frac{1}{a^3+b^3+a b c}+\\frac{1}{b^3+c^3+a b c}+\\frac{1}{c^3+a^3+a b c} \\leqslant-\\frac{1}{a b c} .\n$$",
+    "solution": "证明:因为\n$$\na^3+b^3=(a+b)\\left(a^2+b^2-a b\\right) \\geqslant(a+b) a b,\n$$\n所以\n$$\n\\frac{1}{a^3+b^3+a b c} \\leqslant \\frac{1}{a b(a+b)+a b c}==\\frac{c}{a b c(a+b+c)},\n$$\n同理可得\n$$\n\\begin{aligned}\n& \\frac{1}{b^3+c^3+a b c} \\leqslant \\frac{a}{a b c(a+b+c)}, \\\\\n& \\frac{1}{c^3+a^3+a b c} \\leqslant \\frac{b}{a b c(a+b+c)},\n\\end{aligned}\n$$\n把上面三式相加, 便得\n$$\n\\frac{1}{a^3+b^3+a b c}+\\frac{1}{b^3+c^3+a b c}+\\frac{1}{c^3+a^3+a b c} \\leqslant \\frac{1}{a b c} .\n$$\n说明在处理分式不等式时, 通分只有在不得已的情况下才进行, 若想变为同分母比较简便的一种思想就是\"放缩\".",
+    "remark": "",
+    "figures": []
+}

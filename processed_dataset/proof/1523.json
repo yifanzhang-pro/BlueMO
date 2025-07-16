@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-5.tex",
+    "problem_type": "proof",
+    "problem": "例4. 数列 $\\left\\{a_n\\right\\}$ 定义如下\n$$\na_1=1000000, a_{n+1}=n\\left[\\frac{a_n}{n}\\right]+n, n=1,2, \\cdots .\n$$",
+    "solution": "证明: 此数列中有一个无穷子数列 (由数列中的项组成的数列称为该数列的子数列)构成一个等差数列.\n证明记 $x_n=\\frac{a_{n+1}}{n}$, 则对任意 $n \\in \\mathbf{N}^*$, 都有 $x_n=\\left[\\frac{a_n}{n}\\right]+1 \\in \\mathbf{N}^*$, 即 $\\left\\{x_n\\right\\}$ 是一个由正整数组成的数列.\n进一步, 对任意 $n \\in \\mathbf{N}^*$, 有\n$$\n\\begin{aligned}\nx_{n+1} & =\\left[\\frac{a_{n+1}}{n+1}\\right]+1=\\left[\\frac{n x_n}{n+1}\\right]+1 \\\\\n& =x_n+\\left[-\\frac{x_n}{n+1}\\right]+1 \\\\\n& \\leqslant x_n+(-1)+1=x_n .\n\\end{aligned}\n$$\n这表明 $\\left\\{x_n\\right\\}$ 是一个不增数列, 所以, 从某一项起 $\\left\\{x_n\\right\\}$ 变为一个常数 (这是由于 $x_n$ 都为正整数). 记这个常数为 $k$, 那么从该项起有 $a_n=k n$, 因而, $\\left\\{a_n\\right\\}$ 从该项起构成一个等差数列.\n命题获证.\n说明本题的结论不依赖于初始值 (只要 $a_1 \\geqslant 0$ 即可), 解决过程中用到一个显然的结论: 任意一个由正整数组成的不增无穷数列从某项起将变为常数.",
+    "remark": "",
+    "figures": []
+}

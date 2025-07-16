@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例7. 已知 $x, y, z \\in \\mathbf{R}^{+}$, 求证:\n$$\n\\frac{x z}{x^2+x z+y z}+\\frac{x y}{y^2+x y+x z}+\\frac{y z}{z^2+y z+x y} \\leqslant 1 . \\label{(1)}\n$$",
+    "solution": "证明:不妨设 $x y z=1$.\n首先证明\n$$\n\\frac{x z}{x^2+x z+y z} \\leqslant \\frac{1}{1+y+\\frac{1}{z}} .\n$$\n(1)等价于\n$$\nx^2+x z+y z \\geqslant x z+1+x,\n$$\n即 $x^2+\\frac{1}{x} \\geqslant 1+x$, 也即 $(x-1)^2(x+1) \\geqslant 0$. 故(1)成立.\n・又由于\n$$\n\\frac{1}{1+y+\\frac{1}{z}}=\\frac{z}{y z+z+1},\n$$\n且同理有\n$$\n\\frac{x y}{y^2+x y+x z} \\leqslant \\frac{1}{1+z+\\frac{1}{x}}=\\frac{1}{1+z+y z}\n$$\n$$\n\\frac{y z}{z^2+y z+x y} \\leqslant \\frac{1}{1+x+\\frac{1}{y}}=\\frac{x y z}{x y z+x+x z}=\\frac{y z}{1+z+y z} \\text {. }\n$$\n故 $\\sum_{c y c} \\frac{x z}{x^2+x z+y z} \\leqslant \\frac{1+z+y z}{1+z+y z}=1$, 结论成立.",
+    "remark": "",
+    "figures": []
+}

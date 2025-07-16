@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 设 $a_1, a_2, \\cdots$ 为全体正整数的一个排列.\n证明: 存在无穷多个正整数 $i$, 使得 $\\left(a_i, a_{i+1}\\right) \\leqslant \\frac{3}{4} i$.",
+    "solution": "假设结论不成立, 则存在 $i_0$, 当 $i>i_0$ 时, $\\left(a_i, a_{i+1}\\right)>\\frac{3}{4} i$.\n取定一个正整数 $M\\left(M>i_0\\right)$. 当 $i \\geqslant 4 M$ 时, 有 $\\left(a_i, a_{i+1}\\right)>\\frac{3}{4} i \\geqslant 3 M$. 从而, $a_i \\geqslant\\left(a_i, a_{i+1}\\right)>3 M$.\n由于 $a_1, a_2, \\cdots$ 是正整数的一个排列, 则 $\\{1,2, \\cdots, 3 M\\} \\subseteq\\left\\{a_1, a_2, \\cdots\\right.$, $\\left.a_{4 M-1}\\right\\}$, 故\n$$\n\\left|\\{1,2, \\cdots, 3 M\\} \\cap\\left\\{a_{2 M}, a_{2 M+1}, \\cdots, a_{4 M-1}\\right\\}\\right| \\geqslant 3 M-(2 M-1)=M+1 .\n$$\n由抽屉原理知, 存在 $j_0\\left(2 M \\leqslant j_0<4 M-1\\right)$, 使得 $a_{j_0}, a_{j_0+1} \\leqslant 3 M$. 故\n$$\n\\left(a_{j_0}, a_{j_0+1}\\right) \\leqslant \\frac{1}{2} \\max \\left\\{a_{j_0}, a_{j_0+1}\\right\\} \\leqslant \\frac{3 M}{2}=\\frac{3}{4} \\times 2 M \\leqslant \\frac{3}{4} j_0,\n$$\n矛盾.\n所以,存在无穷多个 $i$, 使得 $\\left(a_i, a_{i+1}\\right) \\leqslant \\frac{3}{4} i$.",
+    "remark": "",
+    "figures": []
+}

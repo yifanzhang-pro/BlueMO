@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例12. 如图(<FilePath:./images/volume7/figures/fig-c9i17.png>), 圆内接四边形 $A B C D$ 内有一点 $P$ 满足 $\\angle A P D=\\angle A B P+\\angle D C P . P$ 在 $A B 、 B C 、 C D$ 上射影为 $E 、 F 、 G$. 证明: $\\triangle E F G \\backsim \\triangle A P D$.",
+    "solution": "法二: 如图(<FilePath:./images/volume7/figures/fig-c9i18.png>), 作 $\\angle A P T=\\angle A B P$, 其中 $T$ 为 $A D$ 上的点, $T P$ 父 $B C$ 于 $S$.\n由 $\\angle A P D=\\angle A B P+\\angle D C P$ 知, $\\angle T P D=\\angle D C P$.\n易知 $P T$ 为 $\\triangle A B P 、 \\triangle D C P$ 外接圆的切线.\n由根轴定理知 $B A 、 C D 、 S T$ 交于一点, 设为 $R$.\n$$\n\\begin{aligned}\n\\angle P A D & =\\angle B A D-\\angle B A P=\\pi-\\angle B C R-\\angle B P S \\\\\n& =\\angle B P R-\\angle B C R(\\angle B P R=\\pi-\\angle B P S) \\\\\n& =\\angle B P R-(\\angle B S R-\\angle S R C) \\\\\n& =\\angle B P R-\\angle B S R+\\angle S R C \\\\\n& =\\angle P B S+\\angle P E G \\\\\n& =\\angle P E F+\\angle P E G=\\angle F E G .\n\\end{aligned} \\label{eq1}\n$$\n由已知条件易知 $P 、 E 、 B 、 F$ 和 $P 、 G 、 C 、 F$ 都有四点共圆.\n$$\n\\begin{aligned}\n\\angle A B P=\\angle E F P & , \\angle P C G=\\angle P F G, \\text { 故 } \\\\\n\\angle A P D & =\\angle A B P+\\angle P C G \\\\\n& =\\angle E F G+\\angle P F G=\\angle E F G\n\\end{aligned} \\label{eq2}\n$$\n由式\\ref{eq1}、\\ref{eq2}知 $\\triangle E F G \\backsim \\triangle A P D$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9i17.png",
+        "./images/volume7/figures/fig-c9i18.png"
+    ]
+}

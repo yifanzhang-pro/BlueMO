@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例12 已知 $\\triangle A B C$ 中, $\\sin C=\\frac{\\sin A+\\sin B}{\\cos A+\\cos B}$, 试判断其形状.",
+    "solution": "分析:利用正、余弦定理,将等式化成边之间的关系后判断; 或从题设条件可联想到和差化积与积化和差, 将等式化简后判断.\n解法一原等式变形为\n$$\n\\cos A+\\cos B=\\frac{\\sin A+\\sin B}{\\sin C},\n$$\n由正、余弦定理代入条件等式得 $\\frac{b^2+c^2-a^2}{2 b c}+\\frac{a^2+c^2-b^2}{2 a c}=\\frac{a+b}{c}$, 去分母、化简得 $a^2+b^2=c^2$, 所以 $\\triangle A B C$ 是直角三角形.\n解法二由条件等式和差化积得\n$$\n\\sin (A+B)=\\frac{2 \\sin \\frac{A+B}{2} \\cos \\frac{A-B}{2}}{2 \\cos \\frac{A+B}{2} \\cos \\frac{A-B}{2}},\n$$\n即 $\\sin \\frac{A+B}{2}\\left(2 \\cos ^2 \\frac{A+B}{2}-1\\right)=0$, 显然 $\\sin \\frac{A+B}{2} \\neq 0, \\cos \\frac{A+B}{2} \\neq 0$, 所以 $\\cos \\frac{A+B}{2}=\\frac{\\sqrt{2}}{2}$, 从而 $A+B=\\frac{\\pi}{2}, \\triangle A B C$ 是直角三角形.\n解法三原等式变形为 $\\sin C \\cdot \\cos A+\\sin C \\cdot \\cos B=\\sin A+\\sin B$,\n$$\n\\begin{aligned}\n& \\frac{1}{2}[\\sin (C+A)+\\sin (C-A)]+\\frac{1}{2}[\\sin (C+B)+\\sin (C-B)] \\\\\n= & \\sin A+\\sin B .\n\\end{aligned}\n$$\n又 $A+B+C=\\pi$, 故 $\\sin (C-A)+\\sin (C-B)-\\sin A-\\sin B=0$,\n$$\n2 \\cos \\frac{C}{2} \\sin \\frac{C-2 A}{2}+2 \\cos \\frac{C}{2} \\sin \\frac{C-2 B}{2}=0,\n$$\n得 $\\cos \\frac{C}{2} \\sin \\frac{C-A-B}{2} \\cos \\frac{B-A}{2}=0$, 而 $\\cos \\frac{C}{2} \\neq 0, \\cos \\frac{B-A}{2} \\neq 0$, 得 $\\sin \\frac{C-A-B}{2}=0, C-A-B==0$, 从而 $A+B=\\frac{\\pi}{2}, \\triangle A B C$ 是直角三角形.\n评注判断三角形形状, 主要有两种方法: 其一是化成三内角之间的关系,利用三角函数的恒等变形来判断;其二是化成三边之间的关系,利用 “两边相等的三角形是等腰三角形、最大边的平方等于其他两边平方和的三角形是直角三角形”来判断.",
+    "remark": "",
+    "figures": []
+}

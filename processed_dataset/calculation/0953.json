@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter9.tex",
+    "problem_type": "calculation",
+    "problem": "例5. 设 $\\triangle Z_1 Z_2 Z_3$ 与 $\\triangle Z_1^{\\prime} Z_2^{\\prime} Z_3^{\\prime}$ 顺相似, 求其顶点对应复数 (如 $Z_1$ 对应 $z_1$ 等)满足的充要条件,并由此推出中垂线的方程.",
+    "solution": "分析:与解由于 $z_1=z_2 \\Rightarrow\\left|z_1\\right|=\\left|z_2\\right|$ 且 $\\arg z_1=\\arg z_2$,于是 $\\triangle Z_1 Z_2 Z_3$ 与 $\\triangle Z^{\\prime}{ }_1 Z^{\\prime}{ }_2 Z^{\\prime}{ }_3$ 顺相似的充要条件即为 $\\frac{z_3-z_1}{z_2-z_1}=\\frac{z_3^{\\prime}-z_1^{\\prime}}{z_2^{\\prime}-z_1^{\\prime}}$, 这等价于 $\\left|\\begin{array}{ccc}1 & 1 & 1 \\\\ z_1 & z_2 & z_3 \\\\ z_1^{\\prime} & z_2^{\\prime} & z_3^{\\prime}\\end{array}\\right|=0$\n由此推知 $\\triangle Z_1 Z_2 Z_3$ 与 $\\triangle Z_1^{\\prime} \\triangle Z_2^{\\prime} \\triangle Z_3^{\\prime}$ 逆相似的充要条件为 $\\left|\\begin{array}{ccc}1 & 1 & 1 \\\\ z_1 & z_2 & z_3 \\\\ \\bar{z}_1^{\\prime} & \\bar{z}_2^{\\prime} & \\bar{z}_3^{\\prime}\\end{array}\\right|=0$, 而 $Z_1 、 Z_2$ 的中垂线方程为 $\\triangle Z Z_1 Z_2$ 逆相似于 $\\triangle Z Z_2 Z_1$ 所满足的方程, 即\n$$\n\\left|\\begin{array}{ccc}\n1 & 1 & 1 \\\\\nz & z_1 & z_2 \\\\\n\\bar{z} & \\overline{z_2} & \\overline{z_1}\n\\end{array}\\right|=0\n$$\n即 $\\frac{z}{z_1-z_2}+\\frac{\\bar{z}}{z_1-z_2}=\\frac{\\left|z_1\\right|^2-\\left|z_2\\right|^2}{\\left|z_1-z_2\\right|^2}$.",
+    "remark": "注:当 $z_2=0$ 时, 中垂线方程为 $\\frac{z}{z_1}+\\frac{\\bar{z}}{z_1}=1$.\n顺相似的依据是复数的三角形式, 这十分有用.\n例如我们还可以证明: $\\triangle Z_1 Z_2 Z_3$ 为正三角形的充要条件是 $z_1^2+z_2^2+z_3^2=z_1 z_2+z_2 z_3+z_3 z_1$ (当然 $z_1$ 、 $z_2 、 z_3$ 两两不等).",
+    "figures": []
+}

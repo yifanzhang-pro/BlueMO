@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 若 $x, y \\in \\mathbf{R}^{+}$, 求证:\n$$\n\\left(\\frac{2 x+y}{3} \\cdot \\frac{x+2 y}{3}\\right)^2 \\geqslant \\sqrt{x y} \\cdot\\left(\\frac{x+y}{2}\\right)^3 .\n$$",
+    "solution": "设 $x+y=a, x y=b$, 则 $a^2 \\geqslant 4 b>0$. 故\n$$\n\\begin{aligned}\n\\text { 左边 } & =\\left(\\frac{2 a^2+b}{9}\\right)^2=\\left(\\frac{\\frac{1}{4} a^2+\\frac{1}{4} a^2+\\cdots+\\frac{1}{4} a^2+b}{9}\\right)^2 \\\\\n& \\geqslant \\sqrt[9]{\\frac{1}{4^{16}} \\cdot a^{32} \\cdot b^2} \\geqslant \\sqrt[9]{\\frac{1}{2^{27}} \\cdot a^{27} \\cdot b^{\\frac{9}{2}}} \\\\\n& =\\frac{1}{8} a^3 \\cdot b^{\\frac{1}{2}}=\\text { 右边.\n}\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

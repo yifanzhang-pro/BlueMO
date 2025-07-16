@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter5.tex",
+    "text": "如图(<FilePath:./images/volume12/figures/fig-c5i5.png>) 中的图需 5笔才能画成, 如图(<FilePath:./images/volume12/figures/fig-c5i6.png>) 中的图 4 笔可以画成.",
+    "figures": [
+        "./images/volume12/figures/fig-c5i5.png",
+        "./images/volume12/figures/fig-c5i6.png"
+    ]
+}

@@ -1,0 +1,94 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 将 1989 分成 10 个正整数的和,使其积最大.
+%%<SOLUTION>%%
+当 1989 分拆成: $199+199+\cdots+199+198$ 时, 对应的积为 $199^9 \times 198$.
+下面证明它是最大的.
+因为分拆种数是有限的, 最大值一定存在, 所以可假定分拆 $\left(x_1, x_2, \cdots, x_{10}\right)$, 其中 $x_1+x_2+\cdots+x_{10}=1989$, 是相应的积 $x_1 x_2 \cdots x_{10}$ 为最大的一种分拆.
+若 $x_1, x_2, \cdots, x_{10}$ 中有小于 198 者, 设为 $x_1$, 那么其中必有大于 198 者, 设为 $x_{10}$. 令 $x_1^{\prime}=x_1+\left(x_{10}-198\right), x_{10}^{\prime}=198$, 则得到一种新的分拆 $\left(x^{\prime}{ }_1, x_2, \cdots, x_9, x^{\prime}{ }_{10}\right)$, 相应的积为 $x^{\prime}{ }_1 x_2 \cdots x_9 x_{10}^{\prime}$. 但 $x_1^{\prime} x_{10}^{\prime}-x_1 x_{10}=\left[x_1+\left(x_{10}-198\right)\right] \cdot 198-x_1 x_{10}=198 x_1+198 x_{10}-198^2- x_1 x_{10}=\left(198-x_1\right)\left(x_{10}-198\right)>0$, 所以 $x_1^{\prime} x_2 \cdots x_9 x_{10}^{\prime}>x_1 x_2 \cdots x_{10}$, 矛盾.
+由此可见, $x_1, x_2, \cdots, x_{10}$ 均不小于 198. 若 $x_1, x_2, \cdots, x_{10}$ 中有大于 199 者, 设为 $x_1$, 那么其中必有小于 199 者, 设为 $x_{10}$. 因为 $x_{10}$ 不小于 198 , 所以 $x_{10}=$ 198. 令 $x_1^{\prime}=x_1-1, x_{10}^{\prime}=x_{10}+1$, 则得到一种新的分拆 $\left(x_1^{\prime}, x_2, \cdots, x_9\right.$, $\left.x_{10}^{\prime}\right)$, 相应的积为 $x_1^{\prime} x_2 \cdots x_9 x_{10}^{\prime}$. 但 $x_1^{\prime} x_{10}^{\prime}-x_1 x_{10}=\left(x_1-1\right)\left(x_{10}+1\right)- x_1 x_{10}=x_1 x_{10}+x_1-x_{10}-1-x_1 x_{10}=x_1-x_{10}-1=x_1-198-1=x_1- 199>0$, 所以 $x_1^{\prime} x_2 \cdots x_9 x_{10}^{\prime}>x_1 x_2 \cdots x_{10}$, 矛盾.
+所以 $x_1, x_2, \cdots, x_{10}$ 均只能是 199 或 198 , 从而分拆: $199+199+\cdots+199+198$ 对应的积为 $199^9 \times 198$ 为最大.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 在不减正整数序列 $a_1, a_2, \cdots, a_m, \cdots$ 中, 对任何正整数 $m$, 定义 $b_m= \min \left\{n \mid a_n \geqslant m\right\}$. 已知, $a_{19}=85$, 求 $S=a_1+a_2+\cdots+a_{19}+b_1+b_2+\cdots+ b_{85}$ 的最大值.
+%%<SOLUTION>%%
+首先, 最大的数一定存在.
+由条件有 $a_1 \leqslant a_2 \leqslant \cdots \leqslant a_{19}=85$. 我们猜想, 极值点是各个 $a_i$ 尽可能大且各个 $a_i$ 相等, 各个 $b_j$ 相等.
+实际上, 若有 $a_i<a_{i+1}(1 \leqslant i \leqslant 18)$, 则令 $a_i^{\prime}=a_i+1$. 对任何 $j \neq i$, 令 $a_j^{\prime}=a_j$, 对应的 $b_j$ 记为 $b_j^{\prime}$. 那么, 因为 $a_{i+1}>a_i$, 所以 $a_{i+1} \geqslant a_i+1$. 但 $a_i<a_i+1$, 所以 $b_{a_i+1}=i+1$, $b_{a_i+1}^{\prime}=i=b_{a_i+1}-1, b_j^{\prime}=b_j$ (当 $j \neq a_i+1$ 时). 由此可知, 调整使得 $b_{a_i+1}$ 减少 1 , 其余的 $b_i$ 不变.
+于是, $S$ 的值不减.
+综上所述, 有 $S \leqslant 19 \times 85+1 \times 85=$ 1700 , 等号在 $a_i=85, b_j=1(1 \leqslant i \leqslant 19,1 \leqslant j \leqslant 85)$ 时成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 有 155 只鸟在一个圆 $C$ 上, 如果弧 $P_i P_j \leqslant 10^{\circ}$, 则称鸟是互相可见的.
+如果允许同一位置同时有几只鸟, 求可见的鸟对数的最小值.
+%%<SOLUTION>%%
+问题等价于将 155 只鸟分为若干组, 使可见鸟对数最小.
+注意到组数不确定, 于是要估计组数.
+通过特殊化可知, 要使可见鸟对少, 相邻两个位置不能过近, 即任何两个位置都不可见时, 可见鸟对才可能最小.
+实际上, 设 $P_i$ 、 $P_j$ 是一对可见鸟, 则称 $P_i 、 P_j$ 的位置是互相可见的.
+假设有两个可见位置 $P_i 、 P_j$, 设 $k$ 为 $P_j$ 可以见到而 $P_i$ 不能见到的鸟的只数, $t$ 是 $P_i$ 可以见到而 $P_j$ 不能见到的鸟的只数.
+不妨设 $k \geqslant t$. 假设 $P_j$ 的鸟都飞往 $P_i$ 处, 那么, 对任何一个鸟对 $(p, q)$, 若它不含飞动的鸟, 其 "可见性"不变.
+又对飞动的每只鸟来说, 减少 $k$ 只可见鸟, 增加 $t$ 只可见鸟, 从而可见乌对的增加数为 $t-k \leqslant 0$, 即可见鸟对数不增.
+每一次这样的变动, 停鸟的位置数减少 1. 若干次变动后, 可使任何两个停鸟的位置互不可见.
+此时, 圆周上至多有 35 个停鸟的位置.
+于是, 问题化为在条件: $x_1+x_2+\cdots+x_{35}=155, x_i \geqslant 0$ 的约束下, 求 $S= \sum_{i=1}^{35} \mathrm{C}_{x_i}^2=\frac{1}{2} \sum_{i=1}^{35} x_i\left(x_i-1\right)$ 的最小值.
+若对所有 $x_i 、 x_j$, 都有 $x_i=x_j$, 则 35 整除 155 , 矛盾.
+所以, 至少一个 $i \neq j$, 使 $x_i-x_j \neq 0$. 此外, 对所有 $i 、 j$, 有 $x_i- x_j \leqslant 1$. 实际上, 若 $x_i-x_j \geqslant 2$, 不妨设 $x_2-x_1 \geqslant 2$, 则令 $x_1^{\prime}=x_1+1, x_2^{\prime}= x_2-1$. 此时, $x_1\left(x_1-1\right)+x_2\left(x_2-1\right)-\left[x_1^{\prime}\left(x_1^{\prime}-1\right)+x_2^{\prime}\left(x_2^{\prime}-1\right)\right]=x_1\left(x_1-\right. 1)+x_2\left(x_2-1\right)-\left(x_1+1\right) x_1-\left(x_2-1\right)\left(x_2-2\right)=-2 x_1+2\left(x_2-1\right) \geqslant 1$. 从而 $S$ 减少.
+注意到 $155=4 \times 35+15$, 所以, 极值点为 $\left(x_1, x_2, \cdots, x_{35}\right)= (5,5, \cdots, 5,4,4, \cdots, 4)$. 此时, $S$ 的最小值为 $20 \mathrm{C}_4^2+15 \mathrm{C}_5^2=270$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 给定实数 $P_1 \leqslant P_2 \leqslant P_3 \leqslant \cdots \leqslant P_n$, 求出实数 $x_1 \geqslant x_2 \geqslant \cdots \geqslant x_n$, 使 $d=\left(P_1-x_1\right)^2+\left(P_2-x_2\right)^2+\cdots+\left(P_n-x_n\right)^2$ 最小.
+%%<SOLUTION>%%
+由直观猜想最值点 $\left(x_1, x_2, \cdots, x_n\right)$ 是均匀的, 即 $x_1=x_2=\cdots= x_n=x$ (待定). 此时 $d=\sum_{i=1}^n\left(P_i-x_i\right)^2=\sum_{i=1}^n\left(P_i-x\right)^2=n x^2-2 \sum_{i=1}^n\left(P_i\right) x+ \sum_{i=1}^n P_i^2$. 此二次函数在 $x=\sum_{i=1}^n \frac{P_i}{n}=P$ 时达到最小.
+于是, 我们猜想 $d$ 在 $x_1= x_2=\cdots=x_n=P$ 时达到最小.
+我们只须证明: 给定实数 $P_1 \leqslant P_2 \leqslant P_3 \cdots \leqslant P_n$, 对任何实数 $x_1 \geqslant x_2 \geqslant \cdots \geqslant x_n, \sum_{i=1}^n\left(P_i-x_i\right)^2 \geqslant \sum_{i=1}^n\left(P_i-\right. P)^2\left(\right.$ 其中 $\left.P=\sum_{i=1}^n \frac{P_i}{n}\right)$. 记上式左边与右边的差为 $H$, 则 $H=\sum_{i=1}^n x_i^2- 2 \sum_{i=1}^n P_i x_i+2 P \sum_{i=1}^n P_i-n P^2=\sum_{i=1}^n x_i^2-2 \sum_{i=1}^n P_i x_i+n P^2 \geqslant$ (切比雪夫不等式) $\sum_{i=1}^n x_i^2-2 \cdot \frac{1}{n} \sum_{i=1}^n P_i \sum_{i=1}^n x_i+n P^2=\sum_{i=1}^n x_i^2-2 P \sum_{i=1}^n x_i+n P^2=\sum_{i=1}^n\left(x_i-\right. P)^2 \geqslant 0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 给定平面上的点集 $P=\left\{p_1, p_2, \cdots, p_{1994}\right\}, P$ 中任何三个点不共线.
+将 $P$ 中的点分为 83 组, 每组至少 3 个点.
+将同一组中的点两两连线, 不同的组中的点不连线, 得到一个图 $G, G$ 中的三角形的个数记为 $m(G)$.
+(1) 求 $m(G)$ 的最小值.
+(2)设使 $m(G)$ 达到最小的图为 $G^{\prime}$. 求证: 可以将 $G^{\prime}$ 中的点 4-染色, 使 $G^{\prime}$ 中不含同色三角形.
+%%<SOLUTION>%%
+(1) 因为分组方法是有限的, 必存在一种分组方法, 使得三角形个数最少.
+注意到 $1994=83 \times 24+2=81 \times 24+2 \times 25$, 于是, 将 1994 个点分为 83 组,其中 81 组中各有 24 个点, 2 组中各有 25 个点, 我们证明这样的分组才使三角形的个数最少, 即 $(m(G))_{\text {min }}=81 \mathrm{C}_{24}^3+2 \mathrm{C}_{25}^3=168544$. 否则, 将 ( $i$, $j)(i \geqslant j+2), S=\mathrm{C}_i^3+\mathrm{C}_j^3$, 调整为 $(i-1, j+1), S^{\prime}=\mathrm{C}_{i-1}^3+\mathrm{C}_{j+1}^3$, 有 $S- S^{\prime}=\mathrm{C}_i^3+\mathrm{C}_j^3-\left(\mathrm{C}_{i-1}^3+\mathrm{C}_{j+1}^3\right)=\mathrm{C}_{i-1}^2-\mathrm{C}_j^2>0$. 按此方法调整一次, 三角形个数减少.
+(2) $G^{\prime}$ 由若干个独立的连通图组成, 因而只须考虑 $\left|G_1\right|=25$ 和 $\left|G_2\right|=24$ 的两个图 $G_1$ 和.
+$G_2$ 的染色.
+进一步可知, 只须考虑泈 $G_1$ 的染色.
+实际上, 对 $\left|G_2\right|=24$, 在 $G_1$ 的染色的基础上去掉其中一个点及其关联的边即可.
+将 25 个点分为 5 组, 每组 5 个点.
+每一组中的 5 点之间的边 $12 、 23$ 、 $34 、 45 、 51$ 用第一种颜色染; 边 $13 、 35 、 52 、 24 、 41$ 用第二种颜色染.
+再将染色后的五点组看作一个"大点", 有 5 个 "大点". 对此 5 个大点之间的边再按上述方法用另外两种颜色染色, 从而 4 色可完成染色.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 有 14 人进行一种日本棋循环赛, 每个人都与另外 13 个人比赛一局, 在比赛中无"平局". 如果三个人之间的比赛结果是每个人都胜一局负一局, 则称这 3 人是一个 "三联角", 求 "三联角" 个数的最大值.
+%%<SOLUTION>%%
+解: 1: 设 14 个人为 $A_1, A_2, \cdots, A_{14}$, 他们胜的场数分别为 $w_1,w_2, \cdots, w_{14}$, 则 $\sum_{i=1}^{14} w_i=\mathrm{C}_{14}^2=91$. 如果某三个人不组成"三联角", 那么这三个人中一定有一个人胜了其余两个人.
+而 $A_i$ 胜另两人的三人组有 $\mathrm{C}_{w_i}^2$ 个, 从而非三联角的三人组总数为 $\sum_{i=1}^{14} \mathrm{C}_{w_i}^2$ (其中规定 $\mathrm{C}_0^2=\mathrm{C}_1^2=0$ ). 所以三联角的三人组总数 $S=\mathrm{C}_{14}^3-\sum_{i=1}^{14} \mathrm{C}_{w_i}^2$. 下面求 $S^{\prime}=\sum_{i=1}^{14} \mathrm{C}_{w_i}^2$ 的最小值.
+首先, 比赛结果只有有限种, 从而最小值一定存在.
+其次, 我们证明: 当 $\sum_{i=1}^{14} \mathrm{C}_{w_i}^2$ 达到最小时, 对任何 $1 \leqslant i<j \leqslant 14$, 一定有 $\left|w_i-w_j\right| \leqslant 1$. 实际上, 若存在 $1 \leqslant i<j \leqslant$ 14 , 使 $w_i-w_j \geqslant 2$, 则令 $y_i=w_i-1, y_j=w_j+1, y_k=w_k(k \neq i 、 j)$, 则 $\sum_{i=1}^{14} \mathrm{C}_{w_i}^2-\sum_{i=1}^{14} \mathrm{C}_{y_i}^2=\mathrm{C}_{w_i}^2+\mathrm{C}_{w_j}^2-\left(\mathrm{C}_{w_i-1}^2+\mathrm{C}_{w_j+1}^2\right)=w_i-w_j-1>0$, 于是 $\sum_{i=1}^{14} \mathrm{C}_{w_i}^2$ 不是最小的,矛盾.
+注意到 $91=14 \times 6+7$, 所以当 $\left\{w_1, w_2, \cdots, w_{14}\right\}=\{6$, $6,6,6,6,6,6,7,7,7,7,7,7,7\}$ 时, $\sum_{i=1}^{14} \mathrm{C}_{w_i}^2$ 达到最小值 $7 \mathrm{C}_6^2+7 \mathrm{C}_7^2=$ 252 , 于是 $S=\mathrm{C}_{14}^3-\sum_{i=1}^{14} \mathrm{C}_{w_i}^2 \leqslant \mathrm{C}_{14}^3-252=112$. 解法 2 : 同解法 1 , 得非三联角的三人组总数为 $\sum_{i=1}^{14} \mathrm{C}_{w_i}^2$. 又设 $A_i$ 输的场数为 $l_i$, 同样可知, 非三联角的三人组总数为 $\sum_{i=1}^{14} \mathrm{C}_{l_i}^2$. 于是非三联角的三人组总数为 $\frac{1}{2} \sum_{i=1}^{14}\left(\mathrm{C}_{l_i}^2+\mathrm{C}_{w_i}^2\right)$. 由于 $w_i+ l_i=13$, 所以 $w_i^2+l_i^2=\frac{1}{2}\left[13^2+\left(w_i-l_i\right)^2\right] \geqslant 85$, 从而 $\mathrm{C}_{w_i}^2+\mathrm{C}_{l_i}^2=\frac{w_i^2+l_i^2}{2} -\frac{13}{2} \geqslant 36$,于是 $\frac{1}{2} \sum_{i=1}^{14}\left(\mathrm{C}_{l_i}^2+\mathrm{C}_{w_i}^2\right) \geqslant \frac{1}{2} \sum_{i=1}^{14} 36=252$. 故三联角数目 $S \leqslant \mathrm{C}_{14}^3 -252=112$. 另一方面, 对任意 $1 \leqslant i<j \leqslant 14$, 当且仅当 $i 、 j$ 同奇偶时, 令 $A_i$ 胜 $A_j$, 则 $w_2=w_4=w_6=w_8=w_{10}=w_{12}=w_{14}=7, w_1=w_3=w_5=w_7 =w_9=w_{11}=w_{13}=6$, 此时 $S=112$. 故所求最大值为 112 .
+%%PROBLEM_END%%
+
+

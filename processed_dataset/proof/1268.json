@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例16. 设 $x 、 y 、 z$ 是 3 个不全为零的实数, 求 $\\frac{x y+2 y z}{x^2+y^2+z^2}$ 的最大值.",
+    "solution": "分析:欲求 $\\frac{\\dot{x} y+2 y z}{x^2+y^2+z^2}$ 的最大值, 只需先证明存在一个常数 $c$, 使\n$$\n\\frac{x y+2 y z}{x^2+y^2+z^2} \\leqslant c, \\label{(1)}\n$$\n且 $x 、 y 、 z$ 取某组数时, 等号成立.\n(1)式可化为 $x^2+y^2+z^2 \\geqslant \\frac{1}{c}(x y+2 y z)$. 由于右边两项为 $x y$ 和 $2 y z$, 所以左边的 $y^2$ 需拆成两项 $\\alpha y^2$ 和 $(1-\\alpha) y^2$. 由\n$$\n\\begin{gathered}\nx^2+\\alpha y^2 \\geqslant 2 \\sqrt{\\alpha} x y, \\\\\n(1-\\alpha) y^2+z^2 \\geqslant 2 \\sqrt{1-\\alpha} y z,\n\\end{gathered}\n$$\n又由 $\\frac{2 \\sqrt{1-\\alpha}}{2 \\sqrt{\\alpha}}=2$, 得 $\\alpha=\\frac{1}{5}$.\n从而解 因为\n$$\nx^2+y^2+z^2 \\geqslant \\frac{2}{\\sqrt{5}}(x y+2 y z) .\n$$\n$$\n\\begin{aligned}\n& x^2+\\frac{1}{5} y^2 \\geqslant \\frac{2}{\\sqrt{5}} x y, \\\\\n& \\frac{4}{5} y^2+z^2 \\geqslant \\frac{4}{\\sqrt{5}} y z,\n\\end{aligned}\n$$\n所以\n$$\nx^2+y^2+z^2 \\geqslant \\frac{2}{\\sqrt{5}}(x y+2 y z),\n$$\n即\n$$\n\\frac{x y+2 y z}{x^2+y^2+z^2} \\leqslant \\frac{\\sqrt{5}}{2} \\text {. }\n$$\n当 $x=1, y=\\sqrt{5}, z=2$ 时, 等号成立.\n所以, 欲求的最大值为 $\\frac{\\sqrt{5}}{2}$.",
+    "remark": "",
+    "figures": []
+}

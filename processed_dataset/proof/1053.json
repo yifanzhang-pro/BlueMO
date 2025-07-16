@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题13. 已知函数 $f(x)=a x+b, x \\in[-1,1]$, 且 $2 a^2+6 b^2=3$, 求证: $|f(x)| \\leqslant \\sqrt{2}$.",
+    "solution": "将 $2 a^2+6 b^2=3$ 变形为 $\\left(\\sqrt{\\frac{2}{3}} a\\right)^2+(\\sqrt{2} b)^2=1$, 设 $a=\\sqrt{\\frac{3}{2}} \\sin \\theta$, $b=\\sqrt{\\frac{1}{2}} \\cos \\theta, \\theta \\in[0,2 \\pi)$, 则 $f(x)=\\sqrt{\\frac{3}{2}} x \\sin \\theta+\\sqrt{\\frac{1}{2}} \\cos \\theta= \\sqrt{\\frac{3 x^2+1}{2}} \\sin (\\theta+\\varphi)$, 所以 $|f(x)| \\leqslant \\sqrt{\\frac{3 x^2+1}{2}} \\leqslant 2$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题10. 已知 $f(x)=\\frac{x \\cos \\frac{\\pi}{96}+\\sin \\frac{\\pi}{96}}{-x \\sin \\frac{\\pi}{96}+\\cos \\frac{\\pi}{96}}, g(x)=\\frac{x \\cos \\frac{\\pi}{48}+\\sin \\frac{\\pi}{48}}{-x \\sin \\frac{\\pi}{48}+\\cos \\frac{\\pi}{48}}$, 求\n$$\nH(x)=\\underbrace{f\\{g \\cdots f[g(x)]\\} .}_{1000 \\uparrow f, 1000 \\uparrow g}\n$$",
+    "solution": "因为 $f(x) 、 g(x)$ 对应的复数分别为\n$$\n\\cos \\frac{\\pi}{96}+i \\sin \\frac{\\pi}{96}, \\cos \\frac{\\pi}{48}+i \\sin \\frac{\\pi}{48} .\n$$\n所以 $f[g(x)]$ 所对应的复数为\n$$\n\\left(\\cos \\frac{\\pi}{96}+i \\sin \\frac{\\pi}{96}\\right)\\left(\\cos \\frac{\\pi}{48}+i \\sin \\frac{\\pi}{48}\\right)=\\cos \\frac{\\pi}{32}+i \\sin \\frac{\\pi}{32} .\n$$\n所以 $H(x)$ 对应的复数为\n$$\n\\left(\\cos \\frac{\\pi}{32}+\\mathrm{i} \\sin \\frac{\\pi}{32}\\right)^{1000}=\\cos \\frac{1000 \\pi}{32}+\\mathrm{i} \\sin \\frac{1000 \\pi}{32}=-\\frac{\\sqrt{2}}{2}-\\frac{\\sqrt{2}}{2} \\mathrm{i} .\n$$\n所以 $H(x)=\\frac{-\\frac{\\sqrt{2}}{2} x-\\frac{\\sqrt{2}}{2}}{\\frac{\\sqrt{2}}{2} x-\\frac{\\sqrt{2}}{2}}=\\frac{-x-1}{x-1}=-\\frac{x+1}{x-1}$.",
+    "remark": "",
+    "figures": []
+}

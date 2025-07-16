@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 一个正整数, 加上 100 , 为一完全平方数, 若加上 168 , 则为另一个完全平方数, 求此数.",
+    "solution": "解:设所求的数为 $x$, 由题意, 有正整数 $y 、 z$, 使得\n$$\n\\left\\{\\begin{array}{l}\nx+100=y^2, \\\\\nx+168=z^2 .\n\\end{array}\\right.\n$$\n从上面两个方程中消去 $x$, 得出\n$$\nz^2-y^2=68 .\n$$\n将这个二元二次方程的左边分解因式, 而将右边作标准分解, 得\n$$\n(z-y)(z+y)=2^2 \\times 17 . \\label{eq1}\n$$\n由于 $z-y$ 及 $z+y$ 都是正整数, 且 $z-y<z+y$, 故由式\\ref{eq1}及唯一分解定理推出, 必有\n$$\n\\left\\{\\begin{array} { l } \n{ z - y = 1 , } \\\\\n{ z + y = 2 ^ { 2 } \\times 1 7 ; }\n\\end{array} \\left\\{\\begin{array} { l } \n{ z - y = 2 , } \\\\\n{ z + y = 2 \\times 1 7 ; }\n\\end{array} \\left\\{\\begin{array}{l}\nz-y=2^2 \\\\\nz+y=17\n\\end{array}\\right.\\right.\\right. \n$$\n逐一解这些二元一次方程组, 可得出 $y=16, z=18$, 故 $x=156$.",
+    "remark": "",
+    "figures": []
+}

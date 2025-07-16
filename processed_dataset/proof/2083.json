@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 证明: 在边长为 1 的正方形内, 不可能无重叠的放人两个边长大于 $\\sqrt{\\frac{2}{3}}$ 的正方形.",
+    "solution": "提示: 只需证明边长大于 $\\frac{\\sqrt{2}}{3}$ 的正三角形放人边长为 1 的正方形后,一定包含该正方形的中心.",
+    "remark": "",
+    "figures": []
+}

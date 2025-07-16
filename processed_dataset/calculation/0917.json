@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题14. 设 $D$ 是锐角 $\\triangle A B C$ 内部的一个点, 使得 $\\angle A D B=\\angle A C B+90^{\\circ}$, 并有 $A C \\cdot B D=A D \\cdot B C$. 计算比值 $\\frac{A B \\cdot C D}{A C \\cdot B D}$.",
+    "solution": "解:如图(<FilePath:./images/volume7/figures/fig-c1a14.png>), 分别作 $\\angle C B E=\\angle C A D, \\angle A C D= \\angle B C E$, 边 $B E 、 C E$ 相交于 $E$. 于是 $\\triangle A C D \\backsim \\triangle B C E$. 从而\n$$\n\\frac{A C}{B C}=\\frac{A D}{B E}=\\frac{C D}{C E} . \\label{eq1}\n$$\n所以 $A C \\cdot B E=B C \\cdot A D=A C \\cdot B D$, 即 $B E=B D$.\n又因为 $\\angle A D B=\\angle C B D+\\angle C A D+\\angle A C B=90^{\\circ}+\\angle A C B$, 所以 $\\angle B D E= \\angle C B D+\\angle C B E=\\angle C B D+\\angle C A D=90^{\\circ}$. 故连结 $D E, \\triangle D B E$ 是等腰直角三角形.\n由 式\\ref{eq1} 知 $\\frac{A C}{B C}=\\frac{C D}{C E}$, 且 $\\angle A C D=\\angle B C E$, 于是 $\\frac{C A}{C D}=\\frac{C B}{C E}, \\angle A C B= \\angle D C E$, 从而 $\\triangle C A B \\backsim \\triangle C D E$, 所以 $\\frac{D E}{A B}=\\frac{C D}{C A}, \\frac{A B \\cdot C D}{B D \\cdot C A}=\\frac{D E}{B D}=\\sqrt{2}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1a14.png"
+    ]
+}

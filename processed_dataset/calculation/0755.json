@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 设 $M=\\{(x, y)|| x y \\mid=1, x>0\\}, N=\\{(x, y) \\mid \\arctan x+ \\operatorname{arccot} y=\\pi\\}$, 那么 ( ).\n(A) $M \\cup N=\\{(x, y)|| x y \\mid=1\\}$\n(B) $M \\cup N=M$\n(C) $M \\cup N=N \\cup\\{(0,0)\\}$\n(D) $M \\cup N=\\{(x, y)|| x y \\mid=1$, 且 $x 、 y$ 不同时为负数 $\\}$",
+    "solution": "B. 在集合 $M$ 中,由 $|x y|=1$ 得 $x y=1$ 或 $x y=-1$ 但 $x>0$,故表示反比例函数在 $\\mathrm{I} 、 \\mathrm{IN}$ 象限的两支, 在集合 $N$ 中, 由 $\\arctan x+\\operatorname{arccot} y= \\pi \\Rightarrow \\arctan x=\\pi-\\operatorname{arccot} y$, 所以 $x=\\tan (\\arctan x)=\\tan (\\pi-\\operatorname{arccot} y)= -\\frac{1}{\\cot (\\operatorname{arccot} y)}=-\\frac{1}{y}$, 即 $x y=-1$, 但当 $x<0$ 时, $-\\frac{\\pi}{2}<\\arctan x<0$, 此时 $y>0,0<\\operatorname{arccot} y<\\frac{\\pi}{2}$, 故 $-\\frac{\\pi}{2}<\\arctan x+\\operatorname{arccot} y<\\frac{\\pi}{2}$, 这与\n$\\arctan x+\\operatorname{arccot} y=\\pi$, 矛盾.\n所以 $N=\\{(x, y) \\mid x y=-1, x>0\\} \\varsubsetneqq\\{(x$, $y) \\mid x y=1$ 或 $x y=-1, x>0\\}=M$, 故 $M \\cup N=M$.",
+    "remark": "",
+    "figures": []
+}

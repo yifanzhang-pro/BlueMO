@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题14. 如图(<FilePath:./images/volume7/figures/fig-c4p14.png>), 在 $\\triangle A B C$ 中, $A B=A C, D$ 是边 $B C$ 的中点, $E$ 是 $\\triangle A B C$ 外一点, 满足 $C E \\perp A B, B E=B D$. 过线段 $B E$ 的中点 $M$ 作直线 $M F \\perp B E$, 交 $\\triangle A B D$ 的外接圆的劣弧 $\\overparen{A D}$ 于点 $F$. 求证: $E D \\perp D F$. (2010 女子数学奥林匹克)",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c4a14.png>), 易知 $A D \\perp B C$. 由此可知 $\\triangle A B D$ 的外接圆的圆心为线段 $A B$ 的中点 $O$. 延长 $F M$ 交 $\\odot O$ 于点 $L$, 连结 $O E$, 过点 $O$ 作 $O H \\perp F L, O K \\perp A D$, 分别交 $F L 、 A D$ 于点 $H 、 K$. 设直线 $F M$ 分别与直线 $E D 、 A B 、 A D$ 交于点 $S$ 、 $I 、 P$, 直线 $C E$ 与 $A B$ 交于点 $N$. 由条件知 $C N \\perp A B$. 所以, $A 、 N 、 D 、 C$ 四点共圆.\n故 $B D \\cdot B C=B N \\cdot A B$. 因为 $B C=2 B E, A B= 2 B O$, 所以, $B E^2=B N \\cdot B O$. 由射影定理得 $O E \\perp B E$. 从而, 四边形 $O E M H$ 是矩形.\n则 $O H=E M=\\frac{1}{2} B E$. 因为 $O$ 是 $A B$ 的中点, 且 $O K / / B D$, 所以, $O K=\\frac{1}{2} B D= \\frac{1}{2} B E=O H$. 于是, $F L=A D$. 从而, $\\overparen{L D}=\\overparen{A F} \\Rightarrow \\angle P F D=\\angle P D F$. 因为 $M F \\perp B E$, 所以, $\\angle B E D+\\angle M S E=90^{\\circ}$. 而 $\\angle P D S+\\angle B D E=90^{\\circ}$, 且 $\\angle B E D=\\angle B D E$, 于是, $\\angle P D S=\\angle M S E=\\angle D S P$. 因此, $\\angle F D S=90^{\\circ}$, 即 $E D \\perp F D$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4p14.png",
+        "./images/volume7/figures/fig-c4a14.png"
+    ]
+}

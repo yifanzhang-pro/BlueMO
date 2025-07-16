@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例8 在 $\\triangle A B C$ 中,已知 $A: B=1: 2$, 求证: $\\frac{a}{b}=\\frac{a+b}{a+b+c}$.",
+    "solution": "分析:由关于角的已知条件去证明边的等量关系, 其 “桥梁” 是正弦定理, 题中结论使人联想到等比性质.\n证法一设 $A=\\alpha, B=2 \\alpha$, 则 $C=\\pi-3 \\alpha$, 由正弦定理得：\n$$\n\\begin{gathered}\n\\frac{a}{b}=\\frac{\\sin \\frac{\\alpha}{\\sin 2 \\alpha}=\\frac{1}{2 \\cos \\alpha} .}{\\frac{a+b}{a+b+c}=} \\frac{\\sin \\alpha+\\sin 2 \\alpha}{\\sin \\alpha+\\sin 2 \\alpha+\\sin (\\pi-3 \\alpha)} \\\\\n=\\frac{\\sin \\alpha+\\sin 2 \\alpha}{2 \\sin 2 \\alpha \\cos \\alpha+\\sin 2 \\alpha} \\\\\n=\\frac{1}{2 \\cos \\alpha}, \\\\\n\\frac{a}{b}=\\frac{a+b}{a+b+c} . \\\\\n\\frac{a}{b}=\\frac{\\sin \\alpha}{\\sin 2 \\alpha}=\\frac{1}{2 \\cos \\alpha}, \\\\\n\\cos \\alpha=\\frac{b^2+c^2-a^2}{2 b c}, \\\\\nb^2=a^2+a c, \\\\\n\\frac{a}{b}=\\frac{b}{a+c}=\\frac{a+b}{a+b+c} .\n\\end{gathered}\n$$\n证法二同证法一得\n$$\n\\frac{a}{b}=\\frac{\\sin \\alpha}{\\sin 2 \\alpha}=\\frac{1}{2 \\cos \\alpha}\n$$\n而代入得\n$$\nb^2=a^2+a c\n$$\n故\n$$\n\\frac{a}{b}=\\frac{b}{a+c}=\\frac{a+b}{a+b+c} .\n$$\n评注三角形中有关边角关系恒等式或条件等式的证明问题, 通常利用正、余弦定理进行边角的转换, 根据三角形内角和及三角变换公式来证明.\n本题利用平面几何中相似三角形等有关知识亦可证明.",
+    "remark": "",
+    "figures": []
+}

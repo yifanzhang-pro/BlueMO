@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例7. 若 $A_1 \\cup A_2 \\cup \\cdots \\cup A_m=\\left\\{a_1, a_2, \\cdots, a_n\\right\\}$, 且 $A_1, A_2, \\cdots, A_m$ 均为非空集合, 则集合 $A_1, A_2, \\cdots, A_m$ 的组数为\n$$\ng(m, n)=\\sum_{k=0}^{m-1}(-1)^k \\mathrm{C}_m^k\\left(2^{m-k}-1\\right)^n .\n$$",
+    "solution": "证明:对于 $A_1 \\cup A_2 \\cdots \\cup A_m=\\left\\{a_1, a_2, \\cdots, a_n\\right\\}$, 如果对任意正整数 $k$ (其中 $1 \\leqslant k \\leqslant m-1$ ), 在 $A_1, A_2, \\cdots, A_m$ 中至少有 $k$ 个集合为空集, 先确定出 $k$ 个空集, 确定的方式有 $\\mathrm{C}_m^k$ 种.\n对每一种方式确定出的 $k$ 个空集, 都有剩下的 $m-k$ 个集合.\n不妨设它们为 $A_1^{\\prime}, A_2^{\\prime}, \\cdots, A_{m-k}^{\\prime}$, 它们的并集仍是 $\\left\\{a_1, a_2, \\cdots, a_n\\right\\}$.\n仿第 2 节例 6 , 知集合 $A_1^{\\prime}, A_2^{\\prime}, \\cdots, A_{m-k}^{\\prime}$ 的组数为 $\\left(2^{m-k}-1\\right)^n$.\n即有: 在 $A_1, A_2, \\cdots, A_m$ 中至少有 $k$ 个空集时, $A_1, A_2, \\cdots, A_m$ 的组数是 $\\mathrm{C}_m^k\\left(2^{m-k}-1\\right)^n$. 记\n$$\n\\mathrm{C}_m^k\\left(2^{m-k}-1\\right)^n=h(m, n, k) .\n$$\n若 $A_1, A_2, \\cdots, A_m$ 均为非空集合, 且\n$$\nA_1 \\cup A_2 \\cup \\cdots \\cup A_m=\\left\\{a_1, a_2, \\cdots, a_n\\right\\},\n$$\n则由容斥原理知集合 $A_1, A_2, \\cdots, A_m$ 的组数是\n$$\n\\left(2^m-1\\right)^n+\\sum_{k=1}^{m-1}(-1)^k h(m, n, k) .\n$$\n也就是 $g(m, n)=\\left(2^m-1\\right)^n+\\sum_{k=1}^{m-1}(-1)^k \\mathrm{C}_m^k\\left(2^{m-k}-1\\right)^n$\n$$\n=\\sum_{k=0}^{m-1}(-1)^k \\mathrm{C}_m^k\\left(2^{m-k}-1\\right)^n .\n$$",
+    "remark": "",
+    "figures": []
+}

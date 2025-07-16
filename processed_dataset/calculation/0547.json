@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例18 求所有的函数 $f: \\mathbf{R} \\rightarrow \\mathbf{R}$, 使得等式\n$$\nf([x] y)=f(x)[f(y)] .  \\quad\\quad <1>\n$$\n对所有 $x, y \\in \\mathbf{R}$ 成立.\n(这里 $[z]$ 表示不超过实数 $z$ 的最大整数)",
+    "solution": "解:答案是 $f(x)=C$ (常数), 这里 $C=0$ 或者 $1 \\leqslant C<2$.\n令 $x=0$ 代入 <1>, 得\n$$\nf(0)=f(0)[f(y)] .  \\quad\\quad <2>\n$$\n对所有 $y \\in \\mathbf{R}$ 成立.\n于是有如下两种情形:\n(1) 当 $f(0) \\neq 0$ 时, 由 <2> 知, $[f(y)]=1$ 对所有 $y \\in \\mathbf{R}$ 成立.\n所以, <1> 式为 $f([x] y)=f(x)$. 令 $y=0$, 得 $f(x)=f(0)=C \\neq 0$.\n由 $[f(y)]=1=[C]$, 知 $1 \\leqslant C<2$.\n(2) 当 $f(0)=0$ 时, 若存在 $0<\\alpha<1$, 使得 $f(\\alpha) \\neq 0$, 令 $x=\\alpha$ 代入 <1> 式, 得\n$$\n0=f(0)=f(\\alpha)[f(y)]\n$$\n对所有 $y \\in \\mathbf{R}$ 成立, 所以 $[f(y)]=0$ 对所有 $y \\in \\mathbf{R}$ 成立.\n令 $x=1$ 代入 <1> 式, 得 $f(y)=0$ 对所有 $y \\in \\mathbf{R}$ 成立,这与 $f(\\alpha) \\neq 0$ 矛盾.\n所以, 我们有 $f(\\alpha)=0,0 \\leqslant \\alpha<1$. 对于任意实数 $z$, 存在整数 $N$, 使得 $\\alpha=\\frac{z}{N} \\in[0,1)$. 由 <1> 式,有\n$$\nf(z)=f([N] \\alpha)=f(N)[f(\\alpha)]=0\n$$\n对所有 $z \\in \\mathbf{R}$ 成立.\n经检验, $f(x)=C$ (常数), 这里 $C=0$ 或者 $1 \\leqslant C<2$ 满足题设.",
+    "remark": "",
+    "figures": []
+}

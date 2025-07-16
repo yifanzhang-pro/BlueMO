@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 设 $n$ 是给定的正整数, $n \\geqslant 3$, 对于 $n$ 个给定的实数 $a_1, a_2, \\cdots, a_n$, 记 $m$ 为 $\\left|a_i-a_j\\right|(1 \\leqslant i<j \\leqslant n)$ 的最小值.\n求在 $a_1^2+a_2^2+\\cdots+a_n^2=1$ 的条件下, $m$ 的最大值.",
+    "solution": "设 $a_1 \\leqslant a_2 \\leqslant \\cdots \\leqslant a_n$, 则\n$$\n\\begin{aligned}\na_j-a_i & =\\left(a_j-a_{j-1}\\right)+\\left(a_{j-1}-a_{j-2}\\right)+\\cdots+\\left(a_{i+1}-a_i\\right) \\\\\n& \\geqslant(j-i) m .\n\\end{aligned}\n$$\n因此 $\\sum_{1 \\leqslant i<j \\leqslant n}\\left(a_i-a_j\\right)^2 \\geqslant \\frac{1}{12} n^2(n-1)(n+1) m^2$,\n又由于 $\\sum_{1 \\leqslant i<j \\leqslant n}\\left(a_i-a_j\\right)^2=n\\left(a_1^2+a_2^2+\\cdots+a_n^2\\right)-\\left(a_1+a_2+\\cdots+a_n\\right)^2 \\leqslant n$, 故 $m \\leqslant \\sqrt{\\frac{12}{(n-1) n(n+1)}}$, 易见等号成立的条件.",
+    "remark": "",
+    "figures": []
+}

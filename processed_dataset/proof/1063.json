@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $a_i>0, i=1,2, \\cdots, n$ 满足 $a_1 a_2 \\cdots a_n=1$. 证明:\n$$\n\\left(2+a_1\\right)\\left(2+a_2\\right) \\cdots\\left(2+a_n\\right) \\geqslant 3^n .\n$$",
+    "solution": "当 $n=1$ 时,则 $a_1=1$, 显然成立.\n假定当 $n=k$ 时成立,那么, 对于 $n= k+1$, 由于 $a_1 a_2 \\cdots a_k a_{k+1}=1$, 如果有某个 $a_i=1$, 则由归纳假设, 命题成立.\n如果 $a_i$ 都不为 1 , 则必有大于 1 的, 且必有小于 1 的, 不妨设 $a_k>1, a_{k+1}<1$. 则由归纳假设, 得\n$$\n\\left(2+a_1\\right)\\left(2+a_2\\right) \\cdots\\left(2+a_{k-1}\\right)\\left(2+a_k a_{k+1}\\right) \\geqslant 3^k .\n$$\n于是, 为了证明命题, 只要证明\n$$\n\\left(2+a_k\\right)\\left(2+a_{k+1}\\right) \\geqslant 3\\left(2+a_k a_{k+1}\\right)\n$$\n便可.\n因为\n$$\n\\left(2+a_k\\right)\\left(2+a_{k+1}\\right) \\geqslant 3\\left(2+a_k a_{k+1}\\right),\n$$\n等价于\n$$\n4+2 a_k+2 a_{k+1}+a_k a_{k+1} \\geqslant 6+3 a_k a_{k+1},\n$$\n等价于\n$$\n\\begin{gathered}\na_k+a_{k+1}-a_k a_{k+1}-1 \\geqslant 0, \\\\\n\\quad\\left(a_k-1\\right)\\left(1-a_{k+1}\\right) \\geqslant 0 .\n\\end{gathered}\n$$\n由假设最后不等式成立, 故命题成立.\n注:这里, 选取 $a_k>1, a_{k+1}<1$, 在平均值不等式的证明方法四中有过类似的考虑.\n证明:由于对任意的 $i$,\n$$\n2+a_i=1+1+a_i \\geqslant 3 \\sqrt[3]{a_i} .\n$$\n故 $\\quad\\left(2+a_1\\right)\\left(2+a_2\\right) \\cdots\\left(2+a_n\\right) \\geqslant 3^n \\sqrt[3]{a_1 a_2 \\cdots a_n}=3^n$.",
+    "remark": "",
+    "figures": []
+}

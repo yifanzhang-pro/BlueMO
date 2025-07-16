@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 已知 $\\triangle A B C$ 的三边长分别为 $a 、 b 、 c$, 点 $P$ 在 $\\triangle A B C$ 的内部, $P$ 到三条边的距离分别为 $p 、 q 、 r$. 证明: $R \\leqslant \\frac{a^2+b^2+c^2}{18 \\sqrt[3]{p q r}}$, 其中 $R$ 为 $\\triangle A B C$ 的外接圆半径, 并确定等号成立的条件.",
+    "solution": "证明: 设 $\\triangle A B C$ 的面积为 $S$, 则 $S=S_{\\triangle P B C}+S_{\\triangle P C A}+S_{\\triangle P A B}=\\frac{1}{2}(p a+q b+r c$ ). 由均值不等式有 $\\sqrt[3]{p q r}=\\frac{\\sqrt[3]{p a \\cdot q b \\cdot r c}}{\\sqrt[3]{a b c}} \\leqslant \\frac{p a+q b+r c}{3 \\sqrt[3]{a b c}}= \\frac{2 S}{3 \\sqrt[3]{a b c}} \\cdots$ (1). 故只需证 $R \\leqslant \\frac{\\left(a^2+b^2+c^2\\right) \\sqrt[3]{a b c}}{12 S}$. 又因为 $a^2+b^2+c^2 \\geqslant 3 \\sqrt[3]{a^2 b^2 c^2} \\cdots$ (2). 所以, 只需证 $R \\leqslant \\frac{a b c}{4 S} \\cdots$ (3). 而 $4 S R=2 R a b \\sin C=a b c$, 所以, 式 (3) 成立.\n因此,原不等式成立.\n式 (1) 的等号成立的条件是 $p a=q b=r c$, 式 (2) 的等号成立的条件是 $a= b=c$, 所以,原不等式等号成立的条件是 $a=b=c$ 且 $p=q=r$, 即 $\\triangle A B C$ 是正三角形且 $P$ 是 $\\triangle A B C$ 的中心.",
+    "remark": "",
+    "figures": []
+}

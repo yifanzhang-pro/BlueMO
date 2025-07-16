@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例14 设 $f: \\mathbf{R} \\rightarrow \\mathbf{R}$ 满足如下条件:\n(1)对任意实数 $x 、 y$, 有\n$$\nf(2 x)=f\\left(\\sin \\left(\\frac{\\pi x}{2}+\\frac{\\pi y}{2}\\right)\\right)+f\\left(\\sin \\left(\\frac{\\pi x}{2}-\\frac{\\pi y}{2}\\right)\\right) ;\n$$\n(2)对任意实数 $x 、 y$,有\n$$\nf\\left(x^2-y^2\\right)=(x+y) f(x-y)+(x-y) f(x+y) .\n$$\n求 $f(2012+\\sqrt{2012}+\\sqrt[3]{2012})$ 的值.",
+    "solution": "解:令 $u=x+y, v=x-y$, 则\n$$\n\\begin{gathered}\nf(u+v)=f\\left(\\sin \\frac{u \\pi}{2}\\right)+f\\left(\\sin \\frac{v \\pi}{2}\\right), \\quad\\quad <1>\\\\\nf(u v)=u f(v)+v f(u) . \\quad\\quad <2>\n\\end{gathered}\n$$\n在<2>中令 $u=0, v=2$, 得 $f(0)=0$.\n令 $u=0$, 代入 (1), 得 $f(v)=f\\left(\\sin \\frac{v \\pi}{2}\\right)$, 同理 $f(u)=f\\left(\\sin \\frac{u \\pi}{2}\\right)$, 所以\n$$\nf(u+v)=f(u)+f(v) .  \\quad\\quad <3>\n$$\n在<2>中令 $u=v=1$, 得 $f(1)=0$.\n在<3>中令 $v=1$, 得 $f(u+1)=f(u)$, 从而 $f(2012)=0$.\n在<2>中令 $u=v$, 得\n$$\nf\\left(u^2\\right)=2 u f(u) .  \\quad\\quad <4>\n$$\n所以, $f(2012)=2 \\cdot \\sqrt{2012} f(\\sqrt{2012})$, 故 $f(\\sqrt{2012})=0$.\n在<2>中令 $v=u^2$, 得\n$$\nf\\left(u^3\\right)=u f\\left(u^2\\right)+u^2 f(u)=3 u^2 f(u),\n$$\n所以, $f(2012)=3 \\cdot 2012^{\\frac{2}{3}} f(\\sqrt[3]{2012})$, 于是 $f(\\sqrt[3]{2012})=0$.\n所以\n$$\nf(2012+\\sqrt{2012}+\\sqrt[3]{2012})=f(2012)+f(\\sqrt{2012})+f(\\sqrt[3]{2012})=0 .\n$$",
+    "remark": "",
+    "figures": []
+}

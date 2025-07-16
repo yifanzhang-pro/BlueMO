@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例12. 已知 $x 、 y 、 z$ 都是正数,求证:\n$$\n\\begin{aligned}\n& x(y+z-x)^2+y(z+x-y)^2+z(x+y-z)^2 \\\\\n\\geqslant & 2 x y z\\left(\\frac{x}{y+z}+\\frac{y}{z+x}+\\frac{z}{x+y}\\right),\n\\end{aligned}\n$$\n等号当且仅当 $x=y=z$ 时成立.",
+    "solution": "证明:令 $a=y+z-x, b=x+z-y, c=x+y-z$, 则\n$$\nx=\\frac{b+c}{2}, y=\\frac{a+c}{2}, z=\\frac{a+b}{2} .\n$$\n于是原不等式等价于\n$$\n\\frac{1}{2} \\sum a^2(b+c) \\geqslant 2 \\frac{(a+b)(b+c)(c+a)}{8} \\cdot \\sum \\frac{\\frac{b+c}{2}}{a+\\frac{b+c}{2}},\n$$\n即\n$$\n\\begin{aligned}\n& 2\\left[a^2(b+c)+b^2(c+a)+c^2(a+b)\\right] \\\\\n\\geqslant & (a+b)(b+c)(c+a) \\cdot \\sum \\frac{b+c}{2 a+b+c} .\n\\end{aligned}\n$$\n下面我们证明\n$$\na^2(b+c)+b^2(c+a) \\geqslant(a+b)(b+c)(c+a) \\cdot \\frac{a+b}{2 c+a+b} . \\label{(1)}\n$$\n注意到(1)等价于 $\\frac{a^2}{a+c}+\\frac{b^2}{b+c} \\geqslant \\frac{(a+b)^2}{a+b+2 c}$.\n由 Cauchy 不等式,这是显然的.\n同理还有类似(1)的其他两式, 相加即得原不等式成立.",
+    "remark": "",
+    "figures": []
+}

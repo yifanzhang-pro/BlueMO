@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题12 若 $\\frac{\\pi}{4}<\\alpha<\\frac{3 \\pi}{4}, 0<\\beta<\\frac{\\pi}{4}, \\cos \\left(\\frac{\\pi}{4}-\\alpha\\right)=\\frac{3}{5}, \\sin \\left(\\frac{3 \\pi}{4}+\\beta\\right)=\\frac{5}{13}$, 则 $\\sin (\\alpha+\\beta)=$",
+    "solution": "$\\frac{56}{65}$. 由条件得 $\\sin \\left(\\frac{\\pi}{4}-\\alpha\\right)=-\\frac{4}{5}, \\cos \\left(\\frac{3 \\pi}{4}+\\beta\\right)=-\\frac{12}{13}$, 所以 $\\cos \\left[\\left(\\frac{3 \\pi}{4}+\\beta\\right)-\\left(\\frac{\\pi}{4}-\\alpha\\right)\\right]=\\frac{3}{5} \\times\\left(-\\frac{12}{13}\\right)+\\left(-\\frac{4}{5}\\right) \\times \\frac{5}{13}=-\\frac{56}{65}$. 即 $\\cos \\left(\\frac{\\pi}{2}+\\beta+\\alpha\\right)=-\\frac{56}{65}$, 所以 $\\sin (\\alpha+\\beta)=\\frac{56}{65}$.",
+    "remark": "",
+    "figures": []
+}

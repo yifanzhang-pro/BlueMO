@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例16 求实数 $a$ 的取值范围,使得对任意实数 $x$ 和任意 $\\theta \\in\\left[0, \\frac{\\pi}{2}\\right]$, 恒有\n$$\n(x+3+2 \\sin \\theta \\cos \\theta)^2+(x+a \\sin \\theta+a \\cos \\theta)^2 \\geqslant \\frac{1}{8} .\n$$",
+    "solution": "解:令 $\\sin \\theta+\\cos \\theta=u$, 则 $2 \\sin \\theta \\cos \\theta=u^2-1$, 当 $\\theta \\in\\left[0, \\frac{\\pi}{2}\\right]$ 时, $u \\in$ 016 [1, $[1]$.\n并记 $f(x)=(x+3+2 \\sin \\theta \\cos \\theta)^2+(x+a \\sin \\theta+a \\cos \\theta)^2$.\n所以 $f(x)=\\left(x+2+u^2\\right)^2+(x+a u)^2=2 x^2+2\\left(u^2+a u+2\\right) x+ \\left(u^2+2\\right)^2+(a u)^2=2\\left[x+\\frac{1}{2}\\left(u^2+a u+2\\right)\\right]^2+\\frac{1}{2}\\left(u^2-a u+2\\right)^2$.\n所以 $x=-\\frac{1}{2}\\left(u^2+a u+2\\right)$ 时, $f(x)$ 取得最小值 $\\frac{1}{2}\\left(u^2-a u+2\\right)^2$. 所以 $u^2-a u+2 \\geqslant \\frac{1}{2}$ 或 $u^2-a u+2 \\leqslant-\\frac{1}{2}$.\n所以 $a \\leqslant u+\\frac{3}{2 u}$ 或 $a \\geqslant u+\\frac{5}{2 u}$. 当 $u \\in[1, \\sqrt{2}]$ 时, $u+\\frac{3}{2 u} \\in\\left[\\sqrt{6}, \\frac{5}{2}\\right]$, $u+\\frac{5}{2 u} \\in\\left[\\frac{9}{4} \\sqrt{2}, \\frac{7}{2}\\right]$.\n所以 $a \\leqslant \\sqrt{6}$ 或 $a \\geqslant \\frac{7}{2}$.\n评注在三角函数式中,如果同时出现 $\\sin x \\pm \\cos x$ 及 $\\sin x \\cos x$ 的式子, 常用换元法, 通常将三角函数转变成二次函数问题来求解.",
+    "remark": "",
+    "figures": []
+}

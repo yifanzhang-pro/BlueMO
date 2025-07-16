@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 证明: 对任何实数 $x, y, z$,下述三个不等式不可能同时成立:\n$$\n|x|<|y-z|,|y|<|z-x|,|z|<|x-y| \\text {. }\n$$",
+    "solution": "用反证法.\n假设 $|x|<|y-z|,|y|<|z-x|,|z|<|x-y|$ 同时成立, 不妨设其中 $x \\geqslant y \\geqslant z$, 则有 $|x|+|z|<|y-z|+|x-y|= (y-z)+(x-y)=x-z$, 矛盾! 故假设不成立.\n证毕.",
+    "remark": "",
+    "figures": []
+}

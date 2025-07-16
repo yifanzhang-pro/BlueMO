@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例2. 如图(<FilePath:./images/volume14/figures/fig-c8i1.png>), 在凸四边形 $A B C D$ 的边 $A B$ 和 $B C$ 上取点 $E 、 F$, 使得线段 $D E$ 、 $D F$ 分对角线 $A C$ 为三等分.\n已知 $S_{\\triangle A D E}=S_{\\triangle C D F}=\\frac{1}{4} S_{A B C D}$, 证明: $A B C D$ 是平行四边形.",
+    "solution": "证明:设 $D E 、 D F$ 分别与 $A C$ 交于 $P 、 Q$. 连接 $B D$, 交 $A C$ 与 $M$.\n由 $A P=Q C$ 得 $S_{\\triangle A D P}=S_{\\triangle C D Q}$, 又 $S_{\\triangle A D E}=S_{\\triangle C D F}$, 所以 $S_{\\triangle A E P}=S_{\\triangle C F Q}$. 故 $E 、 F$ 到 $A C$ 的距离相等, 因此 $E F / / A C$.\n设 $\\frac{A B}{A E}=\\frac{C B}{C F}=k$, 则\n$$\n\\frac{S_{\\triangle A D B}}{S_{\\triangle A D E}}=\\frac{A B}{A E}=k, \\frac{S_{\\triangle C D B}}{S_{\\triangle C D F}}=\\frac{C B}{C F}=k,\n$$\n所以\n$$\n\\begin{aligned}\nS_{A B C D} & =S_{\\triangle A D B}+S_{\\triangle C D B}=k\\left(S_{\\triangle A D E}+S_{\\triangle C D F}\\right) \\\\\n& =k \\cdot \\frac{1}{2} S_{A B C D},\n\\end{aligned}\n$$\n即 $k=2$. 因而 $\\frac{A Q}{A P}=\\frac{A B}{A E}=2$, 所以 $B Q / / E P$. 同理有 $B P / / F Q$. 因此 $B P D Q$ 为平行四边形, 故 $B M=M D, P M=M Q$, 又 $A P=Q C$, 所以 $A M=M C$, 即 $A C 、 B D$ 互相平分, 故而 $A B C D$ 是平行四边形.",
+    "remark": "注:本题中一些重要的平行关系都是通过面积关系导出的: 先是通过面积的运算得到 $E F / / A C$, 再是通过图形关系列出 $S_{A B C D}$ 满足的面积等式, 为证明 $B Q / / E P$ 与 $B P / / F Q$ 起到桥梁作用.\n面积法的特点是把各已知量和未知量用面积公式联系起来, 使几何元素之间的关系变成数量关系, 通过运算达到求证的结果, 很多场合下这可以降低分析问题或添置补助线的难度, 使证明简洁明快.",
+    "figures": [
+        "./images/volume14/figures/fig-c8i1.png"
+    ]
+}

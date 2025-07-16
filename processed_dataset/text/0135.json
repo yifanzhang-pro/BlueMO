@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "text": "当三角函数的自变量定义域规定在某个单调区间,符合一一对应关系时, 就存在了反函数, 即反三角函数.\n根据互为反函数的定义域与值域之间的关系可知, 反正弦函数、反余弦函数的定义域是 $[-1,1]$, 反正切函数、反余切函数的定义域为 $\\mathbf{R}$, 反正弦函数的值域 (主值区间) 为 $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$, 反余弦函数的值域为 $[0, \\pi]$, 反正切函数的值域为 $\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$, 反余切函数的值域为 $(0$, $\\pi)$, 且反正弦函数和反正切函数是单调递增的奇函数, 反余弦函数和反余切函数是单调递减的非奇非偶函数.\n形如 $\\sin x=a, \\cos x=a, \\tan x=a, \\cot x=a$ 的方程是最基本、最简单的三角方程, 它们的解分别是: $x=n \\pi+(-1)^n \\arcsin a,(|a| \\leqslant 1) ; x= 2 n \\pi \\pm \\arccos a ，(|a| \\leqslant 1) ; x=n \\pi+\\arctan a ; x=n \\pi+\\operatorname{arccot} a ;(n \\in \\mathbf{Z})$\n在反三角函数中, 有下列重要恒等式: (1) $\\sin (\\arcsin x)=x, x \\in[-1$, $1] ; \\cos (\\arccos x)=x, x \\in[-1,1] ; \\tan (\\arctan x)=x, x \\in \\mathbf{R}$;\n(2) $\\arcsin (\\sin x)=x, x \\in\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$; $\\arccos (\\cos x)=x, x \\in[0, \\pi]$; $\\arctan (\\tan x)=x, x \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$.",
+    "figures": []
+}

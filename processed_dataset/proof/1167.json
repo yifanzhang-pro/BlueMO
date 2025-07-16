@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-6.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设实数 $x_i$ 满足 $\\left|x_i\\right|<1(i=1,2, \\cdots, n), n \\geqslant 2$, 求证:\n$$\n\\sum_{i=1}^n \\frac{1}{1-\\left|x_i\\right|^n} \\geqslant \\frac{n}{1-\\prod_{i=1}^n x_i} .\n$$",
+    "solution": "证明:由柯西不等式, 得\n$$\n\\sum_{i=1}^n \\frac{1}{1-\\left|x_i\\right|^n} \\cdot \\sum_{i=1}^n\\left(1-\\left|x_i\\right|^n\\right) \\geqslant n^2 .\n$$\n因此欲证原不等式只要证明即证\n$$\n\\begin{gathered}\n\\frac{n^2}{\\sum_{i=1}^n\\left(1-\\left|x_i\\right|^n\\right)} \\geqslant \\frac{n}{1-\\prod_{i=1}^n x_i}, \\\\\nn-n \\prod_{i=1}^n x_i \\geqslant \\sum_{i=1}^n\\left(1-\\left|x_i\\right|^n\\right), \\\\\n\\sum_{i=1}^n\\left|x_i\\right|^n \\geqslant n \\prod_{i=1}^n x_i .\n\\end{gathered}\n$$\n由平均值不等式知上述不等式成立, 故原命题成立.",
+    "remark": "",
+    "figures": []
+}

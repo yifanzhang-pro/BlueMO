@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题13. 设 $a_i>0, b_i>0, a_i b_i-c_i^2>0(i=1,2, \\cdots, n)$, 则\n$$\n\\frac{n^3}{\\left(\\sum_{i=1}^n a_i\\right)\\left(\\sum_{i=1}^n b_i\\right)-\\left(\\sum_{i=1}^n c_i\\right)^2} \\leqslant \\sum_{i=1}^n \\frac{1}{a_i b_i-c_i^2} .\n$$",
+    "solution": "令 $a_i b_i-c_i^2=d_i^2>0$, 则由柯西不等式, 得 $\\left(\\sum a_i\\right)\\left(\\sum b_i\\right) \\geqslant\\left(\\sum \\sqrt{a_i b_i}\\right)^2=\\sum_{i=1}^n \\sum_{j=1}^n \\sqrt{a_i} \\overline{b_i} \\sqrt{a_j b_j}=\\sum_{i=1}^n \\sum_{j=1}^n \\sqrt{c_i^2+d_i^2} \\sqrt{c_j^2+d_j^2} \\geqslant \\sum_{i=1}^n \\sum_{j=1}^n\\left(c_i c_j+d_i d_j\\right)=\\left(\\sum_{i=1}^n c_i\\right)^2+\\left(\\sum_{i=1}^n d_i\\right)^2$, 又因为 $\\left(\\sum_{i=1}^n d_i\\right)^2\\left(\\sum_{i=1}^n d_i^{-2}\\right) \\geqslant n^3$, 故左边 $\\leqslant \\frac{n^3}{\\left(\\sum d_i\\right)^2} \\leqslant \\sum d_i^{-2}$. 等号成立当且仅当 $a_1=a_2=\\cdots=a_n, b_1= b_2=\\cdots=b_n, c_1=c_2=\\cdots=c_n$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例1. 如图(<FilePath:./images/volume7/figures/fig-c1i2.png>), 设点 $P$ 在 $\\triangle A B C$ 的外接圆上, 直线 $C P$ 和 $A B$ 相交于点 $E$, 直线 $B P$ 和 $A C$ 相交于点 $F$, 边 $A C$ 的垂直平分线交边 $A B$ 于点 $J$, 边 $A B$ 的垂直平分线交边 $A C$ 于点 $K$, 求证:\n$$\n\\frac{C E^2}{B F^2}=\\frac{A J \\cdot J E}{A K \\cdot K F} \\text {. }\n$$",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c1i2.png>), 连结 $B K, C J$.\n$$\n\\angle E=\\angle A B P-\\angle B P E,\n$$\n而由 $A, B, P, C$ 四点共圆, 知 $\\angle B P E=\\angle A$, 故 $\\angle E=\\angle A B P-\\angle A$, 又由 $K A=K B$, 知 $\\angle A= \\angle A B K$, 故\n$$\n\\angle E=\\angle A B P-\\angle A B K=\\angle K B F . \\label{eq1}\n$$\n同理 $\\angle F=\\angle J C E, \\label{eq2}$.\n由式\\ref{eq1}, \\ref{eq2}得 $\\triangle J E C \\backsim \\triangle K B F$.\n由此,\n$$\n\\begin{aligned}\n& \\frac{C E}{B F}=\\frac{J E}{K B}=\\frac{J E}{A K},  \\label{eq3}\\\\\n& \\frac{C E}{B F}=\\frac{J C}{K F}=\\frac{A J}{K F} . \\label{eq4}\n\\end{aligned}\n$$\n将式\\ref{eq3}, \\ref{eq4}两式的左端和右端分别相乘即得结论.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1i2.png",
+        "./images/volume7/figures/fig-c1i2.png"
+    ]
+}

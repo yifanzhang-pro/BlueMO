@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 设空间中有 $2 n(n \\geqslant 2)$ 个点, 其中任意 4 点不共面, 它们之间连有 $n^2+1$条线段,则这些线段至少构成 $n$ 个不同的三角形.",
+    "solution": "当 $n=2$ 时, $n^2+1=5,4$ 点间连有 5 条线段,恰构成两个三角形, 即命题成立.\n设命题于 $n=k$ 时成立, 当 $n=k+1$ 时, 我们先来证明这时至少存在一个三角形.\n设 $A B$ 是一条已知线段并记由 $A 、 B$ 向其余 $2 k$ 个点所引出的线段条数分别为 $a$ 和 $b$.\n(1) 若 $a+b \\geqslant 2 k+1$, 则存在点 $C$ 异于 $A$ 和 $B$, 使线段 $A C 、 B C$ 都存在, 从而存在 $\\triangle A B C$.\n(2) 若 $a+b \\leqslant 2 k$, 则当把 $A 、 B$ 两点除去后, 余下的 $2 k$ 个点间至少连有 $k^2+1$ 条线段,于是由归纳假设知至少存在一个三角形.\n设 $\\triangle A B C$ 是这些线段所构成的三角形之一, 由 $A 、 B 、 C$ 三点向其余 $2 k-1$ 点引出的线段数分别为 $\\alpha 、 \\beta 、 \\gamma$.\n(3) 若 $\\alpha+\\beta+\\gamma \\geqslant 3 k-1$, 则恰以 $A B 、 B C 、 C A$ 三者之一为一边的三角形的总数至少有 $k$ 个, 再加上原来的 $\\triangle A B C$ 即至少有 $k+1$ 个三角形.\n(4) 若 $\\alpha+\\beta+\\gamma \\leqslant 3 k-2$, 则 $\\alpha+\\beta, \\beta+\\gamma, \\gamma+\\alpha$ 三个数中至少有 1 个不大于 $2 k-2$. 不妨设 $\\alpha+\\beta \\leqslant 2 k-2$. 于是当把 $A 、 B$ 两点除去后, 余下的 $2 k$ 点间至少还连有 $k^2+1$ 条线段.\n于是由归纳假设和它们至少构成 $k$ 个三角形.\n再加上 $\\triangle A B C$ 即至少有 $k+1$ 个三角形, 命题于 $n=k+1$ 时成立, 这就完成了归纳证明.",
+    "remark": "",
+    "figures": []
+}

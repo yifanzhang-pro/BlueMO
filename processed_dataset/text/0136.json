@@ -1,0 +1,9 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter5.tex",
+    "text": "我们知道, 用不等号连接起来的式子叫做不等式.\n含有未知数的三角函数的不等式叫做三角不等式.\n三角不等式的解集, 通常借助于三角函数或三角函数的图象, 即利用 \"数形结合\" 的数学思想求解.\n如解三角不等式 $\\sin x>a(|a|<1)$, 可作出如图(<FilePath:./images/volume3/figures/fig-c5i1.png>) 所示的单位圆, 在纵轴上取点 $A(0, a)$, 过 $A$ 作 $M N / / O x$ 轴交单位圆于 $M$ 和 $N$, 根据三角函数的定义可知阴影部分的角度满足 $\\sin x>a$, 即其解集为 $\\{x \\mid 2 k \\pi+\\arcsin a<x<2 k \\pi+\\pi-\\arcsin a, k \\in \\mathbf{Z}\\}$. 也可作出一个周期的正弦曲线, 如图(<FilePath:./images/volume3/figures/fig-c5i2.png>) 所示, 在 $y$ 轴上取点 $A(0, a)$, 过 $A$ 作 $x$ 轴的平行线, 在这条平行线上方的图象,其三角函数值满足不等式 $\\sin x>a$, 从而其解集为 $\\{x \\mid 2 k \\pi+\\arcsin a<x<2 k \\pi+\\pi-\\arcsin a, k \\in \\mathbf{Z}\\}$.\n关于三角不等式的证明, 如同证明代数不等式一样, 通常有比较法 (作差比较法和求商比较法)、综合法以及分析法等方法, 但三角函数又有它的一些特殊性质, 如正弦曲线和余弦曲线的有界性、三角函数的单调性和周期性.\n因此, 证明三角函数不等式还有一些不同于代数不等式的方法.\n为了便于读者理解, 我们把常用的基本不等式列举如下: (1) $(a-b)^2 \\geqslant$ 0 ; (2) 若 $a, b \\in \\mathbf{R}$, 则 $a^2+b^2 \\geqslant 2 a b$ (当且仅当 $a=b$ 时取等号); (3) 若 $a>0$, $b>0, c>0$, 则有 $a+b \\geqslant 2 \\sqrt{a b}$ (当且仅当 $a=b$ 时取等号); $a+b+c \\geqslant$\n$3 \\sqrt[3]{a b c}$ (当且仅当 $a=b=c$ 时取等号); $a^3+b^3+c^3 \\geqslant 3 a b c$ (当且仅当 $a= b=c$ 时取等号).\n另外, 在三角函数中, 有一个重要不等式: 若 $x \\in\\left(0, \\frac{\\pi}{2}\\right)$, 则 $\\sin x<x<\\tan x$, 这可从图(<FilePath:./images/volume3/figures/fig-c5i3.png>) 来证明.\n在单位圆上作 $\\angle A O M=x, A T \\perp O x$ 轴, $N M \\perp O x$ 轴, 则 $\\sin x=N M, \\tan x=A T$, 由 $S_{\\triangle A O M}<S_{\\text {扇形 } A O M}<S_{\\triangle A O T}$ 得\n$$\n\\frac{1}{2} M N<\\frac{1}{2} x<\\frac{1}{2} A T,\n$$\n即 $\\sin x<x<\\tan x$.",
+    "figures": [
+        "./images/volume3/figures/fig-c5i1.png",
+        "./images/volume3/figures/fig-c5i2.png",
+        "./images/volume3/figures/fig-c5i3.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例5. 是否存在 4 个平面向量, 两两不共线, 其中任意两个向量之和与其余两个向量之和垂直?",
+    "solution": "分析:与解在正 $\\triangle A B C$ 中, $O$ 为内心, $P$ 为内切圆周上一点, 满足 $\\overrightarrow{P A}$ 、 $\\overrightarrow{P B} 、 \\overrightarrow{P C} 、 \\overrightarrow{P O}$ 两两不共线, 则\n$$\n\\begin{aligned}\n(\\overrightarrow{P A}+\\overrightarrow{P B}) \\cdot(\\overrightarrow{P C}+\\overrightarrow{P O}) & =(\\overrightarrow{P O}+\\overrightarrow{O A}+\\overrightarrow{P O}+\\overrightarrow{O B}) \\cdot(\\overrightarrow{P O}+\\overrightarrow{O C}+\\overrightarrow{P O}) \\\\\n& =(2 \\overrightarrow{P O}+\\overrightarrow{O A}+\\overrightarrow{O B}) \\cdot(2 \\overrightarrow{P O}+\\overrightarrow{O C}) \\\\\n& =(2 \\overrightarrow{P O}-\\overrightarrow{O C}) \\cdot(2 \\overrightarrow{P O}+\\overrightarrow{O C}) \\\\\n& =4 \\overrightarrow{P O}^2-\\overrightarrow{O C}^2=4|P O|^2-|O C|^2=0,\n\\end{aligned}\n$$\n即 $(\\overrightarrow{P A}+\\overrightarrow{P B}) \\perp(\\overrightarrow{P C}+\\overrightarrow{P O})$.\n同理可证其他情况, 从而 $\\overrightarrow{P A} 、 \\overrightarrow{P B} 、 \\overrightarrow{P C} 、 \\overrightarrow{P O}$ 符合题意.",
+    "remark": "注:本题属于构造性问题,利用向量和的定义将一个向量拆成多个向量和的技巧,望读者切实掌握.",
+    "figures": []
+}

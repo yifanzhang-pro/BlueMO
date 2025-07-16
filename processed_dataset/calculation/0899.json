@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-4.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 数列 $\\left\\{a_n\\right\\}$ 满足: 对任意非负整数 $m 、 n(m \\geqslant n)$, 都有 $a_{m+n}+a_{m \\rightarrow n}= \\frac{1}{2}\\left(a_{2 m}+a_{2 n}\\right)$,且 $a_1=1$. 求该数列的通项公式.",
+    "solution": "解:利用题给的条件可知, 对任意 $m \\in \\mathbf{N}$, 都有\n$$\n\\frac{1}{2}\\left(a_{2 m}+a_{2 m}\\right)=a_{2 m}+a_0=2\\left(a_m+a_m\\right)\n$$\n可知 $a_0=0$,且 $a_{2 m}=4 a_m$.\n结合 $a_1=1$, 可发现当 $n \\in\\{0,1,2\\}$ 时,都有 $a_n=n^2$, 这是否就是数列的通项公式呢?\n假设 $a_{m-1}=(m-1)^2, a_m=m^2$, 那么由条件知\n$$\na_{m+1}+a_{m-1}=\\frac{1}{2}\\left(a_{2 m}+a_2\\right)=\\frac{1}{2}\\left(4 a_m+4 a_1\\right),\n$$\n故 $a_{m+1}=2 a_m-a_{m-1}+2 a_1=2 m^2-(m-1)^2+2=m^2+2 m+1=(m+1)^2$. 这样,由数学归纳法原理, 可知对 $n \\in \\mathbf{N}$, 都有 $a_n=n^2$.\n综上所述,所求数列的通项公式为 $a_n=n^2$.\n说明利用已知条件求数列通项是与数列相关的问题中经常出现的, 本质上, 此题还是一个特殊的函数方程问题, 这与数列是定义在正整数集的函数有关.",
+    "remark": "",
+    "figures": []
+}

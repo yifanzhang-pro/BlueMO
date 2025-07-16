@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 证明,对任意整数 $a \\geqslant 3$, 有无穷多个正整数 $n$, 使得 $a^n-1$ 被 $n$ 整除.",
+    "solution": "因 $a \\geqslant 3$, 故 $a-1$ 有素因子 $p$. 由费马小定理知, $a^p \\equiv a \\equiv 1(\\bmod p)$. 用归纳法易证, $n=p^k(k=1,2, \\cdots)$ 均符合要求.",
+    "remark": "",
+    "figures": []
+}

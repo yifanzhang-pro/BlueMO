@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-3.tex",
+    "problem_type": "calculation",
+    "problem": "例5. 设 $P$ 为 $\\triangle A B C$ 内一点, $D, E, F$ 分别为 $P$ 到 $B C, C A, A B$ 各边的垂足.\n试确定点 $P$, 使 $P D \\times P E \\times P F$ 最大.",
+    "solution": "解:记 $\\triangle A B C$ 的三个内角为 $A, B, C$, 其对边为 $a, b, c$. 记 $\\triangle A B C$ 的面积为 $S$ (以下各题记号均同, 不再注明).\n设 $P D=x, P E=y, P F=z$. 连结 $A P, B P, C P$. 易知 $S_1(\\triangle P B C$ 面积 $)=\\frac{1}{2} a x, S_2(\\triangle P C A$ 面积 $)=\\frac{1}{2} b y, S_3(\\triangle P A B$ 面积 $)=\\frac{1}{2} c z$.\n从而有 $a x+b y+c z=2\\left(S_1+S_2+S_3\\right)=2 S=$ 定值.\n由平均值不等式, 得\n$$\n\\begin{gathered}\na x \\cdot b y \\cdot c z \\leqslant\\left(\\frac{a x+b y+c z}{3}\\right)^3=\\left(\\frac{2 S}{3}\\right)^3, \\\\\nx y z \\leqslant \\frac{8 S^3}{27 a b c} .\n\\end{gathered}\n$$\n即上式等号当且仅当 $a x=b y=c z$ 时成立.\n这就是说, $S_1=S_2=S_3=\\frac{1}{3} S$ 使得 $x y z$ 取最大.\n这时 $P$ 为 $\\triangle A B C$ 的重心.",
+    "remark": "",
+    "figures": []
+}

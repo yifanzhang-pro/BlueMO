@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 在平面上给定 $\\triangle A B C$, 对于平面上的一点 $P$, 建立如下的变换 $f: A P$ 的中点为 $Q, B Q$ 的中点为 $R, C R$ 的中点为 $P^{\\prime}, f(P)=P^{\\prime}$. 求证: $f$ 只有一个不动点 (指 $P$ 与 $P^{\\prime}$ 重合的点).",
+    "solution": "$\\overrightarrow{A Q}=\\frac{1}{2} \\overrightarrow{A P}, \\overrightarrow{A R}=\\frac{1}{2}(\\overrightarrow{A B}+\\overrightarrow{A Q})=\\frac{1}{2} \\overrightarrow{A B}+\\frac{1}{4} \\overrightarrow{A P}$,\n$$\n\\overrightarrow{A P^{\\prime}}=\\frac{1}{2}(\\overrightarrow{A C}+\\overrightarrow{A R})=\\frac{1}{2} \\overrightarrow{A C}+\\frac{1}{4} \\overrightarrow{A B}+-\\frac{1}{8} \\overrightarrow{A P}\n$$\n要使 $P$ 与 $P^{\\prime}$ 重合, 应有 $\\overrightarrow{A P}=\\frac{1}{2} \\overrightarrow{A C}+\\frac{1}{4} \\overrightarrow{A B}+\\frac{1}{8} \\overrightarrow{A P}$, 得 $\\overrightarrow{A P}=\\frac{1}{7}(4 \\overrightarrow{A C}+ 2 \\overrightarrow{A B})$, 对于给定的 $\\triangle A B C$, 满足条件的不动点 $P$ 只有一个, 证毕.",
+    "remark": "",
+    "figures": []
+}

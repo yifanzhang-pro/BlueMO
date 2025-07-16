@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题12 一个直角三角形三内角的正弦值成等比数列, 则其最小内角 $=$",
+    "solution": "$\\arcsin \\frac{\\sqrt{5}-1}{2}$. 由条件得 $\\sin ^2 A=\\sin B$, 且 $A+B=\\frac{\\pi}{2}$. 从而 $1- \\cos ^2 A=\\cos A$, 解之得 $\\cos A=\\frac{\\sqrt{5}-1}{2}$, 即 $\\sin B=\\frac{\\sqrt{5}-1}{2}$. 而 $B<A<90^{\\circ}$, 故最小内角为 $\\arcsin \\frac{\\sqrt{5}-1}{2}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $\\odot O$ 圆心在原点, $A 、 B$ 在圆上, 所对应复数分别为 $t_1 、 t_2$, 过 $A$ 与 $B$ 作切线交于 $P$, 求证: $P$ 所对应的复数为 $\\frac{2 t_1 t_2}{t_1+t_2}$.",
+    "solution": "分析:与解设 $P$ 对应的复数为 $t$. 由于 $P A \\perp O A$, 故由例 1 知 $t$ 满足 $\\frac{t}{2 t_1}+ \\frac{\\bar{t}}{2 \\overline{t_1}}=1$, 同理 $\\frac{t}{2 t_2}+\\frac{\\bar{t}}{2 \\overline{t_2}}=1$, 于是 $\\frac{t}{2 t_1 \\overline{t_2}}-\\frac{t}{2 t_2 \\overline{t_1}}=\\frac{1}{\\overline{t_2}}-\\frac{1}{\\overline{t_1}}$.\n考虑到 $t_1 \\overline{t_1}=t_2 \\overline{t_2}=r^2, r$ 为 $\\odot O$ 半径, 故 $\\left(\\frac{t_2}{t_1}-\\frac{t_1}{t_2}\\right) t=2\\left(t_2-t_1\\right)$, 解得 $t=\\frac{2 t_1 t_2}{t_1+t_2}$",
+    "remark": "注:过圆上两点 $t_1 、 t_2$ (此圆圆心为原点, 半径为 $r$ ) 的直线方程为 $z+\\frac{t_1 t_2}{r^2} \\bar{z}=t_1+t_2$. 让 $t_1 、 t_2 \\rightarrow t$, 则过 $t$ 的切线方程为 $z+\\frac{t^2}{r^2} \\bar{z}=2 t$. 这也是一种便于记忆的形式.",
+    "figures": []
+}

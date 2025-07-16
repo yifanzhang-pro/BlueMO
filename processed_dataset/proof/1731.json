@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例1. (四边形的余弦定理) 设凸四边形 $A B C D$ 对角线交于点 $P, \\angle A P B= \\theta$, 求证:\n$$\n\\cos \\theta=\\frac{A D^2+B C^2-A B^2-C D^2}{2 A C \\cdot B D} .\n$$",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c7i1.png>), 设 $P A 、 P B 、 P C 、 P D$ 的长分别为 $a 、 b 、 c 、 d$, 则有\n$$\n\\begin{aligned}\n& A D^2=a^2+d^2+2 a d \\cos \\theta, \\\\\n& B C^2=b^2+c^2+2 b c \\cos \\theta \\\\\n& A B^2=a^2+b^2-2 a b \\cos \\theta \\\\\n& C D^2=c^2+d^2+2 c d \\cos \\theta\n\\end{aligned}\n$$\n前两式之和减去后两式之和, 得\n$$\n\\begin{aligned}\nA D^2+B C^2-A B^2-C D^2 & =2(a d+b c+a b+c d) \\cos \\theta \\\\\n& =2 A C \\cdot B D \\cos \\theta .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c7i1.png"
+    ]
+}

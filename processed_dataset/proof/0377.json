@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 证明: 对任何非负整数, $\\left[(1+\\sqrt{3})^{2 n+1}\\right]$ 能被 $2^{n+1}$ 整除.\n这里 $[x]$ 表示不超过 $x$ 的最大整数",
+    "solution": "设 $a_n=(1+\\sqrt{3})^{2 n+1}+(1-\\sqrt{3})^{2 n+1}=(1+\\sqrt{3})(4+2 \\sqrt{3})^n+(1-\\sqrt{3}) (4-2 \\sqrt{3})^n, b_n=\\frac{a_n}{2^{n+1}}=\\frac{1+\\sqrt{3}}{2}(2+\\sqrt{3})^n+\\frac{1-\\sqrt{3}}{2}(2-\\sqrt{3})^n \\quad n=0,1, \\cdots$. 于是数列 $\\left\\{b_n\\right\\}$ 对应的特征根为 $2 \\pm \\sqrt{3}$, 特征方程为 $[r-(2+\\sqrt{3})][r-(2- \\sqrt{3})]=0$, 即 $r^2-4 r+1=0$, 所以 $b_n$ 满足递推关系 $b_n=4 b_{n-1}-b_{n-2}(n \\geqslant 2)$, 因 $b_0=\\frac{1+\\sqrt{3}}{2}+\\frac{1-\\sqrt{3}}{2}=1$ 和 $b_1=\\frac{1+\\sqrt{3}}{2}(2+\\sqrt{3})+\\frac{1-\\sqrt{3}}{2}(2-\\sqrt{3})=5$ 为整数.\n设 $b_{n-2}, b_{n-1}$ 为整数.\n则 $b_n$ 为整数, 故对一切非负整数 $n, b_n=\\frac{a_n}{2^{n+1}}$ 为整数, 即 $a_n$ 被 $2^{n+1}$ 整除, 而 $0<-(1-\\sqrt{3})^{2 n+1}<1$, 故 $a_n=(1+\\sqrt{3})^{2 n+1}+(1- \\sqrt{3})^{2 n+1}=\\left[(1+\\sqrt{3})^{2 n+1}\\right]$, 所以 $\\left[(1+\\sqrt{3})^{2 n+1}\\right]$ 被 $2^{n+1}$ 整除.",
+    "remark": "",
+    "figures": []
+}

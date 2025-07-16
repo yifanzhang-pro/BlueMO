@@ -1,0 +1,1015 @@
+
+%%TEXT_BEGIN%%
+函数的选代
+6.1 函数迭代的定义我们利用了一个函数自身复合多次.
+这便是函数的迭代.
+定义 6.1 设 $f: D \mapsto D$ 是一个函数, 对任意 $x \in D$, 记
+$$
+\begin{aligned}
+& f^{(0)}(x)=x, \\
+& f^{(1)}(x)=f(x), \\
+& f^{(2)}(x)=f(f(x)), \\
+& f^{(3)}(x)=f(f(f(x))),
+\end{aligned}
+$$
+$$
+f^{(n+1)}(x)=f\left(f^{(n)}(x)\right),
+$$
+则称 $f^{(n)}(x)$ 是函数 $f(x)$ 在 $D$ 上的 $n$ 次迭代, 并称 $n$ 是 $f^{(n)}(x)$ 的迭代指数.
+如果 $f^{(n)}(x)$ 有反函数, 则记为 $f^{(-n)}(x)$, 于是, 迭代指数可取所有整数.
+求一个函数的 $n$ 次迭代, 是数学竞赛中的一种基本题型.
+对于一些简单的函数, 它的 $n$ 次迭代是容易得到的.
+若 $f(x)=x+c$, 则 $f^{(n)}(x)=x+n c, f^{-1}(x)=x \div c, f^{(\rightarrow n)}(x)=x-n c$.
+若 $f(x)=x^3$, 则 $f^{(n)}(x)=x^{3^n}, f^{(-1)}(x)=x^{\frac{1}{3}}, f^{(-n)}(x)=x^{\frac{1}{3^n}}$.
+若 $f(x)=a x+b$, 则 $f^{(n)}(x)=a^n\left(x-\frac{b}{1-a}\right)+\frac{b}{1-a}, f^{(-1)}(x)= \frac{1}{a}\left(x-\frac{b}{1-a}\right)+\frac{b}{1-a}, f^{(-n)}(x)=\frac{1}{a^n}\left(x-\frac{b}{1-a}\right)+\frac{b}{1-a}$.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+6.2 $f^{(n)}(x)$ 的求法
+(1)数学归纳法这里用到的是先猜后证的想法, 即先对函数 $f(x)$ 迭代几次, 观察出其规律, 然后猜测出 $f^{(n)}(x)$ 的表达式, 最后用数学归纳法证之.
+这种方法只适用于一些较为简单的函数.
+面看一些例子.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+(2) 递归法设 $f(x)$ 是定义在 $D$ 上且取值于 $D$ 的函数, 由此定义数列 $\left\{a_n\right\}: a_0$ 已知, 且 $a_0 \in D, a_n=f\left(a_{n-1}\right), n \geqslant 1$. 一方面, 若已求得 $f^{(n)}(x)=g(x)$, 则 $a_n= f\left(a_{n-1}\right)=f^{(2)}\left(a_{n-2}\right)=\cdots=f^{(n)}\left(a_0\right)$, 即 $\left\{a_n\right\}$ 的通项公式; 另一方面, 如果已求得 $\left\{a_n\right\}$ 的通项公式 $a_n=g\left(a_0\right)$, 则取 $a_0=x, a_n=g(x)$, 而 $a_n=f\left(a_{n-1}\right)=\cdots= f^{(n)}\left(a_0\right)=f^{(n)}(x)$, 从而 $f^{(n)}(x)=g(x)$, 即 $f^{(n)}(x)$ 的表达式.
+由上述知, 函数的 $n$ 次迭代可以通过构造数列的方法来解, 其步骤为
+(1) 设 $a_0=x, a_n=f^{(n)}(x)$ ;
+(2) 由 $a_n=f^{(n)}(x)=f\left(a_{n-1}\right)$, 求出 $a_n=g\left(a_0\right)$;
+(3) $f^{(n)}(x)=g\left(a_0\right)=g(x)$.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+(3) 相似法相似法是求函数 $f(x)$ 的 $n$ 次迭代的一个重要方法.
+若存在一个函数 $\varphi(x)$ 以及它的反函数 $\varphi^{-1}(x)$, 使得
+$$
+f(x)=\varphi^{-1}(g(\varphi(x))),
+$$
+我们就称 $f(x)$ 通过 $\varphi(x)$ 和 $g(x)$ 相似, 简称 $f(x)$ 和 $g(x)$ 相似, 记为 $f \stackrel{\varphi}{\sim} g$, 其中 $\varphi(x)$ 称为桥函数.
+相似关系是一个等价关系;也就是说它满足:
+(1) $f \sim f($ 自身性);
+(2) 若 $f \sim g$, 则 $g \sim f$ (对称性);
+(3) 若 $f \sim g, g \sim h$, 则 $f \sim h$ (传递性).
+如果 $f(x)$ 与 $g(x)$ 相似, 即
+$$
+f(x)=\varphi^{-1}(g(\varphi(x))),
+$$
+那么
+$$
+\begin{aligned}
+f^{(2)}(x) & =f(f(x))=\varphi^{-1}(g(\varphi(f(x)))) \\
+& =\varphi^{-1}\left(g\left(\varphi\left(\varphi^{-1}(g(\varphi(x)))\right)\right)\right) \\
+& =\varphi^{-1}\left(g^{(2)}(\varphi(x))\right) .
+\end{aligned}
+$$
+用数学归纳法可以证明
+$$
+f^{(n)}(x)=\varphi^{-1}\left(g^{(n)}(\varphi(x))\right) .
+$$
+事实上,
+$$
+\begin{aligned}
+f^{(n+1)}(x) & =f\left(f^{(n)}(x)\right) \\
+& =f\left(\varphi^{-1}\left(g^{(n)}(\varphi(x))\right)\right) \\
+& =\varphi^{-1} g\left(\varphi\left(\varphi^{-1}\left(g^{(n)}(\varphi(x))\right)\right)\right) \\
+& =\varphi^{-1}\left(g^{(n+1)}(\varphi(x))\right) .
+\end{aligned}
+$$
+这样一来, 我们便把 $f$ 的迭代问题转化为 $g$ 的迭代问题.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+以上两例是比较难的利用桥函数来解决的问题.
+在介绍完下一种方法后, 我们再来介绍一种寻找桥函数的方法.
+(4) 不动点法不动点法的基本思想是根据函数的不动点得出桥函数的一个性质, 进而确定桥函数的形状, 然后利用相似法求出函数的 $n$ 次迭代.
+我们先给出不动点的定义和性质.
+定义 $6.2 f(x)=x$ 的根称为 $f(x)$ 的不动点.
+函数的不动点具有如下性质:
+(1) 若 $x_0$ 是 $f(x)$ 的不动点, 则 $f^{(n)}\left(x_0\right)^x=x_0$, 即 $x_0$ 也是 $f^{(n)}(x)$ 的不动点.
+(2) 设 $f(x)=\varphi^{-1}(g(\varphi(x)))$, 因此有 $\varphi(f(x))=g(\varphi(x))$. 若 $f\left(x_0\right)= x_0$, 则有 $\varphi\left(x_0\right)=g\left(\varphi\left(x_0\right)\right)$, 即 $\varphi\left(x_0\right)$ 是 $g(x)$ 的不动点.
+对于一些简单的函数, 利用不动点, 把函数变形后再迭代, 最后用数学归纳法证之,会使算法简单些.
+先看两个例子.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+对于不动点这一重要方法还有两点需要说明:
+(1) 不动点在求解某些特殊的函数方程中往往会有意想不到的简便方法, 而且有时会是唯一的方法, 这会在后面的章节中举例.
+(2) 由于函数的迭代与数列的关系 (具体可见前面递归法的叙述), 利用不动点可以求一些数列的通项公式和研究数列通项具有的性质, 我们给读者留作练习题.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+(2) 数列通项的估值用迭代估计数列通项，基本思想是根据以下定理:
+定理设 $f, g, h$ 都是定义在 $I$ 上且可迭代的函数, 如果 $g$ 和 $h$ 都是单调增函数, 且对 $x \in I$, 有
+$$
+g(x) \leqslant f(x) \leqslant h(x),
+$$
+那么必有
+$$
+g^{(n)}(x) \leqslant f^{(n)}(x) \leqslant h^{(n)}(x) .
+$$
+定理由数学归纳法立得, 读者可自行完成.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+五只猴子, 分一堆桃子, 怎么也平分不了, 于是大家同意先去睡觉, 明天再说.
+夜里一个猴子偷偷起来, 把一个桃子吃掉后正好可以分成 5 份, 收藏起自己的一份后又去睡觉了.
+第二只猴子起来后, 像先前的那个猴子一样, 先吃掉一个,剩下的又刚好分成 5 份, 也把自己的一份收藏起来睡觉去了.
+第三、四、五只猴子也都是这样: 先吃掉一个,剩下的刚好分成 5 份, 问这堆桃子至少是多少个?
+%%<SOLUTION>%%
+这个题目有好几种解法,下面介绍一种:
+设桃子的总数有 $x$ 个, 第 $i$ 个猴子吃掉一个并拿走一份后, 剩下的桃子数目为 $x_i$ 个, 则
+$$
+x_i=\frac{4}{5}\left(x_{i-1}-1\right), i=1,2,3,4,5,
+$$
+且 $x_0=x$.
+设函数 $f(x)=\frac{4}{5}(x-1)=\frac{4}{5}(x+4)-4$, 于是
+$$
+\begin{aligned}
+& x_1=f(x)=\frac{4}{5}(x+4)-4, \\
+& x_2=f(f(x))=\left(\frac{4}{5}\right)^2(x+4)-4, \\
+& x_3=f(f(f(x)))=\left(\frac{4}{5}\right)^3(x+4)-4, \\
+& x_4=f(f(f(f(x))))=\left(\frac{4}{5}\right)^4(x+4)-4, \\
+& x_5=f(f(f(f(f(x)))))=\left(\frac{4}{5}\right)^5(x+4)-4 .
+\end{aligned}
+$$
+由于剩下的桃子数都是整数, 所以 $5^5 \mid(x+4)$, 因此, 最小的 $x$ 为 $x= 5^5-4=3121$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+某男孩付一角钱进入第一家商店, 他在店里花了剩余的钱的一半, 走出商店时又付了一角钱.
+之后, 他又付一角钱进人第二家商店, 在这里他花了剩余的钱的一半, 走出商店时又付了一角钱.
+接着, 他又用同样的方式进出第三和第四家商店, 当他走出第四家商店后, 这时, 他身上只剩下一角钱, 问: 他进人第一家商店之前身上有多少钱?
+%%<SOLUTION>%%
+设这个男孩进人第 $i$ 个商店之前身上的钱为 $x_i$ 角, $i=1,2,3,4$, 且设 $x_5=1$, 于是
+$$
+\begin{aligned}
+& x_{i+1}=\frac{1}{2}\left(x_i-1\right)-1, i=1,2,3,4 . \\
+& \text { 令 } f(x)=\frac{1}{2}(x-1)-1=\frac{1}{2}(x+3)-3, \text { 则 } \\
+& x_2=f\left(x_1\right)=\frac{1}{2}\left(x_1+3\right)-3, \\
+& x_3=f\left(f\left(x_1\right)\right)=\frac{1}{2^2}\left(x_1+3\right)-3, \\
+& x_4=f\left(f\left(f\left(x_1\right)\right)\right)=\frac{1}{2^3}(x+3)-3, \\
+& x_5=f\left(f\left(f\left(f\left(x_1\right)\right)\right)\right)=\frac{1}{2^4}(x+3)-3 .
+\end{aligned}
+$$
+因为
+$$
+\frac{1}{2^4}\left(x_1+3\right)-3=1,
+$$
+故
+$$
+x_1=61,
+$$
+即这个男孩进人第一家商店之前身上有 6.10 元.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1 已知 $f(x)$ 是一次函数, 且
+$$
+f^{(10)}(x)=1024 x+1023,
+$$
+求 $f(x)$ 的解析式.
+%%<SOLUTION>%%
+解:设 $f(x)=a x+b$, 则
+$$
+f^{(10)}(x)=a^{10}\left(x-\frac{b}{1-a}\right)+\frac{b}{1-a} .
+$$
+故 $\quad a^{10}\left(x-\frac{b}{1-a}\right)+\frac{b}{1-a}=1024 x+1023$.
+比较上式两边系数, 得
+$$
+\left\{\begin{array}{l}
+a^{10}=1024, \\
+-\frac{a^{10} b}{1-a}+\frac{b}{1-a}=1023
+\end{array}\right.
+$$
+解方程组得 $a_1=2, b_1=1 ; a_2=-2, b_2=-3$.
+因此, 所求的一次函数为
+$$
+f(x)=2 x+1 \text { 或 } f(x)=-2 x-3 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2 $f(n)$ 是定义在 $\mathbf{N}_{+}$上的函数, 并且满足
+(1) $f(f(n))=4 n+9, n \in \mathbf{N}_{+}$;
+(2) $f\left(2^k\right)=2^{k+1}+3, k \in \mathbf{N}_{+} \cup\{0\}$.
+求 $f(1789)$ 的值.
+%%<SOLUTION>%%
+解:$f(4 n+9)=f^{(3)}(n)=f^{(2)}(f(n))=4 f(n)+9$, 而
+$$
+1789=4^4 \times 2^2+4^3 \times 9+4^2 \times 9+4 \times 9+9,
+$$
+所以
+$$
+\begin{aligned}
+f(1789) & =f\left(4^4 \times 2^2+4^3 \times 9+4^2 \times 9+4 \times 9+9\right) \\
+& =4 f\left(4^3 \times 2^2+4^2 \times 9+4 \times 9+9\right)+9 \\
+& =4^2 f\left(4^2 \times 2^2+4 \times 9+9\right)+4 \times 9+9 \\
+& =4^3 f\left(4 \times 2^2+9\right)+4^2 \times 9+4 \times 9+9 \\
+& =4^4 f\left(2^2\right)+4^3 \times 9+4^2 \times 9+4 \times 9+9 \\
+& =4^4\left(2^3+3\right)+4^3 \times 9+4^2 \times 9+4 \times 9+9 \\
+& =3581 .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3 设 $f(x)=3 x+2$, 证明: 存在 $m \in \mathbf{N}_{+}$, 使 $f^{(100)}(m)$ 能被 2005 整除.
+%%<SOLUTION>%%
+证由 $f(x)=3 x+2$, 知
+$$
+f^{(100)}(x)=3^{100} x+\left(3^{99}+3^{98}+\cdots+1\right) \times 2,
+$$
+故
+$$
+f^{(100)}(m)=3^{100} \cdot m+2\left(3^{99}+3^{98}+\cdots+1\right) .
+$$
+由于 $(3,2005)=1$, 故 $\left(3^{100}, 2005\right)=1$, 根据 Bezout 定理, 存在 $u 、 v \in$
+081
+$\mathbf{Z}$, 使
+$$
+2005 u-3^{100} v=1 .
+$$
+记 $n=2\left(3^{99}+3^{98}+\cdots+3+1\right)$, 那么由 $2005 \mid\left(3^{100} v+1\right)$,
+知
+$$
+2005 \mid n\left(3^{100} v+1\right) \text {. }
+$$
+此时, 取 $m=n v$, 那么
+$$
+\begin{gathered}
+2005 \mid\left(3^{100} m+n\right), \\
+2005 \mid f^{(100)}(m)
+\end{gathered}
+$$
+从而命题得证.
+说明 Bezout 定理是: 若 $x 、 y$ 是两个互质的正整数, 则存在整数 $u 、 v$, 使得 $u x-v y=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4 设 $n$ 是不小于 3 的正整数, 以 $f(n)$ 表示不是 $n$ 的因数的最小正整数 (例如 $f(12)=5)$. 如果 $f(n) \geqslant 3$, 又可作 $f(f(n))$. 类似地, 如果 $f(f(n)) \geqslant 3$, 又可作 $f(f(f(n)))$ 等等.
+如果 $f^{(k)}(n)=2$, 就将 $k$ 称为 $n$ 的 “长度”, 记为 $l_n$. 试对任意 $n \in \mathbf{N}_{+}, n \geqslant 3$, 求 $l_n$, 并证明你的结论.
+%%<SOLUTION>%%
+解:首先证明任意 $n \in \mathbf{N}_{+}, n \geqslant 3, f(n)$ 不会是两个大于等于 2 的互素的数的乘积.
+事实上, 若 $f(n)=p q$, 其中 $p \geqslant 2, q \geqslant 2 ，(p, q)=1$. 由 $f$ 的定义, $p$ 、 $q$ 均为 $n$ 的因数, 即 $p|n, q| n$. 由 $(p, q)=1$ 知, $p q \mid n$, 这便与 $f(n)= p q$ 矛盾.
+由于 $f(n)$ 不可能是两个互素的 ( $\geqslant 2)$ 数的积, 因而 $f(n)$ 必为 $p^k$ 形式的数,其中 $p$ 是素数, $k \in \mathbf{N}_{+}$.
+因此, 对 $n \in \mathbf{N}_{+}, n \geqslant 3$, 或者 $f(n)=2$ (当且仅当 $2 \nmid n$) 或者 $f(n)=2^k(k \geqslant 2)$, 此时 $f(f(n))=3$, 即 $l_n=3$. 此外, $f(n)=p^k$ ( $p$ 是奇素数, $k \geqslant 1$), 这时 $l_n=2$.
+综上所述,
+$$
+l_n= \begin{cases}1, & \text { 当 } n \text { 是奇数时; } \\ 3, & \text { 有大于 } 1 \text { 的正整数 } k, \text { 使得对任何 }<2^k \text { 的素数 } p \text { 及 } \\ & \text { 满足 } p^j<2^k \text { 的正整数 } j, p^j \mid n, \text { 且 } 2^k \nmid n \text { 时 ; } \\ 2, & \text { 其他情况.
+}\end{cases}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5 对任意 $k \in \mathbf{N}_{+}$, 令 $f(k)$ 表示 $k$ 的各位数字的和的平方, 且对于 $n \geqslant$ 2 , 令 $f^{(n)}(k)=f\left(f^{(n-1)}(k)\right)$, 求 $f^{(2005)}\left(2^{2002}\right)$ 的值.
+%%<SOLUTION>%%
+解:设正整数 $a$ 的位数为 $m$, 则当 $a \leqslant b$ 时, $m \leqslant 1+\lg b$, 因此
+$$
+f(a) \leqslant 9^2 m^2 \leqslant 81(1+\lg b)^2<\left(4 \log _2 16 b\right)^2 .
+$$
+由此得
+$$
+\begin{gathered}
+f\left(2^{2002}\right)<\left(4 \log _2\left(16 \times 2^{2002}\right)\right)^2=2^4 \times 2006^2<2^4 \times 2048^2=2^{26}, \\
+f^{(2)}\left(2^{2002}\right)<\left(4 \log _2\left(16 \times 2^{26}\right)\right)^2=(4 \times 30)^2=14400 . \\
+\text { 而 } \quad(9+9+9+9)^2<14400<(1+9+9+9+9)^2,
+\end{gathered}
+$$
+故 $f^{(2)}\left(2^{2002}\right)$ 的各位数字之和 $\leqslant 4 \times 9$, 因此
+$$
+\begin{gathered}
+f^{(3)}\left(2^{2002}\right)<36^2=1296, f^{(4)}\left(2^{2002}\right)<(9+9+9)^2=729, \\
+f^{(5)}\left(2^{2002}\right)<(6+9+9)^2=24^2 .
+\end{gathered}
+$$
+另一方面, 因为 $f(k) \equiv k^2(\bmod 9)$, 故
+$$
+\begin{gathered}
+f\left(2^{2002}\right) \equiv\left(2^{2002}\right)^2 \equiv\left(2^4\right)^2 \times\left(\left(2^3\right)^{666}\right)^2 \equiv\left(2^4\right)^2 \equiv 4(\bmod 9), \\
+f^{(2)}\left(2^{2002}\right) \equiv 4^2 \equiv-2(\bmod 9), \\
+f^{(3)}\left(2^{2002}\right) \equiv(-2)^2 \equiv 4(\bmod 9) .
+\end{gathered}
+$$
+由数学归纳法容易证明
+$$
+f^{(n)}\left(2^{2002}\right) \equiv \begin{cases}4(\bmod 9), & \text { 当 } 2 \nmid n \text { 时； } \\ -2(\bmod 9), & \text { 当 } 2 \mid n \text { 时.
+}\end{cases}
+$$
+因此, 由 $f^{(5)}\left(2^{2002}\right)<24^2, f^{(5)}\left(2^{2002}\right) \equiv 4(\bmod 9)$, 且 $f^{(5)}\left(2^{2002}\right)$ 应为完全平方数知, $f^{(5)}\left(2^{2002}\right) \in\{4,49,121,256,400\}$, 所以 $f^{(6)}\left(2^{2002}\right) \in\{16$, $169\}, f^{(7)}\left(2^{2002}\right) \in\{49,256\}, f^{(8)}\left(2^{2002}\right)=169, f^{(9)}\left(2^{2002}\right)=256$, $f^{(10)}\left(2^{2002}\right)=169, \cdots$, 即当 $n \geqslant 8$ 时, 有
+$$
+f^{(n)}\left(2^{2002}\right)=\left\{\begin{array}{l}
+169, \text { 当 } n \text { 为偶数时; } \\
+256, \text { 当 } n \text { 为奇数时.
+}
+\end{array}\right.
+$$
+因此, $f^{(2005)}\left(2^{2002}\right)=256$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6 设 $f(x)=a x+b$, 求 $f^{(n)}(x)$.
+%%<SOLUTION>%%
+解:$f(x)=a x+b$,
+$$
+\begin{aligned}
+f^{(2)}(x) & =f(f(x))=a(a x+b)+b=a^2 x+a b+b, \\
+f^{(3)}(x) & =f\left(f^{(2)}(x)\right)=a\left(a^2 x+a b+b\right)+b \\
+& =a^3 x+a^2 b+a b+b,
+\end{aligned}
+$$
+由此猜测
+$$
+f^{(n)}(x)=a^n x+a^{n-1} b+a^{n-2} b+\cdots+a b+b .
+$$
+下面用数学归纳法证明.
+(1) 当 $n=1$ 时,命题成立.
+(2) 假设 $f^{(k)}(x)=a^k x+a^{k-1} b+\cdots+a b+b$ 成立, 那么
+$$
+\begin{aligned}
+f^{(k+1)}(x) & =f\left(f^{(k)}(x)\right)=a\left(a^k x+a^{k-1} b+\cdots+a b+b\right)+b \\
+& =a^{k+1} x+a^k b+\cdots+a b+b,
+\end{aligned}
+$$
+即 $n=k+1$ 时,命题亦成立.
+由(1)、(2)就证得了
+$$
+f^{(n)}(x)=a^n x+a^{n-1} b+\cdots+a b+b .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7 已知 $f(x)=\frac{x}{a+b x}$, 求 $f^{(n)}(x)$.
+%%<SOLUTION>%%
+解:$f(x)=\frac{x}{a+b x}$,
+$$
+\begin{aligned}
+f^{(2)}(x) & =f(f(x))=-\frac{\frac{x}{a+b x}}{a+b \cdot \frac{x}{a+b x}}=\frac{x}{a^2+b x(1+a)}, \\
+f^{(3)}(x) & =f\left(f^{(2)}(x)\right)=\frac{\frac{x}{a^2+b x(1+a)}}{a+b \cdot \frac{x}{a^2+b x(1+a)}} \\
+& =\frac{x}{a^3+b x\left(1+a+a^2\right)},
+\end{aligned}
+$$
+因此猜测
+$$
+f^{(i)}(x)=\frac{x}{a^n+b x\left(1+a+\cdots+a^{n-1}\right)}=\frac{x}{a^n+b x \cdot \frac{1-a^n}{1-a}} .
+$$
+用数学归纳法是容易证明的.
+事实上,
+$$
+\begin{aligned}
+f^{(n+1)}(x) & =f\left(f^{(n)}(x)\right)=\frac{\frac{x}{a^n+b x \cdot \frac{1-a^n}{1-a}}}{a+b \cdot \frac{x}{a^n+b x \cdot \frac{1-a^n}{1-a}}} \\
+& =\frac{x}{a^{n+1}+b x \frac{1-a^{n+1}}{1-a}} .
+\end{aligned}
+$$
+于是命题获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8 设 $f(x)=3 \sqrt[3]{x}(\sqrt[3]{x}+1)+x+1$, 求 $f^{(n)}(x)$.
+%%<SOLUTION>%%
+解:$f(x)=(\sqrt[3]{x}+1)^3$, 设 $a_0=x, a_n=f^{(n)}(x)$,
+则即
+$$
+a_n=f\left(a_{n-1}\right)=\left(\sqrt[3]{a_{n-1}}+1\right)^3,
+$$
+$$
+\sqrt[3]{a_n}-\sqrt[3]{a_{n-1}}=1 .
+$$
+从而
+$$
+\sqrt[3]{a_n}=\sqrt[3]{a_0}+n=\sqrt[3]{x}+n
+$$
+故
+$$
+a_n=(\sqrt[3]{x}+n)^3,
+$$
+即
+$$
+f^{(n)}(x)=(\sqrt[3]{x}+n)^3 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9 设 $f(x)=\sqrt{2+x}$, 求 $f^{(n)}(x)$.
+%%<SOLUTION>%%
+解:设 $a_0=x, a_n=f^{(n)}(x)$, 则 $a_n=\sqrt{2+a_{n-1}}$.
+(1) 若 $|x| \leqslant 2$, 则令 $x=2 \cos \theta$, 取 $\theta=\arccos \frac{x}{2}$, 则
+$$
+\begin{aligned}
+& a_0=2 \cos \theta, a_1=\sqrt{2+2 \cos \theta}=2 \cos \frac{\theta}{2}, a_2=2 \cos \frac{\theta}{2^2}, \cdots, \\
+& a_n=2 \cos \frac{\theta}{2^n}=2 \cos \left(\frac{1}{2^n} \arccos \frac{x}{2}\right) \text { (用数学归纳法易证). }
+\end{aligned}
+$$
+因此 $f^{(n)}(x)=2 \cos \left(\frac{1}{2^n} \arccos \frac{x}{2}\right)(|x| \leqslant 2)$.
+(2) 若 $|x|>2$, 则令 $x=t+\frac{1}{t}$, 取 $t=\frac{1}{2}\left(x+\sqrt{x^2-4}\right)$, 则 $a_0=t+ \frac{1}{t}, a_1=t^{\frac{1}{2}}+t^{-\frac{1}{2}}, a_2=t_{2^2}^{\frac{1}{2}}+t^{-\frac{1}{2^2}}$, 由数学归纳法易得
+$$
+a_n=t^{\frac{1}{n}}+t^{-\frac{1}{2^n}}
+$$
+故 $\quad f^{(n)}(x)=\frac{1}{t 2^n}+t^{-\frac{1}{2^n}}$
+$$
+=\left(\frac{x+\sqrt{x^2-4}}{2}\right)^{\frac{1}{2^n}}+\left(\frac{x-\sqrt{x^2-4}}{2}\right)^{\frac{1}{2^n}}(|x|>2) .
+$$
+综上所述，
+$$
+f^{(n)}(x)= \begin{cases}2 \cos \left(\frac{1}{2^n} \arccos \frac{x}{2}\right), & \text { 当 }|x| \leqslant 2 \text { 时; } \\ \left(\frac{x+\sqrt{x^2-4}}{2}-\right)^{\frac{1}{2^n}}+\left(\frac{x-\sqrt{x^2-4}}{2}\right)^{\frac{1}{2^n}}, & \text { 当 }|x|>2 \text { 时.
+}\end{cases}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10 设 $f(x)=a x+b$, 用相似法求 $f^{(n)}(x)$.
+%%<SOLUTION>%%
+解:取 $g(x)=a x, \varphi(x)=x-\frac{b}{1-a}$, 则
+$$
+\varphi^{-1}(x)=x+\frac{b}{1-a} \text {. }
+$$
+于是
+$$
+\begin{aligned}
+\varphi^{-1}(g(\varphi(x))) & =\varphi^{-1}(a \varphi(x)) \\
+& =\varphi^{-1}\left(a\left(x-\frac{b}{1-a}\right)\right) \\
+& =a\left(x-\frac{b}{1-a}\right)+\frac{b}{1-a} \\
+& =a x+b=f(x) .
+\end{aligned}
+$$
+所以 $f \sim g$. 而 $g^{(n)}(x)=a^n x$, 因此
+$$
+\begin{aligned}
+f^{(n)}(x) & =\varphi^{-1}\left(g^{(n)}(\varphi(x))\right) \\
+& =\varphi^{-1}\left(a^n \varphi(x)\right) \\
+& =a^n\left(x-\frac{b}{1-a}\right)+\frac{b}{1-a} .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11 设 $f(x)=\frac{x}{1+a x}$, 求 $f^{(n)}(x)$.
+%%<SOLUTION>%%
+解:令 $g(x)=x+a, \varphi(x)=\frac{1}{x}$, 则 $\varphi^{-1}(x)=\frac{1}{x}$. 容易验证 $f(x)= \varphi^{-1}(g(\varphi(x)))$, 即 $f \stackrel{\varphi}{\sim} g$. 所以
+$$
+\begin{aligned}
+f^{(n)}(x) & =\varphi^{-1}\left(g^{(n)}(\varphi(x))\right) \\
+& =\varphi^{-1}(\varphi(x)+n a) \\
+& =\frac{1}{\frac{1}{x}+n a}=\frac{x}{1+n a x} .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12 设 $f(x)=2 x^2-1$, 求 $f^{(n)}(x)$.
+%%<SOLUTION>%%
+解:令 $g(x)=2 x, \varphi(x)=\arccos x$, 则 $\varphi^{-1}(x)=\cos x$.
+$$
+\begin{aligned}
+f(x) & =2 x^2-1 \\
+& =2 \cos ^2(\arccos x)-1 \\
+& =\cos 2(\arccos x) \\
+& =\varphi^{-1}(g(\varphi(x))) .
+\end{aligned}
+$$
+所以 $f \stackrel{\varphi}{\sim} g$. 而 $g^{(n)}(x)=2^n x$, 因此
+$$
+\begin{aligned}
+f^{(n)}(x) & =\varphi^{-1}\left(g^{(n)}(\varphi(x))\right) \\
+& =\cos \left(2^n \arccos x\right) .
+\end{aligned}
+$$
+这个迭代结果就是切比雪夫多项式.
+一般来说, 要找出桥函数 $\varphi(x)$ 往往并不容易, 要对 $f(x)$ 进行观察、变形, 并利用经验来完成.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13 试求一个函数 $p(x)$, 使 $p^{(8)}(x)=x^2+2 x$.
+%%<SOLUTION>%%
+解:令 $f(x)=x^2+2 x, \varphi(x)=x+1, g(x)=x^2$, 则 $\varphi^{-1}(x)=x-1$.
+于是
+$$
+f(x)=\varphi^{-1}(g(\varphi(x))) .
+$$
+再令 $h(x)=x^{\sqrt[8]{2}}$, 那么
+$$
+h^{(8)}(x)=x^2=g(x) .
+$$
+于是取 $p(x)=\varphi^{-1}(h(\varphi(x)))=(x+1)^{8 \sqrt{2}}-1$, 那么
+$$
+\begin{aligned}
+p^{(8)}(x) & =\varphi^{-1}\left(h^{(8)}(\varphi(x))\right) \\
+& =\varphi^{-1}(g(\varphi(x))) \\
+& =f(x)=x^2+2 x .
+\end{aligned}
+$$
+所以, $p(x)=(x+1)^{8 \sqrt{2}}-1$, 即为所求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14 设 $p(x)=x^2-2$, 试证对任意正整数 $n$,方程 $p^{(n)}(x)=x$ 的根全是相异实根.
+%%<SOLUTION>%%
+证先看 $p^{(n)}(x)=x$ 且 $x \in[-2,2]$ 时的情形.
+当 $x \in[-2,2]$ 时, 令 $x=2 \cos t, t=\arccos \frac{x}{2}$. 设 $g(x)=2 x, t=\varphi(x)= \arccos \frac{x}{2}$, 则 $\varphi^{-1}(x)=2 \cos x$, 于是
+$$
+\begin{aligned}
+\varphi^{-1}(g(\varphi(x))) & =\varphi^{-1}\left(g\left(\arccos \frac{x}{2}\right)\right) \\
+& =\varphi^{-1}\left(2 \arccos \frac{x}{2}\right) \\
+& =2 \cos \left(2 \arccos \frac{x}{2}\right) \\
+& =2\left(2 \cdot\left(\frac{x}{2}\right)^2-1\right) \\
+& =x^2-2=p(x) .
+\end{aligned}
+$$
+所以 $p(x) \sim g(x)$. 于是
+$$
+\begin{aligned}
+p^{(n)}(x) & =\varphi^{-1}\left(g^{(n)}(\varphi(x))\right) \\
+& =2 \cos \left(2^n \arccos \frac{x}{2}\right) .
+\end{aligned}
+$$
+于是方程 $p^{(n)}(x)=x,(x \in[-2,2])$ 变为
+$$
+2 \cos \left(2^n \arccos \frac{x}{2}\right)=x,
+$$
+即
+$$
+2 \cos \left(2^n t\right)=2 \cos t(t \in[0, \pi]) .
+$$
+故
+$$
+\cos \left(2^n t\right)=\cos t
+$$
+解方程, 得 $t=\frac{2 l \pi}{2^n-1}$ 或 $t=\frac{2 m \pi}{2^n+1} \quad(m, l \in \mathbf{Z})$.
+所以方程 $p^{(n)}(x)=x$ 在 $[-2,2]$ 中有 $2^n$ 个不同的实根 $x=2 \cos \frac{2 l \pi}{2^n-1}$,
+$l=0,1,2, \cdots, 2^{n-1}-1, x=2 \cos \frac{2 m \pi}{2^n+1}, m=1,2, \cdots, 2^{n-1}$.
+由于 $p^{(n)}(x)$ 是 $2^n$ 次多项式, $p^{(n)}(x)=x$ 至多有 $2^n$ 个实根, 故知方程 $p^{(n)}(x)=x$ 的所有根都是实数且各不相同.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例15 用不动点法求解,已知 $f(x)$ 是一次函数, 且
+$$
+f^{(10)}(x)=1024 x+1023,
+$$
+求 $f(x)$ 的解析式.
+且设 $a \neq 1$ ).
+%%<SOLUTION>%%
+解:令 $f(x)=x$, 得 $f(x)$ 的唯一不动点 $x=\frac{b}{1-a}$.
+故
+$$
+f(x)=a\left(x-\frac{b}{1-a}\right)+\frac{b}{1-a},
+$$
+$$
+f^{(2)}(x)=a^2\left(x-\frac{b}{1-a}\right), 1-a,
+$$
+由归纳法, 得
+$$
+f^{(n)}(x)=a^n\left(x-\frac{b}{1-a}\right)+\frac{b}{1-a} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例16 设 $f(x)==\sqrt{19 x^2+93}$, 求 $f^{(n)}(x)$.
+%%<SOLUTION>%%
+解:先求 $f(x)$ 的不动点.
+由 $\sqrt{19 x^2+93}=x$, 得 $x^2=-\frac{31}{6}$. 所以
+$$
+\begin{aligned}
+& f(x)=\sqrt{19\left(x^2+\frac{31}{6}\right)-\frac{31}{6}}, \\
+& f^{(2)}(x)=\sqrt{19^2\left(x^2+\frac{31}{6}\right)-\frac{31}{6}}, \\
+& \ldots . .
+\end{aligned}
+$$
+由归纳法, 得
+$$
+f^{(n)}(x)=\sqrt{19^n\left(x^2+\frac{31}{6}\right)-\frac{31}{6}} .
+$$
+下面介绍利用不动点寻找桥函数的方法.
+由不动点性质知, 桥函数 $\varphi$ 具有下列性质: 它将 $f$ 的不动点 $x_0$ 映成 $g$ 的不动点 $\varphi\left(x_0\right)$, 通常为了便于求 $g^{(n)}(x), g(x)$ 通常取为 $a x, x+a, a x^2, a x^3$ 等, 这时, $g(x)$ 的不动点为 0 或 $\infty$, 此时, 若 $f(x)$ 只有唯一不动点 $\alpha$ 时, 则可考虑取 $\varphi(x)=x-\alpha$ (或 $\left.\frac{1}{x-\alpha}\right)$, 这时 $\varphi(\alpha)=0$ (或 $\infty)$; 若 $f(x)$ 有两个不动点 $\alpha 、 \beta(\alpha \neq \beta)$, 则可考虑取 $\varphi(x)=\frac{x-\alpha}{x-\beta}$, 这里 $\varphi(\alpha)=0, \varphi(\beta)=\infty$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例17 设 $f(x)=\frac{x^2}{2 x-1}$, 求 $f^{(n)}(x)$.
+%%<SOLUTION>%%
+解:令 $f(x)=x$, 求得 $f(x)$ 的不动点为 $x_0=0$ 或 1 , 取 $\varphi(x)$ 使满足 $\varphi(0)=\infty, \varphi(1)=0$, 最简单的取法是 $\varphi(x)=\frac{x-1}{x}$, 则 $\varphi^{-1}(x)=\frac{1}{1-x}$, 算出 $g(x)=\varphi\left(f\left(\varphi^{-1}(x)\right)\right)=x^2$, 则 $f(x)=\varphi^{-1}(g(\varphi(x)))$.
+于是
+$$
+\begin{aligned}
+f^{(n)}(x) & =\varphi^{-1}\left(g^{(n)}(\varphi(x))\right) \\
+& =\frac{1}{1-\left(1-\frac{1}{x}\right)^{2^n}}=\frac{x^{2^n}}{x^{2^n}-(x-1)^{2^n}} .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例18 设 $f(x)=a x^2+b x+c(a \neq 0)$, 求 $f^{(n)}(x)$.
+%%<SOLUTION>%%
+解:对于二次函数, 并不是所有的情形都能很简单地得到 $f^{(n)}(x)$ 的表达式,下面只考虑当 $c=\frac{b^2-2 b}{4 a}$ 时的情形.
+由
+$$
+a x^2+b x+\frac{b^2-2 b}{4 a}=x,
+$$
+得两个不动点 $-\frac{b}{2 a}, \frac{b+2}{2 a}$. 取其中一个 $x_0=-\frac{b}{2 a}$.
+令 $g(x)=a x^2, \varphi(x)=x-x_0$, 则 $\varphi^{-1}(x)=x+x_0$, 于是
+$$
+\begin{aligned}
+\varphi^{-1}(g(\varphi(x))) & =\varphi^{-1}\left(g\left(x-x_0\right)\right) \\
+& =\varphi^{-1}\left(a\left(x-x_0\right)^2\right) \\
+& =a\left(x-x_0\right)^2+x_0 \\
+& =a x^2+b x+c=f(x) .
+\end{aligned}
+$$
+故
+$$
+\begin{aligned}
+f^{(n)}(x) & =\varphi^{-1}\left(g^{(n)}(\varphi(x))\right) \\
+& =\varphi^{-1}\left(g^{(n)}\left(x-x_0\right)\right) \\
+& =\varphi^{-1}\left(a^{2^n-1}\left(x-x_0\right)^{2^n}\right) \\
+& =a^{2^n-1}\left(x-x_0\right)^{2^n}+x_0 \\
+& =a^{2^n-1}\left(x+\frac{b}{2 a}\right)-\frac{b}{2 a} .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例19 设 $f(x)=\frac{a x+b}{c x+d}(c \neq 0, a d \neq b c)$, 求 $f^{(n)}(x)$.
+%%<SOLUTION>%%
+解:分两种情况.
+(1) 若 $f(x)=x$ 有两个不相等的不动点 $x_1, x_2$, 则取 $g(x)=\frac{a-c x_1}{a-c x_2} x$, $\varphi(x)=\frac{x-x_1}{x-x_2}$, 于是 $f(x)=\varphi^{-1}(g(\varphi(x)))$.
+(2) 若 $f(x)=x$ 有唯一的不动点 $x_0$, 则取
+$$
+g(x)=x+\frac{2 c}{a+d}, \varphi(x)=\frac{1}{x-x_0} .
+$$
+同样有
+$$
+f(x)=\varphi^{-i}(g(\varphi(x))) .
+$$
+下面给出 (1)、(2) 的证明.
+对于 (1), 由 $\frac{a x+b}{c x+d}=x$, 得
+$$
+c x^2+(d-a) x-b=0 .
+$$
+故
+$$
+x_1+x_2=\frac{a-d}{c}, x_1 x_2=-\frac{b}{c} .
+$$
+又 $\varphi(x)=\frac{x-x_1}{x-x_2}$, 所以 $\varphi^{-1}(x)=\frac{x_1-x_2 x}{1-x}$, 于是
+$$
+\begin{aligned}
+\varphi^{-1}(g(\varphi(x))) & =\varphi^{-1}\left(g\left(\frac{x-x_1}{x-x_2}\right)\right) \\
+& =\varphi^{-1}\left(\frac{a-c x_1}{a-c x_2} \cdot \frac{x-x_1}{x-x_2}\right) \\
+& =\frac{x_1-\frac{a-c x_1}{a-c x_2} \cdot \frac{x-x_1}{x-x_2}}{1-\frac{a-c x_1}{a-c x_2} \cdot \frac{x-x_1}{x-x_2}} \cdot x_2 \\
+& =\frac{a x-x_1 x_2 c}{c x+a-c\left(x_1+x_2\right)} \\
+& =\frac{a x+b}{c x+d}=f(x) .
+\end{aligned}
+$$
+因为
+$$
+2 x_0=\frac{a-d}{c},
+$$
+所以
+$$
+\begin{aligned}
+\varphi^{-1}(g(\varphi(x))) & =\varphi^{-1}\left(\frac{1}{x-x_0}+\frac{2 c}{a+d}\right) \\
+& =\frac{1}{\frac{1}{x-x_0}+\frac{2 c}{a+d}}+x_0 \\
+& =\frac{\left(a+d+2 c x_0\right) x-2 c x_0^2}{2 c+\left(a+d-2 c x_0\right)}
+\end{aligned}
+$$
+从而
+$$
+\varphi^{-1}(g(\varphi(x)))=\frac{2 a x+2 b}{2 c x+2 d}=f(x) .
+$$
+下面来求 $f^{(n)}(x)$.
+$$
+\begin{aligned}
+& \text { 对于(1),  }f^{(n)}(x)=\varphi^{-1}\left(g^{(n)}(\varphi(x))\right) \\
+& =\frac{x_1-\left(\frac{a-c x_1}{a-c x_2}\right)^n \cdot \frac{x-x_1}{x-x_2} \cdot x_2}{1-\left(\frac{a-c x_1}{a-c x_2}\right)^n \cdot \frac{x-x_1}{x-x_2}} \\
+& =\frac{x_1\left(a-c x_2\right)^n\left(x-x_2\right)-x_2\left(a-c x_1\right)^n\left(x-x_1\right)}{\left(a-c x_2\right)^n\left(x-x_2\right)-\left(a-c x_1\right)^n\left(x-x_1\right)} \text {. } \\
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& \text { 对于(2)， }  f^{(n)}(x)=\varphi^{-1}\left(g^{(n)}(\varphi(x))\right) \\
+& =\frac{1}{\frac{1}{x-x_0}+\frac{2 n c}{a+d}}+x_0 \\
+& =\frac{\left(a+d+2 n c x_0\right) x-2 n c x_0^2}{2 n c x+a+d-2 n c x_0} .\\
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例20 $M$ 是形如 $f(x)=a x+b(a, b \in \mathbf{R})$ 的实变量 $x$ 的非零函数集, 且 $M$ 具有下列性质:
+(1) 若 $f(x), g(x) \in M$, 则 $g(f(x)) \in M$;
+(2) 若 $f \in M$, 且 $f(x)=a x+b$, 则反函数 $f^{-1} \in M$, 这里 $f^{-1}(x)=\frac{x-b}{a} (a \neq 0)$;
+(3) 对 $M$ 中每一个 $f$, 存在一个 $x_j \in \mathbf{R}$, 使 $f\left(x_j\right)=x_j$.
+求证: 总存在一个 $k \in \mathbf{R}$, 对所有 $f \in M$, 均有 $f(k)=k$.
+%%<SOLUTION>%%
+证条件 (3) 表明, 对每一个 $f \in M$, 都有一个不动点 $x_j$, 使 $f\left(x_j\right)=x_j$. 现要证集 $M$ 中所有函数 $f$, 必有一个公共不动点 $k$.
+设 $f(x)=a x+b$ 的不动点为 $x_j$, 即 $a x_j+b=x_j$.
+若 $a \neq 1$, 则 $x_j=\frac{-b}{a-1}$ 是唯一不动点;
+若 $a=1$ 且 $b=0$, 则任何实数均是 $f$ 的不动点;
+若 $a=1$ 且 $b \neq 0$, 则 $f$ 无不动点, 此时 $f \bar{\in} M$.
+因此, 只需证明: 当 $f(x)=a x+b(a \neq 1) \in M$ 时, 必有 $\frac{-b}{a-1}$ 是一个常数.
+这时, 取 $k=\frac{-b}{a-1}$ 知命题获证.
+首先证明,若 $g_1(x)=a x+b_1 \in M, g_2(x)=a x+b_2 \in M$, 则 $b_1=b_2$. 事实上,由性质 (1)、(2)有
+$$
+g_2^{-1}\left(g_1(x)\right)=\frac{\left(a x+b_1\right)-b_2}{a}=x+\frac{b_1-b_2}{a} \in M .
+$$
+由性质 (3) 知, $g_2^{-1}\left(g_1(x)\right)$ 存在不动点, 故 $b_1=b_2$.
+其次, 对形如 $h(x)=x+b$ 的函数, 当 $b \neq 0$ 时, $h(x) \bar{\in} M$; 当 $b=0$ 时, 对任意 $k \in \mathbf{R}$ 有 $h(k)=k$. 故只需考虑 $M$ 中形如 $f(x)=a x+b(a \neq 1)$ 的函数.
+设 $f_1(x)=a_1 x+b_1\left(a_1 \neq 1\right) \in M, f_2(x)=a_2 x+b_2\left(a_2 \neq 1\right) \in M$. 那么由性质 (1), 得
+$$
+\begin{aligned}
+f_1\left(f_2(x)\right) & =a_1\left(a_2 x+b_2\right)+b_1 \\
+& =a_1 a_2 x+a_1 b_2+b_1 \in M, \\
+f_2\left(f_1(x)\right) & =a_2\left(a_1 x+b_1\right)+b_2 \\
+& =a_1 a_2 x+a_2 b_1+b_2 \in M .
+\end{aligned}
+$$
+则
+$$
+a_1 b_2+b_1=a_2 b_1+b_2 \text {. }
+$$
+变形, 得
+$$
+\frac{-b_1}{a_1-1}=\frac{-b_2}{a_2-1} \text {. }
+$$
+此式表明, 对任意 $f(x)=a x+b(a \neq 1) \in M, \frac{-b}{a-1}$ 是常数.
+取 $k= \frac{-b}{a-1}$, 则 $f(k)=f\left(\frac{-b}{a-1}\right)=a\left(\frac{-b}{a-1}\right)+b=\frac{-b}{a-1}=k$, 即知题中结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例21 设 $f: \mathbf{N}_{+} \rightarrow \mathbf{N}_{+}$, 且对每个 $n \in \mathbf{N}_{+}$, 均有
+$$
+f(n+1)>f(f(n)) .
+$$
+求证: 每个正整数均为 $f$ 的不动点.
+%%<SOLUTION>%%
+证结论其实就是要证对任意正整数 $n, f(n)=n$. 先证一个辅助命题: 对任意两个正整数 $m, n$, 只要 $m \geqslant n$, 就有 $f(m) \geqslant n$.
+对 $n$ 用数学归纳法.
+$n=1$ 时,显然 $f(m) \geqslant 1$.
+设 $n=k$ 时,命题成立,当 $n=k+1$ 时,任取一个正整数 $m \geqslant k+1$, 要证明的是 $f(m) \geqslant k+1$.
+事实上, 由于 $m \geqslant k+1$, 故 $m-1 \geqslant k$, 由归纳假设, 知 $f(m-1) \geqslant k$, 再用一次归纳假设, 又有
+$$
+f(f(m-1)) \geqslant k .
+$$
+由题设
+$$
+f(m)>f(f(m-1)),
+$$
+所以
+$$
+f(m)>k,
+$$
+从而
+$$
+f(m) \geqslant k+1 \text {. }
+$$
+于是命题获证.
+在辅助命题中令 $m=n$, 就得 $f(n) \geqslant n$. 再用一次辅助命题, 有
+$f(f(n)) \geqslant f(n)$, 又有
+$$
+f(n+1)>f(f(n)) \geqslant f(n),
+$$
+即 $f(n)$ 是严格递增的.
+于是由 $f(n+1)>f(f(n))$ 可得 $n+1>f(n)$, 综合两方面, 有
+$$
+\begin{gathered}
+n \leqslant f(n)<n+1, \\
+f(n)=n .
+\end{gathered}
+$$
+从而 $f(n)=n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例22 设 $M$ 为整数集 $\mathbf{Z}$ 的一个含 0 的有限子集, 又设 $f, g: M \rightarrow M$ 为两个单调减函数, 且满足 $g(f(0)) \geqslant 0$. 求证: 在 $M$ 中存在整数 $p$ 使得 $g(f(p))=p$.
+%%<SOLUTION>%%
+证定义 $F: M \rightarrow M$,
+$$
+F(x)=g(f(x)), x \in M .
+$$
+则 $F$ 是单调增函数.
+事实上, 对任意的 $x, y \in M, x \leqslant y$, 由 $f$ 的单调减性知, $f(x) \geqslant f(y)$. 由 $f(x), f(y) \in M$ 及 $g$ 的单调减性, 有 $F(x)=g(f(x)) \leqslant g(f(y))=F(y)$. 因此, $F$. 是单调增函数.
+如果 $g(f(0))=0$, 取 $p=0$ 即可.
+否则, $F(0)>0$. 又由 $F(0), 0 \in M$ 及 $F$ 的单调增性, 有 $F(F(0)) \geqslant F(0)$. 令 $D=\{x \in M \mid x \leqslant F(x)\}$. 则 $F(0) \in D$.
+由 $D \subset M$, 而 $M$ 是有限集, 故 $D$ 是有限集.
+设 $p \in D$ 为 $D$ 中的最大数,则 $p \leqslant F(p)$.
+再由 $F$ 的单调增性, 有 $F(p) \leqslant F(F(p))$, 从而 $F(p) \in D$. 由 $p$ 是 $D$ 中的最大数, 有 $F(p)=g(f(p))=p$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例23 将一张地图按比例缩小之后放人原地图中, 证明: 有且仅有一点代表了两张地图的同一位置 (不动点).
+%%<SOLUTION>%%
+证如图 (<FilePath:./figures/fig-c6e23.png>)所示, 先把两张地图放人一个复平面上.
+记 $A, B$ 两点对应的复数为 $0,1, A^{\prime}$, $B^{\prime}$ 两点对应的复数为 $z_1, z_2$, 那么 $\left|z_1-z_2\right|<1$.
+在小地图中任取一点 $P$ (对应复数 $z$ ), 连结 $P A, P B$. 再在小地图中另找一点 $Q$ (对应复数 $f(z))$, 使 $\triangle Q A^{\prime} B^{\prime} \backsim \triangle P A B$.
+若 $f(z)=z$, 则点 $P$ 就是不动点.
+否则, 再计算 $f^{(2)}(z), \cdots$. 下面证明 $: \lim _{n \rightarrow \infty} f^{(n)}(z)$ 一定存在.
+因为
+$$
+\triangle Q A^{\prime} B^{\prime} \backsim \triangle P A B
+$$
+所以
+$$
+\frac{f(z)-z_1}{z_2-z_1}=\frac{z-O}{1-O}
+$$
+$$
+\begin{aligned}
+& f(z)=\left(z_2-z_1\right) z+z_1, \\
+& f^{(2)}(z)=\left(z_2-z_1\right) f(z)+z_1=\left(z_2-z_1\right)^2 z+\left(z_2-z_1\right) z_1+z_1, \\
+& \cdots \cdots \\
+& f^{(n)}(z)=\left(z_2-z_1\right)^n z+\frac{1-\left(z_2-z_1\right)^n}{1+z_1-z_2} z_1 .
+\end{aligned}
+$$
+因为 $\left|z_2-z_1\right|<1$, 故 $\lim _{n \rightarrow \infty} f^{(n)}(z)=\frac{z_1}{1+z_1-z_2}$.
+因此, $\frac{z_1}{1+z_1-z_2}$ 对应的点即为所求.
+而不可能有两个不动点, 否则两张地图一样大.
+证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例24 设圆 $O$ 中有一个任意内接 $\triangle A B C$, 取 $\overparen{A B}, \overparen{B C}, \overparen{C A}$ 的中点分别记为 $C_1, A_1, B_1$, 得到一个新的内接 $\triangle A_1 B_1 C_1$; 取 $\overparen{A_1 B_1}, \overparen{B_1 C_1}, \overparen{C_1 A_1}$ 的中点分别记为 $C_2, A_2, B_2$, 又得一内接 $\triangle A_2 B_2 C_2$; 如此继续, 得一组内接三角形 $A_n B_n C_n$, 求证:
+$$
+\lim _{n \rightarrow \infty} \angle A_n=\lim _{n \rightarrow \infty} \angle B_n=\lim _{n \rightarrow \infty} \angle C_n=\frac{\pi}{3} .
+$$
+%%<SOLUTION>%%
+证显然, $\angle A_1=\frac{1}{2}(\angle B+\angle C)=\frac{1}{2}(\pi-\angle A)$. 记 $f(x)=\frac{1}{2}(\pi-x)$, $x_0=\angle A$, 则有
+$$
+\begin{aligned}
+& \angle A_1=f\left(x_0\right), \\
+& \angle A_2=f\left(f\left(x_0\right)\right)=f^{(2)}\left(x_0\right), \\
+& \cdots \cdots \\
+& \angle A_n=f^{(n)}\left(x_0\right) .
+\end{aligned}
+$$
+而 $f(x)=\frac{1}{2}(\pi-x)$ 从而
+$$
+f^{(n)}\left(x_0\right)=\left(-\frac{1}{2}\right)^n x_0+\frac{1-\left(-\frac{1}{2}\right)^n}{1-\left(-\frac{1}{2}\right)} \cdot \frac{\pi}{2} .
+$$
+故 $\lim _{n \rightarrow \infty} \angle A_n=\lim _{n \rightarrow \infty}\left(\left(-\frac{1}{2}\right)^n \angle A+\frac{1-\left(-\frac{1}{2}\right)^n}{1-\left(-\frac{1}{2}\right)} \cdot \frac{\pi}{2}\right)=\frac{\pi}{3}$.
+同理
+$$
+\lim _{n \rightarrow \infty} \angle B_n=\lim _{n \rightarrow \infty} \angle C_n=\frac{\pi}{3} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例25 设 $f(x)=\sin x$, 对于 $x_0 \in\left(0, \frac{\pi}{2}\right]$, 给出 $f^{(n)}\left(x_0\right)$ 的估计式.
+%%<SOLUTION>%%
+解我们证明
+$$
+\lim _{n \rightarrow \infty} \frac{f^{(n)}\left(x_0\right)}{\frac{1}{\sqrt{n}}}=\sqrt{3}
+$$
+这表明 $f^{(n)}\left(x_0\right)$ 与 $\frac{1}{\sqrt{n}}$ 是同价无穷小量, 并且不依赖于初始值 $x_0$.
+令 $\varphi(x)=\varphi(x, c)=\frac{1}{\sqrt{\frac{1}{x^2}+\frac{1}{3 c^2}}}$, 其中 $c>0$ 是参数.
+利用泰勒公式展开, 知
+$$
+\begin{gathered}
+\sin x=x-\frac{x^3}{6}+o\left(x^3\right) \\
+\varphi(x)=\varphi(x, c)=x-\frac{1}{6 c^2} x^3+o\left(x^3\right) .
+\end{gathered}
+$$
+故 $\forall \varepsilon>0, \exists \delta>0$, 当 $0<x<\delta$ 时,有
+$$
+\varphi(x, 1-\varepsilon)<\sin x<\varphi(x, 1+\varepsilon) .
+$$
+再根据 $\varphi(x)$ 与 $\sin x$ 的单调性, 得
+$$
+\varphi^{(n)}(x, 1-\varepsilon)<f^{(n)}(x)<\varphi^{(n)}(x, 1+\varepsilon) .
+$$
+由于
+$$
+\begin{aligned}
+\varphi^{(n)}(x, 1-\varepsilon) & =\frac{1}{\sqrt{\frac{1}{x^2}+\frac{n}{3(1-\varepsilon)^2}}} \\
+& =\frac{1-\varepsilon}{\sqrt{\frac{(1-\varepsilon)^2}{x^2}+\frac{n}{3}}} \\
+& >\frac{1-\varepsilon}{\sqrt{\frac{1}{x^2}+\frac{n}{3}}} .
+\end{aligned}
+$$
+同理,
+$$
+\begin{aligned}
+\varphi^{(n)}(x, 1+\varepsilon) & =\frac{1+\varepsilon}{\sqrt{\frac{(1+\varepsilon)^2}{x^2}+\frac{n}{3}}} \\
+& <\frac{1+\varepsilon}{\sqrt{\frac{1}{x^2}+\frac{n}{3}}} .
+\end{aligned}
+$$
+所以 $\quad\left|\sqrt{n} f^{(n)}(x)-\frac{1}{\sqrt{\frac{1}{n x^2}+\frac{1}{3}}}\right|<\frac{\varepsilon}{\sqrt{\frac{1}{n x^2}+\frac{1}{3}}}$.
+由于 $\lim _{n \rightarrow \infty} f^{(n)}\left(x_0\right)=0$ (0 是 $\sin x$ 的唯一不动点), 故 $\forall \varepsilon>0, \exists m \in \mathbf{N}_{+}$, 使
+$$
+0<f^{(m)}\left(x_0\right)<\delta
+$$
+现 $\forall n>m$, 令 $f^{(n)}\left(x_0\right)=y_0$, 于是有
+$$
+\begin{aligned}
+& \left|\sqrt{n-m} f^{(n)}\left(x_0\right)-\frac{1}{\sqrt{\frac{1}{(n-m) y_0^2}+\frac{1}{3}}}\right| \\
+& =\left|\sqrt{n-m} f^{(n-m)}\left(y_0\right)-\frac{1}{\sqrt{\frac{1}{(n-m) y_0^2}+\frac{1}{3}}}\right| \\
+& <\frac{\varepsilon}{\sqrt{\frac{1}{(n-m) y_0^2}+\frac{1}{3}}} \text {. } \\
+&
+\end{aligned}
+$$
+令 $n \rightarrow \infty$, 有
+$$
+\left|\lim _{n \rightarrow \infty} \sqrt{n-m} f^{(n)}\left(x_0\right)-\sqrt{3}\right| \leqslant \sqrt{3} \varepsilon .
+$$
+又 $\left|\sqrt{n} f^{(n)}\left(x_0\right)-\sqrt{3}\right|$
+$$
+\begin{aligned}
+& =\left|(\sqrt{n}-\sqrt{n-m}) f^{(n)}\left(x_0\right)+\sqrt{n-m} f^{(n)}\left(x_0\right)-\sqrt{3}\right| \\
+& \leqslant \frac{m}{\sqrt{n}+\sqrt{n-m}} f^{(n)}\left(x_0\right)+\left|\sqrt{n-m} f^{(n)}\left(x_0\right)-\sqrt{3}\right| \\
+& \leqslant \frac{m f^{(n)}\left(x_0\right)}{2 \sqrt{n--} m}+\sqrt{3} \varepsilon+o(0) .
+\end{aligned}
+$$
+故 $\left|\lim _{n \rightarrow \infty} \sqrt{n} f^{(n)}\left(x_0\right)-\sqrt{3}\right| \leqslant \sqrt{3} \varepsilon$.
+由 $\varepsilon$ 的任意性,得
+$$
+\lim _{n \rightarrow \infty} \sqrt{n} f^{(n)}\left(x_0\right)=\sqrt{3} .
+$$
+上面这个例子表明,当 $f$ 的 $n$ 次迭代比较复杂时,我们可用较简单的函数去逼近它, 从而取得较好的结果.
+%%PROBLEM_END%%
+
+

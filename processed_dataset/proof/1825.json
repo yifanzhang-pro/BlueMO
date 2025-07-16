@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题16. 证明 Pascal 定理:\n圆内接六边形 $A B C D E F$ (不要求是凸的)三组对边 $A B$ 和 $D E, C D$ 和 $F A, E F$ 和 $B C$ 的交点 $L, M, N$ 共线.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c2a16.png>), 设三直线 $A B 、 C D 、 E F$ 两两相交成 $\\triangle U V W$, 对 $\\triangle U V W$ 及截线 $B C N 、 D E L 、 F A M$, 由梅涅劳斯定理\n$$\n\\begin{aligned}\n& \\frac{U N}{N V} \\cdot \\frac{V B}{B W} \\cdot \\frac{W C}{C U}=1, \\\\\n& \\frac{U E}{E V} \\cdot \\frac{V L}{L W} \\cdot \\frac{W D}{D U}=1,\n\\end{aligned}\n$$\n$$\n\\frac{U F}{F V} \\cdot \\frac{V A}{A W} \\cdot \\frac{W M}{M U}=1 .\n$$\n三式相乘.\n由相交弦定理与割线定理和乘积等式中的\n$$\n\\begin{aligned}\n& \\frac{V B}{B W} \\cdot \\frac{W C}{C U} \\cdot \\frac{U E}{E V} \\cdot \\frac{W D}{D U} \\cdot \\frac{U F}{F V} \\cdot \\frac{V A}{A W} \\\\\n= & \\frac{V B \\cdot V A}{E V \\cdot F V} \\cdot \\frac{W C \\cdot W D}{B W \\cdot A W} \\cdot \\frac{U E \\cdot U F}{C U \\cdot D U}=1\n\\end{aligned}\n$$\n故有 $\\frac{U N}{N V} \\cdot \\frac{V L}{L W} \\cdot \\frac{W M}{M U}=1$.\n由梅涅劳斯定理逆定理知, $L 、 M 、 N$ 共线.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2a16.png"
+    ]
+}

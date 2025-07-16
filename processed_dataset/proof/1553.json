@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter2-3.tex",
+    "problem_type": "proof",
+    "problem": "例3. 证明: 对任意 $n \\in \\mathbf{N}^*$, 不定方程\n$$\nx^2+y^2=z^n . \\label{eq1}\n$$\n有无穷多组正整数解.",
+    "solution": "证明:当 $n=1$ 时, 对任意 $x 、 y \\in \\mathbf{N}^*,\\left(x, y, x^2+y^2\\right)$ 都是 式\\ref{eq1} 的正整数解; 当 $n=2$ 时, 取 $m>n \\geqslant 1, m 、 n \\in \\mathbf{N}^*$, 令 $x=m^2-n^2, y=2 m m$, $z=m^2+n^2$, 就有 $x^2+y^2=z^2$, 故命题对 $n=1 、 2$ 成立.\n现设命题对 $n$ 成立, 对正整数 $x 、 y 、 z$, 若 $x^2+y^2=z^n$, 则 $(x z)^2+ (y z)^2=z^{n+2}$, 因此不定方程 $x^2+y^2=z^{n+2}$ 有无穷多组正整数解.\n结合命题对 $n=1,2$ 成立, 可知命题对任意 $n \\in \\mathbf{N}^*$ 成立.\n说明此题还可依下述方法处理: 令 $z=a+b \\mathrm{i}$, 其中 $a 、 b \\in \\mathbf{N}^*$ 且 $0< \\arg z<\\frac{\\pi}{n}$ (这样的 $a 、 b$ 对有无穷多对使得 $a^2+b^2$ 的值彼此不同), 则由二项式定理, 可写 $z^n=(a+b \\mathrm{i})^n=x+y \\mathrm{i}, x, y \\in \\mathbf{Z}$, 且 $x y \\neq 0$ (这是因为 $\\left.\\arg z^n \\in(0, \\pi)\\right)$, 两边取模, 可知 $\\left(\\sqrt{a^2+b^2}\\right)^n=\\sqrt{x^2+y^2}$, 即有 $x^2+y^2= \\left(a^2+b^2\\right)^n$, 故 $\\left(|x|,|y|, a^2+b^2\\right)$ 是 $x^2+y^2=z^n$ 的正整数解.",
+    "remark": "",
+    "figures": []
+}

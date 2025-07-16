@@ -1,0 +1,178 @@
+
+%%TEXT_BEGIN%%
+周期数列.
+对一个数列 $\left\{a_n\right\}$, 如果存在正整数 $T$ 及 $n_0$, 使得对任意 $n \geqslant n_0$, 都有 $a_n= a_{n+\mathrm{T}}$, 那么称 $\left\{a_n\right\}$ 是一个周期数列.
+进一步, 若 $n_0=1$, 则称 $\left\{a_n\right\}$ 是一个纯周期数列.
+这里 $T$ 称为 $\left\{a_n\right\}$ 的一个周期.
+由周期数列的定义可知, 如果 $T$ 为 $\left\{a_n\right\}$ 的一个周期, 那么对任意 $m \in \mathbf{N}^*$, 数 $m T$ 也是 $\left\{a_n\right\}$ 的一个周期.
+利用这个性质结合数论中著名的 Bezout 定理可得下面的定理:
+定理 1 如果 $T_1 、 T_2$ 都是周期数列 $\left\{a_n\right\}$ 的周期, 那么 $\left(T_1 、 T_2\right)$ (指 $T_1$ 、 $T_2$ 的最大公因数) 也是 $\left\{a_n\right\}$ 的一个周期.
+由此定理可知, 如果 $\left\{a_n\right\}$ 是一个周期数列, 那么 $\left\{a_n\right\}$ 有最小正周期.
+这与周期函数不一定有最小正周期形成鲜明的对比.
+对于一个整数数列 $\left\{a_n\right\}$ 而言, 它本身可能不是一个周期数列, 但是对某些正整数 $m$, 在模 $m$ 的意义下是一个周期数列, 这就是模周期数列的概念.
+此时, 存在 $T 、 n_0 \in \mathbf{N}^*$, 使得对任意 $n \geqslant n_0$, 都有 $a_{n+T} \equiv a_n(\bmod m)$.
+定理 2 整数数列 $\left\{a_n\right\}$ 如果是一个常系数递推数列, 那么对任意 $m \in \mathbf{N}^*$, 数列 $\left\{a_n\right\}$ 都是模 $m$ 下的一个周期数列.
+事实上,如果 $\left\{a_n\right\}$ 是一个常系数 $k$ 阶递推数列, 考察下面的数组
+$$
+\left(a_1, a_2, \cdots, a_k\right),\left(a_2, a_3, \cdots, a_{k+1}\right), \cdots . \label{eq1}
+$$
+由于在模 $m$ 的意义下, 数组 $\left(x_1, \cdots, x_k\right)$ 中每个 $x_i$ 只取 $0,1,2, \cdots, m-1$, 故式\ref{eq1}中的数组在模 $m$ 的意义下至多只有 $m^k$ 种不同的情形.
+所以, 存在 $r 、 t \in \mathbf{N}^*(r<t)$, 使得
+$$
+\left(a_r, a_{r+1}, \cdots, a_{r+k}\right) \equiv\left(a_t, a_{t+1}, \cdots, a_{t+k}\right)(\bmod m) .
+$$
+记 $T=t-r$, 结合 $\left\{a_n\right\}$ 为常系数 $k$ 阶递推数列, 可知对任意 $n \geqslant r$, 都有 $a_{n+T} \equiv a_n(\bmod m)$.
+因此, 定理 2 成立.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $x_0 、 x_1$ 是两个给定的正实数, 数列 $\left\{x_n\right\}$ 满足 $x_{n+2}= \frac{4 \max \left\{x_{n+1}, 4\right\}}{x_n}, n=0,1,2, \cdots$. 求 $x_{2011}$ 的值.
+%%<SOLUTION>%%
+解:为计算方便, 令 $x_n=4 y_n$, 则
+$$
+y_{n+2}=\frac{\max \left\{y_{n+1}, 1\right\}}{y_n}, n=0,1,2, \cdots .
+$$
+直接计算可得下表:
+\begin{tabular}{|c|c|c|c|c|}
+\hline & $y_0 \leqslant 1, y_1 \leqslant 1$ & $y_0 \leqslant 1, y_1>1$ & $y_0>1, y_1 \leqslant 1$ & $y_0>1, y_1>1$ \\
+\hline$y_2=$ & $\frac{1}{y_0}$ & $\frac{y_1}{y_0}$ & $\frac{1}{y_0}$ & $\frac{y_1}{y_0}$ \\
+$y_3=$ & $\frac{1}{y_0}$ & $\frac{1}{y_1}$ & $\max \left\{\frac{1}{y_0}, \frac{1}{y_1}\right\}$ \\
+$y_4=$ & $\frac{1}{y_1 y_1}$ & $\frac{y_0}{y_1}$ & $\frac{y_0}{y_1}$ \\
+$y_5=$ & $y_1$ & $y_0$ & $y_0$ \\
+$y_6=$ & $y_0$ & $y_1$ & $y_1$ & $y_1$ \\
+\hline
+\end{tabular}
+所以, $\left\{y_n\right\}$ 是一个以 5 为周期的纯周期数列, 对应地, $\left\{x_n\right\}$ 也是.
+故 $x_{2011}=x_1$.
+说明题中所给递推关系式是一种特殊形式的 Lyness 方程, 这里通过直接计算来确定周期的方法对付分式递推 (具有周期性的) 数列是直接而有效的手段.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 已知 $0 \leqslant x_0<1$, 数列 $\left\{x_n\right\}$ 满足
+$$
+x_{n+1}=\left\{\begin{array}{l}
+2 x_n-1, \text { 若 } \frac{1}{2} \leqslant x_n<1, \\
+2 x_n, \quad \text { 若 } 0 \leqslant x_n<\frac{1}{2} .
+\end{array}(n=0,1,2, \cdots)\right.
+$$
+并且 $x_5=x_0$. 问 : 满足条件的数列有多少个?
+%%<SOLUTION>%%
+解:注意到, 当 $x_0$ 确定后, 数列 $\left\{x_n\right\}$ 是唯一确定的, 故问题可转为求 $x_0$ 的不同取值情况的个数.
+利用二进制来处理, 将 $x_n$ 用二进制表示, 设 $x_n=\left(0 . b_1 b_2 \cdots\right)_2$, 如果 $b_1=1$, 那么 $\frac{1}{2} \leqslant x_n<1$, 此时 $x_{n+1}=2 x_n-1=\left(0 . b_2 b_3 \cdots\right)_2$; 如果 $b_1=0$, 那么 $0 \leqslant x_n<\frac{1}{2}$, 此时 $x_{n+1}=2 x_n=\left(0 . b_2 b_3 \cdots\right)_2$. 这表明: 当 $x_n=\left(0 . b_1 b_2 \cdots\right)_2$ 时, 总有 $x_{n+1}=\left(0 . b_2 b_3 \cdots\right)_2$ (相当于将二进制表示下 $x_n$ 的小数点后第一位"吃掉了".
+现在, 设 $x_0=\left(0 . a_1 a_2 \cdots\right)_2$, 那么由上述讨论可知 $x_5=\left(0 . a_6 a_7 \cdots\right)_2$, 结合 $x_5=x_0$ 得 $x_0$ 是一个二进制下的循环小数, 即 $x_0=\left(0 . \dot{a}_1 a_2 \cdots \dot{a}_5\right)_2= \frac{\left(a_1 \cdots a_5\right)_2}{2^5-1}$, 其中 $\left(a_1 \cdots a_5\right)_2$ 是二进制表示下的一个非负整数 (注意 $a_1, \cdots, a_5$ 不全为 1).
+综上可知, $x_0$ 共有 $2^5-1=31$ 种不同的可能取值 $\left(a_1, \cdots, a_5\right.$ 每个数均可取 0 或 1 ,但不能全部取 1 ), 相应的不同数列共 31 个.
+说明这里利用二进制表示将递推式变为规律性更强的式子, 然后结合数列的周期性掌控数列的结构.
+本质上而言是做了一个对应.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $f(x)$ 是一个整系数多项式, 数列 $\left\{a_n\right\}$ 依如下方式定义
+$$
+a_0=0, a_{n+1}=f\left(a_n\right), n=0,1,2, \cdots .
+$$
+%%<SOLUTION>%%
+证明: 若 $\left\{a_n\right\}$ 是一个纯周期数列, 则其最小正周期不大于 2 .
+证明问题可转化为证明: 若存在 $m \in \mathbf{N}^*$, 使得 $a_m=0$, 则 $a_1$ 或 $a_2$ 中有一个等于 0 .
+利用因式定理, 由于 $f(x)$ 为整系数多项式, 可知对 $m 、 n \in \mathbf{Z}(m \neq n)$, 都有 $m-n \mid f(m)-f(n)$.
+现令 $b_n=a_{n+1}-a_n, n=0,1,2, \cdots$, 由上述结论及数列 $\left\{a_n\right\}$ 的定义可知 $b_n \mid b_{n+1}$ (注意, 这里若 $b_n=0$, 则有 $b_{n+1}=f\left(a_{n+1}\right)-f\left(a_n\right)=0$ ).
+因为 $a_m=a_0=0$, 故 $a_{m+1}=f\left(a_0\right)=a_1$, 所以 $b_m=b_0$.
+如果 $b_0=0$, 那么 $a_0=a_1=\cdots=a_m$, 命题已成立; 否则 $\left|b_0\right|=\left|b_m\right| \neq$ 0 , 结合 $b_0\left|b_1, b_1\right| b_2, \cdots, b_{m-1} \mid b_m$, 可得 $\left|b_0\right|=\left|b_1\right|=\cdots=\left|b_m\right|$.
+注意到
+$$
+b_0+b_1+\cdots+b_{m-1}=a_m-a_0=0,
+$$
+因此, $b_0, b_1, \cdots, b_{m-1}$ 中有一半为正整数, 另一半为负整数, 从而, 存在 $k \in \{1,2, \cdots, m-2\}$, 使得 $b_{k-1}=-b_k$, 得 $a_{k-1}=a_{k+1}$, 依 $\left\{a_n\right\}$ 的定义知, 对 $n \geqslant k-1$, 都有 $a_{n+2}=a_n$. 取 $n=m$, 就有
+$$
+\begin{aligned}
+a_0 & =a_m=a_{m+2}=f\left(a_{m+1}\right)=f\left(f\left(a_m\right)\right) \\
+& =f\left(f\left(a_0\right)\right)=a_2 .
+\end{aligned}
+$$
+即有 $a_2=0$.
+所以, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $m$ 是一个给定的大于 1 的正整数,数列 $\left\{x_n\right\}$ 定义如下 $x_1=1$,
+$$
+x_2=2, \cdots, x_m=m \text {, 而 }
+$$
+$$
+x_{n+m}=x_{n+m-1}+x_n, n=1,2, \cdots . \label{eq1}
+$$
+%%<SOLUTION>%%
+证明: 数列 $\left\{x_n\right\}$ 中存在连续的 $m-1$ 项, 它们都是 $m$ 的倍数.
+证明考察数列 $\left\{x_k(\bmod m)\right\}$, 这里 $x_k(\bmod m)$ 表示 $x_k$ 除以 $m$ 所得的余数, 将它记为 $y_k$. 转为证明: 数列 $\left\{y_k\right\}$ 中有连续 $m-1$ 个零.
+利用定理 2, 由 式\ref{eq1} 可知, 存在 $n_0$ 及 $T \in \mathbf{N}^*$, 使得对任意 $k \geqslant n_0$, 都有 $y_{k+T}=y_k$. 特别地, 有
+$$
+y_{n_0+m-1}=y_{n_0+m-1+T}, y_{n_0+m-2}=y_{n_0+n-2+T} .
+$$
+两式相减, 结合 式\ref{eq1}及 $y_k$ 的定义可知 $y_{n_0-1}=y_{n_0-1+T}$, 依此倒推可知, 对任意 $k \geqslant$ 1 , 都有 $y_k=y_{k+T}$.
+为得到我们的结论及计算上的方便, 我们将数列 $\left\{x_n\right\}$ 的下标依式\ref{eq1}确定的递推关系向负整数延拓, 结合上面的讨论, 可知对任意 $k \in \mathbf{Z}$, 都有 $y_k=y_{k+T}$.
+现在由 $x_n=x_{n+m}-x_{n+m-1}$ 可知 $x_0=x_{-1}=\cdots=x_{-(m-2)}=1$ (这里用到初始条件: 对任意 $1 \leqslant j \leqslant m$, 都有 $\left.x_j=j\right)$, 进而, 有 $x_{-(m-1)}=x_{-m}=\cdots= x_{-(2 m-3)}=0$. 结合 $y_k=y_{k+T}$, 可知
+$$
+\begin{aligned}
+& \left(y_{-(2 m-3)+T}, \cdots, y_{-(m-1)+T}\right) \\
+= & \left(y_{-(2 m-3)}, \cdots, y_{-(m-1)}\right)=(0, \cdots, 0) .
+\end{aligned}
+$$
+而 $y_{-(m-2)}=\cdots=y_0=1$, 故 $-(2 m-3)+T \geqslant 1$, 这表明: 数列 $\left\{y_k\right\}$ 中存在下标为正整数的连续 $m-1$ 项都等于零.
+所以, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $m$ 为给定的正整数, 对任意正整数 $n$, 用 $S_m(n)$ 表示 $n$ 在十进制表示下各数码的 $m$ 次方之和.
+例如 $S_3(172)=1^3+7^3+2^3=352$. 考虑数列: $n_0$ 为正整数, $n_k=S_m\left(n_{k-1}\right), k=1,2, \cdots$.
+(1) 证明: 对任意正整数 $n_0$, 数列 $\left\{n_k\right\}$ 都是一个周期数列;
+(2)证明: 当 $n_0$ 变化时, (1) 中数列的最小正周期构成的集合为有限集.
+%%<SOLUTION>%%
+证明:注意到, 对正整数 $n \geqslant 10^{m+1}$, 存在 $p \in \mathbf{N}^*, p \geqslant m+1$, 使得 $10^p \leqslant n<10^{p+1}$, 此时 $n$ 为十进制中的 $p+1$ 位数, 故
+$$
+\begin{aligned}
+S_m(n) & \leqslant(p+1) \cdot 9^m<(p+1) \cdot 9^{p-1} \\
+& <9^p+\mathrm{C}_p^1 \cdot 9^{p-1}>(9+1)^p=10^p \leqslant n .
+\end{aligned}
+$$
+这表明数列 $\left\{n_k\right\}$ 中的项满足: 若 $n_k \geqslant 10^{m+1}$, 则 $n_{k+1}=S_m\left(n_k\right)<n_k$.
+另一方面, 若正整数 $n<10^{m+1}$, 则
+$$
+S_m(n) \leqslant(m+1) \cdot 9^m<(9+1)^{m+1}=10^{m+1} .
+$$
+即可得: 如果 $n_k<10^{m+1}$, 那么 $n_{k+1}=S_m\left(n_k\right)$ 亦小于 $10^{m+1}$.
+上述讨论表明: 当下标 $k$ 充分大时, 必有 $n_k<10^{m+1}$. 于是, 数列 $\left\{n_k\right\}$ 从某一项开始, 每一项都为集合 $\left\{1,2, \cdots, 10^{m+1}-1\right\}$ 中的数, 即存在 $k_0 \in \mathbf{N}^*$, 使得对任意 $k \geqslant k_0$, 都有 $1 \leqslant n_k \leqslant 10^{m+1}-1$. 结合抽屉原理可知, 存在 $r 、 s \in \mathbf{N}^*$, $r>s \geqslant k_0$, 使得 $n_r=n_s$. 利用 $\left\{n_k\right\}$ 的定义知, 对 $k \geqslant s$, 都有 $n_k=n_{k+T}$, 这里 $T=r-s$, 并可使得 $T \leqslant 10^{m+1}-1$.
+所以, 对任意 $n_0 \in \mathbf{N}^*$, 数列 $\left\{n_k\right\}$ 都为周期数列, 其最小正周期 $\leqslant 10^{m+1}-1$. 从而, (1) 与 (2)都成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 任意选定一个正整数 $a_0$, 再任取 $a_1 \in\left\{a_0+54, a_0+77\right\}$,如此下去, 当 $a_k$ 确定后, 再选取 $a_{k+1} \in\left\{a_k+54, a_k+77\right\}$ 得到无穷数列 $\left\{a_n\right\}$. 证明: 该数列中总有一项, 其末两位数字相同.
+%%<SOLUTION>%%
+证明:在模 100 的意义下讨论.
+我们用 $b_n$ 表示 $a_n$ 除以 100 所得的余数, 这里将 $b_n$ 都理解为两位数, 即 $b_n$ 是 $00,01, \cdots, 99$ 中数.
+依数列 $\left\{a_n\right\}$ 的定义可知, 对任意 $n \in \mathbf{N}^*$, 都有 $b_{n+1} \equiv b_n+77$ 或 $b_n+2 \times 77(\bmod 100)$.
+注意到 $(77,100)=1$, 故当 $j$ 跑遍模 100 的完系时, 00 $77 j$ 也跑遍模 100 的完系, 对 $j=0,1,2, \cdots, 99$, 我们将 $77 j$ 除以 100 所得的余数排成右边所示的圆圈.
+那么, 由 $\left\{b_n\right\}$ 的结构可知, $b_n$ 与 $b_{n+1}$ 是圆圈上相邻的数或者中间隔一个数.
+因此, 圆圈上任意相邻的两个数中必有一个是 $\left\{b_n\right\}$ 中的项.
+而圆圈上 00 与 77 相邻, 故存在 $n \in \mathbf{N}^*$, 使得 $b_n=00$ 或 77 ,也就是 $a_n$ 的末两位数字是 00 或 77 .
+所以, 命题成立.
+说明尽管数列 $\left\{a_n\right\}$ 的每一项都有两种选择, 在模 100 的意义下也不是周期变化的,但跳跃性有限,组合方法的引人使问题迎刃而解.
+%%PROBLEM_END%%
+
+

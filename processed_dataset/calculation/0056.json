@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题9 设集合 $A=\\left\\{x \\mid x^2-a x+a^2-19=0\\right\\}, B=\\left\\{x \\mid x^2-5 x+6=0\\right\\}$, $C=\\left\\{x \\mid x^2+2 x-8=0\\right\\}$, 且 $A \\cap B \\neq \\varnothing, A \\cap C=\\varnothing$. 则实数 $a=?$",
+    "solution": "$a=-2 . B=\\{2,3\\}, C=\\{2,-4\\}$. 由第 8 题图题设知 $3 \\in A, 2 \\notin A,-4 \\notin A$. 将 3 代入方程 $x^2-a x+a^2-19=0$, 得 $a=-2$ 或 5 . 然后逐一检验.",
+    "remark": "",
+    "figures": []
+}

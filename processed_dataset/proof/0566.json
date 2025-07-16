@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例3. 对于数集 $M$, 定义 $M$ 的和为 $M$ 中各数的和, 记为 $S(M)$. 设 $M$ 是若干个不大于 15 的正整数组成的集合,且 $M$ 的任何两个不相交的子集有不同的和,求 $S(M)$ 的最大值.",
+    "solution": "分析:条件, 很易构造使 $S(M)$ 最大的集合 $M$ : 首先选取 15、14、13, 则不取 12 , 再选取 11 , 则不取 10 和 9 : 最后选取 8 , 剩下的数都不能取,得到集合 $M=\\{15,14,13,11,8\\}$, 此时, $|M|=5, S(M)=61$. 由此, 我们猜想 $S(M) \\leqslant 61$. 为证明猜想, 直觉告诉我们 $M$ 不能太大, 因而可进一步猜想: $|M| \\leqslant 5$. 对此, 可采用反证法并运用抽庶原理.\n解取 $M=\\{15,14,13,11,8\\}$, 此时, $S(M)=61$. 下面证明:对任何合乎题意的集合 $M$, 有 $S(M) \\leqslant 61$. 为此, 我们先证明: $|M| \\leqslant 5. \\label{eq1} $\n用反证法, 假设 $|M| \\geqslant 6$, 考察 $M$ 的元素个数不多于 4 的所有子集 $A$, 则\n$S(A) \\leqslant 15+14+13+12=54$, 而这样的子集 $A$ 的个数为 $\\mathrm{C}_6^1+\\mathrm{C}_6^2+\\mathrm{C}_6^3+ \\mathrm{C}_6^4=56$, 从而必有两个子集 $A 、 B$, 使 $S(A)=S(B)$. 令 $A^{\\prime}=A \\backslash(A \\cap B)$, $B^{\\prime}=B \\backslash(A \\cap B)$, 则 $A^{\\prime} 、 B^{\\prime}$ 不相交, 且 $S\\left(A^{\\prime}\\right)=S\\left(B^{\\prime}\\right)$, 与题设条件矛盾.\n所以 $|M| \\leqslant 5$.\n考察任意一个合乎条件的 $M$.\n(1) 若 $15 \\notin M$, 则由 式\\ref{eq1}, 有 $S(M) \\leqslant 14+13+12+11+10=60$;\n(2) 若 $14 \\notin M$, 则由 式\\ref{eq1}, 有 $S(M) \\leqslant 15+13+12+11+10=61$;\n(3)若 $13 \\notin M$, 则注意到 $15+11=14+12$, 有 $M \\neq\\{15,14,12,11$, $10\\}$, 所以, 由 式\\ref{eq1} 有, $S(M)<15+14+12+11+10=62$;\n(4) 若 $15,14,13 \\in M$, 则 $12 \\notin M$.\n(i) 若 $11 \\in M$, 则 $10,9 \\notin M$. 则由 式\\ref{eq1}, $S(M) \\leqslant 15+14+13+11+ 8=61$;\n(ii) 若 $11 \\notin M$. 则由 式\\ref{eq1}, $S(M) \\leqslant 15+14+13+10+9=61$.\n综上所述,有 $S(M) \\leqslant 61$. 故 $S(M)$ 的最大值为 61 .",
+    "remark": "",
+    "figures": []
+}

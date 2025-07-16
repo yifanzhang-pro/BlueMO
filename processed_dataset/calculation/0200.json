@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 如果自然数 $a$ 的各位数字之和等于 7 , 那么称 $a$ 为 \"吉祥数\". 将所有 \"吉祥数\" 从小到大排成一列 $a_1, a_2, a_3, \\cdots$, 若 $a_n=2005$, 则 $a_{5 n}=$ .",
+    "solution": "设 $k$ 位 \"吉祥数\" 的各位数字从高位到低位依次为 $x_1, x_2, \\cdots, x_k$, 则 $x_1+x_2+\\cdots+x_k=7$ 其中 $x_1 \\geqslant 1, x_i \\geqslant 0(2 \\leqslant i \\leqslant k)$, 令 $y_1=x_1-1, y_i= x_i(2 \\leqslant i \\leqslant k)$, 则 $y_1+y_2+\\cdots+y_k=6$ 其中 $y_i \\geqslant 0(1 \\leqslant i \\leqslant k)$ (1), 故 $k$ 位\"吉祥数\" 的个数 $p(k)$ 等于不定方程 (1) 的非负整数解的个数, 即 $p(k)=\\mathrm{C}_{k+5}^6$. 而 2005 是形如 $\\overline{2 a b c}$ 的 \"吉祥数\" 中最小的一个, 且 $p(1)=\\mathrm{C}_6^6=1, p(2)=\\mathrm{C}_7^6=7$, $p(3)=\\mathrm{C}_8^6=28$, 以及形如 $\\overline{1 a b c}$ 的 \"吉祥数\" 的个数等于不定方程 $a+b+c=6$ 的非负整数解的个数, 即 $\\mathrm{C}_{6+3-1}^6=28$ 个.\n故 2005 是第 $1+7+28+28+1=65$ 个 \"吉祥数\", 即 $a_{65}=2005$, 从而 $n=65,5 n=325$. 又 $p(4)=\\mathrm{C}_9^6=84, p(5)= \\mathrm{C}_{10}^6=210, \\sum_{k=1}^5 p(k)=330$ 即 $a_{330}=70000$, 从而 $a_{329}=61000, a_{328}=60100$, $a_{327}=60010, a_{326}=60001, a_{325}=52000$, 即 $a_{5 n}=a_{325}=52000$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题20. 方程 $\\sin x=\\frac{x}{100}$ 的实根个数有个.",
+    "solution": "63. 由 $y=\\sin x$ 和 $y=\\frac{x}{100}$ 都是奇函数知, 它的正负根个数相同,在 $x>0$ 时, 由 $\\frac{100}{\\pi}=31.8$, 知在 $(0,100]$ 上两函数的图象有 31 个交点, 同理在 $[-100,0)$ 上两函数的图象有 31 个交点, 又 $x=0$ 是方程的根,所以共有 63 个实数根.",
+    "remark": "",
+    "figures": []
+}

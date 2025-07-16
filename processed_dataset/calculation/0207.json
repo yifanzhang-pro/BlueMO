@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题10. 在一次射击比赛中, 有 8 个泥制的靶子挂成如图(<FilePath:./images/volume11/figures/fig-c1p10.png>)所示的三列 (其中两列 3 个,一列 2 个),一位神枪手每一枪按下面规则打中靶子:\n(1) 选择一列;\n(2)打中所选一列的最下面未打过的靶子.\n问打中这 8 个靶子共有多少种不同的顺序?",
+    "solution": "随意射击 8 个靶子有 8 ! 种方法, 由于每列靶子的顺序已经确定, 故现在的射击方法共有 $\\frac{8 !}{3 ! 2 ! 3 !}=560$ 种不同的顺序.",
+    "remark": "",
+    "figures": [
+        "./images/volume11/figures/fig-c1p10.png"
+    ]
+}

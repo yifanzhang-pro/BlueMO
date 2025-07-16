@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter16.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $n$ 是正偶数.\n证明在 $n \\times n$ 矩阵\n$$\n\\left(\\begin{array}{ccccc}\n1 & 2 & 3 & \\cdots & n \\\\\n2 & 3 & 4 & \\cdots & 1 \\\\\n3 & 4 & 5 & \\cdots & 2 \\\\\n\\cdots & \\cdots & \\cdots & \\cdots & \\cdots \\\\\nn & 1 & 2 & \\cdots & n-1\n\\end{array}\\right)\n$$\n中找不到一组\" $1,2, \\cdots, n$ \", 它们两两不同行且不同列.",
+    "solution": "证明:设有一组\" $1,2, \\cdots, n$ \", 它们两两不同行且不同列.\n设这组中的 $k$ 在第 $i_k$ 行第 $j_k$ 列 $(1 \\leqslant k \\leqslant n)$, 考虑到 $n$ 为偶数, 根据假设有\n$$\n\\sum_{k=1}^n i_k=\\sum_{k=1}^n j_k=\\frac{n(n+1)}{2} \\equiv \\frac{n}{2}(\\bmod n) .\n$$\n另一方面, 根据该矩阵的特点, 总有\n$$\ni_k+j_k-1 \\equiv k(\\bmod n) .\n$$\n因此\n$$\n\\sum_{k=1}^n i_k+\\sum_{k=1}^n j_k-\\sum_{k=1}^n 1 \\equiv \\sum_k^n k(\\bmod n)\n$$\n即 $\\frac{n}{2}+\\frac{n}{2}-n \\equiv \\frac{n}{2}(\\bmod n)$, 矛盾.\n因此矩阵中不可能有一组 \" $1,2, \\cdots, n$, 它们两两不同行且不同列.",
+    "remark": "注:在反证法假设下, 利用算两次方法得到矛盾, 是一种十分常见的证明思路, 本题即为一个典型的例子.\n很多情况下, 在解题中须从整体角度作考虑, 对某个量进行\"算两次\".",
+    "figures": []
+}

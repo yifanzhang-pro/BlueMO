@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-6.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 设数列 $\\left\\{a_n\\right\\}$ 是一个三阶等差数列, 其前面的若干项为 $1,2,8,22$, $47,86, \\cdots$. 求 $\\left\\{a_n\\right\\}$ 的通项公式.",
+    "solution": "解法二由定理 2 的结论,可设 $a_n=A n^3+B n^2+C n+D$, 其中 $A 、 B 、 C 、 D$ 待定.\n利用初始条件, 知\n$$\n\\left\\{\\begin{array}{l}\nA+B+C+D=1, \\\\\n8 A+4 B+2 C+D=2, \\\\\n27 A+9 B+3 C+D=8, \\\\\n64 A+16 B+4 C+D=22 .\n\\end{array}\\right.\n$$\n解得 $A=\\frac{1}{2}, B=-\\frac{1}{2}, C=-1, D=2$.\n所以 $a_n=\\frac{1}{2} n^3-\\frac{1}{2} n^2-n+2$.\n说明利用待定系数的方法求解高阶等差数列的通项公式也经常用到.",
+    "remark": "",
+    "figures": []
+}

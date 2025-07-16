@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 在 $\\triangle A B C$ 和 $\\triangle A E F$ 中, $B$ 是 $E F$ 的中点, $A B=E F=1, B C=6$, $C A=\\sqrt{33}$, 若 $\\overrightarrow{A B} \\cdot \\overrightarrow{A E}+\\overrightarrow{A C} \\cdot \\overrightarrow{A F}==2$, 则 $\\overrightarrow{E F}$ 与 $\\overrightarrow{B C}$ 的夹角的余弦值等于?",
+    "solution": "分析:与解 因为 $\\overrightarrow{A B} \\cdot \\overrightarrow{A E}+\\overrightarrow{A C} \\cdot \\overrightarrow{A F}=2$, 所以 $\\overrightarrow{A B} \\cdot(\\overrightarrow{A B}+\\overrightarrow{B E})+\\overrightarrow{A C}$. $(\\overrightarrow{A B}+\\overrightarrow{B F})=2$, 即\n$$\n\\overrightarrow{A B}^2+\\overrightarrow{A B} \\cdot \\overrightarrow{B E}+\\overrightarrow{A C} \\cdot \\overrightarrow{A B}+\\overrightarrow{A C} \\cdot \\overrightarrow{B F}=2\n$$\n因为 $\\overrightarrow{A B}^2=1, \\overrightarrow{A C} \\cdot \\overrightarrow{A B}=\\sqrt{33} \\times 1 \\times \\frac{33+1-36}{2 \\times \\sqrt{33} \\times 1}=-1, \\overrightarrow{B E}=-\\overrightarrow{B F}$, 所以\n$$\n1+\\overrightarrow{B F} \\cdot(\\overrightarrow{A C}-\\overrightarrow{A B})-1=2\n$$\n即 $\\overrightarrow{B F} \\cdot \\overrightarrow{B C}=2$.\n设 $\\overrightarrow{E F}$ 与 $\\overrightarrow{B C}$ 的夹角为 $\\theta$, 则有 $|\\overrightarrow{B F}| \\cdot|\\overrightarrow{B C}| \\cdot \\cos \\theta=2$, 即 $3 \\cos \\theta=2$, 所以 $\\cos \\theta=\\frac{2}{3}$.",
+    "remark": "",
+    "figures": []
+}

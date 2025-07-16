@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例10. 如图(<FilePath:./images/volume7/figures/fig-c5i12.png>), 设圆 $O_1$ 和圆 $O_2$ 相离, 引它们的一条外公切线切圆 $O_1$ 于 $A$, 切圆 $O_2$ 于 $C$,引它们的一条内公切线切圆 $O_1$ 于 $B$, 切圆 $O_2$ 于 $D$, 求证: 直线 $A B$ 和 $C D$ 的交点在两圆的连心线上.",
+    "solution": "证明:设 $A B$ 和 $C D$ 的交点为 $K, A C$ 与 $B D$ 的交点为 $E$, 连结 $O_1 E$, 则 $A B \\perp O_1 E$,$\\mathrm{CD} \\perp \\mathrm{O}_2 E$.\n由于 $O_1 E$ 平分 $\\angle A E B, O_2 E$ 平分 $\\angle C E D$, 所以 $O_1 E \\perp O_2 E$, 且 $A B \\perp C D$, 即 $K$ 是分别以 $A C$ 和 $B D$ 为直径的两圆 $S_1$ 和 $S_2$ 的交点.\n所以 $K$ 在圆 $S_1$ 和圆 $S_2$ 的根轴上.\n下面证明 $O_1 O_2$ 是圆 $S_1$ 和圆 $S_2$ 的根轴.\n因 $O_1 A \\perp A C$, 所以 $O_1 A$ 是圆 $S_1$ 的切线, $O_1$ 关于圆 $S_1$ 的幂是 $O_1 A^2$.\n同理, $O_1 B$ 是圆 $S_2$ 的切线, $O_1$ 关于圆 $S_2$ 的幂是 $O_1 B^2$.\n由于 $O_1 A^2=O_1 B^2$, 所以 $O_1$ 是关于圆 $S_1$ 和 $S_2$ 的等幕点.\n同理, $O_2$ 是关于圆 $S_1$ 和圆 $S_2$ 的等幕点, 故 $O_1 O_2$ 是圆 $S_1$ 和圆 $S_2$ 的根轴.\n于是, $K$ 在连心线 $O_1 O_2$ 上.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5i12.png"
+    ]
+}

@@ -1,0 +1,378 @@
+
+%%TEXT_BEGIN%%
+一、集合的概念集合是一个原始的概念,是数学中一个不定义的概念.
+管如此,对一个具体的集合而言,很多情况下我们还是可以采用列举法或描述法给出它的一个准确而清晰的表示.
+用描述法表示一个集合基于下面的概括原则:
+概括原则对任给的一个性质 ${\mathbf{}}P$ ,存在一个集合 ${\mathsf{S}},$ 它的元素恰好是具有性质P的所有对象,即
+$S = \{x | P(x)\}$,
+其中 $\textstyle P(x)$ 表示“$x$具有性质 ${\mathbf{}}P$ ”
+由此,我们知道集合的元素是完全确定的,同时它的元素之间具有互异性和无序性.
+集合的元素个数为有限数的集合称为有限集,元素个数为无限数的集合称为无限集.
+果有限集 $A$的元素个数为$n$,则称 $A$为$n$元集,记作 $|A|=n.$ 空集不含任何元素.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+二、集合与集合的关系在两个集合的关系中,子集是一个重要的概念,它的两个特例是真子集和集合相等.
+下面“充分必要条件”的角度来理解子集、真子集和集合相等的概念无疑是十分有益的:
+子集: $A\subseteq B\Longleftrightarrow$ 对任意 $x\in A.$ ,恒有 $x\in B$ ;
+真子集: $A\subsetneq B\Longleftrightarrow A\subseteq B$, 且存在$x^{\prime}\in B$ ,但 $x^{\prime}\not\in{\boldsymbol{A}}$;
+集合相等: $A=B\Longleftrightarrow A\subseteq B$ ,且 $B\subseteq A.$ 
+容易证明两个集合关系的如下性质
+1. $\emptyset \subseteq A,\,\emptyset\subseteq A\ (A\neq\emptyset)$;
+2. $A\subseteq B,\,B\subseteq C\Rightarrow A\subseteq C$ ;
+3. $n$ 元集$A$ 总共有 $2^n$ 个不同的子集.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+三、相关问题举例我们来研究一些与元素和集合有关的稍难的问题, 解决这些问题需要借助其他数学工具.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设集合 $M=\left\{x |{\frac{a x-5}{x^{2}-a}}<0,\,x\in\mathbb{R}\right\}$ 
+(1)当 $a=4$ 时,化简集合 $M$ ;
+(2)若 $3\in M,$ ,且 $5\notin M,$ 求实数a的取值范围.
+%%<SOLUTION>%%
+分析: 化简集合 $M$, 实际上就是解不等式 ${\frac{a x-5}{x^{2}-a}}<0.$ 
+解: (1) 当 $a=4$ 时,有
+$$
+{\frac{4x-5}{x^{2}-4}}<0\,, 
+$$
+即
+$$
+\left(x-\frac{5}{4}\right)(x+2)(x-2)<0. 
+$$
+$x<-2$ 或 ${\frac{5}{4}}<x<2.$ 
+所以 $M=(-\infty,-2)\cup\bigl({\frac{5}{4}}, 2\bigr).$ 
+(2)由 $3\in M,$ 得 ${\frac{3a-5}{3^{2}-a}}<0$,即 $\left(a-\frac{5}{3}\right)(a-9)\geqslant0$ ,所以
+$$
+a<{\frac{5}{3}}或a>9. 
+$$
+由 $5\notin M$ 得, ${\frac{5a-5}{5^{2}-a}}\geqslant0$ 或 $5^{2}-a=0$ ,所以
+$$
+1\leq a\leq25. 
+$$
+可得 $x\in\left[1,{\frac{5}{3}}\right)\cup\left(9,25\right]$.
+说明: $5\notin M$ 隐含了条件 $5^{2}-a=$ 0,这是容易被忽视的.
+由概括原则我们知道,判断一个对象 $x$ 是否为集合 $S$ 的元素,等价于判断 $x$ 是否具有性质 $P$. 
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $A$ 是两个整数平方差的集合,即 $A=\left\{x\mid x=m^{2}-n^{2},\,m,n\in\mathbf{Z}\right\}$.证明:
+(1) 若 $s,\ t\in A$ ,则 $s t\in A.$ 
+(2) 若 $s,\ t\in A,\ t\neq0$,则$\frac{s}{t}=p^{2}-q^{2}.$ ,其中 $p,q$ 是有理数.
+%%<SOLUTION>%%
+分析: 想办法将 $st$ 表示为两个整数的平方差.
+证明: (1)由 $s,t\in A$ ,可设
+$$
+s=m_{1}^{2}-n_{1}^{2}\,,\;t=m_{2}^{2}-n_{2}^{2}\,, 
+$$
+其中 $m_{1}, n_{1}, m_{2}, n_{2}$ 均为整数.
+是
+$$
+\begin{array}{l}{{s t=(m_{1}^{2}-n_{1}^{2})\,(m_{2}^{2}-n_{2}^{2})}}\\ {{=m_{1}^{2}m_{2}^{2}+2m_{1}m_{2}n_{1}n_{2}+n_{1}^{2}n_{2}^{2}-m_{1}^{2}n_{2}^{2}-2m_{1}m_{2}n_{1}n_{2}-m_{2}^{2}n_{1}^{2}}}\\ {{=(m_{1}m_{2}+n_{1}n_{2})^{2}-(m_{1}n_{2}+m_{2}n_{1})^{2}\,,}}\end{array} 
+$$
+即 $st$ 是两个整数的平方差,故 $s t\in A.$ 
+(2) 由于 $s, t \in A$ ,由(1)知 $s t\in A.$ 令 $s t=m^{2}-n^{2},m,n$ 是整数.
+ $t\neq 0$,因此
+$$
+{\frac{s}{t}}\,={\frac{s t}{t^{2}}}=\left({\frac{m}{t}}\right)^{2}-\left({\frac{n}{t}}\right)^{2}. 
+$$
+而 ${\frac{m}{t}},{\frac{n}{t}}$ 均为有理数,故命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设函数 $f(x)=x^{2}+a x+b\ (a,\,b\in\mathbb{R})$ ,集合 $A=\{x\mid x=f(x)$  $x\in\mathbb{R})\,,\,B=\{x\mid x=f(f(x))\,,\,x\in\mathbb{R}\}.$ 
+(1)证明: $A\subset B$ ;
+(2)当 $A=\{-1,\,3\}$ 时,求集合 $B$ .
+%%<SOLUTION>%%
+分析: 欲证 $A\subseteq B$, 只需证明方程 $x=f(x)$ 的根必是方程 $x=f(f(x))$ 的根.
+解: (1)对任意的 $x_{0}\in A$ ,有 $x_{0}=f(x_{0}), \, x_0 \in \mathbb{R}.$
+于是
+$$
+f(f(x_{0}))=f(x_{0})=x_{0}. 
+$$
+故 $x_{0}\in B$ ,所以 $A\subseteq B$. 
+(2)因 $A=\{-1,\,3\}$ ,所以
+$$
+\begin{align*}
+\left\{
+\begin{aligned}
+    (-\,1)^{2}+a*(-\,1)+b=-\,1, \\
+    3^{2}+a*3+b=3,
+\end{aligned}
+\right.
+\end{align*}
+$$
+解之得 $a=-1$, $b=-3$,故 $f(x)=x^{2}-x-3.$ 由 $x=f(f(x))$ 得
+$(x^2-x-3)^2-(x^2-x-3)-x-3= 0.$
+即
+$$
+(x^{2}-2x-3)\,(x^{2}-3)\,=\,0\,. 
+$$
+解得 $x=-1,\,3,\,\pm{\sqrt{3}}.$ 
+所以 $,B=\{-1,\ 3,-{\sqrt{3}}\,,{\sqrt{3}}\}$ .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设关于 $x$ 的不等式 $\left|x-{\frac{(a+1)^{2}}{2}}\right|\leq{\frac{(a-1)^{2}}{2}}$ 和 $x^{2}-3(a+1)x+2(3a+1)\leq0\ (a\in\mathbb{R})$ 的解集依次为 $A$、$B$,求使 $A\,\subseteq\,B$ 的实数a 的取值范围.
+%%<SOLUTION>%%
+分析: 要由 $A\subseteq B$ 求出a的范围,必须先求出$A$和 $B$.
+解: 由 $\left|x-{\frac{(a+1)^{2}}{2}}\right|\leqslant{\frac{(a-1)^{2}}{2}}$, 得
+$$
+-\frac{(a-1)^{2}}{2}\leq x-\frac{(a+1)^{2}}{2}\leq\frac{(a-1)^{2}}{2}, 
+$$
+解之,得 $2a\leq x\leq a^{2}+1.$ 所以 $,A=\{x\mid2a\leq x\leq a^{2}+1\}$ 
+由 $x^{2}-3(a+1)x+2(3a+1)\leq0$,得
+$$
+(x-2)[x-(3a+1)]\leq0. 
+$$
+当 $a\geq{\frac{1}{3}}$ 时, $B = \{ x \mid 2 \leq x \leq 3a+1 \}$ ;当 $a<{\frac{1}{3}}$时,$B=\{x \mid 3a+1 \leq x \leq 2 \}.$ 
+因为 $A\subseteq B$, 所以
+$$
+\begin{align*}
+\left\{
+\begin{aligned}
+    a \geq \frac{1}{3}, \\
+    2a \geq 2,\\
+    a^2+1 \leq 3a+1,
+\end{aligned}
+\right.
+\end{align*}
+$$ 
+或
+$$
+\begin{align*}
+\left\{
+\begin{aligned}
+    a < \frac{1}{3}, \\
+    2a \geq 3a+1,\\
+    a^2+1 \leq 2.
+\end{aligned}
+\right.
+\end{align*}
+$$ 
+解之,得 $1\leq a\leq3$ 或 $a=-1.$ 
+所以,a 的取值范围是[1, 3]U ${\{-1}\}.$ 
+说明: 上述解答是通过对参数 $a$ 的分类讨论完成的,其实还有更直接的解法.
+方程的角度看 $A\subseteq B$ 等价于方程 $x^{2}-3(a+1)x+2(3a+1)=0$ 在区间$(-\infty,2a]$ 和 $[a^{2}+1,\ +\infty)$ 内各有一个实根.
+ $f(x)\,=\,x^{2} - 3(a+1)x+2(3a+1)$ ,由 $A\subseteq B$, 得
+$$
+\begin{align*}
+\left\{
+\begin{aligned}
+    f(2a) \leq 0, \\
+    f(a^2+1) \leq 0,\\
+\end{aligned}
+\right.
+\end{align*}
+\longrightarrow 1\leq a \leq 3 \text{或} a=-1.$$ 
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设实数$a<b$, $D=[a\,,\,b]$ ,函数 $f(x)=k-\sqrt{x+2}\,,\;x\in D$ 的值域为 $E$. 若 $D=E$, 求实数 $k$ 的取值范围.
+%%<SOLUTION>%%
+解: 易知, 当 $x \geqslant-2$ 时 $f(x)=k-\sqrt{x+2}$ 为减函数.
+所以 $D=E=[a, b]$ 等价于方程组
+$$
+\left\{\begin{array}{l}
+k-\sqrt{a+2}=b, \\
+k-\sqrt{b+2}=a
+\end{array}\right.
+$$
+有实数解, 且 $a<b$.
+(1)一(2)得
+$$
+\begin{aligned}
+& \sqrt{b+2}-\sqrt{a+2}=b-a, \\
+& \frac{b-a}{\sqrt{b+2}+\sqrt{a+2}}=b-a .
+\end{aligned}
+$$
+因为 $a<b$, 所以
+$$
+\sqrt{b+2}+\sqrt{a+2}=1,
+$$
+即
+$$
+\sqrt{a+2}=1-\sqrt{b+2} \text {. }
+$$
+代入式(1)得
+$$
+k=b+1-\sqrt{b+2} .
+$$
+令 $\sqrt{b+2}=t$. 由式 (3) 知 $0 \leqslant t \leqslant 1$. 于是, 有
+$$
+k=t^2-t-1=\left(t-\frac{1}{2}\right)^2-\frac{5}{4} .
+$$
+故所求 $k$ 的范围是 $-\frac{5}{4} \leqslant k \leqslant-1$.
+如果 $A 、 B$ 是两个相等的数集, 那么可以得到 $A=B$ 的两个非常有用的必要条件:
+(1) 两个集合的元素之和相等;
+(2) 两个集合的元素之积相等.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 求所有的角 $\alpha$, 使得集合
+$$
+\{\sin \alpha, \sin 2 \alpha, \sin 3 \alpha\}=\{\cos \alpha, \cos 2 \alpha, \cos 3 \alpha\} .
+$$
+%%<SOLUTION>%%
+解: 设 $\alpha \in[0,2 \pi)$. 由已知得
+$$
+\sin \alpha+\sin 2 \alpha+\sin 3 \alpha=\cos \alpha+\cos 2 \alpha+\cos 3 \alpha,
+$$
+即
+$$
+\begin{aligned}
+2 \sin 2 \alpha \cos \alpha+\sin 2 \alpha & =2 \cos 2 \alpha \cos \alpha+\cos 2 \alpha, \\
+\sin 2 \alpha(2 \cos \alpha+1) & =\cos 2 \alpha(2 \cos \alpha+1) .
+\end{aligned}
+$$
+所以 $\sin 2 \alpha=\cos 2 \alpha$ 或 $\cos \alpha=-\frac{1}{2}$ (舍去).
+从而
+$$
+\begin{aligned}
+0 & =\sin 2 \alpha-\cos 2 \alpha \\
+& =\sin 2 \alpha-\sin \left(\frac{\pi}{2}-2 \alpha\right) \\
+& =2 \cos \frac{\pi}{4} \sin \left(2 \alpha-\frac{\pi}{4}\right) .
+\end{aligned}
+$$
+于是 $\alpha=\frac{\pi}{8}, \frac{5 \pi}{8}, \frac{9 \pi}{8}, \frac{13 \pi}{8}$.
+又 $\sin \alpha \sin 2 \alpha \sin 3 \alpha=\cos \alpha \cos 2 \alpha \cos 3 \alpha$, 且 $\sin 2 \alpha=\cos 2 \alpha$, 因此
+$$
+\begin{aligned}
+\cos 4 \alpha & =0, \\
+\alpha=\frac{(2 k-1) \pi}{8}, k & =1,2, \cdots, 8 .
+\end{aligned}
+$$
+经验证, $\alpha=\frac{k \pi}{4}+\frac{\pi}{8}(k \in \mathbf{Z})$ 满足题意.
+说明: 元素之和(积)相等只是两个集合相等的必要条件, 因此这里还必须检查集合的元素是否互异.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $S$ 为非空数集, 且满足: (i) $2 \notin S$; (ii) 若 $a \in S$, 则 $\frac{1}{2-a} \in S$. 证明:
+(1) 对一切 $n \in \mathbf{N}^*, n \geqslant 3$, 有 $\frac{n}{n-1} \notin S$;
+(2) $S$ 或者是单元素集,或者是无限集.
+%%<SOLUTION>%%
+分析: 对于 (1), 因为 $n \in \mathbf{N}^*$, 可以考虑采用数学归纳法.
+证明: (1) 因为 $S$ 非空, 所以存在 $a \in S$, 且 $a \neq 2$.
+我们用数学归纳法证明下面的命题:
+若 $a \in S$, 则对 $k \in \mathbf{N}^*, \frac{(k-1)-(k-2) a}{k-(k-1) a} \in S$, 且 $a \neq \frac{k+1}{k}$.
+当 $k=1$ 时, 显然 $a \in S$, 且 $a \neq 2$ 成立.
+设 $k \in \mathbf{N}^*, \frac{(k-1)-(k-2) a}{k-(k-1) a} \in S$ 且 $a \neq \frac{k+1}{k}$ 成立.
+由 (ii) 得
+$$
+\begin{gathered}
+\frac{1}{2-\frac{(k-1)-(k-2) a}{k-(k-1) a}} \in S, \\
+\frac{k-(k-1) a}{(k+1)-k a} \in S .
+\end{gathered}
+$$
+化简得
+$$
+\frac{k-(k-1) a}{(k+1)-k a} \in S \text {. }
+$$
+又 $\frac{k-(k-1) a}{(k+1)-k a} \neq 2$, 所以 $a \neq \frac{k+2}{k+1}$.
+综上, 由归纳原理知, 对 $k \in \mathbf{N}^*$ 命题成立.
+从而, 对一切 $n \in \mathbf{N}^*, n \geqslant 3$, $\frac{n}{n-1} \notin S$ 成立.
+(2) 由 (1) 知, 若 $a \in S, a \neq \frac{m}{m-1}\left(m \in \mathbf{N}^*, m \geqslant 3\right)$, 则 $\frac{(m-1)-(m-2) a}{m-(m-1) a} \in S$.
+所以, 当 $n \geqslant 2, m \geqslant 2, m \neq n$ 时,
+$$
+\begin{aligned}
+& \frac{(n-1)-(n-2) a}{n-(n-1) a}=\frac{(m-1)-(m-2) a}{m-(m-1) a} \\
+& \Leftrightarrow m(n-1)-(n-1)(m-1) a-m(n-2) a+(m-1)(n-2) a^2 \\
+& =n(m-1)-(n-1)(m-1) a-n(m-2) a+(n-1)(m-2) a^2 \\
+& \Leftrightarrow n-m+2(m-n) a+(n-m) a^2=0 \\
+& \Leftrightarrow(n-m)\left(1-2 a+a^2\right)=0 \\
+& \Leftrightarrow a=1 (\text { 因为 } n \neq m) .
+\end{aligned}
+$$
+因为 $\mathbf{N}^*$ 是无限集, 所以 $S$ 或者为单元素集 $\{1\}$ (当且仅当 $a=1$ ), 或者为无限集.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 用 $\sigma(S)$ 表示非空的整数集合 $S$ 的所有元素的和.
+设 $A=\left\{a_1\right.$, $\left.a_2, \cdots, a_{11}\right\}$ 是正整数的集合, 且 $a_1<a_2<\cdots<a_{11}$; 又设对每个正整数 $n \leqslant$ 1500 , 都存在 $A$ 的子集 $S$, 使得 $\sigma(S)=n$. 求 $a_{10}$ 的最小可能值.
+%%<SOLUTION>%%
+分析: 要求 $a_{10}$ 的最小值, 显然应使 $\sigma(A)=1500$. 又由题设, 应使 $a_{11}$ 尽可能大, 且前 10 个数之和不小于 750 , 故取 $a_{11}=750$. 考虑整数的二进制表示, 由 $1+2+\cdots+2^7=255$ 知, 前 8 个数应依次为 $1,2,4,8,16,32,64,128$. 这时 $a_9+a_{10}=495$, 从而有 $a_{10}=248$.
+解: 取 $A_0=\{1,2,4,8,16,32,64,128,247,248,750\}$, 易知 $A_0$ 满足题目要求,且 $a_{10}=248$. 故 $a_{10}$ 的最小可能值不超过 248 .
+另一方面, $a_{10}$ 不可能比 248 更小.
+这是因为前 10 个数之和不能小于 750 , 否则设 $\sum_{i=1}^{10} a_i=m, m<750$, 则 $a_{11}=1500-m$, 对 $n \in(m, 1500-m)$, 显然不存在 $A$ 的子集 $S$, 使 $\sigma(S)=n$. 因 $1+2+\cdots+2^?=255$, 由整数的二进制表示知, 其前 8 个数之和最大为 255 . 故 $a_9+a_{10}$ 的最小可能值为 495 , 从而 $a_{10}$ 至少为 248 .
+综上知, $a_{10}$ 的最小可能值为 248 .
+说明: 本例采用了构造法.
+直接构造一个符合题设的 $A_0$, 然后证明 $A_0$ 具有所要求的性质.
+这种方法在解有关集合和组合的问题中经常用到.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设 $S$ 是由 $2 n$ 个人组成的集合.
+求证: 其中必定有两个人,他们的公共朋友的个数为偶数.
+%%<SOLUTION>%%
+证明: 用反证法: 设 $S$ 为一个由 $2 n$ 个人组成的集合, $S$ 中每两个人的公共朋友数为奇数.
+对 $S$ 中的任意一个人 $A$, 记 $M=\left\{F_1, \cdots, F_k\right\}$ 为 $A$ 的朋友集, 可以证明： 对每个 $A, k$ 都为偶数.
+事实上, 对每个 $F_i \in M$, 考虑他在 $M$ 中的朋友数, 所有这 $k$ 个 $F_i$ 的这些朋友数之和为偶数 (因为朋友是相互的), 而对 $A 、 F_i$ 而言, 其公共朋友数为奇数, 故每个 $F_i$ 的这样的朋友数为奇数, 故 $k$ 为偶数.
+设 $k=2 m$, 现在考虑每个 $F_i \in M$, 他的所有朋友集不包括 $A$, 但不局限于 $M$ 中, 他的这样的朋友数为奇数 (因为 $F_i$ 的朋友数为偶数, 而 $A$ 不算在内). 因此,所有 $2 m$ 个这样的朋友集的元素个数之和为偶数.
+从而在 $2 n-1$ 个人 ( $A$ 除外) 中, 必有一个人在偶数个这样的朋友集中出现, 他与 $A$ 的公共朋友数为偶数.
+这个矛盾表明: 有两个 $S$ 中的人,他们的公共朋友数为偶数.
+说明: 上述解法采用了奇偶性分析来“制造”矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设 $n$ 是大于 1 的正整数,证明存在一个集合 $A \varsubsetneqq\{1,2, \cdots, n\}$, 使得
+(1) $|A| \leqslant 2[\sqrt{n}]+1$;
+(2) $\{|x-y| \mid x, y \in A, x \neq y\}=\{1,2, \cdots, n-1\}$.
+%%<SOLUTION>%%
+分析: 由 $|A| \leqslant 2[\sqrt{n}]+1$ 想到, 设 $n=k^2+b, 0 \leqslant b \leqslant 2 k$.
+证明: 设 $n=k^2+b, 0 \leqslant b \leqslant 2 k$.
+(1) 当 $b \leqslant k$ 时,考虑集合
+$$
+\begin{gathered}
+A=\left\{1,2, \cdots, k, 2 k, 3 k, \cdots, k^2, k^2+b\right\} \varsubsetneqq\{1,2, \cdots, n\}, \\
+|A|=2 k \leqslant 2[\sqrt{n}]+1=2 k+1,
+\end{gathered}
+$$
+而易知 $\{|x-y| \mid x, y \in A, x \neq y\}=\left\{1,2, \cdots, k^2+b-1\right\}$.
+(2) 当 $b>k$ 时,考虑集合
+$$
+A=\left\{1,2, \cdots, k, 2 k, 3 k, \cdots, k^2, k^2+k, k^2+b\right\} \varsubsetneqq\{1,2, \cdots, n\},
+$$
+同样有
+$$
+|A|=2 k+1 \leqslant 2[\sqrt{n}]+1 \text {, }
+$$
+且 $\{|x-y| \mid x, y \in A, x \neq y\}=\left\{1,2, \cdots, k^2+b-1\right\}$.
+综上知, 原命题成立.
+%%PROBLEM_END%%
+
+

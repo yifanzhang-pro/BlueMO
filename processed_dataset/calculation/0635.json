@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例4 设函数 $f(x)=\\sin ^2 x+(2 a-1) \\sin x+a^2+\\frac{1}{4}$, 已知 $x \\in \\left[\\frac{5}{6} \\pi, \\frac{3}{2} \\pi\\right]$, 求 $f(x)$ 的最值.",
+    "solution": "解:设 $\\sin x=t$, 则 $t \\in\\left[-1, \\frac{1}{2}\\right]$.\n$f(x)=g(t)=t^2+(2 a-1) t+a^2+\\frac{1}{4}$, 对称轴为 $t=\\frac{1-2 a}{2}$.\n当 $\\frac{1-2 a}{2} \\leqslant-1$ 即 $a \\geqslant \\frac{3}{2}$ 时, $\\left[-1, \\frac{1}{2}\\right]$ 为 $g(t)$ 的单调增区间,所以\n$$\nf_{\\min }=g(-1)=a^2-2 a+\\frac{9}{4}, f_{\\max }=g\\left(\\frac{1}{2}\\right)=a^2+a .\n$$\n当 $-1<\\frac{1-2 a}{2} \\leqslant-\\frac{1}{4}$ 即 $\\frac{3}{4} \\leqslant a<\\frac{3}{2}$ 时, $g(-1) \\leqslant g\\left(\\frac{1}{2}\\right)$, 所以\n$$\nf_{\\min }=g\\left(\\frac{1-2 a}{2}\\right)=a, f_{\\max }=g\\left(\\frac{1}{2}\\right)=a^2+a .\n$$\n当 $-\\frac{1}{4}<\\frac{1-2 a}{2} \\leqslant \\frac{1}{2}$ 即 $0 \\leqslant a<\\frac{3}{4}$ 时, $g(-1)>g\\left(\\frac{1}{2}\\right)$, 所以\n$$\nf_{\\min }=g\\left(\\frac{1-2 a}{2}\\right)=a, f_{\\max }=g(-1)=a^2-2 a+\\frac{9}{4} .\n$$\n当 $\\frac{1-2 a}{2}>\\frac{1}{2}$ 即 $a<0$ 时, $\\left[-1, \\frac{1}{2}\\right]$ 为 $g(t)$ 的单调减区间, 所以\n$$\nf_{\\min }=g\\left(\\frac{1}{2}\\right)=a^2+a, f_{\\max }=g(-1)=a^2-2 a+\\frac{9}{4} .\n$$\n评注求形如 $f(x)=A \\sin ^2 x+B \\sin x+C$ 形式的最值, 通常用换元法, 化成二次函数在区间的最值问题.",
+    "remark": "",
+    "figures": []
+}

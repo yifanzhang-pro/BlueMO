@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例1-3. 已知集合 $S=\\{1,2, \\cdots, 100\\}$. 试证明:\n若 $C$ 是 $S$ 的 51 元子集,则必存在 $i, j \\in C, i<j$, 使得 $i \\mid j$",
+    "solution": "证明:令 $C_k=\\left\\{x \\in S \\mid x=2^p(2 k-1), p \\in \\mathbf{N}\\right\\}, k=1,2, \\cdots, 50$.\n由于 $\\bigcup_{k=1}^{50} C_k=S$, 根据抽屉原理, 51 元集合 $C$ 中必存在两个元素 $i, j(i< j$ ), 它们属于同一个 $C_k$, 由 $C_k$ 的构造方法可得 $i \\mid j$. 故结论成立.",
+    "remark": "",
+    "figures": []
+}

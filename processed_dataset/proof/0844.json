@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 已知 $\\triangle P_1 P_2 P_3$ 及三角形内任意一点 $P$, 直线 $P_1 P, P_2 P, P_3 P$ 分别交对边于 $Q_1, Q_2, Q_3$. 求证: 在 $\\frac{P_1 P}{P Q_1}, \\frac{P_2 P}{P Q_2}, \\frac{P_3 P}{P Q_3}$ 这三个比值中, 至少有一个不大于 2 ,也至少有一个不小于 2.",
+    "solution": "设 $S_{\\triangle P P_2 P_3}=S_1, S_{\\triangle P P_3 P_1}=S_2, S_{\\triangle P P_1 P_2}=S_3$.\n易知 $\\frac{P_1 P}{P Q_1}=\\frac{S_{\\triangle P_1 P_2 P}}{S_{\\triangle P P_2 Q_1}}=\\frac{S_{\\triangle P_1 P_3 P}}{S_{\\triangle P P_3 Q_1}}$, 故\n$$\n\\frac{P_1 P}{P Q_1}=\\frac{S_{\\triangle P_1 P_2 P}+S_{\\triangle P_1 P_3 P}}{S_{\\triangle P P_2 Q_1}+S_{\\triangle P P_3 Q_1}}=\\frac{S_2+S_3}{S_1} .\n$$\n同理可得\n$$\n\\frac{P_2 P}{P Q_2}=\\frac{S_3+S_1}{S_2}, \\frac{P_3 P}{P Q_3}=\\frac{S_1+S_2}{S_3} .\n$$\n由对称性, 不妨设 $S_1 \\geqslant S_2 \\geqslant S_3$, 则有 $\\frac{P_1 P}{P Q_1} \\leqslant 2, \\frac{P_3 P}{P Q_3} \\geqslant 2$.",
+    "remark": "",
+    "figures": []
+}

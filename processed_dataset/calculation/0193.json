@@ -1,0 +1,19 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter9.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 给定边长为 10 的正三角形, 用平行于其边的直线将它全部剖分为边长为 1 的小正三角形.\n现有 $m$ 个如图(<FilePath:./images/volume11/figures/fig-c9i3.png>) 所示的三角形块且有 25- $m$ 个如图(<FilePath:./images/volume11/figures/fig-c9i4.png>) 所示的四边形块, 问\n(1) 若 $m=10$, 能否用它们拼出原三角形?\n(2) 求能拼出原三角形的所有 $m$.",
+    "solution": "解:如图(<FilePath:./images/volume11/figures/fig-c9i5.png>) 把小正三角形块染上黑白相间的两种颜色.\n设 $m$ 个三角形块能覆盖如图(<FilePath:./images/volume11/figures/fig-c9i5.png>) 中 3 个白色小正三角形的有 $x$ 个, 则如图(<FilePath:./images/volume11/figures/fig-c9i5.png>) 中白色小正三角形的个数为\n$$\n3 x+(m-x)+2(25-m)=2 x+50-m .\n$$\n而如图(<FilePath:./images/volume11/figures/fig-c9i5.png>) 中共有 55 个白色小正三角形,若 $m$ 个三角形块和 25- $m$ 个四边形块可以覆盖如图(<FilePath:./images/volume11/figures/fig-c9i5.png>), 则\n$$\n2 x+50-m=55 \\text {, 即 } 2 x=m+5 .\n$$\n由此可知 $m$ 为奇数.\n(1) 若 $m=10$, 则 $m$ 为偶数,故不能用 10 个三角形块及 15 个四边形块拼出原三角形;\n(2)显然 $m \\geqslant x$, 于是 $2 m \\geqslant 2 x=m+5$, 即 $m \\geqslant 5$, 又 $25-m \\geqslant 0$, 所以 $m \\leqslant 25$. 故 $m \\in M=\\left\\{n \\mid 5 \\leqslant n \\leqslant 25, n \\in \\mathbf{N}_{+}, n\\right.$ 为奇数 $\\}$. 另一方面, 对任意 $m=2 k-1 \\in M(3 \\leqslant k \\leqslant 13)$. 如图(<FilePath:./images/volume11/figures/fig-c9i6.png>), 我们先用 5 个正三角形块覆盖原三角形右侧的 5 个边长为 2 的正三角形 (如图(<FilePath:./images/volume11/figures/fig-c9i6.png>) 中画有阴影的正三角形). 再用 $m-5=2(k-3)$ 个如图(<FilePath:./images/volume11/figures/fig-c9i3.png>) 的正三角形块覆盖图中 $k-3$ 个 $2 \\times 2$ 的菱形.\n最后余下的 $10-(k-3)=13-k$ 个 $2 \\times 2$ 的菱形可用 $25-m=2(13-k)$ 个平行四边形覆盖.\n综上可知, 所求的一切 $m$ 组成的集合为 $M$.",
+    "remark": "",
+    "figures": [
+        "./images/volume11/figures/fig-c9i3.png",
+        "./images/volume11/figures/fig-c9i4.png",
+        "./images/volume11/figures/fig-c9i5.png",
+        "./images/volume11/figures/fig-c9i5.png",
+        "./images/volume11/figures/fig-c9i5.png",
+        "./images/volume11/figures/fig-c9i5.png",
+        "./images/volume11/figures/fig-c9i5.png",
+        "./images/volume11/figures/fig-c9i6.png",
+        "./images/volume11/figures/fig-c9i6.png",
+        "./images/volume11/figures/fig-c9i3.png"
+    ]
+}

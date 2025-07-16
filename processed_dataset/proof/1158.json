@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-4.tex",
+    "problem_type": "proof",
+    "problem": "例6. 给定平面上的 $n$ 个相异点.\n证明: 其中距离为单位长的点对少于 $2 \\sqrt{n^3}$ 对.",
+    "solution": "证明:对于平面上的点集 $\\left\\{P_1, P_2, \\cdots, P_n\\right\\}$, 令 $a_i$ 为与 $P_i$ 相距为单位长的点 $P_i$ 的个数.\n不妨设 $a_i \\geqslant 1$, 则相距为单位长的点对的对数是\n$$\nA=\\frac{a_1+a_2+\\cdots+a_n}{2} .\n$$\n设 $C_i$ 是以点 $P_i$ 为圆心, 以 1 为半径的圆.\n因为每对圆至多有 2 个交点,故所有的 $C_i$ 至多有\n$$\n2 \\mathrm{C}_n^2=n(n-1)\n$$\n个交点.\n点 $P_i$ 作为 $C_j$ 的交点出现 $\\mathrm{C}_{a_j}^2$ 次, 因此\n$$\nn(n-1) \\geqslant \\sum_{j=1}^n \\mathrm{C}_{a_j}^2=\\sum_{j=1}^n \\frac{a_j\\left(a_j-1\\right)}{2} \\geqslant \\frac{1}{2} \\sum_{j=1}^n\\left(a_j-1\\right)^2 .\n$$\n由柯西不等式, 得\n$$\n\\left[\\sum_{j=1}^n\\left(a_j-1\\right)\\right]^2 \\leqslant n \\cdot \\sum_{j=1}^n\\left(a_j-1\\right)^2 \\leqslant n \\cdot 2 n(n-1)<2 n^3,\n$$\n于是从而\n$$\n\\sum_{j=1}^n\\left(a_j-1\\right)<\\sqrt{2} \\cdot \\sqrt{n^3}\n$$\n$$\nA=\\frac{\\sum_{j=1}^n a_j}{2}<\\frac{n+\\sqrt{2 n^3}}{2}<2 \\sqrt{n^3},\n$$\n故命题成立.",
+    "remark": "",
+    "figures": []
+}

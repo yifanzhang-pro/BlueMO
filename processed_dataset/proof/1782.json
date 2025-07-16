@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $R$ 与 $r$ 分别是锐角 $\\triangle A B C$ 的外接圆与内切圆的半径, 设 $\\angle A$ 是 $\\triangle A B C$\n的三个内角中最大的一个, $M$ 是边 $B C$ 的中点, 过点 $B 、 C$ 作 $\\triangle A B C$ 的外接圆的切线, 交于点 $X$. 证明: $\\frac{r}{R} \\geqslant \\frac{A M}{A X}$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c10a1.png>), 设 $O$ 与 $I$ 分别是锐角 $\\triangle A B C$ 的外心与内心, 则 $O 、 M 、 X$ 三点共线, 且 $\\triangle O X C \\backsim \\triangle O C M$. 因此, $\\frac{O C}{O X}= \\frac{O M}{O C}$. 由于 $O C=R=O A$, 可得 $\\frac{O A}{O M}=\\frac{O X}{O A}$. 于是, $\\triangle O A M \\backsim \\triangle O X A$. 从而, $\\frac{A M}{A X}=\\frac{O M}{R}$.\n下面只需再证明 $O M \\leqslant r$. 比较 $\\angle O B M$ 与 $\\angle I B M$, 由于 $\\triangle A B C$ 是锐角三角形, $O$ 与 $I$ 位于 $\\triangle A B C$ 内部, 于是, 有 $\\angle O B M=\\frac{\\pi}{2}-\\angle A=\\frac{1}{2}(\\angle A+\\angle B+\\angle C)-\\angle A=\\frac{1}{2}(\\angle B+\\angle C-\\angle A) \\leqslant \\frac{\\angle B}{2}=\\angle I B M$. 类似可得 $\\angle O C M \\leqslant \\angle I C M$. 于是, 点 $O$ 位于 $\\triangle I B C$ 内部或边界上.\n因此, $O M \\leqslant r$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c10a1.png"
+    ]
+}

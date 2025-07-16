@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter20.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设 $F$ 是一个由整数组成的有限集,满足:\n(1) 对任意 $x \\in F$, 存在 $y, z \\in F$ (可以相同), 使得 $x=y+z$;\n(2) 存在 $n \\in \\mathbf{N}^*$, 使得对任何正整数 $k(1 \\leqslant k \\leqslant n)$ 及任意 $x_1, x_2, \\cdots$, $x_k \\in F$ (可以相同), 都有 $\\sum_{i=1}^k x_i \\neq 0$.\n求证: $F$ 至少含有 $2 n+2$ 个元素.",
+    "solution": "证明:然 $0 \\notin F$, 且 $F$ 中所有元素不全同号(否则,绝对值最小的完素 $x$ 无法表示成 $y+z(y, z \\in F)$ 的形式).\n设 $x_1, x_2, \\cdots, x_m$ 是 $F$ 中所有正的元素.\n我们证明 $m \\geqslant n+1$.\n作含 $m$ 个顶点 $v_1, v_2, \\cdots, v_m$ 的有向图 $G$ 如下: 对每个 $i \\in\\{1,2, \\cdots$, $m\\}$, 由于存在 $y, z \\in F$, 使 $x_i=y+z>0$, 不妨设 $y>0$, 则 $y$ 必等于某个 $x_j(j \\neq i)$, 如此就在 $G$ 中作一条有向边 $v_i \\rightarrow v_j$.\n由 $G$ 的作法可知每个顶点 $v_i$ 的出度为 1 , 因此 $G$ 中必存在圈, 不妨设为\n$$\nv_{i_1} \\rightarrow v_{i_2} \\rightarrow \\cdots \\rightarrow v_{i_k} \\rightarrow v_{i_1}(k \\leqslant m) .\n$$\n这表明存在 $z_1, z_2, \\cdots, z_k \\in F$, 使得\n$$\n\\left\\{\\begin{array}{l}\nx_{i_1}=x_{i_2}+z_1, \\\\\nx_{i_2}=x_{i_3}+z_2, \\\\\n\\cdots \\\\\nx_{i_k}=x_{i_1}+z_k,\n\\end{array}\\right.\n$$\n求和得\n$$\nz_1+z_2+\\cdots+z_k=0 .\n$$\n为不与条件 (2) 矛盾, 必有 $k>n$, 从而 $m \\geqslant k \\geqslant n+1$.\n同理知 $F$ 中负的元素也至少有 $n+1$ 个, 由此可知 $F$ 至少含有 $2 n+2$ 个元素.",
+    "remark": "注:本题巧妙构造有向图来解题.\n从本题的论证中可以发现, 即使对 $F$ 为有限实数集合的情况, 结论仍是成立的.\n读者可进一步考虑 $F$ 能否恰含有 $2 n+2$ 个元素.",
+    "figures": []
+}

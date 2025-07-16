@@ -1,0 +1,270 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 如图(<FilePath:./figures/fig-c3p1.png>),已知 $\triangle A B C$ 内一点 $P$, 设 $D 、 E 、 F$ 分别为点 $P$ 在边 $B C 、 C A 、 A B$ 上的投影.
+假设 $A P^2+ P D^2=B P^2+P E^2=C P^2+P F^2$, 且 $\triangle A B C$ 的三个旁心分别为 $I_A 、 I_B 、 I_C$. 证明: $P$ 是 $\triangle I_A I_B I_C$ 的外心.
+%%<SOLUTION>%%
+证明: 由已知条件可得, $B F^2-C E^2=\left(B P^2-P F^2\right)-\left(C P^2-P E^2\right)= \left(B P^2+P E^2\right)-\left(C P^2+P F^2\right)=0$. 从而, $B F=C E$. 设 $x=B F=C E$. 同理可设 $y=C D=A F, z=A E=B D$. 若 $D 、 E 、 F$ 中有一个点在三边的延长线上, 如点 $D$ 在 $B C$ 的延长线上, 则有 $A B+B C=(x+y)+(z-y)=x+z=A C$, 矛盾: 因此, $D 、 E 、 F$ 三个点都在 $\triangle A B C$ 的三边上.
+设 $a=B C, b=C A, c= A B, p=\frac{1}{2}(a+b+c)$, 则 $x=p-a, y=p-b, z=p-c$. 因为 $B D=p-c$, $C D=p-b$, 所以, $D$ 是 $\triangle A B C$ 的 $\angle B A C$ 内的旁切圆与边 $B C$ 的切点.
+同理, $E, F$ 分别是 $\angle A B C 、 \angle A C B$ 内的旁切圆与边 $C A 、 A B$ 的切点.
+由于 $P D$ 和 $I_A D$ 均垂直于 $B C$, 所以, $P 、 D 、 I_A$ 三点共线.
+同理, $P 、 E 、 I_B$ 和 $P 、 F 、 I_C$ 均三点共线.
+因为 $I_A 、 C 、 I_B$ 三点共线, 且 $\angle P I_A C=\angle P I_B C=\frac{\angle A C B}{2}$,
+所以, $P I_A=P I_C$. 同理可得, $P I_A=P I_B=P I_C$. 因此, $P$ 是 $\triangle I_A I_B I_C$ 的外心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 已知圆内接四边形 $A B C D, K 、 L 、 M 、 N$ 分别是边 $A B 、 B C 、 C D 、 D A$ 的中点.
+证明: $\triangle A K N$ 、 $\triangle B K L 、 \triangle C L M 、 \triangle D M N$ 的垂心恰好是一个平行四边形的四个顶点.
+%%<SOLUTION>%%
+证明: 由于 $N$ 是 $A D$ 的中点, 有 $O N \perp A D$, 这里 $O$ 是圆心.
+由于 $K H_1$ 是一条高线, 所以, $K H_1 \perp A D$. 因此, $K H_1 / / O N$. 同理可证 $O K / / N H_1$. 这表明四边形 $O N H_1 K$ 是平行四边形.
+类似地, 四边形 $O N H_4 M$ 也是平行四边形.
+于是, 四边形 $K H_1 H_4 M$ 也是平行四边形.
+考察 $K M$ 的另一侧, 易看出四边形 $\mathrm{MKH}_2 \mathrm{H}_3$ 也是平行四边形.
+利用上述结论, 便可断定四边形 $\mathrm{H}_1 \mathrm{H}_2 \mathrm{H}_3 \mathrm{H}_4$ 是平行四边形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $D 、 E 、 F$ 分别为 $\triangle A B C$ 的三边 $B C 、 C A 、 A B$ 上的点, 且满足 $\frac{B D}{D C}=\frac{C E}{E A}=\frac{A F}{F B}$. 证明: 若 $\triangle D E F$ 和 $\triangle A B C$ 的外心重合,则 $\triangle A B C$ 是正三角形.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c3a3.png>),记 $\triangle A B C$ 与 $\triangle D E F$ 的公共外心为 $O$, $B C 、 C A 、 A B$ 与小圆的另一个交点分别为 $D^{\prime} 、 E^{\prime} 、 F^{\prime}$, 作 $O H \perp B C$ 于点 $H$. 设 $\frac{B D}{D C}=\frac{C E}{E A}=\frac{A F}{F B}=k$. 因为 $B H= H C, D H=H D^{\prime}$, 所以, $B D^{\prime}=D C=\frac{1}{k+1} B C$. 同理, $B F=\frac{1}{k+1} B A \Rightarrow B F^{\prime}=\frac{k}{k+1} B A$. 由割线定理得: $B D^{\prime}$ •
+$B D=B F \cdot B F^{\prime}$, 即 $\frac{k}{(k+1)^2} B C^2=\frac{k}{(k+1)^2} B A^2 \Rightarrow B C= B A$. 同理, $B C=C A$. 故 $\triangle A B C$ 为正三角形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 已知圆心分别为 $A 、 B$ 的两个圆交于点 $C 、 D$. 过点 $A 、 B 、 C$ 的圆与 $\odot A$ 、 $\odot B$ 分别交于点 $E 、 F$, 且不包含点 $C$ 的 $\overparen{E F}$ 在 $\odot A$ 和 $\odot B$ 的外部.
+证明: $C D$ 平分这段弧 $\overparen{E F}$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c3a4.png>),因为 $\angle C E D=\frac{1}{2} \angle C A D= \angle C A B, \angle C A B=\angle C E B$, 所以, $\angle C E D= \angle C E B$, 即 $E 、 D 、 B$ 三点共线.
+因为 $\overparen{C B}=\overparen{B F}$, 所以, $\angle C E B=\angle B E F$, 即 $D$ 在 $\angle C E F$ 的角平分线上.
+同理, $D$ 在 $\angle C F E$ 的角平分线上.
+因此, $D$ 是 $\triangle C E F$ 的内心.
+从而, $C D$ 是
+$\angle E C F$ 的角平分线, 即平分 $\overparen{E F}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $\triangle A B C$ 为非直角三角形, 其垂心为 $H, M_1 、 M_2 、 M_3$ 分别为边 $B C$ 、 $C A 、 A B$ 的中点.
+令 $A_1 、 B_1 、 C_1$ 分别为 $H$ 关于 $M_1 、 M_2 、 M_3$ 的对称点, $A_2 、 B_2 、 C_2$ 分别为 $\triangle B A_1 C 、 \triangle C B_1 A 、 \triangle A C_1 B$ 的垂心.
+求证: (1) $\triangle A B C$ 与 $\triangle A_2 B_2 C_2$ 的重心重合; (2) 由 $\triangle A A_1 A_2 、 \triangle B B_1 B_2 、 \triangle C C_1 C_2$ 的重心所构成的三角形与 $\triangle A B C$ 相似.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c3a5.png>), 因为 $\triangle B H C$ 与 $\triangle C A_1 B$ 关于 $M_1$ 对称,且 $A$ 为 $\triangle B H C$ 的垂心, 所以, $A_2$ 为 $A$ 关于 $M_1$ 的对称点.
+(1) 对任意一点 $P$ 有 $\overrightarrow{P B}+\overrightarrow{P C}=2 \overrightarrow{P M_1}=\overrightarrow{P A}+ \overrightarrow{P A_2}$. 将类似的关系式相加得 $\sum \overrightarrow{P A_2}=\sum \overrightarrow{P A}= 3 \overrightarrow{P G}$. $G$ 为 $\triangle A B C$ 重心, 由此可推知所证结论成立.
+(2) 设 $G_A 、 G_B 、 G_C$ 分别为 $\triangle A A_1 A_2 、 \triangle B B_1 B_2$ 、 $\triangle C C_1 C_2$ 的重心.
+因此, $\overrightarrow{H G_A}=\frac{1}{3}\left(\overrightarrow{H A}+\overrightarrow{H A_1}+\right.\left.\overrightarrow{H A_2}\right)=\frac{1}{3}\left(\overrightarrow{H A}+2 \overrightarrow{H M_1}+\overrightarrow{H A}+2 \overrightarrow{A M_1}\right)=\frac{4}{3} \overrightarrow{H M_1}$, 即 $\overrightarrow{G_A G_B}=\frac{4}{3}\left(\overrightarrow{H M_2}-\right. \left.\overrightarrow{H M_1}\right)=\frac{4}{3} \overrightarrow{M_1 M_2}=\frac{2}{3} \overrightarrow{B A}$. 由此可知, 由 $\triangle A A_1 A_2 、 \triangle B B_1 B_2 、 \triangle C C_1 C_2$ 的重心所构成的三角形与 $\triangle A B C$ 相似, 且相似比为 $\frac{2}{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 已知 $U$ 为 $\triangle A B C$ 的内切圆的圆心, $O_1 、 O_2 、 O_3$ 分别为 $\triangle B C U 、 \triangle C A U$ 、 $\triangle A B U$ 的外接圆的圆心.
+求证: $\triangle A B C$ 的外接圆圆心与 $\triangle O_1 O_2 O_3$ 的外接圆圆心重合.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c3a6.png>), 分别过 $\triangle A B C$ 的顶点 $A 、 B 、 C$ 及其内切圆圆心 $U$ 的直线分别为角 $\alpha 、 \beta 、 \gamma$ 的平分线, 其中 $\angle C A B=\alpha, \angle A B C=\beta, \angle B C A=\gamma$. 设 $O$ 为 $\triangle A B C$ 的外接圆圆心.
+因为三角形外接圆圆心位于每条边的垂直平分线上, 点 $O$ 和 $O_1$ 位于边 $B C$ 的垂直平分线上, 所以, $O O_1$ 为边 $B C$ 的垂直平分线.
+类似地, $O_3 、 O_1 O_3$ 分别为边 $A B 、 U B$ 的垂直平分线.
+因为 $\angle U B C$ 与 $\angle O_3 O_1 O$ 的边互相垂直, 所以, $\angle U B C=\angle O_3 O_1 O, \angle O_3 O_1 O=\frac{\beta}{2}$.
+同理, $\angle O O_3 O_1=\frac{\beta}{2}$. 故 $\angle O_3 O_1 O=\angle O O_3 O_1$. 因此, $\triangle O_1 O O_3$ 为等腰三角形, 即 $O O_1=O O_3$. 同理可得 $O O_1=O O_2$. 故 $O O_1=O O_2=O O_3$.
+所以, $O$ 为 $\triangle O_1 O_2 O_3$ 的外接圆的圆心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 已知在不等边 $\triangle A B C$ 中, 三边 $B C 、 C A 、 A B$ 的长度成等差数列.
+$I 、 O$ 分别是 $\triangle A B C$ 的内心、外心.
+证明: [1] $I O \perp B I$; [2] 若 $B I$ 交 $A C$ 于点 $K$, $D 、 E$ 分别是边 $B C 、 A B$ 的中点, 则 $I$ 是 $\triangle D E K$ 的外心.
+%%<SOLUTION>%%
+证明: [1] 如图(<FilePath:./figures/fig-c3a7.png>), 作出 $\triangle A B C$ 的外接圆 $\odot O$, 记 $B I$ 的延长线与 $\odot O$ 交于点 $P$, 连结 $A P 、 C P$, 则 $P A=C P= I P$. 对圆内接四边形 $A B C P$ 应用托勒密定理可得: $A C$. $B P=A B \cdot C P+A P \cdot B C=(A B+B C) \cdot I P \cdots$ (1). 由题意得 $2 A C=A B+B C$. 代入式 (1) 得 $B P=2 I P$, 即 $I$ 是 $B P$ 的中点.
+从而, $O I \perp B I$.
+[2] 由三角形角平分线的性质知 $\frac{A K}{K C}=\frac{A B}{B C}$. 结合
+$A K+K C=A C, 2 A C=A B+B C$, 可得 $A K=\frac{A B}{2}= A E, C K=\frac{B C}{2}=C D$. 从而, $\triangle A I E \cong \triangle A I K, \triangle C I D \cong \triangle C I K$. 于是, $I E= I K=I D$. 所以, $I$ 是 $\triangle D E K$ 的外心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 当 $P$ 为三角形内心 $I$ 时,证明:
+$$
+\sin A \cdot \overrightarrow{I A}+\sin B \cdot \overrightarrow{I B}+\sin C \cdot \overrightarrow{I C}=\mathbf{0} .
+$$
+%%<SOLUTION>%%
+证明: 设 $\triangle A B C$ 的内心为 $I$, 如图(<FilePath:./figures/fig-c3a8.png>), 连结 $A I$ 交 $B C$ 于 $D$, 连结 $C I$ 交 $A B$ 于 $F$.
+由角的平分线定理可知
+$$
+\frac{B D}{C D}=\frac{A B}{A C} \Rightarrow \frac{B D}{B C}=\frac{A B}{A B+A C}
+$$
+由正弦定理可知 $\frac{B D}{B C}=\frac{\sin C}{\sin C+\sin B}$.
+同理: $\frac{C D}{B C}=\frac{A C}{A B+A C}=\frac{\sin B}{\sin C+\sin B}$.
+在 $\triangle A B D$ 中由梅涅劳斯定理可得:
+$$
+\begin{aligned}
+\frac{D I}{I A} & =\frac{F B}{A F} \cdot \frac{C D}{B C}=\frac{B C}{A C} \cdot \frac{C D}{B C} \\
+& =\frac{\sin A}{\sin B} \cdot \frac{\sin B}{\sin C+\sin B} \\
+& =\frac{\sin A}{\sin C+\sin B} .
+\end{aligned}
+$$
+所以 $\overrightarrow{D I}=\frac{\sin A}{\sin C+\sin B} \overrightarrow{I A}$.
+类似有
+$$
+\overrightarrow{I D}=\frac{C D}{B C} \cdot \overrightarrow{I B}+\frac{B D}{B C} \cdot \overrightarrow{I C}
+$$
+所以 $-\frac{\sin A}{\sin C+\sin B} \overrightarrow{I A}=\frac{\sin B}{\sin C+\sin B} \overrightarrow{I B}+\frac{\sin C}{\sin C+\sin B} \overrightarrow{I C}$,
+故 $\sin A \cdot \overrightarrow{I A}+\sin B \cdot \overrightarrow{I B}+\sin C \cdot \overrightarrow{I C}=\overrightarrow{0}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 在锐角 $\triangle A B C$ 中, $A D$ 是高, $I 、 O$ 分别是内心、外心, 且 $D 、 I 、 O$ 三点共线.
+求证: $\triangle A B C$ 的外接圆半径等于与边 $B C$ 相切的旁切圆半径.
+%%<SOLUTION>%%
+解: 如图(<FilePath:./figures/fig-c3a9.png>),设与边 $B C$ 相切的旁切圆圆心为 $I_A$, 显然, $A 、 I 、 I_A$ 三点共线.
+作 $I E \perp A B$ 于点 $E, I_A F \perp A B$ 于点 $F$. 记 $I E=r$, $I_A F=r_a, B C=a, C A=b, A B=c, p$ 为 $\triangle A B C$ 的半周长.
+设 $A D=h, \triangle A B C$ 的外接圆半径 $O A=R$. 作 $I M \perp B C$ 于点 $M, O N \perp B C$ 于点 $N$.
+利用旁心性质 2 知 $A F=p$, 则
+$$
+A E=p-a .
+$$
+由 $\triangle A I_A F \backsim \triangle A I E$, 得
+$$
+\frac{r_a}{r}=\frac{A F}{A E}=\frac{p}{p-a} . \label{eq1}
+$$
+由三角形外心性质易得 $\angle B A D=\angle O A C$. 但 $A I$ 平分 $\angle B A C$, 知 $A I$ 平分
+$\angle D A O$. 所以
+$$
+\frac{R}{h}=\frac{A O}{A D}=\frac{O I}{I D}=\frac{M N}{D M} . \label{eq2}
+$$
+注意到
+$$
+\begin{aligned}
+M N & =B N-B M \\
+& =\frac{1}{2} a-\frac{1}{2}(c+a-b)=\frac{1}{2}(b-c), \\
+D M & =B M-B D=\frac{1}{2}(c+a-b)-c \cos B \\
+& =\frac{1}{2}(c+a-b)-\frac{1}{2 a}\left(c^2+a^2-b^2\right) \\
+& =\frac{1}{2 a}(b-c)(b+c-a),
+\end{aligned}
+$$
+代入式\ref{eq2}得
+$$
+\frac{R}{h}=\frac{a}{b+c-a} .
+$$
+故
+$$
+R=\frac{a h}{b+c-a}=\frac{2 S_{\triangle A B C}}{2(p-a)}=\frac{p r}{p-a} .
+$$
+因此, $\frac{R}{r}=\frac{p}{p-a}$. 结合式 \ref{eq1} 得 $r_a=R$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 如图(<FilePath:./figures/fig-c3p10.png>), 在 $\triangle A B C$ 中, $A B=A C$, 一个圆内切于 $\triangle A B C$ 的外接圆 $\odot O$ 于 $M$, 并与 $A B 、 A C$ 分别相切于 $P$ 、 $Q$ 两点.
+求证: 线段 $P Q$ 的中点是 $\triangle A B C$ 内切圆的圆心.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c3a10.png>),因为 $A B=A C$ 且都是 $\odot O$ 的两条弦,所以 $O$ 点到 $A B 、 A C$ 的距离相等, 则 $O$ 在 $\angle B A C$ 的平分线上.
+又因为小圆与 $A B, A C$ 都相切,所以小圆的圆心也在 $\angle B A C$ 的平分线上, 所以小圆的圆心、 $O$ 点及 $A$ 点三点共线且该直线经过两圆切点 $M, A M$ 为图形对称轴.
+设 $A M$ 交 $P Q$ 于 $I$, 由对称性可知, $I$ 为 $P Q$ 中点.
+因为 $A M \perp P Q, A M \perp B C$, 所以 $P Q / / B C$. 设 $\angle A P Q= 2 \beta$, 则 $\angle A B C=\angle A P Q=2 \beta$. 连结 $M P 、 M Q 、 M B 、 B I$, 则 $\angle P M Q=\angle A P Q=2 \beta$, 由轴对称性知, $\angle P M I=\frac{1}{2} \angle P M Q=\beta$. 因为 $A M$ 为 $\odot O$ 直径, 所以 $\angle P B M= 90^{\circ}$, 所以 $P 、 B 、 M 、 I$ 四点共圆.
+所以 $\angle P B I=\angle P M I=\beta$, 所以 $B I$ 平分 $\angle A B C$. 又因为 $A I$ 平分 $\angle B A C$, 所以 $I$ 为 $\triangle A B C$ 内心, 所以线段 $P Q$ 的中点是 $\triangle A B C$ 内切圆的圆心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 在 $\triangle A B C$ 的边 $A B 、 B C 、 C A$ 上分别取点 $P 、 Q 、 S$. 证明: 以 $\triangle A P S 、 \triangle B Q P 、 \triangle C S Q$ 的外心为顶点的三角形与 $\triangle A B C$ 相似.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c3a11.png>),设 $O_1 、 O_2 、 O_3$ 是 $\triangle A P S 、 \triangle B Q P 、 \triangle C S Q$ 的外心, 作出六边形 $O_1 P O_2 Q O_3 S$ 后再由外心性质可知 $\angle P O_1 S=2 \angle A, \angle Q O_2 P=2 \angle B$,
+$$
+\angle \mathrm{SO}_3 \mathrm{Q}=2 \angle C \text {. }
+$$
+所以 $\angle P O_1 S+\angle Q O_2 P+\angle S O_3 Q=360^{\circ}$. 从而又知
+$$
+\angle O_1 P O_2+\angle O_2 Q O_3+\angle O_3 S O_1=360^{\circ} \text {. }
+$$
+将 $\triangle O_2 Q_3$ 绕着 $O_3$ 点旋转到 $\triangle K S O_3$,
+易判断 $\triangle K S O_1 \cong \triangle O_2 P O_1$, 同时可得 $\triangle \mathrm{O}_1 \mathrm{O}_2 \mathrm{O}_3 \cong \triangle \mathrm{O}_1 \mathrm{KO}_3$.
+所以 $\angle O_2 O_1 O_3=\angle K O_1 O_3=\frac{1}{2} \angle O_2 O_1 K=\frac{1}{2}\left(\angle O_2 O_1 S+\angle S O_1 K\right)= \frac{1}{2}\left(\angle O_2 O_1 S+\angle P O_1 O_2\right)=\frac{1}{2} \angle P O_1 S=\angle A$. 同理有 $\angle O_1 O_2 O_3=\angle B$. 故 $\triangle O_1 O_2 O_3 \backsim \triangle A B C$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 如图(<FilePath:./figures/fig-c3p12.png>), $ \triangle A B C$ 的外心为 $O, A B=A C, D$ 是 $A B$ 中点, $E$ 是 $\triangle A C D$ 的重心.
+证明: $O E \perp C D$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c3a12.png>), 设 $A M$ 为高亦为中线, 取 $A C$ 中点 $F, E$ 必在 $D F$ 上且 $D E: E F=2: 1$. 设 $C D$ 交 $A M$ 于 $G, G$ 必为 $\triangle A B C$ 重心.
+连结 $G E, M F, M F$ 交 $D C$ 于 $K$.
+易证: $D G: G K=\frac{1}{3} D C:\left(\frac{1}{2}-\frac{1}{3}\right) D C=2: 1$.
+所以 $D G: G K=D E: E F \Rightarrow G E / / M F$.
+因为 $O D \perp A B, M F / / A B$, 则 $O D \perp M F \Rightarrow O D \perp G E$.
+但 $O G \perp D E \Rightarrow G$ 又是 $\triangle O D E$ 之垂心.
+从而 $O E \perp C D$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. $ \odot O_1$ 交 $\odot O_2$ 于点 $P 、 Q, \angle O_1 P O_2<90^{\circ}$, 过 $O_1 、 O_2$ 、 $P$ 三点的圆分别交 $\odot O_1 、 \odot O_2$ 于点 $A 、 B$. 证明: $Q$ 是$\triangle A B P$ 的旁心.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c3a13.png>), 连结 $A Q 、 A O_2$, 由于 $\pi-\angle P A Q=\frac{1}{2} \angle P O_1 Q=\angle P O_1 O_2= \angle P A O_2$, 于是 $A 、 O_2 、 Q$ 三点共线, 同理, $B 、 O_1 、 Q$ 三点共线.
+连 $O_1 Q, \angle Q A B= \angle Q O_1 O_2=\frac{1}{2} \angle Q O_1 P=\frac{1}{2} \angle B O_1 P=\frac{1}{2} \cdot\left(\pi^{-} \angle B A P\right)$. 所以 $A Q$ 外角平分 $\angle P A B$, 同理可证, $B Q$ 外角平分 $\angle P B A$, 于是 $Q$ 为 $\triangle P B A$ 在 $\angle P$ 内的旁心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 已知 $A B 、 A C$ 切 $\odot O$ 于点 $B 、 C, O A$ 交 $B C$ 于点 $M$, 过 $M$ 作 $\odot O$ 的另一弦 $E F$. 求证: $\triangle A B C 、 \triangle A E F$ 存在一个公共的旁心.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c3a14.png>),连结 $O B 、 O C 、 O E 、 O F 、 A E 、 A F$, 则 $\angle O B A+\angle O C A=90^{\circ}+ 90^{\circ}=180^{\circ}$, 故 $A 、 B 、 O 、 C$ 共圆.
+$M B \cdot M C=M O \cdot M A$, 结合 $M B \cdot M C= M E \cdot M F$ 知 $M E \cdot M F=M O \cdot M A$, 于是 $A, E, O, F$ 共圆.
+令 $A O$ 直线与 $\odot O$ 相交于 $X, Y$, 且 $X$ 在 $\triangle A B C$ 内部, 那么 $\angle X F M=\angle X F E= \frac{1}{2} \angle X O E=\frac{1}{2} \angle A O E=\frac{1}{2} \angle A F E=\frac{1}{2} \angle A F M$, 于是 $X F$ 平分 $\angle A F M$, 同理可证, $X E$ 平分 $\angle A E M$, 故 $X$ 为 $\triangle A E F$ 内心.
+又 $\angle X F Y=90^{\circ}, A 、 X$ 、 $Y$ 共线, 所以 $Y$ 为 $\triangle A E F$ 的旁心.
+由 $E$ 点的任意性, 将 $E$ 移至 $B, F$ 移至 $C$ 有相同结论.
+$Y$ 为 $\triangle A B C$ 的旁心.
+所以 $\triangle A B C, \triangle A E F$ 有一个公共的 $\angle A$ 内的旁心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 已知 $\triangle A B C$, 点 $D$ 在边 $B C$ 上, $O 、 O_1 、 O_2$ 分别是 $\triangle A B C 、 \triangle A B D$ 、 $\triangle A C D$ 在 $\angle A$ 内的旁心, $O E \perp B C$ 于点 $E$. 求证: $E O_1 \perp E O_2$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c3a15.png>),设 $O_1 、 O_2$ 在边 $B C$ 上的垂足分别为 $M 、 N$, 则 $M E=B E-B M=\frac{B C+C A-A B}{2}-\frac{B D+D A-A B}{2}= \frac{D C+C A-D A}{2}=D N$ 所以 $M D=E N$, 连结 $O_1 D, O_2 D$, $O_1 E, O_2 E, \angle O_1 D M=\frac{1}{2} \angle A D C=90^{\circ}-\frac{1}{2} \angle A D B= 90^{\circ}-\angle O_2 D N=\angle D O_2 N$, 所以 $\triangle M D O_1 \backsim \triangle N O_2 D$, 即 $M D \cdot N D=M O_1 \cdot N O_2$, 于是 $M E \cdot E N=M D \cdot N D= M O_1 \cdot N O_2$. 即 $\frac{M E}{M O_1}=\frac{N O_2}{N E}$, 所以 $\triangle M O_1 D \backsim \triangle N D O_2$, 从而有 $\angle O_1 E O_2=180^{\circ}-\angle M E O_1-\angle N E O_2=180^{\circ}-\angle M E O_1- \angle M O_1 E=90^{\circ}$. 即 $E O_1 \perp E O_2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16. $A D$ 是直角三角形 $A B C$ 斜边 $B C$ 上的高, $(A B<A C), I_1 、 I_2$ 分别是 $\triangle A B D 、 \triangle A C D$ 的内心, $\triangle A I_1 I_2$ 的外接圆 $\odot O$ 分别交 $A B 、 A C$ 于 $E$ 、 $F$, 直线 $E F 、 B C$ 交于点 $M$. 证明: $I_1 、 I_2$ 分别是 $\triangle O D M$ 的内心与旁心.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c3a16.png>),因为 $\angle B A C=90^{\circ}$, 又 $O$ 为 $\triangle A E F$ 外心, 所以 $O \in E F$. 又 $O I_1==O I_2$, $2 \angle I_1 A I_2=\angle I_1 O I_2=90^{\circ}$. 由此可得 $\angle O I_2 I_1= \angle O I_1 I_2=\angle I_1 D O=\angle I_2 D O=45^{\circ}$. 所以, $O \in A D$, 所以 $\angle A I_1 O=\angle I_1 A O=\angle I_1 A E$, $\angle I_1 O D=\angle I_1 O M=\angle E A D$. 故 $\angle M O D$ 平分线为 $O I_1$, 又 $I_1 D$ 平分 $\angle A D B$, 即 $I_1$ 为 $\triangle O D M$ 内心.
+又 $\angle I_1 O I_2=90^{\circ}, O I_2$ 平分 $\angle M O D$, 所以 $O I_2$ 平分 $\angle F O D$, 而 $I_2 D$ 为 $\angle A D C$ 平分线.
+所以 $I_2$ 为 $\triangle O D M$ 旁心.
+%%PROBLEM_END%%
+
+

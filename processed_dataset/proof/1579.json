@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设 $a_1=1, a_2=2, a_{n+1}=\\frac{a_n a_{n-1}+1}{a_{n-1}}, n=2,3, \\cdots$.\n证明: 对任意正整数 $n \\geqslant 3$, 都有 $a_n>\\sqrt{2 n}$.",
+    "solution": "由条件, 知 $a_{n+1}=a_n+\\frac{1}{a_{n-1}}$, 而结合初始条件及数学归纳法可知, 对任意 $n \\in \\mathbf{N}^*$, 有 $a_n>0$, 从而 $n \\geqslant 2$ 时,有 $a_{n+1}=a_n+\\frac{1}{a_{n-1}}>a_n$, 结合 $a_1<a_2$ 知, 对任意 $n \\in \\mathbf{N}^*$, 有 $a_n<a_{n+1}$, 所以,当 $n \\geqslant 2$ 时,有(1)\n$$\na_{n+1}=a_n+\\frac{1}{a_{n-1}}>a_n+\\frac{1}{a_n} .\n$$\n由 $a_3=\\frac{a_2 a_1+1}{a_1}=3$, 知 $a_3>\\sqrt{6}$, 即 $n=3$ 时, 有 $a_n>\\sqrt{2 n}$. 现设当 $n= m(\\geqslant 3)$ 时, 有 $a_m>\\sqrt{2 m}$, 则由 (1) 知 $a_{m+1}^2>\\left(a_m+\\frac{1}{a_m}\\right)^2=a_m^2+2+\\frac{1}{a_m^2}> a_m^2+2>2 m+2$, 故 $a_{m+1}>\\sqrt{2(m+1)}$, 即命题对 $m+1$ 成立.\n获证.",
+    "remark": "",
+    "figures": []
+}

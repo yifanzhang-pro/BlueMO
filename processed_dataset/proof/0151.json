@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $a, b, c$ 为整数, $f(x)=x^3+a x^2+b x+c$. 证明: 有无穷多个正整数 $n$, 使得 $f(n)$ 不是完全平方数.",
+    "solution": "证明:我们证明,对任意正整数 $n \\equiv 1(\\bmod 4)$, 四个整数 $f(n), f(n+$ 1), $f(n+2), f(n+3)$ 中至少有一个不是完全平方, 由此便证明了问题中的结论.\n易知\n$$\n\\begin{aligned}\n& f(n) \\equiv 1+a+b+c(\\bmod 4), \\\\\n& f(n+1) \\equiv 2 b+c(\\bmod 4), \\\\\n& f(n+2) \\equiv-1+a-b+c(\\bmod 4), \\\\\n& f(n+3) \\equiv c(\\bmod 4) .\n\\end{aligned}\n$$\n消去 $a 、 c$ 得\n$$\nf(n+1)-f(n+3) \\equiv 2 b, f(n)-f(n+2) \\equiv 2 b+2(\\bmod 4) .\n$$\n因此,或者 $f(n+1)-f(n+3) \\equiv 2(\\bmod 4)$, 或者 $f(n)-f(n+2) \\equiv 2(\\bmod 4)$. 因为完全平方数模 4 同余于 0 或 1 , 故或者 $f(n+1)$ 与 $f(n+3)$ 中至少有一个非平方数, 或者 $f(n)$ 与 $f(n+2)$ 中至少有一个非平方数, 从而 $f(n), f(n+1)$, $f(n+2), f(n+3)$ 中至少有一个不是完全平方.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 一次有 $n(n \\geqslant 3)$ 名选手参加的单循环赛, 每对选手赛一局, 无平局, 且无一选手全胜.\n证明其中一定有三名选手甲、乙、丙, 甲胜乙,乙胜丙, 丙胜甲.",
+    "solution": "把循环赛对应于一个竟赛图, 由题设, 无一顶点的出度为 $n-1$. 由抽庶原理, 至少有两个顶点的出度相同.\n由定理四, 命题得证.",
+    "remark": "",
+    "figures": []
+}

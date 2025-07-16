@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $p$ 是一个奇素数.",
+    "solution": "证明: $\\frac{p^{2 p}+1}{p^2+1}$ 的任一正约数均 $\\equiv 1(\\bmod 4 p)$. 证明我们只要证明 $\\frac{p^{2 p}+1}{p^2+1}$ 的任一个素约数 $q$ 满足 $q \\equiv 1(\\bmod 4 p)$ 即可.\n首先注意\n$$\n\\frac{p^{2 p}+1}{p^2+1}=p^{2(p-1)}-p^{2(p-2)}+\\cdots-p^2+1 . \\label{eq1}\n$$\n故 $q \\neq p$. 设 $r$ 是 $p$ 模 $q$ 的阶, 因\n$$\np^{2 p} \\equiv-1(\\bmod q), \\label{eq2}\n$$\n故 $p^{4 p} \\equiv 1(\\bmod q)$, 所以 $r \\mid 4 p$. 于是 $r=1,2,4, p, 2 p$ 或 $4 p$.\n若 $r=1,2, p, 2 p$, 将导出 $p^{2 p} \\equiv 1(\\bmod q)$, 结合 式\\ref{eq2} 得到 $q=2$, 这不可能; 若 $r=4$, 则因 $q$ 是素数, 我们推出 $q \\mid\\left(p^2-1\\right)$ 或 $q \\mid\\left(p^2+1\\right)$. 前者已证明为不可能.\n若后者成立, 即 $p^2 \\equiv-1(\\bmod q)$. 我们将 \\ref{eq1} 式模 $q$, 其左边模 $q$ 当然为 0 , 而右边 $\\equiv(-1)^{p-1}-(-1)^{p-2}+\\cdots-(-1)+1 \\equiv p(\\bmod q)$. 因此 $p= q$, 这不可能,故 $r \\neq 4$. 因此只能 $r=4 p$.\n最后, 因 $(p, q)=1$, 故由费马小定理得 $p^{q-1} \\equiv 1(\\bmod q)$, 于是 $r \\mid(q-- 1)$, 即 $4 p \\mid(q-1)$, 因此 $q \\equiv 1(\\bmod 4 p)$.\n上面的解法中, 关键是确定 $p$ 模 $q$ 的阶.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题2. (Tsintsifas) 设 $P$ 是 $\\triangle A B C$ 的一个内点, $\\triangle A^{\\prime} B^{\\prime} C^{\\prime}$ 是点 $P$ 的垂足三角形, $\\triangle A B C$ 和 $\\triangle A^{\\prime} B^{\\prime} C^{\\prime}$ 的三边分别是 $a 、 b 、 c$ 和 $a^{\\prime} 、 b^{\\prime} 、 c^{\\prime}$, 求证:\n$$\n\\frac{a^{\\prime}}{a}+\\frac{b^{\\prime}}{b}+\\frac{c^{\\prime}}{c}<2\n$$",
+    "solution": "提示: 用 $a^{\\prime}=P A \\sin A$ 等代入易证.",
+    "remark": "",
+    "figures": []
+}

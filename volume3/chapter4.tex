@@ -1,0 +1,572 @@
+
+%%TEXT_BEGIN%%
+当三角函数的自变量定义域规定在某个单调区间,符合一一对应关系时, 就存在了反函数, 即反三角函数.
+根据互为反函数的定义域与值域之间的关系可知, 反正弦函数、反余弦函数的定义域是 $[-1,1]$, 反正切函数、反余切函数的定义域为 $\mathbf{R}$, 反正弦函数的值域 (主值区间) 为 $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$, 反余弦函数的值域为 $[0, \pi]$, 反正切函数的值域为 $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$, 反余切函数的值域为 $(0$, $\pi)$, 且反正弦函数和反正切函数是单调递增的奇函数, 反余弦函数和反余切函数是单调递减的非奇非偶函数.
+形如 $\sin x=a, \cos x=a, \tan x=a, \cot x=a$ 的方程是最基本、最简单的三角方程, 它们的解分别是: $x=n \pi+(-1)^n \arcsin a,(|a| \leqslant 1) ; x= 2 n \pi \pm \arccos a ，(|a| \leqslant 1) ; x=n \pi+\arctan a ; x=n \pi+\operatorname{arccot} a ;(n \in \mathbf{Z})$
+在反三角函数中, 有下列重要恒等式: (1) $\sin (\arcsin x)=x, x \in[-1$, $1] ; \cos (\arccos x)=x, x \in[-1,1] ; \tan (\arctan x)=x, x \in \mathbf{R}$;
+(2) $\arcsin (\sin x)=x, x \in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$; $\arccos (\cos x)=x, x \in[0, \pi]$; $\arctan (\tan x)=x, x \in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1 设 $f(x)=x^2-\pi x, \alpha=\arcsin \frac{1}{3}, \beta=\arctan \frac{5}{4}, \gamma=\arccos \left(-\frac{1}{3}\right)$, $\varphi=\operatorname{arccot}\left(-\frac{5}{4}\right)$, 则 $(\quad)$.
+(A) $f(\alpha)>f(\beta)>f(\varphi)>f(\gamma)$
+(B) $f(\alpha)>f(\varphi)>f(\beta)>f(\gamma)$
+(C) $f(\varphi)>f(\alpha)>f(\beta)>f(\gamma)$
+(D) $f(\varphi)>f(\alpha)>f(\gamma)>f(\beta)$
+%%<SOLUTION>%%
+解:选 B. 由题意, $f(x)$ 的图象关于直线 $x=\frac{\pi}{2}$ 对称, 且在 $\left(-\infty, \frac{\pi}{2}\right)$ 内单调递减, 在 $\left(\frac{\pi}{2},+\infty\right)$ 内单调递增, 所以, 当 $\left|x_1-\frac{\pi}{2}\right|>\left|x_2-\frac{\pi}{2}\right|$ 时, 有$f\left(x_1\right)>f\left(x_2\right)$.
+又知 $0<\alpha<\frac{\pi}{6}, \frac{\pi}{4}<\beta<\frac{\pi}{3}, \frac{\pi}{2}<\gamma<\frac{2 \pi}{3}, \frac{3 \pi}{4}<\varphi<\frac{5 \pi}{6}$, 所以 $0< \left|\gamma-\frac{\pi}{2}\right|<\frac{\pi}{6}<\left|\beta-\frac{\pi}{2}\right|<\frac{\pi}{4}<\left|\varphi-\frac{\pi}{2}\right|<\frac{\pi}{3}<\left|\alpha-\frac{\pi}{2}\right|<\frac{\pi}{2}$, 故有 $f(\alpha)>f(\varphi)>f(\beta)>f(\gamma)$.
+评注正确估算角的范围是求解本题的关键.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2 证明 $\arctan -\frac{1}{\sqrt{2}}+\arcsin \frac{1}{\sqrt{2}}=\arctan \frac{\sqrt{2}+1}{\sqrt{2}-1}$.
+%%<SOLUTION>%%
+分析:要证两角相等, 常常证明这两角的某个三角函数相等, 此时一定要保证这两角在这个三角函数的同一个一一对应区间内.
+证明因为 $\tan \left(\arctan \frac{1}{\sqrt{2}}+\arcsin \frac{1}{\sqrt{2}}\right)$
+$$
+\begin{aligned}
+= & \frac{\tan \left(\arctan \frac{1}{\sqrt{2}}\right)+\tan \left(\arcsin \frac{1}{\sqrt{2}}\right)}{1-\tan \left(\arctan \frac{1}{\sqrt{2}}\right) \tan \left(\arcsin \frac{1}{\sqrt{2}}\right)}=\frac{\frac{1}{\sqrt{2}}+1}{1-\frac{1}{\sqrt{2}} \times 1} \\
+= & \frac{\sqrt{2}+1}{\sqrt{2}-1}, \\
+& \tan \left(\arctan \frac{\sqrt{2}+1}{\sqrt{2}-1}\right)=\frac{\sqrt{2}+1}{\sqrt{2}-1},
+\end{aligned}
+$$
+因为
+$$
+0<\arctan \frac{1}{\sqrt{2}}<\frac{\pi}{4}, \arcsin \frac{1}{\sqrt{2}}=\frac{\pi}{4} \text {, }
+$$
+所以
+$$
+0<\arctan \frac{1}{\sqrt{2}}+\arcsin \frac{1}{\sqrt{2}}<\frac{\pi}{2},
+$$
+又
+$$
+0<\arctan \frac{\sqrt{2}+1}{\sqrt{2}-1}<\frac{\pi}{2}
+$$
+而在 $\left(0, \frac{\pi}{2}\right)$ 内正切相等的角唯一, 故
+$$
+\arctan \frac{1}{\sqrt{2}}+\arcsin \frac{1}{\sqrt{2}}=\arctan \frac{\sqrt{2}+1}{\sqrt{2}-1} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3 解方程 $\cos ^n x-\sin ^n x=1,\left(n \in \mathbf{N}^*\right)$.
+%%<SOLUTION>%%
+分析:直接求解有困难, 可以通过对 $n$ 奇偶讨论.
+解当 $n$ 为偶数时, $\cos ^n x=1+\sin ^n x \geqslant 1$, 而 $\cos ^n x \leqslant 1$, 则必须有
+$\cos ^n x=1 \Rightarrow \cos x= \pm 1$, 所以 $x=k \pi, k \in \mathbf{Z}$.
+当 $n$ 为奇数时, 由 $\cos ^n x=1+\sin ^n x \geqslant 0$ 及 $\sin ^n x=\cos ^n x-1 \leqslant 0$, 知原方程同解于 $|\cos x|^n+|\sin x|^n=1$, 比较公式 $\sin ^2 x+\cos ^2 x=1$ 可知.
+若 $x \neq k \cdot \frac{\pi}{2}$, 则 $0<|\cos x|<1,0<|\sin x|<1$, 于是当 $n>2$ 时, $|\cos x|^n+|\sin x|^n<\cos ^2 x+\sin ^2 x=1$, 故当 $x \neq k \cdot \frac{\pi}{2}$ 时, 方程无解.
+当 $n=1$ 时, $|\cos x|^n+|\sin x|^n=|\cos x|+|\sin x|= \sqrt{(|\cos x|+|\sin x|)^2}>\sqrt{|\cos x|^2+|\sin x|^2}=1$, 此时也无解.
+对 $x=\frac{k \pi}{2}, k \in \mathbf{Z}$, 通过验证可知, $x=2 k \pi, x=2 k \pi-\frac{\pi}{2}(k \in \mathbf{Z})$ 是原方程的解.
+综上可知, 当 $n$ 为偶数时, 原方程的解为 $x=k \pi(k \in \mathbf{Z})$; 当 $n$ 为奇数时, $x=2 k \pi$ 或 $x=2 k \pi-\frac{\pi}{2}(k \in \mathbf{Z})$.
+评注由 $\cos ^2 x+\sin ^2 x=1$,联想 $\left|\cos ^n x\right|+\left|\sin ^n x\right|$ 与 1 的大小关系, 同时结合 $|\cos x| \leqslant 1,|\sin x| \leqslant 1$, 对解的情形进行估算.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4 解不等式
+$$
+2 \cos x \leqslant|\sqrt{1+\sin 2 x}-\sqrt{1-\sin 2 x}| \leqslant \sqrt{2}(0 \leqslant x \leqslant 2 \pi) .
+$$
+%%<SOLUTION>%%
+解:设 $|\sqrt{1+\sin 2 x}-\sqrt{1-\sin 2 x}|=2 y$, 则原不等式变形为 $\cos x \leqslant y \leqslant \frac{\sqrt{2}}{2}$, 且有 $2 y=|| \sin x+\cos x|-| \sin x-\cos x||$.
+(1) 当 $0 \leqslant x \leqslant \frac{\pi}{4}$ 或 $\frac{3 \pi}{4} \leqslant x \leqslant \frac{5 \pi}{4}$ 或 $\frac{7 \pi}{4} \leqslant x \leqslant 2 \pi$ 时, $y=|\sin x|$, 原不等式变为 $\cos x \leqslant|\sin x| \leqslant \frac{\sqrt{2}}{2}$, 验证得 $\frac{3 \pi}{4} \leqslant x \leqslant \frac{5 \pi}{4}$.
+(2) 当 $\frac{\pi}{4} \leqslant x \leqslant \frac{3 \pi}{4}$ 或 $\frac{5 \pi}{4} \leqslant x \leqslant \frac{7 \pi}{4}$ 时, $y=|\cos x|$, 原不等式变为 $\cos x \leqslant|\cos x| \leqslant \frac{\sqrt{2}}{2}$, 都成立.
+综上,解集为 $\frac{\pi}{4} \leqslant x \leqslant \frac{7 \pi}{4}$.
+评注本例的关键是根据范围去绝对值, 化简.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5 求所有的常数 $C$, 使得函数 $f(x)=\arctan \frac{2-2 x}{1+4 x}+C$, 在区间$\left(-\frac{1}{4}, \frac{1}{4}\right)$ 上为奇函数.
+%%<SOLUTION>%%
+分析:因为 0 在定义域内, 所以可根据 $f(0)=0$ 得 $C$ 的必要条件, 再验证是否为奇函数.
+解如果 $f(x)$ 为 $\left(-\frac{1}{4}, \frac{1}{4}\right)$ 上的奇函数, 则 $f(0)=0$, 于是 $C=-\arctan 2$.
+下面证明 $f(x)=\arctan \frac{2-2 x}{1+4 x}-\arctan 2$ 是奇函数.
+当 $x \in\left(-\frac{1}{4}, \frac{1}{4}\right)$ 时, 函数 $u(x)=\frac{2-2 x}{1+4 x}=\frac{1}{2}\left(\frac{5}{1+4 x}-1\right)$, 故 $u(x) \in\left(\frac{3}{4},+\infty\right)$, 所以 $f(x)=\arctan u(x)-\arctan 2 \in\left(\arctan \frac{3}{4}-\arctan 2\right.$, $\left.\frac{\pi}{2}-\arctan 2\right) \varsubsetneqq\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$.
+显然 $-f(-x) \in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$.
+因为 $y=\tan x$ 在 $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$ 上一一对应, 故要证 $f(-x)=-f(x)$, 只要证明 $\tan [-f(-x)]=\tan f(x)$,
+$$
+\begin{aligned}
+\tan f(x) & =\tan [\arctan u(x)-\arctan 2] \\
+& =\frac{u(x)-2}{1+2 u(x)}=\frac{(2-2 x)-2(1+4 x)}{1+4 x+2(2-2 x)}=-2 x,
+\end{aligned}
+$$
+$$
+\text { 又 } \begin{aligned}
+\tan [-f(-x)] & =\tan [\arctan 2-\arctan u(-x)] \\
+& =\frac{2-u(-x)}{1+2 u(-x)}=\frac{2(1-4 x)-(2+2 x)}{1-4 x+2(2+2 x)}=-2 x,
+\end{aligned}
+$$
+所以, 当且仅当 $C=-\arctan 2$ 时, 函数 $f(x)$ 为 $\left(-\frac{1}{4}, \frac{1}{4}\right)$ 上的奇函数.
+评注本例也可直接用反三角函数进行运算, 这里根据奇函数的反函数也是奇函数进行证明.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6 求方程 $x \sqrt{y-1}+y \sqrt{x-1}=x y$ 的实数解.
+%%<SOLUTION>%%
+解:由题意知 $x, y>1$, 可设 $x=\sec ^2 \alpha, y=\csc ^2 \beta$, 其中 $0<\alpha 、 \beta<\frac{\pi}{2}$, 代入原方程得,
+$$
+\sec ^2 \alpha \sqrt{\csc ^2 \beta-1}+\csc ^2 \beta \cdot \sqrt{\sec ^2 \alpha-1}=\sec ^2 \alpha \csc ^2 \beta,
+$$
+即
+$$
+\frac{1}{\cos ^2 \alpha} \cdot \frac{\cos \beta}{\sin \beta}+\frac{1}{\sin ^2 \beta} \cdot \frac{\sin \alpha}{\cos \alpha}=\frac{1}{\cos ^2 \alpha \sin ^2 \beta}
+$$
+$$
+\begin{array}{lc}
+\Rightarrow & \sin \beta \cos \beta+\cos \alpha \sin \alpha=1 \\
+\Rightarrow & \sin 2 \alpha+\sin 2 \beta=2 \text {, 又 } \sin 2 \alpha \leqslant 1, \sin ^2 \beta \leqslant 1,
+\end{array}
+$$
+故 $\sin 2 \alpha=\sin 2 \beta=1$, 从而 $\alpha=\beta=\frac{\pi}{4}$.
+所以 $x=y=2$, 经检验知, $x=y=2$ 是原方程的解.
+评注恰当的三角换元,能够使复杂的代数问题转化为简单的三角问题,使问题得到解决.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7 若 $[x]$ 表示不超过实数 $x$ 的最大整数,则方程 $[\cot x]=2 \cos ^2 x$ 的解集是
+%%<SOLUTION>%%
+解:因为 $[\cot x]=2 \cos ^2 x$, 故 $2 \cos ^2 x$ 取整数.
+又 $2 \cos ^2 x \in[0,2]$, 所以 $\cos ^2 x=0, \cos ^2 x=\frac{1}{2}, \cos ^2 x=1$.
+当 $\cos x=0$ 时, $x=k \pi+\frac{\pi}{2}, k \in \mathbf{Z}$.
+当 $\cos x= \pm \frac{\sqrt{2}}{2}$ 时, $\cot x= \pm 1$, 只有 $x=k \pi+\frac{\pi}{4}, k \in \mathbf{Z}$.
+当 $\cos x= \pm 1$ 时, $\sin x=0$, 无意义,舍去.
+故应填 $x=k \pi+\frac{\pi}{2}$ 或 $x=k \pi+\frac{\pi}{4}, k \in \mathbf{Z}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8 求证: $\arctan \frac{1}{3}+\arctan \frac{1}{5}+\arctan \frac{1}{7}+\arctan \frac{1}{8}=\frac{\pi}{4}$.
+%%<SOLUTION>%%
+分析:本题化归为求四角和的三角函数值, 将证明题改编为计算题.
+证明设则
+$$
+\begin{gathered}
+\alpha=\arctan \frac{1}{3}, \beta=\arctan \frac{1}{5}, \\
+\gamma=\arctan \frac{1}{7}, \delta=\arctan \frac{1}{8}, \\
+\tan \alpha=\frac{1}{3}, \tan \beta=\frac{1}{5}, \\
+\tan \gamma=\frac{1}{7}, \tan \delta=\frac{1}{8}, \\
+\alpha, \beta, \gamma, \delta \in\left(0, \frac{\pi}{4}\right) .
+\end{gathered}
+$$
+$$
+\begin{aligned}
+& \tan \alpha=\frac{1}{3}, \tan \beta=\frac{1}{5}, \\
+& \tan \gamma=\frac{1}{7}, \tan \delta=\frac{1}{8}, \\
+& \alpha, \beta, \gamma, \delta \in\left(0, \frac{\pi}{4}\right) .
+\end{aligned}
+$$
+于是
+$$
+\begin{gathered}
+\tan (\alpha+\beta)=\frac{4}{7}, \tan (\gamma+\delta)=\frac{3}{11}, \\
+\alpha+\beta+\gamma+\delta \in(0, \pi) .
+\end{gathered}
+$$
+所以
+$$
+\tan (\alpha+\beta+\gamma+\delta)=1 .
+$$
+从而
+$$
+\alpha+\beta+\gamma+\delta=\frac{\pi}{4} .
+$$
+评注有关反三角恒等式的证明须掌握两点: 其一证明等式两边的角的同一个三角函数值相等; 其二证明等式两边都在所取三角函数的同一个一一对应的区间内.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9 求证: $\arctan \frac{1}{3}+\arctan \frac{1}{7}+\arctan \frac{1}{13}+\cdots+\arctan \frac{1}{1+n+n^2}= \arctan \frac{n}{n+2}$.
+%%<SOLUTION>%%
+分析:形如数列求和的三角函数式, 通常采用 “裂项”或 “配对”之法, 如何将 $\arctan \frac{1}{1+n+n^2}$ 一分为二呢, 通过构造等式来解之.
+证明设
+$$
+f(n)=\frac{n}{n+2},
+$$
+则
+$$
+\begin{aligned}
+\frac{f(n)-f(n-1)}{1+f(n) f(n-1)} & =\frac{\frac{n}{n+2}-\frac{n-1}{n+1}}{1+\frac{n}{n+2} \cdot \frac{n-1}{n+1}} \\
+& =\frac{n^2+n-\left(n^2+n-2\right)}{2 n^2+2 n+2} \\
+& =\frac{1}{n^2+n+1} .
+\end{aligned}
+$$
+即 $\tan \left(\arctan \frac{1}{1+n+n^2}\right)=\frac{\tan [\arctan f(n)]-\tan [\arctan f(n-1)]}{1+\tan [\arctan f(n)] \cdot \tan [\arctan f(n-1)]}$
+$$
+=\tan [\arctan f(n)-\arctan f(n-1)] \text {, }
+$$
+从而
+$$
+\begin{aligned}
+\arctan \frac{1}{1+n+n^2} & =\arctan f(n)-\arctan f(n-1) \\
+& =\arctan \frac{n}{n+2}-\arctan \frac{n-1}{n+1} .
+\end{aligned}
+$$
+所以
+$$
+\begin{aligned}
+\text { 左式 }= & \arctan \frac{1}{3}+\left(\arctan \frac{2}{4}-\arctan \frac{1}{3}\right) \\
+& +\left(\arctan \frac{3}{5}-\arctan \frac{2}{4}\right)+\cdots \\
+& +\left(\arctan \frac{n}{n+2}-\arctan \frac{n-1}{n+1}\right) \\
+= & \arctan \frac{n}{n+2} .
+\end{aligned}
+$$
+评注本题又可改编为 $\arctan \frac{1}{3}+\arctan \frac{1}{7}+\cdots+\arctan \frac{1}{1+n+n^2}+ \arctan \frac{1}{n+1}=\frac{\pi}{4}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10 求证: $\arcsin x+\arccos x=\frac{\pi}{2}$.
+%%<SOLUTION>%%
+分析:证明反三角恒等式的基本步骤是: (1)证等式两边的角的同名三角函数值相等; (2)证角的唯一性.
+证明 $\sin (\arcsin x+\arccos x)$
+$$
+\begin{aligned}
+& =\sin (\arcsin x) \cdot \cos (\arccos x)+\cos (\arcsin x) \cdot \sin (\arccos x) \\
+& =x \cdot x+\sqrt{1-x^2} \cdot \sqrt{1-x^2}=1=\sin \frac{\pi}{2} .
+\end{aligned}
+$$
+又因为 $-\frac{\pi}{2} \leqslant \arcsin x \leqslant \frac{\pi}{2}, 0 \leqslant \arccos x \leqslant \pi$, 所以
+$$
+-\frac{\pi}{2} \leqslant \arcsin x+\arccos x \leqslant \frac{3 \pi}{2}
+$$
+在 $\left[-\frac{\pi}{2}, \frac{3}{2} \pi\right]$ 上, $\sin \alpha=1$ 的角 $\alpha$ 是唯一的, 只有 $\frac{\pi}{2}$, 即
+$$
+\arcsin x+\arccos x=\frac{\pi}{2}
+$$
+评注同理可证: $\arcsin x+\arcsin \sqrt{1-x^2}=\frac{\pi}{2}$,
+$$
+\arctan x+\operatorname{arccot} x=\frac{\pi}{2} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11 若 $x_1 、 x_2$ 是方程 $x^2+6 x+7=0$ 的两根, 求 $\arctan x_1+\arctan x_2$ 值.
+%%<SOLUTION>%%
+分析:由一元二次方程之根联想韦达定理, 利用结果求 $\arctan x_1+ \arctan x_2$ 的某个三角函数值, 再反求其角度.
+解由
+$$
+x_1+x_2=-6, x_1 \cdot x_2=7 \text {, }
+$$
+得
+$$
+\tan \left(\arctan x_1+\arctan x_2\right)=1 \text {, }
+$$
+且由
+$$
+x_1<0, x_2<0 \text {, }
+$$
+可知
+$$
+\arctan x_1, \arctan x_2 \in\left(-\frac{\pi}{2}, 0\right),
+$$
+得
+$$
+\arctan x_1+\arctan x_2 \in(-\pi, 0),
+$$
+从而
+$$
+\arctan x_1+\arctan x_2=-\frac{3}{4} \pi
+$$
+评注当所求角的正切值为 1 时, 学生误认为所求角一定为 $\frac{\pi}{4}$. 其实不然, 由 $x_1<0, x_2<0$, 可知 $\arctan x_1, \arctan x_2 \in\left(-\frac{\pi}{2}, 0\right)$ 是本题之关键, 即估算所求角大致在什么范围, 是引起学生警惕的重要步骤.
+推广: 当 $x_1 、 x_2$ 是关于 $x$ 的方程 $x^2+m x+(m+1)=0$ 的两根, 且 $m>$ 0 , 则 $\arctan x_1+\arctan x_2=-\frac{3}{4} \pi$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12 若 $x_1 、 x_2$ 是方程 $x^2-x \sin \alpha+\cos \alpha=0$ 的两个根, 且 $0<\alpha<\pi$, 求 $\arctan x_1+\arctan x_2$ 的值.
+%%<SOLUTION>%%
+解:由韦达定理, $x_1+x_2=\sin \alpha, x_1 \cdot x_2=\cos \alpha$, 所以
+$$
+\begin{aligned}
+\tan \left(\arctan x_1+\arctan x_2\right) & =\frac{x_1+x_2}{1-x_1 x_2}=\frac{\sin \alpha}{1-\cos \alpha} \\
+& =\cot \frac{\alpha}{2}=\tan \left(\frac{\pi}{2}-\frac{\alpha}{2}\right) .
+\end{aligned}
+$$
+因为 $-\pi<\arctan x_1+\arctan x_2<\pi$, 以及 $0<\alpha<\pi$, 故
+$$
+0<\frac{\pi}{2}-\frac{\alpha}{2}<\frac{\pi}{2}
+$$
+所以
+$$
+\arctan x_1+\arctan x_2=\frac{\pi}{2}-\frac{\alpha}{2}
+$$
+或
+$$
+\arctan x_1+\arctan x_2=-\frac{\pi}{2}-\frac{\alpha}{2} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13 求函数 $f(x)=2 \arccos \left(\frac{x^2-x}{2}\right)$ 的定义域、值域及单调区间.
+分析从定义出发, 根据反三角函数的图象与性质回答问题.
+%%<SOLUTION>%%
+解:由 $-1 \leqslant \frac{x^2-x}{2} \leqslant 1$, 得定义域是 $x \in[-1,2]$;
+由 $\frac{x^2-x}{2}=\frac{1}{2}\left[\left(x-\frac{1}{2}\right)^2-\frac{1}{4}\right] \in\left[-\frac{1}{8}, 1\right]$,
+故值域是
+$$
+y \in\left[0,2 \arccos \left(-\frac{1}{8}\right)\right]
+$$
+由上述两步可知 $x \in\left[-1, \frac{1}{2}\right]$ 时, $f(x)$ 是单调递增的, $x \in\left[\frac{1}{2}, 2\right]$ 时, $f(x)$ 是单调递减的.
+评注在求函数单调性时, 必须考虑函数定义域.
+有关复合函数的单调区间求法可根据“增增得增, 增减得减, 减减得增” 的记忆法则求之, 本题中设 $t=\frac{1}{2}\left(x^2-x\right)$, 则 $y=2 \arccos t$ 是复合函数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14 满足 $\arccos (1-x) \geqslant \arccos x$ 的 $x$ 的取值范围是 ( ).
+(A) $\left[-1,-\frac{1}{2}\right]$
+(B) $\left[-\frac{1}{2}, 0\right]$
+(C) $\left[0, \frac{1}{2}\right]$
+(D) $\left[\frac{1}{2}, 1\right]$
+%%<SOLUTION>%%
+分析:反余弦函数 $y=\arccos x$ 在定义域 $[-1,1]$ 内是单调递减函数,所以有 $\left\{\begin{array}{l}|1-x| \leqslant 1, \\ |x| \leqslant 1, \\ 1-x \leqslant x,\end{array}\right.$ 解得 $x \in\left[\frac{1}{2}, 1\right]$.
+所以, 选 D.
+评注函数定义域是必须考虑的条件, 本题如仅考虑 $1-x \leqslant x$, 在选项中最佳答案仍是 $\mathrm{D}$, 但这仅仅是“偶尔恰恰”而已, 不能作一般方法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例15 方程 $\sin 2 x=\sin x$ 在区间 $(0,2 \pi)$ 内解的个数是 ( ).
+(A) 1
+(B) 2
+(C) 3
+(D) 4
+%%<SOLUTION>%%
+分析:对于选择题来说, 可利用直接求解法或通项求解法.
+解法一将原方程化为 $\sin x(2 \cos x-1)=0$, 在区间 $(0,2 \pi)$ 内 $\sin x=$ 0 有一解 $x=\pi ; 2 \cos x-1=0$ 有两解 $x=\frac{\pi}{3}$ 或 $\frac{5 \pi}{3}$; 故共有三解.
+解法二对于简单的三角方程 $\sin x=\sin \alpha$, 其解是 $x=n \pi+(-1)^n \alpha$, $(n \in \mathbf{Z})$, 因此本题解法二, 由原方程得 $2 x=n \pi+(-1)^n x$, 即 $x=2 k \pi$ 或 $x= \frac{2 k+1}{3} \pi$,在区间 $(0,2 \pi)$ 内, 取 $k=0 、 1 、 2$ 得三解.
+解法三遇到形如 $\sin \alpha \pm \sin \beta$ 等形式的三角函数式也可联想到和差化积, 即原方程化为 $\sin 2 x-\sin x=0$, 得 $2 \cos \frac{3 x}{2} \sin \frac{x}{2}=0$, 从而在区间 $(0,2 \pi)$ 内得三解.
+所以, 选 C.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例16 解方程 $\sin ^2 x-3 \sin x \cos x+1=0$.
+%%<SOLUTION>%%
+分析:通过“ “ ”的代换可将原方程化成齐次型,转化为关于 $\tan x$ 的二次方程再解之; 亦可通过 “降次”, 转化为 $a \sin 2 x+b \cos 2 x=c$ 的方程解之.
+解法一由原方程得
+$$
+2 \sin ^2 x-3 \sin x \cos x+\cos ^2 x=0,
+$$
+显然 $\cos x \neq 0$, 则有
+$$
+2 \tan ^2 x-3 \tan x+1=0,
+$$
+得
+$$
+\tan x=\frac{1}{2} \text { 或 } \tan x=1 \text {. }
+$$
+从而 $x=k \pi+\arctan \frac{1}{2}, k \in \mathbf{Z}$ 或 $x=k \pi+\frac{\pi}{4}, k \in \mathbf{Z}$.
+解法二由原方程得
+$$
+\frac{1-\cos 2 x}{2}-\frac{3}{2} \sin 2 x+1=0,
+$$
+即
+$$
+3 \sin 2 x+\cos 2 x=3 \text {. }
+$$
+于是
+$$
+\sin (2 x+\varphi)=\frac{3}{\sqrt{10}},
+$$
+其中
+$$
+\varphi=\arctan \frac{1}{3}
+$$
+所以
+$$
+2 x+\varphi=k \pi+(-1)^k \arcsin \frac{3}{\sqrt{10}} .
+$$
+故 $x=\frac{1}{2} k \pi+\frac{1}{2}(-1)^k \arcsin \frac{3}{\sqrt{10}}-\frac{1}{2} \arctan \frac{1}{3}, k \in \mathbf{Z}$.
+评注三角方程的解的表示法并不唯一, 在本题中角 $\arcsin \frac{3}{\sqrt{10}}$ 与角 $\arctan \frac{1}{3}$ 互余,两种答案是等价的; 形如 $a \sin x+b \cos x=c$ 的三角方程通常在方程两边除以 $\sqrt{a^2+b^2}$ 后化成 $\sin (x+\varphi)=\frac{c}{\sqrt{a^2+b^2}}$, 其中 $\sin \varphi= \frac{b}{\sqrt{a^2+b^2}}, \cos \varphi=\frac{a}{\sqrt{a^2+b^2}}$, 再求之; 而形如 $a \sin x+b \cos x=0$ 和
+$a \sin ^2 x+b \sin x \cos x+c \cos ^2 x=0$ 等齐次型, 可转化为关于 $\tan x$ 的二次方程再求解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例17 关于 $x$ 的方程 $\sin x+\sqrt{3} \cos x+a=0$ 在 $(0,2 \pi)$ 内有两个相异的实数解 $\alpha 、 \beta$, 求实数 $a$ 的取值范围及 $\alpha+\beta$ 之值.
+%%<SOLUTION>%%
+分析:将原方程化为 $2 \sin \left(x+\frac{\pi}{3}\right)+a=0$, 再由值域求 $a$ 的取值范围.
+也可将方程之解看成两个函数图象的交点横坐标, 从图象观察出 $a$ 的取值范围, 由此解法同时可求 $\alpha+\beta$ 之值.
+解法一由原方程得 $2 \sin \left(x+\frac{\pi}{3}\right)+a=0$, 结合题设条件得
+$$
+\left\{\begin{array}{l}
+|-a|<2, \\
+-a \neq \sqrt{3} .
+\end{array}\right.
+$$
+即 $-2<a<2$ 且 $a \neq-\sqrt{3}$.
+解法二设 $y_1=2 \sin \left(x+\frac{\pi}{3}\right), y_2=-a$, 在同一直角坐标系中分别作出它们的图象, 如图(<FilePath:./figures/fig-c4e17.png>), 由此观察, 即得 $\left\{\begin{array}{l}|-a|<2, \\ -a \neq \sqrt{3},\end{array}\right.$ 即 $-2<a<2$ 且 $a \neq-\sqrt{3}$;
+再从图象可知, 实数解 $\alpha 、 \beta$ 关于对称轴 $x= \frac{\pi}{6}$ 或 $x=\frac{7 \pi}{6}$ 对称, 从而 $\alpha+\beta=\frac{\pi}{3}$ 或 $\frac{7 \pi}{3}$.
+本题有关 $\alpha+\beta$ 之值的求法, 另有:
+因 $\alpha 、 \beta$ 是方程的实数解,故
+$$
+2 \sin \left(\alpha+\frac{\pi}{3}\right)+a=2 \sin \left(\beta+\frac{\pi}{3}\right)+a=0,
+$$
+由和差化积公式得 $\cos \left(\frac{\alpha+\beta}{2}+\frac{\pi}{3}\right) \sin \frac{\alpha-\beta}{2}=0, \alpha \neq \beta$, 得 $\cos \left(\frac{\alpha+\beta}{2}+\frac{\pi}{3}\right)=$ 0 , 从而 $\frac{\alpha+\beta}{2}+\frac{\pi}{3}=\frac{\pi}{2}+k \pi$, 在 $(0,2 \pi)$ 中, $\alpha+\beta=\frac{\pi}{3}$ 或 $\frac{7 \pi}{3}$.
+评注关于方程解的个数问题, 是 “数形结合” 的典型例题, 利用图象法判断, 既迅速又准确.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例18 就实数 $a$ 的取值范围,讨论关于 $x$ 的方程
+$$
+\cos 2 x+2 \sin x+2 a-3=0
+$$
+在 $[0,2 \pi]$ 内解的情况.
+%%<SOLUTION>%%
+分析:利用倍角公式将原方程化为关于 $\sin x$ 的方程后, 再用 “图象法” 判断解的分布情况.
+解原方程化为 $\sin ^2 x-\sin x=a-1$, 配方得
+$$
+\left(\sin x-\frac{1}{2}\right)^2=a-\frac{3}{4} \text {. }
+$$
+设
+$$
+y_1=\left(\sin x-\frac{1}{2}\right)^2, y_2=a-\frac{3}{4},
+$$
+分别作出它们的图象如图 (<FilePath:./figures/fig-c4e18.png>), 由此观察, 得
+(1)当 $a-\frac{3}{4}<0$ 或 $a-\frac{3}{4}>\frac{9}{4}$,
+即 $a<\frac{3}{4}$ 或 $a>3$ 时, 方程无解;
+(2)当 $a-\frac{3}{4}=\frac{9}{4}$, 即 $a=3$ 时,方程有一解 $x=\frac{3}{2} \pi$;
+(3)当 $\frac{1}{4}<a-\frac{3}{4}<\frac{9}{4}$ 或 $a- \frac{3}{4}=0$, 即 $1<a<3$ 或 $a=\frac{3}{4}$ 时, 方程有两解;
+(4)当 $a-\frac{3}{4}=\frac{1}{4}$, 即 $a=1$ 时,方程有四解 $x=0, \frac{1}{2} \pi, \pi, 2 \pi$;
+(5) $0<a-\frac{3}{4}<\frac{1}{4}$, 即 $\frac{3}{4}<a<1$ 时, 方程有四解.
+评注在 $[0,2 \pi]$ 内, 以 $t=\sin x$ 为横轴, 则函数 $y=a \sin ^2 x+b \sin x+c (a \neq 0)$ 可化为 $y=a t^2+b t+c$ 的图象是在 $[-1,1]$ 上的一段曲线,再在区间 $[-1,1]$ 上加以讨论.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例19 已知 $\alpha$ 、 $\beta$ 是方程 $a \cos x+b \sin x=c$ 的两个相异的根,且 $\alpha \pm \beta \neq k \pi, k \in \mathbf{Z}, a b \neq 0$, 求证: (1) $\tan (\alpha+\beta)=\frac{2 a b}{a^2-b^2}$; (2) $\cos ^2 \frac{\alpha-\beta}{2}=\frac{c^2}{a^2+b^2}$.
+%%<SOLUTION>%%
+证明:(1) 由条件得
+$$
+\begin{aligned}
+& a \cos \alpha+b \sin \alpha=c, \quad\quad (1)\\
+& a \cos \beta+b \sin \beta=c, \quad\quad (2)
+\end{aligned}
+$$
+由(1)-(2)得
+$$
+a(\cos \alpha-\cos \beta)+b(\sin \alpha-\sin \beta)=0,
+$$
+和差化积得
+$$
+-2 a \sin \frac{\alpha+\beta}{2} \sin \frac{\alpha-\beta}{2}+2 b \cos \frac{\alpha+\beta}{2} \sin \frac{\alpha-\beta}{2}=0 .
+$$
+因为 $\alpha \pm \beta \neq k \pi$, 所以 $\sin \frac{\alpha-\beta}{2} \neq 0, \cos \frac{\alpha+\beta}{2} \neq 0$. 故 $\tan \frac{\alpha+\beta}{2}=\frac{b}{a}$,
+从而
+$$
+\tan (\alpha+\beta)=\frac{2 \tan \frac{\alpha+\beta}{2}}{1-\tan ^2 \frac{\alpha+\beta}{2}}=\frac{2 \cdot \frac{b}{a}}{1-\frac{b^2}{a^2}}=\frac{2 a b}{a^2-b^2} .
+$$
+(2) 由(1) 可得
+$$
+\begin{aligned}
+& \sin (\alpha+\beta)=\frac{2 \times \frac{b}{a}}{1+\frac{b^2}{a^2}}=\frac{2 a b}{a^2+b^2}, \\
+& \cos (\alpha+\beta)=\frac{a^2-b^2}{a^2+b^2},
+\end{aligned}
+$$
+由(1) X(2)得
+$$
+\begin{gathered}
+a^2 \cos \alpha \cos \beta+a b(\sin \alpha \cos \beta+\cos \alpha \sin \beta)+b^2 \sin \alpha \sin \beta=c^2, \\
+\frac{1}{2} a^2[\cos (\alpha+\beta)+\cos (\alpha-\beta)]+a b \sin (\alpha+\beta) \\
++\frac{1}{2} b^2[\cos (\alpha-\beta)-\cos (\alpha+\beta)]=c^2 .
+\end{gathered}
+$$
+即
+$$
+\begin{gathered}
+\frac{1}{2} a^2[\cos (\alpha+\beta)+\cos (\alpha-\beta)]+a b \sin (\alpha+\beta) \\
++\frac{1}{2} b^2[\cos (\alpha-\beta)-\cos (\alpha+\beta)]=c^2
+\end{gathered}
+$$
+所以
+$$
+\left(\frac{1}{2} a^2+\frac{1}{2} b^2\right) \cos (\alpha-\beta)=c^2-\left(\frac{1}{2} a^2-\frac{1}{2} b^2\right) \times \frac{a^2-b^2}{a^2+b^2}-a b \cdot \frac{2 a b}{a^2+b^2} .
+$$
+即
+$$
+\cos (\alpha-\beta)=\frac{2 c^2}{a^2+b^2}-1
+$$
+从而
+$$
+\cos ^2 \frac{\alpha-\beta}{2}=\frac{c^2}{a^2+b^2}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例20 解方程 $\sin 30^{\circ} \cdot \sin 80^{\circ} \cdot \sin x=\sin 20^{\circ} \cdot \sin 50^{\circ} \cdot \sin \left(x+40^{\circ}\right)$.
+%%<SOLUTION>%%
+解:原方程可化为 $\frac{\sin \left(x+40^{\circ}\right)}{\sin x}=\frac{\sin 30^{\circ} \cdot \sin 80^{\circ}}{\sin 20^{\circ} \cdot \sin 50^{\circ}}$
+$$
+=\frac{\sin 40^{\circ} \cos 40^{\circ}}{\sin 20^{\circ} \cdot \sin 50^{\circ}}=\frac{\sin 40^{\circ}}{\sin 20^{\circ}}=2 \cos 20^{\circ} \text {. }
+$$
+即
+$$
+\cos 40^{\circ}+\sin 40^{\circ} \cdot \cot x=2 \cos 20^{\circ} \text {. }
+$$
+所以
+$$
+\begin{aligned}
+\cot x & =\frac{2 \cos 20^{\circ}-\cos 40^{\circ}}{\sin 40^{\circ}} \\
+& =\frac{\cos 20^{\circ}+\cos 20^{\circ}-\cos 40^{\circ}}{\sin 40^{\circ}} \\
+& =\frac{\cos 20^{\circ}+2 \sin 30^{\circ} \sin 10^{\circ}}{\sin 40^{\circ}} \\
+& =\frac{\sin 70^{\circ}+\sin 10^{\circ}}{\sin 40^{\circ}} \\
+& =\frac{2 \sin 40^{\circ} \cos 30^{\circ}}{\sin 40^{\circ}}=\sqrt{3} .
+\end{aligned}
+$$
+故所求解集为 $\left\{x \mid x=k \cdot 180^{\circ}+30^{\circ}, k \in \mathbf{Z}\right\}$.
+%%PROBLEM_END%%
+
+

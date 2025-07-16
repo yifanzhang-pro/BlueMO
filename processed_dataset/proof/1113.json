@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $a, b, c \\in \\mathbf{R}^{+}$, 满足 $a \\cos ^2 \\alpha+b \\sin ^2 \\alpha<c$, 求证:\n$$\n\\sqrt{a} \\cos ^2 \\alpha+\\sqrt{b} \\sin ^2 \\alpha<\\sqrt{c} .\n$$",
+    "solution": "证明:由柯西不等式, 得\n$$\n\\begin{aligned}\n\\sqrt{a} \\cos ^2 \\alpha+\\sqrt{b} \\sin ^2 \\alpha & =\\sqrt{a} \\cos \\alpha \\cdot \\cos \\alpha+\\sqrt{b} \\sin \\alpha \\cdot \\sin \\alpha \\\\\n& \\leqslant\\left[(\\sqrt{a} \\cos \\alpha)^2+(\\sqrt{b} \\sin \\alpha)^2\\right]^{\\frac{1}{2}} \\cdot\\left(\\cos ^2 \\alpha+\\sin ^2 \\alpha\\right)^{\\frac{1}{2}} \\\\\n& =\\left(a \\cos ^2 \\alpha+b \\sin ^2 \\alpha\\right)^{\\frac{1}{2}}<\\sqrt{c},\n\\end{aligned}\n$$\n故命题成立.",
+    "remark": "",
+    "figures": []
+}

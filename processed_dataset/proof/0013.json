@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $p \\geqslant 5$ 是一个素数, $S=\\{1,2, \\cdots, p-1\\}, A=\\{a \\mid a \\in S, a^{p-1} \\not \\equiv 1\\left(\\bmod p^2\\right) \\}$. 证明 : $|A| \\geqslant \\frac{p-1}{2}$.",
+    "solution": "分析:如果 $1 \\leqslant a \\leqslant p-1$, 显然 $1 \\leqslant p-a \\leqslant p-1$. 将 $a$ 与 $p-a$ 配对, 如果 $a^{p-1}$ 与 $(p-a)^{p-1}$ 模 $p^2$ 不同余, 则结论成立.\n证明设 $a \\in S$, 则 $p-a \\in S$. 由二项式定理,有\n$$\n(p-a)^{p-1}-a^{p-1} \\equiv-(p-1) a^{p-2} \\cdot p \\not \\equiv 0\\left(\\bmod p^2\\right) .\n$$\n于是, $a$ 和 $p-a$ 中至少有一个在 $A$ 中, 从而有\n$$\n|A| \\geqslant \\frac{p-1}{2} \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

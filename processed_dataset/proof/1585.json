@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 设 $k$ 为给定的正整数,数列 $\\left\\{a_n\\right\\}$ 满足\n$$\na_1=k+1, a_{n+1}=a_n^2-k a_n+k, n=1,2, \\cdots .\n$$\n证明: 对任意不同的正整数 $m 、 n$, 数 $a_m$ 与 $a_n$ 互素.",
+    "solution": "由递推式, 知 $a_{n+1}-k=a_n\\left(a_n-k\\right)$, 于是 $a_n-k=a_{n-1}\\left(a_{n-1}-k\\right)= a_{n-1} a_{n-2}\\left(a_{n-2}-k\\right)=\\cdots=a_{n-1} \\cdots a_1\\left(a_1-k\\right)=a_{n-1} \\cdots a_1$, 即(1)\n$$\na_n=a_{n-1} \\cdots a_1+k \\text {. }\n$$\n对任意 $m 、 n \\in \\mathbf{N}^*, m \\neq n$, 我们不妨设 $m<n$, 则由 (1) 知\n$$\n\\left(a_n, a_m\\right)=\\left(a_{n-1} \\cdots a_1+k, a_m\\right)=\\left(k, a_m\\right) .\n$$\n下证: 对任意 $m \\in \\mathbf{N}^*$, 都有 $a_m \\equiv 1(\\bmod k)$.\n当 $m=1$ 时, 由 $a_1=k+1$ 知结论成立.\n现设 $m$ 时成立, 即 $a_m \\equiv 1(\\bmod k$ ), 则 $a_{m+1}=a_m^2-k a_m+k \\equiv a_m^2 \\equiv 1^2 \\equiv 1(\\bmod k)$. 所以, 对任意 $m \\in \\mathbf{N}^*$, 有 $a_m \\equiv 1(\\bmod k)$.\n利用上述结论知 $\\left(a_m, k\\right)=1$, 进而 $\\left(a_n, a_m\\right)=1$.",
+    "remark": "",
+    "figures": []
+}

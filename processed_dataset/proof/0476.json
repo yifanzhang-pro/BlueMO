@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 证明: 如果偶图 $G=(X, Y ; E)$ 是 $\\delta$ 正则的,则 $|X|=|Y|$.",
+    "solution": "由 $\\delta|X|=\\delta|Y|=$ 总边数, 得 $|X|=|Y|$.",
+    "remark": "",
+    "figures": []
+}

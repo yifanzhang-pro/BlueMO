@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题7. $\\triangle A B C$ 的外接圆的圆心为 $O, A^{\\prime}$ 是边 $B C$ 的中点, $A A^{\\prime}$ 与外接圆交于点 $A^{\\prime \\prime}, A^{\\prime} Q_a \\perp A O$, 点 $Q_a$ 在 $A O$ 上, 过点 $A^{\\prime \\prime}$ 的外接圆的切线与 $A^{\\prime} Q_a$ 相交于点 $P_a$. 用同样的方式, 可以构造点 $P_b$ 和 $P_c$. 证明: $P_a 、 P_b 、 P_c$ 三点共线.",
+    "solution": "证明: 可以证明它们都在 $\\odot O$ 与九点圆的根轴上.\n如图(<FilePath:./images/volume7/figures/fig-c6a7.png>), 把 $\\triangle A B C$ 位似变换到 $\\triangle A^{\\prime} B^{\\prime} C^{\\prime}$. $\\triangle A B C$ 的重心为位似中心, 位似比为 $-\\frac{1}{2}$. 在这种变换下, $A O$ 变成了 $A^{\\prime} N$, 其中 $N$ 是九点圆的圆心.\n所以, $A^{\\prime} N / / A O, A^{\\prime} P_a \\perp A^{\\prime} N$. 故 $A^{\\prime} P_a$. 是九点圆的切线.\n易知 $\\angle O A B+\\angle C=90^{\\circ}$, 则 $\\angle B A A^{\\prime}+ \\angle A^{\\prime} A O+\\angle C=90^{\\circ}$ (不妨设 $A B \\leqslant A C$ ). 又\n$\\angle P_a A^{\\prime \\prime} A^{\\prime}=\\angle B A A^{\\prime}+\\angle C, \\angle P_a A^{\\prime} A^{\\prime \\prime}=90^{\\circ}- \\angle A^{\\prime} A O$, 所以, $\\angle P_a A^{\\prime \\prime} A^{\\prime}=\\angle P_a A^{\\prime} A^{\\prime \\prime}$. 故 $A^{\\prime} P_a= A^{\\prime \\prime} P_a$. 所以, $P_a$ 在 $\\odot O$ 与九点圆的根轴上.\n同理, $P_b 、 P_c$ 也在 $\\odot O$ 与九点圆的根轴上.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6a7.png"
+    ]
+}

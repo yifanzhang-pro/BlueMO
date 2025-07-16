@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 证明, 若整数 $n>1$, 则 $n \\nmid 3^n-2^n$.",
+    "solution": "反证法,设有 $n>1$, 使 $n \\mid 3^n-2^n$. 设 $p$ 是 $n$ 的最小素因子, 则 $3^n \\equiv 2^n(\\bmod p)$, 从而 $p \\geqslant 5$. 故有整数 $a$, 使得 $2 a \\equiv 1(\\bmod p)$. 因此有\n$$\n(3 a)^n \\equiv 1(\\bmod p) .\n$$\n设 $d$ 是 $3 a$ 模 $p$ 的阶.\n由上式知 $d \\mid n$. 又费马小定理给出 $(3 a)_{-3}^{p-1} \\equiv 1(\\bmod p)$ ,\n故 $d \\mid p-1$. 若 $d>1$, 则 $d$ 有素因子 $q$, 而由 $d \\mid n$ 知 $q \\mid n$; 由 $d \\mid p-1$ 知 $q< p$, 这与 $p$ 的选取相违,故 $d=1$. 从而 $3 a \\equiv 1(\\bmod p)$, 结合 $2 a \\equiv 1(\\bmod p)$ 可知 $a \\equiv 1(\\bmod p)$, 进而 $2 a \\equiv 2(\\bmod p)$, 产生矛盾.",
+    "remark": "",
+    "figures": []
+}

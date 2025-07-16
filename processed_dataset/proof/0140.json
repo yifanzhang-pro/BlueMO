@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例1. 证明: $1 \\underbrace{0 \\cdots 0}_{200 \\text { 个0 }} 1$ 被 1001 整除.",
+    "solution": "证明:我们有\n$$\n\\begin{aligned}\n\\underbrace{10 \\cdots 01}_{200 \\text { 个 } 0} & =10^{201}+1=\\left(10^3\\right)^{67}+1 \\\\\n& =\\left(10^3+1\\right)\\left[\\left(10^3\\right)^{66}-\\left(10^3\\right)^{65}+\\cdots-10^3+1\\right],\n\\end{aligned}\n$$\n所以, $10^3+1(=1001)$ 整除 $1 \\underbrace{0 \\cdots 0}_{200 \\text { 个 } 0} 1$.",
+    "remark": "",
+    "figures": []
+}

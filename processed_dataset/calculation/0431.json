@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise13.tex",
+    "problem_type": "calculation",
+    "problem": "问题7. 一个 $m \\times n$ 的矩形, 每个单位正方形要么被染为黑色, 要么被染为白色.\n对一个黑色的单位正方形, 若在其所在行中, 左边有某个单位正方形是白色的,且在其所在列中,上边有某个单位正方形是白色的,则称这个黑色的单位正方形为 \"搁浅的\". 图(<FilePath:./images/volume14/figures/fig-c13p7.png>)中给出的是一个 $4 \\times 5$ 的矩形, 且没有搁浅的黑格.\n求没有搁浅的黑格的 $2 \\times n$ 的矩形的数目.",
+    "solution": "记有搁浅黑格的 $2 \\times n$ 矩形的数目为 $a_n$, 无搁浅黑格的 $2 \\times n$ 矩形的数目为 $b_n$, 则 $b_n=2^{2 n}-a_n$, 且 $a_1=0$.\n由题意知, 搁浅的黑格只可能位于第 2 行.\n(1) 若第 2 行前 $n-1$ 个方格中已有搁浅的黑格, 则第 $n$ 列无论怎样染色, 均使 $2 \\times n$ 矩形中存在搁浅的黑格, 此时共有 $2^2 a_{n-1}=4 a_{n-1}$ 种情况.\n(2) 若第 2 行前 $n-1$ 个方格中无搁浅的黑格,则第 2 行第 $n$ 列的方格必为 $2 \\times n$ 矩形中唯一的挌浅的黑格,所以它上面的方格确定为白格, 且第 2 行前 $n-1$ 个方格中存在白格, 而在第 2 行前 $n-1$ 个方格均为黑格的情况下,第一行任意一种染色方法均可使前 $n-1$ 列无搁浅的黑格, 所以这里 $2^{n-1}$ 种情况需要排除,故共有 $b_{n-1}-2^{n-1}=2^{2(n-1)}-a_{n-1}-2^{n-1}$ 种情况.\n$$\n\\text { 综合 (1)、(2) 知 } a_n=4 a_{n-1}+2^{2(n-1)}-a_{n-1}-2^{n-1}=3 a_{n-1}+4^{n-1}-2^{n-1} \\text {. }\n$$\n即\n$$\n\\frac{a_n}{3^{n-1}}=\\frac{a_{n-1}}{3^{n-2}}+\\left(\\frac{4}{3}\\right)^{n-1}-\\left(\\frac{2}{3}\\right)^{n-1}\n$$\n将该式中的 $n$ 分别代换成 $2,3, \\cdots, n$ 并累加, 注意 $a_1=0$, 有\n$$\n\\begin{aligned}\n\\frac{a_n}{3^{n-1}} & =\\sum_{k=2}^n\\left(\\frac{4}{3}\\right)^{n-1}-\\sum_{k=2}^n\\left(\\frac{2}{3}\\right)^{n-1} \\\\\n& =4 \\times\\left(\\left(\\frac{4}{3}\\right)^{n-1}-1\\right)-2 \\times\\left(1-\\left(\\frac{2}{3}\\right)^{n-1}\\right)=\\frac{4^n+2^n}{3^{n-1}}-6,\n\\end{aligned}\n$$\n即 $a_n=4^n+2^n-6 \\times 3^{n-1}=4^n+2^n-2 \\times 3^n$.\n从而 $b_n=2^{2 n}-a_n=2 \\times 3^n-2^n$.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c13p7.png"
+    ]
+}

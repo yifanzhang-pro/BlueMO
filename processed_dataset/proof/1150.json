@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-3.tex",
+    "problem_type": "proof",
+    "problem": "例12. 设 $x, y, z \\in \\mathbf{R}^{+}$, 且 $x+y+z=1$, 证明:\n$$\n\\sum_{x, y, z} \\frac{x^4}{y\\left(1-y^2\\right)} \\geqslant \\frac{1}{8} \\text {. }\n$$",
+    "solution": "证明:左边 $\\geqslant \\frac{\\left(\\sum x^2\\right)^2}{\\sum y\\left(1-y^2\\right)} \\geqslant \\frac{\\left[\\frac{\\left(\\sum x\\right)^2}{3}\\right]^2}{\\sum x-\\sum x^3}=\\frac{\\frac{1}{9}}{1-\\sum x^3}$.\n又 $\\quad \\sum x^3=\\sum \\frac{x^4}{x} \\geqslant \\frac{\\left(\\sum x^2\\right)^2}{\\sum x} \\geqslant\\left[\\frac{\\left(\\sum x\\right)^2}{3}\\right]^2=\\frac{1}{9}$,\n所以,左边 $\\geqslant \\frac{\\frac{1}{9}}{1-\\frac{1}{9}}=\\frac{1}{8}$, 故原不等式成立.",
+    "remark": "",
+    "figures": []
+}

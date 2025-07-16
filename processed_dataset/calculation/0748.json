@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题29 设三角形的三边 $a 、 b 、 c$ 满足 $a>b>c$, 在此三角形的两边上分别取点 $P 、 Q$, 使线段 $P Q$ 把 $\\triangle A B C$ 分成面积相等的两部分, 求使 $P Q$ 长度为最短的点 $P 、 Q$ 的位置.",
+    "solution": "若 $P 、 Q$ 分别取在 $B C 、 A C$ 上, 设 $C P=x, C Q=y$, 则 $\\frac{1}{2} x y \\sin C= \\frac{1}{2} \\cdot \\frac{1}{2} a b \\sin C, x y=\\frac{1}{2} a b$. 由余弦定理, 在 $\\triangle C P Q$ 中, $P Q^2=x^2+y^2- 2 x y \\cos C=(x-y)^2+2 x y(1-\\cos C)=(x-y)^2+a b(1-\\cos C)$. 所以, 当 $x=y$ 时, $P Q$ 有最小值, 这时 $P Q=\\sqrt{a b-a b \\cos C}=\\sqrt{a b-\\frac{1}{2}\\left(a^2+b^2-c^2\\right)}= \\sqrt{\\frac{1}{2}(c+a-b)(c-a+b)}=\\sqrt{2(p-a)(p-b)}$. 其中 $p=\\frac{1}{2}(a+b+c)$. 若 $P 、 Q$ 分别取在 $A C 、 A B$ 边上, 则当 $A P=A Q$ 时, $P Q$ 有最小值 $\\sqrt{2(p-b)(p-c)}$; 若 $P 、 Q$ 分别取在边 $A B 、 B C$ 上, 则当 $B P=B Q$ 时, $P Q$ 有最小值 $\\sqrt{2(p-c)(p-a)}$. 但 $a>b>c$, 因此 $\\sqrt{2(p-a)(p-b)}$ 最小, 即 $P$ 、 $Q$ 分别取在边 $B C 、 A C$ 上, 且 $C P=C Q$ 时, $P Q$ 长度最短.\n因为此时 $P Q= \\sqrt{a b(1-\\cos C)}=\\sqrt{2 a b} \\sin \\frac{C}{2}, \\triangle C P Q$ 是等腰三角形, 所以 $C P=C Q= \\frac{\\frac{1}{2} P Q}{\\sin \\frac{C}{2}}=\\frac{1}{2} \\sqrt{2 a b}$.",
+    "remark": "",
+    "figures": []
+}

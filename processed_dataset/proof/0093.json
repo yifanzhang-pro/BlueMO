@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题6 设集合 $M=\\left\\{x_1, x_2, \\cdots, x_{30}\\right\\}$ 由 30 个互不相同的正数组成, $A_n(1 \\leqslant n \\leqslant 30)$ 是 $M$ 中所有的 $n$ 个不同元素之和的和数.\n证明: 若 $A_{15}>A_{10}$, 则 $A_1>1$.",
+    "solution": "只需证明: 如果 $A_1 \\leqslant 1$, 那么对一切 $1 \\leqslant n \\leqslant 29$, 都有 $A_{n+1}<A_n$. 由于 $A_1 \\leqslant 1$, 所以, $A_n \\geqslant A_1 A_n$. 将 $A_1$ 与 $A_n$ 乘开, 并且整理以后, 可知 $A_1 A_n= A_{n+1}+S_n$, 易证 $S_n>0$, 由此即得所证.",
+    "remark": "",
+    "figures": []
+}

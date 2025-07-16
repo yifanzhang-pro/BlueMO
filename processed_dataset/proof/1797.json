@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题16. 设 $H$ 为锐角 $\\triangle A B C$ 的垂心, $\\triangle A B C$ 的三条高线中最长的一条记为 $h_{\\max }$. 证明: $A H+B H+ C H \\leqslant 2 h_{\\max }$.",
+    "solution": "证明: 不妨设 $A B=c, A C=b, B C=a$, 且不妨设 $a \\leqslant b \\leqslant c$. 如图(<FilePath:./images/volume7/figures/fig-c10a16.png>), 作 $H$ 关于 $B C$ 的对称点 $H^{\\prime}$, 连结 $H^{\\prime} H 、 H^{\\prime} B 、 H^{\\prime} C$. 因 $\\angle B C H^{\\prime}=\\angle B C H$, $\\angle B C H=\\angle B A H$, 所以, $A 、 B 、 H^{\\prime} 、 C$ 四点共圆.\n则由托勒密定理知 $A H^{\\prime}$. $B C=C H^{\\prime} \\cdot A B+B H^{\\prime} \\cdot A C \\Leftrightarrow\\left(2 h_a-A H\\right) B C=C H \\cdot A B+B H \\cdot A C \\geqslant C H \\cdot B C+B H \\cdot B C$. 故 $2 h_a-A H \\geqslant B H+C H$, 因此 $A H+B H+C H \\leqslant 2 h_a$. 因为 $h_a$ 是三条高线中最长的, 所以, $A H+B H+C H \\leqslant 2 h_{\\max }$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c10a16.png"
+    ]
+}

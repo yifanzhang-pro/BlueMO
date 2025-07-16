@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题12 平面上有 $n$ 个点,其中任意三点不共线,且任意三点构成的三角形的面积都小于 1 . 证明: 存在一个面积小于 4 的三角形包含这 $n$ 个点.",
+    "solution": "取 $n$ 个点中任意三点作一个三角形, 三角形的个数是有限的, 每一个三角形都有一个面积, 取其中面积最大的一个记为 $\\triangle A_1 A_2 A_3$. 由于每个三角形的面积都小于 1 , 所以 $S_{\\triangle A_1 A_2 A_3}<1$. 过顶点 $A_1 、 A_2 、 A_3$ 分别作对边的平行线, 得到一个 $\\triangle A B C$, 如图(<FilePath:./images/volume1/figures/fig-c8p12.png>)所示.\n显然 $S_{\\triangle A B C}=4 S_{\\triangle A_1 A_2 A_3}<4$.\n下面证明 $\\triangle A B C$ 包含了这 $n$ 个点.\n用反证法.\n设 $\\triangle A B C$ 外还有这 $n$ 个点中的一点, 设为 $A_4$, 则$S_{\\triangle A_4 A_3 A_1}>S_{\\triangle A_2 A_3 A_1}$, 这与$\\triangle A_1 A_2 A_3$最大矛盾.\n于是 $\\triangle A B C$ 即为所求.",
+    "remark": "",
+    "figures": [
+        "./images/volume1/figures/fig-c8p12.png"
+    ]
+}

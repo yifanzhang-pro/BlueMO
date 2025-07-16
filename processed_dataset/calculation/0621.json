@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题16 $a$ 为已知实数, $0<a<1 . f$ 为 $[0,1]$ 上的函数, 满足 $f(0)=0, f(1)=$ 1 及对所有 $x \\leqslant y$,\n$$\nf\\left(\\frac{x+y}{2}\\right)=(1-a) f(x)+a f(y),\n$$\n求 $f\\left(\\frac{1}{7}\\right)$ 的值.",
+    "solution": "在恒等式中, 取 $x=0, y=1$, 有 $f\\left(\\frac{1}{2}\\right)=a \\cdots$ (1). 又有 $f\\left(\\frac{1}{4}\\right)= f\\left(\\frac{0+\\frac{1}{2}}{2}\\right)=a f\\left(\\frac{1}{2}\\right)=a^2 \\cdots(2), f\\left(\\frac{3}{4}\\right)=f\\left(\\frac{\\frac{1}{2}+1}{2}\\right)=(1-a) a+a \\cdots$ (3). 因此, $f\\left(\\frac{1}{2}\\right)=f\\left(\\frac{\\frac{1}{4}+\\frac{3}{4}}{2}\\right)=(1-a) a^2+a(a+a(1-a)) \\cdots$ (4). 由(1)和 (4), 得 $a=(1-a) a^2+a(a+a(1-a))$, 因为 $a \\neq 0,1$, 由上式可解出 $a=\\frac{1}{2}$.\n从而原恒等式化为 $f\\left(\\frac{x+y}{2}\\right)=\\frac{f(x)+f(y)}{2}$. 设 $f\\left(\\frac{1}{7}\\right)=t$, 则 $t= f\\left(\\frac{0+\\frac{2}{7}}{2}\\right)=\\frac{1}{2} f\\left(\\frac{2}{7}\\right)$, 所以 $f\\left(\\frac{2}{7}\\right)=2 t$. 进而由 $f\\left(\\frac{1}{7}\\right)=t, f\\left(\\frac{2}{7}\\right)=2 t$, 可知 $f\\left(\\frac{3}{7}\\right)=3 t$. 依次类推.\n最后, 我们有 $f(1)=7 t$. 故 $f\\left(\\frac{1}{7}\\right)=t=\\frac{1}{7}$.",
+    "remark": "",
+    "figures": []
+}

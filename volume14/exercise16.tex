@@ -1,0 +1,116 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 证明:不存在一个 17 项的数列, 它的每 7 个连续项之和为正, 每 11 个连续项之和为负.
+%%<SOLUTION>%%
+如果有这样一个 17 项的数列, 设为 $a_1, a_2, \cdots, a_{17}$. 它的每 7 个连续项之和为正, 每 11 个连续项之和为负.
+在 $7 \times 11$ 的矩阵
+$$
+\left(\begin{array}{ccccc}
+a_1 & a_2 & a_3 & \cdots & a_{11} \\
+a_2 & a_3 & a_4 & \cdots & a_{12} \\
+\cdots & \cdots & \cdots & \cdots & \cdots \\
+a_7 & a_8 & a_9 & \cdots & a_{17}
+\end{array}\right)
+$$
+中,一方面, 每一行的元素和为负的, 因此矩阵中所有数的和是负的.
+另一方面, 每一列的元素和是正的, 因此矩阵中所有数的和应为正的.
+两方面的结果矛盾, 从而命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $d(n)$ 表示正整数 $n$ 的正约数个数, $[x]$ 表示不大于实数 $x$ 的最大整数, 求证:
+$$
+\sum_{k=1}^n d(k)=\sum_{k=1}^n\left[\frac{n}{k}\right] .
+$$
+%%<SOLUTION>%%
+用两种方法计算区域 $A==\{(x, y) \mid 1 \leqslant x \leqslant n, 1 \leqslant x y \leqslant n\}$ 中的整点数目 $S$.
+一方面, 对每个固定的 $i(i=1,2, \cdots, n)$, 使 $1 \leqslant i y \leqslant n$ 即 $\frac{1}{i} \leqslant y \leqslant \frac{n}{i}$ 的整数 $y$ 的个数为 $\left[\frac{n}{i}\right]$, 因此区域 $A$ 中处在直线 $x=i(i=1,2, \cdots, n)$ 上的整点数为 $\left[\frac{n}{i}\right]$, 故有
+$$
+S=\sum_{i=1}^n\left[\frac{n}{i}\right] . \label{eq1}
+$$
+另一方面, 对每个固定的 $j(j=1,2, \cdots, n)$, 使 $x y=j$ 且 $1 \leqslant x \leqslant n$ 的整点数恰为 $j$ 的正约数个数 $d(j)$, 故有
+$$
+S=\sum_{j=1}^n d(j) . \label{eq2}
+$$
+由式\ref{eq1},\ref{eq2}得原式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 在某学校里有 $b$ 名教师和 $c$ 名学生.
+假设满足下列条件:
+(1) 每名教师恰好教 $k$ 名学生;
+(2) 对任意两名学生, 恰好有 $h$ 名教师教他们两人.
+证明: $\frac{b}{h}=\frac{c(c-1)}{k(k-1)}$. 
+%%<SOLUTION>%%
+如果一名教师 $t_i(1 \leqslant i \leqslant b)$ 同时教两名学生 $s_j, s_l(1 \leqslant j<l \leqslant c)$, 则称三元组 $\left(t_i, s_j, s_l\right)$ 为一个 "教学三人组".
+一方面, 由条件(1)得, 对任意 $i(1 \leqslant i \leqslant b)$, 含教师 $t_i$ 的"教学三人组" 恰有 $\mathrm{C}_k^2$ 个, 从而"教学三人组" 共 $b \mathrm{C}_k^2$ 个.
+另一方面, 由条件(2)得, 对任意 $j, l(1 \leqslant j<l \leqslant c)$, 含学生 $s_j, s_l$ 的"教学三人组" 恰有 $h$ 个,而 $s_j, s_l$ 有 $\mathrm{C}_c^2$ 种取法, 故"教学三人组" 共 $h \mathrm{C}_c^2$ 个.
+综上可得 $b \mathrm{C}_k^2=h \mathrm{C}_c^2$, 即 $\frac{b}{h}=\frac{c(c-1)}{k(k-1)}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 证明: 在任何由 12 个人组成的人群中, 都可以找出两个人来, 使得在其余 10 个中都至少有 5 个人,他们中的每个人都满足下述条件: 或者认识开头的两个人,或者不认识这两个人中的任何一个.
+%%<SOLUTION>%%
+如果命题的结论不成立, 12 人中任取两个人 $A$ 和 $B$, 再在其余 10 个人中选出刚好只认识 $A$ 和 $B$ 中一个的人 $C_1, C_2, \cdots, C_k$, 那么 $k \geqslant 6$ (因为若 $k \leqslant 5$, 则有 $10-k \geqslant 5$ 个人满足题目结论). 现在用两种方法来计算 3 人组 ( $A$, $B, C)$ 的数目 $N$.
+一方面, 由于一共有 $C_{12}^2=66$ 个不同的两人对 $(A, B)$, 而每一对都对应着不少于 6 个人 $C_i$. 所以 $N \geqslant 66 \times 6=396$.
+另一方面, 将 $C_i$ 固定, 找出与他对应的两人对 $(A, B)$, 他在这些对中恰好认识一个人, 如果 $C_i$ 有 $n$ 个熟人, 那么与他对应的两人对的数目为
+$$
+n(11-n) \leqslant\left(\frac{n+(11-n)}{2}\right)^2<31,
+$$
+而这样的 $C_i$ 有 12 个, 因此 $N \leqslant 12 \times 30=360$.
+以上两方面导致矛盾.
+从而命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 由 $m$ 行、 $n$ 列非负实数组成的数阵满足每行、每列至少有一项是正数, 且如果有一行与一列的交是一个正数, 则这行的元素和与这列的元素和相等.
+证明: $m=n$. 
+%%<SOLUTION>%%
+对 $1 \leqslant i \leqslant m, 1 \leqslant j \leqslant n$, 设第 $i$ 行第 $j$ 列的数为 $a_{i j}$, 第 $i$ 行的元素和为 $r_i$, 第 $j$ 列的元素和为 $c_j$. 已知条件即为: $r_i, c_j>0$, 且当 $a_{i j}>0$ 时, $r_i=c_j$.
+对 $1 \leqslant i \leqslant m, 1 \leqslant j \leqslant n$, 无论 $a_{i j}>0$ 还是 $a_{i j}=0$, 总有 $\frac{a_{i j}}{r_i}=\frac{a_{i j}}{c_j}$.
+用两种方法计算 $S=\sum_{i=1}^m \sum_{j=1}^n \frac{a_{i j}}{r_i}$.
+一方面,有
+$$
+S=\sum_{i=1}^m \frac{1}{r_i} \cdot \sum_{j=1}^n a_{i j}=\sum_{i=1}^m \frac{1}{r_i} \cdot r_i=m ;
+$$
+另一方面,有
+$$
+S=\sum_{j=1}^n \sum_{i=1}^m \frac{a_{i j}}{c_j}=\sum_{j=1}^n \frac{1}{c_j} \cdot \sum_{i=1}^m a_{i j}=\sum_{j=1}^n \frac{1}{c_j} \cdot c_j=n .
+$$
+所以 $m=n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $x_1, x_2, \cdots, x_n, y_1, y_2, \cdots, y_n \in \mathbf{R}$, 矩阵 $A=\left(a_{i j}\right)_{1 \leqslant i, j \leqslant n}$ 满足
+$$
+a_{i j}= \begin{cases}1, & x_i+y_j \geqslant 0, \\ 0, & x_i+y_j<0 .\end{cases}
+$$
+证明: 若 $n \times n$ 矩阵 $B$ 的元素为 0 或 1 , 使得 $B$ 的每一行和每一列的元素之和与 $A$ 的对应的和相等, 则 $B=A$. 
+%%<SOLUTION>%%
+设 $B=\left(b_{i j}\right)_{1 \leqslant i, j \leqslant n}$. 定义 $S=\sum_{1 \leqslant i, j \leqslant n}\left(x_i+y_j\right)\left(a_{i j}-b_{i j}\right)$.
+一方面,有
+$$
+S=\sum_{i=1}^n x_i\left(\sum_{j=1}^n a_{i j}-\sum_{j=1}^n b_{i j}\right)+\sum_{j=1}^n y_j\left(\sum_{i=1}^n a_{i j}-\sum_{i=1}^n b_{i j}\right)=0 .
+$$
+另一方面, 对任意 $i, j\left(1 \leqslant i, j \leqslant n\right.$ ), 都有 $\left(x_i+y_j\right)\left(a_{i j}-b_{i j}\right) \geqslant 0$ (事实上, 若 $x_i+y_j \geqslant 0$, 则 $a_{i j}-b_{i j}=1-b_{i j} \geqslant 0$; 若 $x_i+y_j<0$, 则 $a_{i j}- \left.b_{i j}=-b_{i j} \leqslant 0\right)$.
+从而这些不等式只能同时取等号, 即 $\left(x_i+y_j\right)\left(a_{i j}-b_{i j}\right)=0$ 对所有 $i, j$ 成立.
+特别地, 若 $a_{i j}=0$, 则 $x_i+y_j<0$, 只能 $a_{i j}-b_{i j}=0$, 即 $b_{i j}=0$, 因此对所有 $i, j$, 总有 $a_{i j} \geqslant b_{i j}$. 但 $B$ 的每一行元素之和与 $A$ 对应行的元素之和相等, 从而只能 $a_{i j}=b_{i j}$ 对所有 $i, j$ 成立, 即有 $B=A$.
+%%PROBLEM_END%%
+
+

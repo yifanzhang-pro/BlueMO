@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 证明: 对每个 $n \\geqslant 2$, 存在 $n$ 个互不相等的正整数 $a_1, a_2, \\cdots, a_n$, 使得 ( $a_i \\left.a_j\\right) \\mid\\left(a_i+a_j\\right)(1 \\leqslant i, j \\leqslant n, i \\neq j)$.",
+    "solution": "采用归纳构造法.\n$n=2$ 时, 可取 $a_1=1, a_2=2$. 假设在 $n=k$ 时已有 $a_1, \\cdots, a_k$ 符合要求, 令 $b_0$ 为 $a_1, \\cdots, a_k, a_i-a_j(1 \\leqslant i, j \\leqslant k, i \\neq j)$ 的最小公倍数, 则 $k+1$ 个数\n$$\nb_0, a_1+b_0, \\cdots, a_k+b_0\n$$\n符合要求.",
+    "remark": "",
+    "figures": []
+}

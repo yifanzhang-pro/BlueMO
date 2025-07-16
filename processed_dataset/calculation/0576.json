@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 设 $a 、 b$ 分别是方程 $\\log _2 x+x-3=0$ 和 $2^x+x-3=0$ 的根, 求 $a+b$ 及 $\\log _2 a+2^b$ 的值.",
+    "solution": "在直角坐标系内分别作出函数 $y=2^x$ 和 $y=\\log _2 x$ 的图象, 再作直线 $y=x$ 和 $y=-x+3$, 如图(<FilePath:./images/volume2/figures/fig-c3p6.png>)所示.\n由于 $y=2^x$ 和 $y=\\log _2 x$ 互为反函数, 故它们的图象关于直线 $y=x$ 对称.\n方程 $\\log _2 x+x-3=0$ 的根 $a$ 就是直线 $y=-x+3$ 与对数曲线 $y=\\log _2 x$ 的交点 $A$ 的横坐标, 方程 $2^x+x-3=0$ 的根 $b$ 就是直线 $y=-x+3$ 与指数曲线 $y=2^x$ 的交点 $B$ 的横坐标.\n设 $y=-x+3$ 与 $y=x$ 的交点为 $M$, 则点 $M$ 的坐标为 $\\left(\\frac{3}{2}, \\frac{3}{2}\\right)$. 所以 $a+b=2 x_M=3, \\log _2 a+2^b= 2 y_M=3$.",
+    "remark": "",
+    "figures": [
+        "./images/volume2/figures/fig-c3p6.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $a_n=1+\\frac{1}{2}+\\cdots+\\frac{1}{n}$, 求证: 当 $n \\geqslant 2$ 时, 有\n$$\na_n^2>2\\left(\\frac{a_2}{2}+\\frac{a_3}{3}+\\cdots+\\frac{a_n}{n}\\right) .\n$$",
+    "solution": "证明:把命题加强为当 $n \\geqslant 2$ 时, 有\n$$\na_n^2>2\\left(\\frac{a_2}{2}+\\frac{a_3}{3}+\\cdots+\\frac{a_n}{n}\\right)+\\frac{1}{n} .\n$$\n当 $n=2$ 时, 左边 $=a_2^2=\\left(1+\\frac{1}{2}\\right)^2=\\frac{9}{4}$, 右边 $=a_2+\\frac{1}{2}=2$, 命题成立.\n假设命题在 $n=k$ 时成立, 即\n$$\na_k^2>2\\left(\\frac{a_2}{2}+\\frac{a_3}{3}+\\cdots+\\frac{a_k}{k}\\right)+\\frac{1}{k} .\n$$\n当 $n=k+1$ 时,有\n$$\n\\begin{aligned}\na_{k+1}^2 & =\\left(a_k+\\frac{1}{k+1}\\right)^2=a_k^2+\\frac{2 a_k}{k+1}+\\frac{1}{(k+1)^2} \\\\\n& >2\\left(\\frac{a_2}{2}+\\frac{a_3}{3}+\\cdots+\\frac{a_k}{k}\\right)+\\frac{1}{k}+\\frac{2}{k+1}\\left(a_{k+1}-\\frac{1}{k+1}\\right)+\\frac{1}{(k+1)^2} \\\\\n& =2\\left(\\frac{a_2}{2}+\\cdots+\\frac{a_k}{k}+\\frac{a_{k+1}}{k+1}\\right)+\\frac{1}{k}-\\frac{1}{(k+1)^2} \\\\\n& >2\\left(\\frac{a_2}{2}+\\cdots+\\frac{a_k}{k}+\\frac{a_{k+1}}{k+1}\\right)+\\frac{1}{k+1},\n\\end{aligned}\n$$\n即 $n=k+1$ 时命题也成立.\n所以, 由数学归纳法知, 加强的命题成立, 从而原命题成立.",
+    "remark": "",
+    "figures": []
+}

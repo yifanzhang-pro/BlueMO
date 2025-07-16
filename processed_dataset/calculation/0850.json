@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题25. 设 $n \\geqslant 2$, 求乘积 $x_1 x_2 \\cdots x_n$ 在条件 $x_i \\geqslant \\frac{1}{n}(i=1,2, \\cdots, n)$ 与 $x_1^2+x_2^2+\\cdots+x_n^2=1$ 下的最大值和最小值.",
+    "solution": "首先求最大值, 由平均值不等式, 得 $\\sqrt[n]{x_1^2 x_2^2 \\cdots x_n^2} \\leqslant \\frac{x_1^2+x_2^2+\\cdots+x_n^2}{n}=\\frac{1}{n}$. 当 $x_1=x_2=\\cdots=x_n=\\frac{1}{\\sqrt{n}}>\\frac{1}{n}(n \\geqslant 2)$ 时等号成立.\n所以最大值为 $n^{-\\frac{n}{2}}$. 再求最小值.\n令 $y_1=x_1, \\cdots, y_{n-2}=x_{n-2}, y_{n-1}= \\sqrt{x_{n-1}^2+x_n^2-\\frac{1}{n^2}}, y_n=\\frac{1}{n}$, 则 $y_i \\geqslant \\frac{1}{n}, i=1,2, \\cdots, n$, 且 $y_1^2+\\cdots+y_n^2= x_1^2+\\cdots+x_n^2=1$. 由于 $y_{n-1}^2 y_n^2-x_{n-1}^2 x_n^2=-\\left(x_{n-1}^2-\\frac{1}{n^2}\\right)\\left(x_n^2-\\frac{1}{n^2}\\right) \\leqslant 0$, 所以 $y_1 y_2 \\cdots y_{n-2} y_{n-1} y_n \\leqslant x_1 x_2 \\cdots x_{n-2} x_{n-1} x_n$. 重复这个过程 $n-1$ 次, 得 $x_1 x_2 \\cdots x_n \\geqslant\\left(\\frac{1}{n}\\right)^{n-1} \\sqrt{1-\\frac{n-1}{n^2}}=\\frac{\\sqrt{n^2-n+1}}{n^n}$. 当 $x_1=\\cdots=x_{n-1}=\\frac{1}{n}$, $x_n=\\frac{\\sqrt{n^2--} n+1}{n}$. 时, 等号成立.\n故最小值为 $\\frac{\\sqrt{n^2-n+1}}{n^n}$.",
+    "remark": "",
+    "figures": []
+}

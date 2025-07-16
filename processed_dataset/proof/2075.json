@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设 $A B C D E F$ 是凸六边形, 且 $A B=B C=C D, D E=E F=F A$, $\\angle B C D=\\angle E F A=60^{\\circ}$. 设 $G$ 和 $H$ 是这个六边形内部的两点, 使得 $\\angle A G B=\\angle D H E=120^{\\circ}$. 试证:\n$$\nA G+G B+G H+D H+H E \\geqslant C F .\n$$",
+    "solution": "连 $B D 、 A E$, 因为 $A B=B C=C D, \\angle B C D=60^{\\circ}$, 所以 $B D=A B$. 同理 $A E=E D$, 所以 $A 、 D$ 关于直线 $B E$ 对称.\n以直线 $B E$ 为对称轴, 作 $C$ 和 $F$ 关于该直线的轴对称点 $C^{\\prime}$ 和 $F^{\\prime}$. 于是 $\\triangle A B C^{\\prime}$ 和 $\\triangle D E F^{\\prime}$ 都是正三角形; $G$ 和 $H$ 分别在这两个三角形的外接圆上.\n分别对四边形 $A G B C^{\\prime}$ 和 $D H E F^{\\prime}$ 应用 Ptolemy 定理并注意到线段 $C F$ 与 $C^{\\prime} F^{\\prime}$ 关于直线 $B E$ 对称即可得所证结论.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise8.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 设 $x_1, x_2, \\cdots, x_n$ 是 $n$ 个非负实数 $\\left(n>2, n \\in \\mathbf{N}^*\\right)$, 且\n$$\n\\sum_{i=1}^n x_i=n, \\sum_{i=1}^n i x_i=2 n-2 .\n$$\n求 $x_1+4 x_2+\\cdots+n^2 x_n$ 的最大值.",
+    "solution": "令 $y_i=\\sum_{j=i}^n x_j$, 则 $y_1=n, \\sum_{i=1}^n y_i=2 n-2$, 故 $S=\\sum_{k=1}^n k^2 x_k=\\sum_{k=1}^n k^2 \\left(y_k-y_{k+1}\\right)+n^2 y_n=\\sum_{k=1}^n(2 k-1) y_k$.\n由于 $y_1=n, y_2 \\geqslant y_3 \\geqslant \\cdots \\geqslant y_n$, 若存在 $i \\in\\{2,3, \\cdots, n-1\\}$, 使得 $y_i>y_n$ (记 $i$ 为使 $y_i>y_n$ 成立的最大下标). 因为\n$$\n\\begin{aligned}\n& (2 i-1) y_i+(2 i+1+\\cdots+2 n-1) y_n \\\\\n< & (2 i-1+\\cdots+2 n-1) \\cdot \\frac{y_i+(n-i) y_n}{n-i+1}\\left(\\text { 上式等价于 } y_i>y_n\\right) .\n\\end{aligned}\n$$\n故在保持 $y_i+y_{i+1}+\\cdots+y_n$ 不变的前提下, 用它们的平均值来代替它们, $S$ 将增大.\n所以, 当 $y_2=y_3=\\cdots=y_n$ 时, $S_{\\text {max }}=n^2-2$.",
+    "remark": "",
+    "figures": []
+}

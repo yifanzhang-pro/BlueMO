@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题19 三角形的两边分别为 $3 \\mathrm{~cm} 、 5 \\mathrm{~cm}$, 它们的夹角的余弦为方程 $5 x^2-7 x- 6=0$ 的根, 则这个三角形的面积为",
+    "solution": "$6 \\mathrm{~cm}^2$. 方程 $5 x^2-7 x-6=0$ 的根为 $x_1=\\frac{-3}{5}, x_2=2$, 从而 $\\cos \\theta= -\\frac{3}{5}, \\sin \\theta=\\frac{4}{5}, S_{\\triangle}=\\frac{1}{2} \\times 3 \\times 5 \\times \\frac{4}{5}=6\\left(\\mathrm{~cm}^2\\right)$.",
+    "remark": "",
+    "figures": []
+}

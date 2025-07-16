@@ -1,0 +1,172 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 从 $\{1,2, \cdots, 100\}$ 中任取 55 个不同的数, 问其中是否必有两个数, 使得这两个数之差等于: (a)9; (b)11?
+%%<SOLUTION>%%
+考察下列 91 个数对: $\{i, i+9\}, i=1,2,3, \cdots, 91 \cdots$ (1). 易见, 1,2 , $\cdots, 9$ 和 $92,93, \cdots, 100$ 这 18 个数中每个数恰属于上述数对中之一对, 而其余 82 个数中每个数恰属于上述数对中两对.
+因此 55 个数至少属于(1)中 $18+$ (55-18) $\times 2=92$ 个数对, 由抽庶原理知其中必有两个数属于(1)中同一数对, 即两数之差等于 9 . 而当所取 55 个数为 $1,2, \cdots, 11 ; 23,24, \cdots, 33 ; 45,46$, $\cdots, 55 ; 67,68, \cdots, 77 ; 89,90, \cdots, 99$ 时,其中任何两数之差不等于 11.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $n \equiv 1(\bmod 4)$ 且 $n>1, P=\left\{a_1, a_2, \cdots, a_n\right\}$ 是 $\{1,2,3, \cdots, n\}$ 的任意排列, $k_P$ 表示使下列不等式成立的最大下标 $k$ :
+$$
+a_1+a_2+\cdots+a_k<a_{k+1}+a_{k+2}+\cdots+a_n,
+$$
+试对一切可能的排列 $P$, 求对应的 $k_P$ 的总和.
+%%<SOLUTION>%%
+设 $n=4 m+1\left(m \in \mathbf{N}_{+}\right)$, 对 $\{1,2, \cdots, n\}$ 的任意排列 $p==\left\{a_1, a_2, \cdots, a_n\right\}$, 由 $k_P$ 定义得 $a_1+a_2+\cdots+a_{k_p}<a_{k_p+1}+a_{k_p+2}+\cdots+a_n \cdots$ (1), 
+且 $a_1+a_2+\cdots+a_{k_{\mathrm{p}}+1} \geqslant a_{k_{\mathrm{p}}+2}+a_{k_{\mathrm{p}}+3}+\cdots+a_n \cdots$ (2). 
+首先(2)中等号不可能成立, 否则, $2\left(a_1+a_2+\cdots+a_{k_p+1}\right)=a_1+a_2+\cdots+a_n=\frac{1}{2} n(n+1)=(4 m+1) (2 m+1)$. 上式左端为偶数, 而右端为奇数, 矛盾.
+故 (2) 应为 $a_1+a_2+\cdots+ a_{k_{\mathrm{p}}+1}>a_{k_{\mathrm{p}}+2}+a_{k_{\mathrm{P}}+3}+\cdots+a_n \cdots$ (3). 
+于是对于 $P$ 的反序排列 $P^{\prime}=\left\{a_n, a_{n-1}\right.$, $\left.\cdots, a_2, a_1\right\}$. 
+由(1)及(3)得 $k_{P^{\prime}}=n-\left(k_P+1\right)$, 即 $k_P+k_{P^{\prime}}=n-1$. 
+将 $\{1,2, \cdots$, $n\}$ 的 $n$ ! 个排列两两配对, 每对中两个排列 $P$ 与 $P^{\prime}$ 互为反序, 它们对应的 $k_P$ 与 $k_{P^{\prime}}$ 之和为 $n-1$, 又一共可配成 $\frac{n !}{2}$ 对, 
+故对一切不同的排列 $P$, 所对应的 $k_P$ 之和为 $\frac{1}{2}(n-1)(n !)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 由平面格点 $(x, y)(1 \leqslant x \leqslant 12,1 \leqslant y \leqslant 12, x, y$ 为整数)组成点集 $M$, 将 $M$ 中每一点任意染上红、蓝、黑三色之一.
+证明: 其中必存在 4 个同色点, 它们是一个其边与 $x$ 轴、 $y$ 轴平行的矩形的 4 个顶点.
+%%<SOLUTION>%%
+不妨设 $M$ 中红点最多, 由抽庶原理知红点的数目不少于 $\left[\frac{12 \times 12-1}{3}\right]+1=48$ 个.
+设纵坐标为 $i$ 的红点有 $a_i$ 个 $(i=1,2, \cdots, 12)$ 则 $a_1+a_2+\cdots+a_{12} \geqslant 48$. 将第 $i$ 行的 $a_i$ 个红点两两配对, 可配成 $\mathrm{C}_{a_i}^2=\frac{1}{2} a_i\left(a_i-1\right)$  对, $i=1,2, \cdots, 12$, 从而各行红点组成的点对数之和为 $\sum_{i=1}^{12} \mathrm{C}_{a_i}^2= \frac{1}{2}\left(\sum_{i=1}^{12} a_i^2-\sum_{i=1}^{12} a_i\right) \geqslant \frac{1}{2}\left[\frac{1}{12}\left(\sum_{i=1}^{12} a_i\right)^2-\sum_{i=1}^{12} a_i\right]=\frac{1}{2}\left(\sum_{i=1}^{12} a_i\right)\left(\sum_{i=1}^{12} a_i-12\right) \geqslant \frac{1}{24} \times 48 \times(48-12)=72 \cdots$ (1). 
+如果不存在四顶点同为红色的符合条件的矩形, 那么各行中红色点对在 $x$ 轴上的投影两两互不重合, 因此各行中红色点对数之和不超过 $x$ 轴上的 12 个点 $(x, 0)(x=1,2, \cdots, 12)$ 形成的点对个数 $\mathrm{C}_{12}^2=66$. 这与(1)矛盾,故结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 某城市共有 $n$ 条公共汽车路线, 满足如下条件:(1)任意一个车站至多有 3 条线路经过; (2)任意一条线路上至少有 2 个车站;(3)对任意指定的两条线路,都可以找到第三条线路使得乘客可以从指定的两条线路中的任意一条经过所找出的第三条线路转到另一条.
+证明: 车站的数目至少有 $\frac{5}{6}(n-5)$. 
+%%<SOLUTION>%%
+若车站 $A$ 在线路 $l$ 上, 则将 $A$ 与 $l$ 配成对 $(A, l)$, 并设这样的对子共有 $x$ 个.
+再设共有 $m$ 个车站.
+因为每一站至多在 3 条线路上, 故 $x \leqslant 3 m$. 若每条线路上至少有 3 个车站, 则 $x \geqslant 3 n$, 于是 $3 m \geqslant x \geqslant 3 n$, 从而有 $m \geqslant n> \frac{5}{6}(n-5)$, 结论成立.
+下设有一条线路 $l$ 上只有两个车站 $A$ 和 $B$, 因为过每个车站至多只有 3 条线路, 故过 $A, B$ 的线路除 $l$ 外, 至多还有 4 条, 我们称过 $A$, $B$ 的线路为红线 (至多 5 条), 其余至少有 $n-5$ 条线称为蓝线, 并将红线上的站称为红站, 个数为 $r$; 其余站称为蓝站, 其个数为 $b$,于是 $m=r+b$. 现在考察所有 (站, 蓝线) 的对数.
+一方面, 每条蓝线至少过 2 个站, 故所设对数 $\geqslant 2(n-$ 5). 另一方面, 任意一个红站至多在两条蓝线上.
+故 (红站, 蓝线) 的对数 $\leqslant 2 r$; 而每个蓝站至多有 3 条蓝线经过, 故 (蓝站, 蓝线) 的对数 $\leqslant 3 b$. 因此 $2(n- 5) \leqslant$ (站, 蓝线) 的对数 $=$ (红站, 蓝线) 的对数 + (蓝站, 蓝线) 的对数 $\leqslant 2 r+$ 3b. 此外, 每条蓝线, 可经过一条线路与红线 $l$ 相连, 因此, 每条蓝线上至少有 1 个红站.
+故 (红站, 蓝线) 的对数 $\geqslant n-5$. 于是, $n-5 \leqslant 2 r$. 因此, 站的总数 $m= r+b=\frac{1}{3}(2 r+3 b)+\frac{1}{6} \cdot 2 r \geqslant \frac{1}{3} \cdot 2(n-5)+\frac{1}{6} \cdot(n-5)=\frac{5}{6}(n-5)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 在 $m \times n$ 棋盘的一个格子中放一枚棋子, 两人轮流走, 每步可将棋子从一格走到与它有公共边的邻格中, 但已经走过的格子不能第二次进人, 谁最后没处可走谁输.
+(1)若开始棋子放在左下角格子中,则谁有必胜策略?
+(2)若开始的棋子放在左下角格子的邻格中,则谁有必胜策略?
+%%<SOLUTION>%%
+(1) 明显的配对方法是将相邻两格配对, 即用 $1 \times 2$ 的骨牌铺砌棋盘.
+保持每步可在同一骨牌内部走的人必胜.
+当 $2 \mid m n$ 时, 骨牌可铺满棋盘, 先走的甲第一步可在同一块骨牌内部走,故甲必胜.
+当 $2 \times m n$ 时, 可用骨牌铺满除左下角格子外的其余棋盘, 故先走的甲第一步只能走人相邻的一块骨牌内, 乙总可以在甲进人的这块骨牌内再走一格,故乙有必胜策略;
+(2)无论 $m, n$ 的奇偶性如何, 总是先走的甲有必胜策略.
+当 $2 \mid m n$ 时, 理由同 (1); 当 $2 \times m n$ 时, 仍用骨牌铺满除左下角格子以外的其余棋盘, 并且将所有棋盘用黑白两色染色, 使任何相邻两格不同色, 且不妨设左下角格子是白色, 它没有同其他格子配对, 先走的甲每一步总可以在同一骨牌内从黑格走人白格, 而乙只能从白格走人黑格而进人一块的新的骨牌, 左下角的方格始终没有棋子进人,形同虚设,故甲有必胜策略.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 以凸 $n$ 边形的顶点为顶点, 对角线为边的凸 $k$ 边形共有多少个?
+%%<SOLUTION>%%
+设凸 $n$ 边形为 $A_1 A_2 \cdots A_n$, 符合条件的一个凸 $k$ 边形为 $A_{i_1} A_{i_2} \cdots A_{i_k}$, 则只有下列两种可能 $(1) i_1=1,3 \leqslant i_2<i_3<\cdots<i_k \leqslant n-1, i_{j+1}-i_j \geqslant 2(j=2,3, \cdots, k-1) ;(2) 2 \leqslant i_1<i_2<\cdots<i_k \leqslant n, i_{j+1}-i_j \geqslant 2(j=1$, $2, \cdots, k-1)$. 仿照例 8 可求出满足 (1) 的凸 $k$ 边形有 $\mathrm{C}_{n-k-1}^{k-1}$ 个, 以及满足 (2) 的凸 $k$ 边形有 $\mathrm{C}_{n-k}^k$ 个.
+故符合条件的凸 $k$ 边形共有 $\mathrm{C}_{n-k-1}^{k-1}+\mathrm{C}_{n-k}^k=\frac{n}{k} \mathrm{C}_{n-k-1}^{k-1}$ (当 $n<2 k$ 时, $\left.\mathrm{C}_{n-k-1}^{k-1}=\mathrm{C}_{n-k}^k=0\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 将数集 $A=\left\{a_1, a_2, \cdots, a_n\right\}$ 中所有元素的算术平均值记为 $P(A)\left(P(A)=\frac{a_1+a_2+\cdots+a_n}{n}\right)$. 若 $B$ 是 $A$ 的非空子集, 且 $P(B)= P(A)$, 则称 $B$ 是 $A$ 的均衡子集.
+试求数集 $M=\{1,2,3,4,5,6,7,8$, $9\}$ 的所有均衡子集的个数.
+%%<SOLUTION>%%
+由于 $p(M)=5$. 令 $M^{\prime}=\{x-5 \mid x \in M\}=\{-4,-3,-2,-1,0,1,2,3,4\}$, 则 $p\left(M^{\prime}\right)=0$. 依照平移关系, $M$ 与 $M^{\prime}$ 的平衡子集可一一对应.
+用 $f(k)$ 表示 $M^{\prime}$ 的含 $k$ 个元素的均衡子集的个数.
+注意到若 $B \neq M^{\prime}$ 且 $B$ 是 $M^{\prime}$ 的均衡子集, 则 $B$ 的补集 $B^{\prime}=C_{M^{\prime}} B$ 也是 $M^{\prime}$ 的均衡子集, 二者一一对应.
+因此, $f(9-k)=f(k) . k=1,2,3,4$. 显然 $f(9)=1, f(1)=1$ (因 $M^{\prime}$ 的 9 元均衡子集只有 $M^{\prime}$, 一元均衡子集只有 $\left.\{0\}\right)$. 并且用分类枚举法不难求出 $f(2)=4, f(3)=8, f(4)=12$. 故 $M$ 的均衡子集的个数 $=M^{\prime}$ 的均衡子集的个数 $=f(9)+2 \sum_{k=1}^4 f(k)=1+2(1+4+8+12)=51$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 在一个车厢中, 任何 $m(\geqslant 3)$ 个旅客都有唯一的公共朋友 (当甲是乙的朋友时, 乙也是甲的朋友, 任何人不是自己的朋友). 问这个车厢中有朋友最多的人有多少个朋友?
+%%<SOLUTION>%%
+设有朋友最多的人是 $A$, 他有 $k$ 个朋友 $B_1, B_2, \cdots, B_k$, 记 $S=\left\{B_1\right.$, $\left.B_2, \cdots, B_k\right\}$, 显然 $k \geqslant m$. 若 $k>m$, 设 $\left\{B_{i_i}, B_{i_2}, \cdots, B_{i_{m-1}}\right\}$ 是 $S$ 的任意 $m-1$ 元子集.
+于是 $A, B_{i_1}, \cdots, B_{i_{m-1}}$ 有唯一的公共朋友 $C_i$. 因 $C_i$ 是 $A$ 的朋友,故 $C_i \in S$. 我们令 $\left\{B_{i_1}, B_{i_2}, \cdots, B_{i_{m-1}}\right\}$ 与 $C_i$ 对应,构成从 $S$ 的所有 $m-1$ 元子集构成的集族 $\mathscr{B}$ 到 $S$ 的一个映射.
+下面证明 $f$ 为单射,若不然,则存在 $S$ 的两个不同的 $m-1$ 元子集 $\left\{B_{i_1}, B_{i_2}, \cdots, B_{i_{m-2}}\right\}$ 和 $\left\{B_{j_1}, B_{j_2}, \cdots, B_{j_{m-1}}\right\}$ 它们对应的元素 $C_i$ 与 $C_j$ 相同.
+(记为 $C$ ), 因 $C \in S$, 故 $C \neq A$, 于是 $\left\{B_{i_1}, \cdots\right.$, $\left.B_{i_{m-1}}\right\} \cup\left\{B_{j_1}, \cdots, B_{j_{m-1}}\right\}$ 中至少有 $m$ 位旅客, 但他们却有两个公共朋友 $A$ 和 $C$, 这与已知矛盾.
+故 $f$ 是单射.
+所以 $|\mathscr{B}| \leqslant|S|$ 即 $\mathrm{C}_k^{m-1} \leqslant k$, 但已知 $m \geqslant 3$ 且 $k>m$, 即 $k-2 \geqslant m-1 \geqslant 2$. 故 $\mathrm{C}_k^{m-1} \geqslant \mathrm{C}_k^{k-2}=\mathrm{C}_k^2>k$, 这与 $\mathrm{C}_k^{m-1} \leqslant k$ 矛盾.
+于是得到 $k=m$, 即有朋友最多的人有 $m$ 个朋友.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 设 $A_i$ 是有限集合, $i=1,2, \cdots, n$. 若 $\sum_{1 \leqslant i<j \leqslant n} \frac{\left|A_i \cap A_j\right|}{\left|A_i\right| \cdot\left|A_j\right|}<1$, 证明存在 $a_i \in A_i(i=1,2, \cdots, n)$ 使得当 $i \neq j$ 时, $a_i \neq a_j(1 \leqslant i<j \leqslant n)$.
+%%<SOLUTION>%%
+考虑从集合 $S=\{1,2, \cdots, n\}$ 到集合 $A_1 \cup A_2 \cup \cdots \cup A_n$ 的所有满足下列条件的映射 $f: f(i) \in A_i(i=1,2, \cdots, n)$ 构成的集合 $\mathscr{M}$,于是 $\mathscr{M}$ 中共有 $\left|A_1\right| \cdot\left|A_2\right| \cdots \cdots \cdot\left|A_n\right|$ 个映射, 下面证明其中至少有一个单射.
+如果 $\mathscr{M}$ 中任何映射都不是单射, 那么对任意 $f \in M$, 存在 $i, j \in S$ 使得 $i \neq j$ 而有 $f(i)= f(j)$, 这时 $f(i)=f(j) \in A_i \cap A_j, f(i)=f(j)$ 的取值最多有 $\left|A_i \cap A_j\right|$ 种, 当 $k \neq i, k \neq j$ 时 $f(k)$ 的取值最多有 $\left|A_k\right|$ 种.
+故对固定的 $i \neq j$, 满足 $f(i)=f(j)$ 的映射最多有 $\left|A_i \cap A_j\right| \prod_{k=1}^n\left|A_k\right|=\frac{\left|A_i \cap A_j\right|}{\left|A_i\right| \cdot\left|A_j\right|} \prod_{k=1}^n\left|A_k\right|$ 个, 中共有 $\prod_{k=1}^n\left|A_k\right|$ 个映射矛盾.
+故 $\mathscr{M}$ 中至少有一个单射 $f_0$. 令 $a_i=f_0(i)(i= 1,2, \cdots, n)$, 则 $a_i \in A_i(i=1,2, \cdots, n)$ 并且当 $i \neq j$ 时, $a_i=f_0(i) \neq f_0(j)=a_j(1 \leqslant i<j \leqslant n)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 设有 $m m+1$ 个互不相等的实数组成数列 $a_1, a_2, \cdots, a_{n n+1}$, 证明其中或有一个长为 $n+1$ 的递增子列或有一个长为 $m+1$ 的递减子列.
+(这里一个数列的长指的是该数列的项数)
+%%<SOLUTION>%%
+作映射 $f$ 如下: 对数列中每一项 $a_i$, 令它与一个二元有序正整数组 $\left(x_i, y_i\right)$ 对应, 其中 $x_i$ 是以 $a_i$ 为首项的最长的递增子列的长度, $y_i$ 是以 $a_i$ 为首项的最长的递减子列的长度, 这里约定只有一项的子列既是递增的又是递减的.
+如果结论不成立, 那么 $1 \leqslant x_i \leqslant n, 1 \leqslant y_i \leqslant m$. 记 $X=\left\{a_1, a_2, \cdots\right.$, $\left.a_{n m+1}\right\}, Y=\left\{\left(x_i, y_i\right) \mid 1 \leqslant x_i \leqslant n, 1 \leqslant y_i \leqslant m, x_i, y_i \in \mathbf{N}_{+}\right\}$, 则 $|X|= n m+1>n m=|Y|$, 所以 $f$ 不是单射, 于是存在 $a_i, a_j \in X(i \neq j)$ 使 $\left(x_i, y_i\right)=f(i)=f(j)=\left(x_j, y_j\right)$, 但若 $a_i<a_j$, 则应有 $x_i \geqslant x_j+1$ 矛盾, 若 $a_i>a_j$ 则应有 $y_i \geqslant y_j+1$ 也矛盾, 于是命题得证.
+(注: 本题结论也可用抽屉原理去证明,这里就省略了)
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 由 $a, b$ 两个字母排成的长为 15 的序列中, 恰好出现 " $a a$ " 5 次, " $a b$ ", " $b a ", ~ " b b "$ 各 3 次的序列有多少个?
+%%<SOLUTION>%%
+将连续出现的几个 $a$ 合并成一个 $(a)$, 连续出现的几个 $b$ 合并为一个 (b) , 于是符合条件的序列只可能缩写为下列两种形式: ( I ) (a) (b) (a) (b) (a) $(b)(a) ;($ II $)(b)(a)(b)(a)(b)(a)(b)$, 并设符合条件的序列中 ( I )、( II ) 类序列集合分别为 $B_1, B_2$. ( I )、(II) 类序列都保证出现 3 个" $a b$ "和 3 个" $b a$ ", 根据条件 "有 5 个 $a a, 3$ 个 $b b$ "知, 集合 $B_1$ 与下述放法的全体 $E_1$ 之间可建立一一对应: 5 个 $a$ 分放进 (I) 中 4 个 $(a)$ 的括号内, 3 个 $b$ 分放进 (I) 中 3 个 (b) 的括号内.
+由第一讲中可重复的组合数公式得 $\left|E_1\right|=\mathrm{C}_{4+5-1}^5 \cdot \mathrm{C}_{3+3-1}^3= \mathrm{C}_8^5 \mathrm{C}_5^3=560$, 所以 $\left|B_1\right|=\left|E_1\right|=560$, 同理可得 $\left|B_2\right|=\left|E_2\right|=\mathrm{C}_{3+5-1}^5 \mathrm{C}_{4+3-1}^3= \mathrm{C}_7^5 \mathrm{C}_6^3=420$. 于是满足题目条件的序列共有 $560+420=980$ 个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 设 $n$ 为偶数, 从整数 $1,2, \cdots, n$ 中选取 4 个不同的数 $a, b, c, d$ 满足 $a+ c=b+d$, 求不同的选取方法(不考虑 $a, b, c, d$ 的顺序) 的种数.
+%%<SOLUTION>%%
+不妨设 $a>b>d$, 由 $a+c=b+d$ 得 $d>c$. 考虑从 $1,2, \cdots, n$ 中选 3 个数 $a>b>c$ 且满足 $a+c-b \neq b$ 的选法: 从 $n$ 个数中选三个数 $a> b>c$ 有 $\mathrm{C}_n^3$ 种选法, 其中满足 $a+c-b=b$, 即 $a+c=2 b$ 的, $a$ 与 $c$ 同奇偶的选法有 $2 \mathrm{C}_{\frac{\pi}{2}}^2$ 种.
+故三元数组 $B=\{(a, b, c) \mid n \geqslant a>b>c \geqslant 1, a+c-b \neq b\}$ 的个数为 $|B|=\mathrm{C}_n^3-2 \mathrm{C}_{\frac{n}{2}}^2=\frac{1}{12} n(n-2)(2 n-5)$. 对任意三元数组 $(a, b$, $c) \in B$, 令 $a+c-b=d$, 则四元组 $(a, b, c, d)$ 满足题目条件.
+但每个四元数组 $(a, b, c, d)$ 对应两个三元数组 $(a, b, c)$ 与 $(a, d, c)$ (因为 $d>c$ ). 故所求的选取方法有 $\frac{1}{2}|B|=\frac{1}{24} n(n-2)(2 n-5)$ 种.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. $n$ 项的 0,1 序列 $\left(x_1, x_2, \cdots, x_n\right)$ 称为长为 $n$ 的二元序列.
+$a_n$ 为无连续三项成 $0,1,0$ 的长为 $n$ 的二元序列的个数, $b_n$ 为无连续四项成 $0,0,1,1$ 或 $1,1,0,0$ 的长为 $n$ 的二元序列的个数.
+证明: 对每一个正整数 $n$, $b_{n+1}=2 a_n$. 
+%%<SOLUTION>%%
+对任意一个长为 $n+1$ 二元序列 $y=\left(y_1, y_2, \cdots, y_{n+1}\right)$ 令它与一个长为 $n$ 的二元序列 $x=\left(x_1, x_2, \cdots, x_n\right)$ 对应, 其中 $x_i \equiv y_i+y_{i+1}(\bmod 2)$, $i=1,2, \cdots, n \cdots$ (1). 
+显然这样的 $x$ 由 $y$ 唯一确定.
+反过来, 对任意一个长为 $n$ 的二元序列 $x=\left(x_1, x_2, \cdots, x_n\right)$ 及 $y_1=0$ 或 1 , 有一个长为 $n+1$ 的二元序列 $y=\left(y_1, y_2, \cdots, y_{n+1}\right)$, 其中 $y_{i+1} \equiv y_i+x_i(\bmod 2), i=1,2, \cdots$, $n \cdots$ (2). 
+由于 $y_j+y_{j+1}=y_j+y_j+x_j \equiv x_j(\bmod 2)$, 所以由(2)定义的对应恰好是(1)的对应的逆对应.
+在由(1)定义的对应中连续 4 项 0011 或 1100 产生连续 3 项 010, 反之由(2)定义的对应,连续 3 项 010 产生连续 4 项 0011 或 1100 . 于是 $a_n$ 个所述长为 $n$ 无连续 3 项成 010 的二元序列, 每个恰好与 2 个无连续 4 项成 0011 或 1100 的所述长为 $n+1$ 的二元序列对应, 从而 $b_{n+1}=2 a_n$.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题6 函数 $y=\\sqrt{\\cos (\\sin x)}$ 的定义域是 ( ).\n(A) $2 k \\pi-\\frac{\\pi}{2} \\leqslant x \\leqslant 2 k \\pi+\\frac{\\pi}{2}(k \\in \\mathbf{Z})$\n(B) $2 k \\pi \\leqslant x \\leqslant 2 k \\pi+\\frac{\\pi}{2}(k \\in \\mathbf{Z})$\n(C) $2 k \\pi-\\frac{\\pi}{2} \\leqslant x \\leqslant 2 k \\pi(k \\in$\n(D) $x \\in \\mathbf{R}$",
+    "solution": "D. 由原函数得 $\\cos (\\sin x) \\geqslant 0$, 因为 $|\\sin x| \\leqslant 1$, 即 $-1 \\leqslant \\sin x \\leqslant 1$, 所以 $\\cos (\\sin x) \\geqslant 0$ 恒成立.",
+    "remark": "",
+    "figures": []
+}

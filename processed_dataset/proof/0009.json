@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设集合 $S$ 含有 $n$ 个元素, $A_1, A_2, \\cdots, A_k$ 是 $S$ 的不同子集, 它们两两的交集非空,而 $S$ 的其他子集不能与 $A_1, A_2, \\cdots, A_k$ 都相交.\n求证: $k=2^{n-1}$.",
+    "solution": "分析: $S$ 有 $2^n$ 个子集, 将两个互为补集的子集作为一组, 则可将 $2^n$ 个子集分成 $2^{n-1}$ 个组, 记为 $\\left\\{A_i^{\\prime}, B_i^{\\prime}\\right\\}, i=1,2, \\cdots, 2^{n-1}$, 显然 $A_i$ 只能选取每组中的一个子集.\n证明: 设 $a \\in S$. 因为 $|S|=n$, 故 $S$ 的子集中含 $a$ 的子集有 $2^{n-1}$ 个.\n显然它们两两的交非空.\n所以, $k \\geqslant 2^{n-1}$.\n又可将 $S$ 的 $2^n$ 个子集分成 $2^{n-1}$ 组, 每组有两个集合, 它们互为补集.\n若 $k>2^{n-1}$, 则必有两个集合 $A_i 、 A_j(i \\neq j)$ 来自上述同一组, 但 $A_i \\cap A_j=\\varnothing$,与题意不符.\n所以, $k=2^{n-1}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $n \\geqslant a_1>\\cdots>a_k \\geqslant 1$, 满足: 对任意 $i 、 j$,有 $\\left[a_i, a_j\\right] \\leqslant n$ 成立.\n求证:\n$$\nk \\leqslant 2 \\sqrt{n}+1 \\text {. }\n$$",
+    "solution": "证法 2 : 我们来估计每一项有些什么性质:\n由 $\\left[a_1, a_2\\right]=\\frac{a_1 \\cdot a_2}{\\left(a_1, a_2\\right)} \\leqslant n$, 故 $a_2 \\cdot\\left[\\frac{a_1}{\\left(a_1, a_2\\right)}\\right] \\leqslant n$.\n由于 $a_1>a_2$, 易证 $\\frac{a_1}{\\left(a_1, a_2\\right)} \\geqslant 2$, 故 $2 a_2 \\leqslant n$.\n于是, 我们已有 $a_1 \\leqslant n, 2 a_2 \\leqslant n$, 猜测对所有 $i(1 \\leqslant i \\leqslant k)$, 都有\n$$\ni a_i \\leqslant n . \\label{(3)}\n$$\n假设(3)是正确的,那么\n$k=$ 不超过 $a_t$ 的数的个数 + 大于 $a_t$ 的数的个数\n$\\leqslant$ 不超过 $a_t$ 的数的个数 $+t$\n$$\n\\leqslant a_t+t \\leqslant \\frac{n}{t}+t \\text {. }\n$$\n取 $t=[\\sqrt{n}]+1$, 亦有 $k \\leqslant 2 \\sqrt{n}+1$. 可见(3)可能是正确的.\n用数学归纳法.\n设 $(i-1) a_{i-1} \\leqslant n$, 要证 $i a_i \\leqslant n$.\n事实上, $\\left[a_i, a_{i-1}\\right]=A a_i=B a_{i-1}$, 并且 $\\left[a_i, a_{i-1}\\right] \\leqslant n$.\n(1) 如果 $A \\geqslant i$, 则 $i a_i \\leqslant n$ 成立.\n(2) 如果 $A<i$, 由于 $a_i<a_{i-1}$, 则 $B<A$.\n$$\ni a_i=\\frac{i B}{A} a_{i-1}=\\frac{(i-1) i B a_{i-1}}{A(i-1)} \\leqslant n \\frac{i B}{(i-1)} A,\n$$\n又由于 $A \\geqslant B+1$, 故 $n \\cdot \\frac{i B}{(i-1) A} \\leqslant n \\frac{i(A-1)}{(i-1) A}<n \\frac{i}{i-1} \\cdot\\left(1-\\frac{1}{i}\\right)=n$.\n因此(3)成立,证毕.",
+    "remark": "",
+    "figures": []
+}

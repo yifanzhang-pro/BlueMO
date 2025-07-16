@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题23 $ \\triangle \\triangle A B C$ 的三条边长为 $a 、 b 、 c$, 证明：\n$$\n\\frac{\\left|a^2-b^2\\right|}{c}+\\frac{\\left|b^2-c^2\\right|}{a} \\geqslant \\frac{\\left|c^2-a^2\\right|}{b} .\n$$",
+    "solution": "由于 $a=2 R \\sin A, b=2 R \\sin B, c=2 R \\sin C$, 只要证 $\\frac{\\left|\\sin ^2 A-\\sin ^2 B\\right|}{\\sin C}+\\frac{\\left|\\sin ^2 B-\\sin ^2 C\\right|}{\\sin A} \\geqslant \\frac{\\left|\\sin ^2 C-\\sin ^2 A\\right|}{\\sin B}$... (1). 因为 $\\sin ^2 A- \\sin ^2 B=\\sin (A+B) \\sin (A-B)=\\sin C \\sin (A-B)$, 故由 (1), 只要证 $\\mid \\sin (A-$ B) $|+| \\sin (B-C)|\\geqslant| \\sin (C-A) \\mid \\cdots$ (2). $|\\sin (C-A)|=\\mid \\sin [(A-B)+ (B-C)]|=| \\sin (A-B) \\cos (B-C)+\\cos (A-B) \\sin (B-C) \\mid \\leqslant |\\sin (A-B) \\cos (B-C)|+|\\cos (A-B) \\sin (B-C)| \\leqslant|\\sin (A-B)|+ |\\sin (B-C)|$, 当且仅当 $A=B=C=\\frac{\\pi}{3}$ 时取等号, 此时 $\\triangle A B C$ 为正三角形, 即 $a=b=c$.",
+    "remark": "",
+    "figures": []
+}

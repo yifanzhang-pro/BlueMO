@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题2 设 $M=\\{1,2, \\cdots, 1995\\}, A$ 是 $M$ 的子集, 且满足条件: 当 $x \\in A$ 时, $15 x \\notin A$. 则 $A$ 中元素个数最多是",
+    "solution": "$1870$ . $k$ 与 $15 k(k=9,10, \\cdots, 133)$ 不能同在 $A$ 中, 又 $133<15 \\times 9$, 所以 $|A| \\leqslant 1995-(133-9+1)=1870$. 另一方面, 设 $B=\\{1,2, \\cdots, 8\\}$, $C=\\{134,135, \\cdots, 1995\\}$, 取 $A=B \\cup C$, 则 $|A|=1870$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例13. 双心四边形 $A B C D, A C \\cap B D=E$, 内、外心为 $I 、 O$. 求证: $I 、 O 、 E$ 三点共线.",
+    "solution": "证明:先证一个引理.\n引理: 圆外切四边形 $A B C D$, 切点为 $M 、 N 、 K$ 、 $L$, 则 $A C 、 B D 、 M K 、 N L$ 四线共点.\n引理的证明: 如图(<FilePath:./images/volume7/figures/fig-c9i19.png>), 设 $A C \\cap K M=G$, $L N \\cap K M=G^{\\prime}$, 由正弦定理得\n$$\n\\begin{aligned}\n\\frac{G C}{A G} & =\\frac{C M \\frac{\\sin \\angle G M C}{\\sin \\angle C G M}}{A K \\frac{\\sin \\angle A K G}{\\sin \\angle A G K}} \\\\\n& =\\frac{C M}{A K} \\frac{\\sin \\angle G M C}{\\sin \\angle A K G} \\frac{\\sin \\angle A G K}{\\sin \\angle C G M}=\\frac{C M}{A K} .\n\\end{aligned}\n$$\n同理 $\\frac{G^{\\prime} C}{A G^{\\prime}}=\\frac{C L}{A N}$.\n所以 $\\frac{G^{\\prime} C}{A G^{\\prime}}=\\frac{C L}{A N}=\\frac{C M}{A K}=\\frac{C G}{A G}$, 即 $G=G^{\\prime}$.\n故 $A C 、 N L 、 K M$ 三线共点.\n同理 $B D 、 K M 、 L N$ 三线共点,引理得证.\n回到原题: 如图(<FilePath:./images/volume7/figures/fig-c9i20.png>), 切点仍记为 $K 、 L 、 M$ 、 $N$, 由引理 $K M \\cap L N=E$.\n以 $I$ 为中心, $\\odot(K N M)$ 为反演圆作反演, $A^{\\prime}$ 、 $B^{\\prime} 、 C^{\\prime} 、 D^{\\prime}$ 分别为 $K L M N$ 四边中点.\n由 $B^{\\prime} C^{\\prime} / / K M / / A^{\\prime} D^{\\prime}, A^{\\prime} B^{\\prime} / / N L / / D^{\\prime} C^{\\prime}$ 知 $A^{\\prime} B^{\\prime} C^{\\prime} D^{\\prime}$ 为平行四边形.\n而 $A 、 B 、 C 、 D$ 共圆知 $A^{\\prime} 、 B^{\\prime} 、 C^{\\prime} 、 D^{\\prime}$ 共圆, $A^{\\prime} B^{\\prime} C^{\\prime} D^{\\prime}$ 必为矩形, 其中心设为 $Q$, 且有 $K M \\perp L N$.\n由反演性质知 $Q 、 I 、 O$ 三点共线.\n设 $L N 、 K M$ 中点为 $P 、 R$, 则\n$$\n\\begin{aligned}\n\\overrightarrow{I Q^{\\prime}} & =\\frac{1}{4}\\left(\\overrightarrow{I A^{\\prime}}+\\overrightarrow{I B^{\\prime}}+\\overrightarrow{I C^{\\prime}}+\\overrightarrow{I D^{\\prime}}\\right) \\\\\n& =\\frac{1}{4}(\\overrightarrow{I K}+\\overrightarrow{I L}+\\overrightarrow{I M}+\\overrightarrow{I N})=\\frac{1}{2}(\\overrightarrow{I R}+\\overrightarrow{I P}) .\n\\end{aligned}\n$$\n由垂径定理知 $P I R E$ 为矩形.\n从而 $\\overrightarrow{I R}+\\overrightarrow{I P}=\\overrightarrow{I E}$.\n故 $\\overrightarrow{I Q}=\\frac{1}{2} \\overrightarrow{I E}$, 即 $I 、 Q 、 E$ 三点共线, 从而 $O 、 I 、 E$ 三点共线.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9i19.png",
+        "./images/volume7/figures/fig-c9i20.png"
+    ]
+}

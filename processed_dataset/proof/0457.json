@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 一次会议有 $n$ 名教授 $A_1, A_2, \\cdots, A_n$ 参加, 证明可以将这 $n$ 个人分为两组, 使得每一个人 $A_i$ 在另一组中认识的人数 $d_i$ 不少于他在同一组中认识的人数 $d_i^{\\prime}(i=1,2, \\cdots, n)$.",
+    "solution": "用 $n$ 个点 $v_1, v_2, \\cdots, v_n$ 表示这 $n$ 名教授, 并在相互认识的人之间连一条边, 将这 $n$ 个点任意分成两组, 只有有限多种分法.\n考虑在两组之间的连线条数 $S$, 其中必存在一种分法, 使 $S$ 达到最大值.\n此时定有 $d_i \\geqslant d_i^{\\prime}$ ( $i= 1,2, \\cdots, n)$. 若不然, 设对 $v_1$, 有 $d_1<d_1^{\\prime}$, 则将 $v_1$ 从这组换到另一组, $S$ 增加了$d_1^{\\prime}-d_1>0$. 这与 $S$ 已达到最大值矛盾.",
+    "remark": "",
+    "figures": []
+}

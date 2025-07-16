@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 平面上给定 100 个点, 已知其中任意两点的距离不超过 1 , 且任意三点所成的三角形是钝角三角形.\n证明: 这 100 个点被一个半径为 $\\frac{1}{2}$-的圆覆盖.",
+    "solution": "在这 100 个点中, 每两点有一个距离, 这有限个数 $\\left(\\frac{100 \\times 99}{2} 个 \\right)$ 中, 一定有一个最大数, 不妨设 $A, B$ 两点间的距离最大, 以线段 $A B$ 为直径作一个圆, 由题设, $A B \\leqslant 1$, 所以, 此圆的半径 $\\leqslant \\frac{1}{2}$.\n在其余的 98 个点中任取一点 $C$, 因为 $A B \\geqslant A C$, $A B \\geqslant B C$, 又由题设知 $\\triangle A B C$ 是钝角三角形, 如图(<FilePath:./images/volume14/figures/fig-c6a2.png>)所示, 所以 $\\angle C$ 一定是钝角, 于是点 $C$ 位于以 $A B$ 为直径的圆内, 也就是说这 100 个点都被这个圆所覆盖.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c6a2.png"
+    ]
+}

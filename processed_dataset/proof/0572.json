@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $A_i(i=1,2, \\cdots, 30)$ 是 $M=\\{1,2,3, \\cdots, 1990\\}$ 的子集, $\\left|A_i\\right| \\geqslant 660$. 求证: 存在 $i 、 j(1 \\leqslant i<j \\leqslant 30)$, 使 $\\left|A_i \\cap A_j\\right| \\geqslant 200$.",
+    "solution": "证明:不妨设所有 $\\left|A_i\\right|=660$. 否则, 去掉 $A_i$ 中的一些元素, 得到 $A_i^{\\prime}$, 若能证得 $\\left|A_i^{\\prime} \\cap A_j^{\\prime}\\right| \\geqslant 200$, 则加人原先去掉的元素, 显然有 $\\left|A_i \\cap A_j\\right| \\geqslant 200$.\n考察集合元素关系表.\n设第 $i$ 行有 $m_i$ 个 1 , 即 $i$ 在 $m_i$ 个集合中出现.\n考察各元素在各子集中出现的总次数, 即表中 1 的个数,有\n$$\n\\sum_{i=1}^{1990} m_i=S=\\sum_{i=1}^{30}\\left|A_i\\right|=30 \\times 660 .\n$$\n再从整体上进行估计 $\\sum_{1 \\leqslant i<j \\leqslant 30}\\left|A_i \\cap A_j\\right|$. 此即各元素在集合对的交集中出现的总次数, 有 $\\sum_{i=1}^{1990} \\mathrm{C}_{m_i}^2=\\sum_{1 \\leqslant i<j \\leqslant 30}\\left|A_i \\cap A_j\\right|$.\n于是, 由 Cauchy 不等式, 得\n$$\n\\begin{aligned}\n2 \\sum_{1 \\leqslant i<j \\leqslant 30}\\left|A_i \\cap A_j\\right| & =2 \\sum_{i=1}^{1990} \\mathrm{C}_{m_i}^2=\\sum_{i=1}^{1990} m_i^2-\\sum_{i=1}^{1990} m_i \\\\\n& \\geqslant \\frac{\\left(\\sum_{i=1}^{1990} m_i\\right)^2}{\\sum_{i=1}^{1990} 1^2}-\\sum_{i=1}^{1990} m_i \\\\\n& =\\frac{(30 \\times 660)^2}{1990}-30 \\times 660,\n\\end{aligned}\n$$\n所以必有一个 $A_i \\cap A_j$, 使\n$$\n\\begin{aligned}\n\\left|A_i \\cap A_j\\right| & \\geqslant \\frac{\\frac{(30 \\times 660)^2}{1990}-30 \\times 660}{2 \\mathrm{C}_{30}^2} \\\\\n& =\\frac{(30 \\times 660) \\times(30 \\times 660-1990)}{30 \\times 29 \\times 1990} \\\\\n& >200 .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

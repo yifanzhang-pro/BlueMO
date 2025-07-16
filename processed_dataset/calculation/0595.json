@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题8. 设 $x_1, x_2, y_1, y_2 \\in \\mathbf{R}$, 求:\n$u=\\sqrt{\\left(1185-x_1-\\overline{\\left.x_2\\right)^2+y_2^2}\\right.}+\\sqrt{x_2^2+y_1^2}+\\sqrt{x_1^2+\\left(1580-y_1-y_2\\right)^2}$ 的最小值.",
+    "solution": "在直角坐标平面上, 取点 $A(1185,0), X\\left(x_1+x_2, y_2\\right), Y\\left(x_1, y_1+\\right. \\left.y_2\\right), B(0,1580)$. 则 $A X=\\sqrt{\\left(1185-x_1-x_2\\right)^2+y_2^2}, X Y=\\sqrt{x_2^2+y_1^2}$, $Y B=\\sqrt{x_1^2+\\left(1580-y_1-y_2\\right)^2}$. 所以 $u=A X+X Y+Y B \\geqslant A B= \\sqrt{1185^2+1580^2}=1925$. 故 $u$ 的最小值为 1925 .",
+    "remark": "",
+    "figures": []
+}

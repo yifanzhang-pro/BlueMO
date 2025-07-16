@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 设 $a, b, c \\in \\mathbf{R}^{+}$, 且 $a+b+c=3$. 证明:\n$$\n\\sum \\frac{a^4}{b^2+c} \\geqslant \\frac{3}{2} \\text {. }\n$$\n其中, \" $\\sum$ \" 表示轮换对称和.",
+    "solution": "由柯西不等式知 $\\left(b^2+c+c^2+a+a^2+b\\right)$.\n$\\left(\\frac{a^4}{b^2+c}+\\frac{b^4}{c^2+a}+\\frac{c^4}{c^2+b}\\right) \\geqslant\\left(a^2+b^2+c^2\\right)^2$. 故 $\\frac{a^4}{b^2+c}+\\frac{b^4}{c^2+a}+\\frac{c^4}{a^2+b} \\geqslant \\frac{\\left(a^2+b^2+c^2\\right)^2}{a^2+b^2+c^2+3}$. 令 $a^2+b^2+c^2=x$. 易证 $x \\geqslant 3$. 故 $\\frac{x^2}{3+x} \\geqslant \\frac{3}{2} \\Leftrightarrow 2 x^2 \\geqslant 9+3 x \\Leftrightarrow 2 x^2-3 x-9 \\geqslant 0 \\Leftrightarrow(2 x+3)(x-3) \\geqslant 0$. 显然成立.\n于是, $\\frac{a^4}{b^2+c}+ \\frac{b^4}{c^2+a}+\\frac{c^4}{a^2+b} \\geqslant \\frac{3}{2}$.",
+    "remark": "",
+    "figures": []
+}

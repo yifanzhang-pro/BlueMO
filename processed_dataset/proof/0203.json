@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设 $p$ 是给定的素数.\n证明: 数列 $\\left\\{2^n-n\\right\\}(n \\geqslant 1)$ 中有无穷多个项被整除.",
+    "solution": "证明:$p=2$ 时结论显然成立.\n设 $p>2$, 则由费马小定理得 $2^{p-1} \\equiv 1(\\bmod p)$, 从而对任意正整数 $m$ 有\n$$\n2^{m(p-1)} \\equiv 1(\\bmod p) . \\label{eq1}\n$$\n我们取 $m \\equiv-1(\\bmod p)$, 则由 式\\ref{eq1}, 得\n$$\n2^{m(p-1)}-m(p-1) \\equiv 1+m \\equiv 0(\\bmod p) .\n$$\n因此, 若 $n=(k p-1)(p-1)$, 则 $2^n-n$ 被 $p$ 整除 ( $k$ 为任意正整数), 故数列中有无穷多项被 $p$ 整除.",
+    "remark": "",
+    "figures": []
+}

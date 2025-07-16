@@ -1,0 +1,168 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1 已知 $f(x)=x^5+a x^3+b x+c \sin x+8$ (其中 $a 、 b 、 c$ 是实常数), 且 $f(-2)=10$, 求 $f(2)$ 的值.
+%%<SOLUTION>%%
+设 $g(x)=f(x)-8$, 则 $g(x)$ 是奇函数, 且 $g(-2)=f(-2)-8=10- 8=2$. 所以 $g(2)=-g(-2)=-2$. 从而 $f(2)=g(2)+8=-2+8=6$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2 已知 $f\left(\log _a x\right)=\frac{a\left(x^2-1\right)}{x\left(a^2-1\right)}(a>0, a \neq 1, x>0)$, 判断 $f(x)$ 的单调性, 并证明你的结论.
+%%<SOLUTION>%%
+设 $t=\log _a x(x>0)$, 则 $f\left(t_1\right)-f\left(t_2\right)=\frac{a\left(x_1^2-1\right)}{x_1\left(a^2-1\right)}-\frac{a\left(x_2^2-1\right)}{x_2\left(a^2-1\right)}= \frac{a\left(x_1-x_2\right)\left(x_1 x_2+1\right)}{x_1 x_2\left(a^2-1\right)}$.
+(1) 当 $a>1$ 时, 若 $t_1<t_2$, 则 $0<x_1<x_2, f\left(t_1\right)<f\left(t_2\right)$.
+(2) 当 $0<a<1$ 时, 若 $t_1<t_2$, 则 $x_1>x_2>0, f\left(t_1\right)<f\left(t_2\right)$. 
+由 (1), (2) 可知 $f(x)$ 在 $\mathbf{R}$ 上是增函数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3 设 $f(x)=\frac{2 x+3}{x-1}$, 函数 $g(x)$ 的图象与 $y=f^{-1}(x+1)$ 的图象关于 $y= x$ 对称, 求 $g(3)$ 的值.
+%%<SOLUTION>%%
+设 $g(3)=a$, 则 $f^{-1}(a+1)=3$, 由此得 $f(3)=a+1$, 即 $a+1=\frac{9}{2}$, 故 $a=\frac{7}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4 已知 $f(x)$ 是定义在实数集 $\mathbf{R}$ 上的函数, 且
+$$
+f(x+2)[1-f(x)]=1+f(x) .
+$$
+(1) 求证: $f(x)$ 是周期函数;
+(2) 若 $f(1)=2+\sqrt{3}$, 求 $f(2001), f(2005)$ 的值.
+%%<SOLUTION>%%
+(1) 由题设, 得 $f(x+2)=\frac{1+f(x)}{1-f(x)}, f(x+4)=f(2+(x+2))= \frac{1+f(x+2)}{1-f(x+2)}=-\frac{1}{f(x)}, f(x+8)=f((x+4)+4)=-\frac{1}{f(x+4)}=f(x)$. 
+所以, $f(x)$ 是以 8 为周期的周期函数.
+(2) $f(2001)=f(8 \times 250+1)= f(1)=2+\sqrt{3}$, 
+$f(2005)=f(8 \times 250+5)=f(5)=f(1+4)=-\frac{1}{f(1)}= \sqrt{3}-2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5 已知 $f(x)$ 是定义在 $\mathbf{R}$ 上的函数, $f(1)=1$, 且对任意 $x \in \mathbf{R}$, 都有
+$$
+f(x+5) \geqslant f(x)+5, f(x+1) \leqslant f(x)+1 .
+$$
+若 $g(x)==f(x)+1-x$, 求 $g(2002)$. 
+%%<SOLUTION>%%
+因为 $f(x)=g(x)+x-1$, 所以 $g(x+5)+(x+5)-1 \geqslant g(x)+ (x-1)+5, g(x+1)+(x+1)-1 \leqslant g(x)+(x-1)+1$, 即 $g(x+5) \geqslant g(x), g(x+1) \leqslant g(x)$. 
+故 $g(x) \leqslant g(x+5) \leqslant g(x+4) \leqslant g(x+3) \leqslant g(x+2) \leqslant g(x+1) \leqslant g(x)$, 所以 $g(x+1)=g(x)$, 即 $g(x)$ 是周期为 1 的周期函数,故 $g(2002)=g(1)=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6 设函数 $y=f(x)$ 对一切实数 $x$ 都满足
+$$
+f(3+x)=f(3-x),
+$$
+且方程 $f(x)=0$ 恰有 6 个不同的实根, 求这 6 个实根的和.
+%%<SOLUTION>%%
+由题设知, 函数 $f(x)$ 的图象是关于直线 $x=3$ 对称的,因而每两个关于 $x=3$ 对称的根的和为 6 . 于是这 6 个根的和为 $3 \times 6=18$. 其实, 下面的说法似乎更自然一些.
+若 $3+x_0$ 为 $f(x)=0$ 的根, 则由题设知 $f\left(3-x_0\right)=f\left(3+x_0\right)=0$, 所以 $3-x_0$ 也是 $f(x)=0$ 的根.
+于是可设这 6 个根为 $3 \pm x_1, 3 \pm x_2, 3 \pm x_3$, 故它们的和为 18 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7 已知 $f(x)$ 是定义在 $\mathbf{R}$ 上的奇函数, 当 $x \geqslant 0$ 时, $f(x)=2 x-x^2$. 问 : 是否存在实数 $a 、 b(a \neq b)$, 使 $f(x)$ 在 $[a, b]$ 上的值域为 $\left[\frac{1}{b}, \frac{1}{a}\right]$ ?
+%%<SOLUTION>%%
+利用条件: $f(x)$ 在 $\mathbf{R}$ 上为奇函数,且 $x \geqslant 0$ 时, $f(x)=2 x-x^2$, 可以 $\left\{\begin{array}{l}a-b<0, \\ \frac{a-b}{a b}<0\end{array} \Leftrightarrow a b>0\right.$, 故只能有 $0<a<b$ 或 $a<b<0$ 两种形式.
+(1)当 $0<a<b$ 时, $f(x)=-x^2+2 x=-(x-1)^2+1 \leqslant 1$, 从而 $\frac{1}{a} \leqslant 1$, 即 $a \geqslant$ 1 , 再考虑到以上提供出来的 $a 、 b$ 情况有: $1 \leqslant a<b$, 而 $y=f(x)$ 在 $[a, b]$ 上为减函数,则 $\left\{\begin{array}{l}f(a)=\frac{1}{a}, \\ f(b)=\frac{1}{b} .\end{array}\right.$ 这两个关系又等价于“ $a, b$ 是方程 $f(x)=\frac{1}{x}$ 的两个根, 且 $1 \leqslant a<b$ ”, 解方程 $2 x-x^2=\frac{1}{x}$, 得 $\left\{\begin{array}{l}a=1, \\ b=\frac{1+\sqrt{5}}{2} .\end{array}\right.$ 
+(2) 当 $a< b<0$ 时, 与(1)相仿, 得 $\left\{\begin{array}{l}a=\frac{-1-\sqrt{5}}{2}, \\ b=-1 .\end{array}\right.$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 已知
+$$
+f(x)=\left\{\begin{array}{cl}
+x+\frac{1}{2}, & \text { 当 } 0 \leqslant x \leqslant \frac{1}{2} \text { 时; } \\
+2(1-x), & \text { 当 } \frac{1}{2}<x \leqslant 1 \text { 时.
+}
+\end{array}\right.
+$$
+定义 $f_n(x)=\underbrace{f(f(\cdots f(x) \cdots))}_{n \text { 个f }}, n \in \mathbf{N}^*$
+(1) 求 $f_{2006}\left(\frac{2}{15}\right)$;
+(2) 设 $B=\left\{x \mid f_{15}(x)=x, x \in[0,1]\right\}$, 求证: $|B| \geqslant 9$.
+%%<SOLUTION>%%
+(1) 利用所给的函数解析式, 得 $f_1\left(\frac{2}{15}\right)=\frac{2}{15}+\frac{1}{2}=\frac{19}{30}, f_2\left(\frac{2}{15}\right)= f\left(\frac{19}{30}\right)=2\left(1-\frac{19}{30}\right)=\frac{11}{15}, f_3\left(\frac{2}{15}\right)=f\left(\frac{11}{15}\right)=2\left(1-\frac{11}{15}\right)=\frac{8}{15}, f_4\left(\frac{2}{15}\right)= f\left(\frac{8}{15}\right)=2\left(1-\frac{8}{15}\right)=\frac{14}{15}, f_5\left(\frac{2}{15}\right)=f\left(\frac{14}{15}\right)=2\left(1-\frac{14}{15}\right)=\frac{2}{15}$. 所以, $f_n\left(\frac{2}{15}\right)$
+对 $n$ 来说是以 5 为周期变化的, 即 $f_{5 k+r}\left(\frac{2}{15}\right)=f_r\left(\frac{2}{15}\right)$. 所以 $f_{2006}\left(\frac{2}{15}\right)= f_{5 \times 401+1}\left(\frac{2}{15}\right)=f_1\left(\frac{2}{15}\right)=\frac{19}{30}$.
+(2) 设 $A=\left\{\frac{2}{15}, \frac{19}{30}, \frac{11}{15}, \frac{8}{15}, \frac{14}{15}\right\}$. 由第 (1) 小题知, 对于 $a \in A$, 有 $f_5(a)=a$, 故 $f_{15}(a)=a$. 所以 $A \subset B$. 画出 $f(x)$ 的图象, 如图(<FilePath:./figures/fig-c2p8.png>)所示, 由图象可知 (也可通过函数计算), $f\left(\frac{2}{3}\right)=\frac{2}{3}$, 所以 $f_{15}\left(\frac{2}{3}\right)=\frac{2}{3}$. 故 $\frac{2}{3} \in B$. 设 $C=\left\{0, \frac{1}{2}, 1\right\}$. 由于 $f(0)==\frac{1}{2}$, $f\left(\frac{1}{2}\right)=1, f(1)=0$, 则对于 $c \in C$, 有 $f_3(c)=c$, 所以 $f_{15}(c)=c$. 故 $C \subset B$. 综上, 得 $\left\{\frac{2}{15}, \frac{19}{30}, \frac{11}{15}, \frac{8}{15}, \frac{14}{15}, \frac{2}{3}, 0, \frac{1}{2}, 1\right\} \subset B$, 故 $B$ 中至少含有 9 个元素.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9 设 $f(x)$ 是定义在 $\mathbf{R}$ 上的偶函数, 且 $f(x)$ 在 $(-\infty, 0]$ 上是增函数, $f (2 a^2+ a+1)<f\left(3 a^2-2 a+1\right)$. 求实数 $a$ 的取值范围.
+%%<SOLUTION>%%
+先证 $f(x)$ 是 $(0,+\infty)$ 上的减函数.
+任取 $x_1, x_2 \in \mathbf{R}^{+}, x_1<x_2$, 则 $-x_2<-x_1$, 且 $-x_2,-x_1 \in(-\infty, 0)$. 因为 $f(x)$ 在 $(-\infty, 0)$ 上是增函数, 所以 $f\left(-x_2\right)<f\left(-x_1\right)$, 即 $f\left(x_2\right)<f\left(x_1\right)$. 所以 $f(x)$ 在 $(0,+\infty)$ 上是减函数.
+因为 $2 a^2+a+1>0,3 a^2-2 a+1>0$, 由 $f\left(2 a^2+a+1\right)<f (3 a^2- 2 a+1)$, 可得 $2 a^2+a+1>3 a^2-2 a+1$, 解不等式得 $0<a<3$. 所以, $a$ 的取值范围是 $0<a<3$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10 设函数 $f(x)$ 对所有 $x>0$ 有意义,且满足下列条件:
+(1) 对于 $x>0$, 有 $f(x) f\left[f(x)+\frac{1}{x}\right]=1$;
+(2) $f(x)$ 在 $(0,+\infty)$ 上递增.
+求 $f(1)$ 的值.
+%%<SOLUTION>%%
+设 $f(1)=a$, 则当 $x=1$ 时, 由条件 (1) 得 $f(a+1)=\frac{1}{a}$. 令 $x= a+1$, 由条件(1) 得 $f(a+1) f\left[f(a+1)+\frac{1}{a+1}\right]=1$, 即 $f\left(\frac{1}{a}+\frac{1}{a+1}\right)= a=f(1)$. 由于 $f(x)$ 在 $(0,+\infty)$ 上是递增的, 所以 $\frac{1}{a}+\frac{1}{a+1}=1$, 解方程得 $a=\frac{1 \pm \sqrt{5}}{2}$. 若 $a=\frac{1+\sqrt{5}}{2}$, 则 $1<a=f(1)<f(a+1)=\frac{1}{a}<1$, 矛盾.
+所以, $a=\frac{1-\sqrt{5}}{2}$, 即 $f(1)=\frac{1-\sqrt{5}}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11 设 $f(x)$ 是 $[0,1]$ 上的不减函数 (即对于任意的 $x_1, x_2 \in[0,1]$, 当 $x_1< x_2$ 时, 都有 $f\left(x_1\right) \leqslant f\left(x_2\right)$), 且满足:
+(1) $f(0)=0$;
+(2) $f\left(\frac{x}{3}\right)=\frac{f(x)}{2}$;
+(3) $f(1-x)=1-f(x)$.
+求 $f\left(\frac{18}{1991}\right)$ 的值.
+%%<SOLUTION>%%
+易知 $f(1)=1-f(0)=1, f\left(\frac{1}{3}\right)=\frac{f(1)}{2}=\frac{1}{2}, f\left(\frac{2}{3}\right)=1- f\left(\frac{1}{3}\right)=\frac{1}{2}$. 所以 $f(x)$ 在 $\left[\frac{1}{3}, \frac{2}{3}\right]$ 上的值恒为 $\frac{1}{2}$. 反复利用条件 (2), 可得
+$f\left(\frac{18}{1991}\right)=\frac{1}{2^4} f\left(\frac{3^4 \times 18}{1991}\right)=\frac{1}{16} f\left(\frac{1458}{1991}\right), f\left(\frac{1458}{1991}\right)=1-f\left(\frac{533}{1991}\right)=1- \frac{1}{2} f\left(\frac{1599}{1991}\right)=1-\frac{1}{2}\left[1-f\left(\frac{392}{1991}\right)\right]=1-\frac{1}{2}+\frac{1}{2} f\left(\frac{392}{1991}\right)=\frac{1}{2}+ \frac{1}{4} f\left(\frac{1176}{1991}\right)=\frac{1}{2}+\frac{1}{8}$, 所以, $f\left(\frac{18}{1991}\right)=\frac{5}{128}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12 函数 $f(x)$ 的定义域关于原点对称, 但不包括数 0 , 对定义域中的任意数$x$, 在定义域中存在 $x_1 、 x_2$, 使 $x=x_1-x_2, f\left(x_1\right) \neq f\left(x_2\right)$, 且满足以下三个条件:
+(1) $x_1 、 x_2$ 是 $f(x)$ 定义域中的数, $f\left(x_1\right) \neq f\left(x_2\right)$ 或 $0<\left|x_1-x_2\right|< 2 a$, 则
+$$
+f\left(x_1-x_2\right)=\frac{f\left(x_1\right) f\left(x_2\right)+1}{f\left(x_2\right)-f\left(x_1\right)} ;
+$$
+(2) $f(a)=1$ ( $a$ 是一个正的常数);
+(3) 当 $0<x<2 a$ 时, $f(x)>0$.
+证明: (1) $f(x)$ 是奇函数;
+(2) $f(x)$ 是周期函数, 并求出它的一个周期;
+(3) $f(x)$ 在 $(0,4 a)$ 内为减函数.
+%%<SOLUTION>%%
+(1) 对定义域中的 $x$, 由题设知在定义域中存在 $x_1 、 x_2$, 使 $x=x_1- x_2, f\left(x_1\right) \neq f\left(x_2\right)$, 则 $f(x)=f\left(x_1-x_2\right)=\frac{f\left(x_1\right) f\left(x_2\right)+1}{f\left(x_2\right)-f\left(x_1\right)}=-f\left(x_2-\right. \left.x_1\right)=-f(-x)$, 所以 $f(x)$ 为奇函数.
+(2) 因 $f(a)=1$, 所以 $f(-a)= -f(a)=-1$. 于是 $f(-2 a)=f(-a-a)=\frac{f(-a) f(a)+1}{f(a)-f(-a)}=0$. 若 $f(x) \neq 0$ , 则 $f(x+2 a)=f[x-(-2 a)]=\frac{f(x) f(-2 a)+1}{f(-2 a)-f(x)}=\frac{1}{-f(x)}, f(x+ 4 a)=f[x+2 a+(2 a)]=\frac{1}{-f(x+2 a)}=f(x)$. 若 $f(x)=0$, 则 $f(x+a)= f[x-(-a)]=\frac{f(x) f(-a)+1}{f(-a)-f(x)}=-1, f(x+3 a)=f[(x+a)+2 a]= \frac{1}{-f(x+a)}=1, f(x+4 a)=f[(x+3 a)-(-a)]=\frac{f(x+3 a) f(-a)+1}{f(-a)-f(x+3 a)}=0$  . 仍有 $f(x+4 a)=f(x)$. 所以, $f(x)$ 为周期函数, $4 a$ 是它的一个周期.
+(3) 先证在 $(0,2 a]$ 内 $f(x)$ 为减函数.
+事实上, 设 $0<x_1<x_2 \leqslant 2 a$, 则 $0< x_2-x_1<2 a, f\left(x_1\right)>0, f\left(x_2\right) \geqslant 0$ (当 $x_2=2 a$ 时, $f\left(x_2\right)=-f(-2 a)= 0), \frac{f\left(x_2\right) f\left(x_1\right)+1}{f\left(x_1\right)-f\left(x_2\right)}=f\left(x_2-x_1\right)>0$. 所以 $f\left(x_1\right)>f\left(x_2\right)$. 当 $2 a<x_1< x_2<4 a$ 时, $0<x_1-2 a<x_2-2 a<2 a, f\left(x_1-2 a\right)>f\left(x_2-2 a\right)>0$, 于是 $f(x)=f[(x-2 a)+2 a]=-\frac{1}{f(x-2 a)}, f\left(x_1\right)-f\left(x_2\right)=-\frac{1}{f\left(x_1-2 a\right)}+ \frac{1}{f\left(x_2-2 a\right)}>0$, 即在 $(2 a, 4 a)$ 内, $f(x)$ 也是减函数.
+从而命题得证.
+%%PROBLEM_END%%
+
+

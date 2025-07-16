@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $p(x)$ 是一个整系数多项式,对任意 $n \\geqslant 1$ 有 $p(n)>n$. 定义 $x_1= 1, x_2=p\\left(x_1\\right), \\cdots, x_n=p\\left(x_{n-1}\\right)(n \\geqslant 2)$. 若对于任意正整数 $N$, 数列 $\\left\\{x_n\\right\\}(n \\geqslant 1)$ 中均有被 $N$ 整除的项.\n证明 $p(x)=x+1$.",
+    "solution": "证明:我们分两步进行.\n首先证明, 对任一个固定的 $m>1$, 数列 $\\left\\{x_n\\right\\}$ 模 $x_m-1$ 是周期数列.\n显然 $x_m \\equiv 1=x_1\\left(\\bmod x_m-1\\right)$. 因 $p(x)$ 是整系数多项式, 故对任意整数 $u 、 v(u \\neq v)$ 有 $(u-v) \\mid(p(u)-p(v))$, 即\n$$\np(u) \\equiv p(v)(\\bmod u-v),\n$$\n在上式中取 $u=x_m, v=x_1=1$, 得 $x_{m+1} \\equiv x_2\\left(\\bmod x_m-1\\right)$. 依此类推, $x_{m+2} \\equiv x_3, x_{m+3} \\equiv x_4, \\cdots\\left(\\bmod x_m-1\\right)$, 可知 $\\left\\{x_n\\right\\}$ 模 $x_m-1$ 是周期数列 $x_1, \\cdots, x_{m-1}$, $x_1, \\cdots, x_{m-1}, \\cdots$.\n第二步,我们证明\n$$\nx_m-1=x_{m-1} . \\label{eq1}\n$$\n由已知条件, 对于数 $N=x_m-1$, 存在 $x_k$ 使得 $\\left(x_m-1\\right) \\mid x_k$, 而由上一段的结论, 可设 $1 \\leqslant k \\leqslant m-1$, 此外, $p\\left(x_{m-1}\\right)>x_{m-1}$, 故 $x_m-1 \\geqslant x_{m-1}$, 所以 $k$ 必须为 $m-1$, 即 $\\left(x_m-1\\right) \\mid x_{m-1}$, 于是, $x_{m-1} \\geqslant x_m-1$, 综合起来即知 \\ref{eq1}式成立.\n因为式\\ref{eq1}即是 $p\\left(x_{m-1}\\right)-1=x_{m-1}$. 由于 $m$ 是任意大于 1 的整数,这意味着 $p(x)=x+1$ 有无穷多个不同的根, 故 $p(x)$ 必须恒等于多项式 $x+1$. 这就证明了本题的结论.\n由一个(整系数) 多项式的算术 (数论) 性质, 推断其代数性质, 是数论中非常有趣的一个课题, 例 6 正是这样的一个简单例子, 下面的例 7 也是具有这种精神的问题.",
+    "remark": "",
+    "figures": []
+}

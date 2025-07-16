@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 设 $a=\\sin 15^{\\circ}+\\cos 15^{\\circ}, b=\\sin 16^{\\circ}+\\cos 16^{\\circ}$, 则下列各式中正确的是 ( ).\n(A) $a<\\frac{a^2+b^2}{2}<b$\n(B) $a<b<\\frac{a^2+b^2}{2}$\n(C) $b<a<\\frac{a^2+b^2}{2}$\n(D) $b<\\frac{a^2+b^2}{2}<a$",
+    "solution": "B. 因 $a=\\sin 15^{\\circ}+\\cos 15^{\\circ}=\\sqrt{2} \\sin 60^{\\circ}=\\frac{\\sqrt{6}}{2}, b=\\sin 16^{\\circ}+\\cos 16^{\\circ}= \\sqrt{2} \\sin 61^{\\circ}$, 所以 $a<b$. 又 $\\frac{a^2+b^2}{2}-b=\\frac{1}{2}\\left(b^2-2 b+a^2\\right)=\\frac{1}{2}\\left(b^2-2 b+\\frac{3}{2}\\right)= \\frac{1}{2}\\left[(b-1)^2+\\frac{1}{2}\\right]>0$, 所以 $\\frac{a^2+b^2}{2}>b$. 选 B.",
+    "remark": "",
+    "figures": []
+}

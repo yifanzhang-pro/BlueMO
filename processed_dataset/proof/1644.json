@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题28. 设 $m$ 为给定的正整数, 数列 $\\left\\{a_n\\right\\}$ 的每一项都是正整数, 且对任意正整数 $n$, 都有 $0<a_{n+1}-a_n \\leqslant m$.\n证明: 存在无穷多对正整数 $(p, q)$, 使得 $p<q$, 且 $a_p \\mid a_q$.",
+    "solution": "先证: 存在一对正整数 $(p, q)$, 使得 $p<q$, 且 $a_p \\mid a_q$. 考察下列数表\n$$\n\\begin{gathered}\nx_{0,1}, x_{0,2}, \\cdots, x_{0, m} \\\\\nx_{1,1}, x_{1,2}, \\cdots, x_{1, m} \\\\\n\\cdots \\\\\nx_{m, 1}, x_{m, 2}, \\cdots, x_{m, m}\n\\end{gathered}\n$$\n这里 $x_{0,1}=a_1, x_{0, j}=x_{0, j-1}+1, j=2, \\cdots, m$. 而 $x_{i, j}=\\left(\\prod_{k=1}^m x_{i-1, k}\\right)+ x_{i-1, j} .1 \\leqslant i, j \\leqslant m$.\n上述数表中, 每一行都是连续 $m$ 个正整数, 每一列中任意两个数 $a 、 b$, 若 $a<b$, 则 $a \\mid b$.\n依条件, 每一行中都有 $\\left\\{a_n\\right\\}$ 中至少两个数, 因此, 表格中有至少 $2(m+1)$ 个数为数列 $\\left\\{a_n\\right\\}$ 中的项, 从而表格中有一列中有两个数在 $\\left\\{a_n\\right\\}$ 中, 记为 $a_p$, $a_q, p<q$, 则 $a_p \\mid a_q$.\n现在将 $x_{0,1}$ 取为 $a_q+1$, 同上构造同样性质的表格, 即可找到下一对 $\\left(p^{\\prime}, q^{\\prime}\\right)$, $p^{\\prime}<q^{\\prime}$, 使 $a_{p^{\\prime}} \\mid a_{q^{\\prime}}$. 依次递推, 即可找到无穷多对 $(p, q)$, 使 $p<q$, 且 $a_p \\mid a_q$. 命题获证.",
+    "remark": "",
+    "figures": []
+}

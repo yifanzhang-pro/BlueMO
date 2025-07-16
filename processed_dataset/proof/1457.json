@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 给定 $\\alpha, \\beta>0, x, y, z \\in \\mathbf{R}^{+}, x y z=2004$. 求 $u$ 的最大值, 其中, $u= \\sum_{c y c} \\frac{1}{2004^{\\alpha+\\beta}+x^\\alpha\\left(y^{2 \\alpha+3 \\beta}+z^{2 \\alpha+3 \\beta}\\right)}$.",
+    "solution": "首先, 不难证明 $y^{2 \\alpha+3 \\beta}+z^{2 \\alpha+3 \\beta} \\geqslant y^{\\alpha+2 \\beta} z^{\\alpha+\\beta}+y^{\\alpha+\\beta} z^{2 \\alpha+\\beta}$.\n又由于 $2004^{\\alpha+\\beta}+x^\\alpha\\left(y^{2 \\alpha+3 \\beta}+z^{2 \\alpha+3 \\beta}\\right)=x^\\alpha\\left[x^\\beta y^{\\alpha+\\beta} z^{\\alpha+\\beta}+y^{2 \\alpha+3 \\beta}+z^{2 \\alpha+3 \\beta}\\right] \\geqslant x^\\alpha\\left[x^\\beta y^{\\alpha+\\beta} z^{\\alpha+\\beta}+y^{\\alpha+2 \\beta} z^{\\alpha+\\beta}+y^{\\alpha+\\beta} z^{\\alpha+2 \\beta}\\right]=x^\\alpha y^{\\alpha+\\beta} z^{\\alpha+\\beta}\\left(x^\\beta+y^\\beta+z^\\beta\\right)$.\n因此, $u \\leqslant \\frac{x^\\beta}{2004^{\\alpha+\\beta}\\left(x^\\beta+y^\\beta+z^\\beta\\right)}+\\frac{y^\\beta}{2004^{\\alpha+\\beta}\\left(x^\\beta+y^\\beta+z^\\beta\\right)}$\n$$\n+\\frac{z^\\beta}{2004^{\\alpha+\\beta}} \\frac{1}{\\left(x^\\beta+y^\\beta+z^\\beta\\right)}=\\frac{1}{2004^{\\alpha+\\beta}},\n$$\n故 $u_{\\max }=2004^{-(\\alpha+\\beta)}$.",
+    "remark": "",
+    "figures": []
+}

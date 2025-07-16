@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 证明: 在 6 个顶点 12 条边的连通简单平面图中, 每个面用 3 条边围成.",
+    "solution": "由欧拉公式, $f=2+e-v=8$. 因为平均每个面有边 $\\frac{2 e}{f}=3$ 条, 由于每个面至少有三条边, 所以每个面恰有三条边.",
+    "remark": "",
+    "figures": []
+}

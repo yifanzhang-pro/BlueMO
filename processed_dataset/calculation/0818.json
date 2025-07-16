@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-4.tex",
+    "problem_type": "calculation",
+    "problem": "例7. 设 $a_i \\in \\mathbf{R}^{+}, i=1,2, \\cdots, n$, 且 $\\sum_{i=1}^n a_i=1$, 求\n$$\nM=\\sum_{i=1}^n \\frac{a_i}{1+\\sum_{j \\neq i, j=1}^n a_j}\n$$\n的最小值.",
+    "solution": "解:由 $M+n=\\left(\\frac{a_1}{2-a_1}+1\\right)+\\left(\\frac{a_2}{2-a_2}+1\\right)+\\cdots+\\left(\\frac{a_n}{2-a_n}+1\\right)$\n$$\n\\begin{aligned}\n& =\\frac{2}{2-a_1}+\\frac{2}{2-a_2}+\\cdots+\\frac{2}{2-a_n}\\left(\\text { 由 } H_n \\leqslant A_n\\right) \\\\\n& \\geqslant \\frac{n^2}{\\frac{1}{2}\\left(2-a_1\\right)+\\frac{1}{2}\\left(2-a_2\\right)+\\cdots+\\frac{1}{2}\\left(2-a_n\\right)} \\\\\n& =\\frac{n^2}{\\frac{1}{2}(2 n-1)}=\\frac{2 n^2}{2 n-1} .\n\\end{aligned}\n$$\n所以 $M \\geqslant \\frac{n}{2 n-1}$, 当且仅当 $a_1=a_2=\\cdots=a_n=\\frac{1}{n}$ 时, $M=\\frac{n}{2 n-1}$.\n于是 $M$ 的最小值为 $\\frac{n}{2 n-1}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,61 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $n$ 和 $k$ 都是正整数,则 $1,2, \cdots, n$ 中恰有 $\left[\frac{n}{k}\right]$ 个数被 $k$ 整除.
+%%<SOLUTION>%%
+在 $1,2, \cdots, n$ 中, 被 $k$ 整除的数为 $k, 2 k, \cdots, d k$, 其中正整数 $d$ 满足 $d k \leqslant n$ 但 $(d+1) k>n$, 从而 $\frac{n}{k}-1<d \leqslant \frac{n}{k}$, 即 $d=\left[\frac{n}{k}\right]$, 故所说的数中共有 $\left[\frac{n}{k}\right]$ 个被 $k$ 整除.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 11 个女孩与 $n$ 个男孩去采蘑菇.
+所有这些孩子共采到 $n^2+9 n-2$ 个蘑菇, 并且每个孩子采到的个数都相同.
+试确定, 采蘑菇的孩子中是女孩多还是男孩多.
+%%<SOLUTION>%%
+由于各个孩子采到的蘑菇数目一样多, 故孩子的总数 $n+11$ 能整除蘑菇总数
+$$
+n^2+9 n-2=(n+11)(n-2)+20,
+$$
+从而 $n+11$ 整除 20 . 由于 $n+11>11$, 故 $n$ 只能是 9. 因此, 女孩比男孩多.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设正整数 $n$ 的十进制表示为 $n=\overline{a_k \cdots a_1 a_0}\left(0 \leqslant a_i \leqslant 9, a_k \neq 0\right)$, 记 $T(n)=a_0-a_1+\cdots+(-1)^k a_k$ (由 $n$ 的个位起始的数码的正、负交错和). 证明 $n-T(n)$ 被 11 整除.
+由此得出被 11 整除的数的数字特征: 11 整除 $n$ 的充分必要条件是 11 整除 $T(n)$.
+%%<SOLUTION>%%
+我们有
+$$
+n-T(n)=\left(a_0-a_0\right)+\left(10 a_1+a_1\right)+\cdots+\left(a_k \times 10^k-(-1)^k a_k\right) .
+$$
+易知对 $i=0,1, \cdots, k$, 数 $a_i \times 10^i-(-1)^i a_i$ 被 11 整除(按 $i$ 为偶、奇数分别用分解式 (5)、(6)). 因此 $n-T(n)$ 被 11 整除, 故问题中两方面的结论均成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $n$ 个整数具有下述性质: 其中任意 $n-1$ 个数之积与剩下那个数的差都能被 $n$ 整除.
+证明: 这 $n$ 个数的平方和也能被 $n$ 整除.
+%%<SOLUTION>%%
+设 $a_1, \cdots, a_n$ 是具有所说性质的整数, $A$ 是它们的积, 对于 $1 \leqslant i \leqslant n$, 数 $n$ 整除 $\frac{A}{a_i}-a_i$, 因而能整除
+$$
+a_i\left(\frac{A}{a_i}-a_i\right)=A-a_i^2 .
+$$
+故 $n$ 整除这些数的和 $\left(A-a_1^2\right)+\cdots+\left(A-a_n^2\right)=n A-\left(a_1^2+\cdots+a_n^2\right)$. 从而 $n$ 整除 $a_1^2+\cdots+a_n^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设整数 $a 、 b 、 c 、 d$ 满足 $a d-b c>1$, 证明: $a 、 b 、 c 、 d$ 中至少有一个数不被 $a d-b c$ 整除.
+%%<SOLUTION>%%
+若 $a 、 b 、 c 、 d$ 都被 $a d-b c$ 整除, 则 $(a d-b c)^2$ 整除 $a d$ 及 $b c$, 故整除 $a d-b c$, 由此得知 $|a d-b c|=1$, 这与已知 $a d-b c>1$ 矛盾.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题2 数集 $M$ 由 2003 个不同的正数组成,对于 $M$ 中任何三个不同的元素 $a 、 b$ 、 $c$, 数 $a^2+b c$ 都是有理数.\n证明: 可以找到一个正整数 $n$, 使得对于 $M$ 中任何数 $a$, 数 $a \\sqrt{n}$ 都是有理数.",
+    "solution": "$a, b, c, d \\in M$, 且两两不同.\n由 $d^2+a b \\in \\mathbf{Q}, d^2+b c \\in \\mathbf{Q}$, 得 $b c-a b \\in \\mathbf{Q}$. 故 $a^2+a b=a^2+b c+(a b-b c) \\in \\mathbf{Q}$, 同理 $b^2+a b \\in \\mathbf{Q}$. 从而, 对 $M$ 中任何两个不同的数 $a 、 b$, 都有 $q=\\frac{a}{b}=\\frac{a^2+a b}{b^2+a b} \\in \\mathbf{Q}$. 于是, $a=q b$, 从而 $a^2+a b= b^2\\left(q^2+q\\right)=l \\in \\mathbf{Q}, b=\\sqrt{\\frac{l}{q^2+q}}=\\sqrt{\\frac{m}{k}}, m, k \\in \\mathbf{N}$. 令 $n=m k$, 得 $b \\sqrt{n}=m \\in \\mathbf{Q}$. 故对任何 $c \\in M$, 有 $c \\sqrt{n}=\\frac{c}{b} \\cdot b \\sqrt{n} \\in \\mathbf{Q}$.",
+    "remark": "",
+    "figures": []
+}

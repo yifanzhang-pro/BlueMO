@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 若图 $G$ 有 $n$ 个顶点, $n-1$ 条边, 则 $G$ 为树.\n这个命题正确吗? 为什么?",
+    "solution": "命题不正确, 取 $K_3$ 与一个孤立点 (和图中其他点都不相邻的点) 组成图 $G$. 则 $G$ 有 4 个顶点 3 条边, 它不连通, 显然不是树.",
+    "remark": "",
+    "figures": []
+}

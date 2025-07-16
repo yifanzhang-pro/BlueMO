@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题1 已知集合 $M=\\{2,|a|\\}$ 是全集 $U=\\left\\{2,3, a^2+2 a+2\\right\\}$ 的一个子集, 且 $\\complement_U M=\\{5\\}$, 则实数 $a$ 的值等于",
+    "solution": "-3 . $|a|=3$, 且 $a^2+2 a+2=5$. 解得 $a=-3$.",
+    "remark": "",
+    "figures": []
+}

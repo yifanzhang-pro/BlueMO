@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例29 设 $f(x)$ 是定义在 $\\mathbf{R}$ 上的函数, 若 $f(0)=2008$, 且对任意 $x \\in \\mathbf{R}$, 满足\n$$\nf(x+2)-f(x) \\leqslant 3 \\cdot 2^x, f(x+6)-f(x) \\geqslant 63 \\cdot 2^x,\n$$\n求 $f(2008)$ 的值.",
+    "solution": "解:法一由题设条件知\n$$\n\\begin{aligned}\nf(x+2)-f(x)= & -(f(x+4)-f(x+2))-(f(x+6)-f(x+4))+ \\\\\n& (f(x+6)-f(x)) \\\\\n\\geqslant & -3 \\cdot 2^{x+2}-3 \\cdot 2^{x+4}+63 \\cdot 2^x=3 \\cdot 2^x,\n\\end{aligned}\n$$\n因此有 $f(x+2)-f(x)=3 \\cdot 2^x$, 故\n$$\n\\begin{aligned}\nf(2008)= & f(2008)-f(2006)+f(2006)-f(2004)+\\cdots+ \\\\\n& f(2)-f(0)+f(0) \\\\\n= & 3 \\cdot\\left(2^{2006}+2^{2004}+\\cdots+2^2+1\\right)+f(0) \\\\\n= & 3 \\cdot \\frac{4^{1003+1}-1}{4-1}+f(0) \\\\\n= & 2^{2008}+2007 .\n\\end{aligned}\n$$\n解法二令 $g(x)=f(x)-2^x$, 则\n$$\n\\begin{aligned}\n& g(x+2)-g(x)=f(x+2)-f(x)-2^{x+2}+2^x \\leqslant 3 \\cdot 2^x-3 \\cdot 2^x=0, \\\\\n& g(x+6)-g(x)=f(x+6)-f(x)-2^{x+6}+2^x \\geqslant 63 \\cdot 2^x-63 \\cdot 2^x=0,\n\\end{aligned}\n$$\n即\n$$\ng(x+2) \\leqslant g(x), g(x+6) \\geqslant g(x),\n$$\n故 $\\quad g(x) \\leqslant g(x+6) \\leqslant g(x+4) \\leqslant g(x+2) \\leqslant g(x)$,\n得 $g(x)$ 是周期为 2 的周期函数,所以\n$$\nf(2008)=g(2008)+2^{2008}=g(0)+2^{2008}=2^{2008}+2007 .\n$$",
+    "remark": "",
+    "figures": []
+}

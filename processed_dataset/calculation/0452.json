@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise19.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 对于黑板上的 100 个数 $1, \\frac{1}{2}, \\cdots, \\frac{1}{100}$, 每次任意选定两数 $a, b$ 擦去,同时补上 $a+b+a b$, 共操作 99 次, 求最后剩下的那个数.",
+    "solution": "考虑到 $(1+a)(1+b)=1+a+b+a b$, 因此操作前后 $\\prod_{i=1}^n\\left(1+a_i\\right)$ 保持不变, 其中 $n$ 为黑板上数的个数, $a_1, a_2, \\cdots, a_n$ 为这 $n$ 个数的值.\n设最后剩下的数为 $x$, 则\n$$\nx+1=\\prod_{i=1}^{100}\\left(1+\\frac{1}{i}\\right)=\\prod_{i=1}^{100} \\frac{i+1}{i}=101,\n$$\n所以 $x=100$.",
+    "remark": "",
+    "figures": []
+}

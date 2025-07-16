@@ -1,0 +1,83 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 证明: 连续四个正整数之积不能是一个完全平方数.
+%%<SOLUTION>%%
+设 $x(x+1)(x+2)(x+3)=y^2, x 、 y$ 都是正整数.
+则有
+$$
+\left(x^2+3 x+1\right)^2-y^2=1,
+$$
+易知这不可能.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 求出所有可以表示为两个整数平方差的整数.
+%%<SOLUTION>%%
+设整数 $n$ 可表示为两个整数的平方差: $n=x^2-y^2$, 即 $n=(x-y) (x+y)$. 由于 $x-y$ 与 $x+y$ 的奇偶相同,故或者 $n$ 是奇数,或者 $n$ 被 4 整除.
+反过来, 若 $n$ 为奇数, 可取 $x-y=1, x+y=n$, 即 $x=\frac{n+1}{2}, y=\frac{n-1}{2}$; 若
+$4 \mid n$, 可取 $x-y=2, x+y=\frac{n}{2}$, 即 $x=\frac{n}{4}+1, y=\frac{n}{4}-1$, 则 $x^2-y^2=n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 求不定方程组
+$$
+\left\{\begin{array}{l}
+x+y+z=3 \\
+x^3+y^3+z^3=3
+\end{array}\right.
+$$
+的全部整数解.
+%%<SOLUTION>%%
+从方程组中消去 $z$, 得到
+$$
+8-9 x-9 z+3 x^2+6 x y+3 y^2-x^2 y-x y^2=0,
+$$
+变形为
+$$
+8-3 x(3-x)-3 y(3-x)+x y(3-x)+y^2(3-x)=0,
+$$
+即 $(3-x)\left(3 x+3 y-x y-y^2\right)=8$. 故 $(3-x) \mid 8$, 从而 $3-x= \pm 1, \pm 2$, $\pm 4, \pm 8$, 即 $x=-5,-1,1,2,4,5,7,11$. 逐一代入原方程组检验, 可求出全部整数解为 $(x, y, z)=(1,1,1),(-5,4,4),(4,-5,4),(4,4,-5)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 求 $x^3=y^3+2 y^2+1$ 的全部整数解.
+%%<SOLUTION>%%
+首先注意, 若 $y^2+3 y>0$, 则由原方程推出 $(y+1)^3>x^3>y^3$, 即 $x^3$ 介于两个相邻的完全立方之间, 这不可能.
+故必有 $y^2+3 y \leqslant 0$, 得整数 $y= -3,-2,-1,0$. 代入原方程检验, 可求得全部整数解为 $(x, y)=(1,0)$, $(1,-2),(-2,-3)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 求所有正整数 $x 、 y$, 使 $x^2+3 y, y^2+3 x$ 均是完全平方数.
+%%<SOLUTION>%%
+设 $\left\{\begin{array}{l}x^2+3 y=u^2, \\ y^2+3 x=v^2,\end{array}\right.$ 由于 $x, y$ 为正整数,故 $u>x, v>y$. 我们设 $u= x+a, v=y+b$, 这里 $a 、 b$ 为正整数.
+由
+$$
+\left\{\begin{array}{l}
+x^2+3 y=(x+a)^2, \\
+y^2+3 x=(y+b)^2
+\end{array}\right.
+$$
+可化为
+$$
+\left\{\begin{array}{l}
+3 y=2 a x+a^2, \\
+3 x=2 b y+b^2 .
+\end{array}\right.
+$$
+故 $9-4ab>0$, 因 $a 、 b$ 为正整数, 故 $a b=1$ 或 2 , 即 $(a, b)=(1,1),(1,2)$, $(2,1)$. 相应地求得 $(x, y)=(1,1),(16,11),(11,16)$.
+%%PROBLEM_END%%
+
+

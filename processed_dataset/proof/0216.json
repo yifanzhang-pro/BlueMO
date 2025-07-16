@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例1. 若 $n \\equiv 4(\\bmod 9)$, 证明不定方程\n$$\nx^3+y^3+z^3=n . \\label{eq1}\n$$\n没有整数解 $(x, y, z)$.",
+    "solution": "证明:若方程式\\ref{eq1}有整数解, 则式\\ref{eq1}模 9 也有整数解.\n熟知, 一完全立方模 9 同余于 $0,1,-1$ 之一,因而\n$$\nx^3+y^3+z^3 \\equiv 0,1,2,3,6,7,8(\\bmod 9) .\n$$\n但 $n \\equiv 4(\\bmod 9)$, 所以 式\\ref{eq1}模 9 无解, 这与前面所说的相违, 故方程 式\\ref{eq1}无整数解.\n用同余处理不定方程, 核心在于选择适当的模.",
+    "remark": "",
+    "figures": []
+}

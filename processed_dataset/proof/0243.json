@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 证明: 连续四个正整数之积不能是一个完全平方数.",
+    "solution": "设 $x(x+1)(x+2)(x+3)=y^2, x 、 y$ 都是正整数.\n则有\n$$\n\\left(x^2+3 x+1\\right)^2-y^2=1,\n$$\n易知这不可能.",
+    "remark": "",
+    "figures": []
+}

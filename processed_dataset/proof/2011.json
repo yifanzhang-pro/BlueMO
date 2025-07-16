@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "Shum 的最小圆问题.\n这里介绍组合几何的一个计数极值问题, 它是 George F. Shum 在 Amer. Math. Monthly (1978,824,E2746) 上提出的一个公开问题(提出时无解答).\n问题设 $\\tau=\\left\\{A_1, A_2, \\cdots, A_n\\right\\}$ 是平面上 $n$ 个不共线的点的集合.\n若一个中心在 $O$, 半径为 $r$ 的圆过 $\\tau$ 中至少三个点, 且 $A_k O \\leqslant r$ 对所有 $k \\in\\{1,2$, $\\cdots, n\\}$ 都成立,则称这个圆是点集 $\\tau$ 的一个最小圆.\n对固定的 $n$, 问 $\\tau$ 的最小圆最多有多少个?\n这里我们分别介绍三种解法.",
+    "solution": "解法 1 问题的答案是 $n-2$.\n首先注意到出现在最小圆上的点 $A_i$ 一定在 $\\left\\{A_i\\right\\}$ 的凸包的边界上, 因此我们可假定这 $n$ 个点是一个凸 $n$ 边形 $P_n$ 的 $n$ 个顶点.\n假设 $A_i$ 和 $A_j$ 在最小圆 $C_1$ 上,而 $A_k$ 和 $A_h$ 在最小圆 $C_2$ 上.\n若线段 $A_i A_j$ 和 $A_k A_h$ 相交 (有公共内点), 则 $C_1=C_2$. 为了看出这一点, 只需考虑凸四边形 $Q=A_i A_k A_j A_h$. 因 $Q$ 在 $C_1$ 内,所以\n$$\n\\angle A_k A_j A_h+\\angle A_h A_i A_k \\leqslant 180^{\\circ}, \\label{eq1}\n$$\n又因 $Q$ 在 $C_2$ 内,所以\n$$\n\\angle A_i A_k A_j+\\angle A_j A_h A_i \\leqslant 180^{\\circ}, \\label{eq2}\n$$\n式\\ref{eq1}、\\ref{eq2}相加便得 $Q$ 的四个内角之和小于等于 $360^{\\circ}$, 因此式\\ref{eq1}、\\ref{eq2}必须同时取等号, 因此 $Q$ 是一个圆的内接四边形.\n这样可知决定不同最小圆的三角形的边没有交点 (公共内点). 因为 $P_n$ 最多能剖分成 $n-2$ 个没有公共内点且以原顶点为顶点的三角形, 因此 $P_n$ 的最小圆最多有 $n-2$ 个.\n下面证明 $n-2$ 个最小圆是可以达到的.\n我们归纳构造 $n$ 元点集 $\\left\\{A_k\\right\\}$ 使得它的所有最小圆是过 $A_1 、 A_{k-1} 、 A_k$ 的外接圆 $C_k(k=3, \\cdots, n)$. 首先选择非共线的三点组 $A_1 、 A_2 、 A_3$. 现假设 $A_1, \\cdots, A_k(k \\geqslant 3)$ 已被选择好, 它们的最小圆为 $C_3, \\cdots, C_k$. 现在以弦 $A_1 A_k$ 和圆 $C_k$ 上不包含点 $A_{k-1}$ 的弧所形成的区域 $S_k$ 中取一个内点作为 $A_{k+1}$, 如图(<FilePath:./images/volume9/figures/fig-c10i1.png>), 则圆 $C_{k+1}$ 包含 $S_k$ 在圆 $C_k$ 中的补集 $S_k^{\\prime}$, 因此包含了所有点 $A_1, \\cdots, A_{k+1}$. 另一方面, 我们有\n$$\nS_3 \\supset S_4 \\supset \\cdots \\supset S_k .\n$$\n因此 $A_k$ 都位于圆 $C_i$ 内 $(i=1,2, \\cdots, k)$. 这样我们就达到了目标.\n实际上不难看出, 没有四个顶点共圆的任何凸 $n$ 边形都存在 $n-2$ 个最小圆.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c10i1.png"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter3.tex",
+    "text": "3.3 函数 $f(x)=x+\\frac{a^2}{x}$\n函数 $f(x)=x+\\frac{a^2}{x}(a>0)$ 具有很广泛的应用,下面我们来讨论它的一些性质.\n$f(x)=x+\\frac{a^2}{x}$ 的定义域为 $(-\\infty, 0) \\cup(0,+\\infty)$.\n当 $x>0$ 时, $f(x)=x+\\frac{a^2}{x} \\geqslant 2 a$;\n当 $x=a$ 时,等号成立;\n当 $x<0$ 时, $f(x)=-\\left((-x)+\\frac{a^2}{(-x)}\\right) \\leqslant-2 a$;\n当 $x=-a$ 时等号成立.\n所以, $f(x)=x+\\frac{a^2}{x}$ 的值域为 $(-\\infty,-2 a] \\cup[2 a,+\\infty)$.\n易知 $f(x)=x+\\frac{a^2}{x}$ 是奇函数.\n设 $x_1, x_2 \\in(0,+\\infty)$, 则\n$$\n\\begin{aligned}\nf\\left(x_2\\right)-f\\left(x_1\\right) & =\\left(x_2-x_1\\right)+a^2\\left(\\frac{1}{x_2}-\\frac{1}{x_1}\\right) \\\\\n& =\\left(x_2-x_1\\right)\\left(1-\\frac{a^2}{x_1 x_2}\\right) .\n\\end{aligned}\n$$\n当 $0<x_1<x_2 \\leqslant a$ 时, 得 $f\\left(x_2\\right)-f\\left(x_1\\right)<0$ ；\n当 $a \\leqslant x_1<x_2$ 时, 得 $f\\left(x_2\\right)-f\\left(x_1\\right)>0$.\n所以, $f(x)=x+\\frac{a^2}{x}(a>0)$ 在 $(0, a]$ 上是单调递减的, 在 $[a,+\\infty)$ 上是单调递增的.\n用同样的方法可知, $f(x)=x+\\frac{a^2}{x}(a>0)$ 在 $(-\\infty,-a]$ 上是单调递增的, 在 $[-a, 0)$ 上是单调递减的.\n函数 $f(x)=x+\\frac{a^2}{x}(a>0)$ 的图象如图 (<FilePath:./images/volume2/figures/fig-c3d3.png>) 所示.",
+    "figures": [
+        "./images/volume2/figures/fig-c3d3.png"
+    ]
+}

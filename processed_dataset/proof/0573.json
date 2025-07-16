@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例4. 一群童子军, 年龄是 7 到 13 的整数, 来自 11 个国家.\n求证: 至少有 5 个孩子, 对其中的任何一个孩子, 在童子军中与其同年龄的人多于同国籍的人.",
+    "solution": "证明:虑加权的元素关系表:\n\\begin{tabular}{|c|c|c|c|c|}\n\\hline & $A_1$ & $A_2$ & $\\cdots$ & $A_{11}$ \\\\\n\\hline 7 & $a_{7,1}$ & $a_{7,2}$ & $\\cdots$ & $a_{7,11}$ \\\\\n\\hline 8 & $a_{8,1}$ & $a_{8,2}$ & $\\cdots$ & $a_{8,11}$ \\\\\n\\hline$\\vdots$ & $\\vdots$ & $\\vdots$ & $\\vdots$ & $\\vdots$ \\\\\n\\hline 13 & $a_{13,1}$ & $a_{13,2}$ & $\\cdots$ & $a_{13,11}$ \\\\\n\\hline\n\\end{tabular}\n其中 $A_j$ 是来自第 $j$ 个国家的人的集合, $a_{i j}$ 是第 $j$ 国中年龄为 $i$ 岁的人数.\n令第 $i$ 行的和为 $r_i$, 第 $j$ 列的和为 $t_j$, 则\n$$\n\\begin{aligned}\n\\sum_{i=7}^{13} \\sum_{j=1}^{11} a_{i j}\\left(\\frac{1}{t_j}-\\frac{1}{r_i}\\right) & =\\sum_{i=7}^{13} \\sum_{j=1}^{11} \\frac{a_{i j}}{t_j}-\\sum_{i=7}^{13} \\sum_{j=1}^{11} \\frac{a_{i j}}{r_i} \\\\\n& =\\sum_{j=1}^{11} \\frac{1}{t_j} \\sum_{i=7}^{13} a_{i j}-\\sum_{i=7}^{13} \\frac{1}{r_i} \\sum_{j=1}^{11} a_{i j} \\\\\n& =\\sum_{j=1}^{11}\\left(\\frac{1}{t_j} \\cdot t_j\\right)-\\sum_{i=7}^{13}\\left(\\frac{1}{r_i} \\cdot r_i\\right) \\\\\n& =\\sum_{j=1}^{11} 1-\\sum_{i=7}^{13} 1=4 .\n\\end{aligned}\n$$\n由于 $\\frac{1}{t_j}-\\frac{1}{r_i}<1$, 将上式中 $a_{i j}\\left(\\frac{1}{t_j}-\\frac{1}{r_i}\\right)$ 看作是 $a_{i j}$ 个 \" $\\frac{1}{t_j}-\\frac{1}{r_i}$ \" 的和, 那么, 上式中至少有 5 个这样的 $\\frac{1}{t_j}-\\frac{1}{r_i}$ 为正, 从而至少有 5 个孩子合乎要求.",
+    "remark": "",
+    "figures": []
+}

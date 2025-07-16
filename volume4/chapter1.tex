@@ -1,0 +1,743 @@
+
+%%TEXT_BEGIN%%
+平均值不等式及其证明.
+平均值不等式是最基本的重要不等式之一, 在不等式理论研究和证明中占有重要的位置.
+平均值不等式的证明有许多种方法.
+这里, 我们选了部分具有代表意义的证明方法, 其中用来证明平均值不等式的许多结论, 其本身又具有重要的意义.
+特别是, 在许多竞赛的书籍中, 都有专门的章节介绍和讨论, 如数学归纳法、变量替换、恒等变形和分析综合方法等, 这些也是证明不等式的常用方法和技巧.
+希望大家能认真思考和好好掌握, 熟悉不等式的证明.
+1.1 平均值不等式.
+对任意非负实数 $a 、 b$,有
+$$
+(\sqrt{a}-\sqrt{b})^2 \geqslant 0,
+$$
+于是, 得
+$$
+\frac{a+b}{2} \geqslant \sqrt{a b}
+$$
+一般地, 假设 $a_1, a_2, \cdots, a_n$ 为 $n$ 个非负实数, 它们的算术平均值记为
+$$
+A_n=\frac{a_1+a_2+\cdots+a_n}{n},
+$$
+几何平均值记为
+$$
+G_n=\left(a_1 a_2 \cdots a_n\right)^{\frac{1}{n}}=\sqrt[n]{a_1 a_2 \cdots a_n} .
+$$
+算术平均值与几何平均值之间有如下的关系
+$$
+\frac{a_1+a_2+\cdots+a_n}{n} \geqslant \sqrt[n]{a_1 a_2 \cdots a_n},
+$$
+即
+$$
+A_n \geqslant G_n,
+$$
+当且仅当 $a_1=a_2=\cdots=a_n$ 时,等号成立.
+上述不等式称为平均值不等式,或简称为均值不等式.
+平均值不等式的表达形式简单, 容易记住, 但它的证明和应用非常灵活、 广泛, 有多种不同的方法.
+为使大家理解和掌握, 这里我们选择了其中的几种典型的证明方法.
+当然, 有些方法是几个知识点的结合, 很难将它们归类, 有些大体相同或相似,但选择的变量不同, 或处理的方式不同, 导致证明的难易不同,所以,我们将它们看作是不同的方法.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+平均值不等式的证明.
+一般地, 假设 $a_1, a_2, \cdots, a_n$ 为 $n$ 个非负实数, 它们的算术平均值记为
+$$
+A_n=\frac{a_1+a_2+\cdots+a_n}{n},
+$$
+几何平均值记为
+$$
+G_n=\left(a_1 a_2 \cdots a_n\right)^{\frac{1}{n}}=\sqrt[n]{a_1 a_2 \cdots a_n} .
+$$
+算术平均值与几何平均值之间有如下的关系
+$$
+\frac{a_1+a_2+\cdots+a_n}{n} \geqslant \sqrt[n]{a_1 a_2 \cdots a_n},
+$$
+即
+$$
+A_n \geqslant G_n,
+$$
+当且仅当 $a_1=a_2=\cdots=a_n$ 时,等号成立.
+证法一(归纳法)
+(1) 当 $n=2$ 时,已知结论成立.
+(2)假设对 $n=k$ (正整数 $k \geqslant 2$ ) 时命题成立, 即对于 $a_i>0, i=1$, $2, \cdots, k$, 有
+$$
+\left(a_1 a_2 \cdots a_k\right)^{\frac{1}{k}} \leqslant \frac{a_1+a_2+\cdots+a_k}{k} .
+$$
+那么, 当 $n=k+1$ 时, 由于
+$$
+A_{k+1}=\frac{a_1+a_2+\cdots+a_{k+1}}{k+1}, G_{k+1}=\sqrt[k+1]{a_1 a_2 \cdots a_k a_{k+1}},
+$$
+关于 $a_1, a_2, \cdots, a_{k+1}$ 是对称的,任意对调 $a_i$ 与 $a_j(i \neq j)$, 即将 $a_i$ 写成 $a_j, a_j$ 写成 $a_i, A_{k+1}$ 和 $G_{k+1}$ 的值不改变, 因此不妨设 $a_1=\min \left\{a_1, a_2, \cdots, a_{k+1}\right\}$, $a_{k+1}=\max \left\{a_1, a_2, \cdots, a_{k+1}\right\}$, 显然 $a_1 \leqslant A_{k+1} \leqslant a_{k+1}$, 以及
+$$
+A_{k+1}\left(a_1+a_{k+1}-A_{k+1}\right)-a_1 a_{k+1}=\left(a_1-A_{k+1}\right)\left(A_{k+1}-a_{k+1}\right) \geqslant 0,
+$$
+即
+$$
+A_{k+1}\left(a_1+a_{k+1}-A_{k+1}\right) \geqslant a_1 a_{k+1} \text {. }
+$$
+对 $k$ 个正数 $a_2, a_3, \cdots, a_k, a_1+a_{k+1}-A_{k+1}$, 由归纳假设, 得
+$$
+\frac{a_2+a_3+\cdots+a_k+\left(a_1+a_{k+1}-A_{k+1}\right)}{k} \geqslant \sqrt[k]{a_2 a_3 \cdots a_k\left(a_1+a_{k+1}-A_{k+1}\right)} .
+$$
+而
+$$
+\frac{a_2+a_3+\cdots+a_k+\left(a_1+a_{k+1}-A_{k+1}\right)}{k}=\frac{(k+1) A_{k+1}-A_{k+1}}{k}=A_{k+1},
+$$
+于是
+$$
+A_{k+1}^k \geqslant a_2 a_3 \cdots a_k\left(a_1+a_{k+1}-A_{k+1}\right) .
+$$
+两边乘以 $A_{k+1}$, 得
+$$
+A_{k+1}^{k+1} \geqslant a_2 a_3 \cdots a_k A_{k+1}\left(a_1+a_{k+1}-A_{k+1}\right) \geqslant a_2 a_3 \cdots a_k\left(a_1 a_{k+1}\right)=G_{k+1}^{k+1} .
+$$
+从而, 有 $A_{k+1} \geqslant G_{k+1}$.
+直接验证可知, 当且仅当所有的 $a_i$ 相等时等号成立, 故命题成立.
+说明这里, 利用了证明与正整数有关的命题的常用方法, 即数学归纳法.
+数学归纳法证题技巧的应用, 可以说是五彩缤纷, 千姿百态.
+应用数学归纳法, 除了需要验证当 $n=1$ 或 $n=n_0$ (这里 $n_0$ 为某个固定的正整数)外, 其关键是要在 $n=k$ 时成立的假设之下, 导出当 $n=k+1$ 时命题也成立, 要完成这一步,需要一定的技巧和处理问题的能力, 只有通过多做练习来实现理解和掌握.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+平均值不等式的证明.
+一般地, 假设 $a_1, a_2, \cdots, a_n$ 为 $n$ 个非负实数, 它们的算术平均值记为
+$$
+A_n=\frac{a_1+a_2+\cdots+a_n}{n},
+$$
+几何平均值记为
+$$
+G_n=\left(a_1 a_2 \cdots a_n\right)^{\frac{1}{n}}=\sqrt[n]{a_1 a_2 \cdots a_n} .
+$$
+算术平均值与几何平均值之间有如下的关系
+$$
+\frac{a_1+a_2+\cdots+a_n}{n} \geqslant \sqrt[n]{a_1 a_2 \cdots a_n},
+$$
+即
+$$
+A_n \geqslant G_n,
+$$
+当且仅当 $a_1=a_2=\cdots=a_n$ 时,等号成立.
+证法二(归纳法,与证法一的不同处理)
+(1)当 $n=2$ 时,已知结论成立.
+(2)假设对 $n=k$ (正整数 $k \geqslant 2$ ) 时命题成立, 即对于 $a_i>0, i=1$, $2, \cdots, k$, 有
+$$
+\left(a_1 a_2 \cdots a_k\right)^{\frac{1}{k}} \leqslant \frac{a_1+a_2+\cdots+a_k}{k} .
+$$
+那么, 当 $n=k+1$ 时,
+$$
+\begin{aligned}
+& a_1+a_2+\cdots+a_k+a_{k+1} \\
+= & a_1+a_2+\cdots+a_k+\left(a_{k+1}+G_{k+1+\cdots+}^{(k-1) \uparrow G_{k+1}} G_{k+1}\right)-(k-1) G_{k+1} \\
+\geqslant & k \sqrt[k]{a_1 a_2 \cdots a_k}+k \sqrt[k]{a_{k+1} G_{k+1}^{k-1}}-(k-1) G_{k+1} \\
+\geqslant & 2 k \sqrt{\sqrt[k]{a_1 a_2 \cdots a_k} \sqrt[k]{a_{k+1} G_{k+1}^{k-1}}}-(k-1) G_{k+1} \\
+= & 2 k \sqrt[2 k]{a_1 a_2 \cdots a_{k+1} G_{k+1}^{k-1}}-(k-1) G_{k+1} \\
+= & 2 k \sqrt[2 k]{G_{k+1}^{k+1} G_{k+1}^{k-1}}-(k-1) G_{k+1} \\
+= & (k+1) G_{k+1}
+\end{aligned}
+$$
+于是 $A_{k+1} \geqslant G_{k+1}$.
+不难看出,当且仅当所有的 $a_i$ 相等时等号成立,故命题成立.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+平均值不等式的证明.
+一般地, 假设 $a_1, a_2, \cdots, a_n$ 为 $n$ 个非负实数, 它们的算术平均值记为
+$$
+A_n=\frac{a_1+a_2+\cdots+a_n}{n},
+$$
+几何平均值记为
+$$
+G_n=\left(a_1 a_2 \cdots a_n\right)^{\frac{1}{n}}=\sqrt[n]{a_1 a_2 \cdots a_n} .
+$$
+算术平均值与几何平均值之间有如下的关系
+$$
+\frac{a_1+a_2+\cdots+a_n}{n} \geqslant \sqrt[n]{a_1 a_2 \cdots a_n},
+$$
+即
+$$
+A_n \geqslant G_n,
+$$
+当且仅当 $a_1=a_2=\cdots=a_n$ 时,等号成立.
+证法三 (归纳法, 另一种处理方式)
+(1)当 $n=2$ 时,已知结论成立.
+(2)假设对 $n=k$ (正整数 $k \geqslant 2$ ) 时命题成立, 即对于 $a_i>0, i=1$, $2, \cdots, k$, 有
+$$
+\left(a_1 a_2 \cdots a_k\right)^{\frac{1}{k}} \leqslant \frac{a_1+a_2+\cdots+a_k}{k} .
+$$
+那么, 当 $n=k+1$ 时,
+$$
+\begin{aligned}
+A_{k+1} & =\frac{1}{2 k}\left[(k+1) A_{k+1}+(k-1) A_{k+1}\right] \\
+& =\frac{1}{2 k}(a_1+a_2+\cdots+a_{k+1}+\underbrace{}_{\frac{N_{k+1}-1 \uparrow}{A_{k+1}}+A_{k+1}+\cdots+A_{k+1}}) \\
+& \geqslant \frac{1}{2 k}\left(k \sqrt[k]{a_1 a_2 \cdots a_k}+k \sqrt[k]{a_{k+1} A_{k+1}^{k-1}}\right) \geqslant \sqrt[2 k]{a_1 a_2 \cdots a_k a_{k+1} A_{k+1}^{k-1}} .
+\end{aligned}
+$$
+所以 $A_{k+1}^{2 k} \geqslant a_1 a_2 \cdots a_{k+1} A_{k+1}^{k-1}$, 故得 $A_{k+1} \geqslant G_{k+1}$.
+说明.
+在上面的证明中, 将 $A_{k+1}$ 表示为 $A_{k+1}=\frac{1}{2 k}\left[(k+1) A_{k+1}+(k-\right.$ 1) $\left.A_{k+1}\right]$ 是一步较为关键和重要的变形技巧.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+平均值不等式的证明.
+一般地, 假设 $a_1, a_2, \cdots, a_n$ 为 $n$ 个非负实数, 它们的算术平均值记为
+$$
+A_n=\frac{a_1+a_2+\cdots+a_n}{n},
+$$
+几何平均值记为
+$$
+G_n=\left(a_1 a_2 \cdots a_n\right)^{\frac{1}{n}}=\sqrt[n]{a_1 a_2 \cdots a_n} .
+$$
+算术平均值与几何平均值之间有如下的关系
+$$
+\frac{a_1+a_2+\cdots+a_n}{n} \geqslant \sqrt[n]{a_1 a_2 \cdots a_n},
+$$
+即
+$$
+A_n \geqslant G_n,
+$$
+当且仅当 $a_1=a_2=\cdots=a_n$ 时,等号成立.
+证法四 (归纳法和变换)
+在证明原命题之前, 首先令
+$$
+y_1=\frac{a_1}{G_n}, y_2=\frac{a_2}{G_n}, \cdots, y_n==\frac{a_n}{G_n},
+$$
+其中 $G_n=\sqrt[n]{a_1 a_2 \cdots a_n}$, 则 $y_1 y_2 \cdots y_n=1\left(y_i>0\right)$, 且平均值不等式等价于
+$$
+y_1+y_2+\cdots+y_n \geqslant n \text {. }
+$$
+即在条件 $y_1 y_2 \cdots y_n=1\left(y_i>0\right)$ 之下, 证明 $y_1+y_2+\cdots+y_n \geqslant n$.
+我们用归纳法证明上述不等式.
+(1)当 $n=-1$ 时, $y_1=1 \geqslant 1$, 显然成立.
+(2)假设当 $n=k$ 时不等式成立,则对于 $n=k+1$, 由于 $y_1 y_2 \cdots y_n=1 \left(y_i>0\right)$, 那么 $y_i$ 中必有大于或等于 1 者, 也有小于或等于 1 者, 不妨设 $y_k \geqslant 1, y_{k+1} \leqslant 1$, 并令 $y=y_k y_{k+1}$, 则 $y_1 y_2 \cdots y_{k-1} y=1$, 从而由归纳假设, 得
+$$
+y_1+y_2+\cdots+y_{k-1}+y \geqslant k \text {. }
+$$
+于是
+$$
+\begin{aligned}
+& y_1+y_2+\cdots+y_{k-1}+y_k+y_{k+1} \\
+\geqslant & k+y_k+y_{k+1}-y_k y_{k+1} \\
+= & k+1+\left(y_k-1\right)\left(1-y_{k+1}\right) \\
+\geqslant & k+1 .
+\end{aligned}
+$$
+不难看出, 当且仅当 $y_1=y_2=\cdots=y_n=1$, 从而 $a_1=a_2=\cdots=a_n$ 时, 等号成立.
+故当 $n=k+1$ 时,命题也成立.
+说明通过变量替换,将原问题化为一个与正整数有关的形式简单的不等式,在证明中运用了我们比较熟悉的手段和技巧.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+平均值不等式的证明.
+一般地, 假设 $a_1, a_2, \cdots, a_n$ 为 $n$ 个非负实数, 它们的算术平均值记为
+$$
+A_n=\frac{a_1+a_2+\cdots+a_n}{n},
+$$
+几何平均值记为
+$$
+G_n=\left(a_1 a_2 \cdots a_n\right)^{\frac{1}{n}}=\sqrt[n]{a_1 a_2 \cdots a_n} .
+$$
+算术平均值与几何平均值之间有如下的关系
+$$
+\frac{a_1+a_2+\cdots+a_n}{n} \geqslant \sqrt[n]{a_1 a_2 \cdots a_n},
+$$
+即
+$$
+A_n \geqslant G_n,
+$$
+当且仅当 $a_1=a_2=\cdots=a_n$ 时,等号成立.
+证法五 (归纳法和二项展开式)
+(1) 当 $n=2$ 时,已知结论成立.
+(2)假设对 $n=k$ (正整数 $k \geqslant 2$ ) 时命题成立, 即对于 $a_i>0, i=1$, $2, \cdots, k$, 有
+$$
+\left(a_1 a_2 \cdots a_k\right)^{\frac{1}{k}} \leqslant \frac{a_1+a_2+\cdots+a_k}{k} .
+$$
+那么, 当 $n=k+1$ 时, 不妨假设 $a_{k+1}=\max \left\{a_1, a_2, \cdots, a_{k+1}\right\}$, 于是由归纳假设, 得
+$$
+a_{k+1} \geqslant \frac{a_1+a_2+\cdots+a_k}{k}=A_k \geqslant G_k=\sqrt[k]{a_1 a_2 \cdots a_k} .
+$$
+从而, 得
+$$
+A_{k+1}^{k+1}=\left(\frac{a_1+a_2+\cdots+a_k+a_{k+1}}{k+1}\right)^{k+1}=\left(\frac{k A_k+a_{k+1}}{k+1}\right)^{k+1}=\left(A_k+\frac{a_{k+1}-A_k}{k+1}\right)^{k+1}
+$$
+$$
+\begin{aligned}
+& =A_k^{k+1}+(k+1) A_k^k\left(\frac{a_{k+1}-A_k}{k+1}\right)+\cdots+\left(\frac{a_{k+1}-A_k}{k+1}\right)^{k+1} \\
+& \geqslant A_k^{k+1}+(k+1) A_k^k\left(\frac{a_{k+1}-A_k}{k+1}\right)=A_k^{k+1}+A_k^k\left(a_{k+1}-A_k\right) \\
+& =A_k^k a_{k+1} \geqslant G_k^k a_{k+1}=a_1 a_2 \cdots a_k a_{k+1} \\
+& =G_{k+1}^{k+1} .
+\end{aligned}
+$$
+所以 $A_{k+1} \geqslant G_{k+1}$.
+不难看出, 当且仅当所有的 $a_i$ 相等时等号成立,故命题成立.
+说明在证明过程中, 考虑 $A_{k+1}^{k+1}$, 并通过一定的处理和运算, 导出所需要的结果.
+有时候可能利用到其他的有用结论.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+平均值不等式的证明.
+一般地, 假设 $a_1, a_2, \cdots, a_n$ 为 $n$ 个非负实数, 它们的算术平均值记为
+$$
+A_n=\frac{a_1+a_2+\cdots+a_n}{n},
+$$
+几何平均值记为
+$$
+G_n=\left(a_1 a_2 \cdots a_n\right)^{\frac{1}{n}}=\sqrt[n]{a_1 a_2 \cdots a_n} .
+$$
+算术平均值与几何平均值之间有如下的关系
+$$
+\frac{a_1+a_2+\cdots+a_n}{n} \geqslant \sqrt[n]{a_1 a_2 \cdots a_n},
+$$
+即
+$$
+A_n \geqslant G_n,
+$$
+当且仅当 $a_1=a_2=\cdots=a_n$ 时,等号成立.
+证法六 (倒向归纳法)
+倒向归纳法, 也称 "留空回填" 法.
+基本思想是先对自然数的一个子列 $\left\{n_m\right\}$ 证明命题成立, 然后再回过来证明 $\{n\} \backslash\left\{n_m\right\}$ 相应的命题成立.
+首先证明当 $n=2^m$ ( $m$ 为正整数) 时, 平均值不等式成立.
+为此, 对 $m$ 用数学归纳法.
+当 $m=1$ 时,显然有 $\sqrt{a_1 a_2} \leqslant \frac{a_1+a_2}{2}$.
+假设 $m=k$ 时命题成立,则当 $m=k+1$ 时,
+$$
+\begin{aligned}
+& \sqrt[2^{k+1}]{a_1 a_2 \cdots a_{2^k} a_{2^k+1} \cdots a_{2^{k+1}}} \\
+& =\sqrt{\sqrt[2^k]{a_1 a_2 \cdots a_{2^k}} \sqrt[2^k]{a_{2^k+1} \cdots a_{2^{k+1}}}} \\
+& \leqslant \frac{1}{2}\left(\sqrt[2^k]{a_1 a_2 \cdots a_{2^k}}+\sqrt[2^k]{a_{2^k+1} \cdots a_{2^{k+1}}}\right) \\
+& \leqslant \frac{1}{2}\left(\frac{a_1+a_2+\cdots+a_{2^k}}{2^k}+\frac{a_{2^k}+1+\cdots+a_{2^{k+1}}}{2^k}\right) \\
+& =\frac{a_1+a_2+\cdots+a_{2^k}+a_{2^k+1}+\cdots+a_{2^{k+1}}}{2^{k+1}} \text {. } \\
+&
+\end{aligned}
+$$
+所以对于具有 $n=2^m$ 形式的正整数 $n$, 平均值不等式成立, 即对无穷多个正整数 $2,4,8, \cdots, 2^m, \cdots$, 平均值不等式成立.
+现假设 $n=k+1$ 时, 平均值不等式成立.
+当 $n=k$ 时, $A_k= \frac{a_1+a_2+\cdots+a_k}{k}$, 则由假设,得
+$$
+\sqrt[k+1]{a_1 a_2 \cdots a_k A_k} \leqslant \frac{a_1+a_2+\cdots+a_k+A_k}{k+1}=\frac{k A_k+A_k}{k+1}=A_k,
+$$
+所以 $G_k \leqslant A_k$ ,也就是说当 $n=k$ 时命题也成立.
+综上可知, 对一切正整数 $n$, 平均值不等式成立.
+不难看出, 当且仅当所有的 $a_i$ 相等时等号成立,故命题成立.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+平均值不等式的证明.
+一般地, 假设 $a_1, a_2, \cdots, a_n$ 为 $n$ 个非负实数, 它们的算术平均值记为
+$$
+A_n=\frac{a_1+a_2+\cdots+a_n}{n},
+$$
+几何平均值记为
+$$
+G_n=\left(a_1 a_2 \cdots a_n\right)^{\frac{1}{n}}=\sqrt[n]{a_1 a_2 \cdots a_n} .
+$$
+算术平均值与几何平均值之间有如下的关系
+$$
+\frac{a_1+a_2+\cdots+a_n}{n} \geqslant \sqrt[n]{a_1 a_2 \cdots a_n},
+$$
+即
+$$
+A_n \geqslant G_n,
+$$
+当且仅当 $a_1=a_2=\cdots=a_n$ 时,等号成立.
+证法七(利用排序不等式)
+为了利用与上面不同的方法证明平均值不等式, 我们首先介绍和证明另一个重要的结论,即排序不等式.
+引理 1 (排序不等式) 设两个实数组 $a_1, a_2, \cdots, a_n$ 和 $b_1, b_2, \cdots, b_n$, 满足
+$$
+a_1 \leqslant a_2 \leqslant \cdots \leqslant a_n ; b_1 \leqslant b_2 \leqslant \cdots \leqslant b_n,
+$$
+则
+$a_1 b_1+a_2 b_2+\cdots+a_n b_n$ (同序乘积之和)
+$\geqslant a_1 b_{j_1}+a_2 b_{j_2}+\cdots+a_n b_{j_n}$ (乱序乘积之和)
+$\geqslant a_1 b_n+a_2 b_{n-1}+\cdots+a_n b_1$ (反序乘积之和)
+其中 $j_1, j_2, \cdots, j_n$ 是 $1,2, \cdots, n$ 的一个排列, 并且等号同时成立的充分必要条件是 $a_1=a_2=\cdots=a_n$ 或 $b_1=b_2=\cdots=b_n$ 成立.
+证明令 $A=a_1 b_{j_1}+a_2 b_{j_2}+\cdots+a_n b_{j_n}$. 如果 $j_n \neq n$, 且假设此时 $b_n$ 所在的项是 $a_{j_m} b_n$, 则由 $\left(b_n-b_{j_n}\right)\left(a_n-a_{j_m}\right) \geqslant 0$, 得
+$$
+a_n b_n+a_{j_m} b_{j_n} \geqslant a_{j_m} b_n+a_n b_{j_n},
+$$
+也就是说, $j_n \neq n$ 时, 调换 $A$ 中 $b_n$ 与 $b_{j_n}$ 的位置, 其余都不动, 则得到 $a_n b_n$ 项, 并使 $A$ 变为 $A_1$, 且 $A_1 \geqslant A$. 用同样的方法, 可以再得到 $a_{n-1} b_{n-1}$ 项, 并使 $A_1$ 变为 $A_2$, 且 $A_2 \geqslant A_1$.
+继续这个过程, 至多经过 $n-1$ 次调换, 得 $a_1 b_1+a_2 b_2+\cdots+a_n b_n$, 故
+$$
+a_1 b_1+a_2 b_2+\cdots+a_n b_n \geqslant A \text {. }
+$$
+同样可以证明 $A \geqslant a_1 b_n+a_2 b_{n-1}+\cdots+a_n b_1$.
+显然当 $a_1=a_2=\cdots=a_n$ 或 $b_1=b_2=\cdots=b_n$ 时,两个等号同时成立.
+反之, 如果 $\left\{a_1, a_2, \cdots, a_n\right\}$ 及 $\left\{b_1, b_2, \cdots, b_n\right\}$ 中的数都不全相同时, 则必有 $a_1 \neq a_n, b_1 \neq b_n$. 于是 $a_1 b_1+a_n b_n>a_1 b_n+a_n b_1$, 且 $a_2 b_2+\cdots+a_{n-1} b_{n-1} \geqslant a_2 b_{n-1}+\cdots+a_{n-1} b_2$, 从而有 $a_1 b_n+a_2 b_2+\cdots+a_n b_n>a_1 b_n+a_2 b_{n-1}+\cdots+ a_n b_1$. 故这两个等式中至少有一个不成立.
+现在,利用引理 1 证明平均值不等式.
+令 $y_k=\frac{a_1 a_2 \cdots a_k}{G_n^k}, k=1,2, \cdots, n$. 由排序不等式, 得
+$$
+\begin{aligned}
+& y_1 \times \frac{1}{y_1}+y_2 \times \frac{1}{y_2}+\cdots+y_n \times \frac{1}{y_n} \\
+\leqslant & y_1 \times \frac{1}{y_n}+y_2 \times \frac{1}{y_1}+\cdots+y_n \times \frac{1}{y_{n-1}} \\
+= & \frac{a_1+a_2+\cdots+a_n}{G_n}
+\end{aligned}
+$$
+所以 $A_n \geqslant G_n$.
+显然当 $a_1=a_2=\cdots=a_n$ 时, $A_n=G_n$. 如果 $a_1, a_2, \cdots, a_n$ 不全相等, 不妨设 $a_1 \neq a_2$, 令 $b=\frac{a_1+a_2}{2}$, 则 $a_1 a_2<b^2$, 且 $b+b=a_1+a_2$,
+$$
+G_n<\sqrt[n]{b \cdot b \cdot a_3 \cdots a_n} \leqslant \frac{b+b+a_3+\cdots+a_n}{n}=A_n .
+$$
+故当 $A_n=G_n$ 时必有 $a_1=a_2=\cdots=a_n$. 反之亦然.
+注:(1)我们可以类似于证法四,由 $G_n=\sqrt[n]{a_1 a_2 \cdots a_n}$, 令
+$$
+y_1=\frac{a_1}{G_n}, y_2=\frac{a_2}{G_n}, \cdots, y_n=\frac{a_n}{G_n} \text {, }
+$$
+则 $y_1 y_2 \cdots y_n=1\left(y_i>0\right)$, 且平均值不等式等价于
+$$
+y_1+y_2+\cdots+y_n \geqslant n \text {. }
+$$
+下面利用排序不等式证明这个不等式.
+任取 $x_1>0$, 再取 $x_2>0$, 使得 $y_1=\frac{x_1}{x_2}$, 再取 $x_3>0$, 使得 $y_2=\frac{x_2}{x_3}, \cdots$, 最后取 $x_n>0$, 使得 $y_{n-1}=\frac{x_{n-1}}{x_n}$. 所以
+$$
+y_n=\frac{1}{y_1 y_2 \cdots y_{n-1}}=\frac{1}{\frac{x_1}{x_2} \frac{x_2}{x_3} \cdots \frac{x_{n-1}}{x_n}}=\frac{x_n}{x_1} .
+$$
+由引理 1 , 得
+$$
+y_1+y_2+\cdots+y_n=\frac{x_1}{x_2}+\frac{x_2}{x_3}+\cdots+\frac{x_{n-1}}{x_n}+\frac{x_n}{x_1} \geqslant n .
+$$
+当且仅当 $x_1=x_2=\cdots=x_n$ 时等号成立, 从而当且仅当 $y_1=y_2=\cdots=y_n$ 时等号成立,所以当且仅当 $a_1=a_2=\cdots=a_n$ 时等号成立.
+(2) 排序不等式是一个重要的基本的不等式, 可以利用排序不等式直接证明许多其他有关的不等式.
+例如:
+契比雪夫不等式设 $a_1, a_2, \cdots, a_n, b_1, b_2, \cdots, b_n$ 满足 $a_1 \leqslant a_2 \leqslant \cdots \leqslant a_n, b_1 \leqslant b_2 \leqslant \cdots \leqslant b_n$, 则
+$$
+n \sum_{k=1}^n a_k b_{n-k+1} \leqslant \sum_{k=1}^n a_k \sum_{k=1}^n b_k \leqslant n \sum_{k=1}^n a_k b_k,
+$$
+当且仅当 $a_1=a_2=\cdots=a_n$ 或 $b_1=b_2=\cdots=b_n$ 时等号成立.
+证明显然
+$$
+\begin{aligned}
+& n \sum_{k=1}^n a_k b_k-\sum_{k=1}^n a_k \sum_{k=1}^n b_k \\
+= & \sum_{k=1}^n \sum_{j=1}^n\left(a_k b_k-a_k b_j\right)=\sum_{j=1}^n \sum_{k=1}^n\left(a_j b_j \rightarrow a_j b_k\right) \\
+= & \frac{1}{2} \sum_{k=1}^n \sum_{j=1}^n\left(a_k b_k+a_j b_j-a_k b_j-a_j b_k\right) \\
+= & \frac{1}{2} \sum_{k=1}^n \sum_{j=1}^n\left(a_k-a_j\right)\left(b_k-b_j\right) \geqslant 0,
+\end{aligned}
+$$
+故命题成立.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+平均值不等式的证明.
+一般地, 假设 $a_1, a_2, \cdots, a_n$ 为 $n$ 个非负实数, 它们的算术平均值记为
+$$
+A_n=\frac{a_1+a_2+\cdots+a_n}{n},
+$$
+几何平均值记为
+$$
+G_n=\left(a_1 a_2 \cdots a_n\right)^{\frac{1}{n}}=\sqrt[n]{a_1 a_2 \cdots a_n} .
+$$
+算术平均值与几何平均值之间有如下的关系
+$$
+\frac{a_1+a_2+\cdots+a_n}{n} \geqslant \sqrt[n]{a_1 a_2 \cdots a_n},
+$$
+即
+$$
+A_n \geqslant G_n,
+$$
+当且仅当 $a_1=a_2=\cdots=a_n$ 时,等号成立.
+证法八(调整法)
+(1)首先,如果 $a_1=a_2=\cdots=a_n$, 那么必有 $A_n=G_n$. 下设这些数不全等, 不妨设 $a_1=\min \left\{a_1, a_2, \cdots, a_n\right\}, a_2=\max \left\{a_1, a_2, \cdots, a_n\right\}$, 则 $a_1< A_n<a_2, a_1<G_n<a_2$. 令 $b_1=A_n, b_2=a_1+a_2-A_n, b_i=a_i, i \geqslant 3$. 并记 $A_n^1=\frac{b_1+b_2+\cdots+b_n}{n}=\frac{a_1+a_2+\cdots+a_n}{n}$, 则 $A_n^1=A_n$, 且由于
+$$
+\begin{aligned}
+b_1 b_2-a_1 a_2 & =A_n\left(a_1+a_2-A_n\right)-a_1 a_2 \\
+& =\left(A_n-a_1\right)\left(a_2-A_n\right)>0,
+\end{aligned}
+$$
+则 $G_n \leqslant G_n^1=\sqrt[n]{b_1 b_2 \cdots b_n}$.
+(2) 如果 $b_1=b_2=\cdots=b_n$, 则命题成立.
+若不全等,则必有最大和最小者, 而且它们都不等于 $A_n$, 仿照上面作法, 可以得到 $c_1, c_2, \cdots, c_n$, 这组数中, 有两个数为 $A_n$, 且 $A_n^2=\frac{c_1+c_2+\cdots+c_n}{n}=\frac{b_1+b_2+\cdots+b_n}{n}=A_n^1=A_n$, $G_n^2=\sqrt[n]{c_1 c_2 \cdots c_n} \geqslant G_n^1 \geqslant G_n$. 如果 $c_1=c_2=\cdots=c_n$, 那么 $A_n^2=G_n^2$, 从而 $A_n=A_n^2 \geqslant G_n$. 如果 $c_1, c_2, \cdots, c_n$ 仍然不全相等,再按上述方法,进行第三次变换,所得到的新的数组中必有 3 个数都为 $A_n$. 这样下去,一定存在某个数 $m(2 \leqslant m \leqslant n)$ 使得.
+$$
+A_n=A_n^1=\cdots=A_n^m, G_n \leqslant G_n^1 \leqslant G_n^2 \leqslant \cdots \leqslant G_n^m, A_n^m=G_n^m,
+$$
+从而得 $A_n \geqslant G_n$, 且只要 $a_1, a_2, \cdots, a_n$ 不全相等, 必有 $A_n>G_n$. 故命题成立.
+注:调整法是证明不等式或求最值的一种有效方法, 特别是对那些当变量相等时取等号或取到最值的有关问题.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+平均值不等式的证明.
+一般地, 假设 $a_1, a_2, \cdots, a_n$ 为 $n$ 个非负实数, 它们的算术平均值记为
+$$
+A_n=\frac{a_1+a_2+\cdots+a_n}{n},
+$$
+几何平均值记为
+$$
+G_n=\left(a_1 a_2 \cdots a_n\right)^{\frac{1}{n}}=\sqrt[n]{a_1 a_2 \cdots a_n} .
+$$
+算术平均值与几何平均值之间有如下的关系
+$$
+\frac{a_1+a_2+\cdots+a_n}{n} \geqslant \sqrt[n]{a_1 a_2 \cdots a_n},
+$$
+即
+$$
+A_n \geqslant G_n,
+$$
+当且仅当 $a_1=a_2=\cdots=a_n$ 时,等号成立.
+证法九 
+为了证明平均值不等式, 需要证明一个引理.
+引理 2 假设 $x 、 y$ 为正实数, $n$ 为正整数,则
+$$
+x^{n+1}+n y^{n+1} \geqslant(n+1) y^n x .
+$$
+证明由于 $x 、 y$ 与 $x^k 、 y^k(1 \leqslant k \leqslant n)$ 同序, 所以
+$$
+(x-y)\left(x^k-y^k\right) \geqslant 0 .
+$$
+于是
+$$
+\begin{aligned}
+& x^{n+1}+n y^{n+1}-(n+1) x y^n \\
+= & x\left(x^n-y^n\right)-n y^n(x-y) \\
+= & (x-y)\left[x\left(x^{n-1}+x^{n-2} y+\cdots+y^{n-1}\right)-n y^n\right] \\
+= & (x-y)\left[\left(x^n-y^n\right)+\left(x^{n-1}-y^{n-1}\right) y+\cdots+(x-y) y^{n-1}\right] \\
+\geqslant & 0,
+\end{aligned}
+$$
+故引理 2 成立.
+现在, 我们利用引理 2 和数学归纳法证明平均值不等式.
+(1) 当 $n=2$ 时,已知结论成立.
+(2)假设对 $n=k$ (正整数 $k \geqslant 2$ ) 时命题成立, 即对于 $a_i>0, i=1$, $2, \cdots, k$, 有
+$$
+\left(a_1 a_2 \cdots a_k\right)^{\frac{1}{k}} \leqslant \frac{a_1+a_2+\cdots+a_k}{k} .
+$$
+那么, 当 $n=k+1$ 时, 为了利用引理 2 , 令 $a_1 a_2 \cdots a_k=y^{k(k+1)}, a_{k+1}=x^{k+1}, x$, $y \geqslant 0$, 则由归纳假设和引理 2 , 得
+$$
+\begin{aligned}
+& a_1+a_2+\cdots+a_{k+1}-(k+1) G_{k+1} \\
+= & \frac{k\left(a_1+a_2+\cdots+a_k\right)}{k}+x^{k+1}-(k+1) y^k x \\
+\geqslant & k \sqrt[k]{a_1 a_2 \cdots a_k}+x^{k+1}-(k+1) y^k x \\
+= & k y^{k+1}+x^{k+1}-(k+1) y^k x \geqslant 0 .
+\end{aligned}
+$$
+不难看出, 当且仅当所有的 $a_i$ 相等时等号成立,故命题成立.
+说明 (1) 值得注意的是, 像引理 2 这样的结论及其证明, 为我们证明和解决一般的不等式问题提供了方法和技巧.
+前面, 我们利用数学归纳法与不同的处理方式,证明了平均值不等式,当然, 还可以用其他的方法来证明.
+(2) 我们也可以用排序不等式证明引理 1 .
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+平均值不等式的证明.
+一般地, 假设 $a_1, a_2, \cdots, a_n$ 为 $n$ 个非负实数, 它们的算术平均值记为
+$$
+A_n=\frac{a_1+a_2+\cdots+a_n}{n},
+$$
+几何平均值记为
+$$
+G_n=\left(a_1 a_2 \cdots a_n\right)^{\frac{1}{n}}=\sqrt[n]{a_1 a_2 \cdots a_n} .
+$$
+算术平均值与几何平均值之间有如下的关系
+$$
+\frac{a_1+a_2+\cdots+a_n}{n} \geqslant \sqrt[n]{a_1 a_2 \cdots a_n},
+$$
+即
+$$
+A_n \geqslant G_n,
+$$
+当且仅当 $a_1=a_2=\cdots=a_n$ 时,等号成立.
+证法十(构造数列)
+令 $f(n)=n\left(\frac{a_1+a_2+\cdots+a_n}{n}-\sqrt[n]{a_1 a_2 \cdots a_n}\right)$, 如果能证明 $f(n)$ 关于 $n$ 是单调增加的, 即
+$$
+f(n) \leqslant f(n+1), n \geqslant 2 .
+$$
+那么, 由 $f(2) \geqslant 0$, 得到 $f(n) \geqslant f(2) \geqslant 0$, 则平均值不等式成立.
+现在, 证明 $f(n)$ 的单调性.
+同证法九, 设 $a_1 a_2 \cdots a_n=y^{n(n+1)}, a_{n+1}=x^{n+1}, x, y \geqslant 0$, 则由引理 2 , 得
+$$
+\begin{aligned}
+& f(n+1)-f(n) \\
+= & (n+1)\left(\frac{a_1+a_2+\cdots+a_{n+1}}{n+1}-\sqrt[n+1]{a_1 a_2 \cdots a_{n+1}}\right)
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& -n\left(\frac{a_1+a_2+\cdots+a_n}{n}-\sqrt[n]{a_1 a_2 \cdots a_n}\right) \\
+= & a_{n+1}-(n+1) \sqrt[n+1]{a_1 a_2 \cdots a_{n+1}}+n \sqrt[n]{a_1 a_2 \cdots a_n} \\
+= & x^{n+1}-(n+1) y^n x+n y^{n+1} \\
+\geqslant & 0 .
+\end{aligned}
+$$
+这表明 $f(n+1) \geqslant f(n)$.
+另外, 由于 $f(2) \geqslant 0$, 则对任意 $n \geqslant 2$, 得
+$$
+f(n) \geqslant f(n-1) \geqslant \cdots \geqslant f(2) \geqslant 0 .
+$$
+不难看出, 当且仅当所有的 $a_i$ 相等时等号成立, 故平均值不等式成立.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+平均值不等式的证明.
+一般地, 假设 $a_1, a_2, \cdots, a_n$ 为 $n$ 个非负实数, 它们的算术平均值记为
+$$
+A_n=\frac{a_1+a_2+\cdots+a_n}{n},
+$$
+几何平均值记为
+$$
+G_n=\left(a_1 a_2 \cdots a_n\right)^{\frac{1}{n}}=\sqrt[n]{a_1 a_2 \cdots a_n} .
+$$
+算术平均值与几何平均值之间有如下的关系
+$$
+\frac{a_1+a_2+\cdots+a_n}{n} \geqslant \sqrt[n]{a_1 a_2 \cdots a_n},
+$$
+即
+$$
+A_n \geqslant G_n,
+$$
+当且仅当 $a_1=a_2=\cdots=a_n$ 时,等号成立.
+证法十一
+为了证明平均值不等式, 首先证明另一个不等式, 即引理 3 如果 $x_k \geqslant 0$, 且 $x_k \geqslant x_{k-1}(k=2,3, \cdots, n)$, 则
+$$
+x_n^n \geqslant x_1\left(2 x_2-x_1\right)\left(3 x_3-2 x_2\right) \cdots\left[n x_n-(n-1) x_{n-1}\right],
+$$
+当且仅当 $x_1=x_2=\cdots=x_n$ 时等号成立.
+证明因为 $x_k \geqslant x_{k-1}$, 则
+$$
+x_k^{k-1}+x_k^{k-2} x_{k-1}+\cdots+x_{k-1}^{k-1} \geqslant k x_{k-1}^{k-1},
+$$
+所以
+$$
+\begin{aligned}
+x_k^k-x_{k-1}^k & =\left(x_k-x_{k-1}\right)\left(x_k^{k-1}+x_k^{k-2} x_{k-1}+\cdots+x_{k-1}^{k-1}\right) \\
+& \geqslant k x_{k-1}^{k-1}\left(x_k-x_{k-1}\right) .
+\end{aligned}
+$$
+即
+$$
+x_k^k \geqslant x_{k-1}^{k-1}\left[k x_k-(k-1) x_{k-1}\right](k=1,2, \cdots, n),
+$$
+当且仅当 $x_k=x_{k-1}$ 时等号成立.
+所以
+$$
+x_n^n=x_1 \frac{x_2^2}{x_1} \frac{x_3^3}{x_2^2} \cdots \frac{x_n^n}{x_{n-1}^{n-1}} \geqslant x_1\left(2 x_2-x_1\right)\left(3 x_3-2 x_2\right) \cdots\left[n x_n-(n-1) x_{n-1}\right] .
+$$
+现在利用引理 3 证明平均值不等式.
+不妨假设 $a_n \geqslant a_{n-1} \geqslant \cdots \geqslant a_2 \geqslant a_1>0$. 由 $A_k=\frac{a_1+a_2+\cdots+a_k}{k}$, 则 $A_k \geqslant A_{k-1}>0(k=2,3, \cdots, n)$, 且 $k A_k-(k-1) A_{k-1}=a_k$. 由引理 3, 得
+$$
+A_n^n \geqslant a_1 a_2 \cdots a_n,
+$$
+即 $A_n \geqslant G_n$. 当且仅当 $A_1=A_2=\cdots=A_n$, 即 $a_1=a_2=\cdots=a_n$ 时等号成立.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+平均值不等式的证明.
+一般地, 假设 $a_1, a_2, \cdots, a_n$ 为 $n$ 个非负实数, 它们的算术平均值记为
+$$
+A_n=\frac{a_1+a_2+\cdots+a_n}{n},
+$$
+几何平均值记为
+$$
+G_n=\left(a_1 a_2 \cdots a_n\right)^{\frac{1}{n}}=\sqrt[n]{a_1 a_2 \cdots a_n} .
+$$
+算术平均值与几何平均值之间有如下的关系
+$$
+\frac{a_1+a_2+\cdots+a_n}{n} \geqslant \sqrt[n]{a_1 a_2 \cdots a_n},
+$$
+即
+$$
+A_n \geqslant G_n,
+$$
+当且仅当 $a_1=a_2=\cdots=a_n$ 时,等号成立.
+证法十二(函数方法)
+引理 4 如果函数 $f(x):(a, b) \rightarrow \mathbf{R}$ 满足
+$$
+f\left(\frac{x+y}{2}\right)>\frac{f(x)+f(y)}{2}, x, y \in(a, b), x \neq y, \label{eq1}
+$$
+那么
+$$
+f\left(\frac{x_1+x_2+\cdots+x_n}{n}\right)>\frac{f\left(x_1\right)+f\left(x_2\right)+\cdots+f\left(x_n\right)}{n}, \label{eq2}
+$$
+其中 $x_i \in(a, b)$, 且至少有一对 $(i, j)$, 使 $x_i \neq x_j$.
+证明对 $n$ 用归纳法.
+当 $n=1,2$ 时,结论显然成立.
+设当 $n=k$ 时结论成立.
+对于 $n=k+1$, 有
+$$
+A_{k+1}=\frac{a_1+a_2+\cdots+a_k}{2 k}+\frac{a_{k+1}+(k-1) A_{k+1}}{2 k},
+$$
+并记
+$$
+B=\frac{a_{k+1}+(k-1) A_{k+1}}{k},
+$$
+则
+$$
+\begin{aligned}
+f\left(A_{k+1}\right)= & f\left(\frac{A_k+B}{2}\right) \\
+\geqslant & \frac{1}{2}\left[f\left(A_k\right)+f(B)\right] \\
+\geqslant & \frac{1}{2}\left\{\frac{1}{k}\left[f\left(a_1\right)+f\left(a_2\right)+\cdots+f\left(a_k\right)\right]\right. \\
+& \left.+\frac{1}{k}\left[f\left(a_{k+1}\right)+(k-1) f\left(A_{k+1}\right)\right]\right\} .
+\end{aligned}
+$$
+所以
+$$
+f\left(\frac{a_1+a_2+\cdots+a_{k+1}}{k+1}\right) \geqslant \frac{f\left(a_1\right)+f\left(a_2\right)+\cdots+f\left(a_{k+1}\right)}{k+1} .
+$$
+我们称满足 \ref{eq1} 式的函数为凹函数 (可以证明, 如果函数 $f$ 二阶可导, 则当 $f^{\prime \prime}(x)<0$ 时, $f$ 为凹函数). 特别的, 不难验证函数 $f(x)=\ln x$ 在 (0, $+\infty)$ 上是凹函数, 于是, 对 $a_i \in(0,+\infty), i=1,2, \cdots, n$, 我们有
+$$
+f\left(\frac{a_1+a_2+\cdots+a_n}{n}\right) \geqslant \frac{f\left(a_1\right)+f\left(a_2\right)+\cdots+f\left(a_n\right)}{n},
+$$
+从而
+$$
+\ln \frac{a_1+a_2+\cdots+a_n}{n} \geqslant \ln \left(a_1 a_2 \cdots a_n\right)^{\frac{1}{n}} .
+$$
+由对数函数的单调性, 得
+$$
+\frac{a_1+a_2+\cdots+a_n}{n} \geqslant\left(a_1 a_2 \cdots a_n\right)^{\frac{1}{n}},
+$$
+故命题成立.
+下面验证 $\ln x$ 为凹函数.
+对任意 $x, y, x \neq y$, 要使得: $f\left(\frac{x+y}{2}\right)> \frac{f(x)+f(y)}{2}$, 即
+$$
+\ln \frac{x+y}{2}>\frac{\ln (x)+\ln (y)}{2}
+$$
+等价于
+$$
+\ln \frac{x+y}{2} \geqslant \ln (x y)^{\frac{1}{2}} .
+$$
+由函数的单调性, 等价于
+$$
+\frac{x+y}{2} \geqslant(x y)^{\frac{1}{2}}
+$$
+这个可以由 $(\sqrt{x}-\sqrt{y})^2>0$ 直接导出.
+另外, 由凹函数方法, 设 $p>0, q>0$, 且 $\frac{1}{p}+\frac{1}{q}=1$, 由于函数 $f(x)= \ln x, x \in \mathbf{R}^{+}$为凹函数, 则对 $x, y>0$, 有
+$$
+\begin{gathered}
+\frac{1}{p} \ln x+\frac{1}{q} \ln y \leqslant \ln \left(\frac{1}{p} x+\frac{1}{q} y\right), \\
+x^{\frac{1}{p}} y^{\frac{1}{q}} \leqslant \frac{1}{p} x+\frac{1}{q} y .
+\end{gathered}
+$$
+即
+$$
+x^{\frac{1}{p}} y^{\frac{1}{q}} \leqslant \frac{1}{p} x+\frac{1}{q} y .
+$$
+等号成立的充分必要条件是 $x=y$.
+这个不等式称为 Young 不等式.
+注:引理 4 中的不等式 \ref{eq2}, 称为 Jensen 不等式, 它的一般形式为设 $y=f(x), x \in(a, b)$ 为凹函数, 则对任意 $x_i \in(a, b)(i=1,2, \cdots$, $n)$, 我们有
+$$
+\frac{1}{p_1} f\left(x_1\right)+\frac{1}{p_2} f\left(x_2\right)+\cdots+\frac{1}{p_n} f\left(x_n\right) \leqslant f\left(\frac{x_1}{p_1}+\frac{x_2}{p_2}+\cdots+\frac{x_n}{p_n}\right) \text {. }
+$$
+其中 $p_i>0(i=1,2, \cdots, n)$ 且 $\sum_{i=1}^n \frac{1}{p_i}=1$.
+在这部分,我们利用不同的方法证明了平均值不等式成立.
+在证明过程中,利用了各种技巧和方法.
+%%TEXT_END%%
+
+

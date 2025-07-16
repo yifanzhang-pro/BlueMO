@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 已知 $5 n$ 个实数 $r_i, s_i, t_i, u_i, v_i>1(1 \\leqslant i \\leqslant n)$, 记\n$$\nR=\\frac{1}{n} \\sum_{i=1}^n r_i, S=\\frac{1}{n} \\sum_{i=1}^n s_i, T=\\frac{1}{n} \\sum_{i=1}^n t_i, U=\\frac{1}{n} \\sum_{i=1}^n u_i, V=\\frac{1}{n} \\sum_{i=1}^n v_i .\n$$\n求证: $\\prod_{i=1}^n \\frac{r_i s_i t_i u_i v_i+1}{r_i s_i t_i u_i v_i-1} \\geqslant\\left(\\frac{R S T U V+1}{R S T U V-1}\\right)^n$.",
+    "solution": "设 $x_i>1(i=1,2, \\cdots, n)$, 则 $\\prod_{i=1}^n\\left(x_i+1\\right)^{\\frac{1}{n}} \\geqslant\\left(\\prod_{i=1}^n x_i\\right)^{\\frac{1}{n}}+1 \\cdots$ (1). $\\left(\\prod_{i=1}^n x_i\\right)^{\\frac{1}{n}} \\geqslant \\prod_{i=1}^n\\left(x_i-1\\right)^{\\frac{1}{n}}+1$, 即 $0<\\left[\\prod_{i=1}^n\\left(x_i-1\\right)\\right]^{\\frac{1}{n}} \\leqslant\\left(\\prod_{i=1}^n x_i\\right)^{\\frac{1}{n}}-1 \\cdots$ (2).\n由(1)、(2), 得 $\\prod_{i=1}^n \\frac{x_i+1}{x_i-1} \\geqslant\\left(\\frac{\\sqrt[n]{x_1 \\cdots x_n}+1}{\\sqrt[n]{x_1 \\cdots x_n}-1}\\right)^n \\cdots$ (3). 又函数 $f(x)=\\frac{x+1}{x-1}= 1+\\frac{2}{x-1}$ 在 $x>1$ 时是减函数.\n令 $x_i=r_i s_i t_i u_i v_i$, 由平均值不等式, 得 $\\left(\\prod_{i=1}^n x_i\\right)^{\\frac{1}{n}}=\\sqrt[n]{r_1 \\cdots r_n} \\cdots \\sqrt[n]{v_1 \\cdots v_n} \\leqslant R S T U V$. 代入(3)式, 得 $\\prod_{i=1}^n \\frac{r_i s_i t_i u_i v_i+1}{r_i s_i t_i u_i v_i-1} \\geqslant \\left(\\frac{R S T U V+1}{R S T U V-1}\\right)^n$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题16. 设 $a_1, a_2, \\cdots, a_n(n \\geqslant 2)$ 都大于 -1 且同号,求证:\n$$\n\\left(1+a_1\\right)\\left(1+a_2\\right) \\cdots\\left(1+a_n\\right)>1+a_1+a_2+\\cdots+a_n .\n$$",
+    "solution": "构造数列 $x_n=\\left(1+a_1\\right)\\left(1+a_2\\right) \\cdots\\left(1+a_n\\right)-\\left(1+a_1+a_2+\\cdots+a_n\\right) (n \\geqslant 2)$, 则 $x_{n+1}-x_n=a_{n+1}\\left[\\left(1+a_1\\right) \\cdots\\left(1+a_n\\right)-1\\right]$.\n若 $a_i>0(i=1,2, \\cdots, n+1)$, 由上式易见 $x_{n+1}>x_n$; 若 $-1<a_i< 0(i=1,2, \\cdots, n)$, 则 $0<1+a_i<1$, 也有 $x_{n+1}>x_n$.\n因此 $\\left\\{x_n\\right\\}$ 是一个单调递增序列 $(n \\geqslant 2)$. 由于 $x_2=\\left(1+a_1\\right)\\left(1+a_2\\right)-1- a_1-a_2=a_1 a_2>0$, 则对一切 $n \\geqslant 2, x_n>0$, 从而原不等式成立.",
+    "remark": "",
+    "figures": []
+}

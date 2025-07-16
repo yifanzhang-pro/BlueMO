@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例6. 在 $2 \\times n$ 方格表的每个 $1 \\times 1$ 小方格内写上一个正实数,使得每列中两个数之和等于 1 . 证明: 可以从每列中删去一个数, 使得每行中剩下的各数之和都不超过 $\\frac{n+1}{4}$.",
+    "solution": "证明:假设第一行中的 $n$ 个数从左到右依次为 $a_1, a_2, \\cdots, a_n$, 必要时交换列的位置可使得 $a_1 \\leqslant a_2 \\leqslant \\cdots \\leqslant a_n$. 此时第二行中所写的数依次为 $b_1= 1-a_1, b_2=1-a_2, \\cdots, b_n=1-a_n$, 于是 $b_1 \\geqslant b_2 \\geqslant \\cdots \\geqslant b_n$. 如果 $a_1+a_2+\\cdots+ a_n \\leqslant \\frac{n+1}{4}$, 那么就删去第二行中所有各数即可达到目的.\n否则存在使 $a_1+ a_2+\\cdots+a_k>\\frac{n+1}{4}$ 成立的最小正整数 $k$, 这时我们只要删去 $b_1, b_2, \\cdots, b_{k-1}$ 及 $a_k, a_{k+1}, \\cdots, a_n$, 则由 $k$ 的取法有 $a_1+a_2+\\cdots+a_{k-1} \\leqslant \\frac{n+1}{4}$, 并且由于\n$$\na_k \\geqslant \\frac{a_1+a_2+\\cdots+a_k}{k}>\\frac{n+1}{4 k},\n$$\n所以\n$$\n\\begin{gathered}\nb_k+b_{k+1}+\\cdots+b_n \\leqslant(n+1-k) b_k=(n+1-k)\\left(1-a_k\\right) \\\\\n<(n+1-k)\\left(1-\\frac{n+1}{4 k}\\right)=\\frac{5}{4}(n+1)-\\left[\\frac{(n+1)^2+(2 k)^2}{4 k}\\right] \\\\\n\\leqslant \\frac{5}{4}(n+1)-\\frac{2(n+1)(2 k)}{4 k}=\\frac{n+1}{4},\n\\end{gathered}\n$$\n从而证明了题中结论成立.",
+    "remark": "",
+    "figures": []
+}

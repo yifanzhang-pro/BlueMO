@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题15 设 $\\frac{3 \\pi}{2}<\\alpha<\\frac{7 \\pi}{4}$ 且 $2 \\cot ^2 \\alpha+7 \\cot \\alpha+3=0$, 则 $\\cos 2 \\alpha=$",
+    "solution": "$-\\frac{3}{5}$. 由条件等式得 $(2 \\cot \\alpha+1)(\\cot \\alpha+3)=0$, 所以 $\\cot \\alpha=-\\frac{1}{2}$ 或\n$\\cot \\alpha=-3$. 而 $\\frac{3 \\pi}{2}<\\alpha<\\frac{7 \\pi}{4}$, 故 $\\cot \\alpha>-1$, 从而 $\\cot \\alpha=-\\frac{1}{2}$, 所以 $\\tan \\alpha=-2$, $\\cos 2 \\alpha=\\frac{1-\\tan ^2 \\alpha}{1+\\tan ^2 \\alpha}=-\\frac{3}{5}$.",
+    "remark": "",
+    "figures": []
+}

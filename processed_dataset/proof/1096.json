@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-3.tex",
+    "problem_type": "proof",
+    "problem": "例3. $\\triangle A B C$ 的三边长 $a, b, c$ 满足 $a+b+c=1$. 求证:\n$$\n5\\left(a^2+b^2+c^2\\right)+18 a b c \\geqslant \\frac{7}{3} .\n$$",
+    "solution": "证明:因为 $a^2+b^2+c^2$\n$$\n\\begin{aligned}\n& =(a+b+c)^2-2(a b+b c+c a) \\\\\n& =1-2(a b+b c+c a),\n\\end{aligned}\n$$\n所以, 欲证的不等式等价于\n$$\n\\frac{5}{9}(a b+b c+c a)-a b c \\leqslant \\frac{4}{27} .\n$$\n构造函数\n$$\nf(x)=(x-a)(x-b)(x-c),\n$$\n一方面,\n$$\nf(x)=x^3-(a+b+c) x^2+(a b+b c+c a) x-a b c,\n$$\n所以,\n$$\nf\\left(\\frac{5}{9}\\right)=\\left(\\frac{5}{9}\\right)^3-\\left(\\frac{5}{9}\\right)^2+\\frac{5}{9}(a b+b c+c a)-a b c .\n$$\n另一方面, 因为 $a, b, c$ 是三角形三边长, 所以 $0<a, b, c<\\frac{1}{2}$, 且 $\\frac{5}{9}- a, \\frac{5}{9}-b, \\frac{5}{9}-c$ 均为正数, 利用平均值不等式, 有\n$$\n\\begin{aligned}\nf\\left(\\frac{5}{9}\\right) & =\\left(\\frac{5}{9}-a\\right)\\left(\\frac{5}{9}-b\\right)\\left(\\frac{5}{9}-c\\right) \\\\\n& \\leqslant \\frac{1}{27}\\left[\\left(\\frac{5}{9}-a\\right)+\\left(\\frac{5}{9}-b\\right)+\\left(\\frac{5}{9}-c\\right)\\right]^3 \\\\\n& =\\frac{8}{729} .\n\\end{aligned}\n$$\n所以,\n$$\n\\begin{aligned}\n& \\frac{5}{9}(a b+b c+c a)-a b c \\\\\n\\leqslant & \\frac{8}{729}-\\left(\\frac{5}{9}\\right)^3+\\left(\\frac{5}{9}\\right)^2 \\\\\n= & \\frac{4}{27} .\n\\end{aligned}\n$$\n从而, 欲证不等式成立.",
+    "remark": "",
+    "figures": []
+}

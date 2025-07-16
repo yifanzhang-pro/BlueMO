@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter8.tex",
+    "problem_type": "calculation",
+    "problem": "例11. 若干个正整数和为 2011 , 求它们积的最大值.",
+    "solution": "解:由于和为 2011 的不同正整数组只有有限多个, 所以最大值必存在.\n设 $x_1, x_2, \\cdots, x_n$ 都是正整数, $x_1+x_2+\\cdots+x_n=2011$ 且积 $u= x_1 x_2 \\cdots x_n$ 取到最大值, 那么\n(1) $x_i \\leqslant 4(i=1,2, \\cdots, n)$. 若不然, 有某个 $x_j>4$, 由于 $2+\\left(x_j-2\\right)= x_j, 2\\left(x_j-2\\right)=x_j+\\left(x_j-4\\right)>x_j$, 可用 2 和 $x_j-2$ 代替 $x_j$ 使和不变而积增大,矛盾!\n(2) $x_i \\geqslant 2(i=1,2, \\cdots, n)$. 若不然, 有某个 $x_k=1$, 由 $x_k \\cdot x_i=x_i< x_i+x_k$, 可用 $x_k+x_i$ 代替 $x_k x_i$ 而使和不变且积变大,矛盾!\n(3) 因为 $4=2+2=2 \\times 2$, 故 $x_j=4$ 可换为两个 2 而使 $u$ 不变.\n(4)设 $u=2^\\alpha \\cdot 3^\\beta$. 若 $\\alpha>3$, 则 $u=2^3 \\cdot 2^{\\alpha-3} \\cdot 3^\\beta<3^2 \\cdot 2^{\\alpha-3} \\cdot 3^\\beta$, 且 $2+ 2+2=3+3$ 和不改变, $u$ 却变大了, 矛盾!\n综上, 因为 $2011=3 \\times 670+1$, 故 $u_{\\max }=2^2 \\times 3^{669}$.\n一般地, 若和为 $m$, 则\n$$\nu_{\\max }=\\left\\{\\begin{array}{l}\n3^s, m=3 s ; \\\\\n2^2 \\cdot 3^{s-1}, m=3 s+1 ; \\\\\n2 \\cdot 3^s, m=3 s+2 .\n\\end{array}\\right.\n$$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 在圆内接四边形 $A B C D$ 中, 已知 $A B=B C, A D=3 D C, R$ 为对角线 $B D$ 上一点, 且满足 $D R=2 R B, Q$ 为线段 $A R$ 上一点, 且满足 $\\angle A D Q= \\angle B D Q$. 设 $P$ 为线段 $A B$ 与直线 $D Q$ 的交点.\n若 $\\angle A B Q+\\angle C B D= \\angle Q B D$, 求 $\\angle A P D$ 的度数.",
+    "solution": "解: 如图(<FilePath:./images/volume7/figures/fig-c6a6.png>), 以 $B$ 为旋转中心旋转 $\\triangle B C D$, 使\n$B C$ 与 $B A$ 重合, 点 $D$ 转到 $D^{\\prime}$.\n因为四边形 $A B C D$ 为圆内接四边形, 所以, $\\angle B A D^{\\prime}+\\angle D A B=\\angle B C D+\\angle D A B=180^{\\circ}$. 从而, $D^{\\prime} 、 A 、 D$ 三点共线.\n设 $H$ 为 $B Q$ 与 $A D$ 的交点.\n由 $\\angle D^{\\prime} B A=\\angle D B C$, 有 $\\angle D^{\\prime} B Q=\\angle D^{\\prime} B A+ \\angle A B Q=\\angle D B C+\\angle A B Q=\\angle Q B D$. 故 $\\triangle D^{\\prime} B H \\cong \\triangle D B H \\Rightarrow D^{\\prime} H=H D$. 因为 $A D=3 D C=3 D^{\\prime} A$, 所以, $D^{\\prime} H=\\frac{1}{2} D^{\\prime} D=2 D^{\\prime} A$. 于是, $\\frac{A H}{A D}=\\frac{1}{3}$. 视直线\n$R A$ 为 $\\triangle B H D$ 的截线, 由梅涅劳斯定理有 $\\frac{D R}{R B} \\cdot \\frac{B Q}{Q H} \\cdot \\frac{H A}{A D}=1$. 因此, $\\frac{B Q}{Q H}= \\frac{3}{2}$. 又 $\\angle A D Q=\\angle B D Q$, 则 $\\frac{B D}{D H}=\\frac{B Q}{Q H}=\\frac{3}{2}$. 因此, $B D=\\frac{3}{2} D H=3 A H=D A$. 于是, $D P \\perp A B \\Rightarrow \\angle A P D=90^{\\circ}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6a6.png"
+    ]
+}

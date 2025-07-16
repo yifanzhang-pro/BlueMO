@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例18 设 $a>0, r(x)=\\frac{a x^2+1}{x}=a x+\\frac{1}{x}$. 试讨论函数 $r(x)$ 在 $(0$, $+\\infty)$ 中的单调性, 最小值与最大值.",
+    "solution": "解:设 $0<x_1<x_2<+\\infty$, 则\n$$\nr\\left(x_2\\right)-r\\left(x_1\\right)=a x_2+\\frac{1}{x_2}-a x_1-\\frac{1}{x_1}=\\left(x_2-x_1\\right)\\left(a-\\frac{1}{x_1 x_2}\\right) .\n$$\n当 $0<x_1<x_2 \\leqslant \\frac{1}{\\sqrt{a}}$ 时, 得\n$$\n\\begin{aligned}\nr\\left(x_2\\right)-r\\left(x_1\\right) & =\\left(x_2-x_1\\right)\\left(a-\\frac{1}{x_1 x_2}\\right)<\\left(x_2-x_1\\right)\\left(a-\\frac{1}{x_2^2}\\right) \\\\\n& \\leqslant\\left(x_2-x_1\\right)(a-a)=0,\n\\end{aligned}\n$$\n所以在区间 $\\left(0, \\frac{1}{\\sqrt{a}}\\right]$ 上, $r(x)$ 是单调递减的.\n当 $\\frac{1}{\\sqrt{a}} \\leqslant x_1<x_2<+\\infty$ 时, 得\n$$\nr\\left(x_2\\right)-r\\left(x_1\\right)=\\left(x_2-x_1\\right)\\left(a-\\frac{1}{x_1 x_2}\\right)>\\left(x_2-x_1\\right)\\left(a-\\frac{1}{x_1^2}\\right) \\geqslant 0,\n$$\n所以在区间 $\\left[\\frac{1}{\\sqrt{a}},+\\infty\\right)$ 上, $r(x)$ 是单调递增的.\n因此, $r(x)$ 没有最大值, 当且仅当 $x=\\frac{1}{\\sqrt{a}}$ 时, $r(x)$ 取最小值, 最小值为 $r\\left(\\frac{1}{\\sqrt{a}}\\right)=2 \\sqrt{a}$.",
+    "remark": "",
+    "figures": []
+}

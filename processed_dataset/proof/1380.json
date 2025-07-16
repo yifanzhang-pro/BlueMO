@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 设 $m, n \\in \\mathbf{N}^{+}, m>n$, 求证: $\\left(1+\\frac{1}{n}\\right)^n<\\left(1+\\frac{1}{m}\\right)^m$.",
+    "solution": "我们只需证明: $\\left(1+\\frac{1}{n}\\right)^n<\\left(1+\\frac{1}{n+1}\\right)^{n+1}$.\n当 $n=1$ 时, 上式显然成立, 当 $n \\geqslant 2$ 时,由二项式定理,\n$$\n\\begin{aligned}\n\\left(1+\\frac{1}{n}\\right)^n=\\sum_{k=2}^n & \\frac{1}{k !} \\cdot\\left(1-\\frac{1}{n}\\right)\\left(1-\\frac{2}{n}\\right) \\cdots\\left(1-\\frac{k-1}{n}\\right)+2, \\\\\n\\left(1+\\frac{1}{n+1}\\right)^{n+1}= & \\sum_{k=2}^{n+1} \\frac{1}{k !}\\left(1-\\frac{1}{n+1}\\right)\\left(1-\\frac{2}{n+1}\\right) \\cdots\\left(1-\\frac{k-1}{n+1}\\right)+2 \\\\\n= & \\sum_{k=2}^n \\frac{1}{k !}\\left(1-\\frac{1}{n+1}\\right)\\left(1-\\frac{2}{n+1}\\right) \\cdots \\\\\n& \\left(1-\\frac{k-1}{n+1}\\right)+\\left(\\frac{1}{n+1}\\right)^{n+1}+2,\n\\end{aligned}\n$$\n于是,显然有 $\\left(1+\\frac{1}{n}\\right)^n<\\left(1+\\frac{1}{n+1}\\right)^{n+1}$.",
+    "remark": "",
+    "figures": []
+}

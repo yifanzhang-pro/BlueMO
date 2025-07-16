@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题9 计算不超过 120 的合数和素数的个数.",
+    "solution": "设 $S_1=\\{a|1 \\leqslant a \\leqslant 120,2| a\\}, S_2=\\{b|1 \\leqslant b \\leqslant 120,3| b\\}$, $S_3=\\{c|1 \\leqslant c \\leqslant 120,5| c\\}, S_4=\\{d|1 \\leqslant d \\leqslant 120,7| d\\}$. 则由容斥原理可知 $\\left|S_1 \\cup S_2 \\cup S_3 \\cup S_4\\right|=92$, 而 2、3、5、7 也在 92 个数之中, 它们都不是合数, 故合数为 $92-4=88$ (个). 又 1 不是素数, 故素数个数为 $120-88- 1=31$ (个).",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例2. 将 100 个互异实数分别放置在圆周上的不同地方.\n求证:一定存在相邻的 4 个数使得两端的两数之和大于中间的两数之和.",
+    "solution": "证明:假设结论不成立, 设圆周上 100 个实数为 $a_1, a_2, \\cdots, a_{100}$ 且 $a_{n+100}=a_n$, 则\n$$\na_n+a_{n+3} \\leqslant a_{n+1}+a_{n+2},\n$$\n即\n$$\na_{n+3}-a_{n+2} \\leqslant a_{n+1}-a_n, n=1,2, \\cdots, 100 .\n$$\n由此可得\n$$\na_{100}-a_{99} \\leqslant a_{98}-a_{97} \\leqslant \\cdots \\leqslant a_2-a_1 \\leqslant a_{100}-a_{99} .\n$$\n因此 $a_{2 k}-a_{2 k-1}=m(m$ 为常数, $k=1,2, \\cdots, 50)$. 同理可得 $a_{2 k+1}-a_{2 k}=l(l$ 为常数, $k=1,2, \\cdots, 50)$. 将所有这些等式相加得 $0=50 m+50 l$, 于是 $m= -l$. 这推出\n$$\na_3-a_2=l=-m=a_1-a_2,\n$$\n即 $a_1=a_3$, 矛盾.\n故题中结论成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设点 $O$ 是锐角 $\\triangle A B C$ 的外心.\n分别以 $\\triangle A B C$ 三边的中点为圆心作过点 $O$ 的圆, 这三个圆两两的异于 $O$ 的交点分别为 $K 、 L 、 M$. 证明 : 点 $O$ 是 $\\triangle K L M$ 的内心.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c3i8.png>) 设三边中点分别为 $A^{\\prime} 、 B^{\\prime}$ 、 $C^{\\prime}$, 我们发现 $B^{\\prime} C^{\\prime}$ 垂直平分公共弦 $O K$, 并设交点为 $K^{\\prime}$, 那么 $O K^{\\prime}=\\frac{1}{2} \\cdot O K$, 类似地定义 $L^{\\prime} 、 M^{\\prime}$, 我们有 $\\triangle K^{\\prime} L^{\\prime} M^{\\prime}$ 位似于 $\\triangle K L M$, 相似比为 $\\frac{1}{2}$, 位似中心为 $O$, 于是原命题 $\\Leftrightarrow O$ 是 $\\triangle K^{\\prime} L^{\\prime} M^{\\prime}$ 的内心 , 结合前面的性质: 三角形的垂心是其垂足三角形的内心.\n只需证明, $O$ 为 $\\triangle A^{\\prime} B^{\\prime} C^{\\prime}$ 的垂心, 且 $K^{\\prime} 、 L^{\\prime}$ 、$M^{\\prime}$ 分别是 $O$ 在三边上的垂足.\n$A^{\\prime}$ 为边 $B C$ 中点, 故 $O A^{\\prime} \\perp B C \\Rightarrow O A^{\\prime} \\perp B^{\\prime} C^{\\prime}$, 又 $O K^{\\prime} \\perp B^{\\prime} C^{\\prime}$, 所以 $A^{\\prime}$ 、 $O 、 K^{\\prime}$ 共线且该线垂直于 $B^{\\prime} C^{\\prime}$.\n故原命题成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c3i8.png"
+    ]
+}

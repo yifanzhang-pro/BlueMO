@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter13.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 对一个边长互不相等的凸 $n(n \\geqslant 3)$ 边形的边染色, 每条边可以染红、黄、蓝三种颜色中的一种, 但是不允许相邻的边有相同的颜色.\n问: 共有多少种不同的染色方法?",
+    "solution": "解:设不同的染色法有 $p_n$ 种.\n易知 $p_3=6$.\n当 $n \\geqslant 4$ 时,首先, 对于边 $a_1$, 有 3 种不同的染法, 由于边 $a_2$ 的颜色与边 $a_1$ 的颜色不同, 所以,对边 $a_2$ 有 2 种不同的染法, 类似地, 对边 $a_3, \\cdots$, 边 $a_{n-1}$ 均有 2 种染法.\n对于边 $a_n$, 用与边 $a_{n-1}$ 不同的 2 种颜色染色, 但是, 这样也包括了它与边 $a_1$ 颜色相同的情况, 而边 $a_1$ 与边 $a_n$ 颜色相同的不同染色方法数就是凸 $n-1$ 边形的不同染色方法数的种数 $p_{n-1}$, 于是可得图 $13-1$\n$$\n\\begin{gathered}\np_n=3 \\times 2^{n-1}-p_{n-1}, \\\\\np_n-2^n=-\\left(p_{n-1}-2^{n-1}\\right) .\n\\end{gathered}\n$$\n于是\n$$\n\\begin{gathered}\np_n-2^n=(-1)^{n-3}\\left(p_3-2^3\\right)=(-1)^{n-2} \\cdot 2, \\\\\np_n=2^n+(-1)^n \\cdot 2 .\n\\end{gathered}\n$$\n综上所述, 不同的染色方法数为 $p_n=2^n+(-1)^n \\cdot 2, n \\geqslant 3$.",
+    "remark": "注:本例与前一例略有不同, 是将计算 $p_n$ 时需扣除的量与 $p_{n-1}$ 建立联系.",
+    "figures": []
+}

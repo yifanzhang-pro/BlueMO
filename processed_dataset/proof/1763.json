@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例10. 给定 4 个圆 $\\odot S_1 、 \\odot S_2 、 \\odot S_3$ 、 $\\odot S_4$, 设 $\\odot S_1$ 和 $\\odot S_2 、 \\odot S_2$ 和 $\\odot S_3 、 \\odot S_3$ 和 $\\odot S_4 、 \\odot S_4$ 和 $\\odot S_1$ 分别交于点 $A_1$ 和 $A_2 、 B_1$ 和 $B_2 、 C_1$ 和 $C_2 、 D_1$ 和 $D_2$. 若 $A_1 、 B_1 、 C_1 、 D_1$ 四点共圆 (或共线), 证明: $A_2 、 B_2 、 C_2 、 D_2$ 四点共圆(或共线).",
+    "solution": "证明:作以 $A_1$ 为反演中心的反演变换, 于是, $\\odot S_1 、 \\odot S_2$ 反形为直线 $A_2^{\\prime} D_1^{\\prime} 、 A_2^{\\prime} B_1^{\\prime}, \\odot S_3$ 、 $\\odot S_4$ 反形为 $\\triangle B_2^{\\prime} C_1^{\\prime} B_1^{\\prime} 、 \\triangle D_2^{\\prime} C_1^{\\prime} D_1^{\\prime}$ 的外接圆, 这两个圆交于 $C_2^{\\prime}$. 如图(<FilePath:./images/volume7/figures/fig-c9i15.png>) 只要证 $A_2^{\\prime} 、 B_2^{\\prime} 、 C_2^{\\prime} 、 D_2^{\\prime}$ 四点共圆即可.\n这就转化为三角形中的密克点问题:\n$\\triangle A_2^{\\prime} B_1^{\\prime} D_1^{\\prime}$ 中, $C_1^{\\prime} 、 B_2^{\\prime} 、 D_2^{\\prime}$ 分别在边 $D_1^{\\prime} B_1^{\\prime} 、 B_1^{\\prime} A_2^{\\prime} 、 A_2^{\\prime} D_1^{\\prime}$ 上, 若 $\\triangle D_2^{\\prime} D_1^{\\prime} C_1^{\\prime}$ 的外接圆与 $\\triangle B_1^{\\prime} B_2^{\\prime} C_1^{\\prime}$ 的外接圆交于点 $C_2^{\\prime}$, 则 $\\triangle A_2^{\\prime} D_2^{\\prime} B_2^{\\prime}$ 的外接圆也过该点.\n这个问题在圆的一章中就已经提到过.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9i15.png"
+    ]
+}

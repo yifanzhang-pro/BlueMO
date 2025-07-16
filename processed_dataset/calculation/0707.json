@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题4 化简 $\\frac{2 \\cos ^2 \\alpha-1}{2 \\operatorname{sen}\\left(\\frac{\\pi}{4}-\\alpha\\right) \\sin ^2\\left(\\frac{\\pi}{4}+\\alpha\\right)}$ 等于( ).\n(A) 1\n(B) -1\n(C) $\\cos \\alpha$\n(D) $-\\sin \\alpha$",
+    "solution": "$\\mathrm{A}$ 原式 $=\\frac{\\cos 2 \\alpha}{2 \\cdot \\frac{1-\\tan \\alpha}{1+\\tan \\alpha} \\cdot \\frac{1-\\cos \\left(\\frac{\\pi}{2}+2 \\alpha\\right)}{2}}=\\frac{\\cos ^2 \\alpha-\\sin ^2 \\alpha}{\\frac{\\cos \\alpha-\\sin \\alpha}{\\cos \\alpha+\\sin \\alpha} \\cdot(1+\\sin 2 \\alpha)}= \\frac{(\\cos \\alpha+\\sin \\alpha)^2}{1+\\sin 2 \\alpha}=1$.",
+    "remark": "",
+    "figures": []
+}

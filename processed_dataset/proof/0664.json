@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter18.tex",
+    "problem_type": "proof",
+    "problem": "例2. 实数 $a 、 b 、 c$ 满足 $(a+c)(a+b+c)<0$, 证明:\n$$\n(b-c)^2>4 a(a+b+c) \\text {. }\n$$",
+    "solution": "分析:证明 $(b-c)^2>4 a(a+b+c)$, 即证明 $(b-c)^2-4 a(a+b+-c)>$ 0 , 联想到一元二次方程根的判别式, 进而构造符合条件的二次函数, 通过对函数图象和性质的研究, 使得问题得以解决.\n解若 $a=0$, 则 $c(b+c)<0$, 从而 $b \\neq c$ (否则, $\\left.2 b^2<0\\right)$, 于是 $(b-c)^2>$ 0 , 命题成立.\n若 $a \\neq 0$, 设二次函数 $y=a x^2+(b-c) x+(a+b+c)$.\n令 $x_1=0$, 得函数值 $y_1=a+b+c$, 令 $x_2=-1$, 得函数值 $y_2=2(a+c)$.\n因为 $(a+c)(a+b+c)<0$, 所以 $y_1 y_2<0$, 这说明二次函数 $y=a x^2+ (b-c) x+(a+b+c)$ 上两点 $\\left(x_1, y_1\\right)$ 和 $\\left(x_2, y_2\\right)$ 分别在 $x$ 轴的两侧, 由此可见抛物线与 $x$ 轴有两个不同的交点, 即方程 $a x^2+(b-c) x+(a+b+c)=0$ 有两个不相等的实数根.\n因此 $\\Delta=(b-c)^2-4 a(a+b+c)>0$, 即\n$$\n(b-c)^2>4 a(a+b+c) .\n$$",
+    "remark": "",
+    "figures": []
+}

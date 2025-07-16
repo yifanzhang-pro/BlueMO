@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题12. 已知 $\\sin x<\\sin \\frac{5 \\pi}{4}$, 且 $x$ 为第三象限角, 则 $x$ 的取值范围为",
+    "solution": "$\\left(2 k \\pi+\\frac{5 \\pi}{4}, 2 k \\pi+\\frac{3 \\pi}{2}\\right),(k \\in \\mathbf{Z})$. 利用函数的单调性可得.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $n>1,2 \\nmid n$, 则对任意整数 $m>0$, 有 $n \\nmid\\left(m^{n-1}+1\\right)$.",
+    "solution": "证明:假设有大于 1 的奇数 $n$, 满足 $n \\mid\\left(m^{n-1}+1\\right)$, 则 $(m, n)=1$. 设 $p$ 是 $n$ 的任一个素约数, $r$ 是 $m$ 模 $p$ 的阶 (注意 $p \\nmid m$ ). 又设 $n-1=2^k t, k \\geqslant 1,2 \\nmid t$. 那么就有\n$$\nm^{2^k t} \\equiv-1(\\bmod p), \\label{eq1}\n$$\n从而 $m^{2^{k+1} t} \\equiv 1(\\bmod p)$,故 $r \\mid 2^{k+1} t$.\n关键的一点是证明 $2^{k+1} \\mid r$. 假设这结论不对, 那么 $r=2^s r_1$, 其中 $0 \\leqslant s \\leqslant k, r_1 \\mid t$. 则由 $m^r \\equiv 1(\\bmod p)$ 推出 $m^{2^k t} \\equiv 1(\\bmod p)$, 结合 式\\ref{eq1} 得 $p=2$, 矛盾! 故 $2^{k+1} \\mid r$.\n现在由 $(p, m)=1$, 得出 $m^{p-1} \\equiv 1(\\bmod p)$, 从而 $r \\mid(p-1)$, 故 $2^{k+1} \\mid (p-1)$, 即 $p \\equiv 1\\left(\\bmod 2^{k+1}\\right)$. 由于 $p$ 是 $n$ 的任一素因子, 将 $n$ 作标准分解, 即知 $n \\equiv 1\\left(\\bmod 2^{k+1}\\right)$, 即 $2^{k+1} \\mid(n-1)$, 但这与前面所设的 $2^k \\|(n-1)$ 相违.",
+    "remark": "",
+    "figures": []
+}

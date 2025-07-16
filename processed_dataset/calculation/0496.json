@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例5 已知函数 $f(x)=3 a x^2+2 b x+c(a \\neq 0)$, 当 $0 \\leqslant x \\leqslant 1$ 时, $|f(x)| \\leqslant$ 1 , 试求 $a$ 的最大值.",
+    "solution": "解:由 $\\left\\{\\begin{array}{l}f(0)=c, \\\\ f\\left(\\frac{1}{2}\\right)=\\frac{3}{4} a+b+c, \\text { 得 } \\\\ f(1)=3 a+2 b+c\\end{array}\\right.$\n$$\n3 a=2 f(0)+2 f(1)-4 f\\left(\\frac{1}{2}\\right) \\text {. }\n$$\n所以\n$$\n\\begin{aligned}\n3|a| & =\\left|2 f(0)+2 f(1)-4 f\\left(\\frac{1}{2}\\right)\\right| \\\\\n& \\leqslant 2|f(0)|+2|f(1)|+4\\left|f\\left(\\frac{1}{2}\\right)\\right| \\leqslant 8,\n\\end{aligned}\n$$\n故 $a \\leqslant \\frac{8}{3}$.\n又易知当 $f(x)=8 x^2-8 x+1$ 时满足题设条件, 所以 $a$ 的最大值为 $\\frac{8}{3}$.",
+    "remark": "",
+    "figures": []
+}

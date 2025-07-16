@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题17. 已知圆 $\\Gamma$ 和直线 $l$ 不相交, $P 、 Q 、 R 、 S$ 为圆 $\\Gamma$ 上的点, $P Q$ 与 $R S 、 P S$ 与 $Q R$ 分别交于点 $A 、 B, A 、 B$ 在直线 $l$ 上.\n试确定所有以 $A B$ 为直径的圆的公共点.",
+    "solution": "如图(<FilePath:./images/volume7/figures/fig-c5a17.png>), 设圆 $\\Gamma$ 的圆心为 $O$, 半径为 $r$. 由密克定理知, $\\triangle A P S$ 和 $\\triangle B R S$ 的外接圆交于点 $K$, 且 $K$ 在边 $A B$ 上.\n由圆幂定理得: $A O^2-r^2=A S \\cdot A R= A K \\cdot A B=A K^2+A K \\cdot K B, B O^2-r^2=B S \\cdot B P=B K \\cdot B A=B K^2+B K \\cdot K A$. 于是 $A O^2- A K^2=B O^2-B K^2$, 即 $O K$ 为 $A B$ 的垂线, 且 $A K K B=O K^2-r^2$.\n对任何一对满足条件的点 $\\{A, B\\}$, 因为 $O 、 K$ 、 $r$ 是固定的, 所以, 以 $A B$ 为直径的圆一定过直线\n$O K$ 上的两点, 其到直线 $l$ 距离为 $\\sqrt{O K^2-r^2}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5a17.png"
+    ]
+}

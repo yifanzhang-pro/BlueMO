@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 证明如图(<FilePath:./images/volume12/figures/fig-c7p10.png>)无哈密顿圈.",
+    "solution": "图中的面只有 2 边形及 6 边形两种, 分别有 3 个.\n若此图有哈密顿圈, 根据定理四, $4\\left(f_6^{\\prime}-f_6^{\\prime \\prime}\\right)=0$, 即 $f_6^{\\prime}=f_6^{\\prime \\prime}$, 但 $f_6^{\\prime}+f_6^{\\prime \\prime}=3$, 这不可能.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c7p10.png"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 求证:任意凸四边形各边中点连线的中点必重合.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c11a7.png>),  $a b c d$ 是任意四边形, $h, k, f, g$ 是各边的中点.\n因为 $h=\\frac{a+b}{2}, k=\\frac{b+c}{2}, f=\\frac{c+d}{2}, g=\\frac{d+a}{2}$\n故 $\\overrightarrow{h f}$ 的中点为 $O_1=\\frac{1}{2}(h+f)=\\frac{1}{4}(a+b+c+d)\\overrightarrow{k g}$ 的中点为 $O_2=\\frac{1}{2}(k+g)=\\frac{1}{4}(a+b+c+d)$\n由此知 $O_1=O_2$. 这就是要证得结果.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c11a7.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 已知 $\\frac{\\pi}{2}<\\alpha+\\beta<\\frac{5 \\pi}{2},-\\frac{\\pi}{2}<\\alpha-\\beta<\\frac{3 \\pi}{2}$, 那么 $\\cos \\alpha$ 与 $\\sin \\beta$ 的大小关系是( ).\n(A) $\\cos \\alpha=\\sin \\beta$\n(B) $\\cos \\alpha<\\sin \\beta$\n(C) $\\cos \\alpha>\\sin \\beta$\n(D) 不能确定",
+    "solution": "B. $\\cos \\alpha-\\sin \\beta=\\sin \\left(\\frac{\\pi}{2}-\\alpha\\right)-\\sin \\beta=2 \\cos \\left(\\frac{\\pi}{4}-\\frac{\\alpha-\\beta}{2}\\right) \\sin \\left(\\frac{\\pi}{4}-\\right. \\left.\\frac{\\alpha+\\beta}{2}\\right), \\cos \\left(\\frac{\\pi}{4}-\\frac{\\alpha-\\beta}{2}\\right)>0, \\sin \\left(\\frac{\\pi}{4}-\\frac{\\alpha+\\beta}{2}\\right)<0$, 故 $\\cos \\alpha<\\sin \\beta$.",
+    "remark": "",
+    "figures": []
+}

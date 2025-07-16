@@ -1,0 +1,785 @@
+
+%%TEXT_BEGIN%%
+在三角形中,角与边之间存在着下列关系 : 三角形的角与角之间有 “内角和是 $180^{\circ}$ (即 $\pi$ 弧度)”; 边与边之间有 “任意两边之和大于第三边, 两边之差小于第三边”; 边与角之间有正弦定理 $\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}=2 R$, 余弦定理 $a^2=b^2+c^2-2 b c \cos A, b^2=c^2+a^2-2 c a \cos B, c^2=a^2+b^2-2 a b \cos C$ 等关系.
+特别地, 当三角形中有一角为直角时, 斜边的平方等于两直角边的平方和.
+三角形面积公式 $S_{\triangle A B C}=\frac{1}{2} a b \sin C=\frac{1}{2} b c \sin A=\frac{1}{2} a c \sin B$, 还有 $S=\frac{a b c}{4 R}$, $S=2 R^2 \sin A \sin B \sin C, S=p r$, 海伦公式 $S=\sqrt{p(p-a)(p-b)(p-c)}$, 其中 $R 、 r$ 分别为三角形外接圆和内切圆半径, $p=\frac{1}{2}(a+b+c)$.
+利用正弦定理解三角形时, 必须注意三角形的多解性, 如已知角 $A$ 、边 $a$ 、 $b$ 时,列表如下:
+\begin{tabular}{c|c|c}
+\hline & $A \geqslant 90^{\circ}$ & $A<90^{\circ}$ \\
+\hline$a>b$ & 一解 & 一解 \\
+\hline$a=b$ & 无解 & 一解 \\
+\hline \multirow{2}{*}{$a<b$} & \multirow{2}{*}{ 解 } & $a>b \sin A$ 两解 \\
+& & $a=b \sin A$ 一解 \\
+& & $a<b \sin$ 无解 \\
+\hline
+\end{tabular}
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1 如图(<FilePath:./figures/fig-c3e1-1.png>), 走廊宽为 $3 \mathrm{~m}$, 夹角为 $120^{\circ}$, 地面是水平的, 走廊两端足够长, 问: 保持水平位置通过走廊的木棒 (不计粗细) 的最大长度是多少?
+%%<SOLUTION>%%
+分析:本题的关键是把棒的长度表示为某一个变量的函数, 然后求最值.
+解如图(<FilePath:./figures/fig-c3e1-2.png>), 过走廊转角内顶点 $P$ 任作水平直线与走廊外侧交于点 $A 、 B$. 则在水平位置通过走廊的木棒长度小于或等于 $A B$.
+设 $\angle B A Q=\alpha$, 则 $\angle A B Q=60^{\circ}-\alpha$,
+$$
+A B=A P+P B=\frac{3}{\sin \alpha}+\frac{3}{\sin \left(60^{\circ}-\alpha\right)} .
+$$
+当 $\alpha$ 变化时, 上式的最小值即是在水平位置通过走廊的木棒的最大长度.
+由平均不等式及积化和差得:
+$$
+\begin{aligned}
+A B & \geqslant 6 \sqrt{\frac{1}{\sin \alpha \cdot \sin \left(60^{\circ}-\alpha\right)}}=6 \sqrt{\frac{1}{\frac{1}{2}\left[\cos \left(60^{\circ}-2 \alpha\right)-\cos 60^{\circ}\right]}} \\
+& \geqslant 6 \sqrt{\frac{2}{1-\frac{1}{2}}}=12 .
+\end{aligned}
+$$
+当且仅当 $\alpha=30^{\circ}$ 时, $A B=12$.
+故在水平位置能通过走廊的木棒的最大长度为 $12 \mathrm{~m}$.
+评注本题是求最小值中的最大值.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2 已知 $\triangle A B C$ 中, $\angle B A O=\angle C A O=\angle C B O=\angle A C O$.
+求证: $\triangle A B C$ 三边长为等比数列.
+%%<SOLUTION>%%
+分析:边角关系互化,用三角函数处理也是较好的方法之一,本书多次用三角法解决平面儿何问题.
+证明如图 (<FilePath:./figures/fig-c3e2.png>), 设 $\angle B A O=\angle C B O= \angle A C O=\alpha$.
+在 $\triangle O A B$ 中, 由正弦定理: $\frac{A B}{\sin \angle A O B}=\frac{O B}{\sin \angle B A O}$, 而 $\sin \angle A O B=\sin (\angle B A O+\angle A B O)= \sin (\angle C B O+\angle A B O)=\sin B$.
+所以
+$$
+\frac{A B}{\sin B}=\frac{O B}{\sin \alpha} \quad\quad (1),
+$$
+同理在 $\triangle O B C$ 中, 有 $\frac{B C}{\sin C}=\frac{O B}{\sin (C-\alpha)} \quad\quad (2)$ .
+$(1) \div (2)$, 有
+$$
+\frac{A B \sin C}{B C \sin B}=\frac{\sin (C-\alpha)}{\sin \alpha} \text {. } 
+$$
+$$
+\text { 即 } \frac{\sin ^2 C}{\sin A \sin B}=\frac{\sin (C-\alpha)}{\sin \alpha} \text {, 而 } \frac{\sin (C-\alpha)}{\sin \alpha}=\frac{\sin C \cos \alpha-\cos C \sin \alpha}{\sin \alpha}=\sin C \cot \alpha-\cos C
+$$
+所以 $\frac{\sin ^2 C}{\sin A \sin B}=\sin C \cdot \cot \alpha-\cos C$, 则 
+$$
+\cot \alpha=\frac{\sin C}{\sin A \sin B}+\cot C=\frac{\sin (A+B)}{\sin A \sin B}+\cot C=\frac{\sin A \cos B+\cos A \sin B}{\sin A \sin B}+\cot C=\cot A+\cot B+\cot C \text {. }
+$$
+因为 $\alpha=\frac{A}{2}$, 所以 $\cot \frac{A}{2}=\cot A+\cot B+\cot C$,
+而
+$$
+\begin{gathered}
+\cot \frac{A}{2}-\cot A=\frac{\cos \frac{A}{2}}{\sin \frac{A}{2}}-\frac{\cos A}{\sin A}=\frac{\sin \frac{A}{2}}{\sin \frac{A}{2} \sin A}=\frac{1}{\sin A} \text {, 又 } \\
+\cot B+\cot C=\frac{\cos B}{\sin B}+\frac{\cos C}{\sin C}=\frac{\sin A}{\sin B \sin C},
+\end{gathered}
+$$
+所以 $\frac{1}{\sin A}=\frac{\sin A}{\sin B \sin C}$, 即 $\sin ^2 A=\sin B \sin C$, 即 $a^2=b c$, 得证.
+评注如果 $P$ 是 $\triangle A B C$ 内一点, 且 $\angle P A B=\angle P B C=\angle P C A=\alpha$, 则称 $P$ 为 $\triangle A B C$ 的布洛卡点.
+布洛卡点的一个基本性质是: $\cot A+\cot B+\cot C= \cot \alpha$. 本题 $\alpha=\frac{A}{2}$. 另证: $\frac{O A}{\sin \left(B-\frac{A}{2}\right)}=\frac{O B}{\sin \frac{A}{2}}, \frac{O C}{\sin \frac{A}{2}}=\frac{O B}{\sin \left(C-\frac{A}{2}\right)}$, 又因为 $O A=O C$, 所以上两式相比得 $\sin ^2 \frac{A}{2}=\sin \left(B-\frac{A}{2}\right) \cdot \sin \left(C-\frac{A}{2}\right) \Rightarrow 1- \cos A=\cos (B-C)-\cos (B+C-A)$, 因为 $B+C-A=\pi-2 A$, 所以 $1 - \cos 2 A=\cos (B-C)+\cos A$, 所以 $2 \sin ^2 A=2 \sin B \sin C$, 即 $a^2=b c$, 得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3 在四边形 $A B C D$ 中, 若 $A B=a, B C=b, C D=c, A D=d, A C=e, B D=f$, 则求证 $a^2 c^2+b^2 d^2=e^2 f^2+2 a b c d \cos (A+C)$.
+%%<SOLUTION>%%
+分析:由于要证等式的左边是 $a^2 c^2+b^2 d^2$, 联想到 $1=\sin ^2 \alpha+\cos ^2 \alpha$. 将右边的项 $e^2 f^2$ 分解成: $e^2 f^2=(e f \sin \alpha)^2+(e f \cos \alpha)^2$, (其中令 $\alpha=\angle A O B$ ), 而 ef $\sin \alpha=2 S$ ( $S$ 为四边形 $A B C D$ 的面积), $e=O A+O C, f=O B+O D$. 于是应用余弦定理可将 $(e f)^2$ 用 $S 、 a 、 b 、 c 、 d$ 表示,进而变形得解.
+证明如图(<FilePath:./figures/fig-c3e3.png>), 设 $A C$ 与 $B D$ 交于 $O, \angle A O B= \alpha$, 四边形 $A B C D$ 的面积为 $S$. 则 $e^2 f^2=(e f \sin \alpha)^2+ (e f \cos \alpha)^2$.
+而
+$e f \sin \alpha=2 S$,
+$$
+\begin{aligned}
+e f  \cos \alpha= & (O A+O C)(O B+O D) \cos \alpha \\
+= & O A \cdot O B \cos \alpha+O B \cdot O C \cos \alpha+O C \cdot O D \cos \alpha  +O A \cdot O D \cos \alpha \\
+= & \frac{O A^2+O B^2-A B^2}{2}-\frac{O B^2+O C^2-B C^2}{2}  +\frac{O C^2+O D^2-C D^2}{2}-\frac{O A^2+O D^2-A D^2}{2} \\
+= & \frac{b^2+d^2-a^2-c^2}{2},
+\end{aligned}
+$$
+故
+$$
+(e f)^2=4 S^2+\frac{1}{4}\left(b^2+d^2-a^2-c^2\right)^2, \quad\quad (1)
+$$
+但
+$$
+f^2=a^2+d^2-2 a d \cos A=b^2+c^2-2 b c \cos C,
+$$
+所以
+$$
+a d \cos A-b c \cos C=\frac{a^2+d^2-b^2-c^2}{2}, \quad\quad (2)
+$$
+而
+$$
+a d \sin A+b c \sin C=2 S \text {. }  \quad\quad (3)
+$$
+由 $(2)^2+(3)^2$, 得
+$$
+a^2 d^2+b^2 c^2-2 a b c d \cos (A+C)=4 S^2+\frac{\left(a^2+d^2-b^2-c^2\right)^2}{4} .  \quad\quad (4)
+$$
+由(1)、(4), 得 
+$$
+\begin{aligned}
+e^2 f^2=& a^2 d^2+b^2 c^2-2 a b c d \cos (A+C)-\frac{1}{4}\left(a^2+b^2-d^2- c^2\right)^2+\frac{1}{4}\left(b^2+d^2-a^2-c^2\right)^2 \\
+= & a^2 d^2+b^2 c^2-2 a b c d \cos (A+C)+\left(d^2-c^2\right)\left(b^2-a^2\right) \\
+= & a^2 c^2+b^2 d^2-2 a b c d \cos (A+C),
+\end{aligned}
+$$
+故
+$$
+a^2 c^2+b^2 d^2=e^2 f^2+2 a b c d \cos (A+C) .
+$$
+评注本例可视为余弦定理对四边形的一个推广, 另外当四边形为圆内接四边形时本例成为托勒密定理.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4 在圆内接四边形 $A B C D$ 中, 设 $A B=a, B C=b, C D=c, D A= d$, 四边形 $A B C D$ 面积为 $S$, 圆半径为 $R$, 且令 $p=\frac{a+b+c+d}{2}$.
+求证: (1) $\cos B=\frac{a^2+b^2-c^2-d^2}{2(a b+c d)}$;
+(2) $R=\frac{1}{4} \sqrt{\frac{(a b+c d)(a c+b d)(a d+b c)}{(p-a)(p-b)(p-c)(p-d)}}$.
+%%<SOLUTION>%%
+分析:(1) 的右边类似于两个余弦定理的合成; (2) 的证明要综合运用正、余弦定理.
+证明如图(<FilePath:./figures/fig-c3e4.png>), 设 $A C=m$.
+(1) 在 $\triangle A B C$ 中, $\cos B=\frac{a^2+b^2-m^2}{2 a b}$, 在 $\triangle A D C$ 中, $\cos D=\frac{d^2+c^2-m^2}{2 d c}$.
+因为四边形 $A B C D$ 内接于圆, 所以 $\cos B=-\cos D$.
+故 $\frac{a^2+b^2-m^2}{2 a b}=\frac{m^2-d^2-c^2}{2 d c}=\frac{a^2+b^2-d^2-c^2}{2 a b+2 d c}$ (合比定理),所以
+$$
+\cos B=\frac{a^2+b^2-d^2-c^2}{2(a b+c d)} .
+$$
+(2) 由于 $B$ 是 $\triangle A B C$ 的内角,所以
+$$
+\begin{aligned}
+\sin B & =\sqrt{1-\cos ^2 B}=\sqrt{1-\left[\frac{a^2+b^2-c^2-d^2}{2(a b+c d)}\right]^2} \\
+& =\frac{\sqrt{4(a b+c d)^2-\left(a^2+b^2-c^2-d^2\right)^2}}{2(a b+c d)} \\
+& =\frac{\left[\left(2 a b+2 c d+a^2+b^2-c^2-d^2\right)\left(2 a b+2 c d-a^2-b^2+c^2+d^2\right)\right]^{\frac{1}{2}}}{2(a b+c d)} \\
+& =\frac{\left\{\left[(a+b)^2-(c-d)^2\right]\left[(c+d)^2-(a-b)^2\right]\right\}^{\frac{1}{2}}}{2(a b+c d)} \\
+& =\frac{[(a+b+c-d)(a+b-c+d)(a-b+c+d)(-a+b+c+d)]^{\frac{1}{2}}}{2(a b+c d)} \\
+& =\frac{2 \sqrt{(p-a)(p-b)(p-c)(p-d)}}{a b+c d} .
+\end{aligned}
+$$
+在 $\triangle A B C$ 中,
+$$
+\begin{aligned}
+A C^2 & =a^2+b^2-2 a b \cos B \\
+& =a^2+b^2-2 a b \cdot \frac{a^2+b^2-c^2-d^2}{2(a b+c d)} \\
+& =\frac{c d\left(a^2+b^2\right)+a b\left(c^2+d^2\right)}{a b+c d} \\
+& =\frac{(a c+b d)(a d+b c)}{a b+c d},
+\end{aligned}
+$$
+所以
+$$
+A C=\frac{\sqrt{(a b+c d)(a c+b d)(a d+b c)}}{a b+c d} .
+$$
+由正弦定理得, $2 R=\frac{A C}{\sin B}, R=\frac{A C}{2 \sin B}$, 故
+$$
+R=\frac{1}{4} \sqrt{\frac{(a b+c d)(a c+b d)(a d+b c)}{(p-a)(p-b)(p-c)(p-d)}} .
+$$
+评注本例(1)可以看作圆内接四边形的余弦定理, 另外由
+$$
+\begin{aligned}
+S & =S_{\triangle A B C}+S_{\triangle A C D}=\frac{1}{2} a b \sin B+\frac{1}{2} c d \sin D \\
+& =\frac{1}{2}(a b+c d) \sin B \\
+& =\sqrt{(p-a)(p-b)(p-c)(p-d)},
+\end{aligned}
+$$
+可以看成圆内接四边形面积的海伦公式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5 设 $\alpha 、 \beta 、 \gamma 、 \varphi$ 为某四边形的四个内角, $n$ 为正偶数, 若 $\alpha 、 \beta 、 \gamma 、 \varphi$ 满足 $\sin n \alpha+\sin n \beta+\sin n \gamma+\sin n \varphi=0$.
+%%<SOLUTION>%%
+求证: $\alpha 、 \beta 、 \gamma 、 \varphi$ 之中必有两个角之和在集合 $\left\{\frac{2 \pi}{n}, \frac{4 \pi}{n}, \frac{6 \pi}{n}, \cdots, \pi\right\}$ 中.
+分析由 $\alpha+\beta+\gamma+\varphi=2 \pi$, 故两角和之间可以互换.
+证明因为 $\alpha+\beta+\gamma+\varphi=2 \pi$, 所以 $\frac{n \alpha+n \beta}{2}+\frac{m \gamma+n \varphi}{2}=n \pi$.
+又 $n$ 为正偶数,所以 $\quad \sin \frac{n \alpha+n \beta}{2}=-\sin \frac{m \gamma+n \varphi}{2}$,
+$$
+\begin{aligned}
+& \sin n \alpha+\sin n \beta+\sin n \gamma+\sin n \varphi=0 \\
+\Leftrightarrow & 2 \sin \frac{n \alpha+n \beta}{2} \cos \frac{n \alpha-n \beta}{2}+2 \sin \frac{n \gamma+n \varphi}{2} \cos \frac{n \gamma-n \varphi}{2}=0 \\
+\Leftrightarrow & 2 \sin \frac{n \alpha+n \beta}{2}\left(\cos \frac{n \alpha-n \beta}{2}-\cos \frac{n \gamma-n \varphi}{2}\right)=0 \\
+\Leftrightarrow & \sin \frac{n \alpha+n \beta}{2}=0 \text { 或 } \cos \frac{n \alpha-n \beta}{2}=\cos \frac{n \gamma-n \varphi}{2} .
+\end{aligned}
+$$
+(1) 若 $\sin \frac{n \alpha+n \beta}{2}=0$, 则 $\frac{n \alpha+n \beta}{2}=k \pi(k \in \mathbf{Z})$, 即 $\alpha+\beta=\frac{2 k \pi}{n}(k \in \mathbf{Z})$, 又 $0<\alpha+\beta<2 \pi$, 则 $0<\frac{2 k \pi}{n}<2 \pi \Rightarrow 0<k<n$, 从而 $k=1,2,3, \cdots, n-1$. 即 $\alpha+\beta=\frac{2 \pi}{n}, \frac{4 \pi}{n}, \frac{6 \pi}{n}, \cdots, \frac{2(n-1)}{n} \pi$.
+(2) 若 $\cos \frac{n \alpha-n \beta}{2}=\cos \frac{n \gamma-n \varphi}{2}$, 则 $\frac{n \alpha-n \beta}{2}=\frac{n \gamma-n \varphi}{2}+2 k \pi$ 或 $\frac{n \alpha-n \beta}{2}=-\frac{n \gamma-n \varphi}{2}+2 k \pi(k \in \mathbf{Z})$
+由于
+$$
+\alpha+\beta+\gamma+\varphi=2 \pi,
+$$
+则得 $\alpha+\varphi=\pi+\frac{2 k \pi}{n}$ 或 $\alpha+\gamma=\pi+\frac{2 k \pi}{n}(k \in \mathbf{Z})$.
+当 $\alpha+\varphi=\pi+\frac{2 k \pi}{n}(k \in \mathbf{Z})$ 时, 因为 $0<\alpha+\varphi<2 \pi$, 故有
+$$
+\begin{aligned}
+& \alpha+\varphi=\frac{2 \pi}{n}, \frac{4 \pi}{n}, \frac{6 \pi}{n}, \cdots, \frac{2(n-1)}{n} \pi, \\
+& \alpha+\gamma=\frac{2 \pi}{n}, \frac{4 \pi}{n}, \frac{6 \pi}{n}, \cdots, \frac{2(n-1)}{n} \pi .
+\end{aligned}
+$$
+同理可得注意到 $n$ 为正偶数, $\pi$ 在上面的集合中, 又因为 $\frac{2 i \pi}{n}+\frac{2(n-i) \pi}{n}=2 \pi$. 结合四边形的内角之和为 $2 \pi$.
+因此, $\alpha 、 \beta 、 \gamma 、 \varphi$ 至少存在两个角之和在集合 $\left\{\frac{2 \pi}{n}, \frac{4 \pi}{n}, \frac{6 \pi}{n}, \cdots, \pi\right\}$ 中.
+评注本例中如 $n$ 取 2 , 则有如果 $\sin 2 \alpha+\sin 2 \beta+\sin 2 \gamma+\sin 2 \varphi=0$, 则 $\alpha 、 \beta 、 \gamma 、 \varphi$ 中必有两角和为 $\pi$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6 在 $\triangle A B C$ 中, $A B=A C, \angle C A B 、 \angle A B C$ 的内角平分线分别与边 $B C 、 C A$ 交于点 $D 、 E$, 设 $K$ 是 $\triangle A D C$ 的内心, 若 $\angle B E K=45^{\circ}$, 求 $\angle C A B$ 所有可能的值.
+%%<SOLUTION>%%
+分析:用三角法求解平面几何问题,可以先建立三角方程,再求解。
+解如图 (<FilePath:./figures/fig-c3e6.png>), 设 $A D$ 与 $B E$ 交于点 $I, \triangle A B C$ 内切圆 $\odot I$ 的半径为 $r$.
+$\angle A B C=2 \alpha\left(0<\alpha<45^{\circ}\right)$, 由 $A B=A C$, 知 $A D \perp B C, \angle A C B=2 \alpha$, 故 $I D=r$.
+$$
+I E=\frac{r}{\sin \angle B E C}=\frac{r}{\sin 3 \alpha}, \quad\quad (1)
+$$
+连结 $D K$, 由 $K$ 是 $\triangle A C D$ 的内心, 知 $I 、 K 、 C$ 三点共线, 且 $\angle I C D= \angle I C E=\alpha$,
+$$
+\angle C D K=\angle I D K=45^{\circ}=\angle B E K,
+$$
+从而 $\triangle I D K 、 \triangle I E K$ 的外接圆半径相等, 即
+$$
+\frac{I D}{\sin \angle I K D}=\frac{I E}{\sin \angle I K E} . \quad\quad (2)
+$$
+又
+$$
+\angle I K D=\angle I C D+\angle C D K=\alpha+45^{\circ},
+$$
+$$
+\angle I K E=\angle B I C-\angle B E K=2\left(90^{\circ}-\alpha\right)-45^{\circ}=135^{\circ}-2 \alpha .
+$$
+由(1)、(2)得， $\sin \left(\alpha+45^{\circ}\right)=\sin 3 \alpha \cdot \sin \left(135^{\circ}-2 \alpha\right)$
+$$
+\begin{aligned}
+& \Leftrightarrow \sin \alpha+\cos \alpha=\sin 3 \alpha(\sin 2 \alpha+\cos 2 \alpha) \\
+& \Leftrightarrow 2 \sin \alpha+2 \cos \alpha=\cos \alpha-\cos 5 \alpha+\sin \alpha+\sin 5 \alpha \\
+& \Leftrightarrow \sin \alpha+\cos \alpha=\sin 5 \alpha-\cos 5 \alpha \\
+& \Leftrightarrow \sin \left(\alpha+45^{\circ}\right)=\sin \left(5 \alpha-45^{\circ}\right) \\
+& \Leftrightarrow 2 \sin \left(2 \alpha-45^{\circ}\right) \cos 3 \alpha=0 \\
+& \Leftrightarrow 3 \alpha=90^{\circ} \text { 或 } 2 \alpha=45^{\circ} \\
+& \Leftrightarrow \angle B A C=60^{\circ} \text { 或 } 90^{\circ} .
+\end{aligned}
+$$
+评注本题用三角法求解的关键是: 选择变量, 建立方程.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7 已知 $\left(x_1, y_1\right) 、\left(x_2, y_2\right) 、\left(x_3, y_3\right)$ 是圆 $x^2+y^2=1$ 上的三点, 且满足 $x_1+x_2+x_3=0, y_1+y_2+y_3=0$.
+求证: $x_1^2+x_2^2+x_3^2=y_1^2+y_2^2+y_3^2=\frac{3}{2}$.
+%%<SOLUTION>%%
+分析:由条件 $x_1+x_2+x_3=0, y_1+y_2+y_3=0$ 再结合重心坐标公式, 可知该三角形的外心也是重心, 故三点构成正三角形.
+证明令 $\overrightarrow{O A}=\left(x_1, y_1\right), \overrightarrow{O B}=\left(x_2, y_2\right), \overrightarrow{O C}=\left(x_3, y_3\right)$, 则
+$$
+|\overrightarrow{O A}|=|\overrightarrow{O B}|=|\overrightarrow{O C}|=1, \overrightarrow{O A}+\overrightarrow{O B}+\overrightarrow{O C}=\overrightarrow{0} \text {. }
+$$
+所以, $O$ 为 $\triangle A B C$ 的外心也是 $\triangle A B C$ 的重心.
+从而, $\triangle A B C$ 是正三角形.
+不妨设 $\overrightarrow{O A}=(\cos \alpha, \sin \alpha), \overrightarrow{O B}=\left(\cos \left(\alpha+120^{\circ}\right), \sin \left(\alpha+120^{\circ}\right)\right)$, $\overrightarrow{O C}=\left(\cos \left(\alpha-120^{\circ}\right), \sin \left(\alpha-120^{\circ}\right)\right)$, 故
+$$
+\begin{aligned}
+\sum_{i=1}^3 x_i^2 & =\cos ^2 \alpha+\cos ^2\left(\alpha+120^{\circ}\right)+\cos ^2\left(\alpha-120^{\circ}\right) \\
+& =\frac{3}{2}+\frac{\cos 2 \alpha+\cos \left(2 \alpha+240^{\circ}\right)+\cos \left(2 \alpha-240^{\circ}\right)}{2} \\
+& =\frac{3}{2}+\frac{\cos 2 \alpha+2 \cos 2 \alpha \cdot \cos 240^{\circ}}{2}=\frac{3}{2} . \\
+\sum_{i=1}^3 y_i^2= & \sin ^2 \alpha+\sin ^2\left(\alpha+120^{\circ}\right)+\sin ^2\left(\alpha-120^{\circ}\right) \\
+=\ &frac{3}{2}-\frac{\cos 2 \alpha+\cos \left(2 \alpha+240^{\circ}\right)+\cos \left(2 \alpha-240^{\circ}\right)}{2}=\frac{3}{2} .
+\end{aligned}
+$$
+评注本题解法先将点形象化, 三点构成正三角形, 再将坐标三角化, 用三角函数表示坐标, 使最后的求解带来方便.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8 在 $\triangle A B C$ 中,已知 $A: B=1: 2$, 求证: $\frac{a}{b}=\frac{a+b}{a+b+c}$.
+%%<SOLUTION>%%
+分析:由关于角的已知条件去证明边的等量关系, 其 “桥梁” 是正弦定理, 题中结论使人联想到等比性质.
+证法一设 $A=\alpha, B=2 \alpha$, 则 $C=\pi-3 \alpha$, 由正弦定理得：
+$$
+\begin{gathered}
+\frac{a}{b}=\frac{\sin \frac{\alpha}{\sin 2 \alpha}=\frac{1}{2 \cos \alpha} .}{\frac{a+b}{a+b+c}=} \frac{\sin \alpha+\sin 2 \alpha}{\sin \alpha+\sin 2 \alpha+\sin (\pi-3 \alpha)} \\
+=\frac{\sin \alpha+\sin 2 \alpha}{2 \sin 2 \alpha \cos \alpha+\sin 2 \alpha} \\
+=\frac{1}{2 \cos \alpha}, \\
+\frac{a}{b}=\frac{a+b}{a+b+c} . \\
+\frac{a}{b}=\frac{\sin \alpha}{\sin 2 \alpha}=\frac{1}{2 \cos \alpha}, \\
+\cos \alpha=\frac{b^2+c^2-a^2}{2 b c}, \\
+b^2=a^2+a c, \\
+\frac{a}{b}=\frac{b}{a+c}=\frac{a+b}{a+b+c} .
+\end{gathered}
+$$
+证法二同证法一得
+$$
+\frac{a}{b}=\frac{\sin \alpha}{\sin 2 \alpha}=\frac{1}{2 \cos \alpha}
+$$
+而代入得
+$$
+b^2=a^2+a c
+$$
+故
+$$
+\frac{a}{b}=\frac{b}{a+c}=\frac{a+b}{a+b+c} .
+$$
+评注三角形中有关边角关系恒等式或条件等式的证明问题, 通常利用正、余弦定理进行边角的转换, 根据三角形内角和及三角变换公式来证明.
+本题利用平面几何中相似三角形等有关知识亦可证明.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9 在 $\triangle A B C$ 中, 若角 $A 、 B 、 C$ 成等差数列, 外接圆直径为 1 , 若三个角所对的边分别为 $a 、 b 、 c$, 求 $a^2+c^2$ 的取值范围.
+%%<SOLUTION>%%
+解:法一由条件得 $2 B=A+C$, 故有 $B=60^{\circ}, A+C=120^{\circ}$.
+由正弦定理得 
+$$
+\begin{aligned}
+a^2+c^2 & =(2 R \sin A)^2+(2 R \sin C)^2 \\
+& =\sin ^2 A+\sin ^2 C=\frac{1-\cos 2 A+1-\cos 2 C}{2} \\
+& =1-\cos (A+C) \cos (A-C) \\
+& =1+\frac{1}{2} \cos (A-C), \\
+\end{aligned}
+$$
+因为 $-120^{\circ}<A-C<120^{\circ}$
+所以 $-\frac{1}{2}<\cos (A-C) \leqslant 1$. 从而 $a^2+c^2 \in\left(\frac{3}{4}, \frac{3}{2}\right]$.
+解法二同解法一得 $B=60^{\circ}$, 于是由正弦定理得 $b=2 R \sin B=\frac{\sqrt{3}}{2}$, 由余弦定理得 $b^2=\frac{3}{4}=a^2+c^2-2 a c \cos 60^{\circ}$.
+因为 $a^2+c^2 \geqslant 2 a c$, 所以 $a^2+c^2=\frac{3}{4}+2 a c \cos 60^{\circ} \leqslant \frac{3}{4}+\frac{1}{2}\left(a^2+c^2\right)$. 从而 $a^2+c^2 \leqslant \frac{3}{2}$.
+显然 $a^2+c^2=\frac{3}{4}+2 a c \cos 60^{\circ}>\frac{3}{4}$, 故 $a^2+c^2 \in\left(\frac{3}{4}, \frac{3}{2}\right]$.
+评注在三角形中, 三角成等差数列, 则 $B=60^{\circ}, A+C=120^{\circ}$, 由此结合其他条件可求三角形中的有关问题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10 在 $\triangle A B C$ 中, 若角 $A 、 B 、 C$ 的对边成等差数列.
+(1) 求证: $\tan \frac{A}{2} \tan \frac{C}{2}=\frac{1}{3}$;
+(2) 求 $5 \cos A-4 \cos A \cos C+5 \cos C$ 之值;
+(3) 若 $A-C=\frac{\pi}{2}$, 求三边之比.
+%%<SOLUTION>%%
+分析:已知三边之间的关系, 利用正弦定理转化成三内角之间的关系, 再和差化积后,进行整体代换.
+解 (1) 由 $a+c=2 b$, 得 $\sin A+\sin C=2 \sin B$,
+$$
+2 \sin \frac{A+C}{2} \cos \frac{A-C}{2}=2 \cdot 2 \sin \frac{A+C}{2} \cos \frac{A+C}{2} .
+$$
+因为 $0<\frac{A+C}{2}<\frac{\pi}{2}, \sin \frac{A+C}{2} \neq 0$, 所以 $\cos \frac{A-C}{2}=2 \cos \frac{A+C}{2}$, $\cos \frac{A}{2} \cos \frac{C}{2}+\sin \frac{A}{2} \sin \frac{C}{2}=2\left(\cos \frac{A}{2} \cos \frac{C}{2}-\sin \frac{A}{2} \sin \frac{C}{2}\right), 3 \sin \frac{A}{2} \sin \frac{C}{2}= \cos \frac{A}{2} \cos \frac{C}{2}$.
+又
+$$
+\cos \frac{A}{2} \neq 0, \cos \frac{C}{2} \neq 0,
+$$
+两边同除以 $\cos \frac{A}{2} \cos \frac{C}{2}$, 得
+$$
+\tan \frac{A}{2} \tan \frac{C}{2}=\frac{1}{3} \text {. }
+$$
+(2) 由(1)知 $2 \cos \frac{A+C}{2}=\cos \frac{A-C}{2}$,
+$$
+\begin{aligned}
+\text { 原式 } & =5(\cos A+\cos C)-2[\cos (A+C)+\cos (A-C)] \\
+& =10 \cos \frac{A+C}{2} \cos \frac{A-C}{2}-2\left[2 \cos ^2 \frac{A+C}{2}-1+2 \cos ^2 \frac{A-C}{2}-1\right] \\
+& =20 \cos ^2 \frac{A+C}{2}-4 \cos ^2 \frac{A+C}{2}-4 \times 4 \cos ^2 \frac{A+C}{2}+4=4 .
+\end{aligned}
+$$
+(3) 由 $A-C=\frac{\pi}{2}$ 及 $\cos \frac{A-C}{2}=2 \cos \frac{A+C}{2}$, 得 $\sin \frac{B}{2}=\frac{\sqrt{2}}{4}$, 所以 $\cos \frac{B}{2}=\frac{\sqrt{14}}{4}$
+$$
+\begin{gathered}
+\sin B=2 \sin \frac{B}{2} \cos \frac{B}{2}=2 \cdot \frac{\sqrt{2}}{4} \cdot \frac{\sqrt{14}}{4}=\frac{\sqrt{7}}{4}, \\
+\sin A+\sin C=\frac{\sqrt{7}}{2} .
+\end{gathered}
+$$
+又 $\sin A-\sin C=2 \cos \frac{A+C}{2} \sin \frac{A-C}{2}=2 \cdot \frac{\sqrt{2}}{4} \cdot \frac{\sqrt{2}}{2}=\frac{1}{2}$ ，
+所以 $\sin A=\frac{\sqrt{7}+1}{4}, \sin C=\frac{\sqrt{7}-1}{4}$,
+$$
+a: b: c=\sin A: \sin B: \sin C=(\sqrt{7}+1): \sqrt{7}:(\sqrt{7}-1) \text {. }
+$$
+评注整体代换是解决本题的关键技巧.
+从题中条件可推知: $\tan \frac{A}{2}$. $\tan \frac{C}{2}=\frac{1}{3}(*)$, 这是十分常见的等式.
+利用 $(*)$ 等式还可
+(1) 求值: $3 \tan \frac{A}{2}+3 \tan \frac{C}{2}-2 \cot \frac{B}{2}$;
+(答:0)
+(2) 求证: $\tan \frac{A}{2}+\tan \frac{C}{2} \geqslant \frac{2}{3} \sqrt{3}$;
+（由 (*)结合基本不等式即证）
+(3) 求证:三角形三边成等差数列的充分必要条件是: $\cos A+2 \cos B+ \cos C=2$ (提示 $: 2 \sin \frac{B}{2}=\cos \frac{A-C}{2} \Leftrightarrow 4 \sin ^2 \frac{B}{2}=2 \cos \frac{A+C}{2} \cos \frac{A-C}{2}$,再降次即得).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11 根据条件,分别判定满足下列条件的 $\triangle A B C$ 是怎样的三角形:
+(1) $a \cos B=b \cos A$;
+(2) $a \cos A=b \cos B$.
+%%<SOLUTION>%%
+解:法一 (1)由正弦定理, 得 $2 R \sin A \cos B=2 R \sin B \cos A$, 即 $\sin (A- B)=0$.
+又 $-\pi<A-B<\pi$, 所以 $A-B=0$, 即 $A=B, \triangle A B C$ 是等腰三角形.
+(2) 由正弦定理, 得 $2 R \sin A \cos A=2 R \sin B \cos B$, 即 $\sin 2 A=\sin 2 B$.
+又 $0<2 A<2 \pi, 0<2 B<2 \pi$, 所以 $2 A=2 B$ 或 $2 A=\pi-2 B, A=B$ 或 $A+B=\frac{\pi}{2}$.
+$\triangle A B C$ 是等腰三角形或是直角三角形.
+解法二 (1) 由余弦定理得 $a \cdot \frac{a^2+c^2-b^2}{2 a c}=b \cdot \frac{b^2+c^2-a^2}{2 b c}$, 
+化简得 $a=b, \triangle A B C$ 是等腰三角形.
+(2) 由余弦定理得 $a \cdot \frac{b^2+c^2-a^2}{2 b c}=b \cdot \frac{a^2+c^2-b^2}{2 a c}$.
+$$
+\begin{gathered}
+a^2\left(b^2+c^2-a^2\right)=b^2\left(a^2+c^2-b^2\right), \\
+a^2 c^2-a^4=b^2 c^2-b^4, \\
+c^2\left(a^2-b^2\right)=\left(a^2+b^2\right)\left(a^2-b^2\right) .
+\end{gathered}
+$$
+所以 $a=b$ 或 $c^2=a^2+b^2, \triangle A B C$ 是等腰三角形或是直角三角形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12 已知 $\triangle A B C$ 中, $\sin C=\frac{\sin A+\sin B}{\cos A+\cos B}$, 试判断其形状.
+%%<SOLUTION>%%
+分析:利用正、余弦定理,将等式化成边之间的关系后判断; 或从题设条件可联想到和差化积与积化和差, 将等式化简后判断.
+解法一原等式变形为
+$$
+\cos A+\cos B=\frac{\sin A+\sin B}{\sin C},
+$$
+由正、余弦定理代入条件等式得 $\frac{b^2+c^2-a^2}{2 b c}+\frac{a^2+c^2-b^2}{2 a c}=\frac{a+b}{c}$, 去分母、化简得 $a^2+b^2=c^2$, 所以 $\triangle A B C$ 是直角三角形.
+解法二由条件等式和差化积得
+$$
+\sin (A+B)=\frac{2 \sin \frac{A+B}{2} \cos \frac{A-B}{2}}{2 \cos \frac{A+B}{2} \cos \frac{A-B}{2}},
+$$
+即 $\sin \frac{A+B}{2}\left(2 \cos ^2 \frac{A+B}{2}-1\right)=0$, 显然 $\sin \frac{A+B}{2} \neq 0, \cos \frac{A+B}{2} \neq 0$, 所以 $\cos \frac{A+B}{2}=\frac{\sqrt{2}}{2}$, 从而 $A+B=\frac{\pi}{2}, \triangle A B C$ 是直角三角形.
+解法三原等式变形为 $\sin C \cdot \cos A+\sin C \cdot \cos B=\sin A+\sin B$,
+$$
+\begin{aligned}
+& \frac{1}{2}[\sin (C+A)+\sin (C-A)]+\frac{1}{2}[\sin (C+B)+\sin (C-B)] \\
+= & \sin A+\sin B .
+\end{aligned}
+$$
+又 $A+B+C=\pi$, 故 $\sin (C-A)+\sin (C-B)-\sin A-\sin B=0$,
+$$
+2 \cos \frac{C}{2} \sin \frac{C-2 A}{2}+2 \cos \frac{C}{2} \sin \frac{C-2 B}{2}=0,
+$$
+得 $\cos \frac{C}{2} \sin \frac{C-A-B}{2} \cos \frac{B-A}{2}=0$, 而 $\cos \frac{C}{2} \neq 0, \cos \frac{B-A}{2} \neq 0$, 得 $\sin \frac{C-A-B}{2}=0, C-A-B==0$, 从而 $A+B=\frac{\pi}{2}, \triangle A B C$ 是直角三角形.
+评注判断三角形形状, 主要有两种方法: 其一是化成三内角之间的关系,利用三角函数的恒等变形来判断;其二是化成三边之间的关系,利用 “两边相等的三角形是等腰三角形、最大边的平方等于其他两边平方和的三角形是直角三角形”来判断.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13 在 $\triangle A B C$ 中, $A 、 B 、 C$ 分别表示它的三个内角, 且满足 $\cos A \cdot \cos B \cdot \cos C=\frac{1}{8}$, 试判断该三角形的形状.
+%%<SOLUTION>%%
+解:不妨设 $0<A, B<\frac{\pi}{2}$, 因为 $A+B+C=\pi$, 所以
+$$
+\begin{aligned}
+\cos A \cdot \cos B \cdot \cos C & =\cos A \cdot \cos B \cdot \cos [\pi-(A+B)] \\
+& =-\cos A \cdot \cos B \cdot \cos (A+B)=\frac{1}{8} .
+\end{aligned}
+$$
+即
+$$
+\cos A \cdot \cos B \cdot \cos (A+B)=-\frac{1}{8} .
+$$
+从而
+$$
+\begin{aligned}
+& \cos A \cdot \cos B \cdot \cos (A+B) \\
+= & \frac{1}{2}[\cos (A+B)+\cos (A-B)] \cos (A+B)=-\frac{1}{8},
+\end{aligned}
+$$
+配方得
+$$
+\begin{gathered}
+\cos ^2(A+B)+\cos (A-B) \cos (A+B) \\
++\frac{1}{4}\left[\cos ^2(A-B)\right]+\frac{1}{4}\left[\sin ^2(A-B)\right]=0 .
+\end{gathered}
+$$
+故 $\left[\cos (A+B)+\frac{1}{2} \cos (A-B)\right]^2+\frac{1}{4} \sin ^2(A-B)=0$.
+即
+$$
+\left\{\begin{array}{l}
+\cos (A+B)+\frac{1}{2} \cos (A-B)=0, \quad (1)\\
+\sin (A-B)=0 .\quad (2)
+\end{array}\right.
+$$
+由(1)、(2)得 $A=B, \cos (A+B)=-\frac{1}{2}$. 所以 $A=B=\frac{\pi}{3}, C=\frac{\pi}{3}$. 即 $\triangle A B C$ 为正三角形.
+评注从上面的推导过程知 $\cos A \cdot \cos B \cdot \cos C \leqslant \frac{1}{8}$, 当 $A=B=C$ 时, 取最大值.
+其中 $A 、 B 、 C$ 为三角形内角.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14. $\triangle A B C$ 中, 求证:
+(1) $b \cos C+c \cos B=a$;
+(2) $\frac{a^2-b^2}{c^2}=\frac{\sin (A-B)}{\sin C}$.
+%%<SOLUTION>%%
+分析:利用正、余弦定理来证.
+证法一
+(1) $b \cos$
+$$
+\begin{aligned}
+C+c \cos B & =2 R \sin B \cos C+2 R \sin C \cos B \\
+& =2 R \sin (B+C)=2 R \sin A=a .
+\end{aligned}
+$$
+(2) 因为 $\sin ^2 A-\sin ^2 B$
+$$
+\begin{aligned}
+& =\sin ^2 A-\sin ^2 A \sin ^2 B-\sin ^2 B+\sin ^2 A \sin ^2 B \\
+& =\sin ^2 A\left(1-\sin ^2 B\right)-\sin ^2 B\left(1-\sin ^2 A\right) \\
+& =\sin ^2 A \cos ^2 B-\cos ^2 A \sin ^2 B \\
+& =(\sin A \cos B+\cos A \sin B)(\sin A \cos B-\cos A \sin B) \\
+& =\sin (A+B) \sin (A-B) .
+\end{aligned}
+$$
+或者
+$$
+\begin{aligned}
+\sin ^2 A-\sin ^2 B & =\frac{1-\cos 2 A}{2}-\frac{1-\cos 2 B}{2} \\
+& =-\frac{1}{2}(\cos 2 A-\cos 2 B) \\
+& =\sin (A+B) \sin (A-B),
+\end{aligned}
+$$
+所以 $\frac{a^2-b^2}{c^2}=\frac{\sin (A+B) \sin (A-B)}{\sin ^2 C}=\frac{\sin C \cdot \sin (A-B)}{\sin ^2 C}$
+$$
+=\frac{\sin (A-B)}{\sin C} \text {. }
+$$
+证法二 (1) $b \cos C+c \cos B=b \cdot \frac{a^2+b^2-c^2}{2 a b}+c \cdot \frac{c^2+a^2-b^2}{2 c a}$
+$$
+\begin{aligned}
+& =\frac{\left(a^2+b^2-c^2\right)+\left(c^2+a^2-b^2\right)}{2 a} \\
+& =\frac{2 a^2}{2 a}=a .
+\end{aligned}
+$$
+(2) $\frac{\sin (A-B)}{\sin C}=\frac{\sin A \cos B-\cos A \sin B}{\sin C}$
+$$
+\begin{aligned}
+& =\frac{a \cdot \frac{a^2+c^2-b^2}{2 a c}-b \cdot \frac{b^2+c^2-a^2}{2 b c}}{c} \\
+& =\frac{\left(a^2+c^2-b^2\right)-\left(b^2+c^2-a^2\right)}{2 c^2}=\frac{a^2-b^2}{c^2} .
+\end{aligned}
+$$
+评注 $\triangle A B C$ 中, $b \cos C+c \cos B=a$ 的几何意义如图 (<FilePath:./figures/fig-c3e14-1.png>)和(<FilePath:./figures/fig-c3e14-2.png>) 所示, 即射影定理.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例15 在锐角 $\triangle A B C$ 中,
+(1) 求证: $\tan A+\tan B+\tan C=\tan A \cdot \tan B \cdot \tan C$;
+(2) 求证: $\tan A+\tan B+\tan C \geqslant 3 \sqrt{3}$.
+%%<SOLUTION>%%
+分析:三角恒等式的证明或从左到右、或从右到左、或由繁到简.
+本题隐含条件 $A+B+C=\pi$, 可采用两角和的正切公式来证.
+第(2) 题利用基本不等式 $a+b+c \geqslant 3 \sqrt[3]{a b c}\left(a, b, c \in \mathbf{R}^{+}\right)$.
+证明 (1)由 $A+B=\pi-C$ 得
+$$
+\tan (A+B)=\tan (\pi-C),
+$$
+即
+$$
+\frac{\tan A+\tan B}{1-\tan A \cdot \tan B}=-\tan C,
+$$
+去分母即得原等式成立.
+(2)因为 $\tan A, \tan B, \tan C>0$, 所以
+$$
+\tan A+\tan B+\tan C \geqslant 3 \sqrt[3]{\tan A \cdot \tan B \cdot \tan C},
+$$
+即
+$$
+\tan A \cdot \tan B \cdot \tan C \geqslant 3 \sqrt[3]{\tan A \cdot \tan B \cdot \tan C}
+$$
+两边立方后再开方得 $\tan A \cdot \tan B \cdot \tan C \geqslant 3 \sqrt{3}$, 即
+$$
+\tan A+\tan B+\tan C \geqslant 3 \sqrt{3} .
+$$
+评注若将题设条件改成 $A+B+C=k \pi, k \in \mathbf{Z}$, 且 $A+B+C \neq k \pi+ \frac{\pi}{2}, k \in \mathbf{Z}$, 结论仍成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例16 在 $\triangle A B C$ 中, 若角 $A 、 B 、 C$ 的三角关系式是 $y=2+\cos C \cdot \cos (A-B)-\cos ^2 C$.
+(1) 若任意交换 $A 、 B 、 C$ 的位置, $y$ 的值是否会发生变化? 试证明你的结论;
+(2) 求 $y$ 的最大值.
+%%<SOLUTION>%%
+分析:如此问题,应猜想 $y$ 是轮换对称式,其值才不变,故将原关系式进行恒等变形, 分析其特征, 从而判断之.
+至于最值求法则通过放缩而得.
+解 (1)
+$$
+\begin{aligned}
+y & =2+\cos C \cdot \cos (A-B)-\cos ^2 C \\
+& =2-\cos (A+B) \cdot \cos (A-B)-\cos ^2 C \\
+& =2-\cos ^2 A \cdot \cos ^2 B+\sin ^2 A \cdot \sin ^2 B-\cos ^2 C \\
+& =\sin ^2 A+\sin ^2 B+\sin ^2 C,
+\end{aligned}
+$$
+由此可知任意交换 $A 、 B 、 C$ 的位置, $y$ 的值不会发生变化.
+(2) 不妨设 $C$ 为锐角, 则 $\cos C>0, \cos (A-B) \leqslant 1$, 从而
+$$
+y \leqslant 2+\cos C-\cos ^2 C=-\left(\cos C-\frac{1}{2}\right)^2+\frac{9}{4},
+$$
+当 $A=B=C=\frac{\pi}{3}$ 时, $y_{\text {max }}=\frac{9}{4}$.
+评注 “大胆猜想, 小心求证” 是数学发现的至理名言.
+题中问题具有探索性, 须经猜想, 方可确定目标.
+对于题 (2), 也许有的学生以为既然“ $y$ 的值不会发生变化”, 那为什么又要求最大值呢? 这是混淆了 “无论 $A 、 B 、 C$ 取何值, $y$ 的值不会发生变化”与 “任意交换 $A 、 B 、 C$ 的位置, $y$ 的值不会发生变化”的意义.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例17. $\triangle A B C$ 是一个已知的锐角三角形, 正 $\triangle D E F$ 外接于 $\triangle A B C$. 求 $\triangle D E F$ 面积的极大值.
+%%<SOLUTION>%%
+解:如图 (<FilePath:./figures/fig-c3e17.png>), 设 $\angle C A B$ 为 $\triangle A B C$ 的最大角.
+由 $S_{\triangle D E F}=\frac{\sqrt{3}}{4} E F^2$, 知 $E F$ 最大时, $S_{\triangle D E F}$ 也最大.
+而 $E F$ 由 $\angle B A F$ 所唯一确定, 故可选取 $\angle B A F=\theta$ 为自变量, 则 $\angle A B F=120^{\circ}-\theta, \angle A C E=(\theta+\angle C A B)-60^{\circ}$. 由正弦定理, 得
+$$
+\begin{aligned}
+E F & =A F+A E \\
+& =\frac{c \sin \left(120^{\circ}-\theta\right)}{\sin 60^{\circ}}+\frac{b \sin \left(\theta+\frac{\left.\angle C A B-60^{\circ}\right)}{\sin 60^{\circ}}\right.}{3} \cdot \sin (\theta+\varphi) .
+\end{aligned}
+$$
+其中
+$$
+\begin{aligned}
+k= & \left\{\left[c \cos 60^{\circ}+b \cos \left(\angle C A B-60^{\circ}\right)\right]^2\right. \\
+& \left.+\left[c \sin 60^{\circ}+b \sin \left(\angle C A B-60^{\circ}\right)\right]^2\right\}^{\frac{1}{2}} \\
+= & \sqrt{c^2+b^2+2 b c \cos \left(120^{\circ}-\angle C A B\right),}
+\end{aligned}
+$$
+$\varphi=\arccos \frac{c \cos 60^{\circ}+b \cos \left(\angle C A B-60^{\circ}\right)}{k}$ 为锐角.
+当 $\theta=90^{\circ}-\varphi$ 时, $E F$ 有最大值 $\frac{2 \sqrt{3} k}{3}$, 此时 $\theta$ 也是锐角, 故 $60^{\circ}< \angle C A B+\theta<180^{\circ}$, 相应的 $\triangle D E F$ 确是 $\triangle A B C$ 的外接正三角形.
+则 $S_{\triangle D E F}$ 的最大值是 $\frac{\sqrt{3} k^2}{3}=\frac{\sqrt{3}}{3}\left[b^2+c^2+2 b c \cos \left(120^{\circ}-\angle C A B\right)\right]$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例18 已知 $\triangle A B C$ 的三边 $a 、 b 、 c$ 和面积 $S$ 有如下关系: $S=a^2-(b- c)^2$, 且 $b+c=8$, 求 $\triangle A B C$ 的面积 $S$ 的最大值.
+%%<SOLUTION>%%
+分析:最值问题通常用函数性质来求.
+本题从条件出发, 利用余弦定理和三角形面积公式去求角 $A$ 的正弦函数值,再将面积 $S$ 转化为关于 $b$ 或 $c$ 的二次函数来求解.
+解法一由条件可得
+$$
+S=a^2-(b-c)^2=\frac{1}{2} b c \sin A,
+$$
+而
+$$
+a^2-(b-c)^2=2 b c-2 b c \cos A,
+$$
+所以
+$$
+2 b c-2 b c \cos A=\frac{1}{2} b c \sin A .
+$$
+则
+$$
+\cos A=1-\frac{1}{4} \sin A,
+$$
+故
+$$
+\frac{1-\cos A}{\sin A}=\frac{1}{4},
+$$
+即
+$$
+\tan \frac{A}{2}=\frac{1}{4},
+$$
+所以
+$$
+\sin A=\frac{2 \tan \frac{A}{2}}{1+\tan ^2 \frac{A}{2}}=\frac{8}{17}
+$$
+故
+$$
+S=\frac{1}{2} b c \sin A=\frac{4}{17} b c=\frac{4}{17} b(8-b)=\frac{4}{17}\left[-(b-4)^2+16\right],
+$$
+当且仅当 $b=c=4$ 时, $S_{\text {max }}=\frac{64}{17}$.
+解法二利用海伦公式 $S=\sqrt{p(p-a)(p-b)(p-c)}$ 和已知条件得
+$$
+a^2-(b-c)^2=\sqrt{\frac{1}{16}(a+b+c)(b+c-a)(a+b-c)(a+c-b)},
+$$
+两边平方得 $a^2-(b-c)^2=\frac{1}{16}(a+b+c)(b+c-a)$, 即
+$$
+a^2=b^2+c^2-\frac{30}{17} b c
+$$
+由此可得 $\cos A=\frac{15}{17}$, 故 $\sin A=\frac{8}{17}$.
+所以
+$$
+S=\frac{1}{2} b c \sin A=\frac{4}{17} b c=\frac{4}{17} b(8-b)=\frac{4}{17}\left[-(b-4)^2+16\right],
+$$
+当且仅当 $b=c=4$ 时, $S_{\text {max }}=\frac{64}{17}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例19 如图 (<FilePath:./figures/fig-c3e19.png>), 平面上有四个点 $A 、 B 、 P 、 Q$, 其中 $A 、 B$ 为定点, 且 $A B=\sqrt{3}, P 、 Q$ 为动点, 满足 $A P=P Q=Q B=1$, 又 $\triangle A P B$ 和 $\triangle P Q B$ 的面积分别为 $S$ 和 $T$, 求 $S^2+T^2$ 的最大值.
+%%<SOLUTION>%%
+$$
+\text { 解 } \begin{aligned}
+S & =\frac{1}{2} P A \cdot A B \cdot \sin A=\frac{\sqrt{3}}{2} \sin A, \\
+T & =\frac{1}{2} P Q \cdot Q B \cdot \sin Q=\frac{1}{2} \sin Q,
+\end{aligned}
+$$
+所以
+$$
+S^2+T^2=\frac{3}{4} \sin ^2 A+\frac{1}{4} \sin ^2 Q .
+$$
+由余弦定理, 在 $\triangle P A B$ 中,
+$$
+P B^2=P A^2+A B^2-2 \cdot P A \cdot A B \cdot \cos A=4-2 \sqrt{3} \cos A,
+$$
+在 $\triangle P Q B$ 中,
+$$
+P B^2=P Q^2+Q B^2-2 P Q \cdot Q B \cos Q=2-2 \cos Q,
+$$
+所以
+$$
+4-2 \sqrt{3} \cos A=2-2 \cos Q,
+$$
+即 $\cos Q=\sqrt{3} \cos A-1$.
+所以
+$$
+\begin{aligned}
+S^2+T^2 & =-\frac{3}{4}\left(1-\cos ^2 A\right)+\frac{1}{4}\left(1-\cos ^2 Q\right) \\
+& =-\frac{3}{2} \cos ^2 A+\frac{\sqrt{3}}{2} \cos A+\frac{3}{4} \\
+& =-\frac{3}{2}\left(\cos A-\frac{\sqrt{3}}{6}\right)^2+\frac{7}{8}
+\end{aligned}
+$$
+当 $\cos A=\frac{\sqrt{3}}{6}$ 时, $S^2+T^2$ 有最大值 $\frac{7}{8}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例20 已知 $\triangle A B C$ 的三个内角 $A 、 B 、 C$ 满足 $A+C=2 B$, 设 $x= \cos \frac{A-C}{2}, f(x)==\cos B \cdot\left(\frac{1}{\cos A}+\frac{1}{\cos C}\right)$.
+(1) 试求函数 $f(x)$ 的解析式及其定义域;
+(2) 判断其单调性, 并加以证明;
+(3) 求这个函数的值域.
+%%<SOLUTION>%%
+解:(1) 因为 $A+C=2 B$, 所以 $B=60^{\circ}, A+C=120^{\circ}$,
+$$
+\begin{aligned}
+f(x) & =\frac{1}{2} \cdot \frac{\cos A+\cos C}{\cos A \cdot \cos C} \\
+& =\frac{2 \cos \frac{A+C}{2} \cdot \cos \frac{A-C}{2}}{\cos (A+C)+\cos (A-C)} \\
+& =\frac{x}{-\frac{1}{2}+2 x^2-1}=\frac{2 x}{4 x^2-3} .
+\end{aligned}
+$$
+由 $0^{\circ} \leqslant\left|\frac{A-C}{2}\right|<60^{\circ}$, 得 $x=\cos \frac{A-C}{2} \in\left(\frac{1}{2}, 1\right]$.
+又因为 $4 x^2-3 \neq 0$, 所以 $x \neq \frac{\sqrt{3}}{2}$, 故 $f(x)$ 的定义域为 $\left(\frac{1}{2}, \frac{\sqrt{3}}{2}\right) \cup \left(\frac{\sqrt{3}}{2}, 1\right]$.
+(2) 设 $x_1<x_2$, 则
+$$
+f\left(x_2\right)-f\left(x_1\right)=\frac{2 x_2}{4 x_2^2-3}-\frac{2 x_1}{4 x_1^2-3}=\frac{2\left(x_1-x_2\right)\left(4 x_1 x_2+3\right)}{\left(4 x_1^2-3\right)\left(4 x_2^2-3\right)} .
+$$
+若 $x_1, x_2 \in\left(\frac{1}{2}, \frac{\sqrt{3}}{2}\right)$, 易得 $f\left(x_2\right)-f\left(x_1\right)<0$, 即 $f\left(x_2\right)<f\left(x_1\right)$;
+若 $x_1, x_2 \in\left(\frac{\sqrt{3}}{2}, 1\right]$, 同样易得 $f\left(x_2\right)<f\left(x_1\right)$. 所以 $f(x)$ 在 $\left(\frac{1}{2}\right.$, $\left.\frac{\sqrt{3}}{2}\right)$ 和 $\left(\frac{\sqrt{3}}{2}, 1\right]$ 都是减函数.
+(3) 由 (2) 得 $f(x)<f\left(\frac{1}{2}\right)=-\frac{1}{2}$ 或 $f(x) \geqslant f(1)=2$, 所以 $f(x)$ 的值域为 $\left(-\infty,-\frac{1}{2}\right) \cup[2,+\infty)$.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $p$ 是给定的正整数, 试确定 $(2 p)^{2 m}-(2 p-1)^n$ 的最小正值, 这里 $m 、 n$ 为任意正整数.",
+    "solution": "解:所求的最小正值是 $(2 p)^2-(2 p-1)^2=4 p-1$. 为了证明, 我们首先注意, 由\n$$\n(2 p)^2=(4 p-2) p+2 p,\n$$\n及\n$$\n(2 p-1)^2=(4 p-2)(p-1)+(2 p-1)\n$$\n易推出\n$$\n(2 p)^{2 m}-(2 p-1)^n \\equiv(2 p)-(2 p-1) \\equiv 1(\\bmod 4 p-2) . \\label{eq1}\n$$\n进一步, 我们证明, 没有正整数 $m 、 n$ 使得 $(2 p)^{2 m}-(2 p-1)^n=1$. 假设相反, 则有\n$$\n\\left((2 p)^m-1\\right)\\left((2 p)^m+1\\right)=(2 p-1)^n .\n$$\n上式左边两个因数显然互素, 而右边是正整数的 $n$ 次幕, 故\n$$\n(2 p)^m+1=a^n, \\label{eq2}\n$$\n其中 $a$ 是一个正整数, $a \\mid(2 p-1)$. 将\\ref{eq2}式模 $a$, 其左边为\n$$\n(2 p-1+1)^m+1 \\equiv 1+1 \\equiv 2(\\bmod a),\n$$\n导出 $2 \\equiv 0(\\bmod a)$,但由 $a \\mid 2 p-1$ 知 $a$ 是大于 1 的奇数,产生矛盾.\n综合式\\ref{eq1}可见, 若 $(2 p)^{2 m}-(2 p-1)^n>0$, 则 $(2 p)^{2 m}-(2 p-1)^n \\geqslant 4 p-1$, 且在 $m=1, n=2$ 时取得等号, 这就证明了我们的结论.",
+    "remark": "",
+    "figures": []
+}

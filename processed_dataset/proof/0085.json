@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题16 设 $r 、 s 、 n$ 都是正整数, 并且 $r+s=n$. 求证: 集合\n$$\n\\begin{aligned}\n& A=\\left\\{\\left[\\frac{n}{r}\\right],\\left[\\frac{2 n}{r}\\right], \\cdots,\\left[\\frac{(r-1) n}{r}\\right]\\right\\}, \\\\\n& B=\\left\\{\\left[\\frac{n}{s}\\right],\\left[\\frac{2 n}{s}\\right], \\cdots,\\left[\\frac{(s-1)}{s} \\underline{n}\\right]\\right\\}\n\\end{aligned}\n$$\n构成 $N=\\{1,2, \\cdots, n-2\\}$ 的分划的充要条件是 $r$ 和 $s$ 都与 $n$ 互质, 其中 $[x]$ 表示不超过实数 $x$ 的最大整数.",
+    "solution": "因 $|A|=r-1,|B|=s-1,|N|=n-2$, 故 $A$ 与 $B$ 构成 $N$ 的一个分划等价于 $A \\cap B=\\varnothing$.\n必要性.\n若 $r 、 n$ 之一与 $n$ 有公因数 $d$, 则另一个也与 $n$ 有公因数 $d$. 设 $r= r^{\\prime} d, s=s^{\\prime} d$, 于是 $\\left[\\frac{r^{\\prime} n}{r}\\right]=\\left[\\frac{s^{\\prime} n}{s}\\right], A \\cap B \\neq \\varnothing$, 矛盾.\n充分性.\n假设 $A \\cap B \\neq \\varnothing$, 则存在整数 $a 、 b$, 使 $\\left[\\frac{a n}{r}\\right]=\\left[\\frac{b n}{s}\\right]=p, p< \\frac{a n}{r}<p+1, p<\\frac{b n}{s}<p+1$, 即 $\\frac{p r}{n}<a<\\frac{(p+1) r}{n}, \\frac{p s}{n}<b<\\frac{(p+1) s}{n}$, 相加得 $p<a+b<p+1$. 矛盾.",
+    "remark": "",
+    "figures": []
+}

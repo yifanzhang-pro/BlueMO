@@ -1,0 +1,221 @@
+
+%%TEXT_BEGIN%%
+猜想与反证.
+有些具有某种性质 $p$ 的集合是很容易构造的, 常常只要把一类具有某种性质的元素构成一个集合 (类聚法) 即可.
+这时, 可先直接构造具有某种性质 $p$ 的集合,然后猜想得到的集合是 "最大"的.
+证明猜想的一种有效的方法是反面估计.
+假定集合 $A$ 是具有某种性质 $p$ 的集合,我们期望证明 $|A| \leqslant r$. 反设有 $|A|>r$,则 $A$ 中必存在某些特殊元素破坏集合 $A$ 的性质 $p$. 对此,抽屉原理是常用的工具.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 如果一个集合不包含满足 $x+y=z$ 的三个数 $x 、 y 、 z$, 则称之为单纯的.
+设 $M=\{1,2, \cdots, 2 n+1\}, A$ 是 $M$ 的单纯子集, 求 $|A|$ 的最大值.
+%%<SOLUTION>%%
+分析:虑到奇数十奇数 $\neq$ 奇数, 于是很容易发现 $A=\{1,3,5, \cdots$, $2 n+1\}$ 是合乎要求的集合, 此时 $|A|=n+1$. 我们猜想 $|A|$ 的最大值为 $n+$ 1 . 这就要证明: 若 $|A| \geqslant n+2$, 则 $A$ 中必存在 3 个数 $x 、 y 、 z$, 使 $x+y=z$. 注意到 $x+y=z$, 等价于 $x=z-y$, 由此想到以 $A$ 中的元素作差构造 "新元素" 以利用抽庶原理.
+解取 $A=\{1,3,5, \cdots, 2 n+1\}$, 则 $A$ 是单纯的, 此时 $|A|=n+1$. 下面证明: 对任何单纯子集 $A$, 有 $|A| \leqslant n+1$. 用反证法.
+假设 $|A|>n+1$, 则 $A$ 中至少有 $n+2$ 个元素,设为: $a_1<a_2<\cdots<a_{n+2}$.
+方法 1: 设 $A$ 中有 $p$ 个奇数 $a_1<a_2<\cdots<a_p$ 和 $n+2-p$ 个偶数 $b_1< b_2<\cdots<b_{n+2-p}$. 注意到 $M$ 中共有 $n+1$ 个奇数, $n$ 个偶数, 所以 $p \geqslant 2$.
+考察: $a_2-a_1<a_3-a_1<\cdots<a_p-a_1$. 它们都是正偶数, 连同 $b_1< b_2<\cdots<b_{n+2-p}$, 共有 $(p-1)+(n+2-p)=n+1>n$ 个正偶数.
+由抽庶原理, 必有两个元素相等, 且只能是某个 $b_i$ 与某个 $a_j-a_1$ 相等, 于是 $a_1+b_i=a_j$, 所以 $A$ 不是单纯的,矛盾.
+方法 2: 考察 $2 n+2$ 个元素: $a_2<a_3<\cdots<a_{n+2}$ 和 $a_2-a_1<a_3- a_1<\cdots<a_{n+2}-a_1$, 它们都是不大于 $2 n+1$ 的正整数, 所以必有两个元素相等: 设为 $a_i-a_1=a_j$. 所以 $A$ 不是单纯的,矛盾.
+方法 3: 考察 $2 n+3$ 个元素: $a_1<a_2<a_3<\cdots<a_{n+2}$ 和 $a_2-a_1<a_3- a_1<\cdots<a_{n+2}-a_1$, 它们都是不大于 $2 n+1$ 的正整数, 注意到 $2 n+3-(2 n+ 1)=2$, 所以必有两组元素对应相等: $a_i-a_1=a_j, a_s-a_1=a_t$, 而 $a_j 、 a_t$ 中至少有一个不为 $a_1$, 从而 $A$ 不是单纯的,矛盾.
+综上所述, $|A|$ 的最大值为 $n+1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $X=\{1,2, \cdots, 100\}, A$ 是 $X$ 的子集, 若对 $A$ 中任何两个元素 $x$ 、 $y(x<y)$, 都有 $y \neq 3 x$, 求 $|A|$ 的最大值.
+%%<SOLUTION>%%
+分析:们先构造合乎条件的集合 $A$. 要使 $y \neq 3 x$,一个充分条件是 $A$ 中没有 3 的倍数, 于是, 所有不是 3 的倍数的数都可属于 $A$. 进一步发现, $A$ 中还可含有若干 " 3 的倍数", 这些 " 3 的倍数" 要满足 2 个条件: 一是它不是前述那些数的 3 倍, 这只须它除以 3 以后仍是 3 的倍数, 也即它是 9 的倍数; 二是这些数之间不存在 3 倍关系, 由此可选取 $9 、 18 、 36 、 45 、 63 、 72 、 81 、 90 、 99$ 属于 $A$, 此时 $|A|=76$. 至此, 可猜想 $|A|$ 的最大值是 76 .
+解令 $A=\{3 k+1 \mid k=0,1,2, \cdots, 33\} \cup\{3 k+2 \mid k=0,1,2, \cdots$, $32\} \cup\{9,18,36,45,63,72,81,90,99\}$, 则 $A$ 显然合乎条件, 此时 $|A|=76$.
+另一方面,考察 24 个集合 $A_k=\{k, 3 k\}(k=1,2,12,13, \cdots, 33)$,它们含有 48 个互异的数, 去掉这些数外, $X$ 中还有 52 个数,将这 52 个数中的每一个数都作成一个单元素集合, 连同前面 24 个集合共 $52+24=76$ 个集合.
+若 $|A|>76$, 则 $A$ 必含有某个集合 $A_k$ 中的 2 个数, 其中较大的数是其较小的数的 3 倍,矛盾.
+综上所述, $|A|$ 的最大值是 76 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 对于数集 $M$, 定义 $M$ 的和为 $M$ 中各数的和, 记为 $S(M)$. 设 $M$ 是若干个不大于 15 的正整数组成的集合,且 $M$ 的任何两个不相交的子集有不同的和,求 $S(M)$ 的最大值.
+%%<SOLUTION>%%
+分析:条件, 很易构造使 $S(M)$ 最大的集合 $M$ : 首先选取 15、14、13, 则不取 12 , 再选取 11 , 则不取 10 和 9 : 最后选取 8 , 剩下的数都不能取,得到集合 $M=\{15,14,13,11,8\}$, 此时, $|M|=5, S(M)=61$. 由此, 我们猜想 $S(M) \leqslant 61$. 为证明猜想, 直觉告诉我们 $M$ 不能太大, 因而可进一步猜想: $|M| \leqslant 5$. 对此, 可采用反证法并运用抽庶原理.
+解取 $M=\{15,14,13,11,8\}$, 此时, $S(M)=61$. 下面证明:对任何合乎题意的集合 $M$, 有 $S(M) \leqslant 61$. 为此, 我们先证明: $|M| \leqslant 5. \label{eq1} $
+用反证法, 假设 $|M| \geqslant 6$, 考察 $M$ 的元素个数不多于 4 的所有子集 $A$, 则
+$S(A) \leqslant 15+14+13+12=54$, 而这样的子集 $A$ 的个数为 $\mathrm{C}_6^1+\mathrm{C}_6^2+\mathrm{C}_6^3+ \mathrm{C}_6^4=56$, 从而必有两个子集 $A 、 B$, 使 $S(A)=S(B)$. 令 $A^{\prime}=A \backslash(A \cap B)$, $B^{\prime}=B \backslash(A \cap B)$, 则 $A^{\prime} 、 B^{\prime}$ 不相交, 且 $S\left(A^{\prime}\right)=S\left(B^{\prime}\right)$, 与题设条件矛盾.
+所以 $|M| \leqslant 5$.
+考察任意一个合乎条件的 $M$.
+(1) 若 $15 \notin M$, 则由 式\ref{eq1}, 有 $S(M) \leqslant 14+13+12+11+10=60$;
+(2) 若 $14 \notin M$, 则由 式\ref{eq1}, 有 $S(M) \leqslant 15+13+12+11+10=61$;
+(3)若 $13 \notin M$, 则注意到 $15+11=14+12$, 有 $M \neq\{15,14,12,11$, $10\}$, 所以, 由 式\ref{eq1} 有, $S(M)<15+14+12+11+10=62$;
+(4) 若 $15,14,13 \in M$, 则 $12 \notin M$.
+(i) 若 $11 \in M$, 则 $10,9 \notin M$. 则由 式\ref{eq1}, $S(M) \leqslant 15+14+13+11+ 8=61$;
+(ii) 若 $11 \notin M$. 则由 式\ref{eq1}, $S(M) \leqslant 15+14+13+10+9=61$.
+综上所述,有 $S(M) \leqslant 61$. 故 $S(M)$ 的最大值为 61 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 已知在一次数学竞赛中, 竞赛题的数目为 $n(n \geqslant 4)$, 每道题恰有 4 个人解出, 对于任意两道题, 都恰有一人同时解出这两道题.
+若参赛人数不少于 $4 n$, 求 $n$ 的最小值, 使得总存在一个人解出全部竞赛题.
+%%<SOLUTION>%%
+分析:解首先, 当 $4 \leqslant n \leqslant 13$ 时, 都可以构造反例.
+事实上, 因为参赛人数 $\geqslant 4 n \geqslant 16$, 考虑以下 13 个集合: $M_1=\{1,2,3,4\} 、 M_2=\{1,5,6,7\}$ 、 $M_3=\{1,8,9,10\} 、 M_4=\{1,11,12,13\} 、 M_5=\{2,5,8,11\} 、 M_6=\{2$, $6,9,12\}, M_7=\{2,7,10,13\}, M_8=\{3,5,9,13\}, M_9=\{3,6,10$, 11\}、 $M_{10}=\{3,7,8,12\} 、 M_{11}=\{4,5,10,12\} 、 M_{12}=\{4,7,9,11\}$ 、 $M_{13}=\{4,6,8,13\}$. 对 $4 \leqslant n \leqslant 13$, 取其中 $n$ 个集合 $M_i(1 \leqslant i \leqslant n)$, 容易验证 $\left|M_i\right|=4$, 且 $\left|M_i \cap M_j\right|=1$, 但 $M_1, \cdots, M_n$ 无公共元, 不合题意.
+由此猜想 $n_{\min }=14$.
+下面只需证明: $n=14$ 满足要求.
+事实上,设做出第 $i$ 道题的人的编号的集合为 $M_i$, 则对任意 $1 \leqslant i \leqslant 14$ 都有 $\left|M_i\right|=4$, 且 $\left|M_i \cap M_j\right|=1$. 设 $M_1=\{a, b, c, d\}$, 由于剩下的 13 个集合中每一个至少含 $a 、 b 、 c 、 d$ 中的一个元素, 故至少有一个, 比如 $a$, 在这 13 个集合中出现至少 4 次.
+不妨设 $M_2$ 、 $M_3 、 M_4 、 M_5$ 都含有 $a$, 我们证明一切 $M_i$ 都含有 $a$.
+用反证法.
+假定存在 $t(6 \leqslant t \leqslant 14)$, 使 $M_t$ 不含 $a$, 但 $M_t$ 与 $M_1 、 M_2 、 M_3$ 、 $M_4 、 M_5$ 各有一个公共元, 设 $M_t$ 与 $M_k(1 \leqslant k \leqslant 5)$ 的公共元为 $a_k(1 \leqslant k \leqslant 5)$, 则 $a_k \neq a$. 如果存在 $i 、 j(1 \leqslant i<j \leqslant 5)$, 使 $a_i=a_j$, 则 $a 、 a_i$ 都属于
+$M_i \cap M_j$,与 $\left|M_i \cap M_j\right|=1$ 矛盾.
+于是 $a_1 、 a_2 、 a_3 、 a_4 、 a_5$ 互不相同,但它们都属于 $M_t$, 故 $\left|M_t\right| \geqslant 5$, 矛盾.
+故一切 $M_t$ 都含有 $a$, 从而第 $a$ 个人做出所有题, 结论成立.
+故 $n_{\min }=14$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 有 18 支球队进行单循环赛, 即每轮将 18 支球队分成 9 组, 每组的 2 个队比赛一场.
+下一轮重新分组比赛, 共赛 17 轮, 使得每队都与另 17 支队各赛一场.
+按任意可行的程序比赛了 $n$ 轮以后, 总存在 4 支球队, 他们之间总共只赛了 1 场.
+求 $n$ 的最大可能值.
+%%<SOLUTION>%%
+解:察如下的比赛程序:
+1. $(1,2)(3,4)(5,6)(7,8)(9,18)(10,11)(12,13)(14,15) (16,17)$;
+2. $(1,3)(2,4)(5,7)(6,9)(8,17)(10,12)(11,13)(14,16) (15,18)$;
+3. $(1,4)(2,5)(3,6)(8,9)(7,16)(10,13)(11,14)(12,15) (17,18)$;
+4. $(1,5)(2,7)(3,8)(4,9)(6,15)(10,14)(11,16)(12,17) (13,18)$;
+5. $(1,6)(2,8)(3,9)(4,7)(5,14)(10,15)(11,17)(12,18) (13,16)$;
+6. $(1,7)(2,9)(3,5)(6,8)(4,13)(10,16)(11,18)(12,14) (15,17)$
+7. $(1,8)(2,6)(4,5)(7,9)(3,12)(10,17)(11,15)(13,14) (16,18)$;
+8. $(1,9)(3,7)(4,6)(5,8)(2,11)(10,18)(12,16)(13,15) (14,17)$
+9. $(1,10)(2,3)(4,8)(5,9)(6,7)(11,12)(13,17)(14,18) (15,16)$
+10. $(1,11)(2,12)(3,13)(4,14)(5,15)(6,16)(7,17)(8,18) (9,10)$;
+11. $(1,12)(2,13)(3,14)(4,15)(5,16)(6,17)(7,18)(8,10) (9,11)$;
+12. $(1,13)(2,14)(3,15)(4,16)(5,17)(6,18)(7,10)(8,11) (9,12)$;
+$\cdots$
+17. $(1,18)(2,10)(3,11)(4,12)(5,13)(6,14)(7,15)(8,16) (9,17)$.
+将前 9 队称为 $A$ 组, 后 9 队称为 $B$ 组, 易见 9 轮之后, 凡同组两队均已赛过.
+所以, 任何 4 队之间至少已赛过 2 场, 不满足题目要求.
+如果把上述程序颠倒过来, 然后按照新序比赛, 则 8 轮过后, 同组任何 2 队均未赛过, 每个队都是与另一组中 9 支队中的 8 个队各赛一场, 这时同组 4 支队之间一场未赛, 而不全同组的 4 支队之间至少已赛 2 场, 不满足题目要求.
+于是 $n \leqslant 7$. 当 $n=7$ 时, 反设任何 4 队都不满足题目要求, 选取已赛过的 2 队 $A_1 、 A_2$, 则每队都与另外 6 队比赛过, 2 个队至多与另外 12 支队赛过, 于是至少存在 4 个队 $B_1 、 B_2 、 B_3$ 、 $B_4$, 它们与 $A_1 、 A_2$ 两队均未赛过.
+考察 4 个队 $A_1 、 A_2 、 B_i 、 B_j(1 \leqslant i<j \leqslant 4)$, 依假设, 它们之间至少赛过 2 场, 于是对任何 $1 \leqslant i<j \leqslant 4, B_i$ 与 $B_j$ 赛过.
+由于 $B_1 、 B_2$ 在 $\left\{B_1, B_2, B_3, B_4\right\}$ 中各赛了 3 场, 所以 $B_1 、 B_2$ 与其他 14 支队中的 4 支队各赛 1 场, 于是至少存在 6 支队 $C_1 、 C_2 、 C_3 、 C_4 、 C_5 、 C_6$, 它们与 $B_1$ 、 $B_2$ 两队均未赛过.
+同理, 对任何 $1 \leqslant i<j \leqslant 6, C_i$ 与 $C_j$ 赛过.
+由于 $C_1 、 C_2$ 在 $\left\{C_1, C_2, \cdots, C_6\right\}$ 中各赛了 5 场, 所以 $C_1 、 C_2$ 与其他 12 支队中的 2 支队各赛 1 场, 于是至少存在 8 支队 $D_1, D_2, \cdots, D_8$, 它们与 $C_1 、 C_2$ 两队均未赛过.
+同理, 对任何 $1 \leqslant i<j \leqslant 8, D_i$ 与 $D_j$ 赛过.
+这样, $D_1 、 D_2$ 与另外 10 支队均未赛过, 由于只赛了 7 轮, 另外 10 支队中至少有 2 支队 $E_1 、 E_2$ 尚未赛过, 从而 $D_1$ 、 $D_2 、 E_1 、 E_2$ 之间只赛了 1 场, 与假设矛盾.
+综上所述, $n$ 的最大可能值是 7 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 求出同时满足下列条件的集合 $S$ 的元素个数的最大值:
+(1) $S$ 中的每个元素都是不超过 100 的正整数;
+(2) 对于 $S$ 中的任意两个不同的元素 $a 、 b$, 都存在 $S$ 中的元素 $c$, 使得 $a$ 与 $c$ 的最大公约数等于 1 , 并且 $b$ 与 $c$ 的最大公约数也等于 1 ;
+(3) 对于 $S$ 中的任意两个不同的元素 $a 、 b$, 都存在 $S$ 中的异于 $a 、 b$ 的元素 $d$,使得 $a$ 与 $d$ 的最大公约数大于 1 , 并且 $b$ 与 $d$ 的最大公约数也大于 1. 
+%%<SOLUTION>%%
+分析:解将不超过 100 的正整数 $n$ 表示为 $n=2^{\alpha_1} 3^{\alpha_2} 5^{\alpha_3} 7^{\alpha_4} 11^{\alpha_5} \cdot m$, 其中 $m$ 是不被 $2 、 3 、 5 、 7 、 11$ 整除的正整数, $\alpha_1 、 \alpha_2 、 \alpha_3 、 \alpha_4 、 \alpha_5$ 为自然数.
+从中选取那些使 $\alpha_1 、 \alpha_2 、 \alpha_3 、 \alpha_4 、 \alpha_5$ 中恰有 1 个或 2 个非零的正整数构成集合 $S$, 即 $S$ 包括: 50 个偶数 $2,4, \cdots, 100$ 但除去 $2 \times 3 \times 5 、 2^2 \times 3 \times 5 、 2 \times 3^2 \times 5 、 2 \times 3 \times 7 、 2^2 \times 3 \times 7 、 2 \times 5 \times 7 、 2 \times 3 \times 11$ 这 7 个数; 3 的奇数倍 $3 \times 1,3 \times 3, \cdots$, $3 \times 33$ 共 17 个数; 最小素因子为 5 的数 $5 \times 1 、 5 \times 5 、 5 \times 7 、 5 \times 11 、 5 \times 13$ 、 $5 \times 17 、 5 \times 19$ 共 7 个数; 最小素因子为 7 的数 $7 \times 1 、 7 \times 7 、 7 \times 11 、 7 \times 13$ 共 4 个数; 以及素数 11 , 显然 $|S|=(50-7)+17+7+4+1=72$. 我们证明这样构造的 $S$ 合乎条件.
+条件(1)显然满足.
+考察条件(2), 对于 $S$ 中的任意两个不同的元素 $a 、 b,[a, b]$ 的素因子中至多出现 $2 、 3 、 5 、 7 、 11$ 中的 4 个数.
+设其中未出现的为 $p$, 则 $p \in S$, 且 $(p$, $a) \leqslant(p,[a, b])=1,(p, b) \leqslant(p,[a, b])=1$,于是取 $c=p$ 即可.
+考察条件 (3), 当 $(a, b)=1$ 时, 取 $a$ 的最小素因子 $p$ 和 $b$ 的最小素因子 $q$. 显然 $p \neq q$, 且 $p, q \in\{2,3,5,7,11\}$,于是 $p q \in S$, 且 $(p q, a) \geqslant p>1$, $(p q, b) \geqslant q>1$. 又 $a 、 b$ 互质保证了 $p q$ 异于 $a 、 b$, 从而取 $c=p q$ 即可.
+当 $(a$, $b)=e>1$ 时, 取 $e$ 的最小素因子 $p$ 和不整除 $[a, b]$ 的最小素数 $q$. 显然 $p \neq q$, 且 $p, q \in\{2,3,5,7,11\}$, 于是 $p q \in S$, 且 $(p q, a) \geqslant(p, a)=p>1$, $(p q, b) \geqslant(p, b)=p>1$. 又 $q$ 不整除 $[a, b]$ 保证了 $p q$ 异于 $a 、 b$, 从而取 $d=p q$ 即可.
+下面证明, 对任何满足条件的集合 $S$, 有 $|S| \leqslant 72$.
+显然, $1 \notin S$; 对于任意两个大于 10 的质数 $p 、 q$, 因为与 $p 、 q$ 都不互质的数最小是 $p q$, 而 $p q>100$, 所以根据条件 (3), 在 $[10,100]$ 中的 21 个质数 11 , $13, \cdots, 89,97$ 最多有一个在 $S$ 中.
+记除 1 与这 21 个质数外的其余 78 个不超过 100 的正整数的集合为 $T$, 我们证明 $T$ 中至少有 7 个数不在 $S$ 中, 从而 $|S| \leqslant 78-7+1=72$.
+实际上, 当有某个大于 10 的质数 $p \in S$ 时, $S$ 中各数的最小素因子只可能是 $2 、 3 、 5 、 7$ 和 $p$. 结合条件 (2), 知: (i) 若 $7 p \in S$, 因 $2 \times 3 \times 5 、 2^2 \times 3 \times 5$ 、 $2 \times 3^2 \times 5$ 与 $7 p$ 包括了所有的最小素因子, 所以由条件(2), $2 \times 3 \times 5 、 2^2 \times 3 \times 5 、 2 \times 3^2 \times 5 \notin S$. 若 $7 p \notin S$, 而 $2 \times 7 p>100$, 且 $p \in S$, 所以由条件(3) 知, $7 \times 1 、 7 \times 7 、 7 \times 11 、 7 \times 13 \notin S$. (ii) 若 $5 p \in S$, 则 $2 \times 3 \times 7 、 2^2 \times 3 \times 7 \notin S$. 若 $5 p \notin S$, 则 $5 \times 1 、 5 \times 5 \notin S$. (iii) $2 \times 5 \times 7$ 与 $3 p$ 不同属于 $S$. (iv) $2 \times 3 p$ 与 $5 \times 7$ 不同属于 $S$. (v) 若 $5 p 、 7 p \notin S$, 则 $5 \times 7 \notin S$. 于是, 当 $p=11$ 或 13 时,由 (i)、(ii)、(iii)、(iv) 可分别得出至少有 $3 、 2 、 1 、 1$ 个中的数不属于 $S$, 合计有 7 个.
+当 $p=17$ 或 19 时,由(i)、(ii)、(iii) 可分别得出至少有 $4 、 2 、 1$ 个 $T$ 中的数不属于 $S$, 合计有 7 个.
+当 $p>20$ 时, 由(i)、(ii)、(iii) 可分别得出至少有 $4 、 2 、 1$ 个 $T$ 中的数不属于 $S$, 合计有 7 个.
+所以结论成立.
+当大于 10 的质数 $p$ 都不属于 $S$ 时, $S$ 中各数的最小素因子只可能是 2 、 $3 、 5 、 7$. 此时, 7 个 2 元集合 $\{3,2 \times 5 \times 7\} 、\{5,2 \times 3 \times 7\} 、\{7,2 \times 3 \times 5\}$ 、 $\{2 \times 3,5 \times 7\} 、\{2 \times 5,3 \times 7\} 、\{2 \times 7,3 \times 5\} 、\left\{2^2 \times 7,3^2 \times 5\right\}$ 中的任何一个都至少有一个数不在 $S$ 中, 结论成立.
+综上所述, $|S|_{\text {max }}=72$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $a_i 、 b_i(i=1,2, \cdots, n)$ 是有理数, 使得对任意的实数 $x$ 都有 $x^2+x+4=\sum_{i=1}^n\left(a_i x+b_i\right)^2$, 求 $n$ 的最小可能值.
+%%<SOLUTION>%%
+解:易发现 $n=5$ 是可以的, 实际上 $x^2+x+4=\left(x+\frac{1}{2}\right)^2+\left(\frac{3}{2}\right)^2+ 1^2+\left(\frac{1}{2}\right)^2+\left(\frac{1}{2}\right)^2$.
+由此可猜想 $n$ 的最小可能值为 5 , 这只需证明 $n \neq 4$.
+用反证法, 假设 $x^2+x+4=\sum_{i=1}^4\left(a_i x+b_i\right)^2, a_i, b_i \in \mathbf{Q}$, 则 $\sum_{i=1}^4 a_i^2=1$, $\sum_{i=1}^4 a_i b_i=\frac{1}{2}, \sum_{i=1}^4 b_i^2=4$.
+于是, $\frac{15}{4}=\left(\sum_{i=1}^4 a_i^2\right)\left(\sum_{i=1}^4 b_i^2\right)-\left(\sum_{i=1}^4 a_i b_i\right)^2$
+$$
+\begin{aligned}
+= & \left(-a_1 b_2+a_2 b_1-a_3 b_4+a_4 b_3\right)^2+\left(-a_1 b_3+a_3 b_1-\right. \\
+& \left.a_4 b_2+a_2 b_4\right)^2+\left(-a_1 b_4+a_4 b_1-a_2 b_3+a_3 b_2\right)^2 .
+\end{aligned}
+$$
+上式两边乘以 4 , 表明方程 $a^2+b^2+c^2=15 d^2=-d^2(\bmod 8)$. 有解.
+不妨设 $a 、 b 、 c 、 d$ 中至少有一个奇数(否则方程两边约去公因数), 但 $a^2$, $b^2, c^2, d^2 \equiv 0,1,4(\bmod 8)$, 所以上式无解,矛盾.
+另解: $n=5$ 时, 有 $x^2+x+4=\left(\frac{1}{2} x+1\right)^2+\left(\frac{1}{2} x+1\right)^2+\left(\frac{1}{2} x-1\right)^2+ \left(\frac{1}{2} x\right)^2+(1)^2$.
+下证 $n \neq 4$.
+如果 $x^2+x+4=\sum_{i=1}^4\left(a_i x+b_i\right)^2$, 我们可以设 $a_i=\frac{x_i}{2 m}, b_i=\frac{y_i}{k}\left(m k \neq 0, m, k, x_i, y_i \in \mathbf{Z}\right)$, 
+则比较系数可以得到 $\left\{\begin{array}{l}x_1^2+x_2^2+x_3^2+x_4^2=4 m^2, \label{eq1}\\ y_1^2+y_2^2+y_3^2+y_4^2=4 n^2, \label{eq2}\\ x_1 y_1+x_2 y_2+x_3 y_3+x_4 y_4=m n. \label{eq3}\end{array}\right.$
+不妨设 $\left(m 、 k 、 x_i 、 y_i\right)$ 是满足 式\ref{eq1},\ref{eq2},式\ref{eq3} 的使 $|m k|$ 非 0 且最小的一组.
+由 式\ref{eq1} 知 $x_1^2+x_2^2+x_3^2+x_4^2 \equiv 0(\bmod 4)$, 由 $x^2 \equiv 0$ 或 $1(\bmod 4)$ 知诸 $x_i$ 同奇偶, 同理诸 $y_i$ 也同奇偶.
+因此 $x_i y_i(i=1 、 2 、 3 、 4)$ 同奇偶, 由 式\ref{eq3} 知 $m m$ 为偶, 不妨设 $m$ 为偶, 则由 式\ref{eq1} 知 $x_1^2+x_2^2+x_3^2+x_4^2 \equiv 0(\bmod 8)$.
+若诸 $x_i$ 同为奇, 则 $x_i^2 \equiv 1(\bmod 8)$, 故 $x_1^2+x_2^2+x_3^2+x_4^2 \equiv 0(\bmod 8)$, 矛盾.
+因此诸 $x_i$ 同偶, 故 $\left(\frac{m}{2} 、 k 、 \frac{x_i}{2} 、 y_i\right)$ 是满足 式\ref{eq1},\ref{eq2},式\ref{eq3} 的使 $|m k|$ 非 0 且更小的一组解,矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 若一个集合含有偶数个元素, 则称之为偶集.
+设 $M=\{1,2, \cdots$, $2011\}$, 如果存在 $M$ 的 $k$ 个偶子集: $A_1, A_2, \cdots, A_k$, 使对任何 $1 \leqslant i<j \leqslant k$, 都有 $A_i \cap A_j$ 不是偶集,求 $k$ 的最大值.
+%%<SOLUTION>%%
+解:先, 容易发现 $k=2010$ 合乎条件.
+实际上, 令 $A_i=\{i, 2011\}(i= 1,2, \cdots, 2010)$, 则使对任何 $1 \leqslant i<j \leqslant 2010$, 都有 $A_i \cap A_j=\{2011\}$ 不是偶集, 所以 $k=2010$ 合乎条件.
+由此可猜想 $k \leqslant 2010$, 用反证法.
+假设 $k \geqslant 2011$, 则存在 $M$ 的 2011 个偶子集: $A_1, A_2, \cdots, A_{2011}$, 使对任何 $1 \leqslant i<j \leqslant 2011$, 都有 $A_i \cap A_j$ 不是偶集.
+$$
+\text { 对 } A \subseteq M \text {, 定义 } \overrightarrow{\alpha_A}=\left\{a_1, a_2, \cdots, a_{2011}\right\} \text {, 其中 } a_j=\left\{\begin{array}{l}
+1 \text {, 当 } j \in A, \\
+0 \text {, 当 } j \notin A,
+\end{array}\right. \text { 那么, }
+$$
+当且仅当 $\overrightarrow{\alpha_{A_i}} \cdot \overrightarrow{\alpha_{A_j}}$ 为偶数时, $A_i \cap A_j$ 是偶集, 于是, 对任何 $i \neq j$, 有
+$$
+\overrightarrow{\alpha_{A_i}} \cdot \overrightarrow{\alpha_{A_j}} \equiv 1(\bmod 2) . \label{eq1}
+$$
+对 $X \subseteq M$, 定义 $\overrightarrow{S_X}=\sum_{x \in X} \overrightarrow{\alpha_{A_x}}$, 我们先证明, 对任何 $X \neq \Phi$, 有 $\overrightarrow{S_X} \neq(0$, $0, \cdots, 0)(\bmod 2)$.
+实际上, 反设 $\overrightarrow{S_X} \equiv(0,0, \cdots, 0)$,一方面, 取 $u \in X$, 有
+$$
+\vec{D} \overrightarrow{S_X} \cdot \overrightarrow{\alpha_{A_u}}=\left(\sum_{x \in X} \overrightarrow{\alpha_{A_x}}\right) \cdot \overrightarrow{\alpha_{A_u}}=\sum_{x \in X}\left(\overrightarrow{\alpha_{A_x}} \cdot \overrightarrow{\alpha_{A_u}}\right)=\overrightarrow{\alpha_{A_u}} \cdot \overrightarrow{\alpha_{A_u}}+\sum_{x \in X \backslash\{u\}}\left(\overrightarrow{\alpha_{A_x}} \cdot \overrightarrow{\alpha_{A_u}}\right)
+$$
+因为 $A_u$ 是偶集, 所以 $\overrightarrow{\alpha_{A_u}} \cdot \overrightarrow{\alpha_{A_u}} \equiv 0$, 而 $x \neq u$ 时, 由  式\ref{eq1}, 有 $\overrightarrow{\alpha_{A_x}} \cdot \overrightarrow{\alpha_{A_u}} \equiv 1$.
+所以 $0 \equiv \overrightarrow{\alpha_{A_u}} \cdot \overrightarrow{\alpha_{A_u}}+\sum_{x \in X \backslash\{u\}}\left(\overrightarrow{\alpha_{A_x}} \cdot \overrightarrow{\alpha_{A_u}}\right) \equiv 0+\sum_{x \in X \backslash\{u\}} 1=|X|-1(\bmod 2)$, 即 $|X|$ 为奇数.
+另一方面, 注意到 $|M|=2011$ 为偶数, 所以 $X \neq M$. 取 $v \notin X$, 有
+$$
+0 \equiv \overrightarrow{S_X} \cdot \overrightarrow{\alpha_{A_v}}=\left(\sum_{x \in X} \overrightarrow{\alpha_{A_x}}\right) \cdot \overrightarrow{\alpha_{A_v}}=\sum_{x \in X}\left(\overrightarrow{\alpha_{A_x}} \cdot \overrightarrow{\alpha_{A_v}}\right) \text {. }
+$$
+因为 $v \notin X$, 所以 $x \neq v$, 从而由 $(*)$, 有 $\overrightarrow{\alpha_{A_x}} \cdot \overrightarrow{\alpha_{A_v}} \equiv 1$, 所以
+$$
+0 \equiv \sum_{x \in X}\left(\overrightarrow{\alpha_{A_x}} \cdot \overrightarrow{\alpha_{A_v}}\right) \equiv \sum_{x \in X} 1=|X|,
+$$
+所以 $|X|$ 为偶数,矛盾.
+所以, 对任何 $X \neq \Phi$, 有 $\overrightarrow{S_X} \neq(0,0, \cdots, 0)(\bmod 2)$.
+由此可见, 对 $X \neq Y, \overrightarrow{S_X} \equiv \overrightarrow{S_Y}(\bmod 2)$ (实际上, 若 $\overrightarrow{S_X} \equiv \overrightarrow{S_Y}$, 令 $T=(X \cupY) \backslash(X \cap Y)$, 有 $\overrightarrow{S_T}=\overrightarrow{S_X}+\overrightarrow{S_Y}-2 \overrightarrow{S_{X \cap Y}} \equiv \overrightarrow{S_X}+\overrightarrow{S_Y} \equiv(0,0, \cdots, 0)$, 矛盾 $)$. 于是, 当 $X$ 取遍 $M$ 的所有子集时, 可得到模 2 意义下的 $2^{2011}$ 个不同的向量 $\overrightarrow{S_X}$.
+但是, 由于 $\overrightarrow{S_X}=\sum_{x \in X} \overrightarrow{\alpha_{A_x}}$, 而 $A_x$ 是偶集, 所以 $A_x$ 各分量的和为偶数, 于是 $\overrightarrow{S_X}$ 各分量的和为偶数, 所以 $\overrightarrow{S_X}$ 的第 2011 个分量的奇偶性由前 2010 个分量的和的奇偶性唯一确定, 于是 $\overrightarrow{S_X}$ 在模 2 意义下只有 $2^{2010}$ 种取值, 矛盾, 所以 $k \leqslant$ 2010.
+综上所述, $k$ 的最大值为 2010 .
+%%<REMARK>%%
+注::显然,2011 可换成任意的正偶数 $n$,相应的 $k$ 的最大值为 $n-1$.
+%%PROBLEM_END%%
+
+

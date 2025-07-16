@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例17 设 $f(x)=\\frac{x^2}{2 x-1}$, 求 $f^{(n)}(x)$.",
+    "solution": "解:令 $f(x)=x$, 求得 $f(x)$ 的不动点为 $x_0=0$ 或 1 , 取 $\\varphi(x)$ 使满足 $\\varphi(0)=\\infty, \\varphi(1)=0$, 最简单的取法是 $\\varphi(x)=\\frac{x-1}{x}$, 则 $\\varphi^{-1}(x)=\\frac{1}{1-x}$, 算出 $g(x)=\\varphi\\left(f\\left(\\varphi^{-1}(x)\\right)\\right)=x^2$, 则 $f(x)=\\varphi^{-1}(g(\\varphi(x)))$.\n于是\n$$\n\\begin{aligned}\nf^{(n)}(x) & =\\varphi^{-1}\\left(g^{(n)}(\\varphi(x))\\right) \\\\\n& =\\frac{1}{1-\\left(1-\\frac{1}{x}\\right)^{2^n}}=\\frac{x^{2^n}}{x^{2^n}-(x-1)^{2^n}} .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

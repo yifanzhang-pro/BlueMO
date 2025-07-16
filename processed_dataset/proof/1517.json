@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-4.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $n$ 是给定的正整数,数列 $a_0, a_1, a_2, \\cdots, a_n$ 满足 $a_0=\\frac{1}{2}, a_k= a_{k-1}+\\frac{a_{k-1}^2}{n}, k=1,2, \\cdots, n$. 证明: $1-\\frac{1}{n}<a_n<1$.",
+    "solution": "证明:由条件,可知对任意 $1 \\leqslant k \\leqslant n$, 都有 $a_{k-1}<a_k$, 故对任意 $0 \\leqslant k \\leqslant n$, 都有 $a_k>0$.\n现在对条件式作变形\n$$\n\\frac{1}{a_k}=\\frac{n}{n a_{k-1}+a_{k-1}^2}=\\frac{1}{a_{k-1}}-\\frac{1}{a_{k-1}+n},\n$$\n将上式移项得\n$$\n\\frac{1}{a_{k-1}+n}=\\frac{1}{a_{k-1}}-\\frac{1}{a_k} . \\label{eq1}\n$$\n对式\\ref{eq1}将下标 $k$ 从 1 到 $n$ 求和, 得\n$$\n\\begin{aligned}\n\\sum_{k=1}^n \\frac{1}{a_{k-1}+n} & =\\left(\\frac{1}{a_0}-\\frac{1}{a_1}\\right)+\\left(\\frac{1}{a_1}-\\frac{1}{a_2}\\right)+\\cdots+\\left(\\frac{1}{a_{n-1}}-\\frac{1}{a_n}\\right) \\\\\n& =\\frac{1}{a_0}-\\frac{1}{a_n}=2-\\frac{1}{a_n} .\n\\end{aligned}\n$$\n结合 $a_{k-1}>0$, 可知\n$$\n2-\\frac{1}{a_n}=\\sum_{k=1}^n \\frac{1}{a_{k-1}+n}<\\sum_{k=1}^n \\frac{1}{n}=1,\n$$\n于是 $a_n<1$.\n再由 $a_k>a_{k-1}$ 知 $0<a_0<a_1<\\cdots<a_n<1$, 故\n$$\n2-\\frac{1}{a_n}=\\sum_{k=1}^n \\frac{1}{a_{k-1}+n}>\\sum_{k=1}^n \\frac{1}{1+n}=\\frac{n}{n+1},\n$$\n得 $a_n>\\frac{n+1}{n+2}=1-\\frac{1}{n+2}>1-\\frac{1}{n}$.\n所以,命题成立.\n说明这里对条件式\"取倒数\"是基于 \"裂项\"的思想, 在数列求和中经常会先\"裂项\",在求和时达到前后相消的效果.",
+    "remark": "",
+    "figures": []
+}

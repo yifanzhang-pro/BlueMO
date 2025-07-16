@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题24 已知 $a 、 b$ 均为正整数, 且 $a>b, \\sin \\theta=\\frac{2 a b}{a^2+b^2}$, 其中 $\\theta \\in\\left(0, \\frac{\\pi}{2}\\right), A_n= \\left(a^2+b^2\\right)^n \\sin n \\theta$. 求证: 对于一切正整数 $n, A_n$ 均为整数.",
+    "solution": "设 $B_n=\\left(a^2+b^2\\right)^n \\cos n \\theta$. 由 $\\sin \\theta=\\frac{2 a b}{a^2+b^2}$, 得 $\\cos \\theta=\\frac{a^2-b^2}{a^2+b^2}(a> b>0)$, 所以 $\\left(a^2+b^2\\right) \\sin \\theta=2 a b,\\left(a^2+b^2\\right) \\cos \\theta=a^2-b^2$ 均为整数, 即 $A_1$ 、 $B_1$ 均为整数.\n设 $A_k 、 B_k$ 均为整数, 则 $A_{k+1}=\\left(a^2+b^2\\right)^{k+1} \\sin (k+1) \\theta=\\left(a^2+\\right. \\left.b^2\\right)^{k+1} \\sin k \\theta \\cos \\theta+\\left(a^2+b^2\\right)^{k+1} \\cos k \\theta \\sin \\theta=A_k \\cdot\\left(a^2-b^2\\right)+B_k \\cdot 2 a b, B_{k+1}= \\left(a^2+b^2\\right)^{k+1} \\cos (k+1) \\theta=\\left(a^2+b^2\\right)^{k+1} \\cos k \\theta \\cos \\theta-\\left(a^2+b^2\\right)^{k+1} \\sin k \\theta \\cos \\theta= B_k \\cdot\\left(a^2-b^2\\right)-A_k \\cdot 2 a b$. 由 $A_k 、 B_k 、 a 、 b$ 均为整数, 得 $A_{k+1} 、 B_{k+1}$ 均为整数.\n由归纳原理可知, 对于一切正整数 $n, A_n$ 为整数.",
+    "remark": "",
+    "figures": []
+}

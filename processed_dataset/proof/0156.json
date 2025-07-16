@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例10. 设 $S$ 是 $\\left\\{1,2, \\cdots, 2^m n\\right\\}$ 的一个子集, $S$ 的元素个数 $|S| \\geqslant\\left(2^m- 1 \\right) n+1$. 证明, $S$ 中有 $m+1$ 个不同的数 $a_0, \\cdots, a_m$, 使得 $a_{i-1} \\mid a_i(i=1, \\cdots$, m).",
+    "solution": "证明:每个正整数 $a$ 可唯一地表示为 $2^u k$ 的形式,其中 $u \\geqslant 0, k$ 为奇数, 我们称 $k$ 为 $a$ 的奇数部分, 并且若 $a$ 的奇数部分不超过 $n$, 则称 $n$ 为好数.\n这里的证明, 基于 $S$ 中好数个数的下界估计.\n为此, 我们首先计数在区间 $\\left(n, 2^m n\\right]$ 中有多少个好数.\n设区间 $[1, n]$ 中共有 $t$ 个奇数 $\\left(t\\right.$ 实际上等于 $\\left[\\frac{n+1}{2}\\right]$, 但我们并不需要这一点). 设 $k$ 是任意一个这样的奇数, 则满足 $n<2^u k \\leqslant 2^m n$ 的整数 $u$ 恰有 $m$ 个.\n这只要注意, 设整数 $v$ 满足 $2^{v-1} \\leqslant \\frac{n}{k}<2^v$, 则 $2^v k, 2^{v+1} k, \\cdots, 2^{v-1+m} k$ 是全部符合要求的数, 即在区间 $\\left(n, 2^m n\\right]$ 中奇数部分为 $k$ 的数共有 $m$ 个, 故其中恰有 $m t$ 个好数.\n因此这区间中非好数有 $2^m n-n-m t$ 个, 从而 $S$ 中好数的个数 $\\geqslant|S|-\\left(2^m n-n-m t\\right)=m t+1$ 个.\n设 $k_1, \\cdots, k_t$ 是 $[1, n]$ 中的全部奇数, 并设 $S$ 中恰有 $x_i$ 个数以 $k_i$ 为奇数部分 $(k=1, \\cdots, t)$, 则由上一段的结论, $S$ 中好数的个数为\n$$\nx_1+\\cdots+x_t \\geqslant m t+1,\n$$\n从而必有一个 $x_i(1 \\leqslant i \\leqslant t)$, 使得 $x_i \\geqslant m+1$, 即 $S$ 中至少有 $m+1$ 个整数具有相同的奇数部分 $k_i$, 这些数从小到大排列为 $a_0, a_1, \\cdots, a_m$, 即为符合要求的 $m$ 个数, 证毕.",
+    "remark": "注:1 当 $m=1$ 时, 本题化为了一个熟知的结果, 这里的证明即是此结果 (通常的)证明的推广.\n本题还有其他的解法, 例如, 对 $m$ 归纳或对 $n$ 归纳, 有兴趣的读者可自己试试.\n注:2 集合 $S=\\left\\{n+1, \\cdots, 2^m n\\right\\}$ 表明, 若例 10 中的 $S$ 满足 $|S|= \\left(2^m-1\\right) n$, 则结论不必正确.\n因若有 $a_0, \\cdots, a_m$ 符合要求, 则 $a_m \\geqslant 2^m a_0$, 从而现在有 $a_m \\geqslant 2^m(n+1)$, 这不可能.",
+    "figures": []
+}

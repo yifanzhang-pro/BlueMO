@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter13.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设非负实数数列 $\\left\\{a_n\\right\\},\\left\\{b_n\\right\\}$ 满足: 对任意 $i, j \\in \\mathbf{N}^*,|i-j| \\in \\{2011,2012\\}$, 都有 $a_i+b_j \\leqslant a_i b_j$. 求证: $\\left\\{a_n\\right\\}$ 与 $\\left\\{b_n\\right\\}$ 中的所有项不是全大于 1 , 就是全等于 0 .",
+    "solution": "证明:果对任意 $n \\in \\mathbf{N}^*$, 有 $a_n, b_n>1$, 则命题已成立.\n以下考虑 $\\left\\{a_n\\right\\}$, $\\left\\{b_n\\right\\}$ 中存在某项 (不妨设为 $a_k$ ) 小于 1 的情况.\n因不等式 $a_i+b_j \\leqslant a_i b_j$ 等价于 $\\left(1-a_i\\right)\\left(1-b_j\\right) \\geqslant 1$, 若 $0 \\leqslant a_i<1$, 则\n$$\n1 \\geqslant 1-b_j \\geqslant \\frac{1}{1-a_i} \\geqslant 1 \\text {, }\n$$\n可见不等号均为等号, 所以 $a_i=b_j=0$.\n由于 $0 \\leqslant a_k<1$, 故令 $(i, j)=(k, k+2011),(k, k+2012)$, 得\n$$\na_k=b_{k+2011}=b_{k+2012}=0 .\n$$\n再令 $(i, j)=(k-1, k+2011),(k+1, k+2012)$ (若已有 $k=1$ 则省略前者), 得\n$$\na_{k-1}=a_{k+1}=0 \\text {. }\n$$\n以此类推得\n$$\na_{k-2}=a_{k-3}=\\cdots=a_1=0, a_{k+2}=a_{k+3}=\\cdots=0 \\text {, }\n$$\n即 $\\left\\{a_n\\right\\}$ 中每项都是 0 . 又 $\\left\\{b_n\\right\\}$ 中已有一项是 0 , 同样递推得 $\\left\\{b_n\\right\\}$ 中每项都是 0 . 命题成立.",
+    "remark": "注:本题的大致求解思路是: 若存在某项小于 1 , 先确定它等于 0 , 再充分利用条件证明它的前后相邻项都等于 0 , 再往正向和逆向递推, 就说明了所有项都是 0 . 对另一个数列同理可验证所有项为 0 .\n在同样的求解思路下,本题可将条件中的\"2011,2012\"推广至更一般的情形: 当正整数 $p, q$ 互素,且不均为奇数时,命题仍能成立.",
+    "figures": []
+}

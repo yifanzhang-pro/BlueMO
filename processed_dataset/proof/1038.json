@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题21. $ A 、 B 、 C$ 为 $\\triangle A B C$ 三内角, 求证:\n$$\n\\sin \\frac{A}{2} \\sin \\frac{B}{2} \\sin \\frac{C}{2} \\leqslant \\frac{1}{8} .\n$$",
+    "solution": "因为 $b+c \\geqslant 2 \\sqrt{b c}$ ( $b=c$ 时, 取等号), 所以 $\\frac{a}{2 \\sqrt{b c}} \\geqslant \\frac{a}{b+c}= \\frac{\\sin A}{\\sin B+\\sin C}=\\frac{2 \\sin \\frac{A}{2} \\cos \\frac{A}{2}}{2 \\sin \\frac{B+C}{2} \\cos \\frac{B-C}{2}}=\\frac{\\sin \\frac{A}{2}}{\\cos \\frac{B-C}{2}} \\geqslant \\sin \\frac{A}{2}(B=C$ 时取等号). 同理可得 $\\frac{b}{2 \\sqrt{a c}} \\geqslant \\sin \\frac{B}{2}, \\frac{C}{2 \\sqrt{a b}} \\geqslant \\sin \\frac{C}{2}$, 所以 $\\sin \\frac{A}{2} \\sin \\frac{B}{2} \\sin \\frac{C}{2} \\leqslant \\frac{a}{2 \\sqrt{b c}} \\cdot \\frac{b}{2 \\sqrt{a c}} \\cdot \\frac{c}{2 \\sqrt{b a}}=\\frac{1}{8}$.",
+    "remark": "",
+    "figures": []
+}

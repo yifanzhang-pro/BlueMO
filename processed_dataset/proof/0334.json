@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例7. 是否存在无穷多对不同的正整数对 $(a, b)$ 使 $a \\mid b^2+1$ 且 $b \\mid a^2+1$.",
+    "solution": "分析:先列举一些满足条件的正整数对 $(a, b)$ 如下表:\n\\begin{tabular}{|c|c|c|c|c|c|c|}\n\\hline$a$ & 1 & 2 & 5 & 13 & 34 & $\\cdots$ \\\\\n\\hline$a^2+1$ & 2 & 5 & 26 & 170 & 1157 & $\\cdots$ \\\\\n\\hline$b$ & 2 & 5 & 13 & 34 & 89 & $\\cdots$ \\\\\n\\hline$b^2+1$ & 5 & 26 & 170 & 1157 & 7922 & $\\cdots$ \\\\\n\\hline\n\\end{tabular}\n经过观察可以看出 $a, b$ 的取值恰是下列递推数列的相邻两项: $a_1==1, a_2= 2, a_{n+2}=3 a_{n+1}-a_n\\left(n \\in \\mathbf{N}_{+}\\right)$(这个递推关系也可这样求出, 先设 $a_{n+2}= p a_{n+1}+q a_n$, 再用 $a_1=1, a_2=2, a_3=5, a_4=13$ 代入便可求出 $p=3, q= -1)$. 并且 $\\left\\{a_n\\right\\}$ 满足 $a_{n+1}^2+1=a_n a_{n+2}$.\n解首先证明下列引理.\n引理 1 设 $a_1=1, a_2=2, a_{n+2}=3 a_{n+1}-a_n\\left(n \\in \\mathbf{N}_{+}\\right)$, 则 $a_{n+1}^2+1=a_n a_{n+2}$.\n引理 1 的证明 $n=1$ 时, $a_3=3 a_2-a_1=5, a_2^2+1=2^2+1=5=a_1 a_3$.\n设 $n=k$ 时 $a_{k+1}^2+1=a_k a_{k+2}$, 那么 $n=k+1$ 时,\n$$\n\\begin{aligned}\na_{k+2}^2+1 & =a_{k+2}\\left(3 a_{k+1}-a_k\\right)+1 \\\\\n& =3 a_{k+2} a_{k+1}-\\left(a_{k+2} a_k-1\\right)\n\\end{aligned}\n$$\n$$\n\\begin{aligned}\n& =3 a_{k+2} a_{k+1}-a_{k+1}^2 \\\\\n& =a_{k+1}\\left(3 a_{k+2}-a_{k+1}\\right) \\\\\n& =a_{k+1} a_{k+3} .\n\\end{aligned}\n$$\n这就完成了引理 1 的证明.\n取 $a=a_{n+1}, b=a_{n+2}\\left(n \\in \\mathbf{N}_{+}\\right)$, 于是这样的 $(a, b)$ 有无穷多个不同的对, 且满足 $a^2+1=a_{n+1}^2+1=a_n a_{n+2}=a_n b$ 被 $b$ 整除并且 $b^2+1=a_{n+2}^2+1= a_{n+1} a_{n+3}=a a_{n+3}$ 被 $a$ 整除.\n注:熟悉斐波那契数列的读者不难发现 $a, b$ 的取值数列恰是下列斐波那契数列的奇数项:\n$$\n1,1,2,3,5,8,13,21,34,55,89, \\cdots\n$$\n由此可得本题的另一解法.",
+    "remark": "",
+    "figures": []
+}

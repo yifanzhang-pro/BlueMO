@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $a_1, a_2, \\cdots, a_n \\in \\mathbf{R}^{+}, S=a_1+a_2+\\cdots+a_n$. 求证:\n$$\n\\left(1+a_1\\right)\\left(1+a_2\\right) \\cdots\\left(1+a_n\\right) \\leqslant 1+S+\\frac{S^2}{2 !}+\\cdots+\\frac{S^n}{n !} .\n$$",
+    "solution": "证明:由于 $G_n \\leqslant A_n$, 得\n$$\n\\begin{aligned}\n& \\left(1+a_1\\right)\\left(1+a_2\\right) \\cdots\\left(1+a_n\\right) \\\\\n\\leqslant & \\left(\\frac{n+a_1+a_2+\\cdots+a_n}{n}\\right)^n=\\left(1+\\frac{S}{n}\\right)^n \\\\\n= & 1+\\mathrm{C}_n^1\\left(\\frac{S}{n}\\right)+\\mathrm{C}_n^2\\left(\\frac{S}{n}\\right)^2+\\cdots+\\mathrm{C}_n^m\\left(\\frac{S}{n}\\right)^m+\\cdots+\\mathrm{C}_n^n\\left(\\frac{S}{n}\\right)^n .\n\\end{aligned}\n$$\n因为 $n !=(n-m) !(n-m+1) \\cdots n \\leqslant(n-m) ! n^m$,\n所以\n$$\n\\mathrm{C}_n^m\\left(\\frac{S}{n}\\right)^m=\\frac{n !}{m !(n-m) !} \\cdot \\frac{1}{n^m} S^m \\leqslant \\frac{S^m}{m !},\n$$\n从而命题成立.",
+    "remark": "",
+    "figures": []
+}

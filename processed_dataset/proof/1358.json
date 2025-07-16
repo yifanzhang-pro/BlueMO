@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例5. 求证: 对于所有正整数 $n$, 有\n$$\n\\sqrt{1^2+\\sqrt{2^2+\\sqrt{3^3+\\cdots+\\sqrt{n^2}}}}<2 .\n$$",
+    "solution": "分析:此题不宜从正向人手.\n相反, 采用反向归纳法原理, 先从最里层的根号开始考虑, 最后才扩大到最外层的根号就不难证明.\n证明下证\n$$\n\\sqrt{k^2+\\sqrt{(k+1)^2+\\cdots+\\sqrt{n^2}}}<k+1 . \\label{(1)}\n$$\n当 $k=n$ 时,(1)式显然成立.\n现假设当 $k=n, n-1, \\cdots, m$ 时(1)式成立, 则当 $k=m-1$ 时, 只要证明\n$$\n\\sqrt{(m-1)^2+\\sqrt{m^2+\\cdots+\\sqrt{n^2}}}<m-1+1=m .\n$$\n利用归纳假设上式左端 $<\\sqrt{(m-1)^2+m+1}=\\sqrt{m^2-m+2} \\leqslant m(\\dot{m} \\geqslant 2)$.\n故当 $k=m-1$ 时, (1)也成立.\n综上, 特别当 $k=1$ 时, 有原不等式成立.\n说明反向归纳法原理是指: 设 $P(n)$ 是关于自然数 $n$ 的一个命题.\n如果:\n(1) $P(n)$ 对无限多个自然数 $n$ 成立;\n(2) 假设 $P(k+1)$ 成立,可推出 $P(k)$ 也成立.\n那么 $P(n)$ 对一切自然数 $n$ 皆成立.",
+    "remark": "",
+    "figures": []
+}

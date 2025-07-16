@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例29. 设 $a, b, c \\in \\mathbf{R}^{+}$, 求证:\n$$\n\\frac{a+b+c}{3} \\geqslant \\sqrt[3]{\\frac{(a+b)(b+c)(c+a)}{8}} \\geqslant \\frac{\\sqrt{a b}+\\sqrt{b c}+\\sqrt{c a}}{3} .\n$$",
+    "solution": "证明:由平均不等式, 得\n$$\n\\begin{gathered}\n\\frac{(a+b)+(b+c)+(c+a)}{3} \\geqslant \\sqrt[3]{(a+b)(b+c)(c+a)}, \\\\\n\\frac{a+b+c}{3} \\geqslant \\sqrt[3]{\\frac{(a+b)(b+c)(c+a)}{8}} .\n\\end{gathered}\n$$\n所以\n$$\n\\frac{a+b+c}{3} \\geqslant \\sqrt[3]{\\frac{(a+b)(b+c)(c+a)}{8}} .\n$$\n由(2)(Hölder 不等式), 有\n$$\n\\begin{aligned}\n\\frac{(a+b)(b+c)(c+a)}{8} & =\\frac{1}{27}\\left(\\frac{a+b}{2}+b+a\\right)\\left(b+\\frac{b+c}{2}+c\\right)\\left(a+c+\\frac{a+c}{2}\\right) \\\\\n& \\geqslant \\frac{1}{27}\\left(\\sqrt[3]{\\frac{a+b}{2} \\cdot b \\cdot a}+\\sqrt[3]{b \\cdot \\frac{b+c}{2} \\cdot c}+\\sqrt[3]{a \\cdot c \\cdot \\frac{a+c}{2}}\\right)^3 \\\\\n& \\geqslant \\frac{1}{27}(\\sqrt[3]{\\sqrt{a b} \\cdot a \\cdot b}+\\sqrt[3]{\\sqrt{b c} \\cdot b \\cdot c}+\\sqrt[3]{\\sqrt{c a} \\cdot c \\cdot a})^3 \\\\\n& =\\frac{1}{27}(\\sqrt{a b}+\\sqrt{b c}+\\sqrt{c a})^3,\n\\end{aligned}\n$$\n所以 $\\sqrt[3]{\\frac{(a+b)(b+c)(c+a)}{8}} \\geqslant \\frac{\\sqrt{a b}+\\sqrt{b c}+\\sqrt{c a}}{3}$.",
+    "remark": "",
+    "figures": []
+}

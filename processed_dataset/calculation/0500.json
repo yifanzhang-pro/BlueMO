@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例11 已知 $f(x)=\\log _2 x, g(x)=x^2-2 a x+5 a-1$.\n(1) 若函数 $f[g(x)]$ 在区间 $[2,4]$ 上是单调函数,求 $a$ 的取值范围;\n(2) 求函数 $g[f(x)]$ 在区间 $[2,4]$ 上的最小值 $h(a)$.",
+    "solution": "解:(1) $f[g(x)]=\\log _2\\left(x^2-2 a x+5 a-1\\right)$.\n由 $f[g(x)]$ 在区间 $[2,4]$ 上是单调函数知, $g(x)=x^2-2 a x+5 a-1$ 在区间 $[2,4]$ 上是单调函数, 且 $g(x)>0$.\n所以 $\\left\\{\\begin{array}{l}a \\leqslant 2, \\\\ g(2)=4-4 a+5 a-1>0\\end{array}\\right.$ 或 $\\left\\{\\begin{array}{l}a \\geqslant 4, \\\\ g(4)=16-8 a+5 a-1>0 .\\end{array}\\right.$\n解得 $-3<a \\leqslant 2$ 或 $4 \\leqslant a<5$.\n故 $a$ 的取值范围是 $(-3,2] \\cup[4,5)$.\n(2) $g[f(x)]=\\left(\\log _2 x\\right)^2-2 a \\log _2 x+5 a-1$.\n设 $\\log _2 x=t$, 则 $1 \\leqslant t \\leqslant 2, g[f(x)]=t^2-2 a t+5 a-1=(t-a)^2- a^2+5 a-1$.\n若 $a<1$, 则当 $t=1$ 时, $g[f(x)]$ 取得最小值 $3 a$;\n若 $1 \\leqslant a \\leqslant 2$, 则当 $t=a$ 时, $g[f(x)]$ 取得最小值 $-a^2+5 a-1$;\n若 $a>2$, 则当 $t=2$ 时, $g[f(x)]$ 取得最小值 $a+3$.",
+    "remark": "",
+    "figures": []
+}

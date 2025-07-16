@@ -1,0 +1,313 @@
+
+%%TEXT_BEGIN%%
+复数的概念及代数运算.
+复数概念的引人最初是为了求解
+$$
+x^2+1=0
+$$
+这样的没有实根的方程, 因此复数集可以看作实数集的一个自然的扩充.
+为此, 首先引进一个"新数" $i$, 使它满足
+$$
+\mathrm{i}^2=-1,
+$$
+即 $\mathrm{i}$ 适合方程 $x^2+1=0$. 这个新数 $\mathrm{i}$ 称为虚数单位.
+将 $\mathrm{i}$ 添加到实数集中去, 定义:形如 $z=a+b \mathrm{i}$ ( $a 、 b$ 均是实数) 的表达式称为一个复数.
+其中的 $a$ 和 $b$ 分别叫做复数 $z$ 的实部和虚部, 分别记作
+$$
+a=\operatorname{Re}(z), b=\operatorname{Im}(z) .
+$$
+一、复数 $z=a+b \mathrm{i}(a 、 b \in \mathrm{R})$ 的分类.
+当虚部 $b=0$ 时,复数 $z$ 是实数;
+当虚部 $b \neq 0$ 时,复数 $z$ 是虚数;
+当虚部 $b \neq 0$, 且实部 $a=0$ 时,复数 $z$ 是纯虚数.
+如果记
+$\mathbf{R}$ 一一实数集
+$\mathbf{C}$ 一一复数集
+$\mathbf{P}$ 一一虚数集
+$\mathbf{Q}$ 一一纯虚数集
+就有关系
+$$
+\mathbf{R} \cap \mathbf{P}=\varnothing \quad \mathbf{R} \cup \mathbf{P}=\mathbf{C} \quad \mathbf{Q} \varsubsetneqq \mathbf{P} \varsubsetneqq \mathbf{C}
+$$
+二、复数相等的充要条件.
+对于两个复数 $z_1=a+b \mathrm{i}(a 、 b \in \mathbf{R}), z_2=c+d \mathrm{i}(c 、 d \in \mathbf{R})$, 二者相等的充要条件是 $a=c$ 且 $b=d$, 即
+$$
+a+b \mathrm{i}=c+d \mathrm{i} \Leftrightarrow\left\{\begin{array}{l}
+a=c, \\
+b=d .
+\end{array}\right.
+$$
+复数相等的充要条件是复数问题化归为实数问题的理论依据, "化虚为实"是解决复数问题的通性通法.
+三、复数的运算法则.
+对于两个复数 $a+b \mathrm{i} 、 c+d \mathrm{i}(a, b, c, d \in \mathbf{R})$.
+加法: $(a+b \mathrm{i})+(c+d \mathrm{i})=(a+c)+(b+\dot{d}) \mathrm{i}$;
+减法: $(a+b \mathrm{i})-(c+d \mathrm{i})=(a-c)+(b-d) \mathrm{i}$;
+乘法: $(a+b \mathrm{i})(c+d \mathrm{i})=(a c-b d)+(b c+a d) \mathrm{i}$;
+除法: $\frac{a+b \mathrm{i}}{c+\bar{d}}=\frac{a c+b d}{c^2+d^2}+\frac{b c-a d}{c^2+d^2} \mathrm{i}(c+d \mathrm{i} \neq 0)$.
+四、复数的运算定律.
+复数的加法满足交换律、结合律, 也就是说, 对于任何复数 $z_1 、 z_2 、 z_3$, 均有
+$$
+\begin{gathered}
+z_1+z_2=z_2+z_1, \\
+\left(z_1+z_2\right)+z_3=z_1+\left(z_2+z_3\right) .
+\end{gathered}
+$$
+复数的乘法满足交换律、结合律, 以及乘法对于加法的分配律.
+也就是说, 对于复数 $z_1 、 z_2 、 z_3$,均有
+$$
+\begin{aligned}
+z_1 z_2 & =z_2 z_1, \\
+\left(z_1 z_2\right) z_3 & =z_1\left(z_2 z_3\right), \\
+z_1\left(z_2+z_3\right) & =z_1 z_2+z_1 z_3 .
+\end{aligned}
+$$
+五、共轭复数的性质.
+当两个复数的实部相等, 虚部互为相反数时, 就称其互为共轭复数.
+特别地, 若复数的虚部不为零时, 也称作互为共轭虚数.
+对于复数 $z=a+b \mathrm{i}(a$ 、 $b \in \mathbf{R})$, 它的共轭复数用 $\bar{z}=a-b \mathrm{i}(a 、 b \in \mathbf{R})$ 来表示.
+共轭复数有如下基本性质:
+(1) $\overline{z_1 \pm z_2}=\overline{z_1} \pm \overline{z_2}$;
+(2) $\overline{z_1 z_2}=\overline{z_1} \overline{z_2}$;
+(3) $\overline{\left(\frac{z_1}{z_2}\right)}=\frac{\overline{z_1}}{\overline{z_2}}\left(z_2 \neq 0\right)$;
+(4) $\overline{z^n}=(\bar{z})^n$;
+(5) $z+\bar{z}=2 \operatorname{Re}(z), z-\bar{z}=2 \mathrm{i} \operatorname{Im}(z)$;
+(6) $\overline{\bar{z}}=z$;
+(7) $z$ 是实数的充要条件是 $\bar{z}=z ; z$ 是纯虚数的充要条件是 $\bar{z}=-z$ 且 $z \neq 0$.
+六、复数的几何形式.
+复数 $a+b \mathrm{i}(a 、 b \in \mathbf{R})$ 与复平面上的点 $Z(a, b)$ 是一一对应的, 点 $Z(a, b)$ 和向量 $\overrightarrow{O Z}$ 也构成一一对应关系, 点 $Z$ 和间量 $\overrightarrow{O Z}$ 均是复数 $z=a+b \mathrm{i}$ 的几何形式.
+向量 $\overrightarrow{O Z}$ 的模 $r$ 称为复数 $z=a+b \mathrm{i}$ 的模 $|z|$, 即
+$$
+r=|z|=\sqrt{a^2+b^2} .
+$$
+这种对应关系的构建, 揭示了复数问题与向量问题之间的相互转化, 说明了向量方法是解决复数问题的一条有效途径.
+关于复数的模,有如下的基本性质:
+(1) $z \bar{z}=|z|^2=|\bar{z}|^2$;
+(2) ||$z_1|-| z_2|| \leqslant\left|z_1 \pm z_2\right| \leqslant\left|z_1\right|+\left|z_2\right|$;
+(3) $|z| \geqslant \max \{|\operatorname{Re}(z)|,|\operatorname{Im}(z)|\}$.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知复数 $z_1=(m-3)+(m-1) \mathrm{i}, z_2=(2 m-5)+\left(m^2+m-\right. 2) \mathrm{i}$, 且 $z_1>\overline{z_2}$, 试求实数 $m$ 的值.
+%%<SOLUTION>%%
+分析:与解由 $z_1>\overline{z_2}$ 知, $z_1 、 \overline{z_2}$ 均为实数, 即有
+$$
+\left\{\begin{array}{l}
+m-1=0, \\
+-\left(m^2+m-2\right)=0,
+\end{array}\right.
+$$
+解得 $m=1$.
+因为 $z_1>\overline{z_2}$, 所以 $m-3>2 m-5$, 即 $m<2$. 而 $m=1$ 适合 $m<2$. 故所求 $m=1$.
+%%<REMARK>%%
+注:解题的突破口在于发现" $z_1 、 \overline{z_2}$ 均为实数"这一隐含条件.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 已知 $\frac{z}{z-2}$ 是纯虚数, 求复数 $z$ 在复平面内对应点轨迹的方程.
+%%<SOLUTION>%%
+分析:与解设 $z=x+y \mathrm{i}(x, y \in \mathbf{R})$, 则
+$$
+\frac{z}{z-2}=\frac{x+y \mathrm{i}}{(x-2)+y \mathrm{i}}=\frac{(x+y \mathrm{i})[(x-2)-y \mathrm{i}]}{(x-2)^2+y^2}
+$$
+$$
+\begin{aligned}
+& =\frac{x(x-2)+y^2+[y(x-2)-x y] \mathrm{i}}{(x-2)^2+y^2} \\
+& =\frac{x(x-2)+y^2-2 y \mathrm{i}}{(x-2)^2+y^2} .
+\end{aligned}
+$$
+因为 $\frac{z}{z-2}$ 是纯虚数, 所以 $\left\{\begin{array}{l}x(x-2)+y^2=0, \\ y \neq 0,\end{array}\right.$ 即复数 $z$ 在复平面内对应点的轨迹是圆 (除去两点), 轨迹方程是
+$$
+(x-1)^2+y^2=1(y \neq 0) .
+$$
+%%<REMARK>%%
+注:初学复数的读者要千万留心: 纯虚数不仅是实部等于 0 , 还要求虚部不等于 0 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 已知非零复数 $a 、 b 、 c$ 满足 $\frac{a}{b}=\frac{b}{c}=\frac{c}{a}$, 试求 $\frac{a+b-c}{a-b+c}$ 的一切可能值.
+%%<SOLUTION>%%
+分析:与解设 $\frac{a}{b}=\frac{b}{c}=\frac{c}{a}=k$, 则 $a=b k, b=c k, c=a k$, 也就有 $c= a k, b=a k \cdot k=a k^2, a=a k^2 \cdot k=a k^3$. 因为 $a \neq 0$, 所以有 $k^3=1$, 解得 $k=1$ 或 $k=-\frac{1}{2} \pm \frac{\sqrt{3}}{2} \mathrm{i}$.
+所以 $\frac{a+b-c}{a-b+c}=\frac{a+a k^2-a k}{a-a k^2+a k}=\frac{1+k^2-k}{1-k^2+k}$.
+若 $k=1$, 则原式 $=1$;
+若 $k=-\frac{1}{2}+\frac{\sqrt{3}}{2} \mathrm{i}$, 则原式 $=-\frac{1}{2}-\frac{\sqrt{3}}{2} \mathrm{i}$ ;
+若 $k=-\frac{1}{2}-\frac{\sqrt{3}}{2} \mathrm{i}$, 则原式 $=-\frac{1}{2}+\frac{\sqrt{3}}{2} \mathrm{i}$.
+综上所述, $\frac{a+b-c}{a-b+c}$ 的一切可能值为 $1 、-\frac{1}{2}-\frac{\sqrt{3}}{2} \mathrm{i}$ 和 $-\frac{1}{2}+\frac{\sqrt{3}}{2} \mathrm{i}$.
+%%<REMARK>%%
+注:连等式设 $k$ 是常用的解题技巧.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 已知 $z \in \mathbf{C}$, 关于 $x$ 的一元二次方程
+$$
+x^2-z x+4+3 \mathrm{i}=0
+$$
+有实根,求使复数 $z$ 的模取得最小值的复数 $z$.
+%%<SOLUTION>%%
+分析:与解设出复数 $z$ 的代数形式, 利用方程的实根将实部, 虚部分离.
+设已知方程的实根为 $x_0$, 并记 $z=a+b \mathrm{i}(a 、 b \in \mathbf{R})$, 则有
+$$
+x_0^2-(a+b \mathrm{i}) x_0+4+3 \mathrm{i}=0,
+$$
+即
+$$
+\left(x_0^2-a x_0+4\right)+\left(-b x_0+3\right) \mathrm{i}=0 .
+$$
+于是, 有
+$$
+\begin{gathered}
+x_0^2-a x_0+4=0, \label{eq1} \\
+-b x_0+3=0 . \label{eq2}
+\end{gathered}
+$$
+因为 $b=0$ 时,方程 式\ref{eq2} 无解, 所以 $b \neq 0$.
+由式\ref{eq2}有 $x_0=\frac{3}{b}$, 代入 \ref{eq1} 式,得 $\left(\frac{3}{b}\right)^2-\left(\frac{3}{b}\right) a+4=0$, 解得 $a=\frac{4 b^2+9}{3 b}, \label{eq3}$.
+于是 $|z|^2=a^2+b^2=\left(\frac{4 b^2+9}{3 b}\right)^2+b^2=\frac{25}{9} b^2+\frac{9}{b^2}+8 \geqslant 2 \sqrt{\frac{25}{9} b^2 \cdot \frac{9}{b^2}}+ 8=18$.
+当且仅当 $\frac{25}{9} b^2=\frac{9}{b^2}$, 也即 $b^2=\frac{9}{5}$ 时, 上式中的等号成立.
+此时, 对应的 $a^2=18-\frac{9}{5}=\frac{81}{5}$.
+由\ref{eq3}式可知 $a 、 b$ 同号, 从而所求的复数 $z= \pm\left(\frac{9 \sqrt{5}}{5}+\frac{3 \sqrt{5}}{5} \mathrm{i}\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 已知两个复系数函数
+$$
+f(x)=\sum_{k=0}^n a_k x^{n-k}, g(x)=\sum_{k=0}^n b_k x^{n-k},
+$$
+其中 $a_0=b_0=1, \sum_{k=1}^{\left[\frac{n}{2}\right]} b_{2 k}$ 和 $\sum_{k=1}^{\left[\frac{n+1}{2}\right]} b_{2 k-1}$ 均为实数.
+若 $g(x)=0$ 的所有根的平方的相反数是 $f(x)=0$ 的全部根, 求证: $\sum_{k=1}^n(-1)^k a_k$ 是实数.
+%%<SOLUTION>%%
+分析:与解设方程 $g(x)=0$ 的 $n$ 个根为 $x_k(k=1,2, \cdots, n)$, 则知方程 $f(x)=0$ 的 $n$ 个根为 $-x_k^2(k=1,2, \cdots, n)$, 于是, 有
+$$
+g(x)=\prod_{k=1}^n\left(x-x_k\right), f(x)=\prod_{k=1}^n\left(x+x_k^2\right) .
+$$
+$$
+\text { 从而 } \begin{aligned}
+f(-1) & =\prod_{k=1}^n\left(-1+x_k^2\right) \\
+& =\prod_{k=1}^n\left(-1-x_k\right) \prod_{k=1}^n\left(1-x_k\right) \\
+& =g(-1) g(1) .
+\end{aligned} \label{eq1}
+$$
+因为 $g(1)=\sum_{k=0}^n b_k=b_0+\sum_{k=1}^{\left[\frac{n}{2}\right]} b_{2 k}+\sum_{k=1}^{\left[\frac{n+1}{2}\right]} b_{2 k-1}$,
+$$
+\begin{aligned}
+g(-1)=\sum_{k=0}^n b_k(-1)^{n-k}=(-1)^n b_0+(-1)^{n-1} \sum_{k=1}^{\left[\frac{n+1}{2}\right]} b_{2 k-1}+(-1)^{n-2} \sum_{k=1}^{\left[\frac{n}{2}\right]} b_{2 k} \\
+f(-1)=\sum_{k=0}^n a_k(-1)^{n-k} \\
+=(-1)^n a_0+\sum_{k=1}^n(-1)^{n-k} a_k \\
+=(-1)^n+(-1)^n \sum_{k=1}^n(-1)^k a_k,
+\end{aligned}
+$$
+所以
+$$
+\sum_{k=1}^n(-1)^k a_k=(-1)^n f(-1)-1 . \label{eq2}
+$$
+由题设条件知 $g(-1) 、 g(1)$ 均是实数, 注意到等式 \ref{eq1}, 可知 $f(-1)$ 亦是实数, 从而 \ref{eq2} 式的右端为实数.
+也即 $\sum_{k=1}^n(-1)^k a_k$ 为实数, 证毕.
+%%<REMARK>%%
+注:考虑 $f(-1)$ 是本题的关键, 它建立了 $f(x)$ 与 $g(x)$ 的一个关系.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $A 、 B 、 C$ 分别是复数 $z_0=a \mathrm{i}, z_1=\frac{1}{2}+b \mathrm{i}, z_2=1+c \mathrm{i}$ 对应的不共线的三点 ( $a 、 b 、 c$ 都是实数). 证明: 曲线 $z=z_0 \cos ^4 t+2 z_1 \cos ^2 t \cdot \sin ^2 t+ z_2 \sin ^4 t(t \in \mathbf{R})$ 与 $\triangle A B C$ 中平行于 $A C$ 的中位线只有一个公共点, 并求出此点.
+%%<SOLUTION>%%
+分析:与解设 $D 、 E$ 分别为 $A B 、 B C$ 的中点, 则 $D 、 E$ 对应的复数分别为 $\frac{1}{2}\left(z_0+z_1\right)=\frac{1}{4}+\frac{a+b}{2} \mathrm{i}, \frac{1}{2}\left(z_1+z_2\right)=\frac{3}{4}+\frac{b+c}{2} \mathrm{i}$.
+于是,线段 $D E$ 上的点对应的复数 $z$ 满足
+$$
+z=\lambda\left(\frac{1}{4}+\frac{a+b}{2} \mathrm{i}\right)+(1-\lambda)\left(\frac{3}{4}+\frac{b+c}{2} \mathrm{i}\right), 0 \leqslant \lambda \leqslant 1 .
+$$
+代入曲线方程
+$$
+z=z_0 \cos ^4 t+2 z_1 \cos ^2 t \cdot \sin ^2 t+z_2 \sin ^4 t,
+$$
+对比两边实部和虚部, 得
+$$
+\left\{\begin{array}{l}
+\frac{3}{4}-\frac{\lambda}{2}=\sin ^2 t \cos ^2 t+\sin ^4 t, \\
+\frac{1}{2}[\lambda a+b+(1-\lambda) c]=a \cos ^4 t+2 b \sin ^2 t \cos ^2 t+c \sin ^4 t .
+\end{array}\right.
+$$
+两式中消去 $\lambda$, 得
+$$
+\begin{aligned}
+\frac{3}{4}(a-c)+\frac{b+c}{2} & =a \cos ^4 t+(2 b+a-c) \sin ^2 t \cos ^2 t+a \sin ^4 t \\
+& =a\left(1-2 \sin ^2 t \cos ^2 t\right)+(2 b+a-c) \sin ^2 t \cos ^2 t \\
+& =a+(2 b-a-c) \sin ^2 t \cos ^2 t .
+\end{aligned}
+$$
+于是 $\quad(2 b-a-c)\left(\sin ^2 t \cos ^2 t-\frac{1}{4}\right)=0$.
+若 $2 b-a-c=0$, 则 $z_1=\frac{1}{2}\left(z_0+z_2\right)$, 因此 $A 、 B 、 C$ 三点共线, 与假设矛盾! 所以 $2 b-a-c \neq 0$, 故 $\sin ^2 t \cos ^2 t=\frac{1}{4}$, 从而 $\sin ^2 t\left(1-\sin ^2 t\right)=\frac{1}{4}$, 即 $\left(\sin ^2 t-\frac{1}{2}\right)^2=0, \sin ^2 t=\frac{1}{2}$.
+故 $\frac{3}{4}-\frac{2}{\lambda}=\frac{1}{4}+\left(\frac{1}{2}\right)^2=-\frac{1}{2}$, 即有 $\lambda=\frac{1}{2} \in[0,1]$.
+这表明曲线与 $\triangle A B C$ 的平行于 $A C$ 的中位线只有一个交点, 这个交点对应的复数为
+$$
+z=\frac{1}{2}\left(\frac{1}{4}+\frac{a+b}{2} \mathrm{i}\right)+\frac{1}{2}\left(\frac{3}{4}+\frac{b+c}{2} \mathrm{i}\right)=\frac{1}{2}+\frac{a+c+2 b}{4} \mathrm{i} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $z=\sum_{k=1}^n z_k^2, z_k=x_k+y_k \mathrm{i}\left(x_k 、 y_k \in \mathbf{R}, k=1,2, \cdots, n\right), p$ 是 $z$ 的平方根的实部, 求证: $|p| \leqslant \sum_{k=1}^n\left|x_k\right|$.
+%%<SOLUTION>%%
+分析:与解设 $p+q \mathrm{i}(p 、 q \in \mathbf{R})$ 是 $z$ 的平方根, 由
+$$
+\begin{gathered}
+(p+q \mathrm{i})^2=\sum_{k=1}^n z_k^2=\sum_{k=1}^n\left(x_k^2-y_k^2\right)+2 \mathrm{i} \sum_{k=1}^n x_k y_k, \\
+p^2-q^2=\sum_{k=1}^n\left(x_k^2-y_k^2\right), p q=\sum_{k=1}^n x_k y_k . \label{eq1}
+\end{gathered}
+$$
+用反证法, 假设 $|p|>\sum_{k=1}^n\left|x_k\right|$, 则 $p^2>\left(\sum_{k=1}^n\left|x_k\right|\right)^2 \geqslant \sum_{k=1}^n x_k^2$, 由此推出 $q^2>\sum_{k=1}^n y_k^2, \label{eq2}$.
+由式\ref{eq1}、\ref{eq2}, 可得 $\left(\sum_{k=1}^n x_k y_k\right)^2=p^2 q^2>\left(\sum_{k=1}^n x_k^2\right) \cdot\left(\sum_{k=1}^n y_k^2\right)$, 这与柯西不等式相矛盾!
+故 $|p| \leqslant \sum_{k=1}^n\left|x_k\right|$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 是否存在 $\theta \in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$, 使 $z^2+8 z+9=(z-\tan \theta)(z-\tan 3 \theta)$ 对一切复数 $z$ 恒成立?
+%%<SOLUTION>%%
+分析:与解结论是否定的.
+用反证法, 假设存在一个 $\theta \in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$, 使题中的等式成立.
+特别地, 取 $z=\mathrm{i}$, 得
+$$
+\begin{aligned}
+8+8 i & =(i-\tan \theta)(i-\tan 3 \theta)=i(1+i \tan \theta) \cdot i(1+i \tan 3 \theta) \\
+& =-\frac{(\cos \theta+i \sin \theta)(\cos 3 \theta+i \sin 3 \theta)}{\cos \theta \cos 3 \theta}=-\frac{\cos 4 \theta+i \sin 4 \theta}{\cos \theta \cos 3 \theta}
+\end{aligned} \label{eq1}
+$$
+从而, 有 $\tan 4 \theta=1, \cos 4 \theta= \pm \frac{\sqrt{2}}{2}$.
+比较 式\ref{eq1}的实部,便有
+$$
+\begin{gathered}
+8=-\frac{\cos 4 \theta}{\cos \theta \cos 3 \theta}=-\frac{2 \cos 4 \theta}{\cos 4 \theta+\cos 2 \theta}, \\
+\cos 4 \theta+\cos 2 \theta=-\frac{1}{4} \cos 4 \theta, \\
+-\frac{5}{4} \cos 4 \theta=\cos 2 \theta, \\
+\frac{25}{16} \cos ^2 4 \theta=\cos ^2 2 \theta=\frac{1+\cos 4 \theta}{2},
+\end{gathered}
+$$
+即有
+$$
+25 \cos ^2 4 \theta=8(1+\cos 4 \theta) .
+$$
+将 $\cos 4 \theta= \pm \frac{\sqrt{2}}{2}$ 代入上式, 显然左端是有理数, 而右端是无理数,矛盾.
+故不存在这样的 $\theta$,使等式恒成立.
+%%PROBLEM_END%%
+
+

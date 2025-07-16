@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 求 $x \\sqrt{1-y^2}+y \\sqrt{1-x^2}$ 的最大值.",
+    "solution": "解:法二:由基本不等式可以证明如下两个\"部分不等式\"\n$$\nx \\sqrt{1-y^2} \\leqslant \\frac{1}{2}\\left(x^2+1-y^2\\right), y \\sqrt{1-x^2} \\leqslant \\frac{1}{2}\\left(y^2+1-x^2\\right),\n$$\n相加即可.",
+    "remark": "",
+    "figures": []
+}

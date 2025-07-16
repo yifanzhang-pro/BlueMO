@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题13. 设 $a, b, c \\in \\mathbf{R}^{+}$, 且满足 $a b c=1$, 求证:\n$$\n\\left(a-1+\\frac{1}{b}\\right)\\left(b-1+\\frac{1}{c}\\right)\\left(c-1+\\frac{1}{a}\\right) \\leqslant 1 .\n$$",
+    "solution": "令 $a=\\frac{x}{y}, b=\\frac{y}{z}, c=\\frac{z}{x}$, 且 $x, y, z \\in \\mathbf{R}^{+}$, 则原不等式等价于 $\\left(\\frac{x}{y}-1+\\frac{z}{y}\\right)\\left(\\frac{y}{z}-1+\\frac{x}{z}\\right)\\left(\\frac{z}{x}-1+\\frac{y}{x}\\right) \\leqslant 1$, 即 $(x-y+z)(y-z+x) (z-x+y) \\leqslant x y z . x-y+z, y-z+x, z-x+y$ 中任意 2 个之和 $>0$, 故至多只有 1 个 $\\leqslant 0$.\n(1) 若其中恰有 1 个 $\\leqslant 0$, 结论显然成立.\n(2)若每个都 $>0$, 由于 $(x-y+z)(y-z+x) \\leqslant x^2,(x-y+z)(z- x+y) \\leqslant z^2,(y-z+x)(z-x+y) \\leqslant y^2$, 相乘即得不等式成立.",
+    "remark": "",
+    "figures": []
+}

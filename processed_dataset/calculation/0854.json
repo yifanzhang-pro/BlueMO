@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题9. 已知 $0<a_1<a_2<\\cdots<a_n$, 对于 $a_1, a_2, \\cdots, a_n$ 的任意排列 $b_1, b_2, \\cdots$, $b_n$. 令 $M=\\prod_{i=1}^n\\left(a_i+\\frac{1}{b_i}\\right)$, 求使 $M$ 取值最大的排列 $b_1, b_2, \\cdots, b_n$.",
+    "solution": "令 $A=a_1 a_2 \\cdots a_n$, 则 $M=\\frac{1}{A} \\prod_{i=1}^n\\left(a_i b_i+1\\right)$. 由 $\\left(a_i b_i+1\\right)^2 \\leqslant\\left(a_i^2+1\\right) \\left(b_i^2+1\\right)$ 知等号成立 $\\Leftrightarrow a_i=b_i$. 由此得到 $M \\leqslant \\frac{1}{A} \\prod_{i=1}^n\\left(1+a_i^2\\right)$, 且等号成立 $\\Leftrightarrow a_i=b_i(i=1,2, \\cdots, n)$. 故 $b_1=a_1, b_2=a_2, \\cdots, b_n=a_n$ 时, $M$ 取值最大.",
+    "remark": "",
+    "figures": []
+}

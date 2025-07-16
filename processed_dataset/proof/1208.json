@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题20. 设 $\\triangle A B C$ 的外接圆 $K$ 的半径为 $R$, 内角平分线分别交圆 $K$ 于 $A^{\\prime}, B^{\\prime}$, $C^{\\prime}$, 证明: $16 Q^3 \\geqslant 27 R^4 P$. 其中, $Q 、 P$ 分别为 $\\triangle A^{\\prime} B^{\\prime} C^{\\prime}$ 与 $\\triangle A B C$ 的面积.",
+    "solution": "设 $\\triangle A B C$ 的三个内角为 $\\alpha 、 \\beta 、 \\gamma$, 则 $P=\\frac{1}{2} R^2(\\sin 2 \\alpha+\\sin 2 \\beta+ \\sin 2 \\gamma)$. 由于 $\\triangle A^{\\prime} B^{\\prime} C^{\\prime}$ 的内角为 $\\frac{\\beta+\\gamma}{2}, \\frac{\\alpha+\\gamma}{2}, \\frac{\\alpha+\\beta}{2}$, 所以 $Q=\\frac{1}{2} R^2[\\sin (\\beta+ \\gamma)+\\sin (\\alpha+\\gamma)+\\sin (\\alpha+\\beta)]$. 由平均值不等式, 得 $16 Q^3=2 R^6[\\sin (\\beta+\\gamma)+ \\sin (\\alpha+\\gamma)+\\sin (\\alpha+\\beta)]^3 \\geqslant 2 R^6 \\cdot 27 \\sin (\\beta+\\gamma) \\sin (\\alpha+\\gamma) \\sin (\\alpha+\\beta)= 27 R^6[\\cos (\\alpha-\\beta)+\\cos \\gamma] \\sin (\\alpha+\\beta)=\\frac{27}{2} R^6[\\sin (\\alpha+\\beta+\\gamma)+\\sin (\\alpha+\\beta-\\gamma)+ \\sin 2 \\alpha+\\sin 2 \\beta]=\\frac{27}{2} R^6(\\sin 2 \\alpha+\\sin 2 \\beta+\\sin 2 \\gamma)=27 R^4 P$.",
+    "remark": "",
+    "figures": []
+}

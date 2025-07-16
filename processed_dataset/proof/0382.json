@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 设凸六边形 $A_1 A_2 A_3 A_4 A_5 A_6$ 的面积为 $S$. 证明 : 以其中 3 点为顶点的所有三角形中必有一个三角形的面积不大于 $\\frac{1}{6} S$.",
+    "solution": "如图(<FilePath:./images/volume11/figures/fig-c5a9.png>)所示设 3 条对角线 $A_1 A_4$ 与 $A_2 A_5, A_2 A_5$ 与 $A_3 A_6, A_3 A_6$ 与 $A_1 A_4$ 的交点分别为 $M_1, M_2, M_3$. 连接 $A_1 M_2, A_3 M_1, A_5 M_3$. 我们首先证明 6 个三角形: $\\triangle A_1 A_2 M_2, \\triangle A_2 A_3 M_1, \\triangle A_3 A_4 M_1, \\triangle A_4 A_5 M_3$, $\\triangle A_5 A_6 M_3, \\triangle A_6 A_1 M_2$ 中必有一个的面积 $\\leqslant \\frac{1}{6} S$. 事 $S$. 由平均值原理知其中必有一个三角形的面积 $\\leqslant \\frac{1}{6} S$, 不妨设 $S_{\\triangle A_1 A_2 M_2} \\leqslant \\frac{1}{6} S$. 其次我们证明题中结论成立.\n(a) 若 $A_1 A_2 / / A_3 A_6$, 则 $S_{\\triangle A_1 A_2 A_6}=S_{\\triangle A_1 A_2 M_2} \\leqslant\\frac{1}{6} S$. (b)若 $A_1 A_2 \\not X A_3 A_6$, 则 $\\min \\left\\{S_{\\triangle A_1 A_2 A_6}, S_{\\triangle A_1 A_2 A_3}\\right\\}<S_{\\triangle A_1 A_2 M_2} \\leqslant-\\frac{1}{6} S$.",
+    "remark": "",
+    "figures": [
+        "./images/volume11/figures/fig-c5a9.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 求 $x \\sqrt{1-y^2}+y \\sqrt{1-x^2}$ 的最大值.",
+    "solution": "解:法一:令 $x=\\sin \\alpha, y=\\sin \\beta$, 其中 $\\alpha, \\beta \\in\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$, 则\n$$\nx \\sqrt{1-\\overline{y^2}}+y \\sqrt{1-x^2}=\\sin \\alpha \\cos \\beta+\\sin \\beta \\cos \\alpha=\\sin (\\alpha+\\beta) \\leqslant 1,\n$$\n等号可在 $\\alpha+\\beta=\\frac{\\pi}{2}$ 时取到.",
+    "remark": "",
+    "figures": []
+}

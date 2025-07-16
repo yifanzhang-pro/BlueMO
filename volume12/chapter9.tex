@@ -1,0 +1,184 @@
+
+%%TEXT_BEGIN%%
+在第一节里,我们曾说过图是描述一些对象之间的某种特定关系的工具.
+前面所说的图都是无向图, 它所描述的关系是对称性关系.
+在现实生活中有许多关系不是对称性的, 如认识关系, 甲认识乙, 并不意味着乙也认识甲, 比赛的胜负关系等也是这样, 由此我们可以抽象出有向图的概念.
+把一个图的每一条边都规定一个方向, 称这个图为有向图.
+有向图的边称为弧, 若顶点 $v_i$ 与 $v_j$ 有弧相连, 弧上的箭头方向从 $v_i$ 指向 $v_j$, 记这条弧为 $\left(v_i\right.$, $\left.v_j\right)$, 且称 $v_i$ 为起点, $v_j$ 为终点.
+通常将有向图记为 $D=(V, U)$, 其中 $V$ 表示 $D$ 的顶点集合, $U$ 表示 $D$ 的弧的集合.
+如图(<FilePath:./figures/fig-c9i1.png>) 所示的有向图中,顶点集
+$$
+V=\left\{v_1, v_2, v_3, v_4, v_5, v_6\right\},
+$$
+弧的集合
+$$
+\begin{aligned}
+U= & \left\{\left(v_1, v_2\right),\left(v_2, v_3\right),\left(v_5, v_2\right),\left(v_4, v_2\right),\left(v_4, v_6\right),\right. \\
+& \left.\left(v_5, v_6\right),\left(v_5, v_4\right),\left(v_3, v_5\right),\left(v_4, v_5\right)\right\} .
+\end{aligned}
+$$
+这一节所说的有向图都是简单有向图, 也就是不含环 (即起点和终点相同的弧), 也不含多重弧 (即由一点向另一点的多于一条的弧) 的有向图.
+如果有向图 $G$ 的弧集 $U$ 中有弧 $\left(v_i, v_j\right)$ 或 $\left(v_j, v_i\right)$, 就称顶点 $v_i$ 和 $v_j$ 相邻, 否则称顶点 $v_i$ 和 $v_j$ 不相邻.
+以顶点 $v_i$ 为起点的弧的条数称为 $v_i$ 的出度, 记为 $d^{+}\left(v_i\right)$, 以 $v_i$ 为终点的弧的条数称为 $v_i$ 的人度, 记为 $d^{-}\left(v_i\right)$.
+有 $n$ 个顶点, 且每两个顶点都恰有一条弧相连的有向图称为竞赛图, 记作 $\bar{K}_n$.
+定理一设 $n$ 阶竞赛图 $\bar{K}_n$ 的顶点为 $v_1, v_2, \cdots, v_n$, 则
+$$
+\begin{aligned}
+& d^{+}\left(v_1\right)+d^{+}\left(v_2\right)+\cdots+d^{+}\left(v_n\right) \\
+= & d^{-}\left(v_1\right)+d^{-}\left(v_2\right)+\cdots+d^{-}\left(v_n\right)
+\end{aligned}
+$$
+$$
+=\frac{1}{2} n(n-1) .
+$$
+证明因为 $\bar{K}_n$ 中每一条弧产生一个人度和一个出度, 并且每两点之间有且仅有一条弧, 所以 $\bar{K}_n$ 中所有顶点的人度之和等于出度之和, 并且等于弧数.
+即
+$$
+\begin{aligned}
+& d^{+}\left(v_1\right)+d^{+}\left(v_2\right)+\cdots+d^{+}\left(v_n\right) \\
+= & d^{-}\left(v_1\right)+d^{-}\left(v_2\right)+\cdots+d^{-}\left(v_n\right) \\
+= & \frac{1}{2} n(n-1) .
+\end{aligned}
+$$
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+定理二竞赛图中总存在这样一个顶点, 使得从这一顶点出发, 通过长最多为 2 的路可以到达其他所有顶点.
+证明设竞赛图 $\bar{K}_n$ 中出度最大的顶点为 $v_1$, 以 $v_1$ 为起点的弧的终点集合记为 $\mathbf{N}^{+}\left(v_1\right)$. 若命题结论不真, 则必存在顶点 $v_2\left(v_2 \neq v_1\right), v_2 \notin \mathbf{N}^{+}\left(v_1\right)$, 且对每一点 $u \in \mathbf{N}^{+}\left(v_1\right)$ 都有一条从 $v_2$ 到 $u$ 的弧 $\left(v_2, u\right)$, 又有弧 $\left(v_2, v_1\right)$, 故 $d^{+}\left(v_2\right) \geqslant d^{+}\left(v_1\right)+1$, 这与 $v_1$ 是出度最大的顶点矛盾.
+定理得证.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+若有向图 $D$ 中有一条路包含图 $D$ 的一切顶点, 则称这条路为哈密顿路.
+对竟赛图 $\bar{K}_n$, 有如下结论.
+定理三竞赛图 $\bar{K}_n$ 中存在一条长为 $n-1$ 的哈密顿路.
+证明对顶点数 $n$ 用数学归纳法证明.
+$n=2$ 时显然.
+设命题对 $\leqslant k$ 个顶点的竞赛图成立.
+当 $n=k+1$ 时, 从 $k+1$ 个顶点中任取一个 $v$, 在 $\bar{K}_{k+1}$ 中去掉 $v$ 及其相邻的弧, 根据归纳假设, $\bar{K}_{k+1}-v$ 中存在哈密顿路,设为 $v_1, v_2, \cdots, v_k$.
+如果有弧 $\left(v_k, v\right)$, 那么 $v_1, v_2, \cdots, v_k, v$ 就是一条哈密顿路.
+如果有弧 $\left(v, v_1\right)$, 那么 $v, v_1, v_2, \cdots, v_k$ 就是一条哈密顿路.
+否则就存在弧 $\left(v, v_k\right),\left(v_1, v\right)$, 那么一定有一个 $i(1 \leqslant i \leqslant k-1)$, 使弧 $\left(v_i, v\right)$ 与 $\left(v, v_{i+1}\right)$ 同时存在, 这时 $v_1, \cdots, v_i, v, v_{i+1}, \cdots, v_k$ 就是所求的哈密顿路, 如图(<FilePath:./figures/fig-c9i2.png>) 所示.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+定理四竞赛图 $\bar{K}_n(n \geqslant 3)$ 中有一个回路是三角形的充分必要条件是有两个顶点 $v$ 与 $v^{\prime}$, 满足
+$$
+d^{+}(v)=d^{+}\left(v^{\prime}\right)
+$$
+证明设顶点 $v$ 与 $v^{\prime}$, 满足 $d^{+}(v)=d^{+}\left(v^{\prime}\right)$, 我们证明 $\bar{K}_n$ 中有一个回路为三角形.
+不妨设有弧 $\left(v, v^{\prime}\right)$, 并且从 $v^{\prime}$ 到顶点 $v_1, v_2, \cdots, v_k$ 各有一条弧, 其中 $k=d^{+}(v)$. 则必有一顶点 $v_j(1 \leqslant j \leqslant k)$, 从 $v_j$ 到 $v$ 有一条弧, 否则 $d^{+}(v) \geqslant k+1>d^{+}\left(v^{\prime}\right)$, 回路 $v, v^{\prime}, v_j$ 就是一个三角形.
+于是充分性得证.
+若 $\bar{K}_n$ 的各顶点的出度不同, 用数学归纳法证明 $\bar{K}_n$ 不含三角形回路.
+当 $n=3$ 时, 易知顶点出度为 $0,1,2$ 的三角形不成回路.
+设命题在 $n=k$ 时正确.
+考察 $k+1$ 阶竞赛图 $\bar{K}_{k+1}$, 若它的各个顶点出度不同, 那么它们依次为 $0,1,2, \cdots, k$. 设 $d^{+}\left(v^{\prime}\right)=k$, 去掉点 $v^{\prime}$ 及相应的弧, 由归纳假设, $\bar{K}_k-v^{\prime}$ 不含三角形回路, 显然 $\bar{K}_{k+1}$ 中也没有三角形回路, 必要性得证.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. $n$ 个参赛者 $P_1, P_2, \cdots, P_n(n>1)$ 进行循环赛, 每个参赛者同其他 $(n-1)$ 个参赛者都进行一局比赛.
+假设比赛结果没有平局出现, $w_r$ 和 $l_r$ 分别表示参赛者 $P_r$ 胜与负的局数,求证:
+$$
+w_1^2+w_2^2+\cdots+w_n^2=l_1^2+l_2^2+\cdots+l_n^2 .
+$$
+%%<SOLUTION>%%
+证明:作一竞赛图 $\bar{K}_n$, 每个顶点 $v_r$ 对应于参赛者 $P_r$, 如果参赛者 $P_i$ 胜了 $P_j$, 则在顶点 $v_i, v_j$ 之间作弧 $\left(v_i, v_j\right)$. 于是 $w_r$ 和 $l_r$ 分别是顶点 $v_r$ 的出度和人度.
+根据定理一,
+$$
+w_1+w_2+\cdots+w_n=l_1+l_2+\cdots+l_n .
+$$
+若注意到 $w_i+l_i=n-1(1 \leqslant i \leqslant n)$, 可得
+$$
+\begin{aligned}
+& w_1^2+w_2^2+\cdots+w_n^2-\left(l_1^2+l_2^2+\cdots+l_n^2\right) \\
+= & \left(w_1^2-l_1^2\right)+\left(w_2^2-l_2^2\right)+\cdots+\left(w_n^2-l_n^2\right) \\
+= & \left(w_1+l_1\right)\left(w_1-l_1\right)+\left(w_2+l_2\right)\left(w_2-l_2\right) \\
+& +\cdots+\left(w_n+l_n\right)\left(w_n-l_n\right) \\
+= & (n-1)\left[\left(w_1+w_2+\cdots+w_n\right)-\left(l_1+l_2+\cdots+l_n\right)\right]=0 .
+\end{aligned}
+$$
+从而有
+$$
+w_1^2+w_2^2+\cdots+w_n^2=l_1^2+l_2^2+\cdots+l_n^2 .
+$$
+在有向图 $D=(v, u)$ 中,一个由不同的弧组成的序列 $u_1, u_2, \cdots, u_n$, 若其中 $u_i$ 的起点为 $v_i$, 终点为 $v_{i+1}(i=1,2, \cdots, n)$, 称这个序列为从 $v_1$ 到 $v_{n+1}$ 的有向路 (简称路), $n$ 称为这个路的长.
+$v_1$ 为路的起点, $v_{n+1}$ 为路的终点.
+如果 $v_1=v_{n+1}$, 则称这个路为回路.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. $\mathrm{MO}$ 太空城由 99 个空间站组成,任两个空间站之间有管形通道相联.
+规定其中 99 条通道为双向通行的主干道, 其余通道严格单向通行.
+如果某四个空间站可以通过它们之间的通道从其中任一站到达另外任一站, 则称这四个站的集合为一个互通四站组.
+试为 $\mathrm{MO}$ 太空城设计一个方案, 使得互通四站组的数目最大 (请具体算出该最大数,并证明你的结论). 
+%%<SOLUTION>%%
+证明:将不能互通的四站组称之为坏四站组, 于是坏四站组有 3 种可能情形 :
+(1) 站 $A$ 引出的 3 条通道 $A B 、 A C 、 A D$ 全都离开 $A$;
+(2) 站 $A$ 引出的 3 条通道全都走进 $A$;
+(3) 站 $A$ 与 $B 、 C$ 与 $D$ 之间都是双向通道,但通道 $A C 、 A D$ 都离开 $A$, $B C 、 B D$ 都离开 $B$.
+将第(1)种的所有坏四站组的集合记为 $S$, 其余坏四站组的集合记为 $T$. 我们来计算 $|S|$.
+因为太空城共有 $\mathrm{C}_{99}^2-99=99 \times 48$ 条单行通道, 设第 $i$ 站走出的通道数为 $S_i$, 于是
+$$
+\sum_{i=1}^{99} S_i=99 \times 48
+$$
+这时从站 $A_i$ 引出 3 条通道的 (1) 类坏四站组有 $\mathrm{C}_{S_i}^3$ 个.
+从而
+$$
+|S|=\sum_{i=1}^{99} \mathrm{C}_{S_i}^3 \geqslant 99 \times \mathrm{C}_{48}^3 .
+$$
+上面的不等号是因为 $\mathrm{C}_x^3=\frac{1}{6} x(x-1)(x-2)$ 在 $x \geqslant 3$ 时是凸函数, 又因为所有四站组总数为 $\mathrm{C}_{99}^4$, 所以互通四站组的个数不多于
+$$
+\mathrm{C}_{99}^4-|S| \leqslant \mathrm{C}_{99}^4-99 \mathrm{C}_{48}^3 \text {. }
+$$
+下面构造一个例子使互通四站组恰为 $C_{99}^4-99 C_{48}^3$ 个.
+为此, 必须使每个站 $A_i$ 走出的通道数都是 48 , 从而走人的通道数也是 48 , 且每站恰有两条双向通道, 同时保证只有 $S$ 类坏四站组没有 $T$ 类坏四站组.
+将 99 个空间站写在一个圆内接正 99 边形的 99 个顶点上.
+规定正 99 边形的最长对角线为双向通道, 于是每点都恰有两条双向通道.
+对于站 $A_i$, 按顺时针方向接下去的 48 个站与 $A_i$ 的单向通道都从 $A_i$ 走出; 按逆时针方向接下去的 48 个站都是走向 $A_i$ 的.
+下面我们验证, 在这个规定下只有 $S$ 类坏四站组而没有 $T$ 类坏四站组.
+设 $\{A, B, C, D\}$ 是任一四站组.
+(i)若四站之间有两条双向通道,则显然是连通的;
+(ii) 若 4 站之间有唯一的双向通道 $A C$,则 $B$ 和 $D$ 分别与 $A 、 C$ 形成一个环路, 从而也是互通的.
+(iii) 故坏四站组之间没有双向通道, 只能是 (1)(2)两种情形之一.
+若为 (2), 不妨设 $A$ 的 3 条通道全是走进 $A$ 的, 于是 $B 、 C 、 D$ 都在 $A$ 算起逆时针方向的 48 个站内, 设其 $D$ 离 $A$ 最远, 从而 $A D 、 B D 、 C D$ 都走出 $D$. 这表明坏四站组都是 $S$ 类的.
+综上可知,互通四站组最多 $\mathrm{C}_{99}^4-99 \mathrm{C}_{48}^3$ 组.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. $n(n \geqslant 3)$ 个人参加单循环比赛, 通过比赛确定优秀选手.
+选手 $A$ 被确定为优秀选手的条件是: 对任何其他选手 $B$, 或 $A$ 胜 $B$, 或存在选手 $C, C$ 胜 $B, A$ 胜 $C$. 如果按上述规则确定的优秀选手只有一名, 试证这名选手战胜所有其他选手.
+%%<SOLUTION>%%
+证明:将 $n$ 个选手对应 $n$ 个点, 若选手 $v_i$ 胜 $v_j$, 则作一条从 $v_i$ 到 $v_j$ 的弧, 得到一个竞赛图 $\bar{K}_n$. 不妨设 $v_1$ 是 $\bar{K}_n$ 中出度最大的点, 由定理二知, $v_1$ 就是优秀选手.
+要证明的是顶点 $v_1$ 到别的顶点有长为 1 的路 (即弧), 也就是 $v_1$ 的人度 $d^{-}\left(v_1\right)=0$.
+假设命题结论不真, 记以 $v_1$ 为终点的弧的起点集合为 $N^{-}\left(v_1\right)=\left\{v_{i_1}\right.$, $\left.v_{i_2}, \cdots, v_{i_r}\right\}, r \geqslant 1$. 考虑由顶点 $v_{i_1}, v_{i_2}, \cdots, v_{i_r}$ 组成的竞赛图 $\bar{K}_r$, 取 $v_{i_1}$ 是 $\bar{K}_r$ 中的出度最大的点.
+据定理二, $v_{i_1}$ 到 $v_{i_2}, \cdots, v_{i_r}$ 各点有不大于 2 的路.
+又由于 $v_1$ 有到除 $v_{i_1}, \cdots, v_{i_r}$ 外的所有其他顶点的弧, 故 $v_{i_1}$ 到除 $\left\{v_{i_1}, \cdots, v_{i_r}\right\}$ 外的点也有不大于 2 的路, 因而, 在竞赛图 $\bar{K}_n$ 中 $v_{i_1}$ 到其他各点均有不大于 2 的路, 于是 $v_{i_1}$ 也是优秀选手, 这与 $v_1$ 是唯一的优秀选手矛盾, 从而 $N^{-}\left(v_1\right)= \varnothing$, 即 $d^{-}\left(v_1\right)=0$. 命题得证.
+%%<REMARK>%%
+注:: 本题说明了竞赛图 $\bar{K}_n$ 的一个性质: 若 $\bar{K}_n$ 中出度最大的点唯一, 则这点的出度为 $n-1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 在象棋赛中, 每两名选手都要赛一场, 证明: 我们可以给所有参赛选手编号, 使得无论哪一一个选手都没有输给紧接在他后面编号的那个选手.
+%%<SOLUTION>%%
+证明:设有 $n$ 名选手, 用 $n$ 个顶点 $v_1, v_2, \cdots, v_n$ 表示这 $n$ 名选手, 当选手 $v_i$ 没有输给 $v_j$ 时, 从 $v_i$ 向 $v_j$ 引一条弧 $\left(v_i, v_j\right)$, 这样就得到了一个竞赛图 $\bar{K}_n$. 由定理三, $\bar{K}_n$ 中有哈密顿路, 则按此路上选手出现的顺序为他们编号即可.
+%%PROBLEM_END%%
+
+

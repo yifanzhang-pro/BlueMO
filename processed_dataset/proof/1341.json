@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设 $a, b, c, d \\in \\mathbf{R}^{+}$, 求证:\n$$\n\\begin{aligned}\n& \\frac{a^3+b^3+c^3}{a+b+c}+\\frac{b^3+c^3+d^3}{b+c+d}+\\frac{c^3+d^3+a^3}{c+d+a}+\\frac{d^3+a^3+b^3}{d+a+b} \\\\\n\\geqslant & a^2+b^2+c^2+d^2 .\n\\end{aligned}\n$$",
+    "solution": "分析:直接证明这个不等式, 有点难以下手, 我们若能证明(局部不等式)\n$$\n\\frac{a^3+b^3+c^3}{a+b+c} \\geqslant \\frac{a^2+b^2+c^2}{3}, \\label{(1)}\n$$\n则同理可得 $\\frac{b^3+c^3+d^3}{b+c+d} \\geqslant \\frac{b^2+c^2+d^2}{3}, \\frac{c^3+d^3+a^3}{c+d+a} \\geqslant \\frac{c^2+d^2+a^2}{3}$, $\\frac{d^3+a^3+b^3}{d+a+b} \\geqslant \\frac{d^2+a^2+b^2}{3}$, 把这些不等式相加, 便得所要证明的式子.\n所以, 要证明本题, 只需证明一个局部不等式(1).\n证明先证: 对 $x, y, z \\in \\mathbf{R}^{+}$, 有\n$$\n\\frac{x^3+y^3+z^3}{x+y+z} \\geqslant \\frac{x^2+y^2+z^2}{3} .\n$$\n事实上,由柯西不等式, 得\n$$\n\\begin{aligned}\n(x+y+z)\\left(x^3+y^3+z^3\\right) & \\geqslant\\left(x^2+y^2+z^2\\right)^2 \\\\\n& \\geqslant\\left(x^2+y^2+z^2\\right) \\cdot \\frac{(x+y+z)^2}{3},\n\\end{aligned}\n$$\n所以\n$$\n\\frac{x^3+y^3+z^3}{x+y+z} \\geqslant \\frac{x^2+y^2+z^2}{3} .\n$$\n于是有\n$$\n\\begin{aligned}\n& \\frac{a^3+b^3+c^3}{a+b+c} \\geqslant \\frac{a^2+b^2+c^2}{3}, \\frac{b^3+c^3+d^3}{b+c+d} \\geqslant \\frac{b^2+c^2+d^2}{3}, \\\\\n& \\frac{c^3+d^3+a^3}{c+d+a} \\geqslant \\frac{c^2+d^2+a^2}{3}, \\frac{d^3+a^3+b^3}{d+a+b} \\geqslant \\frac{d^2+a^2+b^2}{3} .\n\\end{aligned}\n$$\n把上面这 4 个不等式相加便得\n$$\n\\begin{aligned}\n& \\frac{a^3+b^3+c^3}{a+b+c}+\\frac{b^3+c^3+d^3}{b+c+d}+\\frac{c^3+d^3+a^3}{c+d+a}+\\frac{d^3+a^3+b^3}{d+a+b} \\\\\n\\geqslant & a^2+b^2+c^2+d^2 .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

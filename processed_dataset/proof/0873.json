@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例7 已知 $x, y$ 是实数, 且满足 $x^2+x y+y^2=3$, 求 $u=x^2-x y+y^2$ 的最大值与最小值.",
+    "solution": "分析:这是一个有关最值的经典问题, 有多种解法, 这里介绍两种最常见的解法.\n由于已知条件都是二次的代数式, 故我们试图将其与判别式或基本不等式建立联系.\n解法一将题设中的两式相减再除以 2 , 得 $x y=\\frac{3-u}{2}$, 再用题设的第一式相加此式及用题设的第二式相减此式分别得\n$$\n(x+y)^2=\\frac{9-u}{2}\n$$\n和\n$$\n(x-y)^2=\\frac{3 u-3}{2},\n$$\n可得\n$$\n1 \\leqslant u \\leqslant 9\n$$\n而容易验证当 $x=\\sqrt{3}, y=-\\sqrt{3}$ 时, $u=9$;\n当 $x=y=1$ 时, $u=1$.\n所以 $u_{\\max }=9, u_{\\min }=1$.\n解法二因为\n$$\n\\begin{aligned}\nu & =x^2-x y+y^2 \\\\\n& =x^2+x y+y^2-2 x y \\\\\n& =3-2 x y,\n\\end{aligned}\n$$\n由于\n$$\nx^2+y^2 \\geqslant 2 x y \\text { 及 } x^2+y^2 \\geqslant-2 x y,\n$$\n将此两式分别代入 $x^2+x y+y^2=3$, 得 $x y \\leqslant 1$ 和 $x y \\geqslant-3$.\n所以\n$$\n1 \\leqslant u=3-2 x y \\leqslant 9 .\n$$\n再从推导的过程中可以看到:\n当 $x=\\sqrt{3}, y=-\\sqrt{3}$ 时, $u=9$ ；\n当 $x=y=1$ 时, $u=1$.\n所以\n$$\nu_{\\max }=9, u_{\\min }=1 \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

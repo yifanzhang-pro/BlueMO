@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题4 已知 $a$ 是正整数, 抛物线 $y==a x^2+b x+c$ 过点 $A(-1,4), B(2,1)$, 并且与 $x$ 轴有两个不同的交点, 求:\n(1) $a$ 的最小值;\n(2) $b+c$ 的最大值.",
+    "solution": "(1) 因为抛物线过点 $A(-1,4), B(2,1)$, 所以 $a-b+c=4 \\cdots(1)$ , $4 a+ 2 b+c=1 \\cdots(2)$ , 且 $\\Delta=b^2-4 a c>0 \\cdots(3)$ . 由(1)、(2)可得 $b=-1-a, c= 3-2 a$. 代入 (3), 得 $(-1-a)^2-4 a(3-2 a)>0,(9 a-1)(a-1)>0$. 由于 $a \\geqslant 1$, 故 $9 a-1>0$, 所以 $a>1$, 从而 $a \\geqslant 2$. 又当 $a=2, b=-3, c=-1$ 时, 满足题意.\n所以 $a$ 的最小值为 2 . \n(2) 由上题知, $b+c=2-3 a \\leqslant 2-3 \\times 2=-4$, 当 $a=2, b=-3, c=-1$ 时等号成立, 所以 $b+c$ 的最大值为 -4 .",
+    "remark": "",
+    "figures": []
+}

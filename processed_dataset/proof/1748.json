@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例5. 如图(<FilePath:./images/volume7/figures/fig-c8i16.png>), 在 $\\triangle P B C$ 中, $\\angle P B C= 60^{\\circ}$, 过点 $P$ 作 $\\triangle P B C$ 的外接圆圆 $O$ 的切线, 与 $C B$ 的延长线交于点 $A$, 点 $D 、 E$ 分别在线段 $P A$ 和圆 $O$ 上,使得 $\\angle D B E=90^{\\circ}, P D=P E$, 连结 $B E$ 与 $P C$ 相交于点 $F$. 已知 $A F 、 B P 、 C D$ 三线共点.\n(1) 求证: $B F$ 是 $\\angle P B C$ 的角平分线;\n(2) 求 $\\tan \\angle P C B$ 的值.",
+    "solution": "解:(1) 设 $A F 、 B P 、 C D$ 三线共点于 $H$, 设 $A H$ 与 $B D$ 交于点 $G$. 在完全四边形 $A B C H P D$ 中, 由对角线调和分割性质知 $A H$ 被 $G 、 F$ 调和分割, 从而知 $B A 、 B H 、 B G 、 B F$ 为调和线束.\n而 $B D \\perp B E$, 故 $B F$ 平分 $\\angle A B P$ 的外角, 即 $B F$ 是 $\\angle P B C$ 的平分线.\n(2) 设 $\\angle P C B=\\alpha$, 则 $\\angle A P B=\\angle P E B=\\alpha$, 在 $\\triangle P E B$ 及 $\\triangle P D B$ 中分别由正弦定理并注意到 $P D=P E$ 有\n$$\n\\frac{\\sin 30^{\\circ}}{\\sin \\alpha}=\\frac{\\sin 60^{\\circ}}{\\sin \\left(120^{\\circ}-\\alpha\\right)} \\Rightarrow \\tan \\alpha=\\frac{6+\\sqrt{6}}{11} .\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8i16.png"
+    ]
+}

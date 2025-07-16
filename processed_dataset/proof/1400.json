@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 设不等式\n$$\n\\begin{aligned}\n& \\left|z_1^{\\prime}-z_2^{\\prime}\\right|+\\left|z_2^{\\prime}-z_3^{\\prime}\\right|+\\cdots+\\left|z_{n-1}^{\\prime}-z_n^{\\prime}\\right| \\\\\n\\leqslant & \\lambda \\cdot\\left[\\left|z_1-z_2\\right|+\\left|z_2-z_3\\right|+\\cdots+\\left|z_{n-1}-z_n\\right|\\right]\n\\end{aligned}\n$$\n对一切不全相等的复数 $z_1, z_2, \\cdots, z_n$ 都成立.\n其中 $k z_k^{\\prime}=\\sum_{j=1}^k z_j, k=1$, $2, \\cdots, n$. 求证: $\\lambda \\geqslant 1-\\frac{1}{n}$. 并问何时取到等号?",
+    "solution": "$\\sum_{k=1}^{n-1}\\left|z_k^{\\prime}-z_{k+1}^{\\prime}\\right|=\\sum_{k=1}^{n-1}\\left|\\frac{1}{k} \\sum_{j=1}^k z_j-\\frac{1}{k+1} \\sum_{j=1}^{k+1} z_j\\right|$\n$$\n\\begin{aligned}\n& =\\sum_{k=1}^{n-1} \\frac{1}{k(k+1)}\\left|\\sum_{j=1}^k j\\left(z_j-z_{j+1}\\right)\\right| \\\\\n& \\leqslant \\sum_{k=1}^{n-1}\\left(\\frac{1}{k(k+1)} \\cdot \\sum_{j=1}^k j\\left|z_j-z_{j+1}\\right|\\right) \\\\\n& =\\sum_{j=1}^{n-1} \\sum_{k=j}^{n-1}\\left(\\frac{1}{k(k+1)} j\\left|z_j-z_{j+1}\\right|\\right) \\\\\n& =\\sum_{j=1}^{n-1}\\left(1-\\frac{j}{n}\\right)\\left|z_j-z_{j+1}\\right| \\\\\n& \\leqslant \\sum_{j=1}^{n-1}\\left(1-\\frac{1}{n}\\right)\\left|z_j-z_{j+1}\\right| \\\\\n& =\\left(1-\\frac{1}{n}\\right) \\sum_{j=1}^{n-1}\\left|z_j-z_{j+1}\\right| .\n\\end{aligned}\n$$\n易见,当 $z_1 \\neq z_2, z_2=z_3=\\cdots=z_n$ 时等号成立,故命题得证.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 今有两张 $3 \\times 3$ 方格表 A 与 B, 现将数 $1,2, \\cdots, 9$ 按某种顺序填人 A 表 (每格填写一个数), 然后依照如下规则填写 B 表: 使 B 表中第 $i$ 行、第 $j$ 列交叉处的方格内所填的数等于 $\\mathrm{A}$ 表中第 $i$ 行的各数和与第 $j$ 列的各数和之差的绝对值; 例如 B 表中的\n$$\nb_{12}=\\left|\\left(a_{11}+a_{12}+a_{13}\\right)-\\left(a_{12}+a_{22}+a_{32}\\right)\\right| .\n$$\n问: 能否在 $A$ 表适当填人 $1,2, \\cdots, 9$, 使得在 $B$ 表中也出现 $1,2, \\cdots, 9$\n这九个数字?\n\\begin{tabular}{|l|l|l|}\n\\hline$a_{11}$ & $a_{12}$ & $a_{13}$ \\\\\n\\hline$a_{21}$ & $a_{22}$ & $a_{23}$ \\\\\n\\hline$a_{31}$ & $a_{32}$ & $a_{33}$ \\\\\n\\hline\n\\end{tabular}\n(第 4 题表 $A$ )\n\\begin{tabular}{|l|l|l|}\n\\hline$b_{11}$ & $b_{12}$ & $b_{13}$ \\\\\n\\hline$b_{21}$ & $b_{22}$ & $b_{23}$ \\\\\n\\hline$b_{31}$ & $b_{32}$ & $b_{33}$ \\\\\n\\hline\n\\end{tabular}\n(第 4 题表 $B$)",
+    "solution": "不能作出这样的安排, 为此, 将 $\\mathrm{B}$ 表中的各数去掉绝对值符号, 所得到的表格记为表 $\\mathrm{C}$ :\n则\n$$\n\\begin{gathered}\nc_{11}=\\left(a_{11}+a_{12}+a_{13}\\right)-\\left(a_{11}+a_{21}+a_{31}\\right), \\\\\nc_{12}=\\left(a_{11}+a_{12}+a_{13}\\right)-\\left(a_{12}+a_{22}+a_{32}\\right), \\\\\n\\ldots \\ldots . \\\\\nc_{33}=\\left(a_{31}+a_{32}+a_{33}\\right)-\\left(a_{13}+a_{23}+a_{33}\\right),\n\\end{gathered}\n$$\n\\begin{tabular}{|l|l|l|}\n\\hline$c_{11}$ & $c_{12}$ & $c_{13}$ \\\\\n\\hline$c_{21}$ & $c_{22}$ & $c_{23}$ \\\\\n\\hline$c_{31}$ & $c_{32}$ & $c_{33}$ \\\\\n\\hline\n\\end{tabular}\n表 C\n易见, $c_{11}+c_{12}+\\cdots+c_{33}=0$, 故 C 表中有偶数个奇数, 因为 $b_{i j}==\\left|c_{i j}\\right|$, 故 $b_{i j}$ 与 $c_{i j}$ 同奇偶, 所以 B 表中也有偶数个奇数,但 $1,2, \\cdots, 9$ 中有奇数个奇数, 因此不能作出这样的安排.",
+    "remark": "",
+    "figures": []
+}

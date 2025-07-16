@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题18 设 $S=\\{-(2 n-1),-(2 n-2), \\cdots,-1,0,1,2, \\cdots, 2 n-1\\}$, 求证： $S$ 的任一个 $2 n+1$ 元的子集中必有 3 个数之和为零.",
+    "solution": "若不然, 则存在 $S$ 的一个 $2 n+1$ 元的子集 $H$, 其中任何 3 个数之和都不为零.\n(1) 首先证明, $0 \\notin H$. 如果 $0 \\in H$, 则其余的 $2 n$ 个整数分属于如下 $2 n-1$ 个数对: $(-i, i), i=1,2, \\cdots, 2 n-1$. 由抽屈原理知其中必有一对的两个数都属于 $H$. 二者加上 0,3 数之和为零, 矛盾.\n(2) 设 $H$ 中绝对值最小的元素为 $d$, 不妨设 $d>0$. 令 $H^{+}=\\{x \\mid x \\in H, x>d\\}, H^{-}=\\{x \\mid x \\in H, x<-d\\}, H^{+-}=\\left\\{d-x \\mid x \\in H^{+}\\right\\}, H^{-+}= \\left\\{-d-x \\mid x \\in H^{-}\\right\\}$. 显然, 这些集都不是空集且由反证假设知 $H^{+} \\cap H^{-+}= \\varnothing$. (i)\n若 $-d \\notin H$, 则由 (i) 有 $2 n-1 \\geqslant\\left|H^{+} \\cup H^{-+}\\right|=\\left|H^{+}\\right|+\\left|H^{-+}\\right|=2 n$, 矛盾.\n故必有 $-d \\in H$. 于是 $H^{-} \\cap H^{+-}=\\varnothing$ 及 $\\left|H^{+}\\right|+\\left|H^{-+}\\right|=\\left|H^{+-}\\right|+ \\left|H^{-}\\right|=2 n-1$. 故有 $H^{+} \\cup H^{-+}=\\{1,2, \\cdots, 2 n-1\\}, H^{-} \\cup H^{+-}=\\{-1,-2, \\cdots,-(2 n-1)\\}$. (ii)\n将 $H^{+} 、 H^{-}$中各数之和分别记为 $h^{+}$和 $h^{-}$, 则 $H^{+-}$和 $H^{-+}$中各数之和分别为 $\\left|H^{+}\\right| \\cdot d-h^{+}$和 $-\\left|H^{-}\\right| \\cdot d-h^{-}$. 于是由 (ii) 便得 $h^{+}+h^{-}+\\left|H^{+}\\right| \\cdot d-h^{+}-\\left|H^{-}\\right| \\cdot d-h^{-}=0,\\left(\\left|H^{+}\\right|-\\left|H^{-}\\right|\\right) d=0$. 因 $\\left|H^{+}\\right|+\\left|H^{-}\\right|=2 n-1$, 故 $\\left|H^{+}\\right|-\\left|H^{-}\\right|$为奇数, 故得 $d=0$, 矛盾.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-4.tex",
+    "problem_type": "proof",
+    "problem": "例1. 将 1650 个学生排成 22 行, 75 列的方阵, 已知任意给定的两列处于同一行的两个人中, 性别相同的学生不超过 11 对, 证明: 男生的人数不超过 928.",
+    "solution": "解:设第 $i$ 行的男生数为 $x_i$, 则女生数为 $75-x_i$, 依题意, 得\n$$\n\\sum_{i=1}^{22}\\left(\\mathrm{C}_{x_i}^2+\\mathrm{C}_{75-x_i}^2\\right) \\leqslant 11 \\times \\mathrm{C}_{75}^2\n$$\n于是\n$$\n\\sum_{i=1}^{22}\\left(x_i^2-75 x_i\\right) \\leqslant-30525,\n$$\n即 $\\sum_{i=1}^{22}\\left(2 x_i-75\\right)^2 \\leqslant 1650$. 由柯西不等式, 得\n$$\n\\left[\\sum_{i=1}^{22}\\left(2 x_i-750\\right)\\right]^2 \\leqslant 22 \\sum_{i=1}^{22}\\left(2 x_i-75\\right)^2 \\leqslant 36300,\n$$\n因此 $\\sum_{i=1}^{22}\\left(2 x_i-75\\right)<191$, 从而\n$$\n\\sum_{i=1}^{22} x_i<\\frac{191+1650}{2}<921,\n$$\n故男生的人数不超过 928 .",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题5 求所有的由不同正整数 (至少 2 个)组成的集合,使其中各数之和等于它们的积.",
+    "solution": "显然, 1 在集合中起着保持积不动而增大和的作用, 而且它是具有这种性质的惟一正整数.\n先设集合中的 $n$ 个数中不含 1 且 $1<a_1<a_2<\\cdots< a_n$, 于是 $a_j>j, j=1,2, \\cdots, n$. 因 $n \\geqslant 2$, 故有 $a_n a_{n-1}-a_n-a_{n-1}= (a_n -  1) \\left(a_{n-1}-1\\right)-1 \\geqslant 1, a_n a_{n-1} \\geqslant a_n+a_{n-1}+1$. 其中等号成立当且仅当 $a_n=3$, $a_{n-1}=2$. 从而当 $n \\geqslant 3$ 时, $a_n a_{n-1} a_{n-2} \\geqslant 2 a_n a_{n-1}>a_n+a_{n-1}+a_{n-2}+1$. 依此类推, 便得 $a_n a_{n-1} \\cdots a_1>a_n+a_{n-1}+\\cdots+a_1+1$. 这表明, 凡不含 1 的集合都不满足要求,而且当 $n \\geqslant 3$ 时, 即使将 1 添人集合中也不能满足要求.\n当 $n=2$ 时, 只有 $a_0=1, a_1=2, a_2=3$ 才满足题中要求.\n又当 $n=1$ 时, $a_1 \\cdot 1<a_1+1$, 所以任何 $\\left\\{1, a_1\\right\\}$ 都不满足题中要求.\n总结起来, 满足题中要求的集合只有一个, 即为 $\\{1,2,3\\}$.",
+    "remark": "",
+    "figures": []
+}

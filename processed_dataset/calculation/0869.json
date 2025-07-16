@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter8.tex",
+    "problem_type": "calculation",
+    "problem": "例7. 已知非负实数 $x_1, x_2, \\cdots, x_n(n \\geqslant 3)$ 满足不等式: $x_1+x_2+\\cdots+ x_n \\leqslant \\frac{1}{2}$, 求 $\\left(1-x_1\\right)\\left(1-x_2\\right) \\cdots\\left(1-x_n\\right)$ 的最小值.",
+    "solution": "解:当 $x_1, x_2, \\cdots, x_{n-2}, x_{n-1}+x_n$ 皆为定值时, 由于\n$$\n\\left(1-x_{n-1}\\right)\\left(1-x_n\\right)=1-\\left(x_{n-1}+x_n\\right)+x_{n-1} x_n,\n$$\n可见, $\\left|x_{n-1}-x_n\\right|$ 越大, 上式的值就越小.\n为此, $n \\geqslant 3$ 时, 令\n$$\nx_i^{\\prime}=x_i, i=1,2, \\cdots, n-2, x_{n-1}^{\\prime}=x_{n-1}+x_n, x_n^{\\prime}=0 . \\label{(1)}\n$$\n则 $x_{n-1}^{\\prime}+x_n^{\\prime}=x_{n-1}+x_n, x_{n-1}^{\\prime} x_n^{\\prime}=0 \\leqslant x_{n-1} x_n$. 所以有\n$$\n\\left(1-x_1\\right)\\left(1-x_2\\right) \\cdots\\left(1-x_n\\right) \\geqslant\\left(1-x_1^{\\prime}\\right)\\left(1-x_2^{\\prime}\\right) \\cdots\\left(1-x_{n-1}^{\\prime}\\right) \\text {. }\n$$\n其中\n$$\nx_1^{\\prime}+x_2^{\\prime}+\\cdots+x_{n-1}^{\\prime}=x_1+x_2+\\cdots+x_n \\leqslant \\frac{1}{2} .\n$$\n再进行形如(1)的磨光变换 $n-2$ 次, 可得\n$$\n\\left(1-x_1\\right)\\left(1-x_2\\right) \\cdots\\left(1-x_n\\right) \\geqslant 1-\\left(x_1+x_2+\\cdots+x_n\\right) \\geqslant-\\frac{1}{2},\n$$\n等号当 $x_1=\\frac{1}{2}, x_2=x_3=\\cdots=x_n=0$ 时取到.",
+    "remark": "",
+    "figures": []
+}

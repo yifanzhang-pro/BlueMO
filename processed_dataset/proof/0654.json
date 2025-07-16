@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter16.tex",
+    "problem_type": "proof",
+    "problem": "例1. 证明: $\\frac{n(n+1)(n+2)}{6}=1 \\cdot n+2 \\cdot(n-1)+3 \\cdot(n-2)+\\cdots+ n \\cdot 1$.",
+    "solution": "证明:虑在 $n+2$ 个数 $1,2, \\cdots, n+2$ 中任取 3 个的取法总数 $S$.\n一方面,显然有 $S=\\mathrm{C}_{n+2}^3=\\frac{n(n+1)(n+2)}{6}$.\n另一方面, 在 $1,2, \\cdots, n+2$ 中, 为取三个数 $a, b, c(1 \\leqslant a<b<c \\leqslant n+2)$, 可先取定 $b$, 其中 $b \\in\\{2,3, \\cdots, n+1\\}$, 此后, 在 $1,2, \\cdots, b-1$ 中任取一数 $a$, 在 $b+1, b+2, \\cdots, n+2$ 中任取一数 $c$, 由乘法原理, 这样的数对 $(a$, $c)$ 的取法数为 $(b-1)(n+2-b)$, 所以\n$$\nS=\\sum_{b=2}^{n+1}(b-1)(n+2-b)=1 \\cdot n+2 \\cdot(n-1)+3 \\cdot(n-2)+\\cdots+n \\cdot 1 .\n$$\n综上可知结论成立.",
+    "remark": "注:这是一个数学归纳法的习题,但注意到等式左端有组合数 $\\mathrm{C}_{n+2}^3$ 的 \"影子\", 因此这里给出的做法是赋予右端一种相匹配的组合解释, 以此证明等式.\n有相当多的恒等式与不等式可以通过这种组合上的考虑而获得证明, 即\"组合论证\",这是\"算两次\"的常用策略之一.\n用同样的分析方法可将本题结论推广为更一般的情况:\n设 $0<s \\leqslant r \\leqslant m$, 则 $\\sum_{k=0}^{m-r} \\mathrm{C}_{s+k-1}^{s-1} \\mathrm{C}_{m-s-k}^{r-s}=\\mathrm{C}_m^r$ (其中当 $m=n+2, r=3$,\n$s=2$ 时回到原结论).",
+    "figures": []
+}

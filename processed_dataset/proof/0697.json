@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例3. 求证:第 $n$ 个素数 (将素数从小到大编上序号, 2 算作第一个素数) $p_n$ 小于 $2^{2^n}$.",
+    "solution": "解: $n=1$ 时, $p_1=2<2^{2^1}$, 结论成立.\n设当 $n \\leqslant k$ 时, 结论成立, 即 $p_i<2^{2^i}(i=1,2, \\cdots, k)$, 于是将这 $k$ 个不等式两边分别相乘, 得\n$$\np_1 p_2 \\cdots p_k<2^{2^1+2^2+\\cdots+2^k},\n$$\n所以 $p_1 p_2 \\cdots p_k+1 \\leqslant 2^{2^1+2^2+\\cdots+2^k}=2^{2^{k+1}-2}<2^{2^{k+1}}$.\n因为 $p_1, p_2, \\cdots, p_k$ 都不能整除 $p_i p_2 \\cdots p_k+1$, 所以 $p_1 p_2 \\cdots p_k+1$ 的素因数 $q$ 不可能是 $p_1, p_2, \\cdots, p_k$, 而只能大于或等于 $p_{k+1}$.\n于是, 我们有 $p_{k+1} \\leqslant q \\leqslant p_1 p_2 \\cdots p_k+1<2^{2^{k+1}}$.\n这就是说, 当 $n=k+1$ 时, 结论也成立.\n根据数学归纳原理, 对于任意正整数 $n$, 都有 $p_n<2^{2^n}$.",
+    "remark": "注:在运用数学归纳法证明本题的过程中, 我们将 \"假设 $n=k$ 时结论成立\" 改为更有力的\"假设 $n \\leqslant k$ 时结论成立\". 在这样的变通之下, 很容易对第 $k+1$ 个素数给出所需的上界估计.",
+    "figures": []
+}

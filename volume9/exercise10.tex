@@ -1,0 +1,21 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 求最大正整数 $n$, 使平面内存在 $n$ 个凸多边形 (包括三角形), 其中每两个都有一条公共边但没有公共的内部.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c10a1.png>),标号为 $1 、 2 、 3 、 4$ 的 4 个凸多边形中每两个有一条公共边但没有公共的内部, 故所求 $n$ 的最大值不小于 4. 另一方面, 设在平面内存在 5 个凸多边形满足条件, 取定其中一个记为 $M_0$, 其他 4 个按它们的公共点在 $M_0$ 上的位置顺序记为 $M_1 、 M_2 、 M_3 、 M_4$. 按已知条件, $M_1$ 与 $M_3$ 有一条公共边, 因此 $M_0 、 M_1 、 M_3$ 这 3 个凸多边形或将 $M_2$ 包围在中间而 $M_4$ 在外,或将 $M_4$ 包围在中间而 $M_2$ 在外, 无论哪种情形 $M_2$ 与 $M_4$ 不可能有公共边, 矛盾, 故 $n \leqslant 4$. 综上可知, 所求 $n$ 的最大值为 4 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 平面五点间的最小距离为 1 , 若最大距离小于 $2 \sin 70^{\circ}$, 证明或否定:这五点是凸五边形的顶点.
+%%<SOLUTION>%%
+结论是肯定的, 下用反证法证之.
+显然无三点共线的情况.
+若凸包为三角形时, 内部有两点, 此时这五点距离的最大值与最小值的比 $\lambda \geqslant 2> 2 \sin 70^{\circ}$, 矛盾.
+若凸包为四边形 $A B C D, E$ 在其内部, 不妨设 $A C$ 和 $B D$ 交于$F$, 且 $E$ 在 $\triangle A F B$ 内, 如图(<FilePath:./figures/fig-c10a2.png>), 假设 $\lambda<2 \sin 70^{\circ}$. 先考虑两条引理: 引理 1 对任意 $\triangle A B C, \frac{B C}{\min (B A, C A)} \geqslant 2 \sin \frac{A}{2}$. 引理 2 设 $D$ 为 $\triangle A B C$ 内一点, 则及假设, 必有 $\angle A E C<140^{\circ}, \angle A E B<140^{\circ}$, 于是 $\angle B E C>80^{\circ}$, 同理 $\angle A E D>80^{\circ} \cdots$ (1). 又由引理 2 及假设, 有 $\angle A B C<70^{\circ}, \angle B A D<70^{\circ}$, 于是 $\max (\angle A D C, \angle B C D)>110^{\circ}$. 不妨设 $\angle B C D>110^{\circ}$, 由 (1) 有 $B C \geqslant \frac{B C}{\min (C E, B E)} \geqslant 2 \sin \frac{\angle C E B}{2} \geqslant 2 \sin 40^{\circ}$, 于是有 $\lambda \geqslant B D> \sqrt{1+4 \sin ^2 40^{\circ}+4 \sin 40^{\circ} \cos 70^{\circ}}=2 \sin 70^{\circ}$, 矛盾! 因此, 五点构成一个凸五边形.
+%%PROBLEM_END%%
+
+

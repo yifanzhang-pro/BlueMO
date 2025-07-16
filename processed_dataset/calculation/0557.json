@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题4 已知 $f(2 x-1)=x^2, x \\in \\mathbf{R}$, 求函数 $f(f(x))$ 的值域.",
+    "solution": "令 $y=2 x-1$, 则 $x=\\frac{1}{2}(y+1)$, 所以 $f(y)=\\frac{1}{4}(y+1)^2 \\cdot f(f(x))= \\frac{1}{4}\\left[\\frac{1}{4}(x+1)^2+1\\right]^2=\\frac{1}{64}\\left[(x+1)^2+4\\right]^2$. 函数 $f(f(x))$ 的定义域是 $\\mathbf{R}$. 当 $x=-1$ 时, $f(f(x))$ 取最小值.\n即 $f(f(x)) \\geqslant \\frac{1}{4}$. 所以 $f(f(x))$ 的值域是 $\\left[\\frac{1}{4},+\\infty\\right)$.",
+    "remark": "",
+    "figures": []
+}

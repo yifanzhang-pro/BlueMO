@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题2 求函数 $y=\\frac{2 x}{x^2+x+1}$ 的最大值和最小值.",
+    "solution": "去分母, 并整理成关于 $x$ 的二次方程 $y x^2+(y-2) x+y=0$. 因 $x$ 是实数, 当 $y \\neq 0$ 时, 判别式需恒大于或等于 0 , 即 $\\Delta=(y-2)^2-4 y^2 \\geqslant 0$, 解不等式得 $-2 \\leqslant y \\leqslant \\frac{2}{3}$. 而当 $x=-1$ 时, $y=-2$; 当 $x=1$ 时, $y=\\frac{2}{3}$. 故 $y_{\\min }=-2, y_{\\max }=\\frac{2}{3}$.",
+    "remark": "",
+    "figures": []
+}

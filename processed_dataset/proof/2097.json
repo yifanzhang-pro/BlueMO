@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 证明:设 $P$ 是 $\\triangle A_1 A_2 A_3$ 所在平面上的任意一点,则\n$$\n\\left(a_2^2+a_3^2-a_1^2\\right) R_1^2+\\left(a_3^2+a_1^2-a_2^2\\right) R_2^2+\\left(a_1^2+a_2^2-a_3^2\\right) R_3^2 \\geqslant \\frac{16}{3} \\Delta^2,\n$$\n其中 $\\Delta$ 表示 $\\triangle A_1 A_2 A_3$ 的面积, $a_1 、 a_2 、 a_3$ 是它的边长, $P A_i=R_i, i=1$, 2 , 3 .",
+    "solution": "在惯性矩不等式中, 令 $x=a_2^2+a_3^2-a_1^2$, 等等, 可得左边 $\\geqslant \\sum\\left(a_3^2+\\right. \\left.a_1^2-a_2^2\\right)\\left(a_1^2+a_2^2-a_3^2\\right) \\cdot \\frac{a_1^2}{a_1^2+a_2^2+a_3^2} \\cdots$ (1), 又注意到 $a_1^2+a_2^2+a_3^2 \\leqslant 9 R^2, R= \\frac{a_1 a_2 a_3}{4 \\Delta}$, 结合可得 $\\frac{a_1^2 a_2^2 a_3^3}{a_1^2+a_2^2+a_3^2} \\geqslant \\frac{16}{9} \\Delta^2 \\cdots$ (2), 再注意到 Heron 公式 $16 \\Delta^2= 2\\left(a_1^2 a_2^2+a_2^2 a_3^2+a_3^2 a_1^2\\right)-\\left(a_1^4+a_2^4+a_3^4\\right) \\cdots$ (3), 因此由 (1)、(2)、(3) 可知 $\\sum\\left(a_3^2+\\right.$\n$$\n\\begin{aligned}\n& \\left.a_1^2-a_2^2\\right)\\left(a_1^2+a_2^2-a_3^2\\right) \\frac{a_1^2}{a_1^2+a_2^2+a_3^2} \\geqslant-16 \\Delta^2+\\frac{12 a_1^2 a_2^2 a_3^2}{a_1^2+a_2^2+a_3^2} \\geqslant-16 \\Delta^2+12 . \\\\\n& \\frac{16}{9} \\Delta^2=\\frac{16}{3} \\Delta^2 .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

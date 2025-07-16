@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter2-5.tex",
+    "problem_type": "proof",
+    "problem": "例3. 证明 : 存在无穷多个 $n \\in \\mathbf{N}^*$, 使得\n$$\nn \\mid\\left(2^n+2\\right) . \\label{(1)}\n$$",
+    "solution": "证明:$n=2$ 满足(1), 下一个满足(1)的正整数 $n=6$, 两者之间的关系是 $6=2^2+2$. 这提示我们用下面的方法来处理.\n设 $n(>1)$ 是具有性质 (1) 的正整数, 如果能证明: $\\left(2^n+2\\right) \\mid\\left(2^{2^n+2}+2\\right)$, 那么依此递推, 可知有无穷多个正整数 $n$ 满足 (1).\n注意到 $\\left(2^{n-1}+1\\right) \\mid\\left(2^{2^n+1}+1\\right)$ 在 $(n-1) \\mid\\left(2^n+1\\right)$ 条件下成立.\n我们通过增加一个要求的方法来处理.\n下证: (2) 存在无穷多个 $n \\in \\mathbf{N}^*(n>1)$, 使得 $n \\mid\\left(2^n+2\\right)$, 并且 $(n-1) \\mid \\left(2^n+1\\right)$.\n注意到, $n=2$ 具有上述性质.\n现设 $n(\\geqslant 2)$ 具有上面的性质, 令 $m=2^n+$ 2 , 我们证明 $m$ 也具有上述性质.\n事实上, 由于 $(n-1) \\mid\\left(2^n+1\\right)$, 而 $2^n+1$ 为奇数, 故可设 $2^n+1=(n-$ 1) $q, q$ 为奇数, 则\n$$\n\\begin{aligned}\n2^{m-1}+1 & =2^{2^n+1}+1=\\left(2^{n-1}\\right)^q+1 \\\\\n& =\\left(2^{n-1}+1\\right)\\left(\\left(2^{n-1}\\right)^{q-1}-\\left(2^{n-1}\\right)^{q-2}+\\cdots+1\\right),\n\\end{aligned}\n$$\n故 $\\left(2^{n-1}+1\\right) \\mid\\left(2^{m-1}+1\\right)$, 从而 $\\left(2^n+2\\right) \\mid\\left(2^m+2\\right)$, 即 $m \\mid\\left(2^m+2\\right)$.\n另一方面, 由 $(n-1) \\mid\\left(2^n+1\\right)$, 知 $n-1$ 为奇数, 故 $n$ 为偶数, 这样, 由 $n \\mid\\left(2^n+2\\right)$, 我们可设 $2^n+2=n p$, 这里 $p$ 为奇数 (这里用到 $\\left.4 \\nmid\\left(2^n+2\\right)\\right)$, 于是\n$$\n2^m+1=\\left(2^n\\right)^p+1=\\left(2^n+1\\right)\\left(\\left(2^n\\right)^{p-1}-\\left(2^n\\right)^{p-2}+\\cdots+1\\right),\n$$\n即有 $\\left(2^n+1\\right) \\mid\\left(2^m+1\\right)$, 也就是说 $(m-1) \\mid\\left(2^m+1\\right)$.\n综上可知, 命题成立.",
+    "remark": "",
+    "figures": []
+}

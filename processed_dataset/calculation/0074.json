@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题2 设 $S$ 是一个有 6 个元素的集合,选取 $S$ 的两个子集(可以相同), 使得这两个子集的并集是 $S$, 选取的次序无关紧要, 例如, 一对子集 $\\{a, c\\},\\{b, c$, $d, e, f\\}$ 与一对子集 $\\{b, c, d, e, f\\},\\{a, c\\}$ 表示同一种取法.\n这样的取法有?种。",
+    "solution": "$435$. 设 $S=A \\cup B,|A| \\leqslant|B|$. 若 $|A|=0$, 则 $|B|=6$, 有 1 种取法; 若 $|A|=1$, 则 $|B|=6,5$, 有 $\\mathrm{C}_6^1 \\mathrm{C}_6^6+\\mathrm{C}_6^1 \\mathrm{C}_5^5=12$ 种取法; 类似地, 可分别计算出 $|A|=2,3,4,5,6$ 时的取法数.",
+    "remark": "",
+    "figures": []
+}

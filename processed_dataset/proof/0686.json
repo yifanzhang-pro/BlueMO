@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例10. 设 $n$ 是一个正整数, $a_1, a_2, \\cdots, a_k(k \\geqslant 2)$ 是集合 $\\{1,2, \\cdots, n\\}$ 中的互不相同的整数,使得对于 $i=1, \\cdots, k-1$, 都有 $n$ 整除 $a_i\\left(a_{i+1}-1\\right)$. 证明: $n$ 不整除 $a_k\\left(a_1-1\\right)$.",
+    "solution": "证明:反证法.\n假设 $n \\mid a_k\\left(a_1-1\\right)$, 则 $a_1 a_k \\equiv a_k(\\bmod n)$.\n由题设可知 $a_i \\equiv a_i a_{i+1}(\\bmod n), i=1,2, \\cdots, k-1$. 所以\n$a_1 \\equiv a_1 a_2 \\equiv a_1 a_2 a_3 \\equiv \\cdots \\equiv a_1 a_2 \\cdots a_k \\equiv a_1 a_2 \\cdots a_{k-2} a_k \\equiv \\cdots \\equiv a_1 a_k(\\bmod n)$, 所以,\n$$\na_1 \\equiv a_k(\\bmod n)\n$$\n而 $0<\\left|a_1-a_k\\right|<n$, 矛盾!",
+    "remark": "",
+    "figures": []
+}

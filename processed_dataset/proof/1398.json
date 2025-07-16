@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设 $a_1, a_2, \\cdots, a_n$ 是不全相等的 $n$ 个正数 $(n \\geqslant 2)$, 且满足 $\\sum_{k=1}^n a_k^{-2 n}=1$, 求证:\n$$\n\\sum_{k=1}^n a_k^{2 n}-n^2 \\sum_{1 \\leqslant i<j \\leqslant n}\\left(\\frac{a_i}{a_j}-\\frac{a_j}{a_i}\\right)^2>n^2\n$$",
+    "solution": "原不等式等价于 $\\sum_{k=1}^n a_k^{2 n} \\cdot \\sum_{k=1}^n \\frac{1}{a_k^{2 n}}-n^2 \\sum_{i<j}\\left(\\frac{a_i}{a_j}-\\frac{a_j}{a_i}\\right)^2>n^2$.\n由 Lagrange 恒等式, $\\sum_{k=1}^n a_k^{2 n} \\cdot \\sum_{k=1}^n \\frac{1}{a_k^{2 n}}-n^2=\\sum_{i<j}\\left(\\frac{a_i^n}{a_j^n}-\\frac{a_j^n}{a_i^n}\\right)^2$.\n不难验证, 对 $x>0$, 有 $\\left(x^n-\\frac{1}{x^n}\\right)^2 \\geqslant n^2\\left(x-\\frac{1}{x}\\right)^2$, 因此 $\\sum_{k=1}^n a_k^{2 n} \\cdot \\sum_{k=1}^n \\frac{1}{a_k^{2 n}}- n^2 \\geqslant n^2 \\sum_{i<j}\\left(\\frac{a_i}{a_j}-\\frac{a_j}{a_i}\\right)^2$, 等号不能成立.",
+    "remark": "",
+    "figures": []
+}

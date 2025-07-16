@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter14.tex",
+    "problem_type": "proof",
+    "problem": "例1. 在面积为 1 的平面图形内任意放人 9 个面积为 $\\frac{1}{5}$ 的小正方形.\n证明:其中必有两个小正方形, 它们重叠部分的面积不小于 $\\frac{1}{45}$.",
+    "solution": "证明:设小正方形为 $A_1, A_2, \\cdots, A_9$, 并用 $\\left|A_i\\right|$ 表示 $A_i$ 的面积 $(i=1$, $2, \\cdots, 9)$. 因为 $\\sum_{i=1}^n\\left|A_i\\right|=\\frac{9}{5}>1$. 故必有两个小正方形的面积是重叠的, 若对任意 $1 \\leqslant i<j \\leqslant 9,\\left|A_i \\cap A_j\\right|<\\frac{1}{45}$, 则 $A_1, A_2, \\cdots, A_9$ 覆盖的面积为 $\\left|A_1 \\cup A_2 \\cup \\cdots \\cup A_9\\right| \\geqslant \\sum_{i=1}^9\\left|A_i\\right|-\\sum_{1 \\leqslant i<j \\leqslant 9}\\left|A_i \\cap A_j\\right|>9 \\times \\frac{1}{5}-\\mathrm{C}_9^2 \\times \\frac{1}{45}=1$. 这与 $A_1, A_2, \\cdots, A_9$ 都在面积为 1 的图形内, 应有 $\\left|A_1 \\cup A_2 \\cup \\cdots \\cup A_9\\right| \\leqslant 1$ 矛盾.\n故存在 $1 \\leqslant i<j \\leqslant 9$, 使两个小正方形 $A_i$ 与 $A_j$ 重叠的面积\n$$\n\\left|A_i \\cap A_j\\right| \\geqslant \\frac{1}{45}\n$$",
+    "remark": "注:本题证明中除用了反证法和容斥原理外, 还用到了下列显然成立的图形重叠原理.\n图形重叠原理把面积分别为 $S_1, S_2, \\cdots, S_n$ 的 $n$ 个平面图形 $A_1$, $A_2, \\cdots, A_n$ 以任意方式放人一个面积为 $S$ 的平面图形 $A$ 内.\n(1) 若 $S_1+S_2+\\cdots+S_n>S$, 则存在两个平面图形 $A_i$ 与 $A_j(1 \\leqslant i< j \\leqslant n$ ) 有公共内点;\n(2) 若 $S_1+S_2+\\cdots+S_n<S$, 则 $A$ 内必存在一点不属于 $A_1, A_2, \\cdots, A_n$ 中任何一个.",
+    "figures": []
+}

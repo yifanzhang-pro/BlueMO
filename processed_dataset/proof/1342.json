@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $x, y, z \\in \\mathbf{R}^{+}$, 求证:\n$$\n\\sqrt{\\frac{x}{y+z}}+\\sqrt{\\frac{y}{z+x}}+\\sqrt{\\frac{z}{x+y}} \\geqslant 2 .\n$$",
+    "solution": "分析:对不等式左边进行处理似有难度, 我们也拟从局部考虑, 先证 $\\sqrt{\\frac{x}{y+z}} \\geqslant \\frac{2 x}{x+y+z}$ 即可.\n证明先证明\n$$\n\\sqrt{\\frac{x}{y+z}} \\geqslant \\frac{2 x}{x+y+z} .\n$$\n事实上,由平均不等式可得\n$$\n\\sqrt{\\frac{-x}{y+z}}=\\frac{x}{\\sqrt{x} \\sqrt{y+z}} \\geqslant \\frac{x}{\\frac{x+y+z}{2}}=\\frac{2 x}{x+y+z} .\n$$\n同理可得\n$$\n\\begin{aligned}\n& \\sqrt{\\frac{y}{z+x}} \\geqslant \\frac{2 y}{x+y+z}, \\\\\n& \\sqrt{\\frac{z}{x+y}} \\geqslant \\frac{2 z}{x+y+z} .\n\\end{aligned}\n$$\n把上面 3 个不等式相加, 便得\n$$\n\\sqrt{\\frac{x}{y+z}}+\\sqrt{\\frac{y}{z+x}}+\\sqrt{\\frac{z}{x+y}} \\geqslant 2 .\n$$\n说明本题中的等号是不成立的.\n因为若等号成立, 则 $x=y+z, y= z+x, z=x+y$, 从而 $x+y+z=0$, 不可能.",
+    "remark": "",
+    "figures": []
+}

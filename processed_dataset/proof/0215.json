@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $a$ 和 $n$ 为整数,均不为 \\pm 1 , 且 $(a, n)=1$. 证明: 至多有有限个 $k$, 使得 $n^k \\mid\\left(a^k-1\\right)$.",
+    "solution": "证明:因 $n \\neq \\pm 1$, 故 $n$ 有素因子.\n首先设 $n$ 有奇素数因子 $p$, 则 $p \\nmid a$. 设 $a$ 模 $p$ 的阶为 $r$, 因 $a \\neq \\pm 1$, 故有正整数 $k_0$ 使得 $p^{k_0} \\|\\left(a^r-1\\right)$.\n若有无穷多个 $k$ 使得 $n^k \\mid\\left(a^k-1\\right)$, 从而有无穷多个 $k>k_0$ 满足\n$$\na^k \\equiv 1\\left(\\bmod p^k\\right) . \\label{eq1}\n$$\n但由例 5 得知, $a$ 模 $p^k$ 的阶是 $r p^{k-k_0}$, 故由 式\\ref{eq1}知 $r p^{k-k_0} \\mid k$, 从而 $k \\geqslant r p^{k-k_0} \\geqslant 3^{k-k_0}$, 这样的 $k$ 显然只有有限多个, 产生矛盾.\n若 $n$ 没有奇素数因子, 则 $n$ 是 2 的方幕.\n首先注意, 若奇数 $k$ 使得 $n^k \\mid\\left(a^k-1\\right)$, 则\n$$\na^k-1=(a-1)\\left(a^{k-1}+\\cdots+a+1\\right) . \\label{eq2}\n$$\n被 $2^k$ 整除.\n但式\\ref{eq2}中后一个因数是奇数个奇数之和, 故是奇数, 从而 $2^k \\mid(a-1)$. 因 $a \\neq 1$, 这样的 $k$ 至多有有限多个.\n设有无穷多个偶数 $k=2 l$ 使得 $n^k \\mid\\left(a^k-1\\right)$, 则\n$$\n\\left(a^2\\right)^\\iota \\equiv 1\\left(\\bmod 2^\\iota\\right) . \\label{eq3}\n$$\n定义 $k_0$ 满足 $2^{k_0} \\|\\left(a^2-1\\right)$, 则 $k_0 \\geqslant 3$. 由例 5 知, 当 $l>k_0$ 时, $a^2$ 模 $2^l$ 的阶为 $2^{l-k_0}$, 故在 $l>k_0$ 时, 由式\\ref{eq3}推出 $2^{l-k_0} \\mid l$, 从而 $l \\geqslant 2^{l-k_0}$, 但这样的 $l$ 至多有有限多个,矛盾!",
+    "remark": "",
+    "figures": []
+}

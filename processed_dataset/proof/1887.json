@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 圆内接四边形 $A B C D$ 对角线 $B D$ 上的点 $K$ 满足 $\\angle A K B=\\angle A D C, I 、 I^{\\prime}$ 分别为 $\\triangle A C D 、 \\triangle A B K$ 的内心, 线段 $I I^{\\prime}$ 与 $B D$ 交于点 $X$. 证明 : $A 、 X 、 I 、 D$ 四点共圆.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c6a5.png>), 由 $\\angle A K B=\\angle A D C, \\angle A B K= \\angle A C D$, 知 $\\triangle A K B \\backsim \\triangle A D C . \\triangle A K B$ 绕点 $A$ 旋转 $\\angle B A C$ 再放缩变为 $\\triangle A D C$, 因此, $\\angle I A I^{\\prime}=\\angle B A C$, $\\frac{A I}{A I}=\\frac{A C}{A B}$. 故 $\\triangle A I I^{\\prime} \\backsim \\triangle A C B$. 于是, $\\angle A I X= \\angle A C B=\\angle A D X$. 从而, $A 、 X 、 I 、 D$ 四点共圆.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6a5.png"
+    ]
+}

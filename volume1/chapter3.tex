@@ -1,0 +1,353 @@
+
+%%TEXT_BEGIN%%
+我们知道集合可以分为有限集和无限集两类.
+研究无限集元素的“数目” 是一个困难而有趣的问题, 最出名的就是所谓 “连续统假设”, 但它不是我们的话题.
+我们要讨论的问题仅与有限集有关.
+一、有限集的阶有限集 $A$ 的元素的数目叫做这个集合的阶, 记作 $|A|$ (或 $n(A))$.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+二、有关集合阶的不等式有些集合虽然不能准确求出其元素的数目,但是我们可以利用不等式来估计其阶的范围.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+三、有关集合阶的最大(小)值对于满足一定条件的一组集合, 如何确定集合元素数目的最大 (小)值, 这也是一类常见的问题.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设集合 $A=\left\{(x, y, z) \mid \log _{\frac{1}{4}}\left(x^4+y^4+z^4+1\right) \geqslant \log _4 \frac{1}{x}+\log _4 \frac{1}{y}+\log _4 \frac{1}{z}-1\right\}$. 求 $|A|$.
+%%<SOLUTION>%%
+分析:无疑应从考察 $(x, y, z)$ 满足的条件人手.
+解由 $\log _{\frac{1}{4}}\left(x^4+y^4+z^4+1\right) \geqslant \log _4 \frac{1}{x}+\log _4 \frac{1}{y}+\log _4 \frac{1}{z}-1$ 得
+$$
+x^4+y^4+z^4+1 \leqslant 4 x y z, x, y, z>0 .
+$$
+又由算术几何平均不等式, 得
+$$
+x^4+y^4+z^4+1 \geqslant 4 x y z,
+$$
+其中等号当且仅当 $x=y=z=1$ 时成立.
+于是
+$$
+\begin{gathered}
+x^4+y^4+z^4+1=4 x y z . \\
+x=y=z=1 .
+\end{gathered}
+$$
+从而所以, $|A|=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设集合 $A=\{a \mid 1 \leqslant a \leqslant 2000, a=4 k+1, k \in \mathbf{Z}\}$, 集合 $B= \{b \mid 1 \leqslant b \leqslant 3000, b=3 k-1, k \in \mathbf{Z}\}$. 求 $|A \cap B|$.
+%%<SOLUTION>%%
+分析:令 $4 k+1=3 m-1$, 得 $m=\frac{4 k+2}{3}=k+1+\frac{k-1}{3}$. 因 $m \in \mathbf{Z}$, 所以 $3 \mid k-1$. 令 $k-1=3 r, r \in \mathbf{Z}$, 得 $m=4 r+2$. 这时 $b=12 r+5$, 故 $A \cap B$的元素是形如 $12 r+5$ 的整数.
+解形如 $4 k+1$ 的数可分为 3 类:
+$$
+12 l+1,12 l+5,12 l+9(l \in \mathbf{Z}),
+$$
+其中只有形如 $12 l+5$ 的数是形如 $3 k-1$ 的数.
+令
+$$
+1 \leqslant 12 l+5 \leqslant 2000(l \in \mathbf{Z}),
+$$
+得 $0 \leqslant l \leqslant 166$. 所以, $A \cap B=\{5,17, \cdots, 1997\}$.
+所以, $|A \cap B|=167$.
+以上两例, 我们都是采用列举出集合的全部元素的办法来求其元素的数目.
+对于一些较为复杂的集合, 这种方法是很难奏效的, 这时必须另辟蹊径.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $\left(a_1, a_2, \cdots, a_n\right)$ 是集合 $\{1,2, \cdots, n\}$ 中 $n$ 个元素的一个排列, 记所有满足
+$$
+k \mid 2\left(a_1+a_2+\cdots+a_k\right), k=1,2, \cdots, n
+$$
+的排列 $\left(a_1, a_2, \cdots, a_n\right)$ 的集合为 $A_n$. 求 $\left|A_n\right|$ 的值.
+%%<SOLUTION>%%
+分析:显然 $1\left|2 a_1, n\right| 2\left(a_1+a_2+\cdots+a_n\right)$, 我们需要研究当 $2 \leqslant k \leqslant n-1$ 时, $k \mid 2\left(a_1+a_2+\cdots+a_k\right)$ 应满足的条件.
+对于一般的 $k$, 我们没有更好的办法来表示 $a_1+a_2+\cdots+a_k$, 但当 $k=n-1$ 时, 显然有 $a_1+a_2+\cdots+ a_{n-1}=1+2+\cdots+n-a_n {=} \frac{n(n+1)}{2}-a_n$, 于是 $n-1 \mid 2\left(a_1+a_2+\cdots+a_{n-1}\right)$ 等价于 $n-1 \mid n(n+1)-2 a_n$, 问题转化为对 $a_n$ 的研究.
+解设 $F_n=\left|A_n\right|$. 容易算出 $F_1=1, F_2=2, F_3=6$.
+当 $n>3$ 时,对于任意 $\left(a_1, a_2, \cdots, a_n\right) \in A_n$, 有
+$$
+\begin{aligned}
+& 2\left(a_1+a_2+\cdots+a_{n-1}\right) \\
+= & n(n+1)-2 a_n \equiv 2-2 a_n(\bmod (n-1)) .
+\end{aligned}
+$$
+由 $A_n$ 的定义, 必有
+$$
+n-1 \mid 2-2 a_n \text {. }
+$$
+故 $a_n=1$,或 $a_n=n$, 或 $a_n=\frac{n+1}{2}$.
+(1) 若 $a_n=\frac{n+1}{2}$, 则
+$$
+\begin{aligned}
+2\left(a_1+a_2+\cdots+a_{n-2}\right) & =n(n+1)-2 a_{n-1}-(n+1) \\
+& =n^2-1-2 a_{n-1} \\
+& \equiv 3-2 a_{n-1}(\bmod (n-2)) .
+\end{aligned}
+$$
+从而有
+$$
+n-2 \mid 3-2 a_{n-1} .
+$$
+解得 $a_{n-1}=\frac{n+1}{2}$. 于是 $a_{n-1}=a_n$, 矛盾.
+(2) 若 $a_n=n$, 则 $\left(a_1, a_2, \cdots, a_{n-1}, n\right)$ 与 $A_{n-1}$ 的元素 $\left(a_1, a_2, \cdots, a_{n-1}\right)$ 形成一一对应关系.
+所以, 这样的排列共有 $F_{n-1}$ 种.
+(3) 若 $a_n=1$, 则 $\left(a_1-1, a_2-1, \cdots, a_{n-1}-1\right)$ 是集合 $\{1,2, \cdots, n-1\}$ 中 $n-1$ 个元素的一个排列.
+由
+$$
+\begin{aligned}
+& 2\left[\left(a_1-1\right)+\left(a_2-1\right)+\cdots+\left(a_k-1\right)\right] \\
+= & 2\left(a_1+a_2+\cdots+a_k\right)-2 k \\
+\equiv & 0(\bmod k) \\
+\Leftrightarrow & \left(a_1-1, a_2-1, \cdots, a_{n-1}-1\right) \in A_{n-1}
+\end{aligned}
+$$
+知 $\left(a_1, a_2, \cdots, a_{n-1}, 1\right)$ 与 $A_{n-1}$ 的元素 $\left(a_1-1, a_2-1, \cdots, a_{n-1}-1\right)$ 之间也形成一一对应关系.
+故这样的排列也有 $F_{n-1}$ 种.
+由(2)、(3), 可建立递推关系
+$$
+F_n=2 F_{n-1}, n>3 .
+$$
+由 $F_3=6$, 得 $F_n=3 \cdot 2^{n-2}(n \geqslant 3)$.
+综上, 当 $n=1$ 时, $F_1=1$; 当 $n=2$ 时, $F_2=2$; 当 $n \geqslant 3$ 时, $F_n=3 \cdot 2^{n-2}$.
+说明这里, 我们通过建立 $F_n$ 与 $F_{n-1}$ 之间的联系 (递推关系) 来达到求解的目的。
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $a_1, a_2, \cdots, a_n$ 为 $1,2, \cdots, n$ 的一个排列, $f_k=\mid\{a_i \mid a_i<a_k, i>k\}\left|, g_k=\right|\left\{a_i \mid a_i>a_k, i<k\right\} \mid$, 其中 $k=1,2, \cdots, n$. 证明:
+$$
+\sum_{k=1}^n g_k=\sum_{k=1}^n f_k
+$$
+%%<SOLUTION>%%
+分析:一般来说 $f_k \neq g_k$, 且分别计算 $f_k 、 g_k$ 是困难的.
+令 $A_k=\left\{a_i\mid a_i<a_k, i>k\right\}$, 对 $A_k$ 换一种写法: $A_k=\left\{\left(a_i, a_k\right) \mid a_i<a_k, i>k\right\}$, 显然是合理的.
+易知 $k \neq k^{\prime}$ 时, $A_k \cap A_k{ }^{\prime}=\varnothing$. 所以, $\sum_{k=1}^n f_k=\left|A_1\right|+\left|A_2\right|+\cdots+\left|A_n\right|=\left|A_1 \cup A_2 \cup \cdots \cup A_n\right|=\left|\left\{\left(a_i, a_j\right) \mid a_i<a_j, i>j\right\}\right|$.
+证明考虑集合 $A=\left\{\left(a_i, a_j\right) \mid a_i<a_j, i>j\right\}$ 的元素的数目 $|A|$. 一方面, 固定 $a_j$ 时, $a_i$ 的个数为 $f_j$. 所以
+$$
+|A|=\sum_{j=1}^n f_j .
+$$
+另一方面, 固定 $a_i$ 时, $a_j$ 的个数为 $g_i$, 所以
+$$
+|A|=\sum_{i=1}^n g_i
+$$
+所以, $\sum_{k=1}^n g_k=\sum_{k=1}^n f_k$.
+说明在这里, 我们没有直接证明 $\sum_{k=1}^n g_k=\sum_{k=1}^n f_k$, 而是引人一个中间量 $|A|=\left|\left\{\left(a_i, a_j\right) \mid a_i<a_j, i>j\right\}\right|$ 来过渡.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $p \geqslant 5$ 是一个素数, $S=\{1,2, \cdots, p-1\}, A=\{a \mid a \in S, a^{p-1} \not \equiv 1\left(\bmod p^2\right) \}$. 证明 : $|A| \geqslant \frac{p-1}{2}$.
+%%<SOLUTION>%%
+分析:如果 $1 \leqslant a \leqslant p-1$, 显然 $1 \leqslant p-a \leqslant p-1$. 将 $a$ 与 $p-a$ 配对, 如果 $a^{p-1}$ 与 $(p-a)^{p-1}$ 模 $p^2$ 不同余, 则结论成立.
+证明设 $a \in S$, 则 $p-a \in S$. 由二项式定理,有
+$$
+(p-a)^{p-1}-a^{p-1} \equiv-(p-1) a^{p-2} \cdot p \not \equiv 0\left(\bmod p^2\right) .
+$$
+于是, $a$ 和 $p-a$ 中至少有一个在 $A$ 中, 从而有
+$$
+|A| \geqslant \frac{p-1}{2} \text {. }
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. $A_1, A_2, \cdots, A_{30}$ 是集合 $\{1,2, \cdots, 2003\}$ 的子集,且 $\left|A_i\right| \geqslant 660$, $i=1,2, \cdots, 30$. 证明: 存在 $i \neq j, i, j \in\{1,2, \cdots, 30\}$, 使得 $\left|A_i \cap A_j\right| \geqslant$ 203.
+%%<SOLUTION>%%
+证明:不妨设每一个 $A_i$ 的元素都为 660 个(否则去掉一些元素). 作一个集合、元素的关系表: 表中每一行(除最上面的一行外)分别表示 30 个集合 $A_1, A_2, \cdots, A_{30}$, 表的 $n$ 列 (最左面一列除外) 分别表示 2003 个元素 1 , $2, \cdots, 2003$. 若 $i \in A_j(i=1,2, \cdots, 2003,1 \leqslant j \leqslant 30)$, 则在 $i$ 所在的列与 $A_j$ 所在行的交叉处写上 1 , 若 $i \notin A_j$, 则写上 0 .
+\begin{tabular}{c|ccccc} 
+& 1 & 2 & 3 & $\cdots$ & 2003 \\
+\hline$A_1$ & $\times$ & $\times$ & $\times$ & $\cdots$ & $\times$ \\
+$A_2$ & $\times$ & $\times$ & $\times$ & $\cdots$ & $\times$ \\
+$\cdots$ & $\times$ & $\times$ & $\times$ & $\cdots$ & $\times$ \\
+$A_{30}$ & $\times$ & $\times$ & $\times$ & $\cdots$ & $\times$
+\end{tabular}
+表中每一行有 660 个 1 , 因此共有 $30 \times 660$ 个 1 . 设第 $j$ 列有 $m_j$ 个 1 $(j=1,2, \cdots, 2003)$, 则
+$$
+\sum_{j=1}^{2003} m_j=30 \times 660 .
+$$
+由于每个元素 $j$ 属于 $\mathrm{C}_{m_j}^2$ 个交集 $A_s \cap A_t$, 因此
+$$
+\sum_{j=1}^{2003} \mathrm{C}_{m_j}^2=\sum_{1 \leqslant s<t \leqslant 30}\left|A_s \cap A_t\right| .
+$$
+由柯西不等式, 得
+$$
+\begin{aligned}
+\sum_{j=1}^{2003} \mathrm{C}_{m_j}^2 & =\frac{1}{2}\left(\sum_{j=1}^{2003} m_j^2-\sum_{j=1}^{2003} m_j\right) \\
+& \geqslant \frac{1}{2}\left(\frac{1}{2003}\left(\sum_{j=1}^{2003} m_j\right)^2-\sum_{j=1}^{2003} m_j\right) .
+\end{aligned}
+$$
+所以, 必有 $i \neq j$, 满足
+$$
+\begin{aligned}
+\left|A_i \cap A_j\right| \geqslant & \frac{1}{\mathrm{C}_{30}^2} \times \frac{1}{2}\left(\frac{1}{2003}\left(\sum_{j=1}^{2003} m_j\right)^2-\sum_{j=1}^{2003} m_j\right) \\
+= & \frac{660(30 \times 660-2003)}{29 \times 2003}>202, \\
+& \left|A_i \cap A_j\right| \geqslant 203 .
+\end{aligned}
+$$
+从而说明本题中所作的表,称为元素、集合从属关系表.
+它在讨论涉及多个集合的问题时非常有用.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $n, k \in \mathbf{N}^*$, 且 $k \leqslant n$. 并设 $S$ 是含有 $n$ 个互异实数的集合, $T=\left\{a \mid a=x_1+x_2+\cdots+x_k, x_i \in S, x_i \neq x_j(i \neq j), 1 \leqslant i, j \leqslant k\right\}$. 求证: $|T| \geqslant k(n-k)+1$.
+%%<SOLUTION>%%
+分析:设 $S_n=\left\{s_1, s_2, \cdots, s_{n-1}, s_n\right\}$, 且 $s_1<s_2<\cdots<s_{n-1}<s_n$. 作 $S_n$ 的子集 $S_{n-1}=\left\{s_1, s_2, \cdots, s_{n-1}\right\}$, 设 $S_{n-1} 、 S_n$ 分别对应 $T_{n-1} 、 T_n$. 对固定的 $k (k \leqslant n-1)$, 由 $s_{n-1}+s_{n-2}+\cdots+s_{n-k}<s_n+s_{n-2}+\cdots+s_{n-k}<s_n+s_{n-1}+s_{n-3}+\cdots+s_{n-k}<\cdots<s_n+s_{n-1}+\cdots+s_{n-k+1}$, 知 $\left|T_n\right| \geqslant\left|T_{n-1}\right|+k$. 而 $k(n-k)+ 1=k(n-1-k)+k+1$, 这提示我们对 $n$ 进行归纳证明.
+证明设 $s_1<s_2<\cdots<s_n$ 是 $S$ 的 $n$ 个元素.
+对元素数目 $n$ 使用数学归纳法.
+首先, 当 $k=1$ 和 $k=n$ 时, 结论显然成立.
+设 $k \leqslant n-1$, 且结论对 $S_0=\left\{s_1, s_2, \cdots, s_{n-1}\right\}$ 成立, 并设 $T_0$ 是当把 $S$ 换成 $S_0$ 时与 $T$ 相应的集合.
+于是有
+$$
+\left|T_0\right| \geqslant k(n-k-1)+1 .
+$$
+令 $x=s_n+s_{n-1}+\cdots+s_{n-k}$, 并令
+$$
+y_i=x-s_{n-i}, i=0,1, \cdots, k .
+$$
+显然 $y_i \in T$, 且有 $y_0<y_1<y_2<\cdots<y_k$. 因为 $y_0$ 是 $T_0$ 中的最大元素, 所以
+$$
+y_i \in T, y_i \notin T_0, i=1,2, \cdots, k .
+$$
+故有
+$$
+|T| \geqslant\left|T_0\right|+k \geqslant k(n-k-1)+1+k=k(n-k)+1 .
+$$
+这就完成了归纳证明.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设 $S$ 是一个由正整数组成的集合, 具有如下性质: 对任意 $x \in S$, 在 $S$ 中去掉 $x$ 后, 剩下的数的算术平均值都是正整数, 并且 $1 \in S, 2002$ 是 $S$ 中的最大元.
+求 $|S|$ 的最大值.
+%%<SOLUTION>%%
+分析:显然 1 是 $S$ 中的最小元.
+设 $S$ 的元素为 $1=x_1<x_2<\cdots<x_n=$ 2002 , 由 $\frac{\sum_{i=1}^n x_i-x_j}{n-1} \in \mathbf{N}^*$, 我们来估计 $|S|$ 的范围.
+解设 $S$ 中的元素为
+$$
+1=x_1<x_2<\cdots<x_n=2002,
+$$
+则对于 $1 \leqslant j \leqslant n$, 均有
+$$
+y_j=\frac{\left(\sum_{i=1}^n x_i\right)-x_j}{n-1} \in \mathbf{N}^* .
+$$
+从而, 对任意 $1 \leqslant i<j \leqslant n$, 都有
+$$
+y_i-y_j=\frac{x_j-x_i}{n-1} \in \mathbf{N}^* .
+$$
+特别地, 应有 $n-1 \mid(2002-1)$, 即
+$$
+n-1 \mid 2001 .
+$$
+另一方面, 对于 $1<j \leqslant n$, 均有
+$$
+\begin{gathered}
+x_j-1=\left(y_1-y_j\right)(n-1), \\
+n-1 \mid\left(x_j-1\right) . \\
+\left(x_j-1\right)-\left(x_{j-1}-1\right), \text { 所以 } \\
+(n-1) \mid\left(x_j-x_{j-1}\right)(j=2, \cdots, n),
+\end{gathered}
+$$
+从而
+$$
+\begin{aligned}
+\text { 又 } x_j-x_{j-1}= & \left(x_j-1\right)-\left(x_{j-1}-1\right), \text { 所以 } \\
+& (n-1) \mid\left(x_j-x_{j-1}\right)(j=2, \cdots, n),
+\end{aligned}
+$$
+于是
+$$
+\begin{aligned}
+x_n-1 & =\left(x_n-x_{n-1}\right)+\left(x_{n-1}-x_{n-2}\right)+\cdots+\left(x_2-1\right) \\
+& \geqslant(n-1)+(n-1)+\cdots+(n-1)=(n-1)^2,
+\end{aligned}
+$$
+即 $(n-1)^2 \leqslant 2001, n \leqslant 45$. 结合 $n-1 \mid 2001$, 知 $n=2,4,24,30$, 故 $n \leqslant 30$.
+另一方面, 令 $x_j=29 j-28,1 \leqslant j \leqslant 29, x_{30}=2002$, 则 $S=\left\{x_1, x_2, \cdots\right.$, $x_{30}$ 具有题述性质.
+所以, $|S|$ 的最大值为 30 .
+说明先估计 $|S|=n$ 的上界, 即 $n \leqslant 30$, 再构造一个实例说明 $n=30$ 是可以达到的, 从而知 $n$ 的最大值为 30 . 这种“先估计, 再构造”的方法在解决离散型最值问题时经常被用到.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 试求出同时满足下列条件的集合 $S$ 的元素个数的最大值：
+(1) $S$ 中的每个元素都是不超过 100 的正整数;
+(2) 对于 $S$ 中的任意两个不同的元素 $a 、 b$, 都存在 $S$ 中的另外一个元素 $c$, 使得 $a+b$ 与 $c$ 的最大公约数等于 1 ;
+(3) 对于 $S$ 中的任意两个不同的元素 $a 、 b$, 都存在 $S$ 中的另外一个元素 $c$, 使得 $a+b$ 与 $c$ 的最大公约数大于 1 .
+%%<SOLUTION>%%
+分析:若 $a+b$ 为质数,则条件 (3) 无法满足.
+而 101 就是一个质数,这说明数组 $\{1,100\},\{2,99\}, \cdots,\{50,51\}$ 中, 每组的两个数不同时在 $S$ 中.
+那么在每组数中各取一个数组成的集合是否满足所有条件呢?
+解构造 50 个数组:
+$$
+\{1,100\},\{2,99\}, \cdots,\{50,51\},
+$$
+每个数组中的两个数之和是 101 .
+由于 101 是质数, 在 $S$ 中不存在元素 $c$, 使得 101 与 $c$ 的最大公约数大于 1. 因此, 在 $S$ 中不可能同时含有上述数组中的同一数组中的两个数.
+由抽屉原理可知,集合 $S$ 中元素的个数不大于 50 .
+另一方面, 我们构造集合 $A=\{2,1,3,5,7, \cdots, 95,97\}$. 此集合含有 2 和小于 98 的 49 个奇数.
+下面说明集合 $A$ 满足题设条件.
+对于集合 $A$ 中的任意两个元素 $a$ 和 $b$ :
+(i) 若 $a=2$, 则 $b$ 是奇数.
+若 $b=1$, 易见 $A$ 中存在元素 $c$ 满足题设条件;
+若 $3 \leqslant b \leqslant 95$, 则 $A$ 中元素 1 与 $a+b$ 的最大公约数等于 $1, A$ 中元素 $b+2$ 与 $a+b$ 的最大公约数是 $b+2$ 大于 1 ;
+若 $b=97$, 易见 $A$ 中存在元素 $c$ 满足题设条件.
+(ii) 若 $a 、 b$ 都不等于 2 , 则 $a 、 b$ 都是奇数, $a+b$ 是偶数.
+于是, $a+b$ 与 2 的最大公约数是 2 大于 1 , 且 $a+b$ 与 $1 、 89 、 91$ 中的某个数必互质.
+所以,集合 $A$ 满足题设条件.
+因此,集合 $S$ 的元素个数的最大值是 50 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设 $a_1, a_2, \cdots, a_{20}$ 是 20 个两两不同的整数, 且集合 $ \{a_i+a_j \mid 1 \leqslant  i \leqslant j \leqslant 20\}$ 中有 201 个不同的元素.
+求集合 $\left\{\left|a_i-a_j\right| \mid 1 \leqslant i<j \leqslant 20\right\}$ 中不同元数个数的最小可能值.
+%%<SOLUTION>%%
+分析:从 $a_1, a_2, \cdots, a_{20}$ 中任取两个(可以相等) 相加, 至多有 $\mathrm{C}_{20}^2+ 20=210$ 个不同的和, 由题设知, 所有 $a_i+a_j$ 中有些和数相等.
+另一方面, 应使所有的 $\left|a_i-a_j\right|$ 中出现尽可能多的相等的情况.
+由此, 可构造一组特殊的数: $a_1^{\prime}, a_2^{\prime}, \cdots, a_{20}^{\prime}$.
+解所给集合的元素个数的最小值为 100 .
+首先, 令 $a_i=10^{11}+10^i, a_{10+i}=10^{11}-10^i, i=1,2, \cdots, 10$. 则 $\{a_i+a_j \mid 1 \leqslant i \leqslant j \leqslant 20\}$ 中共有 $(20+19+\cdots+1)-10+1=201$ 个不同的元素, 而 $\left\{\left|a_i-a_j\right| \mid 1 \leqslant i<j \leqslant 20\right\}=\left\{2 \times 10^i \mid i=1,2, \cdots, 10\right\} \bigcup\{\left|10^i \pm 10^j\right| \mid 1 \leqslant i<j \leqslant 10\}$ 共有 $10+2 \mathrm{C}_{10}^2=100$ 个不同的元素.
+下面用反证法证明: 所给集合的不同元素的个数不小于 100 .
+若存在一个使所给集合的元素个数小于 100 的集合 $S=\left\{a_1, a_2, \cdots, a_{20}\right\}$. 我们计算 $S$ 的 “好子集” $\{x, y, z, w\}$ 的个数, 这里 $x<y \leqslant z<w$, 且 $x+w=y+z$.
+对 $S$ 中满足 $b>c$ 的数对 (b,c) (共 190对), 考虑它们的差 $b-c$, 由于至多有 99 个不同的差 (这里用到反证法假设), 故必有至少 91 个数对 $(b, c)$, 使得存在 $b^{\prime}, c^{\prime} \in S$, 满足 $b^{\prime}<b, c^{\prime}<c$, 且 $b-c=b^{\prime}-c^{\prime}$. 对这样的 91 个数对 $(b$, $c)$, 它与其相应的 $b^{\prime}, c^{\prime}$ 形成 $S$ 的一个 4 元集 $\left\{b, c, b^{\prime}, c^{\prime}\right\}$, 可得到 $S$ 的一个 “好子集” $\{x, y, z, w\}$, 且至多两个数对 $(b, c)$ 形成相同的子集 $\{x, y, z, w\}$ (只能是 $(b, c)=(w, z)$ 和 $(w, y)$ ). 故 $S$ 的“好子集”至少有 46 个.
+另一方面, $S$ 的 “好子集” $\{x, y, z, w\}$ 的个数等于 $\sum \frac{1}{2} s_i\left(s_i-1\right)$, 这里 $s_i$ 为 $S$ 中满足 $b+c=i, b \leqslant c$ 的数对 $(b, c)$ 的个数, 其中 $i$ 为正整数.
+注意到, 对每个 $i, S$ 中的每个元素 $s$ 至多出现在上面的一个数对 $(b, c)$ 中 （事实上, 当 $s \leqslant i-s$ 时, $s$ 出现在数对 $(s, i-s)$ 中, 其余情况出现在 $(i-s, s)$ 中), 于是 $s_i \leqslant 10$. 从而在 $s_i \neq 0$ 时, $1 \leqslant s_i \leqslant 10$, 故 $\frac{1}{2} s_i\left(s_i-1\right) \leqslant 5 s_i-5$. 由于集合 $\left\{a_i+a_j \mid 1 \leqslant i \leqslant j \leqslant 20\right\}$ 中有 201 个不同的元素,故使得 $s_i \geqslant 1$ 的正整数 $i$ 有 201 个, 设 $T$ 为这样的 $i$ 组成的集合.
+易知 $S$ 中有 $\mathrm{C}_{20}^2$ 对 $(b, c)$ 满足 $b<c$, 有 20 对 $(b, c)$ 满足 $b=c$, 所以 $\sum_{i \in T} s_i=\mathrm{C}_{20}^2+20=210$. 于是,
+$$
+\sum_{i \in T} \frac{1}{2} s_i\left(s_i-1\right) \leqslant \sum_{i \in T}\left(5 s_i-5\right)=5 \times(210-201),
+$$
+这与 $S$ 的“好子集”至少有 46 个矛盾.
+所以,所给集合中,至少有 100 个不同的元素.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 已知无穷数列 $\\left\\{a_n\\right\\}$ 满足 $a_1=1, a_2=1, a_3=3, a_n=a_{n-1}+2 a_{n-2}+a_{n-3}$, $n=4,5, \\cdots$. 求证: 对任何正整数 $m$, 存在某个正整数 $n$ 使得 $m \\mid a_n$.",
+    "solution": "记 $a_k$ 除以 $m$ 所得余数为 $b_k\\left(0 \\leqslant b_k \\leqslant m^{-}-1\\right), k=1,2, \\cdots$. 考虑 $m^3+$ 1 个三元数组\n$$\n\\left(b_1, b_2, b_3\\right),\\left(b_2, b_3, b_4\\right), \\cdots,\\left(b_{m^3+1}, b_{m^3+2}, b_{m^3+3}\\right),\n$$\n由于上述三元数组的不同取值最多为 $m^3$ 个, 由抽屉原理知, 其中一定有两组相同, 不妨设\n$$\n\\left(b_i, b_{i+1}, b_{i+2}\\right)=\\left(b_j, b_{j+1}, b_{j+2}\\right),\\left(1 \\leqslant i<j \\leqslant m^3+1\\right) .\n$$\n由 $a_n=a_{n-1}+2 a_{n-2}+a_{n-3}, n=4,5, \\cdots$ 得\n$$\nb_i \\equiv b_{i-1}+2 b_{i-2}+b_{i-3}(\\bmod m), i=4,5, \\cdots . \\label{eq1}\n$$\n反复应用 式\\ref{eq1} 得\n$$\nb_{j+p}=b_{i+p}, p \\geqslant-(i-1) . \\label{eq2}\n$$\n令 $n=j-i$, 在 式\\ref{eq2} 中令 $p=-(i-1),-(i-2),-(i-3)$ 可得\n$$\nb_{n+1}=b_1=1, b_{n+2}=b_2=1, b_{n+3}=b_3==3 .\n$$\n于是\n$$\nb_n=b_{n+3}-2 b_{n+2}-b_{n+1}=0 .\n$$\n从而 $m \\mid a_n$.",
+    "remark": "",
+    "figures": []
+}

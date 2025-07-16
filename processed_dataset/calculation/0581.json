@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题11 求函数 $f(x)=\\frac{x^2+5}{\\sqrt{x^2+4}}$ 的最小值.",
+    "solution": "$f(x)=\\sqrt{x^2+4}+\\frac{1}{\\sqrt{x^2+4}}$. 设 $\\sqrt{x^2+4}=t, t \\in[2,+\\infty)$. 令 $g(t)=t+\\frac{1}{t}$, 则 $g(t)$ 在 $[2,+\\infty)$ 上是单调递增的, 所以 $g_{\\text {min }}(t)=g(2)= 2+\\frac{1}{2}=\\frac{5}{2}$. 从而 $f(x)$ 的最小值为 $\\frac{5}{2}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题35. 设 $P(x)$ 是一个奇次实系数多项式, 满足: 对任意 $x \\in \\mathbf{R}$, 都有\n$$\nP\\left(x^2-1\\right)=P(x)^2-1 .\n$$\n证明: $P(x)=x$.",
+    "solution": "由条件, 得 $P(-x)^2-1=P\\left((-x)^2-1\\right)=P\\left(x^2-1\\right)=P(x)^2-$ 1 , 故 $P(x)^2=P(-x)^2$. 现设 $P(x)=a_{2 k+1} x^{2 k+1}+a_{2 k} x^{2 k}+\\cdots+a_1 x+ a_0\\left(a_{2 k+1} \\neq 0\\right)$. 对比 $P(x)^2$ 与 $P(-x)^2$ 展开后的各项系数, 可得 $a_{2 k}= a_{2 k-2}=\\cdots=a_0=0$. 因此, $P(x)$ 只有非零的奇次项系数, 即有 $P(-x)= -P(x)$. 从而 $P(0)=0$, 进而\n$$\nP(-1)=P\\left(0^2-1\\right)=P(0)^2-1=-1, P(1)=-P(-1)=1 \\text {. }\n$$\n考虑数列 $b_1=1, b_{n+1}=\\sqrt{b_n+1}, n=1,2, \\cdots$. 注意到 $b_1<b_2=\\sqrt{2}$. 现设 $b_n<b_{n+1}$, 则 $b_n+1<b_{n+1}+1, \\sqrt{b_n+1}<\\sqrt{b_{n+1}+1}$, 即 $b_{n+1}<b_{n+2}$. 依此由数学归纳法原理知 $\\left\\{b_n\\right\\}$ 是一个递增数列.\n另外 $P\\left(b_1\\right)=P(1)=1=b_1$, 现设 $P\\left(b_n\\right)=b_n$, 则\n$$\nP\\left(b_{n+1}\\right)^2=P\\left(b_{n+1}^2-1\\right)+1=P\\left(b_n\\right)+1=b_n \\dot{+}=b_{n+1}^2 .\n$$\n于是 $P\\left(b_{n+1}\\right)= \\pm b_{n+1}$, 但若 $P\\left(b_{n+1}\\right)=-b_{n+1}$, 则 $P\\left(b_{n+2}\\right)^2=P\\left(b_{n+1}\\right)+1= 1-b_{n+1}=1-\\sqrt{b_n+1}<0$,矛盾.\n故 $P\\left(b_{n+1}\\right)=b_{n+1}$. 从而, 由数学归纳法原理知, 对任意 $n \\in \\mathbf{N}^*$, 都有 $P\\left(b_n\\right)=b_n$.\n综上可知, 有无穷多个不同的实数 $x$, 使得 $P(x)=x$. 故对任意 $x$, 都有 $P(x)=x$.",
+    "remark": "",
+    "figures": []
+}

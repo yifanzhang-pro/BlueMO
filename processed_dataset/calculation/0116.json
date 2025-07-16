@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题12 在区间 $1 \\leqslant n \\leqslant 10^6$ 中, 使得方程 $n=x^y$ 有非负整数解 $x 、 y$, 且 $x \\neq n$ 的整数 $n$ 共有多少个?",
+    "solution": "设 $N\\left(x^y\\right)$ 表示整数 $x^y$ 的个数.\n若 $1<x^y \\leqslant 10^6$, 由于 $2^{19}= 524288<10^6, 2^{20}>10^6$, 则由容斥原理得 $N\\left(x^y\\right)=N\\left(x^2\\right)+N\\left(x^3\\right)+ N\\left(x^5\\right)+N\\left(x^7\\right)+N\\left(x^{11}\\right)+N\\left(x^{13}\\right)+N\\left(x^{17}\\right)+N\\left(x^{19}\\right)-N\\left(x^6\\right)-N\\left(x^{10}\\right)- N\\left(x^{14}\\right)-N\\left(x^{15}\\right)$. 由于大于 1 且不大于 $10^6$ 的平方数有 $10^3-1$ 个, 所以 $N\\left(x^2\\right)=999$. 大于 1 且不大于 $10^6$ 的立方数有 $10^2-1$ 个, 即 $N\\left(x^3\\right)=99$ 个.\n因为 $15^5=819375<10^6$, 所以大于 1 不大于 $10^6$ 的 5 次方数有 $15-1$ 个, 即 $N\\left(x^5\\right)=14$. 以此类推可得, $1<x^y \\leqslant 10^6$ 时 $N\\left(x^y\\right)=999+99+14+6+ 2+1+1+1-9-2-1-1=1110$ 个.\n又 $n=1$ 时有非负整数解 $x>1$ 且 $y=0$. 于是满足题意的整数 $n$ 有 1111 个.",
+    "remark": "",
+    "figures": []
+}

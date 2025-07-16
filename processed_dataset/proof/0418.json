@@ -1,0 +1,13 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $A_1, A_2, A_3, A_4, A_5, A_6$ 是平面上的 6 点, 其中任意三点不共线.\n(i) 如果这些点之间任意连接 13 条线段, 证明: 必存在 4 点, 它们每两点之间都有线段连接.\n(ii)如果这些点之间只有 12 条线段, 请你画一个图形, 说明(i) 的结论不成立(不必用文字说明).\n(iii) 结论 (i) 能否加强为: 必存在 4 个 4 阶完全图, 给出反例或证明.",
+    "solution": "解:(i) 把题目转化成图论语言就是: 图 $G$ 有 6 个顶点, 13 条边, 证明 $G$ 中含有 $K_4$.\n容易算得 $e_4(6)=12<13$, 根据定理二, $G$ 中必含有 $K_4$.\n(ii) 构造完全 3 部图 $K_{2,2,2}$, 如图(<FilePath:./images/volume12/figures/fig-c3i4.png>) 所示.\n因从 $K_{2,2,2}$ 中任取 4 点, 总有两点属于同一部分, 而这两点是不相邻的, 因此任取 4 点均不构成 $K_4$.",
+    "remark": "注:: 对于 (i), 不用定理二当然也能证明, 而且方法很多,这里仅举两种.\n(1) 因为 6 个点的度数之和 $=2 \\times 13=26$, 所以这 6 个点中至少有两个点的度数为 5 (否则, 度数之和 $\\leqslant 5+5 \\times 4=25<26$ ), 不妨设 $d\\left(A_1\\right)= d\\left(A_2\\right)=5$. 与 $A_1$ 或 $A_2$ 关联的边共 9 条, 如图(<FilePath:./images/volume12/figures/fig-c3i5.png>) 所示.\n于是在 $A_3, A_4$, $A_5, A_6$ 之间还有 $13-9=4$ 条边.\n这 4 条边的任一条的两个端点与 $A_1, A_2$ 这 4 点构成 $K_4$.\n(2) 因为 6 阶完全图有 15 条边, 所以图 $G$ 就是在 $K_6$ 中去掉两条边.\n分两种情况讨论:\n(1) 两边有公共点, 如图(<FilePath:./images/volume12/figures/fig-c3i6.png>), 则四点组 $A_2, A_4, A_5, A_6$ 组成 $K_4$;\n(2) 两边无公共点, 如图(<FilePath:./images/volume12/figures/fig-c3i7.png>), 则四点组 $A_1, A_3, A_5, A_6$ 组成 $K_4$.\n(iii)按上述两种情况来讨论: 情况(1)中有 6 个 $K_4$ 组 $\\left(A_1, A_4, A_5, A_6\\right)$, $\\left(A_2, A_4, A_5, A_6\\right),\\left(A_3, A_4, A_5, A_6\\right),\\left(A_2, A_3, A_4, A_5\\right),\\left(A_1, A_3, A_4\\right.$,\n$\\left.A_6\\right),\\left(A_1, A_3, A_5, A_6\\right)$.\n情况(2)中有 4 个 $K_4$ 组 $\\left(A_1, A_3, A_5, A_6\\right),\\left(A_1, A_4, A_5, A_6\\right),\\left(A_1\\right.$, $\\left.A_3, A_4, A_5\\right),\\left(A_1, A_2, A_4, A_5\\right)$.\n所以,必存在 4 个 4 阶完全图.",
+    "figures": [
+        "./images/volume12/figures/fig-c3i4.png",
+        "./images/volume12/figures/fig-c3i5.png",
+        "./images/volume12/figures/fig-c3i6.png",
+        "./images/volume12/figures/fig-c3i7.png"
+    ]
+}

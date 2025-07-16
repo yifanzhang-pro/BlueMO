@@ -1,0 +1,12 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 如图(<FilePath:./images/volume7/figures/fig-c5p8.png>), 已知圆 $O$ 与两条平行线 $l_1$ 和 $l_2$ 相切; 第二个圆圆 $O_1$ 切 $l_1$ 于点 $A$, 外切圆 $O$ 于点 $C$; 第三个圆圆 $O_2$ 切 $l_2$ 于点 $B$, 外切圆 $O$ 于点 $D$, 外切圆 $O_1$ 于点 $E, A D$ 交 $B C$ 于 $Q$. 求证: $Q$ 是 $\\triangle C D E$ 的外心.",
+    "solution": "引理 (字母与原题无关). 如图(<FilePath:./images/volume7/figures/fig-c5a8-1.png>), 设 $\\odot O_1 、 \\odot O_2$ 外切于点 $C$, 直线 $l_1 / / l_2$, 且 $l_1$ 切 $\\odot O_1$ 于点 $A, l_2$ 切 $\\odot O_2$ 于点 $B$, 那么 $A 、 C 、 B$ 三点共线.\n引理的证明: $l_1 / / l_2 \\Rightarrow O_1 A / / O_2 B \\Rightarrow \\angle A O_1 C=\\angle B O_2 C \\Rightarrow \\angle A C O_1= 90^{\\circ}-\\frac{\\angle A O_1 C}{2}=90^{\\circ}-\\frac{\\angle B O_2 C}{2}=\\angle O_2 C B \\Rightarrow A 、 C 、 B$ 共线.\n回到原题, 如图(<FilePath:./images/volume7/figures/fig-c5a8-2.png>), 令 $\\odot O$ 与 $l_1$ 切于 $G$, 与 $l_2$ 切于 $F$, 由引理知 $A, C, F$ 共线, $A$ 、 $E 、 B$ 共线,而 $\\angle A E C=\\angle G A C=\\angle C F B$. 故 $C 、 E 、 B 、 F$ 四点共圆, 由割线定理, $A C \\cdot A F=A E \\cdot A B$, 从而 $A$ 关于 $\\odot O 、 \\odot O_2$ 等幂,所以 $A$ 在两圆的根轴上, 所以直线 $A D$ 为 $\\odot O, \\odot O_2$ 的根轴, 又 $\\odot O$ 与 $\\odot O_2$ 切于点 $D$, 则 $A D$ 为切线, 即 $Q D$ 为两圆公切线, 同理 $Q C$ 为 $\\odot O$ 与 $\\odot O_2$ 公切线, 从而 $Q$ 同时位于两个根轴上, 所以 $Q$ 为三圆根心.\n从而 $Q E$ 为 $\\odot O_1 、 \\odot O_2$ 的公切线.\n$Q C= Q D=Q E, Q$ 为 $\\triangle C D E$ 外接圆圆心.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5p8.png",
+        "./images/volume7/figures/fig-c5a8-1.png",
+        "./images/volume7/figures/fig-c5a8-2.png"
+    ]
+}

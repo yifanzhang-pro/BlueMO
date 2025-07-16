@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题16. 设 $a>0, x_1, x_2, \\cdots, x_n \\in[0, a](n \\geqslant 2)$ 且满足\n$$\nx_1 x_2 \\cdots x_n=\\left(a-x_1\\right)^2\\left(a-x_2\\right)^2 \\cdots\\left(a-x_n\\right)^2 .\n$$\n求 $x_1 x_2 \\cdots x_n$ 的最大值.",
+    "solution": "由平均值不等式, 得 $\\left(x_1 x_2 \\cdots, x_n\\right)^{\\frac{1}{2 n}}=\\left[\\left(a-x_1\\right)\\left(a-x_2\\right) \\cdots(a-\\right. \\left.\\left.x_n\\right)\\right]^{\\frac{1}{n}} \\leqslant a-\\frac{x_1+\\cdots+x_n}{n} \\leqslant a-\\left(x_1 \\cdots x_n\\right)^{\\frac{1}{n}}$. 令 $y=\\left(x_1 x_2 \\cdots x_n\\right)^{\\frac{1}{2 n}} \\geqslant 0$, 则有 $y \\leqslant a-y^2$, 即 $y^2+y-a \\leqslant 0$. 解不等式得 $0 \\leqslant y \\leqslant \\frac{-1+\\sqrt{4 a+1}}{2}$, 故 $x_1 x_2 \\cdots x_n$ 的最大值为 $\\left(\\frac{-1+\\sqrt{4 a+1}}{2}\\right)^{2 n}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $a 、 b$ 是两个不同的正整数, $a b(a+b)$ 是 $a^2+a b+b^2$ 的倍数.\n证明: $|a-b|>\\sqrt[3]{a b}$.",
+    "solution": "证明:由于 $a b(a+b)$ 被 $a^2+a b+b^2$ 整除,我们首先用 $a^2+a b+b^2$ 除 $a b(a+b)$, 得\n$$\na b(a+b)=\\left(a^2+a b+b^2\\right) a-a^3,\n$$\n故 $\\left(a^2+a b+b^2\\right) \\mid a^3$. 同样 $\\left(a^2+a b+b^2\\right) \\mid b^3$, 即 $a^2+a b+b^2$ 是 $a^3$ 与 $b^3$ 的一个公约数,故 $\\left(a^2+a b+b^2\\right) \\mid\\left(a^3, b^3\\right)$. (见第 2 单元中的 (3). ) 又 $\\left(a^3, b^3\\right)=(a$ , $b)^3$ (见下面的注), 从而\n$$\n\\left(a^2+a b+b^2\\right) \\mid(a, b)^3 . \\label{eq1}\n$$\n记 $d=(a, b), a=a_1 d, b=b_1 d$, 则式\\ref{eq1}成为 $\\left(a_1^2+a_1 b_1+b_1^2\\right) \\mid d$. 从而 $d \\geqslant a_1^2+a_1 b_1+b_1^2$, 更有 $d>a_1 b_1$. 因 $a \\neq b$, 故整数 $a_1 \\neq b_1$, 因此 $\\left|a_1-b_1\\right| \\geqslant$ 1 , 进而我们得出\n$$\n|a-b|^3=d^3\\left|a_1-b_1\\right|^3 \\geqslant d^3>d^2 a_1 b_1=a b,\n$$\n即 $|a-b|>\\sqrt[3]{a b}$.",
+    "remark": "注:对任意整数 $k \\geqslant 1$, 有 $\\left(a^k, b^k\\right)=(a, b)^k$. 这可如下证明: 当 $(a, b) \\doteq$ 1 时, 则 $\\left(a^k, b^k\\right)=1=(a, b)^k$ (见第 2 单元 $(6)$ ). 当 $(a, b)=d>1$ 时, 则有 $\\left(\\frac{a}{d}, \\frac{b}{d}\\right)=1$, 从而由上述结果知, $\\left(\\left(\\frac{a}{d}\\right)^k,\\left(\\frac{b}{d}\\right)^k\\right)=1$, 故 $d^k= d^k\\left(\\frac{a^k}{d^k}, \\frac{b^k}{d^k}\\right)=\\left(\\frac{a^k}{d^k} \\cdot d^k, \\frac{b^k}{d^k} \\cdot d^k\\right)=\\left(a^k, b^k\\right)$, 从而结论得证.\n这一论证, 是将一般情形的问题, 化为特殊情形来解决的一个简单例子.\n本题的证明, 先由整数的整除等性质导出整除关系式\\ref{eq1}, 再由此过渡到不等式, 这是处理涉及整数的不等式问题以及用估计法解决数论问题的一种基本手法,下面两个例子均是这样做的.",
+    "figures": []
+}

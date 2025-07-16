@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设 $x, y, z \\in \\mathbf{R}^{+}$, 且 $\\frac{1}{x}+\\frac{1}{y}+\\frac{1}{z}=1$, 求证:\n$$\n\\sqrt{x+y z}+\\sqrt{y+z x}+\\sqrt{z+x y} \\geqslant \\sqrt{x y z}+\\sqrt{x}+\\sqrt{y}+\\sqrt{z} .\n$$",
+    "solution": "证明:令 $x=\\frac{1}{\\alpha}, y=\\frac{1}{\\beta}, z=\\frac{1}{\\gamma}$, 则 $\\alpha+\\beta+\\gamma=1$.\n原不等式等价于\n$$\n\\sum_{c y c} \\sqrt{\\frac{1}{\\alpha}+\\frac{1}{\\beta \\gamma}} \\geqslant \\sqrt{\\frac{1}{\\alpha \\beta \\gamma}}+\\sum_{c y c} \\sqrt{\\frac{1}{\\alpha}},\n$$\n即\n$$\n\\sum_{c y c} \\sqrt{\\alpha+\\beta \\gamma} \\geqslant \\sum_{c y c} \\sqrt{\\alpha^2}+\\sum_{c y c} \\sqrt{\\beta \\gamma},\n$$\n即\n$$\n\\begin{aligned}\n& \\sum_{c y c} \\sqrt{\\alpha \\cdot \\sum_{c y c} \\alpha+\\beta \\gamma} \\geqslant \\sum_{c y c} \\sqrt{\\alpha^2}+\\sum_{c y c} \\sqrt{\\beta \\gamma}, \\\\\n& \\sum_{c y c} \\sqrt{(\\alpha+\\beta)(\\alpha+\\gamma)} \\geqslant \\sum_{c y c}\\left(\\sqrt{\\alpha^2}+\\sqrt{\\beta \\gamma}\\right) .\n\\end{aligned}\n$$\n又不难证明 $\\quad \\sqrt{(\\alpha+\\beta)(\\alpha+\\gamma)} \\geqslant \\sqrt{\\alpha^2}+\\sqrt{\\beta \\gamma}$.\n故原不等式成立.",
+    "remark": "",
+    "figures": []
+}

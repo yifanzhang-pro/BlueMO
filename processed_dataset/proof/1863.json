@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 如图(<FilePath:./images/volume7/figures/fig-c5p2.png>), $A B C D$ 为 $\\odot O$ 的内接四边形, 延长 $A B$ 和 $D C$ 相交于 $E$, 延长 $A D$ 和 $B C$ 相交于 $F, E P$ 和 $F Q$ 分别切 $\\odot O$ 于 $P 、 Q$. 求证: $E P^2+F Q^2= E F^2$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c5a2.png>), 作 $\\triangle B C E$ 的外接圆交 $E F$ 于 $G$, 连结 $C G$. 又因为 $\\angle F D C= \\angle A B C=\\angle E G C$, 故 $C 、 D 、 F 、 G$ 四点共圆.\n由切割线定理, 有 $E P^2=E C E D=E G \\cdot E F, F Q^2=F C \\cdot F B=F G \\cdot F E$, 所以 $E P^2+F Q^2=E G \\cdot E F+ F G \\cdot F E=E F(E G+F G)=E F^2$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5p2.png",
+        "./images/volume7/figures/fig-c5a2.png"
+    ]
+}

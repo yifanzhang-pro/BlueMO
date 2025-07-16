@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 已知 $a 、 b$ 为不全为 0 的实数, 求证: 方程\n$$\n3 a x^2+2 b x-(a+b)=0\n$$\n在 $(0,1)$ 内至少有一个实根.",
+    "solution": "若 $a=0$, 则 $b \\neq 0$, 此时方程的根为 $x=\\frac{1}{2}$, 满足题意.\n当 $a \\neq 0$ 时, 令 $f(x)=3 a x^2+2 b x-(a+b)$. \n(1) 若 $a(a+b)<0$, 则 $f(0) f\\left(\\frac{1}{2}\\right)= -(a+b) \\cdot\\left(-\\frac{1}{4} a\\right)=\\frac{1}{4} a(a+b)<0$, 所以 $f(x)$ 在 $\\left(0, \\frac{1}{2}\\right)$ 内有一实根.\n(2) 若 $a(a+b) \\geqslant 0$, 则 $f\\left(\\frac{1}{2}\\right) f(1)=-\\frac{1}{4} a(2 a+b)=-\\frac{1}{4} a^2-\\frac{1}{4} a(a+ b)<0$, 所以 $f(x)$ 在 $\\left(\\frac{1}{2}, 1\\right)$ 内有一实根.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter11.tex",
+    "problem_type": "proof",
+    "problem": "例2. 圆 $O_1$ 与圆 $O_2$ 交于 $A 、 B$ 两点.\n过点 $A$ 作直线 $C D \\perp A B$, 交圆 $O_1$ 于 $C$, 交圆 $O_2$ 于 $D$. 过 $C 、 D$ 分别作 $C D$ 垂线 $M C 、 M D$, 使 $M C=M B, N D= N B$. 连接 $M N$, 过点 $B$ 作 $M N$ 的平行线, 交圆 $O_1$ 于 $P$, 交圆 $O_2$ 于 $Q$. 求证: $B P=B Q$.",
+    "solution": "证明:面给出一个解析几何证法.\n设 $O_1 O_2$ 交 $A B$ 于原点 $O$, 不妨设 $A(0,-1), B(0,1), O_1\\left(x_1, 0\\right)$, $\\mathrm{O}_2\\left(x_2, 0\\right)$.\n圆 $O_1$ 方程为 $\\left(x-x_1\\right)^2+y^2=x_1^2+1$, 即\n$$\nx^2-2 x_1 x+y^2-1=0 . \\label{eq1}\n$$\n同理, 圆 $\\mathrm{O}_2$ 方程为:\n$$\nx^2-2 x_2 x+y^2-1=0 . \\label{eq2}\n$$\n由已知条件及抛物线定义得: $M 、 N$ 在以直线 $C D$ (即直线 $y=-1$ ) 为准线, 以 $B$ 为焦点的抛物线 $x^2=2 p y$ 上.\n其中, $p$ 为 $B$ 到 $C D$ 的距离, 故 $p=2$. 所以\n$$\nx^2=4 y . \\label{eq3}\n$$\n因为 $C D \\perp A B$, 所以 $B C$ 为圆 $O_1$ 的直径, $B D$ 为圆 $O_2$ 的直径, 易知 $C 、 D$ 的坐标分别为 $\\left(2 x_1,-1\\right),\\left(2 x_2,-1\\right)$.\n又 $M C \\perp C D, N D \\perp C D$, 所以 $x_M=x_C=2 x_1, x_N=x_D=2 x_2$. 考虑到 $M 、 N$ 分别满足 \\ref{eq3} 式, 有: $y_M=\\frac{1}{4} x_M^2=x_1^2, y_N=\\frac{1}{4} x_N^2=x_2^2$. 注意 $x_1 \\neq x_2$, 于是 $M N$ 的斜率为 $k=\\frac{y_M-y_N}{x_M-x_N}=\\frac{x_1^2-x_2^2}{2 x_1-2 x_2}=\\frac{x_1+x_2}{2}$, 又 $P Q$ 过点 $B$ 且与 $M N$ 平行, 故其方程应为:\n$$\ny=\\frac{x_1+x_2}{2} x+1 . \\label{eq4}\n$$\n联立 式\\ref{eq1}、\\ref{eq4}, 舍去根 $x=0$, 得: $x_P==\\frac{x_1-x_2}{1+\\left(\\frac{x_1+x_2}{2}\\right)^2}$. 同理得: $x_Q=$\n$$\n\\frac{x_2-x_1}{1+\\left(\\frac{x_1+x_2}{2}\\right)^2}=-x_P .\n$$\n故 $B P 、 B Q$ 在 $x$ 轴上的投影长相等.\n故 $B P=B Q$.",
+    "remark": "注:本题运用解析法证明, 即: 选择适当的坐标系, 把几何问题转化为代数问题, 经过计算和逻辑推理, 得到有关的代数结论, 再还原成题目所需证明的几何结论.\n在对问题的处理上, 例 1 是 \"以形助数\", 本例是 \"由数解形\", 这是相互对应的两种取向.\n用解析法证明平面几何问题具有模型化、规律性强的特点, 其案例屡见不鲜, 这里不作赘述.",
+    "figures": []
+}

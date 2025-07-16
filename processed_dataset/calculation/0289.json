@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 正二十面体用纸制成, 能否把它剪成两部分, 使每个面也剪成两部分, 而截痕不通过二十面体的顶点? 个 $1 \\times 1 \\times 1$ 子立方体.\n如果它在一个角上开始, 然后依次走向未吃的立方体, 问它吃完时能否恰在立方体的中心?",
+    "solution": "如图(<FilePath:./images/volume12/figures/fig-c6a3.png>), 正二十面体是由 20 个全等正三角形围成的.\n在每个正三角形的中心设一个顶点, 仅当两个正三角形有公共边时, 在相应的两顶点间连一边, 则构成由 12 个正五边形围成的正十二面体.\n从哈密顿周游世界的游戏中已知可从正十二面体上找到一个哈密顿圈, 用剪刀沿此哈密顿圈剪开, 即可把正二十面体剪成两块,且把每个正三角形也剪成两块,截痕不过二十面体顶点.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c6a3.png"
+    ]
+}

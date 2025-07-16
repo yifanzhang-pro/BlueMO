@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例6 求方程 $x \\sqrt{y-1}+y \\sqrt{x-1}=x y$ 的实数解.",
+    "solution": "解:由题意知 $x, y>1$, 可设 $x=\\sec ^2 \\alpha, y=\\csc ^2 \\beta$, 其中 $0<\\alpha 、 \\beta<\\frac{\\pi}{2}$, 代入原方程得,\n$$\n\\sec ^2 \\alpha \\sqrt{\\csc ^2 \\beta-1}+\\csc ^2 \\beta \\cdot \\sqrt{\\sec ^2 \\alpha-1}=\\sec ^2 \\alpha \\csc ^2 \\beta,\n$$\n即\n$$\n\\frac{1}{\\cos ^2 \\alpha} \\cdot \\frac{\\cos \\beta}{\\sin \\beta}+\\frac{1}{\\sin ^2 \\beta} \\cdot \\frac{\\sin \\alpha}{\\cos \\alpha}=\\frac{1}{\\cos ^2 \\alpha \\sin ^2 \\beta}\n$$\n$$\n\\begin{array}{lc}\n\\Rightarrow & \\sin \\beta \\cos \\beta+\\cos \\alpha \\sin \\alpha=1 \\\\\n\\Rightarrow & \\sin 2 \\alpha+\\sin 2 \\beta=2 \\text {, 又 } \\sin 2 \\alpha \\leqslant 1, \\sin ^2 \\beta \\leqslant 1,\n\\end{array}\n$$\n故 $\\sin 2 \\alpha=\\sin 2 \\beta=1$, 从而 $\\alpha=\\beta=\\frac{\\pi}{4}$.\n所以 $x=y=2$, 经检验知, $x=y=2$ 是原方程的解.\n评注恰当的三角换元,能够使复杂的代数问题转化为简单的三角问题,使问题得到解决.",
+    "remark": "",
+    "figures": []
+}

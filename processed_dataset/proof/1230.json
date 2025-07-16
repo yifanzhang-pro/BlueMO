@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题14. 设 $a_i, b_i, c_i, d_i$ 为正实数 $(i=1,2, \\cdots, n)$, 求证:\n$$\n\\left(\\sum_{i=1}^n a_i b_i c_i d_i\\right)^4 \\leqslant \\sum_{i=1}^n a_i^4 \\sum_{i=1}^n b_i^4 \\sum_{i=1}^n c_i^4 \\sum_{i=1}^n d_i^4 .\n$$",
+    "solution": "$\\left(\\sum_{i=1}^n a_i b_i c_i d_i\\right)^4 \\leqslant\\left[\\sum_{i=1}^n\\left(a_i b_i\\right)^2\\right]^2\\left[\\sum_{i=1}^n\\left(c_i d_i\\right)^2\\right]^2 \\leqslant \\sum_{i=1}^n a_i^4 \\sum_{i=1}^n b_i^4 \\sum_{i=1}^n c_i^4 \\sum_{i=1}^n d_i^4$.",
+    "remark": "",
+    "figures": []
+}

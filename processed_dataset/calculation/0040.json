@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题7: 集合 $\\left\\{x \\mid-1 \\leqslant \\log _{\\frac{1}{x}} 10<-\\frac{1}{2}, x>1\\right.$ 且 $\\left.x \\in \\mathbf{N}\\right\\}$ 的真子集的个数是",
+    "solution": "解: $2^{90}-1$.",
+    "remark": "",
+    "figures": []
+}

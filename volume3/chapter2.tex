@@ -1,0 +1,889 @@
+
+%%TEXT_BEGIN%%
+1. 三角恒等变形是三角的灵魂, 它通过变名变角变次, 公式的顺用与逆用使三角函数充满技巧, 凸显其灵活性.
+主要题型有化简、求值、恒等式证明.
+2. 三角函数化简和求值过程中的基本策略.
+(1) 常值代换: 特别是用 “ 1 ”的代换, 如 $1=\cos ^2 \theta+\sin ^2 \theta=\tan x \cdot \cot x= \tan 45^{\circ}$ 等.
+(2) 项的分拆与角的配凑.
+如分拆项: $\sin ^2 x+2 \cos ^2 x=\left(\sin ^2 x+\cos ^2 x\right)+ \cos ^2 x=1+\cos ^2 x$; 配凑角: $\alpha=(\alpha+\beta)-\beta, \beta=\frac{\alpha+\beta}{2}-\frac{\alpha-\beta}{2}$ 等.
+(3) 降次与升次.
+即倍角公式降次与半角公式升次.
+(4) 化弦 (切)法.
+将三角函数利用同角三角函数基本关系化成弦(切).
+(5) 引人辅助角.
+$a \sin \theta+b \cos \theta=\sqrt{a^2+b^2} \sin (\theta+\varphi)$, 这里辅助角 $\varphi$ 所在象限由 $a 、 b$ 的符号确定, $\varphi$ 角的值由 $\tan \varphi=\frac{b}{a}$ 确定.
+(6) 万能代换法.
+巧用万能公式可将三角函数化成 $\tan \frac{\theta}{2}$ 的有理式.
+3. 三角恒等式包括绝对恒等式和条件恒等式两类.
+证明三角恒等式时, 首先要观察已知与求证或所证恒等式等号两边三角式的繁简程度, 以决定恒等变形的方向;其次要观察已知与求证或所证恒等式等号两边三角式的角、 函数名称、次数以及结构的差别与联系, 抓住其主要差异, 选择恰当的公式对其进行恒等变形, 从而逐步消除差异, 统一形式, 完成证明.
+“和差化积”、“积化和差”、“切割化弦”、“降次”等是我们常用的变形技巧.
+当然有时也可以利用万能公式 “弦化切割”, 将题目转化为一个关于 $t=\tan \frac{x}{2}$ 的代数恒等式的证明问题.
+4. 证明三角不等式的方法: 比较法、配方法、反证法、分析法,利用函数的单调性,利用正、余弦函数的有界性, 利用单位圆三角函数线及判别法等.
+5. 两角和、差的三角函数的公式是所有三角公式的核心和基础.
+此外, 三角是代数与几何联系的 “桥梁”, 与复数也有紧密的联系, 因而许多三角问题往往可以从几何或复数角度获得巧妙的解法.
+半角公式:
+$$
+\begin{aligned}
+& \sin \frac{\alpha}{2}= \pm \sqrt{\frac{1-\cos \alpha}{2}}, \cos \frac{\alpha}{2}= \pm \sqrt{\frac{1+\cos \alpha}{2}}, \\
+& \tan \frac{\alpha}{2}= \pm \sqrt{\frac{1-\cos \alpha}{1+\cos \alpha}}=\frac{\sin \alpha}{1+\cos \alpha}=\frac{1-\cos \alpha}{\sin \alpha} .
+\end{aligned}
+$$
+万能公式:
+$$
+\sin \alpha=\frac{2 \tan \frac{\alpha}{2}}{1+\tan ^2 \frac{\alpha}{2}}, \cos \alpha=\frac{1-\tan ^2 \frac{\alpha}{2}}{1+\tan ^2 \frac{\alpha}{2}} .
+$$
+由 $\cos (\alpha \pm \beta)=\cos \alpha \cos \beta \mp \sin \alpha \sin \beta$ 可以推导积化和差公式:
+$$
+\begin{gathered}
+\cos \alpha \cos \beta=\frac{1}{2}[\cos (\alpha+\beta)+\cos (\alpha-\beta)], \\
+\sin \alpha \cdot \sin \beta=\frac{1}{2}[\cos (\alpha-\beta)-\cos (\alpha+\beta)] .
+\end{gathered}
+$$
+由 $\sin (\alpha \pm \beta)=\sin \alpha \cos \beta \pm \cos \alpha \sin \beta$ 可以推导：
+$$
+\begin{aligned}
+& \sin \alpha \cos \beta=\frac{1}{2}[\sin (\alpha+\beta)+\sin (\alpha-\beta)], \\
+& \cos \alpha \sin \beta=\frac{1}{2}[\sin (\alpha+\beta)-\sin (\alpha-\beta)] .
+\end{aligned}
+$$
+和差化积公式:
+$$
+\begin{aligned}
+& \cos \alpha+\cos \beta=2 \cos \frac{\alpha+\beta}{2} \cos \frac{\alpha-\beta}{2}, \\
+& \cos \alpha-\cos \beta=-2 \sin \frac{\alpha+\beta}{2} \sin \frac{\alpha-\beta}{2}, \\
+& \sin \alpha+\sin \beta=2 \sin \frac{\alpha+\beta}{2} \cos \frac{\alpha-\beta}{2}, \\
+& \sin \alpha-\sin \beta=2 \cos \frac{\alpha+\beta}{2} \sin \frac{\alpha-\beta}{2}
+\end{aligned}
+$$
+其他的一些公式:
+$$
+\begin{aligned}
+& \sin 3 \alpha=3 \sin \alpha-4 \sin ^3 \alpha=4 \sin \left(60^{\circ}-\alpha\right) \cdot \sin \alpha \sin \left(60^{\circ}+\alpha\right), \\
+& \cos 3 \alpha=4 \cos ^3 \alpha-3 \cos \alpha=4 \cos \left(60^{\circ}-\alpha\right) \cdot \cos \alpha \cos \left(65^{\circ}+\alpha\right),
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& \tan 3 \alpha=\tan \left(60^{\circ}-\alpha\right) \tan \alpha \cdot \tan \left(60^{\circ}+\alpha\right), \\
+& \sin ^2 \alpha-\sin ^2 \beta=\sin (\alpha+\beta) \sin (\alpha-\beta), \\
+& \cos ^2 \alpha-\cos ^2 \beta=-\sin (\alpha+\beta) \cdot \sin (\alpha-\beta), \\
+& a \sin x+b \cos x=\sqrt{a^2+b^2} \sin (x+\theta), \text { 其中 } \tan \theta=\frac{b}{a} .
+\end{aligned}
+$$
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1 (1) 求 $\sin ^4 10^{\circ}+\sin ^4 50^{\circ}+\sin ^4 70^{\circ}$;
+(2) $\sin ^2 \alpha+\sin ^2\left(\alpha+\frac{\pi}{3}\right)+\sin ^2\left(\alpha-\frac{\pi}{3}\right)$;
+(3) 圆 $x^2+y^2=1$ 上有三点,坐标分别为 $\left(x_1\right.$, $\left.y_1\right),\left(x_2, y_2\right),\left(x_3, y_3\right)$, 且 $x_1+x_2+x_3=y_1+y_2+y_3=0$. 求证: $x_1^2+ x_2^2+x_3^2=y_1^2+y_2^2+y_3^2=\frac{3}{2}$.
+%%<SOLUTION>%%
+分析:第一小题和第二小题都可以采用二倍角公式进行计算.
+解 (1) 
+$$
+\begin{aligned}
+& \sin ^4 10^{\circ}+\sin ^4 50^{\circ}+\sin ^4 70^{\circ} \\
+& =\left(\frac{1-\cos 20^{\circ}}{2}\right)^2+\left(\frac{1-\cos 100^{\circ}}{2}\right)^2+\left(\frac{1-\cos 140^{\circ}}{2}\right)^2 \\
+& =\frac{3}{4}-\frac{1}{2}\left(\cos 20^{\circ}+\cos 100^{\circ}+\cos 140^{\circ}\right)+\frac{1}{4}\left(\cos ^2 20^{\circ}+\cos ^2 100^{\circ}+\cos ^2 140^{\circ}\right) \\
+& \quad=\frac{3}{4}-\frac{1}{2}\left(2 \cos 60^{\circ} \cos 40^{\circ}-\cos 40^{\circ}\right)+\frac{1}{4}\left(\frac{1+\cos 40^{\circ}}{2}+\frac{1+\cos 200^{\circ}}{2}+\frac{1+\cos 280^{\circ}}{2}\right) \\
+& =\frac{3}{4}+\frac{3}{8}-0+\frac{1}{8}\left(\cos 40^{\circ}+\cos 80^{\circ}-\cos 20^{\circ}\right) \\
+& =\frac{3}{4}+\frac{3}{8}+\frac{1}{8}\left(2 \cos 60^{\circ} \cos 20^{\circ}-\cos 20^{\circ}\right)=\frac{9}{8} .
+\end{aligned}
+$$
+(2)
+$$
+\begin{aligned}
+& \sin ^2 \alpha+\sin ^2\left(\alpha+\frac{\pi}{3}\right)+\sin ^2\left(\alpha-\frac{\pi}{3}\right) \\
+& =\frac{1-\cos 2 \alpha}{2}+\frac{1-\cos 2\left(\alpha+\frac{\pi}{3}\right)}{2}+\frac{1-\cos 2\left(\alpha-\frac{\pi}{3}\right)}{2} \\
+& =\frac{3}{2}-\frac{1}{2}\left(\cos 2 \alpha+2 \cos 2 \alpha \cos \frac{2 \pi}{3}\right)=\frac{3}{2} .
+\end{aligned}
+$$
+(3) 我们假设 $\left(x_1, y_1\right),\left(x_2, y_2\right),\left(x_3, y_3\right)$ 对应的三个点为 $A, B, C$, 原点为 $O$, 原题说的实际上就是 $\overrightarrow{O A}+\overrightarrow{O B}+\overrightarrow{O C}=0$, 也就是说 $\overrightarrow{O A}+\overrightarrow{O B}=-\overrightarrow{O C}$, 
+画图马上可以得出 $\angle A O B=\frac{2 \pi}{3}$, 同理可以得出 $\angle B O C=\angle C O A=\frac{2 \pi}{3}$.
+假设 $A(\cos \alpha, \sin \alpha)$, 那么有 $B\left(\cos \left(\alpha+\frac{2 \pi}{3}\right), \sin \left(\alpha+\frac{2 \pi}{3}\right)\right), C(\cos (\alpha-\frac{2 \pi}{3}), \sin (\alpha-\frac{2 \pi}{3}))$
+$$
+\begin{aligned}
+x_1^2+x_2^2+x_3^2 & =\cos ^2 \alpha+\cos ^2\left(\alpha+\frac{2 \pi}{3}\right)+\cos ^2\left(\alpha-\frac{2 \pi}{3}\right) \\
+& =\frac{1}{2}\left(1+\cos 2 \alpha+1+\cos 2\left(\alpha+\frac{2 \pi}{3}\right)+1+\cos 2\left(\alpha-\frac{2 \pi}{3}\right)\right) \\
+& =\frac{1}{2}\left(3+\cos 2 \alpha+2 \cos 2 \alpha \cos \frac{2 \pi}{3}\right)=\frac{3}{2}
+\end{aligned}
+$$
+$x_1^2+x_2^2+x_3^2+y_1^2+y_2^2+y_3^2=3$ 是显然的,所以 $y_1^2+y_2^2+y_3^2=\frac{3}{2}$.
+评注前两道题都是基本的倍角公式十和差化积变形以及基本的计算, 注意在三角函数里面看到平方或者高次方降次数的方法就是倍角公式法, 能将平方化为一次的, 最后一道题实际上计算步骤和前两道一样, 但是如何得出三角形是一个等边三角形有很多种思路可循, 还有一种思路是, 该三角形的重心和外心重合, 都是原点,所以只能是等边三角形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2 (1) 若 $\mathrm{e}^{\mathrm{i} \theta}=\cos \theta+\mathrm{i} \sin \theta$, 求 $\left|2+2 \mathrm{e}^{\frac{2}{5} \pi \mathrm{i}}+\mathrm{e}^{\frac{6}{5} \pi \mathrm{i}}\right|$
+(2) 已知 $\sin 2(\alpha+\gamma)=n \sin 2 \beta$, 则 $\frac{\tan (\alpha+\beta+\gamma)}{\tan (\alpha-\beta+\gamma)}$ 的值是
+(3) 求 $\left(1+\tan 1^{\circ}\right)\left(1+\tan 2^{\circ}\right) \cdots\left(1+\tan 44^{\circ}\right)(1+ \tan 45^{\circ} )$.
+%%<SOLUTION>%%
+解:(1) $2+2 \mathrm{e}^{\frac{2}{5} \pi \mathrm{i}}+\mathrm{e}^{\frac{6}{5} \pi \mathrm{i}}=2+2 \cos \frac{2}{5} \pi+\cos \frac{6}{5} \pi+\mathrm{i}\left(2 \sin \frac{2}{5} \pi+\sin \frac{6}{5} \pi\right)$,
+$$
+\begin{aligned}
+& \left|2+2 \mathrm{e}^{\frac{2}{5} \pi i}+\mathrm{e}^{\frac{6}{5} \pi \mathrm{i}}\right| \\
+= & \left(2+2 \cos \frac{2}{5} \pi+\cos \frac{6}{5} \pi\right)^2+\left(2 \sin \frac{2}{5} \pi+\sin \frac{6}{5} \pi\right)^2 \\
+= & 4+4\left(2 \cos \frac{2}{5} \pi+\cos \frac{6}{5} \pi\right)+\left(2 \cos \frac{2}{5} \pi+\cos \frac{6}{5} \pi\right)^2+ \left(2 \sin \frac{2}{5} \pi+\sin \frac{6}{5} \pi\right)^2 \\
+= & 4+4\left(2 \cos \frac{2}{5} \pi+\cos \frac{6}{5} \pi\right)+4+1+4\left(\cos \frac{2}{5} \pi \cos \frac{6}{5} \pi+\sin \frac{2}{5} \pi \sin \frac{6}{5} \pi\right)
+= & 9+4\left(2 \cos \frac{2}{5} \pi+\cos \frac{6}{5} \pi+\cos \left(\frac{6}{5} \pi-\frac{2}{5} \pi\right)\right) \\
+= & 9+8\left(\cos \frac{2}{5} \pi+\cos \frac{4}{5} \pi\right) .
+\end{aligned}
+$$
+我们要求 $\cos \frac{2}{5} \pi, \cos \frac{4}{5} \pi$ 的大小,这点可以画图求,用传统的相似三角形做几何图进行求解, 但是我们只用三角函数也是可以做的:
+$$
+\text { 设 } 2\left(2 \cos ^2 \frac{1}{5} \pi-1\right)^2-1=2 \cos ^2-\frac{2}{5} \pi-1=\cos \frac{4}{5} \pi=-\cos \frac{1}{5} \pi ，
+$$
+可以求得
+$$
+\left(\cos \frac{1}{5} \pi+1\right)\left(\cos \frac{1}{5} \pi-\frac{1}{2}\right)\left(\cos \frac{1}{5} \pi-\frac{1+\sqrt{5}}{2}\right)\left(\cos \frac{1}{5} \pi-\frac{1-\sqrt{5}}{2}\right)=0,
+$$
+很容易分析得出 $\cos \frac{1}{5} \pi=\frac{1+\sqrt{5}}{2}$.
+(2) 如果觉得看起来有点复杂,可以先分析里面的情况,我们发现 $\alpha, \gamma$ 绑在一起, 所以直接假设 $\alpha+\gamma=\varphi$, 从而条件转化为 $\sin 2 \varphi=n \sin 2 \beta$, 所以 $\frac{\tan (\alpha+\beta+\gamma)}{\tan (\alpha-\beta+\gamma)}=\frac{\tan (\varphi+\beta)}{\tan (\varphi-\beta)}=\frac{\sin (\varphi+\beta) \cos (\varphi-\beta)}{\cos (\varphi+\beta) \sin (\varphi-\beta)}$ 想到利用积化和差公式,因此
+$$
+\begin{aligned}
+\frac{\tan (\alpha+\beta+\gamma)}{\tan (\alpha-\beta+\gamma)} & =\frac{\sin (\varphi+\beta) \cos (\varphi-\beta)}{\cos (\varphi+\beta) \sin (\varphi-\beta)} \\
+& =\frac{\sin ((\varphi+\beta)+(\varphi-\beta))+\sin ((\varphi+\beta)-(\varphi-\beta))}{\sin ((\varphi+\beta)+(\varphi-\beta))-\sin ((\varphi+\beta)-(\varphi-\beta))} \\
+& =\frac{\sin 2 \varphi+\sin 2 \beta}{\sin 2 \varphi-\sin 2 \beta}=\frac{n+1}{n-1} .
+\end{aligned}
+$$
+实际上本题最好还强调一下在 $n=1$ 并且在 $\sin (\varphi-\beta)=0$, 即 $\alpha-\beta+ \gamma=k \pi, k=0,1,2 \cdots$ 的时候表达式并无意义.
+(3) 一般这种情况可以考虑配对相乘:
+$$
+(1+\tan \alpha)\left(1+\tan \left(\frac{\pi}{4}-\alpha\right)\right)=(1+\tan \alpha)\left(1+\frac{\tan \frac{\pi}{4}-\tan \alpha}{1+\tan \frac{\pi}{4} \tan \alpha}\right)=2
+$$
+因此, 原式 $=\left[\left(1+\tan 1^{\circ}\right)\left(1+\tan 44^{\circ}\right)\right]\left[\left(1+\tan 2^{\circ}\right)\left(1+\tan 43^{\circ}\right)\right] \cdots \left[\left(1+\tan 22^{\circ}\right)\left(1+\tan 23^{\circ}\right)\right]\left(1+\tan 45^{\circ}\right)=2^{23}$.
+评注这些题目依旧考查三角函数的变形能力, 不过比第一问要稍难一点, 并且第二问第三问涉及到了技巧运算, 第二问一开始可以不讲最后无意义的情况, 如果学生自动提出, 可以适当鼓励, 第三问如果学生觉得配对相乘有点难以接受的话,可以考虑采用如下方法,直接考查单项进行变形:
+$$
+\begin{aligned}
+1+\tan \alpha & =1+\frac{\sin \alpha}{\cos \alpha}=\frac{\sin \alpha+\cos \alpha}{\cos \alpha}=\sqrt{2} \frac{\sin \left(\alpha+\frac{\pi}{4}\right)}{\cos \alpha} \\
+& =\sqrt{2} \frac{\sin \left(\alpha+\frac{\pi}{4}\right)}{\sin \left(\frac{\pi}{2}-\alpha\right)}
+\end{aligned}
+$$
+那么原式 $=(\sqrt{2})^{44} \cdot \frac{\sin 46^{\circ}}{\sin 89^{\circ}} \cdot \frac{\sin 47^{\circ}}{\sin 88^{\circ}} \cdots \cdot \frac{\sin 89^{\circ}}{\sin 46^{\circ}} \cdot 2=2^{23}$.
+这种做法强调一种变形后分子分母尽量形式调整为一样的想法, 因为肯定能消掉,所以形式相同更容易看出来如何消掉.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3 求下列各式的值:
+(1) $\sin ^2 10^{\circ}+\cos ^2 40^{\circ}+\sin 10^{\circ} \cos 40^{\circ}$;
+(2) $\sin ^2 80^{\circ}-\sin ^2 40^{\circ}+\sqrt{3} \sin 40^{\circ} \cos 80^{\circ}$;
+(3) $\sin ^2 20^{\circ}-\sin 5^{\circ}\left(\sin 5^{\circ}+\frac{\sqrt{6}-\sqrt{2}}{2} \cos 20^{\circ}\right)$.
+%%<SOLUTION>%%
+分析:在第 (1)题中, 因 $40^{\circ}-10^{\circ}=30^{\circ}$, 所以可转化到 $30^{\circ}$ 与 $10^{\circ}$ 这两角的关系式而求解; 同理,第 (2) 题中, 因 $80^{\circ}+40^{\circ}=120^{\circ}$, 所以可转化到 $120^{\circ}$ 与 $40^{\circ}$ 这两角的关系而求解; 第 (3) 题中 $\frac{\sqrt{6}-\sqrt{2}}{2}$ 虽非特殊值, 但若知道 $\sin 15^{\circ}= \frac{\sqrt{6}-\sqrt{2}}{4}$, 则 $20^{\circ}=15^{\circ}+5^{\circ}$, 可转化到 $15^{\circ}$ 的三角函数值.
+(1) 解法一
+$$
+\begin{aligned}
+& \sin ^2 10^{\circ}+\cos ^2 40^{\circ}+\sin 10^{\circ} \cos 40^{\circ} \\
+= & \sin ^2 10^{\circ}+\cos ^2\left(30^{\circ}+10^{\circ}\right)+\sin 10^{\circ} \cdot \cos \left(30^{\circ}+10^{\circ}\right) \\
+= & \sin ^2 10^{\circ}+\left(\frac{\sqrt{3}}{2} \cos 10^{\circ}-\frac{1}{2} \sin 10^{\circ}\right)^2  +\sin 10^{\circ} \cdot\left(\frac{\sqrt{3}}{2} \cos 10^{\circ}-\frac{1}{2} \sin 10^{\circ}\right) \\
+= & \sin ^2 10^{\circ}+\frac{3}{4} \cos ^2 10^{\circ}-\frac{\sqrt{3}}{2} \sin 10^{\circ} \cos 10^{\circ}+\frac{1}{4} \sin ^2 10^{\circ} +\frac{\sqrt{3}}{2} \sin 10^{\circ} \cos 10^{\circ}-\frac{1}{2} \sin ^2 10^{\circ} \\
+= & \frac{3}{4} \sin ^2 10^{\circ}+\frac{3}{4} \cos ^2 10^{\circ}=\frac{3}{4} .
+\end{aligned}
+$$
+解法二利用先降次再和差化积与积化和差.
+$$
+\begin{aligned}
+\text { 原式 } & =\frac{1-\cos 20^{\circ}}{2}+\frac{1+\cos 80^{\circ}}{2}+\frac{\sin 50^{\circ}-\sin 30^{\circ}}{2} \\
+& =\frac{1}{2}\left(\frac{3}{2}+\cos 80^{\circ}-\cos 20^{\circ}+\sin 50^{\circ}\right) \\
+& =\frac{1}{2}\left(\frac{3}{2}-2 \sin \frac{80^{\circ}+20^{\circ}}{2} \sin \frac{80^{\circ}-20^{\circ}}{2}+\sin 50^{\circ}\right)=\frac{3}{4} .
+\end{aligned}
+$$
+(2) 解法一
+$$
+\begin{aligned}
+& \sin ^2 80^{\circ}-\sin ^2 40^{\circ}+\sqrt{3} \sin 40^{\circ} \cos 80^{\circ} \\
+= & \sin ^2\left(120^{\circ}-40^{\circ}\right)-\sin ^2 40^{\circ}+\sqrt{3} \sin 40^{\circ} \cdot \cos \left(120^{\circ}-40^{\circ}\right) \\
+= & \left(\frac{\sqrt{3}}{2} \cos 40^{\circ}+\frac{1}{2} \sin 40^{\circ}\right)^2-\sin ^2 40^{\circ} +\sqrt{3} \sin 40^{\circ}\left(-\frac{1}{2} \cos 40^{\circ}+\frac{\sqrt{3}}{2} \sin 40^{\circ}\right) \\
+= & \frac{3}{4} \cos ^2 40^{\circ}+\frac{\sqrt{3}}{2} \sin 40^{\circ} \cos 40^{\circ}+\frac{1}{4} \sin ^2 40^{\circ} -\sin ^2 40^{\circ}-\frac{\sqrt{3}}{2} \sin 40^{\circ} \cos 40^{\circ}+\frac{3}{2} \sin ^2 40^{\circ} \\
+= & \frac{3}{4} \cos ^2 40^{\circ}+\frac{3}{4} \sin ^2 40^{\circ}=\frac{3}{4} .
+\end{aligned}
+$$
+解法二原式 $=\frac{1-\cos 160^{\circ}}{2}-\frac{1-\cos 80^{\circ}}{2}+\frac{\sqrt{3}}{2} \cdot\left(\sin 120^{\circ}-\sin 40^{\circ}\right)$
+$$
+\begin{aligned}
+& =\frac{1}{2}\left(\cos 80^{\circ}+\cos 20^{\circ}+\frac{3}{2}-\sqrt{3} \sin 40^{\circ}\right) \\
+& =\frac{1}{2}\left(\frac{3}{2}+2 \cos 50^{\circ} \cos 30^{\circ}-\sqrt{3} \sin 40^{\circ}\right)=\frac{3}{4} .
+\end{aligned}
+$$
+(3)
+$$
+\begin{aligned}
+& \sin ^2 20^{\circ}-\sin 5^{\circ}\left(\sin 5^{\circ}+\frac{\sqrt{6}-\sqrt{2}}{2} \cos 20^{\circ}\right) \\
+= & \sin ^2 20^{\circ}-\sin ^2 5^{\circ}-\frac{\sqrt{6}-\sqrt{2}}{2} \sin 5^{\circ} \cos 20^{\circ} \\
+= & \sin \left(20^{\circ}+5^{\circ}\right) \sin \left(20^{\circ}-5^{\circ}\right)-\frac{\sqrt{6}-\sqrt{2}}{2} \cdot \frac{1}{2}\left[\sin \left(5^{\circ}+20^{\circ}\right)+  \sin \left(5^{\circ}-20^{\circ}\right)\right] \\
+= & \frac{\sqrt{6}-\sqrt{2}}{4} \cdot \sin 25^{\circ}-\frac{\sqrt{6}-\sqrt{2}}{4} \sin 25^{\circ}+\frac{\sqrt{6}-\sqrt{2}}{4} \sin 15^{\circ} \\
+= & \frac{2-\sqrt{3}}{4} .
+\end{aligned}
+$$
+评注仔细观察本题, 第(1) 题可改写成 $\sin ^2 10^{\circ}+\cos ^2 40^{\circ}+\sin 10^{\circ} \cos 40^{\circ}= \sin ^2 10^{\circ}+\sin ^2 50^{\circ}-2 \sin 10^{\circ} \sin 50^{\circ} \cos 120^{\circ}=\sin ^2 120^{\circ}$, 于是, 我们猜想: 若 $\angle A+\angle B+\angle C=\pi$, 则 $\sin ^2 B+\sin ^2 C-2 \sin B \sin C \cos A=\sin ^2 A$, 这与我们今后学到的三角形中正余弦定理十分类似, 读者不妨根据原题中的解答部分证明一下.
+事实上, 我们还可以证明: 等式 $\sin ^2 B+\sin ^2 C-2 \sin B \sin C \cos A=\sin ^2 A$ 成立的充要条件是 $A=2 k \pi \pm(B-C)$ 或 $A=(2 k+1) \pi \pm(B+C)$.
+略证充分性: 当 $A=2 k \pi \pm(B-C)$ 时,
+$$
+\begin{aligned}
+\text { 左边 } & =\sin ^2 B+\sin ^2 C-2 \sin B \sin C \cos [2 k \pi \pm(B-C)] \\
+& =\sin ^2 B+\sin ^2 C-2 \sin B \sin C \cos B \cos C-2 \sin ^2 B \sin ^2 C \\
+& =\sin ^2 B \cos ^2 C-2 \sin B \sin C \cos B \cos C+\sin ^2 C \cos ^2 B \\
+& =(\sin B \cos C-\cos B \sin C)^2=\sin ^2(B-C)=\text { 右边.
+}
+\end{aligned}
+$$
+同理当 $A=(2 k+1) \pi \pm(B+C)$ 时,等式成立.
+必要性: 因为 $\sin ^2 B+\sin ^2 C-2 \sin B \sin C \cos A=\sin ^2 A$,
+即整理得所以
+$$
+\sin ^2 B+\sin ^2 C-2 \sin B \sin C \cos A=1-\cos ^2 A,
+$$
+$$
+\begin{gathered}
+(\cos A-\sin B \sin C)^2=\cos ^2 B \cos ^2 C, \\
+\cos A=\sin B \sin C \pm \cos B \cos C .
+\end{gathered}
+$$
+当 $\cos A=\sin B \sin C+\cos B \cos C=\cos (B-C)$ 时,
+$$
+A=2 k \pi \pm(B-C), k \in \mathbf{Z}
+$$
+当 $\cos A=\sin B \sin C-\cos B \cos C=-\cos (B+C)$ 时,
+$$
+A=(2 k+1) \pi \pm(B+C), k \in \mathbf{Z} .
+$$
+根据上述结论, 请读者利用公式计算本例中的第 (1)、(2)题.
+至于第 (3) 题是上述公式的变形: 即当 $C=(2 k+1) \pi-(A-B)$ 或 $C=2 k \pi-(A-B)$ 时, 有 $\sin ^2 A-\sin ^2 B-2 \cos A \sin B \sin (A-B)=\sin ^2(A-B)$. 于是, 第(3)题也能套用公式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4 不查表, 求 $\left(1+\cos \frac{\pi}{5}\right)\left(1+\cos \frac{3 \pi}{5}\right)$ 的值.
+%%<SOLUTION>%%
+分析:熟练应用和差化积与积化和差公式.
+解法一 
+$$
+\begin{aligned}
+& \left(1+\cos \frac{\pi}{5}\right)\left(1+\cos \frac{3 \pi}{5}\right) \\
+& =1+\cos \frac{\pi}{5}+\cos \frac{3 \pi}{5}+\cos \frac{\pi}{5} \cos \frac{3 \pi}{5} \\
+& =1+\cos \frac{\pi}{5}+\cos \frac{3 \pi}{5}+\frac{1}{2}\left(\cos \frac{2 \pi}{5}+\cos \frac{4 \pi}{5}\right) \\
+& =1+\cos \frac{\pi}{5}-\cos \frac{2 \pi}{5}+\frac{1}{2} \cos \frac{2 \pi}{5}-\frac{1}{2} \cos \frac{\pi}{5} \\
+& =1+\frac{1}{2}\left(\cos \frac{\pi}{5}-\cos \frac{2 \pi}{5}\right) \\
+& =1+\sin \frac{\pi}{10} \sin \frac{3 \pi}{10} \\
+& =1+\frac{2 \cos \frac{\pi}{10} \sin \frac{\pi}{10} \sin \frac{3 \pi}{10}}{2 \cos \frac{\pi}{10}} \\
+& =1+\frac{\sin \frac{2 \pi}{10} \cos \frac{2 \pi}{10}}{2 \cos \frac{\pi}{10}} \\
+& =1+\frac{\sin \frac{4 \pi}{10}}{4 \cos \frac{\pi}{10}} \\
+& =1+\frac{\cos \frac{ \pi}{10}}{4 \cos \frac{\pi}{10}} \\
+& =\frac{5}{4} . \\
+\end{aligned}
+$$
+解法二设原式 $=A=1+\cos \frac{\pi}{5}+\cos \frac{3 \pi}{5}+\cos \frac{\pi}{5} \cos \frac{3 \pi}{5}$, 令 $\theta=\frac{\pi}{5}$, 则 $2 \theta=\pi-3 \theta$, 于是 $\cos 2 \theta+\cos 3 \theta=0$, 即
+$$
+4 \cos ^3 \theta+2 \cos ^2 \theta-3 \cos \theta-1=0 .
+$$
+因式分解得 $(\cos \theta+1)\left(4 \cos ^2 \theta-2 \cos \theta-1\right)=0$.
+因为 $\cos \theta+1 \neq 0$, 所以 $4 \cos ^2 \theta-2 \cos \theta-1=0$. 即 $\cos \frac{\pi}{5}$ 是方程 $4 x^2- 2 x-1=0$ 的一根.
+同理可证 $\cos \frac{2 \pi}{5}$ 也是方程 $4 x^2-2 x-1=0$ 的一根.
+由韦达定理得 $\cos \frac{\pi}{5}+\cos \frac{3 \pi}{5}=\frac{1}{2}, \cos \frac{\pi}{5} \cos \frac{3 \pi}{5}=-\frac{1}{4}$, 故 $A=\frac{5}{4}$.
+评注本题解法一具有很强的技巧性, 在解题过程中, 出现了形如 $\sin \frac{\pi}{10} \sin \frac{3 \pi}{10}$ 的算式.
+当它乘以 $\cos \frac{\pi}{10}$ 后, 则可连续应用二倍角正弦公式进行计算化简.
+与此类似的如:
+$$
+\begin{aligned}
+\cos \frac{2 \pi}{7} \cos \frac{4 \pi}{7} \cos \frac{8 \pi}{7} & =\frac{8 \sin \frac{2 \pi}{7} \cos \frac{2 \pi}{7} \cos \frac{4 \pi}{7} \cos \frac{8 \pi}{7}}{8 \sin \frac{2 \pi}{7}} \\
+& =\frac{4 \sin \frac{4 \pi}{7} \cos \frac{4 \pi}{7} \cos \frac{8 \pi}{7}}{8 \sin \frac{2 \pi}{7}} \\
+& =\frac{2 \sin \frac{8 \pi}{7} \cos \frac{8 \pi}{7}}{8 \sin \frac{2 \pi}{7}}=\frac{\sin \frac{16}{7} \pi}{8 \sin \frac{2 \pi}{7}} \\
+& =\frac{\sin \frac{2 \pi}{7}}{8 \sin \frac{2 \pi}{7}}=\frac{1}{8}, \\
+\cos \frac{2 \pi}{7} \cos \frac{4 \pi}{7} \cos \frac{6 \pi}{7} & =\cos \frac{\pi}{7} \cos \frac{2 \pi}{7} \cos \frac{3 \pi}{7} .
+\end{aligned}
+$$
+而
+$$
+\cos \frac{2 \pi}{7} \cos \frac{4 \pi}{7} \cos \frac{6 \pi}{7}=\cos \frac{\pi}{7} \cos \frac{2 \pi}{7} \cos \frac{3 \pi}{7}
+$$
+我们再观察一下: $\cos \frac{\pi}{3}=\frac{1}{2}, \cos \frac{\pi}{5} \cos \frac{2 \pi}{5}=\frac{1}{4}$, 于是, 归纳猜想
+$$
+\cos \frac{\pi}{2 n+1} \cos \frac{2 \pi}{2 n+1} \cos \frac{3 \pi}{2 n+1} \cdots \cos \frac{n \pi}{2 n+1}=\frac{1}{2^n} .
+$$
+证明如下: 令
+$$
+\begin{aligned}
+& S=\cos \frac{\pi}{2 n+1} \cos \frac{2 \pi}{2 n+1} \cos \frac{3 \pi}{2 n+1} \cdots \cos \frac{n \pi}{2 n+1}, \\
+& T=\sin \frac{\pi}{2 n+1} \sin \frac{2 \pi}{2 n+1} \sin \frac{3 \pi}{2 n+1} \cdots \sin \frac{n \pi}{2 n+1},
+\end{aligned}
+$$
+则
+$$
+\begin{aligned}
+S T & =\frac{1}{2^n} \sin \frac{2 \pi}{2 n+1} \sin \frac{4 \pi}{2 n+1} \sin \frac{6 \pi}{2 n+1} \cdots \sin \frac{2 n \pi}{2 n+1} \\
+& =\frac{1}{2^n} \sin \frac{2 \pi}{2 n+1} \sin \frac{4 \pi}{2 n+1} \cdots \sin \frac{3 \pi}{2 n+1} \sin \frac{\pi}{2 n+1} \\
+& =\frac{1}{2^n} T .
+\end{aligned}
+$$
+从而 $S=\frac{1}{2^n}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5 已知 $\frac{\sin ^4 x}{a}+\frac{\cos ^4 x}{b}=\frac{1}{a+b}$, 求证: $\frac{\sin ^{4 n} x}{a^{2 n-1}}+\frac{\cos ^{4 n} x}{b^{2 n-1}}=\frac{1}{(a+b)^{2 n-1}}$, $n \in \mathbf{N}^*$.
+%%<SOLUTION>%%
+证明:一令 $\left\{\begin{array}{l}u=\sin ^2 x, \\ v=\cos ^2 x,\end{array}\right.$ 则 $0 \leqslant u, v \leqslant 1$, 且 $u+v=1$.
+因为
+$$
+\left\{\begin{array} { l } 
+{ \frac { u ^ { 2 } } { a } + \frac { v ^ { 2 } } { b } = \frac { 1 } { a + b } } \\
+{ u + v = 1 }
+\end{array} \Leftrightarrow \left\{\begin{array}{l}
+u=\frac{a}{a+b}, \\
+v=\frac{b}{a+b},
+\end{array}\right.\right.
+$$
+所以 $\frac{\sin ^{4 n} x}{a^{2 n-1}}+\frac{\cos ^{4 n} x}{b^{2 n-1}}=\frac{u^{2 n}}{a^{2 n-1}}+\frac{v^{2 n}}{b^{2 n-1}}=\frac{\left(\frac{a}{a+b}\right)^{2 n}}{a^{2 n-1}}+\frac{\left(\frac{b}{a+b}\right)^{2 n}}{b^{2 n-1}}$
+$$
+=\frac{a}{(a+b)^{2 n}}+\frac{b}{(a+b)^{2 n}}=\frac{1}{(a+b)^{2 n-1}} \text {. }
+$$
+证明二因为 $\frac{\sin ^4 x}{a}+\frac{\cos ^4 x}{b} \geqslant \frac{\left(\sin ^2 x+\cos ^2 x\right)^2}{a+b}=\frac{1}{a+b}$,
+当且仅当 $\frac{\sin ^2 x}{a}=\frac{\cos ^2 x}{b}$ 即 $\frac{\sin ^2 x}{a}=\frac{\cos ^2 x}{b}=\frac{\sin ^2 x+\cos ^2 x}{a+b}=\frac{1}{a+b}$ 时,等号成立.
+所以 $\sin ^2 x=\frac{a}{a+b}, \cos ^2 x=\frac{b}{a+b}$, 代入即可.
+评注证明二中我们利用不等式的方式来证明等式, 有时是迫不得已， 有时是出奇制胜.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6 求证: 对于任意 $\alpha \in(-\infty,+\infty),\left|2 \cos ^2 \alpha+a \cos \alpha+b\right| \leqslant 1$ 成立的充要条件是 $2 \cos ^2 \alpha+a \cos \alpha+b==\cos 2 \alpha$.
+%%<SOLUTION>%%
+证明:充分性: 当 $2 \cos ^2 \alpha+a \cos \alpha+b=\cos 2 \alpha$ 时, 显然有
+$$
+\left|2 \cos ^2 \alpha+a \cos \alpha+b\right| \leqslant 1 \text {. }
+$$
+必要性:若 $\left|2 \cos ^2 \alpha+a \cos \alpha+b\right| \leqslant 1$ 对于任意 $\alpha \in(-\infty,+\infty)$ 均成立, 则 
+(1) 当 $b>-1$ 时,
+$$
+2 \cos ^2 \alpha+a \cos \alpha+b=2 \cos ^2 \alpha-1+a \cos \alpha+(b+1) .
+$$
+由于 $b+1>0$, 取 $\alpha$, 使 $a \cos \alpha=|a|$, 则
+$$
+\left|2 \cos ^2 \alpha+a \cos \alpha+b\right|=1+|a|+(b+1)>1+|a| \geqslant 1,
+$$
+矛盾.
+(2) 当 $b<-1$ 时, 令 $\cos \alpha=0$, 则
+$$
+\left|2 \cos ^2 \alpha+a \cos \alpha+b\right|=|b|>1 \text {, }
+$$
+矛盾.
+由(1), (2) 可知: $b=-1$, 现取 $\alpha$, 使 $a \cos \alpha=|a|$, 则
+$$
+\left|2 \cos ^2 \alpha+a \cos \alpha+b\right|=1+|a| \geqslant 1,
+$$
+故 $|a|=0$, 即 $a=0$.
+这样 $2 \cos ^2 \alpha+a \cos \alpha+b=2 \cos ^2 \alpha-1=\cos 2 \alpha$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7 已知锐角 $\alpha 、 \beta$ 满足 $\sin ^2 \alpha+\sin ^2 \beta=\sin (\alpha+ \beta)$, 求证: $\alpha+\beta=\frac{\pi}{2}$.
+%%<SOLUTION>%%
+证明:一 
+$$
+\begin{aligned}
+& \sin ^2 \alpha+\sin ^2 \beta=\sin \alpha \cos \beta+\cos \alpha \sin \beta \\
+\Leftrightarrow & \sin \alpha(\sin \alpha-\cos \beta)=-\sin \beta(\sin \beta-\cos \alpha) \\
+\Leftrightarrow & \sin \alpha\left[\sin \alpha-\sin \left(90^{\circ}-\beta\right)\right]+\sin \beta\left[\sin \beta-\sin \left(90^{\circ}-\alpha\right)\right]=0 \\
+\Leftrightarrow & 2 \sin \alpha \cos \left(\frac{\alpha-\beta}{2}+\frac{\pi}{4}\right) \sin \left(\frac{\alpha+\beta}{2}-\frac{\pi}{4}\right)+2 \sin \beta \cos \left(\frac{\beta-\alpha}{2}+\frac{\pi}{4}\right)  \sin \left(\frac{\alpha+\beta}{2}-\frac{\pi}{4}\right)=0 \\
+\Leftrightarrow & \sin \left(\frac{\alpha+\beta}{2}-\frac{\pi}{4}\right)\left[\sin \alpha \cos \left(\frac{\alpha-\beta}{2}+\frac{\pi}{4}\right)+\sin \beta \cos \left(\frac{\beta-\alpha}{2}+\frac{\pi}{4}\right)\right]=0 .
+\end{aligned}
+$$
+不妨设 $\alpha \geqslant \beta$, 则 $\frac{\pi}{4}<\frac{\alpha-\beta}{2}+\frac{\pi}{4}<\frac{\pi}{2},-\frac{\pi}{4}<\frac{\beta-\alpha}{2}+\frac{\pi}{4}<\frac{\pi}{4}$.
+所以 $\cos \left(\frac{\alpha-\beta}{2}+\frac{\pi}{4}\right)>0, \cos \left(\frac{\beta-\alpha}{2}+\frac{\pi}{4}\right)>0$, 当然 $\sin \alpha>0, \sin \beta>0$.
+所以 $\sin \left(\frac{\alpha+\beta}{2}-\frac{\pi}{4}\right)=0$, 又因为 $-\frac{\pi}{4}<\frac{\alpha+\beta}{2}-\frac{\pi}{4}<\frac{\pi}{4}$, 所以 $\frac{\alpha+\beta}{2}- \frac{\pi}{4}=0$, 即 $\alpha+\beta=\frac{\pi}{2}$.
+证明二由(1)式知, $\sin \alpha-\cos \beta$ 与 $\cos \alpha-\sin \beta$ 同号或同为 0 .
+若 $\sin \alpha>\cos \beta$ 且 $\cos \alpha>\sin \beta$, 则 $1=\sin ^2 \alpha+\cos ^2 \alpha>\cos ^2 \beta+\sin ^2 \beta=1$, 矛盾.
+若 $\sin \alpha<\cos \beta$ 且 $\cos \alpha<\sin \beta$, 则 $1=\sin ^2 \alpha+\cos ^2 \alpha<\cos ^2 \beta+\sin ^2 \beta=$ 1 ,矛盾.
+故 $\cos \alpha=\sin \beta$ 且 $\sin \alpha=\cos \beta$, 又因为 $\alpha, \beta \in\left(0, \frac{\pi}{2}\right)$, 故 $\alpha+\beta=\frac{\pi}{2}$.
+评注本题是俄罗斯数学竞赛试题,有时正面不好证明的情况下, 可考虑反证法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8 已知 $\alpha 、 \beta$ 为锐角, 则 $\alpha+\beta=\frac{\pi}{2}$ 的充要条件为: $\frac{\sin ^4 \alpha}{\cos ^2 \beta}+\frac{\cos ^4 \alpha}{\sin ^2 \beta}=1$.
+%%<SOLUTION>%%
+证明:必要性: 因为 $\alpha+\beta=\frac{\pi}{2}$, 则 $\sin ^2 \alpha=\cos ^2 \beta, \cos ^2 \alpha=\sin ^2 \beta$, 则左边 $=\sin ^2 \alpha+\cos ^2 \alpha==1=$ 右边.
+充分性：
+证法一由 Cauchy 不等式知
+$$
+\frac{\sin ^4 \alpha}{\cos ^2 \beta}+\frac{\cos ^4 \alpha}{\sin ^2 \beta} \geqslant \frac{\left(\sin ^2 \alpha+\cos ^2 \alpha\right)^2}{\cos ^2 \beta+\sin ^2 \beta}=\frac{1^2}{1}=1 .
+$$
+当且仅当
+$$
+\frac{\sin ^2 \alpha}{\cos ^2 \beta}=\frac{\cos ^2 \alpha}{\sin ^2 \beta},
+$$
+即
+$$
+\sin ^2 \alpha \sin ^2 \beta-\cos ^2 \alpha \cos ^2 \beta=0,
+$$
+即 $(\cos \alpha \cos \beta-\sin \alpha \sin \beta)(\cos \alpha \cos \beta+\sin \alpha \sin \beta)=0$,
+即 $\cos (\alpha+\beta) \cos (\alpha-\beta)=0$ 时等号成立.
+又因为 $\alpha 、 \beta \in\left(0, \frac{\pi}{2}\right)$, 则 $-\frac{\pi}{2}<\alpha-\beta<\frac{\pi}{2}, 0<\alpha+\beta<\pi$, 所以 $\alpha+\beta= \frac{\pi}{2}$.
+证法二
+$$
+\begin{aligned}
+& \frac{\sin ^4 \alpha}{\cos ^2 \beta}+\cos ^2 \beta \geqslant 2 \sin ^2 \alpha, \\
+& \frac{\cos ^4 \alpha}{\sin ^2 \beta}+\sin ^2 \beta \geqslant 2 \cos ^2 \alpha,
+\end{aligned}
+$$
+相加得: $\frac{\sin ^4 \alpha}{\cos ^2 \beta}+\frac{\cos ^4 \alpha}{\sin ^2 \beta} \geqslant 1$, 所以 $\left\{\begin{array}{l}\sin ^2 \alpha=\cos ^2 \beta, \\ \cos ^2 \alpha=\sin ^2 \beta,\end{array}\right.$ 同上可得.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+推广1 已知 $\alpha, \beta \in\left(0, \frac{\pi}{2}\right)$, 则证明 $\alpha+\beta=\frac{\pi}{2}$ 的充要条件为: $\frac{\sin ^3 \alpha}{\cos \beta}+ \frac{\cos ^3 \alpha}{\sin \beta}=1$.
+%%<SOLUTION>%%
+证明:必要性显然.
+下证充分性：
+证法一 $\frac{\sin ^3 \alpha}{\cos \beta}+\frac{\cos ^3 \alpha}{\sin \beta}=\frac{\sin ^4 \alpha}{\cos \beta \sin \alpha}+\frac{\cos ^4 \alpha}{\sin \beta \cos \alpha} \geqslant \frac{\left(\sin ^2 \alpha+\cos ^2 \alpha\right)^2}{(\cos \beta \sin \alpha+\sin \beta \cos \alpha)} =\frac{1}{\sin (\alpha+\beta)} \geqslant 1$, 当且仅当 $\left\{\begin{array}{l}\frac{\sin ^2 \alpha}{\cos \beta \sin \alpha}=\frac{\cos ^2 \alpha}{\sin \beta \cos \alpha}, \\ \alpha+\beta=\frac{\pi}{2},\end{array}\right.$ 即 $\alpha+\beta=\frac{\pi}{2}$ 时取“=”. 
+证法二 $\frac{\sin ^3 \alpha}{\cos \beta}+\frac{\sin ^3 \alpha}{\cos \beta}+\cos ^2 \beta \geqslant 3 \sqrt[3]{\frac{\sin ^3 \alpha}{\cos \beta} \cdot \frac{\sin ^3 \alpha}{\cos \beta} \cdot \cos ^2 \beta}=3 \sin ^2 \alpha$, 同理, $\frac{\cos ^3 \alpha}{\sin \beta}+\frac{\cos ^3 \alpha}{\sin \beta}+\sin ^2 \beta \geqslant 3 \cos ^2 \alpha$, 两式相加即有: $\frac{\sin ^3 \alpha}{\cos \beta}+\frac{\cos ^3 \alpha}{\sin \beta} \geqslant \sin ^2 \alpha+\cos ^2 \alpha=1$, 当且仅当 $\left\{\begin{array}{l}\sin ^2 \alpha=\cos ^2 \beta, \\ \cos ^2 \alpha=\sin ^2 \beta,\end{array}\right.$ 即 $\alpha+\beta=\frac{\pi}{2}$ 时取“=”. 
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+推广2 已知 $\alpha, \beta \in\left(0, \frac{\pi}{2}\right)$, 则证明 $\alpha+\beta=\frac{\pi}{2}$ 的充要条件为:
+$$
+\frac{\sin ^{k+2} \alpha}{\cos ^k \beta}+\frac{\cos ^{k+2} \alpha}{\sin ^k \beta}=1, k \in \mathbf{N}^* .
+$$
+%%<SOLUTION>%%
+证明:必要性显然.
+下证充分性：
+证法一 (i)当 $k=2 m, m \in \mathbf{N}^*$ 时,
+$$
+\begin{aligned}
+& \frac{\sin ^{2 m+2} \alpha}{\cos ^{2 m} \beta}+\underbrace{\cos ^2 \beta+\cos ^2 \beta+\cdots+\cos ^2 \beta}_{m 个} \\
+\geqslant & (m+1) \cdot \sqrt[m+1]{\frac{\sin ^{2 m+2} \alpha}{\cos ^{2 m} \beta} \cdot \underbrace{\cos ^2 \beta \cdots \cos ^2 \beta}_{m 个}} \\
+= & (m+1) \sin ^2 \alpha ; \\
+& \frac{\cos ^{2 m+2} \alpha}{\sin ^{2 m} \beta}+\underbrace{\sin ^2 \beta+\sin ^2 \beta+\cdots+\sin ^2 \beta}_{m 个} \\
+\geqslant & (m+1) \cdot \sqrt[m+1]{\frac{\cos ^{2 m+2} \alpha}{\sin ^{2 m} \beta} \cdot \underbrace{\sin ^2 \beta \cdot \sin ^2 \beta \cdots \sin ^2 \beta}_{m 个}} \\
+= & (m+1) \cos ^2 \alpha,
+\end{aligned}
+$$
+两式相加得: $\frac{\sin ^{2 m+2} \alpha}{\cos ^{2 m} \beta}+\frac{\cos ^{2 m+2} \alpha}{\sin ^{2 m} \beta} \geqslant 1$.
+当且仅当 $\alpha+\beta=\frac{\pi}{2}$ 时取 “ $=$ ”.
+(ii) 当 $k=2 m-1, m \in \mathbf{N}^*$ 时,
+$$
+\begin{aligned}
+& \frac{\sin ^{2 m+1} \alpha}{\cos ^{2 m-1} \beta}+\frac{\sin ^{2 m+1} \alpha}{\cos ^{2 m-1} \beta}+\underbrace{\cos ^2 \beta+\cdots+\cos ^2 \beta}_{2 m-1} \\
+\geqslant & (2 m+1) \cdot \sqrt[2 m+1]{\frac{\sin ^{2 m+1} \alpha}{\cos ^{2 m-1} \beta} \cdot \frac{\sin ^{2 m+1} \alpha}{\cos ^{2 m-1} \beta} \cdot \underbrace{\cos ^2 \beta \cdots \cos ^2 \beta}_{2 m-1}} \\
+= & (2 m+1) \cdot \sin ^2 \alpha  ;\\
+& \frac{\cos ^{2 m+1} \alpha}{\sin ^{2 m-1} \beta}+\frac{\cos ^{2 m+1} \alpha}{\sin ^{2 m-1} \beta} +(\underbrace{\sin ^2 \beta+\cdots+\sin ^2 \beta}_{2 m-1} \geqslant(2 m+1) \cdot \cos ^2 \alpha,
+\end{aligned}
+$$
+两式相加得: $\frac{\sin ^{2 m+1} \alpha}{\cos ^{2 m-1} \beta}+\frac{\cos ^{2 m+1} \alpha}{\sin ^{2 m-1} \beta} \geqslant 1$.
+当且仅当 $\alpha+\beta=\frac{\pi}{2}$ 时取 “ $=$ ”.
+证法二 $\frac{\sin ^{k+2} \alpha}{\cos ^k \beta}+\underbrace{\cos \beta \sin \alpha+\cdots+\cos \beta \sin \alpha}_{k \uparrow} \geqslant(k+1) \sin ^2 \alpha\left(A_{k+1} \geqslant G_{k+1}\right)$;
+$$
+\frac{\cos ^{k+2} \alpha}{\sin ^k \beta}+\underbrace{\cos \alpha \sin \beta+\cdots+\cos \alpha \sin \beta}_{k \uparrow} \geqslant(k+1) \cos ^2 \alpha\left(A_{k+1} \geqslant G_{k+1}\right),
+$$
+两式相加得:
+$$
+\frac{\sin ^{k+2} \alpha}{\cos ^k \beta}+\frac{\cos ^{k+2} \alpha}{\sin ^k \beta} \geqslant(k+1)-k \sin (\alpha+\beta) \geqslant 1 .
+$$
+当且仅当 $\alpha+\beta=\frac{\pi}{2}$ 时取 “ $=$”.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+推广3 已知 $\alpha, \beta \in\left(0, \frac{\pi}{2}\right)$, 求证: $\alpha+\beta=\frac{\pi}{2}$ 的充要条件为 $\frac{\sin ^4 \alpha}{\cos ^2 \beta}+ \frac{\sin ^4 \beta}{\cos ^2 \alpha}=1$.
+%%<SOLUTION>%%
+证明:必要性显然.
+下证充分性:
+证法一令 $\sin ^2 \alpha=a, \cos ^2 \beta=b, a, b \in(0,1)$, 则
+$$
+\begin{aligned}
+1 & =\frac{a^2}{b}+\frac{(1-b)^2}{1-a} \Leftrightarrow b(1-a)=a^2-a^3+b^3-2 b^2+b \\
+& \Leftrightarrow\left(b^3-a^3\right)-\left(b^2-a^2\right)-\left(b^2-a b\right)=0 \\
+& \Leftrightarrow(b-a)\left(a^2+a b+b^2-2 b-a\right)=0,
+\end{aligned}
+$$
+因为 $a, b \in(0,1)$, 所以 $a>a^2, b>b^2, b>a b$.
+因为
+$$
+a^2+a b+b^2-2 b-a<0,
+$$
+故 $b=a$, 即 $\sin ^2 \alpha=\cos ^2 \beta$, 所以 $\alpha+\beta=\frac{\pi}{2}$.
+证法二 
+$$
+\begin{aligned}
+0 & =\frac{\sin ^4 \alpha}{\cos ^2 \beta}+\frac{\sin ^4 \beta}{\cos ^2 \alpha}-1=\frac{\sin ^4 \alpha}{\cos ^2 \beta}+\frac{\sin ^4 \beta}{\cos ^2 \alpha}-\left(\cos ^2 \beta+\sin ^2 \beta\right) \\
+& =\frac{\sin ^4 \alpha-\cos ^4 \beta}{\cos ^2 \beta}+\frac{\sin ^2 \beta\left(\sin ^2 \beta-\cos ^2 \alpha\right)}{\cos ^2 \alpha}, \quad \quad (1)
+\end{aligned}
+$$
+因为 $\alpha, \beta \in\left(0, \frac{\pi}{2}\right)$, 所以 $\alpha+\beta \in(0, \pi)$.
+若 $0<\alpha+\beta<\frac{\pi}{2}$, 则
+$\cos \alpha>\cos \left(\frac{\pi}{2}-\beta\right)=\sin \beta>0$, 所以 $\cos ^2 \alpha>\sin ^2 \beta$;
+$\cos \beta>\cos \left(\frac{\pi}{2}-\beta\right)=\sin \beta>0$, 所以 $\cos ^4 \beta>\sin ^4 \alpha$.
+(1)式右边 $<0$ 矛盾.
+同理, 若 $\frac{\pi}{2}<\alpha+\beta<\pi$, 则(1)式右边 $>0$, 矛盾.
+如证法二, 直接可将结论拓展到:
+$$
+\frac{\sin ^{k+2} \alpha}{\cos ^k \beta}+\frac{\sin ^{k+2} \beta}{\cos ^k \alpha}=1, k>0 .
+$$
+证法二也可证明例 8 的充分性:
+事实上: $\frac{\sin ^4 \alpha}{\cos ^2 \beta}+\frac{\cos ^4 \alpha}{\sin ^2 \beta}=1 \Leftrightarrow \frac{\sin ^4 \alpha}{\cos ^2 \beta}+\frac{\cos ^4 \alpha}{\sin ^2 \beta}=\sin ^2 \alpha+\cos ^2 \alpha$
+$$
+\Leftrightarrow \frac{\sin ^2 \alpha\left(\sin ^2 \alpha-\cos ^2 \beta\right)}{\cos ^2 \beta}+\frac{\cos ^2 \alpha\left(\cos ^2 \alpha-\sin ^2 \beta\right)}{\sin ^2 \beta}=0 . \quad\quad (*)
+$$
+因为 $\alpha, \beta \in(0, \pi)$, 若 $\alpha+\beta \neq \frac{\pi}{2}$, 则 $0<\alpha+\beta<\frac{\pi}{2}$, 或 $\frac{\pi}{2}<\alpha+\beta<\pi$.
+若 $0<\alpha+\beta<\frac{\pi}{2}$, 则 $\cos \alpha>\sin \beta>0, \cos \beta>\sin \alpha>0$, 所以
+$$
+\cos ^2 \alpha>\sin ^2 \beta>0, \sin ^2 \alpha<\cos ^2 \beta \text {. }
+$$
+即
+$$
+\frac{\sin ^2 \alpha}{\cos ^2 \beta}<1, \frac{\cos ^2 \alpha}{\sin \beta}>1
+$$
+所以 $\frac{\sin ^2 \alpha\left(\sin ^2 \alpha-\cos ^2 \beta\right)}{\cos ^2 \beta}>\sin ^2 \alpha-\cos ^2 \beta$,
+$$
+\frac{\cos ^2 \alpha\left(\cos ^2 \alpha-\sin ^2 \beta\right)}{\sin ^2 \beta}>\cos ^2 \alpha-\sin ^2 \beta
+$$
+$\sin ^2 \beta=0$.
+这与 $(*)$ 矛盾.
+同理,若 $\frac{\pi}{2}<\alpha+\beta<\pi,(*)$ 式左边大于 0 ,矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9 计算下列各式的值:
+(1) 已知 $\alpha 、 \beta$ 为锐角, $\cos \alpha=\frac{1}{7}, \sin (\alpha+\beta)=\frac{5 \sqrt{3}}{14}$, 求 $\cos \beta$;
+(2) 若 $\tan \alpha 、 \tan \beta$ 是方程 $x^2+b x+c=0(b \neq 0)$ 的两根, 求 $\sin ^2(\alpha+ \beta)+b \sin (\alpha+\beta) \cos (\alpha+\beta)+c \cos ^2(\alpha+\beta)$ 的值.
+%%<SOLUTION>%%
+分析:充分挖掘隐含条件, 正确估算角的范围, 计算第 (1) 题.
+恰当应用公式,分类讨论求第 $(2)$ 题.
+解 (1) 因为 $\alpha 、 \beta$ 均为锐角, $\sin (\alpha+\beta)=\frac{5 \sqrt{3}}{14}<\frac{\sqrt{3}}{2}$. 所以 $0<\alpha+\beta< \frac{\pi}{3}$ 或 $\frac{2 \pi}{3}<\alpha+\beta<\pi$, 而 $\cos \alpha=\frac{1}{7}<\frac{1}{2}$, 所以 $\frac{\pi}{3}<\alpha<\frac{\pi}{2}$, 从而 $\alpha+\beta$ 为钝角, $\cos (\alpha+\beta)=-\sqrt{1-\sin ^2(\alpha+\beta)}=-\sqrt{1-\left(\frac{5 \sqrt{3}}{14}\right)^2}=-\frac{11}{14}, \sin \alpha=\frac{4 \sqrt{3}}{7}$.
+故 $\cos \beta=\cos (\alpha+\beta-\alpha)=\cos (\alpha+\beta) \cos \alpha+\sin (\alpha+\beta) \sin \alpha$
+$$
+=-\frac{11}{14} \times \frac{1}{7}+\frac{5 \sqrt{3}}{14} \times \frac{4 \sqrt{3}}{7}=\frac{1}{2} .
+$$
+(2) 由已知条件,得 $\tan \alpha+\tan \beta=-b, \tan \alpha \cdot \tan \beta=c$. 所以当 $c \neq 1$ 时,
+$$
+\begin{gathered}
+\tan (\alpha+\beta)=\frac{\tan \alpha+\tan \beta}{1-\tan \alpha \cdot \tan \beta}=\frac{b}{c-1} . \\
+\sin ^2(\alpha+\beta)+b \sin (\alpha+\beta) \cos (\alpha+\beta)+c \cos ^2(\alpha+\beta) \\
+=\frac{\sin ^2(\alpha+\beta)+b \sin (\alpha+\beta) \cos (\alpha+\beta)+c \cos ^2(\alpha+\beta)}{\sin ^2(\alpha+\beta)+\cos ^2(\alpha+\beta)} \\
+=\frac{\tan ^2(\alpha+\beta)+b \tan (\alpha+\beta)+c}{\tan ^2(\alpha+\beta)+1}=\frac{\left(\frac{b}{c-1}\right)^2+\frac{b^2}{c-1}+c}{1+\left(\frac{b}{c-1}\right)^2}=c .
+\end{gathered}
+$$
+当 $c=1$ 时, $\tan \alpha \cdot \tan \beta=1$, 此时, $\alpha+\beta=k \pi+\frac{\pi}{2}(k \in \mathbf{Z}), \cos (\alpha+ \beta)=0, \sin (\alpha+\beta)= \pm 1$, 原式 $=1$.
+评注本题第 (1) 题如不能正确估计, 会出现 $\cos (\alpha+\beta)= \pm \frac{11}{14}$, 从而 $\cos \beta=\frac{1}{2}$ 或 $\frac{71}{98}$, 其原因是未能就 $\sin (\alpha+\beta)=\frac{5 \sqrt{3}}{14}$ 深人挖掘 $\alpha+\beta$ 的取值范围;
+第(2) 题容易忽略 $\tan (\alpha+\beta)=\frac{\tan \alpha+\tan \beta}{1-\tan (\alpha+\beta)}$ 中 $\tan \alpha \cdot \tan \beta \neq 1$ 这一隐含的约束条件, 即 $\tan (\alpha+\beta)$ 不存在的情形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10 已知 $\sin \alpha+\sin \beta=\frac{3}{5}, \cos \alpha+\cos \beta=\frac{4}{5}$, 试求 $\cos (\alpha-\beta)$ 和 $\sin (\alpha+\beta)$ 的值.
+%%<SOLUTION>%%
+分析:注意所求式子中角与已知条件中角的关系, 将已知条件平方相加可出现结论中的角 $\alpha-\beta$, 将已知条件和差化积可出现结论中的角 $\frac{\alpha+\beta}{2}$, 再用万能公式求 $\sin (\alpha+\beta)$.
+解由
+$$
+\begin{aligned}
+& \sin \alpha+\sin \beta=\frac{3}{5}, \quad\quad(1) \\
+& \cos \alpha+\cos \beta=\frac{4}{5}, \quad\quad(2) 
+\end{aligned}
+$$
+$(1)^2+(2)^2$ 得
+$$
+(\sin \alpha+\sin \beta)^2+(\cos \alpha+\cos \beta)^2=\left(\frac{3}{5}\right)^2+\left(\frac{4}{5}\right)^2,
+$$
+即
+$$
+2+2 \sin \alpha \sin \beta+2 \cos \alpha \cos \beta=1,
+$$
+所以
+$$
+\cos (\alpha-\beta)=-\frac{1}{2} .
+$$
+由(1)和差化积得
+$$
+2 \sin \frac{\alpha+\beta}{2} \cos \frac{\alpha-\beta}{2}=\frac{3}{5} \quad\quad(3) 
+$$
+由(2)和差化积得
+$$
+2 \cos \frac{\alpha+\beta}{2} \cos \frac{\alpha-\beta}{2}=\frac{4}{5} . \quad\quad(4) 
+$$
+于是由 $\frac{(3)}{(4)}$ 得 $\tan \frac{(\alpha+\beta)}{2}=\frac{3}{4}$. 故
+$$
+\sin (\alpha+\beta)=\frac{2 \tan \frac{\alpha+\beta}{2}}{1+\tan ^2 \frac{\alpha+\beta}{2}}=\frac{2 \times \frac{3}{4}}{1+\left(\frac{3}{4}\right)^2}=\frac{24}{25} .
+$$
+评注形如 $\sin \alpha+\sin \beta=a, \cos \alpha+\cos \beta=b$ 的三角函数求值题, 主要是采用题中两种方法.
+当然, 还可作如下变换: 由 $(1 )^2+(2)^2$ 得 $\cos (\alpha-\beta)= -\frac{1}{2}$, 由 $(2)^2-(1)^2$ 得 $\cos 2 \alpha+\cos 2 \beta+2 \cos (\alpha+\beta)=\frac{7}{25}$.
+即 $2 \cos (\alpha+\beta) \cos (\alpha-\beta)+2 \cos (\alpha+\beta)=\frac{7}{25}$, 从而 $\cos (\alpha+\beta)=\frac{7}{25}$.
+由$(1) \times(2)$得 $\sin (\alpha+\beta)+\frac{1}{2} \sin 2 \alpha+\frac{1}{2} \sin 2 \beta=\frac{12}{25}$, 从而 $\sin (\alpha+\beta)+ \sin (\alpha+\beta) \cos (\alpha-\beta)=\frac{12}{25}$, 可得 $\sin (\alpha+\beta)=\frac{24}{25}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11 已知 $0<\alpha<\beta<\gamma<2 \pi$, 且 $\sin \alpha+\sin \beta+\sin \gamma=0, \cos \alpha+ \cos \beta+\cos \gamma=0$. (1) 求 $\beta-\alpha$ 的值; (2) 求证: $\cos ^2 \alpha+\cos ^2 \beta+\cos ^2 \gamma$ 为定值.
+%%<SOLUTION>%%
+分析:通过消元法将 $\gamma$ 消去, 得关于 $\alpha 、 \beta$ 的关系式, 从而求得 $\beta-\alpha$ 的某一三角函数值, 进而求出 $\beta-\alpha$ 的值; 根据轮换对称式的性质, 求得 $\alpha 、 \beta 、 \gamma$ 三者关系,最后计算 $\cos ^2 \alpha+\cos ^2 \beta+\cos ^2 \gamma$ 之值.
+解 (1) 由条件得 $\sin \alpha+\sin \beta=-\sin \gamma, \cos \alpha+\cos \beta=-\cos \gamma$, 两式平方相加得 $2+2 \cos (\alpha-\beta)=1$, 于是 $\cos (\alpha-\beta)=-\frac{1}{2}$. 因为 $0<\alpha<\beta<2 \pi$, 所以 $\beta-\alpha=\frac{2 \pi}{3}$ 或 $\frac{4 \pi}{3}$.
+但是, 当 $\beta-\alpha=\frac{4 \pi}{3}$ 时, 根据题中等式, 同理可得 $\gamma-\beta=\frac{2 \pi}{3}$ 或 $\frac{4 \pi}{3}$. 从而 $\gamma \geqslant \beta+\frac{2 \pi}{3}=\alpha+\frac{4 \pi}{3}+\frac{2 \pi}{3}=\alpha+2 \pi>2 \pi$, 这与题设矛盾, 所以 $\beta-\alpha=\frac{2 \pi}{3}$.
+(2) 由(1)可以推知: $\gamma-\beta=\frac{2 \pi}{3}, \beta-\alpha=\frac{2 \pi}{3}$, 所以
+$$
+\begin{aligned}
+& \cos ^2 \alpha+\cos ^2 \beta+\cos ^2 \gamma=\cos ^2 \alpha+\cos ^2\left(\frac{2 \pi}{3}+\alpha\right)+\cos ^2\left(\frac{4 \pi}{3}+\alpha\right) \\
+= & \cos ^2 \alpha+\left(\cos \frac{2 \pi}{3} \cos \alpha-\sin \frac{2 \pi}{3} \sin \alpha\right)^2+\left(\cos \frac{4 \pi}{3} \cos \alpha-\sin \frac{4 \pi}{3} \sin \alpha\right)^2 \\
+= & \cos ^2 \alpha+\left(\frac{1}{2} \cos \alpha+\frac{\sqrt{3}}{2} \sin \alpha\right)^2+\left(-\frac{1}{2} \cos \alpha+\frac{\sqrt{3}}{2} \sin \alpha\right)^2 \\
+= & \cos ^2 \alpha+\frac{1}{4} \cos ^2 \alpha+\frac{\sqrt{3}}{2} \sin \alpha \cos \alpha+\frac{3}{4} \sin ^2 \alpha +\frac{1}{4} \cos ^2 \alpha-\frac{\sqrt{3}}{2} \sin \alpha \cos \alpha+\frac{3}{4} \sin ^2 \alpha \\
+= & \frac{3}{2} \cos ^2 \alpha+\frac{3}{2} \sin ^2 \alpha=\frac{3}{2} .
+\end{aligned}
+$$
+评注本题容易出现的错误是认为 $\beta-\alpha$ 可为 $\frac{4 \pi}{3}$. 其实通过估算, 可发现矛盾.
+当我们学习了平面向量以后, 还可通过构造法证明本题.
+即在平面直角坐标系中, 设三点 $A(\cos \alpha, \sin \alpha), B(\cos \beta, \sin \beta), C(\cos \gamma, \sin \gamma)$, 则 $\triangle A B C$ 的三个顶点都在以 $O$ 为圆心的单位圆上, 又根据三角形重心坐标公式得 $x_G=\frac{1}{3}(\cos \alpha+\cos \beta+\cos \gamma)=0, y_G=\frac{1}{3}(\sin \alpha+\sin \beta+\sin \gamma)=0$, 即重心 $G$ 与外心 $O$ 重合, 于是 $\triangle A B C$ 为单位圆的内接正三角形, 从而 $\gamma-\beta= \beta-\alpha=\frac{2 \pi}{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12 证明对所有 $n \geqslant 2$ 的自然数 $n$, 有等式
+$$
+\prod_{i=1}^n \tan \left[\frac{\pi}{3}\left(1+\frac{3^i}{3^n-1}\right)\right]=\prod_{i=1}^n \cot \left[\frac{\pi}{3}\left(1-\frac{3^i}{3^n-1}\right)\right]
+$$
+这里 $\prod_{k=1}^n k=1 \times 2 \times \cdots \times n$.
+%%<SOLUTION>%%
+证明:令 $A_i=\tan \left[\frac{\pi}{3}\left(1+\frac{3^i}{3^n-1}\right)\right], B_i=\tan \left[\frac{\pi}{3}\left(1-\frac{3^i}{3^n-1}\right)\right]$, 因为 $\tan 3 \theta=\tan \theta \tan \left(\frac{\pi}{3}-\theta\right) \tan \left(\frac{\pi}{3}+\theta\right)$, 取 $\theta=\frac{\pi}{3}\left(1+\frac{3^i}{3^n-1}\right)$, 得
+$$
+\tan \pi\left(1+\frac{3^i}{3^n-1}\right)=\tan \frac{\pi}{3}\left(1+\frac{3^i}{3^n-1}\right) \tan \left[\frac{\pi}{3}-\frac{\pi}{3}\left(1+\frac{3^i}{3^n-1}\right)\right] \tan \left[\frac{\pi}{3}+\frac{\pi}{3}\left(1+\frac{3^i}{3^n-1}\right)\right],
+$$
+化简得 $\tan \left[\frac{\pi}{3}\left(1+\frac{3^i}{3^n-1}\right)\right] \cdot \tan \left[\frac{\pi}{3}\left(1-\frac{3^i}{3^n-1}\right)\right]=1$, 于是 $\prod_{i=1}^n A_i B_i=1$, 变形即得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13 证明下列三角恒等式:
+(1) $\frac{1}{\sin 2 x}+\frac{1}{\sin 4 x}+\frac{1}{\sin 8 x}+\cdots+\frac{1}{\sin 2^n x}=\cot x-\cot 2^n x$;
+(2) $\frac{1}{2} \tan \frac{x}{2}+\frac{1}{2^2} \tan \frac{x}{2^2}+\cdots+\frac{1}{2^n} \tan \frac{x}{2^n}=\frac{1}{2^n} \cot \frac{x}{2^n}-\cot x$.
+%%<SOLUTION>%%
+分析:利用数列知识证明三角恒等式.
+证明 (1) 记 $a_n=\cot x-\cot 2^n x$, 则
+$$
+\begin{gathered}
+a_1=\cot x-\cot 2 x=\frac{\cos x}{\sin x}-\frac{\cos 2 x}{\sin 2 x}=\frac{2 \cos ^2 x-\cos 2 x}{2 \sin x \cos x}=\frac{1}{\sin 2 x}, \\
+\begin{aligned}
+a_{k+1}-a_k= & \left(\cot x-\cot 2^{k+1} x\right)-\left(\cot x-\cot 2^k x\right) \\
+= & \cot 2^k x-\cot 2^{k+1} x=\frac{\cos 2^k x}{\sin 2^k x}-\frac{\cos 2^{k+1} x}{\sin 2^{k+1} x} \\
+= & \frac{2\left(\cos 2^k x\right)^2-\cos 2^{k+1} x}{2 \sin 2^k x \cdot \cos 2^k x}=\frac{1}{\sin 2^{k+1} x} .
+\end{aligned}
+\end{gathered}
+$$
+于是左边 $=a_1+\left(a_2-a_1\right)+\left(a_3-a_2\right)+\cdots+\left(a_n-a_{n-1}\right)$
+$$
+=a_n=\cot x-\cot 2^n x \text {. }
+$$
+(2) 记 $a_n=\frac{1}{2^n} \cot \frac{x}{2^n}-\cot x$, 则
+$$
+\begin{aligned}
+a_1=\frac{1}{2} \cot \frac{x}{2}-\cot x=\frac{1}{2 \tan \frac{x}{2}}-\frac{1-\tan ^2 \frac{x}{2}}{2 \tan \frac{x}{2}}=\frac{1}{2} \tan \frac{x}{2}, \\
+a_{k+1}-a_k=\left(\frac{1}{2^{k+1}} \cot \frac{x}{2^{k+1}}-\cot x\right)-\left(\frac{1}{2^k} \cot \frac{x}{2^k}-\cot x\right) \\
+=\frac{1}{2^{k+1}}\left(\cot \frac{x}{2^{k+1}}-2 \cot \frac{x}{2^k}\right) \\
+=\frac{1}{2^{k+1}} \cdot\left(\frac{1}{\tan \frac{x}{2^{k+1}}}-2 \times \frac{1-\tan ^2 \frac{x}{2^{k+1}}}{2 \cdot \tan \frac{x}{2^{k+1}}}\right)=\frac{1}{2^{k+1}} \cdot \tan \frac{x}{2^{k+1}},
+\end{aligned}
+$$
+所以左边 $=a_1+\left(a_2-a_1\right)+\left(a_3-a_2\right)+\cdots+\left(a_n-a_{n-1}\right)$
+$$
+=a_n=\text { 右边.
+}
+$$
+故原等式成立.
+评注本题的左边都是同名三角函数, 前面的系数以及角的度数是有一定规律的,并且与自然数有关,因此证明的思路是: 记 $a_n=$ 右边, 然后求出 $a_1$ 、 $a_{k+1}-a_k$ 或 $\frac{a_{k+1}}{a_k}$, 即可找到等式左边的每一项与 $a_n$ 的关系, 最后把它们代入等式的左边,再进行计算, 就得到 $a_n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14 (1) 设 $n$ 是一个大于 3 的素数, 求 $\left(1+2 \cos \frac{2 \pi}{n}\right)\left(1+2 \cos \frac{4 \pi}{n}\right)\left(1+ 2 \cos \frac{6 \pi}{n}\right) \cdots\left(1+2 \cos \frac{2 n \pi}{n}\right)$ 的值;
+(2) 设 $n$ 是一个大于 3 的自然数, 求 $\left(1+2 \cos \frac{\pi}{n}\right)\left(1+2 \cos \frac{2 \pi}{n}\right)\left(1+ 2 \cos \frac{3 \pi}{n}\right) \cdots\left(1+2 \cos \frac{(n-1) \pi}{n}\right)$ 的值.
+%%<SOLUTION>%%
+分析:由题中 $\cos \frac{2 k \pi}{n}, \cos \frac{k \pi}{n}$, 可联系到 $n$ 次单位根和 $2 n$ 次单位根.
+解 (1) 记 $w=\mathrm{e}^{\frac{2 \pi i}{n}}$, 则 $w^n=1, w^{-\frac{n}{2}}=\mathrm{e}^{-\pi i}=-1,2 \cos \frac{2 k \pi}{n}=w^k+w^{-k}$.
+$$
+\begin{aligned}
+\prod_{k=1}^n\left(1+2 \cos \frac{2 k \pi}{n}\right) & =\prod_{k=1}^n\left(1+w^k+w^{-k}\right) \\
+& =\prod_{k=1}^n w^{-k}\left(w^k+w^{2 k}+1\right) \\
+& =w^{-\frac{n(n+1)}{2}} \cdot 3 \prod_{k=1}^{n-1} \frac{1-w^{3 k}}{1-w^k} \\
+& =(-1)^{n+1} \cdot 3 \prod_{k=1}^{n-1} \frac{1}{1-w^{3 k}} .
+\end{aligned}
+$$
+因为 $n$ 为大于 3 的索数, 所以 $(-1)^{n+1}=1$, 且当 $k=1,2, \cdots, n-1$ 时, $3 k$ 取遍模 $n$ 的剩余类, 从而
+$$
+\prod_{k=1}^{n-1}\left(1-w^{3 k}\right)=\prod_{k=1}^{n-1}\left(1-w^k\right),
+$$
+于是
+$$
+\prod_{k=1}^n\left(1+2 \cos \frac{2 k \pi}{n}\right)=3 .
+$$
+(2) $Z^{2 n}=1$ 的 $2 n$ 个根是 $\pm 1$ 和 $Z_k=\mathrm{e}^{\frac{k \pi \pi j}{n}}(k=1,2, \cdots, n-1)$, 所以
+$$
+\begin{aligned}
+Z^{2 n}-1 & =\left(Z^2-1\right) \prod_{k=1}^{n-1}\left(Z-\mathrm{e}^{\frac{k \pi i}{n}}\right)\left(Z-\mathrm{e}^{-\frac{k \pi i}{n}}\right) \\
+& =\left(Z^2-1\right) \prod_{k=1}^{n-1}\left(Z^2+1-2 Z \cos \frac{k \pi}{n}\right) .
+\end{aligned}
+$$
+取 $Z=\mathrm{e}^{\frac{2 \pi i}{3}}$, 则 $Z^2+1=-Z$, 于是有
+$$
+\begin{aligned}
+& Z^{2 n}-1=\left(Z^2-1\right)(-Z)^{n-1} \prod_{k=1}^{n-1}\left(1+2 \cos \frac{k \pi}{n}\right) . \\
+= & \prod_{k=1}^{n-1}\left(1+2 \cos \frac{k \pi}{n}\right) \\
+= & \frac{Z^{2 n}-1}{\left(Z^2-1\right)(-Z)^{n-1}} \\
+= & \left\{\begin{array}{l}
+0, n=3 k \\
+\frac{Z^2-1}{\left(Z^2-1\right)(-Z)^{3 k}}=(-1)^{3 k}=(-1)^{n-1}, n=3 k+1, \\
+\frac{Z-1}{\left(Z^2-1\right)(-Z)^{3 k+1}}=\frac{(-1)^{3 k+1}}{(Z+1) Z}=\frac{(-1)^{3 k+1}}{-1}=(-1)^n, n=3 k+2,
+\end{array}\right.
+\end{aligned}
+$$
+其中 $k$ 为自然数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例15 求值: $\cos \frac{\pi}{13}+\cos \frac{3 \pi}{13}+\cos \frac{9 \pi}{13}$.
+%%<SOLUTION>%%
+解:设
+$$
+\begin{aligned}
+& x=\cos \frac{\pi}{13}+\cos \frac{3 \pi}{13}+\cos \frac{9 \pi}{13}, \\
+& y=\cos \frac{5 \pi}{13}+\cos \frac{7 \pi}{13}+\cos \frac{11 \pi}{13},
+\end{aligned}
+$$
+则
+$$
+\begin{aligned}
+x+y & =\cos \frac{\pi}{13}+\cos \frac{3 \pi}{13}+\cos \frac{5 \pi}{13}+\cos \frac{7 \pi}{13}+\cos \frac{9 \pi}{13}+\cos \frac{11 \pi}{13} \\
+& =\frac{1}{2 \sin \frac{\pi}{13}}\left[2 \sin \frac{\pi}{13}\left(\cos \frac{\pi}{13}+\cos \frac{3 \pi}{13}+\cdots+\cos \frac{11 \pi}{13}\right)\right] \\
+& =\frac{1}{2 \sin \frac{\pi}{13}}\left[\sin \frac{2 \pi}{13}+\left(\sin \frac{4 \pi}{13}-\sin \frac{2 \pi}{13}\right)+\cdots+\left(\sin \frac{12 \pi}{13}-\sin \frac{10 \pi}{13}\right)\right] \\
+& =\frac{\sin \frac{12 \pi}{13}}{2 \sin \frac{ \pi}{13}}=\frac{1}{2}, \\
+x \cdot y & =\left(\cos \frac{\pi}{13}+\cos \frac{3 \pi}{13}+\cos \frac{9 \pi}{13}\right)\left(\cos \frac{5 \pi}{13}+\cos \frac{7 \pi}{13}+\cos \frac{11 \pi}{13}\right) \\
+&=  -\frac{3}{2}\left(\cos \frac{\pi}{13}-\cos \frac{2 \pi}{13}+\cos \frac{3 \pi}{13}-\cos \frac{4 \pi}{13}+\cos \frac{5 \pi}{13}-\cos \frac{6 \pi}{13}\right) \\
+& =-\frac{3}{2}\left(\cos \frac{\pi}{13}+\cos \frac{3 \pi}{13}+\cos \frac{5 \pi}{13}+\cos \frac{7 \pi}{13}+\cos \frac{9 \pi}{13}+\cos \frac{11 \pi}{13}\right) \\
+& =-\frac{3}{4} .
+\end{aligned}
+$$
+故 $x 、 y$ 是方程 $t^2-\frac{1}{2} t-\frac{3}{4}=0$ 的两根, $t_{1,2}=\frac{1 \pm \sqrt{13}}{4}$.
+又由于 $x>0$, 故 $x=\frac{1+\sqrt{13}}{4}$.
+即
+$$
+\cos \frac{\pi}{13}+\cos \frac{3 \pi}{13}+\cos \frac{5 \pi}{13}=\frac{1+\sqrt{13}}{4} .
+$$
+评注此例中配对的式子与上例不同, 当然也可采用自配对方式.
+$$
+\begin{aligned}
+x^2= & \left(\cos \frac{\pi}{13}+\cos \frac{3 \pi}{13}+\cos \frac{9 \pi}{13}\right)^2 \\
+= & \cos ^2 \frac{\pi}{13}+\cos ^2 \frac{3 \pi}{13}+\cos ^2 \frac{9 \pi}{13}+2 \cos \frac{\pi}{13} \cos \frac{3 \pi}{13} +2 \cos \frac{3 \pi}{13} \cos \frac{9 \pi}{13}+2 \cos \frac{9 \pi}{13} \cos \frac{\pi}{13} \\
+= & \frac{1}{2}\left(1+\cos \frac{2 \pi}{13}\right)+\frac{1}{2}\left(1+\cos \frac{6 \pi}{13}\right)+\frac{1}{2}\left(1+\cos \frac{18 \pi}{13}\right)  +\cos \frac{4 \pi}{13}+\cos \frac{2 \pi}{13}+\cos \frac{12 \pi}{13}+\cos \frac{6 \pi}{13}+\cos \frac{10 \pi}{13}+\cos \frac{8 \pi}{13} \\
+= & \frac{3}{2}-\frac{1}{2}\left(\cos \frac{11 \pi}{13}+\cos \frac{7 \pi}{13}+\cos \frac{5 \pi}{13}\right)  -\left(\cos \frac{11 \pi}{13}+\cos \frac{9 \pi}{13}+\cos \frac{7 \pi}{13}+\cos \frac{\pi}{13}+\cos \frac{5 \pi}{13}+\cos \frac{3 \pi}{13}\right),
+\end{aligned}
+$$
+又因为
+$$
+\cos \frac{11 \pi}{13}+\cos \frac{7 \pi}{13}+\cos \frac{5 \pi}{13}=\frac{1}{2}-\left(\cos \frac{9 \pi}{13}+\cos \frac{3 \pi}{13}+\cos \frac{\pi}{13}\right),
+$$
+从而
+$$
+x^2=\frac{3}{2}-\frac{1}{2}\left(\frac{1}{2}-x\right)-\frac{1}{2}, x=\frac{1 \pm \sqrt{13}}{4} .
+$$
+又因为 $x>0$, 所以 $x=\frac{1+\sqrt{13}}{4}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例16 求下列各式的值:
+(1) $\cos \frac{\pi}{13}+\cos \frac{3 \pi}{13}+\cos \frac{5 \pi}{13}+\cos \frac{7 \pi}{13}+\cos \frac{9 \pi}{13}+\cos \frac{11 \pi}{13}$;
+(2) $\cos \frac{\pi}{13}+\cos \frac{3 \pi}{13}+\cos \frac{9 \pi}{13}$.
+%%<SOLUTION>%%
+分析:反复利用积化和差与和差化积公式计算原式, 当项数较多时, 其方法有两种: 配对或裂项, 本题采用裂项方法.
+解 (1)
+$$
+\begin{aligned}
+& \cos \frac{\pi}{13}+\cos \frac{3 \pi}{13}+\cos \frac{5 \pi}{13}+\cos \frac{7 \pi}{13}+\cos \frac{9 \pi}{13}+\cos \frac{11 \pi}{13} \\
+= & \frac{1}{2 \sin \frac{\pi}{13}}\left(2 \sin \frac{\pi}{13} \cos \frac{\pi}{13}+2 \sin \frac{\pi}{13} \cos \frac{3 \pi}{13}+2 \sin \frac{\pi}{13} \cos \frac{5 \pi}{13}\right. \\
++ & \left.2 \sin \frac{\pi}{13} \cos \frac{7 \pi}{13}+2 \sin \frac{\pi}{13} \cos \frac{9 \pi}{13}+2 \sin \frac{\pi}{13} \cos \frac{11 \pi}{13}\right) \\
+= & \frac{1}{2 \sin \frac{\pi}{13}}\left[\sin \frac{2 \pi}{13}+\left(\sin \frac{4 \pi}{13}-\sin \frac{2 \pi}{13}\right)+\left(\sin \frac{6 \pi}{13}-\sin \frac{4 \pi}{13}\right)\right. \\
+& \left.+\left(\sin \frac{8 \pi}{13}-\sin \frac{6 \pi}{13}\right)+\left(\sin \frac{10 \pi}{13}-\sin \frac{8 \pi}{13}\right) +\left(\sin \frac{12 \pi}{13}-\sin \frac{10 \pi}{13}\right)\right] \\
+= & \frac{1}{2 \sin \frac{\pi}{13}} \cdot \sin \frac{12 \pi}{13}=\frac{1}{2} .
+\end{aligned}
+$$
+(2)
+$$
+\begin{aligned}
+\text { 令 } & \cos \frac{\pi}{13}+\cos \frac{3 \pi}{13}+\cos \frac{9 \pi}{13}=x \text {, 则 } \\
+x^2= & \cos ^2 \frac{\pi}{13}+\cos ^2 \frac{3 \pi}{13}+\cos ^2 \frac{9 \pi}{13}+2 \cos \frac{\pi}{13} \cos \frac{3 \pi}{13} \\
+& +2 \cos \frac{3 \pi}{13} \cos \frac{9 \pi}{13}+2 \cos \frac{\pi}{13} \cos \frac{9 \pi}{13} \\
+= & \frac{1}{2}\left(1+\cos \frac{2 \pi}{13}\right)+\frac{1}{2}\left(1+\cos \frac{6 \pi}{13}\right)+\frac{1}{2}\left(1+\cos \frac{18 \pi}{13}\right) \\
+& +\cos \frac{2 \pi}{13}+\cos \frac{4 \pi}{13}+\cos \frac{6 \pi}{13}+\cos \frac{12 \pi}{13}+\cos \frac{8 \pi}{13}+\cos \frac{10 \pi}{13} \\
+= & \frac{3}{2}-\frac{1}{2}\left(\cos \frac{11 \pi}{13}+\cos \frac{7 \pi}{13}+\cos \frac{5 \pi}{13}\right) \\
+& -\left(\cos \frac{11 \pi}{13}+\cos \frac{9 \pi}{13}+\cos \frac{7 \pi}{13}+\cos \frac{\pi}{13}+\cos \frac{5 \pi}{13}+\cos \frac{3 \pi}{13}\right),
+\end{aligned}
+$$
+由(1)得
+$$
+\cos \frac{11 \pi}{13}+\cos \frac{7 \pi}{13}+\cos \frac{5 \pi}{13}=\frac{1}{2}-\left(\cos \frac{9 \pi}{13}+\cos \frac{3 \pi}{13}+\cos \frac{\pi}{13}\right)
+$$
+从而
+$$
+x^2=\frac{3}{2}-\frac{1}{2}\left(\frac{1}{2}-x\right)-\frac{1}{2},
+$$
+解之得 $x=\frac{1 \pm \sqrt{13}}{2}$ (负值舍去), 所以
+$$
+\cos \frac{\pi}{13}+\cos \frac{3 \pi}{13}+\cos \frac{9 \pi}{13}=\frac{1+\sqrt{13}}{2} .
+$$
+评注由本题第 (1) 题的结论, 再结合算式 $\cos \frac{\pi}{3}, \cos \frac{\pi}{5}+\cos \frac{3 \pi}{5}$, $\cos \frac{\pi}{7}+\cos \frac{3 \pi}{7}+\cos \frac{5 \pi}{7}, \cos \frac{\pi}{9}+\cos \frac{3 \pi}{9}+\cos \frac{5 \pi}{9}+\cos \frac{7 \pi}{9}$ 的值, 我们可以归纳猜想:
+$$
+\cos \frac{\pi}{2 n+1}+\cos \frac{3 \pi}{2 n+1}+\cos \frac{5 \pi}{2 n+1}+\cdots+\cos \frac{2 n-1}{2 n+1} \pi=\frac{1}{2} .
+$$
+证明令 $S=\cos \frac{\pi}{2 n+1}+\cos \frac{3 \pi}{2 n+1}+\cos \frac{5 \pi}{2 n+1}+\cdots+\cos \frac{2 n-1}{2 n+1} \pi$,
+则
+$$
+\begin{aligned}
+2 \sin \frac{\pi}{2 n+1} \cdot S= & \sin \frac{2 \pi}{2 n+1}+\left(\sin \frac{4 \pi}{2 n+1}-\sin \frac{2 \pi}{2 n+1}\right) \\
+& +\left(\sin \frac{6 \pi}{2 n+1}-\sin \frac{4 \pi}{2 n+1}\right)+\cdots \\
+& +\left(\sin \frac{2 n}{2 n+1} \pi-\sin \frac{2 n-2}{2 n+1} \pi\right) \\
+= & \sin \frac{2 n}{2 n+1} \pi .
+\end{aligned}
+$$
+于是
+$$
+S=\frac{1}{2} \text {. }
+$$
+%%PROBLEM_END%%
+
+

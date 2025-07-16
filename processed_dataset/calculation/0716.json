@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题13 若 $f(\\tan x)=\\sin 2 x$, 则 $f(-1)$ 的值为",
+    "solution": "-1 . 由 $f(\\tan x)=\\sin 2 x=\\frac{2 \\tan x}{1+\\tan ^2 x}$, 得 $f(x)=\\frac{2 x}{1+x^2}$, 所以 $f(-1)=\\frac{2 \\times(-1)}{1+(-1)^2}=-1$.",
+    "remark": "",
+    "figures": []
+}

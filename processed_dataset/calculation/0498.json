@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例7 函数 $f(x)=\\log _{\\frac{1}{2}}\\left(x^2-2 x-3\\right)$ 的单调递增区间是 $(\\quad)$.\nA. $(-\\infty,-1)$\nB. $(-\\infty, 1)$\nC. $(1,+\\infty)$\nD. $(3,+\\infty)$",
+    "solution": "解:由 $x^2-2 x-3>0$, 得函数的定义域为 $(-\\infty,-1) \\cup(3,+\\infty)$.\n而 $u=x^2-2 x-3=(x-1)^2-4$ 在 $(-\\infty,-1)$ 上单调递减, 在 $(3,+\\infty)$ 上单调递增, 所以, $f(x)=\\log _{\\frac{1}{2}}\\left(x^2-2 x-3\\right)$ 在 $(-\\infty,-1)$ 上单调递增, 在 $(3,+\\infty)$ 上单调递减, 故应选 $\\mathrm{A}$.",
+    "remark": "",
+    "figures": []
+}

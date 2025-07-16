@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 求所有正整数 $x 、 y$, 使 $x^2+3 y, y^2+3 x$ 均是完全平方数.",
+    "solution": "设 $\\left\\{\\begin{array}{l}x^2+3 y=u^2, \\\\ y^2+3 x=v^2,\\end{array}\\right.$ 由于 $x, y$ 为正整数,故 $u>x, v>y$. 我们设 $u= x+a, v=y+b$, 这里 $a 、 b$ 为正整数.\n由\n$$\n\\left\\{\\begin{array}{l}\nx^2+3 y=(x+a)^2, \\\\\ny^2+3 x=(y+b)^2\n\\end{array}\\right.\n$$\n可化为\n$$\n\\left\\{\\begin{array}{l}\n3 y=2 a x+a^2, \\\\\n3 x=2 b y+b^2 .\n\\end{array}\\right.\n$$\n故 $9-4ab>0$, 因 $a 、 b$ 为正整数, 故 $a b=1$ 或 2 , 即 $(a, b)=(1,1),(1,2)$, $(2,1)$. 相应地求得 $(x, y)=(1,1),(16,11),(11,16)$.",
+    "remark": "",
+    "figures": []
+}

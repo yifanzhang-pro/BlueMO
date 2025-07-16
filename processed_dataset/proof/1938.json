@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例6. 记 $A=\\cos \\frac{\\pi}{11}+\\cos \\frac{3 \\pi}{11}+\\cos \\frac{5 \\pi}{11}+\\cos \\frac{7 \\pi}{11}+\\cos \\frac{9 \\pi}{11}$,\n$$\nB=\\sin \\frac{\\pi}{11}+\\sin \\frac{3 \\pi}{11}+\\sin \\frac{5 \\pi}{11}+\\sin \\frac{7 \\pi}{11}+\\sin \\frac{9 \\pi}{11},\n$$\n求证: $A=\\frac{1}{2}, B=\\frac{1}{2} \\cot \\frac{\\pi}{22}$.",
+    "solution": "分析:与解设 $z=\\cos \\frac{\\pi}{11}+i \\sin \\frac{\\pi}{11}$, 则\n$$\nA+B \\mathrm{i}=z+z^3+z^5+z^7+z^9=\\frac{z\\left(1-z^{10}\\right)}{1-z^2}=\\frac{z-z^{11}}{1-z^2}\n$$\n$$\n\\begin{aligned}\n& =\\frac{z-(\\cos \\pi-i \\sin \\pi)}{1-z^2}=\\frac{z+1}{1-z^2}=\\frac{1}{1-z} \\\\\n& =\\frac{1-\\bar{z}}{(1-z)(1-\\bar{z})}=\\frac{1-\\cos \\frac{\\pi}{11}+\\mathrm{i} \\sin \\frac{\\pi}{11}}{2-(z+\\bar{z})} \\\\\n& =\\frac{1-\\cos \\frac{\\pi}{11}+\\mathrm{i} \\sin \\frac{\\pi}{11}}{2\\left(1-\\cos \\frac{\\pi}{11}\\right)}=\\frac{1}{2}+\\frac{1}{2} \\cdot \\frac{\\sin \\frac{\\pi}{11}}{1-\\cos \\frac{\\pi}{11}} \\mathrm{i} \\\\\n& =\\frac{1}{2}+\\mathrm{i} \\cdot \\frac{1}{2} \\cdot \\cot \\frac{\\pi}{22} .\n\\end{aligned}\n$$\n所以 $A=\\frac{1}{2}, B=\\frac{1}{2} \\cot \\frac{\\pi}{22}$, 证毕.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题19. 设正实数 $a\\cdot b\\cdot c$ 满足: $a^{2}+b^{2}+c^{2}+(a+b+c)^{2}\\leq4$ ,求证:\n$$\n\\frac{a b+1}{(a+b)^2}+\\frac{b c+1}{(b+c)^2}+\\frac{c a+1}{(c+a)^2} \\geqslant 3 .\n$$",
+    "solution": "由已知得: $a^2+b^2+c^2+a b+b c+a c \\leqslant 2$, 所以\n$$\n\\begin{aligned}\n\\sum_{c y c} \\frac{2 a b+2}{(a+b)^2} & \\geqslant \\sum_{c y c} \\frac{2 a b+a^2+b^2+c^2+a b+b c+a c}{(a+b)^2} \\\\\n& =\\sum_{c y c} \\frac{(a+b)^2+(c+a)(c+b)}{(a+b)^2} \\\\\n& =3+\\sum_{c y c} \\frac{(c+a)(c+b)}{(a+b)^2} \\geqslant 6,\n\\end{aligned}\n$$\n其中最后一个不等号是利用了平均值不等式.\n两边同时除以 2 即知原不等式成立.",
+    "remark": "",
+    "figures": []
+}

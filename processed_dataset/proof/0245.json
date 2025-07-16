@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 证明: 正整数 $n$ 可以表示为连续若干个(至少两个) 正整数之和的充分必要条件是, $n$ 不是 2 的方幕.",
+    "solution": "设 $n=x+(x+1)+\\cdots+(x+k-1), x$ 为正整数, $k \\geqslant 2$. 即\n$$\n(2 x+k-1) k=2 n .\n$$\n若 $n$ 为 2 的方幂, 则 $k$ 与 $2 x-1+k$ 都是 2 的方幂, 但 $2 x-1$ 为奇数, 故必须 $k=1$, 这与题设不合.\n反过来, 若 $n$ 不是 2 的方幕, 设 $n=2^{m-1}(2 t+1), m \\geqslant 1, t \\geqslant 1$. 当 $t \\geqslant 2^{m-1}$ 时, 可取 $k=2^m, x=t+1-2^{m-1}$; 当 $t<2^{m-1}$ 时, 可取 $k=2 t+1, x= 2^{m-1}-t$. 则 $k$ 与 $x$ 都是正整数且 $k \\geqslant 2$.",
+    "remark": "",
+    "figures": []
+}

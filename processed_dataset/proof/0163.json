@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $a>1, m, n>0$, 证明:\n$$\n\\left(a^m-1, a^n-1\\right)=a^{(m, n)}-1 .\n$$",
+    "solution": "证明:设 $D=\\left(a^m-1, a^n-1\\right)$. 我们通过证明 $\\left(a^{(m, n)}-1\\right) \\mid D$ 及 $D \\mid \\left(a^{(m, n)}-1\\right)$ 来导出 $D==a^{(m, n)}-1$, 这是数论中证明两数相等的常用手法.\n因为 $(m, n)|m,(m, n)| n$, 由第 1 单元中分解公式 (5) 即知 $\\left(a^{(m, n)}-1\\right) \\mid \\left(a^m-1\\right)$, 以及 $\\left(a^{(m, n)}-1\\right) \\mid\\left(a^n-1\\right)$. 故由本单元的性质 (3) 可知, $a^{(m, n)}-1$ 整除 $\\left(a^m-1, a^n-1\\right)$, 即 $\\left(a^{(m, n)}-1\\right) \\mid D$.\n为了证明 $D \\mid\\left(a^{(m, n)}-1\\right)$, 我们设 $d=(m, n)$. 因 $m, n>0$, 故可选择 $u$, $v>0$, 使得 (参见本单元 (1) 中的注释)\n$$\nm u-n v=d . \\label{eq1}\n$$\n因为 $D \\mid\\left(a^m-1\\right)$, 故更有 $D \\mid\\left(a^{m u}-1\\right)$. 同样, $D \\mid\\left(a^{n u}-1\\right)$. 故 $D \\mid\\left(a^{m u}-\\right. \\left.a^{n o}\\right)$, 从而由 式\\ref{eq1}, 得\n$$\nD \\mid a^{n v}\\left(a^d-1\\right) . \\label{eq2}\n$$\n此外, 因 $a>1$, 及 $D \\mid\\left(a^m-1\\right)$, 故 $(D, a)=1$, 进而 $\\left(D, a^{n v}\\right)=1$. 于是, 从 式\\ref{eq2} 及性质 (7) 导出 $D \\mid\\left(a^d-1\\right)$, 即 $D \\mid\\left(a^{(m, n)}-1\\right)$.\n综合已证得的两方面的结果, 可知 $D=a^{(m, n)}-1$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-5.tex",
+    "problem_type": "proof",
+    "problem": "例1. 已知正实数 $a 、 b 、 c 、 d$ 满足\n$$\na\\left(c^2-1\\right)=b\\left(b^2+c^2\\right),\n$$\n且 $d \\leqslant 1$. 证明:\n$$\nd\\left(a \\sqrt{1-d^2}+b^2 \\sqrt{1+d^2}\\right) \\leqslant \\frac{(a+b) c}{2} .\n$$",
+    "solution": "证明:设参数 $\\lambda>1$, 由柯西不等式得\n$$\n\\begin{aligned}\n& d\\left(a \\sqrt{1-d^2}+b^2 \\sqrt{1+d^2}\\right) \\\\\n\\leqslant & d \\sqrt{\\left(\\frac{a^2}{\\lambda}+b^4\\right)\\left[\\left(1-d^2\\right) \\lambda+\\left(1+d^2\\right)\\right]} \\\\\n= & \\sqrt{\\left(\\frac{a^2}{\\lambda}+b^4\\right)\\left[(1-\\lambda) d^4+(\\lambda+1) d^2\\right]} \\\\\n\\leqslant & \\sqrt{\\frac{1}{\\lambda-1}\\left(\\frac{a^2}{\\lambda}+b^4\\right)} \\cdot \\frac{\\lambda+1}{2} .\n\\end{aligned}\n$$\n由已知条件知 $c^2=\\frac{a+b^3}{a-b}$. 故 $a>b$, 取 $\\lambda=\\frac{a}{b}$. 则\n$$\n\\frac{\\lambda+1}{2} \\sqrt{\\frac{1}{\\lambda-1}\\left(\\frac{a^2}{\\lambda}+b^4\\right)}=\\frac{a+b}{2} \\sqrt{\\frac{a+b^3}{a-b}}=\\frac{(a+b) c}{2} .\n$$\n所以, 命题得证.",
+    "remark": "",
+    "figures": []
+}

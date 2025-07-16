@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-6.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $x, y, z \\geqslant 0$, 且 $x^2+y^2+z^2=1$, 求证:\n$$\n\\frac{x}{1-y z}+\\frac{y}{1-x z}+\\frac{z}{1-x y} \\leqslant \\frac{3 \\sqrt{3}}{2} \\text {. }\n$$",
+    "solution": "解:设 $S=\\frac{x}{1-y z}+\\frac{y}{1-x z}+\\frac{z}{1-x y}$, 如果 $x=0(y=0$ 或 $z=0)$, 则\n$$\nS=y+z<2<\\frac{3}{2} \\sqrt{3},\n$$\n所以设 $x y z \\neq 0$, 使得 $x, y, z \\in(0,1)$. 因为\n$$\n\\frac{x}{1-y z}=x+\\frac{z y x}{1-y z},\n$$\n所以 $S=x+y+z+x y z\\left(\\frac{1}{1-y z}+\\frac{1}{1-z x}+\\frac{1}{1-x y}\\right)$.\n因为\n$$\n\\begin{aligned}\n1-y z & \\geqslant 1-\\frac{1}{2}\\left(y^2+z^2\\right) \\\\\n& =\\frac{1}{2}\\left(1+x^2\\right) \\\\\n& =\\frac{1}{2}\\left(2 x^2+y^2+z^2\\right) \\\\\n& \\geqslant 2 \\sqrt[4]{x^2 x^2 y^2} z^2=2 x \\sqrt{y z},\n\\end{aligned}\n$$\n由平均值不等式, 得\n$$\n\\begin{aligned}\n& x y z\\left(\\frac{1}{1-y z}+\\frac{1}{1-z x}+\\frac{1}{1-y x}\\right) \\\\\n\\leqslant & \\frac{x y z}{2}\\left(\\frac{1}{x \\sqrt{y z}}+\\frac{1}{y \\sqrt{z x}}+\\frac{1}{z \\sqrt{x y}}\\right)=\\frac{1}{2}(\\sqrt{y z}+\\sqrt{z x}+\\sqrt{x y}) \\\\\n\\leqslant & \\frac{1}{2}\\left(\\frac{y+z}{2}+\\frac{z+x}{2}+\\frac{x+y}{2}\\right)=\\frac{1}{2}(x+y+z) .\n\\end{aligned}\n$$\n再由柯西不等式, 得\n$$\nS \\leqslant \\frac{3}{2}(x+y+z) \\leqslant \\frac{3}{2}\\left(1^2+1^2+1^2\\right)^{\\frac{1}{2}}\\left(x^2+y^2+z^2\\right)^{\\frac{1}{2}}=\\frac{3}{2} \\sqrt{3},\n$$\n故命题成立.",
+    "remark": "",
+    "figures": []
+}

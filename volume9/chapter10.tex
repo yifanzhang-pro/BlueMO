@@ -1,0 +1,124 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+Shum 的最小圆问题.
+这里介绍组合几何的一个计数极值问题, 它是 George F. Shum 在 Amer. Math. Monthly (1978,824,E2746) 上提出的一个公开问题(提出时无解答).
+问题设 $\tau=\left\{A_1, A_2, \cdots, A_n\right\}$ 是平面上 $n$ 个不共线的点的集合.
+若一个中心在 $O$, 半径为 $r$ 的圆过 $\tau$ 中至少三个点, 且 $A_k O \leqslant r$ 对所有 $k \in\{1,2$, $\cdots, n\}$ 都成立,则称这个圆是点集 $\tau$ 的一个最小圆.
+对固定的 $n$, 问 $\tau$ 的最小圆最多有多少个?
+这里我们分别介绍三种解法.
+%%<SOLUTION>%%
+解法 1 问题的答案是 $n-2$.
+首先注意到出现在最小圆上的点 $A_i$ 一定在 $\left\{A_i\right\}$ 的凸包的边界上, 因此我们可假定这 $n$ 个点是一个凸 $n$ 边形 $P_n$ 的 $n$ 个顶点.
+假设 $A_i$ 和 $A_j$ 在最小圆 $C_1$ 上,而 $A_k$ 和 $A_h$ 在最小圆 $C_2$ 上.
+若线段 $A_i A_j$ 和 $A_k A_h$ 相交 (有公共内点), 则 $C_1=C_2$. 为了看出这一点, 只需考虑凸四边形 $Q=A_i A_k A_j A_h$. 因 $Q$ 在 $C_1$ 内,所以
+$$
+\angle A_k A_j A_h+\angle A_h A_i A_k \leqslant 180^{\circ}, \label{eq1}
+$$
+又因 $Q$ 在 $C_2$ 内,所以
+$$
+\angle A_i A_k A_j+\angle A_j A_h A_i \leqslant 180^{\circ}, \label{eq2}
+$$
+式\ref{eq1}、\ref{eq2}相加便得 $Q$ 的四个内角之和小于等于 $360^{\circ}$, 因此式\ref{eq1}、\ref{eq2}必须同时取等号, 因此 $Q$ 是一个圆的内接四边形.
+这样可知决定不同最小圆的三角形的边没有交点 (公共内点). 因为 $P_n$ 最多能剖分成 $n-2$ 个没有公共内点且以原顶点为顶点的三角形, 因此 $P_n$ 的最小圆最多有 $n-2$ 个.
+下面证明 $n-2$ 个最小圆是可以达到的.
+我们归纳构造 $n$ 元点集 $\left\{A_k\right\}$ 使得它的所有最小圆是过 $A_1 、 A_{k-1} 、 A_k$ 的外接圆 $C_k(k=3, \cdots, n)$. 首先选择非共线的三点组 $A_1 、 A_2 、 A_3$. 现假设 $A_1, \cdots, A_k(k \geqslant 3)$ 已被选择好, 它们的最小圆为 $C_3, \cdots, C_k$. 现在以弦 $A_1 A_k$ 和圆 $C_k$ 上不包含点 $A_{k-1}$ 的弧所形成的区域 $S_k$ 中取一个内点作为 $A_{k+1}$, 如图(<FilePath:./figures/fig-c10i1.png>), 则圆 $C_{k+1}$ 包含 $S_k$ 在圆 $C_k$ 中的补集 $S_k^{\prime}$, 因此包含了所有点 $A_1, \cdots, A_{k+1}$. 另一方面, 我们有
+$$
+S_3 \supset S_4 \supset \cdots \supset S_k .
+$$
+因此 $A_k$ 都位于圆 $C_i$ 内 $(i=1,2, \cdots, k)$. 这样我们就达到了目标.
+实际上不难看出, 没有四个顶点共圆的任何凸 $n$ 边形都存在 $n-2$ 个最小圆.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+Shum 的最小圆问题.
+这里介绍组合几何的一个计数极值问题, 它是 George F. Shum 在 Amer. Math. Monthly (1978,824,E2746) 上提出的一个公开问题(提出时无解答).
+问题设 $\tau=\left\{A_1, A_2, \cdots, A_n\right\}$ 是平面上 $n$ 个不共线的点的集合.
+若一个中心在 $O$, 半径为 $r$ 的圆过 $\tau$ 中至少三个点, 且 $A_k O \leqslant r$ 对所有 $k \in\{1,2$, $\cdots, n\}$ 都成立,则称这个圆是点集 $\tau$ 的一个最小圆.
+对固定的 $n$, 问 $\tau$ 的最小圆最多有多少个?
+这里我们分别介绍三种解法.
+%%<SOLUTION>%%
+解法 2 $\tau$ 的最小圆至多为 $n-2$ 个.
+我们先对 $n$ 用归纳法证明: 存在凸 $n$ 边形至少有 $n-2$ 个最小圆.
+当 $n=3$ 时结论显然成立.
+假设结论在 $n=k$ 时成立, 即凸 $k$ 边形 $A_1 A_2 \cdots A_k$ 有 $k-2$ 个最小圆.
+如图(<FilePath:./figures/fig-c10i2.png>), 延长 $A_2 A_1$ 与 $A_{k-1} A_k$, 我们在 $A_1 A_2 、 A_k A_{k-1}$ 的内侧和 $A_1 A_k$ 的外侧区域中取一点 $A_{k+1}$, 令 $A_{k+1}$ 到 $A_1 A_k$ 的距离足够小, 使 $A_{k+1}$ 在原凸 $k$ 边形的任一最小圆内, 且使 $\triangle A_1 A_{k+1} A_k$ 的外接圆内部包含了所有 $A_i(i=2, \cdots, k-1$, 只需使 $\angle A_1 A_{k+1} A_k$ 大于所有 $\angle A_1 A_i A_k$ 的补角即可). 这时凸
+$k+1$ 边形 $A_1 A_2 \cdots A_k A_{k+1}$ 至少有 $k-1$ 个最小圆.
+下面再证明 $\tau$ 至多有 $n-2$ 个最小圆.
+首先不妨设 $\tau$ 构成一个凸 $n$ 边形 $P_n=A_1 A_2 \cdots A_n$ (否则考虑其凸包集 $\tau^{\prime}$, 显然最小圆的点必须为凸包上的点), 并设其无四点共圆.
+下面先证明四条引理.
+引理 $1 P_n$ 的每条边上有且仅有一个最小圆过此边两端点.
+证明如图(<FilePath:./figures/fig-c10i3.png>), 对边 $A_1 A_2, \tau$ 中其余点均在 $A_1 A_2$ 同侧.
+若 $\triangle A_1 A_2 A_k$ 的外接圆为最小圆, 则 $A_i$ 在 $\odot A_1 A_2 A_k$ 内且与 $A_k$ 在 $A_1 A_2$ 同侧, 所以 $\angle A_1 A_k A_2$ 为所有 $\angle A_1 A_i A_2(i=3, \cdots, n)$ 中的最小者, 因此过 $A_1 A_2$ 只能有一个最小圆,引理 1 得证.
+引理 2 对 $P_n$ 的每一条对角线, 或者有两个最小圆或无最小圆过其两端点.
+证明如图(<FilePath:./figures/fig-c10i4.png>), 对于对角线 $A_1 A_k$, 在其一侧所有以 $P_n$ 的顶点为顶点的角 中, 设 $\angle A_1 A_i A_k$ 最小, 在另一侧 $\angle A_1 A_j A_k$ 最小.
+若 $\angle A_1 A_i A_k+ \angle A_1 A_j A_k<\pi$, 则无覆盖圆过 $A_1 A_k$; 若 $\angle A_1 A_i A_k+\angle A_1 A_j A_k>\pi$, 则 $\triangle A_1 A_i A_k$ 和 $\triangle A_1 A_j A_k$ 的外接圆均为最小圆,引理 2 得证.
+$\boldsymbol{A}_j$
+引理 3 若有最小圆过对角线 $A_1 A_k$ 的两端, 则称 $A_1 A_k$ 为 "好对角线". $P_n$ 的"好对角线"不在非端点处相交.
+证明如图(<FilePath:./figures/fig-c10i5.png>), 假设 "好对角线" $A_i A_j 、 A_r A_s$ 相交于非端点处.
+因 $A_r 、 A_s$ 均在过 $A_i A_j$ 的最小圆内, 注意到这时 $A_i 、 A_r 、 A_s 、 A_j$ 不共圆, 因此
+$$
+\angle A_i A_r A_j+\angle A_i A_s A_j>\pi,
+$$
+同理
+$$
+\angle A_r A_i A_s+\angle A_r A_j A_s>\pi,
+$$
+相加即得凸四边形的内角和大于 $2 \pi$,矛盾.
+引理 $4 P_n$ 的"好对角线"至多有 $n-3$ 条.
+证明设有 $k$ 条"好对角线", 则将 $P_n$ 分成 $k+1$ 个凸多边形.
+因 "好对角线"不相交于 $P_n$ 内部, 故这 $k+1$ 部分的内角和等于原 $n$ 边形的内角和, 而每部分内角之和大于等于 $\pi$, 但 $P_n$ 的内角和为 $(n-2) \pi$, 故有
+$$
+(k+1) \pi \leqslant(n-2) \pi,
+$$
+因此得 $k \leqslant n-3$.
+下再证 $P_n$ 的最小圆的个数不超过 $n-2$.
+因每个最小圆恰有三条弦以凸 $n$ 边形 $P_n$ 的顶点为端点, 且每条弦或为 $P_n$ 的边或为 "好对角线", 故最小圆个数 $\leqslant \frac{n+2(n-3)}{3}=n-2$.
+最后若 $P_n$ 中有四点共圆, 则有两条 "好对角线"交于内部.
+现抹去其中一条"好对角线",剩下的"好对角线"的条数小于 $n-2$, 这时同样可推得最小圆的个数小于等于 $n-2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+Shum 的最小圆问题.
+这里介绍组合几何的一个计数极值问题, 它是 George F. Shum 在 Amer. Math. Monthly (1978,824,E2746) 上提出的一个公开问题(提出时无解答).
+问题设 $\tau=\left\{A_1, A_2, \cdots, A_n\right\}$ 是平面上 $n$ 个不共线的点的集合.
+若一个中心在 $O$, 半径为 $r$ 的圆过 $\tau$ 中至少三个点, 且 $A_k O \leqslant r$ 对所有 $k \in\{1,2$, $\cdots, n\}$ 都成立,则称这个圆是点集 $\tau$ 的一个最小圆.
+对固定的 $n$, 问 $\tau$ 的最小圆最多有多少个?
+这里我们分别介绍三种解法.
+%%<SOLUTION>%%
+解法 3 $\tau$ 的最小圆最多有 $n-2$ 个.
+下面用归纳法来证明.
+(i) $n=3$ 时, $\tau^{\prime}=\left\{A_1, A_2, A_3\right\}$ 的最小圆恰有一个.
+(ii)假设 $n=k$ 时结论成立.
+设 $\tau^{\prime \prime}=\left\{A_1, A_2, \cdots, A_{k+1}\right\}$, 在 $\tau^{\prime \prime}$ 的所有最小圆中, 不妨设 $\odot O$ 是半径最大的一个, 且设 $\tau$ " 中的三个点 $A_1 、 A_2 、 A_3$ 在 $\odot O$ 上, $\tau^{\prime \prime}$ 中的其余点都在 $\odot O$ 内或 $\odot O$ 上.
+不妨设 $\triangle A_1 A_2 A_3$ 中 $\angle A_1$ 最大, 则 $\angle A_2 、 \angle A_3$ 均为锐角.
+下面证明: 除 $\odot O$ 外, 不存在过 $A_1$ 的其他最小圆.
+否则若 $\odot K$ 过 $A_1$, 因最小圆覆盖住了所有的点, 所以 $A_2 、 A_3$ 在 $\odot K$ 上或 $\odot K$ 内, 且至少有一个在 $\odot K$ 内, 不妨设 $A_2$ 在 $\odot K$ 内.
+延长 $A_2 A_3$ 交 $\odot K$ 于 $B 、 C$, 如图(<FilePath:./figures/fig-c10i6.png>), 则
+$$
+\angle B A_2 A_1>90^{\circ} .
+$$
+因此 $A_1 B>A_1 A_2$ 且有 $\angle A_1 C A_3 \leqslant \angle A_1 A_3 A_2$, 所以有
+$$
+\odot K \text { 的半径 }=\frac{A_1 B}{2 \sin \angle A_1 C A_2}>\frac{A_1 A_2}{2 \sin \angle A_1 A_3 A_2}=\odot O \text { 的半径, }
+$$
+矛盾! 因此过 $A_1$ 的仅有一个最小圆.
+因此 $\tau$ "中不过 $A_1$ 的最小圆均为 $\left\{A_2, \cdots, A_{k+1}\right\}$ 的最小圆, 由归纳假设这样的圆的个数至多为 $k-2$ 个,故 $\tau$ "的最小圆至多为 $k-1$ 个.
+这就用归纳法证明了 $\tau$ 的最小圆个数小于等于 $n-2$ 个.
+再证对任意的 $n \geqslant 3, n \in \mathbf{N}$, 存在点集 $\tau=\left\{A_1, A_2, \cdots, A_n\right\}$, 其中 $A_1 A_2 \cdots A_n$ 为凸 $n$ 边形, 使 $\tau$ 的最小圆个数恰为 $n-2$ 个,下面也用归纳法来证明这一点.
+(i) 当 $n=3$ 时,取一个三角形的三个顶点便可.
+(ii)假设 $n=k$ 时,存在凸 $k$ 边形 $A_1 A_2 \cdots A_k$, 其最小圆恰有 $k-2$ 个.
+当 $n=k+1$ 时, 如图(<FilePath:./figures/fig-c10i7.png>), 设 $A_1 A_2 \cdots A_k$ 为归纳假设中的凸 $k$ 边形, 延长 $A_2 A_1$ 、 $A_{k-1} A_k$ 交于 $B$. 设 $\angle A_1 A_i A_k(i=2,3, \cdots, k-1)$ 中最小的为 $\alpha$, 则在 $\triangle B A_1 A_k$ 中取点 $A_{k+1}$ 使得
+$\angle A_1 A_{k+1} A_k>180^{\circ}-\alpha$, 这时 $A_1 A_2 \cdots A_k$ 的 $k-2$ 个最小圆仍为 $A_1 A_2 \cdots A_{k+1}$ 的最小圆, 且 $\triangle A_{k+1} A_1 A_k$ 的外接圆为新的最小圆, 故 $A_1 A_2 \cdots A_{k+1}$ 中有 $k-1$ 个最小圆.
+综上, 问题全部解答完成.
+%%<REMARK>%%
+注:上面的三个解法各有特色,都是好的解答, 龙云同学提供的解法更是集中了前两种解法的优点, 清晰简明, 给人以启迪.
+%%PROBLEM_END%%
+
+

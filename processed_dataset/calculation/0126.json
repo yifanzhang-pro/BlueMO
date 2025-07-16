@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例5. 求出不定方程:\n$$\nx^3+x^2 y+x y^2+y^3=8\\left(x^2+x y+y^2+1\\right)\n$$\n的全部整数解.",
+    "solution": "解法二记 $u=x+y, v=x y$, 则原方程可变形为\n$$\nu\\left(u^2-2 v\\right)=8\\left(u^2-v+1\\right), \\label{eq2}\n$$\n即\n$$\nu^3-2 u v=8 u^2-8 v+8,\n$$\n由此可见 $u$ 是偶数,设 $u=2 w$, 则\n$$\n2 w^3-w w=8 w^2-2 v+2 . \\label{eq3}\n$$\n我们解出 $v$, 得到\n$$\nv=\\frac{2 w^3-8 w^2-2}{w-2}=2 w^2-4 w-8-\\frac{18}{w-2} . \\label{eq4}\n$$\n因此 $w-2$ 是 18 的约数, 即是 $\\pm 1, \\pm 2, \\pm 3, \\pm 6, \\pm 9, \\pm 18$. 对于 $w$ 的每一个可能值, 结合式\\ref{eq4}可确定 $v$, 进而求得相应的整数解 $(x, y)$ 只有 $(2,8)$ 及 $(8$, 2 ). (注意, 求得一组 $w, v$ 的值, 则相应的 $x, y$ 为整数等价于 $w^2-v$ 为完全平方数.)",
+    "remark": "注:原方程的左、右两边均是关于 $x 、 y$ 的二元对称多项式,因此必能表示为关于 $u=x+y, v=x y$ 的多项式 (见 式\\ref{eq2}). 对本题而言, 这一表示的优点在于, 导出的方程式\\ref{eq3}关于 $v$ 是一次方程, 从而可解出 $v$ (用 $w$ 表示).",
+    "figures": []
+}

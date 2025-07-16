@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 已知 $f(x)=a x^2+b x$ ( $a 、 b$ 为非零实数), 存在一个虚数 $x_1$, 使 $f\\left(x_1\\right)$ 为实数 $-c$, 则 $b^2-4 a c$ 与 $\\left(2 a x_1+b\\right)^2$ 的关系是 $(\\quad)$.\n(A) 不能比较大小\n(B) $b^2-4 a c>\\left(2 a x_1+b\\right)^2$\n(C) $b^2-4 a c=\\left(2 a x_1+b\\right)^2$\n(D) $b^2-4 a c<\\left(2 a x_1+b\\right)^2$",
+    "solution": "C.\n事实上\n$$\n\\begin{aligned}\n\\left(2 a x_1+b\\right)^2 & =4 a^2 x_1^2+4 a b x_1+b^2 \\\\\n& =4 a\\left(a x_1^2+b x_1+c\\right)+b^2-4 a c \\\\\n& =b^2-4 a c .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,13 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题2. (1)如果 $m\\times n$ 棋盘能用形如图(<FilePath:./images/volume11/figures/fig-c9p2-1.png>)或图(<FilePath:./images/volume11/figures/fig-c9p2-2.png>)的 $L$ 形骨牌完全覆盖,证明$m n$是8的倍数\n(2) 对怎样的正整数 $m, n, m \\times n$ 棋盘能用 (1) 中规定的 $L$ 形骨牌完全覆盖.",
+    "solution": "(1) 设 $m \\times n$ 棋盘能用若干张 $\\mathrm{L}$ 型骨牌完全覆盖, 则显然有 $m \\geqslant 2$, $n \\geqslant 2$. 又因每张 $\\mathrm{L}$ 型骨牌含 4 个方格, 所以 $m n$ 是 4 的倍数.\n不妨设 $m$ 为偶数,将 $m \\times n$ 棋盘奇数行中每行 $n$ 个小方格都染成黑色, 偶数行中每行 $n$ 个小方格染成白色.\n于是每张 L 型骨牌或者盖住 3 个白格和一个黑格或者盖住 3 个黑格和一个白格.\n总之盖住的黑格是奇数个, 白格也是奇数个, 如果 $m n$ 不是 8 的倍数, 那么 $m=4(2 k+1)$, 若 $m \\times n$ 棋盘可用 $\\mathrm{L}$ 型骨牌完全覆盖, 则必须用 $2 k+1$ 张 $\\mathrm{L}$ 型骨牌, 奇数个奇数之和仍为奇数, 这表明 $m \\times n$ 棋盘有奇数个黑格和奇数个白格.\n但棋盘上黑格与白格各占一半都为 $2(2 k+1)$ 格, 矛盾.\n因此, $m n$ 是 8 的倍数.\n(2)由(1)知 $m \\times n$ 矩形可用 $\\mathrm{L}$ 型骨牌完全覆盖的必要条件是 $m \\geqslant 2$, $n \\geqslant 2$, 且 $m n$ 是 8 的倍数, 下面我们证明这一条件也是充分的.\n分两种情形: 情形 $1: m$ 与 $n$ 均为偶数.\n因 $m n$ 是 8 的倍数, 所以 $m, n$ 中必有一个是 4 的倍数.\n不妨设 $m=2 m_1, n=4 n_1$. 于是 $m \\times n$ 棋盘可分成 $m_1 n_1$ 个 $2 \\times 4$ 的棋盘, 而每个 $2 \\times 4$ 的棋盘可用 2 张 L 型骨牌覆盖 (如图(<FilePath:./images/volume11/figures/fig-c9a2-1.png>)), 故 $m \\times n$ 棋盘可用 $2 m_1 n_1$ 张 $\\mathrm{L}$ 型骨牌完全覆盖.\n情形2: $m, n$ 中有一个为奇数, 另一个为 8 的倍数.\n不妨设 $m=2 m_1+1, n=8 n_1$, 于是 $m \\times n$ 棋盘可分成两部分, 一个是 $2\\left(m_1-1\\right) \\times 8 n_1$ 棋盘, 另一个是 $3 \\times 8 n_1$ 棋盘, 其中第一部分可分成 $\\left(m_1-1\\right) \\times 2 n_1$ 个 $2 \\times 4$ 的棋盘, 从而可用 $4\\left(m_1-1\\right) n_1$ 块 L 型骨牌覆盖.\n第二部可分成 $n_1$ 个 $3 \\times 8$ 的棋盘, 而 $3 \\times 8$ 的棋盘可用 6 张 L 型骨牌覆盖(如图(<FilePath:./images/volume11/figures/fig-c9a2-2.png>)), 从而第 2 部分可用 $6 n_1$ 张 $\\mathrm{L}$ 型骨牌覆盖.\n因此总个 $m \\times n$ 棋盘可用 $\\mathrm{L}$ 型骨牌完全覆盖.",
+    "remark": "",
+    "figures": [
+        "./images/volume11/figures/fig-c9p2-1.png",
+        "./images/volume11/figures/fig-c9p2-2.png",
+        "./images/volume11/figures/fig-c9a2-1.png",
+        "./images/volume11/figures/fig-c9a2-2.png"
+    ]
+}

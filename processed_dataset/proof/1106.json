@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-4.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $x_i \\geqslant 1(i=1,2, \\cdots, n)$, 证明:\n$$\n\\frac{\\prod\\left(x_i-1\\right)}{\\left(\\sum\\left(x_i-1\\right)\\right)^n} \\leqslant \\frac{\\prod x_i}{\\left(\\sum x_i\\right)^n} .\n$$",
+    "solution": "证明:原不等式等价于\n$$\n\\left(\\frac{\\Pi\\left(x_i-1\\right)}{\\prod x_i}\\right)^{\\frac{1}{n}} \\leqslant \\frac{\\sum\\left(x_i-1\\right)}{\\sum x_i},\n$$\n这个不等式可以由下面的事实推出.\n由平均值不等式,得\n$$\n\\begin{aligned}\n\\left(\\frac{\\prod\\left(x_i-1\\right)}{\\prod x_i}\\right)^{\\frac{1}{n}} & =\\left(\\prod \\frac{x_i-1}{x_i}\\right)^{\\frac{1}{n}} \\\\\n& \\leqslant \\frac{1}{n} \\sum \\frac{x_i-1}{x_i} \\\\\n& =1-\\frac{1}{n} \\sum \\frac{1}{x_i} .\n\\end{aligned}\n$$\n以及\n$$\n\\begin{gathered}\n\\frac{\\sum\\left(x_i-1\\right)}{\\sum x_i}=\\frac{\\sum x_i-n}{\\sum x_i}=1-\\frac{n}{\\sum x_i}, \\\\\n\\frac{1}{n} \\sum \\frac{1}{x_i} \\geqslant \\frac{n}{\\sum x_i} .\n\\end{gathered}\n$$\n从而可知命题成立.",
+    "remark": "",
+    "figures": []
+}

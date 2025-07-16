@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题17. 设 $a 、 b 、 c 、 d$ 为正数,证明:\n$$\n\\sqrt{\\frac{a^2+b^2+c^2+d^2}{4}} \\geqslant \\sqrt[3]{\\frac{a b c+b c d+c d a+d a b}{4}} .\n$$",
+    "solution": "$\\frac{1}{4}(a b c+b c d+c d a+d a b)=\\frac{1}{4}[b c(a+d)+d a(b+c)] \\leqslant$\n$$\n\\begin{aligned}\n& \\frac{1}{4}\\left[\\left(\\frac{b+c}{2}\\right)^2(a+d)+\\left(\\frac{a+d}{2}\\right)^2(b+c)\\right]=\\frac{1}{16}(b+c)(a+d)(a+b+c+d) \\\\\n& \\leqslant \\frac{1}{64}(a+b+c+d)^3=\\left(\\frac{a+b+c+d}{4}\\right)^3 \\leqslant\\left(\\sqrt{\\frac{a^3+b^3+c^3+d^3}{4}}\\right)^3 .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

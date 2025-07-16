@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 如图(<FilePath:./images/volume14/figures/fig-c8p3.png>),  在四边形 $A B C D$ 中, $\\triangle A B D, \\triangle B C D$, $\\triangle A B C$ 的面积之比为 $3: 4: 1$. 点 $M, N$ 分别在 $A C, C D$ 上, 满足 $\\frac{A M}{A C}=\\frac{C N}{C D}$, 并且 $B, M, N$ 三点共线.\n求证: $M$ 与 $N$ 分别是 $A C$ 与 $C D$ 的中点.",
+    "solution": "如图(<FilePath:./images/volume14/figures/fig-c8a3.png>), 设 $\\frac{A M}{A C}=\\frac{C N}{C D}=r(0<r<1)$.\n不妨设 $S_{\\triangle A B C}=1$, 则由已知条件可得\n$$\nS_{\\triangle A B D}=3, S_{\\triangle B C D}=4, S_{\\triangle A C D}=3+4-1=6 .\n$$\n从而有\n$$\n\\begin{aligned}\n& S_{\\triangle B M C}=\\frac{S_{\\triangle B M C}}{S_{\\triangle A B C}}=\\frac{M C}{A C}=1 \\quad r, \\\\\n& S_{\\triangle M N C}=\\frac{6 S_{\\triangle M N C}}{S_{\\triangle A C D}}=6 \\cdot \\frac{M C}{A C} \\cdot \\frac{C N}{C D}=6 r(1-r), \\\\\n& S_{\\triangle N B C}=\\frac{4 S_{\\triangle N B C}}{S_{\\triangle B C D}}=\\frac{4 C N}{C D}=4 r .\n\\end{aligned}\n$$\n因此 $4 r=S_{\\triangle N B C}=S_{\\triangle M N C}+S_{\\triangle B M C}=6 r(1-r)+1-r$,\n化简得 $6 r^2-r-1=0$, 又 $0<r<1$, 故 $r=\\frac{1}{2}$, 即 $M$ 与 $N$ 分别是 $A C$ 与 $C D$ 的中点.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c8p3.png",
+        "./images/volume14/figures/fig-c8a3.png"
+    ]
+}

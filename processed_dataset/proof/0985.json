@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例8 求证: $\\arctan \\frac{1}{3}+\\arctan \\frac{1}{5}+\\arctan \\frac{1}{7}+\\arctan \\frac{1}{8}=\\frac{\\pi}{4}$.",
+    "solution": "分析:本题化归为求四角和的三角函数值, 将证明题改编为计算题.\n证明设则\n$$\n\\begin{gathered}\n\\alpha=\\arctan \\frac{1}{3}, \\beta=\\arctan \\frac{1}{5}, \\\\\n\\gamma=\\arctan \\frac{1}{7}, \\delta=\\arctan \\frac{1}{8}, \\\\\n\\tan \\alpha=\\frac{1}{3}, \\tan \\beta=\\frac{1}{5}, \\\\\n\\tan \\gamma=\\frac{1}{7}, \\tan \\delta=\\frac{1}{8}, \\\\\n\\alpha, \\beta, \\gamma, \\delta \\in\\left(0, \\frac{\\pi}{4}\\right) .\n\\end{gathered}\n$$\n$$\n\\begin{aligned}\n& \\tan \\alpha=\\frac{1}{3}, \\tan \\beta=\\frac{1}{5}, \\\\\n& \\tan \\gamma=\\frac{1}{7}, \\tan \\delta=\\frac{1}{8}, \\\\\n& \\alpha, \\beta, \\gamma, \\delta \\in\\left(0, \\frac{\\pi}{4}\\right) .\n\\end{aligned}\n$$\n于是\n$$\n\\begin{gathered}\n\\tan (\\alpha+\\beta)=\\frac{4}{7}, \\tan (\\gamma+\\delta)=\\frac{3}{11}, \\\\\n\\alpha+\\beta+\\gamma+\\delta \\in(0, \\pi) .\n\\end{gathered}\n$$\n所以\n$$\n\\tan (\\alpha+\\beta+\\gamma+\\delta)=1 .\n$$\n从而\n$$\n\\alpha+\\beta+\\gamma+\\delta=\\frac{\\pi}{4} .\n$$\n评注有关反三角恒等式的证明须掌握两点: 其一证明等式两边的角的同一个三角函数值相等; 其二证明等式两边都在所取三角函数的同一个一一对应的区间内.",
+    "remark": "",
+    "figures": []
+}

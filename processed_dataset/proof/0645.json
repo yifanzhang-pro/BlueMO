@@ -1,0 +1,18 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter14.tex",
+    "problem_type": "proof",
+    "problem": "例5. 在一个 $10 \\times 10$ 的方格表中有一个由 $4 n$ 个 $1 \\times 1$ 的小方格组成的图形, 它既可被 $n$ 个\"图(<FilePath:./images/volume14/figures/fig-c14e1.png>)\"型的图形覆盖, 也可被 $n$ 个\"图(<FilePath:./images/volume14/figures/fig-c14e2.png>)\"或\"图(<FilePath:./images/volume14/figures/fig-c14e3.png>)\"型(可以旋转) 的图形覆盖.\n求正整数 $n$ 的最小值.",
+    "solution": "解:首先论证 $n$ 是偶数.\n用如图(<FilePath:./images/volume14/figures/fig-c14i5.png>) 所示方法将平面网格染色.\n记图(<FilePath:./images/volume14/figures/fig-c14e1.png>)的图形为A形, 图(<FilePath:./images/volume14/figures/fig-c14e2.png>)和图(<FilePath:./images/volume14/figures/fig-c14e3.png>)可以旋转的图形为 $B$ 形.\n无论 $A$ 形覆盖哪 4 个方格, 其中黑格数必是偶数,而对于 $B$ 形则是奇数.\n如果 $n$ 是奇数, $n$ 个 $A$ 形所覆盖的黑方格数必是偶数; 而 $n$ 个 $B$ 形所覆盖的黑方格数必是奇数, 矛盾.\n所以 $n$ 必是偶数.\n如果 $n=2$, 由 2 个 $A$ 形拼成的图形只有如图(<FilePath:./images/volume14/figures/fig-c14i6.png>) 所示的两种情形,但是它们都不能由 2 个 $B$ 形拼成.\n所以, $n \\geqslant 4$. 如图(<FilePath:./images/volume14/figures/fig-c14i7.png>) 是 $n=4$ 时的拼法.",
+    "remark": "注:本题采用的染色方法与上一题相同, 但从不同的角度考察染色的特性, 因而解决了一个全然不同的问题.",
+    "figures": [
+        "./images/volume14/figures/fig-c14e1.png",
+        "./images/volume14/figures/fig-c14e2.png",
+        "./images/volume14/figures/fig-c14e3.png",
+        "./images/volume14/figures/fig-c14i5.png",
+        "./images/volume14/figures/fig-c14e1.png",
+        "./images/volume14/figures/fig-c14e2.png",
+        "./images/volume14/figures/fig-c14e3.png",
+        "./images/volume14/figures/fig-c14i6.png",
+        "./images/volume14/figures/fig-c14i7.png"
+    ]
+}

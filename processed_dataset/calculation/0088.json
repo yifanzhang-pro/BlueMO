@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题10 设 $P$ 是一个奇质数, 考虑集合 $\\{1,2, \\cdots, 2 p\\}$ 满足以下两个条件的子集 $A$ :\n(i) $A$ 恰有 $p$ 个元素;\n(ii) $A$ 中所有元素之和可被 $p$ 整除.\n试求所有这样的子集 $A$ 的个数.",
+    "solution": "记 $U=\\{1,2, \\cdots, p\\}, V=\\{p+1, p+2, \\cdots, 2 p\\}, W=\\{1,2, \\cdots, 2 p\\}$, 除去 $U$ 和 $V$ 而外, $W$ 的所有其他的 $p$ 元子集 $E$ 都使得 $E \\cap U \\neq \\varnothing$, $E \\cap V \\neq \\varnothing$. 若 $W$ 的两个这样的 $p$ 元子集 $S$ 和 $T$ 同时满足: $S \\cap V=T \\cap V$; 只要编号适当, $S \\cap U$ 的元素 $s_1, s_2, \\cdots, s_m$ 和 $T \\cap U$ 的元素 $t_1, t_2, \\cdots, t_m$ 对适当的 $k \\in\\{0,1, \\cdots, p-1\\}$ 满足同余式组 $s_i-t_i \\equiv k(\\bmod p), i=1,2, \\cdots, m$. 就约定将这两个子集 $S$ 和 $T$ 归人同一类.\n对于同一类中的不同子集 $S$ 和 $T$, 显然有 $k \\neq 0$, 因而 $\\sum_{i=1}^p s_i-\\sum_{i=1}^p t_i \\equiv m k \\not \\neq 0(\\bmod p)$. 对于同一类中的不同子集, 它们各自元素的和模 $p$ 的余数不相同.\n因而每一类恰含 $p$ 个子集, 其中仅一个适合题目的条件(ii).\n综上所述, 在 $W=\\{1,2, \\cdots, 2 p\\}$ 的 $\\mathrm{C}_{2 p}^p$ 个 $p$ 元子集当中, 除去 $U$ 和 $V$ 这两个特定子集外, 每 $p$ 个子集分成一类, 每类恰有一个子集满足题目的条件 (ii). 据此很容易算出, $W=\\{1,2, \\cdots, 2 p\\}$ 的适合条件(i) 和(ii) 的子集的总数为 $\\frac{1}{p}\\left(\\mathrm{C}_{2 p}^p-2\\right)+2$.",
+    "remark": "",
+    "figures": []
+}

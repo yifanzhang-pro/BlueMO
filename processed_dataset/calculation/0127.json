@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 设 $n$ 和 $k$ 都是正整数,则 $1,2, \\cdots, n$ 中恰有 $\\left[\\frac{n}{k}\\right]$ 个数被 $k$ 整除.",
+    "solution": "在 $1,2, \\cdots, n$ 中, 被 $k$ 整除的数为 $k, 2 k, \\cdots, d k$, 其中正整数 $d$ 满足 $d k \\leqslant n$ 但 $(d+1) k>n$, 从而 $\\frac{n}{k}-1<d \\leqslant \\frac{n}{k}$, 即 $d=\\left[\\frac{n}{k}\\right]$, 故所说的数中共有 $\\left[\\frac{n}{k}\\right]$ 个被 $k$ 整除.",
+    "remark": "",
+    "figures": []
+}

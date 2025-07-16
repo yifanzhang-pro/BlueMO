@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $x 、 y 、 z$ 都是非负实数,且 $x+y+z=1$, 求证:\n$$\ny z+z x+x y-2 x y z \\leqslant \\frac{7}{27} .\n$$",
+    "solution": "证明:易见, 当 $x=y=z=\\frac{1}{3}$ 时, 不等式中等号成立.\n不妨设 $x \\geqslant y \\geqslant z$, 则 $x \\geqslant \\frac{1}{3} \\geqslant z$.\n令 $\\quad x^{\\prime}=\\frac{1}{3}, y^{\\prime}=y, z^{\\prime}=x+z-\\frac{1}{3}$,\n则\n$$\nx^{\\prime}+z^{\\prime}=x+z, x^{\\prime} \\cdot z^{\\prime} \\geqslant x \\cdot z .\n$$\n所以 $y z+z x+x y-2 x y z=y(x+z)+(1-2 y) x z$\n$$\n\\begin{aligned}\n& \\leqslant y^{\\prime}\\left(x^{\\prime}+z^{\\prime}\\right)+\\left(1-2 y^{\\prime}\\right) x^{\\prime} z^{\\prime} \\\\\n& =\\frac{1}{3}\\left(y^{\\prime}+z^{\\prime}\\right)+\\frac{1}{3} y^{\\prime} z^{\\prime} \\leqslant \\frac{2}{9}+\\frac{1}{27}=\\frac{7}{27} .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

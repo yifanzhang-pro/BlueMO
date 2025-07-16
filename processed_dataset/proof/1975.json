@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例8. 如图(<FilePath:./images/volume8/figures/fig-c9i1.png>), 设 $A A^{\\prime} 、 B B^{\\prime} 、 C C^{\\prime}$ 是 $\\triangle A B C$ 的外接圆的三条直径, $P$ 是 $\\triangle A B C$ 所在平面上任意一点, 点 $P$ 在 $B C 、 C A 、 A B$ 上的射影分别为 $D$ 、 $E 、 F, X$ 是点 $A^{\\prime}$ 关于点 $D$ 的对称点, $Y$ 是点 $B^{\\prime}$ 关于点 $E$ 的对称点, $Z$ 是点 $C^{\\prime}$ 关于点 $F$ 的对称点.\n求证: $\\triangle X Y Z \\backsim \\triangle A B C$.",
+    "solution": "分析:与解引人原点为 $O$ 的复平面, 设圆 $O$ 的半径为 1 , 仍以各点字母表示所在位置的复数,\n由 $A 、 B 、 C$ 在圆 $O$ 上知 $\\bar{A}=\\frac{1}{A}, \\bar{B}=\\frac{1}{B}, \\bar{C}=\\frac{1}{C}$, 于是由 $P D \\perp B C$ 于 $D$ 知\n$$\n\\begin{cases}\\frac{P-D}{C-B}=-\\frac{\\bar{P}-\\bar{D}}{\\bar{C}-\\bar{B}}, & (P D \\perp B C) \\\\ \\frac{C-D}{C-B}=\\frac{\\bar{C}}{\\bar{C}-\\bar{D}}, \\quad(D \\in B C) & \\end{cases}\n$$\n视为关于 $D 、 \\bar{D}$ 的方程, 解出 $D=\\frac{P+C-B C \\bar{P}+B}{2}$. 由 $A^{\\prime}$ 是圆 $O$ 中 $A$ 的对径点, 知 $A^{\\prime}=-A$, 故\n$$\n\\begin{aligned}\nX & =2 D-A^{\\prime}=2 D+A=(P+A+B+C)-B C \\bar{P} \\\\\n& =(P+A+B+C)-(A B C \\bar{P}) \\bar{A} .\n\\end{aligned}\n$$\n类似地有\n$$\n\\begin{aligned}\n& Y=(P+A+B+C)-(A B C \\bar{P}) \\bar{B}, \\\\\n& Z=(P+A+B+C)-(A B C \\bar{P}) \\bar{C} .\n\\end{aligned}\n$$\n但复平面上的变换 $\\phi: Z \\mapsto(A+B+C+P)+(-A B C \\bar{P}) Z$ 可以视为由平移, 对称, 旋转, 位似变换迭加的变换, 因此 $\\phi$ 是保角的, 故以 $\\phi(A), \\phi(B), \\phi(C)$ 为顶点的三角形 (顶点按顺序) 与 $\\triangle A B C$ 相似, 即 $\\triangle X Y Z \\backsim \\triangle A B C$. 证毕.",
+    "remark": "",
+    "figures": [
+        "./images/volume8/figures/fig-c9i1.png"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例2. 如图(<FilePath:./images/volume7/figures/fig-c2i7.png>), $\\triangle A B C$ 中, $D$ 为线段 $B C$ 上一点, 满足 $A D \\perp B C$, 取边 $A B$ 上点 $E$, 边 $A C$ 上点 $F$, 连结 $D E 、 D F$, 满足 $\\angle E D A=\\angle F D A$, 求证: $A D 、 B F 、 C E$ 三线共点.",
+    "solution": "证明:法一: 过 $A$ 作 $B C$ 的平行线 $l$, 并与 $D E$ 延长线、 $D F$ 延长线分别交于 $G 、 H, l / / B C$ 以及 $A D \\perp B C$, 则 $l \\perp A D$, 结合 $\\angle E D A=\\angle F D A$, 有 $A$ 为等腰三角形 $D G H$ 底边 $G H$ 的中点, 即 $G A=A H$, 所以\n$$\n\\frac{A E}{E B} \\cdot \\frac{B D}{D C} \\cdot \\frac{C F}{F A}=\\frac{A G}{B D} \\cdot \\frac{B D}{D C} \\cdot \\frac{C D}{A H}=\\frac{A G}{A H}=1 .\n$$\n由角元塞瓦定理的逆定理知 $A D 、 B F 、 C E$ 三线共点.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2i7.png"
+    ]
+}

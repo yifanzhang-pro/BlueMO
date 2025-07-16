@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise14.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 一张 $8 \\times 8$ 的方格表切去对角两个方格, 这个缺角的方格表能否用 31 张 $2 \\times 1$ 的骨牌覆盖?",
+    "solution": "答案是不能把这个残缺的方格表盖住.\n事实上, 把 $8 \\times 8$ 的方格表按国际象棋棋盘黑白染色, 每张骨牌盖住一个黑格和一个白格.\n若有能够盖住棋盘的方法, 他们将盖住 31 个黑格和 31 个白格.\n但缺角方格表上 30 个格子是一种颜色的, 32 个格子是另一种颜色的.",
+    "remark": "",
+    "figures": []
+}

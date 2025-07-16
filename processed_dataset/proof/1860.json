@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题18. 如图(<FilePath:./images/volume7/figures/fig-c4p18.png>), 已知圆 $S_1$ 与圆 $S_2$ 交于 $P 、 Q$ 两点, $A_1 、 B_1$ 为圆 $S_1$ 上不同于 $P 、 Q$ 的两个点, 直线 $A_1 P 、 B_1 P$ 分别交圆 $S_2$ 于 $A_2 、 B_2$, 直线 $A_1 B_1$ 和 $A_2 B_2$ 交于点 $C$. 证明: 当点 $A_1$ 和点 $B_1$ 变化时, $\\triangle A_1 A_2 C$ 的外心总在一个定圆周上.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c4a18.png>), 因为 $\\angle A_1 C A_2+\\angle A_1 Q A_2= \\angle A_1 C A_2+\\angle A_1 Q P+\\angle P Q A_2=\\angle B_1 C B_2+\\angle C B_1 B_2+ \\angle C B_2 B_1=180^{\\circ}$, 则 $A_1 、 C 、 A_2 、 Q$ 四点共圆.\n设 $O$ 是 $\\triangle A_1 A_2 C$ 的外心, $O_1 、 O_2$ 分别为圆 $S_1$ 和圆 $S_2$ 的圆心, 则 $\\angle O O_1 Q=\\frac{1}{2} \\angle A_1 O_1 Q=180^{\\circ}-\\angle A_1 P Q$. 同理, $\\angle O O_2 Q=180^{\\circ}-\\angle A_2 P Q$. 所以, $\\angle O O_1 Q+\\angle O O_2 Q=180^{\\circ}$. 因此, $\\triangle A_1 A_2 C$ 的外心总在一个过 $O_1 、 O_2$ 和 $Q$ 的定圆上.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4p18.png",
+        "./images/volume7/figures/fig-c4a18.png"
+    ]
+}

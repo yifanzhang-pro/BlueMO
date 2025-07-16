@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题9. 已知 $f(x)=\\frac{\\sqrt{3} x-1}{x+\\sqrt{3}}$, 求 $g(x)=\\underbrace{f\\{f \\cdots[f}_{1986 \\uparrow f}(x)]\\}$.",
+    "solution": "解:$$\nf(x)=\\frac{\\sqrt{3} x-1}{x+\\sqrt{3}}=\\frac{\\frac{\\sqrt{3}}{2} x-\\frac{1}{2}}{\\frac{1}{2} x+\\frac{\\sqrt{3}}{2}},\n$$\n故对应的复数为 $z=\\frac{\\sqrt{3}}{2}-\\frac{1}{2} \\mathrm{i}$.\n所以 $g(x)=\\underbrace{f\\{f \\cdots[f}_{1986}(x)]\\}$ 对应的复数为\n$$\n\\begin{aligned}\nz^{1986} & =\\left(\\frac{\\sqrt{3}}{2}-\\frac{1}{2} \\mathrm{i}\\right)^{1986} \\\\\n& =\\left[\\cos \\left(-\\frac{\\pi}{6}\\right)+\\mathrm{i} \\sin \\left(-\\frac{\\pi}{6}\\right)\\right]^{1986} \\\\\n& =\\cos \\left(-\\frac{1986 \\pi}{6}\\right)+i \\sin \\left(-\\frac{1986 \\pi}{6}\\right) \\\\\n& =-1 .\n\\end{aligned}\n$$\n因为复数 -1 对应的 $H$ 型函数为 $\\frac{-x-0}{0 \\cdot x-1}=x$, 所以\n$$\ng(x)=\\underbrace{f\\{f \\cdots[f}_{1986}(x)]\\}=x .\n$$",
+    "remark": "",
+    "figures": []
+}

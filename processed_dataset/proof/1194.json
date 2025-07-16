@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题19. 设 $a 、 b 、 c$ 为正实数,满足 $a^2+b^2+c^2=1$. 求证:\n$$\n\\frac{a b}{c}+\\frac{b c}{a}+\\frac{c a}{b} \\geqslant \\sqrt{3} \\text {. }\n$$",
+    "solution": "因 $\\left(\\frac{a b}{c}+\\frac{b c}{a}+\\frac{c a}{b}\\right)^2=\\frac{a^2 b^2}{c^2}+\\frac{b^2 c^2}{a^2}+\\frac{c^2 a^2}{b^2}+2\\left(a^2+b^2+c^2\\right)=$\n$$\n\\frac{1}{2}\\left(\\frac{a^2 b^2}{c^2}+\\frac{c^2 a^2}{b^2}\\right)+\\frac{1}{2}\\left(\\frac{b^2 c^2}{a^2}+\\frac{a^2 b^2}{c^2}\\right)+\\frac{1}{2}\\left(\\frac{c^2 a^2}{b^2}+\\frac{b^2 c^2}{a^2}\\right)+2 \\geqslant a^2+b^2+c^2+2=3.\n$$\n所以, 命题成立.",
+    "remark": "",
+    "figures": []
+}

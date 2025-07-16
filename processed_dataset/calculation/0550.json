@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例24 已知定义的正整数集 $\\mathbf{N}_{+}$上的函数 $f(n)$ 满足: $f(n+2)=f(n+1)+f(n)$, 且 $f(1)=f(2)=1$. 求 $f(n)$.",
+    "solution": "解:所给递归函数的特征方程为 $x^2=x+1$. 解方程, 得 $x_{1,2}=\\frac{1 \\pm \\sqrt{5}}{2}$.\n所以 $\\quad f(n)=c_1\\left(\\frac{1+\\sqrt{5}}{2}\\right)^n+c_2\\left(\\frac{1-\\sqrt{5}}{2}\\right)^n$.\n由初始条件 $f(1)=f(2)=1$, 得\n$$\n\\begin{gathered}\n\\frac{1+\\sqrt{5}}{2} c_1+\\frac{1-\\sqrt{5}}{2} c_2=1 \\\\\n\\left(\\frac{1+\\sqrt{5}}{2}\\right)^2 c_1+\\left(\\frac{1-\\sqrt{5}}{2}\\right)^2 c_2=1 .\n\\end{gathered}\n$$\n解方程组, 得 $c_1=\\frac{1}{\\sqrt{5}}, c_2=-\\frac{1}{\\sqrt{5}}$. 所以\n$$\nf(n)=\\frac{1}{\\sqrt{5}}\\left[\\left(\\frac{1+\\sqrt{5}}{2}\\right)^n-\\left(\\frac{1-\\sqrt{5}}{2}\\right)^n\\right] .\n$$\n这就是著名的斐波那契数列.",
+    "remark": "",
+    "figures": []
+}

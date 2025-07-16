@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 证明 $x^3+y^4=7$ 没有整数解.",
+    "solution": "易于验证, $x^3 \\equiv 0,1,5,8,12(\\bmod 13) ; y^4 \\equiv 0,1,3,9(\\bmod 13)$.\n由这些易知 $x^3+y^4 \\neq 7(\\bmod 13)$, 故方程无整数解.",
+    "remark": "",
+    "figures": []
+}

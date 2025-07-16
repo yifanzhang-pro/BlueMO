@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 如图(<FilePath:./images/volume12/figures/fig-c5p6.png>)所示, 图 $G$ 有 4 个顶点, 6 条边, 它们都在同一平面上, 这个平面被 6 条边分成 4 个区域 I, II, III, IV, 称这些区域为面.\n设有两个点 $Q_1, Q_2$ 在这些面中, 证明平面上不存在一条连接 $Q_1$ 与 $Q_2$ 的线 $\\mu$ 同时满足: (1) $\\mu$ 截每条边 $e_i$ 恰好一次 $(i=1,2, \\cdots, 6)$; (2) $\\mu$ 不过任一顶点 $v_j(j=1,2$, $3,4)$.",
+    "solution": "如图(<FilePath:./images/volume12/figures/fig-c5a6.png>), 在每个面中取一点 $v_j^{\\prime}(j=1,2,3,4)$, 如果两个面有公共边, 则在所取的两个点之间连一条边, 这样得到的图 $G^*$ 称为 $G$ 的对偶图.\n在 $G$ 中, 从一个面穿过某条边 $e_i$ 到另一个面, 就相当于在 $G^*$ 中从一个顶点沿一条边到另一个顶点.\n因此, 若 $G$ 中有满足条件 (1)、(2) 的折线 $\\mu$ 存在, 那么 $G^*$ 就是一条链 $\\left(Q_1, Q_2\\right.$ 不在同一面内) 或一个圈 $\\left(Q_1, Q_2\\right.$ 在同一面内), 即 $G^*$ 可以一笔画成.\n但 $G^*$ 的 4 个顶点全是奇顶点, 至少需两笔才能画成.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c5p6.png",
+        "./images/volume12/figures/fig-c5a6.png"
+    ]
+}

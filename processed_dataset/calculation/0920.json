@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise11.tex",
+    "problem_type": "calculation",
+    "problem": "问题8. 在凸四边形 $A B C D$ 的外部分别作正三角形 $A B Q$, 正三角形 $B C R$, 正三角形 $C D S$, 正三角形 $D A P$, 记四边形 $A B C D$ 的对角线之和为 $x$, 四边形 $P Q R S$ 的对边中点连线之和为 $y$, 求 $\\frac{y}{x}$ 的最大值.",
+    "solution": "解: : 如图(<FilePath:./images/volume7/figures/fig-c11a8.png>), 若四边形 $A B C D$ 是正方形时, 可得 $\\frac{y}{x}=\\frac{1+\\sqrt{3}}{2}$.\n$$\n\\begin{aligned}\n& D S_1=S_1 N=D N=E M, \\\\\n& D P_1=P_1 M=M D=E N,\n\\end{aligned}\n$$\n又\n$$\n\\begin{aligned}\n\\angle P_1 D S_1 & =360^{\\circ}-60^{\\circ}-60^{\\circ}-\\angle P D S \\\\\n& =240^{\\circ}-\\left(180^{\\circ}-\\angle E N D\\right) \\\\\n& =60^{\\circ}+\\angle E N D=\\angle E N S_1=\\angle E M P_1,\n\\end{aligned}\n$$\n所以\n$$\n\\triangle D P_1 S_1 \\cong \\triangle M P_1 E \\cong \\triangle N E S_1,\n$$\n从而, $\\triangle E P_1 S_1$ 是正三角形.\n同理可得, $\\triangle G Q_1 R_1$ 也是正三角形.\n设 $U 、 V$ 分别是 $P_1 S_1 、 Q_1 R_1$ 的中点, 于是有\n$$\n\\begin{aligned}\nE G & \\leqslant E U+U V+V G=\\frac{\\sqrt{3}}{2} P_1 S_1+P_1 Q_1+\\frac{\\sqrt{3}}{2} Q_1 R_1 \\\\\n& =P_1 Q_1+\\sqrt{3} P_1 S_1=\\frac{1}{2} B D+\\frac{\\sqrt{3}}{2} A C\n\\end{aligned}\n$$\n同理可得\n$$\nF H \\leqslant \\frac{1}{2} A C+\\frac{\\sqrt{3}}{2} B D,\n$$\n把上面两式相加, 得即\n$$\n\\begin{aligned}\n& y \\leqslant \\frac{1+\\sqrt{3}}{2} x, \\\\\n& \\frac{y}{x} \\leqslant \\frac{1+\\sqrt{3}}{2} .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c11a8.png"
+    ]
+}

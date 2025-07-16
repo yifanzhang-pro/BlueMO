@@ -1,0 +1,295 @@
+
+%%TEXT_BEGIN%%
+所谓 "化归", 是指把要解决的问题, 通过某种转化过程, 归结到一类已经解决或者能比较容易解决的问题中去, 最终获得原问题解答的一种解题策略, 化归从某种意义上来说就是 "化简". 匈牙利著名数学家罗莎 - 彼得 (Rosza Peter) 在他的名著《无穷的玩艺》中, 通过一个十分生动而有趣的笑话, 来说明数学家是如何用化归的思想方法来解题的.
+有人提出了这样一个问题: "假设在你面前有煤气灶、水龙头、水壶和火柴, 你想烧开水,应当怎样去做?"对此, 某人回答说: "在壶中灌上水, 点燃煤气, 再把壶放到煤气灶上.
+"提问者肯定了这一回答, 但是, 他又追问道: "如果其他的条件都没有变化, 只是水壶中已经有了足够多的水,那么你又应该怎样去做?"这时被提问者一定会大声而有把握地回答说: "点燃煤气, 再把水壶放上去.
+"但是更完善的回答应该是这样: "只有物理学家才会按照刚才所说的办法去做, 而数学家们却会回答: "只须把水壸中的水倒掉, 问题就化归为前面所说的问题了.
+" "把水倒掉", 这就是化归,这就是数学家们常用的方法.
+我们常常采用: (1) 把复杂问题化归为简单问题; (2) 把陌生问题化归为熟悉问题; (3) 把一般情况化归为特殊情况; (4) 把一个命题化归为一个更强的命题.
+先看如下两个例子:
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设数列 $\left\{a_n\right\}$ 满足 $a_1=\frac{1}{3}, a_{n+1}=\sqrt{\frac{1+a_n}{2}}$, 求 $\left\{a_n\right\}$ 的通项公式.
+%%<SOLUTION>%%
+解:三角代换: 令 $a_1=\frac{1}{3}=\cos t, t \in\left(0, \frac{\pi}{2}\right)$, 则
+$$
+a_2=\sqrt{\frac{1+\cos t}{2}}=\cos \frac{t}{2},
+$$
+同理可得 $a_3=\cos \frac{t}{2^2}, a_4=\cos \frac{t}{2^3}, \cdots$,一般地,有 $a_n=\cos \frac{t}{2^{n-1}}$, 其中 $t= \arccos \frac{1}{3}$, 故 $\left\{a_n\right\}$ 的通项公式为 $a_n=\cos \left(\frac{1}{2^{n-1}} \arccos \frac{1}{3}\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 若关于 $z$ 的方程 $z^2+c|z|^2=1+2 \mathrm{i}$ 有复数解, 求实数 $c$ 的取值范围.
+%%<SOLUTION>%%
+解:原方程有复数解 $z_0=a+b \mathrm{i}(a, b \in \mathbf{R})$, 则
+$$
+a^2-b^2+2 a b \mathrm{i}+c\left(a^2+b^2\right)=1+2 \mathrm{i},
+$$
+由实部和虚部分别相等可得到如下方程组:
+$$
+\left\{\begin{array}{l}
+(c+1) a^2+(c-1) b^2=1, \\
+2 a b=2,
+\end{array}\right.
+$$
+这等价于
+$$
+\left\{\begin{array}{l}
+(c+1) a^4-a^2+(c-1)=0, \\
+b=\frac{1}{a} .
+\end{array}\right. \label{eq1}
+$$
+则原方程有复数解 $z_0$ 当且仅当关于 $a, b$ 的方程组 式\ref{eq1} 有实数解,考虑到 $b$ 由 $a$ 决定且 $a^2>0$, 这又等价于关于 $x$ 的一元二次方程
+$$
+(c+1) x^2-x+(c-1)=0 \label{eq2}
+$$
+存在正数解.
+(1) 若 $c \leqslant-1$, 因为 $(c+1) x^2 \leqslant 0, c-1<0$, 故方程 式\ref{eq2} 显然没有正数解;
+(2) 若 $c>-1$, 由于方程 式\ref{eq2}  中二次项系数大于 0 ,一次项系数小于 0 , 根据根与系数的关系知: 式\ref{eq2} 存在正数解当且仅当判别式 $\Delta==1-4(c+1)(c-1) \geqslant$ 0 , 即 $4 c^2 \leqslant 5$, 解得 $-1<c \leqslant \frac{\sqrt{5}}{2}$.
+综上可知, 实数 $c$ 的取值范围是 $\left(-1, \frac{\sqrt{5}}{2}\right]$.
+%%<REMARK>%%
+注例 1 运用了三角代换转化问题,通过换元,把原来的问题转化成另一类相对容易解决的问题, 而例 2 则是先运用实部与虚部分离, 将一个复数方程解的存在性问题转化为实数方程组 (1)的解的存在性, 又进一步转化为一元二次方程(2)的正数解的存在性, 每一步的转化都很自然, 且不断地使问题简单化, 熟悉化.
+事实上, 化归就是把复杂问题化为简单问题; 把陌生的问题化为熟悉的问题; 将一个问题转化为另一个问题; 将一种形式转化为另一种形式等等.
+下面我们再通过几个具体的例子来说明这种解题策略的运用.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. (1)13 个小朋友围成一个圆圈, 从圈上至多能选出几个人, 使得他们互不相邻?
+(2) 从 $1,2, \cdots, 13$ 这 13 个数中至多可以选出几个数, 使得选出的数中,每两个数的差既不等于 5 ,也不等于 8 ?
+%%<SOLUTION>%%
+解:1) 把这 13 个小朋友依次编号为 $1,2, \cdots$, 13, 如图(<FilePath:./figures/fig-c1i1.png>) 所示, 那么选 6个人是可以的, 例如, 选 1, $3,5,7,9,11$ 号这 6 位小朋友, 他们是不相邻的.
+现在来说明至多可选 6 名.
+先任意选定 1 个, 不妨设为 1 号, 这时候与他相邻的 2 号与 13 号不能选了.
+把剩下的 10 位小朋友配成 5 对: $(3,4) 、(5,6) 、(7,8)$ 、 $(9,10) 、(11,12)$. 在这 5 对中,每一对中至多只能选出 1 个, 连同 1 号在内, 至多可选出 6 个人, 他们互不相邻.
+综上所述, 从圈上至多能选出 6 个人, 他们互不相邻.
+(2) 我们把这题"化归"为题 (1).
+我们把 $1,2, \cdots, 13$ 按如下规则排成一个圆圈: 先排 1 , 在 1 的旁边放 9 (与 1 的差为 8), 在 9 的旁边放 4 (与 9 的差为 5 ), ……这样继续放下去, 每个数旁边的数与它相差 8 或 5 ,最后得到如图(<FilePath:./figures/fig-c1i2.png>) 所示的一个圈.
+圈上的数满足:
+(1) 每两个相邻的数的差或是 8 , 或是 5 ;
+(2) 两个不相邻的数的差既不等于 5 , 也不等于 8 .
+于是问题 (2) 就转化为: 在这个圈上至多能选几个数, 使每两个数在圈上不相邻? 由 (1) 的结论知, 答案是 6 . 例如, 选 $1,4,7,10,13,3$.
+%%<REMARK>%%
+注从题目上看, (1), (2) 两个小题除了 13 这个数字外, 没有任何相同的地方, 如果直接解 (2), 是比较困难的, 通过转化, 把 (2) 化归为 (1), 问题就解决了.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 求出所有满足下列条件的正整数数列 $x_1, x_2, \cdots, x_n, \cdots$ :
+(1) 对每个 $n, x_n \leqslant n \sqrt{n}$;
+(2) 对任意不同的正整数 $m 、 n,(m-n) \mid\left(x_m-x_n\right)$.
+%%<SOLUTION>%%
+证明: 由(1)知, $x_1 \leqslant 1, x_2 \leqslant 2 \sqrt{2}$, 所以 $x_1=1, x_2=1$ 或 2 .
+[1] 若 $x_2=1$, 由 (2) 知, $n-1\left|x_n-x_1, n-2\right| x_n-x_2$, 即
+$$
+n-1\left|x_n-1, n-2\right| x_n-1,
+$$
+由于 $(n-1, n-2)=1$, 所以 $(n-1)(n-2) \mid x_n-1$.
+若 $x_n \neq 1$, 则
+$$
+x_n \geqslant(n-1)(n-2)+1=n^2-3 n+3 .
+$$
+当 $n \geqslant 9$ 时, $x_n \geqslant n^2-3 n+3>n(n-3)>n \sqrt{n}$, 这与 (1) 矛盾, 从而当 $n \geqslant 9$ 时, $x_n=1$.
+于是对每个 $n(\geqslant 9), n-i \mid 1-x_i(i=3,4, \cdots, 8)$; 所以 $x_3= x_4=\cdots=x_8=1$.
+因此,数列 $1,1,1, \cdots$ 是满足题意的一个数列.
+[2] 若 $x_2=2$, 令 $x_n^{\prime}=x_n-(n-1), n=1,2, \cdots$. 那么数列 $\left\{x_n^{\prime}\right\}$ 是满足题设条件 (1), (2) 的.
+事实上, 对每个 $n, x_n^{\prime}=x_n-(n-1) \leqslant n \sqrt{n}-(n-1) \leqslant n \sqrt{n}$, 对任意不同的正整数 $m 、 n, x_n^{\prime}-x_n^{\prime}=x_m-(m-1)-x_n+(n-1)=\left(x_m-x_n\right)- (m-n)$, 从而 $m-n \mid x_m^{\prime}-x_n^{\prime}$.
+由于 $x_1^{\prime}=1, x_2^{\prime}=1$, 由[1]知, $\left\{x_n^{\prime}\right\}$ 是常数列 $1,1,1 \cdots$. 所以, $x_n=n$.
+综上所述, 满足题设的正整数数列有 2 个, 它们是
+$$
+\begin{aligned}
+& 1,1,1, \cdots, 1, \cdots, \\
+& 1,2,3, \cdots, n, \cdots .
+\end{aligned}
+$$
+%%<REMARK>%%
+注:本题的第(1)种情形是容易解的.
+对于第(2)种情形, 我们通过一个代换, 把它化归为第(1)种情形, 也就是我们曾解决的一个问题, 进而求得解答, 这是一种常用的手法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $n(>4)$ 是给定的整数, $x_1, x_2, \cdots, x_n \in[0,1]$, 求证:
+$$
+2\left(x_1^3+x_2^3+\cdots+x_n^3\right)-\left(x_1^2 x_2+x_2^2 x_3+\cdots x_n^2 x_1\right) \leqslant n .
+$$
+%%<SOLUTION>%%
+证明:我们先证明一个简单的命题: 若 $x, y \in[0,1]$, 则 $x^3+y^3 \leqslant x^2 y+1$.
+事实上,当 $x \leqslant y$ 时, $x^3 \leqslant x^2 y, y^3 \leqslant 1$, 所以 $x^3+y^3 \leqslant x^2 y+1$;
+当 $x>y$ 时, $x^3 \leqslant 1, y^3 \leqslant x^2 y$, 所以 $x^3+y^3 \leqslant x^2 y+1$.
+于是
+$$
+\begin{aligned}
+& x_1^3+x_2^3 \leqslant x_1^2 x_2+1, \\
+& x_2^3+x_3^3 \leqslant x_2^2 x_3+1, \\
+& \cdots \cdots \\
+& x_n^3+x_1^3 \leqslant x_n^2 x_1+1 .
+\end{aligned}
+$$
+把上面这 $n$ 个不等式相加, 便得到要证明的命题.
+%%<REMARK>%%
+注:化归,有时是将一个问题转化为与它等价的问题, 有时, 新的问题与原来的问题并不等价, 但是, 从新的问题可以很容易得到原问题的解.
+这种不等价的化归并不鲜见, 在不等式的证明中常常用到.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $a 、 b 、 c$ 为三角形三边长, 证明如下一组结论:
+(1) $(a+b)(b+c)(c+a) \geqslant 8 a b c$;
+(2) $(a+b-c)(b+c-a)(c+a-b) \leqslant a b c$;
+(3) $(a+b)(b+c)(c+a)(a+b-c)(b+c-a)(c+a-b) \leqslant 8 a^2 b^2 c^2$.
+%%<SOLUTION>%%
+解:1) 结论是显然的, 事实上, 根据基本不等式有
+$$
+(a+b)(b+c)(c+a) \geqslant 2 \sqrt{a b} \cdot 2 \sqrt{b c} \cdot 2 \sqrt{c a}=8 a b c .
+$$
+(2) 由已知条件,可令 $\left\{\begin{array}{c}{{a=y+z,}}\\ {{b=z+x,}}\\ {{c=x+y,}}\end{array}\right.\label{eq1}$ 则$x,y,z>0$.
+要证的式子转化为 $2 z \cdot 2 x \cdot 2 y \leqslant(y+z)(z+x)(x+y)$, 这正是 (1) 的结论.
+(3) 沿用 (2) 中的符号, 则要证的式子转化为
+$$
+x y z(2 x+y+z)(x+2 y+z)(x+y+2 z) \leqslant(x+y)^2(y+z)^2(z+x)^2 \label{eq2}
+$$
+由于
+$$
+\begin{aligned}
+x y(x+y+2 z)^2 & =x y(x+y)^2+4 x y z(x+y+z) \\
+& \leqslant x y(x+y)^2+(x+y)^2 \cdot z(x+y+z) \\
+& =(x+y)^2(x y+z(x+y+z)) \\
+& =(x+y)^2(x+z)(y+z),
+\end{aligned}
+$$
+同理有
+$$
+\begin{aligned}
+& y z(2 x+y+z)^2 \leqslant(x+y)(z+x)(y+z)^2, \\
+& z x(x+2 y+z)^2 \leqslant(x+y)(z+x)^2(y+z),
+\end{aligned}
+$$
+以上三式相乘, 开方即得(2), 故原不等式成立.
+%%<REMARK>%%
+注一在证明与三角形边长 $a 、 b 、 c$ 有关的不等式时, 有隐含约束条件 $\left\{\begin{array}{l}a+b>c, \\ b+c>a,\\ c+a>b .\end{array}\right.$ 这些条件有时不便使用, 因而可通过代换 式\ref{eq1}, 将原问题化归为关于正数 $x 、 y 、 z$ 的代数不等式问题, 这是一种将条件规范化的转化命题的技巧.
+注二第(2)问是不等式证明中的一个典型例子.
+也可以这样证明:
+$$
+\begin{gathered}
+(a+b-c)(b+c-a)=b^2-(a-c)^2 \leqslant b^2, \\
+(b+c-a)(c+a-b) \leqslant c^2, \\
+(c+a-b)(a+b-c) \leqslant a^2,
+\end{gathered}
+$$
+同理得
+$$
+\begin{aligned}
+& (b+c-a)(c+a-b) \leqslant c^2 \\
+& (c+a-b)(a+b-c) \leqslant a^2
+\end{aligned}
+$$
+三式相乘并开方即可.
+值得一提的是第 (3) 问中对 式\ref{eq2} 的证明恰好借鉴了这种轮换相乘的手法,另一个趣向则是由 (1)、(3) 可以证明 式\ref{eq2} .
+注三本题中,每一小问的条件均可削弱为 $a 、 b 、 c>0$ (此时,第 (1) 问证明过程不需修改, 读者不妨对 (2)、(3) 的证明过程进行适当补充, 使得对 $a$ 、 $b 、 c>0$ 的一般情形成立).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $0<a<b$, 证明: $\frac{\ln b-\ln a}{b-a}<\frac{1}{\sqrt{a b}}$.
+%%<SOLUTION>%%
+证明:原不等式等价于 $\ln b-\ln a<\frac{b-a}{\sqrt{a b}}$, 即 $\ln \frac{b}{a}<\sqrt{\frac{b}{a}}-\sqrt{\frac{a}{b}}$.
+令 $b=a t^2(t>1)$, 进一步将上述不等式转化为 $2 \ln t<t-\frac{1}{t}$.
+设 $F(t)=2 \ln t-\left(t-\frac{1}{t}\right)$, 则 $F(1)=0, F^{\prime}(t)=\frac{2}{t}-1-\frac{1}{t^2}= -\left(\frac{1}{t}-1\right)^2<0(t>1)$, 因此当 $t>1$ 时 $F(t)$ 单调递减, 故 $F(t)<F(1)= O(t>1)$, 即 $2 \ln t<t-\frac{1}{t}(t>1)$, 从而原不等式成立.
+%%<REMARK>%%
+在证明原不等式时, 先通过等价变形和换元, 化归为关于 $t$ 的一个不等式, 同时起到了减少字母和简化约束条件的作用; 此后构造函数 $F(t)=2 \ln t-\left(t-\frac{1}{t}\right)$, 将问题进一步化归为对函数单调性的讨论, 而 $F(t)$ 的单调性又通过求导得以判断.
+题的求解很简短, 化归思想却蕴含在多个步骤中.
+正如美籍匈牙利数学家 $\mathrm{G}$ - 波利亚所说, "不断地变换你的问题", "我们必须一再地变换它,重新叙述它, 变换它, 直到最后成功地找到某些有用的东西为止". 由此可见, 问题转化的思想在数学解题中的重要性.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 20 个方块分别标有 $1,2,3, \cdots, 20$, 排成一个圈, 每四个连续的方块可以颠倒次序 (如 $20,1,2,3$ 可以变为 $3,2,1,20$ ). 如果原来的方块依照数的大小顺序排列, 问: 能否通过多次颠倒次序, 将它的次序变为:
+(1) $5,1,2,3,4,6,7, \cdots, 20$;
+(2) $6,1,2,3,4,5,7, \cdots, 20$.
+%%<SOLUTION>%%
+解: (1) 的答案是肯定的.
+下面是一个具体的操作方式:
+$$
+1 \underline{2345} \rightarrow \underline{15432} \rightarrow 3 \underline{4512} \rightarrow \underline{32154} \rightarrow 51234
+$$
+我们就是把 $1,2,3,4,5$ 这 5 个数字进行 4 次颠倒次序, 其余数字的位置不动, 就变成了 $5,1,2,3,4,6,7, \cdots, 20$.
+题 (2) 的答案也是肯定的.
+我们也是利用 (1) 所得的结论: 每一方块可经过 4 次颠倒次序前移四位,而其他方块顺序不变.
+如图(<FilePath:./figures/fig-c1i3.png>) 所示, 把数字 6 依次移到 1,2 之间, 17, 18 之间, 14,13 之间, 10 , 9 之间, 4, 5 之间, 20, 1 之间, 此时, 其他的数字的位置不动, 从而, 经过这些颠倒次序后, 就变成了 $6,1,2,3,4,5,7, \cdots, 20$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 记 $F=\max _{1 \leqslant x \leqslant 3}\left|x^3-a x^2-b x-c\right|$. 当 $a 、 b 、 c$ 取遍所有实数时, 求 $F$ 的最小值 .
+%%<SOLUTION>%%
+解:令 $f(x)=(x+2)^3-a(x+2)^2-b(x+2)-c$, 原问题可转化为求 $\max _{-1 \leqslant x \leqslant 1}|f(x)|$ 的最小值, 其中
+$$
+\begin{aligned}
+f(x) & =x^3+(6-a) x^2+(12-4 a-b) x+(8-4 a-2 b-c) \\
+& =x^3+a_1 x^2+b_1 x+c_1 .
+\end{aligned}
+$$
+将 $6-a 、 12-4 a-b 、 8-4 a-2 b-c$ 分别简记为 $a_1 、 b_1 、 c_1$, 易见 $a 、 b 、 c$ 取遍所有实数当且仅当 $a_1 、 b_1 、 c_1$ 取遍所有实数.
+先证明 $F=\max _{-1 \leqslant x \leqslant 1}|f(x)| \geqslant \frac{1}{4}$ : 在 $f(x)$ 表达式中分别取 $x= \pm 1, \pm \frac{1}{2}$, 可得
+$$
+\begin{gathered}
+f(1)=1+a_1+b_1+c_1 \leqslant F, \label{eq1}\\
+f(-1)=-1+a_1-b_1+c_1 \leqslant F,  \label{eq2}\\
+f\left(\frac{1}{2}\right)=\frac{1}{8}+\frac{a_1}{4}+\frac{b_1}{2}+c_1 \leqslant F, \label{eq3} \\
+f\left(-\frac{1}{2}\right)=-\frac{1}{8}+\frac{a_1}{4}-\frac{b_1}{2}+c_1 \leqslant F, \label{eq4}
+\end{gathered}
+$$
+由式\ref{eq1}, \ref{eq2}得
+$$
+f(1)-f(-1)=2+2 b_1,
+$$
+由式\ref{eq3}, \ref{eq4}得
+$$
+f\left(\frac{1}{2}\right)-f\left(-\frac{1}{2}\right)=\frac{1}{4}+b_1,
+$$
+所以
+$$
+f(1)-f(-1)-2 f\left(\frac{1}{2}\right)+2 f\left(-\frac{1}{2}\right)
+$$
+$$
+=2+2 b_1-2\left(\frac{1}{4}+b_1\right)=\frac{3}{2},
+$$
+又
+$$
+f(1)-f(-1)-2 f\left(\frac{1}{2}\right)+2 f\left(-\frac{1}{2}\right) \leqslant 6 F,
+$$
+因此 $F \geqslant \frac{1}{4}$.
+另一方面, 假定 $F=\frac{1}{4}$, 从上式看出必有
+$$
+f(1)=f\left(-\frac{1}{2}\right)=\frac{1}{4}, f(-1)=f\left(\frac{1}{2}\right)=-\frac{1}{4},
+$$
+可确定 $a_1=c_1=0, b_1=-\frac{3}{4}$, 故而使 $F=\frac{1}{4}$ 的函数 $f(x)$ 是存在的: $f(x)= x^3-\frac{3}{4} x$, 因此 $F$ 的最小值为 $\frac{1}{4}$.
+%%<REMARK>%%
+注:相应地, 原问题中使 $F$ 取到最小值的数组 $(a, b, c)= \left(6,-\frac{45}{4}, \frac{13}{2}\right)$.
+若记 $x^3-a x^2-b x-c=F(x)$, 那么本题开始所做的工作实质上是将 "求 $\max _{1 \leqslant x \leqslant 3}|F(x)|$ 最小值" 的问题化归为 "求 $\max _{-1 \leqslant x \leqslant 1}|F(x+2)|$ 最小值", 即 "求 $\max _{-1 \leqslant x \leqslant 1}|f(x)|$ 最小值" 的问题.
+这样的转化虽不是必须的, 然而, 一旦化归为关于原点对称的区间 $[-1,1]$ 考虑问题, 经过适当取点得到 (1) 至 (4) 式后, 较易观察出如何对 $F$ 进行估计, 运算量也控制在较小的程度 (读者不妨尝试写出不做代换但实质相同的解法, 并比较一下运算量和直观性).
+%%PROBLEM_END%%
+
+

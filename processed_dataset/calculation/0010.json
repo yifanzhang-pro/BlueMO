@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 设集合 $A=\\left\\{(x, y, z) \\mid \\log _{\\frac{1}{4}}\\left(x^4+y^4+z^4+1\\right) \\geqslant \\log _4 \\frac{1}{x}+\\log _4 \\frac{1}{y}+\\log _4 \\frac{1}{z}-1\\right\\}$. 求 $|A|$.",
+    "solution": "分析:无疑应从考察 $(x, y, z)$ 满足的条件人手.\n解由 $\\log _{\\frac{1}{4}}\\left(x^4+y^4+z^4+1\\right) \\geqslant \\log _4 \\frac{1}{x}+\\log _4 \\frac{1}{y}+\\log _4 \\frac{1}{z}-1$ 得\n$$\nx^4+y^4+z^4+1 \\leqslant 4 x y z, x, y, z>0 .\n$$\n又由算术几何平均不等式, 得\n$$\nx^4+y^4+z^4+1 \\geqslant 4 x y z,\n$$\n其中等号当且仅当 $x=y=z=1$ 时成立.\n于是\n$$\n\\begin{gathered}\nx^4+y^4+z^4+1=4 x y z . \\\\\nx=y=z=1 .\n\\end{gathered}\n$$\n从而所以, $|A|=1$.",
+    "remark": "",
+    "figures": []
+}

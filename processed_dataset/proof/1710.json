@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设 $L$ 在 $\\triangle A B C$ 的边 $B A$ 上,延长 $C A$ 至 $K$ 使 $\\angle C K B=\\frac{1}{2} \\angle C L B$, 延长 $C B$ 至 $M$ 使 $\\angle C M A=\\frac{1}{2} \\angle C L A$. 设 $\\triangle C M K$ 的外心为 $O$, 则 $O L \\perp A B$.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c4i10.png>),作 $\\triangle C M K$ 外接圆 $W$, 设 $M A \\cap W=\\{S\\}, K B \\cap W=\\{R\\}$, 则 $\\angle C O S=2$ • $\\angle C M S=\\angle C L A, \\angle C O R=2 \\cdot \\angle C K R=\\angle C L B$. 从而 $\\angle C O S+\\angle C O R=\\angle C L A+\\angle C L B=180^{\\circ}$. 所以 $S, O 、 R$ 三点共线.\n对 $C 、 L 、 M 、 S 、 R 、 K$ 使用帕斯卡定理知 $C P \\cap S R=P, C P$ 表示过 $C$ 的圆 $W$ 的切线, $C M \\cap K R=B, C K \\cap S M=A$, 则 $P 、 B 、 A$ 三点共线.\n从而过 $C$ 的切线、SR、 $A B$ 交于点 $P$. 由 $\\angle O O R= \\angle C L B$ 知 $C 、 O 、 L 、 P$ 共圆.\n从而 $\\angle O L B=\\angle O L A=90^{\\circ}$, 即 $O L \\perp A B$. 注此题用到了帕斯卡定理:\n如图(<FilePath:./images/volume7/figures/fig-c4i11.png>), 对圆内接六边形 $A B C D E F$, 设 $A B \\cap D E=\\{X\\}, B C \\cap E F=\\{Y\\}, C D \\cap F A=\\{Z\\}$, 则 $X$ 、 $Y 、 Z$ 三点共线.\n这是一个很有用的结论.\n其证明见习题 2 第 16 题.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4i10.png",
+        "./images/volume7/figures/fig-c4i11.png"
+    ]
+}

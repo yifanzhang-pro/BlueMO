@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 给定 25 人, 其中每 5 人可以组成一个委员会, 且每两个委员会至多有一个公共成员.\n求证: 委员会的个数不多于 30 .",
+    "solution": "将每两个委员至多有一个公共成员理解为 $\\left|A_i \\cap A_j\\right| \\leqslant 1$, 则应记 $A_i$ 为第 $i$ 个委员会的人的集合.\n再令 $X$ 为给定的 25 个人的集合, $F=\\left\\{A_1\\right.$, $\\left.A_2, \\cdots, A_k\\right\\}$. 我们来计算所有二人组的总数 $S$. 一方面, $\\left|A_i\\right|=5$, 从而每个 $A_i$ 中有 $\\mathrm{C}_5^2=10$ 个二人组, 于是, $F$ 中的 $k$ 个集合可产生 $10 k$ 个二人组.\n由于 $\\left|A_i \\cap B_j\\right| \\leqslant 1$, 这 $10 k$ 个二人组互异.\n所以, $S \\geqslant 10 k$. 另一方面, 设 $|X|=25$, 则 $X$ 中的二人组的总数为 $S=\\mathrm{C}_{25}^2$. 所以, $\\mathrm{C}_{25}^2=S \\geqslant 10 k$, 所以, $k \\leqslant 30$. 命题获证.",
+    "remark": "",
+    "figures": []
+}

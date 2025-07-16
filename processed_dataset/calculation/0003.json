@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例5. 设实数$a<b$, $D=[a\\,,\\,b]$ ,函数 $f(x)=k-\\sqrt{x+2}\\,,\\;x\\in D$ 的值域为 $E$. 若 $D=E$, 求实数 $k$ 的取值范围.",
+    "solution": "解: 易知, 当 $x \\geqslant-2$ 时 $f(x)=k-\\sqrt{x+2}$ 为减函数.\n所以 $D=E=[a, b]$ 等价于方程组\n$$\n\\left\\{\\begin{array}{l}\nk-\\sqrt{a+2}=b, \\\\\nk-\\sqrt{b+2}=a\n\\end{array}\\right.\n$$\n有实数解, 且 $a<b$.\n(1)一(2)得\n$$\n\\begin{aligned}\n& \\sqrt{b+2}-\\sqrt{a+2}=b-a, \\\\\n& \\frac{b-a}{\\sqrt{b+2}+\\sqrt{a+2}}=b-a .\n\\end{aligned}\n$$\n因为 $a<b$, 所以\n$$\n\\sqrt{b+2}+\\sqrt{a+2}=1,\n$$\n即\n$$\n\\sqrt{a+2}=1-\\sqrt{b+2} \\text {. }\n$$\n代入式(1)得\n$$\nk=b+1-\\sqrt{b+2} .\n$$\n令 $\\sqrt{b+2}=t$. 由式 (3) 知 $0 \\leqslant t \\leqslant 1$. 于是, 有\n$$\nk=t^2-t-1=\\left(t-\\frac{1}{2}\\right)^2-\\frac{5}{4} .\n$$\n故所求 $k$ 的范围是 $-\\frac{5}{4} \\leqslant k \\leqslant-1$.\n如果 $A 、 B$ 是两个相等的数集, 那么可以得到 $A=B$ 的两个非常有用的必要条件:\n(1) 两个集合的元素之和相等;\n(2) 两个集合的元素之积相等.",
+    "remark": "",
+    "figures": []
+}

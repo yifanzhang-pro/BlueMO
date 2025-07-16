@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter7.tex",
+    "text": "算二次方法.\n设 $A=\\left\\{a_1, a_2, \\cdots, a_m\\right\\}, B=\\left\\{b_1, b_2, \\cdots, b_n\\right\\}$ 是两个有限集合, 将所有形如 $\\left(a_i, b_j\\right)(1 \\leqslant i \\leqslant m, 1 \\leqslant j \\leqslant n)$ 的有序对构成的集合称为 $A$ 与 $B$ 的笛卡儿乘积, 并用记号 $A \\times B$ 表示.\n对任意 $a_i \\in A$, 设 $C_i=\\left\\{\\left(a_i, b\\right) \\mid b \\in B\\right\\}(i=1,2, \\cdots, m)$, 对任意 $b_j \\in B$, 设 $D_j=\\left\\{\\left(a, b_j\\right) \\mid a \\in A\\right\\}(j=1,2$, $\\cdots, n)$, 于是 $|A \\times B|=\\sum_{i=1}^m\\left|C_i\\right|=\\sum_{j=1}^n\\left|D_j\\right|$, 这个等式叫做富比尼(Fubini) 原理, 又叫做算二次原理.\n运用算二次原理的方法主要体现在对同一对象从两种不同的角度去进行计数, 再加以综合, 以便推出所欲取得的结果.",
+    "figures": []
+}

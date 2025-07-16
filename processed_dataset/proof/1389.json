@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题13. 已知 $n$ 个实数 $x_1, x_2, \\cdots, x_n$ 的算术平均值为 $a$. 证明:\n$$\n\\sum_{k=1}^n\\left(x_k-a\\right)^2 \\leqslant \\frac{1}{2}\\left(\\sum_{k=1}^n\\left|x_k-a\\right|\\right)^2 .\n$$",
+    "solution": "先证明 $a=0$ 时的情况.\n此时, $\\sum_{k=1}^n x_k^2=-2 \\sum_{1 \\leqslant i<j \\leqslant n} x_i x_j \\leqslant 2 \\sum_{i \\neq j}^n\\left|x_i x_j\\right|$, 于是 $2 \\sum_{k=1}^n x_k^2 \\leqslant \\sum_{k=1}^n x_k^2+2 \\sum_{i \\neq j}^n\\left|x_i x_j\\right|=\\left(\\sum_{k=1}^n\\left|x_k\\right|\\right)^2$, 结论成立.\n当 $a \\neq 0$ 时, 令 $y_k=x_k-a$, 则 $y_1, y_2, \\cdots, y_n$ 算术平均值为 0 ,于是 $\\sum_{k=1}^n y_k^2 \\leqslant \\frac{1}{2} \\cdot\\left(\\sum_{k=1}^n\\left|y_k\\right|\\right)^2$, 故原不等式成立.",
+    "remark": "",
+    "figures": []
+}

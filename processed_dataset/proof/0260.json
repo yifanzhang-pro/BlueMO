@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 求所有正整数 $m 、 n$, 使得 $\\left|12^m-5^n\\right|=7$.",
+    "solution": "模 4 即知方程\n$$\n12^m-5^n=-7\n$$\n无正整数解.\n方程\n$$\n12^m-5^n=7 . \\label{eq1}\n$$\n显然有解 $m=n=1$. 下面证明当 $m>1$ 时它无正整数解.\n将 式\\ref{eq1}模 3 得 $-(-1)^n \\equiv 1(\\bmod 3)$, 故 $n$ 为奇数, 因此 $5^n \\equiv 5(\\bmod 8)$. 又 $m \\geqslant 2$, 故 $8 \\mid 12^m$.\n将 式\\ref{eq1} 模 8 得出 $-5 \\equiv 7(\\bmod 8)$, 这不可能.\n所以 $m=1$, 从而 $n=1$.",
+    "remark": "",
+    "figures": []
+}

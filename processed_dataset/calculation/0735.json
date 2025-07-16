@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题8. 已知 $\\triangle A B C$ 的三边 $a, b, c$ 成等比数列.\n$a 、 b 、 c$ 所对的角依次为 $\\angle A$ 、 $\\angle B 、 \\angle C$, 则 $\\sin B+\\cos B$ 的取值范围是 ( ).\n(A) $\\left(1,1+\\frac{\\sqrt{3}}{2}\\right]$\n(B) $\\left[\\frac{1}{2}, 1+\\frac{\\sqrt{3}}{2}\\right]$\n(C) $(1, \\sqrt{2}]$\n(D) $\\left[\\frac{1}{2}, \\sqrt{2}\\right]$",
+    "solution": "C. 由 $a c=b^2=a^2+c^2-2 a c \\cos B \\geqslant 2 a c-2 a c \\cos B \\Rightarrow \\cos B \\geqslant \\frac{1}{2} \\Rightarrow 0<B \\leqslant \\frac{\\pi}{3}$. 故 $\\sin B+\\cos B=\\sqrt{2} \\sin \\left(B+\\frac{\\pi}{4}\\right) \\in(1, \\sqrt{2}]$.",
+    "remark": "",
+    "figures": []
+}

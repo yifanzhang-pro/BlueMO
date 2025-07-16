@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例14. 设 $a_i>0, i=1,2, \\cdots, n, m>0$ 且满足 $\\sum_{i=1}^n \\frac{1}{1+a_i^m}=1$. 求证:\n$$\na_1 a_2 \\cdots a_n \\geqslant(n-1)^{\\frac{n}{m}} .\n$$",
+    "solution": "证明一令 $x_i=\\frac{1}{1+a_i^m}$, 则 $a_i^m=\\frac{1-x_i}{x_i}$, 且 $x_i>0, i=1,2, \\cdots, n$, $\\sum_{i=1}^n x_i=1$\n于是 $\\quad a_1^m a_2^m \\cdots a_n^m=\\frac{\\left(x_2+\\cdots+x_n\\right) \\cdots\\left(x_1+x_2+\\cdots+x_{n-1}\\right)}{x_1 x_2 \\cdots x_n}$\n$$\n\\begin{aligned}\n& \\geqslant \\frac{(n-1) \\sqrt[n-1]{x_2 x_3 \\cdots x_n} \\cdots(n-1) \\sqrt[n-1]{x_1 x_2 \\cdots x_{n-1}}}{x_1 x_2 \\cdots x_n} \\\\\n& =(n-1)^n\n\\end{aligned}\n$$\n故命题成立.",
+    "remark": "",
+    "figures": []
+}

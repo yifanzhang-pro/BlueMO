@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise20.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 今有 10 个互不相同的非零数, 它们之中任意两个数的和与积中, 至少有一个是有理数.\n证明: 每个数的平方都是有理数.",
+    "solution": "首先注意到, 只要存在某个 $x \\in \\mathbf{Q}$, 则对其余任意数 $t$, 由 $x+t$ 与 $x t$ 之一为有理数即可推知 $t \\in \\mathbf{Q}$ (注意这些数均非零), 从而 10 个数均为有理数.\n作一个 2 色完全图 $K_{10}$, 在它的 10 个顶点上分别放上这 10 个数.\n如果某两数的和为有理数, 就在相应的顶点间连一条蓝边, 否则, 这两数的积必为有理数,那么连一条红边.\n由 Ramsey 定理得, 该图中必有同色三角形.\n(1)若存在蓝色三角形,则表明存在 3 个数 $x, y, z$ 两两之和为有理数, 故 $x, y, z \\in \\mathbf{Q}$, 从而 10 个数均为有理数.\n(2)若存在红色三角形,则表明存在 3 个数 $x, y, z$ 两两之积为有理数, 因而 $x^2=\\frac{x y \\cdot x z}{y z} \\in \\mathbf{Q}$. 设 $x=m \\sqrt{a}$, 其中 $a \\in \\mathbf{Q}, m= \\pm 1$. 由于 $x y= m \\sqrt{a} y=b \\in \\mathbf{Q}$, 所以 $y=\\frac{b \\sqrt{a}}{m a}=c \\sqrt{a}$, 其中 $c \\in \\mathbf{Q}, c \\neq m$. 对其余任意数 $t$, 如果 $x t$ 或 $y t$ 为有理数, 那么经过类似的讨论, 可知 $t=d \\sqrt{a}$, 其中 $d \\in \\mathbf{Q}$, 因而 $t^2 \\in \\mathbf{Q}$. 反之, 如果 $x t, y t \\notin \\mathbf{Q}$, 则 $x+t, y+t \\in \\mathbf{Q}$, 但 $(x+t)-(y+t)= (m-c) \\sqrt{a} \\notin \\mathbf{Q}$,矛盾.\n综上, 我们证明了或者每个数都是有理数, 或者每个数的平方都是有理数, 这正是所要证明的.",
+    "remark": "",
+    "figures": []
+}

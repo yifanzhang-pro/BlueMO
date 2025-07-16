@@ -1,0 +1,257 @@
+
+%%TEXT_BEGIN%%
+存在性问题及组合问题中的不等式的证明.
+在数学竟赛中常常要证明存在具有某些性质的组合结构, 解这类问题的基本方法有下列几种.
+1. 反证法和利用极端原理(第十讲例 $1 \sim 8$ ).
+2. 利用抽屉原理、平均值原理或图形重叠原理(第二讲例 $1 \sim 3$, 例 $5 \sim 11$ 以及本讲中例 1).
+3. 计数方法(第六讲例 2 , 例 $12 \sim 14$, 第八讲例 7 8).
+4. 染色方法与赋值方法 (第九讲例 2(1), 例 5 6).
+5. 数学归纳法(第五讲例 2 ,第十二讲例 6 ).
+6. 组合分析法 (第五讲例 3 6).
+7. 构造法(第十二讲例 $1 \sim 6$ ).
+8. 利用介值原理 (参看本讲中例 7 ).
+有时我们不仅要证明具有某些性质的组合结构是存在的, 而且要证明其个数在一定的范围内, 也就是要证明一个组合不等式, 上述方法中的前 6 种都可用于组合不等式的证明,第六讲例 12 ,第七讲例 4 ,例 6 等等都是证明组合不等式的例子.
+面我们还将举出一些例子加以说明.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 在面积为 1 的平面图形内任意放人 9 个面积为 $\frac{1}{5}$ 的小正方形.
+证明:其中必有两个小正方形, 它们重叠部分的面积不小于 $\frac{1}{45}$.
+%%<SOLUTION>%%
+证明:设小正方形为 $A_1, A_2, \cdots, A_9$, 并用 $\left|A_i\right|$ 表示 $A_i$ 的面积 $(i=1$, $2, \cdots, 9)$. 因为 $\sum_{i=1}^n\left|A_i\right|=\frac{9}{5}>1$. 故必有两个小正方形的面积是重叠的, 若对任意 $1 \leqslant i<j \leqslant 9,\left|A_i \cap A_j\right|<\frac{1}{45}$, 则 $A_1, A_2, \cdots, A_9$ 覆盖的面积为 $\left|A_1 \cup A_2 \cup \cdots \cup A_9\right| \geqslant \sum_{i=1}^9\left|A_i\right|-\sum_{1 \leqslant i<j \leqslant 9}\left|A_i \cap A_j\right|>9 \times \frac{1}{5}-\mathrm{C}_9^2 \times \frac{1}{45}=1$. 这与 $A_1, A_2, \cdots, A_9$ 都在面积为 1 的图形内, 应有 $\left|A_1 \cup A_2 \cup \cdots \cup A_9\right| \leqslant 1$ 矛盾.
+故存在 $1 \leqslant i<j \leqslant 9$, 使两个小正方形 $A_i$ 与 $A_j$ 重叠的面积
+$$
+\left|A_i \cap A_j\right| \geqslant \frac{1}{45}
+$$
+%%<REMARK>%%
+注:本题证明中除用了反证法和容斥原理外, 还用到了下列显然成立的图形重叠原理.
+图形重叠原理把面积分别为 $S_1, S_2, \cdots, S_n$ 的 $n$ 个平面图形 $A_1$, $A_2, \cdots, A_n$ 以任意方式放人一个面积为 $S$ 的平面图形 $A$ 内.
+(1) 若 $S_1+S_2+\cdots+S_n>S$, 则存在两个平面图形 $A_i$ 与 $A_j(1 \leqslant i< j \leqslant n$ ) 有公共内点;
+(2) 若 $S_1+S_2+\cdots+S_n<S$, 则 $A$ 内必存在一点不属于 $A_1, A_2, \cdots, A_n$ 中任何一个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 一个社团内, 每两个人不是友好的就是敌对的.
+设这个社团共有 $n$ 个人和 $q$ 个友好对子, 并且任何三人中至少有两个人是敌对的.
+证明: 这个社团至少存在一个成员, 他的敌人组成的集合中友好对子不多于 $q\left(1-\frac{4 q}{n^2}\right)$. 
+%%<SOLUTION>%%
+证法一只要证明存在一名成员 $a$ 使得两人中有一人是 $a$ 或有一人与 $a$ 友好的友好对子个数不少于 $q-q\left(1-\frac{4 q}{n^2}\right)=\frac{4 q^2}{n^2}$.
+设 $n$ 个人为 $a_1, a_2, \cdots, a_n$, 这 $n$ 个人中友好对子组成的集合为 $S$, 与 $a_i$ 友好的人的个数为 $d_i(i=1,2, \cdots, n)$, 于是 $\sum_{i=1}^n d_i=2|S|=2 q$, 作 $n \times n$ 数表,其中第 $i$ 行第 $j$ 列处的数为
+$$
+x_{i j}=\left\{\begin{array}{l}
+1, i \neq j \text { 且 } a_i \text { 与 } a_j \text { 友好, } \\
+0, i=j \text { 或 } i \neq j \text { 且 } a_i \text { 与 } a_j \text { 敌对, }
+\end{array} i, j=1,2, \cdots, n .\right.
+$$
+则 $d_i=\sum_{j=1}^n x_{i j}=\sum_{j=1}^n x_{j i}(i=1,2, \cdots, n)$, 且 $\sum_{j=1}^n x_{i j} d_j$ 表示这样一类友好对子的个数, 这类对子中或有一人是 $a_i$ 或有一人与 $a_i$ 友好 (因为任何三人中必有两人是敌对的,故此式中没有重复计数), 于是 $|S|-\sum_{j=1}^n x_{i j} d_j$ 表示 $a_i$ 的敌人中友好对子的个数.
+由柯西不等式有
+$$
+\sum_{i=1}^n \sum_{j=1}^n x_{i j} d_j=\sum_{j=1}^n\left(\sum_{i=1}^n x_{i j}\right) d_j=\sum_{j=1}^n d_j^2 \geqslant \frac{\left(\sum_{i=1}^n d_j\right)^2}{\sum_{j=1}^n 1^2}=\frac{4 q^2}{n},
+$$
+即 $\frac{1}{n} \sum_{i=1}^n \sum_{j=1}^n x_{i j} d_j \geqslant \frac{4 q^2}{n^2}$, 故由平均值原理知道: 存在 $i_0\left(1 \leqslant i_0 \leqslant n\right)$ 使得 $\sum_{j=1}^n x_{i_0 j} d_j \geqslant \frac{4 q^2}{n^2}$, 故 $a_{i_0}$ 的敌人集合中友好对子的个数为 $|S|-\sum_{j=1}^n x_{i_0 j} d_j \leqslant q-\frac{4 q^2}{n^2}=q\left(1-\frac{4 q}{n^2}\right)$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 一个社团内, 每两个人不是友好的就是敌对的.
+设这个社团共有 $n$ 个人和 $q$ 个友好对子, 并且任何三人中至少有两个人是敌对的.
+证明: 这个社团至少存在一个成员, 他的敌人组成的集合中友好对子不多于 $q\left(1-\frac{4 q}{n^2}\right)$. 
+%%<SOLUTION>%%
+证法二用 $n$ 个点 $A_1, A_2, \cdots, A_n$ 表示社团内 $n$ 个人,若两人友好, 则对应点的连线染红色; 若两人敌对, 则对应点的连线染蓝色, 得到一个 2 色完全图 $K_n$. 设从 $A_i$ 出发有 $d_i$ 条红边 (即与 $A_i$ 友好的人有 $d_i$ 个) 和 $n-1-d_i$ 条蓝边.
+于是
+$$
+\sum_{i=1}^n d_i=2 q . \label{eq1}
+$$
+设两边蓝一边红的三角形个数为 $A$, 二边红一边蓝的三角形个数为 $B$. 依题目条件,不存在三边都为红色的三角形.
+所以
+$$
+B=\sum_{i=1}^n \mathrm{C}_{d_i}^2 \text { (当 } d_i=0 \text { 或 } 1 \text { 时, } \mathrm{C}_{d_i}^2=\frac{1}{2} d_i\left(d_i-1\right)=0 \text { ). } \label{eq2}
+$$
+以 $A_1, A_2, \cdots, A_n$ 中点为顶点, 两条不同色的边组成的角叫做异色角, 则异色角的总数为
+$$
+2(A+B)=\sum_{i=1}^n d_i\left(n-1-d_i\right) . \label{eq3}
+$$
+由式\ref{eq3}并利用\ref{eq1}、式\ref{eq2}和柯西不等式得
+$$
+\begin{aligned}
+A & =\frac{1}{2} \sum_{i=1}^n d_i\left(n-1-d_i\right)-B \\
+& =\frac{1}{2} \sum_{i=1}^n d_i\left(n-1-d_i\right)-\frac{1}{2} \sum_{i=1}^n d_i\left(d_i-1\right) \\
+& =\frac{n}{2} \sum_{i=1}^n d_i-\sum_{i=1}^n d_i^2 \leqslant \frac{n}{2} \sum_{i=1}^n d_i-\frac{1}{n}\left(\sum_{i=1}^n d_i\right)^2 \\
+& =n q-\frac{4 q^2}{n}=n q\left(1-\frac{4 q}{n^2}\right) . \label{eq4}
+\end{aligned}
+$$
+设 $A_i$ 的敌人集合中一个友好对子为 $B_j, B_k$, 于是 $\triangle A_i B_j B_k$ 为两边蓝一边红的三角形.
+将红边所对顶点为 $A_i$ 的一边红两边蓝的三角形个数记为 $x_i$, 则 $x_i$ 也是 $A_i$ 敌人集合中友好对子的个数, 于是 $\sum_{i=1}^n x_i=A$, 由式\ref{eq4}得
+$\frac{1}{n} \sum_{i=1}^n x_i=\frac{1}{n} A \leqslant q\left(1-\frac{4 q}{n^2}\right)$. 由平均值原理知存在一个 $x_i$ 满足 $x_i \leqslant q\left(1-\frac{4 q}{n^2}\right)$, 即 $A_i$ 的敌人集合中友好对子的个数不小于 $q\left(1-\frac{4 q}{n^2}\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $S$ 是 2002 个元素组成的集合, $N$ 为整数, 满足 $0 \leqslant N \leqslant 2^{2002}$. 证明: 可将 $S$ 的所有子集染成黑色或白色,使下列条件成立:
+(1)任何两个白色子集的并集是白色;
+(2)任何两个黑色子集的并集是黑色;
+(3)恰好有 $N$ 个白色子集.
+%%<SOLUTION>%%
+证明:考虑 $S=S_n$ 中有 $n$ 个元素的一般情形, 这时 $N$ 为满足 $0 \leqslant N \leqslant 2^n$ 的整数, 并设 $S_n=\left\{a_1, a_2, \cdots, a_n\right\}$, 对 $n$ 用数学归纳法证明.
+当 $n=1$ 时, 若 $N=0$, 则将空集 $\varnothing$ 及 $\left\{a_1\right\}$ 都染成黑色, 符合题目要求; 若 $N=1$, 则将 $\varnothing$ 染成黑色, $\left\{a_1\right\}$ 染成白色, 符合题目要求; 若 $N=2$, 则将 $\varnothing 及 \left\{a_1\right\}$ 都染成白色, $\left\{a_1, a_2\right\}$ 染成黑色,符合题目要求.
+设对 $n$ 元集合 $S_n$ 及整数 $0 \leqslant N \leqslant 2^n$, 存在满足题目条件 (1), (2), (3) 的染色方法,考虑 $n+1$ 元集 $S_{n+1}=S_n \cup\left\{a_{n+1}\right\}$.
+(i)若 $0 \leqslant N \leqslant 2^n$, 则由归纳假设,存在一种染色方法将 $S_n$ 的所有子集染成黑色或白色使得满足题目条件 (1),(2),(3). 这时将 $S_{n+1}$ 中所有含 $a_{n+1}$ 的子集全染成黑色,于是仍满足题目条件.
+(ii) 若 $2^n<N \leqslant 2^{n+1}$, 不妨设 $N=2^n+k\left(k=1,2, \cdots, 2^n\right)$, 则由归纳假设知存在 $S_n$ 的子集的一种染色方法使得满足题目条件 (1) (2) 且恰有 $k$ 个白色子集.
+再 $S_{n+1}$ 中将包含 $a_{n+1}$ 的所有子集 (共 $2^n$ 个)染成白色, 于是题目条件 (1), (2)仍然满足, 且一共有 $N=2^n+k$ 个子集被染成白色, 即条件(3)也满足,这就完成了对 $S_n$ 的归纳证明,特别取 $n=2002$ 便知原题结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 药房里有若干种药, 其中一部分是烈性的, 药剂师用这些药配成 68 副药方, 每副药方里恰有 5 种药, 其中至少有一种是烈性的,并且使得任选 3 种药都恰有一副药方包含它们.
+试问: 全部药方中是否一定有一副药方至少含有 4 种烈性药?(证明或否定).
+%%<SOLUTION>%%
+解法一设共有 $n$ 种药,一共可形成 $\mathrm{C}_n^3$ 个"三药组". 另一方面每个"三药组"恰有一副药方包含它, 每副药方可形成 $\mathrm{C}_5^3=10$ 个 "三药组", 68 副药方一共可形成 $68 \times 10=680$ 副"三药组",所以 $\mathrm{C}_n^3=680$, 故 $n=17$.
+设共有 $r$ 种烈性药, 如果每副药方中至多含 3 种烈性药, 并且考虑含 1 种烈性药 2 种非烈性药的"三药组", 并称之为 " $k-$ 三药组", 那么一共有 $\mathrm{C}_r^1 \mathrm{C}_{17-r}^2$ 个" $k$ 一三药组", 另一方面因为每 3 种烈性药恰有一副药方包含它, 故有 $\mathrm{C}_r^3$ 副药方恰含有 3 种烈性药, 每副这样的药方含有 $\mathrm{C}_3^1 \mathrm{C}_2^2=3$ 个 " $k$ 一三药组", 其余
+$68-\mathrm{C}_r^3$ 副药方只含 1 种或 2 种烈性药, 它们中每一副可形成 $\mathrm{C}_1^1 \mathrm{C}_4^2=6$ 或 $\mathrm{C}_2^1 \mathrm{C}_3^2=6$ 种 " $k$ 一三药组", 所以一共可形成 $3 \mathrm{C}_r^3+6\left(68-\mathrm{C}_r^3\right)$ 个 " $k$ 一三药组", 故得
+$$
+3 \mathrm{C}_r^3+6\left(68-\mathrm{C}_r^3\right)=r \mathrm{C}_{17-r}^2,
+$$
+整理得 $r^3-18 r+137 r=408$. 两边考虑模 5 同余得 $3 \equiv r^3-3 r^2+2 r= r(r-1)(r-2)(\bmod 5)$. 但 $r \equiv 0,1,2,3,4(\bmod 5)$ 时,上式均不成立,矛盾.
+这就说明假设每副药方中至多只有 3 种烈性药是不正确的, 故必有一副药方中至少含 4 种烈性药.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 药房里有若干种药, 其中一部分是烈性的, 药剂师用这些药配成 68 副药方, 每副药方里恰有 5 种药, 其中至少有一种是烈性的,并且使得任选 3 种药都恰有一副药方包含它们.
+试问: 全部药方中是否一定有一副药方至少含有 4 种烈性药?(证明或否定).
+%%<SOLUTION>%%
+解法二同解法一可求出共有 17 种药.
+设烈性药有 $r$ 种: $\alpha_1, \alpha_2, \cdots, \alpha_r$ 且假设任何一副药方里至多只含有 3 种烈性药.
+设包含 $\alpha_i$ 的药方有 $k_i$ 副 $(1 \leqslant i \leqslant r)$, 一方面含 $\alpha_i$ 的"三药组"有 $\mathrm{C}_{16}^2=120$ 个.
+另一方面, 每副含 $\alpha_i$ 的药方中有 $\mathrm{C}_4^2=6$ 个含 $\alpha_i$ 的 "三药组", 所以 $6 k_i=120, k_i=20(1 \leqslant i \leqslant r)$. 设含 $\alpha_i, \alpha_j(1 \leqslant i<j \leqslant r)$ 的药方有 $k_{i j}$ 副.
+一方面含 $\alpha_i, \alpha_j$ 的 "三药组" 有 $\mathrm{C}_{15}^1=15$ 个, 另一方面每副含 $\alpha_i, \alpha_j$ 的药方中包含有 $\mathrm{C}_3^1=3$ 个含 $\alpha_i, \alpha_j$ 的"三药组", 所以 $3 k_{i j}=15$, 故 $k_{i j}=5(1 \leqslant i<j \leqslant r)$. 设同时含 $\alpha_i, \alpha_j, \alpha_t(1 \leqslant i<j<t \leqslant r)$ 的药方有 $k_{i j t}$ 副, 由已知条件得 $k_{i j t}=1$, 且由假设知含有 $S \geqslant 4$ 种烈性药 $\alpha_{i_1}, \alpha_{i_2}, \cdots, \alpha_{i_s}$ 的药方数 $k_{i_1 i_2 \cdots i_s}=0\left(1 \leqslant i_1<i_2<\cdots<i_s \leqslant r\right.$, $S \geqslant 4)$. 于是,一方面, 由已知条件知所有 68 副药方都至少含有一种烈性药, 另一方面, 由容厉原理, 至少含一种烈性药的药方数目应为
+$$
+\begin{aligned}
+\sum_{i=1}^r k_i-\sum_{1 \leqslant i<j \leqslant r} k_{i j}+\sum_{1 \leqslant i<j<s \leqslant r} k_{i j s} & =20 r-5 \mathrm{C}_r^2+\mathrm{C}_r^3 \\
+& =\frac{1}{6}\left(r^3-18 r^2+137 r\right) .
+\end{aligned}
+$$
+于是 $\frac{1}{6}\left(r^3-18 r^2+137 r\right)=\hat{6} 8$, 即 $r^3-18 r^2+137 r=408$.
+下同解法一.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $A$ 是一个有 $n$ 个元素的集合, $A$ 的 $m$ 个子集 $A_1, A_2, \cdots, A_m$ 两两互不包含甲试证:
+(1) $\sum_{i=1}^m \frac{1}{\mathrm{C}_n^{\left|A_i\right|}} \leqslant 1$; (2) $\sum_{i=1}^m \mathrm{C}_n^{\left|A_i\right|} \geqslant m^2$.
+其中 $\left|A_i\right|$ 表示 $A_i$ 所含元素个数, $\mathrm{C}_n^{\left|A_i\right|}$ 表示从 $n$ 个不同元素中取 $\left|A_i\right|$ 个元素的组合数.
+%%<SOLUTION>%%
+证明:(1)所述不等式等价于
+$$
+\sum_{i=1}^m\left|A_i\right| !\left(n-\left|A_i\right|\right) ! \leqslant n ! . \label{eq1}
+$$
+一方面, $A$ 中 $n$ 个不同元素的全排列有 $n !$ 个.
+另一方面, 对 $A$ 的每个子集 $A_i$, 作 $A$ 中 $n$ 个元素的全排列如下:
+$$
+x_1 x_2 \cdots x_{\left|A_i\right|} y_1 y_2 \cdots y_{n-\left|A_i\right|},  \label{eq2}
+$$
+其中 $x_1 x_2 \cdots \cdots x_{\left|A_i\right|}$ 是 $A_i$ 中所有元素的全排列, 而 $y_1 y_2 \cdots y_{n-\left|A_i\right|}$ 是 $A_i$ 在 $A$ 中补集 ${ }_A A_i$ 的所有元素的全排列, 于是形如式\ref{eq2}的全排列有 $\left|A_i\right|$ ! (n-| $\left.A_i \mid\right)$ ! 个.
+下面证明, 当 $j \neq i$ 时, $A_j$ 对应的全排列与 $A_i$ 对应的全排列互不相同.
+事实上, 若 $A_j$ 对应的某个全排列
+$$
+x_1{ }^{\prime} x_2{ }^{\prime} \cdots x_{\left|A_j\right|}{ }^{\prime} y_1{ }^{\prime} y_2{ }^{\prime} \cdots y_{n-\mid A_j}{ }^{\prime}, \label{eq3}
+$$
+与 $A_i$ 对应的某个全排列式\ref{eq2}相同, 则当 $\left|A_j\right| \leqslant\left|A_i\right|$ 时, $x_1{ }^{\prime}=x_1, x_2{ }^{\prime}=x_2$, $\cdots, x_{\left|A_j\right|}{ }^{\prime}=x_{\left|A_j\right|}$, 即 $A_j \subseteq A_i$; 而当 $\left|A_j\right|>\left|A_i\right|$ 时, 有 $x_1=x_1{ }^{\prime}, x_2=x_2{ }^{\prime}$, $\cdots, x_{\left|A_i\right|}=x^{\prime}{ }_{\left|A_i\right|}$, 即 $A_i \subset A_j$, 这都与 $A_1, A_2, \cdots, A_m$ 两两互不包含的假设矛盾,故
+$$
+\sum_{i=1}^m\left|A_i\right| !\left(n-\left|A_i\right|\right) ! \leqslant n !
+$$
+即 $\sum_{i=1}^m \frac{1}{\mathrm{C}_n^{\left|A_i\right|}} \leqslant 1$.
+(2) 由 (1)及柯西不等式得
+$$
+\sum_{i=1}^m \mathrm{C}_n^{\left|A_i\right|} \geqslant\left(\sum_{i=1}^m \frac{1}{\mathrm{C}_n^{\left|A_i\right|}}\right)\left(\sum_{i=1}^m \mathrm{C}_n^{\left|A_i\right|}\right) \geqslant m^2 .
+$$
+%%<REMARK>%%
+注:本题来源于下列著名的 Sperner 定理:
+Sperner 定理设 $A$ 为 $n$ 元集, $A_1, A_2, \cdots, A_m$ 为 $A$ 的子集且两两互不包含, 则 $m$ 的最大值为 $\mathrm{C}_n^{\left[\frac{n}{2}\right]}$.
+证明由上例(1)有 $\sum_{i=1}^m \frac{1}{\mathrm{C}_n^{\left|A_i\right|}} \leqslant 1$, 并且 $\mathrm{C}_n^0, \mathrm{C}_n^1, \mathrm{C}_n^2, \cdots, \mathrm{C}_n^n$ 中以 $\mathrm{C}_n^{\left[\frac{n}{2}\right]}$ 为最大.
+所以 $\frac{m}{\mathrm{C}_n^{\left[\frac{n}{2}\right]}} \leqslant \sum_{i=1}^m \frac{1}{\mathrm{C}_n^{\left|A_i\right|}} \leqslant 1$, 即 $m \leqslant \mathrm{C}_n^{\left[\frac{n}{2}\right]}$. 另一方面 $A$ 的 $\mathrm{C}_n^{\left[\frac{n}{2}\right]}$ 个 $\left[\frac{n}{2}\right]$ 元子集两两互不包含,故 $m$ 的最大值为 $\mathrm{C}_n^{\left[\frac{n}{2}\right]}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 在某次竞赛中共有 $a$ 个参赛选手和 $b$ 个裁判, 其中 $b \geqslant 3$ 为奇数.
+设每一位裁判对每一位参赛选手的判决方式只有 "通过"或"不通过". 已知任意两个裁判至多对 $k$ 个参赛选手有相同的判决.
+证明: $\frac{k}{a} \geqslant \frac{b-1}{2 b}$. 
+%%<SOLUTION>%%
+证明:设 $a$ 个参赛选手为 $A_1, A_2, \cdots, A_a, b$ 个裁判为 $B_1, B_2, \cdots, B_b$. 若两个裁判 $B_i, B_j(i \neq j)$ 对选手 $A_m$ 的判决相同, 则将 $\left(B_i, B_j, A_m\right)$ 组成三元组, 这种三元组的个数记为 $S$. 一方面, 由已知条件知对任意一对裁判 $B_i$, $B_j(i \neq j)$, 至多存在 $k$ 个选手 $A_j$ 组成 $k$ 个 "三元组" $\left(B_i, B_j, A_m\right)$, 而 $B_i, B_j$ 有 $\mathrm{C}_b^2$ 种取法, 所以
+$$
+S \leqslant k \mathrm{C}_b^2 . \label{eq1}
+$$
+另一方面, 假设对选手 $A_m$ 有 $r_m$ 个裁判对 $A_m$ 的判决是 "通过", $t_m$ 个裁判对 $A_k$ 的判决是 "不通过", 于是 $r_m+t_m=b$ 且含 $A_m$ 的三元组恰有 $\mathrm{C}_{r_m}^2+\mathrm{C}_{t_m}^2$ 个, 故
+$$
+S=\sum_{m=1}^a\left(\mathrm{C}_{r_m}^2+\mathrm{C}_{t_m}^2\right)
+$$
+而
+$$
+\begin{aligned}
+\mathrm{C}_{r_m}^2+\mathrm{C}_{t_m}^2 & =\frac{1}{2}\left(r_m^2-r_m+t_m^2-t_m\right) \\
+& =\frac{1}{2}\left[\left(r_m+t_m\right)^2-\left(r_m+t_m\right)-2 r_m t_m\right] \\
+& =\frac{1}{2}\left(b^2-b-2 r_m t_m\right) .
+\end{aligned}
+$$
+因 $b$ 为奇数, 且 $r_m+t_m=b$, 所以 $r_m t_m \leqslant \frac{(b-1)(b+1)}{4}=\frac{b^2-1}{4}$, 故
+$$
+\mathrm{C}_{r_m}^2+\mathrm{C}_{t_m}^2 \geqslant \frac{1}{2}\left[b^2-b-\frac{2}{4}\left(b^2-1\right)\right]=\frac{1}{4}(b-1)^2 .
+$$
+所以
+$$
+S \geqslant a \cdot \frac{1}{4}(b-1)^2 . \label{eq2}
+$$
+由式\ref{eq1}及\ref{eq2}得 $k \cdot \mathrm{C}_b^2 \geqslant a \cdot \frac{1}{4}(b-1)^2$, 即 $\frac{k}{a} \geqslant \frac{b-1}{2 b}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. $S$ 是由同一条直线上 $6 n$ 个点构成的一个集合.
+随机地选择其中 $4 n$ 个点染成蓝色, 其余 $2 n$ 个点染成绿色.
+证明: 存在一条线段 $l$, 使 $l$ 上包含 $S$ 中 $3 n$ 个点, 其中 $2 n$ 个点为蓝色, $n$ 个点为绿色.
+%%<SOLUTION>%%
+解:将直线上的点依次记为 $x_1, x_2, \cdots, x_{6 n}$. 定义函数 $f(i)(i=1$, $2, \cdots, 3 n+1)$ 表示 $\left\{x_i, x_{i+1}, \cdots, x_{3 n-1+i}\right\}$ 中蓝色点的个数.
+于是, 我们只需证明存在 $j \in\{1,2, \cdots, 3 n+1\}$ 使 $f(j)=2 n$.
+事实上,一方面, 我们考虑 $f(i)$ 与 $f(i+1)$ 的关系.
+(1) 当 $x_{i+3 n}$ 与 $x_i$ 同色时, $f(i)=f(i+1)$;
+(2) 当 $x_{i+3 n}$ 为蓝色, $x_i$ 为绿色时, $f(i+1)=f(i)+1$;
+(3) 当 $x_{i+3 n}$ 为绿色, $x_i$ 为蓝色时, $f(i+1)=f(i)-1$.
+故总有 $|f(i+1)-f(i)| \leqslant 1$.
+另一方面, 所有蓝点个数为 $f(1)+f(3 n+1)=4 n$. 当 $f(1)=2 n$ 时, 结论成立; 当 $f(1)<2 n$ 时, $f(3 n+1)>2 n$; 当 $f(1)>2 n$ 时, $f(3 n+1)<2 n$, 又已证 $|f(i+1)-f(i)| \leqslant 1(i \in\{1,2, \cdots, 3 n+1\})$, 故必存在 $j \in\{1,2, \cdots, 3 n+1\}$ 使得 $f(j)=2 n$. 于是 $\left\{x_j, x_{j+1}, \cdots, x_{j+3 n-1}\right\}$ 这 $3 n$ 个点中恰有 $2 n$ 个蓝点和 $n$ 个绿点.
+%%<REMARK>%%
+注:本题的证明应用了下列显然成立的离散介值原理.
+离散介值原理设由整数 $f(1), f(2), \cdots, f(m)$ ( $m$ 为正整数) 组成的数列及整数 $A$ 满足:
+(1) $|f(i+1)-f(i)| \leqslant 1(i=1,2, \cdots, m-1)$;
+(2) $f(1) \leqslant A \leqslant f(m)$ 或 $f(1) \geqslant A \geqslant f(m)$.
+那么,存在整数 $j \in\{1,2, \cdots, m\}$ 使 $f(j)=A$.
+证明只证 $f(1) \leqslant A \leqslant f(m)$ 的情形.
+如果 $f(1)=A$ 或 $f(m)=A$, 则结论成立.
+下设 $f(1)<A<f(m)$. 如果对任意 $i=2,3, \cdots, m-1$ 有 $f(i) \neq A$, 那么必有正整数 $k(1<k<m)$ 使 $f(k) \leqslant A-1, f(k+1) \geqslant A+1$, 于是 $f(k+1)-f(k) \geqslant 2$, 这与已知条件(1) 矛盾.
+从而结论成立.
+除了离散介值原理外, 还有下列连续介值原理.
+连续介值原理设 $f(x)$ 在 $[a, b]$ 上连续, 且 $f(a)<A<f(b)$ (或 $f(a) >A>f(b))$, 则存在 $c \in(a, b)$ 使 $f(c)=A$.
+这个原理的证明要用到大学《数学分析》课程中的实数基本定理, 但许多国家的竞赛题中已默许使用这一原理.
+%%PROBLEM_END%%
+
+

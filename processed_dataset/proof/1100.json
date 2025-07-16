@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-3.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设 $P$ 为 $\\triangle A B C$ 内部或边界上一点, 点 $P$ 到三边的距离分别为 $P D 、 P E 、 P F$. 求证:\n$$\nP A+P B+P C \\geqslant 2(P D+P E+P F) .\n$$",
+    "solution": "证明:设 $P A=x, P B=y, P C=z, P D=p, P E=q, P F=r$, 其中 $D 、 E 、 F$ 为点 $P$ 在三边上的射影.\n则 $C 、 D 、 P 、 E$ 四点共圆, 得\n$$\n\\begin{aligned}\nD E & =\\sqrt{p^2+q^2+2 p q \\cos C} \\\\\n& =\\sqrt{(p \\sin B+q \\sin A)^2+(p \\cos B-q \\cos A)^2} \\\\\n& \\geqslant p \\sin B+q \\sin A,\n\\end{aligned}\n$$\n从而 $z=\\frac{D E}{\\sin C} \\geqslant \\frac{p \\sin B+q \\sin A}{\\sin C}$.\n同理可得\n$$\nx \\geqslant \\frac{r \\sin B+q \\sin C}{\\sin A}, y \\geqslant \\frac{r \\sin A+p \\sin C}{\\sin B} .\n$$\n于是\n$$\n\\begin{aligned}\nx+y+z & \\geqslant \\frac{r \\sin B+q \\sin C}{\\sin A}+\\frac{r \\sin A+p \\sin C}{\\sin B}+\\frac{p \\sin B+q \\sin A}{\\sin C} \\\\\n& \\geqslant 2(p+q+r),\n\\end{aligned}\n$$\n等号成立当且仅当 $\\triangle A B C$ 为正三角形, 且 $P$ 为 $\\triangle A B C$ 的中心.",
+    "remark": "",
+    "figures": []
+}

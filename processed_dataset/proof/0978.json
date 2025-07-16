@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例15 在锐角 $\\triangle A B C$ 中,\n(1) 求证: $\\tan A+\\tan B+\\tan C=\\tan A \\cdot \\tan B \\cdot \\tan C$;\n(2) 求证: $\\tan A+\\tan B+\\tan C \\geqslant 3 \\sqrt{3}$.",
+    "solution": "分析:三角恒等式的证明或从左到右、或从右到左、或由繁到简.\n本题隐含条件 $A+B+C=\\pi$, 可采用两角和的正切公式来证.\n第(2) 题利用基本不等式 $a+b+c \\geqslant 3 \\sqrt[3]{a b c}\\left(a, b, c \\in \\mathbf{R}^{+}\\right)$.\n证明 (1)由 $A+B=\\pi-C$ 得\n$$\n\\tan (A+B)=\\tan (\\pi-C),\n$$\n即\n$$\n\\frac{\\tan A+\\tan B}{1-\\tan A \\cdot \\tan B}=-\\tan C,\n$$\n去分母即得原等式成立.\n(2)因为 $\\tan A, \\tan B, \\tan C>0$, 所以\n$$\n\\tan A+\\tan B+\\tan C \\geqslant 3 \\sqrt[3]{\\tan A \\cdot \\tan B \\cdot \\tan C},\n$$\n即\n$$\n\\tan A \\cdot \\tan B \\cdot \\tan C \\geqslant 3 \\sqrt[3]{\\tan A \\cdot \\tan B \\cdot \\tan C}\n$$\n两边立方后再开方得 $\\tan A \\cdot \\tan B \\cdot \\tan C \\geqslant 3 \\sqrt{3}$, 即\n$$\n\\tan A+\\tan B+\\tan C \\geqslant 3 \\sqrt{3} .\n$$\n评注若将题设条件改成 $A+B+C=k \\pi, k \\in \\mathbf{Z}$, 且 $A+B+C \\neq k \\pi+ \\frac{\\pi}{2}, k \\in \\mathbf{Z}$, 结论仍成立.",
+    "remark": "",
+    "figures": []
+}

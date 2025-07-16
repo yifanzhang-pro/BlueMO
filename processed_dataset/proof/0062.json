@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题18: 设 $S$ 为满足下列条件的有理数集合:\n(1) 若 $a \\in S, b \\in S$, 则 $a+b \\in S, a b \\in S$;\n(2) 对任一个有理数 $r, 3$ 个关系 $r \\in S 、-r \\in S 、 r=0$ 中有且仅有一个成立.\n证明: $S$ 是由全体正有理数组成的集合.",
+    "solution": "解: 对任意的 $r \\in \\mathbf{Q}, r \\neq 0$, 由 (2) 知 $r \\in S,-r \\in S$ 之一成立.\n再由 (1), 若 $r \\in S$, 则 $r^2 \\in S$; 若 $-r \\in S$, 则 $r^2=(-r) \\cdot(-r) \\in S$. 总之, 对任意的非零 $r \\in \\mathbf{Q}$ 均有 $r^2 \\in S$. 取 $r=1$, 则 $1=1^2 \\in S$. 由 (1), $2=1+1 \\in S, 3=1+ 2 \\in S, \\cdots$, 可知全体正整数都属于 $S$. 设 $p, q \\in \\mathbf{N}$, 由 (1), $p q \\in S$. 又由前证知 $\\frac{1}{q^2} \\in S$, 所以 $\\frac{p}{q}=p q \\cdot\\left(\\frac{1}{q^2}\\right) \\in S$. 因此, $S$ 含有全体正有理数.\n再由(2)知, 0 及全体负有理数不属于 $S$, 即 $S$ 是由全体正有理数组成的集合.",
+    "remark": "",
+    "figures": []
+}

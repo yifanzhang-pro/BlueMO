@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 空间八个点两两连线, 并二染色其边, 证明 : 必存在三条无公共端点的同色线段.",
+    "solution": "如图(<FilePath:./images/volume12/figures/fig-c8a2.png>), 若不存在三条无公共端点的同色线段, 如图, 不妨设 $A_1 A_2$ 为红色.\n由假设 $A_3 A_4, A_5 A_8, A_6 A_7$ 三线段不可能都是蓝色, 不妨设 $A_3 A_4$ 为红色.\n由于 $A_1 A_2$, $A_3 A_4$ 为红色,得 $A_5, A_6, A_7, A_8$ 四点两两连线皆蓝色,同样可得 $A_1, A_2, A_3, A_4$ 四点两两连线皆红色.\n不妨设 $A_1 A_6$ 为蓝色, 则 $A_3 A_8$ 必为红色, 此时不论对 $A_4 A_5$ 染什么颜色,均与假设矛盾.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c8a2.png"
+    ]
+}

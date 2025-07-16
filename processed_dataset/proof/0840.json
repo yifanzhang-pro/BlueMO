@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 代数式\n$$\nr v z-r w y-s u z+s w x+t u y-t v x . \\label{eq1}\n$$\n中, $r, s, t, u, v, w, x, y, z$ 可以分别取 +1 或 -1 .\n(1)证明:代数式的值都是偶数;\n(2) 求这个代数式所能取到的最大值.",
+    "solution": "(1) \\ref{eq1} 式中共有 6 项, 每项的值都是奇数 $(+1$ 或 -1$)$, 所以它们的代数和为偶数.\n(2) 显然, \\ref{eq1} 式的值 $\\leqslant 6$, 但它取不到 6 这个值, 事实上,在\n$rvz, - rwy, - suz, swx, tuy, - tvx$\n这六项中, 至少有一项是一 1 , 要证明这一点, 将上面这 6 项相乘, 积是\n$-(\\text { rstuvwxyz })^2=-1$.\n所以六项中, 至少一项是 -1 , 这样, 六项和至多是\n$$\n5-1=4 .\n$$\n在 $u, x, y$ 为 -1 , 其他字母为 1 时, \\ref{eq1} 式的值是 4, 所以 式\\ref{eq1} 的最大值为 4 .",
+    "remark": "",
+    "figures": []
+}

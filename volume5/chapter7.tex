@@ -1,0 +1,546 @@
+
+%%TEXT_BEGIN%%
+数学归纳法与不等式证明.
+数学归纳法有很多表达形式, 其中最基本和最常用的是第一数学归纳法和第二数学归纳法.
+第一数学归纳法: 设 $P(n)$ 是一个 (关于正整数 $n$ ) 的命题.
+如果:
+(1) $P(1)$ 成立; (2) 设 $P(k)$ 成立, 可推出 $P(k+1)$ 成立, 那么 $P(n)$ 对一切正整数 $n$ 都成立.
+第二数学归纳法: 设 $P(n)$ 是一个 (关于正整数 $n$ ) 的命题.
+如果:
+(1) $P(1)$ 成立; (2) 设 $n \leqslant k$ ( $k$ 为任意正整数) 时 $P(n)(1 \leqslant n \leqslant k)$ 成立, 可推出 $P(k+1)$ 成立,那么 $P(n)$ 对一切正整数 $n$ 都成立.
+在遇到与正整数 $n$ 有关的不等式时, 往往可以想到采用数学归纳法去证明.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $a_1=2, a_{n+1}=\frac{a_n}{2}+\frac{1}{a_n}(n=1,2, \cdots, 2004)$. 求证:
+$$
+\sqrt{2}<a_{2005}<\sqrt{2}+\frac{1}{2005} .
+$$
+%%<SOLUTION>%%
+证明:由平均不等式, 得
+$$
+a_{2005}=\frac{a_{2004}}{2}+\frac{1}{a_{2004}}>2 \sqrt{\frac{a_{2004}}{2} \cdot \frac{1}{a_{2004}}}=\sqrt{2} .
+$$
+下面证明: 对一切正整数 $n$, 有
+$$
+\sqrt{2}<a_n<\sqrt{2}+\frac{1}{n} . \label{(1)}
+$$
+当 $n=1$ 时(1)式显然成立.
+假设当 $n=k$ 时, 有 $\sqrt{2}<a_k<\sqrt{2}+\frac{1}{k}$, 那么, 当 $n=k+1$ 时,
+$$
+a_{k+1}=\frac{a_k}{2}+\frac{1}{a_k}<\frac{\sqrt{2}+\frac{1}{k}}{2}+\frac{1}{\sqrt{2}}=\sqrt{2}+\frac{1}{2 k} \leqslant \sqrt{2}+\frac{1}{k+1} .
+$$
+因此(1)对一切正整数 $n$ 成立, 当然对 2005 也成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $a>0$, 求证: 对任意正整数 $n$, 有不等式
+$$
+\frac{1+a^2+\cdots+a^{2 n}}{a+a^3+\cdots+a^{2 n-1}} \geqslant \frac{n+1}{n} .
+$$
+%%<SOLUTION>%%
+证明:对 $n$ 用数学归纳法.
+当 $n=1$ 时, $\frac{1+a^2}{a} \geqslant 2$, 故不等式成立.
+设当 $n=k$ 时不等式成立, 即
+$$
+A=\frac{1+a^2+\cdots+a^{2 k}}{a+a^3+\cdots+a^{2 k-1}}>\frac{k+1}{k} .
+$$
+我们的目标是证明:
+$$
+B=\frac{1+a^2+\cdots+a^{2 k+2}}{a+a^3+\cdots+a^{2 k+1}}>\frac{k+2}{k+1} .
+$$
+$A$ 和 $B$ 的分母不一样, 怎么把它们联系起来呢? 一个自然的想法是取 $A$ 的倒数.
+注意到: $\frac{1}{A}<\frac{k}{k+1}$.
+$$
+\begin{aligned}
+\text { 而 } \frac{1}{A}+B & =\frac{a+a^3+\cdots+a^{2 k-1}}{1+a^2+\cdots+a^{2 k}}+\frac{1+a^2+\cdots+a^{2 k+2}}{a+a^3+\cdots+a^{2 k+1}} \\
+& =\frac{1+2 a^2+2 a^4+\cdots+2 a^{2 k}+a^{2 k+2}}{a+a^3+\cdots+a^{2 k+1}}- \\
+& =\frac{\left(1+a^2\right)+\left(a^2+a^4\right)+\cdots+\left(a^{2 k-2}+a^{2 k}\right)+\left(a^{2 k}+a^{2 k+2}\right)}{a+a^3+\cdots+a^{2 k+1}} \\
+& \geqslant 2 .
+\end{aligned}
+$$
+故
+$$
+B>2-\frac{1}{A}>2-\frac{k}{k+1}=\frac{k+2}{k+1} .
+$$
+因此当 $n=k+1$ 时不等式成立.
+进而对一切正整数 $n$, 原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 已知正项数列 $\left\{a_n\right\}$ 对 $n \in \mathbf{N}_{+}$都有 $a_n^2 \leqslant a_n-a_{n+1}$ 成立.
+求证: $a_n<\frac{1}{n}$.
+%%<SOLUTION>%%
+证法 1 首先, 由 $a_{n+1} \leqslant a_n-a_n^2=a_n\left(1-a_n\right)$ 以及 $\left\{a_n\right\}$ 每一项恒正, 有:
+$$
+a_n\left(1-a_n\right)>0 \Rightarrow 0<a_n<1 \text {. }
+$$
+下面我们用数学归纳法证明: $a_n<\frac{1}{n}$.
+当 $n=1$ 时,命题显然成立.
+当 $n=2$ 时, 如果 $\frac{1}{2} \leqslant a_1<1$, 那么有 $0<1-a_1 \leqslant \frac{1}{2}$; 如果 $0<a_1<\frac{1}{2}$, 那么有 $\frac{1}{2}<1-a_1<1$. 因此总有 $a_2 \leqslant a_1\left(1-a_1\right)<\frac{1}{2}$. 所以命题也成立.
+现在假设当 $n=k$ 时, $a_k<\frac{1}{k}(k \geqslant 2)$ 成立.
+那么, 当 $n=k+1$ 时,
+$$
+a_{k+1} \leqslant a_k-a_k^2=\frac{1}{4}-\left(a_k-\frac{1}{2}\right)^2 .
+$$
+因为 $0<a_k<\frac{1}{k}$, 所以
+$$
+\begin{gathered}
+-\frac{1}{2}<a_k-\frac{1}{2}<\frac{1}{k}-\frac{1}{2} \leqslant 0 . \\
+0<\frac{1}{4}-\left(a_k-\frac{1}{2}\right)^2<-\frac{1-k}{k^2}<\frac{k-1}{k^2-1}=\frac{1}{k+1} .
+\end{gathered}
+$$
+即 $a_{k+1}<\frac{1}{k+1}$, 命题对 $k+1$ 也成立.
+综上所述, 对一切 $n \in \mathbf{N}_{+}$, 有 $a_n<\frac{1}{n}$.
+说明本题在 $k$ 推 $k+1$ 时可以使用不同的方法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 已知正项数列 $\left\{a_n\right\}$ 对 $n \in \mathbf{N}_{+}$都有 $a_n^2 \leqslant a_n-a_{n+1}$ 成立.
+求证: $a_n<\frac{1}{n}$.
+%%<SOLUTION>%%
+证法 2 (分区间讨论). 首先易证 $0<a_n<1$. 奠基同上法.
+假设当 $n=k$ 时,有 $a_k<\frac{1}{k}$.
+现在把 $\left(0, \frac{1}{k}\right)$ 分为 $\left(0, \frac{1}{k+1}\right)$ 和 $\left[\frac{1}{k+1}, \frac{1}{k}\right)$ 两个子区间之异.
+于是, 当 $n=k+1$ 时,
+(i) 在 $\left(0, \frac{1}{k+1}\right)$ 上, $a_{k+1} \leqslant a_k\left(1-a_k\right)<a_k<\frac{1}{k+1}$;
+(ii) 在 $\left[\frac{1}{k+1}, \frac{1}{k}\right)$ 上, $a_{k+1} \leqslant a_k\left(1-a_k\right)<\frac{1}{k}\left(1-\frac{1}{k+1}\right)=\frac{1}{k+1}$.
+综合上述, 对一切 $n$, 有 $a_n<\frac{1}{n}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 已知正项数列 $\left\{a_n\right\}$ 对 $n \in \mathbf{N}_{+}$都有 $a_n^2 \leqslant a_n-a_{n+1}$ 成立.
+求证: $a_n<\frac{1}{n}$.
+%%<SOLUTION>%%
+证法 3(累差法).
+由 $a_n^2 \leqslant a_n-a_{n-1} \Rightarrow a_{n+1} \leqslant a_n\left(1-a_n\right)$, 所以 $0<a_n<1$, 且 $a_n>a_{n+1}$.
+故 $\quad \frac{1}{a_{n+1}} \geqslant \frac{1}{a_n\left(1-a_n\right)}=\frac{1}{1-a_n}+\frac{1}{a_n}$,
+即
+$$
+\frac{1}{a_{n+1}}-\frac{1}{a_n}=\frac{1}{1-a_n}>1 \text {. }
+$$
+于是
+$$
+\frac{1}{a_n}-\frac{1}{a_1}=\sum_{k=1}^n\left(\frac{1}{a_{k+1}}-\frac{1}{a_k}\right)>n-1 \text {. }
+$$
+所以 $\frac{1}{a_n}>(n-1)+\frac{1}{a_1}>(n-1)+1=n \Rightarrow a_n<\frac{1}{n}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设非负数列 $a_1, a_2, \cdots$ 满足条件: $a_{m+n} \leqslant a_n+a_m, m, n \in \mathbf{N}_{+}$, 求证: 对任意正整数 $n$, 均有 $a_n \leqslant m a_1+\left(\frac{n}{m}-1\right) a_m$.
+%%<SOLUTION>%%
+证法 1 令 $m=1$, 可得,
+$$
+0 \leqslant a_n \leqslant a_{n-1}+a_1 \leqslant \cdots \leqslant n a_1 . \label{(1)}
+$$
+下面用归纳法证明, 对任何 $n, m \in \mathbf{N}_{+}$命题成立.
+固定 $m \in \mathbf{N}_{+}$, 取 $n=1$, 要证明的是
+$$
+\begin{aligned}
+& \left(1-\frac{1}{m}\right) a_m \leqslant(m-1) a_1, \\
+& (m-1) a_m \leqslant(m-1) m a_1 .
+\end{aligned}
+$$
+即由(1)即知此式成立.
+因此当 $n=1$ 时命题成立.
+现假设当 $1 \leqslant n \leqslant k$ 时命题成立, 分以下两种情况:
+(i) $k<m$, 则由(1)式可知
+$$
+\frac{a_{k+1}}{k+1}-\frac{a_m}{m} \leqslant a_1-\frac{a_m}{m} .
+$$
+又因为 $a_1-\frac{a_m}{m} \geqslant 0$, 有
+$$
+\frac{a_{k+1}}{k+1}-\frac{a_m}{m} \leqslant \frac{m}{k+1}\left(a_1-\frac{a_m}{m}\right) .
+$$
+故
+$$
+a_{k+1} \leqslant m a_1+\left(\frac{k+1}{m}-1\right) a_m .
+$$
+(ii) $k \geqslant m$, 则 $k+1-m \geqslant 1$, 由假设得 $a_{k+1} \leqslant a_{k+1-m}+a_m$.
+利用归纳假设
+$$
+a_{k+1-m} \leqslant m a_1+\left(\frac{k+1-m}{m}-1\right) a_m,
+$$
+故
+$$
+a_{k+1} \leqslant m a_1+\left(\frac{k+1}{m}-1\right) a_m .
+$$
+综合 (i) 及 (ii) 知当 $n=k+1$ 时命题也成立.
+说明本题也可基于带余除法给出证明.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设非负数列 $a_1, a_2, \cdots$ 满足条件: $a_{m+n} \leqslant a_n+a_m, m, n \in \mathbf{N}_{+}$, 求证: 对任意正整数 $n$, 均有 $a_n \leqslant m a_1+\left(\frac{n}{m}-1\right) a_m$.
+%%<SOLUTION>%%
+证法 2 由条件有 $0 \leqslant a_n \leqslant a_{n-1}+a_1 \leqslant \cdots \leqslant n a_1$.
+设 $n=m q+r$, 则
+$$
+\begin{aligned}
+m a_n & =m a_{m q+r} \\
+& \leqslant m \cdot a_{m q}+m a_r \\
+& \leqslant m q a_m+m a_r \\
+& =(n-r) a_m+m a_r \\
+& =(n-m) a_m+(m-r) a_m+m a_r \\
+& \leqslant(n-m) a_m+(m-r) m a_1+m r a_1 \\
+& =(n-m) a_m+m^2 a_1 . \\
+& a_n \leqslant m a_1+\left(\frac{n}{m}-1\right) a_m .
+\end{aligned}
+$$
+因此
+$$
+a_n \leqslant m a_1+\left(\frac{n}{m}-1\right) a_m .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 求证: 对于所有正整数 $n$, 有
+$$
+\sqrt{1^2+\sqrt{2^2+\sqrt{3^3+\cdots+\sqrt{n^2}}}}<2 .
+$$
+%%<SOLUTION>%%
+分析:此题不宜从正向人手.
+相反, 采用反向归纳法原理, 先从最里层的根号开始考虑, 最后才扩大到最外层的根号就不难证明.
+证明下证
+$$
+\sqrt{k^2+\sqrt{(k+1)^2+\cdots+\sqrt{n^2}}}<k+1 . \label{(1)}
+$$
+当 $k=n$ 时,(1)式显然成立.
+现假设当 $k=n, n-1, \cdots, m$ 时(1)式成立, 则当 $k=m-1$ 时, 只要证明
+$$
+\sqrt{(m-1)^2+\sqrt{m^2+\cdots+\sqrt{n^2}}}<m-1+1=m .
+$$
+利用归纳假设上式左端 $<\sqrt{(m-1)^2+m+1}=\sqrt{m^2-m+2} \leqslant m(\dot{m} \geqslant 2)$.
+故当 $k=m-1$ 时, (1)也成立.
+综上, 特别当 $k=1$ 时, 有原不等式成立.
+说明反向归纳法原理是指: 设 $P(n)$ 是关于自然数 $n$ 的一个命题.
+如果:
+(1) $P(n)$ 对无限多个自然数 $n$ 成立;
+(2) 假设 $P(k+1)$ 成立,可推出 $P(k)$ 也成立.
+那么 $P(n)$ 对一切自然数 $n$ 皆成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $\left\{a_k\right\}(k \geqslant 1)$ 是一个正实数数列, 且存在一个常数 $k$, 使得 $a_1^2+ a_2^2+\cdots+a_n^2<k a_{n+1}^2$ (对所有 $n \geqslant 1$ ). 求证: 存在一个常数 $c$, 使得 $a_1+a_2+\cdots+ a_n<c a_{n+1}$ (对所有 $n \geqslant 1$ ).
+%%<SOLUTION>%%
+证明:考查不等式链
+$$
+\left(a_1+a_2+\cdots+a_n\right)^2<t\left(a_1^2+a_2^2+\cdots+a_n^2\right)<c^2 a_{n+1}^2,
+$$
+其中, $t\left(a_1^2+a_2^2+\cdots+a_n^2\right)<t k \cdot a_{n+1}^2$, 故只需取 $t k=c^2$ 即可 ( $t$ 为一参数).
+设命题 $P_i$ 为
+$$
+\left(a_1+a_2+\cdots+a_i\right)^2<t\left(a_1^2+a_2^2+\cdots+a_i^2\right),
+$$
+命题 $Q_i$ 为
+$$
+a_1+a_2+\cdots+a_i<c a_{i+1} .
+$$
+当 $i=1$ 时, 欲使 $P_1$ 成立, 可取 $t>1$.
+现在设命题 $P_k$ 成立, 即
+$$
+\left(a_1+a_2+\cdots+a_k\right)^2<t\left(a_1^2+a_2^2+\cdots+a_k^2\right) .
+$$
+于是, 由不等式链, 得
+$$
+\left(a_1+a_2+\cdots+a_k\right)^2<t k a_{k+1}^2=c^2 a_{k+1}^2 .
+$$
+故
+$$
+a_1+a_2+\cdots+a_k<c a_{k+1} \text {. }
+$$
+因此
+$P_k$ 成立 $\Rightarrow Q_k$ 成立.
+我们希望证明: 若 $Q_k$ 成立 $\Rightarrow P_{k+1}$ 成立.
+即由
+$$
+a_1+a_2+\cdots+a_k<c a_{k+1} \Rightarrow
+$$
+$\left(a_1+a_2+\cdots+a_{k+1}\right)^2<t\left(a_1^2+a_2^2+\cdots+a_{k+1}^2\right)$.
+上述不等式成立, 仅须
+$$
+a_{k+1}^2+2 a_{k+1}\left(a_1+a_2+\cdots+a_k\right)<t a_{k+1}^2,
+$$
+即
+$$
+a_1+a_2+\cdots+a_k<\frac{t-1}{2} a_{k+1} .
+$$
+故取 $c=\frac{t-1}{2}$ 就可以满足要求.
+所以
+$$
+c=\frac{t-1}{2}=\frac{\frac{c^2}{k}-1}{2} \Rightarrow c^2-2 k c-k=0
+$$
+取 $c=k+\sqrt{k^2+k}$, 则 $t=\frac{c^2}{k}>1$ 符合条件, 进而由归纳法原理知本题结论成立.
+说明本题用了数学归纳法的另一种形式—-螺旋归纳法:
+设 $P(n) 、 Q(n)$ 是两列关于正整数 $n$ 的命题, 如果:
+(1) 命题 $P(1)$ 成立;
+(2)对任何正整数 $k$, 若命题 $P(k)$ 成立, 则命题 $Q(k)$ 成立; 若命题 $Q(k)$ 成立, 则命题 $P(k+1)$ 成立, 那么对所有正整数 $n$, 命题 $P(n)$ 及 $Q(n)$ 都成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 假设 $a_1<a_2<\cdots<a_n$ 是实数,求证:
+$$
+a_1 a_2^4+a_2 a_3^4+\cdots+a_n a_1^4 \geqslant a_2 a_1^4+a_3 a_2^4+\cdots+a_1 a_n^4 .
+$$
+%%<SOLUTION>%%
+证明:对 $n$ 使用数学归纳法.
+当 $n=2$ 时, 不等式两边相等.
+现假设 $n-1$ 时有结论成立, 即
+$$
+a_1 a_2^4+a_2 a_3^4+\cdots+a_{n-1} a_1^4 \geqslant a_2 a_1^4+a_3 a_2^4+\cdots+a_1 a_{n-1}^4 .
+$$
+考虑 $n$ 时的情况.
+我们只需证明: $a_{n-1} a_n^4+a_n a_1^4-a_{n-1} a_1^4 \geqslant a_n a_{n-1}^4+a_1 a_n^4-a_1 a_{n-1}^4$. (注意: 这正好是 $n=3$ 的情形!)
+不失一般性, 可设 $a_n-a_1=1$, 否则可以用 $a_n-a_1>0$ 除以 $a_1, a_{n-1}, a_n$ 中的每一个而不影响不等式.
+利用关于凸函数 $x^4$ 的 Jensen 不等式 (详见第 11 章), 有:
+$$
+a_1^4\left(a_n-a_{n-1}\right)+a_n^4\left(a_{n-1}-a_1\right) \geqslant\left(a_1\left(a_n-a_{n-1}\right)+a_n\left(a_{n-1}-a_1\right)\right)^4,
+$$
+展开即得结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 给定正整数 $n$, 及实数 $x_1 \leqslant x_2 \leqslant \cdots \leqslant x_n, y_1 \geqslant y_2 \geqslant \cdots \geqslant y_n$, 满足 :
+$$
+\sum_{i=1}^n i x_i=\sum_{i=1}^n i y_i .
+$$
+求证: 对任意实数 $\alpha$, 有
+$$
+\sum_{i=1}^n x_i[i \alpha] \geqslant \sum_{i=1}^n y_i[i \alpha] .
+$$
+这里 $[\beta]$ 表示不超过实数 $\beta$ 的最大整数.
+%%<SOLUTION>%%
+证明:我们先证明一个引理: 对任意实数 $x$ 和正整数 $n$, 有
+$$
+\sum_{i=1}^{n-1}[i \alpha] \leqslant \frac{n-1}{2}[n \alpha] .
+$$
+引理证明: 只需要将 $[i \alpha]+[(n-i) \alpha] \leqslant[n \alpha]$ 对 $i=1,2, \cdots, n-1$ 求和即得.
+回到原题,我们采用归纳法对 $n$ 进行归纳, 当 $n=1$ 时显然正确.
+假设当 $n=k$ 时原命题成立, 考虑当 $n=k+1$ 时.
+令 $a_i=x_i+\frac{2}{k} x_{k+1}$, $b_i=y_i+\frac{2}{k} y_{k+1}$, 其中 $i=1,2, \cdots, k$. 显然我们有 $a_1 \leqslant a_2 \leqslant \cdots \leqslant a_k, b_1 \geqslant b_2 \geqslant \cdots \geqslant b_k$, 并且通过计算得知 $\sum_{i=1}^k i a_i=\sum_{i=1}^k i b_i$, 由归纳假设知 $\sum_{i=1}^k a_i[i \alpha] \geqslant \sum_{i=1}^k b_i[i \alpha]$. 又由于 $x_{k+1} \geqslant y_{k+1}$, 否则若 $x_{k+1}<y_{k+1}$, 则 $x_1 \leqslant x_2 \leqslant \cdots \leqslant x_{k+1}< y_{k+1} \leqslant \cdots \leqslant y_2 \leqslant y_1, \sum_{i=1}^{k+1} i x_i=\sum_{i=1}^{k+1} i y_i$,矛盾!
+从而
+$$
+\begin{aligned}
+\sum_{i=1}^{k+1} x_i[i \alpha]-\sum_{i=1}^k a_i[i \alpha] & =x_{k+1}\left\{[(k+1) \alpha]-\frac{2}{k} \sum_{i=1}^k[i \alpha]\right\} \\
+& \geqslant y_{k+1}\left\{[(k+1) \alpha]-\frac{2}{k} \sum_{i=1}^k[i \alpha]\right\} \\
+& =\sum_{i=1}^{k+1} y_i[i \alpha]-\sum_{i=1}^k b_i[i \alpha],
+\end{aligned}
+$$
+由此可得 $\sum_{i=1}^{k+1} x_i[i \alpha] \geqslant \sum_{i=1}^{k+1} y_i[i \alpha]$. 由归纳法知原命题对任意正整数 $n$ 均成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 定义数列 $x_1, x_2, \cdots, x_n$ 如下: $x_1 \in[0,1)$, 且
+$$
+x_{n+1}= \begin{cases}\frac{1}{x_n}-\left[\frac{1}{x_n}\right], & \text { 若 } x_n \neq 0, \\ 0, & \text { 若 } x_n=0 .\end{cases}
+$$
+求证: 对一切正整数 $n$, 有
+$$
+x_1+x_2+\cdots+x_n<\frac{f_1}{f_2}+\frac{f_2}{f_3}+\cdots+\frac{f_n}{f_{n+1}},
+$$
+其中 $\left\{f_n\right\}$ 为 Fibonacci 数列, $f_1=f_2=1, f_{n+2}=f_{n+1}+f_n, n \in \mathbf{N}_{+}$.
+%%<SOLUTION>%%
+证法 1 当 $n=1$ 时, 因为 $x_1 \in[0,1)$, 所以 $x_1<1=\frac{f_1}{f_2}$, 故结论成立.
+当 $n=2$ 时, 分两种情况讨论:
+(1)如果 $x_1 \leqslant \frac{1}{2}$, 则 $x_1+x_2<\frac{1}{2}+1=\frac{3}{2}=\frac{f_1}{f_2}+\frac{f_2}{f_3}$;
+(2)如果 $\frac{1}{2}<x_1<1$, 则 $x_1+x_2=x_1+\frac{1}{x_1}-1$.
+令 $f(t)=t+\frac{1}{t}$, 则 $f(t)$ 在 $\left[\frac{1}{2}, 1\right)$ 上单调下降, 故
+$$
+x_1+x_2=f\left(x_1\right)-1<f\left(\frac{1}{2}\right)-1=\frac{3}{2} .
+$$
+因此当 $n=2$ 时结论成立.
+假设当 $n=k, n=k+1$ 时结论均成立.
+那么就有
+$$
+\begin{aligned}
+& x_1+x_2+\cdots+x_k<\frac{f_1}{f_2}+\frac{f_2}{f_3}+\cdots+\frac{f_k}{f_{k+1}}, \\
+& x_1+x_2+\cdots+x_{k+1}<\frac{f_1}{f_2}+\frac{f_2}{f_3}+\cdots+\frac{f_{k+1}}{f_{k+2}} .
+\end{aligned}
+$$
+把 $x_2$ 作为新的 $x_1, x_3$ 作为新的 $x_2, \cdots$, 有
+$$
+x_2+x_3+\cdots+x_{k+2}<\frac{f_1}{f_2}+\frac{f_2}{f_3}+\cdots+\frac{f_{k+1}}{f_{k+2}} . \label{(1)}
+$$
+同样
+$$
+x_3+x_4+\cdots+x_{k+2}<\frac{f_1}{f_2}+\frac{f_2}{f_3}+\cdots+\frac{f_k}{f_{k+1}} . \label{(2)}
+$$
+再分两种情况讨论:
+(i) 如果 $x_1 \leqslant \frac{f_{k+2}}{f_{k+3}}$, 那么由(1),
+$$
+x_1+x_z+\cdots+x_{k+2}<\frac{f_1}{f_2}+\frac{f_2}{f_3}+\cdots+\frac{f_{k+2}}{f_{k+3}} .
+$$
+结论对 $n=k+2$ 成立.
+(ii) 如果 $x_1>\frac{f_{k+2}}{f_{k+3}}$, 那么 $x_1 \in\left(\frac{f_{k+2}}{f_{k+3}}, 1\right)$. 故
+$$
+x_1+x_2=x_1+\frac{1}{x_1}-1<\frac{f_{k+2}}{f_{k+3}}+\frac{f_{k+3}}{f_{k+2}}-1=\frac{f_{k+2}}{f_{k+3}}+\frac{f_{k+1}}{f_{k+2}} .
+$$
+由(2)亦有 $x_1+x_2+\cdots+x_{k+2}<\frac{f_1}{f_2}+\frac{f_2}{f_3}+\cdots+\frac{f_{k+2}}{f_{k+3}}$.
+所以结论对 $n=k+2$ 成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 定义数列 $x_1, x_2, \cdots, x_n$ 如下: $x_1 \in[0,1)$, 且
+$$
+x_{n+1}= \begin{cases}\frac{1}{x_n}-\left[\frac{1}{x_n}\right], & \text { 若 } x_n \neq 0, \\ 0, & \text { 若 } x_n=0 .\end{cases}
+$$
+求证: 对一切正整数 $n$, 有
+$$
+x_1+x_2+\cdots+x_n<\frac{f_1}{f_2}+\frac{f_2}{f_3}+\cdots+\frac{f_n}{f_{n+1}},
+$$
+其中 $\left\{f_n\right\}$ 为 Fibonacci 数列, $f_1=f_2=1, f_{n+2}=f_{n+1}+f_n, n \in \mathbf{N}_{+}$.
+%%<SOLUTION>%%
+证法 2 设 $f(x)=\frac{1}{1+x}$, 令
+$$
+g_n(x)=x+f(x)+f^{(2)}(x)+\cdots+f^{(n)}(x), n=0,1,2, \cdots .
+$$
+注意到 $\frac{f_1}{f_2}==1$, 且 $f\left(\frac{f_i}{f_{i+1}}\right)=\frac{1}{1+\frac{f_i}{f_{i+1}}}=\frac{f_{i+1}}{f_{i+2}}$, 可得
+$$
+\begin{gathered}
+f^{(k)}(1)=f^{(k)}\left(\frac{f_1}{f_2}\right)==f^{(k-1)}\left(\frac{f_2}{f_3}\right)=\cdots=f\left(\frac{f_k}{f_{k+1}}\right)=\frac{f_{k+1}}{f_{k+2}}, \\
+k=1,2, \cdots .
+\end{gathered}
+$$
+所以
+$$
+g_{n-1}(1)=\frac{f_1}{f_2}+\frac{f_2}{f_3}+\cdots+\frac{f_n}{f_{n+1}} .
+$$
+下面先证明一个引理:
+引理( I ) 对任何 $x, y \in[0,1]$, 若 $x \neq y$, 则 $|f(x)-f(y)|<|x-y|$, 并且 $f(x)-f(y)$ 与 $x-y$ 符号相反.
+(II) $g_n(x)$ 在 $[0,1]$ 中单调递增.
+引理证明: ( I ) 由 $f(x)-f(y)=\frac{y-x}{(1+x)(1+y)}$ 易证.
+对于 (II),若 $x>y$, 由 ( I ) 知, 表达式
+$$
+\begin{aligned}
+g_n(x)-g_n(y)= & (x-y)+(f(x)-f(y)) \\
+& +\cdots+\left(f^{(n)}(x)-f^{(n)}(y)\right)
+\end{aligned}
+$$
+中, 每个差的绝对值小于前一个差的绝对值, 且符号相反.
+又因为 $x-y>0$, 所以 $g_n(x)-g_n(y)>0$.
+回到原题, 如果每个 $x_i(i<n)=0$, 则 $x_n=0$. 由关于前 $n-1$ 项的归纳假设易得结论.
+否则对 $2 \leqslant i \leqslant n$, 有 $x_{i-1}=\frac{1}{a_i+x_i}$, 其中 $a_i=\left[\frac{1}{x_{i-1}}\right]$ 为自然数.
+故 $x_n+x_{n-1}+x_{n-2}+\cdots+x_1$
+$$
+=x_n+\frac{1}{a_n+x_n}+\frac{1}{a_{n-1}+\frac{1}{a_n+x_n}}+\cdots+\frac{1}{a_2+\frac{1}{a_3+\frac{1}{\ddots+\frac{1}{a_n+x_n}}}}
+$$
+记等式右边的式子为 $S$.
+我们用归纳法证明,若固定 $x_n \in[0,1)$, 上式右端 $S$ 对一切 $i$ 都有 $a_i=$ 1 时达到最大值.
+首先, $a_2$ 只出现在 $S$ 的最后一项中, 与 $x_n, a_n, \cdots, a_3$ 的值无关, 当 $a_2=1$ 时 $S$ 为最大.
+现设对于 $i>2, S$ 在 $a_{i-1}=a_{i-2}=\cdots=a_2=1$ 时不依赖于 $x_n, a_n$, $a_{n-1}, \cdots, a_i$ 之值取得最大值.
+此时 $S$ 中只有后面 $i-1$ 项中含有 $a_i$, 且这 $i-1$ 项之和为
+$$
+g_{i-2}\left(\frac{1}{a_i+\frac{1}{a_{i+1}+\frac{1}{\ddots+\frac{1}{a_n+x_n}}}}\right) .
+$$
+由于 $g_{i-2}$ 是增函数,故在 $a_i$ 最小时取到最大值, 即当 $a_i=1$ 时达到最大.
+最后,由前所述,有
+$$
+\begin{aligned}
+x_n+x_{n-1}+\cdots+x_1 \leqslant & x_n+\frac{1}{1+x_n}+\frac{1}{1+\frac{1}{1+x_n}}+\cdots \\
+& +\frac{1}{1+\frac{1}{1+\frac{1}{\ddots+\frac{1}{1+x_n}}}} \\
+& =g_{n-1}\left(x_n\right)<g_{n-1}(1) \\
+& =\frac{f_1}{f_2}+\frac{f_2}{f_3}+\cdots+\frac{f_n}{f_{n+1}} .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 已知数列 $\left\{r_n\right\}$ 满足: $r_1=2, r_n=r_1 r_2 \cdots r_{n-1}+1(n=2,3, \cdots)$. 正整数 $a_1, a_2, \cdots, a_n$ 满足 $\sum_{k=1}^n \frac{1}{a_k}<1$. 求证: $\sum_{i=1}^n \frac{1}{a_i} \leqslant \sum_{i=1}^n \frac{1}{r_i}$.
+%%<SOLUTION>%%
+证明:由 $\left\{r_n\right\}$ 的定义不难发现
+$$
+1-\frac{1}{r_1}-\frac{1}{r_2}-\cdots-\frac{1}{r_n}=\frac{1}{r_1 r_2 \cdots r_n} . \label{(1)}
+$$
+当 $\frac{1}{a_1}<1$ 时,正整数 $a_1 \geqslant 2=r_1$, 所以 $\frac{1}{a_1} \leqslant \frac{1}{r_1}$.
+假设当 $n<k$ 时, 原不等式对一切满足条件的正整数 $a_1, a_2, \cdots, a_n$ 成立.
+如果当 $n=k$ 时, 有一组满足条件的正整数 $a_1, a_2, \cdots, a_n$, 使得
+$$
+\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}>\frac{1}{r_1}+\frac{1}{r_2}+\cdots+\frac{1}{r_n} . \label{(2)}
+$$
+不妨设
+$$
+a_1 \leqslant a_2 \leqslant \cdots \leqslant a_n \text {. }
+$$
+那么, 由归纳假设,
+$$
+\begin{aligned}
+& \frac{1}{a_1} \leqslant \frac{1}{r_1}, \\
+& \frac{1}{a_1}+\frac{1}{a_2} \leqslant \frac{1}{r_1}+\frac{1}{r_2}, \\
+& \frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_{n-1}} \leqslant \frac{1}{r_1}+\frac{1}{r_2}+\cdots+\frac{1}{r_{n-1}} . \\
+&
+\end{aligned}
+$$
+将以上各式分别乘以非正数 $a_1-a_2, a_2-a_3, \cdots, a_{n-1}-a_n$; 将(2)乘以 $a_n$, 然后相加得
+$$
+n>\frac{a_1}{r_1}+\frac{a_2}{r_2}+\cdots+\frac{a_n}{r_n}
+$$
+于是
+$$
+1>\frac{1}{n}\left(\frac{a_1}{r_1}+\cdots+\frac{a_n}{r_n}\right) \geqslant \sqrt[n]{\frac{a_1 a_2 \cdots a_n}{r_1 r_2 \cdots r_n}},
+$$
+即
+$$
+r_1 r_2 \cdots r_n \geqslant a_1 a_2 \cdots a_n . \label{(3)}
+$$
+另一方面, 正数 $1-\left(\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}\right) \geqslant \frac{1}{a_1 a_2 \cdots a_n}$, 所以由(1)(2)得
+$$
+\frac{1}{r_1 r_2 \cdots r_n} \geqslant \frac{1}{a_1 a_2 \cdots a_n} . \label{(4)}
+$$
+由(3)(4)即可得出矛盾!
+因此(2)不能成立,故结论成立.
+%%<REMARK>%%
+说明读者可以进一步推出等号成立当且仅当 $\left\{a_1, a_2, \cdots, a_n\right\}=\left\{r_1\right.$, $\left.r_2, \cdots, r_n\right\}$.
+此题为 Erdös 的一个猜想, 以上证明在归纳法中运用反证法(等于加了条件), 十分巧妙.
+从证明过程中不难验证以下两个命题:
+(A) 设 $x_1 \geqslant x_2 \geqslant \cdots \geqslant x_n>0, y_1 \geqslant y_2 \geqslant \cdots \geqslant y_n>0$, 且 $\sum_{i=1}^n x_i \leqslant \sum_{i=1}^n y_i$;
+$$
+\sum_{i=1}^k x_i \geqslant \sum_{i=1}^k y_i(k=1,2, \cdots, n-1) \text {, 则 } \prod_{i=1}^n x_i \leqslant \prod_{i=1}^n y_i \text {. }
+$$
+(B) 设 $a_1 \geqslant a_2 \geqslant \cdots \geqslant a_n>0$, 且 $\prod_{i=1}^k b_i \geqslant \prod_{i=1}^k a_i(1 \leqslant k \leqslant n)$, 则
+$$
+\sum_{i=1}^n b_i \geqslant \sum_{i=1}^n a_i
+$$
+%%PROBLEM_END%%
+
+

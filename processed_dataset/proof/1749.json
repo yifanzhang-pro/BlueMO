@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $O I$ 分别是 $\\triangle A B C$ 的外心、内心, $\\triangle A B C$ 的内切圆与 $B C 、 C A$ 、 $A B$ 分别切于点 $D 、 E 、 F$, 直线 $D F$ 与 $C A$ 交于点 $P$, 直线 $D E$ 与 $A B$ 交于点 $Q, M 、 N$ 分别是线段 $P E 、 Q F$ 的中点, 求证: $O I \\perp M N$. (2007 中国数学奥林匹克)",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c8i17.png>),易证 $\\frac{A F}{F B} \\cdot \\frac{B D}{D C} \\cdot \\frac{C E}{E A}=1$.\n所以, $A D 、 B E 、 C F$ 三线共点.\n由性质 2 知 $P 、 E 、 A 、 C$ 是调和点列.\n因为 $M$ 是线段 $P E$ 的中点, 所以, 由性质 7 得 $M E^2= M A \\cdot M C$. 同理, $N F^2=N A \\cdot N B$.\n因此, 点 $M 、 N$ 分别到 $\\triangle A B C$ 的内切圆和外接圆等幂, 即点 $M 、 N$ 在 $\\triangle A B C$ 的内切圆与外接圆的根轴上.\n故 $O I \\perp M N$.",
+    "remark": "注:: 本题在第 5 章中曾出现过, 但这里用的是不同的方法.",
+    "figures": [
+        "./images/volume7/figures/fig-c8i17.png"
+    ]
+}

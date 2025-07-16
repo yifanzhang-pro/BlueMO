@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例2. 在 $\\triangle A B C$ 中, $A B$ 是最长边, $P$ 是三角形内一点, 证明:\n$$\nP A+P B>P C .\n$$",
+    "solution": "证明:如图(<FilePath:./images/volume9/figures/fig-c1i1.png>), 延长 $C P$ 交 $A B$ 于点 $D$, 则 $\\angle A D C$ 和 $\\angle B D C$ 有一个不是锐角, 不妨设 $\\angle A D C$ 不是锐角, 则在 $\\triangle A D C$ 中, 由命题 3 得\n$$\nA C>C D \\text {, }\n$$\n因此\n$$\nA B \\geqslant A C>C D \\geqslant P C, \\label{eq1}\n$$\n又在 $\\triangle P A B$ 中, 由三角不等式\n$$\nP A+P B>A B, \\label{eq2}\n$$\n由式\\ref{eq1}、\\ref{eq2}即得求证的不等式.",
+    "remark": "注:(1) 若去掉条件\" $A B$ 是最长边\", 则结论不一定成立.\n(2) 当 $P$ 是正三角形 $A B C$ 所在平面上一点,且 $P$ 不在这个正三角形的外接圆上, 则 $P A 、 P B 、 P C$ 中任意两个之和大于第三个, 即它们构成某个三角形的三边.",
+    "figures": [
+        "./images/volume9/figures/fig-c1i1.png"
+    ]
+}

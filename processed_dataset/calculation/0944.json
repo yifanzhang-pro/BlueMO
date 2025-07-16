@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 已知 $\\triangle A B C$, 若对任意 $t \\in \\mathbf{R},|\\overrightarrow{B A}-t \\overrightarrow{B C}| \\geqslant|\\overrightarrow{A C}|$, 则 $\\triangle A B C-$ 定为 ( ).\n(A) 锐角三角形 (B) 针角三角形 (C) 直角三角形 (D) 答案不确定.",
+    "solution": "分析:与解令 $\\angle A B C=\\alpha$, 过 $A$ 作 $A D \\perp B C$ 于 $D$. 由 $|\\overrightarrow{B A}-t \\overrightarrow{B C}| \\geqslant |\\overrightarrow{A C}|$, 推出\n$$\n|\\overrightarrow{B A}|^2-2 t \\overrightarrow{B A} \\cdot \\overrightarrow{B C}+t^2|\\overrightarrow{B C}|^2 \\geqslant|\\overrightarrow{A C}|^2 .\n$$\n令 $t=\\frac{\\overrightarrow{B A} \\cdot \\overrightarrow{B C}}{|\\overrightarrow{B C}|^2}$, 代入上式, 得\n$$\n|\\overrightarrow{B A}|^2-2|\\overrightarrow{B A}|^2 \\cos ^2 \\alpha+\\cos ^2 \\alpha|\\overrightarrow{B A}|^2 \\geqslant|\\overrightarrow{A C}|^2,\n$$\n即 $|\\overrightarrow{B A}|^2 \\sin ^2 \\alpha \\geqslant|\\overrightarrow{A C}|^2$, 也即 $|\\overrightarrow{B A}| \\sin \\alpha \\geqslant|\\overrightarrow{A C}|$. 从而有 $|\\overrightarrow{A D}| \\geqslant|\\overrightarrow{A C}|$.\n由此可得 $\\angle A C B=\\frac{\\pi}{2}$. 故选 C.",
+    "remark": "注:遇到有模的问题两边平方是常用的处理方法, 本题中对 $t$ 的选取也是在观察式子形式,深思熟虑后的结果.",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 设 $k 、 n$ 是正整数, $1 \\leqslant k<n ; x_1, x_2, \\cdots, x_k$ 是 $k$ 个正数, 且知它们的和等于它们的积.\n求证: $x_1^{n-1}+x_2^{n-1}+\\cdots+x_k^{n-1} \\geqslant k n$.",
+    "solution": "记 $T=x_1 x_2 \\cdots x_k=x_1+x_2+\\cdots+x_k$. 由平均不等式 $\\frac{T}{k} \\geqslant T^{\\frac{1}{k}}, x_1^{n-1}+ x_2^{n-1}+\\cdots+x_k^{n-1} \\geqslant k \\cdot T^{\\frac{n-1}{k}}$. 因此, 只需证明: $T^{\\frac{n-1}{k}} \\geqslant n$. 而 $\\frac{T}{k} \\geqslant T^{\\frac{1}{k}}$ 等价于 $T^{\\frac{n-1}{k}} \\geqslant k^{\\frac{n-1}{k-1}}$, 故只需证明: $k^{\\frac{n-1}{k-1}} \\geqslant n$, 即 $k \\geqslant n^{\\frac{k-1}{n-1}}$. 事实上, $k=\\frac{(k-1) n+(n-k) \\cdot 1}{n-1} \\geqslant \\sqrt[n-1]{n^{k-1} \\cdot 1^{n-k}}=n^{\\frac{k-1}{n-1}}$, 因此结论成立.",
+    "remark": "",
+    "figures": []
+}

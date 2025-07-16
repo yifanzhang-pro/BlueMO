@@ -1,0 +1,307 @@
+
+%%TEXT_BEGIN%%
+距离不等式中的化直法.
+在几何量 (长度、角度、面积、体积等) 的大小比较中, 线段长度的比较是最基本的.
+我们把仅涉及到线段长度的几何不等式叫做距离不等式.
+欧氏几何中一些简单的不等公理和定理常常是解决距离不等式的出发点, 其中最常用的工具有:
+命题 1 连接 $A 、 B$ 两点的最短线是线段 $A B$.
+这个命题的一个直接推论就是命题 2 (三角不等式) 如果 $A 、 B 、 C$ 为任意三点, 则 $A B \leqslant A C+C B$, 当且仅当 $C$ 位于线段 $A B$ 上时等号成立.
+由这个命题还可产生下面一些常用的推论.
+命题 3 三角形中大边对大角, 大角对大边.
+命题 4 三角形中线的长度小于夹它的两边长度之和的一半.
+命题 5 如果一个凸多边形位于另一个凸多边形的内部, 则外面的凸多边形的周长大于里面凸多边形的周长.
+命题 6 凸多边形内的线段长度, 或者不超过凸多边形的最大边长, 或者不超过凸多边形的最大对角线长.
+下面看一些例题.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $a 、 b 、 c$ 是 $\triangle A B C$ 的边长,求证:
+$$
+\frac{a}{b+c}+\frac{b}{c+a}+\frac{c}{a+b}<2 .
+$$
+%%<SOLUTION>%%
+证明:由三角不等式 $a<b+c$ 可得
+$$
+\frac{a}{b+c}=\frac{2 a}{2(b+c)}<\frac{2 a}{a+b+c} .
+$$
+同理
+$$
+\frac{b}{a+c}<\frac{2 b}{a+b+c}
+$$
+$$
+\frac{c}{b+a}<\frac{2 c}{a+b+c}
+$$
+将上面三个不等式相加即得所求证的不等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 在 $\triangle A B C$ 中, $A B$ 是最长边, $P$ 是三角形内一点, 证明:
+$$
+P A+P B>P C .
+$$
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c1i1.png>), 延长 $C P$ 交 $A B$ 于点 $D$, 则 $\angle A D C$ 和 $\angle B D C$ 有一个不是锐角, 不妨设 $\angle A D C$ 不是锐角, 则在 $\triangle A D C$ 中, 由命题 3 得
+$$
+A C>C D \text {, }
+$$
+因此
+$$
+A B \geqslant A C>C D \geqslant P C, \label{eq1}
+$$
+又在 $\triangle P A B$ 中, 由三角不等式
+$$
+P A+P B>A B, \label{eq2}
+$$
+由式\ref{eq1}、\ref{eq2}即得求证的不等式.
+%%<REMARK>%%
+注:(1) 若去掉条件" $A B$ 是最长边", 则结论不一定成立.
+(2) 当 $P$ 是正三角形 $A B C$ 所在平面上一点,且 $P$ 不在这个正三角形的外接圆上, 则 $P A 、 P B 、 P C$ 中任意两个之和大于第三个, 即它们构成某个三角形的三边.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设一条平面闭折线的周长为 1 , 证明: 可以用一个半径是 $\frac{1}{4}$ 的圆完全盖住这条折线.
+%%<SOLUTION>%%
+分析:解决问题的关键是确定一个点 (圆心), 使得折线上的每一点到这个点的距离不超过 $\frac{1}{4}$.
+证明如图(<FilePath:./figures/fig-c1i2.png>),设 $A$ 为闭折线上任意取定的一点, 在闭折线上取点 $B$, 使折线 $A B$ (不论哪一段) 的长恰为 $\frac{1}{2}$. 连接 $A B$, 取 $A B$ 的中点 $O$, 则折线上任一点到 $O$ 的距离不超过 $\frac{1}{4}$.
+事实上,设 $M$ 为折线上任一点,则由命题 4 可得
+$O M<\frac{1}{2}(A M+M B) \leqslant \frac{1}{2}$ 折线 $A M+$ 折线 $\left.B M\right)=\frac{1}{2}$ 折线 $A B=\frac{1}{4}$.
+现以 $O$ 为圆心, $\frac{1}{4}$ 为半径作圆, 则这个圆完全盖住了这条闭折线, 证毕.
+上面几个例题的证明方法实际上都体现了一种 "化直"的思想, 我们称其为 "化直法". 具体地说, 化直法是以命题 1 或它的推论为理论依据, 采用把曲线段化为折线段,再把折线段化为直线段来处理的方法.
+化直法是证明几何不等式,特别是距离不等式最为常用的方法之一.
+下面再看几个例子.
+首先,我们介绍经典的 Pólya 问题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 求证:两端点在一圆周上且将此圆分成等面积的两部分的所有曲线中, 以此圆的直径具有最短的长度.
+%%<SOLUTION>%%
+证明:设 $\widehat{A B}$ 是一条满足题设条件的曲线.
+如果 $A 、 B$ 两点正好是某一条直径的两个端点, 那么显然 $\widehat{A B}$ 的长度不会小于圆的直径.
+如果弦 $A B$ 不是直径, 如图(<FilePath:./figures/fig-c1i3.png>), 那么令与弦 $A B$ 平行的直径为 $C D$, 曲线 $\widehat{A B}$ 至少与 $C D$ 交于不同的两点, 设不是圆心的那个交点为 $E$, 则曲线 $\widehat{A B}$ 的长 $=$ 曲线 $\widehat{A E}$ 的长 + 曲线 $\widehat{E B}$ 的长 $\geqslant A E+E B$. (这样将曲线化为了折线)
+下面再证折线 $(A E+E B)>$ 圆的直径.
+为此, 作 $B$ 关于 $C D$ 的对称点 $B^{\prime}$, 则易证 $A B^{\prime}$ 是圆的直径.
+于是
+$$
+A E+E B=A E+E B^{\prime}>A B^{\prime}=\text { 圆的直径.
+}
+$$
+综上便知所证结论成立.
+下面的例题源于我们对垂足三角形极值性质的研究.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $P$ 是 $\triangle A B C$ 内一点, $P$ 在三边 $B C 、 C A 、 A B$ 上的射影分别为 $A^{\prime} 、 B^{\prime} 、 C^{\prime}$, 直线 $A P 、 B P 、 C P$ 与三条对边的交点分别为 $A^{\prime \prime} 、 B^{\prime \prime} 、 C^{\prime \prime}$. 已知 $\triangle A^{\prime \prime} B^{\prime \prime} C^{\prime \prime}$ 的周长 $=1$, 求证:
+折线 $A^{\prime} B^{\prime \prime} C^{\prime} A^{\prime \prime}+$ 折线 $A^{\prime} C^{\prime \prime} B^{\prime} A^{\prime \prime} \leqslant 2$.
+%%<SOLUTION>%%
+证明:所求证的不等式等价于
+$$
+A^{\prime} B^{\prime \prime}+B^{\prime \prime} C^{\prime}+C^{\prime} A^{\prime \prime}+A^{\prime} C^{\prime \prime}+C^{\prime \prime} B^{\prime}+B^{\prime} A^{\prime \prime} \leqslant 2 . \label{eq1}
+$$
+要证式\ref{eq1}, 只需证明局部不等式
+$$
+A^{\prime \prime} B^{\prime \prime}+A^{\prime \prime} C^{\prime \prime} \geqslant A^{\prime} B^{\prime \prime}+A^{\prime} C^{\prime \prime} . \label{eq2}
+$$
+事实上, 把式\ref{eq2}和类似的两个不等式
+$$
+\begin{aligned}
+& B^{\prime \prime} A^{\prime \prime}+B^{\prime \prime} C^{\prime \prime} \geqslant B^{\prime} A^{\prime \prime}+B^{\prime} C^{\prime \prime}, \\
+& C^{\prime \prime} A^{\prime \prime}+C^{\prime \prime} B^{\prime \prime} \geqslant C^{\prime} A^{\prime \prime}+C^{\prime} B^{\prime \prime},
+\end{aligned}
+$$
+相加便得式\ref{eq1}.
+下面是式\ref{eq2}的证明.
+为证式\ref{eq2}, 我们需要下面的引理.
+引理如图(<FilePath:./figures/fig-c1i4.png>), 设 $P$ 是 $\triangle A B C$ 的高 $A D$ 上的一点, 直线 $B P$ 交 $A C$ 于 $E$, 直线 $C P$ 交 $A B$ 于 $F$, 则
+$$
+\angle F D A=\angle E D A .
+$$
+证明过 $A$ 作 $B C$ 的平行线, 与直线 $D E$ 、 $D F$ 交于 $M 、 N$, 则
+$$
+\frac{A F}{B F}=\frac{A N}{B D}, \frac{C E}{A E}=\frac{C D}{A M} .
+$$
+由 Ceva 定理得
+$$
+\frac{A F}{B F} \cdot \frac{B D}{D C} \cdot \frac{C E}{E A}=1,
+$$
+即
+$$
+A M=A N \text {. }
+$$
+又由
+$A D \perp M N$,
+所以
+$D M=D N$,
+故
+$$
+\angle E D A=\angle A D M=\angle A D N=\angle F D A .
+$$
+下面回转来证明式\ref{eq2}:
+(1) 若 $P$ 位于 $\triangle A B C$ 的高 $A D$ 上,则 $A^{\prime}=A^{\prime \prime}$, (2)显然成立.
+(2) 若 $P$ 不位于 $\triangle A B C$ 的高 $A D$ 上,如图(<FilePath:./figures/fig-c1i5.png>), 不妨设 $P 、 B$ 位于 $A D$ 同侧, 连接并延长 $A^{\prime} P$ 交 $A B$ 于 $M$, 连接 $M C$ 交 $B B^{\prime \prime}$ 于 $M^{\prime}$, 则由引理知
+$$
+\angle B^{\prime \prime} A^{\prime} P>\angle M^{\prime} A^{\prime} P=\angle C^{\prime \prime} A^{\prime} P . \label{eq3}
+$$
+作 $B^{\prime \prime}$ 关于 $B C$ 的对称点 $N$, 则
+$$
+\angle N A^{\prime} C=\angle C A^{\prime} B^{\prime \prime},
+$$
+又由式\ref{eq3}可得
+$$
+\begin{aligned}
+& \angle N A^{\prime} C+\angle C^{\prime \prime} A^{\prime} C \\
+= & \angle N A^{\prime} C+\angle C^{\prime \prime} A^{\prime} P+\angle P A^{\prime} C \\
+< & \angle P A^{\prime} B^{\prime \prime}+\angle P A^{\prime} N \\
+= & \pi,
+\end{aligned}
+$$
+所以 $A^{\prime} 、 A^{\prime \prime}$ 在 $C^{\prime \prime} N$ 同侧, 即 $A^{\prime}$ 在 $\triangle C^{\prime \prime} A^{\prime \prime} N$ 内, 因此由命题 5 有
+$$
+A^{\prime \prime} C^{\prime \prime}+A^{\prime \prime} N>A^{\prime} C^{\prime \prime}+A^{\prime} N \text {. }
+$$
+注意到 $A^{\prime \prime} B^{\prime \prime}=A^{\prime \prime} N, A^{\prime} B^{\prime \prime}=A^{\prime} N$. 上式即是
+$$
+A^{\prime \prime} B^{\prime \prime}+A^{\prime \prime} C^{\prime \prime}>A^{\prime} B^{\prime \prime}+A^{\prime} C^{\prime \prime} \text {. }
+$$
+式\ref{eq2}得证.
+%%<REMARK>%%
+注:(1) 本例所用的反射对称方法是一种常用的化直手段.
+(2) 利用不等式\ref{eq2}, 袁俊博士证明了刘健先生提出的一个猜想:
+$$
+\triangle A^{\prime} B^{\prime} C^{\prime} \text { 的周长 } \leqslant \triangle A^{\prime \prime} B^{\prime \prime} C^{\prime \prime} \text { 的周长.
+}
+$$
+下面的例题是一个很有难度的问题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $P$ 为 $\triangle A B C$ 内一点,证明:
+$$
+\sqrt{P A}+\sqrt{P B}+\sqrt{P C}<\frac{\sqrt{5}}{2}(\sqrt{B C}+\sqrt{C A}+\sqrt{A B}) . \label{eq1}
+$$
+%%<SOLUTION>%%
+证明:下面的引理可由命题 5 直接得到.
+引理设 $P$ 是凸四边形 $A B C D$ 的一个内点,则
+$$
+P B+P C<B A+A D+D C .
+$$
+下面证明式\ref{eq1}.
+为简单计, 设 $B C=a, A C=b, B A=c, P A=x, P B=y, P C=z$.
+如图(<FilePath:./figures/fig-c1i6.png>), 作出 $\triangle A B C$ 三边的中点 $A^{\prime} 、 B^{\prime}$ 、 $C^{\prime}$, 则 $P$ 必位于平行四边形 $A^{\prime} B^{\prime} A C^{\prime} 、 C^{\prime} B^{\prime} C A^{\prime}$ 、 $B^{\prime} A^{\prime} B C^{\prime}$ 某一个之中.
+不妨设 $P$ 位于平行四边形 $A^{\prime} B^{\prime} A C^{\prime}$ 内, 则对凸四边形 $A B A^{\prime} B^{\prime}$ 应用引理有
+$$
+P A+P B<B A^{\prime}+A^{\prime} B^{\prime}+B^{\prime} A,
+$$
+即
+$$
+x+y<\frac{1}{2}(a+b+c) . \label{eq2}
+$$
+同理由凸四边形 $A C A^{\prime} C^{\prime}$ 可得
+$$
+\begin{gathered}
+P A+P C<A C^{\prime}+C^{\prime} A^{\prime}+A^{\prime} C, \\
+x+z<\frac{1}{2}(a+b+c) .
+\end{gathered}
+$$
+即
+$$
+x+z<\frac{1}{2}(a+b+c) . \label{eq3}
+$$
+将式\ref{eq2}、\ref{eq3}两式相加可得
+$$
+2 x+y+z<a+b+c . \label{eq4}
+$$
+现注意到原不等式等价于
+$$
+(\sqrt{x}+\sqrt{y}+\sqrt{z})^2<\frac{5}{4}(\sqrt{a}+\sqrt{b}+\sqrt{c})^2,
+$$
+即
+$$
+\begin{gathered}
+x+y+z+2 \sqrt{x y}+2 \sqrt{x z}+2 \sqrt{y z} \\
+<\frac{5}{4}(a+b+c+2 \sqrt{a b}+2 \sqrt{b c}+2 \sqrt{a c}) . \label{eq5}
+\end{gathered}
+$$
+因此我们仅需证明式\ref{eq5}.
+由平均值不等式可得
+$$
+\begin{aligned}
+& 2 \sqrt{x y} \leqslant 2 x+\frac{1}{2} y, \\
+& 2 \sqrt{x z} \leqslant 2 x+\frac{1}{2} z, \\
+& 2 \sqrt{y z} \leqslant y+z .
+\end{aligned}
+$$
+利用这三个不等式和不等式\ref{eq4}可得
+$$
+\text { 式\ref{eq5} } \begin{aligned}
+\text { 的左边 } & \leqslant x+y+z+2 x+\frac{1}{2} y+2 x+\frac{1}{2} z+y+z \\
+& =\frac{5}{2}(2 x+y+z)<\frac{5}{2}(a+b+c) .
+\end{aligned}
+$$
+因此要证式\ref{eq5}, 只需证明
+$$
+\frac{5}{2}(a+b+c) \leqslant \frac{5}{4}(a+b+c+2 \sqrt{a b}+2 \sqrt{b c}+2 \sqrt{a c}) . \label{eq6}
+$$
+而式\ref{eq6}化简后等价于
+$$
+a+b+c \leqslant 2(\sqrt{a b}+\sqrt{b c}+\sqrt{a c}), \label{eq7}
+$$
+这是一个简单的不等式.
+事实上, 不妨设 $a \geqslant b \geqslant c$, 则
+式\ref{eq7}的右端 $\geqslant 2(b+c+c)>2\left(\frac{a}{2}+\frac{b+c}{2}+c\right)>a+b+c=$ 式\ref{eq7} 的左端.
+综上, 式\ref{eq1}被证明.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $P$ 为 $\triangle A B C$ 内一点,证明:
+$$
+\sqrt{P A}+\sqrt{P B}+\sqrt{P C}<\frac{\sqrt{5}}{2}(\sqrt{B C}+\sqrt{C A}+\sqrt{A B}) . \label{eq1}
+$$
+%%<SOLUTION>%%
+当然, 上面的例 6 还可用等高线方法来证明.
+所谓等高线就是在讨论极值问题时引进的特殊平面曲线,如圆、椭圆等.
+这里用的等高线是椭圆.
+另外的证法:
+设 $B C=a, C A=b, A B=c$, 且不妨设 $a \leqslant b, c$.
+现过 $P$ 点作一个以 $B 、 C$ 为焦点的椭圆, 与 $A B$ 、 $A C$ 分别交于 $E$ 和 $F$,如图(<FilePath:./figures/fig-c1i7.png>),则
+$$
+P A \leqslant \max (E A, F A) \text {. }
+$$
+不妨设 $E A \geqslant F A$, 则 $P A \leqslant E A$.
+又
+$\sqrt{P B}+\sqrt{P C} \leqslant \sqrt{2(P B+P C)}=\sqrt{2(E B+E C)}$,
+因此
+$$
+\begin{aligned}
+& \sqrt{P A}+\sqrt{P B}+\sqrt{P C} \\
+< & \sqrt{E A}+\sqrt{2(E B+E C)} \\
+\leqslant & {\left[5 E A+\frac{5}{2}(E B+E C)\right]^{\frac{1}{2}} } \\
+= & {\left[5(E A+E B)+\frac{5}{2}(E C-E B)\right]^{\frac{1}{2}} } \\
+< & \sqrt{5}\left(a+\frac{a}{2}\right)^{\frac{1}{2}} \\
+< & \frac{\sqrt{5}}{2}(\sqrt{a}+\sqrt{b}+\sqrt{c}),
+\end{aligned}
+$$
+得证.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 给定实数 $P_1 \\leqslant P_2 \\leqslant P_3 \\leqslant \\cdots \\leqslant P_n$, 求出实数 $x_1 \\geqslant x_2 \\geqslant \\cdots \\geqslant x_n$, 使 $d=\\left(P_1-x_1\\right)^2+\\left(P_2-x_2\\right)^2+\\cdots+\\left(P_n-x_n\\right)^2$ 最小.",
+    "solution": "由直观猜想最值点 $\\left(x_1, x_2, \\cdots, x_n\\right)$ 是均匀的, 即 $x_1=x_2=\\cdots= x_n=x$ (待定). 此时 $d=\\sum_{i=1}^n\\left(P_i-x_i\\right)^2=\\sum_{i=1}^n\\left(P_i-x\\right)^2=n x^2-2 \\sum_{i=1}^n\\left(P_i\\right) x+ \\sum_{i=1}^n P_i^2$. 此二次函数在 $x=\\sum_{i=1}^n \\frac{P_i}{n}=P$ 时达到最小.\n于是, 我们猜想 $d$ 在 $x_1= x_2=\\cdots=x_n=P$ 时达到最小.\n我们只须证明: 给定实数 $P_1 \\leqslant P_2 \\leqslant P_3 \\cdots \\leqslant P_n$, 对任何实数 $x_1 \\geqslant x_2 \\geqslant \\cdots \\geqslant x_n, \\sum_{i=1}^n\\left(P_i-x_i\\right)^2 \\geqslant \\sum_{i=1}^n\\left(P_i-\\right. P)^2\\left(\\right.$ 其中 $\\left.P=\\sum_{i=1}^n \\frac{P_i}{n}\\right)$. 记上式左边与右边的差为 $H$, 则 $H=\\sum_{i=1}^n x_i^2- 2 \\sum_{i=1}^n P_i x_i+2 P \\sum_{i=1}^n P_i-n P^2=\\sum_{i=1}^n x_i^2-2 \\sum_{i=1}^n P_i x_i+n P^2 \\geqslant$ (切比雪夫不等式) $\\sum_{i=1}^n x_i^2-2 \\cdot \\frac{1}{n} \\sum_{i=1}^n P_i \\sum_{i=1}^n x_i+n P^2=\\sum_{i=1}^n x_i^2-2 P \\sum_{i=1}^n x_i+n P^2=\\sum_{i=1}^n\\left(x_i-\\right. P)^2 \\geqslant 0$.",
+    "remark": "",
+    "figures": []
+}

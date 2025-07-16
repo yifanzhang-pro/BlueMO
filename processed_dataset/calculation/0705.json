@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 化简: $2 \\sqrt{1+\\sin 8}+\\sqrt{2+2 \\cos 8}$ 的结果( ).\n(A) $2 \\sin 4$\n(B) $2 \\sin 4+4 \\cos 4$\n(C) $-2 \\sin 4-4 \\cos 4$\n(D) $2 \\sin 4-4 \\cos 4$",
+    "solution": "C. $2 \\sqrt{1+\\sin 8}+\\sqrt{2+2 \\cos 8}=2 \\sqrt{\\sin ^2 4+\\cos ^2 4+2 \\sin 4 \\cos 4}+ \\sqrt{2+2\\left(2 \\cos ^2 4-1\\right)}=2|\\sin 4+\\cos 4|+|2 \\cos 4|=-2 \\sin 4-2 \\cos 4- 2 \\cos 4=-2 \\sin 4-4 \\cos 4$.",
+    "remark": "",
+    "figures": []
+}

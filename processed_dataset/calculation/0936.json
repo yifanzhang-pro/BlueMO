@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter2.tex",
+    "problem_type": "calculation",
+    "problem": "例7. 求 $\\tan 20^{\\circ}+4 \\sin 20^{\\circ}$ 的值.",
+    "solution": "分析:与解引人复数, 设 $z=\\cos 20^{\\circ}+\\mathrm{i} \\sin 20^{\\circ}$, 则 $\\bar{z}=\\frac{1}{z}=\\cos 20^{\\circ}-$ isin $20^{\\circ}$. 于是,有\n$$\n\\begin{gathered}\n\\cos 20^{\\circ}=\\frac{z+\\bar{z}}{2}=\\frac{z^2+1}{2 z}, \\\\\n\\sin 20^{\\circ}=\\frac{z-\\bar{z}}{2 \\mathrm{i}}=\\frac{z^2-1}{2 z \\mathrm{i}}, \\\\\nz^3=\\cos 60^{\\circ}+\\mathrm{i} \\sin 60^{\\circ}=\\frac{1}{2}+\\frac{\\sqrt{3}}{2} \\mathrm{i} .\n\\end{gathered}\n$$\n所以\n$$\n\\begin{aligned}\n\\tan 20^{\\circ}+4 \\sin 20^{\\circ} & =\\frac{z^2-1}{\\left(z^2+1\\right) \\mathrm{i}}+4 \\cdot \\frac{z^2-1}{2 z \\mathrm{i}} \\\\\n& =\\frac{2 z^4+z^3-z-2}{\\mathrm{i}\\left(z^3+z\\right)} \\\\\n& =\\frac{2\\left(\\frac{1}{2}+\\frac{\\sqrt{3}}{2} \\mathrm{i}\\right) z+\\left(\\frac{1}{2}+\\frac{\\sqrt{3}}{2} \\mathrm{i}\\right)-z-2}{\\mathrm{i}\\left(\\frac{1}{2}+\\frac{\\sqrt{3}}{2} \\mathrm{i}+z\\right)} \\\\\n& =\\frac{\\sqrt{3}\\left(z \\mathrm{i}+\\frac{1}{2} \\mathrm{i}-\\frac{\\sqrt{3}}{2}\\right)}{\\frac{1}{2} \\mathrm{i}+z \\mathrm{i}-\\frac{\\sqrt{3}}{2}} \\\\\n& =\\sqrt{3} .\n\\end{aligned}\n$$\n故 $\\tan 20^{\\circ}+4 \\sin 20^{\\circ}=\\sqrt{3}$.",
+    "remark": "注:(1) 以上两题阐明了复数与三角的联系.\n(2) 下面给出一组求值题, 有趣的是, 它们的值均为 $\\sqrt{3}$.\n$$\n\\begin{aligned}\n& \\cot 10^{\\circ}-4 \\cos 10^{\\circ} ; \\\\\n& \\cot 20^{\\circ}-\\sec 10^{\\circ} ; \\\\\n& \\csc 40^{\\circ}+\\tan 10^{\\circ} ; \\\\\n& 4 \\sin 40^{\\circ}-\\tan 40^{\\circ} \\text {. }\n\\end{aligned}\n$$",
+    "figures": []
+}

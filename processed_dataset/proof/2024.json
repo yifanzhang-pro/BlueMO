@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例5. 在 $\\triangle A B C$ 中, $\\angle A=60^{\\circ}, P$ 为 $\\triangle A B C$ 所在平面上一点,且使得 $P A=6, P B=7, P C=10$, 求 $\\triangle A B C$ 面积的最大值.",
+    "solution": "解法 2 先证引理.\n引理设 $P$ 为一个平行四边形 $A B C D$ 所在平面上的一点, 则\n$$\nP A^2+P C^2-P B^2-P D^2=2 \\overrightarrow{A B} \\cdot \\overrightarrow{A D} .\n$$\n证明如图(<FilePath:./images/volume9/figures/fig-c2i8.png>), 平移 $\\triangle B P C$ 至 $\\triangle A D P^{\\prime}$. 设 $\\overrightarrow{A P}=\\alpha, \\overrightarrow{P D}=\\beta, \\overrightarrow{D P^{\\prime}}=\\gamma$, 则\n$$\n\\begin{aligned}\nP A^2+P C^2 & =P A^2+P^{\\prime} D^2=\\alpha^2+\\gamma^2, \\\\\nP D^2+P B^2 & =P D^2+P^{\\prime} A^2 \\\\\n& =\\beta^2+(\\alpha+\\beta+\\gamma)^2 \\\\\n& =2 \\beta^2+\\alpha^2+\\gamma^2+2 \\alpha \\cdot \\beta+2 \\alpha \\cdot \\gamma+2 \\gamma \\cdot \\beta,\n\\end{aligned}\n$$\n因此\n$$\n\\begin{aligned}\nP A^2+P C^2-P D^2-P B^2 & =-2 \\beta^2-2 \\alpha \\cdot \\beta-2 \\gamma \\cdot \\beta-2 \\gamma \\cdot \\alpha \\\\\n& =-2(\\alpha+\\beta) \\cdot(\\beta+\\gamma) \\\\\n& =2 \\overrightarrow{A D} \\cdot \\overrightarrow{P^{\\prime} P} \\\\\n& =2 \\overrightarrow{A B} \\cdot \\overrightarrow{A D} .\n\\end{aligned}\n$$\n下面求解原问题.\n如图(<FilePath:./images/volume9/figures/fig-c2i9.png>), 平移 $\\triangle A P B$ 至 $\\triangle C P^{\\prime} D$, 则 $P^{\\prime} C=6$, $P^{\\prime} D=7, C D=A B, P P^{\\prime}=A C$.\n设 $P D=d$, 对四边形 $C P^{\\prime} D P$ 应用 Ptolemy 不等式可得\n$$\n70+6 d \\geqslant A B \\cdot A C . \\label{eq1}\n$$\n再对平行四边形 $A B D C$ 应用引理可得\n$$\n7^2+10^2-6^2-d^2=2 \\overrightarrow{B A} \\cdot \\overrightarrow{B D}=-A B \\cdot A C . \\label{eq2}\n$$\n由式\\ref{eq1}、\\ref{eq2}可得\n$$\nd^2-113 \\leqslant 6 d+70\n$$\n所以\n$$\n0 \\leqslant d \\leqslant 3+8 \\sqrt{3} \\text {. }\n$$\n故由式\\ref{eq1}可得 $A B \\cdot A C \\leqslant 88+48 \\sqrt{3}$, 进而得 $S_{\\triangle A B C} \\leqslant 36+22 \\sqrt{3}$, 等号成立当且仅当 $\\angle A C P=\\angle A P B$, 故 $S_{\\triangle A B C}$ 的最大值为 $36+22 \\sqrt{3}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c2i8.png",
+        "./images/volume9/figures/fig-c2i9.png"
+    ]
+}

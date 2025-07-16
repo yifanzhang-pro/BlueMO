@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise8.tex",
+    "problem_type": "calculation",
+    "problem": "问题7. 对于满足条件 $x_1+x_2+\\cdots+x_n=1$ 的非负实数 $x_i(i=1,2, \\cdots, n)$, 求 $\\sum_{j=1}^n\\left(x_j^4-x_j^5\\right)$ 的最大值.",
+    "solution": "当 $n=1$ 时, $\\sum_{j=1}^n\\left(x_j^4-x_j^5\\right)=0$.\n当 $n=2$ 时, $\\sum_{j=1}^n\\left(x_j^4-x_j^5\\right)=\\left(x_1^4+x_2^4\\right)-\\left(x_1+x_2\\right)\\left(x_1^4-x_1^3 x_2+x_1^2 x_2^2-\\right. \\left.x_1 x_2^3+x_2^4\\right)=x_1^3 x_2-x_1^2 x_2^2+x_1 x_2^3=x_1 x_2\\left(1-3 x_1 x_2\\right)$.\n又由于 $x_1 x_2 \\leqslant \\frac{1}{4}$, 故可知所求最大值为 $\\frac{1}{12}$.\n当 $n \\geqslant 3$ 时, 则\n$$\n\\begin{aligned}\n& -\\left(x^4+y^4-x^5-y^5\\right)+\\left[(x+y)^4-(x+y)^5\\right] \\\\\n= & {\\left[(x+y)^4-x^4-y^4\\right]-\\left[(x+y)^5-x^5-y^5\\right] }\n\\end{aligned}\n$$\n$$\n\\begin{aligned}\n& =x y\\left(4 x^2+4 y^2+6 x y\\right)-x y\\left(5 x^3+5 y^3+10 x y^2+10 x^2 y\\right) \\\\\n& \\geqslant x y\\left(4 x^2+4 y^2+6 x y\\right)-5 x y(x+y)^3 \\\\\n& =x y\\left(\\frac{7}{2} x^2+\\frac{7}{2} y^2+\\frac{x^2+y^2}{2}+6 x y\\right)-5 x y(x+y)^3 \\\\\n& \\geqslant x y\\left(\\frac{7}{2} x^2+\\frac{7}{2} y^2+7 x y\\right)-5 x y(x+y)^3>0\n\\end{aligned}\n$$\n等价于 $\\frac{7}{2} x y(x+y)^2 \\cdot[7-10(x+y)]>0$, 即 $x+y<\\frac{7}{10}$.\n而当 $n \\geqslant 3$ 时, 总有 2 个数之和 $<\\frac{2}{3}<\\frac{7}{10}$, 不断用 $x+y$ 替换 $x 、 y$, 最终必可化为 $n=2$ 时的情形.\n综上, $\\sum_{j=1}^n\\left(x_j^4-x_j^5\\right)$ 的最大值为 $\\frac{1}{12}$.",
+    "remark": "",
+    "figures": []
+}

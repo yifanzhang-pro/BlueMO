@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例5. $n$ 个人参加一次会议, 在会议期间, 每天都要在一张圆桌上共进晚餐.\n如果要求每次晚餐就座时, 每个人相邻就座者都不相同, 问这样的晚餐最多能进行多少次?",
+    "solution": "证明:用 $n$ 个点表示 $n$ 个人,作完全图 $K_n$,如图(<FilePath:./images/volume12/figures/fig-c6i12.png>) 所示,则 $K_n$ 中的一个哈密顿圈就是一次晚餐的就座方法.\n可见, 晚餐最多能进行的次数就是 $K_n$ 中无公共边的哈密顿圈的个数.\n$K_n$ 中有 $\\frac{1}{2} n(n-1)$ 条边, 每个哈密顿圈有 $n$ 条边, 因此, 边不相重的哈密顿圈最多有 $\\left[\\frac{n-1}{2}\\right]$ 个.\n当 $n=2 k+1$ 时, 将顶点 $0,1,2, \\cdots, 2 k$ 排列如图.\n先取一个哈密顿圈 $(0,1,2,2 k, 3,2 k-1,4, \\cdots$, $k+3, k, k+2, k+1,0)$, 然后绕 0 点依次顺时针旋转 $\\frac{\\pi}{k}, \\frac{2 \\pi}{k}, \\cdots,(k-1) \\frac{\\pi}{k}$, 共产生 $k=\\left[\\frac{n-1}{2}\\right]$ 个无公共边的哈密顿圈, 如果 $n=2 k+2$, 那么每次在中间添加一个顶点 $v$, 同样有 $k$ 个哈密顿圈.\n由定理三可以推得下面的定理四.\n这是 1952 年数学家 Dirac 给出的.\n定理四 $G$ 是 $n(n \\geqslant 3)$ 阶简单图, 如果每个顶点 $v$ 的度 $d(v) \\geqslant \\frac{n}{2}$, 则图 $G$ 一定存在哈密顿圈.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c6i12.png"
+    ]
+}

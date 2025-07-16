@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 在平面上有三个两两外离的圆 $\\Gamma_1 、 \\Gamma_2 、 \\Gamma_3$, 对于这三个圆外的任意一点 $P$, 将六个点 $A_1 、 B_1 、 A_2 、 B_2 、 A_3 、 B_3$ 定义如下: 对于 $i=1,2,3, A_i 、 B_i$ 是圆 $\\Gamma_i$ 上相异的两点, 使得直线 $P A_i 、 P B_i$ 均与圆 $\\Gamma_i$ 相切.\n若 $A_1 B_1$ 、 $A_2 B_2 、 A_3 B_3$ 三线共点,则称此时的点 $P$ 为 \"独特的\". 求证: 若平面上存在独特的点, 则所有这样的点落在同一个圆上.",
+    "solution": "证明: 记圆 $\\Gamma_i(i=1,2,3)$ 的圆心、半径分别为 $O_i 、 r_i$. 设 $P$ 为一个独特的点, 且与其相应的三条直线 $A_1 B_1 、 A_2 B_2 、 A_3 B_3$ 交于点 $Q$. 以线段 $P Q$ 为直径作圆并记为圆 $\\Gamma$, 其圆心、半径分别为 $O 、 r$.\n接下来证明: 所有独特的点都在圆 $\\Gamma$ 上.\n如图(<FilePath:./images/volume7/figures/fig-c5a11.png>), 记 $P O_1$ 交 $A_1 B_1$ 于点 $X_1$. 由 $P O_1 \\perp A_1 B_1$ 知, 点 $X_1$ 在圆 $\\Gamma$ 上.\n由 $P A_1$ 与圆 $\\Gamma_1$ 相切及射影定理知 $O_1 X_1 \\cdot O_1 P= O_1 A_1^2=r_1^2$. 另一方面, $O_1 X_1 \\cdot O_1 P$ 也是点 $O_1$ 对圆 $\\Gamma$ 的幕, 则 $r_1^2=O_1 X_1 \\cdot O_1 P=O_1 O^2-r^2 \\Rightarrow r^2=O O_1^2-r_1^2$. 因此, $r^2$ 是点 $O$ 对圆 $\\Gamma_1$ 的幕.\n同理, $r^2$ 也是点 $O$ 对圆 $\\Gamma_2 、 \\Gamma_3$ 的幂.\n综上, $O$ 是所给定的三个圆 $\\Gamma_1 、 \\Gamma_2 、 \\Gamma_3$ 的根心.\n因为点 $O$ 对这三个圆的幂的平方根 $r$ 与点 $P$ 的选取无关, 所以, 所有独特的点都在圆 $\\Gamma$ 上.",
+    "remark": "注:: 若三个圆的根心位于无穷远点 (相应的三条根轴两两平行), 则在平面上不存在独特的点, 这与题目中的论述是相容的.",
+    "figures": [
+        "./images/volume7/figures/fig-c5a11.png"
+    ]
+}

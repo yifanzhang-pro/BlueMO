@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 已知非零向量 $\\vec{a}$ 和 $\\vec{b}$ 不平行, 且 $\\vec{m}=3 \\vec{a}-2 \\vec{b}, \\vec{n}=2 \\vec{a}+k \\vec{b}$, 问是否存在实数 $k$, 使 $\\vec{m}$ 和 $\\vec{n}$ 互相平行? 若存在求出 $k$ 的值, 若不存在, 说明理由.",
+    "solution": "因为 $\\vec{a}$ 和 $\\vec{b}$ 不平行, 且 $|\\vec{a}| \\neq 0,|\\vec{b}| \\neq 0$, 所以 $\\vec{a}$ 和 $\\vec{b}$ 可以确定平面的一个坐标系 (有可能不是直角坐标系), 且分别以 $\\vec{a}$ 和 $\\vec{b}$ 的方向作为两坐标轴的正方向, 以 $|\\vec{a}|$ 和 $|\\vec{b}|$ 作为两坐标轴的单位长度, 则\n$$\n\\vec{m}=\\{3,-2\\}, \\vec{n}=\\{2, k\\} .\n$$\n如果 $\\vec{m}$ 和 $\\vec{n}$ 互相平行, 则 $\\frac{2}{3}=\\frac{k}{-2}$, 即 $k=-\\frac{4}{3}$.",
+    "remark": "",
+    "figures": []
+}

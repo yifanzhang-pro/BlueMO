@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 若 $a_i>0(i=1,2,3, \\cdots, n)$, 且 $a_1 \\cdot a_2 \\cdots \\cdots a_n=1$, 求证:\n$$\n\\sum_{i=1}^n a_i \\geqslant n\n$$",
+    "solution": "当 $n=1$ 时, $a_1=1$, 结论成立.\n设当 $n=k$ 时结论成立.\n当 $n=k+1$ 时, $a_1 a_2 \\cdots a_{k+1}=1$, 由归纳假设, 有\n$$\n\\begin{aligned}\n& \\quad a_{k+1} \\cdot a_1+a_2+\\cdots+a_n \\geqslant k ; a_{k+1} \\cdot a_2+a_1+a_3+\\cdots+a_k \\geqslant k ; \\cdots, a_{k+1} \\cdot \\\\\n& a_k+a_1+\\cdots+a_{k-1} \\geqslant k .\n\\end{aligned}\n$$\n全部相加, 得\n$$\n\\left(a_1+a_2+\\cdots+a_k\\right)\\left(a_{k+1}+k-1\\right) \\geqslant k^2 .\n$$\n故 $\\quad \\sum_{i=1}^{k+1} a_i=\\sum_{i=1}^k a_i+a_{k+1} \\geqslant \\frac{k^2}{a_{k+1}+k-1}+a_{k+1} \\geqslant k+1$.\n因此结论成立.",
+    "remark": "",
+    "figures": []
+}

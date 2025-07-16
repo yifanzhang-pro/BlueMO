@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 已知凸六边形 $A_1 A_2 A_3 A_4 A_5 A_6$ 所有的角都是钝角, 圆 $\\Gamma_i(1 \\leqslant i \\leqslant 6)$ 的圆心为 $A_i$, 且圆 $\\Gamma_i$ 分别与圆 $\\Gamma_{i-1}$ 和圆 $\\Gamma_{i+1}$ 相外切, 其中, $\\Gamma_0=\\Gamma_6, \\Gamma_1= \\Gamma_7$. 设过圆 $\\Gamma_1$ 的两个切点所连直线与过圆 $\\Gamma_3$ 的两个切点所连直线相交, 且过这个交点与点 $A_2$ 的直线为 $e$; 类似地, 由圆 $\\Gamma_3$ 、圆 $\\Gamma_5$ 和 $A_4$ 定义直线 $f$, 由圆 $\\Gamma_5$ 、圆 $\\Gamma_1$ 和 $A_6$ 定义直线 $g$. 证明 $: e 、 f 、 g$ 三线共点.",
+    "solution": "证明: 记这六个切点分别为 $B_1 、 B_2 、 B_3$ 、 $B_4 、 B_5 、 B_6$, 如图(<FilePath:./images/volume7/figures/fig-c2a8.png>), 设 $B_1 B_2 、 B_3 B_4 、 B_5 B_6$ 两两交于点 $P 、 Q 、 R$. 连结 $B_1 B_6 、 B_4 B_5 、 B_2 B_3$. 由角元塞瓦定理得 $\\frac{\\sin \\angle B_1 P A_6}{\\sin \\angle A_6 P B_6} \\cdot \\frac{\\sin \\angle P B_6 A_6}{\\sin \\angle A_6 B_6 B_1}$. $\\frac{\\sin \\angle B_6 B_1 A_6}{\\sin \\angle A_6 B_1 P}=1 \\cdots$ (1). 又 $A_6 B_6=A_6 B_1$, 则 $\\angle A_6 B_6 B_1=\\angle A_6 B_1 B_6$. 故式 (1) 为 $\\frac{\\sin \\angle B_1 P A_6}{\\sin \\angle A_6 P B_6}$.\n$\\frac{\\sin \\angle P B_6 A_6}{\\sin \\angle A_6 B_1 P}=1$. 完全类似地得 $\\frac{\\sin \\angle B_5 R A_4}{\\sin \\angle A_4 R B_4} \\cdot \\frac{\\sin \\angle R B_4 A_4}{\\sin \\angle A_4 B_5 R}=1, \\frac{\\sin \\angle B_3 Q A_2}{\\sin \\angle A_2 Q B_2}$. $\\frac{\\sin \\angle Q B_2 A_2}{\\sin \\angle A_2 B_3 Q}=1$. 以上三式相乘并由 $\\angle P B_6 A_6=\\angle A_5 B_6 B_5=\\angle A_5 B_5 B_6= \\angle R B_5 A_4, \\angle R B_4 A_4=\\angle A_3 B_4 B_3=\\angle A_3 B_3 B_4=\\angle Q B_3 A_2, \\angle Q B_2 A_2= \\angle A_1 B_2 B_1=\\angle A_1 B_1 B_2=\\angle P B_1 A_6$, 得 $\\frac{\\sin \\angle B_1 P A_6}{\\sin \\angle A_6 P B_6} \\cdot \\frac{\\sin \\angle B_5 R A_4}{\\sin \\angle A_4 R B_4}$. $\\frac{\\sin \\angle B_3 Q A_2}{\\sin \\angle A_2 Q B_2}=1$. 由角元塞瓦定理的逆定理知, $P A_6 、 Q A_2 、 R A_4$ 三线共点, 即 $e 、 f 、 g$ 三线共点.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2a8.png"
+    ]
+}

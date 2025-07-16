@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter2.tex",
+    "problem_type": "calculation",
+    "problem": "例7. 设 $n, r$ 是给定的正整数,试确定最小正整数 $m$, 使将集合 $S= \\{1,2, \\cdots, m\\}$ 任意剖分为 $r$ 个两两不相交的集合 $A_1, A_2, \\cdots, A_r$ 之后, 都存在两个数 $a, b$ 属于同一个集合 $A_i(1 \\leqslant i \\leqslant r)$ 并且满足: $b<a \\leqslant \\frac{n+1}{n} b$.",
+    "solution": "解:设所求 $m$ 的最小值为 $m_0$ ( $m_0$ 的值可由以下分析中得到).\n若 $m<m_0$, 令 $A_i=\\{k \\mid k \\in S, k \\equiv i(\\bmod r)\\}(i=1,2, \\cdots, r\\}$, 则对任意 $a, b \\in A_i(i=1,2, \\cdots, r), a>b$, 有 $b<a \\leqslant m<m_0, a-b \\geqslant r$, 从而 $b \\leqslant a-r<m_0-r$, 于是\n$$\n\\frac{a}{b}=1+\\frac{a-b}{b}>1+\\frac{r}{m_0-r},\n$$\n故当 $m_0=n r+r$ 时, 有 $\\frac{a}{b}>1+\\frac{1}{n}$, 即 $a>\\frac{n+1}{n} b$, 不满足题目要求.\n另一方面, 若 $m \\geqslant m_0=n r+r$, 将 $S$ 任意剖分为 $r$ 个两两不相交的集合 $A_1, A_2, \\cdots, A_r$ 之后, 取 $S$ 中 $r+1$ 个数 $n r, n r+1, n r+2, \\cdots, n r+r$, 则由抽庶原理知其中必有 2 个数 $a, b(a>b)$ 属于同一个子集 $A_i(1 \\leqslant i \\leqslant r)$, 且 $a-b \\leqslant r, b \\geqslant n r$, 于是\n$$\n1<\\frac{a}{b}=1+\\frac{a-b}{b} \\leqslant 1+\\frac{r}{n r}=1+\\frac{1}{n},\n$$\n即 $b<a \\leqslant \\frac{n+1}{n} b$, 满足题目要求.\n综上所述知所求 $m$ 的最小值为 $m_0=n r+r$.",
+    "remark": "",
+    "figures": []
+}

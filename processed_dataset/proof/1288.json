@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $a_n=1+\\frac{1}{2}+\\cdots+\\frac{1}{n}, n \\in \\mathbf{N}_{+}$. 求证: 对 $n \\geqslant 2$, 有\n$$\na_n^2>2\\left(\\frac{a_2}{2}+\\frac{a_3}{3}+\\cdots+\\frac{a_n}{n}\\right) .\n$$",
+    "solution": "分析:若直接通过 $a_n$ 的表达式来证将非常复杂, 但通过建立其递推公式,可以使问题很容易得到解决, 我们便可从此处人手.\n证明\n$$\n\\begin{aligned}\na_n^2-a_{n-1}^2 & =\\left(1+\\frac{1}{2}+\\cdots+\\frac{1}{n}\\right)^2-\\left(1+\\frac{1}{2}+\\cdots+\\frac{1}{n-1}\\right)^2 \\\\\n& =\\frac{1}{n^2}+2 \\cdot \\frac{1}{n}\\left(1+\\frac{1}{2}+\\cdots+\\frac{1}{n-1}\\right) \\\\\n& =\\frac{1}{n^2}+\\frac{2}{n}\\left(a_n-\\frac{1}{n}\\right) \\\\\n& =2 \\cdot \\frac{a_n}{n}-\\frac{1}{n^2} .\n\\end{aligned}\n$$\n故 $\\quad a_n^2-a_1^2=2\\left(\\frac{a_2}{2}+\\frac{a_3}{3}+\\cdots+\\frac{a_n}{n}\\right)-\\left(\\frac{1}{2^2}+\\frac{1}{3^2}+\\cdots+\\frac{1}{n^2}\\right)$.\n所以 $a_n^2=2\\left(\\frac{a_2}{2}+\\frac{a_3}{3}+\\cdots+\\frac{a_n}{n}\\right)+\\left(1-\\frac{1}{2^2}-\\cdots-\\frac{1}{n^2}\\right)$\n$$\n\\begin{aligned}\n& >2\\left(\\frac{a_2}{2}+\\frac{a_3}{3}+\\cdots+\\frac{a_n}{n}\\right)+\\left(1-\\frac{1}{1 \\times 2}-\\frac{1}{2 \\times 3}-\\cdots-\\frac{1}{(n-1) n}\\right) \\\\\n& =2\\left(\\frac{a_2}{2}+\\frac{a_3}{3}+\\cdots+\\frac{a_n}{n}\\right)+\\frac{1}{n} \\\\\n& >2\\left(\\frac{a_2}{2}+\\frac{a_3}{3}+\\cdots+\\frac{a_n}{n}\\right) .\n\\end{aligned}\n$$\n故原不等式成立.\n说明本题也可以用数学归纳法证明加强的命题:\n$$\na_n^2>2\\left(\\frac{a_2}{2}+\\frac{a_3}{3}+\\cdots+\\frac{a_n}{n}\\right)+\\frac{1}{n} .\n$$",
+    "remark": "",
+    "figures": []
+}

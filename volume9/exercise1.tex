@@ -1,0 +1,63 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $A^{\prime}$ 为 $\triangle A B C$ 的外角平分线 $A T$ 上的任意一点, 试证:
+$$
+A^{\prime} B+A^{\prime} C \geqslant A B+A C .
+$$
+%%<SOLUTION>%%
+延长 $B A$ 到 $C^{\prime}$ 使得 $A C^{\prime}=A C$, 连接 $A^{\prime} C^{\prime}$. 显然 $A^{\prime} B+A^{\prime} C^{\prime}>B C^{\prime}= B A+A C$. 再由 $\triangle A A^{\prime} C^{\prime} \cong \triangle A A^{\prime} C$ 便知 $A^{\prime} C^{\prime}=A^{\prime} C$, 代入便得.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 给定边长为 $a>b>c$ 的 $\triangle A B C$ 及其任意内点 $O$. 设直线 $A O 、 B O 、 C O$ 与 $\triangle A B C$ 的边交于点 $P 、 Q 、 R$. 证明:
+$$
+O P+O Q+O R<a .
+$$
+%%<SOLUTION>%%
+在边 $B C 、 C A 、 A B$ 上分别取点 $A_1$ 和 $A_2 、 B_1$ 和 $B_2 、 C_1$ 和 $C_2$, 使得 $B_1 C_2 、 C_1 A_2 、 A_1 B_2$ 过点 $O$, 且 $B_1 C_2 / / B C, C_1 A_2 / / C A, A_1 B_2 / / A B$. 在 $\triangle A_1 A_2 O 、 \triangle B_1 B_2 O 、 \triangle C_1 C_2 O$ 中最大的边分别为 $A_1 A_2 、 B_1 O 、 C_2 O$. 因此 $O P<A_1 A_2, O Q<B_1 O, O R<C_2 O$, 从而 $O P+O Q+O R<A_1 A_2+B_1 O+ C_2 O=A_1 A_2+C A_2+B A_1=B C$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设点 $D 、 E 、 F$ 分别是 $\triangle A B C$ 的边 $B C 、 C A 、 A B$ 上的点, $\triangle 、 R$ 分别为 $\triangle A B C$ 的面积和外接圆半径.
+求证:
+$$
+D E+E F+F D \geqslant \frac{2 \Delta}{R} .
+$$
+%%<SOLUTION>%%
+提示: 不妨设 $A \leqslant 90^{\circ}$. 将 $\triangle A B C$ 以边 $A C$ 为轴翻转一次,得 $\triangle A B^{\prime} C$; 再将 $\triangle A B^{\prime} C$ 以边 $A B^{\prime}$ 为轴翻转一次, 得 $\triangle A B^{\prime} C^{\prime}$. 同时 $\triangle D E F$ 依次变为 $\triangle D^{\prime} E F^{\prime}, \triangle D^{\prime \prime} E^{\prime \prime} F^{\prime}$, 则 $D E+E F+F D=D E+E F^{\prime}+F^{\prime} D^{\prime \prime} \geqslant D D^{\prime \prime}$. 再证 $D D^{\prime \prime} \geqslant \frac{2 \Delta}{R}$ 便可.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $E 、 F$ 分别是 $\triangle A B C$ 中以 $A$ 为端点的射线 $A C 、 A B$ 上的点, 则
+$$
+|A B-A C|+|A E-A F| \geqslant|B E-C F|,
+$$
+当且仅当 $A B=A C$ 且 $A E=A F$ 时等号成立.
+%%<SOLUTION>%%
+这里仅就 $E 、 F$ 分别在边 $A C 、 A B$ 上的情况给出提示, 在其他情况下类似可得.
+不妨设 $A C \geqslant A B$, 在 $A C$ 上取点 $D$ 使得 $A D=A B$, 又在 $A B$ (或 $A B$ 的延长线) 上取点 $G$, 使得 $A G=A E$, 则 $|A B-A C|+|A E-A F|=|C D|+ |F G| \geqslant|C G-D G|+|C F-C G| \geqslant|C G-D G+C F-C G|=|C F-D G|= |B E-C F|$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 在六边形 $A_1 A_2 A_3 A_4 A_5 A_6$ 内存在一点 $O$, 使得 $\angle A_i O A_{i+1}=\frac{\pi}{3} ( i=1$, $2,3,4,5,6$ ) (约定 $A_7=A_1$ ). 如果 $O A_1>O A_3>O A_5, O A_2>O A_4> O A_6$, 则
+$$
+A_1 A_2+A_3 A_4+A_5 A_6<A_2 A_3+A_4 A_5+A_6 A_1 .
+$$
+%%<SOLUTION>%%
+作射线 $P X 、 P Y$ 使得 $\angle X P Y=\frac{\pi}{3} . B_1 、 B_3 、 B_5$ 和 $B_2 、 B_4 、 B_6$ 分别位于 $P X 、 P Y$ 上且使得 $P B_i=O A_i$, 这样 $B_i B_{i+1}=A_i A_{i+1}$. 因为 $P B_1>P B_3> P B_5, P B_6<P B_4<P B_2$, 所以线段 $B_1 B_6$ 必与线段 $B_2 B_3 、 B_3 B_4 、 B_4 B_5$ 分别交于某三点 $C_1 、 C_2 、 C_3$. 因为 $B_1 B_2<B_1 C_1+C_1 B_2, B_3 C_2<B_3 C_1+C_1 C_2$, $C_2 B_4<C_2 C_3+C_3 B_4, B_5 B_6<B_5 C_3+C_3 B_6$, 相加便得 $B_1 B_2+B_3 B_4+B_5 B_6< B_2 B_3+B_4 B_5+B_6 B_1$.
+%%PROBLEM_END%%
+
+

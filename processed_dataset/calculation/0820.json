@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-5.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 设 $a, b, c, d$ 是不全为 0 的实数,求\n$$\nf=\\frac{a b+2 b c+c d}{a^2+b^2+c^2+d^2}\n$$\n的最大值.",
+    "solution": "解:如果假设 $f$ 的最大值为 $M$, 则\n$$\na b+2 b c+c d \\leqslant M\\left(a^2+b^2+c^2+d^2\\right),\n$$\n因此, 要建立一个上面形式的不等式, 并找一组 $a, b, c, d$ 的值, 使不等式等号成立.\n设 $\\alpha, \\beta, \\gamma>0$, 则\n$$\n\\frac{\\alpha}{2} a^2+\\frac{b^2}{2 \\alpha} \\geqslant a b, \\beta b^2+\\frac{c^2}{\\beta} \\geqslant 2 b c, \\frac{\\gamma}{2} c^2+\\frac{d^2}{2 \\gamma} \\geqslant c d .\n$$\n将上面三式相加, 得\n$$\n\\begin{gathered}\n\\frac{\\alpha}{2} a^2+\\left(\\frac{1}{2 \\alpha}+\\beta\\right) b^2+\\left(\\frac{1}{\\beta}+\\frac{\\gamma}{2}\\right) c^2+\\frac{d^2}{2 \\gamma} \\\\\n\\geqslant a b+2 b c+c d\n\\end{gathered}\n$$\n令 $\\frac{\\alpha}{2}=\\frac{1}{2 \\alpha}+\\beta=\\frac{1}{\\beta}+\\frac{\\gamma}{2}=\\frac{1}{2 \\gamma}$, 得 $\\gamma=\\frac{1}{\\alpha}, \\beta=\\frac{1}{2}\\left(\\alpha-\\frac{1}{\\alpha}\\right)$, 及 $\\alpha^4- 6 \\alpha^2+1=0$, 解方程得 $\\alpha=\\sqrt{2}+1$ (另外三个解不合要求), 于是\n$$\n\\begin{gathered}\n\\frac{\\sqrt{2}+1}{2}\\left(a^2+b^2+c^2+d^2\\right) \\geqslant a b+2 b c+c d, \\\\\nf \\leqslant \\frac{\\sqrt{2}+1}{2} .\n\\end{gathered}\n$$\n又当 $a=d=1, b=c=\\sqrt{2}+1$ 时, 不等式等号成立, 故 $f$ 的最大值为 $\\frac{\\sqrt{2}+1}{2}$.",
+    "remark": "",
+    "figures": []
+}

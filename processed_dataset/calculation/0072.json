@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题16 设 $S$ 为十进制中至多有 $n$ 位数字的所有非负整数所成的集合, $S_k$ 由 $S$ 中那些数字之和小于 $k$ 的元素组成.\n对于怎样的 $n$, 有 $k$ 存在, 使得 $|S|= 2\\left|S_k\\right|$ ?",
+    "solution": "对于任一个 $n$ 位数 $A=\\overline{a_1 a_2 \\cdots a_n}\\left(0 \\leqslant a_i \\leqslant 9, i=1,2, \\cdots, n\\right)$, 对应 $A \\rightarrow B=\\overline{b_1 b_2 \\cdots b_n}$ 是位数不超过 $n$ 的所有非负整数的集合到它自身的一个双射, 其中 $b_i=9-a_i, i=1,2, \\cdots, n$. 若记 $d(A)=a_1+a_2+\\cdots+a_n$, 则 $d(A)+d(B)=9 n$. 由此可见, 对于任意 $0<k \\leqslant 9 n, d(A)<k$ 的充分必要条件是 $d(B)>9 n-k$. 因而有 $\\left|\\left\\{A \\mid d(A)<\\frac{9 n}{2}\\right\\}\\right|=\\left|\\left\\{A \\mid d(A)>\\frac{9 n}{2}\\right\\}\\right|$.\n当 $n$ 为奇数时, $\\frac{9 n}{2}$ 不是整数, 故 (1) 中左右两端的集合之并集为 $S$, 所以当 $k=\\left[\\frac{9 n}{2}\\right]+1$ 时, $|S|=2\\left|S_k\\right|$. 当 $n$ 为偶数时, $\\frac{9 n}{2}$ 是整数, 当 $k==\\frac{9 n}{2}$ 时, $|S|> 2\\left|S_k\\right|,|S|<2\\left|S_{k+1}\\right|$, 这时满足要求的 $k$ 不存在.",
+    "remark": "",
+    "figures": []
+}

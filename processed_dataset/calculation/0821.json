@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-5.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 求出最大的正数 $\\lambda$, 使得对于满足 $x^2+y^2+z^2=1$ 的任何实数 $x$, $y, z$ 成立不等式:\n$$\n|\\lambda x y+y z| \\leqslant \\frac{\\sqrt{5}}{2} .\n$$",
+    "solution": "解:由于\n$$\n\\begin{aligned}\n1 & =x^2+y^2+z^2=x^2+\\frac{\\lambda^2}{1+\\lambda^2} y^2+\\frac{1}{1+\\lambda^2} y^2+z^2 \\\\\n& \\geqslant \\frac{2}{\\sqrt{1+\\lambda^2}}(\\lambda|x y|+|y z|) \\geqslant \\frac{2}{\\sqrt{1+\\lambda^2}}(|\\lambda x y+y z|),\n\\end{aligned}\n$$\n且当 $y=\\frac{\\sqrt{2}}{2}, x=\\frac{\\sqrt{2} \\lambda}{2 \\sqrt{\\lambda^2+1}}, z=\\frac{\\sqrt{2}}{2 \\sqrt{\\lambda^2+1}}$ 时, 上述两个等号可同时取到.\n因此 $\\frac{\\sqrt{1+\\lambda^2}}{2}$ 是 $|\\lambda x y+y z|$ 的最大值.\n令 $\\frac{\\sqrt{1+\\lambda^2}}{2} \\leqslant \\frac{\\sqrt{5}}{2}$, 解得 $|\\lambda| \\leqslant 2$.\n故 $\\lambda$ 的最大值为 2 .",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter1.tex",
+    "text": "二、集合与集合的关系在两个集合的关系中,子集是一个重要的概念,它的两个特例是真子集和集合相等.\n下面“充分必要条件”的角度来理解子集、真子集和集合相等的概念无疑是十分有益的:\n子集: $A\\subseteq B\\Longleftrightarrow$ 对任意 $x\\in A.$ ,恒有 $x\\in B$ ;\n真子集: $A\\subsetneq B\\Longleftrightarrow A\\subseteq B$, 且存在$x^{\\prime}\\in B$ ,但 $x^{\\prime}\\not\\in{\\boldsymbol{A}}$;\n集合相等: $A=B\\Longleftrightarrow A\\subseteq B$ ,且 $B\\subseteq A.$ \n容易证明两个集合关系的如下性质\n1. $\\emptyset \\subseteq A,\\,\\emptyset\\subseteq A\\ (A\\neq\\emptyset)$;\n2. $A\\subseteq B,\\,B\\subseteq C\\Rightarrow A\\subseteq C$ ;\n3. $n$ 元集$A$ 总共有 $2^n$ 个不同的子集.",
+    "figures": []
+}

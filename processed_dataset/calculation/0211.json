@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题14. 将与 105 互素的正整数从小到大排列成数列, 求出这个数列的第 1000 项.",
+    "solution": "(解法一) 设这个数列的第 1000 项为 $n$, 因 $105=3 \\times 5 \\times 7$, 故依题意知道.\n$n$ 不能被 $3 、 5 、 7$ 中任何一个数整除, 且在小于或等于 $n$ 的正整数中不能被 3、5、7 中任何一个数整除的恰有 1000 个.\n记 $S=\\{1,2, \\cdots, n\\}$, $A_i=\\{m \\mid m \\in S, m$ 被 $i$ 整除 $\\}(i=3,5,7)$, 于是由容斥原理得 $1000= \\left|\\complement_S A_3 \\cap \\complement_S A_5 \\cap \\complement_S A_7\\right|=|S|-\\left|A_3\\right|-\\left|A_5\\right|-\\left|A_7\\right|+\\left|A_3 \\cap A_5\\right|+ \\left|A_3 \\cap A_7\\right|+\\left|A_5 \\cap A_7\\right|-\\left|A_3 \\cap A_5 \\cap A_7\\right|=n-\\left[\\frac{n}{3}\\right]-\\left[\\frac{n}{5}\\right]-\\left[\\frac{n}{7}\\right]+ \\left[\\frac{n}{3 \\times 5}\\right]+\\left[\\frac{n}{3 \\times 7}\\right]+\\left[\\frac{n}{5 \\times 7}\\right]-\\left[\\frac{n}{3 \\times 5 \\times 7}\\right] \\cdots$ (1). 利用 $\\alpha-1<[\\alpha] \\leqslant \\alpha$, 由(1) 得 $1000>n-\\left(\\frac{n}{3}+\\frac{n}{5}+\\frac{n}{7}\\right)+\\left(\\frac{n}{3 \\times 5}-1+\\frac{n}{3 \\times 7}-1+\\frac{n}{5 \\times 7}-1\\right)- \\frac{n}{3 \\times 5 \\times 7}$ 和 $1000<n-\\left(\\frac{n}{3}-1+\\frac{n}{5}-1+\\frac{n}{7}-1\\right)+\\left(\\frac{n}{3 \\times 5}+\\frac{n}{3 \\times 7}+\\frac{n}{5 \\times 7}\\right)- \\left(\\frac{n}{3 \\times 5 \\times 7}-1\\right)$, 即 $2178 \\frac{3}{4}<n<2194 \\frac{1}{16}$, 又 $n$ 与 105 互素, 所以 $n$ 只可能为 $2179,2182,2183,2186,2188,2189,2192,2194$, 经检验, 其中只有 $n=2186$ 满足方程 (1), 故此数列的第 1000 项为 2186 .",
+    "remark": "",
+    "figures": []
+}

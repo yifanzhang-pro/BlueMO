@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 已知直线上的三个定点依次为 $A 、 B 、 C, \\Gamma$ 为过 $A 、 C$ 且圆心不在 $A C$ 上的圆.\n分别过 $A 、 C$ 两点且与圆 $\\Gamma$ 相切的直线交于点 $P, P B$ 与圆 $\\Gamma$ 交于点 $Q$. 证明: $\\angle A Q C$ 的平分线与 $A C$ 的交点不依赖于圆 $\\Gamma$ 的选取.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c2a3.png>), 假设 $\\angle A Q C$ 的平分线交 $A C$ 于点 $R$, 交圆 $\\Gamma$ 于点 $S$, 其中 $S$ 与 $Q$ 是不同的两点.\n因为 $\\triangle P A C$ 是等腰三角形, 所以, $\\frac{A B}{B C}=\\frac{\\sin \\angle A P B}{\\sin \\angle C P B}$, 同理,在 $\\triangle A S C$ 中, $\\frac{A R}{R C}=\\frac{\\sin \\angle A S Q}{\\sin \\angle C S Q}$. 在 $\\triangle P A C$ 中, 视 $Q$ 为其塞瓦点.\n由角元塞瓦定理, 有 $\\frac{\\sin \\angle A P B}{\\sin \\angle C P B} \\cdot \\frac{\\sin \\angle Q A C}{\\sin \\angle Q A P}$.\n$\\frac{\\sin \\angle Q C P}{\\sin \\angle Q C A}=1$. 因为 $\\angle P A Q=\\angle A S Q=\\angle Q C A$,\n$\\angle P C Q=\\angle C S Q=\\angle Q A C$, 则 $\\frac{\\sin \\angle A P B}{\\sin \\angle C P B}=\\frac{\\sin \\angle P A Q \\cdot \\sin \\angle Q C A}{\\sin \\angle Q A C \\cdot \\sin \\angle P C Q}= \\frac{\\sin ^2 \\angle A S Q}{\\sin ^2 \\angle C S Q}$. 故 $\\frac{A B}{B C}=\\frac{A R^2}{R C^2}$. 因此, 点 $R$ 不依赖于圆 $T$ 的选取.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2a3.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter8.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 若 $a 、 b 、 c$ 为非负实数且 $a+b+c=1$, 试求 $S=a b+b c+c a-3 a b c$ 的最大值.",
+    "solution": "解:不妨设 $a \\geqslant b \\geqslant c$, 则 $c \\leqslant \\frac{1}{3}$. 固定 $c$,\n$$\nS=a b+b c+c a-3 a b c=a b(1-3 c)+c(a+b) .\n$$\n由于 $a+b$ 的值一定, $1-3 c \\geqslant 0, a b$ 在 $a=b$ 时取最大值,故 $S$ 在 $a=b$ 时取到最大值.\n将 $a 、 b 、 c$ 调整到 $a=b \\geqslant c$, 则 $b \\geqslant \\frac{1}{3}$. 固定 $b$,\n$$\nS=a b+b c+c a-3 a b c=a c(1-3 b)+b(a+c) .\n$$\n由于 $1-3 b \\leqslant 0, a+c$ 的值一定, 故 $S$ 在 $a 、 c$ 的差最大时取到最大值.\n而 $a-c \\leqslant 1-b$, 此时 $c=0$.\n故只要在 $c=0, a+b=1$ 时求 $a b$ 的最大值, 显然为 $\\frac{1}{4}$.\n因此,当 $a 、 b 、 c$ 中有两个为 $\\frac{1}{2}$, 另一个为 0 时 $S$ 取到其最大值 $\\frac{1}{4}$.",
+    "remark": "",
+    "figures": []
+}

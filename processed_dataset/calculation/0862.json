@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例5. 设 $a 、 b 、 c$ 是正实数, 求\n$$\n\\frac{a+3 c}{a+2 b+c}+\\frac{4 b}{a+b+2 c}-\\frac{8 c}{a+b+3 c}\n$$\n的最小值.",
+    "solution": "解:令\n$$\n\\left\\{\\begin{array}{l}\nx=a+2 b+c, \\\\\ny=a+b+2 c, \\\\\nz=a+b+3 c,\n\\end{array}\\right.\n$$\n则有 $x-y=b-c, z-y=c$, 由此可得\n$$\n\\left\\{\\begin{array}{l}\na+3 c=2 y-x, \\\\\nb=z+x-2 y, \\\\\nc=z-y .\n\\end{array}\\right.\n$$\n从而\n$$\n\\begin{aligned}\n& \\frac{a+3 c}{a+2 b+c}+\\frac{4 b}{a+b+2 c}-\\frac{8 c}{a+b+3 c} \\\\\n= & \\frac{2 y-x}{x}+\\frac{4 \\cdot(z+x-2 y)}{y}-\\frac{8(z-y)}{z} \\\\\n= & -17+2 \\frac{y}{x}+4 \\frac{x}{y}+4 \\frac{z}{y}+8 \\frac{y}{z} \\\\\n\\geqslant & -17+2 \\sqrt{8}+2 \\sqrt{32}=-17+12 \\sqrt{2} .\n\\end{aligned}\n$$\n上式中的等号可以成立.\n事实上, 由上述推导过程知, 等号成立, 当且仅当平均不等式中的等号成立, 而这等价于\n$$\n\\left\\{\\begin{array} { l } \n{ 2 \\frac { y } { x } = 4 \\frac { x } { y } , } \\\\\n{ 4 \\frac { z } { y } = 8 \\frac { y } { z } , }\n\\end{array} \\text { 即 } \\left\\{\\begin{array} { l } \n{ y ^ { 2 } = 2 x ^ { 2 } , } \\\\\n{ z ^ { 2 } = 2 y ^ { 2 } , }\n\\end{array} \\text { 即 } \\left\\{\\begin{array}{l}\ny=\\sqrt{2} x, \\\\\nz=2 x,\n\\end{array}\\right.\\right.\\right.\n$$\n亦即\n$$\n\\left\\{\\begin{array}{l}\na+b+2 c=\\sqrt{2}(a+2 b+c), \\\\\na+b+3 c=2(a+2 b+c) .\n\\end{array}\\right.\n$$\n解该不定方程,得到\n$$\n\\left\\{\\begin{array}{l}\nb=(1+\\sqrt{2}) a, \\\\\nc=(4+3 \\sqrt{2}) a .\n\\end{array}\\right.\n$$\n不难算出, 对任何正实数 $a$, 只要 $b=(1+\\sqrt{2}) a, c=(4+3 \\sqrt{2}) a$, 就都有\n$$\n\\frac{a+3 c}{a+2 b+c}+\\frac{4 b}{a+b+2 c}-\\frac{8 c}{a+b+3 c}=-17+12 \\sqrt{2},\n$$\n所以所求的最小值为 $-17+12 \\sqrt{2}$.",
+    "remark": "",
+    "figures": []
+}

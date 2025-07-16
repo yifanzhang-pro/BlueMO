@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter1.tex",
+    "text": "二、无重复的排列与组合排列 从 $n$ 个不同元素中取 $m(m \\leqslant n)$ 个不同元素, 按照一定的顺序排成一列, 叫做从 $n$ 个不同元素中取出 $m$ 个元素的一个排列.\n因为这个排列中无重复元素, 故又叫做无重复的排列.\n从 $n$ 个不同元素中取 $m(m \\leqslant n)$ 个不同元素的排列的个数记为 $\\mathrm{A}_n^m$ 或 $\\mathrm{P}_n^m$, 则\n$$\n\\mathrm{A}_n^m=n(n-1)(n-2) \\cdots(n-m+1)=\\frac{n !}{(n-m) !},\n$$\n其中 $m \\leqslant n$, 并约定 $0 !=1$.\n特别地, 当 $m=n$ 时, 从 $n$ 个不同元素中取 $n$ 个不同元素的排列, 叫做 $n$ 个不同元素的全排列.\n$n$ 个不同元素的全排列的个数为\n$$\n\\mathrm{A}_n^n=n \\cdot(n-1) \\cdot(n-2) \\cdot \\cdots \\cdot 3 \\cdot 2 \\cdot 1=n ! .\n$$\n组合从 $n$ 个不同元素中取出 $m(m \\leqslant n)$ 个不同元素并成一组, 叫做从 $n$ 个不同元素中取出 $m$ 个元素的一个组合.\n因为这个组合中无重复元素, 故又叫做无重复的组合.\n从 $n$ 个不同元素中取出 $m(m \\leqslant n)$ 个元素的组合的个数记为 $\\mathrm{C}_n^m$ 或 $\\left(\\begin{array}{c}n \\\\ m\\end{array}\\right)$, 则\n$$\n\\mathrm{C}_n^m=\\frac{\\mathrm{A}_n^m}{\\mathrm{~A}_m^m}=\\frac{n(n-1) \\cdots \\cdots(n-m+1)}{m !}=\\frac{n !}{m !(n-m) !} .\n$$",
+    "figures": []
+}

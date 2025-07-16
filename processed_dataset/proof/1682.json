@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter11.tex",
+    "problem_type": "proof",
+    "problem": "例12. 求最小常数 $a>1$, 使得对正方形 $A B C D$ 内部任一点 $P$, 都存在 $\\triangle P A B 、 \\triangle P B C 、 \\triangle P C D, \\triangle P D A$ 中的某两个三角形,使得它们的面积之比属于区间 $\\left[a^{-1}, a\\right]$. (2008 第七届女子数学奥林匹克)",
+    "solution": "解:$a_{\\min }=\\frac{1+\\sqrt{5}}{2}$.\n首先证明 $a_{\\min } \\leqslant \\frac{1+\\sqrt{5}}{2}$, 记 $\\varphi=\\frac{1+\\sqrt{5}}{2}$. 如图 (<FilePath:./images/volume7/figures/fig-c11i10.png>), 不妨设正方形边长为 $\\sqrt{2}$. 对正方形 $A B C D$ 内部一点 $P$, 令 $S_1, S_2, S_3, S_4$ 分别表示 $\\triangle P A B, \\triangle P B C, \\triangle P C D$, $\\triangle P D A$ 的面积, 不妨设 $S_1 \\geqslant S_2 \\geqslant S_4 \\geqslant S_3$.\n令 $\\lambda=\\frac{S_1}{S_2}, \\mu=\\frac{S_2}{S_4}$, 如果 $\\lambda, \\mu>\\varphi$, 由\n$$\nS_1+S_3=S_2+S_4=1 \\text {, 得 } \\frac{S_2}{1-S_2}=\\mu \\text {, 得 } S_2=\\frac{\\mu}{1+\\mu} \\text {. }\n$$\n故 $S_1=\\lambda S_2=\\frac{\\lambda \\mu}{1+\\mu}=\\frac{\\lambda}{1+\\frac{1}{\\mu}}>\\frac{\\varphi}{1+\\frac{1}{\\varphi}}=\\frac{\\varphi^2}{1+\\varphi}=1$, 矛盾.\n故 $\\min \\{\\lambda, \\mu\\} \\leqslant \\varphi$, 这表明 $a_{\\min } \\leqslant \\varphi$.\n反过来对于任意 $a \\in(1, \\varphi)$, 取定 $t \\in\\left(a, \\frac{1+\\sqrt{5}}{2}\\right)$, 使得 $b=\\frac{t^2}{1+t}>\\frac{8}{9}$. 我们在正方形 $A B C D$ 内取点 $P$, 使得 $S_1=b, S_2=\\frac{b}{t}, S_3=\\frac{b}{t^2}, S_4=1-b$, 则我们有\n$$\n\\frac{S_1}{S_2}=\\frac{S_2}{S_3}=t \\in\\left(a, \\frac{1+\\sqrt{5}}{2}\\right), \\frac{S_3}{S_4}=\\frac{b}{t^2(1-b)}>\\frac{b}{4(1-b)}>2>a,\n$$\n由此我们得到对任意 $i, j \\in\\{1,2,3,4\\}$, 有 $\\frac{S_i}{S_j} \\notin\\left[a^{-1}, a\\right]$. 这表明 $a_{\\min }=\\varphi$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c11i10.png"
+    ]
+}

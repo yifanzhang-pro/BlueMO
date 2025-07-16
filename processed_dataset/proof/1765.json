@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例12. 如图(<FilePath:./images/volume7/figures/fig-c9i17.png>), 圆内接四边形 $A B C D$ 内有一点 $P$ 满足 $\\angle A P D=\\angle A B P+\\angle D C P . P$ 在 $A B 、 B C 、 C D$ 上射影为 $E 、 F 、 G$. 证明: $\\triangle E F G \\backsim \\triangle A P D$.",
+    "solution": "证明:法一: 因为 $\\angle E F G=\\angle E F P+\\angle G F P= \\angle E B P+\\angle G C P=\\angle A P D$, 故只需证 $\\frac{A P}{P D}=\\frac{E F}{F G}$. 又 $\\frac{E F}{F G}=\\frac{P B \\sin B}{P C \\sin C}=\\frac{P B \\cdot A C}{P C \\cdot B D}$, 故只需证\n$$\n\\frac{A P}{P D}=\\frac{P B \\cdot A C}{P C \\cdot B D} \\Leftrightarrow \\frac{A P \\cdot P C}{A C}=\\frac{B P \\cdot P D}{B D} . \\label{eq1}\n$$\n又因 $\\angle A P D=\\angle A B P+\\angle D C P$, 所以 $\\triangle A B P$ 的外接圆与 $\\triangle D C P$ 外接圆外切于点 $P$.\n作以 $P$ 为反演中心, $P$ 对 $A B C D$ 外接圆的幂为反演幂作反演变换.\n则 $A 、 B 、 C 、 D$ 分别变为 $A^{\\prime} 、 B^{\\prime} 、 C^{\\prime} 、 D^{\\prime}$, 且 $A^{\\prime}$ 是 $A P$ 与 $A B C D$ 外接圆的交点, $B^{\\prime} 、 C^{\\prime} 、 D^{\\prime}$ 类似.\n因为 $\\triangle A B P 、 \\triangle C D P$ 外接圆外切于 $P$.\n故用反演性质知 $A^{\\prime} B^{\\prime} / / C^{\\prime} D^{\\prime} \\Rightarrow A^{\\prime} B^{\\prime} C^{\\prime} D^{\\prime}$ 为等腰梯形 $\\Rightarrow A^{\\prime} C^{\\prime}=B^{\\prime} D^{\\prime}$.\n由反演变换距离公式知\n$A^{\\prime} C^{\\prime}=A C \\times \\frac{|d|}{P A \\cdot P C}, B^{\\prime} D^{\\prime}=B D \\times \\frac{|d|}{P B \\cdot P D}$ ( $d$ 为反演幕 $)$.\n所以式\\ref{eq1} $\\Leftrightarrow A^{\\prime} C^{\\prime}=B^{\\prime} D^{\\prime}$, 此式已证明成立,故原题得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9i17.png"
+    ]
+}

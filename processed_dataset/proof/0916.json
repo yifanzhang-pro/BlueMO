@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题2 已知 $f\\left(\\log _a x\\right)=\\frac{a\\left(x^2-1\\right)}{x\\left(a^2-1\\right)}(a>0, a \\neq 1, x>0)$, 判断 $f(x)$ 的单调性, 并证明你的结论.",
+    "solution": "设 $t=\\log _a x(x>0)$, 则 $f\\left(t_1\\right)-f\\left(t_2\\right)=\\frac{a\\left(x_1^2-1\\right)}{x_1\\left(a^2-1\\right)}-\\frac{a\\left(x_2^2-1\\right)}{x_2\\left(a^2-1\\right)}= \\frac{a\\left(x_1-x_2\\right)\\left(x_1 x_2+1\\right)}{x_1 x_2\\left(a^2-1\\right)}$.\n(1) 当 $a>1$ 时, 若 $t_1<t_2$, 则 $0<x_1<x_2, f\\left(t_1\\right)<f\\left(t_2\\right)$.\n(2) 当 $0<a<1$ 时, 若 $t_1<t_2$, 则 $x_1>x_2>0, f\\left(t_1\\right)<f\\left(t_2\\right)$. \n由 (1), (2) 可知 $f(x)$ 在 $\\mathbf{R}$ 上是增函数.",
+    "remark": "",
+    "figures": []
+}

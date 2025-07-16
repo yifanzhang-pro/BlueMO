@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 若 $\\vec{a}=\\{\\cos \\alpha, \\sin \\alpha\\}, \\vec{b}=\\{\\cos \\beta, \\sin \\beta\\}$, 且满足 $|k \\vec{a}+\\vec{b}|=\\sqrt{3}|\\vec{a}-k \\vec{b}|(k>0)$.\n(1)用 $\\alpha 、 \\beta$ 表示 $\\vec{a} \\cdot \\vec{b}$;\n(2) 用 $k$ 表示 $\\vec{a} \\cdot \\vec{b}$;\n(3) 求 $\\vec{a} \\cdot \\vec{b}$ 的最小值及此时 $\\vec{a}$ 与 $\\vec{b}$ 所成的角的大小 $(0 \\leqslant \\theta \\leqslant \\pi)$.",
+    "solution": "(1) $\\vec{a} \\cdot \\vec{b}=\\cos \\alpha \\cos \\beta+\\sin \\alpha \\sin \\beta=\\cos (\\alpha-\\beta)$.\n(2) $|k \\vec{a}+\\vec{b}|^2=3|\\vec{a}-k \\vec{b}|^2$, 即 $k^2 \\vec{a}^2+2 k \\vec{a} \\cdot \\vec{b}+\\vec{b}^2=3\\left(\\vec{a}^2-2 k \\vec{a} \\cdot \\vec{b}+k^2 \\vec{b}^2\\right)$\n所以\n$$\n\\vec{a} \\cdot \\vec{b}=\\frac{k^2+1}{4 k}(k>0) .\n$$\n(3) $\\vec{a} \\cdot \\vec{b}=\\frac{k^2+1}{4 k} \\geqslant \\frac{1}{2}$, 当且仅当 $k=1$ 时等号成立, 此时 $\\theta=\\frac{\\pi}{3}$.",
+    "remark": "",
+    "figures": []
+}

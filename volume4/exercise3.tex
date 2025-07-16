@@ -1,0 +1,243 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $a, b, c \in \mathbf{R}^{+}$, 求证: $a^{2 a} b^{2 b} c^{2 c} \geqslant a^{b+c} b^{c+a} c^{a+b}$.
+%%<SOLUTION>%%
+由于关于 $a 、 b 、 c$ 的对称性, 不妨设 $a \geqslant b \geqslant c$, 则 $\frac{a^{2 a} b^{2 b} c^{2 c}}{a^{b+c} b^{a+c} c^{a+b}}= \left(\frac{a}{b}\right)^{a-b}\left(\frac{b}{c}\right)^{b-c}\left(\frac{a}{c}\right)^{a-c} \geqslant 1$, 所以 $a^{2 a} b^{2 b} c^{2 c} \geqslant a^{b+c} b^{c+a} c^{a+b}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $a, b, c, d>0$ 且 $a+b+c+d=1$, 求证:
+$$
+\frac{1}{4 a+3 b+c}+\frac{1}{3 a+b+4 d}+\frac{1}{a+4 c+3 d}+\frac{1}{4 b+3 c+d} \geqslant 2 .
+$$
+%%<SOLUTION>%%
+由柯西不等式, 可得原式左边 $\geqslant \overline{(4 a+3 b+c)+(3 a+b+4 d)+(a+4 c+3 d)+(4 b+3 c+d)}=2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 已知 $a, b \in \mathbf{R}^{+}, n \geqslant 2, n \in \mathbf{N}^{+}$. 求证:
+$$
+\sum_{i=1}^n \frac{1}{a+i b}<\frac{n}{\sqrt{a(a+n b)}} .
+$$
+%%<SOLUTION>%%
+由柯西不等式, 有 $\left(\sum_{i=1}^n \frac{1}{a+i b}\right)^2 \leqslant n \sum_{i=1}^n\left(\frac{1}{a+i b}\right)^2<$
+$$
+\begin{aligned}
+& n\left\{\frac{1}{a(a+b)}+\frac{1}{(a+b)(a+2 b)}+\cdots+\frac{1}{[a+(n-1) b](a+n b)}\right\}= \\
+& \frac{n}{b}\left[\left(\frac{1}{a}-\frac{1}{a+b}\right)+\left(\frac{1}{a+b}-\frac{1}{a+2 b}\right)+\cdots+\left(\frac{1}{a+(n-1) b}-\frac{1}{a+n b}\right)\right]= \\
+& \frac{n}{b}\left(\frac{1}{a}-\frac{1}{a+n b}\right)=\frac{n^2}{a(a+n b)}, \text { 即 } \sum_{i=1}^n \frac{1}{a+i b}<\frac{n}{\sqrt{a(a+n b)}} .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 已知 $a, b, c \in \mathbf{R}^{+}$, 且 $a+b+c=1$. 求证:
+$$
+\frac{1}{1-a}+\frac{1}{1-b}+\frac{1}{1-c} \geqslant \frac{2}{1+a}+\frac{2}{1+b}+\frac{2}{1+c} \text {. }
+$$
+%%<SOLUTION>%%
+由柯西不等式, 当 $x, y>0$ 时, 有 $(x+y)\left(\frac{1}{x}+\frac{1}{y}\right) \geqslant 4$, 于是, $\frac{1}{x}+ \frac{1}{y} \geqslant \frac{4}{x+y}$. 可以得到 $\frac{1}{a+b}+\frac{1}{b+c} \geqslant \frac{4}{a+2 b+c}, \frac{1}{b+c}+\frac{1}{c+a} \geqslant \frac{4}{b+2 c+a}$, $\frac{1}{c+a}+\frac{1}{a+b} \geqslant \frac{4}{c+2 a+b}$ 三式相加, 得 $\frac{2}{b+c}+\frac{2}{c+a}+\frac{2}{a+b} \geqslant \frac{4}{a+2 b+c}+ \frac{4}{b+2 c+a}+\frac{4}{c+2 a+b}$, 将 $a+b+c=1$ 代入其中, 并约去 2 即得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设正实数 $a 、 b 、 c$ 满足 $a b+b c+c a=\frac{1}{3}$. 证明:
+$$
+\frac{a}{a^2-b c+1}+\frac{b}{b^2-c a+1}+\frac{c}{c^2-a b+1} \geqslant \frac{1}{a+b+c} .
+$$
+%%<SOLUTION>%%
+等式左边的分母显然为正数.
+由柯西不等式得 $\frac{a}{a^2-b c+1}+$
+$$
+\begin{aligned}
+& \frac{b}{b^2-c a+1}+\frac{c}{c^2-a b+1}=\frac{a^2}{a^3-a b c+a}+\frac{b^2}{b^3-a b c+b}+\frac{c^2}{c^3-a b c+c} \geqslant \\
+& \frac{(a+b+c)^2}{a^3+b^3+c^3+a+b+c-3 a b c}=\frac{(a+b+c)^2}{(a+b+c)\left(a^2+b^2+c^2-a b-b c-c a\right)+(a+b+c)} \\
+& =\frac{a+b+c}{a^2+b^2+c^2-a b-b c-c a+1}=\frac{a+b+c}{a^2+b^2+c^2+2(a b+b c+c a)}= \\
+& \frac{1}{a+b+c} \text {. 命题得证.
+}
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 已知 $x 、 y, z$ 为正实数.
+证明:
+$$
+\frac{1+x y+x z}{(1+y+z)^2}+\frac{1+y z+y x}{(1+z+x)^2}+\frac{1+z x+z y}{(1+x+y)^2} \geqslant 1 .
+$$
+%%<SOLUTION>%%
+由柯西不等式得 $\left(1+\frac{y}{x}+\frac{z}{x}\right)(1+x y+x z) \geqslant(1+y+z)^2 \Rightarrow \frac{1+x y+x z}{(1+y+z)^2} \geqslant \frac{x}{x+y+z}$. 同理, $\frac{1+y z+y x}{(1+z+x)^2} \geqslant \frac{y}{x+y+z} \cdot \frac{1+z x+z y}{(1+x+y)^2} \geqslant \frac{z}{x+y+z}$. 上述三个不等式相加即得 $\frac{1+x y+x z}{(1+y+z)^2}+\frac{1+y z+y x}{(1+z+x)^2}+ \frac{1+z x+z y}{(1+x+y)^2} \geqslant 1$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. $x, y, z \in \mathbf{R}^{+}$, 且 $x y z \geqslant 1$. 求证:
+$$
+\frac{x^5-x^2}{x^5+y^2+z^2}+\frac{y^5-y^2}{y^5+z^2+x^2}+\frac{z^5-z^2}{z^5+x^2+y^2} \geqslant 0 \text {. }
+$$
+%%<SOLUTION>%%
+原不等式等价于 $\sum \frac{1}{x^5+y^2+z^2} \leqslant \frac{3}{x^2+y^2+z^2}$. 利用 $x y z \geqslant 1$ 及柯西不等式得 $\left(x^5+y^2+z^2\right) \cdot\left(y z+y^2+z^2\right) \geqslant\left(\sum x^2\right)^2$. 而 $\sum\left(y z+y^2+z^2\right) \leqslant \sum\left(\frac{y^2+z^2}{2}+y^2+z^2\right)=3 \sum x^2$. 代入即得结果.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设 $a, b, c \in \mathbf{R}^{+}$, 且 $a+b+c=3$. 证明:
+$$
+\sum \frac{a^4}{b^2+c} \geqslant \frac{3}{2} \text {. }
+$$
+其中, " $\sum$ " 表示轮换对称和.
+%%<SOLUTION>%%
+由柯西不等式知 $\left(b^2+c+c^2+a+a^2+b\right)$.
+$\left(\frac{a^4}{b^2+c}+\frac{b^4}{c^2+a}+\frac{c^4}{c^2+b}\right) \geqslant\left(a^2+b^2+c^2\right)^2$. 故 $\frac{a^4}{b^2+c}+\frac{b^4}{c^2+a}+\frac{c^4}{a^2+b} \geqslant \frac{\left(a^2+b^2+c^2\right)^2}{a^2+b^2+c^2+3}$. 令 $a^2+b^2+c^2=x$. 易证 $x \geqslant 3$. 故 $\frac{x^2}{3+x} \geqslant \frac{3}{2} \Leftrightarrow 2 x^2 \geqslant 9+3 x \Leftrightarrow 2 x^2-3 x-9 \geqslant 0 \Leftrightarrow(2 x+3)(x-3) \geqslant 0$. 显然成立.
+于是, $\frac{a^4}{b^2+c}+ \frac{b^4}{c^2+a}+\frac{c^4}{a^2+b} \geqslant \frac{3}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 设实数 $a, b, c>0$, 且满足 $a+b+c=3$. 证明:
+$$
+\frac{a^2+3 b^2}{a b^2(4-a b)}+\frac{b^2+3 c^2}{b c^2(4-b c)}+\frac{c^2+3 a^2}{c a^2(4-c a)} \geqslant 4 .
+$$
+%%<SOLUTION>%%
+记 $A=\frac{a^2}{a b^2(4-a b)}+\frac{b^2}{b c^2(4-b c)}+\frac{c^2}{c a^2(4-c a)}, B=\frac{b^2}{a b^2(4-a b)} +\frac{c^2}{b c^2(4-b c)}+\frac{a^2}{c a^2(4-c a)}$. 欲证明原不等式, 只需证明 $A \geqslant 1, B \geqslant 1$. 由柯西一施瓦兹不等式得 $\left(\frac{4-a b}{a}+\frac{4-b c}{b}+\frac{4-a c}{c}\right) A \geqslant\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right)^2$. 设 $k=\frac{1}{a}+\frac{1}{b}+\frac{1}{c}$, 则 $A \geqslant \frac{k^2}{4 k-3}$. 由 $(a+b+c)\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right) \geqslant 3^2 \Rightarrow k= \frac{1}{a}+\frac{1}{b}+\frac{1}{c} \geqslant 3 \Rightarrow(k-3)(k-1) \geqslant 0 \Rightarrow k^2-4 k+3 \geqslant 0 \Rightarrow A=\frac{k^2}{4 k-3} \geqslant 1$. 又 $B=\frac{1}{a(4-a b)}+\frac{1}{b(4-b c)}+\frac{1}{c(4-c a)}$, 则 $\left(\frac{4-a b}{a}+\frac{4-b c}{b}+\frac{4-c a}{c}\right) B \geqslant\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right)^2$. 故 $B \geqslant \frac{k^2}{4 k-3} \geqslant 1$. 因此, $A+3 B \geqslant 4$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 设 $a, b, c \in \mathbf{R}^{+}$, 且 $a b c=1$, 求证:
+$$
+\frac{1}{1+2 a}+\frac{1}{1+2 b}+\frac{1}{1+2 c} \geqslant 1 \text {. }
+$$
+%%<SOLUTION>%%
+令 $a=\frac{x}{y}, b=\frac{y}{z}, c=\frac{z}{x}$, 则原不等式等价于 $\frac{y}{2 x+y}+\frac{z}{2 y+z}+ \frac{x}{2 z+x} \geqslant 1$. 由柯西不等式, 得 $[x(x+2 z)+y(y+2 x)+z(z+ 2 y)]\left(\frac{x}{x+2 z}+\frac{y}{y+2 x}+\frac{z}{z+2 y}\right) \geqslant(x+y+z)^2$, 即 $(x+y+ z)^2\left(\frac{x}{x+2 z}+\frac{y}{y+2 x}+\frac{z}{z+2 y}\right) \geqslant(x+y+z)^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 设 $a_1, a_2, \cdots, a_n$ 为实数,证明:
+$$
+\sqrt[3]{a_1^3+a_2^3+\cdots+a_n^3} \leqslant \sqrt{a_1^2+a_2^2+\cdots+a_n^2} .
+$$
+%%<SOLUTION>%%
+由 $\left(\sum_{i=1}^n a_i^3\right)^2 \leqslant \sum_{i=1}^n a_i^2 \sum_{i=1}^n a_i^4 \leqslant \sum_{i=1}^n a_i^2\left(\sum_{i=1}^n a_i^2\right)^2=\left(\sum_{i=1}^n a_i^2\right)^3$, 则 $\left(\sum_{i=1}^n a_i^3\right)^{\frac{1}{3}} \leqslant\left(\sum_{i=1}^n a_i^2\right)^{\frac{1}{2}}$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 已知 $a 、 b 、 c$ 为正实数,证明:
+$$
+\frac{9}{a+b+c} \leqslant 2\left(\frac{1}{a+b}+\frac{1}{b+c}+\frac{1}{c+a}\right) .
+$$
+%%<SOLUTION>%%
+由柯西不等式, 得 $2(a+b+c)\left(\frac{1}{a+b}+\frac{1}{b+c}+\frac{1}{c+a}\right)=[(a+b)+(b+c)+(c+a)]\left(\frac{1}{a+b}+\frac{1}{b+c}+\frac{1}{c+a}\right) \geqslant 9$, 故命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 设 $a_i \in \mathbf{R}^{+}(i=1,2, \cdots, n)$, 求证:
+$$
+\frac{1}{a_1}+\frac{2}{a_1+a_2}+\cdots+\frac{n}{a_1+\cdots+a_n}<2 \sum_{i=1}^n \frac{1}{a_i} .
+$$
+%%<SOLUTION>%%
+由柯西不等式, 得 $\frac{k^2(k+1)^2}{4}=\left(\sum_{i=1}^k \frac{i}{\sqrt{a_i}} \cdot \sqrt{a_i}\right)^2 \leqslant \sum_{i=1}^k \frac{i^2}{a_i} \sum_{i=1}^k a_i$.
+所以 $\frac{k}{\sum_{i=1}^k a_i} \leqslant \frac{4}{k(k+1)^2} \sum_{i=1}^k \frac{i^2}{a_i}$. 求和, 得 $\sum_{k=1}^n \frac{k}{\sum_{i=1}^k a_i} \leqslant \sum_{k=1}^n\left[\frac{4}{k(k+1)^2} \sum_{i=1}^k \frac{i^2}{a_i}\right]<2 \sum_{i=1}^n\left[\frac{i^2}{a_i} \sum_{k=i}^n \frac{2 k+1}{k^2(k+1)^2}\right]=2 \sum_{i=1}^n\left[\frac{i^2}{a_i} \sum_{k=i}^n\left(\frac{1}{k^2}-\frac{1}{(k+1)^2}\right)\right]=2 \sum_{i=1}^n \frac{i^2}{a_i}\left(\frac{1}{i^2}-\frac{1}{(n+1)^2}\right)<2 \cdot \sum_{i=1}^n \frac{i^2}{a_i} \cdot \frac{1}{i^2}=2 \sum_{i=1}^n \frac{1}{a_i}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 设 $a_i, b_i, c_i, d_i$ 为正实数 $(i=1,2, \cdots, n)$, 求证:
+$$
+\left(\sum_{i=1}^n a_i b_i c_i d_i\right)^4 \leqslant \sum_{i=1}^n a_i^4 \sum_{i=1}^n b_i^4 \sum_{i=1}^n c_i^4 \sum_{i=1}^n d_i^4 .
+$$
+%%<SOLUTION>%%
+$\left(\sum_{i=1}^n a_i b_i c_i d_i\right)^4 \leqslant\left[\sum_{i=1}^n\left(a_i b_i\right)^2\right]^2\left[\sum_{i=1}^n\left(c_i d_i\right)^2\right]^2 \leqslant \sum_{i=1}^n a_i^4 \sum_{i=1}^n b_i^4 \sum_{i=1}^n c_i^4 \sum_{i=1}^n d_i^4$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 设 $n(n \geqslant 2)$ 为正整数,求证:
+$$
+\frac{4}{7}<1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\cdots+\frac{1}{2 n-1}-\frac{1}{2 n}<\frac{\sqrt{2}}{2} .
+$$
+%%<SOLUTION>%%
+$1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\cdots+\frac{1}{2 n-1}-\frac{1}{2 n}=\frac{1}{n+1}+\frac{1}{n+2}+\cdots+\frac{1}{2 n}$. 由柯西不等式, 得 $[(n+1)+(n+2)+\cdots+(2 n)]\left(\frac{1}{n+1}+\frac{1}{n+2}+\cdots+\frac{1}{2 n}\right)> n^2$, 所以 $\frac{1}{n+1}+\frac{1}{n+2}+\cdots+\frac{1}{2 n}>\frac{2 n}{3 n+1} \geqslant \frac{4}{7}$. 又 $\frac{1}{n+1}+ \frac{1}{n+2}+\cdots+\frac{1}{2 n}<\left(1^2+1^2+\cdots+1^2\right)^{\frac{1}{2}}\left[\frac{1}{(n+1)^2}+\cdots+\frac{1}{(2 n)^2}\right]^{\frac{1}{2}}< \sqrt{n}\left[\frac{1}{n(n+1)}+\frac{1}{(n+1)(n+2)}+\cdots+\frac{1}{(2 n-1) \cdot 2 n}\right]^{\frac{1}{2}}=\frac{\sqrt{2}}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16. 设 $a_1, a_2, \cdots, a_n$ 为正实数,证明:
+$$
+\frac{\left(\sum_{i=1}^n a_i\right)^2}{2 \sum_{i=1}^n a_i^2} \leqslant \frac{a_1}{a_2+a_3}+\frac{a_2}{a_3+a_4}+\cdots+\frac{a_n}{a_1+a_2} .
+$$
+%%<SOLUTION>%%
+令 $a_{n+1}=a_1, a_{n+2}=a_2$, 则 $\sum_{i=1}^n a_i\left(a_{i+1}+a_{i+2}\right) \sum_{i=1}^n \frac{a_i}{a_{i+1}+a_{i+2}} \geqslant \left(\sum_{i=1}^n a_i\right)^2$. 于是 $\sum_{i=1}^n \frac{a_i}{a_{i+1}+a_{i+2}} \geqslant \frac{\left(\sum_{i=1}^n a_i\right)^2}{\sum_{i=1}^n a_i\left(a_{i+1}+a_{i+2}\right)}$. 只需证 $2 \sum_{i=1}^n a_i^2 \geqslant \sum_{i=1}^n a_i\left(a_{i+1}+a_{i+2}\right)$, 即 $\frac{1}{2} \sum_{i=1}^n\left[\left(a_i^2+a_{i+1}^2\right)+\left(a_i^2+a_{i+2}^2\right)\right] \geqslant \sum_{i=1}^n a_i\left(a_{i+1}+a_{i+2}\right)$. 由 $a_i^2+a_{i+1}^2 \geqslant 2 a_i a_{i+1}$, 便得到命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17. 设 $a 、 b 、 c 、 d$ 为正数,证明:
+$$
+\sqrt{\frac{a^2+b^2+c^2+d^2}{4}} \geqslant \sqrt[3]{\frac{a b c+b c d+c d a+d a b}{4}} .
+$$
+%%<SOLUTION>%%
+$\frac{1}{4}(a b c+b c d+c d a+d a b)=\frac{1}{4}[b c(a+d)+d a(b+c)] \leqslant$
+$$
+\begin{aligned}
+& \frac{1}{4}\left[\left(\frac{b+c}{2}\right)^2(a+d)+\left(\frac{a+d}{2}\right)^2(b+c)\right]=\frac{1}{16}(b+c)(a+d)(a+b+c+d) \\
+& \leqslant \frac{1}{64}(a+b+c+d)^3=\left(\frac{a+b+c+d}{4}\right)^3 \leqslant\left(\sqrt{\frac{a^3+b^3+c^3+d^3}{4}}\right)^3 .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题18. 设 $n$ 是大于 1 的自然数,求证:
+$$
+\sqrt{\mathrm{C}_n^1}+2 \cdot \sqrt{\mathrm{C}_n^2}+\cdots+n \cdot \sqrt{\mathrm{C}_n^n}<\sqrt{2^{n-1} \cdot n^3} .
+$$
+%%<SOLUTION>%%
+当 $n=2$ 时,则 $\sqrt{2}<2$. 命题成立.
+当 $n=3$ 时, 则 $1<\sqrt{3}$. 所以可设 $n \geqslant 4$. 由柯西不等式, 得 $1 \cdot \sqrt{\mathrm{C}_n^1}+2 \cdot \sqrt{\mathrm{C}_n^2}+\cdots+n \cdot \sqrt{\mathrm{C}_n^n} \leqslant\left(1^2+2^2\right. \left.+\cdots+n^2\right)^{\frac{1}{2}}\left(\mathrm{C}_n^1+\mathrm{C}_n^2+\cdots+\mathrm{C}_n^n\right)^{\frac{1}{2}}=\left[\frac{n(n+1)(2 n+1)}{6}\right]^{\frac{1}{2}} \cdot\left(2^n-1\right)^{\frac{1}{2}}$. 即证明: $\frac{n(n+1)(2 n+1)}{6} \cdot\left(2^n-1\right)<2^{n-1} \cdot n^3$ 便可.
+等价于 $\left(2 n^2+3 n+1\right) \left(2^n-1\right)<3 n^2 \cdot 2^n$. 因为 $n \geqslant 4$, 故 $n^2>3 n, n^2 \geqslant 3 n+1$, 进而 $3 n^2 \geqslant 2 n^2+ 3 n+1$. 所以 $\left(2 n^2+3 n+1\right)\left(2^n-1\right)<3 n^2 \cdot 2^n$. 从而, 命题成立.
+%%PROBLEM_END%%
+
+

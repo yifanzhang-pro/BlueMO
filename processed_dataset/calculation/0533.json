@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例16 设 $f(x)==\\sqrt{19 x^2+93}$, 求 $f^{(n)}(x)$.",
+    "solution": "解:先求 $f(x)$ 的不动点.\n由 $\\sqrt{19 x^2+93}=x$, 得 $x^2=-\\frac{31}{6}$. 所以\n$$\n\\begin{aligned}\n& f(x)=\\sqrt{19\\left(x^2+\\frac{31}{6}\\right)-\\frac{31}{6}}, \\\\\n& f^{(2)}(x)=\\sqrt{19^2\\left(x^2+\\frac{31}{6}\\right)-\\frac{31}{6}}, \\\\\n& \\ldots . .\n\\end{aligned}\n$$\n由归纳法, 得\n$$\nf^{(n)}(x)=\\sqrt{19^n\\left(x^2+\\frac{31}{6}\\right)-\\frac{31}{6}} .\n$$\n下面介绍利用不动点寻找桥函数的方法.\n由不动点性质知, 桥函数 $\\varphi$ 具有下列性质: 它将 $f$ 的不动点 $x_0$ 映成 $g$ 的不动点 $\\varphi\\left(x_0\\right)$, 通常为了便于求 $g^{(n)}(x), g(x)$ 通常取为 $a x, x+a, a x^2, a x^3$ 等, 这时, $g(x)$ 的不动点为 0 或 $\\infty$, 此时, 若 $f(x)$ 只有唯一不动点 $\\alpha$ 时, 则可考虑取 $\\varphi(x)=x-\\alpha$ (或 $\\left.\\frac{1}{x-\\alpha}\\right)$, 这时 $\\varphi(\\alpha)=0$ (或 $\\infty)$; 若 $f(x)$ 有两个不动点 $\\alpha 、 \\beta(\\alpha \\neq \\beta)$, 则可考虑取 $\\varphi(x)=\\frac{x-\\alpha}{x-\\beta}$, 这里 $\\varphi(\\alpha)=0, \\varphi(\\beta)=\\infty$.",
+    "remark": "",
+    "figures": []
+}

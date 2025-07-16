@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例5. 在 $\\triangle A B C$ 中, $\\angle A=60^{\\circ}, P$ 为 $\\triangle A B C$ 所在平面上一点,且使得 $P A=6, P B=7, P C=10$, 求 $\\triangle A B C$ 面积的最大值.",
+    "solution": "解法 1 先证引理.\n引理在凸四边形 $X Y Z U$ 中, 对角线 $X Z$ 和 $Y U$ 交于点 $O, \\angle X O Y= \\theta$, 则\n$$\nY Z^2+U X^2-X Y^2-Z U^2=2 X Z \\cdot Y U \\cdot \\cos \\theta .\n$$\n证明如图(<FilePath:./images/volume9/figures/fig-c2i6.png>), 在 $\\triangle O Y Z 、 \\triangle O U X 、 \\triangle O X Y$ 及 $\\triangle O Z U$ 中分别应用余弦定理可得\n$$\n\\begin{aligned}\nY Z^2 & =O Y^2+O Z^2+2 O Y \\cdot O Z \\cdot \\cos \\theta, \\\\\nU X^2 & =O U^2+O X^2+2 O U \\cdot O X \\cdot \\cos \\theta, \\\\\nX Y^2 & =O X^2+O Y^2-2 O X \\cdot O Y \\cdot \\cos \\theta, \\\\\nZ U^2 & =O Z^2+O U^2-2 O Z \\cdot O U \\cdot \\cos \\theta,\n\\end{aligned}\n$$\n由这四个等式相加便可立得引理中的等式.\n下面求解原问题.\n如图(<FilePath:./images/volume9/figures/fig-c2i7.png>), 在 $\\triangle A B C$ 中, 过 $P$ 作 $A B$ 的平行线, 过 $A$ 作 $P B$ 的平行线, 两条直线交于 $D$. 设 $P D$ 交 $A C$ 于 $E$, 则 $\\angle C E P=60^{\\circ}$.\n设 $A C=x, A B=P D=y, C D=t$. 对四边形 $A P C D$ 应用引理可得\n$$\nt^2+6^2-10^2-7^2=2 \\cos 60^{\\circ} \\cdot x y,\n$$\n即\n$$\nx y=t^2-113 . \\label{eq1}\n$$\n另一方面, 对四边形 $A P C D$ 应用 Ptolemy 不等式可得\n$$\nx y \\leqslant 6 t+70 . \\label{eq2}\n$$\n由式\\ref{eq1}、\\ref{eq2}有\n$$\nt^2-6 t-183 \\leqslant 0 \\text {, }\n$$\n所以\n$$\n0 \\leqslant t \\leqslant 3+8 \\sqrt{3} . \\label{eq3}\n$$\n将式\\ref{eq3}代入\\ref{eq2}可得 $x y \\leqslant 88+48 \\sqrt{3}$, 故\n$$\nS_{\\triangle A B C}=\\frac{\\sqrt{3}}{4} x y \\leqslant 36+22 \\sqrt{3},\n$$\n等号成立当且仅当 $D 、 A 、 P 、 C$ 四点共圆, 即 $\\angle P B A=\\angle P C A$. 故 $S_{\\triangle A B C}$ 的最大值为 $36+22 \\sqrt{3}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c2i6.png",
+        "./images/volume9/figures/fig-c2i7.png"
+    ]
+}

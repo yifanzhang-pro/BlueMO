@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题3 设变量 $x$ 满足 $x^2+b x \\leqslant-x(b<-1)$, 且 $f(x)=x^2+b x$ 的最小值是 $-\\frac{1}{2}$, 则 $b$ 等于",
+    "solution": "$b=-\\frac{3}{2}$.",
+    "remark": "",
+    "figures": []
+}

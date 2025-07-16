@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 若关于 $z$ 的方程 $z^2+c|z|^2=1+2 \\mathrm{i}$ 有复数解, 求实数 $c$ 的取值范围.",
+    "solution": "解:原方程有复数解 $z_0=a+b \\mathrm{i}(a, b \\in \\mathbf{R})$, 则\n$$\na^2-b^2+2 a b \\mathrm{i}+c\\left(a^2+b^2\\right)=1+2 \\mathrm{i},\n$$\n由实部和虚部分别相等可得到如下方程组:\n$$\n\\left\\{\\begin{array}{l}\n(c+1) a^2+(c-1) b^2=1, \\\\\n2 a b=2,\n\\end{array}\\right.\n$$\n这等价于\n$$\n\\left\\{\\begin{array}{l}\n(c+1) a^4-a^2+(c-1)=0, \\\\\nb=\\frac{1}{a} .\n\\end{array}\\right. \\label{eq1}\n$$\n则原方程有复数解 $z_0$ 当且仅当关于 $a, b$ 的方程组 式\\ref{eq1} 有实数解,考虑到 $b$ 由 $a$ 决定且 $a^2>0$, 这又等价于关于 $x$ 的一元二次方程\n$$\n(c+1) x^2-x+(c-1)=0 \\label{eq2}\n$$\n存在正数解.\n(1) 若 $c \\leqslant-1$, 因为 $(c+1) x^2 \\leqslant 0, c-1<0$, 故方程 式\\ref{eq2} 显然没有正数解;\n(2) 若 $c>-1$, 由于方程 式\\ref{eq2}  中二次项系数大于 0 ,一次项系数小于 0 , 根据根与系数的关系知: 式\\ref{eq2} 存在正数解当且仅当判别式 $\\Delta==1-4(c+1)(c-1) \\geqslant$ 0 , 即 $4 c^2 \\leqslant 5$, 解得 $-1<c \\leqslant \\frac{\\sqrt{5}}{2}$.\n综上可知, 实数 $c$ 的取值范围是 $\\left(-1, \\frac{\\sqrt{5}}{2}\\right]$.",
+    "remark": "注例 1 运用了三角代换转化问题,通过换元,把原来的问题转化成另一类相对容易解决的问题, 而例 2 则是先运用实部与虚部分离, 将一个复数方程解的存在性问题转化为实数方程组 (1)的解的存在性, 又进一步转化为一元二次方程(2)的正数解的存在性, 每一步的转化都很自然, 且不断地使问题简单化, 熟悉化.\n事实上, 化归就是把复杂问题化为简单问题; 把陌生的问题化为熟悉的问题; 将一个问题转化为另一个问题; 将一种形式转化为另一种形式等等.\n下面我们再通过几个具体的例子来说明这种解题策略的运用.",
+    "figures": []
+}

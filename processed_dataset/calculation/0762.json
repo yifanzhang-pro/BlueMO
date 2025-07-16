@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题14. 函数 $f(x)=\\arcsin (2 x+1)(-1 \\leqslant x \\leqslant 0)$, 则 $f^{-1}\\left(\\frac{\\pi}{6}\\right)=$",
+    "solution": "$-\\frac{1}{4}$. 由 $\\frac{\\pi}{6}=\\arcsin (2 x+1)$, 得 $\\frac{1}{2}=2 x+1, x=-\\frac{1}{4}$.",
+    "remark": "",
+    "figures": []
+}

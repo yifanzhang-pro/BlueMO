@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题7. 如图(<FilePath:./images/volume12/figures/fig-c5p7.png>), 在上面由 25 个小正方形组成的图形中,试设计一条从 $A$ 点出发的路径, 走过所有小正方形的边, 最后回到 $A$ 点, 并且使得路径最短.",
+    "solution": "如图(<FilePath:./images/volume12/figures/fig-c5a7.png>), 所给的图有 16 个奇顶点 $B_i, C_i(i=1,2, \\cdots, 8)$. 如果要使它是一个圈, 至少要加 8 条边.\n如图所添加的 8 条边 $B_i C_i(i=1,2, \\cdots, 8)$ 后, 能使得该图是一个圈, 图中所示的圈使得路径最短.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c5p7.png",
+        "./images/volume12/figures/fig-c5a7.png"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例1. (Erdös-Mordell 不等式) 设 $P$ 为 $\\triangle A B C$ 内任意一点, $P$ 到三边 $B C 、 C A 、 A B$ 的距离分别为 $P D=p 、 P E=q 、 P F=r$, 并记 $P A=x$, $P B=y, P C=z$, 则\n$$\nx+y+z \\geqslant 2(p+q+r),\n$$\n等号成立当且仅当 $\\triangle A B C$ 为正三角形并且 $P$ 为此三角形的中心.",
+    "solution": "证明 2 如图(<FilePath:./images/volume9/figures/fig-c5i2.png>), 过点 $P$ 作直线 $M N$, 使得 $\\angle A M N=\\angle A C B$, 于是 $\\triangle A M N \\backsim \\triangle A C B$.\n从而 $\\frac{A N}{M N}=\\frac{c}{a}, \\frac{A M}{M N}=\\frac{b}{a}$.\n由于 $S_{\\triangle A M N}=S_{\\triangle A M P}+S_{\\triangle A N P}$,\n所以有 $A P \\cdot M N \\geqslant q \\cdot A N+r \\cdot A M$,\n所以 $x=A P \\geqslant q \\cdot \\frac{A N}{M N}+r \\cdot \\frac{A M}{M N}$.\n即\n$$\n\\begin{aligned}\n& x \\geqslant \\frac{c}{a} \\cdot q+\\frac{b}{a} \\cdot r, \\label{eq1}\\\\\n& y \\geqslant \\frac{c}{b} \\cdot p+\\frac{a}{b} \\cdot r, \\label{eq2}\\\\\n& z \\geqslant \\frac{b}{c} \\cdot p+\\frac{a}{c} \\cdot q . \\label{eq3}\n\\end{aligned}\n$$\n将式\\ref{eq1}、\\ref{eq2}、式\\ref{eq3}相加得\n$$\nx+y+z \\geqslant p\\left(\\frac{c}{b}+\\frac{b}{c}\\right)+q\\left(\\frac{c}{a}+\\frac{a}{c}\\right)+r\\left(\\frac{b}{a}+\\frac{a}{b}\\right) \\geqslant 2(p+q+r) .\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c5i2.png"
+    ]
+}

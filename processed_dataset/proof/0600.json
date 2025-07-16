@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 的在 $n \\times n$ 棋盘 $C$ 中, 两个具有公共顶点的格称为是相连的.\n将 $1,2,3, \\cdots$, $n^2$ 分别填人各格中, 每格填一个数.\n若任何相连的两个格的数至多相差 $g$, 则称 $g$ 为一个 $C$-间隙.\n求出最小的 $C$-间隙 $C_g$.",
+    "solution": "$C_{\\dot{g}}=n+1$. 首先, 第 $i$ 行依次填 $(i-1) n+1,(i-1) n+2, \\cdots,(i-1) n+ n$. 此时, 数表的 $C$-间隙为 $n+1$. 对任何一个数表, 设 $g$ 是它的 $C$-间隙.\n即对任何两个相连的数 $x 、 y$, 有 $|x-y| \\leqslant g$. 我们证明: $g \\geqslant n+1$. 将 1 和 $n^2$ 所在的格用一条链连接, 此链 (包括 1 和 $n^2$ 所在的格) 至多有 $n$ 个格.\n不妨设共有 $m$ 个格 $(m \\leqslant n)$, 这 $m$ 个格中的数依次为 $a_1=1, a_2, a_3, \\cdots, a_m=n^2$. 考察各相连两数之差, 有 $\\left|a_2-a_1\\right|+\\left|a_3-a_2\\right|+\\cdots+\\left|a_m-a_{m-1}\\right| \\geqslant\\left(a_2-a_1\\right)+ \\left(a_3-a_2\\right)+\\cdots+\\left(a_m-a_{m-1}\\right)=a_m-a_1=n^2-1$. 于是, 必有一个 $i$, 使 $\\mid a_i- a_{i-1} \\mid \\geqslant \\frac{n^2-1}{m-1} \\geqslant \\frac{n^2-1}{n-1}=n+1$.",
+    "remark": "",
+    "figures": []
+}

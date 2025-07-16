@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise20.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 如果凸 $n$ 边形的任意 3 条对角线都不交于一点, 试问该凸 $n$ 边形被它的对角线分成多少部分?",
+    "solution": "以凸 $n$ 边形的顶点以及所有对角线的交点为顶点, 以顶点间已连有的线段为边构成一个平面图 $G$. 设 $G$ 的顶点数为 $V$, 边数为 $E$, 面数为 $F$ (其中, 凸多边形的外部也算作一个面,故所求的结果即为 $F-1$ ).\n由于凸 $n$ 边形的任意 4 个顶点唯一对应形内的一个交点, 从而形内的交点总数为 $\\mathrm{C}_n^4$, 故 $G$ 的顶点数 $V=n+\\mathrm{C}_n^4$.\n又由于 $G$ 中作为凸 $n$ 边形顶点的顶点具有度数 $n-1$, 而作为凸 $n$ 边形对角线交点的顶点具有度数 4 , 所以边数 $E=\\frac{1}{2}\\left(n(n-1)+4 \\mathrm{C}_n^4\\right)$.\n将以上两式代入平面图的欧拉公式 $V-E+F=2$ 得\n$$\n\\begin{aligned}\nF-1 & =E-V+1=\\frac{1}{2}\\left(n(n-1)+4 \\mathrm{C}_n^4\\right)-\\left(n+\\mathrm{C}_n^4\\right)+1 \\\\\n& =\\frac{1}{24}(n-1)(n-2)\\left(n^2-3 n+12\\right),\n\\end{aligned}\n$$\n即该凸 $n$ 边形被它的对角线分成 $\\frac{1}{24}(n-1)(n-2)\\left(n^2-3 n+12\\right)$ 个部分.",
+    "remark": "",
+    "figures": []
+}

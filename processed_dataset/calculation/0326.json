@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 设 $A$ 是正整数集合 $\\mathbf{N}^*$ 的子集,对任何 $x, y \\in A, x \\neq y$, 有 $\\mid x- y \\mid \\geqslant \\frac{x y}{25}$. 求 $|A|$ 的最大值.",
+    "solution": "分析:题在前一节中用\"间距估计\"给出过解答, 现考虑用划块估计求解.\n其基本想法是: 将 $\\mathbf{N}^*$ 划分为若干块, 使 $A$ 在每一块中至多含有 1 个元素.\n注意到 $A$ 满足的条件是: 对任何 $a_i<a_j \\in A$, 都有 $a_j-a_i \\geqslant \\frac{a_i a_i}{25}$. 因此,在对 $\\mathbf{N}^*$ 分块时, 可使每一块中的任何两个元素 $x, y(x<y)$, 都有 $y-x<\\frac{x y}{25}$.\n解令 $X_1=\\{1\\}, X_2=\\{2\\}, X_3=\\{3\\}, X_4=\\{4\\}, X_5=\\{5,6\\}$, $X_6=\\{7,8,9\\}, X_7=\\{10,11, \\cdots, 16\\}, X_8=\\{17,18, \\cdots, 53\\}, X_9=\\{54$, $55, \\cdots\\}=\\mathbf{N}^* \\backslash\\{1,2, \\cdots, 53\\}$.\n对于 $X_9$, 当 $x, y \\in X_9$ 时, $x>25$, 所以 $y-x<y<y \\cdot \\frac{x}{25}=\\frac{x y}{25}$. 而对于 $X_i(i=1,2, \\cdots, 8)$, 当 $x, y \\in X_i$ 时, 显然有 $y-x<\\frac{x y}{25}$. 于是 $A$ 最多只能含有上述每个集合中的一个数, 所以 $n \\leqslant 9$.\n又 $A=\\{1,2,3,4,5,7,10,17,54\\}$ 合乎条件, 所以 $|A|$ 的最大值为 9 .",
+    "remark": "",
+    "figures": []
+}

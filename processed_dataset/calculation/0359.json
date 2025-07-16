@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 设 $X=\\{00,01, \\cdots, 98,99\\}$ 是 100 个二位数码的集合, $A$ 是 $X$ 的子集, 满足: 对任何一个由 0 到 9 中的数字构成的无穷序列中, 都有两个相邻的数字组成的二位数码属于 $A$, 求 $|A|$ 的最小值.",
+    "solution": "令 $A_{i j}=\\{\\overline{i j}, \\overline{j i}\\}, i, j \\in\\{0,1,2, \\cdots, 9\\}$, 则 $A$ 至少含有 $A_{i j}$ 中的一个元素, 否则, 无穷序列 $i j i j i j i j \\cdots$ 无相邻数码属于 $A$, 矛盾.\n显然集合 $A_{i j}$ 共有 $10+\\mathrm{C}_{10}^2=55$ 个(其中, $A_{00}, A_{11}, \\cdots, A_{99}$. 有 10 个), 所以, $|A| \\geqslant 55$. 此外, 令 $A=\\{\\overline{i j} \\mid 0 \\leqslant i \\leqslant j \\leqslant 9\\}$, (即 $A_{i j}$ 中均取 $i \\leqslant j$ 的下标), 则 $|A|=55$. 此时, 对任何无穷序列, 设它的最小数字为 $i$, 排在 $i$ 后面的一个数字为 $j$, 则 $i \\leqslant j$, 那么 $\\overline{i j} \\in A$. 故 $|A|$ 的最小值为 55 .",
+    "remark": "",
+    "figures": []
+}

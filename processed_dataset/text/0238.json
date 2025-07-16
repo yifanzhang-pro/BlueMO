@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter7.tex",
+    "text": "单位根及其应用.\n对于方程\n$$\nx^n-1=0,\\left(n \\in \\mathbf{N}^*, n \\geqslant 2\\right)\n$$\n由复数开方法则, 就得到它的 $n$ 个根\n$$\n\\varepsilon_k=\\cos \\frac{2 k \\pi}{n}+\\operatorname{isin} \\frac{2 k \\pi}{n} . \\quad(k=0,1,2, \\cdots, n-1)\n$$\n它们显然是 1 的 $n$ 次方根, 称为 $n$ 次单位根.\n利用复数乘方公式,有\n$$\n\\varepsilon_k=\\left(\\cos \\frac{2 \\pi}{n}+i \\sin \\frac{2 \\pi}{n}\\right)^k=\\varepsilon_1^k .\n$$\n这说明, $n$ 个 $n$ 次单位根可以表示为\n$$\n1, \\varepsilon_1, \\varepsilon_1^2, \\cdots, \\varepsilon_1^{n-1} .\n$$\n关于 $n$ 次单位根, 有如下一些性质:\n(1) $\\left|\\varepsilon_k\\right|=1 . \\quad(k \\in \\mathbf{N})$\n(2) $\\varepsilon_j \\varepsilon_k=\\varepsilon_{j+k} . \\quad(j, k \\in \\mathbf{N})$\n(3) $1+\\varepsilon_1+\\varepsilon_1^2+\\cdots+\\varepsilon_1^{n-1}=0 . \\quad(n \\geqslant 2)$\n(4) 设 $m$ 是整数,则\n$$\n1+\\varepsilon_1^m+\\varepsilon_2^m+\\cdots+\\varepsilon_{n-1}^m=\\left\\{\\begin{array}{l}\nn, \\text { 当 } m \\text { 是 } n \\text { 的倍数时; } \\\\\n0, \\text { 当 } m \\text { 不是 } n \\text { 的倍数时.\n}\n\\end{array}\\right.\n$$",
+    "figures": []
+}

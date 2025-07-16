@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例27. 设 $a, b, c \\in \\mathbf{R}^{+}$, 求证:\n$$\n\\sqrt{a b c}(\\sqrt{a}+\\sqrt{b}+\\sqrt{c})+(a+b+c)^2 \\geqslant 4 \\sqrt{3 a b c(a+b+c)} .\n$$",
+    "solution": "证明:由 Schur 不等式(在(2)中, 令 $r=2$ ), 得\n$$\n\\sum_{c y c} x^2(x-y)(x-z) \\geqslant 0, x, y, z \\in \\mathbf{R}^{+},\n$$\n所以\n$$\n\\sum_{c y c} x^4+x y z \\sum_{c y c} x \\geqslant \\sum_{c y c} x^3(y+z) . \\label{(4)}\n$$\n又因为 $\\sum_{c y c} x^3(y+z)=2 \\sum_{c y c} y^2 z^2+\\sum_{c y c} y z(y-z)^2 \\geqslant 2 \\sum_{c y c} y^2 z^2$, 所以\n$$\n\\sum_{c y c} x^4+x y z \\sum_{c y c} x \\geqslant 2 \\sum_{c y c} y^2 z^2 .\n$$\n在(4)式中, 令 $x=\\sqrt{a}, y=\\sqrt{b}, z=\\sqrt{c}$, 得\n$$\n\\begin{gathered}\n\\sum_{c y c} a^2+\\sqrt{a b c} \\sum_{c y c} \\sqrt{a} \\geqslant 2 \\sum_{c y c} b c, \\\\\n\\sqrt{a b c} \\sum_{c y c} \\sqrt{a}+\\left(\\sum_{c y c} a\\right)^2 \\geqslant 4 \\sum_{c y c} b c .\n\\end{gathered}\n$$\n下证 $\\sum_{c y c} b c \\geqslant \\sqrt{3 a b c(a+b+c)}$.\n事实上, 由 $(u+v+w)^2 \\geqslant 3(u v+v w+w u)$, 得\n$$\n\\begin{aligned}\n(a b+b c+c a)^2 & \\geqslant 3(a b \\cdot b c+b c \\cdot c a+c a \\cdot a b) \\\\\n& =3 a b c(a+b+c),\n\\end{aligned}\n$$\n所以\n$$\n\\sum_{c y c} b c \\geqslant \\sqrt{3 a b c(a+b+c)},\n$$\n故 $\\quad \\sqrt{a b c}(\\sqrt{a}+\\sqrt{b}+\\sqrt{c})+(a+b+c)^2 \\geqslant 4 \\sqrt{3 a b c(a+b+c)}$.",
+    "remark": "",
+    "figures": []
+}

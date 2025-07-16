@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例2. 如图(<FilePath:./images/volume8/figures/fig-c4i1.png>), $P$ 点在 $\\triangle A B C$ 所在平面上, $\\overrightarrow{A P}=m \\overrightarrow{A B}+n \\overrightarrow{A C}$. 求证: $P$ 点在直线 $B C$ 上的充要条件是 $m+n=1$.",
+    "solution": "分析:与解 $\\overrightarrow{B P}=\\overrightarrow{B A}+\\overrightarrow{A P}=\\overrightarrow{A P}-\\overrightarrow{A B}= (m-1) \\overrightarrow{A B}+n \\overrightarrow{A C}$,\n$$\n\\overrightarrow{B C}=\\overrightarrow{B A}+\\overrightarrow{A C}=-\\overrightarrow{A B}+\\overrightarrow{A C}\n$$\n(1) 若 $m+n=1$, 则 $\\overrightarrow{B P}=-n \\overrightarrow{A B}+n \\overrightarrow{A C}=n \\overrightarrow{B C}$, 故 $B 、 P 、 C$ 共线;\n(2) 若 $B 、 P 、 C$ 共线, 则存在实数 $t$, 使 $\\overrightarrow{B P}=t \\overrightarrow{B C}$.\n即 $(m-1) \\overrightarrow{A B}+n \\overrightarrow{A C}=t(-\\overrightarrow{A B}+\\overrightarrow{A C})$, 所以 $m-1=-t, n=t$.\n从而 $(m-1)+n=0$, 即 $m+n=1$, 证毕.",
+    "remark": "",
+    "figures": [
+        "./images/volume8/figures/fig-c4i1.png"
+    ]
+}

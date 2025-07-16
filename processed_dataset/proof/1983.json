@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 设 $a 、 b 、 c \\in \\mathbf{R}, b \\neq a c, a \\neq-c$. $z$ 是复数, $z^2-(a-c) z-b=0$. 求证 $\\left|\\frac{a^2+b-(a+c) z}{a c-b}\\right|=1$ 的充分必要条件是 $(a-c)^2+4 b \\leqslant 0$.",
+    "solution": "一方面, 若 $(a-c)^2+4 b \\leqslant 0$, 则由求根公式, 得\n$$\nz==\\frac{a-c \\pm \\sqrt{-(a-c)^2-4 b} \\cdot \\mathrm{i}}{2} .\n$$\n于是\n$$\n\\begin{aligned}\n\\left|\\frac{a^2+b-(a+c) z}{a c-b}\\right| & =\\left|\\frac{a^2+c^2+2 b \\mp(a+c) \\sqrt{-(a-c)^2-4 b} \\cdot \\mathrm{i}}{2(a c-b)}\\right| \\\\\n& =\\sqrt{\\frac{\\left(a^2+c^2+2 b\\right)^2-(a+c)^2\\left[(a-c)^2+4 b\\right]}{(2 a c-2 b)^2}} \\\\\n& =\\sqrt{\\frac{\\left(a^2+c^2+2 b\\right)^2-\\left(a^2-c^2\\right)^2-4 b(a+c)^2}{4(a c-b)^2}} \\\\\n& =\\sqrt{\\frac{\\left(a^2+b\\right)\\left(c^2+b\\right)-b\\left(a^2+c^2+2 a c\\right)}{(a c-b)^2}} \\\\\n& =\\sqrt{\\frac{a^2 c^2+b^2-2 a b c}{(a c-b)^2}}=1 .\n\\end{aligned}\n$$\n另一方面, 若 $\\left|\\frac{a^2+b-(a+c) z}{a c-b}\\right|=1$, 假设 $(a-c)^2+4 b>0$, 则 $z^2- (a-c) z-b=0$ 有两个不相等的实根.\n于是 $\\frac{a^2+b-(a+c) z}{a c-b}=1$ 或 -1 , 即 $z=a$ 或 $z=\\frac{-a^2+a c-2 b}{-(a+c)}$.\n当把 $z=a$ 代入 $z^2-(a-c) z-b=0$ 时, 得到 $a c-b=0$,与 $b \\neq a c$ 相矛盾.\n当把 $z=\\frac{-a^2+a c-2 b}{-(a+c)}$ 代入 $z^2-(a-c) z-b=0$ 时, 得到 $(b-a c)[(a- \\left.c)^2+4 b\\right]=0$, 这与条件 $b \\neq a c$ 及前面的假设 $(a-c)^2+4 b>0$ 相矛盾.\n于是, $a 、 \\frac{-a^2+a c-2 b}{-(a+c)}$ 均不是方程 $z^2-(a-c) z-b=0$ 的根,矛盾.\n故一定有 $(a-c)^2+4 b \\leqslant 0$, 证毕.",
+    "remark": "",
+    "figures": []
+}

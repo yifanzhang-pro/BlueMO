@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题16 对于任意正整数 $n$, 记 $n$ 的所有正约数组成的集合为 $S_n$. 证明: $S_n$ 中至多有一半元素的个位数为 3 .",
+    "solution": "考虑如下四种情况:\n(1) $n$ 能被 5 整除, 设 $d_1, d_2, \\cdots, d_m$ 为 $S_n$ 中所有个位数为 3 的元素,则 $S_n$ 中还包括 $5 d_1, 5 d_2, \\cdots, 5 d_m$ 这 $m$ 个个位数为 5 的元素, 所以 $S_n$ 中至多有一半元素的个位数为 3 .\n(2) $n$ 不能被 5 整除,但 $2 \\mid n$. 仿 (1) 可证.\n(3) $n$ 不能被 5 整除, 且 $n$ 的质因子的个位数均为 1 或 9 , 则 $S_n$ 中所有的元素的个位数均为 1 或 9. 结论成立.\n(4) $n$ 不能被 5 整除, 且 $2 \\times n$, 但 $n$ 有个位数为 3 或 7 的质因子 $p$, 令 $n= p^r q$, 其中 $q$ 和 $r$ 都是正整数, $p$ 和 $q$ 互质.\n设 $S_q=\\left\\{a_1, a_2, \\cdots, a_k\\right\\}$ 为 $q$ 的所有正约数组成的集合, 将 $S_n$ 中的元素写成如下方阵:\n$$\n\\begin{aligned}\n& a_1, a_1 p, a_1 p^2, \\cdots, a_1 p^r, \\\\\n& a_2, a_2 p, a_2 p^2, \\cdots, a_2 p^r, \\\\\n& \\cdots \\ldots \\ldots \\ldots \\ldots \\ldots \\ldots \\ldots \\ldots \\ldots . . \\\\\n& a_k, a_k p, a_k p^2, \\cdots, a_k p^r .\n\\end{aligned}\n$$\n对于 $d_i=a_r p^l$,选择 $a_r p^{l-1}$ 或 $a_r p^{l+1}$ 之一与之配对(所选之数必须在 $S_n$ 中). 设 $e_i$ 为所选之数, 我们称 $\\left(d_i, e_i\\right)$ 为一对朋友.\n如果 $d_i$ 的个位数为 3 , 则由 $p$ 的个位数是 3 或 7 ,知 $e_i$ 的个位数不是 3 . 假设 $d_i$ 和 $d_j$ 的个位数都是 3 , 且有相同的朋友 $e=a_s p^t$, 则 $\\left\\{d_i, d_j\\right\\}=\\left\\{a_s p^{t-1}, a_s p^{t+1}\\right\\}$, 因为 $p$ 的个位数为 3 或 7 , 所以 $p^2$ 的个位数是 9 , 而 $n$ 不能被 5 整除, 故 $a_s$ 的个位数不为 0 , 所以 $a_s p^{t-1}, a_s p^{t-1} \\cdot p^2=a_s p^{t+1}$ 的个位数不同, 这与 $d_i$ 和 $d_j$ 的个位数都是 3 矛盾, 所以每个个位数为 3 的 $d_i$ 均有不同的朋友.\n综上所述, $S_n$ 中每个个位数为 3 的元素, 均与一个 $S_n$ 中个位数不为 3 的元素为朋友, 而且两个个位数为 3 的不同元素的朋友也是不同的, 所以 $S_n$ 中至多有一半元素的个位数为 3 .",
+    "remark": "",
+    "figures": []
+}

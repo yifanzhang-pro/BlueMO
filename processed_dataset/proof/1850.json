@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 设圆 $\\Gamma$ 和直线 $l$ 不相交, $A B$ 是圆 $\\Gamma$ 的直径, 且垂直于直线 $l$, 点 $B$ 比点 $A$ 更靠近直线 $l$. 在圆 $\\Gamma$ 上任意取一点 $C(C \\neq A 、 B)$, 直线 $A C$ 交直线 $l$ 于点 $D$, 直线 $D E$ 与圆 $\\Gamma$ 切于点 $E$, 且点 $B 、 E$ 在 $A C$ 的同一侧.\n设 $B E$ 交直线 $l$ 于点 $F, A F$ 交圆 $\\Gamma$ 于点 $G(G \\neq A)$. 证明: 点 $G$ 关于 $A B$ 的对称点在直线 $C F$ 上.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c4a8.png>), 设 $C F$ 交圆 $\\Gamma$ 于点 $H$. 因为直径 $A B \\perp l$, 所以,问题等价于证明 $G H / / l$.\n设 $A B \\perp l$, 垂足为点 $X$, 则 $\\angle A X F=\\angle A E F= 90^{\\circ}$. 所以, $A 、 F 、 X 、 E$ 四点共圆.\n于是, $\\angle E F D= \\angle E A B=\\angle F E D$. 从而, $D F=D E$. 又因为 $D F^2= D E^2=D C \\cdot D A$, 所以, $\\triangle D C F \\backsim \\triangle D F A$. 于是, $\\angle A F D=\\angle F C D=\\angle A C H=\\angle A G H$. 故 $G H / / l$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4a8.png"
+    ]
+}

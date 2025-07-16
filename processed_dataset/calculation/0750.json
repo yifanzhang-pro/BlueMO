@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题1 下列命题恒成立的是 ( ).\n(A) $\\arctan x=\\operatorname{arccot} \\frac{1}{x}(x \\neq 0)$\n(B) $\\arcsin x=\\arccos \\sqrt{1-x^2} \\quad(x \\in[-1,1])$\n(C) $\\arctan x+\\operatorname{arccot} x=\\pi$\n(D) $\\operatorname{arccot} x+\\operatorname{arccot}(-x)=\\pi$",
+    "solution": "D. 当 $x<0$ 时, $\\arctan x \\in\\left(-\\frac{\\pi}{2}, 0\\right), \\operatorname{arccot} \\frac{1}{x} \\in\\left(\\frac{\\pi}{2}, \\pi\\right)$. 故 A 错误, 同理 B 错误, 而 C 显然错误.",
+    "remark": "",
+    "figures": []
+}

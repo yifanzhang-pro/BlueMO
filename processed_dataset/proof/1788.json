@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 设 $\\triangle A B C$ 为锐角三角形,外接圆圆心为 $O$, 半径为 $R, A O$ 交 $\\triangle B O C$ 所在圆于另一点 $A^{\\prime}, B O$ 交 $\\triangle C O A$ 所在圆于另一点 $B^{\\prime}, C O$ 交 $\\triangle A O B$ 所在圆于另一点 $C^{\\prime}$. 证明: $O A^{\\prime} \\cdot O B^{\\prime} \\cdot O C \\geqslant 8 R^3$, 并指出在什么情况下等号成立.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c10a7.png>), 设 $A O$ 与 $B C, B O$ 与 $C A, C O$ 与 $A B$ 的交点依次为 $D 、 E 、 F, \\triangle A O B 、 \\triangle B O C 、 \\triangle C O A$ 的面积依次为 $S_1 、 S_2 、 S_3$. 由 $B 、 O 、 C 、 A^{\\prime}$ 四点共圆知 $\\angle O B C=\\angle O C B=\\angle B A^{\\prime} O$, 从而有 $\\triangle O B D \\backsim \\triangle O A^{\\prime} B$, 得 $O A^{\\prime}=\\frac{O B^2}{O D}=\\frac{R^2}{O D}$. 同理, $O B^{\\prime}=\\frac{R^2}{O E}, O C^{\\prime}=\\frac{R^2}{O F}$. 所以, $\\frac{O A^{\\prime} \\cdot O B^{\\prime} \\cdot O C^{\\prime}}{R^3}=\\frac{R^3}{O D \\cdot O E \\cdot O F}=\\frac{O A}{O D} \\cdot \\frac{O B}{O E} \\cdot \\frac{O C}{O F}=\\frac{S_1+S_3}{S_2} \\cdot \\frac{S_1+S_2}{S_3} \\cdot \\frac{S_2+S_3}{S_1}=\\left(\\frac{S_1}{S_2}+\\frac{S_3}{S_2}\\right)\\left(\\frac{S_1}{S_3}+\\frac{S_2}{S_3}\\right)\\left(\\frac{S_2}{S_1}+\\frac{S_3}{S_1}\\right)=\\left(\\frac{S_1}{S_2}+\\frac{S_2}{S_1}\\right)+ \\left(\\frac{S_2}{S_3}+\\frac{S_3}{S_2}\\right)+\\left(\\frac{S_3}{S_1}+\\frac{S_1}{S_3}\\right)+2 \\geqslant 8$, 等号当且仅当 $S_1=S_2=S_3$ 时成立, 此时 $\\triangle A B C$ 为正三角形.\n故 $O A^{\\prime} \\cdot O B^{\\prime} \\cdot O C^{\\prime} \\geqslant 8 R^3$, 等号当且仅当 $\\triangle A B C$ 为正三角形时成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c10a7.png"
+    ]
+}

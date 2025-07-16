@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题44. 在坐标平面上任给一条起点为 $(0,0)$, 终点为 $(1,0)$ 的折线.\n证明: 对任意 $n \\in \\mathbf{N}^*$, 在该折线上存在两点, 它们的纵坐标相同, 而横坐标相差 $\\frac{1}{n}$.",
+    "solution": "先建立一个引理 : 对任意 $\\alpha \\in(0,1)$, 折线上存在两点, 它们的纵坐标相同,横坐标相差 $\\alpha$ 或 $1-\\alpha$.\n事实上, 设 $\\Gamma$ 为题中所给的折线, $\\Gamma_1$ 为 $\\Gamma$ 向左平移 $\\alpha$ 个单位得到的折线, $\\Gamma_2$ 为 $\\Gamma$ 向右平移 $1-\\alpha$ 个单位得到的折线, 容易得到 $\\Gamma$ 与 $\\Gamma_1 U \\Gamma_2$ 至少有一个交点, 而这就是引理要求的结果 (如图 (<FilePath:./images/volume6/figures/fig-c1p44.png>) 所示, 从 $\\Gamma$ 的最高点与最低点出发讨论\n 即可知 $\\Gamma$ 与 $\\Gamma_1 \\cup \\Gamma_2$ 有交点).\n下面利用引理来证明需要的结论.\n取 $\\alpha=\\frac{1}{2}$, 可知 $n=2$ 时, 结论成立; 取 $\\alpha=\\frac{1}{3}$, 则折线上有两点 $A 、 B$, 使得 $A B / / x$ 轴, 且 $|A B|=\\frac{1}{3}$ 或 $|A B|=\\frac{2}{3}$, 若 $|A B|=\\frac{1}{3}$, 则 $n=3$ 已成立, 若 $|A B|=\\frac{2}{3}$, 则考虑连结 $A 、 B$ 的 $\\Gamma$ 的子折线, 利用引理及 $n=2$ 的结论, 可知该子折线上存在点 $C 、 D$, 使 $C D / / A B$, 且 $|C D|=\\frac{1}{2}|A B|=\\frac{1}{3}$, 故 $n=3$ 时, 结论也成立.\n依此类推, 结合数学归纳法, 可知结论对任意 $n \\geqslant 2$ 均成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume6/figures/fig-c1p44.png"
+    ]
+}

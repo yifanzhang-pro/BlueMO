@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题11 设函数 $f: \\mathbf{R} \\rightarrow \\mathbf{R}$ 满足\n$$\nf(x y)=\\frac{f(x)+f(y)}{x+y}, \\quad x, y \\in \\mathbf{R}, x+y \\neq 0 .\n$$\n求 $f(x)$.",
+    "solution": "令 $y=1$, 得 $f(x)=\\frac{f(x)+f(1)}{x+1}, x \\neq-1$. 故 $x f(x)=f(1)$. 当 $x=0$ 时, $f(1)=0$. 从而当 $x \\neq 0, x \\neq-1$ 时, $f(x)=0$. 令 $x=2, y=0$, 得 $f(0)=\\frac{f(2)+f(0)}{2}$, 所以 $f(0)=f(2)=0$. 令 $x=-1, y=0$, 得 $f(0)=\\frac{f(-1)+f(0)}{2}$, 所以 $f(-1)=f(0)=0$. 综上所述, $f(x)=0$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 已知梯形 $P R U S(P R / / S U)$, 满足 $\\angle P S R=2 \\angle R S U, \\angle S P U= 2 \\angle U P R$, 又点 $Q 、 T$ 分别在 $P R$ 和 $S U$ 上, 且 $S Q$ 和 $P T$ 分别是 $\\angle P S R$ 和 $\\angle S P U$ 的角平分线.\n$P T$ 与 $S Q$ 交于点 $E$, 过 $E$ 作 $S R$ 的平行线交 $P U$ 于点 $F$, 过 $E$ 作 $P U$ 的平行线交 $S R$ 于点 $G$, 又 $F G$ 分别交 $P R 、 S U$ 于点 $K$ 、\n$L$. 证明: $K F=F G=G L$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c1a9.png>), 设 $P U$ 与 $R S$ 交于点 $D$. 由 $\\angle P S R=2 \\angle R S U, \\angle S P U=2 \\angle U P R$, 有 $\\angle P S D+\\angle S P D=2(\\angle R S U+\\angle U P R)= 2 \\angle P D S=180^{\\circ}-\\angle P D S$. 故 $\\angle P D S=60^{\\circ}$. 易知 $D E$ 平分 $\\angle P D S$, 故 $\\square D F E G$ 为菱形.\n又\n$\\angle P D S=60^{\\circ}$, 故 $D F=F E=E G=G D=F G$. 又 $\\angle K P F=\\frac{1}{2} \\angle S P U= \\angle E P F, \\angle K F P=\\angle D F G=60^{\\circ}=\\angle E F P$, 故 $\\triangle K F P \\cong \\triangle E F P$. 从而, $K F=E F=F G$. 同理, $G L=G E=F G$. 所以, $K F=F G=G L$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1a9.png"
+    ]
+}

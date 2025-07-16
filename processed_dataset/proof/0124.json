@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题8 证明: 方程\n$$\nx^2+y^2=3\\left(z^2+u^2\\right)\n$$\n不存在正整数解 $(x, y, z, u)$.",
+    "solution": "假设这个方程有正整数解 $x 、 y 、 z 、 u$. 考虑 $x$ 与 $y$ 的平方和 $x^2+y^2$. 由于 $x^2+y^2$ 是正整数, 则在所有的 $x^2+y^2$ 中必有一个最小的, 我们考虑使 $x^2+y^2$ 最小的那组正整数解 $(x, y, z, u)$.\n由于 $x^2+y^2$ 是 3 的倍数, 则 $x$ 和 $y$ 必都能被 3 整除.\n设 $x=3 m, y=3 n$, 其中 $m 、 n$ 都是正整数.\n从而有 $9 m^2+9 n^2=3\\left(z^2+u^2\\right), z^2+u^2= 3\\left(m^2+n^2\\right)$. 此时, $z 、 u 、 x 、 y$ 也是方程的一组解, 而由已知方程可知 $z^2+ u^2<x^2+y^2$, 这与 $x^2+y^2$ 为最小矛盾.",
+    "remark": "",
+    "figures": []
+}

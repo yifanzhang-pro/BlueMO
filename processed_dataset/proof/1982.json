@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 已知 $P(x)=0$ 与 $Q(x)=0$ 是两个实系数方程, 且对所有的实数 $x$ 满足恒等式 $P(Q(x))=Q(P(x))$, 若方程 $P(x)=Q(x)$ 无实根, 求证: 方程 $P(P(x))=Q(Q(x))$ 也无实根.",
+    "solution": "由实系数方程 $P(x)-Q(x)=0$ 无实根, 可知其虚根成对出现.\n$$\n\\begin{aligned}\nP(x)-Q(x)= & A\\left[x-\\left(a_1+b_1 \\mathrm{i}\\right)\\right]\\left[x-\\left(a_1-b_1 \\mathrm{i}\\right)\\right] \\cdots \\\\\n& {\\left[x-\\left(a_n+b_n \\mathrm{i}\\right)\\right]\\left[x-\\left(a_n-b_n \\mathrm{i}\\right)\\right] } \\\\\n= & A\\left[\\left(x-a_1\\right)^2+b_1^2\\right] \\cdots\\left[\\left(x-a_n\\right)^2+b_n^2\\right] .\n\\end{aligned}\n$$\n不妨设常数 $A>0$, 于是, 对任意 $x \\in \\mathbf{R}$, 有 $P(x)-Q(x)>0$. 而 $P(x) 、 Q(x)$ 亦是实数, 从而\n$$\nP(P(x))-Q(Q(x))=\\{P(P(x))-Q(P(x))\\}+\\{P(Q(x))-Q(Q(x))\\}>0 \\text {. }\n$$\n故方程 $P(P(x))=Q(Q(x))$ 无实根, 证毕.",
+    "remark": "",
+    "figures": []
+}

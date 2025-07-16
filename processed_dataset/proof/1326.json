@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例3. 已知 $a, b, c \\in(-2,1)$, 求证:\n$$\na b c>a+b+c-2 .\n$$",
+    "solution": "分析:不等式的两边是关于 $a 、 b 、 c$ 对称的,且 $a 、 b 、 c$ 都是一次的,所以可以尝试构造一次函数.\n证明设 $f(x)=(b c-1) x-b-c+2$, 则有\n$$\n\\begin{aligned}\nf(-2) & =-2 b c-b-c+4 \\\\\n& =-2\\left(b+\\frac{1}{2}\\right)\\left(c+\\frac{1}{2}\\right)+\\frac{9}{2} .\n\\end{aligned}\n$$\n因为 $b, c \\in(-2,1)$, 所以 $b+\\frac{1}{2}, c+\\frac{1}{2} \\in\\left(-\\frac{3}{2}, \\frac{3}{2}\\right)$, 故\n$$\n\\left(b+\\frac{1}{2}\\right)\\left(c+\\frac{1}{2}\\right) \\leqslant\\left|b+\\frac{1}{2}\\right| \\cdot\\left|c+\\frac{1}{2}\\right|<\\frac{9}{4},\n$$\n从而\n$$\n\\begin{gathered}\nf(-2)=-2\\left(b+\\frac{1}{2}\\right)\\left(c+\\frac{1}{2}\\right)+\\frac{9}{2} \\\\\n>-2 \\cdot \\frac{9}{4}+\\frac{9}{2}=0, \\\\\nf(1)=b c-b-c+1=(1-b)(1-c)>0,\n\\end{gathered}\n$$\n所以, 当 $x \\in(-2,1)$ 时, $f(x)$ 恒大于 0 ,于是 $f(a)>0$, 即\n$$\na b c>a+b+c-2 \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

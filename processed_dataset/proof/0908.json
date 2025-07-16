@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例22 求二元一次函数方程:\n$$\nf(x+y)=f(x)+f(y) . \\quad\\quad (1)\n$$\n在 $(-\\infty,+\\infty)$ 内的一切单调函数的解.",
+    "solution": "解:.\n同上题可证: 对一切有理数 $r$, 有 $f(r)=a r$, 其中 $a=f(1)$. 设 $\\lambda$ 是任意无理数,则必存在有理数 $r_1 、 r_2$, 使得 $r_1<\\lambda<r_2$.\n根据题目条件, 不妨设 $f(x)$ 是单调递增的, 故\n$$\nf\\left(r_1\\right) \\leqslant f(\\lambda) \\leqslant f\\left(r_2\\right),\n$$\n即\n$$\na r_1 \\leqslant f(\\lambda) \\leqslant a r_2 .\n$$\n因为可使 $r_1 、 r_2$ 无限接近于 $\\lambda$, 故 $f(\\lambda)=a \\lambda$.\n综上所述, 对任意实数 $x$, 有 $f(x)=a x$, 其中 $a=f(1)$.\n我们用柯西方法来解稍复杂的函数方程.",
+    "remark": "",
+    "figures": []
+}

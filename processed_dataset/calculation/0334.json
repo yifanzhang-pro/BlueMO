@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 设 $2 n$ 个实数 $a_1, a_2, \\cdots, a_{2 n}$, 满足条件 $\\sum_{i=1}^{2 n-1}\\left(a_{i+1}-a_i\\right)^2=1$, 求 $\\left(a_{n+1}+\\right. \\left.a_{n+2}+\\cdots+a_{2 n}\\right)-\\left(a_1+a_2+\\cdots+a_n\\right)$ 的最大值.",
+    "solution": "当 $n=1$ 时, $\\left(a_2-a_1\\right)^2=1$, 所以 $a_2-a_1= \\pm 1$, 易知此时欲求的最大值为 1 . 当 $n \\geqslant 2$ 时, 设 $x_1=a_1, x_{i+1}=a_{i+1}-a_i, i=1,2, \\cdots, 2 n-1$, 则 $\\sum_{i=2}^{2 n} x_i^2=1$, 且 $a_k=x_1+x_2+\\cdots+x_k, k=1,2, \\cdots, 2 n$. 所以, 由柯西不等式得 $\\left(a_{n+1}+a_{n+2}+\\cdots+a_{2 n}\\right)-\\left(a_1+a_2+\\cdots+a_n\\right)=n\\left(x_1+x_2+\\cdots+\\right. \\left.x_n\\right)+n x_{n+1}+(n-1) x_{n+2}+\\cdots+x_{2 n}-\\left[n x_1+(n-1) x_2+\\cdots+x_n\\right]=x_2+ 2 x_3+\\cdots+(n-1) x_n+n x_{n+1}+(n-1) x_{n+2}+\\cdots+x_{2 n} \\leqslant \\sqrt{1^2+2^2+\\cdots+(n-1)^2+n^2+(n-1)^2+\\cdots+1^2} \\sqrt{x_2^2+x_3^2+\\cdots+x_{2 n}^2}= \\sqrt{n^2+2 \\times \\frac{(n-1) n(2(n-1)+1)}{6}}=\\sqrt{\\frac{n\\left(2 n^2+1\\right)}{3}}$, 当 $a_k=\\frac{\\sqrt{3} k(k-1)}{2 \\sqrt{n\\left(2 n^2+1\\right)}}$\n$$\n(k=1,2, \\cdots, n+1), a_{n+k}=\\frac{\\sqrt{3}\\left(n^2+2 n k-n-k^2+k\\right)}{2 \\sqrt{n\\left(2 n^2+1\\right)}}(k=2,3, \\cdots, n)\n$$\n时, 上述不等式等号成立.\n所以, $\\left(a_{n+1}+a_{n+2}+\\cdots+a_{2 n}\\right)-\\left(a_1+a_2+\\cdots+a_n\\right)$ 的最大值为 $\\sqrt{\\frac{n\\left(2 n^2+1\\right)}{3}}$.",
+    "remark": "",
+    "figures": []
+}

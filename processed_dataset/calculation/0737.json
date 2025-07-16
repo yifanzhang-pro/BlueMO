@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题10 设 $\\theta$ 是三角形中的最小内角, 且 $a \\cos ^2 \\frac{\\theta}{2}+\\sin ^2 \\frac{\\theta}{2}-\\cos ^2 \\frac{\\theta}{2}-a \\sin ^2 \\frac{\\theta}{2}= a+1$, 则 $a$ 适合的条件是 ( ).\n(A) $a<-1$\n(B) $a<-3$\n(C) $a \\leqslant-3$\n(D) $-3 \\leqslant a<-1$",
+    "solution": "C. 由原等式可知 $a \\cos \\theta-\\cos \\theta=a+1$, 所以 $\\cos \\theta=\\frac{a+1}{a-1}$, 因 $\\theta$ 为 $\\triangle A B C$ 的最小内角, 故 $0<\\theta \\leqslant 60^{\\circ}$, 所以 $\\frac{1}{2} \\leqslant \\cos \\theta<1$, 即 $\\frac{1}{2} \\leqslant \\frac{a+1}{a-1}<1$, 从而 $a \\leqslant-3$.",
+    "remark": "",
+    "figures": []
+}

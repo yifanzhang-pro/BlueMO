@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 用两种方法证明: 对一切正整数 $n$ 有 $\\sum_{i=0}^{\\left[\\frac{n}{2}\\right]} 2^{n-2 i} \\mathrm{C}_n^{n-2 i} \\mathrm{C}_{2 i}^i=\\mathrm{C}_{2 n}^n$.",
+    "solution": "(证法一) 一方面 $(1+x)^{2 n}=\\sum_{i=0}^{2 n} \\mathrm{C}_{2 n}^i x^i$ 中 $x^n$ 的系数为 $\\mathrm{C}_{2 n}^n$. 另一方面\n$(1+x)^{2 n}=\\left(1+2 x+x^2\\right)^n=\\sum_{k=0}^n \\mathrm{C}_n^{n-k}(2 x)^{n-k}\\left(1+x^2\\right)^k$, 而 $\\mathrm{C}_n^{n-k}(2 x)^{n-k}(1+ \\left.x^2\\right)^k=\\mathrm{C}_n^{n-k} 2^{n-k} x^{n-k}\\left(\\sum_{j=0}^k \\mathrm{C}_k^j x^{2 j}\\right)$ 中仅当 $k$ 为偶数时才会有 $x^n$ 的项,且当 $k=2 i$ 时, 所含 $x^n$ 的系数为 $\\mathrm{C}_n^{n-2 i} 2^{n-2 i} \\mathrm{C}_{2 i}^i$. 因 $0 \\leqslant 2 i \\leqslant n$, 故 $0 \\leqslant i \\leqslant\\left[\\frac{n}{2}\\right]$, 所以 $(1+x)^{2 n}$ 中 $x^n$ 的系数又为 $\\sum_{i=0}^{\\left[\\frac{n}{2}\\right]} \\mathrm{C}_n^{n-2 i} 2^{n-2 i} \\mathrm{C}_{2 i}^i$. 综合上述两个方面得 $\\sum_{i=0}^{\\left[\\frac{n}{2}\\right]} \\mathrm{C}_n^{n-2 i} 2^{n-2 i} \\mathrm{C}_{2 i}^i=\\mathrm{C}_{2 n}^n$.",
+    "remark": "",
+    "figures": []
+}

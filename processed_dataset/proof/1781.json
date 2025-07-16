@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题18. 设 $A B C D E F$ 是凸六边形, $\\angle B+\\angle D+\\angle F=360^{\\circ}$, 且 $\\frac{A B}{B C} \\cdot \\frac{C D}{D E} \\cdot \\frac{E F}{F A}=1$.\n证明: $\\frac{B C}{C A} \\cdot \\frac{A E}{E F} \\cdot \\frac{F D}{D B}=1$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c1a18.png>), 设点 $P$ 满足 $\\angle F E A=\\angle D E P$,\n$\\angle E F A=\\angle E D P$, 则 $\\triangle F E A \\backsim \\triangle D E P$. 于是, $\\frac{F A}{E F}=\\frac{D P}{D E} \\cdots$ (1), $\\frac{E F}{E D}=\\frac{E A}{E P} \\cdots$ (2). 由已知条件, 有 $\\angle A B C=\\angle P D C$. 又由 (1) 及已知条件得 $\\frac{A B}{B C}= \\frac{D E \\cdot F A}{C D \\cdot E F}=\\frac{D P}{C D} \\cdots$ (3). 所以, $\\triangle A B C \\backsim \\triangle P D C$, 故 $\\angle B C A=\\angle D C P$, 且 $\\frac{C B}{C D}=\\frac{C A}{C P}$. 因为 $\\angle F E D=\\angle A E P$, 由 (2) 知 $\\triangle F E D \\backsim \\triangle A E P$, 类似地, 由 $\\angle B C D=\\angle A C P$ 及 (3) 得 $\\triangle B C D \\backsim \\triangle A C P$. 于是 $\\frac{F D}{E F}=\\frac{P A}{A E}, \\frac{B C}{D B}=\\frac{C A}{P A}$. 两式相乘, 即得所求.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1a18.png"
+    ]
+}

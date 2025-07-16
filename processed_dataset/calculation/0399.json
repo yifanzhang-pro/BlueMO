@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 在 $(1,2, \\cdots, n)$ 的一个排列 $\\left(a_1, a_2, \\cdots, a_n\\right)$ 中, 如果 $a_i \\neq i(i= 1,2, \\cdots, n$ ), 则称这种排列为一个错位排列 (也称更列). 求错位排列的个数 $D_n$.",
+    "solution": "解:设 $(1,2, \\cdots, n)$ 的所有排列组成集合 $I$, 并将 $I$ 中满足条件 $a_i=i$ 的排列全体记为 $A_i$. 显然 $D_n=\\left|\\overline{A_1} \\cap \\overline{A_2} \\cap \\cdots \\cap \\overline{A_n}\\right|$. 易知\n$$\n|I|=\\mathrm{P}_n^n=n !,\\left|A_i\\right|=\\mathrm{P}_{n-1}^{n-1}=(n-1) !(1 \\leqslant i \\leqslant n),\n$$\n同理, 对 $1 \\leqslant i_1<i_2<\\cdots<i_s \\leqslant n$ 可得\n$$\n\\left|A_{i_1} \\cap A_{i_2} \\cap \\cdots \\cap A_{i_s}\\right|=\\mathrm{P}_{n-s}^{n-s}=(n-s) ! .\n$$\n由容斥原理得\n$$\n\\begin{aligned}\nD_n & =|I|-\\sum_{i=1}^n\\left|A_i\\right|+\\sum_{1 \\leqslant i<j \\leqslant n}\\left|A_i \\cap A_j\\right|-\\cdots+(-1)^n\\left|A_1 \\cap A_2 \\cap \\cdots \\cap A_n\\right| \\\\\n& =\\sum_{k=0}^n(-1)^k \\mathrm{C}_n^k(n-k) !=\\sum_{k=0}^n(-1)^k \\frac{n !}{k !}=n ! \\sum_{k=0}^n \\frac{(-1)^k}{k !}\n\\end{aligned}\n$$",
+    "remark": "注:本题是 \"错位排列\"计数问题.\n由于所设的集合 $A_i$ 恰好含有那些需被排除的排列, 且每个 $\\left|A_{i_1} \\cap A_{i_2} \\cap \\cdots \\cap A_{i_s}\\right|$ 都很容易计算, 故采用容质原理计数条理清晰, 确保不重复不遗漏.",
+    "figures": []
+}

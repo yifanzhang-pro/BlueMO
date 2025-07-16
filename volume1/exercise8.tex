@@ -1,0 +1,312 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1 在 $n \times n$ 的正方形表格中, 写上非负整数.
+如果在某一行和某一列的交汇处的数是 0 , 那么该行和该列上所填各数之和不小于 $n$. 证明: 表中所有数的和不小于 $\frac{1}{2} n^2$.
+%%<SOLUTION>%%
+计算 $n$ 行和 $n$ 列中每一行和每一列所有各方格的数的和, 这 $2 n$ 个和中一定有一个最小的.
+设某一行的各数之和最小, 且设这个和为 $k$, 则这行就有不少于 $n-k$ 个 0 . 现在考察包括这些零的列, 由于 0 所在的行与列的各数的和不小于 $n$, 则此零所在列的数之和不小于 $n-k$, 而位于其他任何一列的数的和不小于 $k$. 所以, 表中各数之和 (设为 $S$ ) 为 $S \geqslant(n-k)(n-k)+k \cdot k= n^2-2 k n+2 k^2=\frac{n^2}{2}+2\left(k-\frac{n}{2}\right)^2 \geqslant \frac{n^2}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2 设 $k>1$ 为自然数, 试证不能在 $k \times k$ 的方格表中填人数 $1,2, \cdots, k^2$, 使得每行和每列数之和都是 2 的方幕.
+%%<SOLUTION>%%
+若不然, 设将 $1,2, \cdots, k^2$ 填人表格后最小的行和是 $2^a$, 则有 $2^a \geqslant 1+2+\cdots+k=\frac{1}{2} k(k+1)$. 因为表中所有数之和为 $1+2+\cdots+k^2= \frac{1}{2} k^2\left(k^2+1\right)$, 故应有 $2^a \mid \frac{1}{2} k^2\left(k^2+1\right)$. 当 $k$ 为奇数时, $\frac{1}{2} k^2\left(k^2+1\right)$ 亦为奇数, 当然不能被 $2^a$ 整除; 当 $k$ 为偶数时, $k^2+1$ 为奇数, 于是应有 $2^a \mid \frac{1}{2} k^2$. 但这时又有 $\frac{1}{2} k^2<\frac{1}{2} k(k+1) \leqslant 2^a$, 矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3 设 $S$ 是一个非空点集, 它的所有点都是整点.
+此外, 还给定一组有限多个有整数坐标的非零向量组.
+已知当将向量组中的所有向量的起点都放在 $S$ 中的任一点时, 它们的终点中属于 $S$ 的比不属于 $S$ 的多.
+求证: $S$ 必为无穷点集.
+%%<SOLUTION>%%
+设 $S$ 为有限点集, 于是其中必有两点 $A$ 和 $B$, 使 $A$ 的纵坐标是所有点的纵坐标中最大的, 且在纵坐标同为最大的所有点中, $A$ 的横坐标最大; $B$ 的纵坐标是所有点的纵坐标中最小的, 且在纵坐标同为最小的所有点中, $B$ 的横坐标最小.
+首先把给定的所有向量的起点都放在点 $A$, 按已知, 满足 $y>0$ 和 $y=0 、 x>0$ 的向量少于半数.
+然后再把所有向量都放在点 $B$, 又知 $y<0$ 和 $y=0 、 x<0$ 的向量也少于半数,矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4 一次 10 名选手参加的循环赛中无平局, 胜者得 1 分,负者得 0 分.
+证明: 各选手得分的平方和不超过 285 .
+%%<SOLUTION>%%
+由于得分的情况仅有有限多种, 其中必有一种的平方和取最大值.
+这时各选手的得分 $p_1, p_2, \cdots, p_{10}$ 必互不相同, 因为若 $p_i=p_j$, 则改变选手 $i$ 与 $j$ 之间的胜负, 即用 $p_i-1 、 p_j+1$ 来代替 $p_i 、 p_j$ 时, 由于 $\left(p_i-1\right)^2+ \left(p_j+1\right)^2-\left(p_i^2+p_j^2\right)=2>0$, 而平方和中其他项不变, 故平方和严格增大, 这与平方和已取得最大值矛盾.
+于是, 在 $p_i=i-1(i=1,2, \cdots, 10)$ 时, $\sum_{i=1}^{10} p_i^2$ 最大, 这时的值 $\sum_{i=0}^9 i^2=285$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5 设 $n$ 为大于 1 的整数, 全部正因数为 $d_1, d_2, \cdots, d_k$, 其中 $1=d_1<d_2<\cdots<d_k=n$, 记
+$$
+D=d_1 d_2+d_2 d_3+\cdots+d_{k-1} d_k .
+$$
+(1) 证明: $D<n^2$;
+(2) 确定所有的 $n$, 使得 $D$ 能整除 $n^2$.
+%%<SOLUTION>%%
+(1) 注意到, 若 $d$ 为 $n$ 的因子, 则 $\frac{n}{d}$ 也是 $n$ 的因子.
+于是, $D= \sum_{1 \leqslant i \leqslant k-1} d_i d_{i+1}=n^2 \sum_{1 \leqslant i \leqslant k-1} \frac{1}{d_i d_{i+1}} \leqslant n^2 \sum_{1 \leqslant i \leqslant k-1}\left(\frac{1}{d_i}-\frac{1}{d_{i+1}}\right)<\frac{n^2}{d_1}=n^2$.
+(2) 设 $p$ 为 $n$ 的最小素因子, 则 $d_2=p, d_{k-1}=\frac{n}{p}, d_k=n$. 若 $n=p$, 则 142 $k=2, D=p, D \mid n^2$. 若 $n$ 为合数, 则 $k>2, D>d_{k-1} d_k=\frac{n^2}{p}$. 如果 $D \mid n^2$, 则 $\frac{n^2}{D}$ 为 $n^2$ 的因子, 但 $1<\frac{n^2}{D}<p$. 由于 $p$ 为 $n^2$ 的最小素因子, 上式不能成立.
+故若 $D \mid n^2$, 则 $n$ 为素数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6 设 $0 \leqslant x_i \leqslant 1, i=1,2, \cdots, n, n \geqslant 2$. 求证: 存在 $i$ 满足 $1 \leqslant i \leqslant n-1$, 且
+$$
+x_i\left(1-x_{i+1}\right) \geqslant \frac{1}{4} x_1\left(1-x_n\right) .
+$$
+%%<SOLUTION>%%
+令 $x_k=a=\max \left\{x_1, x_2, \cdots, x_n\right\}, x_t=b=\min \left\{x_1, x_2, \cdots, x_n\right\}$.
+如果 $x_2 \leqslant \frac{1+b}{2}$, 则 $x_1\left(1-x_2\right) \geqslant x_1\left(1-\frac{1+b}{2}\right)=\frac{1}{2} x_1(1-b) \geqslant \frac{1}{4} x_1\left(1-x_n\right)$. 从而取 $i=1$ 即可.
+如果 $x_2>\frac{1+b}{2}$, 由于 $\frac{a}{2} \leqslant \frac{1+b}{2}$ 且 $x_t=b \leqslant \frac{1+b}{2}$, 所以有以下两种情况:
+(i) $x_1=b, x_2>\frac{1+b}{2}, \cdots, x_n>\frac{1+b}{2}$. 令 $x_m=\min \left\{x_2, \cdots, x_n\right\}$, 其中 $2 \leqslant m \leqslant n$, 显然 $x_{m-1}\left(1-x_m\right) \geqslant x_1\left(1-x_n\right) \geqslant \frac{1}{4} x_1\left(1-x_n\right)$.
+(ii) 存在 $2 \leqslant i \leqslant n-1$, 使得 $x_i>\frac{1+b}{2}, x_{i+1} \leqslant \frac{1+b}{2}$, 于是$x_i\left(1-x_{i+1}\right) \geqslant \frac{1+b}{2}\left(1-\frac{1+b}{2}\right) \geqslant \frac{a}{4}(1-b) \geqslant \frac{1}{4} x_1\left(1-x_n\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7 已知集合 $M$ 的元素都是整数,既有正整数又有负整数,且当 $a, b \in M$ 时, $2 a$ 和 $a+b$ 也属于 $M$. 求证: 当 $a, b \in M$ 时, $a-b \in M$.
+%%<SOLUTION>%%
+首先, 用归纳法容易证明, 若 $c \in M$, 则对任意 $n \in Z$, 都有 $n c \in M$.
+设 $a>0$ 是集合 $M$ 中的最小正整数, $b<0$ 是 $M$ 中的最大负整数, 即绝对值最小的负整数.
+按已知, $a+b \in M$, 且满足不等式 $b<a+b<a$. 由 $a$ 和 $b$ 的极端性知 $a+b=0$. 因此, $0 \in M$, 且有 $b=-a$. 这样一来, 对任何 $a \in M, n \in \mathrm{Z}$, 都有 $n a \in M$.
+我们断言, 集合 $M$ 中除了 $a$ 的整数倍以外, 不含任何其他元素.
+若不然, 设有 $x \in M$ 且有 $m a<x<(m+1) a, m \in \mathbf{Z}$. 记 $x=m a+r, 0<r<a$, $r \in \mathbf{N}$. 这时 $r=x+(-m) a \in M$, 此与 $a$ 的最小性矛盾.
+这样一来, $M=\{n a \mid n \in \mathbf{Z}\}$. 由于 $M$ 中任意两数之差仍是 $a$ 的整数倍, 当然仍在 $M$ 之中.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8 证明: 方程
+$$
+x^2+y^2=3\left(z^2+u^2\right)
+$$
+不存在正整数解 $(x, y, z, u)$.
+%%<SOLUTION>%%
+假设这个方程有正整数解 $x 、 y 、 z 、 u$. 考虑 $x$ 与 $y$ 的平方和 $x^2+y^2$. 由于 $x^2+y^2$ 是正整数, 则在所有的 $x^2+y^2$ 中必有一个最小的, 我们考虑使 $x^2+y^2$ 最小的那组正整数解 $(x, y, z, u)$.
+由于 $x^2+y^2$ 是 3 的倍数, 则 $x$ 和 $y$ 必都能被 3 整除.
+设 $x=3 m, y=3 n$, 其中 $m 、 n$ 都是正整数.
+从而有 $9 m^2+9 n^2=3\left(z^2+u^2\right), z^2+u^2= 3\left(m^2+n^2\right)$. 此时, $z 、 u 、 x 、 y$ 也是方程的一组解, 而由已知方程可知 $z^2+ u^2<x^2+y^2$, 这与 $x^2+y^2$ 为最小矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9 已知 3 所学校中的每所都有 $n$ 名学生, 且任何 1 名学生认识其他两所学校的学生总数都是 $n+1$, 求证: 可以从每所学校各选 1 名学生, 使得这 3 名学生彼此都相识.
+%%<SOLUTION>%%
+设 $A$ 是 $3 n$ 名学生中认识另一所学校中的学生数最大的一名学生.
+不妨设 $A$ 是第 1 所学校的学生, 他认识第 2 所学校中的 $k$ 名学生, $k \geqslant \frac{1}{2}(n+1)$. 于是 $A$ 认识第 3 所学校中的 $n+-1-k$ 名学生.
+因为 $k \leqslant n$, 故 $n+1-k \geqslant 1$.
+考察第 3 所学校里认识 $A$ 的学生 $B$. 如果 $B$ 认识第 2 所学校中认识 $A$ 的某学生 $C$, 则 $A, B, C$ 即为所求.
+如果第 2 所学校中认识 $A$ 的 $k$ 名学生都不认识 $B$, 则 $B$ 至多认识这所学校中的 $n-k$ 名学生, 从而 $B$ 至少认识第 1 所学校中的 $(n+1)-(n-k)=k+1$ 名学生, 此与 $k$ 的最大性矛盾.
+可见必有 3 名学生满足要求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10 求所有的非空有限的正整数集 $S$, 使得对任意 $i, j \in S$, 数 $\frac{i+j}{(i, j)} \in S$, 这里 $(i, j)$ 表示 $i$ 与 $j$ 的最大公约数.
+%%<SOLUTION>%%
+设 $S$ 为满足条件的集合, 并设 $a \in S$, 则 $\frac{a+a}{(a, a)}=2 \in S$, 如果 $1 \in S$, 则 $\frac{1+2}{(1,2)}=3 \in S$. 一般地, 设 $n \in S$, 则 $\frac{n+1}{(n, 1)}=n+1 \in S$. 这表明 $S=\mathbf{N}^*$, 与 $S$ 为有限集矛盾.
+另一方面, 若 $S$ 中有大于 2 的元素, 取这些元素中的最小元素, 设为 $n$, 则 $\frac{n+2}{(2, n)} \in S$. 若 $(2, n)=2$, 则 $2<\frac{n+2}{2}<n$, 这与 $n$ 为 $S$ 中比 2 大的最小元素矛盾, 故 $(2, n)=1$. 因此, $n+2 \in S$. 进一步, $\frac{n+(n+2)}{(n, n+2)}=2 n+2 \in S$, $\frac{n+(2 n+2)}{(n, 2 n+2)}=3 n+2 \in S$, 依此类推, 可知对任意 $k \in \mathbf{N}^*$, 数 $k n+2 \in S$, 与 $S$ 为有限集矛盾.
+综上可知, $S=\{2\}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11 在平面上任给 $2 n$ 个点, 其中任意三点不共线, 并把其中 $n$ 个点染成红色, $n$ 个点染成蓝色.
+求证: 可以一红一蓝地把它们连成 $n$ 条线段,使这些线段互不相交.
+%%<SOLUTION>%%
+因为总共只有 $2 n$ 个点, 将红点与蓝点一一配对的方法只有有限种.
+对于每一种配对方法, 都会得到这 $n$ 条线段的长度和, 这种和数只有有限个(其实不超过 $1 \cdot 2 \cdot \cdots \cdot n$ 个), 其中必有一个是最小的.
+下面来证明, 这时候这 $n$ 条线段是互不相交的.
+假定此时有两条线段 $R_1 B_1$ 和 $R_2 B_2$ 相交, 其中 $R_1 、 R_2$ 是红点, $B_1 、 B_2$ 是蓝点, 设它们的交点为 $P$ (如图(<FilePath:./figures/fig-c8p11.png>)). 由于 $R_1 B_2+R_2 B_1<\left(R_1 P+P B_2\right)+\left(R_2 P+P B_1\right)= R_1 B_1+R_2 B_2$, 所以, 当我们将 $R_1$ 与 $B_2$ 配对, $R_2$ 与 $B_1$ 配对, 其他的保持不变时, $n$ 条线段的长度和就减少了, 矛盾.
+因此, 这时候 $n$ 条线段是互不相交的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12 平面上有 $n$ 个点,其中任意三点不共线,且任意三点构成的三角形的面积都小于 1 . 证明: 存在一个面积小于 4 的三角形包含这 $n$ 个点.
+%%<SOLUTION>%%
+取 $n$ 个点中任意三点作一个三角形, 三角形的个数是有限的, 每一个三角形都有一个面积, 取其中面积最大的一个记为 $\triangle A_1 A_2 A_3$. 由于每个三角形的面积都小于 1 , 所以 $S_{\triangle A_1 A_2 A_3}<1$. 过顶点 $A_1 、 A_2 、 A_3$ 分别作对边的平行线, 得到一个 $\triangle A B C$, 如图(<FilePath:./figures/fig-c8p12.png>)所示.
+显然 $S_{\triangle A B C}=4 S_{\triangle A_1 A_2 A_3}<4$.
+下面证明 $\triangle A B C$ 包含了这 $n$ 个点.
+用反证法.
+设 $\triangle A B C$ 外还有这 $n$ 个点中的一点, 设为 $A_4$, 则$S_{\triangle A_4 A_3 A_1}>S_{\triangle A_2 A_3 A_1}$, 这与$\triangle A_1 A_2 A_3$最大矛盾.
+于是 $\triangle A B C$ 即为所求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 20 个足球队参加全国冠军赛, 问最少应该进行多少场比赛,才能使得任何 3 个队中总有两个队彼此比赛过?
+%%<SOLUTION>%%
+设进行了 $m$ 场比赛后, 任何 3 队中都已有两队彼此比赛过.
+设 $A$ 队是所有球队参赛场次最少的一个球队, 它共参赛 $k$ 场.
+于是已经与 $A$ 队比赛过的队至少进行了 $k$ 场比赛.
+没与 $A$ 赛过的 $19-k$ 个队中的任何两队之间都得赛一场, 否则存在 3 个队, 其中任何两队都未彼此赛过.
+于是有 $2 m \geqslant(k+ 1) k+2 \mathrm{C}_{19-k}^2=2(k-9)^2+180 \geqslant 180$. 这意味着至少进行 90 场比赛.
+另一方面, 将 20 个球队均分成两组, 每组内的任何两队之间比赛一场, 不同组的任何两队之间不赛, 则共进行了 90 场比赛.
+由于任何 3 个队中总有两个队在一组, 它们之间已经进行了一场比赛, 故知这种安排满足题中要求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14 设有 $n$ 个人 $A_1, A_2, \cdots, A_n$, 其中有些人相互认识.
+证明: 可用适当方式把他们分成两组,使每人都至少有一半熟人不跟他在同一组.
+%%<SOLUTION>%%
+设 $A_i(i=1,2, \cdots, n)$ 有 $c_i$ 个熟人, 其中有 $d_i$ 个不与 $A_i$ 同组.
+这里$d_i$ 是随分组变化而变化的.
+本题相当于证明: 存在一个适当的分组法, 使得对一切 $i=1,2, \cdots, n$, 有 $d_i \geqslant \frac{1}{2} c_i$.
+由于总人数只有有限多个, 分组方法也只有有限多种, 从而和 $d_1+ d_2+\cdots+d_n$ 也只有有限多个不同的值.
+于是, 必存在某种分组法, 使上面的和取得最大值, 记这个最大值为 $d$. 下面证明: 使 $d_1+d_2+\cdots+d_n$ 最大的分组方法符合要求.
+否则, 对这种分组法存在某个人, 不妨设为甲组的 $A_1$, 他在乙组的熟人数 $d_1<\frac{1}{2} c_1$. 于是, $A_1$ 在甲组中的熟人数为 $c_1-d_1$. 现把 $A_1$ 从甲组调人乙组, 其余的人不动.
+对这个重新分组, $d_2, d_3, \cdots, d_n$ 都末变, 这时, $A_1$ 在甲组的熟人数 $c_1-d_1$ 变为与他不同组的熟人数, 从而 $d_1$ 变为 $c_1-d_1$. 这时有 $\left(c_1-d_1\right)+d_2+\cdots+d_n=c_1-d_1+d-d_1=d+\left(c_1-2 d_1\right)>d$, 这与 $d$ 是最大值矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15 平面上有若干个圆,它们所盖住的面积为 1 . 证明: 一定可以从这些圆中去掉一部分圆,使得余下的圆互不相交,且它们所覆盖的面积不小于 $\frac{1}{9}$.
+%%<SOLUTION>%%
+显然应尽可能地保留些大圆而去掉小圆, 为此, 将这些圆适当 “排序”. 设这若干个圆中最大的一个是 $\odot O_1$, 其半径为 $r_1$, 则与 $\odot O_1$ 相交的所有圆必落在以 $O_1$ 为圆心, $3 r_1$ 为半径的圆内.
+因此, $\odot O_1$ 的面积不小于这组圆所覆盖面积的 $\frac{1}{9}$. 去掉与 $\odot O_1$ 相交的所有圆, 余下的圆与 $\odot O_1$ 不相交, 再设这些圆中除 $\odot O_1$ 外最大的一个是 $\odot O_2$, 仿上讨论知 $\odot O_2$ 的面积不小于所有与 $\odot O_2$ 相交的一组圆所覆盖面积的 $\frac{1}{9}$. 去掉与 $\odot O_2$ 相交的所有圆, …... 如此继续, 直到 $\odot O_1, \odot O_2, \cdots, \odot O_n$ 它们彼此都不相交, 且面积都不小于与自己相交的那一组圆面积的 $\frac{1}{9}$ (它们中的某几个也可能一开始就不与任何一个圆相交而被保留下来). 所以, 它们所覆盖的面积不小于总覆盖面积的 $\frac{1}{9}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16 证明: 不存在整数 $x 、 y 、 z$, 满足
+$$
+2 x^4+2 x^2 y^2+y^4=z^2, x \neq 0 .
+$$
+%%<SOLUTION>%%
+因为 $x \neq 0$, 显然有 $y \neq 0$. 不失一般性, 假定 $x 、 y$ 是题设方程的整数解, 且满足 $x>0, y>0$, 及 $(x, y)=1$, 我们还可以进一步假定 $x$ 是满足上述条件的最小的整数解.
+由于 $z^2 \equiv 0,1,4(\bmod 8)$, 可知 $x$ 是偶数, 而 $y$ 是奇数.
+注意到 $x^4+ \left(x^2+y^2\right)^2=z^2$, 及 $\left(x^2, x^2+y^2\right)=1$, 故存在一个奇整数 $p$ 和偶整数 $q$, 使得 $x^2=2 p q, x^2+y^2=p^2-q^2$ 及 $(p, q)=1$. 由此易证, 存在一个整数 $a$ 与奇数 $b$, 使得 $p=b^2, q=2 a^2$. 故 $x=2 a b, y^2=b^4-4 a^4-4 a^2 b^2$.
+注意到 $\left(\frac{2 a^2+b^2+y}{2}\right)^2+\left(\frac{2 a^2+b^2-y}{2}\right)^2=b^4$ 及 $\left(\frac{2 a^2+b^2+y}{2} \frac{2 a^2+b^2-y}{2}\right)=1$. 故存在整数 $s 、 t$, 其中 $s>t,(s, t)=1$, 使得 $\frac{2 a^2+b^2+y}{2}= 2 s t, \frac{2 a^2+b^2-y}{2}=s^2-t^2$, 或 $\frac{2 a^2+b^2+y}{2}=s^2-t^2, \frac{2 a^2+b^2-y}{2}=2 s t$, 及 $b^2=s^2+t^2$. 易知 $a^2=(s-t) t$.
+由于 $(a, b)=1,(s, t)=1$, 故存在正整数 $m 、 n((m, n)=1)$, 使得 $(s-t)=m^2, t=n^2$. 因此, $b^2=n^4+\left(n^2+m^2\right)^2$. 而 $x=2 a b>t=n^2 \geqslant n$, 这与 $x$ 是最小解的假定矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17 设 $x_1, x_2, \cdots, x_n$ 都是非负实数, $a$ 是它们中的最小值, 记 $x_{n+1}= x_1$. 求证:
+$$
+\sum_{j=1}^n \frac{1+x_j}{1+x_{j+1}} \leqslant n+\frac{1}{(1+a)^2} \sum_{j=1}^n\left(x_j-a\right)^2 .
+$$
+其中等号成立当且仅当 $x_1=x_2=\cdots=x_n$.
+%%<SOLUTION>%%
+用归纳法.
+当 $n=1$ 时要证的不等式显然成立.
+设当 $n=k$ 时结论成立.
+当 $n=k+1$ 时, 由轮换对称性, 不妨设 $x_{k+1}$ 最大.
+于是由归纳假设可得
+$$
+\sum_{j=1}^{k-1} \frac{1+x_j}{1+x_{j+1}}+\frac{1+x_k}{1+x_1} \leqslant k+\frac{1}{(1+a)^2} \sum_{j=1}^k\left(x_j-a\right)^2 .
+$$
+由(1)可知, 为证原不等式, 只需证
+$$
+\frac{1+x_k}{1+x_{k+1}}+\frac{1+x_{k+1}}{1+x_1}-\frac{1+x_k}{1+x_1} \leqslant 1+\frac{1}{(1+a)^2}\left(x_{k+1}-a\right)^2 .
+$$
+即
+$$
+\frac{\left(x_{k+1}-x_k\right)\left(x_{k+1}-x_1\right)}{\left(1+x_{k+1}\right)\left(1+x_1\right)} \leqslant \frac{1}{(1+a)^2}\left(x_{k+1}-a\right)^2 .
+$$
+由于 $a=\min \left\{x_1, x_2, \cdots, x_{k+1}\right\}, x_{k+1}=\max \left\{x_1, x_2, \cdots, x_{k+1}\right\}$, 显然(2) 成立.
+这就证明了当 $n=k+1$ 时要证的不等式成立.
+而且为使 $n=k+1$ 时要证的不等式中的等号成立, 当且仅当(1)和(2)中的等号成立.
+由归纳假设 (1)中等号成立的充要条件是 $a=x_1=x_2=\cdots=x_k$. 从而(2)中等号成立的充要条件是 $x_{k+1}=a$. 故当 $n=k+1$ 时, 原不等式中等号成立当且仅当 $x_1= x_2=\cdots=x_{k+1}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题18 设 $S=\{-(2 n-1),-(2 n-2), \cdots,-1,0,1,2, \cdots, 2 n-1\}$, 求证： $S$ 的任一个 $2 n+1$ 元的子集中必有 3 个数之和为零.
+%%<SOLUTION>%%
+若不然, 则存在 $S$ 的一个 $2 n+1$ 元的子集 $H$, 其中任何 3 个数之和都不为零.
+(1) 首先证明, $0 \notin H$. 如果 $0 \in H$, 则其余的 $2 n$ 个整数分属于如下 $2 n-1$ 个数对: $(-i, i), i=1,2, \cdots, 2 n-1$. 由抽屈原理知其中必有一对的两个数都属于 $H$. 二者加上 0,3 数之和为零, 矛盾.
+(2) 设 $H$ 中绝对值最小的元素为 $d$, 不妨设 $d>0$. 令 $H^{+}=\{x \mid x \in H, x>d\}, H^{-}=\{x \mid x \in H, x<-d\}, H^{+-}=\left\{d-x \mid x \in H^{+}\right\}, H^{-+}= \left\{-d-x \mid x \in H^{-}\right\}$. 显然, 这些集都不是空集且由反证假设知 $H^{+} \cap H^{-+}= \varnothing$. (i)
+若 $-d \notin H$, 则由 (i) 有 $2 n-1 \geqslant\left|H^{+} \cup H^{-+}\right|=\left|H^{+}\right|+\left|H^{-+}\right|=2 n$, 矛盾.
+故必有 $-d \in H$. 于是 $H^{-} \cap H^{+-}=\varnothing$ 及 $\left|H^{+}\right|+\left|H^{-+}\right|=\left|H^{+-}\right|+ \left|H^{-}\right|=2 n-1$. 故有 $H^{+} \cup H^{-+}=\{1,2, \cdots, 2 n-1\}, H^{-} \cup H^{+-}=\{-1,-2, \cdots,-(2 n-1)\}$. (ii)
+将 $H^{+} 、 H^{-}$中各数之和分别记为 $h^{+}$和 $h^{-}$, 则 $H^{+-}$和 $H^{-+}$中各数之和分别为 $\left|H^{+}\right| \cdot d-h^{+}$和 $-\left|H^{-}\right| \cdot d-h^{-}$. 于是由 (ii) 便得 $h^{+}+h^{-}+\left|H^{+}\right| \cdot d-h^{+}-\left|H^{-}\right| \cdot d-h^{-}=0,\left(\left|H^{+}\right|-\left|H^{-}\right|\right) d=0$. 因 $\left|H^{+}\right|+\left|H^{-}\right|=2 n-1$, 故 $\left|H^{+}\right|-\left|H^{-}\right|$为奇数, 故得 $d=0$, 矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题19 某市有 $n$ 所中学, 第 $i$ 所中学派出 $c_i$ 名学生到体育馆观看球赛.
+已知 $0 \leqslant c_i \leqslant 39, i=1,2, \cdots, n, c_1+c_2+\cdots+c_n=1990$, 看台的每一横排有 199 个座位.
+要求同一学校的学生必须坐在同一横排, 问体育馆最少要安排多少横排才能保证全部学生都能按要求人座?
+%%<SOLUTION>%%
+由于 $c_i \leqslant 39$, 故每一横排至少可坐 160 人.
+于是只要有 13 排, 至少可坐 $160 \times 13=2080$ 人, 当然能坐下全部 1990 名学生.
+下面证明只要安排 12 个横排就够了.
+由于 $c_1, c_2, \cdots, c_n$ 只有有限多个, 故它们的不超过 199 的有限和也只有有限多个.
+选取其中最接近 199 的有限和, 记为 $c_{i_1}+c_{i_2}+\cdots+c_{i_k}$, 将这 $k$ 个学校的学生安排在第一排就坐.
+然后再对其余的诸 $c_i$ 人进行同样的讨论并选取不超过 199 且最接近 199 的有限和, 并把相应的学校的学生排在第二排.
+依此类推,一直排到第十排并记第 $i$ 排的空位数为 $x_i, i=1,2, \cdots, 12$.
+如果 $x_{10} \geqslant 33$, 则余下的未就坐的学校的学生数 $c_i$ 全都不小于 34 . 若余下的学校数不多于 4 个, 则只要 11 排就够了.
+若余下的学校数不少于 5 个, 则可任取 5 个学校的学生安排在第 11 排.
+这时有 $x_{11} \leqslant 29<x_{10}$, 此与 $x_{10}$ 的最小性矛盾.
+如果 $x_{10} \leqslant 32$, 则前 10 排的空位总数 $x_1+x_2+\cdots+x_{10} \leqslant 10 x_{10} \leqslant 320$, 亦即前 10 排已至少坐了 1670 人, 未安排就坐的学生至多还有 320 人.
+每排至少可坐 160 人, 故只要有 12 排就够了.
+最后, 考察只有 11 排的情形.
+这时, 只容许有 199 个空位.
+为了安排下全部学生, 每排空位平均不能达到 19 个.
+设 $n=80$, 前 79 个学校各出学生 25 人,最后一个学校派 15 人, 则共有 1990 人.
+但安排座位时, 除了一排可坐 $25 \times 7+15=190$ 人外, 其余 10 排每排至多能安排 7 个学校的 175 人.
+故 11 排至多安排 1940 人就坐.
+这说明只有 11 排座位是不够的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题20 试求所有的正整数 $n>1$, 使得 $\frac{2^n+1}{n^2}$ 是整数.
+%%<SOLUTION>%%
+显然数 $n$ 为正奇数, 于是我们只需考虑 $n \geqslant 3$ 且 $n$ 为奇数的情况.
+设 $p$ 是 $n$ 的最小素因数, 则 $p \geqslant 3, p \mid 2^n+1$. 令 $i$ 是使 $p \mid 2^i+1$ 成立的最小正整数, 我们将证明 $1 \leqslant i<p-1$. 若 $i \geqslant p-1$, 则可设 $i=(p-1) t+r$, $0 \leqslant r<p-1, r, t \in \mathbf{Z}$. 由费马小定理可知 $p \mid 2^{p-1}-1$. 于是 $2^r\left(2^{p-1}\right)^t \equiv 2^r (\bmod p), 2^i+1=\left(2^{p-1}\right)^t \cdot 2^r+1 \equiv 2^r+1(\bmod p)$. 故由 $p \mid 2^i+1$ 即知 $p \mid 2^r+1$. 这与 $i$ 是使 $p \mid 2^i+1$ 成立的最小正整数相矛盾.
+令 $n=i a+r_1, 0 \leqslant r_1<i$, 则 $2^n+1=2^{i a+r_1}+1=\left(2^i+1-1\right)^a \cdot 2^{r_1}+ 1 \equiv(-1)^a \cdot 2^{r_1}+1(\bmod p)$. 由 $p \mid 2^n+1$ 得 $p \mid(-1)^a \cdot 2^{r_1}+1$. 若 $2 \mid a$, 即 $a$ 是偶数, 则 $p \mid 2^{r_1}+1$, 由 $r_1<i$, 与 $i$ 的意义相矛盾.
+此时只有 $r_1=0$. 若 $2 \nmid a$, 则由 $p \mid-2^{r_1}+1$ 知 $p \mid 2^{r_1}-1$. 若 $r_1>0$, 可令 $i=r_1+b, 1 \leqslant b<i$, 于是由 $2^i+1=\left(2^{r_1}-1\right) \cdot 2^b+2^b+1$ 得 $p \mid 2^b+1$. 这又与 $i$ 的意义相矛盾, 此时也有 $r_1=0$. 于是 $n=i a$, 即 $i \mid n$, 但 $p$ 是 $n$ 的最小素因数, 且 $1 \leqslant i<p-1$, 因而 $i=1$. 又由 $p \mid 2^i+1$ 可得 $p=3$. 于是可以把 $n$ 写成 $n=3^m c, m \geqslant 1,(c, 3) =1$,$2 \nmid c$.
+现在证明 $m=1$. 若 $m \geqslant 2$, 则由 $n^2 \mid 2^n+1$, 可知 $3^{2 m} \mid 2^n+1$. 于是由 $2^n+ 1=(3-1)^n+1 \equiv 3 n-\sum_{k=2}^{2 m-1}(--1)^k C_n^k 3^k\left(\bmod 3^{2 m}\right) .3^{2 m} \mid 3 n-\sum_{k=2}^{2 m-1}(-1)^k C_n^k 3^k$. (i) 
+设 $k$ ! 中的 3 的最高次幂为 $\alpha$, 则 $\alpha=\sum_{s=1}^{\infty}\left[\frac{k}{3^s}\right]<\sum_{s=1}^{\infty} \frac{k}{3^s}=\frac{\frac{k}{3}}{1-\frac{1}{3}}=\frac{k}{2}$. 若 $3^k \mathrm{C}_n^k$ 中的 3 的最高次幂为 $\beta$, 则当 $k \geqslant 2$ 时, 有 $\beta>k+m-\frac{k}{2} \geqslant m+1$. 若 $\beta \geqslant m+2$, 则 $3^{m+2} \mid 3^k \mathrm{C}_n^k$. 注意到 $m \geqslant 2$, 所以有 $2 m \geqslant m+2$. 于是由 (i) 知, $3^{m+2} \mid 3 n$. 进而 $3^{m+1} \mid n$. 这与 $(c, 3)=1$ 矛盾.
+从而证明了 $m=1$, 即 $n=3 c$, $(c, 3)=1$.
+设 $c>1$, 而 $q$ 是 $c$ 的最小素因数, 显然有 $q \geqslant 5$, 且 $q \mid 2^n$. 类似地, 令 $j$ 为使 $q \mid 2^j+1$ 成立的最小正整数, 则必有 $1 \leqslant j<q-1$. 进而又可证明 $j \mid n$. 因而由素数 $q$ 的定义及 $j<q-1$ 可知 $j \in\{1,3\}$. 于是由 $q \mid 2^j+1$ 得 $q=3$, 这与 $q \geqslant 5$ 矛盾.
+因而 $c=1$. 所以 $n=3$.
+可以验证 $3^2 \mid 2^3+1$. 于是, 满足要求的正整数 $n$ 只有 $n=3$.
+%%PROBLEM_END%%
+
+

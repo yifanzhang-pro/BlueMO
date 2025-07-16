@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题29. 求实数 $a$ 的取值范围, 使得对任意实数 $x$ 和任意 $\\theta \\in\\left[0, \\frac{\\pi}{2}\\right]$, 恒有 $(x+$\n$$\n3+2 \\sin \\theta \\cdot \\cos \\theta)^2+(x+a \\sin \\theta+a \\cos \\theta)^2 \\geqslant \\frac{1}{8} \\text {. }\n$$",
+    "solution": "设 $u=\\sin \\theta+\\cos \\theta=\\sqrt{2} \\sin \\left(\\theta+\\frac{\\pi}{4}\\right) \\in[1, \\sqrt{2}]$, 则 $2 \\sin \\theta \\cos \\theta= u^2-1$, 原不等式可化为 $\\left(x+u^2+2\\right)^2+(x+a u)^2 \\geqslant \\frac{1}{8}$, 即 $2 x^2+2\\left(u^2+a u+\\right.$ 2) $x+\\left(u^2+2\\right)^2+a^2 u^2-\\frac{1}{8} \\geqslant 0$, 所以 $\\Delta=4\\left(u^2+a u+2\\right)^2-8\\left(u^2+2\\right)^2- 8 a^2 u^2+1 \\leqslant 0$. 从而 $\\left(u^2-a u+2\\right)^2 \\geqslant \\frac{1}{4}$, 即 $u^2-a u+\\frac{3}{2} \\geqslant 0$ 或 $u^2-a u+ \\frac{5}{2} \\leqslant 0$, 故 $a \\geqslant u+\\frac{5}{2 u}$ 或 $a \\leqslant u+\\frac{3}{2 u}$. 当 $u \\in[1, \\sqrt{2}]$ 时, $f(u)=u+\\frac{5}{2 u}$ 在 $[1, \\sqrt{2}]$ 上为减函数, 故 $a \\geqslant 1+\\frac{5}{2}=\\frac{7}{2}$, 而 $g(u)=u+\\frac{3}{2 u} \\geqslant \\sqrt{6}$, 当且仅当 $u=\\sqrt{\\frac{3}{2}}$ 时等号成立, 故 $a \\leqslant \\sqrt{6}$, 综上所述, $a$ 的取值范围为 $a \\geqslant \\frac{7}{2}$ 或 $a \\leqslant \\sqrt{6}$.",
+    "remark": "",
+    "figures": []
+}

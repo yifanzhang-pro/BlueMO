@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-3.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设 $a_1, a_2, \\cdots, a_n$ 为正整数, 求证:\n$$\n\\frac{a_1^2}{a_2}+\\frac{a_2^2}{a_3}+\\cdots+\\frac{a_n^2}{a_1} \\geqslant a_1+a_2+\\cdots+a_n .\n$$",
+    "solution": "证明:由柯西不等式, 得\n$$\n\\begin{aligned}\n& \\left(\\frac{a_1^2}{a_2}+\\frac{a_2^2}{a_3}+\\cdots+\\frac{a_n^2}{a_1}\\right)\\left(a_2+a_3+\\cdots+a_1\\right) \\\\\n\\geqslant & \\left(\\frac{a_1}{\\sqrt{a_2}} \\cdot \\sqrt{a_2}+\\frac{a_2}{\\sqrt{a_3}} \\cdot \\sqrt{a_3}+\\cdots+\\frac{a_n}{\\sqrt{a_1}} \\cdot \\sqrt{a_1}\\right)^2 \\\\\n= & \\left(a_1+a_2+\\cdots+a_n\\right)^2,\n\\end{aligned}\n$$\n故\n$$\n\\frac{a_1^2}{a_2}+\\frac{a_2^2}{a_3}+\\cdots+\\frac{a_n^2}{a_1} \\geqslant a_1+a_2+\\cdots+a_n .\n$$",
+    "remark": "",
+    "figures": []
+}

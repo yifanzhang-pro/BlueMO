@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题14. 设 $x, y, z \\geqslant 0$, 求证:\n$$\nx(y+z-x)^2+y(z+x-y)^2+z(x+y-z)^2 \\geqslant 3 x y z .\n$$\n并确定等号成立的条件.",
+    "solution": "无妨设 $x+y+z=1$, 则原不等式等价于\n$$\n4 x^3+4 y^3+4 z^3-4\\left(x^2+y^2+z^2\\right)+1 \\geqslant 3 x y z .\n$$\n又由于 $x^3+y^3+z^3=1+3 x y z-3(x y+y z+z x), x^2+y^2+z^2=1- 2(x y+y z+z x)$,故原不等式等价于 $x y+y z+z x-\\frac{9}{4} x y z \\leqslant \\frac{1}{4}$.\n不妨设 $x \\geqslant y \\geqslant z \\geqslant 0$, 则 $x+y \\geqslant \\frac{2}{3}, z \\leqslant \\frac{1}{3}$. 设 $x+y=\\frac{2}{3}+\\delta, z= \\frac{1}{3}-\\delta$. 其中 $\\delta \\in\\left[0, \\frac{1}{3}\\right]$.于是\n$$\n\\begin{aligned}\nx y+z(x+y)-\\frac{9}{4} x y z & =x y+\\left(\\frac{1}{3}-\\delta\\right)\\left(\\frac{2}{3}+\\delta\\right)-\\frac{9}{4} x y\\left(\\frac{1}{3}-\\delta\\right) \\\\\n& =x y\\left(\\frac{1}{4}+\\frac{9}{4} \\delta\\right)+\\frac{2}{9}-\\delta^2-\\frac{1}{3} \\delta \\\\\n& \\leqslant\\left(\\frac{1}{3}+\\frac{1}{2} \\delta\\right)^2 \\cdot\\left(\\frac{1}{4}+\\frac{9}{4} \\delta\\right)+\\frac{2}{9}-\\delta^2-\\frac{1}{3} \\delta \\\\\n& =\\frac{3}{16} \\delta^2(3 \\delta-1)+\\frac{1}{4} \\leqslant 0,\n\\end{aligned}\n$$\n因此结论成立.",
+    "remark": "",
+    "figures": []
+}

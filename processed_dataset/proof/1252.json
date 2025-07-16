@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设 $a 、 b 、 c$ 是正实数,求证:\n$$\n\\frac{a^2+b c}{b+c}+\\frac{b^2+c a}{c+a}+\\frac{c^2+a b}{a+b} \\geqslant a+b+c .\n$$",
+    "solution": "证明:上式左边一右边\n$$\n\\begin{aligned}\n& =\\frac{a^2+b c}{b+c}-a+\\frac{b^2+c a}{c+a}-b+\\frac{c^2+a b}{a+b}-c \\\\\n& =\\frac{a^2+b c-a b-a c}{b+c}+\\frac{b^2+c a-b c-b a}{c+a}+\\frac{c^2+a b-c a-b}{a+b} \\\\\n& =\\frac{(a-b)(a-c)}{b+c}+\\frac{(b-c)(b-a)}{c+a}+\\frac{(c-a)(c-b)}{a+b} \\\\\n& =\\frac{\\left(a^2-b^2\\right)\\left(a^2-c^2\\right)+\\left(b^2-c^2\\right)\\left(b^2-a^2\\right)+\\left(c^2-a^2\\right)\\left(c^2-b^2\\right)}{(b+c)(c+a)(a+b)}\n\\end{aligned}\n$$\n$$\n\\begin{aligned}\n& =\\frac{a^4+b^4+c^4-a^2 b^2-b^2 c^2-c^2 a^2}{(a+b)(b+c)(c+a)} \\\\\n& =\\frac{\\left(a^2-b^2\\right)^2+\\left(b^2-c^2\\right)^2+\\left(c^2-a^2\\right)^2}{2(a+b)(b+c)(c+a)} \\geqslant 0,\n\\end{aligned}\n$$\n所以\n$$\n\\frac{a^2+b c}{b+c}+\\frac{b^2+c a}{c+a}+\\frac{c^2+a b}{a+b} \\geqslant a+b+c .\n$$",
+    "remark": "",
+    "figures": []
+}

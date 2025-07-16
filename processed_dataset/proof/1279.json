@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例26. 设 $x, y, z \\in \\mathbf{R}^{+}$, 且 $x+y+z=x y z$, 求证:\n$$\nx^2+y^2+z^2-2(x y+y z+z x)+9 \\geqslant 0 . \\label{(3)}\n$$",
+    "solution": "证明:因为 $x+y+z=x y z$, 所以(3)等价于\n$$\n\\begin{gathered}\n{\\left[x^2+y^2+z^2-2(x y+y z+z x)\\right](x+y+z)+9 x y z \\geqslant 0} \\\\\n\\Leftrightarrow x^3+y^3+z^3-\\left(x^2 y+y^2 z+z^2 x+x y^2+y z^2+z x^2\\right)+3 x y z \\geqslant 0\n\\end{gathered}\n$$\n即\n$$\n\\sum_{c y c} x^3-\\sum_{c y c} x^2(y+z)+3 x y z \\geqslant 0,\n$$\n这就是 Schur 不等式的变形 I. 故命题得证.",
+    "remark": "",
+    "figures": []
+}

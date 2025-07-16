@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例30. 设 $a 、 b 、 c$ 是正实数,求证:\n$$\n\\left(a^5-a^2+3\\right)\\left(b^5-b^2+3\\right)\\left(c^5-c^2+3\\right) \\geqslant(a+b+c)^3 .\n$$",
+    "solution": "证明:对于 $x \\in \\mathbf{R}^{+}, x^2-1$ 与 $x^3-1$ 具有相同的符号, 所以\n$$\n\\left(x^2-1\\right)\\left(x^3-1\\right) \\geqslant 0 \\text {, }\n$$\n即\n$$\nx^5-x^2+3 \\geqslant x^3+2 .\n$$\n于是 $\\left(a^5-a^2+3\\right)\\left(b^5-b^2+3\\right)\\left(c^5-c^2+3\\right) \\geqslant\\left(a^3+2\\right)\\left(b^3+2\\right)\\left(c^3+2\\right)$.\n而由(2)(Hölder 不等式),有\n$$\n\\begin{aligned}\n\\left(a^3+2\\right)\\left(b^3+2\\right)\\left(c^3+2\\right) & =\\left(a^3+1+1\\right)\\left(1+b^3+1\\right)\\left(1+1+c^3\\right) \\\\\n& \\geqslant(a+b+c)^3,\n\\end{aligned}\n$$\n从而命题得证.",
+    "remark": "",
+    "figures": []
+}

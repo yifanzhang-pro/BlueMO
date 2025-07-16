@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题14. 设 $a_1, a_2, a_3 \\in \\mathbf{R}^{+}$, 求\n$$\n\\frac{a_1 a_2}{\\left(a_2+a_3\\right)\\left(a_3+a_1\\right)}+\\frac{a_2 a_3}{\\left(a_3+a_1\\right)\\left(a_1+a_2\\right)}+\\frac{a_3 a_1}{\\left(a_1+a_2\\right)\\left(a_2+a_3\\right)}\n$$\n的最小值.",
+    "solution": "所求的最小值为 $\\frac{3}{4}$. 当 $a_1=a_2=a_3$ 时, 其值为 $\\frac{3}{4}$. 下面证明:\n$$\n\\begin{aligned}\n& \\frac{a_1 a_2}{\\left(a_2+a_3\\right)\\left(a_3+a_1\\right)}+\\frac{a_2 a_3}{\\left(a_3+a_1\\right)\\left(a_1+a_2\\right)}+\\frac{a_3 a_1}{\\left(a_3+a_2\\right)\\left(a_2+a_3\\right)} \\geqslant \\\\\n& \\frac{3}{4} \\Leftrightarrow 4\\left[a_1 a_2\\left(a_1+a_2\\right)+a_2 a_3\\left(a_2+a_3\\right)+a_3 a_1\\left(a_3+a_1\\right)\\right] \\geqslant 3\\left(a_1+a_2\\right)\\left(a_2+\\right. \\\\\n& \\left.a_3\\right)\\left(a_3+a_1\\right) \\Leftrightarrow 4\\left[a_1\\left(a_2^2+a_3^2\\right)+a_2\\left(a_3^2+a_1^2\\right)+a_3\\left(a_1^2+a_2^2\\right)\\right] \\geqslant 3\\left[a_1\\left(a_2^2+a_3^2\\right)+\\right. \\\\\n& \\left.a_2\\left(a_3^2+a_1^2\\right)+a_3\\left(a_1^2+a_2^2\\right)+2 a_1 a_2 a_3\\right] \\Leftrightarrow a_1\\left(a_2^2+a_3^2\\right)+a_2\\left(a_3^2+a_1^2\\right)+a_3\\left(a_1^2+\\right. \\\\\n& \\left.a_2^2\\right) \\geqslant 6 a_1 a_2 a_3. \\circledast\n\\end{aligned}\n$$\n由平均值不等式, 得 $\\circledast$ 的左边 $\\geqslant a_1\\left(2 a_2 a_3\\right)+a_2\\left(2 a_1 a_3\\right)+ a_3\\left(2 a_1 a_2\\right)=6 a_1 a_2 a_3$. 故 $\\circledast$ 成立, 最小值为 $\\frac{3}{4}$.",
+    "remark": "",
+    "figures": []
+}

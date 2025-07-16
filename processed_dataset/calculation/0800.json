@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题7. 解方程 $x+\\frac{x}{\\sqrt{x^2-1}}=\\frac{35}{12}$.",
+    "solution": "因 $|x|>1$, 且 $x>0$, 所以设 $x=\\frac{1}{\\cos \\alpha}, \\alpha \\in\\left(0, \\frac{\\pi}{2}\\right)$, 代入原方程得 $\\frac{1}{\\cos \\alpha}+\\frac{1}{\\sin \\alpha}=\\frac{35}{12}$, 解得 $\\cos \\alpha=\\frac{3}{5}$ 或 $\\frac{4}{5}$, 所以 $x=\\frac{5}{3}$ 或 $\\frac{5}{4}$.",
+    "remark": "",
+    "figures": []
+}

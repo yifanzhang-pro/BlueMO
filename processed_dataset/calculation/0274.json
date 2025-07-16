@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题12. 棱长为 $n$ (自然数) 的立方体被平行于它的侧面的平面切成 $n^3$ 个单位立方体,其中有多少对公共顶点不多于 2 的单位立方体?",
+    "solution": "以单位立方体为顶点, 当且仅当二单位立方体有公共侧面时, 在此二顶点间加一边, 构成一个图 $G, G$ 的补图 $\\bar{G}$ 的边数即为所求.\n易知 $G$ 的边数为 $3 n^2(n-1), K_{n^2}$ 的边数为 $\\frac{1}{2} n^3\\left(n^3-1\\right)$, 故 $\\bar{G}$ 的边数为 $\\frac{1}{2} n^3\\left(n^3-1\\right)-3 n^2(n-1)=\\frac{1}{2} n^6-\\frac{7}{2} n^3+3 n^2$. 即公共顶点不多于 2 的单位立方体共有 $\\frac{1}{2} n^6-\\frac{7}{2} n^3+3 n^2$ 对.",
+    "remark": "",
+    "figures": []
+}

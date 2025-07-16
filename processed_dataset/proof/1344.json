@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例4. 已知 $x_i \\geqslant 1, i=1,2, \\cdots, n$, 且 $x_1 x_2 \\cdots x_n=a^n$. 记 $a_{n+1}=x_1$. 求证: 当 $n>2$ 时,有 $\\sum_{i=1}^n x_i x_{i+1}-\\sum_{i=1}^n x_i \\geqslant \\frac{n}{2}\\left(a^2-1\\right)$.",
+    "solution": "分析:为了联系 $x_i x_{i+1}$ 与 $x_i$, 自然想到 $\\left(x_i-1\\right)\\left(x_{i+1}-1\\right)$, 利用条件, 此式 $\\geqslant 0$.\n证明由已知可得 $\\left(x_i-1\\right)\\left(x_{i+1}-1\\right) \\geqslant 0$, 故\n$$\n2 x_i x_{i+1}-x_i-x_{i+1} \\geqslant x_i x_{i+1}-1,\n$$\n上式对 $i$ 从 1 到 $n$ 求和,有 $2\\left(\\sum_{i=1}^n x_i x_{i+1}-\\sum_{i=1}^n x_i\\right) \\geqslant \\sum_{i=1}^n x_i x_{i+1}-n$.\n利用平均不等式, 有\n$$\n\\sum_{i=1}^n x_i x_{i+1} \\geqslant n \\cdot \\sqrt[n]{\\left(a^n\\right)^2}=n a^2 .\n$$\n因此 $2\\left(\\sum_{i=1}^n x_i x_{i+1}-\\sum_{i=1}^n x_i\\right) \\geqslant n\\left(a^2-1\\right)$, 所以原不等式成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 已知锐角 $\\triangle A B C$, 以 $A C$ 为直径的圆为圆 $\\Gamma_1$, 以 $B C$ 为直径的圆为圆 $\\Gamma_2, A C$ 与圆 $\\Gamma_2$ 相交于点 $E, B C$ 与圆 $\\Gamma_1$ 相交于点 $F$, 直线 $B E$ 和圆 $\\Gamma_1$ 相交于点 $L 、 N$, 其中点 $L$ 在线段 $B E$ 上, 直线 $A F$ 和圆 $\\Gamma_2$ 相交于点 $K 、 M$, 其中点 $K$ 在线段 $A F$ 上.\n证明: 四边形 $K L M N$ 是圆内接四边形.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c4a10.png>), 在圆 $\\Gamma_2$ 中, $B C$ 是直径, 点 $E$ 是 $A C$ 和圆 $\\Gamma_2$ 的交点, 则 $\\angle B E C=90^{\\circ}$. 同理, 由 $F$ 是 $B C$ 和圆 $\\Gamma_1$ 的交点, 得 $\\angle A F C=90^{\\circ}$. 因为 $\\angle A E B=\\angle A F B=90^{\\circ}$, 则点 $E 、 F$ 在以 $A B$ 为直径的圆上, 有 $C E \\cdot C A=C F \\cdot C B$. 易知 $\\triangle A C L$ 是直角三角形, $L E$ 是它的高线.\n故 $C E \\cdot C A=C L^2$. 同理, 在 $\\triangle B C K$ 中, 有 $C F \\cdot C B=C K^2$. 由 $C E \\cdot C A= C F \\cdot C B$, 有 $C L^2=C K^2$, 即 $C L=C K$. 又 $L N$ 垂直于圆 $\\Gamma_1$ 的直径 $A C$, 则 $C L=C N$. 同理, 在圆 $\\Gamma_2$ 中, 有 $C K=C M$. 综上, 线段 $C K 、 C L 、 C M$ 和 $C N$ 都相等.\n则点 $K 、 L 、 M 、 N$ 在以点 $C$ 为圆心的圆上.\n故四边形 $K L M N$ 是一个圆内接四边形.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4a10.png"
+    ]
+}

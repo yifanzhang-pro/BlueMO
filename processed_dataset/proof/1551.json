@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter2-3.tex",
+    "problem_type": "proof",
+    "problem": "例1. 证明: 对任意正整数 $n \\geqslant 3$,都存在一个完全立方数,它可以表示为 $n$ 个正整数的立方和.",
+    "solution": "证明:对比不定方程 $x^3+y^3=z^3$ 没有正整数解的结论, 可了解问题的背景.\n当 $n=3$ 时,由 $3^3+4^3+5^3=6^3$ 可知命题对 $n=3$ 成立;\n当 $n=4$ 时, 由 $5^3+7^3+9^3+10^3=13^3$ (这个等式是 Euler 最早发现的), 可知命题对 $n=4$ 成立.\n现设命题对 $n(\\geqslant 3)$ 成立, 即存在正整数 $x_1<x_2<\\cdots<x_n<y$, 使得\n$$\nx_1^3+x_2^3+\\cdots+x_n^3=y^3,\n$$\n则利用 $6^3=3^3+4^3+5^3$, 可知\n$$\n\\begin{aligned}\n(6 y)^3 & =\\left(6 x_n\\right)^3+\\cdots+\\left(6 x_2\\right)^3+\\left(6 x_1\\right)^3 \\\\\n& =\\left(6 x_n\\right)^3+\\cdots+\\left(6 x_2\\right)^3+\\left(5 x_1\\right)^3+\\left(4 x_1\\right)^3+\\left(3 x_1\\right)^3 .\n\\end{aligned}\n$$\n这表明命题对 $n+2$ 成立.\n所以, 对任意 $n \\geqslant 3$, 命题都成立.",
+    "remark": "",
+    "figures": []
+}

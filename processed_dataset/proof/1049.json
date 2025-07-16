@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 数列 $a_0, a_1, a_2, \\cdots$ 与 $b_0, b_1, b_2, \\cdots$ 定义如下: $a_0=\\frac{\\sqrt{2}}{2}, a_{n+1}=\\frac{\\sqrt{2}}{2}$\n$$\n\\sqrt{1-\\sqrt{1-a_n^2}}, n=0,1,2, \\cdots, b_0=1, b_{n+1}=\\frac{\\sqrt{1+b_n^2}-1}{b_n}, n=0,1,2, \\cdots\n$$\n求证:不等式 $2^{n+2} a_n<\\pi<2^{n+2} b_n$ 对 $n=0,1,2, \\cdots$ 成立.",
+    "solution": "$a_0=\\frac{\\sqrt{2}}{2}=\\sin \\frac{\\pi}{2^2}, a_1=\\frac{\\sqrt{2}}{2} \\sqrt{1-\\sqrt{1-\\sin ^2 \\frac{\\pi}{2^2}}}=\\frac{\\sqrt{2}}{2} \\sqrt{1-\\cos \\frac{\\pi}{2^2}}=\\frac{\\sqrt{2}}{2} \\times \\sqrt{2 \\sin ^2 \\frac{\\pi}{2^3}}=\\sin \\frac{\\pi}{2^3}$. 若设 $a_k=\\sin \\frac{\\pi}{2^{k+2}}$, 则 $a_{k+1}=\\frac{\\sqrt{2}}{2} \\cdot \\sqrt{1-\\cos \\frac{\\pi}{2^{k+2}}}=\\sin \\frac{\\pi}{2^{k+3}}$, 从而 $a_n=\\sin \\frac{\\pi}{2^{n+2}}$. 同理 $b_n=\\tan \\frac{\\pi}{2^{n+2}}$. 当 $x \\in\\left(0, \\frac{\\pi}{2}\\right)$ 时, $\\sin x<x<\\tan x$, 所以 $2^{n+2} a_n=2^{n+2} \\sin \\frac{\\pi}{2^{n+2}}<2^{n+2} \\cdot \\frac{\\pi}{2^{n+2}}<2^{n+2} \\tan \\frac{\\pi}{2^{n+2}}$, 即 $2^{n+2} a_n<\\pi<2^{n+2} b_n$.",
+    "remark": "",
+    "figures": []
+}

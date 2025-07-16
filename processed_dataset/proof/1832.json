@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 已知 $U$ 为 $\\triangle A B C$ 的内切圆的圆心, $O_1 、 O_2 、 O_3$ 分别为 $\\triangle B C U 、 \\triangle C A U$ 、 $\\triangle A B U$ 的外接圆的圆心.\n求证: $\\triangle A B C$ 的外接圆圆心与 $\\triangle O_1 O_2 O_3$ 的外接圆圆心重合.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c3a6.png>), 分别过 $\\triangle A B C$ 的顶点 $A 、 B 、 C$ 及其内切圆圆心 $U$ 的直线分别为角 $\\alpha 、 \\beta 、 \\gamma$ 的平分线, 其中 $\\angle C A B=\\alpha, \\angle A B C=\\beta, \\angle B C A=\\gamma$. 设 $O$ 为 $\\triangle A B C$ 的外接圆圆心.\n因为三角形外接圆圆心位于每条边的垂直平分线上, 点 $O$ 和 $O_1$ 位于边 $B C$ 的垂直平分线上, 所以, $O O_1$ 为边 $B C$ 的垂直平分线.\n类似地, $O_3 、 O_1 O_3$ 分别为边 $A B 、 U B$ 的垂直平分线.\n因为 $\\angle U B C$ 与 $\\angle O_3 O_1 O$ 的边互相垂直, 所以, $\\angle U B C=\\angle O_3 O_1 O, \\angle O_3 O_1 O=\\frac{\\beta}{2}$.\n同理, $\\angle O O_3 O_1=\\frac{\\beta}{2}$. 故 $\\angle O_3 O_1 O=\\angle O O_3 O_1$. 因此, $\\triangle O_1 O O_3$ 为等腰三角形, 即 $O O_1=O O_3$. 同理可得 $O O_1=O O_2$. 故 $O O_1=O O_2=O O_3$.\n所以, $O$ 为 $\\triangle O_1 O_2 O_3$ 的外接圆的圆心.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c3a6.png"
+    ]
+}

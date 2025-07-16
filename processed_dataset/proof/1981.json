@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $z$ 是模不为 1 的虚数, 记 $w=z+\\frac{1}{z}$, 设实数 $a$ 满足 $w^2+a w+1=0$, 证明: $-2<a<2$.",
+    "solution": "由题意可设 $z=r(\\cos \\theta+i \\sin \\theta),(r>0, r \\neq 1, \\theta \\neq k \\pi)$, 则\n$$\n\\begin{aligned}\nw & =z+\\frac{1}{z}=r(\\cos \\theta+\\mathrm{i} \\sin \\theta)+\\frac{1}{r}(\\cos \\theta-\\mathrm{i} \\sin \\theta) \\\\\n& =\\left(r+\\frac{1}{r}\\right) \\cos \\theta+\\mathrm{i}\\left(r-\\frac{1}{r}\\right) \\sin \\theta,\n\\end{aligned}\n$$\n因为 $\\theta \\neq k \\pi, r>0$ 且 $r \\neq 1$, 所以 $\\left(r-\\frac{1}{r}\\right) \\sin \\theta \\neq 0$, 故 $w$ 是虚数, 即方程 $w^2+a w+1=0$ 有虚数根, 所以 $\\Delta=a^2-4<0$, 故 $-2<a<2$, 证毕.",
+    "remark": "",
+    "figures": []
+}

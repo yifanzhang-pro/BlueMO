@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例6. 已知两个不同点 $A 、 B$, 求平面上满足条件 $\\overrightarrow{M A} \\cdot \\overrightarrow{M B}=k^2(k$ 为非零实常数) 的点的轨迹.",
+    "solution": "分析:与解设 $|A B|=2 a$, 取 $A B$ 中点 $O$, 则 $\\overrightarrow{O A}=-\\overrightarrow{O B}$.\n$$\n\\begin{aligned}\nk^2 & =\\overrightarrow{M A} \\cdot \\overrightarrow{M B}=(\\overrightarrow{O A}-\\overrightarrow{O M}) \\cdot(\\overrightarrow{O B}-\\overrightarrow{O M}) \\\\\n& =(\\overrightarrow{O A}-\\overrightarrow{O M}) \\cdot(-\\overrightarrow{O A}-\\overrightarrow{O M})=-\\overrightarrow{O A}^2+\\overrightarrow{O M}^2=|\\overrightarrow{O M}|^2-a^2,\n\\end{aligned}\n$$\n即\n$$\n|\\overrightarrow{O M}|=\\sqrt{k^2+a^2} .\n$$\n故点 $M$ 在平面上的轨迹是以 $A B$ 的中点为圆心, 以 $\\sqrt{k^2+a^2}$ 为半径的圆.",
+    "remark": "注:这是向量法解解析几何题的一个典型例子.",
+    "figures": []
+}

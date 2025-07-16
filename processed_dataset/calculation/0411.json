@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题8. 设 $x_1, x_2, \\cdots, x_n$ 是整数, 并且满足:\n(1) $-1 \\leqslant x_i \\leqslant 2, i=1,2, \\cdots, n$;\n(2) $x_1+x_2+\\cdots+x_n=19$;\n(3) $x_1^2+x_2^2+\\cdots+x_n^2=99$.\n求 $x_1^3+x_2^3+\\cdots+x_n^3$ 的最大值和最小值.",
+    "solution": "设 $x_1, x_2, \\cdots, x_n$ 中有 $r$ 个- $1, s$ 个 $1, t$ 个 2 , 由题设得\n$$\n\\left\\{\\begin{array}{l}\n-r+s+2 t=19 \\\\\nr+s+4 t=99\n\\end{array}\\right.\n$$\n可得\n$$\n\\left\\{\\begin{array}{l}\nr=40-t \\\\\ns=59-3 t\n\\end{array}\\right.\n$$\n所以\n$$\n\\left\\{\\begin{array}{l}\nr=40-t \\geqslant 0, \\\\\ns=59-3 t \\geqslant 0, \\\\\nt \\geqslant 0\n\\end{array}\\right.\n$$\n故\n$$\n0 \\leqslant t \\leqslant 19 \\text {. }\n$$\n$$\nx_1^3+x_2^3+\\cdots+x_n^3=--r+s+8 t=(19-2 t)+8 t=6 t+19,\n$$\n所以\n$$\n19 \\leqslant x_1^3+x_2^3+\\cdots+x_n^3 \\leqslant 133 .\n$$\n又当 $r=40, s=59, t=0$ 时, $x_1^3+x_2^3+\\cdots+x_n^3=19$; 当 $r=21, s= 2, t=19$ 时, $x_1^3+x_2^3+\\cdots+x_n^3=133$, 所以 $x_1^3+x_2^3+\\cdots+x_n^3$ 的最小值为 19 , 最大值为 133 .",
+    "remark": "",
+    "figures": []
+}

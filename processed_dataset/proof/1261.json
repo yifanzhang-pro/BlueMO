@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例9. 求最大的实数 $\\alpha$, 使得 $\\frac{x}{\\sqrt{y^2+z^2}}+\\frac{y}{\\sqrt{x^2+z^2}}+\\frac{z}{\\sqrt{x^2+y^2}}>\\alpha$ 对所有正实数 $x 、 y 、 z$ 成立.",
+    "solution": "解法 2 同样,我们来证明\n$$\n\\frac{x}{\\sqrt{y^2+z^2}}+\\frac{y}{\\sqrt{z^2+x^2}}+\\frac{z}{\\sqrt{x^2+y^2}}>2 .\n$$\n设\n$$\n\\frac{x}{\\sqrt{y^2+z^2}} \\geqslant \\frac{2 x^a}{x^a+y^a+z^a} . \\label{eq1}\n$$\n其中 $a$ 为待定参数.\n注意到式\\ref{eq1}等价于 $\\left(x^a+y^a+z^a\\right)^2 \\geqslant 4 x^{2 a-2}\\left(y^2+z^2\\right)$.\n上式左边 $\\geqslant 4 x^a\\left(y^a+z^a\\right)$, 故只须保证\n$$\ny^a+z^a \\geqslant x^{a-2}\\left(y^2+z^2\\right) .\n$$\n不难发现, 取 $a=2$ 即可.\n于是\n$$\n\\sum \\frac{x}{\\sqrt{y^2+z^2}} \\geqslant \\sum \\frac{2 x^2}{x^2+y^2+z^2}=2 \\text {. }\n$$\n而等号显然不可能成立, 所以 $\\sum \\frac{x}{\\sqrt{y^2+z^2}}>2$.\n故 $\\alpha_{\\max }=2$.",
+    "remark": "",
+    "figures": []
+}

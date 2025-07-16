@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例8 证明: 函数 $3 x^2+x$ 可以表示为两个单调递增的多项式函数之差.",
+    "solution": "证因为有恒等式\n$$\n3 x^2+x \\equiv(x+1)^3-\\left(x^3+2 x+1\\right),\n$$\n而函数 $g(x)=(x+1)^3, h(x)=x^3+2 x+1$ 都是单调递增的多项式函数, 从而命题得证.\n说明一般地, 任意实系数多项式可表示为两个单调递增的多项式函数之差.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例3. 已知正项数列 $\\left\\{a_n\\right\\}$ 对 $n \\in \\mathbf{N}_{+}$都有 $a_n^2 \\leqslant a_n-a_{n+1}$ 成立.\n求证: $a_n<\\frac{1}{n}$.",
+    "solution": "证法 3(累差法).\n由 $a_n^2 \\leqslant a_n-a_{n-1} \\Rightarrow a_{n+1} \\leqslant a_n\\left(1-a_n\\right)$, 所以 $0<a_n<1$, 且 $a_n>a_{n+1}$.\n故 $\\quad \\frac{1}{a_{n+1}} \\geqslant \\frac{1}{a_n\\left(1-a_n\\right)}=\\frac{1}{1-a_n}+\\frac{1}{a_n}$,\n即\n$$\n\\frac{1}{a_{n+1}}-\\frac{1}{a_n}=\\frac{1}{1-a_n}>1 \\text {. }\n$$\n于是\n$$\n\\frac{1}{a_n}-\\frac{1}{a_1}=\\sum_{k=1}^n\\left(\\frac{1}{a_{k+1}}-\\frac{1}{a_k}\\right)>n-1 \\text {. }\n$$\n所以 $\\frac{1}{a_n}>(n-1)+\\frac{1}{a_1}>(n-1)+1=n \\Rightarrow a_n<\\frac{1}{n}$.",
+    "remark": "",
+    "figures": []
+}

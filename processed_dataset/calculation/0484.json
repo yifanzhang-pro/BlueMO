@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例16 设 $f(x)=x^2+a x+b \\cos x,\\{x \\mid f(x)=0, x \\in \\mathbf{R}\\}=\\{x \\mid f(f(x))=0, x \\in \\mathbf{R}\\} \\neq \\varnothing$, 求满足条件的所有实数 $a, b$ 的值.",
+    "solution": "解:设 $x_0 \\in\\{x \\mid f(x)=0, x \\in \\mathbf{R}\\}$, 则 $b=f(0)=f\\left(f\\left(x_0\\right)\\right)=0$.\n于是 $f(x)=x(x+a)$. 故\n$$\nf(f(x))=f(x)(f(x)+a)=x(x+a)\\left(x^2+a x+a\\right) .\n$$\n显然, $a=0$ 满足题意.\n若 $a \\neq 0$, 由于 $x^2+a x+a=0$ 的根不可能是 0 或者 $-a$, 故 $x^2+a x+a=0$ 没有实数根, 于是 $\\Delta=a^2-4 a<0$, 所以 $0<a<4$.\n综上所述, 满足题设条件的 $a, b$ 分别为: $0 \\leqslant a<4, b=0$.",
+    "remark": "",
+    "figures": []
+}

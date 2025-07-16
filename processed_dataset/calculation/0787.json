@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题11. 当 $0<x<2 \\pi$ 时, 不等式 $\\frac{\\cos 2 x+\\cos x-1}{\\cos 2 x}>2$ 的解集是",
+    "solution": "$\\left(\\frac{\\pi}{4}, \\frac{\\pi}{3}\\right) \\cup\\left(\\frac{\\pi}{2}, \\frac{3 \\pi}{4}\\right) \\cup\\left(\\frac{5 \\pi}{4}, \\frac{3 \\pi}{2}\\right) \\cup\\left(\\frac{5 \\pi}{3}, \\frac{7 \\pi}{4}\\right)$. 由原不等式得 $\\frac{\\cos 2 x-\\cos x+1}{\\cos 2 x}<0 \\Leftrightarrow \\frac{2 \\cos ^2 x-\\cos x}{\\cos 2 x}<0 \\Leftrightarrow\\left\\{\\begin{array}{l}2 \\cos ^2 x-\\cos x>0 \\\\ \\cos 2 x<0\\end{array}\\right.$ 或 $\\left\\{\\begin{array}{l}2 \\cos ^2 x-\\cos x<0 \\\\ \\cos 2 x>0\\end{array} \\Leftrightarrow x \\in\\left(\\frac{\\pi}{4}, \\frac{\\pi}{3}\\right) \\cup\\left(\\frac{\\pi}{2}, \\frac{3 \\pi}{4}\\right) \\cup\\left(\\frac{5 \\pi}{4}, \\frac{3 \\pi}{2}\\right) \\cup\\left(\\frac{5 \\pi}{3}, \\frac{7 \\pi}{4}\\right)\\right.$.",
+    "remark": "",
+    "figures": []
+}

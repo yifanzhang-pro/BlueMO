@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例17 已知 $a, b, c, d$ 为非零实数, $f(x)=\\frac{a x+b}{c x+d}, x \\in \\mathbf{R}$, 且 $f(19)= 19, f(97)=97$. 若当 $x \\neq-\\frac{d}{c}$ 时, 对于任意实数 $x$, 均有 $f[f(x)]=x$, 试求出 $f(x)$ 值域以外的唯一数.",
+    "solution": "解:由题设, 对任意实数 $x \\neq-\\frac{d}{c}$, 有 $f[f(x)]=x$, 所以\n$$\n\\frac{a \\cdot \\frac{a x+b}{c x+d}+b}{c \\cdot \\frac{a x+b}{c x+d}+d}=x\n$$\n化简, 得 $\\quad(a+d) c x^2+\\left(d^2-a^2\\right) x-b(a+d)=0$.\n由于上述方程对 $x \\neq-\\frac{d}{c}$ 恒成立, 故 $a+d=0$, 且 $d^2-a^2=0$, 所以 $d=-a$. 又 $f(19)=19, f(97)=97$, 即 $19 、 97$ 是方程 $\\frac{a x+b}{c x+d}=x$ 的两个根, 即\n19、97 是方程 $c x^2+(d-a) x-b=0$ 的两个根, 故由韦达定理, 得\n$$\n\\frac{a-d}{c}=116,-\\frac{b}{c}=1843 \\text {. }\n$$\n结合 $d=-a$, 得 $a=58 c, b=-1843 c, d=-58 c$, 从而\n$$\nf(x)=\\frac{58 x-1843}{x-58}=58+\\frac{1521}{x-58} .\n$$\n于是 $f(x)$ 取不到 58 这个数, 即 58 是 $f(x)$ 值域外的唯一数.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设点 $D 、 E 、 F$ 分别是 $\\triangle A B C$ 的边 $B C 、 C A 、 A B$ 上的点, $\\triangle 、 R$ 分别为 $\\triangle A B C$ 的面积和外接圆半径.\n求证:\n$$\nD E+E F+F D \\geqslant \\frac{2 \\Delta}{R} .\n$$",
+    "solution": "提示: 不妨设 $A \\leqslant 90^{\\circ}$. 将 $\\triangle A B C$ 以边 $A C$ 为轴翻转一次,得 $\\triangle A B^{\\prime} C$; 再将 $\\triangle A B^{\\prime} C$ 以边 $A B^{\\prime}$ 为轴翻转一次, 得 $\\triangle A B^{\\prime} C^{\\prime}$. 同时 $\\triangle D E F$ 依次变为 $\\triangle D^{\\prime} E F^{\\prime}, \\triangle D^{\\prime \\prime} E^{\\prime \\prime} F^{\\prime}$, 则 $D E+E F+F D=D E+E F^{\\prime}+F^{\\prime} D^{\\prime \\prime} \\geqslant D D^{\\prime \\prime}$. 再证 $D D^{\\prime \\prime} \\geqslant \\frac{2 \\Delta}{R}$ 便可.",
+    "remark": "",
+    "figures": []
+}

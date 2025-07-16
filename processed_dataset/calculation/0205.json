@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题8. $2 \\times 3$ 的矩形花坛被分成 6 个 $1 \\times 1$ 的小正方形区域: $A, B, C, D, E, F$, 在每个区域内栽种一种植物, 相邻两个区域内栽种的植物不同, 今有 6 种植物可供选择,则共有种不同的栽种方法.",
+    "solution": "如图(<FilePath:./images/volume11/figures/fig-c1a8.png>), $A$ 与 $B$ 内栽种植物的方法有 $\\mathrm{A}_6^2$ 种.\n若 $C$ 与 $B$ 内栽种同一种植物, 则 $C$ 和 $D$ 内栽种植物的方法有 $\\mathrm{C}_5^1$ 种; 若 $C$ 与 $B$ 内栽种不同的植物, 则 $C$ 与 $D$ 内栽种植物的方法有 $\\mathrm{C}_4^1 \\mathrm{C}_4^1$ 种,故 $C$ 与 $D$ 内栽种植物的方法有 $\\mathrm{C}_5^1+\\mathrm{C}_4^1 \\mathrm{C}_4^1=21$ 种, 同理 $E$ 与 $F$ 内栽种植物的方法也有 21 种, 故符合条件的栽种方法共有 $\\mathrm{A}_6^2 \\times 21^2=13230$ 种.",
+    "remark": "",
+    "figures": [
+        "./images/volume11/figures/fig-c1a8.png"
+    ]
+}

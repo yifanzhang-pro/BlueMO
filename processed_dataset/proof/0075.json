@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题15 设 $O x y z$ 是空间直角坐标系, $S$ 是空间中的一个由有限个点所形成的集合, $S_x 、 S_y 、 S_z$ 分别是 $S$ 中所有的点在 $O y z$ 平面、 $O z x$ 平面、 $O x y$ 平面上的正交投影所成的集合.\n证明\n$$\n|S|^2 \\leqslant\\left|S_x\\right| \\cdot\\left|S_y\\right| \\cdot\\left|S_z\\right|,\n$$\n其中 $|A|$ 表示有限集合 $A$ 中的元素数目.\n(说明: 所谓一个点在一个平面上的正交投影是指由点向平面所作垂线的垂足.\n)",
+    "solution": "记 $S_{i, j}$ 是 $S$ 中形如 $(x, i, j)$ 的点的集合, 即 $S$ 中在 $O y z$ 平面内正交投影坐标为 $(i, j)$ 的一切点的集合.\n显然 $S=\\bigcup_{(i, j) \\in S_x} S_{i, j}$. 由柯西不等式, 得 $|S|^2=\\left(\\sum_{\\left(i, j, \\in S_x\\right.}\\left|S_{i, j}\\right|\\right)^2 \\leqslant \\sum_{(i, j) \\in S_x} 1^2 \\times \\sum_{(i, j) \\in S_x}\\left|S_{i, j}\\right|^2=\\left|S_x\\right| \\sum_{(i, j) \\in S_x}\\left|S_{i, j}\\right|^2$. 令 $X= \\bigcup_{(i, j) \\in S_x}\\left(S_{i, j} \\times S_{i, j}\\right)$, 则 $|X|=\\sum_{(i, j) \\in S_x}\\left|S_{i, j}\\right|^2$.\n作映射 $f: X \\rightarrow S_y \\times S_z, f\\left((x, i, j),\\left(x^{\\prime}, i, j\\right)\\right)=\\left((x, j),\\left(x^{\\prime}, i\\right)\\right)$. 显然 $f$ 为单射.\n因此, $|X| \\leqslant\\left|S_y\\right| \\cdot\\left|S_z\\right|$. 故 $|S|^2 \\leqslant\\left|S_x\\right| \\cdot|X| \\leqslant\\left|S_x\\right| \\cdot \\left|S_y\\right| \\cdot\\left|S_z\\right|$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例8. Neuberg-Pedoe 不等式: 设 $a_1 、 a_2 、 a_3 、 b_1 、 b_2 、 b_3$ 分别是位于同一平面上的两个三角形 $\\triangle A_1 B_1 C_1$ 和 $\\triangle A_2 B_2 C_2$ 的各边长, $F 、 F^{\\prime}$ 分别是它们的面积, 记\n$$\nM=b_1^2\\left(-a_1^2+a_2^2+a_3^2\\right)+b_2^2\\left(a_1^2-a_2^2+a_3^2\\right)+b_3^2\\left(a_1^2+a_2^2-a_3^2\\right) .\n$$\n求证: $M \\geqslant 16 F F^{\\prime}$.",
+    "solution": "证明:由柯西不等式, $16 F F^{\\prime}+2\\left(a_1^2 b_1^2+a_2^2 b_2^2+a_3^2 b_3^2\\right) \\leqslant\\left(\\left(16 F^2+2 a_1^4+\\right.\\right. \\left.\\left.2 a_2^4+2 a_3^4\\right)\\left(16 F^{\\prime 2}+2 b_1^4+2 b_2^4+2 b_3^4\\right)\\right)^{\\frac{1}{2}}=\\left(a_1^4+a_2^4+a_3^4+2 a_1^2 a_2^2+2 a_2^2 a_3^2+2 a_3^2 a_1^2\\right)^{\\frac{1}{2}} \\cdot\\left(b_1^4+b_2^4+b_3^4+2 b_1^2 b_2^2+2 b_2^2 b_3^2+2 b_3^2 b_1^2\\right)^{\\frac{1}{2}}$ (这步用到海伦公式) $=\\left(a_1^2+a_2^2+a_3^2\\right)\\left(b_1^2+b_2^2+b_3^2\\right)$.\n即 $M \\geqslant 16 F F^{\\prime}$.",
+    "remark": "注:海伦公式是指三角形的面积 $S=\\sqrt{p(p-a)(p-b)(p-c)}= \\frac{1}{4} \\sqrt{2 a^2 b^2+2 b^2 c^2+2 c^2 a^2-a^4-b^4-c^4}$, 其中 $p=\\frac{a+b+c}{2}$.",
+    "figures": []
+}

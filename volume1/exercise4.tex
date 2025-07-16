@@ -1,0 +1,223 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1 已知集合 $\{1,2,3, \cdots, 3 n-1,3 n\}$, 可以分为 $n$ 个互不相交的三元组 $\{x, y, z\}$, 其中 $x+y=3 z$. 则满足上述要求的两个最小的正整数 $n$ 是
+%%<SOLUTION>%%
+5,8 . 设三元组为 $\left\{x_i, y_i, z_i\right\}$, 且 $x_i+y_i=3 z_i, i=1,2, \cdots, n$. 则有 $\sum_{i=1}^n\left(x_i+y_i+z_i\right)=4 \sum_{i=1}^n z_1=\frac{3 n(3 n+1)}{2}$. 当 $2 \mid n$ 时, $8 \mid n$, 得 $n$ 的最小值为 8 ; 当 $2 \times n$ 时, $8 \mid 3 n+1$, 得 $n$ 的最小值为 5 . 可验证 $5 、 8$ 即为所求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2 设 $S$ 是一个有 6 个元素的集合,选取 $S$ 的两个子集(可以相同), 使得这两个子集的并集是 $S$, 选取的次序无关紧要, 例如, 一对子集 $\{a, c\},\{b, c$, $d, e, f\}$ 与一对子集 $\{b, c, d, e, f\},\{a, c\}$ 表示同一种取法.
+这样的取法有?种。
+%%<SOLUTION>%%
+$435$. 设 $S=A \cup B,|A| \leqslant|B|$. 若 $|A|=0$, 则 $|B|=6$, 有 1 种取法; 若 $|A|=1$, 则 $|B|=6,5$, 有 $\mathrm{C}_6^1 \mathrm{C}_6^6+\mathrm{C}_6^1 \mathrm{C}_5^5=12$ 种取法; 类似地, 可分别计算出 $|A|=2,3,4,5,6$ 时的取法数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3 设集合 $A \cup B=\{1,2, \cdots, 9\}, A \cap B=\varnothing$. 求证: 在 $A$ 或 $B$ 中含有三个元素 $x 、 y 、 z$, 使得 $x+z=2 y$.
+%%<SOLUTION>%%
+假设结论不成立.
+不妨设 $5 \in A$, 则 $1 、 9$ 不同时属于 $A$. 若 $1 \in A$, 且 $9 \in B$, 则 $3 \in B \Rightarrow 6 \in A \Rightarrow 4,7 \in B \Rightarrow 2,8 \in A$, 与 $5 \in A$ 矛盾.
+若 $1,9 \in B$, 当 $7 \in A \Rightarrow 3,6 \in B$, 与 $9 \in B$ 矛盾; 当 $7 \in B \Rightarrow 8,4 \in A \Rightarrow 3 \in B \Rightarrow 2 \in A$, $2,5,8 \in A$ 矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4 已知集合 $M$ 是 $\{1,2, \cdots, 2003\}$ 的子集,且 $M$ 中任意两个元素之和均不能被 3 整除.
+求集合 $M$ 中元素个数的最大值.
+%%<SOLUTION>%%
+考虑集合 $A=\{3,6,9, \cdots, 2001\}, B=\{1,4,7, \cdots, 2002\}, C= \{2,5,8, \cdots, 2003\}$. 由 $A$ 中至多选一个元素与集合 $B$ 或 $C$ 构成一个新的集合 $M$. 因为 $|B|=|C|=668$, 所以 $M$ 中最多有 669 个元素.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5 试证: 对于每个大于 1 的整数 $r$, 都能找到一个最小的整数 $h(r)>1$, 使在集合 $\{1,2, \cdots, h(r)\}$ 分成 $r$ 组的任何分划中,都存在整数 $a \geqslant 0,1 \leqslant x \leqslant y$, 使数 $a+x, a+y, a+x+y$ 含于分划的同一组中.
+%%<SOLUTION>%%
+考察将 $\{1,2, \cdots, 2 r\}$ 分成 $r$ 组的任一分划.
+在 $r, r+1, \cdots, 2 r$ 这 $r+1$ 个数中, 必有两个数 $u$ 和 $v$ 属于同一组, 不妨设 $u<v$. 令 $a=2 u-v \geqslant 0, x=y=v-u \geqslant 1$, 则 $a+x=a+y=u, a+x+y=v$ 在同一组中.
+由此可见, $h(r) \leqslant 2 r$.
+另一方面, 考察 $\{1,2, \cdots, 2 r-1\}$ 的如下分划: $\{1,1+r\},\{2,2+ r\}, \cdots,\{r-1,2 r-1\},\{r\}$. 显然 $a+x 、 a+y 、 a+x+y$ 不能同在 $\{r\}$ 中.
+设它们都在 $\{k, k+r\}$ 中, 于是只能是 $a+x=a+y=k, a+x+y=a+ 2 x=k+r$. 从而有 $x=y=r$. 这样一来, $a=k-r<0$, 矛盾.
+而且由证明可知, 当 $n<2 r$ 时, $\{1,2, \cdots, n\}$ 都不能满足要求.
+综上可知, $h(r)=2 r$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6 已知整个空间被分成互不相交的 5 个非空集合, 求证: 必有一个平面, 它至少与其中的 4 个集合有公共点.
+%%<SOLUTION>%%
+若不然,则任何一个平面至多与其中的 3 个集合相交.
+在 5 个集合中各取 1 点, 5 点分别为 $A 、 B 、 C 、 D 、 E$, 则其中任何 4 点都不共面, 因而其中任何 3 点都不共线.
+考察以 $A B$ 为公共交线的 3 个平面 $A B C 、 A B D$ 和 $A B E$, 不难看出, 其中必有一个平面, 使得另两点分别属于该平面将空间分成的两个半空间中.
+不妨设点 $D$ 和 $E$ 分别位于平面 $A B C$ 的两侧.
+从而直线 $D E$ 与平面 $A B C$ 相交, 记交点为 $F$. 由于 $A 、 B 、 C 3$ 点分属于 3 个集合, 而平面 $A B C$ 只与 3 个集合相交, 所以点 $F$ 必属于点 $A 、 B 、 C$ 所在的 3 个集合之一, 不妨设 $F$ 与 $A$ 属于同一个集合.
+这样一来, 4 点 $D 、 F 、 E 、 B$ 所决定的平面便与 4 个集合相交,矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7 $X=\{1,2, \cdots, n\}, A 、 B 、 C$ 是 $X$ 的分划, 即 $A \cup B \cup C=X$, 并且 $A 、 B$ 、 $C$ 两两的交集都是空集.
+如果从 $A 、 B 、 C$ 中各取一个元素, 那么每两个的和都不等于第三个.
+求
+$$
+\max \{\min (|A|,|B|,|C|)\} .
+$$
+%%<SOLUTION>%%
+考虑奇偶性.
+如果 $A$ 由 $X$ 中的奇数组成, $B \cup C$ 由 $X$ 中的偶数组成, 那么它们合乎题设要求.
+这时 $\min (|A|,|B|,|C|)=\left[\frac{n}{4}\right]$. 由此, 猜测 $\max \{\min (|A|,|B|,|C|)\}=\left[\frac{n}{4}\right]$, 也就是恒有 $\min (|A|,|B|$, $|C|) \leqslant \frac{n}{4}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8 (1)证明：正整数集 $\mathbf{N}^*$ 可以表示为三个彼此不相交的集合的并集,使得: 若 $m, n \in \mathbf{N}^*$, 且 $|m-n|=2$ 或 5 , 则 $m 、 n$ 属于不同的集合.
+(2)证明: 正整数集 $\mathbf{N}^*$ 可以表示为 4 个彼此不相交的集合的并集,使得: 若 $m, n \in \mathbf{N}^*$, 且 $|m-n|=2 、 3$ 或 5 , 则 $m 、 n$ 属于不同的集合.
+并说明：此时将 $\mathbf{N}^*$ 拆分为三个彼此不相交的集合的并集时,命题不成立.
+%%<SOLUTION>%%
+(1) 令 $A=\left\{3 k \mid k \in \mathbf{N}^*\right\}, B=\left\{3 k-2 \mid k \in \mathbf{N}^*\right\}, C=\{3 k- 1 \mid k \in \mathbf{N}^*\}$, 则 $A 、 B 、 C$ 彼此的交集为空集, 且 $A \cup B \cup C=\mathbf{N}^*$, 并且此时属于同一集合的两个元素之差为 3 的倍数,不等于 2 或 5 .
+(2) 令 $A=\left\{4 k \mid k \in \mathbf{N}^*\right\}, B=\left\{4 k-1 \mid k \in \mathbf{N}^*\right\}, C=\{4 k-2 \mid k \in \mathbf{N}^*\}, D=\left\{4 k-3 \mid k \in \mathbf{N}^*\right\}$. 同上讨论, 可知命题成立.
+假设可以将 $\mathbf{N}^*$ 表示为三个集合 $A 、 B 、 C$ (彼此不相交) 的并集, 使得：对任意的 $m, n \in \mathbf{N}^*$, 当 $|m-n|=2 、 3$ 或 5 时, $m 、 n$ 属于不同的集合.
+不妨设 $1 \in A$, 则 $3 \bar{\epsilon} A$, 从而 $3 \in B$ 或 $3 \in C$. 不妨设 $3 \in B$, 则 $6 \bar{\epsilon} A$ 且 $6 \bar{\in} B$, 故 $6 \in C$. 依此类推, 可知 $4 \in B, 8 \in A, 5 \in C, 7 \in A$. 这时, 9 属于 $A 、 B 、 C$ 中任何一个集合均导致矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9 试确定所有的正整数 $n$, 使得集合 $\{1,2, \cdots, n\}$ 可以分成 5 个互不相交的子集,每个子集中元素之和相等.
+%%<SOLUTION>%%
+我们先找一个必要条件, 若 $\{1,2, \cdots, n\}$ 能分成 5 个互不相交的子集, 各个子集的元素和相等, 则 $1+2+\cdots+n=\frac{n(n+1)}{2}$ 能被 5 整除, 所以 $n=5 k$ 或 $n=5 k-1$. 显然, 当 $k=1$ 时, 上述条件不是充分的.
+可用数学归纳法证明, 当 $k \geqslant 2$ 时, 条件是充分的.
+当 $k=2,3$, 即 $n=9,10,14,15$ 时, 可以验证结论成立:
+若集合 $\{1,2, \cdots, n\}$ 能分成 5 个互不相交的子集, 且它们各自的元素和相等, 则易证 $\{1,2, \cdots, n, n+1, \cdots, n+10\}$ 也能分成 5 个互不相交的子集, 且它们每个的元素和相等.
+假设对于 $n=5 k-1 、 5 k$, 命题正确, 由上面的讨论知, 对于 $n=5(k+2)-$ 1、 $5(k+2)$ 命题也成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10 设 $k$ 为正整数, $M_k$ 是 $2 k^2+k$ 与 $2 k^2+3 k$ 之间 (包括这两个数在内) 的所有整数组成的集合.
+能否将 $M_k$ 拆分为两个不相交的子集 $A 、 B$, 使得
+$$
+\sum_{x \in A} x^2=\sum_{x \in B} x^2 ?
+$$
+%%<SOLUTION>%%
+当 $k=1$ 时, $3^2+4^2=5^2$; 当 $k=2$ 时, $10^2+11^2+12^2=13^2+14^2$. 猜想: $M_k$ 中前 $k+1$ 个数的平方和与后 $k$ 个数的平方和相等.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11 给定正整数 $n \geqslant 3$, 求具有下列性质的正整数 $m$ 的最小值: 把集合 $S= \{1,2, \cdots, m\}$ 任意分成两个不相交的非空子集的并集, 其中必有一个子集内含有 $n$ 个数(不要求它们互不相同): $x_1, x_2, \cdots, x_n$, 使 $x_1+x_2+\cdots+x_{n-1}=x_n$.
+%%<SOLUTION>%%
+若 $S$ 不具有题设性质,则存在 $S$ 的两个非空不相交的子集 $A$ 和 $B$ 使 $S=A \cup B$, 并且 $A$ (或 $B$ ) 中任意 $n-1$ 个数 (不要求互不相同) 的和都不在 $A$ (或 $B$ ) 内.
+不妨设 $1 \in A$, 则 $\underbrace{1+1+\cdots+1}_{n-1 \text { 个 }}=n-1 \in B$ (只要 $m \geqslant n-1$ ), 从而 $\underbrace{(n-1)+(n-1)+\cdots+(n-1)}_{n-1 \text { 个 }}=(n-1)^2 \in A\left(\right.$ 只要 $\left.m \geqslant(n-1)^2\right)$. 若 $n \in A$, 则 $(n-1)^2=\underbrace{n+n+\cdots+n}_{n-2 \uparrow}+1 \in B$, 矛盾.
+若 $n \in B$, 则 $\underbrace{n+n+\cdots+n}+ (n-1)=n^2-n-1 \in A\left(\right.$ 只要 $\left.m \geqslant n^2-n-1\right)$, 但 $\underbrace{1+1+\cdots+1}_{n-2 \text { 个 }}+(n-1)^2= n^2-n-1 \in B$, 矛盾.
+可见, 当 $m \geqslant n^2-n-1$ 时, 集合 $S=\{1,2, \cdots, m\}$ 具有题设性质.
+其次,对于集合 $S=\left\{1,2,3, \cdots, n^2-n-2\right\}$, 令 $A=\left\{1,2, \cdots, n-2, (n-1)^2,(n-1)^2+1, \cdots, n^2-n-2\right\}, B=\left\{(n-1), n, \cdots,(n-1)^2-1\right\}$, 则 $A \cap B=\varnothing, S=A \cup B$. 若 $x_1, x_2, \cdots, x_{n-1} \in\{1,2, \cdots, n-2\} \subset A$, 则 $n-1 \leqslant x_1+x_2+\cdots+x_{n-1} \leqslant(n-1)(n-2)<(n-1)^2$, 故 $x_1+x_2+\cdots+ x_{n-1} \notin A$. 若 $x_1, x_2, \cdots, x_{n-1}$ 中至少有一个 $\in\left\{(n-1)^2,(n-1)^2+1, \cdots\right.$, $\left.n^2-n-2\right\}$, 则 $x_1+x_2+\cdots+x_{n-1} \geqslant \underbrace{1+1+\cdots+1}_{n-2 \text { 个 }}+(n-1)^2=n^2-n-$ 1,故 $x_1+x_2+\cdots+x_{n-1} \notin A$. 若 $x_1, x_2, \cdots, x_{n-1} \in B$, 则 $x_1+x_2+\cdots+ x_{n-1} \geqslant(n-1)^2$,故 $x_1+x_2+\cdots+x_{n-1} \notin B$. 可见, $m=n^2-n-2$ 时, 集合 $S=\{1,2, \cdots, m\}$ 不具有题设条件.
+所求 $m$ 的最小值为 $n^2-n-1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12 设 $n$ 是大于 3 的自然数,且具有下列性质: 把集合 $S_n=\{1,2, \cdots, n\}$ 任意分为两个不相交的子集, 总有某个子集, 它含有三个数 $a 、 b 、 c$ (允许 $a=b)$, 使得 $a b=c$. 求这样的 $n$ 的最小值.
+%%<SOLUTION>%%
+若 $n \geqslant 3^5$, 则 $3,3^2, 3^4, 3^5 \in S_n$. 设集合 $S_n$ 分为两个不相交的子集 $A$ 和 $B, 3 \in A$, 且 $A$ 和 $B$ 不满足题中条件.
+于是 $3^2 \in B, 3^4 \in A, 3^3 \in B, 3^5 \in B$. 这时 $B$ 中三个元素 $3^2, 3^3, 3^5$ 满足 $a b=c$ 矛盾.
+这表明 $n \geqslant 3^5$ 时, 把集合 $S_n$ 任意分为两组, 总有某个组, 具有题中性质, 即所求最小值不超过 $3^5=243$.
+另一方面, 取 $n=242$, 且设 $A=\{k \mid 9 \leqslant k \leqslant 80\}, B=\{k \mid 3 \leqslant k \leqslant 8$,或 $81 \leqslant k \leqslant 242\}$, 则 $S_{242}=A \cup B$, 而且 $A$ 和 $B$ 都不具有题中性质.
+当 $n<$ 242 时, 将 $S_n$ 分为两组 $A \cap S_n$ 和 $B \cap S_n$, 则 $A \cap S_n$ 和 $B \cap S_n$ 也都不具有题中性质.
+故 $n$ 的最小值为 243 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13 设 $S$ 为 $n$ 个正实数组成的集合, 对 $S$ 的每个非空子集 $A$, 令 $f(A)$ 为 $A$ 中所有元素的和.
+求证: 集合 $\{f(A) \mid A \subseteq S, A \neq \varnothing\}$ 可以分拆为 $n$ 个互不相交的子集, 每个子集中最大数与最小数之比小于 2 .
+%%<SOLUTION>%%
+设 $S=\left\{u_1, u_2, \cdots, u_n\right\}$, 且 $u_1<u_2<\cdots<u_n . u_i>0(i=1, \cdots$, $n)$. 令 $S_1=\left\{f(A) \mid A=\left\{u_1\right\}\right\} . S_k=\left\{f(A) \mid u_1+u_2+\cdots+u_{k-1}<f(A) \leqslant u_1+u_2+\cdots+u_k\right\}, k=2,3, \cdots, n$. 则 $S_1, S_2, \cdots, S_n$ 是符合要求的分拆.
+事实上, 在 $S_1$ 中最大数与最小数都等于 $u_1$, 结论显然.
+当 $k \geqslant 2$ 时, 若$u_{k}\leq u_{1}+u_{2}+\cdots+u_{k-1}$ ,则在 ${S_{k}}$ 中 $\frac{最大数}{最小数}<{\frac{u_{1}+\cdots+u_{k-1}+u_{k}}{u_{1}+\cdots+u_{k-1}}}<2;$ 若 $u_{k}\ >u_{1}+u_{2}+\cdots+u_{k-1}$ 则$\frac{最大数}{最小数}={\frac{u_{1}+u_{2}+\cdots+u_{k-1}+u_{k}}{u_{k}}}<2$ .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14 试求所有正整数 $k$, 使得集合 $M=\{1990,1991, \cdots, 1990+k\}$ 可以分解为两个不相交的子集 $A$ 与 $B$, 且使两集合中的元素之和相等.
+%%<SOLUTION>%%
+由 $\sum_{n=0}^k(1990+n)=1990(k+1)+\frac{1}{2} k(k+1)$ 为偶数, 知 $k(k+1) \equiv 0(\bmod 4)$. 由此可知 $k \equiv 0(\bmod 4)$ 或 $k \equiv 3(\bmod 4)$. 换句话说, $k=4 m+1$ 与 $k=4 m+2(m=0,1,2, \cdots)$ 都不满足本题要求.
+设 $k \equiv 3(\bmod 4)$, 则 $4 \mid(k+1)$. 令 $A=\{1990+j \mid j=4 m, 4 m+3,m=0,1, \cdots,\left[\frac{k}{4}\right]\}, B=\{1990+j \mid j=4 m+1,4 m+2, m=0,1, \cdots,\left[\frac{k}{4}\right] \}$, 易见,这样的 $A$ 和 $B$ 满足要求.
+设 $k \equiv 0(\bmod 4)$, 于是 $k=4 m, m \in \mathbf{N}^*$. 因为 $|M|$ 为奇数, 故有 $|A| \neq|B|$. 不妨设 $|A|>|B|$, 于是 $|A| \geqslant 2 m+1,|B| \leqslant 2 m$. 因而, $A$ 中元素之和不小于 $\sum_{n=0}^{2 m}(1990+n), B$ 中元素之和不大于 $\sum_{n=2 m+1}^{4 m}(1990+n)$, 故得 $\sum_{n=0}^{2 m}(1990+n) \leqslant \sum_{n=2 m+1}^{4 m}(1990+n)=(2 m)^2+\sum_{n=1}^{2 m}(1990+n)$. 解得 $m \geqslant 23$, $k \geqslant 92$. 当 $k=92$ 时, 令 $A_1=\{1990,1991, \cdots, 1990+46\}, B_1=\{1990+47$, $1990+48, \cdots, 1990+92\}$. 两集合中元素之和分别为 $S_{A_1}=1990 \times 47+1081$, $S_{B_1}=1990 \times 46+1081+2116, S_{B_1}-S_{A_1}=126$. 再令 $A=A_1 \cup\{2053\}- \{1990\}, B=B_1 \cup\{1990\}-\{2053\}$, 则集合 $A$ 和 $B$ 即为满足题中要求的分解.
+当 $k>92$ 时, 我们将前 93 个数分组如上, 而将后面的 $k-92=4 m$ 个数中的每相邻 4 数按前面 $k \equiv 3(\bmod 4)$ 的办法处理即可得到所需要的分解.
+综上可知, 所求的所有 $k$ 的集合为 $\{k \mid k=4 m+3, m=0,1, \cdots ; k= 4 m, m=23,24, \cdots\}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15 给定集合 $S=\left\{z_1, z_2, \cdots, z_{1993}\right\}$, 其中 $z_1, z_2, \cdots, z_{1993}$ 都是非零复数 (可看作平面上的非零向量). 求证: 可以把 $S$ 中的元素分成若干组, 使得
+(1) $S$ 中的每个元素属于且仅属于其中一组;
+(2) 每组中的任一复数与该组中所有复数之和的夹角不超过 $90^{\circ}$;
+(3) 将任意两组中的所有复数分别求和, 所得的两个和数之间的夹角大于 $90^{\circ}$.
+%%<SOLUTION>%%
+考虑集合 $S$ 的所有子集并计算每个子集中所有复数的和的模.
+因这样得到的模数只有有限多个, 故其中必有最大数.
+将模取最大值的子集之一记为 $A$. 如果 $S-A \neq \varnothing$, 再将 $S-A$ 的所有子集中能使其中所有复数之和的模达到最大的一个子集取为 $B$. 如果 $S-(A \cup B) \neq \varnothing$, 则令 $C=S-(A \cup B)$. 这样选取的至多 3 个子集便满足题中要求.
+将 $A 、 B 、 C$ 中所有元素之和分别记为 $a 、 b 、 c$.
+(i) 对任意 $z \in A$, 如果 $z$ 与 $a$ 的夹角为钝角, 则 $-z$ 与 $a$ 的夹角为锐角.
+于是有 $|a+(-z)|>|a|$, 即子集 $A-\{z\}$ 中所有元素之和的模大于 $a$ 的模, 此与 $|a|$ 的最大性矛盾.
+这就证明了 $A$ 中任一元素与 $a$ 的夹角都不超过 $90^{\circ}$. 同理, $B$ 中任一元素与 $b$ 的夹角也不超过 $90^{\circ}$.
+(ii) 对任意 $\xi \in S-A, \xi$ 与 $a$ 的夹角都是钝角.
+否则又导致 $|a+\xi|>|a|$, 矛盾.
+同理, $C$ 中任一元素 $\eta$ 与 $b$ 的夹角都是钝角.
+由此可见, $B$ 中所有元素均与 $a$ 成钝角, 从而其和 $b$ 与 $a$ 夹钝角.
+同理, $c$ 与 $a, c$ 与 $b$ 都夹钝角, 即 (3) 成立.
+(iii) 若存在 $\xi \in C$, 使 $\xi$ 与 $c$ 夹针角, 则由 (ii) 知, 4 个数 $a 、 b 、 c 、 \xi$ 两两之间都夹钝角, 此不可能.
+所以, $C$ 中任一元素与 $c$ 的夹角都不超过 $90^{\circ}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16 设 $r 、 s 、 n$ 都是正整数, 并且 $r+s=n$. 求证: 集合
+$$
+\begin{aligned}
+& A=\left\{\left[\frac{n}{r}\right],\left[\frac{2 n}{r}\right], \cdots,\left[\frac{(r-1) n}{r}\right]\right\}, \\
+& B=\left\{\left[\frac{n}{s}\right],\left[\frac{2 n}{s}\right], \cdots,\left[\frac{(s-1)}{s} \underline{n}\right]\right\}
+\end{aligned}
+$$
+构成 $N=\{1,2, \cdots, n-2\}$ 的分划的充要条件是 $r$ 和 $s$ 都与 $n$ 互质, 其中 $[x]$ 表示不超过实数 $x$ 的最大整数.
+%%<SOLUTION>%%
+因 $|A|=r-1,|B|=s-1,|N|=n-2$, 故 $A$ 与 $B$ 构成 $N$ 的一个分划等价于 $A \cap B=\varnothing$.
+必要性.
+若 $r 、 n$ 之一与 $n$ 有公因数 $d$, 则另一个也与 $n$ 有公因数 $d$. 设 $r= r^{\prime} d, s=s^{\prime} d$, 于是 $\left[\frac{r^{\prime} n}{r}\right]=\left[\frac{s^{\prime} n}{s}\right], A \cap B \neq \varnothing$, 矛盾.
+充分性.
+假设 $A \cap B \neq \varnothing$, 则存在整数 $a 、 b$, 使 $\left[\frac{a n}{r}\right]=\left[\frac{b n}{s}\right]=p, p< \frac{a n}{r}<p+1, p<\frac{b n}{s}<p+1$, 即 $\frac{p r}{n}<a<\frac{(p+1) r}{n}, \frac{p s}{n}<b<\frac{(p+1) s}{n}$, 相加得 $p<a+b<p+1$. 矛盾.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题25. 设 $p$ 为奇素数, $a_1, a_2, \\cdots, a_{p-2}$ 是一个正整数数列, 满足: 对任意 $k \\in\\{1$, $2, \\cdots, p-2\\}$ 都有 $p \\nmid a_k\\left(a_k^k-1\\right)$. 证明: 可以从 $a_1, a_2, \\cdots, a_{p-2}$ 中取出若干个数,使得它们的乘积 $\\equiv 2(\\bmod p)$.",
+    "solution": "我们证明: 当 $k=2, \\cdots, p-1$ 时, 存在一个集 $\\left\\{b_{k, 1}, b_{k, 2}, \\cdots\\right.$, $\\left.b_{k, k}\\right\\}$, 其中 $b_{k, i}=1$ 或者某些 $a_1, \\cdots, a_{k-1}$ 中的数之积, 满足: (1) 对 $1 \\leqslant i<j \\leqslant k$, 都有 $b_{k, i} \\not=b_{k, j}(\\bmod p)$.\n当 $k=2$ 时, 由条件知 $a_1 \\neq \\equiv 1(\\bmod p)$, 取 $\\left\\{b_{k, 1}, b_{k, 2}\\right\\}=\\left\\{1, a_1\\right\\}$ 即可.\n现设(1)对 $k(2 \\leqslant k \\leqslant p-2)$ 成立, 由条件 $p \\nmid a_k$, 故 $a_k b_{k, 1}, \\cdots, a_k b_{k, k}$ 对 $\\bmod p$ 两两不同余, 并由 $\\left\\{b_{k, 1}, \\cdots, b_{k, k}\\right\\}$ 的构成 (每个数都不是 $p$ 的倍数) 及 $a_k^k \\neq 1 (\\bmod p)$, 可知\n$$\n\\left(a_k b_{k, 1}\\right) \\cdots\\left(a_k b_{k, k}\\right) \\not \\equiv b_{k, 1} \\cdots b_{k, k}(\\bmod p) .\n$$\n所以, 在 $\\bmod p$ 意义下, $\\left(a_k b_{k, 1}, \\cdots, a_k b_{k, k}\\right)$ 不是 $\\left(b_{k, 1}, \\cdots, b_{k, k}\\right)$ 的一个排列, 从而存在 $j \\in\\{1,2, \\cdots, k\\}$, 使得 $\\left\\{a_k b_{k, j}, b_k, 1, \\cdots, b_{k, k}\\right\\}$ 中任意两个数 $\\bmod p$ 不同余.\n依此可知, 结论(1)成立.\n现在考察 $\\left\\{b_{p-1,1}, \\cdots, b_{p-1, p-1}\\right\\}$ 即可得出题中要求的结论 (因为它们构成 $\\bmod p$ 的简系).",
+    "remark": "",
+    "figures": []
+}

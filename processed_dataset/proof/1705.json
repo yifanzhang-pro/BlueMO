@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例3. 如图(<FilePath:./images/volume7/figures/fig-c4i4.png>), 设 $A 、 B$ 是定点, $C$ 是动点, 且 $\\angle A C B=\\alpha$ 是定角, 其中, $0^{\\circ}<\\alpha<180^{\\circ} . \\triangle A B C$ 的内切圆 $\\odot I$ 在边 $B C 、 C A 、 A B$ 上的切点分别为 $F 、 E 、 D$, $E F$ 分别与直线 $A I 、 B I$ 交于点 $M 、 N$. 证明: 线段 $M N$ 的长是定长,且 $\\triangle D M N$ 的外接圆过一个定点.",
+    "solution": "证明:取线段 $A B$ 的中点 $O$.\n因 $\\angle C E F=90^{\\circ}-\\frac{1}{2} \\angle C=180^{\\circ}-\\angle A I B= \\angle A I N$.\n所以 $I 、 N 、 E 、 A$ 四点共圆.\n又 $I 、 E 、 A 、 D$ 四点共圆, 则 $I 、 N 、 E 、 A 、 D$ 五点共圆.\n同理, $B 、 F 、 M 、 I 、 D$ 五点共圆.\n从而, $\\angle A N B=\\angle A E I=90^{\\circ}, \\angle A M B=\\angle I F B=90^{\\circ}$.\n因此, 点 $M 、 N$ 均在以 $A B$ 为直径的圆上.\n则\n$$\n\\begin{aligned}\n\\angle M O N & =2 \\angle M A N=2 \\angle M B N \\\\\n& =\\angle N A M+\\angle N B M \\\\\n& =\\angle N D I+\\angle M D I=\\angle M D N .\n\\end{aligned}\n$$\n故 $M 、 N 、 O 、 D$ 四点共圆.\n因此, $\\triangle M N D$ 的外接圆过定点 $O$.\n另一方面, $M N=A B \\sin \\angle N A M=A B \\sin \\angle I E F=A B \\sin \\frac{C}{2}=A B \\sin \\frac{\\alpha}{2} \\text { 为定值.\n}$",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4i4.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题10 求所有满足下面方程的函数 $f: \\mathbf{R} \\rightarrow \\mathbf{R}$ : 对任意实数 $x 、 y$, 有\n$$\nx f(y)+y f(x)=(x+y) f(x) f(y) .\n$$",
+    "solution": "取 $x=y=1$ 代入题设方程, 得 $2 f(1)=2(f(1))^2$, 所以 $f(1)=0$ 或 $f(1)=1$. (1) 若 $f(1)=0$. 取 $y=1$ 代入原方程, 得 $x f(1)+f(x)= (x+1) f(x) f(1)$, 所以 $f(x)=0$. (2) 若 $f(1)=1$, 取 $y=1$ 代入原方程, 得 $x+f(x)=(x+1) f(x), x(f(x)-1)=0$. 所以 $f(x)= \\begin{cases}1,  \\text { 当 } x \\neq 0 \\text { 时; } \\\\ \\text { 任意实数, 当 } x=0 \\text { 时.\n}\\end{cases}$.",
+    "remark": "",
+    "figures": []
+}

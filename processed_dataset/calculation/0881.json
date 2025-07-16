@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题11. (W. Janous 不等式推广形式)\n设 $a_1, a_2, \\cdots, a_n \\in \\mathbf{R}^{+}, p, q \\in \\mathbf{R}^{+}$. 记 $S=\\left(a_1^p+a_2^p+\\cdots+a_n^p\\right)^{\\frac{1}{p}}$, 则对于 $1,2, \\cdots, n$ 的任一排列 $i_1, i_2, \\cdots, i_n$, 有: $\\sum_{k=1}^n \\frac{a_k^q-a_{i_k}^q}{S^p-a_k^p} \\geqslant 0$.",
+    "solution": "由对称性, 不妨设 $a_1 \\geqslant a_2 \\geqslant \\cdots \\geqslant a_n$, 则\n$$\n\\sum_{j=1}^k a_j^q \\geqslant \\sum_{j=1}^k a_{i_j}^q(1 \\leqslant k \\leqslant n-1), \\sum_{j=1}^n a_j^q=\\sum_{j=1}^n a_{i_j}^q,\n$$\n且 $\\left(S^p-a_k^p\\right)^{-1} \\geqslant\\left(S^p-a_{k+1}^p\\right)^{-1}(1 \\leqslant k \\leqslant n-1)$.\n由分部求和公式, 有 $\\sum_{k=1}^n \\frac{a_k^q-a_{k_k}^q}{S^p-a_k^p}=\\left(S^p-a_n^p\\right)^{-1} \\cdot \\sum_{j=1}^n\\left(a_j^q-a_{i_j}^q\\right)+ \\sum_{k=1}^{n-1}\\left[\\sum_{j=1}^k\\left(a_j^q-a_{i_j}^q\\right)\\right] \\cdot\\left[\\left(S^p-a_k^p\\right)^{-1}-\\left(S^p-a_{k+1}^p\\right)^{-1}\\right] \\geqslant 0$, 故原不等式成立.",
+    "remark": "",
+    "figures": []
+}

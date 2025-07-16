@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题19. 已知 $P$ 是等边 $\\triangle A B C$ 外接圆 $\\overparen{B C}$ 上的任意一点,\n(1) 求证: $P A=P B+P C, P A^2=B C^2+P B \\cdot P C$;\n(2) 求 $S_{\\triangle P A B}+S_{\\triangle P B C}$ 的最大值.",
+    "solution": "(1) $\\triangle P A B$ 中, 设 $\\angle B A P=\\alpha$, 则 $\\angle P B A= 120^{\\circ}-\\alpha, \\angle P A C=60^{\\circ}-\\alpha$, 从而 $P B+P C=2 R\\left[\\sin \\alpha+ \\sin \\left(60^{\\circ}-\\alpha\\right)\\right]=2 R \\cos \\left(30^{\\circ}-\\alpha\\right)=2 R \\sin \\left(120^{\\circ}-\\alpha\\right)=P A$, $A B^2=B C^2=P A^2+P B^2-2 P A \\cdot P B \\cos 60^{\\circ}=P A^2+ P B^2-P A \\cdot P B=P A^2-P B \\cdot P C$. \n(2) 设 $\\triangle A B C$ 边长为 $a$, 则 $S_{\\triangle P A B}+S_{\\triangle P B C}=\\frac{1}{2} a \\cdot P A \\sin \\alpha+\\frac{1}{2} a \\cdot P C \\sin \\alpha= \\frac{1}{2} a \\sin \\alpha(P A+P C)$, 在 $\\triangle P A C$ 中, $\\frac{P A}{\\sin \\left(60^{\\circ}+\\alpha\\right)}=\\frac{P C}{\\sin \\left(60^{\\circ}-\\alpha\\right)}=\\frac{A C}{\\sin 60^{\\circ}}$, 从而 $P A+P C=\\frac{2}{\\sqrt{3}} a\\left[\\sin \\left(60^{\\circ}+\\alpha\\right)+\\sin \\left(60^{\\circ}-\\alpha\\right)\\right]= 2 a \\cos \\alpha$, 所以 $S_{\\triangle P A B}+S_{\\triangle P B C}=\\frac{1}{2} a^2 \\sin 2 \\alpha \\leqslant \\frac{1}{2} a^2$. 即最大值为 $\\frac{1}{2} a^2$.",
+    "remark": "",
+    "figures": []
+}

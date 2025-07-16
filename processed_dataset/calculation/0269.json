@@ -1,0 +1,13 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 如图(<FilePath:./images/volume12/figures/fig-c7i5.png>)、如图(<FilePath:./images/volume12/figures/fig-c7i6.png>) 是平面图吗?",
+    "solution": "解:如图(<FilePath:./images/volume12/figures/fig-c7i5.png>) 包含了一个 $K_5$ 图, 如图(<FilePath:./images/volume12/figures/fig-c7i6.png>) 包含了一个 $K_{3,3}$ 图, 根据库拉托夫斯基定理,这两个图都是非平面图.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c7i5.png",
+        "./images/volume12/figures/fig-c7i6.png",
+        "./images/volume12/figures/fig-c7i5.png",
+        "./images/volume12/figures/fig-c7i6.png"
+    ]
+}

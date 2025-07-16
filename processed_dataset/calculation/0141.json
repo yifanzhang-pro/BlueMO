@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例6. 从 $n(n \\geqslant 6)$ 名乒乓球选手中选拔出 3 对选手准备参加双打比赛, 问共有多少种不同的方法?",
+    "solution": "解:法 1 从 $n$ 名选手中选出 6 名选手有 $\\mathrm{C}_n^6$ 种方法, 将这 6 名选手分成 3 个不同的组,每组 2 名有 $\\left(\\begin{array}{lll} & 6 & \\\\ 2 & 2 & 2\\end{array}\\right)$ 种方法, 但 3 对选手是不计顺序的,故所求的方法数应为\n解法 2 从 $n$ 名选手中选出 6 人有 $\\mathrm{C}_n^6$ 种方法, 选出的 6 人中选出 2 人配成一对有 $\\mathrm{C}_6^2$ 种方法, 剩下 4 人中选 2 人配成一对有 $\\mathrm{C}_4^2$ 种方法, 最后剩下的 2 人配成一对有 $\\mathrm{C}_2^2$ 种方法.\n但因选出的 3 对是不计顺序的, 故所求方法数为\n$$\n\\frac{\\mathrm{C}_n^6 \\mathrm{C}_6^2 \\mathrm{C}_4^2 \\mathrm{C}_2^2}{3 !}=\\frac{n !}{48(n-6) !} .\n$$\n注意本题若改为从 $n$ 名选手中选出 3 对选手分别列为第 $1 、 2 、 3$ 号种子选手,则其不同的选法数目为\n$$\n\\mathrm{C}_n^6 \\mathrm{C}_6^2 \\mathrm{C}_4^2 \\mathrm{C}_2^2=\\frac{n !}{8(n-6) !} .\n$$\n这是因为选出的 3 对选手是排了序的,故不要除以 $3 !$.",
+    "remark": "",
+    "figures": []
+}

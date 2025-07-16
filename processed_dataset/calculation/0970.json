@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 在四边形 $A B C D$ 中, $\\overrightarrow{A B}=\\vec{a}+\\vec{b}, \\overrightarrow{B C}=-4 \\vec{a}-\\vec{b}, \\overrightarrow{C D}=-5 \\vec{a}-2 \\vec{b}$, 四边形 $A B C D$ 的形状为 ( ).\n(A) 长方形\n(B) 平行四边形\n(C) 菱形\n(D) 梯形",
+    "solution": "D.\n$$\n\\overrightarrow{A D}=\\overrightarrow{A B}+\\overrightarrow{B C}+\\overrightarrow{C D}=-8 \\vec{a}-2 \\vec{b}=2 \\overrightarrow{B C}\n$$",
+    "remark": "",
+    "figures": []
+}

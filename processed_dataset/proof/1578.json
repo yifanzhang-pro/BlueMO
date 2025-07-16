@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设实数 $a_1, \\cdots, a_n(n \\geqslant 2)$ 满足 $a_1<a_2<\\cdots<a_n$. 证明:\n$$\na_1 a_2^4+a_2 a_3^4+\\cdots+a_n a_1^4 \\geqslant a_2 a_1^4+a_3 a_2^4+\\cdots+a_n a_{n-1}^4+a_1 a_n^4 .\n$$",
+    "solution": "当 $n=2$ 时,命题显然成立; 设命题对 $n$ ( $\\geqslant 2)$ 成立, 考虑 $n+1$ 的情形.\n由归纳假设知\n$$\n\\begin{aligned}\n& a_1 a_2^4+a_2 a_3^4+\\cdots+a_n a_{n+1}^4+a_{n+1} a_1^4 \\\\\n\\geqslant & a_2 a_1^4+a_3 a_2^4+\\cdots+a_n a_{n-1}^4+a_1 a_n^4-a_n a_1^4+a_n a_{n+1}^4+a_{n+1} a_1^4 .\n\\end{aligned}\n$$\n为证命题对 $n+1$ 成立, 只需证明:(1)\n$$\na_1 a_n^4-a_n a_1^4+a_n a_{n+1}^4+a_{n+1} a_1^4 \\geqslant a_{n+1} a_n^4+a_1 a_{n+1}^4 .\n$$\n为方便起见, 记 $a_1=x, a_n=y, a_{n+1}=z$, 则 $x<y<z$, (1) 转为证明:(2)\n$$\nx y^4+y z^4+z x^4-y x^4-z y^4-x z^4 \\geqslant 0 .\n$$\n注意到,\n$$\n\\begin{aligned}\n\\text { 式左边 }= & x y\\left(y^3-x^3\\right)+y z\\left(z^3-y^3\\right)-z x\\left(z^3-x^3\\right) \\\\\n= & (x y-z x)\\left(y^3-x^3\\right)+(y z-z x)\\left(z^3-y^3\\right) \\\\\n= & -x(z-y)(y-x)\\left(y^2+x y+x^2\\right)+z(y-x)(z-y)\\left(z^2+\\right. \\\\\n& \\left.z y+y^2\\right) \\\\\n= & (y-x)(z-y)\\left(z^3+z^2 y+z y^2-x y^2-x^2 y-x^3\\right) \\\\\n= & (y-x)(z-y)(z-x)\\left(z^2+z x+x^2+z y+x y+y^2\\right) \\\\\n= & \\frac{1}{2}(y-x)(z-y)(z-x)\\left((x+y)^2+(y+z)^2+(z+x)^2\\right) \\\\\n\\geqslant & 0 .\n\\end{aligned}\n$$\n所以,(2)成立,进而,(1)成立,命题对 $n+1$ 成立,获证.",
+    "remark": "",
+    "figures": []
+}

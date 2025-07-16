@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 证明: 对任何非负整数 $n, \\sum_{k=0}^n \\mathrm{C}_{2 n+1}^{2 k+1} 2^{3 k}$ 不能被 35 整除.",
+    "solution": "令 $x_n=\\sum_{k=0}^n \\mathrm{C}_{2 n+1}^{2 k+1} 2^{3 k}=\\frac{1}{\\sqrt{8}} \\sum_{k=0}^n \\mathrm{C}_{2 n+1}^{2 k+1}(\\sqrt{8})^{2 k+1}, y_n=\\frac{1}{\\sqrt{8}} \\cdot \\sum_{k=0}^n \\mathrm{C}_{2 n+1}^{2 k}(\\sqrt{8})^{2 k}$, 于是 $x_n+y_n=\\frac{1}{2 \\sqrt{2}}(\\sqrt{8}+1)^{2 n+1}, x_n-y_n=\\frac{1}{2 \\sqrt{2}}(\\sqrt{8}-1)^{2 n+1}$, 所以 $x_n= \\frac{1}{4 \\sqrt{2}}\\left[(\\sqrt{8}+1)^{2 n+1}+(\\sqrt{8}-1)^{2 n+1}\\right]=\\frac{1}{4 \\sqrt{2}}\\left[(\\sqrt{8}+1)(9+4 \\sqrt{2})^n+(\\sqrt{8}-1)\\right. \\left.(9-4 \\sqrt{2})^n\\right]$, 可见数列 $\\left\\{x_n\\right\\}$ 的特征根为 $r_{1,2}==9 \\pm 4 \\sqrt{2}$, 由 $r_1+r_2=18$, $r_1 r_2=49$ 知 $\\left\\{x_n\\right\\}$ 对应的特征方程为 $r^2-18 r+49=0$, 所以 $x_n$ 满足递推关系 $x_n=18 x_{n-1}-49 x_{n-2}$, 从而 $2 x_{n-1}=36 x_{n-2}-98 x_{n-3}$, 两式相减整理得 $x_n= 20 x_{n-1}-85 x_{n-2}+98 x_{n-3} \\equiv 3 x_{n-3}(\\bmod 5)$. 可见 5 整除 $x_n$ 的充要条件是 5 整除 $x_{n-3}$. 但 $x_0=1, x_1=\\mathrm{C}_3^1 2^0+\\mathrm{C}_3^3 2^3=11$ 和 $x_2=\\mathrm{C}_5^1 2^0+\\mathrm{C}_5^3 \\cdot 2^3+\\mathrm{C}_5^5 2^6=149$ 都不被 5 整除.\n故对一切非负整数 $n, x_n=\\sum_{k=0}^n \\mathrm{C}_{2 n+1}^{2 k+1} 2^{3 k}$ 不被 5 整除, 又 $x_n= 18 x_{n-1}-49 x_{n-2} \\equiv 4 x_{n-1}(\\bmod 7)$, 可见 $7\\left|x_n \\Leftrightarrow 7\\right| x_{n-1}$, 但 $x_0=1$, 7 $x_0$, 所以 $7 \\times x_n$. 又 $(5,7)=1$, 故对一切非负整数 $n, x_n=\\sum_{k=0}^n \\mathrm{C}_{2 n+1}^{2 k+1} 2^{3 k}$ 不被 35 整除.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 设 $1<x_1<2$, 对于 $n=1,2,3, \\cdots$, 定义 $x_{n+1}=1+x_n-\\frac{1}{2} x_n^2$. 求证: 对于 $n \\geqslant 3$, 有 $\\left|x_n-\\sqrt{2}\\right|<\\left(\\frac{1}{2}\\right)^n$.",
+    "solution": "令 $y_n=x_n-\\sqrt{2}$, 下面用数学归纳法证明 $\\left|y_n\\right|<\\left(\\frac{1}{2}\\right)^n, n \\geqslant 3$.\n假设 $\\left|y_n\\right|<\\left(\\frac{1}{2}\\right)^n$, 由题设, $y_{n+1}+\\sqrt{2}=1+y_n+\\sqrt{2}-\\frac{1}{2}\\left(y_n+\\sqrt{2}\\right)^2$, 故 $\\left|y_{n+1}\\right|=\\left|\\frac{1}{2} y_n\\left(2-2 \\sqrt{2}-y_n\\right)\\right|=\\frac{1}{2}\\left|y_n\\right| \\cdot\\left|y_n+2 \\sqrt{2}-2\\right|<\\frac{1}{2}$. $\\left(\\frac{1}{2}\\right)^n \\cdot\\left|\\left(\\frac{1}{2}\\right)^n+2 \\sqrt{2}-2\\right|<\\frac{1}{2} \\cdot\\left(\\frac{1}{2}\\right)^n \\cdot 1=\\left(\\frac{1}{2}\\right)^{n+1}$. 因此结论成立.",
+    "remark": "",
+    "figures": []
+}

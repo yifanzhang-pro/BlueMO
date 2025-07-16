@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例5. 已知两个复系数函数\n$$\nf(x)=\\sum_{k=0}^n a_k x^{n-k}, g(x)=\\sum_{k=0}^n b_k x^{n-k},\n$$\n其中 $a_0=b_0=1, \\sum_{k=1}^{\\left[\\frac{n}{2}\\right]} b_{2 k}$ 和 $\\sum_{k=1}^{\\left[\\frac{n+1}{2}\\right]} b_{2 k-1}$ 均为实数.\n若 $g(x)=0$ 的所有根的平方的相反数是 $f(x)=0$ 的全部根, 求证: $\\sum_{k=1}^n(-1)^k a_k$ 是实数.",
+    "solution": "分析:与解设方程 $g(x)=0$ 的 $n$ 个根为 $x_k(k=1,2, \\cdots, n)$, 则知方程 $f(x)=0$ 的 $n$ 个根为 $-x_k^2(k=1,2, \\cdots, n)$, 于是, 有\n$$\ng(x)=\\prod_{k=1}^n\\left(x-x_k\\right), f(x)=\\prod_{k=1}^n\\left(x+x_k^2\\right) .\n$$\n$$\n\\text { 从而 } \\begin{aligned}\nf(-1) & =\\prod_{k=1}^n\\left(-1+x_k^2\\right) \\\\\n& =\\prod_{k=1}^n\\left(-1-x_k\\right) \\prod_{k=1}^n\\left(1-x_k\\right) \\\\\n& =g(-1) g(1) .\n\\end{aligned} \\label{eq1}\n$$\n因为 $g(1)=\\sum_{k=0}^n b_k=b_0+\\sum_{k=1}^{\\left[\\frac{n}{2}\\right]} b_{2 k}+\\sum_{k=1}^{\\left[\\frac{n+1}{2}\\right]} b_{2 k-1}$,\n$$\n\\begin{aligned}\ng(-1)=\\sum_{k=0}^n b_k(-1)^{n-k}=(-1)^n b_0+(-1)^{n-1} \\sum_{k=1}^{\\left[\\frac{n+1}{2}\\right]} b_{2 k-1}+(-1)^{n-2} \\sum_{k=1}^{\\left[\\frac{n}{2}\\right]} b_{2 k} \\\\\nf(-1)=\\sum_{k=0}^n a_k(-1)^{n-k} \\\\\n=(-1)^n a_0+\\sum_{k=1}^n(-1)^{n-k} a_k \\\\\n=(-1)^n+(-1)^n \\sum_{k=1}^n(-1)^k a_k,\n\\end{aligned}\n$$\n所以\n$$\n\\sum_{k=1}^n(-1)^k a_k=(-1)^n f(-1)-1 . \\label{eq2}\n$$\n由题设条件知 $g(-1) 、 g(1)$ 均是实数, 注意到等式 \\ref{eq1}, 可知 $f(-1)$ 亦是实数, 从而 \\ref{eq2} 式的右端为实数.\n也即 $\\sum_{k=1}^n(-1)^k a_k$ 为实数, 证毕.",
+    "remark": "注:考虑 $f(-1)$ 是本题的关键, 它建立了 $f(x)$ 与 $g(x)$ 的一个关系.",
+    "figures": []
+}

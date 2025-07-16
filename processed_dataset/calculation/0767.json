@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题20 若 $-6<\\log _{\\frac{1}{\\sqrt{2}}} x<-2$, 则方程 $\\cos \\pi x=1$ 的解集为",
+    "solution": "$\\{4,6\\}$.",
+    "remark": "",
+    "figures": []
+}

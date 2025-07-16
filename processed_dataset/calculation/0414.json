@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise10.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 小明家电话号码原为六位数,第一次升位是在首位号码和第二位号码之间加上数字 8 , 成为一个七位数的电话号码; 第二次升位是在首位号码前加上数字 2 , 成为一个八位数的电话号码.\n小明发现, 他家两次升位后的电话号码的八位数, 恰是原来电话号码的六位数的 81 倍, 问: 小明家原来的电话号码是多少?",
+    "solution": "设原来电话号码的六位数为 $\\overline{a b c} \\overline{d e f}$, 则经过两次升位后电话号码的八位数为 $\\overline{2 a 8 b c d e f}$. 根据题意, 有 $81 \\times \\overline{a b c d e f}=\\overline{2 a 8 b c d e f}$.\n记 $x=b \\times 10^4+c \\times 10^3+d \\times 10^2+e \\times 10+f$, 于是\n$$\n81 \\times a \\times 10^5+81 x=208 \\times 10^5+a \\times 10^6+x,\n$$\n解得 $x=1250 \\times(208-71 a)$.\n因为 $0 \\leqslant x \\leqslant 10^5$, 所以 $0 \\leqslant 1250 \\times(208-71 a)<10^5$, 故 $\\frac{128}{71}<a \\leqslant \\frac{208}{71}$.\n因为 $a$ 为整数, 所以 $a=2$. 于是\n$$\nx=1250 \\times(208-71 \\times 2)=82500 .\n$$\n所以, 小明家原来的电话号码为 282500 .",
+    "remark": "",
+    "figures": []
+}

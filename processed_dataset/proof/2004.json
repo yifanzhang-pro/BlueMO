@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设 $a 、 b 、 c$ 是 $\\triangle A B C$ 的边长,求证:\n$$\n\\frac{a}{b+c}+\\frac{b}{c+a}+\\frac{c}{a+b}<2 .\n$$",
+    "solution": "证明:由三角不等式 $a<b+c$ 可得\n$$\n\\frac{a}{b+c}=\\frac{2 a}{2(b+c)}<\\frac{2 a}{a+b+c} .\n$$\n同理\n$$\n\\frac{b}{a+c}<\\frac{2 b}{a+b+c}\n$$\n$$\n\\frac{c}{b+a}<\\frac{2 c}{a+b+c}\n$$\n将上面三个不等式相加即得所求证的不等式.",
+    "remark": "",
+    "figures": []
+}

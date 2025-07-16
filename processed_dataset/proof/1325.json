@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $\\triangle A_1 A_2 A_3$ 与 $\\triangle B_1 B_2 B_3$ 的边长分别为 $a_1 、 a_2 、 a_3$ 与 $b_1 、 b_2 、 b_3$, 面积分别为 $S_1 、 S_2$, 又记\n$$\nH=a_1^2\\left(-b_1^2+b_2^2+b_3^2\\right)+a_2^2\\left(b_1^2-b_2^2+b_3^2\\right)+a_3^2\\left(b_1^2+b_2^2-b_3^2\\right) .\n$$\n则对于 $\\lambda \\in\\left\\{\\frac{b_1^2}{a_1^2}, \\frac{b_2^2}{a_2^2}, \\frac{b_3^2}{a_3^2}\\right\\}$, 求证: $H \\geqslant 8\\left(\\lambda S_1^2+\\frac{1}{\\lambda} S_2^2\\right)$.",
+    "solution": "证明:由海伦公式, 有\n$$\n\\begin{gathered}\n16 S_1^2=2 a_1^2 a_2^2+2 a_2^2 a_3^2+2 a_3^2 a_1^2-a_1^4-a_2^4-a_3^4, \\\\\n16 S_2^2=2 b_1^2 b_2^2+2 b_2^2 b_3^2+2 b_3^2 b_1^2-b_1^4-b_2^4-b_3^4 . \\\\\n\\text { 记 } D_1=\\sqrt{\\lambda} a_1^2-\\sqrt{\\frac{1}{\\lambda}} b_1^2, D_2=\\sqrt{\\lambda} a_2^2-\\sqrt{\\frac{1}{\\lambda}} b_2^2, D_3=\\sqrt{\\lambda} a_3^2-\\sqrt{\\frac{1}{\\lambda}} b_3^2 . \\text { 则 }\n\\end{gathered}\n$$\n有恒等式\n$$\n\\begin{aligned}\n& H-8\\left(\\lambda S_1^2+\\frac{1}{\\lambda} S_2^2\\right) \\\\\n= & \\frac{1}{2}\\left(D_1^2+D_2^2+D_3^2\\right)-\\left(D_1 D_2+D_2 D_3+D_3 D_1\\right) .\n\\end{aligned} \\label{(1)}\n$$\n当 $\\lambda=\\frac{b_1^2}{a_1^2}$ 时, $D_1=0$, (1)式即为\n$$\nH-8\\left(\\lambda S_1^2+\\frac{1}{\\lambda} S_2^2\\right)=\\frac{1}{2}\\left(D_2-D_3\\right)^2 .\n$$\n故结论成立.\n同理原不等式对 $\\lambda=\\frac{b_2^2}{a_2^2}$ 或 $\\frac{b_3^2}{a_3^2}$ 也成立.",
+    "remark": "",
+    "figures": []
+}

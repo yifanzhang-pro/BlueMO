@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题11 已知 $\\cos \\left(\\frac{\\pi}{4}+x\\right)=m$, 则 $\\sin 2 x=$",
+    "solution": "$1-2 m^2$. 由 $\\cos \\left(\\frac{\\pi}{4}+x\\right)=m$, 得 $\\cos 2\\left(\\frac{\\pi}{4}+x\\right)=2 m^2-1$, 即 $\\sin 2 x= -\\cos \\left(\\frac{\\pi}{2}+2 x\\right)=1-2 m^2$.",
+    "remark": "",
+    "figures": []
+}

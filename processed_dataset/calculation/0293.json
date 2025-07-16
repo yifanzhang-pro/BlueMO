@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题7. 已知在 9 个小孩中,每个小孩至少认识其他 4 个小孩,能否让这 9 个小孩排成一行, 使得每个小孩和与他相邻的小孩都认识?",
+    "solution": "作图 $G: 9$ 个顶点表示 9 名小孩, 两小孩认识, 则相应的顶点相邻.\n在 $G$ 中, 任意两个顶点 $v$ 与 $v^{\\prime}$, 有 $d(v)+d\\left(v^{\\prime}\\right) \\geqslant 8$, 根据定理二, $G$ 有哈密顿链.\n按链上顶点顺序把 9 名小孩排成一行即可.",
+    "remark": "",
+    "figures": []
+}

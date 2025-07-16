@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 设 $a, b, c \\in \\mathbf{R}^{+}$, 求证:\n$$\n\\frac{1}{a^3+b^3+a b c}+\\frac{1}{b^3+c^3+a b c}+\\frac{1}{c^3+a^3+a b c} \\leqslant \\frac{1}{a b c} .\n$$",
+    "solution": "由于 $a^3+b^3 \\geqslant a^2 b+b^2 a$, 故 $\\frac{1}{a^3+b^3+a b c} \\leqslant \\frac{1}{a b(a+b+c)}$. 同理 $\\frac{1}{b^3+c^3+a b c} \\leqslant \\frac{1}{b c(a+b+c)} ; \\frac{1}{c^3+a^3+a b c} \\leqslant \\frac{1}{c a(a+b+c)}$. 三式相加即得原不等式成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $n \\geqslant 4, a_1, a_2, \\cdots, a_n$ 是开区间 $(0,2 n)$ 内互不相同的整数.\n证明: 存在 $\\left\\{a_1, a_2, \\cdots, a_n\\right\\}$ 的一个子集, 它的所有元素之和被 $2 n$ 整除.",
+    "solution": "证明:(1) 若 $n \\notin\\left\\{a_1, a_2, \\cdots, a_n\\right\\}$, 则 $2 n$ 个数 $a_1, a_2, \\cdots, a_n, 2 n-a_1$, $2 n-a_2, \\cdots, 2 n-a_n$ 均只能取 $1,2, \\cdots, 2 n-1$ 这 $2 n-1$ 个值, 由抽屈原理知其中必有两个数相等, 但 $a_1, a_2, \\cdots, a_n$ 互不相等, $2 n-a_1, 2 n-a_2, \\cdots, 2 n- a_n$ 也互不相等, 故只可能 $a_i=2 n-a_j$, 又因 $a_i \\neq n, a_j \\neq n$, 所以 $i \\neq j$ 且 $a_i+ a_j=2 n$, 结论成立;\n(2) 若 $n \\in\\left\\{a_1, a_2, \\cdots, a_n\\right\\}$, 不妨设 $a_n=n$, 考虑 $n-1$ 个数 $a_1, a_2, \\cdots$, $a_{n-1}(n-1 \\geqslant 3)$, 在其中任取 3 个数 $a_i<a_j<a_k$, 若 $a_j-a_i$ 及 $a_k-a_j$ 都被 $n$ 整除,则 $a_k-a_i=\\left(a_k-a_j\\right)+\\left(a_j-a_i\\right) \\geqslant 2 n$, 这与 $a_i, a_j, a_k \\in(0,2 n)$ 矛盾, 故 $a_i, a_j, a_k$ 中至少有 2 个数, 它们之差不被 $n$ 整除, 不妨设 $a_2-a_1(>0)$ 不被 $n$ 整除.\n考虑下列 $n$ 个数:\n$$\na_1, a_2, a_1+a_2, a_1+a_2+a_3, \\cdots, a_1+a_2+\\cdots+a_{n-1}\n$$\n(i)若这 $n$ 个数关于模 $n$ 的余数两两不同,则其中必有一个被 $n$ 整除.\n令此数为 $k n$ ( $k$ 为正整数). 若 $k$ 为偶数, 则结论成立.\n若 $k$ 为奇数, 则将此数加上\n$a_n=n$, 知结论也成立;\n(ii) 若这 $n$ 个数中有两个关于模 $n$ 同余,则它们之差被 $n$ 整除,但 $a_2-a_1$ 不被 $n$ 整除,故这个差必是 $a_1, a_2, \\cdots, a_{n-1}$ 中若干个数 (至少一个数)之和, 于是同(i)可证结论成立.",
+    "remark": "注:本题中 $n \\geqslant 4$ 是必要的, $n=3$ 时, 对集合 $\\{1,3,4\\}$, 题目结论不成立.",
+    "figures": []
+}

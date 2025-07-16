@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $x 、 y 、 z$ 为正实数, 证明:\n$$\n\\sum \\frac{x}{\\sqrt{2\\left(x^2+y^2\\right)}}<\\sum \\frac{4 x^2+y^2}{x^2+4 y^2}<9,\n$$\n其中, \" $\\sum \"$ 表示轮换对称和.",
+    "solution": "令 $x \\geqslant y, z$. 则 $\\frac{4 z^2+x^2}{z^2+4 x^2} \\leqslant 1, \\frac{4 x^2+y^2}{x^2+4 y^2}<4, \\frac{4 y^2+z^2}{y^2+4 z^2}<4$. 三式相加, 知右边的不等式成立.\n由均值不等式知 $4 x y^2 \\leqslant y^3+4 x^2 y$. 则 $y^3+4 x^2 y+ 4 x^3+x y^2>4 x y^2+x^3 \\Rightarrow \\frac{4 x^2+y^2}{x^2+4 y^2}>\\frac{x}{x+y}$. 故 $\\sum \\frac{x}{x+y}<\\sum \\frac{4 x^2+y^2}{x^2+4 y^2}$. 由柯西一施瓦兹不等式知 $\\sum \\frac{x}{\\sqrt{2\\left(x^2+y^2\\right)}} \\leqslant \\sum \\frac{x}{x+y}<\\sum \\frac{4 x^2+y^2}{x^2+4 y^2}$. 故命题得证.",
+    "remark": "",
+    "figures": []
+}

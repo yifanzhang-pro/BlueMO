@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 已知 $A A_1 、 B B_1 、 C C_1$ 是锐角 $\\triangle A B C$ 的三条高线.\n证明: $C_1$ 到线段 $A C$ 、 $B C 、 B B_1 、 A A_1$ 的垂足在同一直线上.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c4a11.png>), 设 $B_2 、 A_2 、 M 、 N$ 分别是点 $C_1$ 到线段 $A C 、 B C 、 B B_1 、 A A_1$ 的垂足.\n令 $\\angle A B C=\\beta$. 因为 $C_1 、 B_2 、 C 、 A_2$ 四点共圆, 则 $\\angle C B_2 A_2=\\angle C C_1 A_2= 90^{\\circ}-\\angle C_1 C A_2=\\angle A B C=\\beta$. 又 $B_2 、 A 、 C_1 、 N$ 四点共圆, 则 $\\angle A B_2 N=90^{\\circ}+\\angle C_1 B_2 N=90^{\\circ}+\\angle C_1 A A_1= 90^{\\circ}+90^{\\circ}-\\angle A B C=180^{\\circ}-\\beta$. 所以, $\\angle A B_2 N+\\angle C B_2 A_2=180^{\\circ} \\cdots$ (1). 同理, $\\angle B A_2 M+\\angle C A_2 B_2= 180^{\\circ}$...(2). 由式 (1)(2) 知, 点 $B_2 、 N 、 M 、 A_2$ 在同一直线上.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4a11.png"
+    ]
+}

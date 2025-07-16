@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例6. 如图(<FilePath:./images/volume7/figures/fig-c5i8.png>), 设 $D 、 E$ 是 $\\triangle A B C$ 中 $A B 、 A C$ 上的点.\n求证: 以 $B E 、 C D$ 为直径的两圆的根轴必通过 $\\triangle A B C$ 的垂心.",
+    "solution": "证明:设以 $B E$ 为直径的圆为 $\\odot O_1$, 以 $C D$ 为直径的圆为 $\\odot O_2, B M 、 C N$ 是高线, $H$ 为垂心.\n显然 $M$ 在 $\\odot O_1$ 上, $N$ 在 $\\odot O_2$ 上.\n又因 $B 、 C 、 M 、 N$ 四点共圆, 所以 $H B \\cdot H M= H C \\cdot H N$.\n而 $H B \\cdot H M$ 是 $H$ 对 $\\odot O_1$ 的幕, $H C \\cdot H N$ 是 $H$ 对 $\\odot \\mathrm{O}_2$ 的幂.\n由根轴定理知: $H$ 在它们的根轴上, 即以 $B E 、 C D$ 为直径的两圆的根轴通过 $\\triangle A B C$ 的垂心.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5i8.png"
+    ]
+}

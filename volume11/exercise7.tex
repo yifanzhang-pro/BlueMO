@@ -1,0 +1,93 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 两个高一的学生被允许参加高二学生的象棋比赛, 参加比赛的每个选手都同其他选手比赛一次,胜得一分, 和得半分, 负得零分.
+两个高一的学生一共得 8 分, 每个高二的学生都和他的同年级同学得分相同.
+问有几个高二的学生参加比赛? 他们每人得几分?
+%%<SOLUTION>%%
+设高二的学生有 $n$ 人, 每人得 $k$ 分, 于是所有学生得分的总和为 $8+ n k$, 另一方面, 一共比赛了 $\mathrm{C}_{n+2}^2$ 场, 每场队员得分的总和为 1 分, 所有学生得分的总和为 $\mathrm{C}_{n+2}^2$, 所以 $\mathrm{C}_{n+2}^2=8+n k$, 即 $n^2-(2 k-3) n-14=0$, 因此, 14 应被 $n$ 整除, 于是 $n=1,2,7$ 或 14 . 但 $n=1,2$ 时, $k<0$, 不可能; $n=$ 7 时, $k=4, n=14$ 时, $k=8$ 均可实现.
+故参赛的高二学生有 7 人, 每人得 4 分或有 14 人, 每人得 8 分.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 一所学校有 $b$ 个老师和 $c$ 个学生且满足: (1) 每个老师恰教 $k$ 个学生; (2)对任意两个不同的学生恰有 $h$ 个老师同时教他们.
+求证: $\frac{b}{h}= \frac{c(c-1)}{k(k-1)}$.
+%%<SOLUTION>%%
+如果老师 $t_r$ 同时教两名学生 $s_i$ 与 $s_j$, 那么将 $t_r$ 与 $s_i, s_j$ 组成三元组 $\left(t_{r j}, s_i, s_j\right)$, 并设这样的三元组共有 $M$ 个.
+一方面, 对任意一位老师 $t_r$, 他恰教了 $k$ 位学生, 可形成 $\mathrm{C}_k^2$ 个含 $t_r$ 的三元组, 而 $t_r$ 有 $b$ 种取法, 所以 $M=b C_k^2$, 另一方面, 对任意两名学生 $s_i, s_j$, 恰有 $h$ 位老师教他们, 可形成 $h$ 个含 $s_i, s_j$ 的三元组, 而 $s_i, s_j$ 有 $\mathrm{C}_c^2$ 种取法, 所以 $M=h \mathrm{C}_c^2$, 综上可得 $b \mathrm{C}_k^2=h \mathrm{C}_c^2$, 所以 $\frac{b}{h}=\frac{\mathrm{C}_c^2}{\mathrm{C}_k^2}=\frac{\frac{1}{2} c(c-1)}{\frac{1}{2} k(k-1)}=\frac{c(c-1)}{k(k-1)}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $A_i \subseteq M=\{1,2, \cdots, 2010\}$ 且 $\left|A_i\right| \geqslant 335(i=1,2, \cdots, 30)$, 证明: 存在 $A_i, A_j(1 \leqslant i<j \leqslant 30)$ 满足 $\left|A_i \cap A_j\right| \geqslant 47$.
+%%<SOLUTION>%%
+作 $2010 \times 30$ 数表, 其中第 $i$ 行第 $j$ 列处的数为 $a_{i j}= \left\{\begin{array}{ll}1 & \left(\text { 若 } i \in A_j\right) \\ 0 & \left(\text { 若 } i \notin A_j\right)\end{array},(i=1,2, \cdots, 2010, j=1,2, \cdots, 30)\right.$, 并记 $r_i= \sum_{j=1}^{30} a_{i j}, l_j=\sum_{i=1}^{2010} a_{i j}$, 则 $r_i$ 表示 $i$ 属于 $A_1, A_2, \cdots, A_{30}$ 中 $r_i$ 个集合 $l_j=\left|A_j\right|$ 表示 $A_j$ 中元素个数.
+由已知条件得 $\sum_{i=1}^{2010} r_i=\sum_{i=1}^{2010} \sum_{j=1}^{30} a_{i j}=\sum_{j=1}^{30} \sum_{i=1}^{2010} a_{i j}=\sum_{j=1}^{30} l_j= \sum_{j=1}^{30}\left|A_j\right| \geqslant 30 \times 335 \cdots$ (1). 
+若 $t \in A_i \cap A_j(1 \leqslant i<j \leqslant 30)$, 则将 $\left(t_j, A_i, A_j\right)$ 组成三元组并设这样的三元组共有 $S$ 个.
+一方面对任意 $t \in M, t$ 属于 $A_1, A_2$, $\cdots, A_{30}$ 中 $r_t$ 个子集, 可形成 $\mathrm{C}_{r_t}^2$ 个含 $t$ 的三元组, 又 $t$ 可以为 $1,2, \cdots, 2010$. 所以 $S=\sum_{i=1}^{2010} \mathrm{C}_{r_l}^2 \cdots$ (2). 
+另一方面对任意 $A_i, A_j(1 \leqslant i<j \leqslant 30)$, 它们有 $\mid A_i \cap A_j \mid$ 个公共元, 可形成 $\left|A_i \cap A_j\right|$ 个含 $A_i, A_j(1 \leqslant i<j \leqslant 30)$ 的三元组故 $S=\sum_{1 \leqslant i<j \leqslant 30}\left|A_i \cap A_j\right|$, 所以 $\sum_{1 \leqslant i<j \leqslant 30}\left|A_i \cap A_j\right|=\sum_{t=1}^{2010} \mathrm{C}_{r_t}^2= \frac{1}{2}\left(\sum_{t=1}^{2010} r_t^2-\sum_{t=1}^{2010} r_t\right) \cdots$ (3). 
+由 (1) 和 (3) 并利用Cauchy 不等式得 $\sum_{1 \leqslant i<j \leqslant 30}\left|A_i \cap A_j\right| \geqslant$
+$$
+\frac{1}{2}\left[\frac{1}{2010}\left(\sum_{t=1}^{2010} r_t\right)^2-\sum_{t=1}^{2010} r_t\right]=\frac{1}{2 \times 2010}\left(\sum_{t=1}^{2010} r_t\right)\left(\sum_{t=1}^{2010} r_t-2010\right) \geqslant \frac{1}{2 \times 6 \times 335} \times
+$$
+$(30 \times 335) \times(30 \times 335-6 \times 335)$, 由平均值原理知存在 $1 \leqslant i<j \leqslant 30$ 使得
+$$
+\left|A_i \cap A_j\right| \geqslant \frac{1}{\mathrm{C}_{30}^2} \sum_{1 \leqslant i<j \leqslant 30}\left|A_i \cap A_j\right| \geqslant \frac{30 \times 335 \times 24 \times 335}{30 \times 29 \times 6 \times 335}=\frac{335 \times 4}{29}=\frac{1340}{29}=46 \frac{6}{29} \text {. }
+$$
+即 $\left|A_i \cap A_j\right| \geqslant 47$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 平面内给定 $n$ 个相异的点, 证明: 其中距离为单位长的点对数少于 $\frac{n}{4}+ \frac{\sqrt{2}}{2} n^{\frac{3}{2}}$
+%%<SOLUTION>%%
+记 $I=\left\{P_1, P_2, \cdots, P_n\right\}$ 为已知 $n$ 个点组成的集合, 设 $I$ 中距离为单位长的点对数为 $E$. 以 $P_i$ 为中心, 单位长为半径作圆 $C_i(i=1,2, \cdots, n)$ 并设 $C_i$ 上有 $I$ 中 $e_i$ 个点 $(i=1,2, \cdots, n)$, 于是 $\sum_{i=1}^n e_i=2 E$. 我们称以 $I$ 中点为端点的线段为好线段,一方面好线段共有 $\mathrm{C}_n^2$ 条.
+另一方面, 圆 $C_i$ 上有 $\mathrm{C}_{e_i}^2$ 条弦是好线段, $n$ 个圆上一共有 $\sum_{i=1}^n \mathrm{C}_{e_i}^2$ 条弦为好线段,但其中有些公共弦被重复计数了, 而 $n$ 个圆的公共弦至多有 $\mathrm{C}_n^2$ 条, 故不同的好线段数至少为 $\sum_{i=1}^n \mathrm{C}_{e_i}^2-\mathrm{C}_n^2$. 所以 $\sum_{i=1}^n \mathrm{C}_{e_i}^2-\mathrm{C}_n^2 \leqslant \mathrm{C}_n^2$. 由柯西 (Cauchy) 不等式得 $2 \mathrm{C}_n^2 \geqslant \frac{1}{2}\left(\sum_{i=1}^n e_i^2-\sum_{i=1}^n e_i\right) \geqslant \frac{1}{2}\left[\frac{1}{n}\left(\sum_{i=1}^n e_i\right)^2-\sum_{i=1}^n e_i\right]=\frac{1}{2 n}\left[4 E^2-2 n E\right]$, 即 $2 E^2-n E-n^2(n-1) \leqslant 0$, 所以 $E \leqslant \frac{n+n \sqrt{8 n-7}}{2 \times 2}<\frac{n+n \sqrt{8 n}}{4}=\frac{n}{4}+\frac{\sqrt{2}}{2} n^{\frac{3}{2}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 由 $n$ 个元素 $a_1, a_2, \cdots, a_n$ 组成 $n$ 个元素对 $p_1, p_2, \cdots, p_n$. 已知当且仅当 $a_i$ 与 $a_j$ 组成元素对时, $p_i$ 与 $p_j$ 有公共元.
+证明: $a_1, a_2, \cdots, a_n$ 中每个元素恰属于两个元素对.
+%%<SOLUTION>%%
+记 $A=\left\{a_1, a_2, \cdots, a_n\right\}, P=\left\{p_1, p_2, \cdots, p_n\right\}$, 把 $A$ 中元素 $a_i$ 看成平面内的点.
+$A$ 中元素对 $\left\{a_i, a_j\right\}$ 看成连接 $a_i$ 与 $a_j$ 的线段, 于是问题归结为证明 $A$ 中每一点恰是 $P$ 中两条线段的公共端点.
+设从 $a_i$ 出发恰有 $d_i$ 条线段 $(i=1,2$, $\cdots, n)$ 于是 $d_1+d_2+\cdots+d_n=2|P|=2 n \cdots$ (1). 
+若 $A$ 中点 $a_k$ 是 $P$ 中两条线段 $p_i, p_j$ 的公共端点, 则将 $\left(a_k ; p_i, p_j\right)$ 组成三元组, 这种三元组的集合记为 $S$. 则 $|S|=\sum_{i=1}^n \mathrm{C}_{d_i}^2$. 
+另一方面, 当且仅当 $a_i$ 与 $a_j$ 连有线段时, $p_i$ 与 $p_j$ 有公共端点 $a_k$, 组成一个三元组 $\left(a_k ; p_i, p_j\right)$, 故三元组的个数等于所连线段数 $n$, 即 $|S|=n$. 于是 $n=\sum_{i=1}^n \mathrm{C}_{d_i}^2=\frac{1}{2}\left(\sum_{i=1}^n d_i^2-\sum_{i=1}^n d_i\right) \geqslant \frac{1}{2}\left[\frac{1}{n}\left(\sum_{i=1}^n d_i\right)^2-\sum_{i=1}^n d_i\right]= \frac{1}{2 n}\left[4 n^2-2 n^2\right]=n$, 可见这个不等式的等号成立.
+由柯西 (Cauchy) 不等式中等号成立的充要条件得 $d_1=d_2=\cdots=d_n$, 再结合(1)得 $d_1=d_2=\cdots=d_n=2$. 即 $A$ 中每点恰是 $P$ 中两条线段的公共端点.
+证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 用两种方法证明: 对一切正整数 $n$ 有 $\sum_{i=0}^{\left[\frac{n}{2}\right]} 2^{n-2 i} \mathrm{C}_n^{n-2 i} \mathrm{C}_{2 i}^i=\mathrm{C}_{2 n}^n$.
+%%<SOLUTION>%%
+(证法一) 一方面 $(1+x)^{2 n}=\sum_{i=0}^{2 n} \mathrm{C}_{2 n}^i x^i$ 中 $x^n$ 的系数为 $\mathrm{C}_{2 n}^n$. 另一方面
+$(1+x)^{2 n}=\left(1+2 x+x^2\right)^n=\sum_{k=0}^n \mathrm{C}_n^{n-k}(2 x)^{n-k}\left(1+x^2\right)^k$, 而 $\mathrm{C}_n^{n-k}(2 x)^{n-k}(1+ \left.x^2\right)^k=\mathrm{C}_n^{n-k} 2^{n-k} x^{n-k}\left(\sum_{j=0}^k \mathrm{C}_k^j x^{2 j}\right)$ 中仅当 $k$ 为偶数时才会有 $x^n$ 的项,且当 $k=2 i$ 时, 所含 $x^n$ 的系数为 $\mathrm{C}_n^{n-2 i} 2^{n-2 i} \mathrm{C}_{2 i}^i$. 因 $0 \leqslant 2 i \leqslant n$, 故 $0 \leqslant i \leqslant\left[\frac{n}{2}\right]$, 所以 $(1+x)^{2 n}$ 中 $x^n$ 的系数又为 $\sum_{i=0}^{\left[\frac{n}{2}\right]} \mathrm{C}_n^{n-2 i} 2^{n-2 i} \mathrm{C}_{2 i}^i$. 综合上述两个方面得 $\sum_{i=0}^{\left[\frac{n}{2}\right]} \mathrm{C}_n^{n-2 i} 2^{n-2 i} \mathrm{C}_{2 i}^i=\mathrm{C}_{2 n}^n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 用两种方法证明: 对一切正整数 $n$ 有 $\sum_{i=0}^{\left[\frac{n}{2}\right]} 2^{n-2 i} \mathrm{C}_n^{n-2 i} \mathrm{C}_{2 i}^i=\mathrm{C}_{2 n}^n$.
+%%<SOLUTION>%%
+(证法二)一方面从 $n$ 对夫妇中选出 $n$ 人为代表有 $\mathrm{C}_{2 n}^n$ 种选法.
+另一方面可将选法分为 $\left[\frac{n}{2}\right]+1$ 类, 其中第 $i$ 类 $\left(i=0,1,2, \cdots,\left[\frac{n}{2}\right]\right)$ 的选法中恰有 $i$ 对夫妇被同时选出, 这共有 $\mathrm{C}_n^i$ 种选法, 其余 $n-2 i$ 人选自余下 $n-i$ 对夫妇中的 $n-2 i$ 对夫妇 (每对夫妇恰选出一人), 这有 $\mathrm{C}_{n-i}^{n-2 i} 2^{n-2 i}$ 种选法, 故第 $i$ 类共有 $\mathrm{C}_n^i \mathrm{C}_{n-i}^{n-2 i} \cdot 2^{n-2 i}=\mathrm{C}_n^{n-2 i} \mathrm{C}_{2 i}^i \cdot 2^{n-2 i}$ 种选法.
+又 $i=0,1,2, \cdots,\left[\frac{n}{2}\right]$, 故总共有 $\sum_{i=0}^{\left[\frac{n}{2}\right]} \mathrm{C}_n^{n-2 i} \mathrm{C}_{2 i}^i 2^{n-2 i}$ 种选法.
+综合两方面得 $\sum_{i=0}^{\left[\frac{n}{2}\right]} \mathrm{C}_n^{n-2 i} \mathrm{C}_{2 i}^i 2^{n-2 i}=\mathrm{C}_{2 n}^n$.
+%%PROBLEM_END%%
+
+

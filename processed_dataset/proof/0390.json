@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 一所学校有 $b$ 个老师和 $c$ 个学生且满足: (1) 每个老师恰教 $k$ 个学生; (2)对任意两个不同的学生恰有 $h$ 个老师同时教他们.\n求证: $\\frac{b}{h}= \\frac{c(c-1)}{k(k-1)}$.",
+    "solution": "如果老师 $t_r$ 同时教两名学生 $s_i$ 与 $s_j$, 那么将 $t_r$ 与 $s_i, s_j$ 组成三元组 $\\left(t_{r j}, s_i, s_j\\right)$, 并设这样的三元组共有 $M$ 个.\n一方面, 对任意一位老师 $t_r$, 他恰教了 $k$ 位学生, 可形成 $\\mathrm{C}_k^2$ 个含 $t_r$ 的三元组, 而 $t_r$ 有 $b$ 种取法, 所以 $M=b C_k^2$, 另一方面, 对任意两名学生 $s_i, s_j$, 恰有 $h$ 位老师教他们, 可形成 $h$ 个含 $s_i, s_j$ 的三元组, 而 $s_i, s_j$ 有 $\\mathrm{C}_c^2$ 种取法, 所以 $M=h \\mathrm{C}_c^2$, 综上可得 $b \\mathrm{C}_k^2=h \\mathrm{C}_c^2$, 所以 $\\frac{b}{h}=\\frac{\\mathrm{C}_c^2}{\\mathrm{C}_k^2}=\\frac{\\frac{1}{2} c(c-1)}{\\frac{1}{2} k(k-1)}=\\frac{c(c-1)}{k(k-1)}$.",
+    "remark": "",
+    "figures": []
+}

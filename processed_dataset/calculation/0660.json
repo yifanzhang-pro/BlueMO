@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例7 若 $[x]$ 表示不超过实数 $x$ 的最大整数,则方程 $[\\cot x]=2 \\cos ^2 x$ 的解集是",
+    "solution": "解:因为 $[\\cot x]=2 \\cos ^2 x$, 故 $2 \\cos ^2 x$ 取整数.\n又 $2 \\cos ^2 x \\in[0,2]$, 所以 $\\cos ^2 x=0, \\cos ^2 x=\\frac{1}{2}, \\cos ^2 x=1$.\n当 $\\cos x=0$ 时, $x=k \\pi+\\frac{\\pi}{2}, k \\in \\mathbf{Z}$.\n当 $\\cos x= \\pm \\frac{\\sqrt{2}}{2}$ 时, $\\cot x= \\pm 1$, 只有 $x=k \\pi+\\frac{\\pi}{4}, k \\in \\mathbf{Z}$.\n当 $\\cos x= \\pm 1$ 时, $\\sin x=0$, 无意义,舍去.\n故应填 $x=k \\pi+\\frac{\\pi}{2}$ 或 $x=k \\pi+\\frac{\\pi}{4}, k \\in \\mathbf{Z}$.",
+    "remark": "",
+    "figures": []
+}

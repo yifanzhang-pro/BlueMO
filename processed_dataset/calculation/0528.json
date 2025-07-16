@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例8 设 $f(x)=3 \\sqrt[3]{x}(\\sqrt[3]{x}+1)+x+1$, 求 $f^{(n)}(x)$.",
+    "solution": "解:$f(x)=(\\sqrt[3]{x}+1)^3$, 设 $a_0=x, a_n=f^{(n)}(x)$,\n则即\n$$\na_n=f\\left(a_{n-1}\\right)=\\left(\\sqrt[3]{a_{n-1}}+1\\right)^3,\n$$\n$$\n\\sqrt[3]{a_n}-\\sqrt[3]{a_{n-1}}=1 .\n$$\n从而\n$$\n\\sqrt[3]{a_n}=\\sqrt[3]{a_0}+n=\\sqrt[3]{x}+n\n$$\n故\n$$\na_n=(\\sqrt[3]{x}+n)^3,\n$$\n即\n$$\nf^{(n)}(x)=(\\sqrt[3]{x}+n)^3 .\n$$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 有 155 只鸟在一个圆 $C$ 上, 如果弧 $P_i P_j \\leqslant 10^{\\circ}$, 则称鸟是互相可见的.\n如果允许同一位置同时有几只鸟, 求可见的鸟对数的最小值.",
+    "solution": "问题等价于将 155 只鸟分为若干组, 使可见鸟对数最小.\n注意到组数不确定, 于是要估计组数.\n通过特殊化可知, 要使可见鸟对少, 相邻两个位置不能过近, 即任何两个位置都不可见时, 可见鸟对才可能最小.\n实际上, 设 $P_i$ 、 $P_j$ 是一对可见鸟, 则称 $P_i 、 P_j$ 的位置是互相可见的.\n假设有两个可见位置 $P_i 、 P_j$, 设 $k$ 为 $P_j$ 可以见到而 $P_i$ 不能见到的鸟的只数, $t$ 是 $P_i$ 可以见到而 $P_j$ 不能见到的鸟的只数.\n不妨设 $k \\geqslant t$. 假设 $P_j$ 的鸟都飞往 $P_i$ 处, 那么, 对任何一个鸟对 $(p, q)$, 若它不含飞动的鸟, 其 \"可见性\"不变.\n又对飞动的每只鸟来说, 减少 $k$ 只可见鸟, 增加 $t$ 只可见鸟, 从而可见乌对的增加数为 $t-k \\leqslant 0$, 即可见鸟对数不增.\n每一次这样的变动, 停鸟的位置数减少 1. 若干次变动后, 可使任何两个停鸟的位置互不可见.\n此时, 圆周上至多有 35 个停鸟的位置.\n于是, 问题化为在条件: $x_1+x_2+\\cdots+x_{35}=155, x_i \\geqslant 0$ 的约束下, 求 $S= \\sum_{i=1}^{35} \\mathrm{C}_{x_i}^2=\\frac{1}{2} \\sum_{i=1}^{35} x_i\\left(x_i-1\\right)$ 的最小值.\n若对所有 $x_i 、 x_j$, 都有 $x_i=x_j$, 则 35 整除 155 , 矛盾.\n所以, 至少一个 $i \\neq j$, 使 $x_i-x_j \\neq 0$. 此外, 对所有 $i 、 j$, 有 $x_i- x_j \\leqslant 1$. 实际上, 若 $x_i-x_j \\geqslant 2$, 不妨设 $x_2-x_1 \\geqslant 2$, 则令 $x_1^{\\prime}=x_1+1, x_2^{\\prime}= x_2-1$. 此时, $x_1\\left(x_1-1\\right)+x_2\\left(x_2-1\\right)-\\left[x_1^{\\prime}\\left(x_1^{\\prime}-1\\right)+x_2^{\\prime}\\left(x_2^{\\prime}-1\\right)\\right]=x_1\\left(x_1-\\right. 1)+x_2\\left(x_2-1\\right)-\\left(x_1+1\\right) x_1-\\left(x_2-1\\right)\\left(x_2-2\\right)=-2 x_1+2\\left(x_2-1\\right) \\geqslant 1$. 从而 $S$ 减少.\n注意到 $155=4 \\times 35+15$, 所以, 极值点为 $\\left(x_1, x_2, \\cdots, x_{35}\\right)= (5,5, \\cdots, 5,4,4, \\cdots, 4)$. 此时, $S$ 的最小值为 $20 \\mathrm{C}_4^2+15 \\mathrm{C}_5^2=270$.",
+    "remark": "",
+    "figures": []
+}

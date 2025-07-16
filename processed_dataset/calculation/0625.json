@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题21 已知 $f(x)$ 是定义在 $\\mathbf{R}$ 上的连续函数, 且满足:\n$$\nf(x+y)=f(x) f(y) \\text {, 对任意 } x, y \\in \\mathbf{R} \\text {. }\n$$\n求 $f(x)$.",
+    "solution": "由原恒等式知 $f(x)=\\left(f\\left(\\frac{x}{2}\\right)\\right)^2 \\geqslant 0$. \n(1) 若上式等号成立, 则存在 $x_0 \\in \\mathbf{R}$, 使 $f\\left(x_0\\right)=0$. \n那么 $f(x)=f\\left(x-x_0+x_0\\right)=f\\left(x-x_0\\right) f\\left(x_0\\right) \\equiv 0$, $x \\in \\mathbf{R}$. \n在这种情形下, 有 $f(x) \\equiv 0, x \\in \\mathbf{R}$. \n(2) 若等号恒不成立, 即对任意 $x \\in \\mathbf{R}, f(x)>0$. 对原恒等式两端取对数, 有 $\\ln f(x+y)=\\ln f(x)+ \\ln f(y)$. \n令 $g(x)=\\ln f(x)$, 则 $g(x)$ 满足柯西方程 $\\circledast$, 因此 $g(x)=a x$, 其中 $a=g(1)=\\ln f(1)$. \n从而 $f(x)=\\mathrm{e}^{a x}=c^x$. 其中 $c=f(1)$. \n综上所述, 原方程的连续解为 $f(x)=c^x, c=f(1)>0$ 或 $f(x) \\equiv 0, x \\in \\mathbf{R}$.",
+    "remark": "",
+    "figures": []
+}

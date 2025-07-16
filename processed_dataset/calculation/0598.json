@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题11 已知 $x \\geqslant 1, y \\geqslant 1$, 且 $\\lg ^2 x+\\lg ^2 y=\\lg 10 x^2+\\lg 10 y^2$, 求 $\\lg x y$ 的最大值与最小值.",
+    "solution": "由题设 $\\lg ^2 x+\\lg ^2 y=\\lg 10 x^2+\\lg 10 y^2$, 得 $(\\lg x-1)^2+(\\lg y-1)^2= 4$. 由于 $\\lg x \\geqslant 0, \\lg y \\geqslant 0$, 所以 $(\\lg x, \\lg y)$ 在以点 $(1,1)$ 为圆心 2 为半径的圆弧上,如图(<FilePath:./images/volume2/figures/fig-c4p11.png>)所示, 易知此圆弧的两个端点 $A(0,1+\\sqrt{3}), B(1+\\sqrt{3}, 0)$. 令 $u=\\lg x y=\\lg x+\\lg y$, 则 $u$ 是直线系: $\\lg y=-\\lg x+u$ 的纵截距.\n因此直线系需与圆弧有公共点, 故当它过 $A 、 B$ 两点时截距最小, 当它与圆弧相切时, 截距最大.\n所以 $u_{\\text {min }}= \\sqrt{3}+1, u_{\\max }=\\sqrt{2}(\\sqrt{2}+2)=2 \\sqrt{2}+2$.",
+    "remark": "",
+    "figures": [
+        "./images/volume2/figures/fig-c4p11.png"
+    ]
+}

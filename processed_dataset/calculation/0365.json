@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 设数列 $\\left\\{a_n\\right\\}$ 满足 $a_1=\\frac{1}{3}, a_{n+1}=\\sqrt{\\frac{1+a_n}{2}}$, 求 $\\left\\{a_n\\right\\}$ 的通项公式.",
+    "solution": "解:三角代换: 令 $a_1=\\frac{1}{3}=\\cos t, t \\in\\left(0, \\frac{\\pi}{2}\\right)$, 则\n$$\na_2=\\sqrt{\\frac{1+\\cos t}{2}}=\\cos \\frac{t}{2},\n$$\n同理可得 $a_3=\\cos \\frac{t}{2^2}, a_4=\\cos \\frac{t}{2^3}, \\cdots$,一般地,有 $a_n=\\cos \\frac{t}{2^{n-1}}$, 其中 $t= \\arccos \\frac{1}{3}$, 故 $\\left\\{a_n\\right\\}$ 的通项公式为 $a_n=\\cos \\left(\\frac{1}{2^{n-1}} \\arccos \\frac{1}{3}\\right)$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题1 函数 $y=\\sin \\left(x+\\frac{3}{2} \\pi\\right)$ 的图象 ( ).\n(A) 关于 $x$ 轴对称\n(B) 关于 $y$ 轴对称\n(C) 关于原点对称\n(D) 关于直线 $x=-\\frac{3}{2} \\pi$ 对称",
+    "solution": "B. 因 $y=\\sin \\left(x+\\frac{3}{2} \\pi\\right)=-\\cos x$, 故选 B.",
+    "remark": "",
+    "figures": []
+}

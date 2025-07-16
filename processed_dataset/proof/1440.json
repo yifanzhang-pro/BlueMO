@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 设 $a_n \\in \\mathbf{R}$ 满足: $a_{n+1} \\geqslant a_n^2+\\frac{1}{5}, n \\geqslant 0$, 求证:\n$$\n\\sqrt{a_{n+5}} \\geqslant a_{n-5}^2, n \\geqslant 5 .\n$$",
+    "solution": "令 $f(x)=x^2+\\frac{1}{5}$, 则当 $x>0$ 时, $f(x)$ 单调递增.\n令 $g(x)=f(x)- x=\\left(x-r_1\\right)\\left(x-r_2\\right)$. 其中 $r_1=\\frac{5-\\sqrt{5}}{10}, r_2=\\frac{5+\\sqrt{5}}{10}, 0<r_1<r_2<1$, 则 $\\left\\{\\begin{array}{l}f(x)<x, \\text { 若 } x \\in\\left(r_1, r_2\\right) , \\\\ f(x) \\geqslant x, \\text { 其他.\n}\\end{array}\\right.$\n固定 $n \\geqslant 5$, 记 $a=\\left|a_{n-5}\\right|$, 只要证明: $a_{n+5} \\geqslant a_{n-5}^4$.\n(1) $a \\leqslant r_1$, 则 $a<1, a_{n+5} \\geqslant a>a^4=a_{n-5}^4$.\n其中利用了 $a \\leqslant f(a) \\leqslant f^{(2)}(a) \\leqslant \\cdots \\leqslant f^{(10)}(a)=a_{n+5}$.\n(2) $a \\in\\left[r_2, 1\\right]$, 也有 $a_{n+5}=f^{(10)}(a)>f^{(9)}(a)>\\cdots>a>a^4=a_{n-5}^4$.\n(3) $a \\in\\left(r_1, r_2\\right), r_1=f\\left(r_1\\right)<f\\left(r_2\\right)=r_2 . a_{n+5}=f^{(10)}(a)>r_1$, 故只须证 $r_1>r_2^4$ (容易验证):\n故 $a_{n+5}>r_1>r_2^4>a^4=a_{n-5}^4$.\n(4) $a>1$, 则 $a_{n+5}=f^{(10)}(a)>f^{(9)}(a)>\\cdots>f^{(2)}(a)=\\left(a^2+\\frac{1}{5}\\right)^2+ \\frac{1}{5}>a^4=a_{n-5}^2$, 因此结论也成立.",
+    "remark": "",
+    "figures": []
+}

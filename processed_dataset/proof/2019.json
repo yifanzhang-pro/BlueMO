@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例1. (Klamkin 对偶不等式) 设 $\\triangle A B C$ 的三边分别为 $a 、 b 、 c$, 已知边 $b 、 c$ 上的中线分别为 $m_b 、 m_c$, 求证:\n$$\n4 m_b m_c \\leqslant 2 a^2+b c . \\label{eq1}\n$$",
+    "solution": "下面的证明简直无需文字说明便知其意.\n证明如图(<FilePath:./images/volume9/figures/fig-c2i2.png>), 作平行四边形 $A B C D$ 和平行四边形 $A C B E$, 连接 $B D 、 C E$. 注意到 $D E=2 a$, $B D=2 m_b, C E=2 m_c$, 对四边形 $B C D E$ 应用 Ptolemy 不等式立得\n$$\nB C \\cdot D E+B E \\cdot C D \\geqslant B D \\cdot E C,\n$$\n这就是式\\ref{eq1}.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c2i2.png"
+    ]
+}

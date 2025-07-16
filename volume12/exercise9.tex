@@ -1,0 +1,100 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. $n(>4)$ 个城市, 每两个城市之间有一条直达道路.
+证明: 可将这些道路改为单行道, 使得从任意城市可能到达任一其他城市, 中间至多经过 1 个城市.
+%%<SOLUTION>%%
+(1) 当 $n=5$ 时,图(<FilePath:./figures/fig-c9a1-1.png>)为所求.
+当 $n=6$ 时,图(<FilePath:./figures/fig-c9a1-2.png>)为所求.
+(2)假设 $n=k$ 时,存在满足要求的有向图.
+当 $n=k+2$ 时, 先在顶点 $V_1, V_2, \cdots, V_k$ 间作出满足要求的 $k$ 阶有向图.
+对于另两个顶点 $V_{k+1}, V_{k+2}$, 令 $V_1, V_2, \cdots, V_k$ 均指向 $V_{k+1} ; V_{k+2}$ 指向 $V_1, V_2, \cdots, V_k$, 再令 $V_{k+1}$ 指向 $V_{k+2}$, 则 $V_{k+1}$ 通过 $V_{k+2}$ 到达 $V_1, V_2, \cdots$ (显然 $V_{k+2}$ 可以直达 $V_1, V_2, \cdots, V_k$ ), $V_1, V_2, \cdots, V_k$ 可通过 $V_{k+1}$ 到达 $V_{k+2}$ (显然 $V_1, V_2, \cdots, V_k$ 可以直达 $\left.V_{k+1}\right)$. 故该 $k+2$ 阶图仍满足要求.
+由(1)、(2) 知对任意 $4<n \in \mathbf{N}$, 都存在满足要求的 $n$ 个城市间的改道方案.
+原命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 求证:若竞赛图 $\bar{K}_n$ 中有一个回路, 则 $\bar{K}_n$ 中有一个三角形回路.
+%%<SOLUTION>%%
+设 $G$ 有回路 $\left(v_1, v_2, \cdots, v_k\right)$, 在 $v_2, v_3, \cdots, v_{k-1}$ 中, 取第一个使弧 $\left(v_{i+1}, v_1\right)$ 存在的 $v_i$, 则有弧 $\left(v_1, v_i\right)$, 因而 $\left(v_1, v_i, v_{i+1}\right)$ 就是一个三角形的回路.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 某国 $N$ 个城市被航空线连接起来, 并且航线只向一个方向飞行.
+对于此航线, 下列条件 $f$ 是满足的: 从任一城市起飞, 不能沿着这些航线回到此城.
+求证: 能补充这个航线系统, 使每 2 个城市被航线连接, 并且新的航线系统也满足条件 $f$.
+%%<SOLUTION>%%
+我们来证明, 如果现有的航线系统满足条件 $f$, 并且 2 个城市 $A$ 与 $B$ 没有航线联系, 那么这时可用航线 $A \rightarrow B$ 或 $B \rightarrow A$ 联系, 使所得航线系统仍旧满足条件.
+假设相反: 在新的航线系统中条件 $f$ 未被满足.
+那么在实现航线 $A \rightarrow B$ 后出现闭合路线 $B \rightarrow C_1 \rightarrow \cdots \rightarrow C_n \rightarrow A \rightarrow B$. 类似地, 在实现航线 $B \rightarrow A$ 后出现闭合路线 $A \rightarrow D_1 \rightarrow \cdots \rightarrow D_m \rightarrow B \rightarrow A$. 但是在实现 $A$ 与 $B$ 之间航线前已经有闭合航线 $A \rightarrow D_1 \rightarrow \cdots \rightarrow D_m \rightarrow B \rightarrow C_1 \rightarrow \cdots \rightarrow C_n \rightarrow A$ (可能有某些顶点 $C_i$ 与 $D_j$ 重合, 即以前的航线系统不满足条件 $f$, 因为可从 $A$ 地起飞然后返回.
+矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 在排球单循环赛中, 若 $A$ 队胜 $B$ 队, 或 $A$ 队胜 $C$ 队而 $C$ 队胜 $B$ 队, 则称 $A$ 队优于 $B$ 队.
+称优于所有对手的队为冠军.
+试问.
+按此规定, 是否会出现恰好两个冠军?
+%%<SOLUTION>%%
+参见例 4 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. $n$ 名棋手进行比赛, 每一个人与若干个人进行了比赛, 假定比赛中没有平局.
+如果没有 $v_1$ 胜 $v_2, v_2$ 胜 $v_3, \cdots, v_k$ 胜 $v_1$ 这样的情形出现, 证明必有一个人在所有的比赛中全胜, 也必有一个人在所有的比赛中全负.
+%%<SOLUTION>%%
+用 $n$ 个点表示 $n$ 名棋手, 如果 $v_i$ 胜 $v_j$, 我们就作一条从 $v_i$ 到 $v_j$ 的弧, 得有向图 $D$. 如果 $D$ 中没有回路, 那么必有一点 $v$ 的人度是 0 , 这点就表示在比赛中全胜的人.
+同样可证有一个人在所有比赛中全负.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 如果 $n$ 个人 $v_1, v_2, \cdots, v_n$ 中每两个人 $v_i$ 与 $v_j$ 有一个共同的祖先 $v_k$ (约定每个人可以算作他自己的祖先), 证明这 $n$ 个人有一个共同的祖先.
+%%<SOLUTION>%%
+设 $v_1, v_2, \cdots, v_n$ 中, $v_p$ 的子孙后代最多, 那么 $v_p$ 就是这 $n$ 个人的共同祖先, 否则设 $v_p$ 不是 $v_q$ 的祖先, 那么 $v_p$ 与 $v_q$ 的共同祖先 $v_r \neq v_p$, 而 $v_r$ 的子孙后代至少比 $v_p$ 多 1 ,矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 甲、乙、丙、丁四个人比赛乒乓球, 每两个人都要赛一场, 结果甲胜了丁, 且甲、乙、丙三人胜的场数相同,问乙胜几场?
+%%<SOLUTION>%%
+乙胜了两场.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 一次有 $n(n \geqslant 3)$ 名选手参加的单循环赛, 每对选手赛一局, 无平局, 且无一选手全胜.
+证明其中一定有三名选手甲、乙、丙, 甲胜乙,乙胜丙, 丙胜甲.
+%%<SOLUTION>%%
+把循环赛对应于一个竟赛图, 由题设, 无一顶点的出度为 $n-1$. 由抽庶原理, 至少有两个顶点的出度相同.
+由定理四, 命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 有一百种昆虫, 每两种中必有一种能消灭另一种 (但甲能消灭乙, 乙能消灭丙, 并不意味着甲一定能消灭丙), 证明可以将这一百种昆虫依某种顺序排列起来, 使得每一种能消灭紧接在它后面的那一种昆虫.
+%%<SOLUTION>%%
+用定理三,竞赛图 $\bar{K}_n$ 中存在一条长为 $n-1$ 的哈密顿路.
+%%PROBLEM_END%%
+
+

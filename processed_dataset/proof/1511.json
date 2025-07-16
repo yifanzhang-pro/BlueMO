@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-3.tex",
+    "problem_type": "proof",
+    "problem": "例1. 给定平面上任意 $n$ 个不同的点.\n证明: 存在一个过其中两个点的圆,使得其余 $n-2$ 个点都在此圆的外部.",
+    "solution": "证明:由于 $n$ 个点中每两点之间的距离只有 $\\mathrm{C}_n^2$ 个, 故必有两点 (设为 $A$ 、 $B$ ), 它们之间的距离最小 (如果有多个这样的点对, 从中任取一对即可).\n现考虑以线段 $A B$ 为直径的圆 $P$, 则对 $P$ 内任意一点 $C, \\triangle A B C$ 的最长边为 $A B$. 由 $A B$ 的最小性, 可知剩下的 $n-2$ 个点都在圆 $P$ 外.\n命题获证.",
+    "remark": "",
+    "figures": []
+}

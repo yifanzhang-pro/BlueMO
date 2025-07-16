@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题7 已知方程 $\\arccos \\frac{4}{5}-\\arccos \\left(-\\frac{4}{5}\\right)=\\arcsin x$, 则 ( ).\n(A) $x=\\frac{24}{25}$\n(B) $x=-\\frac{24}{25}$\n(C) $x=0$\n(D) 无解",
+    "solution": "D. 因为 $\\arccos \\left(-\\frac{4}{5}\\right)=\\pi-\\arccos \\frac{4}{5}$, 原方程化为 $2 \\arccos \\frac{4}{5}- \\arcsin x=\\pi$, 因为 $\\arccos \\frac{4}{5}<\\arccos \\frac{\\sqrt{2}}{2}=\\frac{\\pi}{4}$, 又 $-\\arcsin x \\leqslant \\frac{\\pi}{2}$, 所以 $2 \\arccos \\frac{4}{5}-\\arcsin x<\\pi$, 故无解.",
+    "remark": "",
+    "figures": []
+}

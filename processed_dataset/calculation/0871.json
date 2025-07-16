@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter8.tex",
+    "problem_type": "calculation",
+    "problem": "例12. 设 $a_1, a_2, \\cdots, a_n, \\cdots$ 是一个不减的正整数序列, 对于 $m \\geqslant 1$, 定义 $b_m=\\min \\left\\{n, a_n \\geqslant m\\right\\}$, 即 $b_m$ 是使 $a_n \\geqslant m$ 的 $n$ 的最小值.\n若已知 $a_{19}=85$, 求\n$$\na_1+a_2+\\cdots+a_{19}+b_1+b_2+\\cdots+b_{85}, \\label{(1)}\n$$\n的最大值.",
+    "solution": "解:若存在 $i$, 使得 $a_i<a_{i+1}(1 \\leqslant i \\leqslant 18)$, 则进行如下调整: $a_i^{\\prime}=a_i+1$, $a_j^{\\prime}=a_j(j \\neq i)$, 并将调整后的 $b_j$ 记为 $b_j^{\\prime}(j=1,2, \\cdots, 85)$.\n由定义可知 $b_{a_i+1}=i+1, b_{a_i+1}^{\\prime}=i=b_{a_i+1}-1, b_j^{\\prime}=b j\\left(j \\neq a_i+1\\right)$.\n因此, 上述调整使 $b_{a_i+1}$ 减少了 1 而其余的 $b_j$ 不动, 故此调整保持(1)的值不变.\n这样, 可以经过一系列调整, 使 $a_1=a_2=\\cdots=a_{19}=85$ 并且保持 (1) 的值不变, 但此时 $b_1=b_2=\\cdots=b_{85}=1$, 于是所求(1)式的最大值为\n$$\n19 \\times 85+1 \\times 85=20 \\times 85=1700 .\n$$",
+    "remark": "",
+    "figures": []
+}

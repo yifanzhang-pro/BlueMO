@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $a>b>0$, 求证: $\\sqrt{2} a^3+\\frac{3}{a b-b^2} \\geqslant 10$.",
+    "solution": "证明:因为 $a b-b^2=b(a-b) \\leqslant \\frac{[b+(a-b)]^2}{4}=\\frac{a^2}{4}$, 所以\n$$\n\\begin{aligned}\n& \\sqrt{2} a^3+\\frac{3}{a b-b^2} \\geqslant \\sqrt{2} a^3+\\frac{12}{a^2} \\\\\n= & \\frac{\\sqrt{2}}{2} a^3+\\frac{\\sqrt{2}}{2} a^3+\\frac{4}{a^2}+\\frac{4}{a^2}+\\frac{4}{a^2} \\\\\n\\geqslant & 5 \\sqrt[5]{\\frac{\\sqrt{2}}{2} a^3 \\cdot \\frac{\\sqrt{2}}{2} a^3 \\cdot \\frac{4}{a^2} \\cdot \\frac{4}{a^2} \\cdot \\frac{4}{a^2}}=10,\n\\end{aligned}\n$$\n即命题成立.",
+    "remark": "注:为了消去 $a$, 将 $\\sqrt{2} a^3$ 写成两项, $\\frac{12}{a^2}$ 写成三项.\n这样, 利用平均值不等式, 它们的乘积为一个常数.",
+    "figures": []
+}

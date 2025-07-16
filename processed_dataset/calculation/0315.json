@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 设 $0<p \\leqslant a, b, c, d, e \\leqslant q$, 求 $F=(a+b+c+d+$ e) $\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}+\\frac{1}{d}+\\frac{1}{e}\\right)$ 的最大值.",
+    "solution": "解:于 $F$ 在闭域上连续, 所以必存在最大值.\n固定 $a 、 b 、 c 、 d$, 令 $a+ b+c+d=A, \\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}+\\frac{1}{d}=B$, 则 $A 、 B$ 为常数, 且 $F=(A+$ e) $\\left(B+\\frac{1}{e}\\right)=1+A B+e B+\\frac{A}{e}$.\n考察 $f(e)=e B+\\frac{A}{e}$, 易知, 当 $e \\leqslant \\sqrt{\\frac{A}{B}}$ 时, $f(e)$ 单调递减, 当 $e \\geqslant \\sqrt{\\frac{A}{B}}$ 时, $f(e)$ 单调递增.\n于是, $\\sqrt{\\frac{A}{B}}$ 是 $f(e)$ 的最小值点.\n注意到 $p \\leqslant e \\leqslant q$, 所以 $f(e)$ 只能在其端点: $e=p$ 或 $e=q$ 处取最大值.\n由对称性, $F$ 只能在 $a 、 b 、 c$ 、 $d 、 e \\in\\{p, q\\}$ 时取最大值.\n于是, 不妨设 $F$ 取最大值时, $a, b, c, d, e$ 中有 $k$ 个为 $p, 5-k$ 个为 $q$, 则 $F$ 的最大值是具有如下形式的 $F(k)$ 的最大值:\n$$\n\\begin{aligned}\nF(k) & =[k p+(5-k) q]\\left(\\frac{k}{p}+\\frac{5-k}{q}\\right) \\\\\n& =k^2+(5-k)^2+\\left(5 k-k^2\\right)\\left(\\frac{p}{q}+\\frac{q}{p}\\right) \\\\\n& =\\left[2-\\left(\\frac{p}{q}+\\frac{q}{p}\\right)\\right] k^2+\\left[5\\left(\\frac{p}{q}+\\frac{q}{p}\\right)-10\\right] k+25 .\n\\end{aligned}\n$$\n在上述二次函数 $F(k)$ 中, 二次项系数 $2-\\left(\\frac{p}{q}+\\frac{q}{p}\\right)<0$, 顶点横坐标为 $\\frac{5}{2}$, 但 $k \\in \\mathbf{N}$, 于是, $F(k)<F(2)=F(3)=13+6\\left(\\frac{p}{q}+\\frac{q}{p}\\right)$. 又\n$$\na=b=c=p, c=d=q \\text { 时, } F=13+6\\left(\\frac{p}{q}+\\frac{q}{p}\\right) \\text {, }\n$$\n所以\n$$\nF_{\\max }=13+6\\left(\\frac{p}{q}+\\frac{q}{p}\\right)=25+6\\left(\\sqrt{\\frac{p}{q}}-\\sqrt{\\frac{q}{p}}\\right)^2 .\n$$",
+    "remark": "",
+    "figures": []
+}

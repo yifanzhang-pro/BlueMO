@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例3. 证明: 在任意 $n(\\geqslant 4)$ 个人中都存在 2 人 $A$ 和 $B$ 使得其余 $n-2$ 人中至少有 $\\left[\\frac{n}{2}\\right]-1$ 人满足: 他们中每个人或者同 $A, B$ 都互相认识或者同 $A$, $B$ 都互相不认识.",
+    "solution": "证法一用反证法.\n假设结论不成立, 那么对 $n$ 个人中任意 2 个人 $A$ 和 $B$, 在其余 $n-2$ 人中同时与 $A, B$ 互相认识以及同时与 $A, B$ 互相不认识的人一共至多只有 $\\left[\\frac{n}{2}\\right]-2$ 个.\n再设在其余 $n-2$ 人中恰与 $A, B$ 中一人互相认识的有 $k$ 人.\n则\n$$\nn-2-k \\leqslant\\left[\\frac{n}{2}\\right]-2,\n$$\n所以\n$$\nk \\geqslant n-\\left[\\frac{n}{2}\\right] \\geqslant n-\\frac{n}{2}=\\frac{n}{2},\n$$\n即对任意两人 $A, B$, 恰与 $A, B$ 中一个人互相认识的人至少有 $\\frac{n}{2}$ 个.\n若 $C$ 恰与 $A, B$ 中一个人互相认识, 则将 $(A, B, C)$ 组成一个三元组.\n设这种三元组的个数为 $S$.\n因为对任意两人 $A, B$,含 $A, B$ 的三元组至少有 $\\frac{n}{2}$ 个, 而 $(A, B)$ 对有 $\\mathrm{C}_n^2$ 种取法,故\n$$\nS \\geqslant \\frac{n}{2} C_n^2=\\frac{n^2(n-1)}{4} . \\label{eq1}\n$$\n另一方面, 对 $n$ 个人中任何 1 人 $C$, 设其余 $n-1$ 个人中有 $h$ 个同 $C$ 互相认识, $n-1-h$ 个人同 $C$ 互相不认识.\n故含 $C$ 的三元组 $(A, B, C)$ 的个数为 $h(n-1-h) \\leqslant\\left[\\frac{h+(n-1-h)}{2}\\right]^2=\\frac{(n-1)^2}{4}$. 而 $C$ 有 $n$ 种不同的取法,故\n$$\nS \\leqslant \\frac{n(n-1)^2}{4} . \\label{eq2}\n$$\n式\\ref{eq2}与\\ref{eq1}矛盾.\n于是题中结论成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,52 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $A B C D$ 是一个有内切圆的凸四边形, 它的每个内角和外角都不小于 $60^{\circ}$. 证明:
+$$
+\frac{1}{3}\left|A B^3-A D^3\right| \leqslant\left|B C^3-C D^3\right| \leqslant 3\left|A B^3-A D^3\right|,
+$$
+并指出等号成立的条件.
+%%<SOLUTION>%%
+利用余弦定理, 知 $B D^2=A D^2+A B^2-2 A D \cdot A B \cos A=C D^2+ B C^2-2 C D \cdot B C \cos C$. 由条件知 $60^{\circ} \leqslant A \leqslant 120^{\circ}, 60^{\circ} \leqslant C \leqslant 120^{\circ}$, 故 $-\frac{1}{2} \leqslant \cos A \leqslant \frac{1}{2},-\frac{1}{2} \leqslant \cos C \leqslant \frac{1}{2}$, 于是 $3 B D^2-\left(A B^2+A D^2+A B \cdot A D\right)= 2\left(A D^2+A B^2\right)-A D \cdot A B(1+6 \cos A) \geqslant 2\left(A D^2+A B^2\right)-4 A D \cdot A B= 2(A B-A D)^2 \geqslant 0$, 即 $\frac{1}{3}\left(A B^2+A D^2+A B \cdot A D\right) \leqslant B D^2=C D^2+B C^2- 2 C D \cdot B C \cos C \leqslant C D^2+B C^2+C D \cdot B C$. 再由 $A B C D$ 为圆外切四边形可知 $A D+B C=A B+C D$, 所以 $|A B-A D|=|C D-B C|$. 结合上式就有 $\frac{1}{3}\left|A B^3-A D^3\right| \leqslant\left|B C^3-C D^3\right|$, 等号成立的条件为 $\cos A=\frac{1}{2}, A B= A D, \cos C=-\frac{1}{2}$ 或者 $|A B-A D|=|C D-B C|=0$, 所以等号成立的条件是 $A B=A D$ 或者 $C D=B C$. 同理可证另一个不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 一个面积为 $S$ 的凸四边形有外接圆, 且其外接圆圆心在该四边形内部.
+从此四边形对角线的交点向四条边作垂线, 证明: 以四个垂足为顶点的四边形的面积不超过 $\frac{S}{2}$.
+%%<SOLUTION>%%
+设这个凸四边形为 $A B C D$, 其外接圆圆心为 $O$, 半径为 $R, E$ 为 $A C$ 、 $B D$ 的交点, $M 、 N 、 P 、 Q$ 分别是 $E$ 到边 $A B 、 B C 、 C D 、 D A$ 的投影, 作 $E F \perp M N, F$ 为垂足.
+由于 $B 、 M 、 E 、 N$ 四点共圆, 且在以 $B E$ 为直径的圆上,所以 $M N=B E \cdot \sin B=\frac{B E \cdot A C}{2 R}$, 而 $E F=E M \cdot \sin \angle E M N= \frac{A E \cdot B E \cdot \sin \angle A E B}{A B} \cdot \sin \angle C B E$, 结合 $B E \cdot \sin \angle E B C=C E \cdot \sin \angle B C E= \frac{C E \cdot A B}{2 R}$, 又由于 $A E \cdot E C=R^2-O E^2$. 于是 $E F=\frac{R^2-O E^2}{2 R} \cdot \sin \angle A E B$, 所以 $S_{\triangle M E N}=\frac{1}{2} M N \cdot E F=\frac{\left(R^2-O E^2\right) \cdot A C \cdot B E \cdot \sin \angle A E B}{8 R^2}$. 类似地计算 $S_{\triangle M E P} 、 S_{\triangle P E Q} 、 S_{\triangle Q E M}$, 求和可得 $S_{M N P Q}=\frac{\left(R^2-O E^2\right) \cdot A C \cdot B D \cdot \sin \angle A E B}{4 R^2}= \frac{\left(R^2-O E^2\right) \cdot S}{2 R^2} \leqslant \frac{S}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 两个凸四边形 $A B C D$ 和 $A^{\prime} B^{\prime} C^{\prime} D^{\prime}$ 的边长分别为 $a 、 b 、 c 、 d$ 和 $a^{\prime} 、 b^{\prime} 、 c^{\prime}$ 、 $d^{\prime}$, 面积分别为 $S$ 和 $S^{\prime}$. 证明:
+$$
+a a^{\prime}+b b^{\prime}+c c^{\prime}+d d^{\prime} \geqslant 4 \sqrt{S S^{\prime}} .
+$$
+%%<SOLUTION>%%
+在边长给定的四边形中, 以内接于圆时其面积为最大.
+因此, 只需证两个凸四边形为圆内接四边形的情况.
+这时 $S= \sqrt{(s-a)(s-b)(s-c)(s-d)}, S^{\prime}$ 与之类似, 其中 $s=\frac{1}{2}(a+b+c+d)= (a+c)=(b+d), s^{\prime}=\frac{1}{2}\left(a^{\prime}+b^{\prime}+c^{\prime}+d^{\prime}\right)=\left(a^{\prime}+c^{\prime}\right)=\left(b^{\prime}+d^{\prime}\right)$. 利用算术几何平均值不等式有 $a a^{\prime}+b b^{\prime}+c c^{\prime}+d d^{\prime}=(s-a)\left(s^{\prime}-a^{\prime}\right)+(s-b) \left(s^{\prime}-b^{\prime}\right)+(s-c)\left(s^{\prime}-c^{\prime}\right)+(s-d)\left(s^{\prime}-d^{\prime}\right) \geqslant 4\left[(s-a)\left(s^{\prime}-a^{\prime}\right)(s-b)\right. \left.\left(s^{\prime}-b^{\prime}\right)(s-c)\left(s^{\prime}-c^{\prime}\right)(s-d)\left(s^{\prime}-d^{\prime}\right)\right]^{\frac{1}{4}}=4 \sqrt{S S^{\prime}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $A B C D$ 是一个圆内接四边形且它的边长分别为 $a 、 b 、 c$ 、 d. $\rho_a$ 是该四边形外与边 $A B$ 及边 $C B 、 D A$ 的延长线相切的圆的半径, $\rho_b$ 、 $\rho_c 、 \rho_d$ 与 $\rho_a$ 的意义类似.
+求证:
+$$
+\frac{1}{\rho_a}+\frac{1}{\rho_b}+\frac{1}{\rho_c}+\frac{1}{\rho_d} \geqslant \frac{8}{\sqrt[4]{a b c d}},
+$$
+当且仅当 $A B C D$ 是正方形时等号成立.
+%%<SOLUTION>%%
+设 $A B=a, B C=b, C D=c, D A=d$. 易得 $a=\rho_a\left(\tan \frac{A}{2}+\tan \frac{B}{2}\right)$, 即 $\frac{a}{\rho_a} \geqslant 2 \sqrt{\tan \frac{A}{2} \tan \frac{B}{2}}$. 同理 $\frac{b}{\rho_b} \geqslant 2 \sqrt{\tan \frac{B}{2} \tan \frac{C}{2}}, \frac{c}{\rho_c} \geqslant 2 \sqrt{\tan \frac{C}{2} \tan \frac{D}{2}}$, $\frac{d}{\rho_d} \geqslant 2 \sqrt{\tan \frac{D}{2} \tan \frac{A}{2}}$. 因为 $A+C=B+D=\pi$, 所以 $\tan \frac{A}{2} \tan \frac{C}{2}=\tan \frac{B}{2} \tan \frac{D}{2}=1$, 因此 $\frac{1}{\rho_a}+\frac{1}{\rho_c} \geqslant \frac{2}{a} \sqrt{\tan \frac{A}{2} \tan \frac{\bar{B}}{2}}+\frac{2}{c} \sqrt{\tan \frac{C}{2} \tan \frac{D}{2}} \geqslant 2 \sqrt{\frac{4}{a c} \sqrt{\tan \frac{A}{2} \tan \frac{B}{2} \tan \frac{C}{2} \tan \frac{D}{2}}}=\frac{4}{\sqrt{a c}}$, 同理 $\frac{1}{\rho_b}+\frac{1}{\rho_d} \geqslant \frac{4}{\sqrt{b d}}$, 所以 $\frac{1}{\rho_a}+ \frac{1}{\rho_b}+\frac{1}{\rho_c}+\frac{1}{\rho_d} \geqslant \frac{4}{\sqrt{a c}}+\frac{4}{\sqrt{b d}} \geqslant \frac{8}{\sqrt[4]{a b c d}}$. 等号成立当且仅当 $A=B=C= D$ 并且 $a=b=c=d$.
+%%PROBLEM_END%%
+
+

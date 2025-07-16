@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 有一个参观团,其中任意四个成员中总有一名成员原先见过其他三名成员.\n证明: 在任意四名成员中, 总有一名成员原先见过所有成员.",
+    "solution": "如图(<FilePath:./images/volume12/figures/fig-c2a4.png>), 用图论语言表示即: 图 $G$ 的任意四点中至少有一个顶点和其他三个顶点相邻.\n证明图 $G$ 任意四个顶点中至少一个顶点和 $G$ 中其他所有顶点都相邻.\n反证法.\n如果命题不成立, 则 $G$ 中有四个点 $x$, $y, z, w$, 它们和图 $G$ 中的其他所有顶点不都相邻.\n于是存在四个顶点 $x^{\\prime}, y^{\\prime}, z^{\\prime}, w^{\\prime}$, 它们依次与 $x, y, z, w$ 都相邻.\n不妨设这个点为 $x$. 如图.\n所以 $x^{\\prime}$ 不是 $y, z, w$ 中的一个, 且 $y^{\\prime}$ 与 $x$ 是两个不同的顶点.\n如果 $y^{\\prime}$ 与 $x^{\\prime}$ 不同,则 $x, y, x^{\\prime}, y^{\\prime}$ 中没有一个顶点和其他三个顶点都相邻, 和已知矛盾.\n所以 $y^{\\prime}$ 和 $x^{\\prime}$ 重合.\n同理可证, $z^{\\prime}$ 和 $x^{\\prime}$ 重合.\n于是 $x^{\\prime}$ 和 $y z w$ 都不相邻, 和已知矛盾.\n这就证明了图 $G$ 中任意四个顶点中至少有一个顶点和 $G$ 的其他所有顶点都相邻.",
+    "remark": "注:本题和例题 4 关系密切, 两个命题实际是等价的.",
+    "figures": [
+        "./images/volume12/figures/fig-c2a4.png"
+    ]
+}

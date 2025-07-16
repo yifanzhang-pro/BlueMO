@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题12. 对任意正数 $a_1, a_2, \\cdots, a_n, n \\geqslant 2$, 求 $\\sum_{i=1}^n \\frac{a_i}{S-a_i}$ 的最小值, 其中 $S= \\sum_{i=1}^n a_i$",
+    "solution": "令 $b_i=S-a_i$, 则 $\\sum_{i=1}^n b_i=(n-1) S$. 由平均值不等式, 得 $\\sum_{i=1}^n \\frac{a_i}{S-a_i} =\\sum_{i=1}^n\\left(\\frac{a_i}{b_i}+1\\right)-n=S \\sum_{i=1}^n \\frac{1}{b_i}-n \\geqslant \\frac{n S}{\\sqrt[n]{b_1 \\cdots b_n}}-n \\geqslant \\frac{n^2 S}{b_1+\\cdots+b_n}-n=\\frac{n}{n-1}$. 当 $a_1=a_2=\\cdots=a_n=1$ 时,等号成立, 故最小值为 $\\frac{n}{n-1}$.",
+    "remark": "",
+    "figures": []
+}

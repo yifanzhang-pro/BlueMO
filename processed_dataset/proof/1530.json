@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-6.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $\\left\\{a_n\\right\\} 、\\left\\{b_n\\right\\}$ 是两个数列, 证明下面的二项式反演公式: 对任意 $n \\in \\mathbf{N}^*$, 都有 $a_n=\\sum_{k=0}^n \\mathrm{C}_n^k b_k$ 的充要条件是对任意 $n \\in \\mathbf{N}^*$, 都有 $b_n=\\sum_{k=0}^n(-1)^{n-k} \\mathrm{C}_n^k a_k$.",
+    "solution": "证明:对 $m \\in \\mathbf{N}^*$, 设 $f(x)$ 是一个 $m$ 次多项式, 且对 $0 \\leqslant k \\leqslant m$, 都有 $f(k)=a_k$.\n利用例 2 中的差分多项式, 可知\n$$\nf(x)=\\sum_{k=0}^m \\Delta^k f(0)\\left(\\begin{array}{l}\nx \\\\\nk\n\\end{array}\\right) .\n$$\n令 $g(x)=\\sum_{k=0}^m b_k\\left(\\begin{array}{l}x \\\\ k\\end{array}\\right)$, 则 $g(x)$ 也是一个 $m$ 次多项式.\n如果对任意 $n \\in \\mathbf{N}^*$, 都有 $a_n=\\sum_{k=0}^n \\mathrm{C}_n^k b_k$, 那么对任意 $0 \\leqslant n \\leqslant m$, 都有 $g(n)=\\sum_{k=0}^m \\mathrm{C}_n^k b_k=a_n=f(n)$, 这表明 $f(x)-g(x)$ 有 $m+1$ 个不同的根 $(x=0,1,2, \\cdots, m)$, 从而它是一个零多项式, 所以 $b_n=\\Delta^n f(0)$. 结合定理 1 的结论, 就有\n$$\n\\begin{aligned}\nb_n & =\\Delta^n f(0)=\\sum_{k=0}^n(-1)^{n-k} \\mathrm{C}_n^k f(k) \\\\\n& =\\sum_{k=0}^n(-1)^{n-k} \\mathrm{C}_n^k a_k .\n\\end{aligned}\n$$\n反过来, 如果对任意 $n \\in \\mathbf{N}^*$, 都有 $b_n=\\sum_{k=0}^n(-1)^{n-k} \\mathrm{C}_n^k a_k$, 那么 $b_n= \\Delta^n f(0)$, 因而有 $g(x)=f(x)$, 所以 $a_n=f(n)=g(n)=\\sum_{k=0}^m \\mathrm{C}_n^k b_k= \\sum_{k=0}^n \\mathrm{C}_n^k b_k$ (注意,这时要取 $m \\geqslant n$ ).\n综上可知, 二项式反演公式成立.\n说明这一节给出了一些与差分方法相关的公式, 它们在证明一些恒等式时会有用武之地, 在推导一些高阶等差数列的通项与求和问题中也会经常用到.",
+    "remark": "",
+    "figures": []
+}

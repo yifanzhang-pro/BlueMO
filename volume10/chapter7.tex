@@ -1,0 +1,187 @@
+
+%%TEXT_BEGIN%%
+八个著名的数论定理.
+费马小定理,欧拉定理以及中国剩余定理这几个著名的数论定理, 在初等数论中有着重要的作用.
+(1) 费马小定理设 $p$ 是素数, $a$ 是与 $p$ 互素的任一整数,则
+$$
+a^{p-1} \equiv 1(\bmod p) \text {. }
+$$
+费马小定理有一个变异的形式,这有时更为适用:
+对任意整数 $a$ 有 $a^p \equiv a(\bmod p)$.
+(在 $p \nmid a$ 时,两个命题等价; 当 $p \mid a$ 时后者显然成立.)
+用归纳法不难给出费马小定理的一个证明: 易知, 我们只需对 $a=0$, $1, \cdots, p-1$ 证明命题.
+$a=0$ 时, 结论显然成立.
+若已有 $a^p=a(\bmod p)$, 则由
+044 于 $p \mid \mathrm{C}_p^i(i=1,2, \cdots, p-1)$, 故
+$$
+(a+1)^p=a^p+\mathrm{C}_p^1 a^{p-1}+\cdots+\mathrm{C}_p^{p-1} a+1 \equiv a^p+1 \equiv a+1(\bmod p),
+$$
+这表明命题在 $a$ 换为 $a+1$ 时也成立.
+(2) 欧拉定理设 $m>1$ 为整数, $a$ 是与 $m$ 互素的任一整数, $\varphi(m)$ 为欧拉函数 (见第 6 单元), 则
+$$
+a^{\varphi(m)} \equiv 1(\bmod m) .
+$$
+欧拉定理可如下证明: 取 $r_1, r_2, \cdots, r_{\varphi(m)}$ 为模 $m$ 的一个缩系.
+因为 ( $a$ , $m)=1$, 故 $a r_1, a r_2, \cdots, a r_{\varphi(m)}$ 也是模 $m$ 的一个缩系 (见第 6 单元). 由于模 $m$ 的两个完 (缩) 系在模 $m$ 意义下互为排列, 因此特别地有
+$$
+r_1 \cdots r_{\varphi(m)} \equiv a r_1 \cdot a r_2 \cdots \cdot a r_{\varphi(m)}=a^{\varphi(m)} r_1 r_2 \cdots r_{\varphi(m)}(\bmod m) .
+$$
+因 $\left(r_i, m\right)=1$, 故 $\left(r_1 r_2 \cdots r_{\varphi(m)}, m\right)=1$, 因此上式两边可约去 $r_1 \cdots r_{\varphi(m)}$, 即有 $a^{\varphi(m)} \equiv 1(\bmod m)$.
+注1 当 $m=p$ 为素数时, 由于 $\varphi(p)=p-1$,故由欧拉定理可推出费马小定理.
+注2 若已知 $m$ 的标准分解 $m=p_1^{\alpha_1} \cdots p_k^{\alpha_k}$, 则欧拉函数 $\varphi(m)$ 由下面公式确定(其证明这里略去):
+$$
+\begin{aligned}
+\varphi(m) & =p_1^{\alpha_1-1}\left(p_1-1\right) p_2^{\alpha_2-1}\left(p_2-1\right) \cdots p_k^{\alpha_k-1}\left(p_k-1\right) \\
+& =m\left(1-\frac{1}{p_1}\right)\left(1-\frac{1}{p_2}\right) \cdots\left(1-\frac{1}{p_k}\right) .
+\end{aligned}
+$$
+(3)中国剩余定理设 $m_1, m_2, \cdots, m_k$ 是 $k$ 个两两互素的正整数, $M== m_1 m_2 \cdots m_k, M_i=\frac{M}{m_i}(i=1,2, \cdots, k), b_1, b_2, \cdots, b_k$ 为任意整数, 则同余式组
+$$
+x \equiv b_1\left(\bmod m_1\right), \cdots, x \equiv b_k\left(\bmod m_k\right)
+$$
+有唯一解 $x \equiv M_1^* M_1 b_1+\cdots+M_k^* M_k b_k(\bmod M)$, 其中 $M_i^*$ 为满足 $M_i^* M_i \equiv 1\left(\bmod m_i\right)$ 任意整数 $(i=1,2, \cdots, k)$.
+验证上述结论是一件容易的事情, 我们将这留给读者(注意, 对任意 $i$, 有 $\left(m_i, M_i\right)=1$, 以及对任意 $j \neq i$ 有 $m_i \mid M_j$). 中国剩余定理的主要力量在于, 它断言所说的同余式组当模两两互素时一定有解, 而解的具体形式通常并不重要.
+上述的几个数论定理是解决问题的有力工具, 它们往往和其他方法结合使用, 我们在后面将看到这一点, 这里先介绍几个较为直接的应用这些定理的例子.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $p$ 是给定的素数.
+证明: 数列 $\left\{2^n-n\right\}(n \geqslant 1)$ 中有无穷多个项被整除.
+%%<SOLUTION>%%
+证明:$p=2$ 时结论显然成立.
+设 $p>2$, 则由费马小定理得 $2^{p-1} \equiv 1(\bmod p)$, 从而对任意正整数 $m$ 有
+$$
+2^{m(p-1)} \equiv 1(\bmod p) . \label{eq1}
+$$
+我们取 $m \equiv-1(\bmod p)$, 则由 式\ref{eq1}, 得
+$$
+2^{m(p-1)}-m(p-1) \equiv 1+m \equiv 0(\bmod p) .
+$$
+因此, 若 $n=(k p-1)(p-1)$, 则 $2^n-n$ 被 $p$ 整除 ( $k$ 为任意正整数), 故数列中有无穷多项被 $p$ 整除.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 证明: 数列 $1,31,331,3331, \cdots$ 中有无穷多个合数.
+%%<SOLUTION>%%
+证明:因 31 是素数, 由费马小定理知, $10^{30} \equiv 1(\bmod 31)$, 故对任意正整数 $k$, 有 $10^{30 k} \equiv 1(\bmod 31)$, 从而
+$$
+\frac{.1}{3}\left(10^{30 k}-1\right) \equiv 0(\bmod 31) .
+$$
+这表明, $30 k$ 个 3 组成的数被 31 整除,这数乘以 100 后再加上 31 ,也被 31 整除, 即数列中第 $30 k+2$ 项被 31 整除, 故它不是素数, 从而上述的数列中有天穷多个合数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 证明: 对任意给定的正整数 $n$,均有连续 $n$ 个正整数,其中每一个者有大于 1 的平方因子.
+%%<SOLUTION>%%
+证明:由于素数有无穷多个, 我们可取出 $n$ 个互不相同的素数 $p_1 p_2, \cdots, p_n$, 而考虑同余式组
+$$
+x \equiv-i\left(\bmod p_i^2\right), i=1,2, \cdots, n . \label{eq1}
+$$
+因 $p_1^2, p_2^2, \cdots, p_n^2$ 显然两两互素,故由中国剩余定理知, 上述同余式组有正整数解, 于是, 连续 $n$ 个数 $x+1, x+2, \cdots, x+n$ 分别被平方数 $p_1^2 p_2^2, \cdots, p_n^2$ 整除.
+若不直接使用素数, 也可采用下面的变异的方法.
+由于费马数 $F_k=2^{2^k} 1(k \geqslant 0)$ 两两互素, 故将 式\ref{eq1} 中的 $p_i^2$ 换为 $F_i^2(i=1,2, \cdots, n)$ 后, 相应的同余式组也有解, 同样导出证明.
+%%<REMARK>%%
+注:例 3 的解法表现了中国剩余定理的一个基本功效,它常常能将"找建续 $n$ 个整数具有某种性质"的问题,化归为 "找 $n$ 个两两互素的数具有某种忙质", 后者往往易于解决.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. (1)证明: 对任意正整数 $n$, 存在连续 $n$ 个正整数,其中每一个都是幂数;
+(2)证明,存在无穷多个互不相同的正整数,它们及它们中任意多个不厓数的和均不是幂数.
+(幕数的定义请见第 5 单元例 9. )
+%%<SOLUTION>%%
+证明:(1) 我们证明, 存在连续 $n$ 个正整数,其中每一个数都至少有一个素因子, 在这个数的标准分解中仅出现一次, 从而这个数不是幂数.
+由于素数有无穷多个,故可取 $n$ 个互不相同的素数 $p_1, \cdots, p_n$. 考虑同余式组
+$$
+x \equiv-i+p_i\left(\bmod p_i^2\right), i=1,2, \cdots, n . \label{eq1}
+$$
+因 $p_1^2, p_2^2, \cdots, p_n^2$ 两两互素, 故由中国剩余定理知, 上述同余式组有正整数解 $x$. 对 $1 \leqslant i \leqslant n$, 因 $x+i \equiv p_i\left(\bmod p_i^2\right)$, 故 $p_i \mid(x+i)$; 但由 式\ref{eq1} 可知 $p_i^2 \nmid(x+ i)$, 即 $p_i$ 在 $x+i$ 的标准分解中恰出现一次,故 $x+1, x+2, \cdots, x+n$ 都不是幂数.
+(2) 我们归纳构作一个由非幂数的正整数组成的 (严格增的)无穷数歹 $a_1, a_2, \cdots, a_n, \cdots$, 使得对每个 $n$, 数 $a_1, \cdots, a_n$ 中任意多个的和均不是幂数由此即证明了 (2) 中的结论.
+首先, $a_1$ 可取为任一个非幂数的数,例如取 $a_1=2$. 设 $a_1, \cdots, a_n$ 已确定, 我们证明, 可选择 $a_{n+1}$ 不是幂数, $a_{n+1}>a_n$, 且 $a_{n+1}$ 与 $a_1, \cdots, a_n$ 中任意多个数的和均不是幂数.
+设 $s_1, \cdots, s_m$ 是由 $a_1, \cdots, a_n$ 产生的所有不同项的和, 这里 $m=2^n-1$. 由于素数有无穷多个, 故可取 $m+1$ 个不同素数 $p, p_1, \cdots, p_m$, 考虑同余式组
+$$
+x \equiv p\left(\bmod p^2\right), x \equiv-s_i+p_i\left(\bmod p_i^2\right), i=1, \cdots, m . \label{eq2}
+$$
+因 $p^2, p_1^2, \cdots, p_m^2$ 两两互素, 故同余式组\ref{eq2}有无穷个正整数解 $x$. 任取一个大于 $a_n$ 的解, 记为 $a_{n+1}$. 则由 $a_{n+1} \equiv p\left(\bmod p^2\right)$ 知, $a_{n+1}$ 被 $p$ 整除, 但 $p^2 \nmid a_{n+1}$, 故 $a_{n+1}$ 不是幕数.
+又 $a_{n+1} \equiv-s_i+p_i\left(\bmod p_i^2\right)$ 表明, $a_{n+1}+s_i$ 被 $p_i$ 整除但不被 $p_i^2$ 整除, 从而对每个 $i=1, \cdots, m$, 数 $a_{n+1}+s_i$ 均不是幕数.
+由此就递推地构作了一个符合前述要求的无穷数列, $a_1, a_2, \cdots$. 证毕.
+%%<REMARK>%%
+注:本题 (2) 的另一种解法见第 5 单元例 9 , 那儿构作的数列中, 每一项均整除其后一项.
+作为对比, 我们注意, 将 (2) 的上述解法稍作修改, 则可使得我们构作的数列中的项两两互素.
+事实上, 归纳假设 $a_1, \cdots, a_n$ 已两两互素, 设 $q_1, \cdots, q_t$ 是这些数中出现的所有不同的素因子.
+现在取素数 $p, p_1, \cdots, p_m$ 互不相同, 且与 $q_1, \cdots, q_t$ 也不相同,在同余式组\ref{eq2}中增加一个限制
+$$
+x \equiv 1\left(\bmod q_1 \cdots q_t\right) . \label{eq3}
+$$
+由于 $p^2, p_1^2, \cdots, p_m^2, q_1 \cdots q_t$ 两两互素, 故同余式组\ref{eq2}增添\ref{eq3}后有解, 并且由 式\ref{eq3}知,任一个解 $x$ 与 $q_1 \cdots q_t$ 互素, 从而与 $a_1, \cdots, a_n$ 均互素.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 给定正整数 $n$,设 $f(n)$ 是使 $\sum_{k=1}^{f(n)} k$ 能被 $n$ 整除的最小正整数.
+证明: 当且仅当 $n$ 为 2 的幂时有 $f(n)=2 n-1$.
+%%<SOLUTION>%%
+证明:问题的前一半甚为容易.
+如果 $n=2^m$, 则一方面
+$$
+\sum_{k=1}^{2 n-1} k=\frac{(2 n-1) \times 2 n}{2}=\left(2^{m+1}-1\right) \cdot 2^m
+$$
+被 $2^m=n$ 整除.
+另一方面,若 $r \leqslant 2 n-2$, 则
+$$
+\sum_{k=1}^r k=\frac{r(r+1)}{2}
+$$
+不被 $2^m$ 整除, 这是因为 $r$ 和 $r+1$ 中有一个是奇数, 而另一个不超过 $(2 n- 2)+1=2^{m+1}-1$, 因而不被 $2^{m+1}$ 整除.
+综合上述两个方面, 即知 $f\left(2^m\right)=2^{m+1}-1$.
+现在设 $n$ 不是 2 的方幂,即 $n=2^m a$, 其中 $m \geqslant 0, a>1$ 为奇数.
+我们证明, 存在正整数 $r<2 n-1$, 使得 $2^{m+1} \mid r$, 且 $a \mid(r+1)$, 于是
+$$
+\sum_{k=1}^r k=\frac{r(r+1)}{2}
+$$
+被 $2^m a==n$ 整除, 因而 $f(n)<2 n-1$.
+为证明.
+面的断言, 我们考虑
+$$
+x \equiv 0\left(\bmod 2^{m+1}\right), x \equiv-1(\bmod a) . \label{eq1}
+$$
+因为 $\left(2^{m+1}, a\right)=1$,故由中国剩余定理知, 同余式组 式\ref{eq1} 必有解 $x_0$, 并且其全部解为 $x \equiv x_0\left(\bmod 2^{m+1} a\right)$, 即 $x \equiv x_0(\bmod 2 n)$. 因此可确定一个 $r$ 满足 式\ref{eq1} 且 $0<r \leqslant 2 n$. 进一步, 由 式\ref{eq1} 中第二个同余式知 $r \neq 2 n$. 而由第一个同余式可见 $r \neq 2 n-1$, 因此实际上 $r<2 n-1$. 这证明了存在满足要求的 $r$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $f(x)$ 是一个整系数多项式, $a_1, \cdots, a_m$ 是给定的非零整数,具有下面的性质: 对任意整数 $n$, 数 $f(n)$ 被 $a_1, \cdots, a_m$ 中的一个整除.
+证明: 存在一个 $a_i(1 \leqslant i \leqslant m)$, 使得对所有整数 $n, f(n)$ 均被 $a_i$ 整除.
+%%<SOLUTION>%%
+证明:若 $a_1, \cdots, a_m$ 中有一个数为 \pm 1 , 则结论显然成立.
+以下设每个 $a_i \neq \pm 1$. 假设结论不对, 则对每个 $a_i$ 均相应地有一个整数 $x_i$, 使得 $a_i \nmid f\left(x_i\right)$. $i=1, \cdots, m$. 我们将由此作出一个整数 $n$, 使得所有 $a_i$ 均不整除 $f(n)$, 这将与已知条件矛盾.
+对 $i=1, \cdots, m$, 因为 $a_i \nmid f\left(x_i\right)$, 故有一个素数幕 $p_i^{\alpha_i}$, 使得 $p_i^{\alpha_i} \mid a_i$, 但 $p_i^{\alpha_i} \nmid f\left(x_i\right)$. 若 $p_1^{\alpha_1}, \cdots, p_m^{\alpha_n}$ 中有同一个素数的幂, 则仅留下一个幂次最低的, 而将那些高次 (及同次) 幕删去.
+经过这种手续, 不妨设剩下的素数幕为 $p_1^{\alpha_1}, \cdots p_t^{\alpha_t}(1 \leqslant t \leqslant m)$, 则它们两两互素, 故由中国剩余定理知, 同余式组
+$$
+n \equiv x_i\left(\bmod p_i^{\alpha_i}\right), i=1, \cdots, t. \label{eq1}
+$$
+有整数解 $n$.
+由于 $f(x)$ 是整系数多项式, 故由式\ref{eq1}可知
+$$
+f(n) \equiv f\left(x_i\right)\left(\bmod p_i^{\alpha_i}\right), i=1, \cdots, t .
+$$
+对于 $i=1, \cdots, t$, 由于 $p_i^{\alpha_i} \nmid f\left(x_i\right)$, 故由上式知 $p_i^{\alpha_i} \nmid f(n)$, 更有 $a_i \nmid f(n)$, 而㞹 于 $j=t+1, \cdots, m$, 由前面的手续及假设知, 每个 $p_j$ 等于某一个 $p_i(1 \leqslant i \leqslant t)$, 且 $p_i^{\alpha_i} \mid p_j^{\alpha_j}$. 因此由 $p_i^{\alpha_i} \nmid f(n)$, 推出 $p_j^{\alpha_j} \nmid f(n)$, 进而 $a_j \nmid f(n)$. 因此 $f(n)$ 不被 $a_1, \cdots, a_m$ 中的任一个整除, 这与问题中的条件相违.
+从而本题的结论成立.
+证毕.
+%%PROBLEM_END%%
+
+

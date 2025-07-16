@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "推广1 已知 $\\alpha, \\beta \\in\\left(0, \\frac{\\pi}{2}\\right)$, 则证明 $\\alpha+\\beta=\\frac{\\pi}{2}$ 的充要条件为: $\\frac{\\sin ^3 \\alpha}{\\cos \\beta}+ \\frac{\\cos ^3 \\alpha}{\\sin \\beta}=1$.",
+    "solution": "证明:必要性显然.\n下证充分性：\n证法一 $\\frac{\\sin ^3 \\alpha}{\\cos \\beta}+\\frac{\\cos ^3 \\alpha}{\\sin \\beta}=\\frac{\\sin ^4 \\alpha}{\\cos \\beta \\sin \\alpha}+\\frac{\\cos ^4 \\alpha}{\\sin \\beta \\cos \\alpha} \\geqslant \\frac{\\left(\\sin ^2 \\alpha+\\cos ^2 \\alpha\\right)^2}{(\\cos \\beta \\sin \\alpha+\\sin \\beta \\cos \\alpha)} =\\frac{1}{\\sin (\\alpha+\\beta)} \\geqslant 1$, 当且仅当 $\\left\\{\\begin{array}{l}\\frac{\\sin ^2 \\alpha}{\\cos \\beta \\sin \\alpha}=\\frac{\\cos ^2 \\alpha}{\\sin \\beta \\cos \\alpha}, \\\\ \\alpha+\\beta=\\frac{\\pi}{2},\\end{array}\\right.$ 即 $\\alpha+\\beta=\\frac{\\pi}{2}$ 时取“=”. \n证法二 $\\frac{\\sin ^3 \\alpha}{\\cos \\beta}+\\frac{\\sin ^3 \\alpha}{\\cos \\beta}+\\cos ^2 \\beta \\geqslant 3 \\sqrt[3]{\\frac{\\sin ^3 \\alpha}{\\cos \\beta} \\cdot \\frac{\\sin ^3 \\alpha}{\\cos \\beta} \\cdot \\cos ^2 \\beta}=3 \\sin ^2 \\alpha$, 同理, $\\frac{\\cos ^3 \\alpha}{\\sin \\beta}+\\frac{\\cos ^3 \\alpha}{\\sin \\beta}+\\sin ^2 \\beta \\geqslant 3 \\cos ^2 \\alpha$, 两式相加即有: $\\frac{\\sin ^3 \\alpha}{\\cos \\beta}+\\frac{\\cos ^3 \\alpha}{\\sin \\beta} \\geqslant \\sin ^2 \\alpha+\\cos ^2 \\alpha=1$, 当且仅当 $\\left\\{\\begin{array}{l}\\sin ^2 \\alpha=\\cos ^2 \\beta, \\\\ \\cos ^2 \\alpha=\\sin ^2 \\beta,\\end{array}\\right.$ 即 $\\alpha+\\beta=\\frac{\\pi}{2}$ 时取“=”.",
+    "remark": "",
+    "figures": []
+}

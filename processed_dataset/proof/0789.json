@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise18.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 证明: 存在无穷多组正整数 $(m, n)$, 使得 $\\frac{n+1}{m}+\\frac{m+1}{n}$ 是一个整数.",
+    "solution": "首先, $m=1, n=2$ 使得 $\\frac{n+1}{m}+\\frac{m+-1}{n}$ 是一个整数.\n设正整数 $m, n(m<n)$ 使得 $\\frac{n+1}{m}+\\frac{m+1}{n} \\in \\mathbf{N}$, 记 $\\frac{n+1}{m}+\\frac{m+1}{n}=t$, 则\n$$\nt n=\\frac{n(n+1)}{m}+m+1\n$$\n所以, $\\frac{n(n+1)}{m} \\in \\mathbf{N}$. 令 $\\frac{n(n+1)}{m}=s$, 则 $s>n$,于是\n$$\nt n=\\frac{n(n+1)}{m}+m+1=s+\\frac{n(n+1)}{s}+1,\n$$\n所以\n$$\nt=\\frac{s+1}{n}+\\frac{n+1}{s} .\n$$\n即若 $(m, n)$ 是满足题意的数对, 则 $(n, s)$ 也是满足题意的数对.\n且 $s> n>m$.\n故存在无穷多组正整数 $(m, n)$, 使得 $\\frac{n+1}{m}+\\frac{m+1}{n}$ 是一个整数.",
+    "remark": "注:试比较第 6 节极端原理中的例 8 .",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题25 求满足函数方程:\n$$\n\\frac{f(x)+f(y)}{f(x)-f(y)}=f\\left(\\frac{x+y}{x-y}\\right)(x \\neq y)\n$$\n的所有连续函数 $f(x)$.",
+    "solution": "显然 $f(x)=x$ 是原方程的解, 下证只有这个解.\n在原恒等式中令 $y=k x$, 得 $\\frac{f(x)+f(k x)}{f(x)-f(k x)}=f\\left(\\frac{x+k x}{x-k x}\\right)=f\\left(\\frac{1+k}{1-k}\\right)=\\frac{f(1)+f(k)}{f(1)-f(k)}$. \n从而, $f(k x)=\\frac{f(x)}{f(1)} \\cdot f(k)$. 令 $k=0$, 有 $f(0) \\cdot\\left(1-\\frac{f(x)}{f(1)}\\right)=0$. \n由于 $f(x)$ 不恒等于 $f(1)$, 所以 $f(0)=0$. 在原恒等式中令 $y=0$, 得 $f(1)=1$. 于是 $f(k x)=f(k) f(x) \\cdots$ (1). \n我们的目标是去证对 $n \\in \\mathbf{N}_{+}$, 有 $f(n)=n$. 先证明 $f(2)=2$. \n由(1), $f(4)=f^2(2) \\cdots$ (2). 再由原恒等式及(1), $\\frac{f(2)+1}{f(2)-1}=f(3) \\cdots$ (3), $\\frac{f(4)+1}{f(4)-1}=f\\left(\\frac{5}{3}\\right)=\\frac{f(5)}{f(3)} \\cdots$ (4), $\\frac{f(3)+f(2)}{f(3)-f(2)}=f(5) \\cdots$ (5). \n在(2)、 (3)、 (4)、 (5)中消去 $f(3) 、 f(4) 、 f(5)$, 有 $\\frac{f^2(2)+1}{f^2(2)-1}=\\frac{\\left(f^2(2)+1\\right)(f(2)-1)}{(f(2)+1)\\left(1+2 f(2)-f^2(2)\\right)}$,\n即 $f^2(2)=2 f(2)$. 如果 $f(2)=0$, 那么 $f\\left(2 \\times \\frac{1}{2}\\right)=0$, 与 $f(1)=1$ 矛盾.\n所以 $f(2)=2$. 若 $f(n)=n$ 对 $n<2 m$ 成立, 则 $f(2 m)=f(2) f(m)=2 f(m)=2 m$, $f(2 m+1)=\\frac{f(m+1)+f(m)}{f(m+1)-f(m)}=\\frac{m+1+m}{m+1-m}=2 m+1$. \n故 $f(n)=n$ 对一切 $n \\in \\mathbf{N}_{+}$成立.\n在原恒等式中令 $y=-x$, 得 $f(x)+f(-x)=0$. 即 $f(-x)= -f(x)$. 故 $f(n)=n$ 对一切整数 $n$ 成立.\n再由 $f\\left(\\frac{p}{q}\\right)=\\frac{f(p)}{f(q)}=\\frac{p}{q}$, 所以 $f(n)=n$ 对一切有理数 $n=\\frac{p}{q}$ 成立.\n最后利用连续性, 即知 $f(x)=x$, 任意 $x \\in \\mathbf{R}$.",
+    "remark": "",
+    "figures": []
+}

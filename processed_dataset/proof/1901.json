@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 在锐角 $\\triangle A B C$ 中, $\\angle A C B=2 \\angle A B C$, 点 $D$ 是 $B C$ 边上一点, 使得 $2 \\angle B A D=\\angle A B C$. 证明 : $\\frac{1}{B D}=\\frac{1}{A B}+\\frac{1}{A C}$.",
+    "solution": "证明: 记 $\\angle B A D=\\alpha$, 则 $\\angle A B C=2 \\alpha, \\angle A C B=4 \\alpha$, 利用正弦定理可知, $\\frac{B D}{A B}=\\frac{\\sin \\alpha}{\\sin 3 \\alpha}, \\frac{A B}{A C}=\\frac{\\sin 4 \\alpha}{\\sin 2 \\alpha}=2 \\cos 2 \\alpha$, 从而, 要证的式子等价于 $\\sin 3 \\alpha= \\sin \\alpha+2 \\sin \\alpha \\cos 2 \\alpha$, 最后一式是显然的.",
+    "remark": "",
+    "figures": []
+}

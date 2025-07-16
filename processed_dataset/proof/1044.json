@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题27. 求证: $\\cos x \\geqslant 1-\\frac{x^2}{2}$.",
+    "solution": "先证 $|\\sin x| \\leqslant|x|, \\cos x=1-2 \\sin ^2 \\frac{x}{2}=1-2\\left|\\sin \\frac{x}{2}\\right|^2 \\geqslant 1-$\n$$\n2\\left|\\frac{x}{2}\\right|^2=1-\\frac{x^2}{2}\n$$",
+    "remark": "",
+    "figures": []
+}

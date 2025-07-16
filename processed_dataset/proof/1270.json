@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例18. (Ostrowski) 设实数 $a_1, a_2, \\cdots, a_n$ 与 $b_1, b_2, \\cdots, b_n$ 不成比例.\n实数 $x_1, x_2, \\cdots, x_n$ 满足:\n$$\n\\left\\{\\begin{array}{l}\na_1 x_1+a_2 x_2+\\cdots+a_n x_n=0, \\\\\nb_1 x_1+b_2 x_2+\\cdots+b_n x_n=1 .\n\\end{array}\\right.\n$$\n求证: $x_1^2+x_2^2+\\cdots+x_n^2 \\geqslant \\frac{\\sum_{i=1}^n a_i^2}{\\sum_{i=1}^n a_i^2 \\cdot \\sum_{i=1}^n b_i^2-\\left(\\sum_{i=1}^n a_i b_i\\right)^2}$.",
+    "solution": "证法 2 由 Cauchy 不等式可得, 对任意 $t \\in \\mathbf{R}$,\n$$\n\\left[\\sum_{i=1}^n\\left(a_i t+b_i\\right)^2\\right] \\cdot\\left(x_1^2+x_2^2+\\cdots+x_n^2\\right) \\geqslant\\left[\\sum_{i=1}^n\\left(a_i t+b_i\\right) x_i\\right]^2=1,\n$$\n即\n$$\n\\left(x_1^2+x_2^2+\\cdots+x_n^2\\right)\\left(A t^2+2 C t+B\\right)-1 \\geqslant 0\n$$\n恒成立.\n由判别式 (关于 $t$ 的) $\\Delta \\leqslant 0$, 即有:\n$$\n\\sum_{i=1}^n x_i^2 \\geqslant \\frac{A}{A B-C^2} \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-6.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设数列 $\\left\\{a_n\\right\\}$ 是一个 $p$ 阶等差数列, 其通项公式为 $a_n=f(n)$, 这里\n$f(x)$ 是一个 $p$ 次多项式.\n证明:\n$$\n\\sum_{m=1}^n a_m=\\sum_{k=0}^p \\mathrm{C}_{n+1}^{k+1} \\Delta^k f(0) . \\label{eq1}\n$$\n并依此给出 $\\sum_{m=1}^n m^3$ 的公式.",
+    "solution": "证明:利用上例的说明可知\n$$\na_m=f(m)=\\sum_{k=0}^p \\Delta^k f(0)\\left(\\begin{array}{l}\nm \\\\\nk\n\\end{array}\\right),\n$$\n因此\n$$\n\\begin{aligned}\n\\sum_{m=1}^n a_m & =\\sum_{m=1}^n\\left(\\sum_{k=0}^p \\Delta^k f(0)\\left(\\begin{array}{l}\nm \\\\\nk\n\\end{array}\\right)\\right) \\\\\n& =\\sum_{k=0}^p \\Delta^k f(0) \\sum_{m=1}^n\\left(\\begin{array}{l}\nm \\\\\nk\n\\end{array}\\right) \\\\\n& =\\sum_{k=0}^p \\Delta^k f(0)\\left(\\mathrm{C}_k^k+\\cdots+\\mathrm{C}_n^k\\right) \\\\\n& =\\sum_{k=0}^p \\Delta^k f(0)\\left(\\mathrm{C}_{k+1}^{k+1}+\\mathrm{C}_{k+1}^k+\\cdots+\\mathrm{C}_n^k\\right) \\\\\n& =\\sum_{k=0}^p \\Delta^k f(0)\\left(\\mathrm{C}_{k+2}^{k+1}+\\mathrm{C}_{k+2}^k+\\cdots+\\mathrm{C}_n^k\\right) \\\\\n& =\\cdots=\\sum_{k=0}^p \\mathrm{C}_{n+1}^{k+1} \\Delta^k f(0) .\n\\end{aligned}\n$$\n所以, 式\\ref{eq1}成立:\n当 $f(x)=x^3$ 时, $\\Delta f(x)=(x+1)^3-x^3=3 x^2+3 x+1, \\Delta^2 f(x)= 3(x+1)^2+3(x+1)+1-\\left(3 x^2+3 x+1\\right)=6 x+6, \\Delta^3 f(x)=6(x+1)+6- (6 x+6)=6$. 故 $\\Delta f(0)=1, \\Delta^2 f(0)=6, \\Delta^3 f(0)=6$. 这样利用(1)可知\n$$\n\\sum_{m=1}^n m^3=6 \\mathrm{C}_{n+1}^4+6 \\mathrm{C}_{n+1}^3+\\mathrm{C}_{n+1}^2=\\left(\\frac{n(n+1)}{2}\\right)^2 .\n$$\n说明这里给出了 $p$ 阶等差数列前 $n$ 项和的求和公式 (在已知通项公式的前提下), 依此可方便地给出 $\\sum_{m=1}^n m^p(p=1,2, \\cdots)$ 的求和公式.",
+    "remark": "",
+    "figures": []
+}

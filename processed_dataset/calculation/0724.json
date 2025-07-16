@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题21. 求下列各式的值:\n(1) $\\cos ^2 24^{\\circ}+\\sin ^2 6^{\\circ}+\\cos ^2 18^{\\circ}$;\n(2) $4 \\cos ^2 36^{\\circ}-\\sin 84^{\\circ}\\left(\\sqrt{3}-\\tan 6^{\\circ}\\right)$.",
+    "solution": "(1) $\\cos ^2 24^{\\circ}+\\sin ^2 6^{\\circ}+\\cos ^2 18^{\\circ}=\\frac{3}{2}+\\frac{1}{2}\\left(\\cos 48^{\\circ}-\\cos 12^{\\circ}+\\right. \\left.\\cos 36^{\\circ}\\right)=\\frac{3}{2}+\\frac{1}{2}\\left(-2 \\sin 30^{\\circ} \\sin 18^{\\circ}+\\cos 36^{\\circ}\\right)=\\frac{3}{2}+\\frac{1}{2}\\left(\\sin 54^{\\circ}-\\sin 18^{\\circ}\\right)= \\frac{3}{2}+\\cos 36^{\\circ} \\sin 18^{\\circ}=\\frac{3}{2}+\\frac{\\cos 36^{\\circ} \\sin 18^{\\circ} \\cos 18^{\\circ}}{\\cos 18^{\\circ}}=\\frac{3}{2}+\\frac{\\frac{1}{4} \\sin 72^{\\circ}}{\\cos 18^{\\circ}}=\\frac{7}{4}$.\n (2)参照例 3 的解法, 可得 $4 \\cos ^2 36^{\\circ}-\\sin 84^{\\circ}\\left(\\sqrt{3}-\\tan 6^{\\circ}\\right)=1$.",
+    "remark": "",
+    "figures": []
+}

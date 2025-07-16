@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-2.tex",
+    "problem_type": "calculation",
+    "problem": "例10. 设 $2 n$ 个实数 $a_1, a_2, \\cdots, a_{2 n}$ 满足 $\\sum_{i=1}^{2 n-1}\\left(a_{i+1}-a_i\\right)^2=1$, 求\n$$\n\\left(a_{n+1}+a_{n+2}+\\cdots+a_{2 n}\\right)-\\left(a_1+a_2+\\cdots+a_n\\right)\n$$\n的最大值.",
+    "solution": "解:当 $n=1$ 时, $\\left(a_2-a_1\\right)^2=1$, 则 $a_2-a_1= \\pm 1$, 最大值为 1 .\n当 $n \\geqslant 2$ 时,设 $x_1=a_1, x_{i+1}=a_{i+1}-a_i, i=1,2, \\cdots, 2 n-1$. 则 $\\sum_{i=2}^{2 n} x_i^2=$ 1 , 且 $a_k=x_1+x_2+\\cdots+x_k, k=1,2, \\cdots, 2 n$.\n由柯西不等式, 得\n$$\n\\begin{aligned}\n& a_{n+1}+a_{n+2}+\\cdots+a_{2 n}-\\left(a_1+a_2+\\cdots+a_n\\right) \\\\\n= & x_2+2 x_3+\\cdots+(n-1) x_n+n x_{n+1}+(n-1) x_{n+2}+\\cdots+x_{2 n} \\\\\n\\leqslant & {\\left[1+2^2+\\cdots+(n-1)^2+n^2+(n-1)^2+\\cdots+1\\right]^{\\frac{1}{2}} } \\\\\n& \\cdot\\left(x_2^2+x_3^2+\\cdots+x_{2 n}^2\\right)^{\\frac{1}{2}} \\\\\n= & {\\left[n^2+2 \\cdot \\frac{1}{6}(n-1) n(2(n-1)+1)\\right]^{\\frac{1}{2}}=\\sqrt{\\frac{n\\left(2 n^2+1\\right)}{3}} . } \\\\\n\\text { 当 } \\quad & a_k=\\frac{\\sqrt{3} k(k-1)}{2 \\sqrt{n\\left(2 n^2+1\\right)}}, k=1,2, \\cdots, n+1,\n\\end{aligned}\n$$\n当 $a_k=\\frac{\\sqrt{3} k(k-1)}{2 \\sqrt{n\\left(2 n^2+1\\right)}}, k=1,2, \\cdots, n+1$,\n$$\na_{n+k}=\\frac{\\sqrt{3}\\left[2 n^2-(n-k)(n-k+1)\\right]}{2 \\sqrt{n\\left(2 n^2+1\\right)}}, k=1,2, \\cdots, n-1\n$$\n时, 上述不等式等号成立, 所求最大值为 $\\sqrt{\\frac{n\\left(2 n^2+1\\right)}{3}}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题15 设 $f(x)=x^2+p x+q, p, q \\in \\mathbf{R}$. 若 $|f(x)|$ 在 $[-1,1]$ 上的最大值为 $M$, 求 $M$ 的最小值.",
+    "solution": "由于 $M=\\max _{-1 \\leqslant x \\leqslant 1}|f(x)|$, 所以 $M \\geqslant|f(1)|, M \\geqslant|f(0)|, M \\geqslant |f(-1)|$, 故 $4 M \\geqslant|1+p+q|+2|-q|+|1-p+q| \\geqslant \\mid 1+p+q- 2 q+1-p+q \\mid=2$. 所以 $M \\geqslant \\frac{1}{2}$, 而当 $f(x)=x^2-\\frac{1}{2}$ 时, $M=\\frac{1}{2}$. 所以 $M$ 的最小值为 $\\frac{1}{2}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例7. 记 $\\mathbf{Q}$ 为有理数集合, $\\mathbf{Q}$ 的非空子集 $S$ 具有以下性质:\n(1) $0 \\notin S$;\n(2) 若 $s_1 \\in S, s_2 \\in S$, 则 $s_1 / s_2 \\in S$;\n(3) 存在一非零有理数 $q, q \\notin S$, 且每一个不在 $S$ 中的非零有理数都可写成 $q s$ 的形式,其中 $s \\in S$.\n证明: 若 $x \\in S$, 则存在 $y, z \\in S$, 使 $x=y+z$.",
+    "solution": "分析:设 $\\alpha, \\beta \\in \\mathbf{Q}$, 且 $\\alpha+\\beta=1$, 则\n$$\nx=x(\\alpha+\\beta)=x \\alpha+x \\beta .\n$$\n我们希望出现: $x \\alpha \\in S$ 且 $x \\beta \\in S$. 由(3)似乎应该有 $\\alpha, \\beta \\in S$. 于是我们要解决两个问题: (1) 怎样的 $\\alpha$ 、必定属于 $S$; (2) 如 $x_1 \\in S, x_2 \\in S$, 则 $x_1 x_2 \\in S$.\n证明假设 $s \\in S$. 令 $s_1=s_2 \\in S$, 则 $s_1 / s_2=1 \\in S$. 令 $s_1=1, s_2=s$, 则 $1 / s \\in S$.\n若 $t \\in S$, 令 $s_1=t, s_2=1 / s$, 则 $s_1 / s_2=t /(1 / s)=s t \\in S$ (这样 $s$ 就是乘法意义下的解).\n假设 $u$ 是一个非零有理数, 若 $u \\notin S$, 则 $u=q s$, 其中 $s \\in S$, 于是我们有 $u^2=q^2 s^2$.\n若 $q^2 \\notin S$, 则可设 $q^2=q t(t \\in S)$, 则 $q=t \\in S$, 矛盾.\n所以 $q^2 \\in S$, $u^2 \\in S$.\n假如 $x \\in S$, 则由 $(3 / 5)^2 、(4 / 5)^2$ 为平方数可知,\n$$\nx(3 / 5)^2 \\in S, x(4 / 5)^2 \\in S .\n$$\n又 $x=x(3 / 5)^2+x(4 / 5)^2$, 取 $y=x(3 / 5)^2, z=x(4 / 5)^2$, 则命题得证.",
+    "remark": "",
+    "figures": []
+}

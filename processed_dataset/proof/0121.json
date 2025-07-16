@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题5 设 $n$ 为大于 1 的整数, 全部正因数为 $d_1, d_2, \\cdots, d_k$, 其中 $1=d_1<d_2<\\cdots<d_k=n$, 记\n$$\nD=d_1 d_2+d_2 d_3+\\cdots+d_{k-1} d_k .\n$$\n(1) 证明: $D<n^2$;\n(2) 确定所有的 $n$, 使得 $D$ 能整除 $n^2$.",
+    "solution": "(1) 注意到, 若 $d$ 为 $n$ 的因子, 则 $\\frac{n}{d}$ 也是 $n$ 的因子.\n于是, $D= \\sum_{1 \\leqslant i \\leqslant k-1} d_i d_{i+1}=n^2 \\sum_{1 \\leqslant i \\leqslant k-1} \\frac{1}{d_i d_{i+1}} \\leqslant n^2 \\sum_{1 \\leqslant i \\leqslant k-1}\\left(\\frac{1}{d_i}-\\frac{1}{d_{i+1}}\\right)<\\frac{n^2}{d_1}=n^2$.\n(2) 设 $p$ 为 $n$ 的最小素因子, 则 $d_2=p, d_{k-1}=\\frac{n}{p}, d_k=n$. 若 $n=p$, 则 142 $k=2, D=p, D \\mid n^2$. 若 $n$ 为合数, 则 $k>2, D>d_{k-1} d_k=\\frac{n^2}{p}$. 如果 $D \\mid n^2$, 则 $\\frac{n^2}{D}$ 为 $n^2$ 的因子, 但 $1<\\frac{n^2}{D}<p$. 由于 $p$ 为 $n^2$ 的最小素因子, 上式不能成立.\n故若 $D \\mid n^2$, 则 $n$ 为素数.",
+    "remark": "",
+    "figures": []
+}

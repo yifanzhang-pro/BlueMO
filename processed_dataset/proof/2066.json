@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $A^{\\prime}$ 为 $\\triangle A B C$ 的外角平分线 $A T$ 上的任意一点, 试证:\n$$\nA^{\\prime} B+A^{\\prime} C \\geqslant A B+A C .\n$$",
+    "solution": "延长 $B A$ 到 $C^{\\prime}$ 使得 $A C^{\\prime}=A C$, 连接 $A^{\\prime} C^{\\prime}$. 显然 $A^{\\prime} B+A^{\\prime} C^{\\prime}>B C^{\\prime}= B A+A C$. 再由 $\\triangle A A^{\\prime} C^{\\prime} \\cong \\triangle A A^{\\prime} C$ 便知 $A^{\\prime} C^{\\prime}=A^{\\prime} C$, 代入便得.",
+    "remark": "",
+    "figures": []
+}

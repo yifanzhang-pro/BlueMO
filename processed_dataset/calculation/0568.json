@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题7 已知 $f(x)$ 是定义在 $\\mathbf{R}$ 上的奇函数, 当 $x \\geqslant 0$ 时, $f(x)=2 x-x^2$. 问 : 是否存在实数 $a 、 b(a \\neq b)$, 使 $f(x)$ 在 $[a, b]$ 上的值域为 $\\left[\\frac{1}{b}, \\frac{1}{a}\\right]$ ?",
+    "solution": "利用条件: $f(x)$ 在 $\\mathbf{R}$ 上为奇函数,且 $x \\geqslant 0$ 时, $f(x)=2 x-x^2$, 可以 $\\left\\{\\begin{array}{l}a-b<0, \\\\ \\frac{a-b}{a b}<0\\end{array} \\Leftrightarrow a b>0\\right.$, 故只能有 $0<a<b$ 或 $a<b<0$ 两种形式.\n(1)当 $0<a<b$ 时, $f(x)=-x^2+2 x=-(x-1)^2+1 \\leqslant 1$, 从而 $\\frac{1}{a} \\leqslant 1$, 即 $a \\geqslant$ 1 , 再考虑到以上提供出来的 $a 、 b$ 情况有: $1 \\leqslant a<b$, 而 $y=f(x)$ 在 $[a, b]$ 上为减函数,则 $\\left\\{\\begin{array}{l}f(a)=\\frac{1}{a}, \\\\ f(b)=\\frac{1}{b} .\\end{array}\\right.$ 这两个关系又等价于“ $a, b$ 是方程 $f(x)=\\frac{1}{x}$ 的两个根, 且 $1 \\leqslant a<b$ ”, 解方程 $2 x-x^2=\\frac{1}{x}$, 得 $\\left\\{\\begin{array}{l}a=1, \\\\ b=\\frac{1+\\sqrt{5}}{2} .\\end{array}\\right.$ \n(2) 当 $a< b<0$ 时, 与(1)相仿, 得 $\\left\\{\\begin{array}{l}a=\\frac{-1-\\sqrt{5}}{2}, \\\\ b=-1 .\\end{array}\\right.$",
+    "remark": "",
+    "figures": []
+}

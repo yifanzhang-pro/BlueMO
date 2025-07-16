@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题23 已知当 $x \\in[0,1]$ 时,不等式 $x^2 \\cos \\theta-x(1-x)+(1-x)^2 \\sin \\theta>0$ 恒成立, 试求 $\\theta$ 的取值范围.",
+    "solution": "若对一切 $x \\in[0,1]$, 恒有 $f(x)=x^2 \\cos \\theta-x(1-x)+(1-x)^2 \\sin \\theta>0$, 则 $\\cos \\theta=f(1)>0, \\sin \\theta=f(0)>0 \\cdots$ (1). 取 $x_0=\\frac{\\sqrt{\\sin \\theta}}{\\sqrt{\\cos \\theta}+\\sqrt{\\sin \\theta}} \\in(0,1)$, 则 $\\sqrt{\\cos \\theta} x_0-\\sqrt{\\sin \\theta}\\left(1-x_0\\right)=0$. 由于 $f(x)=[\\sqrt{\\cos \\theta} x-\\sqrt{\\sin \\theta}(1- x)]^2+2\\left(-\\frac{1}{2}+\\sqrt{\\cos \\theta \\sin \\theta}\\right) x(1-x)$. 所以, $0<f\\left(x_0\\right)=2\\left(-\\frac{1}{2}+\\right. \\sqrt{\\cos \\theta \\sin \\theta}) x_0\\left(1-x_0\\right)$. 故 $-\\frac{1}{2}+\\sqrt{\\cos \\theta \\sin \\theta}>0 \\cdots$ (2). 反之, 当(1), (2)成立时, $f(0)=\\sin \\theta>0, f(1)=\\cos \\theta>0$, 且 $x \\in(0,1)$ 时, $f(x) \\geqslant 2\\left(-\\frac{1}{2}+\\right. \\sqrt{\\cos \\theta \\sin \\theta}) x(1-x)>0$. 先在 $[0,2 \\pi]$ 中解(1)与(2), 由 $\\cos \\theta>0, \\sin \\theta>0$, 可得 $0<\\theta<\\frac{\\pi}{2}$. 又因为 $-\\frac{1}{2}+\\sqrt{\\cos \\theta \\sin \\theta}>0, \\sqrt{\\cos \\theta \\sin \\theta}>\\frac{1}{2}, \\sin 2 \\theta> \\frac{1}{2}$, 注意到 $0<2 \\theta<\\pi$, 故有 $\\frac{\\pi}{6}<2 \\theta<\\frac{5 \\pi}{6}$. 所以, $\\frac{\\pi}{12}<\\theta<\\frac{5 \\pi}{12}$. 因此, 原题中 $\\theta$ 的取值范围是 $2 k \\pi+\\frac{\\pi}{12}<\\theta<2 k \\pi+\\frac{5 \\pi}{12}, k \\in \\mathbf{Z}$.",
+    "remark": "",
+    "figures": []
+}

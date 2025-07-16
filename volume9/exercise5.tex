@@ -1,0 +1,49 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $G$ 为 $\triangle A B C$ 的重心, $A_1 、 B_1 、 C_1$ 分别为 $A G 、 B G 、 C G$ 与 $\triangle A B C$ 的外接圆的交点,求证
+$$
+G A_1+G B_1+G C_1 \geqslant G A+G B+G C,
+$$
+等号成立当且仅当 $\triangle A B C$ 为正三角形.
+%%<SOLUTION>%%
+提示: 问题转化为证明 $A A_1+B B_1+C C_1 \geqslant \frac{4}{3}\left(m_a+m_b+m_c\right)$, 其中 $m_a$ 为边 $a$ 上的中线, 等等.
+设 $A A_1=M_a$, 等等.
+由相交弦定理可得 $m_a \cdot\left(M_a-\right. \left.m_a\right)=\left(\frac{a}{2}\right)^2$, 将其与等式 $4 m_a^2=8 k^2-3 a^2$ 联立消去 $a$ 可得 $M_a= \frac{2 k}{3}\left(\frac{k}{m_a}+\frac{m_a}{k}\right) \geqslant \frac{4}{3} k$, 等等, 其中 $k^2=\frac{1}{4}\left(a^2+b^2+c^2\right)(k>0)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 在凸四边形内部标定四个点, 求证: 可在凸四边形的边界上找到一点使得它到四边形的各顶点的距离之和大于它到四个给定点的距离之和.
+ 
+%%<SOLUTION>%%
+提示: 设凸四边形 $A B C D$ 内的 4 个标定点为 $M 、 N 、 P 、 Q$, 只需考虑 $M N P Q$ 为凸四边形的情形.
+对 $A B C D$ 周界上任意一点 $E$, 令 $f(E)=E A+ E B+E C+E D, g(E)=E M+E N+E P+E Q$, 于是只要证明周界上存在一点 $E$ 使 $f(E)>g(E)$. 作直线 $M P$, 交四边形 $A B C D$ 的周界于 $F 、 G$, 于是有 $f(F)+f(G)>g(F)+g(G)$. 这表明 $f(F)>g(F)$ 和 $f(G)>g(G)$ 中至少有一个成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $a$ 是一个凸六边形 $A B C D E F$ 的最大边长, $d=\min \{A D$, $B E, C F\}$, 求证 $d \leqslant 2 \alpha$.
+%%<SOLUTION>%%
+不妨设 $A E \leqslant A C \leqslant C E$, 则由 Ptolemy 定理有 $A D \cdot C E \leqslant A C \cdot D E+ A E \cdot C D \leqslant a(A C+A E) \leqslant 2 a \cdot C E$, 由此 $A D \leqslant 2 a$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $I$ 是 $\triangle A B C$ 的内心.
+记 $\triangle I B C 、 \triangle I C A 、 \triangle I A B$ 的内切圆半径分别为 $r_1 、 r_2 、 r_3$, 则
+$$
+3 \sqrt{3}(2-\sqrt{3}) r \leqslant r_1+r_2+r_3 \leqslant \frac{3 \sqrt{3}(2-\sqrt{3})}{2} R,
+$$
+这里 $r 、 R$ 分别是 $\triangle A B C$ 的内切圆半径和外接圆半径.
+%%<SOLUTION>%%
+提示: 需要用到如下三角形不等式 $\sin \alpha \sin \beta \sin \gamma \leqslant \frac{3 \sqrt{6}-5 \sqrt{2}}{16} \cdot \cos (\beta+ \gamma) \cos \alpha+\cos (\gamma+\alpha) \cos \beta+\cos (\alpha+\beta) \cos \gamma \leqslant \frac{3 \sqrt{6}+9 \sqrt{2}}{8}, \tan \alpha \cdot \tan \beta+ \tan \beta \tan \gamma+\tan \gamma \tan \alpha \leqslant 3(7-4 \sqrt{3})$, 其中 $A=4 \alpha, B=4 \beta, C=4 \gamma$.
+%%PROBLEM_END%%
+
+

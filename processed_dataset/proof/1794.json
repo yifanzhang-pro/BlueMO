@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题13. 面积为 $M$ 的凸四边形内接于一圆, 圆心在四边形内部.\n证明: 以该四边形对角线交点在四边上的射影为顶点的四边形面积不超过 $\\frac{M}{2}$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c10a13.png>), $O$ 是圆内接凸四边形 $A B C D$ 对角线交点, 它到四边的垂足分别是 $P 、 Q 、 R 、 S$, 则 $\\angle 2=\\angle 1=\\angle 4=\\angle 3$, 所以 $O P$ 平分 $\\angle S P Q$.\n同理可证: $O Q, O R, O S$ 分别平分 $\\angle P Q R, \\angle Q R S, \\angle R S P$. 所以四边形 $P Q R S$ 内心为 $O$. 由圆外切四边形面积公式 (见例 10 的解答过程) 得\n$S_{\\text {四边形 } \\mathrm{PQRS}}^2=P Q \\cdot O R \\cdot R S \\cdot S P \\cdot \\sin ^2 \\frac{\\angle S P Q+\\angle S R Q}{2}= P Q \\cdot Q R \\cdot R S \\cdot S P \\cdot \\sin ^2 \\angle A O P$.\n$\\frac{\\angle S P Q+\\angle S R Q}{2}= \\angle 2+\\angle 5=\\angle 1+\\angle 6=180^{\\circ}-\\angle A O D$.) 又因为 $S_{\\text {四边形 } P Q R S}=\\frac{1}{2} A C \\cdot B D \\cdot \\sin \\angle A O D=\\frac{1}{2}(A O+ O C)(B O+O D) \\cdot \\sin \\angle A O D=\\frac{1}{2}\\left(\\frac{S P}{\\sin A}+\\frac{Q R}{\\sin A}\\right) \\cdot\\left(\\frac{P Q}{\\sin B}\\right.\\left.+\\frac{R S}{\\sin B}\\right) \\cdot \\sin \\angle A O D \\geqslant \\frac{4 \\sqrt{P Q \\cdot Q R \\cdot R S \\cdot S P} \\sin \\angle A O D}{2 \\sin A \\sin B}=\\frac{2 S_{\\text {四边形PQRS }}}{\\sin A \\sin B} \\geqslant$\n所以 $S_{\\text {四边形 } P Q R S} \\leqslant \\frac{m}{2}$, 当且仅当 $A B C D$ 是矩形时等号成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c10a13.png"
+    ]
+}

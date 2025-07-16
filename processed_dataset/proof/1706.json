@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例4. 如图(<FilePath:./images/volume7/figures/fig-c4i5.png>), $A B$ 是圆 $O$ 的直径.\n$C$ 与 $D$ 是互异的圆 $O$ 上的两点, 且在 $A B$ 的一侧.\n过 $C 、 D$ 作圆的切线交于点 $E$. 线段 $A D$ 与 $B C$ 交于点 $F$, 直线 $E F$ 交 $A B$ 于 $M$. 求证: $E, C, M, D$ 共圆.",
+    "solution": "证明:连结 $E O 、 C O 、 D O 、 C A$. 由 $\\angle C O E= \\angle C A F$, 知 Rt $\\triangle O O E \\backsim$ Rt $\\triangle C A F$.\n所以, $\\frac{C E}{C F}=\\frac{C O}{C A}$. 又 $\\angle E C F=90^{\\circ}-\\angle B C O=\\angle O C A$,\n则 $\\triangle E C F \\backsim \\triangle O C A$.\n故 $\\angle C A O=\\angle C F E=\\angle B F M$. 于是, $\\angle F M B=\\angle A C B=90^{\\circ}$.\n因此, $O 、 M 、 D 、 E 、 C$ 五点共圆.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4i5.png"
+    ]
+}

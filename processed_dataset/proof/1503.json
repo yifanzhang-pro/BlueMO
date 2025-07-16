@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-1.tex",
+    "problem_type": "proof",
+    "problem": "例5. 数列 $\\left\\{a_n\\right\\}$ 定义如下:\n$$\na_1=1, a_n=a_{n-1}+a_{\\left[\\frac{n}{2}\\right]}, n=2,3, \\cdots . \n$$\n证明: 该数列中有无穷多项是 7 的倍数.",
+    "solution": "证明:直接由递推式计算, 可得 $a_1=1, a_2=2, a_3=3, a_4=5, a_5=7$.\n现设 $a_n(n \\geqslant 5)$ 是 7 的倍数, 我们寻找下标 $m>n$, 使得 $7 \\mid a_m$.\n由 $a_n \\equiv 0(\\bmod 7)$, 知 $a_{2 n}=a_{2 n-1}+a_n \\equiv a_{2 n-1}(\\bmod 7), a_{2 n+1}=a_{2 n}+a_n \\equiv a_{2 n}(\\bmod 7)$, 故 $a_{2 n-1} \\equiv a_{2 n} \\equiv a_{2 n+1}(\\bmod 7)$. 记 $a_{2 n-1}$ 除以 7 所得余数为 $r$. 如果 $r=0$, 那么取 $m=2 n-1$ 即可; 如果 $r \\neq 0$, 考虑下面的 7 个数:\n$$\na_{4 n-3}, a_{4 n-2}, \\cdots, a_{4 n+3} \\text {. }\n$$\n注意到 $a_{4 n-2}=a_{4 n-3}+a_{2 n-1} \\equiv a_{4 n-3}+r(\\bmod 7), a_{4 n-1}=a_{4 n-2}+a_{2 n-1} \\equiv a_{4 n-2}+r(\\bmod 7) \\equiv a_{4 n-3}+2 r(\\bmod 7), a_{4 n}=a_{4 n-1}+a_{2 n} \\equiv a_{4 n-1}+r \\equiv a_{4 n-3}+ 3 r, \\cdots, a_{4 n+3}=a_{4 n+2}+a_{2 n+1} \\equiv a_{4 n+2}+r \\equiv a_{4 n-3}+6 r(\\bmod 7)$. 因此, $a_{4 n-3}$, $a_{4 n-2}, \\cdots, a_{4 n+3}$ 构成模 7 的一个完全剩余系.\n故存在 $m \\in\\{4 n-3,4 n-2, \\cdots$, $4 n+3\\}$, 使得 $a_m \\equiv 0(\\bmod 7)$.\n这样, 我们从 $a_5$ 出发结合上面的推导可知, $\\left\\{a_n\\right\\}$ 中有无穷多项是 7 的倍数.",
+    "remark": "",
+    "figures": []
+}

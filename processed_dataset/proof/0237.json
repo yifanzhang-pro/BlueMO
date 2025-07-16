@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 若一个有理数的 $k$ 次幂是整数 $(k \\geqslant 1)$, 则这有理数必是整数.\n更一般地, 证明:一个首项系数为 \\pm 1 的整系数多项式的有理数根, 必定是一个整数.",
+    "solution": "设既约的有理数 $\\frac{p}{q}$ 是 (首项系数为 1 ) 的整系数多项式 $f(x)=x^n+ a_1 x^{n-1}+\\cdots+a_{n-1} x+a_n$ 的一个根.\n由 $f\\left(\\frac{p}{q}\\right)=0$ 易得\n$$\np^n+a_1 p^{n-1} q+\\cdots+a_{n-1} p q^{n-1}+a_n q^n=0 .\n$$\n由于 $a_1 p^{n-1} q, \\cdots, a_{n-1} p q^{n-1}, a_n q^n$ 均被 $q$ 整除,故 $q \\mid p^n$. 但 $(p, q)=1$, 从而 $\\left(q, p^n\\right)=1$. 于是必须 $q= \\pm 1$, 即有理数 $\\frac{p}{q}$ 为一个整数.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题14. $\\triangle A B C$ 中, $\\odot I_1 、 \\odot I_2 、 \\odot I_3$ 分别是 $\\angle A 、 \\angle B 、 \\angle C$ 所对的旁切圆, $I 、 G$ 是 $\\triangle A B C$ 的内心、重心, 求证: $\\odot I_1 、 \\odot I_2 、 \\odot I_3$ 的根心在 $I G$ 上.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c5a14.png>), 作 $I_2 H_2 \\perp B C, I_3 H_3 \\perp B C$, 垂足分别为 $H_2 、 H_3$. 熟知 $B H_2=C_3=\\frac{A B+B C+C A}{2}$, 取 $B C$ 中点, 则 $M H_2=M_3$. 所以 $M$ 在 $\\odot I_2 、 \\odot I_3$ 根轴上.\n熟知 $A 、 G 、 M$ 共线且 $A G=2 G M$. 延长 $I G$ 至 $T$ 使 $I G=2 G T$, 则 $\\triangle A G I \\backsim \\triangle M G T$. 从而 $\\angle G M T= \\angle G A I$, 则 $M T / / A I$. 又 $A I \\perp I_2 I_3$, 所以 $M T \\perp I_2 I_3$, 故 $M T$ 为 $\\odot I_2 、 \\odot I_3$ 的根轴, $T$ 在根轴上.\n同理 $T$ 在 $\\odot I_1$ 与 $\\odot O_2 、 \\odot I_1$ 与 $\\odot O_3$ 的根轴上.\n故 $T$ 为三圆的根心, 且 $T$ 在 $I G$ 上,得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5a14.png"
+    ]
+}

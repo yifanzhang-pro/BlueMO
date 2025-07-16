@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter8.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 设 $A 、 B 、 C 、 D$ 为空间四点, 连结 $A B 、 A C 、 A D 、 B C 、 B D 、 C D$ 中至多有一条的长度大于 1 , 试求六条线段长度之和的最大值.",
+    "solution": "解:设 $A D$ 为六条线段中最长的一条.\n(1) 将其余五条线段长度固定,易见当 $A$ 和 $D$ 为平行四边形 $A B D C$ 两相对顶点时, $A D$ 取得最大值.\n(2) 固定 $B 、 C$ 的位置,则 $A 、 D$ 必落在分别以 $B 、 C$ 为圆心, 1 为半径的两个圆相交的区域内.\n此时具有最大可能距离的唯一一对点恰为两圆的两个交点,当 $A 、 D$ 取这两点时, $A B 、 B D 、 A C 、 C D$ 均达到各自的最大值 1 .\n(3) 剩下的问题是当 $B C$ 变小时, $A D$ 变大; 当 $B C$ 变大时, $A D$ 变小,故我们应在其余四边固定为 1 的情况下探求 $B C+A D$ 的最大值.\n记 $\\angle A B O=\\theta$, 由 $A B=1,0<B C \\leqslant 1$ 知 $\\theta \\in\\left[\\frac{\\pi}{3}, \\frac{\\pi}{2}\\right)$.\n于是, $A D+B C=2(\\sin \\theta+\\cos \\theta)=2 \\sqrt{2} \\sin \\left(\\theta+\\frac{\\pi}{4}\\right)$ 在 $\\theta=\\frac{\\pi}{3}$ 时取到最大值.\n此时,六条线段之和为 $4+2\\left(\\sin \\frac{\\pi}{3}+\\cos \\frac{\\pi}{3}\\right)=5+\\sqrt{3}$.",
+    "remark": "",
+    "figures": []
+}

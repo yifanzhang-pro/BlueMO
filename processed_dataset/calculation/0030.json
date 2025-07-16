@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter9.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 设集合 $S=\\{1,2, \\cdots, 1000\\}, A$ 是 $S$ 的子集,且 $A$ 的元素或是 3 的倍数, 或是 7 的倍数.\n试求 $A$ 的元素个数的最大值.",
+    "solution": "解:设 $A_1=\\{x \\mid x \\in S$, 且 $3 \\mid x\\}, A_2=\\{x \\mid x \\in S$, 且 $7 \\mid x\\}$, 则 $|A|_{\\text {max }}=\\left|A_1 \\cup A_2\\right|$. 显然有\n$$\n\\begin{gathered}\n\\left|A_1\\right|=\\left[\\frac{1000}{3}\\right]=333, \\\\\n\\left|A_2\\right|=\\left[\\frac{1000}{7}\\right]=142, \\\\\n\\left|A_1 \\cap A_2\\right|=\\left[\\frac{1000}{3 \\cdot 7}\\right]=47 .\n\\end{gathered}\n$$\n所以\n$$\n\\begin{aligned}\n\\left|A_1 \\cup A_2\\right| & =\\left|A_1\\right|+\\left|A_2\\right|-\\left|A_1 \\cap A_2\\right| \\\\\n& =333+142-47=428 .\n\\end{aligned}\n$$\n所以 $A$ 的元素个数的最大值为 428 .\n说明利用容斥原理的关键是构造所要计数的集合的一个合适的覆盖.\n上例解答中的覆盖是: $A_1, A_2$.",
+    "remark": "",
+    "figures": []
+}

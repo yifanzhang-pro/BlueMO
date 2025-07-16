@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例11. 设 $k 、 l$ 是两个给定的正整数.\n证明, 有无穷多个正整数 $m$, 使得 $\\mathrm{C}_m^k$ 与 $l$ 互素.",
+    "solution": "证法二这一解法无需借助同余.\n将 $\\mathrm{C}_m^k$ 表示为\n$$\n\\begin{aligned}\n\\mathrm{C}_m^k & =\\frac{m(m-1) \\cdots(m-k+1)}{k !} \\\\\n& =\\frac{m}{1} \\cdot \\frac{(m-1)}{2} \\cdot \\cdots \\cdot \\frac{(m-(k-2))}{k-1} \\cdot \\frac{(m-(k-1))}{k} \\\\\n& =\\left(\\frac{m+1}{1}-1\\right)\\left(\\frac{m+1}{2}-1\\right) \\cdot \\cdots \\cdot\\left(\\frac{m+1}{k-1}-1\\right)\\left(\\frac{m+1}{k}-1\\right) .\n\\end{aligned}\n$$\n我们希望取正整数 $m$, 使得对任意 $i=1,2, \\cdots, k$, 数 $\\frac{m+1}{i}$ 为 $l$ 的倍数, 从而每个 $\\frac{m+1}{i}-1$ 均与 $l$ 互素, 故它们的积与 $l$ 互素, 即 $\\left(\\mathrm{C}_m^k, l\\right)=1$. 显然 $m= -1+x l \\cdot k$ ! 符合这样的要求, $x=1,2, \\cdots$, 这当然有无穷多个.",
+    "remark": "",
+    "figures": []
+}

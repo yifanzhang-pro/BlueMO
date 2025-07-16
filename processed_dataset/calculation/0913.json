@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例9. 给定 $\\gamma>1$, 设点 $P$ 是 $\\triangle A B C$ 外接圆的弧 $B A C$ 上的一个动点, 在射线 $B P$ 和 $C P$ 上分别取定点 $U$ 和 $V$, 使得 $B U=\\gamma B A, C V=\\gamma C A$, 再在射线 $U V$ 上取点 $Q$, 使得 $U Q=\\gamma U V$. 求点 $Q$ 的轨迹.",
+    "solution": "解:如图(<FilePath:./images/volume7/figures/fig-c1i12.png>), 连结 $A U 、 A V 、 A Q$, 在 $B C$ 延长线上取点 $D$, 使 $B D=\\gamma B C$.\n连结 $A D 、 D Q$, 因为 $C V=\\gamma C A, B U=\\gamma B A$, $\\angle A C V=\\angle A B U$, 所以 $\\triangle A C V \\backsim \\triangle A B U$.\n所以 $\\frac{A U}{A V}=\\frac{A B}{A C}, \\angle V A C=\\angle U A B$.\n于是 $\\angle U A V=\\angle B A C$, 则 $\\triangle A U V \\backsim \\triangle A B C$, 故 $\\frac{U V}{B C}=\\frac{A U}{A B}, \\angle A U V=\\angle A B C$.\n又 $U Q=\\gamma U V, B D=\\gamma B C$, 所以 $\\frac{U Q}{B D}=\\frac{U V}{B C}= \\frac{A U}{A B}$, 故 $\\triangle A U Q \\backsim \\triangle A B D, \\triangle A V Q \\backsim \\triangle A C D, \\triangle A Q D \\backsim \\triangle A V C$.\n则 $\\frac{Q D}{V C}=\\frac{A D}{A C}$, 于是 $Q D=\\gamma A D$, 这表明 $Q$ 位于以点 $D$ 为圆心, $\\gamma A D$ 为半径的圆上.\n当 $P$ 运动到点 $B$ 和点 $C$ 时, 割线 $B P$ 和 $C P$ 分别变为过点 $B$ 和 $C$ 的切线, 这时得到的 $Q^{\\prime}, Q^{\\prime \\prime}$ 为轨迹弧的端点.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1i12.png"
+    ]
+}

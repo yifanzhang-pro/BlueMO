@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例13 求所有满足 $f(1)=2$ 和 $f(x y)=f(x) f(y)-f(x+y)+1, x$, $y \\in \\mathbf{Q}$ 的函数 $f: \\mathbf{Q} \\rightarrow \\mathbf{Q}$ ( $\\mathbf{Q}$ 为有理数集).",
+    "solution": "解:在原恒等式中令 $y=1$, 得\n$$\nf(x)=f(x) \\cdot f(1)-f(x+1)+1, x \\in \\mathbf{Q} .\n$$\n即\n$$\nf(x+1)=f(x)+1 .\n$$\n因此, $f(n)=f(1)+n-1=n+1$.\n另外, 在原恒等式中取 $x=\\frac{1}{n}, y=n, n \\in \\mathbf{Z}$, 有\n$$\n\\begin{gathered}\nf\\left(\\frac{1}{n} \\cdot n\\right)=f\\left(\\frac{1}{n}\\right) \\cdot f(n)-f\\left(\\frac{1}{n}+n\\right)+1, \\\\\n2=f\\left(\\frac{1}{n}\\right)(n+1)-f\\left(\\frac{1}{n}\\right)-n+1 .\n\\end{gathered}\n$$\n即\n$$\n2=f\\left(\\frac{1}{n}\\right)(n+1)-f\\left(\\frac{1}{n}\\right)-n+1\n$$\n所以\n$$\nf\\left(\\frac{1}{n}\\right)=1+\\frac{1}{n}\n$$\n最后, 我们取 $x=p, y=\\frac{1}{q}, p 、 q \\in \\mathbf{Z}, q \\neq 0$, 得\n$$\nf\\left(p, \\frac{1}{q}\\right)=f(p) f\\left(\\frac{1}{q}\\right)-f\\left(p+\\frac{1}{q}\\right)+1 .\n$$\n故 $\\quad f\\left(\\frac{p}{q}\\right)=(p+1)\\left(\\frac{1}{q}+1\\right)-\\frac{1}{q}-p=\\frac{p}{q}+1$.\n所以, 只有函数 $f(x)=x+1$ 满足条件.\n说明这种“爬坡式”的推理技巧称为柯西方法, 后面我们会专门讲述.",
+    "remark": "",
+    "figures": []
+}

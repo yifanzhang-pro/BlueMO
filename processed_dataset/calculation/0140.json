@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例5. 将 3 面红旗、4 面蓝旗、2 面黄旗依次悬挂在旗杆上,问可以组成多少种不同的标志?",
+    "solution": "解:由不全相异元素的全排列公式得所求标志数目为\n$$\n\\left(\\begin{array}{lll} \n& 9 & \\\\\n3 & 4 & 2\n\\end{array}\\right)=\\frac{9 !}{3 ! 4 ! 2 !}=1260 \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

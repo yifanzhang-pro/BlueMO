@@ -1,0 +1,408 @@
+
+%%TEXT_BEGIN%%
+三角形嵌入不等式 (简称嵌入不等式) 在近年来初等几何不等式研究中扮演着一个重要的角色, 是产生新的几何不等式的一个源头, 嵌入不等式可叙述为
+定理 1 (嵌入不等式)设 $A+B+C=(2 k+1) \pi, x, y, z \in \mathbf{R}$, 则
+$$
+x^2+y^2+z^2 \geqslant 2 y z \cos A+2 z x \cos B+2 x y \cos C, \label{eq1}
+$$
+等号成立当且仅当 $x: y: z=\sin A: \sin B: \sin C$.
+简证 式\ref{eq1} 的左右两边之差 $=(x-y \cos C-z \cos B)^2+(y \sin C- z \sin B)^2 \geqslant 0$, 得证.
+顾名思义,不等式(1)被称为嵌入不等式的几何解释是: 如果 $0<A, B$, $C<\pi$, 且对任意的实数 $x 、 y 、 z$ 都使式\ref{eq1}成立, 则 $A 、 B 、 C$ 一定可成为某一个三角形的三个内角或某一个平行六面体共点的三个面两两所夹的内二面角.
+三角形嵌入不等式的等价形式:
+定理 2 设 $A+B+C=(2 k+1) \pi, x, y, z \in \mathbf{R}$, 则
+(1) $x y \sin ^2 \frac{C}{2}+z x \sin ^2 \frac{B}{2}+y z \sin ^2 \frac{A}{2} \geqslant \frac{1}{4}\left(2 x y+2 y z+2 x z-x^2-y^2-\right. z^2$ ), 当且仅当 $x: y: z=\sin A: \sin B: \sin C$ 时等号成立.
+(2) $(x+y+z)^2 \geqslant 4\left(x y \cos ^2 \frac{C}{2}+z x \cos ^2 \frac{B}{2}+y z \cos ^2 \frac{A}{2}\right)$, 当且仅当 $x$ : $y: z=\sin A: \sin B: \sin C$ 时等号成立.
+(3) $(x+y+z)^2 \geqslant 4\left(y z \sin ^2 A+z x \sin ^2 B+x y \sin ^2 C\right)$, 当且仅当 $x: y: z= \sin 2 A: \sin 2 B: \sin 2 C$ 时等号成立.
+简证 (1) 用倍角公式 $\cos A=1-2 \sin ^2 \frac{A}{2}$ 等代入式\ref{eq1}整理即得.
+(2)用倍角公式 $\cos A=2 \cos ^2 \frac{A}{2}-1$ 等代入式\ref{eq1}整理即得.
+(3)用半角公式 $\sin ^2 A=\frac{1}{2}(1-\cos 2 A)$ 等代入式\ref{eq1}整理即得.
+注:对 (3) 应用三角形的正弦定理有: 在 $\triangle A B C$ 中, $\lambda, \mu, v \in \mathbf{R}$, 则
+$$
+\begin{gathered}
+(\lambda+\mu+v)^2 R^2 \geqslant \mu a^2+\mu \lambda b^2+\lambda \omega c^2 \\
+\Leftrightarrow(\lambda+\mu+v)^2(a b c)^2 \geqslant 16 \Delta^2\left(\mu a^2+\mu \lambda b^2+\lambda v c^2\right) . \label{eq2}
+\end{gathered}
+$$
+在 式\ref{eq2}中令 $\lambda=x a^2, \mu=y b^2, v=z c^2, x, y, z \in \mathbf{R}$, 则有
+$$
+\left(x a^2+y b^2+z c^2\right)^2 \geqslant 16 \Delta^2(x y+y z+z x), \label{eq3}
+$$
+等号成立当且仅当 $\lambda: \mu: v=\left(b^2+c^2-a^2\right):\left(c^2+a^2-b^2\right):\left(a^2+b^2-c^2\right)$.
+式\ref{eq3}有着广泛的应用, 经常出现在初等几何不等式的研究文献中.
+同时有几位研究者注意到了比 式\ref{eq3} 更一般的代数不等式, 这就是下面的例子.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+定理 3 (加权正弦和的不等式) 对任意实数 $x 、 y 、 z$ 及正数 $u 、 v 、 w$ 及任意 $\triangle A B C$ 有
+$$
+2(y z \sin A+z x \sin B+x y \sin C) \leqslant\left(\frac{x^2}{u}+\frac{y^2}{v}+\frac{z^2}{w}\right) \sqrt{v w+r u+u v},
+$$
+其中等号成立当且仅当 $x: y: z=\cos A: \cos B: \cos C$ 且 $u: v: w=\cot A$ : $\cot B: \cot C$.
+证明令 $x^{\prime}=\frac{x}{\sqrt{u}}, y^{\prime}=\frac{y}{\sqrt{v}}, z^{\prime}=\frac{z}{\sqrt{w}}$, 则原不等式等价于
+$$
+\begin{aligned}
+& 2 \sqrt{\frac{v w}{u v+v w+u w} \cdot y^{\prime} z^{\prime} \sin A+2 \sqrt{\frac{u w}{u v+v w+w w}}} \cdot \\
+& x^{\prime} z^{\prime} \sin B+2 \sqrt{\frac{u v}{u v+v w+u w}} \cdot x^{\prime} y^{\prime} \sin C \\
+& \leqslant x^{\prime 2}+y^{\prime 2}+z^{\prime 2} .
+\end{aligned} \label{eq1}
+$$ 
+由 Cauchy 不等式,
+式\ref{eq1}的左边 $\leqslant 2 \sqrt{\frac{v w}{u v+v w+u w}+\frac{u w}{u v+v w+u w}+\frac{u v}{u v+v w+u w}}$.
+$$
+\begin{aligned}
+& \sqrt{y^{\prime 2} z^{\prime 2} \sin ^2 A+x^{\prime 2} z^{\prime 2} \sin ^2 B} \overline{+x^{\prime 2} y^{\prime 2} \sin ^2 C} \\
+= & 2 \sqrt{y^{\prime 2} z^{\prime 2} \sin ^2 A+x^{\prime 2} z^{\prime 2} \sin ^2 B+x^{\prime 2} y^{\prime 2} \sin ^2 C},
+\end{aligned}
+$$
+因此要证式\ref{eq1}, 只需证明
+$$
+\begin{aligned}
+& 2 \sqrt{y^{\prime 2} z^{\prime 2} \sin ^2 A+x^{\prime 2} z^{\prime 2} \sin ^2 B+x^{\prime 2} y^{\prime 2} \sin ^2 C} \leqslant x^{\prime 2}+y^{\prime 2}+z^{\prime 2} \\
+\Leftrightarrow & 2 y^{\prime 2} z^{\prime 2}\left(2 \sin ^2 A-1\right)+2 x^{\prime 2} z^{\prime 2}\left(2 \sin ^2 B-1\right)+2 x^{\prime 2} y^{\prime 2}\left(2 \sin ^2 C-1\right) \\
+\leqslant & x^{\prime 4}+y^{\prime 4}+z^{\prime 4} \\
+\Leftrightarrow & 2 y^{\prime 2} z^{\prime 2} \cos (\pi-2 A)+2 x^{\prime 2} z^{\prime 2} \cos (\pi-2 B)+2 x^{\prime 2} y^{\prime 2} \cos (\pi-2 C) \\
+\leqslant & x^{\prime 4}+y^{\prime 4}+z^{\prime 4}
+\end{aligned} \label{eq2}
+$$
+而式\ref{eq2}可由嵌入不等式经过代换 $(x, y, z) \rightarrow\left(x^{\prime 2}, y^{\prime 2}, z^{\prime 2}\right)$ 和 $(A, B, C) \rightarrow (\pi-2 A, \pi-2 B, \pi-2 C)$ 得到,证毕.
+利用加权正弦和的不等式, 我们可得下面关于两个三角形的有趣的不等式.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+另一个带实数权的著名几何不等式是惯性矩不等式.
+定理 4 (惯性矩不等式)设 $P$ 为 $\triangle A B C$ 所在平面上的任意一点, 记 $P A=R_1, P B=R_2, P C=R_3$, 则对任意实数 $x, y, z \in \mathbf{R}$ 有
+$$
+(x+y+z)\left(x R_1^2+y R_2^2+z R_3^2\right) \geqslant y z a^2+x z b^2+x y c^2, \label{eq1}
+$$
+等号成立当且仅当 $x R_1: y R_2: z R_3=\sin \alpha_1: \sin \alpha_2: \sin \alpha_3$, 其中 $\alpha_i= \angle A_{i+1} P A_{i+2}\left(A_4=A_1, A_5=A_2, i=1,2,3\right)$ (按同一方向取角).
+证明令 $\overrightarrow{P Q}=\frac{\sum x \overrightarrow{P A}}{\sum x}$, 则
+$$
+\begin{aligned}
+& 0 \leqslant\left(\sum x\right)^2|\overrightarrow{P Q}|^2=\left|\sum x \overrightarrow{P A}\right|^2 \\
+= & \sum x^2|\overrightarrow{P A}|^2+2 \sum x y \overrightarrow{P A} \cdot \overrightarrow{P B} \\
+= & \sum x^2|\overrightarrow{P A}|^2+\sum x y\left(|\overrightarrow{P A}|^2+|\overrightarrow{P B}|^2-|\overrightarrow{A B}|^2\right) \\
+= & \left(\sum x\right)\left(\sum x|\overrightarrow{P A}|^2\right)-\sum x y|\overrightarrow{A B}|^2 \\
+= & \left(\sum x\right)\left(\sum x R_1^2\right)-\sum x y c^2 .
+\end{aligned}
+$$
+因此 式\ref{eq1} 得证.
+注:$P$ 是 $\triangle A B C$ 的内点时, 惯性矩不等式等号成立的条件可写作
+$$
+\frac{a r_1}{x}=\frac{b r_2}{y}=\frac{c r_3}{z},
+$$
+这里 $r_1 、 r_2 、 r_3$ 分别是 $P$ 点到边 $B C 、 A C 、 A B$ 的距离.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $\lambda_1 、 \lambda_2 、 \lambda_3$ 中至少有两个正数, 且满足 $\lambda_1 \lambda_2+\lambda_2 \lambda_3+\lambda_3 \lambda_1>0, x$ 、 $y, z$ 为任意实数, 求证:
+$$
+\left(\lambda_1 x+\lambda_2 y+\lambda_3 z\right)^2 \geqslant\left(\lambda_1 \lambda_2+\lambda_2 \lambda_3+\lambda_3 \lambda_1\right)\left(2 x y+2 y z+2 z x-x^2-y^2-z^2\right),
+$$
+其中等号当且仅当 $\frac{x}{\lambda_2+\lambda_3}=\frac{y}{\lambda_1+\lambda_3}=\frac{z}{\lambda_1+\lambda_2}$ 时成立.
+%%<SOLUTION>%%
+证明1 (应用嵌入不等式)
+由 $\lambda_1 、 \lambda_2 、 \lambda_3$ 中至多只有一个负数及 $\lambda_1\left(\lambda_2+\lambda_3\right)+\lambda_2 \lambda_3>0$ 易知 $\lambda_2+ \lambda_3>0$, 同理 $\lambda_1+\lambda_2>0, \lambda_1+\lambda_3>0$.
+设 $\lambda_1+\lambda_2=c^2, \lambda_2+\lambda_3=a^2, \lambda_1+\lambda_3=b^2(a, b, c>0)$, 则
+$$
+\lambda_1=\frac{1}{2}\left(b^2+c^2-a^2\right), \lambda_2=\frac{1}{2}\left(a^2+c^2-b^2\right), \lambda_3=\frac{1}{2}\left(a^2+b^2-c^2\right) .
+$$
+由 $\lambda_1 \lambda_2+\lambda_2 \lambda_3+\lambda_3 \lambda_1>0$ 展开得
+$$
+(a+b+c)(a-b+c)(a+b-c)(-a+b+c)>0 .
+$$
+从而 $a 、 b 、 c$ 构成某个三角形的三条边, 设这个三角形为 $\triangle A B C$. 因此
+$$
+\begin{aligned}
+& \text { 原不等式 } \Leftrightarrow \sum \lambda_1^2 x^2+2 \sum \lambda_1 \lambda_2 x y \geqslant\left(\sum \lambda_1 \lambda_2\right)\left(2 x y+2 y z+2 z x-x^2-\right. \\
+&\left.y^2-z^2\right) \\
+& \Leftrightarrow \sum x^2\left(\lambda_1+\lambda_2\right)\left(\lambda_1+\lambda_3\right) \geqslant \sum \lambda_1 \lambda_2(2 y z+2 x z) \\
+& \Leftrightarrow \sum x^2 c^2 b^2 \geqslant \sum \frac{c^4-a^4-b^4+2 a^2 b^2}{4}(2 y z+2 x z) \\
+& \Leftrightarrow \sum(x c b)^2 \geqslant \sum y z a^2\left(b^2+c^2-a^2\right) . \label{eq1}
+\end{aligned}
+$$
+事实上,由嵌入不等式
+$$
+\begin{aligned}
+\sum(x b c)^2 & \geqslant \sum 2(y c a)(z b a) \cdot \cos A \\
+& =\sum 2(y c a)(z b a) \cdot \frac{b^2+c^2-a^2}{2 b c} \\
+& =\sum y z a^2\left(b^2+c^2-a^2\right) .
+\end{aligned}
+$$
+此即\ref{eq1}式,从而原不等式成立.
+等号成立当且仅当
+$$
+\begin{aligned}
+& \frac{x b c}{\sin A}=\frac{y a c}{\sin B}=\frac{z a b}{\sin C} \\
+\Leftrightarrow & \frac{x}{\sin ^2 A}=\frac{y}{\sin ^2 B}=\frac{z}{\sin ^2 C} \\
+\Leftrightarrow & \frac{x}{\lambda_2+\lambda_3}=\frac{y}{\lambda_1+\lambda_3}=\frac{z}{\lambda_1+\lambda_2} .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $\lambda_1 、 \lambda_2 、 \lambda_3$ 中至少有两个正数, 且满足 $\lambda_1 \lambda_2+\lambda_2 \lambda_3+\lambda_3 \lambda_1>0, x$ 、 $y, z$ 为任意实数, 求证:
+$$
+\left(\lambda_1 x+\lambda_2 y+\lambda_3 z\right)^2 \geqslant\left(\lambda_1 \lambda_2+\lambda_2 \lambda_3+\lambda_3 \lambda_1\right)\left(2 x y+2 y z+2 z x-x^2-y^2-z^2\right),
+$$
+其中等号当且仅当 $\frac{x}{\lambda_2+\lambda_3}=\frac{y}{\lambda_1+\lambda_3}=\frac{z}{\lambda_1+\lambda_2}$ 时成立.
+%%<SOLUTION>%%
+证明 2 (判别式法)
+同证法 1 可说明 $\lambda_1+\lambda_2>0, \lambda_2+\lambda_3>0, \lambda_1+\lambda_3>0$. 这时原不等式等价于
+$$
+\begin{gathered}
+\left(\lambda_1+\lambda_2\right)\left(\lambda_1+\lambda_3\right) x^2-2\left[\lambda_3\left(\lambda_1+\lambda_2\right) y+\lambda_2\left(\lambda_1+\lambda_3\right) z\right] x+ \\
+{\left[\left(\lambda_1+\lambda_2\right)\left(\lambda_2+\lambda_3\right) y^2+\left(\lambda_1+\lambda_3\right)\left(\lambda_2+\lambda_3\right) z^2-2 \lambda_1\left(\lambda_2+\lambda_3\right) y z\right] \geqslant 0 .}
+\end{gathered}
+$$
+将上式左边看作是关于 $x$ 的二次函数, 其二次项系数是正数,因此只需要证明它的判别式
+$$
+\Delta \leqslant 0,
+$$
+即
+$$
+\begin{aligned}
+& \lambda_3^2\left(\lambda_1+\lambda_2\right)^2 y^2+\lambda_2^2\left(\lambda_1+\lambda_3\right)^2 z^2+2 \lambda_3 \lambda_2\left(\lambda_1+\lambda_2\right)\left(\lambda_1+\lambda_3\right) y z \\
+\leqslant & \left(\lambda_1+\lambda_2\right)\left(\lambda_1+\lambda_3\right)\left[\left(\lambda_1+\lambda_2\right)\left(\lambda_3+\lambda_2\right) y^2+\left(\lambda_1+\lambda_3\right)\left(\lambda_3+\lambda_2\right) z^2-\right. \\
+& \left.2 \lambda_1\left(\lambda_3+\lambda_2\right) y z\right] \\
+\Leftrightarrow & \left(\lambda_1 \lambda_2+\lambda_2 \lambda_3+\lambda_3 \lambda_1\right)\left[\left(\lambda_1+\lambda_2\right) y-\left(\lambda_1+\lambda_3\right) z\right]^2 \geqslant 0 .
+\end{aligned}
+$$
+由题设条件这是成立的, 因此原不等式得证.
+等号成立当且仅当
+$$
+\left(\lambda_1+\lambda_2\right) y=\left(\lambda_1+\lambda_3\right) z \Leftrightarrow \frac{y}{\lambda_1+\lambda_3}=\frac{z}{\lambda_1+\lambda_2},
+$$
+由 $x 、 y 、 z$ 地位的对称性即知等号成立当且仅当
+$$
+\frac{x}{\lambda_2+\lambda_3}=\frac{y}{\lambda_1+\lambda_3}=\frac{z}{\lambda_1+\lambda_2} \text {. }
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $\triangle A B C$ 和 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 的边长分别为 $a 、 b 、 c$ 及 $a^{\prime} 、 b^{\prime} 、 c^{\prime}$, 对应内角平分线分别为 $t_a 、 t_b 、 t_c$ 及 $t_a^{\prime} 、 t_b^{\prime} 、 t_c^{\prime}$. 求证
+$$
+t_a t_a^{\prime}+t_b t_b^{\prime}+t_c t_c^{\prime} \leqslant \frac{3}{4}\left(a a^{\prime}+b b^{\prime}+c c^{\prime}\right) . \label{eq1}
+$$
+%%<SOLUTION>%%
+证明:由角平分线公式可得
+$$
+t_a=\frac{2 b c}{b+c} \cdot \cos \frac{A}{2} \leqslant \sqrt{b c} \cos \frac{A}{2},
+$$
+同理 $t_a^{\prime} \leqslant \sqrt{b^{\prime} c} \cos \frac{A}{2}$, 等等.
+因此
+$$
+\begin{aligned}
+t_a t_a^{\prime}+t_b t_b^{\prime}+t_c t_c^{\prime} & \leqslant \sum \sqrt{b b^{\prime} c c^{\prime}} \cdot \cos \frac{A}{2} \cos \frac{A^{\prime}}{2} \\
+& =\frac{1}{2} \sum \sqrt{b b^{\prime} c c^{\prime}}\left(\cos \frac{A-A^{\prime}}{2}+\cos \frac{A+A^{\prime}}{2}\right) \\
+& \leqslant \frac{1}{2} \sum \sqrt{b b^{\prime} c c^{\prime}}\left(1+\cos \frac{A+A^{\prime}}{2}\right) \\
+& =\frac{1}{2} \sum \sqrt{b b^{\prime} c c^{\prime}}+\frac{1}{2} \sum \sqrt{b b^{\prime} c c^{\prime}} \cdot \cos \frac{A+A^{\prime}}{2} . \label{eq2}
+\end{aligned}
+$$
+现注意到 $\frac{A+A^{\prime}}{2}+\frac{B+B^{\prime}}{2}+\frac{C+C^{\prime}}{2}=\pi$, 应用嵌入不等式并令 $x= \sqrt{a a^{\prime}}, y=\sqrt{b b^{\prime}}, z=\sqrt{c c^{\prime}}$ 可得
+$$
+2 \sum \sqrt{b b^{\prime} c c^{\prime}} \cos \frac{A+A^{\prime}}{2} \leqslant \sum a a^{\prime}, \label{eq3}
+$$
+又由平均值不等式
+$$
+\sum \sqrt{b b^{\prime} c c^{\prime}} \leqslant \frac{1}{2} \sum\left(b b^{\prime}+c c^{\prime}\right)=\sum a a^{\prime}, \label{eq4}
+$$
+由式\ref{eq2}、\ref{eq3}及式\ref{eq4}即得所证不等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $P$ 为 $\triangle A B C$ 内部或边上任一点, 记 $P A=x, P B=y, P C=z$,
+求证
+$$
+x^2+y^2+z^2 \geqslant \frac{1}{3}\left(a^2+b^2+c^2\right) .
+$$
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c8i1.png>), 分别过 $A 、 B 、 C$ 作 $P A 、 P B$ 、 $P C$ 的垂线, 三垂线两两相交于 $A^{\prime} 、 B^{\prime} 、 C^{\prime}$, 于是 $\angle B P C=\pi-A^{\prime}, \angle A P B=\pi-C^{\prime}, \angle A P C=\pi- B^{\prime}$. 由余弦定理可得
+$$
+\begin{aligned}
+& a^2=y^2+z^2+2 y z \cos A^{\prime}, \\
+& b^2=x^2+z^2+2 x z \cos B^{\prime}, \\
+& c^2=x^2+y^2+2 x y \cos C^{\prime},
+\end{aligned}
+$$
+相加并应用嵌入不等式便得
+$$
+\begin{aligned}
+a^2+b^2+c^2 & =2\left(x^2+y^2+z^2\right)+2 x y \cos C^{\prime}+2 x z \cos B^{\prime}+2 y z \cos A^{\prime} \\
+& \leqslant 2\left(x^2+y^2+z^2\right)+\left(x^2+y^2+z^2\right) \\
+& =3\left(x^2+y^2+z^2\right),
+\end{aligned}
+$$
+得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $\triangle A B C$ 的三条边为 $a 、 b 、 c$, 对应的内角分别为 $A 、 B 、 C$. 记 $s= a+b+c . \triangle A^{\prime} B^{\prime} C^{\prime}$ 的三条边为 $a^{\prime} 、 b^{\prime} 、 c^{\prime}, s^{\prime}=a^{\prime}+b^{\prime}+c^{\prime}$. 求证
+$$
+\frac{a}{a} \tan \frac{A}{2}+\frac{b}{b^{\prime}} \tan \frac{B}{2}+\frac{c}{c} \tan \frac{C}{2} \geqslant \frac{\sqrt{3} s}{2 s^{\prime}},
+$$
+等号成立当且仅当 $\triangle A B C$ 和 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 均为正三角形.
+%%<SOLUTION>%%
+证明:在加权正弦和的不等式中作代换 $A \rightarrow \frac{\pi-A}{2}, B \rightarrow \frac{\pi-B}{2}, C \rightarrow \frac{\pi-C}{2}$, 再对所得不等式作代换 $x \rightarrow y z, y \rightarrow z x, z \rightarrow x y$ 且同时作代换 $u \rightarrow a^{\prime}$, $v \rightarrow b^{\prime}, w \rightarrow c^{\prime}$, 可得
+$$
+\frac{y z}{a^{\prime} x}+\frac{x z}{b^{\prime} y}+\frac{x y}{c^{\prime} z} \geqslant \frac{2\left(x \cos \frac{A}{2}+y \cos \frac{B}{2}+z \cos \frac{C}{2}\right)}{\sqrt{b^{\prime} c^{\prime}+a^{\prime} c^{\prime}+a^{\prime} b^{\prime}}}, \label{eq1}
+$$
+再在式\ref{eq1}中作代换 $x \rightarrow \frac{b c}{s} \cos \frac{A}{2}, y \rightarrow \frac{a c}{s} \cos \frac{B}{2}, z \rightarrow \frac{a b}{s} \cos \frac{C}{2}$, 并注意到
+$$
+\frac{\frac{a}{s} \cos \frac{B}{2} \cos \frac{C}{2}}{\cos \frac{A}{2}}=\frac{2 R \sin A \cos \frac{B}{2} \cos \frac{C}{2}}{2 R(\sin A+\sin B+\sin C) \cos \frac{A}{2}}
+$$
+$$
+=\frac{2 \sin \frac{A}{2} \cos \frac{A}{2} \cos \frac{B}{2} \cos \frac{C}{2}}{4 \cos \frac{A}{2} \cos \frac{B}{2} \cos \frac{C}{2} \cos \frac{A}{2}}=\frac{1}{2} \tan \frac{A}{2},
+$$
+等等,可得
+$$
+\frac{1}{2}\left(\frac{a}{a^{\prime}} \tan \frac{A}{2}+\frac{b}{b^{\prime}} \tan \frac{B}{2}+\frac{c}{c} \tan \frac{C}{2}\right) \geqslant \frac{2\left(\frac{b c}{s} \cos ^2 \frac{A}{2}+\frac{a c}{s} \cos ^2 \frac{B}{2}+\frac{a b}{s} \cos ^2 \frac{C}{2}\right)}{\sqrt{b^{\prime} c^{\prime}+a^{\prime} c^{\prime}+a^{\prime} b^{\prime}}} . \label{eq2}
+$$
+又因为
+$$
+b^{\prime} c^{\prime}+a^{\prime} c^{\prime}+a^{\prime} b^{\prime} \leqslant \frac{4}{3} s^{\prime 2}, \label{eq3}
+$$
+且
+$$
+\begin{aligned}
+& 2\left(\frac{b c}{s} \cos ^2 \frac{A}{2}+\frac{a c}{s} \cos ^2 \frac{B}{2}+\frac{a b}{s} \cos ^2 \frac{C}{2}\right) \\
+= & \frac{1}{s}[b c(1+\cos A)+a c(1+\cos B)+a b(1+\cos C)] \\
+= & \frac{1}{2 s}\left[2 b c+\left(a^2+b^2-c^2\right)+2 a c+\left(a^2+c^2-b^2\right)+2 a b+\left(-a^2+b^2+c^2\right)\right] \\
+= & \frac{1}{2 s}\left[a^2+b^2+c^2+2(a b+b c+c a)\right] \\
+= & \frac{1}{2 s}(a+b+c)^2=\frac{s}{2} .
+\end{aligned} \label{eq4}
+$$
+将式\ref{eq3}和\ref{eq4}代入式\ref{eq2}立得所证不等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. (Klamkin 不等式)设 $P 、 P^{\prime}$ 是 $\triangle A_1 A_2 A_3$ 所在平面上任意两点, 记 $P A_i=R_i, P^{\prime} A_i=R_i^{\prime}$, 三边 $a_i=A_{i-1} A_{i+1}$, 其中 $A_4=A_1, A_0=A_3, i=1$, 2 , 3. 求证
+$$
+a_1 R_1 R_1^{\prime}+a_2 R_2 R_2^{\prime}+a_3 R_3 R_3^{\prime} \geqslant a_1 a_2 a_3, \label{eq1}
+$$
+并指明等号成立的条件.
+%%<SOLUTION>%%
+证明:应用惯性矩不等式.
+在惯性矩不等式中, 令 $x=\frac{a_1 R_1^{\prime}}{R_1}, y=\frac{a_2 R_2^{\prime}}{R_2}, z=\frac{a_3 R_3^{\prime}}{R_3}$, 可得
+$$
+\left(\sum \frac{a_i R_i^{\prime}}{R_i}\right)\left(\sum a_i R_i^{\prime} R_i\right) \geqslant \sum a_1^2\left(\frac{a_2 R_2^{\prime}}{R_2}\right)\left(\frac{a_3 R_3^{\prime}}{R_3}\right),
+$$
+整理即得
+$$
+\left(\sum a_1 R_1^{\prime} R_2 R_3\right)\left(\sum a_1 R_1 R_1^{\prime}\right) \geqslant a_1 a_2 a_3\left(\sum a_1 R_1 R_2^{\prime} R_3^{\prime}\right) . \label{eq2}
+$$
+类似的有
+$$
+\left(\sum a_1 R_1 R_2^{\prime} R_3^{\prime}\right)\left(\sum a_1 R_1 R_1^{\prime}\right) \geqslant a_1 a_2 a_3\left(\sum a_1 R_1^{\prime} R_2 R_3\right) .  \label{eq3}
+$$
+式\ref{eq2}、\ref{eq3}两式相加, 两边约去相同的项便得所证不等式\ref{eq1}.
+注意到式\ref{eq2}中等号成立的条件为
+$$
+\frac{r_1 R_1}{R_1^{\prime}}=\frac{r_2 R_2}{R_2^{\prime}}=\frac{r_3 R_3}{R_3^{\prime}}, \label{eq4}
+$$
+而式\ref{eq3}中等号成立的条件为
+$$
+\frac{r_1^{\prime} R_1^{\prime}}{R_1}=\frac{r_2^{\prime} R_2^{\prime}}{R_2}=\frac{r_3^{\prime} R_3^{\prime}}{R_3}, \label{eq5}
+$$
+这里 $r_i 、 r_i^{\prime}$ 分别是 $P$ 和 $P^{\prime}$ 到 $a_i$ 的距离.
+式\ref{eq4}、\ref{eq5}相等可得
+$$
+r_1 r_1^{\prime}=r_2 r_2^{\prime}=r_3 r_3^{\prime},
+$$
+即 $P$ 和 $P^{\prime}$ 到三边的距离成反比.
+这说明 $P$ 和 $P^{\prime}$ 是关于 $\triangle A_1 A_2 A_3$ 的一对等角共轭点.
+%%<REMARK>%%
+注:(1) 关于等角共轭点的概念及性质可参见 Roger A. Johnson 的书 《Modern Geometry》的第八章(中译本: 单墫译, 上海教育出版社, 1999).
+(2)上例证法的巧妙之处在于:对称的应用惯性矩不等式.
+下面是唐立华建立的一个不等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $P$ 为 $\triangle A_1 A_2 A_3$ 所在平面上的任意一点, $P A_i=R_i(i=1,2$, 3), $\triangle A_1 A_2 A_3$ 的面积为 $\Delta, \triangle A_1 A_2 A_3$ 的边长分别为 $a_1 、 a_2 、 a_3$, 则
+$$
+\left(R_2^2+R_3^2-R_1^2\right) \sin A_1+\left(R_3^2+R_1^2-R_2^2\right) \sin A_2+\left(R_1^2+R_2^2-R_3^2\right) \sin A_3 \geqslant 2 \Delta, \label{eq1}
+$$
+等号成立当且仅当 $a_1=a_2=a_3$ 且
+$$
+R_1: R_2: R_3=\sin \alpha_1: \sin \alpha_2: \sin \alpha_3,
+$$
+其中 $\angle \alpha_i=\angle A_{i+1} P A_{i+2}\left(A_4=A_1, A_5=A_2, i=1,2,3\right)$(按同一方向取角).
+%%<SOLUTION>%%
+证明:先证下面的引理.
+引理设 $\triangle A_1 A_2 A_3$ 的边长分别为 $a_1 、 a_2 、 a_3$, 则
+$$
+\begin{gathered}
+a_1\left(a_1+a_2-a_3\right)\left(a_1+a_3-a_2\right)+a_2\left(a_2+a_1-a_3\right)\left(a_2+a_3-a_1\right)+ \\
+a_3\left(a_3+a_1-a_2\right)\left(a_3+a_2-a_1\right) \geqslant 3 a_1 a_2 a_3, \label{eq2}
+\end{gathered}
+$$
+等号成立当且仅当 $a_1=a_2=a_3$.
+证明令
+$$
+x=\frac{1}{2}\left(a_2+a_3-a_1\right), y=\frac{1}{2}\left(a_3+a_1-a_2\right), z=\frac{1}{2}\left(a_1+a_2-a_3\right),
+$$
+则 $x, y, z>0$, 且
+$$
+a_1=y+z, a_2=z+x, a_3=x+y .
+$$
+于是式\ref{eq2}等价于
+$$
+\begin{aligned}
+& 4[y z(y+z)+z x(z+x)+x y(x+y)] \geqslant 3(x+y)(y+z)(z+x) \\
+\Leftrightarrow & 4\left[x^2(y+z)+y^2(z+x)+z^2(x+y)\right] \geqslant 3\left[x^2(y+z)+\right. \\
+& \left.y^2(z+x)+z^2(x+y)\right]+6 x y z \\
+\Leftrightarrow & x^2(y+z)+y^2(z+x)+z^2(x+y) \geqslant 6 x y z .
+\end{aligned} \label{eq3}
+$$
+而由均值不等式知式\ref{eq3}成立, 故引理中的不等式\ref{eq2}得证, 等号成立当且仅当 $x=y=z$, 即 $a_1=a_2=a_3$.
+下面证明式\ref{eq1}.
+由正弦定理及 $\Delta=\frac{a_1 a_2 a_3}{4 R}$ 知, \ref{eq1}式等价于
+$$
+\left(a_2+a_3-a_1\right) R_1^2+\left(a_1+a_3-a_2\right) R_2^2+\left(a_1+a_2-a_3\right) R_3^2 \geqslant a_1 a_2 a_3 . \label{eq4}
+$$
+不妨设 $a_1 \geqslant a_2 \geqslant a_3>0$, 则
+$$
+\begin{gathered}
+a_1+a_2-a_3 \geqslant a_3+a_1-a_2 \geqslant a_2+a_3-a_1>0 . \\
+\text { 记 } \lambda_i=\left(a_1+a_2+a_3-2 a_i\right)(i=1,2,3), \text { 从而 } \\
+\lambda_2 \lambda_3 a_1 \geqslant \lambda_3 \lambda_1 a_2 \geqslant \lambda_1 \lambda_2 a_3,
+\end{gathered}
+$$
+故由引理、惯性矩不等式及 Tchebychef(切比雪夫) 不等式可得
+$$
+\begin{aligned}
+& \left(a_2+a_3-a_1\right) R_1^2+\left(a_1+a_3-a_2\right) R_2^2+\left(a_1+a_2-a_3\right) R_3^2 \\
+= & \lambda_1 R_1^2+\lambda_2 R_2^2+\lambda_3 R_3^2 \geqslant \frac{\sum_{i=1}^3 \lambda_{i+1} \lambda_{i+2} \cdot a_i^2}{\sum_{i=1}^3 \lambda_i} \\
+= & \frac{\sum_{i=1}^3\left(\lambda_{i+1} \lambda_{i+2} \cdot a_i\right) \cdot a_i}{\sum_{i=1}^3 a_i} \geqslant \frac{\left(\sum_{i=1}^3 \lambda_{i+1} \lambda_{i+2} \cdot a_i\right)\left(\sum_{i=1}^3 a_i\right)}{3 \sum_{i=1}^3 a_i} \\
+\geqslant & a_1 a_2 a_3,
+\end{aligned}
+$$
+故式\ref{eq4}成立, 从而式\ref{eq1}得证.
+由引理及 Tchebychef 不等式等号成立的条件易知式\ref{eq1}等号成立当且仅当 $a_1=a_2=a_3$ 且 $R_1: R_2: R_3=\sin \alpha_1: \sin \alpha_2: \sin \alpha_3$.
+%%PROBLEM_END%%
+
+

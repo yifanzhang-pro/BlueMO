@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例8. 证明: 对任意的 $n \\in \\mathbf{N}, n \\geqslant 2$, 都存在 $n$ 个互不相等的自然数组成的集合 $M$, 使得对任意的 $a \\in M$ 和 $b \\in M$, 都有 $(a-b) \\mid(a+b)$.",
+    "solution": "分析:设 $a_1<a_2<\\cdots<a_n$ 为 $M$ 的 $n$ 个元素, 我们用归纳的方法来构造这些元素.\n当 $n=2$ 时,取 $a_1=1, a_2=2$ 即可.\n假设 $n=k$ 时, $k$ 个元素 $a_1<a_2<\\cdots<a_k$ 组成的集合符合要求.\n当 $n=k+1$ 时则取如下 $k+1$ 个数\n$$\na_{k} !, a_{k} !+a_1, a_{k} !+a_2, \\cdots, a_{k} !+a_k,\n$$\n组成的集合符合要求.\n事实上,\n$$\n\\frac{\\left(a_{k} !+a_i\\right)+a_{k} !}{\\left(a_{k} !+a_i\\right)-a_{k} !}=\\frac{2\\left(a_{k} !\\right)+a_i}{a_i} \\in \\mathbf{N}^* \\quad(i=1,2, \\cdots, k) .\n$$\n又不妨设 $i>j(i, j=1,2, \\cdots, n)$, 则\n$$\n\\begin{aligned}\nA & =\\frac{\\left(a_{k} !+a_i\\right)+\\left(a_{k} !+a_j\\right)}{\\left(a_{k} !+a_i\\right)-\\left(a_{k} !+a_j\\right)} \\\\\n& =\\frac{2\\left(a_{k} !\\right)+a_i+a_j}{a_i-a_j} .\n\\end{aligned}\n$$\n因为 $\\left(a_i-a_j\\right) \\mid\\left(a_i+a_j\\right)$ (归纳假设), $\\left(a_i-a_j\\right) \\mid 2\\left(a_k\\right.$ !), 所以 $A \\in \\mathbf{N}^*$.\n说明对上面的分析稍作整理即为本例的证明.\n略.",
+    "remark": "",
+    "figures": []
+}

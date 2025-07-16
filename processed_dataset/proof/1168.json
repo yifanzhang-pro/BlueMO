@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-6.tex",
+    "problem_type": "proof",
+    "problem": "例6. 已知正数 $x_i$ 满足 $\\sum_{i=1}^n \\frac{1}{1+x_i}=1$, 证明:\n$$\n\\prod_{i=1}^n x_i \\geqslant(n-1)^n \\text {. }\n$$",
+    "solution": "证明:由柯西不等式, 得\n$$\n\\sum_{i=1}^n \\frac{1}{1+x_i} \\cdot \\sum_{i=1}^n \\frac{1+x_i}{x_i} \\geqslant\\left(\\sum_{i=1}^n \\frac{1}{\\sqrt{x_i}}\\right)^2,\n$$\n即\n$$\n\\sum_{i=1}^n \\frac{1}{x_i}+n \\geqslant \\sum_{i=1}^n \\frac{1}{x_i}+2 \\sum_{1 \\leqslant i<j \\leqslant n} \\frac{1}{\\sqrt{x_i x_j}} .\n$$\n再由平均值不等式, 得\n$$\nn \\geqslant 2 \\sum_{1 \\leqslant i<j \\leqslant n} \\frac{1}{\\sqrt{x_i x_j}} \\geqslant 2 \\cdot \\frac{n(n-1)}{2} \\cdot \\sqrt[\\frac{n(n-1)}{2}]{\\prod_{i=1}^n\\left(\\frac{1}{\\sqrt{x_i}}\\right)^{n-1}},\n$$\n由此得到\n$$\n\\prod_{i=1}^n x_i \\geqslant(n-1)^n\n$$",
+    "remark": "",
+    "figures": []
+}

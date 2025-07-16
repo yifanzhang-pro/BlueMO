@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题14 已知 $f(x)=a \\sin ^3 x+b \\sqrt[3]{x} \\cdot \\cos ^3 x+4(a, b \\in \\mathbf{R})$, 且 $f\\left(\\sin 10^{\\circ}\\right)=5$, 则 $f\\left(\\cos 100^{\\circ}\\right)=$",
+    "solution": "3. 由题意得 $f(x)+f(-x)=8$, 而 $\\cos 100^{\\circ}=-\\sin 10^{\\circ}$, 所以 $f\\left(\\sin 10^{\\circ}\\right)+f\\left(-\\sin 10^{\\circ}\\right)=8$, 于是 $f\\left(\\cos 100^{\\circ}\\right)=3$.",
+    "remark": "",
+    "figures": []
+}

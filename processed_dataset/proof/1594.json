@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题20. 数列 $\\left\\{a_n\\right\\}$ 满足 $a_1=1, a_{n+1}=\\frac{a_n}{n}+\\frac{n}{a_n}, n \\geqslant 1$. 证明: 对任意 $n \\in \\mathbf{N}^*, n \\geqslant$ 4 , 都有 $\\left[a_n^2\\right]=n$.",
+    "solution": "记 $f(x)=\\frac{x}{n}+\\frac{n}{x}$, 则由 $f(a)-f(b)=\\frac{(a-b)\\left(a b-n^2\\right)}{a b n}$, 可知函数 $f(x)$ 是区间 $(0, n]$ 上的减函数.\n下面我们对 $n$ 运用数学归纳法, 先证明: $\\sqrt{n}<a_n<\\frac{n}{\\sqrt{n-1}}, n \\geqslant 3$.\n注意到 $a_1=1$, 可知 $a_2=2, a_3=2$, 于是 $n=3$ 时, 上述不等式成立.\n进一步, 设 $\\sqrt{n}<a_n<\\frac{n}{\\sqrt{n-1}}, n \\geqslant 3$, 由单调性可知 $f\\left(a_n\\right)<f(\\sqrt{n})=\\frac{n+1}{\\sqrt{n}}$, 即 $a_{n+1}<\\frac{n+1}{\\sqrt{n}}$, 并且 $a_{n+1}=f\\left(a_n\\right)>f\\left(\\frac{n}{\\sqrt{n-1}}\\right)=\\frac{n}{\\sqrt{n-1}}>\\sqrt{n+1}$. 故对一切 $n \\in \\mathbf{N}^*, n \\geqslant 3$,均有 $\\sqrt{n}<a_n<\\frac{n}{\\sqrt{n-1}}$.\n下面再证当 $n \\geqslant 4$ 时, $a_n<\\sqrt{n+1}$.\n事实上, 由于当 $n \\geqslant 3$ 时, $a_{n+1}=f\\left(a_n\\right)>f\\left(\\frac{n}{\\sqrt{n-1}}\\right)=\\frac{n}{\\sqrt{n-1}}$, 故当 $n \\geqslant 4$ 时,有 $a_n>\\frac{n-1}{\\sqrt{n-2}}$. 进而, 当 $n \\geqslant 4$ 时, 有\n$$\na_{n+1}=f\\left(a_n\\right)<f\\left(\\frac{n-1}{\\sqrt{n-2}}\\right)=\\frac{(n-1)^2+n^2(n-2)}{(n-1) n \\sqrt{n-2}}<\\sqrt{n+2} .\n$$\n$\\left( \\text{最后一个不等式等价于} 2 n^2(n-3)+4 n-1>0\\right)$, 而 $a_4=\\frac{13}{6}<\\sqrt{6}$ 是显然的.\n于是, 当 $n \\geqslant 4$ 时,均有 $\\sqrt{n}<a_n<\\sqrt{n+1}$, 从而, 此时有 $\\left[a_n^2\\right]=n$.",
+    "remark": "",
+    "figures": []
+}

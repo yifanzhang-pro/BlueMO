@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $P 、 Q$ 是正四面体 $A B C D$ 内的二点, 求证: $\\angle P A Q<60^{\\circ}$.",
+    "solution": "提示: 设 $\\angle P A Q$ 所在平面与正四面体各面的交线为 $A E 、 A F 、 E F$. 只要证明 $\\angle E A F \\leqslant 60^{\\circ}$ 便可, 这可通过证明在 $\\triangle A E F$ 中 $E F$ 是最小边来实现.",
+    "remark": "",
+    "figures": []
+}

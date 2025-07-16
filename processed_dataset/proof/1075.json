@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例14. 设 $a_i>0, i=1,2, \\cdots, n, m>0$ 且满足 $\\sum_{i=1}^n \\frac{1}{1+a_i^m}=1$. 求证:\n$$\na_1 a_2 \\cdots a_n \\geqslant(n-1)^{\\frac{n}{m}} .\n$$",
+    "solution": "证明二令 \n$$\n\\begin{gathered}\na_i^m=\\tan ^2 \\alpha_i \\text {, 则 } \\sum_{i=1}^n \\frac{1}{1+a_i^m}=1 \\text { 等价于 } \\\\\n\\sum_{i=1}^n \\cos ^2 \\alpha_i=1 .\n\\end{gathered}\n$$\n其结论等价于\n$$\n\\tan ^2 \\alpha_1 \\tan ^2 \\alpha_2 \\cdots \\cdot \\tan ^2 \\alpha_n \\geqslant(n-1)^n,\n$$\n即\n$$\n\\sin ^2 \\alpha_1 \\sin ^2 \\alpha_2 \\cdots \\sin ^2 \\alpha_n \\geqslant(n-1)^n \\cos ^2 \\alpha_1 \\cos ^2 \\alpha_2 \\cdots \\cos ^2 \\alpha_n\n$$\n由平均值不等式, 得\n$$\n\\begin{aligned}\n\\sin ^2 \\alpha_1 & =1-\\cos ^2 \\alpha_1=\\cos ^2 \\alpha_2+\\cdots+\\cos ^2 \\alpha_n \\\\\n& \\geqslant(n-1) \\sqrt[n-1]{\\cos ^2 \\alpha_2 \\cos ^2 \\alpha_3 \\cdots \\cos ^2 \\alpha_n} .\n\\end{aligned}\n$$\n一般地,\n$$\n\\begin{aligned}\n\\sin ^2 \\alpha_i & =1-\\cos ^2 \\alpha_i=\\cos ^2 \\alpha_1+\\cdots+\\cos ^2 \\alpha_{i-1}+\\cos ^2 \\alpha_{i+1}+\\cdots+\\cos ^2 \\alpha_n \\\\\n& \\geqslant(n-1) \\sqrt[n-1]{\\cos ^2 \\alpha_1 \\cdots \\cos ^2 \\alpha_{i-1} \\cos ^2 \\alpha_{i+1} \\cdots \\cos ^2 \\alpha_n} .\n\\end{aligned}\n$$\n将它们相乘, 得\n$$\n\\sin ^2 \\alpha_1 \\sin ^2 \\alpha_2 \\cdots \\sin ^2 \\alpha_n \\geqslant(n-1)^n \\cos ^2 \\alpha_1 \\cos ^2 \\alpha_2 \\cdots \\cos ^2 \\alpha_n .\n$$\n故命题成立.",
+    "remark": "",
+    "figures": []
+}

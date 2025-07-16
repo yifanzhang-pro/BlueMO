@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 一个凸多面体有 $10 n$ 个面.\n求证: 有 $n$ 个面边数相同.",
+    "solution": "设这个凸多面体有 $x$ 个顶点,且设 $10 n$ 个面上分别有 $C_1, C_2, \\cdots, C_{10 n}$ 个顶点和 $a_1, a_2, \\cdots, a_{10 n}$ 条边,故凸多面体棱的数目为 $\\frac{1}{2} \\sum_{i=1}^{10 n} a_i$. 由欧拉定理得 $10 n+x=\\frac{1}{2} \\sum_{i=1}^{10 n} a_i+2$. 又 $x \\leqslant \\frac{1}{3} \\sum_{i=1}^{10 n} a_i$, 所以 $\\frac{1}{2} \\sum_{i=1}^{10 n} a_i+2-10 n \\leqslant \\frac{1}{3} \\sum_{i=1}^{10 n} a_i$, 即 $\\sum_{i=1}^{10 n} a_i \\leqslant 60 n-12$.\n若 $10 n$ 个面中不存在 $n$ 个面边数相同, 则 $\\sum_{i=1}^{10 n} a_i \\geqslant(3+4+\\cdots+12) (n-1)+13 \\times 10=75 n+55>60 n-12$, 矛盾, 所以至少有 $n$ 个面边数相同.",
+    "remark": "",
+    "figures": []
+}

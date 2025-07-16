@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 设 $f(x)=x^4+x^3+x^2+x+1$, 求 $f\\left(x^5\\right)$ 被 $f(x)$ 除得的余数.",
+    "solution": "设 $f\\left(x^5\\right)=f(x) q(x)+r(x)$, 这里 $r(x)=0$ 或 $\\operatorname{deg} r \\leqslant 3$.\n设 $\\zeta \\neq 1$ 是一个 5 次单位根, 则 $r(\\zeta)=r\\left(\\zeta^2\\right)=r\\left(\\zeta^3\\right)=r\\left(\\zeta^4\\right)=5$, 而 $\\operatorname{deg} r \\leqslant 3$, 故必须 $r(x)=5$, 即余式是常数 5 .",
+    "remark": "",
+    "figures": []
+}

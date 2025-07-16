@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题7 已知集合 $M$ 的元素都是整数,既有正整数又有负整数,且当 $a, b \\in M$ 时, $2 a$ 和 $a+b$ 也属于 $M$. 求证: 当 $a, b \\in M$ 时, $a-b \\in M$.",
+    "solution": "首先, 用归纳法容易证明, 若 $c \\in M$, 则对任意 $n \\in Z$, 都有 $n c \\in M$.\n设 $a>0$ 是集合 $M$ 中的最小正整数, $b<0$ 是 $M$ 中的最大负整数, 即绝对值最小的负整数.\n按已知, $a+b \\in M$, 且满足不等式 $b<a+b<a$. 由 $a$ 和 $b$ 的极端性知 $a+b=0$. 因此, $0 \\in M$, 且有 $b=-a$. 这样一来, 对任何 $a \\in M, n \\in \\mathrm{Z}$, 都有 $n a \\in M$.\n我们断言, 集合 $M$ 中除了 $a$ 的整数倍以外, 不含任何其他元素.\n若不然, 设有 $x \\in M$ 且有 $m a<x<(m+1) a, m \\in \\mathbf{Z}$. 记 $x=m a+r, 0<r<a$, $r \\in \\mathbf{N}$. 这时 $r=x+(-m) a \\in M$, 此与 $a$ 的最小性矛盾.\n这样一来, $M=\\{n a \\mid n \\in \\mathbf{Z}\\}$. 由于 $M$ 中任意两数之差仍是 $a$ 的整数倍, 当然仍在 $M$ 之中.",
+    "remark": "",
+    "figures": []
+}

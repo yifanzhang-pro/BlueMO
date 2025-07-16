@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 设 $x, y, z \\in \\mathbf{R}^{+}$, 且 $x+y+z \\geqslant 6$. 求\n$$\nM=\\sum x^2+\\sum \\frac{x}{y^2+z+1}\n$$\n的最小值, 其中, \" $\\sum$ \" 表示轮换对称和.",
+    "solution": "由均值不等式有 ${\\frac{x^{2}}{14}}+{\\frac{x}{y^{2}+z+1}}+{\\frac{2}{49}}(y^{2}+z+1)\\geq3{\\sqrt{{\\frac{x^{3}}{7^{3}}}}}={\\frac{3}{7}}x$. 则 $\\frac{1}{14} \\sum x^2+\\sum \\frac{x}{y^2+z+1}+\\frac{2}{49} \\sum x^2+\\frac{2}{49} \\sum x+\\frac{6}{49} \\geqslant \\frac{3}{7} \\sum x$. 故 $\\frac{11}{98} \\sum x^2+\\sum \\frac{x}{y^2+z+1}+\\frac{6}{49} \\geqslant\\left(\\frac{3}{7}-\\frac{2}{49}\\right) \\sum x=\\frac{19}{49} \\sum x$. 又 $\\sum x^2 \\geqslant \\frac{1}{3}\\left(\\sum x\\right)^2 \\geqslant 12$, 故 $\\sum x^2+\\sum \\frac{x}{y^2+z+1}=\\frac{87}{98} \\sum x^2+\\frac{11}{98} \\sum x^2-\\frac{6}{49} \\geqslant \\frac{87}{98} \\sum x^2+\\frac{19}{49} \\sum x-\\frac{6}{49} \\geqslant \\frac{87 \\times 6+19 \\times 6-6}{49}=\\frac{90}{7}$. 从而, $M_{\\min }=\\frac{90}{7}$. 此时, $(x, y, z)=(2,2,2)$.",
+    "remark": "",
+    "figures": []
+}

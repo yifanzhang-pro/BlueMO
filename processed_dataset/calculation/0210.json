@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题13. $n$ 对夫妻任意排成一行, 求没有任何一对夫妻相邻的排法总数.",
+    "solution": "$S$ 表示 $n$ 对夫妻排成一行的所有全排列组成的集合, $A_i$ 表示其中第 $i$ 对夫妻相邻的全排列集合, 则由容斥原理得所求排列的总数为\n$\\left|\\complement_S A_1 \\cap \\complement_S A_2 \\cap \\cdots \\cap \\complement_S A_n\\right|=|S|-\\sum_{i=1}^n\\left|A_i\\right|+\\sum_{1 \\leqslant i<j \\leqslant n}\\left|A_i \\cap A_j\\right|- \\cdots+(-1)^n \\cdot\\left|A_1 \\cap A_2 \\cap \\cdots \\cap A_n\\right|=(2 n) !-\\mathrm{C}_n^1 \\cdot 2(2 n-1) !+\\mathrm{C}_n^2 2^2 \\cdot (2 n-2) !-\\cdots+(-1)^k \\mathrm{C}_n^k 2^k(2 n-k) !+\\cdots+(-1)^n \\mathrm{C}_{2 n}^{2 n} \\cdot 2^n \\cdot n !$.",
+    "remark": "",
+    "figures": []
+}

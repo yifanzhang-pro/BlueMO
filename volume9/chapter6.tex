@@ -1,0 +1,247 @@
+
+%%TEXT_BEGIN%%
+构造代数恒等式来证明一些距离不等式是十分方便的,这方面一个典型的例子是 M. S. Klamkin 早年的一个不等式.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $P$ 是 $\triangle A B C$ 所在平面上任一点,求证:
+$$
+a \cdot P B \cdot P C+b \cdot P C \cdot P A+c \cdot P A \cdot P B \geqslant a b c .
+$$
+%%<SOLUTION>%%
+证明:视 $\triangle A B C$ 所在平面为复平面, 设 $P 、 A 、 B 、 C$ 分别对应着复数 $z$ 、 $z_1, z_2, z_3$, 令
+$$
+f(z)=\frac{\left(z-z_2\right)\left(z-z_3\right)}{\left(z_1-z_2\right)\left(z_1-z_3\right)}+\frac{\left(z-z_3\right)\left(z-z_1\right)}{\left(z_2-z_3\right)\left(z_2-z_1\right)}+\frac{\left(z-z_1\right)\left(z-z_2\right)}{\left(z_3-z_1\right)\left(z_3-z_2\right)},
+$$
+则 $f(z)$ 是关于 $z$ 的二次多项式,且易见
+$$
+f\left(z_1\right)=f\left(z_2\right)=f\left(z_3\right)=1,
+$$
+故 $f(z) \equiv 1$. 因此
+$$
+\begin{aligned}
+& \frac{P B \cdot P C}{b c}+\frac{P C \cdot P A}{c a}+\frac{P A \cdot P B}{a b} \\
+= & \left|\frac{\left(z-z_2\right)\left(z-z_3\right)}{\left(z_1-z_2\right)\left(z_1-z_3\right)}\right|+\left|\frac{\left(z-z_3\right)\left(z-z_1\right)}{\left(z_2-z_3\right)\left(z_2-z_1\right)}\right|+\left|\frac{\left(z-z_1\right)\left(z-z_2\right)}{\left(z_3-z_1\right)\left(z_3-z_2\right)}\right| \\
+\geqslant & |f(z)|=1 .
+\end{aligned}
+$$
+由此立得所证不等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $\triangle A B C$ 和 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 是同一个平面上的两个正三角形, 且顶点排列方向相同, 求证: 三条线段 $A A^{\prime} 、 B B^{\prime} 、 C C^{\prime}$ 中任何两个之和大于或等于第三个.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c6i1.png>), 对顶点排列方向相同的两个相似三角形 $\triangle A B C$ 和 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 总有一恒等式
+$$
+\begin{aligned}
+& \left(z_1^{\prime}-z_1\right)\left(z_2-z_3\right)+\left(z_2^{\prime}-z_2\right)\left(z_3-z_1\right)+ \\
+& \left(z_3^{\prime}-z_3\right)\left(z_1-z_2\right)=0, \label{eq1}
+\end{aligned}
+$$
+其中 $z_1 、 z_2 、 z_3$ 分别是 $A 、 B 、 C$ 对应的复数; $z_1^{\prime}$ 、 $z_2^{\prime} 、 z_3^{\prime}$ 分别是 $A^{\prime} 、 B^{\prime} 、 C^{\prime}$ 对应的复数.
+由复数模的性质从式\ref{eq1}可得
+$$
+\left|z_1^{\prime}-z_1\right| \cdot\left|z_2-z_3\right|+\left|z_2^{\prime}-z_2\right| \cdot\left|z_3-z_1\right| \geqslant\left|\left(z_3^{\prime}-z_3\right)\left(z_1-z_2\right)\right| .
+$$
+注意到 $\triangle A B C$ 是正三角形, 即
+$$
+\left|z_2-z_3\right|=\left|z_3-z_1\right|=\left|z_1-z_2\right|,
+$$
+故有
+$$
+\left|z_1^{\prime}-z_1\right|+\left|z_2^{\prime}-z_2\right| \geqslant\left|z_3^{\prime}-z_3\right|
+$$
+这就是
+$$
+A A^{\prime}+B B^{\prime} \geqslant C C^{\prime}
+$$
+同理可证另外的两个不等式.
+现回忆平面几何中一个简单的命题:三个正数 $a 、 b 、 c$ 构成一个三角形三边的充要条件是存在正数 $x 、 y 、 z$ 使得 $a=y+z, b=x+z, c=x+y$. (这个结论的充分性可直接验证,必要性可通过如图(<FilePath:./figures/fig-c6i2.png>) 中的分解看出.)
+依据这个命题,关于三角形的几何不等式总可以通过代换 $x=-a+b+c, y=a-b+c, z=a+b-c$ 将问题转化为涉及正数 $x 、 y 、 z$ 的不等式.
+利用正数代换的一个十分典型的问题是第 24 届 IMO 试题:
+在 $\triangle A B C$ 中, 求证:
+$$
+b^2 c(b-c)+c^2 a(c-a)+a^2 b(a-b) \geqslant 0 .
+$$
+这个问题的一种简洁证法是利用正数代换转化为 $x 、 y 、 z$ 的不等式
+$$
+\frac{x^2}{y}+\frac{y^2}{z}+\frac{z^2}{x} \geqslant x+y+z,
+$$
+从而用一下 Cauchy 不等式便可.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $r_a 、 r_b 、 r_c$ 分别为 $\triangle A B C$ 的三边 $a 、 b 、 c$ 相应的旁切圆半径, 求证:
+$$
+\frac{a^2}{r_b^2+r_c^2}+\frac{b^2}{r_c^2+r_a^2}+\frac{c^2}{r_a^2+r_b^2} \geqslant 2
+$$
+%%<SOLUTION>%%
+证明:作正数代换
+$$
+\begin{gathered}
+x=-a+b+c, \\
+y=a-b+c, \\
+z=a+b-c,
+\end{gathered}
+$$
+则 $x, y, z>0$. 注意到
+$$
+\begin{gathered}
+S_{\triangle A B C}=\frac{1}{4} \sqrt{(x+y+z) x y z}, \\
+r_a=\frac{2 S_{\triangle A B C}}{b+c-a}=\frac{1}{2 x} \sqrt{(x+y+z) x y z},
+\end{gathered}
+$$
+等等, 通过计算, 原不等式等价变为下面的代数不等式
+$$
+\frac{y^2 z^2(y+z)^2}{y^2+z^2}+\frac{z^2 x^2(z+x)^2}{z^2+x^2}+\frac{x^2 y^2(x+y)^2}{x^2+y^2} \geqslant 2 x y z(x+y+z) . \label{eq1}
+$$
+为证式\ref{eq1}, 只需证明下面有趣的局部不等式
+$$
+\frac{y^2 z^2(y+z)^2}{y^2+z^2} \geqslant \frac{2 x y z(x+y+z) y^2 z^2}{x^2 y^2+y^2 z^2+z^2 x^2} . \label{eq2}
+$$
+事实上, 如果\ref{eq2}式成立, 将这样的三个不等式相加便得所证结果.
+下证式\ref{eq2}.
+$$
+\begin{aligned}
+式\ref{eq2} & \Leftrightarrow(y+z)^2\left(x^2 y^2+y^2 z^2+z^2 x^2\right) \geqslant 2 x y z(x+y+z)\left(y^2+z^2\right), \\
+& \Leftrightarrow\left(y^2+z^2\right) x^2(y+z)^2+y^2 z^2(y+z)^2 \geqslant 2 x y z(x+y+z)\left(y^2+z^2\right), \\
+& \Leftrightarrow\left(y^2+z^2\right)^2 x^2+y^2 z^2(y+z)^2 \geqslant 2 x y z(y+z)\left(y^2+z^2\right), \\
+& \Leftrightarrow\left[\left(y^2+z^2\right) x-y z(y+z)\right]^2 \geqslant 0,
+\end{aligned}
+$$
+得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $P_i\left(x_i, y_i\right)\left(i=1,2,3 ; x_1<x_2<x_3\right)$ 是直角坐标平面上的点,用 $R$ 表示 $\triangle P_1 P_2 P_3$ 的外接圆半径.
+求证:
+$$
+\frac{1}{R}<2\left|\frac{y_1}{\left(x_1-x_2\right)\left(x_1-x_3\right)}+\frac{y_2}{\left(x_2-x_1\right)\left(x_2-x_3\right)}+\frac{y_3}{\left(x_3-x_1\right)\left(x_3-x_2\right)}\right|,
+$$
+并说明系数 2 是最佳的.
+%%<SOLUTION>%%
+证明:当沿 $X$ 轴方向平移 $\triangle P_1 P_2 P_3$ 时, $x_1-x_2 、 x_2-x_3 、 x_3-x_1$ 均不变,所以原不等式两边的值不改变.
+当沿 $Y$ 轴方向平移 $\triangle P_1 P_2 P_3$ 时, 由于有恒等式
+$$
+\frac{1}{\left(x_1-x_2\right)\left(x_1-x_3\right)}+\frac{1}{\left(x_2-x_1\right)\left(x_2-x_3\right)}+\frac{1}{\left(x_3-x_1\right)\left(x_3-x_2\right)}=0,
+$$
+所以原不等式两边的值也不改变.
+因此, 不妨设 $P_1$ 为原点, 即 $x_1=y_1=0$, 此时原不等式成为
+$$
+\frac{1}{2 R}<\frac{1}{\left|x_2-x_3\right|}\left|\frac{y_3}{x_3}-\frac{y_2}{x_2}\right| .
+$$
+如图(<FilePath:./figures/fig-c6i3.png>), 设直线 $O P_3 、 O P_2$ 的倾斜角为 $\theta_3 、 \theta_2, \angle P_2 P_1 P_3=\alpha$, 则 $\theta_3- \theta_2= \pm \alpha$, 从而
+$$
+\begin{aligned}
+\frac{1}{\left|x_2-x_3\right|}\left|\frac{y_3}{x_3}-\frac{y_2}{x_2}\right| & =\frac{1}{\left|x_2-x_3\right|}\left|\tan \theta_3-\tan \theta_2\right| \\
+& =\frac{1}{\left|x_2-x_3\right|}\left|\frac{\sin \left(\theta_3-\theta_2\right)}{\cos \theta_3 \cos \theta_2}\right| \\
+& =\frac{\sin \alpha}{\left|x_2-x_3\right|}\left|\frac{1}{\cos \theta_3 \cos \theta_2}\right| \\
+& >\frac{\sin \alpha}{\left|x_2-x_3\right|} \geqslant \frac{\sin \alpha}{P_2 P_3} \\
+& =\frac{1}{2 R}, \label{eq1}
+\end{aligned}
+$$
+从而原不等式得证.
+在上面的证明中, 若 $y_1=y_3=x_1=0$, 并且 $y_2 \rightarrow 0$, 则 $\cos \theta_3=1$, $\cos \theta_2 \rightarrow 1$. 此时 式\ref{eq1}的左边 $\rightarrow \frac{1}{2 R}$, 故 2 是最优的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $P$ 是锐角 $\triangle A B C$ 所在平面上任一点, $u 、 v 、 w$ 分别为点 $P$ 到 $A$ 、 $B 、 C$ 的距离.
+求证:
+$$
+u^2 \tan A+v^2 \tan B+w^2 \tan C \geqslant 4 \Delta,
+$$
+并指出等号成立的条件, 其中 $\triangle$ 为 $\triangle A B C$ 的面积.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c6i4.png>), 取 $B C$ 所在的直线为 $X$ 轴, 过 $A$ 的高线所在的直线为 $Y$ 轴, 建立平面直角坐标系.
+设 $A 、 B 、 C$ 的坐标分别为 $(0, a) 、(-b, 0)$ 、 $(c, 0)$ (这里 $a, b, c>0)$, 于是
+$$
+\tan A=-\tan (B+C)=\frac{a(b+c)}{a^2-b c} .
+$$
+由 $\angle A$ 为锐角知 $a^2-b c>0$.
+现设点 $P$ 的坐标为 $(x, y)$, 则
+$$
+\begin{aligned}
+& u^2 \tan A+v^2 \tan B+w^2 \tan C \\
+= & {\left[x^2+(y-a)^2\right] \frac{a(b+c)}{a^2-b c}+\frac{a}{b}\left[(x+b)^2+y^2\right]+\frac{a}{c}\left[(x-c)^2+y^2\right] } \\
+= & \left(x^2+y^2+a^2-2 a y\right) \frac{a(b+c)}{a^2-b c}+\frac{a(b+c)}{b c}\left(x^2+y^2+b c\right) \\
+= & \frac{a(b+c)}{b c\left(a^2-b c\right)}\left[a^2 x^2+(a y-b c)^2+2 b c\left(a^2-b c\right)\right] \\
+\geqslant & \frac{a(b+c)}{b c\left(a^2-b c\right)} \cdot 2 b c\left(a^2-b c\right) \\
+= & 2 a(b+c)=4 \Delta .
+\end{aligned}
+$$
+从上面的证明过程可看出, 等号成立的充要条件是 $x=0$ 且 $y=\frac{b c}{a}$, 即点 $P$ 为 $\triangle A B C$ 的垂心 $\left(0, \frac{b c}{a}\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $\triangle A B C$ 和 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 的三边分别为 $a 、 b 、 c$ 及 $a^{\prime} 、 b^{\prime} 、 c^{\prime}$, 面积分别为 $F$ 和 $F^{\prime}$. 设
+$$
+\mu=\min \left\{\frac{a^2}{a^{\prime 2}}, \frac{b^2}{b^{\prime 2}}, \frac{c^2}{c^{\prime 2}}\right\}, v=\max \left\{\frac{a^2}{a^{\prime 2}}, \frac{b^2}{b^{\prime 2}}, \frac{c^2}{c^{\prime 2}}\right\},
+$$
+则对 $\mu \leqslant \lambda \leqslant v$ 有
+$$
+H \geqslant 8\left(\lambda F^{\prime 2}+\frac{1}{\lambda} F^2\right),
+$$
+其中 $H=a^{\prime 2}\left(-a^2+b^2+c^2\right)+b^{\prime 2}\left(a^2-b^2+c^2\right)+c^{\prime 2}\left(a^2+b^2-c^2\right)$.
+%%<SOLUTION>%%
+证明:由三角形面积的海伦(Heron)公式有
+$$
+\begin{gathered}
+16 F^2=\left(a^2+b^2+c^2\right)^2-2\left(a^4+b^4+c^4\right), \\
+16 F^{\prime 2}=\left(a^{\prime 2}+b^{\prime 2}+c^{\prime 2}\right)^2-2\left(a^{\prime 4}+b^{\prime 4}+c^{\prime 4}\right) .
+\end{gathered}
+$$
+令 $D_1=\sqrt{\lambda} a^{\prime 2}-\frac{a^2}{\sqrt{\lambda}}, D_2=\sqrt{\lambda} b^{\prime 2}-\frac{b^2}{\sqrt{\lambda}}, D_3=\sqrt{\lambda} c^{\prime 2}-\frac{c^2}{\sqrt{\lambda}}$, 则有恒等式
+$$
+H-8\left(\lambda F^{\prime 2}+\frac{1}{\lambda} F^2\right)=\frac{1}{2} D_1^2-D_1\left(D_2+D_3\right)+\frac{1}{2}\left(D_2-D_3\right)^2 . \label{eq1}
+$$
+注意到当 $\lambda=\mu=\frac{a^2}{a^{\prime 2}}$ 时, $D_1=0$, 因此由 式\ref{eq1} 得
+$$
+H-8\left(\frac{a^2}{a^{\prime 2}} F^{\prime 2}+\frac{a^{\prime 2}}{a^2} F^2\right)=\frac{1}{2}\left[\frac{a}{a}\left(b^{\prime 2}-c^{\prime 2}\right)-\frac{a^{\prime}}{a}\left(b^2-c^2\right)\right]^2 \geqslant 0,
+$$
+即
+$$
+\begin{aligned}
+& H \geqslant 8\left(\mu F^2+\frac{1}{\mu} F^2\right), \label{eq2}\\
+& H \geqslant 8\left(u F^{\prime 2}+\frac{1}{v} F^2\right) . \label{eq3}
+\end{aligned}
+$$
+同理对给定的 $\lambda \in[\mu, v]$, 可令
+$$
+\lambda=\theta \mu+(1-\theta)_\nu, 0 \leqslant \theta \leqslant 1 .
+$$
+因此将式\ref{eq2}、\ref{eq3}两式分别乘 $\theta$ 和 $1-\theta$ 后相加可得
+$$
+H \geqslant 8\left[\lambda F^{\prime 2}+\left(\frac{\theta}{\mu}+\frac{1-\theta}{v}\right) F^2\right], \label{eq4}
+$$
+易知
+$$
+\frac{\theta}{\mu}+\frac{1-\theta}{v} \geqslant \frac{1}{\lambda}
+$$
+因此由式\ref{eq4}便得
+$$
+H \geqslant 8\left(\lambda F^{\prime 2}+\frac{1}{\lambda} F^2\right)
+$$
+%%<REMARK>%%
+注:上例证明中的代数恒等式\ref{eq1}的发现是一个关键的难点.
+此例是陈计先生给出的著名的 Neuberg-Pedoe 不等式的一个加强.
+%%PROBLEM_END%%
+
+

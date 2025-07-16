@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题14. 我们称一个由正整数组成的无穷数列为 $\\mathrm{F}$-数列, 如果从第 3 项起, 该数列的每一项都等于它前面两项之和.\n问: 能否将正整数集分划为\n(1) 有限个;\n(2) 无穷多个\n$\\mathrm{F}-$ 数列的并?",
+    "solution": "(1) 不能.\n事实上, 若 $\\mathbf{N}^*$ 可以分划为 $m$ 个 $F-$-数列的并, 我们考虑正整数: $2 m, 2 m+1, \\cdots, 4 m$. 这 $2 m+1$ 个数中, 必有 3 个数来自同一个 $F-$ 数列.\n但是, 这 $2 m+1$ 个数中任取 3 个, 其中任意两个数之和都大于第 3 个数, 这是一个矛盾.\n(2) 我们利用正整数的 Fibonacci 表示 (见第 9 节例 2) 来证明: $\\mathbf{N}^*$ 可以分划为无穷多个 $F-$-数列的并.\n我们将在 Fibonacci 表示下,使得 $a_2=1$ 的所有正整数从小到大排在第一行; 使 $a_2=0$, 而 $a_3=1$ 的所有正整数从小到大排在第 2 行; 使 $a_2=a_3=0$, 而 $a_4=1$ 的所有正整数从小到大排在第 3 行; $\\cdots \\cdots \\cdot$,列表如下\n\\begin{tabular}{|c|c|c|c|c|c|}\n\\hline$F_2$ & $F_2+F_4$ & $F_2+F_5$ & $F_2+F_6$ & $F_2+F_4+F_6$ & $\\cdots$ \\\\\n\\hline$F_3$ & $F_3+F_5$ & $F_3+F_6$ & $F_3+F_7$ & $F_3+F_5+F_7$ & $\\cdots$ \\\\\n\\hline$F_4$ & $F_4+F_6$ & $F_4+F_7$ & $\\cdots$ & $\\cdots$ & $\\cdots$ \\\\\n\\hline$\\cdots$ & $\\cdots$ & $\\cdots$ & $\\cdots$ & $\\cdots$ & $\\cdots$ \\\\\n\\hline\n\\end{tabular}\n由 Zeckendorf 定理可知, 每一个正整数均在上表中恰好出现一次, 而该表格的每一列从上到下形成一个 $F$-数列.\n所以, (2) 的结论是肯定的.",
+    "remark": "",
+    "figures": []
+}

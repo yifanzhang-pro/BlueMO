@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 已知 $a_1^2+b_1^2=a_2^2+b_2^2=1, a_1 a_2+b_1 b_2=0$, 求证: $a_1^2+a_2^2=b_1^2+b_2^2=1$, $a_1 b_1+a_2 b_2=0$.",
+    "solution": "设 $a_1=\\sin \\alpha, b_1=\\cos \\alpha, a_2=\\sin \\beta, b_2=\\cos \\beta$, 则 $\\sin \\alpha \\sin \\beta+ \\cos \\alpha \\cos \\beta=0$, 即 $\\cos (\\alpha-\\beta)=0$. 不妨设 $\\alpha-\\beta=\\frac{\\pi}{2}$, 从而 $a_1^2+a_2^2=\\sin ^2 \\alpha+ \\sin ^2 \\beta=\\sin ^2 \\alpha+\\sin ^2\\left(\\frac{\\pi}{2}+\\alpha\\right)=1$, 同理 $b_1^2+b_2^2=1, a_1 b_1+a_2 b_2=\\sin \\alpha \\cos \\alpha+ \\sin \\beta \\cos \\beta=0$.",
+    "remark": "",
+    "figures": []
+}

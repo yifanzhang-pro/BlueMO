@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设 $a_1=2, a_{n+1}=\\frac{a_n}{2}+\\frac{1}{a_n}(n=1,2, \\cdots, 2004)$. 求证:\n$$\n\\sqrt{2}<a_{2005}<\\sqrt{2}+\\frac{1}{2005} .\n$$",
+    "solution": "证明:由平均不等式, 得\n$$\na_{2005}=\\frac{a_{2004}}{2}+\\frac{1}{a_{2004}}>2 \\sqrt{\\frac{a_{2004}}{2} \\cdot \\frac{1}{a_{2004}}}=\\sqrt{2} .\n$$\n下面证明: 对一切正整数 $n$, 有\n$$\n\\sqrt{2}<a_n<\\sqrt{2}+\\frac{1}{n} . \\label{(1)}\n$$\n当 $n=1$ 时(1)式显然成立.\n假设当 $n=k$ 时, 有 $\\sqrt{2}<a_k<\\sqrt{2}+\\frac{1}{k}$, 那么, 当 $n=k+1$ 时,\n$$\na_{k+1}=\\frac{a_k}{2}+\\frac{1}{a_k}<\\frac{\\sqrt{2}+\\frac{1}{k}}{2}+\\frac{1}{\\sqrt{2}}=\\sqrt{2}+\\frac{1}{2 k} \\leqslant \\sqrt{2}+\\frac{1}{k+1} .\n$$\n因此(1)对一切正整数 $n$ 成立, 当然对 2005 也成立.",
+    "remark": "",
+    "figures": []
+}

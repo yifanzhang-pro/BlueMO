@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题13. 已知边长分别为 $a 、 b 、 c$ 的 $\\triangle A B C$ 内接于 $\\odot O, \\odot O_1$ 内切于 $\\odot O$, 切点 $T$ 在 $B C$ 弧上, 由点 $A 、 B 、 C$ 分别引 $\\odot O_1$ 的切线长顺次为 $\\alpha 、 \\beta 、 \\lambda$. 证明: $a \\alpha=b \\beta+c \\gamma$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c6a13.png>), 设两圆相切于点 $T, A T, B T$, $C T$ 分别交小圆于 $A_1, B_1, C_1$. 则小圆与大圆关于点 $T$ 位似.\n设小圆、大圆半径之比是 $k$, 那么 $k$ 就是位似比.\n由圆幂定理: $\\alpha^2=A A_1 \\cdot A T, A T$ 与 $A_1 T$ 是位似变换 $F$ 的对应线段, 故 $A_1 T=k \\cdot A T$. 所以 $A A_1= (1-k) A T$, 即 $A T=\\frac{\\alpha}{\\sqrt{1-k}}$. 同理 $B T=\\frac{\\beta}{\\sqrt{1-k}}$, $C T=\\frac{\\gamma}{\\sqrt{1-k}}$. 由托勒密定理得 $a \\cdot A T=b \\cdot B T+c \\cdot C T$. 将三式代入得: $a \\alpha=b \\beta+c \\gamma$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6a13.png"
+    ]
+}

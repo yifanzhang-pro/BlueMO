@@ -1,0 +1,237 @@
+
+%%TEXT_BEGIN%%
+这种方法, 是先证明所求的极值存在, 然后由问题的直观性, 猜想出极值点.
+最后从反面证明函数在其他点不能达到极值: 假设函数在另外的点 $\left(x_1\right.$, $x_2, \cdots, x_n$ ) 处达到极值, 经过适当调整(常常是将小的分量变大, 大的分量变小), 发现函数在 $\left(x_1^{\prime}, x_2^{\prime}, \cdots, x_n^{\prime}\right)$ 处的值更大或更小, 从而断定它不是极值点.
+它的基本步骤是:
+证明极值存在一一猜出极值点一一证明其他点非极值点一一得出结论.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 若干个正整数之和为 1976 , 求其积的最大值.
+%%<SOLUTION>%%
+分析:看若干个数的和为 $4 、 5 、 6 、 7 、 8$ 的简单情形.
+使积最大的分拆分别为:
+$$
+4=2+2,5=2+3,6=3+3,7=2+2+3,8=2+3+3 .
+$$
+由此猜想: 要使积最大, 其分拆的和中只含有 2 和 3 , 且最多有两个 2 .
+解首先, "和"为 1976 的正整数组只有有限个, 于是, 其中必有一个正整数组使各数的积达到最大.
+不妨设使积达到最大的正整数组为 $\left(x_1, x_2, \cdots, x_n\right)$, 其中 $x_1+x_2+\cdots+ x_n=1976$. 此时, 数组的各数的积为 $P=x_1 x_2 \cdots x_n$. 我们证明, 当 $P$ 最大时, 可使所有 $x_i$ 具有如下性质:
+(1) $x_i \leqslant 3$.
+若有某个 $x_i \geqslant 4$,则将 $x_i$ 换作两个数: 2 和 $x_i-2$, 得到一个新的数组: $\left(x_1, x_2, \cdots, x_{i-1}, x_i-2,2, x_{i+1}, \cdots, x_n\right)$. 注意到 $2\left(x_i-2\right)=2 x_i-4 \geqslant x_i$, 所以,调整后 $P$ 值不减.
+(2) $x_i \neq 1$.
+若有某个 $x_i=1$, 则在数组中任取一个 $x_j$, 将 1 和 $x_j$ 换作一个数: (1+ $\left.x_j\right)$, 得到一个新的数组: $\left(x_1, x_2, \cdots, x_{j-1}, x_{j+1}, \cdots, x_n, x_j+1\right)$. 注意到 $1 \cdot x_j<1+x_j$, 所以, 调整后 $P$ 值增加.
+(3) 其中等于 2 的 $x_i$ 的个数不多于 2 .
+若有 $x_i=x_j=x_k=2$, 则将 $x_i 、 x_j 、 x_k$ 换成两个数: 3 和 3 , 得到一个新的数组.
+注意到 $2 \times 2 \times 2<3 \times 3$, 所以, 调整后 $P$ 值增加.
+由此可知, $x_i$ 为 2 或 3 , 且 2 的个数不多于 2 . 注意到 $1976=658 \times 3+2$,所以, $P$ 的最大值为 $3^{658} \times 2$.
+%%<REMARK>%%
+注:若将 1976 换作 1975 , 则由 $1975=658 \times 3+1=657 \times 3+2+2$, 知 $P$ 的最大值为 $3^{657} \times 2^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 空间有 1989 个点, 无 3 点共线, 将其分成点数互异的 30 组.
+在任何 3 个不同的组中各取一点, 以这 3 个点为顶点作三角形.
+问: 要使这种三角形的总数最大,各组的点数应为多少? 
+%%<SOLUTION>%%
+分析:觉告诉我们, 各组点数相等时, 三角形总数最大.
+但仔细阅读题目又发现, 分组要求各组点数互异, 于是想到各组点数应当充分接近.
+为了强化这一感觉, 可用特例加以印证.
+先看 10 点分为 3 组的情形.
+当各组点数分别为 $1 、 2 、 7$ 时, 三角形总数 $S=14$, 简记为 $S(1,2,7)=14$. 类似地, $S(1,3,6)=18, S(1,4,5)=20$, $S(2,3,5)=30$. 其中以 $S(2,3,5)=30$ 最大.
+对一般情形, 由上述特例可大胆猜想: 各组点数 $n_i$ 彼此接近时 $S$ 最大.
+所谓各 $n_i$ 彼此接近, 是指任意相邻两个 $n_t 、 n_{t+1}$ 相差尽可能小.
+显然, $n_t 、 n_{t+1}$ 至少相差 1 , 但能否对所有 $n_t 、 n_{t+1}$, 都有 $n_{t+1}-n_t=1$ ? 对此进行研究, 即可找到解题的途径.
+解设各组的点数分别为: $n_1<n_2<\cdots<n_{30}$, 则三角形的总数为:
+$$
+S=\sum_{1 \leqslant i<j<k \leqslant 30} n_i n_j n_k \text {, 其中 } n_1+n_2+\cdots+n_{30}=1989 .
+$$
+由于分组的方法是有限的, 从而 $S$ 存在最大值.
+若 $n_1, n_2, \cdots, n_{30}$ 使 $S$达到最大值, 不妨设 $n_1<n_2<\cdots<n_{30}$, 则 $n_1, n_2, \cdots, n_{30}$ 具有以下一些性质:
+(1)对任何 $t=1,2, \cdots, 29$, 都有 $n_{t+1}-n_t \leqslant 2$.
+实际上, 假定存在 $1 \leqslant t \leqslant 29$, 使 $n_{t+1}-n_t \geqslant 3$ (也可以不妨设 $n_2-n_1 \geqslant 3$ ).令 $n_t^{\prime}=n_t+1, n_{t+1}^{\prime}=n_{t+1}-1$, 则各组点数仍互异.
+考察:
+$$
+\begin{aligned}
+S & =\sum_{1 \leqslant i<j<k \leqslant 30} n_i n_j n_k \\
+& =n_t n_{t+1} \cdot \sum_{\substack{k \neq t, t+1 \\
+1 \leqslant k \leqslant 30}} n_k+\left(n_t+n_{t+1}\right) \cdot \sum_{\substack{j, k \neq t, t+1 \\
+1 \leqslant j<k \leqslant 30}} n_j n_k+\sum_{\substack{i, j, k \neq t, t+1 \\
+1 \leqslant i<j<k \leqslant 30}} n_i n_j n_k, \\
+S^{\prime} & =n_t^{\prime} n_{t+1}^{\prime} \cdot \sum_{\substack{k \neq t, t+1 \\
+1 \leqslant k \leqslant 30}} n_k+\left(n_t^{\prime}+n_{t+1}^{\prime}\right) \cdot \sum_{\substack{j, k \neq t, t+1 \\
+1 \leqslant j<k \leqslant 30}} n_j n_k+\sum_{\substack{i, j, k \neq t, t+1 \\
+1 \leqslant i<j<k \leqslant 30}} n_i n_j n_k,
+\end{aligned}
+$$
+因为 $n_t^{\prime}+n_{t+1}^{\prime}=n_t+n_{t+1}$, 而 $n_t^{\prime} n_{t+1}^{\prime}=n_t n_{t+1}-n_t+n_{t+1}-1>n_t n_{t+1}$, 所以
+$S^{\prime}>S$, 矛盾.
+所以 $n_{t+1}-n_t=1$ 或 2 .
+(2) 至少有一个 $t(1 \leqslant t \leqslant 29)$, 使 $n_{t+1}-n_t=2$.
+实际上, 若对所有 $t$, 都有 $n_{t+1}-n_t \neq 2$, 而由 (1), 有 $n_{t+1}-n_t \leqslant 2$, 所以 $n_{t+1}-n_t=1$, 即 $n_1, n_2, \cdots, n_{30}$ 是 30 个连续正整数, 它们的和为 15 的倍数.
+但 $\sum_{t=1}^{30} n_t=1989$ 不是 15 的倍数,矛盾.
+(3) 最多有一个 $t(1 \leqslant t \leqslant 29)$, 使 $n_{t+1}-n_t=2$.
+实际上, 若有 $s 、 t(1 \leqslant s<t \leqslant 29)$, 使 $n_{t+1}-n_t=n_{s+1}-n_s=2$, 则令 $n_s^{\prime}= n_s+1, n_{t+1}^{\prime}=n_{t+1}-1$. (最大的减小, 最小的增大), 代换后各组的点数仍互异.
+考察:
+$$
+\begin{aligned}
+S & =\sum_{1 \leqslant i<j<k \leqslant 30} n_i n_j n_k \\
+& =n_s n_{t+1} \cdot \sum_{\substack{k \neq s, t+1 . \\
+1 \leqslant k \leqslant 30}} n_k+\left(n_s+n_{t+1}\right) \cdot \sum_{\substack{j, k \neq s, t+1 \\
+1 \leqslant j<k \leqslant 30}} n_j n_k+\sum_{\substack{i, j, k \neq t, t+1 \\
+1 \leqslant i<j<k \leqslant 30}} n_i n_j n_k, \\
+S^{\prime} & =n_s^{\prime} n_{t+1}^{\prime} \cdot \sum_{\substack{k \neq t, t+1 \\
+1 \leqslant k \leqslant 30}} n_k+\left(n_s^{\prime}+n_{t+1}^{\prime}\right) \cdot \sum_{\substack{j, k \neq t, t+1 \\
+1 \leqslant j<k \leqslant 30}} n_j n_k+\sum_{\substack{i, j, k \neq t, t+1 \\
+1 \leqslant i<j<k \leqslant 30}} n_i n_j n_k,
+\end{aligned}
+$$
+因为 $n_s^{\prime}+n_{t+1}^{\prime}=n_s+n_{t+1}$, 而 $n_s^{\prime} n_{t+1}^{\prime}=n_s n_{t+1}-n_s+n_{t+1}-1>n_s n_{t+1}$, 所以 $S^{\prime}>S$, 矛盾.
+由 (2) 和 (3) 可知, 恰有一个 $t(1 \leqslant t \leqslant 29)$, 使 $n_{t+1}-n_t=2$.
+最后证明, 同时满足 (1) (2) 和 (3) 的数组: $n_1, \cdots, n_{30}$ 是唯一的.
+实际上, 不妨设 30 个数为: $n_1, n_1+1, n_1+2, \cdots, n_1+t-1, n_1+t+1$, $n_1+t+2, \cdots, n_1+30$, 那么 $n_1+\left(n_1+1\right)+\left(n_1+2\right)+\cdots+\left(n_1+t-\right.$ 1) $+\left(n_1+t+1\right)+\left(n_1+t+2\right)+\cdots+\left(n_1+30\right)=1989$.
+所以 $\left(n_1+t\right)+\left(n_1+1\right)+\left(n_1+2\right)+\cdots+\left(n_1+t-1\right)+\left(n_1+t+\right.$ 1) $+\left(n_1+t+2\right)+\cdots+\left(n_1+30\right)=1989+t$, 即 $1989+t=30 n_1+(1+ 2+\cdots+30)=30 n_1+15 \times 31$.
+所以 $1974+t=30 n_1+15 \times 30,30|1974+t, 30| 24+t$, 但 $1 \leqslant t \leqslant 29$, 所以 $t=6$.
+综上所述, 所求的各组的点数为 $51,52, \cdots, 56,58,59, \cdots, 81$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设点 $P$ 从格点 $A(1,1)$ 出发, 沿格径以最短的路线运动到点 $B(m, n)\left(m 、 n \in \mathbf{N}^*\right)$, 即每次运动到另一格点时, 横坐标或纵坐标增加 1. 求点 $P$ 经过的所有格点中两坐标乘积之和 $S$ 的最大值.
+%%<SOLUTION>%%
+分析:解设 $P$ 经过的点依次为 $P_1=A(1,1), P_2, \cdots, P_{m+n-1}=B(m, n), P_i$ 的坐标为 $\left(x_i, y_i\right)$, 则 $S=\sum_{i=1}^{m+n-1} x_i y_i$. 要使 $S$ 最大, 由直观, 应使 $x_i 、 y_i$ 尽可能接近.
+但不能对任何 $i$, 要求 $x_i=y_i$ (否则沿对角线运动). 我们猜想, 如果 $\left(x_1, y_1\right),\left(x_2, y_2\right), \cdots,\left(x_{m+n-1}, y_{m+n-1}\right)$ 使 $S$ 最大, 则对任何 $x_i<m, y_i<n$, 有 $\left|x_i-y_i\right| \leqslant 1$.
+假设存在 $i$, 使 $\left|x_i-y_i\right|>1\left(x_i<m, y_i<n\right)$, 不妨设 $x_i-y_i>1$. 此时, 自然的想法是: 将 $x_i$ 减小 1 , 将 $y_i$ 增大 1 . 也就是将点 $P_i\left(x_i, y_i\right)$ 调整为 $P_i^{\prime}\left(x_i-\right. \left.1, y_i+1\right)$, 其余点不变.
+但调整后的路线是否仍合乎条件? 显然, 要使调整后的路线仍合乎条件, 则 $P_i$ 应该满足: $P_{i-1} P_i$ 是横向边且 $P_i P_{i+1}$ 是纵向边.
+但 $P_i$ 末必满足这样的条件.
+此时, 观察路径, 发现一定有一个点 $P_t\left(x_t, y_t\right)$ 满足这样的条件, 即路径中存在这样连续三点 $P_{t-1}\left(x_{t-1}, y_{t-1}\right) 、 P_t\left(x_t, y_t\right)$ 、 $P_{t+1}\left(x_{t+1}, y_{t+1}\right)$, 使得 $P_{t-1} P_t$ 是横向边且 $P_t P_{t+1}$ 是纵向边, 且 $x_t-y_t>1$.
+实际上, 若 $P_{i-1} P_i$ 是纵向边, 则考察横坐标为 $x_i$ 且纵坐标最小的点.
+设其为 $P_t\left(x_t, y_t\right)$, 其中 $x_t=x_i, y_t<y_i$, 此时 $x_t-y_t=x_i-y_t>x_i-y_i>1$. 又因为 $x_t>1+y_t>1$, 所以到达 $P_t\left(x_t, y_t\right)$ 之前一定有横向边.
+于是由 $y_t$ 的最小性可知, $P_{t-1} P_t$ 是横向边, $P_t P_{t+1}$ 是纵向边.
+若 $P_{i-1} P_i$ 是横向边, 则考察纵坐标为 $y_i$ 且横坐标最大的点, 设为 $P_t\left(x_t, y_t\right)$, 其中 $x_t>x_i, y_t=y_i$. 此时 $x_t-y_t=x_t-y_i>x_i-y_i>1$. 又因为 $y_i<n$, 所以到达 $P_t\left(x_t, y_t\right)$ 之后一定还有纵向边.
+于是由 $x_t$ 的最大性可知, $P_t P_{t+1}$ 是纵向边, 且 $P_{t-1} P_t$ 是横向边.
+综上所述, 当路径中存在点 $P_i\left(x_i, y_i\right)$, 其中 $x_i<m, y_i<n$, 使 $x_i- y_i>1$ 时, 则一定存在这样的连续三点 $P_{t-1}\left(x_{t-1}, y_{t-1}\right) 、 P_t\left(x_t, y_t\right)$ 、 $P_{t+1}\left(x_{t+1}, y_{t+1}\right)$, 使得 $P_{t-1} P_t$ 是横向边且 $P_t P_{t+1}$ 是纵向边, 且 $x_t-y_t>1$. 于是, 用 $P_t^{\prime}\left(x_t-1, y_t+1\right)$ 代替 $P_t\left(x_t, y_t\right)$, 得到的路径仍合乎要求.
+但 $\left(x_t-1\right) \left(y_t+1\right)=x_t y_t+x_t-y_t-1>x_t y_t$. 所以调整后 $S$ 的值增加, 矛盾.
+由上可知, 对路径中的任何一个点 $P_i\left(x_i, y_i\right)$, 若 $x_i \neq y_i$, 则从 $P_i\left(x_i, y_i\right)$ 出发的边是唯一的,下一个点是将 $P_i\left(x_i, y_i\right)$ 的坐标中较小的一个增加 1 . 而 $x_i=y_i$ 时, 则从 $P_i\left(x_i, y_i\right)$ 出发的边有两种选择,下一个点是将 $P_i\left(x_i, y_i\right)$ 的横坐标或纵坐标增加 1 . 于是, 当 $m \geqslant n$ 时, 其路径为:
+$$
+\begin{aligned}
+& A(1,1) \rightarrow P_2(2,1) \text { 或 } P_2(1,2) \rightarrow P_3(2,2) \rightarrow P_4(2,3) \text { 或 } P_4(3,2) \rightarrow \\
+& P_5(3,3) \rightarrow \cdots \rightarrow P_{2 n-1}(n, n) \rightarrow P_{2 n}(n+1, n) \rightarrow P_{2 n+1}(n+2, n) \rightarrow \cdots \rightarrow \\
+& P_{m+n-1}(m, n) . \\
+& \quad \text { 此时, } \quad S_{\max }=\sum_{i=1}^n i^2+\sum_{i=1}^{n-1} i(i+1)+n \sum_{i=1}^{m-n}(n+i) \\
+& =\frac{1}{6} n\left(3 m^2+n^2+3 m-1\right) .
+\end{aligned}
+$$
+当 $m<n$ 时, 同样可得 $S_{\text {max }}=\frac{1}{6} m\left(3 n^2+m^2+3 n-1\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. IMO 太空站由 99 个空间站组成,任两个空间站之间有管形通道相连.
+规定其中 99 条通道为双向通行的主干道, 其余通道严格单向通行.
+如果某 4 个空间站可以通过它们之间的通道从其中任一站到达另外任一站, 就称这些站组成的集合为一个互通四站组.
+试求互通四站组个数的最大值, 并证明你的结论.
+%%<SOLUTION>%%
+分析:解由正面求 "四通组" 的个数是比较困难的, 因为其条件较为苛刻.
+而满足非互通的四站组的条件相对较易.
+比如, 想象一个空间站 "无回路" 即可.
+由此想到考察从一点引出的所有单向通道, 每 3 条这样的通道对应一个非互通的四站组.
+当然,还可能有其他的非互通的四站组, 但那些非互通的四站组并非必定存在, 也就是说, 也许可以选择一个方案, 使那些非互通的四站组的个数为零, 从而可以略去这些非互通的四站组的个数估计.
+假设 99 个空间站为 $A_1, A_2, \cdots, A_{99}$, 由 $A_i$ 出发的单向通道条数、指向 $A_i$ 的单向通道条数、通过 $A_i$ 的主干道条数分别为 $w_i 、 l_i 、 k_i$. 由条件, 有 $w_i+l_i+k_i=98$, 且 $k_1+\cdots+k_{99}=198, w_1+\cdots+w_{99}=l_1+\cdots+l_{99}$, 于是
+$$
+\begin{aligned}
+\sum_{i=1}^{99} w_i & =\sum_{i=1}^{99} l_i=\frac{1}{2} \sum_{i=1}^{99}\left(w_i+l_i\right) \\
+& =\frac{1}{2} \sum_{i=1}^{99}\left(w_i+l_i+k_i\right)-\frac{1}{2} \sum_{i=1}^{99} k_i=4752 .
+\end{aligned}
+$$
+因为 $A_i$ 引出 $w_i$ 条单向通道, 其中任何 3 条组成一个输出型三面角, 这个三面角的四个顶点是一个不互通四站组,而且同一个不互通的四站组不可能包含两个输出三面角, 所以非互通四站组的数目 $S \geqslant \sum_{i=1}^{99} \mathrm{C}_{w_i}^3$.
+下面求 $\sum_{i=1}^{99} \mathrm{C}_{w_i}^3$ 的最小值.
+方法 1: 首先, 由于满足 $w_1+\cdots+w_{99}=4752$ 的数组 $\left(w_1, \cdots, w_{99}\right)$ 只有有限个, 从而最小值一定存在.
+其次, 从直观猜测, 当 $w_1=\cdots=w_{99}=48$ 时, $\sum_{i=1}^{99} \mathrm{C}_{w_i}^3$ 最小.
+反设结论不然, 则必有一个 $i$, 使 $w_i<48$, 也必有一个 $j$, 使 $w_j>$ 48. 将 $w_i$ 改为 $w_i+1, w_j$ 改为 $w_j^{--1}$, 得到一个新的数组, 由于
+$$
+\begin{aligned}
+\mathrm{C}_{w_i}^3+\mathrm{C}_{w_j}^3-\mathrm{C}_{w_i+1}^3-\mathrm{C}_{w_j-1}^3 & =\frac{1}{2}\left(w_j-1\right)\left(w_j-2\right)-\frac{1}{2} w_i\left(w_i-1\right) \\
+& >0\left(\text { 因为 } w_j-1>w_i\right),
+\end{aligned}
+$$
+所以新数组对应的和式比原数组小, 矛盾.
+于是 $\sum_{i=1}^{99} \mathrm{C}_{w_i}^3$ 的最小值为 $99 \mathrm{C}_{48}^3$, 从而互通的四站组不多于 $C_{99}^4-99 C_{48}^3=2052072$.
+方法 2: 由幕平均不等式, 有
+$$
+\begin{gathered}
+\sum_{i=1}^{99} w_i^3 \geqslant \frac{1}{\sqrt{99}}\left(\sum_{i=1}^{99} w_i^2\right)^{\frac{3}{2}}, \\
+\sum_{i=1}^{99} \mathrm{C}_{w_i}^3=\frac{1}{6} \sum_{i=1}^{99} w_i^3-\frac{1}{2} \sum_{i=1}^{99} w_i^2+\frac{1}{3} \sum_{i=1}^{99} w_i \\
+\geqslant \frac{1}{6 \sqrt{99}}\left(\sum_{i=1}^{99} w_i^2\right)^{\frac{3}{2}}-\frac{1}{2} \sum_{i=1}^{99} w_i^2+\frac{1}{3} \times 4752 .
+\end{gathered}
+$$
+注意到
+$$
+\frac{1}{6 \sqrt{99}} x^{\frac{3}{2}}-\frac{1}{2} x=\frac{1}{6} x\left(\sqrt{\frac{x}{99}}-3\right)
+$$
+严格递增, 且
+$$
+\sum_{i=1}^{99} w_i^2 \geqslant \frac{1}{99}\left(\sum_{i=1}^{99} w_i\right)^2=228096,
+$$
+故
+$$
+\begin{aligned}
+\sum_{i=1}^{99} \mathrm{C}_{w_i}^3 & \geqslant \frac{1}{6 \sqrt{99}} \times 228096^{\frac{3}{2}}-\frac{1}{2} \times 228096+\frac{1}{3} \times 4752 \\
+& =1712304,
+\end{aligned}
+$$
+从而互通四站组的数目不多于 $\mathrm{C}_{99}^4-1712304=2052072$.
+下面证明等号可以成立.
+先将所有通道设成单向,方向如下规定: 对 $i< j$, 若 $i, j$ 同奇偶, 则由 $A_i$ 指向 $A_j$, 否则 $A_j$ 指向 $A_i$. 此时每个点恰发出 49 条单向通道.
+现将 99 条通道 $A_i A_{i+1}\left(i=1,2, \cdots, 99, A_{100}=A_1\right)$ 改为双向通道, 则每个点发出和进人的单向通道恰有一条被改为双向通道, 故 $w_i=l_i=48(i= 1,2, \cdots, 99)$. 故有中心的四站组个数为 $99 \mathrm{C}_{48}^3=1712304$.
+下面证明每一非互通四站组都有一个中心 (向其他三点引出单向通道的点). 事实上, 设 $\left(A_i, A_j, A_k, A_t\right.$ ) 是任意一个无中心的非互通四站组 (以下仅用 $i$ 代表 $A_i$ ), 若其中有一条双向通道 $i j$, 则 $i k$ 和 $j k$ 不可能都由 $k$ 发出, 或都指向 $k$ (若 $j=i+1$ 或 $j=i-1$, 则 $k$ 要么比 $i 、 j$ 都大, 要么都小, 而 $i 、 j$ 不同奇偶; 若 $\{i, j\}=\{1,99\}$, 则 $i, j$ 同奇偶, 但 $k$ 比一个大, 比另一个小), 对 $t$
+也一样, 故 $i j k t$ 是互通的,矛盾.
+故其中无双向通道.
+由于 $i j k t$ 不互通, 故其中有一个站(设为 $i$ ), 它和其余三个站之间的通道都是单向的, 而且都指向 $i$. 故 $j 、 k 、 t$ 只有两种情况: 要么比 $i$ 小且与 $i$ 同奇偶 (称为 $I$ 型), 要么比 $i$ 大且奇偶性不同 (称为 II 型). 如果 $j 、 k 、 t$ 都为 I 型, 则 $j 、 k 、 t$ 同奇偶, 故其中最小的是 ( $i j k t)$ 的一个中心, 矛盾.
+如果 $j 、 k 、 t$ 都为 II 型, 则 $j 、 k 、 t$ 中最小的是 $(i j k t)$ 的一个中心, 矛盾.
+如果 $j 、 k 、 t$ 中有两个, 比如 $j 、 k$, 为 I 型, 则 $t$ 比 $j$ 、 $k$ 都大且不同奇偶, 故 $t$ 是 ( $i j k t$ ) 的中心, 矛盾.
+如果 $j 、 k 、 t$ 中有一个, 比如 $j$, 为 I 型, 则 $k 、 t$ 比 $i 、 j$ 大且不同奇偶, 故 $k 、 t$ 中必有一个为中心,矛盾.
+这就证明了每个非互通四站组必有中心.
+于是, 非互通四站组共有 1712304 个, 从而互通四站组有 2052072 个.
+综上所述,所求最大值为 2052072 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 将 2006 表示成 5 个正整数 $x_1, x_2, x_3, x_4, x_5$ 之和, 记 $S= \sum_{1 \leqslant i<j \leqslant 5} x_i x_j$. 问:
+(1)当 $x_1, x_2, x_3, x_4, x_5$, 取何值时, $S$ 取到最大值;
+(2) 进一步地, 若对任意 $1 \leqslant i, j \leqslant 5$, 有 $\left|x_i-x_j\right| \leqslant 2$, 则当 $x_1, x_2, x_3$, $x_4, x_5$ 取何值时, $S$ 取到最小值, 说明理由.
+%%<SOLUTION>%%
+解:(1) 首先这样的 $S$ 的值是有界集, 故必存在最大值与最小值.
+若 $x_1+x_2+x_3+x_4+x_5=2006$, 且使 $S=\sum_{1 \leqslant i<j \leqslant 5} x_i x_j$ 取到最大值, 则必有
+$$
+\left|x_i-x_j\right| \leqslant 1(1 \leqslant i, j \leqslant 5) . \label{eq1}
+$$
+事实上,假设 式\ref{eq1} 不成立, 不妨假设 $x_1-x_2 \geqslant 2$.
+则令 $x_1^{\prime}=x_1-1, x_2^{\prime}=x_2+1, x_i^{\prime}=x_i(i=2,3,4)$, 有 $x_1^{\prime}+x_2^{\prime}=x_1+ x_2, x_1^{\prime} \cdot x_2^{\prime}=\left(x_1-1\right)\left(x_2+1\right)=x_1 x_2+x_1-x_2-1>x_1 x_2$.
+将 $S$ 改写成
+$$
+S=\sum_{1 \leqslant i<j \leqslant 5} x_i x_j=x_1 x_2+\left(x_1+x_2\right)\left(x_3+x_4+x_5\right)+x_3 x_4+x_3 x_5+x_4 x_5,
+$$
+同时有 $S^{\prime}=x_1^{\prime} x_2^{\prime}+\left(x_1^{\prime}+x_2^{\prime}\right) .\left(x_3+x_4+x_5\right)+x_3 x_4+x_3 x_5+x_4 x_5$.
+于是有 $S^{\prime}-S=x_1^{\prime} x_2^{\prime}-x_1 x_2>0$, 这与 $S$ 在 $x_1, x_2, x_3, x_4, x_5$ 时取到最大值矛盾, 所以必有 $\left|x_i-x_j\right| \leqslant 1(1 \leqslant i, j \leqslant 5)$. 因此当 $x_1=402, x_2= x_3=x_4=x_5=401$ 时 $S$ 取到最大值.
+(2) 当 $x_1+x_2+x_3+x_4+x_5=2006$ 且 $\left|x_i-x_j\right| \leqslant 2(1 \leqslant i, j \leqslant 5)$ 时, 只有如下这三种情形满足要求:
+(I) 402, 402, 402, 400, 400;
+(II) 402, 402, 401, 401, 400;
+(III) 402, 401,401,401,401.
+而后两种情形是在第一种组情形下作调整: $x_i^{\prime}=x_i-1, x_j^{\prime}=x_j+1$ 而得到的, 根据 (1) 的证明可知, 每调整一次, 和式 $S=\sum_{1 \leqslant i<j \leqslant 5} x_i x_j$ 变大, 所以 $S$ 在 $x_1=x_2=x_3=402, x_4=x_5=400$ 时取到最小值.
+%%PROBLEM_END%%
+
+

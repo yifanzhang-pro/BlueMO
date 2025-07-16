@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例6.  4 个实数 $a 、 b 、 c 、 d$ 满足:\n(1) $a \\geqslant b \\geqslant c \\geqslant d$;\n(2) $a+b+c+d=9$;\n(3) $a^2+b^2+c^2+d^2=21$.\n求证: $a b-c d \\geqslant 2$.",
+    "solution": "证明:若 $a+b<5$, 则 $4<c+d \\leqslant a+b<5$, 于是\n$$\n\\begin{aligned}\n(a b+c d)+(a c+b d)+(a d+b c) & =\\frac{(a+b+c+d)^2-\\left(a^2+b^2+c^2+d^2\\right)}{2} \\\\\n& =30,\n\\end{aligned}\n$$\n而 $a b+c d \\geqslant a c+b d \\geqslant a d+b c(\\Leftrightarrow(a-d)(b-c) \\geqslant 0,(a-b)(c-d) \\geqslant 0)$, 所以\n$$\na b+c d \\geqslant 10 .\n$$\n由 $0 \\leqslant(a+b)-(c+d)<1$ 知\n$$\n(a+b)^2+(c+d)^2-2(a+b)(c+d)<1,\n$$\n又由题设知 $(a+b)^2+(c+d)^2+2(a+b)(c+d)=9^2$ ,\n上面两式相加得 $\\quad(a+b)^2+(c+d)^2<41$.\n故\n$$\n\\begin{aligned}\n41 & =21+2 \\times 10 \\leqslant\\left(a^2+b^2+c^2+d^2\\right)+2(a b+c d) \\\\\n& =(a+b)^2+(c+d)^2<41,\n\\end{aligned}\n$$\n矛盾! 所以, $a+b \\geqslant 5$.\n于是\n$$\na^2+b^2+2 a b \\geqslant 25=4+\\left(a^2+b^2+c^2+d^2\\right) \\geqslant 4+a^2+b^2+2 c d,\n$$\n即 $a b-c d \\geqslant 2$.",
+    "remark": "",
+    "figures": []
+}

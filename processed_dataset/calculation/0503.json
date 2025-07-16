@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例14 设 $x, y \\in \\mathbf{R}^{+}, x+y=c, c$ 为常数且 $c \\in(0,2]$, 求 $u=\\left(x+\\frac{1}{x}\\right)\\left(y+\\frac{1}{y}\\right)$ 的最小值.",
+    "solution": "解:$u=\\left(x+\\frac{1}{x}\\right)\\left(y+\\frac{1}{y}\\right)=x y+\\frac{1}{x y}+\\frac{x}{y}+\\frac{y}{x} \\geqslant x y+\\frac{1}{x y}+2$.\n令 $x y=t$, 则 $0<t=x y \\leqslant \\frac{(x+y)^2}{4}=\\frac{c^2}{4}$. 设\n$$\nf(t)=t+\\frac{1}{t}, 0<t \\leqslant \\frac{c^2}{4} .\n$$\n由于 $0<c \\leqslant 2$, 所以 $\\frac{c^2}{4} \\leqslant 1$. 于是函数 $f(t)$ 在 $\\left(0, \\frac{c^2}{4}\\right]$ 上是单调递减的, 所以\n$$\n\\begin{gathered}\nf_{\\min }(t)=f\\left(\\frac{c^2}{4}\\right)=\\frac{c^2}{4}+\\frac{4}{c^2} . \\\\\nu \\geqslant \\frac{c^2}{4}+\\frac{4}{c^2}+2 .\n\\end{gathered}\n$$\n故当 $x=y=\\frac{c}{2}$ 时, 等号成立.\n所以 $u$ 的最小值为 $\\frac{c^2}{4}+\\frac{4}{c^2}+2$.",
+    "remark": "",
+    "figures": []
+}

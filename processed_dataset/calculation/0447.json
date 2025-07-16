@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise18.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 解方程组 $\\sum_{i=1}^n x_i^k=n(k=1,2, \\cdots, n)$.",
+    "solution": "当 $n=1$ 时,就一个方程,显然解为 $x_1=1$.\n以下不妨设 $n \\geqslant 2$. 此时构造函数\n$$\nf(t)=\\left(t-x_1\\right)\\left(t-x_2\\right) \\cdots\\left(t-x_n\\right)=t^n+a_1 t^{n-1}+a_2 t^{n-2}+\\cdots+a_{n-1} t+a_n .\n$$\n则 $f\\left(x_1\\right)=f\\left(x_2\\right)=\\cdots=f\\left(x_n\\right)=0$. 而另一方面,结合原方程组可得\n$$\n\\begin{aligned}\n\\sum_{i=1}^n f\\left(x_i\\right) & =\\sum_{i=1}^n x_i^n+a_1 \\sum_{i=1}^n x_i^{n-1}+a_2 \\sum_{i=1}^n x_i^{n-2}+\\cdots+a_{n-1} \\sum_{i=1}^n x_i+a_n \\sum_{i=1}^n 1 \\\\\n& =n+a_1 n+a_2 n+\\cdots+a_{n-1} n+a_n n=n f(1),\n\\end{aligned}\n$$\n对照可得 $f(1)=0$, 这说明 $x_1, x_2, \\cdots, x_n$ 中有一个为 1 , 不妨设 $x_n=1$, 则剩下的未知数 $x_1, x_2, \\cdots, x_{n-1}$ 满足方程组 $\\sum_{i=1}^{n-1} x_i^k=n-1(k=1,2, \\cdots, n)$. 以此类推可得所有的 $x_i=1$. 从而原方程组的解为 $x_1=x_2=\\cdots=x_n=1$.",
+    "remark": "",
+    "figures": []
+}

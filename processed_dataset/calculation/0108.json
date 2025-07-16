@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题3 用 $2 、 4 、 6$ 三个数字来构造六位数, 但是不允许有两个连着的 2 出现在六位数中 (例如 626442 是允许的, 226 426 就不允许), 问这样的六位数共有多少个?",
+    "solution": "六位数中不可能出现 4 个或 4 个以上的 2 . 符合要求的六位数中, 不含 2 的有 $2^6$ 个,恰含 1 个 2 的有 $6 \\cdot 2^5$ 个, 恰含 2 个 2 的有 $2^4 \\cdot \\mathrm{C}_5^2$ 个, 恰含 3 个 2的有 $2^3 \\cdot \\mathrm{C}_4^3$ 个.\n共有 448 个.",
+    "remark": "",
+    "figures": []
+}

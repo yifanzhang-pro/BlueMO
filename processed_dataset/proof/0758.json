@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 设 $H$ 是锐角三角形 $A B C$ 的垂心, 由 $A$ 向以 $B C$ 为直径的圆作切线 $A P$, $A Q$, 切点分别为 $P, Q$. 求证: $P, H, Q$ 三点共线.",
+    "solution": "本题是一个平面几何题, 可以用纯几何的方法加以证明, 如图(<FilePath:./images/volume14/figures/fig-c10a8.png>),这里, 我们用解析法给出一个证明.\n以直线 $B C$ 为 $x$ 轴, 线段 $B C$ 的垂直平分线为 $y$ 轴建立直角坐标系, 设三角形 $A B C$ 的三个顶点的坐标分别为 $A(a, b), B(-r, 0), C(r, 0)$, 其中 $r$ 是圆 $O$ 的半径, 如图所示.\n于是, 圆 $O$ 的方程为 $x^2+y^2=r^2$.\n设点 $P 、 Q$ 的坐标分别为 $P\\left(x_1, y_1\\right) 、 Q\\left(x_2, y_2\\right)$, 则切线 $A P 、 B P$ 的方程为 $x x_1+y y_1=r^2$ 与 $x x_2+y y_2=r^2$, 因为这两条切线都过 $A$ 点, 所以 $a x_1+ b y_1=r^2, a x_2+b y_2=r^2$, 即 $P, Q$ 都在直线 $a x+b y=r^2$ 上, 此即直线 $P Q$ 的方程.\n设 $B F$ 与 $C E$ 是三角形 $A B C$ 的两条高, 因为直线 $A C$ 的斜率为 $\\frac{b}{a-r}$, 所以直线 $B F$ 的斜率为 $\\frac{r-a}{b}$, 故直线 $B F$ 的方程为 $y=\\frac{r-a}{b}(x+r)$, 即\n$$\n(a-r) x+b y=r^2-a r ; \\label{eq1}\n$$\n同理可得, 直线 $C E$ 的方程为\n$$\n(a+r) x+b y=r^2+a r . \\label{eq2}\n$$\n由 式\\ref{eq1} + \\ref{eq2}, 得\n$$\na x+b y=r^2, \\label{eq3}\n$$\n即点 $H$ 的坐标满足方程.\n而 式\\ref{eq3} 就是直线 $P Q$ 的方程, 所以, $P, H, Q$ 三点共线.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c10a8.png"
+    ]
+}

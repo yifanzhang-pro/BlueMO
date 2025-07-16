@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter15.tex",
+    "problem_type": "calculation",
+    "problem": "例6. 设 $A$ 为平面内一个有限点集, 现将 $A$ 中每个点染成三种颜色之一使得两个同色点所连线段上恰有一个另外颜色的点, 试求 $A$ 中所含点数的最大值.",
+    "solution": "解:如图(<FilePath:./images/volume11/figures/fig-c15i2.png>), 存在含 6 个点的集合 $A=\\left\\{A_1, A_2, A_3, A_4, A_5, A_6\\right\\}$ 满足题目条件,其中 $A_1, A_4$ 为红色, $A_2, A_5$ 为蓝色, $A_3, A_6$ 为黄色.\n其次,如果存在点数不少于 7 的点集 $A$ 满足题目的条件, 那么由抽㞕原理知其中必有 $\\left[\\frac{7-1}{3}\\right]+1=3$ 个点同色, 并且它们不共线.\n(否则,不妨设 $A_1, A_2, A_3$ 同色且依次在一条直线上, 则由已知条件知 $A_1$ 与 $A_2$ 之间有异色点 $B, A_2$ 与 $A_3$ 之间有异色点 $C$, 于是 $A_1$ 与 $A_3$ 之间有 2 个异色点 $B$ 和 $C$, 这与已知条件矛盾!). 从而存在一个 3 个顶点同色的三角形.\n考察所有以 $A$ 中点为顶点且 3 个顶点同色的三角形, 因其个数有限, 故其中必有一个 $\\triangle A_1 A_2 A_3$, 它的 3 个顶点同色 (不妨设为红色, 用\"・\"表示) 且它的面积最小.\n由已知条件知 $\\triangle A_1 A_2 A_3$ 的每条边上必有一个不同于红色的点, 若这 3 点同色, 则以它们为顶点的三角形面积小于 $\\triangle A_1 A_2 A_3$ 的面积, 这与假设矛盾.\n故这 3 点不能全同色, 不如设 $B_1, B_2$ 为蓝色 (用\".\"表示), $B_3$ 为黄色 (用 \"×\" 表示), 如图(<FilePath:./images/volume11/figures/fig-c15i3.png>) 所示.\n若线段 $B_1 B_2$ 上的异色点 $T$ 为红色, 则 $S_{\\triangle T A_2 A_3}<S_{\\triangle A_1 A_2 A_3}$, 矛盾! 又同色的三个点不共线, 故 $T$ 为黄色.\n若连线 $T B_3$ 的异色点 $S$ 为红色, 则 $S_{\\triangle S A_2 A_3}<S_{\\triangle A_1 A_2 A_3}$, 矛盾! 又 $S$ 不能为黄色, 故 $S$ 为蓝色, 于是 $S_{\\triangle S B_1 B_2}<S_{\\triangle A_1 A_2 A_3}$, 矛盾! 因此, $A$ 中的点数不小于 7 是不正确的.\n综上可知, $A$ 中所含点数的最大值为 6 .",
+    "remark": "",
+    "figures": [
+        "./images/volume11/figures/fig-c15i2.png",
+        "./images/volume11/figures/fig-c15i3.png"
+    ]
+}

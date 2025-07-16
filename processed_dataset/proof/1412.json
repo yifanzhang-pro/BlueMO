@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设实数 $a 、 b$ 满足 $a b>0$, 求证: $\\sqrt[3]{\\frac{a^2 b^2(a+b)^2}{4}} \\leqslant \\frac{a^2+10 a b+b^2}{12}$, 并确定等号成立的条件.\n般地,对任意实数 $a 、 b$, 求证:\n$$\n\\sqrt[3]{\\frac{a^2 b^2(a+b)^2}{4}} \\leqslant \\frac{a^2+a b+b^2}{3} .\n$$",
+    "solution": "(1) 设 $a b=x>0, a+b=y$, 则 $y^2 \\geqslant 4 x$. 因此不等式右端 $=\\frac{y^2+8 x}{12}= \\frac{y^2}{12}+\\frac{x}{3}+\\frac{x}{3} \\geqslant 3 \\cdot \\sqrt[3]{\\frac{x^2 y^2}{12 \\cdot 3^2}}=\\sqrt[3]{\\frac{x^2 y^2}{4}}=$ 左边, 故不等式成立, 且当 $a=b$ 时等号才成立.\n(2)当 $x \\geqslant 0$ 时, 由于 $\\frac{y^2+8 x}{12} \\leqslant \\frac{y^2-x}{3}$, 结论仍成立.\n此时等号成立, 仅当 $a=b$;\n当 $x<0$ 时, $-x>0$, 故不等式右端 $=\\frac{y^2-x}{3}=\\frac{y^2}{3}-\\frac{x}{6}-\\frac{x}{6} \\geqslant 3$. $\\sqrt[3]{\\frac{y^2}{3} \\cdot\\left(-\\frac{x}{6}\\right)^2}=\\sqrt[3]{\\frac{x^2 y^2}{4}}$, 所以不等式也成立, 此时等号当 $b=-2 a$ 或 $a= -2 b$ 时取到.",
+    "remark": "",
+    "figures": []
+}

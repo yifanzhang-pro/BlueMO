@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 已知 $y=\\frac{x^2}{10}-\\frac{x}{10}+\\frac{9}{5}$, 且 $y \\leqslant|x|$, 求 $x$ 的取值范围.",
+    "solution": "分析:为了去掉 $y \\leqslant|x|$ 中 $|x|$ 的绝对值符号, 自然要对 $x$ 进行分类: 当 $x \\geqslant 0$ 时, $y \\leqslant x$; 当 $x<0$ 时, $y \\leqslant-x$. 由此知, 本题应分两种情况讨论.\n解当 $x \\geqslant 0$ 时, 有 $y \\leqslant x$. 即亦即\n$$\n\\begin{aligned}\n& \\frac{x^2}{10}-\\frac{x}{10}+\\frac{9}{5} \\leqslant x, \\\\\n& (x-2)(x-9) \\leqslant 0 .\n\\end{aligned}\n$$\n解得 $2 \\leqslant x \\leqslant 9$.\n当 $x<0$ 时, 有 $y \\leqslant-x$. 即\n$$\n\\begin{aligned}\n& \\frac{x^2}{10}-\\frac{x}{10}+\\frac{9}{5} \\leqslant-x, \\\\\n& (x+3)(x+6) \\leqslant 0 .\n\\end{aligned}\n$$\n解得 $-6 \\leqslant x \\leqslant-3$.\n综上,所求 $x$ 的取值范围为 $[-6,-3] \\cup[2,9]$.\n说明以上解答是以绝对值的定义为标准进行分类的.\n注意不要漏掉了 $x=0$ 的情形,这里我们是将 $x=0$ 与 $x>0$ 并在一起考虑的,但并非任何时候都可以这么做!",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题11 在平面上任给 $2 n$ 个点, 其中任意三点不共线, 并把其中 $n$ 个点染成红色, $n$ 个点染成蓝色.\n求证: 可以一红一蓝地把它们连成 $n$ 条线段,使这些线段互不相交.",
+    "solution": "因为总共只有 $2 n$ 个点, 将红点与蓝点一一配对的方法只有有限种.\n对于每一种配对方法, 都会得到这 $n$ 条线段的长度和, 这种和数只有有限个(其实不超过 $1 \\cdot 2 \\cdot \\cdots \\cdot n$ 个), 其中必有一个是最小的.\n下面来证明, 这时候这 $n$ 条线段是互不相交的.\n假定此时有两条线段 $R_1 B_1$ 和 $R_2 B_2$ 相交, 其中 $R_1 、 R_2$ 是红点, $B_1 、 B_2$ 是蓝点, 设它们的交点为 $P$ (如图(<FilePath:./images/volume1/figures/fig-c8p11.png>)). 由于 $R_1 B_2+R_2 B_1<\\left(R_1 P+P B_2\\right)+\\left(R_2 P+P B_1\\right)= R_1 B_1+R_2 B_2$, 所以, 当我们将 $R_1$ 与 $B_2$ 配对, $R_2$ 与 $B_1$ 配对, 其他的保持不变时, $n$ 条线段的长度和就减少了, 矛盾.\n因此, 这时候 $n$ 条线段是互不相交的.",
+    "remark": "",
+    "figures": [
+        "./images/volume1/figures/fig-c8p11.png"
+    ]
+}

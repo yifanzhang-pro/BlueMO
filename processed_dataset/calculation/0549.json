@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例23 设 $f: \\mathbf{Q}^{+} \\rightarrow \\mathbf{Q}^{+}$( $\\mathbf{Q}^{+}$为正有理数的全体) 满足\n$$\nf(x)=f(x f(y)) y . \\quad\\quad (1)\n$$\n试求其一个解.",
+    "solution": "解:在(1)中取 $x=y=1$, 得 $f(1)=f(f(1))$.\n在(1)中取 $y=f(1)$, 得\n$$\n\\begin{aligned}\nf(x) & =f(x f(f(1))) f(1)=f(x f(1)) f(1) \\\\\n& =f(x) f(1) .\n\\end{aligned}\n$$\n于是 $f(1)=1$. 因此, 再从 (1) 中取 $x=1$, 得\n$$\ny f(f(y))=f(1)=1 . \\quad\\quad (2)\n$$\n另外,从(1)中取 $y=f(t)$, 得\n$$\nf(x)=f(t) f(x f(f(t)))=f(t) f\\left(\\frac{x}{t}\\right) .\n$$\n继续取 $x=s t$, 得\n$$\nf(s t)=f(t) f(s) . \\quad\\quad (3)\n$$\n显然, 若 $f(x)$ 满足 (2) 和 (3), 则 $f(x)$ 也必满足(1). 事实上, $f(x f(y))=f(x) f(f(y))=\\frac{f(x)}{y}$. 我们利用这一充要条件 (2) 和 (3) 来构造解.\n首先, 当 $x$ 为素数时构造 $f(x)$. 记 $p_k$ 是从小到大的第 $k$ 个素数.\n令\n$$\nf\\left(p_k\\right)= \\begin{cases}p_{k+1}, & \\text { 当 } k=2 m+1, m=0,1,2, \\cdots \\text { 时； } \\\\ \\frac{1}{p_{k-1}}, & \\text { 当 } k=2 m, m=1,2, \\cdots \\text { 时.\n}\\end{cases}\n$$\n它显然满足(2).\n其次,对任意正整数 $x$ 定义 $f(x)$. 令 $x=p_1^{\\alpha_1} p_2^{\\alpha_2} \\cdots p_s^{\\alpha_s}$, 其中 $\\alpha_1, \\alpha_2, \\cdots, \\alpha_s$ 是非负整数.\n由(3), 得\n$$\nf(x)=\\left(f\\left(p_1\\right)\\right)^{\\alpha_1}\\left(f\\left(p_2\\right)\\right)^{a_2 \\cdots\\left(f\\left(p_s\\right)\\right)^{a_s} .} \n$$\n最后, 对任意正有理数 $x$, 即 $x=\\frac{n}{m} \\in \\mathbf{Q}^{+}$, 其中 $m, n \\in \\mathbf{N}_{+}$.\n由(3), 得\n$$\n\\begin{gathered}\nf(n)=f(m x)=f(m) f(x) . \\\\\nf(x)=\\frac{f(n)}{f(m)} .\n\\end{gathered}\n$$\n从而这样, 最终我们给出了原函数方程在 $\\mathbf{Q}^{+}$上的一个解.",
+    "remark": "",
+    "figures": []
+}

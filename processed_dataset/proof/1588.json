@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题14. 设 $m 、 n \\in \\mathbf{N}^*$, 记 $S_m(n)=\\sum_{k=1}^n\\left[\\sqrt[k^2]{k^m}\\right]$. 证明:\n$$\nS_m(n) \\leqslant n+m\\left(\\sqrt[4]{2^m}-1\\right) .\n$$\n这里 $[x]$ 表示不超过 $x$ 的最大整数.",
+    "solution": "当 $n \\leqslant m$ 时, 通过对正整数 $k$ 归纳, 易证 $k^4 \\leqslant 2^{k^2}$, 于是 $\\sqrt[k^2]{k^m} \\leqslant \\sqrt[4]{2^m}$, 这时 $S_m(n) \\leqslant \\sum_{k=1}^n k^{\\frac{m}{2}}=n+\\sum_{k=1}^n\\left(k^{\\frac{m}{2}}-1\\right) \\leqslant n+\\sum_{k=1}^n\\left(k k^{\\frac{m}{2}}-1\\right) \\leqslant n+m\\left(2^{\\frac{m}{4}}-\\right.$ 1), 原不等式成立.\n当 $n>m$ 时,注意到, 对任意 $k \\in \\mathbf{N}^*, k>m$,均有\n$$\n1<k^{\\frac{m}{k^2}}<k^{\\frac{1}{k}}<2\n$$\n这里 $k^{\\frac{1}{k}}<2$ 等价于 $k<2^k$, 它可通过对 $k$ 归纳予以证明.\n于是 $S_m(n+1)= S_m(n)+1$, 依此结合 $n \\leqslant m$ 时不等式成立, 及数学归纳法, 可知对任意 $m 、 n \\in \\mathbf{N}^*$, 均有 $S_m(n) \\leqslant n+m\\left(\\sqrt[4]{2^m}-1\\right)$.",
+    "remark": "",
+    "figures": []
+}

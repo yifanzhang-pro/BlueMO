@@ -1,0 +1,13 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例5. 证明: 任何一个三角形可以被分割成三个多边形(包括三角形), 其中之一为钝角三角形, 且能重新拼为一个矩形 (多边形允许被翻转).",
+    "solution": "解:若 $\\triangle A B C$ 为等腰三角形(如图(<FilePath:./images/volume1/figures/fig-c7e5-1.png>)), 且 $A B=A C$, 则取底边中点 $D$ 和底边另一点 $E$, 连结顶点和底边上这两个点, 把三角形分为三部分, 易知其中 $\\triangle A E C$ 为钝角三角形, 且能按照图(<FilePath:./images/volume1/figures/fig-c7e5-2.png>)拼成矩形.\n若 $\\triangle A B C$ 为非等腰三角形(如图(<FilePath:./images/volume1/figures/fig-c7e5-3.png>)), 不妨设 $\\angle A$ 为其最大的角.\n作 $A D \\perp B C$ 于点 $D$, 在线段 $B D$ 上取点 $M$, 使 $M D=D C$. 设 $B M 、 A B$ 的中点分别为 $E 、 F$, 连结 $E F$. 则 $\\triangle B E F 、 \\triangle A D C$ 、四边形 $A D E F$ 可按照图(<FilePath:./images/volume1/figures/fig-c7e5-4.png>)拼成矩形, 且易知 $\\triangle B E F$ 为钝角三角形.\n在解有关整数的问题时,常常利用剩余类来分类.",
+    "remark": "",
+    "figures": [
+        "./images/volume1/figures/fig-c7e5-1.png",
+        "./images/volume1/figures/fig-c7e5-2.png",
+        "./images/volume1/figures/fig-c7e5-3.png",
+        "./images/volume1/figures/fig-c7e5-4.png"
+    ]
+}

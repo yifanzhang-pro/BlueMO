@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例14 设 $p(x)=x^2-2$, 试证对任意正整数 $n$,方程 $p^{(n)}(x)=x$ 的根全是相异实根.",
+    "solution": "证先看 $p^{(n)}(x)=x$ 且 $x \\in[-2,2]$ 时的情形.\n当 $x \\in[-2,2]$ 时, 令 $x=2 \\cos t, t=\\arccos \\frac{x}{2}$. 设 $g(x)=2 x, t=\\varphi(x)= \\arccos \\frac{x}{2}$, 则 $\\varphi^{-1}(x)=2 \\cos x$, 于是\n$$\n\\begin{aligned}\n\\varphi^{-1}(g(\\varphi(x))) & =\\varphi^{-1}\\left(g\\left(\\arccos \\frac{x}{2}\\right)\\right) \\\\\n& =\\varphi^{-1}\\left(2 \\arccos \\frac{x}{2}\\right) \\\\\n& =2 \\cos \\left(2 \\arccos \\frac{x}{2}\\right) \\\\\n& =2\\left(2 \\cdot\\left(\\frac{x}{2}\\right)^2-1\\right) \\\\\n& =x^2-2=p(x) .\n\\end{aligned}\n$$\n所以 $p(x) \\sim g(x)$. 于是\n$$\n\\begin{aligned}\np^{(n)}(x) & =\\varphi^{-1}\\left(g^{(n)}(\\varphi(x))\\right) \\\\\n& =2 \\cos \\left(2^n \\arccos \\frac{x}{2}\\right) .\n\\end{aligned}\n$$\n于是方程 $p^{(n)}(x)=x,(x \\in[-2,2])$ 变为\n$$\n2 \\cos \\left(2^n \\arccos \\frac{x}{2}\\right)=x,\n$$\n即\n$$\n2 \\cos \\left(2^n t\\right)=2 \\cos t(t \\in[0, \\pi]) .\n$$\n故\n$$\n\\cos \\left(2^n t\\right)=\\cos t\n$$\n解方程, 得 $t=\\frac{2 l \\pi}{2^n-1}$ 或 $t=\\frac{2 m \\pi}{2^n+1} \\quad(m, l \\in \\mathbf{Z})$.\n所以方程 $p^{(n)}(x)=x$ 在 $[-2,2]$ 中有 $2^n$ 个不同的实根 $x=2 \\cos \\frac{2 l \\pi}{2^n-1}$,\n$l=0,1,2, \\cdots, 2^{n-1}-1, x=2 \\cos \\frac{2 m \\pi}{2^n+1}, m=1,2, \\cdots, 2^{n-1}$.\n由于 $p^{(n)}(x)$ 是 $2^n$ 次多项式, $p^{(n)}(x)=x$ 至多有 $2^n$ 个实根, 故知方程 $p^{(n)}(x)=x$ 的所有根都是实数且各不相同.",
+    "remark": "",
+    "figures": []
+}

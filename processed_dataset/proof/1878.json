@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题18. 凸四边形 $A B C D$ 的两条对角线交于点 $O, \\triangle A O B$ 和 $\\triangle C O D$ 的重心分别为 $M_1$ 和 $M_2, \\triangle B O C$ 和 $\\triangle A O D$ 的垂心分别为 $H_1$ 和 $H_2$. 证明: $M_1 M_2 \\perp \\mathrm{H}_1 \\mathrm{H}_2$.",
+    "solution": "如图(<FilePath:./images/volume7/figures/fig-c5a18.png>), 作 $\\triangle A O D$ 的两条高 $A A_1$ 和 $D D_1$, 作 $\\triangle B O C$ 的两条高 $B B_1$ 和\n$C C_1$. 因为 $\\angle A A_1 B=90^{\\circ}=\\angle B B_1 A$, 所以, $A 、 B 、 B_1$ 、 $A_1$ 四点共圆且圆心为 $A B$ 的中点 $E$. 同理, $C_1 、 C 、 D$ 、 $D_1$ 四点共圆且圆心为 $C D$ 的中点 $F$. 因此, $E F$ 为 $\\odot E$ 和 $\\odot F$ 的连心线.\n又 $A 、 D_1 、 A_1 、 D$ 四点共圆, 则有 $H_2 A \\cdot H_2 A_1=H_2 D_1 \\cdot H_2 D$. 由于 $H_2 A \\cdot H_2 A_1$ 和 $H_2 D_1 \\cdot H_2 D$ 恰分别为点 $H_2$ 关于 $\\odot E$ 和 $\\odot F$ 的幕, 所以, 点 $H_2$ 在 $\\odot E$ 和 $\\odot F$ 的根轴上.\n同理, 点 $H_1$ 也在这条根轴上.\n故直线 $H_1 H_2$ 就是 $\\odot E$ 和 $\\odot F$ 的根轴.\n从而 $H_1 H_2 \\perp E F$. 又 $M_1 M_2 / / E F$, 所以,\n$$\nM_1 M_2 \\perp H_1 H_2 .\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5a18.png"
+    ]
+}

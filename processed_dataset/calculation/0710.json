@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题7 已知 $\\sin \\alpha \\cos \\beta=\\frac{1}{2}$, 则 $\\cos \\alpha \\sin \\beta$ 的取值范围 ( ).\n(A) $\\left[-\\frac{3}{2}, \\frac{1}{2}\\right]$\n(B) $[-1,1]$\n(C) $\\left[-\\frac{3}{4}, \\frac{3}{4}\\right]$\n(D) $\\left[-\\frac{1}{2}, \\frac{1}{2}\\right]$",
+    "solution": "D. 设 $\\cos \\alpha \\sin \\beta=t$, 则由 $\\sin \\alpha \\cos \\beta=\\frac{1}{2}$, 得 $\\sin (\\alpha+\\beta)=t+\\frac{1}{2}$, $\\sin (\\alpha-\\beta)=\\frac{1}{2}-t$, 于是 $\\left|t+\\frac{1}{2}\\right| \\leqslant 1$ 且 $\\left|\\frac{1}{2}-t\\right| \\leqslant 1$, 解之得 $-\\frac{1}{2} \\leqslant t \\leqslant \\frac{1}{2}$.",
+    "remark": "",
+    "figures": []
+}

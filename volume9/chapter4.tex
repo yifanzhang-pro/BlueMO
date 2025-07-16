@@ -1,0 +1,327 @@
+
+%%TEXT_BEGIN%%
+特殊多边形的面积不等式.
+多边形的面积不等式与极值问题一直备受关注.
+一些特殊多边形,如三角形、平行四边形的面积不等式更是在中学数学竞赛中经常出现.
+这节介绍一些有趣的结果, 并力求体现处理面积问题的一般方法.
+首先我们研究一下平行四边形和它内含的三角形的面积之间的关系.
+关于这个问题的一个熟知结论是: 任一平行四边形的内含三角形的面积不超过这个平行四边形面积的一半.
+这个结论的证明十分简单, 如图(<FilePath:./figures/fig-c4i1.png>). 只需过 $\triangle P Q R$ 的顶点 $Q$ 作 $A B$ 的平行线, 并考虑被平行线分成的小平行四边形和小三角形的面积关系 便可.
+现考虑这个问题的反问题,三角形与其内含的平行四边形的面积有何关系? 关于它的回答是下面有用的定理.
+定理 1 任意一个三角形的内含平行四边形的面积不超过三角形面积的一半.
+证明设平行四边形 $P_1 P_2 P_3 P_4$ 是 $\triangle A B C$ 内的平行四边形.
+如图(<FilePath:./figures/fig-c4i2.png>), 不妨设直线 $P_1 P_2 、 P_3 P_4$ 交边 $B C$ 于两点, 分别记为 $M_2 、 M_3$, 在这两直线上分别截取线段 $M_2 M_1$ 和 $M_3 M_4$ 使得
+$$
+M_2 M_1=P_2 P_1, M_3 M_4=P_3 P_4,
+$$
+则四边形 $M_1 M_2 M_3 M_4$ 是平行四边形且
+$$
+S\left(M_1 M_2 M_3 M_4\right)=S\left(P_1 P_2 P_3 P_4\right) .
+$$
+设直线 $M_1 M_4$ 分别交边 $A B 、 A C$ 于两点 $D 、 E$, 过点 $E$ 作 $A B$ 的平行线交 $B C$ 于 $F$, 则得平行四边形 $B D E F$, 易见
+$$
+S(B D E F) \geqslant S\left(M_1 M_2 M_3 M_4\right)=S\left(P_1 P_2 P_3 P_4\right) .
+$$
+因此要证
+$$
+S\left(P_1 P_2 P_3 P_4\right) \leqslant \frac{1}{2} S_{\triangle A B C},
+$$
+只需证明
+$S(B D E F) \leqslant \frac{1}{2} S_{\triangle A B C} , \label{(*)}$.
+下证 式\ref{(*)}.
+如图(<FilePath:./figures/fig-c4i3.png>), 设 $\lambda=\frac{A D}{A B}$, 则由
+$\triangle A D E \backsim \triangle A B C$
+可知
+$S_{\triangle A D E}=\lambda^2 S_{\triangle A B C}$.
+同理
+$$
+S_{\triangle E F C}=(1-\lambda)^2 S_{\triangle A B C} \text {. }
+$$
+因此 $S_{\triangle A D E}+S_{\triangle E F C}=\left[\lambda^2+(1-\lambda)^2\right] S_{\triangle A B C} \geqslant \frac{1}{2} S_{\triangle A B C}$,
+所以 $\quad S(B D E F)=S_{\triangle A B C}-\left(S_{\triangle A D E}+S_{\triangle E F C}\right) \leqslant \frac{1}{2} S_{\triangle A B C}$.
+式\ref{(*)} 得证,且当 $D 、 E 、 F$ 分别为三边的中点时等号成立.
+注:上面的证法是典型的化归法, 即将一般的平行四边形 $P_1 P_2 P_3 P_4$ 转化为有一组边与边 $B C$ 平行的平行四边形 $M_1 M_2 M_3 M_4$, 再转化为两组边分别平行于三角形两边的非常特殊的平行四边形 $B D E F$, 从而使问题大大得到简化.
+如图(<FilePath:./figures/fig-c4i4.png>), 设 $P$ 是 $\triangle A B C$ 内的一点, 直线 $A P 、 B P 、 C P$ 与三边的交点分别为 $D 、 E 、 F$, 则 $\triangle D E F$ 叫做点 $P$ 的塞瓦 (Ceva) 三角形;
+如图(<FilePath:./figures/fig-c4i5.png>), 若内点 $P$ 在三边 $B C 、 C A 、 A B$ 上的射影分别为 $D 、 E 、 F$, 则 $\triangle D E F$ 叫做点 $P$ 的垂足三角形.
+关于点 $P$ 的塞瓦三角形和垂足三角形有下面著名的命题.
+命题 1 若 $P$ 是 $\triangle A B C$ 的内点, 则点 $P$ 的塞瓦三角形 $D E F$ 的面积不超过 $\frac{1}{4} S_{\triangle A B C}$.
+命题 2 若 $P$ 是 $\triangle A B C$ 的内点,则点 $P$ 的垂足三角形 $D E F$ 的面积不超过 $\frac{1}{4} S_{\triangle A B C}$.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+A. Soifer 的五点问题等价于下面的命题 3 .
+命题 3 对于任意的三角形 $T, S(T)=5$.
+A. Soifer 进一步证明了命题 4 对任意的平行四边形 $P, S(P)=5$.
+一个自然的问题是 : 是否对任意的图形 $F$ 都有 $S(F)=5$ ?
+答案是否定的, A. Soifer 证明了命题 5 对正五边形 $F, S(F)=6$.
+対任意的凸的图形 $F, S(F)$ 都可以取什么样的值呢? A. Soifer 证明了 $S(F)$ 只能在很小的范围内取值, 即有命题 6 对任意的凸的图形 $F, 4 \leqslant S(F) \leqslant 6$.
+关于命题 6 的更为进一步的结论是:
+命题 7 对任意的凸的图形 $F, S(F) \neq 4$.
+命题 8 对任意的凸的图形 $F, S(F)=5$, 或者 $S(F)=6$.
+一个有趣的但尚未解决的问题是: 什么样的凸图形 $F$ 使得 $S(F)=5$, 什么样的凸图形 $F$ 使得 $S(F)=6$ ?
+下面讨论的话题是面积为 1 的凸多边形能被怎样的平行四边形和三角形覆盖的问题.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $P$ 是 $\triangle A B C$ 内一点, $P$ 的塞瓦三角形为 $D E F$, 求证: 总可以以 $\triangle D E F$ 的某两边为邻边作一平行四边形使之位于 $\triangle A B C$ 内.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c4i6.png>), 设 $G$ 是 $\triangle A B C$ 的重心, $N$ 、 $M$ 分别是边 $A C$ 和 $A B$ 的中点.
+不妨设 $P$ 在 $A N G M$ 内部或边界上,则 $E 、 F$ 分别在线段 $A N$ 、 $A M$ 的内部或端点处,所以
+$$
+\frac{A F}{F B} \leqslant 1, \frac{A E}{E C} \leqslant 1,
+$$
+又不妨设
+$$
+\frac{A F}{F B} \leqslant \frac{A E}{E C} .
+$$
+由塞瓦定理可得
+$$
+\frac{A F}{F B} \cdot \frac{B D}{D C} \cdot \frac{C E}{E A}=1,
+$$
+由此推得
+$$
+\frac{B D}{D C}=\frac{A E}{C E} \cdot \frac{F B}{A F} \geqslant 1 .
+$$
+如图(<FilePath:./figures/fig-c4i7.png>), 作出以 $E F 、 E D$ 为邻边的平行四边形 $F E D E^{\prime}$, 下面只需证 $E^{\prime}$ 位于 $\triangle A B C$ 内部或边界上.
+过 $F$ 作 $F F^{\prime} / / B C, F^{\prime}$ 落在 $A C$ 上, 因为
+$$
+\frac{A F}{F B} \leqslant \frac{A E}{E C},
+$$
+故 $F^{\prime}$ 在线段 $A E$ 内部或端点上.
+因为
+$$
+\angle E^{\prime} D F=\angle E F D \leqslant \angle F^{\prime} F D=\angle F D B,
+$$
+所以 $D E^{\prime}$ 在 $\angle F D B$ 内部.
+同理
+$$
+\frac{C E}{E A} \geqslant 1 \geqslant \frac{C D}{D B}
+$$
+也可证明 $F E^{\prime}$ 在 $\angle B F D$ 的内部或边界上, 故 $E^{\prime}$ 在 $\triangle F D B$ 的内部.
+得证.
+%%<REMARK>%%
+注:定理 1 和命题 1 通过例 1 联合起来了, 即由例 1 ,
+定理 $1 \Rightarrow$ 命题 1 .
+一个自然的问题是, 内点 $P$ 的垂足三角形是否有类似于塞瓦三角形的扩张性质呢?
+易见针角三角形的内点的垂足三角形一般不具有扩张性质, 但对于锐角三角形有下面的正面回答.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $P$ 是锐角三角形 $\triangle A B C$ 内一点, 关于 $P$ 的垂足三角形为 $\triangle D E F$. 求证: 总可以以 $\triangle D E F$ 的某两边为邻边作一平行四边形使之位于 $\triangle A B C$ 内.
+%%<SOLUTION>%%
+证明:设 $O$ 是 $\triangle A B C$ 的外心, 因为 $\triangle A B C$ 为锐角三角形, 所以 $O$ 位于 $\triangle A B C$ 内.
+不妨设 $P$. 落在 $\triangle A O B$ 内, 如图(<FilePath:./figures/fig-c4i8.png>).
+我们证明以 $F E 、 F D$ 为邻边作的平行四边形 $D F E G$ 位于 $\triangle A B C$ 内.
+为此, 只需证明
+$$
+\begin{aligned}
+& \angle F E G \leqslant \angle F E C, \label{eq1}\\
+& \angle F D G \leqslant \angle F D C . \label{eq2}
+\end{aligned}
+$$
+下证式\ref{eq1}, \ref{eq2}类似可证.
+因为
+$$
+\begin{gathered}
+\angle F E G=\angle A F E+\angle B F D, \\
+\angle F E C=\angle A F E+\angle A,
+\end{gathered}
+$$
+因此要证式\ref{eq1}, 只需证明
+$$
+\angle B F D \leqslant \angle A . \label{eq3}
+$$
+事实上, 由 $B 、 F 、 P 、 D$ 四点共圆知
+$$
+\angle B F D=\angle B P D . \label{eq4}
+$$
+现过 $O$ 作 $O H \perp B C$, 垂足为 $H$, 则由
+$$
+\angle P B D \geqslant \angle O B H
+$$
+可知
+$$
+\angle B P D \leqslant \angle B O H, \label{eq5}
+$$
+而 $O$ 为 $\triangle A B C$ 的外心, 因此
+$$
+\angle B O H=\angle B A C=\angle A . \label{eq6}
+$$
+由式\ref{eq4}、\ref{eq5}、式\ref{eq6}, \ref{eq3}得证.
+%%<REMARK>%%
+注:由例 2 我们知, 对锐角三角形, 由定理 1 可推出命题 2 .
+上例曾被用作第 2 届中国西部数学奥林匹克试题 (笔者为了降低难度, 加上了 $P$ 位于 $\triangle A O B$ 内这一条件).
+下面的话题转向三角形内的五点问题,这个问题是 A. Soifer 提供给 Colorado 数学奥林匹克的一个试题.
+他提出并证明了: 在单位面积的三角形内任给五点, 则至少有三点组成的三角形的面积不超过 $\frac{1}{4}$.
+不难证明, 五点问题的点数不能减少, 但着眼于结论中三角形的个数, 我们仍能改进问题的结论.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 在单位面积的三角形中任给五点,则其中必存在两个不同的三点组使得以它们为顶点构成的三角形的面积不超过 $\frac{1}{4}$.
+%%<SOLUTION>%%
+证明:我们需要下面常用的引理.
+引理设凸四边形位于一个单位面积的三角形内,则这个凸四边形的四个顶点中必有三个顶点组成的三角形的面积不超过 $\frac{1}{4}$.
+凸四边形的四个顶点本质上都可化归到三角形的边上, 因此这个引理实质上就是大家熟知的首届冬令营的试题的第二题: 设 $P_1 、 P_2 、 P_3 、 P_4$ 位于 $\triangle A B C$ 的三边上, 求证: $\triangle P_1 P_2 P_3 、 \triangle P_1 P_3 P_4 、 \triangle P_2 P_3 P_4 、 \triangle P_1 P_2 P_4$ 中必有一个面积小于或等于 $\frac{1}{4} S_{\triangle A B C}$.
+下面回证原题.
+当这五点的凸包为线段时,结论显然成立.
+当这五点的凸包为三角形时,则可以以这五个点为顶点作出五个互不相交的三角形, 如图(<FilePath:./figures/fig-c4i9.png>), 而且它们的总面积小于或等于 1 , 故必有两个三角形的面积不超过 $\frac{1}{4}$.
+若这五点的凸包为凸四边形时, 不妨设五点分布如图(<FilePath:./figures/fig-c4i10.png>), 即 $P_5$ 位于凸四边形 $P_1 P_2 P_3 P_4$ 内, 由引理可知 $P_1 、 P_2 、 P_3 、 P_4$ 中必有三点组成的三角形的面积不超过 $\frac{1}{4}$, 又
+$$
+\begin{gathered}
+S_{\triangle P_1 P_2 P_5}+S_{\triangle P_2 P_3 P_5}+S_{\triangle P_3 P_4 P_5}+S_{\triangle P_4 P_1 P_5} \\
+\leqslant S\left(P_1 P_2 P_3 P_4\right) \leqslant S_{\triangle A B C}=1,
+\end{gathered}
+$$
+因此 $\triangle P_1 P_2 P_5 、 \triangle P_2 P_3 P_5 、 \triangle P_3 P_4 P_5 、 \triangle P_4 P_1 P_5$ 中必有一个的面积小于或等于 $\frac{1}{4}$, 结论成立.
+若这五点的凸包为凸五边形, 则其中任何四顶点均可构成嵌人 $\triangle A B C$ 中的凸四边形, 如图(<FilePath:./figures/fig-c4i11.png>), 这样的凸四边形共有 $\mathrm{C}_5^4=5$ 个.
+因而包括重复计算, 必有 5 个面积不超过 $\frac{1}{4}$ 的三角形, 又每个三角形至多重复两次,故面积不超过 $\frac{1}{4}$ 的三角形的个数大于 $\left[\frac{5}{2}\right]=2$,
+得证.
+%%<REMARK>%%
+注:1 可以证明上例的结论还可以改进, 其中存在的两个三角形可改进为三个三角形 (不能改进为四个三角形) 不超过 $\frac{1}{4}$. 但这个证明篇幅很大, 这里从略.
+注:2 任给一个图形 $F$, 令 $S(F)$ 表示满足下面条件的最小的正整数 $n$ : 在 $F$ 的内部 (含边界) 任给 $n$ 个点使得总存在其中的三个点, 它们构成的三角形的面积不超过 $\frac{|F|}{4}$, 这里 $|F|$ 表示 $F$ 的面积.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例 4 证明: (1) 面积为 1 的凸多边形可被面积为 2 的平行四边形覆盖;
+(2) 面积为 1 的凸多边形可被面积为 2 的三角形覆盖.
+%%<SOLUTION>%%
+证明:(1) 设面积为 1 的凸多边形 $M$ 位于它的一条支撑线 $A B$ 的一侧, 则 $M$ 中存在一点到直线 $A B$ 的距离最大, 记这个点为 $C(C$ 可能是 $M$ 的一个顶点,也可能是 $M$ 的一条平行于 $A B$ 的边上的任意一点). 现在连接 $A C$ (如图(<FilePath:./figures/fig-c4i12.png>)), 将 $M$ 分成两部分 $M_1$ 和 $M_2$ (如果 $A C$ 是 $M$ 的一边, $M_1 、 M_2$ 中有一个不存在). 假设 $D_1$ 和 $D_2$ 是 $M$ 的点 (它们分别位于 $A C$ 的两侧) 且到 $A C$ 有最大的距离, 再过 $C$ 作直线平行于 $A B$, 过 $D_1 、 D_2$ 作直线 $l_1$ 和 $l_2$ 平行于 $A C$, 则直线 $A B 、 l 、 l_1 、 l_2$ 构成了包含 $M$ 的一个平行四边形 $P$.
+因为 $M_1$ 和 $M_2$ 是凸的, 所以它们分别包含 $\triangle A D_1 C$ 和 $\triangle A D_2 C$.
+设 $P_1 、 P_2$ 是直线 $A C$ 将 $P$ 分成的两个平行四边形, 则
+$$
+S_{\triangle A D_1 C}=\frac{1}{2} S\left(P_1\right), S_{\triangle A D_2 C}=\frac{1}{2} S\left(P_2\right),
+$$
+其中 $S(X)$ 表示 $X$ 的面积.
+因此
+$$
+\begin{gathered}
+S(P)=S\left(P_1\right)+S\left(P_2\right)=2 S_{\triangle A D_1 C}+2 S_{\triangle A D_2 C} \\
+\leqslant 2 S\left(M_1\right)+2 S\left(M_2\right)=2 S(M)=2 .
+\end{gathered}
+$$
+(1) 得证.
+(2)设 $u$ 是给定的面积为 1 的多边形.
+现考虑 $u$ 的最大面积的内接 $\triangle A_1 A_2 A_3$. 下面分两种情况讨论.
+(a) 若 $S_{\triangle A_1 A_2 A_3} \leqslant \frac{1}{2}$. 这时如图(<FilePath:./figures/fig-c4i13.png>), 过 $\triangle A_1 A_2 A_3$ 的顶点分别作对边的平行线, 这三条直线交成的三角形记作 $T$, 则 $T$ 的面积小于等于 2 .
+因此, 这时我们只需证明多边形 $u$ 位于 $T$ 内便可.
+假定 $u$ 的某个点 $M$ 位于 $T$ 外, 则 $M$ 到 $\triangle A_1 A_2 A_3$ 某一边 (不妨设为 $A_1 A_2$ ) 的距离大于这个三角形另一个顶点 $\left(A_3\right)$ 到这一边的距离 (见图 4-13). 这时 $\triangle A_1 A_2 M$ 的面积大于 $\triangle A_1 A_2 A_3$ 的面积, 这与 $\triangle A_1 A_2 A_3$ 是 $u$ 中的最大面积的内接三角形矛盾.
+这种情况得证.
+(b) 若 $S_{\triangle A_1 A_2 A_3}>\frac{1}{2}$. 这时在 $u$ 被 $\triangle A_1 A_2 A_3$ 的每条边所在的直线切割的剩余部分内, 分别以 $\triangle A_1 A_2 A_3$ 的一边为底构造面积最大的三角形.
+设这样的三个三角形分别为 $\triangle B_1 A_2 B_3 、 \triangle B_2 A_1 B_3$ 、 $\triangle B_3 A_1 A_2$, 再过 $B_1 、 B_2 、 B_3$ 分别作 $A_2 A_3 、 A_1 A_3$ 、 $A_1 A_2$ 的平行线, 我们就得到一个较大的三角形 $\triangle C_1 C_2 C_3$, 记为 $C$ (如图(<FilePath:./figures/fig-c4i14.png>)). 同 (a) 可证, $u$ 一定在三角形 $C$ 内.
+注意到 $u$ 是一个凸多边形, 因此
+$$
+S\left(A_1 B_3 A_2 B_1 A_3 B_2\right) \leqslant S(u)=1 .
+$$
+因此我们只需证明
+$$
+S_{\triangle C_1 C_2 C_3} \leqslant 2 S\left(A_1 B_3 A_2 B_1 A_3 B_2\right), \label{eq1}
+$$
+便知结论成立.
+因为 $\triangle C_1 C_2 C_3 \backsim \triangle A_1 A_2 A_3$, 所以为了计算 $\triangle C_1 C_2 C_3$ 的面积, 我们记
+$$
+\frac{S_{\triangle A_1 A_2 B_3}}{A_{\triangle A_1 A_2 A_3}}=\lambda_3, \frac{S_{\triangle A_1 A_3 B_2}}{S_{\triangle A_1 A_2 A_3}}=\lambda_2, \frac{S_{\triangle A_2 A_3 B_1}}{S_{\triangle A_1 A_2 A_3}}=\lambda_1,
+$$
+则
+$$
+\frac{S_{\triangle C_1 C_2 C_3}}{S_{\triangle A_1 A_2 A_3}}=\left(\lambda_1+\lambda_2+\lambda_3+1\right)^2 . \label{eq2}
+$$
+又由假设 $S_{\triangle A_1 A_2 A_3}>\frac{1}{2}$ 可知
+$$
+\begin{aligned}
+\lambda_1+\lambda_2+\lambda_3 & =\frac{S_{\triangle A_1 A_2 B_3}+S_{\triangle A_1 A_3 B_2}+S_{\triangle A_2 A_3 B_1}}{S_{\triangle A_1 A_2 A_3}} \\
+& \leqslant \frac{S(u)-S_{\triangle A_1 A_2 A_3}}{S_{\triangle A_1 A_2 A_3}}=\frac{1-S_{\triangle A_1 A_2 A_3}}{S_{\triangle A_1 A_2 A_3}} \\
+& <1 . \label{eq3}
+\end{aligned}
+$$
+又明显的有
+$$
+\begin{aligned}
+& \frac{S\left(A_1 B_3 A_2 B_1 A_3 B_2\right)}{S_{\triangle A_1 A_2 A_3}} \\
+= & \frac{S_{\triangle A_1 A_2 A_3}+S_{\triangle B_1 A_2 A_3}+S_{\triangle B_2 A_1 A_3}+S_{\triangle B_3 A_1 A_2}}{S_{\triangle A_1 A_2 A_3}} \\
+= & \lambda_1+\lambda_2+\lambda_3+1 . \label{eq4}
+\end{aligned}
+$$
+由式\ref{eq2}、\ref{eq3}、式\ref{eq4}可得
+$$
+\frac{S_{\triangle C_1 C_2 C_3}}{S\left(A_1 B_3 A_2 B_1 A_3 B_2\right)}=\lambda_1+\lambda_2+\lambda_3+1<2 .
+$$
+式\ref{eq1}得证.
+(2)证完.
+现在我们考虑另一个有趣的问题:一个面积为 1 的凸多边形, 最大的内接三角形的面积有多大? 下面的例子回答了这个问题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. (1) 设 $M$ 是一个面积为 1 的凸多边形, $l$ 是任意给定的直线.
+求证: 存在 $M$ 的一个内接三角形, 它有一条边平行于 $l$, 且面积大于或等于 $\frac{3}{8}$;
+(2) 如果 $M$ 是一个正六边形, $l$ 是任意给定的一条直线,证明 $M$ 中不存在有一边平行于 $l$ 且面积大于 $\frac{3}{8} S(M)$ 的内接三角形.
+%%<SOLUTION>%%
+证明:(1)如图(<FilePath:./figures/fig-c4i15.png>), 作两条平行于 $l$ 的 $M$ 的支撑线, 使得它们构成的带形包含 $M$, 且 $M$ 的顶点 $A$ 和 $B$ 分别在这两条直线上.
+记这两条直线为 $l_1 、 l_2$. 设 $l_1 、 l_2$ 间的宽度为 $d$, 再画三条直线 $l_1^{\prime}$ 、 $l_0 、 l_2^{\prime}$ 使得这个带形被分为四个等宽的小带形, 每个小带形的宽为 $\frac{1}{4} d$.
+假设 $M$ 的边界与 $l_1^{\prime}$ 相交于 $P$ 和 $Q, l_2^{\prime}$ 与 $M$ 的边界相交于 $R$ 和 $S$ (因为 $M$ 是凸的, $M$ 不可能有整个边在这两条直线上). 设 $p$ 是 $M$ 的通过点 $P$ 的边 (如果 $P$ 是顶点则可以在两边中任选一条) 所在的直线, $q 、 r$ 和 $s$ 的记号意义类似.
+这时由 $p 、 q 、 l_0 、 l_1$ 为边界形成的梯形 $T_1$ 的面积是 $\frac{d}{2} \cdot P Q$. 类似的, 由 $l_0 、 l_2 、 r 、 s$ 为边界形成的梯形 $T_2$ 的面积是 $\frac{d}{2} \cdot R S$. 因为 $T_1$ 和 $T_2$ 的并集整个包含 $M$, 故有
+$$
+\begin{aligned}
+S(M) & \leqslant S\left(T_1\right)+S\left(T_2\right) \\
+& =\frac{d}{2} \cdot P Q+\frac{d}{2} \cdot R S=\frac{d}{2}(P Q+R S) .
+\end{aligned}
+$$
+现考虑两个三角形 $\triangle A R S$ 和 $\triangle B P Q$, 这两个三角形都是 $M$ 的内接三角形, 且
+$$
+S_{\triangle A R S}=\frac{1}{2} \cdot R S \cdot \frac{3}{4} d, S_{\triangle B P Q}=\frac{1}{2} \cdot P Q \cdot \frac{3}{4} d
+$$
+因此
+$$
+\begin{aligned}
+S_{\triangle A R S}+S_{\triangle B P Q} & =(P Q+R S) \cdot \frac{3}{8} d \\
+& =\frac{3}{4}(P Q+R S) \cdot \frac{1}{2} d \\
+& \geqslant \frac{3}{4} S(M)=\frac{3}{4},
+\end{aligned}
+$$
+故 $S_{\triangle A R S} \geqslant \frac{3}{8}$ 和 $S_{\triangle B P Q} \geqslant \frac{3}{8}$ 至少有一个成立, 结论得证.
+(2) 设 $M$ 是一个正六边形 $A B C D E F, l / / A B$, 如图(<FilePath:./figures/fig-c4i16.png>). 设 $\triangle P Q R$ 是 $M$ 的最大面积的内接三角形且边 $P Q / / A B$. 不妨设 $P$ 和 $Q$ 分别位于 $F A$ 和 $B C$ 上, 则明显的 $R$ 一定位于 $D E$ 上.
+让我们假定正六边形 $M$ 的边长有单位长度, 并记 $A P=B Q=a$, 则
+$$
+P Q=A B+P G+Q H=1+\frac{a}{2}+\frac{a}{2}=1+a,
+$$
+且
+$$
+h(P Q R)=R S-A G=\sqrt{3}-\frac{a \sqrt{3}}{2}=(2-a) \frac{\sqrt{3}}{2} .
+$$
+因此
+$$
+\begin{aligned}
+S_{\triangle P Q R} & =\frac{1}{2}(1+a)(2-a) \frac{\sqrt{3}}{2} \\
+& =\frac{\sqrt{3}}{4}\left(2+a-a^2\right) \\
+& =\frac{\sqrt{3}}{4}\left(2+\frac{1}{4}-\left(a-\frac{1}{2}\right)^2\right) .
+\end{aligned}
+$$
+由此知当 $a=\frac{1}{2}$ 时, $S_{\triangle P Q R}$ 的面积最大, 最大值为
+$$
+\left(S_{\triangle P Q R}\right)_{\max }=\frac{9 \sqrt{13}}{16},
+$$
+但这个六边形的面积等于
+$$
+6 S(O A B)=6 \cdot \frac{\sqrt{3}}{4}=\frac{3 \sqrt{3}}{2},
+$$
+其中 $O$ 是正六边形 $M$ 的中心.
+这说明有一条边平行于给定直线 $l$ 的 $M$ 的最大内接三角形恰为 $\frac{3}{8} S(M)$,因此结论成立.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例6 求证: 对于任意 $\\alpha \\in(-\\infty,+\\infty),\\left|2 \\cos ^2 \\alpha+a \\cos \\alpha+b\\right| \\leqslant 1$ 成立的充要条件是 $2 \\cos ^2 \\alpha+a \\cos \\alpha+b==\\cos 2 \\alpha$.",
+    "solution": "证明:充分性: 当 $2 \\cos ^2 \\alpha+a \\cos \\alpha+b=\\cos 2 \\alpha$ 时, 显然有\n$$\n\\left|2 \\cos ^2 \\alpha+a \\cos \\alpha+b\\right| \\leqslant 1 \\text {. }\n$$\n必要性:若 $\\left|2 \\cos ^2 \\alpha+a \\cos \\alpha+b\\right| \\leqslant 1$ 对于任意 $\\alpha \\in(-\\infty,+\\infty)$ 均成立, 则 \n(1) 当 $b>-1$ 时,\n$$\n2 \\cos ^2 \\alpha+a \\cos \\alpha+b=2 \\cos ^2 \\alpha-1+a \\cos \\alpha+(b+1) .\n$$\n由于 $b+1>0$, 取 $\\alpha$, 使 $a \\cos \\alpha=|a|$, 则\n$$\n\\left|2 \\cos ^2 \\alpha+a \\cos \\alpha+b\\right|=1+|a|+(b+1)>1+|a| \\geqslant 1,\n$$\n矛盾.\n(2) 当 $b<-1$ 时, 令 $\\cos \\alpha=0$, 则\n$$\n\\left|2 \\cos ^2 \\alpha+a \\cos \\alpha+b\\right|=|b|>1 \\text {, }\n$$\n矛盾.\n由(1), (2) 可知: $b=-1$, 现取 $\\alpha$, 使 $a \\cos \\alpha=|a|$, 则\n$$\n\\left|2 \\cos ^2 \\alpha+a \\cos \\alpha+b\\right|=1+|a| \\geqslant 1,\n$$\n故 $|a|=0$, 即 $a=0$.\n这样 $2 \\cos ^2 \\alpha+a \\cos \\alpha+b=2 \\cos ^2 \\alpha-1=\\cos 2 \\alpha$.",
+    "remark": "",
+    "figures": []
+}

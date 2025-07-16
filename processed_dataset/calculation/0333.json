@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 设 $a 、 b 、 c 、 a+b-c 、 b+c-a 、 c+a-b 、 a+b+c$ 是 7 个两两不同的质数,且 $a 、 b 、 c$ 中有两个数的和是 800 . 设 $d$ 是这 7 个质数中最大数与最小数的差,求 $d$ 的最大可能值.",
+    "solution": "不妨设 $a<b<c$, 则 7 个数中的最小数与最大数分别为 $a+b-c 、 a+ b+c$, 于是 $d=(a+b+c)-(a+b-c)=2 c$. 又 $a+b-c>0$, 所以 $c<a+ b<a+c<b+c$, 但 $a+b 、 a+c 、 b+c$ 中有一个为 800 , 所以 $c<800$. 又 $799=17 \\times 47$ 、 798 都不是质数, 所以 $c \\leqslant 797, d=2 c \\leqslant 1594$. 令 $c=797$, $a+b=800$, 注意到 $b<c=797$, 满足 $a+b=800$ 的最小质数解 ( $a$, $b)=(13,787)$ (因为 $795,793=13 \\times 61,789=3 \\times 263$ 都不是质数), 此时, $a+b-c=3 、 a-b+c=23 、-a+b+c=1571 、 a+b+c=1597$ 都是质数, 故 $d$ 的最大可能值是 1594 .",
+    "remark": "",
+    "figures": []
+}

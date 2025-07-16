@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 设 $x, y, z>0$, 求证:\n$$\n\\begin{aligned}\n& 3 \\sqrt{x y+y z+z x} \\\\\n\\leqslant & \\sqrt{x^2+x y+y^2}+\\sqrt{y^2+y z+z^2}+\\sqrt{z^2+z x+x^2} \\\\\n\\leqslant & 2(x+y+z) .\n\\end{aligned}\n$$",
+    "solution": "由条件, 可构造如图(<FilePath:./images/volume5/figures/fig-c5p9.png>), 在 $\\triangle A B C$ (内有一点 $P$, 满足条件 $\\angle A P B=\\angle B P C=\\angle C P A=120^{\\circ}$. 设 $P A=x, P B=y, P C=z$, 则 $A B=\\sqrt{x^2+x y+y^2}$, $B C=\\sqrt{y^2+y z+z^2}, C A=\\sqrt{z^2+z x+x^2}$. \n由三角形两边之和大于第三边, 有 $\\sqrt{x^2+x y+y^2}+ \\sqrt{y^2+y z+z^2}+\\sqrt{z^2+z x+x^2} \\leqslant 2(x+y+z)$).\n又由 $a^2+b^2+c^2 \\geqslant 4 \\sqrt{3} s, a b+b c+c a \\geqslant 4 \\sqrt{3} s$,\n得 $(a+b+c)^2 \\geqslant 12 \\sqrt{3} s$, 故 $a+b+c \\geqslant 2 \\sqrt{3 \\sqrt{3} s}=3 \\sqrt{x y+y z+z x}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume5/figures/fig-c5p9.png"
+    ]
+}

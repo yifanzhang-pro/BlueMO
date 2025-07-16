@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例8. 若 $0<\\beta<\\alpha<\\frac{\\pi}{2}$, 求证: $\\sin \\alpha-\\sin \\beta<\\alpha-\\beta<\\tan \\alpha-\\tan \\beta$.",
+    "solution": "分析:构造单位圆, 借助于三角函数线与三角函数式的关系, 把数的比较转化为几何图形面积的比较.\n证明如图(<FilePath:./images/volume3/figures/fig-c5i7.png>), 作单位圆, 记 $\\overparen{A P_1}=\\beta$, $\\overparen{A P_2}=\\alpha$. 则 $\\overparen{P_1 P_2}=\\alpha-\\beta, M_1 P_1=\\sin \\beta, M_2 P_2= \\sin \\alpha, A T_1=\\tan \\beta, A T_2=\\tan \\alpha, S_{\\triangle A P_2 O}=\\frac{1}{2} \\sin \\alpha$, $S_{\\triangle A P_1 O}=\\frac{1}{2} \\sin \\beta, S_{\\triangle A T_2 O}=\\frac{1}{2} \\tan \\alpha, S_{\\triangle A T_1 O}=\\frac{1}{2} \\tan \\beta$, $S_{\\text {扇形 } O A P_2}=\\frac{1}{2} \\alpha, S_{\\text {扇形 } O A P_1}=\\frac{1}{2} \\beta, S_{\\text {扇形 } O P_1 P_2}=\\frac{1}{2}(\\alpha- \\beta), S_{\\triangle O T_1 T_2}=\\frac{1}{2}(\\tan \\alpha-\\tan \\beta)$, 设 $\\triangle O P_2 C$ 的面积为 $S_1$, 则 $S_1<S_{\\text {扇形 } O P_1 P_2}<S_{\\triangle O T_1 T_2}$, 因为\n$$\nS_{\\triangle O A P_2}-S_{\\triangle O A P_1}<S_{\\triangle O A P_2}-S_{\\triangle O A C}=S_1,\n$$\n所以\n$$\n\\frac{1}{2} \\sin \\alpha-\\frac{1}{2} \\sin \\beta<S_1,\n$$\n从而 $\\frac{1}{2} \\sin \\alpha-\\frac{1}{2} \\sin \\beta<-\\frac{1}{2}(\\alpha-\\beta)<\\frac{1}{2} \\tan \\alpha-\\frac{1}{2} \\tan \\beta$, 即\n$$\n\\sin \\alpha-\\sin \\beta<\\alpha-\\beta<\\tan \\alpha-\\tan \\beta .\n$$\n评注本题的证明方法与三角函数基本不等式 $\\sin x<x<\\tan x\\left(x \\in \\left(0, \\frac{\\pi}{2}\\right)\\right)$ 的证明方法相同.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c5i7.png"
+    ]
+}

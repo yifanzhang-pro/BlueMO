@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 设正数列 $a_0, a_1, \\cdots, a_n, \\cdots$ 满足\n(1) $\\sqrt{a_n a_{n-2}}-\\sqrt{a_{n-1} a_{n-2}}=2 a_{n-1} ;(n \\geqslant 2)$\n(2) $a_0=a_1=1$.\n求 $\\left\\{a_n\\right\\}$ 的通项.",
+    "solution": "(1) 式两边除以 $\\sqrt{a_{n-1} a_{n-2}}$ 得 $\\sqrt{\\frac{a_n}{a_{n-1}}}=1+2 \\sqrt{\\frac{a_{n-1}}{a_{n-2}}}$, 令 $b_n= \\sqrt{\\frac{a_n}{a_{n-1}}}(n \\geqslant 1)$, 则 $b_n=1+2 b_{n-1}$, 即 $b_n+1=2\\left(b_{n-1}+1\\right)$. 从而 $b_n+1=\\left(b_1+\\right.$ 1) $\\cdot 2^{n-1}=2^n$, 即 $\\frac{a_n}{a_{n-1}}=\\left(2^n-1\\right)^2$. 所以 $a_n=\\frac{a_n}{a_{n-1}} \\cdot \\frac{a_{n-1}}{a_{n-2}} \\cdots \\frac{a_2}{a_1} \\cdot a_1=\\left(2^n-\\right. 1)^2\\left(2^{n-1}-1\\right)^2 \\cdots\\left(2^2-1\\right)^2 \\cdot\\left(2^1-1\\right)$.",
+    "remark": "",
+    "figures": []
+}

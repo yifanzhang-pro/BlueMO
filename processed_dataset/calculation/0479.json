@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例10 (1) 求函数 $y=\\frac{\\sqrt{x^2-4}}{\\log _2\\left(x^2+2 x-3\\right)}$ 的定义域;\n(2) 已知函数 $f(x)$ 的定义域为 $[-1,1]$. 求 $f(a x)+f\\left(\\frac{x}{a}\\right)$ 的定义域, 其中 $a>0$.",
+    "solution": "解:(1) 函数的定义域是满足下列条件的解集.\n$$\n\\left\\{\\begin{array}{l}\nx^2-4 \\geqslant 0, \\\\\nx^2+2 x-3>0, \\\\\nx^2+2 x-3 \\neq 1 .\n\\end{array}\\right.\n$$\n因此, 定义域为 $(-\\infty,-1-\\sqrt{5}) \\cup(-1-\\sqrt{5},-3) \\cup[2,+\\infty)$.\n(2) $f(a x)+f\\left(\\frac{x}{a}\\right)$ 的定义域是下列两个集合的交集:\n$$\n\\begin{aligned}\n& D_1=\\{x \\mid-1 \\leqslant a x \\leqslant 1\\}=\\left[-\\frac{1}{a}, \\frac{1}{a}\\right], \\\\\n& D_2=\\left\\{x \\mid-1 \\leqslant \\frac{x}{a} \\leqslant 1\\right\\}=[-a, a] .\n\\end{aligned}\n$$\n当 $a \\geqslant 1$ 时, $a \\geqslant \\frac{1}{a},-a \\leqslant-\\frac{1}{a}$, 故 $D_1 \\cap D_2=D_1$;\n当 $0<a<1$ 时, $\\frac{1}{a}>a,-\\frac{1}{a}<-a$, 故 $D_1 \\cap D_2=D_2$.\n因此, $f(a x)+f\\left(\\frac{x}{a}\\right)$ 的定义域为\n$$\n[-a, a] \\text { (当 } 0<a<1 \\text { ) 或 }\\left[-\\frac{1}{a}, \\frac{1}{a}\\right] \\text { (当 } a \\geqslant 1 \\text { ). }\n$$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例8 设 $f(x)$ 是一个 98 次的多项式,使得\n$$\nf(k)=\\frac{1}{k}, k=1,2, \\cdots, 99\n$$\n求 $f(100)$ 的值.",
+    "solution": "解:构造一个函数\n$$\ng(x)=x f(x)-1,\n$$\n则\n$$\ng(1)=g(2)=\\cdots=g(99)=0,\n$$\n并且 $g(x)$ 是 99 次多项式, 所以\n$$\ng(x)=a(x-1)(x-2) \\cdots(x-99) .\n$$\n其中 $g(x)$ 的首项系数 $a$ 是一个待定常数.\n由于\n$$\nf(x)=\\frac{g(x)+1}{x}=\\frac{a(x-1)(x-2) \\cdots(x-99)+1}{x}\n$$\n是一个 98 次多项式, 故 $a(x-1)(x-2) \\cdots(x-99)+1$ 的常数项必须为 0 , 即\n$$\n-99 ! a+1=0\n$$\n所以\n$$\na=\\frac{1}{99 !}\n$$\n因此 $f(x)=\\frac{\\frac{1}{99 !}(x-1)(x-2) \\cdots(x-99)+1}{x}$, 所以\n$$\nf(100)=\\frac{1+1}{100}=\\frac{1}{50} .\n$$\n说明对于二次三项式 $f(x)=a x^2+b x+c$, 若 $f(x)=0$ 有两个根 $x_1$ 、 $x_2$, 则 $f(x)=a\\left(x-x_1\\right)\\left(x-x_2\\right)$. 一般地, 一个 $n(\\geqslant 2)$ 次多项式 $f(x)= a_n x^n+a_{n-1} x^{n-1}+\\cdots+a_1 x+a_0$, 若它的 $n$ 个根为 $x_1, x_2, \\cdots, x_n$, 则 $f(x)= a_n\\left(x-x_1\\right)\\left(x-x_2\\right) \\cdots\\left(x-x_n\\right)$.",
+    "remark": "",
+    "figures": []
+}

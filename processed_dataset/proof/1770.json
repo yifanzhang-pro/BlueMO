@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 连结三角形内切圆的圆心和它的顶点的直线将原三角形分为三个三角形.\n若它们之中的一个三角形与原三角形相似,求三角形三个角的度数.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c1a3.png>), 设 $\\triangle A B C$ 的三个内角分别为 $\\alpha 、 \\beta$ 、 $\\gamma, O$ 为其内切圆圆心.\n点 $O$ 和 $\\triangle A B C$ 的三个顶点的连线是其三个内角的平分线.\n因为 $\\angle O B C=\\frac{\\beta}{2}$, $\\angle O C B=\\frac{\\gamma}{2}$, 则 $\\angle C O B=180^{\\circ}-\\frac{\\beta}{2}-\\frac{\\gamma}{2}=90^{\\circ}+\\frac{\\alpha}{2}$. 不失一般性, 设 $\\triangle A B C$ 和 $\\triangle C O B$ 相似.\n于是, $\\angle C O B$ 等于 $\\alpha, \\beta, \\gamma$ 中的一个.\n若 $\\angle C O B=\\alpha$, 则 $90^{\\circ}+\\frac{\\alpha}{2}=\\alpha$, 即\n$\\alpha=180^{\\circ}$, 这是不可能的.\n因此, $\\angle C O B=\\beta$ 或 $\\angle C O B=\\gamma$. 不妨设 $\\angle C O B=\\beta$, 则有 $\\angle O B C=\\alpha$ 或 $\\angle O B C=\\gamma$. 若是第一种情况, 有 $\\angle B C O=\\gamma$, 则 $\\frac{\\gamma}{2}=\\gamma$, 不可能.\n因此, $\\angle O B C=\\gamma, \\angle B C O=\\alpha$. 于是, $\\gamma=2 \\alpha, \\beta=2 \\gamma=4 \\alpha$. 因为 $\\alpha+\\beta+\\gamma= 180^{\\circ}$, 即 $\\alpha+2 \\alpha+4 \\alpha=180^{\\circ}$, 则 $\\alpha=\\left(\\frac{180}{7}\\right)^{\\circ}, \\beta=\\left(\\frac{720}{7}\\right)^{\\circ}, \\gamma=\\left(\\frac{360}{7}\\right)^{\\circ}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1a3.png"
+    ]
+}

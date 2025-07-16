@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设 $m 、 n 、 k$ 都是正整数,满足 $[m+k, m]=[n+k, n]$, 证明: $m=n$.",
+    "solution": "由本单元 (10) 可知,已知条件即为\n$$\n\\frac{(m+k) m}{(m+k, m)}=\\frac{(n+k) n}{(n+k, n)} \\text {. }\n$$\n由于 $(m+k, m)=(m, k),(n+k, n)=(n, k)$, 故由上式得\n$$\n\\frac{(m+k) m}{(m, k)}=\\frac{(n+k) n}{(n, k)} . \\label{eq1}\n$$\n我们设 $(m, k)=d_1$, 则 $m=m_1 d_1, k=k_1 d_1$, 其中 $\\left(m_1, k_1\\right)=1$.\n再设 $(n, k)=d_2$, 则 $n=n_1 d_2, k=k_2 d_2$, 其中 $\\left(n_1, k_2\\right)=1$. 于是等式\\ref{eq1}化为\n$$\n\\left(m_1+k_1\\right) m_1 d_1=\\left(n_1+k_2\\right) n_1 d_2 .\n$$\n将上式两边同乘 $k_1$, 并利用 $k_1 d_1=k_2 d_2(=k)$, 可得出\n$$\n\\left(m_1+k_1\\right) m_1 k_2=\\left(n_1+k_2\\right) n_1 k_1 .\n$$\n上式左边是 $k_2$ 的倍数, 故 $k_2$ 也整除右边, 即 $k_2 \\mid k_1 n_1^2$. 但 $\\left(k_2, n_1\\right)=1$, 故 $\\left(k_2\\right.$, $\\left.n_1^2\\right)=1$, 从而有 $k_2 \\mid k_1$. 同样可证明 $k_1 \\mid k_2$. 综合起来得到 $k_1=k_2$, 即 $(m, k)= (n, k)$. 故由 (1) 知 $(m+k) m=(n+k) n$, 由此易知 $m=n$.",
+    "remark": "",
+    "figures": []
+}

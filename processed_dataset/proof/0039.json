@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例9. 平面上整点的集合 $M=\\{(x, y) \\mid x, y \\in \\mathbf{Z}$, 且 $1 \\leqslant x \\leqslant 12,1 \\leqslant y \\leqslant 13\\}$. 证明: 不少于 49 个点的 $M$ 的每一个子集, 必包含一个矩形的 4 个顶点, 且此矩形的边平行于坐标轴.",
+    "solution": "分析:设 $S$ 为 $M$ 的任一个 49 元子集.\n其中纵坐标相同的点的横坐标的集合为:\n$$\nX_i=\\{x \\mid(x, i) \\in S\\}, i=1,2, \\cdots, 13 .\n$$\n若存在关于整点横坐标的二元集 $(r, s)$ 同时是 $X_i 、 X_j \\quad(i \\neq j)$ 的子集, 则原题得证.\n证明设 $S$ 为 $M$ 的任一个 49 元子集.\n令\n$$\nX_i=\\{x \\mid(x, i) \\in S\\}, i=1,2, \\cdots, 13,\n$$\n则 $\\left|X_i\\right|=x_i, \\sum_{i=1}^{13} x_i=49,0 \\leqslant x_i \\leqslant 12$. 记\n$$\nP_i=\\{\\{r, s\\} \\mid r \\neq s,(r, i),(s, i) \\in S\\}, i=1,2, \\cdots, 13 .\n$$\n显然, 全体 $P_i$ 中只有 $\\mathrm{C}_{12}^2=66$ 种不同的二元集.\n又 $\\sum_{i=1}^{13}\\left|P_i\\right|=\\sum_{i=1}^{13} \\mathrm{C}_{x_i}^2$, 考虑其最小值.\n利用局部调整: 当 $x_1+x_2=c$ 时,\n$$\n\\mathrm{C}_{x_1}^2+\\mathrm{C}_{x_2}^2=\\frac{c^2-c}{2}-x_1 x_2 \\geqslant \\frac{c^2-c}{2}-\\frac{c^2}{4},\n$$\n$x_1=\\left[\\frac{c}{2}\\right], x_2=c-\\left[\\frac{c}{2}\\right]$ 时, $\\mathrm{C}_{x_1}^2+\\mathrm{C}_{x_2}^2$ 取得最小值.\n由此知, $\\sum_{i=1}^{13} \\mathrm{C}_{x_i}^2$ 取得最小值必须是将 $49=\\sum_{i=1}^{13} x_i$ 尽可能地平均到 $\\left\\{x_i\\right\\}$ 中, 即 $\\left\\{x_i\\right\\}$ 中有 $j$ 个 $\\left[\\frac{49}{13}\\right]=3$, $(13-j)$ 个 $\\left[\\frac{49}{13}\\right]+1=4$, 从而得 $j=3$.\n所以\n$$\n\\left(\\sum_{i=1}^{13} \\mathrm{C}_{x_i}^2\\right)_{\\min }=3 \\mathrm{C}_3^2+10 \\mathrm{C}_4^2=69\n$$\n从而, 有\n$$\n\\sum_{i=1}^{13}\\left|P_i\\right|=\\sum_{i=1}^{13} \\mathrm{C}_{x_i}^2 \\geqslant 69>66\n$$\n由此推知存在 $i \\neq j$, 使得 $(r, s) \\in P_i,(r, s) \\in P_j$.\n故有 $(r, i),(s, i),(r, j),(s, j) \\in S$, 结论成立.",
+    "remark": "",
+    "figures": []
+}

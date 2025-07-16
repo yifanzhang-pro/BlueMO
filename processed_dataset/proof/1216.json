@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题32. 设 $x_i \\in \\mathbf{R}(i=1,2, \\cdots, n, n \\geqslant 3)$. 令 $p=\\sum_{i=1}^n x_i, q=\\sum_{1 \\leqslant i<j \\leqslant n} x_i x_j$, 求证:\n(1) $\\frac{n-1}{n} p^2-2 q \\geqslant 0$;\n(2) $\\left|x_i-\\frac{p}{n}\\right| \\leqslant \\frac{n-1}{n} \\sqrt{p^2-\\frac{2 n}{n-1} q}, i=1,2, \\cdots, n$.",
+    "solution": "(1) 由于 $(n-1) p^2-2 n q=(n-1)\\left(\\sum_{i=1}^n x_i\\right)^2-2 n \\sum_{1 \\leqslant i<j \\leqslant n} x_i x_j= (n-1) \\sum_{i=1}^n x_i^2-2 \\sum_{1 \\leqslant i<j \\leqslant n} x_i x_j=\\sum_{1 \\leqslant i<j \\leqslant n}\\left(x_i-x_j\\right)^2$, 所以 $\\frac{n-1}{n} p^2-2 q \\geqslant 0$;\n(2) $\\left|x_i-\\frac{p}{n}\\right|=\\frac{n-1}{n}\\left|\\frac{1}{n-1} \\sum_{k=1}^n\\left(x_i-x_k\\right)\\right|$. 由幂平均不等式, 得\n$$\n\\left|x_i-\\frac{p}{n}\\right| \\leqslant \\frac{n-1}{n} \\sqrt{\\frac{1}{n-1} \\sum_{k=1}^n\\left(x_i-x_k\\right)^2} \\leqslant \\frac{n-1}{n} \\sqrt{\\frac{1}{n-1} \\sum_{1 \\leqslant i<j \\leqslant n}\\left(x_i-x_k\\right)^2} \\text {. }\n$$\n由 (1) 的结果, 得 $\\left|x_i-\\frac{p}{n}\\right| \\leqslant \\frac{n-1}{n} \\sqrt{p^2-\\frac{2 n}{n-1} q}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例14. $\\triangle A B C$ 中, 求证:\n(1) $b \\cos C+c \\cos B=a$;\n(2) $\\frac{a^2-b^2}{c^2}=\\frac{\\sin (A-B)}{\\sin C}$.",
+    "solution": "分析:利用正、余弦定理来证.\n证法一\n(1) $b \\cos$\n$$\n\\begin{aligned}\nC+c \\cos B & =2 R \\sin B \\cos C+2 R \\sin C \\cos B \\\\\n& =2 R \\sin (B+C)=2 R \\sin A=a .\n\\end{aligned}\n$$\n(2) 因为 $\\sin ^2 A-\\sin ^2 B$\n$$\n\\begin{aligned}\n& =\\sin ^2 A-\\sin ^2 A \\sin ^2 B-\\sin ^2 B+\\sin ^2 A \\sin ^2 B \\\\\n& =\\sin ^2 A\\left(1-\\sin ^2 B\\right)-\\sin ^2 B\\left(1-\\sin ^2 A\\right) \\\\\n& =\\sin ^2 A \\cos ^2 B-\\cos ^2 A \\sin ^2 B \\\\\n& =(\\sin A \\cos B+\\cos A \\sin B)(\\sin A \\cos B-\\cos A \\sin B) \\\\\n& =\\sin (A+B) \\sin (A-B) .\n\\end{aligned}\n$$\n或者\n$$\n\\begin{aligned}\n\\sin ^2 A-\\sin ^2 B & =\\frac{1-\\cos 2 A}{2}-\\frac{1-\\cos 2 B}{2} \\\\\n& =-\\frac{1}{2}(\\cos 2 A-\\cos 2 B) \\\\\n& =\\sin (A+B) \\sin (A-B),\n\\end{aligned}\n$$\n所以 $\\frac{a^2-b^2}{c^2}=\\frac{\\sin (A+B) \\sin (A-B)}{\\sin ^2 C}=\\frac{\\sin C \\cdot \\sin (A-B)}{\\sin ^2 C}$\n$$\n=\\frac{\\sin (A-B)}{\\sin C} \\text {. }\n$$\n证法二 (1) $b \\cos C+c \\cos B=b \\cdot \\frac{a^2+b^2-c^2}{2 a b}+c \\cdot \\frac{c^2+a^2-b^2}{2 c a}$\n$$\n\\begin{aligned}\n& =\\frac{\\left(a^2+b^2-c^2\\right)+\\left(c^2+a^2-b^2\\right)}{2 a} \\\\\n& =\\frac{2 a^2}{2 a}=a .\n\\end{aligned}\n$$\n(2) $\\frac{\\sin (A-B)}{\\sin C}=\\frac{\\sin A \\cos B-\\cos A \\sin B}{\\sin C}$\n$$\n\\begin{aligned}\n& =\\frac{a \\cdot \\frac{a^2+c^2-b^2}{2 a c}-b \\cdot \\frac{b^2+c^2-a^2}{2 b c}}{c} \\\\\n& =\\frac{\\left(a^2+c^2-b^2\\right)-\\left(b^2+c^2-a^2\\right)}{2 c^2}=\\frac{a^2-b^2}{c^2} .\n\\end{aligned}\n$$\n评注 $\\triangle A B C$ 中, $b \\cos C+c \\cos B=a$ 的几何意义如图 (<FilePath:./images/volume3/figures/fig-c3e14-1.png>)和(<FilePath:./images/volume3/figures/fig-c3e14-2.png>) 所示, 即射影定理.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c3e14-1.png",
+        "./images/volume3/figures/fig-c3e14-2.png"
+    ]
+}

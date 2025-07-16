@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例18 已知 $f(x), g(x)$ 是定义在 $\\mathbf{R}$ 上递增的一次函数, $f(x)$ 为整数当且仅当 $g(x)$ 为整数.\n证明: 对一切 $x \\in \\mathbf{R}, f(x)-g(x)$ 为整数.",
+    "solution": "证设 $f(x)=a x+b, g(x)=c x+d, a>0, c>0$. 我们先证明 $a=c$.\n若不然, 由对称性不妨设 $a>c$.\n当 $x=-\\frac{b}{a}$ 时, $f(x)=0$, 因此 $g\\left(-\\frac{b}{a}\\right)$ 是整数; 当 $x=-\\frac{b-1}{a}$ 时, $f(x)=1$, 因此 $g\\left(-\\frac{b-1}{a}\\right)$ 是整数.\n故\n$$\ng\\left(-\\frac{b}{a}\\right)-g\\left(-\\frac{b-1}{a}\\right)=\\left(c \\cdot\\left(-\\frac{b}{a}\\right)+d\\right)-\\left(c \\cdot\\left(-\\frac{b-1}{a}\\right)+d\\right)=-\\frac{c}{a}\n$$\n是一个整数, 但这与 $a>c>0$ 矛盾, 又当 $x=-\\frac{b}{a}$ 时, $f(x)=0$, 因此 $g\\left(-\\frac{b}{a}\\right)=d-b$ 是整数, 因此对任意的 $x \\in \\mathbf{R}, f(x)-g(x)=b-d$ 是整数, 从而命题得证.",
+    "remark": "",
+    "figures": []
+}

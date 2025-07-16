@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题15. 设整数 $k, a_1, \\cdots, a_n$ 满足\n$$\n0<a_n<a_{n-1}<\\cdots<a_1 \\leqslant k,\n$$\n且对任意 $1 \\leqslant i, j \\leqslant n$, 都有 $\\left[a_i, a_j\\right] \\leqslant k$.\n证明: 对任意 $i \\in\\{1,2, \\cdots, n\\}$, 都有 $i a_i \\leqslant k$.",
+    "solution": "当 $i=1$ 时, $a_1 \\leqslant k$ 显然成立.\n设对 $1 \\leqslant s<n$, 有 $s a_s \\leqslant k$. 下证: $(s+1) a_{s+1} \\leqslant k$.\n若 $(s+1) a_{s+1} \\leqslant s a_s$, 则当然有 $(s+1) a_{s+1} \\leqslant k$; 若 $(s+1) a_{s+1}>s a_s$, 即 $a_{s+1}> s\\left(a_s-a_{s+1}\\right)$, 则 $\\frac{a_{s+1}}{a_s-a_{s+1}}>s$.\n注意到 $\\left[a_s, a_{s+1}\\right]=\\frac{a_s a_{s+1}}{\\left(a_s, a_{s+1}\\right)}$, 利用 $\\frac{a_{s+1}}{\\left(a_s, a_{s+1}\\right)} \\geqslant \\frac{a_{s+1}}{a_s-a_{s+1}}>s$, 结合 $\\frac{a_{s+1}}{\\left(a_s, a_{s+1}\\right)} \\in \\mathbf{N}^*$, 可知 $\\frac{a_{s+1}}{\\left(a_s, a_{s+1}\\right)} \\geqslant s+1$. 于是\n$$\n(s+1) a_{s+1}<(s+1) a_s \\leqslant \\frac{a_{s+1}}{\\left(a_s, a_{s+1}\\right)} \\cdot a_s=\\left[a_s, a_{s+1}\\right] \\leqslant k .\n$$\n故命题对 $s+1$ 也成立.",
+    "remark": "",
+    "figures": []
+}

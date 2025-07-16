@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设 $m \\geqslant n \\geqslant 1$, 证明: $\\frac{(m, n)}{m} \\mathrm{C}_m^n$ 是整数.",
+    "solution": "证明:因 $\\frac{x}{m} \\mathrm{C}_m^n$ 在 $x=m$ 时为 $\\mathrm{C}_m^n$, 是一个整数; 在 $x=n$ 时, 它是 $\\frac{n}{m} \\frac{m}{n} \\mathrm{C}_{m-1}^{n-1}=\\mathrm{C}_{m-1}^{n-1}$, 也是整数.\n又由裴蜀等式知, 存在整数 $u 、 v$, 使得\n$$\n(m, n)=m u+n v,\n$$\n故 $\\frac{(m, n)}{m} \\mathrm{C}_m^n=u \\mathrm{C}_m^n+v \\frac{n}{m} \\mathrm{C}_m^n$ 是整数.",
+    "remark": "注:由例 1 推出, 若 $m 、 n$ 为互素的正整数,则 $m \\mid \\mathrm{C}_m^n$. 这一结论也可如下证明: 因 $\\mathrm{C}_m^n=\\frac{m}{n} \\mathrm{C}_{m-1}^{n-1}$, 故 $n \\mathrm{C}_m^n=m \\mathrm{C}_{m-1}^{n-1}$. 由于 $\\mathrm{C}_{m-1}^{n-1}$ 为整数, 故 $m \\mid n \\mathrm{C}_m^n$, 但 $(m$, $n)=1$, 从而 $m \\mid \\mathrm{C}_m^n$.\n特别地, 设 $p$ 是一个素数, 由于每个 $k=1, \\cdots, p-1$ 均与 $p$ 互素, 故我们有 $p \\mid \\mathrm{C}_p^k$, 对 $k=1, \\cdots, p-1$ 成立, 这一结论, 用处很多.",
+    "figures": []
+}

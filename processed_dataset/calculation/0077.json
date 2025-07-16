@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题10 设 $k$ 为正整数, $M_k$ 是 $2 k^2+k$ 与 $2 k^2+3 k$ 之间 (包括这两个数在内) 的所有整数组成的集合.\n能否将 $M_k$ 拆分为两个不相交的子集 $A 、 B$, 使得\n$$\n\\sum_{x \\in A} x^2=\\sum_{x \\in B} x^2 ?\n$$",
+    "solution": "当 $k=1$ 时, $3^2+4^2=5^2$; 当 $k=2$ 时, $10^2+11^2+12^2=13^2+14^2$. 猜想: $M_k$ 中前 $k+1$ 个数的平方和与后 $k$ 个数的平方和相等.",
+    "remark": "",
+    "figures": []
+}

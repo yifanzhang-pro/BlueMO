@@ -1,0 +1,63 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 在线段 $A B$ 上关于它的中点 $M$ 对称地放置 $2 n$ 个点.
+任意将这 $2 n$ 个点中的 $n$ 个染成红点, 另 $n$ 个染成蓝点.
+证明: 所有红点到 $A$ 的距离之和等于所有蓝点到 $B$ 的距离之和.
+%%<SOLUTION>%%
+记所有红 (蓝)点到 $A(B)$ 的距离之和为 $S_{\text {红 }}\left(S_{\text {蓝 }}\right.$ ). 首先考察一个极端情形: $n$ 个蓝点均在中点 $M$ 的左边, $n$ 个红点均在中点 $M$ 的右边.
+此时显然有个蓝点 $D$. 我们取左边任一红点 $C$ 改为蓝点, 右边任意蓝点 $D$ 改为红点, 其余点的颜色不变, 则涂红色的点到 $A$ 的距离的总和 $S_{\text {红 }}{ }^{\prime}=S_{\text {红 }}+C D$, 涂蓝色的点到 $B$ 的距离的总和 $S_{\text {蓝 }}{ }^{\prime}=S_{\text {蓝 }}+C D$, 从而 $S_{\text {红 }}{ }^{\prime}-S_{\text {蓝 }}{ }^{\prime}=S_{\text {红 }}-S_{\text {蓝是常量.
+}}$. 于是, 经过有限次调整, 可将 $2 n$ 个点调整到前述极端情形, 因而结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 空间有 1989 个点, 其中任何三点不共线, 把它们分成点数各不相同的 30 组,在任何三个不同的组中各取一点为顶点作三角形, 问要使三角形的总数最大,各组的点数应是多少? 
+%%<SOLUTION>%%
+设 30 组的点数为 $n_1, n_2, \cdots, n_{30}$, 则 $n_1, n_2, \cdots, n_{30}$ 各不相同, 且 $n_1+ n_2+\cdots+n_{30}=1989$, 三角形总数为 $S=\sum_{1 \leqslant i<j<k \leqslant 30} n_i n_j n_k$. 因为分组的方法数是有限的, 所以 $S$ 的最大值是存在的.
+由对称性, 不妨设 $n_1<n_2<\cdots<n_{30}$. 首先证明: 使 $S$ 取最大值的分组方式具有下列性质: (1) $n_{k+1}-n_k \leqslant 2(k=1$, $2, \cdots, 29)$. 事实上, 若存在 $k_0$ 使 $n_{k_0+1}-n_{k_0} \geqslant 3,\left(1 \leqslant k_0 \leqslant 29\right)$. 不妨设 $k_0=1$, 即 $n_2-n_1 \geqslant 3$, 这时令 $n_1{ }^{\prime}=n_1+1, n_2{ }^{\prime}=n_2-1, n_k{ }^{\prime}=n_k(3 \leqslant k \leqslant 30)$, 对应于分法 $\left\{n_1{ }^{\prime}, n_2{ }^{\prime}, \cdots, n_{30}{ }^{\prime}\right\}$ 的三角形总数为 $S^{\prime}$. 则由 $S=n_1 n_2 \sum_{3 \leqslant k \leqslant 30} n_k+\left(n_1+n_2\right) \sum_{3 \leqslant i<j \leqslant 30} n_i n_j+\sum_{3 \leqslant i<j<k \leqslant 30} n_i n_j n_k$ 及 $n_1+n_2=n_1{ }^{\prime}+n_2{ }^{\prime}$ 易得 $S^{\prime}-S=\left(n_1{ }^{\prime} n_2{ }^{\prime}-n_1 n_2\right) \sum_{3 \leqslant k \leqslant 30} n_k=\left[n_2-\left(n_1+1\right)\right] \sum_{3 \leqslant k \leqslant 30} n_k>0$, 即 $S^{\prime}>S$. 这与 $S$ 的最大性假设矛盾; (2) 使 $n_{k+1}-n_k=2$ 的 $k$ 至多只有一个.
+事实上, 若存在 $k_1<k_2$, 使 $n_{k_1+1}-n_{k_1}=2, n_{k_2+1}-n_{k_2}=2$, 这时取 $n_{k_1}{ }^{\prime}=n_{k_1}+1$, $n_{k_2}{ }^{\prime}=n_{k_2}-1, n_i{ }^{\prime}=n_i\left(i \neq k_1, k_2, 1 \leqslant i \leqslant 30\right)$ 则同上可得出对应于分组 $\left\{n_1{ }^{\prime}, n_2{ }^{\prime}, \cdots, n_{30}{ }^{\prime}\right\}$ 的三角形总数 $S^{\prime}$ 也大于 $S$ 矛盾.
+因为 $\sum_{i=1}^{30} n_i=1989$. 故不可能全有 $n_{k+1}-n_k=1(k=1,2, \cdots, 30)$. 否则 $n_1, \cdots, n_{30}$ 是公差为 1 的等差数列, 于是 $1989=\sum_{i=1}^{30} n_i=15\left(n_1+n_{30}\right)$, 即 15 整除 1989 , 矛盾.
+因而恰有一个 $k_0$ 使 $n_{k_0+1}-n_{k_0}=2$. 即 30 个数为 $n_1, n_1+1, \cdots, n_1+\left(k_0-1\right), n_1+ \left(k_0+1\right), \cdots, n_1+30$. 于是 $1989+k_0=\frac{1}{2} \times 30 \times\left(n_1+1+n_1+30\right)= 15\left(2 n_1+31\right)$, 所以 $k_0=6, n_1=51$. 故所求各组中所含点数为 $51,52, \cdots$, $56,58,59, \cdots, 81$ 时三角形的总数为最大.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 求最大正整数 $m$, 使 $m \times m$ 的正方形可剖分为 7 个两两无公共内点的矩形且 7 个矩形的 14 条边长为 $1,2,3,4,5,6,7,8,9,10,11,12,13$, 14.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c11a3.png>), 考虑一般情形: 设 $a_1, a_2, \cdots, a_{2 n}$ 是 $1,2, \cdots, 2 n$ 的任意排列, 求 $S_n= a_1 a_2+a_3 a_4+\cdots+a_{2 n-1} a_{2 n}$ 的最大值.
+对 $n$ 用归纳法, $n=1$ 时, $S_1=1 \times 2$, $n=2$ 时, $S_2 \leqslant \max \{1 \times 2+3 \times 4,1 \times 3+2 \times 4,1 \times 4+2 \times 3\}=1 \times 2+ 3 \times 4$. 设 $S_k \leqslant 1 \times 2+3 \times 4+\cdots+(2 k-1)(2 k)$, 那么 $n=k+1$ 时, 设 $S_{k+1}=a_1 a_2+a_3 a_4+\cdots+a_{2 k+1} a_{2 k+2}$, 分两种情形: (1)若 $2 k+1,2 k+2$ 出现在 $S_{k+1}$ 中同一项中, 不妨设 $a_{2 k+1} a_{2 k+2}=(2 k+1)(2 k+2)$, 则由归纳假设有 $S_{k+1}=a_1 a_2+\cdots+a_{2 k-1} a_{2 k}+(2 k+1)(2 k+2) \leqslant 1 \times 2+3 \times 4+\cdots+(2 k-$ 1) $(2 k)+(2 k+1)(2 k+2)$; (2) 若 $2 k+1$ 与 $2 k+2$ 出现在 $S_{k+1}$ 的两个不同的项中, 不妨设 $a_{2 k-1}=2 k+1, a_{2 k+1}=2 k+2$, 注意到 $\left[a_{2 k} a_{2 k+2}+(2 k+1)(2 k+\right. 2)]-\left[(2 k+1) a_{2 k}+(2 k+2) a_{2 k+2}\right]=\left[a_{2 k}-(2 k+2)\right]\left[a_{2 k+2}-(2 k+1)\right]>$ 0 , 所以 $S_{k+1}<a_1 a_2+\cdots+a_{2 k-3} a_{2 k-2}+a_{2 k} a_{2 k+2}+(2 k+1)(2 k+2) \leqslant 1 \times 2+ 3 \times 4+\cdots+(2 k-1)(2 k)+(2 k+1)(2 k+2)$. 这就证明了, 对一切 $n \in \mathbf{N}_{+}$, 有 $S_n \leqslant 1 \times 2+3 \times 4+\cdots+(2 n-1)(2 n)$. 回到原题, 若满足题目条件的分割存在, 则 $m^2 \leqslant 1 \times 2+3 \times 4+\cdots+13 \times 14=504$, 所以 $m \leqslant[\sqrt{504}]=22$. 下面两个图形都说明 $m=22$ 可以达到.
+故所求 $m$ 的最大值为 22 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 考虑 $1,2, \cdots, 20$ 的排列 $\left(a_1, a_2, \cdots, a_{20}\right)$, 对此排列进行如下的操作: 对换其中某两个数的位置, 目标是将此排列变为 $(1,2, \cdots, 20)$, 设对每一个排列 $a=\left(a_1, a_2, \cdots, a_{20}\right)$, 达到目标所需要进行操作次数的最小值记为 $k_a$, 求 $k_a$ 的最大值.
+%%<SOLUTION>%%
+首先,对任意排列 $a=\left(a_1, a_2, \cdots, a_{20}\right)$, 显然可以在 19 次操作之内, 将它变为 $(1,2, \cdots, 20)$, 故 $k_a \leqslant 19$. 下面证明: 当 $a=(2,3, \cdots, 20,1)$ 时, 至少要操作 19 次操作, 才能变为 $(1,2, \cdots, 20)$. 为此, 引人循环圈的概念: 设排列中第 $b_1$ 个位置上的数是 $b_2$, 第 $b_2$ 个位置上的数是 $b_3, \cdots$, 第 $b_{k-1}$ 个位置上的数是 $b_k$, 第 $b_k$ 个位置上的数是 $b_1$, 则将 $b_1 \rightarrow b_2 \rightarrow \cdots \rightarrow b_k \rightarrow b_1$ 称为一个循环圈, 特别第 $b_1$ 个位置上的数是 $b_1$ 时, 则 $b_1 \rightarrow b_1$ 也是一个循环圈.
+于是每个排列可以分拆为若干个不相交的循环圈.
+设排列 $a=\left(a_1, a_2, \cdots, a_{20}\right)$ 中循环圈的个数记为 $f(a)$, 我们考察每次操作后 $f(a)$ 的变化.
+(1) 当操作是将同一循环圈内两数 $b_i, b_j(i<j)$ 交换时, 则循环圈 $b_1 \rightarrow b_2 \rightarrow \cdots \rightarrow b_k \rightarrow b_1$ 被分拆成两个循环圈: $b_1 \rightarrow b_2 \rightarrow \cdots \rightarrow b_i \rightarrow b_{j+1} \rightarrow \cdots \rightarrow b_k \rightarrow b_1$ 和 $b_{i+1} \rightarrow b_{i+2} \rightarrowb_{j-1} \rightarrow b_j \rightarrow b_{i+1}$ ;(2) 当操作将两个循环圈 $b_1 \rightarrow b_2 \rightarrow \cdots \rightarrow b_k \rightarrow b_1$ 和 $c_1 \rightarrow c_2 \rightarrow \cdots \rightarrow c_m \rightarrow c_1$ 中两个数 $b_1$ 与 $c_1$ 交换时, 这两个循环圈合并成一个循环圈 $b_1 \rightarrow c_2 \rightarrow c_3 \rightarrow \cdots \rightarrow c_m \rightarrow c_1 \rightarrow b_2 \rightarrow b_3 \rightarrow \cdots \rightarrow b_k \rightarrow b_1$. 因此, 每次操作后, $f(a)$ 总是增加 1 或减少 1 . 注意到 $a=(2,3, \cdots, 20,1)$ 只有一个循环圈 $1 \rightarrow 2 \rightarrow 3 \rightarrow \cdots \rightarrow 20 \rightarrow 1$, 而 $(1,2, \cdots, 20)$ 有 20 个圈 $(1,1),(2,2), \cdots,(20,20)$. 因此, 从 $a$ 变到 $(1,2,3, \cdots, 20)$ 至少要作 19 次操作,于是所求 $k_a$ 的最大值为 19 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 黑板上写着 $1,2, \cdots, 20$, 某人任选两个差至少为 2 的数, 将较小的数加 1 , 同时将较大的数减 1 , 再将所得的数写在黑板上代替选取的那两个数, 直到这种操作不能再进行时为止.
+试求其操作次数的最大值.
+%%<SOLUTION>%%
+注意到每次操作后, 所有数的和不变, 都为 $1+2+3+\cdots+20=210$. 考虑黑板上所写各数的平方和 $f$. 设此人所选数为 $m, n(m-n \geqslant 2)$, 则 $(m- 1)^2+(n+1)^2=m^2+n^2+2-2(m-n) \leqslant m^2+n^2-2$, 即每次操作后, 黑板上各数的平方和 $f$ 至少减少 2 , 当且仅当 $m-n=2$ 时, $f$ 恰减少 2 , 并且操作停止的充要条件是黑板上任意两个数之差的绝对值最大为 1 . 由于各数之和恒为 210 易知这种情况只在黑板上恰有 10 个数为 10 , 恰有 10 个数为 11 时出现.
+开始时各数的平方和为 $f_0=1^2+2^2+\cdots+20^2=\frac{1}{6} \times 20 \times 21 \times 41=2870$. 假设最多经过 $k$ 次操作后, 操作无法继续进行, 这时各数的平方和为 $f_k= 10 \times 10^2+10 \times 11^2=2210$. 而每次操作后平方和至少减少 2 , 所以操作次数 $k \leqslant \frac{1}{2}(2870-2210)=330$. 下面证明: 此人可以恰操作 330 次, 即只要保证每次操作选取的两个数的差的绝对值恰等于 2. 若黑板上的最大数和最小数之间的所有数至少出现一次,则称黑板上的这些数是 "恰当的". 开始时, 黑板上的数是恰当的, 记其中最大数为 $b$, 最小数为 $a(b-a \geqslant 2)$. 此人先对 $a$ 与 $a+2$ 进行操作,再对 $a+1$ 与 $a+3$ 进行操作,然后对 $a+2$ 与 $a+4$ 进行操作, $\cdots$, 直到对 $b-2$ 与 $b$ 进行操作, 经过这样一轮操作后, 黑板上等于 $a$ 和 $b$ 的个数减少 1 , 等于 $a+1, b-1$ 的数个数增加 1 , 并且黑板上得到的数仍然是恰当的.
+从开始情形起反复地进行如上操作, 直到不能操作为止.
+因每次操作恰使各数的平方和减少 2. 故操作的次数恰为 330 次.
+综上可得所求操作次数的最大值为 330. (注,本题中选择的目标函数 $f$ 为各数的平方和.
+%%PROBLEM_END%%
+
+

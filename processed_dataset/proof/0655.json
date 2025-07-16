@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter16.tex",
+    "problem_type": "proof",
+    "problem": "例2. 以 $f(n, k)$ 表示正整数 $n$ 的不小于 $k$ 的约数个数.\n求 $\\sum_{k=1}^{1000} f(1000+ k, k)$.",
+    "solution": "解:们证明一般的结论: 对 $n \\in \\mathbf{N}^*$, 有\n$$\n\\sum_{k=1}^n f(n+k, k)=2 n . \\label{eq1}\n$$\n对 $n, i \\in \\mathbf{N}^*$, 当 $i$ 是 $n$ 的约数时, 令 $g_n(i)=1$; 否则令 $g_n(i)=0$, 则\n$$\n\\begin{aligned}\n& \\sum_{k=1}^n f(n+k, k)=\\sum_{k=1}^n \\sum_{i=k}^{n+k} g_{n+k}(i) \\\\\n= & \\sum_{k=1}^n \\sum_{i=k}^n g_{n+k}(i)+\\sum_{k=1}^n \\sum_{i=n+1}^{n+k} g_{n+k}(i)=A+B . \\label{eq2}\n\\end{aligned}\n$$\n显然在 $i$ 个相邻整数 $n+1, n+2, \\cdots, n+i$ 中, $i$ 恰好是其中一个数的约数, 从而交换求和次序得\n$$\nA=\\sum_{i=1}^n \\sum_{k=1}^i g_{n+k}(i)=\\sum_{i=1}^n 1=n, \\label{eq3}\n$$\n又当 $1 \\leqslant k \\leqslant n$ 时, 在 $n+1, n+2, \\cdots, n+k$ 中仅有 $n+k$ 是 $n+k$ 的约数, 故\n$$\nB=\\sum_{k=1}^n 1=n . \\label{eq4}\n$$\n将 式\\ref{eq3}、\\ref{eq4} 两式代入 式\\ref{eq2}, 可得 式\\ref{eq1} 成立.\n从而, $\\sum_{k=1}^{1000} f(1000+k, k)=2000$.",
+    "remark": "注:本例中, 观察可知, 求和项 $f(1000+k, k)$ 的取值状况杂乱无章, 很难直接计算.\n故而不妨将 1000 改为较小的数, 从简单情况考虑起, 先猜测出形如 \\ref{eq1} 式的一般结论.\n上述证明过程写得比较形式, 实际上可通俗地理解为: 考虑满足 $1 \\leqslant k \\leqslant i \\leqslant n+k \\leqslant 2 n, i \\mid n+k$ 的数组 $(n+k, i)$ 的个数, 通过转换观点, 固定每个 $i$ 来进行计数, 即 \"换序求和\", 最终利用剩余类的性质简化了求和计算.",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 已知在不等边 $\\triangle A B C$ 中, 三边 $B C 、 C A 、 A B$ 的长度成等差数列.\n$I 、 O$ 分别是 $\\triangle A B C$ 的内心、外心.\n证明: [1] $I O \\perp B I$; [2] 若 $B I$ 交 $A C$ 于点 $K$, $D 、 E$ 分别是边 $B C 、 A B$ 的中点, 则 $I$ 是 $\\triangle D E K$ 的外心.",
+    "solution": "证明: [1] 如图(<FilePath:./images/volume7/figures/fig-c3a7.png>), 作出 $\\triangle A B C$ 的外接圆 $\\odot O$, 记 $B I$ 的延长线与 $\\odot O$ 交于点 $P$, 连结 $A P 、 C P$, 则 $P A=C P= I P$. 对圆内接四边形 $A B C P$ 应用托勒密定理可得: $A C$. $B P=A B \\cdot C P+A P \\cdot B C=(A B+B C) \\cdot I P \\cdots$ (1). 由题意得 $2 A C=A B+B C$. 代入式 (1) 得 $B P=2 I P$, 即 $I$ 是 $B P$ 的中点.\n从而, $O I \\perp B I$.\n[2] 由三角形角平分线的性质知 $\\frac{A K}{K C}=\\frac{A B}{B C}$. 结合\n$A K+K C=A C, 2 A C=A B+B C$, 可得 $A K=\\frac{A B}{2}= A E, C K=\\frac{B C}{2}=C D$. 从而, $\\triangle A I E \\cong \\triangle A I K, \\triangle C I D \\cong \\triangle C I K$. 于是, $I E= I K=I D$. 所以, $I$ 是 $\\triangle D E K$ 的外心.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c3a7.png"
+    ]
+}

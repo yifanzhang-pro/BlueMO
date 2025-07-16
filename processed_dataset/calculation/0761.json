@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题13 不等式 $\\arccos x>\\arcsin x$ 的解集是",
+    "solution": "$\\left[-1, \\frac{\\sqrt{2}}{2}\\right)$. 显然 $-1 \\leqslant x \\leqslant 0$ 时, 原不等式恒成立; 当 $x>0$ 时, 由 $\\arccos x>\\arcsin x$, 得 $\\sqrt{1-x^2}>x$, 即 $x^2<\\frac{1}{2}$, 所以 $0<x<\\frac{\\sqrt{2}}{2}$, 综上所述, $x \\in\\left[-1, \\frac{\\sqrt{2}}{2}\\right)$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 若实数 $x_1, x_2, x_3, x_4, x_5$ 满足方程组:\n$$\n\\left\\{\\begin{array}{l}\nx_1 x_2+x_1 x_3+x_1 x_4+x_1 x_5=-1, \\\\\nx_2 x_1+x_2 x_3+x_2 x_4+x_2 x_5=-1, \\\\\nx_3 x_1+x_3 x_2+x_3 x_4+x_3 x_5=-1, \\\\\nx_4 x_1+x_4 x_2+x_4 x_3+x_4 x_5=-1, \\\\\nx_5 x_1+x_5 x_2+x_5 x_3+x_5 x_4=-1 .\n\\end{array}\\right.\n$$\n求 $x_1$ 的所有可能值.",
+    "solution": "设 $S=x_1+x_2+x_3+x_4+x_5$, 则由已知得 $x_1, x_2, x_3, x_4, x_5$ 均满足方程 $x^2-S x-1=0$.\n由此可知 $x_1, x_2, x_3, x_4, x_5$ 取值于 $\\frac{S \\pm \\sqrt{S^2+4}}{2}$, 所以\n$$\nx_1+x_2+x_3+x_4+x_5=\\frac{5 S+\\varepsilon \\sqrt{S^2+4}}{2},\n$$\n其中 $\\varepsilon \\in\\{ \\pm 1, \\pm 3, \\pm 5\\}$. 从而有 $S=\\frac{5 S+\\varepsilon \\sqrt{S^2+4}}{2}$, 即 $3 S=-\\varepsilon \\sqrt{S^2+4}$.\n进一步由 $|3 S|=\\left|-\\varepsilon \\sqrt{S^2+4}\\right|>|\\varepsilon S|$ 可知只能是 $\\varepsilon= \\pm 1$, 故易得 $S= \\pm \\frac{\\sqrt{2}}{2}$\n当 $S=\\frac{\\sqrt{2}}{2}$ 时, $x_1^2-\\frac{\\sqrt{2}}{2} x_1-1=0$, 解得 $x_1=\\sqrt{2}$ 或 $x_1=-\\frac{\\sqrt{2}}{2}$; 当 $S=-\\frac{\\sqrt{2}}{2}$ 时, 同理得 $x_1=-\\sqrt{2}$ 或 $x_1=\\frac{\\sqrt{2}}{2}$.\n所以 $x_1$ 的所有可能值为 $\\pm \\sqrt{2}, \\pm \\frac{\\sqrt{2}}{2}$.",
+    "remark": "注:条件中的 5 个方程具有明显的循环特征,这就提示我们从整体考虑问题.\n纵观全局, 联想到引人辅助量 $S=x_1+x_2+x_3+x_4+x_5$, 从而将原先具有 5 个变元的方程组转化为考虑 \" $x_1, x_2, x_3, x_4, x_5$ 可能取 $x^2-S x-1=0$ 两根各多少次\" 的简单问题.",
+    "figures": []
+}

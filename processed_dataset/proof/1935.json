@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例8. 是否存在 $\\theta \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$, 使 $z^2+8 z+9=(z-\\tan \\theta)(z-\\tan 3 \\theta)$ 对一切复数 $z$ 恒成立?",
+    "solution": "分析:与解结论是否定的.\n用反证法, 假设存在一个 $\\theta \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$, 使题中的等式成立.\n特别地, 取 $z=\\mathrm{i}$, 得\n$$\n\\begin{aligned}\n8+8 i & =(i-\\tan \\theta)(i-\\tan 3 \\theta)=i(1+i \\tan \\theta) \\cdot i(1+i \\tan 3 \\theta) \\\\\n& =-\\frac{(\\cos \\theta+i \\sin \\theta)(\\cos 3 \\theta+i \\sin 3 \\theta)}{\\cos \\theta \\cos 3 \\theta}=-\\frac{\\cos 4 \\theta+i \\sin 4 \\theta}{\\cos \\theta \\cos 3 \\theta}\n\\end{aligned} \\label{eq1}\n$$\n从而, 有 $\\tan 4 \\theta=1, \\cos 4 \\theta= \\pm \\frac{\\sqrt{2}}{2}$.\n比较 式\\ref{eq1}的实部,便有\n$$\n\\begin{gathered}\n8=-\\frac{\\cos 4 \\theta}{\\cos \\theta \\cos 3 \\theta}=-\\frac{2 \\cos 4 \\theta}{\\cos 4 \\theta+\\cos 2 \\theta}, \\\\\n\\cos 4 \\theta+\\cos 2 \\theta=-\\frac{1}{4} \\cos 4 \\theta, \\\\\n-\\frac{5}{4} \\cos 4 \\theta=\\cos 2 \\theta, \\\\\n\\frac{25}{16} \\cos ^2 4 \\theta=\\cos ^2 2 \\theta=\\frac{1+\\cos 4 \\theta}{2},\n\\end{gathered}\n$$\n即有\n$$\n25 \\cos ^2 4 \\theta=8(1+\\cos 4 \\theta) .\n$$\n将 $\\cos 4 \\theta= \\pm \\frac{\\sqrt{2}}{2}$ 代入上式, 显然左端是有理数, 而右端是无理数,矛盾.\n故不存在这样的 $\\theta$,使等式恒成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,217 @@
+
+%%TEXT_BEGIN%%
+如果把一个图画在平面上时, 能够使它的边仅在端点处相交, 那么称这个图为平面图.
+有些图形从表面上看有几条边是相交的, 但是不能就此肯定它不是平面图,例如图(<FilePath:./figures/fig-c7i1-1.png>), 表面看有几条边相交,但是把它画成与它同构的如图(<FilePath:./figures/fig-c7i1-2.png>), 则可看出它是一个平面图.
+我们说到一个平面图, 总假定它已经按这样的要求画好了.
+一个平面图的顶点和边把平面分成一个一个互相隔开的区域, 每一个这样的区域称为平面图的一个面.
+这些面中有一个在所有边的外面, 称为外部面,其余的就称为内部面.
+例如图(<FilePath:./figures/fig-c7i2.png>) 中, $F_1 、 F_2 、 F_3 、 F_4$ 是内部面, $F_5$ 是外部面.
+在中学课本中已经见到过关于凸多面体的欧拉公式, 设凸多面体有 $v$ 个顶点、 $e$ 条棱和 $f$ 块面,则 $v-e+f=2$. 我们可以把这个公式推广到平面图上来.
+定理一(欧拉定理)如果一个连通的平面图 $G$ 有 $v$ 个顶点、 $e$ 条边、 $f$ 个面, 那么
+$$
+v-e+f=2 .
+$$
+证明对 $G$ 的边数用数学归纳法.
+若 $G$ 只有一个顶点, 则 $v=1, e=0, f=1$, 故 $v-e+f=2$ 成立.
+若 $G$ 为一条边, 则 $v=2, e=1, f=1$, 所以 $v-e+f=2$ 成立.
+设 $G$ 为 $k$ 条边时欧拉公式成立, 即 $v_k-e_k+f_k=2$. 现考察 $G$ 为 $k+1$ 条边时的情形.
+由于在 $k$ 条边的连通图上增加一条边, 使它仍为连通图, 只有两种情形:
+(i) 增加一个新顶点 $v^{\prime}, v^{\prime}$ 与图中的一点 $v$ 相邻, 如图(<FilePath:./figures/fig-c7i3-1.png>) 所示, 此时 $v_k$ 与 $e_k$ 都增加 1 , 而面数 $f_k$ 不变, 故
+$$
+\left(v_k+1\right)-\left(e_k+1\right)+f_k=v_k-e_k+f_k=2 .
+$$
+(ii) 用一条边连接图中的两个顶点 $v$ 和 $v^{\prime}$, 如图(<FilePath:./figures/fig-c7i3-2.png>) 所示, 这时 $e_k$ 和 $f_k$ 都增加 1 而顶点数 $v_k$ 没有变, 故
+$$
+v_k-\left(e_k+1\right)+\left(f_k+1\right)=v_k-e_k+f_k=2 .
+$$
+按归纳法原理,定理对任何正整数 $e$ 成立.
+欧拉定理的一个重要应用是由此可以决定一个平面简单图中最多的边数.
+因为一个面上至少有 3 条边, $f$ 个面的边界上至少有 $3 f$ 条边.
+另外,一条边最多是 2 个面的边界,所以
+$$
+2 e \geqslant 3 f, f \leqslant \frac{2}{3} e .
+$$
+代入欧拉公式:
+$$
+2=v-e+f \leqslant v-e+\frac{2}{3} e,
+$$
+即
+$$
+e \leqslant 3 v-6
+$$
+这就证明了下面的定理.
+定理二一个连通的平面简单图 $G$ 有 $v(v \geqslant 3)$ 个顶点及 $e$ 条边, 则 $e \leqslant 3 v-6$.
+其实定理二对不连通的平面简单图也成立.
+应用定理二可以判定某些图是非平面图.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+欧拉公式和导出的不等式虽然可以用来否定一些图是平面图, 但是它对于肯定一个图是平面图却无能为力.
+1930 年波兰数学家库拉托夫斯基证明了一个简洁而漂亮的结果: 所有非平面图都包含着 $K_5$ 或 $K_{3,}{ }_3$ 作为子图.
+为了明确地叙述这个结果, 先给出两个图"同肧"的概念.
+如果两个图中的一个图是由另一个图的边上插人一些新的顶点而得到的,那么,这两个图称为同胚的.
+如图(<FilePath:./figures/fig-c7i4.png>) 中的两个图是同胚的.
+根据两个图同胚的概念, 可以知道一个图的边上插人或删去一些度数为 2 的顶点后,不影响图的平面性.
+下面给出库拉托夫斯基定理:
+定理三一个图是平面图当且仅当它不包含同胚于 $K_5$ 或 $K_{3,3}$ 的子图.
+这个定理虽然很基本, 但证明很长, 故从略.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+1968 年, 两位苏联数学家柯耶瑞夫 (Kozyrev) 和戈林伯格 (Grinberg) 给出了平面图具有哈密顿圈的一个必要条件.
+定理四如果一个平面图有哈密顿圈 $c$, 用 $f_i^{\prime}$ 表示在 $c$ 的内部的 $i$ 边形的个数,用 $f_i^{\prime \prime}$ 表示在 $c$ 的外部的 $i$ 边形的个数,则
+(1) $1 \cdot f_3^{\prime}+2 \cdot f_4^{\prime}+3 \cdot f_5^{\prime}+\cdots=n-2$;
+(2) $1 \cdot f_3^{\prime \prime}+2 \cdot f_4^{\prime \prime}+3 \cdot f_5^{\prime \prime}+\cdots=n-2$;
+(3) $1 \cdot\left(f_3^{\prime}-f_3^{\prime \prime}\right)+2 \cdot\left(f_4^{\prime}-f_4^{\prime \prime}\right)+3 \cdot\left(f_5^{\prime}-f_5^{\prime \prime}\right)+\cdots=0$.
+其中 $n$ 为 $G$ 的顶点数, 显然也是 $c$ 的长.
+证明设 $c$ 的内部有 $d$ 条边.
+由于 $G$ 是平面图,它的边都不相交,所以一条边把它经过的面分成两部分.
+设想这些边是一条一条地放进图里去的, 每放进一条边就使 $c$ 内部的面增加一个, 因此 $d$ 条边把 $c$ 的内部分成了 $d+1$ 个面.
+于是 $c$ 的内部的面的总数为
+$$
+f_2^{\prime}+f_3^{\prime}+f_4^{\prime}+f_5^{\prime}+\cdots=d+1 . \label{eq1}
+$$
+在 $c$ 内每个 $i$ 边形中记上数字 $i$, 各面所记数字之和就是围成这些面的边的总数, $c$ 内部的每一条边都被数了两次, 而 $c$ 上的 $n$ 条边, 每条边都只数了一次,于是
+$$
+2 f_2^{\prime}+3 f_3^{\prime}+4 f_4^{\prime}+5 f_5^{\prime}+\cdots=2 d+n . \label{eq2}
+$$
+\ref{eq2} 式减去\ref{eq1}式的两倍,得
+$$
+1 \cdot f_3^{\prime}+2 \cdot f_4^{\prime}+3 \cdot f_5^{\prime}+\cdots=n-2 . \label{eq3}
+$$
+类似地可以推得
+$$
+1 \cdot f_3^{\prime \prime}+2 \cdot f_4^{\prime \prime}+3 \cdot f_5^{\prime \prime}+\cdots=n-2 . \label{eq4}
+$$
+式\ref{eq3}、\ref{eq4}两式相减即得
+$$
+1 \cdot\left(f_3^{\prime}-f_3^{\prime \prime}\right)+2 \cdot\left(f_4^{\prime}-f_4^{\prime \prime}\right)+3 \cdot\left(f_5^{\prime}-f_5^{\prime \prime}\right)+\cdots=0 .
+$$
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 证明完全图 $K_5$ 不是平面图.
+%%<SOLUTION>%%
+证明:因为 $v=5, e==10$ 不满足 $e \leqslant 3 v-6$, 所以 $K_5$ 不是平面图.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 证明 $K_{3,3}$ 图不是平面图.
+%%<SOLUTION>%%
+证明:如果 $K_{3,3}$ 是平面图, 因为在 $K_{3,3}$ 中任取 3 个顶点, 其中必有两个顶点不相邻,故每一个面都至少有 4 条边围成, 由
+$$
+4 f \leqslant 2 e, f \leqslant \frac{e}{2} .
+$$
+代入欧拉公式
+$$
+2=v-e+f \leqslant v-e+\frac{e}{2},
+$$
+即
+$$
+e \leqslant 2 v-4 \text {. }
+$$
+在 $K_{3,3}$ 中, $v=6, e=9$, 且 $9>2 \times 6-4$, 矛盾.
+故 $K_{3,3}$ 不是平面图.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 如图(<FilePath:./figures/fig-c7i5.png>)、如图(<FilePath:./figures/fig-c7i6.png>) 是平面图吗?
+%%<SOLUTION>%%
+解:如图(<FilePath:./figures/fig-c7i5.png>) 包含了一个 $K_5$ 图, 如图(<FilePath:./figures/fig-c7i6.png>) 包含了一个 $K_{3,3}$ 图, 根据库拉托夫斯基定理,这两个图都是非平面图.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 正多面体有几种? 它们的棱数、顶点数和面数各是多少? 每个顶点连接几条棱?
+%%<SOLUTION>%%
+证明:因为正多面体每个顶点至少有三个面拼在一起, 所以当正多边形的每个内角大于等于 $120^{\circ}$ 时, 显然形不成正多面体的顶点.
+所以只能考虑以正五边形、正方形和正三角形为基础搭成什么样的正多面体了.
+(1) 以正五边形为面的多面体.
+因为正五边形内角为 $\frac{3}{5} \pi$, 而 $\frac{3}{5} \pi \times 4>2 \pi$, 所以以正五边形为面的正多面体每个顶点皆 3 次, 于是 $3 v=2 e, \frac{5 f}{2}=e$, 代入欧拉公式得
+$$
+\frac{2}{3} e-e+\frac{2}{5} e=2,
+$$
+解得
+$$
+e=30, v=20, f=12 .
+$$
+即以正五边形为面的正多面体只有一种, 它是 20 个顶点、30 条棱且每个顶点处有 3 条棱的正十二面体.
+(2)对以正方形、正三角形为面的正多面体, 请读者自行证明,共有如下图(<FilePath:./figures/fig-c7i7.png>)所示 4 种.
+从而正多面体只有 5 种.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 如果一个正方形被划分为 $n$ 个凸多边形, 当 $n$ 为定值时, 求这些凸多边形边数的最大值.
+%%<SOLUTION>%%
+证明:由欧拉公式知一个凸多边形被划分为 $n$ 个多边形, 则 $v-e+n=$ 1(因为 $f=n+1$ ).
+由于一个正方形被划分为 $n$ 个凸多边形,因此这些多边形的每个顶点,如果它不是正方形的顶点, 必是至少 3 个凸多边形的顶点.
+用 $A 、 B 、 C 、 D$ 分别表示正方形的顶点,用 $v$ 表示除 $A 、 B 、 C 、 D$ 外的任一顶点,则
+$$
+d(v) \leqslant 3(d(v)-2) .
+$$
+由上式对除 $A 、 B 、 C 、 D$ 外的所有点求和, 得
+$$
+\begin{aligned}
+& 2 e-(d(A)+d(B)+d(C)+d(D)) \\
+\leqslant & 3(2 e-(d(A)+d(B)+d(C)+d(D))-6(v-4)),
+\end{aligned}
+$$
+于是
+$$
+4 e \geqslant 2(d(A)+d(B)+d(C)+d(D))+6(v-4),
+$$
+由于 $d(A) \geqslant 2, d(B) \geqslant 2, d(C) \geqslant 2, d(D) \geqslant 2$, 所以
+$$
+2 e \geqslant 8+3(v-4) \text {. }
+$$
+由
+$$
+v-e+n=1,
+$$
+得
+$$
+3(e+1)=3 v+3 n \leqslant 2 e+4+3 n,
+$$
+即
+$$
+e \leqslant 3 n+1 \text {. }
+$$
+过正方形的一边相继作 $n-1$ 条邻边的平行线,将这个正方形分为 $n$ 个矩形, 总边数为 $4+3(n-1)=3 n+1$.
+综上,所求边的最大值为 $3 n+1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 证明戈林伯格图 (如图(<FilePath:./figures/fig-c7i8.png>))无哈密顿圈.
+%%<SOLUTION>%%
+证明:设这个图含哈密顿圈.
+因为它只有 5 边形、8 边形和 9 边形, 根据定理四有
+$$
+3\left(f_5^{\prime}-f_5^{\prime \prime}\right)+6\left(f_8^{\prime}-f_8^{\prime \prime}\right)+7\left(f_9^{\prime}-f_9^{\prime \prime}\right)=0 .
+$$
+由此得 $7\left(f_9^{\prime}-f_9^{\prime \prime}\right) \equiv 0(\bmod 3)$.
+这与 $f_9^{\prime}+f_9^{\prime \prime}=1$ 矛盾.
+故戈林伯格图无哈密顿圈.
+%%PROBLEM_END%%
+
+

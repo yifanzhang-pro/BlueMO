@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $a, b, c>0$, 求证:\n$$\n\\frac{c}{a}+\\frac{a}{b+c}+\\frac{b}{c} \\geqslant 2 .\n$$",
+    "solution": "证明:由平均值不等式, 得\n$$\n\\begin{aligned}\n\\frac{c}{a}+\\frac{a}{b+c}+\\frac{b}{c} & =\\frac{c}{a}+\\frac{a}{b+c}+\\frac{b+c}{c}-1 \\\\\n& \\geqslant 3 \\sqrt[3]{\\frac{c}{a} \\cdot \\frac{a}{b+c} \\cdot \\frac{b+c}{c}}-1 \\\\\n& =3-1=2,\n\\end{aligned}\n$$\n即命题成立.",
+    "remark": "",
+    "figures": []
+}

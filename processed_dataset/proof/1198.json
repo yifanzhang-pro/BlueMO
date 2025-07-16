@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $a_1, a_2, \\cdots, a_n(n \\geqslant 2)$ 是正实数,且满足 $a_1+a_2+\\cdots+a_n<1$. 证明: $\\frac{a_1 a_2 \\cdots a_n\\left[1-\\left(a_1+\\cdots+a_n\\right)\\right]}{\\left(a_1+a_2+\\cdots+a_n\\right)\\left(1-a_1\\right)\\left(1-a_2\\right) \\cdots\\left(1-a_n\\right)} \\leqslant \\frac{1}{n^{n+1}}$.",
+    "solution": "设 $a_{n+1}=1-\\left(a_1+a_2+\\cdots+a_n\\right)$, 则 $a_{n+1} \\geqslant 0, a_1+\\cdots+a_{n+1}=1$. 则原不等式等价于 $n^{n+1} a_1 a_2 \\cdots a_{n+1} \\leqslant\\left(1-a_1\\right)\\left(1-a_2\\right) \\cdots\\left(1-a_n\\right)\\left(1-a_{n+1}\\right)$. 对 $i=1,2, \\cdots, n+1$, 由平均值不等式, 得 $1-a_i=\\dot{a}_1+\\cdots+a_{i-1}+ a_{i+1}+\\cdots+a_{n+1} \\geqslant n \\sqrt[n]{a_1 \\cdots a_{i-1} a_{i+1} \\cdots a_{n+1}}$. 将 $n+1$ 个不等式相乘, 得 $(1- \\left.a_1\\right)\\left(1-a_2\\right) \\cdots\\left(1-a_{n+1}\\right) \\geqslant n^{n+1} \\sqrt[n]{a_1^n a_2^n \\cdots a_{n+1}^n}=n^{n+1} a_1 a_2 \\cdots a_{n+1}$, 当且仅当 $a_1=a_2=\\cdots=a_{n+1}=\\frac{1}{n+1}$ 时等号成立.",
+    "remark": "",
+    "figures": []
+}

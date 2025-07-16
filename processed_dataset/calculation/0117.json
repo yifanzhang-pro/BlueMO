@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题13 对于 $0 \\leqslant x \\leqslant 100$, 求函数 $f(x)=[x]+[2 x]+\\left[\\frac{5 x}{3}\\right]+[3 x]+[4 x]$ 所取的不同整数值的个数.",
+    "solution": "以 $A_1, A_2, A_3, A_4, A_5$ 来分别表示函数 $[x],[2 x],[3 x],[4 x]$ 和 $\\left[\\frac{5 x}{3}\\right]$ 的所有间断点的集合.\n则易知 $A_1 \\subset A_2 \\subset A_4$, 且 $A_3=\\left\\{\\frac{n}{3} \\mid n=1\\right.$, $2, \\cdots, 300\\}, A_4=\\left\\{\\frac{n}{4} \\mid n=1,2, \\cdots, 400\\right\\}, A_5=\\left\\{\\frac{3 n}{5} \\mid n=1,2, \\cdots, 166\\right\\}$. 由此可得 $A_3 \\cap A_4=\\{n \\mid n=1,2, \\cdots, 100\\}, A_3 \\cap A_5=A_4 \\cap A_5=A_3 \\cap A_4 \\cap A_5==\\{3 n \\mid n=1,2, \\cdots, 33\\}$. 由容斥原理知 $f(x)$ 的间断点的个数为 $\\left|A_3\\right|+\\left|A_4\\right|+\\left|A_5\\right|-\\left|A_3 \\cap A_4\\right|-\\left|A_3 \\cap A_5\\right|-\\left|A_4 \\cap A_5\\right|+\\mid A_3 \\cap A_4 \\cap A_5 \\mid=300+400+166-100-33-33+33=733$. 故知 $f(x)$ 所取的不同整数值的个数为 734 .",
+    "remark": "",
+    "figures": []
+}

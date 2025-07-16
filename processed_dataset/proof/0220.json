@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例5. 求所有正整数 $x>1, y>1, z>1$, 使得\n$$\n1 !+2 !+\\cdots+x !=y^z . \\label{eq1}\n$$",
+    "solution": "解:关键一步是证明当 $x \\geqslant 8$ 时必有 $z=2$. 因为式\\ref{eq1}的左边被 3 整除, 故 $3 \\mid y^z$, 从而 $3 \\mid y$,于是式\\ref{eq1}的右边被 $3^z$ 整除.\n另一方面,\n$$\n1 !+2 !+\\cdots+8 !=46233\n$$\n被 $3^2$ 整除, 但不被 $3^3$ 整除; 而对 $n \\geqslant 9$ 有 $3^3 \\mid n !$. 所以, 当 $x \\geqslant 8$ 时, 式\\ref{eq1} 的左边被 $3^2$ 整除而不能被 $3^3$ 整除, 从而 (1) 的右边也如此,即必须 $z=2$.\n现在进一步证明,当 $x \\geqslant 8$ 时方程 式\\ref{eq1} 无解.\n模 5 : 当 $x \\geqslant 8$ 时, 式\\ref{eq1} 的左边 $\\equiv 1 !+2 !+3 !+4 ! \\equiv 3(\\bmod 5)$; 又已证明了此时有 $z=2$, 故 式\\ref{eq2} 的右边 $z^2 \\equiv 0$, 土 $1(\\bmod 5)$, 从而上述断言成立.\n最后, 当 $x<8$ 时, 不难通过检验求得 式\\ref{eq1} 的解是 $x=y=3, z=2$.\n通过比较某个素数在一个等式两边出现的幂次, 以导出结果, 同余的这种变形手法被称为比较素数幂法, 下面的例 6 也应用了这一方法.",
+    "remark": "",
+    "figures": []
+}

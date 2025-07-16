@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 已知点 $B 、 C$ 分别在由点 $A$ 引出的两条射线上, 且 $A B+A C$ 为一定值.\n求证: $\\triangle A B C$ 的外接圆恒过不依赖于点 $B 、 C$ 的点 $D(D \\neq A)$.",
+    "solution": "证明: 作 $\\triangle A B C$ 的外接圆, 交 $\\angle B A C$ 的平分线于点 $D$. 下面证明: $D$ 是不依赖于点 $B 、 C$ 的定点.\n连结 $B C 、 B D 、 C D$. 在 $\\triangle B C D$ 中, 由正弦定理得\n$\\frac{B C}{\\sin A}=\\frac{B D}{\\sin \\frac{A}{2}}=\\frac{C D}{\\sin \\frac{A}{2}} \\cdots$ (1). 对圆内接四边形 $A B C D$ 应用托勒密定理得 $A B \\cdot C D+A C \\cdot B D=B C \\cdot A D \\cdots$ (2). 将式 (1) 代入式 (2) 得 $A D=(A B+A C) \\frac{\\sin \\frac{A}{2}}{\\sin A}=\\frac{A B+A C}{2 \\cos \\frac{A}{2}}$ 为定值.\n故所证结论成立.",
+    "remark": "",
+    "figures": []
+}

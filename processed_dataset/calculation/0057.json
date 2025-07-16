@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题10 集合 $A=\\left\\{(x, y) \\mid \\sin (3 x+5 y)>0\\right.$, 且 $\\left.x^2+y^2 \\leqslant \\pi^2\\right\\}$ 所构成的平面图形的面积是",
+    "solution": "$\\frac{1}{2} \\pi^3 . A=\\{(x, y) \\mid 2 k \\pi<3 x+ 5 y<2 k \\pi+\\pi, k \\in \\mathbf{Z}, \\text{且} x^2+y^2 \\leqslant \\pi^2\\}, A$ 所成图形为图(<FilePath:./images/volume1/figures/fig-c2p10.png>)中阴影部分.",
+    "remark": "",
+    "figures": [
+        "./images/volume1/figures/fig-c2p10.png"
+    ]
+}

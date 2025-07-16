@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise10.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 求最大正整数 $n$, 使平面内存在 $n$ 个凸多边形 (包括三角形), 其中每两个都有一条公共边但没有公共的内部.",
+    "solution": "如图(<FilePath:./images/volume9/figures/fig-c10a1.png>),标号为 $1 、 2 、 3 、 4$ 的 4 个凸多边形中每两个有一条公共边但没有公共的内部, 故所求 $n$ 的最大值不小于 4. 另一方面, 设在平面内存在 5 个凸多边形满足条件, 取定其中一个记为 $M_0$, 其他 4 个按它们的公共点在 $M_0$ 上的位置顺序记为 $M_1 、 M_2 、 M_3 、 M_4$. 按已知条件, $M_1$ 与 $M_3$ 有一条公共边, 因此 $M_0 、 M_1 、 M_3$ 这 3 个凸多边形或将 $M_2$ 包围在中间而 $M_4$ 在外,或将 $M_4$ 包围在中间而 $M_2$ 在外, 无论哪种情形 $M_2$ 与 $M_4$ 不可能有公共边, 矛盾, 故 $n \\leqslant 4$. 综上可知, 所求 $n$ 的最大值为 4 .",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c10a1.png"
+    ]
+}

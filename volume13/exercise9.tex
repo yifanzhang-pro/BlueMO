@@ -1,0 +1,122 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $A_1, A_2, \cdots, A_{29}$ 是 29 个不同的正整数集合.
+对 $1 \leqslant i<j \leqslant 29$ 及正整数 $x$, 定义 $N_i(x)=$ 数集 $A_i$ 中不大于 $x$ 的数的个数, $N_{i j}(x)=A_i \cap A_j$ 中不大于 $x$ 的数的个数.
+已知: 对所有 $i=1,2, \cdots, 29$, 及每个正整数 $x$, 有 $N_i(x) \geqslant \frac{x}{\mathrm{e}}(\mathrm{e}=2.71828 \cdots)$. 求证: 存在 $i, j(1 \leqslant i<j \leqslant 29)$, 使 $N_{i j}(1988)>200$. 
+%%<SOLUTION>%%
+先改造条件.
+令 $A_i^{\prime}=\left\{A_i\right.$ 中不大于 1988 的数 $\}=A_i \cap\{1,2, \cdots$, $1988\}$, 则 $N_i(1988)=\left|A_i^{\prime}\right|, N_{i j}(1988)=\left|A_i^{\prime} \cap A_j^{\prime}\right|$ : 因此本题实质上是要证明存在 $i 、 j(1 \leqslant i<j \leqslant 29)$, 使 $\left|A^{\prime}{ }_i \cap A^{\prime}{ }_j\right|>200$. 由题意, 对任何 $i$, $\left|A_i^{\prime}\right|=N_i(1988) \geqslant \frac{1988}{\mathrm{e}}>731$, 所以, $\left|A_i^{\prime}\right| \geqslant 732$. 令 $X=\{1,2,3, \cdots$, $1988\}$, 则 $A_1^{\prime}{ }_1, A^{\prime}{ }_2, \cdots, A^{\prime}{ }_{1988}$ 是 $X$ 的子集.
+不妨设 $\left|A_i^{\prime}\right|=732$, 否则, 去掉 $A_i^{\prime}$ 中的一些元素.
+考察集合元素关系表, 设第 $i$ 行 $m_i$ 个 1 . 计算各元素在子集中出现的总次数, 有 $\sum_{i=1}^{1988} m_i=S=\sum_{i=1}^{29}\left|A_i^{\prime}\right|=732 \times 29$. 再计算各元素在集合对的交集中出现的总次数, 有 $\sum_{i=1}^{1988} C_{m_i}^2=T=\sum_{1 \leqslant i<j \leqslant 29}\left|A_i^{\prime} \cap A_j^{\prime}\right|$. 于是, 由 Cauchy 不等式, 得 $2 \sum_{1 \leqslant i<j \leqslant 29}\left|A_i^{\prime} \cap A_j^{\prime}\right|=2 \sum_{i=1}^{1988} \mathrm{C}_{m_i}^2=\sum_{i=1}^{1988} m_i^2-\sum_{i=1}^{1988} m_i \geqslant \frac{\left(\sum_{i=1}^{1988} m_i\right)^2}{\sum_{i=1}^{1988} 1^2} \sum_{i=1}^{1988} m_i=\frac{(732 \times 29)^2}{1988}-732 \times 29$, 所以, 必有一个 $A_i^{\prime} \cap A_j^{\prime}$, 使 $\left|A_i^{\prime} \cap A_j^{\prime}\right| \geqslant\frac{\frac{(732 \times 29)^2}{1988 .}-732 \times 29}{2 \mathrm{C}_{29}^2}>253$. 即必有一个 $A_i^{\prime} \cap A_j^{\prime}$, 使 $\left|A_i^{\prime} \cap A_j^{\prime}\right|>200$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $A_i$ 为 $M=\{1,2, \cdots, 10\}$ 的子集, 且 $\left|A_i\right|=5(i=1,2, \cdots, k)$, $\left|A_i \cap A_j\right| \leqslant 2(1 \leqslant i<j \leqslant k)$. 求 $k$ 的最大值.
+%%<SOLUTION>%%
+因为 $\sum_{i=1}^{10} m_i=\sum_{i=1}^k 5=5 k$, 所以由 Cauchy 不等式, 有 $2 \sum_{1 \leqslant i<j \leqslant k} \mid A_i \cap A_j \mid=2 \sum_{i=1}^{10} \mathrm{C}_{m_i}^2=\sum_{i=1}^{10} m_i^2-\sum_{i=1}^{10} m_i \geqslant \frac{\left(\sum_{i=1}^{10} m_i\right)^2}{\sum_{i=1}^{10} 1^2}-\sum_{i=1}^{10} m_i=\frac{25 k^2}{10}-5 k$. 又由条件, $\sum_{1 \leqslant i<j \leqslant k}\left|A_i \cap A_j\right| \leqslant \sum_{1 \leqslant i<j \leqslant k} 2=2 \mathrm{C}_k^2=k^2-k$. 结合以下两式, 得 $k \leqslant 6$. 当 $k=6$ 时, 6 个集合: $\{1,2,3,4,5\} 、\{3,5,7,8,9\} 、\{1,2,6,7,8\} 、\{1$, $3,6,9,10\} 、\{2,4,7,9,10\} 、\{4,5,6,8,10\}$, 合乎条件, 故 $k$ 的最大值为 6 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $X$ 是有限集, $A_1, A_2, \cdots, A_m$ 是 $X$ 的子集, 且 $\left|A_i\right|=r(1 \leqslant i \leqslant m)$. 若对任何 $i \neq j$, 有 $\left|A_i \cap A_j\right| \leqslant k$. 求证: $|X| \geqslant \frac{m r^2}{r+(m-1) k}$.
+%%<SOLUTION>%%
+解: 1: 考察 $m$ 个集合与 $n$ 个元素的关系表 $B(n, m)$. 计算表中 1 的个数.
+设第 $i$ 行有 $t_i$ 个 $1(i=1,2, \cdots, n)$, 那么, $\sum_{i=1}^n t_i=S=\sum_{j=1}^m\left|A_j\right|=r m$. 再计算各元素在集合对的交集中出现的总次数, 有 $\sum_{i=1}^n \mathrm{C}_{t_i}^2=\mathrm{T}= \sum_{1 \leqslant i<j \leqslant m}\left|A_i \cap A_j\right|$. 于是, 由 Cauchy 不等式, 有 $2 k \mathrm{C}_m^2 \geqslant 2 \sum_{1 \leqslant i<j \leqslant m} \mid \dot{A_i} \cap A_j \mid=2 \sum_{i=1}^n \mathrm{C}_{t_i}^2=\sum_{i=1}^n t_i^2-\sum_{i=1}^n t_i \geqslant \frac{\left(\sum_{i=1}^n t_i\right)^2}{\sum_{i=1}^n 1^2}-\sum_{i=1}^n t_i=\frac{r^2 \cdot m^2}{n}-r m$. 所以, $k m(m-1) \geqslant \frac{\dot{r}^2 \cdot m^2}{n}-r m$, 解得 $n \geqslant \frac{m r^2}{r+(m-1)} \cdot$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $X$ 是有限集, $A_1, A_2, \cdots, A_m$ 是 $X$ 的子集, 且 $\left|A_i\right|=r(1 \leqslant i \leqslant m)$. 若对任何 $i \neq j$, 有 $\left|A_i \cap A_j\right| \leqslant k$. 求证: $|X| \geqslant \frac{m r^2}{r+(m-1) k}$.
+%%<SOLUTION>%%
+解法 2: 设元素 $x$ 在 $A_1, A_2, \cdots, A_m$ 中出现的总次数为 $d(x)$, 称为 $x$ 的度.
+则 $\sum_{x \in X} d(x)=\sum_{i=1}^m\left|A_i\right|$. 对于集合 $A_i$, 它的所有元素的度的和称为 $A_i$ 的度, 记为 $d\left(A_i\right)$, 即 $d\left(A_i\right)=\sum_{x \in A_i} d(x)$. 考察所有集合的度的和 $S=\sum_{i=1}^m d\left(A_i\right)$, 则二方面, $d\left(A_i\right)=\sum_{\substack{j \neq i \\ 1 \leqslant j \leqslant m}}\left|A_i \cap A_j\right|+\left|A_i\right| \leqslant \sum_{\substack{j \neq i \\ 1 \leqslant j \leqslant m}} k+r=(m-1) k+r$. 所以 $S=\sum_{i=1}^m d\left(A_i\right) \leqslant \sum_{i=1}^m[r+(m-1) k]=m[r+(m-1) k]$. 另一方面, 对固定的 $A_i$, 当 $x \in A_i$ 时, $x$ 对 $d\left(A_i\right)$ 的贡献为 $d(x)$. 又 $x$ 共在 $d(x)$ 个 $A_i$ 中出现,
+从而 $x$ 对 $S$ 的贡献为 $d(x)^2$. 于是, 由 Cauchy 不等式, 有 $S=\sum_{i=1}^m \sum_{x \in A_i} d(x)= \sum_{x \in X} d(x)^2 \geqslant \frac{\left(\sum_{x \in X} d(x)\right)^2}{\sum_{x \in X} 1}=\frac{\left(\sum_{i=1}^m\left|A_i\right|\right)^2}{|X|}=\frac{(m r)^2}{|X|}$. 命题获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 有 16 名学生参加考试, 考题都是选择题, 每题有 4 个选择支.
+考完后发现:任何两人至多有一道题答案相同, 问最多有几道考题.
+%%<SOLUTION>%%
+设共有 $n$ 道试题,我们证明 $n_{\text {max }}=5$. 显然, $n_{\text {max }}>1$. 当 $n>1$ 时, 对某道题 $A$, 若有 5 人选择了同一答案, 那么, 这 5 人在 $A$ 以外的任何一道题 $B$ 中所选的答案互不相同.
+但题 $B$ 只有 4 个选择支, 矛盾.
+所以, 任何一道题至多只有 4 人选择同一选择支.
+另一方面, 对于题目 $A, 16$ 个人的答案分布到 4 个支中, 又每个支至多 4 个人选择, 从而每个选择支都恰有 4 个人选择.
+这样, 对每个人 $x$, 第 $i(i=1,2, \cdots, n)$ 道题恰有 3 人与其同答案, 得到一个 3 人组 $A_i$. 从整体上考察 $A_1, A_2, \cdots, A_n$, 若有两个 3 人组 $A_i 、 A_j(i<j)$ 相交, 设 $y \in A_i \cap A_j$, 那么, $x 、 y$ 在第 $i 、 j$ 两道题中同答案, 矛盾.
+于是 $A_i$ 两两不交.
+所以, 人数 $S \geqslant 1+\left|A_1\right|+\left|A_2\right|+\cdots+\left|A_n\right|=3 n+1$. 所以, $3 n+1 \leqslant 16$, $n \leqslant 5$. 下表说明 $n=5$ 是可能的.
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline $\begin{array}{r}\text { 学生 } \\
+\text { 题号 }\end{array}$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 \\
+\hline 1 & 1 & 1 & 1 & 1 & 2 & 2 & 2 & 2 & 3 & 3 & 3 & 3 & 4 & 4 & 4 & 4 \\
+\hline 2 & 1 & 2 & 3 & 4 & 1 & 2 & 3 & 4 & 1 & 2 & 3 & 4 & 1 & 2 & 3 & 4 \\
+\hline 3 & 1 & 2 & 3 & 4 & 4 & 3 & 2 & 1 & 3 & 4 & 1 & 2 & 2 & 1 & 4 & 3 \\
+\hline 4 & 1 & 2 & 3 & 4 & 2 & 1 & 4 & 3 & 4 & 3 & 2 & 1 & 3 & 4 & 1 & 2 \\
+\hline 5 & 1 & 2 & 3 & 4 & 3 & 4 & 1 & 2 & 2 & 1 & 4 & 3 & 4 & 3 & 2 & 1 \\
+\hline
+\end{tabular}
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设集合 $M=\{1,2, \cdots, 10\}$ 的 $k$ 个 5 元子集 $A_1, A_2, \cdots, A_k$ 满足条件: $M$ 中的任意两个元素最多在两个子集 $A_i$ 与 $A_j(i \neq j)$ 内出现, 求 $k$ 的最大值.
+%%<SOLUTION>%%
+记 $M$ 中的元素 $i(i=1,2, \cdots, 10)$ 在 $A_1, A_2, \cdots, A_k$ 中出现的次数为 $d(i)$.
+从整体上考虑, 一个显然的等式是: $d(1)+\cdots+d(10)=\left|A_1\right|+\left|A_2\right|+\cdots+ \left|A_k\right|=5+5+\cdots+5=5 k$, 现在要求 $k$ 的范围, 只需求每个 $d(i)$ 的范围.
+下面证明 $d(i) \leqslant 4(i=1,2, \cdots, 10)$.
+事实上, 对 $i \in M$, 考察所有含 $i$ 的二元组 $(i, j$ ) (其中 $j \neq i$ ) 和所有含 $i$ 的五元子集.
+一方面, $i$ 与 $M$ 中的其他元素可组成 9 个含 $i$ 的二元组 $(i, j)$ (其中 $j \neq i$, 每一个含 $i$ 的二元组在五元子集 $A_1, A_2, \cdots, A_k$ 中最多出现两次, 因此所有含 $i$ 的二元组 $(i, j)$ 最多出现 $2 \times 9=18$ 次.
+另一方面, $A_1, A_2, \cdots, A_k$ 中共有 $d(i)$ 个含 $i$, 由于 $\left|A_j\right|=5(j=1$,
+$2, \cdots, k)$, 因而每个含 $i$ 的子集恰有 4 个含 $i$ 的二元组 $(i, j)$, 所以 $4 \cdot d(i) \leqslant$ 18 , 故 $d(i) \leqslant 4$.
+于是, $5 k=d(1)+\cdots+d(10) \leqslant 4 \times 10 \Rightarrow k \leqslant 8$.
+最后, 当 $k=8$ 时,下述 8 个 5 元数集的确满足要求:
+$A_1=\{1,2,3,4,5\}, A_2=\{1,6,7,8,9\}, A_3=\{1,3,5,6,8\}$, $A_4=\{1,2,4,7,9\}, A_5=\{2,3,6,7,10\}, A_6=\{3,4,7,8,10\}, A_7= \{4,5,8,9,10\}, A_8=\{2,5,6,9,10\}$, 故 $k_{\text {min }}=8$.
+另解:考察集合元素关系表,将同一列中的每两个"1"连线段.
+一方面, 由于每列有 5 个 1 , 从而每列连了 $\mathrm{C}_5^2=10$ 条线段, 表中共连了 $10 \cdot k=10 k$ 条线段.
+另一方面, 每一条线段对应两个行(端点所在的行), 依题意, 每两行最多对应两条线段, 于是线段条数不多于 $2 \mathrm{C}_{10}^2=90$, 所以 $10 k \leqslant$ 90 , 所以 $k \leqslant 9$.
+若 $k=9$, 则每两行都恰对应两条线段,即每条类型的线段恰出现 2 次,于是, 每一行中的 1 成对出现, 都为偶数个 1 , 从而表中 1 的个数为偶数.
+但每列都有 5 个 1,9 列共有 $9 \cdot 5=45$ (奇数) 个 1 , 矛盾, 所以 $k \leqslant 8$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 某个国家有 $n$ 个机场, 由 $k$ 家航空公司提供航线服务,有些机场之间有直飞航线 (直飞航线是双向的, 既可以从 $A$ 到 $B$, 也可以从 $B$ 到 $A$ ), 如果两个机场之间没有直飞航线, 则可通过转机从一个机场到达另一个机场.
+(1) 为了连接这 $n$ 个机场,需要 $n-1$ 条航线(你可以利用这一结论而无须证明), 由于经常有航空公司倒闭, 所以各航空公司在飞行航线方面需密切合作.
+试问: 为了保证任何一家航空公司倒闭时,都能使剩下的航线服务能从一个机场到达任何另一个机场, 则这些航空公司一共至少提供多少条直飞航线?
+(2) 当 $n=7, k=5$ 时, 为了保证任何 2 家航空公司同时倒闭时,都能使剩下的航线服务能从一个机场到达任何另一个机场, 则这些航空公司又一共至少提供多少条直飞航线?
+%%<SOLUTION>%%
+(1) 设第 $i(i=1,2, \cdots, k)$ 家航空公司提供了 $a_i$ 条直飞航线, 记 $S= a_1+s_2+\cdots+a_k$, 则当第 $i$ 家航空公司倒闭时,各航空公司可提供服务的直飞航线的条数为 $S-a_i$,于是, $S-a_i \geqslant n-1$.
+所以 $\sum_{i=1}^k\left(S-a_i\right) \geqslant \sum_{i=1}^k(n-1)=k(n-1)$, 即 $k S-S \geqslant k(n-1)$, 所以 $S \geqslant \frac{k(n-1)}{k-1}$.
+但 $S$ 是整数,所以 $S \geqslant\left[\frac{k(n-1)+k-2}{k-1}\right]=\left[\frac{k n-2}{k-1}\right]$.
+反之, 我们证明 $S=\left[\frac{k n-2}{k-1}\right]$ 合乎条件, 即存在一个 $n$ 阶图 $G$, 使 $\|G\|= \left[\frac{k n-2}{k-1}\right]$, 并可将 $G$ 的边 $k-$ 染色 (每条边恰染 $k$ 种颜色中的一种), 使去掉任何一种颜色的边后 (对应航空公司倒闭), 剩下的图仍是连通的.
+对 $n$ 归纳 (跨度为 $k-1$ ).
+当 $n=1,2, \cdots, k-1$ 时, $n<k$, 此时 $S=\left[\frac{k n-2}{k-1}\right]=n+\left[\frac{n-2}{k-1}\right]=n$, 构造一个长为 $n$ 的圈, 将其边 $k$-染色, 使任何两条边不同色 (由于 $n<k$, 这是可能的), 这样, 任意去掉一种颜色边, 剩下的图仍是连通的, 结论成立.
+设 $n \leqslant r$ (其中 $r \geqslant k-1$ ) 时结论成立, 考虑 $n=r+k-1$ 的情形.
+取其中的 $r$ 个点 $A_1, A_2, \cdots, A_r$, 由归纳假设, 存在一个有 $\left[\frac{k n-2}{k-1}\right]$ 条边的 $n$ 阶图 $G$, 可按要求对边 $k$-染色, 设这 $k$ 种颜色为 $1,2, \cdots, k$.
+取 $G$ 中一点 $A_1$, 及 $G$ 外的另 $k-1$ 个点 $B_1, B_2, \cdots, B_{k-1}$, 连边 $B_{i-1} B_i(i= 1,2, \cdots, k$, 其中 $\left.B_0=B_k=A_1\right)$, 得到图 $G^{\prime}$, 则 $\left\|G^{\prime}\right\|=\|G\|+k= \left[\frac{k n-2}{k-1}\right]+k=\left[\frac{k(n+k-1)-2}{k-1}\right]$, 将边 $B_{i-1} B_i$ 染第 $i$ 色,我们证明染色合乎要求.
+实际上, 假定去掉第 $i(i=1,2, \cdots, k)$ 种颜色的边, 考虑 $G^{\prime}$ 中的任意两点 $A 、 B$.
+如果 $A 、 B \in \mathrm{V}(G)$, 则由归纳假设, $A 、 B$ 连通;
+如果 $A 、 B \in\left\{B_1, B_2, \cdots, B_{k-1}\right\}$, 则因为 $B_0=A_1, B_1, B_2, \cdots, B_{k-1}$ 组成一个长为 $k$ 的圈, 每种颜色的边各出现一次, 于是该圈中只去掉了一条边, $A 、 B$ 连通;
+如果 $A \in \mathrm{V}(G), B \in\left\{B_1, B_2, \cdots, B_{k-1}\right\}$, 则 $A=A_1$, 或由归纳假设, $A$ 与 $A_1$ 连通, 又 $B$ 通过圈 $\left(A_1, B_1, B_2, \cdots, B_{k-1}\right)$ 与 $A_1$ 连通, 从而 $A 、 B$ 连通.
+所以 $n=r+k-1$ 时结论成立, 故这些航空公司一共至少提供 $\left[\frac{k n-2}{k-1}\right]$ 条直飞航线.
+(2) 当 $n=7, k=5$ 时, 如果某个机场只有 2 条直飞航线与其连通, 则这两条航线所属航空公司倒闭时,该机场无法到达, 从而每个机场都至少有 3 条直飞航线与其连通, 于是至少有 $3 \cdot 7=21$ 条直飞航线.
+但每条直飞航线同时属于 2 个机场,被计算 2 次, 所以 $S \geqslant \frac{21}{2}$, 但 $S$ 是整数, 所以 $S \geqslant 11$.
+当 $S=11$ 时,设 5 家航空公司提供航线的代号为 1 , $2,3,4,5$, 则如图(<FilePath:./figures/fig-c9a6.png>)所示的 11 条直飞航线合乎要求.
+所以,所有这些航空公司一共至少提供 11 条直飞航线.
+%%PROBLEM_END%%
+
+

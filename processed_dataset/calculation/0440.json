@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise17.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 设 $x_1, x_2, \\cdots, x_{10}$ 是正整数,且满足\n$$\nx_1+x_2+\\cdots+x_{10}=49,\n$$\n求 $x_1^2+x_2^2+\\cdots+x_{10}^2$ 的最大值和最小值.",
+    "solution": "由于把 49 写成 10 个正整数的和, 写法只有有限种, 所以一定有一种使得 $x_1^2+x_2^2+\\cdots+x_{10}^2$ 达到最大值, 也一定有一种使得 $x_1^2+x_2^2+\\cdots+x_{10}^2$ 达到最小值.\n假设 $x_1 \\leqslant x_2 \\leqslant \\cdots \\leqslant x_{10}$ 满足 $x_1+x_2+\\cdots+x_{10}=49$, 且使得 $x_1^2+x_2^2+\\cdots +x_{10}^2$ 达到最大值, 若 $x_1>1$, 取 $y_1=x_1-1, y_2=x_2+1, y_k=x_k, k=3,4$,\n$\\cdots, 10$, 则\n$$\ny_1+y_2+\\cdots+y_{10}=49,\n$$\n且 $y_1^2+y_2^2=\\left(x_1-1\\right)^2+\\left(x_2+1\\right)^2=x_1^2+x_2^2+2\\left(x_2-x_1\\right)+2>x_1^2+x_2^2$, 从而 $y_1^2+y_2^2+\\cdots+y_{10}^2>x_1^2+x_2^2+\\cdots+x_{10}^2$, 矛盾.\n所以 $x_1=1$, 进而 $x_2=1, \\cdots, x_9=1$, 所以 $x_{10}=40$. 于是 $x_1^2+ x_2^2+\\cdots+x_{10}^2$ 的最大值为 $9+40^2=1609$.\n假设 $x_1 \\leqslant x_2 \\leqslant \\cdots \\leqslant x_{10}$ 是满足 $x_1+x_2+\\cdots+x_{10}=49$, 且使得 $x_1^2+ x_2^2+\\cdots+x_{10}^2$ 达到最小值, 则 $x_1, x_2, \\cdots, x_{10}$ 中任意两个数的差的绝对值不超过 1 .\n事实上, 若存在 $x_i, x_j, 1 \\leqslant i \\leqslant j \\leqslant 10$, 有 $x_j-x_i \\geqslant 2$, 令\n$$\ny_i=x_i+1, y_j=x_j-1, x_k=y_k, k \\neq i, j\n$$\n则 $y_i^2+y_j^2=\\left(x_i+1\\right)^2+\\left(x_j-1\\right)^2=x_i^2+x_j^2-2\\left(x_j-x_i\\right)+2<x_i^2+x_j^2$, 矛盾.\n所以,当 $x_1=4, x_2==x_3=\\cdots=x_{10}=5$ 时, $x_1^2+x_2^2+\\cdots+x_{10}^2$ 取得最小值 241.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise8.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 在小于 $10^4$ 的正整数中, 有多少个正整数 $n$, 使 $2^n-n^2$ 被 7 整除.",
+    "solution": "设 $b_n=2^n, c_n=n^2, a_n=b_n-c_n=2^n-n^2$. 因为 $b_{n \\vdash 3}=2^{n+3}=8$ ・ $2^n \\equiv 2^n=b_n(\\bmod 7), c_{n+7}=(n+7)^2 \\equiv n^2=c_n(\\bmod 7)$, 所以 $a_{n+21}=b_{n+21}- c_{n+21} \\equiv b_n-c_n=a_n(\\bmod 7)$, 而 $a_1, a_2, \\cdots, a_{21}$ 中只有 6 项 $a_2=0, a_4=0$, $a_5=7, a_6=28, a_{10}=924, a_{15}=32543$ 被 7 整除.\n又 $9999=476 \\times 21+3$\n且 $a_1, a_2, a_3$ 中只有 $a_2$ 被 7 整除.\n故小于 $10^4$ 的正整数中使 $2^n-n^2$ 被 7 整除的正整数 $n$ 的个数为 $476 \\times 6+1=2857$ 个.",
+    "remark": "",
+    "figures": []
+}

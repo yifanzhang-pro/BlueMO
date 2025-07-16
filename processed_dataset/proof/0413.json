@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $S=\\left\\{x_1, x_2, \\cdots, x_n\\right\\}$ 是平面上的点集, 其中任意两点之间的距离至少是 1 , 证明: 最多有 $3 n$ 对点,每对点的距离恰好是 1 .",
+    "solution": "证明:取这 $n$ 个点作为顶点,两顶点相邻当且仅当两点之间的距离为 1 , 得一个图 $G . G$ 中的边数记为 $e$.\n显然图 $G$ 中和顶点 $x_i$ 相邻的点是在以 $x_i$ 为圆心, 半径为 1 的圆周上.\n由于集 $S$ 中任意两点之间的距离 $\\geqslant 1$, 故圆周上至多含有 $S$ 中的 6 个点, 所以 $d\\left(x_i\\right) \\leqslant 6$.\n对图 $G$ 用定理一, 有\n$$\n\\begin{gathered}\nd\\left(x_1\\right)+d\\left(x_2\\right)+\\cdots+d\\left(x_n\\right)=2 e, \\\\\n6 n \\geqslant 2 e,\n\\end{gathered}\n$$\n即 $e \\leqslant 3 n$. 就是说图 $G$ 中的边数 $e$ 不超过 $3 n$. 所以这 $n$ 个点中至多有 $3 n$ 对点,每对点的距离恰好是 1 .",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题17 已知一族集合 $A_1, A_2, \\cdots, A_n$ 具有性质:\n(1) 每个 $A_i$ 含 30 个元素;\n(2) 对每一对 $i 、 j, 1 \\leqslant i<j \\leqslant n, A_i \\cap A_j$ 恰含有一个元素;\n(3) $A_1 \\cap A_2 \\cap \\cdots \\cap A_n=\\varnothing$.\n求使这些集合存在的最大的正整数 $n$.",
+    "solution": "最大的 $n=871$. 若 $n \\geqslant 872$, 则 $A_1$ 中必有一个元素 $a$ 至少属于除 $A_1$外的 30 个集合 (因 $29 \\times 30+1=871<n$ ). 设 $a \\notin A_i$, 每个含 $a$ 的集与 $A_i$ 有一个公共元, 故 $A_i$ 至少有 31 个元, 矛盾.\n如下 871 个集满足题设: $A=\\left\\{a_0, a_1, \\cdots, a_{29}\\right\\} ; B_i=\\left\\{a_0, a_{i, 1}\\right.$, $\\left.a_{i, 2}, \\cdots, a_{i, 29}\\right\\}, 1 \\leqslant i \\leqslant 29 ; A_{i, j}=\\left\\{a_i\\right\\} \\cup\\left\\{a_{k, j+(k-1)(i-1)}, k=1,2, \\cdots, 29\\right\\}$, $1 \\leqslant i, j \\leqslant 29$, 其中 $a_{k, s}$ 与 $a_{k, s+29}$ 是同一个元素.\n容易验证 $A \\cap B_i, A \\cap A_{i, j}$, $B_i \\cap B_j(i \\neq j), B_s \\cap A_{i, j}, A_{i, j} \\cap A_{i, t}(j \\neq t), A_{i, j} \\cap A_{s, j}(i \\neq s)$ 为单元素集.\n而 $A_{i, j} \\cap A_{s, t}=\\left\\{a_{h, j+(h-1)(i-1)}\\right\\}, i \\neq s, j \\neq \\bar{t}$, 其中 $h$ 是 $(x-1)(i-s) \\equiv t-j(\\bmod 29)$ 的惟一解.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题16. 已知 $Q$ 为以 $A B$ 为直径的圆上的一点, $Q \\neq A 、 B, Q$ 在 $A B$ 上的投影为 $H$, 以 $Q$ 为圆心 $Q H$ 为半径的圆与以 $A B$ 为直径的圆交于点 $C 、 D$. 证明: $C D$ 平分线段 $Q H$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c5a16.png>), 设直线 $Q H$ 与 $\\odot Q$ 交于点 $S$, 与 $\\odot O$ 交于点 $T$, 设 $C D$ 与 $Q H$ 交于点 $M$, 则 $M$ 在两圆根轴 $C D$ 上, 故 $M$ 关于 $\\odot Q, \\odot O$ 等幕, 即 $M H$. $M S=M C \\cdot M D=M Q \\cdot M T$, 又由垂径定理知 $Q H=H T, Q H=Q S$, 代入上式知 $M H \\cdot(M Q+ Q H)=M Q \\cdot(M H+Q H) \\Rightarrow M H=M Q$, 所以 $M$ 平分 $Q H$, 即 $C D$ 平分线段 $Q H$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5a16.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $Z$ 是平面上由 $n(>3)$ 个点组成的点集, 其中任三点不共线, 又设自然数 $k$ 满足不等式 $\\frac{n}{2}<k<n$. 如果 $Z$ 中的每个点都至少与 $Z$ 中的 $k$ 个点有线段相连,证明: 这些线段中一定有三条线段构成三角形的三边.",
+    "solution": "证明:因为 $k>\\frac{n}{2}>\\frac{3}{2}$, 所以 $k \\geqslant 2$, 即每个点都至少与 $Z$ 中 2 个点有线段相连.\n不妨设 $A B$ 为 $Z$ 中点连成的线段.\n令\n$$\n\\begin{aligned}\n& M=\\{P \\mid P \\in Z, P \\text { 与 } A \\text { 有线段相连 }\\}-\\{B\\}, \\\\\n& N=\\{P \\mid P \\in Z, P \\text { 与 } B \\text { 有线段相连 }\\}-\\{A\\} .\n\\end{aligned}\n$$\n由于 $Z$ 中任一点至少引出 $k$ 条线段, 所以有 $|M| \\geqslant k-1,|N| \\geqslant k-1$. 又由于 $M \\cup N$ 中不含 $A 、 B$, 所以有 $|M \\cup N| \\leqslant n-2$. 因此\n$$\n\\begin{aligned}\n|M \\cap N| & =|M|+|N|-|M \\cup N| \\\\\n& \\geqslant(k-1)+(k-1)-(n-2) \\\\\n& =2 k-2-(n-2)\n\\end{aligned}\n$$\n$$\n>(n-2)-(n-2)=0 .\n$$\n所以 $M \\cap N \\neq \\varnothing$, 即存在点 $C \\in M$, 且 $C \\in N(C \\neq A, C \\neq B)$. 显然线段 $A B 、 A C 、 B C$ 构成三角形的三边.",
+    "remark": "",
+    "figures": []
+}

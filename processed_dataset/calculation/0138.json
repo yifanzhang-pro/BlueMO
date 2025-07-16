@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 由 $1,2,3,4,5$ 可以组成多少个没有重复数字, 并且大于 21300 的正整数?",
+    "solution": "解:法 1 由 $1,2,3,4,5$ 组成的没有重复数字, 并且大于 21300 的正整数可分为 3 类:\n万位数字为 $3,4,5$ 的有 $\\mathrm{A}_3^1 \\cdot \\mathrm{A}_4^4$ 个;\n万位数字为 2 ,千位数字为 $3,4,5$ 的有 $\\mathrm{A}_3^1 \\cdot \\mathrm{A}_3^3$ 个;\n万位数字为 2 ,千位数字为 1 的有 $\\mathrm{A}_3^3$ 个.\n由加法原理, 符合条件的正整数的个数是\n$$\n\\mathrm{A}_3^1 \\cdot \\mathrm{A}_4^4+\\mathrm{A}_3^1 \\cdot \\mathrm{A}_3^3+\\mathrm{A}_3^3=96 .\n$$\n解法 2 由 $1,2,3,4,5$ 组成的没有重复数字的 5 位数共有 $\\mathrm{A}_5^5$ 个, 其中只有万位数字为 1 的数不大于 21300 ,这样的 5 位数有 $\\mathrm{A}_4^4$ 个,故符合条件的正整数的个数是\n$$\n\\mathrm{A}_5^5-\\mathrm{A}_4^4=5 !-4 !=96 .\n$$",
+    "remark": "",
+    "figures": []
+}

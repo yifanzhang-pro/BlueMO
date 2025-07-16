@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例2 设 $x \\in \\mathbf{R}^{+}$, 求函数 $f(x)=x^2-x+\\frac{1}{x}$ 的最小值.",
+    "solution": "分析:先估计 $f(x)$ 的下界, 再说明这个下界是可以达到的.\n解\n$$\n\\begin{aligned}\nf(x) & =\\left(x^2-2 x+1\\right)+\\left(x+\\frac{1}{x}-2\\right)+1 \\\\\n& =(x-1)^2+\\left(\\sqrt{x}-\\frac{1}{\\sqrt{x}}\\right)^2+1 \\geqslant 1,\n\\end{aligned}\n$$\n又当 $x=1$ 时, $f(x)=1$, 所以 $f(x)$ 的最小值为 1 .\n说明在求最大(小)值时, 估计了上 (下) 界后, 一定要举例说明这个界是可以取到的, 才能说这就是最大 (小) 值, 否则就不一定对了.\n例如, 本题我们也可以这样估计:\n$$\n\\begin{aligned}\nf(x) & =\\left(x^2-2 x+1\\right)+\\left(x+\\frac{1}{x}+2\\right)-3 \\\\\n& =(x-1)^2+\\left(\\sqrt{x}+\\frac{1}{\\sqrt{x}}\\right)^2-3 \\geqslant-3,\n\\end{aligned}\n$$\n但无论 $x$ 取何值时, $f(x) \\neq-3$, 即一 3 不能作为 $f(x)$ 的最小值.",
+    "remark": "",
+    "figures": []
+}

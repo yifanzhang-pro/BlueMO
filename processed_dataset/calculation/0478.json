@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例9 试作开区间 $(0,1)$ 与闭区间 $[0,1]$ 的一一对应.",
+    "solution": "分析:由于 $[0,1]$ 比 $(0,1)$ 多了两个点, 所以处理好这两个点是关键所在.\n解取开区间 $(0,1)$ 的子集\n$$\nA=\\left\\{\\frac{1}{2}, \\frac{1}{3}, \\cdots, \\frac{1}{n}, \\cdots\\right\\},\n$$\n在 $A$ 中加上两个数 0,1 后得到闭区间 $[0,1]$ 的子集\n$$\nB=\\left\\{0,1, \\frac{1}{2}, \\frac{1}{3}, \\cdots, \\frac{1}{n}, \\cdots\\right\\} .\n$$\n显然， $(0,1) \\backslash A=[0,1] \\backslash B$. 于是定义映射 $f$ 如下:\n$$\nf(x)= \\begin{cases}0, & \\text { 当 } x=\\frac{1}{2} \\text { 时, } \\\\ 1, & \\text { 当 } x=\\frac{1}{3} \\text { 时, } \\\\ \\frac{1}{n-2}, & \\text { 当 } x=\\frac{1}{n}, n=4,5, \\cdots \\text { 时, } \\\\ x, & \\text { 当 } x \\in(0,1) \\backslash A \\text { 时.\n}\\end{cases}\n$$\n易知 $f$ 为一一对应.\n说明集合 $A \\backslash B$ (或 $A-B$ ) 定义为\n$$\nA \\backslash B=\\{x \\mid x \\in A \\text {, 且 } x \\bar{\\in} B\\} .\n$$",
+    "remark": "",
+    "figures": []
+}

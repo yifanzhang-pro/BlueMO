@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设 $\\left\\{a_n\\right\\}$ 是各项为正的数列, 若 $a_{n+1} \\leqslant a_n-a_n^2$, 求证: 对一切 $n \\geqslant 2$, 都有\n$$\na_n \\leqslant \\frac{1}{n+2} .\n$$",
+    "solution": "利用 $y=-x^2+x$ 在 $\\left(0, \\frac{1}{4}\\right)$ 上的单调性即可完成从 $k$ 到 $k+1$ 的过渡.",
+    "remark": "",
+    "figures": []
+}

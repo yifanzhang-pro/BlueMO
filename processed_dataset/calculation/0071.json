@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题14 设 $F$ 是所有有序 $n$ 元组 $\\left(A_1, A_2, \\cdots, A_n\\right)$ 构成的集合, 其中 $A_i(1 \\leqslant i \\leqslant n$ ) 都是集合 $\\{1,2,3, \\cdots, 2002\\}$ 的子集, 设 $\\mid A$ | 表示集合 $A$ 的元素的数目, 对 $F$ 中的所有元素 $\\left(A_1, A_2, \\cdots, A_n\\right)$, 求 $\\left|A_1 \\cup A_2 \\cup \\cdots \\cup A_n\\right|$ 的总和, 即\n$$\n\\sum_{\\left(A_1, A_2, \\cdots, A_n\\right) \\in F}\\left|A_1 \\cup A_2 \\cup \\cdots \\cup A_n\\right| .\n$$",
+    "solution": "$\\sum_{\\left(A_1, A_2, \\cdots, A_n\\right) \\in F}\\left|A_1 \\cup A_2 \\cup \\cdots \\cup A_n\\right|$ 的值, 即是 $\\{1,2, \\cdots, 2002\\}$ 中元素出现的次数之和.\n对每一个 $k \\in\\{1,2,3, \\cdots, 2002\\}$, 因为 $\\{1,2, \\cdots$, $2002\\}$ 共有 $2^{2002}$ 个子集,这些子集的全体记作集合 $M$. 其中不含有元素 $k$ 的子集共有 $2^{2001}$ 个, 记这些子集全体为 $N$. 当 $n$ 元组 $\\left(A_1, A_2, \\cdots, A_n\\right)$ 中 $A_i(i=1$, $2, \\cdots, n)$ 都取遍 $M$ 时, 共有 $2^{2002 n}$ 个这样的 $n$ 元组.\n但其中当 $A_i(i=1,2, \\cdots$, $n)$ 都不含有 $k$ 即 $A_i \\in N(i=1,2 \\cdots, n)$ 时, 这样的 $n$ 元组 $\\left(A_1, A_2, \\cdots, A_n\\right)$ 共有 $2^{2001 n}$ 个.\n所以 $\\sum_{\\left(A_1, A_2, \\cdots, A_n\\right) \\in F}\\left|A_1 \\cup A_2 \\cup \\cdots \\cup A_n\\right|$ 中 $k$ 出现 $2^{2002 n}-2^{2001 n}$次, 当 $k=1,2, \\cdots, 2002$ 时, 即 $\\sum_{\\left(A_1, A_2, \\cdots, A_n\\right) \\in F}\\left|A_1 \\cup A_2 \\cup \\cdots \\cup A_n\\right|=2002 \\cdot(2^{2002 n}-2^{2001 n} )$.",
+    "remark": "",
+    "figures": []
+}

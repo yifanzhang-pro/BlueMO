@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 若 $z_1 、 z_2 、 z_3 \\in \\mathbf{C}$, 则 $z_1=z_2=z_3$ 是 $\\left(z_1-z_2\\right)^2+\\left(z_2-z_3\\right)^2=0$ 成立的 ( ).\n(A) 充分但不必要条件\n(B) 必要但不充分条件\n(C) 充分且必要条件\n(D) 既不充分也不必要条件",
+    "solution": "A.\n充分是明显的; 若取 $z_1=\\mathrm{i}, z_2=0, z_3=1$, 有 $\\left(z_1-z_2\\right)^2+\\left(z_2-z_3\\right)^2= -1+1=0$, 而 $\\mathrm{i} \\neq 0 \\neq 1$, 即说明条件是不必要的.",
+    "remark": "",
+    "figures": []
+}

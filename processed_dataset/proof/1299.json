@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $a 、 b 、 c$ 是三角形的三边长,求证:\n$$\na^2 b(a-b)+b^2 c(b-c)+c^2 a(c-a) \\geqslant 0 .\n$$",
+    "solution": "证明:令 $a=y+z, b=z+x, c=x+y, x, y, z \\in \\mathbf{R}^{+}$, 则欲证的不等式等价于\n$$\n\\begin{aligned}\n& (y+z)^2(z+x)(y-x)+(z+x)^2(x+y) \\\\\n& (z-y)+(x+y)^2(y+z)(x-z) \\geqslant 0 \\\\\n& \\Leftrightarrow \\quad x y^3+y z^3+z x^3 \\geqslant x^2 y z+x y^2 z+x y z^2 \\\\\n& \\Leftrightarrow \\\\\n& \\frac{x^2}{y}+\\frac{y^2}{z}+\\frac{z^2}{x} \\geqslant x+y+z . \\\\\n&\n\\end{aligned}\n$$\n因为\n$$\n\\frac{x^2}{y}+y \\geqslant 2 x, \\frac{y^2}{z}+z \\geqslant 2 y, \\frac{z^2}{x}+x \\geqslant 2 z,\n$$\n所以\n$$\n\\frac{x^2}{y}+\\frac{y^2}{z}+\\frac{z^2}{x} \\geqslant x+y+z .\n$$\n从而原不等式得证.\n说明在涉及到三角形三边长 $a 、 b 、 c$ 的不等式时,常常作代换 $a=y+z, b=z+x, c=x+y$, 其中 $x, y, z \\in \\mathbf{R}^{+}$. 其实, 如图(<FilePath:./images/volume5/figures/fig-c3i1.png>) 所示, $D 、 E 、 F$ 分别是 $\\triangle A B C$ 的内切圆与边 $B C 、 C A 、 A B$ 的切点, 令 $A E=A F=x, B D=B F=y, C D=C E=z$, 则 $a=y+z, b=z+x, c=x+y$.\n通过代换,关于 $a 、 b 、 c$ 的不等式就转化为关于正实数 $x 、 y 、 z$ 的不等式了.",
+    "remark": "",
+    "figures": [
+        "./images/volume5/figures/fig-c3i1.png"
+    ]
+}

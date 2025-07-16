@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例4. 对正整数 $m$, 定义 $f(m)$ 为 $m$ ! 中因数 2 的个数 (即满足 $2^k \\mid m$ ! 的最大整数 $k)$. 证明: 有无穷多个正整数 $m$, 满足\n$$\nm-f(m)=1000 .\n$$",
+    "solution": "证明: $m$ 写成二进制形式\n$$\nm=\\sum 2^{r_i}=2^{r_n}+2^{r_{n-1}}+\\cdots+2^{r_1},\n$$\n其中 $r_n>r_{n-1}>\\cdots>r_1 \\geqslant 0, r_i \\in \\mathbf{Z}$.\n于是\n$$\n\\begin{aligned}\nf(m) & =\\left[\\frac{m}{2}\\right]+\\left[\\frac{m}{2^2}\\right]+\\left[\\frac{m}{2^3}\\right]+\\cdots=\\left[\\underline{\\sum} \\frac{2^{r_i}}{2}\\right]+\\left[\\frac{\\sum 2^{r_i}}{2^2}\\right]+\\left[\\frac{\\sum 2^{r_i}}{2^3}\\right]+\\cdots \\\\\n& =\\sum 2^{r_i-1}+\\sum 2^{r_i-2}+\\sum 2^{r_i-3}+\\cdots,\n\\end{aligned}\n$$\n其中和号只对非负指数的项求和.\n进一步有\n$$\nf(m)=\\sum\\left(2^{r_i-1}+2^{r_i-2}+\\cdots+1\\right)=\\sum\\left(2^{r_i}-1\\right)=m-n .\n$$\n所以 $m-f(m)=n$, 即 $m-f(m)$ 等于 $m$ 的二进制表示下非零数字的个数.\n由于存在无穷个正整数 $m$, 使得它们二进制表示中恰有 1000 个非零数字, 从而命题得证.",
+    "remark": "注:由 $f(m)$ 的定义提示我们把 $m$ 表为二进制的形式, 这样也便于最终描述满足条件的 $m$ 的性质.\n用本题的方法可以得到一个推广的结论:\n对正整数 $m$, 定义 $f_p(m)$ 为 $m$ ! 中素因数 $p$ 的个数 (即满足 $p^k \\mid m$ ! 的最大整数 $k)$, 则 $m$ 在 $p$ 进制表示下的数码之和等于 $\\frac{m-f_p(m)}{p-1}$.",
+    "figures": []
+}

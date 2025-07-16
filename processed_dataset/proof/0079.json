@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题5 试证: 对于每个大于 1 的整数 $r$, 都能找到一个最小的整数 $h(r)>1$, 使在集合 $\\{1,2, \\cdots, h(r)\\}$ 分成 $r$ 组的任何分划中,都存在整数 $a \\geqslant 0,1 \\leqslant x \\leqslant y$, 使数 $a+x, a+y, a+x+y$ 含于分划的同一组中.",
+    "solution": "考察将 $\\{1,2, \\cdots, 2 r\\}$ 分成 $r$ 组的任一分划.\n在 $r, r+1, \\cdots, 2 r$ 这 $r+1$ 个数中, 必有两个数 $u$ 和 $v$ 属于同一组, 不妨设 $u<v$. 令 $a=2 u-v \\geqslant 0, x=y=v-u \\geqslant 1$, 则 $a+x=a+y=u, a+x+y=v$ 在同一组中.\n由此可见, $h(r) \\leqslant 2 r$.\n另一方面, 考察 $\\{1,2, \\cdots, 2 r-1\\}$ 的如下分划: $\\{1,1+r\\},\\{2,2+ r\\}, \\cdots,\\{r-1,2 r-1\\},\\{r\\}$. 显然 $a+x 、 a+y 、 a+x+y$ 不能同在 $\\{r\\}$ 中.\n设它们都在 $\\{k, k+r\\}$ 中, 于是只能是 $a+x=a+y=k, a+x+y=a+ 2 x=k+r$. 从而有 $x=y=r$. 这样一来, $a=k-r<0$, 矛盾.\n而且由证明可知, 当 $n<2 r$ 时, $\\{1,2, \\cdots, n\\}$ 都不能满足要求.\n综上可知, $h(r)=2 r$.",
+    "remark": "",
+    "figures": []
+}

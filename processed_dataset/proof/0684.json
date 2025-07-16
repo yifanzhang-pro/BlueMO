@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例8. 如图(<FilePath:./images/volume14/figures/fig-c2i1.png>),锐角三角形 $A B C$ 的外心为 $O, K$ 是边 $B C$ 上一点 (不是边 $B C$ 的中点), $D$ 是线段 $A K$ 延长线上一点, 直线 $B D$ 与 $A C$ 交于点 $N$, 直线 $C D$ 与 $A B$ 交于点 $M$. \n求证: 若 $O K \\perp M N$, 则 $A, B, D, C$ 四点共圆.",
+    "solution": "证明:用反证法.\n若 $A, B, D, C$ 不共圆, 设三角形 $A B C$ 的外接圆与射线 $A D$ 交于点 $E$,连接 $B E$ 并延长交直线 $A N$ 于点 $Q$, 连接 $C E$ 并延长交直线 $A M$ 于点 $P$, 连接 $P Q$.\n因为 $P K^2=P$ 的幂 (关于 $\\odot O$)+$K$ 的幂 (关于 $\\odot O$ ) (见注一), 所以\n$$\nP K^2=\\left(P O^2-r^2\\right)+\\left(K O^2-r^2\\right),\n$$\n同理\n$$\nQ K^2=\\left(Q O^2-r^2\\right)+\\left(K O^2-r^2\\right),\n$$\n所以\n$$\nP O^2-P K^2=Q O^2-Q K^2,\n$$\n故\n$$\nO K \\perp P Q .\n$$\n由题设, $O K \\perp M N$, 所以 $P Q / / M N$, 于是\n$$\n\\frac{A Q}{Q N}=\\frac{A P}{P M} \\label{eq1}\n$$\n由梅内劳斯 (Menelaus)定理,得\n$$\n\\begin{aligned}\n& \\frac{N B}{B D} \\cdot \\frac{D E}{E A} \\cdot \\frac{A Q}{Q N}=1, \\label{eq2} \\\\\n& \\frac{M C}{C D} \\cdot \\frac{D E}{E A} \\cdot \\frac{A P}{P M}=1 . \\label{eq3}\n\\end{aligned}\n$$\n由式\\ref{eq1}, \\ref{eq2}, 式\\ref{eq3},可得\n$$\n\\frac{N B}{B D}=\\frac{M C}{C D}\n$$\n所以 $\\frac{N D}{B D}=\\frac{M D}{D C}$, 故 $\\triangle D M N \\backsim \\triangle D C B$, 于是 $\\angle D M N=\\angle D C B$, 所以 $B C / / M N$, 故 $O K \\perp B C$, 即 $K$ 为 $B C$ 的中点,矛盾! 从而 $A, B, D, C$ 四点共圆.",
+    "remark": "注一 \" $P K^2=P$ 的幂 (关于 $\\left.\\odot O\\right)+K$ 的幂 (关于 $\\odot O)$ )\"的证明: 延长 $P K$ 至点 $F$( 如图(<FilePath:./images/volume14/figures/fig-c2i2.png>)), 使得\n$$\nP K \\cdot K F=A K \\cdot K E, \\label{eq4}\n$$\n则 $P, E, F, A$ 四点共圆,故\n$$\n\\angle P F E=\\angle P A E=\\angle B C E,\n$$\n从而 $E, C, F, K$ 四点共圆,于是\n$$\nP K \\cdot P F=P E \\cdot P C, \\label{eq5}\n$$\n式\\ref{eq5}-\\ref{eq4}, 得\n$$\n\\begin{aligned}\nP K^2 & =P E \\cdot P C-A K \\cdot K E \\\\\n& =P \\text { 的幂 }(\\text { 关于 } \\odot O)+K \\text { 的幂 }(\\text { 关于 } \\odot O) .\n\\end{aligned}\n$$\n注二若点 $E$ 在线段 $A D$ 的延长线上,完全类似.\n注三本例有深刻的射影几何背景及较高的难度.\n该结论虽有直接证法, 但其逆命题是一个已有结果, 相对而言 \"对结论反面的否定\"易于\"对结论本身的直接证明\",故而会想到采用反证法.",
+    "figures": [
+        "./images/volume14/figures/fig-c2i1.png",
+        "./images/volume14/figures/fig-c2i2.png"
+    ]
+}

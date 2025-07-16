@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $\\triangle A B C$ 的内切圆 $\\Gamma$ 与 $B C$ 切于点 $D, D^{\\prime}$ 是圆 $\\Gamma$ 上的点, 且 $D D^{\\prime}$ 为圆 $\\Gamma$ 的直径, 过 $D^{\\prime}$ 作圆 $\\Gamma$ 的切线与 $A D$ 交于点 $X$, 过 $X$ 作圆 $\\Gamma$ 的不同于 $X D^{\\prime}$ 的切线,切点为 $N$. 证明: $\\triangle B C N$ 的外接圆与圆 $\\Gamma$ 切于点 $N$.",
+    "solution": "证明: 显然, $A B \\neq A C$. 下设 $A B> A C$. 如图(<FilePath:./images/volume7/figures/fig-c9a1.png>), 设圆 $\\Gamma$ 与 $A C 、 A B$ 分别切于点 $E 、 F$, 且设 $F E$ 与 $B C$ 交于点 $K$. 则 $K$ 是点 $A$ 关于圆 $\\Gamma$ 的极线 $F E$ 上的点.\n由配极原则知, $A$ 也是点 $K$ 关于圆 $\\Gamma$ 的极线上的点.\n因为点 $D$ 在点 $K$ 关于圆 $\\Gamma$ 的极线上,所以, $K$ 关于圆 $\\Gamma$ 的极线为 $A D$. 同理, 设 $D^{\\prime} N$ 与 $B C$ 交于点 $K^{\\prime}$, 则 $K^{\\prime}$ 关于圆 $\\Gamma$ 的极线为 $D X$. 由于 $A D$\n与 $D X$ 为同一条直线, 因此, $K^{\\prime}=K$. 因为 $B, C ; D, K$ 是调和点列, 且 $\\angle D^{\\prime} N D=90^{\\circ}$, 所以, $N D$ 是 $\\angle B N C$ 的角平分线.\n设 $N B 、 N C$ 分别与圆 $\\Gamma$ 交于点 $P 、 Q$. 则 $D$ 为弧 $\\widehat{P Q}$ 的中点.\n于是, $P Q / / B C$. 由 $\\angle X N P=\\angle P Q N=\\angle B C N$, 知 $X N$ 与 $\\triangle B C N$ 的外接圆切于点 $N$. 从而, $\\triangle B C N$ 的外接圆与圆 $\\Gamma$ 切于点 $N$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9a1.png"
+    ]
+}

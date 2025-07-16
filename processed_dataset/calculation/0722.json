@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题19 已知 $\\theta \\in\\left(\\frac{3 \\pi}{2}, 2 \\pi\\right)$, 则 $\\sqrt{1+\\sin \\theta}-\\sqrt{1-\\sin \\theta}=$",
+    "solution": "$-2 \\sin \\frac{\\theta}{2}$. 原式 $=\\left|\\sin \\frac{\\theta}{2}+\\cos \\frac{\\theta}{2}\\right|-\\left|\\sin \\frac{\\theta}{2}-\\cos \\frac{\\theta}{2}\\right|=-\\cos \\frac{\\theta}{2}- \\sin \\frac{\\theta}{2}-\\sin \\frac{\\theta}{2}+\\cos \\frac{\\theta}{2}=-2 \\sin \\frac{\\theta}{2}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设 $d_1, d_2, \\cdots, d_n$ 是 $n$ 个正整数, $n \\geqslant 2$, 已知 $\\sum_{i=1}^n d_i=2 n-2$. 证明存在一棵顶点度数分别为 $d_1, d_2, \\cdots, d_n$ 的树.",
+    "solution": "$d_1, d_2, \\cdots, d_n$ 中至少有两个为 1 (否则, $\\sum_{i=1}^n d_i \\geqslant 2 n-1$ ). 对顶点数 $n$ 用数学归纳法.\n$n=2$ 时显然成立.\n设结论在 $n=k$ 时成立.\n当 $n=k+1$ 时在 $d_1, d_2, \\cdots, d_k, d_{k+1}$ 中存在为 1 的数, 不妨设 $d_{k+1}=1$. 易知这 $k+1$ 个数中存在大于等于 2 的数, 设为 $d_k$. 考虑 $d_1, d_2, \\cdots, d_{k-1},\\left(d_k-1\\right)$ 这 $k$ 个数, $d_1+\\cdots+d_{k-1}+\\left(d_k-1\\right)=2(k+1)-2-1-1=2 k-2$, 由归纳假设知, 存在树 $T^{\\prime}$, 其顶点为 $v_1, \\cdots, v_k, \\sum_{i=1}^k k\\left(v_i\\right)=d_1+\\cdots+d_{k-1}+\\left(d_k-1\\right)=2 k-$ 2. 从 $T^{\\prime}$ 中顶点 $v_k$ 引出一条边与 $v_{k+1}$ 相邻, 得树 $T$, 则 $\\sum_{i=1}^{k+1} d\\left(v_i\\right)=2 k-2+1+ 1=2(k+1)-2$. 所以 $T$ 即为所求.",
+    "remark": "",
+    "figures": []
+}

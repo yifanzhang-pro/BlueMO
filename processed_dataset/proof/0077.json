@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题1 已知集合 $\\{1,2,3, \\cdots, 3 n-1,3 n\\}$, 可以分为 $n$ 个互不相交的三元组 $\\{x, y, z\\}$, 其中 $x+y=3 z$. 则满足上述要求的两个最小的正整数 $n$ 是",
+    "solution": "5,8 . 设三元组为 $\\left\\{x_i, y_i, z_i\\right\\}$, 且 $x_i+y_i=3 z_i, i=1,2, \\cdots, n$. 则有 $\\sum_{i=1}^n\\left(x_i+y_i+z_i\\right)=4 \\sum_{i=1}^n z_1=\\frac{3 n(3 n+1)}{2}$. 当 $2 \\mid n$ 时, $8 \\mid n$, 得 $n$ 的最小值为 8 ; 当 $2 \\times n$ 时, $8 \\mid 3 n+1$, 得 $n$ 的最小值为 5 . 可验证 $5 、 8$ 即为所求.",
+    "remark": "",
+    "figures": []
+}

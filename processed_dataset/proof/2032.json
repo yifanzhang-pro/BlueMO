@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设 $P$ 是 $\\triangle A B C$ 内一点, $P$ 的塞瓦三角形为 $D E F$, 求证: 总可以以 $\\triangle D E F$ 的某两边为邻边作一平行四边形使之位于 $\\triangle A B C$ 内.",
+    "solution": "证明:如图(<FilePath:./images/volume9/figures/fig-c4i6.png>), 设 $G$ 是 $\\triangle A B C$ 的重心, $N$ 、 $M$ 分别是边 $A C$ 和 $A B$ 的中点.\n不妨设 $P$ 在 $A N G M$ 内部或边界上,则 $E 、 F$ 分别在线段 $A N$ 、 $A M$ 的内部或端点处,所以\n$$\n\\frac{A F}{F B} \\leqslant 1, \\frac{A E}{E C} \\leqslant 1,\n$$\n又不妨设\n$$\n\\frac{A F}{F B} \\leqslant \\frac{A E}{E C} .\n$$\n由塞瓦定理可得\n$$\n\\frac{A F}{F B} \\cdot \\frac{B D}{D C} \\cdot \\frac{C E}{E A}=1,\n$$\n由此推得\n$$\n\\frac{B D}{D C}=\\frac{A E}{C E} \\cdot \\frac{F B}{A F} \\geqslant 1 .\n$$\n如图(<FilePath:./images/volume9/figures/fig-c4i7.png>), 作出以 $E F 、 E D$ 为邻边的平行四边形 $F E D E^{\\prime}$, 下面只需证 $E^{\\prime}$ 位于 $\\triangle A B C$ 内部或边界上.\n过 $F$ 作 $F F^{\\prime} / / B C, F^{\\prime}$ 落在 $A C$ 上, 因为\n$$\n\\frac{A F}{F B} \\leqslant \\frac{A E}{E C},\n$$\n故 $F^{\\prime}$ 在线段 $A E$ 内部或端点上.\n因为\n$$\n\\angle E^{\\prime} D F=\\angle E F D \\leqslant \\angle F^{\\prime} F D=\\angle F D B,\n$$\n所以 $D E^{\\prime}$ 在 $\\angle F D B$ 内部.\n同理\n$$\n\\frac{C E}{E A} \\geqslant 1 \\geqslant \\frac{C D}{D B}\n$$\n也可证明 $F E^{\\prime}$ 在 $\\angle B F D$ 的内部或边界上, 故 $E^{\\prime}$ 在 $\\triangle F D B$ 的内部.\n得证.",
+    "remark": "注:定理 1 和命题 1 通过例 1 联合起来了, 即由例 1 ,\n定理 $1 \\Rightarrow$ 命题 1 .\n一个自然的问题是, 内点 $P$ 的垂足三角形是否有类似于塞瓦三角形的扩张性质呢?\n易见针角三角形的内点的垂足三角形一般不具有扩张性质, 但对于锐角三角形有下面的正面回答.",
+    "figures": [
+        "./images/volume9/figures/fig-c4i6.png",
+        "./images/volume9/figures/fig-c4i7.png"
+    ]
+}

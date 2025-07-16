@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter11.tex",
+    "problem_type": "proof",
+    "problem": "例7. $n$ 个人在某个节日期间互通电话问候,已知其中每个人至多打通了 3 个朋友家的电话; 任何 2 个人之间至多进行 1 次通话; 且任何 3 个人中至少有 2 人,其中一人打通了另一个人家里的电话, 求 $n$ 的最大值.",
+    "solution": "解:们需要如下的引理.\n引理: $n$ 阶简单图 $G$ 中不存在 $K_3$, 则 $\\| G|| \\leqslant\\left[\\frac{n^2}{4}\\right]$.\n引理的证明: 设 $A$ 是各顶点中度最大的顶点,设与 $A$ 相邻的点的集合为 $M=\\left\\{A_1\\right.$, $\\left.A_2, \\cdots, A_r\\right\\}$, 与 $A$ 不相邻的点的集合为 $N=\\left\\{B_1, B_2, \\cdots, B_s\\right\\}(r+s+1=n)$. 由于 $G$ 中无三角形, 从而 $G$ 在 $M$ 中没有边, 从而 $G$ 的其他边都在 $N$ 中或 $M 、 N$ 之间, 这样的边都是由顶点 $B_1, \\cdots, B_s$ 引出的 (如图(<FilePath:./images/volume13/figures/fig-c11i1.png>)).\n于是, ||$G|| \\leqslant \\mathrm{d}(A)+\\mathrm{d}\\left(B_1\\right)+\\mathrm{d}\\left(B_2\\right)+\\cdots+\\mathrm{d}\\left(B_s\\right) \\leqslant r+r+\\cdots+ r=(s+1) r \\leqslant\\left(\\frac{s+r+1}{2}\\right)^2=\\frac{n^2}{4}$,\n又 $\\|G\\| \\in \\mathbf{Z}$, 所以 $\\|G\\| \\leqslant\\left[\\frac{n^2}{4}\\right]$.\n解答原题: 用 $n$ 个点表示 $n$ 个人, 如果一个人 $A$ 打通了另一个人 $B$ 家里的电话,则连一条从 $A$ 到 $B$ 的有向边, 得到一个简单的有向图 $G$.\n一方面, $\\bar{G}$ 中无三角形, 由引理有, || $\\bar{G}|| \\leqslant\\left[\\frac{n^2}{4}\\right]$, 所以 $\\| G||=\\mathrm{C}_n^2-$ || $\\bar{G}|| \\geqslant \\mathrm{C}_n^2-\\left[\\frac{n^2}{4}\\right]=\\left[\\frac{(n-1)^2}{4}\\right]$; 另一方面, ||$G||=\\sum_{i=1}^n \\mathrm{~d}^{+}\\left(x_i\\right) \\leqslant \\sum_{i=1}^n 3=3 n$, 所以\n$$\n\\left[\\frac{(n-1)^2}{4}\\right] \\leqslant 3 n . \\label{eq1}\n$$\n当 $n$ 为奇数时, 式\\ref{eq1} 变为 $\\frac{(n-1)^2}{4} \\leqslant 3 n$, 解得 $n \\leqslant 13$; 当 $n$ 为偶数时, 式\\ref{eq1} 变为 $\\frac{n^2-2 n}{4} \\leqslant 3 n$, 解得 $n \\leqslant 14$.\n综上所述, $n \\leqslant 14$.\n最后, $n=14$ 是可能的.\n构造两个 $K_7$, 对其中每个七边形 $A_1 A_2 \\cdots A_7$, 令 $A_i$ 指向 $A_{i+1}, A_{i+2}, A_{i+3}\\left(i=1,2, \\cdots, 7, A_{i+7}=A_i\\right)$, 则构图合乎条件.\n首先, 每个点都恰引出 3 条有向出边, 从而每个人至多打通了 3 个朋友家的电话;\n其次, 对任何 3 个点, 由抽庶原理, 必有两个点 $A_i 、 A_j(i<j)$ 在同一个 $K_7$ 中, 若 $j-i \\leqslant 3$, 则 $A_i$ 打通了 $A_j$ 家中的电话, 若 $j-i>3$, 则 $A_j$ 打通了 $A_i$ 家中的电话.",
+    "remark": "",
+    "figures": [
+        "./images/volume13/figures/fig-c11i1.png"
+    ]
+}

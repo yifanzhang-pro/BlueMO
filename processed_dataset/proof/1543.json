@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例3. 熟知任意连续 $n$ 个整数之积是前 $n$ 个正整数之积 (即 $n !$ ) 的倍数.\nFibonaccia 数列也具有类似的性质.\n请证明 : 对任意 $k \\in \\mathbf{N}^*$, 数列 $\\left\\{F_n\\right\\}$ 中任意连续 $k$ 项之积都是前 $k$ 项之积的倍数.",
+    "solution": "证明:引人记号 $[n] !=F_1 F_2 \\cdots F_n, n=1,2, \\cdots$, 并规定 $[0] !=1$. 并写\n$$\nR(m, n)=\\frac{[m+n] !}{[m] ! \\cdot[n] !}, m, n \\in \\mathbf{N} .\n$$\n为证命题成立, 只需证明: 对任意 $m 、 n \\in \\mathbf{N}$, 都有 $R(m, n) \\in \\mathbf{N}^*$. 利用例 1 中类似的推导过程, 知\n$$\nF_{m+n}=F_2 F_{m+n-1}+F_1 F_{m+n-2}=\\cdots=F_m F_{n+1}+F_{m-1} F_n,\n$$\n所以, 我们有\n$$\n\\begin{aligned}\nR(m, n) & =\\frac{F_{m+n} \\cdot[m+n-1] !}{[m] ! \\cdot[n] !}=\\frac{F_{m+n} \\cdot[m+n-1] !}{F_m \\cdot F_n \\cdot[m-1] ! \\cdot[n-1] !} \\\\\n& =F_{n+1} \\cdot \\frac{[m+n-1] !}{[m-1] ! \\cdot[n] !}+F_{m-1} \\cdot \\frac{[m+n-1] !}{[m] ! \\cdot[n-1] !} \\\\\n& =F_{n+1} \\cdot R(m-1, n)+F_{m-1} \\cdot R(m, n-1) .\n\\end{aligned}\n$$\n上式对 $m 、 n \\in \\mathbf{N}^*$ 都成立, 结合初始情形 $R(0, n)=R(m, 0)=1$ (对 $m 、 n \\in \\mathbf{N}$ 都成立) 及数学归纳法, 即可证明 $R(m, n)$ 都是正整数.\n所以, 命题成立.",
+    "remark": "",
+    "figures": []
+}

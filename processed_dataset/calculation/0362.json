@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题8. 设 $X=\\{1,2, \\cdots, 1995\\}, A$ 是 $X$ 的子集, 当 $x \\in A$ 时, $19 x \\notin A$, 求 $|A|$ 的最大值.",
+    "solution": "令 $A_k=\\{k, 19 k\\}, k=6,7, \\cdots, 105$, 则 $A$ 最多含有 $A_k$ 中的 1 个数, 于是 $|A| \\leqslant 1995-100=1895$. 另一方面, 令 $A=\\{1,2,3,4,5\\} \\cup \\{106,107, \\cdots, 1995\\}$, 则 $A$ 合乎要求, 此时 $|A|=1895$. 故 $|A|$ 的最大值为 1895 .",
+    "remark": "",
+    "figures": []
+}

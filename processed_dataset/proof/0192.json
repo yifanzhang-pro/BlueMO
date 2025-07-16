@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设整数 $a 、 b 、 c$ 满足 $a+b+c=0$, 记 $d=a^{1999}+b^{1999}+c^{1999}$. 证明: $|d|$ 不是素数.",
+    "solution": "证明:本题有好几种解法,这里我们采用同余来证明: $|d|$ 有一个非平凡的固定约数.\n首先, 对任意整数 $u$, 数 $u^{1999}$ 与 $u$ 的奇偶性相同, 即 $u^{1999} \\equiv u(\\bmod 2)$, 故 $d \\equiv a+b+c \\equiv 0(\\bmod 2)$, 即 $2 \\mid d$.\n此外, 对任意整数 $u$, 易于验证(区分 $3 \\mid u$ 及 $3 \\nmid u$ )\n$$\nu^3 \\equiv u(\\bmod 3) \\text {. } \\label{eq1}\n$$\n由此推出\n$$\n\\begin{aligned}\nu^{1999}=u \\cdot u^{1998} & \\equiv u \\cdot u^{666} \\equiv u \\cdot u^{222} \\equiv u^{75} \\\\\n& \\equiv u^{25} \\equiv u^9 \\equiv u^3 \\equiv u(\\bmod 3) .\n\\end{aligned}\n$$\n因此 $d \\equiv a+b+c \\equiv 0(\\bmod 3)$. 故 $6 \\mid d$, 从而 $d$ 不是素数.",
+    "remark": "注:解答中的同余式(1)是著名的费马小定理的特殊情形, 请参见下一单元.",
+    "figures": []
+}

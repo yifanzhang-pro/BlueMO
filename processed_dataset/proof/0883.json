@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例9 整数 $a 、 b 、 c$ 使得 $\\frac{a}{b}+\\frac{b}{c}+\\frac{c}{a}$ 和 $\\frac{a}{c}+\\frac{c}{b}+\\frac{b}{a}$ 仍为整数, 求证: $|a|=|b|=|c|$.",
+    "solution": "证先证一个引理.\n引理设 $p(x)=a_n x^n+a_{n-1} x^{n-1}+\\cdots+a_1 x+a_0$ 是整系数多项式, 若\n$\\frac{p}{q}$ ( $p$ 和 $q$ 是互质的整数) 是它的一个有理根, 则 $p\\left|a_0, q\\right| a_n$.\n事实上,我们有\n$$\n\\begin{aligned}\n& a_n\\left(\\frac{p}{q}\\right)^n+a_{n-1}\\left(\\frac{p}{q}\\right)^{n-1}+\\cdots+a_1\\left(\\frac{p}{q}\\right)+a_0=0, \\\\\n& \\frac{a_n p^n}{q}+a_{n-1} p^{n-1}+\\cdots+a_1 p q^{n-2}+a_0 q^{n-1}=0 .\n\\end{aligned}\n$$\n所以 $q \\mid a_n p^n$,而 $\\left(q, p^n\\right)=1$,所以 $q \\mid a_n$.\n又因为\n$$\na_n p^n+a_{n-1} p^{n-1} q+\\cdots+a_1 p q^{n-1}+a_0 q^n=0 .\n$$\n所以 $p \\mid a_0 q^n$, 而 $\\left(p, q^n\\right)=1$, 从而 $p \\mid a_0$.\n下面我们来证明本题.\n构造一个三次函数\n$$\n\\begin{aligned}\nf(x) & =\\left(x-\\frac{a}{b}\\right)\\left(x-\\frac{b}{c}\\right)\\left(x-\\frac{c}{a}\\right) \\\\\n& =x^3-\\left(\\frac{a}{b}+\\frac{b}{c}+\\frac{c}{a}\\right) x^2+\\left(\\frac{a}{c}+\\frac{c}{b}+\\frac{b}{a}\\right) x-1,\n\\end{aligned}\n$$\n由题设知, $f(x)$ 是一个整系数多项式, 它的三个有理根为 $\\frac{a}{b}, \\frac{b}{c}, \\frac{c}{a}$, 而由引理, $f(x)$ 的有理根只能为 $\\pm 1$ , 从而\n$$\n\\left|\\frac{a}{b}\\right|=\\left|\\frac{b}{c}\\right|=\\left|\\frac{c}{a}\\right|=1,\n$$\n故\n$$\n|a|=|b|=|c| \\text {. }\n$$\n说明本题当然用数论的方法也能解决, 但是我们通过构造一个三次多项式,利用引理来解显得非常巧妙.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题31. 对 $a_i \\in \\mathbf{R}^{+}(i=1,2, \\cdots, n)$, 求证: $\\sum_{k=1}^n \\sqrt[k]{a_1 \\cdots a_k} \\leqslant \\mathrm{e} \\sum_{k=1}^n a_k$, 其中 $\\mathrm{e}= \\lim _{n \\rightarrow \\infty}\\left(1+\\frac{1}{n}\\right)^n$.",
+    "solution": "已知 $\\left(1+\\frac{1}{k}\\right)^k$ 单调增加且收玫于 e. 对任意 $i \\in \\mathbf{N}$, 有 $i\\left(1+\\frac{1}{i}\\right)^i \\leqslant i \\mathrm{e}$, 记 $b_i=i\\left(1+\\frac{1}{i}\\right)^i$. 则 $\\frac{b_i}{i} \\leqslant \\mathrm{e}$. 由 $b_1 b_2 \\cdots b_k=(1+k)^k$, 得 $\\sqrt[k]{a_1 \\cdots a_k}= \\frac{1}{1+k} \\sqrt[k]{\\left(a_1 b_1\\right) \\cdots\\left(a_k b_k\\right)}$. 由平均值不等式, 得 $\\sqrt[k]{a_1 \\cdots a_k} \\leqslant \\frac{1}{k(k+1)} \\sum_{i=1}^k a_i b_i= \\left(\\frac{1}{k}-\\frac{1}{k+1}\\right) \\sum_{i=1}^k a_i b_i, \\quad \\sum_{k=1}^n \\sqrt[k]{a_1 \\cdots a_k} \\leqslant \\sum_{k=1}^n\\left(\\frac{1}{k}-\\frac{1}{k+1}\\right) \\sum_{i=1}^k a_i b_i=$\n$$\n\\sum_{i=1}^n a_i b_i \\sum_{k=1}^i\\left(\\frac{1}{k}-\\frac{1}{k+1}\\right)=\\sum_{i=1}^n\\left(\\frac{1}{i}-\\frac{1}{n+1}\\right) b_i a_i<\\sum_{i=1}^n \\frac{b_i}{i} a_i<\\mathrm{e} \\sum_{i=1}^n a_i .\n$$",
+    "remark": "",
+    "figures": []
+}

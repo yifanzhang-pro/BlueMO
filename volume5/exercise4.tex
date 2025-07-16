@@ -1,0 +1,255 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 已知 $a, b, c \in \mathbf{R}$, 且 $a+b+c>0, a b+b c+c a>0, a b c>0$. 求证:
+$$
+a>0, b>0, c>0 \text {. }
+$$
+%%<SOLUTION>%%
+若不然, 由于 $a b c>0$, 不妨设 $a<0, b<0, c>0$. 由 $a+b+c>0$ 得 $c>|a+b|$, 而 $a b>c \cdot|a+b|$, 则 $a b>|a+b|^2$,矛盾!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 求证:下列不等式组无实数解
+$$
+\left\{\begin{array}{l}
+|x|>|y-z+t|, \\
+|y|>|x-z+t|, \\
+|z|>|x-y+t|, \\
+|t|>|x-y+z| .
+\end{array}\right.
+$$
+%%<SOLUTION>%%
+反设存在实数 $x 、 y 、 z 、 t$ 满足不等式组, 则两边平方后可得: $(x+y- z+t)(x-y+z-t)>0 ;(y+x-z+t)(y-x+z-t)>0 ;(z+x-y+$ t) $(z-x+y-t)>0 ;(t+x-y+z)(t-x+y-z)>0$. 从而有 $-(x+y- z+t)^2(x-y+z-t)^2(y-x+z-t)^2(z+x-y+t)^2>0$, 矛盾!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设实数 $a 、 b 、 c 、 d 、 p 、 q$ 满足:
+$$
+a b+c d=2 p q, a c \geqslant p^2>0,
+$$
+求证: $b d \leqslant q^2$.
+%%<SOLUTION>%%
+如果 $b d>q^2$, 则 $4 a b c d=4(a c)(b d)>4 p^2 q^2=(a b+c d)^2=a^2 b^2+ 2 a b c d+c^2 d^2$, 故 $(a b-c d)^2<0$. 矛盾!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $a 、 b 、 c$ 为正实数,且 $a+b+c \geqslant a b c$, 求证:
+$$
+a^2+b^2+c^2 \geqslant a b c .
+$$
+%%<SOLUTION>%%
+若 $a^2+b^2+c^2<a b c$, 则 $a<b c, b<c a, c<a b$.
+故 $a+b+c<a b+b c+c a \leqslant a^2+b^2+c^2<a b c$,矛盾!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $f(x) 、 g(x)$ 是 $[0,1]$ 上的实值函数.
+求证: 存在 $x_0, y_0 \in[0,1]$, 使得
+$$
+\left|x_0 y_0-f\left(x_0\right)-g\left(y_0\right)\right| \geqslant \frac{1}{4} \text {. }
+$$
+%%<SOLUTION>%%
+用反证法, 若不然, 则对一切 $x, y \in[0,1]$, 都有: $\mid x y-f(x)- g(y) \mid<\frac{1}{4}$, 分别取 $(x, y)=(0,0) 、(0,1) 、(1,0) 、(1,1)$, 有: $\mid f(0)+ g(0)\left|<\frac{1}{4},\right| f(0)+g(1)\left|<\frac{1}{4},\right| f(1)+g(0)\left|<\frac{1}{4},\right| 1-f(1)- g(1) \mid<\frac{1}{4}$.
+因此, $1=\mid 1-f(1)-g(1)+f(0)+g(1)+f(1)+g(0)-f(0)- g(0)|\leqslant| 1-f(1)-g(1)|+| f(0)+g(1)|+| f(1)+g(0)|+| f(0)+ g(0) \mid<1$,矛盾!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 求证: 对于任意实数 $a 、 b$, 存在 $[0,1]$ 中的 $x$ 和 $y$,使得
+$$
+|x y-a x-b y| \geqslant \frac{1}{3} \text {. }
+$$
+并问上述命题中的 $\frac{1}{3}$ 改为 $\frac{1}{2}$ 或 0.33334 是否仍成立?
+%%<SOLUTION>%%
+反设命题不成立,则存在实数 $a 、 b$, 使得对于 $[0,1]$ 中的任意 $x 、 y$,均有 $|x y-a x-b y|<\frac{1}{3}$.
+分别取 $(x, y)=(1,0) ;(0,1) ;(1,1)$, 有 $|a|<\frac{1}{3},|b|<\frac{1}{3}$, $|1-a-b|<\frac{1}{3}$, 则 $1=|a+b+1-a-b| \leqslant|a|+|b|+|1-a-b|<$ 1 , 矛盾!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 设 $m, n \in \mathbf{Z}^{+}, a_1, a_2, \cdots, a_m$ 是集合 $\{1,2, \cdots, n\}$ 中的不同元素,每当
+$a_i+a_j \leqslant n, 1 \leqslant i \leqslant j \leqslant m$, 就有某个 $k, 1 \leqslant k \leqslant m$, 使得 $a_i+a_j=a_k$. 求证: $\frac{1}{m}\left(a_1+a_2+\cdots+a_m\right) \geqslant \frac{1}{2}(n+1)$.
+%%<SOLUTION>%%
+不妨设 $a_1>a_2>\cdots>a_m$, 下面证明: 对任意满足 $1 \leqslant i \leqslant m$ 的正整数 $i$, 有
+$$
+a_i+a_{n+1-i} \geqslant n+1 . \label{(1)}
+$$
+如果(1)成立, 则 $2\left(a_1+a_2+\cdots+a_m\right)=\left(a_1+a_m\right)+\left(a_2+a_{m-1}\right)+\cdots+ \left(a_m+a_1\right) \geqslant m(n+1)$, 因此结论成立.
+对(1)可以用反证法, 若存在某个正整数 $i, 1 \leqslant i \leqslant m$, 使得 $a_i+a_{m+1-i} \leqslant n$,于是 $a_i<a_i+a_m<a_i+a_{m-1}<\cdots<a_i+a_{m+1-i} \leqslant n . a_i+a_m, a_i+a_{m-1}, \cdots$, $a_i+a_{m+1-i}$ 是 $i$ 个正整数,且每个都 $\leqslant n$. 由题目条件, 这 $i$ 个正整数每个都是 $a_k$ 的形式 $(1 \leqslant k \leqslant m)$, 且两两不同, 而它们都大于 $a_i$, 故必为 $a_1, a_2, \cdots, a_{i-1}$ 之一.
+盾!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 对于任意 $n \in \mathbf{Z}^{+}$以及实数序列 $a_1, a_2, \cdots, a_n$, 求证存在 $k \in \mathbf{Z}^{+}$, 满足:
+$$
+\left|\sum_{i=1}^k a_i-\sum_{i=k+1}^n a_i\right| \leqslant \max _{1 \leqslant i \leqslant n}\left|a_i\right| .
+$$
+%%<SOLUTION>%%
+用反证法, 若对任意 $k \in\{1,2, \cdots, n\}$, 有 $\left|S_k\right|=\left|\cdot \sum_{i=1}^k a_i-\sum_{i=k+1}^n a_i\right|> \max _{1 \leqslant i \leqslant n}\left|a_i\right|$. 记 $A=\max _{1 \leqslant i \leqslant n}\left|a_i\right|$.
+补充定义 $S_0=-S_n$, 则 $S_0$ 与 $S_n$ 中有一个 $>A$, 另一个 $<-A$. 不妨设 $S_0<-A, S_n>A$ (否则可用 $-a_i$ 代替 $a_i$ ), 于是, 存在 $j, 0 \leqslant j \leqslant n-1$, 使得 $S_j<-A, S_{j+1}>A$. 故 $\left|S_{j+1}-S_j\right|>2 A$, 即 $2\left|a_{j+1}\right|>2 A$, 则 $\left|a_{j+1}\right|> A$,与 $A$ 的定义矛盾!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 设 $x_k, y_k \in \mathbf{R}, j_k=x_k+\mathrm{i} y_k(k=1,2, \cdots, n, \mathrm{i}=\sqrt{-1}) . r$ 是 $\pm \sqrt{j_1^2+j_2^2+\cdots+j_n^2}$ 的实部的绝对值.
+求证:
+$$
+r \leqslant\left|x_1\right|+\left|x_2\right|+\cdots+\left|x_n\right| .
+$$
+%%<SOLUTION>%%
+设 $a+\mathrm{i} b$ 是 $j_{\mathrm{i}}^2+j_2^2+\cdots+j_n^2$ 的任一平方根, 则 $r=|a|$, 且 $(a+\mathrm{i} b)^2= \sum_{k=1}^n j_k^2=\sum_{k=1}^n\left(x_k+\mathrm{i} y_k\right)^2$.
+故 $a^2-b^2=\sum_{k=1}^n x_k^2-\sum_{k=1}^n y_k^2, a b=\sum_{k=1}^n x_k y_k$.
+反设 $r>\sum_{k=1}^n\left|x_k\right|$, 则 $a^2=r^2,\left(\sum_{k=1}^n\left|x_k\right|\right)^2 \geqslant \sum_{k=1}^n x_k^2$.
+于是 $b^2>\sum_{k=1}^n y_k^2$,从而 $a^2 b^2>\sum_{k=1}^n x_k^2 \cdot \sum_{k=1}^n y_k^2 \geqslant\left(\sum_{k=1}^n x_k y_k\right)^2=a^2 b^2$,矛盾!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 给定非增的正数列 $a_1 \geqslant a_2 \geqslant a_3 \geqslant \cdots \geqslant a_n \geqslant \cdots$, 其中 $a_1=\frac{1}{2 k}(k \in \mathbf{N}$, $k \geqslant 2)$, 且 $a_1+a_2+\cdots+a_n+\cdots=1$. 求证: 从数列中可找出 $k$ 个数, 最小数超过最大数的一半.
+%%<SOLUTION>%%
+用反证法.
+若不存在这样的 $k$ 个数, 则对 $a_1, a_2, \cdots, a_k$, 有 $a_k \leqslant \frac{1}{2} a_1$; 对 $a_k, a_{k+1}, \cdots, a_{2 k-1}$, 有 $a_{2 k-1} \leqslant \frac{1}{2} a_k \leqslant \frac{1}{2^2} a_1 ; \cdots$; 对 $a_{(n-1)(k-1)+1}$, $a_{(n-1)(k-1)+2}, \cdots, a_{n(k-1)+1}$, 有 $a_{n(k-1)+1} \leqslant \frac{1}{2^n} a_1 . n \in \mathbf{Z}^{+}$, 则
+$$
+\begin{gathered}
+S_1=a_1+a_k+a_{2 k-1}+\cdots \leqslant a_1+\frac{1}{2} a_1+\frac{1}{2^2} a_1+\cdots=2 a_1 ; \\
+S_2=a_2+a_{k+1}+a_{2 k}+\cdots \leqslant 2 a_2 \leqslant 2 a_1 ; \\
+\cdots \cdots \\
+S_{k-1}=a_{k-1}+a_{2 k-2}+a_{3 k-3}+\cdots \leqslant 2 a_{k-1} \leqslant 2 a_1 .
+\end{gathered}
+$$
+故 $S=S_1+S_2+\cdots+S_{k-1} \leqslant 2(k-1) a_1=\frac{k-1}{k}<1$,矛盾!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 证明或否定命题: 若 $x 、 y$ 为实数且 $y \geqslant 0, y(y+1) \leqslant(x+1)^2$, 则 $y(y-1) \leqslant x^2$.
+%%<SOLUTION>%%
+反设 $y(y-1)>x^2$, 则由 $y \geqslant 0$ 知 $y>1$. 进一步有 $y>\frac{1}{2}+ \sqrt{\frac{1}{4}+x^2}$. 由假设 $y(y+1) \leqslant(x+1)^2$ 和 $y>1$ 可知, $y \leqslant-\frac{1}{2}+ \sqrt{\frac{1}{4}+(x+1)^2}$, 于是得到 $\frac{1}{2}+\sqrt{\frac{1}{4}+x^2}<-\frac{1}{2}+\sqrt{\frac{1}{4}+(x+1)^2}$.
+由此不难推出 $\sqrt{\frac{1}{4}+x^2}<x$, 矛盾!故原命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 设 $a_1 \geqslant a_2 \geqslant \cdots \geqslant a_n$ 是满足下列条件的 $n$ 个实数: 对任何正整数 $k$,有 $a_1^k+a_2^k+\cdots+a_n^k \geqslant 0$. 令 $p=\max \left\{\left|a_1\right|,\left|a_2\right|, \cdots,\left|a_n\right|\right\}$, 求证: $p= a_1$, 并且对任意 $x>a_1$, 均有
+$$
+\left(x-a_1\right)\left(x-a_2\right) \cdots\left(x-a_n\right) \leqslant x^n-a_1^n .
+$$
+%%<SOLUTION>%%
+对第一个结论用反证法.
+因为 $a_1 \geqslant a_2 \geqslant \cdots \geqslant a_n$, 则 $\max \left\{\left|a_1\right|,\left|a_2\right|, \cdots,\left|a_n\right|\right\}=a_1$ 或者 $\left|a_n\right|$ (显然 $a_1>0$ ). 而若 $\max \left\{\left|a_1\right|,\left|a_2\right|, \cdots,\left|a_n\right|\right\}=\left|a_n\right|$, 则 $a_n<0$, $\left|a_n\right|>a_1$.
+下面令 $a_1 \geqslant a_2 \geqslant \cdots \geqslant a_{n-k}>a_{n-k+1}=a_{n-k+2}=\cdots=a_n$.
+由于 $0 \leqslant\left|\frac{a_i}{a_n}\right|<1$, 故存在 $l$, 使得 $\left|\frac{a_i}{a_n}\right|^{2 l+1}<\frac{1}{n}(1 \leqslant i \leqslant n-k)$, 于是
+$$
+\begin{aligned}
+& \left(\frac{a_1}{a_n}\right)^{2 l+1}+\left(\frac{a_2}{a_n}\right)^{2 l+1}+\cdots+\left(\frac{a_n}{a_n}\right)^{2 l+1} \\
+= & \left(\frac{a_1}{a_n}\right)^{2 l+1}+\left(\frac{a_2}{a_n}\right)^{2 l+1}+\cdots+\left(\frac{a_{n-k}}{a_n}\right)^{2 l+1}+k \\
+\geqslant & k-\left|\frac{a_1}{a_n}\right|^{2 l+1}-\left|\frac{a_2}{a_n}\right|^{2 l+1}-\cdots-\left|\frac{a_{n-k}}{a_n}\right|^{2 l+1} \\
+> & k-\frac{n-k}{n}=k-1+\frac{k}{n}>0 .
+\end{aligned}
+$$
+从而 $a_1^{2 l+1}+a_2^{2 l+1}+\cdots+a_n^{2 l+1}<0$,矛盾!
+下面来证明第二个结论.
+当 $x>a_1$ 时, $x-a_j>0,1 \leqslant j \leqslant n,\left(x-a_1\right)\left(x-a_2\right) \cdots\left(x-a_n\right) \leqslant(x-$
+$$
+\left.a_1\right) \cdot\left[\frac{\left(x-a_2\right)+\cdots+\left(x-a_n\right)}{n-1}\right]^{n-1}=\left(x-a_1\right) \cdot\left(x-\frac{a_2+a_3+\cdots+a_n}{n-1}\right)^{n-1} \text {. }
+$$
+由于 $a_1+a_2+\cdots+a_n \geqslant 0$, 即 $a_1 \geqslant-\left(a_2+a_3+\cdots+a_n\right)$.
+故 $x+\frac{1}{n-1} a_1 \geqslant x-\frac{a_2+a_3+\cdots+a_n}{n-1}(>0)$, 则有
+$$
+\begin{aligned}
+\left(x-a_1\right)\left(x-a_2\right) \cdots\left(x-a_n\right) & \leqslant\left(x-a_1\right)\left(x+\frac{a_1}{n-1}\right)^{n-1} \\
+& =\left(x-a_1\right) \cdot \sum_{S=0}^{n-1} \mathrm{C}_{n-1}^S\left(\frac{a_1}{n-1}\right)^S \cdot x^{n-1-S} \\
+& =\left(x-a_1\right) \cdot \sum_{S=0}^{n-1} \frac{\mathrm{C}_{n-1}^S}{(n-1)^S} a_1^S \cdot x^{n-1-S} .
+\end{aligned}
+$$
+易见, 当 $0 \leqslant S \leqslant n-1$ 时, $\frac{\mathrm{C}_{n-1}^S}{(n-1)^S} \leqslant 1$, 于是
+$$
+\begin{aligned}
+\left(x-a_1\right)\left(x-a_2\right) \cdots\left(x-a_n\right) & \leqslant\left(x-a_1\right) \cdot \sum_{S=0}^{n-1} a_1^S x^{n-1-S}\left(x>a_1 \geqslant 0\right) \\
+& =\left(x-a_1\right) \cdot \frac{x^{n-1}-a_1^{n-1} \cdot \frac{a_1}{x}}{1-\frac{a_1}{x}}=x^n-a_1^n .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 设实数 $a_1, a_2, \cdots, a_n(n \geqslant 2)$ 和 $A$ 满足: $A+\sum_{i=1}^n a_i^2<\frac{1}{n-1}\left(\sum_{i=1}^n a_i\right)^2$. 求证: 对于 $1 \leqslant i<j \leqslant n$, 有 $A<2 a_i a_j$.
+%%<SOLUTION>%%
+用反证法, 设有 $1 \leqslant i<j \leqslant n$ 使得 $A \geqslant 2 a_i a_j$.
+不妨设 $i=1, j=2$, 于是有
+$$
+A+\sum_{i=1}^n a_i^2 \geqslant 2 a_1 a_2+\sum_{i=1}^n a_i^2=\left(a_1+a_2\right)^2+a_3^2+\cdots+a_n^2,
+$$
+由 Cauchy 不等式, $\left(a_1+a_2\right)^2+a_3^2+\cdots+a_n^2 \geqslant \frac{1}{n-1} \cdot\left(a_1+a_2+\cdots+a_n\right)^2$.
+从而有 $A+\sum_{i=1}^n a_i^2 \geqslant \frac{1}{n-1}\left(\sum_{i=1}^n a_i\right)^2$,矛盾!
+故对一切 $1 \leqslant i<j \leqslant n$, 有 $A<2 a_i a_j$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 设 $\left\{a_k\right\}$ 是一个非负实数的无限序列, $k=1,2, \cdots$, 满足: $a_k-2 a_{k+1}+a_{k+2} \geqslant$ 0 及 $\sum_{j=1}^k a_j \leqslant 1, k=1,2, \cdots$. 求证: $0 \leqslant a_k-a_{k+1} \leqslant \frac{2}{k^2}, k=1,2, \cdots$. 
+%%<SOLUTION>%%
+先证明 $a_k-a_{k+1} \geqslant 0$, 可以用反证法.
+假设存在某个 $a_k<a_{k+1}$, 则 $a_{k+1} \leqslant a_k-a_{k+1}+a_{k+2}<a_{k+2}$, 序列 $\left\{a_S \mid S=\right. k, k+1, \cdots\}$ 是严格单调递增的.
+则 $\sum_{S=k}^n a_S(n>k)$ 在 $n$ 趋向于无穷大时也趋向于无穷大, 矛盾! 故有 $a_k-$
+$$
+\begin{aligned}
+& a_{k+1} \geqslant 0, k=1,2, \cdots \\
+& \text { 令 } b_k=a_k-a_{k+1} \geqslant 0, k=1,2, \cdots . \\
+& 1 \geqslant a_1+a_2+\cdots+a_k \\
+& =b_1+2 b_2+3 b_3+\cdots+k b_k+a_{k+1} \\
+& \geqslant(1+2+3+\cdots+k) b_k=\frac{k(k+1)}{2} b_k .
+\end{aligned}
+$$
+所以 $b_k \leqslant \frac{2}{k(k+1)}<\frac{2}{k^2}$, 因此 $0 \leqslant a_k-a_{k+1}<\frac{2}{k^2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 若方程 $x^4+a x^3+b x+c=0$ 的根都是实数, 求证: $a b \leqslant 0$.
+%%<SOLUTION>%%
+反设 $a b>0$, 不妨设 $a>0$, 则 $b>0$. 分三种情况讨论:
+(1) 若 $c>0, x^4+a x^3+b x+c=0$ 的根均为负根, 与 $x^2$ 前系数为 0 矛盾.
+(2) 若 $c<0$, 四个实根乘积为 $c<0$, 正根为 1 个或 3 个, 其余为负根, 再分别讨论:
+(i) 如果有 3 个正根 $x_2 、 x_3 、 x_4$, 负根为 $x_1$, 则 $x_1+x_2+x_3+x_4=-a<$ 0 , 故 $-x_1>-x_1-a=x_2+x_3+x_4$. 由于 $x^2$ 前系数为 0 , 应当有 $x_1\left(x_2+\right. \left.x_3+x_4\right)+x_2 x_3+x_2 x_4+x_3 x_4=0$.
+而 $x_2 x_3+x_2 x_4+x_3 x_4=-x_1\left(x_2+x_3+x_4\right)>\left(x_2+x_3+x_4\right)^2$, 矛盾!
+(ii) 如果仅有一个正根, 不妨设 $x_1$ 为正根, $x_2 、 x_3 、 x_4$ 为负根, $x_1 x_2 x_3 x_4\left(\frac{1}{x_1}+\frac{1}{x_2}+\frac{1}{x_3}+\frac{1}{x_4}\right)=-b<0$, 又由于 $x_1 x_2 x_3 x_4<0$, 则 $\frac{1}{x_1}+\frac{1}{x_2}+ \frac{1}{x_3}+\frac{1}{x_4}>0$. 由于 $-x_1\left(x_2+x_3+x_4\right)=x_2 x_3+x_3 x_4+x_2 x_4>0$, 两式相乘, 得到一 $\left(x_2+x_3+x_4\right)>\left(-\frac{1}{x_2}-\frac{1}{x_3}-\frac{1}{x_4}\right)\left(x_2 x_3+x_3 x_4+x_4 x_2\right)=-2\left(x_2+\right. \left.x_3+x_4\right)-\left(\frac{x_2 x_3}{x_4}+\frac{x_3 x_4}{x_2}+\frac{x_4 x_2}{x_3}\right)$,矛盾!
+(3) 若 $c=0, x^3+a x^2+b=0$ 有三个实根, 由于 $a>0, b>0$, 三个实数均为负根, 由于 $x$ 前面系数为 0 , 则根的两两乘积之和为 0 , 矛盾!
+综上所述, $a b \leqslant 0$.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例12. 证明: 满足条件\n(1) $a_1+a_2+\\cdots+a_n \\geqslant n^2$;\n(2) $a_1^2+a_2^2+\\cdots+a_n^2 \\leqslant n^3+1$\n的整数只有 $\\left(a_1, a_2, \\cdots, a_n\\right)=(n, n, \\cdots, n)$.",
+    "solution": "证明:设 $\\left(a_1, a_2, \\cdots, a_n\\right)$ 是满足条件的整数组, 则由柯西不等式, 得\n$$\na_1^2+a_2^2+\\cdots+a_n^2 \\geqslant \\frac{1}{n}\\left(a_1+a_2+\\cdots+a_n\\right)^2 \\geqslant n^3 .\n$$\n结合 $a_1^2+a_2^2+\\cdots+a_n^2 \\leqslant n^3+1$, 可知只能 $\\sum_{i=1}^n a_i^2=n^3$ 或者 $\\sum_{i=1}^n a_i^2= n^3+1$.\n当 $\\sum_{i=1}^n a_i^2=n^3$ 时, 由柯西不等式取等号得 $a_1=a_2=\\cdots=a_n$, 即 $a_i^2=n^2$, $1 \\leqslant i \\leqslant n$. 再由 $\\sum_{i=1}^n a_i \\geqslant n^2$, 则只有 $a_1=a_2=\\cdots=a_n=n$.\n当 $\\sum_{i=1}^n a_i=n^3+1$ 时, 则令 $b_i=a_i-n$, 得\n$$\n\\sum_{i=1}^n b_i^2=\\sum_{i=1}^n a_i^2-2 n \\sum_{i=1}^n a_i+n^3 \\leqslant 2 n^3+1-2 n \\sum_{i=1}^n a_i \\leqslant 1 .\n$$\n于是 $b_i^2$ 只能是 0 或者 1 , 且 $b_1^2, b_2^2, \\cdots, b_n^2$ 中至多有一个为 1 . 如果都为零, 则 $a_i=n, \\sum_{i=1}^n a_i^2=n^3 \\neq n^3+1$, 矛盾.\n如果 $b_1^2, b_2^2, \\cdots, b_n^2$ 中有一个为 1 , 则 $\\sum_{i=1}^n a_i^2=n^3 \\pm 2 n+1 \\neq n^3+1$, 也矛盾.\n故只有 $\\left(a_1, a_2, \\cdots, a_n\\right)=(n$, $n, \\cdots, n)$ 为唯一一组整数解.",
+    "remark": "",
+    "figures": []
+}

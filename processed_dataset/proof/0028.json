@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例7. 集合 $A=\\{0,1,2, \\cdots, 9\\},\\left\\{B_1, B_2, \\cdots, B_k\\right\\}$ 是 $A$ 的一族非空子集, 当 $i \\neq j$ 时, $B_i \\cap B_j$ 至多有两个元素.\n求 $k$ 的最大值.",
+    "solution": "分析:集合 $A$ 的一元、二元、三元子集显然符合要求.\n而 $A$ 的任一多于三元的子集 $B^{\\prime}$ 必包含了.\n$A$ 的三元子集, 故 $B^{\\prime}$ 与其包含的三元子集不能同在题中的子集族内.\n解首先至多含 3 个元素的 $A$ 的非空子集有\n$$\n\\mathrm{C}_{10}^1+\\mathrm{C}_{10}^2+\\mathrm{C}_{10}^3=10+\\frac{10 \\times 9}{2}+\\frac{10 \\times 9 \\times 8}{6}=175 \\text { (个). }\n$$\n这些集合的交集至多有两个元素, 否则两集合相等, 矛盾.\n因此 $k_{\\max } \\geqslant 175$.\n下面证明 $k_{\\max } \\leqslant 175$.\n设 $\\mathscr{b}$ 为满足题设的子集族.\n若 $B \\in \\mathscr{C}$, 且 $|B| \\geqslant 4$, 设 $b \\in B$, 则 $B$ 与 $B- \\{b\\}$ 不能同时含于 $\\mathscr{C}$, 以 $B-\\{b\\}$ 代 $B$, 则 $\\mathscr{C}$ 中元素数目不变.\n仿此对 $\\mathscr{C}$ 中所有元素数目多于 4 的集合 $B$ 作相应替代, 替代后子集族 $\\mathscr{C}$ 中的每个集合都是元素数目不多于 3 的非空集合.\n故 $k_{\\max } \\leqslant 175$.\n所以, $k$ 的最大值为 175 .\n说明上述解答采用了“两边夹”的策略: 先得出 $k$ 的最大值不小于 175 , 然后指出 $k$ 不大于 175 , 从而得出 $k_{\\max }=175$.",
+    "remark": "",
+    "figures": []
+}

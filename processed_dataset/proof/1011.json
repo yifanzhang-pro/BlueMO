@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例8. 已知 $x 、 y$ 都是正整数,且 $x-y=1$,\n$$\nA=\\left(\\sqrt{x}-\\frac{1}{\\sqrt{x}}\\right)\\left(\\sqrt{y}+\\frac{1}{\\sqrt{y}}\\right) \\cdot \\frac{1}{x},\n$$\n求证: $0<A<1$.",
+    "solution": "分析:从 $x-y=1$ 这一特征联想到 $\\sec ^2 \\alpha-\\tan ^2 \\alpha=1$, 所以采用三角换元法.\n证明设 $x=\\sec ^2 \\alpha, y=\\tan ^2 \\alpha$, 其中 $\\alpha \\in\\left(0, \\frac{\\pi}{2}\\right)$, 于是\n$$\n\\begin{aligned}\nA & =\\left(\\sec \\alpha-\\frac{1}{\\sec \\alpha}\\right)\\left(\\tan \\alpha+\\frac{1}{\\tan \\alpha}\\right) \\cdot \\frac{1}{\\sec ^2 \\alpha} \\\\\n& =\\frac{1-\\cos ^2 \\alpha}{\\cos \\alpha} \\cdot \\frac{\\sin ^2 \\alpha+\\cos ^2 \\alpha}{\\sin \\alpha \\cdot \\cos \\alpha} \\cdot \\cos ^2 \\alpha=\\sin \\alpha .\n\\end{aligned}\n$$\n因为 $0<\\alpha<\\frac{\\pi}{2}$, 所以 $0<\\sin \\alpha<1$, 即 $0<A<1$.\n评注当题中出现 $x-y=a(x, y, a>0)$ 时, 可设 $x=a \\sec ^2 \\alpha, y= a \\tan ^2 \\alpha$, 其中 $\\alpha \\in\\left(0, \\frac{\\pi}{2}\\right)$; 在形如 $\\sqrt{a^2-x^2}$ 中, 可设 $x=a \\cos \\alpha$, 其中 $\\alpha \\in[0$, $\\pi]$, 或设 $x=a \\sin \\alpha$, 其中 $\\alpha \\in\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$; 在形如 $\\sqrt{x^2-a^2}$ 中, 可设 $x=a \\sec \\alpha$, 其中 $\\alpha \\in\\left[0, \\frac{\\pi}{2}\\right) \\cup\\left(\\frac{\\pi}{2}, \\pi\\right]$.",
+    "remark": "",
+    "figures": []
+}

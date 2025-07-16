@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $f(x)$ 是一个实系数的二次多项式, 若对所有正整数 $n, f(n)$ 均是整数的平方.\n证明, $f(x)$ 是一次整系数多项式的平方.",
+    "solution": "证明:本题并不容易,但有几种完全不同的解法.\n这里介绍的方法基于数列的极限知识, 较为简单.\n设 $f(x)=a x^2+b x+c, a_n=f(n)(n \\geqslant 1)$, 则易知\n$$\n\\begin{aligned}\n\\sqrt{a_n}-\\sqrt{a_{n-1}} & =\\frac{a_n-a_{n-1}}{\\sqrt{a_n}+\\sqrt{a_{n-1}}} \\\\\n& =\\frac{2 a n-a+b}{\\sqrt{a n^2+b n+c}+\\sqrt{a n^2+(-2 a+b) n+a-b+c}} \\\\\n& =\\frac{2 a+\\frac{b-a}{n}}{\\sqrt{a+\\frac{b}{n}+\\frac{c}{n^2}}+\\sqrt{a+\\frac{b-2 a}{n}+\\frac{a-b+c}{n^2}}} .\n\\end{aligned}\n$$\n因此当 $n \\rightarrow \\infty$ 时, $\\sqrt{a_n}-\\sqrt{a_{n-1}}$ 有极限, 且极限值为 $\\frac{2 a}{\\sqrt{a}+\\sqrt{a}}=\\sqrt{a}$. 但已知 $\\sqrt{a_n}$ 都是整数, 故 $\\left\\{\\sqrt{a_n}-\\sqrt{a_{n-1}}\\right\\}(n \\geqslant 2)$ 是一个整数数列, 因此其极限值 $\\sqrt{a}$ 必是一个整数, 且 $n$ 充分大后, 所有项 $\\sqrt{a_n}-\\sqrt{a_{n-1}}$ 都等于极限 $\\sqrt{a}$, 即有一个 (固定的) 正整数 $k$, 使得\n$$\n\\sqrt{a_n}-\\sqrt{a_{n-1}}=\\sqrt{a} \\text {, 对 } n \\geqslant k+1 \\text {. }\n$$\n现在设 $m$ 是大于 $k$ 的任一个整数, 将上式对 $n=k+1, \\cdots, m$ 求和, 得出 $\\sqrt{a_m}= \\sqrt{a_k}+(m-k) \\sqrt{a}$, 即\n$$\na_m=\\left(m \\sqrt{a}+\\sqrt{a_k}-k \\sqrt{a}\\right)^2 . \\label{eq1}\n$$\n记 $\\alpha=\\sqrt{a}, \\beta=\\sqrt{a_k}-k \\sqrt{a}$, 则 $\\alpha 、 \\beta$ 都是与 $m$ 无关的固定整数,于是, 式\\ref{eq1}表明, 所有大于 $k$ 的整数 $m$ 都是多项式\n$$\nf(x)-(\\alpha x+\\beta)^2\n$$\n的根, 从而这多项式必是零多项式,即 $f(x)=(\\alpha x+\\beta)^2$.",
+    "remark": "",
+    "figures": []
+}

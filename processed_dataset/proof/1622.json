@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设 $P\\left(x_1, x_2, \\cdots, x_n\\right)$ 是一个有 $n$ 个变元的多项式, 我们用 +1 或 -1 代替 $P$ 中所有的变元, 若其中 -1 的个数为偶数, 则 $P$ 的值为正; 若其中-1 的个数为奇数, 则 $P$ 的值为负.\n证明: $P$ 为一个至少 $n$ 次的多项式 (即 $P$ 中存在一项, 其所有变元的次数和不小于 $n$ ).",
+    "solution": "明显满足条件的一个多项式是 $P=x_1 x_2 \\cdots x_n$, 如果我们能证明 $P\\left(x_1, \\cdots, x_n\\right)$ 中有一项是 $x_1 x_2 \\cdots x_n$ 的倍式 (即 $x_1, \\cdots, x_n$ 在该项中都出现), 那么 $P$ 的次数不小于 $n$.\n下面证明加强的结论: $P\\left(x_1, \\cdots, x_n\\right)$ 中有一项为 $x_1 x_2 \\cdots x_n$ 的倍式.\n当 $n=1$ 时, 由条件 $P(1)>0, P(-1)<0$, 故 $P\\left(x_1\\right)$ 不为常数, 有一项为 $x_1$ 的倍式,命题成立.\n假设命题对符合条件的含 $n-1$ 个变量的多项式都成立,考虑 $n$ 的情形.\n对满足条件的 $P\\left(x_1, x_2, \\cdots, x_n\\right)$, 我们令\n$$\nQ\\left(x_1, x_2, \\cdots, x_{n-1}\\right)=\\frac{1}{2}\\left[P\\left(x_1, x_2, \\cdots, x_{n-1}, 1\\right)-P\\left(x_1, \\cdots, x_{n-1},-1\\right)\\right],\n$$\n它是视 $P$ 为 $x_n$ 的多项式时 (其余变量 $x_1, \\cdots, x_{n-1}$ 视为常数), $x_n$ 的奇次项的系数和.\n由于当 $x_1, \\cdots, x_{n-1}$ 都用 +1 或 -1 代替时, 如果 -1 的个数为偶数,则 $P\\left(x_1, \\cdots, x_{n-1}, 1\\right)>0, P\\left(x_1, \\cdots, x_{n-1},-1\\right)<0$, 故 $Q\\left(x_1, \\cdots, x_{n-1}\\right)>0$ ; 类似地, 如果 -1 的个数为奇数, 那么 $Q\\left(x_1, \\cdots, x_{n-1}\\right)<0$. 利用归纳假设可知, $Q\\left(x_1, \\cdots, x_{n-1}\\right)$ 中有一项为 $x_1 x_2 \\cdots x_{n-1}$ 的倍式.\n注意到 $P\\left(x_1, \\cdots, x_n\\right)$ 是 $Q\\left(x_1, \\cdots, x_{n-1}\\right)$ 的每一项乘以 $x_n$ 的某个奇次幂(不同的项可能幕次不同)求和后得到, 所以, $P\\left(x_1, \\cdots, x_n\\right)$ 中有一项为 $x_1 \\cdots x_n$ 的倍式.\n综上可知, 命题成立.",
+    "remark": "",
+    "figures": []
+}

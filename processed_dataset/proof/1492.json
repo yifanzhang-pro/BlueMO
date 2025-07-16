@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设 $x_1, x_2, \\cdots, x_n(n \\geqslant 2)$ 均为正数,求证:\n$$\n\\frac{x_1^2}{x_1^2+x_2 x_3}+\\frac{x_2^2}{x_2^2+x_3 x_4}+\\cdots+\\frac{x_{n-1}^2}{x_{n-1}^2+x_n x_1}+\\frac{x_n^2}{x_n^2+x_1 x_2} \\leqslant n-1 .\n$$",
+    "solution": "令 $y_{i}={\\frac{x_{i+1}x_{i+2}}{x_{i}^{2}}} (i = 1,2,\\cdots,n,x_{n+1} =x_1,x_{n+2}=x_2)$ 则原不等式等价于\n$$\n\\frac{1}{1+y_1}+\\frac{1}{1+y_2}+\\cdots+\\frac{1}{1+y_n} \\leqslant n-1 . \\label{(1)}\n$$\n由 $y_i$ 的定义知, $y_1 y_2 \\cdots y_n=1$.\n如果(1)中有两项 $\\leqslant \\frac{1}{2}$, 由于 $\\frac{1}{1+y_i}<1$, 结论已成立.\n如果仅有 $\\frac{1}{1+y_1} \\leqslant \\frac{1}{2}$, 即 $y_1 \\geqslant 1, y_2 \\leqslant 1, y_3 \\leqslant 1, \\cdots, y_n \\leqslant 1$, 那么 $\\frac{1}{1+y_1}+\\frac{1}{1+y_2} \\leqslant \\frac{1}{1+y_1}+\\frac{1}{1+y_2 y_3 \\cdots y_n}=\\frac{1}{1+y_1}+\\frac{1}{1+\\frac{1}{y_1}}=1$.\n故(1)左边前两项之和 $\\leqslant 1$, 其余 $n-2$ 项均 $<1$, 所以(1)成立.",
+    "remark": "",
+    "figures": []
+}

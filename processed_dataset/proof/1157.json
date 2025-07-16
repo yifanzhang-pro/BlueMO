@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-4.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $A_1, A_2, \\cdots, A_{30}$ 是集 $\\{1,2, \\cdots, 2003\\}$ 的子集, 且 $\\left|A_i\\right| \\geqslant 660 (i=1,2, \\cdots, 30)$. 证明:存在 $i, j \\in\\{1,2, \\cdots, 30\\}, i \\neq j$, 使得\n$$\n\\left|A_i \\cap A_j\\right| \\geqslant 2003 \\text {. }\n$$",
+    "solution": "证明:不妨设每个 $A_i$ 的元素都为 660 个(否则去除一些元素),我们作一个集合、元素的关系表:表中每一行(除最上面的一行)表示 30 个集合, 表的 $n$ 列(最左面一列除外)表示 2003 个元素 $1,2, \\cdots, 2003$. 如果 $i \\in A_j(i=1$ , $2, \\cdots, 2003,1 \\leqslant j \\leqslant 30)$, 则在 $i$ 所在的列与 $A_j$ 所在的交叉处填上 1 , 如果 $i \\notin A_j$, 则写上 0 . 表中每一行有 660 个 1 , 因此共有 $30 \\times 660$ 个 1 . 第 $j$ 列有 $m_j$ 个 $1(j=1,2, \\cdots, 2003)$, 则\n$$\n\\sum_{j=1}^{2003} m_j=30 \\times 660 .\n$$\n由于每个元素 $j$ 属于 $\\mathrm{C}_{m_j}^2$ 个交集 $A_s \\cap A_t$, 因此\n$$\n\\sum_{j=1}^{2003} \\mathrm{C}_{m_j}^2=\\sum_{1 \\leqslant s<t \\leqslant 30}\\left|A_s \\cap A_t\\right| \\text {. }\n$$\n由柯西不等式, 得\n$$\n\\sum_{j=1}^{2003} \\mathrm{C}_{m_j}^2=\\frac{1}{2}\\left(\\sum_{j=1}^{2003} m_j^2-\\sum_{j=1}^{2003} m_j\\right) \\geqslant \\frac{1}{2}\\left[-\\frac{1}{2003}\\left(\\sum_{j=1}^{2003} m_i\\right)^2-\\sum_{j=1}^{2003} m_j\\right] .\n$$\n所以,必有 $i \\neq j$, 满足\n$$\n\\begin{aligned}\n\\left|A_i \\cap A_j\\right| & \\geqslant \\frac{1}{\\mathrm{C}_{30}^2} \\times \\frac{1}{2}\\left[\\frac{1}{2003}\\left(\\sum_{j=1}^{2003} m_j\\right)^2-\\sum_{j=1}^{2003} m_j\\right] \\\\\n& =\\frac{660(30 \\times 660-2003)}{29 \\times 2003}>2002,\n\\end{aligned}\n$$\n故 $\\left|A_i \\cap A_j\\right| \\geqslant 2003$.",
+    "remark": "",
+    "figures": []
+}

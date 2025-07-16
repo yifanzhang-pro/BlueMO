@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题7. 已知关于 $x$ 的二次方程 $a(1+\\mathrm{i}) x^2+\\left(1+a^2 \\mathrm{i}\\right) x+a^2+\\mathrm{i}=0$ 有实根, 求实数 $a$ 的值.",
+    "solution": "设原方程有一实根 $x_0$, 则\n$$\na(1+\\mathrm{i}) x_0^2+\\left(1+a^2 \\mathrm{i}\\right) x_0+a^2+\\mathrm{i}=0,\n$$\n即\n$$\n\\left(a x_0^2+x_0+a^2\\right)+\\mathrm{i}\\left(a x_0^2+a^2 x_0+1\\right)=0 .\n$$\n根据复数相等的充要条件,有\n$$\n\\left\\{\\begin{array}{l}\na x_0^2+x_0+a^2=0, \\\\\na x_0^2+a^2 x_0+1=0 .\n\\end{array}\\right.\n$$\n解得 $x_0=1$ 或 $a= \\pm 1$.\n当 $x_0=1$ 时, 代入 $a x_0^2+x_0+a^2=0$ 得 $a^2+a+1=0$. 因为 $a \\in \\mathbf{R}, a^2+ a+1=\\left(a+\\frac{1}{2}\\right)^2+\\frac{3}{4}>0$, 所以不成立.\n同理,当 $a=1$ 时,也不成立.\n当 $a=-1$ 时,方程变为 $x_0^2-x_0-1=0$, 所以 $x_0=\\frac{1 \\pm \\sqrt{5}}{2}$ 满足题意, 故 $a=-1$.",
+    "remark": "",
+    "figures": []
+}

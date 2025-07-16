@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $0 \\leqslant a, b, c \\leqslant 1$, 求证:\n$$\n\\frac{a}{b c+1}+\\frac{b}{c a+1}+\\frac{c}{a b+1} \\leqslant 2 .\n$$",
+    "solution": "分析:我们发现等号成立并不是当 $a=b=c$, 而是当 $a 、 b 、 c$ 中有一个为 0 , 另两个为 1 时取到, 因此, 不应从整体去考虑问题, 而应考虑局部的性质, 即单项性质.\n证明我们先证明\n$$\n\\frac{a}{b c+1} \\leqslant \\frac{2 a}{a+b+c} . \\label{(1)}\n$$\n注意到(1)等价于 $a+b+c \\leqslant 2 b c+2$, 即\n$$\n(b-1)(c-1)+b c+1 \\geqslant a .\n$$\n而 $a, b, c \\in[0,1]$, 上式显然成立,因此(1)成立.\n同理, 我们有\n$$\n\\begin{aligned}\n& \\frac{b}{c a+1} \\leqslant \\frac{2 b}{a+b+c}, \\label{(2)} \\\\\n& \\frac{c}{a b+1} \\leqslant \\frac{2 c}{a+b+c} . \\label{(3)}\n\\end{aligned}\n$$\n三式相加即得原不等式成立.",
+    "remark": "",
+    "figures": []
+}

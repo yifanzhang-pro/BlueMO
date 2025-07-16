@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题17. 计算 $\\sin 6^{\\circ} \\sin 42^{\\circ} \\sin 66^{\\circ} \\sin 78^{\\circ}=$",
+    "solution": "$\\frac{1}{16}$. 参照例 4 可得原式 $=\\frac{1}{16}$.",
+    "remark": "",
+    "figures": []
+}

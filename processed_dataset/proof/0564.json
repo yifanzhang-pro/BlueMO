@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例8. 在 $x O y$ 平面上有 2002 个点, 它们组成一个点集 $S$, 已知 $S$ 中任意两点的连线都不与坐标轴平行.\n对 $S$ 中的任意两个点 $P 、 Q$, 考虑以 $P Q$ 为对角线, 其边平行于坐标轴的矩形 $M_{P Q}$, 用 $W_{P Q}$ 表示 $S$ 在矩形 $M_{P Q}$ 内 (不含 $P$ 、 $Q)$ 的点的个数.\n当命题: \" $S$ 中的点无论在坐标平面上如何分布, 在 $S$ 中至少有一对点 $P$ 、 $Q$, 满足 $W_{P Q} \\geqslant N$ \" 为真时, 求 $N$ 的最大值.",
+    "solution": "解:$N_{\\max }=400$. 先证明必有 $P 、 Q$ 使得 $W_{P Q} \\geqslant 400$. 事实上, 设 $A$ 是 $S$ 中纵坐标最大的点, $B$ 是 $S$ 中纵坐标最小的点, $C$ 是 $S$ 中横坐标最大的点, $D$ 是 $S$ 中横坐标最小的点.\n如果 $A 、 B 、 C 、 D$ 中有两点重合, 结论显然成立 (此时不妨设 $A=C$, 则 $M_{A B} 、 M_{B D} 、 M_{A D}$ 覆盖了 $S$, 从而 $\\max \\left\\{W_{A B}, W_{B D}, W_{A D}\\right\\} \\geqslant \\left.\\frac{2002-3}{3}>400\\right)$. 如果 $A 、 B 、 C 、 D$ 两两不重合, 则它们的分布如图(<FilePath:./images/volume13/figures/fig-c7i4.png>) 所示.\n对于情形(1)(4), $M_{A C} 、 M_{B C} 、 M_{A D} 、 M_{B D}$ 覆盖了 $S$, 从而 $\\max \\left\\{W_{A C}, W_{B D}\\right.$, $\\left.W_{A D}, W_{B C}\\right\\} \\geqslant \\frac{2002-4}{4}>400$.\n对于情形(2)(3), $M_{A C} 、 M_{B C} 、 M_{A D} 、 M_{B D} 、 M_{A B}$ 覆盖了 $S$, 从而 $\\max \\left\\{W_{A C}\\right.$, $\\left.W_{B D}, W_{A D}, W_{B C}, W_{A B}\\right\\} \\geqslant \\frac{2002-4}{5}>399$, 从而 $\\max \\left\\{W_{A C}, W_{B D}, W_{A D}\\right.$, $\\left.W_{B C}, W_{A B}\\right\\} \\geqslant 400$. 于是必有 $P 、 Q$ 使得 $W_{P Q} \\geqslant 400$.\n下面证明存在这样的 $S$, 使得对所有 $P 、 Q \\in S$ 都有 $W_{P Q} \\leqslant 400$. 事实上, 如图(<FilePath:./images/volume13/figures/fig-c7i5.png>) 所示, 将 $S$ 中的 2002 个点分成 5组 $E$ 、 $F 、 G 、 H 、 I$, 其中 $H 、 F$ 中各有 401 个点, 而 $E$ 、 $I 、 G$ 中各有 400 个点, 每组中的点都位于相应方格的对角线上.\n显然, 对任何一个矩形 $M_{P Q} (P 、 Q \\in S)$, 它至多含有一个组中的点.\n如果它包含的点属于组 $I$, 则 $W_{P Q} \\leqslant 400$. 如果矩形 $M_{P Q}$ 包含了 $I$ 外的其他组中的点, 则点 $P 、 Q$ 中至少有一个属于这个组, 于是 $W_{P Q} \\leqslant 401-1=400$.\n综上所述, $N_{\\text {max }}=400$.",
+    "remark": "",
+    "figures": [
+        "./images/volume13/figures/fig-c7i4.png",
+        "./images/volume13/figures/fig-c7i5.png"
+    ]
+}

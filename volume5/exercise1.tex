@@ -1,0 +1,473 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $x, y, z \in \mathbf{R}$, 求证:
+$$
+\left(x^2+y^2+z^2\right)\left[\left(x^2+y^2+z^2\right)^2-(x y+y z+z x)^2\right]
+$$
+$$
+\geqslant(x+y+z)^2\left[\left(x^2+y^2+z^2\right)-(x y+y z+z x)\right]^2 .
+$$
+%%<SOLUTION>%%
+记 $a=x+y+z, b=x y+y z+z x$, 则 $x^2+y^2+z^2=a^2-2 b$, 故原式左边一右边 $=2 b^2\left(a^2-3 b\right)=b^2 \cdot\left[(x-y)^2+(y-z)^2+(z-x)^2\right] \geqslant 0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $m, n \in \mathbf{N}^{+}, m>n$, 求证: $\left(1+\frac{1}{n}\right)^n<\left(1+\frac{1}{m}\right)^m$.
+%%<SOLUTION>%%
+我们只需证明: $\left(1+\frac{1}{n}\right)^n<\left(1+\frac{1}{n+1}\right)^{n+1}$.
+当 $n=1$ 时, 上式显然成立, 当 $n \geqslant 2$ 时,由二项式定理,
+$$
+\begin{aligned}
+\left(1+\frac{1}{n}\right)^n=\sum_{k=2}^n & \frac{1}{k !} \cdot\left(1-\frac{1}{n}\right)\left(1-\frac{2}{n}\right) \cdots\left(1-\frac{k-1}{n}\right)+2, \\
+\left(1+\frac{1}{n+1}\right)^{n+1}= & \sum_{k=2}^{n+1} \frac{1}{k !}\left(1-\frac{1}{n+1}\right)\left(1-\frac{2}{n+1}\right) \cdots\left(1-\frac{k-1}{n+1}\right)+2 \\
+= & \sum_{k=2}^n \frac{1}{k !}\left(1-\frac{1}{n+1}\right)\left(1-\frac{2}{n+1}\right) \cdots \\
+& \left(1-\frac{k-1}{n+1}\right)+\left(\frac{1}{n+1}\right)^{n+1}+2,
+\end{aligned}
+$$
+于是,显然有 $\left(1+\frac{1}{n}\right)^n<\left(1+\frac{1}{n+1}\right)^{n+1}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 给定大于 1 的自然数 $a 、 b 、 n, A_{n-1}$ 和 $A_n$ 是 $a$ 进制数, $B_{n-1}$ 和 $B_n$ 是 $b$ 进制数, $A_{n-1} 、 A_n 、 B_{n-1} 、 B_n$ 定义为:
+$$
+\begin{aligned}
+& A_n=x_n x_{n-1} \cdots x_0, A_{n-1}=x_{n-1} x_{n-2} \cdots x_0(\text { 按 } a \text { 进制写出 }) \\
+& B_n=x_n x_{n-1} \cdots x_0, B_{n-1}=x_{n-1} x_{n-2} \cdots x_0(\text { 按 } b \text { 进制写出 })
+\end{aligned}
+$$
+其中 $x_n \neq 0, x_{n-1} \neq 0$. 求证: 当 $a>b$ 时,有 $\frac{A_{n-1}}{A_n}<\frac{B_{n-1}}{B_n}$.
+%%<SOLUTION>%%
+由于 $A_n>0, B_n>0$, 所以只需证 $A_n B_{n-1}-A_{n-1} B_n>0$, 而
+$$
+\begin{aligned}
+& A_n B_{n-1}-A_{n-1} B_n \\
+= & \left(x_n \cdot a^n+A_{n-1}\right) B_{n-1}-A_{n-1}\left(x_n b^n+B_{n-1}\right) \\
+= & x_n\left(a^n B_{n-1}-b^n A_{n-1}\right) \\
+= & x_n\left[x_{n-1}\left(a^n b^{n-1}-a^{n-1} b^n\right)+x_{n-2}\left(a^n b^{n-2}-a^{n-2} b^n\right)+\cdots+x_0\left(a^n-b^n\right)\right] .
+\end{aligned}
+$$
+因为 $a>b$, 故当 $1 \leqslant k \leqslant n$ 时, $a^n \cdot b^{n-k}>a^{n-k} \cdot b^n$, 并且 $x_i \geqslant 0(i=0$, $1,2, \cdots, n-2), x_{n-1}, x_n \geqslant 0$, 于是 $A_n B_{n-1}-A_{n-1} B_n>0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $a, b, c \in \mathbf{R}^{+}$, 求证:
+$$
+\frac{1}{a}+\frac{1}{b}+\frac{1}{c} \leqslant \frac{a^8+b^8+c^8}{a^3 b^3 c^3} .
+$$
+%%<SOLUTION>%%
+反复利用 $a^2+b^2+c^2 \geqslant a b+b c+c a(a, b, c \in \mathbf{R})$, 有
+$$
+a^8+b^8+c^8 \geqslant a^4 b^4+b^4 c^4+c^4 a^4 \geqslant a^2 b^4 c^2+b^2 c^4 a^2+c^2 a^4 b^2
+$$
+$$
+==a^2 b^2 c^2\left(a^2+b^2+c^2\right) \geqslant a^2 b^2 c^2(a b+b c+c a) .
+$$
+两边同除以 $a^3 b^3 c^3$ 即得原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设实数 $a_1, a_2, \cdots, a_{100}$ 满足:
+(1) $a_1 \geqslant a_2 \geqslant \cdots \geqslant a_{100} \geqslant 0$;
+(2) $a_1+a_2 \leqslant 100$;
+(3) $a_3+a_4+\cdots+a_{100} \leqslant 100$.
+求 $a_1^2+a_2^2+\cdots+a_{100}^2$ 的最大值.
+%%<SOLUTION>%%
+解:$$
+\begin{aligned}
+& a_1^2+a_2^2+\cdots+a_{100}^2 \leqslant\left(100-a_2\right)^2+a_2^2+a_3^2+\cdots+a_{100}^2 \\
+\leqslant & 100^2-\left(a_1+a_2+\cdots+a_{100}\right) a_2+2 a_2^2+a_3^2+\cdots+a_{100}^2 \\
+= & 100^2-a_2\left(a_1-a_2\right)-a_3\left(a_2-a_3\right)-\cdots-a_{100}\left(a_2-a_{100}\right) \\
+\leqslant & 100^2 .
+\end{aligned}
+$$
+等号成立, 当 $a_1=100, a_i=0(i>1)$ 或者 $a_1=a_2=a_3=a_4=50, a_j= 0(j>4)$ 时.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 已知 $5 n$ 个实数 $r_i 、 s_i 、 t_i 、 u_i 、 v_i$ 都大于 $1(1 \leqslant i \leqslant n)$, 记 $R=\frac{1}{n} \cdot \sum_{i=1}^n r_i$, $S=\frac{1}{n} \cdot \sum_{i=1}^n s_i, T=\frac{1}{n} \cdot \sum_{i=1}^n t_i, U=\frac{1}{n} \cdot \sum_{i=1}^n u_i, V=\frac{1}{n} \cdot \sum_{i=1}^n v_i$. 求证下述不等式成立:
+$$
+\prod_{i=1}^n\left(\frac{r_i s_i t_i u_i v_i+1}{r_i s_i t_i u_i v_i-1}\right) \geqslant\left(\frac{R S T U V+1}{R S T U V-1}\right)^n .
+$$
+%%<SOLUTION>%%
+先证明一个引理:
+引理: 设 $x_1, x_2, \cdots, x_n$ 为 $n$ 个大于 1 的实数, $A=\sqrt[n]{x_1} \overline{x_2 \cdots x_n}$, 则
+$$
+\prod_{i=1}^n \frac{\left(x_i+1\right)}{\left(x_i-1\right)} \geqslant\left(\frac{A+1}{A-1}\right)^n \text {. }
+$$
+证明: 不妨设 $x_1 \leqslant x_2 \leqslant \cdots \leqslant x_n$, 则 $x_1 \leqslant A \leqslant x_n$.
+用通分不难证明: $\frac{\left(x_1+1\right)\left(x_n+1\right)}{\left(x_1-1\right)\left(x_n-1\right)} \geqslant\left(\frac{A+1}{A-1}\right) \cdot\left(\frac{\frac{x_1 x_n}{A}+1}{\frac{x_1 x_n}{A}-1}\right)$.
+于是, $\prod_{i=1}^n\left(\frac{x_i+1}{x_i-1}\right) \geqslant \prod_{i=2}^{n-1}\left(\frac{x_i+1}{x_i-1}\right)\left(\frac{\frac{x_1 x_n}{A}+1}{\frac{x_1 x_n}{A}-1}\right)\left(\frac{A+1}{A-1}\right)$.
+再考虑剩下的 $n-1$ 个实数: $x_2, x_3, \cdots, x_{n-1}$ 和 $x_1 x_n$, 它们的几何平均值仍为 $A$, 故这 $n-1$ 个数中亦存在最大、最小值, 且最大值不小于 $A$, 最小值不大于 $A$. 采取同上的做法, 经过 $n-1$ 次即可得: $\prod_{i=1}^n\left(\frac{x_i+1}{x_i-1}\right) \geqslant\left(\frac{A+1}{A-1}\right)^n$.
+下面证明原命题.
+令 $x_i=r_i s_i t_i u_i v_i(1 \leqslant i \leqslant n)$, 由引理可得
+$$
+\prod_{i=1}^n \frac{r_i s_i t_i u_i v_i+1}{r_i s_i t_i u_i v_i-1} \geqslant\left(\frac{B+\dot{1}}{B-1}\right)^n,
+$$
+其中 $B=\sqrt[n]{\prod_{i=1}^n\left(r_i s_i t_i u_i v_i\right)}$. 因此只需证明: $\frac{B+1}{B-1} \geqslant \frac{R S T U V+1}{R S T U V-1}$, 而
+$$
+\begin{aligned}
+\text { RSTUV } & =\frac{1}{n} \cdot\left(\sum_{i=1}^n r_i\right) \cdot \frac{1}{n} \cdot\left(\sum_{i=1}^n s_i\right) \cdot \frac{1}{n}\left(\sum_{i=1}^n t_i\right) \cdot \frac{1}{n}\left(\sum_{i=1}^n u_i\right) \cdot \frac{1}{n}\left(\sum_{i=1}^n v_i\right) \\
+& \geqslant \sqrt[n]{\prod_{i=1}^n r_i} \cdot \sqrt[n]{\prod_{i=1}^n s_i} \cdot \sqrt[n]{\prod_{i=1}^n t_i} \cdot \sqrt[n]{\prod_{i=1}^n u_i} \cdot \sqrt[n]{\prod_{i=1}^n v_i}=B
+\end{aligned}
+$$
+故 $(B+1)(R S T U V-1)-(B-1)(R S T U V+1)=2(R S T U V-B) \geqslant 0$.
+所以结论成立.
+原不等式得证.
+%%<REMARK>%%
+注::我们也可以用 Jensen 不等式来证.
+首先, 不难证明, 对任意 $a, b>1$, 有 $\left(\frac{a+1}{a-1}\right) \cdot\left(\frac{b+1}{b-1}\right) \geqslant\left(\frac{\sqrt{a b}+1}{\sqrt{a b}-1}\right)^2$,
+故函数 $y=\ln \left(\frac{\mathrm{e}^x+1}{\mathrm{e}^x-1}\right)$ 在区间 $(0,+\infty)$ 上是凸函数, 于是
+$$
+\prod_{i=1}^n\left(\frac{r_i s_i t_i u_i v_i+1}{r_i s_i t_i u_i v_i-1}\right) \geqslant \frac{\sqrt[n]{\prod_{i=1}^n r_i s_i t_i u_i v_i}+1}{\sqrt[n]{\prod_{i=1}^n r_i s_i t_i u_i v_i}-1} \geqslant\left(\frac{R S T U V+1}{R S T U V-1}\right)^n .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 设 $k 、 n$ 是正整数, $1 \leqslant k<n ; x_1, x_2, \cdots, x_k$ 是 $k$ 个正数, 且知它们的和等于它们的积.
+求证: $x_1^{n-1}+x_2^{n-1}+\cdots+x_k^{n-1} \geqslant k n$.
+%%<SOLUTION>%%
+记 $T=x_1 x_2 \cdots x_k=x_1+x_2+\cdots+x_k$. 由平均不等式 $\frac{T}{k} \geqslant T^{\frac{1}{k}}, x_1^{n-1}+ x_2^{n-1}+\cdots+x_k^{n-1} \geqslant k \cdot T^{\frac{n-1}{k}}$. 因此, 只需证明: $T^{\frac{n-1}{k}} \geqslant n$. 而 $\frac{T}{k} \geqslant T^{\frac{1}{k}}$ 等价于 $T^{\frac{n-1}{k}} \geqslant k^{\frac{n-1}{k-1}}$, 故只需证明: $k^{\frac{n-1}{k-1}} \geqslant n$, 即 $k \geqslant n^{\frac{k-1}{n-1}}$. 事实上, $k=\frac{(k-1) n+(n-k) \cdot 1}{n-1} \geqslant \sqrt[n-1]{n^{k-1} \cdot 1^{n-k}}=n^{\frac{k-1}{n-1}}$, 因此结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 如果 $a, b, c \in \mathbf{R}$, 求证:
+$$
+\text { . }\left(a^2+a b+b^2\right)\left(b^2+b c+c^2\right)\left(c^2+c a+a^2\right) \geqslant(a b+b c+c a)^3 .
+$$
+%%<SOLUTION>%%
+如果我们能证明: $\frac{27}{64}(a+b)^2(b+c)^2(c+a)^2 \geqslant(a b+b c+c a)^2$, 则结令 $S_1=a+b+c, S_2=a b+b c+c a, S_3=a b c$. 问题转化为去证明: $27\left(S_1 S_2-S_3\right)^2 \geqslant 64 S_2^3$.
+分两种情况加以讨论:
+(1) 若 $a 、 b 、 c$ 都是非负实数,则
+$$
+27\left(S_1 S_2-S_3\right)^2 \geqslant 27\left(S_1 S_2-\frac{1}{9} S_1 S_2\right)^2=\frac{64}{3} S_1^2 S_2^2 \geqslant 64 S_2^3 .
+$$
+(2)若 $a 、 b 、 c$ 中至少有一个为负数, 由对称性, 不妨假设 $a<0, b \geqslant 0$, $c \geqslant 0$. 设 $S_2>0$ (否则命题显然成立). 此时 $S_1>0, S_3<0$, 故
+$$
+\begin{aligned}
+& 27\left(S_1 S_2-S_3\right)^2-64 S_2^3>27 S_1^2 S_2^2-64 S_2^3 \\
+= & S_2^2 \cdot\left(27 S_1^2-64 S_2\right) \\
+= & S_2^2 \cdot\left[27 a^2+22\left(b^2+c^2\right)+5(b-c)^2-10 a(b+c)\right] \\
+> & 0 .
+\end{aligned}
+$$
+题中等号成立, 当且仅当 $a=b=c$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 求证: 对任意 $c>0$, 存在正整数 $n$ 和复数列 $a_1, a_2, \cdots, a_n$, 使
+$$
+c \cdot \frac{1}{2^n} \sum_{\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n}\left|\varepsilon_1 a_1+\varepsilon_2 a_2+\cdots+\varepsilon_n a_n\right|<\left(\sum_{j=1}^n\left|a_j\right|^{\frac{3}{2}}\right)^{\frac{2}{3}} .
+$$
+其中 $\varepsilon_j \in\{-1,1\}, j=1,2, \cdots, n$.
+%%<SOLUTION>%%
+考虑 $S=\sum_{\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n}\left|\left(a_1 \varepsilon_1+a_2 \varepsilon_2+\cdots+a_n \varepsilon_n\right)\right|^2$
+$$
+\begin{aligned}
+& =\sum_{\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n}\left(a_1 \varepsilon_1+a_2 \varepsilon_2+\cdots+a_n \varepsilon_n\right)\left(\bar{a}_1 \varepsilon_1+\bar{a}_2 \varepsilon_2+\cdots+\bar{a}_n \varepsilon_n\right) \\
+& =\sum_{\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n}\left(\left|a_1\right|^2+\left|a_2\right|^2+\cdots+\left|a_n\right|^2+\sum_{i \neq j} a_i \bar{a}_j \varepsilon_i \varepsilon_j\right) .
+\end{aligned}
+$$
+不妨取 $\left|a_i\right|=1, i=1,2, \cdots, n$, 则
+$$
+\begin{aligned}
+S & =n \cdot 2^n+\sum_{\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n} \sum_{i \neq j} a_i \bar{a}_j \varepsilon_i \varepsilon_j \\
+& =n \cdot 2^n+\sum_{i \neq j} a_i \bar{a}_j \sum_{\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n} \varepsilon_i \varepsilon_j \\
+& =n \cdot 2^n .
+\end{aligned}
+$$
+现要求 $n^{\frac{2}{3}}>c \cdot \frac{1}{2^n} \cdot \sum_{\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n}\left|\varepsilon_1 a_1+\varepsilon_2 a_2+\cdots+\varepsilon_n a_n\right|$, 只需 $c \cdot \sqrt{\frac{S}{2^n}}= c \cdot \sqrt{n} \leqslant n^{\frac{2}{3}}$, 即 $n^{\frac{1}{6}} \geqslant c$, 故取 $n \geqslant c^6$ 即可.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 设 $a 、 b$ 是正常数, $\theta \in\left(0, \frac{\pi}{2}\right)$, 求 $y=a \sqrt{\sin \theta}+b \sqrt{\cos \theta}$ 的最大值.
+%%<SOLUTION>%%
+设 $\sqrt{u}=a \cdot \sqrt{\sin \theta}, \sqrt{v}=b \cdot \sqrt{\cos \theta}$, 则条件转化为: $\frac{u^2}{a^4}+\frac{v^2}{b^4}=1, u$ 、 $v \geqslant 0$, 利用 Cauchy 不等式,
+$$
+\begin{aligned}
+y & =\sqrt{u}+\sqrt{v} \leqslant \sqrt{\left(\frac{u}{a^{\frac{1}{3}}}+\frac{v}{b^{\frac{1}{3}}}\right)\left(a^{\frac{4}{3}}+b^{\frac{4}{3}}\right)} \\
+& \leqslant \sqrt{\sqrt{\left(\frac{u^2}{a^4}+\frac{v^2}{b^4}\right)\left(a^{\frac{1}{3}}+b^{\frac{1}{3}}\right)} \cdot\left(a^{\frac{4}{3}}+b^{\frac{4}{3}}\right)} \\
+& =\left(a^{\frac{1}{3}}+b^{\frac{1}{3}}\right)^{\frac{3}{4}},
+\end{aligned}
+$$
+并且易求得等号成立的条件.
+%%<REMARK>%%
+注:: 在求解过程中, 幂次都可以用待定系数法来确定.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 设 $n$ 个实数,它们的绝对值都小于等于 2 , 其立方和为 0 . 求证: 它们的和 $\leqslant \frac{2}{3} n$.
+%%<SOLUTION>%%
+记这 $n$ 个实数为 $y_1, y_2, \cdots, y_n$. 令 $x_i=\frac{y_i}{2}$, 则 $\left|x_i\right| \leqslant 1, \sum_{i=1}^n x_i^3=$ 0. 要证明: $\sum_{i=1}^n x_i \leqslant \frac{1}{3} n$.
+用待定系数法: 设 $x_i \leqslant \frac{1}{3}+\lambda x_i^3$. 令 $x=\cos \theta$, 由三倍角公式易知 $\lambda=\frac{4}{3}$ 可使上式成立, 从而原不等式获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 已知正整数 $n \geqslant 3,[-1,1]$ 中的实数 $x_1, x_2, \cdots, x_n$ 满足: $\sum_{k=1}^n x_k^5=0$. 求证: $\sum_{k=1}^n x_k \leqslant \frac{8}{15} n$.
+%%<SOLUTION>%%
+由于 $x_k \in[-1,1]$, 则 $0 \leqslant\left(1+x_k\right)\left(B x_k-1\right)^4$, 这里 $B$ 是一个待定实数, 展开, 得: $B^4 x_k^5+\left(B^4-4 B^3\right) x_k^4+B^2(6-4 B) x_k^3+B(4 B-6) x_k^2+(1-$ 4B) $x_k+1 \geqslant 0$.
+令 $B=\frac{3}{2}$, 从上式得 $\frac{81}{16} x_k^5-\frac{135}{16} x_k^4+\frac{15}{2} x_k^2-5 x_k+1 \geqslant 0$. 对 $k$ 从 1 到 $n$ 求和, 即有
+$$
+\begin{aligned}
+5 \sum_{k=1}^n x_k & \leqslant n-\frac{135}{16} \sum_{k=1}^n x_k^4+\frac{15}{2} \sum_{k=1}^n x_k^2 \\
+& =n+\frac{15}{2}\left(\sum_{k=1}^n x_k^2-\frac{9}{8} \sum_{k=1}^n x_k^4\right) \\
+& \leqslant n+\frac{15}{2} \cdot \frac{2}{9} n=\frac{8}{3} n,
+\end{aligned}
+$$
+故 $\sum_{k=1}^n x_k \leqslant \frac{8}{15} n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 已知 $n$ 个实数 $x_1, x_2, \cdots, x_n$ 的算术平均值为 $a$. 证明:
+$$
+\sum_{k=1}^n\left(x_k-a\right)^2 \leqslant \frac{1}{2}\left(\sum_{k=1}^n\left|x_k-a\right|\right)^2 .
+$$
+%%<SOLUTION>%%
+先证明 $a=0$ 时的情况.
+此时, $\sum_{k=1}^n x_k^2=-2 \sum_{1 \leqslant i<j \leqslant n} x_i x_j \leqslant 2 \sum_{i \neq j}^n\left|x_i x_j\right|$, 于是 $2 \sum_{k=1}^n x_k^2 \leqslant \sum_{k=1}^n x_k^2+2 \sum_{i \neq j}^n\left|x_i x_j\right|=\left(\sum_{k=1}^n\left|x_k\right|\right)^2$, 结论成立.
+当 $a \neq 0$ 时, 令 $y_k=x_k-a$, 则 $y_1, y_2, \cdots, y_n$ 算术平均值为 0 ,于是 $\sum_{k=1}^n y_k^2 \leqslant \frac{1}{2} \cdot\left(\sum_{k=1}^n\left|y_k\right|\right)^2$, 故原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 设 $x, y, z \geqslant 0$, 求证:
+$$
+x(y+z-x)^2+y(z+x-y)^2+z(x+y-z)^2 \geqslant 3 x y z .
+$$
+并确定等号成立的条件.
+%%<SOLUTION>%%
+无妨设 $x+y+z=1$, 则原不等式等价于
+$$
+4 x^3+4 y^3+4 z^3-4\left(x^2+y^2+z^2\right)+1 \geqslant 3 x y z .
+$$
+又由于 $x^3+y^3+z^3=1+3 x y z-3(x y+y z+z x), x^2+y^2+z^2=1- 2(x y+y z+z x)$,故原不等式等价于 $x y+y z+z x-\frac{9}{4} x y z \leqslant \frac{1}{4}$.
+不妨设 $x \geqslant y \geqslant z \geqslant 0$, 则 $x+y \geqslant \frac{2}{3}, z \leqslant \frac{1}{3}$. 设 $x+y=\frac{2}{3}+\delta, z= \frac{1}{3}-\delta$. 其中 $\delta \in\left[0, \frac{1}{3}\right]$.于是
+$$
+\begin{aligned}
+x y+z(x+y)-\frac{9}{4} x y z & =x y+\left(\frac{1}{3}-\delta\right)\left(\frac{2}{3}+\delta\right)-\frac{9}{4} x y\left(\frac{1}{3}-\delta\right) \\
+& =x y\left(\frac{1}{4}+\frac{9}{4} \delta\right)+\frac{2}{9}-\delta^2-\frac{1}{3} \delta \\
+& \leqslant\left(\frac{1}{3}+\frac{1}{2} \delta\right)^2 \cdot\left(\frac{1}{4}+\frac{9}{4} \delta\right)+\frac{2}{9}-\delta^2-\frac{1}{3} \delta \\
+& =\frac{3}{16} \delta^2(3 \delta-1)+\frac{1}{4} \leqslant 0,
+\end{aligned}
+$$
+因此结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 已知正整数 $n \geqslant 2$, 实数 $a_1 \geqslant a_2 \geqslant \cdots \geqslant a_n>0, b_1 \geqslant b_2 \geqslant \cdots \geqslant b_n>0$, 并且, 有 $a_1 a_2 \cdots a_n=b_1 b_2 \cdots b_n ; \sum_{1 \leqslant i<j \leqslant n}\left(a_i-a_j\right) \leqslant \sum_{1 \leqslant i<j \leqslant n}\left(b_i-b_j\right)$. 求证: $\sum_{i=1}^n a_i \leqslant(n-1) \cdot \sum_{i=1}^n b_i$.
+%%<SOLUTION>%%
+当 $n=2$ 时, $\left(a_1+a_2\right)^2-\left(a_1-a_2\right)^2=\left(b_1+b_2\right)^2-\left(b_1-b_2\right)^2$
+而 $a_1-a_2 \leqslant b_1-b_2$, 故 $a_1+a_2 \leqslant b_1+b_2$.
+当 $n=3$ 时,
+$$
+\begin{aligned}
+& 2 b_1+2 b_2+2 b_3-\left(a_1+a_2+a_3\right) \\
+= & b_1+2 b_2+3 b_3+\left(b_1-b_3\right)-a_2-2 a_3-\left(a_1-a_3\right) \\
+\geqslant & b_1+2 b_2+3 b_3-a_2-2 a_3, \label{(1)} \\
+= & \left(b_1-b_3\right)+2 b_2+4 b_3-\left(a_2-a_3\right)-3 a_3 \\
+\geqslant & 2 b_2+4 b_3-3 a_3 . \label{(2)}
+\end{aligned}
+$$
+(1) 若 $2 b_3 \geqslant a_3$, 则 $2 b_2+4 b_3 \geqslant 6 b_3 \geqslant 3 a_3$, 由 (2) 知结论成立.
+(2) 若 $b_2 \geqslant a_2$, 则 $b_1+2 b_2 \geqslant 3 b_2 \geqslant 3 a_2 \geqslant a_2+2 a_3$, 由 (1) 知结论成立.
+(3) 若 $2 b_3<a_3, b_2<a_2$, 则 $b_1>2 a_1$, 故 $2\left(b_1+b_2+b_3\right)>2 b_1>4 a_1> a_1+a_2+a_3$, 结论仍成立.
+对当 $n \geqslant 3$ 时的一般情况, 无妨设 $b_1 b_2 \cdots b_n=1$.
+如果 $a_1 \leqslant n-1$, 则 $\sum_{i=1}^n a_i \leqslant n(n-1) \leqslant(n-1) \sum_{i=1}^n b_i$, 结论成立.
+下设 $a_1>n-1$, 则
+$$
+\begin{aligned}
+\sum_{1 \leqslant i<j \leqslant n}\left(a_i-a_j\right) & =\sum_{i=1}^n(n-2 i+1) a_i \\
+& =\sum_{i=1}^n a_i+\sum_{i=1}^n(n-2 i) a_i \\
+& \geqslant \sum_{i=1}^n a_i+(n-2)\left(a_1-a_{n-1}\right)-n a_n \\
+& \geqslant \sum_{i=1}^n a_i+\left(a_1-a_{n-1}\right)-n a_n(n \geqslant 3), \\
+\sum_{1 \leqslant i<j \leqslant n}\left(b_i-b_j\right) & =\sum_{i=1}^n(n-2 i+1) b_i \\
+& =\sum_{i=1}^n\left[(n-1) b_i+(2-2 i) b_i\right] \\
+& \leqslant(n-1) \sum_{i=1}^n b_i-2 b_2-2(n-1) b_n .
+\end{aligned}
+$$
+因此, 不妨设 $a_1-a_{n-1}-n a_n+2 b_2+2(n-1) b_n<0$, 不然结论显然成立.
+于是, 有 $n a_n>2(n-1) b_n+2 b_2 \geqslant 2 n b_n$, 故 $a_n>2 b_n$. 又由 $a_1 a_2 \cdots a_n=1$
+得 $a_n \leqslant 1$, 所以 $a_1-(n-1) a_n>(n-1)-(n-1)=0$. 故 $2 b_2<a_{n-1}+a_n \leqslant 2 a_{n-1}$, 即 $b_2<a_{n-1}$.
+因此, $b_1 b_2 \cdots b_n=a_1 a_2 \cdots a_n>2 b_n \cdot b_2 \cdot a_1 a_2 \cdots a_{n-2}$, 即有 $b_1 b_3 b_4 \cdots b_{n-1}>2 a_1 a_2 \cdots a_{n-2}$.
+而 $b_3 \leqslant b_2<a_{n-1} \leqslant a_{n-2}, b_4 \leqslant b_3<a_{n-2} \leqslant a_{n-3}, \cdots, b_{n-1} \leqslant b_{n-2}<a_3 \leqslant a_2$, 则 $b_1>2 a_1$.
+所以 $(n-1) \sum_{i=1}^n b_i>2(n-1) a_1>n a_1 \geqslant \sum_{i=1}^n a_i(n \geqslant 3)$.
+结论也成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16. 设 $x, y, z \in \mathbf{R}^{+}$, 求证:
+$$
+(x y+y z+z x)\left[\frac{1}{(x+y)^2}+\frac{1}{(y+z)^2}+\frac{1}{(z+x)^2}\right] \geqslant \frac{9}{4} .
+$$
+%%<SOLUTION>%%
+易见,此题等价于证明: $\sum_{c y c} \frac{y z}{x(y+z)^2} \geqslant \frac{9}{4(x+y+z)}$.
+不妨设 $x \geqslant y \geqslant z$,且 $x+y+z=1$. 则
+$$
+\begin{aligned}
+\sum_{c y c} \frac{4 y z}{x(y+z)^2} & =\sum_{c y c} \frac{(y+z)^2-(y-z)^2}{x(y+z)^2} \\
+& =\sum_{c y c} \frac{1}{x}-\sum_{c y c} \frac{(y-z)^2}{x(y+z)^2} \\
+& =\sum_{c y c} \frac{1}{x} \cdot \sum_{c y c} x-\sum_{c y c} \frac{(y-z)^2}{x(y+z)^2} \\
+& =9+\sum_{c y c}\left(\frac{\sqrt{z}}{\sqrt{y}}-\sqrt{\frac{y}{z}}\right)^2-\sum_{c y c} \frac{(y-z)^2}{x(y+z)^2} \\
+& =9+\sum_{c y c}\left(\frac{(y-z)^2}{y z}-\frac{(y-z)^2}{x(y+z)^2}\right) \\
+& =9+S,
+\end{aligned}
+$$
+式中, $S=\sum_{c y c}(y-z)^2 \cdot\left(\frac{1}{y z}-\frac{1}{x(y+z)^2}\right)$.
+由于 $x>\frac{1}{4}$, 所以
+$$
+\frac{1}{y z} \geqslant \frac{4}{(y+z)^2}>\frac{1}{x(y+z)^2},
+$$
+又由于
+$$
+\begin{gathered}
+\frac{1}{x z}-\frac{1}{y(x+z)^2} \geqslant 0 \\
+y(x+z)^2 \geqslant x z(x+y+z) \\
+x^2(y-z)+x z(y-z)+y z^2 \geqslant 0
+\end{gathered}
+$$
+因此 $S \geqslant(x-y)^2 \cdot\left(\frac{1}{x z}-\frac{1}{y(x+z)^2}+\frac{1}{x y}-\frac{1}{z(x+y)^2}\right)$,
+而
+$$
+\begin{aligned}
+& \frac{1}{x z}-\frac{1}{y(x+z)^2}+\frac{1}{x y}-\frac{1}{z(x+y)^2} \\
+= & \frac{(x+z)^2-x}{x y(x+z)^2}+\frac{(x+y)^2-x}{x z(x+y)^2}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& \geqslant \frac{(x+y)^2-x+(x+z)^2-x}{x y(x+z)^2} \\
+& =\frac{2 x^2+2 x y+2 x z+y^2+z^2-2 x(x+y+z)}{x y(x+z)^2} \geqslant 0,
+\end{aligned}
+$$
+于是结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17. 求证: 在锐角 $\triangle A B C$ 中, 有
+$$
+\begin{gathered}
+\cot ^3 A+\cot ^3 B+\cot ^3 C+6 \cot A \cot B \cot C \\
+\geqslant \cot A+\cot B+\cot C .
+\end{gathered}
+$$
+%%<SOLUTION>%%
+令 $x=\cot A, y=\cot B, z=\cot C$, 由 $A+B+C=\pi$ 知, $\cot A \cot B+ \cot B \cot C+\cot C \cot A=1$, 即 $x y+y z+z x=1$. 所以, 欲证的不等式等价是
+$$
+x^3+y^3+z^3+6 x y z \geqslant(x+y+z)(x y+y z+z x),
+$$
+此即 $x(x-y)(x-z)+y(y-z)(y-x)+z(z-x)(z-y) \geqslant 0$.
+由 Schur 不等式知原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题18. 设 $a, b, c \in\left(0, \frac{\pi}{2}\right)$, 求证:
+$$
+\begin{gathered}
+\frac{\sin a \sin (a-b) \sin (a-c)}{\sin (b+c)}+\frac{\sin b \sin (b-c) \sin (b-a)}{\sin (c+a)} \\
++\frac{\sin c \sin (c-a) \sin (c-b)}{\sin (a+b)} \geqslant 0 .
+\end{gathered}
+$$
+%%<SOLUTION>%%
+因为 $\sin (x-y) \sin (x+y)=\frac{1}{2}(\cos 2 \beta-\cos 2 \alpha)=\sin ^2 \alpha-\sin ^2 \beta$, 所以
+$$
+\begin{aligned}
+& \sin a \sin (a-b) \sin (a-c) \sin (a+b) \sin (a+c) \\
+&= \sin a\left(\sin ^2 a-\sin ^2 b\right)\left(\sin ^2 a-\sin ^2 c\right) . \\
+& \sin ^2 a, y=\sin ^2 b, z=\sin ^2 c, \text { 则原不等式等价于 } \\
+&y)(x-z)+y^{\frac{1}{2}}(y-z)(y-x)+z^{\frac{1}{2}}(z-x)(z-y) \geqslant 0,
+\end{aligned}
+$$
+令 $x=\sin ^2 a, y=\sin ^2 b, z=\sin ^2 c$, 则原不等式等价于
+$$
+x^{\frac{1}{2}}(x-y)(x-z)+y^{\frac{1}{2}}(y-z)(y-x)+z^{\frac{1}{2}}(z-x)(z-y) \geqslant 0,
+$$
+此即 Schur 不等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题19. 设正实数 $a\cdot b\cdot c$ 满足: $a^{2}+b^{2}+c^{2}+(a+b+c)^{2}\leq4$ ,求证:
+$$
+\frac{a b+1}{(a+b)^2}+\frac{b c+1}{(b+c)^2}+\frac{c a+1}{(c+a)^2} \geqslant 3 .
+$$
+%%<SOLUTION>%%
+由已知得: $a^2+b^2+c^2+a b+b c+a c \leqslant 2$, 所以
+$$
+\begin{aligned}
+\sum_{c y c} \frac{2 a b+2}{(a+b)^2} & \geqslant \sum_{c y c} \frac{2 a b+a^2+b^2+c^2+a b+b c+a c}{(a+b)^2} \\
+& =\sum_{c y c} \frac{(a+b)^2+(c+a)(c+b)}{(a+b)^2} \\
+& =3+\sum_{c y c} \frac{(c+a)(c+b)}{(a+b)^2} \geqslant 6,
+\end{aligned}
+$$
+其中最后一个不等号是利用了平均值不等式.
+两边同时除以 2 即知原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题20. 设正实数 $a 、 b 、 c$ 满足: $a b c=1$, 求证: 对于整数 $k \geqslant 2$, 有 $\frac{a^k}{a+b}+\frac{b^k}{b+c}+\frac{c^k}{c+a} \geqslant \frac{3}{2}$. (2007 年中国东南数学奥林匹克)
+%%<SOLUTION>%%
+因为 $\frac{a^k}{a+b}+\frac{1}{4}(a+b)+\underbrace{\frac{1}{2}+\frac{1}{2}+\cdots+\frac{1}{2}}_{k-2 \uparrow \frac{1}{2}} \geqslant k \cdot \sqrt[k]{\frac{a^k}{2^k}}=\frac{k}{2} a$,
+所以 $\frac{a^k}{a+b} \geqslant \frac{k}{2} a-\frac{1}{4}(a+b)-\frac{k-2}{2}$.
+同理可得 $\frac{b^k}{b+c} \geqslant \frac{k}{2} b-\frac{1}{4}(b+c)-\frac{k-2}{2}, \frac{c^k}{c+a} \geqslant \frac{k}{2} c-\frac{1}{4}(c+a)-\frac{k-2}{2}$
+三式相加可得 $\frac{a^k}{a+b}+\frac{b^k}{b+c}+\frac{c^k}{c+a} \geqslant \frac{k}{2}(a+b+c)-\frac{1}{2}(a+b+c)-$
+$$
+\frac{3}{2}(k-2)=\frac{(k-1)}{2}(a+b+c)-\frac{3}{2}(k-2) \geqslant \frac{3}{2}(k-1)-\frac{3}{2}(k-2)=\frac{3}{2} \text {. }
+$$
+%%PROBLEM_END%%
+
+

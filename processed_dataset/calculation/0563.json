@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题10 设 $f$ 为 $\\mathbf{R}^{+} \\rightarrow \\mathbf{R}^{+}$的函数, 对任意正实数 $x, f(3 x)=3 f(x)$, 且\n$$\nf(x)=1-|x-2|, 1 \\leqslant x \\leqslant 3 .\n$$\n求最小的实数 $x$, 使得 $f(x)=f(2004)$.",
+    "solution": "由已知条件得 $f(x)=\\left\\{\\begin{array}{l}x-1, 当1\\leqslant x \\leqslant 2时; \\\\ 3-x , 当2\\leqslant x \\leqslant 3时.\n\\end{array}\\right.$ \n当 $3\\leq x\\leq6$ 时, 令 $t=\\frac{x}{3}$, 则 $1 \\leqslant t \\leqslant 2$, 此时 $f(x)=f(3 t)=3 f(t)=3(t-1)=x-3$. 即得 $f(x)=|x-3|, 2 \\leqslant x \\leqslant 6$. 当 $6 \\leqslant x \\leqslant 18$ 时, 令 $t=\\frac{x}{3}$, 则 $2 \\leqslant t \\leqslant 6$,\n于是 $f(x)=f(3 t)=3 f(t)=3|t-3|=|x-9|$. 依次类推, 得\n$$\nf(x)= \\begin{cases}x-1, & \\text { 当 } 1 \\leqslant x \\leqslant 2 \\text { 时; } \\\\ |x-3|, & \\text { 当 } 2 \\leqslant x \\leqslant 6 \\text { 时; } \\\\ |x-9|, & \\text { 当 } 6 \\leqslant x \\leqslant 18 \\text { 时; } \\\\ |x-27|, & \\text { 当 } 18 \\leqslant x \\leqslant 54 \\text { 时; } \\\\ |x-243|, & \\text { 当 } 54 \\leqslant x \\leqslant 162 \\text { 时; } \\\\ |x-729|, & \\text { 当 } 162 \\leqslant x \\leqslant 486 \\text { 时; } \\\\ |x-2187|, & \\text { 当 } 1458 \\leqslant x \\leqslant 1458 \\text { 时; }\\end{cases}\n$$\n所以 $f(2004)=2187-2004=183$. 由于 $162-81<183,486-243>183$, 而 $243-162<183$, 所以, 最小的满足 $f(x)=f(2004)$ 的实数 $x=243+ 183=426$.",
+    "remark": "",
+    "figures": []
+}

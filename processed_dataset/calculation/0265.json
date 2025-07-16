@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 如图(<FilePath:./images/volume12/figures/fig-c5i9.png>) 中,甲、乙两只蚂蚁分别处在 $A$ 、 $B$ 两点.\n甲蚂蚁向乙蚂蚁提出: \"咱俩比赛,看谁先把这个图中的九条边都爬遍后到达 $E$ 点.\n乙蚂蚁同意.\n假定两只蚂蚁爬的速度相同且同时开始.\n问: 究竟哪只蚂蚁最先到达 $E$ 点?",
+    "solution": "解:把 $A 、 B 、 C 、 D 、 E$ 作为顶点, 原来的九条线段作为 9 条边, 得图 $G$. 则 $G$ 是连通图, 且奇顶点个数为 2 , 根据定理一, 它是一条链.\n由于点 $B$ 是奇顶点, $E$ 也是奇顶点,所以从 $B$ 到 $E$ 存在着一条链,例如 $B C D A C E A B D E$,\n对乙蚂蚁来说, 它可以从 $B$ 点出发, 沿着这条链到达 $E$ 点.\n但顶点 $A$ 是偶顶点, 从 $A$ 出发到达 $E$ 不可能不重复地走遍图 $G$ 中的所有边, 它至少要重复经过某一条边.\n所以蚂蚁乙可以选择一条正确路线比蚂蚁甲先爬到 $E$ 点.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c5i9.png"
+    ]
+}

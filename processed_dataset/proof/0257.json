@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 证明, 对任何整数 $k>0$, 都存在正整数 $n$, 使得 $2^k \\mid\\left(3^n+5\\right)$.",
+    "solution": "采用归纳法.\n$k=1,2$ 时结论显然成立.\n设对 $k \\geqslant 3$ 有 $n_0$ 使得 $2^k \\left(3^{n_0}+5\\right)$, 设 $3^{n_0}=2^k u-5$. 若 $u$ 是偶数,则 $2^{k+1} \\mid\\left(3^{n_0}+5\\right)$. 以下设 $u$ 是奇数.\n论证的关键是注意, 对 $k \\geqslant 3$ 有\n$$\n3^{2^{k-2}}=1+2^k v, v \\text { 是奇数.\n}\n$$\n现在我们有\n$$\n\\begin{aligned}\n3^{n_0+2^{k-2}} & =3^{n_0} \\cdot 3^{2^{k^{-2}}}=\\left(-5+2^k u\\right)\\left(1+2^k v\\right) \\\\\n& =-5+\\left(u-5 v+2^k u v\\right) \\cdot 2^k .\n\\end{aligned}\n$$\n上式括号内的数是偶数,故 $2^{k+1}$ 整除 $3^{n_0+2^{k-2}}+5$. 这就完成了归纳证明.",
+    "remark": "",
+    "figures": []
+}

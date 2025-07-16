@@ -1,0 +1,218 @@
+
+%%TEXT_BEGIN%%
+几何不等式是几何问题中难度较大的一类.
+想解决这类问题不光得有平面几何知识,还得有深厚的代数功底.
+因此,一般出现在较高层次的竞赛中, 如 IMO、CMO、国家集训队考试中.
+下面介绍其中比较经典的一些问题.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设一条平面闭折线周长为 1 . 证明: 可以用一个半径为 $\frac{1}{4}$ 的圆完全盖住这条折线.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c10i1.png>), 令 $A B$ 平分折线周长, $O$ 为线段 $A B$ 的中点,任取折线上一点 $M$, 则 $M A+M B$ 不超过 $A$ 与 $B$ 之间的折线总长 $\frac{1}{2}$, 故 $O M \leqslant \frac{1}{2}(M A+M B) \leqslant \frac{1}{4}$.
+于是以 $O$ 为圆心 $\frac{1}{4}$ 为半径的圆可以盖住这条折线.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $\triangle A B C$ 的三边分别为 $a 、 b 、 c$, 三边上的中线长分别为 $m_a 、 m_b 、 m_c$, 求证: $m_a\left(b c-a^2\right)+ m_b\left(c a-b^2\right)+m_c\left(a b-c^2\right) \geqslant 0$.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c10i2.png>), 设 $\triangle A B C$ 的三条中线分别为 $A D 、 B E 、 C F$, 重心为 $G$, 对四边形 $B D G F$ 应用托勒密不等式可得
+$$
+B G \cdot D F \leqslant G F \cdot D B+D G \cdot B F .
+$$
+即 $2 b m_b \leqslant a m_c+c m_a$, 故 $2 b^2 m_b \leqslant a b m_c+b c m_a$ 等等.
+三式相加即得 $m_a\left(b c-a^2\right)+m_b\left(c a-b^2\right)+m_c\left(a b-c^2\right) \geqslant 0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $P$ 为平行四边形 $A B C D$ 内一点, 求证: $P A \cdot P C+P B \cdot P D \geqslant A B \cdot B C$, 并指出等号成立条件.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c10i3.png>), 取点 $P^{\prime}$ 使得 $\overrightarrow{P P^{\prime}}=\overrightarrow{A B}$,
+于是原命题等价于 $P^{\prime} P \cdot B C \leqslant P C \cdot P^{\prime} B+P B \cdot P^{\prime} C$, 即四边形 $P B P^{\prime} C$ 的托勒密不等式, 等号成立的充要条件是 $P B P^{\prime} C$ 为圆内接四边形, 即 $\angle A P D+\angle C P B=\pi$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4.  设 $O$ 为 $\triangle A B C$ 内一点, 且 $\angle A O B=\angle B O C=\angle C O A=120^{\circ}, P$ 为任意一点 (不是 $O$ ), 求证:
+$$
+P A+P B+P C>O A+O B+O C .
+$$
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c10i4.png>), 过 $\triangle A B C$ 的顶点 $A, B, C$ 分别引 $O A, O B, O C$ 的垂线.
+设这三条垂线的交点为 $A_1, B_1, C_1$, 考虑四边形 $A O B C_1$. 因为 $\angle O A C_1=\angle O B C_1=90^{\circ}, \angle A O B= 120^{\circ}$, 所以 $\angle C_1=60^{\circ}$. 同理, $\angle A_1=\angle B_1=60^{\circ}$, 所以 $\triangle A_1 B_1 C_1$ 为正三角形.
+设 $P$ 到 $\triangle A_1 B_1 C_1$ 三边 $B_1 C_1 、 C_1 A_1 、 A_1 B_1$ 的距离分别为 $h_a 、 h_b 、 h_c$, 且 $\triangle A_1 B_1 C_1$ 的边长为 $a$, 高为$h$. 由等式 $S_{\triangle A_1 B_1 C_1}=S_{\triangle P B_1 C_1}+S_{\triangle P C_1 A_1}+S_{\triangle P A_1 B_1}$ 知 $\frac{1}{2} h a=\frac{1}{2} h_a \cdot a+\frac{1}{2} h_b \cdot a+\frac{1}{2} h_c \cdot a$, 所以 $h=h_a+ h_b+h_c$.
+这说明正三角形 $A_1 B_1 C_1$ 内任一点 $P$ 到三边的距离和等于 $\triangle A_1 B_1 C_1$ 的高 $h$, 这是一个定值, 所以 $O A+O B+O C=h=$ 定值.
+显然, $P A+P B+ P C>P$ 到 $\triangle A_1 B_1 C_1$ 三边距离和, 所以 $P A+P B+P C>h=O A+O B+ O C$. 这就是我们所要证的结论.
+由这个结论可知 $O$ 点具有如下性质: 它到三角形三个顶点的距离和小于其他点到三角形顶点的距离和, 这个点叫费马点.
+%%<REMARK>%%
+注:当 $\triangle A B C$ 的三个角 $\angle A 、 \angle B 、 \angle C$ 都小于 $120^{\circ}$ 时, 在它的内部一定存在一点 $O$, 使得 $\angle A O B=\angle B O C=\angle C O A=120^{\circ}$. 当 $\angle A 、 \angle B 、 \angle C$ 中有一个 $\geqslant 120^{\circ}$ 时, 不妨设 $\angle A \geqslant 120^{\circ}$, 则对于任意一点 $P$ 都有 $P A+P B+P C \geqslant A B+$ AC.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 已知四边形 $A B C D$ 是圆的内接四边形.
+证明: $|A B-C D|+|A D-B C| \geqslant 2|A C-B D|$.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c10i5.png>), 设四边形 $A B C D$ 的外心为 $O$, 且圆 $O$ 的半径为 1 .
+设 $\angle A O B=2 \alpha, \angle B O C=2 \beta, \angle C O D=2 \gamma, \angle D O A=2 \delta$, 则 $\alpha+\beta+\gamma+\delta=\pi$.
+不妨设 $\alpha \geqslant \gamma, \beta \geqslant \delta$, 则
+$$
+|A B-C D|=4\left|\sin \frac{\alpha-\gamma}{2} \sin \frac{\beta+\delta}{2}\right| \text {. }
+$$
+同理,
+$$
+\begin{aligned}
+& |A D-B C|=4\left|\sin \frac{\alpha+\gamma}{2} \sin \frac{\beta-\delta}{2}\right|, \\
+& |A C-B D|=4\left|\sin \frac{\alpha-\gamma}{2} \sin \frac{\beta-\delta}{2}\right|,
+\end{aligned}
+$$
+则
+$$
+|A B-C D|-|A C-B D|=8\left|\sin \frac{\alpha-\gamma}{2}\right| \cdot \cos \frac{\beta}{2} \sin \frac{\delta}{2} \geqslant 0 .
+$$
+即 $|A B-C D| \geqslant|A C-B D|$. 同理可证 $|A D-B C| \geqslant.|A C-B D|$.
+所以 $|A B-C D|+|A D-B C| \geqslant 2|A C-B D|$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $P 、 Q 、 R$ 分别位于 $\triangle A B C$ 的三条边 $B C 、 C A 、 A B$ 上,且将三角形周长三等分, 求证: $Q R+R P+P Q \geqslant \frac{1}{2}(a+b+c) . a 、 b 、 c$ 表示三角形三边长.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c10i6.png>), 分别作 $R 、 Q$ 在底边 $B C$ 上的投影 $M 、 N$, 则 $Q R \geqslant M N=a-(B R \cdot \cos B+ C Q \cdot \cos C)$, 同理有, $R P \geqslant b-(C P \cdot \cos C+A R \cdot \cos A), P Q \geqslant c-(A Q \cdot \cos A+B P \cdot \cos B)$.
+将三式相加, 并注意到 $A Q+A R=B R+B P= C P+C Q=\frac{1}{3}(a+b+c)$, 即得
+$$
+Q R+R P+P Q \geqslant \frac{1}{3}(a+b+c)(3-\cos A-\cos B-\cos C) \geqslant \frac{1}{2}(a+
+$$
+$b+c$ ). (这步用到 $\cos A+\cos B+\cos C \leqslant \frac{3}{2}$.)
+%%<REMARK>%%
+注:$\cos A+\cos B+\cos C \leqslant \frac{3}{2}$ 的证明:
+$$
+\begin{aligned}
+\cos A+\cos B+\cos C & =2 \cos \frac{A+B}{2} \cos \frac{A-B}{2}-\cos (A+B) \\
+& =2 \cos \frac{A+B}{2} \cos \frac{A-B}{2}-\left(2 \cos ^2 \frac{A+B}{2}-1\right)
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& \leqslant 2 \cos \frac{A+B}{2}-2 \cos ^2 \frac{A+B}{2}+1 \\
+& =-2\left(\cos \frac{A+B}{2}-\frac{1}{2}\right)^2+\frac{3}{2} \\
+& \leqslant \frac{3}{2}
+\end{aligned}
+$$
+等号成立当且仅当 $\triangle A B C$ 为等边三角形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. (Erdös-Mordell 不等式) 设 $P$ 为三角形 $A B C$ 内任意一点, $P$ 到三边 $B C 、 C A 、 A B$ 的距离分别为 $P D=p, P E=q, P F=r$, 并记 $P A=x$, $P B=y, P C=z$, 证明: $x+y+z \geqslant 2(p+q+r)$, 等号成立当且仅当 $\triangle A B C$ 为正三角形并且 $P$ 为此三角形的中心.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c10i7.png>), 过点 $P$ 作直线 $M N$, 使得 $\angle A M N=\angle A C B$, 于是 $\triangle A M N \backsim \triangle A C B$, 从而 $\frac{A N}{M N}=\frac{c}{a}, \frac{A M}{M N}=\frac{b}{a}$.
+由于 $S_{\triangle A M N}=S_{\triangle A M P}+S_{\triangle A N P}$, 所以有
+$$
+A P \cdot M N \geqslant q \cdot A N+r \cdot A M,
+$$
+所以 $x=A P \geqslant q \cdot \frac{A N}{M N}+r \cdot \frac{A M}{M N}$.
+即 $x \geqslant \frac{c}{a} q+\frac{b}{a} r$, 等等.
+于是 $x+y+z \geqslant p\left(\frac{c}{b}+\frac{b}{c}\right)+q\left(\frac{c}{a}+\frac{a}{c}\right)+r\left(\frac{b}{a}+\frac{a}{b}\right) \geqslant 2(p+q+r)$.
+第一个等号成立的条件是 $A P \perp M N$, 即 $\angle P A C=90^{\circ}-\angle B$, 以及 $\angle P B A=90^{\circ}-\angle C, \angle P C B=90^{\circ}-\angle A$.
+第二个等号成立的条件是 $a=b=c$, 所以 $x+y+z \geqslant 2(p+q+r)$ 的等号成立条件是 $\triangle A B C$ 为正三角形,且 $P$ 为其中心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. Neuberg-Pedoe 不等式: 设 $a_1 、 a_2 、 a_3 、 b_1 、 b_2 、 b_3$ 分别是位于同一平面上的两个三角形 $\triangle A_1 B_1 C_1$ 和 $\triangle A_2 B_2 C_2$ 的各边长, $F 、 F^{\prime}$ 分别是它们的面积, 记
+$$
+M=b_1^2\left(-a_1^2+a_2^2+a_3^2\right)+b_2^2\left(a_1^2-a_2^2+a_3^2\right)+b_3^2\left(a_1^2+a_2^2-a_3^2\right) .
+$$
+求证: $M \geqslant 16 F F^{\prime}$.
+%%<SOLUTION>%%
+证明:由柯西不等式, $16 F F^{\prime}+2\left(a_1^2 b_1^2+a_2^2 b_2^2+a_3^2 b_3^2\right) \leqslant\left(\left(16 F^2+2 a_1^4+\right.\right. \left.\left.2 a_2^4+2 a_3^4\right)\left(16 F^{\prime 2}+2 b_1^4+2 b_2^4+2 b_3^4\right)\right)^{\frac{1}{2}}=\left(a_1^4+a_2^4+a_3^4+2 a_1^2 a_2^2+2 a_2^2 a_3^2+2 a_3^2 a_1^2\right)^{\frac{1}{2}} \cdot\left(b_1^4+b_2^4+b_3^4+2 b_1^2 b_2^2+2 b_2^2 b_3^2+2 b_3^2 b_1^2\right)^{\frac{1}{2}}$ (这步用到海伦公式) $=\left(a_1^2+a_2^2+a_3^2\right)\left(b_1^2+b_2^2+b_3^2\right)$.
+即 $M \geqslant 16 F F^{\prime}$.
+%%<REMARK>%%
+注:海伦公式是指三角形的面积 $S=\sqrt{p(p-a)(p-b)(p-c)}= \frac{1}{4} \sqrt{2 a^2 b^2+2 b^2 c^2+2 c^2 a^2-a^4-b^4-c^4}$, 其中 $p=\frac{a+b+c}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设 $M$ 为 $\triangle A B C$ 所在平面上一点, $H 、 O 、 R$ 分别为 $\triangle A B C$ 的垂心、 外心、外接圆半径.
+求证: $S=\min \left(M A^3+M B^3+M C^3-\frac{3}{2} R \cdot M H^2\right)$.
+%%<SOLUTION>%%
+证明:$S=3 R^3-\frac{3}{2} R \cdot O H^2$.
+如图(<FilePath:./figures/fig-c10i8.png>),一方面, 当 $M=O$ 时等号成立.
+另一方面, 由均值不等式有
+$$
+\frac{M A^3}{R}+\frac{R^2+M A^2}{2} \geqslant \frac{M A^3}{R}+R \cdot M A \geqslant 2 M A^2 .
+$$
+所以 $\frac{M A^3}{R} \geqslant \frac{3}{2} M A^2-\frac{R^2}{2}$.
+类似三式相加得 $\frac{1}{R}\left(M A^3+M B^3+M C^3\right) \geqslant \frac{3}{2}\left(M A^2+M B^2+M C^2\right)- \frac{3}{2} R^2$. \label{eq1}
+由 Leibniz 公式 (见注(1)), 设三角形的重心为 $G$, 有
+$$
+\begin{aligned}
+& A M^2+B M^2+C M^2=3 M G^2+\frac{1}{3}\left(B C^2+C A^2+A B^2\right), \\
+& A O^2+B O^2+C O^2=3 O G^2+\frac{1}{3}\left(B C^2+C A^2+A B^2\right) .
+\end{aligned}
+$$
+两式相减得
+$$
+A M^2+B M^2+C M^2=3 R^2+3 M G^2-3 O G^2,
+$$
+又由 Stewart 定理知
+$$
+\begin{aligned}
+3 R^2+3 M G^2-3 O G^2 & =2 M O^2+3 R^2+M H^2-O H^2 (\text { 见注 (2)} )\\
+& \geqslant 3 R^2+M H^2-O H^2 .
+\end{aligned}
+$$
+代入式\ref{eq1}即得 $M A^3+M B^3+M C^3-\frac{3}{2} R \cdot M H^2 \geqslant 3 R^3-\frac{3}{2} R \cdot O H^2$, 得证.
+%%<REMARK>%%
+注(1) Leibniz 公式是指: 对于 $\triangle A B C$ 所在平面上任意一点 $M$, 设三角形 $A B C$ 的重心为 $G$, 则
+$$
+\begin{aligned}
+A M^2+B M^2+C M^2 & =3 M G^2+\frac{1}{3}\left(B C^2+C A^2+A B^2\right) \\
+& =3 M G^2+A G^2+B G^2+C G^2,
+\end{aligned}
+$$
+(可以用解析法或 Stewart 定理证明).
+(2) 由 Stewart 定理 (见第一章知识点) 知, $M G^2= \frac{2 O G \cdot M O^2+O G \cdot M H^2}{3 O G}-2 O G^2=\frac{2}{3} M O^2+\frac{1}{3} M H^2-2 O G^2$, 于是 $3 M G^2- 3 O G^2=2 M O^2+M H^2-9 O G^2=2 M O^2+M H^2-O H^2$.
+(3) 此类最值问题一般思路是: 先找出最值点, 算出 (猜测)最值, 再用不等式、几何关系证明您的结论.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 求证: 四条边给定的四边形中, 内接于圆的四边形面积最大.
+%%<SOLUTION>%%
+证明:先提出一个引理: 如图(<FilePath:./figures/fig-c10i9.png>),设凸四边形 $A B C D$ 的边长为 $a 、 b 、 c 、 d$, 对角和为 $2 \varphi$ (任一组), 设四边形的面积为 $S_0$, 则 $S_0^2=(s-a)(s-b)(s-c)(s-d)- a b c d \cos ^2 \varphi$. 其中 $2 s=a+b+c+d$.
+引理证明: 由余弦定理, $B D^2=a^2+d^2-2 a d \cos A= b^2+c^2-2 b c \cos C$, 所以 $\frac{a^2+d^2-b^2-c^2}{2}=a d \cdot \cos A- b c \cdot \cos C$.
+又 $2 S_0=a d \sin A+b c \sin C$, 上面两式各自平方后相加得
+$$
+S_0^2=(s-a)(s-b)(s-c)(s-d)-a b c d \cos ^2 \varphi .
+$$
+回到原题, 对于凹四边形 $A B C D$, 不妨设 $D$ 在三角形 $A B C$ 内, 则作 $D$ 关于 $B C$ 的反射点 $D^{\prime}$, 四边形 $A B C D^{\prime}$ 与 $A B C D$ 四边各自相同, 但后者面积更大.
+对于凸四边形 $A B C D, S_0 \leqslant(s-a)(s-b)(s-c)(s-d)$ 等号成立时当且仅当 $\cos \varphi=0$, 即它为圆内接四边形.
+综上,对于给定四边长为 $a 、 b 、 c 、 d$ 的四边形, 当且仅当它为圆内接四边形时, 它有最大面积 $\sqrt{(s-a)(s-b)(s-c)(s-d)}$, 其中 $S= \frac{a+b+c+d}{2}$.
+%%PROBLEM_END%%
+
+

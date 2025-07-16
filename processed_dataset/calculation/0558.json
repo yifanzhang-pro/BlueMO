@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题5 已知 $f\\left(x-\\frac{1}{x}\\right)=x^2+\\frac{1}{x^2}+1$, 求 $f(x+1)$.",
+    "solution": "设 $u=x-\\frac{1}{x}$, 则 $u^2=x^2+\\frac{1}{x^2}-2$, 于是 $f(u)=u^2+3$, 所以 $f(x+ 1) =(x+1)^2+3=x^2+2 x+4$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题6 已知两个复数集合 $M=\\left\\{z \\mid z=\\cos \\alpha+\\left(4-\\cos ^2 \\alpha\\right) \\mathrm{i}, \\alpha \\in \\mathbf{R}\\right\\}, N= \\{z \\mid z=\\cos \\beta+(\\lambda+\\sin \\beta) i, \\beta \\in \\mathbf{R}\\}$. 当 $M \\cap N \\neq \\varnothing$ 时, 实数 $\\lambda$ 的取值范围是",
+    "solution": "$\\left[\\frac{11}{4}, 5\\right]$. 设 $\\cos \\alpha+\\left(4-\\cos ^2 \\alpha\\right) \\mathrm{i}=\\cos \\beta+(\\lambda+\\sin \\beta) \\mathrm{i}$, 则有 $\\cos \\alpha= \\cos \\beta, 4-\\cos ^2 \\alpha=\\lambda+\\sin \\beta$. 消去 $\\alpha$, 得 $\\lambda=\\frac{11}{4}+\\left(\\sin \\beta-\\frac{1}{2}\\right)^2$, 所以 $\\frac{11}{4} \\leqslant \\lambda \\leqslant 5$.",
+    "remark": "",
+    "figures": []
+}

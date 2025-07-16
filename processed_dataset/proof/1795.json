@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题14. 设 $G$ 为 $\\triangle A B C$ 的重心, $A_1 、 B_1 、 C_1$ 分别为 $A G 、 B G 、 C G$ 与 $\\triangle A B C$ 的外接圆的交点.\n求证: $G A_1+G B_1+G C_1 \\geqslant G A+G B+G C$, 等号成立当且仅当 $\\triangle A B C$ 为正三角形.",
+    "solution": "如图(<FilePath:./images/volume7/figures/fig-c10a14.png>), 设 $m_a$ 为边 $a$ 上中线长, $m_b$ 为边 $b$ 上中线长, $m_c$ 为边 $c$ 中线长.\n记 $M_a=A A_1, M_b=B B_1, M_c= C C_1$. 设 $A_0, B_0, C_0$ 分别平分边 $B C 、 C A 、 A B$. 由相交弦定理得 $\\frac{a^2}{4}=A_0 B \\cdot A_0 C=A_0 A_1 \\cdot A_0 A=\\left(M_a-\\right. \\left.m_a\\right) \\cdot m_a$, 又由中线长公式, $m_a^2=A A_0^2=\\frac{1}{2}\\left(b^2+c^2\\right)- \\frac{1}{4} a^2$. 即 $4 m_a^2=2\\left(b^2+c^2+a^2\\right)-3 a^2=8 k^2-3 a^2$, 其中\n$k=\\frac{1}{2} \\cdot \\sqrt{a^2+b^2+c^2}$, 且 $m_a^2+m_b^2+m_c^2=\\frac{3}{4}\\left(a^2+\\right. \\left.b^2+c^2\\right)$.\n于是 $8 k^2-4 m_a^2=3 a^2=12 \\cdot \\frac{a^2}{4}=12 \\cdot\\left(M_a-m_a\\right) \\cdot m_a$, 即 $M_a=m_a+ \\frac{8 k^2-4 m_a^2}{12 m_a}=\\frac{8 \\cdot\\left(k^2+m_a^2\\right)}{12 m_a}=\\frac{2 k}{3} \\cdot\\left(\\frac{k}{m_a}+\\frac{m_a}{k}\\right) \\geqslant \\frac{4 k}{3}$.\n同理, $M_b \\geqslant \\frac{4 k}{3}, M_c \\geqslant \\frac{4 k}{3}$.\n于是 $M_a+M_b+M_c \\geqslant 4 k=2 \\cdot \\sqrt{a^2+b^2+c^2}=\\frac{4}{3} \\cdot \\sqrt{3 \\cdot\\left(m_a^2+m_b^2+m_c^2\\right)}$ (由柯西不等式) $\\geqslant \\frac{4}{3} \\cdot\\left(m_a+m_b+m_c\\right)$. 得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c10a14.png"
+    ]
+}

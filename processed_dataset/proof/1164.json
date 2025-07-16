@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-6.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设 $a, b, c$ 为实数, 满足 $a^2+2 b^2+3 c^2=\\frac{3}{2}$, 求证:\n$$\n3^{-a}+9^{-b}+27^{-c} \\geqslant 1 .\n$$",
+    "solution": "证明:由平均值不等式, 得\n$$\n3^{-a}+9^{-b}+27^{-c} \\geqslant 3 \\sqrt[3]{3^{-a-2 b-3 c}}=3^{\\frac{3-a-2 b-3 c}{3}} .\n$$\n再由柯西不等式, 得\n$$\n\\begin{aligned}\n(a+2 b+3 c)^2 & =(a+\\sqrt{2} \\cdot \\sqrt{2} b+\\sqrt{3} \\cdot \\sqrt{3} c)^2 \\\\\n& \\leqslant(1+2+3)\\left(a^2+2 b^2+3 c^2\\right) \\\\\n& =6 \\cdot \\frac{3}{2}=9 .\n\\end{aligned}\n$$\n从而 $a+2 b+3 c \\leqslant 3,3-a-2 b-3 c \\geqslant 0,3^{\\frac{3-a-2 b-3 c}{3}} \\geqslant 3^0=1$. 故命题成立.",
+    "remark": "",
+    "figures": []
+}

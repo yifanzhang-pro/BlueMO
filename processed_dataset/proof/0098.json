@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题11 平面上不含零向量的集合 $A$, 若其至少有三个元素, 且对任意 $u \\in A$, 存在 $v, w \\in A$, 使 $v \\neq w, u=v+w$, 则称 $A$ 具有性质 $S$. 证明:\n(1) 对任意 $n \\geqslant 6$, 存在具有性质 $S$ 的向量集;\n(2) 具有性质 $S$ 的有限向量集合都至少有 6 个元素.",
+    "solution": "(1) 对 $n(n \\geqslant 6)$ 进行归纳.\n当 $n=6$ 时, 考虑 $\\triangle A B C$ 及 $A B 、 B C 、 C A$ 、 $B A 、 C B 、 A C$. 对于具有性质 $S$ 的 $n$ 元集合 $A$, 设其非零向量为 $\\boldsymbol{v}_1, \\boldsymbol{v}_2, \\cdots, v_n$. 设 $v_i 、 v_j$ 是 $A$ 的两个不同向量, $v_i$ 与 $v_j$ 的夹角是 $A$ 中各向量之间的最小角.\n则 $\\left(\\boldsymbol{v}_i+\\boldsymbol{v}_j\\right) \\notin A$, 否则与最小性矛盾.\n因此, $A \\cup\\left\\{\\boldsymbol{v}_i+\\boldsymbol{v}_j\\right\\}$ 有 $(n+1)$ 个元素, 且满足性质 $S$.\n(2) 考虑一个均由 $O$ 为始点的具有性质 $S$ 的向量集合 $A= \\{\\boldsymbol{O} \\boldsymbol{X}_1,\\boldsymbol{O} \\boldsymbol{X}_2, \\cdots, \\boldsymbol{O X _ { n }} \\}$, 若 $\\boldsymbol{u}$ 与 $\\boldsymbol{v}$ 不平行, 且使得 $\\boldsymbol{u}$ 或 $\\boldsymbol{v}$ 平行于 $A$ 中的一个向量或 $\\boldsymbol{X}_i \\boldsymbol{X}_j (i \\neq j)$ 中的一个向量.\n记 $\\boldsymbol{O} \\boldsymbol{X}_i=a_i \\boldsymbol{u}+b_i \\boldsymbol{v}$, 对向量 $\\boldsymbol{O} \\boldsymbol{X}_i$ 分解, $i=1,2, \\cdots, n$. 实数集合 $M=\\left\\{a_1, a_2, \\cdots, a_n\\right\\}$ 具有类似于 $S$ 的性质.\n设 $M$ 中的最大数为 $a$. 显然, $a>0$, 存在 $b 、 c>0$, 使得 $a=b+c, b \\neq c$. 否则, $a$ 不是 $M$ 中的最大元素.\n同理, 对于 $M$ 中的最小元素 $a^{\\prime}$, 存在 $b^{\\prime}, c^{\\prime} \\in M$, 且 $b^{\\prime} 、 c^{\\prime}<0, b^{\\prime} \\neq c^{\\prime}$, 使得 $a^{\\prime}=b^{\\prime}+c^{\\prime}$. 由此得出 $M$ 中的 6 个不同元素.",
+    "remark": "",
+    "figures": []
+}

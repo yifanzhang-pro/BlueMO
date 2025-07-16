@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 在已知边 $B C$ 和对角 $\\alpha$ 的所有三角形中, 证明 :\n(1) 底边为 $B C$ 的等腰三角形面积最大;\n(2) 底边为 $B C$ 的等腰三角形周长最大.",
+    "solution": "(1) 顶点 $A$ 在以 $B C$ 为弦的圆弧上, 圆弧上线段 $B C$ 的对角为 $\\alpha$. 如果点 $A$ 离开直线 $B C$ 最远, 即如果点 $A$ 在线段 $B C$ 的垂直平分线上, 则 $\\triangle A B C$ 面积最大.\n(2) 在固定 $B C$ 和 $\\alpha$ 的情况下, $\\triangle A B C$ 外接圆半径 $R$ 是定值.\n显然, $A B+A C=2 R(\\sin \\gamma+\\sin \\beta)=4 R \\cdot \\sin \\frac{\\pi-\\alpha}{2} \\cos \\frac{\\gamma-\\beta}{2}$, 当 $\\cos \\frac{\\gamma-\\beta}{2}=1$, 即 $\\gamma=\\beta$ 时, $A B+A C$ 最大.",
+    "remark": "",
+    "figures": []
+}

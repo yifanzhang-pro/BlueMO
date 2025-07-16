@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例3 已知 $f(x)=a x+\\sin x$ 表示的图象上有两条切线相互垂直, 求 $a$ 的值.",
+    "solution": "解:$f(x)=a x+\\sin x \\Rightarrow f^{\\prime}(x)=a+\\cos x$, 从而如果有两条切线垂直, 那么存在这样的 $x_1, x_2$ 使得 $\\left(a+\\cos x_1\\right)\\left(a+\\cos x_2\\right)=-1$, 从函数图象来看,一个二次函数的两个根都在 $(-1,1)$ 上, 首项系数为 1 , 并且开口朝上, 可以感觉到能取到的最小值只有在尽量的往下移动, 也就是在两个根分别是一 1,1 的时候最小值可以尽可能的小, 此时刚好等于 -1 , 因此可以感觉到这道题实际上卡得很死 (指的中间的放缩), 我们具体的操作如下:\n不妨设 $\\cos x_1 \\leqslant \\cos x_2,\\left(a+\\cos x_1\\right)\\left(a+\\cos x_2\\right)<0$, 从而 $a \\in\\left(-\\cos x_2\\right.$, $\\left.-\\cos x_1\\right)$, 此时可以得到 $0<a+\\cos x_2 \\leqslant a+1, a-1 \\leqslant a+\\cos x_1<0$, 那么\n$$\n-1=\\left(a+\\cos x_1\\right)\\left(a+\\cos x_2\\right) \\leqslant(a+1)(a-1)=a^2-1 \\leqslant-1 .\n$$\n所以中间不等号必须全部取等号, 此时只能 $a=0$, 并且在 $x_1=\\pi, x_2=$ 0 的时候两个点的切线互相垂直.\n评注本题是挺不错的一道题, 考查学生对函数基本性质的理解.\n实际上在得出结论之前, 如果能够想象出图象是最好了, 这样会对最后结果的把握很有帮助, 具体的分析都比较常规, 没必要细讲.\n但是要注意一个陷阱, 有些学生的做法会存在逻辑问题,并没有真的得出 $a=0$, 可以给学生强调这一点,这种题每一步的逻辑要对.",
+    "remark": "",
+    "figures": []
+}

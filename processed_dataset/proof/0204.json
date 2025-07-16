@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例2. 证明: 数列 $1,31,331,3331, \\cdots$ 中有无穷多个合数.",
+    "solution": "证明:因 31 是素数, 由费马小定理知, $10^{30} \\equiv 1(\\bmod 31)$, 故对任意正整数 $k$, 有 $10^{30 k} \\equiv 1(\\bmod 31)$, 从而\n$$\n\\frac{.1}{3}\\left(10^{30 k}-1\\right) \\equiv 0(\\bmod 31) .\n$$\n这表明, $30 k$ 个 3 组成的数被 31 整除,这数乘以 100 后再加上 31 ,也被 31 整除, 即数列中第 $30 k+2$ 项被 31 整除, 故它不是素数, 从而上述的数列中有天穷多个合数.",
+    "remark": "",
+    "figures": []
+}

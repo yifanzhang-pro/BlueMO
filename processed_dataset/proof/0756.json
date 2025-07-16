@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 若 $a, b, c, x, y, z \\in \\mathbf{R}$, 满足 $\\left\\{\\begin{array}{l}\\cos (x+y+z)=a \\cos x+b \\cos y+c \\cos z, \\\\ \\sin (x+y+z)=a \\sin x+b \\sin y+c \\sin z,\\end{array}\\right.$ 证明: $\\left\\{\\begin{array}{l}a \\cos (y+z)+b \\cos (z+x)+c \\cos (x+y)=1, \\\\ a \\sin (y+z)+b \\sin (z+x)+c \\sin (x+y)=0 .\\end{array}\\right.$",
+    "solution": "考虑到\n$$\n\\begin{gathered}\n\\mathrm{e}^{\\mathrm{i} x}=\\cos x+\\mathrm{i} \\sin x, \\mathrm{e}^{\\mathrm{i} y}=\\cos y+\\mathrm{i} \\sin y, \\mathrm{e}^{\\mathrm{i} z}=\\cos z+\\mathrm{i} \\sin z, \\\\\n\\mathrm{e}^{\\mathrm{i}(x+y+z)}=\\cos (x+y+z)+\\mathrm{i} \\sin (x+y+z),\n\\end{gathered}\n$$\n结合已知条件可得\n$$\n\\begin{aligned}\na \\mathrm{e}^{\\mathrm{i} x}+b \\mathrm{e}^{\\mathrm{i} y}+c \\mathrm{e}^{\\mathrm{i} z} & =(a \\cos x+b \\cos y+c \\cos z)+\\mathrm{i}(a \\sin x+b \\sin y+c \\sin z) \\\\\n& =\\cos (x+y+z)+\\mathrm{i} \\sin (x+y+z)=\\mathrm{e}^{\\mathrm{i}(x+y+z)} .\n\\end{aligned}\n$$\n上式两边乘以 $\\mathrm{e}^{-i(x+y+z)}$ 得\n$$\nZ=a \\mathrm{e}^{-\\mathrm{i}(y+z)}+b \\mathrm{e}^{-\\mathrm{i}(z+x)}+c \\mathrm{e}^{-\\mathrm{i}(x+y)}=1,\n$$\n从而\n$$\n\\left\\{\\begin{array}{l}\na \\cos (y+z)+b \\cos (z+x)+c \\cos (x+y)=\\operatorname{Re} Z=1, \\\\\na \\sin (y+z)+b \\sin (z+x)+c \\sin (x+y)=-\\operatorname{lm} Z=0 .\n\\end{array}\\right.\n$$",
+    "remark": "",
+    "figures": []
+}

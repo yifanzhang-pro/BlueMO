@@ -1,0 +1,191 @@
+
+%%TEXT_BEGIN%%
+第一数学归纳法.
+数学归纳法是证明关于正整数 $n$ 的命题 $P(n)$ 成立与否时经常用到的方法.
+它是下面的归纳公理的一个直接推论.
+归纳公理设 $S$ 是正整数集 $\mathbf{N}^*$ 的一个子集,满足条件:
+(1) $1 \in S$;
+(2) 若 $n \in S$, 则 $n+1 \in S$.
+那么 $S=\mathbf{N}^*$.
+归纳公理是由皮亚诺 (G. Peano, 1858-1932) 提出的关于正整数的五条公理中的一条, 它是数学归纳法的基础.
+第一数学归纳法是最常用的一种形式, 它就是我们高中课本中所提及的数学归纳法.
+第一数学归纳法设 $P(n)$ 是关于正整数 $n$ 的一个命题(或性质). 如果
+(1) 当 $n=1$ 时, $P(n)$ 成立;
+(2) 由 $P(n)$ 成立可以推出 $P(n+1)$ 成立.
+那么, 对任意 $n \in \mathbf{N}^*, P(n)$ 都成立.
+证明记 $S=\left\{n \mid n \in \mathbf{N}^*, \text{且} P(n) \text{成立} \right\}$, 则 $S$ 为 $\mathbf{N}^*$ 的子集.
+由 (1) 知 $1 \in S$; 由 (2) 知, 若 $n \in S$, 则 $n+1 \in S$. 这样由归纳公理可知 $S=\mathbf{N}^*$, 也就是说, 对任意 $n \in \mathbf{N}^*, P(n)$ 都成立.
+说明事实上,第一数学归纳法与归纳公理是等价的, 因此, 我们又称之为数学归纳法原理, 并把第一数学归纳法简称为数学归纳法.
+对中学生而言, 要接受数学归纳法的含义和正确性并不难, 但是要正确地用好数学归纳法却不是一件容易的事.
+数学归纳法中的两步缺一不可.
+验证 $P(1)$ 成立是奠基, 利用归纳假设结合已知的有关数学知识证出 $P(n+1)$ 成立是递推的根据.
+这两步对证明命题相辅相成, 构成数学归纳法证明过程的逻辑结构.
+尤为重要的是在证明过程中必须用到归纳假设, 这是检验是否用对了数学归纳法的一把尺.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 证明: 对任意 $n \in \mathbf{N}^*$, 都有
+$$
+\frac{1}{1 \times 2}+\frac{1}{2 \times 3}+\cdots+\frac{1}{n(n+1)}=1-\frac{1}{n+1} . \label{eq1}
+$$
+%%<SOLUTION>%%
+证明:当 $n=1$ 时, \ref{eq1} 式左边 $=\frac{1}{2}$, \ref{eq1} 式右边 $=1-\frac{1}{1+1}=\frac{1}{2}$, 故 $n=$ 1 时, \ref{eq1} 式成立.
+现设\ref{eq1}式对 $n$ 成立, 考虑 $n+1$ 的情形.
+利用 $\frac{1}{k(k+1)}=\frac{1}{k}-\frac{1}{k+1}$, 知
+$$
+\begin{aligned}
+& \frac{1}{1 \times 2}+\frac{1}{2 \times 3}+\cdots+\frac{1}{(n+1)(n+2)} \\
+= & \left(1-\frac{1}{2}\right)+\left(\frac{1}{2}-\frac{1}{3}\right)+\cdots+\left(\frac{1}{n+1}-\frac{1}{n+2}\right) \\
+= & 1-\frac{1}{n+2} .
+\end{aligned} \label{eq2}
+$$
+所以, \ref{eq1}式对 $n+1$ 成立.
+综上所述, 由数学归纳法原理知, \ref{eq1}式对一切正整数 $n$ 成立.
+说明这是一个错误的证明, 其错误在于证明\ref{eq1}式对 $n+1$ 成立时, 并没有用到归纳假设.
+正确的过程如下:
+由归纳假设知
+$$
+\begin{aligned}
+& \frac{1}{1 \times 2}+\frac{1}{2 \times 3}+\cdots+\frac{1}{n(n+1)}+\frac{1}{(n+1)(n+2)} \\
+= & \left(1-\frac{1}{n+1}\right)+\frac{1}{(n+1)(n+2)} \\
+= & \left(1-\frac{1}{n+1}\right)+\left(\frac{1}{n+1}-\frac{1}{n+2}\right) \\
+= & 1-\frac{1}{n+2} .
+\end{aligned}
+$$
+所以, \ref{eq1}式对 $n+1$ 成立.
+事实上, \ref{eq2}式的得到是正确的, 但这是对\ref{eq1}式的一个直接证明, 不应该套上数学归纳法这顶帽子.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $n \in \mathbf{N}^*$. 证明: 去掉 $2^n \times 2^n$ 的方格表的任何一个方格后, 剩余的部分都可以用" $\square$ " "形状的 L 型无重叠地完全覆盖.
+%%<SOLUTION>%%
+证明:当 $n=1$ 时, 由于一个" $\square$ " 字型去掉任何一个方格后都是一个 "回"型,故命题对 $n=1$ 成立.
+现设 $n=k$ 时, 命题成立, 即去掉一个 $2^k \times 2^k$ 的方格表的任何一个方格后,剩余部分都可用" $\square$ 型覆盖, 我们考虑 $n=k+1$ 的情形.
+如图 (<FilePath:./figures/fig-c1i1.png>) 所示, 将 $2^{k+1} \times 2^{k+1}$ 的方格表依中心所在的两条方格线把表格分割为 4 个 $2^k \times 2^k$ 的方格表, 则题设中要求去掉的那个小方格必落在某个 $2^k \times 2^k$ 的方格表中.
+在剩余的部分先绕中心摆一个" $\square$ " 型, 去掉图 (<FilePath:./figures/fig-c1i1.png>) 中所示的 4 个阴影方格后, 每个 $2^k \times 2^k$ 的子表格都去掉了一个方格, 而由归纳假设可知, 它们都可以用 " $\square$ " 型覆盖, 再补上绕中心所摆的那个" $\square$ " 型就得出命题对 $n=k+1$ 成立.
+综上可知, 命题对一切正整数 $n$ 成立.
+说明本题采用的是数学归纳法证题时的常用表述方式.
+当然了, 表达方式可依个人的表达风格而定, 但都需要在归纳假设和结论之间进行正确地过渡, 它是完成数学归纳法证题时的关键步骤.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $x 、 y$ 是实数, 使得 $x+y 、 x^2+y^2 、 x^3+y^3 、 x^4+y^4$ 都是整数.
+证明: 对任意 $n \in \mathbf{N}^*$, 数 $x^n+y^n$ 都为整数.
+%%<SOLUTION>%%
+证明:此题要用到第一数学归纳法的一种变形: 设 $P(n)$ 是关于正整数 $n$ 的一个命题(或性质), 如果
+(1) 当 $n=1,2$ 时, $P(n)$ 成立;
+(2) 由 $P(n) 、 P(n+1)$ 成立可以推出 $P(n+2)$ 成立.
+那么, 对任意 $n \in \mathbf{N}^*, P(n)$ 都成立.
+事实上, 这种变形只是调整了归纳过程中的跨度, 这样的例子在后面的讨论中会频繁出现.
+回到原题, 由条件 $x+y$ 与 $x^2+y^2$ 都是整数可知,命题对 $n=1,2$ 成立.
+设命题对 $n, n+1$ 成立, 即 $x^n+y^n$ 与 $x^{n+1}+y^{n+1}$ 都是整数, 考虑 $n+2$ 的情形.
+此时
+$$
+x^{n+2}+y^{n+2}=(x+y)\left(x^{n+1}+y^{n+1}\right)-x y\left(x^n+y^n\right) .
+$$
+因此, 为证 $x^{n+2}+y^{n+2} \in \mathbf{Z}$, 结合归纳假设及条件中的 $x+y \in \mathbf{Z}$, 我们只需证明 $x y \in \mathbf{Z}$.
+注意到 $x+y 、 x^2+y^2 \in \mathbf{Z}$, 故 $2 x y=(x+y)^2-\left(x^2+y^2\right) \in \mathbf{Z}$. 若 $x y \notin \mathbf{Z}$, 则可设 $x y=\frac{m}{2}, m$ 为奇数, 再由 $x^2+y^2 、 x^4+y^4 \in \mathbf{z}$, 知 $2 x^2 y^2=\left(x^2+\right. \left.y^2\right)^2-\left(x^4+y^4\right) \in \mathbf{Z}$, 即 $2 \times\left(\frac{m}{2}\right)^2=\frac{m^2}{2} \in \mathbf{Z}$. 但 $m$ 为奇数, 这是一个矛盾.
+所以 $x y \in \mathbf{Z}$. 进而, 命题对 $n+2$ 成立.
+综上所述, 对任意 $n \in \mathbf{N}^*$, 数 $x^n+y^n \in \mathbf{Z}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $\theta \in\left(0, \frac{\pi}{2}\right), n$ 是大于 1 的正整数.
+证明:
+$$
+\left(\frac{1}{\sin ^n \theta}-1\right)\left(\frac{1}{\cos ^n \theta}-1\right) \geqslant 2^n-2^{\frac{n}{2}+1}+1 . \label{eq1}
+$$
+%%<SOLUTION>%%
+证明:当 $n=2$ 时,\ref{eq1}式左右两边相等,故 $n=2$ 时命题成立.
+假设命题对 $n(\geqslant 2)$ 成立, 则
+$$
+\begin{aligned}
+& \left(\frac{1}{\sin ^{n+1} \theta}-1\right)\left(\frac{1}{\cos ^{n+1} \theta}-1\right) \\
+= & \frac{1}{\sin ^{n+1} \theta \cos ^{n+1} \theta}\left(1-\sin ^{n+1} \theta\right)\left(1-\cos ^{n+1} \theta\right) \\
+= & \frac{1}{\sin ^{n+1} \theta \cos ^{n+1} \theta}\left(1-\sin ^{n+1} \theta-\cos ^{n+1} \theta\right)+1 \\
+= & \frac{1}{\sin \theta \cos \theta}\left(\frac{1}{\sin ^n \theta \cos ^n \theta}-\frac{\cos \theta}{\sin ^n \theta}-\frac{\sin \theta}{\cos ^n \theta}\right)+1 \\
+= & \frac{1}{\sin \theta \cos \theta}\left[\left(\frac{1}{\sin ^n \theta}-1\right)\left(\frac{1}{\cos ^n \theta}-1\right)+\frac{1-\cos \theta}{\sin ^n \theta}+\frac{1-\sin \theta}{\cos ^n \theta}-1\right]+1 \\
+\geqslant & \frac{1}{\sin \theta \cos \theta}\left[\left(2^n-2^{\frac{n}{2}+1}\right)+2 \sqrt{\frac{(1-\cos \theta)(1-\sin \theta)}{\sin ^n \theta \cos ^n \theta}}\right]+1,
+\end{aligned} \label{eq2}
+$$
+这里式\ref{eq2}由归纳假设和均值不等式得到.
+注意到 $\sin \theta \cos \theta=\frac{1}{2}-\sin 2 \theta \leqslant \frac{1}{2}$, 而
+$$
+\frac{(1-\cos \theta)(1--\sin \theta)}{\sin ^n \theta \cos ^n \theta}=\left(\frac{1}{\sin \theta \cos \theta}\right)^{n-2} \cdot \frac{1}{(1+\sin \theta)(1+\cos \theta)},
+$$
+其中 $\quad(1+\sin \theta)(1+\cos \theta)=1+\sin \theta+\cos \theta+\sin \theta \cos \theta$
+$$
+\begin{aligned}
+& =1+t+\frac{t^2-1}{2} \\
+& =\frac{1}{2}(t+1)^2 \leqslant \frac{1}{2}(\sqrt{2}+1)^2 .
+\end{aligned}
+$$
+(这里用到 $t=\sin \theta+\cos \theta=\sqrt{2} \sin \left(\theta+\frac{\pi}{4}\right) \in(1, \sqrt{2}]$ ).
+所以 $\sqrt{\frac{(1-\cos \theta)(1-\sin \theta)}{\sin ^n \theta \cos ^n \theta}} \geqslant \frac{2^{\frac{n-1}{2}}}{\sqrt{2}+1}=2^{\frac{n}{2}}-2^{\frac{n-1}{2}}$. 从而, 由式\ref{eq2}可得
+$$
+\begin{aligned}
+& \left(\frac{1}{\sin ^{n+1} \theta}-1\right)\left(\frac{1}{\cos ^{n+1} \theta}-1\right) \geqslant 2\left[\left(2^n-2^{\frac{n}{2}+1}\right)+2\left(2^{\frac{n}{2}}-2^{\frac{n-1}{2}}\right)\right]+1 \\
+= & 2\left(2^n-2^{\frac{n+1}{2}}\right)+1=2^{n+1}-2^{\frac{n+1}{2}+1}+1 .
+\end{aligned}
+$$
+即命题对 $n+1$ 成立.
+综上所述,命题对一切 $n \in \mathbf{N}^*(n \geqslant 2)$ 成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 数列 $\left\{a_n\right\}$ 定义如下:
+$$
+a_1=1, a_n=a_{n-1}+a_{\left[\frac{n}{2}\right]}, n=2,3, \cdots . 
+$$
+证明: 该数列中有无穷多项是 7 的倍数.
+%%<SOLUTION>%%
+证明:直接由递推式计算, 可得 $a_1=1, a_2=2, a_3=3, a_4=5, a_5=7$.
+现设 $a_n(n \geqslant 5)$ 是 7 的倍数, 我们寻找下标 $m>n$, 使得 $7 \mid a_m$.
+由 $a_n \equiv 0(\bmod 7)$, 知 $a_{2 n}=a_{2 n-1}+a_n \equiv a_{2 n-1}(\bmod 7), a_{2 n+1}=a_{2 n}+a_n \equiv a_{2 n}(\bmod 7)$, 故 $a_{2 n-1} \equiv a_{2 n} \equiv a_{2 n+1}(\bmod 7)$. 记 $a_{2 n-1}$ 除以 7 所得余数为 $r$. 如果 $r=0$, 那么取 $m=2 n-1$ 即可; 如果 $r \neq 0$, 考虑下面的 7 个数:
+$$
+a_{4 n-3}, a_{4 n-2}, \cdots, a_{4 n+3} \text {. }
+$$
+注意到 $a_{4 n-2}=a_{4 n-3}+a_{2 n-1} \equiv a_{4 n-3}+r(\bmod 7), a_{4 n-1}=a_{4 n-2}+a_{2 n-1} \equiv a_{4 n-2}+r(\bmod 7) \equiv a_{4 n-3}+2 r(\bmod 7), a_{4 n}=a_{4 n-1}+a_{2 n} \equiv a_{4 n-1}+r \equiv a_{4 n-3}+ 3 r, \cdots, a_{4 n+3}=a_{4 n+2}+a_{2 n+1} \equiv a_{4 n+2}+r \equiv a_{4 n-3}+6 r(\bmod 7)$. 因此, $a_{4 n-3}$, $a_{4 n-2}, \cdots, a_{4 n+3}$ 构成模 7 的一个完全剩余系.
+故存在 $m \in\{4 n-3,4 n-2, \cdots$, $4 n+3\}$, 使得 $a_m \equiv 0(\bmod 7)$.
+这样, 我们从 $a_5$ 出发结合上面的推导可知, $\left\{a_n\right\}$ 中有无穷多项是 7 的倍数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. (1) 证明: 对任意正整数 $n(\geqslant 2)$, 存在 $n$ 个不同的正整数 $a_1, \cdots$, $a_n$, 使得对任意 $1 \leqslant i<j \leqslant n$, 都有 $\left(a_i-a_j\right) \mid\left(a_i+a_j\right)$.
+(2) 是否存在一个由正整数组成的无穷集 $\left\{a_1, a_2, \cdots\right\}$, 使得对任意 $i \neq j$, 都有 $\left(a_i-a_j\right) \mid\left(a_i+a_j\right)$ ?
+%%<SOLUTION>%%
+证明:(1) 当 $n=2$ 时, 取数 1,2 即可.
+设命题对 $n$ 成立, 即存在正整数 $a_1<a_2<\cdots<a_n$, 满足: 对任意 $1 \leqslant i< j \leqslant n$, 都有 $\left(a_i-a_j\right) \mid\left(a_i+a_j\right)$, 现在考虑下面的 $n+1$ 个数:
+$$
+A, A+a_1, A+a_2, \cdots, A+a_n . \label{eq1}
+$$
+这里 $A=a_n$ !, 其中 $a_{n} !=1 \times 2 \times 3 \times \cdots \times a_n$.
+从式\ref{eq1}中任取两个数 $x<y$, 若 $x==A, y=A+a_i, 1 \leqslant i \leqslant n$, 则 $y-x= a_i$, 而 $x+y=2 A+a_i$, 结合 $a_i \leqslant a_n$, 知 $a_i \mid A$, 故 $(y-x) \mid(y+x)$; 若 $x= A+a_i, y=A+a_j, 1 \leqslant i<j \leqslant n$, 则 $y-x=a_j-a_i, y+x=2 A+\left(a_i+\right. \left.a_j\right)$, 由归纳假设 $\left(a_j-a_i\right) \mid\left(a_j+a_i\right)$, 又 $a_j-a_i<a_n$, 故 $\left(a_j-a_i\right) \mid A$, 所以 $(y-x) \mid(y+x)$. 从而,命题对 $n+1$ 成立.
+综上所述,对任意 $n \in \mathbf{N}^*, n \geqslant 2$, 存在满足条件的 $n$ 个正整数.
+(2) 若存在无穷多个正整数 $a_1<a_2<\cdots$, 使得对任意 $1 \leqslant i<j$, 都有 $\left(a_j-a_i\right) \mid\left(a_j+a_i\right)$, 则对任意 $j>1$, 有 $\left(a_j-a_1\right) \mid\left(a_j+a_1\right)$, 故 $\left(a_j-a_1\right) \mid 2 a_1$. 而由 $a_1<a_2<\cdots$, 知 $2 a_1$ 可以被无穷多个正整数整除,这是一个矛盾.
+所以, 不存在满足条件的无穷多个正整数.
+说明数学归纳法证明的是: 对任意 $n \in \mathbf{N}^*, P(n)$ 成立,也就是说它处理的是关于任意有限的正整数 $n$ 的命题, 并不能断定 $P(\infty)$ 成立, 这里部分地体现了有限与无穷的本质区别.
+从此例中 (1) 与 (2) 的对比可看出这一点.
+当然, 用数学归纳法处理存在性问题也能处理与无穷有关的一些结论, 例如例 5 的处理.
+对比例 5 与例 6 中的递推结构的构造, 可发现两者有本质不同,前者把前面的结果"包容下来",而后者却把前面的数都"扬弃"了.
+%%PROBLEM_END%%
+
+

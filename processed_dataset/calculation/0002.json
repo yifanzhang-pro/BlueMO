@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 设关于 $x$ 的不等式 $\\left|x-{\\frac{(a+1)^{2}}{2}}\\right|\\leq{\\frac{(a-1)^{2}}{2}}$ 和 $x^{2}-3(a+1)x+2(3a+1)\\leq0\\ (a\\in\\mathbb{R})$ 的解集依次为 $A$、$B$,求使 $A\\,\\subseteq\\,B$ 的实数a 的取值范围.",
+    "solution": "分析: 要由 $A\\subseteq B$ 求出a的范围,必须先求出$A$和 $B$.\n解: 由 $\\left|x-{\\frac{(a+1)^{2}}{2}}\\right|\\leqslant{\\frac{(a-1)^{2}}{2}}$, 得\n$$\n-\\frac{(a-1)^{2}}{2}\\leq x-\\frac{(a+1)^{2}}{2}\\leq\\frac{(a-1)^{2}}{2}, \n$$\n解之,得 $2a\\leq x\\leq a^{2}+1.$ 所以 $,A=\\{x\\mid2a\\leq x\\leq a^{2}+1\\}$ \n由 $x^{2}-3(a+1)x+2(3a+1)\\leq0$,得\n$$\n(x-2)[x-(3a+1)]\\leq0. \n$$\n当 $a\\geq{\\frac{1}{3}}$ 时, $B = \\{ x \\mid 2 \\leq x \\leq 3a+1 \\}$ ;当 $a<{\\frac{1}{3}}$时,$B=\\{x \\mid 3a+1 \\leq x \\leq 2 \\}.$ \n因为 $A\\subseteq B$, 所以\n$$\n\\begin{align*}\n\\left\\{\n\\begin{aligned}\n    a \\geq \\frac{1}{3}, \\\\\n    2a \\geq 2,\\\\\n    a^2+1 \\leq 3a+1,\n\\end{aligned}\n\\right.\n\\end{align*}\n$$ \n或\n$$\n\\begin{align*}\n\\left\\{\n\\begin{aligned}\n    a < \\frac{1}{3}, \\\\\n    2a \\geq 3a+1,\\\\\n    a^2+1 \\leq 2.\n\\end{aligned}\n\\right.\n\\end{align*}\n$$ \n解之,得 $1\\leq a\\leq3$ 或 $a=-1.$ \n所以,a 的取值范围是[1, 3]U ${\\{-1}\\}.$ \n说明: 上述解答是通过对参数 $a$ 的分类讨论完成的,其实还有更直接的解法.\n方程的角度看 $A\\subseteq B$ 等价于方程 $x^{2}-3(a+1)x+2(3a+1)=0$ 在区间$(-\\infty,2a]$ 和 $[a^{2}+1,\\ +\\infty)$ 内各有一个实根.\n $f(x)\\,=\\,x^{2} - 3(a+1)x+2(3a+1)$ ,由 $A\\subseteq B$, 得\n$$\n\\begin{align*}\n\\left\\{\n\\begin{aligned}\n    f(2a) \\leq 0, \\\\\n    f(a^2+1) \\leq 0,\\\\\n\\end{aligned}\n\\right.\n\\end{align*}\n\\longrightarrow 1\\leq a \\leq 3 \\text{或} a=-1.$$",
+    "remark": "",
+    "figures": []
+}

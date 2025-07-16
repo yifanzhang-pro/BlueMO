@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题11 将正弦曲线 $y=\\sin (-x)$ 的图象向右平移 $\\frac{\\pi}{3}$ 个单位, 所得到的函数图象的解析式是 ; 将余弦曲线 $y=\\cos (-2 x)$ 的图象向左平移 $\\frac{\\pi}{6}$ 个单位, 所得到的函数图象的解析式是",
+    "solution": "$y=\\sin \\left(\\frac{\\pi}{3}-x\\right), y=\\cos \\left(2 x+\\frac{\\pi}{3}\\right)$.",
+    "remark": "",
+    "figures": []
+}

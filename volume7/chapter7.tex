@@ -1,0 +1,466 @@
+
+%%TEXT_BEGIN%%
+三角法是平面几何的基本而又重要的方法之一.
+熟练掌握和运用公式是用三角法证明平面几何问题的基础.
+正弦定理和余弦定理是三角法证明平面几何问题中用得最多的两个基本定理.
+1. 正弦定理: $\frac{a}{\sin A}=\frac{b}{\sin \bar{B}}=\frac{c}{\sin \bar{C}}=2 R(a 、 b 、 c$ 是三角形的三边, $R$ 是 $\triangle A B C$ 的外接圆半径).
+2. 余弦定理: $a^2=b^2+c^2-2 b c \cos A, b^2=a^2+c^2-2 a c \cos B, c^2= a^2+b^2-2 a b \cos C$.
+3. 积化和差公式: $\cos \alpha \cdot \cos \beta=\frac{1}{2}[\cos (\alpha+\beta)+\cos (\alpha-\beta)], \sin \alpha \cos \beta= \frac{1}{2}[\sin (\alpha+\beta)+\sin (\alpha-\beta)], \cos \alpha \sin \beta=\frac{1}{2}[\sin (\alpha+\beta)-\sin (\alpha-\beta)]$, $\sin \alpha \sin \beta=-\frac{1}{2}[\cos (\alpha+\beta)-\cos (\alpha-\beta)]$.
+4. 和差化积公式: $\sin \alpha+\sin \beta=2 \sin \frac{\alpha+\beta}{2} \cos \frac{\alpha-\beta}{2}, \sin \alpha-\sin \beta= 2 \cos \frac{\alpha+\beta}{2} \sin \frac{\alpha-\beta}{2}, \cos \alpha+\cos \beta=2 \cos \frac{\alpha+\beta}{2} \cos \frac{\alpha-\beta}{2}, \cos \alpha-\cos \beta= -2 \sin \frac{\alpha+\beta}{2} \sin \frac{\alpha-\beta}{2}$.
+5. 三倍角公式: $\sin 3 \alpha=3 \sin \alpha-4 \sin ^3 \alpha, \cos 3 \alpha=4 \cos ^3 \alpha-3 \cos \alpha$,
+$$
+\begin{aligned}
+& \sin \alpha \sin \left(60^{\circ}+\alpha\right) \sin \left(60^{\circ}-\alpha\right)=\frac{1}{4} \cdot \sin 3 \alpha, \cos \alpha \cdot \cos \left(60^{\circ}+\alpha\right) \cdot \cos \left(60^{\circ}-\alpha\right)= \\
+& \frac{1}{4} \cos 3 \alpha, \tan \alpha \cdot \tan \left(60^{\circ}+\alpha\right) \cdot \tan \left(60^{\circ}-\alpha\right)=\tan 3 \alpha .
+\end{aligned}
+$$
+6. 三角形中的恒等式很多, 其中用得较多的有:
+$$
+\begin{aligned}
+& \cos ^2 A+\cos ^2 B+\cos ^2 C=1-2 \cos A \cos B \cdot \cos C, \\
+& \tan A+\tan B+\tan C=\tan A \cdot \tan B \cdot \tan C, \\
+& \tan \frac{A}{2} \tan \frac{B}{2}+\tan \frac{B}{2} \tan \frac{C}{2}+\tan \frac{C}{2} \cdot \tan \frac{A}{2}=1 .
+\end{aligned}
+$$
+7. 设 $r 、 R$ 分别为 $\triangle A B C$ 的内切圆, 外接圆半径, 则有 $\frac{r}{R}=4 \sin \frac{A}{2}$
+$$
+\sin \frac{B}{2} \sin \frac{C}{2}=\cos A+\cos B+\cos C-1 \text {. }
+$$
+事实上, 设 $I$ 是内心, $\triangle B I C$ 中, $r=B I \sin \frac{B}{2}$, 而由正弦定理, $\frac{B I}{\sin \frac{C}{2}}= \frac{B C}{\sin \angle B I C}=\frac{2 R \sin A}{\sin \left(\frac{A}{2}+\frac{\pi}{2}\right)}$, 所以 $r=\frac{2 R \sin A}{\cos \frac{A}{2}} \cdot \sin \frac{C}{2} \cdot \sin \frac{B}{2}=4 R \sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2}$, 所以 $\frac{r}{R}=4 \sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2}$.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. (四边形的余弦定理) 设凸四边形 $A B C D$ 对角线交于点 $P, \angle A P B= \theta$, 求证:
+$$
+\cos \theta=\frac{A D^2+B C^2-A B^2-C D^2}{2 A C \cdot B D} .
+$$
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c7i1.png>), 设 $P A 、 P B 、 P C 、 P D$ 的长分别为 $a 、 b 、 c 、 d$, 则有
+$$
+\begin{aligned}
+& A D^2=a^2+d^2+2 a d \cos \theta, \\
+& B C^2=b^2+c^2+2 b c \cos \theta \\
+& A B^2=a^2+b^2-2 a b \cos \theta \\
+& C D^2=c^2+d^2+2 c d \cos \theta
+\end{aligned}
+$$
+前两式之和减去后两式之和, 得
+$$
+\begin{aligned}
+A D^2+B C^2-A B^2-C D^2 & =2(a d+b c+a b+c d) \cos \theta \\
+& =2 A C \cdot B D \cos \theta .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 如图(<FilePath:./figures/fig-c7i2.png>), 给定凸四边形 $A B C D, \angle B+ \angle D<180^{\circ}, P$ 是平面上的动点, 令 $f(P)=P A B C+P D \cdot C A+P C \cdot A B$.
+(1) 求证: 当 $f(P)$ 达到最小值时, $P 、 A 、 B 、 C$ 四点共圆;
+(2) 设 $E$ 是 $\triangle A B C$ 外接圆 $O$ 的 $A B$ 上一点, 满足: $\frac{A E}{A B}=\frac{\sqrt{3}}{2}, \frac{B C}{E C}=\sqrt{3}-1, \angle E C B=\frac{1}{2} \angle E C A$, 又 $D A 、 D C$ 是圆 $O$ 的切线, $A C=\sqrt{2}$, 求 $f(P)$ 的最小值.
+%%<SOLUTION>%%
+(1) 证: 由托勒密不等式, 对平面上的任意点 $P$, 有
+$$
+P A \cdot B C+P C \cdot A B \geqslant P B \cdot A C .
+$$
+因此 $f(P)=P A \cdot B C+P C \cdot A B+P D \cdot C A$
+$$
+\geqslant P B \cdot C A+P D \cdot C A=(P B+P D) \cdot C A .
+$$
+因为上面不等式当且仅当 $P 、 A 、 B 、 C$ 顺次共圆时取等号, 因此当且仅当 $P$ 在 $\triangle A B C$ 的外接圆且在 $A C$ 上时, $f(P)=(P B+P D) \cdot C A$.
+又因 $P B+P D \geqslant B D$, 此不等式当且仅当 $B 、 P 、 D$ 共线且 $P$ 在 $B D$ 上时取等号.
+因此当且仅当 $P$ 为 $\triangle A B C$ 的外接圆与 $B D$ 的交点时, $f(P)$ 取最小值 $f(P)_{\min }=A C \cdot B D$.
+故当 $f(P)$ 达最小值时, $P 、 A 、 B 、 C$ 四点共圆.
+(2) 记 $\angle E C B=\dot{\alpha}$, 则 $\angle E C A=2 \alpha$, 由正弦定理有
+$$
+\frac{A E}{A B}=\frac{\sin 2 \alpha}{\sin 3 \alpha}=\frac{\sqrt{3}}{2},
+$$
+从而
+$$
+\sqrt{3} \sin 3 \alpha=2 \sin 2 \alpha,
+$$
+即
+$$
+\sqrt{3}\left(3 \sin \alpha-4 \sin ^3 \alpha\right)=4 \sin \alpha \cos \alpha,
+$$
+所以
+$$
+3 \sqrt{3}-4 \sqrt{3}\left(1-\cos ^2 \alpha\right)-4 \cos \alpha=0,
+$$
+整理得
+$$
+4 \sqrt{3} \cos ^2 \alpha-4 \cos \alpha-\sqrt{3}=0,
+$$
+解得
+$$
+\cos \alpha=\frac{\sqrt{3}}{2} \text { 或 } \cos \alpha=-\frac{1}{2 \sqrt{3}} \text { (舍去), }
+$$
+故
+$$
+\alpha=30^{\circ}, \angle A C E=60^{\circ} \text {. }
+$$
+由已知 $\frac{B C}{E C}=\sqrt{3}-1=\frac{\sin \left(\angle E A C-30^{\circ}\right)}{\sin \angle E A C}$, 有
+$$
+\sin \left(\angle E A C-30^{\circ}\right)=(\sqrt{3}-1) \sin \angle E A C,
+$$
+即
+$$
+\frac{\sqrt{3}}{2} \sin \angle E A C-\frac{1}{2} \cos \angle E A C=(\sqrt{3}-1) \sin \angle E A C,
+$$
+整理得
+$$
+\frac{2-\sqrt{3}}{2}-\sin \angle E A C=\frac{1}{2} \cos \angle E A C,
+$$
+故
+$$
+\tan \angle E A C=\frac{1}{2-\sqrt{3}}=2+\sqrt{3}
+$$
+可得
+$$
+\angle E A C=75^{\circ} \text {, }
+$$
+从而 $\angle E=45^{\circ}, \angle D A C=\angle D C A=\angle E=45^{\circ}, \triangle A D C$ 为等腰直角三角形.
+因 $A C=\sqrt{2}$, 则 $C D=1$.
+又 $\triangle A B C$ 也是等腰直角三角形, 故 $B C=\sqrt{2}, B D^2=1+2-2 \cdot 1 \cdot \sqrt{2} \cos 135^{\circ}=5, B D=\sqrt{5}$.
+故 $f(P)_{\min }=B D \cdot A C=\sqrt{5} \cdot \sqrt{2}=\sqrt{10}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 如图(<FilePath:./figures/fig-c7i3.png>), 在三角形 $A B C$ 中, $\angle B A C=40^{\circ}, \angle A B C=60^{\circ}, D$ 和 $E$ 分别是边 $A C$ 和 $A B$ 上点, 使得 $\angle C B D=40^{\circ}, \angle B C E=70^{\circ}, F$ 是直线 $B D$ 和 $C E$ 的交点.
+证明: 直线 $A F$ 和直线 $B C$ 垂直.
+%%<SOLUTION>%%
+证明:设 $B C=1$, 分别在 $\triangle A B C$ 和 $\triangle B C F$ 中用正弦定理, 得
+$A B=\frac{\sin 80^{\circ}}{\sin 40^{\circ}}, A C=\frac{\sin 60^{\circ}}{\sin 40^{\circ}}, B F=\frac{\sin 70^{\circ}}{\sin 70^{\circ}}, C F=\frac{\sin 40^{\circ}}{\sin 70^{\circ}}$,
+而
+$$
+\begin{aligned}
+& A F \perp B C \Leftrightarrow A B^2-A C^2=B F^2-C F^2 \\
+\Leftrightarrow & \frac{\sin ^2 80^{\circ}-\sin ^2 60^{\circ}}{\sin ^2 40^{\circ}}=\frac{\sin ^2 70^{\circ}-\sin ^2 40^{\circ}}{\sin ^2 70^{\circ}} \\
+\Leftrightarrow & \frac{\frac{1}{2}\left(\cos 120^{\circ}-\cos 160^{\circ}\right)}{\sin ^2 40^{\circ}}=\frac{\frac{1}{2}\left(\cos 80^{\circ}-\cos 140^{\circ}\right)}{\sin ^2 70^{\circ}} \\
+\Leftrightarrow & \frac{\sin 140^{\circ} \sin 20^{\circ}}{\sin ^2 40^{\circ}}=\frac{\sin 110^{\circ} \sin 30^{\circ}}{\sin ^2 70^{\circ}} \\
+\Leftrightarrow & \sin 40^{\circ} \sin 30^{\circ}=\sin 20^{\circ} \sin 70^{\circ} \\
+\Leftrightarrow & \sin 40^{\circ}=2 \sin 20^{\circ} \cos 20^{\circ} .
+\end{aligned}
+$$
+这是显然的,故命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 如图(<FilePath:./figures/fig-c7i4.png>),已知 $\triangle A B C$ 中, $O$ 是三角形内一点满足: $\angle B A O=\angle C A O=\angle C B O=\angle A C O$. 求证: $\triangle A B C$ 三边长成等比数列.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c7i4.png>), 设 $\angle B A O==\angle C B O=\angle A C O=\alpha$.
+先证 $\cot \alpha=\cot A+\cot B+\cot C, \label{*}$.
+在 $\triangle O A B$ 中, 由正弦定理: $\frac{A B}{\sin \angle A O B}=\frac{O B}{\sin \angle B A O}$,
+而 $\sin \angle A O B=\sin (\angle B A O+\angle A B O)=\sin (\angle C B O+\angle A B O)=\sin B$, 所以
+$$
+\frac{A B}{\sin B}=\frac{O B}{\sin \alpha} . \label{eq1}
+$$
+同理 $\triangle O B C$ 中有 $\frac{B C}{\sin C}=\frac{O B}{\sin (C-\alpha)}, \label{eq2}$.
+$\frac{式\ref{eq1}}{\ref{eq2}}$, 有 $\frac{A B \sin C}{B C \sin B}=\frac{\sin (C-\alpha)}{\sin \alpha}$, 即 $\frac{\sin ^2 C}{\sin A \sin B}=\frac{\sin (C-\alpha)}{\sin \alpha}$,
+而 $\frac{\sin (C-\alpha)}{\sin \alpha}=\frac{\sin C \cos \alpha-\cos C \sin \alpha}{\sin \alpha}=\sin C \cdot \cot \alpha-\cos C$.
+所以 $\frac{\sin ^2 C}{\sin A \sin B}=\sin C \cdot \cot \alpha-\cos C$, 即 $\cot \alpha=\frac{\sin C}{\sin A \sin B}+\cot C= \frac{\sin (A+B)}{\sin A \sin B}+\cot C=\frac{\sin A \cos B+\cos A \sin B}{\sin A \sin B}+\cot C=\cot A+\cot B+\cot C$.
+\ref{*}式得证, 由\ref{*}式及已知条件知, $\alpha=\frac{A}{2}$. 从而有 $\cot \frac{A}{2}=\cot A+\cot B+\cot C$,
+而 $\cot \frac{A}{2}-\cot A=\frac{\cos \frac{A}{2}}{\sin \frac{A}{2}}-\frac{\cos A}{\sin A}=\frac{\sin \frac{A}{2}}{\sin \frac{A}{2} \sin A}=\frac{1}{\sin A}, \cot B+\cot C =\frac{\cos B}{\sin B}+\frac{\cos C}{\sin C}=\frac{\sin A}{\sin B \sin C}$,
+所以 $\frac{1}{\sin A}=\frac{\sin A}{\sin B \sin C}$, 所以 $\sin ^2 A=\sin B \sin C$, 即 $b, a, c$ 成等比数列.
+%%<REMARK>%%
+注: 若 $O$ 是 $\triangle A B C$ 内一点, 满足 $\angle B A O=\angle C B O=\angle A C O=\alpha$ 这样的点 $O$ 称为布洛卡点, 布洛卡点的一个基本性质是: $\cot \alpha=\cot A+\cot B+ \cot C$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 如图(<FilePath:./figures/fig-c7i5.png>), 设 $\triangle A B C$ 是锐角三角形, 点 $D 、 E 、 F$ 分别在边 $B C 、 C A 、 A B$ 上,线段 $A D 、 B E$ 、 $C F$ 经过 $\triangle A B C$ 的外心 $O$. 已知以下六个比值
+$$
+\frac{B D}{D C}, \frac{C E}{E A}, \frac{A F}{F B}, \frac{B F}{F A}, \frac{A E}{E C}, \frac{C D}{D B}
+$$
+中至少有两个是整数.
+求证: $\triangle A B C$ 是等腰三角形.
+%%<SOLUTION>%%
+证明:从六个比值中取出两个,共有两种类型:
+(1)涉及同一边; (2)涉及不同的边.
+(1) 如果同一边上的两个比值同时是整数, 不妨设为 $\frac{B D}{D C} 、 \frac{C D}{D B}$. 因它们互为倒数, 又同是整数, 所以, 必须都取 1 , 则 $B D=D C$.
+由于 $O$ 是 $\triangle A B C$ 的外心,进而得 $A D$ 是边 $B C$ 的中垂线.
+于是, $A B=A C$.
+(2) 记 $\angle C A B=\alpha, \angle A B C=\beta, \angle B C A=\gamma$.
+因为 $\triangle A B C$ 是锐角三角形, 所以,
+$$
+\angle B O C=2 \alpha, \angle C O A=2 \beta, \angle A O B=2 \gamma .
+$$
+于是, $\frac{B D}{D C}=\frac{S_{\triangle O A B}}{S_{\triangle O A C}}=\frac{\sin 2 \gamma}{\sin 2 \beta}$.
+同理
+$$
+\frac{C E}{E A}=\frac{\sin 2 \alpha}{\sin 2 \gamma}, \frac{A E}{F B}=\frac{\sin 2 \beta}{\sin 2 \alpha} .
+$$
+若上述六个比值中有两个同时是整数且涉及不同的边时, 则存在整数 $m$ 、 $n$, 使得
+$$
+\sin 2 x=m \sin 2 z \text { 且 } \sin 2 y=n \sin 2 z, \label{eq1}
+$$
+或
+$$
+\sin 2 z=m \sin 2 x \text { 且 } \sin 2 z=n \sin 2 y, \label{eq2}
+$$
+其中, $x 、 y 、 z$ 是 $\alpha 、 \beta 、 \gamma$ 的某种排列.
+以下构造 $\triangle A_1 B_1 C_1$, 使得它的三个内角分别为 $180^{\circ}-2 \alpha, 180^{\circ}-2 \beta$, $180^{\circ}-2 \gamma$.
+如图(<FilePath:./figures/fig-c7i5.png>), 过点 $A 、 B 、 C$ 分别作 $\triangle A B C$ 外接圆的切线, 所围成的 $\triangle A_1 B_1 C_1$ 即满足要求.
+根据正弦定理, 知 $\triangle A_1 B_1 C_1$ 的三边与 $\sin 2 \alpha 、 \sin 2 \beta 、 \sin 2 \gamma$ 成正比.
+在式\ref{eq1}、\ref{eq2}两种情况下, 可知其三边之比分别为 $1: m: n$ 或 $m: n: m n$.
+对于式\ref{eq1}, 由三角形两边之和大于第三边, 可知必须 $m=n$;
+对于式\ref{eq2}, 要保证 $m+n>m n$, 即 $(m-1)(n-1)<1$, 由此, $m 、 n$ 中必有一个为 1 .
+无论哪种情况, 都有 $\triangle A_1 B_1 C_1$ 是等腰三角形.
+因此, $\triangle A B C$ 也是等腰三角形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 证明 Morley 定理: 如图(<FilePath:./figures/fig-c7i6.png>), 设 $\triangle A B C$ 内有三点 $D 、 E 、 F, \angle D B C=\angle F B A=\frac{1}{3} \angle A B C$, $\angle F A B=\angle E A C=\frac{1}{3} \angle B A C, \angle E C A=\angle D C B= \frac{1}{3} \angle A C B$, 则 $\triangle D E F$ 是正三角形.
+%%<SOLUTION>%%
+证明:不妨设 $\triangle A B C$ 对应角为 $\angle A 、 \angle B 、 \angle C, R$ 为 $\triangle A B C$ 外接圆半径.
+先证
+$$
+A F=8 R \sin \left(60^{\circ}+\frac{\angle C}{3}\right) \sin \frac{\angle B}{3} \sin \frac{\angle C}{3},
+$$
+这是因为 $\frac{A F}{A B}=\frac{\sin \frac{\angle B}{3}}{\sin \frac{\angle A+\angle B}{3}}=\frac{\sin \frac{\angle B}{3}}{\sin \left(60^{\circ}-\frac{\angle C}{3}\right)}$,
+于是 $A F=A B \cdot \frac{\sin \frac{\angle B}{3}}{\sin \left(60^{\circ}-\frac{\angle C}{3}\right)}=2 R \cdot \sin \angle C \cdot \frac{\sin \frac{\angle B}{3}}{\sin \left(60^{\circ}-\frac{\angle C}{3}\right)}$
+$$
+=8 R \cdot \sin \angle C \cdot \sin \left(60^{\circ}+\frac{\angle C}{3}\right) \cdot \sin \frac{\angle B}{3} \text {. }
+$$
+(这里用到 $\sin \alpha \cdot \sin \left(60^{\circ}+\alpha\right) \cdot \sin \left(60^{\circ}-\alpha\right)=\frac{1}{4} \cdot \sin 3 \alpha$.)
+类似地有, $A E=8 R \cdot \sin \left(60^{\circ}+\frac{\angle B}{3}\right) \cdot \sin \frac{\angle B}{3} \cdot \sin \frac{\angle C}{3}$, 于是 $E F^2= A E^2+A F^2-2 A E \cdot A F \cos \frac{\angle A}{3}=64 R^2 \sin ^2 \frac{\angle B}{3} \sin ^2 \frac{\angle C}{3}\left(\sin ^2\left(60^{\circ}+\frac{\angle C}{3}\right)+\right. \left.\sin ^2\left(60^{\circ}+\frac{\angle B}{3}\right)\right)-2 \times 64 R^2 \cdot \sin ^2 \frac{\angle B}{3} \sin ^2 \frac{\angle C}{3} \sin \left(60^{\circ}+\frac{\angle B}{3}\right) \sin \left(60^{\circ}+\frac{\angle C}{3}\right) \cdot \cos \frac{\angle A}{3}=64 R^2 \sin ^2 \frac{\angle B}{3} \sin ^2 \frac{\angle C}{3}\left[\sin ^2\left(60^{\circ}+\frac{\angle C}{3}\right)+\sin ^2\left(60^{\circ}+\frac{\angle B}{3}\right)-\right. \left.2 \sin \left(60^{\circ}+\frac{\angle B}{3}\right) \cdot \sin \left(60^{\circ}+\frac{\angle C}{3}\right) \cdot \cos \frac{A}{3}\right]=64 R^2 \sin ^2 \frac{\angle B}{3} \sin ^2 \frac{\angle C}{3}[1+\left.\cos \frac{\angle A}{3} \cdot \cos \left(\frac{\angle C}{3}-\frac{\angle B}{3}\right)-2 \sin \left(60^{\circ}+\frac{\angle B}{3}\right) \sin \left(60^{\circ}+\frac{\angle C}{3}\right) \cos \frac{A}{3}\right]= 64 R^2 \sin ^2 \frac{\angle B}{3} \cdot \sin ^2 \frac{\angle C}{3}\left[1-\cos ^2 \frac{\angle A}{3}\right]=64 R^2 \sin ^2 \frac{\angle A}{3} \sin ^2 \frac{\angle B}{3} \sin ^2 \frac{\angle C}{3}$, 于是 $E F=8 R \sin \frac{\angle A}{3} \sin \frac{\angle B}{3} \sin \frac{\angle C}{3}$, 是关于 $A 、 B 、 C$ 对称的值, 所以 $D F= D E=E F$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 如图(<FilePath:./figures/fig-c7i7.png>),已知 $O 、 I$ 分别是三角形 $A B C$ 的外心和内心, $B C=a, C A=b, A B=c$. 问当且仅当 $a, b, c$ 满足什么条件时,有 $O I \perp I B$ ? 证明你的结论.
+(注: 若 $O 、 I$ 重合时, 也算成立.)
+%%<SOLUTION>%%
+解:因为 $O I \perp I B \Leftrightarrow O I^2+B I^2=O B^2$. 令 $\triangle A B C$ 内切圆半径 $r$, 外接圆半径为 $R$. 由欧拉定理 $O I^2=R^2-2 R r$, 且 $B I=\frac{r}{\sin \frac{B}{2}}$. 所以 $R^2-2 R r+\left(\frac{r}{\sin \frac{B}{2}}\right)^2=R^2$. 故 $\frac{r^2}{\sin ^2 \frac{B}{2}}=2 R r, r=2 R \sin ^2 \frac{B}{2}$. 所以 $\frac{r}{R}=1-\cos B$. 又
+$\frac{r}{R}=\cos A+\cos B+\cos C-1$ (知识点 7). 所以 $\cos A+\cos B+\cos C-1= 1-\cos B \cdot \cos A+\cos C=2-2 \cos B$. 所以 $2 \cos \frac{A+C}{2} \cos \frac{A-C}{2}=4 \sin ^2 \frac{B}{2}$, $2 \sin \frac{B}{2} \cos \frac{A-C}{2}=4 \sin ^2 \frac{B}{2}$. 因为 $B \in(0, \pi)$, 所以 $\sin \frac{B}{2} \in\left(0, \frac{\pi}{2}\right)$, $\sin \frac{B}{2} \neq 0$. 所以 $\cos \frac{A-C}{2}=2 \sin \frac{B}{2}$.
+另一方面, $a+c=2 b \Leftrightarrow \sin A+\sin C=2 \sin B \Leftrightarrow 2 \sin \frac{A+C}{2} \cos \frac{A-C}{2}= 4 \sin \frac{B}{2} \cos \frac{B}{2} \Leftrightarrow \cos \frac{A-C}{2}=2 \sin \frac{B}{2}$. 综上, 当且仅当 $a+c=2 b$ 时, $O I \perp I B$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 如图(<FilePath:./figures/fig-c7i8.png>), 设 $P$ 是锐角三角形 $A B C$ 内一点, $A P, B P, C P$ 分别交边 $B C, C A, A B$ 于点 $D, E, F$, 已知 $\triangle D E F \backsim \triangle A B C$, 求证: $P$ 是 $\triangle A B C$ 的重心.
+%%<SOLUTION>%%
+证明:记 $\angle E D C=\alpha, \angle A E F=\beta, \angle B F D= \gamma$,用 $A, B, C$ 分别表示 $\triangle A B C$ 的三个内角的大小.
+则
+$$
+\begin{aligned}
+\angle A F E & =\angle B F E+\angle B E F=(\angle B-\angle D B E)+(\angle D E F-\angle D E B) \\
+& =(\angle B-\angle D B E)+(\angle B-\angle D E B) \cdot 2 B-(\angle D B E+\angle D E B) \\
+& =2 B-\alpha .
+\end{aligned}
+$$
+同理可证: $\angle B D F=2 C-\beta, \angle C E D=2 A-\gamma$.
+现在设 $\triangle D E F$ 和 $\triangle D E C$ 的外接圆半径为 $R_1$ 和 $R_2$, 则由正弦定理及 $\angle E F D=C$, 可知 $2 R_1=\frac{D E}{\sin \angle E F D}=\frac{D E}{\sin C}=2 R_2$, 故 $R_1=R_2$. 类似可得 $\triangle D E F$ 和 $\triangle A E F, \triangle B D F$ 的外接圆半径相等.
+所以 $\triangle D E F, \triangle A E F$, $\triangle B D F$ 和 $\triangle D E C$ 这四个三角形的外接圆半径都相同, 记为 $R$.
+利用正弦定理得:
+$$
+\frac{C E}{\sin \alpha}=\frac{E A}{\sin (2 B-\alpha)}=\frac{A F}{\sin \beta}=\frac{F B}{\sin (2 C-\beta)}=\frac{B D}{\sin \gamma}=\frac{D C}{\sin (2 A-\gamma)}=2 R . \label{eq1}
+$$
+再由 Ceva 定理可知 $\frac{C E}{E A} \cdot \frac{A F}{F B} \cdot \frac{B D}{D C}=1$, 结合上式得
+$$
+\frac{\sin \alpha \sin \beta \sin \gamma}{\sin (2 B-\alpha) \sin (2 C-\beta) \sin (2 A-\gamma)}=1 . \label{eq2}
+$$
+若 $\alpha<B$, 则 $\alpha=\angle E D C<\angle E F A=2 B-\alpha$,于是
+$$
+\begin{aligned}
+\gamma & =180^{\circ}-\angle E F A-\angle E F D=180^{\circ}-\angle E F A-C \\
+& <180^{\circ}-\angle E D C-C=\angle C E D=2 A-\gamma .
+\end{aligned}
+$$
+类似可知 $\beta<2 C-\beta$.
+注意到, 当 $0<x<y<x+y<180^{\circ}$ 时, 有 $\sin x<\sin y$. 所以, 由 $0<\alpha< 2 B-\alpha<\alpha+(2 B-\alpha)=2 B<180^{\circ}$ (这里用到 $\triangle A B C$ 为锐角三角形) 可得 $\sin \alpha<\sin (2 B-\alpha)$, 同理 $\sin \beta<\sin (2 C-\beta), \sin \gamma<\sin (2 A-\gamma)$. 这与 式\ref{eq2} 矛盾.
+类似地,若 $\alpha>B$, 可得 式\ref{eq2}的左边小于右边,矛盾.
+所以, $\alpha=B$. 同理 $\beta=C, \gamma=A$. 因此, 由 式\ref{eq1}可知 $D, E, F$ 分别为 $B C, C A, A B$ 的中点.
+从而, $P$ 为 $\triangle A B C$ 的重心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 如图(<FilePath:./figures/fig-c7i9.png>), $A B$ 为圆 $\omega$ 的直径, 直线 $l$ 切 $\odot \omega$ 于 $A . C 、 M 、 D$ 在 $I$ 上满足 $C M=D M$, 又设 $B C 、 B D$ 交 $\odot \omega$ 于 $P 、 Q, \odot \omega$ 切线 $P R 、 Q R$ 交于 $R$. 求证: $R$ 在 $B M$ 上.
+%%<SOLUTION>%%
+证明:连结 $P A 、 Q A$, 设 $B R$ 交 $\odot \omega$ 于 $T$, 连结
+$P T, Q T$.
+在 $\triangle B M C$ 与 $\triangle B M D$ 中用正弦定理得
+$$
+\frac{\sin \angle C B M}{\sin C}=\frac{C M}{B M}=\frac{D M}{B M}=\frac{\sin \angle D B M}{\sin D} .
+$$
+于是
+$$
+\frac{\sin \angle C B M}{\sin \angle D B M}=\frac{\sin C}{\sin D} \text {. }
+$$
+注意到 $\angle B P A=\angle B A C=\angle B A D=\angle B Q A=90^{\circ}$.
+故
+$$
+\angle C=\angle B A P, \angle D=\angle B A Q .
+$$
+则
+$$
+\frac{\sin \angle C B M}{\sin \angle \overline{D B M}}=\frac{\sin \angle B A P}{\sin \angle B A Q}=\frac{B P}{B Q} . \label{eq1}
+$$
+另一方面, 易知 $\triangle R T P \backsim \triangle R P B, \triangle R T Q \backsim \triangle R Q B$.
+因此
+$$
+\begin{gathered}
+\frac{B P}{P T}=\frac{B R}{P R}=\frac{B R}{Q R}=\frac{B Q}{Q T} . \\
+\frac{B P}{B Q}=\frac{P T}{Q T}=\frac{\sin \angle P B T}{\sin \angle Q B T}=\frac{\sin \angle C B R}{\sin \angle D B R} . \label{eq2}
+\end{gathered}
+$$
+由式\ref{eq1},\ref{eq2}两式知 $\frac{\sin \angle C B M}{\sin \angle D B M}=\frac{\sin \angle C B R}{\sin \angle D B R}$.
+又 $\quad \angle C B M+\angle D B M=\angle C B R+\angle D B R<\pi$.
+由上式易知 $\quad \angle D B M=\angle D B R$.
+(事实上, 上式等价于 $\sin \angle C B D \cot \angle D B M-\cos \angle C B D== \sin \angle C B D \cos \angle D B R-\cos \angle C B D)$.
+所以 $B 、 M 、 R$ 三点共线, 得证.
+%%<REMARK>%%
+注:在有圆的情况下, 角度较易转化, 因此应尽量把线段比化为角度比, 再通过角度比求解题目.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 已知锐角三角形 $A B C, C D$ 是高, 点 $M$ 是 $A B$ 中点.
+过点 $M$ 的直线分别交射线 $C A 、 C B$ 于点 $K 、 L$, 且 $C K=C L$. 求证: 若 $\triangle C K L$ 的外心为点 $S$, 则 $S D=S M$.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c7i10.png>), 不妨设 $A C \geqslant B C$, 易知此时点 $K$ 在 $A C$ 上,点 $L$ 在 $C B$ 延长线上.
+由正弦定理知
+$$
+\frac{A K}{A M}=\frac{\sin \angle A M K}{\sin \angle A K M}, \frac{B L}{B M}=\frac{\sin \angle B M L}{\sin \angle B L M},
+$$
+由对顶角相等及 $\angle A K M+\angle B L M=180^{\circ}$, 得
+$$
+\frac{A K}{A M}=\frac{B L}{B M} \text {, }
+$$
+即 $A K=B L$.
+这样一来,便有
+$$
+C K=C L=\frac{A C+B C}{2}, C S=\frac{C K}{2 \cos \frac{\angle A C B}{2}}=\frac{A C+B C}{4 \cos \frac{\angle A C B}{2}},
+$$
+延长 $C S$ 交 $\triangle A B C$ 外接圆 $\overparen{A B}$ 于点 $E$, 则点 $E$ 为 $\overparen{A B}$ 中点.
+若设 $\triangle A B C$ 外接圆半径为 $R$, 则 $C E=2 R \sin \left(\angle C A B+\frac{\angle A C B}{2}\right)$, 于是
+$$
+\begin{aligned}
+\frac{C E}{C S} & =2 R \sin \left(\angle C A B+\frac{\angle A C B}{2}\right) \cdot \frac{2 \cos \frac{\angle A C B}{2}}{R(\sin \angle A B C+\sin \angle C A B)} \\
+& =\frac{4 \sin \left(\angle C A B+\frac{\angle A C B}{2}\right) \cos \frac{\angle A C B}{2}}{\sin \angle C A B+\sin \angle A B C} \\
+& =\frac{2(\sin (\angle C A B+\angle A C B)+\sin \angle C A B)}{\sin \angle C A B+\sin \angle A B \bar{C}} \\
+& =\frac{2(\sin \angle A B C+\sin \angle C A B)}{\sin \angle C A B+\sin \angle A B C}=2 .
+\end{aligned}
+$$
+这表明, 点 $S$ 为 $C E$ 中点.
+又因为 $M E \perp A B, C D \perp A B$, 故点 $S$ 在 $M D$ 的中垂线上.
+故 $S D=S M$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 如图(<FilePath:./figures/fig-c7i11.png>), 已知 $\triangle A B C, \angle C< \angle A<90^{\circ}, D \in A C$, 且 $B D=B A, \triangle A B C$ 内切圆与 $A B 、 A C$ 分别切于 $K 、 L$. 设 $J$ 是 $\triangle B C D$ 内心.
+证明, $K L$ 平分线段 $A J$.
+%%<SOLUTION>%%
+证明:设 $I$ 为 $\triangle A B C$ 内心, $A I \cap K L=P$, 连结 $I K 、 I L 、 B I 、 B J 、 I J$.
+设 $\triangle A B C$ 内切圆半径为 $r$,三内角为 $A 、 B 、 C$.
+由于 $B I=\frac{r}{\sin \frac{B}{2}}$ 且 $\frac{B I}{\sin \angle B J I}=\frac{I J}{\sin \angle I B J}$,
+$\angle I B J=\frac{\angle A B C-\angle D B C}{2}=\frac{\angle A B D}{2}=\frac{180^{\circ}-2 A}{2}=90^{\circ}-A$,
+$\angle I J B=180^{\circ}-\angle I B J-\angle B I J=180^{\circ}-\left(90^{\circ}-A\right)-\left(90^{\circ}+\frac{A}{2}\right)=\frac{A}{2}$. (这里用到 $C 、 I 、 J$ 三点共线)
+所以 $I J=\frac{B I}{\sin \frac{A}{2}} \sin \left(90^{\circ}-A\right)=\frac{B I}{\sin \frac{A}{2}} \cos A$.
+而 $K L$ 平分 $A J \Leftrightarrow A$ 到 $K L$ 的距离 $=J$ 到 $K L$ 的距离
+$\Leftrightarrow A P-P I=\frac{r \cos A}{\sin \frac{A}{2}}, \label{eq1}$.
+\ref{eq1}式左边 $=r \cot \frac{A}{2} \cos \frac{A}{2}-r \sin \frac{A}{2}=r\left(\frac{\cos ^2 \frac{A}{2}}{\sin \frac{A}{2}}-\sin \frac{A}{2}\right)=r$. $\frac{\cos ^2 \frac{A}{2}-\sin ^2 \frac{A}{2}}{\sin \frac{A}{2}}=\frac{r \cos A}{\sin \frac{A}{2}}=$ \ref{eq1} 式右边.
+故 $K L$ 平分 $A J$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 如图(<FilePath:./figures/fig-c7i12.png>), 凸四边形 $A B F D$ 中, $A B+ B F=A D+D F$. 延长 $A B$ 与 $D F$ 相交于点 $C$, 延长 $A D$ 与 $B F$ 相交于 $E$. 求证: $A C+C F=A E+E F$.
+%%<SOLUTION>%%
+证明:连结 $A F$,并分别记角如图(<FilePath:./figures/fig-c7i12.png>) 所示.
+首先, 在 $\triangle A B F$ 中, 由正弦定理有:
+$$
+\frac{A B}{\sin \gamma}=\frac{B F}{\sin \alpha}=\frac{A F}{\sin (\gamma+\alpha)},
+$$
+所以 $A B+B F=A F \cdot \frac{\sin \gamma+\sin \alpha}{\sin (\gamma+\alpha)}$.
+同理, $A D+D F=A F \cdot \frac{\sin \theta+\sin \beta}{\sin (\theta+\beta)}$.
+所以 $A B+B F=A D+D F \Leftrightarrow \frac{\sin \gamma+\sin \alpha}{\sin (\gamma+\alpha)}=\frac{\sin \theta+\sin \beta}{\sin (\theta+\beta)}\Leftrightarrow \cos \frac{\gamma-\alpha}{2} \cos \frac{\theta+\beta}{2}=\cos \frac{\theta-\beta}{2} \cos \frac{\gamma+\alpha}{2}$
+$$
+\begin{aligned}
+& \Leftrightarrow \cos \frac{\theta+\beta+\gamma-\alpha}{2}+\cos \frac{\theta+\beta-\gamma+\alpha}{2} \\
+& =\cos \frac{\gamma+\alpha+\theta-\beta}{2}+\cos \frac{\gamma+\alpha-\theta+\beta}{2} .
+\end{aligned}
+$$
+另一方面: $A C+C F=A E+E F \Leftrightarrow \frac{\sin \theta+\sin \alpha}{\sin (\theta-\alpha)}=\frac{\sin \gamma+\sin \beta}{\sin (\gamma-\beta)}$,
+$$
+\Leftrightarrow \sin \frac{\theta+\alpha}{2} \sin \frac{\gamma-\beta}{2}=\sin \frac{\gamma+\beta}{2} \sin \frac{\theta-\alpha}{2},
+$$
+即 $-\frac{1}{2}\left[\cos \frac{\theta+\alpha+\gamma-\beta}{2}-\cos \frac{\theta+\alpha-\gamma+\beta}{2}\right]=-\frac{1}{2}\left[\cos \frac{\gamma+\beta+\theta-\alpha}{2}-\right.$
+$$
+\begin{aligned}
+& \left.\cos \frac{\gamma+\beta-\theta+\alpha}{2}\right] \Leftrightarrow \cos \frac{\theta+\alpha+\gamma-\beta}{2}-\cos \frac{\theta+\alpha-\gamma+\beta}{2}=\cos \frac{\gamma+\beta+\theta-\alpha}{2}- \\
+& \cos \frac{\gamma+\beta-\theta+\alpha}{2} .
+\end{aligned}
+$$
+故由 $A B+B F=A D+D F$ 可以推出 $A C+C F=A E+E F$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13. 如图(<FilePath:./figures/fig-c7i13.png>) 已知锐角 $\triangle A B C$ 的垂心为 $H$, 内心为 $I$, 且满足 $A C \neq B C, C H, C I$ 分别与 $\triangle A B C$ 的外接圆交于点 $D 、 L$. 证明: $\angle C I H=90^{\circ}$ 的充分必要条件是 $\angle I D L=90^{\circ}$.
+%%<SOLUTION>%%
+证明:不妨设 $\angle B>\angle A$, 外接圆半径为 $R$,
+所以 $\angle H C L=\angle H C A-\angle I C A=90^{\circ}-$
+$$
+\begin{aligned}
+& \angle A-\frac{\angle C}{2} \\
+= & \frac{1}{2} \cdot\left(180^{\circ}-2 \cdot \angle A-180^{\circ}+\angle A+\angle B\right)=\frac{1}{2} \cdot \mathbf{1 3} \\
+& (\angle B-\angle A) .
+\end{aligned}
+$$
+由正弦定理: $C H=\sin \angle H A C \cdot \frac{A C}{\sin \angle A H C}=\cos \angle C \cdot \frac{A C}{\sin \angle B}=2 R \cdot \cos \angle C $,
+同理,
+$$
+\begin{aligned}
+C I & =\frac{\sin \angle I A C \cdot A C}{\sin \angle A I C}=\frac{\sin \frac{\angle A}{2} \cdot(2 R \sin \angle B)}{\sin \left(90^{\circ}+\angle \frac{B}{2}\right)} \\
+& =\frac{\sin \frac{\angle A}{2} \cdot 4 R \cdot \sin \frac{\angle B}{2} \cdot \cos \frac{\angle B}{2}}{\cos \frac{\angle B}{2}}=4 R \cdot \sin \frac{\angle A}{2} \cdot \sin \frac{\angle B}{2} .
+\end{aligned}
+$$
+$$
+L D=2 R \cdot \sin \angle L C D=2 R \cdot \sin \angle H C I=2 R \cdot \sin \frac{\angle B-\angle A}{2} .
+$$
+由鸡爪定理: $L I=L B=2 R \cdot \sin \angle L C B=2 R \cdot \sin \frac{\angle C}{2}$.
+$$
+\angle C L D=\angle C A D=\angle A+\angle D C B=\angle A+90^{\circ}-\angle B .
+$$
+于是, $\angle I D L=90^{\circ}$ 的充分必要条件是 $L D=L I \cdot \cos \angle D L C$, 即 $2 R \cdot\sin \frac{\angle B-\angle A}{2}=2 R \cdot \sin \frac{\angle C}{2} \cdot \cos \left(90^{\circ}-\angle B+\angle A\right)=2 R \cdot \sin \frac{\angle C}{2} \cdot\sin (\angle B-\angle A)=4 R \cdot \sin \frac{\angle C}{2} \cdot \sin \frac{\angle B-\angle A}{2} \cdot \cos \frac{\angle B-\angle A}{2}$ 或者 $1=2 \cdot \sin \frac{\angle C}{2} \cdot \cos \frac{\angle B-\angle A}{2}$, 这就相当于 $\cos \frac{\angle A+\angle B}{2}=\cos \frac{\angle B-\angle A}{2}$.
+$2 \cdot \sin ^2 \frac{\angle C}{2}$.
+另一方面, $\angle C I H=90^{\circ}$ 即 $C I=C H \cdot \cos \angle I C H$,
+等价于 $4 R \cdot \sin \frac{\angle A}{2} \cdot \sin \frac{\angle B}{2}=\cos \frac{\angle B-\angle A}{2} \cdot 2 R \cdot \cos \angle C$, 消去 $2 R$ 得
+$2 \cdot \sin \frac{\angle A}{2} \cdot \sin \frac{\angle B}{2}=\cos \frac{\angle B-\angle A}{2} \cdot\left(1-2 \cdot \sin ^2 \frac{\angle C}{2}\right)$, 即 $\cos \frac{\angle B-\angle A}{2}-\cos \frac{\angle A+\angle B}{2}=\cos \frac{\angle B-\angle A}{2}\left(1-2 \sin ^2 \frac{\angle C}{2}\right) \Leftrightarrow \cos \frac{\angle A+\angle B}{2}= 2 \cos \frac{\angle B-\angle A}{2} \cdot \sin ^2 \frac{\angle C}{2}$.
+于是 $\angle C I H=90^{\circ}$ 的充要条件是 $\angle I D L=90^{\circ}$.
+%%PROBLEM_END%%
+
+

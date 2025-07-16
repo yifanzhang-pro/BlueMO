@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例4. 平面内两条直线 $l_1 / / l_2$, 它们之间的距离等于 $a$. 一块正方形的硬纸板 $A B C D$ 的边长也等于 $a$. 现将这块硬纸板平放在两条平行线上, 使得 $l_1$ 与 $A B 、 A D$ 都相交, 交点为 $E 、 F ; l_2$ 与 $C B 、 C D$ 都相交, 交点为 $G 、 H$. 设 $\\triangle A E F$ 的周长为 $m_1, \\triangle C G H$ 的周长为 $m_2$. 证明: 无论怎样放置正方形硬纸板 $A B C D, m_1+m_2$ 总是一个定值.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c3i7.png>), 连结 $E H 、 F G$ 得交点 $O$.\n因为点 $H$ 到 $A B 、 l_1$ 距离相等, 所以 $E H$ 平分 $\\angle B E F$, 也平分 $\\angle D H G$.\n又点 $G$ 到 $A D 、 l_1$ 等距离, 所以 $F G$ 平分 $\\angle D F E$, 也平分 $\\angle B G H$.\n由此可知, $O$ 既是 $\\triangle A E F$ 的旁心, 又是 $\\triangle C G H$ 的旁心, 作出两个旁切圆, 易知它们是同心圆.\n设 $P 、 M 、 Q 、 N$ 分别是 $A B 、 A D 、 C D 、 C B$ 上的切点, 易证 $P 、 Q 、 O$ 共线; $M 、 O 、 N$ 共线, 且 $P Q= A D=a, M N=A B=a$.\n由旁心性质(4)知\n$$\nA P=A M=\\frac{1}{2} m_1, C Q=C N=\\frac{1}{2} m_2\n$$\n故 $m_1+m_2=2 A P+2 C Q=2 O M+2 O N=2 M N=2 a$ 为定值.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c3i7.png"
+    ]
+}

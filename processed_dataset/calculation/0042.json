@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题9: 已知 $M=\\left\\{x \\mid x=a^2+1, a \\in \\mathbf{N}^*\\right\\}, N=\\left\\{x \\mid x=b^2-4 b+5, b \\in \\mathbf{N}^*\\right\\}$, 则 $M$ 与 $N$ 的关系是",
+    "solution": "解: $M \\varsubsetneqq N$. 由 $a^2+1=(a+2)^2-4 a+5$ 知 $M \\subseteq N$. 但 $1 \\in N, 1 \\notin M$.",
+    "remark": "",
+    "figures": []
+}

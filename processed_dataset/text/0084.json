@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter9.tex",
+    "text": "整体估计.\n为了估计某个变量的变化范围, 可将其放在若干个变量构成的整体中一起考虑, 从整体上估计它们的取值范围, 进而得到某变量的取值范围.\n这种估计方法称为整体估计.\n整体估计的一种特殊情况是估计平均数: 设 $A_1, A_2, \\cdots, A_n$ 的平均数为 $A$, 则 $A_1, A_2, \\cdots, A_n$ 中至少有一个 $A_i$ 不小于 $A$, 也至少有 - 个 $A_j$ 不大于 $A$.\n平均数估计中的一个重要的工具是\"集合元素关系表\": 设 $X=\\left\\{a_1, a_2\\right.$, $\\left.\\cdots, a_n\\right\\}, A_1, A_2, \\cdots, A_k$ 是 $X$ 的子集.\n所谓\"集合元素关系表\", 是指由 $n$ 行 $k$ 列数构成的如下数表:\n其中 $a_i \\in A_j$ 时, $x_{i j}=1$, 否则, $x_{i j}=0$. 这样,第 $i$ 行中 1 的个数就是元素 $a_i$ 在各子集中出现的次数, 称为 $a_i$ 的度, 记作 $d\\left(a_i\\right)$ 或 $m_i$, 即 $m_i=\\sum_{j=1}^k x_{i j}$.\n第 $j$ 列中 1 的个数就是集合 $A_j$ 中的元素的个数, 即 $\\left|A_j\\right|=\\sum_{i=1}^n x_{i j}$.\n在集合元素关系表中,有两个常用的关系式:\n(1) 考察各元素在 $F$ 中出现的总次数,即表中 1 的个数 $S$, 有\n$$\n\\sum_{i=1}^n m_i=S=\\sum_{j=1}^k\\left|A_j\\right|\n$$\n(2)考察各元素在集合对的交集中出现的总次数 $T$,有\n$$\n\\sum_{i=1}^n \\mathrm{C}_{m_i}^2=T=\\sum_{1 \\leqslant i<j \\leqslant k}\\left|A_i \\cap A_j\\right| .\n$$",
+    "figures": []
+}

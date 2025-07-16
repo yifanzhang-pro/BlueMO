@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 一个圆周上依次有 $A 、 B 、 C 、 D$ 四点, 则其中任一点关于其余三点为顶点的三角形的西摩松线交于一点.",
+    "solution": "设圆为单位圆, $A 、 B 、 C 、 D$ 对应的复数分别为 $t_1 、 t_2 、 t_3 、 t_4$. 则 $t_1$ 关于 $\\triangle B C D$ 的西摩松线方程为\n$$\nt_1 z-t_2 t_3 t_4 \\bar{z}=\\frac{1}{2 t_1}\\left[t_1^3+\\left(t_2+t_3+t_4\\right) t_1^2-\\left(t_3 t_4+t_4 t_2+t_2 t_3\\right) t_1-t_2 t_3 t_4\\right],\n$$\n将 $z=\\frac{1}{2}\\left(t_1+t_2+t_3+t_4\\right)$ 及 $\\bar{z}=\\frac{1}{2}\\left(\\overline{t_1}+\\overline{t_2}+\\overline{t_3}+\\overline{t_4}\\right)= \\frac{t_2 t_3 t_4+t_3 t_4 t_1+t_4 t_1 t_2+t_1 t_2 t_3}{2 t_1 t_2 t_3 t_4}$ 代入 (1) 式, 发现确实满足, 由于 $\\frac{1}{2}\\left(t_1+t_2+t_3+\\right. \\left.t_4\\right)$ 是一对称式,故另三条西摩松线也经过此点,证毕.",
+    "remark": "注:这一结论称为安宁定理, 若不用复数, 也许更费口舌.",
+    "figures": []
+}

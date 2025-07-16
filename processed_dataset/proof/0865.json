@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例9 证明: 函数 $f(x)=\\sin x^2$ 不是周期函数.",
+    "solution": "证我们常用反证法来证明某个函数不是周期函数.\n假设 $f(x)=\\sin x^2$ 是周期函数, $T$ 是它的一个正周期, 那么对每个 $x \\in \\mathbf{R}$, 有\n$$\n\\sin (x+T)^2=\\sin x^2 .\n$$\n令 $x=0$, 得 $\\sin T^2=0$. 所以 $T^2=k \\pi, T=\\sqrt{k \\pi}$, 其中 $k$ 是某个正整数, 代入(1)式, 得\n$$\n\\sin (x+\\sqrt{k \\pi})^2=\\sin x^2 .\n$$\n在(2)中令 $x=\\sqrt{2} T(=\\sqrt{2 k \\pi})$, 得\n$$\n\\sin (\\sqrt{2} T+T)^2=\\sin (\\sqrt{2} T)^2,\n$$\n即\n$$\n\\sin \\left[(\\sqrt{2}+1)^2 k \\pi\\right]=\\sin 2 k \\pi=0 .\n$$\n所以\n$$\n\\begin{gathered}\n(\\sqrt{2}+1)^2 k \\pi=l \\pi(l \\in \\mathbf{N}), \\\\\n(\\sqrt{2}+1)^2=\\frac{l}{k} .\n\\end{gathered}\n$$\n由于 $(\\sqrt{2}+1)^2=3+2 \\sqrt{2}$ 是无理数, 而 $\\frac{l}{k}$ 是有理数, 矛盾.\n因此 $f(x)=\\sin x^2$ 不是周期函数.",
+    "remark": "",
+    "figures": []
+}

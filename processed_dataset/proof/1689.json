@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例7. 在凸五边形 $A B C D E$ 中, $\\angle A E D=\\angle A B C=90^{\\circ}, \\angle B A C= \\angle E A D . B D \\cap C E=F$. 求证: $A F \\perp B E$.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c2i12.png>), 过点 $A$ 作 $A H \\perp B E$ 于 $H$,于是只需证明 $A H 、 B D 、 C E$ 三线共点.\n因为 $\\triangle A B C \\backsim \\triangle A E D$, 所以\n$$\n\\frac{A B}{A E}=\\frac{A C}{A D}=\\frac{B C}{D E} .\n$$\n又 $\\angle B A C=\\angle E A D$, 则\n$$\n\\angle B A D=\\angle C A E \\text {. }\n$$\n所以 $S_{\\triangle A B D}=S_{\\triangle A C E}$.\n故\n$$\n\\frac{\\sin \\angle A B D}{\\sin \\angle C E A}=\\frac{A E \\cdot E C}{A B \\cdot B D} . \\label{eq1}\n$$\n在 $\\triangle B C E$ 和 $\\triangle B D E$ 中应用正弦定理有\n$$\n\\frac{\\sin \\angle B E C}{\\sin \\angle E B C}=\\frac{B C}{E C}, \\frac{\\sin \\angle B E D}{\\sin \\angle D B E}=\\frac{B D}{E D} . \\label{eq2}\n$$\n又 $\\angle H A B=\\angle E B C, \\angle E A H=\\angle B E D$, 则\n$$\n\\begin{aligned}\n& \\frac{\\sin \\angle E A H}{\\sin \\angle H A B} \\cdot \\frac{\\sin \\angle A B D}{\\sin \\angle D B E} \\cdot \\frac{\\sin \\angle B E C}{\\sin \\angle C E A} \\\\\n= & \\frac{\\sin \\angle B E D}{\\sin \\angle E B C} \\cdot \\frac{\\sin \\angle A B D}{\\sin \\angle D B E} \\cdot \\frac{\\sin \\angle B E C}{\\sin \\angle C E A} \\\\\n= & \\frac{\\sin \\angle B E D}{\\sin \\angle D B E} \\cdot \\frac{\\sin \\angle A B D}{\\sin \\angle C E A} \\cdot \\frac{\\sin \\angle B E C}{\\sin \\angle E B C} \\\\\n= & \\frac{B D \\cdot A E \\cdot E C \\cdot B C}{E D \\cdot A B \\cdot B D \\cdot E C}=\\frac{A E \\cdot B C}{E D \\cdot A B}=1 .\n\\end{aligned}\n$$\n由关于 $\\triangle A B E$ 的角元塞瓦定理的逆定理知 $A H 、 B D 、 C E$ 三线共点 $F$. 因为 $A H \\perp B E$, 所以 $A F \\perp B E$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2i12.png"
+    ]
+}

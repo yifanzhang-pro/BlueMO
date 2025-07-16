@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题10 设 $a_j 、 b_j 、 c_j$ 为整数, 这里 $1 \\leqslant j \\leqslant N$, 且对任意的 $j$, 数 $a_j 、 b_j 、 c_j$ 中至少有一个为奇数.\n证明: 存在一组数 $r 、 s 、 t$, 使得集合 $ \\{r a_j+s b_j+t c_j \\mid 1 \\leqslant j \\leqslant N\\}$ 中, 至少有 $\\frac{4 N}{7}$ 个数为奇数.",
+    "solution": "考虑不全为零的 7 个数组 $(x, y, z)$, 其中 $x, y, z \\in\\{0,1\\}$. 容易证明: 若 $a_j 、 b_j 、 c_j$ 不全为偶数, 则集合 $A_j=\\{x a_j+y b_j+z c_j \\mid x, y, z \\in\\{0,1\\}\\}$ 中恰有 4 个为偶数, 也恰有 4 个为奇数, 这里 $1 \\leqslant j \\leqslant N$. 当然, 在 $x=y= z=0$ 时, $x a_j+y b_j+z c_j$ 为偶数.\n由此可知 $ \\{x a_j+y b_j+z c_j \\mid x, y, z \\in\\{0,1\\}, x 、 y, z$ 不全为零, $1 \\leqslant j \\leqslant N\\}$ 中, 恰有 $4 N$ 个数为奇数.\n于是, 由抽庶原则, 可知存在一组数 $(x, y, z), x, y, z \\in\\{0,1\\}, x 、 y 、 z$ 不全为零, 使得 $\\left\\{x a_j+y b_j+z c_j \\mid 1 \\leqslant j \\leqslant N\\right\\}$ 中至少有 $\\frac{4 N}{7}$ 个数为奇数.",
+    "remark": "",
+    "figures": []
+}

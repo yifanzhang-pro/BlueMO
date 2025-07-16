@@ -1,0 +1,277 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. $\triangle A B C$ 是一个三角形.
+一个过 $A 、 B$ 的圆交边 $A C 、 B C$ 于点 $D 、 E, A B$ 、 $D E$ 交于点 $F, B D 、 C F$ 交于点 $M$. 求证 : $M F=M C$. 的充要条件是 $M B$. $M D=M C^2$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c2a1.png>), 因为 $A 、 B 、 E 、 D$ 四点共圆, 所以, $\angle C B D=\angle E A D$. 又 $A C 、 B M 、 F E$ 交于点 $D$, 由塞瓦定理有 $\frac{F A}{A B} \cdot \frac{B E}{E C} \cdot \frac{C M}{M F}=1$. 因此, $M F=$
+$$
+M C \Leftrightarrow \frac{F A}{A B} \cdot \frac{B E}{E C}=1 \Leftrightarrow A E / / C F \Leftrightarrow \angle F C A=\angle E A C=\angle M B C \Leftrightarrow \triangle M C D \backsim
+$$
+$\triangle M B C \Leftrightarrow M B \cdot M D=M C^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. $M 、 N 、 P$ 分别是 $\triangle A B C$ 的三边 $B C 、 C A 、 A B$ 的中点, $M_1 、 N_1 、 P_1$ 在 $\triangle A B C$ 的边上, 且满足 $M M_1 、 N N_1 、 P P_1$ 分别平分 $\triangle A B C$ 的周长.
+证明: $M M_1 、 N N_1 、 P P_1$ 交于同一点 $K$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c2a2.png>),不妨设 $B C=a, A B=c$, $A C=b$, 且 $a \geqslant c \geqslant b$. 由 $M 、 N 、 P$ 为 $\triangle A B C$ 三边中点, 有 $\frac{P M_2}{P N}=\frac{P M_2}{B M}=\frac{P M_1}{B M_1}=\frac{\frac{b+c}{2}-\frac{c}{2}}{\frac{b+c}{2}}= \frac{b}{b+c}$, 故 $\frac{P M_2}{M_2 N}=\frac{b}{c}$. 同理, $\frac{N P_2}{P_2 M}=\frac{a}{b}, \frac{M N_2}{N_2 P}=\frac{c}{a}$.
+所以, $\frac{P M_2}{M_2 N} \cdot \frac{N P_2}{P_2} \cdot \frac{M N_2}{N_2 P}=1$, 因此, $M M_1 、 N N_1$ 、 $P P_1$ 交于同一点 $K$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 已知直线上的三个定点依次为 $A 、 B 、 C, \Gamma$ 为过 $A 、 C$ 且圆心不在 $A C$ 上的圆.
+分别过 $A 、 C$ 两点且与圆 $\Gamma$ 相切的直线交于点 $P, P B$ 与圆 $\Gamma$ 交于点 $Q$. 证明: $\angle A Q C$ 的平分线与 $A C$ 的交点不依赖于圆 $\Gamma$ 的选取.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c2a3.png>), 假设 $\angle A Q C$ 的平分线交 $A C$ 于点 $R$, 交圆 $\Gamma$ 于点 $S$, 其中 $S$ 与 $Q$ 是不同的两点.
+因为 $\triangle P A C$ 是等腰三角形, 所以, $\frac{A B}{B C}=\frac{\sin \angle A P B}{\sin \angle C P B}$, 同理,在 $\triangle A S C$ 中, $\frac{A R}{R C}=\frac{\sin \angle A S Q}{\sin \angle C S Q}$. 在 $\triangle P A C$ 中, 视 $Q$ 为其塞瓦点.
+由角元塞瓦定理, 有 $\frac{\sin \angle A P B}{\sin \angle C P B} \cdot \frac{\sin \angle Q A C}{\sin \angle Q A P}$.
+$\frac{\sin \angle Q C P}{\sin \angle Q C A}=1$. 因为 $\angle P A Q=\angle A S Q=\angle Q C A$,
+$\angle P C Q=\angle C S Q=\angle Q A C$, 则 $\frac{\sin \angle A P B}{\sin \angle C P B}=\frac{\sin \angle P A Q \cdot \sin \angle Q C A}{\sin \angle Q A C \cdot \sin \angle P C Q}= \frac{\sin ^2 \angle A S Q}{\sin ^2 \angle C S Q}$. 故 $\frac{A B}{B C}=\frac{A R^2}{R C^2}$. 因此, 点 $R$ 不依赖于圆 $T$ 的选取.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 已知非等边 $\triangle A B C, \angle A 、 \angle B 、 \angle C$ 的平分线分别交对边于点 $A^{\prime} 、 B^{\prime}$ 、 $C^{\prime} . A A^{\prime}$ 的中垂线与 $B C$ 交于点 $A^{\prime \prime}, B B^{\prime}$ 的中垂线与 $A C$ 交于点 $B^{\prime \prime}, C C^{\prime}$ 的中垂线交于点 $C^{\prime \prime}$. 证明: $A^{\prime \prime} 、 B^{\prime \prime} 、 C^{\prime \prime}$ 三点共线.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c2a4.png>), 注意到 $\angle B A A^{\prime}=\angle A^{\prime} A C$, $\angle A^{\prime \prime} A A^{\prime}=\angle A^{\prime \prime} A^{\prime} A$. 相减得 $\angle A^{\prime \prime} A B=\angle C$. 于是, $A A^{\prime \prime}$ 为 $\triangle A B C$ 外接圆的切线.
+从而, $\triangle A A^{\prime \prime} B \backsim \triangle C A^{\prime \prime} A$. 故 $\frac{B A^{\prime \prime}}{A^{\prime \prime} C}=\frac{B A^{\prime \prime}}{A A^{\prime \prime}} \cdot \frac{A A^{\prime \prime}}{A^{\prime \prime} C}=\left(\frac{A B}{A C}\right)^2$. 同理, $\frac{C B^{\prime \prime}}{B^{\prime \prime} A}=\left(\frac{B C}{B A}\right)^2, \frac{A C^{\prime \prime}}{C^{\prime \prime} B}=\left(\frac{A C}{C B}\right)^2$. 所以, $\frac{B A^{\prime \prime}}{A^{\prime \prime} C} \cdot \frac{C B^{\prime \prime}}{B^{\prime \prime} A}$.
+$\frac{A C^{\prime \prime}}{C^{\prime \prime} B}=\left(\frac{A B}{A C} \cdot \frac{B C}{A B} \cdot \frac{A C}{C B}\right)^2=1$. 由梅涅劳斯逆定理知 $A^{\prime \prime} 、 B^{\prime \prime} 、 C^{\prime}$ 三点共线.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 已知 $\triangle A B C$ 的三边 $B C 、 C A 、 A B$ 上各有一点 $D 、 E 、 F$, 且满足 $A D$ 、 $B E 、 C F$ 交于一点 $G$. 若 $\triangle A G E 、 \triangle C G D 、 \triangle B G F$ 的面积相等, 证明: $G$ 是 $\triangle A B C$ 的重心.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c2a5.png>), 设 $\frac{A F}{F B}=x, \frac{B D}{D C}=y, \frac{C E}{E A}=z$. 由塞瓦定理得 $x y z==1$. 对于 $\triangle B F C$ 和直线 $A G D$ 应用梅涅劳斯定理有 $\frac{F G}{G C} \cdot \frac{C D}{D B} \cdot \frac{B A}{A F}=1$. 则 $\frac{F G}{G C}=\frac{B D}{D C} \cdot \frac{A F}{B A}= y \cdot \frac{x}{1+x}=\frac{x y}{1+x}$. 所以, $\frac{F G}{F C}=\frac{x y}{1+x+x y}$. 故 $S_{\triangle B F G}= \frac{F G}{F C} S_{\triangle B F C}=\frac{F G}{F C} \cdot \frac{B F}{A B} S_{\triangle A B C}=\frac{x y}{(1+x+x y)(1+x)} S_{\triangle A B C}$.
+同理, $S_{\triangle C D G}=\frac{y z}{(1+y+y z)(1+y)} S_{\triangle A B C}$. 于是, $\frac{x y}{(1+x+x y)(1+x)}= \frac{y z}{(1+y+y z)(1+y)}$, 即 $x(1+y+y z)(1+y)=z(1+x+x y)(1+x)$. 因为 $x(1+y+y z)=x+x y+x y z=x+x y+1$, 所以, $1+y=z(1+x)=z+ z x$. 同理, $1+z=x+x y, 1+x=y+y z$. 三式相加得 $3=x y+y z+z x \geqslant 3 \sqrt[3]{x y \cdot y z \cdot z x}=3$. 当且仅当 $x y=y z=z x$ 时, 上式等号成立.
+所以, $x y= y z=z x$. 从而, $x=y=z$. 又 $x y z=1$, 则 $x=y=z=1$. 因此, $D 、 E 、 F$ 是三边的中点.
+故 $G$ 是 $\triangle A B C$ 的重心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $\triangle A B C$ 的边 $A B$ 的中点为 $N, \angle A>\angle B, D$ 是射线 $A C$ 上一点, 满足 $C D=B C, P$ 是射线 $D N$ 上一点, 且与点 $A$ 在边 $B C$ 的同侧, 满足
+$\angle P B C=\angle A, P C$ 与 $A B$ 交于点 $E, B C$ 与 $D P$ 交于点 $T$. 求表达式 $\frac{B C}{T C}- \frac{E A}{E B}$ 的值.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c2a6.png>), 延长 $B P$ 交直线 $A C$ 于 $F$. 于是, $\triangle A C B \backsim \triangle B C F$. 从而, $A C \cdot C F=B C^2$. 故 $C F=\frac{B C^2}{A C}$. 注意到直线 $D T N$ 截 $\triangle A B C$, 应用梅涅劳斯定理得 $\frac{A N}{N B}$ ・ $\frac{B T}{T C} \cdot \frac{C D}{D A}=1$. 则 $\frac{B T}{T C}=\frac{D A}{C D} \cdot \frac{B N}{A N}=\frac{D A}{C D}=\frac{A C}{B C}+1$. 故 $\frac{B C}{T C}=\frac{B T}{T C}+1=\frac{A C}{B C}+2$. 同理, 由直线 $D N P$ 截 $\triangle A B F$, 得 $\frac{F P}{P B} \cdot \frac{B N}{N A} \cdot \frac{A D}{D F}=1$. 由直线 $C E P$ 截 $\triangle A B F$, 得 $\frac{F P}{P B} \cdot\frac{B E}{E A} \cdot \frac{A C}{C F}=1$. 故 $\frac{E A}{B E}=\frac{F P}{P B} \cdot \frac{A C}{C F}=\frac{A N}{B N} \cdot \frac{F D}{A D} \cdot \frac{A C}{C F}= \frac{F D}{A D} \cdot \frac{A C}{C F}=\frac{\frac{B C^2}{A C}+B C}{A C+B C} \cdot \frac{A C}{\frac{B C^2}{A C}}=\frac{B C}{A C} \cdot \frac{A C^2}{B C^2}=\frac{A C}{B C}$. 因此, $\frac{B C}{T C}-\frac{E A}{B E}=2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 已知点 $B 、 C$ 分别在由点 $A$ 引出的两条射线上, 且 $A B+A C$ 为一定值.
+求证: $\triangle A B C$ 的外接圆恒过不依赖于点 $B 、 C$ 的点 $D(D \neq A)$.
+%%<SOLUTION>%%
+证明: 作 $\triangle A B C$ 的外接圆, 交 $\angle B A C$ 的平分线于点 $D$. 下面证明: $D$ 是不依赖于点 $B 、 C$ 的定点.
+连结 $B C 、 B D 、 C D$. 在 $\triangle B C D$ 中, 由正弦定理得
+$\frac{B C}{\sin A}=\frac{B D}{\sin \frac{A}{2}}=\frac{C D}{\sin \frac{A}{2}} \cdots$ (1). 对圆内接四边形 $A B C D$ 应用托勒密定理得 $A B \cdot C D+A C \cdot B D=B C \cdot A D \cdots$ (2). 将式 (1) 代入式 (2) 得 $A D=(A B+A C) \frac{\sin \frac{A}{2}}{\sin A}=\frac{A B+A C}{2 \cos \frac{A}{2}}$ 为定值.
+故所证结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 已知凸六边形 $A_1 A_2 A_3 A_4 A_5 A_6$ 所有的角都是钝角, 圆 $\Gamma_i(1 \leqslant i \leqslant 6)$ 的圆心为 $A_i$, 且圆 $\Gamma_i$ 分别与圆 $\Gamma_{i-1}$ 和圆 $\Gamma_{i+1}$ 相外切, 其中, $\Gamma_0=\Gamma_6, \Gamma_1= \Gamma_7$. 设过圆 $\Gamma_1$ 的两个切点所连直线与过圆 $\Gamma_3$ 的两个切点所连直线相交, 且过这个交点与点 $A_2$ 的直线为 $e$; 类似地, 由圆 $\Gamma_3$ 、圆 $\Gamma_5$ 和 $A_4$ 定义直线 $f$, 由圆 $\Gamma_5$ 、圆 $\Gamma_1$ 和 $A_6$ 定义直线 $g$. 证明 $: e 、 f 、 g$ 三线共点.
+%%<SOLUTION>%%
+证明: 记这六个切点分别为 $B_1 、 B_2 、 B_3$ 、 $B_4 、 B_5 、 B_6$, 如图(<FilePath:./figures/fig-c2a8.png>), 设 $B_1 B_2 、 B_3 B_4 、 B_5 B_6$ 两两交于点 $P 、 Q 、 R$. 连结 $B_1 B_6 、 B_4 B_5 、 B_2 B_3$. 由角元塞瓦定理得 $\frac{\sin \angle B_1 P A_6}{\sin \angle A_6 P B_6} \cdot \frac{\sin \angle P B_6 A_6}{\sin \angle A_6 B_6 B_1}$. $\frac{\sin \angle B_6 B_1 A_6}{\sin \angle A_6 B_1 P}=1 \cdots$ (1). 又 $A_6 B_6=A_6 B_1$, 则 $\angle A_6 B_6 B_1=\angle A_6 B_1 B_6$. 故式 (1) 为 $\frac{\sin \angle B_1 P A_6}{\sin \angle A_6 P B_6}$.
+$\frac{\sin \angle P B_6 A_6}{\sin \angle A_6 B_1 P}=1$. 完全类似地得 $\frac{\sin \angle B_5 R A_4}{\sin \angle A_4 R B_4} \cdot \frac{\sin \angle R B_4 A_4}{\sin \angle A_4 B_5 R}=1, \frac{\sin \angle B_3 Q A_2}{\sin \angle A_2 Q B_2}$. $\frac{\sin \angle Q B_2 A_2}{\sin \angle A_2 B_3 Q}=1$. 以上三式相乘并由 $\angle P B_6 A_6=\angle A_5 B_6 B_5=\angle A_5 B_5 B_6= \angle R B_5 A_4, \angle R B_4 A_4=\angle A_3 B_4 B_3=\angle A_3 B_3 B_4=\angle Q B_3 A_2, \angle Q B_2 A_2= \angle A_1 B_2 B_1=\angle A_1 B_1 B_2=\angle P B_1 A_6$, 得 $\frac{\sin \angle B_1 P A_6}{\sin \angle A_6 P B_6} \cdot \frac{\sin \angle B_5 R A_4}{\sin \angle A_4 R B_4}$. $\frac{\sin \angle B_3 Q A_2}{\sin \angle A_2 Q B_2}=1$. 由角元塞瓦定理的逆定理知, $P A_6 、 Q A_2 、 R A_4$ 三线共点, 即 $e 、 f 、 g$ 三线共点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 设正方形 $P Q R S$ 内接于 $\triangle A B C$, 其顶点 $P$ 和 $Q$ 在边 $B C$ 上, 顶点 $R$ 和 $S$ 分别在边 $C A$ 和 $A B$ 上, 记其中心为 $A_1$. 同样地, 定义两个顶点分别在边 $C A$ 和 $A B$ 上的内接正方形的中心依次为 $B_1$ 和 $C_1$. 求证: 直线 $A A_1$ 、 $B B_1 、 C C_1$ 三线共点.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c2a9.png>),连结 $S A_1 、 R A_1$. 于是, $S A_1=R A_1$. 由正弦定理有
+$$
+\frac{\sin \angle S A A_1}{\sin \angle A S A_1}=\frac{S A_1}{A A_1}=\frac{R A_1}{A A_1}=\frac{\sin \angle A_1 A R}{\sin \angle A R A_1},
+$$
+则 $\frac{\sin \angle B A A_1}{\sin \angle A_1 A C}=\frac{\sin \angle A S A_1}{\sin \angle A R S_1}$. 因为 $A_1$ 为正方形
+$P Q R S$ 的中心, 所以, $\angle S R A_1=\angle R S A_1=45^{\circ}$. 又因为 $S R / / B C$, 所以, $\angle A S R=\angle B, \angle A R S=\angle C$. 则 $\angle A S A_1=\angle B+45^{\circ}, \angle A R A_1=\angle C+45^{\circ}$.
+从而, $\frac{\sin \angle B A A_1}{\sin \angle A_1 A C}=\frac{\sin \left(B+45^{\circ}\right)}{\sin \left(C+45^{\circ}\right)}$. 同理, $\frac{\sin \angle A C C_1}{\sin \angle C_1 C B}=\frac{\sin \left(A+45^{\circ}\right)}{\sin \left(B+45^{\circ}\right)}$,
+$$
+\frac{\sin \angle C B B_1}{\sin \angle B_1 B A}=\frac{\sin \left(C+45^{\circ}\right)}{\sin \left(A+45^{\circ}\right)} \text {. 故 } \frac{\sin \angle B A A_1}{\sin \angle A_1 A C} \cdot \frac{\sin \angle A C C_1}{\sin \angle C_1 C B} \cdot \frac{\sin \angle C B B_1}{\sin \angle B_1 B A}=1 \text {. }
+$$
+由角元 Ceva 定理的逆定理知结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 在 $\triangle A B C$ 内部给定三点 $D 、 E 、 F$, 使得 $\angle B A E=\angle C A F, \angle A B D= \angle C B F$. 求证: $A D 、 B E 、 C F$ 三线共点的充分必要条件是 $\angle A C D= \angle B C E$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c2a10.png>), 记 $\angle B A E=\angle C A F=\alpha$, $\angle A B D=\angle C B F=\beta, \angle A C D=x, \angle B C E=y$. 对 $\triangle A B C$ 分别与点 $D 、 E 、 F$ 应用角元塞瓦定理有
+$$
+\begin{aligned}
+1 & =\frac{\sin \angle B A D}{\sin \angle D A C} \cdot \frac{\sin \angle A C D}{\sin \angle D C B} \cdot \frac{\sin \angle C B D}{\sin \angle D B A} \\
+& =\frac{\sin \angle B A D}{\sin \angle D A C} \cdot \frac{\sin x}{\sin (C-x)} \cdot \frac{\sin (B-\beta)}{\sin \beta}, \\
+1 & =\frac{\sin \angle A C F}{\sin \angle F C B} \cdot \frac{\sin \angle C B F}{\sin \angle F B A} \cdot \frac{\sin \angle B A F}{\sin \angle F A C} \\
+& =\frac{\sin \angle A C F}{\sin \angle F C B} \cdot \frac{\sin \beta}{\sin (B-\beta)} \cdot \frac{\sin (A-\alpha)}{\sin \alpha}, \\
+1 & =\frac{\sin \angle C B E}{\sin \angle E B A} \cdot \frac{\sin \angle B A E}{\sin \angle E A C} \cdot \frac{\sin \angle A C E}{\sin \angle E C B} \\
+& =\frac{\sin \angle C B E}{\sin \angle E B A} \cdot \frac{\sin \alpha}{\sin (A-\alpha)} \cdot \frac{\sin (C-y)}{\sin y} .
+\end{aligned}
+$$
+将三式相乘并整理得
+$1=\frac{\sin \angle B A D}{\sin \angle D A C} \cdot \frac{\sin \angle A C F}{\sin \angle F C B} \cdot \frac{\sin \angle C B E}{\sin \angle E B A}=\frac{\sin (C-x)}{\sin x} \cdot \frac{\sin y}{\sin (C-y)}$.
+即 $\sin C \cdot \cot x-\cos C=\sin C \cdot \cot y-\cos C, \cot x=\cot y, x=y$.
+由角元 Ceva 定理及其逆定理知, $A D 、 B E 、 C F$ 共线的充要条件是 $x= y$, 即 $\angle A C D=\angle B C E$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 以 $\triangle A B C$ 的三边各为一边, 分别在形外作 $\triangle C B D 、 \triangle C A E 、 \triangle A B F$, 使得 $\angle B A F=\angle C A E, \angle A B F=\angle C B D, \angle A C E=\angle B C D$.
+求证: $A D 、 B E 、 C F$ 三线共点.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c2a11.png>), 记 $\angle B A F=\angle C A E=\alpha$, $\angle A B F=\angle C B D=\beta, \angle B C D=\angle A C E=\gamma$.
+关于 $\triangle A B C$ 分别与点 $D 、 E 、 F$ 应用角元塞瓦定理有 $\frac{\sin \angle B A D}{\sin \angle D A C} \cdot \frac{\sin \angle A C D}{\sin \angle D C B} \cdot \frac{\sin \angle C B D}{\sin \angle D B A}=1$. 则 $\frac{\sin \angle B A D}{\sin \angle D A C}=\frac{\sin \gamma \cdot \sin (B+\beta)}{\sin (C+\gamma) \cdot \sin \beta}$.
+同理, $\frac{\sin \angle A C F}{\sin \angle F C B}=\frac{\sin \beta \cdot \sin (A+\alpha)}{\sin (B+\beta) \cdot \sin \alpha}$,
+$$
+\frac{\sin \angle C B E}{\sin \angle E B A}=\frac{\sin \alpha \cdot \sin (C+\gamma)}{\sin (A+\alpha) \cdot \sin \gamma} \text {. }
+$$
+以上三式相乘得 $\frac{\sin \angle B A D}{\sin \angle D A C} \cdot \frac{\sin \angle A C F}{\sin \angle F C B} \cdot \frac{\sin \angle C B E}{\sin \angle E B A}=1$.
+由角元 Ceva 定理的逆定理知结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 锐角 $\triangle A B C$ 内接于圆 $O$, 分别过点 $B 、 C$ 作圆 $O$ 的切线, 并分别交过点 $A$ 所作圆 $O$ 的切线于点 $M 、 N, A D$ 为边 $B C$ 上的高.
+求证: $A D$ 平分 $\angle M D N$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c2a12.png>), 记 $\angle M D A=\alpha, \angle N D A=\beta$. 只需证明 $\alpha=\beta$.
+因为 $M N 、 M B 、 N C$ 都是圆 $O$ 的切线,所以,
+$$
+\begin{gathered}
+\angle M A B=\angle M B A=\angle A C B, \\
+\angle N A C=\angle N C A=\angle A B C .
+\end{gathered}
+$$
+对 $\triangle D A B$ 和点 $M$ 应用角元塞瓦定理有
+$$
+\begin{aligned}
+1 & =\frac{\sin \angle A D M}{\sin \angle M D B} \cdot \frac{\sin \angle D B M}{\sin \angle M B A} \cdot \frac{\sin \angle B A M}{\sin \angle M A D} \\
+& =\frac{\sin \alpha}{\cos \alpha} \cdot \frac{\sin (B+C)}{\sin \angle M A D} \\
+& =\tan \alpha \cdot \frac{\sin (B+C)}{\sin \angle M A D} . 
+\end{aligned} \label{eq1}
+$$
+同理,对 $\triangle D A C$ 和点 $N$ 应用角元塞瓦定理又有
+$$
+1=\tan \beta \cdot \frac{\sin (B+C)}{\sin \angle N A D} . \label{eq2}
+$$
+比较式\ref{eq1}、\ref{eq2}即得 $\tan \alpha=\tan \beta$.
+因此, $\alpha=\beta$, 即 $A D$ 平分 $\angle M D N$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 在四边形 $A B C D$ 中, 对角线 $A C$ 平分 $\angle B A D$. 在 $C D$ 上取一点 $E, B E$ 与 $A C$ 相交于 $F$, 延长 $D F$ 交 $B C$ 于 $G$. 求证: $\angle G A C=\angle E A C$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c2a13.png>),考虑直线 $G F D$ 截 $\triangle B C E$, 由梅氏定理知 $1=\frac{B G}{G C} \cdot \frac{C D}{D E} \cdot \frac{E F}{F B}= \frac{S_{\triangle A B G}}{S_{\triangle A C G}} \cdot \frac{S_{\triangle A C D}}{S_{\triangle A D E}} \cdot \frac{S_{\triangle A E F}}{S_{\triangle A F B}}$. 设 $\angle B A C=\angle D A C=\theta, \angle G A C=\alpha, \angle E A C=\beta$, 则
+$$
+\frac{S_{\triangle A B G}}{S_{\triangle A O G}}=\frac{A B \cdot \sin (\theta-\alpha)}{A C \cdot \sin \alpha}, \frac{S_{\triangle A C D}}{S_{\triangle A D E}}=\frac{A C \cdot \sin \theta}{A E \cdot \sin (\theta-\beta)}, \frac{S_{\triangle A E F}}{S_{\triangle A F B}}=\frac{A E \cdot \sin \beta}{A B \cdot \sin \theta} .
+$$
+所以, $\sin \alpha \cdot \sin (\theta-\beta)=\sin \beta \cdot \sin (\theta-\alpha), \sin \alpha \cdot \sin \theta \cdot \cos \beta-\sin \alpha \cos \theta \cdot \sin \beta=\sin \beta \cdot \sin \theta \cdot \cos \alpha-\sin \beta \cdot \cos \theta \cdot \sin \alpha, \tan \alpha=\tan \beta$, 显然 $\alpha, \beta \in(0$, $\pi), \alpha=\beta$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 设三角形 $A B C$ 的两条角平分线为 $B E, C F$, 求证: 若 $B E=C F$, 则 $A B=A C$. 
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c2a14.png>), 由 Stewart 定理知, $B E^2=B A \cdot B C-E A \cdot E C, C F^2= C B \cdot C A-F B \cdot F A$.
+设 $A B=c, B C=a, C A=b$, 则 $E A \cdot E C^{\prime}=\frac{b c}{a+c} \cdot \frac{a b}{a+c}, F B \cdot F A==\frac{a c}{a+b} \cdot \frac{b c}{a+b}$, 从而, $a c-\frac{a b^2 c}{(a+c)^2}=a b-\frac{a b c^2}{(a+b)^2}$, 化简后有 $c-b=b c \cdot \frac{(b-c)\left(a^2+b^2+c^2+2 a b+2 a c+b c\right)}{(a+b)^2(a+c)^2}, * *$
+若 $c>b$, 则 $*$ 左边 $>0$, 右边 $<0$;
+若 $c<b$, 则 $*$ 左边 $<0$, 右边 $>0$;
+故 $c=b$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 在 $\triangle A B C$ 中, $A B=A C, \angle A=20^{\circ}$, 在边 $A B 、 A C$ 上分别取点 $D 、 E$, 使得 $\angle E B C=60^{\circ}, \angle D C B=50^{\circ}$. 求 $\angle B E D$ 的度数.
+%%<SOLUTION>%%
+解: 如图(<FilePath:./figures/fig-c2a15.png>), 设 $\angle B E D=x$, 于是, $\angle C E D=40^{\circ}+x$. 对 $\triangle B C E$ 和点 $D$ 应用角元塞瓦定理有
+$$
+\begin{aligned}
+1 & =\frac{\sin \angle B C D}{\sin \angle D C E} \cdot \frac{\sin \angle C E D}{\sin \angle D E B} \cdot \frac{\sin \angle E B D}{\sin \angle D B C} \\
+& =\frac{\sin 50^{\circ}}{\sin 30^{\circ}} \cdot \frac{\sin \left(x+40^{\circ}\right)}{\sin x} \cdot \frac{\sin 20^{\circ}}{\sin 80^{\circ}} .
+\end{aligned}
+$$
+则 $\frac{\sin \left(x+40^{\circ}\right)}{\sin x}=\frac{\sin 80^{\circ}}{2 \cos 40^{\circ} \cdot \sin 20^{\circ}}=2 \cos 20^{\circ}=\frac{\sin 70^{\circ}}{\sin 30^{\circ}}=\frac{\sin \left(30^{\circ}+40^{\circ}\right)}{\sin 30^{\circ}}$.
+因为 $\frac{\sin \left(x+40^{\circ}\right)}{\sin x}=\cos 40^{\circ}+\cot x \cdot \sin 40^{\circ}$,
+作为 $x$ 的函数在 $(0, \pi)$ 上严格递减, 所以, $\angle B E D=x=30^{\circ}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16. 证明 Pascal 定理:
+圆内接六边形 $A B C D E F$ (不要求是凸的)三组对边 $A B$ 和 $D E, C D$ 和 $F A, E F$ 和 $B C$ 的交点 $L, M, N$ 共线.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c2a16.png>), 设三直线 $A B 、 C D 、 E F$ 两两相交成 $\triangle U V W$, 对 $\triangle U V W$ 及截线 $B C N 、 D E L 、 F A M$, 由梅涅劳斯定理
+$$
+\begin{aligned}
+& \frac{U N}{N V} \cdot \frac{V B}{B W} \cdot \frac{W C}{C U}=1, \\
+& \frac{U E}{E V} \cdot \frac{V L}{L W} \cdot \frac{W D}{D U}=1,
+\end{aligned}
+$$
+$$
+\frac{U F}{F V} \cdot \frac{V A}{A W} \cdot \frac{W M}{M U}=1 .
+$$
+三式相乘.
+由相交弦定理与割线定理和乘积等式中的
+$$
+\begin{aligned}
+& \frac{V B}{B W} \cdot \frac{W C}{C U} \cdot \frac{U E}{E V} \cdot \frac{W D}{D U} \cdot \frac{U F}{F V} \cdot \frac{V A}{A W} \\
+= & \frac{V B \cdot V A}{E V \cdot F V} \cdot \frac{W C \cdot W D}{B W \cdot A W} \cdot \frac{U E \cdot U F}{C U \cdot D U}=1
+\end{aligned}
+$$
+故有 $\frac{U N}{N V} \cdot \frac{V L}{L W} \cdot \frac{W M}{M U}=1$.
+由梅涅劳斯定理逆定理知, $L 、 M 、 N$ 共线.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17. 证明 Desargues 定理:
+若 $\triangle A B C$ 与 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 的对应顶点连线 $A A^{\prime}, B B^{\prime}, C C^{\prime}$ 相交于一点 $O$, 则对应边 $B C$ 与 $B^{\prime} C^{\prime}, C A$ 与 $C^{\prime} A^{\prime}, A B$ 与 $A^{\prime} B^{\prime}$ 的交点 $D, E, F$ 共线.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c2a17.png>), 对 $\triangle O B C 、 \triangle O C A 、 \triangle O A B$ 及相应的截线 $D B^{\prime} C^{\prime} 、 E C^{\prime} A^{\prime} 、 F A^{\prime} B^{\prime}$, 由梅涅劳斯定理得
+$$
+\begin{aligned}
+& \frac{B D}{D C} \cdot \frac{C C^{\prime}}{C^{\prime} O} \cdot \frac{O B^{\prime}}{B^{\prime} B}=1, \\
+& \frac{C E}{E A} \cdot \frac{A A^{\prime}}{A^{\prime} O} \cdot \frac{O C^{\prime}}{C^{\prime} C}=1, \\
+& \frac{A F}{F B} \cdot \frac{B B^{\prime}}{B^{\prime} O} \cdot \frac{O A^{\prime}}{A^{\prime} A}=1,
+\end{aligned}
+$$
+三式相乘化简得 $\quad \frac{B D}{D C} \cdot \frac{C E}{E A} \cdot \frac{A F}{F B}=1$.
+故对 $\triangle A B C$ 由梅涅劳斯定理逆定理知, $D 、 E 、 F$ 共线.
+%%PROBLEM_END%%
+
+

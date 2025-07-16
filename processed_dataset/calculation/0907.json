@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-8.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 已知 $0 \\leqslant x_0<1$, 数列 $\\left\\{x_n\\right\\}$ 满足\n$$\nx_{n+1}=\\left\\{\\begin{array}{l}\n2 x_n-1, \\text { 若 } \\frac{1}{2} \\leqslant x_n<1, \\\\\n2 x_n, \\quad \\text { 若 } 0 \\leqslant x_n<\\frac{1}{2} .\n\\end{array}(n=0,1,2, \\cdots)\\right.\n$$\n并且 $x_5=x_0$. 问 : 满足条件的数列有多少个?",
+    "solution": "解:注意到, 当 $x_0$ 确定后, 数列 $\\left\\{x_n\\right\\}$ 是唯一确定的, 故问题可转为求 $x_0$ 的不同取值情况的个数.\n利用二进制来处理, 将 $x_n$ 用二进制表示, 设 $x_n=\\left(0 . b_1 b_2 \\cdots\\right)_2$, 如果 $b_1=1$, 那么 $\\frac{1}{2} \\leqslant x_n<1$, 此时 $x_{n+1}=2 x_n-1=\\left(0 . b_2 b_3 \\cdots\\right)_2$; 如果 $b_1=0$, 那么 $0 \\leqslant x_n<\\frac{1}{2}$, 此时 $x_{n+1}=2 x_n=\\left(0 . b_2 b_3 \\cdots\\right)_2$. 这表明: 当 $x_n=\\left(0 . b_1 b_2 \\cdots\\right)_2$ 时, 总有 $x_{n+1}=\\left(0 . b_2 b_3 \\cdots\\right)_2$ (相当于将二进制表示下 $x_n$ 的小数点后第一位\"吃掉了\".\n现在, 设 $x_0=\\left(0 . a_1 a_2 \\cdots\\right)_2$, 那么由上述讨论可知 $x_5=\\left(0 . a_6 a_7 \\cdots\\right)_2$, 结合 $x_5=x_0$ 得 $x_0$ 是一个二进制下的循环小数, 即 $x_0=\\left(0 . \\dot{a}_1 a_2 \\cdots \\dot{a}_5\\right)_2= \\frac{\\left(a_1 \\cdots a_5\\right)_2}{2^5-1}$, 其中 $\\left(a_1 \\cdots a_5\\right)_2$ 是二进制表示下的一个非负整数 (注意 $a_1, \\cdots, a_5$ 不全为 1).\n综上可知, $x_0$ 共有 $2^5-1=31$ 种不同的可能取值 $\\left(a_1, \\cdots, a_5\\right.$ 每个数均可取 0 或 1 ,但不能全部取 1 ), 相应的不同数列共 31 个.\n说明这里利用二进制表示将递推式变为规律性更强的式子, 然后结合数列的周期性掌控数列的结构.\n本质上而言是做了一个对应.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise14.tex",
+    "problem_type": "calculation",
+    "problem": "问题8. 在 $8 \\times 8$ 的棋盘的每个方格中任写一个正整数,然后施行以下操作: 任取一个 $3 \\times 3$ 或 $4 \\times 4$ 的正方形 \"子棋盘\", 将其中每个数都加 1 . 能否经过有限次操作,使棋盘中每个数字都是 10 的倍数?",
+    "solution": "如图(<FilePath:./images/volume14/figures/fig-c14a8-1.png>), 的方法将棋盘中的 24 个方格涂上颜色.\n假如一开始染色方格上的所有数之和 $S$ 为奇数 (这很容易做到), 那么由于每个 $3 \\times 3$ 或 $4 \\times 4$ \"子棋盘\" 恰好覆盖这 24 个方格中的偶数个, 因此每次操作必使 $S$ 增加一个偶数, 从而 $S$ 总为奇数,不可能使所有方格内都出现 10 的倍数.",
+    "remark": "注:本题的染色方法有很多种, 例如按如图(<FilePath:./images/volume14/figures/fig-c14a8-2.png>), 的染色方法可以证明更强的命题: 即使允许对任意一个 $2 \\times 2$ 的 \"子棋盘\"进行每个数都加 1 的操作,仍不能保证棋盘中的数都变成偶数.",
+    "figures": [
+        "./images/volume14/figures/fig-c14a8-1.png",
+        "./images/volume14/figures/fig-c14a8-2.png"
+    ]
+}

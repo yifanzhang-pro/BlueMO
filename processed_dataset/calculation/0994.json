@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 设 $E 、 F$ 分别是 $\\triangle A B C$ 中以 $A$ 为端点的射线 $A C 、 A B$ 上的点, 则\n$$\n|A B-A C|+|A E-A F| \\geqslant|B E-C F|,\n$$\n当且仅当 $A B=A C$ 且 $A E=A F$ 时等号成立.",
+    "solution": "这里仅就 $E 、 F$ 分别在边 $A C 、 A B$ 上的情况给出提示, 在其他情况下类似可得.\n不妨设 $A C \\geqslant A B$, 在 $A C$ 上取点 $D$ 使得 $A D=A B$, 又在 $A B$ (或 $A B$ 的延长线) 上取点 $G$, 使得 $A G=A E$, 则 $|A B-A C|+|A E-A F|=|C D|+ |F G| \\geqslant|C G-D G|+|C F-C G| \\geqslant|C G-D G+C F-C G|=|C F-D G|= |B E-C F|$.",
+    "remark": "",
+    "figures": []
+}

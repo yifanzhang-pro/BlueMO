@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题29 求下列方程的实数解.\n$$\n\\arccos \\left|\\frac{x^2-1}{x^2+1}\\right|+\\arcsin \\left|\\frac{2 x}{x^2+1}\\right|+\\arccos \\left|\\frac{x^2-1}{2 x}\\right|=\\pi .\n$$",
+    "solution": "令 $x=\\tan \\alpha, \\alpha \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$, 则原方程变为 $\\arccos |\\cos 2 \\alpha|+ \\arcsin |\\sin 2 \\alpha|+\\operatorname{arccot}|\\cot 2 \\alpha|=\\pi$. 当 $|\\tan \\alpha| \\geqslant 1$ 时, $-\\frac{\\pi}{2}<\\alpha \\leqslant-\\frac{\\pi}{4}$ 或 $\\frac{\\pi}{4} \\leqslant \\alpha<\\frac{\\pi}{2}$. 若 $-\\frac{\\pi}{2}<\\alpha \\leqslant-\\frac{\\pi}{4}$, 则原方程化为 $\\pi+2 \\alpha+\\pi+2 \\alpha+\\pi+2 \\alpha= \\pi \\Rightarrow \\alpha=-\\frac{\\pi}{3}, x=-\\sqrt{3}$. 类似地, $\\frac{\\pi}{4} \\leqslant \\alpha<\\frac{\\pi}{2}$ 时, $\\alpha=\\frac{\\pi}{3}, x=\\sqrt{3}$. 当 $|\\tan \\alpha|<$ 1 时, $-\\frac{\\pi}{4}<\\alpha<0$ 或 $0<\\alpha<\\frac{\\pi}{4}$. 同样可得 $\\alpha=-\\frac{\\pi}{6}, x=-\\frac{\\sqrt{3}}{3}$ 或 $\\alpha=\\frac{\\pi}{6}, x= \\frac{\\sqrt{3}}{3}$. 综上, 原方程的解为 $x= \\pm \\sqrt{3}$ 或 $x= \\pm \\frac{\\sqrt{3}}{3}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter9.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 试根据复数的几何意义推导出用复数表示点到直线距离的公式.",
+    "solution": "分析:与解设 $Z_1 、 Z_2$ 为直线 $l$ 上的两点, $Z_3$ 为直线 $l$ 外一点, 则 $\\overrightarrow{Z_1 Z_2}$ 方向上的单位向量为 $\\frac{z_2-z_1}{\\left|z_2-z_1\\right|}$, 而 $\\overrightarrow{Z_1 Z_3}$ 方向上的单位向量为 $\\frac{z_3-z_1}{\\left|z_3-z_1\\right|}$. 根据复数除法的几何意义, 由 $\\overrightarrow{Z_1 Z_2}$ 旋转到 $\\bar{Z}_1 \\vec{Z}_3$ 所转过的角 $\\varphi$ 由下式确定:\n$$\n\\begin{aligned}\n\\sin \\varphi & ==\\operatorname{Im}\\left(\\frac{\\left|z_2-z_1\\right|}{\\left|z_3-z_1\\right|} \\cdot \\frac{\\left(z_3-z_1\\right)\\left(\\overline{z_2}-\\overline{z_1}\\right)}{\\left(z_2-z_1\\right)\\left(\\overline{z_2}-\\overline{z_1}\\right)}\\right) \\\\\n& =\\frac{1}{\\left|z_3-z_1\\right| \\cdot\\left|\\overline{z_2}-z_1\\right|} \\operatorname{Im}\\left(-\\overline{z_1} \\overline{z_2}+\\overline{z_2} z_3-z_3 \\overline{z_1}+z_1 \\overline{z_1}\\right) .\n\\end{aligned}\n$$\n因为 $\\left|z_1^2\\right| \\in \\mathbf{R},--\\operatorname{Im} z_1 \\overline{z_2}=\\operatorname{Im} \\overline{z_1} z_2,-\\operatorname{Im} z_3 \\overline{z_1}=\\operatorname{Im} \\overline{z_3} z_1$, 由上式知 $Z_3$ 到直线 $Z_1 Z_2$ 的距离为 $d=\\frac{1}{\\left|z_2-z_1\\right|} \\cdot \\operatorname{Im}\\left(\\overline{z_1} z_2+\\overline{z_2} z_3+\\overline{z_3} z_1\\right)$. 约定距离 $d$ 非负,所以上式取绝对值.",
+    "remark": "注:由此可知复数 $z_1 、 z_2 、 z_3$ 为顶点的三角形面积为\n$$\nS_{\\triangle z_1 z_2 z_3}=\\frac{1}{2} \\cdot\\left|\\operatorname{Im}\\left(\\overline{z_1} z_2+\\overline{z_2} z_3+\\overline{z_3} z_1\\right)\\right|,\n$$\n当 $z_1 、 z_2 、 z_3$ 逆时针排列时,绝对值去掉; 当顺时针排列时,去掉绝对值后添负号.",
+    "figures": []
+}

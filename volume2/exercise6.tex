@@ -1,0 +1,91 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1 求下列函数的 $n$ 次迭代:
+(1) $f(x)=\frac{x}{\sqrt{1+x^2}}$;
+(2) $f(x)=\frac{x+6}{x+2}$;
+(3) $f(x)=x+2 \sqrt{x}+1$;
+(4) $f(x)=\sqrt{7 x^2+2}$.
+%%<SOLUTION>%%
+(1) 用数学归纳法, $f^{(n)}(x)=\frac{x}{\sqrt{1+n x^2}}$; 
+(2) 用递归法, $f^{(n)}(x)= \frac{\left(2 \cdot(-4)^n+3\right) x+6\left((-4)^n-1\right)}{\left((-4)^n-1\right) x+\left(3 \cdot(-4)^n+2\right)}$
+(3) 令 $\varphi(x)=\arcsin \sqrt{x}, g(x)= 2 x$, 则 $f^{(n)}(x)=\left(\sin \left(2^n \arcsin \sqrt{x}\right)\right)^2$;
+(4) 用不动点法, $f^{(n)}(x)= \sqrt{7^n\left(x^2+\frac{1}{3}\right)-\frac{1}{3}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 已知 $f^{(3)}(x)=8 x+7$, 求一次函数 $f(x)$.
+%%<SOLUTION>%%
+设 $f(x)=a x+b$, 代入求得 $f(x)=2 x+1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. $n$ 为自然数, $f(n)$ 为 $n^2+1$ (十进制) 的数字之和, 求 $f^{(100)}(1990)$ 的值.
+%%<SOLUTION>%%
+$11$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 若 $x_1=a>2, x_{n+1}=\frac{x_n^2}{2\left(x_n-1\right)}(n=1,2, \cdots)$, 求 $\left\{x_n\right\}$ 的通项.
+%%<SOLUTION>%%
+设 $f(x)=\frac{x^2}{2(x-1)}=\frac{1}{1-\left(1-\frac{2}{x}\right)^2}$. 取 $\varphi(x)=1-\frac{2}{x}, g(x)=x^2$, 则 $f(x)=\varphi^{-1}(g(\varphi(x)))$, 于是 $f^{(n)}(x)=\frac{2}{1-\left(1-\frac{2}{x}\right)^{2^n}}$. 取 $x_1=a$, 则 $x_2=f\left(x_1\right), \cdots, x_{n+1}=f\left(x_n\right)=f^{(n)}\left(x_1\right)$, 故 $x_{n+1}=\frac{2}{1-\left(1-\frac{2}{a}\right)^{2^n}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5 设 $f(x)=4\left(x-\frac{1}{2}\right)^2, 0 \leqslant x \leqslant 1$. 求证: 对任意给定的 $n \in \mathbf{N}_{+}$, 必有 $x_0$ 使 $f^{(n)}\left(x_0\right)=x_0$, 但当 $k<n, k \in \mathbf{N}_{+}$时, $f^{(k)}\left(x_0\right) \neq x_0$.
+%%<SOLUTION>%%
+令 $x=\phi(t)=\frac{1}{2}(1+\cos t)$, 则 $f(\phi(t))=\frac{1}{2}(1+\cos 2 t)=\phi(2 t)$. 故取 $t=\varphi(x)=\phi^{-1}(x)=\arccos (2 x-1), g(x)=2 x$, 得 $f(x)=$ $\varphi^{-1}(g(\varphi(x)))$, 于是 $f^{(n)}(x)=\varphi^{-1}\left(g^{(n)}(\varphi(x))\right)=\frac{1}{2}\left\{1+\cos \left[2^n \arccos (2 x-\right.\right.$ 1) ] \}, $0 \leqslant x \leqslant 1$. 方程 $f^{(n)}(x)=x$ 化为 $\frac{1}{2}\left\{1+\cos \left[2^n \arccos (2 x-1)\right]\right\}=x$, 即 $\cos \left[2^n \arccos (2 x-1)\right]=2 x-1$, 故此方程有且只有 $2^n$ 个不同实根.
+由于 $f^{(k)}(x)=x$ 是 $2^k$ 次方程, 至多有 $2^k$ 个根, 故当一切正整数 $k<n$, 方程 $f^{(k)}(x)=x$ 的根的总数目不超过 $2+2^2+\cdots+2^{n-1}=2^n-2$, 于是有实数 $x_0$, 它是 $f^{(n)}(x)=x$ 的根而不是任一方程 $f^{(k)}(x)=x(k=1,2, \cdots, n-1)$ 的根.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6 设一个长方形长为 1 , 宽为 $\frac{\sqrt{5}-1}{2}$, 按如图(<FilePath:./figures/fig-c6p6.png>)所示放人直角坐标中, 然后按逆时针方向不断割去正方形,那么剩下的长方形将收缩至一点,求该点坐标.
+%%<SOLUTION>%%
+$\left(\frac{5+\sqrt{5}}{10}, \frac{\sqrt{5}}{5}\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7 已知 $f(x)=4 x(1-x), 0 \leqslant x \leqslant 1$,
+(1) 求 $f^{(n)}(x)$;
+(2) 设 $f^{(n)}(x)$ 取最大和最小的 $x$ 的个数 $a_n 、 b_n$. 试用 $n$ 表示 $a_n$ 和 $b_n$.
+%%<SOLUTION>%%
+(1) 令 $\varphi(x)=\arcsin \sqrt{x}, g(x)=2 x$, 则可求得 $f^{(n)}(x)=$ $\left(\sin \left(2^n \arcsin \sqrt{x}\right)\right)^2 ; \quad$ (2) $a_n=2^{n-1}, b_n=2^{n-1}+1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8 设 $D=\{1,2, \cdots, 10\}, f: D \rightarrow D$, 且 $f$ 是一一映射, 令 $f^{(1)}(x)=f(x)$, $f^{(n+1)}(x)=f\left(f^{(n)}(x)\right)$, 试求 $D$ 的某一个排列 $\left\{x_i\right\}_{i=1}^{10}$, 使 $\sum_{i=1}^{10} x_i f^{(2520)}(i)=$ 220.
+%%<SOLUTION>%%
+对 $i=1,2, \cdots, 10$, 由 $\left\{i, f_1(i), \cdots, f_{10}(i)\right\} \subseteq D$, 据抽屈原则, 并注意到 $f$ 是一一映射, 知存在 $1 \leqslant r_i \leqslant 10$, 使 $f r_i(i)=i$. 又 $2520=2^3 \cdot 3^2$ ・ $5 \cdot 7$ 为 $1,2, \cdots, 10$ 的最小公倍数, 故上述 $r_i \mid 2520$, 于是 $f_{2520}(i)=i$ 对一切 $i \in D$ 成立, 原式为 $\sum_{i=1}^{10} x_i \cdot i=220$. 又由排序不等式 $\sum_{i=1}^{10} x_i \cdot i \geqslant 1 \times 10+\cdots+$ $10 \times 1=220$. 从而所求排列为 $10,9,8, \cdots, 1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9 设 $f: \mathbf{N}_{+} \rightarrow \mathbf{N}_{+}, p 、 k$ 是两个固定正整数, 且 $f^{(p)}(n)=n+k, n \in \mathbf{N}_{+}$, 求证: $f$ 存在的充要条件是 $p \mid k$.
+%%<SOLUTION>%%
+若 $k$ 是 $p$ 的倍数, 即存在 $s \in \mathbf{N}_{+}$, 使 $k=p \cdot s$, 易知 $f(n)=n+s$ 满足条件 $f^{(p)}(n)=n+k$. 反过来, 设 $f$ 存在, 记 $A=\mathbf{N}_{+} \backslash f\left(\mathbf{N}_{+}\right)$, 由于 $f^{(p)}(n)=$ $n+k,\left|A_1\right|$ 为有限值, 令 $A_2=\mathbf{N}_{+} \backslash f^{(2)}\left(\mathbf{N}_{+}\right)=A_1 \cup f\left(A_1\right), \cdots, A_p= \mathbf{N}_{+} \backslash f^{(p)} \backslash\left(\mathbf{N}_{+}\right)=A_1 \cup \cdots \cup f^{(p-1)}\left(A_1\right)$, 不难得到 $f^{(i)}\left(A_1\right) \cap f^{(j)}\left(A_1\right)=\varnothing (i \neq j),\left|f^{(i)}\left(A_1\right)\right|=\left|f^{(j)}\left(A_1\right)\right|=\left|A_1\right|$, 故 $|A p|=k=p\left|A_1\right|$, 即 $p \mid k$.
+%%PROBLEM_END%%
+
+

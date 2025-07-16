@@ -1,0 +1,150 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 已知 $f(x)=a x^2+b x$ ( $a 、 b$ 为非零实数), 存在一个虚数 $x_1$, 使 $f\left(x_1\right)$ 为实数 $-c$, 则 $b^2-4 a c$ 与 $\left(2 a x_1+b\right)^2$ 的关系是 $(\quad)$.
+(A) 不能比较大小
+(B) $b^2-4 a c>\left(2 a x_1+b\right)^2$
+(C) $b^2-4 a c=\left(2 a x_1+b\right)^2$
+(D) $b^2-4 a c<\left(2 a x_1+b\right)^2$
+%%<SOLUTION>%%
+C.
+事实上
+$$
+\begin{aligned}
+\left(2 a x_1+b\right)^2 & =4 a^2 x_1^2+4 a b x_1+b^2 \\
+& =4 a\left(a x_1^2+b x_1+c\right)+b^2-4 a c \\
+& =b^2-4 a c .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 若 $z_1 、 z_2 、 z_3 \in \mathbf{C}$, 则 $z_1=z_2=z_3$ 是 $\left(z_1-z_2\right)^2+\left(z_2-z_3\right)^2=0$ 成立的 ( ).
+(A) 充分但不必要条件
+(B) 必要但不充分条件
+(C) 充分且必要条件
+(D) 既不充分也不必要条件
+%%<SOLUTION>%%
+A.
+充分是明显的; 若取 $z_1=\mathrm{i}, z_2=0, z_3=1$, 有 $\left(z_1-z_2\right)^2+\left(z_2-z_3\right)^2= -1+1=0$, 而 $\mathrm{i} \neq 0 \neq 1$, 即说明条件是不必要的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 已知实数 $a 、 x 、 y$ 满足 $a^2+(4+\mathrm{i}) a+2 x y+(x-y) \mathrm{i}=0$, 则点 $(x, y)$ 的轨迹是 ( ).
+(A) 直线
+(B) 圆心在原点的圆
+(C) 圆心不在原点的圆
+(D) 椭圆
+%%<SOLUTION>%%
+C.
+将题设之式整理得
+$$
+a^2+4 a+2 x y+(a+x-y) \mathrm{i}=0,
+$$
+则且
+$$
+\begin{gathered}
+a^2+4 a+2 x y=0, \label{eq1}\\
+a+x-y=0 . \label{eq2}
+\end{gathered}
+$$
+由式\ref{eq2}, $a=y-x$, 代入式\ref{eq1}得
+$$
+(y-x)^2+4(y-x)+2 x y=0,
+$$
+即
+$$
+\begin{gathered}
+x^2+y^2-4 x+4 y=0, \\
+(x-2)^2+(y+2)^2=8 .
+\end{gathered}
+$$
+故应选取 C
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 知复数 $z_1 、 z_2$ 满足 $2 z_1^2+z_2^2=2 z_1 z_2$, 且 $z_1+z_2$ 为纯虚数, 求证: 复数 $3 z_1-2 z_2$ 是实数.
+%%<SOLUTION>%%
+令 $z_1+z_2=k \mathrm{i}(k \in \mathbf{R}$, 且 $k \neq 0)$, 由于 $2 z_1^2+z_2^2=2 z_1 z_2$ 等价于 $\left(3 z_1-2 z_2\right)^2=-\left(z_1+z_2\right)^2$.
+于是, 有 $3 z_1-2 z_2= \pm \mathrm{i}\left(z_1+z_2\right)= \pm(k \mathrm{i}) \mathrm{i}= \pm k \in \mathbf{R}$, 故知复数 $3 z_1-z_2$ 是实数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 已知 $a \in \mathbf{R}$,试问:复数
+$$
+z=\left(a^2-2 a+3\right)-\left(a^2-2 a+2\right) \mathrm{i}
+$$
+所对应的点在第几象限? 复数 $z$ 所对应点的轨迹是什么?
+%%<SOLUTION>%%
+因为 $\operatorname{Re}(z)=a^2-2 a+3=(a-1)^2+2 \geqslant 2$,
+$$
+\operatorname{Im}(z)=-\left(a^2-2 a+2\right)=-(a-1)^2-1 \leqslant-1,
+$$
+所以 $\operatorname{Re}(z)>0, \operatorname{Im}(z)<0$, 故复数 $z$ 所对应的点在第四象限内.
+设 $z=x+y \mathrm{i}(x, y \in \mathbf{R})$, 则 $\left\{\begin{array}{l}x=a^2-2 a+3, \\ y=-\left(a^2-2 a+2\right),\end{array}\right.$ 消去 $a^2-2 a$, 得 $y= -x+1(x \geqslant 2)$.
+所以, 复数 $z$ 所对应点的轨迹是以 $(2,-1)$ 为端点的一条射线 $y=-x+ 1(x \geqslant 2)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $z_1 、 z_2 \in \mathbf{C}$, 且 $z_1 z_2 \neq 0, A=z_1 \overline{z_1}+z_2 \overline{z_2}, B=z_1 \overline{z_2}+\overline{z_1} z_2$, 试问: $A$ 与 $B$ 能否比较大小关系? 若能, 请指明大小关系; 若不能, 请说明理由.
+%%<SOLUTION>%%
+只有当 $A$ 与 $B$ 均为实数时, 二者之间才能比较大小.
+因为
+$$
+A=\left|z_1\right|^2+\left|z_2\right|^2,
+$$
+所以 $A$ 是实数.
+又因为
+$$
+\bar{B}=\overline{z_1 \overline{z_2}+\overline{z_1} z_2}=z_1 \overline{z_2}+\overline{z_1} z_2=B,
+$$
+所以 $B$ 也是实数.
+故 $A 、 B$ 二者之间可以比较大小.
+事实上
+$$
+\begin{aligned}
+A-B & =z_1\left(\overline{z_1}-\overline{z_2}\right)-z_2\left(\overline{z_1}-\overline{z_2}\right) \\
+& =\left(z_1-z_2\right)\left(\overline{z_1}-\overline{z_2}\right) \\
+& =\left|z_1-z_2\right|^2 \geqslant 0 .
+\end{aligned}
+$$
+当 $z_1=z_2$ 时, $A=B$;
+当 $z_1 \neq z_2$ 时, $A>B$.
+%%<REMARK>%%
+注:(1) 在比较两实数的大小时, 对 "不小于"、"不大于"的情形, 要对其中的"相等"分而述之.
+(2) 以 $\bar{z}=z$ 来说明 $z$ 为实数是复数问题中的常用做法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 求证: $[(2 a-b-c)+(b-c) \sqrt{3} \mathrm{i}]^3=[(2 b-c-a)+(c-a) \sqrt{3} \mathrm{i}]^3$.
+%%<SOLUTION>%%
+设 $\omega=-\frac{1}{2}+\frac{\sqrt{3}}{2} \mathrm{i}$, 则 $\omega^3=1$.
+$$
+\begin{aligned}
+\text { 左边 } & =[2 a+b(-1+\sqrt{3} \mathrm{i})+c(-1-\sqrt{3} \mathrm{i})]^3=[2 a+2 b \omega+2 c \bar{\omega}]^3, \\
+\text { 右边 } & =[a(-1-\sqrt{3} \mathrm{i})+2 b+c(-1+\sqrt{3} \mathrm{i})]^3=(2 a \bar{\omega}+2 b+2 c \omega)^3 \\
+& =\left[\bar{\omega}\left(2 a+2 b \omega+2 c \omega^2\right)\right]^3=(2 a+2 b \omega+2 c \bar{\omega})^3 .
+\end{aligned}
+$$
+所以左边 $=$ 右边, 等式成立, 证毕.
+%%PROBLEM_END%%
+
+

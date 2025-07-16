@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题3 计算 $\\sin 10^{\\circ} \\sin 30^{\\circ} \\sin 50^{\\circ} \\sin 70^{\\circ}$ 的值是 ( ).\n(A) $\\frac{1}{2}$\n(B) $\\frac{1}{4}$\n(C) $\\frac{1}{8}$\n(D) $\\frac{1}{16}$",
+    "solution": "D. 参照例 4 可得原式 $=\\frac{1}{16}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 如图(<FilePath:./images/volume7/figures/fig-c8p5.png>), 设 $D 、 E 、 F$ 分别为 $\\triangle A B C$ 的三边 $B C 、 C A 、 A B$ 上的点, 且 $A D$ 与 $E F$ 垂直相交于 $O$, 又 $D E 、 D F$ 分别平分 $\\angle A D C 、 \\angle A D B$, 则 $O D$ 平分 $\\angle B O C$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c8a5.png>), 设直线 $E F$ 与 $B C$ 交于点 $G$ (可以是无穷远点, 以下同), 由角平分线定理有 $\\frac{C E}{A E} \\cdot \\frac{A F}{F B} \\cdot \\frac{B D}{D C}=\\frac{D C}{A D} \\cdot \\frac{A D}{B D} \\cdot \\frac{B D}{D C}=1$. 由 Ceva 定理知 $B E 、 A D$ 、 $C F$ 三线共点, 由性质 2 知 $B 、 C 、 D 、 G$ 成调和点列, 即 $O B 、 O C 、 O D 、 O G$ 成调和线束, 结合 $O D \\perp O G$ 知 $O D$ 平分 $\\angle B O C$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8p5.png",
+        "./images/volume7/figures/fig-c8a5.png"
+    ]
+}

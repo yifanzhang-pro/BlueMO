@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $a 、 b 、 c$ 是任意三角形的三边, $x 、 y 、 z$ 是任意三个实数, 求证\n$$\na^2(x-y)(x-z)+b^2(y-x)(y-z)+c^2(z-x)(z-y) \\geqslant 0 .\n$$",
+    "solution": "提示: 把 $\\cos A=\\frac{b^2+c^2-a^2}{2 b c}$ 等代入嵌入不等式, 再作代数恒等变形即得.",
+    "remark": "",
+    "figures": []
+}

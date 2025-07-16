@@ -1,0 +1,204 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $R$ 与 $r$ 分别是锐角 $\triangle A B C$ 的外接圆与内切圆的半径, 设 $\angle A$ 是 $\triangle A B C$
+的三个内角中最大的一个, $M$ 是边 $B C$ 的中点, 过点 $B 、 C$ 作 $\triangle A B C$ 的外接圆的切线, 交于点 $X$. 证明: $\frac{r}{R} \geqslant \frac{A M}{A X}$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c10a1.png>), 设 $O$ 与 $I$ 分别是锐角 $\triangle A B C$ 的外心与内心, 则 $O 、 M 、 X$ 三点共线, 且 $\triangle O X C \backsim \triangle O C M$. 因此, $\frac{O C}{O X}= \frac{O M}{O C}$. 由于 $O C=R=O A$, 可得 $\frac{O A}{O M}=\frac{O X}{O A}$. 于是, $\triangle O A M \backsim \triangle O X A$. 从而, $\frac{A M}{A X}=\frac{O M}{R}$.
+下面只需再证明 $O M \leqslant r$. 比较 $\angle O B M$ 与 $\angle I B M$, 由于 $\triangle A B C$ 是锐角三角形, $O$ 与 $I$ 位于 $\triangle A B C$ 内部, 于是, 有 $\angle O B M=\frac{\pi}{2}-\angle A=\frac{1}{2}(\angle A+\angle B+\angle C)-\angle A=\frac{1}{2}(\angle B+\angle C-\angle A) \leqslant \frac{\angle B}{2}=\angle I B M$. 类似可得 $\angle O C M \leqslant \angle I C M$. 于是, 点 $O$ 位于 $\triangle I B C$ 内部或边界上.
+因此, $O M \leqslant r$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 已知 $a 、 b 、 c$ 和 $R$ 分别为三角形的三边长和外接圆半径.
+证明:
+$$
+\frac{1}{a b}+\frac{1}{b c}+\frac{1}{c a} \geqslant \frac{1}{R^2} \text {. }
+$$
+%%<SOLUTION>%%
+证明: 要证 $\frac{1}{a b}+\frac{1}{b c}+\frac{1}{c a} \geqslant \frac{1}{R^2}$, 只要证 $\frac{1}{4 R^2 \sin A \cdot \sin B}+ \frac{1}{4 R^2 \sin B \cdot \sin C}+\frac{1}{4 R^2 \sin C \cdot \sin A} \geqslant \frac{1}{R^2} \Leftrightarrow \frac{1}{4 \sin A \cdot \sin B}+\frac{1}{4 \sin B \cdot \sin C}+ \frac{1}{4 \sin C \cdot \sin A} \geqslant 1 \Leftrightarrow \sin A+\sin B+\sin C \geqslant 4 \sin A \cdot \sin B \cdot \sin C \Leftrightarrow 2 \sin \frac{A+B}{2}$. $\cos \frac{A-B}{2}+2 \sin \frac{A+B}{2} \cdot \cos \frac{A+B}{2} \geqslant 4 \sin A \cdot \sin B \cdot \sin C \Leftrightarrow \cos \frac{C}{2} \cdot \left(\cos \frac{A-B}{2}+\cos \frac{A+B}{2}\right) \geqslant 2 \sin A \cdot \sin B \cdot \sin C \Leftrightarrow 2 \cos \frac{A}{2} \cdot \cos \frac{B}{2} \cdot \cos \frac{C}{2} \geqslant 2 \sin A \cdot \sin B \cdot \sin C \Leftrightarrow \sin \frac{A}{2} \cdot \sin \frac{B}{2} \cdot \sin \frac{C}{2} \leqslant \frac{1}{8} \cdots(1)$.
+下面证明(1)成立.
+$\sin \frac{A}{2} \cdot \sin \frac{B}{2} \cdot \sin \frac{C}{2} \leqslant\left(\frac{\sin \frac{A}{2}+\sin \frac{B}{2}+\sin \frac{C}{2}}{3}\right)^3 \leqslant \sin ^3 \frac{\frac{A}{2}+\frac{B}{2}+\frac{C}{2}}{3}$ (由琴生不等式 $)=\frac{1}{8}$. 则式(1)成立.
+因此,所证不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 已知 $\triangle A B C$ 的三边长分别为 $a 、 b 、 c$, 点 $P$ 在 $\triangle A B C$ 的内部, $P$ 到三条边的距离分别为 $p 、 q 、 r$. 证明: $R \leqslant \frac{a^2+b^2+c^2}{18 \sqrt[3]{p q r}}$, 其中 $R$ 为 $\triangle A B C$ 的外接圆半径, 并确定等号成立的条件.
+%%<SOLUTION>%%
+证明: 设 $\triangle A B C$ 的面积为 $S$, 则 $S=S_{\triangle P B C}+S_{\triangle P C A}+S_{\triangle P A B}=\frac{1}{2}(p a+q b+r c$ ). 由均值不等式有 $\sqrt[3]{p q r}=\frac{\sqrt[3]{p a \cdot q b \cdot r c}}{\sqrt[3]{a b c}} \leqslant \frac{p a+q b+r c}{3 \sqrt[3]{a b c}}= \frac{2 S}{3 \sqrt[3]{a b c}} \cdots$ (1). 故只需证 $R \leqslant \frac{\left(a^2+b^2+c^2\right) \sqrt[3]{a b c}}{12 S}$. 又因为 $a^2+b^2+c^2 \geqslant 3 \sqrt[3]{a^2 b^2 c^2} \cdots$ (2). 所以, 只需证 $R \leqslant \frac{a b c}{4 S} \cdots$ (3). 而 $4 S R=2 R a b \sin C=a b c$, 所以, 式 (3) 成立.
+因此,原不等式成立.
+式 (1) 的等号成立的条件是 $p a=q b=r c$, 式 (2) 的等号成立的条件是 $a= b=c$, 所以,原不等式等号成立的条件是 $a=b=c$ 且 $p=q=r$, 即 $\triangle A B C$ 是正三角形且 $P$ 是 $\triangle A B C$ 的中心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 在 $\triangle A B C$ 中, $\angle A 、 \angle C$ 的平分线分别与对边交于点 $D 、 E$. 若 $\angle B> 60^{\circ}$, 证明: $A E+C D<A C$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c10a4.png>), 作 $\angle E^{\prime} I A=\angle E I A$ 交 $A C$ 于点 $E^{\prime}$, 作 $\angle D^{\prime} I C=\angle D I C$ 交 $A C$ 于点 $D^{\prime}$. 因为 $D A$ 为 $\angle B A C$ 的平分线, 故 $\angle I A E=\angle I A E^{\prime}$. 又 $\angle E I A=\angle E^{\prime} I A$, 所以, $\triangle A I E \cong \triangle A I E^{\prime}$. 于是, $A E=A E^{\prime}$. 同理, $C D=C D^{\prime}$. 故 $\angle A I E^{\prime}+\angle C I D^{\prime}=2 \angle A I E=\angle B A C+\angle A C B, \angle A I C=\angle B+ \frac{1}{2}(\angle B A C+\angle A C B)$. 因此, $\angle A I C>\angle A I E^{\prime}+\angle C I D^{\prime}$ (这里用到 $\angle B> 60^{\circ}$ ). 从而, $A C=A E^{\prime}+E^{\prime} D^{\prime}+D^{\prime} C>A E^{\prime}+D^{\prime} C=A E+D C$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. (嵌入不等式) $A, B, C$ 为 $\triangle A B C$ 的内角.
+求证: 对任意实数 $x 、 y 、 z$, $x^2+y^2+z^2-2 x y \cos C-2 y z \cos A-2 z x \cos B \geqslant 0$.
+%%<SOLUTION>%%
+证明: $x^2+y^2+z^2-2 x y \cos C-2 y z \cos A-2 z x \cos B=(x^2-2 x y \cos C-2 z x \cos B)+y^2+z^2-2 y z \cos A=(x-y \cos C-z \cos B)^2+y^2 \sin ^2 C+ z^2 \sin ^2 B-2 y z \cdot \cos A-2 y z \cos B \cos C \cdots$ (1).
+由于 $\cos A=\cos (\pi-B-C)=-\cos (B+C)=\sin B \sin C-\cos B \cos C$. 所以 (1) 式 $=(x-y \cos C-z \cos B)^2+(y \sin C-z \sin B)^2 \geqslant 0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设在凸四边形 $A B C D$ 中, $A B=A D+B C$. 在此四边形内, 距离 $C D$ 为 $h$ 的地方有一点 $P$, 使得 $A P=h+A D, B P=h+B C$. 求证: $\frac{1}{\sqrt{h}} \geqslant \frac{1}{\sqrt{A D}}+\frac{1}{\sqrt{B C}}$.
+%%<SOLUTION>%%
+证明: 设 $M$ 是线段 $A B$ 内的点,且满足 $A M= A D=r, B M=B C=R$. 因此条件也就等价于 $: \odot P$ 半径为 $h$, 并且与边 $C D$ 和圆 $\odot A, \odot B$ 都相切, 其中 $\odot A, \odot B$ 分别是以 $A, B$ 为圆心, $r, R$ 为半径的圆, 且 $\odot A, \odot B$ 相切于 $M$ (如图(<FilePath:./figures/fig-c10a6-1.png>)).
+我们需要证明 $\frac{1}{\sqrt{h}} \geqslant \frac{1}{\sqrt{R}}+\frac{1}{\sqrt{r}}$. 当 $h$ 取最大值时, $\frac{1}{\sqrt{h}}$ 取最小值, 并且当 $D C$ 是 $\odot A, \odot B$ 的公切线时, 它取最小值.
+此时, 我们令 $h_0$ 是 $\odot P$ 的半径.
+那么我们就需证明 $\frac{1}{\sqrt{h_0}}=\frac{1}{\sqrt{R}}+\frac{1}{\sqrt{r}}$.
+新的简化图(<FilePath:./figures/fig-c10a6-2.png>), 刻画了这时的情形.
+设 $E$ 是 $A$ 在 $B C$ 上的投影, $Q$ 是 $P$ 在 $C D$ 上的投影.
+我们有 $A E= \sqrt{A B^2-B E^2}=\sqrt{(R+r)^2-(R-r)^2}=2 \sqrt{R r}$.
+另一方面, $A E=C D=D Q+Q C=\sqrt{\left(r+h_0\right)^2-\left(r-h_0\right)^2}+ \sqrt{\left(R+h_0\right)^2-\left(R-h_0\right)^2}=2 \sqrt{r h_0}+2 \sqrt{R h_0}$. 等式 $\sqrt{R r}=\sqrt{r h_0}+\sqrt{R h_0}$ 等价于所要证明的等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 设 $\triangle A B C$ 为锐角三角形,外接圆圆心为 $O$, 半径为 $R, A O$ 交 $\triangle B O C$ 所在圆于另一点 $A^{\prime}, B O$ 交 $\triangle C O A$ 所在圆于另一点 $B^{\prime}, C O$ 交 $\triangle A O B$ 所在圆于另一点 $C^{\prime}$. 证明: $O A^{\prime} \cdot O B^{\prime} \cdot O C \geqslant 8 R^3$, 并指出在什么情况下等号成立.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c10a7.png>), 设 $A O$ 与 $B C, B O$ 与 $C A, C O$ 与 $A B$ 的交点依次为 $D 、 E 、 F, \triangle A O B 、 \triangle B O C 、 \triangle C O A$ 的面积依次为 $S_1 、 S_2 、 S_3$. 由 $B 、 O 、 C 、 A^{\prime}$ 四点共圆知 $\angle O B C=\angle O C B=\angle B A^{\prime} O$, 从而有 $\triangle O B D \backsim \triangle O A^{\prime} B$, 得 $O A^{\prime}=\frac{O B^2}{O D}=\frac{R^2}{O D}$. 同理, $O B^{\prime}=\frac{R^2}{O E}, O C^{\prime}=\frac{R^2}{O F}$. 所以, $\frac{O A^{\prime} \cdot O B^{\prime} \cdot O C^{\prime}}{R^3}=\frac{R^3}{O D \cdot O E \cdot O F}=\frac{O A}{O D} \cdot \frac{O B}{O E} \cdot \frac{O C}{O F}=\frac{S_1+S_3}{S_2} \cdot \frac{S_1+S_2}{S_3} \cdot \frac{S_2+S_3}{S_1}=\left(\frac{S_1}{S_2}+\frac{S_3}{S_2}\right)\left(\frac{S_1}{S_3}+\frac{S_2}{S_3}\right)\left(\frac{S_2}{S_1}+\frac{S_3}{S_1}\right)=\left(\frac{S_1}{S_2}+\frac{S_2}{S_1}\right)+ \left(\frac{S_2}{S_3}+\frac{S_3}{S_2}\right)+\left(\frac{S_3}{S_1}+\frac{S_1}{S_3}\right)+2 \geqslant 8$, 等号当且仅当 $S_1=S_2=S_3$ 时成立, 此时 $\triangle A B C$ 为正三角形.
+故 $O A^{\prime} \cdot O B^{\prime} \cdot O C^{\prime} \geqslant 8 R^3$, 等号当且仅当 $\triangle A B C$ 为正三角形时成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设 $A B C D E F$ 是凸六边形, 且 $A B=B C, C D=D E, E F=F A$, 证明: $\frac{B C}{B E}+\frac{D E}{D A}+\frac{F A}{F C} \geqslant \frac{3}{2}$, 并指出等号成立的条件.
+%%<SOLUTION>%%
+证明: 记 $A C=a, C E=b, A E=c$, 对四边形 $A C E F$ 运用 Ptolemy 不等式得 $A C \cdot E F+C E \cdot A F \geqslant A E \cdot C F$. 因为 $E F=A F$, 所以 $\frac{F A}{F C} \geqslant \frac{c}{a+b}$. 同理 $\frac{D E}{D A} \geqslant \frac{b}{c+a}, \frac{B C}{B E} \geqslant \frac{a}{b+c}$. 故 $\frac{B C}{B E}+\frac{D E}{D A}+\frac{F A}{F C} \geqslant \frac{a}{b+c}+\frac{b}{c+a}+\frac{c}{a+b}$, 令 $b+ c=x, c+a=y, a+b=z$, 则 $G=\frac{y+z-x}{2}, b=\frac{z+x-y}{2}, c=\frac{x+y-z}{2}$, $\frac{a}{b+c}+\frac{b}{c+a}+\frac{c}{a+b}=\frac{1}{2}\left(\frac{y}{x}+\frac{z}{x}+\frac{z}{y}+\frac{x}{y}+\frac{x}{z}+\frac{y}{z}-3\right) \geqslant \frac{3}{2}$. 等号成立的条件为 $A B C D E F$ 是圆内接六边形且 $a=b=c$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 设在 $\triangle A B C$ 中, $\angle A 、 \angle B$ 和 $\angle C$ 的角平分线分别交 $\triangle A B C$ 的外接圆于 $A_1 、 B_1 、 C_1$. 求证: $A A_1+B B_1+C C_1>A B+B C+C A$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c10a9.png>), 对四边形 $A C A_1 B$ 应用 Ptolemy 定理, 可得 $A A_1 \cdot B C=A B \cdot A_1 C+A C \cdot A_1 B$. 令 $A_1 B=A_1 C=x$, 注意到 $2 x=A_1 B+A_1 C>B C$, 有 $2 A A_1=2$ ・ $\frac{A B x+A C x}{B C}=(A B+A C) \cdot \frac{2 x}{B C}>A B+A C$, 即 $A A_1> \frac{1}{2}(A B+A C)$. 同理可得 $B B_1>\frac{1}{2}(B A+B C), C C_1> \frac{1}{2}(C A+C B)$, 三式相加即得所证结果.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 两个凸四边形 $A B C D$ 和 $A^{\prime} B^{\prime} C^{\prime} D^{\prime}$ 的边长分别为 $a 、 b 、 c 、 d$ 和 $a^{\prime} 、 b^{\prime} 、 c^{\prime}$ 、 $d^{\prime}$, 面积分别为 $s$ 和 $s^{\prime}$. 证明: $a a^{\prime}+b b^{\prime}+c c^{\prime}+d d^{\prime} \geqslant 4 \sqrt{s s^{\prime}}$.
+%%<SOLUTION>%%
+证明: 在边长给定的四边形中, 以内接于圆时其面积为最大.
+因此, 只需证两个凸四边形为圆内接四边形的情况.
+这时 $s= \sqrt{(s-a)(s-b)(s-c)(s-d)}, s^{\prime}$ 与之类似, 其中 $s=\frac{1}{2}(a+b+c+d)=a+ c=b+d, s^{\prime}=\frac{1}{2}\left(a^{\prime}+b^{\prime}+c^{\prime}+d^{\prime}\right)=a^{\prime}+c^{\prime}=b^{\prime}+d^{\prime}$. 利用算术几何平均值不等式有 $a a^{\prime}+b b^{\prime}+c c^{\prime}+d d^{\prime}=(s-a)\left(s^{\prime}-a^{\prime}\right)+(s-b)\left(s^{\prime}-b^{\prime}\right)+(s-$ c) $\left(s^{\prime}-c^{\prime}\right)+(s-d)\left(s^{\prime}-d^{\prime}\right) \geqslant 4\left[(s-a)\left(s^{\prime}-a^{\prime}\right)(s-b) \cdot\left(s^{\prime}-b^{\prime}\right)(s-\right.$ c) $\left.\left(s^{\prime}-c^{\prime}\right)(s-d)\left(s^{\prime}-d^{\prime}\right)\right]^{\frac{1}{4}}=4 \sqrt{s s^{\prime}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 已知 $\triangle A B C$, 设 $I$ 是它的内心, 角 $A 、 B 、 C$ 的内角平分线分别与其对边交于 $A^{\prime} 、 B^{\prime} 、 C^{\prime}$. 求证: $\frac{5}{4}<\frac{A I \cdot B I}{A A^{\prime} \cdot B B^{\prime}}+\frac{B I \cdot C I}{B B^{\prime} \cdot C C^{\prime}}+\frac{C I \cdot A I}{C C^{\prime} \cdot A A^{\prime}} \leqslant \frac{4}{3}$.
+%%<SOLUTION>%%
+证明: 因为 $B I$ 平分 $\angle A B C, C I$ 平分 $\angle A C B$, 所以, $\frac{A I}{A A^{\prime}}= \frac{A B}{A B+B A^{\prime}}=\frac{A C}{A C+C A}=\frac{A B+A C}{A B+A C+B C}$.
+$$
+\text { 记 } A B=c, A C=b, C B=a, s=a+b+c \text {, 则 } \frac{A I}{A A^{\prime}}=\frac{c+b}{a+b+c}=\frac{s-a}{s} \text {. }
+$$
+同理 $\frac{B I}{B B^{\prime}}=\frac{a+c}{a+b+c}=\frac{s-b}{s}, \frac{C I}{C C^{\prime}}=\frac{a+b}{a+b+c}=\frac{s-c}{s}$. 所以, $\frac{A I \cdot B I}{A A^{\prime} \cdot \bar{B} B^{\prime}}+ \frac{B I \cdot C I}{B B^{\prime} \cdot C C}+\frac{C I \cdot A I}{C C^{\prime} \cdot A A^{\prime}}=\frac{(s-a)(s-b)+(s-b)(s-c)+(s-c)(s-a)}{s^2}= \frac{3 s^2-2(a+b+c) s+a b+b c+c a}{s^2}=1+\frac{a b+b c+c a}{s^2}$. 欲证不等式等价于 $\frac{1}{4}<\frac{a b+b c+c a}{s^2} \leqslant \frac{1}{3} \cdots$ (1). 因为 $(a-b)^2+(b-c)^2+(c-a)^2 \geqslant 0$, 所以, $2\left(a^2+b^2+c^2\right) \geqslant 2(a b+b c+c a) \Leftrightarrow(a+b+c)^2 \geqslant 3(a b+b c+c a)$. 所以 $\frac{a b+b c+c a}{s^2} \leqslant \frac{1}{3}$, 此为(1)右端.
+另一方面, 不妨设 $a \geqslant b \geqslant c$, 则 $\sqrt{a}+\sqrt{b}+\sqrt{c}, \sqrt{a}+\sqrt{b}-\sqrt{c}, \sqrt{a}-\sqrt{b}+ \sqrt{c}>0$. 又 $(\sqrt{a})^2=a<b+c<b+2 \sqrt{b c}+c=(\sqrt{b}+\sqrt{c})^2$, 所以 $\sqrt{a}-\sqrt{b}-\sqrt{c}<0$. $(\sqrt{a}+\sqrt{b}+\sqrt{c})(\sqrt{a}+\sqrt{b}-\sqrt{c})(\sqrt{a}-\sqrt{b}+\sqrt{c})(\sqrt{a}-\sqrt{b}-\sqrt{c})<0$. 因而 $[(\sqrt{a}+ \left.\sqrt{b})^2-c\right]\left[(\sqrt{a}-\sqrt{b})^2-c\right]<0$, 推出 $(a+b-c+2 \sqrt{a b})(a+b-c-2 \sqrt{a b})< 0,(a+b-c)^2-4 a b<0, a^2+b^2+c^2<2(a b+b c+c a),(a+b+c)^2<4(a b+b c+c a)$, 故 $\frac{a b+b c+c a}{s^2}>\frac{1}{4}$. 此为(1)左端.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 设 $P$ 为 $\triangle A B C$ 内部或边上任一点, 记 $P A=x, P B=y, P C=z$, 求证: $x^2+y^2+z^2 \geqslant \frac{1}{3}\left(a^2+b^2+c^2\right)$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c10a12.png>), 分别过 $A 、 B 、 C$ 作 $P A 、 P B$ 、 $P C$ 的垂线, 三垂线两两相交于 $A^{\prime} 、 B^{\prime} 、 C^{\prime}$, 于是 $\angle B P C=\pi-A^{\prime}, \angle A P B=\pi-C^{\prime}, \angle A P C=\pi- B^{\prime}$. 由余弦定理可得
+$$
+\begin{aligned}
+& a^2=y^2+z^2+2 y z \cos A^{\prime}, \\
+& b^2=x^2+z^2+2 x z \cos B^{\prime}, \\
+& c^2=x^2+y^2+2 x y \cos C^{\prime},
+\end{aligned}
+$$
+相加并应用第 5 题嵌入不等式便得 $a^2+b^2+c^2=2\left(x^2+y^2+z^2\right)+2 x y \cos C^{\prime}+ 2 x z \cos B^{\prime}+2 y z \cos A^{\prime} \leqslant 2\left(x^2+y^2+z^2\right)+\left(x^2+y^2+z^2\right)=3\left(x^2+y^2+z^2\right)$. 得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 面积为 $M$ 的凸四边形内接于一圆, 圆心在四边形内部.
+证明: 以该四边形对角线交点在四边上的射影为顶点的四边形面积不超过 $\frac{M}{2}$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c10a13.png>), $O$ 是圆内接凸四边形 $A B C D$ 对角线交点, 它到四边的垂足分别是 $P 、 Q 、 R 、 S$, 则 $\angle 2=\angle 1=\angle 4=\angle 3$, 所以 $O P$ 平分 $\angle S P Q$.
+同理可证: $O Q, O R, O S$ 分别平分 $\angle P Q R, \angle Q R S, \angle R S P$. 所以四边形 $P Q R S$ 内心为 $O$. 由圆外切四边形面积公式 (见例 10 的解答过程) 得
+$S_{\text {四边形 } \mathrm{PQRS}}^2=P Q \cdot O R \cdot R S \cdot S P \cdot \sin ^2 \frac{\angle S P Q+\angle S R Q}{2}= P Q \cdot Q R \cdot R S \cdot S P \cdot \sin ^2 \angle A O P$.
+$\frac{\angle S P Q+\angle S R Q}{2}= \angle 2+\angle 5=\angle 1+\angle 6=180^{\circ}-\angle A O D$.) 又因为 $S_{\text {四边形 } P Q R S}=\frac{1}{2} A C \cdot B D \cdot \sin \angle A O D=\frac{1}{2}(A O+ O C)(B O+O D) \cdot \sin \angle A O D=\frac{1}{2}\left(\frac{S P}{\sin A}+\frac{Q R}{\sin A}\right) \cdot\left(\frac{P Q}{\sin B}\right.\left.+\frac{R S}{\sin B}\right) \cdot \sin \angle A O D \geqslant \frac{4 \sqrt{P Q \cdot Q R \cdot R S \cdot S P} \sin \angle A O D}{2 \sin A \sin B}=\frac{2 S_{\text {四边形PQRS }}}{\sin A \sin B} \geqslant$
+所以 $S_{\text {四边形 } P Q R S} \leqslant \frac{m}{2}$, 当且仅当 $A B C D$ 是矩形时等号成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 设 $G$ 为 $\triangle A B C$ 的重心, $A_1 、 B_1 、 C_1$ 分别为 $A G 、 B G 、 C G$ 与 $\triangle A B C$ 的外接圆的交点.
+求证: $G A_1+G B_1+G C_1 \geqslant G A+G B+G C$, 等号成立当且仅当 $\triangle A B C$ 为正三角形.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c10a14.png>), 设 $m_a$ 为边 $a$ 上中线长, $m_b$ 为边 $b$ 上中线长, $m_c$ 为边 $c$ 中线长.
+记 $M_a=A A_1, M_b=B B_1, M_c= C C_1$. 设 $A_0, B_0, C_0$ 分别平分边 $B C 、 C A 、 A B$. 由相交弦定理得 $\frac{a^2}{4}=A_0 B \cdot A_0 C=A_0 A_1 \cdot A_0 A=\left(M_a-\right. \left.m_a\right) \cdot m_a$, 又由中线长公式, $m_a^2=A A_0^2=\frac{1}{2}\left(b^2+c^2\right)- \frac{1}{4} a^2$. 即 $4 m_a^2=2\left(b^2+c^2+a^2\right)-3 a^2=8 k^2-3 a^2$, 其中
+$k=\frac{1}{2} \cdot \sqrt{a^2+b^2+c^2}$, 且 $m_a^2+m_b^2+m_c^2=\frac{3}{4}\left(a^2+\right. \left.b^2+c^2\right)$.
+于是 $8 k^2-4 m_a^2=3 a^2=12 \cdot \frac{a^2}{4}=12 \cdot\left(M_a-m_a\right) \cdot m_a$, 即 $M_a=m_a+ \frac{8 k^2-4 m_a^2}{12 m_a}=\frac{8 \cdot\left(k^2+m_a^2\right)}{12 m_a}=\frac{2 k}{3} \cdot\left(\frac{k}{m_a}+\frac{m_a}{k}\right) \geqslant \frac{4 k}{3}$.
+同理, $M_b \geqslant \frac{4 k}{3}, M_c \geqslant \frac{4 k}{3}$.
+于是 $M_a+M_b+M_c \geqslant 4 k=2 \cdot \sqrt{a^2+b^2+c^2}=\frac{4}{3} \cdot \sqrt{3 \cdot\left(m_a^2+m_b^2+m_c^2\right)}$ (由柯西不等式) $\geqslant \frac{4}{3} \cdot\left(m_a+m_b+m_c\right)$. 得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 如图, 设 $\triangle A B C$ 内存在一点 $F$, 使得 $\angle A F B= \angle B F C=\angle C F A$, 直线 $B F 、 C E$ 分别交 $A C$ 、 $A B$ 于 $D 、 E$. 证明: $A B+A C \geqslant 4 D E$.
+%%<SOLUTION>%%
+证明: 设 $A F=x, B F=y, C F=z$. 由 $S_{\triangle A C F}=S_{\triangle A D F}+S_{\triangle C D F}$, 得 $D F=\frac{x z}{x+z}$. 同理, $E F=\frac{x y}{x+y}$. 于是, 只要证明 $\sqrt{x^2+x y+y^2}+\sqrt{x^2+x z+z^2} \geqslant 4 \sqrt{\left(\frac{x y}{x+y}\right)^2+\left(\frac{x z}{x+z}\right)^2+\left(\frac{x y}{x+y}\right)\left(\frac{x z}{x+z}\right)}$. 因为 $x+ y \geqslant \frac{4 x y}{x+y}, x+z \geqslant \frac{4 x z}{x+z}$, 所以, 只要证 $\sqrt{x^2+x y+y^2}+\sqrt{x^2+x z+z^2} \geqslant \sqrt{(x+y)^2+(x+z)^2+(x+y)(x+z)}$.
+平方化简后得 $2 \sqrt{\left(x^2+x y+y^2\right)\left(x^2+x z+z^2\right)} \geqslant x^2+2(y+z) x+y z$, 再平方化简后得 $3\left(x^2-y z\right)^2 \geqslant 0$, 即原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16. 设 $H$ 为锐角 $\triangle A B C$ 的垂心, $\triangle A B C$ 的三条高线中最长的一条记为 $h_{\max }$. 证明: $A H+B H+ C H \leqslant 2 h_{\max }$.
+%%<SOLUTION>%%
+证明: 不妨设 $A B=c, A C=b, B C=a$, 且不妨设 $a \leqslant b \leqslant c$. 如图(<FilePath:./figures/fig-c10a16.png>), 作 $H$ 关于 $B C$ 的对称点 $H^{\prime}$, 连结 $H^{\prime} H 、 H^{\prime} B 、 H^{\prime} C$. 因 $\angle B C H^{\prime}=\angle B C H$, $\angle B C H=\angle B A H$, 所以, $A 、 B 、 H^{\prime} 、 C$ 四点共圆.
+则由托勒密定理知 $A H^{\prime}$. $B C=C H^{\prime} \cdot A B+B H^{\prime} \cdot A C \Leftrightarrow\left(2 h_a-A H\right) B C=C H \cdot A B+B H \cdot A C \geqslant C H \cdot B C+B H \cdot B C$. 故 $2 h_a-A H \geqslant B H+C H$, 因此 $A H+B H+C H \leqslant 2 h_a$. 因为 $h_a$ 是三条高线中最长的, 所以, $A H+B H+C H \leqslant 2 h_{\max }$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17. 设 $\triangle A B C$ 是等边三角形, $P$ 是其内部一点, 线段 $A P 、 B P 、 C P$ 依次交三边 $B C 、 C A 、 A B$ 于 $A_1 、 B_1 、 C_1$ 三点.
+证明: $A_1 B_1 \cdot B_1 C_1 \cdot C_1 A_1 \geqslant A_1 B \cdot B_1 C \cdot C_1 A$.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c10a17.png>), 由余弦定理 $A_1 B_1^2=A_1 C^2+B_1 C^2-A_1 C \cdot B_1 C \geqslant 2 A_1 C \cdot B_1 C- A_1 C \cdot B_1 C=A_1 C \cdot B_1 C$. 同理, $B_1 C_1^2 \geqslant B_1 A \cdot C_1 A, C_1 A_1^2 \geqslant C_1 B \cdot A_1 B$. 由塞瓦定理得 $\frac{A_1 C}{A_1 B} \cdot \frac{B_1 A}{B_1 C} \cdot \frac{C_1 B}{C_1 A}=1$. $A_1 B \cdot B_1 C \cdot C_1 A \cdot \sqrt{\frac{A_1 C \cdot B_1 A \cdot C_1 B}{A_1 B \cdot B_1 C \cdot C_1 A}}=A_1 B \cdot B_1 C \cdot C_1 A$.
+%%PROBLEM_END%%
+
+

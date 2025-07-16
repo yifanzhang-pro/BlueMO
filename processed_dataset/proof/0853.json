@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 已知: $S=\\{1,2, \\cdots, 21\\}$, 有限集 $A \\subseteq \\mathbf{N}^*$, 使得 $S$ 中任一元素或者属于 $A$,或者等于 $A$ 中两个不同元素的和.\n求满足条件的集合 $A$ 元素个数的最小值.",
+    "solution": "设 $A=\\left\\{a_1, a_2, \\cdots, a_t\\right\\}$.\n$A$ 中元素个数为 $t$, 二元子集数为 $\\mathrm{C}_t^2$, 故至多有 $t+\\mathrm{C}_t^2=\\frac{t(t+1)}{2}$ 个正整数值出现在 $A$ 中-一个元素或两个元素的和所对应的值中.\n由题意得, $\\frac{t(t+1)}{2} \\geqslant|S|=21 \\Rightarrow t \\geqslant 6$.\n若 $t=6$, 则 $S$ 中每个元素恰能表示成 $a_i(i=1,2, \\cdots, 6)$ 或 $a_i+a_j(1 \\leqslant i<j \\leqslant 6)$ 形式中的唯一一种方式.\n记 $B=\\left\\{a_i+a_j \\mid 1 \\leqslant i<j \\leqslant 6, i, j \\in \\mathbf{N}^*\\right\\}$. 此时计算 $\\sum_{x \\in S} x$.\n一方面, $\\sum_{x \\in S} x=1+2+\\cdots+21=231$ ;\n另一方面,\n$$\n\\sum_{x \\in S} x=\\sum_{x \\in A} x+\\sum_{x \\in B} x=\\sum_{i=1}^6 a_i+\\sum_{1 \\leqslant i<j \\leqslant 6}\\left(a_i+a_j\\right)=\\sum_{i=1}^6 a_i+5 \\sum_{i=1}^6 a_i=6 \\sum_{i=1}^6 a_i,\n$$\n这是偶数,因此矛盾! 从而 $t \\geqslant 7$.\n又当 $t=7$ 时, 取 $A=\\{1,2,3,6,10,14,18\\}$, 验证知该集合满足条件.\n综上,集合 $A$ 元素个数的最小值是 7 .",
+    "remark": "",
+    "figures": []
+}

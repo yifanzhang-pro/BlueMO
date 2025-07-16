@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题18 设函数 $f(x)=\\sin (\\omega x+\\varphi)\\left(\\omega>0,|\\varphi|<\\frac{\\pi}{2}\\right)$, 给出四个判断:\n(1) 它的图象关于直线 $x=\\frac{\\pi}{12}$ 对称; (2) 它的图象关于点 $\\left(\\frac{\\pi}{3}, 0\\right)$ 对称;\n(3) 它的最小正周期是 $\\pi$; (4) 在区间 $\\left[-\\frac{\\pi}{6}, 0\\right]$ 上是增函数.\n以其中两个论断作为条件, 另两个论断作为结论, 你认为正确的两个命题是",
+    "solution": "(1)(3) $\\Rightarrow$ (2)(4) 及 (2)(3) $\\Rightarrow$ (1)(4). 若 (3) 成立, 则 $\\omega=2$, 得 $f(x)=\\sin (2 x+\\varphi)$, 又 (1) 成立, 则 $x=\\frac{\\pi}{12}$ 时 $f(x)$ 有最大值或最小值, 即 $\\sin \\left(\\frac{\\pi}{6}+\\varphi\\right)= \\pm 1$, 从而\n$\\varphi=\\frac{\\pi}{3}$, 所以 $f(x)=\\sin \\left(2 x+\\frac{\\pi}{3}\\right)$, 它关于 $\\left(\\frac{\\pi}{3}, 0\\right)$ 成中心对称, 且在 $\\left[-\\frac{\\pi}{6}, 0\\right]$ 上单调递增.\n若 (3) 成立, 则 $\\omega=2$, 得 $f(x)=\\sin (2 x+\\varphi)$, 又 (2) 成立, 则当 $x=\\frac{\\pi}{3}$ 时, $f(x)=0$, 即 $\\sin \\left(\\frac{2 \\pi}{3}+\\varphi\\right)=0$. 从而 $\\varphi=\\frac{\\pi}{3}$, 所以 $f(x)=\\sin \\left(2 x+\\frac{\\pi}{3}\\right)$, 得 (1)(4) 成立.",
+    "remark": "",
+    "figures": []
+}

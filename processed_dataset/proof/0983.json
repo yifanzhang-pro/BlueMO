@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例4 解不等式\n$$\n2 \\cos x \\leqslant|\\sqrt{1+\\sin 2 x}-\\sqrt{1-\\sin 2 x}| \\leqslant \\sqrt{2}(0 \\leqslant x \\leqslant 2 \\pi) .\n$$",
+    "solution": "解:设 $|\\sqrt{1+\\sin 2 x}-\\sqrt{1-\\sin 2 x}|=2 y$, 则原不等式变形为 $\\cos x \\leqslant y \\leqslant \\frac{\\sqrt{2}}{2}$, 且有 $2 y=|| \\sin x+\\cos x|-| \\sin x-\\cos x||$.\n(1) 当 $0 \\leqslant x \\leqslant \\frac{\\pi}{4}$ 或 $\\frac{3 \\pi}{4} \\leqslant x \\leqslant \\frac{5 \\pi}{4}$ 或 $\\frac{7 \\pi}{4} \\leqslant x \\leqslant 2 \\pi$ 时, $y=|\\sin x|$, 原不等式变为 $\\cos x \\leqslant|\\sin x| \\leqslant \\frac{\\sqrt{2}}{2}$, 验证得 $\\frac{3 \\pi}{4} \\leqslant x \\leqslant \\frac{5 \\pi}{4}$.\n(2) 当 $\\frac{\\pi}{4} \\leqslant x \\leqslant \\frac{3 \\pi}{4}$ 或 $\\frac{5 \\pi}{4} \\leqslant x \\leqslant \\frac{7 \\pi}{4}$ 时, $y=|\\cos x|$, 原不等式变为 $\\cos x \\leqslant|\\cos x| \\leqslant \\frac{\\sqrt{2}}{2}$, 都成立.\n综上,解集为 $\\frac{\\pi}{4} \\leqslant x \\leqslant \\frac{7 \\pi}{4}$.\n评注本例的关键是根据范围去绝对值, 化简.",
+    "remark": "",
+    "figures": []
+}

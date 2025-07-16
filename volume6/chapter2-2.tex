@@ -1,0 +1,214 @@
+
+%%TEXT_BEGIN%%
+平均值不等式的几个证明.
+从这一节起都是讨论数学归纳法运用的一些其他表现形式与方法技巧.
+平均值不等式设 $a_1, a_2, \cdots, a_n$ 是 $n$ 个正实数.
+则
+$$
+\frac{a_1+a_2+\cdots+a_n}{n} \geqslant \sqrt[n]{a_1 a_2 \cdots a_n} . \label{eq1}
+$$
+其中 $\frac{1}{n}\left(a_1+\cdots+a_n\right)$ 称为 $a_1, \cdots, a_n$ 的算术平均值, 而 $\sqrt[n]{a_1 a_2 \cdots a_n}$ 称为 $a_1, \cdots, a_n$ 的几何平均值.
+证明一当 $n=1$ 时,式\ref{eq1} 显然成立; 当 $n=2$ 时,式\ref{eq1} 等价于 $a_1+a_2 \geqslant 2 \sqrt{a_1 a_2}$, 即 $\left(\sqrt{a_1}-\sqrt{a_2}\right)^2 \geqslant 0$, 故 式\ref{eq1} 成立.
+现设 式\ref{eq1}对 $n(\geqslant 2)$ 成立,考虑 $n+1$ 的情形.
+记 $A=\frac{1}{n+1}\left(a_1+\cdots+a_{n+1}\right)$, 则由归纳假设知
+$$
+\begin{aligned}
+& \frac{1}{2 n}(a_1+\cdots+a_{n+1}+\underbrace{A+\cdots+A}_{n-1 \uparrow A}) \\
+= & \frac{1}{2 n}\left(a_1+\cdots+a_n\right)+\frac{1}{2 n}(a_{n+1}+\underbrace{A+\cdots+A}_{n-1 \uparrow A}) \\
+\geqslant & \frac{1}{2}\left(\sqrt[n]{a_1 \cdots a_n}+\sqrt[n]{a_{n+1} \underbrace{A \cdots A}_{n-1 \uparrow A}}\right) \\
+\geqslant & \sqrt{\sqrt[n]{a_1 \cdots a_n} \cdot \sqrt[n]{a_{n+1} \cdot A^{n-1}}} \\
+= & \sqrt[2 n]{a_1 \cdots a_{n+1} A^{n-1}} .
+\end{aligned}
+$$
+注意到 $a_1+\cdots+a_{n+1}=(n+1) A$, 故 $\frac{1}{2 n}(a_1+\cdots+a_{n+1}+\underbrace{A+\cdots+A}_{n-1 \uparrow A})= \frac{1}{2 n}((n+1) A+(n-1) A)=A$, 所以
+$$
+A \geqslant \sqrt[2 n]{a_1 \cdots a_{n+1} A^{n-1}},
+$$
+进而 $A^{n+1} \geqslant a_1 \cdots a_{n+1}$, 即可得
+$$
+\frac{1}{n+1}\left(a_1+\cdots+a_{n+1}\right) \geqslant \sqrt[n+1]{a_1 \cdots a_{n+1}} .
+$$
+故式\ref{eq1}对 $n+1$ 成立.
+所以,对任意 $n \in \mathbf{N}^*$, 不等式\ref{eq1}成立.
+证明二利用式\ref{eq1}对 $n=2$ 成立 (证明同上), 由数学归纳法易证: 式\ref{eq1} 对 $n= 2^k\left(k \in \mathbf{N}^*\right)$ 都成立.
+事实上,若 式\ref{eq1}对 $2^k$ 成立, 则 $n=2^{k+1}$ 时,有
+$$
+\begin{aligned}
+\frac{1}{2^{k+1}}\left(a_1+\cdots+a_{2^{k+1}}\right) & =\frac{1}{2}\left(\frac{1}{2^k}\left(a_1+\cdots+a_{2^k}\right)+\frac{1}{2^k}\left(a_{2^k+1}+\cdots+a_{2^{k+1}}\right)\right) \\
+& \geqslant \frac{1}{2}\left(\sqrt[2^k]{a_1 \cdots a_{2^k}}+\sqrt[2^k]{a_{2^k+1} \cdots a_{2^{k+1}}}\right) \\
+& \geqslant \sqrt{\sqrt[2^k]{a_1 \cdots a_{2^k}} \cdot \sqrt[2^k]{a_{2^k+1} \cdots a_{2^{k+1}}}} \\
+& =\sqrt[2^{k+1}]{a_1 a_2 \cdots a_{2^{k+1}}} .
+\end{aligned}
+$$
+即式\ref{eq1}对 $n=2^k, k=1,2, \cdots$ 都成立.
+下面来讨论 $n$ 的情形: 对任意 $n \in \mathbf{N}^*$, 取 $k \in \mathbf{N}$, 使得 $2^k \leqslant n<2^{k+1}$, 并记 $A=\frac{1}{n}\left(a_1+\cdots+a_n\right)$, 则由前面的结论, 可知
+$$
+\begin{aligned}
+& \frac{1}{2^{k+1}}(a_1+\cdots+a_n+\underbrace{A+\cdots+A}_{2^{k+1} \cdots n \uparrow A}) \\
+\geqslant & \sqrt[2^{k+1}]{a_1 \cdots a_n \underbrace{A \cdots A}_{2^{k+1}-n \uparrow A}} .
+\end{aligned}
+$$
+结合 $a_1+\cdots+a_n=n A$, 可得
+$$
+A \geqslant \sqrt[2^{k+1}]{a_1 \cdots a_n A^{2^{k+1}-n}} .
+$$
+进而, 有 $A^n \geqslant a_1 \cdots a_n$, 从而可知, 式\ref{eq1} 对 $n$ 成立.
+证明三由前面的证明知, 式\ref{eq1}对 $n=2^k$ 都成立, 这表明存在无穷多个正整数 $n$, 使得式\ref{eq1}成立.
+现设式\ref{eq1}对 $n+1$ 成立, 则对 $n$ 的情形, 记 $A=\frac{1}{n}\left(a_1+\cdots+a_n\right)$, 有
+$$
+\frac{1}{n+1}\left(a_1+\cdots+a_n+A\right) \geqslant \sqrt[n+1]{a_1 \cdots a_n \cdot A},
+$$
+结合 $a_1+\cdots+a_n=n A$, 就有 $A \geqslant \sqrt[n+1]{a_1 \cdots a_n \cdot A}$, 依此可推出 $A \geqslant \sqrt[n]{a_1 \cdots a_n}$,
+即 式\ref{eq1} 对 $n$ 成立.
+所以,式\ref{eq1}对任意 $n \in \mathbf{N}^*$ 都成立.
+说明这里用到了"补漏洞"的思想, 它是反向数学归纳法的基本应用.
+反向归纳法又称为倒推归纳法.
+其基本结构如下:
+设关于正整数 $n$ 的命题 (或性质) $P(n)$ 满足:
+(1) 对无穷多个正整数 $n, P(n)$ 成立;
+(2) 由 $P(n+1)$ 成立可推出 $P(n)$ 成立.
+则对任意 $n \in \mathbf{N}^*, P(n)$ 都成立.
+证明用反证法处理.
+若存在 $m \in \mathbf{N}^*$, 使得 $P(m)$ 不成立, 我们用数学归纳法证明: 对任意 $n \geqslant m, P(n)$ 都不成立 (从而导出至多只有有限个 $n \in \mathbf{N}^*$, 使得 $P(n)$ 成立, 与条件 (1) 矛盾).
+事实上, 由反证法假设知, $P(m)$ 不成立.
+现设 $P(n)(n \geqslant m)$ 不成立, 则由 (2) 知, $P(n+1)$ 不成立 (利用(2) 的逆否命题).
+所以, 由数学归纳法原理知, 对任意 $n \geqslant m, P(n)$ 都不成立, 矛盾.
+从而, 反向归纳法是正确的.
+对比平均值不等式的后两个证明, 它们都先证明了命题对无穷多个 $n \in \mathbf{N}^*$ 成立, 然后在此基础上证明命题对每个 $n \in \mathbf{N}^*$ 成立.
+这个想法在许多场合都会用到.
+平均值不等式可能是数学中证明方法最多的定理, 这里只是给出了利用数学归纳法证明中最常见的方法, 并将这些证明的思想与方法应用于求解其他问题.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设函数 $f: \mathbf{N}^* \rightarrow[1,+\infty)$ 满足:
+(1) $f(2)=2$;
+(2) 对任意 $m, n \in \mathbf{N}^*$, 有 $f(m n)=f(m) f(n)$;
+(3)当 $m<n$ 时,有 $f(m)<f(n)$.
+证明: 对任意正整数 $n$, 都有 $f(n)=n$.
+%%<SOLUTION>%%
+证明:由条件 (1)、(2) 可知 $f(1)=1$, 现设 $f\left(2^k\right)=2^k, k \in \mathbf{N}$, 则 $f\left(2^{k+1}\right)=f\left(2^k\right) f(2)=2^k \times 2=2^{k+1}$. 于是, 对任意 $k \in \mathbf{N}$, 都有 $f\left(2^k\right)=2^k$.
+现在来讨论 $f(n)$ 的值.
+设 $f(n)=l$, 则由 (2) 及数学归纳法, 可知对任意 $m \in \mathbf{N}^*$, 都有 $f\left(n^m\right)=l^m$.
+设 $2^k \leqslant n^m<2^{k+1}$, 则由 (3) 知 $f\left(2^k\right) \leqslant f\left(n^m\right)<f\left(2^{k+1}\right)$, 于是, 由前面的结论知 $2^k \leqslant l^m<2^{k+1}$, 对比 $2^k \leqslant n^m<2^{k+1}$, 可知
+$$
+\frac{1}{2}<\left(\frac{n}{l}\right)^m<2 . \label{eq1}
+$$
+上式对任意 $m \in \mathbf{N}^*$ 都成立.
+若 $n>l$, 我们取 $m>\frac{l}{n-l}$, 就有
+$$
+\left(\frac{n}{l}\right)^m=\left(1+\frac{n-l}{l}\right)^m \geqslant 1+m \cdot \frac{n-l}{l}>2,
+$$
+与式\ref{eq1}矛盾.
+同样地, 若 $n<l$, 取 $m>\frac{n}{l-n}$, 就有 $\left(\frac{l}{n}\right)^m>2$, 即 $\left(\frac{n}{l}\right)^m<\frac{1}{2}$, 也与 式\ref{eq1}矛盾.
+所以, 只能是 $n=l$.
+综上可知, 对任意 $n \in \mathbf{N}^*$, 都有 $f(n)=n$.
+说明如果函数 $f$ 是 $\mathbf{N}^*$ 到 $\mathbf{N}^*$ 的映射, 那么问题要简单得多, 请读者给出证明.
+类似地,用此方法还可证明著名的 Jenson 不等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 求所有的函数 $f: \mathbf{N}^* \rightarrow \mathbf{N}^*$, 使得对任意 $m 、 n \in \mathbf{N}^*$, 都有
+$$
+f(m)^2+f(n) \mid\left(m^2+n\right)^2 . \label{eq1}
+$$
+%%<SOLUTION>%%
+解:设 $f$ 是一个满足条件的函数, 在式\ref{eq1}中令 $m=n==1$, 就有 $\left(f(1)^2+\right. f(1)) \mid 4$, 即 $f(1)(f(1)+1) \mid 4$, 由于 $f(1) \geqslant 2$ 导致 $f(1)(f(1)+1) \geqslant 6$, 故只能是 $f(1)=1$.
+下面我们先证明: 对任意素数 $p$, 都有 $f(p-1)=p-1, \label{eq2}$.
+事实上, 对任意素数 $p$, 在 式\ref{eq1} 中令 $m=1, n=p-1$, 则 $(f(1)+ f(p-1)) \mid p^2$, 即 $(1+f(p-1)) \mid p^2$, 从而 $f(p-1)+1=p$ 或 $p^2$, 若为前者, 则 (2) 已成立; 若为后者, 即 $f(p-1)=p^2-1$, 此时, 在 式\ref{eq1} 中令 $m=p-1, n=$ 1 , 就有 $\left(f(p-1)^2+f(1)\right) \mid\left((p-1)^2+1\right)^2$, 即 $\left(\left(p^2-1\right)^2+1\right) \mid\left((p-1)^2+1\right)^2$, 但是 $\left((p-1)^2+1\right)^2 \leqslant\left((p-1)^2+(p-1)\right)^2=p^2(p-1)^2<(p+1)^2(p- 1)^2+1=\left(p^2-1\right)^2+1$,矛盾.
+所以, 式\ref{eq2} 成立.
+再证明: 对任意 $n \in \mathbf{N}^*$, 都有 $f(n)=n$.
+事实上,对任意正整数 $n$, 取 $k \in \mathbf{N}^*$, 使得 $k+1$ 为素数 (这样的 $k$ 有无穷多个), 在 式\ref{eq1} 中令 $m=k$, 结合 式\ref{eq2} 就有
+$$
+\left(k^2+f(n)\right) \mid\left(k^2+n\right)^2 . \label{eq3}
+$$
+注意到 $\left(k^2+n\right)^2=\left(k^2+f(n)+n-f(n)\right)^2=A\left(k^2+f(n)\right)+(n-f(n))^2$, 这里 $A$ 是某个整数.
+这样, 由式\ref{eq3}知
+$$
+\left(k^2+f(n)\right) \mid(n-f(n))^2 .
+$$
+上式表明, 数 $(n-f(n))^2$ 可以被无穷多个正整数整除(因为 $k$ 有无穷多种取法), 所以 $(n-f(n))^2=0$, 即 $f(n)=n$.
+综上可知, 只有一个函数满足条件, 即 $f(n)=n$.
+说明此题本质上只需证出对无穷多个 $k \in \mathbf{N}^*$, 有 $f(k)=k$, 然后将其余的漏洞补上, 选择式\ref{eq2}作为突破口是希望让被除数的因数个数尽量少, 这个技巧在整除理论中经常用到.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 求所有的函数 $f: \mathbf{N}^* \rightarrow \mathbf{N}^*$, 使得对任意 $n \in \mathbf{N}^*$ 及素数 $p$, 都有
+$$
+f(n)^p \equiv n(\bmod f(p)) . \label{eq1}
+$$
+%%<SOLUTION>%%
+解:对任意素数 $p$, 在式\ref{eq1}中取 $n=p$, 可知
+$$
+p \equiv f(p)^p \equiv 0(\bmod f(p)) .
+$$
+故 $f(p) \mid p$, 从而 $f(p)=1$ 或者 $p$.
+现在记 $S=\{p \mid p$ 为素数, $f(p)=p\}$, 依下面的三种情形讨论:
+情形一 $S$ 是一个无限集.
+我们利用上例的方法证明: 对任意 $n \in \mathbf{N}^*$, 都有 $f(n)=n$.
+事实上, 此时存在无穷多个素数 $p$, 使得 $f(p)=p$, 因此, 对任意 $n \in \mathbf{N}^*$, 都存在无穷多个素数 $p$, 使得 $n \equiv f(n)^p(\bmod p)$. 利用费马 (Fermat) 小定理, 有 $f(n)^p \equiv f(n)(\bmod p)$. 所以 $f(n) \equiv n(\bmod p)$, 这表明 $f(n)-n$ 是无穷多个素数的倍数,故 $f(n)=n$.
+情形二 $S$ 为空集.
+则对任意素数 $p$, 都有 $f(p)=1$. 此时, 对其余的正整数 $n, f(n)$ 可取任意正整数 (\ref{eq1} 式都满足).
+情形三 $S$ 是一个非空有限集.
+设 $p$ 为 $S$ 中最大的素数, 若 $p \geqslant 3$, 我们证明这将导致矛盾, 从而, 得到 $S=\{2\}$.
+由 $p$ 的最大性, 知对任意素数 $q>p$, 都有 $f(q)=1$, 由 式\ref{eq1} 得, $q \equiv f(q)^p \equiv 1(\bmod p)$, 即 $q \equiv 1(\bmod p)$.
+现在记 $Q$ 为所有不超过 $p$ 的奇素数之积, 则 $Q+2$ 的每一个素因子都大于 $p$ (注意, 这里用到 $p \geqslant 3$ ), 这样, 结合上面得出的结论知 $Q+-2 \equiv 1(\bmod p)$, 导致 $p \mid Q+1$,与 $p \mid Q$ 矛盾.
+上述讨论表明 $S=\{2\}$, 知 $f(2)=2$, 而对奇.
+数 $p$, 都有 $f(p)=1$. 由 式\ref{eq1} 知, 只需 $f(n)^2 \equiv n(\bmod 2)$. 因此, 对其余的正整数 $n, f(n)$ 只需取与 $n$ 同奇偶的正整数即可.
+直接验证, 可知每一种情形所得的函数都符合要求, 它们即为所求.
+说明求 $\mathbf{N}^* \rightarrow \mathbf{N}^*$ 上的函数, 本质上是讨论正整数数列 $\{f(n)\}$ 相关的问题, 这里都采用了素因数分析的方法, 它属于数论方法的迁移, 同样, 求解函数方程的一些思路也可用来讨论这类问题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $k$ 为给定的正整数, 求所有的函数 $f: \mathbf{N}^* \rightarrow \mathbf{N}^*$, 使得对任意 $m$ 、 $n \in \mathbf{N}^*$, 都有
+$$
+(f(m)+f(n)) \mid(m+n)^k . \label{eq1}
+$$
+%%<SOLUTION>%%
+解:显然, 函数 $f(n)=n$ 符合条件, 它是否为满足条件的唯一函数呢? 下证明之.
+先证一个结论: $f$ 是一个单射.
+事实上, 若存在 $a 、 b \in \mathbf{N}^*$, 使得 $a \neq b$, 但是 $f(a)=f(b)$, 则由 式\ref{eq1} 知, 对任意 $n \in \mathbf{N}^*$, 都有
+$$
+(f(a)+f(n))\left|(a+n)^k,(f(b)+f(n))\right|(b+n)^k .
+$$
+因此,对任意 $n \in \mathbf{N}^*$, 数 $f(a)+f(n)$ 都是 $(a+n)^k$ 与 $(b+n)^k$ 的公因数.
+现在取一个素数 $p>\max \{a,|b-a|\}$, 然后令 $n=p-a$. 由于 $(a+n$, $b+n)=(a+n, b-a)=(p, b-a)=1$, 故 $\left((a+n)^k,(b+n)^k\right)=1$, 导致 $f(a)+f(n)=1$, 与 $f(a) 、 f(n)$ 都为正整数矛盾.
+所以, $f$ 是一个单射.
+再证明: 对任意 $m \in \mathbf{N}^*$, 有 $|f(m+1)-f(m)|=1$.
+在式\ref{eq1}中分别用 $(m, n)$ 和 $(m+1, n)$ 的结论, 有
+$$
+(f(m)+f(n))\left|(m+n)^k,(f(m+1)+f(n))\right|(m+1+n)^k . 
+$$
+而 $(m+n, m+1+n)=1$, 故 $(f(m)+f(n), f(m+1)+f(n))=1$, 进而, 当 $m$ 固定时,对任意 $n \in \mathbf{N}^*$, 有
+$$
+(f(n)+f(m), f(m+1)-f(m))=1 . \label{eq2}
+$$
+如果 $|f(m+1)-f(m)| \neq 1$, 那么存在素数 $p$, 使得 $p|| f(m+1)- f(m) \mid$. 现在取 $\alpha \in \mathbf{N}^*$, 使得 $n=p^\alpha-m$ 为正整数, 则由 式\ref{eq1} 知 $f(n)+f(m) \mid p^{\alpha k}$, 从而 $f(n)+f(m)=p^l$, 这里 $l$ 为某个正整数, 导致
+$$
+(f(n)+f(m), f(m+1)-f(m))=\left(p^l, f(m+1)-f(m)\right) \geqslant p .
+$$
+与\ref{eq2}式矛盾.
+最后,我们证明: 对任意 $n \in \mathbf{N}^*$, 都有 $f(n)=n$.
+由前面的结论知, 对任意 $m \in \mathbf{N}^*$, 都有 $f(m+1)-f(m)=1$ 或者 $f(m+1)-f(m)=-1$. 如果这两种情形在同一个符合要求的函数 $f$ 中都出现, 那么存在 $m \in \mathbf{N}^*$, 使得 $(f(m+1)-f(m), f(m+2)-f(m+1))= (1,-1)$ 或者 $(-1,1)$, 都导致 $f(m+2)=f(m)$, 与 $f$ 为单射矛盾.
+所以,要么对任意 $m \in \mathbf{N}^*$, 都有 $f(m+1)-f(m)=1$, 要么对任意 $m \in \mathbf{N}^*$, 都有
+$$
+f(m+1)-f(m)=-1 \text {. }
+$$
+注意到, $f$ 是 $\mathbf{N}^* \rightarrow \mathbf{N}^*$ 上的函数, 知只能是 : 对任意 $m \in \mathbf{N}^*$, 都有 $f(m+ 1)-f(m)=1$. 依此可知, 对任意 $n \in \mathbf{N}^*$, 都有 $f(n)=n+c$ (这里 $c= f(1)-1 \geqslant 0)$.
+如果 $c>0$, 我们取一个素数 $p>2 c$, 利用 (1) 知 $f(1)+f(p-1) \mid p^k$, 得 $p+2 c \mid p^k$, 这要求 $p+2 c$ 为 $p$ 的幂次, 从而 $p \mid p+2 c$, 导致 $p \mid 2 c$, 矛盾.
+所以 $c=0$.
+综上可知, 只有函数 $f(n)=n$ 符合要求.
+%%PROBLEM_END%%
+
+

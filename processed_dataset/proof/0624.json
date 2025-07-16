@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例7. 证明: 任意四边形四条边的平方和, 等于两条对角线的平方和, 加上对角线中点连线的平方的 4 倍.",
+    "solution": "证明:设四边形四个顶点在直角坐标系中的坐标分别为 $A_i\\left(x_i, y_i\\right), i= 1,2,3,4$, 则 $A_1 A_3, A_2 A_4$ 的中点 $M, N$ 的坐标分别为 $\\left(\\frac{x_1+x_3}{2}, \\frac{y_1+y_3}{2}\\right)$,\n$$\n\\left(\\frac{x_2+x_4}{2}, \\frac{y_2+y_4}{2}\\right) \\text {. }\n$$\n由于\n$$\n\\begin{aligned}\n& 4\\left(\\frac{x_1+x_3}{2}-\\frac{x_2+x_4}{2}\\right)^2+\\left(x_1-x_3\\right)^2+\\left(x_2-x_4\\right)^2 \\\\\n= & \\left(x_1+x_3-x_2-x_4\\right)^2+\\left(x_1-x_3\\right)^2+\\left(x_2-x_4\\right)^2 \\\\\n= & 2\\left(x_1^2+x_2^2+x_3^2+x_4^2-x_1 x_2-x_2 x_3-x_3 x_4-x_4 x_1\\right) \\\\\n= & \\left(x_1-x_2\\right)^2+\\left(x_2-x_3\\right)^2+\\left(x_3-x_4\\right)^2+\\left(x_4-x_1\\right)^2,\n\\end{aligned}\n$$\n同理有\n$$\n\\begin{aligned}\n& 4\\left(\\frac{y_1+y_3}{2}-\\frac{y_2+y_4}{2}\\right)^2+\\left(y_1-y_3\\right)^2+\\left(y_2-y_4\\right)^2 \\\\\n= & \\left(y_1-y_2\\right)^2+\\left(y_2-y_3\\right)^2+\\left(y_3-y_4\\right)^2+\\left(y_4-y_1\\right)^2,\n\\end{aligned}\n$$\n以上两式相加, 根据两点距离公式就有\n$$\n\\begin{aligned}\n& 4|M N|^2+\\left|A_1 A_3\\right|^2+\\left|A_2 A_4\\right|^2 \\\\\n= & \\left|A_1 A_2\\right|^2+\\left|A_2 A_3\\right|^2+\\left|A_3 A_4\\right|^2+\\left|A_4 A_1\\right|^2,\n\\end{aligned}\n$$\n故命题成立.",
+    "remark": "注:本题用解析法求解.\n大体来讲, 解析法解题具有如下一些规律:\n如果几何题中出现直角, 可以考虑让坐标轴成为这个直角的两边; 凡是涉及平方关系的问题, 运用解析几何往往相对比较方便 (本题是个鲜明的例子) ; 有些问题, 可以用数字代替字母而丝毫不影响问题的实质, 反过来有时候也可以用字母代替数字, 将内在结构明显化.\n当然, 如何选取记号更合适要视具体问题而定.\n在本题中, 我们选择最一般的坐标进行代数运算, 这样容易保持算式的对称性, 便于边观察边证明, 并且由于横、纵坐标的对称关系, 只需证明横坐标的等式, 同理便可得到纵坐标的等式, 又达到了事半功倍的效果.",
+    "figures": []
+}

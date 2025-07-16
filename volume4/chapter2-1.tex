@@ -1,0 +1,1050 @@
+
+%%TEXT_BEGIN%%
+平均值不等式的应用.
+2. 1 平均值不等式在不等式证明中的应用.
+下面举例说明平均值不等式在证明各种竞赛问题中的应用.
+在证明过程中,应用灵活,具有较高的技巧性.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $f(x)=\frac{a}{a^2-1}\left(a^x-a^{-x}\right)(a>0, a \neq 1)$, 证明: 对正整数 $n \geqslant$ 2 , 有
+$$
+f(n)>n .
+$$
+%%<SOLUTION>%%
+证明:当 $n \geqslant 2$ 时, 由平均值不等式, 得
+$$
+\begin{aligned}
+f(n) & =\frac{a}{a^2-1}\left(a^n-a^{-n}\right)=\frac{a}{a^2-1}\left(a^n-\frac{1}{a^n}\right) \\
+& =\frac{a}{a^2-1}\left(a-\frac{1}{a}\right)\left(a^{n-1}+a^{n-2} \frac{1}{a}+a^{n-3} \frac{1}{a^2}+\cdots+a \frac{1}{a^{n-2}}+\frac{1}{a^{n-1}}\right) \\
+& \geqslant \frac{a}{a^2-1}\left(a-\frac{1}{a}\right) n \sqrt[n]{a^{n-1} a^{n-2} \cdots a^2 a \frac{1}{a} \frac{1}{a^2} \cdots \frac{1}{a^{n-1}}}=n,
+\end{aligned}
+$$
+当且仅当 $a=1$ 时等号成立,故命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $x>0$, 证明: $2^{12 \sqrt{x}}+2^{4 \sqrt[4]{x}} \geqslant 2 \cdot 2^{\sqrt[6]{x}}$.
+%%<SOLUTION>%%
+证明:由该不等式的外形, 很容易想到平均值不等式.
+由平均值不等式, 得
+$$
+\begin{gathered}
+2^{12 \sqrt{x}}+2^{\sqrt[4]{x}} \geqslant 2 \cdot \sqrt{2^{12 \sqrt{x}} 2^{4 \sqrt{x}}}=2 \cdot 2^{\frac{12 \sqrt{x}+4 \sqrt{x}}{2}} . \\
+\frac{\sqrt[12]{x}+\sqrt[4]{x}}{2} \geqslant\left(x^{\frac{1}{12}} x^{\frac{1}{4}}\right)^{\frac{1}{2}}=x^{\frac{1}{6}} .
+\end{gathered}
+$$
+所以
+$$
+2^{12 \sqrt{x}}+2^{4 \sqrt{x}} \geqslant 2 \cdot 2^{\sqrt[6]{x}} \text {. }
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $a_i>0, i=1,2, \cdots, n$ 满足 $a_1 a_2 \cdots a_n=1$. 证明:
+$$
+\left(2+a_1\right)\left(2+a_2\right) \cdots\left(2+a_n\right) \geqslant 3^n .
+$$
+%%<SOLUTION>%%
+当 $n=1$ 时,则 $a_1=1$, 显然成立.
+假定当 $n=k$ 时成立,那么, 对于 $n= k+1$, 由于 $a_1 a_2 \cdots a_k a_{k+1}=1$, 如果有某个 $a_i=1$, 则由归纳假设, 命题成立.
+如果 $a_i$ 都不为 1 , 则必有大于 1 的, 且必有小于 1 的, 不妨设 $a_k>1, a_{k+1}<1$. 则由归纳假设, 得
+$$
+\left(2+a_1\right)\left(2+a_2\right) \cdots\left(2+a_{k-1}\right)\left(2+a_k a_{k+1}\right) \geqslant 3^k .
+$$
+于是, 为了证明命题, 只要证明
+$$
+\left(2+a_k\right)\left(2+a_{k+1}\right) \geqslant 3\left(2+a_k a_{k+1}\right)
+$$
+便可.
+因为
+$$
+\left(2+a_k\right)\left(2+a_{k+1}\right) \geqslant 3\left(2+a_k a_{k+1}\right),
+$$
+等价于
+$$
+4+2 a_k+2 a_{k+1}+a_k a_{k+1} \geqslant 6+3 a_k a_{k+1},
+$$
+等价于
+$$
+\begin{gathered}
+a_k+a_{k+1}-a_k a_{k+1}-1 \geqslant 0, \\
+\quad\left(a_k-1\right)\left(1-a_{k+1}\right) \geqslant 0 .
+\end{gathered}
+$$
+由假设最后不等式成立, 故命题成立.
+注:这里, 选取 $a_k>1, a_{k+1}<1$, 在平均值不等式的证明方法四中有过类似的考虑.
+证明:由于对任意的 $i$,
+$$
+2+a_i=1+1+a_i \geqslant 3 \sqrt[3]{a_i} .
+$$
+故 $\quad\left(2+a_1\right)\left(2+a_2\right) \cdots\left(2+a_n\right) \geqslant 3^n \sqrt[3]{a_1 a_2 \cdots a_n}=3^n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $a>b>0$, 求证: $\sqrt{2} a^3+\frac{3}{a b-b^2} \geqslant 10$.
+%%<SOLUTION>%%
+证明:因为 $a b-b^2=b(a-b) \leqslant \frac{[b+(a-b)]^2}{4}=\frac{a^2}{4}$, 所以
+$$
+\begin{aligned}
+& \sqrt{2} a^3+\frac{3}{a b-b^2} \geqslant \sqrt{2} a^3+\frac{12}{a^2} \\
+= & \frac{\sqrt{2}}{2} a^3+\frac{\sqrt{2}}{2} a^3+\frac{4}{a^2}+\frac{4}{a^2}+\frac{4}{a^2} \\
+\geqslant & 5 \sqrt[5]{\frac{\sqrt{2}}{2} a^3 \cdot \frac{\sqrt{2}}{2} a^3 \cdot \frac{4}{a^2} \cdot \frac{4}{a^2} \cdot \frac{4}{a^2}}=10,
+\end{aligned}
+$$
+即命题成立.
+%%<REMARK>%%
+注:为了消去 $a$, 将 $\sqrt{2} a^3$ 写成两项, $\frac{12}{a^2}$ 写成三项.
+这样, 利用平均值不等式, 它们的乘积为一个常数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $a, b, c>0$, 求证:
+$$
+\frac{c}{a}+\frac{a}{b+c}+\frac{b}{c} \geqslant 2 .
+$$
+%%<SOLUTION>%%
+证明:由平均值不等式, 得
+$$
+\begin{aligned}
+\frac{c}{a}+\frac{a}{b+c}+\frac{b}{c} & =\frac{c}{a}+\frac{a}{b+c}+\frac{b+c}{c}-1 \\
+& \geqslant 3 \sqrt[3]{\frac{c}{a} \cdot \frac{a}{b+c} \cdot \frac{b+c}{c}}-1 \\
+& =3-1=2,
+\end{aligned}
+$$
+即命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $x+y+z=0$, 求证:
+$$
+6\left(x^3+y^3+z^3\right)^2 \leqslant\left(x^2+y^2+z^2\right)^3 .
+$$
+%%<SOLUTION>%%
+证明:由 $x+y+z=0$ 及其对称性, 不妨假设 $x, y \geqslant 0, z \leqslant 0$, 由于 $x+y=-z$, 得 $z^2=(x+y)^2$, 从而
+$$
+\left(x^2+y^2+z^2\right)^3=8\left(x^2+x y+y^2\right)^3 .
+$$
+由 $A_3 \geqslant G_3$, 得
+$$
+\begin{aligned}
+x^2+x y+y^2 & =\frac{x(x+y)}{2}+\frac{y(x+y)}{2}+\frac{x^2+y^2}{2} \\
+& \geqslant 3 \sqrt[3]{\frac{x y(x+y)^2}{4} \cdot \frac{x^2+y^2}{2}} \\
+& \geqslant 3 \sqrt[3]{\frac{x^2 y^2 z^2}{4}},
+\end{aligned}
+$$
+所以
+$$
+\left(x^2+y^2+z^2\right)^3 \geqslant 54 x^2 y^2 z^2=6\left(x^3+y^3+z^3\right)^2 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $a_1, a_2, \cdots, a_n \in \mathbf{R}^{+}, S=a_1+a_2+\cdots+a_n$. 求证:
+$$
+\left(1+a_1\right)\left(1+a_2\right) \cdots\left(1+a_n\right) \leqslant 1+S+\frac{S^2}{2 !}+\cdots+\frac{S^n}{n !} .
+$$
+%%<SOLUTION>%%
+证明:由于 $G_n \leqslant A_n$, 得
+$$
+\begin{aligned}
+& \left(1+a_1\right)\left(1+a_2\right) \cdots\left(1+a_n\right) \\
+\leqslant & \left(\frac{n+a_1+a_2+\cdots+a_n}{n}\right)^n=\left(1+\frac{S}{n}\right)^n \\
+= & 1+\mathrm{C}_n^1\left(\frac{S}{n}\right)+\mathrm{C}_n^2\left(\frac{S}{n}\right)^2+\cdots+\mathrm{C}_n^m\left(\frac{S}{n}\right)^m+\cdots+\mathrm{C}_n^n\left(\frac{S}{n}\right)^n .
+\end{aligned}
+$$
+因为 $n !=(n-m) !(n-m+1) \cdots n \leqslant(n-m) ! n^m$,
+所以
+$$
+\mathrm{C}_n^m\left(\frac{S}{n}\right)^m=\frac{n !}{m !(n-m) !} \cdot \frac{1}{n^m} S^m \leqslant \frac{S^m}{m !},
+$$
+从而命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设 $k, n$ 为正整数, 且 $1 \leqslant k \leqslant n, a_i \in \mathbf{R}^{+}$, 满足 $a_1+a_2+\cdots+ a_k=a_1 a_2 \cdots a_k$. 求证:
+$$
+a_1^{n-1}+a_2^{n-1}+\cdots+a_k^{n-1} \geqslant k n,
+$$
+并确定等号成立的充要条件.
+%%<SOLUTION>%%
+证明:令 $a=a_1+a_2+\cdots+a_k=a_1 a_2 \cdots a_k$. 由平均值不等式, 得
+$$
+a \geqslant k a^{\frac{1}{k}} \text {, 即 } a \geqslant k^{\frac{k}{k-1}} \text {. }
+$$
+又因为
+$$
+a_1^{n-1}+a_2^{n-1}+\cdots+a_k^{n-1} \geqslant k\left(a_1 a_2 \cdots a_k\right)^{\frac{n-1}{k}}=k a^{\frac{n-1}{k}} \geqslant k \cdot k^{\frac{n-1}{k-1}},
+$$
+于是只需证明
+$$
+k^{\frac{n-1}{k-1}} \geqslant n
+$$
+再由平均值不等式, 得
+$$
+k=\frac{(k-1) n+(n-k) \times 1}{n-1} \geqslant n^{\frac{k-1}{n-1}},
+$$
+从而不等式成立.
+不难看出, 当 $k=n$ 且 $a_1=a_2=\cdots=a_k$ 时等号成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设 $a_i>0(i=1,2, \cdots, n)$, 求证:
+$$
+\sum_{k=1}^n k a_k \leqslant \frac{n(n-1)}{2}+\sum_{k=1}^n a_k^k .
+$$
+%%<SOLUTION>%%
+证明:因为 $\frac{n(n-1)}{2}=\sum_{k=1}^n(k-1)$, 所以由平均值不等式, 得
+$$
+\frac{n(n-1)}{2}+\sum_{k=1}^n a_k^k
+$$
+$$
+\begin{aligned}
+& =\sum_{k=1}^n\left[(k-1)+a_k^k\right] \\
+& =\sum_{k=1}^n\left(1+1+\cdots+1+a_k^k\right) \\
+& \geqslant \sum_{k=1}^n k \sqrt[k]{1^{k-1} \cdot a_k^k}=\sum_{k=1}^n k a_k,
+\end{aligned}
+$$
+故命题成立.
+%%<REMARK>%%
+注:应用平均值不等式时, 通常要将乘幂看作连乘积, 有时还要巧妙地添上数 1 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设 $a_i>0, b_i>0$ 且满足 $a_1+a_2+\cdots+a_n \leqslant 1, b_1+b_2+\cdots+ b_n \leqslant n$. 求证:
+$$
+\left(\frac{1}{a_1}+\frac{1}{b_1}\right)\left(\frac{1}{a_2}+\frac{1}{b_2}\right) \cdots\left(\frac{1}{a_n}+\frac{1}{b_n}\right) \geqslant(n+1)^n .
+$$
+%%<SOLUTION>%%
+证明:由已知条件和平均值不等式, 得
+$$
+\begin{gathered}
+a_1 a_2 \cdots a_n \leqslant\left(\frac{a_1+a_2+\cdots+a_n}{n}\right)^n \leqslant \frac{1}{n^n}, \\
+b_1 b_2 \cdots b_n \leqslant\left(\frac{b_1+b_2+\cdots+b_n}{n}\right)^n \leqslant 1 . \\
+\frac{1}{a_i}+\frac{1}{b_i}=\frac{1}{n a_i}+\cdots+\frac{1}{n a_i}+\frac{1}{b_i} \\
+\geqslant(n+1) \sqrt[n+1]{\left(\frac{1}{n a_i}\right)^n\left(\frac{1}{b_i}\right)}, \\
+\left(\frac{1}{a_1}+\frac{1}{b_1}\right)\left(\frac{1}{a_2}+\frac{1}{b_2}\right) \cdots\left(\frac{1}{a_n}+\frac{1}{b_n}\right) \\
+\geqslant(n+1)^n \sqrt[n+1]{\frac{1}{\left(n^n\right)^n} \frac{1}{\left(a_1 a_2 \cdots a_n\right)^n} \frac{1}{b_1 b_2 \cdots b_n}} \\
+\geqslant(n+1)^n .
+\end{gathered}
+$$
+故命题成立.
+%%<REMARK>%%
+注:此题证明的关键是将 $\frac{1}{a_i}$ 写成 $\frac{1}{n a_i}+\cdots+\frac{1}{n a_i}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 假设 $a 、 b 、 c$ 都是正数,证明:
+$$
+a b c \geqslant(a+b-c)(b+c-a)(c+a-b) .
+$$
+%%<SOLUTION>%%
+证明:如果 $a+b-c, b+c-a, c+a-b$ 中有负数, 不妨设 $a+b-c<0$,
+则 $c>a+b$. 故 $b+c-a$ 与 $c+a-b$ 均为正数, 则结论显然成立.
+若 $a+b-c, b+c-a, c+a-b$ 均非负, 则由平均值不等式, 得
+$$
+\sqrt{(a+b-c)(b+c-a)} \leqslant \frac{(a+b-c)+(b+c-a)}{2}=b .
+$$
+同理可得
+$$
+\begin{aligned}
+& \sqrt{(b+c-a)(c+a-b)} \leqslant \frac{(b+c-a)+(c+a-b)}{2}=c, \\
+& \sqrt{(c+a-b)(a+b-c)} \leqslant \frac{(c+a-b)+(a+b-c)}{2}=a .
+\end{aligned}
+$$
+将三式相乘,即得到我们要证明的问题,故命题成立.
+%%<REMARK>%%
+注:通过对部分变量应用平均值不等式,而且轮换使用, 从而得到结论的证明.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 假设正数 $a 、 b 、 c$ 满足 $(1+a)(1+b)(1+c)=8$. 证明 : $a b c \leqslant 1$.
+%%<SOLUTION>%%
+证明:由假设得
+$$
+1+(a+b+c)+(a b+b c+c a)+a b c=8 .
+$$
+再由平均值不等式, 得
+$$
+a+b+c \geqslant 3(a b c)^{\frac{1}{3}}, a b+b c+c a \geqslant 3(a b c)^{\frac{2}{3}} .
+$$
+当且仅当 $a=b=c$ 时等式成立.
+于是
+$$
+8 \geqslant 1+3(a b c)^{\frac{1}{3}}+3(a b c)^{\frac{2}{3}}+a b c=\left[1+(a b c)^{\frac{1}{3}}\right]^3 .
+$$
+由此, 得
+$$
+(a b c)^{\frac{1}{3}} \leqslant 2-1=1 .
+$$
+所以, $a b c \leqslant 1$, 当且仅当 $a=b=c$ 时等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13. 设 $n$ 为正整数,证明:
+$$
+n\left[(n+1)^{\frac{1}{n}}-1\right] \leqslant 1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n} \leqslant n-(n-1)\left(\frac{1}{n}\right)^{\frac{1}{n-1}} .
+$$
+%%<SOLUTION>%%
+证明:只证明不等式的左边,不等式的右边可同样处理.
+令 $A=\frac{1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}+n}{n}$, 则左边的不等式等价于
+$$
+A \geqslant(n+1)^{\frac{1}{n}}
+$$
+由平均值不等式, 得
+$$
+\begin{aligned}
+A & =\frac{(1+1)+\left(1+\frac{1}{2}\right)+\cdots+\left(1+\frac{1}{n}\right)}{n} \\
+& =\frac{2+\frac{3}{2}+\frac{4}{3}+\cdots+\frac{n+1}{n}}{n} \\
+& \geqslant \sqrt[n]{2 \cdot \frac{3}{2} \cdot \frac{4}{3} \cdots \frac{n+1}{n}}=(n+1)^{\frac{1}{n}} .
+\end{aligned}
+$$
+从而得
+$$
+1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n} \geqslant n\left[(n+1)^{\frac{1}{n}}-1\right] .
+$$
+不难看出, 当 $n=1$ 时等号成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14. 设 $a_i>0, i=1,2, \cdots, n, m>0$ 且满足 $\sum_{i=1}^n \frac{1}{1+a_i^m}=1$. 求证:
+$$
+a_1 a_2 \cdots a_n \geqslant(n-1)^{\frac{n}{m}} .
+$$
+%%<SOLUTION>%%
+证明一令 $x_i=\frac{1}{1+a_i^m}$, 则 $a_i^m=\frac{1-x_i}{x_i}$, 且 $x_i>0, i=1,2, \cdots, n$, $\sum_{i=1}^n x_i=1$
+于是 $\quad a_1^m a_2^m \cdots a_n^m=\frac{\left(x_2+\cdots+x_n\right) \cdots\left(x_1+x_2+\cdots+x_{n-1}\right)}{x_1 x_2 \cdots x_n}$
+$$
+\begin{aligned}
+& \geqslant \frac{(n-1) \sqrt[n-1]{x_2 x_3 \cdots x_n} \cdots(n-1) \sqrt[n-1]{x_1 x_2 \cdots x_{n-1}}}{x_1 x_2 \cdots x_n} \\
+& =(n-1)^n
+\end{aligned}
+$$
+故命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14. 设 $a_i>0, i=1,2, \cdots, n, m>0$ 且满足 $\sum_{i=1}^n \frac{1}{1+a_i^m}=1$. 求证:
+$$
+a_1 a_2 \cdots a_n \geqslant(n-1)^{\frac{n}{m}} .
+$$
+%%<SOLUTION>%%
+证明二令 
+$$
+\begin{gathered}
+a_i^m=\tan ^2 \alpha_i \text {, 则 } \sum_{i=1}^n \frac{1}{1+a_i^m}=1 \text { 等价于 } \\
+\sum_{i=1}^n \cos ^2 \alpha_i=1 .
+\end{gathered}
+$$
+其结论等价于
+$$
+\tan ^2 \alpha_1 \tan ^2 \alpha_2 \cdots \cdot \tan ^2 \alpha_n \geqslant(n-1)^n,
+$$
+即
+$$
+\sin ^2 \alpha_1 \sin ^2 \alpha_2 \cdots \sin ^2 \alpha_n \geqslant(n-1)^n \cos ^2 \alpha_1 \cos ^2 \alpha_2 \cdots \cos ^2 \alpha_n
+$$
+由平均值不等式, 得
+$$
+\begin{aligned}
+\sin ^2 \alpha_1 & =1-\cos ^2 \alpha_1=\cos ^2 \alpha_2+\cdots+\cos ^2 \alpha_n \\
+& \geqslant(n-1) \sqrt[n-1]{\cos ^2 \alpha_2 \cos ^2 \alpha_3 \cdots \cos ^2 \alpha_n} .
+\end{aligned}
+$$
+一般地,
+$$
+\begin{aligned}
+\sin ^2 \alpha_i & =1-\cos ^2 \alpha_i=\cos ^2 \alpha_1+\cdots+\cos ^2 \alpha_{i-1}+\cos ^2 \alpha_{i+1}+\cdots+\cos ^2 \alpha_n \\
+& \geqslant(n-1) \sqrt[n-1]{\cos ^2 \alpha_1 \cdots \cos ^2 \alpha_{i-1} \cos ^2 \alpha_{i+1} \cdots \cos ^2 \alpha_n} .
+\end{aligned}
+$$
+将它们相乘, 得
+$$
+\sin ^2 \alpha_1 \sin ^2 \alpha_2 \cdots \sin ^2 \alpha_n \geqslant(n-1)^n \cos ^2 \alpha_1 \cos ^2 \alpha_2 \cdots \cos ^2 \alpha_n .
+$$
+故命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例15. 设 $a, b, c \in \mathbf{R}^{+}$, 且 $a^2+b^2+c^2=1$. 求证:
+$$
+\frac{a}{1-a^2}+\frac{b}{1-b^2}+\frac{c}{1-c^2} \geqslant \frac{3 \sqrt{3}}{2} \text {. }
+$$
+%%<SOLUTION>%%
+证明:原不等式
+$$
+\frac{a}{1-a^2}+\frac{b}{1-b^2}+\frac{c}{1-c^2} \geqslant \frac{3 \sqrt{3}}{2}
+$$
+等价于 $\quad \frac{a^2}{a\left(1-a^2\right)}+\frac{b^2}{b\left(1-b^2\right)}+\frac{c^2}{c\left(1-c^2\right)} \geqslant \frac{3 \sqrt{3}}{2}$.
+由于 $a^2+b^2+c^2=1$, 如果能证明 $x\left(1-x^2\right) \leqslant \frac{2}{3 \sqrt{3}}$, 则上述不等式成立.
+由平均值不等式, 得
+$$
+\begin{aligned}
+x\left(1-x^2\right) & =\sqrt{\frac{2 x^2\left(1-x^2\right)\left(1-x^2\right)}{2}} \\
+& \leqslant \sqrt{\frac{1}{2}\left[\frac{2 x^2+\left(1-x^2\right)+\left(1-x^2\right)}{3}\right]^3} \\
+& =\sqrt{\frac{1}{2} \cdot\left(\frac{2}{3}\right)^3}=\frac{2}{3 \sqrt{3}},
+\end{aligned}
+$$
+故不等式成立.
+%%<REMARK>%%
+注:由于分子之和 $a^2+b^2+c^2=1$, 所以当各分母被控制在某个常数之内时, 便可以推出命题成立.
+这个方法在分式不等式证明中常常使用.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例16. 设 $a_1, a_2, \cdots, a_n$ 是 $1,2, \cdots, n$ 的一个排列.
+求证:
+$$
+\frac{1}{2}+\frac{2}{3}+\cdots+\frac{n-1}{n} \leqslant \frac{a_1}{a_2}+\frac{a_2}{a_3}+\cdots+\frac{a_{n-1}}{a_n} .
+$$
+%%<SOLUTION>%%
+证明:因为 $a_1, a_2, \cdots, a_n$ 是 $1,2, \cdots, n$ 的一个排列, 所以
+$$
+\begin{aligned}
+& \left(1+a_1\right)\left(1+a_2\right) \cdots\left(1+a_{n-1}\right) \\
+\geqslant & (1+1)(1+2) \cdots[1+(n-1)] \\
+= & a_1 a_2 \cdots a_n .
+\end{aligned}
+$$
+于是
+$$
+\begin{aligned}
+& \frac{a_1}{a_2}+\frac{a_2}{a_3}+\cdots+\frac{a_{n-1}}{a_n}+\frac{1}{1}+\frac{1}{2}+\cdots+\frac{1}{n} \\
+= & \frac{a_1}{a_2}+\frac{a_2}{a_3}+\cdots+\frac{a_{n-1}}{a_n}+\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n} \\
+= & \frac{1}{a_1}+\frac{1+a_1}{a_2}+\frac{1+a_2}{a_3}+\cdots+\frac{1+a_{n-1}}{a_n} \\
+\geqslant & n \sqrt[n]{\frac{\left(1+a_1\right)\left(1+a_2\right) \cdots\left(1+a_{n-1}\right)}{a_1 a_2 \cdots a_n}} \geqslant n .
+\end{aligned}
+$$
+又因为 $n=\left(1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}\right)+\left(\frac{1}{2}+\frac{2}{3}+\cdots+\frac{n-1}{n}\right)$, 所以
+$$
+\frac{a_1}{a_2}+\frac{a_2}{a_3}+\cdots+\frac{a_{n-1}}{a_n} \geqslant \frac{1}{2}+\frac{2}{3}+\cdots+\frac{n-1}{n} .
+$$
+%%<REMARK>%%
+注:对于该不等式的证明, 首先要充分理解 $a_1, a_2, \cdots, a_n$ 是 $1,2, \cdots, n$ 的一个排列, 此外, 两边同时相加 $1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}\left(\right.$ 即 $\left.\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}\right)$ 也是很重要的一步.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例17. 设 $a, b, c$ 为正实数,求证:
+$$
+\frac{a}{\sqrt{a^2+8 b c}}+\frac{b}{\sqrt{b^2+8 a c}}+\frac{c}{\sqrt{c^2+8 a b}} \geqslant 1 \text {. }
+$$
+%%<SOLUTION>%%
+证明:容易看出, 如果我们能证明 $\frac{a}{\sqrt{a^2+8 b c}} \geqslant \frac{a^{\frac{4}{3}}}{a^{\frac{4}{3}}+b^{\frac{4}{3}}+c^{\frac{4}{3}}}$, 那么, 将它们相加便得到所要证明的不等式.
+因为
+$$
+\frac{a}{\sqrt{a^2+8 b c}} \geqslant \frac{a^{\frac{4}{3}}}{a^{\frac{4}{3}}+b^{\frac{4}{3}}+c^{\frac{4}{3}}},
+$$
+等价于
+$$
+\left(a^{\frac{4}{3}}+b^{\frac{4}{3}}+c^{\frac{4}{3}}\right)^2 \geqslant a^{\frac{2}{3}}\left(a^2+8 b c\right) .
+$$
+再由平均值不等式, 得
+$$
+\begin{aligned}
+\left(a^{\frac{4}{3}}+b^{\frac{4}{3}}+c^{\frac{4}{3}}\right)^2-\left(a^{\frac{4}{3}}\right)^2 & =\left(b^{\frac{4}{3}}+c^{\frac{4}{3}}\right)\left(a^{\frac{4}{3}}+a^{\frac{4}{3}}+b^{\frac{4}{3}}+c^{\frac{4}{3}}\right) \\
+& \geqslant 2 b^{\frac{2}{3}} c^{\frac{2}{3}} \cdot 4 a^{\frac{2}{3}} b^{\frac{1}{3}} c^{\frac{1}{3}}=8 a^{\frac{2}{3}} b c .
+\end{aligned}
+$$
+于是 $\quad\left(a^{\frac{4}{3}}+b^{\frac{4}{3}}+c^{\frac{4}{3}}\right)^2 \geqslant\left(a^{\frac{4}{3}}\right)^2+8 a^{\frac{2}{3}} b c=a^{\frac{2}{3}}\left(a^2+8 b c\right)$,
+从而
+$$
+\frac{a}{\sqrt{a^2}+8 b c} \geqslant \frac{a^{\frac{4}{3}}}{a^{\frac{4}{3}}+b^{\frac{4}{3}}+c^{\frac{4}{3}}} \text {. }
+$$
+同理可得
+$$
+\frac{b}{\sqrt{b^2+8 a c}} \geqslant \frac{b^{\frac{4}{3}}}{a^{\frac{4}{3}}+b^{\frac{4}{3}}+c^{\frac{4}{3}}}, \frac{c}{\sqrt{c^2+8 a b}} \geqslant \frac{c^{\frac{4}{3}}}{a^{\frac{4}{3}}+b^{\frac{4}{3}}+c^{\frac{4}{3}}},
+$$
+于是 $\quad \frac{a}{\sqrt{a^2+8 b c}}+\frac{b}{\sqrt{b^2+8 a c}}+\frac{c}{\sqrt{c^2+8 a b}} \geqslant 1$.
+%%<REMARK>%%
+注:这是一个 IMO 试题, 有多种不同的证明方法, 后面将再次遇到.
+这里的指数 $\frac{4}{3}$ 是这样得到的.
+取 $x$ 为待定常数.
+设
+$$
+\frac{a}{\sqrt{a^2+8 b c}} \geqslant \frac{a^x}{a^x+b^x+c^x},
+$$
+上式等价于
+$$
+\begin{aligned}
+& a^2\left(a^x+b^x+c^x\right)^2 \geqslant a^{2 x}\left(a^2+8 b c\right) \\
+\Leftrightarrow & \left(a^x+b^x+c^x\right)^2 \geqslant a^{2 x-2}\left(a^2+8 b c\right) \\
+\Leftrightarrow & a^{2 x}+2 a^x\left(b^x+c^x\right)+\left(b^x+c^x\right)^2 \geqslant a^{2 x}+8 a^{2 x-2} b c \\
+\Leftrightarrow & 2 a^x\left(b^x+c^x\right)+\left(b^x+c^x\right)^2 \geqslant 8 a^{2 x-2} b c .
+\end{aligned}
+$$
+由于
+$$
+b^x+c^x \geqslant 2 b^{\frac{x}{2}} c^{\frac{x}{2}},
+$$
+只需
+$$
+2 a^x \cdot 2 b^{\frac{x}{2}} c^{\frac{x}{2}}+\left(2 b^{\frac{x}{2}} c^{\frac{x}{2}}\right)^2 \geqslant 8 a^{2 x-2} b c,
+$$
+即
+$$
+a^x b^{\frac{x}{2}} c^{\frac{x}{2}}+b^x c^x \geqslant 2 a^{2 x-2} b c .
+$$
+由于
+$$
+a^x b^{\frac{x}{2}} c^{\frac{x}{2}}+b^x c^x \geqslant 2 \sqrt{a^x b^{\frac{3}{2} x} c^{\frac{3}{2} x}}=2 a^{\frac{x}{2}} b^{\frac{3}{4} x} c^{\frac{3}{4} x},
+$$
+所以只需
+$$
+a^{\frac{x}{2}} b^{\frac{3}{4} x} c^{\frac{3}{4} x} \geqslant a^{2 x-2} b c,
+$$
+显然取 $x=\frac{4}{3}$ 满足要求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例18. 已知正整数 $n \geqslant 2$, 实数 $a_i, b_i$, 满足
+$$
+a_1 \geqslant a_2 \geqslant \cdots \geqslant a_n>0, b_1 \geqslant b_2 \geqslant \cdots \geqslant b_n>0
+$$
+并且
+$$
+\begin{gathered}
+a_1 a_2 \cdots a_n=b_1 b_2 \cdots b_n, \\
+\sum_{1 \leqslant i<j \leqslant n}\left(a_i-a_j\right) \leqslant \sum_{1 \leqslant i<j \leqslant n}\left(b_i-b_j\right) .
+\end{gathered}
+$$
+求证: $\sum_{i=1}^n a_i \leqslant(n-1) \sum_{i=1}^n b_i$.
+%%<SOLUTION>%%
+证明:当 $n=2$ 时,
+$$
+\left(a_1+a_2\right)^2-\left(a_1-a_2\right)^2=4 a_1 a_2=4 b_1 b_2=\left(b_1+b_2\right)^2-\left(b_1-b_2\right)^2,
+$$
+由假设得 $a_1-a_2 \leqslant b_1-b_2$, 所以 $a_1+a_2 \leqslant b_1+b_2$.
+当 $n \geqslant 3$ 时, 不妨设 $b_1 b_2 \cdots b_n=1$ (否则用 $a_i^{\prime}=\frac{a_i}{a_1 a_2 \cdots a_n}, b_i^{\prime}=\frac{b_i}{b_1 b_2 \cdots b_n}$ 代替 $\left.a_i, b_i(1 \leqslant i \leqslant n)\right)$.
+如果 $a_1 \leqslant n-1$, 则由平均值不等式, 得
+$$
+\sum_{i=1}^n a_i \leqslant n(n-1)=(n-1) n \sqrt[n]{b_1 b_2 \cdots b_n} \leqslant(n-1) \sum_{i=1}^n b_i .
+$$
+下设 $a_1>n-1$, 因为
+$$
+\begin{aligned}
+& \sum_{1 \leqslant i<j \leqslant n}\left(a_i-a_j\right) \geqslant {\left[\left(a_1-a_n\right)+\left(a_2-a_n\right)+\cdots+\left(a_n-a_n\right)\right] } \\
+&+\left[\left(a_1-a_2\right)+\left(a_2-a_3\right)+\cdots+\left(a_{n-2}-a_{n-1}\right)\right] \\
+&= \sum_{i=1}^n a_i+\left(a_1-a_{n-1}\right)-n a_n, \\
+& \sum_{1 \leqslant i<j \leqslant n}\left(b_i-b_j\right)=\sum_{i=1}^n(n-2 i+1) b_i \\
+&=\sum_{i=1}^n\left[(n-1) b_i+(2-2 i) b_i\right] \\
+&=(n-1) \sum_{i=1}^n b_i+\sum_{i=1}^n(2-2 i) b_i \\
+& \leqslant(n-1) \sum_{i=1}^n b_i-2 b_2-2(n-1) b_n .
+\end{aligned}
+$$
+所以,当 $a_1-a_{n-1}-n a_n+2 b_2+2(n-1) b_n \geqslant 0$ 时,结论成立.
+当 $a_1-a_{n-1}-n a_n+2 b_2+2(n-1) b_n<0$ 时, 得
+$$
+n a_n>2(n-1) b_n+2 b_2+a_1-a_{n-1} \geqslant 2(n-1) b_n+2 b_2 \geqslant 2 n b_n,
+$$
+即 $a_n>2 b_n$.
+又由 $a_1 a_2 \cdots a_n=1$, 得 $a_n \leqslant 1$, 所以
+$$
+a_1-(n-1) a_n>n-1-(n-1)=0,
+$$
+于是 $\quad 2 b_2<a_{n-1}+n a_n-a_1-2(n-1) b_n<a_{n-1}+a_n \leqslant 2 a_{n-1}$,
+即 $b_2<a_{n-1}$. 从而可得
+$$
+b_1 b_2 \cdots b_n=a_1 a_2 \cdots a_n>2 b_n b_2 a_1 a_2 \cdots a_{n-2},
+$$
+即
+$$
+b_1 b_3 \cdots b_{n-1}>2 a_1 a_2 \cdots a_{n-2} \text {. }
+$$
+而
+$$
+\begin{aligned}
+& b_3 \leqslant b_2<a_{n-1} \leqslant a_{n-2}, \\
+& b_4 \leqslant b_3<a_{n-2} \leqslant a_{n-3}, \\
+& \cdots \cdots \\
+& b_{n-1} \leqslant b_{n-2}<a_3 \leqslant a_2,
+\end{aligned}
+$$
+所以
+$$
+b_1>2 a_1,(n-1) \sum_{i=1}^n b_i>2(n-1) a_1>n a_1 \geqslant \sum_{i=1}^n a_i .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例19. 给定 $n \geqslant 2, n \in \mathbf{Z}^{+}$, 求所有 $m \in \mathbf{Z}^{+}$, 使得对 $a_i \in \mathbf{R}^{+}, i=1,2$, $\cdots, n$, 满足 $a_1 a_2 \cdots a_n=1$, 则
+$$
+a_1^m+a_2^m+\cdots+a_n^m \geqslant \frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n} .
+$$
+%%<SOLUTION>%%
+解:取 $x=a_1=a_2=\cdots=a_{n-1}>0, a_n=\frac{1}{x^{n-1}}$, 则
+$$
+(n-1) x^m+\frac{1}{x^{(n-1) m}} \geqslant \frac{n-1}{x}+x^{n-1} .
+$$
+由此得到 $m \geqslant n-1$. 现在, 假设 $m \geqslant n-1$, 则
+$$
+\begin{aligned}
+& (n-1)\left(a_1^m+a_2^m+\cdots+a_n^m\right)+n(m-n+1) \\
+= & \left(a_1^m+a_2^m+\cdots+a_{n-1}^m+1+1+\cdots+1\right)(\text { 共 } m-n+1 \text { 个 } 1) \\
+& +\left(a_1^m+a_2^m+\cdots+a_{n-2}^m+a_n^m+1+1+\cdots+1\right)+\cdots
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& +\left(a_2^m+a_3^m+\cdots+a_n^m+1+1+\cdots+1\right) \\
+\geqslant & m \sqrt[m]{\left(a_1 a_2 \cdots a_{n-1}\right)^m}+\cdots+m \sqrt[m]{\left(a_2 \cdots a_n\right)^m} \\
+= & m\left(a_1 a_2 \cdots a_{n-1}+\cdots+a_2 a_3 \cdots a_n\right)=m\left(\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}\right) .
+\end{aligned}
+$$
+所以
+$$
+a_1^m+a_2^m+\cdots+a_n^m \geqslant \frac{m}{n-1}\left(\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}\right)-\frac{n}{n-1}(m-n+1) .
+$$
+于是, 只要证明
+$$
+\begin{gathered}
+\frac{m}{n-1}\left(\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}\right)-\frac{n}{n-1}(m-n+1) \geqslant \frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}, \\
+(m-n+1)\left(\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}-n\right) \geqslant 0 .
+\end{gathered}
+$$
+即
+$$
+(m-n+1)\left(\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}-n\right) \geqslant 0 .
+$$
+由假设以及平均值不等式, 得
+$$
+\left(\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}-n\right) \geqslant n \sqrt[n]{\frac{1}{a_1} \cdot \frac{1}{a_2} \cdot \cdots \cdot \frac{1}{a_n}}-n=0,
+$$
+所以原不等式成立.
+故对所有满足 $m \geqslant n-1$ 的 $m \in \mathbf{Z}^{+}$均可.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例20. 设 $n(n \geqslant 2)$ 是整数, $a_1, a_2, \cdots, a_n \in \mathbf{R}^{+}$, 求证:
+$$
+\left(a_1^3+1\right)\left(a_2^3+1\right) \cdots\left(a_n^3+1\right) \geqslant\left(a_1^2 a_2+1\right)\left(a_2^2 a_3+1\right) \cdots\left(a_n^2 a_1+1\right) .
+$$
+%%<SOLUTION>%%
+证明:先证对于正实数 $x_i, y_i(i=1,2,3)$, 有
+$$
+\prod\left(x_i^3+y_i^3\right) \geqslant\left(\prod x_i+\prod y_i\right)^3 .
+$$
+实际上, 由平均值不等式, 得
+$$
+\begin{aligned}
+& \sqrt[3]{\frac{x_1^3 x_2^3 x_3^3}{\prod\left(x_i^3+y_i^3\right)}} \leqslant \frac{1}{3}\left(\sum_{i=1}^3 \frac{x_i^3}{x_i^3+y_i^3}\right), \\
+& \sqrt[3]{\frac{y_1^3 y_2^3 y_3^3}{\prod\left(x_i^3+y_i^3\right)}} \leqslant \frac{1}{3}\left(\sum_{i=1}^3 \frac{y_i^3}{x_i^3+y_i^3}\right),
+\end{aligned}
+$$
+所以
+$$
+\sqrt[3]{\frac{x_1^3 x_2^3 x_3^3}{\prod\left(x_i^3+y_i^3\right)}}+\sqrt[3]{\frac{y_1^3 y_2^3 y_3^3}{\prod\left(x_i^3+y_i^3\right)}} \leqslant 1,
+$$
+即
+$$
+\Pi\left(x_i^3+y_i^3\right) \geqslant\left(\prod x_i+\prod y_i\right)^3 .
+$$
+$$
+\text { 令 } x_1=x_2=a_k, x_3=a_{k+1}, a_{n+1}=a_1, y_1=y_2=y_3=1, k=1,2, \cdots \text {, }
+$$
+$n$, 则
+$$
+\left(a_k^3+1\right)^2\left(a_{k+1}^3+1\right) \geqslant\left(a_k^2 a_{k+1}+1\right)^3, k=1,2, \cdots, n .
+$$
+将它们相乘, 则
+$$
+\prod\left(a_i^3+1\right)^3 \geqslant \prod\left(a_i^2 a_{i+1}+1\right)^3,
+$$
+故
+$$
+\left(a_1^3+1\right)\left(a_2^3+1\right) \cdots\left(a_n^3+1\right) \geqslant\left(a_1^2 a_2+1\right)\left(a_2^2 a_3+1\right) \cdots\left(a_n^2 a_1+1\right) .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例21. 设 $a, b, c>0, a+b+c=1$. 证明: 若正实数 $x_1, x_2, \cdots, x_5$ 满足 $x_1 x_2 \cdots x_5=1$, 则
+$$
+\prod_{i=1}^5\left(a x_i^2+b x_i+c\right) \geqslant 1 .
+$$
+%%<SOLUTION>%%
+证明:将问题一般化.
+考虑表达式 $\prod_{i=1}^n\left(a x_i^2+b x_i+c\right)$.
+则含 $a^i b^j c^k(i+j+k=n)$ 的项为
+$$
+a^i b^j c^k\left[\left(x_1 x_2 \cdots x_i\right)^2\left(x_{i+1} x_{i+2} \cdots x_{i+j}\right)+\cdots\right] .
+$$
+因此,共有 $\mathrm{C}_n^i \mathrm{C}_{n-i}^j$ 项求和 (取 $a x_t^2$ 的 $i$ 个因式, 从剩余的 $n-i$ 个因式中, 取 $b x_s$ 中的 $j$ 个因式).
+由对称性知,含 $x_i^2$ 的项数为常数, 即为含 $x_i$ 的项数.
+因此,当求和后的项是全部的乘积时,对某个 $p$ 有 $\left(x_1 x_2 \cdots x_n\right)^p=1$.
+%%<REMARK>%%
+注:对于本题, 不必求出 $p$. 事实上,
+$$
+p=2 \mathrm{C}_{n-1}^{i-1} \mathrm{C}_{n-i}^j+\mathrm{C}_{n-1}^{j-1} \mathrm{C}_{n-j}^i=\frac{2 i+j}{n} \mathrm{C}_n^i \mathrm{C}_{n-i}^j .
+$$
+回到原题;由代数一几何均值不等式得
+$$
+a^i b^j c^k\left[\left(x_1 x_2 \cdots x_i\right)^2\left(x_{i+1} x_{i+2} \cdots x_{i+j}\right)+\cdots\right] \geqslant a^i b^j c^k \mathrm{C}_n^i \mathrm{C}_{n-i}^j .
+$$
+故 $\prod_{i=1}^n\left(a x_i^2+b x_i+c\right) \geqslant \sum_{i+j+k=n} a^i b^j c^k \mathrm{C}_n^i \mathrm{C}_{n-i}^j=(a+b+c)^n=1$ :
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例22. 已知 $x, y, z \in \mathbf{R}^{+} \cup\{0\}$, 且 $x+y+z=2$.
+%%<SOLUTION>%%
+证明: $x^2 y^2+y^2 z^2+z^2 x^2+x y z \leqslant 1$, 并求上式取等号时, $x 、 y 、 z$ 的值.
+证明注意到
+$$
+\begin{aligned}
+& x^2 y^2+y^2 z^2+z^2 x^2+x y z \\
+= & \frac{1}{2}\left(2 x^2 y^2+2 y^2 z^2+2 z^2 x^2+2 x y z\right) \\
+= & \frac{1}{2}(x y \cdot 2 x y+y z \cdot 2 y z+z x \cdot 2 z x+2 x y z) \\
+\leqslant & \frac{1}{2}\left[x y\left(x^2+y^2\right)+y z\left(y^2+z^2\right)+z x\left(z^2+x^2\right)+2 x y z\right] . \label{(16)} \\
+= & \frac{1}{2}\left[(x y+y z+z x)\left(x^2+y^2+z^2\right)-x y z^2-y z x^2-z x y^2+2 x y z\right] \\
+= & \frac{1}{2}\left[(x y+y z+z x)\left(x^2+y^2+z^2\right)-x y z(x+y+z-2)\right] \\
+= & \frac{1}{2}(x y+y z+z x)\left(x^2+y^2+z^2\right) .
+\end{aligned}
+$$
+由此得到
+$$
+x^2 y^2+y^2 z^2+z^2 x^2+x y z \leqslant \frac{1}{2}\left[(x y+y z+z x)\left(x^2+y^2+z^2\right)\right] . \label{(17)}
+$$
+由式(16)知,当 $x=y=z$ 或 $x=y, z=0$ 或 $y=z, x=0$ 或 $z=x$, $=0$ 时, 式(17)取等号.
+又 $x+y+z=2$, 因此, 当
+$(x, y, z)=\left(\frac{2}{3}, \frac{2}{3}, \frac{2}{3}\right)$ 或 $(1,1,0)$ 或 $(1,0,1)$ 或 $(0,1,1)$ 时,式(17)取等号.
+运用常见不等式
+$$
+\alpha \beta \leqslant\left(\frac{\alpha+\beta}{2}\right)^2(\alpha, \beta \in \mathbf{R}) .
+$$
+令 $\alpha=2 x y+2 y z+2 z x, \beta=x^2+y^2+z^2$. 则
+$$
+\begin{aligned}
+& \frac{1}{2}(x y+y z+z x)\left(x^2+y^2+z^2\right) \\
+= & \frac{1}{4}(2 x y+2 y z+2 z x)\left(x^2+y^2+z^2\right) \\
+\leqslant & \frac{1}{4}\left(\frac{2 x y+2 y z+2 z x+x^2+y^2+z^2}{2}\right)^2 \\
+=\frac{1}{16}(x+y+z)^4=1 . \label{(18)}
+\end{aligned}
+$$
+结合式(17)得
+$$
+x^2 y^2+y^2 z^2+z^2 x^2+x y z \leqslant 1 . \label{(19)}
+$$
+由式(18)取等号的条件知, 当
+$$
+\alpha=\beta \Leftrightarrow 2 x y+2 y z+2 z x=x^2+y^2+z^2
+$$
+时,式(19)等号成立.
+故 $(x, y, z)=(1,1,0)$ 或 $(1,0,1)$ 或 $(0,1,1)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例23. 已知 $a 、 b 、 c$ 为正实数.
+证明:
+$$
+\frac{a^2 b(b-c)}{a+b}+\frac{b^2 c(c-a)}{b+c}+\frac{c^2 a(a-b)}{c+a} \geqslant 0 .
+$$
+%%<SOLUTION>%%
+证明:$$
+\begin{aligned}
+\text { 原式 } & \Leftrightarrow \frac{a^2 b^2}{a+b}+\frac{b^2 c^2}{b+c}+\frac{c^2 a^2}{c+a} \geqslant a b c\left(\frac{a}{a+b}+\frac{b}{b+c}+\frac{c}{c+a}\right) \\
+& \Leftrightarrow \frac{a b}{c(a+b)}+\frac{b c}{a(b+c)}+\frac{a c}{b(c+a)} \geqslant \frac{a}{a+b}+\frac{b}{b+c}+\frac{c}{c+a} \\
+& \Leftrightarrow(a b+b c+a c)\left(\frac{1}{a c+b c}+\frac{1}{a b+a c}+\frac{1}{b c+a b}\right) \\
+& \geqslant \frac{a c}{a c+b c}+\frac{a b}{a b+a c}+\frac{b c}{b c+a b}+3 .
+\end{aligned}
+$$
+下面进行换元.
+令
+$$
+\left\{\begin{array}{l}
+x=a b+a c, \\
+y=b c+b a \\
+z=c a+c b
+\end{array},\left\{\begin{array}{l}
+a c=\frac{x+z-y}{2}, \\
+a b=\frac{x+y-z}{2}, \\
+b c=\frac{y+z-x}{2}
+\end{array} \Rightarrow a b+b c+c a=\frac{x+y+z}{2} .\right.\right.
+$$
+故
+$$
+\begin{aligned}
+\text { 原式 } & \Leftrightarrow \frac{1}{2}(x+y+z)\left(\frac{1}{x}+\frac{1}{y}+\frac{1}{z}\right) \geqslant \frac{x+z-y}{2 z}+\frac{x+y-z}{2 x}+\frac{y+z-x}{2 y}+3 \\
+& \Leftrightarrow(x+y+z)\left(-\frac{1}{x}+\frac{1}{y}+\frac{1}{z}\right) \geqslant \frac{x-y}{z}+\frac{y-z}{x}+\frac{z-x}{y}+9
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& \Leftrightarrow 3+\frac{y}{x}+\frac{z}{x}+\frac{x}{y}+\frac{z}{y}+\frac{x}{z}+\frac{y}{z} \geqslant \frac{x-y}{z}+\frac{y-z}{x}+\frac{z-x}{y}+9 \\
+& \Leftrightarrow \frac{2 y}{z}+\frac{2 z}{x}+\frac{2 x}{y} \geqslant 6 \\
+& \Leftrightarrow \frac{y}{z}+\frac{z}{x}+\frac{x}{y} \geqslant 3 .
+\end{aligned}
+$$
+由均值不等式即知结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例24. 设正实数 $x_1, x_2, \cdots, x_n$ 满足 $x_1 x_2 \cdots x_n=1$. 证明:
+$$
+\sum_{i=1}^n \frac{1}{n-1+x_i} \leqslant 1 \text {. }
+$$
+%%<SOLUTION>%%
+证明:用反证法.
+假设
+$$
+\sum_{i=1}^n \frac{1}{n-1+x_i}>1 . \label{(20)}
+$$
+则对任意的 $k(k \in\{1,2, \cdots, n\})$, 由式(20)有
+$$
+\begin{aligned}
+& \frac{1}{n-1+x_k}>1-\sum_{\substack{1 \leqslant i \leqslant n \\
+i \neq k}} \frac{1}{n-1+x_i} \\
+&=\sum_{\substack{1 \leqslant i \leqslant n \\
+i \neq k}}\left(\frac{1}{n-1}-\frac{1}{n-1+x_i}\right) \\
+&=\sum_{\substack{1 \leqslant i \leqslant n \\
+i \neq k}} \frac{x_i}{(n-1)\left(n-1+x_i\right)} \\
+& \geqslant(n-1)\left[\prod_{\substack{1 \leqslant i \leqslant n \\
+i \neq k}} \frac{x_i}{(n-1)\left(n-1+x_i\right)}\right]^{\frac{1}{n-1}} \\
+&=\left(\prod_{\substack{1 \leqslant i \leqslant n \\
+i \neq k}} \frac{x_i}{n-1+x_i}\right)^{\frac{1}{n-1}},
+\end{aligned}
+$$
+即对 $1 \leqslant k \leqslant n$, 均有
+$$
+\frac{1}{n-1+x_k}>\left(\prod_{\substack{1 \leqslant i \leqslant n \\ i \neq k}} \frac{x_i}{n-1+x_i}\right)^{\frac{1}{n-1}}
+$$
+取积得
+$$
+\prod_{k=1}^n \frac{1}{n-1+x_k}>\prod_{k=1}^n\left(\prod_{\substack{1 \leqslant i \leqslant n \\ i \neq k}} \frac{x_i}{n-1+x_i}\right)^{\frac{1}{n-1}}=\prod_{k=1}^n \frac{x_k}{n-1+x_k} .
+$$
+则 $\prod_{k=1}^n x_k<1$, 这与 $\prod_{k=1}^n x_k=1$ 矛盾.
+所以,假设不成立, 必有
+$$
+\sum_{i=1}^n \frac{1}{n-1+x_i} \leqslant 1 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例25. 设 $x, y, z \in(0,1)$, 满足:
+$$
+\sqrt{\frac{1-x}{y z}}+\sqrt{\frac{1-y}{z x}}+\sqrt{\frac{1-z}{x y}}=2,
+$$
+求 $x y z$ 的最大值.
+%%<SOLUTION>%%
+解:记 $u=\sqrt[6]{x y z}$, 则由条件及均值不等式可知
+$$
+\begin{aligned}
+2 u^3= & 2 \sqrt{x y z}=\frac{1}{\sqrt{3}} \sum \sqrt{x(3-3 x)} \\
+\leqslant & \frac{1}{\sqrt{3}} \sum \frac{x+(3-3 x)}{2} \\
+& =\frac{3 \sqrt{3}}{2}-\frac{1}{\sqrt{3}}(x+y+z) \\
+& \leqslant \frac{3 \sqrt{3}}{2}-\sqrt{3} \cdot \sqrt[3]{x y z} \\
+& =\frac{3 \sqrt{3}}{2}-\sqrt{3} u^2 .
+\end{aligned}
+$$
+故
+$$
+4 u^3+2 \sqrt{3} u^2-3 \sqrt{3} \leqslant 0,
+$$
+即
+$$
+(2 u-\sqrt{3})\left(2 u^2+2 \sqrt{3} u+3\right) \leqslant 0 .
+$$
+所以, $u \leqslant \frac{\sqrt{3}}{2}$. 依此可知, $x y z \leqslant \frac{27}{64}$, 等号在
+$$
+x=y=z=\frac{3}{4}
+$$
+时取得.
+因此, 所求最大值为 $\frac{27}{64}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例26. 设 $x, y, z \in \mathbf{R}^{+}$, 求证:
+$$
+\frac{x y}{z}+\frac{y z}{x}+\frac{z x}{y}>2 \sqrt[3]{x^3+y^3+z^3} .
+$$
+%%<SOLUTION>%%
+证明:欲证的不等式等价于
+$$
+\begin{aligned}
+& \left(\frac{x y}{z}+\frac{y z}{x}+\frac{z x}{y}\right)^3>8\left(x^3+y^3+z^3\right) \\
+\Leftrightarrow & \left(\frac{x y}{z}\right)^3+\left(\frac{y z}{x}\right)^3+\left(\frac{z x}{y}\right)^3+6 x y z+3 x^3\left(\frac{y}{z}+\frac{z}{y}\right) \\
+& +3 y^3\left(\frac{x}{z}+\frac{z}{x}\right)+3 z^3\left(\frac{y}{x}+\frac{x}{y}\right) \\
+> & 8\left(x^3+y^3+z^3\right) .
+\end{aligned}
+$$
+因为 $\frac{y}{z}+\frac{z}{y} \geqslant 2, \frac{x}{z}+\frac{z}{x} \geqslant 2, \frac{y}{x}+\frac{x}{y} \geqslant 2$, 所以只需证
+$$
+\left(\frac{x y}{z}\right)^3+\left(\frac{y z}{x}\right)^3+\left(\frac{z x}{y}\right)^3+6 x y z>2\left(x^3+y^3+z^3\right) .
+$$
+不妨设 $x \geqslant y \geqslant z$, 记 $f(x, y, z)=\left(\frac{x y}{z}\right)^3+\left(\frac{y z}{x}\right)^3+\left(\frac{z x}{y}\right)^3+6 x y z- 2\left(x^3+y^3+z^3\right)$, 下证 $f(x, y, z)-f(y, y, z) \geqslant 0, f(y, y, z) \geqslant 0$.
+事实上,
+$$
+\begin{aligned}
+& f(x, y, z)-f(y, y, z) \\
+= & \left(\frac{x y}{z}\right)^3+\left(\frac{y z}{x}\right)^3+\left(\frac{z x}{y}\right)^3+6 x y z-2\left(x^3+y^3+z^3\right) \\
+& -\left[\left(\frac{y^2}{z}\right)^3+z^3+z^3+6 y^2 z-2\left(y^3+y^3+z^3\right)\right] \\
+= & \left(\frac{x y}{z}\right)^3-\frac{y^6}{z^3}+\left(\frac{y z}{x}\right)^3+\left(\frac{z x}{y}\right)^3-2 z^3+6 y z(x-y)-2\left(x^3-y^3\right) \\
+= & \left(x^3-y^3\right)\left(\frac{y^3}{z^3}+\frac{z^3}{y^3}-2+\frac{6 y z}{x^2+x y+y^2}-\frac{z^3}{x^3}\right),
+\end{aligned}
+$$
+而 $x^3-y^3 \geqslant 0, \frac{y^3}{z^3}+\frac{z^3}{y^3} \geqslant 2, \frac{6 y z}{x^2+x y+y^2}-\frac{z^3}{x^3} \geqslant \frac{2 y z}{x^2}-\frac{z^3}{x^3}=\frac{z\left(2 x y-z^2\right)}{x^3}>$ 0 , 所以 $f(x, y, z)-f(y, y, z) \geqslant 0$.
+又
+$$
+f(y, y, z)=\left(\frac{y^2}{z}\right)^3+z^3+z^3+6 y^2 z-2\left(y^3+y^3+z^3\right) . \label{(21)}
+$$
+$$
+\begin{aligned}
+& =\frac{y^6}{z^3}+2 y^2 z+2 y^2 z+2 y^2 z-4 y^3 \\
+& \geqslant 4 \sqrt[4]{2^3 y^{12}}-4 y^3=4(\sqrt[4]{8}-1) y^3>0,
+\end{aligned}
+$$
+从而 (21) 式得证, 原命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例27. 设 $x 、 y 、 z$ 为非负实数,且 $x+y+z=1$, 求证:
+$$
+x y+y z+z x-2 x y z \leqslant \frac{7}{27} .
+$$
+%%<SOLUTION>%%
+证明:不妨设 $x \geqslant y \geqslant z$.
+当 $x \geqslant \frac{1}{2}$ 时,则 $y z-2 x y z \leqslant 0$, 所以
+$$
+x y+y z+z x-2 x y z \leqslant x y+z x=x(1-x) \leqslant \frac{1}{4}<\frac{7}{27} .
+$$
+当 $x<\frac{1}{2}$ 时, 则 $y \leqslant \frac{1}{2}, z \leqslant \frac{1}{2}$.
+$$
+(1-2 x)(1-2 y)(1-2 z)=1-2+4(x y+y z+z x)-8 x y z .
+$$
+又由平均值不等式, 得
+$$
+\begin{gathered}
+(1-2 x)(1-2 y)(1-2 z) \leqslant\left[\frac{3-2(x+y+z)}{3}\right]^3=\frac{1}{27}, \\
+x y+y z+z x-2 x y z \leqslant \frac{1}{4}\left(\frac{1}{27}+1\right)=\frac{7}{27} .
+\end{gathered}
+$$
+从而
+$$
+x y+y z+z x-2 x y z \leqslant \frac{1}{4}\left(\frac{1}{27}+1\right)=\frac{7}{27} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例28. 设 $n$ 为正整数, $\left(x_1, x_2, \cdots, x_n\right),\left(y_1, y_2, \cdots, y_n\right)$ 为两个正数数列.
+假设正实数列 $\left(z_1, z_2, \cdots, z_{2 n}\right)$, 满足
+$$
+z_{i+j}^2 \geqslant x_i y_j, 1 \leqslant i, j \leqslant n .
+$$
+令 $M=\max \left\{z_1, z_2, \cdots, z_{2 n}\right\}$, 证明:
+$$
+\left(\frac{M+z_2+z_3+\cdots+z_{2 n}}{2 n}\right)^2 \geqslant\left(\frac{x_1+x_2+\cdots+x_n}{n}\right)\left(\frac{y_1+y_2+\cdots+y_n}{n}\right) .
+$$
+%%<SOLUTION>%%
+证明:令 $X=\max \left\{x_1, x_2, \cdots, x_n\right\}, Y=\max \left\{y_1, y_2, \cdots, y_n\right\}$, 不妨假设 $X=Y=1$ (否则用 $a_i=\frac{x_i}{X}, b_i=\frac{y_i}{Y}, c_i=\frac{z_i}{\sqrt{X Y}}$ 代替).
+我们将证明
+$$
+M+z_2+z_3+\cdots+z_{2 n} \geqslant x_1+x_2+\cdots+x_n+y_1+y_2+\cdots+y_n .
+$$
+于是
+$$
+\frac{M+z_2+z_3+\cdots+z_{2 n}}{2 n} \geqslant \frac{1}{2}\left(\frac{x_1+x_2+\cdots+x_n}{n}+\frac{y_1+y_2+\cdots+y_n}{n}\right) .
+$$
+由平均值不等式得到原不等式成立.
+为了证明上述不等式, 我们将证明: 对任意 $r>0$, 左边大于 $r$ 的项数不小于右边相应的项数, 那么, 对每个 $k$, 左边第 $k$ 个最大的项大于或等于右边第 $k$ 个最大的项,这样就证明了上述不等式成立.
+证明如下:
+如果 $r \geqslant 1$, 则右边没有项大于 $r$, 所以只考虑 $r<1$.
+$$
+\text { 令 } A=\left\{x_i \mid x_i>r, 1 \leqslant i \leqslant n\right\}, a=|A|, B=\left\{y_i \mid y_i>r, 1 \leqslant i \leqslant n\right\}, b=|B|
+$$
+由于 $X=Y=1$, 所以 $a, b$ 大于 0 .
+由于 $x_i>r, y_j>r$ 推出 $z_{i+j} \geqslant \sqrt{x_i y_j}>r$. 于是
+$$
+A+B=\{\alpha+\beta \mid \alpha \in A, \beta \in B\} \subseteq C=\left\{z_i \mid z_i>r, 2 \leqslant i \leqslant 2 n\right\} .
+$$
+但是, 由于如果 $A=\left\{i_1, i_2, \cdots, i_a\right\}, i_1<i_2<\cdots<i_a, B=\left\{j_1, j_2, \cdots\right.$, $\left.j_b\right\}, j_1<j_2<\cdots<j_b$, 则 $a+b-1$ 个数 $i_1+j_1, i_1+j_2, \cdots, i_1+j_b, i_2+j_b, \cdots$, $i_a+j_b$ 互不相同, 且属于 $A+B$. 所以 $|A+B| \geqslant|A|+|B|-1$. 因此 $|C| \geqslant a+b-1$. 特别, $|C| \geqslant 1$, 于是对某个 $k, z_k>r$, 那么 $M>r$. 所以上式的左边至少有 $a+b$ 项大于 $r$, 由于 $a+b$ 为右边大于 $r$ 的项数, 于是, 上述不等式成立.
+%%<REMARK>%%
+注:在证明的过程中, 其实平均值不等式的作用是较小的.
+本题的证明有一定的难度, 是因为像这样证明不等式的方法和处理技巧并不多见.
+此解答由第 51 届 IMO 金牌获得者李嘉伦给出.
+%%PROBLEM_END%%
+
+

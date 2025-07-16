@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题19 有四个函数: (1) $y=\\sin ^2 x$; (2) $y=\\sin |x|$; (3) $y=\\tan \\frac{x}{2}-\\cot \\frac{x}{2}$; (4) $y= |\\sin x|$. 其中周期为 $\\pi$, 且在 $\\left(0, \\frac{\\pi}{2}\\right)$ 上是增函数的为",
+    "solution": "(1)(3). 因 $y=\\sin ^2 x=\\frac{1}{2}(1-\\cos 2 x)$, 周期为 $\\pi ; y=\\tan \\frac{x}{2}-\\cot \\frac{x}{2}= \\frac{1-\\cos x}{\\sin x}-\\frac{1+\\cos x}{\\sin x}=-\\frac{2 \\cos x}{\\sin x}=-2 \\cot x$. 其定义域为 $\\{x \\mid x \\in \\mathbf{R}$, 且 $x \\neq k \\pi, k \\in \\mathbf{Z}\\}$, 周期为 $\\pi$; 可以验证 (1)(3)(4) 符合题意.",
+    "remark": "",
+    "figures": []
+}

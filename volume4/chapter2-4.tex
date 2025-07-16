@@ -1,0 +1,441 @@
+
+%%TEXT_BEGIN%%
+2.4 平均值不等式的变形及应用.
+对于平均值不等式,有各种不同的变形和推广, 由于这些问题可以包括在命题的证明和讨论中, 这里就不展开讨论了.
+对任意正数 $a_1, a_2, \cdots, a_n$, 由平均值不等式, 得
+$$
+\sum_{i=1}^n a_i \cdot \sum_{i=1}^n \frac{1}{a_i} \geqslant n \sqrt[n]{a_1 a_2 \cdots a_n} \cdot n \sqrt[n]{\frac{1}{a_1} \cdot \frac{1}{a_2} \cdot \cdots \cdot \frac{1}{a_n}}=n^2 .
+$$
+从而
+$$
+\frac{\sum_{i=1}^n a_i}{n} \geqslant \frac{n}{\sum_{i=1}^n \frac{1}{a_i}} .
+$$
+令 $H_n=\frac{n}{\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}}$, 则称 $H_n$ 为 $n$ 个正实数 $a_1, a_2, \cdots, a_n$ 的调和平均值.
+由于 $\frac{x_1+x_2+\cdots+x_n}{n} \geqslant \sqrt[n]{x_1 x_2 \cdots x_n}$, 令 $x_i=\frac{1}{a_i}$, 则
+$$
+\frac{n}{\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}} \leqslant \sqrt[n]{a_1 a_2 \cdots a_n}
+$$
+即 $H_n \leqslant G_n$, 调和平均值不大于几何平均值.
+对任意实数 $a_1, a_2, \cdots, a_n$, 有
+$$
+n \sum_{i=1}^n a_i^2-\left(\sum_{i=1}^n a_i\right)^2=\sum_{1 \leqslant i<j \leqslant n}\left(a_i-a_j\right)^2 \geqslant 0 .
+$$
+故得到
+$$
+\frac{a_1+a_2+\cdots+a_n}{n} \leqslant \sqrt{\frac{a_1^2+a_2^2+\cdots+a_n^2}{n}}
+$$
+令 $Q_n=\sqrt{\frac{a_1^2+a_2^2+\cdots+a_n^2}{n}}$, 称 $Q_n$ 为 $n$ 个实数 $a_1, a_2, \cdots, a_n$ 的平方平均值.
+所以, 对任意实数 $a_1, a_2, \cdots, a_n, A_n \leqslant Q_n$, 即算术平均值不大于平方平均值.
+于是, 对任意正实数 $a_1, a_2, \cdots, a_n$, 得到四个平均值有如下的关系
+$$
+H_n \leqslant G_n \leqslant A_n \leqslant Q_n,
+$$
+且等式成立的充分必要条件是 $a_1=a_2=\cdots=a_n$.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $a, b, c$ 是正实数, 且满足 $a^2+b^2+c^2=3$. 证明:
+$$
+\frac{1}{1+2 a b}+\frac{1}{1+2 b c}+\frac{1}{1+2 c a} \geqslant 1 \text {. }
+$$
+%%<SOLUTION>%%
+证明:由算术平均值大于或等于几何平均值及算术平均值大于或等于 调和平均值可得
+$$
+\begin{aligned}
+& \frac{1}{1+2 a b}+\frac{1}{1+2 b c}+\frac{1}{1+2 c a} \\
+\geqslant & \frac{1}{1+a^2+b^2}+\frac{1}{1+b^2+c^2}+\frac{1}{1+c^2+a^2} \\
+\geqslant & 3 \cdot \frac{3}{\left(1+a^2+b^2\right)+\left(1+b^2+c^2\right)+\left(1+c^2+a^2\right)} \\
+= & \frac{9}{3+2\left(a^2+b^2+c^2\right)}=1 .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 已知正实数 $a 、 b 、 c$ 满足
+$$
+a b+b c+c a \leqslant 3 a b c .
+$$
+求证:
+$$
+\begin{aligned}
+& \sqrt{\frac{a^2+b^2}{a+b}}+\sqrt{\frac{b^2+c^2}{b+c}}+\sqrt{\frac{c^2+a^2}{c+a}}+3 \\
+\leqslant & \sqrt{2}(\sqrt{a+b}+\sqrt{b+c}+\sqrt{c+a}) .
+\end{aligned}
+$$
+%%<SOLUTION>%%
+证明:由 $Q_2 \geqslant A_2$ 得
+$$
+\begin{aligned}
+& \sqrt{2} \cdot \sqrt{a+b}=2 \sqrt{\frac{a b}{a+b}} \cdot \sqrt{\frac{1}{2}\left(2+\frac{a^2+b^2}{a b}\right)} \\
+\geqslant & 2 \sqrt{\frac{a b}{a+b}} \cdot \frac{1}{2}\left(\sqrt{2}+\sqrt{\frac{a^2+b^2}{a b}}\right) \\
+= & \sqrt{\frac{2 a b}{a+b}}+\sqrt{\frac{a^2+b^2}{a+b}} .
+\end{aligned}
+$$
+同理,
+$$
+\begin{aligned}
+& \sqrt{2} \cdot \sqrt{b+c} \geqslant \sqrt{\frac{2 b c}{b+c}}+\sqrt{\frac{b^2+c^2}{b+c}}, \\
+& \sqrt{2} \cdot \sqrt{c+a} \geqslant \sqrt{\frac{2 c a}{c+a}}+\sqrt{\frac{c^2+a^2}{c+a}} .
+\end{aligned}
+$$
+再由 $Q_3 \geqslant H_3$ 得
+$$
+\begin{gathered}
+\sqrt{\frac{\left(\sqrt{\frac{a+b}{2 a b}}\right)^2+\left(\sqrt{\frac{b+c}{2 b c}}\right)^2+\left(\sqrt{\frac{c+a}{2 c a}}\right)^2}{3}} \\
+\geqslant \frac{\frac{1}{\sqrt{\frac{a+b}{2 a b}}}+\frac{1}{\sqrt{\frac{b+c}{2 b c}}}+\frac{1}{\sqrt{\frac{c+a}{2 c a}}}}{}
+\end{gathered}
+$$
+所以
+$$
+\begin{aligned}
+& \sqrt{\frac{2 a b}{a+b}}+\sqrt{\frac{2 b c}{b+c}}+\sqrt{\frac{2 c a}{c+a}} \\
+\geqslant & 3 \sqrt{\frac{3}{\left(\sqrt{\frac{a+b}{2 a b}}\right)^2+\left(\sqrt{\frac{b+c}{2 b c}}\right)^2+\left(\sqrt{\frac{c+a}{2 c a}}\right)^2}} \\
+= & 3 \sqrt{\frac{3 a b c}{a b+b c+c a}} \geqslant 3 .
+\end{aligned}
+$$
+于是,原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设正实数 $x 、 y 、 z$ 满足 $x^2+y^2+z^2=1$. 求证:
+$$
+x^2 y z+y^2 x z+z^2 x y \leqslant \frac{1}{3} .
+$$
+%%<SOLUTION>%%
+证明:因为 $\sqrt[3]{x y z} \leqslant \frac{x+y+z}{3} \leqslant \sqrt{\frac{x^2+y^2+z^2}{3}}=\frac{1}{\sqrt{3}}$, 所以
+$$
+x y z \leqslant \frac{1}{3 \sqrt{3}}, x+y+z \leqslant \sqrt{3},
+$$
+故
+$$
+x^2 y z+y^2 x z+z^2 x y \leqslant-\frac{1}{3} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $a, b, c, d \in \mathbf{R}^{+}$, 求证:
+$$
+\sqrt[3]{\frac{a b c+b c d+c d a+a d b}{4}} \leqslant \sqrt{\frac{a^2+b^2+c^2+d^2}{4}} .
+$$
+%%<SOLUTION>%%
+证明:首先两次应用 $G_2 \leqslant A_2$, 得
+$\frac{a b c+b c d+c d a+a d b}{4}$
+$$
+\begin{aligned}
+& =\frac{1}{2}\left(a b \cdot \frac{c+d}{2}+c d \cdot \frac{a+b}{2}\right) \\
+& \leqslant \frac{1}{2}\left[\left(\frac{a+b}{2}\right)^2 \cdot \frac{c+d}{2}+\left(\frac{c+d}{2}\right)^2 \cdot \frac{a+b}{2}\right] \\
+& =\frac{a+b}{2} \cdot \frac{c+d}{2} \cdot \frac{a+b+c+d}{4} \\
+& \leqslant\left(\frac{\frac{a+b}{2}+\frac{c+d}{2}}{2}\right)^2 \frac{a+b+c+d}{4}=\left(\frac{a+b+c+d}{4}\right)^3 .
+\end{aligned}
+$$
+即再由 $A_4 \leqslant Q_4$, 得
+$$
+\frac{a+b+c+d}{4} \leqslant \sqrt{\frac{a^2+b^2+c^2+d^2}{4}} .
+$$
+故原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $x_i \geqslant 1(i=1,2, \cdots, n)$, 证明:
+$$
+\frac{\prod\left(x_i-1\right)}{\left(\sum\left(x_i-1\right)\right)^n} \leqslant \frac{\prod x_i}{\left(\sum x_i\right)^n} .
+$$
+%%<SOLUTION>%%
+证明:原不等式等价于
+$$
+\left(\frac{\Pi\left(x_i-1\right)}{\prod x_i}\right)^{\frac{1}{n}} \leqslant \frac{\sum\left(x_i-1\right)}{\sum x_i},
+$$
+这个不等式可以由下面的事实推出.
+由平均值不等式,得
+$$
+\begin{aligned}
+\left(\frac{\prod\left(x_i-1\right)}{\prod x_i}\right)^{\frac{1}{n}} & =\left(\prod \frac{x_i-1}{x_i}\right)^{\frac{1}{n}} \\
+& \leqslant \frac{1}{n} \sum \frac{x_i-1}{x_i} \\
+& =1-\frac{1}{n} \sum \frac{1}{x_i} .
+\end{aligned}
+$$
+以及
+$$
+\begin{gathered}
+\frac{\sum\left(x_i-1\right)}{\sum x_i}=\frac{\sum x_i-n}{\sum x_i}=1-\frac{n}{\sum x_i}, \\
+\frac{1}{n} \sum \frac{1}{x_i} \geqslant \frac{n}{\sum x_i} .
+\end{gathered}
+$$
+从而可知命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $x_i \in\left[0, \frac{\pi}{2}\right], i=1,2, \cdots, 10$, 满足 $\sin ^2 x_1+\sin ^2 x_2+\cdots+ \sin ^2 x_{10}=1$. 证明:
+$$
+3\left(\sin x_1+\cdots+\sin x_{10}\right) \leqslant \cos x_1+\cdots+\cos x_{10} .
+$$
+%%<SOLUTION>%%
+证明:由于 $\sin ^2 x_1+\sin ^2 x_2+\cdots+\sin ^2 x_{10}=1$ ,
+$$
+\cos x_i=\sqrt{\sum_{j \neq i} \sin ^2 x_j}
+$$
+则对 $1 \leqslant i \leqslant 10$, 得
+$$
+\cos x_i=\sqrt{\sum_{j \neq i} \sin ^2 x_j} \geqslant \frac{\sum_{j \neq i} \sin x_j}{3} .
+$$
+从而
+$$
+\sum_{i=1}^{10} \cos x_i \geqslant \sum_{i=1}^{10} \sum_{j \neq i} \frac{\sin x_j}{3}=\sum_{i=1}^{10} 9 \cdot \frac{\sin x_i}{3}=3 \sum_{i=1}^{10} \sin x_i .
+$$
+故命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $a_i \in \mathbf{R}^{+}, i=1,2, \cdots, n$, 且 $\sum_{i=1}^n a_i=1$, 求
+$$
+M=\sum_{i=1}^n \frac{a_i}{1+\sum_{j \neq i, j=1}^n a_j}
+$$
+的最小值.
+%%<SOLUTION>%%
+解:由 $M+n=\left(\frac{a_1}{2-a_1}+1\right)+\left(\frac{a_2}{2-a_2}+1\right)+\cdots+\left(\frac{a_n}{2-a_n}+1\right)$
+$$
+\begin{aligned}
+& =\frac{2}{2-a_1}+\frac{2}{2-a_2}+\cdots+\frac{2}{2-a_n}\left(\text { 由 } H_n \leqslant A_n\right) \\
+& \geqslant \frac{n^2}{\frac{1}{2}\left(2-a_1\right)+\frac{1}{2}\left(2-a_2\right)+\cdots+\frac{1}{2}\left(2-a_n\right)} \\
+& =\frac{n^2}{\frac{1}{2}(2 n-1)}=\frac{2 n^2}{2 n-1} .
+\end{aligned}
+$$
+所以 $M \geqslant \frac{n}{2 n-1}$, 当且仅当 $a_1=a_2=\cdots=a_n=\frac{1}{n}$ 时, $M=\frac{n}{2 n-1}$.
+于是 $M$ 的最小值为 $\frac{n}{2 n-1}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 已知 $a, b, c \in \mathbf{R}^{+}$, 且满足 $\frac{a^2}{1+a^2}+\frac{b^2}{1+b^2}+\frac{c^2}{1+c^2}=1$, 求证:
+$$
+a b c \leqslant \frac{\sqrt{2}}{4} \text {. }
+$$
+%%<SOLUTION>%%
+证明:令 $x=\frac{a^2}{1+a^2}, y=\frac{b^2}{1+b^2}, z=\frac{c^2}{1+c^2}$, 则
+$$
+0<x, y, z<1, x+y+z=1 \text {, }
+$$
+$$
+a^2=\frac{x}{1-x}, b^2=\frac{y}{1-y}, c^2=\frac{z}{1-z}, a^2 b^2 c^2=\frac{x y z}{(1-x)(1-y)(1-z)} .
+$$
+于是, 原问题化为证明
+$$
+\frac{x y z}{(1-x)(1-y)(1-z)} \leqslant \frac{1}{8} \text {. }
+$$
+由 $H_3 \leqslant A_3$, 并注意到 $x+y+z=1$, 有 $\frac{1}{x}+\frac{1}{y}+\frac{1}{z} \geqslant 9$, 则
+$$
+9\left(\frac{1}{x}+\frac{1}{y}+\frac{1}{z}-1\right) \geqslant 8\left(\frac{1}{x}+\frac{1}{y}+\frac{1}{z}\right) .
+$$
+由于 $G_3 \geqslant H_3$, 得
+$$
+(x y z)^{\frac{1}{3}} \geqslant \frac{3}{\frac{1}{x}+\frac{1}{y}+\frac{1}{z}} \geqslant \frac{3}{\frac{9}{8}\left(\frac{1}{x}+\frac{1}{y}+\frac{1}{z}-1\right)},
+$$
+所以
+$$
+(x y z)^{-\frac{1}{3}} \leqslant \frac{3}{8}\left(\frac{1}{x}+\frac{1}{y}+\frac{1}{z}-1\right) \text {. }
+$$
+又由
+$$
+\begin{aligned}
+& \frac{1}{8}(1-x)(1-y)(1-z)-\frac{1}{3}(x y z)^{\frac{2}{3}} \\
+= & \frac{1}{8}(x y+y z+z x-x y z)-\frac{1}{3}(x y z)^{\frac{2}{3}} \\
+= & \frac{1}{8} x y z\left[-\frac{1}{x}+\frac{1}{y}+\frac{1}{z}-\frac{8}{3}(x y z)^{-\frac{1}{3}}\right] \geqslant 0,
+\end{aligned}
+$$
+所以
+$$
+(1-x)(1-y)(1-z) \geqslant \frac{8}{3}(x y z)^{\frac{2}{3}} .
+$$
+由 $A_3 \geqslant G_3$, 得
+$$
+(x y z)^{\frac{1}{3}} \leqslant \frac{1}{3}(x+y+z)=\frac{1}{3} .
+$$
+于是
+$$
+\frac{x y z}{(1-x)(1-y)(1-z)} \leqslant \frac{x y z}{\frac{8}{3}(x y z)^{\frac{2}{3}}}=\frac{3}{8}(x y z)^{\frac{1}{3}} \leqslant \frac{1}{8} .
+$$
+进一步,设 $a_1, a_2, \cdots, a_n$ 为正实数, 实数 $r>0$, 则称
+$$
+M_r=\left(\frac{\sum_{i=1}^n a_i^r}{n}\right)^{\frac{1}{r}}
+$$
+为 $a_1, a_2, \cdots, a_n$ 的 $r$ 次幂平均值.
+对于 $M_r$, 我们有幕平均不等式, 即:
+对 $\alpha>\beta$, 则 $M_\alpha \geqslant M_\beta$, 即
+$$
+\left(\frac{\sum a_i^\alpha}{n}\right)^{\frac{1}{\alpha}} \geqslant\left(\frac{\sum a_i^\beta}{n}\right)^{\frac{1}{\beta}}
+$$
+等号成立的充要条件是 $a_1=a_2=\cdots=a_n$.
+特别当 $\alpha>1, \beta=1$ 时,
+$$
+\frac{\sum a_i^\alpha}{n} \geqslant\left(\frac{\sum a_i}{n}\right)^\alpha
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 给定正整数 $k$, 当 $x^k+y^k+z^k=1$ 时, 求 $x^{k+1}+y^{k+1}+z^{k+1}$ 的最小值.
+%%<SOLUTION>%%
+解:由假设和幕平均不等式, 得
+$$
+\left(\frac{x^{k+1}+y^{k+1}+z^{k+1}}{3}\right)^{\frac{1}{k+1}} \geqslant\left(\frac{x^k+y^k+z^k}{3}\right)^{\frac{1}{k}}=\left(\frac{1}{3}\right)^{\frac{1}{k}},
+$$
+所以
+$$
+x^{k+1}+y^{k+1}+z^{k+1} \geqslant 3\left(\frac{1}{3}\right)^{\frac{k+1}{k}}=3^{-\frac{1}{k}} \text {. }
+$$
+当 $x=y=z=3^{-\frac{1}{k}}$ 时等号成立, 所以最小值为 $3^{-\frac{1}{k}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设三角形三边长分别为 $a 、 b 、 c$, 面积为 $S$, 则
+$$
+a^n+b^n+c^n \geqslant 2^n \cdot 3^{\frac{4-n}{4}} S^{\frac{n}{2}}, n \in \mathbf{N} \text {. }
+$$
+%%<SOLUTION>%%
+证明:当 $n=1$ 时, $a+b+c \geqslant 2 \sqrt{3 \sqrt{3} S}$ 是常见的几何不等式, 即 $n=1$ 时成立.
+假设当 $n=k$ 时命题成立, 即有不等式
+$$
+a^k+b^k+c^k \geqslant 2^k \cdot 3^{\frac{4-k}{4}} S^{\frac{k}{2}},
+$$
+则当 $n=k+1$ 时, 由幂平均不等式,
+$$
+\left(\frac{a_1^\alpha+a_2^\alpha+\cdots+a_n^\alpha}{n}\right)^{\frac{1}{\alpha}} \geqslant\left(\frac{a_1^\beta+a_2^\beta+\cdots+a_n^\beta}{n}\right)^{\frac{1}{\beta}},
+$$
+其中 $a_i \in \mathbf{R}^{+}, i=1,2, \cdots, n, \alpha \geqslant \beta$.
+得
+$$
+\left(\frac{a^{k+1}+b^{k+1}+c^{k+1}}{3}\right)^{\frac{1}{k+1}} \geqslant\left(\frac{a^k+b^k+c^k}{3}\right)^{\frac{1}{k}} \geqslant\left(\frac{2^k}{3} \cdot 3^{\frac{4-k}{4}} \cdot S^{\frac{k}{2}}\right)^{\frac{1}{k}} .
+$$
+从而
+$$
+a^{k+1}+b^{k+1}+c^{k+1} \geqslant 3\left(\frac{2^k}{3} \cdot 3^{\frac{4-k}{4}} \cdot S^{\frac{k}{2}}\right)^{\frac{k+1}{k}}=2^{k+1} \cdot 3^{\frac{4-(k+1)}{4}} S^{\frac{k+1}{2}} .
+$$
+即当 $n=k+1$ 时, 原不等式成立.
+由于一般的幂平均不等式在竞赛中很少出现, 这里就不展开讨论了.
+等式或不等式的变形, 是证明数学问题和运算中常使用的方法和技巧.
+前面我们介绍了平均值不等式的证明和应用, 但对于某些问题, 通过变形处理可能比运用基本定理来证明更简单,下面我们以一个例子来说明,希望读者能有所体会和了解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 设 $a, b, c$ 是正实数,证明:
+$$
+\frac{(2 a+b+c)^2}{2 a^2+(b+c)^2}+\frac{(2 b+a+c)^2}{2 b^2+(c+a)^2}+\frac{(2 c+a+b)^2}{2 c^2+(a+b)^2} \leqslant 8 .
+$$
+%%<SOLUTION>%%
+证明一通过变形直接证明.
+不妨假设 $a+b+c=1$. 则原不等式等价于
+$$
+\begin{gathered}
+\frac{(1+a)^2}{2 a^2+(1-a)^2}+\frac{(1+b)^2}{2 b^2+(1-b)^2}+\frac{(1+c)^2}{2 c^2+(1-c)^2} \leqslant 8, \\
+\frac{a^2+2 a+1}{3 a^2-2 a+1}+\frac{b^2+2 b+1}{3 b^2-2 b+1}+\frac{c^2+2 c+1}{3 c^2-2 c+1} \leqslant 8 .
+\end{gathered}
+$$
+两边同乘以 3 , 得
+$$
+\frac{3 a^2+6 a+3}{3 a^2-2 a+1}+\frac{3 b^2+6 b+3}{3 b^2-2 b+1}+\frac{3 c^2+6 c+3}{3 c^2-2 c+1} \leqslant 24 .
+$$
+消除分子的二次项,得
+$$
+\frac{8 a+2}{3 a^2-2 a+1}+\frac{8 b+2}{3 b^2-2 b+1}+\frac{8 c+2}{3 c^2-2 c+1} \leqslant 21 .
+$$
+因为 $3 x^2-2 x+1=3\left(x-\frac{1}{3}\right)^2+\frac{2}{3} \geqslant \frac{2}{3}$, 所以
+$$
+\begin{aligned}
+& \frac{8 a+2}{3 a^2-2 a+1}+\frac{8 b+2}{3 b^2-2 b+1}+\frac{8 c+2}{3 c^2-2 c+1} \\
+\leqslant & \frac{8 a+2}{\frac{2}{3}+\frac{8 b+2}{\frac{2}{3}}+\frac{8 c+2}{\frac{2}{3}}=\frac{3}{2}(8+6) \leqslant 21 .}
+\end{aligned}
+$$
+故命题成立.
+%%<SOLOUTION>%%
+证明二对一个 $n$ 个变量的函数 $f$, 定义它的对称和
+$$
+\sum_{s y m} f\left(x_1, x_2, \cdots, x_n\right)=\sum_\sigma f\left(x_{\sigma(1)}, x_{\sigma(2)}, \cdots, x_{\sigma(n)}\right) .
+$$
+这里 $\sigma$ 是 $1,2, \cdots, n$ 的所有的排列, $s y m$ 表示对称求和.
+例如, 将 $x_1$, $x_2, x_3$ 记为 $x, y, z$, 当 $n=3$ 时,有
+$$
+\begin{gathered}
+\sum_{s y m} x^3=2 x^3+2 y^3+2 z^3, \\
+\sum_{s y m} x^2 y=x^2 y+y^2 z+z^2 x+x^2 z+y^2 x+z^2 y
+\end{gathered}
+$$
+$$
+\sum_{s y m} x y z=6 x y z
+$$
+则
+$$
+8-\frac{(2 a+b+c)^2}{2 a^2+(b+c)^2}+\frac{(2 b+a+c)^2}{2 b^2+(c+a)^2}+\frac{(2 c+a+b)^2}{2 c^2+(a+b)^2}=\frac{A}{B},
+$$
+其中 $B>0$,
+$$
+A=\sum_{\text {sym }}\left(4 a^6+4 a^5 b+a^4 b^2+5 a^4 b c+5 a^3 b^3-26 a^3 b^2 c+7 a^2 b^2 c^2\right) .
+$$
+下面证明 $A>0$.
+由加权平均值不等式, 得
+$$
+4 a^6+b^6+c^6 \geqslant 6 a^4 b c, 3 a^5 b+3 a^5 c+b^5 a+c^5 a \geqslant 8 a^4 b c,
+$$
+得
+$$
+\sum_{s y m} 6 a^6 \geqslant \sum_{s y m} 6 a^4 b c, \sum_{s y m} 8 a^5 b \geqslant \sum_{s y m} 8 a^4 b c .
+$$
+于是 $\quad \sum_{s y m}\left(4 a^6+4 a^5 b+5 a^4 b c\right) \geqslant \sum_{s y m} 13 a^4 b c$.
+再由平均值不等式, 得
+$$
+a^4 b^2+b^4 c^2+c^4 a^2 \geqslant 3 a^2 b^2 c^2, a^3 b^3+b^3 c^3+c^3 a^3 \geqslant 3 a^2 b^2 c^2,
+$$
+从而
+$$
+\sum_{\text {sym }}\left(a^4 b^2+5 a^3 b^3\right) \geqslant \sum_{s y m} 6 a^2 b^2 c^2,
+$$
+或者
+$$
+\sum_{s y m}\left(a^4 b^2+5 a^3 b^3+7 a^2 b^2 c^2\right) \geqslant \sum_{s y m} 13 a^2 b^2 c^2 .
+$$
+回顾 Schur 不等式,
+$$
+\begin{aligned}
+& a^3+b^3+c^3+3 a b c-\left(a^2 b+b^2 c+c^2 a+a b^2+b c^2+c a^2\right) \\
+= & a(a-b)(a-c)+b(b-a)(b-c)+c(c-a)(c-b) \geqslant 0
+\end{aligned}
+$$
+或者
+$$
+\sum_{s y m}\left(a^3-2 a^2 b+a b c\right) \geqslant 0,
+$$
+于是 $\sum_{\text {sym }}\left(13 a^4 b c-26 a^3 b^2 c+13 a^2 b^2 c^2\right) \geqslant 13 a b c \sum_{s y m}\left(a^3-2 a^2 b+a b c\right) \geqslant 0$.
+综上可得 $A>0$. 证毕.
+%%PROBLEM_END%%
+
+

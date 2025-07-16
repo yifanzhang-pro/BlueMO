@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例10. 如图(<FilePath:./images/volume7/figures/fig-c8i21.png>), 已知 $B 、 N 、 F$ 均在 $\\triangle A C E$ 的边上, $A N$ 分别交 $B F 、 B E 、 C F$ 于点 $M 、 G 、 H$. 求证: $\\frac{1}{A M}+\\frac{1}{A N}=-\\frac{1}{A G}+\\frac{1}{A H}$.",
+    "solution": "证明:设直线 $B F, C E$ 交于 $I$, 再设 $I D$ 与 $A N$ 交于 $J$, 由调和四边形的性质 2 知, $A 、 G 、 M 、 N$; $A 、 J 、 G 、 H$ 均为调和点列.\n所以左式 $=\\frac{2}{A J}=$ 右式.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8i21.png"
+    ]
+}

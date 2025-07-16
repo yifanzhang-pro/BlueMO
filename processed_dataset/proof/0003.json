@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例6. 求所有的角 $\\alpha$, 使得集合\n$$\n\\{\\sin \\alpha, \\sin 2 \\alpha, \\sin 3 \\alpha\\}=\\{\\cos \\alpha, \\cos 2 \\alpha, \\cos 3 \\alpha\\} .\n$$",
+    "solution": "解: 设 $\\alpha \\in[0,2 \\pi)$. 由已知得\n$$\n\\sin \\alpha+\\sin 2 \\alpha+\\sin 3 \\alpha=\\cos \\alpha+\\cos 2 \\alpha+\\cos 3 \\alpha,\n$$\n即\n$$\n\\begin{aligned}\n2 \\sin 2 \\alpha \\cos \\alpha+\\sin 2 \\alpha & =2 \\cos 2 \\alpha \\cos \\alpha+\\cos 2 \\alpha, \\\\\n\\sin 2 \\alpha(2 \\cos \\alpha+1) & =\\cos 2 \\alpha(2 \\cos \\alpha+1) .\n\\end{aligned}\n$$\n所以 $\\sin 2 \\alpha=\\cos 2 \\alpha$ 或 $\\cos \\alpha=-\\frac{1}{2}$ (舍去).\n从而\n$$\n\\begin{aligned}\n0 & =\\sin 2 \\alpha-\\cos 2 \\alpha \\\\\n& =\\sin 2 \\alpha-\\sin \\left(\\frac{\\pi}{2}-2 \\alpha\\right) \\\\\n& =2 \\cos \\frac{\\pi}{4} \\sin \\left(2 \\alpha-\\frac{\\pi}{4}\\right) .\n\\end{aligned}\n$$\n于是 $\\alpha=\\frac{\\pi}{8}, \\frac{5 \\pi}{8}, \\frac{9 \\pi}{8}, \\frac{13 \\pi}{8}$.\n又 $\\sin \\alpha \\sin 2 \\alpha \\sin 3 \\alpha=\\cos \\alpha \\cos 2 \\alpha \\cos 3 \\alpha$, 且 $\\sin 2 \\alpha=\\cos 2 \\alpha$, 因此\n$$\n\\begin{aligned}\n\\cos 4 \\alpha & =0, \\\\\n\\alpha=\\frac{(2 k-1) \\pi}{8}, k & =1,2, \\cdots, 8 .\n\\end{aligned}\n$$\n经验证, $\\alpha=\\frac{k \\pi}{4}+\\frac{\\pi}{8}(k \\in \\mathbf{Z})$ 满足题意.\n说明: 元素之和(积)相等只是两个集合相等的必要条件, 因此这里还必须检查集合的元素是否互异.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题17. 设 $a 、 b 、 c$ 为正实数,且 $a+b+c=1$. 求证:\n$$\n(1+a)(1+b)(1+c) \\geqslant 8(1-a)(1-b)(1-c) .\n$$",
+    "solution": "由于 $1+a=2-b-c=1-b+1-c \\geqslant 2 \\sqrt{(1-b)(1-c)}$, 同理可得 $1+b \\geqslant 2 \\sqrt{(1-a)(1-c)}, 1+c \\geqslant 2 \\sqrt{(1-a)(1-b)}$. 将以上三式相乘便可以.",
+    "remark": "",
+    "figures": []
+}

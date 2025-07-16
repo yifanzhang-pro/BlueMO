@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 将 $n+1$ 件不同奖品全部发给 $n$ 个同学, 每人至少一件, 则发放的方法数为",
+    "solution": "由题意 $n$ 个同学中恰有 1 人得 2 件, 其余 $n-1$ 个人每人得 1 件, 故发放奖品的方法数为 $\\mathrm{C}_{n+1}^2 \\mathrm{~A}_n^n=\\frac{(n+1) \\cdot n \\cdot n !}{2}$.",
+    "remark": "",
+    "figures": []
+}

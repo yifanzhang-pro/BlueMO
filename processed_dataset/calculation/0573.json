@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题3 已知 $f(x)=x^2+2 x+11$ 在 $[t, t+1]$ 上的最小值为 $g(t)$, 求 $g(t)$.",
+    "solution": "$f(x)$ 的对称轴为 $x=-1$. \n(1) 当 $t+1<-1$ 时, 即 $t<-2$ 时, 有 $f_{\\text {min }}(x)=f(t+1)=t^2+4 t+14$. \n(2) 当 $t+1 \\geqslant-1$, 且 $t \\leqslant-1$ 时, 即 $-2 \\leqslant t \\leqslant-1$ 时, $f_{\\text {min }}(x)=10$. \n(3) 当 $t>-1$ 时, 有 $f_{\\text {min }}(x)=f(t)= t^2+2 t+11$. \n所以 $g(t)= \\begin{cases}t^2+4 t+14, & \\text { 当 } t<-2 \\text { 时; } \\\\ 10, & \\text { 当 }-2 \\leqslant t \\leqslant-1 \\text { 时; } \\\\ t^2+2 t+11, & \\text { 当 } t>-1 \\text { 时.\n}\\end{cases}$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题6. 设 $P$ 是三角形 $A B C$ 内部的一个点, $D 、 E 、 F$ 分别是由 $P$ 向线段 $B C$ 、 $C A 、 A B$ 作垂线所得的垂足,求使\n$$\n\\frac{B C}{P D}+\\frac{C A}{P E}+\\frac{A B}{P F}\n$$\n达到最小时点 $P$ 的位置.",
+    "solution": "设 $B C 、 C A 、 A B$ 的长度分别为 $a 、 b 、 c ; P D 、 P E 、 P F$ 的长度分别为 $p 、 q 、 r$. 我们要在 $\\triangle A B C$ 的内部找一点 $P$, 使 $\\frac{a}{p}+\\frac{b}{q}+\\frac{c}{r}$ 达到最小.\n由于\n$$\n\\begin{aligned}\nS_{\\triangle A B C} & =S_{\\triangle P B C}+S_{\\triangle P C A}+S_{\\triangle P A B} \\\\\n& =\\frac{1}{2} a p+\\frac{1}{2} b q+\\frac{1}{2} c r,\n\\end{aligned}\n$$\n所以, $a p+b q+c r=2 S_{\\triangle A B C}$ 是一个与 $P$ 点的位置无关的常数, 因此, 我们可以用 $(a p+b q+c r)\\left(\\frac{a}{p}+\\frac{b}{q}+\\frac{c}{r}\\right)$ 取最小值来代替使 $\\frac{a}{p}+\\frac{b}{q}+\\frac{c}{r}$ 取最小值(问题已被转化).\n由柯西不等式\n$$\n(a p+b q+c r)\\left(\\frac{a}{p}+\\frac{b}{q}+\\frac{c}{r}\\right) \\geqslant(a+b+c)^2,\n$$\n并且当 $a p \\times \\frac{p}{a}=b q \\times \\frac{q}{b}=c r \\times \\frac{r}{c}$, 即 $p=q=r$ 时上述不等式取等号, 从而当 $p=q=r$ 时, $(a p+b q+c r)\\left(\\frac{a}{p}+\\frac{b}{q}+\\frac{c}{r}\\right)$ 取最小值, 也就是说, 当 $P$ 为 $\\triangle A B C$ 的内心时, $\\frac{a}{p}+\\frac{b}{q}+\\frac{c}{r}$ 取到最小值.",
+    "remark": "",
+    "figures": []
+}

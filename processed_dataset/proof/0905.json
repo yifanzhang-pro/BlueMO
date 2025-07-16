@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例16 设 $f(x, y)$ 是二元多项式, 且满足下列条件:\n(1) $f(1,2)=2$;\n(2) $y f(x, f(x, y))=x f(f(x, y), y)^2$.\n试确定所有这样的 $f(x, y)$.",
+    "solution": "解:由 (1), $f(1,2)=2$. 再反复利用 (2), 得\n$$\n\\begin{gathered}\nf(2,2)=f(f(1,2), 2)=(f(1,2))^2=4, \\\\\nf(4,2)=\\frac{1}{2}(2 f(f(2,2), 2))=\\frac{1}{2}(f(2,2))^2=8,\n\\end{gathered}\n$$\n不难用数学归纳法证明 (这里略), 对任意自然数 $n$, 有\n$$\nf\\left(2^n, 2\\right)=2^{n+1} \\text {. }\n$$\n于是, 关于 $x$ 的多项式 $f(x, 2)-2 x$ 有无限多个根 $2^n(n=0,1,2, \\cdots)$, 所以 $f(x, 2) \\equiv 2 x$.\n由于 $f(x, 2)$ 和 $f(x, y)$ 中对各项的 $x$ 次数不变, 所以, $f(x, y)=x g(y)$, 其中 $g(y)$ 是关于 $y$ 的一元多项式.\n另外, 由 $f(2,2)=4$, 反复利用 $(2)$, 得\n$$\nf(2,4)=\\frac{1}{2}(2 f(2, f(2,2)))=8,\n$$\n同样用数学归纳法易证,对任意自然数 $n$,有 $f\\left(2,2^n\\right)=2^{n+1}$.\n类似地,得\n$$\nf(x, y)=y h(x)\n$$\n所以 $f(x, y)=x y$.",
+    "remark": "",
+    "figures": []
+}

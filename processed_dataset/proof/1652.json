@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例4. 凸五边形 $A B C D E$ 满足 $\\angle B A C=\\angle C A D= \\angle D A E, \\angle A B C=\\angle A C D==\\angle A D E, P$ 是 $B D$ 和 $C E$的交点.\n求证: $A P$ 平分线段 $C D$.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c1i6.png>), 由条件知 $\\triangle A B C \\backsim \\triangle A C D \\backsim \\triangle A D E$, 所以四边形 $A B C D \\sim$ 四边形 $A C D E$.\n设 $A C \\cap B D=X, A D \\cap C E=Y$, 可知\n$$\nA X: C X=A Y: D Y .\n$$\n设 $A P \\cap C D=M$, 由 Ceva 定理知\n$$\n\\frac{C M}{D M}=\\frac{C X}{D Y} \\cdot A Y=1 \n$$\n所以 $M$ 为 $C D$ 中点,故 $A P$ 平分线段 $C D$, 证毕.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1i6.png"
+    ]
+}

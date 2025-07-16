@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-2.tex",
+    "problem_type": "proof",
+    "problem": "例4. 已知 $x 、 y 、 z$ 为实数, 且满足\n$$\nx+y+z=x y+y z+z x .\n$$\n求 $\\frac{x}{x^2+1}+\\frac{y}{y^2+1}+\\frac{z}{z^2+1}$ 的最小值.",
+    "solution": "解:令 $x=1, y=z=-1$. 则\n$$\n\\frac{x}{x^2+1}+\\frac{y}{y^2+1}+\\frac{z}{z^2+1}=-\\frac{1}{2} .\n$$\n猜想最小值为 $-\\frac{1}{2}$.\n只须证:\n$$\n\\begin{aligned}\n& \\frac{x}{x^2+1}+\\frac{y}{y^2+1}+\\frac{z}{z^2+1} \\geqslant-\\frac{1}{2} \\\\\n\\Leftrightarrow & \\frac{(x+1)^2}{x^2+1}+\\frac{(y+1)^2}{y^2+1} \\geqslant \\frac{(z-1)^2}{z^2+1} .\n\\end{aligned} \\label{(39)}\n$$\n注意到 $z(x+y-1)=x+y-x y$.\n若 $x+y-1=0$, 则 $x+y=x y=1$. 矛盾.\n故 $x+y-1 \\neq 0$.\n于是, $z=\\frac{x+y-x y}{x+y-1}$.\n代入不等式 (39)得\n$$\n\\begin{aligned}\n& \\frac{(x+-1)^2}{x^2+1}+\\frac{(y+1)^2}{y^2+1} \\\\\n\\geqslant & \\frac{(x y-1)^2}{(x+y-1)^2+(x+y-x y)^2} .\n\\end{aligned} \\label{(40)}\n$$\n由柯西不等式得式(40) 左边\n$$\n\\begin{aligned}\n& \\geqslant \\frac{[(1+x)(1-y)+(1+y)(1-x)]^2}{\\left(1+x^2\\right)(1-y)^2+\\left(1+y^2\\right)(1-x)^2} \\\\\n& =\\frac{4(x y-1)^2}{\\left(1+x^2\\right)(1-y)^2+\\left(1+y^2\\right)(1-x)^2} .\n\\end{aligned}\n$$\n于是, 只须证\n$$\n\\begin{aligned}\n& 4(x+y-1)^2+4(x+y-x y)^2 \\\\\n\\geqslant & \\left(1+x^2\\right)(1-y)^2+\\left(1+y^2\\right)(1-x)^2 \\\\\n\\Leftrightarrow & f(x)=\\left(y^2-3 y+3\\right) x^2-\\left(3 y^2-8 y+3\\right) x+3 y^2-3 y+1 \\geqslant 0 .\n\\end{aligned}\n$$\n由 $\\Delta=\\left(3 y^2-8 y+3\\right)^2-4\\left(y^2-3 y+3\\right)\\left(3 y^2-3 y+1\\right)= -3\\left(y^2-1\\right)^2 \\leqslant 0$, 故 $f(x) \\geqslant 0$ 恒成立.\n从而, 猜想成立, 即 $\\frac{x}{x^2+1}+\\frac{y}{y^2+1}+\\frac{z}{z^2+1}$ 的最小值为 $-\\frac{1}{2}$.",
+    "remark": "",
+    "figures": []
+}

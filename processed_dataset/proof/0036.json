@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $A \\subset \\mathrm{N}^*$ 是无限集, $A$ 中每个数 $a$ 是至多 1990 个质数的乘积.\n证明: 必有.\n$A$ 的无限子集 $B$, 使得 $B$ 中任何两个不同数的最大公约数都相同.",
+    "solution": "分析:如果 $A$ 中含有无限多个两两互质的整数, 则结论显然成立.\n否则, 存在质数 $p_1$ 为 $A$ 的无限多个数的因数, 故 $A_1=\\left\\{\\frac{a}{p_1} \\mid \\frac{a}{p_1} \\in \\mathbf{Z}, a \\in A\\right\\}$ 为无限集.\n若 $A_1$ 中含有无限多个两两互质的整数, 则结论亦成立.\n否则, 继续上面的步骤.\n证明如果 $A$ 中含有无限多个两两互质的正整数, 将它们全部选出作成子集 $B$, 则结论成立.\n若存在质数 $p_1$ 为 $A$ 中无限多个数的因数,则集合\n$$\nA_1=\\left\\{\\frac{a}{p_1} \\mid \\frac{a}{p_1} \\in \\mathbf{Z}, a \\in A\\right\\}\n$$\n为无限集.\n依此类推 (用 $A_1$ 代替 $A$ ). 由于 $A$ 中每个数的质因数个数 $\\leqslant 1990$, 所以必有无限集\n$$\nA_k=\\left\\{\\frac{a}{p_1 p_2 \\cdots p_k} \\mid \\frac{a}{p_1 p_2 \\cdots p_k} \\in \\mathbf{Z}, \\frac{a}{p_1 p_2 \\cdots p_{k-1}} \\in A_{k-1}\\right\\},\n$$\n每个质数 $p_i$ 都仅是 $A_k$ 中有限多个数的因数.\n任取 $a_1 \\in A_k$. 在取定 $a_1, a_2, \\cdots, a_n$ 两两互质后, 由于每个质数都仅是 $A_k$ 中有限多个数的因数, 在 $A_k$ 中存在 $a_{n+1}$, 它与 $a_1, a_2, \\cdots, a_n$ 均互质.\n这样就得到 $A_k$ 的一个无穷子集 $B_k, B_k$ 中的元素两两互质.\n将 $B_k$ 中每个元素乘以 $p_1 p_2 \\cdots p_k$, 得到 $A$ 的无穷子集, 其中每两个数的最大公约数均为 $p_1 p_2 \\cdots p_k$.",
+    "remark": "",
+    "figures": []
+}

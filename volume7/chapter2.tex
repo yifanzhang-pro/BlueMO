@@ -1,0 +1,365 @@
+
+%%TEXT_BEGIN%%
+三角形中的几个重要定理及其应用.
+梅涅劳斯定理, 塞瓦定理是平面几何中的两个极其重要的定理.
+它们常常联合起来同时使用.
+1. 梅涅劳斯定理: 一直线与 $\triangle A B C$ 的三边 $A B 、 B C 、 C A$ 或它们的延长线分别相交于 $X 、 Y 、 Z$, 则 $\frac{A X}{X B} \cdot \frac{B Y}{Y C} \cdot \frac{C Z}{Z A}=1$.
+事实上,如图(<FilePath:./figures/fig-c2i1.png>) 过 $A 、 B 、 C$ 分别作直线 $X Y Z$ 的垂线, 设垂足分别为 $Q 、 P 、 S$. 由三角形相似有关知识有: : $\frac{A X}{X B}=\frac{A Q}{B P}, \frac{B Y}{Y C}=\frac{B P}{C S}, \frac{C Z}{Z A}=\frac{C S}{A Q}$. 三式相乘即得.
+梅涅劳斯定理的逆定理也成立, 即 "在 $\triangle A B C$ 的边 $A B 、 A C 、 B C$ (或其延长线上) 分别取 $X 、 Z 、 Y$. 如果 $\frac{A X}{X B} \cdot \frac{B Y}{Y C} \cdot \frac{C Z}{Z A}=1$, 那么 $X, Y, Z$ 三点共线". 梅氏定理的逆定理常用来证明三点共线.
+2. 塞瓦定理常可分为边元塞瓦定理和角元塞瓦定理.
+边元塞瓦定理: 如图(<FilePath:./figures/fig-c2i2.png>), $\triangle A B C$ 内任取一点 $P$, 直线 $A P 、 B P 、 C P$ 分别与边 $B C 、 C A 、 A B$ 相交于点 $D 、 E 、 F$, 则 $\frac{B D}{D C} \cdot \frac{C E}{E A} \cdot \frac{A F}{F B}=1$.
+事实上, $\frac{B D}{D C}=\frac{S_{\triangle B P D}}{S_{\triangle C P D}}=\frac{S_{\triangle A B D}}{S_{\triangle A C D}}=\frac{S_{\triangle A B P}}{S_{\triangle A C P}}$ (用到了分比性质).
+同理: $\frac{C E}{E A}=\frac{S_{\triangle B P C}}{S_{\triangle A B P}}, \frac{A F}{F B}=\frac{S_{\triangle A C P}}{S_{\triangle B P C}}$. 三式相乘即得.
+边元塞瓦定理的逆定理也成立.
+即 "在 $\triangle A B C$ 的边 $B C 、 C A 、 A B$ 上分别取点 $D 、 E 、 F$, 如果 $\frac{B D}{D C} \cdot \frac{C E}{E A} \cdot \frac{A F}{F B}=1$. 那么直线 $A D 、 B E 、 C F$ 三线相交于同一点.
+塞瓦定理的逆定理常被用来证明三线共点.
+角元塞瓦定理: 如图(<FilePath:./figures/fig-c2i3.png>), 设 $D 、 E 、 F$ 分别是 $\triangle A B C$ 的三边 $B C 、 C A 、 A B$ 上的点, 三条线段 $A D$ 、 $B E 、 C F$ 交于一点 $M$. 则
+(1) 对 $\triangle A B C$ 与点 $M$, 有
+$$
+\frac{\sin \angle B A M}{\sin \angle M A C} \cdot \frac{\sin \angle A C M}{\sin \angle M C B} \cdot \frac{\sin \angle C B M}{\sin \angle M B A}=1 ;
+$$
+(2) 对 $\triangle M B C$ 与点 $A$, 有
+$$
+\frac{\sin \angle B M D}{\sin \angle D M C} \cdot \frac{\sin \angle M C A}{\sin \angle A C B} \cdot \frac{\sin \angle C B A}{\sin \angle A B M}=1 ;
+$$
+(3) 对 $\triangle M C A$ 与点 $B$, 有
+$$
+\frac{\sin \angle C M E}{\sin \angle E M A} \cdot \frac{\sin \angle M A B}{\sin \angle B A C} \cdot \frac{\sin \angle A C B}{\sin \angle B C M}=1 ;
+$$
+(4) 对 $\triangle M A B$ 与点 $C$, 有
+$$
+\frac{\sin \angle A M F}{\sin \angle F M B} \cdot \frac{\sin \angle M B C}{\sin \angle C B A} \cdot \frac{\sin \angle B A C}{\sin \angle C A M}=1 .
+$$
+像边元塞瓦定理的情形一样, 角元塞瓦定理的逆定理也成立.
+如图(<FilePath:./figures/fig-c2i4.png>), 过 $\triangle A B C$ 的三个顶点各引一条异于三角形三边的直线 $A D$ 、 $B E 、 C F$. 若
+$$
+\frac{\sin \angle B A D}{\sin \angle D A C} \cdot \frac{\sin \angle A C F}{\sin \angle F C B} \cdot \frac{\sin \angle C B E}{\sin \angle E B A}=1,
+$$
+则 $A D 、 B E 、 C F$ 三线共点或互相平行.
+3. 斯台沃特定理: 如图(<FilePath:./figures/fig-c2i5.png>), $\triangle A B C$ 的边 $B C$ 上任取一点 $D$, 若 $B D= u, C D=v, A D=t$, 则
+$$
+t^2=\frac{b^2 u+c^2 v}{a}-u v
+$$
+事实上,由余弦定理
+$$
+\cos \angle A D B=\frac{u^2+t^2-c^2}{2 u t}, \cos \angle A D C=\frac{t^2+v^2-b^2}{2 t v},
+$$
+$$
+t^2=\frac{b^2 u+c^2 \dot{v}}{a}-u v
+$$
+特别地, 当 $A D$ 是 $\triangle A B C$ 的中线时, $u=v=\frac{1}{2} a$, 令 $A D=m_a$, 则 $m_a= \frac{1}{2} \sqrt{2 b^2+2 c^2-a^2}$, 此即中线长公式; 当 $A D$ 是 $\triangle A B C$ 的内角平分线时, 由内角平分线性质: $u=\frac{a c}{b+c}, v=\frac{a b}{b+c}$, 设 $A D=t_a$, 可得 $t_a=\frac{2}{b+c} \cdot \sqrt{b c \cdot p(p-a)}$, 这里 $p=\frac{a+b+c}{2}$. 此即角平分线长公式.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 如图(<FilePath:./figures/fig-c2i6.png>), $K$ 是 $\triangle A B C$ 边 $B C$ 上一点且不为 $B C$ 中点, $D_1 、 D_2$ 是 $A K$ 延长线上不同的两点, $B D_i$ 与 $A C$ 交于点 $N_i, C D_i$ 与 $A B$ 交于点 $M_i, i=1$, 2. 求证: $M_1 N_1$ 不平行于 $M_2 N_2$.
+%%<SOLUTION>%%
+证明:由塞瓦定理, 有
+$$
+\frac{M_1 B}{B A} \cdot \frac{A C}{C N_1}=\frac{M_1 E_1}{E_1 N_1}, \label{eq1}
+$$
+其中 $E_1$ 为直线 $A K$ 与直线 $M_1 N_1$ 交点;
+$$
+\frac{M_2 B}{B A} \cdot \frac{A C}{C N_2}=\frac{M_2 E_2}{E_2 N_2} \label{eq2}
+$$
+其中 $E_2$ 为直线 $A K$ 与直线 $M_2 N_2$ 交点.
+注意到 $A 、 E_1 、 E_2$ 共线于 $A K$, 假设 $M_1 N_1 / / M_2 N_2$, 于是有
+$$
+\frac{M_1 E_1}{E_1 N_1}=\frac{M_2 E_2}{E_2 N_2} . \label{eq3}
+$$
+由式\ref{eq1}、\ref{eq2}、式\ref{eq3}, $\frac{M_1 B}{C N_1}=\frac{M_1 E_1}{E_1 N_1} \cdot \frac{B A}{A C}=\frac{M_2 E_2}{E_2} \frac{B A}{N_2} \cdot \frac{B A}{A C}=\frac{M_2 B}{C N_2}$ 或 $\frac{M_1 B}{M_1 M_2}=\frac{N_1 C}{N_1 N_2}$,
+结合 $M_1 N_1 / / M_2 N_2$ 有 $M_1 N_1 / / M_2 N_2 / / B C$. 因此 $\frac{M_1 B}{B A}=\frac{N_1 C}{C A}$.
+回到第一个等式: $\frac{M_1 B}{B A} \cdot \frac{A C}{C N_1}=\frac{M_1 E_1}{E_1 N_1}$, 左边等于 1 , 但右边 $\frac{M_1 E_1}{E_1 N_1}=\frac{B K}{K C} \neq$ 1. 矛盾! 故假设不成立, 即 $M_1 N_1$ 不可能平行于 $M_2 N_2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 如图(<FilePath:./figures/fig-c2i7.png>), $\triangle A B C$ 中, $D$ 为线段 $B C$ 上一点, 满足 $A D \perp B C$, 取边 $A B$ 上点 $E$, 边 $A C$ 上点 $F$, 连结 $D E 、 D F$, 满足 $\angle E D A=\angle F D A$, 求证: $A D 、 B F 、 C E$ 三线共点.
+%%<SOLUTION>%%
+证明:法一: 过 $A$ 作 $B C$ 的平行线 $l$, 并与 $D E$ 延长线、 $D F$ 延长线分别交于 $G 、 H, l / / B C$ 以及 $A D \perp B C$, 则 $l \perp A D$, 结合 $\angle E D A=\angle F D A$, 有 $A$ 为等腰三角形 $D G H$ 底边 $G H$ 的中点, 即 $G A=A H$, 所以
+$$
+\frac{A E}{E B} \cdot \frac{B D}{D C} \cdot \frac{C F}{F A}=\frac{A G}{B D} \cdot \frac{B D}{D C} \cdot \frac{C D}{A H}=\frac{A G}{A H}=1 .
+$$
+由角元塞瓦定理的逆定理知 $A D 、 B F 、 C E$ 三线共点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 如图(<FilePath:./figures/fig-c2i7.png>), $\triangle A B C$ 中, $D$ 为线段 $B C$ 上一点, 满足 $A D \perp B C$, 取边 $A B$ 上点 $E$, 边 $A C$ 上点 $F$, 连结 $D E 、 D F$, 满足 $\angle E D A=\angle F D A$, 求证: $A D 、 B F 、 C E$ 三线共点.
+%%<SOLUTION>%%
+法二: 设 $\angle E D A=\angle F D A=\alpha$, 则 $\triangle A E D$ 中, 由正弦定理 $\frac{\sin \alpha}{A E}= \frac{\sin \angle A E D}{A D}$.
+同理 $\triangle B E D$ 中, $\frac{\sin \left(90^{\circ}-\alpha\right)}{B E}=\frac{\sin \angle B E D}{B D}$, 由于 $\sin \angle A E D= \sin \angle B E D$,
+所以
+$$
+\tan \alpha=\frac{B D \cdot A E}{B E \cdot A D}, \label{eq1}
+$$
+同理 $\triangle A D F, \triangle D F C$ 中,
+$$
+\tan \alpha=\frac{C D \cdot A F}{C F \cdot A D} . \label{eq2}
+$$
+由式\ref{eq1}, \ref{eq2}, $1=\frac{A E}{E B} \cdot \frac{B D}{D C} \cdot \frac{C F}{F A} \Leftrightarrow A D 、 B F 、 C E$ 三线共点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 如图(<FilePath:./figures/fig-c2i8.png>), $A_1 、 B_1 、 C_1$ 分别是 $\triangle A B C$ 的边 $B C 、 C A 、 A B$ 内任意一点, $G_a, G_b, G_c$ 分别为 $\triangle A B_1 C_1, \triangle B C_1 A_1, \triangle C A_1 B_1$ 的重心.
+求证: $A G_a$, $B G_b, C G_c$ 三线共点的充要条件是 $A A_1, B B_1, C C_1$ 三线共点.
+%%<SOLUTION>%%
+证明:由角元塞瓦定理知 $A G_a, B G_b, C G_c$ 三线共点的充分必要条件为
+$$
+\left(\frac{\sin \angle B A G_a}{\sin \angle G_a A C}\right) \cdot\left(\frac{\sin \angle A C G_c}{\sin \angle G_c C B}\right) \cdot\left(\frac{\sin \angle C B G_b}{\sin \angle G_b B A}\right)=1, \label{eq1}
+$$
+又注意到 $G_a$ 为 $\triangle A B_1 C_1$ 重心, 因此 $S_{\triangle G_a A C_1}=S_{\triangle G_a A B_1}$, 即
+$$
+\frac{1}{2} \cdot A C_1 \cdot A G_a \cdot \sin \angle C_1 A G_a=\frac{1}{2} \cdot A B_1 \cdot A G_a \cdot \sin \angle B_1 A G_a,
+$$
+由此可得
+$$
+\frac{\sin \angle B A G_a}{\sin \angle G_a A C}=\frac{\sin \angle C_1 A G_a}{\sin \angle G_a A B_1}=\frac{A B_1}{A C_1},
+$$
+同理可知
+$$
+\frac{\sin \angle A C G_c}{\sin \angle G_c C B}=\frac{A_1 C}{B_1} \frac{C}{\operatorname{Con} \angle C B G_b}=\frac{B C_1}{\sin \angle G_b B A} .
+$$
+则 式\ref{eq1}就等价于 $\frac{A B_1}{B_1 C} \cdot \frac{C A_1}{A_1 B} \cdot \frac{B C_1}{C_1 A}=1$, 由塞瓦定理, 这就等价于 $A A_1 、 B B_1$ 、 $C C_1$ 三线共点.
+%%<REMARK>%%
+注:此题完美地将塞瓦定理的边元形式与角元形式结合起来.
+角元塞瓦定理的使用是自然的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 如图(<FilePath:./figures/fig-c2i9.png>), $P$ 为 $\triangle A B C$ 内一点, 使得 $\angle P A B=10^{\circ}, \angle P B A=20^{\circ}, \angle P C A=30^{\circ}$, $\angle P A C=40^{\circ}$. 求证: $\triangle A B C$ 是等腰三角形.
+%%<SOLUTION>%%
+证明:设 $\angle A C B=x$, 则 $\angle B C P=x-30^{\circ}$.
+对 $\triangle A P C$ 和点 $B$ 应用角元塞瓦定理有
+$$
+1=\frac{\sin \angle A P}{\sin \angle B P C} \cdot \frac{\sin \angle P C B}{\sin \angle B C A} \cdot \frac{\sin \angle C A B}{\sin \angle B A P}
+$$
+$$
+\begin{aligned}
+=\frac{\sin 150^{\circ}}{\sin 100^{\circ}} \cdot \frac{\sin \left(x-30^{\circ}\right)}{\sin x} & \cdot \frac{\sin 50^{\circ}}{\sin 10^{\circ}} \\
+\frac{\sin \left(x-30^{\circ}\right)}{\sin x} & =\frac{2 \cos 10^{\circ} \cdot \sin 10^{\circ}}{\sin 50^{\circ}} \\
+& =\frac{\sin \left(50^{\circ}-30^{\circ}\right)}{\sin 50^{\circ}} .
+\end{aligned}
+$$
+则
+$$
+\begin{aligned}
+\frac{\sin \left(x-30^{\circ}\right)}{\sin x} & =\frac{2 \cos 10^{\circ} \cdot \sin 10^{\circ}}{\sin 50^{\circ}} \\
+& =\frac{\sin \left(50^{\circ}-30^{\circ}\right)}{\sin 50^{\circ}} .
+\end{aligned}
+$$
+故 $\cos 30^{\circ}-\cot x \cdot \sin 30^{\circ}=\cos 30^{\circ}-\cot 50^{\circ} \cdot \sin 30^{\circ}$.
+所以, $\cot x=\cot 50^{\circ}$.
+因此 $x=50^{\circ}$. 又因为 $\angle B A C=10^{\circ}+40^{\circ}=50^{\circ}=x=\angle A C B$, 所以 $\triangle A B C$ 为等腰三角形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 如图(<FilePath:./figures/fig-c2i10.png>), 在四边形 $A B C D$ 中, $\angle C A B=30^{\circ}, \angle A B D=26^{\circ}, \angle A C D=13^{\circ}, \angle D B C= 51^{\circ}$. 求 $\angle A D B$ 的度数.
+%%<SOLUTION>%%
+解:设 $\angle A D B=x$, 则由于 $\angle C A B=30^{\circ}$, $\angle A B D=26^{\circ}, \angle D B C=51^{\circ}, \angle A C D=13^{\circ}$, 则 $\angle A C B=73^{\circ}, \angle B D C=43^{\circ}$, 所以 $\angle A D C=x+43^{\circ}$.
+对 $\triangle B C D$ 和点 $A$ 应用角元塞瓦定理有
+$$
+\begin{aligned}
+1 & =\frac{\sin \angle D C A}{\sin \angle A C B} \cdot \frac{\sin \angle C B A}{\sin \angle A B D} \cdot \frac{\sin \angle B D A}{\sin \angle A D C} \\
+& =\frac{\sin 13^{\circ}}{\sin 73^{\circ}} \cdot \frac{\sin 77^{\circ}}{\sin 26^{\circ}} \cdot \frac{\sin x}{\sin \left(x+43^{\circ}\right)} .
+\end{aligned}
+$$
+则 $\frac{\sin \left(x+43^{\circ}\right)}{\sin x}=\frac{\sin 13^{\circ} \cdot \sin 77^{\circ}}{\sin 73^{\circ} \cdot \sin 26^{\circ}}$
+$$
+\begin{aligned}
+& =\frac{\sin 13^{\circ} \cdot \cos 13^{\circ}}{\sin 73^{\circ} \cdot \sin 26^{\circ}}=\frac{1}{2 \sin 73^{\circ}}=\frac{\sin 30^{\circ}}{\sin 73^{\circ}} \\
+& =\frac{\sin 150^{\circ}}{\sin 107^{\circ}}=\frac{\sin \left(107^{\circ}+43^{\circ}\right)}{\sin 107^{\circ}} .
+\end{aligned}
+$$
+故 $\cos 43^{\circ}+\cot x \cdot \sin 43^{\circ}=\cos 43^{\circ}+\cot 107^{\circ}$. $\sin 43^{\circ}$.
+所以, $\angle A D B=x=107^{\circ}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 如图(<FilePath:./figures/fig-c2i11.png>), 点 $D 、 E 、 F$ 分别在锐角 $\triangle A B C$ 的边 $B C 、 C A 、 A B$ 上 (均不是端点), 满足 $B C / / E F, D_1$ 是边 $B C$ 上一点 (不同于 $B 、 D 、 C$ ), 过 $D_1$ 作 $D_1 E_1 / / D E, D_1 F_1 / / D F$, 分别交 $A C 、 A B$ 两边于点 $E_1 、 F_1$, 连结 $E_1 F_1$, 再在 $B C$ 上方 (与 $A$ 同侧) 作 $\triangle P B C$, 使得 $\triangle P B C \backsim \triangle D E F$, 连结 $P D_1$. 求证: $E F 、 E_1 F_1 、 P D_1$ 三线共点.
+%%<SOLUTION>%%
+证明:连结 $P E_1 、 P F_1$, 设 $E_1 F_1$ 交 $E F$ 于 $K$, 易知 $K$ 在线段 $E_1 F_1$ 上.
+以下证 $K$ 在 $P D_1$ 上.
+注意 $\triangle D E F \backsim \triangle P B C, E F / / B C$, 故 $D E / / B P / / D_1 E_1, D F / / C P / / D_1 F_1$.
+再连结 $C F_1 、 B E_1$, 由梅氏定理得
+$$
+\begin{aligned}
+\frac{F_1 K}{K E_1}= & \frac{F_1 F}{F A} \cdot \frac{A E}{E} \frac{D D_1}{E_1}=\frac{B F_1}{B D_1} \frac{A E}{F A} \frac{A E}{D D_1 \cdot \frac{C E_1}{C D_1}}=\frac{A E}{A F} \cdot \frac{C D_1}{B D_1} \cdot \frac{B F_1}{C E_1} \\
+= & \frac{\frac{1}{2} C D_1 \cdot B F_1 \sin B}{\frac{1}{2} B D_1 \cdot C E_1 \sin C} \\
+= & \frac{S_{\triangle C D_1 F_1}}{S_{\triangle B D_1 E_1}}=\frac{S_{\triangle D_1}}{S_{\triangle P D_1} E_1} \text {. (由 } C P / / D_1 F_1 \text { 及 } B P / / D_1 E_1 \text { ). }
+\end{aligned}
+$$
+现仅需再注意 $K$ 在 $E_1 F_1$ 上(因 $D_1 F_1$ 与 $B$ 在 $C P$ 同侧, 而 $D_1 E_1$ 与 $C$ 在 $B P$ 同侧) 即可由上式知 $K$ 在 $P D_1$ 上.
+所以欲证结论成立,证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 在凸五边形 $A B C D E$ 中, $\angle A E D=\angle A B C=90^{\circ}, \angle B A C= \angle E A D . B D \cap C E=F$. 求证: $A F \perp B E$.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c2i12.png>), 过点 $A$ 作 $A H \perp B E$ 于 $H$,于是只需证明 $A H 、 B D 、 C E$ 三线共点.
+因为 $\triangle A B C \backsim \triangle A E D$, 所以
+$$
+\frac{A B}{A E}=\frac{A C}{A D}=\frac{B C}{D E} .
+$$
+又 $\angle B A C=\angle E A D$, 则
+$$
+\angle B A D=\angle C A E \text {. }
+$$
+所以 $S_{\triangle A B D}=S_{\triangle A C E}$.
+故
+$$
+\frac{\sin \angle A B D}{\sin \angle C E A}=\frac{A E \cdot E C}{A B \cdot B D} . \label{eq1}
+$$
+在 $\triangle B C E$ 和 $\triangle B D E$ 中应用正弦定理有
+$$
+\frac{\sin \angle B E C}{\sin \angle E B C}=\frac{B C}{E C}, \frac{\sin \angle B E D}{\sin \angle D B E}=\frac{B D}{E D} . \label{eq2}
+$$
+又 $\angle H A B=\angle E B C, \angle E A H=\angle B E D$, 则
+$$
+\begin{aligned}
+& \frac{\sin \angle E A H}{\sin \angle H A B} \cdot \frac{\sin \angle A B D}{\sin \angle D B E} \cdot \frac{\sin \angle B E C}{\sin \angle C E A} \\
+= & \frac{\sin \angle B E D}{\sin \angle E B C} \cdot \frac{\sin \angle A B D}{\sin \angle D B E} \cdot \frac{\sin \angle B E C}{\sin \angle C E A} \\
+= & \frac{\sin \angle B E D}{\sin \angle D B E} \cdot \frac{\sin \angle A B D}{\sin \angle C E A} \cdot \frac{\sin \angle B E C}{\sin \angle E B C} \\
+= & \frac{B D \cdot A E \cdot E C \cdot B C}{E D \cdot A B \cdot B D \cdot E C}=\frac{A E \cdot B C}{E D \cdot A B}=1 .
+\end{aligned}
+$$
+由关于 $\triangle A B E$ 的角元塞瓦定理的逆定理知 $A H 、 B D 、 C E$ 三线共点 $F$. 因为 $A H \perp B E$, 所以 $A F \perp B E$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 如图(<FilePath:./figures/fig-c2i13.png>), 点 $P 、 Q$ 是 $\triangle A B C$ 的外接圆上(异于 $A 、 B 、 C$ ) 的两点, 点 $P$ 关于直线 $B C 、 C A$ 、 $A B$ 的对称点分别是 $U 、 V 、 W$, 连结 $Q U 、 Q V 、 Q W$ 分别与直线 $B C 、 C A 、 A B$ 交于点 $D 、 E 、 F$.
+求证: (1) $U 、 V 、 W$ 三点共线;
+(2) $D 、 E 、 F$ 三点共线.
+%%<SOLUTION>%%
+证明:(1) 设从点 $P$ 向 $B C 、 C A 、 A B$ 作垂线, 垂足分别为 $X 、 Y 、 Z$.
+由对称知 $X Y$ 为 $\triangle P U V$ 的中位线, 故 $U V / / X Y$.
+同理 $V W / / Y Z, W U / / X Z$.
+又由西姆松定理知 $X 、 Y 、 Z$ 三点共线.
+故 $U 、 V 、 W$ 三点共线.
+(2) 因为 $P 、 C 、 A 、 B$ 四点共圆, 所以 $\angle P C E=\angle A B P$.
+所以 $\angle P C V=2 \angle P C E=2 \angle A B P=\angle P B W$.
+又 $\angle P C Q=\angle P B Q$, 故 $\angle P C V+\angle P C Q=\angle P B W+\angle P B Q$, 即 $\angle Q C V=\angle Q B W$.
+从而 $\frac{S_{\triangle Q C V}}{S_{\triangle Q B W}}=\frac{C V \cdot Q C}{Q B \cdot B W}$.
+同理 $\frac{S_{\triangle Q A W}}{S_{\triangle Q C U}}=\frac{A W \cdot A Q}{C Q \cdot C U}, \frac{S_{\triangle Q B U}}{S_{\triangle Q A V}}=\frac{B Q \cdot B U}{A Q \cdot A V}$.
+所以 $\frac{S_{\triangle Q C V}}{S_{\triangle Q B W}} \cdot \frac{S_{\triangle Q A W}}{S_{\triangle Q C U}} \cdot \frac{S_{\triangle Q B U}}{S_{\triangle Q A V}}=1$, (这里注意到 $O U=C V, A W=A V$, $B U=B W)$. 于是
+$$
+\frac{B D}{D C} \cdot \frac{C E}{E A} \cdot \frac{A F}{F B}=\frac{S_{\triangle Q B U}}{S_{\triangle Q C U}} \cdot \frac{S_{\triangle Q C V}}{S_{\triangle Q A V}} \cdot \frac{S_{\triangle W A Q}}{S_{\triangle W B Q}}=1 .
+$$
+故由梅氏定理逆定理知 $D 、 E 、 F$ 三点共线.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 如图(<FilePath:./figures/fig-c2i14.png>),一圆与 $\triangle A B C$ 的三边 $B C$ 、 $C A 、 A B$ 的交点依次为 $D_1 、 D_2 、 E_1 、 E_2 、 F_1 、 F_2$. 线段 $D_1 E_1$ 与 $D_2 F_2$ 交于点 $L, E_1 F_1$ 与 $D_2 E_2$ 交于点 $M, F_1 D_1$ 与 $F_2 E_2$ 交于点 $N$. 求证: $A L 、 B M$ 、 $C N$ 三线共点.
+%%<SOLUTION>%%
+证明:连结 $D_1 E_2 、 E_1 F_2 、 F_1 D_2$, 于是, 有
+$$
+\begin{aligned}
+\angle D_1 E_1 F_2= & \angle D_1 E_2 F_2, \angle D_2 F_2 F_1=\angle D_2 D_1 F_1, \\
+\angle E_2 E_1 D_1= & \angle E_2 D_2 D_1, \angle E_1 F_2 D_2=\angle E_1 F_1 D_2, \\
+& \angle F_2 F_1 E_1=\angle F_2 E_2 E_1, \angle F_1 D_2 E_2=\angle F_1 D_1 E_2 .
+\end{aligned}
+$$
+分别对 $\triangle A F_2 E_1$ 和点 $L 、 \triangle B D_2 F_1$ 和点 $M 、 \triangle C E_2 D_1$ 和点 $N$ 应用角元塞瓦定理有
+$$
+\frac{\sin \angle F_2 A L}{\sin \angle L A E_1} \cdot \frac{\sin \angle A E_1 L}{\sin \angle L E_1 F_2} \cdot \frac{\sin \angle E_1 F_2 L}{\sin \angle L F_2 A}=1 .
+$$
+则
+$$
+\frac{\sin \angle B A L}{\sin \angle L A C}=\frac{\sin \angle D_1 E_1 F_2}{\sin \angle E_2 E_1 D_1} \cdot \frac{\sin \angle D_2 F_2 F_1}{\sin \angle E_1 F_2 D_2} . \label{eq1}
+$$
+同理,有
+$$
+\begin{aligned}
+& \frac{\sin \angle C B M}{\sin \angle M B A}=\frac{\sin \angle E_1 F_1 D_2}{\sin \angle F_2 F_1 E_1} \cdot \frac{\sin \angle E_2 D_2 D_1}{\sin \angle F_1 D_2 E_2} . \label{eq2} \\
+& \frac{\sin \angle A C N}{\sin \angle N C B}=\frac{\sin \angle F_1 D_1 E_2}{\sin \angle D_2 D_1 F_1} \cdot \frac{\sin \angle F_2 E_2 E_1}{\sin \angle D_1 E_2 F_2} . \label{eq3}
+\end{aligned}
+$$
+式\ref{eq1} $\times$ 式\ref{eq2} $\times$ 式\ref{eq3}并利用前面的六个等式,有
+$$
+\frac{\sin \angle B A L}{\sin \angle L A C} \cdot \frac{\sin \angle A C N}{\sin \angle N C B} \cdot \frac{\sin \angle C B M}{\sin \angle M B A}=1 .
+$$
+由角元塞瓦定理的逆定理知 $A L 、 B M 、 C N$ 三线共点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 在平面上给定四个点 $A_1 、 A_2 、 A_3 、 A_4$, 其中任意三点不共线, 使得 $A_1 A_2 \cdot A_3 A_4=A_1 A_3 \cdot A_2 A_4=A_1 A_4 \cdot A_2 A_3$.
+记 $O_i$ 是 $\triangle A_k A_j A_l$ 的外心, 这里 $\{i, j, k, l\}=\{1,2,3,4\}$. 假设对每个下标 $i$, 都有 $A_i \neq Q_i$. 证明: 四条直线 $A_i O_i$ 共点或平行.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c2i15.png>), 若 $A_1 、 A_2 、 A_3 、 A_4$ 构成一个凹四边形.
+不妨设 $A_4$ 在 $\triangle A_1 A_2 A_3$ 中, 如图.
+作 $\triangle A_1 A_3 P \backsim \triangle A_1 A_2 A_4$, 则 $\angle A_3 A_1 P=\angle A_4 A_1 A_2$.
+于是, $\angle A_4 A_1 P=\angle A_2 A_1 A_3$, 且 $\frac{A_1 P}{A_1 A_3}=\frac{A_1 A_4}{A_1 A_2}$.
+则 $\triangle A_1 A_2 A_3 \backsim \triangle A_1 A_4 P$, 因此 $\frac{A_4 P}{A_2 A_3}=\frac{A_1 A_4}{A_1 A_2}$.
+即 $A_4 P=\frac{A_1 A_4 \cdot A_2 A_3}{A_1 A_2}=A_3 A_4$.
+又 $\frac{A_3 P}{A_1 A_3}=\frac{A_2 A_4}{A_1 A_2}$, 则
+$$
+A_3 P=\frac{A_1 A_3 \cdot A_2 A_4}{A_1 A_2}=A_3 A_4 .
+$$
+因此, $A_3 P=A_4 P=A_3 A_4$, 即 $\triangle A_3 A_4 P$ 是正三角形.
+故 $\angle A_1 A_2 A_4+\angle A_1 A_3 A_4=\angle A_1 A_3 P+\angle A_1 A_3 A_4=60^{\circ}$.
+同理,
+$$
+\begin{aligned}
+& \angle A_3 A_2 A_4+\angle A_3 A_1 A_4=60^{\circ}, \\
+& \angle A_2 A_1 A_4+\angle A_2 A_3 A_4=60^{\circ} .
+\end{aligned}
+$$
+设 $\angle A_1 A_2 A_4=\alpha, \angle A_2 A_3 A_4=\beta, \angle A_3 A_1 A_4=\gamma$.
+则 $\angle A_1 A_3 A_4=60^{\circ}-\alpha, \angle A_2 A_1 A_4=60^{\circ}-\beta, \angle A_3 A_2 A_4=60^{\circ}-\gamma$.
+又如图(<FilePath:./figures/fig-c2i16.png>), 因为 $O_1$ 是 $\triangle A_2 A_3 A_4$ 的外心, 所以, $\angle A_4 A_2 O_1=90^{\circ}-\beta$. 于是, $\angle A_1 A_2 O_1=90^{\circ}+\alpha-$ . 同理, $\angle A_2 A_3 O_2=90^{\circ}+\beta-\gamma, \angle A_3 A_1 O_3=90^{\circ}+ \gamma-\alpha$. 又 $\angle A_4 A_3 O_1=90^{\circ}-\angle A_4 A_2 A_3=30^{\circ}+\gamma$, 则 $\angle A_1 A_3 O_1=90^{\circ}+\gamma-\alpha$.
+同理, $\angle A_2 A_1 O_2=90^{\circ}+\alpha-\beta, \angle A_3 A_2 O_3= 90^{\circ}+\beta-\gamma$.
+由角元塞瓦定理得
+$$
+\frac{\sin \angle A_2 A_1 O_1}{\sin \angle O_1 A_1 A_3} \cdot \frac{\sin \angle A_3 A_2 O_1}{\sin \angle O_1 A_2 A_1} \cdot \frac{\sin \angle A_1 A_3 O_1}{\sin \angle O_1 A_3 A_2}=1 .
+$$
+因为 $\angle O_1 A_3 A_2=\angle O_1 A_2 A_3$, 所以
+$$
+\frac{\sin \angle A_2 A_1 O_1}{\sin \angle A_3 A_1 O_1}=\frac{\sin \angle O_1 A_2 A_1}{\sin \angle O_1 A_3 A_1}
+$$
+$$
+=\frac{\sin \left(90^{\circ}+\alpha-\beta\right)}{\sin \left(90^{\circ}+\gamma-\alpha\right)}
+$$
+同理,
+$$
+\begin{aligned}
+& \frac{\sin \angle A_3 A_2 O_2}{\sin \angle A_1 A_2 O_2}=\frac{\sin \left(90^{\circ}+\beta-\gamma\right)}{\sin \left(90^{\circ}+\alpha-\beta\right)}, \\
+& \frac{\sin \angle A_1 A_3 O_3}{\sin \angle A_2 A_3 O_3}=\frac{\sin \left(90^{\circ}+\gamma-\alpha\right)}{\sin \left(90^{\circ}+\beta-\gamma\right)} .
+\end{aligned}
+$$
+因此, $A_1 O_1 、 A_2 O_2 、 A_3 O_3$ 三线共点 (或者互相平行).
+若四个点 $A_1 、 A_2 、 A_3 、 A_4$ 构成一个凸四边形 $A_1 A_2 A_3 A_4$, 类似可得 $A_1 O_1 、 A_2 O_2 、 A_3 O_3$ 三线共点(或者互相平行).
+同理, $A_1 O_1 、 A_2 O_2 、 A_4 O_4$ 三线共点(或者互相平行).
+综上, 四条直线 $A_i O_i$ 共点或平行.
+%%PROBLEM_END%%
+
+

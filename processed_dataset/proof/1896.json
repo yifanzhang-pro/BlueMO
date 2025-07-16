@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题16. 设 $A B C D E F$ 是凸六边形, $A B=B C=C D, D E=E F=F A, \\angle B C D= \\angle E F A=60^{\\circ}, G 、 H$ 是六边形内两点, 使 $\\angle A G B=\\angle D H E=120^{\\circ}$. 求证: $A G+G B+G H+D H+H E \\geqslant C F$.",
+    "solution": "证明: 用旋转法来证明本题.\n如图(<FilePath:./images/volume7/figures/fig-c6a16.png>), 分别以 $A B 、 D E$ 为边向六边形外作正 $\\triangle A B M$ 和 $\\triangle D E N$. 将 $\\triangle A G B$ 绕 $A$ 逆时针旋转 $60^{\\circ}$ 到 $\\triangle A G^{\\prime} M$, 则 $\\triangle A G G^{\\prime}$ 为正三角形, 故 $A G=G G^{\\prime}, G B=G^{\\prime} M$. 同样, 将 $\\triangle E H D$ 顺时针旋转 $60^{\\circ}$ 到 $\\triangle E H^{\\prime} N$,\n则 $\\triangle E H H^{\\prime}$ 为正三角形.\n于是, $E H=H H^{\\prime}, H D=H^{\\prime} N$. 连 $M N$, 则多边形 $A M B C D N E F$ 关于轴 $B E$ 对称, $M N=C F$. 另一方面, 由 \"两点间线段最短\" 有 $A G+G B+G H+D H+H E=M G^{\\prime}+G^{\\prime} G+G H+H H^{\\prime}+H^{\\prime} N \\geqslant M N$. 从而 $A G+G B+G H+D H+H E \\geqslant C F$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6a16.png"
+    ]
+}

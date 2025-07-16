@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例7. 如图(<FilePath:./images/volume7/figures/fig-c1i9.png>), 设 $D$ 是锐角 $\\triangle A B C$ 的边 $B C$ 上一点, 以线段 $B D$ 为直径的圆分别交直线 $A B$ 、 $A D$ 于点 $X 、 P$ (异于点 $B 、 D$ ), 以线段 $C D$ 为直径的圆分别交直线 $A C 、 A D$ 于点 $Y 、 Q$ (异于点 $C 、 D$ ). 过点 $A$ 作直线 $P X 、 Q Y$ 的垂线, 垂足分别为 $M 、 N$. 求证: $\\triangle A M N$ 相似 $\\triangle A B C$ 的充分必要条件是直线 $A D$ 过 $\\triangle A B C$ 的外心.",
+    "solution": "证明:由已知有 $B 、 P 、 D 、 X$ 及 $C 、 Y 、 Q 、 D$ 分别四点共圆.\n故 $\\angle A X M=\\angle B X P=\\angle B D P=\\angle Q D C=\\angle A Y N$.\n所以 Rt $\\triangle A M X \\backsim$ Rt $\\triangle A N Y$.\n于是 $\\angle M A X=\\angle N A Y, \\frac{A M}{A X}=\\frac{A N}{A Y}$.\n从而 $\\angle M A N=\\angle X A Y$, 结合 $\\frac{A M}{A X}=\\frac{A N}{A Y}$, 得 $\\triangle A M N \\backsim \\triangle A X Y$.\n故 $\\triangle A M N \\backsim \\triangle A B C \\Leftrightarrow \\triangle A X Y \\backsim \\triangle A B C \\Leftrightarrow X Y / / B C \\Leftrightarrow \\angle D X Y=\\angle X D B$.\n而由 $A 、 X 、 D 、 Y$ 四点共圆知 $\\angle D X Y= \\angle D A Y$.\n又 $\\angle X D B=90^{\\circ}-\\angle A B C$, 则\n$\\angle D X Y=\\angle X D B \\Leftrightarrow \\angle D A C=90^{\\circ}-\\angle A B C$.\n$\\Leftrightarrow$ 直线 $A D$ 过 $\\triangle A B C$ 的外心.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1i9.png"
+    ]
+}

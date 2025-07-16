@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例2 设函数 $f(x)=|\\sin x|+|\\cos x|$, \n(1) 试讨论函数的性质(有界性, 奇偶性, 单调性, 周期性), 求出其极值, 并作出其在 $[0,2 \\pi]$ 上的图象;\n(2) 求函数 $y=\\sqrt{\\sin x}+\\sqrt{\\cos x}\\left(x \\in\\left[0, \\frac{\\pi}{2}\\right]\\right)$ 的值域.",
+    "solution": "解:(1) $f(-x)=|\\sin (-x)|+|\\cos (-x)|=|\\sin x|+|\\cos x|=f(x)$, 所以这是一个偶函数.\n$$\nf\\left(x+\\frac{\\pi}{2}\\right)=\\left|\\sin \\left(x+\\frac{\\pi}{2}\\right)\\right|+\\left|\\cos \\left(x+\\frac{\\pi}{2}\\right)\\right|=|\\cos x|+|\\sin x|=f(x),\n$$\n所以这是一个周期为 $\\frac{\\pi}{2}$ 的周期函数.\n$$\n2=2\\left(\\sin ^2 x+\\cos ^2 x\\right) \\geqslant f^2(x) \\geqslant \\sin ^2 x+\\cos ^2 x=1,\n$$\n所以 $1 \\leqslant f(x) \\leqslant \\sqrt{2}$, 所以 $f(x)$ 有上下界.\n由于 $f(x)$ 是一个周期为 $\\frac{\\pi}{2}$ 的周期函数, 所以我们只需要考查它在 $\\left(0, \\frac{\\pi}{2}\\right)$ 上的单调性即可.\n此时 $f(x)=\\sin x+\\cos x=\\sqrt{2} \\sin \\left(x+\\frac{\\pi}{4}\\right)$, 那么 $f(x)$ 在 $\\left(k \\frac{\\pi}{2}, k \\frac{\\pi}{2}+\\right. \\left.\\frac{\\pi}{4}\\right)$ 上递增, 在 $\\left(k \\frac{\\pi}{2}+\\frac{\\pi}{4}, k \\frac{\\pi}{2}+\\frac{\\pi}{2}\\right)$ 上递减.\n图象如右:(<FilePath:./images/volume3/figures/fig-c1e2.png>)\n(2) $y^4 \\geqslant \\sin ^2 x+\\cos ^2 x=1 \\Rightarrow y \\geqslant 1$,\n$(\\sin x+\\cos x)^2 \\leqslant 2\\left(\\sin ^2 x+\\cos ^2 x\\right)=2$, $\\sin x+\\cos x \\leqslant \\sqrt{2}$,\n$(\\sqrt{\\sin x}+\\sqrt{\\cos x})^2 \\leqslant 2(\\sin x+\\cos x)= 2 \\sqrt{2}, \\sqrt{\\sin x}+\\sqrt{\\cos x} \\leqslant 2^{\\frac{3}{4}}$.\n这时我们有 $y \\in\\left[1,2^{\\frac{3}{4}}\\right]$, 而假设 $\\sin ^2 x=a$ ，那么 $y=a^{\\frac{1}{4}}+(1-a)^{\\frac{1}{4}}$ 在 $a \\in[0$ ， 1] 上是连续的, 因此 $y$ 可以取到 1 到 $2^{\\frac{3}{4}}$ 之间的任何一个值, 所以所求值域为 $\\left[1,2^{\\frac{3}{4}}\\right]$.\n评注这两道题都是考查的三角函数的基本性质,第二题里面反复运用了均值不等式, 不过难度都不高, 这种题往往需要学生细心谨慎, 不要算错或者写错了, 关于第一问如何看出 $\\frac{\\pi}{2}$ 是周期, 实际上最后可以用图象分析出来, 因为画图后发现是一样的.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c1e2.png"
+    ]
+}

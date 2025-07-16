@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设在平面上有 $n$ 个给定的点.\n求证其中距离为 1 的点的对数不超过 $\\frac{n}{4}+\\frac{\\sqrt{2}}{2} n^{\\frac{3}{2}}$.",
+    "solution": "证把 $n$ 个点视为图 $G$ 的顶点, 记 $V=\\left\\{v_1, v_2, \\cdots, v_n\\right\\}$ 为图 $G$ 的顶点集, 在距离为 1 的两点之间连一边, 则由定理一,\n$$\n2 e=d\\left(v_1\\right)+d\\left(v_2\\right)+\\cdots+d\\left(v_n\\right) .\n$$\n用 $C_i$ 表示以 $v_i$ 为圆心、半径为 1 的圆, 这 $n$ 个圆两两交点总数不超过 $2 \\mathrm{C}_n^2=n(n-1)$ 个.\n另一方面, 若 $v_k, v_j$ 与 $v_i$ 相邻, 则 $v_i \\in C_k \\cap C_j$, 因此, $v_i$ 作为 $C_1, C_2, \\cdots$, $C_n$ 中两圆的交点恰好被计数了 $\\mathrm{C}_{d\\left(v_i\\right)}^2$ 次, 故\n$$\n\\mathrm{C}_{d\\left(v_1\\right)}^2+\\mathrm{C}_{d\\left(v_2\\right)}^2+\\cdots+\\mathrm{C}_{d\\left(v_n\\right)}^2 \\leqslant 2 \\mathrm{C}_n^2=n(n-1) . \\label{eq1}\n$$\n由 Cauchy 不等式,有\n$$\n\\mathrm{C}_{d\\left(v_1\\right)}^2+\\mathrm{C}_{d\\left(v_2\\right)}^2+\\cdots+\\mathrm{C}_{d\\left(v_n\\right)}^2 \\geqslant \\frac{2}{n} e^2-e . \\label{eq2}\n$$\n由 式\\ref{eq1}, \\ref{eq2}式得\n$$\n\\frac{2}{n} e^2-e \\leqslant n(n-1)\n$$\n即\n$$\n2 e^2-n e-n^2(n-1) \\leqslant 0 .\n$$\n解得\n$$\ne \\leqslant \\frac{n}{4}+\\frac{\\sqrt{2}}{2} n^{\\frac{3}{2}}\n$$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题11 函数 $y=\\arccos \\left(-2 x^2+x\\right)$ 的值域是",
+    "solution": "$\\left[\\arccos \\frac{1}{8}, \\pi\\right]$. 因 $-2 x^2+x=-2\\left(x-\\frac{1}{4}\\right)^2+\\frac{1}{8} \\leqslant \\frac{1}{8}$, 所以其值域为 $\\left[\\arccos \\frac{1}{8}, \\pi\\right]$.",
+    "remark": "",
+    "figures": []
+}

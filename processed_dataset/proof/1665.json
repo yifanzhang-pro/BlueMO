@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例5. 已知四边形 $A B C D$ 是圆的内接四边形.\n证明: $|A B-C D|+|A D-B C| \\geqslant 2|A C-B D|$.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c10i5.png>), 设四边形 $A B C D$ 的外心为 $O$, 且圆 $O$ 的半径为 1 .\n设 $\\angle A O B=2 \\alpha, \\angle B O C=2 \\beta, \\angle C O D=2 \\gamma, \\angle D O A=2 \\delta$, 则 $\\alpha+\\beta+\\gamma+\\delta=\\pi$.\n不妨设 $\\alpha \\geqslant \\gamma, \\beta \\geqslant \\delta$, 则\n$$\n|A B-C D|=4\\left|\\sin \\frac{\\alpha-\\gamma}{2} \\sin \\frac{\\beta+\\delta}{2}\\right| \\text {. }\n$$\n同理,\n$$\n\\begin{aligned}\n& |A D-B C|=4\\left|\\sin \\frac{\\alpha+\\gamma}{2} \\sin \\frac{\\beta-\\delta}{2}\\right|, \\\\\n& |A C-B D|=4\\left|\\sin \\frac{\\alpha-\\gamma}{2} \\sin \\frac{\\beta-\\delta}{2}\\right|,\n\\end{aligned}\n$$\n则\n$$\n|A B-C D|-|A C-B D|=8\\left|\\sin \\frac{\\alpha-\\gamma}{2}\\right| \\cdot \\cos \\frac{\\beta}{2} \\sin \\frac{\\delta}{2} \\geqslant 0 .\n$$\n即 $|A B-C D| \\geqslant|A C-B D|$. 同理可证 $|A D-B C| \\geqslant.|A C-B D|$.\n所以 $|A B-C D|+|A D-B C| \\geqslant 2|A C-B D|$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c10i5.png"
+    ]
+}

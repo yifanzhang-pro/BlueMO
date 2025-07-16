@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题14. 在 $\\triangle A B C$ 中, $3 \\sin A+4 \\cos B=6,4 \\sin B+3 \\cos A=1$, 则角 $C=$",
+    "solution": "$30^{\\circ}$. 两等式平方相加得 $9+24(\\sin A \\cos B+\\cos A \\sin B)+16==37$, 所以 $\\sin (A+B)=\\frac{1}{2}, A+B=30^{\\circ}$ 或 $150^{\\circ}$, 但当 $A+B=30^{\\circ}$ 时, $\\sin A<\\frac{1}{2}$, $\\cos B<1$, 于是 $3 \\sin A+4 \\cos B<6$, 所以舍去.\n从而 $A+B=150^{\\circ}$, 得 $C=30^{\\circ}$.",
+    "remark": "",
+    "figures": []
+}

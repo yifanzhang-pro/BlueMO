@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例3 在四边形 $A B C D$ 中, 若 $A B=a, B C=b, C D=c, A D=d, A C=e, B D=f$, 则求证 $a^2 c^2+b^2 d^2=e^2 f^2+2 a b c d \\cos (A+C)$.",
+    "solution": "分析:由于要证等式的左边是 $a^2 c^2+b^2 d^2$, 联想到 $1=\\sin ^2 \\alpha+\\cos ^2 \\alpha$. 将右边的项 $e^2 f^2$ 分解成: $e^2 f^2=(e f \\sin \\alpha)^2+(e f \\cos \\alpha)^2$, (其中令 $\\alpha=\\angle A O B$ ), 而 ef $\\sin \\alpha=2 S$ ( $S$ 为四边形 $A B C D$ 的面积), $e=O A+O C, f=O B+O D$. 于是应用余弦定理可将 $(e f)^2$ 用 $S 、 a 、 b 、 c 、 d$ 表示,进而变形得解.\n证明如图(<FilePath:./images/volume3/figures/fig-c3e3.png>), 设 $A C$ 与 $B D$ 交于 $O, \\angle A O B= \\alpha$, 四边形 $A B C D$ 的面积为 $S$. 则 $e^2 f^2=(e f \\sin \\alpha)^2+ (e f \\cos \\alpha)^2$.\n而\n$e f \\sin \\alpha=2 S$,\n$$\n\\begin{aligned}\ne f  \\cos \\alpha= & (O A+O C)(O B+O D) \\cos \\alpha \\\\\n= & O A \\cdot O B \\cos \\alpha+O B \\cdot O C \\cos \\alpha+O C \\cdot O D \\cos \\alpha  +O A \\cdot O D \\cos \\alpha \\\\\n= & \\frac{O A^2+O B^2-A B^2}{2}-\\frac{O B^2+O C^2-B C^2}{2}  +\\frac{O C^2+O D^2-C D^2}{2}-\\frac{O A^2+O D^2-A D^2}{2} \\\\\n= & \\frac{b^2+d^2-a^2-c^2}{2},\n\\end{aligned}\n$$\n故\n$$\n(e f)^2=4 S^2+\\frac{1}{4}\\left(b^2+d^2-a^2-c^2\\right)^2, \\quad\\quad (1)\n$$\n但\n$$\nf^2=a^2+d^2-2 a d \\cos A=b^2+c^2-2 b c \\cos C,\n$$\n所以\n$$\na d \\cos A-b c \\cos C=\\frac{a^2+d^2-b^2-c^2}{2}, \\quad\\quad (2)\n$$\n而\n$$\na d \\sin A+b c \\sin C=2 S \\text {. }  \\quad\\quad (3)\n$$\n由 $(2)^2+(3)^2$, 得\n$$\na^2 d^2+b^2 c^2-2 a b c d \\cos (A+C)=4 S^2+\\frac{\\left(a^2+d^2-b^2-c^2\\right)^2}{4} .  \\quad\\quad (4)\n$$\n由(1)、(4), 得 \n$$\n\\begin{aligned}\ne^2 f^2=& a^2 d^2+b^2 c^2-2 a b c d \\cos (A+C)-\\frac{1}{4}\\left(a^2+b^2-d^2- c^2\\right)^2+\\frac{1}{4}\\left(b^2+d^2-a^2-c^2\\right)^2 \\\\\n= & a^2 d^2+b^2 c^2-2 a b c d \\cos (A+C)+\\left(d^2-c^2\\right)\\left(b^2-a^2\\right) \\\\\n= & a^2 c^2+b^2 d^2-2 a b c d \\cos (A+C),\n\\end{aligned}\n$$\n故\n$$\na^2 c^2+b^2 d^2=e^2 f^2+2 a b c d \\cos (A+C) .\n$$\n评注本例可视为余弦定理对四边形的一个推广, 另外当四边形为圆内接四边形时本例成为托勒密定理.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c3e3.png"
+    ]
+}

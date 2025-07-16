@@ -1,0 +1,7 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter3.tex",
+    "text": "圆内接四边形有一个著名的极值性质: 四条边给定的四边形中, 内接于圆的四边形面积最大.\n一个给定边长的圆内接四边形的面积有很好的解析公式, 这就是下面的定理.\n定理设一个圆的内接凸四边形的边长依次为 $a 、 b 、 c 、 d$, 又设 $s$ 为该四边形周长的一半, 则四边形的面积 $F$ 为\n$$\nF=\\sqrt{(s-a)(s-b)(s-c)(s-d)} .\n$$\n这个定理是三角形熟知结果的推广.\n如果取 $d=0$, 我们便得到通常的三角形面积的海伦公式.\n证明设定理中的四边形为 $A B C D$, 如图(<FilePath:./images/volume9/figures/fig-c3i4.png>)  $A B=a, B C=b, C D=c, D A=d$.\n如果 $A B C D$ 是长方形, 证明立即得出.\n如果 $A B C D$ 不是长方形, 设 $B C$ 与 $A D$ 相交于圆外的点 $E$. 记 $C E=x, D E=y$, 则由三角形面积公式有\n$$\nS_{\\triangle C D E}=\\frac{1}{4} \\sqrt{(x+y+c)(x+y-c)(x-y+c)(-x+y+c)} . \\label{eq1}\n$$\n但 $\\triangle A B E \\backsim \\triangle C D E$, 所以\n$$\n\\frac{S_{\\triangle A B E}}{S_{\\triangle C D E}}=\\frac{a^2}{c^2}\n$$\n由此推得\n$$\n\\frac{F}{S_{\\triangle C D E}}=\\frac{c^2-a^2}{c^2}, \\label{eq2}\n$$\n又由比例式\n$$\n\\frac{x}{c}=\\frac{y-d}{a}, \\frac{y}{c}=\\frac{x-\\underline{b}}{a},\n$$\n相加解出 $x+y$, 得\n$$\nx+y+c=\\frac{c}{c-a}(-a+b+c+d),\n$$\n$x+y-c$ 等等的类似表达式, 都可以立即得到.\n将它们代入式\\ref{eq1}并化简, 得\n$$\nS_{\\triangle C D E}=\\frac{c^2}{c^2-a^2} \\sqrt{(s-a)(s-b)(s-c)(s-d)},\n$$\n代入式\\ref{eq2}, 便知结论成立.\n推广可以证明任一边长为 $a 、 b 、 c 、 d$,一对对角的和为 $2 u$ 的凸四边形, 面积 $F$ 可由下式给出\n$$\nF^2=(s-a)(s-b)(s-c)(s-d)-a b c d \\cos ^2 u .\n$$\n由于证明包含长而乏味的三角化简, 我们不在这里给出.\n由这个公式立即看出 : 四条边给定的四边形中, 内接于圆的面积最大.",
+    "figures": [
+        "./images/volume9/figures/fig-c3i4.png"
+    ]
+}

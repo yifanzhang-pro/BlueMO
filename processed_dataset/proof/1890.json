@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 将一张正方形纸片 $A B C D$ 折叠, 使 $D$ 点重合于边 $B C$ 上一点 $D^{\\prime}, A$ 点折叠后的位置是 $A^{\\prime}, A B$ 与 $A^{\\prime} D^{\\prime}$ 交于 $E$, 设 $\\triangle B D^{\\prime} E$ 的内切圆半径为 $r$. 证明: $A^{\\prime} E=r$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c6a10.png>), 设折痕所在直线为 $l$, 轴反射变换, 则 $A \\rightarrow A^{\\prime}, D \\rightarrow D^{\\prime}$; 再设 $B \\rightarrow B^{\\prime}, C \\rightarrow C^{\\prime}$, 因 $D^{\\prime} \\rightarrow D$, 而 $D^{\\prime}$ 在 $B C$ 上, 所以 $D$ 在 $B^{\\prime} C^{\\prime}$ 上, 又 $D$ 到 $A B$ 、 $B C 、 A^{\\prime} D^{\\prime}$ 的距离都等于正方形的边长, 所以 $D$ 为 $\\triangle B E D^{\\prime}$ 的旁心.\n因 $\\triangle B E D^{\\prime}$ 为直角三角形, 于是, $r=\\frac{1}{2}\\left(B E+B D^{\\prime}-E D^{\\prime}\\right)=\\frac{1}{2}\\left(B E+B D^{\\prime}+E D^{\\prime}-\\right. \\left.2 E D^{\\prime}\\right)=\\frac{1}{2}\\left(A B+B C-2 E D^{\\prime}\\right)=A B-E D^{\\prime}=A^{\\prime} D^{\\prime}-E D^{\\prime}=A^{\\prime} E$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6a10.png"
+    ]
+}

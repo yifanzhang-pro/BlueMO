@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题17 上届获得前 $n$ 名的 $n$ 个球队参加本届争夺前 $n$ 名的比赛.\n如果不设并列名次, 问: 没有一个队取得的名次恰好紧接在上届比他高一个名次的球队之后的比赛结果有多少种可能?",
+    "solution": "以 $n$ 元有序数组 $\\left(a_1, a_2, \\cdots, a_n\\right)$ 表示本届的比赛结果: 上届第 $i$ 名的球队在本届获得第 $a_i$ 名 $(i=1,2, \\cdots, n)$. 以 $S$ 表示比赛可能结果的全体, 则 $|S|=n !$. 设 $A_i=\\{i+1$ 号队获得的名次比 $i$ 号队低一名次的比赛结果 $\\}, i=1,2, \\cdots, n$. 易知 $\\left|A_i\\right|=(n-1) !(1 \\leqslant i \\leqslant n),\\left|A_i \\cap A_j\\right|= (n-2) ! \\quad(1 \\leqslant i<j \\leqslant n), \\cdots,\\left|\\bigcap_{i=1}^n A_i\\right|=1, \\left|\\bigcap_{i=1}^n \\bar{A}_i\\right|=n !-\\mathrm{C}_{n-1}^1(n- 1) !+\\mathrm{C}_{n-1}^2(n-2) !+\\cdots+(-1)^{n-1} \\mathrm{C}_{n-1}^{n-1}$. 此即所求比赛结果的种数.",
+    "remark": "",
+    "figures": []
+}

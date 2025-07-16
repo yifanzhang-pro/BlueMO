@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $P(x), Q(x), R(x)$ 及 $S(x)$ 都是多项式, 且\n$$\nP\\left(x^5\\right)+x Q\\left(x^5\\right)+x^2 R\\left(x^5\\right)=\\left(x^4+x^3+x^2+x+1\\right) S(x), \\label{eq1}\n$$\n求证: $x-1$ 是 $P(x), Q(x), R(x)$ 及 $S(x)$ 的公因式.",
+    "solution": "分析:与解设 $\\zeta$ 是一个 5 次单位根 $(\\zeta \\neq 1)$, 在 式\\ref{eq1} 中取 $x=\\zeta, \\zeta^2, \\zeta^3, \\zeta^4$, 得出\n$$\n\\left(\\zeta^k\\right)^2 R(1)+\\zeta^k Q(1)+P(1)=0(k=1,2,3,4),\n$$\n这意味着多项式 $x^2 R(1)+x Q(1)+P(1)$ 有四个不同的零点, 从而必须 $R(1)=Q(1)=P(1)=0$.\n再将 $x=1$ 代入 (1), 得 $S(1)=0$.\n于是 $P(x), Q(x), R(x)$ 及 $S(x)$ 都有因式 $x-1$, 证毕.",
+    "remark": "",
+    "figures": []
+}

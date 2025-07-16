@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 设直线 $l: y=k x+m$ (其中 $k 、 m$ 为整数) 与椭圆 $\\frac{x^2}{16}+\\frac{y^2}{12}=1$ 交于不同两点 $A 、 B$, 与双曲线 $\\frac{x^2}{4}-\\frac{y^2}{12}=1$ 交于不同两点 $C 、 D$, 问是否存在直线 $l$, 使得向量 $\\overrightarrow{A C}+\\overrightarrow{B D}=\\overrightarrow{0}$, 若存在, 指出这样的直线有多少条? 若不存在, 请说明理由.",
+    "solution": "分析:与解由 $\\left\\{\\begin{array}{l}y=k x+m, \\\\ \\frac{x^2}{16}+\\frac{y^2}{12}=1,\\end{array}\\right.$ 消去 $y$ 化简整理得\n$$\n\\left(3+4 k^2\\right) x^2+8 k m x+4 m^2-48=0 . \n$$\n设 $A\\left(x_1, y_1\\right) 、 B\\left(x_2, y_2\\right)$, 则 $x_1+x_2=-\\frac{8 k m}{3+4 k^2}$.\n$$\n\\Delta_1=(8 k m)^2-4\\left(3+4 k^2\\right)\\left(4 m^2-48\\right)>0 . \\label{eq1}\n$$\n由 $\\left\\{\\begin{array}{l}y=k x+m, \\\\ \\frac{x^2}{4}-\\frac{y^2}{12}=1,\\end{array}\\right.$ 消去 $y$ 化简整理得\n$$\n\\left(3-k^2\\right) x^2-2 k m x-m^2-12=0 .\n$$\n设 $C\\left(x_3, y_3\\right) 、 D\\left(x_4, y_4\\right)$, 则 $x_3+x_4=\\frac{2 k m}{3-k^2}$.\n$$\n\\Delta_2=(-2 k m)^2+4\\left(3-k^2\\right)\\left(m^2+12\\right)>0 . \\label{eq2}\n$$\n因为 $\\overrightarrow{A C}+\\overrightarrow{B D}=\\overrightarrow{0}$, 所以 $\\left(x_4-x_2\\right)+\\left(x_3-x_1\\right)=0$, 此时 $\\left(y_4-y_2\\right)+ \\left(y_3-y_1\\right)==0$. 由 $x_1+x_2=x_3+x_4$ 得\n$$\n-\\frac{8 k m}{3+4 k^2}=\\frac{2 k m}{3-k^2} \\text {. }\n$$\n所以 $2 k m=0$ 或 $-\\frac{4}{3+4 k^2}=\\frac{1}{3-k^2}$. 由上式解得 $k=0$ 或 $m=0$. 当 $k=0$ 时, 由 式\\ref{eq1} 和 \\ref{eq2} 得 $-2 \\sqrt{3}<m<2 \\sqrt{3}$. 因 $m$ 是整数,所以 $m$ 的值为 $-3,-2$, $-1,0,1,2,3$. 当 $m=0$ 时, 由 式\\ref{eq1} 和 \\ref{eq2} 得 $-\\sqrt{3}<k<\\sqrt{3}$. 因 $k$ 是整数,所以 $k$ 的值为 $-1,0,1$. 于是满足条件的直线共有 9 条.",
+    "remark": "",
+    "figures": []
+}

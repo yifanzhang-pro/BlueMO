@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 两个凸四边形 $A B C D$ 和 $A^{\\prime} B^{\\prime} C^{\\prime} D^{\\prime}$ 的边长分别为 $a 、 b 、 c 、 d$ 和 $a^{\\prime} 、 b^{\\prime} 、 c^{\\prime}$ 、 $d^{\\prime}$, 面积分别为 $s$ 和 $s^{\\prime}$. 证明: $a a^{\\prime}+b b^{\\prime}+c c^{\\prime}+d d^{\\prime} \\geqslant 4 \\sqrt{s s^{\\prime}}$.",
+    "solution": "证明: 在边长给定的四边形中, 以内接于圆时其面积为最大.\n因此, 只需证两个凸四边形为圆内接四边形的情况.\n这时 $s= \\sqrt{(s-a)(s-b)(s-c)(s-d)}, s^{\\prime}$ 与之类似, 其中 $s=\\frac{1}{2}(a+b+c+d)=a+ c=b+d, s^{\\prime}=\\frac{1}{2}\\left(a^{\\prime}+b^{\\prime}+c^{\\prime}+d^{\\prime}\\right)=a^{\\prime}+c^{\\prime}=b^{\\prime}+d^{\\prime}$. 利用算术几何平均值不等式有 $a a^{\\prime}+b b^{\\prime}+c c^{\\prime}+d d^{\\prime}=(s-a)\\left(s^{\\prime}-a^{\\prime}\\right)+(s-b)\\left(s^{\\prime}-b^{\\prime}\\right)+(s-$ c) $\\left(s^{\\prime}-c^{\\prime}\\right)+(s-d)\\left(s^{\\prime}-d^{\\prime}\\right) \\geqslant 4\\left[(s-a)\\left(s^{\\prime}-a^{\\prime}\\right)(s-b) \\cdot\\left(s^{\\prime}-b^{\\prime}\\right)(s-\\right.$ c) $\\left.\\left(s^{\\prime}-c^{\\prime}\\right)(s-d)\\left(s^{\\prime}-d^{\\prime}\\right)\\right]^{\\frac{1}{4}}=4 \\sqrt{s s^{\\prime}}$.",
+    "remark": "",
+    "figures": []
+}

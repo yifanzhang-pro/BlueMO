@@ -1,0 +1,175 @@
+
+%%TEXT_BEGIN%%
+等周极值问题.
+各种空间,各种形式的等周问题似乎是几何学永恒的研究主题之一.
+平面几何中的等周定理反映着一些特殊几何图形,如圆,正 $n$ 边形等特有的极值性质,因此特别引人注意.
+下面叙述几个中学数学竞赛中常要用到的等周定理.
+定理 1 (等周定理 I )周长一定的所有图形中, 以圆的面积为最大; 反之,面积一定的所有图形中, 以圆的周长为最小.
+定理 2 (等周定理 II) 周长一定的所有 $n$ 边形中, 以正 $n$ 边形的面积为最大; 反之,面积一定的所有 $n$ 边形中, 以正 $n$ 边形的周长为最小.
+设 $a_1, a_2, \cdots, a_n$ 为任 $-n$ 边形的边长, $F$ 为其面积,则由等周定理立得如下的等周不等式
+$$
+\left(\sum_{i=1}^n a_i\right)^2 \geqslant 4 n \tan \frac{\pi}{n} \cdot F
+$$
+等号成立当且仅当 $a_1=a_2=\cdots=a_n$.
+下面的定理 3 是第 3 章的圆内接四边形极值性质的推广.
+定理 3 (Steiner 定理) 边长给定的 $n$ 边形中以存在外接圆者的面积为最大.
+定理 4 圆内接 $n$ 边形中以正 $n$ 边形的面积为最大.
+设 $a_1, a_2, \cdots, a_n$ 是半径为 $R$ 的圆内接 $n$ 边形的边长,则由定理 4 可得
+$$
+\sum_{i=1}^n a_i \leqslant 2 n R \cdot \sin \frac{\pi}{n}
+$$
+等号成立当且仅当 $a_1=a_2=\cdots=a_n$.
+先看几个简单的例子.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 给定半径为 $r$ 的圆上的定点 $P$ 的切线 $l$, 由此圆上动点 $R$ 引 $R Q$ 垂直于 $l$, 交 $l$ 于 $Q$. 试确定 $\triangle P Q R$ 面积的最大值.
+%%<SOLUTION>%%
+解:如图(<FilePath:./figures/fig-c7i1.png>), 注意到 $O P \| R Q$, 作 $R S \| l$, 交圆周于 $S$, 连接 $P S$. 易证
+$S_{\triangle P Q R}=\frac{1}{2} S_{\triangle P R S}$.
+由定理 4 , 当圆内接三角形 $P R S$ 为正三角形时面积最大, 最大值为 $\frac{3 \sqrt{3}}{4} r^2$. 因此 $\triangle P Q R$ 面积的最大值为 $\frac{3 \sqrt{3}}{8} r^2$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 如图(<FilePath:./figures/fig-c7i2.png>),曲线 $L$ 将正三角形 $\triangle A B C$ 分为两个等面积的部分.
+证明: $l \geqslant \frac{\sqrt{\pi} a}{2 \sqrt[4]{3}}$, 其中 $l$ 为 $L$ 的长, $a$ 为正三角形的边长.
+%%<SOLUTION>%%
+解:如图(<FilePath:./figures/fig-c7i3.png>), 我们将 $\triangle A B C$ 连续翻转六次, 这时 $L$ 形成一条闭曲线.
+由于 $L$ 所围成的区域的面积等于 $3 S_{\triangle A B C}$ 为一定值, 由定理 1 , 当此闭曲线为圆时周长为最小.
+因此
+$$
+6 l \geqslant 2 \pi \sqrt{\frac{3 S_{\triangle A B C}}{\pi}}=2 \sqrt{\pi} \cdot \sqrt{3 \cdot \frac{\sqrt{3}}{4} a^2},
+$$
+由此即得 $l \geqslant \frac{\sqrt{\pi} a}{2 \sqrt[4]{3}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设一个凸四边形 $Q$ 的四边满足 $a \leqslant b \leqslant c \leqslant d$, 面积为 $F$, 求证
+$$
+F \leqslant \frac{3 \sqrt{3}}{4} c^2 .
+$$
+这里用等周定理给出证明.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c7i4.png>), 以四边形 $Q$ 的最大边为轴将 $Q$ 翻转过来, 则形成一个六边形 (有两种情况形成凸五边形和矩形, 这时结论同理可证). 注意到这个凸六边形的周长等于 $2(a+b+c)$, 为一定值.
+由等周定理 II,
+周长一定的 $n$ 边形中以正 $n$ 边形的面积为最大, 所以这个六边形的面积 $2 F$ 满足
+$$
+2 F \leqslant \frac{3 \sqrt{3}}{2}\left(\frac{a+b+c}{3}\right)^2,
+$$
+再应用 $a, b \leqslant c$ 可得
+$$
+F \leqslant \frac{3 \sqrt{3}}{4} c^2
+$$
+%%<REMARK>%%
+注:由这个证明方法, 我们可将 Popa 不等式推广到 $n$ 边形中 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设两个 $n$ 边形 $\Omega_1 、 \Omega_2$ 的边分别为 $a_1 \leqslant a_2 \leqslant \cdots \leqslant a_{n-1} \leqslant a_n$ 和 $b_1 \leqslant b_2 \leqslant \cdots \leqslant b_{n-1} \leqslant b_n$, 它们的面积分别为 $F_1$ 和 $F_2$. 求证:
+$$
+\frac{F_1}{a_n^2}+\frac{F_2}{b_n^2}<\frac{(n-1)^2}{4 \pi}\left(\frac{a_{n-1}}{a_n}+\frac{b_{n-1}}{b_n}\right)^2 .
+$$
+%%<SOLUTION>%%
+证明:不妨设 $A_n A_1$ 为 $\Omega_1$ 的最大边,以 $A_n A_1$ 为一边,在与 $\Omega_1$ 相异的一侧作一多边形 $\Omega_2^{\prime}$, 使得它与 $\Omega_2$ 相似, 且 $\Omega_2^{\prime}$ 的最大边 $B_n^{\prime} B_1^{\prime}$ 与 $A_n A_1$ 重合, 如图(<FilePath:./figures/fig-c7i5.png>). 记 $\widetilde{\Omega}=\Omega_1 \cup \Omega_2$, 那么 $\widetilde{\Omega}$ 的周长为
+$$
+\sum_{i=1}^{n-1}\left(a_i+\frac{a_n}{b_n} b_i\right)
+$$
+其面积为记 $\angle A_n 、 \angle A_1$ 为 $\Omega_1$ 中以最长边为一边的两个角, $\angle B_n 、 \angle B_1$ 为 $\Omega_2^{\prime}$ 中相应的角.
+设 $\Omega_1$ 中 $\angle A_n$ 和 $\angle A_1$ 的另一边分别为 $a_k 、 a_l, \Omega_2^{\prime}$ 中 $\angle B_n$ 和 $\angle B_1$ 的另一边分别为 $b_{k^{\prime}}^{\prime} 、 b_{l^{\prime}}^{\prime}$.
+如果 $\angle A_n 、 \angle A_1$ 分别和 $\angle B_n 、 \angle B_1$ 不是互为补角, 那么边 $a_k 、 a_l$ 和边 $b_{k^{\prime}}^{\prime}$ 、 $b_l^{\prime}$ 分别不共线, 此时 $\widetilde{\Omega}$ 是一个 $2(n-1)$ 边形, 应用等周不等式(定理 2 ) 可得
+$$
+\begin{aligned}
+F_1+\frac{a_n^2}{b_n^2} F_2 & \leqslant \frac{\left(\sum_{i=1}^{n-1}\left(a_i+\frac{a_n}{b_n} b_i\right)\right)^2}{8(n-1)} \cdot \cot \frac{\pi}{2(n-1)} \\
+& \leqslant \frac{\left((n-1) a_{n-1}+(n-1) \frac{a_n}{b_n} b_{n-1}\right)^2}{8(n-1)} \cdot \cot \frac{\pi}{2(n-1)}
+\end{aligned}
+$$
+$$
+=\frac{(n-1)\left(a_{n-1}+\frac{a_n}{b_n} b_{n-1}\right)^2}{8} \cdot \cot \frac{\pi}{2(n-1)},
+$$
+也即
+$$
+\frac{F_1}{a_n^2}+\frac{F_2}{b_n^2} \leqslant \frac{n-1}{8}\left(\frac{a_{n-1}}{a_n}+\frac{b_{n-1}}{b_n}\right)^2 \cdot \cot \frac{\pi}{2(n-1)} . \label{eq1}
+$$
+当 $\angle A_n 、 \angle A_1$ 其中之一和 $\angle B_n 、 \angle B_1$ 其中之一互为补角时, $\widetilde{\Omega}$ 是一个 $2 n-3$ 边形; 当 $\angle A_n 、 \angle A_1$ 和 $\angle B_n 、 \angle B_1$ 分别互为补角时, $\widetilde{\Omega}$ 是一个 $2(n-$ 2 )边形, 和上面的讨论类似, 在这两种情况下运用等周不等式分别可得
+$$
+\begin{aligned}
+& \frac{F_1}{a_n^2}+\frac{F_2}{b_n^2} \leqslant \frac{(n-1)^2}{4(2 n-3)}\left(\frac{a_{n-1}}{a_n}+\frac{b_{n-1}}{b_n}\right)^2 \cdot \cot \frac{\pi}{2 n-3}, \label{eq2}\\
+& \frac{F_1}{a_n^2}+\frac{F_2}{b_n^2} \leqslant \frac{(n-1)^2}{8(n-2)}\left(\frac{a_{n-1}}{a_n}+\frac{b_{n-1}}{b_n}\right)^2 \cdot \cot \frac{\pi}{2(n-2)} . \label{eq3}
+\end{aligned}
+$$
+注意到当 $x \in\left(0, \frac{\pi}{2}\right)$, 有下式成立
+$$
+\cot x<\frac{1}{x} . \label{eq4}
+$$
+将式\ref{eq1}、\ref{eq2}、式\ref{eq3}分别和\ref{eq4}式结合可得
+$$
+\frac{F_1}{a_n^2}+\frac{F_2}{b_n^2}<\frac{(n-1)^2}{4 \pi}\left(\frac{a_{n-1}}{a_n}+\frac{b_{n-1}}{b_n}\right)^2 .
+$$
+最后, 我们介绍 Ozeki 不等式的等周定理的证明.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. (Ozeki 不等式) 设 $\varphi_1+\varphi_2+\cdots+\varphi_n=\pi$ (其中 $n \geqslant 3$ ), $0<\varphi_i< \pi, i=1,2, \cdots, n$. 求证对任意非负实数 $x_1, x_2, \cdots, x_n$, 有
+$$
+\sum_{i=1}^n x_i^2 \geqslant \sec \frac{\pi}{n}\left(\sum_{i=1}^n x_i x_{i+1} \cos \varphi_i\right),
+$$
+其中 $x_{n+1}=x_1$.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c7i6.png>), 从某一点 $O$ 出发作 $n$ 条射线 $O A_1, O A_2, \cdots, O A_n$, 使得
+$$
+\angle A_i O A_{i+1}=\varphi_i+\frac{\pi}{n},
+$$
+其中 $A_{n+1}=A_1$, 再在这 $n$ 条射线上截取线段 $O A_i=x_i(i=1,2, \cdots, n)$, 这样便得到一个 $n$ 边形 $A_1 A_2 \cdots A_n$.
+现记 $A_i A_{i+1}=a_i$, 记这个 $n$ 边形的面积为 $F$.
+在 $\triangle O A_i A_{i+1}$ 中由余弦定理可得
+$$
+a_i^2=x_i^2+x_{i+1}^2-2 x_i x_{i+1} \cos \angle A_i O A_{i+1}, i=1,2, \cdots, n, x_{i+1}=x_1 .
+$$
+因此
+$$
+\sum_{i=1}^n a_i^2=2 \sum_{i=1}^n x_i^2-2 \sum_{i=1}^n x_i x_{i+1} \cos \left(\varphi_i+\frac{\pi}{n}\right), \label{eq1}
+$$
+又由 Cauchy 不等式和等周不等式可得
+$$
+\sum_{i=1}^n a_i^2 \geqslant \frac{1}{n}\left(\sum_{i=1}^n a_i\right)^2 \geqslant 4 F \tan \frac{\pi}{n} . \label{eq2}
+$$
+由式\ref{eq1}和\ref{eq2}可得
+$$
+\begin{aligned}
+\sum_{i=1}^n x_i^2 & \geqslant 2 F \tan \frac{\pi}{n}+\sum_{i=1}^n x_i x_{i+1} \cos \left(\varphi_i+\frac{\pi}{n}\right) \\
+& =\sum_{i=1}^n\left[x_i x_{i+1} \sin \left(\varphi_i+\frac{\pi}{n}\right) \tan \frac{\pi}{n}+x_i x_{i+1} \cos \left(\varphi_i+\frac{\pi}{n}\right)\right] \\
+& =\sec \frac{\pi}{n} \sum_{i=1}^n x_i x_{i+1}\left[\sin \left(\varphi_i+\frac{\pi}{n}\right) \sin \frac{\pi}{n}+\cos \frac{\pi}{n} \cos \left(\varphi_i+\frac{\pi}{n}\right)\right] \\
+& =\sec \frac{\pi}{n} \sum_{i=1}^n x_i x_{i+1} \cos \varphi_i .
+\end{aligned}
+$$
+%%<REMARK>%%
+注:(1) Ozeki 不等式是 N. Ozeki 在研究著名的 Erdös-Mordell 不等式的多边形推广时提出的, 关于它的一些相关结果可参考"Ozeki N. On the P. Erdös inequality for the triangle. J. College Arts Sci. Chiba Univ, 1957(2) : $247-250 "$. 这个不等式 1961 年被 Lenhard 重新发现.
+(2) Ozeki 不等式是三角形嵌人不等式的多边形推广.
+三角形嵌人不等式可推广到三维甚至 $n$ 维空间中,其中关于四面体的结果为:
+设 $\theta_{i j}(1 \leqslant i<j \leqslant 4)$ 是四面体 $\Omega$ 的内二面角, 则对任意实数 $x_1, \cdots, x_4$ 有
+$$
+\sum_{i=1}^4 x_i^2 \geqslant 2 \sum_{1 \leqslant i<j \leqslant 4}^4 x_i x_j \cos \theta_{i j} .
+$$
+其他推广和相关结果可参看张圭先生和笔者的论文 (刊于 Linear Algebra and its Applications, 1998;278).
+(3)用上面的证题方法可证明如下的代数不等式:设 $x, y, z \geqslant 0$, 则
+$$
+\left(x^2+x y+y^2\right)\left(y^2+y z+z^2\right)\left(z^2+z x+x^2\right) \geqslant(x y+y z+z x)^2 .
+$$
+%%PROBLEM_END%%
+
+

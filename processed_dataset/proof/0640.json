@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter13.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $n$ 为大于 1 的奇数, $\\alpha$ 是 $P(x)=(x-1)^n-x^2$ 的零点, 证明 $\\alpha> 2+\\frac{1}{n}$.",
+    "solution": "证明: $\\alpha<1$, 由于 $n$ 为奇数,则 $P(\\alpha)=(\\alpha-1)^n-\\alpha^2<0$,矛盾.\n所以 $\\alpha \\geqslant 1$.\n若 $1 \\leqslant \\alpha<2$, 则 $(\\alpha-1)^n<1 \\leqslant \\alpha^2$, 故 $P(\\alpha)<0$, 矛盾.\n所以 $\\alpha \\geqslant 2$.\n若 $2 \\leqslant \\alpha \\leqslant 2+\\frac{1}{n}$, 则 $(\\alpha-1)^n \\leqslant\\left(1+\\frac{1}{n}\\right)^n<\\mathrm{e}<4 \\leqslant \\alpha^2$, 故 $P(\\alpha)<0$, 矛盾.\n所以 $\\alpha>2+\\frac{1}{n}$.",
+    "remark": "注:本题是个关于多项式零点分布的问题, 但若简单用导数研究 $P(x)$ 的单调性并不足以解决问题, 因此我们通过三个步骤来递推讨论零点的范围: 先选取第一个范围 $\\alpha<1$, 此时非常容易证明 $\\alpha$ 不是零点, 这样就将所需考虑的范围缩小为 $\\alpha \\geqslant 1$, 故而为第二步讨论创设了有利条件 $\\alpha^2 \\geqslant 1$; 对第二个范围 $1 \\leqslant \\alpha<2$ 的选取也是根据同样的策略,这样为第三步创设了条件 $\\alpha^2 \\geqslant 4$; 到第三步时再发起总攻, 把问题完全解决.\n这种步步为营、层层推进的做法有利于降低推理难度,有时候反而能更快且干净地解决问题.\n在解决某些数学问题时,我们还可采取 \"递归\"的思想方法, 粗略地讲, 其中包括\"回溯\"和\"递推\"两个过程.\n例如对某种规模为 $n$ 的问题, 将其降解成若干个规模小于 $n$ 的问题,依次降解直到问题规模可求; 再求出低阶规模的解, 逐次代入高阶问题中, 直至求出规模为 $n$ 的问题的解.",
+    "figures": []
+}

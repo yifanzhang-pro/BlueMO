@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例7 已知 $f(x)=\\frac{x}{a+b x}$, 求 $f^{(n)}(x)$.",
+    "solution": "解:$f(x)=\\frac{x}{a+b x}$,\n$$\n\\begin{aligned}\nf^{(2)}(x) & =f(f(x))=-\\frac{\\frac{x}{a+b x}}{a+b \\cdot \\frac{x}{a+b x}}=\\frac{x}{a^2+b x(1+a)}, \\\\\nf^{(3)}(x) & =f\\left(f^{(2)}(x)\\right)=\\frac{\\frac{x}{a^2+b x(1+a)}}{a+b \\cdot \\frac{x}{a^2+b x(1+a)}} \\\\\n& =\\frac{x}{a^3+b x\\left(1+a+a^2\\right)},\n\\end{aligned}\n$$\n因此猜测\n$$\nf^{(i)}(x)=\\frac{x}{a^n+b x\\left(1+a+\\cdots+a^{n-1}\\right)}=\\frac{x}{a^n+b x \\cdot \\frac{1-a^n}{1-a}} .\n$$\n用数学归纳法是容易证明的.\n事实上,\n$$\n\\begin{aligned}\nf^{(n+1)}(x) & =f\\left(f^{(n)}(x)\\right)=\\frac{\\frac{x}{a^n+b x \\cdot \\frac{1-a^n}{1-a}}}{a+b \\cdot \\frac{x}{a^n+b x \\cdot \\frac{1-a^n}{1-a}}} \\\\\n& =\\frac{x}{a^{n+1}+b x \\frac{1-a^{n+1}}{1-a}} .\n\\end{aligned}\n$$\n于是命题获证.",
+    "remark": "",
+    "figures": []
+}

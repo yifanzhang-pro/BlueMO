@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题21 作出函数 $y=\\sqrt{3} \\sin 2 x-\\cos 2 x-1$ 在一个周期上的图象,并指出它与 $y=\\sin x$ 的图象间的关系.",
+    "solution": "由 $y=2 \\sin \\left(2 x-\\frac{\\pi}{6}\\right)-1$ 知 $T=\\pi$, 列表由五点描图法作出其图象, 该图象可看作将函数 $y=\\sin x$ 的图象横坐标压缩为原来的一半得 $y=\\sin 2 x$, 再向右平移 $\\frac{\\pi}{12}$ 个单位长度, 得 $y=\\sin \\left(2 x-\\frac{\\pi}{6}\\right)$, 再将纵坐标扩大为原来的 2 倍, 得 $y=2 \\sin \\left(2 x-\\frac{\\pi}{6}\\right)$, 最后, 将整个图象向下平移 1 个单位, 即得函数 $y= 2 \\sin \\left(2 x-\\frac{\\pi}{6}\\right)-1$ 的图象.\n(图略)",
+    "remark": "",
+    "figures": []
+}

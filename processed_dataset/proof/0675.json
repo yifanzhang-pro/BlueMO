@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter19.tex",
+    "problem_type": "proof",
+    "problem": "例5. 数列 $\\left\\{a_n\\right\\}$ 和 $\\left\\{b_n\\right\\}$ 满足 $a_1=1, b_1=2$,\n$$\na_{n+1}=\\frac{1+a_n+a_n b_n}{b_n}, b_{n+1}=\\frac{1+b_n+a_n b_n}{a_n},\n$$\n求证: $a_{2008}<5$.",
+    "solution": "证明:已知得\n$$\n1+a_{n+1}=\\frac{\\left(1+a_n\\right)\\left(1+b_n\\right)}{b_n}, 1+b_{n+1}=\\frac{\\left(1+a_n\\right)\\left(1+b_n\\right)}{a_n},\n$$\n且根据递推关系显然有 $a_n, b_n>0$, 故当 $n \\in \\mathbf{N}^*$ 时,\n$$\n\\begin{aligned}\n& \\frac{1}{1+a_{n+1}}-\\frac{1}{1+b_{n+1}} \\\\\n= & \\frac{b_n-a_n}{\\left(1+a_n\\right)\\left(1+b_n\\right)} \\\\\n= & \\frac{\\left(1+b_n\\right)-\\left(1+a_n\\right)}{\\left(1+a_n\\right)\\left(1+b_n\\right)} \\\\\n= & \\frac{1}{1+a_n}-\\frac{1}{1+b_n},\n\\end{aligned}\n$$\n这表明 $\\frac{1}{1+a_n}-\\frac{1}{1+b_n}$ 是不变量.\n以下有\n$$\n\\frac{1}{1+a_{2008}}>\\frac{1}{1+a_{2008}}-\\frac{1}{1+b_{2008}}=\\frac{1}{1+a_1}-\\frac{1}{1+b_1}=\\frac{1}{2}-\\frac{1}{3}=\\frac{1}{6},\n$$\n所以 $a_{2008}<5$.",
+    "remark": "注:具体问题中, 数量关系及变化形式可能多种多样, 要从中寻找出微妙的不变性并加以利用, 须对问题进行透彻的分析, 同时也离不开一定的解题经验.\n例如在本题中, 有一定解题经验的读者首先会想到在递推式两边加 1 , 而此后拟定计划时就有几个选择, 要做进一步的盘算.\n如能注意到取倒数并作差后所出现的裂项的结构特征, 便能发现不变量 $\\frac{1}{1+a_n}-\\frac{1}{1+b_n}$. 一旦抓住这个不变量并加以利用, 问题就迎刃而解了.",
+    "figures": []
+}

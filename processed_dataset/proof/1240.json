@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 设 $x_1, x_2, \\cdots, x_n$ 为正实数, $x_{n+1}=x_1+x_2+\\cdots+x_n$, 证明:\n$$\nx_{n+1} \\sum_{i=1}^n\\left(x_{n+1}-x_i\\right) \\geqslant\\left(\\sum_{i=1}^n \\sqrt{x_i\\left(x_{n+1}-x_i\\right)}\\right)^2 .\n$$",
+    "solution": "由于 $\\sum_{i=1}^n\\left(x_{n+1}-x_i\\right)=n x_{n+1}-\\sum_{i=1}^n x_i=(n-1) x_{n+1}$, 于是, 只需证明, $x_{n+1} \\sqrt{n-1} \\geqslant \\sum_{i=1}^n \\sqrt{x_i\\left(x_{n+1}-x_i\\right)}$, 即证 $\\sum_{i=1}^n \\sqrt{\\frac{x_i}{x_{n+1}}\\left(1-\\frac{x_i}{x_{n+1}}\\right)} \\leqslant \\sqrt{n-1}$. 由柯西不等式, 得 $\\left[\\sum_{i=1}^n \\sqrt{\\frac{x_i}{x_{n+1}} \\cdot\\left(1-\\frac{x_i}{x_{n+1}}\\right)}\\right]^2 \\leqslant\\left(\\sum_{i=1}^n \\frac{x_i}{x_{n+1}}\\right)\\left[\\sum_{i=1}^n\\left(1-\\frac{x_i}{x_{n+1}}\\right)\\right]= \\left(\\frac{1}{x_{n+1}} \\sum_{i=1}^n x_i\\right)\\left(n-\\frac{1}{x_{n+1}} \\sum_{i=1}^n x_i\\right)=n-1$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 一只老鼠吃 $3\\times 3\\times 3$ 立方体的乳酪,其方法是借助于打洞通过所有的 27 个$1\\times 1\\times 1$ 子立方体.\n果它在一个角上开始;然后依次走向未吃的立方体,问它吃完时能否恰在立方体的中心?",
+    "solution": "作图 $G$ : 顶点表示 $1 \\times 1 \\times 1$ 的立方体, 当且仅当两小立方体有公共面时, 对应的两顶点以边相连.\n易知 $G$ 是偶图, 设 $G=(X, Y ; E)$, 若角上一小立方体对应点属于 $X$, 则中心的小立方体对应的点属于 $Y$, 又因为 $|X|=14$, $|Y|=13$. 故 $G$ 无哈密顿链.",
+    "remark": "",
+    "figures": []
+}

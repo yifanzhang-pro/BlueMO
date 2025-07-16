@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题23. 设 $a 、 b 、 c$ 是一个三角形的三边长.\n证明:\n$$\n\\frac{\\sqrt{b+c-a}}{\\sqrt{b}+\\sqrt{c}-\\sqrt{a}}+\\frac{\\sqrt{c+a-b}}{\\sqrt{c}+\\sqrt{a}-\\sqrt{b}}+\\frac{\\sqrt{a+b-c}}{\\sqrt{a}+\\sqrt{b}-\\sqrt{c}} \\leqslant 3 .\n$$",
+    "solution": "不妨设 $a \\geqslant b \\geqslant c$. 于是, $\\sqrt{a+b-c}-\\sqrt{a}=\\frac{(a+b-c)-a}{\\sqrt{a+b-c}+\\sqrt{a}} \\leqslant \\frac{b-c}{\\sqrt{b}+\\sqrt{c}}=\\sqrt{b}-\\sqrt{c}$. 因此, $\\frac{\\sqrt{a+b-c}}{\\sqrt{a}+\\sqrt{b}-\\sqrt{c}} \\leqslant 1 \\cdots$ (1). 设 $p=\\sqrt{a}+\\sqrt{b}, q=\\sqrt{a}-\\sqrt{b}$. 则 $a-b=p q, p \\geqslant 2 \\sqrt{c}$. 由柯西不等式有 $\\left(\\frac{\\sqrt{b+c-a}}{\\sqrt{b}+\\sqrt{c}-\\sqrt{a}}+\\frac{\\sqrt{c+a-b}}{\\sqrt{c}+\\sqrt{a}-\\sqrt{b}}\\right)^2= \\left(\\frac{\\sqrt{c-p q}}{\\sqrt{c}-q}+\\frac{\\sqrt{c+p q}}{\\sqrt{c}+q}\\right)^2 \\leqslant\\left(\\frac{c-p q}{\\sqrt{c}-q}+\\frac{c+p q}{\\sqrt{c}+q}\\right)\\left(\\frac{1}{\\sqrt{c}-q}+\\frac{1}{\\sqrt{c}+q}\\right)=\\frac{2\\left(c \\sqrt{c}-p q^2\\right)}{c-q^2}$. $\\frac{2 \\sqrt{c}}{c-q^2}=4 \\times \\frac{c^2-\\sqrt{c} p q^2}{\\left(c-q^2\\right)^2} \\leqslant 4 \\times \\frac{c^2-2 c q^2}{\\left(c-q^2\\right)^2} \\leqslant 4$. 从而, $\\frac{-\\sqrt{b+c-a}}{\\sqrt{b}+\\sqrt{c}-\\sqrt{a}}+\\frac{\\sqrt{c}+a-b}{\\sqrt{c}+\\sqrt{a}-\\sqrt{b}} \\leqslant 2$. 结合式(1)即得所证不等式.",
+    "remark": "",
+    "figures": []
+}

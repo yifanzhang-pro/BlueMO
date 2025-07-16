@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $a, b, c \\in \\mathbf{R}^{+}$, 试证: 对任意实数 $x 、 y 、 z$, 有:\n$$\n\\begin{aligned}\n& x^2+y^2+z^2 \\\\\n\\geqslant & 2 \\sqrt{\\frac{a b c}{(a+b)(b+c)(c+a)}}\\left(\\sqrt{\\frac{a+b}{c}} x y+\\sqrt{\\frac{b+c}{a}} y z+\\sqrt{\\frac{c+a}{b}} z x\\right) .\n\\end{aligned}\n$$\n并指出等号成立的充要条件.",
+    "solution": "分析:熟知 $x^2+y^2+z^2-x y-y z-z x=\\frac{1}{2}\\left[(x-y)^2+(y-z)^2+\\right. \\left.(z-x)^2\\right] \\geqslant 0$, 我们用类似的方法证明本题.\n证明上式左边一右边\n$$\n\\begin{aligned}\n= & {\\left[\\frac{b}{b+c} x^2+\\frac{a}{c+a} y^2-2 \\sqrt{\\left.\\frac{a b}{(b+c)(c+a)} x y\\right]}\\right.} \\\\\n& +\\left[\\frac{c}{c+a} y^2+\\frac{b}{a+b} z^2-2 \\sqrt{\\frac{b c}{(c+a)(a+b)}} y z\\right] \\\\\n& +\\left[\\frac{c}{b+c} x^2+\\frac{a}{a+b} z^2-2 \\sqrt{\\frac{c a}{(b+c)(a+b)}} x z\\right] \\\\\n= & \\sum_{c y c} a b\\left[\\frac{x}{\\sqrt{a(b+c)}}-\\frac{y}{\\sqrt{b(c+a)}}\\right]^2 \\\\\n\\geqslant & 0 \\text { (这里 } \\sum_{c y c} \\text { 表示循环和号), }\n\\end{aligned}\n$$\n故原不等式成立.",
+    "remark": "",
+    "figures": []
+}

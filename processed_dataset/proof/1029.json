@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题22 在锐角 $\\triangle A B C$ 中, 求证: $\\cos (B-C) \\cos (C-A) \\cos (A-B) \\geqslant 8 \\cos A \\cos B \\cos C$.",
+    "solution": "因为 $\\tan A \\tan B \\tan C=\\tan A+\\tan B+\\tan C$, 故\n$$\n\\begin{aligned}\n\\frac{\\cos (B-C)}{\\cos A} & =\\frac{\\cos (B-C)}{-\\cos (B+C)}=\\frac{\\sin B \\sin C+\\cos B \\cos C}{\\sin B \\sin C-\\cos B \\cos C}=\\frac{\\tan B \\tan C+1}{\\tan B \\tan C-1} \\\\\n& =\\frac{\\tan A \\tan B \\tan C+\\tan A}{\\tan A \\tan B \\tan C-\\tan A}=\\frac{2 \\tan A+\\tan B+\\tan C}{\\tan B+\\tan C} \\\\\n& \\geqslant \\frac{2 \\sqrt{(\\tan A+\\tan B)(\\tan C+\\tan A)}}{\\tan B+\\tan C},\n\\end{aligned}\n$$\n同理 $\\frac{\\cos (C-A)}{\\cos B} \\geqslant \\frac{2 \\sqrt{(\\tan B+\\tan C)(\\tan A+\\tan B)}}{\\tan C+\\tan A}$, $\\frac{\\cos (A-B)}{\\cos C} \\geqslant \\frac{2 \\sqrt{(\\tan C+\\tan A)(\\tan B+\\tan C)}}{\\tan A+\\tan B}$, 以上三式相乘, 即得 $\\frac{\\cos (B-C) \\cos (C-A) \\cos (A-B)}{\\cdot \\cos A \\cos B \\cos C} \\geqslant 8$, 当且仅当 $A=B=C=\\frac{\\pi}{3}$ 时等号成立, 原题得证.",
+    "remark": "",
+    "figures": []
+}

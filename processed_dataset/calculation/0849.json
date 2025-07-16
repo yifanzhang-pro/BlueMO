@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题23. 在所有周长一定的三角形中,求内切圆半径最大的三角形.",
+    "solution": "设 $a 、 b 、 c$ 是半周长 $p$ 一定的三角形的边长, $S$ 与 $r$ 是它的面积与内切圆半径.\n则由平均值不等式, 得 $(r p)^2=S^2=p(p-a)(p-b)(p-c) \\leqslant p\\left[\\frac{(p-a)+(p-b)+(p-c)}{3}\\right]^3=\\frac{p^4}{27}$. 由此得到 $r \\leqslant \\frac{p}{\\sqrt{27}}$, 当且仅当 $p- a=p-b=p-c$, 即三角形为等边三角形时, $r$ 取到最大值.",
+    "remark": "",
+    "figures": []
+}

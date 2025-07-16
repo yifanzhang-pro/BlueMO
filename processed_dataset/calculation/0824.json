@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-5.tex",
+    "problem_type": "calculation",
+    "problem": "例5. 设 $x, y, z \\in \\mathbf{R}^{+}$, 且 $x^4+y^4+z^4=1$, 求\n$$\nf(x, y, z)=\\frac{x^3}{1-x^8}+\\frac{y^3}{1-y^8}+\\frac{z^3}{1-z^8}\n$$\n的最小值.",
+    "solution": "解:将原式变形为\n$$\nf(x, y, z)=\\frac{x^4}{x\\left(1-x^8\\right)}+\\frac{y^4}{y\\left(1-y^8\\right)}+\\frac{z^4}{z\\left(1-z^8\\right)} .\n$$\n对于 $w \\in(0,1)$, 令 $\\phi(w)=w\\left(1-w^8\\right)$, 先求 $\\phi(w)$ 的最大值.\n选一参数 $a$, 并利用 $G_9 \\leqslant A_9$, 得\n$$\n\\begin{aligned}\na(\\phi(w))^8 & =a w^8\\left(1-w^8\\right)^8 \\\\\n& \\leqslant\\left[\\frac{1}{9}\\left(a w^8+8\\left(1-w^8\\right)\\right)\\right]^9 \\\\\n& =\\left[\\frac{1}{9}\\left(8+(a-8) w^8\\right)\\right]^9 .\n\\end{aligned}\n$$\n取 $a=8$, 得\n$$\n8(\\phi(w))^8 \\leqslant\\left(\\frac{8}{9}\\right)^9\n$$\n由于 $\\phi(w)>0$, 从而\n$$\n\\phi(w) \\leqslant \\frac{8}{\\sqrt[4]{3^9}}\n$$\n于是\n$$\nf(x, y, z) \\geqslant \\frac{x^4+y^4+z^4}{8} \\cdot \\sqrt[4]{3^9}=\\frac{9}{8} \\sqrt[4]{3},\n$$\n当 $x=y=z=\\frac{1}{\\sqrt[4]{3}}$ 时, 等号成立.\n故 $f(x, y, z)$ 的最小值为 $\\frac{9}{8} \\sqrt[4]{3}$.",
+    "remark": "注:这里选择 $a=8$, 是为了消除变量 $w^8$, 使得右边为常数.",
+    "figures": []
+}

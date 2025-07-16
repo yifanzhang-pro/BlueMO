@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题6 已知 $x, y, z \\in \\mathbf{R}^{+}$, 且 $x y z(x+y+z)=1$, 求 $(x+y)(y+z)$ 的最小值.",
+    "solution": "由平均不等式 $(x+y)(y+z)=y(x+y+z)+x z \\geqslant 2 \\sqrt{y(x+y+z) \\cdot x z}=2$, 当 $x=z=1, y=\\sqrt{2}-1$ 时等号成立.\n故最小值为 2 .",
+    "remark": "",
+    "figures": []
+}

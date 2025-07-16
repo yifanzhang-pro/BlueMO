@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题18. $\\triangle A B C$ 的外接圆半径为 $2 \\sqrt{3}$, 则 $\\frac{a+b+c}{\\sin A+\\sin B+\\sin C}=$",
+    "solution": "$4 \\sqrt{3}$. 由正弦定理得 $\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}=\\frac{a+b+c}{\\sin A+\\sin B+\\sin C}= 4 \\sqrt{3}$.",
+    "remark": "",
+    "figures": []
+}

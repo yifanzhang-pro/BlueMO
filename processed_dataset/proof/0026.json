@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例5. 对于整数 $n(n \\geqslant 2)$, 如果存在集合 $\\{1,2, \\cdots, n\\}$ 的子集族 $A_1$, $A_2, \\cdots, A_n$ 满足;\n(a) $i \\notin A_i, i=1,2, \\cdots, n$;\n(b) 若 $i \\neq j, i, j \\in\\{1,2, \\cdots, n\\}$, 则 $i \\in A_j$, 当且仅当 $j \\notin A_i$;\n(c) 任意 $i, j \\in\\{1,2, \\cdots, n\\}, A_i \\cap A_j \\neq \\varnothing$.\n则称 $n$ 是 “好数”.\n证明: (1) 7 是好数;\n(2)当且仅当 $n \\geqslant 7$ 时, $n$ 是好数.",
+    "solution": "分析:对于 $n=7$, 可以作出满足条件的子集族来验证; 当 $n \\geqslant 7$ 时, 可考虑用数学归纳法证明.\n证明 (1) 当 $n=7$ 时, 取\n$$\n\\begin{aligned}\n& A_1=\\{2,3,4\\}, A_2=\\{3,5,6\\}, A_3=\\{4,5,7\\}, \\\\\n& A_4=\\{2,6,7\\}, A_5=\\{1,4,6\\}, A_6=\\{1,3,7\\}, \\\\\n& A_7=\\{1,2,5\\}\n\\end{aligned}\n$$\n即可.\n(2) 先证当 $n \\geqslant 7$ 时, $n$ 是好数.\n对 $n$ 进行归纳.\n由 (1) 知, 当 $n=7$ 时, 结论成立.\n假设 $n(n \\geqslant 7)$ 是好数, 则存在子集族 $A_1, A_2, \\cdots, A_n$ 满足条件.\n对于 $n+$ 1 , 取子集族 $B_1=A_1, B_2=A_2, \\cdots, B_n=A_n, B_{n+1}=\\{1,2, \\cdots, n\\}$. 由归纳假设易知, 它们也是满足条件的.\n下面证明每一个好数 $n$ 都至少为 7 .\n如果 $A_1, A_2, \\cdots, A_n$ 是一个 $n$ 为好数的集合的子集族,那么, 每一个 $A_i$ 至少有三个元素.\n事实上,若 $A_i \\subset\\{j, k\\}$, 则\n$$\nA_i \\cap A_j=\\{k\\}, A_i \\cap A_k=\\{j\\} .\n$$\n所以, $k \\in A_j, j \\in A_k$. 矛盾.\n考虑一个由元素 $0 、 1$ 构成的 $n \\times n$ 阶正方形表格,当且仅当 $j \\in A_i$ 其第 $i$ 行第 $j$ 列的元素为 1 . 表中对角线上的元素为 0 , 对于余下的元素，因为 $i \\neq j$, 当且仅当 $a_{j i}=1$ 时 $a_{i j}=0$, 所以 0 的个数等于 1 的个数.\n因此, 表中元素的和为 $\\frac{n^2-n}{2}$. 又每行元素的和大于等于 3 , 所以 $n^2-n \\geqslant 6 n$, 故 $n \\geqslant 7$.",
+    "remark": "",
+    "figures": []
+}

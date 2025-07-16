@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题6: 设 $a \\in \\mathbf{R}^{+}, A=\\left\\{(x, y) \\mid(x-1)^2+(y-2)^2 \\leqslant \\frac{4}{5}\\right\\}$ 与 $B=\\{(x, y) \\mid |x-1|+2|y-2| \\leqslant a\\}$ 是直角坐标平面 $x O y$ 内的点集.\n则 $A \\subseteq B$ 的充要条件是",
+    "solution": "解: $a \\geqslant 2$. 集合 $A$ 为以 $(1,2)$ 为圆心 $、 \\frac{2}{\\sqrt{5}}$ 为半径的圆面.\n集合 $B$ 为以 $(1,2)$ 为对角线交点的菱形, 且平行于 $x$ 轴的对角线长为 $2 a$, 平行于 $y$ 轴的对角线长为 $a$. 由 $A \\subseteq B$ 知, 当 $a \\cdot \\frac{a}{2}=\\frac{2}{\\sqrt{5}} \\cdot \\sqrt{a^2+\\left(\\frac{a}{2}\\right)^2}$ 时 $a$ 值最小, 所以 $a_{\\min }=2$.",
+    "remark": "",
+    "figures": []
+}

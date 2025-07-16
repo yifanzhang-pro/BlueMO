@@ -1,0 +1,248 @@
+
+%%TEXT_BEGIN%%
+"算两次", 也称做富比尼 (G. Fubini) 原理, 是一种非常重要的数学方法.
+所谓算两次, 就是在解题过程中, 以两个方面来考虑 (计算、估计) 同一个量, 从而使问题得以解决.
+这种方法的精神实质与 "换个角度看问题" 是一致的.
+其实, "算两次"方法我们并不陌生,譬如列方程解应用题, 就是把一个量用两种不同的方法表示出来.
+在本书的其他章节 (如奇偶性、面积法、染色法等) 中, "算两次" 的思想已有所涉及,而本节中我们将集中介绍一些算两次的例子和相应技巧.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 证明: $\frac{n(n+1)(n+2)}{6}=1 \cdot n+2 \cdot(n-1)+3 \cdot(n-2)+\cdots+ n \cdot 1$.
+%%<SOLUTION>%%
+证明:虑在 $n+2$ 个数 $1,2, \cdots, n+2$ 中任取 3 个的取法总数 $S$.
+一方面,显然有 $S=\mathrm{C}_{n+2}^3=\frac{n(n+1)(n+2)}{6}$.
+另一方面, 在 $1,2, \cdots, n+2$ 中, 为取三个数 $a, b, c(1 \leqslant a<b<c \leqslant n+2)$, 可先取定 $b$, 其中 $b \in\{2,3, \cdots, n+1\}$, 此后, 在 $1,2, \cdots, b-1$ 中任取一数 $a$, 在 $b+1, b+2, \cdots, n+2$ 中任取一数 $c$, 由乘法原理, 这样的数对 $(a$, $c)$ 的取法数为 $(b-1)(n+2-b)$, 所以
+$$
+S=\sum_{b=2}^{n+1}(b-1)(n+2-b)=1 \cdot n+2 \cdot(n-1)+3 \cdot(n-2)+\cdots+n \cdot 1 .
+$$
+综上可知结论成立.
+%%<REMARK>%%
+注:这是一个数学归纳法的习题,但注意到等式左端有组合数 $\mathrm{C}_{n+2}^3$ 的 "影子", 因此这里给出的做法是赋予右端一种相匹配的组合解释, 以此证明等式.
+有相当多的恒等式与不等式可以通过这种组合上的考虑而获得证明, 即"组合论证",这是"算两次"的常用策略之一.
+用同样的分析方法可将本题结论推广为更一般的情况:
+设 $0<s \leqslant r \leqslant m$, 则 $\sum_{k=0}^{m-r} \mathrm{C}_{s+k-1}^{s-1} \mathrm{C}_{m-s-k}^{r-s}=\mathrm{C}_m^r$ (其中当 $m=n+2, r=3$,
+$s=2$ 时回到原结论).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 以 $f(n, k)$ 表示正整数 $n$ 的不小于 $k$ 的约数个数.
+求 $\sum_{k=1}^{1000} f(1000+ k, k)$.
+%%<SOLUTION>%%
+解:们证明一般的结论: 对 $n \in \mathbf{N}^*$, 有
+$$
+\sum_{k=1}^n f(n+k, k)=2 n . \label{eq1}
+$$
+对 $n, i \in \mathbf{N}^*$, 当 $i$ 是 $n$ 的约数时, 令 $g_n(i)=1$; 否则令 $g_n(i)=0$, 则
+$$
+\begin{aligned}
+& \sum_{k=1}^n f(n+k, k)=\sum_{k=1}^n \sum_{i=k}^{n+k} g_{n+k}(i) \\
+= & \sum_{k=1}^n \sum_{i=k}^n g_{n+k}(i)+\sum_{k=1}^n \sum_{i=n+1}^{n+k} g_{n+k}(i)=A+B . \label{eq2}
+\end{aligned}
+$$
+显然在 $i$ 个相邻整数 $n+1, n+2, \cdots, n+i$ 中, $i$ 恰好是其中一个数的约数, 从而交换求和次序得
+$$
+A=\sum_{i=1}^n \sum_{k=1}^i g_{n+k}(i)=\sum_{i=1}^n 1=n, \label{eq3}
+$$
+又当 $1 \leqslant k \leqslant n$ 时, 在 $n+1, n+2, \cdots, n+k$ 中仅有 $n+k$ 是 $n+k$ 的约数, 故
+$$
+B=\sum_{k=1}^n 1=n . \label{eq4}
+$$
+将 式\ref{eq3}、\ref{eq4} 两式代入 式\ref{eq2}, 可得 式\ref{eq1} 成立.
+从而, $\sum_{k=1}^{1000} f(1000+k, k)=2000$.
+%%<REMARK>%%
+注:本例中, 观察可知, 求和项 $f(1000+k, k)$ 的取值状况杂乱无章, 很难直接计算.
+故而不妨将 1000 改为较小的数, 从简单情况考虑起, 先猜测出形如 \ref{eq1} 式的一般结论.
+上述证明过程写得比较形式, 实际上可通俗地理解为: 考虑满足 $1 \leqslant k \leqslant i \leqslant n+k \leqslant 2 n, i \mid n+k$ 的数组 $(n+k, i)$ 的个数, 通过转换观点, 固定每个 $i$ 来进行计数, 即 "换序求和", 最终利用剩余类的性质简化了求和计算.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $n$ 是正偶数.
+证明在 $n \times n$ 矩阵
+$$
+\left(\begin{array}{ccccc}
+1 & 2 & 3 & \cdots & n \\
+2 & 3 & 4 & \cdots & 1 \\
+3 & 4 & 5 & \cdots & 2 \\
+\cdots & \cdots & \cdots & \cdots & \cdots \\
+n & 1 & 2 & \cdots & n-1
+\end{array}\right)
+$$
+中找不到一组" $1,2, \cdots, n$ ", 它们两两不同行且不同列.
+%%<SOLUTION>%%
+证明:设有一组" $1,2, \cdots, n$ ", 它们两两不同行且不同列.
+设这组中的 $k$ 在第 $i_k$ 行第 $j_k$ 列 $(1 \leqslant k \leqslant n)$, 考虑到 $n$ 为偶数, 根据假设有
+$$
+\sum_{k=1}^n i_k=\sum_{k=1}^n j_k=\frac{n(n+1)}{2} \equiv \frac{n}{2}(\bmod n) .
+$$
+另一方面, 根据该矩阵的特点, 总有
+$$
+i_k+j_k-1 \equiv k(\bmod n) .
+$$
+因此
+$$
+\sum_{k=1}^n i_k+\sum_{k=1}^n j_k-\sum_{k=1}^n 1 \equiv \sum_k^n k(\bmod n)
+$$
+即 $\frac{n}{2}+\frac{n}{2}-n \equiv \frac{n}{2}(\bmod n)$, 矛盾.
+因此矩阵中不可能有一组 " $1,2, \cdots, n$, 它们两两不同行且不同列.
+%%<REMARK>%%
+注:在反证法假设下, 利用算两次方法得到矛盾, 是一种十分常见的证明思路, 本题即为一个典型的例子.
+很多情况下, 在解题中须从整体角度作考虑, 对某个量进行"算两次".
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $n(n \geqslant 3)$ 是给定的正整数,对于 $n$ 个给定的实数 $a_1, a_2, \cdots$, $a_n$, 记 $\left|a_i-a_j\right|(1 \leqslant i<j \leqslant n)$ 的最小值为 $m$. 求在 $a_1^2+a_2^2+\cdots+a_n^2=1$ 的条件下,上述 $m$ 的最大值.
+%%<SOLUTION>%%
+解:妨设 $a_1 \leqslant a_2 \leqslant \cdots \leqslant a_n$. 我们从两个方面来估计 $S=\sum_{1 \leqslant i<j \leqslant n}\left(a_i-a_j\right)^2$.
+一方面
+$$
+S=(n-1) \sum_{i=1}^n a_i^2-2 \sum_{1 \leqslant i<j \leqslant n} a_i a_j=n \cdot \sum_{i=1}^n a_i^2-\left(\sum_{i=1}^n a_i\right)^2 \leqslant n .
+$$
+另一方面, 因为 $a_2-a_1 \geqslant m, a_3-a_2 \geqslant m, \cdots, a_n-a_{n-1} \geqslant m$, 所以当 $1 \leqslant i<j \leqslant n$ 时, 有 $a_j-a_i \geqslant(j-i) m$. 于是
+$$
+S \geqslant m^2 \sum_{1 \leqslant i<j \leqslant n}(i-j)^2=m^2 \sum_{k=1}^{n-1}(n-k) k^2=\frac{m^2}{12} n^2\left(n^2-1\right) .
+$$
+从上述两个方面知
+$$
+n \geqslant \frac{m^2}{12} n^2\left(n^2-1\right)
+$$
+所以
+$$
+m \leqslant \sqrt{\frac{12}{n\left(n^2-1\right)}}
+$$
+又当 $\sum_{i=1}^n a_i=0$, 且 $a_1, a_2, \cdots, a_n$ 成等差数列时, 上述不等式取等号, 故 $m$ 的最大值为 $\sqrt{\frac{12}{n\left(n^2-1\right)}}$.
+%%<REMARK>%%
+注:本题结论易猜难证.
+与 $m$ 相关的量很多,之所以选择 $S$ 作为"算两次" 的量, 是因为一方面 $S$ 具有轮换对称性, 与条件 $a_1^2+a_2^2+\cdots+a_n^2=1$ 的结构相对统一; 另一方面, 在不失一般性对 $a_i$ 进行排序之后, 又可顺利地对 $S$ 作出与 $m$ 有关的下界估计.
+两者结合即得出 $m$ 的上界.
+因此, 解题时如何选择算两次的"量"很重要, "算"有时并不困难,但须注意一定的技巧.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 已知 $n(n \geqslant 2)$ 个有限集合 $A_1, A_2, \cdots, A_n$ 满足: 对任意 $a \in M= \bigcup_{i=1}^n A_i, a$ 至少属于 $A_1, A_2, \cdots, A_n$ 中的两个集合, 且对任意 $1 \leqslant i<j \leqslant n$, 有 $\left|A_i \cap A_j\right| \leqslant 1$. 试求 $|M|$ 的最大值.
+(注: $|X|$ 表示有限集合 $X$ 的元素个数.)
+%%<SOLUTION>%%
+解: $M=\left\{a_1, a_2, \cdots, a_m\right\}$, 其中对 $k=1,2, \cdots, m, a_k$ 属于 $A_1$, $A_2, \cdots, A_n$ 中的 $t_k$ 个集合, $t_k \geqslant 2$.
+考虑满足 $a_k \in A_i \cap A_j$ 的 $\left(a_k, A_i, A_j\right)$ 的组数 $S$, 其中 $1 \leqslant k \leqslant m, 1 \leqslant$ 130 $\quad i<j \leqslant n$.
+一方面, 先固定 $i, j$ 并对 $k$ 求和, 这样的 $\left(a_k, A_i, A_j\right)$ 有 $\left|A_i \cap A_j\right|$ 组, 再对 $i, j$ 求和, 并注意到 $\left|A_i \cap A_j\right| \leqslant 1$, 得
+$$
+S=\sum_{1 \leqslant i<j \leqslant n}\left|A_i \cap A_j\right| \leqslant \frac{n(n-1)}{2} .
+$$
+另一方面, 先固定 $k$ 并对 $i, j$ 求和, 这样的 $\left(a_k, A_i, A_j\right)$ 有 $\mathrm{C}_{t_k}^2$ 组, 再对 $k$ 求和, 并注意到 $t_k \geqslant 2$, 得
+$$
+S=\sum_{k=1}^m \mathrm{C}_{t_k}^2 \geqslant \sum_{k=1}^m 1=m . \label{eq1}
+$$
+结合以上两方面可得 $|M|=m \leqslant \frac{n(n-1)}{2}$.
+下面构造一个使 $|M|=\frac{n(n-1)}{2}$ 的例子:
+将 $\{1,2, \cdots, n\}$ 的所有二元子集记为 $B_1, B_2, \cdots, B_N, N=\frac{n(n-1)}{2}$, 令 $a_k \in A_i$ 当且仅当 $i \in B_k, k=1,2, \cdots, N$. 此时每个 $\left|B_k\right|=2$, 故每个 $a_k$ 属于 $A_1, A_2, \cdots, A_n$ 中的两个集合; 又若 $a_k \in A_i \cap A_j$, 则 $i, j \in B_k$, 这样的
+$k$ 唯一, 故 $\left|A_i \cap A_j\right| \leqslant 1$. 该例子满足题意, 并且使 $|M|=N$.
+综上所述, $|M|$ 的最大值为 $\frac{n(n-1)}{2}$.
+%%<REMARK>%%
+注:许多关于集合的问题可以从两方面去考虑, 一个集合含有哪些元素, 一一个元素属于哪些集合, 然后将这两方面综合起来.
+本题中, 对于 $\left(a_k, A_i, A_j\right)$  的数目, 先固定集合对, 对元素求和; 再固定元素, 对集合对求和, 两者应相等.
+上述证明中的 \ref{eq1} 式可换成如下更精细的估计:
+$$
+S=\sum_{k=1}^m \frac{t_k\left(t_k-1\right)}{2} \geqslant \frac{1}{2} \sum_{k=1}^m t_k=\frac{1}{2} \sum_{i=1}^n\left|A_i\right|,
+$$
+其中最后一步是对满足 $a_k \in A_i$ 的 $\left(a_k, A_i\right)$ 的总数进行换序求和.
+如此可得到比原题更强的结论: $\sum_{i=1}^n\left|A_i\right| \leqslant n(n-1)$, 进而通过举例可推知, $\sum_{i=1}^n\left|A_i\right|$ 的最大值等于 $n(n-1)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $A$ 是一个 225 元集, $A_1, A_2, \cdots, A_{11}$ 为 $A$ 的 11 个 45 元子集, 满足对任意的 $1 \leqslant i<j \leqslant 11,\left|A_i \cap A_j\right|=9$. 证明: $\left|A_1 \cup A_2 \cup \cdots \cup A_{11}\right| \geqslant$ 165 , 并给出一个例子使等号成立.
+%%<SOLUTION>%%
+证明: $X=A_1 \cup A_2 \cup \cdots \cup A_{11}, f_i(x)=\left\{\begin{array}{ll}1, & \text { 若 } x \in A_i \\ 0, & \text { 若 } x \notin A_i\end{array}, 1 \leqslant i \leqslant 11\right.$.
+显然, $f_i(x)=f_i^2(x)$.
+设 $d(x)=\sum_{i=1}^{11} f_i(x)$, 则 $d(x)$ 表示 $x$ 在 $A_1, A_2, \cdots, A_{11}$ 中出现的次数.
+一方面,
+$$
+\begin{aligned}
+\sum_{x \in X} d^2(x) & =\sum_{x \in X} \sum_{i=1}^{11} f_i^2(x)+2 \sum_{x \in X} \sum_{1 \leqslant i<j \leqslant 11} f_i(x) f_j(x) \\
+& =\sum_{i=1}^{11} \sum_{x \in X} f_i(x)+2 \sum_{1 \leqslant i<j \leqslant 11} \sum_{x \in X} f_i(x) f_j(x) \\
+& =\sum_{i=1}^{11}\left|A_i\right|+2 \sum_{1 \leqslant i<j \leqslant 11}\left|A_i \cap A_j\right| \\
+& =11 \times 45+2 \times \mathrm{C}_{11}^2 \times 9 \\
+& =1485 .
+\end{aligned}
+$$
+另一方面,
+$$
+\sum_{x \in X} d^2(x) \geqslant \frac{1}{|X|}\left(\sum_{x \in X} d(x)\right)^2=\frac{1}{|X|}\left(\sum_{x \in X} \sum_{i=1}^{11} f_i(x)\right)^2
+$$
+$$
+\begin{gathered}
+=\frac{1}{|X|}\left(\sum_{i=1}^{11}\left|A_i\right|\right)^2=\frac{(11 \times 45)^2}{|X|}, \\
+1485 \geqslant \frac{(11 \times 45)^2}{|X|}, \\
+|X| \geqslant 165 .
+\end{gathered}
+$$
+所以即
+使等号成立的例子如下:
+设 $A$ 的元素为: $\{1,2, \cdots, 11\}$ 的所有三元子集及其他任意 60 个元素,一共 $\mathrm{C}_{11}^3+60=225$ 个元素.
+对 $1 \leqslant i \leqslant 11$, 设 $A_i$ 的元素为: $\{1,2, \cdots, 11\}$ 的所有含 $i$ 的三元子集, 则 $\left|A_i\right|=\mathrm{C}_{10}^2=45$.
+对任意的 $1 \leqslant i<j \leqslant 11,\left|A_i \cap A_j\right|=\mathrm{C}_9^1=9$. 此时,
+$$
+\left|A_1 \cup A_2 \cup \cdots \cup A_{11}\right|=\mathrm{C}_{11}^3=165 .
+$$
+%%<REMARK>%%
+注:与上一题相比较, 本题用特征函数 $f_i(x)(1 \leqslant i \leqslant 11)$ 来表述元素与集合的关系,其本质仍旧是对 $\left(x, A_i, A_j\right)$ 和 $\left(x, A_i\right)$ 等对象 "算两次". 在举例方面, 本题难于上一题.
+注意题目中的 225 是一个非本质的量.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $S$ 是平面上的有限点集, 任意三点不共线.
+对于顶点属于 $S$ 的每个凸多边形 $P$ (这里"凸多边形"包括三角形, 且一条线段、一个点和空集也认为分别是凸 2 边形、凸 1 边形和凸 0 边形), 设 $P$ 的顶点数目为 $a(P)$, 属于 $S$ 且在 $P$ 的外部的点的数目为 $b(P)$. 证明: 对于任意的实数 $x$, 有
+$$
+\sum_P x^{a(P)}(1-x)^{b(P)}=1,
+$$
+其中, $P$ 取遍 $S$ 中的所有凸多边形.
+%%<SOLUTION>%%
+证明: $S$ 中有 $n$ 个点, 对于顶点在 $S$ 中的每一个凸多边形 $P$, 设属于 $S$ 且在 $P$ 的内部的点的数目为 $c(P)$, 则有 $a(P)+b(P)+c(P)=n$.
+记 $1-x=y$, 则
+$$
+\begin{aligned}
+\sum_P x^{a(P)}(1-x)^{b(P)} & =\sum_P x^{a(P)} y^{b(P)}=\sum_P x^{a(P)} y^{b(P)}(x+y)^{c(P)} \\
+& =\sum_P \sum_{i=0}^{c(P)} \mathrm{C}_{c(P)}^i x^{a(P)+i} y^{b(P)+c(P)-i}, \label{eq1}
+\end{aligned}
+$$
+这是关于 $x, y$ 的 $n$ 次齐次多项式.
+下面固定 $r(0 \leqslant r \leqslant n)$, 考虑 \ref{eq1} 式中 $x^r y^{n-r}$ 的系数.
+任取一个顶点数目 $a(P)$ 不大于 $r$ 的凸多边形 $P$, 再在 $P$ 内部的 $c(P)$ 个点中任取 $i=r-a(P)$ 个点.
+一方面, 这样的取法共有 $\sum_P \mathrm{C}_{c(P)}^{r-a(P)}$ 种, 其中 $\sum_P \mathrm{C}_{c(P)}^{r-a(P)}$
+恰好就是 \ref{eq1} 式中 $x^r y^{n-r}$ 的系数.
+另一方面, 这样的取法的数目对应着在 $S$ 中取 $r$ 个顶点的取法数目 $\mathrm{C}_n^r$. 这个对应是双射, 这是因为 $S$ 中的每个子集 $T$ 有唯一的方法分成两个不交的集合, 其中一个是 $T$ 的凸包, 另一个是 $T$ 的凸包内部的点.
+综合两方面可知, \ref{eq1} 式中 $x^r y^{n-r}$ 的系数 $\sum_P \mathrm{C}_{c(P)}^{r-a(P)}=\mathrm{C}_n^r$, 于是
+$$
+\sum_P x^{a(P)}(1-x)^{b(P)}=\sum_{r=0}^n \mathrm{C}_n^r x^r y^{n-r}=(x+y)^n=1 .
+$$
+%%<REMARK>%%
+注:本题的第一个关键之处是将多项式齐次化, 这样做实际上将论证的目标改成了证明恒等式 $\sum_P \sum_{i=0}^{c(P)} \mathrm{C}_{c(P)}^i x^{a(P)+i} y^{b(P)+c(P)-i}=(x+y)^n$, 并转而考虑 "左右两边各项系数是否相等"的问题.
+第二个关键之处是对 " $S$ 中取 $r$ 个顶点的取法数"算两次,从而给出一个等量关系,使上述问题得到解决.
+本题的结论十分有趣.
+又假如题目中 "凸多边形"仅指通常意义下的凸多边形 (但仍包括三角形), 而 $n \geqslant 3$, 那么结果应是如下形式:
+$$
+\sum_P x^{a(P)}(1-x)^{b(P)}=1-\sum_{k=0}^2 \mathrm{C}_n^k x^k(1-x)^{n-k} .
+$$
+%%PROBLEM_END%%
+
+

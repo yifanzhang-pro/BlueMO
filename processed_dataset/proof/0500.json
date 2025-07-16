@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 证明: 除四面体外, 不存在这样一个凸多面体, 它的每一个顶点和所有其余的顶点之间都有棱相连接.",
+    "solution": "$n$ 个顶点的凸多面体有 $\\mathrm{C}_n^2$ 条棱, 每个面至少有 3 条棱, 故多面体的面数不大于 $\\frac{2}{3} \\mathrm{C}_n^2$, 由欧拉公式得: $n+\\frac{2}{3} \\mathrm{C}_n^2 \\geqslant \\mathrm{C}_n^2+2$, 化简得 $n^2-7 n+12 \\leqslant 0, n$ 只能取 3 或 4 ,命题得证.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题12 求证: $\\sin ^2 x+\\frac{4}{\\sin ^2 x} \\geqslant 5$.",
+    "solution": "令 $t=\\sin ^2 x$, 则 $0<t \\leqslant 1$. 设 $f(t)=t+\\frac{4}{t}, t \\in(0,1]$. 则 $f(t)$ 在 $(0,1]$ 上是单调递减的, 从而 $f(t) \\geqslant f(1)=5$, 故 $\\sin ^2 x+\\frac{4}{\\sin ^2 x} \\geqslant 5$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $x, y, z \\in \\mathbf{R}^{+}$, 求证:\n$$\n\\frac{x+y+z}{3} \\cdot \\sqrt[3]{x y z} \\leqslant\\left(\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}\\right)^{\\frac{2}{3}} .\n$$",
+    "solution": "设 $x+y=2 a, y+z=2 b, z+x=2 c$. 则 $a 、 b 、 c$ 可组成一个三角形, 设其面积为 $S$, 外接圆半径为 $R$, 则易见原不等式等价于 $a+b+c \\leqslant 3 \\sqrt{3} R$.\n由 $2 R(\\sin A+\\sin B+\\sin C)=a+b+c \\leqslant 2 R \\cdot 3 \\cdot \\sin \\frac{A+B+C}{3}=3 \\sqrt{3} R$, 因此原不等式成立.",
+    "remark": "",
+    "figures": []
+}

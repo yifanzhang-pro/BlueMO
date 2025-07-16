@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $a$ 是一个凸六边形 $A B C D E F$ 的最大边长, $d=\\min \\{A D$, $B E, C F\\}$, 求证 $d \\leqslant 2 \\alpha$.",
+    "solution": "不妨设 $A E \\leqslant A C \\leqslant C E$, 则由 Ptolemy 定理有 $A D \\cdot C E \\leqslant A C \\cdot D E+ A E \\cdot C D \\leqslant a(A C+A E) \\leqslant 2 a \\cdot C E$, 由此 $A D \\leqslant 2 a$.",
+    "remark": "",
+    "figures": []
+}

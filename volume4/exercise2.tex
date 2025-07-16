@@ -1,0 +1,436 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 已知 $0<a<1,0<b<1$, 且 $a b=\frac{1}{36}$. 求 $u=\frac{1}{1-a}+\frac{1}{1-b}$ 的最小值.
+%%<SOLUTION>%%
+由均值不等式 $u \geqslant-\frac{2}{\sqrt{(1-a)(1-b)}} \geqslant \frac{2}{\frac{1-a+1-b}{2}}= \frac{4}{2-(a+b)} \geqslant \frac{4}{2-2 \sqrt{a b}}=\frac{4}{2-\frac{1}{3}}=\frac{12}{5}$. 当 $a=b=\frac{1}{6}$ 时, 上式取等号, 故 $u$ 的最小值为 $\frac{12}{5}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $a, b, c \in \mathbf{R}^{+}$, 且 $a+b+c=3$. 证明:
+$$
+\sum \frac{1}{a \sqrt{2\left(a^2+b c\right)}} \geqslant \sum \frac{1}{a+b c},
+$$
+其中, " $\sum$ " 表示轮换对称和.
+%%<SOLUTION>%%
+不失一般性, 令 $a \geqslant b \geqslant c$. 则 $\frac{(c-a)(c-b)}{3(c+a b)} \geqslant 0$ 及 $\frac{(a-b)(a-c)}{3(a+b c)}+ \frac{(b-a)(b-c)}{3(b+a c)}=\frac{c(a-b)^2}{3}\left[\frac{1+a+b-c}{(a+b c)(b+a c)}\right] \geqslant 0$. 故 $\sum \frac{(a-b)(a-c)}{3(a+b c)} \geqslant 0$. 而 $\sum \frac{1}{a+b c} \leqslant \frac{9}{2(a b+b c+a c)} \Leftrightarrow \sum \frac{1}{a(a+b+c)+3 b c} \leqslant$
+$$
+\frac{3}{2(a b+b c+a c)} \Leftrightarrow \sum\left[\frac{1}{2(a b+b c+a c)}-\frac{1}{a(a+b+c)+3 b c}\right] \geqslant 0 \Leftrightarrow
+$$
+$\sum \frac{(a-b)(a-c)}{a(a+b+c)+3 b c}=\sum \frac{(a-b)(a-c)}{3(a+b c)} \geqslant 0$. 由均值不等式知
+$\frac{1}{a \sqrt{2\left(a^2+b c\right)}}=\frac{\sqrt{b+c}}{\sqrt{2 a} \cdot \sqrt{(a b+a c)\left(a^2+b c\right)}} \geqslant \frac{\sqrt{2(b+c)}}{\sqrt{a}(a+c)(a+b)}$. 只需证 $\sum \sqrt{\frac{b+c}{2 a}} \cdot \frac{1}{(a+c) \overline{(a+b)}} \geqslant \frac{9}{4(a b+b c+a c)}$. 又 $\sqrt{\frac{b+c}{2 a}} \leqslant\sqrt{\frac{a+c}{2 b}} \leqslant \sqrt{\frac{a+b}{2 c}}, \frac{1}{(a+c)(a+b)} \leqslant \frac{1}{(b+c)(a+b)} \leqslant \frac{1}{(a+c)(c+b)}$,
+则由切比雪夫不等式知 $\sum \sqrt{\frac{b+c}{2 a}} \cdot \frac{1}{(a+c)(a+b)} \geqslant \frac{1}{3}\left(\sum \sqrt{\frac{b+c}{2 a}}\right)$.
+$\sum \frac{1}{(a+c)(a+b)}=\frac{2}{(a+b)(b+c)(a+c)} \sum \sqrt{\frac{b+c}{2 a}}$. 只需证 $\sum \sqrt{\frac{b+c}{2 a}}\geqslant \frac{9(a+b)(b+c)(a+c)}{8(a b+b c+a c)}$. 令 $t=\sqrt[6]{\frac{(a+b)(b+c)(a+c)}{8 a b c}} \geqslant 1$. 则
+$\frac{9(a+b)(b+c)(a+c)}{8(a b+b c+a c)}=\frac{27 t^6}{8 t^6+1}$. 由均值不等式知 $\sum \sqrt{\frac{b+c}{2 a}} \geqslant 3 t$. 故
+$3 t \geqslant \frac{27 t^6}{8 t^6+1} \Leftrightarrow 8 t^6-9 t^5+1 \geqslant 0$. 而当 $t \geqslant 1$ 时, 上述不等式恒成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $a_i \in \mathbf{R}^{+}(i=1,2, \cdots, n, n \geqslant 2)$, 求证:
+$$
+\frac{a_1}{a_2+a_3}+\frac{a_2}{a_3+a_4}+\cdots+\frac{a_{n-1}}{a_n+a_1}+\frac{a_n}{a_1+a_2}>\frac{n}{4} .
+$$
+%%<SOLUTION>%%
+令 $a_{n+1}=a_1, a_{n+2}=a_2$. 又设 $a_{i_1}=\max _{1 \leqslant i \leqslant n} a_i$, 原式左边为 $s, s$ 中分子含 $a_{i_1}$ 的项是 $\frac{a_{i_1}}{a_{i_1+1}+a_{i_1+2}}$. 令 $a_{i_2}=\max \left\{a_{i_1+1}, a_{i_1+2}\right\}$. 仿此取 $a_{i_3}=\max \left\{a_{i_2+1}\right.$, $\left.a_{i_2+2}\right\}$. 将继续上面手续, 最终将回到 $a_{i_1}$. 即经 $r$ 次后, 有 $a_{i_r+1}=a_{i_1}$. 从取法易知 $r \geqslant \frac{n}{2}$. 于是, $s>\frac{a_{i_1}}{2 a_{i_2}}+\frac{a_{i_2}}{2 a_{i_3}}+\cdots+\frac{a_{i_r}}{2 a_{i_r+1}} \geqslant \frac{1}{2} r \cdot \sqrt[r]{\frac{a_{i_1}}{a_{i_2}} \cdot \frac{a_{i_2}}{a_{i_3}} \cdots \cdots \frac{a_{i_r}}{a_{i_1}}}= \frac{1}{2} r \geqslant \frac{n}{4}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $a_1, a_2, \cdots, a_n(n \geqslant 2)$ 是正实数,且满足 $a_1+a_2+\cdots+a_n<1$. 证明: $\frac{a_1 a_2 \cdots a_n\left[1-\left(a_1+\cdots+a_n\right)\right]}{\left(a_1+a_2+\cdots+a_n\right)\left(1-a_1\right)\left(1-a_2\right) \cdots\left(1-a_n\right)} \leqslant \frac{1}{n^{n+1}}$.
+%%<SOLUTION>%%
+设 $a_{n+1}=1-\left(a_1+a_2+\cdots+a_n\right)$, 则 $a_{n+1} \geqslant 0, a_1+\cdots+a_{n+1}=1$. 则原不等式等价于 $n^{n+1} a_1 a_2 \cdots a_{n+1} \leqslant\left(1-a_1\right)\left(1-a_2\right) \cdots\left(1-a_n\right)\left(1-a_{n+1}\right)$. 对 $i=1,2, \cdots, n+1$, 由平均值不等式, 得 $1-a_i=\dot{a}_1+\cdots+a_{i-1}+ a_{i+1}+\cdots+a_{n+1} \geqslant n \sqrt[n]{a_1 \cdots a_{i-1} a_{i+1} \cdots a_{n+1}}$. 将 $n+1$ 个不等式相乘, 得 $(1- \left.a_1\right)\left(1-a_2\right) \cdots\left(1-a_{n+1}\right) \geqslant n^{n+1} \sqrt[n]{a_1^n a_2^n \cdots a_{n+1}^n}=n^{n+1} a_1 a_2 \cdots a_{n+1}$, 当且仅当 $a_1=a_2=\cdots=a_{n+1}=\frac{1}{n+1}$ 时等号成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $a_i, b_i \in \mathbf{R}^{+}(i=1,2, \cdots, n)$, 求证:
+$$
+\left[\prod_{i=1}^n\left(a_i+b_i\right)\right]^{\frac{1}{n}} \geqslant\left(\prod_{i=1}^n a_i\right)^{\frac{1}{n}}+\left(\prod_{i=1}^n b_i\right)^{\frac{1}{n}},
+$$
+其中 $\prod_{i=1}^n a_i=a_1 a_2 \cdots a_n$.
+%%<SOLUTION>%%
+右 $=\left(\prod \frac{a_i}{a_i+b_i}\right)^{\frac{1}{n}}+\left(\prod \frac{b_i}{a_i+b_i}\right)^{\frac{1}{n}} \leqslant \frac{1}{n}\left(\sum \frac{a_i}{a_i+b_i}+\sum \frac{b_i}{a_i+b_i}\right)=$ 1. 所以左 $\geqslant$ 右.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $x, y \in \mathbf{R}^{+}, x \neq y$. 令
+$$
+Q=\sqrt{\frac{x^2+y^2}{2}}, A=\frac{x+y}{2}, G=\sqrt{x y}, H=\frac{2 x y}{x+y} .
+$$
+证明: $G-H<Q-A<A-G$.
+%%<SOLUTION>%%
+$$
+\begin{aligned}
+&  \frac{x+y}{2}-\sqrt{x y}>\sqrt{\frac{x^2+y^2}{2}}-\frac{x+y}{2} \Leftrightarrow x+y>\sqrt{\frac{x^2+y^2}{2}}+\sqrt{x y} \Leftrightarrow \\
+& (x+y)^2>\frac{x^2+y^2}{2}+x y+\sqrt{2 x y\left(x^2+y^2\right)} \Leftrightarrow \frac{1}{2}(x+y)^2>\sqrt{2 x y\left(x^2+y^2\right)} \Leftrightarrow \\
+& (x+y)^4>8 x y\left(x^2+y^2\right) \Leftrightarrow x^4+4 x^3 y+6 x^2 y^2+4 x y^3+y^4 \geqslant 8 x^3 y+8 x y^3 \Leftrightarrow
+\end{aligned}
+$$
+$(x-y)^4>0$. 因为 $x \neq y$, 所以上面最后一个不等式成立, 即 $A-G>Q-A$.
+下面证明 $Q-A>G-H$. 因为 $\sqrt{\frac{x^2+y^2}{2}}-\frac{x+y}{2}>\sqrt{x y}-\frac{2 x y}{x+y} \Leftrightarrow$
+$$
+\sqrt{\frac{x^2+y^2}{2}}-\sqrt{x y}>\frac{x+y}{2}-\frac{2 x y}{x+y} \Leftrightarrow \frac{\frac{1}{2}\left(x^2+y^2\right)-x y}{\sqrt{\frac{x^2+y^2}{2}}+\sqrt{x y}}>\frac{(x-y)^2}{2(x+y)} \Leftrightarrow x+
+$$
+$y>\sqrt{\frac{x^2+y^2}{2}}+\sqrt{x y}$. 此不等式前面已经证明成立, 所以 $Q-A>G-H$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 设 $a_1, a_2, \cdots, a_{n+1}$ 为正等差数列(公差 $d \geqslant 0$ ). 求证:
+$$
+n\left(\sqrt[n]{\frac{a_{n+1}}{a_1}}-1\right) \leqslant \sum_{i=1}^n \frac{d}{a_i} \leqslant \frac{d}{d_1}+(n-1)\left(1-\sqrt[n-1]{\frac{a_1}{a_n}}\right) .
+$$
+%%<SOLUTION>%%
+$\sum_{k=1}^n \frac{d}{a_k}=\sum \frac{a_{k+1}-a_k}{a_k}=\sum \frac{a_{k+1}}{a_k}-n \geqslant n\left(\sqrt[n]{\frac{a_2}{a_1} \cdot \frac{a_3}{a_2} \cdot \cdots \cdot \frac{a_{n+1}}{a_n}}-1\right)=$
+$$
+\begin{aligned}
+& n\left(\sqrt[n]{\frac{a_{n+1}}{a_1}}-1\right) . \text { 又 } \sum_{k=1}^n \frac{d}{a_k}=\frac{d}{a_1}+\sum_{k=2}^n\left(1-\frac{a_{k-1}}{a_k}\right) \leqslant \frac{d}{a_1}+(n-1)-(n-1) \\
+& \sqrt[n-1]{\frac{a_1}{a_n}}=\frac{d}{a_1}+(n-1)\left(1-\sqrt[n-1]{\frac{a_1}{a_n}}\right) .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设 $x_1, x_2, \cdots, x_n$ 为正有理数, 且各不相同.
+求证:
+$$
+\left(\frac{x_1^2+x_2^2+\cdots+x_n^2}{x_1+x_2+\cdots+x_n}\right)^{x_1+x_2+\cdots+x_n}>x_1^{x_1} x_2{ }^{x_2} \cdots x_n^{x_n} .
+$$
+%%<SOLUTION>%%
+首先设 $x_i \in \mathbf{N}$. 因为 $x_i$ 互不相同, 所以左边 $=$
+记 $m$ 为 $x_1, x_2, \cdots, x_n$ 的各分母的最小公倍数, 则 $m x_1, m x_2, \cdots, m x_n \in \mathbf{Z}^{+}$, 于是 $\left[\frac{\left(m x_1\right)^2+\cdots+\left(m x_n\right)^2}{m x_1+m x_2+\cdots+m x_n}\right]^{m x_1+m x_2+\cdots+m x_n}>\left(m x_1\right)^{m x_1} \cdot\left(m x_2\right)^{m x_2} \cdots \cdots \cdot \left(m x_n\right)^{m x_n}$. 两边开 $m$ 次方并除以 $m^{\left(x_1+\cdots+x_n\right)}$, 即得到原不等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 已知 $5 n$ 个实数 $r_i, s_i, t_i, u_i, v_i>1(1 \leqslant i \leqslant n)$, 记
+$$
+R=\frac{1}{n} \sum_{i=1}^n r_i, S=\frac{1}{n} \sum_{i=1}^n s_i, T=\frac{1}{n} \sum_{i=1}^n t_i, U=\frac{1}{n} \sum_{i=1}^n u_i, V=\frac{1}{n} \sum_{i=1}^n v_i .
+$$
+求证: $\prod_{i=1}^n \frac{r_i s_i t_i u_i v_i+1}{r_i s_i t_i u_i v_i-1} \geqslant\left(\frac{R S T U V+1}{R S T U V-1}\right)^n$.
+%%<SOLUTION>%%
+设 $x_i>1(i=1,2, \cdots, n)$, 则 $\prod_{i=1}^n\left(x_i+1\right)^{\frac{1}{n}} \geqslant\left(\prod_{i=1}^n x_i\right)^{\frac{1}{n}}+1 \cdots$ (1). $\left(\prod_{i=1}^n x_i\right)^{\frac{1}{n}} \geqslant \prod_{i=1}^n\left(x_i-1\right)^{\frac{1}{n}}+1$, 即 $0<\left[\prod_{i=1}^n\left(x_i-1\right)\right]^{\frac{1}{n}} \leqslant\left(\prod_{i=1}^n x_i\right)^{\frac{1}{n}}-1 \cdots$ (2).
+由(1)、(2), 得 $\prod_{i=1}^n \frac{x_i+1}{x_i-1} \geqslant\left(\frac{\sqrt[n]{x_1 \cdots x_n}+1}{\sqrt[n]{x_1 \cdots x_n}-1}\right)^n \cdots$ (3). 又函数 $f(x)=\frac{x+1}{x-1}= 1+\frac{2}{x-1}$ 在 $x>1$ 时是减函数.
+令 $x_i=r_i s_i t_i u_i v_i$, 由平均值不等式, 得 $\left(\prod_{i=1}^n x_i\right)^{\frac{1}{n}}=\sqrt[n]{r_1 \cdots r_n} \cdots \sqrt[n]{v_1 \cdots v_n} \leqslant R S T U V$. 代入(3)式, 得 $\prod_{i=1}^n \frac{r_i s_i t_i u_i v_i+1}{r_i s_i t_i u_i v_i-1} \geqslant \left(\frac{R S T U V+1}{R S T U V-1}\right)^n$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 求证: $\left(1-\frac{1}{365}\right)\left(1-\frac{2}{365}\right) \cdots\left(1-\frac{25}{365}\right)<\frac{1}{2}$.
+%%<SOLUTION>%%
+由平均值不等式, 得左边 $\leqslant\left\{\frac{1}{25}\left[\left(1-\frac{1}{365}\right)+\left(1-\frac{2}{365}\right)+\cdots+\right.\right. \left.\left.\left(1-\frac{25}{365}\right)\right]\right\}^{25}=\left(1-\frac{13}{365}\right)^{25}$. 在 $\left(1-\frac{13}{365}\right)^{25}$ 的二项式展开中, 相邻两项的符号相反, 其绝对值的比为 $\frac{\mathrm{C}_{25}^{k+1}\left(\frac{13}{365}\right)^{k+1}}{\mathrm{C}_{25}^k\left(\frac{13}{365}\right)^k}=\frac{25+k}{k+1} \cdot \frac{13}{365} \leqslant \frac{25 \times 13}{365}<1$.
+即 $\mathrm{C}_{25}^k\left(\frac{13}{365}\right)^k>\mathrm{C}_{25}^{k+1}\left(\frac{13}{365}\right)^{k+1}$. 所以 $\left(1-\frac{13}{365}\right)^{25}=1- \left[\mathrm{C}_{25}^1\left(\frac{13}{365}\right)-\mathrm{C}_{25}^2\left(\frac{13}{365}\right)^2\right]-\left[\mathrm{C}_{25}^3\left(\frac{13}{365}\right)^3-\mathrm{C}_{25}^4\left(\frac{13}{365}\right)^4\right]-\cdots-\left(\frac{13}{365}\right)^{25}< 1-\mathrm{C}_{25}^1 \cdot \frac{13}{365}+\mathrm{C}_{25}^2\left(\frac{13}{365}\right)^2=1-\frac{65}{73}+\frac{169 \times 12}{75^2}=\frac{2622}{5329}<\frac{1}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 设 $a, d \geqslant 0, b, c>0$ 且 $b+c \geqslant a+d$. 求 $\frac{b}{c+d}+\frac{c}{a+b}$ 的最小值.
+%%<SOLUTION>%%
+由已知, 得 $b+c \geqslant \frac{1}{2}(a+b+c+d)$. 不妨设 $a+b=c+d$, 则 $\frac{b}{c+d}+\frac{c}{a+b}=\frac{b+c}{c+d}+c\left(\frac{1}{a+b}-\frac{1}{c+d}\right) \geqslant \frac{\frac{1}{2}(a+b+c+d)}{c+d}+(c+$ d) $\left(\frac{1}{a+b}-\frac{1}{c+d}\right)=\frac{a+b}{2(c+d)}+\frac{c+d}{a+b}-\frac{1}{2} \geqslant \sqrt{2}-\frac{1}{2}$. 当 $a=\sqrt{2}+1, b= \sqrt{2}-1, c=2, d=0$ 时, 取等号.
+故所求最小值为 $\sqrt{2}-\frac{1}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 对任意正数 $a_1, a_2, \cdots, a_n, n \geqslant 2$, 求 $\sum_{i=1}^n \frac{a_i}{S-a_i}$ 的最小值, 其中 $S= \sum_{i=1}^n a_i$
+%%<SOLUTION>%%
+令 $b_i=S-a_i$, 则 $\sum_{i=1}^n b_i=(n-1) S$. 由平均值不等式, 得 $\sum_{i=1}^n \frac{a_i}{S-a_i} =\sum_{i=1}^n\left(\frac{a_i}{b_i}+1\right)-n=S \sum_{i=1}^n \frac{1}{b_i}-n \geqslant \frac{n S}{\sqrt[n]{b_1 \cdots b_n}}-n \geqslant \frac{n^2 S}{b_1+\cdots+b_n}-n=\frac{n}{n-1}$. 当 $a_1=a_2=\cdots=a_n=1$ 时,等号成立, 故最小值为 $\frac{n}{n-1}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 求乘积 $x^2 y^2 z^2 u$ 在条件 $x, y, z, u \geqslant 0$ 与 $2 x+x y+z+y z u=1$ 下的最大值.
+%%<SOLUTION>%%
+由平均值不等式, 得 $\sqrt[4]{2 x^2 y^2 z^2 u} \leqslant \frac{2 x+x y+z+z y u}{4}=\frac{1}{4}$, 即
+$x^2 y^2 z^2 u \leqslant \frac{1}{512}$. 而且当 $2 x=x y=z=y z u=\frac{1}{4}$, 即 $x=\frac{1}{8}, y=2, z==\frac{1}{4}$, $u=\frac{1}{2}$ 时等式成立.
+于是, 所求的最大值为 $\frac{1}{512}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 设 $a_1, a_2, a_3 \in \mathbf{R}^{+}$, 求
+$$
+\frac{a_1 a_2}{\left(a_2+a_3\right)\left(a_3+a_1\right)}+\frac{a_2 a_3}{\left(a_3+a_1\right)\left(a_1+a_2\right)}+\frac{a_3 a_1}{\left(a_1+a_2\right)\left(a_2+a_3\right)}
+$$
+的最小值.
+%%<SOLUTION>%%
+所求的最小值为 $\frac{3}{4}$. 当 $a_1=a_2=a_3$ 时, 其值为 $\frac{3}{4}$. 下面证明:
+$$
+\begin{aligned}
+& \frac{a_1 a_2}{\left(a_2+a_3\right)\left(a_3+a_1\right)}+\frac{a_2 a_3}{\left(a_3+a_1\right)\left(a_1+a_2\right)}+\frac{a_3 a_1}{\left(a_3+a_2\right)\left(a_2+a_3\right)} \geqslant \\
+& \frac{3}{4} \Leftrightarrow 4\left[a_1 a_2\left(a_1+a_2\right)+a_2 a_3\left(a_2+a_3\right)+a_3 a_1\left(a_3+a_1\right)\right] \geqslant 3\left(a_1+a_2\right)\left(a_2+\right. \\
+& \left.a_3\right)\left(a_3+a_1\right) \Leftrightarrow 4\left[a_1\left(a_2^2+a_3^2\right)+a_2\left(a_3^2+a_1^2\right)+a_3\left(a_1^2+a_2^2\right)\right] \geqslant 3\left[a_1\left(a_2^2+a_3^2\right)+\right. \\
+& \left.a_2\left(a_3^2+a_1^2\right)+a_3\left(a_1^2+a_2^2\right)+2 a_1 a_2 a_3\right] \Leftrightarrow a_1\left(a_2^2+a_3^2\right)+a_2\left(a_3^2+a_1^2\right)+a_3\left(a_1^2+\right. \\
+& \left.a_2^2\right) \geqslant 6 a_1 a_2 a_3. \circledast
+\end{aligned}
+$$
+由平均值不等式, 得 $\circledast$ 的左边 $\geqslant a_1\left(2 a_2 a_3\right)+a_2\left(2 a_1 a_3\right)+ a_3\left(2 a_1 a_2\right)=6 a_1 a_2 a_3$. 故 $\circledast$ 成立, 最小值为 $\frac{3}{4}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 设正实数 $a_1, a_2, \cdots, a_n(n \geqslant 2)$ 满足 $a_1+a_2+\cdots+a_n=1$, 求
+$$
+\sum_{i=1}^n \frac{a_i}{2-a_i}
+$$
+的最小值.
+%%<SOLUTION>%%
+令 $b_i=2-a_i \geqslant 0(i=1,2, \cdots, n)$, 则 $\sum_{i=1}^n b_i=2 n-1$. 由平均值不等式, 得 $\sum_{i=1}^n \frac{a_i}{b_i}=\sum_{i=1}^n\left(\frac{a_i}{b_i}-1\right)-n=2 \sum_{i=1}^n \frac{1}{b_i}-n \geqslant \frac{2 n}{\sqrt[n]{b_1 \cdots}}-n \geqslant \frac{2 n^2}{b_1+\cdots+b_n}-n=\frac{2 n^2}{2 n-1}-n=\frac{n}{2 n-1}$. 当 $a_1=\cdots=a_n=\frac{1}{n}$ 时, $\sum_{i=1}^n \frac{a_i}{2-a_i}= \frac{n}{2 n-1}$, 故最小值为 $\frac{n}{2 n-1}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16. 设 $a>0, x_1, x_2, \cdots, x_n \in[0, a](n \geqslant 2)$ 且满足
+$$
+x_1 x_2 \cdots x_n=\left(a-x_1\right)^2\left(a-x_2\right)^2 \cdots\left(a-x_n\right)^2 .
+$$
+求 $x_1 x_2 \cdots x_n$ 的最大值.
+%%<SOLUTION>%%
+由平均值不等式, 得 $\left(x_1 x_2 \cdots, x_n\right)^{\frac{1}{2 n}}=\left[\left(a-x_1\right)\left(a-x_2\right) \cdots(a-\right. \left.\left.x_n\right)\right]^{\frac{1}{n}} \leqslant a-\frac{x_1+\cdots+x_n}{n} \leqslant a-\left(x_1 \cdots x_n\right)^{\frac{1}{n}}$. 令 $y=\left(x_1 x_2 \cdots x_n\right)^{\frac{1}{2 n}} \geqslant 0$, 则有 $y \leqslant a-y^2$, 即 $y^2+y-a \leqslant 0$. 解不等式得 $0 \leqslant y \leqslant \frac{-1+\sqrt{4 a+1}}{2}$, 故 $x_1 x_2 \cdots x_n$ 的最大值为 $\left(\frac{-1+\sqrt{4 a+1}}{2}\right)^{2 n}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17. 设 $n \geqslant 2, x_1, x_2, \cdots, x_n$ 为实数, 且 $\sum_{i=1}^n x_i^2+\sum_{i=1}^{n-1} x_i x_{i+1}=1$, 对每个给定的正整数 $k, 1 \leqslant k \leqslant n$, 求 $\left|x_k\right|$ 的最大值.
+%%<SOLUTION>%%
+由已知条件, 得 $2 \sum_{i=1}^n x_i^2+2 \sum_{i=1}^{n-1} x_i x_{i+1}=2$. 即 $x_1^2+\left(x_1+x_2\right)^2+ \left(x_2+x_3\right)^2+\cdots+\left(x_{n-2}+x_{n-1}\right)^2+\left(x_{n-1}+x_n\right)^2+x_n^2=2$. 对给定的正整数 $k$, $1 \leqslant k \leqslant n$, 由平均值不等式, 得 $\sqrt{\frac{x_1^2+\left(x_1+x_2\right)^2+\cdots+\left(x_{k-1}+x_k\right)^2}{k}} \geqslant \frac{\left|x_1\right|+\left|x_1+x_2\right|+\cdots+\left|x_{k-1}+x_k\right|}{k} \geqslant \frac{\left|x_1-\left(x_1+x_2\right)+\cdots+(-1)^{k-1}\left(x_{k-1}+x_k\right)\right|}{k}=\frac{\left|x_k\right|}{k}$. 所以 $\frac{x_1^2+\left(x_1+x_2\right)^2+\cdots+\left(x_{k-1}+x_k\right)^2}{k} \geqslant \frac{x_k^2}{k^2}$, 即 $x_1^2+\left(x_1+x_2\right)^2 +\cdots+\left(x_{k-1}+x_k\right)^2 \geqslant \frac{x_k^2}{k}$. 同理, 可得 $\left(x_k+x_{k+1}\right)^2+\cdots+\left(x_{n-1}+x_n\right)^2+x_n^2 \geqslant \frac{x_k^2}{n-k+1}$. 将以上两式相加, 得 $\left|x_k\right| \leqslant \sqrt{\frac{2 k(n+1-k)}{n+1}}(k=1,2, \cdots, n)$, 当且仅当 $x_1=-\left(x_1+x_2\right)=\left(x_2+x_3\right)=\cdots=(-1)^{k-1}\left(x_{k-1}+x_k\right)$ 及 $x_k+x_{k+1}=-\left(x_{k+1}+x_{k+2}\right)=\cdots=(-1)^{n-k} x_n$ 时, 等号成立, 即当且仅当 $x_i= x_k(-1)^{i-k} \frac{i}{k}(i=1,2, \cdots, k-1)$ 且 $x_j=x_k(-1)^{j-k} \frac{n+1--j}{n-k+1}(j=k+1$, $k+2, \cdots, n)$ 时, $\left|x_k\right|=\sqrt{\frac{2 k(n+1-k)}{n+1}}$. 于是 $\left|x_k\right|_{\text {max }}= \sqrt{\frac{2 k(n+1-k)}{n+1}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题18. 证明: 对任意边长为 $a 、 b 、 c$, 且面积为 $S$ 的三角形, 有
+$$
+\frac{a b+b c+c a}{4 S} \geqslant \sqrt{3} \text {. }
+$$
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c2p18.png>)所示, 在 $\triangle A B C$ 中, 设 $A B=c, A C=b$, $B C=a$, 且 $\angle B A C=\alpha$, 考虑 $\triangle A B C$ 的外接圆周上边 $B C$ 的对弧 $\overparen{B A C}$, 因为弧的中点 $D$ 是弧上离弦 $B C$ 最远的点, 所以对 $\triangle A B C$ 与 $\triangle D B C$ 的高 $A H=h$ 与 $D K$, 有 $h \leqslant D K=B K \cdot \cot \frac{\angle B D C}{2}=\frac{a}{2} \cot \frac{\alpha}{2}$. 由平均值不等式, 得
+$\frac{a b+a c+b c}{4 S} \geqslant \frac{3}{4 S} \sqrt[3]{a^2 b^2 c^2}=\frac{3}{4} \sqrt[3]{\frac{a^2 b^2 c^2}{\left(\frac{1}{2} b c \sin \alpha\right)^2 \cdot \frac{1}{2} a h}}=\frac{3}{2} \sqrt[3]{\frac{a}{h \sin ^2 \alpha}} \geqslant \frac{3}{2} \sqrt[3]{\frac{2}{\sin ^2 \alpha \cot \frac{\alpha}{2}}}$. 令 $\cos \alpha=x$, 再由平均值不等式, 得 $\frac{1}{2} \sin ^2 \alpha \cot \frac{\alpha}{2}=\sin \alpha \cos ^2 \frac{\alpha}{2}=\frac{1}{2} \sin \alpha(1+\cos \alpha)=\frac{1}{2} \sqrt{1-x^2}(1+x)=\frac{1}{2} \sqrt{(1+x)^3(1-x)}=\frac{1}{2} \sqrt{27\left(\frac{1+x}{3}\right)^3(1-x)} \leqslant \frac{1}{2} \sqrt{27}\left[\frac{1}{4}\left(3 \cdot \frac{1+x}{3}+(1-x)\right)\right]^2 =\frac{1}{2} \sqrt{27}\left(\frac{2}{4}\right)^2=\left(\frac{\sqrt{3}}{2}\right)^3$. 从而 $\frac{a b+b c+c a}{4 S} \geqslant \frac{3}{2} \cdot-\frac{2}{\sqrt{3}}=\sqrt{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题19. 证明: 如果 $A D 、 B E$ 与 $C F$ 是 $\triangle A B C$ 的角平分线, 则 $\triangle D E F$ 的面积不超过 $\triangle A B C$ 的面积的四分之一.
+%%<SOLUTION>%%
+记 $a=B C, b=A C, c=A B, S=S_{\triangle A B C}, S_0=S_{\triangle D E F}$. 由三角形平分线的性质, 得 $\frac{A F}{b}=\frac{B F}{a}=\frac{A F+B F}{b+a}=\frac{c}{a+b}$. 从而 $A F=\frac{b c}{a+b}$, 同理可得 $A E=\frac{b c}{a+c}$. 因此, $S_{\triangle A E F}=\frac{1}{2} A F \cdot A E \sin \angle B A C=\frac{1}{2} b c \sin \angle B A C \cdot\frac{b c}{(a+b)(a+c)}=\frac{b c S}{(a+b)(a+c)}$. 同理可得 $S_{\triangle B D F}=\frac{a c S}{(a+b)(b+c)}, S_{\triangle C D E}= \frac{a b S}{(a+c)(b+c)}$. 由平均值不等式, 得 $S-S_0=S_{\triangle A E F}+S_{\triangle B D F}+S_{\triangle C D E}= \left[\frac{b c}{(a+b)(a+c)}+\frac{a c}{(b+a)(b+c)}+\frac{a b}{(c+a)(c+b)}\right] S \geqslant \frac{6 a b c S}{(a+b)(b+c)(c+a)}= 3\left[1-\frac{b c}{(a+b)(a+c)}-\frac{a c}{(a+b)(c+b)}-\frac{a b}{(a+c)(c+b)}\right] S=3\left(S-S_{\triangle A E F}-\right. \left.S_{\triangle B D F}-S_{\triangle C D E}\right)=3 S_0$. 于是, $S_0 \leqslant \frac{1}{4} S$, 即命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题20. 设 $\triangle A B C$ 的外接圆 $K$ 的半径为 $R$, 内角平分线分别交圆 $K$ 于 $A^{\prime}, B^{\prime}$, $C^{\prime}$, 证明: $16 Q^3 \geqslant 27 R^4 P$. 其中, $Q 、 P$ 分别为 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 与 $\triangle A B C$ 的面积.
+%%<SOLUTION>%%
+设 $\triangle A B C$ 的三个内角为 $\alpha 、 \beta 、 \gamma$, 则 $P=\frac{1}{2} R^2(\sin 2 \alpha+\sin 2 \beta+ \sin 2 \gamma)$. 由于 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 的内角为 $\frac{\beta+\gamma}{2}, \frac{\alpha+\gamma}{2}, \frac{\alpha+\beta}{2}$, 所以 $Q=\frac{1}{2} R^2[\sin (\beta+ \gamma)+\sin (\alpha+\gamma)+\sin (\alpha+\beta)]$. 由平均值不等式, 得 $16 Q^3=2 R^6[\sin (\beta+\gamma)+ \sin (\alpha+\gamma)+\sin (\alpha+\beta)]^3 \geqslant 2 R^6 \cdot 27 \sin (\beta+\gamma) \sin (\alpha+\gamma) \sin (\alpha+\beta)= 27 R^6[\cos (\alpha-\beta)+\cos \gamma] \sin (\alpha+\beta)=\frac{27}{2} R^6[\sin (\alpha+\beta+\gamma)+\sin (\alpha+\beta-\gamma)+ \sin 2 \alpha+\sin 2 \beta]=\frac{27}{2} R^6(\sin 2 \alpha+\sin 2 \beta+\sin 2 \gamma)=27 R^4 P$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题21. 设 $\triangle A B C$ 的三边长为 $a 、 b 、 c$, 现将 $A B 、 A C$ 分别延长 $a$ 单位长度, 将 $B C 、 B A$ 分别延长 $b$ 单位长度.
+$C A, C B$ 分别延长 $c$ 单位长度.
+设这样得到六个端点所构成的凸多边形面积为 $G, \triangle A B C$ 的面积为 $F$. 证明:
+$$
+\frac{G}{F} \geqslant 13 \text {. }
+$$
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c2p21.png>)所示, 知 $S_{\triangle A B_2 C_1}=S_{\triangle B C_2 A_1}=S_{\triangle C A_2 B_1}=S_{\triangle A B C}$
+所以 $$
+\begin{aligned}
+& \frac{G}{F} \\
+& = \frac{S_{A B C_2 C_1}+S_{B C A_2 A_2}+S_{A C B_1 B_2}+4 F}{F} \\
+& =\frac{S_{\triangle A A_1 A_2}+S_{\triangle B B_1 B_2}+S_{\triangle C C_1 C_2}+F}{F} \\
+& =1+ \frac{(b+a)(c+a)}{b c}+\frac{(a+b)(c+b)}{a c}+\frac{(a+c)(b+c)}{a b}\\
+& =1+3+\frac{a}{b}+\frac{a}{c}+\frac{b}{a}+\frac{b}{c}+\frac{c}{a}+\frac{c}{b}+\frac{a^2}{b c}+\frac{b^2}{a c}+\frac{c^2}{a b} \geqslant 4+9 \sqrt[9]{\frac{a}{b} \cdot \frac{a}{c} \cdot \frac{b}{a} \cdot \frac{b}{c} \cdot \frac{c}{a} \cdot \frac{c}{b} \cdot \frac{a^2}{b c} \cdot \frac{b^2}{a c} \cdot \frac{c^2}{a b}} \\
+& =13
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题22. 设等腰梯形的最大边长为 13 , 周长为 28 .
+(1) 设梯形的面积为 27 , 求它的边长;
+(2) 这种梯形的面积能否等于 27.001 ?
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c2p22.png>)所示, 设 $A D$ 是较大的底边, $B H$ 是给定梯形 $A B C D$ 的高.
+如果
+$A B=C D=13$, 则 $A D+B C=2$, 且 $S_{\text {梯形 } A B C D}=B H \cdot \frac{A D+B C}{2} \leqslant 13 \cdot \frac{2}{2}= 13<27$, 不可能.
+因此, $A D=13$. 记 $A B=x$, 则 $B C=28-13-2 x=15-2 x$, $A H=x-1, B H=\sqrt{2 x-1}$. 由平均值不等式, 得 $S_{\text {梯形 } A B C D}=\sqrt{2 x-1} \cdot \frac{28-2 x}{2} =\sqrt{(2 x-1)(14-x)^2} \leqslant \sqrt{\left[\frac{(2 x-1)+(14-x)+(14-x)}{3}\right]^3}=27$. 当且仅当 $2 x-1=14-x$, 即 $x=5$, 也是 $A B=B C=C D=5$ 时, $S_{\text {梯形 } A B C D}=27$, 而等式 $S_{\text {梯形 } A B C D}=27.001$ 是不可能成立的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题23. 在所有周长一定的三角形中,求内切圆半径最大的三角形.
+%%<SOLUTION>%%
+设 $a 、 b 、 c$ 是半周长 $p$ 一定的三角形的边长, $S$ 与 $r$ 是它的面积与内切圆半径.
+则由平均值不等式, 得 $(r p)^2=S^2=p(p-a)(p-b)(p-c) \leqslant p\left[\frac{(p-a)+(p-b)+(p-c)}{3}\right]^3=\frac{p^4}{27}$. 由此得到 $r \leqslant \frac{p}{\sqrt{27}}$, 当且仅当 $p- a=p-b=p-c$, 即三角形为等边三角形时, $r$ 取到最大值.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题24. 在 $\triangle A B C$ 中, 三条边长分别为 $a 、 b 、 c$, 且 $a 、 b 、 c$ 为有理数, 求证:
+$$
+\left(1+\frac{b-c}{a}\right)^a\left(1+\frac{c-a}{b}\right)^b\left(1+\frac{a-b}{c}\right)^c \leqslant 1 .
+$$
+%%<SOLUTION>%%
+因为 $a 、 b 、 c$ 为正有理数,故存在 $m \in \mathbf{N}$, 使 $m a, m b, m c$ 为正整数, 又 $a 、 b 、 c$ 为三边之长, 有 $1+\frac{b-c}{a}>0,1+\frac{c-a}{b}>0,1+\frac{a-b}{c}>0$. 由平均值不等式, 得 $\left[\left(1+\frac{b-c}{a}\right)^{m a}\left(1+\frac{c-a}{b}\right)^{m b}\left(1+\frac{a-b}{c}\right)^{m c}\right]^{\frac{1}{m a+m b+m c}} \leqslant \frac{m a\left(1+\frac{b-c}{a}\right)+m b\left(1+\frac{c-a}{b}\right)+m c\left(1+\frac{a-b}{c}\right)}{m a+m b+m c}=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题25. 设 $n \geqslant 2$, 求乘积 $x_1 x_2 \cdots x_n$ 在条件 $x_i \geqslant \frac{1}{n}(i=1,2, \cdots, n)$ 与 $x_1^2+x_2^2+\cdots+x_n^2=1$ 下的最大值和最小值.
+%%<SOLUTION>%%
+首先求最大值, 由平均值不等式, 得 $\sqrt[n]{x_1^2 x_2^2 \cdots x_n^2} \leqslant \frac{x_1^2+x_2^2+\cdots+x_n^2}{n}=\frac{1}{n}$. 当 $x_1=x_2=\cdots=x_n=\frac{1}{\sqrt{n}}>\frac{1}{n}(n \geqslant 2)$ 时等号成立.
+所以最大值为 $n^{-\frac{n}{2}}$. 再求最小值.
+令 $y_1=x_1, \cdots, y_{n-2}=x_{n-2}, y_{n-1}= \sqrt{x_{n-1}^2+x_n^2-\frac{1}{n^2}}, y_n=\frac{1}{n}$, 则 $y_i \geqslant \frac{1}{n}, i=1,2, \cdots, n$, 且 $y_1^2+\cdots+y_n^2= x_1^2+\cdots+x_n^2=1$. 由于 $y_{n-1}^2 y_n^2-x_{n-1}^2 x_n^2=-\left(x_{n-1}^2-\frac{1}{n^2}\right)\left(x_n^2-\frac{1}{n^2}\right) \leqslant 0$, 所以 $y_1 y_2 \cdots y_{n-2} y_{n-1} y_n \leqslant x_1 x_2 \cdots x_{n-2} x_{n-1} x_n$. 重复这个过程 $n-1$ 次, 得 $x_1 x_2 \cdots x_n \geqslant\left(\frac{1}{n}\right)^{n-1} \sqrt{1-\frac{n-1}{n^2}}=\frac{\sqrt{n^2-n+1}}{n^n}$. 当 $x_1=\cdots=x_{n-1}=\frac{1}{n}$, $x_n=\frac{\sqrt{n^2--} n+1}{n}$. 时, 等号成立.
+故最小值为 $\frac{\sqrt{n^2-n+1}}{n^n}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题26. 求最小正数 $\lambda$, 使得对于任一三角形的三边长 $a 、 b 、 c$, 只要 $a \geqslant \frac{b+c}{3}$, 就有 $a c+b c-c^2 \leqslant \lambda\left(a^2+b^2+3 c^2+2 a b-4 b c\right)$.
+%%<SOLUTION>%%
+易知 $a^2+b^2+3 c^2+2 a b-4 b c=(a+b-c)^2+2 c^2+2 a c-2 b c=(a+b-c)^2+2 c(a+c-b)$. 令 $I=\frac{(a+b-c)^2+2 c(a+c-b)}{2 c(a+b-c)}=\frac{a+b-c}{2 c} +\frac{a+c-b}{a+b-c}$, 由于 $a \geqslant \frac{1}{3}(b+c)$, 所以 $a \geqslant \frac{1}{4}(a+b-c)+\frac{c}{2}$. 于是 $a+c- b=2 a-(a+b-c) \geqslant-\frac{1}{2}(a+b-c)+c$. 由此可知 $I \geqslant \frac{a+b-c}{2 c}- \frac{\frac{1}{2}(a+b-c)}{a+b-c}+\frac{c}{a+b-c}=-\frac{1}{2}+\frac{a+b-c}{2 c}+\frac{c}{a+b-c} \geqslant-\frac{1}{2}+2 \sqrt{\frac{1}{2}}= \sqrt{2}-\frac{1}{2}$. 即 $\frac{a c+b c-c^2}{a^2+b^2+3 c^2+2 a b-4 b c}=\frac{1}{2 I} \leqslant \frac{1}{2 \sqrt{2}-1}=\frac{2 \sqrt{2}+1}{7}$. 所以, $\lambda \geqslant \frac{2 \sqrt{2}+1}{7}$. 另一方面, 当 $a=\frac{\sqrt{2}}{4}+\frac{1}{2}, b=\frac{3 \sqrt{2}}{4}+\frac{1}{2}, c=1$, 则 $a c+b c- c^2=\sqrt{2}, a^2+b^2+3 c^2+2 a b-4 b c=4-\sqrt{2}$, 所以 $\frac{1}{2 I}=\frac{\sqrt{2}}{4-\sqrt{2}}=\frac{2 \sqrt{2}+1}{7}$. 故 $\lambda=\frac{2 \sqrt{2}+1}{7}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题27. 对每个正整数 $n$, 求证:
+$$
+\sum_{j=1}^n \frac{2 j+1}{j^2}>n\left[(n+1)^{\frac{2}{n}}-1\right] .
+$$
+%%<SOLUTION>%%
+显然 $2 j+1=(j+1)^2-j^2$, 由平均值不等式, 得 $\sum_{j=1}^n \frac{2 j+1}{j^2}= \sum_{j=1}^n\left[\frac{(j+1)^2}{j^2}-1\right]=\sum_{j=1}^n \frac{(j+1)^2}{j^2}-n \geqslant n\left[\frac{2^2}{1^2} \cdot \frac{3^2}{2^2} \cdot \cdots \cdot \frac{(n+1)^2}{n^2}\right]^{\frac{1}{n}}-n= n\left[(n+1)^{\frac{2}{n}}-1\right]$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题28. 设 $A 、 B 、 C$ 为三角形的三个内角, 求证:
+$$
+\sin 3 A+\sin 3 B+\sin 3 C \leqslant \frac{3}{2} \sqrt{3} .
+$$
+%%<SOLUTION>%%
+不妨设 $A \geqslant 60^{\circ}$, 则 $B+C \leqslant 180^{\circ}-60^{\circ}=120^{\circ}$. $\sin 3 A+\sin 3 B+ \sin 3 C=\sin 3 A+2 \sin \frac{3}{2}(B+C) \cos \frac{3}{2}(B-C) \leqslant \sin 3 A+2 \sin \frac{3}{2}(B+C)$. 记 $\alpha= \frac{3}{2}(B+C)$, 则 $0 \leqslant \alpha \leqslant 180^{\circ}$, 且 $A=180^{\circ}-(B+C)=180^{\circ}-\frac{2}{3} \alpha$. 于是 $\sin 3 A+ \sin 3 B+\sin 3 C \leqslant \sin \left(3 \times 180^{\circ}-2 \alpha\right)+2 \sin \alpha=\sin 2 \alpha+2 \sin \alpha=2 \sin \alpha(1+ \cos \alpha)=8 \sin \frac{\alpha}{2} \cos ^3 \frac{\alpha}{2}$. 由平均值不等式, 得 $\sin \frac{\alpha}{2} \cos ^3 \frac{\alpha}{2}=\sqrt{\sin ^2 \frac{\alpha}{2} \cos ^6 \frac{\alpha}{2}}= \sqrt{\frac{-1}{3} \cdot 3 \sin ^2 \frac{\alpha}{2} \cos ^6 \frac{\alpha}{2}} \leqslant \sqrt{\frac{1}{3}\left[\frac{3 \sin ^2 \frac{\alpha}{2}+\cos ^2 \frac{\alpha}{2}+\cos ^2 \frac{\alpha}{2}+\cos ^2 \frac{\alpha}{2}}{4}\right]^4} \leqslant \frac{3 \sqrt{3}}{16}$. 所以 $\sin 3 A+\sin 3 B+\sin 3 C \leqslant \frac{3}{2} \sqrt{3}$, 且当且仅当 $A=140^{\circ}, B=C=20^{\circ}$ 时, 等号成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题29. 设 $\alpha 、 \beta 、 \gamma$ 为一个给定三角形的三个内角,求证:
+$$
+\csc ^2 \frac{\alpha}{2}+\csc ^2 \frac{\beta}{2}+\csc ^2 \frac{\gamma}{2} \geqslant 12,
+$$
+并求等号成立的条件.
+%%<SOLUTION>%%
+由平均值不等式, 得 $\csc ^2 \frac{\alpha}{2}+\csc ^2 \frac{\beta}{2}+\csc ^2 \frac{\gamma}{2} \geqslant 3\left(\csc \frac{\alpha}{2} \csc \frac{\beta}{2} \csc \frac{\gamma}{2}\right)^{\frac{2}{3}}$, 当且仅当 $\alpha=\beta=\gamma$ 时等号成立.
+再由平均值不等式及凸函数性质, 得 $\left(\sin \frac{\alpha}{2} \sin \frac{\beta}{2} \sin \frac{\gamma}{2}\right)^{\frac{1}{3}} \leqslant \frac{\sin \frac{\alpha}{2}+\sin \frac{\beta}{2}+\sin \frac{\gamma}{2}}{3} \leqslant \sin \frac{\frac{\alpha}{2}+\frac{\beta}{2}+\frac{\gamma}{2}}{3}=\sin \frac{\pi}{6}=\frac{1}{2}$, 因此 $\csc ^2 \frac{\alpha}{2}+\csc ^2 \frac{\beta}{2}+\csc ^2 \frac{\gamma}{2} \geqslant 3\left(\sin \frac{\alpha}{2} \sin \frac{\beta}{2} \sin \frac{\gamma}{2}\right)^{-\frac{2}{3}} \geqslant 3\left(\frac{1}{2}\right)^{-2}=12$. 当且仅当 $\alpha=\beta=\gamma$ 时, 等号成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题30. 设 $x, y, z \geqslant 0$, 且满足 $y z+z x+x y=1$, 求证:
+$$
+x\left(1-y^2\right)\left(1-z^2\right)+y\left(1-z^2\right)\left(1-x^2\right)+z\left(1-x^2\right)\left(1-y^2\right) \leqslant \frac{4}{9} \sqrt{3} .
+$$
+%%<SOLUTION>%%
+令 $x=\tan \frac{A}{2}, y=\tan \frac{B}{2}, z=\tan \frac{C}{2}$. 这里 $A, B, C \in[0, \pi)$. 由于 $\tan \left(\frac{A}{2}+\frac{B}{2}+\frac{C}{2}\right)=\frac{\tan \frac{A}{2}+\tan \frac{B}{2}+\tan \frac{C}{2}-\tan \frac{A}{2} \tan \frac{B}{2} \tan \frac{C}{2}}{1-\tan \frac{A}{2} \tan \frac{B}{2}-\tan \frac{A}{2} \tan \frac{C}{2}-\tan \frac{B}{2} \tan \frac{C}{2}}$, 所以 $\cot \left(\frac{A}{2}+\frac{B}{2}+\frac{C}{2}\right)=\frac{1-(x y+y z+z x)}{x+y+z-x y z}$. 由已知条件知 $y 、 z$ 不全为 0 且 $0 \leqslant y z \leqslant 1$, 从而 $x+y+z>x \geqslant x y z \geqslant 0$, 于是 $\cot \left(\frac{A}{2}+\frac{B}{2}+\frac{C}{2}\right)=0$. 所以 $0<\frac{1}{2}(A+B+C)<\frac{3 \pi}{2}$, 得 $\frac{1}{2}(A+B+C)=\frac{\pi}{2}$, 即 $A+B+C=\pi$. 又 $x\left(1-y^2\right)\left(1-z^2\right)+y\left(1-z^2\right)\left(1-x^2\right)+z\left(1-x^2\right)\left(1-y^2\right)= =4 x y z$, 由平均值不等式, 得 $(x y z)^2 \leqslant\left(\frac{x y+y z+z x}{3}\right)^3=\frac{1}{27}$, 从而 $x y z \leqslant \frac{1}{9} \sqrt{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题31. 对 $a_i \in \mathbf{R}^{+}(i=1,2, \cdots, n)$, 求证: $\sum_{k=1}^n \sqrt[k]{a_1 \cdots a_k} \leqslant \mathrm{e} \sum_{k=1}^n a_k$, 其中 $\mathrm{e}= \lim _{n \rightarrow \infty}\left(1+\frac{1}{n}\right)^n$.
+%%<SOLUTION>%%
+已知 $\left(1+\frac{1}{k}\right)^k$ 单调增加且收玫于 e. 对任意 $i \in \mathbf{N}$, 有 $i\left(1+\frac{1}{i}\right)^i \leqslant i \mathrm{e}$, 记 $b_i=i\left(1+\frac{1}{i}\right)^i$. 则 $\frac{b_i}{i} \leqslant \mathrm{e}$. 由 $b_1 b_2 \cdots b_k=(1+k)^k$, 得 $\sqrt[k]{a_1 \cdots a_k}= \frac{1}{1+k} \sqrt[k]{\left(a_1 b_1\right) \cdots\left(a_k b_k\right)}$. 由平均值不等式, 得 $\sqrt[k]{a_1 \cdots a_k} \leqslant \frac{1}{k(k+1)} \sum_{i=1}^k a_i b_i= \left(\frac{1}{k}-\frac{1}{k+1}\right) \sum_{i=1}^k a_i b_i, \quad \sum_{k=1}^n \sqrt[k]{a_1 \cdots a_k} \leqslant \sum_{k=1}^n\left(\frac{1}{k}-\frac{1}{k+1}\right) \sum_{i=1}^k a_i b_i=$
+$$
+\sum_{i=1}^n a_i b_i \sum_{k=1}^i\left(\frac{1}{k}-\frac{1}{k+1}\right)=\sum_{i=1}^n\left(\frac{1}{i}-\frac{1}{n+1}\right) b_i a_i<\sum_{i=1}^n \frac{b_i}{i} a_i<\mathrm{e} \sum_{i=1}^n a_i .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题32. 设 $x_i \in \mathbf{R}(i=1,2, \cdots, n, n \geqslant 3)$. 令 $p=\sum_{i=1}^n x_i, q=\sum_{1 \leqslant i<j \leqslant n} x_i x_j$, 求证:
+(1) $\frac{n-1}{n} p^2-2 q \geqslant 0$;
+(2) $\left|x_i-\frac{p}{n}\right| \leqslant \frac{n-1}{n} \sqrt{p^2-\frac{2 n}{n-1} q}, i=1,2, \cdots, n$.
+%%<SOLUTION>%%
+(1) 由于 $(n-1) p^2-2 n q=(n-1)\left(\sum_{i=1}^n x_i\right)^2-2 n \sum_{1 \leqslant i<j \leqslant n} x_i x_j= (n-1) \sum_{i=1}^n x_i^2-2 \sum_{1 \leqslant i<j \leqslant n} x_i x_j=\sum_{1 \leqslant i<j \leqslant n}\left(x_i-x_j\right)^2$, 所以 $\frac{n-1}{n} p^2-2 q \geqslant 0$;
+(2) $\left|x_i-\frac{p}{n}\right|=\frac{n-1}{n}\left|\frac{1}{n-1} \sum_{k=1}^n\left(x_i-x_k\right)\right|$. 由幂平均不等式, 得
+$$
+\left|x_i-\frac{p}{n}\right| \leqslant \frac{n-1}{n} \sqrt{\frac{1}{n-1} \sum_{k=1}^n\left(x_i-x_k\right)^2} \leqslant \frac{n-1}{n} \sqrt{\frac{1}{n-1} \sum_{1 \leqslant i<j \leqslant n}\left(x_i-x_k\right)^2} \text {. }
+$$
+由 (1) 的结果, 得 $\left|x_i-\frac{p}{n}\right| \leqslant \frac{n-1}{n} \sqrt{p^2-\frac{2 n}{n-1} q}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题33. 求最大的实数 $\lambda$, 使得当实系数多项式 $f(x)=x^3+a x^2+c$ 的所有根都是非负实数时, 只要 $x \geqslant 0$, 就有 $f(x) \geqslant \lambda(x-a)^3$, 并求等号成立的条件.
+%%<SOLUTION>%%
+设 $f(x)$ 的三个根为 $\alpha, \beta, \gamma$, 并设 $0 \leqslant \alpha \leqslant \beta \leqslant \gamma$, 则 $x-a=x+\alpha+ \beta+\gamma, f(x)=(x-\alpha)(x-\beta)(x-\gamma)$. (1) 当 $0 \leqslant x \leqslant \alpha$ 时, 则有 $-f(x)= (\alpha-x)(\beta-x)(\gamma-x) \leqslant\left(\frac{\alpha+\beta+\gamma-3 x}{3}\right)^3 \leqslant \frac{1}{27}(x+\alpha+\beta+\gamma)^3=\frac{1}{27}(x- a)^3$, 所以 $f(x) \geqslant-\frac{1}{27}(x-a)^3$. 当 $x=0, \alpha=\beta=\gamma$ 时, 等号成立; (2) 当 $\alpha \leqslant x \leqslant \beta$ 或 $x>\gamma$ 时, $f(x)=(x-\alpha)(x-\beta)(x-\gamma)>0>-\frac{1}{27}(x-a)^3$.
+(3) 当 $\beta \leqslant x \leqslant \gamma$ 时, $-f(x)=(x-\alpha)(x-\beta)(\gamma-x) \leqslant\left(\frac{x+\gamma-\alpha-\beta}{3}\right)^3 \leqslant \frac{1}{27}(x+\alpha+\beta+\gamma)^3=\frac{1}{27}(x-a)^3$. 所以 $f(x) \geqslant-\frac{1}{27}(x-a)^3$. 当 $\alpha=\beta=0$, $\gamma=2 x$ 时, 等号成立.
+综上所述, $\lambda$ 的最大值 $-\frac{1}{27}$.
+%%PROBLEM_END%%
+
+

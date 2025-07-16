@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题41. 数列 $\\left\\{y_n\\right\\}$ 定义如下 $y_2=y_3=1$, 且\n$$\n(n+1)(n-2) y_{n+1}=n\\left(n^2-n-1\\right) y_n-(n-1)^3 y_{n-1}, n=3,4, \\cdots\n$$\n证明: $y_n$ 为整数的充要条件是 $n$ 为素数.",
+    "solution": "令 $x_n=n y_n, n=2,3, \\cdots$, 则 $x_2=2, x_3=3$, 且当 $n \\geqslant 3$ 时, 有 $(n-2) x_{n+1}=\\left(n^2-n-1\\right) x_n-(n-1)^2 x_{n-1}$, 即\n$$\n\\frac{x_{n+1}-x_n}{n-1}=(n-1) \\cdot \\frac{x_n-x_{n-1}}{n-2} . \\label{(1)}\n$$\n利用(1)递推可得\n$$\n\\begin{aligned}\n\\frac{x_{n+1}-x_n}{n-1} & =(n-1) \\cdot \\frac{x_n-x_{n-1}}{n-2}=(n-1)(n-2) \\cdot \\frac{x_{n-1}-x_{n-2}}{n-3} \\\\\n& =\\cdots=(n-1) \\cdots 2 \\cdot \\frac{x_3-x_2}{1}=(n-1) !\n\\end{aligned}\n$$\n得 $x_{n+1}-x_n=n !-(n-1)$ !, 裂项求和, 知 $x_n=x_2+\\sum_{k=2}^{n-1}\\left(x_{k+1}-x_k\\right)=x_2+ \\sum_{k=2}^{n-1}(k !--(k-1) !)=x_2+(n-1) !-1=(n-1) !+1$.\n结合 Wilson 定理: 当且仅当 $n$ 为素数时, $n \\mid(n-1) !+1$, 可知 $y_n \\in \\mathbf{Z}$ 的充要条件是 $n$ 为素数.",
+    "remark": "",
+    "figures": []
+}

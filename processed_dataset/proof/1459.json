@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 已知 $a, b, c \\in \\mathbf{R}^{+}$, 求证:\n(1) $\\sqrt[3]{\\frac{a}{b+c}}+\\sqrt[3]{\\frac{b}{c+a}}+\\sqrt[3]{\\frac{c}{a+b}}>\\frac{3}{2}$;\n(2) $\\sqrt[3]{\\frac{a^2}{(b+c)^2}}+\\sqrt[3]{\\frac{b^2}{(c+a)^2}}+\\sqrt[3]{\\frac{c^2}{(a+b)^2}} \\geqslant \\frac{3}{\\sqrt[3]{4}}$.",
+    "solution": "(1) $\\sqrt[3]{\\frac{a}{b+c}}=\\frac{a}{\\sqrt[3]{a \\cdot a \\cdot(b+c)}} \\geqslant \\frac{3 a}{2 a+b+c}>\\frac{3 a}{2 a+2 b+2 c}$,\n同理, 有 $\\sqrt[3]{\\frac{b}{a+c}}>\\frac{3 b}{2 a+2 b+2 c} ; \\sqrt[3]{\\frac{c}{a+b}}>\\frac{3 c}{2 a+2 b+2 c}$.\n三式相加即得原不等式成立.\n(2) $\\sqrt[3]{\\frac{a^2}{(b+c)^2}}=-\\frac{\\sqrt[3]{2} \\cdot a}{\\sqrt[3]{2 a(b+c)(b+c)}} \\geqslant \\frac{3 \\sqrt[3]{2} a}{2 a+2 b+2 c}$. 同理, 有\n$$\n\\sqrt[3]{\\frac{b^2}{(a+c)^2}} \\geqslant \\frac{3 \\sqrt[3]{2} b}{2 a+2 b+2 c} ; \\sqrt[3]{\\frac{c^2}{(a+b)^2}} \\geqslant \\frac{3 \\sqrt[3]{2} c}{2 a+2 b+2 c} .\n$$\n三式相加, 原不等式成立 (注意等号是可以取到的).",
+    "remark": "",
+    "figures": []
+}

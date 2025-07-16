@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设 $A B C D$ 是一个圆内接四边形且它的边长分别为 $a 、 b 、 c$ 、 d. $\\rho_a$ 是该四边形外与边 $A B$ 及边 $C B 、 D A$ 的延长线相切的圆的半径, $\\rho_b$ 、 $\\rho_c 、 \\rho_d$ 与 $\\rho_a$ 的意义类似.\n求证:\n$$\n\\frac{1}{\\rho_a}+\\frac{1}{\\rho_b}+\\frac{1}{\\rho_c}+\\frac{1}{\\rho_d} \\geqslant \\frac{8}{\\sqrt[4]{a b c d}},\n$$\n当且仅当 $A B C D$ 是正方形时等号成立.",
+    "solution": "设 $A B=a, B C=b, C D=c, D A=d$. 易得 $a=\\rho_a\\left(\\tan \\frac{A}{2}+\\tan \\frac{B}{2}\\right)$, 即 $\\frac{a}{\\rho_a} \\geqslant 2 \\sqrt{\\tan \\frac{A}{2} \\tan \\frac{B}{2}}$. 同理 $\\frac{b}{\\rho_b} \\geqslant 2 \\sqrt{\\tan \\frac{B}{2} \\tan \\frac{C}{2}}, \\frac{c}{\\rho_c} \\geqslant 2 \\sqrt{\\tan \\frac{C}{2} \\tan \\frac{D}{2}}$, $\\frac{d}{\\rho_d} \\geqslant 2 \\sqrt{\\tan \\frac{D}{2} \\tan \\frac{A}{2}}$. 因为 $A+C=B+D=\\pi$, 所以 $\\tan \\frac{A}{2} \\tan \\frac{C}{2}=\\tan \\frac{B}{2} \\tan \\frac{D}{2}=1$, 因此 $\\frac{1}{\\rho_a}+\\frac{1}{\\rho_c} \\geqslant \\frac{2}{a} \\sqrt{\\tan \\frac{A}{2} \\tan \\frac{\\bar{B}}{2}}+\\frac{2}{c} \\sqrt{\\tan \\frac{C}{2} \\tan \\frac{D}{2}} \\geqslant 2 \\sqrt{\\frac{4}{a c} \\sqrt{\\tan \\frac{A}{2} \\tan \\frac{B}{2} \\tan \\frac{C}{2} \\tan \\frac{D}{2}}}=\\frac{4}{\\sqrt{a c}}$, 同理 $\\frac{1}{\\rho_b}+\\frac{1}{\\rho_d} \\geqslant \\frac{4}{\\sqrt{b d}}$, 所以 $\\frac{1}{\\rho_a}+ \\frac{1}{\\rho_b}+\\frac{1}{\\rho_c}+\\frac{1}{\\rho_d} \\geqslant \\frac{4}{\\sqrt{a c}}+\\frac{4}{\\sqrt{b d}} \\geqslant \\frac{8}{\\sqrt[4]{a b c d}}$. 等号成立当且仅当 $A=B=C= D$ 并且 $a=b=c=d$.",
+    "remark": "",
+    "figures": []
+}

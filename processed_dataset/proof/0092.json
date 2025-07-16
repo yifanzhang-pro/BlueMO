@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题4 设 $S=\\left\\{\\frac{m n}{m^2+n^2} \\mid m, n \\in \\mathbf{N}^*\\right\\}$. 求证: 如果 $x, y \\in S$, 且 $x<y$, 那么一定存在 $z \\in S$, 使得 $x<z<y$.",
+    "solution": "设 $x, y \\in S, x=\\frac{m n}{m^2+n^2}, y=\\frac{a b}{a^2+b^2}, x<y$. 不妨设 $m \\leqslant n, a \\leqslant b$. 考虑函数 $f(x)=\\frac{x}{1+x^2}$, 易证 $f(x)$ 在 $[0,1]$ 上严格递增.\n所以对所有 $c, d \\in[0,1]$, 有 $f(c)<f(d) \\Leftrightarrow c<d$. 因为 $f\\left(\\frac{m}{n}\\right)=\\frac{m n}{m^2+n^2}<\\frac{a b}{a^2+b^2}=f\\left(\\frac{a}{b}\\right)$, 所以 $\\frac{m}{n}<\\frac{a}{b}$. 因此, 可选择有理数 $\\frac{p}{q}$ (其中 $p, q \\in \\mathbf{N}^*$ ), 使得 $\\frac{m}{n}<\\frac{p}{q}<\\frac{a}{b}$(例如取 $\\left.\\frac{p}{q}=-\\frac{1}{2} \\cdot\\left(\\frac{m}{n}+\\frac{a}{b}\\right)\\right)$, 那么, 就有 $f\\left(\\frac{m}{n}\\right)<f\\left(\\frac{p}{q}\\right)<f\\left(\\frac{a}{b}\\right)$. 令 $z=f \\left(\\frac{p}{q}\\right)=\\frac{p q}{p^2+q^2}$ 即可.",
+    "remark": "",
+    "figures": []
+}

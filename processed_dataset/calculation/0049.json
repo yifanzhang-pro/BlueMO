@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题2 已知全集 $I=\\mathbf{Z}, M=\\{x \\mid x=2 n, n \\in \\mathbf{Z}\\}, S=\\{x \\mid x=3 n, n \\in \\mathbf{Z}\\}$, 则 $M \\cap \\complement_{\\mathrm{z}} S=$",
+    "solution": "$\\{x \\mid x=6 n \\pm 2, n \\in \\mathbf{Z}\\} . M=\\{x \\mid x=6 n, 6 n+2,6 n+4, n \\in \\mathbf{Z}\\}$, $S=\\{x \\mid x=6 n, 6 n+3, n \\in \\mathbf{Z}\\}$, 于是 $M \\cap \\complement_{\\mathbf{Z}} S=\\{x \\mid x=6 n \\pm 2, n \\in \\mathbf{Z}\\}$.",
+    "remark": "",
+    "figures": []
+}

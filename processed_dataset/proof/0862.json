@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例2 证明: 任何定义域关于原点对称的函数都可以表示为一个奇函数和一个偶函数的和.",
+    "solution": "证.\n设定义域关于原点对称的函数为 $f(x)$, 则 $f(x)$ 与 $f(-x)(x \\in D)$ 同时有意义.\n因为\n$$\nf(x)=\\frac{f(x)+f(-x)}{2}+\\frac{f(x)-f(-x)}{2} .\n$$\n所以, 令 $f_1(x)=\\frac{f(x)+f(-x)}{2}, f_2(x)=\\frac{f(x)-f(-x)}{2}$, 下面我们来验证 $f_1(x)$ 是偶函数, $f_2(x)$ 是奇函数.\n$$\nf_1(-x)=\\frac{f(-x)+f(x)}{2}=f_1(x),\n$$\n$$\nf_2(-x)=\\frac{f(-x)-f(x)}{2}=-\\frac{f(x)-f(-x)}{2}=-f_2(x) .\n$$\n故 $f_1(x)$ 为偶函数, $f_2(x)$ 为奇函数, 从而命题得证.\n说明证明中的 $f_1(x)$ 和 $f_2(x)$ 是如何想出来的呢? 其实, $f_1(x)$ 和 $f_2(x)$ 是可以 “解” 出来的.\n设 $f(x)=f_1(x)+f_2(x)$, 其中 $f_1(x)$ 是偶函数, $f_2(x)$ 是奇函数.\n则解方程组, 得\n$$\n\\begin{gathered}\nf(x)=f_1(x)+f_2(x), \\\\\nf(-x)=f_1(x)-f_2(x), \\\\\nf_1(x)=\\frac{f(x)+f(-x)}{2}, \\\\\nf_2(x)=\\frac{f(x)-f(-x)}{2} .\n\\end{gathered}\n$$",
+    "remark": "",
+    "figures": []
+}

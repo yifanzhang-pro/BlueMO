@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例8. 20 个方块分别标有 $1,2,3, \\cdots, 20$, 排成一个圈, 每四个连续的方块可以颠倒次序 (如 $20,1,2,3$ 可以变为 $3,2,1,20$ ). 如果原来的方块依照数的大小顺序排列, 问: 能否通过多次颠倒次序, 将它的次序变为:\n(1) $5,1,2,3,4,6,7, \\cdots, 20$;\n(2) $6,1,2,3,4,5,7, \\cdots, 20$.",
+    "solution": "解: (1) 的答案是肯定的.\n下面是一个具体的操作方式:\n$$\n1 \\underline{2345} \\rightarrow \\underline{15432} \\rightarrow 3 \\underline{4512} \\rightarrow \\underline{32154} \\rightarrow 51234\n$$\n我们就是把 $1,2,3,4,5$ 这 5 个数字进行 4 次颠倒次序, 其余数字的位置不动, 就变成了 $5,1,2,3,4,6,7, \\cdots, 20$.\n题 (2) 的答案也是肯定的.\n我们也是利用 (1) 所得的结论: 每一方块可经过 4 次颠倒次序前移四位,而其他方块顺序不变.\n如图(<FilePath:./images/volume14/figures/fig-c1i3.png>) 所示, 把数字 6 依次移到 1,2 之间, 17, 18 之间, 14,13 之间, 10 , 9 之间, 4, 5 之间, 20, 1 之间, 此时, 其他的数字的位置不动, 从而, 经过这些颠倒次序后, 就变成了 $6,1,2,3,4,5,7, \\cdots, 20$.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c1i3.png"
+    ]
+}

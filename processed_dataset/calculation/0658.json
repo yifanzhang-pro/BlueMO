@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例1 设 $f(x)=x^2-\\pi x, \\alpha=\\arcsin \\frac{1}{3}, \\beta=\\arctan \\frac{5}{4}, \\gamma=\\arccos \\left(-\\frac{1}{3}\\right)$, $\\varphi=\\operatorname{arccot}\\left(-\\frac{5}{4}\\right)$, 则 $(\\quad)$.\n(A) $f(\\alpha)>f(\\beta)>f(\\varphi)>f(\\gamma)$\n(B) $f(\\alpha)>f(\\varphi)>f(\\beta)>f(\\gamma)$\n(C) $f(\\varphi)>f(\\alpha)>f(\\beta)>f(\\gamma)$\n(D) $f(\\varphi)>f(\\alpha)>f(\\gamma)>f(\\beta)$",
+    "solution": "解:选 B. 由题意, $f(x)$ 的图象关于直线 $x=\\frac{\\pi}{2}$ 对称, 且在 $\\left(-\\infty, \\frac{\\pi}{2}\\right)$ 内单调递减, 在 $\\left(\\frac{\\pi}{2},+\\infty\\right)$ 内单调递增, 所以, 当 $\\left|x_1-\\frac{\\pi}{2}\\right|>\\left|x_2-\\frac{\\pi}{2}\\right|$ 时, 有$f\\left(x_1\\right)>f\\left(x_2\\right)$.\n又知 $0<\\alpha<\\frac{\\pi}{6}, \\frac{\\pi}{4}<\\beta<\\frac{\\pi}{3}, \\frac{\\pi}{2}<\\gamma<\\frac{2 \\pi}{3}, \\frac{3 \\pi}{4}<\\varphi<\\frac{5 \\pi}{6}$, 所以 $0< \\left|\\gamma-\\frac{\\pi}{2}\\right|<\\frac{\\pi}{6}<\\left|\\beta-\\frac{\\pi}{2}\\right|<\\frac{\\pi}{4}<\\left|\\varphi-\\frac{\\pi}{2}\\right|<\\frac{\\pi}{3}<\\left|\\alpha-\\frac{\\pi}{2}\\right|<\\frac{\\pi}{2}$, 故有 $f(\\alpha)>f(\\varphi)>f(\\beta)>f(\\gamma)$.\n评注正确估算角的范围是求解本题的关键.",
+    "remark": "",
+    "figures": []
+}

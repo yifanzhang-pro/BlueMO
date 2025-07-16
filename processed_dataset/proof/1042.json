@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题25. 设 $\\triangle A B C$ 的外接圆半径为 $R$, 面积为 $S$, 角 $A 、 B 、 C$ 所对的边为 $a 、 b 、 c$.\n求证:\n$$\n\\frac{36 S}{(a+b+c)^2} \\leqslant \\tan \\frac{A}{2}+\\tan \\frac{B}{2}+\\tan \\frac{C}{2} \\leqslant \\frac{9 R^2}{4 S} .\n$$",
+    "solution": "(1) 因为 $\\left(\\tan \\frac{A}{2}+\\tan \\frac{B}{2}+\\tan \\frac{C}{2}\\right)\\left(\\cot \\frac{A}{2}+\\cot \\frac{B}{2}+\\cot \\frac{C}{2}\\right) \\geqslant 9$, 又 $\\cot \\frac{A}{2}+\\cot \\frac{B}{2}+\\cot \\frac{C}{2}=\\frac{(a+b+c)^2}{4 S}$, 所以 $\\tan \\frac{A}{2}+\\tan \\frac{B}{2}+\\tan \\frac{C}{2} \\geqslant \\frac{9}{\\frac{(a+b+c)^2}{4 S}}=\\frac{36 S}{(a+b+c)^2}$. (2) 设 $\\triangle A B C$ 内切圆半径为 $r$, 易知 $\\tan \\frac{A}{2}= \\frac{2 r}{b+c-a}$, 故 $\\tan \\frac{A}{2}+\\tan \\frac{B}{2}+\\tan \\frac{C}{2}=\\frac{2 r}{b+c-a}+\\frac{2 r}{c+a-b}+\\frac{2 r}{a+b-c}= \\frac{4 S}{(a+b+c)(b+c-a)}+\\frac{4 S}{(a+b+c)(c+a-b)}+\\frac{4 S}{(a+b+c)(a+b-c)} =\\frac{S}{p(p-a)}+\\frac{S}{p(p-b)}+\\frac{S}{p(p-c)}\\left(p=\\frac{a+b+c}{2}\\right)$, 又 $S= \\sqrt{p(p-a)(p-b)(p-c)}$, 所以 $4 S\\left(\\tan \\frac{A}{2}+\\tan \\frac{B}{2}+\\tan \\frac{C}{2}\\right)=4(p-b) (p-c)+4(p-c)(p-a)+4(p-a)(p-b) \\leqslant(p-b+p-c)^2+(p-c+ p-a)^2+(p-a+p-b)^2=a^2+b^2+c^2=4 R^2\\left(\\sin ^2 A+\\sin ^2 B+\\sin ^2 C\\right)$, 因为 $\\sin ^2 A+\\sin ^2 B+\\sin ^2 C \\leqslant \\frac{9}{4}$, 所以 $4 S\\left(\\tan \\frac{A}{2}+\\tan \\frac{B}{2}+\\tan \\frac{C}{2}\\right) \\leqslant 9 R^2$, 即 $\\tan \\frac{A}{2}+\\tan \\frac{B}{2}+\\tan \\frac{C}{2} \\leqslant \\frac{9 R^2}{4 S}$.",
+    "remark": "",
+    "figures": []
+}

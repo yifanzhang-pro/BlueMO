@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 解方程组 $\\left(1-x_k^2\\right) x_{k+1}=2 x_k$, 且 $x_{n+1}=x_1$, 其中 $k=1,2,3, \\cdots, n$.",
+    "solution": "令 $x_1=\\tan \\theta$, 其中 $\\theta \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$, 则 $x_2=\\frac{2 x_1}{1-x_1^2}=\\tan 2 \\theta$, 所以 $x_k=\\tan 2^{k-1} \\theta(k=1,2, \\cdots, n)$, 又 $x_{n+1}==x_1$, 得 $\\tan 2^n \\theta=\\tan \\theta$, 故 $2^n \\theta= \\theta+m \\pi\\left[m \\in \\mathbf{Z}\\right.$, 且 $\\left.\\theta \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)\\right]$, 即 $\\theta=\\frac{m \\pi}{2^n-1}$. 从而原方程组的解为 $x_k=\\tan \\frac{2^{k-1} m \\pi}{2^n-1}(m \\in \\mathbf{Z}, k=1,2,3, \\cdots, n+1)$.",
+    "remark": "",
+    "figures": []
+}

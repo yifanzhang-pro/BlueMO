@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题3 已知 $M=\\left\\{(x, y) \\mid y=\\sqrt{16-x^2}, y \\neq 0\\right\\}, N=\\{(x, y) \\mid y=x-a\\}$, 如果 $M \\cap N \\neq \\varnothing$, 那么 $a$ 的范围是",
+    "solution": "$[-4 \\sqrt{2}, 4) . M \\cap N \\neq \\varnothing \\Leftrightarrow y=\\sqrt{16-x^2}=x-a \\neq 0$ 有解.\n从而有 $-4<x<4, a<4$, 且 $2 x^2-2 a x+a^2-16=0$ 有实数解.",
+    "remark": "",
+    "figures": []
+}

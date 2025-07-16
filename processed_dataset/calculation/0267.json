@@ -1,0 +1,13 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 在一次国际数学家大会上, 7 位来自不同国家的数学家会话能力如下:\n$A$ :英语.\n$B$ :英语和汉语.\n$C$ :英语、意大利语和西班牙语.\n$D$ : 汉语和日语.\n$E$ : 德语和意大利语.\n$F$ : 法语、日语和西班牙语.\n$G$ : 法语和德语.\n问怎样安排这 7 名数学家围着一个圆桌坐下, 使得每个人都能和他身边的两个人交谈?",
+    "solution": "解:设 7 个顶点 $A 、 B 、 C 、 D 、 E 、 F 、 G$ 对应这 7 名数学家, 其中会用同一种语言的人对应的顶点之间连一条边,这样就得到了一个图 $G_1$, 如图(<FilePath:./images/volume12/figures/fig-c6i2.png>) 所示.\n于是原来的排座问题就变成了如图(<FilePath:./images/volume12/figures/fig-c6i2.png>) 中找一条哈密顿圈的问题了.\n按圈上顶点的顺序来排座位,那么每个人和他相邻的两个人都能交谈.\n如图(<FilePath:./images/volume12/figures/fig-c6i2.png>) 中用粗线画出的一个圈, 就是我们所求的解.\n也就是说, 如果按照 $A 、 B 、 D 、 F 、 G 、 E 、 C$ 的顺序排座位, 每个人就都可以和他的两个邻座交谈,所采用的语言种类标明如图(<FilePath:./images/volume12/figures/fig-c6i3.png>) 中的对应边上.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c6i2.png",
+        "./images/volume12/figures/fig-c6i2.png",
+        "./images/volume12/figures/fig-c6i2.png",
+        "./images/volume12/figures/fig-c6i3.png"
+    ]
+}

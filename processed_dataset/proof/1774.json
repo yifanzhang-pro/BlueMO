@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题7 $\\odot O_1 、 \\odot O_2$ 相交于 $A 、 B$ 两点, 过 $B$ 作直线分别交 $\\odot O_1 、 \\odot O_2$ 于点 $C$ 、 $E$, 过 $B$ 再作直线分别交 $\\odot O_1 、 \\odot O_2$ 于点 $D 、 F$. 点 $B$ 位于点 $C 、 E$ 和 $D$ 、 $F$ 之间, $M 、 N$ 分别为 $C E 、 D F$ 的中点.\n证明: $\\triangle A C D \\backsim \\triangle A E F \\backsim \\triangle A M N$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c1a7.png>), 连结 $A B$. 显然, 四边形 $A C D B$ 和四边形 $A B E F$ 都是圆内接四边形, 所以, $\\angle C A D=\\angle C B D=\\angle E B F=\\angle E A F$, $\\angle A D C=\\angle A B C=180^{\\circ}-\\angle E B A=\\angle A F E$. 因此, $\\triangle A C D \\backsim \\triangle A E F$. 同理, $\\triangle A C E$ c $\\triangle A D F$, 所以, $A C: A M=A D: A N \\cdots$ (1). 且 $\\angle C A M=\\angle D A N$. 从而, $\\angle C A D=\\angle M A N \\cdots$ (2).\n由 (1)、(2) 知 $\\triangle A C D \\backsim \\triangle A M N$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1a7.png"
+    ]
+}

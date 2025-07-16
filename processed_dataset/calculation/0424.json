@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise12.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 已知正整数 $r 、 n$ 满足.\n$1 \\leqslant r \\leqslant n$, 求 $\\{1,2, \\cdots, n\\}$ 的一切 $r$ 元子集中最小数的算术平均值 $f(r, n)$.",
+    "solution": "$\\{1,2, \\cdots, n\\}$ 共 $\\mathrm{C}_n^r$ 个 $r$ 元子集, 下求这 $\\mathrm{C}_n^r$ 个子集中最小数的总和.\n对于 $P=\\{1,2, \\cdots, n\\}$ 的 $r$ 元子集 $A$, 设其最小数为 $a$, 作 $n+1$ 元集 $Q= \\{0,1, \\cdots, n\\}$ 的 $r+1$ 元子集 $A \\cup\\{a-1\\}, A \\cup\\{a-2\\}, \\cdots, A \\cup\\{0\\}$ 与之对应, 这样的 $r+1$ 元子集的个数恰好等于 $A$ 的最小数 $a$. 又显然不同的 $A$ 对应 $Q$ 中不同的子集, 因此, 所有 $P$ 的 $r$ 元子集的最小数之和即为 $Q$ 的 $r+1$ 元子集的总个数 $\\mathrm{C}_{n+1}^{+1}$.\n所以, $f(r, n)=\\frac{\\mathrm{C}_{n+1}^{r+1}}{\\mathrm{C}_n^r}=\\frac{n+1}{r+1}$.",
+    "remark": "",
+    "figures": []
+}

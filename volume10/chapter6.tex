@@ -1,0 +1,411 @@
+
+%%TEXT_BEGIN%%
+同余, 是数论中的一个重要概念, 应用极为广泛.
+设 $n$ 是给定的正整数, 若整数 $a 、 b$ 满足 $n \mid(a-b)$, 则称 $a$ 和 $b$ 模 $n$ 同余, 记作
+$$
+a \equiv b(\bmod n) .
+$$
+若 $n \nmid(a-b)$, 则称 $a$ 和 $b$ 模 $n$ 不同余, 记作
+$$
+a \not \equiv b(\bmod n) .
+$$
+由带余除法易知, $a$ 和 $b$ 模 $n$ 同余的充分必要条件是 $a$ 与 $b$ 被 $n$ 除得的余数相同.
+对于固定的模 $n$, 模 $n$ 的同余式与通常的等式有许多类似的性质:
+(1)(反身性) $a \equiv a(\bmod n)$.
+(2)(对称性) 若 $a \equiv b(\bmod n)$, 则 $b \equiv a(\bmod n)$.
+(3)(传递性) 若 $a \equiv b(\bmod n), b \equiv c(\bmod n)$, 则 $a \equiv c(\bmod n)$.
+(4)(同余式相加) 若 $a \equiv b(\bmod n), c \equiv d(\bmod n)$, 则 $a \pm c \equiv b \pm d(\bmod n)$.
+(5)(同余式相乘) 若 $a \equiv b(\bmod n), c \equiv d(\bmod n)$, 则 $a c \equiv b d(\bmod n)$.
+不难看到, 反复用(4)或 (5), 可以对多于两个的(模相同的)同余式建立加、减和乘法的运算公式.
+特别地, 由 (5) 易推出: 若 $a \equiv b(\bmod n), k, c$ 为整数且 $k>0$, 则
+$$
+a^k c \equiv b^k c(\bmod n) .
+$$
+请注意, 同余式的消去律一般并不成立, 即从 $a c \equiv b c(\bmod n)$ 未必能推出 $a \equiv b(\bmod n)$. 然而,我们有下面的结果:
+(6) 若 $a c \equiv b c(\bmod n)$, 则 $a \equiv b\left(\bmod \frac{n}{(n, c)}\right)$. 由此推出, 若 $(c, n)=1$, 则有 $a \equiv b(\bmod n)$, 即在 $c$ 与 $n$ 互素时, 可以在原同余式两边约去 $c$ 而不改变模(这再一次表现了互素的重要性).
+现在提及几个涉及模的简单但有用的性质.
+(7) 若 $a \equiv b(\bmod n)$, 而 $d \mid n$, 则 $a \equiv b(\bmod d)$.
+(8) 若 $a \equiv b(\bmod n), d \neq 0$, 则 $d a \equiv d b(\bmod d n)$.
+(9) 若 $a \equiv b\left(\bmod n_i\right)(i=1,2, \cdots, k)$, 则 $a \equiv b\left(\bmod \left[n_1, n_2, \cdots, n_k\right]\right)$. 特别地, 若 $n_1, n_2, \cdots, n_k$ 两两互素, 则有 $a \equiv b\left(\bmod n_1 n_2 \cdots n_k\right)$.
+由上述的性质 (1)、(2)、(3) 可知, 整数集合可以按模 $n$ 来分类, 确切地说, 若 $a$ 和 $b$ 模 $n$ 同余, 则 $a$ 与 $b$ 属同一个类, 否则不属于同一个类, 每一个这样的类称为模 $n$ 的一个同余类.
+由带余除法,任一整数必恰与: $0,1, \cdots, n-1$ 中的一个模 $n$ 同余, 而 0 , $1, \cdots, n-1$ 这 $n$ 个数彼此模 $n$ 不同余, 因此模 $n$ 共有 $n$ 个不同的同余类, 即为
+$$
+M_i=\{x \mid x \in \mathbf{Z}, x \equiv i(\bmod n)\}, i=0,1, \cdots, n-1 .
+$$
+例如, 模 2 的同余类共有两个, 即通常说的偶数类与奇数类.
+两个类中的数分别具有形式 $2 k$ 与 $2 k+1$ ( $k$ 为任意整数).
+在 $n$ 个剩余类中各任取一个数作为代表, 这样的 $n$ 个数称为模 $n$ 的一个完全剩余系,简称模 $n$ 的完系.
+换句话说, $n$ 个数 $c_1, c_2, \cdots, c_n$ 称为模 $n$ 的一个完系, 是指它们彼此模 $n$ 不同余.
+例如, $0,1, \cdots, n-1$ 是模 $n$ 的一个完系, 这称作模 $n$ 的最小非负完系.
+易于看到,若 $i$ 和 $n$ 互素, 则同余类 $M_i$ 中的所有数都和 $n$ 互素,这样的同余类称为模 $n$ 的缩同余类.
+我们将模 $n$ 的缩同余类的个数记作 $\varphi(n)$, 称为欧拉函数, 这是数论中的一个重要函数.
+显然, $\varphi(1)=1$, 而对 $n>1, \varphi(n)$ 为 1 , $2, \cdots, n-1$ 中与 $n$ 互素的数的个数.
+例如, 若 $p$ 是素数, 则有 $\varphi(p)=p-1$.
+在模 $n$ 的 $\varphi(n)$ 个缩同余类中各任取一个数作为代表, 这样的 $\varphi(n)$ 个数称为模 $n$ 的一个缩剩余系, 简称模 $n$ 的缩系, 于是 $\varphi(n)$ 个数 $r_1, r_2, \cdots, r_{\varphi(n)}$ 称为模 $n$ 的一个缩系, 是指它们模 $n$ 互不同余, 且均与 $n$ 互素.
+不超过 $n$ 且与 $n$ 互素的 $\varphi(n)$ 个正整数称为模 $n$ 的最小正缩系.
+下面的结果, 由模 $n$ 的一个完 (缩) 系, 产生模 $n$ 的另一个完(缩)系, 用处很多.
+(10) 设 $(a, n)=1, b$ 是任意整数.
+若 $c_1, c_2, \cdots, c_n$ 是模 $n$ 的一个完系, 则 $a c_1+b, a c_2+b, \cdots, a c_n+b$ 也是模 $n$ 的一个完系;
+若 $\left.r_1, r_2, \cdots, r_{\varphi(n)}\right)$ 是模 $n$ 的一个缩系, 则 $a r_1, a r_2, \cdots, a r_{\varphi(n)}$ 也是模 $n$ 的一个缩系.
+由 (10)中的第一个断言可推出:
+(11) 设 $(a, n)=1, b$ 是任意整数,则有整数 $x$, 使得 $a x \equiv b(\bmod n)$, 并易知所有这样的 $x$ 形成模 $n$ 的一个同余类.
+特别地, 有 $x$ 使得 $a x \equiv 1(\bmod n)$. 这样的 $x$ 称为 $a$ 关于模 $n$ 的逆, 记作 $a^*$ 或 $a^{-1}(\bmod n)$, 它们形成模 $n$ 的一个同余类, 从而有一个 $a^{-1}$ 满足 $1 \leqslant a^{-1}<n$.
+我们知道,一个整数模 $n$ 的余数有 $n$ 种可能的值, 但对于整数的平方、立方等, 模 $n$ 的余数的个数则可能大大减少.
+这一事实, 是用同余解决许多问题的一个基本点.
+面的一些简单结论, 应用相当广泛、灵活.
+(12) 完全平方数模 4 同余于 0 或 1 ; 模 8 同余于 $0 、 1 、 4$; 模 3 同余于 0 或 1 ; 模 5 同余于 $0, \pm 1$.
+完全立方数模 9 同余于 $0 、 \pm 1$.
+整数的四次幂模 16 同余于 0 或 1 .
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $a 、 b 、 c 、 d$ 为正整数,证明: $a^{4 b+d}-a^{4 c+d}$ 被 240 整除.
+%%<SOLUTION>%%
+证明:由于 $240=2^4 \times 3 \times 5$, 我们将分别证明 $a^{4 b+d}-a^{4 c+d}$ 被 3、5、16 整除,由此便证得了结论 (参见第 3 单元例 5 的注).
+首先证明 $3 \mid\left(a^{4 b+d}-a^{4 c+d}\right)$. 由(12)中的结果 $a^2 \equiv 0,1(\bmod 3)$, 可知 $a^{4 b} \equiv a^{4 c} \equiv 0,1(\bmod 3)$. 从而
+$$
+a^{4 b+d}-a^{4 c+d}=a^d\left(a^{4 b}-a^{4 c}\right) \equiv 0(\bmod 3) .
+$$
+类似地, 由 $a^2 \equiv 0, \pm 1(\bmod 5)$, 可知 $a^4 \equiv 0,1(\bmod 5)$, 从而 $a^{4 b} \equiv a^{4 c} \equiv 0,1(\bmod 5)$. 于是 $a^{4 b+d}-a^{4 c+d} \equiv 0(\bmod 5)$.
+最后, 由 $a^4 \equiv 0,1(\bmod 16)$, 可知 $a^{4 b} \equiv a^{4 c} \equiv 0,1(\bmod 16)$, 故 $a^{4 b+d}- a^{4 c+d} \equiv 0(\bmod 16)$. 这就证明了我们的结论.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设整数 $a 、 b 、 c$ 满足 $a+b+c=0$, 记 $d=a^{1999}+b^{1999}+c^{1999}$. 证明: $|d|$ 不是素数.
+%%<SOLUTION>%%
+证明:本题有好几种解法,这里我们采用同余来证明: $|d|$ 有一个非平凡的固定约数.
+首先, 对任意整数 $u$, 数 $u^{1999}$ 与 $u$ 的奇偶性相同, 即 $u^{1999} \equiv u(\bmod 2)$, 故 $d \equiv a+b+c \equiv 0(\bmod 2)$, 即 $2 \mid d$.
+此外, 对任意整数 $u$, 易于验证(区分 $3 \mid u$ 及 $3 \nmid u$ )
+$$
+u^3 \equiv u(\bmod 3) \text {. } \label{eq1}
+$$
+由此推出
+$$
+\begin{aligned}
+u^{1999}=u \cdot u^{1998} & \equiv u \cdot u^{666} \equiv u \cdot u^{222} \equiv u^{75} \\
+& \equiv u^{25} \equiv u^9 \equiv u^3 \equiv u(\bmod 3) .
+\end{aligned}
+$$
+因此 $d \equiv a+b+c \equiv 0(\bmod 3)$. 故 $6 \mid d$, 从而 $d$ 不是素数.
+%%<REMARK>%%
+注:解答中的同余式(1)是著名的费马小定理的特殊情形, 请参见下一单元.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设整数 $x 、 y 、 z$ 满足
+$$
+(x-y)(y-z)(z-x)=x+y+z, \label{eq1}
+$$
+%%<SOLUTION>%%
+证明: $x+y+z$ 被 27 整除.
+证明,我们将由 式\ref{eq1} 推出, $x 、 y 、 z$ 必须两两模 3 同余, 从而 $27 \mid(x-y) (y-z)(z-x)$, 故由式\ref{eq1} 知 $27 \mid(x+y+z)$.
+反证法, 首先设 $x 、 y 、 z$ 中恰有两个数模 3 同余, 无妨设 $x \equiv y(\bmod 3)$, 但 $x \neq z(\bmod 3)$. 此时 $3 \mid(x-y)$, 而 $3 \nmid(x+y+z)$, 于是 式\ref{eq1} 的左边 $\equiv 0(\bmod 3)$, 但右边 $\neq \equiv 0(\bmod 3)$, 矛盾.
+故这种情形不会出现.
+其次设 $x 、 y 、 z$ 模 3 的余数互不相同, 此时易知 $3 \mid(x+y+z)$, 但 $3 \nmid(x-y)(y-z)(z-x)$, 从而 式\ref{eq1}  两边模 3 的余数不同, 矛盾.
+即这种情形也不能出现.
+因此, 我们前述的断言正确, 即证明了本题的结论.
+%%<REMARK>%%
+注:解法体现了应用同余处理数论问题的一个基本原则: 若整数 $A=0$, 则 $A$ 被任何正整数 $n(n>1)$ 除得的余数必然是 0 . 因此, 若能找到某一个 $n>1$, 使 $A$ 模 $n$ 不为 0 , 则整数 $A$ 决不能是 0 . 我们常基于这一原则, 用同余导出某种必要条件,或产生结果(如例 3), 或为进一步论证作准备, 本书的后面还有许多这样的例子.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $n>1$, 证明: $\underbrace{11 \cdots 1}_{n \text { 个1 } 1}$ 不是完全平方数.
+%%<SOLUTION>%%
+证明:反证法,设有某个 $n>1$ 及整数 $x$,使得
+$$
+\underbrace{11 \cdots 1}_{n \text { 个1 }}=x^2 . \label{eq1}
+$$
+由式\ref{eq1}可知 $x$ 是奇数 (实际上是将式\ref{eq1}模 2 , 注意 $x^2 \equiv x(\bmod 2)$ ). 进一步, 因 $2 \nmid x$, 故 $x^2 \equiv 1(\bmod 4)$. 但
+$$
+\underbrace{11 \cdots 1}_{n \uparrow 1}-1=\underbrace{11 \cdots 10}_{n-1 \uparrow 1}
+$$
+只能被 2 整除, 而不被 4 整除, 即式\ref{eq1}的左边非 $(\bmod 4)$,矛盾!
+用同余处理问题,关键在于选择模.
+但究竟怎样选择, 却并无简单的规则可循, 得视具体问题而定.
+在例 4 中, 我们先将式\ref{eq1}模 2 , 虽不能解决问题, 但基于此得出的信息进一步模 4 , 则导出了矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 用数码 $1 、 2 、 3 、 4 、 5 、 6 、 7$ 作七位数, 每个数码恰用一次.
+证明: 这些七位数中没有一个是另一个的倍数.
+%%<SOLUTION>%%
+证明:假设有这样两个七位数 $a, b(a \neq b)$ 使得
+$$
+a=b c, \label{eq1}
+$$
+其中 $c$ 为大于 1 的整数.
+由于 $a 、 b$ 的数码之和均是 $1+2+3+4+5+6+ 7 \equiv 1(\bmod 9)$, 故 $a \equiv b \equiv 1(\bmod 9)$ . 现在将式\ref{eq1}模 9 , 得出 $c \equiv 1(\bmod 9)$. 但 $c>1$, 故 $c \geqslant 10$, 这样, $a \geqslant 10 b>10^7$, 与 $a$ 是七位数矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 数列 $\left\{x_n\right\}$ 为 $1,3,5,11, \cdots$ 满足递推关系
+$$
+x_{n+1}=x_n+2 x_{n-1}, n \geqslant 2 . \label{eq1}
+$$
+数列 $\left\{y_n\right\}$ 为 $7,17,55,161, \cdots$ 满足递推关系
+$$
+y_{n+1}=2 y_n+3 y_{n-1}, n \geqslant 2 . \label{eq2}
+$$
+%%<SOLUTION>%%
+证明: 这两个数列没有相同的项.
+证明考虑以 8 为模.
+首先证明,数列 $\left\{x_n\right\}$ 模 8 后是一个周期数列
+$$
+1,3,5,3,5, \cdots \text {. } \label{eq3}
+$$
+因为 $x_2 \equiv 3, x_3 \equiv 5(\bmod 8)$. 若已有
+$$
+x_{n-1} \equiv 3, x_n \equiv 5(\bmod 8) \text {, }
+$$
+则由递推公式\ref{eq1}, 得
+$$
+\begin{aligned}
+& x_{n+1}=x_n+2 x_{n-1} \equiv 5+2 \times 3 \equiv 3(\bmod 8), \\
+& x_{n+2}=x_{n+1}+2 x_n \equiv 3+2 \times 5 \equiv 5(\bmod 8),
+\end{aligned}
+$$
+这就归纳证明了我们的断言.
+同样由式\ref{eq2}可证明,数列 $\left\{y_n\right\}$ 模 8 后成为周期数列
+$$
+7,1,7,1,7,1, \cdots . \label{eq4}
+$$
+由式\ref{eq3}、\ref{eq4}可见,两个数列 $x_2, x_3, \cdots$ 与 $y_1, y_2, \cdots$ 模 8 后无相同项, 故这两个数列无相同项.
+又因为 $\left\{y_n\right\}$ 是递增的, 所以 $y_1, y_2, \cdots$ 决不会等于 $x_1=1$, 这就证明了 $\left\{x_n\right\}$ 与 $\left\{y_n\right\}$ 无相同项.
+%%<REMARK>%%
+注1 易知 $\left\{x_n\right\}$ 与 $\left\{y_n\right\}$ 模 3 后分别成周期数列:
+$$
+1,0,2,2,0,1,1,0,2,2, \cdots \text {; 及 } 1,2,1,2, \cdots
+$$
+两者有无穷多对项相等,因此模 3 不能解决问题.
+同样可知, 模 4 也不能解决问题.
+注2 线性递推数列式\ref{eq1}和\ref{eq2}模 8 后成为周期数列, 这一点并非偶然.
+实际上,给定 $m>1$, 若 $\left\{x_n\right\}(n \geqslant 1)$ 是由递推公式
+$$
+x_{n+k}=f\left(x_{n+k-1}, \cdots, x_{n+1}, x_n\right)
+$$
+确定的整数数列, 其中 $f$ 是 $k$ 元整系数多项式, 初值 $x_1, x_2, \cdots, x_k$ 为给定整数, 则 $\left\{x_n\right\}$ 模 $m$ 后终将成为周期数列.
+为证明这一结论, 我们用 $\bar{x}_i$ 表示 $x_i$ 被 $m$ 除得的余数 $\left(0 \leqslant \bar{x}_i<m\right)$ 考虑有序的 $k$ 元数组
+$$
+A_n=\left\langle\bar{x}_n, \bar{x}_{n+1}, \cdots, \bar{x}_{n+k-1}\right\rangle(n=1,2, \cdots) .
+$$
+由于每个 $\bar{x}_i$ 至多可取 $m$ 个不同值, 故互不相同的数组 $A_n$ 至多有 $m^k$ 个.
+因此, 在 $m^k+1$ 个 $k$ 元数组 $A_1, A_2, \cdots, A_{m^k+1}$ 中, 必有两个完全相同, 设 $A_i= A_j(i<j)$, 即
+$$
+\bar{x}_{i+t}=\bar{x}_{j+t}(t=0,1, \cdots, k-1) .
+$$
+由此结合 $\left\{x_n\right\}$ 的递推公式及同余式的基本性质易推出, 上式在 $t=k$ 时亦成立, 即有 $\bar{x}_{i+k}=\bar{x}_{j+k}$. 于是, 由归纳法即可证明, 对任意 $t \geqslant 0$, 都有 $\overline{x_{i+t}}=\overline{x_{j+t}}$, 这意味着, 数列 $\left\{\bar{x}_n\right\}$ 从第 $i$ 项开始, 每 $j-i$ 个一组, 将循环出现.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $p$ 是给定的正整数, 试确定 $(2 p)^{2 m}-(2 p-1)^n$ 的最小正值, 这里 $m 、 n$ 为任意正整数.
+%%<SOLUTION>%%
+解:所求的最小正值是 $(2 p)^2-(2 p-1)^2=4 p-1$. 为了证明, 我们首先注意, 由
+$$
+(2 p)^2=(4 p-2) p+2 p,
+$$
+及
+$$
+(2 p-1)^2=(4 p-2)(p-1)+(2 p-1)
+$$
+易推出
+$$
+(2 p)^{2 m}-(2 p-1)^n \equiv(2 p)-(2 p-1) \equiv 1(\bmod 4 p-2) . \label{eq1}
+$$
+进一步, 我们证明, 没有正整数 $m 、 n$ 使得 $(2 p)^{2 m}-(2 p-1)^n=1$. 假设相反, 则有
+$$
+\left((2 p)^m-1\right)\left((2 p)^m+1\right)=(2 p-1)^n .
+$$
+上式左边两个因数显然互素, 而右边是正整数的 $n$ 次幕, 故
+$$
+(2 p)^m+1=a^n, \label{eq2}
+$$
+其中 $a$ 是一个正整数, $a \mid(2 p-1)$. 将\ref{eq2}式模 $a$, 其左边为
+$$
+(2 p-1+1)^m+1 \equiv 1+1 \equiv 2(\bmod a),
+$$
+导出 $2 \equiv 0(\bmod a)$,但由 $a \mid 2 p-1$ 知 $a$ 是大于 1 的奇数,产生矛盾.
+综合式\ref{eq1}可见, 若 $(2 p)^{2 m}-(2 p-1)^n>0$, 则 $(2 p)^{2 m}-(2 p-1)^n \geqslant 4 p-1$, 且在 $m=1, n=2$ 时取得等号, 这就证明了我们的结论.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 连结正 $n$ 边形的顶点, 得到一个闭的 $n$ 一折线.
+证明: 若 $n$ 为偶数, 则在连线中有两条平行线; 若 $n$ 为奇数,连线中不可能恰有两条平行线.
+%%<SOLUTION>%%
+证明:这是一个不宜用几何方法解决的几何问题, 它与模 $n$ 的完全剩余系有关.
+依逆时针顺序将顶点标上数 $0,1, \cdots, n-1$. 设问题中的闭折线为 $a_0 \rightarrow a_1 \rightarrow \cdots \rightarrow a_{n-1} \rightarrow a_n=a_0$, 这里 $a_0, a_1, \cdots, a_{n-1}$ 是 $0,1, \cdots, n-1$ 的一个排列.
+首先, 由诸 $a_i$ 是正 $n$ 边形的顶点易知
+$$
+\begin{aligned}
+& a_i a_{i+1} / / a_j a_{j+1} \Leftrightarrow \widetilde{a_{i+1} a_j}=\widehat{a_{j+1} a_i} \\
+& \Leftrightarrow a_i+a_{i+1} \equiv a_j+a_{j+1}(\bmod n) .
+\end{aligned}
+$$
+当 $n$ 为偶数时, $2 \nmid(n-1)$, 故模 $n$ 的任一完系之和 $\equiv 0+1+\cdots+(n-1)= \frac{n(n-1)}{2} \not \equiv 0(\bmod n)$.
+但另一方面,我们总有
+$$
+\begin{aligned}
+\sum_{i=0}^{n-1}\left(a_i+a_{i+1}\right) & =\sum_{i=0}^{n-1} a_i+\sum_{i=0}^{n-1} a_{i+1}=2 \sum_{i=0}^{n-1} a_i=2 \times \frac{n(n-1)}{2} \\
+& =n(n-1) \equiv 0(\bmod n) . \label{eq1}
+\end{aligned}
+$$
+所以 $a_i+a_{i+1}(i=0,1, \cdots, n-1)$ 不能构成模 $n$ 的完全剩余系, 即必有 $i \neq j(0 \leqslant i, j \leqslant n-1)$, 使得
+$$
+a_i+a_{i+1} \equiv a_j+a_{j+1}(\bmod n),
+$$
+因而必有一对边 $a_i a_{i+1} / / a_j a_{j+1}$.
+当 $n$ 为奇数时, 若恰有一对边 $a_i a_{i+1} / / a_j a_{j+1}$, 则 $n$ 个数 $a_0+a_1, a_1+ a_2, \cdots, a_{n-1}+a_0$ 之中恰有一个剩余类 $r$ 出现两次, 从而也恰缺少一个剩余类 $s$, 于是 (这时 $2 \mid(n-1)$ )
+$$
+\begin{aligned}
+\sum_{i=0}^{n-1}\left(a_i+a_{i+1}\right) & \equiv 0+1+\cdots+(n-1)+r-s=\frac{n(n-1)}{2}+r-s \\
+& \equiv r-s(\bmod n) .
+\end{aligned}
+$$
+结合式\ref{eq1}得 $r \equiv s(\bmod n)$, 矛盾! 这表明在 $n$ 为奇数时, 不可能恰有一对边平行.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设 $n>3$ 是奇数,证明: 将 $n$ 元集合 $S=\{0,1, \cdots, n-1\}$ 任意去掉一个元素后, 总可以将剩下的元素分成两组, 每组 $\frac{n-1}{2}$ 个数, 使两组的和模 $n$ 同余.
+%%<SOLUTION>%%
+证明:论证的一个关键是, 对任意 $x \in S, x \neq 0$, 集合 $S \backslash\{x\}$ 可以从 $T= \{1,2, \cdots, n-1\}$ 作变换
+$$
+T+x(\bmod n)=\{a+x(\bmod n), a \in T\}
+$$
+得到.
+这就将问题化归为证明其特殊情形: $T=S \backslash\{0\}$ 可以分成两组, 每组 $\frac{n-1}{2}$ 个数,使两组的和模 $n$ 同余.
+我们区分两种情况.
+当 $n=4 k+1(k \geqslant 1)$ 时, 注意 $2 k$ 个数对
+$$
+\{1,4 k\},\{2,4 k-1\}, \cdots,\{2 k, 2 k+1\}
+$$
+中, 每对的和模 $n$ 均为 0 , 于是任取 $k$ 个数对作成一集, 剩下的 $k$ 对数作另一集便符合要求.
+若 $n=4 k+3(k \geqslant 1)$, 我们先取 $1 、 2 、 4 k$ 于一集, $3 、 4 k+1 、 4 k+2$ 于另一集, 然后将剩下的 $2 k-2$ 个数对
+$$
+\{4,4 k-1\}, \cdots,\{2 k+1,2 k+2\}
+$$
+各取 $k-1$ 对分置上述两集即可.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 证明: 对任意整数 $n \geqslant 4$, 存在一个 $n$ 次多项式
+$$
+f(x)=x^n+a_{n-1} x^{n-1}+\cdots+a_1 x+a_0,
+$$
+具有下述性质:
+(1) $a_0, a_1, \cdots, a_{n-1}$ 均为正整数;
+(2) 对任意正整数 $m$,及任意 $k(k \geqslant 2)$ 个互不相同的正整数 $r_1, \cdots, r_k$,均有
+$$
+f(m) \neq f\left(r_1\right) f\left(r_2\right) \cdots f\left(r_k\right) .
+$$
+%%<SOLUTION>%%
+证明:本题的基本精神是要求两个整数不能相等, 同余对此正能派上用场(参见例 3 下面的注).
+我们希望作出一个 (首项系数为 1 的) 正整数系数的 $n$ 次多项式, 使得对任意整数 $a$, 均有 $f(a) \equiv 2(\bmod 4)$, 由此即知, 对任意 $k(k \geqslant 2)$ 个整数 $r_1, \cdots$,
+$r_k$, 有 $f\left(r_1\right) \cdots f\left(r_k\right) \equiv 0(\bmod 4)$, 但 $f(m) \equiv 2(\bmod 4)$, 因此, 对任意整数 $m$, 数 $f(m)$ 与 $f\left(r_1\right) \cdots f\left(r_k\right)$ 模 4 不相等, 从而它们决不能相等.
+我们取
+$$
+f(x)=(x+1)(x+2) \cdots(x+n)+2 . \label{eq1}
+$$
+将式\ref{eq1}的右边展开即知 $f(x)$ 是一个 $n$ 次的首项系数为 1 的正整数系数的多项式.
+另一方面, 对任意整数 $a$, 由于 $n \geqslant 4$, 故连续 $n$ 个整数 $a+1, \cdots, a+n$ 中必有一个为 4 的倍数, 因此 $4 \mid \cdot(a+1) \cdots(a+n)$, 故由式\ref{eq1}知 $f(a) \equiv 2(\bmod 4)$. 这表明多项式\ref{eq1}符合问题的要求.
+构作 $f(x)$ 的方式很多, 下面是一个稍有些不同的方法:
+我们注意, 当 $n \geqslant 4$ 为偶数时, 则对任意整数 $a$ 有 $4 \mid a^n-a^2$. 这是因为, 若 $a$ 为偶数,则 $4 \mid a^2$,故 4 整除 $a^2\left(a^{n-2}-1\right)=a^n-a^2$;若 $a$ 为奇数,则因 $n-$ 2 为偶数,故 $a^{n-2}$ 是奇数的平方, 从而 $4 \mid a^{n-2}-1$, 故 $4 \mid a^2\left(a^{n-2}-1\right)$.
+同样不难证明,当 $n \geqslant 5$ 为奇数时, $a^n-a^3=a^3\left(a^{n-3}-1\right)$ 被 4 整除.
+因此, 对偶数 $n \geqslant 4$, 取
+$$
+\begin{aligned}
+f(x) & =x^n+4\left(x^{n-1}+\cdots+x^3\right)+3 x^2+4 x+2 \label{eq2}\\
+& =x^n-x^2+4\left(x^{n-1}+\cdots+x\right)+2 ;\label{eq3}
+\end{aligned}
+$$
+对奇数 $n \geqslant 5$, 取
+$$
+\begin{aligned}
+f(x) & =x^n+4\left(x^{n-1}+\cdots+x^4\right)+3 x^3+4 x^2+4 x+2 \label{eq4} \\
+& =x^n-x^3+4\left(x^{n-1}+\cdots+x\right)+2 . \label{eq5}
+\end{aligned}
+$$
+则由式\ref{eq2}、\ref{eq4}可见, $f(x)$ 是 $n$ 次的首项系数为 1 的正整数系数多项式; 而由式\ref{eq3}、\ref{eq5}及前面说的结果知, 对任意整数 $a$, 有 $f(a) \equiv 2(\bmod 4)$. 因此多项式\ref{eq2}或\ref{eq4} 符合要求.
+证毕.
+请注意, 若不要求所说的多项式的首项系数为 1 , 则问题极为平凡.
+例如, 可取 $f(x)=4\left(x^n+x^{n-1}+\cdots+x\right)+2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 设 $k 、 l$ 是两个给定的正整数.
+证明, 有无穷多个正整数 $m$, 使得 $\mathrm{C}_m^k$ 与 $l$ 互素.
+%%<SOLUTION>%%
+证法一我们需证明, 有无穷多个 $m$, 使得对于 $l$ 的任一个素因子 $p$, 有 $p \nmid \mathrm{C}_m^k$. 注意
+$$
+k ! \mathrm{C}_m^k=m(m-1) \cdots(m-(k-1)) . \label{eq1}
+$$
+对于任意一个素数 $p \mid l$, 设 $p^\alpha \| k$ !, 即 $p^\alpha \mid k$ !, 但 $p^{\alpha+1} \nmid k$ !, 这里 $\alpha \geqslant 0$. 我们取 (无穷多个) $m$, 使得(1)的右边 $\neq \equiv 0\left(\bmod p^{\alpha+1}\right)$. 这样的 $m$ 可以取为
+$$
+m \equiv k\left(\bmod p^{\alpha+1}\right) . \label{eq2}
+$$
+对满足式\ref{eq2}的 $m$, 式\ref{eq1} 的右边 (在模 $p^{\alpha+1}$ 意义下) 被简化为: $\equiv k(k-1) \cdots 1=k$ ! $\left(\bmod p^{\alpha+1}\right)$, 即有
+$$
+k ! \mathrm{C}_m^k \equiv k !\left(\bmod p^{\alpha+1}\right) . \label{eq3}
+$$
+因 $p^{\alpha+1} \nmid k !$, 故由上式知 $p \nmid \mathrm{C}_m^k$.
+现在设 $p_1, \cdots, p_t$ 是 $l$ 的全部的不同素因子, 并设 $p_i^{a i} \| k !$, 由上面的结果知, 若 $m \equiv k\left(\bmod p_i^{\alpha_i+1}\right)(i=1, \cdots, t)$, 即
+$$
+m \equiv k\left(\bmod p_1^{\alpha_1+1} \cdots p_t^{\alpha_t+1}\right),
+$$
+则 $\mathrm{C}_m^k$ 与 $p_1, \cdots, p_t$ 均互素, 从而与 $l$ 互素.
+满足式\ref{eq3}的正整数 $m$ 当然有无穷多个.
+证毕.
+注意, 由 $p_i$ 及 $p_i^{\alpha_i}$ 的定义可见, $p_1^{\alpha_1+1} \cdots p_t^{\alpha_t+1} \mid l \cdot k$ !, 因此, 若 $m$ 满足 $m \equiv k(\bmod l \cdot k !)$, 则更满足式\ref{eq3}, 故也可取 $m$ 为显式依赖于给定整数 $k, l$ 的正整数: $m \equiv k(\bmod l \cdot k !)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 设 $k 、 l$ 是两个给定的正整数.
+证明, 有无穷多个正整数 $m$, 使得 $\mathrm{C}_m^k$ 与 $l$ 互素.
+%%<SOLUTION>%%
+证法二这一解法无需借助同余.
+将 $\mathrm{C}_m^k$ 表示为
+$$
+\begin{aligned}
+\mathrm{C}_m^k & =\frac{m(m-1) \cdots(m-k+1)}{k !} \\
+& =\frac{m}{1} \cdot \frac{(m-1)}{2} \cdot \cdots \cdot \frac{(m-(k-2))}{k-1} \cdot \frac{(m-(k-1))}{k} \\
+& =\left(\frac{m+1}{1}-1\right)\left(\frac{m+1}{2}-1\right) \cdot \cdots \cdot\left(\frac{m+1}{k-1}-1\right)\left(\frac{m+1}{k}-1\right) .
+\end{aligned}
+$$
+我们希望取正整数 $m$, 使得对任意 $i=1,2, \cdots, k$, 数 $\frac{m+1}{i}$ 为 $l$ 的倍数, 从而每个 $\frac{m+1}{i}-1$ 均与 $l$ 互素, 故它们的积与 $l$ 互素, 即 $\left(\mathrm{C}_m^k, l\right)=1$. 显然 $m= -1+x l \cdot k$ ! 符合这样的要求, $x=1,2, \cdots$, 这当然有无穷多个.
+%%PROBLEM_END%%
+
+

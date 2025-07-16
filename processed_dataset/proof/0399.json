@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 是否存在无穷多对不同的三数组 $(a, b, c)$, 满足: $a, b, c$ 是成等差数列的正整数 $(a<b<c)$ 且 $a b+1, a c+1, b c+1$ 都为完全平方数.",
+    "solution": "(解法一) 作递推数列 $a_1=1, a_2=4, a_{n+2}=4 a_{n+1}-a_n(n \\geqslant 1), b_n= 2 a_{n+1}, c_n=a_{n+2}$, 则 $c_n-b_n=a_{n+2}-2 a_{n+1}=2 a_{n+1}-a_n=b_n-a_n$, 故 $a_n, b_n$, $c_n$ 成等差数列.\n其次, 我们证明 $a_n c_n+1=a_n a_{n+2}+1=a_{n+1}^2$. 事实上, $a_3= 4 a_2-a_1=15, a_1 c_1+1=a_1 a_3+1=15+1=16=a_2^2$. 设 $a_{n-1} c_{n-1}+1= a_{n-1} a_{n+1}+1=a_n^2$, 那么 $a_n c_n+1=a_n a_{n+2}+1=a_n\\left(4 a_{n+1}-a_n\\right)+1= 4 a_n a_{n+1}-a_n^2+1=4 a_n a_{n+1}-\\left(a_{n-1} a_{n+1}+1\\right)+1=a_{n+1}\\left(4 a_n-a_{n-1}\\right)=a_{n+1}^2$, 故对一切 $n \\in \\mathbf{N}_{+}, a_n c_n+1=a_{n+1}^2$. 并且 $a_n b_n+1=a_n \\cdot 2 a_{n+1}+\\left(a_{n+1}^2-\\right. \\left.a_n a_{n+2}\\right)=a_{n+1}^2-a_n\\left(a_{n+2}-2 a_{n+1}\\right)=a_{n+1}^2-a_n\\left(2 a_{n+1}-a_n\\right)=\\left(a_{n+1}-a_n\\right)^2$, $b_n c_n+1=2 a_{n+1} a_{n+2}+1=2 a_{n+1} a_{n+2}+a_{n+1}^2-a_n a_{n+2}=2 a_{n+1} a_{n+2}+a_{n+1}^2- \\left(4 a_{n+1}-a_{n+2}\\right) a_{n+2}=\\left(a_{n+2}-a_{n+1}\\right)^2$. 故存在无穷多组三数组 $(a, b, c)=\\left(a_n\\right.$, $\\left.b_n, c_n\\right)$ 满足题目条件.",
+    "remark": "",
+    "figures": []
+}

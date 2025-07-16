@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 设 $a_1, a_2, \\cdots$ 是正实数数列, 对所有 $n \\geqslant 1$ 满足条件: $\\sum_{j=1}^n a_j \\geqslant \\sqrt{n}$, 求证: 对所有的 $n \\geqslant 1$, 有 $\\sum_{j=1}^n a_j^2 \\geqslant \\frac{1}{4}\\left(1+\\frac{1}{2}+\\cdots+\\frac{1}{n}\\right)$.",
+    "solution": "令 $b_k=a_1+a_2+\\cdots+a_k-\\sqrt{k} \\geqslant 0,1 \\leqslant k \\leqslant n$, 则 $a_k=\\left(b_k-b_{k-1}\\right)+ (\\sqrt{k}-\\sqrt{k-1})$. 于是\n$$\n\\begin{aligned}\n\\sum_{j=1}^n a_j^2= & {\\left[b_1^2+\\left(b_2-b_1\\right)^2+\\cdots+\\left(b_n-b_{n-1}\\right)^2\\right]+\\left[1^2+(\\sqrt{2}-\\sqrt{1})^2+\\cdots\\right.} \\\\\n& \\left.+(\\sqrt{n}-\\sqrt{n-1})^2\\right]+\\left[2 \\cdot \\sqrt{1} \\cdot b_1+2 \\cdot(\\sqrt{2}-\\sqrt{1}) \\cdot\\left(b_2-b_1\\right)\\right. \\\\\n& \\left.+\\cdots+2(\\sqrt{n}-\\sqrt{n-1})\\left(b_n-b_{n-1}\\right)\\right] \\\\\n\\geqslant & {\\left[1^2+(\\sqrt{2}-\\sqrt{1})^2+\\cdots+(\\sqrt{n}-\\sqrt{n-1})^2\\right]+\\left[2 \\cdot \\sqrt{1} \\cdot b_1+2(\\sqrt{2}-\\right.} \\\\\n& \\left.\\sqrt{1})\\left(b_2-b_1\\right)+\\cdots+2(\\sqrt{n}-\\sqrt{n-1})\\left(b_n-b_{n-1}\\right)\\right]\n\\end{aligned}\n$$\n$$\n\\begin{aligned}\n& \\geqslant 1^2+(\\sqrt{2}-\\sqrt{1})^2+\\cdots+(\\sqrt{n}-\\sqrt{n-1})^2 \\\\\n& >\\frac{1}{4} \\cdot\\left(1+\\frac{1}{2}+\\cdots+\\frac{1}{n}\\right) .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

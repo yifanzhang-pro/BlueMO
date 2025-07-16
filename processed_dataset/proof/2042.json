@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $\\triangle A B C$ 的三边为 $a 、 b 、 c$, 则\n$$\nh_a+m_b+t_c \\leqslant \\frac{\\sqrt{3}}{2}(a+b+c),\n$$\n其中 $h_a 、 m_b 、 t_c$ 分别表示边 $B C 、 A C 、 A B$ 上的高、中线和内角平分线.",
+    "solution": "证明:如图(<FilePath:./images/volume9/figures/fig-c5i6.png>), 将高线 $h_a$ 转化为内角平分线 $t_a$ 来考虑.\n为此仅需证明更强的不等式\n$$\nt_a+m_b+t_c \\leqslant \\frac{\\sqrt{3}}{2}(a+b+c) . \\label{eq1}\n$$\n要证式\\ref{eq1}, 只需证明局部不等式\n$$\nm_b+2 t_a \\leqslant \\frac{\\sqrt{3}}{2}(b+2 c) . \\label{eq2}\n$$\n事实上,若式\\ref{eq2}成立, 则类似的有\n$$\nm_b+2 t_c \\leqslant \\frac{\\sqrt{3}}{2}(b+2 a) . \\label{eq3}\n$$\n\\ref{eq2}、式\\ref{eq3}相加便是式\\ref{eq1}.\n下证式\\ref{eq2}.\n由内角平分线公式易知\n$$\nt_a^2=\\frac{4}{(b+c)^2} \\cdot b c p(p-a) \\leqslant p(p-a)=\\frac{1}{4}\\left((b+c)^2-a^2\\right), \\label{eq4}\n$$\n又\n$$\nm_b^2=\\frac{1}{4}\\left(2 a^2+2 c^2-b^2\\right) . \\label{eq5}\n$$\n因此由 Cauchy 不等式及\\ref{eq4}、\\ref{eq5}可得\n$$\n\\begin{aligned}\nm_b+2 t_a & \\leqslant \\sqrt{3\\left(m_b^2+2 t_a^2\\right)} \\\\\n& \\leqslant \\sqrt{\\frac{3}{4}\\left(2 a^2+2 c^2-b^2+2(b+c)^2-2 a^2\\right)} \\\\\n& =\\frac{\\sqrt{3}}{2}(b+2 c) .\n\\end{aligned}\n$$\n式\\ref{eq2}得证,从而问题得证.",
+    "remark": "注:(1) 仔细观察例 1 和例 2 的各种证法,我们认为将整体的线性几何不等式归结为局部的线性几何不等式是一个共同的技巧.\n例 1 的各种证法的目标都在于寻找局部不等式\n$$\nx \\geqslant \\lambda_1 q+\\lambda_2 r,\n$$\n其中 $\\lambda_1 、 \\lambda_2$ 是与动点 $P$ 无关的几何量, 而例 2 却是通过转化为局部不等式\n$$\nm_b+2 t_a \\leqslant \\frac{\\sqrt{3}}{2}(b+2 c)\n$$\n来达到目标.\n(2)例 2 用内角平分线代替高线来加强命题的技巧已在例 1 的证法 4 中应用过,还将在本书最后一章\"四面体的不等式\"例 5 的证明中再次用到.\n这种主动加强命题的技巧是十分有用的.",
+    "figures": [
+        "./images/volume9/figures/fig-c5i6.png"
+    ]
+}

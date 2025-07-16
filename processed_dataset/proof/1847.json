@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 已知一个圆与 $\\triangle A B C$ 的边 $A B 、 B C$ 相切, 也和 $\\triangle A B C$ 的外接圆相切于点 $T$. 若 $I$ 是 $\\triangle A B C$ 的内心, 证明: $\\angle A T I=\\angle C T I$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c4a5.png>), 设小圆圆心为 $O^{\\prime}$, 半径为 $r$, 大圆圆心为 $O$, 半径为 $R$, 且 $\\odot O^{\\prime}$ 与 $A B 、 B C$ 分别切于 $D 、 E$ 两点.\n连结 $D E 、 B O^{\\prime}$ 交于点 $I^{\\prime}$.\n下面证明 $I^{\\prime}=I$. 延长 $B O^{\\prime}$ 交 $\\odot O$ 于点 $F$, 易知 $B F$ 平分 $\\angle A B C$ 及 $\\overparen{A C}$. 则 $O^{\\prime}$ 关于 $\\odot O$ 的幂为 $r(2 R-r)= 2 R r-r^2=B O^{\\prime} \\cdot O^{\\prime} F=O^{\\prime} F \\cdot \\frac{r}{\\sin \\frac{B}{2}}$. 故 $O F=(2 R-r) \\sin \\frac{B}{2}$. 于是, 有 $F I^{\\prime}=F O^{\\prime}+O^{\\prime} I^{\\prime \\prime}=(2 R-r) \\sin \\frac{B}{2}+ r \\sin \\frac{B}{2}=2 R \\sin \\frac{B}{2}=A F$. 从而 $I^{\\prime}=I$.\n连结 $B T 、 O^{\\prime} T$ 有, $O^{\\prime} I^{\\prime} \\cdot O^{\\prime} B=O^{\\prime} E^2=r^2=O^{\\prime} T^2$. 从而, $\\triangle O^{\\prime} I^{\\prime} T \\backsim \\triangle O^{\\prime} T B$. 故 $\\angle O^{\\prime} T I^{\\prime}=\\angle O^{\\prime} B T$. 过点 $T$ 作两圆的公切线 $T G$, 于是有, $\\angle C T I+\\angle O^{\\prime} B C=\\angle C T I+\\angle O^{\\prime} B T+\\angle T B C=\\angle C T I+\\angle O^{\\prime} T I+ \\angle T B C=\\angle C T O^{\\prime}+\\angle T B C=\\angle C T O^{\\prime}+\\angle C T G=\\angle O^{\\prime} T G=90^{\\circ}$. 则 $\\angle C T I=90^{\\circ}-\\angle O^{\\prime} B C=90^{\\circ}-\\frac{1}{2} B$. 同理, $\\angle A T I=90^{\\circ}-\\frac{1}{2} B=\\angle C T I$.\n故命题得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4a5.png"
+    ]
+}

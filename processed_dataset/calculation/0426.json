@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise12.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 设 $n \\equiv 1(\\bmod 4)$ 且 $n>1, P=\\left(a_1, a_2, \\cdots, a_n\\right)$ 是 $(1,2, \\cdots, n)$ 的任意排列, $k_P$ 表示使不等式 $a_1+a_2+\\cdots+a_k<a_{k+1}+a_{k+2}+\\cdots+a_n$ 成立的最大下标 $k$. 试对一切可能的不同排列 $P$, 求对应的 $k_P$ 的和.",
+    "solution": "记 $S=1+2+\\cdots+n=\\frac{n(n+1)}{2}$. 当 $n \\equiv 1(\\bmod 4)$ 时, 显然 $S$ 是奇数.\n对 $(1,2, \\cdots, n)$ 的给定排列 $P=\\left(a_1, a_2, \\cdots, a_n\\right)$, 由 $k_P$ 的定义可知\n$$\n\\begin{gathered}\na_1+a_2+\\cdots+a_{k_P}<a_{k_P+1}+a_{k_P+2}+\\cdots+a_n, \\\\\na_1+a_2+\\cdots+a_{k_P+1} \\geqslant a_{k_P+2}+a_{k_P+3}+\\cdots+a_n,\n\\end{gathered}\n$$\n注意到 $\\left(a_1+a_2+\\cdots+a_{k_P+1}\\right)+\\left(a_{k_P+2}+a_{k_P+3}+\\cdots+a_n\\right)=1+2+\\cdots+n= S$ 为奇数,故上述不等式取不到等号.\n取 $P$ 的反序排列 $P^{\\prime}=\\left(b_1, b_2, \\cdots, b_n\\right)=\\left(a_n, a_{n-1}, \\cdots, a_1\\right)$, 由上面的讨论可知:\n$$\n\\begin{aligned}\n& b_1+b_2+\\cdots+b_{n-k_P-1}<b_{n-k_p}+b_{n-k_P+1}+\\cdots+b_n, \\\\\n& b_1+b_2+\\cdots+b_{n-k_P}<b_{n-k_p+1}+b_{n-k_P+2}+\\cdots+b_n,\n\\end{aligned}\n$$\n故 $k_{P^{\\prime}}=n-k_P-1$, 即对互为反序的排列 $P$ 与 $P^{\\prime}$ 有: $k_P+k_{P^{\\prime}}=n-1$.\n注意到 $(1,2, \\cdots, n)$ 的 $n$ ! 个排列可两两配对,使每对中的两个排列互为反序, 则所有 $k_P$ 的和等于 $\\frac{n !}{2} \\cdot(n-1)$.",
+    "remark": "",
+    "figures": []
+}

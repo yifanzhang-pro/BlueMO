@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "某男孩付一角钱进入第一家商店, 他在店里花了剩余的钱的一半, 走出商店时又付了一角钱.\n之后, 他又付一角钱进人第二家商店, 在这里他花了剩余的钱的一半, 走出商店时又付了一角钱.\n接着, 他又用同样的方式进出第三和第四家商店, 当他走出第四家商店后, 这时, 他身上只剩下一角钱, 问: 他进人第一家商店之前身上有多少钱?",
+    "solution": "设这个男孩进人第 $i$ 个商店之前身上的钱为 $x_i$ 角, $i=1,2,3,4$, 且设 $x_5=1$, 于是\n$$\n\\begin{aligned}\n& x_{i+1}=\\frac{1}{2}\\left(x_i-1\\right)-1, i=1,2,3,4 . \\\\\n& \\text { 令 } f(x)=\\frac{1}{2}(x-1)-1=\\frac{1}{2}(x+3)-3, \\text { 则 } \\\\\n& x_2=f\\left(x_1\\right)=\\frac{1}{2}\\left(x_1+3\\right)-3, \\\\\n& x_3=f\\left(f\\left(x_1\\right)\\right)=\\frac{1}{2^2}\\left(x_1+3\\right)-3, \\\\\n& x_4=f\\left(f\\left(f\\left(x_1\\right)\\right)\\right)=\\frac{1}{2^3}(x+3)-3, \\\\\n& x_5=f\\left(f\\left(f\\left(f\\left(x_1\\right)\\right)\\right)\\right)=\\frac{1}{2^4}(x+3)-3 .\n\\end{aligned}\n$$\n因为\n$$\n\\frac{1}{2^4}\\left(x_1+3\\right)-3=1,\n$$\n故\n$$\nx_1=61,\n$$\n即这个男孩进人第一家商店之前身上有 6.10 元.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例15. 已知 $a, b, c \\in \\mathbf{R}^{+}, a b c=1$. 求证:\n$$\n(a+b)(b+c)(c+a) \\geqslant 4(a+b+c-1) .\n$$",
+    "solution": "分析:想法是把 $a$ 当作参数, 将其看成是关于 $b+c$ 的一元二次方程, 用判别式的方法来证明.\n证明不妨设 $a \\geqslant 1$, 则原不等式等价于\n$$\na^2(b+c)+b^2(c+a)+c^2(a+b)+6 \\geqslant 4(a+b+c), \\label{(1)}\n$$\n即\n$$\n\\begin{aligned}\n& \\left(a^2-1\\right)(b+c)+b^2(c+a)+c^2(a+b)+6 \\\\\n\\geqslant & 4 a+3(b+c)\n\\end{aligned}\n$$\n由于\n$$\n(a+1)(b+c) \\geqslant 2 \\sqrt{a} \\cdot 2 \\sqrt{b c}=4,\n$$\n所以如果我们能够证明\n$$\n4(a-1)+b^2(c+a)+c^2(a+b)+6 \\geqslant 4 a+3(b+c), \\label{(2)}\n$$\n则(1)式成立.\n而(2)等价于\n$$\n2+a\\left(b^2+c^2\\right)+b c(b+c)-3(b+c) \\geqslant 0,\n$$\n故只需证\n$$\n\\frac{a}{2}(b+c)^2+(b c-3)(b+c)+2 \\geqslant 0 .\n$$\n记\n$$\nf(x)=\\frac{a}{2} \\cdot x^2+(b c-3) x+2,\n$$\n则其判别式\n$$\n\\Delta=(b c-3)^2-4 a .\n$$\n我们只要证明 $\\Delta \\leqslant 0$ 即可, 这相当于\n$$\n\\left(\\frac{1}{a}-3\\right)^2-4 a \\leqslant 0 .\n$$\n即\n$$\n\\begin{gathered}\n1-6 a+9 a^2-4 a^3 \\leqslant 0 . \\\\\n(a-1)^2(4 a-1) \\geqslant 0 . \\label{(3)}\n\\end{gathered}\n$$\n也即由 $a \\geqslant 1$, (3)显然成立, 进而(1)成立.\n由上知等号在 $a=b=c=1$ 时成立.",
+    "remark": "",
+    "figures": []
+}

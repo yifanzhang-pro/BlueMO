@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $x+y+z=0$, 求证:\n$$\n6\\left(x^3+y^3+z^3\\right)^2 \\leqslant\\left(x^2+y^2+z^2\\right)^3 .\n$$",
+    "solution": "证明:由 $x+y+z=0$ 及其对称性, 不妨假设 $x, y \\geqslant 0, z \\leqslant 0$, 由于 $x+y=-z$, 得 $z^2=(x+y)^2$, 从而\n$$\n\\left(x^2+y^2+z^2\\right)^3=8\\left(x^2+x y+y^2\\right)^3 .\n$$\n由 $A_3 \\geqslant G_3$, 得\n$$\n\\begin{aligned}\nx^2+x y+y^2 & =\\frac{x(x+y)}{2}+\\frac{y(x+y)}{2}+\\frac{x^2+y^2}{2} \\\\\n& \\geqslant 3 \\sqrt[3]{\\frac{x y(x+y)^2}{4} \\cdot \\frac{x^2+y^2}{2}} \\\\\n& \\geqslant 3 \\sqrt[3]{\\frac{x^2 y^2 z^2}{4}},\n\\end{aligned}\n$$\n所以\n$$\n\\left(x^2+y^2+z^2\\right)^3 \\geqslant 54 x^2 y^2 z^2=6\\left(x^3+y^3+z^3\\right)^2 .\n$$",
+    "remark": "",
+    "figures": []
+}

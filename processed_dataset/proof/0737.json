@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例5. 已知直角坐标平面内有 $n$ 个整点, 满足任意三点不共线, 且所构成的三角形面积不是整数.\n求 $n$ 的最大可能值.",
+    "solution": "解:将平面上的整点分成如下四个集合:\n$$\n\\begin{gathered}\nM_1=\\{(x, y) \\mid x \\equiv y \\equiv 0(\\bmod 2)\\}, \\\\\nM_2=\\{(x, y) \\mid x \\equiv 1(\\bmod 2), y \\equiv 0(\\bmod 2)\\}, \\\\\nM_3=\\{(x, y) \\mid x \\equiv 0(\\bmod 2), y \\equiv 1(\\bmod 2)\\}, \\\\\nM_4=\\{(x, y) \\mid x \\equiv y \\equiv 1(\\bmod 2)\\} .\n\\end{gathered}\n$$\n假如 $n \\geqslant 5$, 由抽屉原理可知, 必有两点 $A\\left(x_1, y_1\\right), B\\left(x_2, y_2\\right)$ 属于上述同一集合, 则 $A B$ 中点 $M\\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)$ 为整点.\n任取 $n$ 个点中的另一点 $C$, 注意整点三角形面积的 2 倍必为整数, 则 $S_{\\triangle A B C}=2 S_{\\triangle A M C} \\in \\mathbf{Z}$, 矛盾.\n因此 $n \\leqslant 4$.\n另一方面, 取 $(0,0),(1,0),(0,1),(1,1)$ 这四个点, 易验证满足题意.\n综上, $n$ 的最大可能值为 4 .",
+    "remark": "注:本例通过坐标的奇偶性来制造抽屉,这是研究整点问题的一种常用的技巧.\n读者可以进一步思考如下两个稍难的问题:\n(1)已知直角坐标平面内有 $n$ 个整点, 满足任意三点不共线, 且所构成的三角形面积为奇数.\n求 $n$ 的最大可能值.\n(2)已知直角坐标平面内有 $n$ 个整点, 满足任意三点不共线, 且所构成的三角形面积不是偶数.\n求 $n$ 的最大可能值.",
+    "figures": []
+}

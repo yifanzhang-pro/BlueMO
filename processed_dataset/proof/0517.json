@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 求最小正整数 $n$, 使当以任意方式将 $\\mathrm{K}_{n}$ 二染色时,总存在具有相同颜色但没有公共边的两个单色三角形",
+    "solution": "如图(<FilePath:./images/volume12/figures/fig-c8a12-1.png>),  对 $K_7$ 二染色, 红色边以实线、蓝色边以虚线表示.\n有 4 个红色三角形: $\\triangle A_1 A_4 A_6 、 \\triangle A_2 A_4 A_6 、 \\triangle A_3 A_4 A_6 、 \\triangle A_7 A_4 A_6$, 有 4 个蓝色三角形: $\\triangle A_1 A_2 A_3 、 \\triangle A_2 A_3 A_7 、 \\triangle A_1 A_3 A_7 、 \\triangle A_1 A_2 A_7$, 易见任何两个相同颜色的单色三角形都有一条公共边,所以 $n \\geqslant 8$.\n下面证明 $n=8$ 时命题一定成立.\n用反证法证之.\n先证明一个引理: 倘若命题不成立, 则必存在一个红色三角形和一个蓝色三角形, 二者恰有一个公共点.\n首先, 二染色 $K_8$ 必存在一个单色三角形.\n不妨设其为蓝色 $\\triangle A_1 A_2 A_3$. 这时 $A_3 A_4 A_5 A_6 A_7 A_8$ 中必存在一个单色三角形, 显然不能是蓝色三角形.\n若这个红色三角形含顶点 $A_3$, 则引理成立.\n不然设 $\\triangle A_4 A_5 A_6$ 为红色三角形, 则 $\\triangle A_1 A_2 A_3$ 与 $\\triangle A_4 A_5 A_6$ 间有 9 条连线,至少有 5 条是同色的.\n不妨设为红色, 则 $A_1, A_2, A_3$ 发出至少 5 条红边, 其中有一点至少发出 2 条红边, 由该点形.\n成一个红色三角形且与 $\\triangle A_1 A_2 A_3$ 有一个公共点.\n故引理必成立.\n下面证本命题: 倘若命题不成立, 由引理可设 $\\triangle A_1 A_2 A_3$ 为蓝色三角形, $\\triangle A_3 A_4 A_5$ 为红色三角形.\n考虑 $A_1 A_4 A_6 A_7 A_8$ 间的连线,显然其内不能再有单色三角形,故该 $K_5$ 由一个蓝五圈和一个红五圈组成.\n见如图(<FilePath:./images/volume12/figures/fig-c8a12-2.png>), 红色边用实线,蓝色边用虚线,不妨设 $A_1 A_4 A_6 A_7 A_8$ 为蓝五圈, $A_1 A_7 A_4 A_8 A_6$ 为红五圈,下面讨论 $A_3 A_7$ 的颜色.\n若 $A_3 A_7$ 为蓝色, 则 $A_3 A_8 、 A_3 A_6$ 必为红色 (不然 $\\triangle A_3 A_7 A_8$ 或 $A_3 A_6 A_7$ 为蓝色, 与 $\\triangle A_1 A_2 A_3$ 发生矛盾). 而此时 $\\triangle A_3 A_6 A_8$ 为红色, 又与 $\\triangle A_3 A_4 A_5$ 发生矛盾!\n若 $A_3 A_7$ 为红色.\n再讨论 $A_3 A_8$ 的颜色.\n若 $A_3 A_8$ 为蓝色, 则 $A_2 A_4$ 必须为红色, $A_2 A_8$ 必须为蓝色, $A_2 A_7$ 必须为红色.\n故 $\\triangle A_2 A_4 A_7$ 为红色三角形, 与 $\\triangle A_3 A_4 A_5$ 发生矛盾!\n若 $A_3 A_8$ 也是红色, 则 $A_5 A_7$ 必须是蓝色, $A_5 A_8$ 必须是蓝色.\n故 $\\triangle A_5 A_7 A_8$ 是蓝色, 与 $\\triangle A_1 A_2 A_3$ 发生矛盾!\n综上所述, $n=8$ 时命题必成立,故所求最小自然数是 8 .",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c8a12-1.png",
+        "./images/volume12/figures/fig-c8a12-2.png"
+    ]
+}

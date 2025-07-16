@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 已知非负实数 $a_1, a_2, \\cdots, a_{100}$ 满足 $a_1^2+a_2^2+\\cdots+a_{100}^2=1$. 证明:\n$$\na_1^2 a_2+a_2^2 a_3+\\cdots+a_{100}^2 a_1<\\frac{12}{25} .\n$$",
+    "solution": "设 $S=\\sum_{k=1}^{100} a_k^2 a_{k+1}$, 其中, 定义 $a_{101}=a_1, a_{102}=a_2$. 由柯西不等式及均值不等式得 $(3 S)^2=\\left[\\sum_{k=1}^{100} a_{k+1}\\left(a_k^2+2 a_{k+1} a_{k+2}\\right)\\right]^2 \\leqslant\\left(\\sum_{k=1}^{100} a_{k+1}^2\\right) \\sum_{k=1}^{100}\\left(a_k^2+2 a_{k+1} a_{k+2}\\right)^2 =1 \\times \\sum_{k=1}^{100}\\left(a_k^2+2 a_{k+1} a_{k+2}\\right)^2=\\sum_{k=1}^{100}\\left(a_k^4+4 a_k^2 a_{k+1} a_{k+2}+4 a_{k+1}^2 a_{k+2}^2\\right) \\leqslant \\sum_{k=1}^{100}\\left[a_k^4+\\right. \\left.2 a_k^2\\left(a_{k+1}^2+a_{k+2}^2\\right)+4 a_{k+1}^2 a_{k+2}^2\\right]=\\sum_{k=1}^{100}\\left(a_k^4+6 a_k^2 a_{k+1}^2+2 a_k^2 a_{k+2}^2\\right)$. 又 $\\sum_{k=1}^{100}\\left(a_k^4+2 a_k^2 a_{k+1}^2\\right. \\left.+2 a_k^2 a_{k+2}^2\\right) \\leqslant\\left(\\sum_{k=1}^{100} a_k^2\\right)^2, \\sum_{k=1}^{100} a_k^2 a_{k+1}^2 \\leqslant\\left(\\sum_{i=1}^{50} a_{2 i-1}^2\\right)\\left(\\sum_{j=1}^{50} a_{2 j}^2\\right)$, 故 $(3 S)^2 \\leqslant\\left(\\sum_{k=1}^{100} a_k^2\\right)^2+ 4\\left(\\sum_{i=1}^{50} a_{2 i-1}^2\\right)\\left(\\sum_{j=1}^{50} a_{2 j}^2\\right) \\leqslant 1+\\left(\\sum_{i=1}^{50} a_{2 i-1}^2+\\sum_{j=1}^{50} a_{2 j}^2\\right)^2=2$. 从而, $S \\leqslant \\frac{\\sqrt{2}}{3} \\approx 0.4714< 0.48=\\frac{12}{25}$.",
+    "remark": "",
+    "figures": []
+}

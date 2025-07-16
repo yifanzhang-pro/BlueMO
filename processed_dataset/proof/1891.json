@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 设 $B 、 C$ 是线段 $A D$ 上的两点,且 $A B=C D$. 求证: 对于平面上任意一点 $P$, 都有 $P A+P D \\geqslant P B+P C$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c6a11.png>), 设线段 $A D$ 的中点为 $M$, 以 $M$ 为旋转中心作中心反射, 则 $D \\rightarrow A, C \\rightarrow B$, 设 $P \\rightarrow P^{\\prime}$, 则 $P^{\\prime} A=P D, P^{\\prime} B=P C$. 因 $B$ 是 $\\triangle A P^{\\prime} P$ 内部的一点, 所以 $P A+P^{\\prime} A \\geqslant P B+P^{\\prime} B$, 故 $P A+P D \\geqslant P B+P C$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6a11.png"
+    ]
+}

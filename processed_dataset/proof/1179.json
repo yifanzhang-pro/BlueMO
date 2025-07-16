@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $a, b, c \\in \\mathbf{R}^{+}$, 且 $a b c \\leqslant 1$. 证明: $\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c} \\geqslant 1+\\frac{6}{a+b+c}$.",
+    "solution": "证法 2 考虑如下两种情形.\n(1) 当 $a+b+c \\geqslant 3$ 时, 由于 $\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c} \\geqslant\\frac{3}{\\sqrt[3]{a b c}} \\geqslant 3$, 则 $\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\right)(a+b+c) \\geqslant 3(a+b+c) \\geqslant a+b+c+6$.\n(2) 当 $a+b+c<3$ 时, 则 $\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\right)(a+b+c) \\geqslant \\frac{3}{\\sqrt[3]{a b c}} \\times 3 \\sqrt[3]{a b c}=9>a+b+c+6$. 综上, 原命题成立.",
+    "remark": "",
+    "figures": []
+}

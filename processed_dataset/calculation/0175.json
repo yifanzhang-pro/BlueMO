@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例6. (斐波那契数列) 假设开始时有雌雄各一的一对小兔, 一个月后长成大兔, 再一个月后生了一对雌雄各一的小兔, 而这对小兔经过一个月后就长成大兔, 此后, 每对大兔每月生一对雌雄各一的小兔, 每对小兔经过一个月又长成大兔,问经过 $n$ 个月一共有多少对兔?",
+    "solution": "解:设经过 $n$ 个月有小兔 $a_n$ 对, 大兔 $b_n$ 对, 大、小兔共 $F_n$ 对.\n于是, $b_n$ 由两部分组成, 第一部分是上月已有的大兔数, 即 $b_{n-1}$, 另一部分是上月的小兔长成的大兔数, 即 $a_{n-1}$, 故得 $\\quad b_n=b_{n-1}+a_{n-1}=F_{n-1}, \\label{eq1}$, \n而 $a_n$ 是上一月大兔生出来的,故应等于 $b_{n-1}$. 于是有 $a_n=b_{n-1}, \\label{eq2}$, \n由式\\ref{eq1}及\\ref{eq2}可得\n$$\nF_n=a_n+b_n=b_{n-1}+b_n=F_{n-2}+F_{n-1}, \\label{eq3}\n$$\n并且显然 $F_0=1$ (开始时只有一对小兔), $F_1=1$ (经过一个月后只有一对大兔). 式\\ref{eq3}的特征方程是 $r^2=r+1$. 特征根为 $r_1=\\frac{1+\\sqrt{5}}{2}, r_2=\\frac{1-\\sqrt{5}}{2}$, 故\n$$\n\\begin{array}{r}\nF_n=c_1\\left(\\frac{1+\\sqrt{5}}{2}\\right)^n+c_2\\left(\\frac{1-\\sqrt{5}}{2}\\right)^n, \\\\\n\\text { 由 } F_0=1, F_1=1 \\text { 得 }\\left\\{\\begin{array}{l}\nc_1+c_2=1, \\\\\nc_1\\left(\\frac{1+\\sqrt{5}}{2}\\right)+c_2\\left(\\frac{1-\\sqrt{5}}{2}\\right)=1 .\n\\end{array}\\right.\n\\end{array}\n$$\n解得 $c_1=\\frac{1+\\sqrt{5}}{2 \\sqrt{5}}, c_2=-\\frac{1-\\sqrt{5}}{2 \\sqrt{5}}$, 故得\n$$\nF_n=\\frac{1}{\\sqrt{5}}\\left[\\left(\\frac{1+\\sqrt{5}}{2}\\right)^{n+1}-\\left(\\frac{1-\\sqrt{5}}{2}\\right)^{n+1}\\right], n=0,1,2, \\cdots\n$$\n满足 $F_n=F_{n-1}+F_{n-2}(n=2,3, \\cdots), F_0=F_1=1$ 的数列, 叫做斐波那契 (Fibonacci) 数列.\n它的前面 10 项是\n$$\n1,1,2,3,5,8,13,21,34,55, \\cdots\n$$\n许多组合计数问题和数学竞赛试题都与斐波那契数列有关.",
+    "remark": "",
+    "figures": []
+}

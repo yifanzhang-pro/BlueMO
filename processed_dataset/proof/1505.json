@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-2.tex",
+    "problem_type": "proof",
+    "problem": "例1. 实数数列 $a_1, a_2, \\cdots$ 满足: 对任意 $i 、 j \\in \\mathbf{N}^*$, 都有 $a_{i+j} \\leqslant a_i+a_j$. 证明: 对任意 $n \\in \\mathbf{N}^*$, 都有\n$$\na_1+\\frac{a_2}{2}+\\frac{a_3}{3}+\\cdots+\\frac{a_n}{n} \\geqslant a_n . \\label{eq1}\n$$",
+    "solution": "证明:当 $n=1$ 时,命题显然成立.\n现设\\ref{eq1}式对所有小于 $n$ 的正整数都成立, 即对 $1 \\leqslant k \\leqslant n-1$, 都有\n$$\na_1+\\frac{a_2}{2}+\\cdots+\\frac{a_k}{k} \\geqslant a_k .\n$$\n我们记 $b_k=a_1+\\frac{a_2}{2}+\\cdots+\\frac{a_k}{k}, k=1,2, \\cdots, n-1$, 则由上述假设知 $\\sum_{k=1}^{n-1} b_k \\geqslant \\sum_{k=1}^{n-1} a_k$, 即\n$$\n(n-1) a_1+\\frac{n-2}{2} a_2+\\cdots+\\frac{n-(n-1)}{n-1} a_{n-1} \\geqslant \\sum_{k=1}^{n-1} a_k .\n$$\n上式两边都加上 $\\sum_{k=1}^{n-1} a_k$, 可得\n$$\nn\\left(a_1+\\frac{a_2}{2}+\\cdots+\\frac{a_{n-1}}{n-1}\\right) \\geqslant 2 \\sum_{k=1}^{n-1} a_k .\n$$\n于是\n$$\nn\\left(a_1+\\frac{a_2}{2}+\\cdots+\\frac{a_n}{n}\\right) \\geqslant a_n+2 \\sum_{k=1}^{n-1} a_k . \\label{eq2}\n$$\n由条件知 $a_1+a_{n-1} \\geqslant a_n, a_2+a_{n-2} \\geqslant a_n, \\cdots, a_{n-1}+a_1 \\geqslant a_n$, 所以 $2 \\sum_{k=1}^{n-1} a_k \\geqslant (n-1) a_n$. 这样, 由式\\ref{eq2}可得\\ref{eq1}对 $n$ 成立.\n所以,对任意 $n \\in \\mathbf{N}^*$, 不等式\\ref{eq1}成立.",
+    "remark": "",
+    "figures": []
+}

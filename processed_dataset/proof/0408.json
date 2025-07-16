@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例4. 九名数学家在一次国际数学会议上相遇, 发现他们中的任意三个人中, 至少有两个人可以用同一种语言对话.\n如果每个数学家至多可说三种语言, 证明至少有三名数学家可以用同一种语言对话.",
+    "solution": "证明:,如图(<FilePath:./images/volume12/figures/fig-c1i12.png>)用九个点 $v_1, v_2, \\cdots, v_9$ 表示这九名数学家,如果某两个数学家能用第 $i$ 种语言对话, 则在它们相应的顶点之间连一条边并涂以相应的第 $i$种颜色, 这样就得到了一个有九个顶点的简单图 $G$, 它的边涂上了颜色, 每三点之间至少有一条边, 每个顶点引出的边至多有三种不同的颜色.\n要证明的是: 图 $G$ 中存在三个点, 它们两两相邻, 且这三条边具有相同的颜色 (这种三角形称为同色三角形).\n如果边 $\\left(v_i, v_j\\right) 、\\left(v_i, v_k\\right)$ 具有相同的第 $i$ 种颜色, 则按边涂色的意义, 点 $v_j$ 与 $v_k$ 也相邻, 且边 $\\left(v_j, v_k\\right)$ 也具有第 $i$ 种颜色.\n所以对顶点 $v_1$ 来说, 有两种情形:\n(1) 点 $v_1$ 与点 $v_2, \\cdots, v_9$ 都相邻, 根据抽㞕原理知, 至少有两条边, 不妨设为 $\\left(v_1, v_2\\right) 、\\left(v_1, v_3\\right)$, 具有相同的颜色, 从而 $\\triangle v_1 v_2 v_3$ 是同色三角形.\n(2) 点 $v_1$ 与点 $v_2, \\cdots, v_9$ 中的至少一个点不相邻, 不妨设点 $v_1$ 与点 $v_2$\n不相邻.\n由于每三点之间至少有一条边, 所以从 $v_3$, $v_4, \\cdots, v_9$ 发出的, 另一个端点是 $v_1$ 或 $v_2$ 的边至少有 7 条, 由此可知, 点 $v_3, v_4, \\cdots, v_9$ 中至少有 4 个点与点 $v_1$ 或 $v_2$ 相邻, 不妨设点 $v_3, v_4, v_5, v_6$ 与点 $v_1$ 相邻, 如图 $1-12$ 所示.\n于是边 $\\left(v_1, v_3\\right) 、\\left(v_1, v_4\\right) 、\\left(v_1, v_5\\right) 、\\left(v_1\\right.$, $\\left.v_6\\right)$ 中必定有两条具有相同的颜色, 设 $\\left(v_1, v_3\\right) 、\\left(v_1\\right.$, $v_4$ ) 同色,则 $\\triangle v_1 v_3 v_4$ 是同色三角形.\n$v_2 \\circ$",
+    "remark": "注:: 若把题中的九改成八, 命题就不成立了.\n如图(<FilePath:./images/volume12/figures/fig-c1i13.png>)给出的是一个反例.\n$v_1, v_2, \\cdots, v_8$ 表示 8 个顶点, $1,2, \\cdots, 12$ 表示 12 种颜色, 则图中无同色三角形.",
+    "figures": [
+        "./images/volume12/figures/fig-c1i12.png",
+        "./images/volume12/figures/fig-c1i13.png"
+    ]
+}

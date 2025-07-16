@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题10. 记 $a=\\log _{\\sin 1} \\cos 1, b=\\log _{\\sin 1} \\tan 1, c=\\log _{\\cos 1} \\sin 1, d=\\log _{\\cos 1} \\tan 1$, 则四个数的大小关系是( ).\n(A) $a<c<b<d$\n(B) $c<d<a<b$\n(C) $b<d<c<a$\n(D) $d<b<a<c$",
+    "solution": "C. 因 $\\sin 1>\\cos 1, \\tan 1>1$, 所以 $\\log _{\\tan 1} \\cos 1<\\log _{\\tan 1} \\sin 1<0$, 故 $\\log _{\\cos 1} \\tan 1>\\log _{\\sin 1} \\tan 1$, 即 $d>b$. 因为 $0<\\cos 1<1, \\sin 1<\\tan 1$, 所以 $\\log _{\\cos 1} \\sin 1>\\log _{\\cos 1} \\tan 1$, 即 $c>d$; 同理 $a=\\log _{\\sin 1} \\cos 1>\\log _{\\sin 1} \\sin 1= \\log _{\\cos 1} \\cos 1>\\log _{\\cos 1} \\sin 1$, 即 $a>c$, 综上所述 $a>c>d>b$.",
+    "remark": "",
+    "figures": []
+}

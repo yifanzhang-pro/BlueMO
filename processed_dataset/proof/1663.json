@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $P$ 为平行四边形 $A B C D$ 内一点, 求证: $P A \\cdot P C+P B \\cdot P D \\geqslant A B \\cdot B C$, 并指出等号成立条件.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c10i3.png>), 取点 $P^{\\prime}$ 使得 $\\overrightarrow{P P^{\\prime}}=\\overrightarrow{A B}$,\n于是原命题等价于 $P^{\\prime} P \\cdot B C \\leqslant P C \\cdot P^{\\prime} B+P B \\cdot P^{\\prime} C$, 即四边形 $P B P^{\\prime} C$ 的托勒密不等式, 等号成立的充要条件是 $P B P^{\\prime} C$ 为圆内接四边形, 即 $\\angle A P D+\\angle C P B=\\pi$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c10i3.png"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 在凸五边形 $A B C D E$ 中, $A D$ 与 $B E$ 相交于 $F, B E$ 与 $C A$ 相交于 $G, C A$ 与 $D B$ 相交于 $H, D B$ 与 $E C$ 相交于 $I, E C$ 与 $A D$ 相交于 $J$. 设 $A^{\\prime} 、 B^{\\prime} 、 C^{\\prime} 、 D^{\\prime} 、 E^{\\prime}$ 分别为 $A I$ 与 $B E 、 B J$ 与 $C A 、 C F$ 与 $D B 、 D G$ 与 $E C 、 E H$ 与 $A D$ 的交点, 求证:\n$$\n\\frac{A B^{\\prime}}{B^{\\prime} C} \\cdot \\frac{C D^{\\prime}}{D^{\\prime} E} \\cdot \\frac{E A^{\\prime}}{A^{\\prime} B} \\cdot \\frac{B C^{\\prime}}{C^{\\prime} D} \\cdot \\frac{D E^{\\prime}}{E^{\\prime} A}=1 .\n$$",
+    "solution": "如图(<FilePath:./images/volume14/figures/fig-c8a8.png>), 由共边定理, 有 $\\frac{A B^{\\prime}}{B^{\\prime} C}=\\frac{S_{\\triangle A B J}}{S_{\\triangle C B J}}$, 其他的比例线段用同样的方法转化, 即只须证明\n$$\n\\frac{S_{\\triangle A B J}}{S_{\\triangle C B J}} \\cdot \\frac{S_{\\triangle C D G}}{S_{\\triangle E D G}} \\cdot \\frac{S_{\\triangle E A I}}{S_{\\triangle B A I}} \\cdot \\frac{S_{\\triangle B C F}}{S_{\\triangle D C F}} \\cdot \\frac{S_{\\triangle D E H}}{S_{\\triangle A E H}}=1 .\n$$\n因为\n$$\n\\frac{S_{\\triangle A B J}}{S_{\\triangle B A I}}=\\frac{S_{\\triangle A B J}}{S_{\\triangle A B D}} \\cdot \\frac{S_{\\triangle A B D}}{S_{\\triangle B A I}}=\\frac{A J}{A D} \\cdot \\frac{B D}{B I},\n$$\n用同样方法转化面积比,并消去上下相同的线段,只须证明:\n$$\n\\frac{A J}{B I} \\cdot \\frac{B F}{C J} \\cdot \\frac{C G}{D F} \\cdot \\frac{D H}{E G} \\cdot \\frac{E I}{A H}=1,\n$$\n或\n$$\n\\frac{A J}{C J} \\cdot \\frac{B F}{D F} \\cdot \\frac{C G}{E G} \\cdot \\frac{D H}{A H} \\cdot \\frac{E I}{B I}=1 .\n$$\n利用正弦定理转换上式的线段比, 只须证明\n$$\n\\frac{\\sin \\angle E C A}{\\sin \\angle C A D} \\cdot \\frac{\\sin \\angle A D B}{\\sin \\angle D B E} \\cdot \\frac{\\sin \\angle B E C}{\\sin \\angle E C A} \\cdot \\frac{\\sin \\angle C A D}{\\sin \\angle A D B} \\cdot \\frac{\\sin \\angle D B E}{\\sin \\angle B E C}=1,\n$$\n这显然成立.\n证毕.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c8a8.png"
+    ]
+}

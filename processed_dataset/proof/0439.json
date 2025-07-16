@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例2. 证明 $K_{3,3}$ 图不是平面图.",
+    "solution": "证明:如果 $K_{3,3}$ 是平面图, 因为在 $K_{3,3}$ 中任取 3 个顶点, 其中必有两个顶点不相邻,故每一个面都至少有 4 条边围成, 由\n$$\n4 f \\leqslant 2 e, f \\leqslant \\frac{e}{2} .\n$$\n代入欧拉公式\n$$\n2=v-e+f \\leqslant v-e+\\frac{e}{2},\n$$\n即\n$$\ne \\leqslant 2 v-4 \\text {. }\n$$\n在 $K_{3,3}$ 中, $v=6, e=9$, 且 $9>2 \\times 6-4$, 矛盾.\n故 $K_{3,3}$ 不是平面图.",
+    "remark": "",
+    "figures": []
+}

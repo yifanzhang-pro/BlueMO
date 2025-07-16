@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $\\varepsilon=\\cos \\frac{2 \\pi}{n}+\\mathrm{i} \\sin \\frac{2 \\pi}{n}$, 求证:\n(1) $(1-\\varepsilon)\\left(1-\\varepsilon^2\\right) \\cdots\\left(1-\\varepsilon^{n-1}\\right)=n$;\n(2) $\\sin \\frac{\\pi}{n} \\sin \\frac{2 \\pi}{n} \\cdots \\sin \\frac{(n-1) \\pi}{n}=\\frac{n}{2^{n-1}}$.",
+    "solution": "分析:与解方程 $x^n-1=0$ 的 $n$ 个单位根是\n$$\n\\varepsilon_k=\\cos \\frac{2 k \\pi}{n}+\\mathrm{i} \\sin \\frac{2 k \\pi}{n},(k=0,1, \\cdots, n-1)\n$$\n注意到 $\\varepsilon=\\cos \\frac{2 \\pi}{n}+\\mathrm{i} \\sin \\frac{2 \\pi}{n}$, 从而有\n$$\n\\varepsilon_k=\\varepsilon^k\n$$\n于是, 由\n$$\nx^n-1=(x-1)(x-\\varepsilon)\\left(x-\\varepsilon^2\\right) \\cdots\\left(x-\\varepsilon^{n-1}\\right)\n$$\n得\n$$\n\\begin{aligned}\n& (x-\\varepsilon)\\left(x-\\varepsilon^2\\right) \\cdots\\left(x-\\varepsilon^{n-1}\\right) \\\\\n= & \\frac{x^n-1}{x-1} \\\\\n= & x^{n-1}+x^{n-2}+\\cdots+x+1 .\n\\end{aligned}\n$$\n即有\n$$\n(x-\\varepsilon)\\left(x-\\varepsilon^2\\right) \\cdots\\left(x-\\varepsilon^{n-1}\\right)=x^{n-1}+x^{n-2}+\\cdots+x+1 . \\label{eq1}\n$$\n(1) 在\\ref{eq1}式中, 令 $x=1$, 立得\n$$\n(1-\\varepsilon)\\left(1-\\varepsilon^2\\right) \\cdots\\left(1-\\varepsilon^{n-1}\\right)=n . \\label{eq2}\n$$\n(2) 对\\ref{eq2}式的两边取模,并注意到\n$$\n\\left|1-\\varepsilon^k\\right|=2 \\sin \\frac{k \\pi}{n},\n$$\n立得\n$$\n2^{n-1} \\sin \\frac{\\pi}{n} \\sin \\frac{2 \\pi}{n} \\cdots \\sin \\frac{(n-1) \\pi}{n}=n,\n$$\n即有\n$$\n\\sin \\frac{\\pi}{n} \\sin \\frac{2 \\pi}{n} \\cdots \\sin \\frac{(n-1) \\pi}{n}=\\frac{n}{2^{n-1}},\n$$\n证毕.",
+    "remark": "",
+    "figures": []
+}

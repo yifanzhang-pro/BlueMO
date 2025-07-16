@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例4 求所有的函数 $f: \\mathbf{R} \\rightarrow \\mathbf{R}$, 使得对任意实数 $x 、 y$, 都有\n$$\n(x-y) f(x+y)-(x+y) f(x-y)=4 x y\\left(x^2-y^2\\right) . \\quad\\quad (1)\n$$",
+    "solution": "解:令 $x=y \\neq 0$, 得\n$$\nf(0)=0 .\n$$\n设 $u=x+y, v=x-y$. 那么 $u+v=2 x, u-v=2 y$, 于是 (1) 式成为\n$$\nv f(u)-u f(v)=u v\\left(u^2-v^2\\right) .\n$$\n若 $u v \\neq 0$, 则上式为\n$$\n\\frac{f(u)}{u}-\\frac{f(v)}{v}=u^2-v^2,\n$$\n即对任意非零实数 $u 、 v$, 有\n$$\n\\frac{f(u)}{u}-u^2=\\frac{f(v)}{v}-v^2 .\n$$\n所以 $\\frac{f(x)}{x}-x^2=c$ 为一常数, $x \\neq 0$.\n于是对 $x \\in \\mathbf{R}$, 所求的函数为\n$$\nf(x)=x^3+c x,\n$$\n其中 $c$ 为某个常数.\n经检验, $f(x)=x^3+c x$ ( $c$ 是常数) 是欲求的函数.",
+    "remark": "",
+    "figures": []
+}

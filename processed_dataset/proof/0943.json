@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题17 已知多项式 $f(x)$ 满足:\n$$\nf\\left(2 x^2+1\\right)-4 f(x)=4(f(x))^2+1 .\n$$\n且 $f(0)=0$, 求 $f(x)$.",
+    "solution": "原函数方程可化为 $f\\left(2 x^2+1\\right)=(2 f(x)+1)^2 \\cdots$ (1). \n取 $x=0$ 代入 (1), 得 $f(1)=(2 f(0)+1)^2=1$. \n取 $x=1$ 代入 (1), 并利用 $f(1)=1$, 得 $f(3)=(2 f(1)+1)^2=3^2$. \n取 $x=3$ 代入(1), 并利用 $f(3)=3^2$, 得 $f(19)= (2 f(3)+1)^2=19, \\cdots$. \n作数列 $\\left\\{a_n\\right\\}, a_1=0, a_{n+1}=2 a_n^2+1, n=1,2, \\cdots$. \n用数学归纳法易证 $f\\left(a_n\\right)=a_n^2, n \\in \\mathbf{N}_{+}$\n事实上, 假设 $f\\left(a_k\\right)=a_k^2$, 那么 $f\\left(a_{k+1}\\right)=f\\left(2 a_k^2+1\\right)=\\left(2 f\\left(a_k\\right)+1\\right)$ (利用(1) $)=\\left(2 a_k^2+1\\right)^2$ (利用归纳假设) $=a_{k+1}^2$. \n设 $f(x)-x^2$ 是 $m$ 次多项式, 由代数基本定理知它有 $m$ 个根.\n但上面已证 $f(x)-x^2$ 有无穷多个根, 从而 $f(x)-x^2 \\equiv 0$. 即 $f(x)=x^2$.",
+    "remark": "",
+    "figures": []
+}

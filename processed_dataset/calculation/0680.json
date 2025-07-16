@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题3 函数 $y=-3 \\cos \\left(-2 x+\\frac{\\pi}{3}\\right)$ 的图象可由 $y=-3 \\cos (-2 x)$ 的图象( ).\n(A) 向左平移 $\\frac{\\pi}{3}$ 得到\n(B) 向右平移 $\\frac{\\pi}{3}$ 得到\n(C) 向左平移 $\\frac{\\pi}{6}$ 得到\n(D) 向右平移 $\\frac{\\pi}{6}$ 得到",
+    "solution": "D. 原函数可变形为 $y=-3 \\cos \\left[-2\\left(x-\\frac{\\pi}{6}\\right)\\right]$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,67 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $a 、 b 、 c$ 是任意三角形的三边, $x 、 y 、 z$ 是任意三个实数, 求证
+$$
+a^2(x-y)(x-z)+b^2(y-x)(y-z)+c^2(z-x)(z-y) \geqslant 0 .
+$$
+%%<SOLUTION>%%
+提示: 把 $\cos A=\frac{b^2+c^2-a^2}{2 b c}$ 等代入嵌入不等式, 再作代数恒等变形即得.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 在 $\triangle A B C$ 和 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 中, 求证
+$$
+\cot A+\cot B+\cot C \geqslant \frac{\cos A^{\prime}}{\sin A}+\frac{\cos B^{\prime}}{\sin B}+\frac{\cos C^{\prime}}{\sin C} .
+$$
+%%<SOLUTION>%%
+注意到公式 $\cot A=\frac{b^2+c^2-a^2}{4 \Delta}$ 等等, 原不等式等价于 $a^2+b^2+c^2 \geqslant \frac{4 \Delta \cos A^{\prime}}{\sin A}+\frac{4 \Delta \cos B^{\prime}}{\sin B}+\frac{4 \Delta \cos C^{\prime}}{\sin C}$, 再由面积公式, 上式等价于 $a^2+b^2+c^2 \geqslant 2 a b \cos C^{\prime}+2 a c \cos B^{\prime}+2 b c \cos A^{\prime}$. 这正是嵌入不等式的一个特例.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3 (Garfunkel-Baukoff)
+$$
+\tan ^2 \frac{A}{2}+\tan ^2 \frac{B}{2}+\tan ^2 \frac{C}{2} \geqslant 2-8 \sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2} .
+$$
+%%<SOLUTION>%%
+提示: 在嵌入不等式中令 $x=\tan \frac{A}{2}, y=\tan \frac{B}{2}, z=\tan \frac{C}{2}$, 再通过一系列三角恒等变形即得.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 证明:设 $x, y, z, w \in \mathbf{R}^{+}, \alpha+\beta+\gamma+\theta=(2 k+1) \pi, k \in \mathbf{Z}$, 则
+$$
+|x \sin \alpha+y \sin \beta+z \sin \gamma+w \sin \theta| \leqslant \sqrt{\frac{(x y+z w)(x z+y w)(x w+y z)}{x y z w}} .
+$$
+%%<SOLUTION>%%
+记 $u=x \sin \alpha+y \sin \beta, v=z \sin \gamma+r \sin \theta$, 则 $u^2=(x \sin \alpha+y \sin \beta)^2 \leqslant (x \sin \alpha+y \sin \beta)^2+(x \cos \alpha-y \cos \beta)^2=x^2+y^2-2 x y \cos (\alpha+\beta)$. 同理可得 $v^2 \leqslant z^2+w^2-2 z w \cos (\theta+\gamma)$. 注意到已知条件 $\alpha+\beta+\gamma+\theta=(2 k+1) \pi (k \in \mathbf{Z})$, 有 $\cos (\alpha+\beta)+\cos (\gamma+\theta)=0$, 因此 $\frac{x^2+y^2-u^2}{2 x y}+\frac{z^2+w^2-\gamma^2}{2 z w} \geqslant 0$, 即 $\frac{u^2}{x y}+\frac{v^2}{z w} \leqslant \frac{x^2+y^2}{x y}+\frac{z^2+w^2}{z w}=\frac{(x z+y w)(x w+y z)}{x y z w}$. 另外, 应用 Cauchy 不等式有 $|u+v| \leqslant \sqrt{\left(\frac{u^2}{x y}+\frac{v^2}{z w}\right)(x y+z w)} \leqslant \sqrt{\frac{(x y+z w)(x z+y w)(x w+y z)}{x y z w}}$, 得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 证明:设 $P$ 是 $\triangle A_1 A_2 A_3$ 所在平面上的任意一点,则
+$$
+\left(a_2^2+a_3^2-a_1^2\right) R_1^2+\left(a_3^2+a_1^2-a_2^2\right) R_2^2+\left(a_1^2+a_2^2-a_3^2\right) R_3^2 \geqslant \frac{16}{3} \Delta^2,
+$$
+其中 $\Delta$ 表示 $\triangle A_1 A_2 A_3$ 的面积, $a_1 、 a_2 、 a_3$ 是它的边长, $P A_i=R_i, i=1$, 2 , 3 .
+%%<SOLUTION>%%
+在惯性矩不等式中, 令 $x=a_2^2+a_3^2-a_1^2$, 等等, 可得左边 $\geqslant \sum\left(a_3^2+\right. \left.a_1^2-a_2^2\right)\left(a_1^2+a_2^2-a_3^2\right) \cdot \frac{a_1^2}{a_1^2+a_2^2+a_3^2} \cdots$ (1), 又注意到 $a_1^2+a_2^2+a_3^2 \leqslant 9 R^2, R= \frac{a_1 a_2 a_3}{4 \Delta}$, 结合可得 $\frac{a_1^2 a_2^2 a_3^3}{a_1^2+a_2^2+a_3^2} \geqslant \frac{16}{9} \Delta^2 \cdots$ (2), 再注意到 Heron 公式 $16 \Delta^2= 2\left(a_1^2 a_2^2+a_2^2 a_3^2+a_3^2 a_1^2\right)-\left(a_1^4+a_2^4+a_3^4\right) \cdots$ (3), 因此由 (1)、(2)、(3) 可知 $\sum\left(a_3^2+\right.$
+$$
+\begin{aligned}
+& \left.a_1^2-a_2^2\right)\left(a_1^2+a_2^2-a_3^2\right) \frac{a_1^2}{a_1^2+a_2^2+a_3^2} \geqslant-16 \Delta^2+\frac{12 a_1^2 a_2^2 a_3^2}{a_1^2+a_2^2+a_3^2} \geqslant-16 \Delta^2+12 . \\
+& \frac{16}{9} \Delta^2=\frac{16}{3} \Delta^2 .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+

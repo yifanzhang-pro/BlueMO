@@ -1,0 +1,184 @@
+
+%%TEXT_BEGIN%%
+存在性问题出现在数学的每一个分支中, 前面的各节中都出现过.
+这里专门用一节来讨论数列中的存在性问题是希望起到强调的作用, 引起重视, 并以例题的形式讨论一些处理此类问题的方法.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $a 、 b$ 是两个大于 2 的整数.
+证明: 存在正整数 $k$ 及由正整数组成的有穷数列 $n_1, n_2, \cdots, n_k$, 使得 $n_1=a, n_k=b$, 而对 $1 \leqslant i \leqslant k-1$, 都有
+$$
+\left(n_i+n_{i+1}\right) \mid n_i n_{i+1} .
+$$
+%%<SOLUTION>%%
+证明:"我们用 " $a \sim b$ " 表示正整数 $a 、 b$ 可以用上述数列连接, 那么"若 $a \sim b$ 成立, 则 $b \sim a$ 亦成立".
+一个自然的想法是证明: 任意两个相邻正整数 (都大于 2) 之间是"可达" 的.
+利用下面的两个结论可达此目的.
+结论 1 对任意 $n \in \mathbf{N}^*, n \geqslant 3$, 都有 $n \sim 2 n$.
+下面的数列表明结论 1 成立.
+$$
+n, n(n-1), n(n-1)(n-2), n(n-2), 2 n \text {. }
+$$
+结论 2 对任意 $n \in \mathbf{N}^*, n \geqslant 4$, 都有 $n \sim n-1$.
+利用数列
+$$
+n, n(n-1), n(n-1)(n-2), n(n-1)(n-2)(n-3), 2(n-1)(n-2) .
+$$
+结合结论 1 知 $2(n-1)(n-2) \sim(n-1)(n-2)$, 而 $(n-1)(n-2)+(n-1)= (n-1)^2$ 是 $(n-1)(n-2) \cdot(n-1)$ 的约数.
+故结论 2 成立.
+对大于 2 的整数 $a 、 b$, 不妨设 $a \leqslant b$, 如果 $a=b$, 那么利用 $a \sim a+1 \sim b(=a)$ 可知命题成立; 如果 $a<b$, 那么利用 $a \sim a+1 \sim a+2 \sim \cdots \sim b$ 可知命题亦成立.
+说明解决的关键是对结论 1 和结论 2 的直接构造, 这是处理存在性问题的最自然的思路.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $m \in \mathbf{N}^*$. 问 : 是否存在一个 $m$ 次的整系数多项式 $f(x)$, 使得对任意 $n \in \mathbf{Z}$, 由下述方式定义的数列 $\left\{a_k\right\}$ 中任意两项互素: $a_1=f(n), a_{k+1}= f\left(a_k\right), k=1,2, \cdots$ ?
+%%<SOLUTION>%%
+解:当 $m=1$ 时,不存在这样的多项式.
+事实上, 如果存在 $f(x)=a x+b$ 符合要求, 不妨设 $a>0$. 那么对 $n \in \mathbf{Z}$, 有
+$$
+a_k=a^k \cdot n+\left(a^{k-1}+\cdots+1\right) b . \label{eq1}
+$$
+此结论可通过对 $k$ 归纳得到.
+若 $b=0$, 则对任意大于 1 的正整数 $n$, 由 式\ref{eq1}可知数列 $\left\{a_k\right\}$ 中每一项都是 $n$ 的倍数, 从而没有两项是互素的.
+若 $b \neq 0$, 由于 $a$ 为正整数, 知存在 $k \in \mathbf{N}^*$, 使得 $\left|\left(a^{k-1}+\cdots+1\right) b\right|>1$, 记 $c=\left(a^{k-1}+\cdots+1\right) b$, 我们取 $n$ 为 $|c|$ 的素因子, 则对应于这个 $n$ 的 $a_k$ 是 $n$ 的倍数, 由式\ref{eq1} 知 $a_{2 k}=a^{2 k} \cdot n+\left(a^{2 k-1}+\cdots+1\right) b=a^{2 k} \cdot n+\left(a^k+1\right) \cdot\left(a^{k-1}+\cdots+1\right)$  $b=a^{2 k} \cdot n+\left(a^k+1\right) c$, 故 $n$ 也是 $a_{2 k}$ 的约数, 导致 $a_k$ 与 $a_{2 k}$ 不互素.
+所以, 在 $m=1$ 时, 不存在符合要求的整系数多项式.
+下证: 当 $m \geqslant 2$ 时,都存在这样的多项式.
+我们证明: 当 $f(x)=x^{m-1}(x-1)+1$ 时, 对任意 $n \in \mathbf{Z}$, 相应的数列 $\left\{a_k\right\}$ 中任意两项都互素.
+注意到, 对任意 $k \in \mathbf{N}^*$, 有
+$$
+a_{k+1}=a_k^{m-1}\left(a_k-1\right)+1 \equiv 1\left(\bmod a_k\right),
+$$
+而且
+$$
+a_{k+2}=a_{k+1}^{m-1}\left(a_{k+1}-1\right)+1 \equiv 1^{m-1} \cdot 0+1=1\left(\bmod a_k\right)
+$$
+依此结合数学归纳法可知, 对任意正整数 $t>k$, 都有 $a_t \equiv 1\left(\bmod a_k\right)$. 所以, 数列 $\left\{a_k\right\}$ 中任意两项都互素.
+综上可知, 当 $m=1$ 时,不存在; 而 $m \geqslant 2$ 时,都存在.
+说明对 $m \geqslant 2$ 的情形, 任取一个 $m-2$ 次的整系数多项式 $g(x)$, 令 $f(x)=x(x-1) g(x)+1$, 仿上可证: 对 $n \in \mathbf{Z}$, 相应的数列 $\left\{a_k\right\}$ 中任意两项互素.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $q$ 为一个给定的实数, 满足 $\frac{1+\sqrt{5}}{2}<q<2$. 数列 $\left\{p_n\right\}$ 定义如下: 若正整数 $n$ 的二进制表示是 $n=2^m+a_{m-1} \cdot 2^{m-1}+\cdots+a_1 \cdot 2+a_0$, 这里 $a_i \in\{0,1\}$. 则 $p_n=q^m+a_{m-1} \cdot q^{m-1}+\cdots+a_1 \cdot q+a_0$. 证明:存在无穷多个正整数 $k$, 使得不存在正整数 $l$, 满足 $p_{2 k}<p_l<p_{2 k+1}$.
+%%<SOLUTION>%%
+证明:对 $m \in \mathbf{N}^*$, 设二进制表示下 $2 k=(\underbrace{10 \cdots 10}_{m \text { 个10 }})_2$, 我们证明不存在 $l \in \mathbf{N}^*$, 使得 $p_{2 k}<p_l<p_{2 k+1}$.
+事实上, 对这样的 $k \in \mathbf{N}^*$, 有
+$$
+p_{2 k}=q^{2 m-1}+q^{2 m-3}+\cdots+q, p_{2 k+1}=p_{2 k}+1 .
+$$
+如果存在 $l \in \mathbf{N}^*$, 使得 $p_{2 k}<p_l<p_{2 k+1}$, 设 $l$ 的二进制表示为 $l=\sum_{i=0}^t a_i \cdot 2^i$, $a_i \in\{0,1\}, a_t=1$, 则 $p_l=\sum_{i=0}^t a_i \cdot q^i$.
+(1) 若 $m=1$, 则 $q<p_l<q+1$, 这时, 如果 $t \geqslant 2$, 那么 $p_l \geqslant q^2>q+1$ (因为 $\frac{1+\sqrt{5}}{2}<q<2$, 有 $\left.q+1<q^2\right)$, 矛盾.
+如果 $t=1$, 那么 $p_l=q$ 或 $q+1$, 亦矛盾.
+(2)设 $m-1(m \geqslant 2)$ 时, 可以推出矛盾, 考虑 $m$ 的情形.
+若 $t \geqslant 2 m$, 则 $p_l \geqslant q^{2 m} \geqslant q^{2 m-1}+q^{2 m-2} \geqslant q^{2 m-1}+q^{2 m-3}+q^{2 m-4} \geqslant \cdots \geqslant q^{2 m-1}+\cdots+q+1=p_{2 k+1}$, 矛盾.
+若 $t \leqslant 2 m-2$, 则 $p_l \leqslant q^{2 m-2}+q^{2 m-3}+\cdots+1=\left(q^{2 m-2}+q^{2 m-3}\right)+ \left(q^{2 m-4}+q^{2 m-5}\right)+\cdots+\left(q^2+q\right)+1 \leqslant q^{2 m-1}+q^{2 m-3}+\cdots+q^3+1<q^{2 m-1}+\cdots+ q^3+q=p_{2 k}$,矛盾.
+上述推导中, 都用到 $q^{i+2} \geqslant q^{i+1}+q^i, i=0,1,2, \cdots$.
+所以 $t=2 m-1$, 这时, 记 $l^{\prime}=l-2^{2 m-1}=\sum_{i=0}^{t-1} a_i \cdot 2^i$, 进而, 有 $p_{l^{\prime}}=p_l- q^{2 m-1}$, 于是, 由 $p_{2 k}<p_l<p_{2 k+1}$ 知
+$$
+p_{2(k-1)}=q^{2 m-3}+\cdots+q^3+q<p_{l^{\prime}}<p_{2(k-1)}+1 .
+$$
+与归纳假设不符.
+综上可知, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 是否存在一个由正整数组成的数列 $\left\{a_n\right\}$, 使得每一个正整数都在该数列中恰好出现一次, 并且对任意 $k \in \mathbf{N}^*$, 都有 $k \mid\left(a_1+\cdots+a_k\right)$ ?
+%%<SOLUTION>%%
+解:存在这样的数列.
+我们采用递归方法来构造: 取 $a_1=1$, 现设 $a_1, a_2, \cdots, a_m$ (两两不同) 已取定, 令 $t$ 为不在 $a_1, \cdots, a_m$ 中出现的最小正整数.
+由于 $(m+1, m+2)=1$, 故利用中国剩余定理可知: 存在无穷多个正整数 $r$, 使得 (记 $s=a_1+\cdots+a_m$ )
+$$
+\left\{\begin{array}{l}
+s+r \equiv 0(\bmod m+1), \\
+s+r+t \equiv 0(\bmod m+2) .
+\end{array}\right.
+$$
+取这样的一个 $r$, 使得 $r>\max \left\{a_1, \cdots, a_m, t\right\}$, 令 $a_{m+1}=r, a_{m+2}=t$. 依此定义的数列即符合要求.
+说明利用递推方法来处理存在性问题本质上还是一种直接构造的技 巧.
+本题中定义的数列依次写出可以是 $1,3,2,10,4, \cdots$, 每次增加两项的做法可确保不重复地遍经所有正整数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 一个由整数组成的数列 $\left\{a_n\right\}$ 满足: 对任意下标 $k \geqslant 2$, 都有 $0 \leqslant a_k \leqslant k-1$, 并且 $a_1+\cdots+a_k \equiv 0(\bmod k)$. 证明: 无论初始值 $a_1$ 如何选取,都存在正整数 $m$, 使得该数列从第 $m$ 项起变为常数.
+%%<SOLUTION>%%
+证明:出发点是去证: 对任意 $a_1 \in \mathbf{Z}$, 存在下标 $k$, 使得 $a_1+\cdots+a_k=d k$, 其中 $0 \leqslant d<k$ (1).
+如果上述结论获证,那么 $a_1+\cdots+a_k+d=d \cdot(k+1)$, 而 $a_{k+1}$ 是 $\{0,1$, $2, \cdots, k\}$ 中满足 $a_1+\cdots+a_{k+1} \equiv 0(\bmod k+1)$ 的唯一整数, 于是 $a_{k+1}=d$. 依此递推,就可证出: 当 $n \geqslant k+1$ 时,都有 $a_n=d$.
+现在来证(1)成立.
+若否, 设存在 $a_1$, 使得满足 (1)的下标 $k$ 不存在.
+由于当 $a_1<0$ 时, 如果数列 $\left\{a_n\right\}$ 不是从某一项开始变为 0 , 那么 $\left\{a_n\right\}$ 中有无穷多项为正整数, 因此, 存在 $m \in \mathbf{N}^*$, 使得 $a_1+\cdots+a_m \geqslant 0$, 从而, 可不妨设 $a_1>0$ (注意, 若 $a_1=0$, 则可知对任意 $n \in \mathbf{N}^*$, 都有 $\left.a_n=0\right)$, 此时, 对任意 $m \in \mathbf{N}^*$, 都有 $a_1+a_2+\cdots+a_m>0$.
+由条件 $a_1+\cdots+a_m \equiv 0(\bmod m)$, 可设 $a_1+\cdots+a_m=d_m \cdot m$, 结合反设中没有下标 $k$ 符合 (1), 可知对任意 $m \in \mathbf{N}^*$, 都有 $d_m \geqslant m$, 故 $a_1+\cdots+a_m \geqslant m^2$. 利用 $m \geqslant 2$ 时, 有 $a_m \leqslant m-1$, 得
+$$
+m^2 \leqslant a_1+\cdots+a_m \leqslant a_1+1+2+\cdots+(m-1)=a_1+\frac{m(m-1)}{2} .
+$$
+导致 $a_1 \geqslant \frac{m(m+1)}{2}$, 此式不能对所有 $m \in \mathbf{N}^*$ 都成立, 所得矛盾表明 (1) 成立.
+综上可知, 命题成立.
+说明利用反证法(或抽屉原则等)是间接得到存在性的基本方法, 在处理不存在问题时就更常用了.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 数列 $\left\{a_n\right\}$ 定义如下: 若正整数 $n$ 在二进制表示下,数码 1 出现偶数次, 则 $a_n=0$; 否则 $a_n=1$. 证明: 不存在正整数 $k 、 m$, 使得对任意 $j \in\{0,1$, $2, \cdots, m-1\}$, 都有
+$$
+a_{k+j}=a_{k+m+j}=a_{k+2 m+j} . \label{eq1}
+$$
+%%<SOLUTION>%%
+证明:利用 $\left\{a_n\right\}$ 的定义可知
+$$
+\left\{\begin{array}{l}
+a_{2 n} \equiv a_n(\bmod 2), \\
+a_{2 n+1} \equiv a_{2 n}+1 \equiv a_n+1(\bmod 2) .
+\end{array}\right. \label{eq2}
+$$
+如果存在 $k 、 m \in \mathbf{N}^*$, 使得对 $j \in\{0,1, \cdots, m-1\}$ 都有式\ref{eq1}成立, 那么由最小数原理,我们可设 $(k, m)$ 是这样的正整数对中使 $k+m$ 最小的数对.
+情形一 $m$ 为偶数, 设 $m=2 t, t \in \mathbf{N}^*$.
+若 $k$ 为偶数, 在式\ref{eq1}中取 $j=0,2, \cdots, 2(t-1)$, 则 $0 \leqslant \frac{j}{2} \leqslant t-1$, 且
+$$
+a_{k+j}=a_{k+m+j}=a_{k+2 m+j},
+$$
+由式\ref{eq2}得 $a \frac{k}{2}+\frac{j}{2}=a \frac{k}{2}+t+\frac{j}{2}=a \frac{k}{2}+2 t+\frac{j}{2}$, 这表明 $\left(\frac{k}{2}, \frac{m}{2}\right)$ 也是使 式\ref{eq1} 对 $0 \leqslant j \leqslant \frac{m}{2}-$ 1 都成立的正整数对, 与 $k+m$ 的最小性矛盾.
+若 $k$ 为奇数,在式\ref{eq1}中取 $j=1,3, \cdots, 2 t-1$, 同上讨论可知
+$$
+a \frac{k+1}{2}+\frac{j-1}{2}=a \frac{k+1}{2}+\iota+\frac{j-1}{2}=a \frac{k+1}{2}+2 t+\frac{j-1}{2},
+$$
+表明 $\left(\frac{k+1}{2}, \frac{m}{2}\right)$ 也使(1)对 $0 \leqslant j \leqslant \frac{m}{2}-1$ 都成立, 与 $k+m$ 的最小性矛盾.
+情形二 $m$ 为奇数.
+当 $m=1$ 时, 要求 $a_k=a_{k+1}=a_{k+2}$, 这时如果 $k$ 为偶数, 那么 $a_{2 n}= a_{2 n+1} \equiv a_{2 n}+1(\bmod 2)$, 矛盾; 如果 $k$ 为奇数, 设 $k=2 n+1$, 那么 $a_{2 n+2}= a_{2 n+3} \equiv a_{2 n+2}+1(\bmod 2)$,亦矛盾.
+当 $m \geqslant 3$ 时, 在 式\ref{eq1} 中令 $j=0,1,2$, 可得
+$$
+\left\{\begin{array}{l}
+a_k=a_{k+m}=a_{k+2 m}, \label{eq3}\\
+a_{k+1}=a_{k+m+1}=a_{k+2 m+1}, \label{eq4}\\
+a_{k+2}=a_{k+m+2}=a_{k+2 m+2} . \label{eq5}
+\end{array}\right.
+$$
+如果 $k$ 为偶数, 设 $k=2 n, m=2 t+1$, 那么由 式\ref{eq2} 知 $a_{k+1} \neq a_k, a_{k+m+1} \neqa_{k+m+2}$, 这样结合 式\ref{eq3}、\ref{eq4}、式\ref{eq5} 可知
+$$
+a_k=a_{k+m+2}=a_{k+2} . \label{eq6}
+$$
+(注意,这里用到数列之中的每一项都为 0 或 1.)
+现在, 若 $n$ 为偶数, 设 $n=2 t$, 则 $a_{k+2}=a_{4 t+2}=a_{2 t+1} \equiv a_{2 t}+1 \equiv a_{4 t}+1 \equiv a_k+1(\bmod 2)$, 与 式\ref{eq6} 矛盾; 若 $n$ 为奇数, 则由 $m$ 为奇数可知 $k+2 m \equiv 0(\bmod$ 4 ), 类似讨论可得 $a_{k+2 m} \neq a_{k+2 m+2}$, 结合 式\ref{eq3}、\ref{eq5}、式\ref{eq6} 亦得矛盾.
+如果 $k$ 为奇数,结合 $m$ 为奇数, 由式\ref{eq2}可知 $a_{k+m} \neq a_{k+m+1}, a_{k+1} \neq a_{k+2}$, 利用 式\ref{eq3}、\ref{eq4}、式\ref{eq5} 得
+$$
+a_k=a_{k+m}=a_{k+2} .
+$$
+现在, 若 $k \equiv 1(\bmod 4)$, 则由 式\ref{eq7} 的 $a_k=a_{k+2}$ 可推出矛盾; 若 $k \equiv 3(\bmod 4)$, 则由 $m$ 为奇数可知 $k+2 m \equiv 1(\bmod 4)$, 故 $a_{k+2 m} \neq a_{k+2 m+2}$, 即 $a_k \neq a_{k+2}$ 与 式\ref{eq7}矛盾.
+综上可知, 命题成立.
+%%PROBLEM_END%%
+
+

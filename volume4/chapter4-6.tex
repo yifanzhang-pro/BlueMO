@@ -1,0 +1,564 @@
+
+%%TEXT_BEGIN%%
+4.6 利用平均值不等式与柯西不等式解题.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $a, b, c$ 为实数, 满足 $a^2+2 b^2+3 c^2=\frac{3}{2}$, 求证:
+$$
+3^{-a}+9^{-b}+27^{-c} \geqslant 1 .
+$$
+%%<SOLUTION>%%
+证明:由平均值不等式, 得
+$$
+3^{-a}+9^{-b}+27^{-c} \geqslant 3 \sqrt[3]{3^{-a-2 b-3 c}}=3^{\frac{3-a-2 b-3 c}{3}} .
+$$
+再由柯西不等式, 得
+$$
+\begin{aligned}
+(a+2 b+3 c)^2 & =(a+\sqrt{2} \cdot \sqrt{2} b+\sqrt{3} \cdot \sqrt{3} c)^2 \\
+& \leqslant(1+2+3)\left(a^2+2 b^2+3 c^2\right) \\
+& =6 \cdot \frac{3}{2}=9 .
+\end{aligned}
+$$
+从而 $a+2 b+3 c \leqslant 3,3-a-2 b-3 c \geqslant 0,3^{\frac{3-a-2 b-3 c}{3}} \geqslant 3^0=1$. 故命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 求
+$$
+x \sqrt{1-y^2}+y \sqrt{1-x^2}
+$$
+的最大值.
+%%<SOLUTION>%%
+解:由柯西不等式, 得
+$$
+\left|x \sqrt{1-y^2}+y \sqrt{1-x^2}\right|^2 \leqslant\left(x^2+y^2\right)\left(2-x^2-y^2\right) .
+$$
+再由平均值不等式, 得
+$$
+\left|x \sqrt{1-y^2}+y \sqrt{1-x^2}\right| \leqslant \frac{x^2+y^2+2-x^2-y^2}{2}=1 .
+$$
+若 $x=\frac{1}{2}, y=\frac{\sqrt{3}}{2}$, 则
+$$
+x \sqrt{1-y^2}+y \sqrt{1-x^2}=1,
+$$
+于是所求的最大值为 1 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $a, b, c$ 为正数, 且满足 $a b c=1$, 求证:
+$$
+\frac{1}{a^3(b+c)}+\frac{1}{b^3(a+c)}+\frac{1}{c^3(a+b)} \geqslant \frac{3}{2} .
+$$
+%%<SOLUTION>%%
+证明:由柯西不等式, 得
+$$
+\begin{aligned}
+& {\left[\frac{1}{a^3(b+c)}+\frac{1}{b^3(a+c)}+\frac{1}{c^3(a+b)}\right] \cdot[a(b+c)+b(a+c)+c(a+b)] } \\
+\geqslant & \left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right)^2=(a b+b c+a c)^2,
+\end{aligned}
+$$
+所以由平均值不等式, 得
+$$
+\begin{aligned}
+& \frac{1}{a^3(b+c)}+\frac{1}{b^3(a+c)}+\frac{1}{c^3(a+b)} . \\
+\geqslant & \frac{1}{2}(a b+b c+c a) \\
+\geqslant & \frac{1}{2} \cdot 3 \cdot \sqrt[3]{a^2 b^2 c^2}=\frac{3}{2} .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $x_i, i=1,2, \cdots, n$ 为正数, 且满足 $\sum_{i=1}^n x_i=a, a \in \mathbf{R}^{+}, m, n \in \mathbf{N}^*, n \geqslant 2$, 求证:
+$$
+\sum_{i=1}^n \frac{x_i^m}{a-x_i} \geqslant \frac{a^{m-1}}{(n-1) n^{m-2}} .
+$$
+%%<SOLUTION>%%
+证明:当 $m=1$ 时, 即证明
+$$
+\sum_{i=1}^n \frac{x_i}{a-x_i} \geqslant \frac{n}{n-1} .
+$$
+由于
+$$
+\sum_{i=1}^n \frac{x_i}{a-x_i}=\sum_{i=1}^n\left[\left(\frac{a}{a-x_i}\right)-1\right]=\sum_{i=1}^n \frac{a}{a-x_i}-n,
+$$
+由柯西不等式, 得
+$$
+\sum_{i=1}^n \frac{a}{a-x_i} \cdot \sum_{i=1}^n\left(a-x_i\right) \geqslant a n^2,
+$$
+即
+$$
+\sum_{i=1}^n \frac{a}{a-x_i} \geqslant \frac{a n^2}{\sum_{i=1}^n\left(a-x_i\right)}=\frac{a n^2}{(n-1) a},
+$$
+所以
+$$
+\sum_{i=1}^n \frac{x_i}{a-x_i} \geqslant \frac{a n^2}{n a-a}-n=\frac{n}{n-1},
+$$
+于是命题成立.
+当 $m \geqslant 2$ 时, 由柯西不等式, 得
+$$
+\sum_{i=1}^n \frac{x_i^m}{a-x_i} \cdot \sum_{i=1}^n\left(a-x_i\right) \geqslant\left(\sum_{i=1}^n x_i^{\frac{m}{2}}\right)^2 .
+$$
+再由幕平均值不等式, 得
+$$
+\left(\frac{1}{n} \sum_{i=1}^n x_i^{\frac{m}{2}}\right)^2 \geqslant\left[\frac{1}{n}\left(\sum_{i=1}^n x_i\right)^{\frac{m}{2}}\right]^2=\frac{a^m}{n^m} .
+$$
+由于 $\sum_{i=1}^n\left(a-x_i\right)=(n-1) a$, 于是
+$$
+\sum_{i=1}^n \frac{x_i^m}{a-x_i} \geqslant \frac{a^{m-1}}{(n-1) n^{m-2}} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设实数 $x_i$ 满足 $\left|x_i\right|<1(i=1,2, \cdots, n), n \geqslant 2$, 求证:
+$$
+\sum_{i=1}^n \frac{1}{1-\left|x_i\right|^n} \geqslant \frac{n}{1-\prod_{i=1}^n x_i} .
+$$
+%%<SOLUTION>%%
+证明:由柯西不等式, 得
+$$
+\sum_{i=1}^n \frac{1}{1-\left|x_i\right|^n} \cdot \sum_{i=1}^n\left(1-\left|x_i\right|^n\right) \geqslant n^2 .
+$$
+因此欲证原不等式只要证明即证
+$$
+\begin{gathered}
+\frac{n^2}{\sum_{i=1}^n\left(1-\left|x_i\right|^n\right)} \geqslant \frac{n}{1-\prod_{i=1}^n x_i}, \\
+n-n \prod_{i=1}^n x_i \geqslant \sum_{i=1}^n\left(1-\left|x_i\right|^n\right), \\
+\sum_{i=1}^n\left|x_i\right|^n \geqslant n \prod_{i=1}^n x_i .
+\end{gathered}
+$$
+由平均值不等式知上述不等式成立, 故原命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 已知正数 $x_i$ 满足 $\sum_{i=1}^n \frac{1}{1+x_i}=1$, 证明:
+$$
+\prod_{i=1}^n x_i \geqslant(n-1)^n \text {. }
+$$
+%%<SOLUTION>%%
+证明:由柯西不等式, 得
+$$
+\sum_{i=1}^n \frac{1}{1+x_i} \cdot \sum_{i=1}^n \frac{1+x_i}{x_i} \geqslant\left(\sum_{i=1}^n \frac{1}{\sqrt{x_i}}\right)^2,
+$$
+即
+$$
+\sum_{i=1}^n \frac{1}{x_i}+n \geqslant \sum_{i=1}^n \frac{1}{x_i}+2 \sum_{1 \leqslant i<j \leqslant n} \frac{1}{\sqrt{x_i x_j}} .
+$$
+再由平均值不等式, 得
+$$
+n \geqslant 2 \sum_{1 \leqslant i<j \leqslant n} \frac{1}{\sqrt{x_i x_j}} \geqslant 2 \cdot \frac{n(n-1)}{2} \cdot \sqrt[\frac{n(n-1)}{2}]{\prod_{i=1}^n\left(\frac{1}{\sqrt{x_i}}\right)^{n-1}},
+$$
+由此得到
+$$
+\prod_{i=1}^n x_i \geqslant(n-1)^n
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $x, y, z \geqslant 0$, 且 $x^2+y^2+z^2=1$, 求证:
+$$
+\frac{x}{1-y z}+\frac{y}{1-x z}+\frac{z}{1-x y} \leqslant \frac{3 \sqrt{3}}{2} \text {. }
+$$
+%%<SOLUTION>%%
+解:设 $S=\frac{x}{1-y z}+\frac{y}{1-x z}+\frac{z}{1-x y}$, 如果 $x=0(y=0$ 或 $z=0)$, 则
+$$
+S=y+z<2<\frac{3}{2} \sqrt{3},
+$$
+所以设 $x y z \neq 0$, 使得 $x, y, z \in(0,1)$. 因为
+$$
+\frac{x}{1-y z}=x+\frac{z y x}{1-y z},
+$$
+所以 $S=x+y+z+x y z\left(\frac{1}{1-y z}+\frac{1}{1-z x}+\frac{1}{1-x y}\right)$.
+因为
+$$
+\begin{aligned}
+1-y z & \geqslant 1-\frac{1}{2}\left(y^2+z^2\right) \\
+& =\frac{1}{2}\left(1+x^2\right) \\
+& =\frac{1}{2}\left(2 x^2+y^2+z^2\right) \\
+& \geqslant 2 \sqrt[4]{x^2 x^2 y^2} z^2=2 x \sqrt{y z},
+\end{aligned}
+$$
+由平均值不等式, 得
+$$
+\begin{aligned}
+& x y z\left(\frac{1}{1-y z}+\frac{1}{1-z x}+\frac{1}{1-y x}\right) \\
+\leqslant & \frac{x y z}{2}\left(\frac{1}{x \sqrt{y z}}+\frac{1}{y \sqrt{z x}}+\frac{1}{z \sqrt{x y}}\right)=\frac{1}{2}(\sqrt{y z}+\sqrt{z x}+\sqrt{x y}) \\
+\leqslant & \frac{1}{2}\left(\frac{y+z}{2}+\frac{z+x}{2}+\frac{x+y}{2}\right)=\frac{1}{2}(x+y+z) .
+\end{aligned}
+$$
+再由柯西不等式, 得
+$$
+S \leqslant \frac{3}{2}(x+y+z) \leqslant \frac{3}{2}\left(1^2+1^2+1^2\right)^{\frac{1}{2}}\left(x^2+y^2+z^2\right)^{\frac{1}{2}}=\frac{3}{2} \sqrt{3},
+$$
+故命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设 $a, b, c>0$, 求证:
+$$
+\sum \sqrt{\frac{5 a^2+8 b^2+5 c^2}{4 a c}} \geqslant 3 \sqrt[9]{\frac{8(a+b)^2(b+c)^2(c+a)^2}{(a b c)^2}} .
+$$
+%%<SOLUTION>%%
+证明:由柯西不等式及均值不等式有
+$$
+\begin{aligned}
+5 a^2+8 b^2+5 c^2 & \geqslant 4\left(a^2+b^2\right)+4\left(b^2+c^2\right) \\
+& \geqslant 2(a+b)^2+2(b+c)^2 \\
+& \geqslant 4(a+b)(b+c),
+\end{aligned}
+$$
+所以
+$$
+\sum \sqrt{\frac{5 a^2+8 b^2+5 c^2}{4 a c}} \geqslant \sum \sqrt{\frac{(a+b)(b+c)}{a c}} \geqslant 3 \sqrt[6]{\frac{(a+b)^2(b+c)^2(c+a)^2}{(a b c)^2}},
+$$
+只需要证明
+$$
+\sqrt[6]{\frac{(a+b)^2(b+c)^2(c+a)^2}{(a b c)^2}} \geqslant \sqrt[9]{\frac{8(a+b)^2(b+c)^2(c+a)^2}{(a b c)^2}},
+$$
+等价于 $(a+b)(b+c)(c+a) \geqslant 8 a b c$, 即 $\sum a(b-c)^2 \geqslant 0$, 明显成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 已知数列 $\left\{a_n\right\}$ 满足 $a_1>0, a_2>0, a_{n+2}=\frac{2}{a_n+a_{n+1}} . M_n= \max \left\{a_n, \frac{1}{a_n}, \frac{1}{a_{n+1}}, a_{n+1}\right\}$. 求证:
+$$
+M_{n+3} \leqslant \frac{3}{4} M_n+\frac{1}{4} .
+$$
+%%<SOLUTION>%%
+证明:由于
+$$
+\begin{gathered}
+M_{n+3}=\max \left\{a_{n+3}, a_{n+4}, \frac{1}{a_{n+3}}, \frac{1}{a_{n+4}}\right\}, \\
+a_{n+3} \leqslant \frac{3}{4} M_n+\frac{1}{4}, \\
+a_{n+4} \leqslant \frac{3}{4} M_n+\frac{1}{4},
+\end{gathered}
+$$
+我们需证
+$$
+\begin{aligned}
+& a_{n+3} \leqslant \frac{3}{4} M_n+\frac{1}{4} \\
+& a_{n+4} \leqslant \frac{3}{4} M_n+\frac{1}{4}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& \frac{1}{a_{n+3}} \leqslant \frac{3}{4} M_n+\frac{1}{4}, \\
+& \frac{1}{a_{n+4}} \leqslant \frac{3}{4} M_n+\frac{1}{4} .
+\end{aligned}
+$$
+由于
+$$
+\begin{aligned}
+a_{n+3} & =\frac{2}{a_{n+1}+a_{n+2}} \leqslant \frac{\frac{1}{a_{n+1}}+\frac{1}{a_{n+2}}}{2} \\
+& =\frac{1}{2}\left(\frac{1}{a_{n+1}}+\frac{a_n+a_{n+1}}{2}\right) \\
+& =\frac{1}{4}\left(a_{n+1}+\frac{1}{a_{n+1}}\right)+\frac{1}{4} \cdot \frac{1}{a_{n+1}}+\frac{1}{4} a_n \\
+& \leqslant \frac{1}{4}\left[\min \left(a_{n+1}, \frac{1}{a_{n+1}}\right)+\max \left(a_{n+1}, \frac{1}{a_{n+1}}\right)\right]+\frac{1}{4} M_n+\frac{1}{4} M_n \\
+& \leqslant \frac{1}{4}\left(1+M_n\right)+\frac{1}{2} M_n \\
+& =\frac{3}{4} M_n+\frac{1}{4} ; \\
+\frac{1}{a_{n+3}} & =\frac{a_{n+1}+a_{n+2}}{2}=\frac{1}{2} \cdot \frac{1}{a_{n+1}}+\frac{1}{a_n+a_{n+1}} \\
+& \leqslant \frac{1}{2}+\frac{\frac{1}{a_n}+\frac{1}{a_{n+1}}}{4} \\
+& \leqslant \frac{1}{4}\left(a_{n+1}+\frac{1}{a_{n+1}}\right)+\frac{1}{4}\left(\frac{1}{a_n}+\frac{1}{a_{n+1}}\right) \\
+& =\frac{1}{4}\left[\max \left(a_{n+1}, \frac{1}{a_{n+1}}\right)+\min \left(a_{n+1}, \frac{1}{a_{n+1}}\right)\right]+\frac{1}{4}\left(\frac{1}{a_n}+\frac{1}{a_{n+1}}\right) \\
+& \leqslant \frac{1}{4}\left(M_n+1\right)+\frac{1}{4} \cdot 2 M_n \\
+& =\frac{3}{4} M_n+\frac{1}{4} ; \\
+& =\frac{1}{a_{n+2}+a_{n+3}} \leqslant \frac{a_n+a_{n+1}}{a_n}+\frac{1}{2} a_{n+1}+\frac{1}{2} \cdot \frac{1}{a_n+a_{n+1}}+a_{n+2}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& \leqslant \frac{1}{4} a_n+\frac{1}{2} a_{n+1}+\frac{1}{8}\left(\frac{1}{a_n}+\frac{1}{a_{n+1}}\right) \\
+& =\frac{1}{8}\left(a_n+\frac{1}{a_n}\right)+\frac{1}{8}\left(a_{n+1}+\frac{1}{a_{n+1}}\right)+\frac{1}{8} a_n+\frac{3}{8} a_{n+1} \\
+& =\frac{1}{8}\left[\max \left(a_n, \frac{1}{a_n}\right)+\min \left(a_n, \frac{1}{a_n}\right)\right] \\
+& +\frac{1}{8}\left[\max \left(a_{n+1}, \frac{1}{a_{n+1}}\right)+\min \left(a_{n+1}, \frac{1}{a_{n+1}}\right)\right]+\frac{1}{8} a_n+\frac{3}{8} a_{n+1} \\
+& \leqslant \frac{1}{8}\left(M_n+1\right)+\frac{1}{8}\left(M_n+1\right)+\frac{1}{8} M_n+\frac{3}{8} M_n \\
+& =\frac{3}{4} M_n+\frac{1}{4} ; \\
+& \frac{1}{a_{n+4}}=\frac{a_{n+2}+a_{n+3}}{2}=\frac{1}{a_n+a_{n+1}}+\frac{1}{a_{n+1}+a_{n+2}} \\
+& \leqslant \frac{\frac{1}{a_n}+\frac{1}{a_{n+1}}}{4}+\frac{\frac{1}{a_{n+1}}+\frac{1}{a_{n+2}}}{4} \\
+& =\frac{1}{4} \cdot \frac{1}{a_n}+\frac{1}{2} \cdot \frac{1}{a_{n+1}}+\frac{1}{4} \cdot \frac{1}{a_{n+2}} \\
+& =\frac{1}{4} \cdot \frac{1}{a_n}+\frac{1}{2} \cdot \frac{1}{a_{n+1}}+\frac{1}{8}\left(a_n+a_{n+1}\right) \\
+& =\frac{1}{8}\left(a_n+\frac{1}{a_n}\right)+\frac{1}{8}\left(a_{n+1}+\frac{1}{a_{n+1}}\right)+\frac{1}{8} \cdot \frac{1}{a_n}+\frac{3}{8} \cdot \frac{1}{a_{n+1}} \\
+& =\frac{1}{8}\left[\max \left(a_n, \frac{1}{a_n}\right)+\min \left(a_n, \frac{1}{a_n}\right)\right] \\
+& +\frac{1}{8}\left[\max \left(a_{n+1}, \frac{1}{a_{n+1}}\right)+\min \left(a_{n+1}, \frac{1}{a_{n+1}}\right)\right]+\frac{1}{8} \cdot \frac{1}{a_n}+\frac{3}{8} \cdot \frac{1}{a_{n+1}} \\
+& \leqslant \frac{1}{8}\left(M_n+1\right)+\frac{1}{8}\left(M_n+1\right)+\frac{1}{8} M_n+\frac{3}{8} M_n \\
+& =\frac{3}{4} M_n+\frac{1}{4} \text {. } \\
+&
+\end{aligned}
+$$
+因此, $M_{n+3} \leqslant \frac{3}{4} M_n+\frac{1}{4}$.
+%%<REMARK>%%
+注:当 $x, y>0$ 时, $x+y=\max (x, y)+\min (x, y)$; 当 $x>0$ 时, $\min \left(x, \frac{1}{x}\right) \leqslant 1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 已知正实数 $x 、 y 、 z$ 满足 $\sqrt{x}+\sqrt{y}+\sqrt{z}=1$. 求证:
+$$
+\frac{x^2+y z}{\sqrt{2 x^2(y+z)}}+\frac{y^2+z x}{\sqrt{2 y^2(z+x)}}+\frac{z^2+x y}{\sqrt{2 z^2(x+y)}} \geqslant 1 .
+$$
+%%<SOLUTION>%%
+证明:证法 1 注意到
+$$
+\begin{aligned}
+& \frac{x^2+y z}{\sqrt{2 x^2(y+z)}} \\
+= & \frac{x^2-x(y+z)+y z}{\sqrt{2 x^2(y+z)}}+\frac{x(y+z)}{\sqrt{2 x^2(y+z)}} \\
+= & \frac{(x-y)(x-z)}{\sqrt{2 x^2(y+z)}}+\sqrt{\frac{y+z}{2}} \\
+\geqslant & -\frac{(x-y)(x-z)}{\sqrt{2 x^2(y+z)}}+\frac{\sqrt{y}+\sqrt{z}}{2} .
+\end{aligned}
+$$
+同理,
+$$
+\begin{aligned}
+& \frac{y^2+z x}{\sqrt{2 y^2(z+x)}} \geqslant \frac{(y-z)(y-x)}{\sqrt{2 y^2(z+x)}}+\frac{\sqrt{z}+\sqrt{x}}{2}, \\
+& \frac{z^2+x y}{\sqrt{2 z^2(x+y)}} \geqslant \frac{(z-x)(z-y)}{\sqrt{2 z^2(x+y)}}+\frac{\sqrt{x}+\sqrt{y}}{2} .
+\end{aligned}
+$$
+以上三式相加得
+$$
+\begin{aligned}
+& \frac{x^2+y z}{\sqrt{2 x^2(y+z)}}+\frac{y^2+z x}{\sqrt{2 y^2(z+x)}}+\frac{z^2+x y}{\sqrt{2 z^2(x+y)}} \\
+\geqslant & \frac{(x-y)(x-z)}{\sqrt{2 x^2(y+z)}}+\frac{(y-z)(y-x)}{\sqrt{2 y^2(z+x)}}+\frac{(z-x)(z-y)}{\sqrt{2 z^2(x+y)}}+\sqrt{x}+\sqrt{y}+\sqrt{z} \\
+= & \frac{(x-y)(x-z)}{\sqrt{2 x^2(y+z)}}+\frac{(y-z)(y-x)}{\sqrt{2 y^2(z+x)}}+\frac{(z-x)(z-y)}{\sqrt{2 z^2(x+y)}}+1 .
+\end{aligned}
+$$
+从而, 只需证明
+$$
+\frac{(x-y)(x-z)}{\sqrt{2 x^2(y+z)}}+\frac{(y-z)(y-x)}{\sqrt{2 y^2(z+x)}}+\frac{(z-x)(z-y)}{\sqrt{2 z^2(x+y)}} \geqslant 0 .
+$$
+不失一般性, 设 $x \geqslant y \geqslant z$. 于是,
+$$
+\frac{(x-y)(x-z)}{\sqrt{2 x^2(y+z)}} \geqslant 0,
+$$
+且
+$$
+\begin{aligned}
+& \frac{(y-z)(y-x)}{\sqrt{2 y^2(z+x)}}+\frac{(z-x)(z-y)}{\sqrt{2 z^2(x+y)}} \\
+= & \frac{(y-z)(x-z)}{\sqrt{2 z^2(x+y)}}-\frac{(y-z)(x-y)}{\sqrt{2 y^2(z+x)}} \\
+\geqslant & \frac{(y-z)(x-y)}{\sqrt{2 z^2(x+y)}}-\frac{(y-z)(x-y)}{\sqrt{2 y^2(z+x)}} \\
+= & (y-z)(x-y) \cdot\left[\frac{1}{\sqrt{2 z^2(x+y)}}-\frac{1}{\sqrt{2 y^2(z+x)}}\right] . \label{(44)}
+\end{aligned}
+$$
+事实上,由
+$$
+y^2(z+x)=y^2 z+y^2 x \geqslant y z^2+z^2 x=z^2(x+y)
+$$
+可知式 (44) 非负.
+从而,题中不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 已知正实数 $x 、 y 、 z$ 满足 $\sqrt{x}+\sqrt{y}+\sqrt{z}=1$. 求证:
+$$
+\frac{x^2+y z}{\sqrt{2 x^2(y+z)}}+\frac{y^2+z x}{\sqrt{2 y^2(z+x)}}+\frac{z^2+x y}{\sqrt{2 z^2(x+y)}} \geqslant 1 .
+$$
+%%<SOLUTION>%%
+证法 2 根据柯西不等式得
+$$
+\begin{aligned}
+& {\left[\frac{x^2}{\sqrt{2 x^2(y+z)}}+\frac{y^2}{\sqrt{2 y^2(z+x)}}+\frac{z^2}{\sqrt{2 z^2(x+y)}}\right] . } \\
+& {[\sqrt{2(y+z)}+\sqrt{2(z+x)}+\sqrt{2(x+y)}] } \\
+\geqslant & (\sqrt{x}+\sqrt{y}+\sqrt{z})^2=1 \\
+& {\left[\frac{y z}{\sqrt{2 x^2(y+z)}}+\frac{z x}{\sqrt{2 y^2(z+x)}}+\frac{x y}{\sqrt{2 z^2(x+y)}}\right] . } \\
+& {[\sqrt{2(y+z)}+\sqrt{2(z+x)}+\sqrt{2(x+y)}] } \\
+\geqslant & \left(\sqrt{\frac{y z}{x}}+\sqrt{\frac{z x}{y}}+\sqrt{\frac{x y}{z}}\right)^2 .
+\end{aligned}
+$$
+和
+$$
+\begin{aligned}
+& {\left[\frac{y z}{\sqrt{2 x^2(y+z)}}+\frac{z x}{\sqrt{2 y^2(z+x)}}+\frac{x y}{\sqrt{2 z^2(x+y)}}\right] . } \\
+& {[\sqrt{2(y+z)}+\sqrt{2(z+x)}+\sqrt{2(x+y)}] } \\
+\geqslant & \left(\sqrt{\frac{y z}{x}}+\sqrt{\frac{z x}{y}}+\sqrt{\frac{x y}{z}}\right)^2 .
+\end{aligned}
+$$
+以上两式相加得
+$$
+\begin{aligned}
+& {\left[\frac{x^2+y z}{\sqrt{2 x^2(y+z)}}+\frac{y^2+z x}{\sqrt{2 y^2(z+x)}}+-\frac{z^2+x y}{\sqrt{2 z^2(x+y)}}\right] . } \\
+& {[\sqrt{2(y+z)}+\sqrt{2(z+x)}+\sqrt{2(x+y)}] } \\
+\geqslant & 1+\left(\sqrt{\frac{y z}{x}}+\sqrt{\frac{z x}{y}}+\sqrt{\frac{x y}{z}}\right)^2 \\
+\geqslant & 2\left(\sqrt{\frac{y z}{x}}+\sqrt{\frac{z x}{y}}+\sqrt{\frac{x y}{z}}\right) .
+\end{aligned}
+$$
+从而, 只需证明
+$$
+\begin{aligned}
+& 2\left(\sqrt{\frac{y z}{x}}+\sqrt{\frac{z x}{y}}+\sqrt{\frac{x y}{z}}\right) \\
+\geqslant & \sqrt{2(y+z)}+\sqrt{2(z+x)}+\sqrt{2(x+y)} .
+\end{aligned}
+$$
+根据均值不等式得
+$$
+\begin{aligned}
+& {\left[\sqrt{\frac{y z}{x}}+\left(\frac{1}{2} \sqrt{\frac{z x}{y}}+\frac{1}{2} \sqrt{\frac{x y}{z}}\right)\right]^2 } \\
+& \geqslant 4 \sqrt{\frac{y z}{x}}\left(\frac{1}{2} \sqrt{\frac{z x}{y}}+\frac{1}{2} \sqrt{\frac{x y}{z}}\right)=2(y+z), \\
+& \sqrt{\frac{y z}{x}}+\left(\frac{1}{2} \sqrt{\frac{z x}{y}}+\frac{1}{2} \sqrt{\frac{x y}{2}}\right) \geqslant \sqrt{2(y+z)} .
+\end{aligned}
+$$
+即同理,
+$$
+\begin{aligned}
+& \sqrt{\frac{z x}{y}}+\left(\frac{1}{2} \sqrt{\frac{x y}{z}}+\frac{1}{2} \sqrt{\frac{y z}{x}}\right) \geqslant \sqrt{2(z+x)}, \\
+& \sqrt{\frac{x y}{2}}+\left(\frac{1}{2} \sqrt{\frac{y z}{x}}+\frac{1}{2} \sqrt{\frac{z x}{y}}\right) \geqslant \sqrt{2(x+y)} .
+\end{aligned}
+$$
+以上三式相加得
+$$
+\begin{aligned}
+& 2\left(\sqrt{\frac{y z}{x}}+\sqrt{\frac{z x}{y}}+\sqrt{\frac{x y}{z}}\right) \\
+\geqslant & \sqrt{2(y+z)}+\sqrt{2(z+x)}+\sqrt{2(x+y)} .
+\end{aligned}
+$$
+从而, 题中不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 设正整数 $n \geqslant 2$. 求常数 $C(n)$ 的最大值, 使得对于所有满足 $x_i \in (0,1)(i=1,2, \cdots, n)$, 且 $\left(1-x_i\right)\left(1-x_j\right) \geqslant \frac{1}{4}(1 \leqslant i<j \leqslant n)$ 的实数 $x_1$, $x_2, \cdots, x_n$, 均有
+$$
+\sum_{i=1}^n x_i \geqslant C(n) \sum_{1 \leqslant i<j \leqslant n}\left(2 x_i x_j+\sqrt{x_i x_j}\right) . \label{(45)}
+$$
+%%<SOLUTION>%%
+解:首先, 取 $x_i=\frac{1}{2}(i=1,2, \cdots, n)$. 代入式 (45)有
+$$
+\frac{n}{2} \geqslant C(n) \mathrm{C}_n^2\left(\frac{1}{2}+\frac{1}{2}\right)
+$$
+于是, $C(n) \leqslant \frac{1}{n-1}$.
+下面证明: $C(n)=\frac{1}{n-1}$ 满足条件.
+由 $1-x_i+1-x_j \geqslant 2 \sqrt{\left(1-x_i\right)\left(1-x_j\right)} \geqslant 1(1 \leqslant i<j \leqslant n)$, 得 $x_i+ x_j \leqslant 1$.
+取和得 $(n-1) \sum_{k=1}^n x_k \leqslant \mathrm{C}_n^2$, 即 $\sum_{k=1}^n x_k \leqslant \frac{n}{2}$.
+故
+$$
+\begin{aligned}
+& \frac{1}{n-1} \sum_{1 \leqslant i<j \leqslant n}\left(2 x_i x_j+\sqrt{x_i x_j}\right) \\
+= & \frac{1}{n-1}\left(2 \sum_{1 \leqslant i<j \leqslant n} x_i x_j+\sum_{1 \leqslant i<j \leqslant n} \sqrt{x_i x_j}\right) \\
+= & \frac{1}{n-1}\left[\left(\sum_{k=1}^n x_k\right)^2-\sum_{k=1}^n x_k^2+\sum_{1 \leqslant i<j \leqslant n} \sqrt{x_i x_j}\right] \\
+\leqslant & \frac{1}{n-1}\left[\left(\sum_{k=1}^n x_k\right)^2-\frac{1}{n}\left(\sum_{k=1}^n x_k\right)^2+\sum_{1 \leqslant i<j \leqslant n} \frac{x_i+x_j}{2}\right] \\
+= & \frac{1}{n-1}\left[\frac{n-1}{n}\left(\sum_{k=1}^n x_k\right)^2+\frac{n-1}{2} \sum_{k=1}^n x_k\right] \\
+= & \frac{1}{n}\left(\sum_{k=1}^n x_k\right)^2+\frac{1}{2} \sum_{k=1}^n x_k \\
+\leqslant & \frac{1}{n}\left(\sum_{k=1}^n x_k\right) \cdot \frac{n}{2}+\frac{1}{2} \sum_{k=1}^n x_k \\
+= & \sum_{k=1}^n x_k .
+\end{aligned}
+$$
+从而, 原不等式成立.
+因此, $C(n)$ 的最大值为 $-\frac{1}{n-1}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 给定整数 $n \geqslant 2$ 和正实数 $a$, 正实数 $x_1, x_2, \cdots, x_n$ 满足 $x_1 x_2 \cdots x_n=1$. 求最小的实数 $M=M(n, a)$, 使得
+$$
+\sum_{i=1}^n \frac{1}{a+S-x_i} \leqslant M
+$$
+恒成立, 其中 $S=x_1+x_2+\cdots+x_n$.
+%%<SOLUTION>%%
+解:首先考虑 $a \geqslant 1$ 的情况, 令 $x_i=y_i^n, y_i>0$, 于是 $y_1 y_2 \cdots y_n=1$, 我们有
+$$
+\left.S-x_i=\sum_{j \neq i} y_j^n \geqslant(n-1)\left(\frac{\sum_{j \neq i} y_j}{n-1}\right)^n \text { (幂平均不等式 }\right)
+$$
+$$
+\begin{aligned}
+& \geqslant(n-1)\left(\frac{\sum_{j \neq i} y_j}{n-1}\right) \cdot \prod_{j \neq i} y_j(\text { 算术平均 } \geqslant \text { 几何平均 }) \\
+& =\frac{\sum_{j \neq i} y_j}{y_i} .
+\end{aligned}
+$$
+于是
+$$
+\sum_{i=1}^n \frac{1}{a+S-x_i} \leqslant \sum_{i=1}^n \frac{y_i}{a y_i+\sum_{j \neq i} y_j} . \label{(46)}
+$$
+当 $a=1$ 时,
+$$
+\sum_{i=1}^n \frac{y_i}{a y_i+\sum_{j \neq i} y_j}=\sum_{i=1}^n \frac{y_i}{\sum_{j=1}^n y_j}=1
+$$
+且当 $x_1=x_2=\cdots=x_n=1$ 时, $\sum_{i=1}^n \frac{1}{a+S-x_i}=1$, 此时 $M=1$.
+下面假设 $a>1$. 令 $z_i=\frac{y_i}{\sum_{j=1}^n y_j}, i=1,2, \cdots, n$, 有 $\sum_{i=1}^n z_i=1$.
+$$
+\begin{aligned}
+& \frac{y_i}{a y_i+\sum_{j \neq i} y_j}=\frac{y_i}{(a-1) y_i+\sum_{j=1}^n y_j} \\
+& =\frac{z_i}{(a-1) z_i+1} \\
+& =\frac{1}{a-1}\left[1-\frac{1}{(a-1) z_i+1}\right] .
+\end{aligned} \label{(47)}
+$$
+由柯西不等式
+$$
+\left\{\sum_{i=1}^n\left[(a-1) z_i+1\right]\right\}\left[\sum_{i=1}^n \frac{1}{(a-1) z_i+1}\right] \geqslant n^2 .
+$$
+而
+$$
+\sum_{i=1}^n\left[(a-1) z_i+1\right]=a-1+n,
+$$
+故
+$$
+\sum_{i=1}^n \frac{1}{(a-1) z_i+1} \geqslant \frac{n^2}{a-1+n} . \label{(48)}
+$$
+结合 (46)、(47)、(48), 我们有
+$$
+\begin{aligned}
+\sum_{i=1}^n \frac{1}{a+S-x_i} & \leqslant \sum_{i=1}^n\left[\frac{1}{a-1}\left(1-\frac{1}{(a-1) z_i+1}\right)\right] \\
+& \leqslant \frac{n}{a-1}-\frac{1}{a-1} \cdot \frac{n^2}{a-1+n} \\
+& =\frac{n}{a-1+n} .
+\end{aligned}
+$$
+当 $x_1=x_2=\cdots=x_n=1$ 时,有
+$$
+\sum_{i=1}^n \frac{1}{a+S-x_i}=\frac{n}{a-1+n}
+$$
+故 $M=\frac{n}{a-1+n}$.
+下面考虑 $a<1$ 的情况: 对任何常数 $\lambda>0$, 函数
+$$
+f(x)=\frac{x}{x+\lambda}=1-\frac{\lambda}{x+\lambda}
+$$
+在区间 $(0,+\infty)$ 上严格单调递增, 故 $f(a)<f(1)$, 即 $\frac{a}{a+\lambda}<-\frac{1}{1+\lambda}$. 于是由 $a=1$ 时的结论,
+$$
+\sum_{i=1}^n \frac{1}{a+S-x_i}=\frac{1}{a} \sum_{i=1}^n \frac{a}{a+S-x_i}<\frac{1}{a} \sum_{i=1}^n \frac{1}{1+S-x_i} \leqslant \frac{1}{a},
+$$
+当 $x_1=x_2=\cdots=x_{n-1}=\varepsilon \rightarrow 0^{+}$, 而 $x_n=\varepsilon^{1-n} \rightarrow+\infty$ 时,
+$$
+\begin{aligned}
+& \lim _{\varepsilon \rightarrow 0^{+}} \sum_{i=1}^n \frac{1}{a+S-x_i} \\
+= & \lim _{\varepsilon \rightarrow 0^{+}}\left[\frac{n-1}{a+\varepsilon^{1-n}+(n-2) \varepsilon}+\frac{1}{a+(n-1) \varepsilon}\right] \\
+= & \frac{1}{a},
+\end{aligned}
+$$
+故 $M=\frac{1}{a}$, 综上所述,
+$$
+M= \begin{cases}\frac{n}{a-1+n}, & \text { 若 } a \geqslant 1, \\ \frac{1}{a}, & \text { 若 } 0<a<1 .\end{cases}
+$$
+%%PROBLEM_END%%
+
+

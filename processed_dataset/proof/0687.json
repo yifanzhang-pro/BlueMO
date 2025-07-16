@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter20.tex",
+    "problem_type": "proof",
+    "problem": "例1. $n$ 名选手进行网球对抗赛, 每名选手至多赛一场,每场比赛两名选手参加,已赛完 $n+1$ 场.\n证明: 至少有一名选手赛过三次.",
+    "solution": "证明: $n$ 名选手用 $n$ 个点 $v_1, v_2, \\cdots, v_n$ 表示, 当且仅当 $v_i, v_j$ 所代表的两名选手比赛过时, 令 $v_i, v_j$ 相邻, 于是得到一个含 $n$ 个顶点的简单图.\n由于总共赛过 $n+1$ 场, 所以图 $G$ 的边数是 $n+1$. 由定理知\n$$\nd\\left(v_1\\right)+d\\left(v_2\\right)+\\cdots+d\\left(v_n\\right)=2(n+1),\n$$\n如果图 $G$ 中所有顶点的度都不超过 2 , 则由上式得到\n$$\n2(n+1)=d\\left(v_1\\right)+d\\left(v_2\\right)+\\cdots+d\\left(v_n\\right) \\leqslant 2 n,\n$$\n这不可能.\n因此图 $G$ 中至少有一个顶点 $x$, 它的度至少是 3. 于是, 顶点 $x$ 所表示的选手至少赛过三次.",
+    "remark": "",
+    "figures": []
+}

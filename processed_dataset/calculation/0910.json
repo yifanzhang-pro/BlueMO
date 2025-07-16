@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题31. 设 $\\alpha$ 为有理数, $\\cos \\alpha \\pi$ 也是有理数.\n求 $\\cos \\alpha \\pi$ 的所有可能值.",
+    "solution": "记 $\\theta=\\alpha \\pi$, 由 $\\alpha$ 为有理数, 知存在 $n \\in \\mathbf{N}^*$, 使得 $n \\theta=2 k \\pi, k \\in \\mathbf{Z}$, 即 $\\cos n \\theta=1$. 由上题的结论知存在整系数多项式 $f(x)=x^n+a_{n-1} x^{n-1}+\\cdots+ a_0$, 使得 $2 \\cos n \\theta=f(2 \\cos \\theta)$, 从而有\n$$\n(2 \\cos \\theta)^n+a_{n-1}(2 \\cos \\theta)^{n-1}+\\cdots+a_1(2 \\cos \\theta)+a_0-2=0,\n$$\n这表明 $2 \\cos \\theta$ (注意 $\\cos \\alpha \\pi \\in \\mathbf{Q})$ 是方程(1)\n$$\nx^n+a_{n-1} x^{n-1}+\\cdots+a_1 x+a_0-2=0\n$$\n的有理根.\n然而(1)左边是一个首项系数为 1 的多项式, 故(1)的有理根都是整数根.\n所以 $2 \\cos \\theta$ 为整数, 结合 $|\\cos \\theta| \\leqslant 1$, 知 $2 \\cos \\theta \\in\\{-2,-1,0,1,2\\}$, 于是 $\\cos \\alpha \\pi \\in\\left\\{0, \\pm \\frac{1}{2}, \\pm 1\\right\\}$ (集合中的每个值都存在 $\\alpha$ 取到是显然的).",
+    "remark": "",
+    "figures": []
+}

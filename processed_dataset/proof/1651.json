@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例3. 如图(<FilePath:./images/volume7/figures/fig-c1i4.png>), 圆 $\\Gamma_1 、 \\Gamma_2$ 内切于点 $S$, 圆 $\\Gamma_2$ 的弦 $A B$ 与圆 $\\Gamma_1$ 切于点 $C, M$ 是弧 $A B$ (不含点 $S$ ) 的中点, 过点 $M$ 作 $M N \\perp A B$, 垂足为 $N$, 记圆 $\\Gamma_1$ 的半径为 $r$.\n求证: $A C \\cdot C B=2 r \\cdot M N$.",
+    "solution": "证明:如图作出圆 $\\Gamma_1$ 的直径 $C D$.\n因 $S$ 是两圆 $\\Gamma_1 、 \\Gamma_2$ 的切点, 即位似中心, 而 $C 、 M$ 为两圆上的位似对应点,故 $S 、 C 、 M$ 三点共线.\n由相交弦定理得 $A C \\cdot C B=S C \\cdot C M$.\n又由 Rt $\\triangle S C D \\circlearrowleft \\mathrm{Rt} \\triangle N M C$, 得 $S C \\cdot C M=C D$ • $M N=2 r \\cdot M N$.",
+    "remark": "注:此题本身并不难,但利用 $S 、 C 、 M$ 共线这个命题, 并结合圆的 Pascal 定理可以证明如下结论:\n设三角形 $A B C$ 的外接圆为圆 $O_1$, 另有一圆 $O$ 同时与边 $A B$, 边 $A C$, 弧 $\\overparen{B C}$ 相切于点 $D 、 E 、 F$, 则 $D E$ 中点 $I$ 为三角形 $A B C$ 内心.\n(如图(<FilePath:./images/volume7/figures/fig-c1i5.png>))",
+    "figures": [
+        "./images/volume7/figures/fig-c1i4.png",
+        "./images/volume7/figures/fig-c1i5.png"
+    ]
+}

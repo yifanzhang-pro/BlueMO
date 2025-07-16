@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 有 $n$ 个药箱,每两个药箱里有一种相同的药,每种药恰好在两个药箱里出现, 问有多少种药?",
+    "solution": "按下法作一个图: 每一个顶点表示一个药箱, 每一条边 $\\left(v_i, v_j\\right)$ 表示两个药箱 $v_i$ 与 $v_j$ 所共有的那一种药.\n据题设, 此图是 $n$ 个顶点的完全图 $K_n$. 药的种数即 $K_n$ 的边数 $\\frac{1}{2} n(n-1)$.",
+    "remark": "",
+    "figures": []
+}

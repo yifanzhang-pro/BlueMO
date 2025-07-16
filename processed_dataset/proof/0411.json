@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例2. 如图所示, 大三角形的三个顶点分别涂以 $A 、 B 、 C$ 三种颜色.\n在大三角形内取若干个点, 将它分为若干个小三角形, 每两个小三角形或者有一条公共边, 或者有一个公共点, 或者完全没有公共点.\n将每个小三角形的顶点也分别涂以 $A 、 B 、 C$ 三种颜色之一, 证明不管怎样涂色, 都有一个小三角形, 它的三个顶点的颜色全不相同.",
+    "solution": "证明:在大三角形外及小三角形内部各取一点作顶点, 当两个面有一条公共边 $A B$ 时, 就在相应的两个顶点之间连一条边, 得图 $G^{\\prime}$, 如图(<FilePath:./images/volume12/figures/fig-c2i3.png>) 所示.\n一个具有颜色 $A 、 B 、 C$ 顶点的小三角形对应于 $G^{\\prime}$ 中的度为 1 的顶点.\n其余的小三角形均对应于 $G$ 中度为 0 或 2 的顶点.\n由于大三角形外部的一个顶点 $u$ 的度是 1 , 且奇顶点的个数为偶数, 所以 $G^{\\prime}$ 中除了 $u$ 外, 至少还有一个奇顶点 $v$. 这就是说如图(<FilePath:./images/volume12/figures/fig-c2i3.png>) 中至少有一个小三角形, 它的三个顶点分别为 $A 、 B 、 C$ 三种颜色.",
+    "remark": "注:: 本题常见的做法是赋值法, 结合奇偶分析来解决.\n这里的解法有图论的独到之处,非常简洁.",
+    "figures": [
+        "./images/volume12/figures/fig-c2i3.png",
+        "./images/volume12/figures/fig-c2i3.png"
+    ]
+}

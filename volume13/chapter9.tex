@@ -1,0 +1,227 @@
+
+%%TEXT_BEGIN%%
+整体估计.
+为了估计某个变量的变化范围, 可将其放在若干个变量构成的整体中一起考虑, 从整体上估计它们的取值范围, 进而得到某变量的取值范围.
+这种估计方法称为整体估计.
+整体估计的一种特殊情况是估计平均数: 设 $A_1, A_2, \cdots, A_n$ 的平均数为 $A$, 则 $A_1, A_2, \cdots, A_n$ 中至少有一个 $A_i$ 不小于 $A$, 也至少有 - 个 $A_j$ 不大于 $A$.
+平均数估计中的一个重要的工具是"集合元素关系表": 设 $X=\left\{a_1, a_2\right.$, $\left.\cdots, a_n\right\}, A_1, A_2, \cdots, A_k$ 是 $X$ 的子集.
+所谓"集合元素关系表", 是指由 $n$ 行 $k$ 列数构成的如下数表:
+其中 $a_i \in A_j$ 时, $x_{i j}=1$, 否则, $x_{i j}=0$. 这样,第 $i$ 行中 1 的个数就是元素 $a_i$ 在各子集中出现的次数, 称为 $a_i$ 的度, 记作 $d\left(a_i\right)$ 或 $m_i$, 即 $m_i=\sum_{j=1}^k x_{i j}$.
+第 $j$ 列中 1 的个数就是集合 $A_j$ 中的元素的个数, 即 $\left|A_j\right|=\sum_{i=1}^n x_{i j}$.
+在集合元素关系表中,有两个常用的关系式:
+(1) 考察各元素在 $F$ 中出现的总次数,即表中 1 的个数 $S$, 有
+$$
+\sum_{i=1}^n m_i=S=\sum_{j=1}^k\left|A_j\right|
+$$
+(2)考察各元素在集合对的交集中出现的总次数 $T$,有
+$$
+\sum_{i=1}^n \mathrm{C}_{m_i}^2=T=\sum_{1 \leqslant i<j \leqslant k}\left|A_i \cap A_j\right| .
+$$
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 求最大的正整数 $A$, 使 $1,2, \cdots, 100$ 的任何一个排列, 都有 10 个连续的项的和不小于 $A$. 
+%%<SOLUTION>%%
+分析: $1,2, \cdots, 100$ 的一个排列, 要找到一个不小于 $A$ 的连续 10 个项的和比较困难, 我们可将所有没有公共项的连续 10 项的和一并考虑, 然后取其平均值进行估计.
+解设 $a_1, a_2, \cdots, a_{100}$ 是 $1,2, \cdots, 100$ 的任意一个排列, 令 $A_i=a_i+ a_{i+1}+\cdots+a_{i+9}(i=1,2, \cdots, 91)$, 则 $A_1=a_1+a_2+\cdots+a_{10}, A_{11}=a_{11}+ a_{12}+\cdots+a_{20}, \cdots, A_{91}=a_{91}+a_{92}+\cdots+a_{100}$.
+注意到 $A_1+A_{11}+\cdots+A_{91}=a_1+a_2+\cdots+a_{100}=5050$, 所以 $A_1$, $A_{11}, \cdots, A_{91}$ 的平均值为 505 , 于是至少存在一个 $i(1 \leqslant i \leqslant 91)$, 使 $A_i \geqslant 505$.
+当 $A \geqslant 506$ 时,考察排列: $(100,1,99,2,98,3,97,4, \cdots, 51,50)$, 其中各项满足 : $a_{2 i-1}=101-i(i=1,2, \cdots, 50) ; a_{2 i}=i(i=1,2, \cdots, 50)$. 所以 $a_{2 i-1}+a_{2 i}=101, a_{2 i}+a_{2 i+1}=100$. 此时, 可证明对任何 $i(1 \leqslant i \leqslant 91)$, 有 $A_i \leqslant 505<A$.
+实际上,当 $i$ 为偶数时.
+令 $i=2 k$,则
+$$
+\begin{aligned}
+A_{2 k} & =a_{2 k}+a_{2 k+1}+\cdots+a_{2 k+9} \\
+& =\left(a_{2 k}+a_{2 k+1}\right)+\left(a_{2 k+2}+a_{2 k+3}\right)+\cdots+\left(a_{2 k+8}+a_{2 k+9}\right) \\
+& =100 \times 5=500<A .
+\end{aligned}
+$$
+当 $i$ 为奇数时.
+令 $i=2 k-1$, 则
+$$
+\begin{aligned}
+A_{2 k-1} & =a_{2 k-1}+a_{2 k}+\cdots+a_{2 k+8} \\
+& =\left(a_{2 k-1}+a_{2 k}\right)+\left(a_{2 k+1}+a_{2 k+2}\right)+\cdots+\left(a_{2 k+7}+a_{2 k+8}\right) \\
+& =101 \times 5=505<A .
+\end{aligned}
+$$
+故 $A_{\text {max }}=505$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $A_i(i=1,2, \cdots, 30)$ 是 $M=\{1,2,3, \cdots, 1990\}$ 的子集, $\left|A_i\right| \geqslant 660$. 求证: 存在 $i 、 j(1 \leqslant i<j \leqslant 30)$, 使 $\left|A_i \cap A_j\right| \geqslant 200$.
+%%<SOLUTION>%%
+证明:不妨设所有 $\left|A_i\right|=660$. 否则, 去掉 $A_i$ 中的一些元素, 得到 $A_i^{\prime}$, 若能证得 $\left|A_i^{\prime} \cap A_j^{\prime}\right| \geqslant 200$, 则加人原先去掉的元素, 显然有 $\left|A_i \cap A_j\right| \geqslant 200$.
+考察集合元素关系表.
+设第 $i$ 行有 $m_i$ 个 1 , 即 $i$ 在 $m_i$ 个集合中出现.
+考察各元素在各子集中出现的总次数, 即表中 1 的个数,有
+$$
+\sum_{i=1}^{1990} m_i=S=\sum_{i=1}^{30}\left|A_i\right|=30 \times 660 .
+$$
+再从整体上进行估计 $\sum_{1 \leqslant i<j \leqslant 30}\left|A_i \cap A_j\right|$. 此即各元素在集合对的交集中出现的总次数, 有 $\sum_{i=1}^{1990} \mathrm{C}_{m_i}^2=\sum_{1 \leqslant i<j \leqslant 30}\left|A_i \cap A_j\right|$.
+于是, 由 Cauchy 不等式, 得
+$$
+\begin{aligned}
+2 \sum_{1 \leqslant i<j \leqslant 30}\left|A_i \cap A_j\right| & =2 \sum_{i=1}^{1990} \mathrm{C}_{m_i}^2=\sum_{i=1}^{1990} m_i^2-\sum_{i=1}^{1990} m_i \\
+& \geqslant \frac{\left(\sum_{i=1}^{1990} m_i\right)^2}{\sum_{i=1}^{1990} 1^2}-\sum_{i=1}^{1990} m_i \\
+& =\frac{(30 \times 660)^2}{1990}-30 \times 660,
+\end{aligned}
+$$
+所以必有一个 $A_i \cap A_j$, 使
+$$
+\begin{aligned}
+\left|A_i \cap A_j\right| & \geqslant \frac{\frac{(30 \times 660)^2}{1990}-30 \times 660}{2 \mathrm{C}_{30}^2} \\
+& =\frac{(30 \times 660) \times(30 \times 660-1990)}{30 \times 29 \times 1990} \\
+& >200 .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 有 10 人到书店买书, 已知每人都买了三种书, 任何两个人所买的书中都至少有一种相同.
+问: 买的人数最多的一种书最少有几人购买.
+%%<SOLUTION>%%
+解:共卖出 $n$ 种书, 第 $i$ 人买的书的集合为 $A_i(i=1,2, \cdots, 10)$. 构造集合元素关系表,设第 $i$ 行有 $m_i$ 个 1 .
+估计各元素出现的总次数,有
+$$
+\sum_{i=1}^n m_i=S=\sum_{i=1}^{10}\left|A_i\right|=\sum_{i=1}^{10} 3=30
+$$
+再计算各元素在交集中出现的总次数,有
+$$
+\sum_{i=1}^n \mathrm{C}_{m_i}^2=\sum_{1 \leqslant i<j \leqslant 10}\left|A_i \cap A_j\right|
+$$
+设 $m_i$ 中的最大者为 $m$, 则
+$$
+\begin{aligned}
+90 & =2 \mathrm{C}_{10}^2=2 \sum_{1 \leqslant i<j \leqslant 10} 1 \leqslant 2 \sum_{1 \leqslant i<j \leqslant 10}\left|A_i \cap A_j\right| \\
+& =2 \sum_{i=1}^n \mathrm{C}_{m_i}^2=\sum_{i=1}^n m_i^2-\sum_{i=1}^n m_i=\sum_{i=1}^n m_i^2-30 \\
+& \leqslant \sum_{i=1}^n\left(m_i \cdot m\right)-30=m \sum_{i=1}^n m_i-30 \\
+& =30(m-1) .
+\end{aligned}
+$$
+解此不等式, 得 $m \geqslant 4$. 若 $m=4$, 则不等式 (1) 成立等号, 于是所有 $m_i=4(i=1,2, \cdots, n)$. 这样有 $4 n=\sum_{i=1}^n m_i=30$, 所以 $4 \mid 30$, 矛盾.
+于是 $m \geqslant 5$.
+当 $m=5$ 时, 由 $m$ 的最大性, 所有 $m_i \leqslant 5$, 有 $30=\sum_{i=1}^n m_i \leqslant 5 n, n \geqslant 6$. 我们取 $n=6$, 得到合乎条件的构造如下表:
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline & $A_1$ & $A_2$ & $A_3$ & $A_4$ & $A_5$ & $A_6$ & $A_7$ & $A_8$ & $A_9$ & $A_{10}$ \\
+\hline 1 & $*$ & $*$ & $*$ & $*$ & $*$ & & & & & \\
+\hline 2 & $*$ & $*$ & & & & $*$ & $*$ & $*$ & & \\
+\hline 3 & $*$ & & $*$ & & & $*$ & & & $*$ & $*$ \\
+\hline 4 & & & & $*$ & $*$ & $*$ & $*$ & & $*$ & \\
+\hline 5 & $\vdots$ & & $*$ & $*$ & & & $*$ & $*$ & & $*$ \\
+\hline 6 & & $*$ & & & $*$ & & & $*$ & $*$ & $*$ \\
+\hline
+\end{tabular}
+故 $m$ 的最小值为 5 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 一群童子军, 年龄是 7 到 13 的整数, 来自 11 个国家.
+求证: 至少有 5 个孩子, 对其中的任何一个孩子, 在童子军中与其同年龄的人多于同国籍的人.
+%%<SOLUTION>%%
+证明:虑加权的元素关系表:
+\begin{tabular}{|c|c|c|c|c|}
+\hline & $A_1$ & $A_2$ & $\cdots$ & $A_{11}$ \\
+\hline 7 & $a_{7,1}$ & $a_{7,2}$ & $\cdots$ & $a_{7,11}$ \\
+\hline 8 & $a_{8,1}$ & $a_{8,2}$ & $\cdots$ & $a_{8,11}$ \\
+\hline$\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
+\hline 13 & $a_{13,1}$ & $a_{13,2}$ & $\cdots$ & $a_{13,11}$ \\
+\hline
+\end{tabular}
+其中 $A_j$ 是来自第 $j$ 个国家的人的集合, $a_{i j}$ 是第 $j$ 国中年龄为 $i$ 岁的人数.
+令第 $i$ 行的和为 $r_i$, 第 $j$ 列的和为 $t_j$, 则
+$$
+\begin{aligned}
+\sum_{i=7}^{13} \sum_{j=1}^{11} a_{i j}\left(\frac{1}{t_j}-\frac{1}{r_i}\right) & =\sum_{i=7}^{13} \sum_{j=1}^{11} \frac{a_{i j}}{t_j}-\sum_{i=7}^{13} \sum_{j=1}^{11} \frac{a_{i j}}{r_i} \\
+& =\sum_{j=1}^{11} \frac{1}{t_j} \sum_{i=7}^{13} a_{i j}-\sum_{i=7}^{13} \frac{1}{r_i} \sum_{j=1}^{11} a_{i j} \\
+& =\sum_{j=1}^{11}\left(\frac{1}{t_j} \cdot t_j\right)-\sum_{i=7}^{13}\left(\frac{1}{r_i} \cdot r_i\right) \\
+& =\sum_{j=1}^{11} 1-\sum_{i=7}^{13} 1=4 .
+\end{aligned}
+$$
+由于 $\frac{1}{t_j}-\frac{1}{r_i}<1$, 将上式中 $a_{i j}\left(\frac{1}{t_j}-\frac{1}{r_i}\right)$ 看作是 $a_{i j}$ 个 " $\frac{1}{t_j}-\frac{1}{r_i}$ " 的和, 那么, 上式中至少有 5 个这样的 $\frac{1}{t_j}-\frac{1}{r_i}$ 为正, 从而至少有 5 个孩子合乎要求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $A=\{1,2,3,4,5,6\}, B=\{7,8,9, \cdots, n\}$. 在 $A$ 中取 3 个数, 在 $B$ 中取 2 个数,组成含有 5 个元素的集合 $A_i(i=1,2, \cdots, 20)$, 使得 $\left|A_i \cap A_j\right| \leqslant 2,1 \leqslant i<j \leqslant 20$, 求 $n$ 的最小值.
+%%<SOLUTION>%%
+分析:题实际上是求 $|B|$ 的最小值, 显然 $B$ 中元素在各个子集 $A_i(i=1,2, \cdots, 20)$ 中出现的总次数是 $2 \times 20=40$, 要知道 $B$ 中至少有多少个元素, 只需知道 $B$ 中每个元素在各个子集 $A_i(i=1,2, \cdots, 20)$ 中至多出现多少次.
+解我们先证明: $B$ 中每个元素在各个子集 $A_i(i=1,2, \cdots, 20)$ 中至多出现 4 次.
+如若不然, 假定 $B$ 中某个元素 $b$ 在各个子集 $A_i(i=1,2, \cdots, 20)$ 中出现 $k(k>4)$ 次.
+考察含 $b$ 的 $k$ 个子集, 它们共含有 $A$ 中的 $3 k>12$ 个元素.
+于是, 由抽庶原理, $A$ 中至少有一个元素, 设为 $a$, 在这 $k$ 个子集中出现 3 次.
+设这 3 个同时含有 $a 、 b$ 的子集合为 $P 、 Q 、 R$, 则 $A \backslash\{a\}$ 中的 5 个元素在 $P 、 Q 、R$ 中共出现 $2 \times 3=6$ 次.
+于是必有一个元素 $c$ 出现 2 次,这样便得到 2 个同时含有 $a 、 b 、 c$ 的子集,与条件 $\left|A_i \cap A_j\right| \leqslant 2$ 矛盾.
+由上, $B$ 中每个元素在各个子集 $A_i(i=1,2, \cdots, 20)$ 中至多出现 4 次, 而 $B$ 中元素在各个子集 $A_i(i=1,2, \cdots, 20)$ 中出现的总次数是 $2 \times 20=40$, 于是 $|B| \geqslant \frac{40}{4}=10$, 所以 $n \geqslant 10+6=16$.
+最后, 当 $n=16$ 时,存在合乎题目条件的 20 个集合: $\{1,2,3,7,8\}$ 、 $\{1,2,4,12,14\} 、\{1,2,5,15,16\} 、\{1,2,6,9,10\} 、\{1,3,4,10,11\}$ 、 $\{1,3,5,13,14\} 、\{1,3,6,12,15\} 、\{1,4,5,7,9\} 、\{1,4,6,13,16\}$ 、 $\{1,5,6,8,11\} 、\{2,3,4,13,15\} 、\{2,3,5,9,11\} 、\{2,3,6,14,16\}$ 、 $\{2,4,5,8,10\} 、\{2,4,6,7,11\} 、\{2,5,6,12,13\} 、\{3,4,5,12,16\}$ 、 $\{3,4,6,8,9\} 、\{3,5,6,7,10\} 、\{4,5,6,14,15\}$.
+综上所述, $n$ 的最小值是 16 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $n$ 是给定的正整数, $6 \mid n$. 在 $n \times n$ 方格棋盘中, 每个方格都填上一个正整数,第 $i$ 行的方格填人的数从左至右依次为 $(i-1) n+1,(i-1) n+ 2, \cdots,(i-1) n+n$. 今任取 2 个相邻 (具有公共边) 的方格, 将其中一个数加 1 , 另一个数加 2 , 称之为一次操作.
+问: 至少要经过多少次操作, 才能使棋盘中的数变得都相等?
+%%<SOLUTION>%%
+解:棋盘中各数的和记为 $S$.
+显然, 当棋盘中的数都相等时, 每个数至少是 $n^2$, 于是棋盘中各数的和 $S^{\prime} \geqslant n^2 \cdot n^2=n^4$, 又每次操作使 $S$ 增加 3, 而最初棋盘中 $S_0=1+2+3+\cdots +n^2=\frac{n^2\left(n^2+1\right)}{2}$, 于是操作到各数相等时 $S$ 至少增加 $n^4-\frac{n^2\left(n^2+1\right)}{2}= \frac{n^2\left(n^2-1\right)}{2}$, 所以操作次数不少于 $\frac{1}{3} \cdot \frac{n^2\left(n^2-1\right)}{2}=\frac{n^2\left(n^2-1\right)}{6}$.
+下面证明: 可适当操作 $\frac{n^2\left(n^2-1\right)}{6}$ 次,使棋盘中的数变得都相等.
+这等价于证明: 可适当操作若干次,使棋盘中的数都变成 $n^2$.
+将棋盘每一行从左至右每 3 个连续格一组, 分成 $\frac{n}{3}$ 组, 依次记为第一组, 第二组, $\cdots$, 第 $\frac{n}{3}$ 组.
+首先注意到任何连续 3 个格, 都可适当操作 2 次, 使每个数都增加 2 , 我们称这两个操作合成一个大操作 $A:(a, b, c) \rightarrow(a+2, b+1, c) \rightarrow(a+2$, $b+2, c+2)$. 现在, 将某行的每一组都进行 $\frac{n}{2}$ 次大操作 $A$, 则该行的数都增加
+$n$,于是, 对每一行, 都可进行若干次操作, 使其变得与第 $n$ 行完全相同.
+再注意到连续 2 个格, 可适当操作两次, 使其中的数都增加 3 , 我们称这两个操作合成一个大操作 $B:(a, b) \rightarrow(a+2, b+1) \rightarrow(a+3, b+3)$. 现在, 假定棋盘的每一行都已与第 $n$ 行完全相同.
+再考察第 $i 、 i+1$ 这 2 行的第 $j$ 组, 对该组同一列的 2 个格都进行一次大操作 $B$, 则这 2 行第 $j$ 组中的数都增加 3 , 而同一行中不同组对应的数相差 3 的倍数,于是, 我们可对这 2 行每一组都进行类似的操作若干次, 使这 2 行的所有组都变得与第 $\frac{n}{3}$ 组完全相同, 为 $\left(n^2-\right. \left.2, n^2-1, n^2\right)$, 它经过一次操作可变为 $\left(n^2, n^2, n^2\right)$, 于是这 2 行都可变成 $n^2$.
+每连续 2 行都进行这样的操作, 则所有行都变成 $n^2$.
+综上所述, 操作的最小次数为 $\frac{n^2\left(n^2-1\right)}{6}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $n$ 是给定的正整数, $X=\{1,2,3, \cdots, n\}, A$ 是 $X$ 的子集, 且对任何 $x<y<z, x, y, z \in A$, 都存在一个三角形三边的长分别为 $x 、 y 、 z$. 用 $|A|$ 表示集合 $A$ 中元素的个数,求 $|A|$ 的最大值.
+%%<SOLUTION>%%
+解: $A=\left\{a_1, a_2, \cdots, a_r\right\}$ 是合乎条件的子集, 其中 $a_1<a_2<\cdots<a_r$. 如果 $a_r<n$, 设 $n-a_r=t$, 令 $a_i^{\prime}=a_i+t(i=1,2, \cdots, r)$, 则 $a_r^{\prime}=n$, 且 $A^{\prime}= \left\{a_1^{\prime}, a_2^{\prime}, \cdots, a_r^{\prime}\right\}$ 也是合乎条件的子集, 于是不妨设 $a_r=n$.
+因为 $a_1 、 a_2 、 a_r$ 构成三角形三边, 所以 $n=a_r<a_1+a_2$, 但 $a_1+a_2<2 a_2$, 即 $a_1+a_2 \leqslant 2 a_2-1$, 于是 $n=a_r \leqslant 2 a_2-2$, 所以 $a_2 \geqslant \frac{1}{2} n+1$.
+下面从整体上估计 $A \backslash\left\{a_1\right\}$ 中的数只能在哪些数中选取.
+(1)当 $n$ 为奇数时, 令 $n=2 k+1$, 则 $a_2 \geqslant \frac{1}{2} n+1=k+\frac{3}{2}$, 但 $a_2$ 为整数, 所以 $a_2 \geqslant k+2$, 于是 $A \backslash\left\{a_1\right\} \subseteq\{k+2, k+3, \cdots, 2 k+1\}$, 所以 $|A|-1 \leqslant \mid\{k+ 2, k+3, \cdots, 2 k+1\} \mid=2 k+1-(k+1)=k$, 所以 $|A| \leqslant k+1=\frac{n-1}{2}+ 1=\frac{n+1}{2}$.
+(2) 当 $n$ 为偶数时, 令 $n=2 k$, 则 $a_2 \geqslant \frac{1}{2} n+1=k+1$,于是 $A \backslash\left\{a_1\right\} \subseteq\{k+ 1, k+2, \cdots, 2 k\}$, 所以 $|A|-1 \leqslant|\{k+1, k+2, \cdots, 2 k\}|=2 k-k=k$, 所以 $|A| \leqslant k+1=\frac{n}{2}+1=\frac{n+2}{2}$.
+综合 (1)、(2), 对任何正整数 $n$, 有 $|A| \leqslant \frac{n+2}{2}$, 但 $|A|$ 为整数, 所以
+$$
+|A| \leqslant\left[\frac{n+2}{2}\right] \text {. }
+$$
+其次, 若 $n=2 k$, 则令 $A=\{k, k+1, k+2, \cdots, 2 k\}$, 此时, 对任何 $x<y< z, x, y, z \in A$, 都有 $x+y \geqslant k+(k+1)=2 k+1>2 k \geqslant z$, 从而存在一个以 $x$ 、 $y 、 z$ 为三边的三角形, 且 $|A|=k+1=\frac{n}{2}+1=\frac{n+2}{2}=\left[\frac{n+2}{2}\right]$.
+若 $n=2 k+1$, 则令 $A=\{k+1, k+2, \cdots, 2 k+1\}$, 此时, 对任何 $x<y<z$, $x, y, z \in A$, 都有 $x+y \geqslant(k+1)+(k+2)=2 k+3>2 k+1 \geqslant z$, 从而存在一个以 $x 、 y 、 z$ 为三边的三角形, 且 $|A|=k+1=\frac{n-1}{2}+1=\frac{n+1}{2}=\left[\frac{n+2}{2}\right]$.
+(注:上述构造可合并为 $A=\left\{\left[\frac{n+1}{2}\right],\left[\frac{n+1}{2}\right]+1,\left[\frac{n+1}{2}\right]+2, \cdots, n\right\}$ ) 故 $|A|$ 的最大值为 $\left[\frac{n+2}{2}\right]$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 给定正整数 $n(n \geqslant 2)$, 求最大的 $\lambda$, 使得: 若有 $n$ 个袋子,每一个袋子中都是一些重量为 2 的整数次幕克的小球, 且各个袋子中的小球的总重量都相等 (同一个袋子中可以有相等重量的小球), 则必有某一重量的小球的总个数至少为 $\lambda$. 
+%%<SOLUTION>%%
+解:不妨设最重的小球的重量为 1 , 设每个袋子中小球的总重量为 $G$, 则 $G \geqslant 1$.
+先证明: 当 $\lambda=\left[\frac{n}{2}\right]+1$ 合乎题意, 即必有某一重量的小球的总个数至少为 $\left[\frac{n}{2}\right]+1$.
+反设任一个重量的小球的总个数都不大于 $\left[\frac{n}{2}\right]$, 考察这 $n$ 个袋子中所有小球的总重量, 有 $n \leqslant n G<\left[\frac{n}{2}\right] \cdot\left(1+2^{-1}+2^{-2}+\cdots\right)=2\left[\frac{n}{2}\right] \leqslant 2 \cdot \frac{n}{2}=n$, 矛盾!
+其次证明: $\lambda \leqslant\left[\frac{n}{2}\right]+1$. 取充分大的正整数 $s$, 使得 $2-2^{-s} \geqslant \frac{2 n}{n+1}$, 由于 $\left[\frac{n}{2}\right]+1 \geqslant \frac{n+1}{2}$, 所以 $2-2^{-s} \geqslant \frac{2 n}{n+1} \geqslant \frac{n}{\left[\frac{n}{2}\right]+1}$, 从而 $\left(\left[\frac{n}{2}\right]+1\right)\left(1+2^{-1}+\cdots+\right. \left.2^{-s}\right) \geqslant n \cdot 1$.
+所以可在 $\underbrace{1,1, \cdots, 1}_{\left[\frac{n}{2}\right]+1}, \underbrace{2^{-1}, 2^{-1}, \cdots, 2^{-1}}_{\left[\frac{n}{2}\right]+1}, \cdots, \underbrace{2^{-s}, 2^{-s}, \cdots, 2^{-s}}_{\left[\frac{n}{2}\right]+1}$ 中从前至后取出和为 1 的连续若干项, 且至少可取 $n$ 次, 所以 $\lambda \leqslant\left[\frac{n}{2}\right]+1$.
+综上可知, $\lambda_{\text {max }}=\left[\frac{n}{2}\right]+1$.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-6.tex",
+    "problem_type": "proof",
+    "problem": "例4. 多项式 $f(x)=x^n+a_1 x^{n-1}+\\cdots+a_n$, 其中 $a_1, \\cdots, a_n \\in \\mathbf{R}$. 证明 : 在数 $|f(1)|,|f(2)|, \\cdots,|f(n+1)|$ 中必有一个数不小于 $\\frac{n !}{2^n}$.",
+    "solution": "证明:由定理 1 的结论, 可知\n$$\n\\Delta^n f(x)=\\sum_{i=0}^n(-1)^i \\mathrm{C}_n^i f(x+n-i) . \\label{eq1}\n$$\n又由 $f(x)=x^n+a_1 x^{n-1}+\\cdots+a_n$ 可知 $\\Delta^n f(x)=n !$, 在\\ref{eq1}式中令 $x=1$, 得\n$$\nn !=\\sum_{i=0}^n(-1)^i \\mathrm{C}_n^i f(n+1-i) . \\label{eq2}\n$$\n如果命题不成立, 那么对 $0 \\leqslant i \\leqslant n$, 都有 $|f(n+1-i)|<\\frac{n !}{2^n}$, 结合式\\ref{eq2} 将有\n$$\nn ! \\leqslant \\sum_{i=0}^n \\mid (-1)^i \\mathrm{C}_n^i f(n+1-i) \\mid<\\sum_{i=0}^n \\mathrm{C}_n^i \\cdot \\frac{n !}{2^n}=n !,\n$$\n矛盾.\n所以,命题成立.\n说明此题亦可利用 Lagrange 插值公式去处理.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例12 设函数:\n$f(x)=\\left\\{\\begin{array}{ll}1, & \\text { 当 }|x| \\leqslant 1 \\text { 时, } \\\\ 0, & \\text { 当 }|x|>1 \\text { 时, }\\end{array} g(x)= \\begin{cases}2-x^2, & \\text { 当 }|x| \\leqslant 1 \\text { 时, } \\\\ 2, & \\text { 当 }|x|>1 \\text { 时.\n}\\end{cases}\\right.$\n求 $f[f(x)], f[g(x)], g[f(x)], g[g(x)]$.",
+    "solution": "解:$f[f(x)]=1, x \\in \\mathbf{R}$.\n$$\nf[g(x)]= \\begin{cases}0, & \\text { 当 } x \\neq \\pm 1 \\text { 时, } \\\\ 1, & \\text { 当 } x= \\pm 1 \\text { 时.\n}\\end{cases}\n$$\n$$\n\\begin{aligned}\n& g[f(x)]= \\begin{cases}1, & \\text { 当 }|x| \\leqslant 1 \\text { 时, } \\\\\n2, & \\text { 当 }|x|>1 \\text { 时.\n}\\end{cases} \\\\\n& g[g(x)]= \\begin{cases}2, & \\text { 当 } x \\neq \\pm 1 \\text { 时, } \\\\\n1, & \\text { 当 } x= \\pm 1 \\text { 时.\n}\\end{cases}\n\\end{aligned}\n$$\n从本题可以看出, $f[g(x)]$ 不一定与 $g[f(x)]$ 相等.",
+    "remark": "",
+    "figures": []
+}

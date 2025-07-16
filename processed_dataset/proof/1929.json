@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 在四个圆中,每个圆都和其他的两个圆外切.\n证明:四个切点位于同一个圆上.",
+    "solution": "证明: 设这四个圆为圆 $A$ 、圆 $B$ 、圆 $C$ 、 圆 $D$,\n取 $A 、 B$ 的公切点 $E$, 以 $E$ 为反演中心, 单位长度为反演半径作反演变换得到以下命题:\n如图(<FilePath:./images/volume7/figures/fig-c9a10.png>), 已知直线 $l_1, l_2$ 平行, 有圆 $O_1$ 和圆 $O_2$ 相切于点 $X$, 且 $O_1$ 与 $l_1$ 切于 $Y, O_2$ 与 $l_2$ 切于 $Z$, 则 $X 、 Y 、 Z$ 三点共线,该结论由三角形的相似得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9a10.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 将 2048 个数排成一个圆, 其中每个数都是 +1 或 -1 , 现在同时将每个数都乘以它的右邻, 用所得的乘积替换原来的数, 这样便得到一圈新数.\n求证: 经有限次这样的操作后, 圆周上的数都将变为 +1 .",
+    "solution": "将 2048 推广为 $2^n$ 的情形, 即证: 对任意 $n \\in \\mathbf{N}^*$, 将 $2^n$ 个 +1 或 -1 排成一个圆后, 依题述操作, 有限次后都将变为 +1 .\n当 $n=1$ 时, 依条件可得下面的操作序列\n$$\n(+1,-1) \\rightarrow(-1,-1) \\rightarrow(+1,+1) .\n$$\n可知命题对 $n=1$ 成立.\n设命题对 $n$ 成立, 则对 $n+1$ 的情形, 用 $x_1, x_2, \\cdots, x_{2^{n+1}}$ 表示圆上依次排列的 $2^{n+1}$ 个数, 那么, 有下面的操作序列\n$$\n\\begin{aligned}\n& \\left(x_1, x_2, \\cdots, x_{2^{n+1}}\\right) \\rightarrow\\left(x_1 x_2, x_2 x_3, \\cdots, x_{2^{n+1}} x_1\\right) \\rightarrow \\\\\n& \\left(x_1 x_3, x_2 x_4, \\cdots, x_{2^{n+1}} x_2\\right) .\n\\end{aligned}\n$$\n把上面的两次操作 \"合并\", 视为一次操作, 则可知若圆上的 $2^n$ 个数 $\\left(x_1\\right.$, $\\left.x_3, \\cdots, x_{2^{n+1}-1}\\right)$ 和 $\\left(x_2, x_4, \\cdots, x_{2^{n+1}}\\right)$ 都能经有限次操作后变为全是 +1 , 则命题获证.\n而这个要求正是归纳假设,所以,命题成立.",
+    "remark": "",
+    "figures": []
+}

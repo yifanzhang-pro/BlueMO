@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例11 求函数 $y=x+\\sqrt{x^2-3 x+2}$ 的值域.",
+    "solution": "解:由题设, 得 $\\sqrt{x^2-3 x+2}=y-x \\geqslant 0$, 所以\n$$\nx^2-3 x+2=y^2-2 x y+x^2,\n$$\n即\n$$\n(2 y-3) x=y^2-2 \\text {. }\n$$\n由上式知 $y \\neq \\frac{3}{2}$, 且 $x=\\frac{y^2-2}{2 y-3}$. 由 $y \\geqslant x=\\frac{y^2-2}{2 y-3}$, 得\n$$\n\\frac{y^2-3 y+2}{2 y-3} \\geqslant 0,-\\frac{(y-1)(y-2)}{y-\\frac{3}{2}} \\geqslant 0 .\n$$\n所以 $1 \\leqslant y<\\frac{3}{2}$ 或 $y \\geqslant 2$.\n又任取 $y_0 \\in[2,+\\infty)$, 令 $x_0=\\frac{y_0^2-2}{2 y_0-3}$, 则\n$$\nx_0-2=\\frac{y_0^2-2}{2 y_0-3}-2=\\frac{\\left(y_0-2\\right)^2}{2 y_0-3} \\geqslant 0 .\n$$\n故 $x_0 \\geqslant 2$, 所以 $x_0^2-3 x_0+2 \\geqslant 0$, 且 $y_0=x_0+\\sqrt{x_0^2-3 x_0+2}$.\n任取 $y_0 \\in\\left[1, \\frac{3}{2}\\right)$, 令 $x_0=\\frac{y_0^2-2}{2 y_0-3}$, 则\n$$\nx_0-1=\\frac{y_0^2-2}{2 y_0-3}-1=\\frac{\\left(y_0-1\\right)^2}{2 y_0-3} \\leqslant 0 .\n$$\n故 $x_0 \\leqslant 1$, 于是 $x_0^2-3 x_0+2 \\geqslant 0$, 且 $y_0=x_0+\\sqrt{x_0^2-3 x_0+2}$.\n综上, 所求的函数的值域为 $\\left[1, \\frac{3}{2}\\right) \\cup[2,+\\infty)$.\n说明我们先求出了 $y$ 的范围 $\\left[1, \\frac{3}{2}\\right) \\cup[2,+\\infty)$, 这是不是函数的值域呢? 第二部分说明了对于 $\\left[1, \\frac{3}{2}\\right) \\cup[2,+\\infty)$ 中的任意一个数 $y_0$, 总存在一个 $x_0$, 使得 $y_0=x_0+\\sqrt{x_0^2-3 x_0+2}$, 这就证明了函数的值域是 $\\left[1, \\frac{3}{2}\\right) U [2,+\\infty)$.",
+    "remark": "",
+    "figures": []
+}

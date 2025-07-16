@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例1. 已知 $0^{\\circ} \\leqslant \\alpha \\leqslant 90^{\\circ}$, 求证:\n$$\n2 \\leqslant \\sqrt{5-4 \\sin \\alpha}+\\sin \\alpha \\leqslant \\frac{9}{4} .\n$$",
+    "solution": "证明:令 $x=\\sqrt{5-4 \\sin \\alpha}$, 则 $\\sin \\alpha=\\frac{5-x^2}{4}$, 由于 $0 \\leqslant \\sin \\alpha \\leqslant 1$, 所以 $1 \\leqslant x \\leqslant \\sqrt{5}$. 令\n$$\n\\begin{aligned}\ny & =\\sqrt{5-4 \\sin \\alpha}+\\sin \\alpha \\\\\n& =x+\\frac{5-x^2}{4} \\\\\n& =-\\frac{1}{4}(x-2)^2+\\frac{9}{4},\n\\end{aligned}\n$$\n由 $1 \\leqslant x \\leqslant \\sqrt{5}$ 便知 $2 \\leqslant y \\leqslant \\frac{9}{4}$. 从而\n$$\n2 \\leqslant \\sqrt{5-4 \\sin \\alpha}+\\sin \\alpha \\leqslant \\frac{9}{4} .\n$$\n说明本题中令 $x=\\sqrt{5-4 \\sin \\alpha}$, 可以使式子变成容易处理的二次函数形式, 从而获得解决.",
+    "remark": "",
+    "figures": []
+}

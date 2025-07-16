@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise12.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 求证: 对任意正整数 $k$, 存在一个由有理数组成的等差数列 $\\frac{a_1}{b_1}, \\frac{a_2}{b_2}, \\cdots$, $\\frac{a_k}{b_k}$, 其中 $a_i$ 与 $b_i$ 是互素正整数 $(i=1,2, \\cdots, k)$, 且 $a_1, b_1, a_2, b_2, \\cdots$, $a_k, b_k$ 互不相同.",
+    "solution": "取 $a_i=\\frac{(k !)^2+i}{i}, b_i=\\frac{k !}{i}(i=1,2, \\cdots, k)$, 则 $\\frac{a_1}{b_1}=\\frac{(k !)^2+1}{k !}$, $\\frac{a_2}{b_2}=\\frac{(k !)^2+2}{k !}, \\cdots, \\frac{a_k}{b_k}=\\frac{(k !)^2+k}{k !}$ 是公差为 $\\frac{1}{k !}$ 的等差数列.\n因为 $\\left((k !)^2+\\right. i, k !)=i$, 故 $\\left(a_i, b_i\\right)=\\left(\\frac{(k !)^2+i}{i}, \\frac{k !}{i}\\right)=1(i=1,2, \\cdots, k)$. 又 $a_i> b_i(i=1,2, \\cdots, k)$ 且对任意 $1 \\leqslant i<j \\leqslant k, a_i=\\frac{(k !)^2+i}{i}>a_j=\\frac{(k !)^2+j}{j} >b_i=\\frac{k !}{i}>b_j=\\frac{k !}{j}$, 此时, 数列 $\\frac{a_1}{b_1}, \\frac{a_2}{b_2}, \\cdots, \\frac{a_k}{b_k}$ 满足题中条件.",
+    "remark": "",
+    "figures": []
+}

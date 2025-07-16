@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设与 $\\triangle A B C$ 的外接圆内切并与边 $A B 、 A C$ 相切的圆为 $C_a$, 记 $r_a$ 为圆 $C_a$ 的半径, $r$ 是 $\\triangle A B C$ 的内切圆半径.\n类似地定义 $r_b 、 r_c$. 证明: $r_a+r_b+r_c \\geqslant 4 r$.",
+    "solution": "证明: 设 $O_a 、 O_b 、 O_c$ 为圆 $C_a$ 、圆 $C_b$ 、圆 $C_c$ 的圆心.\n记 $M 、 N$ 为点 $O_a$ 在 $A B 、 A C$ 上的投影,则 $\\triangle A B C$ 的内心 $I$ 为 $M N$ 的中点.\n$\\frac{1}{\\cos ^2 \\frac{A}{2}}$. 同理, $\\frac{r_b}{r}=\\frac{1}{\\cos ^2 \\frac{B}{2}}, \\frac{r_C}{r}=\\frac{1}{\\cos ^2 \\frac{C}{2}}$. 令 $\\alpha=\\frac{A}{2}, \\beta=\\frac{B}{2}, \\gamma=\\frac{C}{2}$. 只需证当 $\\alpha+\\beta+\\gamma=\\frac{\\pi}{2}$ 时, 有 $\\frac{1}{\\cos ^2 \\alpha}+\\frac{1}{\\cos ^2 \\beta}+\\frac{1}{\\cos ^2 \\gamma} \\geqslant 4$, 即 $\\tan ^2 \\alpha+\\tan ^2 \\beta+ \\tan ^2 \\gamma \\geqslant 1$.\n由 Cauchy - Schwartz(柯西-许瓦尔兹) 不等式, 有 $3\\left(\\tan ^2 \\alpha+\\tan ^2 \\beta+\\right.\\left.\\tan ^2 \\gamma\\right) \\geqslant(\\tan \\alpha+\\tan \\beta+\\tan \\gamma)^2$. 故只需证 $\\tan \\alpha+\\tan \\beta+\\tan \\gamma \\geqslant \\sqrt{3}$. 因为 $\\tan x$ 在 $\\left(0, \\frac{\\pi}{2}\\right)$ 上是凸函数, 故由 Jensen 不等式得: $\\tan \\alpha+\\tan \\beta+\\tan \\gamma \\geqslant 3 \\tan \\frac{\\pi}{6}=\\sqrt{3}$. 因此, $r_a+r_b+r_c \\geqslant 4 r$.",
+    "remark": "",
+    "figures": []
+}

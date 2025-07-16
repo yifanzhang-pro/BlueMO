@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题14 已知 $x+\\frac{1}{x}=2 \\cos \\frac{\\pi}{24}$, 则 $x^8+\\frac{1}{x^8}$ 的值为",
+    "solution": "1. 由 $x+\\frac{1}{x}=2 \\cos \\frac{\\pi}{24}$, 得 $x^2+\\frac{1}{x^2}=4 \\cos ^2 \\frac{\\pi}{24}-2=2 \\cos \\frac{\\pi}{12}$, 所以 $x^4+ \\frac{1}{x^4}=4 \\cos ^2 \\frac{\\pi}{12}-2=2 \\cos \\frac{\\pi}{6}, x^8+\\frac{1}{x^8}=4 \\cos ^2 \\frac{\\pi}{6}-2=2 \\cos \\frac{\\pi}{3}=1$.",
+    "remark": "",
+    "figures": []
+}

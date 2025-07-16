@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $m$ 为大于 4 的整数, 且不是素数.\n证明 $m \\mid(m-1)$ !.",
+    "solution": "因 $m$ 不是素数,故 $m$ 可表示为 $m=a b$, 其中 $1<a 、 b<n$. 当 $a \\neq b$ 时, $a 、 b$ 是数列 $1,2, \\cdots, m-1$ 中两个不同的项, 故 $(m-1) !=1 \\cdot 2 \\cdots \\cdots \\cdot (m-1)$ 被 $m=a \\cdot b$ 整除.\n当 $a=b$ 时, $m=a^2$. 由于 $m>4$, 故 $a>2$, 因而 $a^2>2 a$, 即 $m>2 a$. 所以 $a$ 与 $2 a$ 是数列 $1,2, \\cdots, m-1$ 中两个不同的项, 因此 $(m-1)$ ! 被 $a \\cdot 2 a= 2 m$ 整除.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设非负数列 $a_1, a_2, \\cdots$ 满足条件: $a_{m+n} \\leqslant a_n+a_m, m, n \\in \\mathbf{N}_{+}$, 求证: 对任意正整数 $n$, 均有 $a_n \\leqslant m a_1+\\left(\\frac{n}{m}-1\\right) a_m$.",
+    "solution": "证法 1 令 $m=1$, 可得,\n$$\n0 \\leqslant a_n \\leqslant a_{n-1}+a_1 \\leqslant \\cdots \\leqslant n a_1 . \\label{(1)}\n$$\n下面用归纳法证明, 对任何 $n, m \\in \\mathbf{N}_{+}$命题成立.\n固定 $m \\in \\mathbf{N}_{+}$, 取 $n=1$, 要证明的是\n$$\n\\begin{aligned}\n& \\left(1-\\frac{1}{m}\\right) a_m \\leqslant(m-1) a_1, \\\\\n& (m-1) a_m \\leqslant(m-1) m a_1 .\n\\end{aligned}\n$$\n即由(1)即知此式成立.\n因此当 $n=1$ 时命题成立.\n现假设当 $1 \\leqslant n \\leqslant k$ 时命题成立, 分以下两种情况:\n(i) $k<m$, 则由(1)式可知\n$$\n\\frac{a_{k+1}}{k+1}-\\frac{a_m}{m} \\leqslant a_1-\\frac{a_m}{m} .\n$$\n又因为 $a_1-\\frac{a_m}{m} \\geqslant 0$, 有\n$$\n\\frac{a_{k+1}}{k+1}-\\frac{a_m}{m} \\leqslant \\frac{m}{k+1}\\left(a_1-\\frac{a_m}{m}\\right) .\n$$\n故\n$$\na_{k+1} \\leqslant m a_1+\\left(\\frac{k+1}{m}-1\\right) a_m .\n$$\n(ii) $k \\geqslant m$, 则 $k+1-m \\geqslant 1$, 由假设得 $a_{k+1} \\leqslant a_{k+1-m}+a_m$.\n利用归纳假设\n$$\na_{k+1-m} \\leqslant m a_1+\\left(\\frac{k+1-m}{m}-1\\right) a_m,\n$$\n故\n$$\na_{k+1} \\leqslant m a_1+\\left(\\frac{k+1}{m}-1\\right) a_m .\n$$\n综合 (i) 及 (ii) 知当 $n=k+1$ 时命题也成立.\n说明本题也可基于带余除法给出证明.",
+    "remark": "",
+    "figures": []
+}

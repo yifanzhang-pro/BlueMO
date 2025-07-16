@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $k \\geqslant 1$ 是一个奇数, 证明: 对任意正整数 $n$, 数 $1^k+2^k+\\cdots+n^k$ 不能被 $n+2$ 整除.",
+    "solution": "证明:$n=1$ 时结论显然成立.\n设 $n \\geqslant 2$, 记所说的和为 $A$, 则\n$$\n2 A=2+\\left(2^k+n^k\\right)+\\left(3^k+(n-1)^k\\right)+\\cdots+\\left(n^k+2^k\\right) .\n$$\n因 $k$ 是正奇数, 故由分解式 (6) 可知, 对每个 $i \\geqslant 2$, 数 $i^k+(n+2-i)^k$ 被 $i+(n+2-i)=n+2$ 整除, 故 $2 A$ 被 $n+2$ 除得的余数是 2 , 从而 $A$ 不可能被 $n+2$ 整除(注意 $n+2>2$ ).",
+    "remark": "注:论证中我们应用了\"配对法\", 这是代数中变形和式的一种常用手法.",
+    "figures": []
+}

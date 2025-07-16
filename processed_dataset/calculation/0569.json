@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题10 设函数 $f(x)$ 对所有 $x>0$ 有意义,且满足下列条件:\n(1) 对于 $x>0$, 有 $f(x) f\\left[f(x)+\\frac{1}{x}\\right]=1$;\n(2) $f(x)$ 在 $(0,+\\infty)$ 上递增.\n求 $f(1)$ 的值.",
+    "solution": "设 $f(1)=a$, 则当 $x=1$ 时, 由条件 (1) 得 $f(a+1)=\\frac{1}{a}$. 令 $x= a+1$, 由条件(1) 得 $f(a+1) f\\left[f(a+1)+\\frac{1}{a+1}\\right]=1$, 即 $f\\left(\\frac{1}{a}+\\frac{1}{a+1}\\right)= a=f(1)$. 由于 $f(x)$ 在 $(0,+\\infty)$ 上是递增的, 所以 $\\frac{1}{a}+\\frac{1}{a+1}=1$, 解方程得 $a=\\frac{1 \\pm \\sqrt{5}}{2}$. 若 $a=\\frac{1+\\sqrt{5}}{2}$, 则 $1<a=f(1)<f(a+1)=\\frac{1}{a}<1$, 矛盾.\n所以, $a=\\frac{1-\\sqrt{5}}{2}$, 即 $f(1)=\\frac{1-\\sqrt{5}}{2}$.",
+    "remark": "",
+    "figures": []
+}

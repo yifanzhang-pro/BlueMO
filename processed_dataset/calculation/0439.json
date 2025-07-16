@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise17.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 设非负实数 $x_1,x_2,\\cdots,x_n$ 满足 $x_{1}+x_{2}+\\cdots+x_{n}\\leq{\\frac{1}{2}}$ ,求$(1-x_1)(1-x_2)\\cdots(1-x_{n})$ 的最小值",
+    "solution": "先固定 $x_1, x_2, \\cdots, x_{n-2}$, 注意到 $\\left(1-x_{n-1}\\right)\\left(1-x_n\\right)=1-x_{n-1}-x_n+ 222 x_{n-1} x_n$, 其中 $x_{n-1}+x_n$ 为定值, 所以 $x_{n-1} x_n$ 的值越小则原式值越小, 故令\n$$\nx_i^{\\prime}=x_i, i==1,2, \\cdots, n-2, x_{n-1}^{\\prime}=x_{n-1}+x_n, x_n^{\\prime}=0,\n$$\n此时 $x_{n-1}^{\\prime} x_n^{\\prime}=0 \\leqslant x_{n-1} x_n$, 所以\n$$\n\\left(1-x_1^{\\prime}\\right)\\left(1-x_2^{\\prime}\\right) \\cdots\\left(1-x_{n-1}^{\\prime}\\right) \\leqslant\\left(1-x_1\\right)\\left(1-x_2\\right) \\cdots\\left(1-x_n\\right),\n$$\n其中 $x_1^{\\prime}+x_2^{\\prime}+\\cdots+x_{n-1}^{\\prime}=x_1+x_2+\\cdots+x_n \\leqslant \\frac{1}{2}$.\n再进行 $n-2$ 次类似的调整过程可知\n$$\n\\left(1-x_1\\right)\\left(1-x_2\\right) \\cdots\\left(1-x_n\\right) \\geqslant 1-\\left(x_1+x_2+\\cdots+x_n\\right) \\geqslant \\frac{1}{2},\n$$\n等号当 $x_1=\\frac{1}{2}, x_2=x_3=\\cdots=x_n=0$ 时可取到, 所以所求最小值为 $\\frac{1}{2}$.",
+    "remark": "",
+    "figures": []
+}

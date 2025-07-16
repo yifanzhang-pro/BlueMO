@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 从 5 位男同学和 4 位女同学中选出 4 人组成一个代表团参加全校辩论比赛.\n若要求男同学和女同学都至少一人,则不同的选择种数为",
+    "solution": "不同的选法种数为 $\\mathrm{C}_5^1 \\mathrm{C}_4^3+\\mathrm{C}_5^2 \\mathrm{C}_4^2+\\mathrm{C}_5^3 \\mathrm{C}_4^1=120$.",
+    "remark": "",
+    "figures": []
+}

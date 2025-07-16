@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 已知向量 $\\vec{a}=\\{2,-3\\}$, 向量 $\\overrightarrow{A B}$ 与 $\\vec{a}$ 垂直, 且 $|\\overrightarrow{A B}|=3 \\sqrt{13}$, 点 $A$ 坐标为 $(-3,1)$, 求位置向量 $\\overrightarrow{O B}$ 的坐标.",
+    "solution": "设 $\\overrightarrow{O B}=\\{x, y\\}, \\overrightarrow{A B}=\\{x+3, y-1\\}$. 因为 $\\overrightarrow{A B}$ 与 $\\vec{a}$ 垂直, $|\\overrightarrow{A B}|= 3 \\sqrt{13}$, 所以\n$$\n\\left\\{\\begin{array}{l}\n2(x+3)-3(y-1)=0, \\\\\n(x+3)^2+(y-1)^2=(3 \\sqrt{13})^2,\n\\end{array}\\right.\n$$\n得\n$$\n\\left\\{\\begin{array} { l } \n{ x = 6 , } \\\\\n{ y = 7 }\n\\end{array} \\text { 或 } \\left\\{\\begin{array}{l}\nx=-12, \\\\\ny=-5 .\n\\end{array}\\right.\\right.\n$$",
+    "remark": "",
+    "figures": []
+}

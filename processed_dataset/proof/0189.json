@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例10. 证明: 有无穷多个正整数 $n$ 满足 $n \\mid\\left(2^n+1\\right)$.",
+    "solution": "证明二这是一个不同的构造法.\n关键是注意到: 若 $n \\mid\\left(2^n+1\\right)$, 则对\n$m=2^n+1$, 有 $m \\mid\\left(2^m+1\\right)$.\n事实上, 由于 $2^n+1$ 是奇数, 若 $2^n+1=n k$ ( $k$ 为整数), 则 $k$ 必是奇数, 所以\n$$\n2^m+1=\\left(2^n\\right)^k+1=\\left(2^n+1\\right)\\left(\\left(2^n\\right)^{k-1}-\\left(2^n\\right)^{k-2}+\\cdots-2^n+1\\right)\n$$\n是 $m=2^n+1$ 的倍数.\n由上述的结果, 便递推地给出无穷多个符合要求的数: $1,3,9,513, \\cdots$.\n两种方法得出的解不全相同, 但它们 (除 1 之外) 都是 3 的倍数.\n这一点并非偶然, 实际可知, 符合本题要求的 $n(>1)$ 都被 3 整除.",
+    "remark": "",
+    "figures": []
+}

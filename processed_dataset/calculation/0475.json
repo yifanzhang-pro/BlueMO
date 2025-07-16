@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 设集合 $A=\\{a, b, c\\}, B=\\{x, y, z\\}$.\n判断以下三种对应:\n$$\n\\begin{aligned}\n& f: a \\mapsto y, b \\mapsto z, c \\mapsto x, \\\\\n& g: a \\mapsto y, c \\mapsto x, \\\\\n& h: a \\mapsto y, b \\mapsto z, c \\mapsto x, c \\mapsto z,\n\\end{aligned}\n$$\n是否是 $A$ 到 $B$ 的映射.",
+    "solution": "解:$$\nf: a \\mapsto y, b \\mapsto z, c \\mapsto x\n$$\n是 $A$ 到 $B$ 的一个映射.\n而\n$$\ng: a \\mapsto y, c \\longmapsto x\n$$\n不是 $A$ 到 $B$ 的映射, 因为 $b$ 在 $g$ 的作用下没有象.\n$$\nh: a \\mapsto y, b \\mapsto z, c \\longmapsto x, c \\mapsto z\n$$\n也不是 $A$ 到 $B$ 的映射.\n因为 $A$ 中元素 $c$ 有 $B$ 中两个元素 $x$ 和 $z$ 与它对应.",
+    "remark": "",
+    "figures": []
+}

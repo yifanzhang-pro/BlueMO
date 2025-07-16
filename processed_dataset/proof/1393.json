@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题17. 求证: 在锐角 $\\triangle A B C$ 中, 有\n$$\n\\begin{gathered}\n\\cot ^3 A+\\cot ^3 B+\\cot ^3 C+6 \\cot A \\cot B \\cot C \\\\\n\\geqslant \\cot A+\\cot B+\\cot C .\n\\end{gathered}\n$$",
+    "solution": "令 $x=\\cot A, y=\\cot B, z=\\cot C$, 由 $A+B+C=\\pi$ 知, $\\cot A \\cot B+ \\cot B \\cot C+\\cot C \\cot A=1$, 即 $x y+y z+z x=1$. 所以, 欲证的不等式等价是\n$$\nx^3+y^3+z^3+6 x y z \\geqslant(x+y+z)(x y+y z+z x),\n$$\n此即 $x(x-y)(x-z)+y(y-z)(y-x)+z(z-x)(z-y) \\geqslant 0$.\n由 Schur 不等式知原不等式成立.",
+    "remark": "",
+    "figures": []
+}

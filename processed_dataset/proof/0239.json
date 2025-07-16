@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 证明: 对任意给定的正整数 $n>1$, 都存在连续 $n$ 个合数.",
+    "solution": "易于验证, $(n+1) !+2,(n+1) !+3, \\cdots,(n+1) !+(n+1)$ 是 $n$ 个连续的合数.",
+    "remark": "",
+    "figures": []
+}

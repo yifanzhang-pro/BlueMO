@@ -1,0 +1,536 @@
+
+%%TEXT_BEGIN%%
+1. 三角函数性质奇偶性:正弦函数 $y=\sin x$ 和正切函数 $y=\tan x$ 、余切函数 $y=\cot x$ 在其定义域上为奇函数,余弦函数 $y=\cos x$ 在其定义域上为偶函数.
+一般判断三角函数的奇偶性时,有的需要先将三角函数解析式恒等变形化简, 有的需要将 $f(-x)$ 进行变形.
+单调性:三角函数单调性在平面几何、立体几何、解析几何、复数等分支中均有广泛地应用.
+解决三角函数的单调性问题时, 一般先将三角函数转化为基本三角函数,然后利用基本三角函数的单调性来解决.
+基本三角函数的单调性如下:
+$$
+y=\sin x \text { 在 }\left[-\frac{\pi}{2}+2 k \pi, \frac{\pi}{2}+2 k \pi\right] \text { 上为增函数,在 }\left[\frac{\pi}{2}+2 k \pi, \frac{3 \pi}{2}+2 k \pi\right]
+$$
+上为减函数 $(k \in \mathbf{Z})$.
+$y=\cos x$ 在 $[-\pi+2 k \pi, 2 k \pi]$ 上为增函数,在 $[2 k \pi, \pi+2 k \pi]$ 上为减函数 $(k \in \mathbf{Z})$.
+$y=\tan x$ 在 $\left(-\frac{\pi}{2}+k \pi, \frac{\pi}{2}+k \pi\right)$ 上为增函数 $(k \in \mathbf{Z}) . y=\cot x$ 在 $(k \pi$, $\pi+k \pi)$ 上为减函数 $(k \in \mathbf{Z})$.
+周期性: 周期函数的本质是, 存在非零常数 $T$, 使定义域中的任意 $x$ 都有 $f(x+T)=f(x)$ 成立.
+下面列举与周期函数相关的几个结论:
+(1) 周期函数的定义域是无界的.
+(2) 定义域为 $\mathbf{R}$ 的周期函数 $f(x)$, 若 $T$ 是周期,则 $n T(n \in \mathbf{Z}, n \neq 0)$ 仍是函数的周期.
+(3) 设 $f(x)$ 是非常数的周期函数, 且定义域为 $D$, 若 $f(x)$ 在 $D$ 上, 则 $f(x)$ 有最小正周期.
+(4) 若函数 $f(x)$ 有最小正周期 $T$, 那么除 $n T(n \in \mathbf{Z}, n \neq 0)$ 外, 函数无其他周期.
+(5) 函数 $y=f(x)$ 是数集 $M$ 上的周期函数, 则:
+(5-1) $a f(x)+b$ ( $a, b$ 是常数) 是 $M$ 上的周期函数;
+(5-2) $|f(x)|$ 是 $M$ 上的周期函数;
+(5-3) $\frac{1}{f(x)}$ 是 $\{x \mid f(x) \neq 0, x \in M\}$ 上的周期函数;
+(5-4) $f(a x+b)$ 是 $\{x \mid a x+b, x \in M\}$ 上的周期函数.
+(6) 设函数 $y=f(u)$ 的定义域为 $M, u=g(x)$ 是 $M$ 上的周期函数, 如果当 $x \in M_1$ 时, $g(x) \in M$, 那么 $f(g(x))$ 是 $M_1$ 上的周期函数.
+(7) 设函数 $y=f(x)$, 如果对任意实数 $x$, 都有 $f(a+x)=f(a-x)$, $f(b+x)=f(b-x)(a \neq b)$, 则 $f(x)$ 是周期函数, 周期 $T=2(b-a)$.
+(8) 设函数 $y=f(x)$, 如果它的图形关于两点 $\left(a_1, b\right)$ 和 $\left(a_2, b\right)\left(a_1 \neq a_2\right)$ 对称, 那么 $f(x)$ 是周期函数, 其周期 $T=2\left(a_1-a_2\right)$.
+(9) 设函数 $y=f(x)$, 如果对任意实数 $x$, 都有 $f(a+x)=f(a-x)$, $f(b+x)=-f(b-x),(a \neq b)$, 则 $f(x)$ 是周期函数, 其周期为 $T=4(b-a)$.
+(10) $y=A \sin (\omega x+\varphi)(\omega \neq 0)$ 的最小正周期是 $T=\frac{2 \pi}{|\omega|} ; y=A \cos (\omega x+ \varphi （ \omega \neq 0)$ 的最小正周期是 $T=\frac{2 \pi}{|\omega|}, y=A \tan (\omega x+\varphi)(\omega \neq 0)$ 的最小正周期是 $T=\frac{\pi}{|\omega|}, y=A \cot (\omega x+\varphi)(\omega \neq 0)$ 的最小正周期是 $T=\frac{\pi}{|\omega|}$.
+对于复杂的三角函数,一般须先将其转化为基本三角函数, 然后可以得到它的周期性.
+这里要求在变形过程中必须是等价的, 特别要注意的是定义域的变化.
+2. 三角函数的图象变换
+(1) 平移变换
+(1-1) 左右平移: $y=\sin x \rightarrow y=\sin (x+\varphi)$
+$\varphi>0$ 向左平移 $\varphi$ 个单位, $\varphi<0$ 向右平移 $|\varphi|$ 个单位.
+(1-2) 上下平移: $y=\sin x \rightarrow y=\sin x+k$
+$k>0$ 向上平移 $k$ 个单位, $k<0$ 向下平移 $|k|$ 个单位.
+(2) 周期变换: $y=\sin x \rightarrow y=\sin \omega x$
+(2-1) 当 $\omega>1$ 时, 纵坐标不变, 横坐标缩短为原来的 $\frac{1}{\omega}$ 倍;
+(2-2) 当 $0<\omega<1$ 时, 纵坐标不变, 横坐标伸长为原来的 $\frac{1}{\omega}$ 倍.
+(3) 振幅变换: $y=\sin x \rightarrow y=A \sin x$
+(3-1) 当 $A>1$ 时, 横坐标不变,纵坐标伸长为原来的 $A$ 倍;
+(3-2) 当 $0<A<1$ 时, 横坐标不变, 纵坐标缩短为原来的 $A$ 倍.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1 求函数 $y=\sqrt{-\tan x-1}+\frac{\sqrt{16-x^2}}{1-\log \frac{\sqrt{3}}{2} \sin x}$ 的定义域.
+%%<SOLUTION>%%
+解:要使原函数有意义, 当且仅当
+$$
+\left\{\begin{array}{l}
+-\tan x-1 \geqslant 0, \quad\quad (1)\\
+16-x^2 \geqslant 0, \quad\quad (2)\\
+1-\log \frac{\sqrt{3}}{2} \sin x \neq 0,\quad\quad (3) \\
+\sin x>0 .\quad\quad (4)
+\end{array}\right.
+$$
+由(1)式, 得 $k \pi+\frac{\pi}{2}<x \leqslant k \pi+\frac{3}{4} \pi, k \in \mathbf{Z}$.
+由(2)式, 得 $-4 \leqslant x \leqslant 4$.
+由(3)式, 得 $x \neq 2 k \pi+\frac{\pi}{3}$ 且 $x \neq 2 k \pi+\frac{2}{3} \pi, k \in \mathbf{Z}$.
+由(4)式, 得 $2 k \pi<x<(2 k+1) \pi, k \in \mathbf{Z}$.
+取交集有 $x \in\left[-4,-\frac{5}{4} \pi\right) \cup\left(\frac{\pi}{2}, \frac{2}{3} \pi\right) \cup\left(\frac{2}{3} \pi, \frac{3}{4} \pi\right]$, 即为原函数定义域.
+评注求函数的定义域通常是解不等式组, 利用 “数形结合” 的数学思想, 借助于数轴画线求交集的方法进行.
+在求解三角函数, 特别是综合性较强的三角函数的定义域时, 我们同样可以利用 “数形结合” 的数学思想, 在单位圆中画三角函数线,求表示各三角不等式解集的扇形区域的交集来完成.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2 设函数 $f(x)=|\sin x|+|\cos x|$, 
+(1) 试讨论函数的性质(有界性, 奇偶性, 单调性, 周期性), 求出其极值, 并作出其在 $[0,2 \pi]$ 上的图象;
+(2) 求函数 $y=\sqrt{\sin x}+\sqrt{\cos x}\left(x \in\left[0, \frac{\pi}{2}\right]\right)$ 的值域.
+%%<SOLUTION>%%
+解:(1) $f(-x)=|\sin (-x)|+|\cos (-x)|=|\sin x|+|\cos x|=f(x)$, 所以这是一个偶函数.
+$$
+f\left(x+\frac{\pi}{2}\right)=\left|\sin \left(x+\frac{\pi}{2}\right)\right|+\left|\cos \left(x+\frac{\pi}{2}\right)\right|=|\cos x|+|\sin x|=f(x),
+$$
+所以这是一个周期为 $\frac{\pi}{2}$ 的周期函数.
+$$
+2=2\left(\sin ^2 x+\cos ^2 x\right) \geqslant f^2(x) \geqslant \sin ^2 x+\cos ^2 x=1,
+$$
+所以 $1 \leqslant f(x) \leqslant \sqrt{2}$, 所以 $f(x)$ 有上下界.
+由于 $f(x)$ 是一个周期为 $\frac{\pi}{2}$ 的周期函数, 所以我们只需要考查它在 $\left(0, \frac{\pi}{2}\right)$ 上的单调性即可.
+此时 $f(x)=\sin x+\cos x=\sqrt{2} \sin \left(x+\frac{\pi}{4}\right)$, 那么 $f(x)$ 在 $\left(k \frac{\pi}{2}, k \frac{\pi}{2}+\right. \left.\frac{\pi}{4}\right)$ 上递增, 在 $\left(k \frac{\pi}{2}+\frac{\pi}{4}, k \frac{\pi}{2}+\frac{\pi}{2}\right)$ 上递减.
+图象如右:(<FilePath:./figures/fig-c1e2.png>)
+(2) $y^4 \geqslant \sin ^2 x+\cos ^2 x=1 \Rightarrow y \geqslant 1$,
+$(\sin x+\cos x)^2 \leqslant 2\left(\sin ^2 x+\cos ^2 x\right)=2$, $\sin x+\cos x \leqslant \sqrt{2}$,
+$(\sqrt{\sin x}+\sqrt{\cos x})^2 \leqslant 2(\sin x+\cos x)= 2 \sqrt{2}, \sqrt{\sin x}+\sqrt{\cos x} \leqslant 2^{\frac{3}{4}}$.
+这时我们有 $y \in\left[1,2^{\frac{3}{4}}\right]$, 而假设 $\sin ^2 x=a$ ，那么 $y=a^{\frac{1}{4}}+(1-a)^{\frac{1}{4}}$ 在 $a \in[0$ ， 1] 上是连续的, 因此 $y$ 可以取到 1 到 $2^{\frac{3}{4}}$ 之间的任何一个值, 所以所求值域为 $\left[1,2^{\frac{3}{4}}\right]$.
+评注这两道题都是考查的三角函数的基本性质,第二题里面反复运用了均值不等式, 不过难度都不高, 这种题往往需要学生细心谨慎, 不要算错或者写错了, 关于第一问如何看出 $\frac{\pi}{2}$ 是周期, 实际上最后可以用图象分析出来, 因为画图后发现是一样的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3 已知 $f(x)=a x+\sin x$ 表示的图象上有两条切线相互垂直, 求 $a$ 的值.
+%%<SOLUTION>%%
+解:$f(x)=a x+\sin x \Rightarrow f^{\prime}(x)=a+\cos x$, 从而如果有两条切线垂直, 那么存在这样的 $x_1, x_2$ 使得 $\left(a+\cos x_1\right)\left(a+\cos x_2\right)=-1$, 从函数图象来看,一个二次函数的两个根都在 $(-1,1)$ 上, 首项系数为 1 , 并且开口朝上, 可以感觉到能取到的最小值只有在尽量的往下移动, 也就是在两个根分别是一 1,1 的时候最小值可以尽可能的小, 此时刚好等于 -1 , 因此可以感觉到这道题实际上卡得很死 (指的中间的放缩), 我们具体的操作如下:
+不妨设 $\cos x_1 \leqslant \cos x_2,\left(a+\cos x_1\right)\left(a+\cos x_2\right)<0$, 从而 $a \in\left(-\cos x_2\right.$, $\left.-\cos x_1\right)$, 此时可以得到 $0<a+\cos x_2 \leqslant a+1, a-1 \leqslant a+\cos x_1<0$, 那么
+$$
+-1=\left(a+\cos x_1\right)\left(a+\cos x_2\right) \leqslant(a+1)(a-1)=a^2-1 \leqslant-1 .
+$$
+所以中间不等号必须全部取等号, 此时只能 $a=0$, 并且在 $x_1=\pi, x_2=$ 0 的时候两个点的切线互相垂直.
+评注本题是挺不错的一道题, 考查学生对函数基本性质的理解.
+实际上在得出结论之前, 如果能够想象出图象是最好了, 这样会对最后结果的把握很有帮助, 具体的分析都比较常规, 没必要细讲.
+但是要注意一个陷阱, 有些学生的做法会存在逻辑问题,并没有真的得出 $a=0$, 可以给学生强调这一点,这种题每一步的逻辑要对.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4 设函数 $f(x)=\sin ^2 x+(2 a-1) \sin x+a^2+\frac{1}{4}$, 已知 $x \in \left[\frac{5}{6} \pi, \frac{3}{2} \pi\right]$, 求 $f(x)$ 的最值.
+%%<SOLUTION>%%
+解:设 $\sin x=t$, 则 $t \in\left[-1, \frac{1}{2}\right]$.
+$f(x)=g(t)=t^2+(2 a-1) t+a^2+\frac{1}{4}$, 对称轴为 $t=\frac{1-2 a}{2}$.
+当 $\frac{1-2 a}{2} \leqslant-1$ 即 $a \geqslant \frac{3}{2}$ 时, $\left[-1, \frac{1}{2}\right]$ 为 $g(t)$ 的单调增区间,所以
+$$
+f_{\min }=g(-1)=a^2-2 a+\frac{9}{4}, f_{\max }=g\left(\frac{1}{2}\right)=a^2+a .
+$$
+当 $-1<\frac{1-2 a}{2} \leqslant-\frac{1}{4}$ 即 $\frac{3}{4} \leqslant a<\frac{3}{2}$ 时, $g(-1) \leqslant g\left(\frac{1}{2}\right)$, 所以
+$$
+f_{\min }=g\left(\frac{1-2 a}{2}\right)=a, f_{\max }=g\left(\frac{1}{2}\right)=a^2+a .
+$$
+当 $-\frac{1}{4}<\frac{1-2 a}{2} \leqslant \frac{1}{2}$ 即 $0 \leqslant a<\frac{3}{4}$ 时, $g(-1)>g\left(\frac{1}{2}\right)$, 所以
+$$
+f_{\min }=g\left(\frac{1-2 a}{2}\right)=a, f_{\max }=g(-1)=a^2-2 a+\frac{9}{4} .
+$$
+当 $\frac{1-2 a}{2}>\frac{1}{2}$ 即 $a<0$ 时, $\left[-1, \frac{1}{2}\right]$ 为 $g(t)$ 的单调减区间, 所以
+$$
+f_{\min }=g\left(\frac{1}{2}\right)=a^2+a, f_{\max }=g(-1)=a^2-2 a+\frac{9}{4} .
+$$
+评注求形如 $f(x)=A \sin ^2 x+B \sin x+C$ 形式的最值, 通常用换元法, 化成二次函数在区间的最值问题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5 已知函数 $f(x)=\frac{\sqrt{2} \sin x}{\sqrt{1+\cos 2 x}}$.
+(1) 求函数 $f(x)$ 的定义域、值域、最小正周期;
+(2) 判断函数 $f(x)$ 的奇偶性.
+%%<SOLUTION>%%
+解:(1) $\begin{aligned} f(x) & =\frac{\sqrt{2} \sin x}{\sqrt{1+\cos 2 x}}=\frac{\sin x}{|\cos x|} \\ & =\left\{\begin{array}{l}\tan x, x \in\left(2 k \pi-\frac{\pi}{2}, 2 k \pi+\frac{\pi}{2}\right) \\ -\tan x, x \in\left(2 k \pi+\frac{\pi}{2}, 2 k \pi+\frac{3 \pi}{2}\right)\end{array} k \in \mathbf{Z},\right.\end{aligned}$
+定义域: $\left\{x \mid x \neq k \pi+\frac{\pi}{2}, k \in \mathbf{Z}\right\}$, 值域为: $\mathbf{R}$, 最小正周期为 $T=2 \pi$.
+(2) $f(-x)=\frac{\sin (-x)}{|\cos (-x)|}=-\frac{\sin x}{|\cos x|}=-f(x)$, 且定义域关于原点对称, 所以 $f(x)$ 为奇函数.
+评注判断函数周期性时, 一要恒等变形, 二要注意定义域的影响.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6 已知函数 $f(x)=\frac{a-2 \cos x}{3 \sin x}$ 在区间 $\left(0, \frac{\pi}{2}\right)$ 内是增函数, 求 $a$ 的取值范围.
+%%<SOLUTION>%%
+分析:根据增函数的定义, 列出不等式, 求 $a$ 的取值范围.
+解法一由条件得: 当 $0<x_1<x_2<\frac{\pi}{2}$ 时,
+$$
+f\left(x_1\right)-f\left(x_2\right)=\frac{a-2 \cos x_1}{3 \sin x_1}-\frac{a-2 \cos x_2}{3 \sin x_2}<0,
+$$
+因为 $\sin x_2>\sin x_1>0$, 所以去分母得
+$$
+a \sin x_2-2 \cos x_1 \sin x_2-a \sin x_1+2 \cos x_2 \sin x_1<0,
+$$
+整理得
+$$
+a\left(\sin x_2-\sin x_1\right)-2 \sin \left(x_2-x_1\right)<0,
+$$
+故 $a<\frac{2 \sin \left(x_2-x_1\right)}{\sin x_2-\sin x_1}=\frac{4 \sin \frac{x_2-x_1}{2} \cos \frac{x_2-x_1}{2}}{2 \cos \frac{x_2+x_1}{2} \sin \frac{x_2-x_1}{2}}=\frac{2 \cos \frac{x_2-x_1}{2}}{\cos \frac{x_2+x_1}{2}}$.
+由于
+$$
+\begin{aligned}
+\cos \frac{x_2-x_1}{2} & =\cos \frac{x_2}{2} \cos \frac{x_1}{2}+\sin \frac{x_2}{2} \sin \frac{x_1}{2} \\
+& >\cos \frac{x_2}{2} \cos \frac{x_1}{2}-\sin \frac{x_2}{2} \sin \frac{x_1}{2} \\
+& =\cos \frac{x_1+x_2}{2}>0,
+\end{aligned}
+$$
+所以 $\frac{\cos \frac{x_2-x_1}{2}}{\cos \frac{x_1+x_2}{2}}>1$, 从而 $a \leqslant 2$, 即 $a$ 的取值范围为 $(-\infty, 2]$.
+解法二记 $\tan \frac{x}{2}=t$, 则 $\sin x=\frac{2 t}{1+t^2}, \cos x=\frac{1-t^2}{1+t^2}$, 且 $t \in(0,1)$,
+所以
+$$
+\begin{aligned}
+g(t) & =f(x)=\frac{a-2 \times \frac{1-t^2}{1+t^2}}{3 \times \frac{2 t}{1+t^2}}=\frac{(a-2)+(a+2) t^2}{6 t} \\
+& =\frac{a-2}{6 t}+\frac{a+2}{6} \cdot t .
+\end{aligned}
+$$
+设 $0<t_1<t_2<1$, 则
+$$
+g\left(t_1\right)-g\left(t_2\right)=\left(\frac{a-2}{6 t_1}+\frac{a+2}{6} t_1\right)-\left(\frac{a-2}{6 t_2}+\frac{a+2}{6} t_2\right)<0,
+$$
+去分母得
+$$
+(a-2) t_2+(a+2) t_1^2 t_2-(a-2) t_1-(a+2) t_1 t_2^2<0,
+$$
+整理得
+$$
+\left(t_2-t_1\right)\left(a-a t_1 t_2-2-2 t_1 t_2\right)<0 .
+$$
+而 $0<t_1<t_2<1$, 所以 $a<\frac{2\left(1+t_1 t_2\right)}{1-t_1 t_2}$.
+显然 $\frac{1+t_1 t_2}{1-t_1 t_2}>1$, 故 $a \leqslant 2$, 即 $a$ 的取值范围为 $(-\infty, 2]$.
+评注对于含参数不等式的问题, 如 $a<f(t)$ 恒成立, 则应取 $f(t)$ 的最小值后得 $a$ 的取值范围; 如 $a>f(t)$, 则取 $f(t)$ 的最大值后得 $a$ 的取值范围, 如 $f(t)$ 无最值, 则取它的变化趋势的最值.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7 设函数 $f(x), g(x)$ 对任意实数 $x$ 均有 $-\frac{\pi}{2}<f(x)+g(x)<\frac{\pi}{2}$, 并且 $-\frac{\pi}{2}<f(x)-g(x)<\frac{\pi}{2}$. 求证: 对任意实数 $x$ 均有 $\cos f(x)> \sin f(x)$, 并由此证明: 对任意实数 $x$ 均有 $\cos (\cos x)>\sin (\sin x)$.
+%%<SOLUTION>%%
+证明:由条件可得 $-\frac{\pi}{2}<f(x)<\frac{\pi}{2},-\frac{\pi}{2}<g(x)<\frac{\pi}{2}$.
+若 $0 \leqslant f(x)<\frac{\pi}{2}$, 得到 $-\frac{\pi}{2}<g(x)<\frac{\pi}{2}-f(x) \leqslant \frac{\pi}{2}$, 由于 $y=\sin x$ 在 $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$ 上为单调增函数, 故 $\sin g(x)<\sin \left[\frac{\pi}{2}-f(x)\right]=\cos f(x)$.
+若 $-\frac{\pi}{2}<f(x)<0$, 则由条件 $-\frac{\pi}{2}<g(x)<\frac{\pi}{2}+f(x)<\frac{\pi}{2}$, 同样由 $y=\sin x$ 在 $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$ 上为单调增函数, 故 $\sin g(x)<\sin \left[\frac{\pi}{2}+f(x)\right]= \cos f(x)$.
+评注对任意实数 $x$,均有 $|\cos x \pm \sin x|=\sqrt{2}\left|\sin \left(\frac{\pi}{4} \pm x\right)\right| \leqslant \sqrt{2}< \frac{\pi}{2}$, 根据已证的不等式, 就有 $\cos (\cos x)>\sin (\sin x)$.
+利用正、余弦函数的单调性,结合正、余弦函数的有界性以及上述结论, 我们还有如下的一些结论: $\sin (\cos x)<\cos (\sin x), \sin (\sin (\sin x))< \sin (\cos (\cos x))<\cos (\cos (\cos x))$ 等.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8 已知函数 $f(x)=\tan \left(\frac{\pi}{\sqrt{3}} \sin x\right)$.
+(1) 求 $f(x)$ 的定义域和值域;
+(2) 在 $(-\pi, \pi)$ 中, 求 $f(x)$ 的单调区间;
+(3) 判定方程 $f(x)=\tan \frac{\sqrt{2}}{3} \pi$ 在区间 $(-\pi, \pi)$ 上解的个数.
+%%<SOLUTION>%%
+解:(1) 因为 $-1 \leqslant \sin x \leqslant 1$, 所以 $-\frac{\pi}{\sqrt{3}} \leqslant \frac{\pi}{\sqrt{3}} \sin x \leqslant \frac{\pi}{\sqrt{3}}$.
+又函数 $y=\tan x$ 在 $x=k \pi+\frac{\pi}{2}(k \in \mathbf{Z})$ 处无定义,且
+$$
+\left(-\frac{\pi}{2}, \frac{\pi}{2}\right) \varsubsetneqq\left[-\frac{\pi}{\sqrt{3}}, \frac{\pi}{\sqrt{3}}\right] \varsubsetneqq(-\pi, \pi),
+$$
+所以令 $\frac{\pi}{\sqrt{3}} \sin x= \pm \frac{\pi}{2}$, 则 $\sin x= \pm \frac{\sqrt{3}}{2}$, 解之得: $x=k \pi \pm \frac{\pi}{3}(k \in \mathbf{Z})$.
+所以 $f(x)$ 的定义域是 $A=\left\{x \mid x \in \mathbf{R}\right.$, 且 $\left.x \neq k \pi \pm \frac{\pi}{3}, k \in \mathbf{Z}\right\}$.
+因为 $\tan x$ 在 $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$ 内的值域为 $(-\infty,+\infty)$, 而当 $x \in A$ 时, 函数 $y=\tan \left(\frac{\pi}{\sqrt{3}} \sin x\right)$ 的值域 $B$ 满足 $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right) \varsubsetneqq B$, 所以 $f(x)$ 的值域是 $(-\infty,+\infty)$.
+(2) 由 $f(x)$ 的定义域知, $f(x)$ 在 $[0, \pi]$ 中的 $x=\frac{\pi}{3}$ 和 $x=\frac{2 \pi}{3}$ 处无定义.
+设 $t=\frac{\pi}{\sqrt{3}} \sin x$, 则当 $x \in\left[0, \frac{\pi}{3}\right) \cup\left(\frac{\pi}{3}, \frac{2 \pi}{3}\right) \cup\left(\frac{2 \pi}{3}, \pi\right)$ 时, $t \in \left[0, \frac{\pi}{2}\right) \cup\left(\frac{\pi}{2}, \frac{\pi}{\sqrt{3}}\right]$, 且以 $t$ 为自变量的函数 $y=\tan t$ 在区间 $\left(0, \frac{\pi}{2}\right)$, $\left(\frac{\pi}{2}, \frac{\pi}{\sqrt{3}}\right]$ 上分别单调递增.
+又因为当 $x \in\left[0, \frac{\pi}{3}\right]$ 时, 函数 $t=\frac{\pi}{\sqrt{3}} \sin x$ 单调递增, 且 $t \in\left[0, \frac{\pi}{2}\right)$; 当 $x \in\left(\frac{\pi}{3}, \frac{\pi}{2}\right]$ 时, 函数 $t=\frac{\pi}{\sqrt{3}} \sin x$ 单调递增, 且 $t \in\left(\frac{\pi}{2}, \frac{\pi}{\sqrt{3}}\right]$;
+当 $x \in\left[\frac{\pi}{2}, \frac{2 \pi}{3}\right)$ 时,函数 $t=\frac{\pi}{\sqrt{3}} \sin x$ 单调递减, 且 $t \in\left(\frac{\pi}{2}, \frac{\pi}{\sqrt{3}}\right]$;
+当 $x \in\left(\frac{2 \pi}{3}, \pi\right)$ 时,函数 $t=\frac{\pi}{\sqrt{3}} \sin x$ 单调递减, 且 $t \in\left(0, \frac{\pi}{2}\right)$.
+所以 $f(x)=\tan \left(\frac{\pi}{\sqrt{13}} \sin x\right)$ 在区间 $\left[0, \frac{\pi}{3}\right),\left(\frac{\pi}{3}, \frac{\pi}{2}\right]$ 上分别是单调递增函数; 在 $\left[\frac{\pi}{2}, \frac{2 \pi}{3}\right),\left(\frac{2 \pi}{3}, \pi\right)$ 上是单调递减函数.
+又 $f(x)$ 是奇函数, 所以区间 $\left(-\frac{\pi}{3}, 0\right],\left[-\frac{\pi}{2},-\frac{\pi}{3}\right)$ 也是 $f(x)$ 的单调递增区间, $\left[-\pi,-\frac{2 \pi}{3}\right),\left(-\frac{2 \pi}{3},-\frac{\pi}{2}\right]$ 是 $f(x)$ 的单调递减区间.
+故在区间 $(-\pi, \pi)$ 中, $f(x)$ 的单调递增区间为: $\left[-\frac{\pi}{2},-\frac{\pi}{3}\right),\left(-\frac{\pi}{3}\right.$, $\left.\frac{\pi}{3}\right),\left(\frac{\pi}{3}, \frac{\pi}{2}\right]$, 单调递减区间为: $\left[-\pi,-\frac{2 \pi}{3}\right),\left(-\frac{2 \pi}{3}, \frac{2 \pi}{3}\right),\left(\frac{2 \pi}{3}, \pi\right)$.
+(3) 由 $f(x)=\tan \frac{\sqrt{2}}{3} \pi$, 得 $\tan \left(\frac{\pi}{\sqrt{3}} \sin x\right)=\tan \left(\frac{\sqrt{2}}{3} \pi\right)$
+$$
+\Leftrightarrow \frac{\pi}{\sqrt{3}} \sin x=k \pi+\frac{\sqrt{2}}{3} \pi(k \in \mathbf{Z}) \Leftrightarrow \sin x=k \sqrt{3}+\frac{\sqrt{6}}{3}(k \in \mathbf{Z}) .
+$$
+又因为 $-1 \leqslant \sin x \leqslant 1, \frac{-\sqrt{3}-\sqrt{2}}{3} \leqslant k \leqslant \frac{\sqrt{3}-\sqrt{2}}{3}$, 所以 $k=0$ 或 $k=$ -1 .
+当 $k=0$ 时, 从(1)得方程 $\sin x=\frac{\sqrt{6}}{3}$;
+当 $k=1$ 时, 从(1)得方程 $\sin x=-\sqrt{3}+\frac{\sqrt{6}}{3}$.
+显然方程 $\sin x=\frac{\sqrt{6}}{3}, \sin x=-\sqrt{3}+\frac{\sqrt{6}}{3}$, 在 $(-\pi, \pi)$ 上各有两个解, 故 $f(x)=\tan \frac{\sqrt{2}}{3} \pi$ 在区间 $(-\pi, \pi)$ 上共有 4 个解.
+评注本题是正弦函数与正切函数的复合.
+(1) 求 $f(x)$ 的定义域和值域, 应当先搞清楚 $y=\frac{\pi}{\sqrt{3}} \sin x$ 的值域与 $y=\tan x$ 的定义域的交集; (2) 求 $f(x)$ 的单调区间, 必须先搞清 $f(x)$ 的基本性质, 如奇偶性、周期性、复合函数单调性等.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9 求函数 $y=\cos x(1+\cos x) \tan \frac{x}{2}$ 的周期.
+%%<SOLUTION>%%
+分析:利用半角的正切公式变形可将函数解析式化为 $y=\cos x(1+ \cos x) \frac{\sin x}{1+\cos x}=\frac{1}{2} \sin 2 x$, 虽然最后所得函数形式的周期为 $\pi$, 但由于在运用公式变形过程中 $x$ 的范围有了变化, 原函数中要求 $x \neq 2 k \pi$, 即根据等价变形的要求, 最后原函数等价于函数 $y=\frac{1}{2} \sin 2 x(x \neq 2 k \pi)$, 故原函数的周期为 $2 \pi$.
+评注由于有些三角公式本身只是一般的恒等式, 而两边的范围并非是等价的, 因此运用这些公式需要附加一定的条件, 或者说可能会出现运用公式的前后范围不相同.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10 证明函数 $g(x)=\cos \sqrt[3]{x}$ 不是周期函数.
+%%<SOLUTION>%%
+分析:当结论出现否定的形式时,宜采用反证法.
+证明假设 $g(x)$ 是周期函数, 非零常数 $T$ 是它的一个周期, 则 $\cos \sqrt[3]{x+T}=\cos \sqrt[3]{x}$ 对一切实数 $x$ 都成立.
+取 $x=0$, 得 $\cos \sqrt[3]{T}=1$, 从而 $\sqrt[3]{T}=2 k \pi(k \neq 0, k \in \mathbf{Z})$.
+取 $x=T$, 得 $\cos \sqrt[3]{2 T}=\cos \sqrt[3]{T}=1$, 有 $\sqrt[3]{2 T}=2 e \pi(e \neq 0, e \in \mathbf{Z})$. 于是 $\frac{\sqrt[3]{2 T}}{\sqrt[3]{T}}=\frac{2 e \pi}{2 k \pi}=\frac{e}{k}$, 即 $\sqrt[3]{2}=\frac{e}{k}$, 从而 $\sqrt[3]{2}$ 是有理数, 这与 $\sqrt[3]{2}$ 是无理数相矛盾,故函数 $g(x)=\cos \sqrt[3]{x}$ 不是周期函数.
+评注当结论是肯定或否定形式, 含有 “至多”、“至少”等字样时, 可利用反证法证明问题.
+又如: 求证函数 $y=|\sin x|+|\cos x|$ 的最小正周期是 $\frac{\pi}{2}$.
+易知 $\frac{\pi}{2}$ 是它的周期, 再证 $\frac{\pi}{2}$ 是它的最小正周期.
+假设 $0<T<\frac{\pi}{2}$ 是 $y=|\sin x|+|\cos x|$ 的周期, 则 $|\sin (x+T)|+|\cos (x+T)|=|\sin x|+ |\cos x|$ 对任意 $x$ 都成立, 于是取 $x=0$, 得 $|\sin T|+|\cos T|=|\sin 0|+ |\cos 0|=1$, 但 $|\sin T|+|\cos T|=\sin T+\cos T=\sqrt{2} \sin \left(T+\frac{\pi}{4}\right)>1$, 故矛盾,所以 $T$ 不存在,原命题正确.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11 若方程 $\sin ^2 x+\cos x+a=0$ 有解,求实数 $a$ 的取值范围.
+%%<SOLUTION>%%
+分析:将原方程化归为一元二次方程后, 根据根的分布特征求 $a$ 的取值范围;也可将原方程化归为二次函数后, 根据值域求 $a$ 的取值范围.
+解法一原方程可变形为 $\cos ^2 x-\cos x-1-a=0$, 当 $\Delta=(-1)^2- 4(-1-a)=5+4 a \geqslant 0$, 即 $a \geqslant-\frac{5}{4}$ 时, $\cos x=\frac{1 \pm \sqrt{5+4 a}}{2}$. 但 $|\cos x| \leqslant$ 1 , 所以 $-1 \leqslant \frac{1+\sqrt{5+4 a}}{2} \leqslant 1$ 或 $-1 \leqslant \frac{1-\sqrt{5+4 a}}{2} \leqslant 1$, 解这两个不等式,得 $-\frac{5}{4} \leqslant a \leqslant 1$.
+解法二设 $t=\cos x$, 则 $f(t)=t^2-t-a-1$, 且 $t \in[-1,1]$, 因原方程有解, 所以 $f(t)$ 的图象与横轴 $t$ 在 $[-1,1]$ 上有交点, 有下列三种情形:
+如图 (<FilePath:./figures/fig-c1e11-1.png>) (<FilePath:./figures/fig-c1e11-2.png>) , 满足 $f(1) f(-1) \leqslant 0$;
+如图 (<FilePath:./figures/fig-c1e11-3.png>) , 满足
+$$
+\left\{\begin{array}{l}
+f(1) \geqslant 0, \\
+f(-1) \geqslant 0, \\
+\Delta \geqslant 0, \\
+-1<\frac{1}{2}<1,
+\end{array}\right.
+$$
+即 $(1-a)(-1-a) \leqslant 0$, 或 $\left\{\begin{array}{l}1-a \geqslant 0, \\ -1-a \geqslant 0, \text { 解之得 }-\frac{5}{4} \leqslant a \leqslant 1 \text {, 所以 } a \text { 的取 } \\ 5+4 a \geqslant 0 .\end{array}\right.$ 值范围为 $\left[-\frac{5}{4}, 1\right]$.
+解法三原方程可变形为 $a=\cos ^2 x-\cos x-1=\left(\cos x-\frac{1}{2}\right)^2-\frac{5}{4}$, 因为 $|\cos x| \leqslant 1$, 所以 $a_{\max }=1, a_{\min }=-\frac{5}{4}$, 故 $a$ 的取值范围为 $\left[-\frac{5}{4}, 1\right]$.
+评注有关 $\sin x$ 和 $\cos x$ 的三角方程有解的问题,转化为二次函数的方法最为简洁.
+另外, 在本题中因二次函数的对称轴为 $t==\frac{1}{2}$, 所以图(<FilePath:./figures/fig-c1e11-1.png>)实际上是不可能的, 可不考虑.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12 求函数 $y=(a+\cos x)(a+\sin x)$ 的值域.
+%%<SOLUTION>%%
+分析:对于含参数的函数, 应对 $a$ 进行分类讨论.
+解 $y=a^2+a(\sin x+\cos x)+\sin x \cos x$.
+设 $\sin x+\cos x=t$, 则 $\sin x \cos x=\frac{t^2-1}{2},-\sqrt{2} \leqslant t \leqslant \sqrt{2}$, 所以
+$$
+y=a^2+a t+\frac{1}{2}\left(t^2-1\right)=\frac{1}{2}(t+a)^2+\frac{a^2-1}{2} .
+$$
+(1) 当 $a \geqslant \sqrt{2}$ 时, 当 $t=\sqrt{2}$ 时, $y_{\text {max }}=a^2+\sqrt{2} a+\frac{1}{2}=\left(a+\frac{\sqrt{2}}{2}\right)^2$;
+当 $t=-\sqrt{2}$ 时, $y_{\text {min }}=a^2-\sqrt{2} a+\frac{1}{2}=\left(a-\frac{\sqrt{2}}{2}\right)^2$.
+所以函数的值域为 $\left[\left(a-\frac{\sqrt{2}}{2}\right)^2,\left(a+\frac{\sqrt{2}}{2}\right)^2\right]$.
+(2) 当 $0 \leqslant a \leqslant \sqrt{2}$ 时, 当 $t=\sqrt{2}$ 时, $y_{\text {max }}=\left(a+\frac{\sqrt{2}}{2}\right)^2$;
+当 $t=-a$ 时, $y_{\text {min }}=\frac{a^2-1}{2}$.
+所以函数的值域为 $\left[\frac{a^2-1}{2},\left(a+\frac{\sqrt{2}}{2}\right)^2\right]$.
+(3) 当 $-\sqrt{2} \leqslant a \leqslant 0$ 时, 当 $t=-\sqrt{2}$ 时, $y_{\text {max }}=\left(a-\frac{\sqrt{2}}{2}\right)^2$;
+当 $t=-a$ 时, $y_{\text {min }}=\frac{a^2-1}{2}$.
+所以函数的值域为 $\left[\frac{a^2-1}{2},\left(a-\frac{\sqrt{2}}{2}\right)^2\right]$.
+(4) 当 $a<-\sqrt{2}$ 时, 当 $t=-\sqrt{2}$ 时, $y_{\text {max }}=\left(a-\frac{\sqrt{2}}{2}\right)^2$;
+当 $t=\sqrt{2}$ 时, $y_{\text {min }}=\left(a+\frac{\sqrt{2}}{2}\right)^2$.
+所以函数的值域为 $\left[\left(a+\frac{\sqrt{2}}{2}\right)^2,\left(a-\frac{\sqrt{2}}{2}\right)^2\right]$.
+评注有关含 $\sin x$ 和 $\cos x$ 的二次函数值域问题, 必须注意隐含条件 $|\sin x| \leqslant 1$ 和 $|\cos x| \leqslant 1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13 设函数 $f(x)$ 的定义域为 $\mathbf{R}$, 对任意实数 $\alpha 、 \beta$ 有
+$f(\alpha)+f(\beta)=2 f\left(\frac{\alpha+\beta}{2}\right) f\left(\frac{\alpha-\beta}{2}\right)$, 且 $f\left(\frac{\pi}{3}\right)=\frac{1}{2}, f\left(\frac{\pi}{2}\right)=0$.
+(1) 求证: $f(-x)=f(x)=-f(\pi-x)$;
+(2) 若 $0 \leqslant x<\frac{\pi}{2}$ 时, $f(x)>0$, 求证: $f(x)$ 在 $[0, \pi]$ 上单调递减;
+(3) 求 $f(x)$ 的最小周期并加以证明.
+%%<SOLUTION>%%
+分析:正确理解所给等式, 通过赋值法、定义法解答本题.
+解 (1) 因为 $f\left(\frac{\pi}{3}\right)+f\left(\frac{\pi}{3}\right)=2 f\left(\frac{\pi}{3}\right) f(0)$, 且 $f\left(\frac{\pi}{3}\right)=\frac{1}{2}$, 所以 $f(0)=1$.
+又 $f(x)+f(-x)=2 f(0) f(x)$, 故 $f(x)=f(-x)$.
+又由于 $f(x)+f(\pi-x)=2 f\left(\frac{\pi}{2}\right) f\left(x-\frac{\pi}{2}\right)$, 且 $f\left(\frac{\pi}{2}\right)=0$, 故有
+$$
+f(x)=f(-x)=-f(\pi-x) .
+$$
+(2) 由 $f(-x)=f(x)$ 且 $0 \leqslant x<\frac{\pi}{2}$ 时, $f(x)>0$, 得当 $-\frac{\pi}{2}<x<\frac{\pi}{2}$ 时, $f(x)>0$.
+设 $0 \leqslant x_1<x_2 \leqslant \pi$, 则 $f\left(x_1\right)-f\left(x_2\right)=f\left(x_1\right)+f\left(\pi-x_2\right)= 2 f\left(\frac{x_1+\pi-x_2}{2}\right) f\left(\frac{x_1+x_2-\pi}{2}\right)$.
+因为 $0 \leqslant \frac{x_1-x_2+\pi}{2}<\frac{\pi}{2},-\frac{\pi}{2}<\frac{x_1+x_2-\pi}{2}<\frac{\pi}{2}$, 所以 $f\left(\frac{x_1+\pi-x_2}{2}\right)>0, f\left(\frac{x_1+x_2-\pi}{2}\right)>0$. 从而 $f\left(x_1\right)>f\left(x_2\right)$, 即 $f(x)$ 在 $[0, \pi]$ 上单调递减.
+(3) 由 (1) $f(-x)=-f(\pi-x)$, 得 $f(x)=-f(\pi+x), f(\pi+x)= -f(2 \pi+x)$.
+所以 $f(2 \pi+x)=f(x)$, 说明 $2 \pi$ 是原函数的一个周期.
+假设 $T_0$ 也是原函数的一个周期, 且 $T_0 \in(0,2 \pi)$, 则由 $f\left(T_0+x\right)= f(x)$, 得 $f(0)=f\left(T_0\right)$.
+但若 $T_0 \in(0, \pi]$ 时, 因原函数是单调递减函数, 所以 $f(0)>f\left(T_0\right)$, 两者矛盾;
+若 $T_0 \in(\pi, 2 \pi)$ 时, $2 \pi-T_0 \in(0, \pi)$, 从而 $f(0)>f\left(2 \pi-T_0\right)= f\left(-T_0\right)=f\left(T_0\right)$, 两者矛盾, 所以 $T_0$ 不是原函数的一个周期, 即 $2 \pi$ 是原函数的最小正周期.
+评注有关周期函数有下面几个结论: (1) 若 $f(x)$ 的图象有两条对称轴 $x=a$ 和 $x=b$, 则 $f(x)$ 是周期函数,且 $2|b-a|$ 是它的一个周期;
+(2) 若 $f(x)$ 的图象有两个对称中心 $(a, 0)$ 和 $(b, 0)$, 则 $f(x)$ 是周期函数, 且 $2|b-a|$ 是它的一个周期;
+(3) 若 $f(x)$ 的图象有一个对称中心 $(a, 0)$ 和一条对称轴 $x=b$, 则 $f(x)$ 是周期函数,且 $4|b-a|$ 是它的一个周期.
+上述结论中, 不妨证明结论 (1):
+因为
+$$
+\begin{gathered}
+f(2 a-x)=f(x) \Leftrightarrow f(a+x)=f(a-x), \\
+f(2 b-x)=f(x) \Leftrightarrow f(b+x)=f(b-x), \\
+f[2 b-(2 a-x)]=f(2 a-x)=f(x) .
+\end{gathered}
+$$
+即 $f[x+2(b-a)]=f(x)$, 所以 $f(x)$ 是以 $2|b-a|$ 为周期的周期函数.
+读者不妨对结论 (2) 和 (3) 加以证明.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14 设函数 $f(x)=\sin \left(\frac{11}{6} \pi x+\frac{\pi}{3}\right)$.
+(1) 求 $f(x)$ 的最小正周期;
+(2) 对于任意的正数 $\alpha$, 是否总能找到不小于 $\alpha$, 且不大于 $(\alpha+1)$ 的两个数 $a$ 和 $b$,使 $f(a)=1$ 而 $f(b)=-1$ ? 请回答并论证;
+(3) 若 $\alpha$ 限定为任意自然数,请重新回答和论证上述问题.
+%%<SOLUTION>%%
+分析:本题的第 (2)、(3) 题实际上说的是能否找到一个长度为 1 的区间, 使在此区间上, $f(x)$ 既取得最大值, 又能取得最小值.
+解 (1) $f(x)$ 的最小正周期 $T=\frac{2 \pi}{\frac{11}{6} \pi}=\frac{12}{11}$.
+(2) 由于 $T>1$, 因此在长为 1 的区间上, $f(x)$ 不能得出一段完整周期的图形.
+现任取一使 $f(x)$ 取最大值 1 的 $x$ 值为 $a$, 如取 $a=\frac{1}{11}$, 则 $f\left(\frac{1}{11}\right)=\sin \left(-\frac{\pi}{6}+\frac{\pi}{3}\right)=1$, 令 $\alpha=a-\frac{5.5}{11}=-\frac{9}{22}$, 则 $\alpha+1=-\frac{9}{22}+1=\frac{13}{22}$, 则对于 $\alpha=-\frac{9}{22}$, 就不能在区间 $\left(-\frac{9}{22}, \frac{13}{22}\right)$ 上找到 $b$, 使 $f(b)=-1$.
+(3) 使 $f(x)$ 取最大值 1 的 $x$ 集合为 $\left\{x \mid x=\frac{12}{11} k+\frac{1}{11}, k \in \mathbf{Z}\right\}$ （只须令 $\frac{11}{6} \pi x+\frac{\pi}{3}=2 k \pi+\frac{\pi}{2}$ 即可解出这些值).
+使 $f(x)$ 取最小值 -1 的 $x$ 集合为 $\left\{x \mid x=\frac{12}{11} k+\frac{7}{11}, k \in \mathbf{Z}\right\}$, 由于
+$$
+\begin{gathered}
+\left(\frac{12}{11} k+\frac{7}{11}\right)-\left(\frac{12}{11} k+\frac{1}{11}\right)=\frac{6}{11}, \\
+{\left[\frac{12}{11}(k+1)+\frac{1}{11}\right]-\left(\frac{12}{11} k+\frac{1}{11}\right)=\frac{12}{11},}
+\end{gathered}
+$$
+故若 $\left[\frac{12}{11} k+\frac{1}{11}\right]=n(n \in \mathbf{Z})$ ([ $[x]$ 表示不超过 $x$ 的最大整数), 则 $\left[\frac{12}{11} k+\frac{7}{11}\right]=n$ 或 $n+1$, 且 $\left[\frac{12}{11}(k+1)+\frac{1}{11}\right]=n+1$ 或 $n+2$, 而 $k=0$ 时, $\left[\frac{12}{11} k+\frac{1}{11}\right]=0$, 这说明对于任一自然数 $n$, 必存在 $k$, 使 $\left[\frac{12}{11} k+\frac{1}{11}\right]=n$ 或 $\left[\frac{12}{11} k+\frac{7}{11}\right]=n$
+若对某一自然数 $n$, 有 $\left[\frac{12}{11} k+\frac{1}{11}\right]=n$, 令 $\alpha=\left(\frac{12}{11} k+\frac{1}{11}\right)-n$, 则当 $0 \leqslant \alpha \leqslant \frac{5}{11}$ 时, $\frac{12}{11} k+\frac{7}{11} \in(n, n+1]$. 当 $\frac{6}{11} \leqslant \alpha \leqslant \frac{10}{11}$ 时, $\frac{12}{11}(k-1)+\frac{7}{11} \in[n$, $n+1)$, 总之, 在 $[n, n+1]$ 中, 存在二数 $a 、 b$, 使 $f(a)=1$ 且 $f(b)=-1$.
+若对某一自然数 $n$, 有 $\left[\frac{12}{11} k+\frac{7}{11}\right]=n$, 且 $\left[\frac{12}{11} k+\frac{1}{11}\right]=n-1$, 则令 $\alpha^{\prime}= \left(\frac{12}{11} k+\frac{7}{11}\right)-n$, 显然 $\alpha^{\prime}<\frac{6}{11}$, 即 $0 \leqslant \alpha^{\prime} \leqslant \frac{5}{11}$, 此时 $\left[\frac{12}{11}(k+1)+\frac{1}{11}\right] \in(n$, $n+1]$, 即在 $[n, n+1]$ 中仍可找到二数 $a 、 b$, 使 $f(a)=1$ 且 $f(b)=-1$.
+综上所述,对于任意自然数 $n$, 总能找到不小于 $n$ 且不大于 $(n+1)$ 的两个数 $a 、 b$, 使 $f(a)=1$ 且 $f(b)=-1$.
+评注对于存在性问题的探索, 通常以举出反例来说明其不存在, 而必须通过严密论证来说明其存在.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例15 是否存在实数 $x$, 使 $\tan x+\sqrt{3}$ 与 $\cot x+\sqrt{3}$ 是有理数?
+%%<SOLUTION>%%
+分析:假设不存在实数 $x$,使 $\tan x+\sqrt{3}$ 与 $\cot x+\sqrt{3}$ 是有理数.
+证明若 $\tan x+\sqrt{3}$ 是有理数,则存在 $p, q \in \mathbf{Z}$ 且 $(p, q)=1$, 使得 $\tan x+ \sqrt{3}=\frac{p}{q}$, 故 $\tan x=\frac{p}{q}-\sqrt{3}$, 同理存在既约分数 $s, t$, 使得 $\cot x=\frac{s}{t}-\sqrt{3}$, 所以 $\left(\frac{p}{q}-\sqrt{3}\right)\left(\frac{s}{t}-\sqrt{3}\right)=1$, 即 $\sqrt{3}(p t+q s)=2 q t+p s$.
+有理数分析知 $p t+q s=0$ 且 $2 q t+p s=0$, 把前两式移项相乘得 $p^2=2 q^2$. 奇偶性分析知 $p, q$ 都为偶数,这与 $(p, q)=1$ 矛盾.
+评注 (1) 反证法是解决这类问题的常用方法; (2) 用有理数、奇偶性分析来找整数问题的矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例16 求实数 $a$ 的取值范围,使得对任意实数 $x$ 和任意 $\theta \in\left[0, \frac{\pi}{2}\right]$, 恒有
+$$
+(x+3+2 \sin \theta \cos \theta)^2+(x+a \sin \theta+a \cos \theta)^2 \geqslant \frac{1}{8} .
+$$
+%%<SOLUTION>%%
+解:令 $\sin \theta+\cos \theta=u$, 则 $2 \sin \theta \cos \theta=u^2-1$, 当 $\theta \in\left[0, \frac{\pi}{2}\right]$ 时, $u \in$ 016 [1, $[1]$.
+并记 $f(x)=(x+3+2 \sin \theta \cos \theta)^2+(x+a \sin \theta+a \cos \theta)^2$.
+所以 $f(x)=\left(x+2+u^2\right)^2+(x+a u)^2=2 x^2+2\left(u^2+a u+2\right) x+ \left(u^2+2\right)^2+(a u)^2=2\left[x+\frac{1}{2}\left(u^2+a u+2\right)\right]^2+\frac{1}{2}\left(u^2-a u+2\right)^2$.
+所以 $x=-\frac{1}{2}\left(u^2+a u+2\right)$ 时, $f(x)$ 取得最小值 $\frac{1}{2}\left(u^2-a u+2\right)^2$. 所以 $u^2-a u+2 \geqslant \frac{1}{2}$ 或 $u^2-a u+2 \leqslant-\frac{1}{2}$.
+所以 $a \leqslant u+\frac{3}{2 u}$ 或 $a \geqslant u+\frac{5}{2 u}$. 当 $u \in[1, \sqrt{2}]$ 时, $u+\frac{3}{2 u} \in\left[\sqrt{6}, \frac{5}{2}\right]$, $u+\frac{5}{2 u} \in\left[\frac{9}{4} \sqrt{2}, \frac{7}{2}\right]$.
+所以 $a \leqslant \sqrt{6}$ 或 $a \geqslant \frac{7}{2}$.
+评注在三角函数式中,如果同时出现 $\sin x \pm \cos x$ 及 $\sin x \cos x$ 的式子, 常用换元法, 通常将三角函数转变成二次函数问题来求解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例17 设 $x \geqslant y \geqslant z \geqslant \frac{\pi}{12}$, 且 $x+y+z=\frac{\pi}{2}$.
+求乘积 $\cos x \cdot \sin y \cdot \cos z$ 的最大值及最小值.
+%%<SOLUTION>%%
+解:由于 $x \geqslant y \geqslant z \geqslant \frac{\pi}{12}$, 故
+$$
+\frac{\pi}{6} \leqslant x \leqslant \frac{\pi}{2}-\frac{\pi}{12} \times 2=\frac{\pi}{3} .
+$$
+所以 $\cos x \sin y \cos z=\cos x \times \frac{1}{2}[\sin (y+z)+\sin (y-z)]=\frac{1}{2} \cos ^2 x+ \frac{1}{2} \cos x \sin (y-z) \geqslant \frac{1}{2} \cos ^2 \frac{\pi}{3}=\frac{1}{8}$. 即为最小值 (由于 $\frac{\pi}{6} \leqslant x \leqslant \frac{\pi}{3}, y \geqslant z$, 故 $\cos x \sin (y-z) \geqslant 0)$, 当 $y=z=\frac{\pi}{12}, x=\frac{\pi}{3}$ 时, $\cos x \sin y \cos z=\frac{1}{8}$.
+因为
+$$
+\begin{aligned}
+\cos x \sin y \cos z & =\cos z \times \frac{1}{2}[\sin (x+y)-\sin (x-y)] \\
+& =\frac{1}{2} \cos ^2 z-\frac{1}{2} \cos z \sin (x-y),
+\end{aligned}
+$$
+由于 $\sin (x-y) \geqslant 0, \cos z>0$, 故
+$$
+\cos x \sin y \cos z \leqslant \frac{1}{2} \cos ^2 z==\frac{1}{2} \cos ^2 \frac{\pi}{12}=\frac{1}{4}\left(1+\cos \frac{\pi}{6}\right)=\frac{2+\sqrt{3}}{8} .
+$$
+当 $x=y=\frac{5 \pi}{12}, z=\frac{\pi}{12}$ 时取得最大值.
+所以最大值 $\frac{2+\sqrt{3}}{8}$, 最小值 $\frac{1}{8}$.
+评注本题是 1997 年全国高中数学联赛试题.
+巧妙应用积化和差公式及放缩法是解本题的关键.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例18 函数 $F(x)=\mid \cos ^2 x+2 \sin x \cos x- \sin ^2 x+A x+B \mid$ 在 $0 \leqslant x \leqslant \frac{3}{2} \pi$ 上的最大值 $M$ 与参数 $A 、 B$ 有关, 问 $A 、 B$ 取什么值时, $M$ 为最小? 证明你的结论.
+%%<SOLUTION>%%
+分析:$\left|\cos ^2 x+2 \sin x \cdot \cos x-\sin ^2 x+A x+B\right|=\mid \sqrt{2} \sin \left(2 x+\frac{\pi}{4}\right)+ A x+B \mid$. 故 $F(x)$ 是一个三角函数与一个一次函数之和, 因为三角函数是一个周期函数, 而 $A x+B$ 是一个一次或零次函数, 所以不管怎样, 只要 $A 、 B$ 中有一个不为 $0, F(x)$ 最大值显然增大.
+故猜想 $M$ 的最小值在 $A=B=0$ 时取得.
+解 $F(x)=\left|\sqrt{2} \sin \left(2 x+\frac{\pi}{4}\right)+A x+B\right|$. 取 $g(x)=\sqrt{2} \sin \left(2 x+\frac{\pi}{4}\right)$, 则 $g\left(\frac{\pi}{8}\right)=g\left(\frac{9 \pi}{8}\right)=\sqrt{2}, g\left(\frac{5 \pi}{8}\right)=-\sqrt{2}$.
+取 $h(x)=A x+B$, 若 $A=0, B \neq 0$, 则当 $B>0$ 时, $F\left(\frac{\pi}{8}\right)>\sqrt{2}$, 当 $B<0$ 时, $F\left(\frac{5 \pi}{8}\right)<\sqrt{2}$. 从而 $M>\sqrt{2}$.
+若 $A \neq 0$, 则当 $h\left(\frac{5 \pi}{8}\right)<0$ 时, $F\left(\frac{5 \pi}{8}\right)>\sqrt{2}$, 当 $h\left(\frac{5 \pi}{8}\right) \geqslant 0$ 时, 由于 $h(x)$ 是一次函数, 当 $A>0$ 时, $h(x)$ 递增, $h\left(\frac{9 \pi}{8}\right)>h\left(\frac{5 \pi}{8}\right)>0$, 此时 $F\left(\frac{9 \pi}{8}\right)>\sqrt{2}$; 当 $A<0$ 时, $h(x)$ 递减, $h\left(\frac{\pi}{8}\right)>h\left(\frac{5 \pi}{8}\right)>0$, 此时 $F\left(\frac{\pi}{8}\right)>\sqrt{2}$. 故此时 $M>\sqrt{2}$. 若 $A=B=0$ ，显然有 $M=\sqrt{2}$.
+从而 $M$ 的最小值为 $\sqrt{2}$, 这个最小值在 $A=B=0$ 时取得.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例19 已知 $\theta_1+\theta_2+\cdots+\theta_n=\pi, \theta_i \geqslant 0 (i=1,2, \cdots, n)$, 求 $\sin ^2 \theta_1+\sin ^2 \theta_2+\cdots+\sin ^2 \theta_n$ 的最大值.
+%%<SOLUTION>%%
+解:因为 $\sin ^2 \theta_1+\sin ^2 \theta_2$
+$$
+\begin{aligned}
+& =\left(\sin \theta_1+\sin \theta_2\right)^2-2 \sin \theta_1 \cdot \sin \theta_2 \\
+& =4 \sin ^2 \frac{\theta_1+\theta_2}{2} \cdot \cos ^2 \frac{\theta_1-\theta_2}{2}+\cos \left(\theta_1+\theta_2\right)-\cos \left(\theta_1-\theta_2\right) \\
+& =2 \cos ^2 \frac{\theta_1-\theta_2}{2}\left(2 \sin ^2 \frac{\theta_1+\theta_2}{2}-1\right)+1+\cos \left(\theta_1+\theta_2\right),
+\end{aligned}
+$$
+当 $\theta_1+\theta_2<\frac{\pi}{2}$ 时, $2 \sin ^2 \frac{\theta_1+\theta_2}{2}-1<0$;
+当 $\theta_1+\theta_2=\frac{\pi}{2}$ 时, $2 \sin ^2 \frac{\theta_1+\theta_2}{2}-1=0$;
+当 $\theta_1+\theta_2>\frac{\pi}{2}$ 时, $2 \sin ^2 \frac{\theta_1+\theta_2}{2}-1>0$.
+由此可得出, 当 $\theta_1+\theta_2<\frac{\pi}{2}$ 时, $\theta_1$ 与 $\theta_2$ 有一个为零时, $\sin ^2 \theta_1+\sin ^2 \theta_2$ 有最大值; 当 $\theta_1+\theta_2>\frac{\pi}{2}$, 且 $\left|\theta_1-\theta_2\right|$ 越小时, $\sin ^2 \theta_1+\sin ^2 \theta_2$ 值越大.
+当 $n=3$ 时, 即 $\theta_1+\theta_2+\theta_3=\pi$ 时, 容易证明
+$$
+\sin ^2 \theta_1+\sin ^2 \theta_2+\sin ^2 \theta_3 \leqslant \frac{9}{4} \text {. }
+$$
+而当 $n \geqslant 4$ 时, 可知 $\theta_1, \theta_2, \theta_3, \theta_4$ 中必有两个角不超过 $\frac{\pi}{2}$.
+由前面结论知, $\theta_1+\theta_2 \leqslant \frac{\pi}{2}$ 时, 当 $\theta_1$ 与 $\theta_2$ 有一个为零时, $\sin ^2 \theta_1+\sin ^2 \theta_2$ 有最大值.
+于是所求的最大值可转化成三个角的和为 $\pi$, 其正弦值的平方的最大值问题.
+另一方面 $n=2$ 时, $\theta_1+\theta_2=\pi, \sin ^2 \theta_1+\sin ^2 \theta_2 \leqslant 2$.
+综上所述,当 $n=2$ 时, $\left(\sin ^2 \theta_1+\sin ^2 \theta_2\right)_{\text {max }}=2$.
+当 $n \geqslant 3$ 时, $\left(\sin ^2 \theta_1+\sin ^2 \theta_2+\sin ^2 \theta_3+\cdots+\sin ^2 \theta_n\right)_{\text {max }}=\frac{9}{4}$, 且当 $\theta_1= \theta_2=\theta_3=\frac{\pi}{3}, \theta_4=\theta_5=\cdots=\theta_n=0$ 时,取等号.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例20 求所有的实数 $\alpha$ 的值, 使数列 $a_n= \cos 2^n \alpha(n=1,2, \cdots)$ 中每一项都为负数.
+%%<SOLUTION>%%
+证明:首先, 若 $\alpha$ 是满足条件的实数, 则 $\cos \alpha \leqslant-\frac{1}{4}$.
+事实上: 若 $\cos \alpha \in\left(-\frac{1}{4}, 0\right)$, 则
+$$
+\cos 2 \alpha=2 \cos ^2 \alpha-1<-\frac{7}{8} .
+$$
+$\cos 4 \alpha=2 \cos ^2 2 \alpha-1>0$, 矛盾.
+由上述推导可知: 对于任意 $n \in \mathrm{N}^*$, 均有 $\cos 2^n \alpha \leqslant-\frac{1}{4}$, 于是
+$$
+\left|\cos 2^n \alpha-\frac{1}{2}\right| \geqslant \frac{3}{4},
+$$
+注意到 $\left|\cos 2 \alpha+\frac{1}{2}\right|=\left|\cos ^2 \alpha-\frac{1}{2}\right|=2\left|\cos \alpha+\frac{1}{2}\right|\left|\cos \alpha-\frac{1}{2}\right|$,
+有 $\quad\left|\cos \alpha+\frac{1}{2}\right| \leqslant \frac{2}{3}\left|\cos 2 \alpha+\frac{1}{2}\right| \leqslant\left(\frac{2}{3}\right)^2\left(\cos 4 \alpha+\frac{1}{2}\right) \leqslant \cdots$
+$$
+\leqslant\left(\frac{2}{3}\right)^n\left|\cos 2^n \alpha+\frac{1}{2}\right| \leqslant\left(\frac{2}{3}\right)^n \text {. }
+$$
+当 $n \rightarrow \infty$ 时, $\left(\frac{2}{3}\right)^n \rightarrow 0$, 故 $\left(\cos \alpha+\frac{1}{2}\right)=0$.
+所以 $\cos \alpha=-\frac{1}{2}$, 即 $\alpha=2 k \pi \pm \frac{\pi}{3}, k \in \mathbf{Z}$.
+另一方面, 当 $\alpha=2 k \pi \pm \frac{2}{3} \pi, k \in \mathbf{Z}$ 时, 对于任意 $n \in \mathbf{N}^*$, 均有 $\cos 2^n \alpha= -\frac{1}{2}$ 满足条件.
+综上所述, $\alpha=2 k \pi \pm \frac{\pi}{3}, k \in \mathbf{Z}$.
+%%PROBLEM_END%%
+
+

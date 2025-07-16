@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter9.tex",
+    "problem_type": "calculation",
+    "problem": "例12. 设 $a, b, c, d \\in \\mathbf{R}^{+}, a b c d=1$, 令 $T=a(b+c+d)+b(c+d)+c d$.\n(1) 求 $a^2+b^2+T$ 的最小值;\n(2) 求 $a^2+b^2+c^2+T$ 的最小值.",
+    "solution": "分析:对 (1), 我们把 $a 、 b$ 放在一起, $c 、 d$ 放在一起考虑, 对 $T$ 作适当变形.\n对 (2),则应看到 $a 、 b 、 c$ 的地位是相同的.\n解 (1)\n$$\n\\begin{aligned}\na^2+b^2+T & =a^2+b^2+(a+b)(c+d)+a b+c d \\\\\n& \\geqslant 2 a b+2 \\sqrt{a b} \\cdot 2 \\sqrt{c d}+a b+c d \\\\\n& =4+3 a b+c d \\geqslant 4+2 \\cdot \\sqrt{3 a b c d} \\\\\n& =4+2 \\sqrt{3} .\n\\end{aligned}\n$$\n当 $a=b, c=d, 3 a b=c d$, 即 $a=b=\\left(\\frac{1}{3}\\right)^{\\frac{1}{4}}, c=d=3^{\\frac{1}{4}}$ 时等号成立.\n所以, $a^2+b^2+T$ 的最小值为 $4+2 \\sqrt{3}$.\n$$\n\\begin{aligned}\na^2+b^2+c^2+T & =a^2+b^2+c^2+(a+b+c) d+a b+b c+c a \\\\\n& \\geqslant 3 \\sqrt[3]{a^2 b^2 c^2}+3 \\sqrt[3]{a b c} \\cdot d+3 \\cdot \\sqrt[3]{(a b c)^2} \\\\\n& =3 \\cdot\\left[2 \\sqrt[3]{(a b c)^2}+\\sqrt[3]{a b c} \\cdot d\\right] \\\\\n& \\geqslant 3 \\cdot 2 \\cdot \\sqrt{2 \\sqrt[3]{(a b c)^2}} \\cdot \\sqrt[3]{a b c} \\cdot d \\\\\n& =6 \\sqrt{2}\n\\end{aligned}\n$$\n等号当 $a=b=c=\\left(\\frac{1}{2}\\right)^{\\frac{1}{4}}, d=2^{\\frac{3}{1}}$ 时取到.\n所以, $a^2+b^2+c^2+T$ 的最小值为 $6 \\sqrt{2}$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. $\\triangle A B C$ 的边 $B C$ 和边 $A C$ 分别取定长 $a$ 和 $b$, 而边 $A B$ 的长度可变动.\n以边 $A B$ 作为正方形的一边向三角形外作正方形.\n设 $O$ 是所作正方形的中心, 并设 $B C$ 和 $A C$ 的中点分别为 $M$ 和 $N$. 试求 $O M+O N$ 的最大值.",
+    "solution": "设正方形为 $A B D E$, 则 $O M=\\frac{C E}{2}, O N=\\frac{C D}{2}$, 所以 $O M+O N= \\frac{1}{2}(C D+C E)$. 设 $A B=c$, 则 $B D=A E=c, A D=B E=\\sqrt{2} c$. 对四边形 $A C B D$ 和 $A C B E$ 分别应用广义 Ptolemy 定理可得 $O M+O N=\\frac{1}{2}(C D+ C E) \\leqslant \\frac{\\sqrt{2}+1}{2}(a+b)$. 所以 $O M+O N$ 的最大值为 $\\frac{\\sqrt{2}+1}{2}(a+b)$.",
+    "remark": "",
+    "figures": []
+}

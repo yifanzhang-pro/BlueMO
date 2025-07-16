@@ -1,0 +1,378 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $a_1=3, a_n=a_{n-1}^2-n(n=2,3, \cdots)$, 求证: $a_n>0$.
+%%<SOLUTION>%%
+用数学归纳法去证明 $a_n>n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设数列 $a_1, a_2, \cdots, a_{2 n+1}$ 满足: $a_i-2 a_{i+1}+a_{i+2} \geqslant 0(i=1,2, \cdots, 2 n-1)$, 求证:
+$$
+\frac{a_1+a_3+\cdots+a_{2 n+1}}{n+1} \geqslant \frac{a_2+a_4+\cdots+a_{2 n}}{n} .
+$$
+%%<SOLUTION>%%
+设 $(k-1)\left(a_1+a_3+\cdots+a_{2 k-1}\right) \geqslant k\left(a_2+a_4+\cdots+a_{2 k-2}\right)$, 要证命题对 $n$ 成立, 只须证 $a_1+a_2+\cdots+a_{2 k-1}+k a_{2 k+2} \geqslant a_2+a_4+\cdots+a_{2 k-2}+(k+$ 1) $a_{2 k}$, 即 $k\left(a_{2 k+1}-a_{2 k}\right) \geqslant\left(a_2-a_1\right)+\cdots+\left(a_{2 k}-a_{2 k-1}\right)$, 由条件 $a_{i+2}-a_{i+1} \geqslant a_{i+1}-a_i$, 这是显然的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $\left\{a_n\right\}$ 是各项为正的数列, 若 $a_{n+1} \leqslant a_n-a_n^2$, 求证: 对一切 $n \geqslant 2$, 都有
+$$
+a_n \leqslant \frac{1}{n+2} .
+$$
+%%<SOLUTION>%%
+利用 $y=-x^2+x$ 在 $\left(0, \frac{1}{4}\right)$ 上的单调性即可完成从 $k$ 到 $k+1$ 的过渡.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 已知数列 $\left\{a_n\right\}, a_1=a_2=1, a_{n+2}=a_{n+1}+a_n$. 求证:对任意 $n \in \mathbf{N}_{+}$, 有 $\operatorname{arccot} a_n \leqslant \operatorname{arccot} a_{n+1}+\operatorname{arccot} a_{n+2}$,
+并指出等号成立的条件.
+%%<SOLUTION>%%
+由 $a_n>0, \operatorname{arccot} a_{n+1}+\operatorname{arccot} a_{n+2} \in(0, \pi), \cot x$ 在 $(0, \pi)$ 上是减函数, 故只须证明: $\cot \left(\operatorname{arccot} a_n\right) \geqslant \cot \left(\operatorname{arccot} a_{n+1}+\operatorname{arccot} a_{n+2}\right)$, 即证 $\left(a_{n+1}+\right. \left.a_{n+2}\right) a_n \geqslant a_{n+1} \cdot a_{n+2}-1$.
+而 $a_{n+2}=a_{n+1}+a_n$, 故只要证明: $a_n a_{n+2}-a_{n+1}^2 \geqslant-1$.
+用数学归纳法, 容易验证 $a_n a_{n+2}-a_{n+1}^2==(-1)^{n+1}$. 因此原不等式成立, 易见等号成立当且仅当 $n$ 为偶数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $a_1, a_2, \cdots$ 是实数列, 且对所有 $i 、 j=1,2, \cdots$ 满足: $a_{i+j} \leqslant a_i+a_j$, 求证: 对于正整数 $n$, 有
+$$
+a_1+\frac{a_2}{2}+\frac{a_3}{3}+\cdots+\frac{a_n}{n} \geqslant a_n .
+$$
+%%<SOLUTION>%%
+对 $n$ 用数学归纳法.
+当 $n=1$ 时, $a_1 \geqslant a_1$, 不等式显然成立.
+假设当 $n=1,2, \cdots, k-1$ 时不等式成立, 即有
+$$
+\left\{\begin{array}{l}
+a_1 \geqslant a_1, \\
+a_1+\frac{a_2}{2} \geqslant a_2, \\
+\cdots \ldots \ldots \ldots \ldots \ldots \ldots . . . \cdots \cdots \\
+a_1+\frac{a_2}{2}+\cdots+\frac{a_{k-1}}{k-1} \geqslant a_{k-1} .
+\end{array}\right.
+$$
+相加得 $(k-1) a_1+(k-2) \frac{a_2}{2}+\cdots+(k-(k-1)) \frac{a_{k-1}}{k-1} \geqslant a_1+ a_2+\cdots+a_{k-1}$, 即 $k\left(a_1+\frac{a_n}{2}+\cdots+\frac{a_{k-1}}{k-1}\right) \geqslant 2\left(a_1+a_2+\cdots+a_{k-1}\right)=\left(a_1+\right. \left.a_{k-1}\right)+\left(a_2+a_{k-2}\right)+\cdots+\left(a_{k-1}+a_1\right) \geqslant k a_k-a_k$.
+故 $a_1+\frac{a_2}{2}+\cdots+\frac{a_k}{k} \geqslant a_k$, 因此原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设非负整数 $a_1, a_2, \cdots, a_{2004}$ 满足 $a_i+a_j \leqslant a_{i+j} \leqslant a_i+a_j+1(1 \leqslant i 、 j$, $i+j \leqslant 2004)$. 求证: 存在 $x \in \mathbf{R}$, 对所有 $n(1 \leqslant n \leqslant 2004)$, 有 $a_n= [n x]$.
+%%<SOLUTION>%%
+若存在 $x$, 使得 $a_n=[n x]$, 则 $\frac{a_n}{n} \leqslant x<\frac{a_n+1}{n}$, 此不等式应对 $n=1$, $2, \cdots, 2004$ 都成立, 于是, $x$ 应同时属于 2004 个区间: $\left[\frac{a_n}{n}, \frac{a_n+1}{n}\right)$. 如果 $x$ 存在, $x$ 可取为 $\max \left\{\frac{a_m}{m}\right\}$.
+这样, 只要证明对一切 $n \in\{1,2, \cdots, 2004\}$, 都有 $\frac{a_n+1}{n}>x \geqslant \frac{a_m}{m}$.
+下面证明: 若 $m 、 n$ 是正整数,且 $m 、 n \leqslant 2004$, 则有
+$$
+m a_n+m>n a_m . \label{(1)}
+$$
+当 $m=n$ 时,(1)式成立; 又由于当 $m=1, n=2$ 和 $m=2, n=1$ 时,有 $a_2+1>2 a_1$ 及 $2 a_1+2>a_2$, 由题设知(1)式成立.
+假设当 $m 、 n$ 都小于 $k(3 \leqslant k \leqslant 2004)$ 时命题成立.
+当 $m=k$ 时, 设 $m=n q+r, q \in \mathbf{N}_{+}, 0 \leqslant r<n$. 则 $a_m=a_{n q+r} \leqslant a_{n q}+a_r+ 1 \leqslant a_{(q-1) n}+a_n+a_r+2 \leqslant \cdots \leqslant q a_n+a_r+q$. 故 $n a_m \leqslant n\left(q a_n+a_r+q\right)=m a_n+ m+\left(n a_r-r a_n-r\right)$. 利用归纳假设, $r a_n+r>n a_r$, 故 $n a_m<m a_n+m$.
+当 $n=k$ 时, 设 $n=m q+r, q \in \mathbf{N}_{+}, 0 \leqslant r<m$. 则 $a_n \geqslant a_{q m}+a_r \geqslant \cdots \geqslant q a_m+a_r . m a_n+m \geqslant m q a_m+m a_r+m=n a_m+m a_r+m-r a_m$. 由归纳假设, $m a_r+m>r a_m$, 故 $m a_n+m>n a_m$, 因此(1)式成立, 故 $\frac{a_n+1}{n}>\frac{a_m}{m}$. 令 $x= \max _{1 \leqslant m \leqslant 2004} \frac{a_m}{m}$, 则 $\frac{a_n+1}{n}>x$, 故 $n x-1<a_n \leqslant n x$. 因此 $a_n=[n x]$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 设 $1<x_1<2$, 对于 $n=1,2,3, \cdots$, 定义 $x_{n+1}=1+x_n-\frac{1}{2} x_n^2$. 求证: 对于 $n \geqslant 3$, 有 $\left|x_n-\sqrt{2}\right|<\left(\frac{1}{2}\right)^n$.
+%%<SOLUTION>%%
+令 $y_n=x_n-\sqrt{2}$, 下面用数学归纳法证明 $\left|y_n\right|<\left(\frac{1}{2}\right)^n, n \geqslant 3$.
+假设 $\left|y_n\right|<\left(\frac{1}{2}\right)^n$, 由题设, $y_{n+1}+\sqrt{2}=1+y_n+\sqrt{2}-\frac{1}{2}\left(y_n+\sqrt{2}\right)^2$, 故 $\left|y_{n+1}\right|=\left|\frac{1}{2} y_n\left(2-2 \sqrt{2}-y_n\right)\right|=\frac{1}{2}\left|y_n\right| \cdot\left|y_n+2 \sqrt{2}-2\right|<\frac{1}{2}$. $\left(\frac{1}{2}\right)^n \cdot\left|\left(\frac{1}{2}\right)^n+2 \sqrt{2}-2\right|<\frac{1}{2} \cdot\left(\frac{1}{2}\right)^n \cdot 1=\left(\frac{1}{2}\right)^{n+1}$. 因此结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设 $a>0$, 求证:
+$$
+\sqrt{a+\sqrt{2 a+\sqrt{3 a+\cdots+\sqrt{n a}}}}<\sqrt{a}+1 .
+$$
+%%<SOLUTION>%%
+我们用归纳法来证: 当 $1 \leqslant k \leqslant n$ 时,
+$$
+\sqrt{k a+\sqrt{(k+1) a+\cdots+\sqrt{n a}}}<1+\sqrt{k a} . \label{(1)}
+$$
+当 $k=n$ 时, 上式显然成立.
+设 $\sqrt{(k+1) a+\sqrt{(k+2) a+\cdots+\sqrt{n a}}}<1+ \sqrt{(k+1) a}$, 则 $\sqrt{k a+\sqrt{(k+1) a+\cdots+\sqrt{n a}}}<\sqrt{k a+1+\sqrt{(k+1) a}}<\sqrt{k a+1+2 \sqrt{k a}}=1+\sqrt{k a}$.
+因此, (1)对一切 $k(1 \leqslant k \leqslant n)$ 成立.
+特别地, 当 $k=1$ 时有原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 若 $a_i>0(i=1,2,3, \cdots, n)$, 且 $a_1 \cdot a_2 \cdots \cdots a_n=1$, 求证:
+$$
+\sum_{i=1}^n a_i \geqslant n
+$$
+%%<SOLUTION>%%
+当 $n=1$ 时, $a_1=1$, 结论成立.
+设当 $n=k$ 时结论成立.
+当 $n=k+1$ 时, $a_1 a_2 \cdots a_{k+1}=1$, 由归纳假设, 有
+$$
+\begin{aligned}
+& \quad a_{k+1} \cdot a_1+a_2+\cdots+a_n \geqslant k ; a_{k+1} \cdot a_2+a_1+a_3+\cdots+a_k \geqslant k ; \cdots, a_{k+1} \cdot \\
+& a_k+a_1+\cdots+a_{k-1} \geqslant k .
+\end{aligned}
+$$
+全部相加, 得
+$$
+\left(a_1+a_2+\cdots+a_k\right)\left(a_{k+1}+k-1\right) \geqslant k^2 .
+$$
+故 $\quad \sum_{i=1}^{k+1} a_i=\sum_{i=1}^k a_i+a_{k+1} \geqslant \frac{k^2}{a_{k+1}+k-1}+a_{k+1} \geqslant k+1$.
+因此结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 设数列 $\left\{a_n\right\}$ 满足: $a_1=a_2=1, a_{n+2}=a_{n+1}+a_n, S_n$ 为数列 $\left\{a_n\right\}$ 的前 $n$ 项之和.
+求证: $S_n=\sum_{k=1}^n \frac{a_k}{2^k}<2$.
+%%<SOLUTION>%%
+设 $b_k=\frac{a_k}{2^k}$, 则 $b_{k+2}=\frac{1}{2} b_{k+1}+\frac{1}{4} b_k, b_1=\frac{1}{2}, b_2=\frac{1}{4}$, 故
+$$
+b_{k+1}=\frac{1}{2} b_k+\frac{1}{4} b_{k-1}, b_k=\frac{1}{2} b_{k-1}+\frac{1}{4} b_{k-2}, \cdots, b_3=\frac{1}{2} b_2+\frac{1}{4} b_1,
+$$
+相加, 得 $S_{k+2}-b_1-b_2=\frac{1}{2} S_{k+1}-\frac{1}{2} b_1+\frac{1}{4} S_k, S_{k+2}=\frac{1}{2} S_{k+1}+\frac{1}{4} S_k+\frac{1}{2}$, 接着用数学归纳法即可证明 $S_n<2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 设 $r_1, r_2, \cdots, r_n$ 为 $\geqslant 1$ 的实数,证明:
+$$
+\frac{1}{r_1+1}+\frac{1}{r_2+1}+\cdots+\frac{1}{r_n+1} \geqslant \frac{n}{\sqrt[n]{r_1 r_2 \cdots r_n}+1} .
+$$
+%%<SOLUTION>%%
+当 $n=1$ 时,不等式显然成立.
+下面用归纳法证明当 $n=2^k$ 时, 不等式成立.
+当 $k=1$ 时,有
+$$
+\frac{1}{r_1+1}+\frac{1}{r_2+1}-\frac{2}{\sqrt{r_1 r_2}+1}=\frac{\left(\sqrt{r_1 r_2}-1\right)\left(\sqrt{r_1}-\sqrt{r_2}\right)^2}{\left(r_1+1\right)\left(r_2+1\right)\left(\sqrt{r_1 r_2}+1\right)} \geqslant 0 .
+$$
+若当 $k=m$ 时, 不等式成立, 考虑 $k=m+1$ 的情况.
+即要证明:
+若对 $n$ 个数原不等式成立, 则对 $2 n$ 个数不等式也成立.
+如果 $r_1, r_2, \cdots, r_{2 n}$ 均大于 1 , 则有
+$$
+\begin{aligned}
+\sum_{i=1}^{2 n} \frac{1}{r_i+1} & =\sum_{i=1}^n \frac{1}{r_i+1}+\sum_{i=n+1}^{2 n} \frac{1}{r_i+1} \\
+& \geqslant \frac{n}{\sqrt[n]{r_1 r_2 \cdots r_n}+1}+\frac{n}{\sqrt[n]{r_{n+1} \cdots r_{2 n}}+1} \\
+& \geqslant \frac{2 n}{\sqrt[2 n]{r_1 r_2 \cdots r_{2 n}}+1} .
+\end{aligned}
+$$
+故当 $n=2^k(k=1,2, \cdots)$ 时, 原不等式成立.
+对任意自然数 $n$, 存在正整数 $k$, 满足 $m=2^k>n$.
+设 $r_{n+1}=r_{n+2}=\cdots=r_m=\sqrt[n]{r_1 r_2 \cdots r_n}$, 那么
+$$
+\frac{1}{r_1+1}+\frac{1}{r_2+1}+\cdots+\frac{1}{r_n+1}+\frac{m-n}{\sqrt[n]{r_1 r_2 \cdots r_n}+1} \geqslant \frac{m}{\sqrt[n]{r_1 r_2 \cdots r_n}+1},
+$$
+因此原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 设 $f(n)$ 定义在正整数集合上, 且满足 $f(1)=2, f(n+1)=f^2(n)- f(n)+1, n=1,2, \cdots$. 求证: 对所有整数 $n>1$, 有
+$$
+1-\frac{1}{2^{2^{n^{-1}}}}<\frac{1}{f(1)}+\frac{1}{f(2)}+\cdots+\frac{1}{f(n)}<1-\frac{1}{2^{2^n}} .
+$$
+%%<SOLUTION>%%
+由已知条件可得 $\frac{1}{f(n)}=\frac{1}{f(n)-1}-\frac{1}{f(n+1)-1}$,
+故 $\quad \sum_{k=1}^n \frac{1}{f(k)}=\frac{1}{f(1)-1}-\frac{1}{f(n+1)-1}=1-\frac{1}{f(n+1)-1}$.
+下面证明: $2^{2^{n-1}}<f(n+1)-1<2^{2^n}$, 进而结论成立.
+当 $n=1$ 时, $f(2)=3$, 则 $2<f(2)<4$.
+设当 $n=m$ 时,有 $2^{2^{m-1}}<f(m+1)-1<2^{2^m}$ 成立.
+考虑当 $n=m+1$ 时的情况, 此时, $f(m+2)=f(m+1)(f(m+1)-1)+1$, 则
+$$
+\left(2^{2^{m-1}}+2\right)\left(2^{2^{m-1}}+1\right)+1 \leqslant f(m+2) \leqslant 2^{2^m}\left(2^{2^m}-1\right)+1 .
+$$
+因此 $2^{2^m}<f(m+2)-1<2^{2^{m+1}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 设 $\mathbf{N}_{+}$是正整数集, $\mathbf{R}$ 是实数集, $S$ 是满足以下两个条件的函数 $f: \mathbf{N}_{+} \rightarrow \mathbf{R}$的集合, 而且:
+(1) $f(1)=2$;
+(2) $f(n+1) \geqslant f(n) \geqslant \frac{n}{n+1} f(2 n)(n=1,2, \cdots)$.
+试求最小的正整数 $M$, 使得对任何 $f \in S$ 及任何 $n \in \mathbf{N}_{+}$, 都有 $f(n)<M$ 成立.
+%%<SOLUTION>%%
+先估计 $\{f(n)\}$ 的上界, 由于 $f$ 的单调性, 只须对其序列 $\left\{f\left(2^k\right)\right\}$ 进行估计.
+根据条件, 对 $k \in \mathbf{N}_{+}$, 有
+$$
+\begin{aligned}
+f\left(2^{k+1}\right) & \leqslant\left(1+\frac{1}{2^k}\right) f\left(2^k\right) \\
+& \leqslant\left(1+\frac{1}{2^k}\right)\left(1+\frac{1}{2^{k-1}}\right) f\left(2^{k-1}\right) \\
+& \leqslant \cdots \leqslant 2 \lambda_k,
+\end{aligned}
+$$
+其中 $\lambda_k=(1+1)\left(1+\frac{1}{2}\right) \cdots\left(1+\frac{1}{2^k}\right)$.
+通过计算, 猜测 $\lambda_k<5$. 事实上, 可用数学归纳法证明更强的命题: $\lambda_k \leqslant 5\left(1-\frac{1}{2^k}\right)$. 于是 $\lambda_k<5$. 对任何 $f \in S$ 及任何 $n \in \mathbf{N}_{+}$必存在正整数 $k$, 使 $n< 2^{k+1}$, 则 $f(n) \leqslant f\left(2^{k+1}\right) \leqslant 2 \lambda_k<10$.
+下面构造一个符合条件的函数 $f_0$, 使该函数在某处的值 $>9$, 注意到 $2 \lambda_5>9$, 定义函数 $f_0: \mathbf{N}_{+} \rightarrow \mathbf{R}$ 如下:
+$$
+\begin{gathered}
+f_0(1)=2, \\
+f_0(n)=2 \lambda_k\left(2^k<n \leqslant 2^{k+1}\right), \\
+k \in\{0,1,2, \cdots\},
+\end{gathered}
+$$
+对任何正整数 $n$, 易见 $f_0(n+1) \geqslant f_0(n)$. 下面验证: $f_0(n) \geqslant \frac{n}{n+1} f_0(2 n)$.
+设 $k \in \mathbf{N}$, 使得 $2^k<n \leqslant 2^{k+1}$, 则 $2^{k+1}<2 n \leqslant 2^{k+2}$.
+于是, $\quad f_0(2 n)=2 \lambda_{k+1}=\left(1+\frac{1}{2^{k+1}}\right) \cdot 2 \lambda_k \leqslant\left(1+\frac{1}{n}\right) f_0(n)$.
+又由于 $f_0\left(2^6\right)=2 \lambda_5>9$. 故问题解决, $M=10$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 设 $a_1, a_2, \cdots, a_n$ 是非负实数,满足: $\sum_{i=1}^n a_i=4, n \geqslant 3$. 求证:
+$$
+a_1^3 a_2+a_2^3 a_3+\cdots+a_{n-1}^3 a_n+a_n^3 a_1 \leqslant 27 \text {. }
+$$
+%%<SOLUTION>%%
+对 $n$ 用数学归纳法.
+当 $n=3$ 时, 由于原不等式关于 $a_1 、 a_2 、 a_3$ 轮换对称, 不妨设 $a_1$ 为最大者, 若 $a_2<a_3$, 则 $a_1^3 a_2+a_2^3 a_3+a_3^3 a_1-\left(a_1 a_2^3+a_2 a_3^3+\right. \left.a_3 a_1^3\right)=\left(a_1-a_2\right)\left(a_2-a_3\right)\left(a_1-a_3\right)\left(a_1+a_2+a_3\right)<0$.
+因此, 只须就 $a_2 \geqslant a_3$ 的情况加以说明.
+下面设 $a_1 \geqslant a_2 \geqslant a_3$. 则有 $a_1^3 a_2+ a_2^3 a_3+a_3^3 a_1 \leqslant a_1^3 a_2+2 a_1^2 a_2 a_3 \leqslant a_1^3 a_2+3 a_1^2 a_2 a_3=a_1^2 a_2\left(a_1+3 a_3\right)=\frac{1}{2} a_1 \cdot a_1 \cdot 3 a_2 \cdot\left(a_1+3 a_3\right) \leqslant \frac{1}{3} \cdot\left(\frac{a_1+a_1+3 a_2+a_1+3 a_3}{4}\right)^4=\frac{1}{3} \cdot\left[\frac{3\left(a_1+a_2+a_3\right)}{4}\right]^4=27$
+等号当 $a_1=3, a_2=1, a_3=0$ 时取到.
+设当 $n=k(k \geqslant 3)$ 时, 原不等式成立.
+当 $n=k+1$ 时, 仍设 $a_1$ 为最大者, 则
+$$
+\begin{aligned}
+& a_1^3 a_2+a_2^3 a_3+\cdots+a_k^3 a_{k+1}+a_{k+1}^3 a_1 \\
+\leqslant & a_1^3 a_2+a_1^3 a_3+\left(a_2+a_3\right)^3 a_4+\cdots+a_{k+1}^3 a_1 \\
+= & a_1^3\left(a_2+a_3\right)+\left(a_2+a_3\right)^3 a_4+\cdots+a_{k+1}^3 a_1 .
+\end{aligned}
+$$
+从而, $k$ 个变量 $a_1, a_2+a_3, a_4, \cdots, a_{k+1}$ 满足条件:
+$$
+a_1+\left(a_2+a_3\right)+\cdots+a_{k+1}=4 .
+$$
+由归纳假设, $a_1^3\left(a_2+a_3\right)+\left(a_2+a_3\right)^3 a_4+\cdots+a_{k+1}^3 a_1 \leqslant 27$, 故当 $n=k+1$ 时, 原不等式也成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 设 $n$ 是正整数, $x$ 是正实数,求证: $\sum_{k=1}^n \frac{x^{k^2}}{k} \geqslant x^{\frac{1}{2} n(n+1)}$.
+%%<SOLUTION>%%
+对 $n$ 用数学归纳法.
+当 $n=1$ 时,结论显然成立.
+设当 $n=s$ 时, 有 $\sum_{k=1}^s \frac{x^{k^2}}{k} \geqslant x^{\frac{1}{2} s(s+1)}$. 考虑 $n=s+1$ 的情况.
+$$
+\sum_{k=1}^{s+1} \frac{x^{k^2}}{k}=\sum_{k=1}^s \frac{x^{k^2}}{k}+\frac{x^{(s+1)^2}}{s+1} \geqslant x^{\frac{1}{2} s(s+1)}+\frac{x(s+1)^2}{s+1},
+$$
+问题转化为去证明: $x^{\frac{1}{2} s(s+1)}+\frac{x^{(s+1)^2}}{s+1} \geqslant x^{\frac{1}{2}(s+1)(s+2)}$, 即
+$$
+1+\frac{x^{\frac{1}{2}(s+1)(s+2)}}{s+1} \geqslant x^{s+1} . \label{(1)}
+$$
+令 $y=x^{\frac{1}{2}(s+1)}, y>0$, 则(1)等价于
+$$
+1+\frac{y^{s+2}}{s+1} \geqslant y^2 . \label{(2)}
+$$
+令 $f(y)=1+y^2\left(\frac{y^s}{s+1}-1\right)$, 这里 $y>0$.
+如果 $y \geqslant(s+1)^{\frac{1}{s}}$, 则 $f(y) \geqslant 1>0$, (2)显然成立.
+当 $y \in(0,1]$ 时, (2)也自然成立.
+现在考虑 $\left(1,(s+1)^{\frac{1}{s}}\right)$ 中的 $y$, 要证明 $f(y)>0$.
+而当 $y \in\left(1,(s+1)^{\frac{1}{s}}\right)$ 时, $\frac{y^s}{s+1}<1$, 故 $f(y)=1-y^2\left(1-\frac{y^s}{s+1}\right)$
+取 $A$ 为待定系数,于是
+$$
+\begin{aligned}
+A^2\left[y^2\left(1-\frac{y^s}{s+1}\right)\right]^s & =\left(A y^s\right)\left(A y^s\right)\left(1-\frac{y^s}{s+1}\right) \cdots\left(1-\frac{y^s}{s+1}\right) \\
+& \leqslant\left\{\frac{1}{s+2}\left[2 A y^s+s\left(1-\frac{y^s}{s+1}\right)\right]\right\}^{s+2} .
+\end{aligned}
+$$
+取 $A=\frac{s}{2(s+1)}$, 有 $\left(\frac{s}{2(s+1)}\right)^2 \cdot\left[y^2\left(1-\frac{y^s}{1+s}\right)\right]^s \leqslant\left(\frac{s}{s+2}\right)^{s+2}$.
+所以 $y^2\left(1-\frac{y^s}{s+1}\right) \leqslant \frac{s}{s+2}\left[\frac{2(s+1)}{s+2}\right]^{\frac{2}{s}}$.
+当 $s=1$ 时, 从上式有 $y^2\left(1-\frac{y}{2}\right) \leqslant \frac{16}{27}<1$, 此时 $f(y)>0$.
+下面证明: 当正整数 $s \geqslant 2$ 时, $\left[\frac{2(s+1)}{s+2}\right]^{\frac{2}{s}}<\frac{s+2}{s}$, 如果上式成立, 则 $f(y)>0$.
+上面不等式等价于 $\frac{2(s+1)}{s+2}<\left(1+\frac{2}{s}\right)^{\frac{s}{2}}$. 如果能证明 $\left(1+\frac{2}{s}\right)^{\frac{s}{2}} \geqslant 2$, 则问题解决.
+事实上, $\left(1+\frac{2}{s}\right)^s=1+s \cdot \frac{2}{s}+\mathrm{C}_s^2 \cdot\left(\frac{2}{s}\right)^2+\cdots \geqslant 1+2+\frac{2(s-1)}{s} \geqslant$ 4. 故结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16. 设 $z_i(1 \leqslant i \leqslant n)$ 是 $n$ 个复数, $s_i=z_1+z_2+\cdots+z_i, 1 \leqslant i \leqslant n$. 求证:
+$$
+\sum_{1 \leqslant i<j \leqslant n}\left|s_j-z_i\right| \leqslant \sum_{k=1}^n\left[(n+1-k) \cdot\left|z_k\right|+(k-2)\left|s_k\right|\right] .
+$$
+%%<SOLUTION>%%
+对 $n$ 用数学归纳法.
+当 $n=1$ 时结论显然成立.
+设原不等式对 $n-1$ 成立.
+即有 $\sum_{1 \leqslant i<j \leqslant n-1}\left|s_j-z_i\right| \leqslant \sum_{k=1}^{n-1}\left((n-k)\left|z_k\right|+(k-2)\left|s_k\right|\right)$, 而 $\sum_{1 \leqslant i<j \leqslant n}\left|s_j-z_i\right|=$
+$$
+\sum_{1 \leqslant i<j \leqslant n-1}\left|s_j-z_i\right|+\sum_{k=1}^n\left|s_n-z_k\right| \text {, 且 } \sum_{k=1}^n\left((n+1-k)\left|z_k\right|+(k-2)\left|s_k\right|\right)=
+$$
+$$
+\sum_{k=1}^{n+1}\left[(n-k)\left|z_k\right|+(k-2)\left|s_k\right|\right]+\sum_{k=1}^n\left|z_k\right|+(n-2)\left|s_n\right| .
+$$
+为了证明不等式对 $n$ 也成立, 只要证明
+$$
+\sum_{k=1}^n\left|s_n-z_k\right| \leqslant \sum_{k=1}^n\left|z_k\right|+(n-2)\left|s_n\right| . \label{(1)}
+$$
+当 $n=1 、 2$ 时,(1)式显然成立.
+下证(1)对 $n=3$ 成立.
+即证明
+$$
+\begin{aligned}
+& \left|z_1+z_2\right|+\left|z_2+z_3\right|+\left|z_1+z_3\right| \\
+\leqslant & \left|z_1\right|+\left|z_2\right|+\left|z_3\right|+\left|z_1+z_2+z_3\right| .
+\end{aligned}
+$$
+对 $\sum_{k=1}^3\left|s_3-z_k\right| \leqslant \sum_{k=1}^3\left|z_k\right|+\left|s_3\right|$, 考虑其两边平方
+$$
+\left|s_3\right|^2=\sum_{k=1}^3\left|z_k\right|^2+\sum_{1 \leqslant i<j \leqslant 3}\left(z_i \bar{z}_j+\bar{z}_i z_j\right) .
+$$
+而 $\sum_{k=1}^3\left|s_3-z_k\right|^2=\left|s_3\right|^2+\sum_{k=1}^3\left|z_k\right|^2$, 故在端 ${ }^2$ 一左端 ${ }^2$
+$$
+\begin{aligned}
+& =2 \sum_{1 \leqslant i<j \leqslant 3}\left|z_i z_j\right|+2 \sum_{i=1}^3\left|s_3 z_i\right|-2 \sum_{1 \leqslant i<j \leqslant 3}\left|s_3^2-s_3 z_i-s_3 z_j+z_i z_j\right| \\
+& \geqslant 2 \sum_{i=1}^3\left|s_3 z_i\right|-2 \sum_{1 \leqslant i<j \leqslant 3}\left|s_3^2-s_3 z_i-s_3 z_j\right| \\
+& =2 \sum_{i=1}^3\left|s_3 z_i\right|-2 \sum_{1 \leqslant i<j \leqslant 3}\left|s_3\left(s_3-z_i-z_j\right)\right|=0 .
+\end{aligned}
+$$
+假设当 $n \leqslant k$ 时(1)成立, 那么, 当 $n=k+1$ 时, 把 $\sum_{i=1}^{k-1} z_i$ 看作 1 个数,利用 $n=3$ 时的结果, 有
+$$
+\begin{aligned}
+& \left|s_{k+1}-z_{k+1}\right|+\left|s_{k+1}-z_k\right|+\left|s_{k+1}--\sum_{i=1}^{k-1} z_i\right| \\
+\leqslant & \left|\sum_{i=1}^{k-1} z_i\right|+\left|z_k\right|+\left|z_{k+1}\right|+\left|s_{k+1}\right| . 
+\end{aligned} \label{(2)}
+$$
+再把 $z_k+z_{k+1}$ 看作一个数, 由归纳假设,
+$$
+\begin{aligned}
+& \sum_{i=1}^{k-1}\left|s_{k+1}-z_i\right|+\left|\sum_{i=1}^{k-1} z_i\right| \\
+\leqslant & \left|z_k+z_{k+1}\right|+\sum_{i=1}^{k-1}\left|z_i\right|+(k-2)\left|s_{k+1}\right| . 
+\end{aligned} \label{(3)}
+$$
+由(2)+(3), 有 $\sum_{i=1}^{k+1}\left|s_{k+1}-z_i\right| \leqslant \sum_{i=1}^{k+1}\left|z_i\right|+(k+1-2)\left|s_{k+1}\right|$. 这说明当 $n=k+1$ 时结论成立.
+故原不等式得证.
+%%PROBLEM_END%%
+
+

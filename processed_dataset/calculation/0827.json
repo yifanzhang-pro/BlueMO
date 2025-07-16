@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-2.tex",
+    "problem_type": "calculation",
+    "problem": "例3. $n$ 是一个正整数, $a_1, a_2, \\cdots, a_n, b_1, b_2, \\cdots, b_n$ 是 $2 n$ 个正实数,满足 $a_1+a_2+\\cdots+a_n=1, b_1+b_2+\\cdots+b_n=1$, 求 $\\frac{a_1^2}{a_1+b_1}+\\frac{a_2^2}{a_2+b_2}+\\cdots+\\frac{a_n^2}{a_n+b_n}$ 的最小值.",
+    "solution": "解:由柯西不等式知\n$$\n\\begin{aligned}\n& \\left(a_1+a_2+\\cdots+a_n+b_1+b_2+\\cdots+b_n\\right)\\left(\\frac{a_1^2}{a_1+b_1}+\\frac{a_2^2}{a_2+b_2}+\\cdots+\\frac{a_n^2}{a_n+b_n}\\right) . \\\\\n\\geqslant & \\left(a_1+a_2+\\cdots+a_n\\right)^2=1,\n\\end{aligned}\n$$\n且\n$$\na_1+a_2+\\cdots+a_n+b_1+b_2+\\cdots+b_n=2,\n$$\n所以\n$$\n\\frac{a_1^2}{a_1+b_1}+\\frac{a_2^2}{a_2+b_2}+\\cdots+\\frac{a_n^2}{a_n+b_n} \\geqslant \\frac{1}{2}\n$$\n且当 $a_1=a_2=\\cdots=a_n=b_1=b_2=\\cdots=b_n=\\frac{1}{n}$ 时取到.\n所以 $\\frac{a_1^2}{a_1+b_1}+\\frac{a_2^2}{a_2+b_2}+\\cdots+\\frac{a_n^2}{a_n+b_n}$ 的最小值为 $\\frac{1}{2}$.",
+    "remark": "",
+    "figures": []
+}

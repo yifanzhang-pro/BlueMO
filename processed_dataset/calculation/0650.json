@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例6 在 $\\triangle A B C$ 中, $A B=A C, \\angle C A B 、 \\angle A B C$ 的内角平分线分别与边 $B C 、 C A$ 交于点 $D 、 E$, 设 $K$ 是 $\\triangle A D C$ 的内心, 若 $\\angle B E K=45^{\\circ}$, 求 $\\angle C A B$ 所有可能的值.",
+    "solution": "分析:用三角法求解平面几何问题,可以先建立三角方程,再求解。\n解如图 (<FilePath:./images/volume3/figures/fig-c3e6.png>), 设 $A D$ 与 $B E$ 交于点 $I, \\triangle A B C$ 内切圆 $\\odot I$ 的半径为 $r$.\n$\\angle A B C=2 \\alpha\\left(0<\\alpha<45^{\\circ}\\right)$, 由 $A B=A C$, 知 $A D \\perp B C, \\angle A C B=2 \\alpha$, 故 $I D=r$.\n$$\nI E=\\frac{r}{\\sin \\angle B E C}=\\frac{r}{\\sin 3 \\alpha}, \\quad\\quad (1)\n$$\n连结 $D K$, 由 $K$ 是 $\\triangle A C D$ 的内心, 知 $I 、 K 、 C$ 三点共线, 且 $\\angle I C D= \\angle I C E=\\alpha$,\n$$\n\\angle C D K=\\angle I D K=45^{\\circ}=\\angle B E K,\n$$\n从而 $\\triangle I D K 、 \\triangle I E K$ 的外接圆半径相等, 即\n$$\n\\frac{I D}{\\sin \\angle I K D}=\\frac{I E}{\\sin \\angle I K E} . \\quad\\quad (2)\n$$\n又\n$$\n\\angle I K D=\\angle I C D+\\angle C D K=\\alpha+45^{\\circ},\n$$\n$$\n\\angle I K E=\\angle B I C-\\angle B E K=2\\left(90^{\\circ}-\\alpha\\right)-45^{\\circ}=135^{\\circ}-2 \\alpha .\n$$\n由(1)、(2)得， $\\sin \\left(\\alpha+45^{\\circ}\\right)=\\sin 3 \\alpha \\cdot \\sin \\left(135^{\\circ}-2 \\alpha\\right)$\n$$\n\\begin{aligned}\n& \\Leftrightarrow \\sin \\alpha+\\cos \\alpha=\\sin 3 \\alpha(\\sin 2 \\alpha+\\cos 2 \\alpha) \\\\\n& \\Leftrightarrow 2 \\sin \\alpha+2 \\cos \\alpha=\\cos \\alpha-\\cos 5 \\alpha+\\sin \\alpha+\\sin 5 \\alpha \\\\\n& \\Leftrightarrow \\sin \\alpha+\\cos \\alpha=\\sin 5 \\alpha-\\cos 5 \\alpha \\\\\n& \\Leftrightarrow \\sin \\left(\\alpha+45^{\\circ}\\right)=\\sin \\left(5 \\alpha-45^{\\circ}\\right) \\\\\n& \\Leftrightarrow 2 \\sin \\left(2 \\alpha-45^{\\circ}\\right) \\cos 3 \\alpha=0 \\\\\n& \\Leftrightarrow 3 \\alpha=90^{\\circ} \\text { 或 } 2 \\alpha=45^{\\circ} \\\\\n& \\Leftrightarrow \\angle B A C=60^{\\circ} \\text { 或 } 90^{\\circ} .\n\\end{aligned}\n$$\n评注本题用三角法求解的关键是: 选择变量, 建立方程.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c3e6.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例6 已知函数 $f(x)=\\log _2(x+1)$, 并且当点 $(x, y)$ 在 $y=f(x)$ 的图象上运动时, 点 $\\left(\\frac{x}{3}, \\frac{y}{2}\\right)$ 在 $y=g(x)$ 的图象上运动.\n求函数 $p(x)=g(x)-f(x)$ 的最大值.",
+    "solution": "解:因点 $(x, y)$ 在 $y=f(x)$ 的图象上, 故 $y=\\log _2(x+1)$. 又点 $\\left(\\frac{x}{3}, \\frac{y}{2}\\right)$ 在 $y=g(x)$ 的图象上,故 $\\frac{y}{2}=g\\left(\\frac{x}{3}\\right)$. 从而\n$$\ng\\left(\\frac{x}{3}\\right)=\\frac{1}{2} \\log _2(x+1)\n$$\n即 $g(x)=\\frac{1}{2} \\log _2(3 x+1)$, 那么\n$$\n\\begin{aligned}\np(x) & =g(x)-f(x)=\\frac{1}{2} \\log _2(3 x+1)-\\log _2(x+1) \\\\\n& =\\frac{1}{2} \\log _2 u,\n\\end{aligned}\n$$\n其中,\n$$\nu=\\frac{3 x+1}{(x+1)^2}=-\\frac{2}{(x+1)^2}+\\frac{3}{x+1}=-2\\left(\\frac{1}{x+1}-\\frac{3}{4}\\right)^2+\\frac{9}{8} .\n$$\n因此当 $\\frac{1}{x+1}=\\frac{3}{4}$, 即 $x=\\frac{1}{3}$ 时, $u_{\\text {max }}=\\frac{9}{8}$. 从而 $p(x)$ 的最大值为 $\\frac{1}{2} \\log _2 \\frac{9}{8}$.",
+    "remark": "",
+    "figures": []
+}

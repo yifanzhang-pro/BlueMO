@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例2. 在某次竞选中各政党作出 $n$ 种不同的诺言 $(n>0)$, 有些政党可以作某些相同的诺言.\n现知其中每两个政党都至少作了一个相同的诺言, 但没有两个政党的诺言完全相同.\n求证: 政党个数 $\\leqslant 2^{n-1}$.",
+    "solution": "证明:设有 $m$ 个政党.\n以 $A$ 记所有诺言的集合, $A_i$ 记第 $i$ 个政党的诺言的集合 $(i=1,2, \\cdots, m)$. 由题设知\n$$\n|A|=n, A_i \\cap A_j \\neq \\varnothing, A_i \\neq A_j, 1 \\leqslant i<j \\leqslant m .\n$$\n因 $\\left(\\complement_A A_i\\right) \\cap A_i=\\varnothing$, 故 ${ }_A A_i \\neq A_j(i, j=1,2, \\cdots, m)$, 即 $\\complement_A A_i$ 不同于任何一个政党的诺言的集合.\n所以\n$$\nA_1, A_2, \\cdots, A_m, \\complement_A A_1, \\complement_A A_2, \\cdots, \\complement_A A_m\n$$\n各不相同, 而它们的个数不超过集合 $A$ 的所有子集的数目 $2^n$, 即 $2 m \\leqslant 2^n$, 所以\n$$\nm \\leqslant 2^{n-1} .\n$$\n说明上述解法的特点是将一个趣味问题转化为集合问题, 然后借助集合的知识和方法来解决.",
+    "remark": "",
+    "figures": []
+}

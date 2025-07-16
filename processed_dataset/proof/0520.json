@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 求证:若竞赛图 $\\bar{K}_n$ 中有一个回路, 则 $\\bar{K}_n$ 中有一个三角形回路.",
+    "solution": "设 $G$ 有回路 $\\left(v_1, v_2, \\cdots, v_k\\right)$, 在 $v_2, v_3, \\cdots, v_{k-1}$ 中, 取第一个使弧 $\\left(v_{i+1}, v_1\\right)$ 存在的 $v_i$, 则有弧 $\\left(v_1, v_i\\right)$, 因而 $\\left(v_1, v_i, v_{i+1}\\right)$ 就是一个三角形的回路.",
+    "remark": "",
+    "figures": []
+}

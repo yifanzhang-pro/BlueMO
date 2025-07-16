@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题18. 正整数 $a 、 b 、 n(b>1)$ 满足 $\\left(b^n-1\\right) \\mid a$.\n证明: 在 $b$ 进制表示下,数 $a$ 的表示中至少出现 $n$ 个非零数码.",
+    "solution": "在 $b$ 进制表示下予以讨论.\n设能被 $b^n-1$ 整除的所有数中, 其 $b$ 进制表示下出现的非零数字个数的最小值为 $s$, 并在所有这些非零数字个数为 $s$ 的数中, 取数码和最小的数 $A$.\n设 $A=a_1 b^{n_1}+a_2 b^{n_2}+\\cdots+a_s b^{n_s}$ 为 $A$ 的 $b$ 进制表示, 这里\n$n_1>n_2>\\cdots>n_s \\geqslant 0,1 \\leqslant a_i<b, i=1,2, \\cdots, s$.\n下面证明: $n_1, n_2, \\cdots, n_s$ 构成模 $n$ 的完系, 从而 $s \\geqslant n$.\n一方面, 设 $1 \\leqslant i<j \\leqslant s$, 若 $n_i \\equiv n_j \\equiv=r(\\bmod n)$, 这里 $0 \\leqslant r \\leqslant n-1$. 我们考察数\n$$\nB=A-a_i b^{n_i}-a_j b^{n_j}+\\left(a_i+a_j\\right) b^{n_1+r} .\n$$\n显然 $b^n-1 \\mid B$. 若 $a_i+a_j<b$, 则 $B$ 的非零数字的个数为 $s-1$, 与 $A$ 的选择矛盾.\n故必有 $b \\leqslant a_i+a_j<2 b$, 设 $a_i+a_j=b+q, 0 \\leqslant q<b$, 这时 $B$ 的 $b$ 进制表示为\n$$\n\\begin{aligned}\nB= & b^{m n_1+r+1}+q b^{m n_1+r}+a b_1^{n_1}+\\cdots+a_{i-1} b^{n_{i-1}}+a_{i+1} b^{n_{i+1}} \\\\\n& +\\cdots+a_{j-1} b^{n_j-1}+a_{j+1} b^{n_{j+1}}+\\cdots+a_s b^{n_s}\n\\end{aligned}\n$$\n这样, $B$ 的数字和 $=\\sum_{k=1}^s a_k-\\left(a_i+a_j\\right)+1+q=\\sum_{k=1}^s a_k+1-b<\\sum_{k=1}^s a_k$, 与 $A$ 的选择亦矛盾.\n故 $n_1, \\cdots, n_s$ 模 $n$ 两两不同余.\n另一方面, 若 $s<n$, 设 $n_i \\equiv r_i(\\bmod n), 0 \\leqslant r_i<n$. 考察数 $C$,\n$$\nC=a_1 b^{r_1}+a_2 b^{r_2}+\\cdots+a_s b^{r_s} .\n$$\n由于 $b^{n_i} \\equiv b^{r_i}\\left(\\bmod b^n-1\\right)$, 故 $b^n-1 \\mid C$, 但 $s<n$ 意味着 $0<C \\leqslant(b-1) b+(b-1) b^2+\\cdots+(b-1) b^{n-1}=b^n-b<b^n-1$. 矛盾.\n所以,命题成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $n>1, x_1, \\cdots, x_n$ 是 $n$ 个实数, 它们的积记为 $A$. 若对 $i=1$, $n$, 数 $A-x_i$ 都是奇整数.\n证明: 每一个 $x_i$ 都是无理数.",
+    "solution": "证明:反证法,若有一个 $i$ 使得 $x_i$ 为有理数,则因 $A-x_i$ 为奇整数,所以 $A$ 必是一个有理数.\n记 $A-x_i=a_i(i=1, \\cdots, n)$. 则由 $x_1 \\cdots x_n=A$, 得出\n$$\n\\left(A-a_1\\right) \\cdots\\left(A-a_n\\right)=A . \\label{eq1}\n$$\n由于 $a_i$ 均是(奇)整数, 从而 $A$ 满足了一个首项系数为 1 的整系数方程,故有理数 $A$ 必是一个整数.\n但另一方面, 无论 $A$ 是奇数或偶数,易知 \\ref{eq1}式左、右两边的奇偶性都不同, 从而式\\ref{eq1}决不能成立, 矛盾! 故每个 $x_i$ 都是无理数.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设 $(a, b)==1$, 证明: $\\left(a^2+b^2, a b\\right)=1$.",
+    "solution": "因 $(a, b)=1$, 故 $\\left(a^2, b\\right)=1$, 从而 $\\left(a^2+b^2, b\\right)=1$. 同理 $\\left(a^2+b^2\\right.$, $a)=1$. 因此 $\\left(a^2+b^2, a b\\right)=1$ (用本单元的 $\\left.(6)\\right)$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例11. 如图(<FilePath:./images/volume7/figures/fig-c7i11.png>), 已知 $\\triangle A B C, \\angle C< \\angle A<90^{\\circ}, D \\in A C$, 且 $B D=B A, \\triangle A B C$ 内切圆与 $A B 、 A C$ 分别切于 $K 、 L$. 设 $J$ 是 $\\triangle B C D$ 内心.\n证明, $K L$ 平分线段 $A J$.",
+    "solution": "证明:设 $I$ 为 $\\triangle A B C$ 内心, $A I \\cap K L=P$, 连结 $I K 、 I L 、 B I 、 B J 、 I J$.\n设 $\\triangle A B C$ 内切圆半径为 $r$,三内角为 $A 、 B 、 C$.\n由于 $B I=\\frac{r}{\\sin \\frac{B}{2}}$ 且 $\\frac{B I}{\\sin \\angle B J I}=\\frac{I J}{\\sin \\angle I B J}$,\n$\\angle I B J=\\frac{\\angle A B C-\\angle D B C}{2}=\\frac{\\angle A B D}{2}=\\frac{180^{\\circ}-2 A}{2}=90^{\\circ}-A$,\n$\\angle I J B=180^{\\circ}-\\angle I B J-\\angle B I J=180^{\\circ}-\\left(90^{\\circ}-A\\right)-\\left(90^{\\circ}+\\frac{A}{2}\\right)=\\frac{A}{2}$. (这里用到 $C 、 I 、 J$ 三点共线)\n所以 $I J=\\frac{B I}{\\sin \\frac{A}{2}} \\sin \\left(90^{\\circ}-A\\right)=\\frac{B I}{\\sin \\frac{A}{2}} \\cos A$.\n而 $K L$ 平分 $A J \\Leftrightarrow A$ 到 $K L$ 的距离 $=J$ 到 $K L$ 的距离\n$\\Leftrightarrow A P-P I=\\frac{r \\cos A}{\\sin \\frac{A}{2}}, \\label{eq1}$.\n\\ref{eq1}式左边 $=r \\cot \\frac{A}{2} \\cos \\frac{A}{2}-r \\sin \\frac{A}{2}=r\\left(\\frac{\\cos ^2 \\frac{A}{2}}{\\sin \\frac{A}{2}}-\\sin \\frac{A}{2}\\right)=r$. $\\frac{\\cos ^2 \\frac{A}{2}-\\sin ^2 \\frac{A}{2}}{\\sin \\frac{A}{2}}=\\frac{r \\cos A}{\\sin \\frac{A}{2}}=$ \\ref{eq1} 式右边.\n故 $K L$ 平分 $A J$, 证毕.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c7i11.png"
+    ]
+}

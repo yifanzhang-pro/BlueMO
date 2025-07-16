@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设 $a_1, a_2, \\cdots$ 是实数列, 且对所有 $i 、 j=1,2, \\cdots$ 满足: $a_{i+j} \\leqslant a_i+a_j$, 求证: 对于正整数 $n$, 有\n$$\na_1+\\frac{a_2}{2}+\\frac{a_3}{3}+\\cdots+\\frac{a_n}{n} \\geqslant a_n .\n$$",
+    "solution": "对 $n$ 用数学归纳法.\n当 $n=1$ 时, $a_1 \\geqslant a_1$, 不等式显然成立.\n假设当 $n=1,2, \\cdots, k-1$ 时不等式成立, 即有\n$$\n\\left\\{\\begin{array}{l}\na_1 \\geqslant a_1, \\\\\na_1+\\frac{a_2}{2} \\geqslant a_2, \\\\\n\\cdots \\ldots \\ldots \\ldots \\ldots \\ldots \\ldots . . . \\cdots \\cdots \\\\\na_1+\\frac{a_2}{2}+\\cdots+\\frac{a_{k-1}}{k-1} \\geqslant a_{k-1} .\n\\end{array}\\right.\n$$\n相加得 $(k-1) a_1+(k-2) \\frac{a_2}{2}+\\cdots+(k-(k-1)) \\frac{a_{k-1}}{k-1} \\geqslant a_1+ a_2+\\cdots+a_{k-1}$, 即 $k\\left(a_1+\\frac{a_n}{2}+\\cdots+\\frac{a_{k-1}}{k-1}\\right) \\geqslant 2\\left(a_1+a_2+\\cdots+a_{k-1}\\right)=\\left(a_1+\\right. \\left.a_{k-1}\\right)+\\left(a_2+a_{k-2}\\right)+\\cdots+\\left(a_{k-1}+a_1\\right) \\geqslant k a_k-a_k$.\n故 $a_1+\\frac{a_2}{2}+\\cdots+\\frac{a_k}{k} \\geqslant a_k$, 因此原不等式成立.",
+    "remark": "",
+    "figures": []
+}

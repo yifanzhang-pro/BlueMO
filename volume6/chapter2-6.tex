@@ -1,0 +1,277 @@
+
+%%TEXT_BEGIN%%
+先猜后证是数学发现的基本途径, 如果所猜结论证不出来就变为了数学猜想.
+借助较小的数考察一个关于正整数 $n$ 的命题, 利用类比、不完全归纳等手段猜出一般性结果, 然后借助数学归纳法予以证明.
+这样的过程在解决问题时经常会出现.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 函数 $f: \mathbf{N}^* \rightarrow \mathbf{N}$ 定义如下 $f(1)=0$, 且对任意 $n \in \mathbf{N}^*, n \geqslant 2$, 都有
+$$
+f(n)=\max \left\{f(j)+f(n-j)+j \mid j=1,2, \cdots,\left[\frac{n}{2}\right]\right\} . \label{eq1}
+$$
+求出 (并予以证明) $f(2004)$ 的值.
+%%<SOLUTION>%%
+解:试算 $n$ 较小时 $f(n)$ 的值, 分别有 $f(2)=1, f(3)=2, f(4)=4$, $f(5)=5, \cdots$. 在计算这些值的过程中, 可发现当 $1 \leqslant j \leqslant\left[\frac{n}{2}\right]$ 时, $f(j)+ f(n-j)+j$ 的最大值在 $j=\left[\frac{n}{2}\right]$ 时取到, 因此, 猜想
+$$
+f(2 n)=2 f(n)+n, f(2 n+1)=f(n)+f(n+1)+n . 
+$$
+下面用数学归纳法来证明式\ref{eq1}成立.
+当 $n=1$ 时,由上面的讨论知式\ref{eq1}成立.
+现设式\ref{eq1}对 $1,2, \cdots, n-1$ 都成立, 考虑 $n$ 的情形.
+先求 $f(2 n)$ 的值.
+$$
+\begin{aligned}
+f(2 n) & =\max \{f(j)+f(n-j)+j \mid 1 \leqslant j \leqslant n\} \geqslant f(n)+f(2 n-n)+n \\
+& =2 f(n)+n .
+\end{aligned}
+$$
+因此,只需证明: $f(2 n) \leqslant 2 f(n)+n$.
+对 $1 \leqslant j \leqslant n$ 中 $j$ 的奇偶性分别讨论.
+当 $j=2 k, 1 \leqslant k \leqslant\left[\frac{n}{2}\right]$ 时, 由归纳假设有
+$$
+\begin{aligned}
+f(j)+f(2 n-j)+j & =f(2 k)+f(2(n-k))+2 k \\
+& =(2 f(k)+k)+(2 f(n-k)+n-k)+2 k \\
+& =2(f(k)+f(n-k)+k)+n \leqslant 2 f(n)+n .
+\end{aligned}
+$$
+最后一个不等式由 $f(n)$ 的定义得到.
+当 $j=2 k-1,1 \leqslant k \leqslant\left[\frac{n+1}{2}\right]$ 时, 由归纳假设知
+$$
+\begin{aligned}
+& f(j)+f(2 n-j)+j \\
+= & f(2 k-1)+f(2(n-k)+1)+2 k-1 \\
+= & (f(k)+f(k-1)+k-1)+(f(n-k)+f(n-k+1)+n-k)+2 k-1 \\
+= & (f(k-1)+f(n-(k-1))+k-1)+(f(k)+f(n-k)+k)+n-1 \\
+\leqslant & f(n)+f(n)+n=2 f(n)+n .
+\end{aligned}
+$$
+这里认定 $f(0)=0$, 又当 $n$ 为偶数时, $\left[\frac{n+1}{2}\right]=\left[\frac{n}{2}\right]$; 当 $n$ 为奇数时, 设 $n= 2 m+1$, 则 $k=\left[\frac{n+1}{2}\right]$ 时, $f(k)+f(n-k)+k=f(m+1)+f(m)+m+ 1 \leqslant f(n)+1$, 所以上述不等式的推导是正确的.
+从而 $f(2 n) \leqslant 2 f(n)+n$.
+再求 $f(2 n+1)$ 的值时, 同上类似讨论, 可知只需证明:
+$$
+f(2 n+1) \leqslant f(n)+f(n+1)+n .
+$$
+仍对 $1 \leqslant j \leqslant n$ 中 $j$ 的奇偶性分别予以分析.
+当 $j=2 k, 1 \leqslant j \leqslant\left[\frac{n}{2}\right]$ 时, 由归纳假设有
+$$
+\begin{aligned}
+& f(j)+f(2 n+1-j)+j \\
+= & f(2 k)+f(2 n+1-2 k)+2 k \\
+= & (2 f(k)+k)+(f(n-k)+f(n-k+1)+n-k)+2 k \\
+= & (f(k)+f(n-k)+k)+(f(k)+f(n+1-k)+k)+n \\
+\leqslant & f(n)+f(n+1)+n .
+\end{aligned}
+$$
+当 $j=2 k-1,1 \leqslant j \leqslant\left[\frac{n+1}{2}\right]$ 时, 有
+$$
+\begin{aligned}
+& f(j)+f(2 n+1-j)+j \\
+= & f(2 k-1)+f(2 n-2 k+2)+2 k-1 \\
+= & (f(k-1)+f(k)+k-1)+(2 f(n-k-1)+n-k+1)+2 k-1 \\
+= & (f(k-1)+f(n-(k-1))+k-1)+(f(k)+f(n+1-k)+k)+n \\
+\leqslant & f(n)+f(n+1)+n .
+\end{aligned}
+$$
+从而 $f(2 n+1) \leqslant f(n)+f(n+1)+n$.
+综上可知, 对任意 $n \in \mathbf{N}^*$, 式\ref{eq1} 都成立.
+现在利用式\ref{eq1}依次递推计算得 $f(2)=1, f(3)=2, f(4)=4, f(7)=9$, $f(8)=12, f(15)=28, f(16)=32, f(31)=75, f(32)=80, f(62)= 181, f(63)=186, f(125)=429, f(126)=435, f(250)=983, f(251)= 989, f(501)=2222, f(1002)=4945, f(2004)=10892$.
+所求的值 $f(2004)=10892$.
+说明猜测的时候可以粗䊁一些,但推导证明时一定要认真仔细, 否则很容易得出错误的结论, 难以形成科学的态度和习惯.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 对正整数 $k \geqslant 1$, 设 $p(k)$ 为不能整除 $k$ 的最小素数.
+若 $p(k)>2$, 记 $q(k)$ 为所有小于 $p(k)$ 的素数的乘积.
+若 $p(k)=2$, 则令 $q(k)=1$.
+定义数列 $\left\{x_n\right\}$ 如下 $x_0=1$, 而
+$$
+x_{n+1}=\frac{x_n p\left(x_n\right)}{q\left(x_n\right)}, n=0,1,2, \cdots .
+$$
+求所有的 $n \in \mathbf{N}^*$, 使 $x_n=111111$.
+%%<SOLUTION>%%
+解:试算最初的一些 $x_n$ 的值,列表如下:
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline$n$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & $\cdots$ \\
+\hline$x_n$ & 1 & 2 & 3 & $2 \times 3$ & 5 & $2 \times 5$ & $3 \times 5$ & $2 \times 3 \times 5$ & 7 & $2 \times 7$ & $3 \times 7$ & $2 \times 3 \times 7$ & $\cdots$ \\
+\hline
+\end{tabular}
+如果将 $n$ 写为二进制数, 那么由上面的数据, 可知 $n$ 在二进制表示中有几个 1 , 那么 $x_n$ 就是几个素数的乘积.
+进一步, 将素数从小到大排列, 设依次为 $p_0<p_1<p_2<\cdots$. 对照表中的数据不难得到下面的猜想:
+对任意 $n \in \mathbf{N}^*$, 设二进制表示下:
+$$
+n=2^{r_1}+2^{r_2}+\cdots+2^{r_k}, r_1>r_2>\cdots>r_k \geqslant 0 .
+$$
+即 $n$ 所对应的二进制数共 $\left(r_1+1\right)$ 位, 其中第 $r_k+1, r_{k-1}+1, \cdots, r_1+1$ 位上的元素为 1 , 其余位上的元素全为 0 . 则 $x_n=p_{r_1} p_{r_2} \cdots p_{r_k}$, 其中 $p_{r_i}$ 表示所有素数中第 $r_i+1$ 大的素数 (1).
+我们通过对 $n$ 归纳来证明上述结论.
+当 $n=1$ 时,由 $x_1=2=p_0$, 可知 (1) 成立.
+现设命题对 $n$ 成立, 即 $x_n=p_{r_1} p_{r_2} \cdots p_{r_k}$, 考虑 $n+1$ 的情形.
+如果 $r_k \geqslant 1$, 即 $n$ 对应的二进制数末位为 0 , 那么 $n+1=2^{r_1}+2^{r_2}+\cdots+ 2^r+2^0$, 此时 $x_n$ 为奇数, 故 $p\left(x_n\right)=2$, 进而 $q\left(x_n\right)=1$, 由归纳假设, 可知
+$$
+x_{n+1}=\frac{x_n p\left(x_n\right)}{q\left(x_n\right)}=\frac{x_n \cdot p_0}{1}=p_{r_1} \cdots p_{r_k} p_0 .
+$$
+如果 $r_k=0$, 设 $i$ 是使得 $r_{i-1} \geqslant r_i+2$ 的最大的正整数, 即 $n$ 对应的二进制数从右端第二位起往左数, 所有的二进制位中, 只有第 $\left(r_i+1\right)$ 位是第一个, 其左边的二进制数位至少含有一个 0 . 即此时 $r_{k-j}=j$, 其中 $0 \leqslant j \leqslant k-i$. 那么
+$$
+n+1=2^{r_1}+2^{r_2}+\cdots+2^{r_{i-1}}+2^{r_i+1} \text { (若 } i \text { 不存在, 则 } n+1=2^{r_1+1} \text { ). }
+$$
+这时由归纳假设知 $p\left(x_n\right)=p_{r_i+1}$, 从而 $q\left(x_n\right)=p_0 p_1 \cdots p_{r_i}=p_0 p_1 \cdots p_{k-i}= p_{r_k} p_{r_{k-1}} \cdots p_{r_i}$. 所以
+$$
+x_{n+1}=\frac{x_n \cdot p\left(x_n\right)}{q\left(x_n\right)}=\frac{p_{r_1} \cdots p_{r_{i-1}} p_{r_i+1} p_{r_i} \cdots p_{r_k}}{p_{r_i} \cdots p_{r_k}}=p_{r_1} \cdots p_{r_{i-1}} p_{r_i+1} .
+$$
+所以, (1)对 $n+1$ 成立, 即对任意 $n \in \mathbf{N}^*$, (1)都成立.
+现在由 $111111=3 \times 7 \times 11 \times 13 \times 37=p_1 p_3 p_4 p_5 p_{11}$, 可得满足 $x_n=$ 111111 的正整数 $n$ 对应的二进制表示为 $n=2^{11}+2^5+2^4+2^3+2=2106$. 所以,所求的 $n=2106$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 整数数列 $\left\{a_n\right\}$ 定义如下 $a_1=2, a_2=7$,
+$$
+-\frac{1}{2}<a_{n+1}-\frac{a_n^2}{a_{n-1}} \leqslant \frac{1}{2}, n=2,3, \cdots .
+$$
+求数列 $\left\{a_n\right\}$ 的通项公式.
+%%<SOLUTION>%%
+解:题设所给的递推式难以确定 $a_n$, 能否由条件得出我们熟悉的常系数线性递推式呢? 大胆猜测 $a_{n+1}=p a_n+q a_{n-1}, p 、 q$ 为待定的常数.
+试算该数列的前面几项,可知 $a_1=2, a_2=7, a_3=25, a_4=89, \cdots$. 确定猜测中的 $p 、 q$ 的值, 猜想 $a_{n+1}=3 a_n+2 a_{n-1}, n \geqslant 2$.
+下面用数学归纳法证明上述猜想.
+当 $n=2 、 3$ 时,上述猜想成立.
+设对 $k \leqslant n$ 时,都有 $a_{k+1}=3 a_k+2 a_{k-1}$ 成立.
+则对 $k=n+1$ 的情形,我们有
+$$
+\frac{a_{n+1}^2}{a_n}=\frac{a_{n+1}\left(3 a_n+2 a_{n-1}\right)}{a_n}=3 a_{n+1}+2 a_n+2\left(\frac{a_{n+1}}{a_{n-1}-a_n^2} a_n\right) .
+$$
+注意到
+$$
+\begin{aligned}
+\left|2\left(\frac{a_{n+1} a_{n-1}-a_n^2}{a_n}\right)\right| & =\left|\frac{2 a_{n-1}}{a_n}\right|\left|a_{n+1}-\frac{a_n^2}{a_{n-1}}\right| \\
+& \leqslant \frac{1}{2}\left|\frac{2 a_{n-1}}{a_n}\right| .
+\end{aligned}
+$$
+由归纳假设,可知 $a_n>2 a_{n-1}$. 所以
+$$
+\left|3 a_{n+1}+2 a_n-\frac{a_{n+1}^2}{a_n}\right|<\frac{1}{2} .
+$$
+利用 $a_{n+2}$ 为整数, 且 $\left|a_{n+2}-\frac{a_{n+1}^2}{a_n}\right| \leqslant \frac{1}{2}$, 得
+$$
+\begin{aligned}
+& \left|a_{n+2}-\left(3 a_{n+1}+2 a_n\right)\right| \\
+= & \left|a_{n+2}-\frac{a_{n+1}^2}{a_n}\right|+\left|\frac{a_{n+1}^2}{a_n}-\left(3 a_{n+1}+2 a_n\right)\right|<\frac{1}{2}+\frac{1}{2}=1 .
+\end{aligned}
+$$
+所以 $a_{n+2}=3 a_{n+1}+2 a_n$. 于是猜想对 $k=n+1$ 的情形成立.
+综上可知,数列 $\left\{a_n\right\}$ 满足 $a_1=2, a_2=7, a_n=3 a_{n-1}+2 a_{n-2}, n=3$, $4, \cdots$. 利用特征方程求解这个常系数齐次线性递推式,可得
+$$
+a_n=\frac{17+5 \sqrt{17}}{68}\left(\frac{3+\sqrt{17}}{2}\right)^n+\frac{17-5 \sqrt{17}}{68}\left(\frac{3-\sqrt{17}}{2}\right)^n .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 函数 $f: \mathbf{N}^* \rightarrow \mathbf{N}^*$ 定义如下 $f(1)=1$, 对 $n \in \mathbf{N}^*$, 数 $f(n+1)$ 是满足下述条件的最大正整数 $m$ : 存在一个由正整数组成的等差数列 $a_1, a_2, \cdots$, $a_m$ (这里项数小于 3 的数列也认为是等差数列), 使得 $a_1<a_2<\cdots<a_m=n$, 并且 $f\left(a_1\right)=f\left(a_2\right)=\cdots=f\left(a_m\right)$. 证明 : 对任意正整数 $n$, 都有 $f(4 n+8)= n+2$.
+%%<SOLUTION>%%
+证明:题目并不要求确定每一个 $n$ 的函数值, 但从 $f$ 的定义来看, 只有每个 $f(n)$ 的值都确定后才能方便地求出下一个值.
+利用 $f$ 的定义作初始值的计算, 可知
+$$
+\begin{aligned}
+& f(1)=1, f(2)=1, f(3)=2, f(4)=1, f(5)=2, f(6)=2, \\
+& f(7)=2, f(8)=3, f(9)=1, f(10)=2, f(11)=2, f(12)=3, \\
+& f(13)=2, f(14)=3, f(15)=2, f(16)=4, f(17)=1, f(18)=3, \\
+& f(19)=2, f(20)=5, f(21)=1, f(22)=2, f(23)=2, f(24)=6, \\
+& f(25)=1, f(26)=4, f(27)=2, f(28)=7, f(29)=1, f(30)=4, \\
+& f(31)=2, f(32)=8, f(33)=1, f(34)=5, f(35)=2, f(36)=9, \\
+& \cdots . . .
+\end{aligned}
+$$
+这些数据的列出不仅说明了当 $1 \leqslant n \leqslant 7$ 时, 有 $f(4 n+8)=n+2$, 进一步, 还促使我们猜测当 $n \geqslant 8$ 时,有
+$$
+f(4 n+1)=1 ; f(4 n+2)=n-3 ; f(4 n+3)=2 ; f(4 n+4)=n+1 . \label{eq1}
+$$
+下面对 $n$ 归纳来证: $n \geqslant 8$ 时, 式\ref{eq1} 都成立.
+当 $n=8$ 时,利用所列出的数据可知 式\ref{eq1} 成立.
+现设式\ref{eq1}对 $8,9, \cdots, n-1$ 都成立, 考察 $n(\geqslant 9)$ 的情形.
+利用所算得的 $f(1)$ 至 $f(36)$ 值结合归纳假设可知 $f(4 n)=n$ 是 $f(1)$, $f(2), \cdots, f(4 n)$ 中最大的数, 所以 $f(4 n+1)=1$.
+现在考察 $f(1)$ 至 $f(4 n+1)$ 中等于 1 的项, 可知 $f(17)=f(21)=\cdots= f(4 n+1)=1$, 结合 $f$ 的定义得 $f(4 n+2) \geqslant n-3$. 另一方面, 对于以 $4 n+1$ 为末项的等差数列 $a_1<a_2<\cdots<a_m(=4 n+1)$, 若 $f\left(a_1\right)=\cdots=f\left(a_m\right)=$ 1 , 则该数列的公差 $d \geqslant 4$ (因为若 $d \leqslant 3$, 则 $f(4 n-2), f(4 n-1), f(4 n)$, $f(4 n+1)$ 中应有至少两个等于 1 , 但由归纳假设, 这 4 个数中只有 $f(4 n+ 1)=1)$, 如果 $d>4$, 那么由归纳假设及所列 $f(1)$ 至 $f(36)$ 的值可知 $d \geqslant 8$, 此时 $m \leqslant 1+\frac{(4 n+1)-1}{8}<n-3$. 因此 $f(4 n+2)=n-3$.
+再考察 $f(1)$ 到 $f(4 n+2)$ 的值, 仅有 $f(4 n-12)=f(4 n+2)=n-3$ (这里用到 $n \geqslant 9)$, 从而 $f(4 n+3)=2$.
+最后, 与讨论 $f(4 n+2)$ 的值类似, 可知 $f(4 n+4)=n+1$.
+所以, 对任意 $n \in \mathbf{N}^*(n \geqslant 8)$, 式\ref{eq1} 都成立.
+进而, 对任意 $n \in \mathbf{N}^*$, 都有 $f(4 n+8)=n+2$.
+说明要猜出规律性的结果, 每个问题需要试算的初始值个数不尽相同, 仔细与信心都很重要.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 对任意 $n \in \mathbf{N}^*$, 记 $\rho(n)$ 为满足 $2^k \mid n$ 且 $2^{k+1} \nmid n$ 的非负整数 $k$.
+数列 $\left\{x_n\right\}$ 定义如下
+$$
+x_0=0, \frac{1}{x_n}=1+2 \rho(n)-x_{n-1}, n=1,2, \cdots .
+$$
+证明: 每一个非负有理数恰好在数列 $x_0, x_1, \cdots$ 中出现一次.
+%%<SOLUTION>%%
+证明:如果写 $x_n=\frac{p_n}{q_n}\left(p_n 、 q_n \in \mathbf{N}^*,\left(p_n, q_n\right)=1\right)$, 那么条件式为
+$$
+\frac{q_n}{p_n}=(1+2 \rho(n))-\frac{p_{n-1}}{q_{n-1}} .
+$$
+去分母在 $p_n=q_{n-1}$ 时是最方便的.
+这个猜测引出了下面的证明.
+定义数列 $\left\{y_n\right\}$ 如下 $y_1=y_2=1$,
+$$
+y_{n+2}=(1+2 \rho(n)) y_{n+1}-y_n, n=1,2, \cdots .
+$$
+我们依次建立下述结论.
+结论 1 对任意 $n \in \mathbf{N}^*$, 都有 $x_n=\frac{y_n}{y_{n+1}}$.
+对 $n$ 归纳予以证明.
+归纳过渡可依如下方式进行
+$$
+\begin{aligned}
+\frac{1}{x_{n+1}} & =1+2 \rho(n+1)-x_n=1+2 \rho(n+1)-\frac{y_n}{y_{n+1}} \\
+& =\frac{1}{y_{n+1}}\left((1+2 \rho(n+1)) y_{n+1}-y_n\right) \\
+& =\frac{y_{n+2}}{y_{n+1}},
+\end{aligned}
+$$
+故 $x_{n+1}=\frac{y_{n+1}}{y_{n+2}}$.
+结论 2 对任意 $n \in \mathbf{N}^*$, 都有
+$$
+y_{2 n+1}=y_{n+1}+y_n, y_{2 n}=y_n .
+$$
+对 $n$ 归纳予以证明.
+事实上, 若结论 2 对 $n$ 成立, 那么
+$$
+\begin{aligned}
+y_{2 n+2} & =(1+2 \rho(2 n+1)) y_{2 n+1}-y_{2 n}=y_{2 n+1}-y_n=y_{n+1} ; \\
+y_{2 n+3} & =(1+2 \rho(2 n+2)) y_{2 n+2}-y_{2 n+1} \\
+& =(1+2(1+\rho(n+1))) y_{2 n+2}-y_{2 n+1} \\
+& =2 y_{n+1}+(1+\rho(n+1)) y_{n+1}-\left(y_{n+1}+y_n\right) \\
+& =y_{n+1}+(1+\rho(n+1)) y_{n+1}-y_n \\
+& =y_{n+1}+y_{n+2} .
+\end{aligned}
+$$
+依此结合初始情况成立就可知结论 2 正确.
+由结论 2 结合数学归纳法易证: 对任意 $n \in \mathbf{N}^*$, 都有 $\left(y_n, y_{n+1}\right)=1$.
+结论 3 对任意 $p 、 q \in \mathbf{N}^*,(p, q)=1$, 存在唯一的 $n \in \mathbf{N}^*$, 使得 $(p$,
+$q)=\left(y_n, y_{n+1}\right)$.
+对 $p+q$ 归纳予以证明.
+当 $p+q=2$ 时, $p=q=1$, 此时 $(p, q)=\left(y_1, y_2\right)$, 而由结论 2 知, 当 $n \geqslant 2$ 时, $y_n$ 与 $y_{n+1}$ 中至少有一个大于 1 , 所以 $\left(y_n, y_{n+1}\right) \neq \left(y_1, y_2\right)$, 故结论 3 对 $p+q=2$ 成立.
+现设结论 3 对所有满足 $p+q<m\left(m \geqslant 3, m \in \mathbf{N}^*\right)$ 且 $(p, q)=1$ 的正整数对 $(p, q)$ 成立.
+考虑 $p+q=m$ 的情形, 此时 $p \neq q$, 分 $p<q$ 和 $p>q$ 两种情形讨论.
+情形一 $p<q$, 由 $(p, q)=1$, 知 $(p, q-p)=1$, 而 $(q-p)+p=q< m$, 由归纳假设知, 存在唯一的 $n \in \mathbf{N}^*$, 使得 $(p, q-p)=\left(y_n, y_{n+1}\right)$, 这时 ( $p$, $q)=\left(y_n, y_n+y_{n+1}\right)=\left(y_{2 n}, y_{2 n+1}\right)$ (这里用到结论 2).
+另一方面, 若存在 $k<l, k 、 l \in \mathbf{N}^*$, 使得 $(p, q)=\left(y_k, y_{k+1}\right)=\left(y_l\right.$, $\left.y_{l+1}\right)$, 则 $y_k=y_l, y_{k+1}=y_{l+1}$. 这时如果 $k$ 与 $l$ 都为偶数, 那么由结论 2 可知 $(p$, $q-p)$ 有两种不同的表示, 与归纳假设矛盾.
+但是 $k$ 为奇数时, $y_k>y_{k+1}$, 与 $p<q$ 矛盾, 故 $k$ 只是偶数, 同理 $l$ 为偶数.
+从而, 只有一个 $n \in \mathbf{N}^*$, 使得 ( $p$, $q)=\left(y_n, y_{n+1}\right)$.
+情形二 $p>q$, 同情形一类似讨论.
+综上可知, 结论 3 成立.
+由结论 1 、结论 3 及 $x_0=0$, 可知命题成立.
+%%PROBLEM_END%%
+
+

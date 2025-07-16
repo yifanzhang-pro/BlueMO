@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例4. 证明:\nCandy 定理: 设 $A B$ 为一圆任一条弦, $O$ 为 $A B$ 上任一点,过 $O$ 任作两条弦 $C D 、 E F$, 连结 $C F 、 E D$ 交 $A B$ 于 $G 、 H$, 则 $\\frac{1}{O G}-\\frac{1}{O H}=\\frac{1}{O A}-\\frac{1}{O B}$.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c8i15.png>), 连结 $A F 、 B F 、 A D 、 B D$, 则 $\\angle A F C=\\angle A D C, \\angle C F E=\\angle C D E, \\angle E F B=\\angle E D B$.\n由上述交比性质结论知,\n$$\n\\frac{A G / G O}{A B / B O}=\\frac{A O / O H}{A B / B H} \\Rightarrow\\left(\\frac{A O}{G O}-1\\right) \\cdot B O=\\frac{A O}{O H}  (B O-O H)=A O \\times\\left(\\frac{B O}{O H}-1\\right) \\Rightarrow \\frac{1}{G O}-\\frac{1}{A O}=\\frac{1}{O H}-\\frac{1}{B O}\n$$\n所以 $\\frac{1}{G O}-\\frac{1}{O H}= \\frac{1}{A O}-\\frac{1}{B O}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8i15.png"
+    ]
+}

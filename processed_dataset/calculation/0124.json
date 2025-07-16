@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 求出不定方程\n$$\n(n-1) !=n^k-1 . \\label{eq1}\n$$\n的全部正整数解.",
+    "solution": "解:当 $n=2$ 时, 由式\\ref{eq1}得解 $(n, k)=(2,1)$. 当 $n>2$ 时, 式\\ref{eq1} 的左边是偶数, 故其右边也是偶数, 从而 $n$ 是奇数.\n当 $n=3,5$ 时, 由式\\ref{eq1}解出 $(n, k)=(3,1), (5,2)$.\n以下设 $n>5$ 且 $n$ 为奇数.\n此时 $\\frac{n-1}{2}$ 是整数且 $\\frac{n-1}{2}<n-3$, 故 $2 \\cdot \\frac{n-1}{2} \\mid(n-2) !$, 即 $(n-1) \\mid(n-2)$ !. 因此 $(n-1)^2 \\mid(n-1)$ ! , 即\n$$\n(n-1)^2 \\mid\\left(n^k-1\\right) . \\label{eq2}\n$$\n另一方面, 由二项式定理知\n$$\n\\begin{aligned}\nn^k-1 & =((n-1)+1)^k-1 \\\\\n& =(n-1)^k+\\mathrm{C}_k^1(n-1)^{k-1}+\\cdots+\\mathrm{C}_k^{k-2}(n-1)^2+k(n-1) . \\label{eq3}\n\\end{aligned}\n$$\n由式\\ref{eq2}、\\ref{eq3}推出 $(n-1)^2 \\mid k(n-1)$, 即 $(n-1) \\mid k$. 故 $k \\geqslant n-1$, 从而\n$$\nn^k-1 \\geqslant n^{n-1}-1>(n-1) ! .\n$$\n这表明, 当 $n>5$ 时方程式\\ref{eq1}没有正整数解, 即式\\ref{eq1}的全部正整数解为 $(n, k)= (2,1),(3,1),(5,2)$.",
+    "remark": "注1 上面解法的关键是在 $n>5$ 时,利用整除给出 $k$ 的下界: $k \\geqslant n-1$, 进而 (利用不等式)证明式\\ref{eq1}无解.\n论证的第一步, 是对奇数 $n>5$ 证明 $(n-1)^2 \\mid (n-1)$ !. 这个事实是下面结果的一个特别情形设 $m$ 是大于 4 的整数, 且不是素数, 则 $m \\mid(m-1) !$. \n注2 论证的第二步, 是用 $(n-1)^2$ 除 $n^k-1$, 这其实不必应用二项式定理, 只需注意: $(x+1)^k-1$ 的展开式, 是一个关于 $x$ 的整系数多项式, 其中常数项为零, 而一次项系数为 $k$.\n若应用下一单元讲的同余, 则可更为直接地证明 $(n-1) \\mid k$ :\n因为 $n^k-1=(n-1)\\left(n^{k-1}+n^{k-2}+\\cdots+n+1\\right)$, 而 $n^i \\equiv 1(\\bmod n-1)$, $i=1, \\cdots, k-1$, 故\n$$\nn^{k-1}+n^{k-2}+\\cdots+n+1 \\equiv \\underbrace{1+1+\\cdots+1}_{k \\text { 个 }}=k(\\bmod n-1) .\n$$\n从而 $n^k-1 \\equiv k(n-1)\\left(\\bmod (n-1)^2\\right)$, 于是由 $(n-1)^2 \\mid n^k-1$, 得出 $(n-1)^2 \\mid k(n-1)$, 即 $(n-1) \\mid k$.",
+    "figures": []
+}

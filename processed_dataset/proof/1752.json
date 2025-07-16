@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例9. 凸四边形 $A B C D$ 的对角线交于点 $P$, 两组对边的直线分别交于点 $Q 、 R$, 经过 $P$ 的直线分别交 $A B 、 C D 、 Q R$ 于点 $M 、 N 、 G$.",
+    "solution": "证明: $\\frac{1}{M P}+\\frac{1}{M G}==\\frac{2}{M N}$.\n证明如图(<FilePath:./images/volume7/figures/fig-c8i20.png>), 设 $A C$ 与 $Q R$ 交于点 $S$, 则 $A$ 、 $C 、 P 、 S$ 成调和点列.\n连结 $Q P$. 考虑过 $Q$ 的四条线束 $Q A 、 Q P 、 Q D$ 、 $Q R$, 它们被两条直线 APCS 和 $M P N G$ 所截, 由于 $A$ 、 $C 、 P 、 S$ 成调和点列, 因此, $M 、 N 、 P 、 G$ 是调和点列, 即 $\\frac{1}{M P}+\\frac{1}{M G}=\\frac{2}{M N}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8i20.png"
+    ]
+}

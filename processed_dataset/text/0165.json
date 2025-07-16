@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter3.tex",
+    "text": "柯西不等式及其证明.\n设 $a_1, a_2, \\cdots, a_n$ 及 $b_1, b_2, \\cdots, b_n$ 为任意实数, 则\n$$\n\\left(a_1 b_1+a_2 b_2+\\cdots+a_n b_n\\right)^2 \\leqslant\\left(a_1^2+a_2^2+\\cdots+a_n^2\\right)\\left(b_1^2+b_2^2+\\cdots+b_n^2\\right),\n$$\n当且仅当 $\\frac{a_1}{b_1}=\\frac{a_2}{b_2}=\\cdots=\\frac{a_n}{b_n}$ (规定 $a_i=0$ 时, $b_i=0$ )时等号成立.\n证法十(利用拉格朗日恒等式)\n对 $a_1, a_2, \\cdots, a_n$ 与 $b_1, b_2, \\cdots, b_n$, 我们有如下的拉格朗日恒等式\n$$\n\\left(\\sum_{i=1}^n a_i^2\\right) \\cdot\\left(\\sum_{i=1}^n b_i^2\\right)-\\left(\\sum_{i=1}^n a_i b_i\\right)^2=\\sum_{1 \\leqslant i<j \\leqslant n}\\left(a_i b_j-a_j b_i\\right)^2 \\geqslant 0 .\n$$\n不难看出命题成立.\n注:实际上, 证法十是证法九的一种特殊情况, 但在证明不等式中, 拉格朗日恒等式往往作为已知的结果使用, 此外, 拉格朗日恒等式也可以用其他方法来证明.",
+    "figures": []
+}

@@ -1,0 +1,52 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $p$ 为奇素数, $n=\frac{2^{2 p}-1}{3}$. 证明: $2^{n-1} \equiv 1(\bmod n)$.
+%%<SOLUTION>%%
+由条件可得
+$$
+3(n-1)=4\left(2^{p-1}+1\right)\left(2^{p-1}-1\right) . \label{eq1}
+$$
+因素数 $p>3$, 故由费马小定理得 $p \mid\left(2^{p-1}-1\right)$. 结合 式\ref{eq1} 推出 $2 p \mid(n-1)$, 从而 $\left(2^{2 p}-1\right) \mid\left(2^{n-1}-1\right)$. 再由条件知 $n \mid\left(2^{2 p}-1\right)$, 所以 $n \mid\left(2^{n-1}-1\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $m \geqslant 2, a_1, a_2, \cdots, a_m$ 是给定的正整数.
+证明: 有无穷多个正整数 $n$, 使得数 $a_1 \cdot 1^n+a_2 \cdot 2^n+\cdots+a_m \cdot m^n$ 都是合数.
+%%<SOLUTION>%%
+显然 $a_1+2 a_2+\cdots+m a_m>1$, 故有素数 $p$ 整除 $a_1+2 a_2+\cdots+m a_m$. 取 $n=k(p-1)+1, k=1,2, \cdots$, 则对 $1 \leqslant i \leqslant m$, 若 $p \nmid i$, 由费马小定理知
+$$
+i^n=i \cdot\left(i^k\right)^{p-1} \equiv i(\bmod p) .
+$$
+若 $p \mid i$, 上式显然也成立.
+因此
+$$
+a_1 \cdot 1^n+a_2 \cdot 2^n+\cdots+a_m \cdot m^n \equiv a_1+2 a_2+\cdots+m a_m \equiv 0(\bmod p),
+$$
+又 $a_1 \cdot 1^n+a_2 \cdot 2^n+\cdots+a_m \cdot m^n$ 显然大于 $p$, 故它是一个合数.
+因此上述选取的 $n$ 符合要求, 这显然有无穷多个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $m 、 n$ 为正整数,且 $m \geqslant n$, 具有性质: 等式
+$$
+(11 k-1, m)=(11 k-1, n)
+$$
+对所有正整数 $k$ 成立.
+证明: $m=11^r n, r$ 是一个非负整数.
+%%<SOLUTION>%%
+设 $m=11^i u, n=11^j v$, 其中 $i, j$ 为非负整数, $u, v$ 为不被 11 整除的正整数.
+我们证明必有 $u=v$, 由此即知 $m=11^{i j} n$. 若 $u \neq v$, 无妨设 $u>v$. 因 $(u, 11)=1$, 故由中国剩余定理,有正整数 $x$,使得
+$$
+x \equiv 0(\bmod u), x \equiv-1(\bmod 11), \label{eq1}
+$$
+即 $x=11 k-1$ ( $k$ 为某个正整数). 由 式\ref{eq1} 易知 $(11 k-1, m)=\left(x, 11^i u\right)=u$, 但 $(11 k-1, n)=\left(x, 11^j v\right) \leqslant v<u$, 这与条件 $(11 k-1, m)=(11 k-1, n)$ 相违,故必须 $u=v$.
+%%PROBLEM_END%%
+
+

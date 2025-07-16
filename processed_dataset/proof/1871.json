@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 两个大圆圆 $A$ 、圆 $B$ 相等且相交, 两个小圆圆 $C$ 、圆 $D$ 不等亦相交,且交点为 $P 、 Q$. 若圆 $C$ 、圆 $D$ 既同时与圆 $A$ 内切, 又同时与圆 $B$ 外切.\n求证: 直线 $P Q$ 平分线段 $A B$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c5a10.png>), 令 $A B$ 的中点为 $M$, 记圆 $C$ 与圆 $A$ 内切于 $S$, 与圆 $B$ 外切于 $T$, 设圆 $A$ 与圆 $B$ 的半径为 $R$, 圆 $C$ 的半径为 $r$, 则 $C A=S A-S C=R-r$, $C B=C T+T B=R+r$. 从而, $M$ 关于 $\\odot C$ 的幂 $= M C^2-r^2=\\frac{1}{2} \\cdot\\left(A C^2+B C^2\\right)-M A^2-r^2 \\text{(中线长公式)}=\\frac{1}{2}\\left((R+r)^2+(R-r)^2\\right)-M C^2-r^2=R^2-M A^2$ 为与 $\\odot C$ 无关的定值.\n同理 $M$ 关于 $\\odot D$ 的幂 $=R^2-M A^2$. 所以 $M$ 在 $\\odot C$ 与 $\\odot D$ 的根轴, 即直线 $P Q$ 上.\n即 $P Q$ 过 $A B$ 中点 $M$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5a10.png"
+    ]
+}

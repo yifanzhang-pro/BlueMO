@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题23 设 $f: \\mathbf{R} \\rightarrow \\mathbf{R}$ 是连续函数, 且满足:\n$$\n2 f\\left(\\frac{x+y}{2}\\right)=f(x)+f(y), x, y \\in \\mathbf{R} .\n$$\n求 $f(x)$.",
+    "solution": "设 $f(0)=b$. 由题给函数方程得 $f\\left(\\frac{x}{2}\\right)=f\\left(\\frac{x+0}{2}\\right)=\\frac{1}{2}[f(x)+ f(0)]=\\frac{1}{2}[f(x)+b]$. 另外 $\\frac{1}{2}[f(x)+f(y)]=f\\left(\\frac{x+y}{2}\\right)=\\frac{1}{2}[f(x+ y)+b]$. 所以 $f(x+y)=f(x)+f(y)-b$. \n令 $g(x)=f(x)-b$, 代入上式得 $g(x+y)=g(x)+g(y)$. 这正是柯西方程, 所以 $g(x)=a x$, 其中 $a= g(1)=f(1)-b$. 所以 $f(x)=a x+b$. 其中 $a=f(1)-f(0), b=f(0)$.",
+    "remark": "",
+    "figures": []
+}

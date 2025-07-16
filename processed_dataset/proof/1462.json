@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 已知 $\\sum_{i=1}^n x_i=1$, 求证: $\\sum_{i=1}^n \\sqrt{\\frac{1}{x_i}-1} \\geqslant(n-1) \\cdot \\sum_{i=1}^n \\frac{1}{\\sqrt{\\frac{1}{x_i}-1}}$.",
+    "solution": "证明:局部不等式: $x_i \\cdot \\sqrt{\\frac{1-x_j}{x_j}}+x_j \\cdot \\sqrt{\\frac{1-x_i}{x_i}} \\geqslant\\left(1-x_i\\right) \\sqrt{\\frac{x_j}{1-x_j}}+ \\left(1-x_j\\right) \\sqrt{\\frac{x_i}{1-x_i}}$. 进而易证原不等式成立.",
+    "remark": "",
+    "figures": []
+}

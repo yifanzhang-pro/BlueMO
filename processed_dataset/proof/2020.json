@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $\\triangle A B C$ 的三边分别为 $a 、 b 、 c$, 三边上的中线分别为 $m_a 、 m_b$ 、 $m_c$, 求证:\n$$\nm_a\\left(b c-a^2\\right)+m_b\\left(a c-b^2\\right)+m_c\\left(a b-c^2\\right) \\geqslant 0 . \\label{eq1}\n$$",
+    "solution": "下面的证法的关键在于寻找一个特殊的四边形.\n证明如图(<FilePath:./images/volume9/figures/fig-c2i3.png>), 设 $\\triangle A B C$ 的三条中线分别为 $A D 、 B E 、 C F$, 重心为 $G$.\n现对四边形 $B D G F$ 应用 Ptolemy 不等式可得\n$$\nB G \\cdot D F \\leqslant G F \\cdot D B+D G \\cdot B F . \\label{eq2}\n$$\n注意到 $B G=\\frac{2}{3} m_b, D G=\\frac{1}{3} m_a, G F=\\frac{1}{3} m_c$ 及 $D F=\\frac{1}{2} b$, 因此式\\ref{eq2}可改写为\n$$\n2 b m_b \\leqslant a m_c+c m_a \n$$\n因此\n$$\n2 b^2 m_b \\leqslant a b m_c+c b m_a. \\label{eq3}\n$$\n同理有\n$$\n2 c^2 m_c \\leqslant a c m_b+b c m_a. \\label{eq4}\n$$\n$$\n2 a^2 m_a \\leqslant a b m_c+a c m_b . \\label{eq5}\n$$\n式\\ref{eq3}、\\ref{eq4}、式\\ref{eq5}相加可得\n$$\n2\\left(m_a b c+m_b c a+m_c a b\\right) \\geqslant 2\\left(m_a a^2+m_b b^2+m_c c^2\\right),\n$$\n整理就得式\\ref{eq1}.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c2i3.png"
+    ]
+}

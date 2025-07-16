@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 在三棱雉 $A-B C D$ 中, 平面 $A B D \\perp$ 平面 $B C D, \\angle B A D=90^{\\circ}$, $A B=A D=3 \\sqrt{2}, \\angle B D C=90^{\\circ}, B C=2 C D$.\n(1) 求线段 $A C$ 的长度;\n(2)求二面角 $B-A D-C$ 的大小;\n(3) 求异面直线 $A C$ 和 $B D$ 所成的角.",
+    "solution": "分析:与解如图(<FilePath:./images/volume8/figures/fig-c6i1.png>) 建立空间直角坐标系, 则 $A(0,0,3), B(0,-3,0), D(0,3,0), C(2 \\sqrt{3}, 3$, $0), O(0,0,0)$.\n(1) $A C=\\sqrt{12+9+9}=\\sqrt{30}$.\n(2) $\\overrightarrow{A B}=\\{0,-3,-3\\}, \\overrightarrow{D C}=\\{2 \\sqrt{3}, 0,0\\}$, $\\overrightarrow{A D}=\\{0,3,-3\\}$.\n因为 $\\overrightarrow{A B} \\cdot \\overrightarrow{C D}=0, \\overrightarrow{D C} \\cdot \\overrightarrow{A D}=0$, 所以 $C D \\perp$ 平面 $A B D$, 故平面 $A C D \\perp$ 平面 $A B D$.\n所以二面角 $B-A D-C$ 的大小为 $90^{\\circ}$.\n(3) $\\overrightarrow{A C}=\\{2 \\sqrt{3}, 3,-3\\}, \\overrightarrow{B D}=\\{0,6,0\\}, \\cos \\theta=\\frac{\\overrightarrow{A C} \\cdot \\overrightarrow{B D}}{|\\overrightarrow{A C}| \\cdot|\\overrightarrow{B D}|}= \\frac{18}{6 \\cdot \\sqrt{30}}=\\frac{\\sqrt{30}}{10}$, 所以异面直线 $A C$ 和 $B D$ 所成的角为 $\\arccos \\frac{\\sqrt{30}}{10}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume8/figures/fig-c6i1.png"
+    ]
+}

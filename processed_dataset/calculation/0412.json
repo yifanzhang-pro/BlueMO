@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题9. 设 $x, y$ 为非负整数, 使得 $x+2 y$ 是 5 的倍数, $x+y$ 是 3 的倍数, 且 $2 x+ y \\geqslant 99$, 求 $7 x+5 y$ 的最小值.",
+    "solution": "设 $x+2 y=5 a, x+y=3 b$, 则 $x=6 b-5 a, y=5 a-3 b$. 于是 $2 x+ y=9 b-5 a, 7 x+5 y=27 b-10 a$. 故\n$$\n\\left\\{\\begin{array}{l}\n6 b-5 a \\geqslant 0, \\\\\n5 a-3 b \\geqslant 0, \\\\\n9 b-5 a \\geqslant 99,\n\\end{array}\\right.\n$$\n所以 $9 b \\geqslant 5 a+99 \\geqslant 3 b+99$, 可得 $b \\geqslant 17$, 于是 $5 a \\geqslant 3 b \\geqslant 51$, 可得 $a \\geqslant 11$, 进而 $9 b \\geqslant 5 a+99 \\geqslant 3 \\cdot 11+99$, 可得 $b \\geqslant 18$.\n若 $b=18$, 则 $5 a \\leqslant 9 b-99=63, a \\leqslant 12$, 从而\n$$\n7 x+5 y=27 b-10 a \\geqslant 27 \\times 18-10 \\times 12=366 .\n$$\n若 $b>18$, 则 $7 x+5 y=27 b-10 a=9 b+2(9 b-5 a) \\geqslant 9 \\times 19+2 \\times 99=369$.\n综上所述, $7 x+5 y$ 的最小值为 366 .",
+    "remark": "",
+    "figures": []
+}

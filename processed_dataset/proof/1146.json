@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-3.tex",
+    "problem_type": "proof",
+    "problem": "例8. 证明: 对任意满足 $x+y+z=0$ 的实数 $x, y, z$ 都有\n$$\n\\frac{x(x+2)}{2 x^2+1}+\\frac{y(y+2)}{2 y^2+1}+\\frac{z(z+2)}{2 z^2+1} \\geqslant 0 .\n$$",
+    "solution": "证明:注意到 $\\frac{x(x+2)}{2 x^2+1}=\\frac{(2 x+1)^2}{2\\left(2 x^2+1\\right)}-\\frac{1}{2}$ 等式子, 所以原不等式等价于\n$$\n\\frac{(2 x+1)^2}{2 x^2+1}+\\frac{(2 y+1)^2}{2 y^2+1}+\\frac{(2 z+1)^2}{2 z^2+1} \\geqslant 3,\n$$\n由柯西不等式,我们有\n$$\n2 x^2=\\frac{4}{3} x^2+\\frac{2}{3}(y+z)^2 \\leqslant \\frac{4}{3} x^2+\\frac{4}{3}\\left(y^2+z^2\\right),\n$$\n所以\n$$\n\\sum \\frac{(2 x+1)^2}{2 x^2+1} \\geqslant 3 \\sum \\frac{(2 x+1)^2}{4\\left(x^2+y^2+z^2\\right)+3}=3 .\n$$",
+    "remark": "",
+    "figures": []
+}

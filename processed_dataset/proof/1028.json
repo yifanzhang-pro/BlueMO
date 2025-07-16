@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题21 锐角 $\\triangle A B C$ 中, 若 $\\cos ^2 A 、 \\cos ^2 B 、 \\cos ^2 C$ 的和等于 $\\sin ^2 A 、 \\sin ^2 B 、 \\sin ^2 C$ 中的某个值.\n证明: $\\tan A 、 \\tan B 、 \\tan C$ 必可按某顺序组成一个等差数列.",
+    "solution": "设 $\\cos ^2 A+\\cos ^2 B+\\cos ^2 C=\\sin ^2 B \\cdots$ (1). 据余弦定理: $\\sin ^2 B= \\sin ^2 A+\\sin ^2 C-2 \\sin A \\sin C \\cos B \\cdots(2) \\cdot \\sin A \\sin C=\\cos A \\cos C-\\cos (A+ C)=\\cos A \\cos C+\\cos B \\cdots$ (3). 由 (2)、(3) 得, $\\cos ^2 A+\\cos ^2 B+\\cos ^2 C=1- 2 \\cos A \\cos B \\cos C \\cdots$ (4). 由 (1)、(4) 得, $2 \\cos A \\cos B \\cos C=1-\\sin ^2 B=\\cos ^2 B$, $B$ 为锐角.\n则 $2 \\cos A \\cos C=\\cos B=-\\cos (A+C)=\\sin A \\sin C-\\cos A \\cos C$,\n所以 $\\tan A \\tan C=3$, 所以 $\\tan B=-\\tan (A+C)=\\frac{\\tan A+\\tan C}{\\tan A \\tan C-1}= \\frac{\\tan A+\\tan C}{2}$, 因此 $\\tan A 、 \\tan B 、 \\tan C$ 成等差数列.",
+    "remark": "",
+    "figures": []
+}

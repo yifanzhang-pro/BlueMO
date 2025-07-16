@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise14.tex",
+    "problem_type": "calculation",
+    "problem": "问题9. 如图(<FilePath:./images/volume14/figures/fig-c14p9.png>), $8 \\times 9$ 的方格表上已经放置了 6 块 $1 \\times 2$ 的多米诺骨牌.\n问方格表内最多还能放置多少块两两不重叠的多米诺骨牌?",
+    "solution": "如图(<FilePath:./images/volume14/figures/fig-c14a9.png>), 设方格表中已被多米诺骨牌占据的 12 个小方格的集合为 $C$; 右上角、 左下角的小方格分别为 $B 、 D ; B \\cup C \\cup D$ 左上方的小方格集合为 $A ; B \\cup C \\cup D$ 右下方的小方格集合为 $E$.\n将方格表黑白相间染色, 使右上角 $B$ 为白格, 则推算知: $D$ 为黑格; $A$ 中含有 16 个白格、13 个黑格; $E$ 中含有 16 个黑格、13 个白格.\n再放人一块多米诺骨牌必须全属于 $A \\cup B \\cup D$ 或全属于 $E \\cup B \\cup D$, 每一集合至多包含 14 块多米诺骨牌 (因为每块骨牌占据一个黑格和一个白格), 因此最多还能两两不重叠地放置不超过 28 块多米诺骨牌.\n易知可以如图所示放 28 块骨牌, 因此本题所求结果为 28 .",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c14p9.png",
+        "./images/volume14/figures/fig-c14a9.png"
+    ]
+}

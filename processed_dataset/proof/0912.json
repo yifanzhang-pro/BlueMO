@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例32 给定整数 $n \\geqslant 2$. 求所有的函数 $f: \\mathbf{R} \\rightarrow \\mathbf{R}$, 满足对任意实数 $x 、 y$, 都有\n$$\nf(x-f(y))=f\\left(x+y^n\\right)+f\\left(f(y)+y^n\\right) .\n$$",
+    "solution": "解:令 $x=f(y)$, 则 $f\\left(f(y)+y^n\\right)=\\frac{1}{2} f(0)$. 令 $z=x-f(y)$, 则\n$$\nx+y^n=z+f(y)+y^n .\n$$\n于是有\n$$\nf(z)=f\\left(z+f(y)+y^n\\right)+\\frac{1}{2} f(0) . \\quad\\quad (1)\n$$\n令 $S=\\left\\{f(y)+y^n \\mid y \\in \\mathbf{R}\\right\\}$. 下面分两种情形讨论.\n情形一: $S$ 中仅含一个元素, 于是存在常数 $a$ 使得 $f(y)+y^n=a$ 对任意 $y$ 成立.\n代入 (1) 式中即得\n$$\nf(z)=f(z+a)+\\frac{1}{2} f(0),\n$$\n即有 $-z^n+a=-(z+a)^n+a+\\frac{1}{2} a$ 对所有实数 $z$ 成立, 故 $a=0$. 易验证 $f(x)=-x^n$ 满足要求.\n情形二: $S$ 含有多于一个元素.\n由(1)式知对任意 $s \\in S$, 都有 $f(z)=f(z+s)+\\frac{1}{2} f(0)$. 于是对 $s_1, s_2 \\in S$ (不妨设 $\\left.s_1>s_2\\right), f\\left(z+s_1\\right)=f\\left(z+s_2\\right)$ 成立, 即 $f$ 是以 $s_1-s_2$ 为周期的周期函数.\n由于 $S$ 至少含有两个元素, 故存在 $\\lambda>0$, 使得 $f$ 以 $\\lambda$ 为周期.\n于是\n$$\n\\left(f(y+\\lambda)+(y+\\lambda)^n\\right)-\\left(f(y)+y^n\\right)=(y+\\lambda)^n-y^n\n$$\n也是 $f$ 的周期.\n这是关于 $y$ 的 $n-1$ 次多项式, 因为首项系数 $n \\lambda>0$, 所以该多项式可以取到充分大的所有实数, 即充分大的实数均为 $f$ 的周期, 于是所有实数均为 $f$ 的周期, 这样 $f$ 是常数函数.\n由 (1) 式即知 $f(x)=0$, 易验证 $f(x)=$ 0 满足要求.\n综上所述, 所有满足要求的函数为 $f(x)=-x^n$ 和 $f(x)=0$.",
+    "remark": "",
+    "figures": []
+}

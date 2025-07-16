@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 用母函数方法求下列问题的解.\n(1) 求各位数字之和等于 17 的三位正整数的个数;\n(2) 将一张 $n$ 元的纸币全部兑换为 1 元和 2 元的纸币, 问有多少种不同的兑换方法?",
+    "solution": "(1) 设各位数字之和等于 $n$ 的三位数有 $a_n$ 个, 则 $a_n=\\sum_{a+b+c=n} 1(a, b, c$ 均为整数且 $1 \\leqslant a \\leqslant 9,0 \\leqslant b \\leqslant 9,0 \\leqslant c \\leqslant 9) . a_n$ 的母函数为 $f(x)=\\sum_{n=0}^{\\infty} a_n x^n= \\sum_{n=0}^{\\infty}\\left(\\sum_{a+b+c=n} 1\\right) x^n=\\sum_{a=1}^9 \\sum_{b=0}^9 \\sum_{c=0}^9 x^{a+b+c}=\\left(\\sum_{a=1}^9 x^a\\right)\\left(\\sum_{b=0}^9 x^b\\right)\\left(\\sum_{c=0}^g x^c\\right)= \\frac{x\\left(1-x^9\\right)\\left(1-x^{10}\\right)^2}{(1-x)^3}=\\left(x-x^{10}-2 x^{11}+2 x^{20}+x^{21}-x^{30}\\right)\\left(\\sum_{i=0}^{\\infty} \\mathrm{C}_{i+2}^2 x^i\\right)$. 其中 $x^{17}$ 的系数为 $a_{17}=\\mathrm{C}_{18}^2-\\mathrm{C}_9^2-2 \\mathrm{C}_8^2=61$, 即各位数字之和等于 17 的三位数有 61 个; (2) 类似于 (1) 可知所求方法数为下列多项式中 $x^n$ 的系数 $a_n: f(x)=\\sum_{n=0}^{\\infty} a_n x^n=\\left(\\sum_{a=0}^{\\infty} x^a\\right)\\left(\\sum_{b=0}^{\\infty} x^{2 b}\\right)=\\left(\\frac{1}{1-x}\\right)\\left(\\frac{1}{1-x^2}\\right)= \\frac{1}{(1+x)(1-x)^2}=\\frac{1}{4(1+x)}+\\frac{1}{2(1-x)^2}+\\frac{1}{4(1-x)}=\\frac{1}{4} \\sum_{n=0}^{\\infty}(-1)^n x^n+ \\frac{1}{2} \\sum_{n=0}^{\\infty} \\mathrm{C}_{n+1}^1 x^n+\\frac{1}{4} \\sum_{n=0}^{\\infty} x^n=\\sum_{n=0}^{\\infty}\\left(\\frac{n+1}{2}+\\frac{1+(-1)^n}{4}\\right) x^n$, 故所求兑换方法数为 $a_n=\\frac{n+1}{2}+\\frac{1+(-1)^n}{4}=\\left[\\frac{n+2}{2}\\right]$.",
+    "remark": "",
+    "figures": []
+}

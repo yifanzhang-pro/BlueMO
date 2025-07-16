@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题16 证明: 不存在整数 $x 、 y 、 z$, 满足\n$$\n2 x^4+2 x^2 y^2+y^4=z^2, x \\neq 0 .\n$$",
+    "solution": "因为 $x \\neq 0$, 显然有 $y \\neq 0$. 不失一般性, 假定 $x 、 y$ 是题设方程的整数解, 且满足 $x>0, y>0$, 及 $(x, y)=1$, 我们还可以进一步假定 $x$ 是满足上述条件的最小的整数解.\n由于 $z^2 \\equiv 0,1,4(\\bmod 8)$, 可知 $x$ 是偶数, 而 $y$ 是奇数.\n注意到 $x^4+ \\left(x^2+y^2\\right)^2=z^2$, 及 $\\left(x^2, x^2+y^2\\right)=1$, 故存在一个奇整数 $p$ 和偶整数 $q$, 使得 $x^2=2 p q, x^2+y^2=p^2-q^2$ 及 $(p, q)=1$. 由此易证, 存在一个整数 $a$ 与奇数 $b$, 使得 $p=b^2, q=2 a^2$. 故 $x=2 a b, y^2=b^4-4 a^4-4 a^2 b^2$.\n注意到 $\\left(\\frac{2 a^2+b^2+y}{2}\\right)^2+\\left(\\frac{2 a^2+b^2-y}{2}\\right)^2=b^4$ 及 $\\left(\\frac{2 a^2+b^2+y}{2} \\frac{2 a^2+b^2-y}{2}\\right)=1$. 故存在整数 $s 、 t$, 其中 $s>t,(s, t)=1$, 使得 $\\frac{2 a^2+b^2+y}{2}= 2 s t, \\frac{2 a^2+b^2-y}{2}=s^2-t^2$, 或 $\\frac{2 a^2+b^2+y}{2}=s^2-t^2, \\frac{2 a^2+b^2-y}{2}=2 s t$, 及 $b^2=s^2+t^2$. 易知 $a^2=(s-t) t$.\n由于 $(a, b)=1,(s, t)=1$, 故存在正整数 $m 、 n((m, n)=1)$, 使得 $(s-t)=m^2, t=n^2$. 因此, $b^2=n^4+\\left(n^2+m^2\\right)^2$. 而 $x=2 a b>t=n^2 \\geqslant n$, 这与 $x$ 是最小解的假定矛盾.",
+    "remark": "",
+    "figures": []
+}

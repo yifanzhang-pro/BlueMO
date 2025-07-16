@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例15. 试证明: 存在唯一这样的三角形, 它的三边长是三个连续的自然数, 且有一个角是另一个角的 2 倍.",
+    "solution": "解:设边长为 $a=n-1, b=n, c=n+1(n \\in \\mathbf{N}$ 且 $n>1)$ 的三角形满足条件, 它的三个角分别为 $\\alpha 、 2 \\alpha 、 \\pi-3 \\alpha$. 显然 $0<\\alpha<\\frac{\\pi}{3}$.\n由于 $\\frac{\\sin (\\pi-3 \\alpha)}{\\sin \\alpha}=\\frac{\\sin 3 \\alpha}{\\sin \\alpha}=3-4 \\sin ^2 \\alpha=4 \\cos ^2 \\alpha-1=\\left(\\frac{\\sin 2 \\alpha}{\\sin \\alpha}\\right)^2-1$,\n 若 $A=\\alpha, B=2 \\alpha$, 则 $C=\\pi-3 \\alpha$. 由正弦定理得\n$$\n\\begin{gathered}\n\\frac{n-1}{\\sin \\alpha}=\\frac{n}{\\sin 2 \\alpha}=\\frac{n+1}{\\sin 3 \\alpha}, \\\\\n\\frac{n+1}{n-1}=\\left(\\frac{n}{n-1}\\right)^2-1,\n\\end{gathered}\n$$\n解得 $n=2$. 因此 $a=1, b=2, c=3$. 但此时不能构成三角形.\n 若 $A=\\alpha, C=2 \\alpha$, 则 $B=\\pi-3 \\alpha$, 由正弦定理得 $\\frac{n-1}{\\sin \\alpha}=\\frac{n}{\\sin 3 \\alpha}= \\frac{n+1}{\\sin 2 \\alpha}, \\frac{n}{n-1}=\\left(\\frac{n+1}{n-1}\\right)^2-1$, 解得 $n=5$.\n因此 $a=4, b=5, c=6$ 能构成三角形, 此时, 由余弦定理得 $\\cos A=\\frac{3}{4}$, $\\cos C=\\frac{1}{8}$, 满足 $\\cos C=\\cos 2 A$, 从而满足 $C=2 A$.\n 若 $B=\\alpha, C=2 \\alpha$, 则 $A=\\pi-3 \\alpha$, 由正弦定理得\n$$\n\\frac{n-1}{\\sin 3 \\alpha}=\\frac{n}{\\sin \\alpha}=\\frac{n+1}{\\sin 2 \\alpha}, \\frac{n-1}{n}=\\left(\\frac{n+2}{n}\\right)^2-1 .\n$$\n$n^2-3 n-1=0$,这个方程没有整数解.\n综上所述, 满足条件的三角形是唯一的, 它的三边的长分别为 $4 、 5 、 6$.",
+    "remark": "",
+    "figures": []
+}

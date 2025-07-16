@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $0<a<b$, 证明: $\\frac{\\ln b-\\ln a}{b-a}<\\frac{1}{\\sqrt{a b}}$.",
+    "solution": "证明:原不等式等价于 $\\ln b-\\ln a<\\frac{b-a}{\\sqrt{a b}}$, 即 $\\ln \\frac{b}{a}<\\sqrt{\\frac{b}{a}}-\\sqrt{\\frac{a}{b}}$.\n令 $b=a t^2(t>1)$, 进一步将上述不等式转化为 $2 \\ln t<t-\\frac{1}{t}$.\n设 $F(t)=2 \\ln t-\\left(t-\\frac{1}{t}\\right)$, 则 $F(1)=0, F^{\\prime}(t)=\\frac{2}{t}-1-\\frac{1}{t^2}= -\\left(\\frac{1}{t}-1\\right)^2<0(t>1)$, 因此当 $t>1$ 时 $F(t)$ 单调递减, 故 $F(t)<F(1)= O(t>1)$, 即 $2 \\ln t<t-\\frac{1}{t}(t>1)$, 从而原不等式成立.",
+    "remark": "在证明原不等式时, 先通过等价变形和换元, 化归为关于 $t$ 的一个不等式, 同时起到了减少字母和简化约束条件的作用; 此后构造函数 $F(t)=2 \\ln t-\\left(t-\\frac{1}{t}\\right)$, 将问题进一步化归为对函数单调性的讨论, 而 $F(t)$ 的单调性又通过求导得以判断.\n题的求解很简短, 化归思想却蕴含在多个步骤中.\n正如美籍匈牙利数学家 $\\mathrm{G}$ - 波利亚所说, \"不断地变换你的问题\", \"我们必须一再地变换它,重新叙述它, 变换它, 直到最后成功地找到某些有用的东西为止\". 由此可见, 问题转化的思想在数学解题中的重要性.",
+    "figures": []
+}

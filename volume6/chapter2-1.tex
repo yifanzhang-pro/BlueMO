@@ -1,0 +1,245 @@
+
+%%TEXT_BEGIN%%
+斐波那契(Fibonaccia) 数列 $\left\{F_n\right\}$ 定义如下
+$$
+F_1=F_2=1, F_{n+2}=F_{n+1}=F_n, n=1,2, \cdots .
+$$
+它是一个非常著名的数列, 围绕它展开的讨论层出不穷, 有许多有趣而又深刻的结论.
+我们以例题的形式展示其中的一些.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 证明: 对任意 $m, n \in \mathbf{N}^*$, 都有 $\left(F_m, F_n\right)=F_{(m, n)}$. 即针对 Fibonaccia 数列的项求最大公因数可以转化到下标上去.
+%%<SOLUTION>%%
+证明:当 $m=n$ 时显然成立.
+考虑 $m \neq n$ 的情形, 不妨设 $m>n$.
+利用 Fibonaccia 数列的递推式, 可知
+$$
+\begin{aligned}
+F_m= & F_{m-1}+F_{m-2}=F_2 F_{m-1}+F_1 F_{m-2} \\
+= & F_2\left(F_{m-2}+F_{m-3}\right)+F_1 F_{m-2} \\
+= & \left(F_2+F_1\right) F_{m-2}+F_2 F_{m-3} \\
+= & F_3 F_{m-2}+F_2 F_{m-3} \\
+& \cdots \\
+= & F_n F_{m-n+1}+F_{n-1} F_{m-n} .
+\end{aligned}
+$$
+于是 $\left(F_m, F_n\right)=\left(F_{n-1} F_{m-n}, F_n\right)=\left(F_{m-n}, F_n\right)$ (这里用到 $\left(F_{n-1}, F_n\right)=1$, 它可以通过对 $n$ 用数学归纳法证得, 具体过程留给读者).
+在上面的结论中, 用 $(m-n, n)$ 代替 $(m, n)$ 继续讨论, 表明求 $F_m$ 与 $F_n$ 的最大公因数的过程实质上是对下标 $m 、 n$ 作辗转相除.
+所以 $\left(F_m, F_n\right)= F_{(m, n)}$.
+说明利用本题的结论可证出下述命题: 如果 $F_n$ 为素数, 那么 $n=4$ 或者 $n$ 为素数.
+事实上, 如果 $n \neq 4$ 且 $n$ 不是素数, 那么可写 $n=p q, 2 \leqslant p \leqslant q$, 并且
+$q \geqslant 3$. 此时 $\left(F_n, F_q\right)=F_{(n, q)}=F_q$, 而 $F_q \geqslant 2, F_n>F_q$, 由此导出 $F_n$ 为合数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 证明: 每一个正整数 $m$, 都可以唯一地表示为如下形式
+$$
+\begin{aligned}
+m & =\left(a_n a_{n-1} \cdots a_2\right)_F \\
+& =a_n F_n+a_{n-1} F_{n-1}+\cdots+a_2 F_2 . 
+\end{aligned} \label{eq1}
+$$
+这里 $a_i=0$ 或 $1, a_n=1$, 并且不存在下标 $2 \leqslant i \leqslant n-1$, 使得 $a_i=a_{i+1}=1$, 其中 $F_i$ 为 Fibonaccia 数列中的第 $i$ 项.
+%%<SOLUTION>%%
+证明:形如式\ref{eq1}的正整数表示可称为 $m$ 的 $F$-表示, 它类似于二进制, 此结论是著名的 Zerkendorf 定理.
+对 $m$ 归纳来予以证明.
+当 $m=1$ 时, $m=F_2$, 命题成立.
+现设对所有小于 $m$ 的正整数 $k$ 命题都成立.
+由于存在唯一的 $n \in \mathbf{N}^*$, 使得 $F_n \leqslant m<F_{n+1}$, 如果 $m-F_n=0$, 那么 $m$ 已表为 式\ref{eq1} 的形式, 如果 $m-F_n>0$, 那么由归纳假设, $m-F_n$ 有形如 式\ref{eq1} 的表示, 设
+$$
+m-F_n=\left(a_l a_{l-1} \cdots a_2\right)_F=a_l F_l+\cdots+a_2 F_2,
+$$
+其中 $a_l=1$, 则 $m=F_n+a_l F_l+\cdots+a_2 F_2$. 现在若 $l \geqslant n-1$, 则 $m \geqslant F_n+ F_{n-1}=F_{n+1}$, 矛盾, 所以 $l \leqslant n-2$, 从而 $m$ 有满足式\ref{eq1} 的表示.
+下证 $m$ 的形如式\ref{eq1}的表示是唯一的.
+事实上,若
+$$
+m=\left(a_n \cdots a_2\right)_F=\left(b_l \cdots b_2\right)_F, \label{eq2}
+$$
+这里 $a_n=b_l=1$, 且 $n \geqslant l$.
+若 $n>l$, 则由于不存在下标 $1 \leqslant i \leqslant l-1$, 使得 $b_i=b_{i+1}=1$, 结合 $\left\{F_n\right\}$ 的定义, 可知
+$$
+\begin{aligned}
+\left(b_l \cdots b_2\right)_F & \leqslant\left\{\begin{array}{l}
+F_l+F_{l-2}+\cdots+F_3, m \text { 为偶数, } \\
+F_l+F_{l-2}+\cdots+F_4+F_2, m \text { 为奇数, }
+\end{array}\right. \\
+& <\left\{\begin{array}{l}
+F_l+F_{l-2}+\cdots+F_3+F_2=F_{l+1}, m \text { 为偶数, } \\
+F_l+F_{l-2}+\cdots+F_4+F_2+F_1=F_{l+1}, m \text { 为奇数.
+}
+\end{array}\right.
+\end{aligned}
+$$
+因此 $\left(b_l \cdots b_2\right)_F<F_{l+1} \leqslant F_n$, 故式\ref{eq2}不能都取等式.
+所以 $n=l$, 进而 $m-F_n$ 有两种表示, 这与归纳假设不符.
+所以, $m$ 的表示唯一.
+综上所述,由第二数学归纳法知, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 熟知任意连续 $n$ 个整数之积是前 $n$ 个正整数之积 (即 $n !$ ) 的倍数.
+Fibonaccia 数列也具有类似的性质.
+请证明 : 对任意 $k \in \mathbf{N}^*$, 数列 $\left\{F_n\right\}$ 中任意连续 $k$ 项之积都是前 $k$ 项之积的倍数.
+%%<SOLUTION>%%
+证明:引人记号 $[n] !=F_1 F_2 \cdots F_n, n=1,2, \cdots$, 并规定 $[0] !=1$. 并写
+$$
+R(m, n)=\frac{[m+n] !}{[m] ! \cdot[n] !}, m, n \in \mathbf{N} .
+$$
+为证命题成立, 只需证明: 对任意 $m 、 n \in \mathbf{N}$, 都有 $R(m, n) \in \mathbf{N}^*$. 利用例 1 中类似的推导过程, 知
+$$
+F_{m+n}=F_2 F_{m+n-1}+F_1 F_{m+n-2}=\cdots=F_m F_{n+1}+F_{m-1} F_n,
+$$
+所以, 我们有
+$$
+\begin{aligned}
+R(m, n) & =\frac{F_{m+n} \cdot[m+n-1] !}{[m] ! \cdot[n] !}=\frac{F_{m+n} \cdot[m+n-1] !}{F_m \cdot F_n \cdot[m-1] ! \cdot[n-1] !} \\
+& =F_{n+1} \cdot \frac{[m+n-1] !}{[m-1] ! \cdot[n] !}+F_{m-1} \cdot \frac{[m+n-1] !}{[m] ! \cdot[n-1] !} \\
+& =F_{n+1} \cdot R(m-1, n)+F_{m-1} \cdot R(m, n-1) .
+\end{aligned}
+$$
+上式对 $m 、 n \in \mathbf{N}^*$ 都成立, 结合初始情形 $R(0, n)=R(m, 0)=1$ (对 $m 、 n \in \mathbf{N}$ 都成立) 及数学归纳法, 即可证明 $R(m, n)$ 都是正整数.
+所以, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设函数 $f(x)=\frac{1}{x+1}(x>0)$. 证明:
+(1) 对任意正整数 $n$, 都有 $g_n(x)=x+f(x)+f(f(x))+\cdots+ \underbrace{f(f(\cdots f(x)))}_{n \uparrow f}$ 是 $(0,+\infty)$ 上的递增函数;
+(2) $g_n(1)=\frac{F_1}{F_2}+\frac{F_2}{F_3}+\cdots+\frac{F_{n+1}}{F_{n+2}}$, 这里 $\left\{F_n\right\}$ 是 Fibonacci 数列.
+%%<SOLUTION>%%
+证明:为表述方便, 我们记 $f^{(n)}(x)=\underbrace{f(f(\cdots f(x)))}_{n \uparrow f}$, 从局部出发来讨论这个函数迭代问题.
+(1)熟知函数 $y=x+\frac{1}{x}$ 在 $(1,+\infty)$ 上单调递增, 因此, 函数 $h(x)= x+f(x)=x+\frac{1}{1+x}=(1+x)+\frac{1}{1+x}-1$ 在 $(0,+\infty)$ 上单调递增.
+注意到, $f(f(x))=\frac{1}{1+f(x)}=\frac{1}{1+\frac{1}{1+x}}=\frac{1+x}{2+x}=1-\frac{1}{2+x}$ 是 $(0$, $+\infty)$ 上的增函数, 依此可知, 对任意 $k \in \mathbf{N}^*$, 函数 $f^{(2 k)}(x)$ 都是 $(0,+\infty)$ 上的增函数, 结合 $h(x)$ 在 $(0,+\infty)$ 上递增, 可知 $f^{(2 k)}(x)+f^{(2 k+1)}(x)$ 也是 $(0$, $+\infty)$ 上的增函数.
+利用上述结论可知,
+当 $n$ 为奇数时,
+$$
+g_n(x)=(x+f(x))+\left(f^{(2)}(x)+f^{(3)}(x)\right)+\cdots+\left(f^{(n-1)}(x)+f^{(n)}(x)\right)
+$$
+是 $\frac{n+1}{2}$ 个 $(0,+\infty)$ 上的增函数之和.
+当 $n$ 为偶数时, $f^{(n)}(x)$ 与 $g_n(x)-f^{(n)}(x)$ 都是 $(0,+\infty)$ 上的增函数, 因此, $g_n(x)$ 也是 $(0,-\infty)$ 上的增函数.
+所以,对任意 $n \in \mathbf{N}^*, g_n(x)$ 都是 $(0,+\infty)$ 上的增函数.
+(2) 由 $g_n(x)$ 的定义可知, 我们只需证明: 对任意 $n \in \mathbf{N}$, 都有 $f^{(n)}(1)= \frac{F_{n+1}}{F_{n+2}}\left(\right.$ 这里 $\left.f^{(0)}(x)=x\right)$.
+利用 $1=\frac{F_1}{F_2}, f(1)=\frac{1}{2}=\frac{F_2}{F_3}$ 可知当 $n=0 、 1$ 时命题成立.
+现设 $f^{(n)}(1)= \frac{F_{n+1}}{F_{n+2}}$ (即命题对 $n$ 成立), 则由 $f^{(n+1)}(x)=\frac{1}{1+f^{(n)}(x)}$ 可知 $f^{(n+1)}(1)= \frac{1}{1+f^{(n)}(1)}$, 故
+$$
+f^{(n+1)}(x)=\frac{1}{1+\frac{F_{n+1}}{F_{n+2}}}=\frac{F_{n+2}}{F_{n+2}+F_{n+1}}=\frac{F_{n+2}}{F_{n+3}} .
+$$
+所以, (2) 成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 考虑数列 $\left\{x_n\right\}: x_1=a, x_2=b, x_{n+2}=x_{n+1}+x_n, n=1,2$, $3, \cdots$, 这里 $a 、 b$ 为实数.
+若存在正整数 $k 、 m, k \neq m$, 使得 $x_k=x_m=c$, 则称实数 $c$ 为"双重值". 证明: 存在实数 $a 、 b$, 使得至少存在 2000 个不同的"双重值". 进一步,证明:不存在 $a 、 b$, 使得存在无穷多个"双重值".
+%%<SOLUTION>%%
+证明:我们利用 Fibonaccia 数列来构造一个具有 2000 个不同的"双重值"的数列.
+想法是将 $\left\{F_n\right\}$ 依现有的递推式向负整数下标延拓, 可得
+$$
+\begin{aligned}
+& F_0=F_2-F_1=0, \\
+& F_{-1}=F_1-F_0=1=F_1, \\
+& F_{-2}=F_0-F_{-1}=-1=-F_2, \\
+& F_{-3}=F_{-1}-F_{-2}=2=F_3,
+\end{aligned}
+$$
+依此下去, 可知 $F_{-2 m}=-F_{2 m}, F_{-(2 m+1)}=F_{2 m+1}, m=1,2, \cdots$.
+于是, 对任意 $m \in \mathbf{N}^*$, 令 $a=F_{2 m+1}, b=-F_{2 m}$, 那么, 数列 $\left\{x_n\right\}$ 为
+$$
+\begin{aligned}
+& F_{2 m+1},-F_{2 m}, F_{2 m-1},-F_{2 m-2}, \cdots,-F_2, F_1, F_0, F_1, F_2, \cdots, F_{2 m-1} \\
+& F_{2 m}, F_{2 m+1}, \cdots
+\end{aligned}
+$$
+数 $F_1, F_3, \cdots, F_{2 m+1}$ 都是 $\left\{x_n\right\}$ 的 "双重值". 特别地, 取 $m=1999$ 即可找到符合要求的 $\left\{x_n\right\}$.
+另一方面, 若存在 $a 、 b$, 使得 $\left\{x_n\right\}$ 有无穷多个不同的"双重值", 则 $\left\{x_n\right\}$ 中任意相邻两项不同号 (否则, 数列从这相邻两项的下一项起变为一个严格递增 (或严格递减)的数列,不能出现无穷多个不同的"双重值").
+注意到, $\left\{x_n\right\}$ 的特征方程 (也就是 Fibonaccia 数列的特征方程) 为 $\lambda^2= \lambda+1$, 有两个不同的实根, 因而可设
+$$
+x_n=A \cdot\left(\frac{1+\sqrt{5}}{2}\right)^n+B \cdot\left(\frac{1-\sqrt{5}}{2}\right)^n, n=1,2, \cdots .
+$$
+由于 $\left|\frac{1-\sqrt{5}}{2}\right|<1$, 而 $\frac{1+\sqrt{5}}{2}>1$, 如果 $A>0$, 那么 $n$ 充分大时, 都有 $x_n>0$, 从而会出现都为正数的相邻两项; 同样地, 若 $A<0$, 则 $\left\{x_n\right\}$ 中会出现同为负数的相邻两项.
+均导致矛盾.
+所以 $A=0$, 进而 $x_n=B \cdot\left(\frac{1-\sqrt{5}}{2}\right)^n$, 结合 $\left|\frac{1-\sqrt{5}}{2}\right|<1$ 知, 数列 $\left\{\left|x_n\right|\right\}$ 是一个单调递减的数列, 在 $B \neq 0$ 时不出现 "双重数",而 $B=0$ 时, 只有一个"双重数".
+综上可知,命题成立.
+说明利用 Fibonaccia 数列的特征方程及初始条件可求得通项公式为 $F_n=\frac{1}{\sqrt{5}}\left(\frac{1+\sqrt{5}}{2}\right)^n-\frac{1}{\sqrt{5}}\left(\frac{1-\sqrt{5}}{2}\right)^n, n=1,2, \cdots$. 然而, 在实际问题的解决中递推式比通项公式用得更多.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 将 Fibonacci 数列的项依次排列 $1,1,2,3,5,8, \cdots$; 将所有的孪生素数 (若 $p$ 与 $p+2$ 都是素数,则称 $p$ 与 $p+2$ 为孪生素数) 从小到大排列 3 , $5,7,11,13,17,19,29,31, \cdots$. 求在这两个数列中都出现的正整数.
+%%<SOLUTION>%%
+解:对比两个数列的前面若干项, 可发现只有 $3 、 5$ 和 13 在两个数列中出现,猜测这是所有要求的正整数.
+鉴于孪生素数组成的数列的规律性难以把握, 要证上述猜测, 应从 Fibonacci 数列的性质着手, 如果 $n$ 比较大时, 要么 $F_n$ 为合数, 要么 $F_n \pm 2$ 都是合数, 那么 $F_n$ 不在孪生素数数列中出现.
+依此想法着手, 先要猜出 Fibonacci 数列的一些性质.
+将 Fibonacci 数列的前面一些项列出
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline$n$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & $\cdots$ \\
+\hline$F_n$ & 1 & 1 & 2 & 3 & 5 & 8 & 13 & 21 & 34 & 55 & 89 & 144 & 233 & 377 & 610 & $\cdots$ \\
+\hline
+\end{tabular}
+发现 $F_{2 n}\left(n \geqslant 3\right.$ 时) 都是合数, 而 $F_{2 n+1} \pm 2$ ( $n \geqslant 4$ 时) 也都是合数, 并且有如下的一些关系式
+(1) $F_{2 n}=F_n\left(F_{n+1}+F_{n-1}\right)$, 这里 $F_0=0$;
+(2) $F_{4 n+1}+2=F_{2 n-1}\left(F_{2 n+1}+F_{2 n+3}\right)$;
+(3) $F_{4 n+1}-2=F_{2 n+2}\left(F_{2 n-2}+F_{2 n}\right)$;
+(4) $F_{4 n+3}+2=F_{2 n+3}\left(F_{2 n+1}+F_{2 n-1}\right)$;
+(5) $F_{4 n+3}-2=F_{2 n}\left(F_{2 n+2}+F_{2 n+4}\right)$.
+注意到, 如果上述 5 个关系式成立, 那么在两个数列中出现的数只有 $3 、 5$ 和 13 . 现在用数学归纳法证明 (1)-(5)都成立.
+当 $n=1$ 时,利用前表中所列数据可知 (1)-(5)都成立.
+现设 (1)-(5) 对不超过 $n$ 的情形都成立, 则由 Fibonacci 数列的递推式, 对 $n+1$ 的情形, 有
+$$
+\begin{aligned}
+F_{4 n+2} & =F_{4 n+1}+F_{4 n}=F_{4 n+1}+F_{4 n-1}+F_{4 n-2} \\
+& =\left(F_{4 n+1}+2\right)+\left(F_{4 n-1}-2\right)+F_{4 n-2} \\
+& =F_{2 n-1}\left(F_{2 n+1}+F_{2 n+3}\right)+F_{2 n-2}\left(F_{2 n}+F_{2 n+2}\right)+F_{2 n-1}\left(F_{2 n-2}+F_{2 n}\right) \\
+& =F_{2 n+1} F_{2 n-1}+F_{2 n-1} F_{2 n+3}+F_{2 n-2}\left(F_{2 n}+F_{2 n-1}\right)+\left(F_{2 n-2} F_{2 n+2}+F_{2 n-1} F_{2 n}\right) \\
+& =F_{2 n+1} F_{2 n-1}+F_{2 n-2} F_{2 n+1}+F_{2 n-1}\left(F_{2 n+3}+F_{2 n}\right)+F_{2 n-2} F_{2 n+2} \\
+& =F_{2 n+1} F_{2 n}+2 F_{2 n-1} F_{2 n+2}+\left(F_{2 n}-F_{2 n-1}\right) F_{2 n+2} \\
+& =F_{2 n+1} F_{2 n}+F_{2 n+2}\left(F_{2 n-1}+F_{2 n}\right) \\
+& =F_{2 n+1}\left(F_{2 n}+F_{2 n+2}\right)
+\end{aligned}
+$$
+即
+$$
+F_{2(2 n+1)}==F_{2 n+1}\left(F_{2 n+1-1}+F_{2 n+1+1}\right) . \label{eq1}
+$$
+同理可证即
+即
+$$
+\begin{gathered}
+F_{4 n+4}=F_{2 n+2}\left(F_{2 n+1}+F_{2 n+3}\right), \\
+F_{2(2 n+2)}=F_{2 n+2}\left(F_{2 n+2-1}+F_{2 n+2+1}\right) . \label{eq2}
+\end{gathered}
+$$
+故由式\ref{eq1}\ref{eq2}可知, (1)对 $2 n+1 、 2 n+2$ 成立, 因此, 对所有 $n \in \mathbf{N}^*$ 成立.
+$$
+\begin{aligned}
+F_{4 n+5}+2 & =F_{4 n+4}+\left(F_{4 n+3}+2\right) \\
+& =F_{2 n+2}\left(F_{2 n+1}+F_{2 n+3}\right)+F_{2 n+3}\left(F_{2 n+1}+F_{2 n-1}\right) \\
+& =F_{2 n+1}\left(F_{2 n+2}+F_{2 n+3}\right)+F_{2 n+3}\left(F_{2 n+2}+F_{2 n-1}\right) \\
+& =F_{2 n+1} F_{2 n+4}+2 F_{2 n+3} F_{2 n+1} \\
+& =F_{2 n+1}\left(F_{2 n+3}+F_{2 n+5}\right),
+\end{aligned}
+$$
+即 (2) 对 $n+1$ 成立.
+类似地可证 (3)、(4)、(5) 对 $n+1$ 成立 (具体验证过程请读者完成).
+综上可知, (1)-(5)对任意 $n \in \mathbf{N}^*$ 成立.
+所以, 只有 $3 、 5$ 和 13 在两个数列中同时出现.
+说明利用例 1 的说明可得出当 $n \geqslant 3$ 时, $F_{2 n}$ 为合数, 这里的结论更强一些.
+%%PROBLEM_END%%
+
+

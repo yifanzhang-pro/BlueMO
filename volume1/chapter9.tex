@@ -1,0 +1,465 @@
+
+%%TEXT_BEGIN%%
+容不原理本节我们进一步讨论如何计算有限集的阶的问题.
+设 $M$ 为非空有限集, 非空集合
+$$
+A_1, A_2, \cdots, A_n
+$$
+是 $M$ 的一个子集族, 且满足
+$$
+A_1 \cup A_2 \cup \cdots \cup A_n=\bigcup_{i=1}^n A_i=M,
+$$
+则称子集族 $\mathscr{A}: A_1, A_2, \cdots, A_n$ 是集合 $M$ 的一个覆盖.
+我们的问题是, 如何通过计算覆盖 $\mathscr{A}: A_1, A_2, \cdots, A_n$ 中每个子集的阶来计算有限集 $M$ 的阶.
+一、加法原理我们先来看一个简单的情形.
+如果子集族 $\mathscr{A}$ 既满足 (i), 又满足
+$$
+A_i \cap A_j=\varnothing, 1 \leqslant i \neq j \leqslant n,
+$$
+那么覆盖 $A_1, A_2, \cdots, A_n$ 就是有限集 $M$ 的一个 $n$ 一分划.
+对于有限集 $M$ 的 $n$ 一分划, 我们有下面非常有用的结论.
+加法原理设 $M$ 为非空有限集, $A_1, A_2, \cdots, A_n$ 是 $M$ 的一个由非空子集构成的 $n$-分划,那么
+$$
+|M|=\left|A_1\right|+\left|A_2\right|+\cdots+\left|A_n\right| .
+$$
+加法原理是组合数学中一个基本的计数原理.
+在实际运用中可根据问题的不同背景赋予有限集 $M$ 的元素不同的含义.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+二、容斥原理的简单形式如果条件(ii)不一定满足, 也就是说可能存在 $1 \leqslant p \neq q \leqslant n$, 使
+$$
+A_p \cap A_q \neq \varnothing
+$$
+时, $\left|A_1\right|,\left|A_2\right|, \cdots,\left|A_n\right|$ 与 $|M|$ 有什么关系呢? 我们还是先来看比较简单的情形.
+定理 $1\left|A_1 \cup A_2\right|=\left|A_1\right|+\left|A_2\right|-\left|A_1 \cap A_2\right|$.
+证明设 $A_1 \cap A_2=B, A_1^{\prime}=A_1 \backslash B, A_2^{\prime}=A_2 \backslash B$, 则
+$$
+A_1 \cup A_2=A_1^{\prime} \cup A_2^{\prime} \cup B \text {. }
+$$
+由加法原理知, $\left|A_1^{\prime}\right|=\left|A_1\right|-|B|,\left|A_2^{\prime}\right|=\left|A_2\right|-|B|$, 所以
+$$
+\begin{aligned}
+\left|A_1 \cup A_2\right| & =\left|A_1^{\prime} \cup A_2^{\prime} \cup B\right|=\left|A_1^{\prime}\right|+\left|A_2^{\prime}\right|+|B| \\
+& =\left(\left|A_1\right|-|B|\right)+\left(\left|A_2\right|-|B|\right)+|B| \\
+& =\left|A_1\right|+\left|A_2\right|-\left|A_1 \cap A_2\right| .
+\end{aligned}
+$$
+定理 2 设 $A_1 、 A_2$ 是集合 $S$ 的子集,则
+$$
+\left|\complement_S A_1 \cap \complement_S A_2\right|=|S|-\left|A_1\right|-\left|A_2\right|+\left|A_1 \cap A_2\right| .
+$$
+证明由摩根定律及加法原理有
+$$
+\left|\complement_S A_1 \cap \complement_S A_2\right|=\left|\complement_S\left(A_1 \cup A_2\right)\right|=|S|-\left|A_1 \cup A_2\right| .
+$$
+又由定理 1 得
+$$
+\left|\complement_S A_1 \cap \complement_S A_2\right|=|S|-\left|A_1\right|-\left|A_2\right|+\left|A_1 \cap A_2\right| .
+$$
+定理 1 及定理 2 是容斥原理的简单形式, 可以用来解决一些简单的计数问题.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+三、容有原理的一般形式定理 3
+$$
+\begin{aligned}
+\left|\bigcup_{i=1}^n A_i\right|= & \sum_{i=1}^n\left|A_i\right|-\sum_{1 \leqslant i<j \leqslant n}\left|A_i \cap A_j\right| \\
+& +\sum_{1 \leqslant i<j<k \leqslant n}\left|A_i \cap A_j \cap A_k\right|+\cdots+(-1)^{n-1}\left|\bigcap_{i=1}^n A_i\right| .
+\end{aligned}
+$$
+证明由定理 1 知, $n=2$ 时结论成立.
+若 $n=k$ 时结论成立, 则
+$$
+\left|\bigcup_{i=1}^{k+1} A_i\right|=\left|\bigcup_{i=1}^k A_i\right|+\left|A_{k+1}\right|-\left|\left(\bigcup_{i=1}^k A_i\right) \cap A_{k+1}\right|
+$$
+$$
+\begin{aligned}
+= & \left|\bigcup_{i=1}^k A_i\right|+\left|A_{k+1}\right|-\left|\bigcup_{i=1}^k\left(A_i \cap A_{k+1}\right)\right| \\
+= & \sum_{i=1}^k\left|A_i\right|-\sum_{1 \leqslant i<j \leqslant k}\left|A_i \cap A_j\right|+\cdots \\
+& +(-1)^{k-1}\left|\bigcap_{i=1}^k A_i\right|+\left|A_{k+1}\right|-\sum_{i=1}^k\left|A_i \cap A_{k+1}\right| \\
+& +\sum_{1 \leqslant i<j \leqslant k}\left|\left(A_i \cap A_{k+1}\right) \bigcap\left(A_j \cap A_{k+1}\right)\right| \\
+& -\cdots+(-1)^k\left|\bigcap_{i=1}^k\left(A_i \bigcap A_{k+1}\right)\right| \\
+= & \sum_{i=1}^{k+1}\left|A_i\right|-\sum_{1 \leqslant i<j \leqslant k+1}\left|A_i \bigcap A_j\right|+\cdots+(-1)^k\left|\bigcap_{i=1}^{k+1} A_i\right|,
+\end{aligned}
+$$
+即 $n=k+1$ 时结论成立.
+由归纳原理知, 对任意正整数 $n$, 结论成立.
+由于公式 (III) 在计算左端集合的元素个数时, (右端) 采用了将“应该有的”包含进来, “不该有的 (或重复的)”排斥出去的思想方法, 故称其为容斥原理.
+容瓜原理是加法原理的推广, 一般用来计算至少具有某几个性质之一的元素的个数.
+利用摩根定律
+$$
+\complement_I\left(\bigcup_{i=1}^n A_i\right)=\bigcap_{i=1}^n\left(\complement_i A_i\right),
+$$
+及公式 $\complement_{\mathrm{I}} A=I-A$ ( $I$ 为全集) 改写定理 3 , 便得到下面的逐步淘汰原理.
+定理 4 设 $I$ 为全集,则
+$$
+\begin{aligned}
+\left|\bigcap_{i=1}^n \complement_I A_i\right|= & \left|\complement_I\left(\bigcup_{i=1}^n A_i\right)\right|=|I|-\left|\bigcup_{i=1}^n A_i\right| \\
+= & |I|-\sum_{i=1}^n\left|A_i\right|+\sum_{1 \leqslant i<j \leqslant n}\left|A_i \cap A_j\right| \\
+& -\sum_{1 \leqslant i<j<k \leqslant n}\left|A_i \cap A_j \cap A_k\right|+\cdots+(-1)^n\left|\bigcap_{i=1}^n A_i\right| .
+\end{aligned}
+$$
+公式 (IV) 又叫筛法公式,一般用来计算不具有某几个性质中的任何一个性质的元素的个数.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设正整数 $a 、 b 、 c$ 为三角形三边长, $a+b=n, n \in \mathbf{N}^*, 1 \leqslant c \leqslant n-1$. 求这样的三角形的个数.
+%%<SOLUTION>%%
+分析:设 $\triangle A B C$ 的角 $A 、 B 、 C$ 的对应边分别为 $a 、 b 、 c$. 例 1 就是要计算有限集 $M=\left\{\triangle A B C \mid a+b=n, a, b \in \mathbf{N}^*, 1 \leqslant c \leqslant n-1\right\}$ 的阶.
+也就是要计算同时满足 $a+b>c, b+c>a, c+a>b$ 的三元正整数组 $\{a, b, c\}$ 的个数.
+解不妨设 $b \geqslant a$, 则 $1 \leqslant a \leqslant\left[\frac{n}{2}\right]$. 满足题设条件的三角形可分为两类:
+第一类: $c$ 为最大边.
+令 $a=i$, 则 $b=n-i, n-i \leqslant c \leqslant n-1$. 这样的三角形有 $(n-1)-(n-i)+1=i$ 个.
+第二类: $c$ 不为最大边.
+则 $b>c, c+a>b$, 故 $b-a=n-2 i, n-2 i< c<n-i$. 因此 $n-2 i+1 \leqslant c \leqslant n-i-1$. 这样的三角形有 $(n-i-1)- (n-2 i+1)+1=i-1$ 个.
+由加法原理, 满足题设条件的三角形的个数为
+$$
+f(n)=\sum_{i=1}^{\left[\frac{n}{2}\right]}(i+i-1)=\sum_{i=1}^{\left[\frac{n}{2}\right]}(2 i-1)=\left(\left[\frac{n}{2}\right]\right)^2 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 集合 $S=\{1,2, \cdots, 1990\}$, 考察 $S$ 的 31 元子集.
+如果子集中 31 个元素之和可被 5 整除,则称为是好的.
+试求 $S$ 的好子集的个数.
+%%<SOLUTION>%%
+分析:直接计算好子集的个数是困难的.
+考察 $S$ 的全部 31 元子集, 将其按子集元素和模 5 的剩余类分成 5 类, 直觉告诉我们, 每一类子集的个数似乎是相同的.
+果真是这样的吗?
+解我们来考察 $S$ 的全部 31 元子集, 这样的子集共有 $\mathrm{C}_{1990}^{31}$ 个, 它们构成集合
+$$
+M=\left\{\left\{a_1, a_2, \cdots, a_{31}\right\} \mid\left\{a_1, a_2, \cdots, a_{31}\right\} \subset S\right\} .
+$$
+设 $\left\{a_1, a_2, \cdots, a_{31}\right\} \in M$, 其元素和被 5 除的余数为 $k$, 即
+$$
+\sum_{i=1}^{31} a_i=k(\bmod 5) .
+$$
+$k$ 只有 5 个可能值: $0,1,2,3,4$. 我们将所有 $k$ 值相同的 $M$ 的元素 ( $S$ 的 31 元子集) 归为一类, 得到 $M$ 的 5 个子集 $A_0, A_1, A_2, A_3$ 和 $A_4$. 显然 $A_0, A_1, \cdots, A_4$ 是 $M$ 的一个分划,其中 $A_0$ 的元素就是 $S$ 的好子集.
+由于 $31 \equiv 1(\bmod 5)$, 所以当 $\left\{a_1, a_2, \cdots, a_{31}\right\} \in A_0$ 时, 即当 $\sum_{i=1}^{31} a_i \equiv 0(\bmod 5)$ 时, 就有
+$$
+\sum_{i=1}^{31}\left(a_i+k\right) \equiv k(\bmod 5) .
+$$
+故知 $\left\{a_1+k, a_2+k, \cdots, a_{31}+k\right\} \in A_k, k=1,2,3,4$, 这里当 $a_i+k>1990$ 时,将 $a_i+k$ 理解为 $a_i+k-1990$. 这种 $A_0$ 与 $A_k$ 间的对应是一一的.
+所以有
+$$
+\left|A_0\right|=\left|A_1\right|=\left|A_2\right|=\left|A_3\right|=\left|A_4\right|,
+$$
+于是
+$$
+\begin{aligned}
+\left|A_0\right| & =\frac{1}{5}\left(\left|A_0\right|+\left|A_1\right|+\left|A_2\right|+\left|A_3\right|+\left|A_4\right|\right) \\
+& =\frac{1}{5}|M|=\frac{1}{5} C_{1990}^{31} .
+\end{aligned}
+$$
+说明在这里,我们的目的并不是求 $|M|$, 而是由于 $|M|$ 易于计算, 我们反过来利用这一点来达到计算 $\left|A_0\right|$ 的目的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设集合 $S=\{1,2, \cdots, 1000\}, A$ 是 $S$ 的子集,且 $A$ 的元素或是 3 的倍数, 或是 7 的倍数.
+试求 $A$ 的元素个数的最大值.
+%%<SOLUTION>%%
+解:设 $A_1=\{x \mid x \in S$, 且 $3 \mid x\}, A_2=\{x \mid x \in S$, 且 $7 \mid x\}$, 则 $|A|_{\text {max }}=\left|A_1 \cup A_2\right|$. 显然有
+$$
+\begin{gathered}
+\left|A_1\right|=\left[\frac{1000}{3}\right]=333, \\
+\left|A_2\right|=\left[\frac{1000}{7}\right]=142, \\
+\left|A_1 \cap A_2\right|=\left[\frac{1000}{3 \cdot 7}\right]=47 .
+\end{gathered}
+$$
+所以
+$$
+\begin{aligned}
+\left|A_1 \cup A_2\right| & =\left|A_1\right|+\left|A_2\right|-\left|A_1 \cap A_2\right| \\
+& =333+142-47=428 .
+\end{aligned}
+$$
+所以 $A$ 的元素个数的最大值为 428 .
+说明利用容斥原理的关键是构造所要计数的集合的一个合适的覆盖.
+上例解答中的覆盖是: $A_1, A_2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $Z$ 是平面上由 $n(>3)$ 个点组成的点集, 其中任三点不共线, 又设自然数 $k$ 满足不等式 $\frac{n}{2}<k<n$. 如果 $Z$ 中的每个点都至少与 $Z$ 中的 $k$ 个点有线段相连,证明: 这些线段中一定有三条线段构成三角形的三边.
+%%<SOLUTION>%%
+证明:因为 $k>\frac{n}{2}>\frac{3}{2}$, 所以 $k \geqslant 2$, 即每个点都至少与 $Z$ 中 2 个点有线段相连.
+不妨设 $A B$ 为 $Z$ 中点连成的线段.
+令
+$$
+\begin{aligned}
+& M=\{P \mid P \in Z, P \text { 与 } A \text { 有线段相连 }\}-\{B\}, \\
+& N=\{P \mid P \in Z, P \text { 与 } B \text { 有线段相连 }\}-\{A\} .
+\end{aligned}
+$$
+由于 $Z$ 中任一点至少引出 $k$ 条线段, 所以有 $|M| \geqslant k-1,|N| \geqslant k-1$. 又由于 $M \cup N$ 中不含 $A 、 B$, 所以有 $|M \cup N| \leqslant n-2$. 因此
+$$
+\begin{aligned}
+|M \cap N| & =|M|+|N|-|M \cup N| \\
+& \geqslant(k-1)+(k-1)-(n-2) \\
+& =2 k-2-(n-2)
+\end{aligned}
+$$
+$$
+>(n-2)-(n-2)=0 .
+$$
+所以 $M \cap N \neq \varnothing$, 即存在点 $C \in M$, 且 $C \in N(C \neq A, C \neq B)$. 显然线段 $A B 、 A C 、 B C$ 构成三角形的三边.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $S$ 是有理数 $r$ 的集合, 其中 $0<r<1$, 且 $r$ 有循环小数的展开形式为 $\overline{0 . a b c a b c a b c \cdots}=\overline{0 .\dot{a} b \dot{c}}, a 、 b 、 c$ 不一定相异.
+在 $S$ 的元素中, 能写成最简分数的不同的分子有多少个?
+%%<SOLUTION>%%
+解:因为 $\overline{0 . \dot{a} b \dot{c}}=\frac{\overline{a b c}}{999}$, 又 $999=3^3 \cdot 37$, 故如果 $\overline{a b c}$ 既不能被 3 整除也不能被 37 整除,则分数就是最简形式.
+设 $A_1=\{$ 不超过 1000 的正整数中 3 的倍数 $\}, A_2=$ \{不超过 1000 的正整数中 37 的倍数 $\}$. 易知
+$$
+\begin{gathered}
+\left|A_1\right|=\frac{999}{3}=333,\left|A_2\right|=\frac{999}{37}=27, \\
+\left|A_1 \cap A_2\right|=\frac{999}{3 \cdot 37}=9 .
+\end{gathered}
+$$
+由定理 2 , 有
+$$
+\begin{aligned}
+& 999-\left(\left|A_1\right|+\left|A_2\right|\right)+\left|A_1 \cap A_2\right| \\
+= & 999-(333+27)+9=648 .
+\end{aligned}
+$$
+即此类最简分数的不同分子有 648 个.
+此外, 还有形如 $\frac{k}{37}$ 的数, 其中自然数 $k$ 是小于 37 的 3 的倍数, 这样的 $k$ 有 $3,6,9, \cdots, 36$ 共 12 个.
+故满足条件的分子有 $648+12=660$ 个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 对于任何的集合 $S$, 设 $n(S)$ 为集合 $S$ 的子集个数.
+如果 $A 、 B 、 C$ 是三个集合,满足下列条件:
+(1) $n(A)+n(B)+n(C)=n(A \cup B \cup C)$,
+(2) $|A|=|B|=100$,
+求 $|A \cap B \cap C|$ 的最小值.
+%%<SOLUTION>%%
+解:如果一个集合有 $k$ 个元素, 那么它有 $2^k$ 个子集.
+由题设有
+$$
+2^{100}+2^{100}+2^{|C|}=2^{|A \cup B \cup C|},
+$$
+即
+$$
+1+2^{|C|-101}=2^{|A \cup B \cup C|-101} .
+$$
+因为 $1+2^{|C|-101}$ 是大于 1 且等于一个 2 的整数幂, 所以 $|C|=101$. 从而有
+$$
+|A \cup B \cup C|=102 \text {. }
+$$
+由容斥原理得
+$$
+\begin{aligned}
+|A \cap B \cap C|= & |A \cup B \cup C|+|A|+|B|+|C| \\
+& -|A \cup B|-|A \cup C|-|B \cup C| .
+\end{aligned}
+$$
+从而有
+$$
+|A \cap B \cap C|=403-|A \cup B|-|A \cup C|-|B \cup C| \text {. }
+$$
+由 $A \cup B 、 A \cup C 、 B \cup C \subseteq A \cup B \cup C$ 得， $|A \cup B| 、|A \cup C|$ 、 $|B \cup C| \leqslant 102$, 所以
+$$
+|A \cap B \cap C| \geqslant 403-102 \times 3=97 .
+$$
+另一方面, 取 $A=\{1,2,3, \cdots, 100\}, B=\{3,4,5, \cdots, 102\}, C=\{1,2,4,5,6, \cdots, 100,101,102\}$, 满足题设条件.
+这时
+$$
+|A \cap B \cap C|=|\{4,5,6, \cdots, 100\}|=97 .
+$$
+所以, $|A \cap B \cap C|$ 的最小值为 97 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 若 $A_1 \cup A_2 \cup \cdots \cup A_m=\left\{a_1, a_2, \cdots, a_n\right\}$, 且 $A_1, A_2, \cdots, A_m$ 均为非空集合, 则集合 $A_1, A_2, \cdots, A_m$ 的组数为
+$$
+g(m, n)=\sum_{k=0}^{m-1}(-1)^k \mathrm{C}_m^k\left(2^{m-k}-1\right)^n .
+$$
+%%<SOLUTION>%%
+证明:对于 $A_1 \cup A_2 \cdots \cup A_m=\left\{a_1, a_2, \cdots, a_n\right\}$, 如果对任意正整数 $k$ (其中 $1 \leqslant k \leqslant m-1$ ), 在 $A_1, A_2, \cdots, A_m$ 中至少有 $k$ 个集合为空集, 先确定出 $k$ 个空集, 确定的方式有 $\mathrm{C}_m^k$ 种.
+对每一种方式确定出的 $k$ 个空集, 都有剩下的 $m-k$ 个集合.
+不妨设它们为 $A_1^{\prime}, A_2^{\prime}, \cdots, A_{m-k}^{\prime}$, 它们的并集仍是 $\left\{a_1, a_2, \cdots, a_n\right\}$.
+仿第 2 节例 6 , 知集合 $A_1^{\prime}, A_2^{\prime}, \cdots, A_{m-k}^{\prime}$ 的组数为 $\left(2^{m-k}-1\right)^n$.
+即有: 在 $A_1, A_2, \cdots, A_m$ 中至少有 $k$ 个空集时, $A_1, A_2, \cdots, A_m$ 的组数是 $\mathrm{C}_m^k\left(2^{m-k}-1\right)^n$. 记
+$$
+\mathrm{C}_m^k\left(2^{m-k}-1\right)^n=h(m, n, k) .
+$$
+若 $A_1, A_2, \cdots, A_m$ 均为非空集合, 且
+$$
+A_1 \cup A_2 \cup \cdots \cup A_m=\left\{a_1, a_2, \cdots, a_n\right\},
+$$
+则由容斥原理知集合 $A_1, A_2, \cdots, A_m$ 的组数是
+$$
+\left(2^m-1\right)^n+\sum_{k=1}^{m-1}(-1)^k h(m, n, k) .
+$$
+也就是 $g(m, n)=\left(2^m-1\right)^n+\sum_{k=1}^{m-1}(-1)^k \mathrm{C}_m^k\left(2^{m-k}-1\right)^n$
+$$
+=\sum_{k=0}^{m-1}(-1)^k \mathrm{C}_m^k\left(2^{m-k}-1\right)^n .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 将与 105 互质的所有正整数从小到大排成数列, 求这个数列的第 1000 项.
+%%<SOLUTION>%%
+分析:先看在区间 $(0,105]$ 中有多少个整数与 105 互质.
+因为 $105=3 \times 5 \times 7$, 所以只要在数列 $1,2, \cdots, 105$ 中去掉所有 3 或 5 或 7 的倍数即可.
+然后再逐段考察区间 $(105 \cdot(k-1), 105 k]$ 中与 105 互质的整数.
+解设 $S=\{1,2, \cdots, 105\}, A_3=\{a \mid a \in S$, 且 $3 \mid a\}, A_5=\{a \mid a \in S$, 且 $5 \mid a\}, A_7=\{a \mid a \in S$, 且 $7 \mid a\}$, 则
+$$
+\begin{aligned}
+& \left|A_3\right|=\frac{105}{3}=35,\left|A_5\right|=\frac{105}{5}=21,\left|A_7\right|=\frac{105}{7}=15, \\
+& \left|A_3 \cap A_5\right|=\frac{105}{3 \times 5}=7,\left|A_5 \cap A_7\right|=\frac{105}{5 \times 7}=3, \\
+& \left|A_7 \cap A_3\right|=\frac{105}{7 \times 3}=5, \\
+& \left|A_3 \cap A_5 \cap A_7\right|=\frac{105}{3 \times 5 \times 7}=1,|S|=105 .
+\end{aligned}
+$$
+在 1 到 105 中,与 105 互质的数有
+$$
+\begin{aligned}
+& \left|\complement_S A_3 \cap \complement_S A_5 \cap \complement_S A_7\right| \\
+= & |S|-\left|A_3 \cup A_5 \cup A_7\right| \\
+= & |S|-\left(\left|A_3\right|+\left|A_5\right|+\left|A_7\right|\right) \\
+& +\left(\left|A_3 \cap A_5\right|+\left|A_5 \cap A_7\right|\right. \\
+& \left.+\left|A_7 \cap A_3\right|\right)-\left|A_3 \cap A_5 \cap A_7\right| \\
+= & 105-(35+21+15)+(7+3+5)-1 \\
+= & 48 .
+\end{aligned}
+$$
+设与 105 互质的正整数按从小到大的顺序排列为 $a_1, a_2, \cdots, a_n, \cdots$, 则
+$$
+\begin{gathered}
+a_1=1, a_2=2, a_3=4, \cdots, a_{48}=104, \\
+a_{49}=105+1, a_{50}=105+2, \\
+a_{51}=105+4, \cdots, a_{96}=105+104, \cdots
+\end{gathered}
+$$
+因为 $1000=48 \times 20+40$, 所以
+$$
+a_{1000}=105 \times 20+a_{40} .
+$$
+由于 $a_{48}=104, a_{47}=103, a_{46}=101, a_{45}=97, a_{44}=94, a_{43}=92$, $a_{42}=89, a_{41}=88, a_{40}=86$, 所以
+$$
+a_{1000}=105 \times 20+86=2186 .
+$$
+筛法公式在数论中的一个典型应用, 就是推导欧拉函数的解析式.
+我们把不超过正整数 $n$ 且与 $n$ 互质的正整数的数目记为 $\varphi(n)$, 称为欧拉函数.
+例如, $\varphi(2)=1, \varphi(3)=2, \varphi(6)=2, \varphi(8)=4$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设 $p_i(i=1,2, \cdots, m)$ 为正整数 $n$ 的全部质因数.
+求证:
+$$
+\varphi(n)=n \prod_{i=1}^m\left(1-\frac{1}{p_i}\right) .
+$$
+%%<SOLUTION>%%
+证明:记 $S=\{1,2, \cdots, n\}$, 并设
+$$
+A_i=\left\{a\left|a \in S, p_i\right| a\right\}, i=1,2, \cdots, m .
+$$
+则 $\varphi(n)=\left|\bigcap_{i=1}^m \complement_S A_i\right|$. 注意到
+$$
+\begin{aligned}
+& \left|A_i\right|=\left[\frac{n}{p_i}\right],\left|A_i \cap A_j\right|=\left[\frac{n}{p_i p_j}\right], \cdots, \\
+& \left|A_1 \cap A_2 \cap \cdots \cap A_m\right|=\left[\frac{n}{p_1 p_2 \cdots p_m}\right],
+\end{aligned}
+$$
+而 $p_i$ 为 $n$ 的不同的质因数, 上面各式中 [] 都可去掉, 由筛法公式得
+$$
+\begin{aligned}
+\varphi(n) & =|S|-\sum_{i=1}^m\left[\frac{n}{p_i}\right]+\sum_{1 \leqslant i<j \leqslant m}\left[\frac{n}{p_i p_j}\right]-\cdots+(-1)^m\left[\frac{n}{p_1 p_2 \cdots p_m}\right] \\
+& =n\left[1-\sum_{i=1}^m \frac{1}{p_i}+\sum_{1 \leqslant i<j \leqslant m} \frac{1}{p_i p_j}-\cdots+(-1)^m \frac{1}{p_1 p_2 \cdots p_m}\right] \\
+& =n \prod_{i=1}^m\left(1-\frac{1}{p_i}\right) .
+\end{aligned}
+$$
+容厉原理是一个非常有用的计数方法, 但我们在这里只介绍了它在解决集合和整数问题中的简单应用, 因为对那些经典的组合问题的介绍不是本书的任务.
+最后我们来看一道离本书的出版日期最近的试题, 其容斥原理的运用并不是解答的全部, 但却是解题的关键一步, 因为我们的结论就是由容斥原理导出的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 对于整数 $n \geqslant 4$, 求出最小的整数 $f(n)$, 使得对于任何正整数 $m$, 集合 $\{m, m+1, \cdots, m+n-1\}$ 的任一个 $f(n)$ 元子集中, 均有至少 3 个两两互素的元素.
+%%<SOLUTION>%%
+解:当 $n \geqslant 4$ 时, 记 $M=\{m, m+1, m+2, \cdots, m+n-1\}$.
+易知, 若 $2 \mid m$, 则 $m+1, m+2, m+3$ 两两互素; 若 $2 \times m$, 则 $m, m+1$, $m+2$ 两两互素.
+于是, $M$ 的所有 $n$ 元子集中, 均有至少 3 个两两互素的元素, 因此 $f(n)$ 存在, 且 $f(n) \leqslant n$.
+设 $T_n=\{t \mid t \leqslant n+1$ 且 $2 \mid t$ 或 $3 \mid t\}$, 则 $T_n$ 为 $\{2,3, \cdots, n+1\}$ 的子集, 但 $T_n$ 中任 3 个元素均不能两两互素, 因此 $f(n) \geqslant\left|T_n\right|+1$.
+由容斥原理知
+$$
+\left|T_n\right|=\left[\frac{n+1}{2}\right]+\left[\frac{n+1}{3}\right]-\left[\frac{n+1}{6}\right],
+$$
+从而必有
+$$
+f(n) \geqslant\left[\frac{n+1}{2}\right]+\left[\frac{n+1}{3}\right]-\left[\frac{n+1}{6}\right]+1 .
+$$
+因此, $f(4) \geqslant 4, f(5) \geqslant 5, f(6) \geqslant 5, f(7) \geqslant 6, f(8) \geqslant 7, f(9) \geqslant 8$.
+以下证明 $f(6)=5$.
+设 $x_1, x_2, x_3, x_4, x_5$ 为 $\{m, m+1, \cdots, m+5\}$ 中的 5 个数.
+若这 5 个数中有 3 个奇数,则它们两两互素; 若这 5 个数中有 2 个奇数, 则必有 3 个偶数,
+不妨设 $x_1 、 x_2 、 x_3$ 为偶数, $x_4 、 x_5$ 为奇数, 当 $1 \leqslant i<j \leqslant 3$ 时, $\left|x_i-x_j\right| \in \{2,4\}$, 所以 $x_1 、 x_2 、 x_3$ 中至多一个被 3 整除, 至多一个被 5 整除, 从而至少有一个既不被 3 整除也不被 5 整除, 不妨设 $3 \nmid x_3, 5 \nmid x_3$, 则 $x_3 、 x_4 、 x_5$ 两两互素.
+这就是说这 5 个数中有 3 个两两互素, 即 $f(6)=5$.
+又由 $\{m, m+1, \cdots, m+n\}=\{m, m+1, \cdots, m+n-1\} \cup\{m+n\}$, 知 $f(n+1) \leqslant f(n)+1$.
+因为 $f(6)=5$, 所以 $f(4)=4, f(5)=5, f(7)=6, f(8)= 7, f(9)=8$.
+因此, 当 $4 \leqslant n \leqslant 9$ 时,
+$$
+f(n)=\left[\frac{n+1}{2}\right]+\left[\frac{n+1}{3}\right]-\left[\frac{n+1}{6}\right]+1 .
+$$
+以下对 $n$ 用归纳法, 证明(2)对所有 $n$ 都成立:
+假设 $n \leqslant k(k \geqslant 9)$ 时(2)式成立.
+当 $n=k+1$ 时, 显然
+$$
+\begin{gathered}
+\{m, m+1, \cdots, m+k\}=\{m, m+1, \cdots, m+k-6\} \cup\{m+k-5, m+k-5+1, m+k-5+2, m+k-5+3, m+k-5+4, m+k-5+5\} .
+\end{gathered}
+$$
+而由归纳假设知 $n=6, n=k-5$ 时(2)式成立.
+所以
+$$
+\begin{aligned}
+f(k+1) & \leqslant f(k-5)+f(6)-1 \\
+& =\left[\frac{k+2}{2}\right]+\left[\frac{k+2}{3}\right]-\left[\frac{k+2}{6}\right]+1 .
+\end{aligned}
+$$
+由(1)、(3)式知,对于 $n=k+1$, (2)式成立.
+所以对于任意 $n \geqslant 4$,
+$$
+f(n)=\left[\frac{n+1}{2}\right]+\left[\frac{n+1}{3}\right]-\left[\frac{n+1}{6}\right]+1 .
+$$
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例2 设 $A=\\left\\{a_1, a_2, a_3\\right\\}, B=\\{-1,0,1\\}$.\n(1) 问从 $A$ 到 $B$ 的不同的映射有多少个?\n(2) 从 $A$ 到 $B$ 的映射满足 $f\\left(a_1\\right)>f\\left(a_2\\right) \\geqslant f\\left(a_3\\right)$, 确定这样的映射 $f$ : $A \\rightarrow B$ 的个数.",
+    "solution": "解:(1) 确定 $a_1$ 的象,有 3 种方法; 确定 $a_2$ 的象, 也有 3 种方法; 确定 $a_3$ 的象,还是有 3 种方法.\n所以, 从 $A$ 到 $B$ 不同的映射共有\n$$\n3 \\times 3 \\times 3=27 \\text { (个). }\n$$\n(2) 由 $f\\left(a_1\\right)>f\\left(a_2\\right) \\geqslant f\\left(a_3\\right)$ 知, $f\\left(a_1\\right)=0 或 1$.\n若 $f\\left(a_1\\right)=0$, 则 $f\\left(a_2\\right)=f\\left(a_3\\right)=-1$.\n若 $f\\left(a_1\\right)=1$, 则 $f\\left(a_2\\right)=f\\left(a_3\\right)=0$, 或 $f\\left(a_2\\right)=f\\left(a_3\\right)=-1$, 或 $f\\left(a_2\\right)=0$, $f\\left(a_3\\right)=-1$.\n综上,共有 4 种满足题意的映射.",
+    "remark": "",
+    "figures": []
+}

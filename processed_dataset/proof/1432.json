@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题13. 设实数 $a_1, a_2, \\cdots, a_n(n \\geqslant 2)$ 和 $A$ 满足: $A+\\sum_{i=1}^n a_i^2<\\frac{1}{n-1}\\left(\\sum_{i=1}^n a_i\\right)^2$. 求证: 对于 $1 \\leqslant i<j \\leqslant n$, 有 $A<2 a_i a_j$.",
+    "solution": "用反证法, 设有 $1 \\leqslant i<j \\leqslant n$ 使得 $A \\geqslant 2 a_i a_j$.\n不妨设 $i=1, j=2$, 于是有\n$$\nA+\\sum_{i=1}^n a_i^2 \\geqslant 2 a_1 a_2+\\sum_{i=1}^n a_i^2=\\left(a_1+a_2\\right)^2+a_3^2+\\cdots+a_n^2,\n$$\n由 Cauchy 不等式, $\\left(a_1+a_2\\right)^2+a_3^2+\\cdots+a_n^2 \\geqslant \\frac{1}{n-1} \\cdot\\left(a_1+a_2+\\cdots+a_n\\right)^2$.\n从而有 $A+\\sum_{i=1}^n a_i^2 \\geqslant \\frac{1}{n-1}\\left(\\sum_{i=1}^n a_i\\right)^2$,矛盾!\n故对一切 $1 \\leqslant i<j \\leqslant n$, 有 $A<2 a_i a_j$.",
+    "remark": "",
+    "figures": []
+}

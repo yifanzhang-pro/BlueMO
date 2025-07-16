@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 是否存在无穷多组不同的正整数 $a, b$ 使 $a^2+b^2+1$ 被 $a b$ 整除?",
+    "solution": "类似于例 7 可以先用数学归纳法证明下列命题: 设 $a_1=1, a_2=2$, $a_{n+2}=3 a_{n+1}-a_n\\left(n \\in \\mathbf{N}_{+}\\right)$, 则 $3 a_n a_{n+1}=a_n^2+a_{n+1}^2+1\\left(n \\in \\mathbf{N}_{+}\\right)$(证明留给读者自己完成)然后令 $a=a_n, b=a_{n+1}\\left(n \\in \\mathbf{N}_{+}\\right)$便知存在无穷多对不同的正整数 $a, b$ 满足 $a^2+b^2+1$ 被 $a b$ 整除.",
+    "remark": "",
+    "figures": []
+}

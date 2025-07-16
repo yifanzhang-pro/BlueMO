@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题2 设 $k>1$ 为自然数, 试证不能在 $k \\times k$ 的方格表中填人数 $1,2, \\cdots, k^2$, 使得每行和每列数之和都是 2 的方幕.",
+    "solution": "若不然, 设将 $1,2, \\cdots, k^2$ 填人表格后最小的行和是 $2^a$, 则有 $2^a \\geqslant 1+2+\\cdots+k=\\frac{1}{2} k(k+1)$. 因为表中所有数之和为 $1+2+\\cdots+k^2= \\frac{1}{2} k^2\\left(k^2+1\\right)$, 故应有 $2^a \\mid \\frac{1}{2} k^2\\left(k^2+1\\right)$. 当 $k$ 为奇数时, $\\frac{1}{2} k^2\\left(k^2+1\\right)$ 亦为奇数, 当然不能被 $2^a$ 整除; 当 $k$ 为偶数时, $k^2+1$ 为奇数, 于是应有 $2^a \\mid \\frac{1}{2} k^2$. 但这时又有 $\\frac{1}{2} k^2<\\frac{1}{2} k(k+1) \\leqslant 2^a$, 矛盾.",
+    "remark": "",
+    "figures": []
+}

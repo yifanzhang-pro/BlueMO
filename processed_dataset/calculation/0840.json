@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题21. 设 $n$ 为给定的自然数, $n \\geqslant 3$, 对于 $n$ 个给定的实数 $a_1, a_2, \\cdots, a_n$, 记\n$\\left|a_i-a_j\\right|(1 \\leqslant i<j \\leqslant n)$ 的最小值为 $m$, 求在\n$$\na_1^2+\\cdots+a_n^2=1\n$$\n时, $m$ 的最大值.",
+    "solution": "不妨设 $a_1 \\geqslant a_2 \\geqslant \\cdots \\geqslant a_n$, 则 $a_i-a_j \\geqslant(i-j) m$. $\\sum_{1 \\leqslant i<j \\leqslant n}\\left(a_i-a_j\\right)^2= (n-1) \\sum_{i=1}^n a_i^2-2 \\sum_{1 \\leqslant i<j \\leqslant n} a_i a_j=(n-1) \\sum_{i=1}^n a_i^2-\\left[\\left(\\sum_{i=1}^n a_i\\right)^2-\\sum_{i=1}^n a_i^2\\right] \\leqslant n \\sum_{i=1}^n a_i^2=$ n. 另一方面, $\\sum_{1 \\leqslant i<j \\leqslant n}\\left(a_i-a_j\\right)^2 \\geqslant m^2 \\sum_{1 \\leqslant i<j \\leqslant n}(i-j)^2=m^2 \\sum_{k=1}^{n-1}(n-k) \\cdot k^2= \\frac{m^2 n^2\\left(n^2-1\\right)}{12}$. 所以 $n \\geqslant \\frac{m^2 n^2\\left(n^2-1\\right)}{12}$, 即 $m \\leqslant \\sqrt{\\frac{12}{n\\left(n^2-1\\right)}}$. 且当 $\\left|a_i\\right|$ 成等差数列, $\\sum_{i=1}^n a_i=0$ 时等号成立.\n故 $m$ 的最大值为 $\\sqrt{\\frac{12}{n\\left(n^2-1\\right)}}$.",
+    "remark": "",
+    "figures": []
+}

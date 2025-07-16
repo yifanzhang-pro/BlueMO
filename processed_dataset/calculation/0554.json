@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例31 求所有的函数 $f:(0,+\\infty) \\rightarrow(0,+\\infty)$, 满足对所有的正实数 $w 、 x 、 y 、 z, w x=y z$, 都有\n$$\n\\frac{(f(w))^2+(f(x))^2}{f\\left(y^2\\right)+f\\left(z^2\\right)}=\\frac{w^2+x^2}{y^2+z^2} .\n$$",
+    "solution": "解:令 $w=x=y=z=1$, 得 $(f(1))^2=f(1)$, 所以 $f(1)=1$.\n对任意 $t>0$, 令 $w=t, x=1, y=z=\\sqrt{t}$, 得 $\\frac{(f(t))^2+1}{2 f(t)}=\\frac{t^2+1}{2 t}$, 去分母整理得 $(t f(t)-1)(f(t)-t)=0$, 所以, 对每个 $t>0$,\n$$\nf(t)=t \\text {, 或者 } f(t)=\\frac{1}{t} . \\quad\\quad \\circledast\n$$\n若存在 $b, c \\in(0,+\\infty)$, 使得 $f(b) \\neq b, f(c) \\neq \\frac{1}{c}$, 则由 $\\circledast$ 式知, $b 、 c$ 都不等于 1 , 且 $f(b)=\\frac{1}{b}, f(c)=c$. 令 $w=b, x=c, y=z=\\sqrt{b c}$, 则所以\n$$\n\\begin{aligned}\n& \\frac{\\frac{1}{b^2}+c^2}{2 f(b c)}=\\frac{b^2+c^2}{2 b c} \\\\\n& f(b c)=\\frac{c+b^2 c^3}{b\\left(b^2+c^2\\right)} .\n\\end{aligned}\n$$\n因为 $f(b c)=b c$, 或者 $f(b c)=\\frac{1}{b c}$. 若 $f(b c)=b c$, 则\n$$\nb c=\\frac{c+b^2 c^3}{b\\left(b^2+c^2\\right)}\n$$\n得 $b^4 c=c, b=1$, 矛盾! 若 $f(b c)=\\frac{1}{b c}$, 则\n$$\n\\frac{1}{b c}=\\frac{c+b^2 c^3}{b\\left(b^2+c^2\\right)}\n$$\n得 $b^2 c^4=b^2, c=1$, 矛盾!\n所以, 或者 $f(x)=x, x \\in(0,+\\infty)$, 或者 $f(x)=\\frac{1}{x}, x \\in(0,+\\infty)$.\n经检验, $f(x)==x, x \\in(0,+\\infty)$ 和 $f(x)=\\frac{1}{x}, x \\in(0,+\\infty)$ 都满足要求.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 有 $n$ 个车站组成的公路网, 每个站至少有 6 条公路引出, 求证必有两条公路在平面上相交.",
+    "solution": "设 $G$ 是连通的, 否则考虑它的每一个连通分支.\n若每个顶点的度 $\\geqslant$ 6 , 则 $6 v \\leqslant 2 e$, 即 $v \\leqslant \\frac{e}{3}$. 又因为 $f \\leqslant \\frac{2 e}{3}$, 故 $2==v-e+f \\leqslant \\frac{e}{3}-e+\\frac{2 e}{3}=$ 0 , 矛盾.",
+    "remark": "",
+    "figures": []
+}

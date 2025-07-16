@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设整数 $a 、 b 、 c 、 d$ 满足 $a d-b c>1$, 证明: $a 、 b 、 c 、 d$ 中至少有一个数不被 $a d-b c$ 整除.",
+    "solution": "若 $a 、 b 、 c 、 d$ 都被 $a d-b c$ 整除, 则 $(a d-b c)^2$ 整除 $a d$ 及 $b c$, 故整除 $a d-b c$, 由此得知 $|a d-b c|=1$, 这与已知 $a d-b c>1$ 矛盾.",
+    "remark": "",
+    "figures": []
+}

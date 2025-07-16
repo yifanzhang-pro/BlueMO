@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter11.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设四面体 $A B C D$ 的内切球半径为 $r$,一组对棱 $A B=a, C D=b$, 求证:\n$$\nr<\\frac{a b}{2(a+b)}\n$$",
+    "solution": "证明:设四面体的体积为 $V$, 表面积为 $S$, 则熟知\n$$\nr=\\frac{3 V}{S}, \\label{eq1}\n$$\n又由熟知的 Steiner 定理\n$$\nV=\\frac{1}{6} a b d \\sin \\theta, \\label{eq2}\n$$\n其中 $d$ 为对棱 $A B$ 与 $C D$ 之间的距离, $\\theta$ 为它们所成的角.\n由式\\ref{eq1}、\\ref{eq2}有\n$$\nr \\leqslant \\frac{1}{2} \\frac{a b d}{S} . \\label{eq3}\n$$\n另一方面,如图(<FilePath:./images/volume9/figures/fig-c11i2.png>), 由四面体的棱 $A B$ 之端点到棱 $C D$ 的距离均不小于 $d$, 且其中必有一个大于 $d$, 这样一来\n$$\nS_{\\triangle A D C}+S_{\\triangle B D C}>b d\n$$\n同理\n$$\nS_{\\triangle D A B}+S_{\\triangle C A B}>a d\n$$\n相加即得\n$$\nS>(a+b) d\n$$\n由式\\ref{eq3}、\\ref{eq4}可得\n$$\nr<\\frac{a b d}{2(a+b) d}=\\frac{a b}{2(a+b)} .\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c11i2.png"
+    ]
+}

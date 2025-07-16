@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题2. $M 、 N 、 P$ 分别是 $\\triangle A B C$ 的三边 $B C 、 C A 、 A B$ 的中点, $M_1 、 N_1 、 P_1$ 在 $\\triangle A B C$ 的边上, 且满足 $M M_1 、 N N_1 、 P P_1$ 分别平分 $\\triangle A B C$ 的周长.\n证明: $M M_1 、 N N_1 、 P P_1$ 交于同一点 $K$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c2a2.png>),不妨设 $B C=a, A B=c$, $A C=b$, 且 $a \\geqslant c \\geqslant b$. 由 $M 、 N 、 P$ 为 $\\triangle A B C$ 三边中点, 有 $\\frac{P M_2}{P N}=\\frac{P M_2}{B M}=\\frac{P M_1}{B M_1}=\\frac{\\frac{b+c}{2}-\\frac{c}{2}}{\\frac{b+c}{2}}= \\frac{b}{b+c}$, 故 $\\frac{P M_2}{M_2 N}=\\frac{b}{c}$. 同理, $\\frac{N P_2}{P_2 M}=\\frac{a}{b}, \\frac{M N_2}{N_2 P}=\\frac{c}{a}$.\n所以, $\\frac{P M_2}{M_2 N} \\cdot \\frac{N P_2}{P_2} \\cdot \\frac{M N_2}{N_2 P}=1$, 因此, $M M_1 、 N N_1$ 、 $P P_1$ 交于同一点 $K$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2a2.png"
+    ]
+}

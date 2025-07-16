@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter2.tex",
+    "problem_type": "calculation",
+    "problem": "例7. 已知集合 $A 、 B 、 C$ (不必相异)的并集\n$$\nA \\cup B \\cup C=\\{1,2, \\cdots, 2005\\},\n$$\n求满足条件的有序三元组 $(A, B, C)$ 的个数.",
+    "solution": "解: 由图(<FilePath:./images/volume1/figures/fig-c2e7.png>)可知,表示集合 $A 、 B 、 C$ 的 3 个圆交出了 7 个区域.\n这表明,在求 $A \\cup B \\cup C$ 时, 1 , $2, \\cdots, 2005$ 中每一个数都有 7 种选择.\n所以,所求的有序三元组的个数为 $7^{2005}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume1/figures/fig-c2e7.png"
+    ]
+}

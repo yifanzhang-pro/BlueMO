@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise16.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 由 $m$ 行、 $n$ 列非负实数组成的数阵满足每行、每列至少有一项是正数, 且如果有一行与一列的交是一个正数, 则这行的元素和与这列的元素和相等.\n证明: $m=n$.",
+    "solution": "对 $1 \\leqslant i \\leqslant m, 1 \\leqslant j \\leqslant n$, 设第 $i$ 行第 $j$ 列的数为 $a_{i j}$, 第 $i$ 行的元素和为 $r_i$, 第 $j$ 列的元素和为 $c_j$. 已知条件即为: $r_i, c_j>0$, 且当 $a_{i j}>0$ 时, $r_i=c_j$.\n对 $1 \\leqslant i \\leqslant m, 1 \\leqslant j \\leqslant n$, 无论 $a_{i j}>0$ 还是 $a_{i j}=0$, 总有 $\\frac{a_{i j}}{r_i}=\\frac{a_{i j}}{c_j}$.\n用两种方法计算 $S=\\sum_{i=1}^m \\sum_{j=1}^n \\frac{a_{i j}}{r_i}$.\n一方面,有\n$$\nS=\\sum_{i=1}^m \\frac{1}{r_i} \\cdot \\sum_{j=1}^n a_{i j}=\\sum_{i=1}^m \\frac{1}{r_i} \\cdot r_i=m ;\n$$\n另一方面,有\n$$\nS=\\sum_{j=1}^n \\sum_{i=1}^m \\frac{a_{i j}}{c_j}=\\sum_{j=1}^n \\frac{1}{c_j} \\cdot \\sum_{i=1}^m a_{i j}=\\sum_{j=1}^n \\frac{1}{c_j} \\cdot c_j=n .\n$$\n所以 $m=n$.",
+    "remark": "",
+    "figures": []
+}

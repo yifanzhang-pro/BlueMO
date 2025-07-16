@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题4 求函数 $f(x)=\\frac{\\sqrt{x^4+x^2+1}-\\sqrt{x^4+1}}{x}$ 的最大值.",
+    "solution": "显然当 $x<0$ 时, $f(x)<0$; 当 $x>0$ 时, $f(x)>0$, 因此其最大值应在 $x>0$ 时取得.\n当 $x>0$ 时, 由于 $\\frac{\\sqrt{x^4+x^2+1}-\\sqrt{x^4+1}}{x}= \\sqrt{x^2+\\frac{1}{x^2}+1}-\\sqrt{x^2+\\frac{1}{x^2}}=\\frac{1}{\\sqrt{x^2+\\frac{1}{x^2}+1}+\\sqrt{x^2+\\frac{1}{x^2}}}$, 又因为函数 $y=x+\\frac{1}{x}$ 的值域为 $(-\\infty,-2] \\cup[2,+\\infty)$, 且 $x^2>0(x \\neq 0)$, 所以 $f(x)=\\frac{\\sqrt{x^4+x^2+1}-\\sqrt{x^4+1}}{x} \\leqslant \\frac{1}{\\sqrt{3}+\\sqrt{2}}=\\sqrt{3}-\\sqrt{2}$. 并且可以看出, 当 $x=1$ 时, $f_{\\text {max }}(x)=\\sqrt{3}-\\sqrt{2}$.",
+    "remark": "",
+    "figures": []
+}

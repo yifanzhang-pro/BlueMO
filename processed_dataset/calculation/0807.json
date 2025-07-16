@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题18. 某大型装载车的车轮直径为 3 米, 车轮外沿有一污点 $A$, 当装载车以 $\\pi$ 米/秒从最初的位置开始运行时, 点 $A$ 上升到最高点需要 1 秒钟.\n(1) 求点 $A$ 离地高度 $h$ (单位: 米) 与运行时间 $t$ (单位: 秒) 的函数关系式; (2) 若此车运行距离为 50 米, 试求污点距地面高度为 $\\frac{3}{4}$ 米时的 $t$ 之值.",
+    "solution": "(1) 不难发现, 点 $A$ 运动的路程就是装载车运行的路程, 点 $A$ 运动一周,装载车行距离为 $3 \\pi$ 米, 由于装载车运行速度为 $\\pi$ 米/秒,故车轮运行一周需要 3 秒钟.\n点 $A$ 上升到最高点需要 1 秒钟, 表明车轮转动 $\\frac{1}{3}$ 个圆周, 即 $A$ 运行一秒钟, 转过圆心角 $\\frac{2}{3} \\pi$. 不妨设点 $A$ 沿逆时针方向转动, 根据物理中相对运动原理, 如图(<FilePath:./images/volume3/figures/fig-c6p18.png>)所示, 我们可以把装载车的向左运动看作是车轮中心 $O$ 静止, 道路带着车轮向右运动, 这样点 $A$ 就绕固定点 $O$ 作圆周运动, 设射线 $O X$ 方向向右, 根据三角函数中角的定义及三角函数的定义, 可得 $\\sin \\left(\\frac{2 \\pi}{3} t-\\frac{\\pi}{6}\\right)=\\frac{h-\\frac{3}{2}}{\\frac{3}{2}}$, 即 $h=\\frac{3}{2} \\sin \\left(\\frac{2 \\pi}{3} t-\\frac{\\pi}{6}\\right)+\\frac{3}{2}$.\n(2) 由 $\\frac{3}{4}=\\frac{3}{2}+\\frac{3}{2} \\sin \\left(\\frac{2 \\pi}{3} t-\\frac{\\pi}{6}\\right)$, 得 $\\sin \\left(\\frac{2 \\pi}{3} t-\\frac{\\pi}{6}\\right)=-\\frac{1}{2}, \\frac{2 \\pi}{3} t-\\frac{\\pi}{6}=2 k \\pi- \\frac{\\pi}{6}$ 或 $2 k \\pi+\\frac{7}{6} \\pi$, 得 $t=3 k$ 或 $t=3 k+2$, 又因为 $0 \\leqslant t \\leqslant \\frac{50}{\\pi} \\approx 15.9$, 所以 $t=0$ 、 $2 、 3 、 5 、 6 、 8 、 9 、 11 、 12 、 14 、 15($ 秒).",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c6p18.png"
+    ]
+}

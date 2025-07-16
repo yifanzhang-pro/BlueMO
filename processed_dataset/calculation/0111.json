@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题6 在 $1,2, \\cdots, 1000$ 中, 有多少个正整数既不是 2 的倍数, 又不是 5 的倍数?",
+    "solution": "设 $S=\\{1,2, \\cdots, 1000\\}, A_2=\\{a|a \\in S, 2| a\\}, A_5=\\{a \\mid a \\in S, 5 \\mid a\\}$. 于是 $\\left|\\left(\\complement_S A_2\\right) \\cap\\left(\\complement_S A_5\\right)\\right|=S-\\left(\\left|A_2\\right|+\\left|A_5\\right|\\right)+\\left|A_2 \\cap A_5\\right|= 1000-(500+200)+100=400$.",
+    "remark": "",
+    "figures": []
+}

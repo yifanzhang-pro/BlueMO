@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise12.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设 $n$ 为大于 2 的正整数,证明:在 $1,2, \\cdots, n$ 中,与 $n$ 互素的数的立方和能被 $n$ 整除.",
+    "solution": "设 $a<n$, 且 $(a, n)=1$, 则 $n-a<n$, 且 $(n-a, n)=1$. 而且都有 $a= n-a$, 将导出 $a=\\frac{n}{2}$, 仅在 $n$ 为偶数时发生, 而这时 $a$ 与 $n$ 不互素.\n所以 $a$ 与 $n-a$ 可以两两配对, 而\n$$\na^3+(n-a)^3=n\\left[a^2-a(n-a)+(n-a)^2\\right]\n$$\n是 $n$ 的倍数, 从而命题得证.",
+    "remark": "",
+    "figures": []
+}

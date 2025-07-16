@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 在 $\\triangle A B C$ 中, 经过点 $B 、 C$ 的圆与边 $A C 、 A B$ 的另一个交点分别为 $E 、 F, B E$ 与 $C F$ 交于点 $P, A P$ 与 $B C$ 交于点 $D 、 M$ 是边 $B C$ 的中点, $D 、 M$ 不重和.\n求证: $D 、 M 、 E 、 F$ 四点共圆.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c8a7.png>), 设直线 $B C$ 与 $E F$ 交于点 $Q$, 由性质 2 知, $Q 、 D 、 B 、 C$ 成调和点列, 又 $M$ 为 $B C$ 中点, 于是, 不难证明 $Q D \\cdot Q M=Q B \\cdot Q C$, 因此, $Q E \\cdot Q F=Q B \\cdot Q C=Q D \\cdot Q M$, 即 $E 、 M$ 、 $D 、 F$ 四点共圆.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8a7.png"
+    ]
+}

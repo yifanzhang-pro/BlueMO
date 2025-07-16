@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-7.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $m 、 n \\in \\mathbf{N}^*$, 且 $m n$ 是一个三角形数 (即存在 $t \\in \\mathbf{N}^*$, 使得 $m n= 1+2+\\cdots+t)$. 证明: 存在正整数 $k$, 使得由下面的递推关系确定的数列 $\\left\\{a_n\\right\\}$ :\n$$\na_1=m, a_2=n, a_j=6 a_{j-1}-a_{j-2}+k, j=3,4, \\cdots\n$$\n满足 : 对任意下标 $j$,数 $a_j a_{j+1}$ 都是三角形数.",
+    "solution": "证明:注意到,\n$x$ 为三角形数 $\\Leftrightarrow$ 存在 $t \\in \\mathbf{N}^*$, 使得 $x=1+2+\\cdots+t\\Leftrightarrow$ 存在 $t \\in \\mathbf{N}^*$, 使得 $x=\\frac{t(t+1)}{2}\\Leftrightarrow$ 存在 $t \\in \\mathbf{N}^*$, 使得 $8 x+1=(2 t+1)^2$.\n因此,我们只需证明: 存在 $k \\in \\mathbf{N}^*$, 使得对任意 $j \\in \\mathbf{N}^*$, 数 $8 a_j a_{j+1}+1$ 都是完全平方数.\n从完全平方式出发, 看看是否存在 $k \\in \\mathbf{N}^*$, 使得对任意 $j \\in \\mathbf{N}^*$, 都有 $8 a_j a_{j+1}+1=\\left(a_j+a_{j+1}+l\\right)^2$, 这里 $l$ 是只与 $k$ 相关的常数.\n猜想中取 $j=1$, 可知 $l=\\sqrt{8 m n+1}-m-n$ (注意 $m n$ 为三角形数, 故 $\\sqrt{8 m m+1} \\in \\mathbf{N}^*$).\n进一步, 如果对任意 $j \\in \\mathbf{N}^*$, 都有\n$$\n8 a_j a_{j+1}+1=\\left(a_j+a_{j+1}+l\\right)^2, \\label{eq1}\n$$\n那么在式\\ref{eq1}中用 $j+1$ 代替 $j$, 应有\n$$\n8 a_{j+1} a_{j+2}+1=\\left(a_{j+1}+a_{j+2}+l\\right)^2 . \\label{eq2}\n$$\n两式相减, 得\n$$\n\\begin{aligned}\n& 8\\left(a_{j+2}-a_j\\right) a_{j+1}=\\left(a_{j+2}-a_j\\right)\\left(a_{j+2}+2 a_{j+1}+a_j+2 l\\right) \\\\\n\\Leftrightarrow & 8 a_{j+1}=a_{j+2}+2 a_{j+1}+a_j+2 l \\\\\n\\Leftrightarrow & a_{j+2}=6 a_{j+1}-a_j-2 l,\n\\end{aligned} \\label{eq3}\n$$\n并且由式\\ref{eq1}、\\ref{eq3}可推出式\\ref{eq2}成立.\n利用上述分析, 如果令 $k=-2 l=2(m+n)-2 \\sqrt{8 m m+1}$, 那么由题给递推式定义的数列 $\\left\\{a_n\\right\\}$ 符合要求 (这一点利用数学归纳法可证).\n综上可知, 命题成立.\n说明这里采用的是先猜后证的思想, 这不是数列问题中独有的, 而是整个数学学习中都有的, 它是一种数学灵感的体现.",
+    "remark": "",
+    "figures": []
+}

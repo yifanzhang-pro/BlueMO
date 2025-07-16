@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 将 2007 个整数放在一个圆周上, 使得任意相邻的 5 个数中有三个的和等于另两个数的和的 2 倍.\n证明: 这 2007 个数都是 0.",
+    "solution": "假设存在不全为 0 的 2007 个整数满足条件,不妨取出其中一组, 它们按逆时针顺序依次为 $x_1, x_2, \\cdots, x_{2007}$, 且使 $\\left|x_1\\right|+\\left|x_2\\right|+\\cdots+\\left|x_{2007}\\right|$ 达到最小可能正值 (正整数集合中必存在最小数).\n根据条件可得: 圆周上任意相邻 5 个数之和是其中两个数之和的 3 倍, 因此对 $i=1,2, \\cdots, 2007$, 都有\n$$\nx_i+x_{i+1}+x_{i+2}+x_{i+3}+x_{i+4} \\equiv 0(\\bmod 3),\n$$\n从而可知 $x_i \\equiv x_{i+5}(\\bmod 3)$ (约定当 $j \\equiv k(\\bmod 2007)$ 时, 有 $\\left.x_j=x_k\\right)$. 又 5 和 2007 互素, 故对一切 $i=1,2, \\cdots, 2007$, 有 $x_i \\equiv x_1(\\bmod 3)$. 此时由于\n$$\nx_i+x_{i+1}+x_{i+2}+x_{i+3}+x_{i+4} \\equiv 5 x_1 \\equiv 0(\\bmod 3),\n$$\n故 $x_1 \\equiv 0(\\bmod 3)$, 因而 $x_1, x_2, \\cdots, x_{2007}$ 都是 3 的倍数.\n设 $y_i \\equiv \\frac{x_i}{3}, i=1,2, \\cdots, 2007$, 则 $y_1, y_2, \\cdots, y_{2007}$ 也是一组满足条件的整数, 但 $\\left|y_1\\right|+\\left|y_2\\right|+\\cdots+\\left|y_{2007}\\right|<\\left|x_1\\right|+\\left|x_2\\right|+\\cdots+\\left|x_{2007}\\right|$, 这与 $x_1$, $x_2, \\cdots, x_{2007}$ 的取法矛盾.\n故假设不成立.\n所以这 2007 个数都是 0 .",
+    "remark": "",
+    "figures": []
+}

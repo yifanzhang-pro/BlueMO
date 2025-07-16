@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-4.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 在 $m \\times m$ 方格纸中, 至少要挑出多少个小方格,才能使得这些小方格中存在四个小方格, 它们的中心组成一个矩形的 4 个顶点, 而矩形的边平行于原正方形的边.",
+    "solution": "解:所求的最小值为 $\\left[\\frac{m}{2}(1+\\sqrt{4 m-3})-1\\right]+1$. 设最多能挑出 $k$ 个小方格, 使得这些小方格中不存在任何四个小方格, 它们的中点组成一个矩形的 4 个顶点 (矩形的边平行于原正方形的边). 并假设位于第 $i$ 行的有 $k_i(i= 1,2, \\cdots, m)$ 个, 则\n$$\n\\sum_{i=1}^n k_i=k\n$$\n设第 $i$ 行的 $k_i$ 个小方格位于这行的第 $j_1, j_2, \\cdots, j_{k_i}$ 列, $1 \\leqslant j_1<j_2< \\cdots<j_{k_i} \\leqslant m$. 如果第 $r$ 行的第 $j_p, j_q$ 列的两个方格已经挑出, 则任意的第 $s (s \\neq r)$ 行的 $j_p, j_q$ 列的两个方格不能同时挑出, 否则将组成一个矩形的 4 个顶点.\n所以对于每个 $i$, 考虑 $j_1, j_2, \\cdots, j_{k_i}$ 中每两个的组合, 可得到 $\\mathrm{C}_{k_i}^2$ 个组合.\n对 $i=1,2, \\cdots, m$, 可得 $\\sum \\mathrm{C}_{k_i}^2$ 个组合, 且其中任意两个不相同 (即无重复), 这些组合都是 $1,2, \\cdots, m$ 中取两个的组合, 总数为 $\\mathrm{C}_m^2$. 所以\n$$\n\\sum_{i=1}^m \\mathrm{C}_{k_i}^2 \\leqslant \\mathrm{C}_m^2\n$$\n即\n$$\n\\frac{1}{2} \\sum_{i=1}^m k_i\\left(k_i-1\\right) \\leqslant \\frac{1}{2} m(m-1) .\n$$\n由 $\\sum_{i=1}^m k_i=k$, 得到 $\\sum_{i=1}^m k_i^2 \\leqslant m(m-1)+k$. 由柯西不等式, 得\n$$\n\\sum_{i=1}^m k_i^2 \\geqslant \\frac{\\left(\\sum_{i=1}^m k_i\\right)^2}{m}=\\frac{k^2}{m} .\n$$\n所以 $\\frac{k^2}{m} \\leqslant m(m-1)+k$, 故 $k \\leqslant \\frac{m}{2}(1+\\sqrt{4 m-3})$.\n因此, 至少要挑出 $\\left[\\frac{m}{2}(1+\\sqrt{4 m-3})-1\\right]+1$ 个小方格.",
+    "remark": "",
+    "figures": []
+}

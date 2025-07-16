@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 给定 $2 n$ 个实数: $a_1 \\leqslant a_2 \\leqslant \\cdots \\leqslant a_n, b_1 \\leqslant b_2 \\leqslant \\cdots \\leqslant b_n$. 令\n$$\nF=a_1 b_{i_1}+a_2 b_{i_2}+\\cdots+a_n b_{i_n}\n$$\n其中 $b_{i_1}, b_{i_2}, \\cdots, b_{i_n}$ 是 $b_1, b_2, \\cdots, b_n$ 的一个排列.\n求 $F$ 的最大值与最小值(排序不等式).",
+    "solution": "分析:直观, 想到 $a_i$ 中最小的与 $b_i$ 中最小的相乘、 $a_i$ 中最大的与 $b_i$ 中最大的相乘时, 其 $F$ 的值最大.\n由此想到通过磨光变换构造 $a_1 b_1$, $a_2 b_2, \\cdots, a_n b_n$.\n解若 $F$ 的表达式中无 $a_1 b_1$ 这一项,则考察分别含有 $a_1 、 b_1$ 的两个项: $a_1 b_{i_1}$ 和 $a_j b_1$, 将它们分别调整为 $a_1 b_1 、 a_j b_{i_1}$, 那么,\n$a_1 b_1+a_j b_{i_1}-\\left(a_1 b_{i_1}+a_j b_1\\right)=\\left(a_1-a_j\\right)\\left(b_1-b_{i_1}\\right) \\geqslant 0$ (磨光工具).\n由此可见,调整出 $a_1 b_1$ 这个项后, $F$ 的值不减.\n固定这个积 $a_1 b_1$ 不动, 再考察余下的 $n-1$ 个积, 如此下去, 最多调整 $n-1$ 次, 即可出现 $a_1 b_1, a_2 b_2, \\cdots, a_n b_n, F$ 的值恒保持不减, 于是 $F_1=a_1 b_1+ a_2 b_2+\\cdots+a_n b_n$ 是 $F$ 的最大值.\n同样,当出现 $a_1 b_n, a_2 b_{n-1}, \\cdots, a_n b_1$, 则 $F$ 达到最小值.",
+    "remark": "",
+    "figures": []
+}

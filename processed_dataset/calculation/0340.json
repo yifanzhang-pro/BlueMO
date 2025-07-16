@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise10.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 已知共有 12 个剧团参加为期 7 天的演出, 要求每个剧团都能看到其他所有剧团的演出, 而只能是当天没演出的在台下观看, 问最少共要演出多少场?",
+    "solution": "设 $A=\\{1,2, \\cdots, 7\\}$ 为演出日期的集合, $A_i$ 为第 $i$ 个剧团演出的日期的集合 $(i=1,2, \\cdots, 12)$. 易知, $A_1, A_2, \\cdots, A_{12}$ 互不包含.\n否则对 $i \\neq j$, 设 $A_i$ 包含于 $A_j$ 内, 则第 $j$ 团看不到第 $i$ 团的演出.\n考察演出场数 $t=\\sum_{i=1}^{12}\\left|A_i\\right|$, 若有某个 $\\left|A_i\\right|=0$, 则其他团都看不到第 $i$ 团的演出, 矛盾.\n因此, 对任何 $i$, 有 $\\left|A_i\\right| \\geqslant 1$. 引人参数: 设其中恰有 $k$ 个集合是单元集,而其他集合中的元素个数至少是 2 , 于是 $t=\\sum_{i=1}^{12}\\left|A_i\\right| \\geqslant \\underbrace{1+1+\\cdots+1}_{k \\uparrow 1}+\\underbrace{2+2+\\cdots+2}_{12-k \\uparrow 2}= 24-k$. 不妨设 $\\left\\{a_1\\right\\}=A_1,\\left\\{a_2\\right\\}=A_2, \\cdots,\\left\\{a_k\\right\\}=A_k$. 因为 $A_1, A_2, \\cdots, A_{12}$ 互不包含, 从而 $a_1, a_2, \\cdots, a_k$ 都不在 $A_{k+1}, A_{k+2}, \\cdots, A_{12}$ 中, 所以 $A_{k+1}$, $A_{k+2}, \\cdots, A_7$ 都是 $\\left\\{a_{k+1}, a_{k+2}, \\cdots, a_7\\right\\}$ 的子集, 即 $\\left\\{A_{k+1}, A_{k+2}, \\cdots, A_{12}\\right\\}$ 是 $A \\backslash\\left\\{a_1, a_2, \\cdots, a_k\\right\\}$ 的互不包含子集族, 所以 $\\mathrm{C}_{7-k}^{\\left[\\frac{7-k}{2}\\right]} \\geqslant 12-k$. 此式在 $7-k= 1,2,3,4$ 时不成立, 所以 $7-k \\geqslant 5$, 即 $k \\leqslant 2$. 所以 $t \\geqslant 24-k \\geqslant 22$. 最后, 当 $t=$ 22 时, 令 $A_1=\\{1\\} 、 A_2=\\{2\\}$, 而 $A_3, A_4, \\cdots, A_{12}$ 取 $\\{3,4,5,6,7\\}$ 中的 10 个互异二元集即可.\n比如 $A_3=\\{3,4\\} 、 A_4=\\{3,5\\} 、 A_5=\\{3,6\\} 、 A_6=\\{3$ , 7\\}、 $A_7=\\{4,5\\} 、 A_8=\\{4,6\\} 、 A_9=\\{4,7\\} 、 A_{10}=\\{5,6\\} 、 A_{11}=\\{5,7\\} 、 A_{12}=\\{6,7\\}$. 所以, 演出场数的最小值为 22 .",
+    "remark": "",
+    "figures": []
+}

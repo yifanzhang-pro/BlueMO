@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-4.tex",
+    "problem_type": "proof",
+    "problem": "例3. 对 $n \\in \\mathbf{N}^*$, 设 $a_n=\\frac{n}{(n-1)^{\\frac{4}{3}}+n^{\\frac{4}{3}}+(n+1)^{\\frac{4}{3}}}$. 证明: $a_1+ a_2+\\cdots+a_{999}<50$.",
+    "solution": "证明:基本的想法是从局部往整体去处理, 为此, 对 $a_n$ 作恰当放大, 达到裂项相消的目的.\n注意到 $x^3-y^3=(x-y)\\left(x^2+x y+y^2\\right)$, 令 $x=(n+1)^{\\frac{2}{3}}, y=(n-1)^{\\frac{2}{3}}$, 则 $x y=\\left(n^2-1\\right)^{\\frac{2}{3}}<n^{\\frac{4}{3}}$. 故\n$$\n\\begin{aligned}\na_n & <\\frac{n}{x^2+x y+y^2}=\\frac{n(x-y)}{x^3-y^3} \\\\\n& =\\frac{n(x-y)}{(n+1)^2-(n-1)^2}=\\frac{1}{4}(x-y) \\\\\n& =\\frac{1}{4}\\left((n+1)^{\\frac{2}{3}}-(n-1)^{\\frac{2}{3}}\\right) .\n\\end{aligned}\n$$\n所以\n$$\n\\begin{aligned}\na_1+\\cdots+a_{999} & <\\frac{1}{4} \\sum_{n=1}^{999}\\left((n+1)^{\\frac{2}{3}}-(n-1)^{\\frac{2}{3}}\\right) \\\\\n& =\\frac{1}{4}\\left(\\sum_{n=2}^{1000} n^{\\frac{2}{3}}-\\sum_{n=0}^{998} n^{\\frac{2}{3}}\\right) \\\\\n& =\\frac{1}{4}\\left(1000^{\\frac{2}{3}}+999^{\\frac{2}{3}}-1\\right) \\\\\n& <\\frac{1}{2} \\times 1000^{\\frac{2}{3}}=50 .\n\\end{aligned}\n$$\n命题获证.\n说明 \"先放缩再求和\" 在处理与数列求和相关的不等式时是一个重要的方法.",
+    "remark": "",
+    "figures": []
+}

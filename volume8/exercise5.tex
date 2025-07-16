@@ -1,0 +1,200 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 空间四点 $A, B, C, D$ 满足 $|\overrightarrow{A B}|=3,|\overrightarrow{B C}|=7,|\overrightarrow{C D}|=11,|\overrightarrow{D A}|=$ 9 , 则 $\overrightarrow{A C} \cdot \overrightarrow{B D}$ 的取值 ( ).
+(A) 只有一个
+(B) 有两个
+(C) 有四个
+(D) 有无穷多个
+%%<SOLUTION>%%
+A.
+因为 $\overrightarrow{A B}^2+\overrightarrow{C D}^2=3^2+11^2=130=7^2+9^2=\overrightarrow{B C}^2+\overrightarrow{D A}^2$, 由 $\overrightarrow{A B}+\overrightarrow{B C}+ \overrightarrow{C D}+\overrightarrow{D A}=\overrightarrow{0}$, 得 $\overrightarrow{A B}+\overrightarrow{C D}=-(\overrightarrow{B C}+\overrightarrow{D A})$, 两边平方得 $\overrightarrow{A B} \cdot \overrightarrow{C D}=\overrightarrow{B C} \cdot \overrightarrow{D A}$, 故 $\overrightarrow{A B} \cdot \overrightarrow{C D}=-\overrightarrow{A D} \cdot \overrightarrow{B C}$, 于是
+$$
+\begin{aligned}
+\overrightarrow{A C} \cdot \overrightarrow{B D} & =(\overrightarrow{A B}+\overrightarrow{B C})(\overrightarrow{B C}+\overrightarrow{C D}) \\
+& =(\overrightarrow{A B}+\overrightarrow{B C}+\overrightarrow{C D}) \overrightarrow{B C}+\overrightarrow{A B} \cdot \overrightarrow{C D} \\
+& =\overrightarrow{A D} \cdot \overrightarrow{B C}+\overrightarrow{A B} \cdot \overrightarrow{C D}=0 .
+\end{aligned}
+$$
+$\overrightarrow{A C} \cdot \overrightarrow{B D}$ 只有一个值 0. 故选 A.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. $|\vec{a}|=5,|\vec{b}|=3,|\vec{a}-\vec{b}|=6, \vec{a} \cdot \vec{b}=(\quad)$.
+%%<SOLUTION>%%
+-1 .
+$$
+|\vec{a}-\vec{b}|^2=\vec{a}^2-2 \vec{a} \cdot \vec{b}+\vec{b}^2 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 已知向量 $\vec{a}=\{2,-3\}$, 向量 $\overrightarrow{A B}$ 与 $\vec{a}$ 垂直, 且 $|\overrightarrow{A B}|=3 \sqrt{13}$, 点 $A$ 坐标为 $(-3,1)$, 求位置向量 $\overrightarrow{O B}$ 的坐标.
+%%<SOLUTION>%%
+设 $\overrightarrow{O B}=\{x, y\}, \overrightarrow{A B}=\{x+3, y-1\}$. 因为 $\overrightarrow{A B}$ 与 $\vec{a}$ 垂直, $|\overrightarrow{A B}|= 3 \sqrt{13}$, 所以
+$$
+\left\{\begin{array}{l}
+2(x+3)-3(y-1)=0, \\
+(x+3)^2+(y-1)^2=(3 \sqrt{13})^2,
+\end{array}\right.
+$$
+得
+$$
+\left\{\begin{array} { l } 
+{ x = 6 , } \\
+{ y = 7 }
+\end{array} \text { 或 } \left\{\begin{array}{l}
+x=-12, \\
+y=-5 .
+\end{array}\right.\right.
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 如图(<FilePath:./figures/fig-c5p4.png>), 空间四边形 $A B C D$ 中, $P 、 Q$ 分别是对角线 $A C 、 B D$ 的中点.
+求证:
+(1) 若 $A B=C D, A D=B C$, 则 $P Q \perp A C$, $P Q \perp B D ;$
+(2) 若 $P Q \perp A C, P Q \perp B D$, 则 $A B=C D$, $A D=B C$.
+%%<SOLUTION>%%
+(1) $\overrightarrow{P Q}=\overrightarrow{P A}+\overrightarrow{A Q}=-\frac{1}{2} \overrightarrow{A C}+\frac{1}{2}(\overrightarrow{A B}+\overrightarrow{A D})=\frac{1}{2}(\overrightarrow{A B}+\overrightarrow{A D}- \overrightarrow{A C}$ ),
+$$
+\begin{aligned}
+& A B=C D \Leftrightarrow \overrightarrow{A B}^2=\overrightarrow{C D}^2=(\overrightarrow{A D}-\overrightarrow{A C})^2=\overrightarrow{A D}^2+\overrightarrow{A C}^2-2 \overrightarrow{A D} \cdot \overrightarrow{A C}, \\
+& A D=B C \Leftrightarrow \overrightarrow{A D}^2=\overrightarrow{B C}^2=(\overrightarrow{A C}-\overrightarrow{A B})^2=\overrightarrow{A C}^2+\overrightarrow{A B}^2-2 \overrightarrow{A C} \cdot \overrightarrow{A B},
+\end{aligned}
+$$
+即
+$$
+\overrightarrow{A D} \cdot \overrightarrow{A C}+\overrightarrow{A B} \cdot \overrightarrow{A C}=\overrightarrow{A C}^2
+$$
+所以
+$$
+\begin{aligned}
+\overrightarrow{P Q} \cdot \overrightarrow{A C} & =\frac{1}{2}(\overrightarrow{A B}+\overrightarrow{A D}-\overrightarrow{A C}) \cdot \overrightarrow{A C} \\
+& =\frac{1}{2}\left(\overrightarrow{A B} \cdot \overrightarrow{A C}+\overrightarrow{A D} \cdot \overrightarrow{A C}-\overrightarrow{A C}^2\right)=0 \Rightarrow \overrightarrow{P Q} \perp \overrightarrow{A C}
+\end{aligned}
+$$
+同理可证 $\overrightarrow{P Q} \perp \overrightarrow{B D}$, 证毕.
+$$
+\begin{aligned}
+P Q \perp A C & \Rightarrow \overrightarrow{P Q} \cdot \overrightarrow{A C}=0 \Rightarrow \frac{1}{2}(\overrightarrow{A B}+\overrightarrow{A D}-\overrightarrow{A C}) \cdot \overrightarrow{A C}=0 \\
+& \Rightarrow \overrightarrow{A B} \cdot \overrightarrow{A C}+\overrightarrow{A D} \cdot \overrightarrow{A C}=\overrightarrow{A C}^2,
+\end{aligned}
+$$
+$$
+\begin{aligned}
+P Q \perp B D & \Rightarrow \overrightarrow{P Q} \cdot \overrightarrow{B D}=0 \Rightarrow \frac{1}{2}(\overrightarrow{A B}+\overrightarrow{A D}-\overrightarrow{A C}) \cdot(\overrightarrow{A D}-\overrightarrow{A B})=0 \\
+& \Rightarrow \overrightarrow{A D}^2=\overrightarrow{A B}^2+\overrightarrow{A C} \cdot \overrightarrow{A D}-\overrightarrow{A C} \cdot \overrightarrow{A B}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+\overrightarrow{C D}^2 & =(\overrightarrow{A D}-\overrightarrow{A C})^2=\overrightarrow{A C}^2+\overrightarrow{A D}^2-2 \overrightarrow{A D} \cdot \overrightarrow{A C} \\
+& =(\overrightarrow{A B} \cdot \overrightarrow{A C}+\overrightarrow{A D} \cdot \overrightarrow{A C})+\left(\overrightarrow{A B}^2+\overrightarrow{A C} \cdot \overrightarrow{A D}-\overrightarrow{A C} \cdot \overrightarrow{A B}\right)-2 \overrightarrow{A D} \cdot \overrightarrow{A C} \\
+& =\overrightarrow{A B}^2,
+\end{aligned}
+$$
+所以
+$$
+C D=A B \text {. }
+$$
+同理可证 $A D=B C$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 若 $\vec{a}=\{\cos \alpha, \sin \alpha\}, \vec{b}=\{\cos \beta, \sin \beta\}$, 且满足 $|k \vec{a}+\vec{b}|=\sqrt{3}|\vec{a}-k \vec{b}|(k>0)$.
+(1)用 $\alpha 、 \beta$ 表示 $\vec{a} \cdot \vec{b}$;
+(2) 用 $k$ 表示 $\vec{a} \cdot \vec{b}$;
+(3) 求 $\vec{a} \cdot \vec{b}$ 的最小值及此时 $\vec{a}$ 与 $\vec{b}$ 所成的角的大小 $(0 \leqslant \theta \leqslant \pi)$.
+%%<SOLUTION>%%
+(1) $\vec{a} \cdot \vec{b}=\cos \alpha \cos \beta+\sin \alpha \sin \beta=\cos (\alpha-\beta)$.
+(2) $|k \vec{a}+\vec{b}|^2=3|\vec{a}-k \vec{b}|^2$, 即 $k^2 \vec{a}^2+2 k \vec{a} \cdot \vec{b}+\vec{b}^2=3\left(\vec{a}^2-2 k \vec{a} \cdot \vec{b}+k^2 \vec{b}^2\right)$
+所以
+$$
+\vec{a} \cdot \vec{b}=\frac{k^2+1}{4 k}(k>0) .
+$$
+(3) $\vec{a} \cdot \vec{b}=\frac{k^2+1}{4 k} \geqslant \frac{1}{2}$, 当且仅当 $k=1$ 时等号成立, 此时 $\theta=\frac{\pi}{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 已知 $|\vec{a}|=\sqrt{2},|\vec{b}|=3, \vec{a}$ 与 $\vec{b}$ 的夹角为 $45^{\circ}$, 求使 $\vec{a}+\lambda \vec{b}$ 与 $\lambda \vec{a}+\vec{b}$ 的夹角为锐角时, $\lambda$ 的取值范围.
+%%<SOLUTION>%%
+由题意得 $(\vec{a}+\lambda \vec{b}) \cdot(\lambda \vec{a}+\vec{b})>0$, 则
+$$
+\lambda \vec{a}^2+\left(\lambda^2+1\right) \vec{a} \cdot \vec{b}+\lambda \vec{b}^2>0 .
+$$
+又 $\vec{a} \cdot \vec{b}=|\vec{a}||\vec{b}| \cos 45^{\circ}=3$, 于是
+$$
+3 \lambda^2+11 \lambda+3>0 .
+$$
+解得 $\lambda<\frac{-11-\sqrt{85}}{6}$ 或 $\lambda>\frac{-11+\sqrt{85}}{6}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 已知点 $A(0,2,3) 、 B(-2,1,6) 、 C(1,-1,5)$.
+(1) 求以 $\overrightarrow{A B} 、 \overrightarrow{A C}$ 为边的平行四边形的面积;
+(2) 若 $|\vec{a}|=\sqrt{3}$, 且 $\vec{a}$ 分别与 $\overrightarrow{A B} 、 \overrightarrow{A C}$ 垂直, 求向量 $\vec{a}$ 的坐标.
+%%<SOLUTION>%%
+(1) $\overrightarrow{A B}=\{-2,-1,3\}, \overrightarrow{A C}=\{1,-3,2\}$,
+$$
+\cos \theta=\frac{\overrightarrow{A B} \cdot \overrightarrow{A C}}{|\overrightarrow{A B}| \cdot|\overrightarrow{A C}|}=\frac{1}{2}, \sin \theta=\frac{\sqrt{3}}{2},
+$$
+$$
+S=|\overrightarrow{A B}| \cdot|\overrightarrow{A C}| \sin \theta=\sqrt{14} \cdot \sqrt{14} \cdot \frac{\sqrt{3}}{2}=7 \sqrt{3}
+$$
+(2) 设 $\vec{a}=\{x, y, z\}$. 由 $\overrightarrow{A B} \cdot \vec{a}=0, \overrightarrow{A C} \cdot \vec{a}=0,|\vec{a}|=\sqrt{3}$ 得
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 在平面上给定 $\triangle A B C$, 对于平面上的一点 $P$, 建立如下的变换 $f: A P$ 的中点为 $Q, B Q$ 的中点为 $R, C R$ 的中点为 $P^{\prime}, f(P)=P^{\prime}$. 求证: $f$ 只有一个不动点 (指 $P$ 与 $P^{\prime}$ 重合的点).
+%%<SOLUTION>%%
+$\overrightarrow{A Q}=\frac{1}{2} \overrightarrow{A P}, \overrightarrow{A R}=\frac{1}{2}(\overrightarrow{A B}+\overrightarrow{A Q})=\frac{1}{2} \overrightarrow{A B}+\frac{1}{4} \overrightarrow{A P}$,
+$$
+\overrightarrow{A P^{\prime}}=\frac{1}{2}(\overrightarrow{A C}+\overrightarrow{A R})=\frac{1}{2} \overrightarrow{A C}+\frac{1}{4} \overrightarrow{A B}+-\frac{1}{8} \overrightarrow{A P}
+$$
+要使 $P$ 与 $P^{\prime}$ 重合, 应有 $\overrightarrow{A P}=\frac{1}{2} \overrightarrow{A C}+\frac{1}{4} \overrightarrow{A B}+\frac{1}{8} \overrightarrow{A P}$, 得 $\overrightarrow{A P}=\frac{1}{7}(4 \overrightarrow{A C}+ 2 \overrightarrow{A B})$, 对于给定的 $\triangle A B C$, 满足条件的不动点 $P$ 只有一个, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 如图(<FilePath:./figures/fig-c5p9.png>), 设 $O$ 是 $\triangle A B C$ 的外心, $D$ 是 $A B$ 的中点, $E$ 是 $\triangle A C D$ 的重心, 求证: 如果 $A B=A C$, 那么 $O E \perp C D$.
+%%<SOLUTION>%%
+$\overrightarrow{O E}=\frac{1}{3}(\overrightarrow{O C}+\overrightarrow{O A}+\overrightarrow{O D})=\frac{1}{3}\left(\overrightarrow{O C}+\frac{3}{2} \overrightarrow{O A}+\frac{1}{2} \overrightarrow{O B}\right)$,
+$$
+\overrightarrow{C D}=\frac{1}{2}(\overrightarrow{C A}+\overrightarrow{C B})=\frac{1}{2}(\overrightarrow{O A}+\overrightarrow{O B}-2 \overrightarrow{O C}) .
+$$
+因为 $A B=A C$, 所以 $\overrightarrow{A O} \perp \overrightarrow{B C}$, 从而
+$$
+\begin{aligned}
+12 \overrightarrow{O E} \cdot \overrightarrow{C D} & =(2 \overrightarrow{O C}+3 \overrightarrow{O A}+\overrightarrow{O B}) \cdot(\overrightarrow{O A}+\overrightarrow{O B}-2 \overrightarrow{O C}) \\
+& =3 \overrightarrow{O A}^2+\overrightarrow{O B}^2-4 \overrightarrow{O C}^2+4 \overrightarrow{O A} \cdot \overrightarrow{O B}-4 \overrightarrow{O C} \cdot \overrightarrow{O A} \\
+& =3 R^2+R^2-4 R^2+4 \overrightarrow{O A} \cdot(\overrightarrow{O B}-\overrightarrow{O C})=0 .
+\end{aligned}
+$$
+故 $O E \perp C D$, 证毕.
+%%PROBLEM_END%%
+
+

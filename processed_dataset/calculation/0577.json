@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题7 (1) 已知函数 $y=f\\left(\\log _2 x\\right)$ 的定义域为 $\\left[\\frac{1}{2}, 2\\right]$, 求函数 $f\\left(\\left(\\frac{1}{2}\\right)^x-2\\right)$ 的定义域;\n(2) 设函数 $f(x)=\\log _{\\frac{1}{2}}\\left(x^2+2 x+2 a\\right)$ 的值域为 $\\mathbf{R}$, 求实数 $a$ 的取值范围.",
+    "solution": "(1) 由题意知, $\\frac{1}{2} \\leqslant x \\leqslant 2$, 所以, $\\log _2 \\frac{1}{2} \\leqslant \\log _2 x \\leqslant \\log _2 2$, 即 $-1 \\leqslant \\log _2 x \\leqslant 1$. 故 $y=f(x)$ 的定义域为 $[-1,1]$. 解不等式 $-1 \\leqslant\\left(\\frac{1}{2}\\right)^x-2 \\leqslant 1$, 得 $-\\log _2 3 \\leqslant x \\leqslant 0$, 所以, $f\\left(\\left(\\frac{1}{2}\\right)^x-2\\right)$ 的定义域为 $\\left[-\\log _2 3,0\\right]$.\n(2) 只需 $x^2+2 x+2 a$ 能取到一切正实数, 从而 $\\Delta=4-8 a<0$, 故 $a>\\frac{1}{2}$.",
+    "remark": "",
+    "figures": []
+}

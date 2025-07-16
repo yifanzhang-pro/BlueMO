@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter19.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设直线上一开始从左到右依次写有 $1,2, \\cdots, 2011$ 这 2011 个数.\n可以对相邻位置的三个数 $a, b, c$ 进行这样的操作: 把 $(a, b, c)$ 换成 $(b, c, a)$. 证明: 无论怎样操作, 不可能使直线上的数从左到右依次是 $2011,2010, \\cdots, 2,1$.",
+    "solution": "证明: $(1,2, \\cdots, 2011)$ 的每一个排列 $P=\\left(a_1, a_2, \\cdots, a_{2011}\\right)$, 称 $\\left(a_i\\right.$, $\\left.a_j\\right)$ 是 $P$ 的一个 \"逆序对\", 如果有 $i<j, a_i>a_j$. 将 $P$ 的逆序对个数称为逆序数, 记作 $I(P)$.\n根据该定义,若在排列 $P$ 中选取相邻三个数 $a, b, c$ 进行操作, 得到另一个排列 $P^{\\prime}$, 则必有 $I\\left(P^{\\prime}\\right) \\equiv I(P)(\\bmod 2)$. 事实上, 对\n$$\nP=(\\cdots, a, b, c, \\cdots), P^{\\prime}=(\\cdots, b, c, a, \\cdots),\n$$\n若 $(a, b),(a, c)$ 中有 $k$ 个是 $P$ 的逆序对, 则 $(b, a),(c, a)$ 中有 $2-k$ 个是 $P^{\\prime}$ 的逆序对.\n其余的数对是 $P$ 中的逆序对当且仅当是 $P^{\\prime}$ 中的逆序对, 因此\n$$\nI\\left(P^{\\prime}\\right)-I(P)=k-(2-k) \\equiv 0(\\bmod 2) .\n$$\n由于对 $P_0=(1,2, \\cdots, 2011)$ 与 $P_1=(2011,2010, \\cdots, 1)$, 分别有\n$$\nI\\left(P_0\\right)=0, I\\left(P_1\\right)=\\frac{2011 \\times 2010}{2} \\equiv 1(\\bmod 2),\n$$\n所以不能通过操作使 $P_0$ 变为 $P_1$. 证毕.",
+    "remark": "注:\"逆序对\" 和 \"逆序数\" 是排列问题中常会涉及的概念, 考虑逆序数的变化规律 (如单调性、奇偶性、增量具有何种上界等) 往往成为解题的关键.\n本题中我们用到的是逆序数的奇偶性这个不变量.\n关于逆序数,一个基本且重要的结论是: 若 $n$ 个实数 $a_1, a_2, \\cdots, a_n$ 两两不等,则任取其中两个数对换位置后, 排列的逆序数奇偶性改变.\n特别地, 只需注意依次作 $(a, b) \\rightarrow(b, a)$ 和 $(a, c) \\rightarrow(c, a)$ 这两个对换恰好可将 $(a, b, c)$ 换成 $(b, c, a)$, 本题中逆序数的奇偶不变性就能轻易获得.",
+    "figures": []
+}

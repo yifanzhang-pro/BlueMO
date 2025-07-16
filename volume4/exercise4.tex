@@ -1,0 +1,301 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 已知非负实数 $a_1, a_2, \cdots, a_{100}$ 满足 $a_1^2+a_2^2+\cdots+a_{100}^2=1$. 证明:
+$$
+a_1^2 a_2+a_2^2 a_3+\cdots+a_{100}^2 a_1<\frac{12}{25} .
+$$
+%%<SOLUTION>%%
+设 $S=\sum_{k=1}^{100} a_k^2 a_{k+1}$, 其中, 定义 $a_{101}=a_1, a_{102}=a_2$. 由柯西不等式及均值不等式得 $(3 S)^2=\left[\sum_{k=1}^{100} a_{k+1}\left(a_k^2+2 a_{k+1} a_{k+2}\right)\right]^2 \leqslant\left(\sum_{k=1}^{100} a_{k+1}^2\right) \sum_{k=1}^{100}\left(a_k^2+2 a_{k+1} a_{k+2}\right)^2 =1 \times \sum_{k=1}^{100}\left(a_k^2+2 a_{k+1} a_{k+2}\right)^2=\sum_{k=1}^{100}\left(a_k^4+4 a_k^2 a_{k+1} a_{k+2}+4 a_{k+1}^2 a_{k+2}^2\right) \leqslant \sum_{k=1}^{100}\left[a_k^4+\right. \left.2 a_k^2\left(a_{k+1}^2+a_{k+2}^2\right)+4 a_{k+1}^2 a_{k+2}^2\right]=\sum_{k=1}^{100}\left(a_k^4+6 a_k^2 a_{k+1}^2+2 a_k^2 a_{k+2}^2\right)$. 又 $\sum_{k=1}^{100}\left(a_k^4+2 a_k^2 a_{k+1}^2\right. \left.+2 a_k^2 a_{k+2}^2\right) \leqslant\left(\sum_{k=1}^{100} a_k^2\right)^2, \sum_{k=1}^{100} a_k^2 a_{k+1}^2 \leqslant\left(\sum_{i=1}^{50} a_{2 i-1}^2\right)\left(\sum_{j=1}^{50} a_{2 j}^2\right)$, 故 $(3 S)^2 \leqslant\left(\sum_{k=1}^{100} a_k^2\right)^2+ 4\left(\sum_{i=1}^{50} a_{2 i-1}^2\right)\left(\sum_{j=1}^{50} a_{2 j}^2\right) \leqslant 1+\left(\sum_{i=1}^{50} a_{2 i-1}^2+\sum_{j=1}^{50} a_{2 j}^2\right)^2=2$. 从而, $S \leqslant \frac{\sqrt{2}}{3} \approx 0.4714< 0.48=\frac{12}{25}$. 
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $x, y, z \in \mathbf{R}^{+}$, 且 $x+y+z \geqslant 6$. 求
+$$
+M=\sum x^2+\sum \frac{x}{y^2+z+1}
+$$
+的最小值, 其中, " $\sum$ " 表示轮换对称和.
+%%<SOLUTION>%%
+由均值不等式有 ${\frac{x^{2}}{14}}+{\frac{x}{y^{2}+z+1}}+{\frac{2}{49}}(y^{2}+z+1)\geq3{\sqrt{{\frac{x^{3}}{7^{3}}}}}={\frac{3}{7}}x$. 则 $\frac{1}{14} \sum x^2+\sum \frac{x}{y^2+z+1}+\frac{2}{49} \sum x^2+\frac{2}{49} \sum x+\frac{6}{49} \geqslant \frac{3}{7} \sum x$. 故 $\frac{11}{98} \sum x^2+\sum \frac{x}{y^2+z+1}+\frac{6}{49} \geqslant\left(\frac{3}{7}-\frac{2}{49}\right) \sum x=\frac{19}{49} \sum x$. 又 $\sum x^2 \geqslant \frac{1}{3}\left(\sum x\right)^2 \geqslant 12$, 故 $\sum x^2+\sum \frac{x}{y^2+z+1}=\frac{87}{98} \sum x^2+\frac{11}{98} \sum x^2-\frac{6}{49} \geqslant \frac{87}{98} \sum x^2+\frac{19}{49} \sum x-\frac{6}{49} \geqslant \frac{87 \times 6+19 \times 6-6}{49}=\frac{90}{7}$. 从而, $M_{\min }=\frac{90}{7}$. 此时, $(x, y, z)=(2,2,2)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $x 、 y 、 z$ 为正实数, 满足
+$$
+x y+y z+z x=x+y+z .
+$$
+证明: $\frac{1}{x^2+y+1}+\frac{1}{y^2+z+1}+\frac{1}{z^2+x+1} \leqslant 1$, 并确定等号成立的条件.
+%%<SOLUTION>%%
+由柯西不等式得 $\frac{1}{x^2+y+1} \leqslant \frac{1+y+z^2}{(x+y+z)^2}, \frac{1}{y^2+z+1} \leqslant\frac{1+z+x^2}{(x+y+z)^2}, \frac{1}{z^2+x+1} \leqslant \frac{1+x+y^2}{(x+y+z)^2}$. 故 $\frac{1}{x^2+y+1}+\frac{1}{y^2+z+1}+ \frac{1}{z^2+x+1} \leqslant \frac{3+x+y+z+x^2+y^2+z^2}{(x+y+z)^2}$. 记上不等式右边为 $S$. 只须证 $S \leqslant 1$. 事实上, $S \leqslant 1 \Leftrightarrow 3+x+y+z \leqslant 2(x y+y z+z x)$. 因为 $x+y+z= x y+y z+z x$, 所以, 只须证 $x+y+z \geqslant 3$. 又 $x+y+z=x y+y z+z x \leqslant \frac{(x+y+z)^2}{3}$, 因此, $x+y+z \geqslant 3$. 故原式得证.
+当且仅当 $x=y=z=1$ 时, 原式等号成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $x 、 y 、 z$ 为正实数, 证明:
+$$
+\sum \frac{x}{\sqrt{2\left(x^2+y^2\right)}}<\sum \frac{4 x^2+y^2}{x^2+4 y^2}<9,
+$$
+其中, " $\sum "$ 表示轮换对称和.
+%%<SOLUTION>%%
+令 $x \geqslant y, z$. 则 $\frac{4 z^2+x^2}{z^2+4 x^2} \leqslant 1, \frac{4 x^2+y^2}{x^2+4 y^2}<4, \frac{4 y^2+z^2}{y^2+4 z^2}<4$. 三式相加, 知右边的不等式成立.
+由均值不等式知 $4 x y^2 \leqslant y^3+4 x^2 y$. 则 $y^3+4 x^2 y+ 4 x^3+x y^2>4 x y^2+x^3 \Rightarrow \frac{4 x^2+y^2}{x^2+4 y^2}>\frac{x}{x+y}$. 故 $\sum \frac{x}{x+y}<\sum \frac{4 x^2+y^2}{x^2+4 y^2}$. 由柯西一施瓦兹不等式知 $\sum \frac{x}{\sqrt{2\left(x^2+y^2\right)}} \leqslant \sum \frac{x}{x+y}<\sum \frac{4 x^2+y^2}{x^2+4 y^2}$. 故命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $a, b, c>0$ 且 $a+b+c=3$. 求证:
+$$
+\frac{a^2}{a+b^2}+\frac{b^2}{b+c^2}+\frac{c^2}{c+a^2} \geqslant \frac{3}{2} \text {. }
+$$
+%%<SOLUTION>%%
+由柯西不等式, 我们有 $\sum \frac{a^2}{a+b^2} \sum a^2\left(a+b^2\right) \geqslant\left(a^2+b^2+c^2\right)^2$, 因此只需要证明 $2\left(a^2+b^2+c^2\right)^2 \geqslant 3\left[a^2\left(a+b^2\right)+b^2\left(b+c^2\right)+c^2\left(c+a^2\right)\right]$, 这等价于 $2\left(a^4+b^4+c^4\right)+a^2 b^2+b^2+c^2 \geqslant 3\left(a^3+b^3+c^3\right)$, 由 $a+b+c=3$ 代入上式转化为 $a^4+b^4+c^4+a^2 b^2+b^2 c^2+c^2 a^2 \geqslant a^3(b+c)+b^3(c+a)+ c^3(a+b)$, 由均值不等式 $\left(a^4+a^2 b^2\right)+\left(a^4+a^2 c^2\right) \geqslant 2 a^3 b+2 a^3 c$, $\left(b^4+b^2 c^2\right)+\left(b^4+b^2 a^2\right) \geqslant 2 b^3 c+2 b^3 a,\left(c^4+c^2 a^2\right)+\left(c^4+c^2 b^2\right) \geqslant 2 c^3 a+ 2 c^3 b$. 上述三式相加除以 2 即得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 已知 $\lambda$ 为正实数.
+求 $\lambda$ 的最大值,使得对于所有满足条件
+$$
+u \sqrt{w w}+v \sqrt{w u}+w \sqrt{u v} \geqslant 1
+$$
+的正实数 $u 、 v 、 w$,均有
+$$
+u+v+w \geqslant \lambda .
+$$
+%%<SOLUTION>%%
+首先, 易观察出当 $u=v=w=\frac{\sqrt{3}}{3}$ 时, $u \sqrt{v w}+v \sqrt{w u}+w \sqrt{u v}=$ 1 及 $u+v+w=\sqrt{3}$. 因此, $\lambda$ 的最大值不超过 $\sqrt{3}$. 下面证明: 对于所有 $u, v$, $w>0$, 且满足 $u \sqrt{v w}+v \sqrt{w u}+w \sqrt{u v} \geqslant 1$, 均有 $u+v+w \geqslant \sqrt{3}$. 由均值不等式及柯西不等式有 $\frac{(u+v+w)^4}{9}=\left(\frac{u+v+w}{3}\right)^3 \cdot 3(u+v+w) \geqslant 3 u v w(u+v+w)=(u w w+v w u+r u v)(u+v+w) \geqslant(u \sqrt{v w}+v \sqrt{w u}+ w \sqrt{u v})^2 \geqslant 1$. 因此, $u+v+w \geqslant \sqrt{3}$. 当且仅当 $u=v=w=\frac{\sqrt{3}}{3}$ 时, 上式等号成立.
+综上, 所求 $\lambda$ 的最大值为 $\sqrt{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 设 $x_1, x_2, \cdots, x_n$ 为正实数, $x_{n+1}=x_1+x_2+\cdots+x_n$, 证明:
+$$
+x_{n+1} \sum_{i=1}^n\left(x_{n+1}-x_i\right) \geqslant\left(\sum_{i=1}^n \sqrt{x_i\left(x_{n+1}-x_i\right)}\right)^2 .
+$$
+%%<SOLUTION>%%
+由于 $\sum_{i=1}^n\left(x_{n+1}-x_i\right)=n x_{n+1}-\sum_{i=1}^n x_i=(n-1) x_{n+1}$, 于是, 只需证明, $x_{n+1} \sqrt{n-1} \geqslant \sum_{i=1}^n \sqrt{x_i\left(x_{n+1}-x_i\right)}$, 即证 $\sum_{i=1}^n \sqrt{\frac{x_i}{x_{n+1}}\left(1-\frac{x_i}{x_{n+1}}\right)} \leqslant \sqrt{n-1}$. 由柯西不等式, 得 $\left[\sum_{i=1}^n \sqrt{\frac{x_i}{x_{n+1}} \cdot\left(1-\frac{x_i}{x_{n+1}}\right)}\right]^2 \leqslant\left(\sum_{i=1}^n \frac{x_i}{x_{n+1}}\right)\left[\sum_{i=1}^n\left(1-\frac{x_i}{x_{n+1}}\right)\right]= \left(\frac{1}{x_{n+1}} \sum_{i=1}^n x_i\right)\left(n-\frac{1}{x_{n+1}} \sum_{i=1}^n x_i\right)=n-1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设 $x, y, z, w \in \mathbf{R}^{+}, \alpha 、 \beta 、 \gamma 、 \theta$ 满足 $\alpha+\beta+\gamma+\theta=(2 k+1) \pi, k \in \mathbf{Z}$. 求证:
+$$
+(x \sin \alpha+y \sin \beta+z \sin \gamma+w \sin \theta)^2 \leqslant \frac{(x y+z w)(x z+y w)(x w+y z)}{x y z w},
+$$
+当且仅当 $x \cos \alpha=y \cos \beta=z \cos \gamma=w \cos \theta$ 时等号成立.
+%%<SOLUTION>%%
+设 $u=x \sin \alpha+y \sin \beta, v=z \sin \gamma+x \sin \theta$, 则 $u^2= (x \sin \alpha+y \sin \beta)^2 \leqslant(x \sin \alpha+y \sin \beta)^2+(x \cos \alpha-y \cos \beta)^2=x^2+y^2- 2 x y \cos (\alpha+\beta)$. 所以 $\cos (\alpha+\beta) \leqslant \frac{x^2+y^2-u^2}{2 x y}$. 同理 $\cos (\gamma+\theta) \leqslant \frac{z^2+w^2-v^2}{2 z w}$. 由假设 $\cos (\alpha+\beta)+\cos (\gamma+\theta)=0$, 则 $\frac{u^2}{x y}+\frac{v^2}{z w} \leqslant \frac{x^2+y^2}{x y}+ \frac{z^2+w^2}{z w}$. 于是 $(u+v)^2=\left(u \cdot \frac{\sqrt{x y}}{\sqrt{x y}}+v \cdot \frac{\sqrt{z w}}{\sqrt{z w}}\right)^2 \leqslant\left(\frac{u^2}{x y}+\frac{v^2}{z w}\right)(x y+ z w) \leqslant(x y+z w)\left(\frac{x^2+y^2}{x y}+\frac{z^2+w^2}{z w}\right)$. 等号成立 $\Leftrightarrow x \cos \alpha=y \cos \beta$, $z \cos \gamma=w \cos \theta, \frac{u}{x y}=\frac{v}{z w} \Leftrightarrow x \cos \alpha=y \cos \beta=z \cos \gamma=w \cos \theta$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 已知 $0<a_1<a_2<\cdots<a_n$, 对于 $a_1, a_2, \cdots, a_n$ 的任意排列 $b_1, b_2, \cdots$, $b_n$. 令 $M=\prod_{i=1}^n\left(a_i+\frac{1}{b_i}\right)$, 求使 $M$ 取值最大的排列 $b_1, b_2, \cdots, b_n$.
+%%<SOLUTION>%%
+令 $A=a_1 a_2 \cdots a_n$, 则 $M=\frac{1}{A} \prod_{i=1}^n\left(a_i b_i+1\right)$. 由 $\left(a_i b_i+1\right)^2 \leqslant\left(a_i^2+1\right) \left(b_i^2+1\right)$ 知等号成立 $\Leftrightarrow a_i=b_i$. 由此得到 $M \leqslant \frac{1}{A} \prod_{i=1}^n\left(1+a_i^2\right)$, 且等号成立 $\Leftrightarrow a_i=b_i(i=1,2, \cdots, n)$. 故 $b_1=a_1, b_2=a_2, \cdots, b_n=a_n$ 时, $M$ 取值最大.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 设复数 $z_k=x_k+\mathrm{i} y_k, k=1,2, \cdots, n, x_i$ 和 $y_i$ 为实数, $\mathrm{i}=\sqrt{-1}$. 令 $r$ 表示 $\sqrt{z_1^2+z_2^2+\cdots+z_n^2}$ 的实部的绝对值,求证:
+$$
+r \leqslant\left|x_1\right|+\left|x_2\right|+\cdots+\left|x_n\right| \text {. }
+$$
+%%<SOLUTION>%%
+设 $a+\mathrm{i} b=\sqrt{\sum_{i=1}^n z_i^2}, a, b \in \mathbf{R}$, 则 $a^2-b^2=\sum_{k=1}^n x_k^2-\sum_{k=1}^n y_k^2, a b= \sum_{k=1}^n x_k y_k$. 若 $r=|a|>\sum_{k=1}^n\left|x_k\right|$, 由于 $\sum_{k=1}^n\left|x_k\right| \geqslant\left(\sum_{k=1}^n x_k^2\right)^{\frac{1}{2}}$, 则 $|a|> \left(\sum_{k=1}^n x_k^2\right)^{\frac{1}{2}}$. 由柯西不等式, 得 $|a| \cdot|b| \leqslant\left(\sum_{k=1}^n x_k^2\right)^{\frac{1}{2}}\left(\sum_{k=1}^n y_k^2\right)^{\frac{1}{2}}$, 从而 $|b| \leqslant \left(\sum_{k=1}^n y_k^2\right)^{\frac{1}{2}}$, 于是 $a^2=\sum_{k=1}^n x_k^2+b^2-\sum_{k=1}^n y_k^2 \leqslant \sum_{k=1}^n x_k^2$ 与 $|a|>\left(\sum_{k=1}^n x_k^2\right)^{\frac{1}{2}}$ 矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 设 $A_n=\frac{a_1+a_2+\cdots+a_n}{n}, a_i>0, i=1,2, \cdots, n$. 求证:
+$$
+\left(A_n-\frac{1}{A_n}\right)^2 \leqslant \frac{1}{n} \sum_{i=1}^n\left(a_i-\frac{1}{a_i}\right)^2 .
+$$
+%%<SOLUTION>%%
+$n \sum_{i=1}^n\left(a_i-\frac{1}{a_i}\right)^2=n \sum_{i=1}^n a_i^2+n \sum_{i=1}^n \frac{1}{a_i^2}-2 n^2 \geqslant\left(\sum_{i=1}^n a_i\right)^2+\left(\sum_{i=1}^n \frac{1}{a_i}\right)^2- 2 n^2 \geqslant n^2\left(A_n^2+\frac{1}{A_n^2}-2\right)=n^2\left(A_n-\frac{1}{A_n}\right)^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 对满足 $1 \leqslant r \leqslant s \leqslant t$ 的一切实数 $r 、 s 、 t$. 求
+$$
+w=(r-1)^2+\left(\frac{s}{r}-1\right)^2+\left(\frac{t}{s}-1\right)^2+\left(\frac{4}{t}-1\right)^2
+$$
+的最小值.
+%%<SOLUTION>%%
+由柯西不等式, 得 $w \geqslant \frac{1}{4}\left[(r-1)+\left(\frac{s}{r}-1\right)+\left(\frac{t}{s}-1\right)+\left(\frac{4}{t}-1\right)\right]^2 =\frac{1}{4}\left(r+\frac{s}{r}+\frac{t}{s}+\frac{4}{t}-4\right)^2$. 又 $r+\frac{s}{r}+\frac{t}{s}+\frac{4}{t} \geqslant 4 \sqrt[4]{r \cdot \frac{s}{r} \cdot \frac{t}{s} \cdot \frac{4}{t}}= 4 \sqrt{2}$, 所以 $w \geqslant 4(\sqrt{2}-1)^2$. 当且仅当 $r=\sqrt{2}, s=2, t=2 \sqrt{2}$ 时, 取等号.
+故 $w_{\min }=4(\sqrt{2}-1)^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 设 $a_i>0, b_i>0, a_i b_i-c_i^2>0(i=1,2, \cdots, n)$, 则
+$$
+\frac{n^3}{\left(\sum_{i=1}^n a_i\right)\left(\sum_{i=1}^n b_i\right)-\left(\sum_{i=1}^n c_i\right)^2} \leqslant \sum_{i=1}^n \frac{1}{a_i b_i-c_i^2} .
+$$
+%%<SOLUTION>%%
+令 $a_i b_i-c_i^2=d_i^2>0$, 则由柯西不等式, 得 $\left(\sum a_i\right)\left(\sum b_i\right) \geqslant\left(\sum \sqrt{a_i b_i}\right)^2=\sum_{i=1}^n \sum_{j=1}^n \sqrt{a_i} \overline{b_i} \sqrt{a_j b_j}=\sum_{i=1}^n \sum_{j=1}^n \sqrt{c_i^2+d_i^2} \sqrt{c_j^2+d_j^2} \geqslant \sum_{i=1}^n \sum_{j=1}^n\left(c_i c_j+d_i d_j\right)=\left(\sum_{i=1}^n c_i\right)^2+\left(\sum_{i=1}^n d_i\right)^2$, 又因为 $\left(\sum_{i=1}^n d_i\right)^2\left(\sum_{i=1}^n d_i^{-2}\right) \geqslant n^3$, 故左边 $\leqslant \frac{n^3}{\left(\sum d_i\right)^2} \leqslant \sum d_i^{-2}$. 等号成立当且仅当 $a_1=a_2=\cdots=a_n, b_1= b_2=\cdots=b_n, c_1=c_2=\cdots=c_n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 设 $\frac{1}{2} \leqslant p \leqslant 1, a_i \geqslant 0,0 \leqslant b_i \leqslant p$ 且 $\sum_{i=1}^n a_i=\sum_{i=1}^n b_i=1$, 求证:
+$$
+\sum_{i=1}^n b_i \prod_{\substack{1 \leqslant j \leqslant n \\ j \neq i}} a_j \leqslant \frac{p}{(n-1)^{n-1}} .
+$$
+%%<SOLUTION>%%
+不妨设 $a_1 \leqslant a_2 \leqslant \cdots \leqslant a_n, b_1 \geqslant b_2 \geqslant \cdots \geqslant b_n$. 令 $A_i=\prod_{\substack{j=1 \\ j \neq i}}^n a_j$, 则 $A_1 \geqslant A_2 \geqslant \cdots \geqslant A_n \geqslant 0$. 由排序不等式, 得 $\sum_{i=1}^n b_i A_i \leqslant b_1 A_1+\left(1-b_1\right) A_2= p A_1+p A_2+\left(-p+1-b_1\right) A_2+\left(b_1-p\right) A_1=p\left(A_1+A_2\right)-\left(p-b_1\right)\left(A_1-\right. \left.A_2\right)+(1-2 p) A_2 \leqslant p\left(A_1+A_2\right)$ (因为 $\frac{1}{2} \leqslant p \leqslant 1$ ). 由 $A_{n-1} \geqslant G_{n-1}$, 得 $A_1+A_2=a_3 a_4 \cdots a_n\left(a_2+a_1\right) \leqslant\left(\frac{1}{n-1} \sum_{i=1}^n a_i\right)^{n-1}=\frac{1}{(n-1)^{n-1}}$, 所以 $\sum_{i=1}^n b_i A_i \leqslant \frac{p}{(n-1)^{n-1}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 已给自然数 $n \geqslant 2$, 求最小正数 $\lambda$, 使得对任意正数 $a_1, a_2, \cdots, a_n$, 及 $\left[0, \frac{1}{2}\right]$ 中任意 $n$ 个数 $b_1, b_2, \cdots, b_n$, 只要
+$$
+\begin{gathered}
+\sum_{i=1}^n a_i=\sum_{i=1}^n b_i=1, \\
+\prod_{i=1}^n a_i \leqslant \lambda \sum_{i=1}^n a_i b_i .
+\end{gathered}
+$$
+就有
+$$
+\prod_{i=1}^n a_i \leqslant \lambda \sum_{i=1}^n a_i b_i
+$$
+%%<SOLUTION>%%
+由柯西不等式, 得 $1=\sum_{i=1}^n b_i \leqslant\left(\sum_{i=1}^n \frac{b_i}{a_i}\right)^{\frac{1}{2}}\left(\sum_{i=1}^n a_i b_i\right)^{\frac{1}{2}}$, 从而 $\frac{1}{\sum_{i=1}^n a_i b_i} \leqslant \sum_{i=1}^n \frac{b_i}{a_i}$. 令 $M=\prod_{i=1}^n a_i, A_i=\frac{M}{a_i}, i=1,2, \cdots, n$, 则 $\frac{M}{\sum_{i=1}^n a_i b_i} \leqslant \sum_{i=1}^n b_i A_i$. 不妨设 $b_1 \geqslant b_2 \geqslant \cdots \geqslant b_n, A_1 \geqslant A_2 \geqslant \cdots \geqslant A_n$, 由排序不等式, 得 $\sum_{i=1}^n b_i A_i \leqslant b_1 A_1+\left(1-b_1\right) A_2$. 由于 $0 \leqslant b_1 \leqslant \frac{1}{2}, A_1 \geqslant A_2$, 所以 $\sum_{i=1}^n b_i A_i \leqslant\frac{1}{2}\left(A_1+A_2\right)=\frac{1}{2}\left(a_1+a_2\right) a_3 \cdots a_n$. 由平均值不等式, 得 $\sum_{i=1}^n b_i A_i \leqslant \frac{1}{2}\left(\frac{1}{n-1}\right)^{n-1}$, 所以 $\lambda \leqslant \frac{1}{2}\left(\frac{1}{n-1}\right)^{n-1}$. 另一方面, 当 $a_1=a_2=\frac{1}{2(n-1)}$, $a_3=\cdots=a_n=\frac{1}{n-1}, b_1=b_2=\frac{1}{2}, b_3=\cdots=b_n=0$ 时, $\prod_{i=1}^n a_i= \frac{1}{2}\left(\frac{1}{n-1}\right)^{n-1} \sum_{i=1}^n a_i b_i$, 所以 $\lambda \geqslant \frac{1}{2}\left(\frac{1}{n-1}\right)^{n-1}$. 故 $\lambda_{\min }=\frac{1}{2}\left(\frac{1}{n-1}\right)^{n-1}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16. 已给两个大于 1 的自然数 $n$ 和 $m$, 求所有的自然数 $l$, 使得对任意正数 $a_1$, $a_2, \cdots, a_n$, 都有
+$$
+\sum_{k=1}^n \frac{1}{S_k}\left(l k+\frac{1}{4} l^2\right)<m^2 \sum_{k=1}^n \frac{1}{a_k}
+$$
+其中, $S_k=\sum_{i=1}^k a_i$.
+%%<SOLUTION>%%
+$\sum_{k=1}^n \frac{1}{S_k}\left(l k+\frac{1}{4} l^2\right)=\sum_{k=1}^n\left[\frac{1}{S_k}\left(\frac{l}{2}+k\right)^2-\frac{k^2}{S_k}\right]=\left(\frac{l}{2}+1\right)^2 \frac{1}{S_1}-\frac{n^2}{S_n}+ \sum_{k=2}^n\left[\frac{1}{S_k}\left(\frac{l}{2}+k\right)^2-\frac{(k-1)^2}{S_{k-1}}\right]$. 由于当 $k=2,3, \cdots, n$ 时, 有 $\frac{1}{S_k}\left(\frac{l}{2}+k\right)^2- \frac{(k-1)^2}{S_{k-1}}=\frac{1}{S_k S_{k-1}}\left[\left(\frac{l}{2}+1\right)^2 S_{k-1}+(l+2)(k-1) S_{k-1}+(k-1)^2\left(S_{k-1}-S_k\right)\right]= \frac{1}{S_k S_{k-1}}\left[\left(\frac{l}{2}+1\right)^2 S_{k-1}-\left(\sqrt{a_k}(k-1)-\left(\frac{l}{2}+1\right) \frac{S_{k-1}}{\sqrt{a_k}}\right)^2+\left(-\frac{l}{2}+1\right)^2 \frac{S_{k-1}^2}{a_k}\right] \leqslant \frac{1}{S_k S_{k-1}}\left(\frac{l}{2}+1\right)^2\left(S_{k-1}+\frac{S_{k-1}^2}{a_k}\right)=\left(\frac{l}{2}+1\right)^2 \frac{1}{a_k}$, 所以 $\sum_{k=1}^n \frac{1}{S_k}\left(l k+\frac{1}{4} l^2\right) \leqslant \left(\frac{l}{2}-\vdash 1\right)^2 \sum_{k=1}^n \frac{1}{a_k}-\frac{n^2}{S_n}<\left(\frac{l}{2}+1\right)^2 \sum_{k=1}^n \frac{1}{a_k}$. 显然, $\frac{l}{2}+1 \leqslant m$, 即 $l \leqslant 2(m-$ 1) 满足所要之条件.
+另一方面, 当 $l>2(m-1)$, 即 $l \geqslant 2 m-1$ 时, 任意给定 $a_1>0$. 令 $a_k==\frac{l+2}{2(k-1)} S_{k-1}, k=2,3, \cdots, n$, 则 $\sum_{k=1}^n \frac{1}{S_k}\left(l k+\frac{1}{4} l^2\right)= \left(\frac{l}{2}+1\right)^2 \sum_{i=1}^n \frac{1}{a_i}-\frac{n^2}{S_n}=\left[\left(\frac{l}{2}+1\right)^2-1\right] \sum_{k=1}^n \frac{1}{a_k}+\sum_{k=1}^n \frac{1}{a_k}-\frac{n^2}{S_n}$. 由 $l \geqslant 2 m-$ 1 , 可推出 $\left(\frac{l}{2}+1\right)^2-1 \geqslant\left(m+\frac{1}{2}\right)^2-1=m^2+m+\frac{1}{4}-1>m^2$. 由柯西不等式, 得 $n^2 \leqslant\left(\sum_{k=1}^n a_k\right)\left(\sum_{k=1}^n \frac{1}{a_k}\right)=S_n \sum_{k=1}^n \frac{1}{a_k}$, 即 $\sum_{k=1}^n \frac{1}{a_k}-\frac{n^2}{S_n} \geqslant 0$. 从而 $\sum_{k=1}^n \frac{1}{S_k}\left(l k+\frac{1}{4} l^2\right)>m^2 \sum_{k=1}^n \frac{1}{a_k}$, 于是 $1,2, \cdots, 2(m-1)$ 是满足要求的所有自然数 $l$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17. 设 $u 、 v$ 是正实数, 对于给定的正整数 $n$, 求: $u 、 v$ 满足的充分必要条件, 使得存在实数 $a_1 \geqslant a_2 \geqslant \cdots \geqslant a_n>0$ 满足
+$$
+\sum_{i=1}^n a_i=u, \sum_{i=1}^n a_i^2=v,
+$$
+当这些数存在时,求 $a_1$ 的最大值与最小值.
+%%<SOLUTION>%%
+若存在 $a_1, a_2, \cdots, a_n$, 由柯西不等式, 得 $\left(\sum_{i=1}^n a_i\right)^2 \leqslant n \sum_{i=1}^n a_i^2$. 又 $\left(\sum_{i=1}^n a_i\right)^2 \geqslant \sum_{i=1}^n a_i^2$, 所以 $u 、 v$ 满足的必要条件是 $v \leqslant u^2 \leqslant n v \cdots$ (1). 可以证明, 以上也为充分条件.
+若(1)成立, 取正数 $a_1=\frac{u+\sqrt{(n-1)\left(n v-u^2\right)}}{n}$, 则 $a_1 \leqslant u$. 
+若 $n>1$ , 再取 $a_2=a_3=\cdots=a_n=\frac{u-a_1}{n-1}$, 则 $\sum_{i=1}^n a_i=u, \sum_{i=1}^n a_i^2=v, a_1 \geqslant \frac{u-a_1}{n-1}$. 可以证明, $a_1$ 的最大值为 $\frac{u+\sqrt{(n-1)\left(n v-u^2\right)}}{n}$. 事实上, 若 $a_1> \frac{u+\sqrt{(n-1)\left(n v-u^2\right)}}{n}$, 则 $n>1$, 且 $n a_1^2-2 u a_1+u^2-(n-1) v>0$, 即 $(n-$ 1) $\left(v-a_1^2\right)<\left(u-a_1\right)^2 \cdots$ (2). 若有 $a_2 \geqslant a_3 \geqslant \cdots \geqslant a_n \geqslant 0$, 使 $\sum_{k=2}^n a_i=u-a_1$, $\sum_{k=2}^n a_k^2=v-a_1^2$, 则由柯西不等式, 得 $\left(u-a_1\right)^2 \leqslant(n-1)\left(v-a_1^2\right)$, 矛盾.
+以下求 $a_1$ 的最小值, 设 $a_1, a_2, \cdots, a_n$ 满足所要之条件, 则对于任何 $1 \leqslant i, j \leqslant n$, 有 $a_i^2+a_j^2 \leqslant\left(a_i+a_j\right)^2 \cdots$ (3). $a_i^2+a_j^2 \leqslant a_i^2+a_j^2+2\left(a_1-a_i\right)\left(a_1-a_j\right)=a_1^2+ \left(a_i+a_j-a_1\right)^2 \cdots$ (4). 若 $n=1$, 显然 $u^2=v$, 且 $a_1=u$, 对 $n \geqslant 2$, 显然 $\frac{u}{n} \leqslant a_1 \leqslant u$. 若存在 $k \in\{1,2, \cdots, n-1\}$, 使得 $a_1 \leqslant \frac{u}{k}$, 则当 $a_i+a_j \leqslant a_1$ 时, 使用(3), $a_i+a_j>a_1$ 时, 使用(4). 重复上述步骤有限次, 得 $v=\sum_{i=1}^n a_i^2 \leqslant k a_1^2+ \left(u-k a_1\right)^2 \cdots$ (5). 进一步, 若 $\frac{u}{k+1} \leqslant a_1 \leqslant \frac{u}{k}$, 由(5)可得 $v=\sum_{i=1}^n a_i^2 \leqslant k a_1^2+ \left(u-k a_1\right)^2 \leqslant \frac{u^2}{k} \cdots$ (6). 由(1)知, $\frac{u^2}{n} \leqslant v \leqslant u^2$, 显然 $v=\frac{u^2}{n}$ 的充要条件为 $a_1= a_2=\cdots=a_n=\frac{u}{n}$. 若 $v>\frac{u^2}{n}$, 则存在 $k \in\{1,2, \cdots, n-1\}$, 使得 $\frac{u^2}{k+1}< v \leqslant \frac{u^2}{k}$. 可以证明 $a_1 \geqslant \frac{k u+\sqrt{k\left[(k+1) v-u^2\right]}}{k(k+1)} \cdots$ (7). 如果(7)不成立, 则存在 $a_1, a_2, \cdots, a_n$ 满足题设中的条件, 且 $a_1<\frac{k u+\sqrt{k\left[(k+1) v-u^2\right]}}{k(k+1)} \cdots$ (8). 由于 $0 飞(k+1) v-u^2 \leqslant \frac{u^2}{k}$, 所以 $a_1 \leqslant \frac{u}{k}$. 由(5)可知 $v \leqslant k a_1^2+\left(u-k a_1\right)^2$, 即 $k(k+1) a_1^2-2 k u a_1+u^2-v \geqslant 0$. 再由 $k^2 u^2-k(k+1)\left(u^2-v\right)=k[(k+1) v- \left.u^2\right]>0$ 和(8)可推出 $a_1 \leqslant \frac{k u-\sqrt{k\left[(k+1) v-u^2\right]}}{k(k+1)}<\frac{u}{k+1}$. 于是存在 $k+ 1 \leqslant m \leqslant n-1$, 使得 $\frac{u}{m+1} \leqslant a_1<\frac{u}{m}$. 由(6)可得 $v \leqslant \frac{u^2}{m} \leqslant \frac{u^2}{k+1}$ 与 $v>\frac{u^2}{k+1}$ 矛盾.
+所以 (7)成立.
+另一方面, 在 $\frac{u^2}{k+1}<v \leqslant \frac{u^2}{k}$ 的条件下, 若 $a_1=\frac{k u+\sqrt{k\left[(k+1) v-u^2\right]}}{k(k+1)}$, 则 $\frac{u}{k+1}<a_1 \leqslant \frac{u}{k}$ 且 $k(k+1) a_1^2-2 k u a_1+u^2- v=0$, 即 $v=k a_1^2+\left(u-k a_1\right)^2$. 令 $a_1=\cdots=a_k=\frac{u}{k}, a_{k+1}=u-k a_1$, $a_{k+2}=\cdots=a_n=0$, 则 $a_1, a_2, \cdots, a_n$ 满足所要条件.
+故当 $\frac{u^2}{k+1}<v \leqslant \frac{u^2}{k}(k \in \{1,2, \cdots, n-1\})$ 时, $a_1$ 的最小值为 $\frac{\left.k n+\sqrt{k[(k+1)} v-u^2\right]}{k(k+1)}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题18. 设 $m$ 个互不相同的正偶数与 $n$ 个互不相同的正奇数之和为 1987 ,对所有这样的 $m$ 与 $n, 3 m+4 n$ 的最大值是多少?
+%%<SOLUTION>%%
+设 $a_1+a_2+\cdots+a_m+b_1+b_2+\cdots+b_n=1987, a_i(1 \leqslant i \leqslant m)$ 为互不相同正偶数, $b_j(1 \leqslant j \leqslant n)$ 是互不相同的正奇数.
+显然, $n$ 为奇数, 且 $a_1+a_2+\cdots+a_m \geqslant 2+4+\cdots+2 m=m(m+1), b_1+b_2+\cdots+b_n \geqslant 1+ 3+\cdots+(2 n-1)=n^2$. 所以 $m^2+m+n^2 \leqslant 1987$, 即 $\left(m+\frac{1}{2}\right)^2+n^2 \leqslant 1987+\frac{1}{4}$. 由柯西不等式, 得 $3\left(m+\frac{1}{2}\right)+4 n \leqslant \sqrt{3^2+4^2} \sqrt{\left(m+\frac{1}{2}\right)^2+n^2} \leqslant 5 \sqrt{1987+\frac{1}{4}}, 3 m+4 n \leqslant 5 \sqrt{1987+\frac{1}{4}}-\frac{3}{2}$. 由于 $3 m+4 n$ 为整数, 所以 $3 m+4 n \leqslant 221$. 易证, $3 m+4 n=221$ 的整数解的一般形式为 $m=71-4 k$, $n=2+3 k, k \in \mathbf{Z}$. 由 $n$ 为奇数, 所以, $k=2 t+1$ 为奇数, $t \in \mathbf{Z}$, 即 $m= 67-8 t, n=5+6 t, t \in \mathbf{Z}$. 因为 $m^2, n^2 \leqslant 1987$, 所以 $m, n<44$, 代入上式, 得 $3 \leqslant t \leqslant 6$. 当 $t=3,4,5,6$ 时, 有解 $(m, n)=(43,23)$ ,(35,29),(27, $35),(19,41)$. 易证 $(m, n)=(27,35)$ 为所求.
+此时, 最小值为 221 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题19. 设 $x_i \in \mathbf{R}(i=1,2, \cdots, n)$ 且 $\sum_{i=1}^n x_i^2=1$, 求证: 对任一整数 $k \geqslant 3$ 存在不全为零的整数 $a_i,\left|a_i\right| \leqslant k-1$. 使得
+$$
+\left|\sum_{i=1}^n a_i x_i\right| \leqslant \frac{(k-1) \sqrt{n}}{k^n-1}
+$$
+%%<SOLUTION>%%
+不妨设 $x_i \geqslant 0$, 考虑 $A=\left\{\sum_{i=1}^n e_i x_i \mid e_i \in\{0,1,2, \cdots, k-1\}\right\}$. 若 $A$ 中的数均不相同, 则 $|A|==k^n$. 由柯西不等式, 得 $0 \leqslant \sum e_i x_i \leqslant(k-$ 1) $\sum x_i \leqslant(k-1) \sqrt{\sum x_i^2} \cdot \sqrt{n}=\sqrt{n}(k-1)$. 所以 $A$ 中的 $k^n$ 个数落在 $[0$, $(k-1) \sqrt{n}]$ 内, 将它分成 $k^n-1$ 个小区间, 每个小区间长 $\frac{(k-1) \sqrt{n}}{k^n-1}$, 依抽庶原理知存在 $\sum e_i x_i, \sum d_i x_i$ 落在同一小区间上(包括端点), 令 $a_i=e_i-d_i$, 则 $\left|a_i\right| \leqslant k-1$, 满足要求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题20. 设 $s, t, u, v \in\left(0, \frac{\pi}{2}\right)$, 满足 $s+t+u+v=\pi$, 证明: $\frac{\sqrt{2} \sin s-1}{\cos s}+$
+%%<SOLUTION>%%
+令 $a=\tan s, b=\tan t, c=\tan u, d=\tan v$, 则 $a, b, c, d \in \mathbf{R}^{+}$, 由 $s+t+u+v=\pi$, 得 $\tan (s+t)+\tan (u+v)=0$. 即 $\frac{a+b}{1-a b}+\frac{c+d}{1-c d}=$ 0 . 两边乘以 $(1-a b)(1-c d)$, 得 $a+b+c+d=a b c+b c d+c d a+d a b$. 推出 $(a+b)(a+c)(a+d)=\left(a^2+1\right)(a+b+c+d)$, 即 $\frac{a^2+1}{a+b}= \frac{(a+c)(a+d)}{a+b+c+d}$. 类似, 得到 $\frac{a^2+1}{a+b}+\frac{b^2+1}{b+c}+\frac{c^2+1}{c+d}+\frac{d^2+1}{d+a}=a+b+c+ d$. 由柯西不等式, 得 $2(a+b+c+d)^2=2(a+b+c+$ d) $\left(\frac{a^2+1}{a+b}+\frac{b^2+1}{b+c}+\frac{c^2+1}{c+d}+\frac{d^2+1}{d+a}\right) \geqslant\left(\sqrt{a^2+1}+\sqrt{b^2+1}+\sqrt{c^2+1}+\right. \left.\sqrt{d^2+1}\right)^2$, 即 $\sqrt{a^2+1}+\sqrt{b^2+1}+\sqrt{c^2+1}+\sqrt{d^2+1} \leqslant \sqrt{2}(a+b+c+ d)$, 等价于 $\frac{1}{\cos s}+\frac{1}{\cos t}+\frac{1}{\cos u}+\frac{1}{\cos v} \leqslant \sqrt{2}\left(\frac{\sin s}{\cos s}+\frac{\sin t}{\cos t}+\frac{\sin u}{\cos u}+\frac{\sin v}{\cos v}\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题21. 证明:
+$$
+\sqrt{\frac{A B_1}{A B}}+\sqrt{\frac{B C_1}{B C}}+\sqrt{\frac{C A_1}{C A}} \leqslant \frac{3}{\sqrt{2}},
+$$
+其中, $A_1 、 B_1 、 C_1$ 分别为 $\triangle A B C$ 的内切圆与边 $B C 、 A C 、 A B$ 的切点.
+%%<SOLUTION>%%
+设 $x=A B_1, y=B C_1, z=C A_1$. 要证 $\sqrt{\frac{x}{x+y}}+\sqrt{\frac{y}{y+z}}+\sqrt{\frac{z}{z+x}} \leqslant \frac{3}{\sqrt{2}}$, 即证 $\frac{1}{\sqrt{1+a^2}}+\frac{1}{\sqrt{1+b^2}}+\frac{1}{\sqrt{1+c^2}} \leqslant \frac{3}{\sqrt{2}}$, 其中 $a, b, c$ 为正实数, 且 $a b c=1$. 不妨设 $a b \leqslant 1$. 由柯西一施瓦兹不等式得 $\frac{1}{\sqrt{1+a^2}}+ \frac{1}{\sqrt{1+b^2}} \leqslant \sqrt{2\left(\frac{1}{1+a^2}+\frac{1}{1+b^2}\right)}, \frac{1}{1+a^2}+\frac{1}{1+b^2}=1+\frac{1-a^2 b^2}{\left(1+a^2\right)\left(1+b^2\right)} \leqslant 1+ \frac{1-a^2 b^2}{(1+a b)^2}=\frac{2}{1+a b}, \frac{1}{\sqrt{1+c^2}} \leqslant \frac{\sqrt{2}}{1+c}$. 由算术一几何均值不等式得 $\frac{1}{\sqrt{1+a^2}}+ \frac{1}{\sqrt{1+b^2}}+-\frac{1}{\sqrt{1+c^2}} \leqslant 2 \sqrt{\frac{c}{1+c}}+\frac{\sqrt{2}}{1+c}=\frac{\sqrt{2}}{1+c}[\sqrt{2 c(c+1)}+1] \leqslant \frac{\sqrt{2}}{1+c}\left(\frac{2 c+c+1}{2}+1\right)==\frac{3}{\sqrt{2}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题22. $a_1, a_2, a_3, a_4$ 是周长为 $2 s$ 的四边形的四边长, 证明: $\sum_{i=1}^4 \frac{1}{a_i+s} \leqslant$
+$$
+\frac{2}{9} \sum_{1 \leqslant i<j \leqslant 4} \frac{1}{\sqrt{\left(s-a_i\right)\left(s-a_j\right)}} .
+$$
+%%<SOLUTION>%%
+证明: 因为 $\frac{2}{9} \sum_{1 \leqslant i<j \leqslant 4} \frac{1}{\sqrt{\left(s-a_i\right)\left(s-a_j\right)}} \geqslant \frac{4}{9} \sum_{1 \leqslant i<j \leqslant 4} \frac{1}{\left(s-a_i\right)\left(s-a_j\right)} \cdots$ (1). 所以只要证明: $\sum_{i=1}^4 \frac{1}{a_i+s} \leqslant \frac{4}{9} \sum_{1 \leqslant i<j \leqslant 4} \frac{1}{\sqrt{\left(s-a_i\right)\left(s-a_j\right)}}$. 记 $a_1==a, a_2=b$, $a_3=c, a_4=d$. 上式等价于 $\frac{2}{9}\left(\frac{1}{a+b}+\frac{1}{a+c}+\frac{1}{a+d}+\frac{1}{b+c}+\frac{1}{b+d}+\frac{1}{c+d}\right) \geqslant \frac{1}{3 a+b+c+d}+\frac{1}{a+3 b+c+d}+\frac{1}{a+b+3 c+d}+\frac{1}{a+b+c+3 d}$. 由柯西不等式, 可得 $(3 a+b+c+d)\left(\frac{1}{a+b}+\frac{1}{a+c}+\frac{1}{a+d}\right) \geqslant 9$, 即 $\frac{1}{9}\left(\frac{1}{a+b}+\frac{1}{a+c}+\frac{1}{a+d}\right) \geqslant \frac{1}{3 a+b+c+d}$. 轮换相加即得(1). 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题23. 设 $a 、 b 、 c$ 是一个三角形的三边长.
+证明:
+$$
+\frac{\sqrt{b+c-a}}{\sqrt{b}+\sqrt{c}-\sqrt{a}}+\frac{\sqrt{c+a-b}}{\sqrt{c}+\sqrt{a}-\sqrt{b}}+\frac{\sqrt{a+b-c}}{\sqrt{a}+\sqrt{b}-\sqrt{c}} \leqslant 3 .
+$$
+%%<SOLUTION>%%
+不妨设 $a \geqslant b \geqslant c$. 于是, $\sqrt{a+b-c}-\sqrt{a}=\frac{(a+b-c)-a}{\sqrt{a+b-c}+\sqrt{a}} \leqslant \frac{b-c}{\sqrt{b}+\sqrt{c}}=\sqrt{b}-\sqrt{c}$. 因此, $\frac{\sqrt{a+b-c}}{\sqrt{a}+\sqrt{b}-\sqrt{c}} \leqslant 1 \cdots$ (1). 设 $p=\sqrt{a}+\sqrt{b}, q=\sqrt{a}-\sqrt{b}$. 则 $a-b=p q, p \geqslant 2 \sqrt{c}$. 由柯西不等式有 $\left(\frac{\sqrt{b+c-a}}{\sqrt{b}+\sqrt{c}-\sqrt{a}}+\frac{\sqrt{c+a-b}}{\sqrt{c}+\sqrt{a}-\sqrt{b}}\right)^2= \left(\frac{\sqrt{c-p q}}{\sqrt{c}-q}+\frac{\sqrt{c+p q}}{\sqrt{c}+q}\right)^2 \leqslant\left(\frac{c-p q}{\sqrt{c}-q}+\frac{c+p q}{\sqrt{c}+q}\right)\left(\frac{1}{\sqrt{c}-q}+\frac{1}{\sqrt{c}+q}\right)=\frac{2\left(c \sqrt{c}-p q^2\right)}{c-q^2}$. $\frac{2 \sqrt{c}}{c-q^2}=4 \times \frac{c^2-\sqrt{c} p q^2}{\left(c-q^2\right)^2} \leqslant 4 \times \frac{c^2-2 c q^2}{\left(c-q^2\right)^2} \leqslant 4$. 从而, $\frac{-\sqrt{b+c-a}}{\sqrt{b}+\sqrt{c}-\sqrt{a}}+\frac{\sqrt{c}+a-b}{\sqrt{c}+\sqrt{a}-\sqrt{b}} \leqslant 2$. 结合式(1)即得所证不等式.
+%%PROBLEM_END%%
+
+

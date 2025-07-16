@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题13. 在凸四边形 $A B C D$ 中, $\\angle A D C 、 \\angle B C D$ 均大于 $90^{\\circ}$, 设点 $E$ 是直线 $A C$ 与过点 $B$ 而平行于 $A D$ 的直线的交点, 点 $F$ 是直线 $B D$ 与过点 $A$ 而平行于 $B C$ 的直线的交点.\n证明: $E F / / C D$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c1a13.png>), 设 $P$ 是对角线 $A C$ 和 $B D$ 的交点.\n为证 $C D / / E F$, 只需证 $\\frac{P E}{P F}=\\frac{P C}{P D}$. 因为 $B C / / A F, \\triangle P B C \\backsim \\triangle P F A$, 所以, $\\frac{P F}{P B}=\\frac{P A}{P C}$, 即 $P F= \\frac{P A \\cdot P B}{P C}$. 因为 $A D / / B E, \\triangle P A D \\backsim \\triangle P E B$, 所以, $\\frac{P E}{P A}=\\frac{P B}{P D}$, 即 $P E= \\frac{P A \\cdot P B}{P D}$. 于是, $\\frac{P E}{P F}=\\frac{\\frac{P A \\cdot P B}{P D}}{\\frac{P A \\cdot P B}{P C}}=\\frac{P C}{P D}$. 因此, $C D / / E F$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1a13.png"
+    ]
+}

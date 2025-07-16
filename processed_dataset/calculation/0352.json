@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 设 $0<a_1 \\leqslant a_2 \\leqslant \\cdots \\leqslant a_n<\\pi, a_1+a_2+\\cdots+a_n=A$, 求 $\\sin a_1+ \\sin a_2+\\cdots+\\sin a_n$ 的最大值.",
+    "solution": "仿上题方法, 可求得 $\\sin a_1+\\sin a_2+\\cdots+\\sin a_n$ 的最大值为 $n \\sin \\frac{A}{n}$.",
+    "remark": "",
+    "figures": []
+}

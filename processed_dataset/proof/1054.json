@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题14. 任给 13 个不同的实数,求证: 至少存在两个,不妨设 $x$ 和 $y$, 满足 $0< \\frac{x-y}{1+x y} \\leqslant 2-\\sqrt{3}$.",
+    "solution": "任给的 13 个实数分别记作 $\\tan \\theta_i, \\theta_i \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right), i=1,2$, $3, \\cdots, 13$, 将 $\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$ 等分成 12 个区间, 则 $\\theta_i$ 中至少有两个角的终边落在同一区间内, 不妨设这两个角为 $\\alpha$ 、 $\\beta$ 且 $\\alpha \\geqslant \\beta$, 即 $0 \\leqslant \\alpha-\\beta \\leqslant \\frac{\\pi}{12}$, 令 $x=\\tan \\alpha$, $y=\\tan \\beta$, 则 $\\frac{x-y}{1+x y}=\\tan (\\alpha-\\beta)$, 从而 $0 \\leqslant \\frac{x-y}{1+x y} \\leqslant 2-\\sqrt{3}$.",
+    "remark": "",
+    "figures": []
+}

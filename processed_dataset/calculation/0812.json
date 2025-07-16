@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-2.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 设非负实数 $a$ 和 $d$, 正数 $b$ 和 $c$, 满足条件 $b+c \\geqslant a+d$, 求 $\\frac{b}{c+d}+ \\frac{c}{a+b}$ 的最小值.",
+    "solution": "解:不妨设 $a+b \\geqslant c+d$. 因为 $\\frac{b}{c+d}+\\frac{c}{a+b}=\\frac{b+c}{c+d}- c\\left(\\frac{1}{c+d}-\\frac{1}{a+b}\\right)$, 注意到 $c \\leqslant c+d$ 及 $b+c \\geqslant a+d \\Leftrightarrow b+c \\geqslant \\frac{1}{2}(a+b+ c+d)$. 因此, 得\n$$\n\\begin{aligned}\n\\frac{b}{c+d}+\\frac{c}{a+b} & \\geqslant \\frac{1}{2} \\frac{a+b+c+d}{c+d}-(c+d)\\left(\\frac{1}{c+d}-\\frac{1}{a+b}\\right) \\\\\n& =\\frac{1}{2} \\frac{a+b}{c+d}+\\frac{c+d}{a+b}-\\frac{1}{2} \\geqslant 2 \\sqrt{\\frac{a+b}{2(c+d)} \\frac{c+d}{a+b}}-\\frac{1}{2} \\\\\n& =\\sqrt{2}-\\frac{1}{2} .\n\\end{aligned}\n$$\n等号成立当且仅当 $a=\\sqrt{2}+1, b=\\sqrt{2}-1, c=2, d=0$, 所以 $\\frac{b}{c+d}+ \\frac{c}{a+b}$ 的最小值为 $\\sqrt{2}-\\frac{1}{2}$.",
+    "remark": "",
+    "figures": []
+}

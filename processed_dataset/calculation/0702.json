@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题27 教室的墙壁上挂着一块黑板, 它的上下边缘分别在学生的水平视线上方 $a$ 米和 $b$ 米, 问学生距墙壁多远时看黑板的视角最大?",
+    "solution": "设学生 $P$ 距墙壁 $x$ 米,黑板上、下边缘与学生 $P$ 的水平视线 $P H$ 夹角分别为 $\\angle A P H=\\alpha, \\angle B P H=\\beta$, 其中 $\\alpha>\\beta$, 有 $\\tan \\alpha=\\frac{a}{x}, \\tan \\beta=\\frac{b}{x}$, 则 $\\tan (\\alpha-\\beta)=\\frac{\\tan \\alpha-\\tan \\beta}{1+\\tan \\alpha \\tan \\beta}=\\frac{\\frac{a}{x}-\\frac{b}{x}}{1+\\frac{a b}{x^2}} \\leqslant \\frac{a-b}{2 \\sqrt{x \\cdot \\frac{a b}{x}}}=\\frac{a-b}{2 \\sqrt{a b}}$, 当且仅当 $x= \\frac{a b}{x}$ 即 $x=\\sqrt{a b}$ 时, $\\tan (\\alpha-\\beta)$ 取最大值 $\\frac{a-b}{2 \\sqrt{a b}}$, 由于 $\\alpha-\\beta$ 为锐角, 故此时 $\\alpha-\\beta$ 也最大, 即学生距墙壁 $\\sqrt{a b}$ 米时看黑板的视角最大, 最大视角为 $\\arctan \\frac{a-b}{2 \\sqrt{a b}}$.",
+    "remark": "",
+    "figures": []
+}

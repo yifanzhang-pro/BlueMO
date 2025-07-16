@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设 $X=\\{0,1,2, \\cdots, 9\\}, F=\\left\\{A_1, A_2, \\cdots, A_k\\right\\}$ 中的每个元素 $A_i$ 都是 $X$ 的非空子集, 且对任何 $1 \\leqslant i<j \\leqslant k$, 有 $\\left|A_i \\cap A_j\\right| \\leqslant 2$, 求 $k$ 的最大值.",
+    "solution": "设 $F$ 合乎条件, 要使 $|F|$ 最大, 注意到 $\\left|A_i \\cap A_j\\right| \\leqslant 2$, 应取一些元素个数较少的集合归人 $F$. 显然,所有满足 $\\left|A_i\\right| \\leqslant 2$ 的集合都可归人 $F$. 其次, 所有满足 $\\left|A_i\\right| \\leqslant 3$ 的集合也可归人 $F$. 实际上,考察 $F$ 中任意两个集合 $A_i$ 、 $A_j$. 当 $A_i 、 A_j$ 中有一个集合, 比如 $A_i$, 使 $\\left|A_i\\right| \\leqslant 2$ 时,则有 $\\left|A_i \\cap A_j\\right| \\leqslant 2$; 当 $\\left|A_i\\right|=\\left|A_j\\right|=3$ 时, 若 $\\left|A_i \\cap A_j\\right|>2$, 则 $\\left|A_i \\cap A_j\\right|=3$, 所以 $A_i=A_j$, 矛盾.\n于是, $|F|_{\\text {max }} \\geqslant \\mathrm{C}_{10}^1+\\mathrm{C}_{10}^2+\\mathrm{C}_{10}^3=175$. 上述构造的 $F$ 是饱和的, 即不能再放进任何一个集合.\n但这并不能说明 $|F|$ 最大.\n下面证明 $|F| \\leqslant 175$. 反设 $|F|>175$, 则必有 $F$ 中的一个集合, 设为 $A$, 使 $|A|>3$. 取 $A$ 的任意一个三元子集 $A^{\\prime}$, 由于 $\\left|A \\cap A^{\\prime}\\right|=3>2, A$ 在 $F$ 中, 所以 $A^{\\prime}$ 不在 $F$ 中.\n将 $F$ 中的 $A$ 换作 $A^{\\prime}$, 得到 $F^{\\prime}$, 则 $F^{\\prime}$ 也合乎条件.\n如此下去, 可将 $F$ 中的所有元素个数多于 3 的集合都换作 3 元集合,所得到的 $F^*$ 仍合乎条件.\n但此时 $|F|= \\left|F^*\\right| \\leqslant 175$,矛盾.",
+    "remark": "",
+    "figures": []
+}

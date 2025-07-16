@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例10. 设 $n$ 是正整数, 且 $n \\geqslant 3$. 又设 $a_1, a_2, \\cdots, a_n$ 是实数, 其中 $2 \\leqslant a_i \\leqslant 3, i=1,2, \\cdots, n$. 若取 $S=a_1+a_2+\\cdots+a_n$, 求证:\n$$\n\\frac{a_1^2+a_2^2-a_3^2}{a_1+a_2-a_3}+\\frac{a_2^2+a_3^2-a_4^2}{a_2+a_3-a_4}+\\cdots+\\frac{a_n^2+a_1^2-a_2^2}{a_n+a_1-a_2} \\leqslant 2 S-2 n .\n$$",
+    "solution": "分析:为了处理右边的 $2 S$ 可以采用类似\"分母有理化\"的方法, 从左边每一项中分离出 $a_i+a_{i+1}+a_{i+2}$, 它们的一部分和恰为 $2 S$.\n证明 $\\frac{a_i^2+a_{i+1}^2-a_{i+2}^2}{a_i+a_{i+1}-a_{i+2}}=a_i+a_{i+1}+a_{i+2}-\\frac{2 a_i a_{i+1}}{a_i+a_{i+1}-a_{i+2}}$.\n注意到 $1=2+2-3 \\leqslant a_i+a_{i+1}-a_{i+2} \\leqslant 3+3-2=4$, 并且由 $\\left(a_i-\\right. 2)\\left(a_{i+1}-2\\right) \\geqslant 0$ 可得 $-2 a_i a_{i+1} \\leqslant-4\\left(a_i+a_{i+1}-2\\right)$, 所以\n$$\n\\begin{aligned}\n& \\frac{a_i^2+a_{i+1}^2-a_{i+2}^2}{a_i+a_{i+1}-a_{i+2}} \\\\\n\\leqslant & a_i+a_{i+1}+a_{i+2}-4 \\cdot \\frac{a_i+a_{i+1}-2}{a_i+a_{i+1}-a_{i+2}} \\\\\n= & a_i+a_{i+1}+a_{i+2}-4\\left(1+\\frac{a_{i+2}-2}{a_i+a_{i+1}-a_{i+2}}\\right) \\\\\n\\leqslant & a_i+a_{i+1}+a_{i+2}-4\\left(1+\\frac{a_{i+2}-2}{4}\\right)\n\\end{aligned}\n$$\n$$\n=a_i+a_{i+1}-2 .\n$$\n记 $a_{n+1}=a_1, a_{n+2}=a_2$. 在上式中令 $i=1,2, \\cdots, n$, 得 $n$ 个不等式, 再依次相加, 得\n$$\n\\frac{a_1^2+a_2^2-a_3^2}{a_1+a_2-a_3}+\\frac{a_2^2+a_3^2-a_4^2}{a_2+a_3-a_4}+\\cdots+\\frac{a_n^2+a_1^2-a_2^2}{a_n+a_1-a_2} \\leqslant 2 S-2 n .\n$$",
+    "remark": "",
+    "figures": []
+}

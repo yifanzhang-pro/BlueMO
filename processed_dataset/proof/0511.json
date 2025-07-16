@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 把连接圆周上 9 个不同点的 36 条边染成红色或蓝色.\n假定由 9 个点中每 3 个点所确定的三角形都含有红边, 证明有 4 个点, 其中每两点连的都是红边.",
+    "solution": "取两色完全图 $K_9$ 的顶点 $A$, 若 $A$ 连有 4 条蓝边 $A A_1, A A_2, A A_3$, $A A_4$, 则 $K_9$ 中以 $A_1, A_2, A_3, A_4$ 为顶点的完全子图 $K_4$ 不含蓝边.\n如果 $A$ 连有 6 条红边 $A A_1, A A_2, \\cdots, A A_6$, 则 $K_9$ 中以 $A_1, \\cdots, A_6$ 为顶点的完全子图含有同色三角形 $\\triangle A_i A_j A_k(1 \\leqslant i, j, k \\leqslant 6)$. 由于 $K_9$ 不含蓝色三角形, 故 $\\triangle A_i A_j A_k$ 是红色三角形.\n则 $A, A_i, A_j, A_k$ 为顶点的完全子图 $K_4$ 是红色的.\n如果 $K_9$ 中每一顶点都恰好连有 5 条红边, 则 $K_9$ 中红边数为 $\\frac{5 \\times 9}{2}$, 不可能.",
+    "remark": "",
+    "figures": []
+}

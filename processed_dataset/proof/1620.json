@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设 $x_1, \\cdots, x_n$ 为任意实数.\n证明:\n$$\n\\sum_{i=1}^n \\frac{x_i}{1+x_1^2+\\cdots+x_i^2}<\\sqrt{n} .\n$$",
+    "solution": "不妨设 $x_1, \\cdots, x_n \\geqslant 0$. 当 $n=1$ 时, $\\frac{x_1}{1+x_1^2} \\leqslant \\frac{1}{2}<1$, 故命题对 $n=$ 1 成立.\n设命题对 $n$ 成立, 考虑 $n+1$ 的情形, 令 $y_{i-1}=\\frac{x_i}{\\sqrt{1+x_1^2}}, i=2,3, \\cdots$, $n+1$, 则\n$$\n\\begin{aligned}\n\\sum_{i=1}^{n+1} \\frac{x_i}{1+x_1^2+\\cdots+x_i^2} & =\\frac{x_1}{1+x_1^2}+\\frac{1}{\\sqrt{1+x_1^2}} \\sum_{i=1}^n \\frac{y_i}{1+y_1^2+\\cdots+y_i^2} \\\\\n& <\\frac{x_1}{1+x_1^2}+\\frac{\\sqrt{n}}{\\sqrt{1+x_1^2}} .\n\\end{aligned}\n$$\n现设 $x_1=\\tan \\alpha, 0 \\leqslant \\alpha<\\frac{\\pi}{2}$, 则\n$$\n\\begin{aligned}\n\\frac{x_1}{1+x_1^2}+\\frac{\\sqrt{n}}{\\sqrt{1+x_1^2}} & =\\sin \\alpha \\cos \\alpha+\\sqrt{n} \\cos \\alpha \\leqslant \\sin \\alpha+\\sqrt{n} \\cos \\alpha \\\\\n& =\\sqrt{n+1} \\sin (\\alpha+\\varphi) \\leqslant \\sqrt{n+1},\n\\end{aligned}\n$$\n这里 $\\varphi=\\arctan \\sqrt{n}$.\n所以, 当 $n+1$ 时命题成立, 获证.\n说明此题还有一个巧妙的解答: 记 $x_0=0$, 则由 Cauchy 不等式知\n$$\n\\begin{aligned}\n\\left(\\sum_{i=1}^n \\frac{x_i}{1+x_1^2+\\cdots+x_i^2}\\right)^2 & \\leqslant n \\sum_{i=1}^n \\frac{x_i^2}{\\left(1+x_1^2+\\cdots+x_i^2\\right)^2} \\\\\n& \\leqslant n \\sum_{i=1}^n \\frac{x_i^2}{\\left(1+x_0^2+\\cdots+x_{i-1}^2\\right)\\left(1+x_0^2+\\cdots+x_i^2\\right)} \\\\\n& =n \\sum_{i=1}^n\\left(\\frac{1}{1+x_0^2+\\cdots+x_{i-1}^2}-\\frac{1}{1+x_0^2+\\cdots+x_i^2}\\right) \\\\\n& =n\\left(1-\\frac{1}{1+x_0^2+\\cdots+x_n^2}\\right) \\\\\n& <n .\n\\end{aligned}\n$$\n故原不等式成立.",
+    "remark": "",
+    "figures": []
+}

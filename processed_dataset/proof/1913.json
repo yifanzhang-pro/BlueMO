@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 已知 $\\triangle A B C$ 的外心为 $O, P$ 为 $O A$ 延长线上一点,直线 $l$ 与 $P B$ 关于 $B A$ 对称, 直线 $h$ 与 $P C$ 关于 $A C$ 对称, $l$ 与 $h$ 交于点 $Q$. 若 $P$ 在 $O A$ 的延长线上运动,求 $Q$ 的轨迹.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c8a6.png>), 延长 $A O$ 至 $R$, 使得 $O R=O A$, 连结 $R C, P C$, 设 $h$ 与 $A O$ 交于点 $Q_1$, 注意到 $A C \\perp C R$ 以及 $h 、 C P$ 关于 $A C$ 边对称, 于是 $C R 、 C A 、 h 、 C P$ 成调和线束, 于是 $R 、 A 、 Q_1 、 P$ 成调和点列, 因此 $h$ 过 $A O$ 上满足 $P 、 Q_0 、 A 、 R$ 成调和点列的点 $Q_0$, 同理, $l$ 也过该点, 即 $Q=Q_0$ 为 $A O$ 上满足 $P 、 Q_0 、 A 、 R$ 成调和点列的点,故 $Q$ 的轨迹为线段 $A O$ 内部.\n(注: 在学了下一章反演的知识后, 读者就会发现, $Q$ 与 $P$ 关于 $\\triangle A B C$ 外接圆互为反演点.)",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8a6.png"
+    ]
+}

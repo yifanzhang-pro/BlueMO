@@ -1,0 +1,171 @@
+
+%%TEXT_BEGIN%%
+4.5 带参数的柯西不等式如果 $a_i, b_i \in \mathbf{R}, \lambda_i>0, i=1,2, \cdots, n$, 则
+$$
+\left(\sum_{i=1}^n a_i b_i\right)^2 \leqslant \sum_{i=1}^n \lambda_i a_i^2 \cdot \sum_{i=1}^n \frac{1}{\lambda_i} b_i^2 .
+$$
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知正实数 $a 、 b 、 c 、 d$ 满足
+$$
+a\left(c^2-1\right)=b\left(b^2+c^2\right),
+$$
+且 $d \leqslant 1$. 证明:
+$$
+d\left(a \sqrt{1-d^2}+b^2 \sqrt{1+d^2}\right) \leqslant \frac{(a+b) c}{2} .
+$$
+%%<SOLUTION>%%
+证明:设参数 $\lambda>1$, 由柯西不等式得
+$$
+\begin{aligned}
+& d\left(a \sqrt{1-d^2}+b^2 \sqrt{1+d^2}\right) \\
+\leqslant & d \sqrt{\left(\frac{a^2}{\lambda}+b^4\right)\left[\left(1-d^2\right) \lambda+\left(1+d^2\right)\right]} \\
+= & \sqrt{\left(\frac{a^2}{\lambda}+b^4\right)\left[(1-\lambda) d^4+(\lambda+1) d^2\right]} \\
+\leqslant & \sqrt{\frac{1}{\lambda-1}\left(\frac{a^2}{\lambda}+b^4\right)} \cdot \frac{\lambda+1}{2} .
+\end{aligned}
+$$
+由已知条件知 $c^2=\frac{a+b^3}{a-b}$. 故 $a>b$, 取 $\lambda=\frac{a}{b}$. 则
+$$
+\frac{\lambda+1}{2} \sqrt{\frac{1}{\lambda-1}\left(\frac{a^2}{\lambda}+b^4\right)}=\frac{a+b}{2} \sqrt{\frac{a+b^3}{a-b}}=\frac{(a+b) c}{2} .
+$$
+所以, 命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $p, q \in \mathbf{R}^{+}, x \in\left(0, \frac{\pi}{2}\right)$, 试求
+$$
+\frac{p}{\sqrt{\sin x}}+\frac{q}{\sqrt{\cos x}}
+$$
+的最小值.
+%%<SOLUTION>%%
+解:由柯西不等式, 得
+$$
+(\sqrt{p m}+\sqrt{q m})^2 \leqslant\left(\frac{p}{\sqrt{\sin x}}+\frac{q}{\sqrt{\cos x}}\right)(m \sqrt{\sin x}+n \sqrt{\cos x}),
+$$
+当且仅当 $\frac{\frac{p}{\sqrt{\sin x}}}{m \sqrt{\sin x}}=\frac{\frac{q}{\sqrt{\cos x}}}{n \sqrt{\cos x}}$ 时, 等号成立.
+故
+$$
+\tan x=\frac{n p}{m q} .
+$$
+又 $(m \sqrt{\sin x}+n \sqrt{\cos x})^2==\left(\frac{m}{a} \cdot a \sqrt{\sin x}+\frac{n}{b} \cdot b \sqrt{\cos x}\right)^2$
+$$
+\begin{aligned}
+& \leqslant\left(\frac{m^2}{a^2}+\frac{n^2}{b^2}\right)\left(a^2 \sin x+b^2 \cos x\right) \\
+& \leqslant\left(\frac{m^2}{a^2}+\frac{n^2}{b^2}\right) \sqrt{a^4+b^4},
+\end{aligned}
+$$
+当且仅当 $\tan x=\frac{a^2}{b^2}, \frac{a^2 \sin x}{\frac{m^2}{a^2}}=\frac{b^2 \cos x}{\frac{n^2}{b^2}}$ 时, 即 $\tan x=\frac{b^4 m^2}{a^4 n^2}=\frac{a^2}{b^2}$ 时, 等号成立.
+故
+$$
+\frac{m}{n}=\frac{a^3}{b^3}, \tan x=\left(\frac{m}{n}\right)^{\frac{2}{3}},
+$$
+且 $\quad m \sqrt{\sin x}+n \sqrt{\cos x} \leqslant\left(m^{\frac{4}{3}}+n^{\frac{4}{3}}\right)^{\frac{3}{4}}$,
+从而
+$$
+\begin{aligned}
+& \left(\frac{m}{n}\right)^{\frac{2}{3}}=\frac{n p}{m q}, \\
+& \frac{m}{n}=\left(\frac{p}{q}\right)^{\frac{3}{5}} .
+\end{aligned}
+$$
+令 $m=p^{\frac{3}{5}}, n=q^{\frac{3}{5}}$, 得
+$$
+\frac{p}{\sqrt{\sin x}}+\frac{q}{\sqrt{\cos x}} \geqslant \frac{(\sqrt{p m}+\sqrt{n q})^2}{\left(m^{\frac{4}{3}}+n^{\frac{4}{3}}\right)^{\frac{3}{4}}}=\left(p^{\frac{4}{5}}+q^{\frac{4}{5}}\right)^{\frac{5}{4}},
+$$
+当且仅当 $\tan x=\left(\frac{m}{n}\right)^{\frac{2}{3}}=\left[\left(\frac{p}{q}\right)^{\frac{3}{5}}\right]^{\frac{2}{3}}=\left(\frac{p}{q}\right)^{\frac{2}{5}}$ 时, 等号成立.
+%%<REMARK>%%
+注:这里, 在两次利用柯西不等式时, 引进了参数 $n 、 m 、 a 、 b$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. (1)设 3 个正实数 $a 、 b 、 c$ 满足
+$$
+\left(a^2+b^2+c^2\right)^2>2\left(a^4+b^4+c^4\right),
+$$
+求证: $a 、 b 、 c$ 一定是某个三角形的 3 条边长;
+(2)设 $n$ 个正实数 $a_1, a_2, \cdots, a_n$ 满足
+$$
+\left(a_1^2+a_2^2+\cdots+a_n^2\right)^2>(n-1)\left(a_1^4+a_2^4+\cdots+a_n^4\right) .
+$$
+求证: 这些数中任意 3 个一定是某个三角形的 3 条边长.
+%%<SOLUTION>%%
+证明:(1) 不妨设 $a \geqslant b \geqslant c>0$, 由题设,得
+$$
+\left(a^2+b^2+c^2\right)^2-2\left(a^4+b^4+c^4\right)>0 .
+$$
+分解因式, 得
+$$
+(a+b+c)(a+b-c)(a+c-b)(b+c-a)>0,
+$$
+所以 $b+c-a>0$, 即 $b+c>a$, 从而 $a, b, c$ 是某个三角形的 3 条边长;
+(2) 在 $a_1, a_2, \cdots, a_n$ 中任取 3 个, 不妨设为 $a_1, a_2, a_3$. 由带参数的柯西不等式,得
+$$
+\begin{aligned}
+&(n-1)\left(\sum a_i^4\right) \\
+&<\left(\sum_{i=1}^n a_i^2\right)^2 \\
+&= {\left[\lambda\left(a_1^2+a_2^2+a_3^2\right) \cdot \frac{1}{\lambda}+\sum_{i=4}^n a_i^2\right]^2 } \\
+& \leqslant {\left[\lambda^2\left(a_1^2+a_2^2+a_3^2\right)^2+\sum_{i=4}^n a_i^4\right]\left(\frac{1}{\lambda^2}+n-3\right) . } \\
+& \text { 令 } \frac{1}{\lambda^2}+n-3=n-1, \text { 即 } \lambda=\sqrt{\frac{1}{2}}, \text { 所以 } \\
+& \quad\left(a_1^2+a_2^2+a_3^2\right)^2>2\left(a_1^4+a_2^4+a_3^4\right) .
+\end{aligned}
+$$
+由 (1) 知, $a_1, a_2, a_3$ 为某个三角形的三边长.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $a=\left(a_1, a_2, \cdots, a_n\right)$ 和 $b=\left(b_1, b_2, \cdots, b_n\right)$ 是两个不成比例的实数序列, 又设 $x=\left(x_1, x_2, \cdots, x_n\right)$ 是使
+$$
+\sum_{i=1}^n a_i x_i=0, \sum_{i=1}^n b_i x_i=1
+$$
+成立的任意实数序列.
+求证:
+$$
+\sum_{i=1}^n x_i^2 \geqslant \frac{A}{A B-C^2},
+$$
+其中 $A=\sum_{i=1}^n a_i^2, B=\sum_{i=1}^n b_i^2, C=\sum_{i=1}^n a_i b_i$.
+%%<SOLUTION>%%
+证明:对任意实数 $\lambda$,由柯西不等式,得
+$$
+\left(\sum_{i=1}^n x_i^2\right) \sum_{i=1}^n\left(a_i \lambda-b_i\right)^2 \geqslant\left(\lambda \sum_{i=1}^n a_i x_i-\sum_{i=1}^n b_i x_i\right)^2=1 .
+$$
+从而
+$$
+\left(\sum_{i=1}^n x_i^2\right)\left(A \lambda^2-2 C \lambda+B\right) \geqslant 1,
+$$
+即对任意实数 $\lambda$,有
+$$
+A \lambda^2-2 C \lambda+B-\frac{1}{\sum_{i=1}^n x_i^2} \leqslant 0 .
+$$
+于是
+$$
+\Delta=4 C^2-4 A B+\frac{4 A}{\sum_{i=1}^n x_i^2} \leqslant 0,
+$$
+故命题成立.
+%%<REMARK>%%
+注:该不等式的证明,也可通过构造一个新的序列 $\left\{y_i\right\}$ :
+$$
+y_i=\frac{A b_i-C a_i}{A B-C^2}, i \geqslant 1,
+$$
+则 $\left\{y_i\right\}$ 满足条件
+$$
+\begin{gathered}
+\sum_{i=1}^n x_i y_i=\frac{A}{A B-C^2}, \sum_{i=1}^n y_i^2=\frac{A}{A B-C^2}, \\
+\sum_{i=1}^n x_i^2-\sum_{i=1}^n y_i^2=\sum_{i=1}^n\left(x_i-y_i\right)^2,
+\end{gathered}
+$$
+从而命题成立.
+%%PROBLEM_END%%
+
+

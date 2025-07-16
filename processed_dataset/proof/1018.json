@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例18. 如图(<FilePath:./images/volume3/figures/fig-c6i6.png>), 设 $O 、 H$ 分别为锐角 $\\triangle A B C$ 的外心和垂心, 则在 $B C 、 C A 、 A B$ 上分别存在点 $D 、 E 、 F$, 使得 $O D+D H=O E+E H=O F+F H$, 且直线 $A D 、 B E 、 C F$ 共点.",
+    "solution": "证明:设 $A H$ 的延长线交 $\\triangle A B C$ 的外接圆于 $L$, 交 $B C$ 于 $K$, 连 $O L$ 交 $B C$ 于 $D$, 连 $H D$. 由于 $H K=K L$, 得 $H D=L D$, 于是 $O D+D H=O D+ D L=O L=R$, 其中 $R$ 为 $\\triangle A B C$ 外接圆半径.\n类似地, 可以在 $C A$ 和 $A B$ 上得到点 $E$ 和 $F$, 使\n$$\nO E+E H=O F+F H=R .\n$$\n连 $O B 、 O C$ 和 $B L$, 则 $\\angle O B C=90^{\\circ}-\\angle A, \\angle C B L=\\angle C A L=90^{\\circ}- \\angle C$, 所以\n$$\n\\angle O B L=90^{\\circ}-\\angle A+90^{\\circ}-\\angle C=\\angle B,\n$$\n由于 $O B=O L$, 则 $\\angle O L B=\\angle B$, 于是 $\\angle B O L=180^{\\circ}-2 \\angle B$,\n$$\n\\angle C O D=\\angle B O C-\\angle B O D=2 \\angle A+\\left(180^{\\circ}-2 \\angle B\\right)=180^{\\circ}-2 \\angle C .\n$$\n由正弦定理得\n$$\n\\begin{aligned}\n& \\frac{B D}{\\sin \\angle B O D}=\\frac{O D}{\\sin \\angle O B D}, \\\\\n& \\frac{C D}{\\sin \\angle C O D}=\\frac{O D}{\\sin \\angle O C D},\n\\end{aligned}\n$$\n于是有\n$$\n\\frac{B D}{C D}=\\frac{\\sin \\left(180^{\\circ}-2 \\angle B\\right)}{\\sin \\left(180^{\\circ}-2 \\angle C\\right)}=\\frac{\\sin 2 B}{\\sin 2 C}\n$$\n同理 $\\frac{C E}{E A}=\\frac{\\sin 2 C}{\\sin 2 A}, \\frac{A F}{F B}=\\frac{\\sin 2 A}{\\sin 2 B}$, 所以\n$$\n\\frac{B D}{D C} \\cdot \\frac{C E}{E A} \\cdot \\frac{A F}{F B}=1,\n$$\n由 Ceva 定理的逆定理得 $A D 、 B E 、 C F$ 三线共点.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c6i6.png"
+    ]
+}

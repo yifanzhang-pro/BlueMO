@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题7 已知函数 $y={\\frac{2+x}{{\\sqrt{1-x^{2}}}+1}}+{\\frac{1-{\\sqrt{1-x^{2}}}}{x}}\\,,\\,x\\in[-1\\,,\\,0)\\cup(0,\\,1]$, 求此函数的最大值和最小值",
+    "solution": "由 $|x| \\leqslant 1$ 且 $x \\neq 0$, 可令 $x=\\sin \\theta, \\theta \\in\\left[-\\frac{\\pi}{2}, 0\\right) \\cup\\left(0, \\frac{\\pi}{2}\\right] . y= \\frac{2(1+x)}{1+\\sqrt{1-x^2}}=\\frac{2(1+\\sin \\theta)}{1+\\sqrt{1-\\sin ^2 \\theta}}=\\frac{2(1+\\sin \\theta)}{1+\\cos \\theta}=\\frac{2\\left(\\sin \\frac{\\theta}{2}+\\cos \\frac{\\theta}{2}\\right)^2}{2 \\cos ^2 \\frac{\\theta}{2}}= \\left(\\tan \\frac{\\theta}{2}+1\\right)^2$, 当 $\\tan \\frac{\\theta}{2}=-1$ 时, $\\theta=-\\frac{\\pi}{2}$, 即 $x=-1$ 时, $y_{\\min }=0$; 当 $\\tan \\frac{\\theta}{2}=1$, 即 $x=1$ 时, $y_{\\text {max }}=4$.",
+    "remark": "",
+    "figures": []
+}

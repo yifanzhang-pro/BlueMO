@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-2.tex",
+    "problem_type": "calculation",
+    "problem": "例7. 设 $x \\geqslant 0, y \\geqslant 0, z \\geqslant 0, a 、 b 、 c 、 l 、 m 、 n$ 是给定的正数, 并且 $a x+b y+c z=\\delta$ 为常数, 求\n$$\nw=\\frac{l}{x}+\\frac{m}{y}+\\frac{n}{z}\n$$\n的最小值.",
+    "solution": "解:由柯西不等式, 得\n$$\n\\begin{aligned}\n& w \\cdot \\delta= {\\left[\\left(\\sqrt{\\frac{l}{x}}\\right)^2+\\left(\\sqrt{\\frac{m}{y}}\\right)^2+\\left(\\sqrt{\\frac{n}{z}}\\right)^2\\right] } \\\\\n& \\cdot\\left[(\\sqrt{a x})^2+(\\sqrt{b y})^2+(\\sqrt{c z})^2\\right] \\\\\n& \\geqslant(\\sqrt{a l}+\\sqrt{b m}+\\sqrt{c n})^2, \\\\\n& w \\geqslant(\\sqrt{a l}+\\sqrt{b m}+\\sqrt{c n})^2 \\\\\n& \\delta\n\\end{aligned}\n$$\n所以\n$$\nw \\geqslant \\frac{(\\sqrt{a l}+\\sqrt{b m}+\\sqrt{c n})^2}{\\delta} .\n$$\n利用柯西等式成立的条件, 得 $x=k \\sqrt{\\frac{l}{a}}, y=k \\sqrt{\\frac{m}{b}}, z=k \\sqrt{\\frac{n}{c}}$, 其中 $k=\\frac{\\delta}{\\sqrt{a l}+\\sqrt{b m}+\\sqrt{c n}}$, 它们使得 $a x+b y+c z=\\delta$, 且 $w= \\frac{(\\sqrt{a l}+\\sqrt{b m}+\\sqrt{c n})^2}{\\delta}$, 所以\n$$\nw_{\\min }=\\frac{(\\sqrt{a l}+\\sqrt{b m}+\\sqrt{c n})^2}{\\delta} .\n$$",
+    "remark": "",
+    "figures": []
+}

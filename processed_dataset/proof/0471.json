@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 有$2n$个人在一起聚会;其中每个人至少同其中的$n$个人认识,证明这 $2n$个人中总可以找出4个人来,这4个人可以围着圆桌坐下,使得每个人旁边都是认识的人 $(n\\geq2)$",
+    "solution": "问题可转化为: 在一个 $2 n$ 阶图 $G$ 中, 每个顶点的度 $\\geqslant n$, 证明 $G$ 中有一个四边形.\n若 $G=K_{2 n}$, 结论显然.\n当 $G \\neq K_{2 n}$ 时, 则存在点 $v_1, v_2$ 不相邻, 由于 $d\\left(v_1\\right)+d\\left(v_2\\right) \\geqslant 2 n$, 根据抽屉原理, 其余的 $2 n-2$ 个点中必有两个点, 设为 $v_3, v_4$, 与 $v_1, v_2$ 都相邻, 于是这 4 点就构成一个四边形.",
+    "remark": "",
+    "figures": []
+}

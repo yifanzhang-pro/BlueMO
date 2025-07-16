@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题11 设 $n \\in \\mathbf{N}^*, n \\geqslant 2, S$ 是一个 $n$ 元集合.\n求最小的正整数 $k$, 使得存在 $S$ 的子集 $A_1, A_2, \\cdots, A_k$ 具有如下性质：对 $S$ 中的任意两个不同元 $a 、 b$, 存在 $j \\in\\{1,2, \\cdots, k\\}$,使得 $A_j \\bigcap\\{a, b\\}$ 为 $S$ 的一元子集.",
+    "solution": "构造如右表格: \n\\begin{tabular}{|c|c|c|c|c|c|}\n\\hline & 1 & 2 & 3 & $\\cdots$ & $n$ \\\\\n\\hline$A_1$ & & & & & \\\\\n\\hline$A_2$ & & & & & \\\\\n\\hline$A_3$ & & & & & \\\\\n\\hline$\\vdots$ & & & & & \\\\\n\\hline$A_k$ & & & & & \\\\\n\\hline & $P_1$ & $P_2$ & $P_3$ & $\\cdots$ & $P_n$ \\\\\n\\hline\n\\end{tabular}\n如果 $i \\in A_j$, 那么在 $A_j$ 所在行、 $i$ 所在列处的方格中标上 1 , 其余的方格中标上 0 . 考虑表格中的列构成的序列 $P_1, P_2, \\cdots, P_n$. 我们证明: $S$ 的子集 $A_1, A_2, \\cdots, A_k$ 具有题中性质的充要条件是: $P_1, P_2, \\cdots, P_n$ 两两不同.\n若 $P_1, P_2, \\cdots, P_n$ 两两不同,则对任意 $a, b \\in S, a \\neq b$, 有 $P_a \\neq P_b$. 于是在某一行 (设为第 $j$行）上,第 $a$ 列与第 $b$ 列的方格中一个为 1 , 而另一个为 0 . 这表明 $A_j \\cap\\{a, b\\}$ 为单元集, 故 $A_1, A_2, \\cdots, A_k$ 具有题中性质.\n由于对任意 $a, b \\in S, a \\neq b$, 存在 $j \\in\\{1,2, \\cdots, k\\}$, 使 $A_j \\cap\\{a, b\\}$ 为单元素集, 故 $P_a$ 与 $P_b$ 在第 $j$ 行处的两个方格中的数一个为 1 , 而另一个为 0 , 故 $P_a \\neq P_b$. 所以, $P_1, P_2, \\cdots, P_n$ 两两不同.\n由于由 $0 、 1$ 构成的 $k$ 元序列有且仅有 $2^k$ 个两两不同, 从而由抽屉原则及前面所证明的结论知 $2^k \\geqslant n$. 所以, 所求的最小正整数 $k$ 为不小于 $\\log _2 n$ 的最小正整数.",
+    "remark": "",
+    "figures": []
+}

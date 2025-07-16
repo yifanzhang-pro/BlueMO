@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题22. 设等腰梯形的最大边长为 13 , 周长为 28 .\n(1) 设梯形的面积为 27 , 求它的边长;\n(2) 这种梯形的面积能否等于 27.001 ?",
+    "solution": "如图(<FilePath:./images/volume4/figures/fig-c2p22.png>)所示, 设 $A D$ 是较大的底边, $B H$ 是给定梯形 $A B C D$ 的高.\n如果\n$A B=C D=13$, 则 $A D+B C=2$, 且 $S_{\\text {梯形 } A B C D}=B H \\cdot \\frac{A D+B C}{2} \\leqslant 13 \\cdot \\frac{2}{2}= 13<27$, 不可能.\n因此, $A D=13$. 记 $A B=x$, 则 $B C=28-13-2 x=15-2 x$, $A H=x-1, B H=\\sqrt{2 x-1}$. 由平均值不等式, 得 $S_{\\text {梯形 } A B C D}=\\sqrt{2 x-1} \\cdot \\frac{28-2 x}{2} =\\sqrt{(2 x-1)(14-x)^2} \\leqslant \\sqrt{\\left[\\frac{(2 x-1)+(14-x)+(14-x)}{3}\\right]^3}=27$. 当且仅当 $2 x-1=14-x$, 即 $x=5$, 也是 $A B=B C=C D=5$ 时, $S_{\\text {梯形 } A B C D}=27$, 而等式 $S_{\\text {梯形 } A B C D}=27.001$ 是不可能成立的.",
+    "remark": "",
+    "figures": [
+        "./images/volume4/figures/fig-c2p22.png"
+    ]
+}

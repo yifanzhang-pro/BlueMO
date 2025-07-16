@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例6. 已知 $a, b, c \\geqslant 0, a+b+c=1$. 求证:\n$$\n\\sqrt{a+\\frac{1}{4}(b-c)^2}+\\sqrt{b}+\\sqrt{c} \\leqslant \\sqrt{3} .\n$$",
+    "solution": "证法 1 不妨设 $b \\geqslant c$. 令 $\\sqrt{b}=x+y, \\sqrt{c}=x-y$, 则\n$$\nb-c=4 x y, a=1-2 x^2-2 y^2, x \\leqslant \\frac{1}{\\sqrt{2}} .\n$$\n原式左边 $=\\sqrt{1-2 x^2-2 y^2+4 x^2 y^2}+2 x$\n$$\n\\leqslant \\sqrt{1-2 x^2}+x+x \\leqslant \\sqrt{3} \\text {. }\n$$\n最后一步由柯西不等式得到.",
+    "remark": "",
+    "figures": []
+}

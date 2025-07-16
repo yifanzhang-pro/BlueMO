@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter13.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 凸 $n$ 边形的任意 3 条对角线不交于形内一点, 求这些对角线将凸 $n$ 边形分成的区域的个数.",
+    "solution": "解法二 每去掉一条对角线, 则区域减少的个数为 $a_i+1$, 这是 $a_i$ 是该对角线与还没有去掉的对角线在形内的交点数, 逐步将 $\\mathrm{C}_n^2-n$ 条对角线去掉, 最后, 剩下一个区域,故所求区域数为 $S=1+\\sum_{i=1}^{C_n^2-n}\\left(a_i+1\\right)$, 而 $\\sum_{i=1}^{C_n^2 \\rightarrow n} a_i$ 恰等于对角线在形内的交点数 $\\mathrm{C}_n^4$, 所以\n$$\nS=1+\\mathrm{C}_n^4+\\mathrm{C}_n^2-n=\\frac{1}{24}(n-1)(n-2)\\left(n^2-3 n+12\\right) .\n$$",
+    "remark": "",
+    "figures": []
+}

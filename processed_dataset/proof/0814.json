@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 证明: 对任意给定正整数 $n \\geqslant 3, x_1^3+x_2^3+\\cdots+x_n^3=y^3$ 有正整数解且所有 $x_i$ 两两不等.",
+    "solution": "当 $n=3,4$ 时,有 $3^3+4^3+5^3=6^3, 11^3+12^3+13^3+14^3=20^3$. 设 $n=k \\geqslant 3$ 时有解, 根据归纳假设得 $x_1^3+x_2^3+\\cdots+x_k^3=y^3, x_1<x_2<\\cdots< x_k$, 则\n$$\n\\left(6 x_1\\right)^3+\\left(6 x_2\\right)^3+\\cdots+\\left(6 x_k\\right)^3=(6 y)^3,\n$$\n又\n$$\n\\left(6 x_1\\right)^3=\\left(3 x_1\\right)^3+\\left(4 x_1\\right)^3+\\left(5 x_1\\right)^3,\n$$\n所以 $k+2$ 个两两不同的正整数 $3 x_1<4 x_1<5 x_1<6 x_2<\\cdots<6 x_k$ 的立方和为 $(6 y)^3$.\n由数学归纳法知命题对任意正整数 $n \\geqslant 3$ 成立.",
+    "remark": "",
+    "figures": []
+}

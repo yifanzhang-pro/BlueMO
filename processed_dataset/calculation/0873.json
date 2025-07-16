@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter9.tex",
+    "problem_type": "calculation",
+    "problem": "例10. 实数 $a$ 使得对于任意实数 $x_1 、 x_2 、 x_3 、 x_4 、 x_5$, 不等式\n$$\nx_1^2+x_2^2+x_3^2+x_4^2+x_5^2 \\geqslant a\\left(x_1 x_2+x_2 x_3+x_3 x_4+x_4 x_5\\right)\n$$\n都成立, 求 $a$ 的最大值.",
+    "solution": "解:$a$ 的最大值为 $\\frac{2 \\sqrt{3}}{3}$.\n因为当 $x_1=1, x_2=\\sqrt{3}, x_3=2, x_4=\\sqrt{3}, x_5=1$ 时, 得 $a \\leqslant \\frac{2}{\\sqrt{3}}$.\n又由于当 $a=\\frac{2}{\\sqrt{3}}$ 时,不等式恒成立.\n事实上\n$$\n\\begin{aligned}\nx_1^2+x_2^2+x_3^2+x_4^2+x_5^2 & =\\left(x_1^2+\\frac{x_2^2}{3}\\right)+\\left(\\frac{2 x_2^2}{3}+\\frac{x_3^2}{2}\\right)+\\left(\\frac{x_3^2}{2}+\\frac{2 x_4^2}{3}\\right)+\\left(\\frac{x_4^2}{3}+x_5^2\\right) \\\\\n& \\geqslant \\frac{2}{\\sqrt{3}} x_1 x_2+\\frac{2}{\\sqrt{3}} x_2 x_3+\\frac{2}{\\sqrt{3}} x_3 x_4+\\frac{2}{\\sqrt{3}} x_4 x_5\n\\end{aligned}\n$$\n所以, $a$ 的最大值为 $\\frac{2 \\sqrt{3}}{3}$.",
+    "remark": "",
+    "figures": []
+}

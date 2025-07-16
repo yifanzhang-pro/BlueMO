@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例10. 如图(<FilePath:./images/volume7/figures/fig-c1i13.png>), 在三角形 $A B C$ 的内部有四个半径相等的 $\\odot K_1$, $\\odot K_2, \\odot K_3, \\odot K_4$, 其中 $\\odot K_1, \\odot K_2, \\odot K_3$ 均与三角形 $A B C$ 的两边相切, 且与 $\\odot K_4$ 外切.\n证明: 三角形 $A B C$ 的内心 、外心和 $K_4$ 在一条直线上.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c1i13.png>), 设三角形的内心为 $I$, 外心为 $O$, 连结 $A I 、 B I 、 C I 、 K_1 K_2 、 K_1 K_3 、 K_3 K_2$ 、 $K_1 K_4 、 K_4 K_3 、 K_4 K_2$.\n因为三角形的三边与 $\\odot K_1, \\odot K_2, \\odot K_3$ 相切, 所以 $K_1$ 在 $A I$ 上, $K_2$ 在 $B I$ 上, $K_3$ 在 $C I$ 上.\n设圆的半径为 $r$, 注意到 $A B$ 是圆 $K_1$ 和圆 $K_2$ 的公切线, 且圆 $K_1$ 和圆 $K_2$ 是等圆, 所以 $K_1$ 和 $K_2$ 到 $A B$ 的距离都是 $r$.\n故 $K_1 K_2 / / A B$, 同理, $K_2 K_3 / / B C, K_1 K_3 / / A C$.\n所以\n$$\n\\frac{I K_1}{I A}=\\frac{I K_2}{I B}=\\frac{I K_3}{I C} .\n$$\n故三角形 $A B C$ 与三角形 $K_1 K_2 K_3$ 关于 $I$ 位似.\n因为 $K_1 K_4=K_4 K_3=K_4 K_2=2 r$, 所以 $K_4$ 是三角形 $K_1 K_2 K_3$ 的外心, 又 $O$ 是三角形 $A B C$ 的外心, 所以 $I 、 K_4 、 O$ 在一条直线上.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1i13.png",
+        "./images/volume7/figures/fig-c1i13.png"
+    ]
+}

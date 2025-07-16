@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题1. $n(>4)$ 个城市, 每两个城市之间有一条直达道路.\n证明: 可将这些道路改为单行道, 使得从任意城市可能到达任一其他城市, 中间至多经过 1 个城市.",
+    "solution": "(1) 当 $n=5$ 时,图(<FilePath:./images/volume12/figures/fig-c9a1-1.png>)为所求.\n当 $n=6$ 时,图(<FilePath:./images/volume12/figures/fig-c9a1-2.png>)为所求.\n(2)假设 $n=k$ 时,存在满足要求的有向图.\n当 $n=k+2$ 时, 先在顶点 $V_1, V_2, \\cdots, V_k$ 间作出满足要求的 $k$ 阶有向图.\n对于另两个顶点 $V_{k+1}, V_{k+2}$, 令 $V_1, V_2, \\cdots, V_k$ 均指向 $V_{k+1} ; V_{k+2}$ 指向 $V_1, V_2, \\cdots, V_k$, 再令 $V_{k+1}$ 指向 $V_{k+2}$, 则 $V_{k+1}$ 通过 $V_{k+2}$ 到达 $V_1, V_2, \\cdots$ (显然 $V_{k+2}$ 可以直达 $V_1, V_2, \\cdots, V_k$ ), $V_1, V_2, \\cdots, V_k$ 可通过 $V_{k+1}$ 到达 $V_{k+2}$ (显然 $V_1, V_2, \\cdots, V_k$ 可以直达 $\\left.V_{k+1}\\right)$. 故该 $k+2$ 阶图仍满足要求.\n由(1)、(2) 知对任意 $4<n \\in \\mathbf{N}$, 都存在满足要求的 $n$ 个城市间的改道方案.\n原命题得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c9a1-1.png",
+        "./images/volume12/figures/fig-c9a1-2.png"
+    ]
+}

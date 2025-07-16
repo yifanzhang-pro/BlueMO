@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise14.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 用不相交的对角线把凸 $n$ 边形划分成三角形,并且在多边形的每个顶点处汇集奇数个三角形.\n证明: $3 \\mid n$.",
+    "solution": "用黑白两种颜色给这些三角形染色, 使得任何有公共边的两个三角形的颜色不同.\n由于已知 $n$ 边形的每个顶点都是奇数个三角形的顶点,所以这 $n$ 边形的每条边都属于同一颜色的三角形 (不妨染为黑色, 如图(<FilePath:./images/volume14/figures/fig-c14a4.png>)所示), 可知黑色三角形比白色三角形多 $n$ 个角.\n假设 $n$ 边形被分成 $x$ 个黑色三角形及 $y$ 个白色三角形, 则它们的数目之差为 $n=3 x-3 y=3(x-y)$, 为 3 的整数倍, 命题得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c14a4.png"
+    ]
+}

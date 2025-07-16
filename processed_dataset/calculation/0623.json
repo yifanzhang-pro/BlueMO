@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题19 设 $f(x)$ 的定义域、值域都为 $\\mathbf{R}$, 解函数方程\n$$\nf^{n+1}(x)=f^n(x)+\\mathrm{e} f^n(x), x \\in \\mathbf{R} .\n$$",
+    "solution": "因为 $f(x)$ 值域为 $\\mathbf{R}$, 所以对任意 $y_0 \\in \\mathbf{R}$, 存在 $x_0 \\in \\mathbf{R}$, 满足: $f\\left(x_0\\right)=y_0$. \n又因为 $x_0 \\in \\mathbf{R}$, 所以存在 $x_1 \\in \\mathbf{R}$, 满足 $f\\left(x_1\\right)=x_0$. \n即 $y_0= f\\left(f\\left(x_1\\right)\\right)=f^2\\left(x_1\\right), \\cdots$, 依次继续下去, 则必存在 $x_{n-1} \\in \\mathbf{R}$, 使得 $y_0= f^n\\left(x_{n-1}\\right)$. \n把 $x_{n-1}$ 代入原方程, 有 $f\\left(y_0\\right)=y_0+\\mathrm{e}^{y_0}$. \n由于 $y_0$ 是任意取的, 所以 $f(x)=x+\\mathrm{e}^x, x \\in \\mathbf{R}$.",
+    "remark": "",
+    "figures": []
+}

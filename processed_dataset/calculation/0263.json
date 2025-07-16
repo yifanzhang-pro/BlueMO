@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 如图(<FilePath:./images/volume12/figures/fig-c5i3.png>) 所示是一幢房子的平面图形, 前门进人是一个客厅, 由客厅可通向四个房间.\n如果现在你由前门进去, 能否通过所有的门走遍所有的房间和客厅, 然后从后门走出, 而且要求每扇门只能进出一次?",
+    "solution": "解:答案是否定的.\n把 5 个房间以及前门外面和后门外面作为顶点, 两个地方有门相通就在相应的顶点之间连一条边, 得到图 $G$, 如图(<FilePath:./images/volume12/figures/fig-c5i4.png>) 所示.\n在图 $G$ 中, 奇顶点的个数是 4 , 故 $G$ 不是一条链.\n所以问题的答案是否定的.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c5i3.png",
+        "./images/volume12/figures/fig-c5i4.png"
+    ]
+}

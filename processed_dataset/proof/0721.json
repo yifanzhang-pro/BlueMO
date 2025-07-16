@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例5. 给定正整数 $n$, 某个协会中恰好有 $n$ 个人,他们属于 6 个委员会, 每个委员会至少由 $\\frac{n}{4}$ 个人组成.\n证明: 必有两个委员会, 他们的公共成员数不小于 $\\frac{n}{30}$.",
+    "solution": "证明:设 $A_1, A_2, \\cdots, A_6$ 表示 6 个委员会的成员集合.\n则\n$$\nn=\\left|A_1 \\cup A_2 \\cup \\cdots \\cup A_6\\right| \\geqslant \\sum_{i=1}^6\\left|A_i\\right|-\\sum_{1 \\leqslant i<j \\leqslant 6}\\left|A_i \\cap A_j\\right|, \\label{eq1}\n$$\n所以 $\\sum_{1 \\leqslant i<j \\leqslant 6}\\left|A_i \\cap A_j\\right| \\geqslant \\sum_{i=1}^6\\left|A_i\\right|-n \\geqslant 6 \\times \\frac{n}{4}-n=\\frac{n}{2}$, 于是, 必存在 $1 \\leqslant i<j \\leqslant 6$, 使得\n$$\n\\left|A_i \\cap A_j\\right| \\geqslant \\frac{1}{\\mathrm{C}_6^2} \\times \\frac{n}{2}=\\frac{n}{30} .\n$$",
+    "remark": "注:上述证明中 \\ref{eq1} 式的一般情形如下:\n$$\n\\left|A_1 \\cup A_2 \\cup \\cdots \\cup A_n\\right| \\geqslant \\sum_{i=1}^n\\left|A_i\\right|-\\sum_{1 \\leqslant i<j \\leqslant n}\\left|A_i \\cap A_j\\right| .\n$$\n该式常用于估计某些集合的元素个数(请思考该式的正确性).",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 用 19 张 $1 \\times 6$ 或 $1 \\times 7$ 的矩形能否将一个 $11 \\times 12$ 的矩形完全覆盖? 是 8 的倍数;",
+    "solution": "如图(<FilePath:./images/volume11/figures/fig-c9a1.png>), 因为 $11 \\times 12$ 的矩形中有 $11 \\times 12=132$ 个 $1 \\times 1$ 的方格, 且 $126=7 \\times 18<132<7 \\times 19=133$, 所以,如果用 19 张 $1 \\times$ 6 或 $1 \\times 7$ 的矩形能够完全覆盖 $11 \\times 12$ 矩形,则要用 18 张 $1 \\times 7$ 矩形和 1 张 $1 \\times 6$ 矩形.\n如图对 $11 \\times 12$ 的矩形用黑白两种颜色染色, 使得任意两个黑色格都无法被 1 张 $1 \\times 7$ 的矩形同时覆盖.\n图中共有 20 个黑格, 18 张 $1 \\times 7$ 的矩形只能盖住其中 18 个黑格, 还剩下两个黑格, 那张 $1 \\times 6$ 的矩形无法把他们都盖住.\n这就证明了用 19 张 $1 \\times 6$ 或 1 $\\times 7$ 的矩形不可能完全覆盖 $11 \\times 12$ 的矩形.",
+    "remark": "",
+    "figures": [
+        "./images/volume11/figures/fig-c9a1.png"
+    ]
+}

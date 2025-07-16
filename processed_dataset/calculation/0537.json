@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例2 求解函数方程:\n$$\nf(x)+f\\left(\\frac{x-1}{x}\\right)=1+x(x \\neq 0,1) . \\quad\\quad (1)\n$$",
+    "solution": "解:.\n我们希望通过适当的代换以消去 $f\\left(\\frac{x-1}{x}\\right)$. 为此, 令 $y=\\frac{x-1}{x}$, 则 $\\frac{y-1}{y}=\\frac{1}{1-x}$. 代入 (1), 得\n$$\nf\\left(\\frac{x-1}{x}\\right)+f\\left(\\frac{1}{1-x}\\right)=1+\\frac{x-1}{x} . \\quad\\quad (2)\n$$\n从(1)和(2)中虽可消去 $f\\left(\\frac{x-1}{x}\\right)$, 但又多出了 $f\\left(\\frac{1}{1-x}\\right)$.\n再令 $y=\\frac{1}{1-x}$, 则 $\\frac{y-1}{y}=x$, 代入(1), 得\n$$\nf\\left(\\frac{1}{1-x}\\right)+f(x)=1+\\frac{1}{1-x}. \\quad\\quad (3)\n$$\n(1) +(3)-(2)得\n$$\nf(x)=\\frac{1+x^2-x^3}{2 x(1-x)} .\n$$",
+    "remark": "",
+    "figures": []
+}

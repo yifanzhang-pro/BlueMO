@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例1. 在等腰直角 $\\triangle A B C$ 中, $\\angle B A C=90^{\\circ}$, 点 $D$ 是边 $A C$ 的中点, 过点 $A$ 作 $B D$ 的垂线与边 $B C$ 交于点 $F$. 求证: $B F=2 F C$.",
+    "solution": "解:如图(<FilePath:./images/volume14/figures/fig-c8i2.png>), $\\frac{B F}{F C}=\\frac{S_{\\triangle A B F}}{S_{\\triangle A F C}}=\\frac{S_{\\triangle A B F}}{S_{\\triangle A B D}} \\cdot \\frac{S_{\\triangle A B D}}{S_{\\triangle A F C}}$, 显然 $\\angle B A F=\\angle A D B, \\angle F A C=\\angle A B D$, 所以\n$$\n\\begin{aligned}\n& \\frac{S_{\\triangle A B F}}{S_{\\triangle A B D}}=\\frac{A B \\cdot A F}{A D \\cdot B D}, \\\\\n& \\frac{S_{\\triangle A B D}}{S_{\\triangle A F C}}=\\frac{A B \\cdot B D}{A F \\cdot A C},\n\\end{aligned}\n$$\n因此 $\\frac{B F}{F C}=\\frac{A B}{A D} \\cdot \\frac{A B}{A C}=2$, 即 $B F=2 F C$.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c8i2.png"
+    ]
+}

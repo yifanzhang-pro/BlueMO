@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 设复数 $z_k=x_k+\\mathrm{i} y_k, k=1,2, \\cdots, n, x_i$ 和 $y_i$ 为实数, $\\mathrm{i}=\\sqrt{-1}$. 令 $r$ 表示 $\\sqrt{z_1^2+z_2^2+\\cdots+z_n^2}$ 的实部的绝对值,求证:\n$$\nr \\leqslant\\left|x_1\\right|+\\left|x_2\\right|+\\cdots+\\left|x_n\\right| \\text {. }\n$$",
+    "solution": "设 $a+\\mathrm{i} b=\\sqrt{\\sum_{i=1}^n z_i^2}, a, b \\in \\mathbf{R}$, 则 $a^2-b^2=\\sum_{k=1}^n x_k^2-\\sum_{k=1}^n y_k^2, a b= \\sum_{k=1}^n x_k y_k$. 若 $r=|a|>\\sum_{k=1}^n\\left|x_k\\right|$, 由于 $\\sum_{k=1}^n\\left|x_k\\right| \\geqslant\\left(\\sum_{k=1}^n x_k^2\\right)^{\\frac{1}{2}}$, 则 $|a|> \\left(\\sum_{k=1}^n x_k^2\\right)^{\\frac{1}{2}}$. 由柯西不等式, 得 $|a| \\cdot|b| \\leqslant\\left(\\sum_{k=1}^n x_k^2\\right)^{\\frac{1}{2}}\\left(\\sum_{k=1}^n y_k^2\\right)^{\\frac{1}{2}}$, 从而 $|b| \\leqslant \\left(\\sum_{k=1}^n y_k^2\\right)^{\\frac{1}{2}}$, 于是 $a^2=\\sum_{k=1}^n x_k^2+b^2-\\sum_{k=1}^n y_k^2 \\leqslant \\sum_{k=1}^n x_k^2$ 与 $|a|>\\left(\\sum_{k=1}^n x_k^2\\right)^{\\frac{1}{2}}$ 矛盾.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 若 $a=(\\tan x)^{\\cot x}, b=(\\cot x)^{\\tan x}, c=(\\tan x)^{\\cos x}$, 当 $0<x<\\frac{\\pi}{4}$ 时, 下列不等式成立的是 ( ).\n(A) $b<a<c$\n(B) $a<b<c$\n(C) $a<c<b$\n(D) $b<c<a$",
+    "solution": "C. 当 $0<x<\\frac{\\pi}{4}$ 时, $0<\\tan x<1$, $\\cot x=\\frac{\\cos x}{\\sin x}>\\cos x$, 所以 $(\\tan x)^{\\cot x}<(\\tan x)^{\\cos x}$, 即 $a<c$. 又 $(\\cot x)^{\\tan x}=(\\tan x)^{-\\tan x}>(\\tan x)^{\\cos x}$, 得 $b>c$, 故 $a<c<b$. 选 C.",
+    "remark": "",
+    "figures": []
+}

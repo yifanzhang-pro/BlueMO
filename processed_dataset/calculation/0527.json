@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例2 $f(n)$ 是定义在 $\\mathbf{N}_{+}$上的函数, 并且满足\n(1) $f(f(n))=4 n+9, n \\in \\mathbf{N}_{+}$;\n(2) $f\\left(2^k\\right)=2^{k+1}+3, k \\in \\mathbf{N}_{+} \\cup\\{0\\}$.\n求 $f(1789)$ 的值.",
+    "solution": "解:$f(4 n+9)=f^{(3)}(n)=f^{(2)}(f(n))=4 f(n)+9$, 而\n$$\n1789=4^4 \\times 2^2+4^3 \\times 9+4^2 \\times 9+4 \\times 9+9,\n$$\n所以\n$$\n\\begin{aligned}\nf(1789) & =f\\left(4^4 \\times 2^2+4^3 \\times 9+4^2 \\times 9+4 \\times 9+9\\right) \\\\\n& =4 f\\left(4^3 \\times 2^2+4^2 \\times 9+4 \\times 9+9\\right)+9 \\\\\n& =4^2 f\\left(4^2 \\times 2^2+4 \\times 9+9\\right)+4 \\times 9+9 \\\\\n& =4^3 f\\left(4 \\times 2^2+9\\right)+4^2 \\times 9+4 \\times 9+9 \\\\\n& =4^4 f\\left(2^2\\right)+4^3 \\times 9+4^2 \\times 9+4 \\times 9+9 \\\\\n& =4^4\\left(2^3+3\\right)+4^3 \\times 9+4^2 \\times 9+4 \\times 9+9 \\\\\n& =3581 .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

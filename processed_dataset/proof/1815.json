@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 已知 $\\triangle A B C$ 的三边 $B C 、 C A 、 A B$ 上各有一点 $D 、 E 、 F$, 且满足 $A D$ 、 $B E 、 C F$ 交于一点 $G$. 若 $\\triangle A G E 、 \\triangle C G D 、 \\triangle B G F$ 的面积相等, 证明: $G$ 是 $\\triangle A B C$ 的重心.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c2a5.png>), 设 $\\frac{A F}{F B}=x, \\frac{B D}{D C}=y, \\frac{C E}{E A}=z$. 由塞瓦定理得 $x y z==1$. 对于 $\\triangle B F C$ 和直线 $A G D$ 应用梅涅劳斯定理有 $\\frac{F G}{G C} \\cdot \\frac{C D}{D B} \\cdot \\frac{B A}{A F}=1$. 则 $\\frac{F G}{G C}=\\frac{B D}{D C} \\cdot \\frac{A F}{B A}= y \\cdot \\frac{x}{1+x}=\\frac{x y}{1+x}$. 所以, $\\frac{F G}{F C}=\\frac{x y}{1+x+x y}$. 故 $S_{\\triangle B F G}= \\frac{F G}{F C} S_{\\triangle B F C}=\\frac{F G}{F C} \\cdot \\frac{B F}{A B} S_{\\triangle A B C}=\\frac{x y}{(1+x+x y)(1+x)} S_{\\triangle A B C}$.\n同理, $S_{\\triangle C D G}=\\frac{y z}{(1+y+y z)(1+y)} S_{\\triangle A B C}$. 于是, $\\frac{x y}{(1+x+x y)(1+x)}= \\frac{y z}{(1+y+y z)(1+y)}$, 即 $x(1+y+y z)(1+y)=z(1+x+x y)(1+x)$. 因为 $x(1+y+y z)=x+x y+x y z=x+x y+1$, 所以, $1+y=z(1+x)=z+ z x$. 同理, $1+z=x+x y, 1+x=y+y z$. 三式相加得 $3=x y+y z+z x \\geqslant 3 \\sqrt[3]{x y \\cdot y z \\cdot z x}=3$. 当且仅当 $x y=y z=z x$ 时, 上式等号成立.\n所以, $x y= y z=z x$. 从而, $x=y=z$. 又 $x y z=1$, 则 $x=y=z=1$. 因此, $D 、 E 、 F$ 是三边的中点.\n故 $G$ 是 $\\triangle A B C$ 的重心.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2a5.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例9. 设 $n(\\geqslant 3)$ 是整数,求证: 对正实数 $x_1 \\leqslant x_2 \\leqslant \\cdots \\leqslant x_n$, 有不等式\n$$\n\\frac{x_n x_1}{x_2}+\\frac{x_1 x_2}{x_3}+\\cdots+\\frac{x_{n-1} x_n}{x_1} \\geqslant x_1+x_2+\\cdots+x_n .\n$$",
+    "solution": "证明:先证明一个引理: 若 $0<x \\leqslant y, 0<a \\leqslant 1$, 则\n$$\nx+y \\leqslant a x+\\frac{y}{a} . \\label{(1)}\n$$\n事实上, 由 $a x \\leqslant x \\leqslant y$ 得 $(1-a)(y-a x) \\geqslant 0$, 即\n$$\na^2 x+y \\geqslant a x+a y \\text {. }\n$$\n因此\n$$\nx+y \\leqslant a x+\\frac{y}{a} .\n$$\n现在, 令 $(x, y, a)=\\left(x_i, x_{n-1} \\cdot \\frac{x_{i+1}}{x_2}, \\frac{x_{i+1}}{x_{i+2}}\\right) i=1,2, \\cdots, n-2$. 代入\n(1), 有\n$$\nx_i+\\frac{x_{n-1} x_{i+1}}{x_2} \\leqslant \\frac{x_i x_{i+1}}{x_{i+2}}+x_{n-1} \\cdot \\frac{x_{i+2}}{x_2} . \\label{(2)}\n$$\n(2)式对 $i=1,2, \\cdots, n-2$ 求和, 即得\n$$\n\\begin{aligned}\n& x_1+x_2+\\cdots+x_{n-2}+\\frac{x_{n-1}}{x_2}\\left(x_2+x_3+\\cdots+x_{n-1}\\right) \\\\\n\\leqslant & \\frac{x_1 x_2}{x_3}+\\frac{x_2 x_3}{x_4}+\\cdots+\\frac{x_{n-2} x_{n-1}}{x_n}+\\frac{x_{n-1}}{x_2}\\left(x_3+x_4+\\cdots+x_n\\right),\n\\end{aligned}\n$$\n所以\n$$\nx_1+x_2+\\cdots+x_{n-2}+x_{n-1} \\leqslant \\frac{x_1 x_2}{x_3}+\\cdots+\\frac{x_{n-2} x_{n-1}}{x_n}+\\frac{x_{n-1} x_n}{x_2} . \\label{(3)}\n$$\n另外, 令 $(x, y, a)=\\left(x_n, x_n \\cdot \\frac{x_{n-1}}{x_2}, \\frac{x_1}{x_2}\\right)$, 又有\n$$\nx_n+\\frac{x_n x_{n-1}}{x_2} \\leqslant \\frac{x_n x_1}{x_2}+\\frac{x_{n-1} x_n}{x_1} . \\label{(4)}\n$$\n由(3)十(4)即得原不等式成立.",
+    "remark": "",
+    "figures": []
+}

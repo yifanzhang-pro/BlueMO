@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例1. 给定半径为 $r$ 的圆上的定点 $P$ 的切线 $l$, 由此圆上动点 $R$ 引 $R Q$ 垂直于 $l$, 交 $l$ 于 $Q$. 试确定 $\\triangle P Q R$ 面积的最大值.",
+    "solution": "解:如图(<FilePath:./images/volume9/figures/fig-c7i1.png>), 注意到 $O P \\| R Q$, 作 $R S \\| l$, 交圆周于 $S$, 连接 $P S$. 易证\n$S_{\\triangle P Q R}=\\frac{1}{2} S_{\\triangle P R S}$.\n由定理 4 , 当圆内接三角形 $P R S$ 为正三角形时面积最大, 最大值为 $\\frac{3 \\sqrt{3}}{4} r^2$. 因此 $\\triangle P Q R$ 面积的最大值为 $\\frac{3 \\sqrt{3}}{8} r^2$",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c7i1.png"
+    ]
+}

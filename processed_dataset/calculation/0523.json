@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例10 正五边形的每个顶点对应一个整数, 使得这五个整数的和为正; 若其中三个相邻顶点对应的整数依次为 $x 、 y 、 z$, 而中间的 $y<0$, 则要进行如下的变换: 整数 $x 、 y 、 z$ 分别换为 $x+y 、-y 、 x+y$. 要是所得的五个整数中还有一个为负时, 这种变换就继续进行, 问: 这样的变换进行有限次后是否必定终止?",
+    "solution": "解:问题的答案是肯定的.\n也就是说, 这样的变换进行有限次后必定终止.\n为了方便起见,把五个数的环列写成横列\n$$\nv, w, x, y, z .\n$$\n这里的 $v 、 z$ 在环列中是相邻的.\n并且由题设知\n$$\nv+w+x+y+z>0 .\n$$\n不妨设 $y<0$, 经变换后得到的环列是\n$$\nv, w, x+y,-y, y+z .\n$$\n构造函数\n$$\n\\begin{aligned}\nf\\left(x_1, x_2, x_3, x_4, x_5\\right)= & x_1^2+x_2^2+x_3^2+x_4^2+x_5^2+\\left(x_1+x_2\\right)^2+ \\\\\n& \\left(x_2+x_3\\right)^2+\\left(x_3+x_4\\right)^2+ \\\\\n& \\left(x_4+x_5\\right)^2+\\left(x_5+x_1\\right)^2,\n\\end{aligned}\n$$\n那么, 变换前后函数值的差为\n$$\n\\begin{aligned}\n& f(v, w, x+y,-y, y+z)-f(v, w, x, y, z) \\\\\n= & {\\left[v^2+w^2+(x+y)^2+(-y)^2+(y+z)^2+(v+w)^2+(w+\\right.} \\\\\n& \\left.x+y)^2+x^2+z^2+(y+z+v)^2\\right]-\\left[v^2+w^2+x^2+y^2+z^2+\\right. \\\\\n& \\left.(v+w)^2+(w+x)^2+(x+y)^2+(y+z)^2+(z+v)^2\\right] \\\\\n= & 2 y(v+w+x+y+z)<0 .\n\\end{aligned}\n$$\n由于当变量取整数值时 $f$ 的函数值为非负整数,所以\n$$\nf(v, w, x+y,-y, y+z) \\leqslant f(v, w, x, y, z)-1,\n$$\n即每经一次变换, $f$ 的值至少减少 1. 所以经有限次变换后, 就不能再变换下去了.\n说明本题是第 27 届国际数学奥林匹克竞赛中的一道试题,是那届得分最低的一题.\n但美国选手约瑟夫 - 基内对这题的解法获得了特别奖.\n他构造的辅助函数是\n$$\n\\begin{aligned}\nf\\left(x_1, x_2, x_3, x_4, x_5\\right)= & \\sum_{i=1}^5\\left|x_i\\right|+\\sum_{i=1}^5\\left|x_i+x_{i+1}\\right|+ \\\\\n& \\sum_{i=1}^5\\left|x_i+x_{i+1}+x_{i+2}\\right|+ \\\\\n& \\sum_{i=1}^5\\left|x_i+x_{i+1}+x_{i+2}+x_{i+3}\\right|,\n\\end{aligned}\n$$\n其中, $x_6=x_1, x_7=x_2, x_8=x_3$.",
+    "remark": "",
+    "figures": []
+}

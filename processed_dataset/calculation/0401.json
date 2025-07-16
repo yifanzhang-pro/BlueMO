@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例8. 求所有的整数 $k$, 使得存在正整数 $a$ 和 $b$, 满足 $\\frac{b+1}{a}+\\frac{a+1}{b}=k$.",
+    "solution": "解:对于固定的 $k$, 在满足 $\\frac{b+1}{a}+\\frac{a+1}{b}=k$ 的数对 $(a, b)$ 中, 取一组 ( $a$, $b$ ) 使得 $b$ 最小,则\n$$\nx^2+(1-k b) x+b^2+b=0\n$$\n的一根为 $x=a$.\n设另一根为 $x=a^{\\prime}$, 则由 $a+a^{\\prime}=k b-1$ 知 $a^{\\prime} \\in \\mathbf{Z}$, 且 $a \\cdot a^{\\prime}=b(b+1)$, 因此 $a^{\\prime}>0$.\n又 $\\frac{b+1}{a^{\\prime}}+\\frac{a^{\\prime}+1}{b}=k$, 由 $b$ 的假定知 $a \\geqslant b, a^{\\prime} \\geqslant b$, 因此 $a, a^{\\prime}$ 必为 $b$, $b+1$ 的一个排列.\n这样就有 $k=\\frac{a+a^{\\prime}+1}{b}=2+\\frac{2}{b}$.\n所以 $b=1,2$, 从而 $k=3,4$.\n取 $a=b=1$ 知 $k=4$ 可取到,取 $a=b=2$ 知 $k=3$ 可取到.\n所以 $k=3,4$.",
+    "remark": "",
+    "figures": []
+}

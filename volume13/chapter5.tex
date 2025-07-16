@@ -1,0 +1,223 @@
+
+%%TEXT_BEGIN%%
+磨光变换.
+有些函数的极值, 虽然不能证明其必定存在极值, 但由问题的直观, 可以发现其极值点.
+此时,我们可以对其施行一种变换: 先将变量组中的某个分量调整到极值点, 而将此分量与极值点相应分量的差转移到另外的分量中去, 进而验证这一变换保持函数值单调递增或递减.
+反复施行这一变换(必须论证变换有限次后终止), 直至变量组中的每一个分量都调整到了极值点, 得到函数的极值.
+这种变换称为磨光变换.
+磨光变换常采用如下一些变换方式:
+(1)对"搭配型"最值点, 比如取值最小的变量与取值最大的变量搭配, 可先将相搭配的一对变量调整到最值点,然后再调整其他变量.
+(2) 对 "均匀型"最值点, 比如各个变量取值相同, 可先将取值最小的变量调整到最值点, 不足部分在取值较大的变量中补足.
+(3)对 "聚积型"最值点, 比如一个变量取值最大, 其他变量取值都很小, 可先将取值最小的变量调整到最小点, 再调整其他变量到最值点.
+从实质上看, 磨光变换就是放缩法, 只是放缩形式采用磨光手段.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 给定 $2 n$ 个实数: $a_1 \leqslant a_2 \leqslant \cdots \leqslant a_n, b_1 \leqslant b_2 \leqslant \cdots \leqslant b_n$. 令
+$$
+F=a_1 b_{i_1}+a_2 b_{i_2}+\cdots+a_n b_{i_n}
+$$
+其中 $b_{i_1}, b_{i_2}, \cdots, b_{i_n}$ 是 $b_1, b_2, \cdots, b_n$ 的一个排列.
+求 $F$ 的最大值与最小值(排序不等式).
+%%<SOLUTION>%%
+分析:直观, 想到 $a_i$ 中最小的与 $b_i$ 中最小的相乘、 $a_i$ 中最大的与 $b_i$ 中最大的相乘时, 其 $F$ 的值最大.
+由此想到通过磨光变换构造 $a_1 b_1$, $a_2 b_2, \cdots, a_n b_n$.
+解若 $F$ 的表达式中无 $a_1 b_1$ 这一项,则考察分别含有 $a_1 、 b_1$ 的两个项: $a_1 b_{i_1}$ 和 $a_j b_1$, 将它们分别调整为 $a_1 b_1 、 a_j b_{i_1}$, 那么,
+$a_1 b_1+a_j b_{i_1}-\left(a_1 b_{i_1}+a_j b_1\right)=\left(a_1-a_j\right)\left(b_1-b_{i_1}\right) \geqslant 0$ (磨光工具).
+由此可见,调整出 $a_1 b_1$ 这个项后, $F$ 的值不减.
+固定这个积 $a_1 b_1$ 不动, 再考察余下的 $n-1$ 个积, 如此下去, 最多调整 $n-1$ 次, 即可出现 $a_1 b_1, a_2 b_2, \cdots, a_n b_n, F$ 的值恒保持不减, 于是 $F_1=a_1 b_1+ a_2 b_2+\cdots+a_n b_n$ 是 $F$ 的最大值.
+同样,当出现 $a_1 b_n, a_2 b_{n-1}, \cdots, a_n b_1$, 则 $F$ 达到最小值.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $A 、 B 、 C$ 是三角形的三内角, 求 $\sin A+\sin B+\sin C$ 的最大值.
+%%<SOLUTION>%%
+分析:解这是一个简单的问题, 有多种解法, 而使用磨光变换的解法较繁, 但其探索磨光工具的过程是比较典型的.
+首先, 猜想极值点为 $\left(\frac{\pi}{3}, \frac{\pi}{3}, \frac{\pi}{3}\right)$.
+其次, 很易想到磨光方式: $(A, B, C) \rightarrow\left(\frac{\pi}{3}, A+B-\frac{\pi}{3}, C\right)$, 即令 $A^{\prime}=\frac{\pi}{3}, B^{\prime}=A+B-\frac{\pi}{3}, C^{\prime}=C$, 希望磨光一次以后, 函数值增大.
+即
+$$
+\begin{aligned}
+& \sin A^{\prime}+\sin B^{\prime}+\sin C^{\prime} \\
+= & 2 \sin \frac{A^{\prime}+B^{\prime}}{2} \cos \frac{A^{\prime}-B^{\prime}}{2}+\sin C \\
+= & 2 \sin \frac{A+B}{2} \cos \frac{A^{\prime}-B^{\prime}}{2}+\sin C \\
+\geqslant & 2 \sin \frac{A+B}{2} \cos \frac{A-B}{2}+\sin C \\
+= & \sin A+\sin B+\sin C . \label{eq1}
+\end{aligned}
+$$
+要使不等式 \ref{eq1} 成立, 必须 $\frac{\left|A^{\prime}-B^{\prime}\right|}{2}<\frac{|A-B|}{2}$, 此式成立的一个充分条件是 $A$ 为 $A 、 B 、 C$ 中的最小者, $B$ 为 $A 、 B 、 C$ 中的最大者, 即有下面的引理 (磨光工具): 若 $0^{\circ}<A \leqslant 60^{\circ} \leqslant B<180^{\circ}$, 则
+$$
+\sin A+\sin B \leqslant \sin 60^{\circ}+\sin \left(A+B-60^{\circ}\right) .
+$$
+实际上, $A+B-120^{\circ}=A+B-2 \times 60^{\circ} \geqslant A+B-2 B=A-B$;
+$$
+A+B-120^{\circ}=A+B-2 \times 60^{\circ} \leqslant A+B-2 A=B-A \text {. }
+$$
+所以 $\left|A+B-120^{\circ}\right| \leqslant B-A$.
+所以 $\sin A+\sin B=2 \sin \frac{A+B}{2} \cos \frac{A-B}{2} \leqslant 2 \sin \frac{A+B}{2}$. $\cos \frac{A+B-120^{\circ}}{2}=\sin 60^{\circ}+\sin \left(A+B-60^{\circ}\right)$. 引理获证解答原题: 不妨设 $A \leqslant B \leqslant C$, 则 $A \leqslant 60^{\circ} \leqslant C$, 所以由引理, 有
+$$
+\sin A+\sin B+\sin C \leqslant \sin 60^{\circ}+\sin \left(A+C-60^{\circ}\right)+\sin B .
+$$
+再不妨设 $A+C-60^{\circ} \leqslant B$, 则因 $\left(A+C-60^{\circ}\right)+B=A+B+C- 60^{\circ}=120^{\circ}$, 所以 $0^{\circ}<A+C-60^{\circ} \leqslant 60^{\circ} \leqslant B<180^{\circ}$, 再利用一次引理, 得
+$$
+\begin{aligned}
+\sin A+\sin B+\sin C & \leqslant \sin 60^{\circ}+\sin \left(A+C-60^{\circ}\right)+\sin B \\
+& \leqslant \sin 60^{\circ}+\sin 60^{\circ}+\sin 60^{\circ} \\
+& =3 \sin 60^{\circ}=\frac{3 \sqrt{3}}{2} .
+\end{aligned}
+$$
+故 $\sin A+\sin B+\sin C$ 的最大值为 $\frac{3 \sqrt{3}}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $x_i \geqslant 0(1 \leqslant i \leqslant n), \sum_{i=1}^n x_i=1, n \geqslant 2$. 求 $F=\sum_{1 \leqslant i<j \leqslant n} x_i x_j\left(x_i+\right. x_j$ ) 的最大值.
+%%<SOLUTION>%%
+分析:解由于 $F$ 在闭区域上连续, $F$ 的最大值一定存在, 从而想到利用局部调整, 不妨一试.
+若固定 $x_2, x_3, \cdots, x_n$, 则 $x_1$ 亦被固定, 从而只能固定 $n-2$ 个数.
+不妨固定 $x_3, x_4, \cdots, x_n$, 则
+$$
+\begin{aligned}
+F= & x_1 x_2\left(x_1+x_2\right)+\cdots+x_1 x_n\left(x_1+x_n\right)+x_2 x_3\left(x_2+x_3\right)+\cdots \\
+& +x_2 x_n\left(x_2+x_n\right)+\sum_{3 \leqslant i<j \leqslant n} x_i x_j\left(x_i+x_j\right),
+\end{aligned}
+$$
+其中 $x_1+x_2=1-\left(x_2+x_3+\cdots+x_n\right)=p$ (常数).
+注意到 $x_2=p-x_1$, 所以 $F$ 是关于 $x_1$ 的二次函数: $f\left(x_1\right)=A x_1^2+ B x_1+C\left(0 \leqslant x_1 \leqslant p\right)$. 但此函数式的系数及自变量的变化范围都很复杂, 其极值形式也就很复杂, 因此须另辟蹊径求极值.
+我们先来猜想极值点.
+为此, 采用特殊化的技巧.
+当 $n=2$ 时, $F=x_1 x_2\left(x_1+x_2\right)=x_1 x_2 \leqslant \frac{\left(x_1+x_2\right)^2}{4}=\frac{1}{4}$.
+但 $n=2$ 太特殊,不具一般性.
+再试验一次.
+当 $n=3$ 时, $F=x_1 x_2\left(x_1+x_2\right)+x_1 x_3\left(x_1+x_3\right)+x_2 x_3\left(x_2+x_3\right)$.
+不妨固定 $x_3$, 则
+$$
+\begin{aligned}
+F & =x_1 x_2\left(x_1+x_2\right)+\left(x_1^2+x_2^2\right) x_3+\left(x_1+x_2\right) x_3^2 \\
+& =x_1 x_2\left(1-x_3\right)+\left[\left(x_1+x_2\right)^2-2 x_1 x_2\right] x_3+\left(1-x_3\right) x_3^2 \\
+& =x_1 x_2\left(1-3 x_3\right)+\left(1-x_3\right)^2 x_3+\left(1-x_3\right) x_3^2,
+\end{aligned}
+$$
+至此,为利用不等式 $x_1 x_2 \leqslant \frac{\left(x_1+x_2\right)^2}{4}$ 将 $x_1 x_2\left(1-3 x_3\right)$ 放大, 应保证 $1- 3 x_3 \geqslant 0$. 为此, 可优化假设: $x_1 \geqslant x_2 \geqslant x_3$. 则
+$$
+\begin{aligned}
+F & =x_1 x_2\left(1-3 x_3\right)+\left(1-x_3\right)^2 x_3+\left(1-x_3\right) x_3^2 \\
+& \leqslant\left(1-3 x_3\right) \frac{\left(x_1+x_2\right)^2}{4}+\left(1-x_3\right)^2 x_3+\left(1-x_3\right) x_3^2 \\
+& =\left(1-3 x_3\right) \frac{\left(1-x_3\right)^2}{4}+\left(1-x_3\right)^2 x_3+\left(1-x_3\right) x_3{ }^2 \\
+& \leqslant \frac{1}{4}, \text { (利用求导可知) }
+\end{aligned}
+$$
+其中等号在 $x_1=x_2=\frac{1}{2}, x_3=0$ 时成立.
+由此可以猜想,一般情况下的极值点为 $\left(\frac{1}{2}, \frac{1}{2}, 0,0, \cdots, 0\right)$.
+采用磨光变换: 当 $n \geqslant 3$ 时, 对于自变量组: $\left(x_1, x_2, \cdots, x_n\right)$, 不妨设 $x_1 \geqslant x_2 \geqslant \cdots \geqslant x_n$, 令 $x_1^{\prime}=x_1, x_2^{\prime}=x_2, \cdots, x_{n-2}^{\prime}=x_{n-2}, x_{n-1}^{\prime}=x_{n-1}+x_n$, $x_n^{\prime}=0$, 得到一个新的自变量组 $\left(x_1, x_2, \cdots, x_{n-2}, x_{n-1}+x_n, 0\right)$, 对应的 $F$ 之值为
+$$
+\begin{aligned}
+F^{\prime}= & \left.\sum_{1 \leqslant i<j \leqslant n-2} x_i x_j\left(x_i+x_j\right) \text { (此式记为 } A\right) \\
+& +\sum_{i=1}^{n-2} x_{n-1}^{\prime} x_i\left(x_{n-1}^{\prime}+x_i\right)+\sum_{i=1}^{n-1} x_n^{\prime} x_i\left(x_n^{\prime}+x_i\right) . \\
+= & A+\sum_{i=1}^{n-2}\left(x_{n-1}+x_n\right) x_i\left(x_{n-1}+x_n+x_i\right) \\
+= & A+\sum_{i=1}^{n-2}\left(x_{n-1}^2+2 x_{n-1} x_n+x_{n-1} x_i+x_n^2+x_n x_i\right) x_i \\
+= & A+\sum_{i=1}^{n-2} x_{n-1} x_i\left(x_{n-1}+x_i\right)+\sum_{i=1}^{n-2} x_n x_i\left(x_n+x_i\right)+2 x_{n-1} x_n \sum_{i=1}^{n-2} x_i \\
+= & A+\sum_{i=1}^{n-2} x_{n-1} x_i\left(x_{n-1}+x_i\right)+\sum_{i=1}^{n-1} x_n x_i\left(x_n+x_i\right) \\
+& -x_{n-1} x_n\left(x_{n-1}+x_n\right)+2 x_{n-1} x_n \sum_{i=1}^{n-2} x_i \\
+= & F+x_{n-1} x_n\left(2 \sum_{i=1}^{n-2} x_i-x_{n-1}-x_n\right)=F+\left[2-3\left(x_{n-1}+x_n\right)\right] x_{n-1} x_n .
+\end{aligned}
+$$
+因为 $\sum_{i=1}^n x_i=1$, 且 $x_1 \geqslant x_2 \geqslant \cdots \geqslant x_n$, 所以
+$$
+\frac{x_{n-1}+x_n}{2} \leqslant \frac{x_1+x_2+\cdots+x_n}{n}=\frac{1}{n},
+$$
+所以 $x_{n-1}+x_n \leqslant \frac{2}{n}$. 而 $n \geqslant 3$, 所以 $x_{n-1}+x_n \leqslant \frac{2}{n} \leqslant \frac{2}{3}$, 所以 $2-3\left(x_{n-1}+x_n\right) \geqslant$ 0 , 所以 $F^{\prime} \geqslant F$.
+只要变量组中的非零分量个数 $n \geqslant 3$, 上述变换就可继续进行, 最多经过 $n-2$ 次调整, 可将其中 $n-2$ 个分量都变为 0 , 再利用 $n=2$ 的情形, 知 $F$ 在 $\left(\frac{1}{2}, \frac{1}{2}, 0,0, \cdots, 0\right)$ 取最大值 $\frac{1}{4}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $f(x)=a x^2+b x+c$ 的所有系数都是正的, 且 $a+b+c=1$. 对所有满足: $x_1 x_2 \cdots x_n=1$ 的正数组 $x_1, x_2, \cdots, x_n$, 求 $f\left(x_1\right) f\left(x_2\right) \cdots f\left(x_n\right)$ 的最小值.
+%%<SOLUTION>%%
+解:$f(1)=a+b+c=1$. 若 $x_1=x_2=\cdots=x_n=1$, 则 $f\left(x_1\right) f\left(x_2\right) \cdots f\left(x_n\right)=1$.
+若 $x_1, x_2, \cdots, x_n$ 不全为 1 , 则由 $x_1 x_2 \cdots x_n=1$ 知, 其中必有一个小于 1 , 也必有一个大于 1 . 不妨设 $x_1>1, x_2<1$, 将 $x_1 、 x_2$ 用 $1 、 x_1 x_2$ 代替, 考察其变化:
+$$
+\begin{gathered}
+f\left(x_1\right) f\left(x_2\right)=\left(a x_1^2+b x_1+c\right)\left(a x_2^2+b x_2+c\right) \\
+=a^2 x_1^2 x_2^2+b^2 x_1 x_2+c^2+a b\left(x_1^2 x_2+x_1 x_2^2\right) \\
++a c\left(x_1^2+x_2^2\right)+b c\left(x_1+x_2\right) \\
+f(1) f\left(x_1 x_2\right)=(a+b+c)\left(a x_1^2 x_2^2+b x_1 x_2+c\right) \\
+=a^2 x_1^2 x_2^2+b^2 x_1 x_2+c^2+a b\left(x_1^2 x_2^2+x_1 x_2\right) \\
++a c\left(x_1^2 x_2^2+1\right)+b c\left(x_1 x_2+1\right), \\
+f\left(x_1\right) f\left(x_2\right)-f(1) f\left(x_1 x_2\right) \\
+=a b x_1 x_2\left(x_1+x_2-x_1 x_2-1\right)+a c\left(x_1^2+x_2^2-x_1^2 x_2^2-1\right) \\
++b c\left(x_1+x_2-x_1 x_2-1\right) \\
+=-a b x_1 x_2\left(x_1-1\right)\left(x_2-1\right)-a c\left(x_1^2-1\right)\left(x_2^2-1\right) \\
+-b c\left(x_1-1\right)\left(x_2-1\right)>0 .
+\end{gathered}
+$$
+反复进行上述变换, 得 $f\left(x_1\right) f\left(x_2\right) \cdots f\left(x_n\right) \geqslant f(1) f(1) \cdots f(1)=1$. 故
+$f\left(x_1\right) f\left(x_2\right) \cdots f\left(x_n\right)$ 的最小值为 1 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 对于满足条件 $x_1+x_2+\cdots+x_n=1$ 的非负实数 $x_1, x_2, \cdots, x_n$, 求 $S=\sum_{j=1}^n\left(x_j^4-x_j^5\right)$ 的最大值.
+%%<SOLUTION>%%
+分析:考虑 $n=2 、 3$ 的情形, 可发现 $\sum_{j=1}^n\left(x_j^4-x_j^5\right)$ 达到最大时, $x_1, x_2$, $\cdots, x_n$ 中最多有 2 个不为零.
+考虑这样的磨光工具 $(x, y) \rightarrow(x+y, 0)$, 希望有 $(x+y)^4-(x+y)^5+0^4-0^5>x^4-x^5+y^4-y^5$. 此不等式等价于 $4 x^2+ 4 y^2+6 x y>5 x^3+5 y^3+10 x^2 y+10 x y^2$. 此式左边 $=\frac{7}{2}\left(x^2+y^2\right)+\frac{1}{2}\left(x^2+\right. \left.y^2\right)+6 x y \geqslant \frac{7}{2}\left(x^2+y^2\right)+x y+6 x y=\frac{7}{2}(x+y)^2$, 而右边 $\leqslant 5 x^3+5 y^3+ 15 x^2 y+15 x y^2=5(x+y)^3$. 于是, 上式成立的一个充分条件是 $\frac{7}{2}(x+y)^2> 5(x+y)^3$, 即 $x+y<\frac{7}{10}$. 这样, 我们得到如下的引理: 如果 $x+y<\frac{7}{10}$, 则 $(x+y)^4-(x+y)^5>x^4-x^5+y^4-y^5$.
+解设 $x_1, x_2, \cdots, x_n$ 中非零数的个数为 $k$, 不妨设 $x_1 \geqslant x_2 \geqslant \cdots \geqslant x_k>0, x_{k+1}=x_{k+2}=\cdots=x_n=0$. 如果 $k \geqslant 3$, 则令 $x_i^{\prime}=x_i(i=1,2, \cdots$, $k-2), x_{k-1}^{\prime}=x_{k-1}+x_k, x_k^{\prime}=x_{k+1}^{\prime}=\cdots=x_n^{\prime}=0$, 因为 $x_{k-1}+x_k \leqslant \frac{2}{n} \leqslant \frac{2}{3}<\frac{7}{10}$, 由引理, 有 $\sum_{j=1}^n\left(x_j^{\prime 4}-x_j^{\prime 5}\right)>\sum_{j=1}^n\left(x_j^4-x_j^5\right)$. 只要非零变量个数不小于 3 , 上述调整就可进行.
+最多经过 $n-2$ 次调整, 可以将 $x_3, \cdots, x_n$ 调为 0 , 而 $S$ 不减.
+记此时的 $x_1 、 x_2$ 为 $a 、 b$, 则 $a+b=1$, 且 $S=a^4(1-a)+b^4(1-b)=a^4 b+ a b^4=a b\left(a^3+b^3\right)=a b(a+b)\left(a^2-a b+b^2\right)=a b\left[(a+b)^2-3 a b\right]=a b(1- 3 a b)=\frac{1}{3}(3 a b)(1-3 a b) \leqslant \frac{1}{3} \times \frac{1}{4}=\frac{1}{12}$.
+又当 $x_1=\frac{3+\sqrt{3}}{6}, x_2=\frac{3-\sqrt{3}}{6}, x_3=\cdots=x_n=0$ 时 $S=\frac{1}{12}$, 故 $S_{\max }=\frac{1}{12}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $x 、 y 、 z$ 为非负实数, 满足: $x+y+z=1$, 求 $Q=\sqrt{2-x}+ \sqrt{2-y}+\sqrt{2-z}$ 的最小值.
+%%<SOLUTION>%%
+解:对称性, 不妨设 $x \leqslant y \leqslant z$, 令 $x^{\prime}=0, y^{\prime}=y, z^{\prime}=z+x-x^{\prime}$, 则 $x^{\prime} \geqslant 0, y^{\prime} \geqslant 0, z^{\prime} \geqslant 0$, 且 $z^{\prime}-z=x-x^{\prime}, y^{\prime}+z^{\prime}=x+y+z-x^{\prime}=x+y+z=1$, 于是
+$$
+\begin{aligned}
+& Q-\left(\sqrt{2-x^{\prime}}+\sqrt{2-y^{\prime}}+\sqrt{2-z^{\prime}}\right) \\
+& =\sqrt{2-x}+\sqrt{2-y}+\sqrt{2-z}-\left(\sqrt{2-x^{\prime}}+\sqrt{2-y^{\prime}}+\sqrt{2-z^{\prime}}\right) \\
+& =\left(\sqrt{2-x}-\sqrt{2-x^{\prime}}\right)+\left(\sqrt{2-z}-\sqrt{2-z^{\prime}}\right) \\
+& =\frac{x^{\prime}-x}{\sqrt{2-x}+\sqrt{2-x^{\prime}}}+\frac{z^{\prime}-z}{\sqrt{2-z}+\sqrt{2-z^{\prime}}} \\
+& =\left(x-x^{\prime}\right)\left(\frac{-1}{\sqrt{2-x}+\sqrt{2-x^{\prime}}}+\frac{1}{\sqrt{2-z}+\sqrt{2-z^{\prime}}}\right) \\
+& =x \cdot \frac{\left(\sqrt{2-x}+\sqrt{2-x^{\prime}}\right)-\left(\sqrt{2-z}+\sqrt{2-z^{\prime}}\right)}{\left(\sqrt{2-x}+\sqrt{2-x^{\prime}}\right)\left(\sqrt{2-z}+\sqrt{2-z^{\prime}}\right)} \\
+& =x \cdot \frac{(\sqrt{2-x}-\sqrt{2-z})+\left(\sqrt{2-x^{\prime}}-\sqrt{2-z^{\prime}}\right)}{\left(\sqrt{2-x}+\sqrt{2-x^{\prime}}\right)\left(\sqrt{2-z}+\sqrt{2-z^{\prime}}\right)} \\
+& =x \cdot \frac{\frac{z-x}{\sqrt{2-x}+\sqrt{2-z}}+\frac{z^{\prime}-x^{\prime}}{\sqrt{2-x^{\prime}}-\sqrt{2-z^{\prime}}}}{\left(\sqrt{2-x}+\sqrt{2-x^{\prime}}\right)\left(\sqrt{2-z}+\sqrt{2-z^{\prime}}\right)} \\
+& =x \cdot \frac{\frac{z-x}{\sqrt{2-x}+\sqrt{2-z}}+\frac{z^{\prime}}{\sqrt{2-x^{\prime}}-\sqrt{2-z^{\prime}}}}{\left(\sqrt{2-x}+\sqrt{2-x^{\prime}}\right)\left(\sqrt{2-z}+\sqrt{2-z^{\prime}}\right)} \geqslant 0 . \\
+&
+\end{aligned}
+$$
+所以,
+$$
+Q \geqslant \sqrt{2-x^{\prime}}+\sqrt{2-y^{\prime}}+\sqrt{2-z^{\prime}}=\sqrt{2}+\sqrt{2-y^{\prime}}+\sqrt{2-z^{\prime}} . \label{eq1}
+$$
+因为 $\left(\sqrt{2-y^{\prime}}+\sqrt{2-z^{\prime}}\right)^2=\left(2-y^{\prime}\right)+\left(2-z^{\prime}\right)+2 \sqrt{2-y^{\prime}} \sqrt{2-z^{\prime}}$
+$$
+\begin{aligned}
+& \left.=4-\left(y^{\prime}+z^{\prime}\right)+2 \sqrt{4-2\left(y^{\prime}\right.}+z^{\prime}\right)+y^{\prime} z^{\prime} \\
+& =4-1+2 \sqrt{4-2 \cdot 1+y^{\prime} z^{\prime}} \\
+& =3+2 \sqrt{2+y^{\prime} z^{\prime}} \\
+& \geqslant 3+2 \sqrt{2}=(1+\sqrt{2})^2,
+\end{aligned}
+$$
+所以
+$$
+\sqrt{2-y^{\prime}}+\sqrt{2-z^{\prime}} \geqslant 1+\sqrt{2} \text {. } \label{eq2}
+$$
+由 式\ref{eq1} \ref{eq2}, 得 $Q \geqslant 1+2 \sqrt{2}$, 当 $x=y=0, z=1$ 时, $Q=1+2 \sqrt{2}$, 因此 $Q$ 的最小值是 $1+2 \sqrt{2}$.
+%%PROBLEM_END%%
+
+

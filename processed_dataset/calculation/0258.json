@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例7. 设 $n$ 为一正整数,且 $A_1, A_2, \\cdots, A_{2 n+1}$ 是某个集合 $B$ 的子集.\n设\n(1) 每一个 $A_i$ 恰含有 $2 n$ 个元素;\n(2) 每一个 $A_i \\cap A_j(1 \\leqslant i<j \\leqslant 2 n+1)$ 恰含有一个元素;\n(3) $B$ 的每个元素至少属于 $A_i$ 中的两个.\n问对怎样的 $n$, 可以将 $B$ 中元素各标上数 0 或 1 , 使得每个 $A_i$ 恰含有 $n$ 个标上了 0 的元素?",
+    "solution": "解:首先, (3) 中的\"至少\"实际上也可以改成\"恰\". 因为如果有一个元素 $a_1 \\in A_1 \\cap A_{2 n} \\cap A_{2 n+1}$, 那么剩下的 $2 n-2$ 个子集 $A_2, A_3, \\cdots, A_{2 n-1}$ 每个至多含 $A_1$ 中一个元素, 从而 $A_1$ 中至少有一个元素不属于 $A_2 \\cup A_3 \\cup \\cdots \\cup A_{2 n-1} \\cup A_{2 n} \\cup A_{2 n+1}$, 这与(3)矛盾.\n于是作完全图 $K_{2 n+1}$, 每一个顶点 $v_i$ 表示一个子集 $A_i$, 每一条边 $\\left(v_i\\right.$, $\\left.v_j\\right)=b_{i j}(1 \\leqslant i, j \\leqslant 2 n+1, i \\neq j)$ 表示集 $A_i$ 与 $A_j$ 所共有的那个元素.\n于是题目就转化为: 对怎样的 $n$, 可以给 $K_{2 n+1}$ 的每条边贴一个 0 或 1 的标签, 使得从图中任一点 $v_i$ 出发的 $2 n$ 条边中恰有 $n$ 条边贴有 0 的标签.\n因为 $K_{2 n+1}$ 有 $n(2 n+1)$ 条边, 如果上述贴标签的要求能够满足, 则贴 0 的边共有 $\\frac{1}{2} n(2 n+1)$ 条, 于是 $n$ 必须是偶数.\n反之, 若 $n=2 m$ 是偶数, 我们把 $K_{2 n+1}$ 中的边 $\\left(v_i, v_{i-m}\\right),\\left(v_i, v_{i-m+1}\\right)$, $\\cdots,\\left(v_i, v_{i-1}\\right),\\left(v_i, v_{i+1}\\right), \\cdots,\\left(v_i, v_{i+m}\\right), i=1,2, \\cdots, 2 n+1$, 全标上 0 , 其余的标上 1 , 则得本题所要求的贴标签方法 (要注意的是, 顶点的下标的加法是按模 $2 n+1$ 进行的, 即 $\\left.v_{(2 n+1)+i}=v_i\\right)$.\n所以,当且仅当 $n$ 为偶数时, 可以满足题目要求.",
+    "remark": "",
+    "figures": []
+}

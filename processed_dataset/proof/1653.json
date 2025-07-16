@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例5. 已知凸四边形 $A B C D$ 满足 $A B=B C, A D=D C$. $E$ 是线段 $A B$ 上一点, $F$ 是线段 $A D$ 上一点, 满足 $B 、 E 、 F 、 D$ 四点共圆.\n作 $\\triangle D P E$ 顺向相似于 $\\triangle A D C$; 作 $\\triangle B Q F$ 顺向相似于 $\\triangle A B C$. 求证: $A 、 P 、 Q$ 三点共线.\n(注: 两个三角形顺向相似是指它们的对应顶点同按顺时针方向或同按逆时针方向排列.)",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c1i7.png>), 将 $B 、 E 、 F 、 D$ 四点所共圆的圆心记作 $O$, 连结 $O B 、 O E 、 O F 、 O D 、 B D$.\n在 $\\triangle B D F$ 中, $O$ 是外心, 故 $\\angle B O F=2 \\angle B D A$.\n又 $\\triangle A B D \\cong \\triangle C B D, \\angle C D A=2 \\angle B D A$.\n于是 $\\angle B O F=\\angle C D A=\\angle E P D$,\n由此可知 $\\triangle B O F \\backsim \\triangle E P D, \\label{eq1}$.\n另一方面, 由 $B 、 E 、 F 、 D$ 四点共圆知\n$\\triangle A B F \\backsim \\triangle A D E, \\label{eq2}$.\n综合 式\\ref{eq1}, \\ref{eq2} 可知, 四边形 $A B O F \\backsim$ 四边形\n$A D P E$, 由此得\n$$\n\\angle B A O=\\angle D A P . \\label{eq3}\n$$\n同理,可得\n$$\n\\angle B A O=\\angle D A Q . \\label{eq4}\n$$\n式\\ref{eq3},\\ref{eq4}表明 $A 、 P 、 Q$ 三点共线.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1i7.png"
+    ]
+}

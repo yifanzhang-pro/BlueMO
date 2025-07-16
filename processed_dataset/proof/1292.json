@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例9. (排序不等式) 设有两个有序数组: $a_1 \\leqslant a_2 \\leqslant \\cdots \\leqslant a_n$ 及 $b_1 \\leqslant b_2 \\leqslant \\cdots \\leqslant b_n$. 求证:\n$$\n\\begin{aligned}\n& a_1 b_1+a_2 b_2+\\cdots+a_n b_n(\\text { 顺序和 }) \\\\\n\\geqslant & a_1 b_{j_1}+a_2 b_{j_2}+\\cdots+a_n b_{j_n}(\\text { 乱序和 }) \\\\\n\\geqslant & a_1 b_n+a_2 b_{n-1}+\\cdots+a_n b_1(\\text { 逆序和 }),\n\\end{aligned}\n$$\n其中 $j_1, j_2, \\cdots, j_n$ 是 $1,2, \\cdots, n$ 的任意一个排列.",
+    "solution": "证明:$$\ns_i=b_1+b_2+\\cdots+b_i,\n$$\n$$\ns_i^{\\prime}=b_{j_1}+b_{j_2}+\\cdots+b_{j_i}(i=1,2, \\cdots, n) \\text {. }\n$$\n由题设易知\n$$\ns_i \\leqslant s_i^{\\prime}(i=1,2, \\cdots, n-1) \\text {, }\n$$\n$$\ns_n=s_n^{\\prime} \\text {. }\n$$\n又因为 $a_i-a_{i+1} \\leqslant 0$, 故 $s_i\\left(a_i-a_{i+1}\\right) \\geqslant s_i^{\\prime}\\left(a_i-a_{i+1}\\right)$.\n所以\n$$\n\\begin{aligned}\n\\sum_{i=1}^n a_i b_i & =\\sum_{i=1}^{n-1} s_i\\left(a_i-a_{i+1}\\right)+a_n s_n \\\\\n& \\geqslant \\sum_{i=1}^{n-1} s_i^{\\prime}\\left(a_i-a_{i+1}\\right)+a_n s_n^{\\prime} \\\\\n& =\\sum_{i=1}^n a_i b_{j_i} .\n\\end{aligned}\n$$\n此即左端不等式.\n类似可证得右端不等式.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,107 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 如果 (1) $a, b, c, d$ 都属于 $\{1,2,3,4\} ;$; (2) $a \neq b, b \neq c, c \neq d, d \neq a$; (3) $a$ 是 $a, b, c, d$ 中最小值, 那么可组成不同的四位数 $\overline{a b c d}$ 的个数是 . 
+%%<SOLUTION>%%
+$\overline{a b c d}$ 中恰有 2 个不同数字时, 从 4 个数字中取 2 个数字有 $\mathrm{C}_4^2$ 种方法, 其中较小的数字放在第 1,3 位, 较大的数字放在第 2,4 位, 只能组成一个四位数, 故这时不同的四位数有 $\mathrm{C}_4^2=6$ 个; $\overline{a b c d}$ 中恰有 3 个不同数字时, 从 4 个数字中取 3 个数字有 $\mathrm{C}_4^3$ 种取法.
+组成第 1,3 位数字相同的四位数有 $\mathrm{A}_2^2$ 个,组成第 2,4 位数字相同的四位数也有 $\mathrm{A}_2^2$ 个, 故这时不同的四位数有 $\mathrm{C}_4^3\left(\mathrm{~A}_2^2+\mathrm{A}_2^2\right)=16$ 个; $\overline{a b c d}$ 中恰有 4 个数字不同时, 取最小的数字放在第 1 位,其余 3 个数字任意排列, 这时不同的四位数有 $\mathrm{A}_3^3=6$ 个.
+综上可得不同的四位数的个数为 $6+16+6=28$ 个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 由 $1,2,3,4,5,6$ 组成的, 至少有三个数位上的数码不同的 5 位数中, 有多少个数使得数码 1 和 6 不相邻?
+%%<SOLUTION>%%
+设 $S$ 为由 $1,2,3,4,5,6$ 组成的 5 位数集合, $A$ 是其中至多由两个不同数码组成的 5 位数构成的集合, $B$ 为其中 1,6 相邻的 5 位数构成的集合.
+于是所求 5 位数的个数为 $m=\left|\complement_S A \cap \complement_S B\right|=|S|-|A|-|B|+|A \cap B|$, 其中 $|S|=6^5,|A|=6+\mathrm{C}_6^2\left(\mathrm{C}_5^1+\mathrm{C}_5^2+\mathrm{C}_5^3+\mathrm{C}_5^4\right)=456,|A \cap B|=\mathrm{C}_5^1+ \mathrm{C}_5^2+\mathrm{C}_5^3+\mathrm{C}_5^4=30$, 设 $b_n$ 为 1,6 相邻的 $n$ 位数的个数, $c_n$ 为首位为 1 或 6 且 1,6 相邻的 $n$ 位数个数, 则 $b_n=c_n+4 b_{n-1}$. 再根据前二位为 16 或 61 ; 前二位为 11 或 66 ; 第一位为 1 或 6 第二位不为 1,6 , 三种情形得 $c_n=2 \times 6^{n-2}+ c_{n-1}+8 b_{n-2}$, 代入上式得 $b_n=2 \times 6^{n-2}+4 b_{n-2}+5 b_{n-1}$, 结合 $b_1=0, b_2=2$. 可算出 $|B|=b_5=1470$, 故所求 5 位数的个数为 $m=6^5-456-1470+30=$ 5880 个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 将 2 个 $a$ 和 2 个 $b$ 共 4 个字母填在如图所示的 16 个方格内, 每个小方格内至多填 1 个字母,若使相同字母既不同行也不同列, 则不同的填法共有?种.
+(用数字作答) 
+%%<SOLUTION>%%
+使 2 个 $a$ 既不同行也不同列的填法有 $\mathrm{C}_4^2 \mathrm{~A}_4^2=72$ 种, 同理,使 2 个 $b$ 既不同行也不同列的填法也有 $\mathrm{C}_4^2 \mathrm{~A}_4^2=72$ 种, 故由乘法原理, 这样的填法共有 $72^2$ 种, 其中不符合要求的填法有两种情况: 2 个 $a$ 所在方格内都填有 $b$ 的情况有 72 种; 2 个 $a$ 所在方格内仅有 1 个方格内填有 $b$ 的情况有 $\mathrm{C}_{16}^1 \cdot \mathrm{A}_9^2=16 \times 72$ 种.
+所以符合题设条件的填法共有 $72^2-72-16 \times 72=3960$ 种.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 有三条长度分别为1,2,3的线段,现将长为3的线段任意分成 $n$ 段, $n \geqslant 2$, 证明: 在所得的 $n+2$ 条线段中必有三段可组成三角形.
+%%<SOLUTION>%%
+设分成的 $n$ 条线段的长度分别是 $a_1, a_2, \cdots, a_n$. 若有某个 $a_k>1$, 则 $1,2, a_k$ 可组成三角形,故不妨设 $a_1 \leqslant a_2 \leqslant \cdots \leqslant a_n \leqslant 1$. 若 $a_{n-1}>\frac{1}{2}$, 则 $a_{n-1}+a_n>1$, 从而 $1, a_{n-1}, a_n$ 可组成三角形; 若 $a_{n-1} \leqslant \frac{1}{2}$, 且存在 $k$ 使 $a_k+ a_{k+1}>a_{k+2}$, 则 $a_k, a_{k+1}, a_{k+2}$ 可组成三角形; 若 $a_{n-1} \leqslant \frac{1}{2}$ 且对任何 $k$ 有 $a_k+ a_{k+1} \leqslant a_{k+2}$, 则 $a_k \leqslant \frac{1}{2} a_{k+2}$, 从 $a_{n-1} \leqslant \frac{1}{2}$ 出发推出, 当 $n$ 为奇数时, $a_1+a_2+ \cdots+a_n \leqslant 2\left(a_2+a_4+\cdots+a_{n-1}\right)+a_n \leqslant 2\left(\frac{1}{2}+\frac{1}{4}+\cdots+\frac{1}{2^{\frac{n}{2}}}\right)+1<3$. 当 $n$ 为偶数时, $a_1+a_2+\cdots+a_n \leqslant 2\left(a_1+a_3+\cdots+a_{n-1}\right)+1 \leqslant 2\left(\frac{1}{2}+\frac{1}{4}+\cdots+\frac{1}{2^{\frac{n}{2}}}\right)+1<3$. 矛盾.
+故命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 从集合 $S=\{1,2, \cdots, n\}\left(n \in \mathbf{N}_{+}\right)$中先取出子集 $X$, 再取出子集 $Y$, 使 $X$ 不是 $Y$ 的子集, 且 $Y$ 也不是 $X$ 的子集, 问这种有序选取有多少种不同的方法?
+%%<SOLUTION>%%
+由于 $S$ 中有 $2^n$ 个子集,故当 $X \neq Y$ 时, 从 $S$ 中有序选取两个不同子集 $X$ 和 $Y$ 有 $\mathrm{A}_{2^n}^2=2^n\left(2^n-1\right)$ 种方法.
+从这总的选法中减去 $X \varsubsetneqq Y$ 和 $Y \varsubsetneqq X$ 的情况, 即为所求的数 $m$. 当 $X \varsubsetneqq Y$ 时, 设 $|Y|=i(1 \leqslant i \leqslant n)$, 则 $Y$ 有 $\mathrm{C}_n^i$ 种取法,而 $X$ 是 $Y$ 的真子集, $X$ 有 $\left(2^i-1\right)$ 种取法, 故 $X \varsubsetneqq Y$ 的取法种数为 $\sum_{i=1}^n \mathrm{C}_n^i\left(2^i-1\right)=\sum_{i=0}^n \mathrm{C}_n^i\left(2^i-1\right)=\sum_{i=0}^n \mathrm{C}_n^i 2^i-\sum_{i=0}^n \mathrm{C}_n^i=3^n-2^n$, 由对称性, $Y \varsubsetneqq X$ 的取法也有 $3^n-2^n$ 种, 故得 $m=2^n\left(2^n-1\right)-2\left(3^n-2^n\right)=2^{2 n}-2 \cdot 3^n+2^n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 在平面直角坐标系上有 9 个整点 $A_i\left(x_i, y_i\right)\left(x_i, y_i \in \mathbf{Z}, i=1,2,3\right.$, $\cdots, 9)$, 其中任意三点不共线, 求证: 必存在一个 $\triangle A_i A_j A_k(1 \leqslant i<j<k \leqslant 9)$, 其重心仍为整点.
+%%<SOLUTION>%%
+易知, 5 个整数中必有 3 个之和被 3 整除.
+又知 $\triangle A_i A_j A_k$ 的重心坐标为 $\left(\frac{x_i+x_j+x_k}{3}, \frac{y_i+y_j+y_k}{3}\right)$. (1) 若 $A_i$ 的横坐标中有 5 个对模 3 同余, 不妨设 $x_1 \equiv x_2 \equiv x_3 \equiv x_4 \equiv x_5(\bmod 3)$, 由于 $y_1, y_2, y_3, y_4, y_5$ 中必有 3 个数之和能被 3 整除.
+不妨设这 3 个数是 $y_i, y_j, y_k(1 \leqslant i<j<k \leqslant 5)$, 则 $\triangle A_i A_j A_k$ 即为所求; (2)若 $A_i$ 的横坐标中任 5 个均对模 3 不全同余, 但有 5 个纵坐标对模 3 同余, 则结论同样成立; (3) 若 $A_i$ 的横坐标中任 5 个对模 3 不全同余, 纵坐标中也任 5 个对模 3 不全同余, 则 $x_i$ 被 3 除的余数取遍 $0,1,2$, $y_i$ 被 3 除时余数也取遍 $0,1,2$. 从而 $x_i$ (或 $y_i$ ) 中至少有两种余数出现 3 次, 不妨设 $x_1 \equiv x_2 \equiv x_3 \equiv 0(\bmod 3), x_4 \equiv x_5 \equiv x_6 \equiv 1(\bmod 3)$. 这时若 $y_1 \equiv y_2 \equiv y_3(\bmod 3)$ 或 $y_4 \equiv y_5 \equiv y_6(\bmod 3)$ 有一个成立, 则结论也成立.
+否则 $y_1$, $y_2, y_3$ 对模 3 的余数至少取两种不同的值 $\alpha, \beta(\alpha \neq \beta, \alpha, \beta \in\{0,1,2\})$, 并设 $\{\alpha, \beta, \gamma\}=\{0,1,2\}$, 同样 $y_4, y_5, y_6$ 对模 3 的余数也至少取两种不同的值, 或为 $\alpha$ 与 $\beta$ 或为 $\alpha$ 与 $\gamma$ 或为 $\beta$ 与 $\gamma$. 也就是说 $y_1, y_2, y_3, y_4, y_5, y_6$ 对模 3 的余数只有两种可能: (i) 包括全部 $\{\alpha, \beta, \gamma\}$; (ii) 只包括 $\alpha, \beta$, 但每个重复 2 至 4 次.
+此时取 $k \in\{7,8,9\}$ 使 $x_k \equiv 2(\bmod 3)$, 则存在 $1 \leqslant i \leqslant 3<j \leqslant 6$, 使 $x_i+x_j+x_k \equiv 0+1+2 \equiv 0(\bmod 3)$ 且 $y_i+y_j+y_k \equiv \alpha+\beta+\gamma \equiv 0(\bmod 3)$, 或者 $y_i+y_j+y_k \equiv \alpha+\alpha+\alpha \equiv 0(\bmod 3)$ 或者 $y_i+y_j+y_k \equiv \beta+\beta+\beta \equiv 0(\bmod 3)$, 从而 $\triangle A_i A_j A_k$ 的重心仍为整点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 某协会共有 $n$ 个人,已知其中任意 3 人中必有两人互相认识, 求最小正整数 $n$ 使得其中必存在 4 人互相都认识.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c5a7.png>)所示, 用 $n$ 个点(其中任意 4 点不共面)表示 $n$ 个人, 若两人互相不认识, 则对应两点连实线, 否则连虚线, 得到图 $G$. 于是图中不存在三边为实线的三角形,要求最小正整数 $n$ 使图中存在 4 点, 每两点间连有虚线.
+首先, 如图 8 个点, 每两点间连有实线或虚线, 图中既不存在实线三角形, 也不存在 4 点, 每两点间连有虚线.
+若从中去掉一些点以及从该点出发的所有实线和 虚线, 图中更不存在实线三角形, 也不存在 4 点, 每两点间连有虚线, 故所求最小正整数 $n \geqslant 9$. 当 $n=9$ 时, 分为下列 3 种情形:
+(1) 存在一点 $A_1$, 从 $A_1$ 出发至少有 4 条实线, 不妨设 $A_1 A_2, A_1 A_3$, $A_1 A_4, A_1 A_5$ 为实线.
+由已知条件知 $A_2, A_3, A_4, A_5$ 任意两点间的连线不能为实线而只能为虚线, 结论成立; 
+(2) 存在一点 $A_1$, 从 $A_1$ 出发至多有 2 条实线, 从而从 $A_1$ 出发至少有 6 条虚线.
+考虑以这 6 条虚线另一端为顶点的图, 由 Ramsey 定理(第二章例 1) 知其中必存在一个三边同为实线或同为虚线的三角形, 而由已知条件知不存在实线三角形,故必存在虚线三角形, 设为 $\triangle A_2 A_3 A_4$. 于是存在 4 点 $A_1, A_2, A_3, A_4$ 使得其中每两点间的连线为虚线,结论也成立; (3) 从每点出发都恰有 3 条实线, 于是图中的实线数为 $\frac{1}{2} \times 9 \times 3=\frac{27}{2}$, 这不是整数,矛盾, 即情形 (3)不可能出现.
+综上得所求 $n$ 的最小值为 9 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 平面上已给 7 个点,用一些线段连接它们,使得: (1) 每 3 点中至少有两点连有线段; (2) 线段条数最少, 问有多少条线段? 并给出这样一个图形.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c5a8.png>)所示 7 点间连有 9 条线段可保证条件 (1) 被满足.
+面证明任何 8 条连线都不满足条件(1), 即存在三个点,它们之间无连线.
+因从各点出发的线段数之和为 $2 \times 8=16$,故由第二抽屉原理 (或平均值原理) 知有一点 $A$,从它出发至多有 $\left[\frac{16}{7}\right]=2$ 条线段.
+(i) 若从 $A$ 出发至多有 1 条连线,则至少有 5 点与 $A$ 没有连线, 这 5 点间至少有 $C_5^2-8=2$ 对点没有连线, 设 $C$ 与
+$D$ 没有连线, 于是 $A 、 C 、 D 3$ 点间无连线; (ii) 若从 $A$ 出发有两条连线 $A B$ 和 $A C$, 考察其余 4 点 $D 、 E 、 F 、 G$ 之间的连线情况.
+(a) 若有 6 条连线, 则 $B 、 C$ 之间以及 $B 、 C$ 与后 4 点的任何一点间没有连线, 从而 $B 、 C 、 D$ 之间无线相连.
+(b) 若至多有 5 条连线, 则至少有 $\mathrm{C}_4^2-5=1$ 对点之间没有连线, 设 $D$ 与 $E$ 没有连线, 于是 $A 、 D 、 E$ 之间无线相连.
+综上可知, 满足要求的连线法最少要 9 条线.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 设凸六边形 $A_1 A_2 A_3 A_4 A_5 A_6$ 的面积为 $S$. 证明 : 以其中 3 点为顶点的所有三角形中必有一个三角形的面积不大于 $\frac{1}{6} S$.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c5a9.png>)所示设 3 条对角线 $A_1 A_4$ 与 $A_2 A_5, A_2 A_5$ 与 $A_3 A_6, A_3 A_6$ 与 $A_1 A_4$ 的交点分别为 $M_1, M_2, M_3$. 连接 $A_1 M_2, A_3 M_1, A_5 M_3$. 我们首先证明 6 个三角形: $\triangle A_1 A_2 M_2, \triangle A_2 A_3 M_1, \triangle A_3 A_4 M_1, \triangle A_4 A_5 M_3$, $\triangle A_5 A_6 M_3, \triangle A_6 A_1 M_2$ 中必有一个的面积 $\leqslant \frac{1}{6} S$. 事 $S$. 由平均值原理知其中必有一个三角形的面积 $\leqslant \frac{1}{6} S$, 不妨设 $S_{\triangle A_1 A_2 M_2} \leqslant \frac{1}{6} S$. 其次我们证明题中结论成立.
+(a) 若 $A_1 A_2 / / A_3 A_6$, 则 $S_{\triangle A_1 A_2 A_6}=S_{\triangle A_1 A_2 M_2} \leqslant\frac{1}{6} S$. (b)若 $A_1 A_2 \not X A_3 A_6$, 则 $\min \left\{S_{\triangle A_1 A_2 A_6}, S_{\triangle A_1 A_2 A_3}\right\}<S_{\triangle A_1 A_2 M_2} \leqslant-\frac{1}{6} S$.
+%%PROBLEM_END%%
+
+

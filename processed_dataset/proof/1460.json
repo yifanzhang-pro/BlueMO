@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 设正整数 $n \\geqslant 2$, 已知 $n$ 个正数 $v_1, v_2, \\cdots, v_n$ 满足下列两个条件:\n(1) $v_1+v_2+\\cdots+v_n=1$;\n(2) $v_1 \\leqslant v_2 \\leqslant \\cdots \\leqslant v_n \\leqslant 2 v_1$.\n求 $v_1^2+v_2^2+\\cdots+v_n^2$ 的最大值.",
+    "solution": "可以把条件推广为: $v_1+v_2+\\cdots+v_n=1, v_1 \\leqslant v_2 \\leqslant \\cdots \\leqslant v_n \\leqslant r v_1$.\n下面证明: $v_1^2+v_2^2+\\cdots+v_n^2 \\leqslant \\frac{(r+1)^2}{4 m}$, 其中 $r>1, r \\in \\mathbf{R}^{+}$.\n对于任意 $j \\in \\mathbf{Z}^{+}, 1 \\leqslant j \\leqslant n$, 由条件, 有 $\\left(v_j-v_1\\right)\\left(r v_1-v_j\\right) \\geqslant 0$, 故 $r v_1 v_j-r v_1^2-v_j^2+v_1 v_j \\geqslant 0$.\n上式关于 $j$ 从 1 到 $n$ 求和, 可得 $\\sum_{j=1}^n v_j^2 \\leqslant(r+1) v_1-m v_1^2= -m\\left(v_1-\\frac{r+1}{2 m}\\right)^2+\\frac{(r+1)^2}{4 m} \\leqslant \\frac{(r+1)^2}{4 m}$.",
+    "remark": "",
+    "figures": []
+}

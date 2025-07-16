@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 将平面分成 $f$ 个区域,每两个区域都相邻, 问 $f$ 最大为多少?",
+    "solution": "考虑对偶图, 由于 $K_5$ 不是平面图, 所以 $f \\leqslant 4$.",
+    "remark": "",
+    "figures": []
+}

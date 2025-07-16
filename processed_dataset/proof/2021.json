@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例3. 已知 $A_1 A_2 \\cdots A_n$ 是一个正 $n$ 边形, $M_1, M_2, \\cdots, M_n$ 是相应边的中点.\n设 $P$ 是这个 $n$ 边形所在平面上的任意一点.\n求证:\n$$\n\\sum_{i=1}^n P M_i \\geqslant\\left(\\cos \\frac{\\pi}{n}\\right) \\sum_{i=1}^n P A_i . \\label{eq1}\n$$",
+    "solution": "证明:如图(<FilePath:./images/volume9/figures/fig-c2i4.png>), $M_{i-1} 、 M_i$ 分别是这个正 $n$ 边形第 $i-1$ 条边和第 $i$ 条边的中点.\n对四边形 $P M_{i-1} A_i M_i$ 应用 Ptolemy 不等式可得局部不等式\n$$\nA_i M_{i-1} \\cdot P M_i^i+P M_{i-1} \\cdot A_i M_i \\geqslant P A_i \\cdot M_{i-1} M_i,\n$$\n由此可得\n$$\nP M_i+P M_{i-1} \\geqslant 2\\left(\\cos \\frac{\\pi}{n}\\right) \\cdot P A_i, \\label{eq2}\n$$\n这里 $i=1,2, \\cdots, n$, 并约定 $A_0=A_n, M_0=M_n$.\n现对式\\ref{eq2}求和可得\n$$\n\\sum_{i=1}^n\\left(P M_i+P M_{i-1}\\right) \\geqslant 2\\left(\\cos \\frac{\\pi}{n}\\right) \\cdot \\sum_{i=1}^n P A_i,\n$$\n这就是式\\ref{eq1}.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c2i4.png"
+    ]
+}

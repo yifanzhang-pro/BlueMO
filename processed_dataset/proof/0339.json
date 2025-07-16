@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设 $n$ 为奇数且大于 1 , 又 $k_1, k_2, \\cdots, k_n$ 是给定的整数, 对 $1,2, \\cdots, n$ 的 $n !$ 个排列中每一个排列 $a=\\left(a_1, a_2, \\cdots, a_n\\right)$, 记 $S(a)==\\sum_{i=1}^n k_i a_i$. 证明: 存在两个排列 $b$ 和 $c, b \\neq c$, 使 $S(b)-S(c)$ 被 $n !$ 整除.",
+    "solution": "用反证法.\n假设对任意排列 $b$ 和 $c, b \\neq c$ 都有 $S(b)-S(c) \\not \\equiv O(\\bmod n !) \\cdots$ (1), \n于是由(1)知当 $a$ 遍历 $1,2, \\cdots, n$ 的 $n !$ 个排列时, $S(a)$ 遍历模 $n$ ! 的一个完全剩余系.\n记 $1,2, \\cdots, n$ 的所有排列集合为 $\\sigma$,于是 $\\sum_{a \\in \\sigma} S(a) \\equiv \\sum_{k=1}^{n !} k=\\frac{1}{2}(n !)(n !+1)(\\bmod n !)$. \n又 $n>1$ 为奇数, 故 $\\sum_{a \\in \\sigma} S(a) \\equiv \\frac{1}{2} n ! \\not \\equiv 0(\\bmod n !) \\cdots$ (2). \n另一方面 $\\sum_{a \\in \\sigma} S(a)=\\sum_{a \\in \\sigma} \\sum_{i=1}^n k_i a_i=\\sum_{i=1}^n k_i\\left(\\sum_{a \\in \\sigma} a_i\\right)= \\frac{(n !)(n+1)}{2} \\sum_{i=1}^n k_i \\equiv 0(\\bmod n !)$; 这与(2)矛盾.\n故命题结论得证.",
+    "remark": "",
+    "figures": []
+}

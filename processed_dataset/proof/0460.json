@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 有三所中学, 每所有学生 $n$ 名.\n每名学生都认识其他两所中学的 $n+1$ 名学生.\n证明: 从每所中学可以选出一名学生, 使选出来的 3 名学生互相认识.",
+    "solution": "如图(<FilePath:./images/volume12/figures/fig-c1a8.png>), 用 $3 n$ 个顶点表示这些学生,三所中学的学生组成的三个顶点集合分别记为 $X, Y$ 和 $Z$. 若 $u$ 和 $v$ 是不同学校的学生, 而且是互相认识的, 则在 $u$ 与 $v$ 之间连一条边, 这样便得图 $G$. 设 $x \\in X, Y$ 和 $Z$ 中和 $x$ 相邻的顶点数记作 $k$ 和 $l$, 则 $k+l=n+1$. $k$ 与 $l$ 中大的记作 $m(x)$, 让 $x$ 跑遍 $X, m(x)$ 的最大值记作 $m_X, m_Y$ 与 $m_Z$ 作同样理解.\n数 $m_X, m_Y, m_Z$ 中的最大值记作 $m$, 不妨设 $m=m_X$, 并且 $x_0 \\in X$,\n使得 $Y$ 中和 $x_0$ 相邻的顶点集合 $Y_1$ 中顶点数 $\\left|Y_1\\right|=m$. 于是 $Z$ 中与 $x_0$ 相邻的顶点数为 $n+1-m \\geqslant 1$. 设 $z_0 \\in Z$ 与 $x_0$ 相邻.\n如果有 $y_0 \\in Y_1$ 与 $z_0$ 相邻, 则 $\\triangle x_0 y_0 z_0$ 是 $G$ 中的一个三角形.\n若 $Y_1$ 中每一个 $y$ 与 $z_0$ 都不相邻, 则 $Y$ 中与 $z_0$ 相邻的顶点数 $\\leqslant n-m$. 因此 $z_0$ 与 $X$ 中相邻的顶点数 $\\geqslant n+1-(n-m)= m+1$,与 $m$ 的最大性矛盾.\n于是证得 $G$ 中必有 $\\triangle x_0 y_0 z_0$.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c1a8.png"
+    ]
+}

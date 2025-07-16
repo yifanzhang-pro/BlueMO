@@ -1,0 +1,107 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 正整数 $n$ 满足如下性质: 在 $1,2, \cdots, 100$ 中任取 $n$ 个不同的奇数, 必有两个的和为 102 . 求 $n$ 的最小值.
+%%<SOLUTION>%%
+$n$ 的最小值为 27 . 首先证明 $n \geqslant 27$. 若 $n \leqslant 26$, 则令 $A=\{1,3,5, \cdots$, $2 n-1\}$, 则 $|A|=n$, 但 $A$ 中任何两个数的和: $(2 i-1)+(2 j-1)=2(i+j)- 2 \leqslant 2(26+25)-2=100<102$ (其中 $0<i<j \leqslant n \leqslant 26$ ), 矛盾.
+其次, 当 $n=27$ 时, 令 $A_i=\{2 i+1,101-2 i\}(i=1,2, \cdots, 24), A_{25}=\{1\}, A_{26}= \{51\}$. 将取出的 $n \geqslant 27$ 个数归人上述 26 个集合, 至少有一个集合含有其中的两个数, 这两个数只能在某个 $A_i(1 \leqslant i \leqslant 24)$ 中, 这两个数的和为 102 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $X=\{1,2, \cdots, 1995\}, A$ 是 $X$ 的子集, 若对 $A$ 中任何两个元素 $x$ 、 $y(x<y)$, 都有 $y \neq 15 x$, 求 $|A|$ 的最大值.
+%%<SOLUTION>%%
+令 $A=\{1,2, \cdots, 8\} \cup\{134,135, \cdots, 1995\}$, 则 $A$ 显然合乎条件, 此时 $|A|=1870$. 另一方面, 考察 125 个集合 $A_k=\{k, 15 k\}(k=9,10, \cdots$, 133), 它们含有 250 个互异的数.
+去掉这些数后, $X$ 中还有 1745 个数.
+将这 1745 个数中的每一个数都作成一个单元素集合, 连同前面 125 个集合 $A_k$ 共 $1745+125=1870$ 个集合.
+若 $|A|>1870$, 则 $A$ 必含有某个集合 $A_k$ 中的 2 个数, 其中较大的数是其较小的数的 15 倍, 矛盾.
+故 $|A|$ 的最大值是 1870 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $X=\{0,1,2, \cdots, 9\}, F=\left\{A_1, A_2, \cdots, A_k\right\}$ 中的每个元素 $A_i$ 都是 $X$ 的非空子集, 且对任何 $1 \leqslant i<j \leqslant k$, 有 $\left|A_i \cap A_j\right| \leqslant 2$, 求 $k$ 的最大值.
+%%<SOLUTION>%%
+设 $F$ 合乎条件, 要使 $|F|$ 最大, 注意到 $\left|A_i \cap A_j\right| \leqslant 2$, 应取一些元素个数较少的集合归人 $F$. 显然,所有满足 $\left|A_i\right| \leqslant 2$ 的集合都可归人 $F$. 其次, 所有满足 $\left|A_i\right| \leqslant 3$ 的集合也可归人 $F$. 实际上,考察 $F$ 中任意两个集合 $A_i$ 、 $A_j$. 当 $A_i 、 A_j$ 中有一个集合, 比如 $A_i$, 使 $\left|A_i\right| \leqslant 2$ 时,则有 $\left|A_i \cap A_j\right| \leqslant 2$; 当 $\left|A_i\right|=\left|A_j\right|=3$ 时, 若 $\left|A_i \cap A_j\right|>2$, 则 $\left|A_i \cap A_j\right|=3$, 所以 $A_i=A_j$, 矛盾.
+于是, $|F|_{\text {max }} \geqslant \mathrm{C}_{10}^1+\mathrm{C}_{10}^2+\mathrm{C}_{10}^3=175$. 上述构造的 $F$ 是饱和的, 即不能再放进任何一个集合.
+但这并不能说明 $|F|$ 最大.
+下面证明 $|F| \leqslant 175$. 反设 $|F|>175$, 则必有 $F$ 中的一个集合, 设为 $A$, 使 $|A|>3$. 取 $A$ 的任意一个三元子集 $A^{\prime}$, 由于 $\left|A \cap A^{\prime}\right|=3>2, A$ 在 $F$ 中, 所以 $A^{\prime}$ 不在 $F$ 中.
+将 $F$ 中的 $A$ 换作 $A^{\prime}$, 得到 $F^{\prime}$, 则 $F^{\prime}$ 也合乎条件.
+如此下去, 可将 $F$ 中的所有元素个数多于 3 的集合都换作 3 元集合,所得到的 $F^*$ 仍合乎条件.
+但此时 $|F|= \left|F^*\right| \leqslant 175$,矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $A_i=\{i, i+1, i+2, \cdots, i+59\}(i=1,2, \cdots, 11), A_{11+j}=\{11+j$, $12+j, \cdots, 70,1,2, \cdots, j\}(j=1,2, \cdots, 59)$. 在这 70 个集合中存在 $k$ 个集合,其中任 7 个集合的交非空.
+求 $k$ 的最大值.
+%%<SOLUTION>%%
+令 $A_i=\{i, i+1, i+2, \cdots, i+59\}(i=1,2, \cdots, 70)$, 其集合中的元素按模 70 理解, 即 $x>70$ 时, 将 $x$ 换作 $x-70$. 显然, $60 \in A_1, A_2, \cdots, A_{60}$, 所以 $k_{\text {max }} \geqslant 60$. 我们猜想, $k_{\text {max }}=60$. 这只须证明任何满足条件的 $k$, 有 $k \leqslant 60$. 用反证法.
+若 $k \geqslant 61$, 我们证明取出的任何 $k$ 个集合,都能找到 7 个集合的交为空集.
+要找到 7 个集合 $A_{i_1}, A_{i_2}, \cdots, A_{i_7}$, 其交为空集, 只须它们的补集的并为全集, 即 $\bar{A}_{i_1} \cup \bar{A}_{i_2} \cup \cdots \cup \bar{A}_{i_7}=I$, 注意到 $\bar{A}_{i_1}, \bar{A}_{i_2}, \cdots, \bar{A}_{i_7}$ 都是 10 元集, 而 $I$ 有 70 个元素, 要使 $\bar{A}_{i_1}, \bar{A}_{i_2}, \cdots, \bar{A}_{i_7}$ 包含所有元素, 则它们应在 $A_1, A_2, \cdots, A_{70}$ 中均匀分布, 即 $A_{i_1}, A_{i_2}, \cdots, A_{i_7}$ 在 $A_1, A_2, \cdots, A_{70}$ 中均匀分布, 所以要找的 7 个集合具有形式: $A_i, A_{10+i}, \cdots, A_{60+i}$. 现在的问题是, 这样的 7 个集合是否都被取出.
+注意到这 7 个集合的共同特征是下标的个位数都是 $i$. 因为取出了 $k \geqslant 61$ 个集合后, 至多剩下 9 个集合, 它们不能同时含有下标的个位数为 $0,1,2, \cdots, 9$ 这 10 种可能, 即存在 $0 \leqslant i \leqslant 9$, 使 $i$ 不是剩下的 9 . 个集合的下标的个位数.
+也即集合 $A_i, A_{10+i}, \cdots, A_{60+i}$ 都是取出的集合.
+ $A_i \cap A_{10+i} \cap \cdots \cap A_{60+i}=\Phi$,矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $S$ 为集合 $\{1,2, \cdots, 108\}$ 的一个非空子集, 满足: (i) 对 $S$ 中任意的数 $a 、 b$, 总存在 $S$ 中数 $c$,使得 $(a, c)=(b, c)=1$; (ii) 对 $S$ 中任意的数 $a$ 、 $b$, 总存在 $S$ 中数 $c^{\prime}$, 使得 $\left(a, c^{\prime}\right)>1,\left(b, c^{\prime}\right)>1$. 求 $S$ 中元素个数的最大可能值.
+%%<SOLUTION>%%
+$S$ 中元素个数的最大可能值为 76. 设 $|S| \geqslant 3, p_1^{\alpha_1} p_2^{\alpha_2} p_3^{\alpha_3} \in S, p_1 、 p_2$ 、 $p_3$ 为三个不同的素数, $p_1<p_2<p_3 \leqslant 7, \alpha_1 、 \alpha_2 、 \alpha_3$ 为正整数.
+设 $q \in\{2,3$ , $5,7\}, q \neq p_1 、 p_2 、 p_3$, 则 $\left\{p_1, p_2, p_3, q\right\}=\{2,3,5,7\}$. 由(i) 知存在 $c_1 \in S$, 使 $\left(p_1^{\alpha_1} p_2^{\alpha_2} p_3^{\alpha_3}, c_1\right)=1$, 取 $c_1$ 为所有这样数中最小素因子最小的一个.
+由 (i) 知存在 $c_2 \in S$, 使 $\left(c_2, c_1\right)=1,\left(c_2, p_1^{\alpha_1} p_2^{\alpha_2} p_3^{\alpha_3}\right)=1$. 由(ii) 知存在 $c_3 \in S$, 使 $\left(c_3, c_1\right)>1,\left(c_3, c_2\right)>1$. 由 $\left(c_1, c_2\right)=1$ 知 $c_1 、 c_2$ 的最小素因子之积 $\leqslant c_3 \leqslant 108$. 从而 $q \mid c_1$. 由 $\left(c_2, c_1\right)=1,\left(c_2, p_1^{\alpha_1} p_2^{\alpha_2} p_3^{\alpha_3}\right)=1,\left\{p_1, p_2, p_3, q\right\}= \{2,3,5,7\}, c_2 \leqslant 108$ 知 $c_2$ 为大于 10 的素数.
+由 $\left(c_3, c_2\right)>1$ 知 $c_2 \mid c_3$. 又 $1<\left(c_1, \frac{c_3}{c_2}\right)<10,\left(p_1^{\alpha_1} p_2^{\alpha_2} p_3^{\alpha_3}, c_1\right)=1$, 故 $\left(c_1, \frac{c_3}{c_2}\right)=q^\alpha$ (1). 由 (i) 知存在 $c_4 \in S$, 使 $\left(c_4, p_1^{\alpha_1} p_2^{\alpha_2} p_3^{\alpha_3}\right)=1,\left(c_4, c_3\right)=1$. 因此 (由 (1) $)\left(c_4, p_1 p_2 p_3 q\right)=1$, 即 $\left(c_4, 2 \times 3 \times 5 \times 7\right)=1$. 从而 $c_4$ 为大于 10 的素数.
+由 (ii) 知存在 $c_5 \in S$, 使 $\left(c_5, c_2\right)>1,\left(c_5, c_4\right)>1$. 所以 $c_2\left|c_5 、 c_4\right| c_5$. 又 $c_2 \mid c_3 、\left(c_4, c_3\right)=1$ 知 $\left(c_2\right.$, $\left.c_4\right)=1$. 所以 $c_2 c_4 \mid c_5$. 而 $c_2 c_4 \geqslant 11 \times 13>108$, 矛盾.
+取 $S_1=\{1,2, \cdots$, $108\} \backslash\left(\{1\right.$ 及大于 11 的素数 $\} \bigcup\left\{2 \times 3 \times 11,2 \times 3 \times 5,2^2 \times 3 \times 5,2 \times 3^2 \times\right. \left.\left.5,2 \times 3 \times 7,2^2 \times 3 \times 7,2 \times 5 \times 7,3 \times 5 \times 7\right\}\right)$. 则 $\left|S_1\right|=76$. 下面证明 $S_1$ 满足 (i)、(ii). 若 $p_1^{\alpha_1} p_2^{\alpha_2} p_3^{\alpha_3} \in S_1, p_1<p_2<p_3$, 则 $p_3 \geqslant 11$. 因此 $p_1^{\alpha_1} p_2^{\alpha_2} p_3^{\alpha_3}== 2 \times 3 \times 13$ 或 $2 \times 3 \times 17$. (1) $a=2 \times 3 \times 13, b \in S_1, b \neq a$. (a) 由于 5、7、 11 中至少有一个不整除 $b$, 设为 $p$, 则 $(a, p)=(b, p)=1$. (b) 设 $b$ 的最小素因子为 $q_1$, 则 $2 q_1 \leqslant 108,3 q_1 \leqslant 108$. 若 $b \neq 2 q_1$, 则 $2 q_1 \in S_1,\left(2 q_1, a\right)>1$, $\left(2 q_1, b\right)>1$; 若 $b \neq 3 q_1$, 则 $3 q_1 \in S_1,\left(3 q_1, a\right)>1$, $\left(3 q_1, b\right)>1$. (2) $a= 2 \times 3 \times 17, b \neq a$, 则 (1) 可证.
+(3) $a=b$, 由于 5、7、11 中至少有一个不整除 $a$ , 故 (i) 成立.
+若 $a$ 为合数, 取 $a$ 的最小素因子 $p$, 则 $p \in S_1,(p, a)>1$; 若 $a$ 为素数,则 $a \leqslant 11,2 a \in S_1,(2 a, a)>1$. (4) $a 、 b$ 为 $S_1$ 中两个不同的数, $a 、 b$ 均至多含两个不同素因子, $a<b$. (a) $2 、 3 、 5 、 7 、 11$ 中有一个 $p$ 不能整除 $a b$, 此时 $p \in S_1,(p, a)=(p, b)=1$. (b) 设 $a 、 b$ 的最小素因子分别为 $r_1 、 r_2$, 则 $r_1 r_2 \leqslant 108$. 若 $r_1=r_2<a$, 则 $r_1 \in S_1,\left(a, r_1\right)>1,\left(b, r_1\right)>1$; 若 $r_1= r_2=a$, 则取 $u=2$ 或 3 , 使 $b \neq u a$. 则 $u a \in S,(u a, a)>1$, $(u a, b)>1$; 若
+$r_1 r_2 \neq a, r_1 r_2 \neq b$, 则 $r_1 r_2 \in S_1,\left(r_1 r_2, a\right)>1,\left(r_1 r_2, b\right)>1$; 若 $r_1 r_2=a$, 则 $r_1<r_2$, 取 $u=2 、 3 、 5$, 使 $b \neq u r_2, a \neq u r_2$, 则 $u r_2 \in S_1,\left(u r_2, a\right)>1$, $\left(u r_2, b\right)>1$; 若 $r_1 r_2=b$, 则取 $v=2 、 3 、 5$, 使 $a \neq v r_1, b \neq v r_1$, 则 $v r_1 \in S_1$, $\left(v r_1, a\right)>1,\left(v r_1, b\right)>1$. 已证 $S_i$ 满足 (i) (ii). 另一方面已可见 $2 \times 3 \times 5$ 、 $2^2 \times 3 \times 5 、 2 \times 3^2 \times 5 、 2 \times 3 \times 7 、 2^2 \times 3 \times 7 、 2 \times 5 \times 7 、 3 \times 5 \times 7$ 均不属于 $S$. 现证: $2 \times 3 \times 11 、 2 \times 3 \times 13 、 5 \times 7$ 不同时属于 $S$. 反设此三数均属于 $S$. 由 (i) 知存在 $d_1, d_2 \in S$, 使 $\left(2 \times 3 \times 11, d_1\right)=1,\left(5 \times 7, d_1\right)=1,(2 \times 3 \times 13$, $\left.d_2\right)=1,\left(5 \times 7, d_2\right)=1$. 因此 $d_1 、 d_2$ 均为大于 10 的素数.
+由 (ii) 知 $d_1= d_2 \geqslant 17$. 由(ii) 知存在 $d_3 \in S$, 使 $\left(7, d_3\right)>1,\left(d_2, d_3\right)>1$. 因此, $7 d_2 \mid d_3$. 而 $7 d_2 \geqslant 7 \times 17=119$,矛盾.
+另一方面, 大于 10 的素数中至多有一个属于 $S$, $1 \notin S$, 这样 $|S| \leqslant 108-7-1-23-1=76$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 求具有如下性质的最小正整数 $n$ : 将正 $n$ 边形的每一个顶点任意染上红, 黄, 蓝三种颜色之一, 那么这 $n$ 个顶点中一定存在四个同色点, 它们是一个等腰梯形的顶点.
+%%<SOLUTION>%%
+先对 $n \leqslant 16$ 构造出不满足题目要求的染色方法.
+用 $A_1, A_2, \cdots, A_n$ 表示正 $n$ 边形的顶点 (按顺时针方向), $M_1 、 M_2 、 M_3$ 分别表示三种颜色的顶点集.
+当 $n=16$ 时, 令 $M_1=\left\{A_5, A_8, A_{13}, A_{14}, A_{16}\right\}, M_2=\left\{A_3, A_6, A_7\right.$, $\left.A_{11}, A_{15}\right\}, M_3=\left\{A_1, A_2, A_4, A_9, A_{10}, A_{12}\right\}$. 对于 $M_1$, 点 $A_{14}$ 到另 4 个顶点的距离互不相同, 而另 4 个点刚好是一个矩形的顶点.
+类似于 $M_1$, 可验证 $M_2$ 中不存在 4 个顶点是某个等腰梯形的顶点.
+对于 $M_3$, 其中 6 个顶点刚好是 3 条直径的顶点, 所以任意 4 个顶点要么是某个矩形的 4 个顶点, 要么是某个不等边 4 边形的 4 个顶点.
+当 $n=15$ 时, 令 $M_1=\left\{A_1, A_2, A_3, A_5, A_8\right\}, M_2=\left\{A_6, A_9, A_{13}, A_{14}\right.$ , $\left.A_{15}\right\}, M_3=\left\{A_4, A_7, A_{10}, A_{11}, A_{12}\right\}$, 每个 $M_i$. 中均无 4 点是等腰梯形的顶点.
+当 $n=14$ 时, 令 $M_1=\left\{A_1, A_3, A_8, A_{10}, A_{14}\right\}, M_2=\left\{A_4, A_6, A_7\right.$, $\left.A_{11}, A_{12}\right\}, M_3=\left\{A_2, A_6, A_9, A_{13}\right\}$, 每个 $M_i$ 中均无 4 点是等腰梯形的顶点.
+当 $n=13$ 时, 令 $M_1=\left\{A_5, A_6, A_7, A_{10}\right\}, M_2=\left\{A_1, A_8, A_{11}, A_{12}\right\}$, $M_3=\left\{A_2, A_3, A_4, A_9, A_{13}\right\}$, 每个 $M_i$ 中均无 4 点是等腰梯形的顶点.
+在上述情形中去掉顶点 $A_{13}$, 染色方式不变, 即得到 $n=12$ 的染色方法; 然后再去掉顶点 $A_{12}$, 即得到 $n=11$ 的染色方法; 继续去掉顶点 $A_{11}$, 得到 $n=$ 10 的染色方法.
+当 $n \leqslant 9$ 时, 可以使每种颜色的顶点个数小于 4 , 从而无 4 个同色顶点是某个等腰梯形的顶点.
+由此可见, $n \leqslant 16$ 不具备题目要求的性质.
+下面证明 $n=17$ 时,结论成立.
+反证法.
+反设存在一种将正 17 边形的顶点三染色的方法, 使得不存在 4 个同色顶点是某个等腰梯形的顶点.
+由于 $\left[\frac{17-1}{3}\right]+1=6$, 故必存在某 6 个顶点染同一种颜色, 不妨设为黄色.
+将这 6 个点两两连线, 可以得到 $\mathrm{C}_6^2=15$ 条线段.
+由于这些线段的长度只有 $\left[\frac{17}{2}\right]=8$ 种可能, 于是必出现如下的两种情况之一:
+(1) 有某 3 条线段长度相同.
+注意到 $3 \nmid 17$, 不可能出现这 3 条线段两两有公共顶点的情况, 所以存在.
+两条线段, 顶点互不相同.
+这两条线段的 4 个顶点即满足题目要求,矛盾.
+(2) 有 7 对长度相等的线段.
+由假设,每对长度相等的线段必有公共的黄色顶点, 否则能找到满足题目要求的 4 个黄色顶点.
+再根据抽屉原理, 必有两对线段的公共顶点是同一个黄色点.
+这 4 条线段的另 4 个顶点必然是某个等腰梯形的顶点,矛盾.
+所以, $n=17$ 时,结论成立.
+综上所述,所求的 $n$ 的最小值为 17 .
+%%PROBLEM_END%%
+
+

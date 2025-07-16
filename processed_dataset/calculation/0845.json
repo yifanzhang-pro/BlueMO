@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题15. 设正实数 $a_1, a_2, \\cdots, a_n(n \\geqslant 2)$ 满足 $a_1+a_2+\\cdots+a_n=1$, 求\n$$\n\\sum_{i=1}^n \\frac{a_i}{2-a_i}\n$$\n的最小值.",
+    "solution": "令 $b_i=2-a_i \\geqslant 0(i=1,2, \\cdots, n)$, 则 $\\sum_{i=1}^n b_i=2 n-1$. 由平均值不等式, 得 $\\sum_{i=1}^n \\frac{a_i}{b_i}=\\sum_{i=1}^n\\left(\\frac{a_i}{b_i}-1\\right)-n=2 \\sum_{i=1}^n \\frac{1}{b_i}-n \\geqslant \\frac{2 n}{\\sqrt[n]{b_1 \\cdots}}-n \\geqslant \\frac{2 n^2}{b_1+\\cdots+b_n}-n=\\frac{2 n^2}{2 n-1}-n=\\frac{n}{2 n-1}$. 当 $a_1=\\cdots=a_n=\\frac{1}{n}$ 时, $\\sum_{i=1}^n \\frac{a_i}{2-a_i}= \\frac{n}{2 n-1}$, 故最小值为 $\\frac{n}{2 n-1}$.",
+    "remark": "",
+    "figures": []
+}

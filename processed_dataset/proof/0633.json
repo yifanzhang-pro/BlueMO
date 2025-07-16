@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter11.tex",
+    "problem_type": "proof",
+    "problem": "例7. 从空间一点最多可以引出多少条射线, 使得其中每两条射线夹角均为钝角?",
+    "solution": "解:先, 若由正四面体的中心向它的 4 个顶点各引一条射线, 这 4 条射线两两之间的夹角均为钝角, 满足条件.\n其次证明 5 条射线无法满足题目要求.\n假设从点 $O$ 引出的 5 条射线 $O A_1, O A_2, \\cdots, O A_5$ 两两夹角均为钝角.\n我们用空间向量的坐标来表示射线方向, 不妨设 $\\overrightarrow{O A_5}=(0,0,-1)$, 而\n$$\n\\overrightarrow{O A_i}=\\left(x_i, y_i, z_i\\right)(i=1,2,3,4) .\n$$\n由 $\\overrightarrow{O A_i} \\cdot \\overrightarrow{O A_5}=-z_i$ 可知 $z_i>0(i=1,2,3,4)$.\n记 $A_i$ 在 $x O y$ 平面内的射影为 $P_i$.\n根据抽屈原理, 在 $\\overrightarrow{O P}_i=\\left(x_i, y_i, 0\\right)(i=1,2,3,4)$ 中必有两个向量夹角不大于 $90^{\\circ}$, 不妨设它们是 $\\overrightarrow{O P_1}$ 与 $\\overrightarrow{O P_2}$, 则 $\\overrightarrow{O P_1} \\cdot \\overrightarrow{O P_2}=x_1 x_2+y_1 y_2 \\geqslant 0$, 再结合 $z_1, z_2>0$ 可知 $\\overrightarrow{O A_1} \\cdot \\overrightarrow{O A_2}=x_1 x_2+y_1 y_2+z_1 z_2>0$, 即 $\\overrightarrow{O A_1}$ 与 $\\overrightarrow{O A_2}$ 夹角为锐角, 与条件矛盾!\n综上所述, 自空间一点最多只能引出 4 条射线, 使其中每两条射线夹角均为钝角.",
+    "remark": "注:数量关系是对几何表象的一种内在支撑.\n本题中, 从直观上并不容易说清楚为何 \"5 条射线无法满足两两之间夹角为钝角\", 于是引人空间向量, 转而考虑代数问题.\n此后, 为了表明平面中四个投影向量 $\\overrightarrow{O P}_i(i=1,2,3,4)$ 必有两个的数量积非负, 又回归几何关系, 用与前一题类似的方式进行处理.\n本题可谓先 \"由形及数\", 再\"由数及形\", 相互转化, 补充互助.",
+    "figures": []
+}

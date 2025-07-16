@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $P_i\\left(x_i, y_i\\right)\\left(i=1,2,3 ; x_1<x_2<x_3\\right)$ 是直角坐标平面上的点,用 $R$ 表示 $\\triangle P_1 P_2 P_3$ 的外接圆半径.\n求证:\n$$\n\\frac{1}{R}<2\\left|\\frac{y_1}{\\left(x_1-x_2\\right)\\left(x_1-x_3\\right)}+\\frac{y_2}{\\left(x_2-x_1\\right)\\left(x_2-x_3\\right)}+\\frac{y_3}{\\left(x_3-x_1\\right)\\left(x_3-x_2\\right)}\\right|,\n$$\n并说明系数 2 是最佳的.",
+    "solution": "证明:当沿 $X$ 轴方向平移 $\\triangle P_1 P_2 P_3$ 时, $x_1-x_2 、 x_2-x_3 、 x_3-x_1$ 均不变,所以原不等式两边的值不改变.\n当沿 $Y$ 轴方向平移 $\\triangle P_1 P_2 P_3$ 时, 由于有恒等式\n$$\n\\frac{1}{\\left(x_1-x_2\\right)\\left(x_1-x_3\\right)}+\\frac{1}{\\left(x_2-x_1\\right)\\left(x_2-x_3\\right)}+\\frac{1}{\\left(x_3-x_1\\right)\\left(x_3-x_2\\right)}=0,\n$$\n所以原不等式两边的值也不改变.\n因此, 不妨设 $P_1$ 为原点, 即 $x_1=y_1=0$, 此时原不等式成为\n$$\n\\frac{1}{2 R}<\\frac{1}{\\left|x_2-x_3\\right|}\\left|\\frac{y_3}{x_3}-\\frac{y_2}{x_2}\\right| .\n$$\n如图(<FilePath:./images/volume9/figures/fig-c6i3.png>), 设直线 $O P_3 、 O P_2$ 的倾斜角为 $\\theta_3 、 \\theta_2, \\angle P_2 P_1 P_3=\\alpha$, 则 $\\theta_3- \\theta_2= \\pm \\alpha$, 从而\n$$\n\\begin{aligned}\n\\frac{1}{\\left|x_2-x_3\\right|}\\left|\\frac{y_3}{x_3}-\\frac{y_2}{x_2}\\right| & =\\frac{1}{\\left|x_2-x_3\\right|}\\left|\\tan \\theta_3-\\tan \\theta_2\\right| \\\\\n& =\\frac{1}{\\left|x_2-x_3\\right|}\\left|\\frac{\\sin \\left(\\theta_3-\\theta_2\\right)}{\\cos \\theta_3 \\cos \\theta_2}\\right| \\\\\n& =\\frac{\\sin \\alpha}{\\left|x_2-x_3\\right|}\\left|\\frac{1}{\\cos \\theta_3 \\cos \\theta_2}\\right| \\\\\n& >\\frac{\\sin \\alpha}{\\left|x_2-x_3\\right|} \\geqslant \\frac{\\sin \\alpha}{P_2 P_3} \\\\\n& =\\frac{1}{2 R}, \\label{eq1}\n\\end{aligned}\n$$\n从而原不等式得证.\n在上面的证明中, 若 $y_1=y_3=x_1=0$, 并且 $y_2 \\rightarrow 0$, 则 $\\cos \\theta_3=1$, $\\cos \\theta_2 \\rightarrow 1$. 此时 式\\ref{eq1}的左边 $\\rightarrow \\frac{1}{2 R}$, 故 2 是最优的.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c6i3.png"
+    ]
+}

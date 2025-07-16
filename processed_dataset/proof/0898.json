@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例24 设圆 $O$ 中有一个任意内接 $\\triangle A B C$, 取 $\\overparen{A B}, \\overparen{B C}, \\overparen{C A}$ 的中点分别记为 $C_1, A_1, B_1$, 得到一个新的内接 $\\triangle A_1 B_1 C_1$; 取 $\\overparen{A_1 B_1}, \\overparen{B_1 C_1}, \\overparen{C_1 A_1}$ 的中点分别记为 $C_2, A_2, B_2$, 又得一内接 $\\triangle A_2 B_2 C_2$; 如此继续, 得一组内接三角形 $A_n B_n C_n$, 求证:\n$$\n\\lim _{n \\rightarrow \\infty} \\angle A_n=\\lim _{n \\rightarrow \\infty} \\angle B_n=\\lim _{n \\rightarrow \\infty} \\angle C_n=\\frac{\\pi}{3} .\n$$",
+    "solution": "证显然, $\\angle A_1=\\frac{1}{2}(\\angle B+\\angle C)=\\frac{1}{2}(\\pi-\\angle A)$. 记 $f(x)=\\frac{1}{2}(\\pi-x)$, $x_0=\\angle A$, 则有\n$$\n\\begin{aligned}\n& \\angle A_1=f\\left(x_0\\right), \\\\\n& \\angle A_2=f\\left(f\\left(x_0\\right)\\right)=f^{(2)}\\left(x_0\\right), \\\\\n& \\cdots \\cdots \\\\\n& \\angle A_n=f^{(n)}\\left(x_0\\right) .\n\\end{aligned}\n$$\n而 $f(x)=\\frac{1}{2}(\\pi-x)$ 从而\n$$\nf^{(n)}\\left(x_0\\right)=\\left(-\\frac{1}{2}\\right)^n x_0+\\frac{1-\\left(-\\frac{1}{2}\\right)^n}{1-\\left(-\\frac{1}{2}\\right)} \\cdot \\frac{\\pi}{2} .\n$$\n故 $\\lim _{n \\rightarrow \\infty} \\angle A_n=\\lim _{n \\rightarrow \\infty}\\left(\\left(-\\frac{1}{2}\\right)^n \\angle A+\\frac{1-\\left(-\\frac{1}{2}\\right)^n}{1-\\left(-\\frac{1}{2}\\right)} \\cdot \\frac{\\pi}{2}\\right)=\\frac{\\pi}{3}$.\n同理\n$$\n\\lim _{n \\rightarrow \\infty} \\angle B_n=\\lim _{n \\rightarrow \\infty} \\angle C_n=\\frac{\\pi}{3} .\n$$",
+    "remark": "",
+    "figures": []
+}

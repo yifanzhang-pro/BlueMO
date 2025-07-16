@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $a, b, c \\in \\mathbf{R}^{+}$, 求证: $a^{2 a} b^{2 b} c^{2 c} \\geqslant a^{b+c} b^{c+a} c^{a+} b$.",
+    "solution": "证明:由于不等式是关于 $a 、 b 、 c$ 对称的, 不妨设 $a \\geqslant b \\geqslant c$, 于是\n$$\n\\frac{a^{2 a} b^{2 b} c^{2 c}}{a^{b+c} b^{c+a} c^{a+b}}=\\left(\\frac{a}{b}\\right)^{a-b}\\left(\\frac{b}{c}\\right)^{b-c}\\left(\\frac{a}{c}\\right)^{a-c} \\geqslant 1,\n$$\n所以\n$$\na^{2 a} b^{2 b} c^{2 c} \\geqslant a^{b+c} b^{c+a} c^{a+b} .\n$$\n说明由本题的结论得\n$$\n\\begin{gathered}\na^{3 a} b^{3 b} c^{3 c} \\geqslant a^{a+b+c} b^{a+b+c} c^{a+b+c}, \\\\\na^a b^b c^c \\geqslant(a b c)^{\\frac{a+b+c}{3}} .\n\\end{gathered}\n$$\n一般地, 设 $x_i \\in \\mathbf{R}^{+}, i=1,2, \\cdots, n$, 则有\n$$\nx_1^{x_1} \\cdot x_2^{x_2} \\cdots \\cdots \\cdot x_{n^n}^{x_n} \\geqslant\\left(x_1 x_2 \\cdots x_n\\right)^{\\frac{x_1+x_3+\\cdots+x_n}{n}},\n$$\n证法与本例完全一样.",
+    "remark": "",
+    "figures": []
+}

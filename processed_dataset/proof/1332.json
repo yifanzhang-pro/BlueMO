@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例9. 设 $x 、 y 、 z$ 为实数, $0<x<y<z<\\frac{\\pi}{2}$, 求证:\n$$\n\\frac{\\pi}{2}+2 \\sin x \\cos y+2 \\sin y \\cos z>\\sin 2 x+\\sin 2 y+\\sin 2 z .\n$$",
+    "solution": "证明:原不等式等价于\n$$\n\\begin{gathered}\n\\frac{\\pi}{4}>\\sin x(\\cos x-\\cos y)+ \\\\\n\\sin y(\\cos y-\\cos z)+\\sin z \\cos z .\n\\end{gathered}\n$$\n构造图形如图(<FilePath:./images/volume5/figures/fig-c5i2.png>) 所示.\n圆 $O$ 是单位圆, $S_1 、 S_2 、 S_3$ 分别是三个小矩形的面积, 则\n$$\n\\begin{aligned}\n& S_1=\\sin x(\\cos x-\\cos y), \\\\\n& S_2=\\sin y(\\cos y-\\cos z), \\\\\n& S_3=\\sin z \\cos z .\n\\end{aligned}\n$$\n由于 $S_1+S_2+S_3<\\frac{1}{4} \\cdot \\pi \\cdot 1^2=\\frac{1}{4} \\pi$, 故有\n$$\n\\frac{\\pi}{4}>\\sin x(\\cos x-\\cos y)+\\sin y(\\cos y-\\cos z)+\\sin z \\cos z,\n$$\n故原不等式成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume5/figures/fig-c5i2.png"
+    ]
+}

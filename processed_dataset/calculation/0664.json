@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例14 满足 $\\arccos (1-x) \\geqslant \\arccos x$ 的 $x$ 的取值范围是 ( ).\n(A) $\\left[-1,-\\frac{1}{2}\\right]$\n(B) $\\left[-\\frac{1}{2}, 0\\right]$\n(C) $\\left[0, \\frac{1}{2}\\right]$\n(D) $\\left[\\frac{1}{2}, 1\\right]$",
+    "solution": "分析:反余弦函数 $y=\\arccos x$ 在定义域 $[-1,1]$ 内是单调递减函数,所以有 $\\left\\{\\begin{array}{l}|1-x| \\leqslant 1, \\\\ |x| \\leqslant 1, \\\\ 1-x \\leqslant x,\\end{array}\\right.$ 解得 $x \\in\\left[\\frac{1}{2}, 1\\right]$.\n所以, 选 D.\n评注函数定义域是必须考虑的条件, 本题如仅考虑 $1-x \\leqslant x$, 在选项中最佳答案仍是 $\\mathrm{D}$, 但这仅仅是“偶尔恰恰”而已, 不能作一般方法.",
+    "remark": "",
+    "figures": []
+}

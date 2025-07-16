@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 证明: 任意正整数 $n$ 可表示为 $a-b$ 的形式,其中 $a 、 b$ 为正整数,且 $a 、 b$ 的不同素因子的个数相同.",
+    "solution": "当 $n$ 为偶数时, 可取 $a=2 n, b=n$. 若 $n$ 为奇数, 设 $p$ 是不整除 $n$ 的最小奇素数,则 $p-1$ 或者没有奇素数因子 (即是 2 的幂), 或者其奇素数因子都整除 $n$. 因此 $a=p n, b=(p-1) n$ 的不同素因子的个数都等于 $n$ 的不同素因子个数加上 1 .",
+    "remark": "",
+    "figures": []
+}

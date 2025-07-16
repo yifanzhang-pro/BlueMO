@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题4 在 $\\triangle A B C$ 中, 若 $\\sin A-2 \\sin B \\cos C=0$, 则其形状为（）.\n(A) 直角三角形\n(B) 等腰三角形\n(C) 等腰直角三角形\n(D) 等边三角形",
+    "solution": "B. 由 $\\sin A=2 \\sin B \\cos C$, 得 $a=2 b \\cdot \\frac{a^2+b^2-c^2}{2 b a}$, 从而 $b=c, \\triangle A B C$ 是等腰三角形.",
+    "remark": "",
+    "figures": []
+}

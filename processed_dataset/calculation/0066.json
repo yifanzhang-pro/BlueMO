@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题6 集 $A=\\left\\{z \\mid z^{18}=1\\right\\}, B=\\left\\{w \\mid w^{48}=1\\right\\}$ 都是 1 的复单位根的集合, $C==\\{z w \\mid z \\in A, w \\in B\\}$ 也是 1 的复单位根的集合.\n问集合 $C$ 中含有多少个元素?",
+    "solution": "集合 $A$ 的元素为 $z=\\cos \\frac{2 k \\pi}{18}+i \\sin \\frac{2 k \\pi}{18}$. 集合 $B$ 的元素为 $w= \\cos \\frac{2 t \\pi}{48}+i \\sin \\frac{2 t \\pi}{48} . z w=\\cos \\frac{2(8 k+3 t)}{144} \\pi+i \\sin \\frac{2(8 k+3 t)}{144} \\pi$. 因为 8 和 3 互质, 故存在整数 $k$ 和 $t$, 使 $8 k+3 t=1$. 进而, 存在整数 $k 、 t$, 使 $8 k+3 t=m$. 取 $m=0,1,2, \\cdots, 143$, 则得到 $z w$ 的 144 个不同的值.\n于是, 集合 $C=\\{z w \\mid z \\in A, w \\in B\\}$ 含有 144 个元素.",
+    "remark": "",
+    "figures": []
+}

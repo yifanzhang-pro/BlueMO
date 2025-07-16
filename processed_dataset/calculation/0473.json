@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 给定 $n(n>1)$ 个二次三项式 $x^2-a_i x+b_i(1 \\leqslant i \\leqslant n)$, 其中 $2 n$ 个实数 $a_i, b_i$ 互不相同.\n试问: 是否可能 $a_i, b_i(1 \\leqslant i \\leqslant n)$ 中的每个数都是其中某个多项式的根?",
+    "solution": "假定有这样的可能性.\n因二次三项式至多有两个实根, 而 $2 n$ 个实数 $a_i, b_i$ 互不相同, 所以每个二次三项式 $x^2-a_i x+b_i(1 \\leqslant i \\leqslant n)$ 必含有两个不相等的实根 $u_i, v_i$, 且 $\\left(a_1, a_2, \\cdots, a_n, b_1, b_2, \\cdots, b_n\\right)$ 构成 $\\left(u_1, u_2, \\cdots, u_n\\right.$, $\\left.v_1, v_2, \\cdots, v_n\\right)$ 的一个排列.\n对 $1 \\leqslant i \\leqslant n$, 由韦达定理知 $u_i+v_i=a_i, u_i v_i=b_i$. 所以,\n$$\n\\sum_{i=1}^n a_i=\\sum_{i=1}^n\\left(u_i+v_i\\right)=\\sum_{i=1}^n a_i+\\sum_{i=1}^n b_i,\n$$\n因此 $\\sum_{i=1}^n b_i=0$.\n另一方面,还有 $u_i^2+v_i^2=\\left(u_i+v_i\\right)^2-2 u_i v_i=a_i^2-2 b_i$, 从而,\n$$\n\\sum_{i=1}^n\\left(a_i^2+b_i^2\\right)=\\sum_{i=1}^n\\left(u_i^2+v_i^2\\right)=\\sum_{i=1}^n\\left(a_i^2-2 b_i\\right)=\\sum_{i=1}^n a_i^2 .\n$$\n这表明了 $\\sum_{i=1}^n b_i^2=0$, 于是所有 $b_i$ 全为 0 ,矛盾.\n因此不可能 $a_i, b_i(1 \\leqslant i \\leqslant n)$ 中的每个数都是其中某个多项式的根.",
+    "remark": "",
+    "figures": []
+}

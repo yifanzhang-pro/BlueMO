@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例3. 在两个相邻的完全平方数 $n^2$ 与 $(n+1)^2$ 之间任取若干个不同整数, 证明它们中两两乘积互不相同.",
+    "solution": "证明:设整数 $a 、 b 、 c 、 d$ 满足 $n^2<a<b<c<d<(n+1)^2$, 显然, 我们只需证明 $a d \\neq b c$. 采用反证法, 设有上述 $a 、 b 、 c 、 d$ 满足 $a d=b c$, 则由第 3 单元例 3 的证明一可知, 有正整数 $p 、 q 、 u 、 v$, 使得\n$$\na=p u, b=q u, c=p v, d=q v .\n$$\n由 $b>a$ 及 $c>a$, 得出 $q>p$ 及 $v>u$. 因 $p 、 q 、 u 、 v$ 都是整数, 故 $q \\geqslant p+1, v \\geqslant u+1$. 因此我们得出 (注意 $a=p u>n^2$ )\n$$\n\\begin{aligned}\n& d=q v \\geqslant(p+1)(u+1)=p u+(p+u)+1 \\\\\n& >n^2+2 \\sqrt{p u}+1>n^2+2 n+1=(n+1)^2,\n\\end{aligned}\n$$\n矛盾.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-4.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设 $O x y z$ 是空间直角坐标系, $S$ 是空间中一个有限点集, $S_x, S_y, S_z$ 分别是 $S$ 中所有点在 $O y z$ 平面, $O z x$ 平面和 $O x y$ 平面上的正投影所成的集合.\n求证:\n$$\n|S|^2 \\leqslant\\left|S_x\\right| \\cdot\\left|S_y\\right| \\cdot\\left|S_z\\right| .\n$$\n说明所谓一个点在一个平面上的正投影是指由点向平面所作垂线的 垂足.",
+    "solution": "证明:设共有 $n$ 个平行于 $O x y$ 平面的平面上有 $S$ 中的点, 这些平面分别记为 $M_1, M_2, \\cdots, M_n$. 对于平面 $M_i, 1 \\leqslant i \\leqslant n$, 设它与 $O z x, O z y$ 平面分别交于直线 $l_y$ 和 $l_x$, 并设 $M_i$ 上有 $m_i$ 个 $S$ 中的点.\n显然, $m_i \\leqslant\\left|S_z\\right|$.\n设 $M_i$ 上的点在 $l_x, l_y$ 上的正投影的集合分别为 $A_i$ 和 $B_i$, 记 $a_i=\\left|A_i\\right|$, $b_i=\\left|B_i\\right|$, 则有 $m_i \\leqslant a_i b_i$. 又因为\n$$\n\\sum_{i=1}^n a_i=\\left|S_y\\right|, \\sum_{i=1}^n b_i=\\left|S_x\\right|, \\sum_{i=1}^n m_i=|S|,\n$$\n从而由柯西不等式,得\n$$\n\\begin{aligned}\n\\left|S_x\\right| \\cdot\\left|S_y\\right| \\cdot\\left|S_z\\right| & =\\left(\\sum_{i=1}^n b_i\\right)\\left(\\sum_{i=1}^n a_i\\right) \\cdot\\left|S_z\\right| \\\\\n& \\geqslant\\left(\\sum_{i=1}^n \\sqrt{a_i b_i}\\right)^2 \\cdot\\left|S_z\\right| \\\\\n& =\\left(\\sum_{i=1}^n \\sqrt{a_i b_i \\mid S_z}\\right)^2 \\\\\n& \\geqslant\\left(\\sum_{i=1}^n m_i\\right)^2=|S|^2 .\n\\end{aligned}\n$$\n得证.",
+    "remark": "",
+    "figures": []
+}

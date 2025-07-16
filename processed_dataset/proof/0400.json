@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 是否存在无穷多对不同的三数组 $(a, b, c)$, 满足: $a, b, c$ 是成等差数列的正整数 $(a<b<c)$ 且 $a b+1, a c+1, b c+1$ 都为完全平方数.",
+    "solution": "(解法二) 设 $(2+\\sqrt{3})^n=A_n+B_n \\sqrt{3}\\left(A_n, B_n\\right.$ 为正整数, $\\left.n \\in \\mathbf{N}_{+}\\right)$, 则 $(2- \\sqrt{3})^n=A_n-B_n \\sqrt{3}, A_n^2-3 B_n^2=1$. 取 $a=2 B_n-A_n, b=2 B_n, c=2 B_n+A_n$, 则 $a, b, c$ 成等差数列并且可证 $a b+1=\\left(A_n-B_n\\right)^2, a c+1=B_n^2, b c+1= \\left(A_n+B_n\\right)^2$, 故存在无穷多组三数组 $(a, b, c)=\\left(2 B_n-A_n, 2 B_n, 2 B_n-A_n\\right)$ 满足题目条件.",
+    "remark": "",
+    "figures": []
+}

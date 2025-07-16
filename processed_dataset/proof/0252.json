@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $m$ 是给定的正整数, 证明: 由\n$$\nx_1=x_2=1, x_{k+2}=x_{k+1}+x_k(k=1,2, \\cdots)\n$$\n定义的数列 $\\left\\{x_n\\right\\}$ 的前 $m^2$ 个项中, 必有一项被 $m$ 整除.",
+    "solution": "无妨设 $m>1$. 我们用 $\\bar{x}_k$ 表示 $x_k$ 被 $m$ 除得的余数.\n考虑有序数对\n$$\n\\left\\langle\\bar{x}_1, \\bar{x}_2\\right\\rangle,\\left\\langle\\bar{x}_2, \\bar{x}_3\\right\\rangle, \\cdots,\\left\\langle\\bar{x}_n, \\bar{x}_{n+1}\\right\\rangle, \\cdots . \\label{eq1}\n$$\n因为被 $m$ 除得的余数共组成 $m^2$ 个互不相等的有序数对, 故在序列 式\\ref{eq1}中取出前 $m^2+1$ 个数对, 其中必有两个相同.\n设 $\\left\\langle\\bar{x}_i, \\bar{x}_{i+1}\\right\\rangle$ 是下标最小的与某一个 $\\left\\langle\\bar{x}_j, \\bar{x}_{j+1}\\right\\rangle$ 相等的数对 $\\left(j \\leqslant m^2+1\\right)$, 我们证明 $i$ 必然是 1 , 否则从\n$$\nx_{i-1}=x_{i+1}-x_i, x_{j-1}=x_{j+1}-x_j\n$$\n推出 $x_{i-1} \\equiv x_{j-1}(\\bmod m)$, 故 $\\left\\langle\\bar{x}_{i-1}, \\bar{x}_i\\right\\rangle=\\left\\langle\\bar{x}_{j-1}, \\bar{x}_j\\right\\rangle$, 这与 $i$ 的最小性矛盾, 所以 $i=1$. 现在由 $\\left\\langle\\bar{x}_j, \\bar{x}_{j+1}\\right\\rangle=\\left\\langle\\bar{x}_1, \\bar{x}_2\\right\\rangle=\\langle 1,1\\rangle$. 可知 $x_{j-1} \\equiv x_{j+1}-x_j \\equiv 1- 1 \\equiv 0(\\bmod m)$, 即 $m \\mid x_{j-1}\\left(1<j-1 \\leqslant m^2\\right)$.",
+    "remark": "",
+    "figures": []
+}

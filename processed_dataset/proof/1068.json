@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设 $k, n$ 为正整数, 且 $1 \\leqslant k \\leqslant n, a_i \\in \\mathbf{R}^{+}$, 满足 $a_1+a_2+\\cdots+ a_k=a_1 a_2 \\cdots a_k$. 求证:\n$$\na_1^{n-1}+a_2^{n-1}+\\cdots+a_k^{n-1} \\geqslant k n,\n$$\n并确定等号成立的充要条件.",
+    "solution": "证明:令 $a=a_1+a_2+\\cdots+a_k=a_1 a_2 \\cdots a_k$. 由平均值不等式, 得\n$$\na \\geqslant k a^{\\frac{1}{k}} \\text {, 即 } a \\geqslant k^{\\frac{k}{k-1}} \\text {. }\n$$\n又因为\n$$\na_1^{n-1}+a_2^{n-1}+\\cdots+a_k^{n-1} \\geqslant k\\left(a_1 a_2 \\cdots a_k\\right)^{\\frac{n-1}{k}}=k a^{\\frac{n-1}{k}} \\geqslant k \\cdot k^{\\frac{n-1}{k-1}},\n$$\n于是只需证明\n$$\nk^{\\frac{n-1}{k-1}} \\geqslant n\n$$\n再由平均值不等式, 得\n$$\nk=\\frac{(k-1) n+(n-k) \\times 1}{n-1} \\geqslant n^{\\frac{k-1}{n-1}},\n$$\n从而不等式成立.\n不难看出, 当 $k=n$ 且 $a_1=a_2=\\cdots=a_k$ 时等号成立.",
+    "remark": "",
+    "figures": []
+}

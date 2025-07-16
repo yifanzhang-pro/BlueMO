@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题13 求 $f(x)=\\frac{4 \\sin x \\cos x+1}{\\sin x+\\cos x+1}\\left(0 \\leqslant x \\leqslant \\frac{\\pi}{2}\\right)$ 的最大值和最小值.",
+    "solution": "设 $\\sin x+\\cos x=t$, 则 $1 \\leqslant t \\leqslant \\sqrt{2}$, 于是 $f(x)=\\frac{2 t^2-1}{t+1}=2(t+1)+ \\frac{1}{t+1}-4$. 令 $g(t)=2(t+1)+\\frac{1}{t+1}$, 则 $g(t)$ 在 $[1, \\sqrt{2}]$ 上单调递增, 故 $g(t)$ 的最小值为 $g(1)=\\frac{9}{2}, g(t)$ 的最大值为 $g(\\sqrt{2})=3 \\sqrt{2}+1$. 所以, $f(x)$ 的最小值为 $\\frac{1}{2}$, 最大值为 $3(\\sqrt{2}-1)$.",
+    "remark": "",
+    "figures": []
+}

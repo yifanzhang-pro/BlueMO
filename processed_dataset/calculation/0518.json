@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例15 设 $x \\in\\left(0, \\frac{\\pi}{2}\\right), y \\in(0,+\\infty)$, 求\n$$\n(\\sqrt{2} \\cos x-y)^2+\\left(\\sqrt{2} \\sin x-\\frac{9}{y}\\right)^2\n$$\n的最小值.",
+    "solution": "分析:联想到两点间的距离公式, $(\\sqrt{2} \\cos x-y)^2+\\left(\\sqrt{2} \\sin x-\\frac{9}{y}\\right)^2$ 可视为平面直角坐标系中点 $A(\\sqrt{2} \\cos x, \\sqrt{2} \\sin x)$ 与 $B\\left(y, \\frac{9}{y}\\right)$ 的距离的平方, 而这两点又可看作参数 $x, y$ 所确定的曲线上的点, 问题即可转化为求两曲线上点之间距离的最小值问题.\n解如图(<FilePath:./images/volume2/figures/fig-c4e15.png>)所示, 建立直角坐标系 $u O v$.\n设 $C_1:\\left\\{\\begin{array}{l}u=\\sqrt{2} \\cos x, \\\\ v=\\sqrt{2} \\sin x,\\end{array} x \\in\\left(0, \\frac{\\pi}{2}\\right)\\right.$\n及 $C_2:\\left\\{\\begin{array}{l}u=y, \\\\ v=\\frac{9}{y}, y \\in(0,+\\infty) .\\end{array}\\right.$\n则 $(\\sqrt{2} \\cos x-y)^2+\\left(\\sqrt{2} \\sin x-\\frac{9}{y}\\right)^2$ 表示曲线 $C_1$ 上点 $A(\\sqrt{2} \\cos x, \\sqrt{2} \\sin x)$ 与曲线 $C_2$ 上点 $B\\left(y, \\frac{9}{y}\\right)$ 之间的距离的平方.\n作出曲线 $C_1: u^2+v^2=2(u>0, v>0)$ 及 $C_2: u v=9(u>0, v>0)$ 的图象, 显然, 当 $|O B|$ 取得最小值而 $O 、 A 、 B$ 三点共线时, $|A B|^2$ 最小.\n因为\n$$\n|O B|=\\sqrt{y^2+\\left(\\frac{9}{y}\\right)^2} \\geqslant 3 \\sqrt{2} .\n$$\n当 $y=3$ 时,等号成立, 所以\n$$\n\\begin{gathered}\n|A B|=|O B|-|O A|=3 \\sqrt{2}-\\sqrt{2}=2 \\sqrt{2} . \\\\\n|A B|^2=8 .\n\\end{gathered}\n$$\n所以, $(\\sqrt{2} \\cos x-y)^2+\\left(\\sqrt{2} \\sin x-\\frac{9}{y}\\right)^2$ 的最小值为 8 .",
+    "remark": "",
+    "figures": [
+        "./images/volume2/figures/fig-c4e15.png"
+    ]
+}

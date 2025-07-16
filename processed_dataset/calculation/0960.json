@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 已知 $\\left|z_1\\right|=\\left|z_2\\right|=1, z_1+z_2=\\frac{1}{2}+\\frac{\\sqrt{3}}{2} \\mathrm{i}$, 求复数 $z_1, z_2$.",
+    "solution": "如图(<FilePath:./images/volume8/figures/fig-c2a2.png>), 设 $\\overrightarrow{O A}$ 对应于复数 $z_1, \\overrightarrow{O B}$ 对应于复数 $z_2, z_1+z_2$ 对应于向量 $\\overrightarrow{O C}$.\n由 $z_1+z_2=\\frac{1}{2}+\\frac{\\sqrt{3}}{2} \\mathrm{i}$ 知, $\\left|z_1+z_2\\right|=1$. 所以 $\\triangle A O C$ 和 $\\triangle B O C$ 都是等边三角形, 于是\n$$\n\\begin{aligned}\n& z_1=1, z_2=-\\frac{1}{2}+\\frac{\\sqrt{3}}{2} \\mathrm{i} \\text { 或 } \\\\\n& \\dot{z}_1=-\\frac{1}{2}+\\frac{\\sqrt{3}}{2} \\mathrm{i}, z_2=1 .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume8/figures/fig-c2a2.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-7.tex",
+    "problem_type": "proof",
+    "problem": "例5. 用 $A_n$ 表示一些由 $a 、 b 、 c$ 组成的字长为 $n$ 的词组成的集合,其中每一个词中都没有连续两个字同时为 $a$ 或者同时为 $b ; B_n$ 表示一些由 $a 、 b 、 c$ 组成的字长为 $n$ 的词组成的集合, 其中每一个词中都没有连续的三个字是两两不同的.\n证明: 对任意正整数 $n$, 都有 $\\left|B_{n+1}\\right|=3\\left|A_n\\right|$.",
+    "solution": "证明:我们采用递推的方法来处理.\n用 $c_n$ 表示集合 $A_n$ 中以 $c$ 开头的词的个数, $d_n$ 表示以 $a$ 或 $b$ 开头的词的个数.\n对于 $A_{n+1}$ 中的词, 依第 1 个字分类, 如果为 $c$, 那么去掉它后所得的词仍属于 $A_n$; 如果为 $a$, 那么第 2 个字为 $c$ 或 $b$; 如果为 $b$, 那么第 2 个字为 $c$ 或 $a$. 所以,成立如下递推关系式\n$$\n\\left\\{\\begin{array}{l}\nc_{n+1}=\\left|A_n\\right|=c_n+d_n, \\\\\nd_{n+1}=2 c_n+d_n .\n\\end{array}\\right. \\label{eq1}\n$$\n再用 $c_n^{\\prime}$ 表示 $B_n$ 中最前面的两个字相同的词的个数, $d_n^{\\prime}$ 表示 $B_n$ 中最前面的两个字不同的词的个数.\n对于 $B_{n+1}$ 中的词,我们依最前面的两个字是否相同分类.\n如果相同,那么第 3 个字可以任取,此时,去掉第 1 个字后, 所得词属于 $B_n$; 如果不同, 那么第 3 个字与前面两个字中的某一个相同, 在与第 1 个字相同时, 去掉第 1 个字后, 共有 $d_n^{\\prime}$ 个词.\n在与第 2 个字相同时, 去掉第 1 个字后, 共有 $2 c_n^{\\prime}$ 个词 (这里系数为 2 是因为 $a b b \\cdots$ 与 $c b b \\cdots$ 去掉第 1 个字后所得的词相同), 所以,它们之间的递推关系式为\n$$\n\\left\\{\\begin{array}{l}\nc_{n+1}^{\\prime}=\\left|B_n\\right|=c_n^{\\prime}+d_n^{\\prime} ; \\\\\nd_{n+1}^{\\prime}=2 c_n^{\\prime}+d_n^{\\prime} .\n\\end{array}\\right. \\label{eq2}\n$$\n注意到,递推关系式\\ref{eq1}与\\ref{eq2}完全相同,不同的只是它们的初始条件.\n直接枚举可知 $c_1=1, d_1=2 ; c_2^{\\prime}=3, d_2^{\\prime}=6$. 因此 $c_2^{\\prime}=3 c_1, d_2^{\\prime}=3 d_1$, 从而由递推关系式,可知 $c_{n+1}^{\\prime}=3 c_n, d_{n+1}^{\\prime}=3 d_n$. 结合 $\\left|A_n\\right|=c_{n+1}$ 及 $\\left|B_n\\right|=c_{n+1}^{\\prime}$, 可得 $\\left|B_{n+1}\\right|=3\\left|A_n\\right|$.\n命题获证.\n说明利用递推思想处理组合计数问题是一个重要的方法.\n这里建立的递推式可化为常系数齐次线性递推关系, 可求解出 $\\left|A_n\\right|$ 的具体数值.",
+    "remark": "",
+    "figures": []
+}

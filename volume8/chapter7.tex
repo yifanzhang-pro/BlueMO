@@ -1,0 +1,239 @@
+
+%%TEXT_BEGIN%%
+单位根及其应用.
+对于方程
+$$
+x^n-1=0,\left(n \in \mathbf{N}^*, n \geqslant 2\right)
+$$
+由复数开方法则, 就得到它的 $n$ 个根
+$$
+\varepsilon_k=\cos \frac{2 k \pi}{n}+\operatorname{isin} \frac{2 k \pi}{n} . \quad(k=0,1,2, \cdots, n-1)
+$$
+它们显然是 1 的 $n$ 次方根, 称为 $n$ 次单位根.
+利用复数乘方公式,有
+$$
+\varepsilon_k=\left(\cos \frac{2 \pi}{n}+i \sin \frac{2 \pi}{n}\right)^k=\varepsilon_1^k .
+$$
+这说明, $n$ 个 $n$ 次单位根可以表示为
+$$
+1, \varepsilon_1, \varepsilon_1^2, \cdots, \varepsilon_1^{n-1} .
+$$
+关于 $n$ 次单位根, 有如下一些性质:
+(1) $\left|\varepsilon_k\right|=1 . \quad(k \in \mathbf{N})$
+(2) $\varepsilon_j \varepsilon_k=\varepsilon_{j+k} . \quad(j, k \in \mathbf{N})$
+(3) $1+\varepsilon_1+\varepsilon_1^2+\cdots+\varepsilon_1^{n-1}=0 . \quad(n \geqslant 2)$
+(4) 设 $m$ 是整数,则
+$$
+1+\varepsilon_1^m+\varepsilon_2^m+\cdots+\varepsilon_{n-1}^m=\left\{\begin{array}{l}
+n, \text { 当 } m \text { 是 } n \text { 的倍数时; } \\
+0, \text { 当 } m \text { 不是 } n \text { 的倍数时.
+}
+\end{array}\right.
+$$
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知单位圆的内接正 $n$ 边形 $A_1 A_2 \cdots A_n$ 及圆周上一点 $P$, 求证: $\sum_{k=1}^n\left|P A_k\right|^2=2 n$.
+%%<SOLUTION>%%
+分析:与解设 $\zeta=\mathrm{e}^{\frac{2 \pi \mathrm{i}}{n}}, A_1, \cdots, A_n$ 对应的复数是 $1, \zeta, \zeta^2, \cdots, \zeta^{-1}$. 又设 $P$ 点 (对应的复数) 为 $z=\mathrm{e}^{\mathrm{i} \theta}$. 则我们有
+$$
+\begin{aligned}
+\sum_{k=1}^n\left|P A_k\right|^2 & =\sum_{k=0}^{n-1}\left|z-\zeta^k\right|^2=\sum_{k=0}^{n-1}\left(z-\zeta^k\right)\left(\bar{z}-\zeta^{-k}\right) \\
+& =\sum_{k=0}^{n-1}\left(|z|^2-\zeta^k \bar{z}-\zeta^{-k} z+1\right) \\
+& =2 n-\bar{z} \sum_{k=0}^{n-1} \zeta^k-z \sum_{k=0}^{n-1} \zeta^{-k}=2 n
+\end{aligned}
+$$
+最后一步应用了 $1+\zeta+\zeta^2+\cdots+\zeta^{n-1}=0$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $P(x), Q(x), R(x)$ 及 $S(x)$ 都是多项式, 且
+$$
+P\left(x^5\right)+x Q\left(x^5\right)+x^2 R\left(x^5\right)=\left(x^4+x^3+x^2+x+1\right) S(x), \label{eq1}
+$$
+求证: $x-1$ 是 $P(x), Q(x), R(x)$ 及 $S(x)$ 的公因式.
+%%<SOLUTION>%%
+分析:与解设 $\zeta$ 是一个 5 次单位根 $(\zeta \neq 1)$, 在 式\ref{eq1} 中取 $x=\zeta, \zeta^2, \zeta^3, \zeta^4$, 得出
+$$
+\left(\zeta^k\right)^2 R(1)+\zeta^k Q(1)+P(1)=0(k=1,2,3,4),
+$$
+这意味着多项式 $x^2 R(1)+x Q(1)+P(1)$ 有四个不同的零点, 从而必须 $R(1)=Q(1)=P(1)=0$.
+再将 $x=1$ 代入 (1), 得 $S(1)=0$.
+于是 $P(x), Q(x), R(x)$ 及 $S(x)$ 都有因式 $x-1$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 求证: 不存在四个整系数多项式 $f_k(x)(k \doteq 1,2,3,4)$, 使得恒等式
+$$
+9 x+4=f_1^3(x)+f_2^3(x)+f_3^3(x)+f_4^3(x) . \label{eq1}
+$$
+成立.
+%%<SOLUTION>%%
+分析:与解本题看上去平平常常,但自己做起来却未必顺顺当当.
+记 $\omega$ 是三次单位根 $(\omega \neq 1)$, 则对任意整系数多项式 $f(x)$, 利用 $\omega^3=1$ 及 $\omega^2=-1-\omega$ 可将 $f(\omega)$ 化为 $a+b \omega$ ( $a 、 b$ 是整数), 于是 (注意 $\left.1+\omega+\omega^2=0\right)$
+$$
+f^3(\omega)=(a+b \omega)^3=a^3+b^3-3 a b^2+3 a b(a-b) \omega .
+$$
+由于 $a b(a-b)$ 总是偶数,故若存在形如 式\ref{eq1} 的恒等式, 以 $x=\omega$ 代入, 即得
+$$
+9 \omega+4=A+B \omega . \label{eq2}
+$$
+这里 $A 、 B$ 都是整数,且 $B$ 是偶数.
+但由式\ref{eq2}易知 $B=9$, 这显然不可能,证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $\varepsilon=\cos \frac{2 \pi}{n}+\mathrm{i} \sin \frac{2 \pi}{n}$, 求证:
+(1) $(1-\varepsilon)\left(1-\varepsilon^2\right) \cdots\left(1-\varepsilon^{n-1}\right)=n$;
+(2) $\sin \frac{\pi}{n} \sin \frac{2 \pi}{n} \cdots \sin \frac{(n-1) \pi}{n}=\frac{n}{2^{n-1}}$.
+%%<SOLUTION>%%
+分析:与解方程 $x^n-1=0$ 的 $n$ 个单位根是
+$$
+\varepsilon_k=\cos \frac{2 k \pi}{n}+\mathrm{i} \sin \frac{2 k \pi}{n},(k=0,1, \cdots, n-1)
+$$
+注意到 $\varepsilon=\cos \frac{2 \pi}{n}+\mathrm{i} \sin \frac{2 \pi}{n}$, 从而有
+$$
+\varepsilon_k=\varepsilon^k
+$$
+于是, 由
+$$
+x^n-1=(x-1)(x-\varepsilon)\left(x-\varepsilon^2\right) \cdots\left(x-\varepsilon^{n-1}\right)
+$$
+得
+$$
+\begin{aligned}
+& (x-\varepsilon)\left(x-\varepsilon^2\right) \cdots\left(x-\varepsilon^{n-1}\right) \\
+= & \frac{x^n-1}{x-1} \\
+= & x^{n-1}+x^{n-2}+\cdots+x+1 .
+\end{aligned}
+$$
+即有
+$$
+(x-\varepsilon)\left(x-\varepsilon^2\right) \cdots\left(x-\varepsilon^{n-1}\right)=x^{n-1}+x^{n-2}+\cdots+x+1 . \label{eq1}
+$$
+(1) 在\ref{eq1}式中, 令 $x=1$, 立得
+$$
+(1-\varepsilon)\left(1-\varepsilon^2\right) \cdots\left(1-\varepsilon^{n-1}\right)=n . \label{eq2}
+$$
+(2) 对\ref{eq2}式的两边取模,并注意到
+$$
+\left|1-\varepsilon^k\right|=2 \sin \frac{k \pi}{n},
+$$
+立得
+$$
+2^{n-1} \sin \frac{\pi}{n} \sin \frac{2 \pi}{n} \cdots \sin \frac{(n-1) \pi}{n}=n,
+$$
+即有
+$$
+\sin \frac{\pi}{n} \sin \frac{2 \pi}{n} \cdots \sin \frac{(n-1) \pi}{n}=\frac{n}{2^{n-1}},
+$$
+证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 试求一切有序正整数对 $(n, k)$, 使得 $x^n+x+1$ 被 $x^k+x+1$ 整除.
+%%<SOLUTION>%%
+分析:与解显然, $n \geqslant k$.
+当 $n>k$ 时, 设 $\omega$ 是 $x^k+x+1=0$ 的一个根, 则 $\omega \neq 0, \omega^n+\omega+1=0$, 于是
+$$
+\omega^n-\omega^k=\omega^k\left(\omega^{n-k}-1\right)=0 .
+$$
+从而有
+$$
+\omega^{n-k}=1 \text {. }
+$$
+由 $|\omega|^{n-k}=\left|\omega^{n-k}\right|=1$, 知 $|\omega|=1$.
+由 $1=|\omega|^k=\left|\omega^k\right|=|\omega+1|$, 可知 $\omega$ 的实部为 $-\frac{1}{2}$, 则 $k \geqslant 2$.
+$\omega_1=\frac{-1+\sqrt{3} \mathrm{i}}{2}$ 或 $\omega_2=\frac{-1-\sqrt{3} \mathrm{i}}{2}$ 是 $x^k+x+1=0$ 的所有根, 从而有
+$$
+x^k+x+1=\left(x-\omega_1\right)^{k_1}\left(x-\omega_2\right)^{k-k_1}, k_1 \in \mathbf{Z}, 0 \leqslant k_1 \leqslant k .
+$$
+若 $k>2$, 考虑上面等式两边含 $x^{k-1}$ 的项的系数, 便有 $k_1 \omega_1+\left(k-k_1\right) \omega_2=$ 0 ,考虑实部即有 $k=0$, 产生矛盾.
+若 $k=2$, 令 $n \equiv l(\bmod 3), 0 \leqslant l<3$. 由 $\omega^n+\omega+1=\omega^l+\omega+1=0$, 得 $l=2, n \equiv 2(\bmod 3)$.
+故知 $(n, k)=(k, k)$ 或 $(3 m+2,2), m$ 是正整数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 有 $m$ 个男孩与 $n$ 个女孩围坐在一个圆周上 $(m>0, n>0, m+ n \geqslant 3)$, 将顺序相邻的 3 人中恰有 1 个男孩的组数记作 $a$, 顺序相邻的 3 人中恰有 1 个女孩的组数记作 $b$, 求证: $a-b$ 是 3 的倍数.
+%%<SOLUTION>%%
+分析:与解用 $a_k$ 表示小孩, 且将 $a_k$ 赋值为 $a_k=\left\{\begin{array}{l}\omega, a_k \text { 表示男孩时, } \\ \bar{\omega}, a_k \text { 表示女孩时.
+}\end{array}\right.$
+其中 $\omega=-\frac{1}{2}+\frac{\sqrt{3}}{2} \mathrm{i}$, 有 $\omega^{3 m}=1$, 并且
+$$
+a_k a_{k+1} a_{k+2}=\left\{\begin{array}{l}
+\omega^{-1},\left(a_k, a_{k+1}, a_{k+2} \text { 中恰有一个男孩 }\right) \\
+\omega,\left(a_k, a_{k+1}, a_{k+2} \text { 中恰有一个女孩 }\right) \\
+1,\left(a_k, a_{k+1}, a_{k+2} \text { 中全都是男 (女) 孩 }\right)
+\end{array}\right.
+$$
+从而得
+$$
+\begin{aligned}
+1 & =\left(a_1 a_2 \cdots a_{m+n}\right)^3 \\
+& =\left(a_1 a_2 a_3\right)\left(a_2 a_3 a_4\right) \cdots\left(a_{m+n} a_1 a_2\right) \\
+& =\omega^{b-a},
+\end{aligned}
+$$
+故 $a-b$ 是 3 的倍数,证毕.
+%%<REMARK>%%
+注:本题相当于是一个复数赋值问题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $z_k(k=0,1, \cdots, n-1)$ 是 $z^n-1=0$ 的 $n$ 个根, 定义
+$$
+f(x)=a_m x^m+a_{m-1} x^{m-1}+\cdots+a_1 x+a_0,
+$$
+其中 $m$ 为小于 $n$ 的正整数, 求证: $-\frac{1}{n} \sum_{k=0}^{n-1} f\left(z_k\right)=a_0$.
+%%<SOLUTION>%%
+分析:与解令 $z_k=\cos \frac{2 k \pi}{n}+\operatorname{isin} \frac{2 k \pi}{n}=z_1^k(k=0,1, \cdots, n-1)$,
+则由 $l<n$ 时, $z_1^l \neq 1, z_1^n=1$, 知 $\sum_{k=0}^{n-1} z_1^{k l}=\frac{1-\left(z_1^l\right)^n}{1-z_1^l}=0$.
+所以 $\frac{1}{n} \sum_{k=0}^{n-1} f\left(z_k\right)=a_0$, 证毕.
+%%<REMARK>%%
+注:本题可以看作一个很重要的引理, 使用很方便, 读者可参考下例.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 单位圆周上任意 $n$ 个点 $z_1, \cdots, z_n$. 求证:
+$$
+\max _{|z|=1}\left|z-z_1\right| \cdots\left|z-z_n\right| \geqslant 2, \label{eq1}
+$$
+并证明等号成立的充要条件是 $z_1, \cdots, z_n$ 构成正 $n$ 边形.
+%%<SOLUTION>%%
+分析:与解因为通过适当的旋转, 可设 $z_1 z_2 \cdots z_n=1$. 记
+$$
+P(z)=\left(z-z_1\right) \cdots\left(z-z_n\right)=z^n+a_1 z^{n-1}+\cdots+a_{n-1} z+1=z^n+f(z)+1,
+$$
+其中 $f(z)$ 或为零, 或次数不超过 $n-1$. 设 $\zeta_1, \zeta_2, \cdots, \zeta_n$ 是全部 $n$ 次单位根, 则由上例知
+$$
+f\left(\zeta_1\right)+\cdots+f\left(\zeta_n\right)=0 .
+$$
+如果 $f(z)$ 不恒为 0 , 则存在 $j$ 使 $f\left(\zeta_j\right) \neq 0$, 且 $\operatorname{Re} f\left(\zeta_j\right) \geqslant 0$, 故 $\left|P\left(\zeta_j\right)\right|== \left|2+f\left(\zeta_j\right)\right|>2$; 如 $f(z)$ 恒为 0 , 则当然有 $\left|P\left(\zeta_j\right)\right|=2$. 这就证明了式\ref{eq1}.
+上面的论证还表明,如果式\ref{eq1}成立等号, 必须 $f\left(\zeta_j\right)=0(j=1,2, \cdots, n)$, 这意味着 $f(z)==0$, 即 $P(z)=z^n+1$, 所以 $z_1, \cdots, z_n$ 构成正 $n$ 边形, 证毕.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 设 $A_1 A_2 A_3 A_4$ 为 $\\odot O$ 的内接四边形, $H_1 、 H_2 、 H_3 、 H_4$ 依次为 $\\triangle A_2 A_3 A_4$ 、 $\\triangle A_3 A_4 A_1 、 \\triangle A_4 A_1 A_2 、 \\triangle A_1 A_2 A_3$ 的垂心, 求证: $H_1 、 H_2 、 H_3 、 H_4$ 在同一个圆上,并定出该圆的圆心.",
+    "solution": "设 $\\odot O$ 的半径为 $R$, 设 $\\overrightarrow{O A_1}+\\overrightarrow{O A_2}+\\overrightarrow{O A_3}+\\overrightarrow{O A_4}=\\overrightarrow{O C}$, 则由例 3 知\n$$\n\\begin{gathered}\n\\overrightarrow{O H_1}=\\overrightarrow{O A_2}+\\overrightarrow{O A_3}+\\overrightarrow{O A_4}=\\overrightarrow{O C}-\\overrightarrow{O A_1}, \\\\\n\\left|\\overrightarrow{H_1 C}\\right|=\\left|\\overrightarrow{O C}-\\overrightarrow{O H_1}\\right|=\\left|\\overrightarrow{O A_1}\\right|=R .\n\\end{gathered}\n$$\n从而\n$$\n\\left|\\overrightarrow{H_1 C}\\right|=\\left|\\overrightarrow{O C}-\\overrightarrow{O H_1}\\right|=\\left|\\overrightarrow{O A_1}\\right|=R\n$$\n同理 $\\left|\\overrightarrow{H_2 C}\\right|=\\left|\\overrightarrow{O A_2}\\right|=R,\\left|\\overrightarrow{H_3 C}\\right|=\\left|\\overrightarrow{O A_3}\\right|=R,\\left|\\overrightarrow{H_4 C}\\right|=\\left|\\overrightarrow{O A_4}\\right|=R$. 所以 $H_1 、 H_2 、 H_3 、 H_4$ 在同一圆上, 以 $C$ 为圆心, 以 $R$ 为半径, 证毕.",
+    "remark": "",
+    "figures": []
+}

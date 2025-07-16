@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $n, k \\in \\mathbf{N}^*$, 且 $k \\leqslant n$. 并设 $S$ 是含有 $n$ 个互异实数的集合, $T=\\left\\{a \\mid a=x_1+x_2+\\cdots+x_k, x_i \\in S, x_i \\neq x_j(i \\neq j), 1 \\leqslant i, j \\leqslant k\\right\\}$. 求证: $|T| \\geqslant k(n-k)+1$.",
+    "solution": "分析:设 $S_n=\\left\\{s_1, s_2, \\cdots, s_{n-1}, s_n\\right\\}$, 且 $s_1<s_2<\\cdots<s_{n-1}<s_n$. 作 $S_n$ 的子集 $S_{n-1}=\\left\\{s_1, s_2, \\cdots, s_{n-1}\\right\\}$, 设 $S_{n-1} 、 S_n$ 分别对应 $T_{n-1} 、 T_n$. 对固定的 $k (k \\leqslant n-1)$, 由 $s_{n-1}+s_{n-2}+\\cdots+s_{n-k}<s_n+s_{n-2}+\\cdots+s_{n-k}<s_n+s_{n-1}+s_{n-3}+\\cdots+s_{n-k}<\\cdots<s_n+s_{n-1}+\\cdots+s_{n-k+1}$, 知 $\\left|T_n\\right| \\geqslant\\left|T_{n-1}\\right|+k$. 而 $k(n-k)+ 1=k(n-1-k)+k+1$, 这提示我们对 $n$ 进行归纳证明.\n证明设 $s_1<s_2<\\cdots<s_n$ 是 $S$ 的 $n$ 个元素.\n对元素数目 $n$ 使用数学归纳法.\n首先, 当 $k=1$ 和 $k=n$ 时, 结论显然成立.\n设 $k \\leqslant n-1$, 且结论对 $S_0=\\left\\{s_1, s_2, \\cdots, s_{n-1}\\right\\}$ 成立, 并设 $T_0$ 是当把 $S$ 换成 $S_0$ 时与 $T$ 相应的集合.\n于是有\n$$\n\\left|T_0\\right| \\geqslant k(n-k-1)+1 .\n$$\n令 $x=s_n+s_{n-1}+\\cdots+s_{n-k}$, 并令\n$$\ny_i=x-s_{n-i}, i=0,1, \\cdots, k .\n$$\n显然 $y_i \\in T$, 且有 $y_0<y_1<y_2<\\cdots<y_k$. 因为 $y_0$ 是 $T_0$ 中的最大元素, 所以\n$$\ny_i \\in T, y_i \\notin T_0, i=1,2, \\cdots, k .\n$$\n故有\n$$\n|T| \\geqslant\\left|T_0\\right|+k \\geqslant k(n-k-1)+1+k=k(n-k)+1 .\n$$\n这就完成了归纳证明.",
+    "remark": "",
+    "figures": []
+}

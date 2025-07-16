@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 证明 Chebyshev 不等式:\n设 $a_1 \\leqslant a_2 \\leqslant \\cdots \\leqslant a_n, b_1 \\leqslant b_2 \\leqslant \\cdots \\leqslant b_n$, 则\n$$\nn \\cdot \\sum_{k=1}^n a_k b_k \\geqslant\\left(\\sum_{k=1}^n a_k\\right) \\cdot\\left(\\sum_{k=1}^n b_k\\right) \\geqslant n \\sum_{k=1}^n a_k b_{n-k+1} .\n$$",
+    "solution": "定义 $b_{n+t}=b_n, t=0,1,2, \\cdots$. 则 $\\sum_{i=1}^n b_{i+t}=\\sum_{i=1}^n b_i, \\sum_{i=1}^k b_{i+t} \\geqslant \\sum_{i=1}^k b_i$, $a_k-a_{k+1} \\leqslant 0(1 \\leqslant k \\leqslant n-1)$.\n由分部求和公式,\n$$\n\\begin{aligned}\n\\left(\\sum_{k=1}^n a_k\\right) \\cdot\\left(\\sum_{k=1}^n b_k\\right) & =\\sum_{t=0}^{n-1}\\left(\\sum_{i=1}^n a_i b_{i+t}\\right) \\\\\n& =\\sum_{t=0}^{n-1}\\left[a_n \\sum_{i=1}^n b_{i+t}+\\sum_{k=1}^{n-1}\\left(\\sum_{i=1}^k b_{i+t}\\right)\\left(a_k-a_{k+1}\\right)\\right] \\\\\n& \\leqslant \\sum_{t=0}^{n-1}\\left[a_n \\sum_{i=1}^n b_i+\\sum_{k=1}^{n-1}\\left(\\sum_{i=1}^k b_i\\right)\\left(a_k-a_{k+1}\\right)\\right] \\\\\n& =n \\cdot \\sum_{k=1}^n a_k b_k .\n\\end{aligned}\n$$\n同理可证 $\\left(\\sum_{k=1}^n a_k\\right)\\left(\\sum_{k=1}^n b_k\\right) \\geqslant n \\sum_{k=1}^n a_k b_{n-k+1}$.",
+    "remark": "",
+    "figures": []
+}

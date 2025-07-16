@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 证明: 小于 30 条边的简单平面图有一个顶点度数 $\\leqslant 4$.",
+    "solution": "设每个点的度数 $>4$, 则 $2 e=\\sum_{i=1}^v d\\left(v_i\\right) \\geqslant 5 v$, 即 $v \\leqslant \\frac{2}{5} e$, 由于 $e \\leqslant 3 v-6$, 代入得 $e \\leqslant \\frac{6}{5} e-6$, 即有 $e \\geqslant 30$, 矛盾.",
+    "remark": "",
+    "figures": []
+}

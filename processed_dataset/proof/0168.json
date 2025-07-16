@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例2. 证明: 对任意整数 $n>1$, 数 $n^4+4^n$ 不是素数.",
+    "solution": "证明:若 $n$ 为偶数, 则 $n^4+4^n$ 大于 2 且均被 2 整除, 因此都不是素数.\n但对奇数 $n$,易知 $n^4+4^n$ 没有一个(大于 1 的) 固定的约数,我们采用不同的处理:\n设奇数 $n=2 k+1, k \\geqslant 1$, 则\n$$\n\\begin{aligned}\nn^4+4^n & =n^4+4 \\cdot 4^{2 k}=n^4+4 \\cdot\\left(2^k\\right)^4 \\\\\n& =n^4+4 n^2 \\cdot\\left(2^k\\right)^2+4 \\cdot\\left(2^k\\right)^4-4 n^2 \\cdot\\left(2^k\\right)^2 \\\\\n& =\\left(n^2+2 \\cdot 2^{2 k}\\right)^2-\\left(2 \\cdot n \\cdot 2^k\\right)^2 \\\\\n& =\\left(n^2+2^{k+1} n+2^{2 k+1}\\right)\\left(n^2-2^{k+1} n+2^{2 k+1}\\right) .\n\\end{aligned}\n$$\n上式右边第一个因数显然不为 1 , 而后一个因数为 $\\left(n-2^k\\right)^2+2^{2 k}$ 也不是 1 (因 $k \\geqslant 1$ ), 故 $n^4+4^n$ 对 $n>1$ 都是合数.\n这一解法的关键, 是在 $n$ 为奇数时, 将 $4^n$ 看作单项式 $4 y^4$, 以利用代数式的分解\n$$\nx^4+4 y^4=\\left(x^2+2 y^2+2 x y\\right)\\left(x^2+2 y^2-2 x y\\right),\n$$\n产生数的适用的分解.",
+    "remark": "",
+    "figures": []
+}

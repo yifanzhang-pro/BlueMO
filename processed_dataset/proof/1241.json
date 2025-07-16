@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 设 $x, y, z, w \\in \\mathbf{R}^{+}, \\alpha 、 \\beta 、 \\gamma 、 \\theta$ 满足 $\\alpha+\\beta+\\gamma+\\theta=(2 k+1) \\pi, k \\in \\mathbf{Z}$. 求证:\n$$\n(x \\sin \\alpha+y \\sin \\beta+z \\sin \\gamma+w \\sin \\theta)^2 \\leqslant \\frac{(x y+z w)(x z+y w)(x w+y z)}{x y z w},\n$$\n当且仅当 $x \\cos \\alpha=y \\cos \\beta=z \\cos \\gamma=w \\cos \\theta$ 时等号成立.",
+    "solution": "设 $u=x \\sin \\alpha+y \\sin \\beta, v=z \\sin \\gamma+x \\sin \\theta$, 则 $u^2= (x \\sin \\alpha+y \\sin \\beta)^2 \\leqslant(x \\sin \\alpha+y \\sin \\beta)^2+(x \\cos \\alpha-y \\cos \\beta)^2=x^2+y^2- 2 x y \\cos (\\alpha+\\beta)$. 所以 $\\cos (\\alpha+\\beta) \\leqslant \\frac{x^2+y^2-u^2}{2 x y}$. 同理 $\\cos (\\gamma+\\theta) \\leqslant \\frac{z^2+w^2-v^2}{2 z w}$. 由假设 $\\cos (\\alpha+\\beta)+\\cos (\\gamma+\\theta)=0$, 则 $\\frac{u^2}{x y}+\\frac{v^2}{z w} \\leqslant \\frac{x^2+y^2}{x y}+ \\frac{z^2+w^2}{z w}$. 于是 $(u+v)^2=\\left(u \\cdot \\frac{\\sqrt{x y}}{\\sqrt{x y}}+v \\cdot \\frac{\\sqrt{z w}}{\\sqrt{z w}}\\right)^2 \\leqslant\\left(\\frac{u^2}{x y}+\\frac{v^2}{z w}\\right)(x y+ z w) \\leqslant(x y+z w)\\left(\\frac{x^2+y^2}{x y}+\\frac{z^2+w^2}{z w}\\right)$. 等号成立 $\\Leftrightarrow x \\cos \\alpha=y \\cos \\beta$, $z \\cos \\gamma=w \\cos \\theta, \\frac{u}{x y}=\\frac{v}{z w} \\Leftrightarrow x \\cos \\alpha=y \\cos \\beta=z \\cos \\gamma=w \\cos \\theta$.",
+    "remark": "",
+    "figures": []
+}

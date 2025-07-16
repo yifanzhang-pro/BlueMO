@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 已知 $a 、 b 、 c 、 d 、 e$ 为正数,且 $a b c d e=1$, 求证:\n$$\n\\begin{gathered}\n\\frac{a+a b c}{1+a b+a b c d}+\\frac{b+b c d}{1+b c+b c d e}+\\frac{c+c d e}{1+c d+c d e a}+ \\\\\n\\frac{d+d e a}{1+d e+d e a b}+\\frac{e+e a b}{1+e a+e a b c} \\geqslant \\frac{10}{3} .\n\\end{gathered}\n$$",
+    "solution": "令 $a=\\frac{y}{x}, b=\\frac{z}{y}, c=\\frac{u}{z}, d=\\frac{v}{u}, e=\\frac{x}{v}, x, y, z, u, v \\in \\mathbf{R}^{+}$, 则原不等式等价于 $\\frac{u+y}{x+z+v}+\\frac{z+v}{x+y+u}+\\frac{x+u}{y+z+v}+\\frac{y+v}{x+z+u}+$\n$$\n\\frac{x+z}{y+u+v} \\geqslant \\frac{10}{3}\n$$\n两边同加 5 ,再乘以 3 ,上式等价于\n$$\n\\begin{aligned}\n& 3(x+y+z+u+v) \\cdot\\left(\\frac{1}{x+z+v}+\\frac{1}{x+y+u}+\\frac{1}{y+z+v}+\\frac{1}{x+z+u}+\\right. \\\\\n& \\left.\\frac{1}{y+u+v}\\right) \\geqslant 25 .\n\\end{aligned}\n$$\n利用 Cauchy 不等式, 上式是显然的.",
+    "remark": "",
+    "figures": []
+}

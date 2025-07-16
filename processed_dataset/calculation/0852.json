@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题33. 求最大的实数 $\\lambda$, 使得当实系数多项式 $f(x)=x^3+a x^2+c$ 的所有根都是非负实数时, 只要 $x \\geqslant 0$, 就有 $f(x) \\geqslant \\lambda(x-a)^3$, 并求等号成立的条件.",
+    "solution": "设 $f(x)$ 的三个根为 $\\alpha, \\beta, \\gamma$, 并设 $0 \\leqslant \\alpha \\leqslant \\beta \\leqslant \\gamma$, 则 $x-a=x+\\alpha+ \\beta+\\gamma, f(x)=(x-\\alpha)(x-\\beta)(x-\\gamma)$. (1) 当 $0 \\leqslant x \\leqslant \\alpha$ 时, 则有 $-f(x)= (\\alpha-x)(\\beta-x)(\\gamma-x) \\leqslant\\left(\\frac{\\alpha+\\beta+\\gamma-3 x}{3}\\right)^3 \\leqslant \\frac{1}{27}(x+\\alpha+\\beta+\\gamma)^3=\\frac{1}{27}(x- a)^3$, 所以 $f(x) \\geqslant-\\frac{1}{27}(x-a)^3$. 当 $x=0, \\alpha=\\beta=\\gamma$ 时, 等号成立; (2) 当 $\\alpha \\leqslant x \\leqslant \\beta$ 或 $x>\\gamma$ 时, $f(x)=(x-\\alpha)(x-\\beta)(x-\\gamma)>0>-\\frac{1}{27}(x-a)^3$.\n(3) 当 $\\beta \\leqslant x \\leqslant \\gamma$ 时, $-f(x)=(x-\\alpha)(x-\\beta)(\\gamma-x) \\leqslant\\left(\\frac{x+\\gamma-\\alpha-\\beta}{3}\\right)^3 \\leqslant \\frac{1}{27}(x+\\alpha+\\beta+\\gamma)^3=\\frac{1}{27}(x-a)^3$. 所以 $f(x) \\geqslant-\\frac{1}{27}(x-a)^3$. 当 $\\alpha=\\beta=0$, $\\gamma=2 x$ 时, 等号成立.\n综上所述, $\\lambda$ 的最大值 $-\\frac{1}{27}$.",
+    "remark": "",
+    "figures": []
+}

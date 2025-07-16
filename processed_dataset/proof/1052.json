@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 求证: $-\\sqrt{3}<\\frac{\\sqrt{3} x+1}{\\sqrt{x^2+1}} \\leqslant 2$.",
+    "solution": "设 $x=\\tan \\theta, \\theta \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$, 则 $\\frac{\\sqrt{3} x+1}{\\sqrt{x^2+1}}=(\\sqrt{3} \\tan \\theta+1) \\cos \\theta= \\sqrt{3} \\sin \\theta+\\cos \\theta=2 \\sin \\left(\\theta+\\frac{\\pi}{6}\\right)$. 因为 $-\\frac{\\pi}{3}<\\theta+\\frac{\\pi}{6}<\\frac{2 \\pi}{3}$, 所以 $\\sin \\left(\\theta+\\frac{\\pi}{6}\\right) \\epsilon\\left(-\\frac{\\sqrt{3}}{2}, 1\\right)$, 故原不等式成立.",
+    "remark": "",
+    "figures": []
+}

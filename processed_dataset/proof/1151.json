@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-3.tex",
+    "problem_type": "proof",
+    "problem": "例13. 设 $x, y, z, w \\in \\mathbf{R}^{+}$, 证明:\n$$\n\\frac{x}{y+2 z+3 w}+\\frac{y}{z+2 w+3 x}+\\frac{z}{w+2 x+3 y}+\\frac{w}{x+2 y+3 z} \\geqslant \\frac{2}{3} .\n$$",
+    "solution": "证明:左边 $=\\sum \\frac{x}{y+2 z+3 w}=\\sum \\frac{x^2}{x(y+2 z+3 w)}$\n$$\n\\begin{gathered}\n\\geqslant \\frac{\\left(\\sum x\\right)^2}{\\sum x(y+2 z+3 w)} \\\\\n=\\frac{\\left(\\sum x\\right)^2}{4 \\sum x y}, \\\\\n(x-y)^2+(x-z)^2+(x-w)^2+(y-z)^2+(y-w)^2+(z-w)^2 \\\\\n=3\\left(x^2+y^2+z^2+w^2\\right)-2(x y+x z+x w+y z+y w+z w) \\\\\n=3(x+y+z+w)^2-8(x y+x z+x w+y z+y w+z w) \\geqslant 0 .\n\\end{gathered}\n$$\n所以\n$$\n\\frac{\\left(\\sum x\\right)^2}{\\sum x y} \\geqslant \\frac{8}{3}\n$$\n故原不等式成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,12 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例15. 圆周上有 $n$ 个点 $(n \\geqslant 6)$, 每两点连一线段,假设其中任意三条线段在圆内不共点,于是任意三条两两相交的线段构成一个三角形,试求这些线段确定的三角形的个数.",
+    "solution": "解:我们称圆周上的点为外点, 任意两条对角线在圆内的交点为内点, 则所确定的三角形按其顶点可分为四类:\n第一类三角形的三个顶点均为外点, 设其个数为 $I_1$;\n第二类三角形的三个顶点中有 2 个外点 1 个内点,设其个数为 $I_2$;\n第三类三角形的三个顶点中有 1 个外点 2 个内点,设其个数为 $I_3$;\n第四类三角形的三个顶点均为内点,设其个数为 $I_4$.\n显然第一类三角形与圆周上 3 点组集合成一一对应,所以 $I_1=\\mathrm{C}_n^3$.\n其次,如图(<FilePath:./images/volume11/figures/fig-c6i5-1.png>) 圆周上任取 4 点 $A_1, A_2, A_3, A_4$ 两两相连的线段,确定了 4 个第二类三角形: $\\triangle A_1 O A_2, \\triangle A_2 O A_3, \\triangle A_3 O A_4, \\triangle A_4 O A_1$, 反之每 4 个这样有公共内顶点的第二类三角形对应了圆周上的一个 4 点组, 于是 $I_2=4 \\mathrm{C}_n^4$.\n类似地, 如图(<FilePath:./images/volume11/figures/fig-c6i5-2.png>), 圆周上任取 5 点 $A_1, A_2, A_3, A_4, A_5$, 两两连一线段,确定了 5 个第三类三角形: $\\triangle A_1 B_1 B_2, \\triangle A_2 B_2 B_3, \\triangle A_3 B_3 B_4, \\triangle A_4 B_4 B_5$, $\\triangle A_5 B_5 B_1$, 于是可得 $I_3=5 \\mathrm{C}_n^5$.\n最后, 如图(<FilePath:./images/volume11/figures/fig-c6i5-3.png>), 圆周上任取 6 点 $A_1, A_2, A_3, A_4, A_5, A_6$ 对应于 1 个第四类三角形,所以 $I_4=\\mathrm{C}_n^6$.\n综上所述,得所确定的三角形共有 $\\mathrm{C}_n^3+4 \\mathrm{C}_n^4+5 \\mathrm{C}_n^5+\\mathrm{C}_n^6$ 个.",
+    "remark": "",
+    "figures": [
+        "./images/volume11/figures/fig-c6i5-1.png",
+        "./images/volume11/figures/fig-c6i5-2.png",
+        "./images/volume11/figures/fig-c6i5-3.png"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例4. 四边形 $A B C D$ 内接于 $\\odot O$, 对角线 $A C$ 交 $B D$ 于 $P$. 设 $\\triangle A B P$ 、 $\\triangle B C P 、 \\triangle C D P 、 \\triangle D A P$ 的外接圆圆心分别为 $O_1 、 O_2 、 O_3 、 O_4$. 求证: $O P 、 \\mathrm{O}_1 \\mathrm{O}_3 、 \\mathrm{O}_2 \\mathrm{O}_4$ 三线共点.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c9i8.png>), 作以 $P$ 为反演中心、 $P$ 关于 $\\odot O$ 的幂为反演幂的反演变换.\n则 $\\odot O$ 反演为本身, $\\odot O_i (i=1,2,3,4)$ 反演为四边形 $A B C D$ 各边所在的直线, 过点 $P$ 的直线也反演为本身.\n由于直线 $P O_2$ 与 $\\odot O_2$ 正交, 因此, 它们的反形也正交, 即 $\\mathrm{PO}_2 \\perp A D$.\n又易知 $O_4 O \\perp A D$, 则 $P_2 / / O_4 O$.\n同理, $\\mathrm{PO}_4 / / \\mathrm{O}_2 \\mathrm{O}$.\n因此, 四边形 $\\mathrm{PO}_2 \\mathrm{OO}_4$ 为平行四边形, $\\mathrm{PO}$ 与 $\\mathrm{O}_2 \\mathrm{O}_4$ 互相平分.\n同理, $P O$ 与 $O_1 O_3$ 互相平分.\n故 $\\mathrm{PO} 、 \\mathrm{O}_1 \\mathrm{O}_3 、 \\mathrm{O}_2 \\mathrm{O}_4$ 交于 $\\mathrm{PO}$ 的中点.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9i8.png"
+    ]
+}

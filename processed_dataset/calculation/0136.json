@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 设 $S=\\{1,2,3, \\cdots, 499,500\\}$, 从 $S$ 中任取 4 个不同的数,按照从小到大的顺序排列成一个公比为正整数的等比数列, 求这样的等比数列的个数.",
+    "solution": "解:设所求等比数列为 $a_1, a_1 q, a_1 q^2, a_1 q^3\\left(a_1, q \\in \\mathbf{N}_{+}, q \\geqslant 2\\right)$, 则 $a_1 q^3 \\leqslant 500, q \\leqslant \\sqrt[3]{\\frac{500}{a_1}} \\leqslant \\sqrt[3]{500}$, 所以 $2 \\leqslant q \\leqslant 7$, 且 $1 \\leqslant a_1 \\leqslant\\left[\\frac{500}{q^3}\\right]$, 即公比为 $q$ 的等比数列有 $\\left[\\frac{500}{q^3}\\right]$ 个.\n由加法原理得满足条件的等比数列共有 $\\sum_{q=2}^7\\left[\\frac{500}{q^3}\\right]=62+18+7+4+ 2+1=94$ (个).",
+    "remark": "",
+    "figures": []
+}

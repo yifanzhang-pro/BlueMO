@@ -1,0 +1,30 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 已知钝角三角形 $A B C$ 的外接圆半径为 1 , 证明: 存在一个斜边长为 $\sqrt{2}+1$ 的等腰三角形覆盖 $\triangle A B C$.
+%%<SOLUTION>%%
+不妨设 $\angle C>90^{\circ}$, 于是 $\min \{\angle A, \angle B\}<45^{\circ}$. 不妨设 $\angle A<45^{\circ}$. 以 $A B$ 为直径, 在顶点 $C$ 的同侧作半圆 $O$, 则 $C$ 位于半圆 $O$ 内.
+作射线 $A T$ 使得 $\angle B A T=45^{\circ}$. 再作射线 $O E$ 使得 $\angle B O E=45^{\circ}$, 且与半圆相交于点 $E$. 过点 $E$ 作半圆的切线, 分别交 $A B$ 的延长线和 $A T$ 于点 $D$ 和 $F$, 则等腰直角三角形 $A D F$ 覆盖 $\triangle A B C$, 并且 $A D=A O+O D=\frac{1}{2} A B+\frac{\sqrt{2}}{2} A B=\frac{1}{2}(1+\sqrt{2}) \cdot A B<\frac{1}{2}(1+\sqrt{2}) 2 R=1+\sqrt{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 证明: 在边长为 1 的正方形内, 不可能无重叠的放人两个边长大于 $\sqrt{\frac{2}{3}}$ 的正方形.
+%%<SOLUTION>%%
+提示: 只需证明边长大于 $\frac{\sqrt{2}}{3}$ 的正三角形放人边长为 1 的正方形后,一定包含该正方形的中心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 平面上任给 $n$ 个点,其中任何三点可组成一个三角形, 每个三角形都有一个面积.
+令最大面积与最小面积之比为 $u_n$, 求 $u_5$ 的最小值.
+%%<SOLUTION>%%
+设平面内任意五点为 $A_1 、 A_2 、 A_3 、 A_4 、 A_5$, 其中任意 3 点不共线.
+(1) 若5 点的凸包不是凸五边形, 那么其中必有一点落在某个三角形内, 这时易证 $\mu_5 \geqslant 3$. (2) 5 点的凸包为凸五边形 $A_1 A_2 A_3 A_4 A_5$. 作 $M N / / A_3 A_4$ 分别交 $A_1 A_3 、 A_1 A_4$ 于 $M$ 和 $N$, 且使得 $\frac{A_1 M}{M A_3}=\frac{A_1 N}{N A_4}=\frac{\sqrt{5}-1}{2}$. (i) $A_2 、 A_5$ 中有一点, 比如 $A_2$ 与 $A_3 、 A_4$ 在直线 $M N$ 的同侧时有 $\mu_5 \geqslant \frac{S_{\triangle A_1 A_3 A_4}}{S_{\triangle A_2 A_3 A_4}} \geqslant \frac{A_1 A_3}{M A_3}=1+\frac{A_1 M}{M A_3}= \frac{\sqrt{5}+1}{2}$. (ii) $A_2 、 A_5$ 与 $A_1$ 均在直线 $M N$ 的同侧时, 设 $A_2 A_5$ 交 $A_1 A_3$ 于 $O$, 则 $A_1 O \leqslant A_1 M$, 于是 $\mu_5 \geqslant \frac{S_{\triangle A_2 A_3 A_5}}{S_{\triangle A_1 A_2 A_5}}=\frac{O A_3}{O A_1} \geqslant \frac{M A_3}{M A_1}=\frac{\sqrt{5}+1}{2}$. 注意到 $3> \frac{\sqrt{5}+1}{2}$, 所以总有 $\mu_5 \geqslant \frac{\sqrt{5}+1}{2}$. 当 $A_1 、 A_2 、 A_3 、 A_4 、 A_5$ 为边长为 $a$ 的正五边形的 5 个顶点时, 有 $\mu_5=\frac{S_{\triangle A_1 A_3 A_4}}{S_{\triangle A_1 A_2 A_3}}=\frac{\frac{1}{2} A_1 A_3 \cdot A_1 A_4 \sin 36^{\circ}}{\frac{1}{2} A_1 A_2 \cdot A_1 A_3 \sin 36^{\circ}}=\frac{A_1 A_4}{A_1 A_2}= \frac{\sqrt{5}+1}{2}$. 综上可得 $\mu_5$ 的最小值为 $\frac{\sqrt{5}+1}{2}$.
+%%PROBLEM_END%%
+
+

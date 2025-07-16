@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题13. $n$ 项的 0,1 序列 $\\left(x_1, x_2, \\cdots, x_n\\right)$ 称为长为 $n$ 的二元序列.\n$a_n$ 为无连续三项成 $0,1,0$ 的长为 $n$ 的二元序列的个数, $b_n$ 为无连续四项成 $0,0,1,1$ 或 $1,1,0,0$ 的长为 $n$ 的二元序列的个数.\n证明: 对每一个正整数 $n$, $b_{n+1}=2 a_n$.",
+    "solution": "对任意一个长为 $n+1$ 二元序列 $y=\\left(y_1, y_2, \\cdots, y_{n+1}\\right)$ 令它与一个长为 $n$ 的二元序列 $x=\\left(x_1, x_2, \\cdots, x_n\\right)$ 对应, 其中 $x_i \\equiv y_i+y_{i+1}(\\bmod 2)$, $i=1,2, \\cdots, n \\cdots$ (1). \n显然这样的 $x$ 由 $y$ 唯一确定.\n反过来, 对任意一个长为 $n$ 的二元序列 $x=\\left(x_1, x_2, \\cdots, x_n\\right)$ 及 $y_1=0$ 或 1 , 有一个长为 $n+1$ 的二元序列 $y=\\left(y_1, y_2, \\cdots, y_{n+1}\\right)$, 其中 $y_{i+1} \\equiv y_i+x_i(\\bmod 2), i=1,2, \\cdots$, $n \\cdots$ (2). \n由于 $y_j+y_{j+1}=y_j+y_j+x_j \\equiv x_j(\\bmod 2)$, 所以由(2)定义的对应恰好是(1)的对应的逆对应.\n在由(1)定义的对应中连续 4 项 0011 或 1100 产生连续 3 项 010, 反之由(2)定义的对应,连续 3 项 010 产生连续 4 项 0011 或 1100 . 于是 $a_n$ 个所述长为 $n$ 无连续 3 项成 010 的二元序列, 每个恰好与 2 个无连续 4 项成 0011 或 1100 的所述长为 $n+1$ 的二元序列对应, 从而 $b_{n+1}=2 a_n$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 设 $X 、 Y 、 Z$ 分别是菱形 $A B C D$ 边 $A B 、 B C 、 C D$ 上的点, 且使得 $X Y / / A Z$. 证明: $X Z 、 A Y 、 B D$ 三线共点.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c1a5-1.png>),  注意到 $\\angle B Y X=\\angle Z A D, \\angle X B Y=\\angle Z D A$, 所以, $\\triangle X B Y \\backsim \\triangle Z D A$. 故 $\\frac{B X}{B Y}=\\frac{D Z}{D A}$.\n设 $K 、 L$ 分别是对角线 $B D$ 与线段 $X Y 、 A Z$ 的交点.\n因为 $B D$ 是 $\\angle A B C$ 和 $\\angle A D Z$ 的平分线, 则 $\\frac{B X}{B Y}=\\frac{X K}{K Y}, \\frac{D Z}{D A}=\\frac{Z L}{L A}$. 从而, $\\frac{X K}{K Y}=\\frac{Z L}{L A}$ 或 $\\frac{X K}{Z L}= \\frac{K Y}{L A} \\cdots$ (1). 设线段 $A Y$ 与对角线 $B D$ 交于 $M_1$, 易知 $\\triangle K Y M_1 \\backsim \\triangle L A M_1$. 则 $\\frac{K Y}{L A}= \\frac{K M_1}{L M_1} \\cdots$ (2). 如图(<FilePath:./images/volume7/figures/fig-c1a5-2.png>),  设线段 $X Z$ 与对角线 $B D$ 交于 $M_2$, 易知 $\\triangle K X M_2 \\backsim \\triangle L Z M_2$, 则 $\\frac{X K}{Z L}=\\frac{K M_2}{L M_2} \\cdots$ (3). 由式(1)、(2)、(3)得 $\\frac{K M_1}{L M_1}=\\frac{K M_2}{L M_2}$, 即 $M_1=M_2$. 因此, $X Z 、 A Y 、 B D$ 三线共点.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1a5-1.png",
+        "./images/volume7/figures/fig-c1a5-2.png"
+    ]
+}

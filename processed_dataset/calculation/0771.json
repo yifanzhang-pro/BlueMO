@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题25 求函数 $f(x)=\\arcsin \\left(x-x^2\\right)$ 的定义域和值域与单调递增区间.",
+    "solution": "定义域为 $\\left[\\frac{1-\\sqrt{5}}{2}, \\frac{1+\\sqrt{5}}{2}\\right]$, 值域为 $\\left[-\\frac{\\pi}{2}, \\arcsin \\frac{1}{4}\\right]$, 单调增区间为 $\\left[\\frac{1-\\sqrt{5}}{2}, \\frac{1}{2}\\right]$.",
+    "remark": "",
+    "figures": []
+}

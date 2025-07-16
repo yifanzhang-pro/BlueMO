@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 设 $a_1 \\geqslant a_2 \\geqslant \\cdots \\geqslant a_n \\geqslant a_{n+1}=0$ 是实数序列, 求证:\n$$\n\\sqrt{\\sum_{k=1}^n a_k} \\leqslant \\sum_{k=1}^n \\sqrt{k}\\left(\\sqrt{a_k}-\\sqrt{a_{k+1}}\\right) .\n$$",
+    "solution": "证法 3: 令 $x_i=\\sqrt{a_i}-\\sqrt{a_{i+1}}, i=1,2, \\cdots, n$.\n则 $a_i=\\left(x_i+x_{i+1}+\\cdots+x_n\\right)^2, 1 \\leqslant i \\leqslant n$.\n故 $\\sum_{k=1}^n a_k=\\sum_{k=1}^n k x_k^2+2 \\sum_{1 \\leqslant k<l \\leqslant n} k x_k x_l \\leqslant \\sum_{k=1}^n k x_k^2+2 \\sum_{k<l} \\sqrt{k l} x_k x_l= \\left(\\sum_{k=1}^n \\sqrt{k} x_k\\right)^2$, 因此结论成立.",
+    "remark": "",
+    "figures": []
+}

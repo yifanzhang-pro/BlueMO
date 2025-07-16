@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例9. 设 $a_i>0(i=1,2, \\cdots, n)$, 求证:\n$$\n\\sum_{k=1}^n k a_k \\leqslant \\frac{n(n-1)}{2}+\\sum_{k=1}^n a_k^k .\n$$",
+    "solution": "证明:因为 $\\frac{n(n-1)}{2}=\\sum_{k=1}^n(k-1)$, 所以由平均值不等式, 得\n$$\n\\frac{n(n-1)}{2}+\\sum_{k=1}^n a_k^k\n$$\n$$\n\\begin{aligned}\n& =\\sum_{k=1}^n\\left[(k-1)+a_k^k\\right] \\\\\n& =\\sum_{k=1}^n\\left(1+1+\\cdots+1+a_k^k\\right) \\\\\n& \\geqslant \\sum_{k=1}^n k \\sqrt[k]{1^{k-1} \\cdot a_k^k}=\\sum_{k=1}^n k a_k,\n\\end{aligned}\n$$\n故命题成立.",
+    "remark": "注:应用平均值不等式时, 通常要将乘幂看作连乘积, 有时还要巧妙地添上数 1 .",
+    "figures": []
+}

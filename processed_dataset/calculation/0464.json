@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 对有限集合 $S, n(S)$ 表示 $S$ 的子集的个数.\n设 $A 、 B 、 C$ 为三个集合, $n(A)+ n(B)+n(C)=n(A \\cup B \\cup C),|A|=|B|=100$. 求 $|A \\cap B \\cap C|$ 的最小值.",
+    "solution": "已知: $2^{100}+2^{100}+2^{|C|}=2^{|A \\cup B \\cup C|}$, 即 $1+2^{|C|-101}=2^{|A \\cup B \\cup C|-101}$, 所以 $|C|=101,|A \\cup B \\cup C|=102$.\n由容斥原理: $|A \\cup B \\cup C|=|A|+|B|+|C|-|A \\cap B|-|B \\cap C|- |C \\cap A|+|A \\cap B \\cap C|$, 所以 $|A \\cap B \\cap C|^{\\circ}=102-(100+100+101)+|A \\cap B|+|B \\cap C|+|C \\cap A|=|A \\cap B|+|B \\cap C|+|C \\cap A|-199$, 但 $|A \\cup B \\cup C|=102 \\geqslant|A \\cup B|=|A|+|B|-|A \\cap B|=200-\\mid A \\cap B \\mid$, 所以,\n$$\n|A \\cap B| \\geqslant 200-102=98,\n$$\n同理: $|A \\cap C| \\geqslant 99,|B \\cap C| \\geqslant 99$, 所以 $|A \\cap B \\cap C| \\geqslant 98+99+ 99-199=97$.\n当 $A=\\{1,2,3, \\cdots, 100\\}, B=\\{3,4,5, \\cdots, 102\\}, C=\\{1,2,3,4$ , $5,6, \\cdots, 101,102\\}$ 时,\n$$\n|A \\cap B \\cap C|=|\\{4,5, \\cdots, 100\\}|=97 .\n$$\n综上, $|A \\cap B \\cap C|$ 的最小值为 97 .",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题30 证明存在唯一的一个 $f: \\mathbf{R}^{+} \\rightarrow \\mathbf{R}^{+}$, 使得对任意 $x \\in \\mathbf{R}^{+}$, 都有\n$$\nf(f(x))=6 x-f(x) .\n$$",
+    "solution": "构造正数列 $\\left\\{a_n\\right\\}$ 如下: $a_1=6, a_{n+1}=\\frac{6}{1+a_{n-1}} \\cdots$ (1). 用数学归纳法容易证明 (证明留给读者) : $\\left\\{a_{2 n-1}\\right\\}$ 递减, $\\left\\{a_{2 n}\\right\\}$ 递增, 并且 $a_{2 n-1}>2>a_{2 n}$. 因此 $\\left\\{a_{2 n-1}\\right\\}$ 和 $\\left\\{a_{2 n}\\right\\}$ 均有极限, 分别设为 $\\alpha 、 \\beta$. 由(1)式知 $\\alpha=\\frac{6}{1+\\beta}, \\beta=\\frac{6}{1+\\alpha}$. 解得 $\\alpha=\\beta=2$. 对每个正实数 $x$, 显然有 $f(x)<6 x=a_1 x$. 若对每个 $x \\in \\mathbf{R}^{+}$, 有 $f(x)<a_{n-1} x$, 那么 $6 x-f(x)=f(f(x))<a_{n-1} f(x)$. 即 $f(x)>\\frac{6 x}{1+a_{n-1}}=a_n x$. 同样, 若对每个 $x \\in \\mathbf{R}^{+}$, 有 $f(x)>a_n x$, 则必有 $f(x)<a_{n+1} x$. 于是不难得到对每个 $n \\in \\mathbf{N}_{+}$, 有 $a_{2 n} x<f(x)<a_{2 n-1} x$. 令 $n \\rightarrow+\\infty$, 得 $\\lim _{n \\rightarrow+\\infty} a_{2 n}= \\lim _{n \\rightarrow+\\infty} a_{2 n-1}=2$. 所以 $f(x)=2 x$. 容易验证 $f(x)=2 x$ 满足题设条件.",
+    "remark": "",
+    "figures": []
+}

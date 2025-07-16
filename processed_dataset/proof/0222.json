@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例7. 证明: 不定方程\n$$\n8^x+15^y=17^z . \\label{eq1}\n$$\n的全部正整数解是 $x=y=z=2$.",
+    "solution": "证明:我们先用同余证明, $y$ 和 $z$ 都是偶数.\n方程式\\ref{eq1}模 4 , 得到\n$$\n(-1)^y \\equiv 1(\\bmod 4),\n$$\n从而 $y$ 是偶数.\n将方程(1)模 16 ,得到\n$$\n8^x+(-1)^y \\equiv 1(\\bmod 16),\n$$\n即 $8^x \\equiv 0(\\bmod 16)$, 故 $x \\geqslant 2$.\n注意 $17^2 \\equiv 1,15^2 \\equiv 1(\\bmod 32)$, 故若 $z$ 是奇数, 则由 $2 \\mid y$ 及 $x \\geqslant 2$, 可从式\\ref{eq1}得出\n$$\n1 \\equiv 17(\\bmod 32),\n$$\n这不可能.\n所以 $z$ 必为一个偶数.\n设 $y=2 y_1, z=2 z_1$, 则方程(1)可分解为\n$$\n\\left(17^{z_1}-15^{y_1}\\right)\\left(17^{z_1}+15^{y_1}\\right)=8^x . \\label{eq2}\n$$\n易知式\\ref{eq2}中左边两个因数的最大公约数为 2 , 而式\\ref{eq2}的右边是 2 的幂, 故必须有\n$$\n\\left\\{\\begin{array}{l}\n17^{x_1}-15^{y_1}=2 . \\label{eq3}\\\\\n17^{x_1}+15^{y_1}=2^{3 x-1} . \\label{eq4}\n\\end{array}\\right.\n$$\n将式\\ref{eq3}模 32 可知, $z_1$ 与 $y_1$ 必须都是奇数 (否则, 式\\ref{eq3}的左边 $\\equiv 0,-14,16(\\bmod 32)$). 将式\\ref{eq3}、\\ref{eq4}相加, 得\n$$\n17^{z_1}=1+2^{3 x-2} . \\label{eq5}\n$$\n若 $x \\geqslant 3$, 则 式\\ref{eq5} 的右边 $\\equiv 1(\\bmod 32)$; 而因 $z_1$ 为奇数, 故左边 $\\equiv 17(\\bmod 32)$, 这不可能, 故必有 $x=2$. 由此及 式\\ref{eq5} 得 $z_1=1$, 即 $z=2$, 进而易知 $y_1=1$, 即 $y=2$. 因此 $x=y=z=2$.\n这一解法, 是同余结合分解方法的典型的例子.\n用同余导出 $y 、 z$ 均是偶数,正是为后面的分解方程作准备.",
+    "remark": "",
+    "figures": []
+}

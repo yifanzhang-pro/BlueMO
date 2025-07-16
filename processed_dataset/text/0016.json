@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter9.tex",
+    "text": "容不原理本节我们进一步讨论如何计算有限集的阶的问题.\n设 $M$ 为非空有限集, 非空集合\n$$\nA_1, A_2, \\cdots, A_n\n$$\n是 $M$ 的一个子集族, 且满足\n$$\nA_1 \\cup A_2 \\cup \\cdots \\cup A_n=\\bigcup_{i=1}^n A_i=M,\n$$\n则称子集族 $\\mathscr{A}: A_1, A_2, \\cdots, A_n$ 是集合 $M$ 的一个覆盖.\n我们的问题是, 如何通过计算覆盖 $\\mathscr{A}: A_1, A_2, \\cdots, A_n$ 中每个子集的阶来计算有限集 $M$ 的阶.\n一、加法原理我们先来看一个简单的情形.\n如果子集族 $\\mathscr{A}$ 既满足 (i), 又满足\n$$\nA_i \\cap A_j=\\varnothing, 1 \\leqslant i \\neq j \\leqslant n,\n$$\n那么覆盖 $A_1, A_2, \\cdots, A_n$ 就是有限集 $M$ 的一个 $n$ 一分划.\n对于有限集 $M$ 的 $n$ 一分划, 我们有下面非常有用的结论.\n加法原理设 $M$ 为非空有限集, $A_1, A_2, \\cdots, A_n$ 是 $M$ 的一个由非空子集构成的 $n$-分划,那么\n$$\n|M|=\\left|A_1\\right|+\\left|A_2\\right|+\\cdots+\\left|A_n\\right| .\n$$\n加法原理是组合数学中一个基本的计数原理.\n在实际运用中可根据问题的不同背景赋予有限集 $M$ 的元素不同的含义.",
+    "figures": []
+}

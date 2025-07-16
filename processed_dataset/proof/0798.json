@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 是否存在三边长都为整数的三角形, 满足以下条件: 最短边长为 2007 , 且最大的角等于最小角的两倍?",
+    "solution": "不存在这样的三角形,证明如下:\n不妨设 $\\angle A \\leqslant \\angle B \\leqslant \\angle C$, 则 $C=2 A$ 且 $a=2007$. 作 $\\angle A C B$ 的内角平分线 $C D$, 则 $\\angle B C D=\\angle A$, 从而 $\\triangle C D B \\backsim \\triangle A C B$. 所以,\n$$\n\\frac{C B}{A B}=\\frac{B D}{B C}=\\frac{C D}{A C}=\\frac{B D+C D}{B C+A C}=\\frac{B D+A D}{B C+A C}=\\frac{A B}{B C+A C} .\n$$\n即 $c^2=a(a+b)=2007(2007+b)$, 这里 $2007 \\leqslant b \\leqslant c<2007+b$.\n由 $a, b, c$ 都是正整数知 $2007 \\mid c^2$, 故 $3|c, 223| c$, 可设 $c=669 m$, 则 $223 m^2=2007+b$, 即 $b=223 m^2-2007$, 结合 $2007 \\leqslant b$, 可得 $m \\geqslant 5$.\n另一方面, 由于 $c \\geqslant b$, 得 $669 m \\geqslant 223 m^2-2007$, 这要求 $m<5$,矛盾! 因此, 满足条件的三角形不存在.",
+    "remark": "",
+    "figures": []
+}

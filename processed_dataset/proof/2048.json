@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $r_a 、 r_b 、 r_c$ 分别为 $\\triangle A B C$ 的三边 $a 、 b 、 c$ 相应的旁切圆半径, 求证:\n$$\n\\frac{a^2}{r_b^2+r_c^2}+\\frac{b^2}{r_c^2+r_a^2}+\\frac{c^2}{r_a^2+r_b^2} \\geqslant 2\n$$",
+    "solution": "证明:作正数代换\n$$\n\\begin{gathered}\nx=-a+b+c, \\\\\ny=a-b+c, \\\\\nz=a+b-c,\n\\end{gathered}\n$$\n则 $x, y, z>0$. 注意到\n$$\n\\begin{gathered}\nS_{\\triangle A B C}=\\frac{1}{4} \\sqrt{(x+y+z) x y z}, \\\\\nr_a=\\frac{2 S_{\\triangle A B C}}{b+c-a}=\\frac{1}{2 x} \\sqrt{(x+y+z) x y z},\n\\end{gathered}\n$$\n等等, 通过计算, 原不等式等价变为下面的代数不等式\n$$\n\\frac{y^2 z^2(y+z)^2}{y^2+z^2}+\\frac{z^2 x^2(z+x)^2}{z^2+x^2}+\\frac{x^2 y^2(x+y)^2}{x^2+y^2} \\geqslant 2 x y z(x+y+z) . \\label{eq1}\n$$\n为证式\\ref{eq1}, 只需证明下面有趣的局部不等式\n$$\n\\frac{y^2 z^2(y+z)^2}{y^2+z^2} \\geqslant \\frac{2 x y z(x+y+z) y^2 z^2}{x^2 y^2+y^2 z^2+z^2 x^2} . \\label{eq2}\n$$\n事实上, 如果\\ref{eq2}式成立, 将这样的三个不等式相加便得所证结果.\n下证式\\ref{eq2}.\n$$\n\\begin{aligned}\n式\\ref{eq2} & \\Leftrightarrow(y+z)^2\\left(x^2 y^2+y^2 z^2+z^2 x^2\\right) \\geqslant 2 x y z(x+y+z)\\left(y^2+z^2\\right), \\\\\n& \\Leftrightarrow\\left(y^2+z^2\\right) x^2(y+z)^2+y^2 z^2(y+z)^2 \\geqslant 2 x y z(x+y+z)\\left(y^2+z^2\\right), \\\\\n& \\Leftrightarrow\\left(y^2+z^2\\right)^2 x^2+y^2 z^2(y+z)^2 \\geqslant 2 x y z(y+z)\\left(y^2+z^2\\right), \\\\\n& \\Leftrightarrow\\left[\\left(y^2+z^2\\right) x-y z(y+z)\\right]^2 \\geqslant 0,\n\\end{aligned}\n$$\n得证.",
+    "remark": "",
+    "figures": []
+}

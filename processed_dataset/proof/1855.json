@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题13. 凸四边形 $A B C D$ 有内切圆, 该内切圆切边 $A B 、 B C 、 C D 、 D A$ 的切点分别为 $A_1 、 B_1 、 C_1 、 D_1$, 连结 $A_1 B_1 、 B_1 C_1 、 C_1 D_1 、 D_1 A_1$, 点 $E 、 F 、 G 、 H$ 分别为 $A_1 B_1 、 B_1 C_1 、 C_1 D_1 、 D_1 A_1$ 的中点.\n证明: 四边形 $E F G H$ 为矩形的充分必要条件是 $A 、 B 、 C 、 D$ 四点共圆.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c4a13.png>), 设 $I$ 为四边形 $A B C D$ 的内切圆圆心.\n由于 $H$ 为 $D_1 A_1$ 的中点.\n而 $A A_1$ 与 $A D_1$ 为过点 $A$ 所作的 $\\odot I$ 的切线.\n故 $H$ 在 $A I$ 上, 且 $A I \\perp A_1 D_1$. 又 $I D_1 \\perp A D_1$. 故由射影定理可知 $I H \\cdot I A=I D_1^2=r^2$. 其中 $r$ 为内切圆半径.\n同理可知.\n$E$ 在 $B I$ 上,且 $I E \\cdot I B= r^2$. 于是, $I E \\cdot I B=I H \\cdot I A$. 故 $A 、 H 、 E 、 B$ 四点共圆.\n所以, $\\angle E H I=\\angle A B E$. 类似地, 可证 $\\angle I H G= \\angle A D G ; \\angle I F E=\\angle C B E, \\angle I F G=\\angle C D G$. 将这四个式子相加得 $\\angle E H G+\\angle E F G=\\angle A B C+\\angle A D C$. 所以, $A 、 B 、 C 、 D$ 四点共圆的充要条件是 $E 、 F 、 G 、 H$ 四点共圆.\n而熟知一个四边形的各边中点围成的四边形是平行四边形.\n平行四边形为矩形的充要条件是该四边形的四个顶点共圆.\n因此, $E F G H$ 为矩形的充要条件是 $A 、 B$ 、 $C 、 D$ 四点共圆.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4a13.png"
+    ]
+}

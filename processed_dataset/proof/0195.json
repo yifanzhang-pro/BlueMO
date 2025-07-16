@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例5. 用数码 $1 、 2 、 3 、 4 、 5 、 6 、 7$ 作七位数, 每个数码恰用一次.\n证明: 这些七位数中没有一个是另一个的倍数.",
+    "solution": "证明:假设有这样两个七位数 $a, b(a \\neq b)$ 使得\n$$\na=b c, \\label{eq1}\n$$\n其中 $c$ 为大于 1 的整数.\n由于 $a 、 b$ 的数码之和均是 $1+2+3+4+5+6+ 7 \\equiv 1(\\bmod 9)$, 故 $a \\equiv b \\equiv 1(\\bmod 9)$ . 现在将式\\ref{eq1}模 9 , 得出 $c \\equiv 1(\\bmod 9)$. 但 $c>1$, 故 $c \\geqslant 10$, 这样, $a \\geqslant 10 b>10^7$, 与 $a$ 是七位数矛盾.",
+    "remark": "",
+    "figures": []
+}

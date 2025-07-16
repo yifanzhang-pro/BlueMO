@@ -1,0 +1,43 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $P 、 Q$ 是正四面体 $A B C D$ 内的二点, 求证: $\angle P A Q<60^{\circ}$.
+%%<SOLUTION>%%
+提示: 设 $\angle P A Q$ 所在平面与正四面体各面的交线为 $A E 、 A F 、 E F$. 只要证明 $\angle E A F \leqslant 60^{\circ}$ 便可, 这可通过证明在 $\triangle A E F$ 中 $E F$ 是最小边来实现.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 半径为 1 的球面上的两点用球内长度小于 2 的曲线段连接起来.
+证明这条曲线段一定落在这个球的某个半球内.
+%%<SOLUTION>%%
+提示: 先考虑平面上的类似问题, 探究解题方法.
+只要过球心 $O$ 作垂直于 $\angle A O B$ 的平分线 $O C$ 的平面 $\pi$, 再利用点的对称性设法证明 $\overparen{A B}$ 上不可能有平面 $\pi$ 上的点,即不穿过 $\pi$ 便可.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $I$ 是四面体 $A_1 A_2 A_3 A_4$ 的内心, 并记 $\triangle A_i I A_j$ 的面积为 $I_{i j}, A_i$ 所对的面三角形的面积为 $S_i$, 试证
+$$
+\sum_{1 \leqslant i<j \leqslant 4} I_{i j} \leqslant \frac{\sqrt{6}}{4} \sum_{i=1}^4 S_i
+$$
+%%<SOLUTION>%%
+过 $I$ 作 $I M \perp$ 面 $A_2 A_3 A_4$ 于 $M$, 作 $I N \perp A_3 A_4$ 于 $N$. 若记 $A_i 、 A_j$ 的对面的夹角为 $\theta_{i j}(1 \leqslant i<j \leqslant 4)$, 则有 $\angle M N I=\frac{\theta_{12}}{2}$. 在直角 $\triangle I M N$ 中有 $I N= \frac{r}{\sin \frac{\theta_{12}}{2}}$, 则 $I_{34}=\frac{1}{2} \cdot A_3 A_4 \cdot \frac{r}{\sin \frac{\theta_{12}}{2}} \cdots$ (1). 根据四面体熟知的体积公式 $V=\frac{2}{3} S_1 S_2$. $\frac{\sin \theta_{12}}{A_3 A_4} \cdots$ (2), 由 (1)、(2) 消去 $A_3 A_4$ 得 $I_{34} \cdot V=\frac{2}{3} S_1 S_2 \cos \frac{\theta_{12}}{2} \cdot r$. 注意到 $V= \frac{1}{3}\left(\sum_{i=1}^4 S_i\right) r$, 可得 $I_{34}=\frac{2 S_1 S_2}{\sum_{i=1}^4 S_i} \cos \frac{\theta_{12}}{2} \cdots$ (3). 对 (3) 两边求和, 并利用Cauchy不等式, 得 $\sum_{1 \leqslant i<j \leqslant 4} I_{i j}=\frac{2}{\sum_{i=1}^4 S_i} \cdot \sum_{1 \leqslant i<j \leqslant 4}\left(\sqrt{S_i S_j} \cdot \sqrt{S_i S_j} \cdot \cos \frac{\theta_{i j}}{2}\right) \leqslant \frac{2}{\sum_{i=1}^4 S_i}\left(\sum_{1 \leqslant i<j \leqslant 4} S_i S_j\right)^{\frac{1}{2}} \left(\sum_{1 \leqslant i<j \leqslant 4} S_i S_j \cos ^2 \frac{\theta_{i j}}{2}\right)^{\frac{1}{2}} \cdots$ (4). 再由四面体的射影公式有 $S_1=S_2 \cos \theta_{12}+ S_3 \cos \theta_{13}+S_4 \cos \theta_{14}$, 由此得 $\frac{1}{2} \sum_{i=1}^4 S_i=S_2 \cos ^2 \frac{\theta_{12}}{2}+S_3 \cos ^2 \frac{\theta_{13}}{2}+ S_4 \cos ^2 \frac{\theta_{14}}{2} \cdots$ (5), 对 (5) 两边同乘以 $S_1$ 后, 再求和便得 $\frac{1}{4}\left(\sum_{i=1}^4 S_i\right)^2=\sum_{1 \leqslant i<j \leqslant 4} S_i S_j \cdot \cos ^2 \frac{\theta_{i j}}{2} \cdots$ (6), 又由对称平均不等式 $\frac{1}{4}\left(\sum_{i=1}^4 S_i\right) \geqslant\left(\frac{1}{6} \sum_{1 \leqslant i<j \leqslant 4} S_i S_j\right)^{\frac{1}{2}} \cdots$ (7). 现对 (4) 应用 (6)、(7) 即得所证不等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $R 、 r$ 分别是一个四面体的外接球半径和内切球半径, $O 、 I$ 分别是这两个球的中心.
+求证: $R^2 \geqslant 9 r^2+O I^2$.
+%%<SOLUTION>%%
+设四面体 $A_1 A_2 A_3 A_4$ 中, 面 $A_2 A_3 A_4$ 的面积为 $F_1$, 等等, $P$ 是这个四面体中的任意给定内点.
+由 Cauchy 不等式有 $\left(\sum F_i\right)\left(\sum F_i \cdot P A_i^2\right) \geqslant\left(\sum F_i\right.$. $\left.P A_i\right)^2 \cdots$ (1). 现用 $\vec{P} 、 \overrightarrow{A_i}$ 和 $\vec{I}$ 分别表示从 $O$ 到点 $P 、 A_i$ 和 $I$ 的向量, 则 $\vec{I}= \frac{\sum F_i \vec{A}_i}{\sum F_i}$, 从而可得 $\sum F_i \cdot P A_i^2=\sum F_i\left(\vec{P}-\vec{A}_i\right)^2=\sum F_i\left(R^2+\vec{P}^2-\right. \left.2 \vec{P} \cdot \vec{A}_i\right)=F\left(R^2+O P^2-2 \vec{P} \cdot \vec{I}\right)$, 这里 $F=\sum F_i$. 因为 $2 \vec{P} \cdot \vec{I}= \vec{P}^2+\vec{I}^2-(\vec{P}-\vec{I})^2$, 所以 $\left(\sum F_i\right)\left(\sum F_i \cdot P A_i^2\right)=F^2\left(R^2+P I^2-O I^2\right)$, 因此由 (1) 得 $\sum F_i \cdot P A_i \leqslant F\left(R^2+P I^2-O I^2\right)^{\frac{1}{2}} \cdots$ (2). 现设 $h_i$ 和 $r_i$ 分别表示点 $A_i$ 和 $P$ 到面 $F_i$ 的距离, 则 $P A_i \geqslant h_i-r_i$, 因此 $\sum F_i \cdot P A_i \geqslant \sum F_i\left(h_i-r_i\right)= \sum F_i h_i-\sum F_i r_i=4 \times 3 V-3 V=9 V$. 结合 (2) 和 (3) 并利用 $3 V=r F$, 可得 $R^2 \geqslant 9^2 r^2+O I^2-P I^2$. 再选择 $P=I$, 立得所证不等式.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题16. 已知圆 $O$ 、圆 $I$ 分别是 $\\triangle A B C$ 的外接圆和内切圆.\n证明: 过圆 $O$ 上的任意一点 $D$, 都可以作一个三角形 $D E F$, 使得圆 $O$ 、圆 $I$ 分别是 $\\triangle D E F$ 的外接圆和内切圆.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c4a16.png>), 设 $O I=d, R, r$ 分别是 $\\triangle A B C$ 的外接圆和内切圆半径, 延长 $A I$ 交圆 $O$ 于 $K$, 则 $K I=K B=2 R \\sin \\frac{A}{2}, A I=\\frac{r}{\\sin \\frac{A}{2}}$, 延长 $O I$ 交 $\\odot O$ 于 $M 、 N$; 则 $(R+d)(R-d)=I M \\times I N= A I \\times K I=2 R r$, 即 $R^2-d^2=2 R r$. (注: 这实际上是所谓欧拉公式) 过 $D$ 分别作 $\\odot I$ 的切线 $D E, D F, E, F$ 在 $\\odot O$ 上, 连结 $E F$, 则 $D I$ 平分 $\\angle E D F$, 只要证 $E F$ 也与 $\\odot I$ 相切.\n设 $D I \\cap \\odot O=P$, 则 $P$ 是 $\\overparen{E F}$ 的中点, 连 $P E$, 则 $P E=2 R \\sin \\frac{D}{2}$, $D I=\\frac{r}{\\sin \\frac{D}{2}}, I D \\cdot I P=I M \\cdot I N=(R+d)(R-d)=R^2-d^2$, 所以 $P I= \\frac{R^2-d^2}{D I}=\\frac{R^2-d^2}{r} \\cdot \\sin \\frac{D}{2}=2 R \\sin \\frac{D}{2}=P E$, 由于 $I$ 在角 $D$ 的平分线上, 因此点 $I$ 是 $\\triangle D E F$ 的内心, (这是由于, $\\angle P E I=\\angle P I E=\\frac{1}{2}\\left(180^{\\circ}-\\angle P\\right)= \\frac{1}{2}\\left(180^{\\circ}-\\angle F\\right)=\\frac{D+E}{2}$, 而 $\\angle P E F=\\frac{D}{2}$, 所以 $\\angle F E I=\\frac{E}{2}$, 点 $I$ 是 $\\triangle D E F$ 的内心). 即弦 $E F$ 与 $\\odot I$ 相切.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4a16.png"
+    ]
+}

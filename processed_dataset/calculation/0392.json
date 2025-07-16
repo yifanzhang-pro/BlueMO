@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter18.tex",
+    "problem_type": "calculation",
+    "problem": "例7. 求所有的正整数 $n$, 使得存在非零整数 $x_1, x_2, \\cdots, x_n, y$, 满足\n$$\n\\left\\{\\begin{array}{l}\nx_1+\\cdots+x_n=0, \\\\\nx_1^2+\\cdots+x_n^2=n y^2 .\n\\end{array}\\right.\n$$",
+    "solution": "解:然 $n \\neq 1$.\n当 $n=2 k\\left(k \\in \\mathbf{N}^*\\right)$ 时, 令 $x_{2 i-1}=1, x_{2 i}=-1, i=1,2, \\cdots, k, y=1$, 则满足条件.\n当 $n=3+2 k\\left(k \\in \\mathbf{N}^*\\right)$ 时, 令 $y=2, x_1=4, x_2=x_3:=x_4=x_5=-1$,\n$$\nx_{2 i}=2, x_{2 i+1}=-2, i=3,4, \\cdots, k+1,\n$$\n则满足条件.\n当 $n=3$ 时,若存在非零整数 $x_1, x_2, x_3$, 使得\n$$\n\\left\\{\\begin{array}{l}\nx_1+x_2+x_3=0, \\\\\nx_1^2+x_2^2+x_3^2=3 y^2,\n\\end{array}\\right.\n$$\n则消去 $x_3$ 得\n$$\n2\\left(x_1^2+x_2^2+x_1 x_2\\right)=3 y^2,\n$$\n不妨设 $\\left(x_1, x_2\\right)=1$, 则 $x_1, x_2$ 都是奇数或者一奇一偶, 从而, $x_1^2+x_2^2+x_1 x_2$ 是奇数, 另一方面, $2 \\mid y$, 故 $3 y^2 \\equiv 0(\\bmod 4)$, 而 $2\\left(x_1^2+x_2^2+x_1 x_2\\right) \\equiv 2(\\bmod 4)$, 矛盾.\n综上所述,满足条件的正整数 $n$ 是除了 1 和 3 外的一切正整数.",
+    "remark": "注:本题中 $n=1$ 只需平凡考虑, 对 $n=3$ 的排除也不算困难.\n关键在于如何证明其余的正整数 $n$ 满足题意.\n此时需要设法将解逐一构造出来.\n注意到只要 $\\left|x_1\\right|=\\left|x_2\\right|=\\cdots=\\left|x_n\\right|=y$, 则 $x_1^2+\\cdots+x_n^2=n y^2$ 成立, 其中若 $n$ 为偶数, 那么只要各个 $x_i$ 中一半取正数,一半取负数, 就构造成功了.\n而在 $n \\geqslant 5$ 且为奇数的情形下, 我们进行小范围的试探,仍能给出一般的构造方法.\n本题中所运用的这种分类构造策略,既简洁完整地做到了对所有情形的验证, 又避免了统一构造欠缺灵活的一面.",
+    "figures": []
+}

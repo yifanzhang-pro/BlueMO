@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例3 设 $f(x)=3 x+2$, 证明: 存在 $m \\in \\mathbf{N}_{+}$, 使 $f^{(100)}(m)$ 能被 2005 整除.",
+    "solution": "证由 $f(x)=3 x+2$, 知\n$$\nf^{(100)}(x)=3^{100} x+\\left(3^{99}+3^{98}+\\cdots+1\\right) \\times 2,\n$$\n故\n$$\nf^{(100)}(m)=3^{100} \\cdot m+2\\left(3^{99}+3^{98}+\\cdots+1\\right) .\n$$\n由于 $(3,2005)=1$, 故 $\\left(3^{100}, 2005\\right)=1$, 根据 Bezout 定理, 存在 $u 、 v \\in$\n081\n$\\mathbf{Z}$, 使\n$$\n2005 u-3^{100} v=1 .\n$$\n记 $n=2\\left(3^{99}+3^{98}+\\cdots+3+1\\right)$, 那么由 $2005 \\mid\\left(3^{100} v+1\\right)$,\n知\n$$\n2005 \\mid n\\left(3^{100} v+1\\right) \\text {. }\n$$\n此时, 取 $m=n v$, 那么\n$$\n\\begin{gathered}\n2005 \\mid\\left(3^{100} m+n\\right), \\\\\n2005 \\mid f^{(100)}(m)\n\\end{gathered}\n$$\n从而命题得证.\n说明 Bezout 定理是: 若 $x 、 y$ 是两个互质的正整数, 则存在整数 $u 、 v$, 使得 $u x-v y=1$.",
+    "remark": "",
+    "figures": []
+}

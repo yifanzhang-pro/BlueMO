@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例2 若函数 $f(x)=-\\frac{1}{2} x^2+\\frac{13}{2}$ 在区间 $[a, b]$ 上的最小值为 $2 a$, 最大值为 $2 b$, 求 $[a, b]$.",
+    "solution": "解:分如下三种情形来讨论区间 $[a, b]$.\n(1) 当 $a<b \\leqslant 0$ 时, $f(x)$ 在区间 $[a, b]$ 上单调递增, 所以 $f(a)=2 a$, $f(b)=2 b$, 即\n$$\n\\left\\{\\begin{array}{l}\n-\\frac{1}{2} a^2+\\frac{13}{2}=2 a, \\\\\n-\\frac{1}{2} b^2+\\frac{13}{2}=2 b .\n\\end{array}\\right.\n$$\n所以 $a 、 b$ 是方程 $-\\frac{1}{2} x^2-2 x+\\frac{13}{2}=0$ 的两个不同实根, 而方程 $-\\frac{1}{2} x^2-2 x+\\frac{13}{2}=0$ 的两根异号, 不可能.\n(2) 当 $a<0<b$ 时, $f(x)$ 在 $[a, 0]$ 上递增, 在 $[0, b]$ 上递减.\n故 $f(0)=2 b$, 且 $\\min \\{f(a), f(b)\\}=2 a$.\n由 $f(0)=2 b$, 得 $b=\\frac{13}{4}$. 于是\n$$\nf(b)=-\\frac{1}{2}\\left(\\frac{13}{4}\\right)^2+\\frac{13}{2}=\\frac{39}{32}>0 .\n$$\n而 $a<0$, 故 $f(b) \\neq 2 a$, 所以 $f(a)=2 a$, 即\n$$\n-\\frac{1}{2} a^2+\\frac{13}{2}=2 a \\text {. }\n$$\n解方程, 得 $a=-2-\\sqrt{17}$. 此时 $[a, b]=\\left[-2-\\sqrt{17}, \\frac{13}{4}\\right]$.\n(3). 当 $0 \\leqslant a<b$ 时, $f(x)$ 在 $[a, b]$ 上递减, 于是 $f(a)=2 b, f(b)=2 a$, 即\n$$\n\\left\\{\\begin{array}{l}\n-\\frac{1}{2} a^2+\\frac{13}{2}=2 b, \\\\\n-\\frac{1}{2} b^2+\\frac{13}{2}=2 a .\n\\end{array}\\right.\n$$\n解方程组, 得 $a=1, b=3$, 此时 $[a, b]==[1,3]$.\n综上所述,所求的区间 $[a, b]$ 为 $[1,3]$ 或 $\\left[-2-\\sqrt{17}, \\frac{13}{4}\\right]$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题8 求满足 $w !=x !+y !+z !$ 的所有正整数组 $w, x, y, z$.",
+    "solution": "不妨设 $w>x \\geqslant y \\geqslant z$. 若 $y>z$, 则以 $z$ ! 除等式两边得 $w(w-1) \\cdots (z+1)=x \\cdots(z+1)+y \\cdots(z+1)+1$, 其中 $z+1>1$ 能整除上式左边, 而不能整除其右边, 矛盾.\n若 $x>y=z$, 则可得 $w(w-1) \\cdots(z+1)=x \\cdots(z+ 1)+2$, 应有 $(z+1) \\mid 2$, 从而 $z+1=2$, 上式又可约简为 $w(w-1) \\cdots 3=x \\cdots 3+1$, 显然也不成立.\n于是, 必有 $x=y=z$, 此时原式为 $w !=3 \\cdot x !$. 所以 $x=y=z=2, w=3$.",
+    "remark": "",
+    "figures": []
+}

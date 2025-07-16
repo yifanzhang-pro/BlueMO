@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise13.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设非空集合 $S \\subseteq \\mathbf{N}^*$ 满足: 若 $a, b \\in S$ ( $a, b$ 可以相同), 则 $a b+3 \\in S$. 证明: $S$ 中含有无穷多个 7 的倍数.",
+    "solution": "显然 $S$ 中不存在最大元素, 故 $S$ 是无限集.\n记 $A_k=\\left\\{x \\in \\mathbf{N}^* \\mid x \\equiv k(\\bmod 7)\\right\\}(k=0,1, \\cdots, 6)$, 并将命题 \" $S \\cap A_k$ 为无限集\"记为 $P_k$. 显然 $P_0$. 即为题目需证之结论.\n先证明一个引理: 若 $P_k$ 成立, 则 $P_{k^2+3}$ 成立 (下标在模 7 的意义下理解).\n证明: 若 $P_k$ 成立, 则存在一列正整数 $a_1<a_2<\\cdots<a_n<\\cdots$, 满足 $a_1 \\equiv a_2 \\equiv \\cdots \\equiv k(\\bmod 7)$, 则\n$$\na_1 a_i+3 \\equiv k^2+3(\\bmod 7), a_1 a_i+3<a_1 a_{i+1}+3\\left(i \\in \\mathbf{N}^*\\right),\n$$\n故 $S \\cap A_{k^2+3}$ 含有无限多个元素, 即 $P_{k^2+3}$ 成立.\n在原题中, 由于 $S$ 是无限集, 根据抽屉原理, 命题 $P_0, P_1, \\cdots, P_6$ 中必有一个成立.\n反复利用引理可得: $P_1 \\Rightarrow P_4 \\Rightarrow P_5 \\Rightarrow P_0$, 而 $P_2 \\Rightarrow P_0, P_3 \\Rightarrow P_5$, $P_6 \\Rightarrow P_4$, 故 $P_0$ 总成立, 即 $S$ 中必含有无穷多个 7 的倍数.",
+    "remark": "",
+    "figures": []
+}

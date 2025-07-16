@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例13. 证明: 关于两个三角形的匹㪡不等式\n$$\na^2\\left(b_1^2+c_1^2-a_1^2\\right)+b^2\\left(c_1^2+a_1^2-b_1^2\\right)+c^2\\left(a_1^2+b_1^2-c_1^2\\right) \\geqslant 16 S S_1,\n$$\n这里 $a 、 b 、 c 、 S ; a_1 、 b_1 、 c_1 、 S_1$ 分别为两个三角形的边长和面积.",
+    "solution": "证明:由柯西不等式, 得\n$$\n\\begin{aligned}\n& 16 S S_1+2 a^2 a_1^2+2 b^2 b_1^2+2 c^2 c_1^2 \\\\\n\\leqslant & \\left(16 S_1^2+2 a_1^4+2 b_1^4+2 c_1^4\\right)^{\\frac{1}{2}}\\left(16 S^2+2 a^4+2 b^4+2 c^4\\right)^{\\frac{1}{2}} \\\\\n= & \\left(a_1^2+b_1^2+c_1^2\\right)\\left(a^2+b^2+c^2\\right),\n\\end{aligned}\n$$\n所以\n$$\na^2\\left(b_1^2+c_1^2-a_1^2\\right)+b^2\\left(c_1^2+a_1^2-b_1^2\\right)+c^2\\left(a_1^2+b_1^2-c_1^2\\right) \\geqslant 16 S S_1 .\n$$",
+    "remark": "注:在证明过程中,常常进行一些恒等的变形.",
+    "figures": []
+}

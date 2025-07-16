@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题8. $\\triangle A B C$ 中, 若 $\\tan \\frac{A}{2} 、 \\tan \\frac{B}{2} 、 \\tan \\frac{C}{2}$ 成等比数列, 则角 $B$ 的取值范围是\n(A) $\\left(0, \\frac{\\pi}{6}\\right]$\n(B) $\\left(0, \\frac{\\pi}{3}\\right]$\n(C) $\\left[\\frac{\\pi}{3}, \\frac{2 \\pi}{3}\\right]$\n(D) $\\left[\\frac{2 \\pi}{3}, \\pi\\right)$",
+    "solution": "B. 参照例 13 (2) 可知 $\\tan \\frac{A}{2} \\cdot \\tan \\frac{B}{2}+\\tan \\frac{B}{2} \\cdot \\tan \\frac{C}{2}+\\tan \\frac{C}{2} \\cdot \\tan \\frac{A}{2}=$ 1 , 由题设条件得 $\\tan ^2 \\frac{B}{2}=\\tan \\frac{A}{2} \\cdot \\tan \\frac{C}{2}$, 所以 $\\tan \\frac{A}{2}+\\tan \\frac{C}{2} \\geqslant 2 \\sqrt{\\tan \\frac{A}{2} \\cdot \\tan \\frac{C}{2}}=2 \\tan \\frac{B}{2}$, 故 $\\left(\\tan \\frac{A}{2}+\\tan \\frac{C}{2}\\right) \\tan \\frac{B}{2}+\\tan \\frac{C}{2} \\tan \\frac{A}{2} \\geqslant 3 \\tan ^2 \\frac{B}{2}$, 从而 $\\tan ^2 \\frac{B}{2} \\leqslant \\frac{1}{3}, \\tan \\frac{B}{2} \\leqslant \\frac{\\sqrt{3}}{3}, 0<\\frac{B}{2} \\leqslant \\frac{\\pi}{6}$, 所以 $0<B \\leqslant \\frac{\\pi}{3}$.",
+    "remark": "",
+    "figures": []
+}

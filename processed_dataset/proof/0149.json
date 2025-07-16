@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例3. 证明: 对每个 $n>1$, 方程\n$$\n\\frac{x^n}{n !}+\\frac{x^{n-1}}{(n-1) !}+\\cdots+\\frac{x^2}{2 !}+\\frac{x}{1 !}+1=0\n$$\n没有有理数根.",
+    "solution": "证明:设 $a$ 是所说的方程的一个有理根, 则易知\n$$\na^n+\\frac{n !}{(n-1) !} a^{n-1}+\\cdots+\\frac{n !}{k !} a^k+\\cdots+\\frac{n !}{1 !} a+n !=0, \\label{eq1}\n$$\n于是 $a$ 是一个首项系数为 1 的整系数多项式的有理根, 故 $a$ 必是一个整数 .\n因 $n>1$, 故 $n$ 有素因子 $p$ (这一基本的事实已使用过多次). 由于 $n \\mid \\frac{n !}{k !}(k= 0,1, \\cdots, n-1)$, 故由 式\\ref{eq1} 推出 $p \\mid a^n$, 从而素数 $p$ 整除 $a$. 现在比较\\ref{eq1}式左边各项中含 $p$ 的方幂.\n因为 $p$ 在 $k$ ! 中出现的次数为\n$$\n\\sum_{l=1}^{\\infty}\\left[\\frac{k}{p^l}\\right]<\\sum_{l=1}^{\\infty} \\frac{k}{p^l}<k,\n$$\n故有 $p^k \\nmid k !(k \\geqslant 1)$. 设 $p^r \\| n !$. 则由于 $p^k \\mid a^k$ 及 $p^k \\nmid k !$, 可知 $p^{r+1} \\mid \\frac{n !}{k !} a^k(k= 1,2, \\cdots, n)$, 从而由 式\\ref{eq1} 得出 $p^{r+1} \\mid n !$, 这与 $r$ 的定义相违.",
+    "remark": "注:用较深人的方法能够证明, 有理系数多项式\n$$\n\\frac{x^n}{n !}+\\frac{x^{n-1}}{(n-1) !}+\\cdots+\\frac{x^2}{2 !}+\\frac{x}{1 !}+1\n$$\n在有理数域上不可约, 即不能分解为两个非常数的有理系数多项式的乘积.\n例 3 是这一结论的一个简单特例: 所说的多项式没有一次的有理因式.\n数学竞赛中,常常出现一些与多项式有些关联的数论问题,我们举几个这方面的例子.",
+    "figures": []
+}

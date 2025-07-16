@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $n$ 是不小于 2 的整数, $\\alpha$ 是多项式 $P(x)=x^n+a_{n-1} x^{n-1}+\\cdots+a_0$ 的一个根, 且 $0 \\leqslant a_i \\leqslant 1(i=0,1, \\cdots, n-1)$. 求证: $\\operatorname{Re} \\alpha<\\frac{1+\\sqrt{5}}{2}$.",
+    "solution": "分析:与解用反证法.\n若 $\\operatorname{Re} \\alpha \\geqslant \\frac{1+\\sqrt{5}}{2}$, 则\n$$\n\\begin{aligned}\n\\left|\\alpha^n+a_{n-1} \\alpha^{n-1}\\right| & =\\left|a_{n-2} \\alpha^{n-2}+\\cdots+a_0\\right| \\\\\n& \\leqslant|\\alpha|^{n-2}+\\cdots+|\\alpha|+1 \\\\\n& =\\frac{|\\alpha|^{n-1}-1}{|\\alpha|-1}<\\frac{|\\alpha|^{n-1}}{|\\alpha|-1} .\n\\end{aligned}\n$$\n所以 $\\left|\\alpha+a_{n-1}\\right|<\\frac{1}{|\\alpha|-1} \\leqslant \\frac{1}{\\frac{1+\\sqrt{5}}{2}-1}=\\frac{\\sqrt{5}+1}{2}$.\n而 $\\operatorname{Re}\\left(\\alpha+a_{n-1}\\right) \\geqslant \\frac{1+\\sqrt{5}}{2}$,矛盾!\n故 $\\operatorname{Re} \\alpha<\\frac{1+\\sqrt{5}}{2}$, 证毕.",
+    "remark": "",
+    "figures": []
+}

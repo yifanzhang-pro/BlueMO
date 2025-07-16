@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题11 由数字 $1,2, \\cdots, 8$ 组成的 $n(n \\geqslant 5)$ 位自然数中 (数字可以重复), 同时包含数字 $1,2,3,4,5$ 的数有多少个?",
+    "solution": "设 $S=\\{$ 由 $1,2,3,4,5,6,7,8$ 组成的可重复数字的 $n$ 位数 $\\}$, 显然 $|S|=8^n$. 设 $A_i=\\{S$ 中不含数字 $i$ 的 $n$ 位数 $\\}(i=1,2, \\cdots, 8)$, 有 $\\left|A_i\\right|=7^n$. 本题就是求 $\\left|\\bar{A}_1 \\cap \\bar{A}_2 \\cap \\bar{A}_3 \\cap \\bar{A}_4 \\cap \\bar{A}_5\\right|$, 可计算出 $\\mid \\bar{A}_1 \\cap \\bar{A}_2 \\cap \\bar{A}_3 \\cap \\bar{A}_4 \\cap \\bar{A}_5 \\mid=8^n-5 \\cdot 7^n+10 \\cdot 6^n-10 \\cdot 5^n+5 \\cdot 4^n-3^n$.",
+    "remark": "",
+    "figures": []
+}

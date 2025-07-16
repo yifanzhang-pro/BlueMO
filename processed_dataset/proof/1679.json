@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter11.tex",
+    "problem_type": "proof",
+    "problem": "例9. 如图(<FilePath:./images/volume7/figures/fig-c11i7.png>), 梯形 $A B C D$ 中, $A B$ 平行于 $C D$, 作点 $F \\in A B$, 使 $C F=D F$. 设 $A C$ 与 $B D$ 相交于点 $E, O_1 、 O_2$ 分别为 $\\triangle A D F 、 \\triangle B C F$ 的外心.\n求证: $E F \\perp \\mathrm{O}_1 \\mathrm{O}_2$.",
+    "solution": "证明:取 $D C$ 中点为 $O$, 由 $C F==D F$, 所以 $O F \\perp D C$.\n以 $D C$ 为 $x$ 轴, $O F$ 为 $y$ 轴建立直角坐标系, 不妨设 $D(-1,0), C(1,0), F(0, b)$, $A(d, b), B(c, b)$.\n$1^{\\circ}$ 若 $c \\neq-d$, 则直线 $A C$ :\n$$\ny=\\frac{b}{d-1} x-\\frac{b}{d-1} . \\label{eq1}\n$$\n直线 $B D$ :\n$$\ny=\\frac{b}{c+1} x+\\frac{b}{c+1} . \\label{eq2}\n$$\n联立 式\\ref{eq1}、\\ref{eq2}知 $E\\left(\\frac{c+d}{c+2-d}, \\frac{2 b}{c+2-d}\\right)$, 所以\n$$\nk_{\\mathrm{EF}}=\\frac{\\frac{2 b}{c+2-d}-b}{\\frac{c+d}{c+2-d}}=\\frac{b d-b c}{c+d} . \\label{eq3}\n$$\n而直线 $A F$ 中垂线方程为 $x=\\frac{d}{2}$.\n直线 $D F$ 中垂线方程为\n$$\ny=-\\frac{1}{b}\\left(x+\\frac{1}{2}\\right)+\\frac{b}{2} .\n$$\n所以 $O_1\\left(\\frac{d}{2},-\\frac{1}{b}\\left(\\frac{d}{2}+\\frac{1}{2}\\right)+\\frac{b}{2}\\right)$.\n同理, $O_2\\left(\\frac{c}{2}, \\frac{1}{b}\\left(\\frac{c}{2}-\\frac{1}{2}\\right)+\\frac{b}{2}\\right)$.\n所以\n$$\nK_{O_1 O_2}=\\frac{\\frac{1}{b}\\left(\\frac{c}{2}-\\frac{1}{2}+\\frac{d}{2}+\\frac{1}{2}\\right)}{\\frac{c}{2}-\\frac{d}{2}}=\\frac{\\frac{1}{b}\\left(\\frac{c+d}{2}\\right)}{\\frac{c-d}{2}}=\\frac{c+d}{b(c-d)} . \\label{eq4}\n$$\n由式\\ref{eq3}\\ref{eq4}知 $K_{E F} \\cdot K_{O_1 O_2}=\\frac{b d-b c}{c+d} \\cdot \\frac{c+d}{b(c-d)}=-1$.\n所以 $E F \\perp O_1 O_2$.\n$2^{\\circ}$ 若 $c=-d$, 则由对称性知 $E F \\quad\\left\\llcorner O_1 O_2\\right.$.\n综上, $E F \\perp O_1 O_2$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c11i7.png"
+    ]
+}

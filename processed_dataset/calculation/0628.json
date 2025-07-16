@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题26. 试解函数方程: $f(n+1)=2 f(n)+1$, 且 $f(1)=1, n \\in \\mathbf{N}_{+}$.",
+    "solution": "因为 $f(1)=1, f(n+1)=2 f(n)+1$. 所以 $f(1)+1=2, f(n+ 1)+1=2[f(n)+1]$. 即 $\\{f(n)+1\\}$ 是首次为 2 , 公比为 2 的等比数列.\n从而有 $f(n)+1=2 \\cdot 2^{n-1}=2^n$. 故 $f(n)=2^n-1$ 即为所求函数.",
+    "remark": "",
+    "figures": []
+}

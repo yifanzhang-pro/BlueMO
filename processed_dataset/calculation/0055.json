@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题8 设全集 $U=\\left\\{x \\mid x=2 n-1, n \\in \\mathbf{N}^*, n \\leqslant 7\\right\\}, A \\cap\\left(\\complement_U B\\right)=\\{3,7\\}$, $\\left(\\complement_U A\\right) \\cap B=\\{9,13\\},\\left(\\complement_U A\\right) \\cap\\left(\\complement_U B\\right)=\\{1,11\\}$. 则 $A=? B=?$",
+    "solution": "如图(<FilePath:./images/volume1/figures/fig-c2p8.png>)所示,\n$A=\\{3,5,7\\}, B=\\{5,9,13\\}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume1/figures/fig-c2p8.png"
+    ]
+}

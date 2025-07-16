@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-8.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设 $m$ 为给定的正整数, 对任意正整数 $n$, 用 $S_m(n)$ 表示 $n$ 在十进制表示下各数码的 $m$ 次方之和.\n例如 $S_3(172)=1^3+7^3+2^3=352$. 考虑数列: $n_0$ 为正整数, $n_k=S_m\\left(n_{k-1}\\right), k=1,2, \\cdots$.\n(1) 证明: 对任意正整数 $n_0$, 数列 $\\left\\{n_k\\right\\}$ 都是一个周期数列;\n(2)证明: 当 $n_0$ 变化时, (1) 中数列的最小正周期构成的集合为有限集.",
+    "solution": "证明:注意到, 对正整数 $n \\geqslant 10^{m+1}$, 存在 $p \\in \\mathbf{N}^*, p \\geqslant m+1$, 使得 $10^p \\leqslant n<10^{p+1}$, 此时 $n$ 为十进制中的 $p+1$ 位数, 故\n$$\n\\begin{aligned}\nS_m(n) & \\leqslant(p+1) \\cdot 9^m<(p+1) \\cdot 9^{p-1} \\\\\n& <9^p+\\mathrm{C}_p^1 \\cdot 9^{p-1}>(9+1)^p=10^p \\leqslant n .\n\\end{aligned}\n$$\n这表明数列 $\\left\\{n_k\\right\\}$ 中的项满足: 若 $n_k \\geqslant 10^{m+1}$, 则 $n_{k+1}=S_m\\left(n_k\\right)<n_k$.\n另一方面, 若正整数 $n<10^{m+1}$, 则\n$$\nS_m(n) \\leqslant(m+1) \\cdot 9^m<(9+1)^{m+1}=10^{m+1} .\n$$\n即可得: 如果 $n_k<10^{m+1}$, 那么 $n_{k+1}=S_m\\left(n_k\\right)$ 亦小于 $10^{m+1}$.\n上述讨论表明: 当下标 $k$ 充分大时, 必有 $n_k<10^{m+1}$. 于是, 数列 $\\left\\{n_k\\right\\}$ 从某一项开始, 每一项都为集合 $\\left\\{1,2, \\cdots, 10^{m+1}-1\\right\\}$ 中的数, 即存在 $k_0 \\in \\mathbf{N}^*$, 使得对任意 $k \\geqslant k_0$, 都有 $1 \\leqslant n_k \\leqslant 10^{m+1}-1$. 结合抽屉原理可知, 存在 $r 、 s \\in \\mathbf{N}^*$, $r>s \\geqslant k_0$, 使得 $n_r=n_s$. 利用 $\\left\\{n_k\\right\\}$ 的定义知, 对 $k \\geqslant s$, 都有 $n_k=n_{k+T}$, 这里 $T=r-s$, 并可使得 $T \\leqslant 10^{m+1}-1$.\n所以, 对任意 $n_0 \\in \\mathbf{N}^*$, 数列 $\\left\\{n_k\\right\\}$ 都为周期数列, 其最小正周期 $\\leqslant 10^{m+1}-1$. 从而, (1) 与 (2)都成立.",
+    "remark": "",
+    "figures": []
+}

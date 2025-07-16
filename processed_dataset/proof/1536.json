@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-7.tex",
+    "problem_type": "proof",
+    "problem": "例8. 数列 $\\left\\{a_n\\right\\}$ 满足递推式\n$$\na_{n+1}=\\frac{a_n^2-1}{n+1}, n=0,1,2, \\cdots .\n$$\n问 : 是否存在正实数 $a$, 使得下面的结论都成立?\n(1) 若 $a_0 \\geqslant a$, 则极限 $\\lim _{n \\rightarrow \\infty} a_n$ 不存在;\n(2) 若 $0<a_0<a$, 则 $\\lim _{n \\rightarrow \\infty} a_n=0$.",
+    "solution": "解:存在满足条件的正实数 $a$, 这个 $a=2$. 题目的解答过程中会不断用到数学归纳法,其中的详细推导请读者自己完成.\n(1) 当 $a_0 \\geqslant 2$ 时,利用数学归纳法可证: 对 $n \\geqslant 0$, 都有 $a_n \\geqslant n+2$, 故此时 $\\lim _{n \\rightarrow \\infty} a_n$ 不存在.\n(2)对 $0<a_0<2$, 我们分两种情形处理:\n情形一 $0<a_0 \\leqslant 1$, 此时利用数学归纳法可证: 对任意 $n \\in \\mathbf{N}^*$, 都有 $\\left|a_n\\right| \\leqslant-\\frac{1}{n}$; 故 $\\lim _{n \\rightarrow \\infty} a_n=0$.\n情形二 $1<a_0<2$, 如果存在 $m \\in \\mathbf{N}^*$, 使得 $a_{m+1} \\leqslant 0$, 那么取最小的 $m$, 则 $0<a_m \\leqslant 1$, 此时 $\\left|a_{m+1}\\right|=\\frac{1-a_m^2}{m+1} \\leqslant \\frac{1}{m+1}$, 依此结合数学归纳法可证: 当 $n \\geqslant m+1$ 时,都有 $\\left|a_n\\right| \\leqslant \\frac{1}{n}$, 从而 $\\lim _{n \\rightarrow+\\infty} a_n=0$.\n最后, 若对任意 $m \\in \\mathbf{N}^*$, 都有 $a_m>0$,结合 $1<a_0<2$ 可知, 对 $n \\geqslant 0$ 都有 $a_n>1$. 现在设 $a_0=2-\\varepsilon(0<\\varepsilon<1)$, 利用递推式及数学归纳法可证: 对任意 $n \\in \\mathbf{N}^*, a_n<n+2-n \\varepsilon$. 因此, 取 $m=\\left\\lceil\\frac{1}{\\varepsilon}\\right\\rceil$, 则有 $a_m<m+2-m \\varepsilon \\leqslant m+1$, 然后, 再用数学归纳法可证: 对任意 $n>m$, 都有 $a_n \\leqslant \\frac{(m+1)^2-1}{n-1}$, 这在 $n$ 充分大时, 导致 $a_n \\leqslant 1$, 矛盾.\n因此, 必存在 $n \\in \\mathbf{N}^*$, 使得 $a_n \\leqslant 0$, 归人前面的情形.\n综上可知, $a=2$ 符合要求.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,230 @@
+
+%%TEXT_BEGIN%%
+圆幂与根轴.
+1. 点到圆的幂: 设 $P$ 是平面上一定点, 从 $P$ 向一定圆作割线, 从 $P$ 起到和圆周相交为止的两有向线段之积,称为 $P$ 点对这一定圆的幕.
+2. 相交弦定理和切割线定理统称为圆幕定理.
+3. 由相交弦定理和切割线定理知, 定点 $P$ 对于定圆的幕是一个定值.
+设 $P O=d$ ( $O$ 为圆心), $\odot O$ 的半径为 $r$, 则 $d^2-r^2$ 就是点 $P$ 对于 $\odot O$ 的幂.
+令 $k= d^2-r^2$, 则当 $P$ 在圆外时, $k>0$; 当 $P$ 在圆内时, $k<0$; 当 $P$ 在圆上时, $k=0$.
+与圆幂定理紧密相关的另一个概念是根轴问题.
+下面我们证明有关根轴的一个重要结论.
+4. 对于两已知圆有等幂的点的轨迹是一条垂直于连心线的直线.
+事实上, 设点 $A$ 到 $\odot O_1$ 和 $\odot O_2$ 的幕相等, $\odot O_1 、 \odot O_2$ 的半径分别为 $R_1$, $R_2\left(R_1>R_2\right)$, 则 $A O_1^2-R_1^2=A O_2^2-R_2^2$, 即
+$$
+A O_1^2-A O_2^2=R_1^2-R_2^2=\text { 常数.
+}
+$$
+如图(<FilePath:./figures/fig-c5i1.png>), 设 $O_1 O_2$ 的中点为 $D, A M \perp O_1 O_2$ 于 $M$, 则 $A O_1^2=A M^2+\left(O_1 D+D M\right)^2= A M^2+O_1 D^2+D M^2+2 O_1 D \cdot D M=A D^2+ O_1 D^2+2 O_1 D \cdot D M$.
+同理 $A O_2^2=A D^2+D O_2^2-2 D O_2 \cdot D M$, 以上两式相减, $D M=\frac{R_1^2-R_2^2}{2 O_1 O_2}=$ 常数.
+所以, 过定点 $M$ 的垂线即是两圆等幂点的轨迹.
+这条直线称为两圆的根轴.
+特别地, 若两圆同心 , 则 $O_1 O_2=0$. 即同心圆的根轴不存在; 又若 $R_2=0$, $\odot O_2$ 变成一点 $O_2$, 则点 $A$ 对于 $\odot O_2$ 的幕是 $A O_2^2$. 此时, 直线 (轨迹) 称为一圆与一定点的根轴.
+5. 根轴有下面重要性质:
+性质 1 若两圆相交, 其根轴就是公共弦所在的直线.
+性质 2 若两圆相切, 其根轴就是过两圆切点的公切线.
+性质 3 三个圆, 其两两的根轴或相交于一点,或互相平行.
+事实上,若三条根轴中有两条相交, 则这一交点对三个圆的幕均相等, 所以必在第三条根轴上.
+这一点,称为三个圆的根心.
+显然,当三个圆的圆心在一直线上时,三条根轴互相平行; 当三个圆的圆心不共线时,根心存在.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 如图(<FilePath:./figures/fig-c5i2.png>), $\triangle A B C$ 中, $A B>B C$, 外接圆上点 $B$ 处的切线交直线 $A C$ 于点 $P, D$ 是 $B$ 点关于点 $P$ 的对称点, $E$ 是点 $C$ 关于直线 $B P$ 的对称点.
+求证: 四边形 $A B E D$ 是圆内接四边形.
+%%<SOLUTION>%%
+证明:由于 $P B$ 是切线, 由切割线定理
+$$
+P A \cdot P C=P B^2=P D^2 \Rightarrow \frac{P A}{P D}=\frac{P D}{P C},
+$$
+又 $\angle D P A=\angle C P D$, 所以 $\triangle D P A \backsim \triangle C P D . \Rightarrow \angle C A D=\angle P D C$.
+再由 $P B$ 是切线知, $\angle P B C=\angle B A C$.
+故 $\angle B A D=\angle P B C+\angle P D C=180^{\circ}-\angle B C D$.
+再根据 $C 、 E$ 的对称性知, $\angle B C D=\angle B E D$.
+于是, $\angle B A D+\angle B E D=180^{\circ}$.
+从而, 四边形 $A B E D$ 是圆内接四边形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 如图(<FilePath:./figures/fig-c5i3.png>), 圆 $\Gamma$ 与 $\triangle A B C$ 的外接圆相切于点 $A$, 与边 $A B$ 交于点 $K$, 且和边 $B C$ 相交.
+过点 $C$ 作圆 $\Gamma$ 的切线, 切点为 $L$, 连结 $K L$, 交边 $B C$ 于点 $T$. 求证: 线段 $B T$ 的长等于点 $B$ 到圆 $\Gamma$ 的切线长.
+%%<SOLUTION>%%
+分析:由圆幂定理知: 点 $B$ 到圆 $\Gamma$ 的切线长的平方等于 $B K \cdot B A$. 故问题等价于求证: $B T^2=B K$ ・ $B A$.
+证明过 $A$ 作两圆的公切线 $D E$, 连结 $A C$ 交圆 $\Gamma$ 于 $M$.
+则 $\angle D A B=\angle A C B=\angle A M K \Rightarrow K M / / B C$.
+注意到 $A 、 K 、 L 、 M$ 四点共圆, 所以 $\angle A M K=\angle A L K=\angle A C B \Rightarrow A$ 、 $C 、 L 、 T$ 四点共圆,所以 $\angle A L C=\angle A T C$.
+又因 $C L$ 是圆 $\Gamma$ 的切线, $\angle A L C=\angle A K L$.
+所以 $\angle A T C=\angle A K L$, 从而它们的补角也相等, 即 $\angle B K T=\angle B T A$. 又 $\angle K B T=\angle T B A$, 故 $\triangle A B T \backsim \triangle T B K \Rightarrow B T^2==B K \cdot B A$.
+由圆幂定理知, $B T$ 的长等于 $B$ 到圆 $\Gamma$ 的切线长.
+%%<REMARK>%%
+注:若两圆相内切于点 $A$, 过 $A$ 出发的两条射线与两圆分别交于 $B_1 、 C_1$ 和 $B_2 、 C_2$, 则 $B_1 C_1 / / B_2 C_2$. 这个基本结论常用到.
+(如图(<FilePath:./figures/fig-c5i4.png>))
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 如图(<FilePath:./figures/fig-c5i5.png>), 圆内接四边形 $A B C D$ 中, $A D=A B$. 求证: $A B^2+B C C D=A C^2$.
+%%<SOLUTION>%%
+证明:将 $\triangle A C D$ 绕着 $A$ 点逆时针旋转, 使 $A D$ 与 $A B$ 重合.
+由 $A D=A B$, 且 $A B C D$ 是圆内接四边形知: $C 、 B 、 E$ 三点共线.
+以 $A$ 为圆心, $A C$ 为半径作圆, 考虑 $B$ 对此圆的幂: 一方面, 这个幂是 $B A^2-C A^2$; 另一方面, 它也是 $\overrightarrow{B E} \cdot \overrightarrow{B C}$, 从而 $A C^2-A B^2=B E \cdot B C$ (这里是线段的长度 $)=C D \cdot B C \Rightarrow A B^2+B C \cdot C D=A C^2$.
+%%<REMARK>%%
+注:此题的证法很多,也可通过相似的方法去证明.
+留给读者思考.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 如图(<FilePath:./figures/fig-c5i6.png>), $\odot O_1$ 与 $\odot O_2$ 相交于点 $C 、 D$, 过点 $D$ 的一条直线分别与 $\odot O_1 、 \odot O_2$ 相交于点 $A 、 B$, 点 $P$ 在 $\odot O_1$ 的弧 $A D$ 上, $P D$ 与线段 $A C$ 的延长线交于点 $M$, 点 $Q$ 在 $\odot O_2$ 的弧 $B D$ 上, $Q D$ 与线段 $B C$ 的延长线交于点 $N . O$ 是 $\triangle A B C$ 的外心.
+求证: $O D \perp M N$ 的充要条件是 $P 、 Q 、 M 、 N$ 四点共圆.
+%%<SOLUTION>%%
+证明:设 $\triangle A B C$ 的外接圆 $O$ 的半径为 $R$, 则 $M, N$ 对 $\odot O$ 的幂分别为
+$$
+\begin{aligned}
+& M O^2-R^2=M C \cdot M A, \label{eq1} \\
+& N O^2-R^2=N C \cdot N B . \label{eq2}
+\end{aligned}
+$$
+又因为 $A 、 C 、 D 、 P$ 四点共圆, 所以
+$$
+M C \cdot M A=M D \cdot M P, \label{eq3}
+$$
+同理 $Q 、 D 、 C 、 B$ 四点共圆, 所以
+$$
+N C \cdot N B=N D \cdot N Q . \label{eq4}
+$$
+由式\ref{eq1}、\ref{eq2}、式\ref{eq3}、\ref{eq4}得
+$$
+\begin{aligned}
+N C^2-M O^2 & =N D \cdot N Q-M D \cdot M P \\
+& =N D \cdot(N D+D Q)-M D \cdot(M D+D P) \\
+& =N D^2-M D^2+(N D \cdot D Q-M D \cdot D P) .
+\end{aligned}
+$$
+所以, $O D \perp M N \Leftrightarrow N O^2-M O^2=N D^2-M D^2 \Leftrightarrow N D \cdot D Q=M D$ • $D P \Leftrightarrow P 、 Q 、 M 、 N$ 四点共圆.
+%%<REMARK>%%
+注:上面证题的过程中, 用到了这样一个结论: $O D \perp M N \Leftrightarrow N O^2- M O^2=N D^2-M D^2$. 它是一个非常重要的结论, 在证明垂直一类问题中常用到它.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 如图(<FilePath:./figures/fig-c5i7.png>), 从半圆上的一点 $C$ 向直径 $A B$ 引垂线, 设垂足为 $D$, 作圆 $O_1$ 分别切 $\overparen{B C} 、 C D 、 D B$ 于点 $E 、 F 、 G$. 求证 : $A C=A G$.
+%%<SOLUTION>%%
+证明:设半圆的圆心为 $O$, 则 $O 、 O_1 、 E$ 三点共线.
+连结 $O_1 F$ 知 $O_1 F \perp C D$, 且 $O_1 F / / A B$, 连结 $E F 、 A E$.
+由 $\angle F E O_1=\frac{1}{2} \angle F O_1 O=\frac{1}{2} \angle E O B=\angle O E A \Rightarrow E 、 F 、 A$ 三点共线.
+又因为 $\angle A C B=90^{\circ}$, 且 $C D \perp A B$, 所以 $\angle A C F=\angle A B C=\angle A E C$.
+从而 $A C$ 是 $\triangle C E F$ 外接圆的切线, 故点 $A$ 对 $\triangle C E F$ 外接圆的幕 $A C^2$ 等于点 $A$ 对 $\odot O_1$ 的幕 $A G^2$ (也等于 $A E \cdot A F$ ), 即 $A C=A G$.
+上面几道例题都是和幕相关的问题, 以下的问题都和根轴有关.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 如图(<FilePath:./figures/fig-c5i8.png>), 设 $D 、 E$ 是 $\triangle A B C$ 中 $A B 、 A C$ 上的点.
+求证: 以 $B E 、 C D$ 为直径的两圆的根轴必通过 $\triangle A B C$ 的垂心.
+%%<SOLUTION>%%
+证明:设以 $B E$ 为直径的圆为 $\odot O_1$, 以 $C D$ 为直径的圆为 $\odot O_2, B M 、 C N$ 是高线, $H$ 为垂心.
+显然 $M$ 在 $\odot O_1$ 上, $N$ 在 $\odot O_2$ 上.
+又因 $B 、 C 、 M 、 N$ 四点共圆, 所以 $H B \cdot H M= H C \cdot H N$.
+而 $H B \cdot H M$ 是 $H$ 对 $\odot O_1$ 的幕, $H C \cdot H N$ 是 $H$ 对 $\odot \mathrm{O}_2$ 的幂.
+由根轴定理知: $H$ 在它们的根轴上, 即以 $B E 、 C D$ 为直径的两圆的根轴通过 $\triangle A B C$ 的垂心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 如图(<FilePath:./figures/fig-c5i9.png>), 已知两个半径不相等的圆 $O_1$ 与圆 $O_2$ 相交于 $M 、 N$ 两点, 且 $\odot O_1$ 与 $\odot O_2$ 分别与 $\odot O$ 内切于 $S 、 T$ 两点.
+求证: $O M \perp M N$ 的充分必要条件是 $S 、 N 、 T$ 三点共线.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c5i9.png>), 连结 $O S 、 O T 、 S T 、 S M$, 作公切线 $S P 、 T P$, 由根轴定理知, $P 、 M 、 N$ 三点共线.
+又 $\angle O S P=\angle O T P=90^{\circ}$, 所以 $O 、 S 、 P 、 T$ 四点共圆.
+$O M \perp M N \Leftrightarrow \angle O M P=\angle O S P=90^{\circ} \Leftrightarrow O 、 M 、 T 、 P 、 S$ 五点共圆.
+注意到 $S P 、 T P$ 为切线, $\angle N S P=\angle S M P, \angle N T P=\angle T M P$.
+故 $O 、 M 、 T 、 P 、 S$ 共圆 $\Leftrightarrow \angle S M T+\angle S P T=180^{\circ} \Leftrightarrow \angle S M P+\angle T M P+ \angle S P T=180^{\circ} \Leftrightarrow \angle S P T+\angle P S N+\angle P T N=180^{\circ} \Leftrightarrow S 、 N 、 T$ 共线.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设 $O$ 和 $I$ 分别为 $\triangle A B C$ 的外心和内心, $\triangle A B C$ 的内切圆与边 $B C 、 C A 、 A B$ 分别相切于点 $D 、 E 、 F$, 直线 $F D$ 和 $C A$ 相交于点 $P$, 直线 $D E$ 与 $A B$ 相交于点 $Q$, 点 $M, N$ 分别为线段 $P E 、 Q F$ 的中点.
+求证: $O I \perp M N$.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c5i10.png>), 考虑 $\triangle A B C$ 与截线 $P F D$. 由梅氏定理:
+$$
+\frac{C P}{P A} \cdot \frac{A F}{F B} \cdot \frac{B D}{D C}=1 \Rightarrow \frac{P A}{C P}=\frac{A F}{D C}=\frac{A F}{E C} .
+$$
+记 $\triangle A B C$ 的三边分别为 $a 、 b 、 c$, 令 $p= \frac{a+b+c}{2}$,并不妨设 $a>c$, 则
+$$
+\frac{P A}{C P}=\frac{P A}{C A+P A}=\frac{P A}{P A+b}=\frac{p-a}{p-c}, P A=\frac{(p-a) b}{a-c} .
+$$
+$$
+\begin{aligned}
+& \text { 而 } P E=P A+A E=\frac{(p-a) b}{a-c}+p-a=\frac{2(p-a)(p-c)}{a-c}, \\
+& M E=\frac{1}{2} P E=\frac{(p-a)(p-c)}{a-c}, \\
+& M A=M E-A E=\frac{(p-a)(p-c)}{a-c}-(p-a)=\frac{(p-a)^2}{a-c}, \\
+& M C=M E+E C=\frac{(p-a)(p-c)}{a-c}+(p-c)=\frac{(p-c)^2}{a-c} .
+\end{aligned}
+$$
+于是 $M A \cdot M C=M E^2$.
+由于 $M E$ 是 $M$ 到 $\triangle A B C$ 内切圆切线长, $M E^2$ 是点 $M$ 到内切圆 $I$ 的幂, 而 $M A \cdot M C$ 是 $M$ 到 $\triangle A B C$ 外接圆 $O$ 的幂.
+等式 " $M A \cdot M C=M E^2$ " 表示点 $M$ 到 $\triangle A B C$ 外接圆与内切圆的幕相等, 因而点 $M$ 在 $\triangle A B C$ 外接圆 $O$ 与内切圆 $I$ 的根轴上.
+同理, 点 $N$ 也在 $\triangle A B C$ 的外接圆 $O$ 与内切圆 $I$ 的根轴上, 由根轴定理知 $O I \perp M N$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 如图(<FilePath:./figures/fig-c5i11.png>), 以 $O$ 为圆心的圆通过 $\triangle A B C$ 的两个顶点 $A 、 C$, 且与 $A B 、 B C$ 两边分别相交于 $K$ 、 $N$ 两点, $\triangle A B C$ 和 $\triangle K B N$ 的两外接圆交于 $B 、 M$ 两点.
+证明: $\angle O M B$ 为直角.
+%%<SOLUTION>%%
+证明:设 $\triangle A B C 、 \triangle B K N$ 的外接圆圆心分别为 $O_1 、 O_2$, 由题设推知 $O 、 O_1 、 O_2$ 三点不共线 (否则 $B$ 和 $M$ 重合), 而直线 $A C 、 K N 、 B M$ 分别为这三个圆中两两圆的根轴, 故它们必相交于一点, 不妨设交于点 $P$.
+由 $\angle P M N=\angle B K N=\angle N C A$, 知 $P 、 M 、 N 、 C$ 四点共圆, 故点 $B$ 对此圆的幂等于点 $B$ 对 $\odot O$ 的幂.
+设 $R$ 为 $\odot O$ 的半径, 则有
+$$
+B M \cdot B P=B N \cdot B C=B O^2-R^2 . \label{eq1}
+$$
+又点 $P$ 对 $\odot O_2$ 的幕等于点 $P$ 对 $\odot O$ 的幕, 即
+$$
+P M \cdot P B=P N \cdot P K=P O^2-R^2 . \label{eq2}
+$$
+式\ref{eq2} - \ref{eq1}得 $P O^2-B O^2=B P(P M-B M)$
+$$
+=(P M+B M)(P M-B M)=P M^2-B M^2 .
+$$
+故 $O M \perp B P, \angle B M O=90^{\circ}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 如图(<FilePath:./figures/fig-c5i12.png>), 设圆 $O_1$ 和圆 $O_2$ 相离, 引它们的一条外公切线切圆 $O_1$ 于 $A$, 切圆 $O_2$ 于 $C$,引它们的一条内公切线切圆 $O_1$ 于 $B$, 切圆 $O_2$ 于 $D$, 求证: 直线 $A B$ 和 $C D$ 的交点在两圆的连心线上.
+%%<SOLUTION>%%
+证明:设 $A B$ 和 $C D$ 的交点为 $K, A C$ 与 $B D$ 的交点为 $E$, 连结 $O_1 E$, 则 $A B \perp O_1 E$,$\mathrm{CD} \perp \mathrm{O}_2 E$.
+由于 $O_1 E$ 平分 $\angle A E B, O_2 E$ 平分 $\angle C E D$, 所以 $O_1 E \perp O_2 E$, 且 $A B \perp C D$, 即 $K$ 是分别以 $A C$ 和 $B D$ 为直径的两圆 $S_1$ 和 $S_2$ 的交点.
+所以 $K$ 在圆 $S_1$ 和圆 $S_2$ 的根轴上.
+下面证明 $O_1 O_2$ 是圆 $S_1$ 和圆 $S_2$ 的根轴.
+因 $O_1 A \perp A C$, 所以 $O_1 A$ 是圆 $S_1$ 的切线, $O_1$ 关于圆 $S_1$ 的幂是 $O_1 A^2$.
+同理, $O_1 B$ 是圆 $S_2$ 的切线, $O_1$ 关于圆 $S_2$ 的幂是 $O_1 B^2$.
+由于 $O_1 A^2=O_1 B^2$, 所以 $O_1$ 是关于圆 $S_1$ 和 $S_2$ 的等幕点.
+同理, $O_2$ 是关于圆 $S_1$ 和圆 $S_2$ 的等幕点, 故 $O_1 O_2$ 是圆 $S_1$ 和圆 $S_2$ 的根轴.
+于是, $K$ 在连心线 $O_1 O_2$ 上.
+%%PROBLEM_END%%
+
+

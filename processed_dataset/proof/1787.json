@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 设在凸四边形 $A B C D$ 中, $A B=A D+B C$. 在此四边形内, 距离 $C D$ 为 $h$ 的地方有一点 $P$, 使得 $A P=h+A D, B P=h+B C$. 求证: $\\frac{1}{\\sqrt{h}} \\geqslant \\frac{1}{\\sqrt{A D}}+\\frac{1}{\\sqrt{B C}}$.",
+    "solution": "证明: 设 $M$ 是线段 $A B$ 内的点,且满足 $A M= A D=r, B M=B C=R$. 因此条件也就等价于 $: \\odot P$ 半径为 $h$, 并且与边 $C D$ 和圆 $\\odot A, \\odot B$ 都相切, 其中 $\\odot A, \\odot B$ 分别是以 $A, B$ 为圆心, $r, R$ 为半径的圆, 且 $\\odot A, \\odot B$ 相切于 $M$ (如图(<FilePath:./images/volume7/figures/fig-c10a6-1.png>)).\n我们需要证明 $\\frac{1}{\\sqrt{h}} \\geqslant \\frac{1}{\\sqrt{R}}+\\frac{1}{\\sqrt{r}}$. 当 $h$ 取最大值时, $\\frac{1}{\\sqrt{h}}$ 取最小值, 并且当 $D C$ 是 $\\odot A, \\odot B$ 的公切线时, 它取最小值.\n此时, 我们令 $h_0$ 是 $\\odot P$ 的半径.\n那么我们就需证明 $\\frac{1}{\\sqrt{h_0}}=\\frac{1}{\\sqrt{R}}+\\frac{1}{\\sqrt{r}}$.\n新的简化图(<FilePath:./images/volume7/figures/fig-c10a6-2.png>), 刻画了这时的情形.\n设 $E$ 是 $A$ 在 $B C$ 上的投影, $Q$ 是 $P$ 在 $C D$ 上的投影.\n我们有 $A E= \\sqrt{A B^2-B E^2}=\\sqrt{(R+r)^2-(R-r)^2}=2 \\sqrt{R r}$.\n另一方面, $A E=C D=D Q+Q C=\\sqrt{\\left(r+h_0\\right)^2-\\left(r-h_0\\right)^2}+ \\sqrt{\\left(R+h_0\\right)^2-\\left(R-h_0\\right)^2}=2 \\sqrt{r h_0}+2 \\sqrt{R h_0}$. 等式 $\\sqrt{R r}=\\sqrt{r h_0}+\\sqrt{R h_0}$ 等价于所要证明的等式.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c10a6-1.png",
+        "./images/volume7/figures/fig-c10a6-2.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设 $r \\in \\mathbf{N}^*$, 求证: 二次三项式 $x^2-r x-1$ 不可能是任何一个各项系数的绝对值都小于 $r$ 的非零整系数多项式的因式.",
+    "solution": "先证明: 若 $\\alpha$ 是多项式 $f(x)=a_n x^n+\\cdots+a_0\\left(a_n \\neq 0\\right)$ 的根, 则 $|\\alpha|< M+1$, 这里 $M=\\max _{0 \\leqslant i \\leqslant n-1}\\left|\\frac{a_i}{a_n}\\right|$.\n事实上, 若 $|\\alpha| \\leqslant 1$, 则上述结论显然成立.\n若 $|\\alpha|>1$, 由 $f(\\alpha)=0$, 可知 $-a_n \\alpha^n=a_0+a_1 \\alpha+\\cdots+a_{n-1} \\alpha^{n-1}$, 于是 $|\\alpha|^n=\\left|\\frac{a_0}{a_n}+\\frac{a_1}{a_n} \\alpha+\\cdots+\\frac{a_{n-1}}{a_n} \\alpha^{n-1}\\right| \\leqslant M\\left(1+|\\alpha|+\\cdots+|\\alpha|^{n-1}\\right)=\\frac{M\\left(|\\alpha|^n-1\\right)}{|\\alpha|-1}<\\frac{M \\cdot|\\alpha|^n}{|\\alpha|-1}$, 故 $|\\alpha|<M+1$.\n回到原题, 设 $x^2-r x-1$ 是整系数多项式 $g(x)=b_n x^n+\\cdots+b_0$ 的因式, 则 $\\frac{r+\\sqrt{r^2+4}}{2}(>r)$ 是 $g(x)$ 的根, 利用上面的结论, 可知 $r<\\frac{r+\\sqrt{r^2+4}}{2} <1+\\max _{0 \\leqslant i \\leqslant n-1}\\left|\\frac{b_i}{b_n}\\right|$, 从而 $\\max _{0 \\leqslant i \\leqslant n-1}\\left|\\frac{b_i}{b_n}\\right|>r-1, \\max _{0 \\leqslant i \\leqslant n-1}\\left|b_i\\right|>r-1$. 由于 $b_i \\in \\mathbf{Z}$, 所以 $\\max _{0 \\leqslant i \\leqslant n-1}\\left|b_i\\right| \\geqslant r$, 证毕.",
+    "remark": "",
+    "figures": []
+}

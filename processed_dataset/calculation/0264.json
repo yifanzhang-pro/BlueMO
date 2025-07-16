@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter5.tex",
+    "problem_type": "calculation",
+    "problem": "例3. 如图(<FilePath:./images/volume12/figures/fig-c5i7.png>) 所示,在 $8 \\times 8$ 黑白方格的棋盘上跳动一只马, 不论跳动方向如何, 要使这只马跳遍棋盘的每一格且每格只经过一次, 问这是否可能? (一只马跳动一次是指从 $2 \\times 3$ 黑白方格组成的长方形的一个对角跳到另一个对角上)",
+    "solution": "解:如图(<FilePath:./images/volume12/figures/fig-c5i8.png>) 中给出这个问题的一个解答.\n\\begin{tabular}{|l|l|l|l|l|l|l|l|}\n\\hline 56 & 41 & 58 & 35 & 50 & 39 & 60 & 33 \\\\\n\\hline 47 & 44 & 55 & 40 & 59 & 34 & 51 & 38 \\\\\n\\hline 42 & 57 & 46 & 49 & 36 & 53 & 32 & 61 \\\\\n\\hline 45 & 48 & 43 & 54 & 31 & 62 & 37 & 52 \\\\\n\\hline 20 & 5 & 30 & 63 & 22 & 11 & 16 & 13 \\\\\n\\hline 29 & 64 & 21 & 4 & 17 & 14 & 25 & 10 \\\\\n\\hline 6 & 19 & 2 & 27 & 8 & 23 & 12 & 15 \\\\\n\\hline 1 & 28 & 7 & 18 & 3 & 26 & 9 & 24 \\\\\n\\hline\n\\end{tabular}\n解决这类问题, 常常用以下 4 种方法尝试:\n1. 每次将马放到使它能走到的 (尚未走过的)方格为最少的位置, 即先走\"出路\"少的方格,后走\"出路\"多的方格.\n2. 将棋盘分为几个部分, 在每个部分中找一条哈密顿链 (见第六节), 然后把它们连接起来.\n3. 在棋盘上找几个圈,然后将这些圈连接起来.\n4. 将一个较小的棋盘镶上边, 产生一个大棋盘上的哈密顿链.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c5i7.png",
+        "./images/volume12/figures/fig-c5i8.png"
+    ]
+}

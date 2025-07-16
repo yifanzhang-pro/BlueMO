@@ -1,0 +1,202 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 已知梯形 $A B C D$ 的对角线 $A C 、 B D$ 交于点 $P$, 点 $Q$ 在平行线 $B C 、 A D$ 之间, 满足 $\angle A Q D=\angle C Q B$, 且 $P 、 Q$ 在直线 $C D$ 的两侧.
+证明: $\angle B Q P=\angle D A Q$.
+%%<SOLUTION>%%
+证明: 设 $t=\frac{A D}{B C}$, 以 $P$ 为位似中心, $-t$ 为位似比的位似变换 $h$ 将 $\triangle P B C$ 变换到 $\triangle P D A$.
+如图(<FilePath:./figures/fig-c6a1.png>), 设 $Q^{\prime}=h(Q)$, 则 $Q 、 P 、 Q^{\prime}$ 三点共线.
+由于点 $P 、 Q$ 在边 $A D$ 的同侧, 也在边 $B C$ 的同侧, 于是, 点 $Q^{\prime} 、 P$ 也在边 $h(B C)=D A$ 的同侧.
+从而, 点 $Q 、 Q^{\prime}$ 也在边 $A D$ 的同侧.
+此外, 点 $Q 、 C$
+在 $B D$ 的同侧, 点 $Q^{\prime} 、 A$ 在 $B D$ 的另一侧.
+由位似变换 $h$ 知, $\angle A Q^{\prime} D= \angle C Q B=\angle A Q D$. 于是, $A 、 Q^{\prime} 、 Q 、 D$ 四点共圆.
+从而, $\angle D A Q=\angle D Q^{\prime} Q= \angle D Q^{\prime} P=\angle B Q P$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 在 $\triangle A B C$ 中, $\angle B<\angle C$, 设经过点 $B 、 C$ 且与 $A C$ 切于点 $C$ 的圆为 $\odot O$, 直线 $A B 、 C O$ 分别与 $\odot O$ 交于点 $D(\neq B) 、 P(\neq C)$. 过点 $P$ 作 $A O$ 的平行线与 $A C$ 交于点 $E$. 直线 $E B$ 交 $\odot O$ 于点 $L(\neq B), B D$ 的中垂线与 $A C$ 交于点 $F, L F$ 交 $C D$ 于点 $K$. 证明: $E K / / C L$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c6a2.png>), 设过点 $E$ 平行于 $C L$ 的直线与 $C D$ 交于点 $K^{\prime}$.
+由 $\angle E B D=\angle D C L=\angle E K^{\prime} D$, 知 $B 、 D$ 、 $E 、 K^{\prime}$ 四点共圆.
+设该圆为 $\odot O_1$. 注意到 $A O$ 是 $\triangle C E P$ 的中位线, 且 $C E$ 是切线, 则 $A E^2= A C^2=A D \cdot A B$, 有 $A E$ 切 $\odot O_1$ 于点 $E$. 考虑从 $\odot O_1$ 到 $\odot O$ 的位似变换, 位似中心为 $F$, 点 $E 、 O_1$ 分别对应点 $C 、 O, K^{\prime}$ 对应点 $L$. 因此, $F 、 K^{\prime} 、 L$ 三点共线,故 $K=K^{\prime}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 点 $O$ 是平行四边形 $A B C D$ 内的一个点, 使得 $\angle A O B+\angle C O D=180^{\circ}$. 证明: $\angle O B C=\angle O D C$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c6a3.png>), 考虑将点 $D$ 映射到点 $A$ 的平移.
+此平移也将点 $O$ 映射到 $O^{\prime}$, 且 $\overrightarrow{O O^{\prime}}=\overrightarrow{D A}$. 由于 $\overrightarrow{C B}=\overrightarrow{D A}$, 故也将点 $C$ 映射到点 $B$.
+平移保持角度不变, 所以 $\angle A O^{\prime} B=\angle D O C= 180^{\circ}-\angle A O B$.
+因此, $A O B O^{\prime}$ 是一个圆内接四边形, 进而有
+$$
+\angle O D C=\angle O^{\prime} A B=\angle O^{\prime} O B .
+$$
+又因 $O^{\prime} O$ 平行于 $B C$, 所以 $\angle O^{\prime} O B=\angle O B C$, 故有
+$\angle O D C=\angle O B C$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 如图(<FilePath:./figures/fig-c6p4.png>), 圆 $W_1 、 W_2$ 的圆心分别为 $O_1 、 O_2$, 两圆相交于点 $A 、 B$. 由点 $A$ 分别向圆 $W_1 、 W_2$ 作切线 $l_1 、 l_2$, 点 $T_1 、 T_2$ 分别位于圆 $W_1 、 W_2$ 上, 使得 $\angle T_1 O_1 A=\angle A O_2 T_2$. 圆 $W_1$ 上过点 $T_1$ 的切线与 $l_2$ 相交于点 $M_1$, 圆 $W_2$ 上过点 $T_2$ 的切线与 $l_1$ 相交于点 $M_2$. 证明: 线段 $M_1 M_2$ 的中点位于一条不依赖于点 $T_1 、 T_2$ 位置的直线上.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c6a4.png>), 以 $A$ 为中心, 作系数为 $k(k>0)$ 的同位相似,将圆 $W_1$ 变为与圆 $W_2$ 相等的圆 $W_1^{\prime}$. 用带撤的同一字母 (连同原来的下标) 表示各个点和各条直线在该变换之下的像,如图.
+设 $B_1$ 是圆 $W_2$ 与圆 $W_1^{\prime}$ 的 (不同于 $A$ ) 第二个交点.
+圆 $W_1^{\prime}$ 与圆 $W_2$ 关于直线 $A B_1$ 相互对称.
+在此对称之下, $T_1^{\prime}$ 变为 $T_2, l_1^{\prime}$ 变为 $l_2, M_1^{\prime}$ 变为 $M_2$. 从而, $A M_2=A M_1^{\prime}=k A M_1(k$ 不依赖于点 $T_1$ 和 $T_2$ 的位置). 于是, 不论点 $T_1 、 T_2$ 的位置如何变化, 所得到的 $\triangle A M_1 M_2$ 都彼此为同位相似 (因为 $M_2, M_1$ 分别位于直线 $l_1 、 l_2$ 上, 它们都经过点 $A$, 且位于直线 $A B_1$ 的不同侧, 而比值 $A M_2$ : $A M_1$ 为常数). 由此即知, 线段 $M_1 M_2$ 的中点位于一条固定的经过点 $A$ 的直线上.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 圆内接四边形 $A B C D$ 对角线 $B D$ 上的点 $K$ 满足 $\angle A K B=\angle A D C, I 、 I^{\prime}$ 分别为 $\triangle A C D 、 \triangle A B K$ 的内心, 线段 $I I^{\prime}$ 与 $B D$ 交于点 $X$. 证明 : $A 、 X 、 I 、 D$ 四点共圆.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c6a5.png>), 由 $\angle A K B=\angle A D C, \angle A B K= \angle A C D$, 知 $\triangle A K B \backsim \triangle A D C . \triangle A K B$ 绕点 $A$ 旋转 $\angle B A C$ 再放缩变为 $\triangle A D C$, 因此, $\angle I A I^{\prime}=\angle B A C$, $\frac{A I}{A I}=\frac{A C}{A B}$. 故 $\triangle A I I^{\prime} \backsim \triangle A C B$. 于是, $\angle A I X= \angle A C B=\angle A D X$. 从而, $A 、 X 、 I 、 D$ 四点共圆.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 在圆内接四边形 $A B C D$ 中, 已知 $A B=B C, A D=3 D C, R$ 为对角线 $B D$ 上一点, 且满足 $D R=2 R B, Q$ 为线段 $A R$ 上一点, 且满足 $\angle A D Q= \angle B D Q$. 设 $P$ 为线段 $A B$ 与直线 $D Q$ 的交点.
+若 $\angle A B Q+\angle C B D= \angle Q B D$, 求 $\angle A P D$ 的度数.
+%%<SOLUTION>%%
+解: 如图(<FilePath:./figures/fig-c6a6.png>), 以 $B$ 为旋转中心旋转 $\triangle B C D$, 使
+$B C$ 与 $B A$ 重合, 点 $D$ 转到 $D^{\prime}$.
+因为四边形 $A B C D$ 为圆内接四边形, 所以, $\angle B A D^{\prime}+\angle D A B=\angle B C D+\angle D A B=180^{\circ}$. 从而, $D^{\prime} 、 A 、 D$ 三点共线.
+设 $H$ 为 $B Q$ 与 $A D$ 的交点.
+由 $\angle D^{\prime} B A=\angle D B C$, 有 $\angle D^{\prime} B Q=\angle D^{\prime} B A+ \angle A B Q=\angle D B C+\angle A B Q=\angle Q B D$. 故 $\triangle D^{\prime} B H \cong \triangle D B H \Rightarrow D^{\prime} H=H D$. 因为 $A D=3 D C=3 D^{\prime} A$, 所以, $D^{\prime} H=\frac{1}{2} D^{\prime} D=2 D^{\prime} A$. 于是, $\frac{A H}{A D}=\frac{1}{3}$. 视直线
+$R A$ 为 $\triangle B H D$ 的截线, 由梅涅劳斯定理有 $\frac{D R}{R B} \cdot \frac{B Q}{Q H} \cdot \frac{H A}{A D}=1$. 因此, $\frac{B Q}{Q H}= \frac{3}{2}$. 又 $\angle A D Q=\angle B D Q$, 则 $\frac{B D}{D H}=\frac{B Q}{Q H}=\frac{3}{2}$. 因此, $B D=\frac{3}{2} D H=3 A H=D A$. 于是, $D P \perp A B \Rightarrow \angle A P D=90^{\circ}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. $\triangle A B C$ 的外接圆的圆心为 $O, A^{\prime}$ 是边 $B C$ 的中点, $A A^{\prime}$ 与外接圆交于点 $A^{\prime \prime}, A^{\prime} Q_a \perp A O$, 点 $Q_a$ 在 $A O$ 上, 过点 $A^{\prime \prime}$ 的外接圆的切线与 $A^{\prime} Q_a$ 相交于点 $P_a$. 用同样的方式, 可以构造点 $P_b$ 和 $P_c$. 证明: $P_a 、 P_b 、 P_c$ 三点共线.
+%%<SOLUTION>%%
+证明: 可以证明它们都在 $\odot O$ 与九点圆的根轴上.
+如图(<FilePath:./figures/fig-c6a7.png>), 把 $\triangle A B C$ 位似变换到 $\triangle A^{\prime} B^{\prime} C^{\prime}$. $\triangle A B C$ 的重心为位似中心, 位似比为 $-\frac{1}{2}$. 在这种变换下, $A O$ 变成了 $A^{\prime} N$, 其中 $N$ 是九点圆的圆心.
+所以, $A^{\prime} N / / A O, A^{\prime} P_a \perp A^{\prime} N$. 故 $A^{\prime} P_a$. 是九点圆的切线.
+易知 $\angle O A B+\angle C=90^{\circ}$, 则 $\angle B A A^{\prime}+ \angle A^{\prime} A O+\angle C=90^{\circ}$ (不妨设 $A B \leqslant A C$ ). 又
+$\angle P_a A^{\prime \prime} A^{\prime}=\angle B A A^{\prime}+\angle C, \angle P_a A^{\prime} A^{\prime \prime}=90^{\circ}- \angle A^{\prime} A O$, 所以, $\angle P_a A^{\prime \prime} A^{\prime}=\angle P_a A^{\prime} A^{\prime \prime}$. 故 $A^{\prime} P_a= A^{\prime \prime} P_a$. 所以, $P_a$ 在 $\odot O$ 与九点圆的根轴上.
+同理, $P_b 、 P_c$ 也在 $\odot O$ 与九点圆的根轴上.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 学设 $E 、 F$ 分别为正方形 $A B C D$ 的边 $B C 、 C D$ 上的点, $A E 、 A F$ 分别与对角线 $B D$ 交于 $P 、 Q$ 两点, 且 $B E+D F=E F$. 求证: 五边形 $P E C F Q$ 内接于圆.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c6a8.png>), 以 $A$ 为旋转中心逆时针旋转 $90^{\circ}$, 则 $B \rightarrow D$, 设 $E \rightarrow E^{\prime}$, 则 $A E^{\prime}$ 垂直且等于 $A E$, $D E^{\prime}$ 垂直且等于 $B E$, 因而 $E^{\prime}$ 在 $C D$ 的延长线上, 所以 $B E+F D=D E^{\prime}+F D=E^{\prime} F$, 于是, $B E+D F=E F \Leftrightarrow E^{\prime} F=E F \Leftrightarrow \triangle A E^{\prime} F \cong \triangle A E F \Leftrightarrow \angle E^{\prime} A F=\angle E A F \Leftrightarrow \angle E A F=\frac{1}{2} \angle E A E^{\prime} \Leftrightarrow \angle E A F=45^{\circ}$. 注意到"任意一条直线与其像直线的交角等于旋转角" $A F$. 是 $A E$ 在旋转下的像.
+故 $\angle A E Q=45^{\circ}$, 所以 $E Q \perp Q F$; 同理 $E P \perp P F$. 即 $P 、 E$ 、 $C, F$ 和 $E 、 C 、 F 、 Q$ 分别四点共圆, 从而五边形 $P E C F Q$ 内接于圆.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 在 $\triangle A B C$ 中, $A B=A C, \angle A=20^{\circ}$, 点 $D 、 E$ 分别在腰 $A B 、 A C$ 上, 且 $\angle C B E=60^{\circ}, \angle D C B=50^{\circ}$, 求 $\angle D E B$.
+%%<SOLUTION>%%
+解: 如图(<FilePath:./figures/fig-c6a9.png>), 注意到条件 $\angle D C B=50^{\circ}$ 和 $\angle A=20^{\circ}$, 得 $B D=B C$, 即 $\triangle B C D$ 也为等腰三角形, 于是以 $\triangle B C D$ 的对称轴为反射轴作轴反射变换, 则 $D \rightarrow C$; 设直线 $B E$ 的像直线交 $A C$ 于 $F$, 则 $\angle F B C=\angle E B D=20^{\circ}$, $\angle B F C=80^{\circ}=\angle F C B$, 所以 $B F=B C=B D$. 又 $\angle F B D=80^{\circ}-20^{\circ}=60^{\circ}$, 因此 $\triangle D B F$ 是一个正三角形, 所以 $F D=F B$, 又易知 $\angle F B E= \angle B E F\left(=40^{\circ}\right)$, 从而 $F E=F B$, 于是 $F$ 为 $\triangle B E D$ 的外心, 故 $\angle D E B= \frac{1}{2} \angle D F B=30^{\circ}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 将一张正方形纸片 $A B C D$ 折叠, 使 $D$ 点重合于边 $B C$ 上一点 $D^{\prime}, A$ 点折叠后的位置是 $A^{\prime}, A B$ 与 $A^{\prime} D^{\prime}$ 交于 $E$, 设 $\triangle B D^{\prime} E$ 的内切圆半径为 $r$. 证明: $A^{\prime} E=r$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c6a10.png>), 设折痕所在直线为 $l$, 轴反射变换, 则 $A \rightarrow A^{\prime}, D \rightarrow D^{\prime}$; 再设 $B \rightarrow B^{\prime}, C \rightarrow C^{\prime}$, 因 $D^{\prime} \rightarrow D$, 而 $D^{\prime}$ 在 $B C$ 上, 所以 $D$ 在 $B^{\prime} C^{\prime}$ 上, 又 $D$ 到 $A B$ 、 $B C 、 A^{\prime} D^{\prime}$ 的距离都等于正方形的边长, 所以 $D$ 为 $\triangle B E D^{\prime}$ 的旁心.
+因 $\triangle B E D^{\prime}$ 为直角三角形, 于是, $r=\frac{1}{2}\left(B E+B D^{\prime}-E D^{\prime}\right)=\frac{1}{2}\left(B E+B D^{\prime}+E D^{\prime}-\right. \left.2 E D^{\prime}\right)=\frac{1}{2}\left(A B+B C-2 E D^{\prime}\right)=A B-E D^{\prime}=A^{\prime} D^{\prime}-E D^{\prime}=A^{\prime} E$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 设 $B 、 C$ 是线段 $A D$ 上的两点,且 $A B=C D$. 求证: 对于平面上任意一点 $P$, 都有 $P A+P D \geqslant P B+P C$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c6a11.png>), 设线段 $A D$ 的中点为 $M$, 以 $M$ 为旋转中心作中心反射, 则 $D \rightarrow A, C \rightarrow B$, 设 $P \rightarrow P^{\prime}$, 则 $P^{\prime} A=P D, P^{\prime} B=P C$. 因 $B$ 是 $\triangle A P^{\prime} P$ 内部的一点, 所以 $P A+P^{\prime} A \geqslant P B+P^{\prime} B$, 故 $P A+P D \geqslant P B+P C$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 点 $D$ 是 $\triangle A B C$ 的外接圆的不包含点 $A$ 的弧 $\overparen{B C}$ 上的一点, 且 $D \neq B$, $D \neq C$, 在射线 $B D$ 和 $C D$ 上分别取点 $E 、 F$, 使 $B E=-A C, C F=A B$. 再设 $M$ 是线段 $E F$ 的中点.
+证明: $\angle B M C$ 是直角.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c6a12.png>), $M$ 为旋转中心作中心反射, 则 $E \rightarrow F, F \rightarrow E$; 设 $B \rightarrow B^{\prime}$, $C \rightarrow C^{\prime}$, 则 $B^{\prime} C^{\prime}=B C$, 则 $E C^{\prime}=C F=A B$, 又 $E C^{\prime} / / C F$, 所以 $\angle B E C^{\prime}= \angle B D F=\angle B A C$, 因为 $E B=A C$, 则 $\triangle E C^{\prime} B \cong \triangle A B C$, 所以 $B C^{\prime}=B C$; 同理, $B^{\prime} C=B C$. 因此, $B C^{\prime} B^{\prime} C$ 是一个菱形, 从而 $B B^{\prime} \perp C C^{\prime}$, 故 $B M \perp M C$ 成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 已知边长分别为 $a 、 b 、 c$ 的 $\triangle A B C$ 内接于 $\odot O, \odot O_1$ 内切于 $\odot O$, 切点 $T$ 在 $B C$ 弧上, 由点 $A 、 B 、 C$ 分别引 $\odot O_1$ 的切线长顺次为 $\alpha 、 \beta 、 \lambda$. 证明: $a \alpha=b \beta+c \gamma$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c6a13.png>), 设两圆相切于点 $T, A T, B T$, $C T$ 分别交小圆于 $A_1, B_1, C_1$. 则小圆与大圆关于点 $T$ 位似.
+设小圆、大圆半径之比是 $k$, 那么 $k$ 就是位似比.
+由圆幂定理: $\alpha^2=A A_1 \cdot A T, A T$ 与 $A_1 T$ 是位似变换 $F$ 的对应线段, 故 $A_1 T=k \cdot A T$. 所以 $A A_1= (1-k) A T$, 即 $A T=\frac{\alpha}{\sqrt{1-k}}$. 同理 $B T=\frac{\beta}{\sqrt{1-k}}$, $C T=\frac{\gamma}{\sqrt{1-k}}$. 由托勒密定理得 $a \cdot A T=b \cdot B T+c \cdot C T$. 将三式代入得: $a \alpha=b \beta+c \gamma$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 由 $\triangle A B C$ 向外作 $\triangle B C D$ 和 $\triangle A C E$, 使得: $A E=B D$ 且 $\angle B D C+\angle A E C= 180^{\circ}, F$ 是线段 $A B$ 上的一点满足 $\frac{A F}{F B}=\frac{D C}{C E}$. 证明: $\frac{D E}{C D+C E}=\frac{E F}{B C}=\frac{F D}{A C}$.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c6a14.png>), 作 $\triangle A E C_1 \cong \triangle B D C$, $\triangle B D C_2 \cong \triangle A E C$, 因为 $A E=B D, \angle B D C+ \angle A E C=180^{\circ}$, 所以 $C, E, C_1$ 及 $C, D, C_2$ 均三点共线.
+这样 $\triangle A C C_1$ 与 $\triangle B C C_2$ 三边对应相等.
+则 $\triangle A C C_1 \cong \triangle B C C_2$.
+设 $C C_1, A B$ 的中垂线交于点 $O$. 可以证明: $O$ 即是将 $\triangle A C_1 C$ 旋转至 $\triangle B C C_2$ 的旋转中心.
+因为 $O C_1=O C, O A=O B, A C_1=B C$, 所以
+$\triangle O A C_1 \cong \triangle O B C$. 所以 $\angle C_1 O A=\angle C O B$, $\angle C_1 O C=\angle A O B$. 而 $\angle O A C_1=\angle O B C, \angle C_1 A C=\angle C B C_2$, 所以 $\angle O A C=\angle O B C_2$. 又因为 $O A=O B, A C=B C_2, \triangle O A C \cong \triangle O B C_2$. 所以
+$O C=O C_2, \angle A O C=\angle B O C_2$. 这表明 $C_1 、 A 、 C$ 绕 $O$ 旋转 $\angle A O B$ 后所得的像点依次是 $C 、 B 、 C_2$. 所以 $\triangle B C C_2$ 是 $\triangle A C_1 C$ 的像.
+因为 $\triangle O C_1 C, \triangle O A B, \triangle O C C_2$ 是顶角相同的等腰三角形, 故它们相似 (其中 $\triangle O C_1 C$ 与 $\triangle O C C_2$ 全等). 因为 $\frac{C_1 E}{E C}=\frac{C D}{D C_2}=\frac{A F}{F B}=\frac{D C}{C E}$, 由此知 $D$ 是 $E$ 旋转后的像.
+所以 $\triangle O E C \backsim \triangle O F B$. 所以 $\angle E O C=\angle F O B, \frac{O E}{O F}=\frac{O C}{O B}$. 又得 $\angle F O E=\angle B O C, \triangle F O E \backsim \triangle B O C$. 所以 $\frac{E F}{B C}=\frac{O E}{O C}$. 同理可证得: $\frac{F D}{A C}=\frac{O D}{O C}$.
+因为 $D$ 是 $E$ 旋转后的像, 所以 $O E=O D$, 且有 $\triangle O E D \backsim \triangle O C C_1$.
+所以 $\frac{D E}{C C_1}=\frac{O E}{O C_1}=\frac{O E}{O C}, C C_1=C_1 E+C E=C D+C E$. 即 $\frac{D E}{C D+C E}=\frac{E F}{B C}= \frac{F D}{A C}=\frac{O E}{O C}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 已知圆 $W$ 的中心为 $O, B C$ 为直径.
+点 $A$ 位于圆 $W$ 上使得 $0^{\circ}<\angle A O B< 120^{\circ}$. 设 $D$ 是不包含 $C$ 点的弧 $\overparen{A B}$ 的中点.
+直线 $l$ 通过 $O$ 且平行于直线 $A D$, 设 $l$ 交直线 $A C$ 于 $J$. 线段 $O A$ 的垂直平分线交圆 $W$ 于 $E$ 和 $F$. 求证: $J$ 是 $\triangle C E F$ 的内心.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c6a15.png>), 连结 $O D 、 D F 、 E J 、 O E 、 E A$. 我们首先证明 $J$ 位于 $\angle F E C$ 的内角平分线上.
+事实上, 因为 $E$ 和 $F$ 是关于 $P$ 的一对反射点, $D 、 J$ 是关于 $P$ 的另一对反射点 (四边形 $A D O J$ 是平行四边形), 所以 $\angle F E J=\angle D F E$.
+因此我们只需证明 $\angle D F E=\frac{1}{2} \angle F E C$. 这等价于证明 $\angle D O E=\frac{1}{2} \angle F O C$. …11. 由已知条件易知
+$\triangle A O E$ 是等边三角形, 由于 $\angle D O E=\angle A O E-\angle A O D=60^{\circ}-\frac{1}{2} \angle A O B= \frac{1}{2}\left(180^{\circ}-\left(\angle A O B+60^{\circ}\right)\right)=\frac{1}{2}\left(180^{\circ}-(\angle A O B+\angle F O A)\right)=\frac{1}{2} \angle F O C$.
+(1) 式得证, 从而证得 $J$ 位于 $\angle F E C$ 的内角平分线上.
+又易见 $\overparen{A F}=\overparen{A E}$, 故 $J$ 位于 $\angle F C E$ 的平分线上.
+故 $J$ 是 $\triangle C E F$ 的内心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16. 设 $A B C D E F$ 是凸六边形, $A B=B C=C D, D E=E F=F A, \angle B C D= \angle E F A=60^{\circ}, G 、 H$ 是六边形内两点, 使 $\angle A G B=\angle D H E=120^{\circ}$. 求证: $A G+G B+G H+D H+H E \geqslant C F$.
+%%<SOLUTION>%%
+证明: 用旋转法来证明本题.
+如图(<FilePath:./figures/fig-c6a16.png>), 分别以 $A B 、 D E$ 为边向六边形外作正 $\triangle A B M$ 和 $\triangle D E N$. 将 $\triangle A G B$ 绕 $A$ 逆时针旋转 $60^{\circ}$ 到 $\triangle A G^{\prime} M$, 则 $\triangle A G G^{\prime}$ 为正三角形, 故 $A G=G G^{\prime}, G B=G^{\prime} M$. 同样, 将 $\triangle E H D$ 顺时针旋转 $60^{\circ}$ 到 $\triangle E H^{\prime} N$,
+则 $\triangle E H H^{\prime}$ 为正三角形.
+于是, $E H=H H^{\prime}, H D=H^{\prime} N$. 连 $M N$, 则多边形 $A M B C D N E F$ 关于轴 $B E$ 对称, $M N=C F$. 另一方面, 由 "两点间线段最短" 有 $A G+G B+G H+D H+H E=M G^{\prime}+G^{\prime} G+G H+H H^{\prime}+H^{\prime} N \geqslant M N$. 从而 $A G+G B+G H+D H+H E \geqslant C F$.
+%%PROBLEM_END%%
+
+

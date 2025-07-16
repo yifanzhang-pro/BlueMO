@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise16.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 证明:不存在一个 17 项的数列, 它的每 7 个连续项之和为正, 每 11 个连续项之和为负.",
+    "solution": "如果有这样一个 17 项的数列, 设为 $a_1, a_2, \\cdots, a_{17}$. 它的每 7 个连续项之和为正, 每 11 个连续项之和为负.\n在 $7 \\times 11$ 的矩阵\n$$\n\\left(\\begin{array}{ccccc}\na_1 & a_2 & a_3 & \\cdots & a_{11} \\\\\na_2 & a_3 & a_4 & \\cdots & a_{12} \\\\\n\\cdots & \\cdots & \\cdots & \\cdots & \\cdots \\\\\na_7 & a_8 & a_9 & \\cdots & a_{17}\n\\end{array}\\right)\n$$\n中,一方面, 每一行的元素和为负的, 因此矩阵中所有数的和是负的.\n另一方面, 每一列的元素和是正的, 因此矩阵中所有数的和应为正的.\n两方面的结果矛盾, 从而命题得证.",
+    "remark": "",
+    "figures": []
+}

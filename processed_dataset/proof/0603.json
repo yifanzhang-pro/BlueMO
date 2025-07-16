@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 正整数 $n$ 满足如下性质: 在 $1,2, \\cdots, 100$ 中任取 $n$ 个不同的奇数, 必有两个的和为 102 . 求 $n$ 的最小值.",
+    "solution": "$n$ 的最小值为 27 . 首先证明 $n \\geqslant 27$. 若 $n \\leqslant 26$, 则令 $A=\\{1,3,5, \\cdots$, $2 n-1\\}$, 则 $|A|=n$, 但 $A$ 中任何两个数的和: $(2 i-1)+(2 j-1)=2(i+j)- 2 \\leqslant 2(26+25)-2=100<102$ (其中 $0<i<j \\leqslant n \\leqslant 26$ ), 矛盾.\n其次, 当 $n=27$ 时, 令 $A_i=\\{2 i+1,101-2 i\\}(i=1,2, \\cdots, 24), A_{25}=\\{1\\}, A_{26}= \\{51\\}$. 将取出的 $n \\geqslant 27$ 个数归人上述 26 个集合, 至少有一个集合含有其中的两个数, 这两个数只能在某个 $A_i(1 \\leqslant i \\leqslant 24)$ 中, 这两个数的和为 102 .",
+    "remark": "",
+    "figures": []
+}

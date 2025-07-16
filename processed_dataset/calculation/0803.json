@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题12. 求函数 $y=x+4+\\sqrt{5-x^2}$ 的最小值和最大值.",
+    "solution": "设 $x=\\sqrt{5} \\cos \\theta, \\theta \\in[0, \\pi]$, 则 $y=\\sqrt{5} \\cos \\theta+4+\\sqrt{5} \\sin \\theta= \\sqrt{10} \\sin \\left(\\theta+\\frac{\\pi}{4}\\right)+4$, 由 $\\theta+\\frac{\\pi}{4} \\in\\left[\\frac{\\pi}{4}, \\frac{5 \\pi}{4}\\right]$, 得 $\\sin \\left(\\theta+\\frac{\\pi}{4}\\right) \\in\\left[-\\frac{\\sqrt{2}}{2}, 1\\right]$, 当 $\\theta=\\pi$ 时, $y_{\\text {min }}=4-\\sqrt{5}$; 当 $\\theta=\\frac{\\pi}{4}$ 时, $y_{\\text {max }}=4+\\sqrt{10}$.",
+    "remark": "",
+    "figures": []
+}

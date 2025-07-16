@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise11.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 已知函数 $f(x)=|\\sin x|$ 的图像与直线 $y=k x(k>0)$ 有且仅有三个交点, 交点的横坐标的最大值为 $\\alpha$, 求证: $\\frac{\\cos \\alpha}{\\sin \\alpha+\\sin 3 \\alpha}=\\frac{1+\\alpha^2}{4 \\alpha}$.",
+    "solution": "$f(x)$ 的图像与直线 $y=k x(k>0)$ 在 $(-\\infty, 0)$ 上无交点, 在 $[0, \\pi]$ 上恰有两个交点, 因此在 $\\left(\\pi, \\frac{3 \\pi}{2}\\right)$ 内必然相切, 根据题意, 切点的坐标可写为 $(\\alpha$, $-\\sin \\alpha)$. 当 $x \\in\\left(\\pi, \\frac{3 \\pi}{2}\\right)$ 时, 由于 $f^{\\prime}(x)=(-\\sin x)^{\\prime}=-\\cos x$, 故 $-\\cos \\alpha= \\frac{-\\sin \\alpha}{\\alpha}$, 即 $\\alpha=\\tan \\alpha$. 因此\n$$\n\\frac{\\cos \\alpha}{\\sin \\alpha+\\sin 3 \\alpha}=\\frac{\\cos \\alpha}{2 \\sin 2 \\alpha \\cos \\alpha}=\\frac{1}{2 \\sin 2 \\alpha}=\\frac{\\cos ^2 \\alpha+\\sin ^2 \\alpha}{4 \\sin \\alpha \\cos \\alpha}=\\frac{1+\\tan ^2 \\alpha}{4 \\tan \\alpha}=\\frac{1+\\alpha^2}{4 \\alpha} \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

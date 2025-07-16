@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter3.tex",
+    "text": "复数与方程.\n在复数集中,有关方程的试题常考常新, 对于复系数方程, 其韦达定理仍然适用,而实系数方程的虚根以共轭形式成对出现.\n一、实系数方程 $a x^2+b x+c(a \\neq 0)$ 在复数集 $\\mathrm{C}$ 中有两个根\n$$\nx=\\frac{-b \\pm \\mathrm{i} \\sqrt{-\\left(b^2-4 a c\\right)}}{2 a}\\left(b^2-4 a c<0\\right) .\n$$\n二、复平面上的曲线方程.\n如果复数 $z$ 对应着复平面上一点 $Z(x, y)$, 就可得出一些常用曲线的复数形式的方程:\n(1) 方程 $\\left|z-z_0\\right|=r$ 表示以 $Z_0$ 为圆心 $r$ 为半径的圆.\n(2) 方程 $\\left|z-z_1\\right|=\\left|z-z_2\\right|$ 表示线段 $Z_1 Z_2$ 的垂直平分线.\n(3) 方程 $\\left|z-z_1\\right|+\\left|z-z_2\\right|=2 a\\left(a>0,2 a>\\left|Z_1 Z_2\\right|\\right)$ 表示以 $Z_1 、 Z_2$ 为焦点, $a$ 为长半轴的椭圆.\n若 $2 a=\\left|Z_1 Z_2\\right|$, 则此方程表示以 $Z_1 、 Z_2$ 为端点的线段.\n(4) 方程 ||$z-z_1|-| z-z_2||=2 a\\left(0<2 a<\\left|Z_1 Z_2\\right|\\right)$ 表示以 $Z_1 、 Z_2$ 为焦点, 实轴长为 $2 a$ 的双曲线.\n(5)复平面上的特殊区域.\n用一些复数模的不等式, 就可表示复平面上的特殊区域.\n1) $\\left|z-z_0\\right|<r$ 表示以 $Z_0$ 为圆心, $r$ 为半径的圆的内部(不包括周界).\n2) $r \\leqslant\\left|z-z_0\\right| \\leqslant R$ 表示以 $Z_0$ 为圆心,不小于 $r$ 且不大于 $R$ 的圆环(包括周界).\n3) $\\operatorname{Re}(z)>0$ 表示复平面的右半平面, $\\operatorname{Im}(z)<0$ 表示复平面的下半平面.",
+    "figures": []
+}

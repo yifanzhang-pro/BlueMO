@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 已知一棵树 $T$ 有3个3度顶点,一个2度定点, 其余的都是悬挂点.\n1) $T$中有几个悬挂点? (2)试画出两棵满足上述度数要求的不同构的树.",
+    "solution": "(1) 设 $T$ 中有 $x$ 个悬挂点, 则 $T$ 的顶点数 $n=3+1+x$, 边数 $e=n- 1=x+3$. $\\sum_{i=1}^n d\\left(v_i\\right)=3 \\times 3+2 \\times 1+1 \\times x=11+x$, 故 $11+x=2(x+3)$, $x=5$.\n(2) 如图(<FilePath:./images/volume12/figures/fig-c4a4.png>)所示的两棵树均满足要求,但它们不同构.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c4a4.png"
+    ]
+}

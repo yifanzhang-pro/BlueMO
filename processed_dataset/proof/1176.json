@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 设 $a, b, c>0$, 求证: $\\left(a+\\frac{1}{b}\\right)\\left(b+\\frac{1}{c}\\right)\\left(c+\\frac{1}{a}\\right) \\geqslant 8$.",
+    "solution": "由均值不等式得 $\\left(a+\\frac{1}{b}\\right)\\left(b+\\frac{1}{c}\\right)\\left(c+\\frac{1}{a}\\right) \\geqslant 2 \\sqrt{\\frac{a}{b}} \\cdot 2 \\sqrt{\\frac{b}{c}}$. $2 \\sqrt{\\frac{c}{a}}=8$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例1. 如图(<FilePath:./images/volume7/figures/fig-c3i3.png>), $\\odot I$ 切 $\\triangle A B C$ 的边 $B C 、 C A$ 、 $A B$ 于 $A^{\\prime} 、 B^{\\prime} 、 C^{\\prime}$. 求证: $A A^{\\prime} 、 B B^{\\prime} 、 C C^{\\prime}$ 必交于一点 $Q$, 则 $\\sum \\frac{A Q}{A A^{\\prime}}=2$.",
+    "solution": "证明:由切线性质, 可设 $A C^{\\prime}=A B^{\\prime}=x$, $B C^{\\prime}=B A^{\\prime}=y, C A^{\\prime}=C B^{\\prime}=z$, 则\n$$\n\\frac{A^{\\prime} B}{A^{\\prime} C} \\cdot \\frac{B^{\\prime} C}{B^{\\prime} A} \\cdot \\frac{C^{\\prime} A}{C^{\\prime} B}=\\frac{y}{z} \\cdot \\frac{z}{x} \\cdot \\frac{x}{y}=1,\n$$\n由 ceva 定理逆定理知, $A A^{\\prime} 、 B B^{\\prime} 、 C C^{\\prime}$ 共点 $\\mathrm{Q}$.\n考虑直线 $C C^{\\prime}$ 截 $\\triangle A B A^{\\prime}$, 由梅氏定理有\n$$\n\\frac{A C^{\\prime}}{C^{\\prime} B} \\cdot \\frac{B C}{C A^{\\prime}} \\cdot \\frac{A^{\\prime} Q}{Q A}=\\frac{x}{y} \\cdot \\frac{y+z}{z} \\cdot \\frac{A^{\\prime} Q}{Q A}=1 \\Rightarrow \\frac{A^{\\prime} Q}{Q A}=\\frac{y z}{x(y+z)} .\n$$\n所以\n$$\n\\frac{A A^{\\prime}}{A Q}=\\frac{A Q+Q A^{\\prime}}{A Q}=\\frac{x y+y z+z x}{x(y+z)} .\n$$\n同理 $\\frac{B B^{\\prime}}{B Q}=\\frac{x y+y z+z x}{y(z+x)}, \\frac{C C^{\\prime}}{C Q}=\\frac{x y+y z+z x}{z(x+y)}$.\n故 $\\quad \\sum \\frac{A Q}{A A^{\\prime}}=\\frac{x(y+z)+y(z+x)+z(x+y)}{x y+y z+z x}=2$.",
+    "remark": "注:这一点 $Q$ 通常称之为\"切心\".",
+    "figures": [
+        "./images/volume7/figures/fig-c3i3.png"
+    ]
+}

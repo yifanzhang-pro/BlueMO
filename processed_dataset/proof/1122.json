@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例11. 设 $n$ 为正整数, $x_1 \\leqslant x_2 \\leqslant \\cdots \\leqslant x_n$ 为实数, 证明:\n(1) $\\left(\\sum_{i, j=1}^n\\left|x_i-x_j\\right|\\right)^2 \\leqslant \\frac{2\\left(n^2-1\\right)}{3} \\sum_{i, j=1}^n\\left(x_i-x_j\\right)^2$;\n(2) 第 (1) 小题等号成立的充要条件是 $x_1, x_2, \\cdots, x_n$ 为等差数列.",
+    "solution": "证明:(1) 不失一般性, 可设 $\\sum_{i=1}^n x_i=0$, 得\n$$\n\\sum_{i, j=1}^n\\left|x_i-x_j\\right|=2 \\sum_{i<j}\\left(x_j-x_i\\right)=2 \\sum_{i=1}^n(2 i-n-1) x_i .\n$$\n由柯西不等式, 得\n$$\n\\begin{aligned}\n\\left(\\sum_{i, j=1}^n\\left|x_i-x_j\\right|\\right)^2 & \\leqslant 4 \\sum_{i=1}^n(2 i-n-1)^2 \\sum_{i=1}^n x_i^2 \\\\\n& =4 \\times \\frac{n(n-1)(n+1)}{3} \\sum_{i=1}^n x_i^2 .\n\\end{aligned}\n$$\n另一方面,\n$$\n\\sum_{i, j=1}^n\\left(x_i-x_j\\right)^2=n \\sum_{i=1}^n x_i^2-\\sum_{i=1}^n x_i \\sum_{j=1}^n x_j+n \\sum_{j=1}^n x_j^2=2 n \\sum_{i=1}^n x_i^2,\n$$\n从而\n$$\n\\left(\\sum_{i, j=1}^n\\left|x_i-x_j\\right|\\right)^2 \\leqslant \\frac{2\\left(n^2-1\\right)}{3} \\sum_{i, j=1}\\left(x_i-x_j\\right)^2 ;\n$$\n(2) 如果等号成立, 则对某个 $k, x_i=k(2 i-n-1)$, 则 $x_1, x_2, \\cdots, x_n$ 为等差数列.\n另一方面, 如果 $x_1, x_2, \\cdots, x_n$ 为等差数列, 公差为 $d$, 则\n$$\nx_i=\\frac{d}{2}(2 i-n-1)+\\frac{x_1+x_n}{2} .\n$$\n将每个 $x_i$ 减去 $\\frac{x_1+x_n}{2}$, 就有 $x_i=\\frac{d}{2}(2 i-n-1)$, 且 $\\sum_{i=1}^n x_i=0$, 这时等号成立.",
+    "remark": "",
+    "figures": []
+}

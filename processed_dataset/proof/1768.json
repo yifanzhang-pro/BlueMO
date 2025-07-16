@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 在圆内接四边形 $A B C D$ 中, $F 、 G$ 分别为 $A C 、 B D$ 的中点.\n[1] 证明: 若 $\\angle B$ 与 $\\angle D$ 的平分线的交点恰好在 $A C$ 上, 则 $\\frac{1}{4} A C \\cdot B D= \\sqrt{A G \\cdot B F} \\cdot C G \\cdot D F$. (2) (1) 的逆命题一定成立吗?",
+    "solution": "证明: [1] 如图(<FilePath:./images/volume7/figures/fig-c1a1-1.png>), 设 $E$ 为 $\\angle B$ 与 $\\angle D$ 平分线的交点.\n由角分线定理有 $\\frac{A B}{B C}=$ i $\\frac{A E}{E C}=\\frac{A D}{D C} \\cdots$ (1). 由托勒密定理有 $A B \\cdot C D+A D \\cdot B C=A C \\cdot B D$. 结合式 (1) 有 $2 B C \\cdot A D=A C \\cdot B D \\cdots$ (2). $2 A B \\cdot C D=A C \\cdot B D \\cdots$ (3).\n由式(2)得 $\\frac{F A}{A D}= \\frac{A C}{2 A D}=\\frac{B C}{B D}$. 又 $\\angle F A D=\\angle C A D=\\angle C B D$, 故 $\\triangle F A D \\backsim \\triangle C B D$. 同理, $\\triangle F A B \\backsim \\triangle C D B$. 因此, $\\triangle F A D \\backsim \\triangle F B A$, 有 $\\frac{F A}{F D}=\\frac{F B}{F A}$. 故 $\\frac{1}{4} A C^2=F B \\cdot F D \\cdots$ (4). \n又由式 (1) 知 $\\frac{D A}{A B}=\\frac{D C}{C B}$, 这意味着 $\\angle A$ 与 $\\angle C$ 平分线的交点在 $B D$ 上.\n仿上述证法有, $\\frac{1}{4} B D^2=A G \\cdot C G \\cdots$ (5). (4) $\\times$(5)即可得证.\n[2] [1] 的逆命题不一定成立.\n如图(<FilePath:./images/volume7/figures/fig-c1a1-2.png>), 设四边形 $A B C D$ 为矩形, $A B>B C$. 显然, $A G=B F=C G=D F= \\frac{1}{2} A C=\\frac{1}{2} B D$, 满足 $\\left(\\frac{1}{4} A C \\cdot B D\\right)^2=A G \\cdot B F \\cdot C G \\cdot D F$. 但 $\\frac{A B}{B C}>1>\\frac{A D}{D C}$,\n说明 $\\angle B$ 与 $\\angle D$ 的平分线不在 $A C$ 相交.\n因此, 逆命题为假命题.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1a1-1.png",
+        "./images/volume7/figures/fig-c1a1-2.png"
+    ]
+}

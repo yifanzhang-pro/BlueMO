@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 方程 $x^{10}+(13 x-1)^{10}=0$ 的 10 个复数根分别为 $r_1, \\overline{r_1}, r_2, \\overline{r_2}, r_3, \\overline{r_3}$, $r_4, \\overline{r_4}, r_5, \\overline{r_5}$. 求代数式 $\\frac{1}{r_1 \\overline{r_1}}+\\frac{1}{r_2 \\overline{r_2}}+\\cdots+\\frac{1}{r_5 \\overline{r_5}}$ 的值.",
+    "solution": "设 $\\varepsilon=\\cos \\frac{\\pi}{10}+\\mathrm{i} \\sin \\frac{\\pi}{10}$, 则 $\\varepsilon^{10}=-1$.\n由方程 $(13 x-1)^{10}=-x^{10}$, 我们可设 $13 r_k-1=r_k \\cdot \\varepsilon^{2 k-1}, k=1,2, \\cdots, 5$. 于是 $\\frac{1}{r_k}=13-\\varepsilon^{2 k-1}$. 所以, 有\n$$\n\\begin{aligned}\n\\sum_{k=1}^5 \\frac{1}{r_k \\overline{r_k}} & =\\sum_{k=1}^5\\left(13-\\varepsilon^{2 k-1}\\right)\\left(13-\\bar{\\varepsilon}^{2 k-1}\\right)=\\sum_{k=1}^5\\left[170-13\\left(\\varepsilon^{2 k-1}+\\bar{\\varepsilon}^{2 k-1}\\right)\\right] \\\\\n& =850-13 \\sum_{k=1}^5\\left(\\varepsilon^{2 k-1}+\\bar{\\varepsilon}^{2 k-1}\\right) \\\\\n& =850-26\\left(\\cos \\frac{\\pi}{10}+\\cos \\frac{3 \\pi}{10}+\\cos \\frac{5 \\pi}{10}+\\cos \\frac{7 \\pi}{10}+\\cos \\frac{9 \\pi}{10}\\right)=850 .\n\\end{aligned}\n$$\n于是, 所求代数式的值为 850 .",
+    "remark": "",
+    "figures": []
+}

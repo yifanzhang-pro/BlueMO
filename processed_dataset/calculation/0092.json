@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题15 设 $S \\subseteq\\{1,2, \\cdots, 2002\\}$. 对任意 $a, b \\in S$ ( $a 、 b$ 可以相同), 总有 $a b \\notin S$, 求 $|S|$ 的最大值.",
+    "solution": "首先, $1 \\notin S$. 其次, 若 $a \\in\\{2,3,4,5,6\\}$ 且 $a \\in S$, 则以下 45 对数对中, 每对的两个数不能同时属于 $S:(1, a),(2,2 a), \\cdots,\\left(a-1,(a-1) a\\right),(a+1,(a+1) a),(a+2,(a+2) a), \\cdots,(2 a-1,(2 a-1) a), \\cdots(44 a+1, (44 a+1) a),(44 a+2,(44 a+2) a), \\cdots,(45 a-1,(45 a-1) a)$. 由于 $(45 a- 1) a \\leqslant(45 \\times 6-1) \\times 6<2002$, 所以以上 90 个小于 2002 的数中至少有一半不属于 $S$. 从而 $|S| \\leqslant 2002-45=1957$.\n再次, 若 $2,3,4,5,6 \\notin S$, 考虑以下 38 个数对: $\\left(7,7^2\\right),\\left(8,8^2\\right), \\cdots, \\left(k, k^2\\right), \\cdots,\\left(44,44^2\\right)$, 若有某一对中的两个数 $k_0, k_0^2 \\in S$, 则令 $a=b=k_0$, 有 $a, b, a b \\in S$, 与题设矛盾! 因此这里至少有 38 个数不属于 $S$, 再减去 1 , $2, \\cdots, 6$, 有 $|S| \\leqslant 2002-38-6=1958$. 又 $S=\\{45,46,47, \\cdots, 2002\\}$ 满足要求.\n对任意 $a, b \\in S, a b \\geqslant 45^2=2025>2002$, 即 $a b \\notin S$, 此时 $|S|=1958$.",
+    "remark": "",
+    "figures": []
+}

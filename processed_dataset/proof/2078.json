@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $A B C D$ 是一个有内切圆的凸四边形, 它的每个内角和外角都不小于 $60^{\\circ}$. 证明:\n$$\n\\frac{1}{3}\\left|A B^3-A D^3\\right| \\leqslant\\left|B C^3-C D^3\\right| \\leqslant 3\\left|A B^3-A D^3\\right|,\n$$\n并指出等号成立的条件.",
+    "solution": "利用余弦定理, 知 $B D^2=A D^2+A B^2-2 A D \\cdot A B \\cos A=C D^2+ B C^2-2 C D \\cdot B C \\cos C$. 由条件知 $60^{\\circ} \\leqslant A \\leqslant 120^{\\circ}, 60^{\\circ} \\leqslant C \\leqslant 120^{\\circ}$, 故 $-\\frac{1}{2} \\leqslant \\cos A \\leqslant \\frac{1}{2},-\\frac{1}{2} \\leqslant \\cos C \\leqslant \\frac{1}{2}$, 于是 $3 B D^2-\\left(A B^2+A D^2+A B \\cdot A D\\right)= 2\\left(A D^2+A B^2\\right)-A D \\cdot A B(1+6 \\cos A) \\geqslant 2\\left(A D^2+A B^2\\right)-4 A D \\cdot A B= 2(A B-A D)^2 \\geqslant 0$, 即 $\\frac{1}{3}\\left(A B^2+A D^2+A B \\cdot A D\\right) \\leqslant B D^2=C D^2+B C^2- 2 C D \\cdot B C \\cos C \\leqslant C D^2+B C^2+C D \\cdot B C$. 再由 $A B C D$ 为圆外切四边形可知 $A D+B C=A B+C D$, 所以 $|A B-A D|=|C D-B C|$. 结合上式就有 $\\frac{1}{3}\\left|A B^3-A D^3\\right| \\leqslant\\left|B C^3-C D^3\\right|$, 等号成立的条件为 $\\cos A=\\frac{1}{2}, A B= A D, \\cos C=-\\frac{1}{2}$ 或者 $|A B-A D|=|C D-B C|=0$, 所以等号成立的条件是 $A B=A D$ 或者 $C D=B C$. 同理可证另一个不等式成立.",
+    "remark": "",
+    "figures": []
+}

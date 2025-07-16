@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 设 $A_1, A_2, A_3, A_4, A_5, A_6$ 是平面上的 6 点, 其中任意三点不共线.\n如果这些点之间任意连接 13 条线段,证明: 必存在 4 点, 它们每两点之间都有线段连接.",
+    "solution": "如图(<FilePath:./images/volume12/figures/fig-c8a1.png>), 将已连结的 13 条线段全染成红色, 还未连上的两条用蓝线连上 (因为所有两点连一线段时应该共有 15 条). 于是必有一个同色三角形,现在的蓝色线只有两条, 所以同色三角形必为红色的.\n不妨设 $\\triangle A_1 A_2 A_3$ 是红色的.\n从 $A_4 、 A_5 、 A_6$ 引向 $\\triangle A_1 A_2 A_3$ 顶点各有 3 条, 这 9 条线段中最多只有 2 条蓝色, 起码有 7 条是红色的, 因此, 或者是 $A_4$, 或者是 $A_5$, 或者是 $A_6$, 引向\n$\\triangle A_1 A_2 A_3$ 顶点的线段全是红色.\n比如说, $A_4 A_1 、 A_4 A_2 、 A_4 A_3$ 全是红色, 那么 4 点 $A_1 、 A_2 、 A_3 、 A_4$ 的每 2 点连线全是红色的, 命题得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c8a1.png"
+    ]
+}

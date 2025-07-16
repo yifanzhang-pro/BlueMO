@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 设正实数 $x_1, \\cdots, x_n$ 满足 $x_1+\\cdots+x_n=1$, 这里 $n \\in \\mathbf{N}^*, n \\geqslant 2$. 证明:\n$$\n\\prod_{k=1}^n\\left(1+\\frac{1}{x_k}\\right) \\geqslant \\prod_{k=1}^n\\left(\\frac{n-x_k}{1-x_k}\\right) .\n$$",
+    "solution": "引理设 $f(x)$ 是 $(0,1)$ 上的凸函数, $n \\in \\mathbf{N}^*, n \\geqslant 2$, 正实数 $x_1, \\cdots, x_n$ 满足 $x_1+\\cdots+x_n=1$, 则\n$$\n\\sum_{i=1}^n f\\left(x_i\\right) \\geqslant \\sum_{i=1}^n f\\left(\\frac{1-x_i}{n-1}\\right) .\n$$\n引理的证明: 由 Jenson 不等式, 知\n$$\n\\begin{aligned}\n\\sum_{i=1}^n f\\left(x_i\\right) & =\\sum_{i=1}^n\\left(\\frac{1}{n-1} \\sum_{j \\neq i} f\\left(x_j\\right)\\right) \\geqslant \\sum_{i=1}^n f\\left(\\frac{1}{n-1} \\sum_{j \\neq i} x_j\\right) \\\\\n& =\\sum_{i=1}^n f\\left(\\frac{1-x_i}{n-1}\\right) .\n\\end{aligned}\n$$\n于是引理成立.\n回证原题.\n令 $f(x)=\\ln \\frac{1+x}{x}$, 注意到, 对任意 $x, y \\in(0, \\cdot 1)$, 都有\n$$\n\\begin{aligned}\nf(x)+f(y) & =\\ln \\frac{1+x}{x}+\\ln \\frac{1+y}{y}=\\ln \\frac{1+x y+x+y}{x y} \\\\\n& =\\ln \\left(\\frac{1}{x y}+\\frac{x+y}{x y}+1\\right) \\\\\n& \\geqslant \\ln \\left(\\frac{1}{\\left(\\frac{x+y}{2}\\right)^2}+\\frac{x+y}{\\left(\\frac{x+y}{2}\\right)^2}+1\\right) \\\\\n& =\\ln \\left(\\frac{4}{(x+y)^2}+\\frac{4}{x+y}+1\\right)=\\ln \\left(\\frac{(x+y+2)^2}{(x+y)^2}\\right) \\\\\n& =2 \\ln \\left(1+\\frac{1}{\\frac{x+y}{2}}\\right)=2 f\\left(\\frac{x+y}{2}\\right) .\n\\end{aligned}\n$$\n所以, $f(x)=\\ln \\frac{1+x}{x}$ 是 $(0,1)$ 上的凸函数, 依此结合前面所得可知命题成立.",
+    "remark": "",
+    "figures": []
+}

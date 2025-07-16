@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例12 求函数 $g(x)=|\\sin x|+|\\cos x|$ 的最小正周期.",
+    "solution": "解:对任意 $x \\in \\mathbf{R}$, 有\n$$\n\\begin{aligned}\ng\\left(x+\\frac{\\pi}{2}\\right) & =\\left|\\sin \\left(x+\\frac{\\pi}{2}\\right)\\right|+\\left|\\cos \\left(x+\\frac{\\pi}{2}\\right)\\right| \\\\\n& =|\\sin x|+|\\cos x| \\\\\n& =g(x) .\n\\end{aligned}\n$$\n因此, $g(x)$ 是周期函数, $\\frac{\\pi}{2}$ 是它的一个周期.\n下面证明 $\\frac{\\pi}{2}$ 是 $g(x)$ 的最小正周期.\n设函数 $g(x)$ 有小于 $\\frac{\\pi}{2}$ 的正周期 $T$, 则对 $x \\in \\mathbf{R}$, 有\n$$\n|\\sin (x+T)|+|\\cos (x+T)|=|\\sin x|+|\\cos x| .\n$$\n令 $x=0$ 代入(1), 得\n$$\n|\\sin T|+|\\cos T|=1 .\n$$\n两边平方, 得\n$$\n2|\\sin T||\\cos T|=0,\n$$\n即\n$$\n|\\sin 2 T|=0 \\text {. }\n$$\n从而 $\\sin 2 T=0$, 但 $0<T<\\frac{\\pi}{2}$, 不可能.\n所以 $g(x)$ 的最小正周期为 $\\frac{\\pi}{2}$.\n说明本题所用的方法是证明周期函数的某个周期是该函数的最小正周期的常用方法.",
+    "remark": "",
+    "figures": []
+}

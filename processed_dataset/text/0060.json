@@ -1,0 +1,7 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter6.tex",
+    "text": "定理三(Ore, 1960) $\\quad G$ 是 $n(n \\geqslant 3)$ 阶简单图, 且对每一对不相邻的顶点 $v 、 v^{\\prime}$ 有\n$$\nd(v)+d\\left(v^{\\prime}\\right) \\geqslant n,\n$$\n那么图 $G$ 有哈密顿圈.\n证明当 $n=3$ 时, 由所给条件知 $G$ 一定是完全图 $K_3$, 命题成立.\n设 $n \\geqslant 4$, 用反证法证明.\n设 $G$ 是有 $n$ 个顶点且满足度数条件却没有哈密顿圈的图.\n不妨设 $G$ 是具有这种性质的边数最大的图, 也就是说 $G$ 添上一条边就具有哈密顿圈 (否则 $G$ 可以添加一些边, 直到不能再添为止, 加边后顶点的度数条件仍满足), 由此得出在图 $G$ 中有一条包含图中每一个顶点的哈密顿链, 记为 $v_1 v_2 \\cdots v_n$. 则 $v_1$ 与 $v_n$ 不相邻, 于是\n$$\nd\\left(v_1\\right)+d\\left(v_n\\right) \\geqslant n .\n$$\n那么在 $v_2, v_3, \\cdots, v_{n-1}$ 中必有一点 $v_i$, 使 $v_1$ 与 $v_i$ 相邻, $v_n$ 与 $v_{i-1}$ 相邻, 如图(<FilePath:./images/volume12/figures/fig-c6i11.png>) 所示.\n否则, 有 $d\\left(v_1\\right)=k$ 个点 $v_{i_1}, v_{i_2}, \\cdots, v_{i_k} \\left(2 \\leqslant i_1 \\leqslant i_2 \\leqslant \\cdots \\leqslant i_k \\leqslant n-1\\right)$ 与 $v_1$ 相邻, 而 $v_n$ 与 $v_{i_1-1}, v_{i_2-1}, \\cdots,v_{i_k-1}$ 都不相邻, 从而\n$$\nd\\left(v_n\\right) \\leqslant n-1-k,\n$$\n则\n$$\nd\\left(v_1\\right)+d\\left(v_n\\right) \\leqslant k+n-1-k=n-1<n,\n$$\n这与条件矛盾.\n故 $G$ 存在一条哈密顿圈 $v_1 v_2 \\cdots v_{i-1} v_n v_{n-1} \\cdots v_i v_1$. 这又与假设矛盾.\n从而命题得证.\n对于完全图 $K_n(n \\geqslant 3)$, 显然有哈密顿圈.",
+    "figures": [
+        "./images/volume12/figures/fig-c6i11.png"
+    ]
+}

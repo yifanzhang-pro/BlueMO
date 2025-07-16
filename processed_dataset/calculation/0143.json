@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例7.  6 位女同学和 15 位男同学围成一圈跳集体舞,要求每两名女同学之间至少有两名男同学,那么共有多少种不同的围圈跳舞的方法?",
+    "solution": "解法二,以女同学为组长, 15 位男同学分人 6 个组每组至少有两位男同学, 且记各组内男同学数分别为 $x_1, x_2, \\cdots, x_6$, 则分组的方法数等于不定方程\n$$\nx_1+x_2+\\cdots+x_6=15, x_i \\geqslant 2(i=1,2, \\cdots, 6). \\label{eq1}\n$$\n的整数解的个数, 令 $y_i=x_i-2(i=1,2, \\cdots, 6)$ 则\n$$\ny_1+y_2+\\cdots+y_6=3, y_i \\geqslant 0(i=1,2, \\cdots, 6) . \\label{eq2}\n$$\n故式\\ref{eq1}的整数解的个数等于式\\ref{eq2}的非负整数解的个数 $\\mathrm{C}_{3+6-1}^{6-1}=\\mathrm{C}_8^5=\\mathrm{C}_8^3$, 即 15 位男同学分人 6 个组, 每组至少 2 人的方法数为 $\\mathrm{C}_8^3 .6$ 个组排成一个圆圈有 5 ! 种方法 (这时女同学排在每组的首位, 她的位置已排定), 又 15 个男同学站人的方法数为 $\\mathrm{A}_{15}^{15}$, 故满足条件的排列数为 $\\mathrm{C}_8^3 \\cdot 5 ! \\cdot \\mathrm{A}_{15}^{15}=\\frac{8 ! 15 !}{3 !}$.",
+    "remark": "",
+    "figures": []
+}

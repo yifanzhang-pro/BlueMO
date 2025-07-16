@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例5. 如图(<FilePath:./images/volume7/figures/fig-c7i5.png>), 设 $\\triangle A B C$ 是锐角三角形, 点 $D 、 E 、 F$ 分别在边 $B C 、 C A 、 A B$ 上,线段 $A D 、 B E$ 、 $C F$ 经过 $\\triangle A B C$ 的外心 $O$. 已知以下六个比值\n$$\n\\frac{B D}{D C}, \\frac{C E}{E A}, \\frac{A F}{F B}, \\frac{B F}{F A}, \\frac{A E}{E C}, \\frac{C D}{D B}\n$$\n中至少有两个是整数.\n求证: $\\triangle A B C$ 是等腰三角形.",
+    "solution": "证明:从六个比值中取出两个,共有两种类型:\n(1)涉及同一边; (2)涉及不同的边.\n(1) 如果同一边上的两个比值同时是整数, 不妨设为 $\\frac{B D}{D C} 、 \\frac{C D}{D B}$. 因它们互为倒数, 又同是整数, 所以, 必须都取 1 , 则 $B D=D C$.\n由于 $O$ 是 $\\triangle A B C$ 的外心,进而得 $A D$ 是边 $B C$ 的中垂线.\n于是, $A B=A C$.\n(2) 记 $\\angle C A B=\\alpha, \\angle A B C=\\beta, \\angle B C A=\\gamma$.\n因为 $\\triangle A B C$ 是锐角三角形, 所以,\n$$\n\\angle B O C=2 \\alpha, \\angle C O A=2 \\beta, \\angle A O B=2 \\gamma .\n$$\n于是, $\\frac{B D}{D C}=\\frac{S_{\\triangle O A B}}{S_{\\triangle O A C}}=\\frac{\\sin 2 \\gamma}{\\sin 2 \\beta}$.\n同理\n$$\n\\frac{C E}{E A}=\\frac{\\sin 2 \\alpha}{\\sin 2 \\gamma}, \\frac{A E}{F B}=\\frac{\\sin 2 \\beta}{\\sin 2 \\alpha} .\n$$\n若上述六个比值中有两个同时是整数且涉及不同的边时, 则存在整数 $m$ 、 $n$, 使得\n$$\n\\sin 2 x=m \\sin 2 z \\text { 且 } \\sin 2 y=n \\sin 2 z, \\label{eq1}\n$$\n或\n$$\n\\sin 2 z=m \\sin 2 x \\text { 且 } \\sin 2 z=n \\sin 2 y, \\label{eq2}\n$$\n其中, $x 、 y 、 z$ 是 $\\alpha 、 \\beta 、 \\gamma$ 的某种排列.\n以下构造 $\\triangle A_1 B_1 C_1$, 使得它的三个内角分别为 $180^{\\circ}-2 \\alpha, 180^{\\circ}-2 \\beta$, $180^{\\circ}-2 \\gamma$.\n如图(<FilePath:./images/volume7/figures/fig-c7i5.png>), 过点 $A 、 B 、 C$ 分别作 $\\triangle A B C$ 外接圆的切线, 所围成的 $\\triangle A_1 B_1 C_1$ 即满足要求.\n根据正弦定理, 知 $\\triangle A_1 B_1 C_1$ 的三边与 $\\sin 2 \\alpha 、 \\sin 2 \\beta 、 \\sin 2 \\gamma$ 成正比.\n在式\\ref{eq1}、\\ref{eq2}两种情况下, 可知其三边之比分别为 $1: m: n$ 或 $m: n: m n$.\n对于式\\ref{eq1}, 由三角形两边之和大于第三边, 可知必须 $m=n$;\n对于式\\ref{eq2}, 要保证 $m+n>m n$, 即 $(m-1)(n-1)<1$, 由此, $m 、 n$ 中必有一个为 1 .\n无论哪种情况, 都有 $\\triangle A_1 B_1 C_1$ 是等腰三角形.\n因此, $\\triangle A B C$ 也是等腰三角形.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c7i5.png",
+        "./images/volume7/figures/fig-c7i5.png"
+    ]
+}

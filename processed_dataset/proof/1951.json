@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例7. 如图(<FilePath:./images/volume8/figures/fig-c5i2.png>), 在 $\\triangle A B C$ 中, $A B=A C, D$ 是 $B C$ 的中点, $E$ 是从 $D$ 作 $A C$ 的垂线的垂足, $F$ 是 $D E$ 的中点, 求证: $A F \\perp B E$.",
+    "solution": "分析:与解\n$$\n\\begin{aligned}\n\\overrightarrow{A F} \\cdot \\overrightarrow{B E} & =\\overrightarrow{A F} \\cdot(\\overrightarrow{B C}+\\overrightarrow{C E}) \\\\\n& =\\left(\\overrightarrow{A D}+\\frac{1}{2} \\overrightarrow{D E}\\right) \\cdot \\overrightarrow{B C}+\\left(\\overrightarrow{A E}+\\frac{1}{2} \\overrightarrow{E D}\\right) \\cdot \\overrightarrow{C E} \\\\\n& =\\frac{1}{2} \\overrightarrow{D E} \\cdot \\overrightarrow{B C}+\\overrightarrow{A E} \\cdot \\overrightarrow{C E}=\\overrightarrow{D E} \\cdot \\overrightarrow{D C}+\\overrightarrow{A E} \\cdot \\overrightarrow{C E} \\\\\n& =\\overrightarrow{D E} \\cdot(\\overrightarrow{D E}+\\overrightarrow{E C})-|\\overrightarrow{A E}| \\cdot|\\overrightarrow{C E}| \\\\\n& =\\overrightarrow{D E} \\cdot \\overrightarrow{D E}-|\\overrightarrow{A E}| \\cdot|\\overrightarrow{C E}|=0 .\n\\end{aligned}\n$$\n故 $A F \\perp B E$, 证毕.",
+    "remark": "",
+    "figures": [
+        "./images/volume8/figures/fig-c5i2.png"
+    ]
+}

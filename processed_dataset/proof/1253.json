@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例2. 实数 $x 、 y 、 z$ 满足 $x y+y z+z x=-1$, 求证:\n$$\nx^2+5 y^2+8 z^2 \\geqslant 4 \\text {. }\n$$",
+    "solution": "证明:因为\n$$\n\\begin{aligned}\n& x^2+5 y^2+8 z^2-4 \\\\\n= & x^2+5 y^2+8 z^2+4(x y+y z+z x) \\\\\n= & (x+2 y+2 z)^2+(y-2 z)^2 \\geqslant 0,\n\\end{aligned}\n$$\n所以\n$$\nx^2+5 y^2+8 z^2 \\geqslant 4 .\n$$\n说明本题的拆项配方, 有一定的技巧, 需要有较强的观察能力.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 当 $P$ 为三角形内心 $I$ 时,证明:\n$$\n\\sin A \\cdot \\overrightarrow{I A}+\\sin B \\cdot \\overrightarrow{I B}+\\sin C \\cdot \\overrightarrow{I C}=\\mathbf{0} .\n$$",
+    "solution": "证明: 设 $\\triangle A B C$ 的内心为 $I$, 如图(<FilePath:./images/volume7/figures/fig-c3a8.png>), 连结 $A I$ 交 $B C$ 于 $D$, 连结 $C I$ 交 $A B$ 于 $F$.\n由角的平分线定理可知\n$$\n\\frac{B D}{C D}=\\frac{A B}{A C} \\Rightarrow \\frac{B D}{B C}=\\frac{A B}{A B+A C}\n$$\n由正弦定理可知 $\\frac{B D}{B C}=\\frac{\\sin C}{\\sin C+\\sin B}$.\n同理: $\\frac{C D}{B C}=\\frac{A C}{A B+A C}=\\frac{\\sin B}{\\sin C+\\sin B}$.\n在 $\\triangle A B D$ 中由梅涅劳斯定理可得:\n$$\n\\begin{aligned}\n\\frac{D I}{I A} & =\\frac{F B}{A F} \\cdot \\frac{C D}{B C}=\\frac{B C}{A C} \\cdot \\frac{C D}{B C} \\\\\n& =\\frac{\\sin A}{\\sin B} \\cdot \\frac{\\sin B}{\\sin C+\\sin B} \\\\\n& =\\frac{\\sin A}{\\sin C+\\sin B} .\n\\end{aligned}\n$$\n所以 $\\overrightarrow{D I}=\\frac{\\sin A}{\\sin C+\\sin B} \\overrightarrow{I A}$.\n类似有\n$$\n\\overrightarrow{I D}=\\frac{C D}{B C} \\cdot \\overrightarrow{I B}+\\frac{B D}{B C} \\cdot \\overrightarrow{I C}\n$$\n所以 $-\\frac{\\sin A}{\\sin C+\\sin B} \\overrightarrow{I A}=\\frac{\\sin B}{\\sin C+\\sin B} \\overrightarrow{I B}+\\frac{\\sin C}{\\sin C+\\sin B} \\overrightarrow{I C}$,\n故 $\\sin A \\cdot \\overrightarrow{I A}+\\sin B \\cdot \\overrightarrow{I B}+\\sin C \\cdot \\overrightarrow{I C}=\\overrightarrow{0}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c3a8.png"
+    ]
+}

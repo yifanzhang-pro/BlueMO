@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例9 求所有满足下列条件的函数 $f: \\mathbf{N}_{+} \\rightarrow \\mathbf{N}_{+}$: 满足\n(1) $f(2)=2$;\n(2) $f(m n)=f(m) \\cdot f(n)$ 对所有 $m, n \\in \\mathbf{N}_{+}$, 且 $\\operatorname{gcd}(m, n)=1$ 成立 $(\\operatorname{gcd}(x, y)$ 表示 $x, y$ 的最大公约数);\n(3) 若 $m<n$, 则 $f(m)<f(n)$.",
+    "solution": "解:和上题相比, 本题的条件放宽了.\n同上题, 我们可以得到 $f(1)=1$. 但是, 已经不能由 (2) 得出 $f(4)=f(2)^2$ 了, 因为 (2) 的条件是 $m 、 n$ 必须互素.\n如果我们能证明 $f(3)=3$, 那将是一个很重要的突破口.\n比如接着我们能得到 $f(6)=f(2 \\cdot 3)=f(2) \\cdot f(3)=6$, 再利用 (3), 有\n$$\n3=f(3)<f(4)<f(5)<f(6)=6,\n$$\n于是立即可得 $f(4)=4, f(5)=5$.\n由于对任何正整数 $k \\geqslant 2, \\operatorname{gcd}(k-1, k)=1$. 我们可以通过数学归纳法给出 $f(n)=n$ 的证明:\n假设已证得对所有 $k \\leqslant n, f(k)=k$.\n利用 $(2)$, 得 $f((n-1) n)=f(n-1) f(n)=(n-1) n$.\n由(3), 又\n$$\n\\begin{aligned}\nn & =f(n)<f(n+1)<f(n+2)<\\cdots<f\\left(n^2-n-1\\right)<f\\left(n^2-n\\right) \\\\\n& =f((n-1) n)=(n-1) n .\n\\end{aligned}\n$$\n从上式不难发现 $f(n+1)=n+1, f(n+2)=n+2, \\cdots, f((n-1) n- 1) =(n-1) n-1, f((n-1) n)=(n-1) n$.\n这样就完成了归纳步骤.\n下面我们就来设法证明 $f(3)=3$ 这一关键之处.\n我们有\n$$\nf(3) \\cdot f(5)=f(15)<f(18)=f(2 \\cdot 9)=f(2) \\cdot f(9)=2 f(9), \\quad\\quad <1>\n$$\n以及 $f(9)<f(10)=f(2 \\cdot 5)=f(2) \\cdot f(5)=2 f(5)$.\\quad\\quad <2>\n由<1>和<2>两个不等式,有\n$$\nf(3) f(5)<2 f(9)<4 f(5),\n$$\n故 $f(3)<4$, 而 $2=f(2)<f(3)<4$, 即得 $f(3)=3$.\n因此, $f(n)=n$ 对一切 $n \\in \\mathbf{N}_{+}$成立.\n说明通过赋特殊值, 我们得到了一些特定点上的函数值, 而这些值往往 “透露”了函数的信息, 帮助我们猜出函数的解析式, 进而设法 (如用数学归纳法)加以证实.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设实数 $a 、 b 、 c$ 满足: $a+b+c=3$. 求证:\n$$\n\\frac{1}{5 a^2-4 a+11}+\\frac{1}{5 b^2-4 b+11}+\\frac{1}{5 c^2-4 c+11} \\leqslant \\frac{1}{4} .\n$$",
+    "solution": "证明:若 $a 、 b 、 c$ 都小于 $\\frac{9}{5}$, 则可以证明\n$$\n-\\frac{1}{5 a^2-4 a+11} \\leqslant \\frac{1}{24}(3-a) . \\label{(1)}\n$$\n事实上,\n$$\n\\begin{aligned}\n(1) & \\Leftrightarrow(3-a)\\left(5 a^2-4 a+11\\right) \\geqslant 24 \\\\\n& \\Leftrightarrow 5 a^3-19 a^2+23 a-9 \\leqslant 0 \\\\\n& \\Leftrightarrow(a-1)^2(5 a-9) \\leqslant 0 \\\\\n& \\Leftrightarrow a<\\frac{9}{5} .\n\\end{aligned}\n$$\n同理, 对 $b 、 c$ 也有类似的不等式, 相加便得\n$$\n\\begin{gathered}\n\\frac{1}{5 a^2-4 a+11}+\\frac{1}{5 b^2-4 b+11}+\\frac{1}{5 c^2-4 c+11} \\\\\n\\leqslant \\frac{1}{24}(3-a)+\\frac{1}{24}(3-b)+\\frac{1}{24}(3-c)=\\frac{1}{4} .\n\\end{gathered}\n$$\n若 $a 、 b 、 c$ 中有一个不小于 $\\frac{9}{5}$, 不妨设 $a \\geqslant \\frac{9}{5}$, 则\n$$\n\\begin{gathered}\n5 a^2-4 a+11=5 a\\left(a-\\frac{4}{5}\\right)+11 \\\\\n\\geqslant 5 \\cdot \\frac{9}{5} \\cdot\\left(\\frac{9}{5}-\\frac{4}{5}\\right)+11=20, \\\\\n\\frac{1}{5 a^2-4 a+11} \\leqslant \\frac{1}{20} .\n\\end{gathered}\n$$\n由于 $5 b^2-4 b+11 \\geqslant 5\\left(\\frac{2}{5}\\right)^2-4 \\cdot\\left(\\frac{2}{5}\\right)+11=11-\\frac{4}{5}>10$, 所以 $\\frac{1}{5 b^2-4 b+11}<\\frac{1}{10}$, 同理, $\\frac{1}{5 c^2-4 c+11}<\\frac{1}{10}$, 所以\n$$\n\\frac{1}{5 a^2-4 a+11}+\\frac{1}{5 b^2-4 b+11}+\\frac{1}{5 c^2-4 c+11}<\\frac{1}{20}+\\frac{1}{10}+\\frac{1}{10}=\\frac{1}{4} .\n$$\n因此, 总有 $\\frac{1}{5 a^2-4 a+11}+\\frac{1}{5 b^2-4 b+11}+\\frac{1}{5 c^2-4 c+11} \\leqslant \\frac{1}{4}$, 当且仅当 $a=b=c=1$ 时等号成立.",
+    "remark": "",
+    "figures": []
+}

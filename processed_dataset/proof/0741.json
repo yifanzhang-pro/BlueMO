@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设 $\\triangle A B C$ 中, 顶点 $A, B, C$ 的对边分别为 $a, b, c$, 内心 $I$ 到顶点 $A, B, C$ 的距离分别为 $m, n, l$. 求证:\n$$\na l^2+b m^2+c n^2=a b c .\n$$",
+    "solution": "证明:如图(<FilePath:./images/volume14/figures/fig-c8i3.png>), 设 $\\triangle A B C$ 内切圆与三边 $B C, C A, A B$ 分别相切于 $D, E, F$.\n由于 $\\angle A F I=\\angle A E I=90^{\\circ}$, 故四边形 $A E I F$ 为圆内接四边形, 且 $A I$ 为该圆的直径.\n又显然有 $A I \\perp E F$, 故由四边形面积公式可得\n$$\n\\begin{aligned}\nS_{A E I F} & =\\frac{1}{2} A I \\cdot E F=\\frac{1}{2} A I \\cdot A I \\sin A \\\\\n& =\\frac{1}{2} l^2 \\cdot \\frac{a}{2 R}=\\frac{a l^2}{4 R},\n\\end{aligned}\n$$\n其中第 2、第 3 个等号分别是对 $\\triangle A E F$ 与 $\\triangle A B C$ 用了正弦定理, $R$ 为 $\\triangle A B C$ 的外接圆半径.\n同理可得 $S_{B F I D}=\\frac{b m^2}{4 R}, S_{C D I E}=\\frac{c n^2}{4 R}$.\n所以 $S_{\\triangle A B C}=S_{A E I F}+S_{B F I D}+S_{C D I E}=\\frac{a l^2+b m^2+c n^2}{4 R}$.\n但另一方面, $S_{\\triangle A B C}=\\frac{a b c}{4 R}$, 从而 $a l^2+b m^2+c n^2=a b c$.",
+    "remark": "注:用两种不同的方法计算同一个面积, 得到的结果应当相等, 这是面积法的一种基本思想 (参看第 16 节\"算两次\"). 本题中正是将 $\\triangle A B C$ 分割为 3 个四边形, 建立了面积等式.\n考虑到这 3 个四边形都有外接圆, 且对角线相互垂直, 因此在用已知量表示它们面积时没有实质的困难, 而引人 $\\triangle A B C$ 的外接圆半径 $R$ 又可以消去角的正弦, 起到过渡作用.\n三角形与四边形的面积公式揭示了边角等基本元素之间的内在关系,而三角形的面积又常常能和内心、外心等 (及有关量) 相联系, 这是用面积证题时值得注意的一点.\n例如就本题图形出发, 读者不妨证一下另一个有趣的结论: $\\frac{S_{\\triangle A B C}}{S_{\\triangle D E F}}=\\frac{2 R}{r}$, 其中 $R, r$ 分别为 $\\triangle A B C$ 外接圆半径与内切圆半径.",
+    "figures": [
+        "./images/volume14/figures/fig-c8i3.png"
+    ]
+}

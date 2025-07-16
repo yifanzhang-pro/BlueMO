@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例7. 如图(<FilePath:./images/volume7/figures/fig-c7i7.png>),已知 $O 、 I$ 分别是三角形 $A B C$ 的外心和内心, $B C=a, C A=b, A B=c$. 问当且仅当 $a, b, c$ 满足什么条件时,有 $O I \\perp I B$ ? 证明你的结论.\n(注: 若 $O 、 I$ 重合时, 也算成立.)",
+    "solution": "解:因为 $O I \\perp I B \\Leftrightarrow O I^2+B I^2=O B^2$. 令 $\\triangle A B C$ 内切圆半径 $r$, 外接圆半径为 $R$. 由欧拉定理 $O I^2=R^2-2 R r$, 且 $B I=\\frac{r}{\\sin \\frac{B}{2}}$. 所以 $R^2-2 R r+\\left(\\frac{r}{\\sin \\frac{B}{2}}\\right)^2=R^2$. 故 $\\frac{r^2}{\\sin ^2 \\frac{B}{2}}=2 R r, r=2 R \\sin ^2 \\frac{B}{2}$. 所以 $\\frac{r}{R}=1-\\cos B$. 又\n$\\frac{r}{R}=\\cos A+\\cos B+\\cos C-1$ (知识点 7). 所以 $\\cos A+\\cos B+\\cos C-1= 1-\\cos B \\cdot \\cos A+\\cos C=2-2 \\cos B$. 所以 $2 \\cos \\frac{A+C}{2} \\cos \\frac{A-C}{2}=4 \\sin ^2 \\frac{B}{2}$, $2 \\sin \\frac{B}{2} \\cos \\frac{A-C}{2}=4 \\sin ^2 \\frac{B}{2}$. 因为 $B \\in(0, \\pi)$, 所以 $\\sin \\frac{B}{2} \\in\\left(0, \\frac{\\pi}{2}\\right)$, $\\sin \\frac{B}{2} \\neq 0$. 所以 $\\cos \\frac{A-C}{2}=2 \\sin \\frac{B}{2}$.\n另一方面, $a+c=2 b \\Leftrightarrow \\sin A+\\sin C=2 \\sin B \\Leftrightarrow 2 \\sin \\frac{A+C}{2} \\cos \\frac{A-C}{2}= 4 \\sin \\frac{B}{2} \\cos \\frac{B}{2} \\Leftrightarrow \\cos \\frac{A-C}{2}=2 \\sin \\frac{B}{2}$. 综上, 当且仅当 $a+c=2 b$ 时, $O I \\perp I B$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c7i7.png"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例1. (Erdös-Mordell 不等式) 设 $P$ 为 $\\triangle A B C$ 内任意一点, $P$ 到三边 $B C 、 C A 、 A B$ 的距离分别为 $P D=p 、 P E=q 、 P F=r$, 并记 $P A=x$, $P B=y, P C=z$, 则\n$$\nx+y+z \\geqslant 2(p+q+r),\n$$\n等号成立当且仅当 $\\triangle A B C$ 为正三角形并且 $P$ 为此三角形的中心.",
+    "solution": "证明 1 如图(<FilePath:./images/volume9/figures/fig-c5i1.png>), 注意到 $\\angle D P E=180^{\\circ}- \\angle C$, 由余弦定理\n$$\n\\begin{aligned}\nD E & =\\sqrt{p^2+q^2+2 p q \\cos C} \\\\\n& =\\sqrt{p^2+q^2+2 p q \\sin A \\sin B-2 p q \\cos A \\cos B} \\\\\n& =\\sqrt{(p \\sin B+q \\sin A)^2+(p \\cos B-q \\cos A)^2} \\\\\n& \\geqslant \\sqrt{(p \\sin B+q \\sin A)^2} \\\\\n& =p \\sin B+q \\sin A .\n\\end{aligned}\n$$\n又因 $P 、 D 、 C 、 E$ 四点共圆, 线段 $C P$ 为这圆的直径, 故\n$$\nz=\\frac{D E}{\\sin C} \\geqslant\\left(\\frac{\\sin B}{\\sin C}\\right) p+\\left(\\frac{\\sin A}{\\sin C}\\right) q,\n$$\n同理\n$$\n\\begin{aligned}\n& x \\geqslant\\left(\\frac{\\sin B}{\\sin A}\\right) r+\\left(\\frac{\\sin C}{\\sin A}\\right) q, \\\\\n& x \\geqslant\\left(\\frac{\\sin A}{\\sin B}\\right) r+\\left(\\frac{\\sin C}{\\sin A}\\right) p .\n\\end{aligned}\n$$\n三式相加便得\n$$\n\\begin{aligned}\nx+y+z & \\geqslant\\left(\\frac{\\sin B}{\\sin C}+\\frac{\\sin C}{\\sin B}\\right) p+\\left(\\frac{\\sin A}{\\sin C}+\\frac{\\sin C}{\\sin A}\\right) q+\\left(\\frac{\\sin B}{\\sin A}+\\frac{\\sin A}{\\sin B}\\right) r \\\\\n& \\geqslant 2(p+q+r),\n\\end{aligned}\n$$\n得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c5i1.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设正整数 $n$ 的十进制表示为 $n=\\overline{a_k \\cdots a_1 a_0}\\left(0 \\leqslant a_i \\leqslant 9, a_k \\neq 0\\right)$, 记 $T(n)=a_0-a_1+\\cdots+(-1)^k a_k$ (由 $n$ 的个位起始的数码的正、负交错和). 证明 $n-T(n)$ 被 11 整除.\n由此得出被 11 整除的数的数字特征: 11 整除 $n$ 的充分必要条件是 11 整除 $T(n)$.",
+    "solution": "我们有\n$$\nn-T(n)=\\left(a_0-a_0\\right)+\\left(10 a_1+a_1\\right)+\\cdots+\\left(a_k \\times 10^k-(-1)^k a_k\\right) .\n$$\n易知对 $i=0,1, \\cdots, k$, 数 $a_i \\times 10^i-(-1)^i a_i$ 被 11 整除(按 $i$ 为偶、奇数分别用分解式 (5)、(6)). 因此 $n-T(n)$ 被 11 整除, 故问题中两方面的结论均成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题13 已知 $A=\\{(x, y) \\mid x=n, y=n a+b, n \\in \\mathbf{Z}\\}, B=\\{(x, y) \\mid x=m, y=3 m^2+15, m \\in \\mathbf{Z} \\}, C=\\left\\{(x, y) \\mid x^2+y^2 \\leqslant 144\\right\\}$ 是坐标平面内的三个点集.\n试问, 是否存在实数 $a 、 b$, 使得 $A \\cap B \\neq \\varnothing$ 、点 $(a, b) \\in C$ 同时成立? 若存在, 请求出 $a 、 b$ 的值; 若不存在, 则说明理由.",
+    "solution": "假设存在实数 $a 、 b$, 同时满足题中的两个条件, 则必存在整数 $n$, 使 $3 n^2-a n+(15-b)=0$, 于是它的判别式 $\\Delta=(-a)^2-12(15-b) \\geqslant 0$, 即 $a^2 \\geqslant 12(15-b)$. 又由 $a^2+b^2 \\leqslant 144$ 得 $a^2 \\leqslant 144-b^2$, 由此便得 $12(15- b) \\leqslant 144-b^2$, 即 $(b-6)^2 \\leqslant 0$, 故 $b=6$. 将 $b=6$ 代入上述的 $a^2 \\geqslant 12(15-b)$ 及 $a^2 \\leqslant 144-b^2$ 得 $a^2=108$, 所以 $a= \\pm 6 \\sqrt{3}$. 将 $a= \\pm 6 \\sqrt{3} 、 b=6$ 代入方程 $3 n^2-a n+(15-b)=0$, 求得 $n= \\pm \\sqrt{3} \\notin \\mathbf{Z}$. 这说明满足已知两个条件的实数 $a 、 b$ 是不存在的.",
+    "remark": "",
+    "figures": []
+}

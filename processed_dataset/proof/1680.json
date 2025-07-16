@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter11.tex",
+    "problem_type": "proof",
+    "problem": "例10. 在 $\\triangle A B C$ 中, $A B=A C$, 有一圆内切于 $\\triangle A B C$ 的外接圆,且与 $A B$ 和 $A C$ 分别相切于点 $P$ 和 $Q$. 求证: 点 $P$ 和 $Q$ 连线的中点是 $\\triangle A B C$ 的内切圆圆心.",
+    "solution": "分析:设 $P Q$ 中点为 $O$, 则 $O$ 在 $\\angle B A C$ 的平分线 $A D$ 上.\n如图(<FilePath:./images/volume7/figures/fig-c11i8.png>) 建立直角坐标系, 设 $O A=1, \\angle B A O=\\alpha$. 设 $\\triangle A B C$ 的外接圆的圆心为 $K$ 内切圆的圆心为 $M$. 连结 $P K$. 则 $O$ 到 $A B$ 与 $A C$ 的距离等于 $\\sin \\alpha$, 故只需证明 $O$ 到 $B C$ 的距离也等于 $\\sin \\alpha$, 即\n$$\ny_B=y_C=-\\sin \\alpha .\n$$\n因为 $\\triangle A B C$ 的外接圆直径\n$$\n\\begin{aligned}\n2 R & =O A+O K+K D=O A+O K+K P \\\\\n& =1+\\tan ^2 \\alpha+\\tan \\alpha \\cdot \\sec \\alpha=\\frac{1+\\sin \\alpha}{\\cos ^2 \\alpha},\n\\end{aligned}\n$$\n所以, $R=\\frac{1+\\sin \\alpha}{2 \\cos ^2 \\alpha}$,\n$$\ny_M=1-R=\\frac{\\cos 2 \\alpha-\\sin \\alpha}{2 \\cos ^2 \\alpha} .\n$$\n从而, $\\odot M$ 的方程为\n$$\nx^2+\\left(y-\\frac{\\cos 2 \\alpha-\\sin \\alpha}{2 \\cos ^2 \\alpha}\\right)^2=\\left(\\frac{1+\\sin \\alpha}{2 \\cos ^2 \\alpha}\\right)^2 .\n$$\n而 $A B$ 的方程为 $y=\\cot \\alpha \\cdot x+1$.\n解上述两方程得\n$$\ny_A=1, y_B=-\\sin \\alpha .\n$$\n故命题成立.",
+    "remark": "注:此题我们在前面几章曾经多次出现过,这里用的是解析法,也是一种不错的方法.",
+    "figures": [
+        "./images/volume7/figures/fig-c11i8.png"
+    ]
+}

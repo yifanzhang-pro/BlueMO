@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题6. 用两种方法证明: 对一切正整数 $n$ 有 $\\sum_{i=0}^{\\left[\\frac{n}{2}\\right]} 2^{n-2 i} \\mathrm{C}_n^{n-2 i} \\mathrm{C}_{2 i}^i=\\mathrm{C}_{2 n}^n$.",
+    "solution": "(证法二)一方面从 $n$ 对夫妇中选出 $n$ 人为代表有 $\\mathrm{C}_{2 n}^n$ 种选法.\n另一方面可将选法分为 $\\left[\\frac{n}{2}\\right]+1$ 类, 其中第 $i$ 类 $\\left(i=0,1,2, \\cdots,\\left[\\frac{n}{2}\\right]\\right)$ 的选法中恰有 $i$ 对夫妇被同时选出, 这共有 $\\mathrm{C}_n^i$ 种选法, 其余 $n-2 i$ 人选自余下 $n-i$ 对夫妇中的 $n-2 i$ 对夫妇 (每对夫妇恰选出一人), 这有 $\\mathrm{C}_{n-i}^{n-2 i} 2^{n-2 i}$ 种选法, 故第 $i$ 类共有 $\\mathrm{C}_n^i \\mathrm{C}_{n-i}^{n-2 i} \\cdot 2^{n-2 i}=\\mathrm{C}_n^{n-2 i} \\mathrm{C}_{2 i}^i \\cdot 2^{n-2 i}$ 种选法.\n又 $i=0,1,2, \\cdots,\\left[\\frac{n}{2}\\right]$, 故总共有 $\\sum_{i=0}^{\\left[\\frac{n}{2}\\right]} \\mathrm{C}_n^{n-2 i} \\mathrm{C}_{2 i}^i 2^{n-2 i}$ 种选法.\n综合两方面得 $\\sum_{i=0}^{\\left[\\frac{n}{2}\\right]} \\mathrm{C}_n^{n-2 i} \\mathrm{C}_{2 i}^i 2^{n-2 i}=\\mathrm{C}_{2 n}^n$.",
+    "remark": "",
+    "figures": []
+}

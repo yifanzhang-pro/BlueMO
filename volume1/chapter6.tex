@@ -1,0 +1,369 @@
+
+%%TEXT_BEGIN%%
+集合的性质很多集合问题实际上就是研究集合中元素的性质问题,前面的每一节都能找到这样的例子.
+面,我们再通过一些例子进一步探讨研究集合性质的技巧.
+一、集合中全部元素的性质已知集合 $S=\{x \mid P(x)\}$. 如果由性质 $P$ 能推出 $S$ 中每个元素都满足的性质 $P^{\prime}$, 那么 $P^{\prime}$ 就是 $P$ 的一个必要条件.
+设 $S^{\prime}=\left\{x \mid P^{\prime}(x)\right\}$, 显然有 $S \subseteq S^{\prime}$.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+二、集合子集元素的性质设集合 $S=\{x \mid P(x)\}$. 如果条件 $P^*$ 是条件 $P$ 的充分条件,那么集合
+$$
+S^*=\left\{x \mid P^*(x), x \in S\right\}
+$$
+是集合 $S$ 的子集, 即 $S^* \subseteq S$. 这里 $P^*$ 是集合 $S$ 中部分元素的性质.
+我们还可以通过增加 $S$ 的“内涵”的方式来缩小它的“外延”: $S$ 是所有具备性质 $P$ 的元素 $x$ 的集合,增加新的性质 $P^*$, 得到集合
+$$
+S^*=\left\{x \mid P(x) \text { 且 } P^*(x), x \in S\right\},
+$$
+显然 $S^*=\left\{x \mid P^*(x), x \in S\right\}$, 它是 $S$ 的子集, 即 $S^* \subseteq S$.
+一类典型的问题就是从集合 $S$ 中分离出所有满足性质 $P^*$ 的元素, 从而得到所求的 $S^*$.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+三、其他有关集合性质的问题有关集合性质的问题丰富多彩,除了上面两类典型的问题外很难作一个系统的分类.
+其实, 集合问题大多具有明显的组合色彩, 解题方法各异, 分类并没有实质意义.
+下面我们再看几个例子.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知数集 $M$ 至少有 3 个元素, 且对 $M$ 中任何两个不同的元素 $a 、 b$, 数 $a^2+b \sqrt{2}$ 都是有理数,证明: 对于 $M$ 中任何数 $a$,数 $a \sqrt{2}$ 都是有理数.
+%%<SOLUTION>%%
+分析:设 $a, b \in M$ 且 $a \neq b$, 则 $a^2+b \sqrt{2} \in \mathbf{Q}, b^2+a \sqrt{2} \in \mathbf{Q}$. 于是有 $a^2+ b \sqrt{2}-\left(b^2+a \sqrt{2}\right)=\frac{1}{2}(a \sqrt{2}-b \sqrt{2})(a \sqrt{2}+b \sqrt{2}-2) \in \mathbf{Q}$. 若能证明 $a \sqrt{2}- b \sqrt{2} \in \mathbf{Q}$ 或 $a \sqrt{2}+b \sqrt{2} \in \mathbf{Q}$, 则问题迎刃而解.
+但已给条件似乎不够用! 不过另设 $c \in M, c \neq a, c \neq b$, 则 $c^2+a \sqrt{2} \in \mathbf{Q}, c^2+b \sqrt{2} \in \mathbf{Q}$, 便得到
+$$
+c^2+a \sqrt{2}-\left(c^2+b \sqrt{2}\right)=a \sqrt{2}-b \sqrt{2} \in \mathbf{Q} .
+$$
+证明任取 $a, b, c \in M$, 且 $a 、 b 、 c$ 互不相等, 则 $a^2+b \sqrt{2}, b^2+a \sqrt{2}, c^2+ a \sqrt{2}, c^2+b \sqrt{2} \in \mathbf{Q}$. 因此
+$$
+\begin{aligned}
+& a^2+b \sqrt{2}-\left(b^2+a \sqrt{2}\right)=(a-b)(a+b-\sqrt{2}) \\
+= & \frac{1}{2}(a \sqrt{2}-b \sqrt{2})(a \sqrt{2}+b \sqrt{2}-2) \in \mathbf{Q}, \\
+& c^2+a \sqrt{2}-\left(c^2+b \sqrt{2}\right)=(a \sqrt{2}-b \sqrt{2}) \in \mathbf{Q} .
+\end{aligned}
+$$
+从而
+$$
+a \sqrt{2}+b \sqrt{2}-2 \in \mathbf{Q}
+$$
+所以 $a \sqrt{2}+b \sqrt{2} \in \mathbf{Q}$.
+所以
+$$
+a \sqrt{2}=\frac{1}{2}(a \sqrt{2}+b \sqrt{2}+a \sqrt{2}-b \sqrt{2}) \in \mathbf{Q} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $\alpha=\frac{r}{s}$, 这里 $r 、 s$ 是正整数,且 $r>s,(r, s)=1$. 令集合
+$$
+N_\alpha=\{[n \alpha] \mid n=1,2, \cdots\} .
+$$
+求证：对任何 $m \in N_\alpha, r \nmid m+1$.
+%%<SOLUTION>%%
+分析:$n \alpha=n \cdot \frac{r}{s}$. 当 $s=1$ 时, 结论显然成立.
+当 $s>1$ 时, 若 $1 \leqslant n \leqslant s-1$, 由 $\frac{r}{s}>1$ 知, $1 \leqslant n \alpha \leqslant r-\frac{r}{s}<r-1$, 即 $1 \leqslant[n \alpha]<r-1$, 结论成立; 若 $n \geqslant s$, 令 $n=q s+k\left(0 \leqslant k \leqslant s-1, q \in \mathbf{N}^*\right)$, 则 $n \alpha=q r+k \alpha,[n \alpha]= q r+\left[k_\alpha\right]$, 又转化为前面情形的讨论.
+证明分两种情形讨论.
+(1) 若 $s=1$, 则 $N_\alpha=\{r n \mid n=1,2, \cdots\}$. 因 $r>1$, 结论显然成立.
+(2) 若 $s>1$, 因 $\frac{r}{s}>1$, 故
+$$
+1 \leqslant\left[\frac{r}{s}\right]<\left[\frac{2 r}{s}\right]<\cdots<\left[\frac{(s-1) r}{s}\right]=r+\left[-\frac{r}{s}\right]<r-1 .
+$$
+任取 $m=\left[n_0 \alpha\right] \in N_\alpha$, 令 $n_0=q s+k(0 \leqslant k \leqslant s-1)$, 则
+$$
+\begin{aligned}
+& {\left[n_0 \alpha\right]=[q r+k \alpha]=q r+[k \alpha],} \\
+& m+1=\left[n_0 \alpha\right]+1=q r+[k \alpha]+1 .
+\end{aligned}
+$$
+但由不等式<1>, 有 $0 \leqslant[k \alpha]<r-1$, 即
+$$
+1 \leqslant[k \alpha]+1<r \text {. }
+$$
+于是, 由(2)式可知 $r \nmid m+1$.
+综上可知, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 在平面上给定无穷多个点, 已知它们之间的距离都是整数, 求证这些点都在一条直线上.
+%%<SOLUTION>%%
+分析:“无穷” 和“整数” 是两个关键词, 去其一, 则结论不成立.
+下面我们就是利用这两点“制造”矛盾来反证结论成立.
+证明若不然, 则存在三点 $A 、 B 、 C$, 使三点不共线且 $A B=r$ 和 $A C=s$ 都是整数.
+设点 $P$ 是任一给定点, 则由三角不等式有
+$$
+|P A-P B| \leqslant A B=r,
+$$
+即 $|P A-P B|$ 是整数 $0,1,2, \cdots, r$ 中之一.
+因此, 点 $P$ 或位于直线
+$H_0=$ 直线 $A B$ 的垂直平分线,
+$H_r=$ 直线 $A B$
+之一上,或落在双曲线
+$$
+H_i=\{X|| X A-X B \mid=i\}, i=1,2, \cdots, r-1
+$$
+之一上.
+同理, 点 $P$ 又或者位于直线
+$$
+\begin{aligned}
+& K_0=\text { 线段 } A C \text { 的垂直平分线, } \\
+& K_s=\text { 直线 } A C
+\end{aligned}
+$$
+之一上, 或者落在双曲线
+$$
+K_j=\{X|| X A-X C \mid=j\}, j==1,2, \cdots, s-1
+$$
+之一上.
+由此可知,任一给定点必落在集合
+$$
+H_i \cap K_j, i=0,1, \cdots, r, j=0,1, \cdots, s
+$$
+之一上.
+由于直线 $A B$ 与 $A C$ 不重合, 所以任一 $H_i$ 与任一 $K_j$ 都不相同.
+从而知(1)中每个集合都不多于 4 点,故知集合
+$$
+M=\bigcup_{i, j}\left(H_i \cap K_j\right)
+$$
+的点数不多于 $4(r+1)(s+1)$, 此与给定点有无穷多个矛盾.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $M$ 为一个无限的有理数集, 满足: $M$ 的任意一个 2009 元子集的元素之积为一个整数,且这个整数不能被任何质数的 2009 次幕整除.
+证明: $M$ 的元素均为整数.
+%%<SOLUTION>%%
+分析:这里的“2009”并不是一个关键的数字, 与上例一样, 我们还是得围绕“无限”做文章.
+证明设 $a_1, a_2, \cdots, a_{2008} \in M$. 记
+$$
+A=a_1 a_2 \cdots a_{2008}=\frac{p}{q},(p, q)=1 .
+$$
+假设 $M$ 中包含了无数多个形如
+$$
+\alpha_i=\frac{p_i}{q_i},\left(p_i, q_i\right)=1, q_i>1
+$$
+的数, 且 $\alpha_i \neq a_1, a_2, \cdots, a_{2008}$. 由于
+$$
+\alpha_i \cdot A=\alpha_i a_1 a_2 \cdots a_{2008}=\frac{p_i}{q_i} \cdot \frac{p}{q}
+$$
+为整数, 所以
+$$
+q_i \mid p .
+$$
+由于 $p$ 只有有限个因子, 故有无数个分母为 $q_i^{\prime}$ 的既约分数属于 $M$. 这些分数中的任意 2009 个的乘积都不是整数.
+这与题设矛盾.
+这说明 $M$ 中包含了无限多个整数, 记这些整数的集合为 $M^{\prime}$.
+假设有 $\frac{a}{b} \in M,(a, b)=1, b>1$.
+设 $p$ 为 $b$ 的一个质因子.
+由于 $\frac{a}{b}$ 与 $M^{\prime}$ 中任意 2008 个整数的乘积为整数, 故 $p$ 为 $M^{\prime}$ 中无数多个整数的质因子.
+而 $M^{\prime}$ 中任意 2009 个含有因数 $p$ 的数的乘积可被 $p^{2009}$ 整除.
+这又与题设矛盾.
+这就证明了 $M$ 的元素均为整数.
+而这样的整数集是存在的, 如全部质数的集合.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 三维空间中所有整点 (3 个坐标都为整数的点) 的集合记为 $T$. 两个整点 $(x, y, z)$ 和 $(u, v, w)$ 当且仅当 $|x-u|+|y-v|+|z-w|=1$ 时称为相邻.
+求证: 存在 $T$ 的一个子集 $S$, 使对每个 $P \in T$, 点 $P$ 以及 $P$ 的所有邻点中恰有一点属于 $S$.
+%%<SOLUTION>%%
+分析:设 $(u, v, w) \in T$, 它的 6 个邻点分别为 $(u \pm 1, v, w),(u, v \pm 1$, $w),(u, v, w \pm 1)$. 若函数 $f(x, y, z)$ 在以上 7 点的函数值为整数, 且除以 7 的余数都不相同,则原题获证.
+事实上, 取 $f=x+2 y+3 z$ 即可.
+证明显然, 两个整点相邻, 当且仅当两点的各 3 个坐标中的两对分别相等,而第 3 个坐标相差 1 .
+令 $\quad S=\{(x, y, z)\mid \, 7 | x+2 y+3 z\}$,
+则 $S$ 满足题中要求.
+事实上, 对于任何 $(u, v, w) \in T$, 它有 6 个邻点 $(u \pm 1, v, w),(u, v \pm 1, w),(u, v, w \pm 1)$. 这 7 点所对应的 7 个整数
+$$
+u+2 v+3 w+j, j=-3,-2,-1,0,1,2,3
+$$
+中, 恰有一个是 7 的倍数, 从而相应的整点属于 $S$, 即 $S$ 满足题中要求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $A \subset \mathrm{N}^*$ 是无限集, $A$ 中每个数 $a$ 是至多 1990 个质数的乘积.
+证明: 必有.
+$A$ 的无限子集 $B$, 使得 $B$ 中任何两个不同数的最大公约数都相同.
+%%<SOLUTION>%%
+分析:如果 $A$ 中含有无限多个两两互质的整数, 则结论显然成立.
+否则, 存在质数 $p_1$ 为 $A$ 的无限多个数的因数, 故 $A_1=\left\{\frac{a}{p_1} \mid \frac{a}{p_1} \in \mathbf{Z}, a \in A\right\}$ 为无限集.
+若 $A_1$ 中含有无限多个两两互质的整数, 则结论亦成立.
+否则, 继续上面的步骤.
+证明如果 $A$ 中含有无限多个两两互质的正整数, 将它们全部选出作成子集 $B$, 则结论成立.
+若存在质数 $p_1$ 为 $A$ 中无限多个数的因数,则集合
+$$
+A_1=\left\{\frac{a}{p_1} \mid \frac{a}{p_1} \in \mathbf{Z}, a \in A\right\}
+$$
+为无限集.
+依此类推 (用 $A_1$ 代替 $A$ ). 由于 $A$ 中每个数的质因数个数 $\leqslant 1990$, 所以必有无限集
+$$
+A_k=\left\{\frac{a}{p_1 p_2 \cdots p_k} \mid \frac{a}{p_1 p_2 \cdots p_k} \in \mathbf{Z}, \frac{a}{p_1 p_2 \cdots p_{k-1}} \in A_{k-1}\right\},
+$$
+每个质数 $p_i$ 都仅是 $A_k$ 中有限多个数的因数.
+任取 $a_1 \in A_k$. 在取定 $a_1, a_2, \cdots, a_n$ 两两互质后, 由于每个质数都仅是 $A_k$ 中有限多个数的因数, 在 $A_k$ 中存在 $a_{n+1}$, 它与 $a_1, a_2, \cdots, a_n$ 均互质.
+这样就得到 $A_k$ 的一个无穷子集 $B_k, B_k$ 中的元素两两互质.
+将 $B_k$ 中每个元素乘以 $p_1 p_2 \cdots p_k$, 得到 $A$ 的无穷子集, 其中每两个数的最大公约数均为 $p_1 p_2 \cdots p_k$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 记 $\mathbf{Q}$ 为有理数集合, $\mathbf{Q}$ 的非空子集 $S$ 具有以下性质:
+(1) $0 \notin S$;
+(2) 若 $s_1 \in S, s_2 \in S$, 则 $s_1 / s_2 \in S$;
+(3) 存在一非零有理数 $q, q \notin S$, 且每一个不在 $S$ 中的非零有理数都可写成 $q s$ 的形式,其中 $s \in S$.
+证明: 若 $x \in S$, 则存在 $y, z \in S$, 使 $x=y+z$.
+%%<SOLUTION>%%
+分析:设 $\alpha, \beta \in \mathbf{Q}$, 且 $\alpha+\beta=1$, 则
+$$
+x=x(\alpha+\beta)=x \alpha+x \beta .
+$$
+我们希望出现: $x \alpha \in S$ 且 $x \beta \in S$. 由(3)似乎应该有 $\alpha, \beta \in S$. 于是我们要解决两个问题: (1) 怎样的 $\alpha$ 、必定属于 $S$; (2) 如 $x_1 \in S, x_2 \in S$, 则 $x_1 x_2 \in S$.
+证明假设 $s \in S$. 令 $s_1=s_2 \in S$, 则 $s_1 / s_2=1 \in S$. 令 $s_1=1, s_2=s$, 则 $1 / s \in S$.
+若 $t \in S$, 令 $s_1=t, s_2=1 / s$, 则 $s_1 / s_2=t /(1 / s)=s t \in S$ (这样 $s$ 就是乘法意义下的解).
+假设 $u$ 是一个非零有理数, 若 $u \notin S$, 则 $u=q s$, 其中 $s \in S$, 于是我们有 $u^2=q^2 s^2$.
+若 $q^2 \notin S$, 则可设 $q^2=q t(t \in S)$, 则 $q=t \in S$, 矛盾.
+所以 $q^2 \in S$, $u^2 \in S$.
+假如 $x \in S$, 则由 $(3 / 5)^2 、(4 / 5)^2$ 为平方数可知,
+$$
+x(3 / 5)^2 \in S, x(4 / 5)^2 \in S .
+$$
+又 $x=x(3 / 5)^2+x(4 / 5)^2$, 取 $y=x(3 / 5)^2, z=x(4 / 5)^2$, 则命题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 证明: 对任意的 $n \in \mathbf{N}, n \geqslant 2$, 都存在 $n$ 个互不相等的自然数组成的集合 $M$, 使得对任意的 $a \in M$ 和 $b \in M$, 都有 $(a-b) \mid(a+b)$.
+%%<SOLUTION>%%
+分析:设 $a_1<a_2<\cdots<a_n$ 为 $M$ 的 $n$ 个元素, 我们用归纳的方法来构造这些元素.
+当 $n=2$ 时,取 $a_1=1, a_2=2$ 即可.
+假设 $n=k$ 时, $k$ 个元素 $a_1<a_2<\cdots<a_k$ 组成的集合符合要求.
+当 $n=k+1$ 时则取如下 $k+1$ 个数
+$$
+a_{k} !, a_{k} !+a_1, a_{k} !+a_2, \cdots, a_{k} !+a_k,
+$$
+组成的集合符合要求.
+事实上,
+$$
+\frac{\left(a_{k} !+a_i\right)+a_{k} !}{\left(a_{k} !+a_i\right)-a_{k} !}=\frac{2\left(a_{k} !\right)+a_i}{a_i} \in \mathbf{N}^* \quad(i=1,2, \cdots, k) .
+$$
+又不妨设 $i>j(i, j=1,2, \cdots, n)$, 则
+$$
+\begin{aligned}
+A & =\frac{\left(a_{k} !+a_i\right)+\left(a_{k} !+a_j\right)}{\left(a_{k} !+a_i\right)-\left(a_{k} !+a_j\right)} \\
+& =\frac{2\left(a_{k} !\right)+a_i+a_j}{a_i-a_j} .
+\end{aligned}
+$$
+因为 $\left(a_i-a_j\right) \mid\left(a_i+a_j\right)$ (归纳假设), $\left(a_i-a_j\right) \mid 2\left(a_k\right.$ !), 所以 $A \in \mathbf{N}^*$.
+说明对上面的分析稍作整理即为本例的证明.
+略.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 平面上整点的集合 $M=\{(x, y) \mid x, y \in \mathbf{Z}$, 且 $1 \leqslant x \leqslant 12,1 \leqslant y \leqslant 13\}$. 证明: 不少于 49 个点的 $M$ 的每一个子集, 必包含一个矩形的 4 个顶点, 且此矩形的边平行于坐标轴.
+%%<SOLUTION>%%
+分析:设 $S$ 为 $M$ 的任一个 49 元子集.
+其中纵坐标相同的点的横坐标的集合为:
+$$
+X_i=\{x \mid(x, i) \in S\}, i=1,2, \cdots, 13 .
+$$
+若存在关于整点横坐标的二元集 $(r, s)$ 同时是 $X_i 、 X_j \quad(i \neq j)$ 的子集, 则原题得证.
+证明设 $S$ 为 $M$ 的任一个 49 元子集.
+令
+$$
+X_i=\{x \mid(x, i) \in S\}, i=1,2, \cdots, 13,
+$$
+则 $\left|X_i\right|=x_i, \sum_{i=1}^{13} x_i=49,0 \leqslant x_i \leqslant 12$. 记
+$$
+P_i=\{\{r, s\} \mid r \neq s,(r, i),(s, i) \in S\}, i=1,2, \cdots, 13 .
+$$
+显然, 全体 $P_i$ 中只有 $\mathrm{C}_{12}^2=66$ 种不同的二元集.
+又 $\sum_{i=1}^{13}\left|P_i\right|=\sum_{i=1}^{13} \mathrm{C}_{x_i}^2$, 考虑其最小值.
+利用局部调整: 当 $x_1+x_2=c$ 时,
+$$
+\mathrm{C}_{x_1}^2+\mathrm{C}_{x_2}^2=\frac{c^2-c}{2}-x_1 x_2 \geqslant \frac{c^2-c}{2}-\frac{c^2}{4},
+$$
+$x_1=\left[\frac{c}{2}\right], x_2=c-\left[\frac{c}{2}\right]$ 时, $\mathrm{C}_{x_1}^2+\mathrm{C}_{x_2}^2$ 取得最小值.
+由此知, $\sum_{i=1}^{13} \mathrm{C}_{x_i}^2$ 取得最小值必须是将 $49=\sum_{i=1}^{13} x_i$ 尽可能地平均到 $\left\{x_i\right\}$ 中, 即 $\left\{x_i\right\}$ 中有 $j$ 个 $\left[\frac{49}{13}\right]=3$, $(13-j)$ 个 $\left[\frac{49}{13}\right]+1=4$, 从而得 $j=3$.
+所以
+$$
+\left(\sum_{i=1}^{13} \mathrm{C}_{x_i}^2\right)_{\min }=3 \mathrm{C}_3^2+10 \mathrm{C}_4^2=69
+$$
+从而, 有
+$$
+\sum_{i=1}^{13}\left|P_i\right|=\sum_{i=1}^{13} \mathrm{C}_{x_i}^2 \geqslant 69>66
+$$
+由此推知存在 $i \neq j$, 使得 $(r, s) \in P_i,(r, s) \in P_j$.
+故有 $(r, i),(s, i),(r, j),(s, j) \in S$, 结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设 $S=\{1,2, \cdots, 17\}$, 而 $\left\{a_1, a_2, \cdots, a_8\right\}$ 为 $S$ 的一个 8 元子集.
+求证:
+(1) 存在 $k \in \mathbf{N}^*$, 使得方程 $a_i-a_j=k$ 至少有 3 组不同的解;
+(2) 对于 $S$ 的 7 元子集 $\left\{a_1, a_2, \cdots, a_7\right\}$,(1) 中的结论不再总是成立.
+%%<SOLUTION>%%
+分析:(1) 不妨设 $a_1<a_2<\cdots<a_8$, 则
+$$
+a_8-a_1=\left(a_8-a_7\right)+\left(a_7-a_6\right)+\cdots+\left(a_2-a_1\right) \leqslant 16 .
+$$
+若上式中间 7 个括号中没有 3 个两两相等, 那么必各有两个分别等于 1 、 $2 、 3$, 一个等于 4 .
+(2) 作出一个使 (1) 中结论不成立的 7 元子集即可.
+证明 (1) 若不然,则存在 $S$ 的一个 8 元子集 $\left\{a_1, a_2, \cdots, a_8\right\}$,使对任何 $k \in \mathbf{N}^*$,方程 $a_i-a_j=k$ 都至多有两组解, 即 $\left|a_i-a_j\right|(1 \leqslant i<j \leqslant 8)$ 共 28 个差数中, 不存在 3 个值相等的差数.
+不妨设 $a_1<a_2<\cdots<a_8$, 于是 $a_8-a_1 \leqslant 16$, 亦即有
+$$
+\left(a_8-a_7\right)+\left(a_7-a_6\right)+\cdots+\left(a_2-a_1\right) \leqslant 16 .
+$$
+既然(1)式左端的 7 个差数中没有 3 数相同, 故必有
+$$
+\begin{aligned}
+\left(a_8-a_7\right)+\left(a_7-a_6\right)+\cdots+\left(a_2-a_1\right) & \geqslant 1+1+2+2+3+3+4 \\
+& =16 .
+\end{aligned}
+$$
+(1)和(2)结合起来表明, 这 7 个差数中恰有 $1 、 2 、 3$ 各两个而另一个是 4 .
+考察这 7 个差数的排列情形, 由于已经有两个 2 、两个 3 和 1 个 4 , 所以必有
+(i) 两个 1 不能相邻, 1 和 2 也不能相邻;
+(ii) 1 和 $3 、 2$ 和 2 至多有 1 组相邻.
+先看两个 1 与两个 2 这 4 个差数的排列顺序, 由对称性知只有下列 4 种不同情形:
+(a) $1,1,2,2$;
+(b) $1,2,1,2$;
+(c) $1,2,2,1$;
+(d) $2,1,1,2$.
+余下的 3 个差数 $3 、 3 、 4$ 将放人这 4 个数的空隙中.
+易见, 在 (b) 和 (d) 两种情形中, 依次相邻的 3 对数在 7 个差数的排列中都不能相邻, 所以 3 个空隙中必须各放人 $3 、 3 、 4$ 中的一个数, 从而两个 3 都与 1 相邻, 导致有 3 个差值为 4 , 矛盾.
+对于 (a), 两个 1 之间不能只夹 3 , 所以 4 必须夹在两个 1 之间.
+于是 1 与 2 之间只能插人 3 . 这样一来, 两个 2 也不能相邻, 只能插人另一个 3 , 这导致 4 个差值为 5 ,矛盾.
+对于 (c), 1 与 $2 、 2$ 与 1 之间不能都填 3 , 必有一个填 4 而另两个空隙中填 3 , 导致 4 个差值为 5 , 矛盾.
+(2) 考察 $S$ 的 7 元子集 $\{1,2,4,7,11,16,17\}$. 它的 21 对元素的差值 (大数减小数) 中有 $1,3,5,6,9,10,15$ 各两个, $2,4,7,12,13,14,16$ 各 1 个.
+没有 3 个差数有相同的值, 即 (1) 中的结论不再成立.
+%%PROBLEM_END%%
+
+

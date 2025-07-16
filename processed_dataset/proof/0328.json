@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例6. 设 $n$ 和 $k$ 是正整数, $S$ 是平面内 $n$ 个点的集合, 满足:\n(1) $S$ 中任何三点不共线;\n(2) 对 $S$ 中每一个点 $P, S$ 中至少有 $k$ 个点与 $P$ 的距离相等.\n求证: $k<\\frac{1}{2}+\\sqrt{2 n}$.",
+    "solution": "证法一设 $S=\\left\\{P_1, P_2, \\cdots, P_n\\right\\}$, 依题意, 对任意 $P_i \\in S$, 存在以 $P_i$ 为中心的圆 $C_i$, 在 $C_i$ 上至少有 $S$ 中 $k$ 个点 $(i=1,2, \\cdots, n)$. 设 $C_i$ 上恰有 $S$ 中的 $r_i$ 个点, 而且 $P_i$ 恰在 $C_1, C_2, \\cdots, C_n$ 中 $e_i$ 个圆上 $(i=1,2, \\cdots, n)$, 于是\n$$\ne_1+e_2+\\cdots+e_n=r_1+r_2+\\cdots+r_n \\geqslant k n . \\label{eq1}\n$$\n若 $S$ 中的点 $P_i$ 同时在两个圆 $C_r$ 和 $C_j$ 上, 则将 $\\left(P_i ; C_r, C_j\\right)$ 组成一个三元组, 这种三元组形成的集合记为 $M$,一方面, 每两个圆至多有 2 个交点, 至多形成 2 个三元组, $n$ 个圆至多形成 $2 \\mathrm{C}_n^2$ 个三元组, 所以 $|M| \\leqslant 2 \\mathrm{C}_n^2$. 另一方面, 因 $P_i$ 在 $e_i$ 个圆上, 可形成 $\\mathrm{C}_{e_i}^2$ 个含 $P_i$ 的三元组 $(i=1,2, \\cdots, n)$, 故 $|M|=\\sum_{i=1}^n \\mathrm{C}_{e_i}^2$.\n综合两方面, 并利用柯西(Cauchy)不等式及\\ref{eq1}得\n$$\n\\begin{aligned}\n2 \\mathrm{C}_n^2 & \\geqslant \\sum_{i=1}^n \\mathrm{C}_{e_i}^2=\\frac{1}{2}\\left(\\sum_{i=1}^n e_i^2-\\sum_{i=1}^n e_i\\right) \\geqslant \\frac{1}{2}\\left[\\frac{1}{n}\\left(\\sum_{i=1}^n e_i\\right)^2-\\sum_{i=1}^n e_i\\right] \\\\\n& =\\frac{1}{2 n}\\left(\\sum_{i=1}^n e_i\\right)\\left(\\sum_{i=1}^n e_i-n\\right) \\geqslant \\frac{1}{2 n}(k n)(k n-n) \\\\\n& =\\frac{1}{2} n k(k-1),\n\\end{aligned}\n$$\n即 $k^2-k-2(n-1) \\leqslant 0$, 所以 $k \\leqslant \\frac{1+\\sqrt{1+8(n-1)}}{2}<\\frac{1+\\sqrt{8 n}}{2}=\\frac{1}{2}+ \\sqrt{2 n}$.",
+    "remark": "",
+    "figures": []
+}

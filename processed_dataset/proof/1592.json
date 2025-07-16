@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题18. 两个实数数列: $x_1, x_2, \\cdots$ 和 $y_1, y_2, \\cdots$, 满足 $x_1=y_1=\\sqrt{3}$,\n$$\nx_{n+1}=x_n+\\sqrt{1+x_n^2}, y_{n+1}=\\frac{y_n}{1+\\sqrt{1+y_n^2}}, n \\geqslant 1 .\n$$\n证明: 当 $n>1$ 时, 都有 $2<x_n y_n<3$.",
+    "solution": "记 $x_1=\\cot \\alpha, y_1=\\tan \\beta$, 这里 $\\alpha=\\frac{\\pi}{6}, \\beta=\\frac{\\pi}{3}$. 则\n$$\nx_2=\\cot \\alpha+\\csc \\alpha=\\frac{1+\\cos \\alpha}{\\sin \\alpha}=\\frac{2 \\cos ^2 \\frac{\\alpha}{2}}{2 \\sin \\frac{\\alpha}{2} \\cos \\frac{\\alpha}{2}}=\\cot \\frac{\\alpha}{2},\n$$\n依此结合数学归纳法易证: $x_n=\\cot \\frac{\\alpha}{2^{n-1}}$. 类似地, 可证: $y_n=\\tan \\frac{\\beta}{2^{n-1}}$. 从而当 $n>1$ 时, 有\n$$\nx_n y_n=\\cot \\frac{\\alpha}{2^{n-1}} \\tan \\frac{\\beta}{2^{n-1}}=\\cot \\frac{\\pi}{2^n \\times 3} \\tan \\frac{\\pi}{2^{n-1} \\times 3}\n$$\n$$\n=\\frac{2}{1-\\tan ^2 \\frac{\\pi}{2^n \\times 3}} .\n$$\n由于 $\\tan ^2 \\frac{\\pi}{2^n \\times 3} \\in\\left(0, \\tan ^2 \\frac{\\pi}{6}\\right)$, 即 $\\tan ^2 \\frac{\\pi}{2^n \\times 3} \\in\\left(0, \\frac{1}{3}\\right)$, 故 $2<x_n y_n<3$. 命题获证.",
+    "remark": "",
+    "figures": []
+}

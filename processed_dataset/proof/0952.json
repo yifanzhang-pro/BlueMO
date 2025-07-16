@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例15 是否存在实数 $x$, 使 $\\tan x+\\sqrt{3}$ 与 $\\cot x+\\sqrt{3}$ 是有理数?",
+    "solution": "分析:假设不存在实数 $x$,使 $\\tan x+\\sqrt{3}$ 与 $\\cot x+\\sqrt{3}$ 是有理数.\n证明若 $\\tan x+\\sqrt{3}$ 是有理数,则存在 $p, q \\in \\mathbf{Z}$ 且 $(p, q)=1$, 使得 $\\tan x+ \\sqrt{3}=\\frac{p}{q}$, 故 $\\tan x=\\frac{p}{q}-\\sqrt{3}$, 同理存在既约分数 $s, t$, 使得 $\\cot x=\\frac{s}{t}-\\sqrt{3}$, 所以 $\\left(\\frac{p}{q}-\\sqrt{3}\\right)\\left(\\frac{s}{t}-\\sqrt{3}\\right)=1$, 即 $\\sqrt{3}(p t+q s)=2 q t+p s$.\n有理数分析知 $p t+q s=0$ 且 $2 q t+p s=0$, 把前两式移项相乘得 $p^2=2 q^2$. 奇偶性分析知 $p, q$ 都为偶数,这与 $(p, q)=1$ 矛盾.\n评注 (1) 反证法是解决这类问题的常用方法; (2) 用有理数、奇偶性分析来找整数问题的矛盾.",
+    "remark": "",
+    "figures": []
+}

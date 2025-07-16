@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise12.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 能否将下列 $m \\times n$ 矩形完全剖分为若干个形如 $\\square$ 的\" $L$ 形\"?\n(1) $m \\times n=2003 \\times 2005$ ;(2) $m \\times n=2005 \\times 2007$.",
+    "solution": "(1)因 $2003 \\times 2005$ 不被 3 整除,而每个 L 型含 3 个方格,故 $2003 \\times 2005$ 矩形不能完全剖分成若干个 L 形.\n(2) 因 L 形既可拼成 $2 \\times 3$ 的矩形又可拼成 $7 \\times 9$ 的矩形 (如图(<FilePath:./images/volume11/figures/fig-c12a3.png>)), 而 $2005 \\times 2007=1998 \\times 2007+ 7 \\times 2007=(2 \\times 3) \\times(999 \\times 669)+(7 \\times 9) \\times 223$. 故知 $2005 \\times 2007$ 的矩形可完全剖分为若干个 $\\mathrm{L}$ 形.",
+    "remark": "",
+    "figures": [
+        "./images/volume11/figures/fig-c12a3.png"
+    ]
+}

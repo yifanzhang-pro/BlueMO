@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-8.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 设 $x_0 、 x_1$ 是两个给定的正实数, 数列 $\\left\\{x_n\\right\\}$ 满足 $x_{n+2}= \\frac{4 \\max \\left\\{x_{n+1}, 4\\right\\}}{x_n}, n=0,1,2, \\cdots$. 求 $x_{2011}$ 的值.",
+    "solution": "解:为计算方便, 令 $x_n=4 y_n$, 则\n$$\ny_{n+2}=\\frac{\\max \\left\\{y_{n+1}, 1\\right\\}}{y_n}, n=0,1,2, \\cdots .\n$$\n直接计算可得下表:\n\\begin{tabular}{|c|c|c|c|c|}\n\\hline & $y_0 \\leqslant 1, y_1 \\leqslant 1$ & $y_0 \\leqslant 1, y_1>1$ & $y_0>1, y_1 \\leqslant 1$ & $y_0>1, y_1>1$ \\\\\n\\hline$y_2=$ & $\\frac{1}{y_0}$ & $\\frac{y_1}{y_0}$ & $\\frac{1}{y_0}$ & $\\frac{y_1}{y_0}$ \\\\\n$y_3=$ & $\\frac{1}{y_0}$ & $\\frac{1}{y_1}$ & $\\max \\left\\{\\frac{1}{y_0}, \\frac{1}{y_1}\\right\\}$ \\\\\n$y_4=$ & $\\frac{1}{y_1 y_1}$ & $\\frac{y_0}{y_1}$ & $\\frac{y_0}{y_1}$ \\\\\n$y_5=$ & $y_1$ & $y_0$ & $y_0$ \\\\\n$y_6=$ & $y_0$ & $y_1$ & $y_1$ & $y_1$ \\\\\n\\hline\n\\end{tabular}\n所以, $\\left\\{y_n\\right\\}$ 是一个以 5 为周期的纯周期数列, 对应地, $\\left\\{x_n\\right\\}$ 也是.\n故 $x_{2011}=x_1$.\n说明题中所给递推关系式是一种特殊形式的 Lyness 方程, 这里通过直接计算来确定周期的方法对付分式递推 (具有周期性的) 数列是直接而有效的手段.",
+    "remark": "",
+    "figures": []
+}

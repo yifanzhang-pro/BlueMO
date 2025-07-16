@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题5 设 $f(x)=x^2+a x+3-a$, 若 $f(x)$ 在闭区间 $[-2,2]$ 上恒为非负数, 求实数 $a$ 的取值范围.",
+    "solution": "$f(x)=\\left(x+\\frac{a}{2}\\right)^2+3-a-\\frac{a^2}{4} . f(x) \\geqslant 0$ 在 $x \\in[-2,2]$ 上恒成立, 等价于 $f(x)$ 在 $[-2,2]$ 上的最小值非负.\n(1) 当 $-\\frac{a}{2}<-2$, 即 $a>4$ 时, $f_{\\min }(x)=f(-2)=7-3 a \\geqslant 0$. 解不等式, 得 $a \\leqslant \\frac{7}{3}$, 与 $a>4$ 矛盾.\n(2) 当 $-2 \\leqslant-\\frac{a}{2} \\leqslant 2$, 即 $-4 \\leqslant a \\leqslant 4$ 时, 有 $f_{\\text {min }}(x)=f\\left(-\\frac{a}{2}\\right)=3-a-\\frac{a^2}{4} \\geqslant 0$, 解不等式得 $-6 \\leqslant a \\leqslant 2$. 故此时可得 $-4 \\leqslant a \\leqslant 2$. \n(3) 当 $-\\frac{a}{2}>2$, 即 $a<$ -4 时, 有 $f_{\\text {min }}(x)=f(2)=7+a \\geqslant 0$, 解不等式得 $a \\geqslant-7$. 故此时 $-7 \\leqslant a<-4$. 综上, $a$ 的范围为 $[-7,2]$.",
+    "remark": "",
+    "figures": []
+}

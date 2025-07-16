@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题12. (Minkovski 不等式) 求证: 对于任意 $2 n$ 个正数 $a_1, a_2, \\cdots, a_n$ 及 $b_1, b_2, \\cdots, b_n$, 有\n$$\n\\begin{aligned}\n& \\sqrt{a_1^2+b_1^2}+\\sqrt{a_2^2+b_2^2}+\\cdots+\\sqrt{a_n^2+b_n^2} \\\\\n\\geqslant & \\sqrt{\\left(a_1+a_2+\\cdots+a_n\\right)^2+\\left(b_1+b_2+\\cdots+b_n\\right)^2},\n\\end{aligned}\n$$\n等号当且仅当 $\\frac{b_1}{a_1}=\\frac{b_2}{a_2}=\\cdots=\\frac{b_n}{a_n}$ 时成立.",
+    "solution": "把形如 $\\sqrt{x^2+y^2}$ 的项看作是一个直角三角形斜边的长, 可构造图形如图(<FilePath:./images/volume5/figures/fig-c5p12.png>)所示.\n于是, 不等式左边 $=O A_1+A_1 A_2+\\cdots+A_{n-1} A_n$, 不等式右边 $=O A_n$.\n由于折线 $O A_1 \\cdots A_n$ 的长不小于直线段 $O A_n$ 的长, 故 $O A_1+A_1 A_2+\\cdots+ A_{n-1} A_n \\geqslant O A_n$, 因此不等式成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume5/figures/fig-c5p12.png"
+    ]
+}

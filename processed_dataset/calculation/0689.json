@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题12 函数 $y=\\sqrt{\\cos x-2 \\cos ^2 x}$ 的定义域是 , 值域是",
+    "solution": "$\\left[2 k \\pi+\\frac{\\pi}{3}, 2 k \\pi+\\frac{\\pi}{2}\\right] \\cup\\left[2 k \\pi-\\frac{\\pi}{2}, 2 k \\pi-\\frac{\\pi}{3}\\right](k \\in \\mathbf{Z}),\\left[0, \\frac{\\sqrt{2}}{4}\\right]$.\n由条件得 $\\cos x-2 \\cos ^2 x \\geqslant 0$, 即 $0 \\leqslant \\cos x \\leqslant \\frac{1}{2}$, 所以定义域为 $\\left[2 k \\pi+\\frac{\\pi}{3}, 2 k \\pi+\\frac{\\pi}{2}\\right] \\cup\\left[2 k \\pi-\\frac{\\pi}{2}, 2 k \\pi-\\frac{\\pi}{3}\\right](k \\in \\mathbf{Z})$, 又 $y=\\sqrt{-2\\left(\\cos x-\\frac{1}{4}\\right)^2+\\frac{1}{8}}$, 故值域为 $\\left[0, \\frac{\\sqrt{2}}{4}\\right]$.",
+    "remark": "",
+    "figures": []
+}

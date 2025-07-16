@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题18. 设 $a, b, c \\in\\left(0, \\frac{\\pi}{2}\\right)$, 求证:\n$$\n\\begin{gathered}\n\\frac{\\sin a \\sin (a-b) \\sin (a-c)}{\\sin (b+c)}+\\frac{\\sin b \\sin (b-c) \\sin (b-a)}{\\sin (c+a)} \\\\\n+\\frac{\\sin c \\sin (c-a) \\sin (c-b)}{\\sin (a+b)} \\geqslant 0 .\n\\end{gathered}\n$$",
+    "solution": "因为 $\\sin (x-y) \\sin (x+y)=\\frac{1}{2}(\\cos 2 \\beta-\\cos 2 \\alpha)=\\sin ^2 \\alpha-\\sin ^2 \\beta$, 所以\n$$\n\\begin{aligned}\n& \\sin a \\sin (a-b) \\sin (a-c) \\sin (a+b) \\sin (a+c) \\\\\n&= \\sin a\\left(\\sin ^2 a-\\sin ^2 b\\right)\\left(\\sin ^2 a-\\sin ^2 c\\right) . \\\\\n& \\sin ^2 a, y=\\sin ^2 b, z=\\sin ^2 c, \\text { 则原不等式等价于 } \\\\\n&y)(x-z)+y^{\\frac{1}{2}}(y-z)(y-x)+z^{\\frac{1}{2}}(z-x)(z-y) \\geqslant 0,\n\\end{aligned}\n$$\n令 $x=\\sin ^2 a, y=\\sin ^2 b, z=\\sin ^2 c$, 则原不等式等价于\n$$\nx^{\\frac{1}{2}}(x-y)(x-z)+y^{\\frac{1}{2}}(y-z)(y-x)+z^{\\frac{1}{2}}(z-x)(z-y) \\geqslant 0,\n$$\n此即 Schur 不等式.",
+    "remark": "",
+    "figures": []
+}

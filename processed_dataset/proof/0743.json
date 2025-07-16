@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例5. 如图(<FilePath:./images/volume14/figures/fig-c8i5.png>), 延长凸四边形 $A B C D$ 的边 $A B 、 D C$ 交于点 $E$, 延长边 $A D 、 B C$ 交于点 $F$. 求证: $A C 、 B D 、 E F$ 的中点 $M 、 N 、 L$ 这三点共线 (这条线称为完全四边形 $A B C D E F$ 的\"牛顿线\").",
+    "solution": "证明:连接 $M B 、 M D 、 M E 、 M F 、 N E 、 N F 、 M N$.\n由 $M 、 N$ 分别是 $A C 、 B D$ 的中点可得:\n$$\n\\begin{aligned}\nS_{\\triangle M D E} & =S_{\\triangle M N E}+S_{\\triangle M D N}+S_{\\triangle E D N} \\\\\n& =S_{\\triangle M N E}+S_{\\triangle M B N}+S_{\\triangle E B N}=2 S_{\\triangle M N E}+S_{\\triangle M B E},\n\\end{aligned}\n$$\n故\n$$\n\\begin{aligned}\nS_{\\triangle M N E} & =\\frac{S_{\\triangle M D E}-S_{\\triangle M B E}}{2} \\\\\n& =\\frac{S_{\\triangle A D E}-S_{\\triangle C B E}}{4}=-\\frac{1}{4} S_{A B C D} .\n\\end{aligned}\n$$\n同理可得\n$$\nS_{\\triangle M N F}=\\frac{S_{\\triangle M B F}-S_{\\triangle M D F}}{2}=\\frac{S_{\\triangle A B F}-S_{\\triangle C D F}}{4}=\\frac{1}{4} S_{A B C D} .\n$$\n从而 $S_{\\triangle M N E}=S_{\\triangle M N F}$.\n由于 $E 、 F$ 在直线 $M N$ 异侧 (在已知的图形关系下, 有直线 $M N$ 与线段 $E F$ 相交), 故直线 $M N$ 平分线段 $E F$, 即 $M 、 N 、 L$ 三点共线.",
+    "remark": "注:本题中,我们先充分运用 \" $M 、 N$ 为 $A C 、 B D$ 中点\"的条件进行面积转换.\n最后, 我们利用 $S_{\\triangle M N E}= S_{\\triangle M N F}$ 证得另一个中点 $L$ 在直线 $M N$ 上, 事实上, 这是基于以下定理:\n定理设点 $P$ 为 $\\triangle A B C$ 所在平面上一点, 直线 $C P$ 与 $A B$ (或其延长线) 相交于点 $D$, 如图(<FilePath:./images/volume14/figures/fig-c8i6.png>), 则 $\\frac{S_{\\triangle A P C}}{S_{\\triangle B P C}}=\\frac{A D}{B D}$.\n因此,若 $P$ 在 $\\triangle A B C$ 内, $D$ 在线段 $A B$ 上,且 $\\frac{S_{\\triangle A P C}}{S_{\\triangle B P C}}=\\frac{A D}{B D}$, 则 $C 、 P 、 D$ 三点共线.\n根据这个结论不难完成本题最后的证明步骤.\n可见, 面积方法是证明三点共线的方法之一.\n在组合几何方面, 也常常要从面积人手考虑一些问题.\n下例是一个覆盖问题,证明中用到了面积重叠原理:\n将 $n$ 个面积为 $S_i(1 \\leqslant i \\leqslant n)$ 的区域放人一个面积为 $S_0$ 的区域 $C$, 若这 $n$ 个区域的面积总和大于 $k S_0$, 则 $C$ 中必有一点被其中至少 $k+1$ 个区域覆盖; 若面积总和小于 $k S_0$, 则 $C$ 中必有一点被其中至多 $k-1$ 个区域覆盖.",
+    "figures": [
+        "./images/volume14/figures/fig-c8i5.png",
+        "./images/volume14/figures/fig-c8i6.png"
+    ]
+}

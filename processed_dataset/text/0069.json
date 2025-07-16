@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter9.tex",
+    "text": "定理二竞赛图中总存在这样一个顶点, 使得从这一顶点出发, 通过长最多为 2 的路可以到达其他所有顶点.\n证明设竞赛图 $\\bar{K}_n$ 中出度最大的顶点为 $v_1$, 以 $v_1$ 为起点的弧的终点集合记为 $\\mathbf{N}^{+}\\left(v_1\\right)$. 若命题结论不真, 则必存在顶点 $v_2\\left(v_2 \\neq v_1\\right), v_2 \\notin \\mathbf{N}^{+}\\left(v_1\\right)$, 且对每一点 $u \\in \\mathbf{N}^{+}\\left(v_1\\right)$ 都有一条从 $v_2$ 到 $u$ 的弧 $\\left(v_2, u\\right)$, 又有弧 $\\left(v_2, v_1\\right)$, 故 $d^{+}\\left(v_2\\right) \\geqslant d^{+}\\left(v_1\\right)+1$, 这与 $v_1$ 是出度最大的顶点矛盾.\n定理得证.",
+    "figures": []
+}

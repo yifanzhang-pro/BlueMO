@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例10. 将 $1,2,3, \\cdots, 2007$ 这 2007 个数任意排列可得 2007 ! 个不同数列, 问其中是否存在 4 个数列:\n$$\na_1, a_2, \\cdots, a_{2007} ; b_1, b_2, \\cdots, b_{2007} ; c_1, c_2, \\cdots, c_{2007} ; d_1, d_2, \\cdots, d_{2007},\n$$\n使得 $\\quad a_1 b_1+a_2 b_2+\\cdots+a_{2007} b_{2007}=2\\left(c_1 d_1+c_2 d_2+\\cdots+c_{2007} d_{2007}\\right)$ ?\n并证明你的结论.",
+    "solution": "解:由排序不等式\n$$\n\\begin{aligned}\na_1 b_1+a_2 b_2+\\cdots+a_{2007} b_{2007} & \\leqslant 1 \\cdot 1+2 \\cdot 2+\\cdots+2007 \\cdot 2007 \\\\\n& =\\frac{2007 \\cdot 2008 \\cdot 4015}{6}=2696779140, \\\\\nc_1 d_1+c_2 d_2+\\cdots+c_{2007} d_{2007} & \\geqslant 1 \\cdot 2007+2 \\cdot 2006+\\cdots+2007 \\cdot 1 \\\\\n& =\\sum_{k=1}^{2007} k(2008-k)=2008 \\sum_{k=1}^{2007} k-\\sum_{k=1}^{2007} k^2 \\\\\n& =2008 \\cdot \\frac{2007 \\cdot 2008}{2}-2696779140 \\\\\n& =1349397084,\n\\end{aligned}\n$$\n于是 $2\\left(c_1 d_1+c_2 d_2+\\cdots+c_{2007} d_{2007}\\right) \\geqslant 2698794168>a_1 b_1+a_2 b_2+\\cdots+ a_{2007} b_{2007}$.\n由此可见,满足条件的四个数列不存在.",
+    "remark": "",
+    "figures": []
+}

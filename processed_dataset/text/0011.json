@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter6.tex",
+    "text": "集合的性质很多集合问题实际上就是研究集合中元素的性质问题,前面的每一节都能找到这样的例子.\n面,我们再通过一些例子进一步探讨研究集合性质的技巧.\n一、集合中全部元素的性质已知集合 $S=\\{x \\mid P(x)\\}$. 如果由性质 $P$ 能推出 $S$ 中每个元素都满足的性质 $P^{\\prime}$, 那么 $P^{\\prime}$ 就是 $P$ 的一个必要条件.\n设 $S^{\\prime}=\\left\\{x \\mid P^{\\prime}(x)\\right\\}$, 显然有 $S \\subseteq S^{\\prime}$.",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $n$ 元集合 $X$ 的某些三元子集组成集合 $S$, 且 $S$ 中每两个元素(子集)之间至多有 1 个公共元素.\n试证: 存在集合 $A \\subset X$, 使得 $|A| \\geqslant[\\sqrt{2 n}]$, 且 $S$ 中的任何元素都不是 $A$ 的子集.",
+    "solution": "分析:依题设 $X$ 的三元子集族 $S$ 显然没有包含 $X$ 的全部三元子集, 故存在 $X$ 的不包含 $S$ 中任何元素 ( $X$ 的三元子集) 的子集, 毫无疑问应选取其中元素最多者来做 $A$.\n证明设在 $X$ 的不包含 $S$ 中任何元素的子集中, $A$ 是元素数目最多的一个, $|A|=a$. 对于每个 $x \\in X-A, A \\cup\\{x\\}$ 中必包含 $S$ 中的一个元素, 否则与 $a$ 的最大性矛盾.\n设 $x, y \\in X-A, x \\neq y$, 则 $A \\cup\\{x\\}$ 与 $A \\cup\\{y\\}$ 分别包含 $S$ 中的元素 $s(x)$ 和 $s(y)$. 显然, $s(x) \\neq s(y)$. 按已知, 二者至多有 1 个公共元素, 所以相应的 $A$ 中的两个二元子集也不同, 即\n$$\ns(x)-\\{x\\} \\neq s(y)-\\{y\\} .\n$$\n这样一来, 我们就定义了一个由 $X-A$ 到 $A$ 的所有二元子集组成的集合的单射:\n$$\nX-A \\ni x \\longmapsto s(x)-\\{x\\} \\subset A .\n$$\n从而有\n$$\n\\begin{gathered}\nn-a \\leqslant \\mathrm{C}_a^2, \\\\\na+\\frac{1}{2}>\\sqrt{2 n} .\n\\end{gathered}\n$$\n因为 $a \\in N$, 所以 $a \\geqslant[\\sqrt{2 n}]$.",
+    "remark": "",
+    "figures": []
+}

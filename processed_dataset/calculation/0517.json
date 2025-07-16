@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例14 求函数 $f(x)=\\sqrt{x^4-3 x^2-6 x+13}-\\sqrt{x^4-x^2+1}$ 的最大值, 及此时 $x$ 的值.",
+    "solution": "分析:将原式整理成\n$$\nf(x)=\\sqrt{(x-3)^2+\\left(x^2-2\\right)^2}-\\sqrt{x^2+\\left(x^2-1\\right)^2}\n$$\n后, 可以发现 $\\sqrt{(x-3)^2+\\left(x^2-2\\right)^2}$ 表示点 $P\\left(x, x^2\\right)$ 到点 $A(3,2)$ 的距离, $\\sqrt{x^2+\\left(x^2-1\\right)}$ 表示点 $P\\left(x, x^2\\right)$ 到点 $B(0,1)$ 的距离, 再适当地用几何意义来解题.\n解因为 $f(x)=\\sqrt{(x-3)^2+\\left(x^2-2\\right)^2}-\\sqrt{x^2+\\left(x^2-1\\right)^2}$, 它表示点 $P\\left(x, x^2\\right)$ 到点 $A(3,2)$ 与点 $B(0,1)$ 的距离之差, 如图(<FilePath:./images/volume2/figures/fig-c4e14.png>) 所示.\n而 $P\\left(x, x^2\\right)$ 在抛物线 $y=x^2$ 上,易知\n$$\n|P A|-|P B| \\leqslant|A B|\n$$\n取等号时, $P$ 在 $A B$ 的延长线上.\n$A B$ 的方程为\n$$\ny=\\frac{1}{3} x+1\n$$\n解方程组 $\\left\\{\\begin{array}{l}y=x^2, \\\\ y=\\frac{1}{3} x+1,\\end{array}\\right.$, 得\n$$\nx_1=\\frac{1-\\sqrt{37}}{6}, x_2=\\frac{1+\\sqrt{37}}{6} \\text {. }\n$$\n因为点 $P$ 在 $A B$ 的延长线上, 舍去 $x_2$, 所以 $x=\\frac{1-\\sqrt{37}}{6}$.\n最小距离为 $|A B|=\\sqrt{10}$, 这正是需求的函数的最大值.\n说明对于根号里的代数式, 我们常常通过配方, 把它看成平面上两个点之间的距离.",
+    "remark": "",
+    "figures": [
+        "./images/volume2/figures/fig-c4e14.png"
+    ]
+}

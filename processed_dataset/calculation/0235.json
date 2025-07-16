@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 用 $n$ 块 $1 \\times 2$ 的纸片覆盖一个 $2 \\times n$ 的棋盘(没有重叠也没有空隙)共有多少种不同的方法?",
+    "solution": "设共有 $a_n$ 种不同的覆盖方法, 显然 $a_1=1, a_2=2$. 对于 $2 \\times n$ 的棋盘, 若一开始用一张 $1 \\times 2$ 的纸片坚方向盖住最左边一列的 2 格, 则剩下的 $2 \\times (n-1)$ 个方格有 $a_{n-1}$ 种覆盖方法, 若一开始用 2 张 $1 \\times 2$ 的纸片横方向盖住最左边的 $2 \\times 2$ 的方格, 则剩下 $2 \\times(n-2)$ 个方格有 $a_{n-2}$ 种覆盖方法.\n所以 $a_n= a_{n-1}+a_{n-2}(n \\geqslant 3)$. 可见 $\\left\\{a_n\\right\\}$ 为斐波那契数列, 由例 6 得 $a_n= \\frac{1}{\\sqrt{5}}\\left[\\left(\\frac{1+\\sqrt{5}}{2}\\right)^{n+1}-\\left(\\frac{1-\\sqrt{5}}{2}\\right)^{n+1}\\right](n \\geqslant 1)$.",
+    "remark": "",
+    "figures": []
+}

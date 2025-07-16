@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例17. 对于 $\\frac{1}{2} \\leqslant x \\leqslant 1$, 求 $(1+x)^5(1-x)(1-2 x)^2$ 的最大值.",
+    "solution": "解:我们考虑 $[\\alpha(1+x)]^5[\\beta(1-x)][\\gamma(2 x-1)]^2$ 的最大值, 这里 $\\alpha 、 \\beta$ 、 $\\gamma$ 是正整数, 满足 $5 \\alpha-\\beta+4 \\gamma=0, \\alpha(1+x)=\\beta(1-x)=\\gamma(2 x-1)$. 后者即\n$$\n\\frac{\\beta-\\alpha}{\\beta+\\alpha}=\\frac{\\beta+\\gamma}{2 \\gamma+\\beta}\n$$\n代入 $\\beta=5 \\alpha+4 \\gamma$, 得\n$$\n0=2\\left(3 \\alpha \\gamma+5 \\alpha^2-2 \\gamma^2\\right)=2(5 \\alpha-2 \\gamma)(\\alpha+\\gamma),\n$$\n我们取 $(\\alpha, \\beta, \\gamma)=(2,30,5)$, 由平均不等式得,\n$$\n[2(1+x)]^5[30(1-x)][5(2 x-1)]^2 \\leqslant\\left(\\frac{15}{4}\\right)^8,\n$$\n此时 $x=\\frac{7}{8}$. 所以, 当 $x=\\frac{7}{8}$ 时, $(1+x)^5(1-x)(1-2 x)^2$ 的最大值为 $\\frac{3^7 \\cdot 5^5}{2^{22}}$.",
+    "remark": "",
+    "figures": []
+}

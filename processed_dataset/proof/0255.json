@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设 $m 、 n$ 为正整数,且 $m \\geqslant n$, 具有性质: 等式\n$$\n(11 k-1, m)=(11 k-1, n)\n$$\n对所有正整数 $k$ 成立.\n证明: $m=11^r n, r$ 是一个非负整数.",
+    "solution": "设 $m=11^i u, n=11^j v$, 其中 $i, j$ 为非负整数, $u, v$ 为不被 11 整除的正整数.\n我们证明必有 $u=v$, 由此即知 $m=11^{i j} n$. 若 $u \\neq v$, 无妨设 $u>v$. 因 $(u, 11)=1$, 故由中国剩余定理,有正整数 $x$,使得\n$$\nx \\equiv 0(\\bmod u), x \\equiv-1(\\bmod 11), \\label{eq1}\n$$\n即 $x=11 k-1$ ( $k$ 为某个正整数). 由 式\\ref{eq1} 易知 $(11 k-1, m)=\\left(x, 11^i u\\right)=u$, 但 $(11 k-1, n)=\\left(x, 11^j v\\right) \\leqslant v<u$, 这与条件 $(11 k-1, m)=(11 k-1, n)$ 相违,故必须 $u=v$.",
+    "remark": "",
+    "figures": []
+}

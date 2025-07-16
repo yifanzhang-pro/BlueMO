@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题16. 已知 $0<\\theta<{\\frac{\\pi}{2}}$ ,则 $1+\\cot\\theta$ 和 cot $\\frac{\\theta}{2}$ 的大小关系是",
+    "solution": "$1+\\cot \\theta<\\cot \\frac{\\theta}{2}$.",
+    "remark": "",
+    "figures": []
+}

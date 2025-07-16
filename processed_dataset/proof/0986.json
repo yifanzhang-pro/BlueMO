@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例9 求证: $\\arctan \\frac{1}{3}+\\arctan \\frac{1}{7}+\\arctan \\frac{1}{13}+\\cdots+\\arctan \\frac{1}{1+n+n^2}= \\arctan \\frac{n}{n+2}$.",
+    "solution": "分析:形如数列求和的三角函数式, 通常采用 “裂项”或 “配对”之法, 如何将 $\\arctan \\frac{1}{1+n+n^2}$ 一分为二呢, 通过构造等式来解之.\n证明设\n$$\nf(n)=\\frac{n}{n+2},\n$$\n则\n$$\n\\begin{aligned}\n\\frac{f(n)-f(n-1)}{1+f(n) f(n-1)} & =\\frac{\\frac{n}{n+2}-\\frac{n-1}{n+1}}{1+\\frac{n}{n+2} \\cdot \\frac{n-1}{n+1}} \\\\\n& =\\frac{n^2+n-\\left(n^2+n-2\\right)}{2 n^2+2 n+2} \\\\\n& =\\frac{1}{n^2+n+1} .\n\\end{aligned}\n$$\n即 $\\tan \\left(\\arctan \\frac{1}{1+n+n^2}\\right)=\\frac{\\tan [\\arctan f(n)]-\\tan [\\arctan f(n-1)]}{1+\\tan [\\arctan f(n)] \\cdot \\tan [\\arctan f(n-1)]}$\n$$\n=\\tan [\\arctan f(n)-\\arctan f(n-1)] \\text {, }\n$$\n从而\n$$\n\\begin{aligned}\n\\arctan \\frac{1}{1+n+n^2} & =\\arctan f(n)-\\arctan f(n-1) \\\\\n& =\\arctan \\frac{n}{n+2}-\\arctan \\frac{n-1}{n+1} .\n\\end{aligned}\n$$\n所以\n$$\n\\begin{aligned}\n\\text { 左式 }= & \\arctan \\frac{1}{3}+\\left(\\arctan \\frac{2}{4}-\\arctan \\frac{1}{3}\\right) \\\\\n& +\\left(\\arctan \\frac{3}{5}-\\arctan \\frac{2}{4}\\right)+\\cdots \\\\\n& +\\left(\\arctan \\frac{n}{n+2}-\\arctan \\frac{n-1}{n+1}\\right) \\\\\n= & \\arctan \\frac{n}{n+2} .\n\\end{aligned}\n$$\n评注本题又可改编为 $\\arctan \\frac{1}{3}+\\arctan \\frac{1}{7}+\\cdots+\\arctan \\frac{1}{1+n+n^2}+ \\arctan \\frac{1}{n+1}=\\frac{\\pi}{4}$.",
+    "remark": "",
+    "figures": []
+}

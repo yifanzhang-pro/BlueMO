@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $n>1$, 证明 $n \\nmid\\left(2^n-1\\right)$.",
+    "solution": "证明二这一解法不必考虑 $n$ 的素因子.\n设有 $n>1$, 使 $n \\mid\\left(2^n-1\\right)$, 则 $n$ 为奇数, 设 $r$ 是 2 模 $n$ 的阶, 则由 $2^n \\equiv 1(\\bmod n)$ 知 $r \\mid n$. 又 $2^r \\equiv 1(\\bmod n)$, 故更有 $2^r \\equiv 1(\\bmod r)$, 即\n$$\nr \\mid\\left(2^r-1\\right) . \\label{eq3}\n$$\n因阶 $r$ 满足 $1 \\leqslant r<n$, 而显然 $r \\neq 1$ (否则导出 $n=1$ ), 故 $1<r<n$. 由 式\\ref{eq3} 重复上述论证, 可得出无穷多个整数 $r_i(i=1,2, \\cdots)$, 满足 $r_i \\mid 2^{r_i}-1$, 且 $n>r>r_1>r_2>\\cdots>1$, 这显然不可能.\n这一证明,也可采用下面更为简单的表述: 取 $n>1$ 是最小的使 $n \\mid\\left(2^n-1\\right)$ 的整数, 上面论证产生了一个整数 $r$, 使得 $r \\mid\\left(2^r-1\\right)$ 且 $1<r<n$, 这与 $n$ 的选取相违.",
+    "remark": "",
+    "figures": []
+}

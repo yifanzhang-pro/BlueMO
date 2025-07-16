@@ -1,0 +1,233 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 在圆内接四边形 $A B C D$ 中, $F 、 G$ 分别为 $A C 、 B D$ 的中点.
+[1] 证明: 若 $\angle B$ 与 $\angle D$ 的平分线的交点恰好在 $A C$ 上, 则 $\frac{1}{4} A C \cdot B D= \sqrt{A G \cdot B F} \cdot C G \cdot D F$. (2) (1) 的逆命题一定成立吗?
+%%<SOLUTION>%%
+证明: [1] 如图(<FilePath:./figures/fig-c1a1-1.png>), 设 $E$ 为 $\angle B$ 与 $\angle D$ 平分线的交点.
+由角分线定理有 $\frac{A B}{B C}=$ i $\frac{A E}{E C}=\frac{A D}{D C} \cdots$ (1). 由托勒密定理有 $A B \cdot C D+A D \cdot B C=A C \cdot B D$. 结合式 (1) 有 $2 B C \cdot A D=A C \cdot B D \cdots$ (2). $2 A B \cdot C D=A C \cdot B D \cdots$ (3).
+由式(2)得 $\frac{F A}{A D}= \frac{A C}{2 A D}=\frac{B C}{B D}$. 又 $\angle F A D=\angle C A D=\angle C B D$, 故 $\triangle F A D \backsim \triangle C B D$. 同理, $\triangle F A B \backsim \triangle C D B$. 因此, $\triangle F A D \backsim \triangle F B A$, 有 $\frac{F A}{F D}=\frac{F B}{F A}$. 故 $\frac{1}{4} A C^2=F B \cdot F D \cdots$ (4). 
+又由式 (1) 知 $\frac{D A}{A B}=\frac{D C}{C B}$, 这意味着 $\angle A$ 与 $\angle C$ 平分线的交点在 $B D$ 上.
+仿上述证法有, $\frac{1}{4} B D^2=A G \cdot C G \cdots$ (5). (4) $\times$(5)即可得证.
+[2] [1] 的逆命题不一定成立.
+如图(<FilePath:./figures/fig-c1a1-2.png>), 设四边形 $A B C D$ 为矩形, $A B>B C$. 显然, $A G=B F=C G=D F= \frac{1}{2} A C=\frac{1}{2} B D$, 满足 $\left(\frac{1}{4} A C \cdot B D\right)^2=A G \cdot B F \cdot C G \cdot D F$. 但 $\frac{A B}{B C}>1>\frac{A D}{D C}$,
+说明 $\angle B$ 与 $\angle D$ 的平分线不在 $A C$ 相交.
+因此, 逆命题为假命题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 在锐角不等边 $\triangle A B C$ 中, $A C>B C$. 设 $O 、 H$ 分别是 $\triangle A B C$ 的外心、垂心, $C F \perp A B$ 于点 $F$. 令 $P$ 是直线 $A B$ 上一点 $(P \neq A)$, 满足 $A F=P F$. 记 $G$ 是边 $A C$ 的中点, 直线 $P H$ 与 $B C 、 O G$ 与 $F X 、 O F$ 与 $A C$ 分别交于点 $X 、 Y 、 Z$. 证明: $F 、 G 、 Z 、 Y$ 四点共圆.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c1a2-1.png>), , 首先, 由 $G$ 是 $A C$ 中点, $O 、 H$ 分别为 $\triangle A B C$ 的外心, 垂心, 及欧拉定理知: $G 、 O 、 H 、 B$ 四点共线.
+要证 $Z 、 G 、 F 、 Y$ 四点共圆, 由 $\angle Y G Z=\angle O G Z=90^{\circ}$, 知只需证 $\angle O F Y=90^{\circ}$, 即 $\angle O F X=90^{\circ}$.
+如图(<FilePath:./figures/fig-c1a2-2.png>), , 作 $O E \perp A B$. 则 $C H=2 O E$. 由题设有 $P B=P F-B F=A F- B F=2 E F$. 另一方面, 由 $\angle H P B=\angle H A B=\angle H C B$, 知 $P 、 B 、 H 、 C$ 四点共圆.
+因此, $\triangle P X B \backsim \triangle C X H$. 作 $X L \perp A B$ 于点 $L, X N \perp C F$ 于点 $N$. 则 $\frac{X L}{L F}= \frac{X L}{X N}=\frac{P B}{C H}=\frac{2 E F}{2 O E}=\frac{E F}{O E}$. 又 $\angle X L F=\angle F E O=90^{\circ}$. 于是, $\triangle X L F \backsim \triangle F E O$. 从而, $\angle X F L=\angle F O E$. 故 $\angle X F O=180^{\circ}-\angle X F L-\angle O F E= 180^{\circ}-\angle F O E-\angle O F E=90^{\circ}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 连结三角形内切圆的圆心和它的顶点的直线将原三角形分为三个三角形.
+若它们之中的一个三角形与原三角形相似,求三角形三个角的度数.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c1a3.png>), 设 $\triangle A B C$ 的三个内角分别为 $\alpha 、 \beta$ 、 $\gamma, O$ 为其内切圆圆心.
+点 $O$ 和 $\triangle A B C$ 的三个顶点的连线是其三个内角的平分线.
+因为 $\angle O B C=\frac{\beta}{2}$, $\angle O C B=\frac{\gamma}{2}$, 则 $\angle C O B=180^{\circ}-\frac{\beta}{2}-\frac{\gamma}{2}=90^{\circ}+\frac{\alpha}{2}$. 不失一般性, 设 $\triangle A B C$ 和 $\triangle C O B$ 相似.
+于是, $\angle C O B$ 等于 $\alpha, \beta, \gamma$ 中的一个.
+若 $\angle C O B=\alpha$, 则 $90^{\circ}+\frac{\alpha}{2}=\alpha$, 即
+$\alpha=180^{\circ}$, 这是不可能的.
+因此, $\angle C O B=\beta$ 或 $\angle C O B=\gamma$. 不妨设 $\angle C O B=\beta$, 则有 $\angle O B C=\alpha$ 或 $\angle O B C=\gamma$. 若是第一种情况, 有 $\angle B C O=\gamma$, 则 $\frac{\gamma}{2}=\gamma$, 不可能.
+因此, $\angle O B C=\gamma, \angle B C O=\alpha$. 于是, $\gamma=2 \alpha, \beta=2 \gamma=4 \alpha$. 因为 $\alpha+\beta+\gamma= 180^{\circ}$, 即 $\alpha+2 \alpha+4 \alpha=180^{\circ}$, 则 $\alpha=\left(\frac{180}{7}\right)^{\circ}, \beta=\left(\frac{720}{7}\right)^{\circ}, \gamma=\left(\frac{360}{7}\right)^{\circ}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 半圆 $\Gamma$ 的直径是 $A B, M$ 是 $A B$ 的中点.
+在半圆 $\Gamma$ 的同侧, 以 $M B$ 为直径作半圆 $\Gamma_1$. 设 $X 、 Y$ 是半圆 $\Gamma_1$ 上的点, 且 $\overparen{B X}=1.5 \overparen{B Y}$. 直线 $M Y$ 交 $B X$ 于点 $D$, 交半圆 $\Gamma$ 于点 $C$. 证明: $Y$ 是线段 $C D$ 的中点.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c1a4.png>), 取 $\overparen{B Y}$ 的中点 $Z$, 设 $B Z 、 M Y$ 相交于点 $E$, 在半圆 $\Gamma_1$ 中, $\angle M Z B$ 是直径 $M B$ 所对的圆心角, 于是, $M Z \perp B Z$. 因为 $\overparen{B Z}=\overparen{Z Y}$, 所以, $\angle Y M Z=\angle B M Z$. 在 $\triangle M Z B$ 和 $\triangle M Z E$ 中, 由 $\angle E M Z=\angle B M Z, M Z=M Z, \angle M Z E=\angle M Z B=90^{\circ}$, 所以, $\triangle M Z B \cong \triangle M Z E$. 故 $M E=M B$. 因此, 点 $E$ 和 $C$ 重合.
+又 $\angle M Y B$ 是直径 $M B$ 所对的圆心角, 于是, $M Y \perp B Y$. 因为 $\overparen{Z Y}=\overparen{Y X}$, 所以, $\angle Z B Y=\angle Y B X$. 同理, $\triangle B Y C \cong \triangle B Y D$. 故 $C Y=D Y$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $X 、 Y 、 Z$ 分别是菱形 $A B C D$ 边 $A B 、 B C 、 C D$ 上的点, 且使得 $X Y / / A Z$. 证明: $X Z 、 A Y 、 B D$ 三线共点.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c1a5-1.png>),  注意到 $\angle B Y X=\angle Z A D, \angle X B Y=\angle Z D A$, 所以, $\triangle X B Y \backsim \triangle Z D A$. 故 $\frac{B X}{B Y}=\frac{D Z}{D A}$.
+设 $K 、 L$ 分别是对角线 $B D$ 与线段 $X Y 、 A Z$ 的交点.
+因为 $B D$ 是 $\angle A B C$ 和 $\angle A D Z$ 的平分线, 则 $\frac{B X}{B Y}=\frac{X K}{K Y}, \frac{D Z}{D A}=\frac{Z L}{L A}$. 从而, $\frac{X K}{K Y}=\frac{Z L}{L A}$ 或 $\frac{X K}{Z L}= \frac{K Y}{L A} \cdots$ (1). 设线段 $A Y$ 与对角线 $B D$ 交于 $M_1$, 易知 $\triangle K Y M_1 \backsim \triangle L A M_1$. 则 $\frac{K Y}{L A}= \frac{K M_1}{L M_1} \cdots$ (2). 如图(<FilePath:./figures/fig-c1a5-2.png>),  设线段 $X Z$ 与对角线 $B D$ 交于 $M_2$, 易知 $\triangle K X M_2 \backsim \triangle L Z M_2$, 则 $\frac{X K}{Z L}=\frac{K M_2}{L M_2} \cdots$ (3). 由式(1)、(2)、(3)得 $\frac{K M_1}{L M_1}=\frac{K M_2}{L M_2}$, 即 $M_1=M_2$. 因此, $X Z 、 A Y 、 B D$ 三线共点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 已知等腰 $\triangle A B C$ 和等腰 $\triangle D B C$ 有公共的底边 $B C$, 且 $\angle A B D=90^{\circ} . M$ 是 $B C$ 的中点, $E$ 是线段 $A B$ 内部一点, $P$ 是线段 $M C$ 内部一点, $F$ 是 $A C$ 延长线上一点, 且满足 $\angle B D E=\angle A D P=\angle C D F$. 证明: $P$ 是线段 $E F$ 的中点, 且 $D P \perp E F$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c1a6.png>), 连结 $E F$ 交 $B C$ 于 $P^{\prime}$. 首先, $\angle E B D= \angle D C F=90^{\circ}, B D=C D, \angle B D E=\angle C D F$, 故 $\triangle B D E \cong \triangle C D F$. 进而, $D E=D F, \triangle D E F$ 也是等腰三角形.
+则 $\angle E D F=\angle E D C+\angle C D F=\angle B D E+ \angle E D C=\angle B D C$. 因此, $\triangle E D F \backsim \triangle B D C, \angle D E F= \angle D B C$. 于是, $E 、 B 、 D 、 P^{\prime}$ 四点共圆.
+所以, $\angle E P^{\prime} D= \angle E B D=90^{\circ}$. 从而, $E P^{\prime}=P^{\prime} F, D P^{\prime} \perp E F$. 下面证明
+$P^{\prime}$ 与 $P$ 重合.
+由 $\angle B P^{\prime} D=\angle B E D, \angle P^{\prime} M D=\angle E B D=90^{\circ}$, 得 $\triangle M P^{\prime} D \backsim \triangle B E D, \angle A D P^{\prime}=\angle B D E$. 所以, $P^{\prime}$ 与 $P$ 重合.
+因此,所证结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7 $\odot O_1 、 \odot O_2$ 相交于 $A 、 B$ 两点, 过 $B$ 作直线分别交 $\odot O_1 、 \odot O_2$ 于点 $C$ 、 $E$, 过 $B$ 再作直线分别交 $\odot O_1 、 \odot O_2$ 于点 $D 、 F$. 点 $B$ 位于点 $C 、 E$ 和 $D$ 、 $F$ 之间, $M 、 N$ 分别为 $C E 、 D F$ 的中点.
+证明: $\triangle A C D \backsim \triangle A E F \backsim \triangle A M N$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c1a7.png>), 连结 $A B$. 显然, 四边形 $A C D B$ 和四边形 $A B E F$ 都是圆内接四边形, 所以, $\angle C A D=\angle C B D=\angle E B F=\angle E A F$, $\angle A D C=\angle A B C=180^{\circ}-\angle E B A=\angle A F E$. 因此, $\triangle A C D \backsim \triangle A E F$. 同理, $\triangle A C E$ c $\triangle A D F$, 所以, $A C: A M=A D: A N \cdots$ (1). 且 $\angle C A M=\angle D A N$. 从而, $\angle C A D=\angle M A N \cdots$ (2).
+由 (1)、(2) 知 $\triangle A C D \backsim \triangle A M N$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 已知 $C$ 是线段 $A B$ 的中点, 过点 $A 、 C$ 的圆 $\odot O_1$ 与过点 $B 、 C$ 的 $\odot O_2$ 相交于 $C 、 D$ 两点, $P$ 是 $\odot O_1$ 上 $\overparen{A D}$ (不包含点 $C$ ) 的中点, $Q$ 是 $\odot O_2$ 上 $\overparen{B D}$ (不包含点 $C$ ) 的中点.
+求证: $P Q \perp C D$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c1a8.png>), 设 $A D 、 P C$ 相交于点 $E, B D$ 、 $Q C$ 相交于点 $F$. 由 $\overparen{P A}=\overparen{P D}$, 知 $\angle P D E= \angle P C D$. 又 $\angle D P E=\angle C P D$, 则 $\triangle P D E \backsim \triangle P C D$. 于是, $\frac{P D}{P C}=\frac{P E}{P D}$, 即 $P D^2=P C \cdot P E$. 同理, $Q D^2=Q C \cdot Q F$, 由 $\overparen{P A}=\overparen{P D}$, 知 $\angle A C P= \angle D C E$. 又 $\angle C P A=\angle C D E$, 则 $\triangle C P A \backsim\triangle C D E$. 于是, $\frac{C A}{C E}=\frac{C P}{C D}$, 即 $P C \cdot C E=C A \cdot C D$. 同理, $Q C \cdot C F=C B \cdot C D$. 而 $P D^2-Q D^2=P C \cdot P E-Q C \cdot Q F=P C(P C-C E)-Q C(Q C-C F)= P C^2-Q C^2+Q C \cdot C F-P C \cdot C E=P C^2-Q C^2+C B \cdot C D-C A \cdot C D= P C^2-Q C^2$. 所以, $P Q \perp C D$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 已知梯形 $P R U S(P R / / S U)$, 满足 $\angle P S R=2 \angle R S U, \angle S P U= 2 \angle U P R$, 又点 $Q 、 T$ 分别在 $P R$ 和 $S U$ 上, 且 $S Q$ 和 $P T$ 分别是 $\angle P S R$ 和 $\angle S P U$ 的角平分线.
+$P T$ 与 $S Q$ 交于点 $E$, 过 $E$ 作 $S R$ 的平行线交 $P U$ 于点 $F$, 过 $E$ 作 $P U$ 的平行线交 $S R$ 于点 $G$, 又 $F G$ 分别交 $P R 、 S U$ 于点 $K$ 、
+$L$. 证明: $K F=F G=G L$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c1a9.png>), 设 $P U$ 与 $R S$ 交于点 $D$. 由 $\angle P S R=2 \angle R S U, \angle S P U=2 \angle U P R$, 有 $\angle P S D+\angle S P D=2(\angle R S U+\angle U P R)= 2 \angle P D S=180^{\circ}-\angle P D S$. 故 $\angle P D S=60^{\circ}$. 易知 $D E$ 平分 $\angle P D S$, 故 $\square D F E G$ 为菱形.
+又
+$\angle P D S=60^{\circ}$, 故 $D F=F E=E G=G D=F G$. 又 $\angle K P F=\frac{1}{2} \angle S P U= \angle E P F, \angle K F P=\angle D F G=60^{\circ}=\angle E F P$, 故 $\triangle K F P \cong \triangle E F P$. 从而, $K F=E F=F G$. 同理, $G L=G E=F G$. 所以, $K F=F G=G L$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 如图(<FilePath:./figures/fig-c1p10.png>), 设 $I$ 为 $\triangle A B C$ 的内心, 过 $I$ 分别作 $A B$ 、 $B C 、 C A$ 的平行线 $A_1 B_2 、 B_1 C_2 、 C_1 A_2$. 求 $\frac{A_1 B_2}{A B}+\frac{B_1 C_2}{B C}+\frac{C_1 A_2}{C A}$ 的值.
+%%<SOLUTION>%%
+解: 设 $r$ 为 $\triangle A B C$ 的内切圆半径, $h_a 、 h_b 、 h_c$ 分别为顶点 $A 、 B 、 C$ 对应的高.
+因为 $A_1 B_2 / / A B$, 所以, $\triangle A_1 C B_2 \backsim \triangle A C B$. 从而, $\frac{A_1 B_2}{A B}=\frac{h_c-r}{h_c}$. 同理, $\frac{B_1 C_2}{B C}=\frac{h_a-r}{h_a}, \frac{C_1 A_2}{C A}=\frac{h_b-r}{h_b}$. 故 $S=\frac{A_1 B_2}{A B}+\frac{B_1 C_2}{B C}+\frac{C_1 A_2}{C A}=\frac{h_c-r}{h_c}+ \frac{h_a-r}{h_a}+\frac{h_b-r}{h_b}=3-r\left(\frac{1}{h_c}+\frac{1}{h_a}+\frac{1}{h_b}\right)$. 设 $S$ 为 $\triangle A B C$ 的面积.
+则 $2 S= a h_a=b h_b=c h_c=r(a+b+c)$. 于是, $S=3-r\left(\frac{a}{2 S}+\frac{b}{2 S}+\frac{c}{2 S}\right)=2$.
+%%<REMARK>%%
+注:: 事实上, $I$ 为 $\triangle A B C$ 内任意一点时, 均有 $S=2$, 这是因为 $\frac{B_1 C_2}{B C}= \frac{A B_1}{A B}, \frac{C_1 A_2}{C A}=\frac{A_2 B}{A B}$. 故 $S=\frac{A_1 B_2+A B_1+A_2 B}{A B}=\frac{A_1 I+I B_2+A B_1+A_2 B}{A B}= \frac{A A_2+B_1 B+A B_1+A_2 B}{A B}=2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 设 $D$ 是 $\triangle A B C$ 的边 $B C$的中点, $\triangle A B D$, $\triangle A D C$ 的外心分别为 $E 、 F$, 直线 $B E 、 C F$ 交于点 $G$. 若 $B C=2 D G=2008, E F=1255$, 求 $\triangle A E F$ 的面积.
+%%<SOLUTION>%%
+解: : 如图(<FilePath:./figures/fig-c1a11.png>), 连结 $D E 、 D F 、 A C$. 因为 $B C= 2 D G$, 所以, $\triangle B G C$ 是直角三角形.
+故 $\angle G B C+ \angle G C B=90^{\circ}$. 又 $E 、 F$ 是外心, 则 $\angle G B C=90^{\circ}- \angle B A D, \angle G C B=90^{\circ}-\angle D A C$. 故 $90^{\circ}=\angle G B C+ \angle G C B=180^{\circ}-\angle B A D-\angle C A D=180^{\circ}- \angle B A C \Rightarrow \angle B A C=90^{\circ} \Rightarrow \triangle B A C$ 是直角三角形.
+因此, $D A=\frac{1}{2} B C=1004$. 又 $A E=D E, A F=D F$, 则 $\triangle A E F \cong \triangle D E F$, 且 $E F$ 垂直平分 $A D$. 故 $S_{\triangle A E F}=\frac{1}{2} S_{\text {四边形 } A E D F}=\frac{1}{2} A D \cdot E F=\frac{1}{4} \times 1004 \times 1255=315005$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 在四边形 $P Q R S$ 中, $A 、 B 、 C 、 D$ 分别为边 $P Q 、 Q R 、 R S 、 S P$ 的中点, $M$ 为 $C D$ 的中点.
+假设 $A M$ 上有一点 $H$, 满足 $H C=B C$. 证明: $\angle B H M= 90^{\circ}$.
+%%<SOLUTION>%%
+证明: 易知四边形 $A B C D$ 为平行四边形.
+如图(<FilePath:./figures/fig-c1a12.png>), 延长 $A M 、 B C$ 交于点 $N$. 由 $A D / / C N$, 则 $\angle M A D=\angle M N C$. 又 $\angle A M D=\angle N M C$, 且 $M D=M C$. 于是, $\triangle A M D \cong \triangle N M C$. 因此, $C N=D A=C B=H C$. 从而, 点 $H$ 位于以点 $C$ 为圆心、 $B N$ 为直径的圆上.
+所以, $\angle B H M=90^{\circ}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 在凸四边形 $A B C D$ 中, $\angle A D C 、 \angle B C D$ 均大于 $90^{\circ}$, 设点 $E$ 是直线 $A C$ 与过点 $B$ 而平行于 $A D$ 的直线的交点, 点 $F$ 是直线 $B D$ 与过点 $A$ 而平行于 $B C$ 的直线的交点.
+证明: $E F / / C D$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c1a13.png>), 设 $P$ 是对角线 $A C$ 和 $B D$ 的交点.
+为证 $C D / / E F$, 只需证 $\frac{P E}{P F}=\frac{P C}{P D}$. 因为 $B C / / A F, \triangle P B C \backsim \triangle P F A$, 所以, $\frac{P F}{P B}=\frac{P A}{P C}$, 即 $P F= \frac{P A \cdot P B}{P C}$. 因为 $A D / / B E, \triangle P A D \backsim \triangle P E B$, 所以, $\frac{P E}{P A}=\frac{P B}{P D}$, 即 $P E= \frac{P A \cdot P B}{P D}$. 于是, $\frac{P E}{P F}=\frac{\frac{P A \cdot P B}{P D}}{\frac{P A \cdot P B}{P C}}=\frac{P C}{P D}$. 因此, $C D / / E F$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 设 $D$ 是锐角 $\triangle A B C$ 内部的一个点, 使得 $\angle A D B=\angle A C B+90^{\circ}$, 并有 $A C \cdot B D=A D \cdot B C$. 计算比值 $\frac{A B \cdot C D}{A C \cdot B D}$.
+%%<SOLUTION>%%
+解:如图(<FilePath:./figures/fig-c1a14.png>), 分别作 $\angle C B E=\angle C A D, \angle A C D= \angle B C E$, 边 $B E 、 C E$ 相交于 $E$. 于是 $\triangle A C D \backsim \triangle B C E$. 从而
+$$
+\frac{A C}{B C}=\frac{A D}{B E}=\frac{C D}{C E} . \label{eq1}
+$$
+所以 $A C \cdot B E=B C \cdot A D=A C \cdot B D$, 即 $B E=B D$.
+又因为 $\angle A D B=\angle C B D+\angle C A D+\angle A C B=90^{\circ}+\angle A C B$, 所以 $\angle B D E= \angle C B D+\angle C B E=\angle C B D+\angle C A D=90^{\circ}$. 故连结 $D E, \triangle D B E$ 是等腰直角三角形.
+由 式\ref{eq1} 知 $\frac{A C}{B C}=\frac{C D}{C E}$, 且 $\angle A C D=\angle B C E$, 于是 $\frac{C A}{C D}=\frac{C B}{C E}, \angle A C B= \angle D C E$, 从而 $\triangle C A B \backsim \triangle C D E$, 所以 $\frac{D E}{A B}=\frac{C D}{C A}, \frac{A B \cdot C D}{B D \cdot C A}=\frac{D E}{B D}=\sqrt{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. 在一个圆中, 两条弦 $A B 、 C D$ 相交于 $E$ 点, $M$ 为弦 $A B$ 上严格在 $E 、 B$ 之间的点, 过 $D 、 E 、 M$ 的圆在 $E$ 点的切线分别交 $B C 、 A C$ 于 $F 、 G$. 已知 $\frac{A M}{A B}=t$, 求 $\frac{G E}{E F}$ (用 $t$ 表示).
+%%<SOLUTION>%%
+解: 如图(<FilePath:./figures/fig-c1a15.png>), 连结 $A D, D M, D B$. 由题设, 有 $\angle C E F=\angle D E G=\angle E M D, \angle E C F=\angle M A D$, 于是 $\triangle C E F \backsim \triangle A M D$.
+从而 $C E \cdot M D=A M \cdot E F \cdots$ (1).
+另一方面, 又有 $\angle E C G=\angle M B D$, 于是 $\angle C G E=\angle C E F-\angle E C G=\angle E M D-\angle M B D= \angle B D M$, 故 $\triangle C G E \backsim \triangle B D M$,
+从而 $G E \cdot B M=C E \cdot D M \cdots$ (2).
+由 (1), (2)得 $G E \cdot B M=A M \cdot E F$, 故
+$$
+\frac{G E}{E F}=\frac{A M}{B M}=\frac{t \cdot A B}{(1-t) \cdot A B}=\frac{t}{1-t} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16. 设 $D$ 是 $\triangle A B C$ 边 $B C$ 上一点, 且满足 $A B+B D=A C+C D$, 线段 $A D$ 与 $\triangle A B C$ 的内切圆交于点 $X 、 Y$, 且 $X$ 距点 $A$ 更近一些, $\triangle A B C$ 的内切圆与边 $B C$ 切于点 $E$. 证明: (1) $E Y \perp A D$; (2) $X D=2 I A^{\prime}$, 其中, $I$ 为 $\triangle A B C$ 的内心, $A^{\prime}$ 为边 $B C$ 的中点.
+%%<SOLUTION>%%
+证明: (1) 如图(<FilePath:./figures/fig-c1a16.png>), 由条件可知 $D$ 为 $\angle A$ 内的旁切圆与边 $B C$ 的切点, 且 $A$ 为 $\angle A$ 内的旁切圆和内切圆的位似中心, $D$ 和 $X$ 是对应点.
+因此, 过点 $X$ 的切线与 $B C$ 平行.
+从而, $X E$ 为 $\odot I$ 的直径, 则 $\angle X Y E=90^{\circ}$, 即 $E Y \perp A D$.
+(2) 因为 $B E=D C=\frac{1}{2}(A B+B C-A C)$, 所以, $A^{\prime}$ 为 $E D$ 的中点.
+又 $I$ 为 $X E$ 的中点, 故 $X D=2 I A^{\prime}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17. 设 $M 、 N$ 是 $\triangle A B C$ 内部的两个点, 且满足 $\angle M A B=\angle N A C, \angle M B A= \angle N B C$. 证明:
+$$
+\frac{A M \cdot A N}{A B \cdot A C}+\frac{B M \cdot B N}{B A \cdot B C}+\frac{C M \cdot C N}{C A \cdot C B}=1 .
+$$
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c1a17.png>), 设 $K$ 是射线 $B N$ 上的点, 且满足 $\angle B C K=\angle B M A$. 因为 $\angle B M A>\angle A C B$, 则 $K$ 在 $\triangle A B C$ 的外部.
+又因 $\angle M B A=\angle C B K$, 所以 $\triangle A B M \backsim \triangle K B C$. 故 $\frac{A B}{B K}=\frac{B M}{B C}=\frac{A M}{C K}$. 由 $\angle A B K=\angle M B C, \frac{A B}{K B}=\frac{B M}{B C}$, 可得 $\triangle A B K \backsim \triangle M B C$, 于是, $\frac{A B}{B M}=\frac{B K}{B C}=\frac{A K}{C M}$. 因为 $\angle C K N=\angle M A B=\angle N A C$, 所以 $A 、 N 、 C 、 K$ 四点共圆.
+由托勒密 (Ptolemy) 定理, 有 $A C \cdot N K=A N \cdot C K+C N \cdot A K$, 或 $A C(B K-B N)=A N \cdot C K+C N \cdot A K$. 将 $C K=\frac{A M \cdot B C}{B M}$, $A K=\frac{A B \cdot C M}{B M}, B K=\frac{A B \cdot B C}{B M}$ 代入, 得 $A C\left(\frac{A B \cdot B C}{B M}-B N\right)= \frac{A N \cdot A M \cdot B C}{B M}+\frac{C N \cdot A B \cdot C M}{B M}$, 即 $\frac{A M \cdot A N}{A B \cdot A C}+\frac{B M \cdot B N}{B A \cdot B C}+\frac{C M \cdot C N}{C A \cdot C B}=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题18. 设 $A B C D E F$ 是凸六边形, $\angle B+\angle D+\angle F=360^{\circ}$, 且 $\frac{A B}{B C} \cdot \frac{C D}{D E} \cdot \frac{E F}{F A}=1$.
+证明: $\frac{B C}{C A} \cdot \frac{A E}{E F} \cdot \frac{F D}{D B}=1$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c1a18.png>), 设点 $P$ 满足 $\angle F E A=\angle D E P$,
+$\angle E F A=\angle E D P$, 则 $\triangle F E A \backsim \triangle D E P$. 于是, $\frac{F A}{E F}=\frac{D P}{D E} \cdots$ (1), $\frac{E F}{E D}=\frac{E A}{E P} \cdots$ (2). 由已知条件, 有 $\angle A B C=\angle P D C$. 又由 (1) 及已知条件得 $\frac{A B}{B C}= \frac{D E \cdot F A}{C D \cdot E F}=\frac{D P}{C D} \cdots$ (3). 所以, $\triangle A B C \backsim \triangle P D C$, 故 $\angle B C A=\angle D C P$, 且 $\frac{C B}{C D}=\frac{C A}{C P}$. 因为 $\angle F E D=\angle A E P$, 由 (2) 知 $\triangle F E D \backsim \triangle A E P$, 类似地, 由 $\angle B C D=\angle A C P$ 及 (3) 得 $\triangle B C D \backsim \triangle A C P$. 于是 $\frac{F D}{E F}=\frac{P A}{A E}, \frac{B C}{D B}=\frac{C A}{P A}$. 两式相乘, 即得所求.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-3.tex",
+    "problem_type": "proof",
+    "problem": "例14. 设 $x_1, x_2, \\cdots, x_n$ 为任意实数,证明:\n$$\n\\frac{x_1}{1+x_1^2}+\\frac{x_2}{1+x_1^2+x_2^2}+\\cdots+\\frac{x_n}{1+x_1^2+x_2^2+\\cdots+x_n^2}<\\sqrt{n} .\n$$",
+    "solution": "证明:由柯西不等式,得\n$$\n\\begin{aligned}\n& \\left(\\frac{x_1}{1+x_1^2}+\\frac{x_2}{1+x_1^2+x_2^2}+\\cdots+\\frac{x_n}{1+x_1^2+x_2^2+\\cdots+x_n^2}\\right)^2 \\\\\n\\leqslant & {\\left[\\left(\\frac{x_1}{1+x_1^2}\\right)^2+\\left(\\frac{x_2}{1+x_1^2+x_2^2}\\right)^2+\\cdots+\\left(\\frac{x_n}{1+x_1^2+x_2^2+\\cdots+x_n^2}\\right)^2\\right] \\cdot n . }\n\\end{aligned}\n$$\n对 $k \\geqslant 2$, 有\n$$\n\\begin{aligned}\n& \\left(\\frac{x_k}{1+x_1^2+\\cdots+x_k^2}\\right)^2 \\\\\n= & \\frac{x_k^2}{\\left(1+x_1^2+\\cdots+x_k^2\\right)^2} \\\\\n\\leqslant & \\frac{x_k^2}{\\left(1+x_1^2+\\cdots+x_{k-1}^2\\right)\\left(1+x_1^2+\\cdots+x_k^2\\right)} \\\\\n= & \\frac{1}{1+x_1^2+\\cdots+x_{k-1}^2}-\\frac{1}{1+x_1^2+\\cdots+x_k^2} .\n\\end{aligned}\n$$\n对于 $k=1$, 有\n$$\n\\left(\\frac{x_1}{1+x_1^2}\\right)^2 \\leqslant \\frac{x_1^2}{1+x_1^2}=1-\\frac{1}{1+x_1^2} .\n$$\n所以\n$$\n\\sum_{i=1}^n\\left(\\frac{x_k}{1+x_1^2+\\cdots+x_k^2}\\right)^2 \\leqslant 1-\\frac{1}{1+x_1^2+\\cdots+x_n^2}<1,\n$$\n从而\n$$\n\\left(\\frac{x_1}{1+x_1^2}+\\frac{x_2^2}{1+x_1^2+x_2^2}+\\cdots+\\frac{x_n^2}{1+x_1^2+\\cdots+x_n^2}\\right)^2<n,\n$$\n故命题成立.",
+    "remark": "",
+    "figures": []
+}

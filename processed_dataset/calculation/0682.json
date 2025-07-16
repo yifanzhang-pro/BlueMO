@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise1.tex",
+    "problem_type": "calculation",
+    "problem": "问题5 函数 $y=2^{-\\cos x}$ 的单调递增区间是 ( ).\n(A) $[2 k \\pi+\\pi, 2 k \\pi+2 \\pi], k \\in \\mathbf{Z}$\n(B) $[k \\pi+\\pi, k \\pi+2 \\pi], k \\in \\mathbf{Z}$\n(C) $\\left[2 k \\pi, 2 k \\pi+\\frac{\\pi}{2}\\right], k \\in \\mathbf{Z}$\n(D) $[2 k \\pi, 2 k \\pi+\\pi], k \\in \\mathbf{Z}$",
+    "solution": "D. 因函数 $y=2^u$ 在 $\\mathbf{R}$ 上单调递增, 而 $u=-\\cos x$ 在 $[2 k \\pi, 2 k \\pi+\\pi] (k \\in \\mathbf{Z})$ 上也单调递增.",
+    "remark": "",
+    "figures": []
+}

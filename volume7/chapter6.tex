@@ -1,0 +1,168 @@
+
+%%TEXT_BEGIN%%
+一、反射变换.
+反射变换是平面到自身的变换, 若存在一条直线 $l$, 使对于平面上的每一点 $P$ 及其对应点 $P^{\prime}$, 其连线 $P P^{\prime}$ 都被定直线 $l$ 垂直平分, 则称这种变换为反射变换, 定直线 $l$ 称为对称轴.
+反射变换有如下性质:
+(1) 把图形变为与之全等的图形;
+(2) 关于 $l$ 对称的两点连线被 $l$ 垂直平分.
+证题过程中使用反射变换, 可保留原有图形的性质, 且使原来分散条件相对集中, 以利于问题的解决.
+二、平移变换.
+平移变换是平面到自身的变换, 将平面上任一点 $P$ 变换到 $P^{\prime}$, 使得: (1) 射线 $P P^{\prime}$ 有给定的方向 ; (2) 线段 $P P^{\prime}$ 有给定的长度.
+则称这种变换为平移变换.
+在平移变换下, 图形变为与之全等的图形,直线变为与之平行的直线.
+在解几何问题时, 常利用平移变换使分散的条件集中在一起, 具有更紧凑的位置关系或变换成更简单的基本图形.
+三、旋转变换.
+旋转变换是平面到它自身的变换, 使原点 $O$ 变换到它自身, 其他任何点 $X$ 变到 $X^{\prime}$, 使得: (1) $O X^{\prime}=O X$; (2) $\angle X O X^{\prime}=\theta$ (定角). 则称这样的变换为旋转变换, $O$ 称为旋转中心.
+旋转变换保持图形全等, 但图形方位可能有变化.
+在几何解题中, 旋转的作用是使原有图形的性质得以保持, 但改变其位置, 使能组合成新的有利论证的图形.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知六边形 $A C_1 B A_1 C B_1$ 中, $A C_1=A B_1, B C_1=B A_1, C A_1= C B_1, \angle A+\angle B+\angle C=\angle A_1+\angle B_1+\angle C_1$.
+求证: $\triangle A B C$ 面积是六边形 $A C_1 B A_1 C B_1$ 的一半.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c6i1.png>), 旋转 $\triangle B C A_1$ 至 $B A_1^{\prime} C_1$, 则 $\triangle B C A_1 \cong \triangle B A_1^{\prime} C_1$, 显然 $\angle A C_1 B+\angle B A_1 C+ \angle C B_1 A=360^{\circ}, \angle A C_1 B+\angle B C_1 A_1^{\prime}+\angle A C_1 A_1^{\prime}= 360^{\circ}$, 所以 $\angle A C_1 B=\angle A C_1 A_1^{\prime}$.
+又 $C_1 A_1^{\prime}=C A_1=B_1 C, A C_1=A B_1$, 则 $\triangle A C_1 A_1^{\prime} \cong \triangle A B_1 C$.
+又 $A A_1^{\prime}=A C, A_1^{\prime} B=B C, A B=A B$, 所以 $\triangle A B C \cong \triangle A B A_1^{\prime}$.
+故 $S_{\triangle A B C}=S_{\triangle A B A_1^{\prime}}=S_{\triangle A C_1 B}+S_{\triangle A B_1 C}+S_{\triangle B C A_1} \Rightarrow S_{\triangle A B C}=\frac{1}{2} S_{A C_1 B A_1 C B_1}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. $P$ 是平行四边形 $A B C D$ 内一点, 且 $\angle P A B=\angle P C B$. 求证: $\angle P B A=\angle P D A$.
+%%<SOLUTION>%%
+证明:将 $\triangle A B P$ 沿向量 $\overrightarrow{A D}$ 平移至 $D C P^{\prime}$, 如图(<FilePath:./figures/fig-c6i2.png>) 设角, 则四边形 $A P P^{\prime} D$ 和四边形 $B P P^{\prime} C$ 均为平行四边形, $\angle 8=\angle 2=\angle 1= \angle 5$, 于是四边形 $P D P^{\prime} C$ 为圆内接四边形, 因此, $\angle 4=\angle 7=\angle 6=\angle 3$.
+即 $\angle P B A=\angle P D A$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. Fagnano 问题: 设 $\triangle D E F$ 的三顶点分别在 $\triangle A B C$ 的三边上, 则 $\triangle D E F$ 称为 $\triangle A B C$ 的内接三角形.
+证明 : 在锐角三角形的所有内接三角形中, 垂足三角形的周长最短.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c6i3.png>) 所示, 首先以 $A B$ 为轴将 $\triangle A B C$ 反射为 $\triangle A B C_1$, 再以 $B C_1$ 为轴将 $\triangle A B C_1$ 反射为 $\triangle A_1 B C_1$, 再以 $A_1 C_1$ 为反射轴反射成 $\triangle A_1 B_1 C_1$, 如此类推, 并设 $E$ 最终被反射成 $E^{\prime}$, 设 $\triangle D E F$ 的三边分别为 $d 、 e 、 f$, 不难由反射变换保距离知, 图中标注的几条边长分别为 $d 、 e 、 f 、 d 、 e 、 f$, 于是 $2(d+ e+f) \geqslant E E^{\prime}$, 不难知道 $A C / / A_2 C_2$, 于是 $E E^{\prime}$ 是与 $D 、 E 、 F$ 无关的只与三角形本身有关的常数, 另一方面, 若 $\triangle D E F$ 为垂足三角形, 则有 $\angle D F B= \angle E F A$ 等等, 于是 $E E^{\prime}$ 折线上六点共线, 取到等号.
+所以垂足三角形的周长 $=\frac{E E^{\prime}}{2}$ 是所有内接三角形中周长最短的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 已知点 $A 、 B 、 C$ 在某平面上.
+设 $D 、 E 、 F 、 G 、 H 、 I$ 是同一平面上的点,且使得 $\triangle A B D 、 \triangle B A E 、 \triangle C A F 、 \triangle D F G 、 \triangle E C H 、 \triangle G H I$ 为正定向等边三角形.
+证明: 点 $E$ 是线段 $A I$ 的中点.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c6i4.png>) 所示, 连结 $C G 、 E I$ 在 $\triangle A D F$ 和 $\triangle C G F$ 中, 有 $A F=C F, D F=G F$, 又 $\angle D F G= \angle A F C=60^{\circ}$, 于是, 绕点 $F$ 顺时针旋转 $60^{\circ}, \triangle A D F$ 变换为 $\triangle C G F$.
+类似地, 绕点 $H$ 顺时针旋转 $60^{\circ}$ 的几何变换中, $\triangle H C G$ 变为 $\triangle H E I$.
+又绕 $A$ 顺时针旋转 $120^{\circ}$, 线段 $A D$ 变为线段 $A E$, 所以, $A E=A D=C G=E I$, 且 $A E$ 和 $E I$ 与 $A D$ 的夹角都等于 $120^{\circ}$, 即 $A 、 E 、 I$ 三点共线, 综上,点 $E$ 是线段 $A I$ 的中点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 如图(<FilePath:./figures/fig-c6i5.png>), 以 $B_0 、 B_1$ 为焦点的椭圆与 $\triangle A B_0 B_1$ 的边 $A B_i$ 交于 $C_i(i=0,1)$. 在 $A B_0$ 的延长线上任取点 $P_0$, 以 $B_0$ 为圆心、 $B_0 P_0$ 为半径作圆弧 $\overparen{P_0 Q_0}$ 交 $C_1 B_0$ 的延长线于点 $Q_0$; 以 $C_1$ 为圆心 $C_1 Q_0$ 为半径作圆弧 $\overparen{Q_0 P_1}$ 交 $B_1 A$ 的延长线于点 $P_1$; 以 $B_1$ 为圆心 $B_1 P_1$ 为半径作圆弧 $\overparen{P_1 Q_1}$ 交 $B_1 C_0$ 的延长线于点 $Q_1$; 以 $C_0$ 为圆心、 $C_0 Q_1$ 为半径作圆弧 $Q_1 P_0^{\prime}$ 交 $A B_0$ 的延长线于 $P_0^{\prime}$. 求证:
+(1) 点 $P_0^{\prime}$ 与点 $P_0$ 重合, 且圆弧 $\overparen{P_0 Q_0}$ 与 $\overparen{P_0 Q_1}$ 相内切于点 $P_0$ ;
+(2) $P_0 、 Q_0 、 Q_1 、 P_1$ 四点共圆.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c6i5.png>), $\angle Q_0 B_0 P_0$ 的角平分线与 $\angle A C_1 B_0$ 的角平分线的交点 $O$ 即为由点 $P_0$ 到点 $P_1$ 的旋转变换的旋转中心, 旋转角度为 $\angle P_0 B_0 Q_0+ \angle Q_0 C_1 P_1$, 且 $O P_0=O P_1$.
+同理, $\angle P_1 B_1 Q_1$ 的角平分线与 $\angle Q_1 C_0 P_0^{\prime}$ 的角平分线的交点 $O^{\prime}$ 即为由点 $P_1$ 到点 $P_0^{\prime}$ 的旋转变换的旋转中心, 旋转角度为 $\angle P_1 B_1 Q_1+\angle Q_1 C_0 P_0^{\prime}$, 且
+$O^{\prime} P_1=O^{\prime} P_0^{\prime}$.
+于是, 有 $\angle P_0 B_0 Q_0+\angle Q_0 C_1 P_1=\pi-\angle A=\angle P_1 B_1 Q_1+\angle Q_1 C_0 P_0^{\prime}$.
+设点 $O 、 O^{\prime}$ 在 $A B_1$ 上的投影分别为 $D 、 D^{\prime}$, 则 $A D=\frac{A C_1+A B_0-B_0 C_1}{2}$, $A D^{\prime}=\frac{A B_1+A C_0-B_1 C_0}{2}$.
+由于 $B_1 C_1+B_0 C_1=B_1 C_0+B_0 C_0$, 所以, $A D=A D^{\prime}$, 即 $D$ 与 $D^{\prime}$ 重合.
+又因为点 $O 、 O^{\prime}$ 均在 $\angle B_1 A B_0$ 的角平分线上, 所以 $O$ 与 $O^{\prime}$ 重合.
+从而点 $P_0$ 与点 $P_0^{\prime}$ 重合, 圆弧 $\overparen{P_0 Q_0}$ 与 $\overparen{P_0 Q_1}$ 相内切于点 $P_0$, 且 $P_0 、 Q_0$ 、 $Q_1 、 P_1$ 四点共圆.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 一个以点 $O$ 为圆心的圆经过 $\triangle A B C$ 的顶点 $A 、 C$, 又与边 $A B 、 B C$ 分别相交于点 $K 、 N, \triangle A B C$ 与 $\triangle K B N$ 的外接圆交于点 $B 、 M$. 求证: $\angle O M B=90^{\circ}$.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c6i6.png>), 设过点 $O$ 且垂直于 $B M$ 的直线为 $l$.
+于是, 只需证点 $M$ 在直线 $l$ 上.
+以 $l$ 为反射轴, 作轴反射变换 $S(l)$.
+设 $C \rightarrow C^{\prime}, K \rightarrow K^{\prime}$.
+则 $C C^{\prime} \perp l, K K^{\prime} \perp l$.
+所以, $C C^{\prime} / / K K^{\prime} / / B M$.
+连结 $C^{\prime} K 、 K M 、 C K^{\prime} 、 C M 、 C C^{\prime}$.
+又 $\angle K C^{\prime} C=\angle K A C=\angle B N K=\angle B M K$, 所以 $C^{\prime} 、 K 、 M$ 三点共线.
+由 $\angle B M C+\angle C^{\prime} C K^{\prime}=\angle B M C+\angle C C^{\prime} K$
+$$
+=\angle B M C+\angle B A C=180^{\circ},
+$$
+知 $C 、 K^{\prime} 、 M$ 三点共线.
+因此, $C^{\prime} K 、 C K^{\prime}$ 交于点 $M$.
+故点 $M$ 在直线 $l$ 上.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 在 $\triangle A B C$ 中, $A B=A C$, 圆 $O$ 是它的外接圆, $B N$ 平分 $\angle A B C$, 点 $N$ 在圆 $O$ 上, 点 $E 、 F$ 分别在边 $A B 、 A C$ 上, 满足 $E O \perp B N, E F \perp E O$. 求证: $A E^2= B E \cdot A F$.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c6i7.png>), 因为 $E F \perp E O, B N \perp E O$, 则 $E F / / B N$.
+所以, $\frac{A E}{B E}=\frac{A F}{F D}$.
+故 $A E \cdot F D=B E \cdot A F$.
+于是, 只需证 $A E=F D$.
+由于线段 $A E 、 F D$ 不在同一个三角形中, 故可考虑作平移变换.
+作沿向量 $\overrightarrow{F E}$ 平移变换, 则四边形 $F E D^{\prime} D$ 为 $\square$, 设 $D$ 变为 $D^{\prime}$.
+连结 $A O 、 B O 、 D^{\prime} O 、 E D^{\prime}$. 因为
+$$
+\begin{aligned}
+& \angle E D^{\prime} B=\angle F D B=\angle C+-\frac{1}{2} \angle B, \\
+& \angle E B O=\angle E A O=\frac{1}{2} \angle A, \\
+& \angle B E O=90^{\circ}-\angle A E F=90^{\circ}-\frac{1}{2} \angle B,
+\end{aligned}
+$$
+则 $\angle E O B=180^{\circ}-\angle B E O-\angle E B O$
+$$
+\begin{aligned}
+& =180^{\circ}-\left(90^{\circ}-\frac{1}{2} \angle B\right)-\frac{1}{2} \angle A \\
+& =\frac{1}{2}(\angle A+\angle B+\angle C)+\frac{1}{2} \angle B-\frac{1}{2} \angle A \\
+& =\angle B+\frac{1}{2} \angle C .
+\end{aligned}
+$$
+易知 $\angle B=\angle C$.
+则 $\angle E O B=\angle E D^{\prime} B$, 所以, $E, O, D^{\prime}, B$ 四点共圆.
+故
+$$
+\begin{aligned}
+\text { 故 } & \angle E D^{\prime} O=\angle E B O=\angle E A O, \\
+\angle B O D^{\prime}+\angle E O B+\angle A O E & =\angle B E D^{\prime}+\angle B+\frac{1}{2} \angle C+\angle A O E \\
+& =\angle A+\angle B+\frac{1}{2} \angle C+\angle A O E \\
+& =\angle A O E+90^{\circ}+\frac{1}{2} \angle B+\frac{1}{2} \angle A \\
+& =\angle A O E+90^{\circ}+\angle A E F+\angle E A O=180^{\circ} .
+\end{aligned}
+$$
+因此, $D^{\prime}, O, A$ 三点共线.
+又 $\angle E D^{\prime} O=\angle E A O$, 则 $A E=E D^{\prime}=F D$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. $\odot O_1$ 与 $\odot O_2$ 交于 $A 、 B$ 两点, 过 $A$ 作任一割线与两圆交于 $P 、 Q$. 两圆在 $P 、 Q$ 外切线交于 $R$, 直线 $B R$ 交 $\odot\left(O_1 O_2 B\right)$ 于另一点 $S$. 求证: $R S$ 等于 $\odot\left(O_1 O_2 B\right)$ 直径长.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c6i8.png>), 以 $B$ 为中心作位似旋转变换使 $\odot O_1 \rightarrow \odot O_2$, 则 $P 、 Q$ 为变换的对应点, $P R \rightarrow R Q, P O_1 \rightarrow Q O_2$.
+所以 $\angle P B Q=\angle O_1 B O_2=\angle(R Q, P R)= \pi-\angle P R Q=\angle\left(O_2 Q, O_1 P\right)$.
+所以 $P 、 R 、 Q 、 B$ 共圆, 且 $P O_1 、 Q O_2$ 交于 $C, \angle O_1 C O_2=\angle O_1 B O_2$.
+所以 $C \in \odot\left(O_1 O_2 B\right)$.
+因为 $\angle B S O_2=\angle O_2 C B=\angle Q C B= \angle Q R B$, 所以 $\mathrm{SO}_2 / / R Q$.
+又因为 $R Q \perp C Q$, 故 $S O_2 \perp C Q$. 即 $C S$ 为$\odot O_1 O_2 B$ 直径.
+注意到 $\angle C S B=\angle C O_2 B=2 \angle O_2 Q B=2 \angle C Q B=2 \angle C R B$ (这里用到 $\angle C B S=\angle C Q R=90^{\circ}, R, Q, B, C$ 四点共圆, 从而 $\left.\angle C Q B=\angle C R B\right)$, 于是 $R S=C S$.
+故 $R S$ 等于 $\odot\left(O_1 O_2 B\right)$ 直径长.
+%%PROBLEM_END%%
+
+

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 求不定方程组\n$$\n\\left\\{\\begin{array}{l}\nx+y+z=3 \\\\\nx^3+y^3+z^3=3\n\\end{array}\\right.\n$$\n的全部整数解.",
+    "solution": "从方程组中消去 $z$, 得到\n$$\n8-9 x-9 z+3 x^2+6 x y+3 y^2-x^2 y-x y^2=0,\n$$\n变形为\n$$\n8-3 x(3-x)-3 y(3-x)+x y(3-x)+y^2(3-x)=0,\n$$\n即 $(3-x)\\left(3 x+3 y-x y-y^2\\right)=8$. 故 $(3-x) \\mid 8$, 从而 $3-x= \\pm 1, \\pm 2$, $\\pm 4, \\pm 8$, 即 $x=-5,-1,1,2,4,5,7,11$. 逐一代入原方程组检验, 可求出全部整数解为 $(x, y, z)=(1,1,1),(-5,4,4),(4,-5,4),(4,4,-5)$.",
+    "remark": "",
+    "figures": []
+}

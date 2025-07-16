@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise20.tex",
+    "problem_type": "proof",
+    "problem": "问题8. $n$ 项正整数列 $x_1, x_2, \\cdots, x_n$ 的各项之和为 2009 , 如果这 $n$ 个数既可分为和相等的 41 个组, 又可分为和相等的 49 个组, 求 $n$ 的最小值.",
+    "solution": "设数列的 $n$ 项可分成每组之和为 49 的 41 个组 $u_1, u_2, \\cdots, u_{41}$, 又可分成每组之和为 41 的 49 个组 $v_1, v_2, \\cdots, v_{49}$. 把 $u_i(1 \\leqslant i \\leqslant 41)$ 和 $v_j(1 \\leqslant j \\leqslant 49)$ 看成顶点, 如果存在 $x_k(1 \\leqslant k \\leqslant n)$ 同时属于 $u_i$ 和 $v_j$, 就在 $u_i, v_j$ 间连一条边, 得简单图 $G$. 下面证明 $G$ 是连通图.\n考虑 $G$ 的最大连通分支 $G^{\\prime}$. 设 $G^{\\prime}$ 含有 $a$ 个顶点 $u_{i_s}, s=1,2, \\cdots, a$ 和 $b$ 个顶点 $v_{j_t}, t=1,2, \\cdots, b$, 则所有出现在某个 $u_{i_s}(1 \\leqslant s \\leqslant a)$ 中的项 $x_k$ 必同时出现在某个 $v_{j_t}(1 \\leqslant t \\leqslant b)$ 中 (否则 $G$ 中将有比 $G^{\\prime}$ 更大的连通分支), 反之亦然.\n这些数的总和一方面等于 $49 a$,一方面又等于 $41 b$, 故 $49 a=41 b$, 所以 $a+b \\geqslant 41+49=90$, 只能 $G^{\\prime}=G$. 这样 $G$ 至少有 89 条边, 又数列的项数不少于 $G$ 的边数, 故 $n \\geqslant 89$.\n另一方面, 当 $n=89$ 时, 若数列满足\n$$\nx_1=x_2=\\cdots=x_{41}=41, x_{42}=x_{43}=\\cdots=x_{81}=8, x_{82}=x_{83}=\\cdots=x_{89}=1 \\text {, }\n$$\n则容易验证满足题意.\n因此 $n$ 的最小值为 89 .",
+    "remark": "",
+    "figures": []
+}

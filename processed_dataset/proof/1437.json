@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设 $a 、 b 、 c$ 都是实数,求证:\n$$\n\\frac{|a+b+c|}{1+|a+b+c|} \\leqslant \\frac{|a|}{1+|a|}+\\frac{|b|}{1+|b|}+\\frac{|c|}{1+|c|} .\n$$",
+    "solution": "构造函数 $f(x)=\\frac{x}{1+x}$, 易证 $f(x)$ 在 $[0,+\\infty)$ 上是增函数, 于是\n$f(|a+b+c|) \\leqslant f(|a|+|b|+|c|)$, 即\n$$\n\\begin{aligned}\n\\frac{|a+b+c|}{1+|a+b+c|} \\leqslant & \\frac{|a|+|b|+|c|}{1+|a|+|b|+|c|} \\\\\n= & \\frac{|a|}{1+|a|+|b|+|c|}+\\frac{|b|}{1+|a|+|b|+|c|} \\\\\n& +\\frac{|c|}{1+|a|+|b|+|c|} \\\\\n\\leqslant & \\frac{|a|}{1+|a|}+\\frac{|b|}{1+|b|}+\\frac{|c|}{1+|c|},\n\\end{aligned}\n$$\n故结论成立.",
+    "remark": "",
+    "figures": []
+}

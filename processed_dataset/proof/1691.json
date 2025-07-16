@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例9. 如图(<FilePath:./images/volume7/figures/fig-c2i14.png>),一圆与 $\\triangle A B C$ 的三边 $B C$ 、 $C A 、 A B$ 的交点依次为 $D_1 、 D_2 、 E_1 、 E_2 、 F_1 、 F_2$. 线段 $D_1 E_1$ 与 $D_2 F_2$ 交于点 $L, E_1 F_1$ 与 $D_2 E_2$ 交于点 $M, F_1 D_1$ 与 $F_2 E_2$ 交于点 $N$. 求证: $A L 、 B M$ 、 $C N$ 三线共点.",
+    "solution": "证明:连结 $D_1 E_2 、 E_1 F_2 、 F_1 D_2$, 于是, 有\n$$\n\\begin{aligned}\n\\angle D_1 E_1 F_2= & \\angle D_1 E_2 F_2, \\angle D_2 F_2 F_1=\\angle D_2 D_1 F_1, \\\\\n\\angle E_2 E_1 D_1= & \\angle E_2 D_2 D_1, \\angle E_1 F_2 D_2=\\angle E_1 F_1 D_2, \\\\\n& \\angle F_2 F_1 E_1=\\angle F_2 E_2 E_1, \\angle F_1 D_2 E_2=\\angle F_1 D_1 E_2 .\n\\end{aligned}\n$$\n分别对 $\\triangle A F_2 E_1$ 和点 $L 、 \\triangle B D_2 F_1$ 和点 $M 、 \\triangle C E_2 D_1$ 和点 $N$ 应用角元塞瓦定理有\n$$\n\\frac{\\sin \\angle F_2 A L}{\\sin \\angle L A E_1} \\cdot \\frac{\\sin \\angle A E_1 L}{\\sin \\angle L E_1 F_2} \\cdot \\frac{\\sin \\angle E_1 F_2 L}{\\sin \\angle L F_2 A}=1 .\n$$\n则\n$$\n\\frac{\\sin \\angle B A L}{\\sin \\angle L A C}=\\frac{\\sin \\angle D_1 E_1 F_2}{\\sin \\angle E_2 E_1 D_1} \\cdot \\frac{\\sin \\angle D_2 F_2 F_1}{\\sin \\angle E_1 F_2 D_2} . \\label{eq1}\n$$\n同理,有\n$$\n\\begin{aligned}\n& \\frac{\\sin \\angle C B M}{\\sin \\angle M B A}=\\frac{\\sin \\angle E_1 F_1 D_2}{\\sin \\angle F_2 F_1 E_1} \\cdot \\frac{\\sin \\angle E_2 D_2 D_1}{\\sin \\angle F_1 D_2 E_2} . \\label{eq2} \\\\\n& \\frac{\\sin \\angle A C N}{\\sin \\angle N C B}=\\frac{\\sin \\angle F_1 D_1 E_2}{\\sin \\angle D_2 D_1 F_1} \\cdot \\frac{\\sin \\angle F_2 E_2 E_1}{\\sin \\angle D_1 E_2 F_2} . \\label{eq3}\n\\end{aligned}\n$$\n式\\ref{eq1} $\\times$ 式\\ref{eq2} $\\times$ 式\\ref{eq3}并利用前面的六个等式,有\n$$\n\\frac{\\sin \\angle B A L}{\\sin \\angle L A C} \\cdot \\frac{\\sin \\angle A C N}{\\sin \\angle N C B} \\cdot \\frac{\\sin \\angle C B M}{\\sin \\angle M B A}=1 .\n$$\n由角元塞瓦定理的逆定理知 $A L 、 B M 、 C N$ 三线共点.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2i14.png"
+    ]
+}

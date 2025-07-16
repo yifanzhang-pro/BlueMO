@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例12 若 $x_1 、 x_2$ 是方程 $x^2-x \\sin \\alpha+\\cos \\alpha=0$ 的两个根, 且 $0<\\alpha<\\pi$, 求 $\\arctan x_1+\\arctan x_2$ 的值.",
+    "solution": "解:由韦达定理, $x_1+x_2=\\sin \\alpha, x_1 \\cdot x_2=\\cos \\alpha$, 所以\n$$\n\\begin{aligned}\n\\tan \\left(\\arctan x_1+\\arctan x_2\\right) & =\\frac{x_1+x_2}{1-x_1 x_2}=\\frac{\\sin \\alpha}{1-\\cos \\alpha} \\\\\n& =\\cot \\frac{\\alpha}{2}=\\tan \\left(\\frac{\\pi}{2}-\\frac{\\alpha}{2}\\right) .\n\\end{aligned}\n$$\n因为 $-\\pi<\\arctan x_1+\\arctan x_2<\\pi$, 以及 $0<\\alpha<\\pi$, 故\n$$\n0<\\frac{\\pi}{2}-\\frac{\\alpha}{2}<\\frac{\\pi}{2}\n$$\n所以\n$$\n\\arctan x_1+\\arctan x_2=\\frac{\\pi}{2}-\\frac{\\alpha}{2}\n$$\n或\n$$\n\\arctan x_1+\\arctan x_2=-\\frac{\\pi}{2}-\\frac{\\alpha}{2} .\n$$",
+    "remark": "",
+    "figures": []
+}

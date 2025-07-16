@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题30. 解方程: $\\arccos x+\\arctan \\frac{1}{7}=\\frac{\\pi}{4}$.",
+    "solution": "因 $\\cos \\left(\\frac{\\pi}{4}-\\arctan \\frac{1}{7}\\right)=\\frac{\\sqrt{2}}{2} \\times \\frac{7}{5 \\sqrt{2}}+\\frac{\\sqrt{2}}{2} \\times \\frac{1}{5 \\sqrt{2}}=\\frac{4}{5}$, 所以原方程的解为 $x=\\frac{4}{5}$.",
+    "remark": "",
+    "figures": []
+}

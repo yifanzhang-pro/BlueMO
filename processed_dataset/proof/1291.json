@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设 $a_1, a_2, \\cdots$ 是正实数列, 且对所有 $i, j=1,2, \\cdots$ 满足 $a_{i+j} \\leqslant a_i+a_j$. 求证: 对于正整数 $n$, 有\n$$\na_1+\\frac{a_2}{2}+\\frac{a_3}{3}+\\cdots+\\frac{a_n}{n} \\geqslant a_n\n$$",
+    "solution": "分析:由条件, 当 $i+j=k$ 时, 有 $a_i+a_{k-i} \\geqslant a_k$, 于是得到关于和 $s_{k-1}= a_1+\\cdots+a_{k-1}$ 的估计, 而差 $\\frac{1}{i}-\\frac{1}{i+1}$ 是易求的,提示我们用 Abel 变换公式.\n证明利用 Abel 变换法.\n记 $s_i=a_1+a_2+\\cdots+a_i, i=1,2, \\cdots, n$.\n约定 $s_0=0$, 则\n$$\n2 s_i=\\left(a_1+a_i\\right)+\\cdots+\\left(a_i+a_1\\right) \\geqslant i a_{i+1} .\n$$\n即\n$$\ns_i \\geqslant \\frac{i}{2} \\cdot a_{i+1} .\n$$\n故\n$$\n\\begin{aligned}\n\\sum_{i=1}^n \\frac{a_i}{i} & =\\sum_{i=1}^n \\frac{s_i-s_{i-1}}{i} \\\\\n& =\\sum_{i=1}^{n-1} s_i\\left(\\frac{1}{i}-\\frac{1}{i+1}\\right)+\\frac{1}{n} \\cdot s_n \\\\\n& \\geqslant \\frac{1}{2} s_1+\\sum_{i=1}^{n-1} \\frac{i a_{i+1}}{2}\\left(\\frac{1}{i}-\\frac{1}{i+1}\\right)+\\frac{1}{n} s_n \\\\\n& =\\frac{1}{2} s_1+\\frac{1}{2} \\cdot \\sum_{i=1}^{n-1} \\frac{a_{i+1}}{i+1}+\\frac{1}{n} \\cdot s_n\n\\end{aligned}\n$$\n$$\n=\\frac{1}{2} \\cdot \\sum_{i=1}^n \\frac{a_i}{i}+\\frac{1}{n} s_n\n$$\n因此\n$$\n\\begin{aligned}\n& \\sum_{i=1}^n \\frac{a_i}{i} \\geqslant \\frac{2}{n} s_n \\\\\n= & \\frac{2}{n}\\left(s_{n-1}+a_n\\right) \\\\\n\\geqslant & \\frac{2}{n} \\cdot\\left(\\frac{n-1}{2} a_n+a_n\\right) \\\\\n= & \\frac{n+1}{n} a_n>a_n .\n\\end{aligned}\n$$\n故原不等式成立.\n说明如果去掉 $a_1, a_2, \\cdots$, 是正的这一条件, 则可用数学归纳法证明本题 .",
+    "remark": "",
+    "figures": []
+}

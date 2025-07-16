@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例13. 求 $y=\\frac{x-x^3}{1+2 x^2+x^4}$ 的最大、最小值.",
+    "solution": "分析:函数的解析式可变形为 $y=\\frac{x\\left(1-x^2\\right)}{\\left(1+x^2\\right)^2}=\\frac{x}{1+x^2} \\cdot \\frac{1-x^2}{1+x^2}$.\n解设 $x=\\tan \\theta, \\theta \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$, 则 $y=\\frac{\\tan \\theta}{1+\\tan ^2 \\theta} \\cdot \\frac{1-\\tan ^2 \\theta}{1+\\tan ^2 \\theta}= \\frac{1}{2} \\sin 2 \\theta \\cdot \\cos 2 \\theta=\\frac{1}{4} \\sin 4 \\theta, \\sin 4 \\theta=1$ 时, $y_{\\text {max }}=\\frac{1}{4}$; $\\sin 4 \\theta=-1$ 时, $y_{\\text {min }}=-\\frac{1}{4}$.\n评注利用正切函数的和角公式是上述两题的重要方法.",
+    "remark": "",
+    "figures": []
+}

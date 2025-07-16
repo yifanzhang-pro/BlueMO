@@ -1,0 +1,289 @@
+
+%%TEXT_BEGIN%%
+集合的交集、并集、补集三种基本运算是通过元素与集合的关系来定义的:
+$$
+\begin{aligned}
+& A \cap B=\{x \mid x \in A, \text { 且 } x \in B\}, \\
+& A \cup B=\{x \mid x \in A, \text { 或 } x \in B\}, \\
+& \complement_U A=\{x \mid A \subseteq U, x \in U, \text { 且 } x \notin A\} .
+\end{aligned}
+$$
+请注意这里的逻辑关联词“且”、“或”, 它们在集合运算的定义中起了决定性的作用.
+有时, 我们还要用到集合的差集的概念.
+定义由属于集合 $A$ 但不属于集合 $B$ 的全体元素组成的集合叫做集合
+$A$ 对 $B$ 的差集, 记作 $A \backslash B$ (或 $A-B$ ), 即
+$$
+A \backslash B=\{x \mid x \in A \text {, 且 } x \notin B\} .
+$$
+由这个定义可以看出, 补集只是差集的一种特殊情况.
+记 $U$ 为全集, 容易证明集合的运算满足如下法则:
+(1) 等幂律: $A \cap A=A, A \cup A=A$;
+(2) 同一律: $A \cap U=A, A \cup U=U$,
+$$
+A \cap \varnothing=\varnothing, A \cup \varnothing=A ;
+$$
+(3) 互补律: $A \cap \complement_U A=\varnothing, A \cup \complement_U A=U$;
+(4) 交换律: $A \cap B=B \cap A, A \cup B=B \cup A$;
+(5) 结合律: $A \cap(B \cap C)=(A \cap B) \cap C$,
+$$
+A \cup(B \cup C)=(A \cup B) \cup C
+$$
+(6) 分配律: $A \cap(B \cup C)=(A \cap B) \cup(A \cap C)$,
+$$
+A \cup(B \cap C)=(A \cup B) \cap(A \cup C) \text {; }
+$$
+(7) 吸收律: $A \cup(A \cap B)=A, A \cap(A \cup B)=A$;
+(8) 反演律 (摩根律) : $\complement_U(A \cap B)=\complement_U A \cup \complement_U B$,
+$$
+\complement_U(A \cup B)=\complement_U A \cap \complement_U B .
+$$
+利用维恩图可以清晰地理解集合的交、并、补、差运算及其运算律.
+维恩图为集合问题的解决提供了一个直观的工具.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知 $A=\left\{x \mid x^2+x-6=0\right\}, B=\{x \mid m x+1=0\}$, 且 $A \cup B=A$, 求实数 $m$ 的取值范围.
+%%<SOLUTION>%%
+分析: 关键是如何理解和运用 $A \cup B=A$ 这个条件.
+注意到 $A \cup B=A \Leftrightarrow B \subseteq A$, 用列举法表示 $A$, 即可写出 $B$ 的各种情形, 但不要忘了 $B=\varnothing$ 的情形!
+解: $A=\left\{x \mid x^2+x-6=0\right\}=\{-3,2\} . B=\{x \mid m x+1=0\}$ 至多有一个元素.
+因为 $A \cup B=A$, 所以 $B \subseteq A$. 因此, $B=\{-3\}$, 或 $B=\{2\}$, 或 $B=\varnothing$, 即
+$$
+-3 m+1=0 \text {, 或 } 2 m+1=0 \text {, 或 } m=0 \text {, }
+$$
+解得 $m=\frac{1}{3}$ 或 $-\frac{1}{2}$ 或 0 .
+故实数 $m \in\left\{\frac{1}{3},-\frac{1}{2}, 0\right\}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 已知集合 $A=\left\{x \mid x^2-2 x-3 \leqslant 0\right\}, B=\left\{x \mid x^2+p x+q<0\right\}$, 若 $A \cap B=\{x \mid-1 \leqslant x \leqslant 2\}$. 求 $p 、 q$ 的取值范围.
+%%<SOLUTION>%%
+解:
+$$
+A=\left\{x \mid x^2-2 x-3 \leqslant 0\right\}=[-1,3] .
+$$
+设 $x^2+p x+q=0$ 的两根为 $x_1 、 x_2, x_1<x_2$. 则
+$$
+\begin{gathered}
+x^2+p x+q=\left(x-x_1\right)\left(x-x_2\right), \\
+B=\left(x_1, x_2\right) .
+\end{gathered}
+$$
+由 $A \cap B=[-1,3] \cap\left(x_1, x_2\right)=[-1,2)$, 得
+$$
+\left\{\begin{array}{l}
+x_1<-1, \\
+x_2=2 .
+\end{array}\right.
+$$
+由韦达定理, 得
+$$
+\begin{gathered}
+x_1+x_2=x_1+2=-p, \\
+x_1 x_2=2 x_1=q .
+\end{gathered}
+$$
+因为 $x_1<-1$, 所以
+$$
+\begin{gathered}
+-p-2<-1, \\
+\frac{q}{2}<-1 .
+\end{gathered}
+$$
+故所求 $p 、 q$ 的范围分别是 $p>-1 、 q<-2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $A 、 B$ 都是不超过 9 的正整数组成的全集 $U$ 的子集, $A \cap B= \{2\},\left(\complement_U A\right) \cap\left(\complement_U B\right)=\{1,9\},\left(\complement_U A\right) \cap B=\{4,6,8\}$, 求 $A \backslash B$.
+%%<SOLUTION>%%
+分析:直接进行集合间的运算和推理似乎较难人手, 但我们可从维恩图(<FilePath:./figures/fig-c2e3.png>)中得到解题思路的提示.
+解因为 $\complement_U(A \cup B)=\left(\complement_U A\right) \cap\left(\complement_U B\right)= \{1,9\}$, 所以
+$$
+A \cup B=\{2,3,4,5,6,7,8\} .
+$$
+又
+$$
+\begin{gathered}
+A \cap B=\{2\}, \\
+\left(\complement_U A\right) \cap B=\{4,6,8\}, \\
+B=U \cap B=\left(A \cup \complement_U A\right) \cap B \\
+=(A \cap B) \cup\left(\left(\complement_U A\right) \cap B\right) \\
+=\{2,4,6,8\} .
+\end{gathered}
+$$
+所以
+$$
+\begin{aligned}
+B & =U \cap B=\left(A \cup \complement_U A\right) \cap B \\
+& =(A \cap B) \cup\left(\left(\complement_U A\right) \cap B\right) \\
+& =\{2,4,6,8\} .
+\end{aligned}
+$$
+所以, $A \backslash B=(A \cup B) \backslash B=\{3,5,7\}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 已知集合 $A=\{(x, y) \mid a x+y=1\}, B=\{(x, y) \mid x+a y=1\}$, $C=\left\{(x, y) \mid x^2+y^2=1\right\}$. 问:
+(1) 当 $a$ 取何值时, $(A \cup B) \cap C$ 为含有两个元素的集合?
+(2) 当 $a$ 取何值时, $(A \cup B) \cap C$ 为含有三个元素的集合?
+%%<SOLUTION>%%
+分析:因为 $(A \cup B) \cap C=(A \cap C) \cup(B \cap C)$, 故可从解 $A \cap C$ 及 $B \cap C$ 对应的方程组人手.
+解: $(A \cup B) \cap C=(A \cap C) \cup(B \cap C), A \cap C$ 与 $B \cap C$ 分别为方程组
+(i) $\left\{\begin{array}{l}a x+y=1, \\ x^2+y^2=1,\end{array}\right.$
+(ii) $\left\{\begin{array}{l}x+a y=1, \\ x^2+y^2=1\end{array}\right.$
+的解集.
+由 (i) 解得 $(x, y)=(0,1),\left(\frac{2 a}{1+a^2}, \frac{1-a^2}{1+a^2}\right)$;
+由(ii) 解得 $(x, y)=(1,0),\left(\frac{1-a^2}{1+a^2}, \frac{2 a}{1+a^2}\right)$.
+(1) 使 $(A \cup B) \cap C$ 恰有两个元素的情况只有两种可能:
+<1> $\left\{\begin{array}{l}\frac{2 a}{1+a^2}=0, \\ \frac{1-a^2}{1+a^2}=1 ;\end{array}\right.$
+<2> $\left\{\begin{array}{l}\frac{2 a}{1+a^2}=1, \\ \frac{1-a^2}{1+a^2}=0 .\end{array}\right.$
+由<1>得 $a=0$; 由<2>得 $a=1$.
+故当 $a=0$ 或 1 时, $(A \cup B) \cap C$ 恰有两个元素.
+(2) 使 $(A \cup B) \cap C$ 恰有三个元素的情况是
+$$
+\frac{2 a}{1+a^2}=\frac{1-a^2}{1+a^2}
+$$
+解得 $a=-1 \pm \sqrt{2}$.
+故当 $a=-1 \pm \sqrt{2}$ 时, $(A \cup B) \cap C$ 恰有三个元素.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 已知集合 $A=\left\{(x, y) \mid \frac{y-3}{x-2}=a+1\right\}, B=\{(x, y) \mid(a^2- 1) x+(a-1) y=15\}$, 且 $A \cap B=\varnothing$, 求 $a$ 的值.
+%%<SOLUTION>%%
+分析:当 $a=1$ 时, $B=\varnothing$, 这时 $A \cap B=\varnothing$; 当 $a \neq 1$ 时, $A \cap B=\varnothing$, 即 $A 、 B$ 对应的直线无公共点.
+解由 $\frac{y-3}{x-2}=a+1$, 得
+$$
+(a+1) x-y-2 a+1=0, \text { 且 } x \neq 2 .
+$$
+这表明集合 $A$ 表示一条缺一个点的直线.
+而
+$$
+\left(a^2-1\right) x+(a-1) y=15,
+$$
+当 $a \neq 1$ 时,表示一条直线; 当 $a=1$ 时,满足等式的点 $(x, y)$ 不存在.
+因此,当且仅当以下三种情况之一发生时, $A \cap B=\varnothing$.
+(1)当 $a=1$ 时, $B=\varnothing$, 显然有 $A \cap B=\varnothing$.
+(2)当 $a=-1$ 时, $A$ 表示直线 $y=3(x \neq 2), B$ 表示直线 $y=-\frac{15}{2}$, 它们互相平行.
+所以, $A \cap B=\varnothing$.
+(3)当 $a \neq \pm 1$ 时, 直线 (1) 与 (2) 相交.
+但直线 (1) 上缺一点 $(2,3)$, 令 $(2, 3) \in B$, 得
+$$
+\left(a^2-1\right) \cdot 2+(a-1) \cdot 3=15,
+$$
+解得 $a=-4$ 或 $a=\frac{5}{2}$.
+综上所述, $a \in\left\{-4,-1,1, \frac{5}{2}\right\}$.
+说明 $a \neq 1$ 时, $A \cap B=\varnothing$, 并不表明直线 (1) 与 (2) 必须平行, 由于直线 (1) 上缺了一个点 $(2,3)$, 当直线 (2) 穿过点 $(2,3)$ 时, 同样有 $A \cap B=\varnothing$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $n \in \mathbf{N}$, 且 $n \geqslant 15, A 、 B$ 都是 $\{1,2, \cdots, n\}$ 的真子集, $A \cap B=\varnothing$, 且 $\{1,2, \cdots, n\}=A \cup B$. 证明: $A$ 或者 $B$ 中必有两个不同数的和为完全平方数.
+%%<SOLUTION>%%
+证明:由题设, $\{1,2, \cdots, n\}$ 的任何元素必属于且只属于它的真子集 $A$ 、$B$ 之一.
+假设结论不真, 则存在如题设的 $\{1,2, \cdots, n\}$ 的真子集 $A 、B$, 使得无论是 $A$ 还是 $B$ 中的任何两个不同的数的和都不是完全平方数.
+不妨设 $1 \in A$, 则 $3 \notin A$. 否则 $1+3=2^2$, 与假设矛盾, 所以 $3 \in B$. 同样, $6 \notin B$, 所以 $6 \in A$. 这时 $10 \notin A$, 即 $10 \in B$. 因 $n \geqslant 15$, 而 15 或者在 $A$ 中, 或者在 $B$ 中,但当 $15 \in A$ 时, 因 $1 \in A, 1+15=4^2$, 矛盾; 当 $15 \in B$ 时, 因 $10 \in B, 10+15=5^2$, 仍然矛盾.
+因此假设不真, 即 $A$ 或者 $B$ 中必有两个不同数的和为完全平方数.
+说明由 $A 、 B$ 地位对称, 在上面的解法中我们采用了“不妨设 $1 \in A$ ”这种技巧,有效简化了解题过程.
+例6 实际上给出了一个关于集合的方程组:
+$$
+\left\{\begin{array}{l}
+A \cup B=\{1,2, \cdots, n\}, \\
+A \cap B=\varnothing .
+\end{array}\right.
+$$
+如果交换 $A 、 B$ 算两组解 (有序解), 那么这个方程组有多少组有序解呢?
+设 $U=\{1,2, \cdots, n\}$, 由 $A \cup B=U, A \cap B=\varnothing$,知 $A$ 与 $B$ 互补, 对于 $A \subseteq U$, 可取 $B=\complement_U A$. 故上述集合方程的有序解的个数为 $2^n$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 已知集合 $A 、 B 、 C$ (不必相异)的并集
+$$
+A \cup B \cup C=\{1,2, \cdots, 2005\},
+$$
+求满足条件的有序三元组 $(A, B, C)$ 的个数.
+%%<SOLUTION>%%
+解: 由图(<FilePath:./figures/fig-c2e7.png>)可知,表示集合 $A 、 B 、 C$ 的 3 个圆交出了 7 个区域.
+这表明,在求 $A \cup B \cup C$ 时, 1 , $2, \cdots, 2005$ 中每一个数都有 7 种选择.
+所以,所求的有序三元组的个数为 $7^{2005}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设集合 $S$ 含有 $n$ 个元素, $A_1, A_2, \cdots, A_k$ 是 $S$ 的不同子集, 它们两两的交集非空,而 $S$ 的其他子集不能与 $A_1, A_2, \cdots, A_k$ 都相交.
+求证: $k=2^{n-1}$.
+%%<SOLUTION>%%
+分析: $S$ 有 $2^n$ 个子集, 将两个互为补集的子集作为一组, 则可将 $2^n$ 个子集分成 $2^{n-1}$ 个组, 记为 $\left\{A_i^{\prime}, B_i^{\prime}\right\}, i=1,2, \cdots, 2^{n-1}$, 显然 $A_i$ 只能选取每组中的一个子集.
+证明: 设 $a \in S$. 因为 $|S|=n$, 故 $S$ 的子集中含 $a$ 的子集有 $2^{n-1}$ 个.
+显然它们两两的交非空.
+所以, $k \geqslant 2^{n-1}$.
+又可将 $S$ 的 $2^n$ 个子集分成 $2^{n-1}$ 组, 每组有两个集合, 它们互为补集.
+若 $k>2^{n-1}$, 则必有两个集合 $A_i 、 A_j(i \neq j)$ 来自上述同一组, 但 $A_i \cap A_j=\varnothing$,与题意不符.
+所以, $k=2^{n-1}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 有 1987 个集合,每个集合有 45 个元素,任意两个集合的并集有 89 个元素, 问此 1987 个集合的并集有多少个元素?
+%%<SOLUTION>%%
+分析: 由每个集合有 45 个元素, 且任意两个集合的并集有 89 个元素知, 任意两个集合有且只有一个公共元素.
+解显然可以由题设找到这样的 1987 个集合, 它们都含有一个公共元素 $a$,而且每两个集合不含 $a$ 以外的公共元素.
+下面,我们来排除其他可能性.
+由任意两个集合的并集有 89 个元素可知, 1987 个集合中的任意两个集合有且只有一个公共元素, 则容易证明这 1987 个集合中必有一个集合 $A$ 中的元素 $a$ 出现在 $A$ 以外的 45 个集合中, 设为 $A_1, A_2, \cdots, A_{45}$, 其余的设为 $A_{46}, A_{47}, \cdots, A_{1986}$.
+设 $B$ 为 $A_{46}, \cdots, A_{1986}$ 中的任一个集合, 且 $a \notin B$, 由题设 $B$ 和 $A, A_1$, $A_2, \cdots, A_{45}$ 都有一个公共元素, 且此 46 个元素各不相同, 故 $B$ 中有 46 个元素,与题设矛盾.
+所以这 1987 个集合中均含有 $a$.
+故所求结果为 $1987 \times 44+1=87429$, 即这 1987 个集合的并集有 87429 个元素.
+说明: 在这里我们先设计一种符合题设的特殊情形, 然后再排除其他可能的情形, 从而达到解题目的.
+这是一种“先猜后证”的解题策略.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设 $A$ 是集合 $S=\{1,2, \cdots, 1000000\}$ 的一个恰有 101 个元素的子集.
+证明: 在 $S$ 中存在数 $t_1, t_2, \cdots, t_{100}$, 使得集合
+$$
+A_j=\left\{x+t_j \mid x \in A\right\}, j=1,2, \cdots, 100
+$$
+中, 每两个的交集为空集.
+%%<SOLUTION>%%
+分析: 先弄清楚在什么情况下 $A_i \cap A_j \neq \varnothing$. 设 $a \in A_i \cap A_j$, 则 $a=x+ t_i==y+t_j, x, y \in A$. 于是 $t_i-t_j=y-x$. 这说明选取 $t_1, t_2, \cdots, t_{100}$ 时, 只要保证其中任意两个之差不等于 $A$ 中任二元素之差即可.
+证明: 考虑集合 $D=\{x-y \mid x, y \in A\}$, 则
+$$
+|D| \leqslant 101 \times 100+1=10101 \text {. }
+$$
+若 $A_i \cap A_j \neq \varnothing$, 设 $a \in A_i \cap A_j$, 则 $a=x+t_i, a=y+t_j$, 其中 $x, y \in A$, 则 $t_i-t_j=y-x \in D$.
+若 $t_i-t_j \in D$, 即存在 $x, y \in A$, 使得 $t_i-t_j=y-x$, 从而 $x+t_i=y+t_j$, 即 $A_i \cap A_j \neq \varnothing$.
+所以, $A_i \cap A_j \neq \varnothing$ 的充要条件是 $t_i-t_j \in D$. 于是, 我们只需在集 $S$ 中取出 100 个元素, 使得其中任意两个的差都不属于 $D$.
+下面用递推方法来取出这 100 个元素.
+先在 $S$ 中任取一个元素 $t_1$, 再从 $S$ 中取一个 $t_2$, 使得 $t_1 \notin t_2+D=\{t_2+ x \mid x \in D\}$, 这是因为取定 $t_1$ 后, 至多有 10101 个 $S$ 中的元素不能作为 $t_2$, 从而在 $S$ 中存在这样的 $t_2$, 若已有 $k(\leqslant 99)$ 个 $S$ 中的元素 $t_1, t_2, \cdots, t_k$ 满足要求, 再取 $t_{k+1}$, 使得 $t_1, \cdots, t_k$ 都不属于 $t_{k+1}+D=\left\{t_{k+1}+x \mid x \in D\right\}$. 这是因为 $t_1, t_2, \cdots, t_k$ 取定后, 至多有 $10101 k \leqslant 999999$ 个 $S$ 中的数不能作为 $t_{k+1}$, 故在 $S$ 中存在满足条件的 $t_{k+1}$. 所以, 在 $S$ 中存在 $t_1, t_2, \cdots, t_{100}$, 其中任意两个的差都不属于 $D$.
+综上所述,命题得证.
+说明条件 $|S|=10^{\varepsilon}$ 可以改小一些.
+一般地, 我们有如下更强的结论: 若 $A$ 是 $S=\{1,2, \cdots, n\}$ 的一个 $k$ 元子集, $m$ 为正整数, 且 $m$ 满足条件 $n>(m-1) \cdot\left(C_k^2+1\right)$, 则存在 $S$ 中的元素 $t_1, \cdots, t_m$, 使得 $A_j=\left\{x+t_j \mid x \in A \right\}, j=1, \cdots, m$ 中任意两个的交集为空集.
+%%PROBLEM_END%%
+
+

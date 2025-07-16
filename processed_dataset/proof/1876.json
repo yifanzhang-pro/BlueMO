@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题15. $A B 、 A C$ 为 $\\odot O$ 切线, $A D E$ 为一条割线, $M$ 为 $D E$ 中点, $P$ 为一动点, 满足 $M 、 O 、 P$ 三点共线, $\\odot P$ 为以 $P$ 点为圆心, $P D$ 为半径的圆.\n证明: $C$ 点在 $\\triangle B M P$ 外接圆与 $\\odot P$ 的根轴上.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c5a15.png>), 作 $P R \\perp A C$, 其延长线交 $B C$ 延长线于 $S$, 再过 $A$ 作 $A N \\perp B C$, 则 $N$ 为 $B C$ 的中点, 且 $\\triangle A C N \\backsim \\triangle S C R \\Rightarrow C B \\cdot C S=2 C A \\cdot C R$. 因为 $\\angle O M A=\\angle O B A=\\angle O C A=90^{\\circ}$. 所以 $A$ 、 $C 、 O 、 M 、 B$ 五点共圆.\n则 $\\angle B M P=\\angle B M A+ 90^{\\circ}=\\angle B C A+90^{\\circ}=180^{\\circ}-\\angle R S C$. 故 $B 、 M$ 、 $P 、 S$ 四点共圆.\n$C$ 点对 $\\triangle B M P$ 外接圆的幂为: $-C B \\cdot C S=-2 C A \\cdot C R$. 又因为 $P A^2-A O^2=\\left(A M^2+M P^2\\right)-\\left(A M^2+M O^2\\right)=M P^2-M O^2 . P D^2-O D^2=\\left(D M^2+\\right. \\left.M P^2\\right)-\\left(D M^2+M O^2\\right)=M P^2-M O^2$. 所以 $P A^2-A O^2=P D^2-D O^2 \\Rightarrow P A^2-P D^2=A O^2-D O^2 \\cdots$ (1). 而 $A$ 对 $\\odot O$ 的幕有: $A O^2-D O^2=A D \\cdot A E$.\n从而 $C$ 对 $\\odot P$ 的幂为: $C P^2-P D^2 \\stackrel{\\text { 由 (1) }}{=} C P^2-\\left[A P^2-\\left(A O^2-D O^2\\right)\\right]=C P^2- A P^2+A D \\cdot A E=C P^2-A P^2+A C^2=\\left(C R^2+R P^2\\right)-\\left(A R^2+R P^2\\right)+ A C^2=C R^2-(A C+C R)^2+A C^2=-2 C A \\cdot C R$. 所以点 $C$ 对 $\\odot P$ 的幕等于 $C$ 到 $\\triangle B M P$ 外接圆的幂.\n故由根轴定理知, $C$ 点在上述两圆根轴上.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5a15.png"
+    ]
+}

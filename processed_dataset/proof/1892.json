@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 点 $D$ 是 $\\triangle A B C$ 的外接圆的不包含点 $A$ 的弧 $\\overparen{B C}$ 上的一点, 且 $D \\neq B$, $D \\neq C$, 在射线 $B D$ 和 $C D$ 上分别取点 $E 、 F$, 使 $B E=-A C, C F=A B$. 再设 $M$ 是线段 $E F$ 的中点.\n证明: $\\angle B M C$ 是直角.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c6a12.png>), $M$ 为旋转中心作中心反射, 则 $E \\rightarrow F, F \\rightarrow E$; 设 $B \\rightarrow B^{\\prime}$, $C \\rightarrow C^{\\prime}$, 则 $B^{\\prime} C^{\\prime}=B C$, 则 $E C^{\\prime}=C F=A B$, 又 $E C^{\\prime} / / C F$, 所以 $\\angle B E C^{\\prime}= \\angle B D F=\\angle B A C$, 因为 $E B=A C$, 则 $\\triangle E C^{\\prime} B \\cong \\triangle A B C$, 所以 $B C^{\\prime}=B C$; 同理, $B^{\\prime} C=B C$. 因此, $B C^{\\prime} B^{\\prime} C$ 是一个菱形, 从而 $B B^{\\prime} \\perp C C^{\\prime}$, 故 $B M \\perp M C$ 成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6a12.png"
+    ]
+}

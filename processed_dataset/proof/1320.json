@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例9. 将一些整数排在数轴的一切有理点上, 求证: 可以找到这样一个区间,使这区间的两个端点上的数之和不大于区间中点上的数的 2 倍.",
+    "solution": "证明:用反证法.\n设存在一些整数的这样的排列, 使得对于含中点 $C$ 的任意区间 $[A, B]$, 有不等式 $c<\\frac{a+b}{2}$ 成立, 其中 $a 、 b 、 c$ 分别表示置于 $A 、 B 、$ C上的整数.\n设 $A 、 B 、 C 、 A_n 、 B_n$ 分别代表数轴上的点 $-1 、 1 、 0 、-\\frac{1}{2^n}$ 及 $\\frac{1}{2^n}(n=1$, $2,3, \\cdots)$, 并设置于它们上的整数分别为 $a 、 b 、 c 、 a_n 、 b_n$,\n则\n$$\n\\begin{array}{r}\na_1<\\frac{a+c}{2}, a_2<\\frac{a_1+c}{2}, \\\\\n\\max \\left\\{a_1, a_2\\right\\}<\\max \\{a, c\\} .\n\\end{array}\n$$\n同理, 有\n$$\n\\begin{aligned}\n& \\max \\{a, c\\}>\\max \\left\\{a_1, a_2\\right\\}>\\max \\left\\{a_3, a_4\\right\\}>\\cdots, \\\\\n& \\max \\{b, c\\}>\\max \\left\\{b_1, b_2\\right\\}>\\max \\left\\{b_3, b_4\\right\\}>\\cdots .\n\\end{aligned}\n$$\n所以存在 $m$, 使得\n$$\na_{2 m} \\leqslant \\max \\{a, c\\}-m, b_{2 m} \\leqslant \\max \\{b, c\\}-m .\n$$\n故\n$$\na_{2 m}+b_{2 m} \\leqslant 1-2 m<0 \\text {. }\n$$\n但 0 为区间 $\\left[a_{2 m}, b_{2 m}\\right]$ 的中点,矛盾!",
+    "remark": "",
+    "figures": []
+}

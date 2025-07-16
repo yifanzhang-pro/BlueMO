@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题12. 设 $n$ 为偶数, 从整数 $1,2, \\cdots, n$ 中选取 4 个不同的数 $a, b, c, d$ 满足 $a+ c=b+d$, 求不同的选取方法(不考虑 $a, b, c, d$ 的顺序) 的种数.",
+    "solution": "不妨设 $a>b>d$, 由 $a+c=b+d$ 得 $d>c$. 考虑从 $1,2, \\cdots, n$ 中选 3 个数 $a>b>c$ 且满足 $a+c-b \\neq b$ 的选法: 从 $n$ 个数中选三个数 $a> b>c$ 有 $\\mathrm{C}_n^3$ 种选法, 其中满足 $a+c-b=b$, 即 $a+c=2 b$ 的, $a$ 与 $c$ 同奇偶的选法有 $2 \\mathrm{C}_{\\frac{\\pi}{2}}^2$ 种.\n故三元数组 $B=\\{(a, b, c) \\mid n \\geqslant a>b>c \\geqslant 1, a+c-b \\neq b\\}$ 的个数为 $|B|=\\mathrm{C}_n^3-2 \\mathrm{C}_{\\frac{n}{2}}^2=\\frac{1}{12} n(n-2)(2 n-5)$. 对任意三元数组 $(a, b$, $c) \\in B$, 令 $a+c-b=d$, 则四元组 $(a, b, c, d)$ 满足题目条件.\n但每个四元数组 $(a, b, c, d)$ 对应两个三元数组 $(a, b, c)$ 与 $(a, d, c)$ (因为 $d>c$ ). 故所求的选取方法有 $\\frac{1}{2}|B|=\\frac{1}{24} n(n-2)(2 n-5)$ 种.",
+    "remark": "",
+    "figures": []
+}

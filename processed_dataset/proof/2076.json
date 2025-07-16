@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 已知 $\\triangle A B C$ 内接于 $\\odot O, P$ 为 $\\triangle A B C$ 内任意一点, 过点 $P$ 引 $A B 、 A C$ 、 $B C$ 的平行线, 分别交 $B C 、 A C$ 于 $F 、 E$, 交 $A B 、 B C$ 于 $K 、 I$, 交 $A B 、 A C$ 于 $G 、 H . A D$ 为 $\\odot O$ 过点 $P$ 的弦, 试证:\n$$\nE F^2+K I^2+G H^2 \\geqslant 4 P A \\cdot P D .\n$$",
+    "solution": "作 $\\triangle A G H$ 的外接圆 $O_1$, 截 $A D$ 于点 $Q$. 易证 $\\triangle B C D \\backsim \\triangle A P E$, 故 $\\frac{D C}{P E}=\\frac{B C}{A P}=\\frac{B D}{A E}$, 即 $D C=\\frac{P E}{A P} \\cdot B C=\\frac{A K}{A P} \\cdot B C, B D=\\frac{A E}{A P} \\cdot B C$. 对四边形 $A B D C$ 应用 Ptolemy 定理, 可得 $A D \\cdot B C=B D \\cdot A C+D C \\cdot A B=\\frac{A E}{A P} \\cdot B C \\cdot A C+\\frac{A K}{A P} \\cdot B C \\cdot A B$, 故 $A P \\cdot A D=A E \\cdot A C+A K \\cdot A B \\cdots$ (1). 同理应用 Ptolemy 定理, 可得 $A P \\cdot A Q=A E \\cdot A H+A K \\cdot A G$. 于是 $A P^2+P G \\cdot P H=A P^2+A P \\cdot P Q=A E \\cdot A H+A K \\cdot A G$, 从而 $A P^2=A E \\cdot A H+ A K \\cdot A G-P G \\cdot P H \\cdots$ (2). (1) - (2) 可得 $A P(A D-A P)=A E(A C-A H)+ A K(A B-A G)+P G \\cdot P H$, 即 $P A \\cdot P D=P K \\cdot P I+P E \\cdot P F+P G \\cdot P H$. 又 $P K \\cdot P I \\leqslant\\left(\\frac{P K+P I}{2}\\right)^2=\\frac{1}{4} K I^2, P E \\cdot P F \\leqslant \\frac{1}{4} E F^2, P G \\cdot P H \\leqslant \\frac{1}{4} G H^2$, 故 $E F^2+K I^2+G H^2 \\geqslant 4 P A \\cdot P D$, 等号成立当且仅当 $P$ 为 $\\triangle A B C$ 的重心.",
+    "remark": "",
+    "figures": []
+}

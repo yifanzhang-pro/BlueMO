@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例10. 求证: 四条边给定的四边形中, 内接于圆的四边形面积最大.",
+    "solution": "证明:先提出一个引理: 如图(<FilePath:./images/volume7/figures/fig-c10i9.png>),设凸四边形 $A B C D$ 的边长为 $a 、 b 、 c 、 d$, 对角和为 $2 \\varphi$ (任一组), 设四边形的面积为 $S_0$, 则 $S_0^2=(s-a)(s-b)(s-c)(s-d)- a b c d \\cos ^2 \\varphi$. 其中 $2 s=a+b+c+d$.\n引理证明: 由余弦定理, $B D^2=a^2+d^2-2 a d \\cos A= b^2+c^2-2 b c \\cos C$, 所以 $\\frac{a^2+d^2-b^2-c^2}{2}=a d \\cdot \\cos A- b c \\cdot \\cos C$.\n又 $2 S_0=a d \\sin A+b c \\sin C$, 上面两式各自平方后相加得\n$$\nS_0^2=(s-a)(s-b)(s-c)(s-d)-a b c d \\cos ^2 \\varphi .\n$$\n回到原题, 对于凹四边形 $A B C D$, 不妨设 $D$ 在三角形 $A B C$ 内, 则作 $D$ 关于 $B C$ 的反射点 $D^{\\prime}$, 四边形 $A B C D^{\\prime}$ 与 $A B C D$ 四边各自相同, 但后者面积更大.\n对于凸四边形 $A B C D, S_0 \\leqslant(s-a)(s-b)(s-c)(s-d)$ 等号成立时当且仅当 $\\cos \\varphi=0$, 即它为圆内接四边形.\n综上,对于给定四边长为 $a 、 b 、 c 、 d$ 的四边形, 当且仅当它为圆内接四边形时, 它有最大面积 $\\sqrt{(s-a)(s-b)(s-c)(s-d)}$, 其中 $S= \\frac{a+b+c+d}{2}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c10i9.png"
+    ]
+}

@@ -1,0 +1,347 @@
+
+%%TEXT_BEGIN%%
+递推数列.
+如果数列 $\left\{a_n\right\}$ 的第 $n$ 项 $a_n$ 由它的前面若干项所确定, 那么该数列就是一个递推数列.
+事实上, 等差数列与等比数列都是递推数列, 它们满足的递推关系式分别是 $a_n=2 a_{n-1}-a_{n-2}$ 和 $a_n=a_{n-1} \cdot q$.
+一般地, 如果
+$$
+a_{n+k}=F\left(a_n, a_{n+1}, \cdots, a_{n+k-1}\right), \label{eq1}
+$$
+即 $a_{n+k}$ 是 $a_n, a_{n+1}, \cdots, a_{n+k-1}$ 的函数, 并且初始值 $a_1, \cdots, a_k$ 是确定的, 那么称数列 $\left\{a_n\right\}$ 是一个 $k$ 阶递推数列, 式\ref{eq1}称为 $\left\{a_n\right\}$ 的递推公式.
+与递推数列相关的问题有两大类:一类是已知递推公式求数列的通项 (或其他性质); 另一类是利用递推思想, 先建立递推公式再去讨论问题的本质.
+下面先讨论一些工具性结果.
+称满足下述递推公式的数列 $\left\{a_n\right\}$ 为常系数齐次线性递推数列
+$$
+a_{n+k}=c_1 a_{n+k-1}+\dot{c_2} a_{n+k-2}+\cdots+c_k a_n, \label{eq2}
+$$
+其中 $c_1, c_2, \cdots, c_k$ 为常数.
+注意到,如果 $\lambda$ 是方程
+$$
+\lambda^k=c_1 \lambda^{k-1}+c_2 \lambda^{k-2}+\cdots+c_k . \label{eq3}
+$$
+的根, 那么数列 $\left\{\lambda^n\right\}(n=1,2, \cdots)$ 满足递推式\ref{eq2}, 进一步, 如果式\ref{eq3}的根两两不同,设为 $\lambda_1, \lambda_2, \cdots, \lambda_k$, 那么数列 $\left\{A_1 \lambda_1^n+A_2 \lambda_2^n+\cdots+A_k \lambda_k^n\right\}(n=1,2, \cdots)$ 是满足式\ref{eq2}的数列, 并且可以通过初始条件 $a_1, a_2, \cdots, a_k$ 确定其中的系数 $A_1$, $A_2, \cdots, A_k$ (解一个线性方程组), 这样我们就得到了满足式\ref{eq2}及给定初始值 $a_1$, $a_2, \cdots, a_k$ 的数列的通项.
+上述求解线性递推数列的方法称为 "特征根法", 其中式\ref{eq3}称为 \ref{eq2}的特征方程.
+在式\ref{eq3}出现重根时结论相对复杂些, 我们会在例子中予以阐述.
+与之相对的, 还可以利用母函数方法来处理,一般地, 对数列 $\left\{a_n\right\}(n= 0,1,2, \cdots)$, 我们称下面的形式级数
+$$
+f(x)=a_0+a_1 x+a_2 x^2+\cdots
+$$
+为数列 $\left\{a_n\right\}$ 的母函数.
+例如: 常数数列 $a_n=-1, n=0,1,2, \cdots$ 的母函数为 $f(x)=1+x+ x^2+\cdots=\frac{1}{1-x}(|x|<1)$, 它就是无穷递缩等比数列的求和公式.
+由于母函数方法中涉及级数收玫等高等数列方面的知识, 这里我们不加证明的给出下面的形式级数公式, 并且通过例子来说明使用的方法.
+对 $\alpha \in \mathbf{R}$, 定义 $\left(\begin{array}{l}\alpha \\ n\end{array}\right)=\frac{\alpha(\alpha-1) \cdots(\alpha-n+1)}{n !}, n \in \mathbf{N}$ (它是组合数的一个推广, 在上一节的差分多项式中已经涉及, 这里还规定 $\left.\left(\begin{array}{l}\alpha \\ 0\end{array}\right)=1\right)$. 则
+$$
+(1+x)^\alpha=1+\left(\begin{array}{l}
+\alpha \\
+\end{array}\right) x+\left(\begin{array}{l}
+\alpha \\
+\end{array}\right) x^2+\cdots . \label{eq4}
+$$
+特别地, 当 $\alpha \in \mathbf{N}^*$ 时, 式\ref{eq4} 即为二项式定理.
+对于其他形式的递推数列没有统一的处理方法, 常见的处理方法还有不动点方法等.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知数列 $\left\{a_n\right\}$ 满足 $a_1=0, a_{n+1}=5 a_n+\sqrt{24 a_n^2+1}, n=1,2, \cdots$. 求此数列的通项.
+%%<SOLUTION>%%
+解:对递推式作变形, 得
+$$
+\left(a_{n+1}-5 a_n\right)^2=24 a_n^2+1,
+$$
+即有
+$$
+a_{n+1}^2-10 a_n a_{n+1}+a_n^2=1 . \label{eq1}
+$$
+上式中下标用 $n+1$ 代替 $n$, 得
+$$
+a_{n+2}^2-10 a_{n+1} a_{n+2}+a_{n+1}^2=1 . \label{eq2}
+$$
+对比式\ref{eq1}与\ref{eq2}可知, $a_n$ 与 $a_{n+2}$ 都是方程
+$$
+x^2-10 a_{n+1} x+a_{n+1}^2-1=0 . \label{eq3}
+$$
+的根, 而由递推式可知 $\left\{a_n\right\}$ 是递增数列, 故 $a_n$ 与 $a_{n+2}$ 不同, 从而对式\ref{eq3}用韦达定理, 得
+$$
+a_{n+2}+a_n=10 a_{n+1},
+$$
+即 $a_{n+2}=10 a_{n+1}-a_n, n=1,2, \cdots$.
+此题本质上是一个二阶齐次线性递推数列, 下面我们用两种方法来求数列的通项.
+方法一其特征方程为
+$$
+\lambda^2=10 \lambda-1,
+$$
+它的两个根为 $\lambda_{1,2}=5 \pm 2 \sqrt{6}$. 于是, 可设
+$$
+a_n=A \cdot(5+2 \sqrt{6})^n+B \cdot(5-2 \sqrt{6})^n .
+$$
+由初始条件 $a_1=0$ 知 $a_2=1$,
+$$
+\left\{\begin{array}{l}
+(5+2 \sqrt{6}) A+(5-2 \sqrt{6}) B=0, \\
+(5+2 \sqrt{6})^2 A+(5-2 \sqrt{6})^2 B=1 .
+\end{array}\right.
+$$
+解得 $A=\frac{5-2 \sqrt{6}}{4 \sqrt{6}}, B=\frac{-5-2 \sqrt{6}}{4 \sqrt{6}}$. 所以
+$$
+a_n=\frac{1}{4 \sqrt{6}} .\left((5+2 \sqrt{6})^{n-1}-(5-2 \sqrt{6})^{n-1}\right) .
+$$
+方法二利用母函数方法, 为方便起见, 利用 $a_1=0, a_2=1$ 及递推式补充定义 $a_0=-1$. 则 $\left\{a_n\right\}(n=0,1,2, \cdots)$ 的母函数 $f(x)$ 满足
+$$
+\begin{aligned}
+f(x) & =\sum_{n=0}^{+\infty} a_n x^n=-1+\sum_{n=2}^{+\infty} a_n x^n \\
+& =-1+10 \sum_{n=2}^{+\infty} a_{n-1} x^n-\sum_{n=2}^{+\infty} a_{n-2} x^n \\
+& =-1+10 x \sum_{n=1}^{+\infty} a_n x^n-x^2 \sum_{n=0}^{+\infty} a_n x^n \\
+& =-1+10 x(f(x)+1)-x^2 f(x) .
+\end{aligned}
+$$
+解得 $f(x)=\frac{10 x-1}{x^2-10 x+1}$.
+下面设 $f(x)=\frac{A}{1-(5+2 \sqrt{6}) x}+\frac{B}{1-(5-2 \sqrt{6}) x}$ (即将 $f(x)$ 写成部分分式的形式), 则应有
+$$
+\left\{\begin{array}{l}
+(5-2 \sqrt{6}) A+(5+2 \sqrt{6}) B=-10, \\
+A+B=-1 .
+\end{array}\right.
+$$
+解得 $B=\frac{1}{4 \sqrt{6}}(-5-2 \sqrt{6}), A=\frac{1}{4 \sqrt{6}}(5-2 \sqrt{6})$.
+现在将 $f(x)$ 展开成形式级数, 知
+$$
+\begin{aligned}
+f(x) & =A \sum_{n=0}^{+\infty}(5+2 \sqrt{6})^n x^n+B \sum_{n=0}^{+\infty}(5-2 \sqrt{6})^n x^n . \\
+& =\sum_{n=0}^{+\infty}\left(A(5+2 \sqrt{6})^n+B(5-2 \sqrt{6})^n\right) x^n .
+\end{aligned}
+$$
+所以 $a_n=A(5+2 \sqrt{6})^n+B(5-2 \sqrt{6})^n=-\frac{1}{4 \sqrt{6}}\left((5+2 \sqrt{6})^{n-1}-(5-2 \sqrt{6})^{n-1}\right)$.
+说明此例展示了利用母函数方法求数列通项的基本步骤: 利用递推关系求出母函数 $f(x)$, 然后将 $f(x)$ 展开成级数形式, 由对应项系数相等得出通项公式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 数列 $\left\{a_n\right\}$ 满足 $a_1==2$, 对 $n=1,2, \cdots$ 有
+$$
+a_{n+1}=\frac{a_n}{2}+\frac{1}{a_n} . \label{eq1}
+$$
+求该数列的通项公式.
+%%<SOLUTION>%%
+解:这里介绍不动点处理的方法 (它源于函数迭代的思想), 先求方程
+$$
+\lambda=\frac{\lambda}{2}+\frac{1}{\lambda} . \label{eq2}
+$$
+的解, 得 $\lambda_{1,2}= \pm \sqrt{2}$.
+注意到 $a_1=2$, 结合式\ref{eq1}可知, $\left\{a_n\right\}$ 的每一项都是正有理数, 现在用式\ref{eq1}-\ref{eq2}, 可知对 $\lambda= \pm \sqrt{2}$ 都有
+$$
+a_{n+1}-\lambda=\frac{a_n-\lambda}{2}+\left(\frac{1}{a_n}-\frac{1}{\lambda}\right),
+$$
+变形为
+$$
+\frac{a_{n+1}-\lambda}{a_n-\lambda}=\frac{1}{2}-\frac{1}{\lambda a_n}=\frac{\lambda a_n-2}{2 \lambda a_n} . \label{eq3}
+$$
+在式\ref{eq3}中分别取 $\lambda=\sqrt{2} 、-\sqrt{2}$ 所得两式作商, 得
+$$
+\frac{a_{n+1}-\sqrt{2}}{a_{n+1}+\sqrt{2}}=\left(\frac{a_n-\sqrt{2}}{a_n+\sqrt{2}}\right)^2 \text {. }
+$$
+于是, 我们有
+$$
+\begin{aligned}
+\frac{a_{n+1}-\sqrt{2}}{a_{n+1}+\sqrt{2}} & =\left(\frac{a_n-\sqrt{2}}{a_n+\sqrt{2}}\right)^2=\left(\frac{a_{n-1}-\sqrt{2}}{a_{n-1}+\sqrt{2}}\right)^{2^2} \\
+& =\cdots=\left(\frac{a_1-\sqrt{2}}{a_1+\sqrt{2}}\right)^{2^n}=(3-2 \sqrt{2})^{2^n} \\
+& =(\sqrt{2}-1)^{2^{n+1}} .
+\end{aligned}
+$$
+所以 $\frac{a_n-\sqrt{2}}{a_n+\sqrt{2}}=(\sqrt{2}-1)^{2^n}$, 解得 $a_n=\frac{\sqrt{2}\left(1+(\sqrt{2}-1)^{2^n}\right)}{1-(\sqrt{2}-1)^{2^n}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $m 、 n \in \mathbf{N}^*$, 且 $m n$ 是一个三角形数 (即存在 $t \in \mathbf{N}^*$, 使得 $m n= 1+2+\cdots+t)$. 证明: 存在正整数 $k$, 使得由下面的递推关系确定的数列 $\left\{a_n\right\}$ :
+$$
+a_1=m, a_2=n, a_j=6 a_{j-1}-a_{j-2}+k, j=3,4, \cdots
+$$
+满足 : 对任意下标 $j$,数 $a_j a_{j+1}$ 都是三角形数.
+%%<SOLUTION>%%
+证明:注意到,
+$x$ 为三角形数 $\Leftrightarrow$ 存在 $t \in \mathbf{N}^*$, 使得 $x=1+2+\cdots+t\Leftrightarrow$ 存在 $t \in \mathbf{N}^*$, 使得 $x=\frac{t(t+1)}{2}\Leftrightarrow$ 存在 $t \in \mathbf{N}^*$, 使得 $8 x+1=(2 t+1)^2$.
+因此,我们只需证明: 存在 $k \in \mathbf{N}^*$, 使得对任意 $j \in \mathbf{N}^*$, 数 $8 a_j a_{j+1}+1$ 都是完全平方数.
+从完全平方式出发, 看看是否存在 $k \in \mathbf{N}^*$, 使得对任意 $j \in \mathbf{N}^*$, 都有 $8 a_j a_{j+1}+1=\left(a_j+a_{j+1}+l\right)^2$, 这里 $l$ 是只与 $k$ 相关的常数.
+猜想中取 $j=1$, 可知 $l=\sqrt{8 m n+1}-m-n$ (注意 $m n$ 为三角形数, 故 $\sqrt{8 m m+1} \in \mathbf{N}^*$).
+进一步, 如果对任意 $j \in \mathbf{N}^*$, 都有
+$$
+8 a_j a_{j+1}+1=\left(a_j+a_{j+1}+l\right)^2, \label{eq1}
+$$
+那么在式\ref{eq1}中用 $j+1$ 代替 $j$, 应有
+$$
+8 a_{j+1} a_{j+2}+1=\left(a_{j+1}+a_{j+2}+l\right)^2 . \label{eq2}
+$$
+两式相减, 得
+$$
+\begin{aligned}
+& 8\left(a_{j+2}-a_j\right) a_{j+1}=\left(a_{j+2}-a_j\right)\left(a_{j+2}+2 a_{j+1}+a_j+2 l\right) \\
+\Leftrightarrow & 8 a_{j+1}=a_{j+2}+2 a_{j+1}+a_j+2 l \\
+\Leftrightarrow & a_{j+2}=6 a_{j+1}-a_j-2 l,
+\end{aligned} \label{eq3}
+$$
+并且由式\ref{eq1}、\ref{eq3}可推出式\ref{eq2}成立.
+利用上述分析, 如果令 $k=-2 l=2(m+n)-2 \sqrt{8 m m+1}$, 那么由题给递推式定义的数列 $\left\{a_n\right\}$ 符合要求 (这一点利用数学归纳法可证).
+综上可知, 命题成立.
+说明这里采用的是先猜后证的思想, 这不是数列问题中独有的, 而是整个数学学习中都有的, 它是一种数学灵感的体现.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 数列 $0,1,3,0,4,9,3,10, \cdots$ 定义如下:
+$a_0=0$, 对 $n=1,2, \cdots$ 都有
+$$
+a_n=\left\{\begin{array}{l}
+a_{n-1}-n, \text { 若 } a_{n-1} \geqslant n, \\
+a_{n-1}+n, \text { 其他情形.
+}
+\end{array}\right.
+$$
+问: 是否每一个非负整数都在该数列中出现? 证明你的结论.
+%%<SOLUTION>%%
+解:每个非负整数都在该数列中出现.
+注意到, 由定义可知 $\left\{a_n\right\}$ 是一个整数数列, 我们先确定 $\left\{a_n\right\}$ 中每一项的取值范围,对 $n$ 归纳来证: $0 \leqslant a_n \leqslant 2 n-1(n \geqslant 1), \label{eq1}$.
+当 $n=1$ 时,由条件知 $a_1=1$, 故式\ref{eq1}成立.
+设 $a_{n-1}(n \geqslant 2)$ 满足式\ref{eq1}. 当 $n \leqslant a_{n-1} \leqslant 2 n-3$ 时, $a_n=a_{n-1}-n \in[0, n-3]$ (注意, $n \leqslant 2 n-3$ 知 $n \geqslant 3$ ), 符合 (1); 当 $0 \leqslant a_{n-1} \leqslant n-1$ 时, $a_n=a_{n-1}+n \in[n, 2 n-1]$,亦符合 式\ref{eq1}. 故 式\ref{eq1} 对 $n \in \mathbf{N}^*$ 成立.
+再改写 $a_n$ 的递推式: 当 $a_{n-1}=0$ 时,有 $a_n=n, a_{n+1}=2 n+1$; 当 $a_{n-1} \in [1, n-1]$ 时, 有 $a_n=n+a_{n-1} \in[n+1,2 n-1]$, 此时 $a_{n+1}=a_n-(n+$ 1) $=a_{n-1}-1$; 当 $a_{n 1} \in[n, 2 n-3]$ 时, $a_n=a_{n-1}-n \in[0, n-3]$, 此时 $a_{n+1}= a_n+(n+1)=a_{n-1}+1$. 所以,当 $n \geqslant 3$ 时,我们有
+$$
+a_{n+1}= \begin{cases}2 n+1, & \text { 若 } a_{n-1}=0, \\ a_{n-1}-1, & \text { 若 } a_{n-1} \in[1, n-1], \\ a_{n-1}+1, & \text { 若 } a_{n-1} \in[n, 2 n-3] .\end{cases} \label{eq2}
+$$
+回到原题, 若存在非负整数不在 $\left\{a_n\right\}$ 中出现, 取其中最小的, 设为 $M$, 则 $M>1$, 此时 $M-1$ 在数列中出现, 可设 $a_{n-1}=M-1$. 若 $a_{n-1} \in[n, 2 n-3]$, 则 $M=a_{n-1}+1=a_{n+1}$,矛盾.
+因此 $a_{n-1} \leqslant n-1$, 结合 $M>1$, 知 $a_{n-1} \in[1, n-1]$, 此时有 $a_{n+1}=a_{n-1}-1 \in[0, n-2]$, 进而 $a_{n+3}=a_{n+1}-1$ (除非 $\left.a_{n+1}=0\right)$, 依次下去, 可得一个子数列 $a_{n-1}>a_{n+1}>a_{n+3}>\cdots>a_{s-1}=0$, 这里 $s \geqslant n+2$.
+结合 $a_{n-1} \leqslant n-1$ 知 $M \leqslant n$, 而 $a_{s-1}=0$, 由 式\ref{eq2} 知 $a_{s+1}=2 s+1>s+2$, 进而,有 $a_{s+2}=a_{s+1}-(s+2)=s-1 \in[0, s+1]$, 同上可知 $a_{s+1} \in\{0$, $\left.a_{s+2}-1\right\}, \cdots$ 因此, 必有一个下标 $t$, 使得 $a_t=M$ (因为 $s-1 \geqslant n+1 \geqslant M$ ), 从而 $M$ 亦为 $\left\{a_n\right\}$ 中的项,矛盾.
+综上可知,每一个非负整数都在 $\left\{a_n\right\}$ 中出现.
+说明本题的关键在于对题给的递推式作出恰当改写, 变为式\ref{eq2}的形式, 从而出现隔一个数加上 1 或者减去 1 的特点, 为证明数列遍经每一个非负整数打下坚实的基础.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 用 $A_n$ 表示一些由 $a 、 b 、 c$ 组成的字长为 $n$ 的词组成的集合,其中每一个词中都没有连续两个字同时为 $a$ 或者同时为 $b ; B_n$ 表示一些由 $a 、 b 、 c$ 组成的字长为 $n$ 的词组成的集合, 其中每一个词中都没有连续的三个字是两两不同的.
+证明: 对任意正整数 $n$, 都有 $\left|B_{n+1}\right|=3\left|A_n\right|$.
+%%<SOLUTION>%%
+证明:我们采用递推的方法来处理.
+用 $c_n$ 表示集合 $A_n$ 中以 $c$ 开头的词的个数, $d_n$ 表示以 $a$ 或 $b$ 开头的词的个数.
+对于 $A_{n+1}$ 中的词, 依第 1 个字分类, 如果为 $c$, 那么去掉它后所得的词仍属于 $A_n$; 如果为 $a$, 那么第 2 个字为 $c$ 或 $b$; 如果为 $b$, 那么第 2 个字为 $c$ 或 $a$. 所以,成立如下递推关系式
+$$
+\left\{\begin{array}{l}
+c_{n+1}=\left|A_n\right|=c_n+d_n, \\
+d_{n+1}=2 c_n+d_n .
+\end{array}\right. \label{eq1}
+$$
+再用 $c_n^{\prime}$ 表示 $B_n$ 中最前面的两个字相同的词的个数, $d_n^{\prime}$ 表示 $B_n$ 中最前面的两个字不同的词的个数.
+对于 $B_{n+1}$ 中的词,我们依最前面的两个字是否相同分类.
+如果相同,那么第 3 个字可以任取,此时,去掉第 1 个字后, 所得词属于 $B_n$; 如果不同, 那么第 3 个字与前面两个字中的某一个相同, 在与第 1 个字相同时, 去掉第 1 个字后, 共有 $d_n^{\prime}$ 个词.
+在与第 2 个字相同时, 去掉第 1 个字后, 共有 $2 c_n^{\prime}$ 个词 (这里系数为 2 是因为 $a b b \cdots$ 与 $c b b \cdots$ 去掉第 1 个字后所得的词相同), 所以,它们之间的递推关系式为
+$$
+\left\{\begin{array}{l}
+c_{n+1}^{\prime}=\left|B_n\right|=c_n^{\prime}+d_n^{\prime} ; \\
+d_{n+1}^{\prime}=2 c_n^{\prime}+d_n^{\prime} .
+\end{array}\right. \label{eq2}
+$$
+注意到,递推关系式\ref{eq1}与\ref{eq2}完全相同,不同的只是它们的初始条件.
+直接枚举可知 $c_1=1, d_1=2 ; c_2^{\prime}=3, d_2^{\prime}=6$. 因此 $c_2^{\prime}=3 c_1, d_2^{\prime}=3 d_1$, 从而由递推关系式,可知 $c_{n+1}^{\prime}=3 c_n, d_{n+1}^{\prime}=3 d_n$. 结合 $\left|A_n\right|=c_{n+1}$ 及 $\left|B_n\right|=c_{n+1}^{\prime}$, 可得 $\left|B_{n+1}\right|=3\left|A_n\right|$.
+命题获证.
+说明利用递推思想处理组合计数问题是一个重要的方法.
+这里建立的递推式可化为常系数齐次线性递推关系, 可求解出 $\left|A_n\right|$ 的具体数值.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 实数数列 $\left\{a_n\right\}$ 满足: 对任意不同的正整数 $i 、 j$, 都有 $\left|a_i-a_j\right| \geqslant \frac{1}{i+j}$, 且存在正实数 $c$, 使得对任意 $n \in \mathbf{N}^*$, 都有 $0 \leqslant a_n \leqslant c$.
+求证: $c \leqslant 1$.
+%%<SOLUTION>%%
+证明:此题不是以等式形式给出的数列各项之间的关系,它只是用一个不等式刻画了项与项之间的差距.
+整个解决过程有一定的分析味道, 基于裂项求和的思想.
+对 $n \geqslant 2$, 设 $\pi(1), \cdots, \pi(n)$ 是 $1,2, \cdots, n$ 的一个排列, 使得
+$$
+0 \leqslant a_{\pi(1)}<a_{\pi(2)}<\cdots<a_{\pi(n)} \leqslant c . \label{eq1}
+$$
+注意,由条件可知 $\left\{a_n\right\}$ 中任意两项不同,而式\ref{eq1}只是将 $a_1, \cdots, a_n$ 从小到大作了一个排列.
+利用式\ref{eq1}及条件, 可知
+$$
+\begin{aligned}
+c & \geqslant a_{\pi(n)}-a_{\pi(1)}=\sum_{k=1}^{n-1}\left(a_{\pi(k+1)}-a_{\pi(k)}\right) \\
+& \geqslant \sum_{k=1}^{n-1} \frac{1}{\pi(k+1)+\pi(k)} .
+\end{aligned}
+$$
+由 Cauchy 不等式, 知
+$$
+\begin{aligned}
+& \sum_{k=1}^{n-1} \frac{1}{\pi(k+1)+\pi(k)} \geqslant \frac{(n-1)^2}{\sum_{k=1}^{n-1}(\pi(k+1)+\pi(k))} \\
+= & \frac{(n-1)^2}{2 \sum_{k=1}^n \pi(k)-\pi(1)-\pi(n)}=\frac{(n-1)^2}{n(n+1)-\pi(1)--\pi(n)} \\
+\geqslant & \frac{(n-1)^2}{n(n+1)-1-2}>\frac{(n-1)^2}{n(n+1)-2}=\frac{n-1}{n+2}=1-\frac{3}{n+2} .
+\end{aligned}
+$$
+所以, 我们有
+$$
+c \geqslant 1-\frac{3}{n+-2}
+$$
+令 $n \rightarrow+\infty$, 即可得 $c \geqslant 1$.
+命题获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 由实数组成的无穷数列 $\left\{a_n\right\}$ 定义如下: $a_0 、 a_1$ 是两个不同的正实数, 且 $a_n=\left|a_{n+1}-a_{n+2}\right|, n=0,1,2, \cdots$. 问: 该数列是否可能是一个有界数列? 证明你的结论.
+%%<SOLUTION>%%
+解:此数列一定是一个无界数列.
+证明的基本思想是从 $\left\{a_n\right\}$ 中取出一个递增的无界数列.
+事实上, 如果存在 $n \in \mathbf{N}^*$, 使得 $a_n=a_{n+1}$, 则由递推关系式, 知 $a_{n-1}=0$, 进而 $a_{n-2}=a_{n-3}$ (注意, 这里用到 $\left\{a_n\right\}$ 的每一项都是非负实数), 这样依次倒推, 可知 $a_1=a_2$ 或者 $a_1 、 a_2$ 中有一个等于零,但这与 $a_1 、 a_2$ 是两个不同的正实数矛盾.
+因此, 对任意 $n \in \mathbf{N}^*$, 都有 $a_n \neq a_{n+1}$ (即 $\left\{a_n\right\}$ 中没有相邻两项是相等的), 从而结合递推式知, 对任意 $n \in \mathbf{N}^*$, 都有 $a_n>0$.
+现在我们来从 $\left\{a_n\right\}$ 中挑出一个递增的子数列 $\left\{b_m\right\}$.
+由条件,知 $a_{n+2}=a_n+a_{n+1}$ 或 $a_{n+2}=a_{n+1}-a_n$. 若为前者,则 $a_{n+2}>a_{n+1}$; 若为后者, 则 $a_{n+2}<a_{n+1}$, 此时, 由 $a_{n+2}=a_{n+1}-a_n$ 知, 必有 $a_{n+3}=a_{n+2}+ a_{n+1}$ (否则 $a_{n+3}=a_{n+2}-a_{n+1}<0$, 矛盾), 这表明 $a_{n+3}>a_{n+1}$. 这一段讨论表明: 要么 $a_{n+2}>a_{n+1}$, 要么 $a_{n+2}<a_{n+1}<a_{n+3}$.
+利用上述结论, 我们从数列 $\left\{a_n\right\}$ 去掉所有满足 $a_{n+1}<a_n$ 且 $a_{n+1}<a_{n+2}$ (注意, 当 $n \geqslant 2$ 时, 将有 $a_{n+2}>a_n$ ) 的项 $a_{n+1}$, 当然, 如果 $a_1>a_2$, 那么去掉 $a_1$ 保留 $a_2$ 后再做去项操作.
+这样留下的项依次记为 $b_1, b_2, \cdots$ 所得数列 $\left\{b_m\right\}$ 是一个递增数列.
+最后, 我们证明: $\left\{b_m\right\}$ 必为无界数列.
+只需证明: 对任意 $m \in \mathbf{N}^*, b_{m+2}-b_{m+1} \geqslant b_{m+1}-b_m$ (因为这时, 利用裂项求和可得 $b_{m+2}-b_2 \geqslant m\left(b_2-b_1\right)$, 让 $m \rightarrow+\infty$, 即可知 $\left\{b_m\right\}$ 为无界数列).
+由 $\left\{b_m\right\}$ 的定义, 可设 $b_{m+2}=a_{n+2}$ (注意 $n$ 不一定为 $m$ ), 则由于 $a_{n+2}$ 是未被去掉的项,故 $a_{n+2}>a_{n+1}$, 如果 $a_{n+1}>a_n$, 那么 $b_{m+1}=a_{n+1}$, 而 $b_m=a_n$ 或者 $a_{n-1}$ (若为前者, 则 $a_n>a_{n-1}$ ), 于是, 总有 $b_m \geqslant a_{n-1}$, 得
+$$
+b_{m+2}-b_{m+1}=a_{n+2}-a_{n+1}=a_n=a_{n+1}-a_{n-1} \geqslant b_{m+1}-b_m .
+$$
+如果 $a_{n+1}<a_n$, 那么 $b_{m+1}=a_n$, 而 $b_m=a_{n-1}$ 或者 $a_{n-2}$ (若为后者, 则 $a_{n-2}> a_{n-1}$, 否则 $a_{n-1}$ 不是去掉的项), 所以
+$$
+b_{m+2}-b_{m+1}=a_{n+2}-a_n=a_{n+1}=a_n-a_{n-1} \geqslant b_{m+1}-b_m .
+$$
+命题获证.
+说明建议读者在阅读解答时, 手边写一个具体数列, 便于对比 $\left\{a_n\right\}$ 与 $\left\{b_m\right\}$ 之间的关系.
+与上题类似, 它也不是一个由确定性关系式定义的递推数列.
+处理上都涉及不等式估计,它正是一种分析能力的体现.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 数列 $\left\{a_n\right\}$ 满足递推式
+$$
+a_{n+1}=\frac{a_n^2-1}{n+1}, n=0,1,2, \cdots .
+$$
+问 : 是否存在正实数 $a$, 使得下面的结论都成立?
+(1) 若 $a_0 \geqslant a$, 则极限 $\lim _{n \rightarrow \infty} a_n$ 不存在;
+(2) 若 $0<a_0<a$, 则 $\lim _{n \rightarrow \infty} a_n=0$.
+%%<SOLUTION>%%
+解:存在满足条件的正实数 $a$, 这个 $a=2$. 题目的解答过程中会不断用到数学归纳法,其中的详细推导请读者自己完成.
+(1) 当 $a_0 \geqslant 2$ 时,利用数学归纳法可证: 对 $n \geqslant 0$, 都有 $a_n \geqslant n+2$, 故此时 $\lim _{n \rightarrow \infty} a_n$ 不存在.
+(2)对 $0<a_0<2$, 我们分两种情形处理:
+情形一 $0<a_0 \leqslant 1$, 此时利用数学归纳法可证: 对任意 $n \in \mathbf{N}^*$, 都有 $\left|a_n\right| \leqslant-\frac{1}{n}$; 故 $\lim _{n \rightarrow \infty} a_n=0$.
+情形二 $1<a_0<2$, 如果存在 $m \in \mathbf{N}^*$, 使得 $a_{m+1} \leqslant 0$, 那么取最小的 $m$, 则 $0<a_m \leqslant 1$, 此时 $\left|a_{m+1}\right|=\frac{1-a_m^2}{m+1} \leqslant \frac{1}{m+1}$, 依此结合数学归纳法可证: 当 $n \geqslant m+1$ 时,都有 $\left|a_n\right| \leqslant \frac{1}{n}$, 从而 $\lim _{n \rightarrow+\infty} a_n=0$.
+最后, 若对任意 $m \in \mathbf{N}^*$, 都有 $a_m>0$,结合 $1<a_0<2$ 可知, 对 $n \geqslant 0$ 都有 $a_n>1$. 现在设 $a_0=2-\varepsilon(0<\varepsilon<1)$, 利用递推式及数学归纳法可证: 对任意 $n \in \mathbf{N}^*, a_n<n+2-n \varepsilon$. 因此, 取 $m=\left\lceil\frac{1}{\varepsilon}\right\rceil$, 则有 $a_m<m+2-m \varepsilon \leqslant m+1$, 然后, 再用数学归纳法可证: 对任意 $n>m$, 都有 $a_n \leqslant \frac{(m+1)^2-1}{n-1}$, 这在 $n$ 充分大时, 导致 $a_n \leqslant 1$, 矛盾.
+因此, 必存在 $n \in \mathbf{N}^*$, 使得 $a_n \leqslant 0$, 归人前面的情形.
+综上可知, $a=2$ 符合要求.
+%%PROBLEM_END%%
+
+

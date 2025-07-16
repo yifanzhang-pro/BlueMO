@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例5. 求方程\n$$\nx^4+4 y^4=2\\left(z^4+4 u^4\\right)\n$$\n的整数解.",
+    "solution": "分析:本例可以运用无穷递降法来解.\n设 $(x, y, z, u)$ 是方程的一组解, 且其中 $x$ 是所有解中取最小正整数者, 我们就让 “无穷递降” 的过程从此开始, 看看后面会出现什么情况.\n解显然, 方程(1)有解\n$$\nx=y=z=u=0 .\n$$\n我们证明这是方程(1)的惟一一组整数解.\n若 ( $x, y, z, u)$ 是方程(1)的解, 则 ( $|x|, y, z, u)$ 必是方程 (1) 的解.\n故不妨设 ( $x, y, z, u)$ 是方程 (1) 的所有解中 $x$ 取最小正整数者.\n易知, $x$ 为偶数.\n设 $x=2 x_1, x_1 \\in \\mathbf{N}^*$, 则有\n$$\n\\begin{aligned}\n16 x_1^4+4 y^4 & =2\\left(z^4+4 u^4\\right), \\\\\n8 x_1^4+2 y^4 & =z^4+4 u^4 .\n\\end{aligned}\n$$\n因而 $z$ 是偶数.\n设 $z=2 z_1, z_1 \\in \\mathbf{Z}$, 则有\n$$\n\\begin{gathered}\n8 x_1^4+2 y^4=16 z_1^4+4 u^4, \\\\\n4 x_1^4+y^4=8 z_1^4+2 u^4 .\n\\end{gathered}\n$$\n因而 $y$ 是偶数.\n设 $y=2 y_1, y_1 \\in \\mathbf{Z}$, 则有\n$$\n\\begin{gathered}\n4 x_1^4+16 y_1^4=8 z_1^4+2 u^4, \\\\\n2 x_1^4+8 y_1^4=4 z_1^4+u^4 .\n\\end{gathered}\n$$\n因而 $u$ 是偶数.\n设 $u=2 u_1, u_1 \\in \\mathbf{Z}$, 则有\n$$\n\\begin{aligned}\n2 x_1^4+8 y_1^4 & =4 z_1^4+16 u_1^4, \\\\\nx_1^4+4 y_1^4 & =2\\left(z_1^4+4 u_1^4\\right) .\n\\end{aligned}\n$$\n由(2)知, $\\left(x_1, y_1, z_1, u_1\\right)$ 也是方程 (1) 的解.\n但 $0<x_1<x$, 这与 $x$ 的取法矛盾.\n所以,方程 (1) 有惟一解 $(0,0,0,0)$.\n说明由 $(x, y, z, u)=\\left(2 x_1, 2 y_1, 2 z_1, 2 u_1\\right)$ 知, 若方程 (1) 有 $x=y=z=u=0$ 以外的解, 则 $x 、 y 、 z 、 u$ 至少有一个不等于零.\n由于它们在方程中的次数均为偶数, 故可设其中任一个为正整数.\n由上面的证法同样可导出矛盾.\n这就是我们“不妨设”的理由.",
+    "remark": "",
+    "figures": []
+}

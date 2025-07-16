@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题24. 在 $\\triangle A B C$ 中, 三条边长分别为 $a 、 b 、 c$, 且 $a 、 b 、 c$ 为有理数, 求证:\n$$\n\\left(1+\\frac{b-c}{a}\\right)^a\\left(1+\\frac{c-a}{b}\\right)^b\\left(1+\\frac{a-b}{c}\\right)^c \\leqslant 1 .\n$$",
+    "solution": "因为 $a 、 b 、 c$ 为正有理数,故存在 $m \\in \\mathbf{N}$, 使 $m a, m b, m c$ 为正整数, 又 $a 、 b 、 c$ 为三边之长, 有 $1+\\frac{b-c}{a}>0,1+\\frac{c-a}{b}>0,1+\\frac{a-b}{c}>0$. 由平均值不等式, 得 $\\left[\\left(1+\\frac{b-c}{a}\\right)^{m a}\\left(1+\\frac{c-a}{b}\\right)^{m b}\\left(1+\\frac{a-b}{c}\\right)^{m c}\\right]^{\\frac{1}{m a+m b+m c}} \\leqslant \\frac{m a\\left(1+\\frac{b-c}{a}\\right)+m b\\left(1+\\frac{c-a}{b}\\right)+m c\\left(1+\\frac{a-b}{c}\\right)}{m a+m b+m c}=1$.",
+    "remark": "",
+    "figures": []
+}

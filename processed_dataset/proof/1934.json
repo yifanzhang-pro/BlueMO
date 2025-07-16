@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例7. 设 $z=\\sum_{k=1}^n z_k^2, z_k=x_k+y_k \\mathrm{i}\\left(x_k 、 y_k \\in \\mathbf{R}, k=1,2, \\cdots, n\\right), p$ 是 $z$ 的平方根的实部, 求证: $|p| \\leqslant \\sum_{k=1}^n\\left|x_k\\right|$.",
+    "solution": "分析:与解设 $p+q \\mathrm{i}(p 、 q \\in \\mathbf{R})$ 是 $z$ 的平方根, 由\n$$\n\\begin{gathered}\n(p+q \\mathrm{i})^2=\\sum_{k=1}^n z_k^2=\\sum_{k=1}^n\\left(x_k^2-y_k^2\\right)+2 \\mathrm{i} \\sum_{k=1}^n x_k y_k, \\\\\np^2-q^2=\\sum_{k=1}^n\\left(x_k^2-y_k^2\\right), p q=\\sum_{k=1}^n x_k y_k . \\label{eq1}\n\\end{gathered}\n$$\n用反证法, 假设 $|p|>\\sum_{k=1}^n\\left|x_k\\right|$, 则 $p^2>\\left(\\sum_{k=1}^n\\left|x_k\\right|\\right)^2 \\geqslant \\sum_{k=1}^n x_k^2$, 由此推出 $q^2>\\sum_{k=1}^n y_k^2, \\label{eq2}$.\n由式\\ref{eq1}、\\ref{eq2}, 可得 $\\left(\\sum_{k=1}^n x_k y_k\\right)^2=p^2 q^2>\\left(\\sum_{k=1}^n x_k^2\\right) \\cdot\\left(\\sum_{k=1}^n y_k^2\\right)$, 这与柯西不等式相矛盾!\n故 $|p| \\leqslant \\sum_{k=1}^n\\left|x_k\\right|$, 证毕.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise8.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. (1) 设 $m, n$ 是互素的正整数, $m, n>1 . a$ 是一个与 $m n$ 互素的整数.\n设 $a$ 模 $m$ 及模 $n$ 的阶分别为 $d_1 、 d_2$, 则 $a$ 模 $m n$ 的阶为 $\\left[d_1, d_2\\right]$;\n(2) 求出 3 模 $10^4$ 的阶.",
+    "solution": "(1) 设 $a$ 模 $m n$ 的阶为 $r$. 由 $a^r \\equiv 1(\\bmod m n)$ 可得 $a^r \\equiv 1(\\bmod m)$ 及 $a^r \\equiv 1(\\bmod n)$. 故 $d_1 \\mid r$ 及 $d_2 \\mid r$, 从而 $\\left[d_1, d_2\\right] \\mid r$. 另一方面, 由 $a^{d_1} \\equiv 1(\\bmod m)$ 及 $a^{d_2} \\equiv 1(\\bmod n)$, 推出 $a^{\\left[d_1, d_2\\right]} \\equiv 1(\\bmod m)$, 及 $a^{\\left[d_1, d_2\\right]} \\equiv 1(\\bmod n)$. 因 $(m, n)=1$, 故 $a^{\\left[d_1, d_2\\right]} \\equiv 1(\\bmod m m)$, 于是 $r \\mid\\left[d_1, d_2\\right]$. 综合两方面的结果即知 $r=\\left[d_1 ; d_2\\right]$.\n(2)直接验算可知 3 模 $2^4$ 的阶为 4 . 又易知 3 模 5 的阶为 4 ,故由例 5 中 (1) 可知, 3 模 $5^4$ 的阶为 $4 \\times 5^3$. 因此由本题的 (1) 推出, 3 模 $10^4$ 的阶为 $[4,4 \\times 5^3]=500$.",
+    "remark": "",
+    "figures": []
+}

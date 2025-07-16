@@ -1,0 +1,307 @@
+
+%%TEXT_BEGIN%%
+抽㞌原理与平均值原理.
+一、抽㞕原理.
+抽屉原理又称鸽巢原理或狄利克雷 (Dirichlet) 原理, 抽屉原理是组合数学中基本而重要的原理之一, 许多存在性问题的证明都可以用抽屉原理来解决.
+第一抽庶原理如果将 $m$ 个物件放人 $n$ 个抽庶内, 那么必有一个抽庶内至少有 $\left[\frac{m-1}{n}\right]+1$ 个物件.
+证明用反证法, 如果每个抽庶内至多有 $\left[\frac{m-1}{n}\right]$ 个物件, 那么放人 $n$ 个抽庶内的物件的总数至多为 $n\left[\frac{m-1}{n}\right] \leqslant n\left(\frac{m-1}{n}\right)=m-1$, 这与共有 $m$ 个物件矛盾,故必有一个抽屉内至少有 $\left[\frac{m-1}{n}\right]+1$ 个物件.
+证毕.
+推广如果将 $m_1+m_2+\cdots+m_n+1\left(m_1, m_2, \cdots, m_n\right.$ 均为正整数 $)$ 个物件放人 $n$ 个抽庶内, 那么或者第一个抽屉内至少有 $m_1+1$ 个物件, 或者第二个抽庶内至少有 $m_2+1$ 个物件……或者第 $n$ 个抽庶内至少有 $m_n+1$ 个物件.
+证明用反证法, 如果第 $i$ 个抽屉内至多只有 $m_i$ 个物件 $(i=1,2, \cdots$, $n)$, 那么 $n$ 个抽庶内的物件的总数至多为 $m_1+m_2+\cdots+m_n$, 这与一共有 $m_1+m_2+\cdots+m_n+1$ 个物件矛盾,故结论成立.
+证毕.
+第二抽庶原理如果将 $m$ 个物件放人 $n$ 个抽庶内, 那么必有一个抽庶内至多有 $\left[\frac{m}{n}\right]$ 个物件.
+证明用反证法, 如果每个抽庶内至少有 $\left[\frac{m}{n}\right]+1$ 个物件, 那么 $n$ 个抽庶内的物件总数至少为 $n\left(\left[\frac{m}{n}\right]+1\right)>n \cdot \frac{m}{n}=m$, 这与 $n$ 个抽屉内共有 $m$ 个物件矛盾,故结论成立.
+证毕.
+推广如果将 $m_1+m_2+\cdots+m_n-1\left(m_1, m_2, \cdots, m_n\right.$ 均为正整数 $)$ 个物件放人 $n$ 个抽㞕内, 那么或者第一个抽㞕内至多有 $m_1-1$ 个物件, 或者第二个抽㞕内至多有 $m_2-1$ 个物件 ......或者第 $n$ 个抽屉内至多有 $m_n-1$ 个物件.
+证明用反证法,如果第 $i$ 个抽㞎内至少有 $m_i$ 个物件 $(i=1,2, \cdots, n)$,那么 $n$ 个抽屉内的物件的总数至少为 $m_1+m_2+\cdots+m_n$, 这与 $n$ 个抽屉内共有 $m_1+m_2+\cdots+m_n-1$ 个物件矛盾,故结论成立.
+证毕.
+二、平均值原理平均值原理 (1) 设 $a_1, a_2, \cdots, a_n$ 是实数, $A=\frac{1}{n}\left(a_1+a_2+\cdots+a_n\right)$, 则 $a_1, a_2, \cdots, a_n$ 中必有一个数不小于 $A$, 也有一个数不大于 $A$;
+(2) 设 $a_1, a_2, \cdots, a_n$ 是正实数, $G=\sqrt[n]{a_1 a_2 \cdots a_n}$, 则 $a_1, a_2, \cdots, a_n$ 中必有一个数不小于 $G$, 也有一个数不大于 $G$.
+证明 (1) $\min _{1 \leqslant i \leqslant n}\left\{a_i\right\} \leqslant A \leqslant \max _{1 \leqslant i \leqslant n}\left\{a_i\right\}$;
+(2) $\min _{1 \leqslant i \leqslant n}\left\{a_i\right\} \leqslant G \leqslant \max _{1 \leqslant i \leqslant n}\left\{a_i\right\}$.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. (Ramsey 定理)设空间 6 个点中任意 4 点不共面,若将其中任意两点间的连线染成红色或蓝色之一,则必存在一个三边颜色相同的三角形.
+%%<SOLUTION>%%
+证明:从一个已知点 $A$ 出发的 5 条线段被染成红蓝两种颜色, 由抽屈原理知其中必有 $\left[\frac{5-1}{2}\right]+1=3$ 条线段同色, 不妨设它们是 $A B, A C, A D$, 并且同为红色.
+考察 $\triangle B C D$, 若其中有一边为红色, 例如 $B D$ 为红色, 则 $\triangle A B D$的三边为红色, 结论成立, 否则 $\triangle B C D$ 的三边都为蓝色, 结论也成立.
+为了今后应用方便,我们介绍一些简单的图论中的术语.
+平面内任给 $n$ 个点, 每两点连一线段得到的图叫做 $n$ 阶完全图, 其中给定的 $n$ 个点叫做顶点, 所连线段叫做边, 从每一点出发的线段数叫做该点的度.
+$n$阶完全图常用记号 $K_n$ 表示, 其中 $k$ 条边组成的闭折线叫做 $k$ 边形, 三边形又叫三角形.
+用 $m$ 种颜色将一个 $n$ 阶完全图 $K_n$ 染色, 每边恰染一色得到的图叫做 $m$ 色 $n$ 阶完全图, 其中每边都同色的 $k$ 边形叫做同色 $k$ 边形.
+于是, Ramsey 定理可用图论的语言写成下列形式.
+Ramsey 定理 2 色完全图 $K_6$ 中必存在同色三角形.
+此外, 如图(<FilePath:./figures/fig-c2i1.png>), 存在一个 2 色完全图 $K_5$ (其中实线表红色, 虚线表蓝色), 其中不存在同色三角形.
+一般地,使 $m$ 色完全图 $K_n$ 中存在同色三角形的最小正整数 $n$ 叫做 Ramsey 数, 记为 $R_m$. 上面结论实际上证明了 $R_2=6$. 寻求 Ramsey 数是一个很困难的问题, 目前仅找出了为数不多的几个 Ramsey 数: $R_2=6, R_3==17$, $R_4=65, \cdots$. 详细情形读者可参看有关组合数学和图论的书籍.
+如果用点表示人, 并且两人互相认识时, 则对应点的连线染红色, 否则染蓝色.
+那么上述 Ramsey 定理便成为下述 1947 年的匈牙利数学竞赛试题:
+试证任何 6 个人中必有 3 个人互相认识或互相不认识.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 已知 $A$ 与 $B$ 是集合 $\{1,2,3, \cdots, 100\}$ 的两个子集, 满足: $A$ 与 $B$的元素个数相同, 且 $A \cap B$ 为空集, 若 $n \in A$ 时总有 $2 n+2 \in B$, 则集合 $A \cup B$
+的元素个数最多为 ( ).
+(A) 62
+(B) 66
+(C) 68
+(D) 74
+%%<SOLUTION>%%
+解:因为对任意 $n \in A$ 有 $2 n+2 \in B \subseteq\{1,2, \cdots, 100\}$, 所以 $2 n+2 \leqslant 100, n \leqslant 49$, 即 $A$ 是 $\{1,2, \cdots, 49\}$ 的子集.
+将 $\{1,2, \cdots, 49\}$ 分为下列 33 个两两不相交的子集:
+$$
+\begin{aligned}
+& \{1,4\},\{3,8\},\{5,12\},\{7,16\}, \cdots,\{23,48\} \text { 共 } 12 \text { 个; } \\
+& \{2,6\},\{10,22\},\{14,30\},\{18,38\} \text { 共 } 4 \text { 个; } \\
+& \{25\},\{27\},\{29\},\{31\}, \cdots,\{49\} \text { 共 } 13 \text { 个; } \\
+& \{26\},\{34\},\{42\},\{46\} \text { 共 } 4 \text { 个.
+}
+\end{aligned}
+$$
+因为 $A \subseteq\{1,2,3, \cdots, 49\}$, 若 $|A| \geqslant 34$, 则由抽庶原理知上述 33 个集合中至少有一个 2 元集合中的两个数都等于 $A$, 即存在 $n \in A$ 且 $2 n+2 \in A$, 这与已知条件矛盾, 故 $|A| \leqslant 33$. 又 $|A \cap B|=0,|B|=|A|$, 所以
+$$
+|A \cup B|=|A|+|B|=2|A| \leqslant 66 .
+$$
+另一方面,若取 $A=\{1,3,5,7, \cdots, 23,2,10,14,18,25,27,29$ , $31, \cdots, 49,26,34,42,46\}, B=\{2 n+2 \mid n \in A\}$, 则 $A, B$ 满足题设条件且 $|A \cup B|=66$. 故选(B).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $\alpha$ 是正实数, $n$ 为正整数,求证: 存在正整数 $p, q$ 使
+$$
+\left|\alpha-\frac{q}{p}\right| \leqslant \frac{1}{n p} \text {. }
+$$
+%%<SOLUTION>%%
+证明:先证下列命题:
+任给 $x_0, x_1, \cdots, x_n \in[0,1)$, 一定存在 $i, j(0 \leqslant i<j \leqslant n)$, 使得 $\left|x_i-x_j\right|<\frac{1}{n}$. (只要将 $[0,1) n$ 等分为 $n$ 个小区间 $\left[0, \frac{1}{n}\right),\left[\frac{1}{n}, \frac{2}{n}\right.$ ), $\cdots,\left[\frac{n-1}{n}, 1\right)$, 根据抽庶原理知 $n+1$ 个数 $x_0, x_1, \cdots, x_n$ 中必有两个数 $x_i, x_j(0 \leqslant i<j \leqslant n)$ 落在同一区间内, 从而有 $\left|x_i-x_j\right|<\frac{1}{n}$. )
+下面令 $m_i=[i \alpha], i=0,1,2, \cdots, n$. 于是 $m_i \leqslant i \alpha<m_i+1$, 即 $0 \leqslant i \alpha- m_i<1$, 由上述命题知, 存在 $0 \leqslant k<l \leqslant n$, 使得 $\left|\left(l_\alpha-m_l\right)-\left(k \alpha-m_k\right)\right|<\frac{1}{n}$, 即
+$$
+\left|(l-k) \alpha-\left(m_l-m_k\right)\right|<\frac{1}{n} . \label{eq1}
+$$
+令 $p=l-k, q=m_l-m_k$, 则 $p, q$ 为正整数, 代入 式\ref{eq1} 得
+$$
+|p \alpha-q|<\frac{1}{n} \text {, 即 }\left|\alpha-\frac{q}{p}\right|<\frac{1}{n p} \text {. }
+$$
+由例 3 我们可以得到一个关于实数的重要性质: 因 $p \geqslant 1$, 故 $\left|\alpha-\frac{q}{p}\right|< \frac{1}{n p} \leqslant \frac{1}{n}$, 它说明了实数可用有理数逼近到任意精确的程度.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 从数 $1,2,3, \cdots, 2011$ 中删去一些数,使得剩下的数中任何一个数都不等于其余任意两个不同的数的积, 问最少要删去多少个数才能做到这一点?
+%%<SOLUTION>%%
+解:从 $1,2,3, \cdots, 2011$ 中选出下列 3 数组: $\{44,45,44 \times 45\}$, $\{43,46,43 \times 46\},\{42,47,42 \times 47\}, \cdots,\{3,86,3 \times 86\},\{2,87,2 \times 87\}$ 共 43 组, 若删去的数少于 43 , 则必有同一组中的 3 个数没有被删去, 它们中较大的一个等于其余两个数之积, 故至少要删去 43 个数.
+另一方面, 若删去 $2,3,4, \cdots, 43,44$ 这 43 个数,则剩下的数中任意两数之积要么不小于 $45 \times 46=2070$, 要么两个数为 $1, a(a=45,46, \cdots, 2011)$, 它们的积 $1 \cdot a=a$, 不可能等于 $1,2, \cdots, 2011$ 中第 3 个不同于 $a$ 和 1 的数,故只要删去 2,3 , $4, \cdots, 43,44$ 这 43 个数就可满足题目要求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $n \geqslant 4, a_1, a_2, \cdots, a_n$ 是开区间 $(0,2 n)$ 内互不相同的整数.
+证明: 存在 $\left\{a_1, a_2, \cdots, a_n\right\}$ 的一个子集, 它的所有元素之和被 $2 n$ 整除.
+%%<SOLUTION>%%
+证明:(1) 若 $n \notin\left\{a_1, a_2, \cdots, a_n\right\}$, 则 $2 n$ 个数 $a_1, a_2, \cdots, a_n, 2 n-a_1$, $2 n-a_2, \cdots, 2 n-a_n$ 均只能取 $1,2, \cdots, 2 n-1$ 这 $2 n-1$ 个值, 由抽屈原理知其中必有两个数相等, 但 $a_1, a_2, \cdots, a_n$ 互不相等, $2 n-a_1, 2 n-a_2, \cdots, 2 n- a_n$ 也互不相等, 故只可能 $a_i=2 n-a_j$, 又因 $a_i \neq n, a_j \neq n$, 所以 $i \neq j$ 且 $a_i+ a_j=2 n$, 结论成立;
+(2) 若 $n \in\left\{a_1, a_2, \cdots, a_n\right\}$, 不妨设 $a_n=n$, 考虑 $n-1$ 个数 $a_1, a_2, \cdots$, $a_{n-1}(n-1 \geqslant 3)$, 在其中任取 3 个数 $a_i<a_j<a_k$, 若 $a_j-a_i$ 及 $a_k-a_j$ 都被 $n$ 整除,则 $a_k-a_i=\left(a_k-a_j\right)+\left(a_j-a_i\right) \geqslant 2 n$, 这与 $a_i, a_j, a_k \in(0,2 n)$ 矛盾, 故 $a_i, a_j, a_k$ 中至少有 2 个数, 它们之差不被 $n$ 整除, 不妨设 $a_2-a_1(>0)$ 不被 $n$ 整除.
+考虑下列 $n$ 个数:
+$$
+a_1, a_2, a_1+a_2, a_1+a_2+a_3, \cdots, a_1+a_2+\cdots+a_{n-1}
+$$
+(i)若这 $n$ 个数关于模 $n$ 的余数两两不同,则其中必有一个被 $n$ 整除.
+令此数为 $k n$ ( $k$ 为正整数). 若 $k$ 为偶数, 则结论成立.
+若 $k$ 为奇数, 则将此数加上
+$a_n=n$, 知结论也成立;
+(ii) 若这 $n$ 个数中有两个关于模 $n$ 同余,则它们之差被 $n$ 整除,但 $a_2-a_1$ 不被 $n$ 整除,故这个差必是 $a_1, a_2, \cdots, a_{n-1}$ 中若干个数 (至少一个数)之和, 于是同(i)可证结论成立.
+%%<REMARK>%%
+注:本题中 $n \geqslant 4$ 是必要的, $n=3$ 时, 对集合 $\{1,3,4\}$, 题目结论不成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 49 个学生解 3 个问题,每个题的得分是 0 到 7 分的整数.
+求证: 存在两个学生 $A$ 和 $B$, 对每个问题, $A$ 的得分不少于 $B$. 
+%%<SOLUTION>%%
+证明:若有两个学生的第 $1 、 2$ 题的得分相同,设其中学生 $A$ 的第 3 题的得分不低于另一名学生 $B$, 于是, 对每一个问题, $A$ 的得分不低于 $B$, 结论成立.
+下设任意两名学生第 1,2 题的得分至少有一个不相同, 将每个学生用平面内的一个整点 $(i, j)$ 表示, 其中 $i, j$ 分别表示该学生在第 1,2 题的得分 $(0 \leqslant i, j \leqslant 7)$. 于是 49 个学生对应的整点互不相同.
+记
+$$
+\begin{aligned}
+& M_1=\{(i, j) \mid i, j \text { 为整数, } 0 \leqslant i \leqslant 7, j=0 \text { 或 } i=7,1 \leqslant j \leqslant 7\} ; \\
+& M_2=\{(i, j) \mid i, j \text { 为整数, } 0 \leqslant i \leqslant 6, j=1 \text { 或 } i=6,2 \leqslant j \leqslant 7\} ; \\
+& M_3=\{(i, j) \mid i, j \text { 为整数, } 0 \leqslant i \leqslant 5, j=2 \text { 或 } i=5,3 \leqslant j \leqslant 7\} ; \\
+& M_4=\{(i, j) \mid i, j \text { 为整数, } 0 \leqslant i \leqslant 4, j=3 \text { 或 } i=4,4 \leqslant j \leqslant 7\} ; \\
+& M_5=\{(i, j) \mid i, j \text { 为整数, } i=2,3,4 \leqslant j \leqslant 7\} ; \\
+& M_6=\{(i, j) \mid i, j \text { 为整数, } i=0,1,4 \leqslant j \leqslant 7\} .
+\end{aligned}
+$$
+因为 49 个学生对应的 49 个不同的整点属于上述 6 个集合, 故由抽屉原理知至少有 $\left[\frac{49-1}{6}\right]+1=9$ 个整点属于同一个集合, 由于 $\left|M_5\right|=\left|M_6\right|=8$, 故这个集合只能是前 4 个集合中的一个,记这个集合为 $M$. 这 9 个整点对应的 9 个学生的第 3 题得分只有 $0,1,2, \cdots, 7$ 这 8 种可能,再由抽屉原理知其中必有两个学生的第 3 题得分相同, 于是, 由 $M_1, M_2, M_3, M_4$ 的构造知, 这两个学生中必有一个学生 (记为 $A$ ), 他的第 $1 、 2$ 题的得分都不低于另一个学生 (记为 $B$ ), 故对每一个问题 $A$ 的得分不低于 $B$,结论得证.
+%%<REMARK>%%
+注:(1) 本题中若将 49 个学生改为 48 个学生,则不保证原题结论成立: 我们用 $(a, b, c)$ 表示一个学生第 $1,2,3$ 题的得分分别为 $a, b, c$, 假设 48 个学生的得分如下:
+$$
+\begin{aligned}
+& (3,7,0),(4,6,0),(5,5,0),(6,4,0),(7,3,0) ; \\
+& (2,7,1),(3,6,1),(4,5,1),(5,4,1),(6,3,1),(7,2,1) ; \\
+& (1,7,2),(2,6,2),(3,5,2),(4,4,2),(5,3,2),(6,2,2),(7,1,2)
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& \quad(0,7,3),(1,6,3),(2,5,3),(3,4,3),(4,3,3),(5,2,3),(6, \\
+& 1,3),(7,0,3) ; \\
+& \quad(0,6,4),(1,5,4),(2,4,4),(3,3,4),(4,2,4),(5,1,4),(6,0,4) ; \\
+& \quad(0,5,5),(1,4,5),(2,3,5),(3,2,5),(4,1,5),(5,0,5) ; \\
+& \quad(0,4,6),(1,3,6),(2,2,6),(3,1,6),(4,0,6) ; \\
+& \quad(0,3,7),(1,2,7),(2,1,7),(3,0,7) .
+\end{aligned}
+$$
+则其中不存在两名学生 $A$ 和 $B$ 使得对每一个问题 $A$ 的得分却不低于 $B$.
+(2) 例 6 及注 (1) 中结论可等价地写成下列形式: 设 $D$ 为 $2^7 \cdot 3^7 \cdot 5^7$ 的所有不同正因数组成的集合, $S \subseteq D$, 且 $S$ 内存在两个数 $A$ 和 $B$ 使得 $B$ 整除 $A$,那么 $S$ 内所含元素个数的最小值等于 49 .
+上述问题的一个自然推广是下列问题:
+问题 1 设 $n$ 为正整数, $D_n$ 为 $2^n 3^n 5^n$ 的所有不同正因数组成的集合, $S \subseteq D_n$, 且 $S$ 中任意一数不整除 $S$ 中另一数.
+求 $|S|$ 的最大值.
+问题 1 的答数为 $\left[\frac{3(n+1)^2+1}{4}\right]$. 换言之, 如果 $S$ 中存在 2 个数 $A$ 和 $B$, 使得 $B$ 整除 $A$, 那么 $|S|$ 的最小值为 $\left[\frac{3(n+1)^2+1}{4}\right]+1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $n, r$ 是给定的正整数,试确定最小正整数 $m$, 使将集合 $S= \{1,2, \cdots, m\}$ 任意剖分为 $r$ 个两两不相交的集合 $A_1, A_2, \cdots, A_r$ 之后, 都存在两个数 $a, b$ 属于同一个集合 $A_i(1 \leqslant i \leqslant r)$ 并且满足: $b<a \leqslant \frac{n+1}{n} b$. 
+%%<SOLUTION>%%
+解:设所求 $m$ 的最小值为 $m_0$ ( $m_0$ 的值可由以下分析中得到).
+若 $m<m_0$, 令 $A_i=\{k \mid k \in S, k \equiv i(\bmod r)\}(i=1,2, \cdots, r\}$, 则对任意 $a, b \in A_i(i=1,2, \cdots, r), a>b$, 有 $b<a \leqslant m<m_0, a-b \geqslant r$, 从而 $b \leqslant a-r<m_0-r$, 于是
+$$
+\frac{a}{b}=1+\frac{a-b}{b}>1+\frac{r}{m_0-r},
+$$
+故当 $m_0=n r+r$ 时, 有 $\frac{a}{b}>1+\frac{1}{n}$, 即 $a>\frac{n+1}{n} b$, 不满足题目要求.
+另一方面, 若 $m \geqslant m_0=n r+r$, 将 $S$ 任意剖分为 $r$ 个两两不相交的集合 $A_1, A_2, \cdots, A_r$ 之后, 取 $S$ 中 $r+1$ 个数 $n r, n r+1, n r+2, \cdots, n r+r$, 则由抽庶原理知其中必有 2 个数 $a, b(a>b)$ 属于同一个子集 $A_i(1 \leqslant i \leqslant r)$, 且 $a-b \leqslant r, b \geqslant n r$, 于是
+$$
+1<\frac{a}{b}=1+\frac{a-b}{b} \leqslant 1+\frac{r}{n r}=1+\frac{1}{n},
+$$
+即 $b<a \leqslant \frac{n+1}{n} b$, 满足题目要求.
+综上所述知所求 $m$ 的最小值为 $m_0=n r+r$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 平面内任给 $n(\geqslant 4)$ 个点, 其中任意 4 点不共面, 若这些点之间连有 $\left[\frac{n^2}{4}\right]+1$ 条线段,则存在两个有公共边的三角形.
+%%<SOLUTION>%%
+证明:$n=4$ 时,一共有 4 个点 $A, B, C, D$, 它们之间连有 $\left[\frac{4^2}{4}\right]+1=5$ 条线段,故其中只有 $\mathrm{C}_4^2-5=1$ 对点之间没有连线,不妨设 $C$ 与 $D$ 没有连线, 这时存在两个有公共边的三角形: $\triangle A B C$ 和 $\triangle A B D$, 结论成立.
+假设 $n=k(\geqslant 4)$ 时,结论成立, 即若 $k$ 个点之间连有 $\left[\frac{k^2}{4}\right]+1$ 条线时, 则存在两个有公共边的三角形, 那么 $n=k+1$ 时, 假设 $k+1$ 个点之间连有 $\left[\frac{(k+1)^2}{4}\right]+1$ 条线, 于是, 从各点出发的线段数之和为 $2\left[\frac{(k+1)^2}{4}\right]+2$, 故由第二抽屉原理知, 其中必有一点 $A$, 从它出发的线段数至多为 $\left[\frac{1}{k+1}\left(2\left[\frac{(k+1)^2}{4}\right]+2\right)\right]$, 去掉这一点 $A$ 以及从 $A$ 出发的线段, 则还剩 $k$ 个点, 它们之间的连线数至少为
+$$
+N=\left[\frac{(k+1)^2}{4}\right]+1-\left[\frac{1}{k+1}\left(2\left[\frac{(k+1)^2}{4}\right]+2\right)\right],
+$$
+而当 $k=2 m(m \geqslant 2)$ 为偶数时, $N=m(m+1)+1-\left[m+\frac{m+2}{2 m+1}\right]= m(m+1)+1-m=m^2+1=\left[\frac{k^2}{4}\right]+1$, 当 $k=2 m-1(m \geqslant 3)$ 为奇数时, $N= m^2+1-\left[m+\frac{1}{m}\right]=m(m-1)+1=\left[\frac{k^2}{4}\right]+1$, 即 $k$ 个点之间至少连有 $\left[\frac{k^2}{4}\right]+1$ 条线段,故由归纳假设知存在两个有公共边的三角形, 于是原题结论得证.
+%%<REMARK>%%
+注:当 $n \geqslant 4$ 为偶数时, 本题为第二届国家集训队选拔考试试题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 将 10 个数 $1,2,3,4,5,6,7,8,9,10$ 按任意顺序排列成一个圆圈,证明: 其中必有连续相邻的 3 个数之和不小于 18 .
+%%<SOLUTION>%%
+证明:设 10 个数在圆周上依次为 $a_1, a_2, \cdots, a_{10}$, 则不妨设其中 $a_1=1$, 于是
+$$
+\begin{aligned}
+& \frac{1}{3}\left[\left(a_2+a_3+a_4\right)+\left(a_5+a_6+a_7\right)+\left(a_8+a_9+a_{10}\right)\right] \\
+= & \frac{1}{3}(2+3+\cdots+10)=\frac{1}{3} \times \frac{1}{2} \times 9 \times 12=18,
+\end{aligned}
+$$
+故 $a_2+a_3+a_4, a_5+a_6+a_7, a_8+a_9+a_{10}$ 中必有一个不小于 18 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 平面内有 $n(\geqslant 4)$ 个不同的点, 每两点间连一线段, 已知这些线段中恰有 $n+1$ 条长度等于 $d$ 的线段.
+证明: 其中必有一点, 从它出发的线段中至少有 3 条长度等于 $d$ 的线段.
+%%<SOLUTION>%%
+证明:设 $n$ 个点为 $P_1, P_2, \cdots, P_n$, 从 $P_i$ 出发的线段中恰有 $d_i$ 条长度为 $d$ 的线段 $(i=1,2, \cdots, n)$, 于是
+$$
+\begin{aligned}
+& d_1+d_2+\cdots+d_n=2(n+1), \\
+& \frac{1}{n}\left(d_1+d_2+\cdots+d_n\right)=\frac{2(n+1)}{n}>2,
+\end{aligned}
+$$
+故其中必有某个 $d_i \geqslant 3$, 即从 $P_i$ 出发至少有 3 条长度等于 $d$ 的线段.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 已知 $f(z)=c_0 z^n+c_1 z^{n-1}+\cdots+c_{n-1} z+c_n$ 是一个 $n$ 次复系数多项式, 求证: 一定存在复数 $z_0:\left|z_0\right| \leqslant 1$, 使得 $\left|f\left(z_0\right)\right| \geqslant\left|c_0\right|+\left|c_n\right|$. 
+%%<SOLUTION>%%
+证明一,设 $\omega=\cos \frac{2 \pi}{n}+\mathrm{i} \sin \frac{2 \pi}{n}, \omega_k=\omega^k=\cos \frac{2 k \pi}{n}+\mathrm{i} \sin \frac{2 k \pi}{n}(k=0$, $1,2, \cdots, n-1, n), \alpha=\cos \theta+i \sin \theta$ ( $\theta$ 待定), 于是 $\omega^0=\omega^n=1, \omega^j \neq 1(j=1,2, \cdots, n-1)$, 从而有
+$$
+\begin{aligned}
+& \sum_{k=0}^{n-1} \omega_k^j=n(j=0 \text { 或 } n), \\
+& \sum_{k=0}^{n-1} \omega_k^j=\sum_{k=0}^{n-1} \omega^{j k}=\frac{1-\left(\omega^j\right)^n}{1-\omega^j}=\frac{1-1}{1-\omega^j}=0(j=1,2, \cdots, n-1),
+\end{aligned}
+$$
+所以
+$$
+\begin{aligned}
+\sum_{k=0}^{n-1} f\left(\alpha \omega_k\right) & =c_0 \alpha^n \sum_{k=0}^{n-1} \omega_k^n+c_1 \alpha^{n-1} \sum_{k=0}^{n-1} \omega_k^{n-1}+\cdots+c_{n-1} \alpha \sum_{k=0}^{n-1} \omega_k+c_n \cdot n \\
+& =n\left(c_0 \alpha^n+c_n\right) .
+\end{aligned}
+$$
+取 $\alpha$ 的幅角 $\theta$ 使 $c_0 \alpha^n$ 与 $c_n$ 的幅角主值相等(事实上, 设 $c_0, c_n$ 的幅角主值分别为 $\theta_0, \theta_n$, 取 $\theta=\frac{1}{n}\left(\theta_n-\theta_0\right)$ 即可), 那么
+$$
+\begin{aligned}
+\sum_{k=0}^{n-1}\left|f\left(\alpha \omega_k\right)\right| & \geqslant\left|\sum_{k=0}^{n-1} f\left(\alpha \omega_k\right)\right|=n\left|c_0 \alpha^n+c_n\right| \\
+& =n\left(\left|c_0\right| \cdot|\alpha|^n+\left|c_n\right|\right)=n\left(\left|c_n\right|+\left|c_0\right|\right) .
+\end{aligned}
+$$
+由平均值原理知, 存在 $k_0$, 使
+$$
+\left|f\left(\alpha \omega_{k_0}\right)\right| \geqslant \frac{1}{n} \sum_{k=0}^{n-1}\left|f\left(\alpha \omega_k\right)\right|=\left|c_n\right|+\left|c_0\right|,
+$$
+取 $z_0=\alpha \omega_{k_0}$, 则 $\left|z_0\right|=1$, 并且 $\left|f\left(z_0\right)\right| \geqslant\left|c_n\right|+\left|c_0\right|$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 已知 $f(z)=c_0 z^n+c_1 z^{n-1}+\cdots+c_{n-1} z+c_n$ 是一个 $n$ 次复系数多项式, 求证: 一定存在复数 $z_0:\left|z_0\right| \leqslant 1$, 使得 $\left|f\left(z_0\right)\right| \geqslant\left|c_0\right|+\left|c_n\right|$. 
+%%<SOLUTION>%%
+证明二取复数 $u$ 使 $u$ 与 $c_n$ 有相同的幅角并且 $|u|=\left|c_0\right|+\left|c_n\right|$, 构造多项式
+$$
+g(z)=f(z)-u=c_0 z^n+c_1 z^{n-1}+\cdots+c_{n-1} z+c_n-u .
+$$
+设 $g(z)$ 的 $n$ 个复根为 $z_1, z_2, \cdots, z_n$, 则
+$$
+\begin{aligned}
+& \left|z_1 z_2 \cdots z_n\right|=\left|\frac{c_n-u}{c_0}\right|=\frac{|| c_n|-| u||}{\left|c_0\right|}=\frac{\left|c_0\right|}{\left|c_0\right|}=1 . \\
+& \sqrt[n]{\left|z_1\right| \cdot\left|z_2\right| \cdots\left|z_n\right|}=1 .
+\end{aligned}
+$$
+故由平均值原理知, 存在 $k_0\left(1 \leqslant k_0 \leqslant n\right)$ 使
+$$
+\left|z_{k_0}\right| \leqslant 1 \text {. }
+$$
+记 $z_0=z_{k_0}$, 则 $\left|z_0\right| \leqslant 1$, 且
+$$
+g\left(z_0\right)=f\left(z_0\right)-u=0 .
+$$
+所以, $\left|f\left(z_0\right)\right|=|u|=\left|c_0\right|+\left|c_n\right|$, 证毕.
+%%PROBLEM_END%%
+
+

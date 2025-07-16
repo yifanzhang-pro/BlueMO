@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例1 求解函数方程:\n$$\nf(\\sin x-1)=\\cos ^2 x+2(-\\infty<x<+\\infty) .\n$$",
+    "solution": "解:令 $y=\\sin x-1$, 则\n$$\n\\sin ^2 x=(y+1)^2 .\n$$\n所以 $\\cos ^2 x=1-\\sin ^2 x=1-(y+1)^2$.\n从而\n$$\nf(y)=1-(y+1)^2+2=-y^2-2 y+2 .\n$$\n所以 $f(x)=-x^2-2 x+2(-2 \\leqslant x \\leqslant 0)$.\n经检验, $f(x)=-x^2-2 x+2(-2 \\leqslant x \\leqslant 0)$ 是函数方程的解.\n说明这里的 “检验” 是解函数方程的一个组成部分, 因为求 $f(x)$ 时, 首先假定了函数方程存在解 $f(x)$, 这样求出的 $f(x)$ 只是满足必要性, 也就是说, 只有函数方程有解, 求出的 $f(x)$ 才是函数方程的解.\n如果函数方程无解.\n那么求出的 $f(x)$ 并不是原函数方程的解.\n因此, 我们必须检验充分性, 有时候所得解显然满足原函数方程, 我们就省略了.",
+    "remark": "",
+    "figures": []
+}

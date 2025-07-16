@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise7.tex",
+    "problem_type": "calculation",
+    "problem": "问题22 求函数方程 $f(x y)=f(x) f(y)$, 对任意 $x>0, y>0$ 都成立的连续解.",
+    "solution": "除去 $f(x) \\equiv 0, x>0$ 这样的平凡解外, 若 $f(x)$ 不恒为 0 , 则必有 $f(x)>0$, 对任意 $x>0$. 令 $u=\\ln x, v=\\ln y$. 原方程转化为 $f\\left(\\mathrm{e}^{u+0}\\right)= f\\left(\\mathrm{e}^u\\right) f\\left(\\mathrm{e}^v\\right)$, 任意 $u, v \\in \\mathbf{R} \\cdots$ (1). 令 $\\varphi(x)=f\\left(\\mathrm{e}^x\\right)$, 则(1)又成为 $\\varphi(u+v)= \\varphi(u) \\varphi(v)$, 任意 $a, u \\in \\mathbf{R} \\cdots$ (2). \n由上题知 (2) 的连续解只有 $\\varphi(x) \\equiv 0$ 或 $\\varphi(x)=[\\varphi(1)]^x$, 因此, 原方程的连续解只能为 $f(x) \\equiv 0$ 或 $f(x)=\\varphi(\\ln x)=(\\varphi(1))^{\\ln x}=x^a$, 其中 $a=\\ln \\varphi(1)=\\ln f(\\mathrm{e})$.",
+    "remark": "",
+    "figures": []
+}

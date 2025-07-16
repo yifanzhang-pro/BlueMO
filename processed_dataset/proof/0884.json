@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例11 设 $a_n$ 为下述自然数 $N$ 的个数: $N$ 的各位数字之和为 $n$ 且每位数字只能取 1,3 或 4 . 求证 $a_{2 n}$ 是完全平方数, 这里 $n=1,2, \\cdots$.",
+    "solution": "证记集 $A$ 为数码仅有 $1,3,4$ 的数的全体, $A_n=\\{N \\in A \\mid N$ 的各位数码之和为 $n\\}$, 则 $\\left|A_n\\right|=a_n$. 欲证 $a_{2 n}$ 是完全平方数.\n再记集 $B$ 为数码仅有 1,2 的数的全体, $B_n=\\{N \\in B \\mid N$ 的各位数码之和为 $n\\}$, 令 $\\left|B_n\\right|=b_n$, 下证 $a_{2 n}=b_n^2$.\n作映射 $f: B \\rightarrow \\mathbf{N}_{+}$, 对于 $N \\in B, f(N)$ 是由 $N$ 按如下法则得到的一个数: 把 $N$ 的数码从左向右看, 凡见到 2 , 把它与后面的一个数相加, 用和代替, 再继续看下去, 直到不能做为止(例如 $f(1221212)=14$ 132, $f(21121221$ ) = $31341)$. 易知 $f$ 是单射.\n于是\n$$\nf\\left(B_{2 n}\\right)=A_{2 n} \\cup A_{2 n-2}^{\\prime} \\text {. }\n$$\n其中, $A_{2 n-2}^{\\prime}=\\left\\{10 k+2 \\mid k \\in A_{2 n-2}\\right\\}$. 所以\n$$\n\\begin{gathered}\nb_{2 n}=a_{2 n}+a_{2 n-2} . \\\\\nb_{2 n}=b_n^2+b_{n-1}^2,\n\\end{gathered}\n$$\n这是因为 $B_{2 n}$ 中的数或是两个 $B_n$ 中的数拼接而成, 或是两个 $B_{n-1}$ 中的数中间放 2 拼接而成.\n所以\n$$\na_{2 n}+a_{2 n-2}=b_n^2+b_{n-1}^2 \\quad(n \\geqslant 2) .\n$$\n因为 $a_2=b_1^2=1$, 由上式便知, 对-一切正整数 $n, a_{2 n}=b_n^2$, 即 $a_{2 n}$ 是完全平方数.",
+    "remark": "",
+    "figures": []
+}

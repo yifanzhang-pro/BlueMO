@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题14. 设 $\\frac{1}{2} \\leqslant p \\leqslant 1, a_i \\geqslant 0,0 \\leqslant b_i \\leqslant p$ 且 $\\sum_{i=1}^n a_i=\\sum_{i=1}^n b_i=1$, 求证:\n$$\n\\sum_{i=1}^n b_i \\prod_{\\substack{1 \\leqslant j \\leqslant n \\\\ j \\neq i}} a_j \\leqslant \\frac{p}{(n-1)^{n-1}} .\n$$",
+    "solution": "不妨设 $a_1 \\leqslant a_2 \\leqslant \\cdots \\leqslant a_n, b_1 \\geqslant b_2 \\geqslant \\cdots \\geqslant b_n$. 令 $A_i=\\prod_{\\substack{j=1 \\\\ j \\neq i}}^n a_j$, 则 $A_1 \\geqslant A_2 \\geqslant \\cdots \\geqslant A_n \\geqslant 0$. 由排序不等式, 得 $\\sum_{i=1}^n b_i A_i \\leqslant b_1 A_1+\\left(1-b_1\\right) A_2= p A_1+p A_2+\\left(-p+1-b_1\\right) A_2+\\left(b_1-p\\right) A_1=p\\left(A_1+A_2\\right)-\\left(p-b_1\\right)\\left(A_1-\\right. \\left.A_2\\right)+(1-2 p) A_2 \\leqslant p\\left(A_1+A_2\\right)$ (因为 $\\frac{1}{2} \\leqslant p \\leqslant 1$ ). 由 $A_{n-1} \\geqslant G_{n-1}$, 得 $A_1+A_2=a_3 a_4 \\cdots a_n\\left(a_2+a_1\\right) \\leqslant\\left(\\frac{1}{n-1} \\sum_{i=1}^n a_i\\right)^{n-1}=\\frac{1}{(n-1)^{n-1}}$, 所以 $\\sum_{i=1}^n b_i A_i \\leqslant \\frac{p}{(n-1)^{n-1}}$.",
+    "remark": "",
+    "figures": []
+}

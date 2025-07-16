@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume6/chapter1-2.tex",
+    "problem_type": "proof",
+    "problem": "例4. 证明: 任意一个凸 $n$ 边形都可以被它的三条边张成的三角形或它的四条边张成的平行四边形所覆盖.",
+    "solution": "证明:对 $n$ 归纳.\n当 $n=3$ 时,结论是显然的; 当 $n=4$ 时, 如果该四边形是平行四边形则已完成, 如果它不是平行四边形, 则有一组对边不平行, 将它们延长相交后, 总可以用另两条边中的一条合成一个三角形, 它覆盖这个四边形 (如图 (<FilePath:./images/volume6/figures/fig-c1i2.png>) 所示).\n现假设对任一凸 $m$ 边形结论成立, 这里 $m<n(n \\geqslant$ 5). 取凸 $n$ 边形 $M$ 的任意一条边 $A B$, 除去 $A B$ 及与 $A B$ 相邻的边外, $M$ 还有至少 $n-3 \\geqslant 5-3=2$ 条边.\n这两条边中必有一条与 $A B$ 不平行 (因为至多只能有一条与 $A B$ 平行), 设为 $C D$. 延长 $B A$ 和 $C D$ (不妨设为如图 (<FilePath:./images/volume6/figures/fig-c1i3.png>) 所示的图形), 设它们相交于点 $U$. 现在用折线 $B U C$ 代替被 $\\angle B U C$ 覆盖的折线 $A D$ 及边 $B A$ 和 $C D$, 便得到一个边数少于 $n$ 并将 $M$ 覆盖的凸多边形 $M_1$, 对 $M_1$ 用归纳假设, 可知命题对 $n$ 成立.\n综上可知, 命题成立.\n说明数学归纳法在平面几何中也有广泛的应用.\n此题的结论可进一步加强为: 若凸 $n$ 边形不是平行四边形, 则它可被由其三条边张成的三角形所覆盖.",
+    "remark": "",
+    "figures": [
+        "./images/volume6/figures/fig-c1i2.png",
+        "./images/volume6/figures/fig-c1i3.png"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise11.tex",
+    "problem_type": "calculation",
+    "problem": "问题5. 正实数 $x, y, z$ 满足\n$$\n\\left\\{\\begin{array}{l}\n\\frac{1}{3} y^2+z^2=9, \\label{eq1}\\\\\nx^2+x z+z^2=16, \\label{eq2}\\\\\nx^2+x y+\\frac{1}{3} y^2=25, \\label{eq3}\n\\end{array}\\right.\n$$\n试求代数式 $x y+2 y z+3 z x$ 的值.",
+    "solution": "构造 $\\triangle A B C$, 使 $A B=5, A C=4, B C=3$, 显然 $\\angle A C B=90^{\\circ}$.\n以 $A C$ 为一边向 $\\triangle A B C$ 外作正三角形, 再作该三角形的外接圆, 与以 $B C$ 为直径的圆交于 $C, O$ 两点, 连接 $O A, O B, O C$, 则由平面几何知识得\n$$\n\\angle B O C=90^{\\circ}, \\angle A O C=120^{\\circ}, \\angle A O B=150^{\\circ} .\n$$\n设 $A O=x, B O=\\frac{y}{\\sqrt{3}}, C O=z$, 由 $S_{\\triangle A O B}+S_{\\triangle B O C}+S_{\\triangle C O A}=S_{\\triangle A B C}$ 得 $\\frac{1}{2} x \\cdot \\frac{y}{\\sqrt{3}} \\sin 150^{\\circ}+\\frac{1}{2} z \\cdot \\frac{y}{\\sqrt{3}}+\\frac{1}{2} x \\cdot z \\cdot \\sin 120^{\\circ}=\\frac{1}{2} \\times 3 \\times 4$, 化简得\n$$\nx y+2 y z+3 x z=24 \\sqrt{3} .\n$$",
+    "remark": "",
+    "figures": []
+}

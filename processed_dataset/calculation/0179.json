@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例1. 设集合 $M=\\{1,2, \\cdots, 1000\\}$, 对 $M$ 的任意非空子集 $X$, 令 $\\alpha_X$ 表示 $X$ 中最大数与最小数之和, 那么所有 $\\alpha_X$ 的算术平均值为 ?",
+    "solution": "解:将 $M$ 的所有非空子集配对, 对 $M$ 的任意非空子集 $X$, 令\n$$\nX^{\\prime}=\\{1001-x \\mid x \\in X\\},\n$$\n则 $X^{\\prime}$ 也是 $M$ 的非空子集, 且当 $X \\neq X_1$ 时, $X^{\\prime} \\neq X_1{ }^{\\prime}$.\n于是, $M$ 的所有非空子集分为两类:\n(1) $X \\neq X^{\\prime}$;\n(2) $X=X^{\\prime}$.\n对于 (2) 类中的 $X$, 若 $x \\in X$, 则 $1001-x \\in X$, 当 $x_0$ 为 $X$ 中最小数时, $1001-x_0$ 为 $X$ 中最大数, 这时 $\\alpha_X=x_0+\\left(1001-x_0\\right)=1001$.\n对于(1) 中一对 $X$ 和 $X^{\\prime}$, 若 $X$ 中最小数和最大数分别为 $x_0, y_0$, 则 $X^{\\prime}$ 中的最大数和最小数分别为 $1001-x_0$ 和 $1001-y_0$, 这时\n$$\n\\alpha_X+\\alpha_{X^{\\prime}}=x_0+y_0+\\left(1001-x_0\\right)+\\left(1001-y_0\\right)=2002 .\n$$\n综上可得,所有 $\\alpha_X$ 的平均值等于 1001 .",
+    "remark": "",
+    "figures": []
+}

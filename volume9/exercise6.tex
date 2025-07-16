@@ -1,0 +1,43 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 分别以 $\triangle A B C$ 的边 $A B$ 和 $A C$ 为边向外作正方形 $A B D E$ 和 $A C F G, P$ 、 $Q$ 为直线 $E G$ 上的两点使得 $B P$ 和 $C Q$ 垂直于 $B C$, 求证
+$$
+B P+C Q \geqslant B C+E G,
+$$
+等号成立当且仅当 $A B=A C$.
+%%<SOLUTION>%%
+不失一般性, 可设 $A=(0, h), B=(p, 0), C=(q, 0)(h>0, p<q)$, 则 $E=(-h, h-p), G=(h, h+q)$, 直线 $E G$ 的方程为 $y=h+\frac{q-p}{2}+\frac{p+q}{2 h} x$. 令 $x=p$ 和 $x=q$ 可得 $B P=h+\frac{q-p}{2}+\frac{p+q}{2 h} p, C Q=h+\frac{q-p}{2}+\frac{p+q}{2 h} q$, 因此 $B P+C Q=q-p+\frac{4 h^2+(p+q)^2}{2 h}=B C+\frac{E G^2}{2 h} \geqslant B C+E G$, 上面用到了 $E G^2=4 h^2+(p+q)^2 \geqslant 4 h^2$, 即 $E G \geqslant 2 h$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. $\triangle A B C$ 三边的长分别为 $a 、 b 、 c$, 与之相对应的高线长和旁切圆的半径分别为 $h_a 、 h_b 、 h_c$ 与 $r_a 、 r_b 、 r_c$, 求证
+$$
+\left(\frac{h_a}{r_b}\right)^2+\left(\frac{h_b}{r_c}\right)^2+\left(\frac{h_c}{r_a}\right)^2 \geqslant 4\left(\sin ^2 \frac{A}{2}+\sin ^2 \frac{B}{2}+\sin ^2 \frac{C}{2}\right),
+$$
+当且仅当 $\triangle A B C$ 为正三角形时等号成立.
+%%<SOLUTION>%%
+令 $p=\frac{1}{2}(a+b+c), x=p-a, y=p-b, z=p-c$, 则 $x, y, z>$ 0 . 设 $\triangle A B C$ 的面积为 $S$, 则 $2 S=a h_a=2(p-b) r_b$, 由此知 $\frac{h_a}{r_b}=\frac{2(p-b)}{a}= \frac{2 y}{y+z}$, 故 $\sum\left(\frac{h_a}{r_b}\right)^2=4 \sum \frac{y^2}{(y+z)^2}$. 而 $\sum \sin ^2 \frac{A}{2}=\sum \frac{(p-b)(p-c)}{b c}= \sum \frac{y z}{(x+y)(z+x)}$, 因此, 原不等式等价于 $\sum \frac{y^2}{(y+z)^2} \geqslant \sum \frac{y z}{(x+y)(z+x)} \Leftrightarrow \sum y^2(x+y)^2(z+x)^2 \geqslant \sum y z(x+y)(z+x)(y+ z)^2 \Leftrightarrow \sum y^2\left(y z+x \sum x\right)^2 \geqslant \sum y z\left(y z+x \sum x\right)(y+z)^2 \Leftrightarrow \sum y^2 x^2\left(\sum x\right)^2+ \sum y^4 z^2+2 x y z \sum x \sum y^2 \geqslant \sum y^2 z^2(y+z)^2+x y z \sum(y+ z)^2 \sum x \Leftrightarrow \sum y^2 z^2\left(x^2+2 x y+2 x z\right)+\sum y^4 z^2 \geqslant 2 x y z \sum x \cdot \sum x y= 6 x^2 y^2 z^2+2 x y z\left(\sum x^2(y+z)\right) \Leftrightarrow 3 x^2 y^2 z^2+2 x y z \sum x^2(y+z) \leqslant 2 x y z \sum y z(y+z)+\sum y^4 z^2 \Leftrightarrow 3 x^2 y^2 z^2 \leqslant \sum y^4 z^2$, 由平均值不等式, 最后一式成立,故原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $A D 、 B E 、 C F$ 是 $\triangle A B C$ 的角平分线, $\triangle A B C$ 内的动点 $P$ 到其三边的距离的平方根构成某三角形的三条边长, 求证
+(1) $P$ 的轨迹是一个椭圆 $\Gamma$ 的内部, 并且 $\Gamma$ 与 $\triangle A B C$ 的边 $B C 、 A B 、 A C$ 分别相切于 $D 、 E 、 F$;
+(2) 椭圆 $\Gamma$ 的面积 $S_{\Gamma}$ 满足
+$$
+\frac{4 \sqrt{3} \pi}{9} S_{\triangle D E F} \leqslant S_{\Gamma} \leqslant \frac{\sqrt{3} \pi}{9} S_{\triangle A B C} .
+$$
+%%<SOLUTION>%%
+(1) 提示: 用解析法证明 $\Gamma$ 是一个椭圆及内部.
+(2) 新建一个直角坐标系.
+设 $\Gamma$ 的方程为 $\Gamma: \frac{x^2}{a^2}+\frac{y^2}{b^2}=1(a, b>0)$, 则 $\triangle A B C$ 是 $\Gamma$ 的外切三角形, $\triangle D E F$ 是 $\Gamma$ 的内接三角形.
+作变换 $x=a x^{\prime}, y=b y^{\prime}$, 则它将 $x O y$ 平面上的任意凸区域 $D$ 变成 $x^{\prime} O^{\prime} y^{\prime}$ 平面上的凸区域 $D^{\prime}$, 将 $\Gamma$ 变为单位圆 $\odot O^{\prime}$, 且它们的面积有关系 $|D|=a b \cdot\left|D^{\prime}\right|$. 设此变换把 $\triangle A B C 、 \triangle D E F$ 依次变为 $\triangle A^{\prime} B^{\prime} C^{\prime} 、 \triangle D^{\prime} E^{\prime} F^{\prime}$, 则 $\triangle A^{\prime} B^{\prime} C^{\prime} 、 \triangle D^{\prime} E^{\prime} F^{\prime}$ 分别是 $\odot O^{\prime}$ 的外切三角形、内接三角形, 且 $S_{\Gamma}=a b \cdot S_{\odot O^{\prime}}, S_{\triangle A B C}=a b \cdot S_{\triangle A^{\prime} B^{\prime} C^{\prime}}, S_{\triangle D E F}=a b \cdot S_{\triangle D^{\prime} E^{\prime} F^{\prime}}$, 因此 $\frac{S_{\Gamma}}{S_{\triangle D E F}}=\frac{S_{\odot O^{\prime}}}{S_{\triangle D^{\prime} E^{\prime} F^{\prime}}} \geqslant \frac{4 \sqrt{3} \pi}{9}, \frac{S_{\Gamma}}{S_{\triangle A B C}}=\frac{S_{\odot O^{\prime}}}{S_{\triangle A^{\prime} B^{\prime} C^{\prime}}} \leqslant \frac{\sqrt{3}}{9} \pi$, 由此即得所证不等式.
+%%PROBLEM_END%%
+
+

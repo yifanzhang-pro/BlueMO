@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例12. 设 $x y+y z+z x=1$, 求证:\n$$\nx(1-y)\\left(1-z^2\\right)+y(1-z)\\left(1-x^2\\right)+z\\left(1-x^2\\right)\\left(1-y^2\\right)=4 x y z .\n$$",
+    "solution": "证明:设 $x=\\tan \\alpha, y=\\tan \\beta, z=\\tan \\gamma, \\alpha, \\beta, \\gamma \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$, 由 $x y+y z+z x=1$, 得 $\\tan \\alpha \\tan \\beta+\\tan \\beta \\tan \\gamma+\\tan \\gamma \\tan \\alpha=1$,\n$$\n\\begin{gathered}\n\\alpha+\\beta+\\gamma= \\pm \\frac{\\pi}{2}, 2 \\alpha+2 \\beta= \\pm \\pi-2 \\gamma, \\frac{\\tan 2 \\alpha+\\tan 2 \\beta}{1-\\tan 2 \\alpha \\tan 2 \\beta}=-\\tan 2 \\gamma, \\\\\n\\tan 2 \\alpha+\\tan 2 \\beta+\\tan 2 \\gamma=\\tan 2 \\alpha \\cdot \\tan 2 \\beta \\cdot \\tan 2 \\gamma, \\\\\n\\frac{2 \\tan \\alpha}{1-\\tan ^2 \\alpha}+\\frac{2 \\tan \\beta}{1-\\tan ^2 \\beta}+\\frac{2 \\tan \\gamma}{1-\\tan ^2 \\gamma}=\\frac{2 \\tan \\alpha}{1-\\tan ^2 \\alpha} \\cdot \\frac{2 \\tan \\beta}{1-\\tan ^2 \\beta} \\cdot \\frac{2 \\tan \\gamma}{1-\\tan ^2 \\gamma}, \\\\\n\\text { 即 } \\quad \\frac{2 x}{1-x^2}+\\frac{2 y}{1-y^2}+\\frac{2 z}{1-z^2}=\\frac{2 x}{1-x^2} \\cdot \\frac{2 y}{1-y^2} \\cdot \\frac{2 z}{1-z^2} .\n\\end{gathered}\n$$\n即 $\\frac{2 x}{1-x^2}+\\frac{2 y}{1-y^2}+\\frac{2 z}{1-z^2}=\\frac{2 x}{1-x^2} \\cdot \\frac{2 y}{1-y^2} \\cdot \\frac{2 z}{1-z^2}$.\n两边同乘以 $\\left(1-x^2\\right)\\left(1-y^2\\right)\\left(1-z^2\\right)$, 得\n$$\nx\\left(1-y^2\\right)\\left(1-z^2\\right)+y\\left(1-z^2\\right)\\left(1-x^2\\right)+z\\left(1-x^2\\right)\\left(1-y^2\\right)=4 x y z .\n$$",
+    "remark": "",
+    "figures": []
+}

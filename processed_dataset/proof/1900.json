@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 已知 $\\triangle A B C$ 的外心 $O, P$ 为劣弧 $\\overparen{A B}$ 上一点.\n由 $P$ 向 $B O$ 作垂线交 $A B$ 于 $S$, 交 $B C$ 于 $T$. 由 $P$ 向 $A O$ 作垂线交 $A B$ 于 $Q$, 交 $A C$ 于 $R$. 证明: (1) $\\triangle P Q S$ 是等腰三角形; (2) $P Q^2=Q R \\cdot S T$.",
+    "solution": "证明: (1) 如图(<FilePath:./images/volume7/figures/fig-c7a4.png>), 由 $P R \\perp O A, P T \\perp O B$, 有\n$\\angle P Q S=\\angle A Q R=90^{\\circ}-\\angle O A B=90^{\\circ}-\\angle O B A= \\angle B S T=\\angle P S Q$. 故 $P Q=P S$.\n(2) 设 $\\odot O$ 的半径为 $r, P R \\cap O A=G, P T \\cap O B=H$. 设 $\\angle P O A=\\alpha-\\beta, \\angle P O B=\\alpha+\\beta, \\angle A O B= 2 \\alpha$. 则 $\\angle Q P S=180^{\\circ}-2 \\alpha, \\angle P Q S=\\angle P S Q=\\alpha= \\angle C$. 故 $\\triangle A Q R \\backsim \\triangle A C B \\backsim \\triangle T S B$. 所以, $\\frac{A Q}{T S}=\\frac{Q R}{S B}$, 即 $Q R \\cdot S T=A Q \\cdot S B$. 又 $O G=O P \\cos \\angle P O G=r \\cos (\\alpha-\\beta)$,\n$P G=r \\sin (\\alpha-\\beta)$, 则 $A G=r[1-\\cos (\\alpha-\\beta)], A Q=\\frac{A G}{\\sin \\angle A Q G}= \\frac{r[1-\\cos (\\alpha-\\beta)]}{\\sin \\alpha}, Q G=A Q \\cos \\angle A Q G=\\frac{r[1-\\cos (\\alpha-\\beta)] \\cos \\alpha}{\\sin \\alpha}$ 故 $P Q=P G-Q G=r\\left\\{\\sin (\\alpha-\\beta)-\\frac{\\cos \\alpha[1-\\cos (\\alpha-\\beta)]}{\\sin \\alpha}\\right\\}=\\frac{r(\\cos \\beta-\\cos \\alpha)}{\\sin \\alpha}$. 同理, $S B=\\frac{r[1-\\cos (\\alpha+\\beta)]}{\\sin \\alpha}$.\n注意到 $P Q^2=Q R \\cdot S T \\Leftrightarrow P Q^2=A Q \\cdot S B \\Leftrightarrow(\\cos \\beta-\\cos \\alpha)^2=[1-$\n$$\n\\cos (\\alpha-\\beta)][1-\\cos (\\alpha+\\beta)] \\Leftrightarrow(\\cos \\beta-\\cos \\alpha)^2=2 \\sin ^2 \\frac{(\\alpha-\\beta)}{2} .\n$$\n$2 \\sin ^2 \\frac{(\\alpha+\\beta)}{2} \\Leftrightarrow \\cos \\beta-\\cos \\alpha=2 \\sin \\frac{\\alpha-\\beta}{2} \\cdot \\sin \\frac{\\alpha+\\beta}{2}$, 而最后一式显然成立, 故 $P Q^2=Q R \\cdot S T$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c7a4.png"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题20. 在 $\\angle A O B$ 内部取一点 $C$, 过点 $C$ 作 $C D \\perp O A$ 于点 $D$, 作 $C E \\perp O B$ 于点 $E$, 再过点 $D$ 作 $D N \\perp O B$ 于点 $N$, 过点 $E$ 作 $E M \\perp O A$ 于点 $M$. 证明: $O C \\perp M N$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c5a20.png>), 过点 $C$ 作 $C H \\perp M N$ 于点 $H$.\n因为\n$$\n\\angle C D M=\\angle C E N=90^{\\circ},\n$$\n所以, $C 、 D 、 M 、 H$ 和 $C 、 H 、 N 、 E$ 分别四点共圆, 记两圆为 $\\odot O_1$ 和 $\\odot O_2$. 由\n$$\n\\angle D M E=90^{\\circ}=\\angle D N E,\n$$\n知 $D 、 M 、 N 、 E$ 四点共圆, 记之为 $\\odot O_3$.\n易见, 直线 $C H 、 E N 、 D M$ 恰为 $\\odot O_1 、 \\odot O_2 、 \\odot O_3$ 两两之间的三条根轴.\n又因前两条直线交于点 $O$, 故由根心定理知直线 $C H$ 过点 $O$, 即 $C 、 H 、 O$ 三点共线.\n又 $C H \\perp M N$, 所以, $O C \\perp M N$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5a20.png"
+    ]
+}

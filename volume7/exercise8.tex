@@ -1,0 +1,153 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 在完全四边形 $A B C D E F$ 中, 对角线 $A D$ 的延长线交对角线 $C E$ 于点 $G$. 记 $\frac{A D}{D G}=p_1, \frac{C D}{D F}=p_2, \frac{E D}{D B}=p_3, \frac{A B}{B C}=\lambda_3, \frac{C G}{G E}=\lambda_2, \frac{E F}{F A}=\lambda_1$. 求证:
+$$
+\begin{aligned}
+& \lambda_1=\frac{p_1 p_2-1}{1+p_1}=\frac{1+p_1}{p_1 p_3-1}=\frac{1+p_2}{1+p_3} \label{eq1} \\
+& \lambda_2=\frac{p_2 p_3-1}{1+p_2}=\frac{1+p_2}{p_2 p_1-1}=\frac{1+p_3}{1+p_1} \label{eq2} \\
+& \lambda_3=\frac{p_3 p_1-1}{1+p_3}=\frac{1+p_3}{p_3 p_2-1}=\frac{1+p_1}{1+p_2} \label{eq3}
+\end{aligned}
+$$
+%%<SOLUTION>%%
+证明: 首先证明式\ref{eq1}, 如图(<FilePath:./figures/fig-c8a1.png>), 过点 $D$ 作 $M N C E$ 交 $B C$ 于点 $M$, 交 $F E$ 于点 $N$, 则 $\frac{C E}{D N}=\frac{C F}{D F}= \frac{C D+D F}{D F}=p_2+1, \frac{G E}{D N}=\frac{A G}{A D}=\frac{A D+D G}{A D}=1+ \frac{1}{p_1}$. 以上两式相除得, $\frac{C E}{G E}=\frac{p_1\left(1+p_2\right)}{1+p_1}$, 则 $\lambda_1=\frac{C G}{G E}= \frac{C E-G E}{G E}=\frac{p_1 p_2-1}{1+p_1}$. 又 $\frac{C E}{M D}=\frac{B E}{B D}=\frac{B D+D E}{B D}=1+p_3, \frac{C G}{M D}=\frac{A G}{A D}=\frac{G E}{D N}=\frac{1+p_1}{p_1}$, 则有 $\frac{C E}{C G}=\frac{p_1\left(1+p_3\right)}{1+p_1}$, 从而, $\lambda_1=\frac{C G}{G E}= \frac{1+p_1}{p_1 p_3-1}$. 对 $\triangle C E D$ 及点 $A$ 应用塞瓦定理有 $\frac{C G}{G E} \cdot \frac{E B}{B D} \cdot \frac{D F}{F C}=1$. 从而, $\lambda_1= \frac{C G}{G E}=\frac{C F}{D F} \cdot \frac{B D}{B E}=\frac{1+p_2}{1+p_3}$. 故 $\lambda_1=\frac{p_1 p_2-1}{1+p_1}=\frac{1+p_1}{p_1 p_3-1}=\frac{1+p_2}{1+p_3}$.
+同理可证式\ref{eq2}和式\ref{eq3}.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 求证: 完全四边形 $A B C D E F$ 的三条对角线 $A D 、 B F 、 C E$ 的中点 $M 、 N$ 、 $P$ 三点共线.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c8a2.png>), 分别取 $C D 、 B D 、 B C$ 的中点 $Q 、 R 、 S$.
+于是, 在 $\triangle A C D$ 中, $M 、 R 、 Q$ 三点共线; 在 $\triangle B C F$ 中, $S 、 R 、 N$ 三点共线; 在 $\triangle B C E$ 中, $S 、 Q 、 P$ 三点共线.
+由平行线性质有 $\frac{M Q}{M R}=\frac{A C}{A B}, \frac{N R}{N S}=\frac{F D}{F C}$,
+$\frac{P S}{P Q}=\frac{E B}{E D}$. 由于直线 $A F E$ 与 $\triangle B C D$ 的边所在直线相截, 所以, 由梅涅劳斯定理知 $\frac{A C}{A B} \cdot \frac{F D}{F C} \cdot \frac{E B}{E D}=1$. 从而, $\frac{M Q}{M R} \cdot \frac{N R}{N S} \cdot \frac{P S}{P Q}=1$.
+再对 $\triangle Q R S$ 应用梅涅劳斯定理的逆定理, 知 $N 、 M 、 P$ 三点共线.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 如图(<FilePath:./figures/fig-c8p3.png>), 凸四边形 $A B C D$ 的一组对边 $B A$ 和 $C D$ 的延长线交于 $M$, 且 $A D$ 不平行于 $B C$, 过 $M$ 作截线交另一组对边所在直线于 $H 、 L$, 交对角线所在直线于 $H^{\prime} 、 L^{\prime}$. 求证: $\frac{1}{M H}+\frac{1}{M L}=\frac{1}{M H^{\prime}}+\frac{1}{M L}$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c8a3.png>), 延长 $B C 、 A D$ 交于 $P$, 设 $B D 、 A C$ 交于 $Q$, 连结 $M P, P Q$ 分别与 $M C, M L$ 交于 $N$ 、 $K$,连结 $M Q$ 交 $B C$ 于 $R$. 交 $A D$ 于 $T$.
+由完全四边形的性质知, $M 、 Q 、 T 、 R$ 成调和点列, 考虑过 $P$ 点的四条直线 $P M 、 P A 、 P K$ 、 $P B$ 构成的直线束.
+由上述引理知 $M 、 K 、 H 、 L$ 成调和点列.
+所以
+$$
+\frac{1}{M H}+\frac{1}{M L}=\frac{2}{M K} \text { (调和点列的性质) } \cdots \text { (1). }
+$$
+同理, $B 、 C 、 R 、 P$ 为调和点列, 考虑过 $Q$ 的四条直线 $Q B 、 Q C 、 Q R 、 Q P$ 构成的直线束.
+现 $M L$ 去截直线束, 由上述引理知, $L^{\prime} 、 H^{\prime} 、 M 、 K$ 也成调和点列, 即 $M 、 K 、 L^{\prime} 、 H^{\prime}$ 也成调和点列.
+所以 $\frac{1}{M L^{\prime}}+\frac{1}{M H^{\prime}}=\frac{2}{M K} \cdots$ (2).
+由(1)、(2)知: $\frac{1}{M H}+\frac{1}{M L}=\frac{1}{M H^{\prime}}+\frac{1}{M L^{\prime}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 已知四边形 $A B C D$ 内接于以 $B D$ 为直径的圆.
+设 $A^{\prime}$ 为点 $A$ 关于 $B D$ 的对称点, $B^{\prime}$ 为点 $B$ 关于 $A C$ 的对称点, 直线 $A^{\prime} C$ 与 $B D 、 A C$ 与 $B^{\prime} D$ 分别交于点 $P 、 Q$. 证明: $P Q \perp A C$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c8a4.png>), 设 $A C$ 与 $B D$ 交于点 $R^{\circ}$. 因为四边形 $A B A^{\prime} C$ 为圆内接四边形, 所以, $\angle B A R=\angle B A C=\angle B A^{\prime} P=\angle B A P$, 即 $A B$ 为 $\angle C A P$ 的角平分线.
+又 $B D$ 为直径, 则 $\angle D A B=90^{\circ}$. 故 $D A$ 为 $\angle R A P$ 的外角平分线.
+因此, $P 、 R 、 B 、 D$ 为调和点列.
+进而, $Q P$ 、 $Q R 、 Q B 、 Q D$ 为调和线束.
+因为 $\angle B Q R=\angle B^{\prime} Q R=\angle D Q R$, 所以, $\angle R Q P=90^{\circ}$, 故 $P Q \perp A C$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 如图(<FilePath:./figures/fig-c8p5.png>), 设 $D 、 E 、 F$ 分别为 $\triangle A B C$ 的三边 $B C 、 C A 、 A B$ 上的点, 且 $A D$ 与 $E F$ 垂直相交于 $O$, 又 $D E 、 D F$ 分别平分 $\angle A D C 、 \angle A D B$, 则 $O D$ 平分 $\angle B O C$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c8a5.png>), 设直线 $E F$ 与 $B C$ 交于点 $G$ (可以是无穷远点, 以下同), 由角平分线定理有 $\frac{C E}{A E} \cdot \frac{A F}{F B} \cdot \frac{B D}{D C}=\frac{D C}{A D} \cdot \frac{A D}{B D} \cdot \frac{B D}{D C}=1$. 由 Ceva 定理知 $B E 、 A D$ 、 $C F$ 三线共点, 由性质 2 知 $B 、 C 、 D 、 G$ 成调和点列, 即 $O B 、 O C 、 O D 、 O G$ 成调和线束, 结合 $O D \perp O G$ 知 $O D$ 平分 $\angle B O C$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 已知 $\triangle A B C$ 的外心为 $O, P$ 为 $O A$ 延长线上一点,直线 $l$ 与 $P B$ 关于 $B A$ 对称, 直线 $h$ 与 $P C$ 关于 $A C$ 对称, $l$ 与 $h$ 交于点 $Q$. 若 $P$ 在 $O A$ 的延长线上运动,求 $Q$ 的轨迹.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c8a6.png>), 延长 $A O$ 至 $R$, 使得 $O R=O A$, 连结 $R C, P C$, 设 $h$ 与 $A O$ 交于点 $Q_1$, 注意到 $A C \perp C R$ 以及 $h 、 C P$ 关于 $A C$ 边对称, 于是 $C R 、 C A 、 h 、 C P$ 成调和线束, 于是 $R 、 A 、 Q_1 、 P$ 成调和点列, 因此 $h$ 过 $A O$ 上满足 $P 、 Q_0 、 A 、 R$ 成调和点列的点 $Q_0$, 同理, $l$ 也过该点, 即 $Q=Q_0$ 为 $A O$ 上满足 $P 、 Q_0 、 A 、 R$ 成调和点列的点,故 $Q$ 的轨迹为线段 $A O$ 内部.
+(注: 在学了下一章反演的知识后, 读者就会发现, $Q$ 与 $P$ 关于 $\triangle A B C$ 外接圆互为反演点.)
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 在 $\triangle A B C$ 中, 经过点 $B 、 C$ 的圆与边 $A C 、 A B$ 的另一个交点分别为 $E 、 F, B E$ 与 $C F$ 交于点 $P, A P$ 与 $B C$ 交于点 $D 、 M$ 是边 $B C$ 的中点, $D 、 M$ 不重和.
+求证: $D 、 M 、 E 、 F$ 四点共圆.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c8a7.png>), 设直线 $B C$ 与 $E F$ 交于点 $Q$, 由性质 2 知, $Q 、 D 、 B 、 C$ 成调和点列, 又 $M$ 为 $B C$ 中点, 于是, 不难证明 $Q D \cdot Q M=Q B \cdot Q C$, 因此, $Q E \cdot Q F=Q B \cdot Q C=Q D \cdot Q M$, 即 $E 、 M$ 、 $D 、 F$ 四点共圆.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 在四边形 $A B C D$ 中, 对角线 $A C$ 平分 $\angle B A D$, 在 $C D$ 上取一点 $E, B E$ 与 $A C$ 交于点 $F$, 延长 $D F$ 交 $B C$ 于点 $G$. 求证: $\angle G A C=\angle E A C$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c8a8.png>), 设 $A C$ 交 $B D 、 G E$ 于点 $H 、 M$, 延长 $G E$ 与 $B D$ 交于点 $N$, 则 $D 、 B 、 H 、 N$ 成调和点列.
+由 $A C$ 平分 $\angle B A D$ 知 $A H \perp A N$, 又由定理 1, 以 $C$ 为中心, 知 $E 、 G 、 M 、 N$ 成调和点列, 且 $A M \perp A N$, 所以, $A C$ 平分 $\angle G A E$. 故 $\angle G A C=\angle E A C$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 在 $\triangle A B C$ 中, $A B>A C$, 它的内切圆切边 $B C$ 于点 $E$, 连结 $A E$ 交内切圆于点 $D$ (不同于点 $E$ ). 在线段 $A E$ 上取异于 $E$ 的一点 $F$, 使得 $C E=C F$, 连结 $C F$ 并延长交 $B D$ 于点 $G$. 求证: $C F=F G$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c8a9.png>), 过 $D$ 作内切圆切线 $D H$ 交直线 $B C$ 于 $H$, 由 $C F=C E$, $H D=H E$ 知 $\triangle C E F \backsim \triangle H E D$, 于是 $D H / / G C$, 由例 2 证明过程知, $B 、 C 、E 、 H$ 成调和点列, 于是 $D B 、 D C 、 D E 、 D H$ 成调和线束, 所以 $F$ 平分 $C G$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 如图(<FilePath:./figures/fig-c8p10.png>), $O 、 I$ 分别是 $\triangle A B C$ 的外心、内心, $A D$ 是边 $B C$ 上的高, $I$ 在线段 $O D$ 上.
+求证: $\triangle A B C$ 的外接圆半径等于边 $B C$ 上的旁切圆半径.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c8a10.png>), 设 $I_A$ 为旁心, $A I_A$ 交 $B C$ 于点 $E$, 交 $\odot O$ 于点 $M$, 则 $M$ 为 $\overparen{B C}$ 的中点.
+连结 $O M$, 则 $O M \perp B C$. 作 $I_A F \perp B C$ 于 $F$, 则由平行线性质, 有
+$$
+\frac{A D}{A I}=\frac{O M}{M I}(*), \frac{A D}{I_A F}=\frac{A E}{I_A E} .
+$$
+由性质 7 的推论 2 , 有 $\frac{A I}{I E}=\frac{I_A M}{M E}$, 即有 $\frac{A I}{I_A M}=\frac{I E}{M E}= \frac{A I+I E}{I_A M+M E}=\frac{A E}{I_A E}$. 从而 $\frac{A D}{I_A F}=\frac{A I}{I_A M}$, 亦即 $\frac{A D}{A I}=\frac{I_A F}{I_A M}$. 
+注意到 (*) 式及 $M I=I_A M$. 故 $O M=I_A F$. 即 $\triangle A B C$ 的外接圆半径 $O M$ 等于边 $B C$ 上的旁切圆半径 $I_A F$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 如图(<FilePath:./figures/fig-c8p11.png>), 在 $\triangle A B C$ 中, 设 $A B>A C$. 过点 $A$ 作 $\triangle A B C$ 的外接圆的切线 $l$. 又以 $A$ 为圆心, $A C$ 为半径作圆分别交线段 $A B$ 于点 $D$, 交直线 $l$ 于点 $E 、 F$. 证明: 直线 $D E 、 D F$ 分别通过 $\triangle A B C$ 的内心与一个旁心.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c8a11.png>), 作 $\angle B A C$ 的平分线, 交 $D E$ 于 $I$, 易知 $\triangle A D I \cong \triangle A C I$. 所以 $\angle A C I=\frac{1}{2}\left(180^{\circ}-\angle B A C-\right. \angle A B C)=\frac{1}{2} \angle A C B$. 从而 $I$ 为 $\triangle A B C$ 的内心.
+设射线 $A I$ 交 $B C$ 于 $M$, 交 $\triangle A B C$ 的外接圆于 $A_1$, 交直线 $F D$ 于 $I_A$. 连 $C I_A$, 则知 $\angle D I_A A=\angle A I_A C$.
+延长 $C B$ 到 $P$, 使 $P B=B A$, 则 $\angle A P C= \frac{1}{2} \angle A B C=\frac{1}{2} \angle B$.
+注意到 $\frac{1}{2}(\angle A+\angle B+\angle C)=90^{\circ}=\angle F D A+\angle A D E= \left(\frac{1}{2} \angle A+\angle D I_A A\right)+\angle I C A=\left(\frac{1}{2} \angle A+\angle A I_A C\right)+\frac{1}{2} \angle C$,
+从而 $\angle A I_A C=\frac{1}{2} \angle B=\angle A P C$, 于是, $A 、 P 、 I_A 、 C$ 四点共圆, 有 $\angle A I_A P= \angle A C P=\angle A A_1 B$, 即有 $B A_1 / / P I_A$, 亦即有 $\frac{I_A A_1}{A_1 M}=\frac{P B}{B M}=\frac{A B}{B M}=\frac{A I}{I M}$.
+由性质 7 的推论 2 , 知 $I_A$ 是边 $B C$ 外的旁心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 如图(<FilePath:./figures/fig-c8p12.png>), $A D$ 为 $\triangle A B C$ 的内角平分线, $\angle A D C=60^{\circ}$, 点 $M$ 在 $A D$ 上, 满足 $D M=D B$, 射线 $B M 、 C M$ 交 $A C 、 A B$ 于点 $E 、 F$. 证明: $D F \perp E F$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c8a12.png>), 在 $A B$ 上取 $A S=A C$, 连结 $S M, D S$, 则由 $A D$ 平分 $\angle B A C$ 知, $\triangle A S D$ 与 $\triangle A C D$ 关于 $A D$ 对称, 即有 $\angle M D S= \angle M D C=\angle A D C=60^{\circ}$, 亦即 $\angle B D S=60^{\circ}$. 又由 $D M=D B$, 知 $\angle D S B=\angle D S M=\angle D C M$. 于是 $\angle F C B+\angle A C B=\angle D C M+\angle A C B=\angle D S B+\angle A S D= 180^{\circ}$, 从而 $\sin \angle F C B=\sin \angle A C B$.
+由 $\frac{F B}{F C}=\frac{\sin \angle F C B}{\sin \angle F B C}=\frac{\sin \angle A C B}{\sin \angle A B C}=\frac{A B}{A C}=\frac{B D}{D C}$, 知 $F D$ 平分 $\angle B F C$.
+设直线 $F E$ 与直线 $B C$ 相交于点 $G$ (因角平分线 $A D$ 交 $B C$ 成 $60^{\circ}$ 角, 必相交), 则由完全四边形对角线调和分割的性质, 知 $D 、 G$ 调和分割 $B C$, 即 $B$ 、 $C 、 D 、 G$ 为调和点列, 亦即 $F B 、 F C 、 F D 、 F G$ 为调和线束.
+而 $F D$ 平分 $\angle B F C$, 则由性质 5 知 $D F \perp E F$.
+%%PROBLEM_END%%
+
+

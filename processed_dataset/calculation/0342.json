@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume13/exercise11.tex",
+    "problem_type": "calculation",
+    "problem": "问题4. 某班有 30 个学生, 年龄互不相同, 每个学生在同班中有相同个数的朋友.\n对某个学生 $A$, 若 $A$ 的年龄比 $A$ 的一半以上 (不包括一半) 朋友大, 则称 $A$ 为大龄的.\n问大龄的学生最多有多少个?",
+    "solution": "设有 $t$ 个大龄学生, 每个学生都有 $k$ 个朋友.\n为叙述问题方便, 用 30 个点表示 30 个学生.\n对任何两个点 $A 、 B$, 如果 $A 、 B$ 是朋友, 且 $A$ 的年龄大于 $B$ 的年龄, 则连一条指向 $B$ 的有向边, 得到一个竟赛图.\n称大龄学生对应的点为 \"大点\", 设所有的大点为 $A_1, A_2, \\cdots, A_t$. 依题意, 有 $d^{+}\\left(A_i\\right)>d\\left(A_i\\right)$, $d\\left(A_i\\right)=d^{+}\\left(A_i\\right)+d^{-}\\left(A_i\\right)=k$, 于是 $d^{+}\\left(A_i\\right) \\geqslant \\frac{k+1}{2}$. \n不妨设 $A_1$ 的年龄 $\\leqslant A_2$ 的年龄 $\\leqslant \\cdots \\leqslant A_t$ 的年龄, 则 $d^{+}\\left(A_1\\right) \\leqslant 30-t\\left(A_1\\right.$ 最多向 $A_1, A_2, \\cdots, A_t$ 外的 $30-t$ 个点引出边 $), d^{+}\\left(A_t\\right)=k$. 计算所有 \"大点\" 的出度的和 $S$. \n一方面, $S=d^{+}\\left(A_1\\right)+d^{+}\\left(A_2\\right)+\\cdots+d^{+}\\left(A_{t-1}\\right)+k \\geqslant \\frac{k+1}{2}(t-1)+k$. 另一方面, $S \\leqslant\\|G\\|=15 k$, 所以 $15 k=\\|G\\| \\geqslant S \\geqslant \\frac{k+1}{2}(t-1)+k$, 所以 $t \\leqslant \\frac{28 k}{k+1}+1 . \\label{eq1}$. \n此外, $\\frac{k+1}{2} \\leqslant d^{+}\\left(A_1\\right) \\leqslant 30-t$, 所以 $k \\leqslant 59-2 t . \\label{eq2}$. 由式\\ref{eq1},\\ref{eq2}消去 $k$ (利用(1)右边关于 $k$ 的函数的单调性), 有 $t \\leqslant \\frac{28(59-2 t)}{60-2 t}+1$, 即 $t^2- 59 t+856 \\geqslant 0 . \\label{eq3}$ . \n但 $t \\leqslant 30$, 使 式\\ref{eq3}成立的最大整数是 $t=25$. 即大龄学生不多于 25 . 最后, $t=25$ 是可能的.\n实际上, 当 $t=25$ 时, 以上不等式成立等号, 代入 式\\ref{eq2} , 解得 $k=9$.\n将 $1,2, \\cdots, 30$ 排成 6 行 (如图(<FilePath:./images/volume13/figures/fig-c11a4.png>)),\n规定 $i 、 j$ 是一对朋友, 当且仅当 $i 、 j$ 满足下列 3 个条件之一:\n(1) $i 、 j$ 在相邻的行中但不同列.\n(2) $i 、 j$ 同列,但其中一个在最后一行.\n(3) $i 、 j$ 都在第一行中.\n此时, 每人有 9 个朋友.\n比如 1 的 9 个朋友为 $2 、 3 、 4 、 5 、 7 、 8 、 9 、 10$ 、 26 . 故 $t$ 的最大值为 25 .",
+    "remark": "",
+    "figures": [
+        "./images/volume13/figures/fig-c11a4.png"
+    ]
+}

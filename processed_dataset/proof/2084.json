@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题5. 平面上任给 $n$ 个点,其中任何三点可组成一个三角形, 每个三角形都有一个面积.\n令最大面积与最小面积之比为 $u_n$, 求 $u_5$ 的最小值.",
+    "solution": "设平面内任意五点为 $A_1 、 A_2 、 A_3 、 A_4 、 A_5$, 其中任意 3 点不共线.\n(1) 若5 点的凸包不是凸五边形, 那么其中必有一点落在某个三角形内, 这时易证 $\\mu_5 \\geqslant 3$. (2) 5 点的凸包为凸五边形 $A_1 A_2 A_3 A_4 A_5$. 作 $M N / / A_3 A_4$ 分别交 $A_1 A_3 、 A_1 A_4$ 于 $M$ 和 $N$, 且使得 $\\frac{A_1 M}{M A_3}=\\frac{A_1 N}{N A_4}=\\frac{\\sqrt{5}-1}{2}$. (i) $A_2 、 A_5$ 中有一点, 比如 $A_2$ 与 $A_3 、 A_4$ 在直线 $M N$ 的同侧时有 $\\mu_5 \\geqslant \\frac{S_{\\triangle A_1 A_3 A_4}}{S_{\\triangle A_2 A_3 A_4}} \\geqslant \\frac{A_1 A_3}{M A_3}=1+\\frac{A_1 M}{M A_3}= \\frac{\\sqrt{5}+1}{2}$. (ii) $A_2 、 A_5$ 与 $A_1$ 均在直线 $M N$ 的同侧时, 设 $A_2 A_5$ 交 $A_1 A_3$ 于 $O$, 则 $A_1 O \\leqslant A_1 M$, 于是 $\\mu_5 \\geqslant \\frac{S_{\\triangle A_2 A_3 A_5}}{S_{\\triangle A_1 A_2 A_5}}=\\frac{O A_3}{O A_1} \\geqslant \\frac{M A_3}{M A_1}=\\frac{\\sqrt{5}+1}{2}$. 注意到 $3> \\frac{\\sqrt{5}+1}{2}$, 所以总有 $\\mu_5 \\geqslant \\frac{\\sqrt{5}+1}{2}$. 当 $A_1 、 A_2 、 A_3 、 A_4 、 A_5$ 为边长为 $a$ 的正五边形的 5 个顶点时, 有 $\\mu_5=\\frac{S_{\\triangle A_1 A_3 A_4}}{S_{\\triangle A_1 A_2 A_3}}=\\frac{\\frac{1}{2} A_1 A_3 \\cdot A_1 A_4 \\sin 36^{\\circ}}{\\frac{1}{2} A_1 A_2 \\cdot A_1 A_3 \\sin 36^{\\circ}}=\\frac{A_1 A_4}{A_1 A_2}= \\frac{\\sqrt{5}+1}{2}$. 综上可得 $\\mu_5$ 的最小值为 $\\frac{\\sqrt{5}+1}{2}$.",
+    "remark": "",
+    "figures": []
+}

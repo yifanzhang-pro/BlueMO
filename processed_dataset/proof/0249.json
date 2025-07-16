@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题1. 一个立方体的顶点标上数 +1 或 -1 , 面上标一个数, 它等于这个面四个顶点处的数之乘积.\n证明: 这样标出的 14 个数之和不能为 0 .",
+    "solution": "记 $S$ 为所说的和.\n我们将任一顶点处的有 -1 的地方改为 +1 , 则 $S$ 中有四个数, 设为 $a 、 b 、 c 、 d$ 被改变了符号, 用 $S^{\\prime}$ 表示改数后的 14 个数之和, 由于 $a+b+c+d \\equiv 0(\\bmod 2)$,故\n$$\nS-S^{\\prime}=2(a+b+c+d) \\equiv 0(\\bmod 4) .\n$$\n重复进行这种改数过程, 直至顶点处的数均为 +1 为止, 即知 $S \\equiv 1+1+\\cdots+ 1=14 \\equiv 2(\\bmod 4)$, 所以 $S \\neq 0$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题1 已知 $S=\\left\\{\\frac{(3 n) !}{6^n \\cdot n} \\mid n \\in \\mathbf{N}^*\\right\\}$, 设 $s \\in S$. 求证 $: s \\in \\mathbf{N}^*$.",
+    "solution": "显然 $2^n \\mid(3 n)$ !. 而 $3^n \\cdot n !=3 \\cdot 6 \\cdot 9 \\cdot \\cdots \\cdot 3 n$, 所以 $\\left(3^n \\cdot n !\\right) \\mid(3 n)$ !.",
+    "remark": "",
+    "figures": []
+}

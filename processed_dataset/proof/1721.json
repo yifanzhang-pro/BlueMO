@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例9. 如图(<FilePath:./images/volume7/figures/fig-c5i11.png>), 以 $O$ 为圆心的圆通过 $\\triangle A B C$ 的两个顶点 $A 、 C$, 且与 $A B 、 B C$ 两边分别相交于 $K$ 、 $N$ 两点, $\\triangle A B C$ 和 $\\triangle K B N$ 的两外接圆交于 $B 、 M$ 两点.\n证明: $\\angle O M B$ 为直角.",
+    "solution": "证明:设 $\\triangle A B C 、 \\triangle B K N$ 的外接圆圆心分别为 $O_1 、 O_2$, 由题设推知 $O 、 O_1 、 O_2$ 三点不共线 (否则 $B$ 和 $M$ 重合), 而直线 $A C 、 K N 、 B M$ 分别为这三个圆中两两圆的根轴, 故它们必相交于一点, 不妨设交于点 $P$.\n由 $\\angle P M N=\\angle B K N=\\angle N C A$, 知 $P 、 M 、 N 、 C$ 四点共圆, 故点 $B$ 对此圆的幂等于点 $B$ 对 $\\odot O$ 的幂.\n设 $R$ 为 $\\odot O$ 的半径, 则有\n$$\nB M \\cdot B P=B N \\cdot B C=B O^2-R^2 . \\label{eq1}\n$$\n又点 $P$ 对 $\\odot O_2$ 的幕等于点 $P$ 对 $\\odot O$ 的幕, 即\n$$\nP M \\cdot P B=P N \\cdot P K=P O^2-R^2 . \\label{eq2}\n$$\n式\\ref{eq2} - \\ref{eq1}得 $P O^2-B O^2=B P(P M-B M)$\n$$\n=(P M+B M)(P M-B M)=P M^2-B M^2 .\n$$\n故 $O M \\perp B P, \\angle B M O=90^{\\circ}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5i11.png"
+    ]
+}

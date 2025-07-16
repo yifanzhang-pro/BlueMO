@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 已知三角形 $A B C$ 中, $\\angle C=90^{\\circ}$. 证明: 对于 $\\triangle A B C$ 内任意 $n$ 个点, 必可适当地记为 $P_1, P_2, \\cdots, P_n$, 使得\n$$\nP_1 P_2^2+P_2 P_3^2+\\cdots+P_{n-1} P_n^2 \\leqslant A B^2 .\n$$",
+    "solution": "我们把命题的结论加强为\n$$\nA P_1^2+P_1 P_2^2+P_2 P_3^2+\\cdots+P_{n-1} P_n^2+P_n B^2 \\leqslant A B^2 .\n$$\n当 $n=1$ 时, 因为 $\\angle A P_1 B \\geqslant 90^{\\circ}$, 所以 $A P_1^2+P_1 B^2 \\leqslant A B^2$.\n假设 $n<k$ 时命题成立.\n当 $n=k$ 时, 过 $C$ 作 $C D \\perp A B$, 垂足为 $D$, 不妨设 $\\triangle A C D$ 内有 $s$ 个点, $\\triangle B C D$ 内有 $t$ 个点, (不然的话, 若 $k$ 个点都在 $\\triangle A C D$ 内, 过 $D$ 作 $A C$ 的垂线, 这种作法一直进行下去, 直到把 $k$ 个点分割在两个三角形内为止). 那么 $s, t \\geqslant 1, s+t=k$.\n因 $\\triangle A C D$ 内有 $s$ 个点, 由归纳假设, 可以分别标号为 $P_1, P_2, \\cdots, P_s$, 使得\n$$\nA P_1^2+P_1 P_2^2+\\cdots+P_{s-1} P_s^2+P_s C^2 \\leqslant A C^2 .\n$$\n同样, 对于 $\\triangle B C D$ 内的 $k-s$ 个点, 可以分别标号为 $P_{s+1}, P_{s+2}, \\cdots, P_k$, 使得\n$$\nC P_{s+1}^2+P_{s+1} P_{s+2}^2+\\cdots+P_{k-1} P_k^2+P_k B^2 \\leqslant B C^2 .\n$$\n由于 $\\angle P_s C P_{s+1} \\leqslant 90^{\\circ}$, 所以 $P_s C^2+C P_{s+1}^2 \\geqslant P_s P_{s+1}^2$, 于是\n$$\n\\begin{aligned}\n& A P_1^2+P_1 P_2^2+\\cdots+P_{k-1} P_k^2+P_k B^2 \\\\\n\\leqslant & \\left(A P_1^2+P_1 P_2^2+\\cdots+P_s C^2\\right)+\\left(C P_{s+1}^2+\\right. \\\\\n& \\left.P_{s+1} P_{s+2}^2+\\cdots+P_{k-1} P_k^2+P_k B^2\\right) . \\\\\n\\leqslant & A C^2+B C^2=A B^2 .\n\\end{aligned}\n$$\n从而 $n=k$ 时命题也成立, 这就完成了归纳证明.",
+    "remark": "",
+    "figures": []
+}

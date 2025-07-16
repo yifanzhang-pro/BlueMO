@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题6 化简 $\\tan 10^{\\circ} \\cdot \\tan 20^{\\circ}+\\tan 20^{\\circ} \\cdot \\tan 60^{\\circ}+\\tan 60^{\\circ} \\cdot \\tan 10^{\\circ}$ 的值 () .\n(A) 1\n(B) 2\n(C) $\\tan 10^{\\circ}$\n(D) $\\sqrt{3} \\tan 20^{\\circ}$",
+    "solution": "A. 由 $\\tan 30^{\\circ}=\\frac{\\tan 20^{\\circ}+\\tan 10^{\\circ}}{1-\\tan 20^{\\circ} \\cdot \\tan 10^{\\circ}}$, 得 $1-\\tan 20^{\\circ} \\cdot \\tan 10^{\\circ}= \\sqrt{3}\\left(\\tan 20^{\\circ}+\\tan 10^{\\circ}\\right)$, 即 $\\tan 10^{\\circ} \\cdot \\tan 20^{\\circ}+\\sqrt{3} \\tan 20^{\\circ}+\\sqrt{3} \\tan 10^{\\circ}=1$.",
+    "remark": "",
+    "figures": []
+}

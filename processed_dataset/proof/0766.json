@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise12.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 设 $k$ 是给定的正整数.\n证明: 若 $A=k+\\frac{1}{2}+\\sqrt{k^2+\\frac{1}{4}}$, 则对一切正整数 $n, A^n$ 的整数部分 $\\left[A^n\\right]$ 能被 $k$ 整除.",
+    "solution": "构造 $A$ 的对偶式 $B=k+\\frac{1}{2}-\\sqrt{k^2+\\frac{1}{4}}$, 则 $A+B=2 k+1, A B= k$, 故 $A, B$ 是方程 $x^2-(2 k+1) x+k=0$ 的两个实根, 从而对任意正整数 $n \\geqslant$ 3 , 有\n$$\n\\begin{aligned}\n& A^n-(2 k+1) A^{n-1}+k A^{n-2}=0, \\\\\n& B^n-(2 k+1) B^{n-1}+k B^{n-2}=0 .\n\\end{aligned}\n$$\n记 $a_n=A^n+B^n-1$, 将上述两式相加得\n$$\n\\left(a_n+1\\right)-(2 k+1)\\left(a_{n-1}+1\\right)+k\\left(a_{n-2}+1\\right)=0,\n$$\n即\n$$\na_n=(2 k+1) a_{n-1}-k a_{n-2}+k, \\label{eq1}\n$$\n再注意到 $a_1=A+B-1=2 k, a_2=A^2+B^2-1=4 k^2+2 k$ 均为 $k$ 的整数倍,结合递推关系可知对一切正整数 $n, a_n$ 被 $k$ 整除.\n又 $0<B<1$, 所以\n$$\na_n=\\left[a_n\\right]=\\left[A^n+B^n-1\\right]=\\left[A^n\\right],\n$$\n故 $\\left[A^n\\right]$ 能被 $k$ 整除.",
+    "remark": "",
+    "figures": []
+}

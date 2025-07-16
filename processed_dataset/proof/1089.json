@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-2.tex",
+    "problem_type": "proof",
+    "problem": "例4. 若 $x 、 y 、 z$ 是正实数, 求 $\\frac{x y z}{(1+5 x)(4 x+3 y)(5 y+6 z)(z+18)}$ 的最大值, 并证明你的结论.",
+    "solution": "解:在取定 $y$ 的情况下,\n$$\n\\begin{aligned}\n& \\frac{x}{(1+5 x)(4 x+3 y)} \\\\\n= & \\frac{x}{20 x^2+(15 y+4) x+3 y} \\\\\n= & \\frac{1}{20 x+\\frac{3 y}{x}+15 y+4} \\\\\n\\leqslant & \\frac{1}{2 \\sqrt{20 \\times 3 y}+15 y+4} \\\\\n= & \\frac{1}{(\\sqrt{15 y}+2)^2},\n\\end{aligned}\n$$\n当且仅当 $x=\\sqrt{\\frac{3 y}{20}}$ 时,等号成立.\n同理可得,\n$$\n\\frac{z}{(5 y+6 z)(z+18)} \\leqslant \\frac{1}{2 \\sqrt{6 \\times 90} y+5 y+108}=\\frac{1}{(\\sqrt{5 y}+6 \\sqrt{3})^2},\n$$\n当且仅当 $z=\\sqrt{15 y}$ 时, 等号成立.\n所以,\n$$\n\\begin{aligned}\n& \\frac{x y z}{(1+5 x)(4 x+3 y)(5 y+6 z)(z+18)} \\\\\n& \\leqslant \\frac{y}{(\\sqrt{15 y}+2)^2(\\sqrt{5 y}+6 \\sqrt{3})^2} \\\\\n& =\\left[\\frac{\\sqrt{y}}{(\\sqrt{15 y}+2)(\\sqrt{5 y}+6 \\sqrt{3})}\\right]^2 \\text {. } \\\\\n& =\\left[\\frac{1}{5 \\sqrt{3 y}+\\frac{12 \\sqrt{3}}{\\sqrt{y}}+20 \\sqrt{5}}\\right]^2 \\text {. } \\\\\n& \\leqslant\\left[\\frac{1}{2 \\sqrt{5 \\sqrt{3} \\times 12 \\sqrt{3}}+20 \\sqrt{5}}\\right]^2 \\\\\n& =\\left(\\frac{1}{32 \\sqrt{5}}\\right)^2=\\frac{1}{5120} \\text {, } \\\\\n&\n\\end{aligned}\n$$\n当且仅当 $x=\\frac{3}{5}, y=\\frac{12}{5}, z=6$ 时, 上式取得最大值 $\\frac{1}{5120}$.",
+    "remark": "",
+    "figures": []
+}

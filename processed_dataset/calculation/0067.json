@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题7. 集合 $A$ 的元素都是整数, 其中最小的是 1 , 最大的是 100. 除 1 以外, 每一个元素都等于集合 $A$ 的两个数(可以相同)的和.\n求集合 $A$ 的元素个数的最小值.",
+    "solution": "易知集合 $\\{1,2,3,5,10,20,25,50,100\\}$ 满足条件, 故集合 $A$ 的元素个数的最小值不大于 9 . 若 $\\left\\{1,2, x_1, x_2, x_3, x_4, x_5, 100\\right\\}$ 也满足条件, 则 $x_1 \\leqslant 4, x_2 \\leqslant 8, x_3 \\leqslant 16, x_4 \\leqslant 32, x_5 \\leqslant 64$. 但 $x_4+x_5 \\leqslant 96<100$, 所以 $x_5=50 . x_3+x_4 \\leqslant 48<50$, 所以 $x_4=25 . x_2+x_3 \\leqslant 24<25$, 所以 $25=2 x_3$, 矛盾.\n所以,集合 $A$ 的元素个数的最小值为 9 .",
+    "remark": "",
+    "figures": []
+}

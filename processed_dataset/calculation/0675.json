@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例10. 解方程 $2 \\sqrt{2} x^2+x-\\sqrt{1-x^2}-\\sqrt{2}=0$.",
+    "solution": "分析:由于 $|x| \\leqslant 1$, 可设 $x=\\sin \\theta, \\theta \\in\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$.\n解设 $x=\\sin \\theta, \\theta \\in\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$, 代入原方程, 得 $2 \\sqrt{2} \\sin ^2 \\theta+\\sin \\theta- \\cos \\theta-\\sqrt{2}=0$,\n$$\n\\begin{gathered}\n\\sqrt{2}\\left(\\sin ^2 \\theta-\\cos ^2 \\theta\\right)+\\sin \\theta-\\cos \\theta=0, \\\\\n\\sin \\theta-\\cos \\theta)[\\sqrt{2}(\\sin \\theta+\\cos \\theta)+1]=0, \\\\\n\\sin \\theta-\\cos \\theta)\\left[2 \\sin \\left(\\theta+\\frac{\\pi}{4}\\right)+1\\right]=0 .\n\\end{gathered}\n$$\n由 $\\sin \\theta-\\cos \\theta=0$ 及 $\\theta \\in\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$ 得 $\\theta=\\frac{\\pi}{4}, x=\\frac{\\sqrt{2}}{2}$.\n由 $\\sin \\left(\\theta+\\frac{\\pi}{4}\\right)=-\\frac{1}{2}$ 及 $\\theta \\in\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$ 得 $\\theta=-\\frac{5 \\pi}{12}, x=-\\frac{\\sqrt{6}+\\sqrt{2}}{4}$.\n所以原方程的解是 $x=\\frac{\\sqrt{2}}{2}$ 或 $x=-\\frac{\\sqrt{6}+\\sqrt{2}}{4}$.",
+    "remark": "",
+    "figures": []
+}

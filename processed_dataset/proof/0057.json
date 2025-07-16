@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter9.tex",
+    "problem_type": "proof",
+    "problem": "例9. 设 $p_i(i=1,2, \\cdots, m)$ 为正整数 $n$ 的全部质因数.\n求证:\n$$\n\\varphi(n)=n \\prod_{i=1}^m\\left(1-\\frac{1}{p_i}\\right) .\n$$",
+    "solution": "证明:记 $S=\\{1,2, \\cdots, n\\}$, 并设\n$$\nA_i=\\left\\{a\\left|a \\in S, p_i\\right| a\\right\\}, i=1,2, \\cdots, m .\n$$\n则 $\\varphi(n)=\\left|\\bigcap_{i=1}^m \\complement_S A_i\\right|$. 注意到\n$$\n\\begin{aligned}\n& \\left|A_i\\right|=\\left[\\frac{n}{p_i}\\right],\\left|A_i \\cap A_j\\right|=\\left[\\frac{n}{p_i p_j}\\right], \\cdots, \\\\\n& \\left|A_1 \\cap A_2 \\cap \\cdots \\cap A_m\\right|=\\left[\\frac{n}{p_1 p_2 \\cdots p_m}\\right],\n\\end{aligned}\n$$\n而 $p_i$ 为 $n$ 的不同的质因数, 上面各式中 [] 都可去掉, 由筛法公式得\n$$\n\\begin{aligned}\n\\varphi(n) & =|S|-\\sum_{i=1}^m\\left[\\frac{n}{p_i}\\right]+\\sum_{1 \\leqslant i<j \\leqslant m}\\left[\\frac{n}{p_i p_j}\\right]-\\cdots+(-1)^m\\left[\\frac{n}{p_1 p_2 \\cdots p_m}\\right] \\\\\n& =n\\left[1-\\sum_{i=1}^m \\frac{1}{p_i}+\\sum_{1 \\leqslant i<j \\leqslant m} \\frac{1}{p_i p_j}-\\cdots+(-1)^m \\frac{1}{p_1 p_2 \\cdots p_m}\\right] \\\\\n& =n \\prod_{i=1}^m\\left(1-\\frac{1}{p_i}\\right) .\n\\end{aligned}\n$$\n容厉原理是一个非常有用的计数方法, 但我们在这里只介绍了它在解决集合和整数问题中的简单应用, 因为对那些经典的组合问题的介绍不是本书的任务.\n最后我们来看一道离本书的出版日期最近的试题, 其容斥原理的运用并不是解答的全部, 但却是解题的关键一步, 因为我们的结论就是由容斥原理导出的.",
+    "remark": "",
+    "figures": []
+}

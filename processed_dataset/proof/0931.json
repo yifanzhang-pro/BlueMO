@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题8 已知方程 $x^2+b x+c=0$ 有两个实数根 $s$ 、 $t$, 并且 $|s|<2,|t|<2$. 求证:\n(1) $|c|<4$\n(2) $|b|<4+c$.",
+    "solution": "(1) 由韦达定理知 $|c|=|s t|=|s||t|<4$. \n(2) 设 $f(x)=x^2+ b x+c$, 则 $y=f(x)$ 的图象是开口向上的抛物线, 且与 $x$ 轴的两交点在一 2 与 2 之间, 所以 $f( \\pm 2)>0$, 即 $4+2 b+c>0,4-2 b+c>0$, 所以 $\\pm 2 b<4+ c, 2|b|<4+c$, 故 $|b| \\leqslant 2|b|<4+c$.",
+    "remark": "",
+    "figures": []
+}

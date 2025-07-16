@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题5 已知 $f(x)$ 是定义在 $\\mathbf{R}$ 上的函数, $f(1)=1$, 且对任意 $x \\in \\mathbf{R}$, 都有\n$$\nf(x+5) \\geqslant f(x)+5, f(x+1) \\leqslant f(x)+1 .\n$$\n若 $g(x)==f(x)+1-x$, 求 $g(2002)$.",
+    "solution": "因为 $f(x)=g(x)+x-1$, 所以 $g(x+5)+(x+5)-1 \\geqslant g(x)+ (x-1)+5, g(x+1)+(x+1)-1 \\leqslant g(x)+(x-1)+1$, 即 $g(x+5) \\geqslant g(x), g(x+1) \\leqslant g(x)$. \n故 $g(x) \\leqslant g(x+5) \\leqslant g(x+4) \\leqslant g(x+3) \\leqslant g(x+2) \\leqslant g(x+1) \\leqslant g(x)$, 所以 $g(x+1)=g(x)$, 即 $g(x)$ 是周期为 1 的周期函数,故 $g(2002)=g(1)=1$.",
+    "remark": "",
+    "figures": []
+}

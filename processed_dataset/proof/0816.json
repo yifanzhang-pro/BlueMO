@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 设集合 $A$ 的元素都是正整数,满足如下条件:\n(1) $A$ 的元素个数不小于 3 ;\n(2) 若 $a \\in A$,则 $a$ 的所有因数都属于 $A$;\n(3) 若 $a \\in A, b \\in A, 1<a<b$, 则 $1+a b \\in A$.\n证明: $A=\\mathbf{N}^*$.",
+    "solution": "首先,易知 $1 \\in A$.\n设 $a \\in A, b \\in A, 1<a<b$. 若 $a, b$ 中至少有一个偶数,则 $2 \\in A$; 若 $a$, $b$ 都为奇数,则 $1+a b \\in A$, 而 $1+a b$ 是偶数,故 $2 \\in A$.\n设 $1,2, a \\in A(a>2)$, 则 $1+2 \\cdot a \\in A, 1+2 \\cdot(1+2 a)=3+4 a \\in A$,\n$$\n1+(1+2 a) \\cdot(3+4 a)=4+10 a+8 a^2 \\in A,\n$$\n若 $a$ 是偶数,则 $4 \\mid\\left(4+10 a+8 a^2\\right)$, 于是 $4 \\in A$; 若 $a$ 是奇数,则把 $4+10 a+ 8 a^2$ 作为 $a$, 重复上面的过程可得 $4 \\in A$.\n又 $1+2 \\times 4=9 \\in A$, 所以 $3 \\in A, 1+2 \\times 3=7 \\in A, 1+2 \\times 7=15 \\in A$, 所以 $5 \\in A$.\n所以, 1, 2, 3, 4, 5 都是集合 $A$ 的元素.\n假设 $1,2, \\cdots, n \\in A(n \\geqslant 5)$, 下证 $n+1 \\in A$.\n如果 $n+1=2 k+1$ 为奇数, 那么 $3 \\leqslant k<n$, 于是 $n+1=1+2 \\cdot k \\in A$;\n如果 $n+1=2 k$ 是偶数, 那么 $3 \\leqslant k<n$, 于是 $n=2 k-1 \\in A, 1+2 \\cdotk \\in A$, 所以 $1+(2 k-1) \\cdot(2 k+1)=4 k^2 \\in A$, 从而 $2 k \\in A$, 即 $n+1 \\in A$. 综上所述,我们证明了 $A=\\mathbf{N}^*$.",
+    "remark": "",
+    "figures": []
+}

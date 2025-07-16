@@ -1,0 +1,172 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1 设 $x 、 y$ 是正整数, 求:
+$$
+f(x, y)=\frac{x^4}{y^4}+\frac{y^4}{x^4}-\frac{x^2}{y^2}-\frac{y^2}{x^2}+\frac{x}{y}+\frac{y}{x}
+$$
+的最小值.
+%%<SOLUTION>%%
+$$
+f(x, y)=\left(\frac{x^4}{y^4}-2 \cdot \frac{x^2}{y^2}+1\right)+\left(\frac{y^4}{x^4}-2 \cdot \frac{y^2}{x^2}+1\right)+\left(\frac{x^2}{y^2}-2+\frac{y^2}{x^2}\right)+\left(\frac{x}{y}-2+\frac{y}{x}\right)+2=\left(\frac{x^2}{y^2}-1\right)^2+\left(\frac{y^2}{x^2}-1\right)^2+\left(\frac{x}{y}-\frac{y}{x}\right)^2+\left(\sqrt{\frac{x}{y}}-\sqrt{\frac{y}{x}}\right)^2+2 \geqslant 2
+$$
+并且当且仅当 $x=y$ 时上述等号成立.
+故 $f_{\text {min }}=2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2 求函数 $y=\frac{2 x}{x^2+x+1}$ 的最大值和最小值.
+%%<SOLUTION>%%
+去分母, 并整理成关于 $x$ 的二次方程 $y x^2+(y-2) x+y=0$. 因 $x$ 是实数, 当 $y \neq 0$ 时, 判别式需恒大于或等于 0 , 即 $\Delta=(y-2)^2-4 y^2 \geqslant 0$, 解不等式得 $-2 \leqslant y \leqslant \frac{2}{3}$. 而当 $x=-1$ 时, $y=-2$; 当 $x=1$ 时, $y=\frac{2}{3}$. 故 $y_{\min }=-2, y_{\max }=\frac{2}{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3 已知 $a, b, x, y \in \mathbf{R}^{+}$, 且 $\frac{a}{x}+\frac{b}{y}=1$, 求 $x+y$ 的最小值.
+%%<SOLUTION>%%
+令 $\left\{\begin{array}{l}\frac{a}{x}=\sin ^2 \alpha, \\ \frac{b}{y}=\cos ^2 \alpha,\end{array} \alpha \in\left(0, \frac{\pi}{2}\right)\right.$, 则 $x+y=\frac{a}{\sin ^2 \alpha}+\frac{b}{\cos ^2 \alpha}=a \csc ^2 \alpha+ b \sec ^2 \alpha=a+b+a \cot ^2 \alpha+b \tan ^2 \alpha \geqslant a+b+2 \sqrt{a b}$, 所以, $(x+y)_{\min }=a+b+ 2 \sqrt{a b}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4 求函数 $f(x)=\frac{\sqrt{x^4+x^2+1}-\sqrt{x^4+1}}{x}$ 的最大值.
+%%<SOLUTION>%%
+显然当 $x<0$ 时, $f(x)<0$; 当 $x>0$ 时, $f(x)>0$, 因此其最大值应在 $x>0$ 时取得.
+当 $x>0$ 时, 由于 $\frac{\sqrt{x^4+x^2+1}-\sqrt{x^4+1}}{x}= \sqrt{x^2+\frac{1}{x^2}+1}-\sqrt{x^2+\frac{1}{x^2}}=\frac{1}{\sqrt{x^2+\frac{1}{x^2}+1}+\sqrt{x^2+\frac{1}{x^2}}}$, 又因为函数 $y=x+\frac{1}{x}$ 的值域为 $(-\infty,-2] \cup[2,+\infty)$, 且 $x^2>0(x \neq 0)$, 所以 $f(x)=\frac{\sqrt{x^4+x^2+1}-\sqrt{x^4+1}}{x} \leqslant \frac{1}{\sqrt{3}+\sqrt{2}}=\sqrt{3}-\sqrt{2}$. 并且可以看出, 当 $x=1$ 时, $f_{\text {max }}(x)=\sqrt{3}-\sqrt{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5 已知实数 $x 、 y$ 满足 $1 \leqslant x^2+y^2 \leqslant 4$, 求 $u=x^2+x y+y^2$ 的最大值和最小值.
+%%<SOLUTION>%%
+利用不等式 $-\frac{x^2+y^2}{2} \leqslant x y \leqslant \frac{x^2+y^2}{2}$, 可得 $u=x^2+y^2+x y \leqslant x^2+y^2+\frac{x^2+y^2}{2}=\frac{3}{2}\left(x^2+y^2\right) \leqslant \frac{3}{2} \times 4=6$, 当 $x=y=\sqrt{2}$ 时等号成立; $u=x^2+y^2+x y \geqslant x^2+y^2-\frac{x^2+y^2}{2}=\frac{1}{2}\left(x^2+y^2\right) \geqslant \frac{1}{2} \times 1=\frac{1}{2}$, 当 $x= \frac{\sqrt{2}}{2}, y=-\frac{\sqrt{2}}{2}$ 时等号成立.
+所以, $u$ 的最大值为 6 , 最小值为 $\frac{1}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6 已知 $x, y, z \in \mathbf{R}^{+}$, 且 $x y z(x+y+z)=1$, 求 $(x+y)(y+z)$ 的最小值.
+%%<SOLUTION>%%
+由平均不等式 $(x+y)(y+z)=y(x+y+z)+x z \geqslant 2 \sqrt{y(x+y+z) \cdot x z}=2$, 当 $x=z=1, y=\sqrt{2}-1$ 时等号成立.
+故最小值为 2 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7 已知函数 $y={\frac{2+x}{{\sqrt{1-x^{2}}}+1}}+{\frac{1-{\sqrt{1-x^{2}}}}{x}}\,,\,x\in[-1\,,\,0)\cup(0,\,1]$, 求此函数的最大值和最小值
+%%<SOLUTION>%%
+由 $|x| \leqslant 1$ 且 $x \neq 0$, 可令 $x=\sin \theta, \theta \in\left[-\frac{\pi}{2}, 0\right) \cup\left(0, \frac{\pi}{2}\right] . y= \frac{2(1+x)}{1+\sqrt{1-x^2}}=\frac{2(1+\sin \theta)}{1+\sqrt{1-\sin ^2 \theta}}=\frac{2(1+\sin \theta)}{1+\cos \theta}=\frac{2\left(\sin \frac{\theta}{2}+\cos \frac{\theta}{2}\right)^2}{2 \cos ^2 \frac{\theta}{2}}= \left(\tan \frac{\theta}{2}+1\right)^2$, 当 $\tan \frac{\theta}{2}=-1$ 时, $\theta=-\frac{\pi}{2}$, 即 $x=-1$ 时, $y_{\min }=0$; 当 $\tan \frac{\theta}{2}=1$, 即 $x=1$ 时, $y_{\text {max }}=4$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设 $x_1, x_2, y_1, y_2 \in \mathbf{R}$, 求:
+$u=\sqrt{\left(1185-x_1-\overline{\left.x_2\right)^2+y_2^2}\right.}+\sqrt{x_2^2+y_1^2}+\sqrt{x_1^2+\left(1580-y_1-y_2\right)^2}$ 的最小值.
+%%<SOLUTION>%%
+在直角坐标平面上, 取点 $A(1185,0), X\left(x_1+x_2, y_2\right), Y\left(x_1, y_1+\right. \left.y_2\right), B(0,1580)$. 则 $A X=\sqrt{\left(1185-x_1-x_2\right)^2+y_2^2}, X Y=\sqrt{x_2^2+y_1^2}$, $Y B=\sqrt{x_1^2+\left(1580-y_1-y_2\right)^2}$. 所以 $u=A X+X Y+Y B \geqslant A B= \sqrt{1185^2+1580^2}=1925$. 故 $u$ 的最小值为 1925 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9 一幢 $k(>2)$ 层楼的公寓有一部电梯, 最多能容纳 $k-1$ 个人.
+现有 $k-1$ 个学生同时在第一层楼乘电梯, 他们中没有两人是住同一层楼的.
+电梯只能停一次,停在任意选择的一层.
+而对每一个学生而言, 自己往下走一层感到 1 分不满意, 而往上走一层感到 2 分不满意.
+问电梯停在哪一层, 可使不满意的总分达到最小?
+%%<SOLUTION>%%
+设电梯停在第 $x$ 层, 则不满意的总分为 $S=(1+2+\cdots+x-2)+ 2(1+2+\cdots+k-x)=\frac{1}{2}\left[3 x^2-(4 k+5) x\right]+k^2+k+1$. 所以当 $x= N\left(\frac{4 k+5}{6}\right)$ 时, $S$ 最小, 其中 $N(a)$ 表示最接近于 $a$ 的整数.
+例如 $N(3)=3$, $N(3.6)=4, N(2.1)=2, N(2.5)=2或 3$ . 故当电梯停在 $N\left(\frac{4 k+5}{6}\right)$ 层时, 不满意的总分最小.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10 设 $x 、 y 、 z$ 是 3 个不全为零的实数, 求 $\frac{x y+2 y z}{x^2+y^2+z^2}$ 的最大值.
+%%<SOLUTION>%%
+引人两个正参数 $\alpha 、 \beta$, 有 $\alpha^2 x^2+y^2 \geqslant 2 \alpha x y, \beta^2 y^2+z^2 \geqslant 2 \beta y z$. 所以 $x y \leqslant \frac{\alpha}{2} x^2+\frac{1}{2 \alpha} y^2, 2 y z \leqslant \beta y^2+\frac{1}{\beta} z^2$. 因此 $x y+2 y z \leqslant \frac{\alpha}{2} x^2+\left(\frac{1}{2 \alpha}+\beta\right) y^2+ \frac{1}{\beta} z^2$. 令 $\frac{\alpha}{2}=\frac{1}{2 \alpha}+\beta=\frac{1}{\beta}$, 解得 $\alpha=\sqrt{5}, \beta=\frac{2 \sqrt{5}}{5}$. 故 $x y+2 y z \leqslant \frac{\sqrt{5}}{2}\left(x^2+\right. \left.y^2+z^2\right)$, 即 $\frac{x y+2 y z}{x^2+y^2+z^2} \leqslant \frac{\sqrt{5}}{2}$. 解方程组 $\left\{\begin{array}{l}\frac{\alpha}{2} x^2=\frac{1}{2 \alpha} y^2, \\ \beta y^2=\frac{1}{\beta} z^2,\end{array}\right.$ 可得一组解 $(x, y, z)=(1, \sqrt{5}, 2)$, 即当 $x=1, y=\sqrt{5}, z=2$ 时, $\frac{x y+2 y z}{x^2+y^2+z^2}$ 取 $\frac{\sqrt{5}}{2}$. 从而它的最大值为 $\frac{\sqrt{5}}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11 已知 $x \geqslant 1, y \geqslant 1$, 且 $\lg ^2 x+\lg ^2 y=\lg 10 x^2+\lg 10 y^2$, 求 $\lg x y$ 的最大值与最小值.
+%%<SOLUTION>%%
+由题设 $\lg ^2 x+\lg ^2 y=\lg 10 x^2+\lg 10 y^2$, 得 $(\lg x-1)^2+(\lg y-1)^2= 4$. 由于 $\lg x \geqslant 0, \lg y \geqslant 0$, 所以 $(\lg x, \lg y)$ 在以点 $(1,1)$ 为圆心 2 为半径的圆弧上,如图(<FilePath:./figures/fig-c4p11.png>)所示, 易知此圆弧的两个端点 $A(0,1+\sqrt{3}), B(1+\sqrt{3}, 0)$. 令 $u=\lg x y=\lg x+\lg y$, 则 $u$ 是直线系: $\lg y=-\lg x+u$ 的纵截距.
+因此直线系需与圆弧有公共点, 故当它过 $A 、 B$ 两点时截距最小, 当它与圆弧相切时, 截距最大.
+所以 $u_{\text {min }}= \sqrt{3}+1, u_{\max }=\sqrt{2}(\sqrt{2}+2)=2 \sqrt{2}+2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12 设 $n(\geqslant 2)$ 是正整数, $x_i \in[0,2], i=1,2, \cdots, n$. 证明: 二次函数 $f(x)=n x^2-2\left(\sum_{i=1}^n x_i\right) x+\sum_{i=1}^n x_i^2$ 的最小值不超过 $n$.
+%%<SOLUTION>%%
+由题设知 $f(x)=\left(x-x_1\right)^2+\left(x-x_2\right)^2+\cdots+\left(x-x_n\right)^2$. 由于 $x_i \in[0,2], i=1,2, \cdots, n$, 所以 $0 \leqslant\left|1-x_i\right| \leqslant 1$, $0 \leqslant\left(1-x_i\right)^2 \leqslant 1$. 于是 $f(1)=\left(1-x_1\right)^2+\left(1-x_2\right)^2+\cdots+\left(1-x_n\right)^2 \leqslant n$. 所以, $f_{\text {min }}(x) \leqslant f(1) \leqslant n$. 
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13 当 $s$ 和 $t$ 取遍所有实数时, 求 $M=(s+5-3|\cos t|)^2+(s-2|\sin t|)^2$ 的最小值.
+%%<SOLUTION>%%
+设$l:\left\{\begin{array}{l}x=s+5,\\y=s,\end{array}\right.$, $C:\left\{\begin{array}{l}x=3|cos t|,\\y=2|sin t|,\end{array}\right.$, 则$M$表示直线$l$上的点与曲线 $C$ 上的点之间距离的平方.
+作出直线 $l: y=x-5$ 及椭圆 $C: \frac{x^2}{9}+\frac{y^2}{4}=1 (x \geqslant 0, y \geqslant 0)$. 则所求的 $M$ 的最小值为 $A(3,0)$ 到直线 $l$ 的距离的平方.
+即为 2 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14 已知 $x, y \in \mathbf{R}, M=\max \{|x-2 y|,|1+x|,|2-2 y|\}$, 求 $M$ 的最小值.
+%%<SOLUTION>%%
+因为 $M$ 是 $|x-2 y|,|1+x|,|2-2 y|$ 中的最大者, 故 $M$ 不小于这三者的算术平均, 即 $M \geqslant \frac{1}{3}(|x-2 y|+|1+x|+|2-2 y|) \geqslant \frac{1}{3} \mid(2 y-x)+ (x+1)+(2-2 y) \mid=1$, 另一方面, 当 $x=0, y=\frac{1}{2}$ 时, $|x-2 y|=\mid 1+ x|=| 2-2 y \mid=1$, 此时 $M=1$, 故 $M$ 的最小值为 1 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15 设 $f(x)=x^2+p x+q, p, q \in \mathbf{R}$. 若 $|f(x)|$ 在 $[-1,1]$ 上的最大值为 $M$, 求 $M$ 的最小值.
+%%<SOLUTION>%%
+由于 $M=\max _{-1 \leqslant x \leqslant 1}|f(x)|$, 所以 $M \geqslant|f(1)|, M \geqslant|f(0)|, M \geqslant |f(-1)|$, 故 $4 M \geqslant|1+p+q|+2|-q|+|1-p+q| \geqslant \mid 1+p+q- 2 q+1-p+q \mid=2$. 所以 $M \geqslant \frac{1}{2}$, 而当 $f(x)=x^2-\frac{1}{2}$ 时, $M=\frac{1}{2}$. 所以 $M$ 的最小值为 $\frac{1}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16 关于 $x$ 的一元二次方程 $2 x^2-t x-2=0$ 的两个实根为 $\alpha 、 \beta(\alpha<\beta)$.
+(1) 若 $x_1 、 x_2$ 为区间 $[\alpha, \beta]$ 上的两个不同的点,求证:
+$$
+4 x_1 x_2-t\left(x_1+x_2\right)-4<0 ;
+$$
+(2) 设 $f(x)=\frac{4 x-t}{x^2+1}, f(x)$ 在区间 $[\alpha, \beta]$ 上的最大值和最小值分别记为 $f_{\max }$ 和 $f_{\min }, g(t)=f_{\text {max }}-f_{\text {min }}$, 求 $g(t)$ 的最小值.
+%%<SOLUTION>%%
+(1) 不妨设 $\alpha \leqslant x_1<x_2 \leqslant \beta$. 由题设知, $\alpha+\beta=\frac{t}{2}, \alpha \beta=-1$. 于是由 $\left(x_1-\alpha\right)\left(x_2-\beta\right) \leqslant 0$, 得 $x_1 x_2-\left(\alpha x_2+\beta x_1\right)+\alpha \beta \leqslant 0,4 x_1 x_2-4\left(\alpha x_2+\beta x_1\right)- 4 \leqslant 0$. 所以 $4 x_1 x_2-t\left(x_1+x_2\right)-4 \leqslant 4\left(\alpha x_2+\beta x_1\right)-t\left(x_1+x_2\right)=4\left(\alpha x_2+\beta\right. \left.x_1\right)-2(\alpha+\beta)\left(x_1+x_2\right)=2\left(\alpha x_2+\beta x_1\right)-2\left(\alpha x_1+\beta x_2\right)=2\left(x_2-x_1\right)(\alpha-\beta)<0.$  
+(2) $\alpha=\frac{t-\sqrt{t^2+16}}{4}, \beta=\frac{t+\sqrt{t^2+16}}{4}$, 所以 $f(\alpha)=\frac{-8}{\sqrt{t^2+16}-t}$,$f(\beta)=\frac{8}{\sqrt{t^2+16}+t}$. 设 $x_1, x_2 \in[\alpha, \beta], x_1<x_2$, 则 $f\left(x_2\right)-f\left(x_1\right)= -\frac{4 x_1 x_2-t\left(x_1+x_2\right)-4}{\left(x_1^2+1\right)\left(x_2^2+1\right)}\left(x_2-x_1\right)>0$, 所以, $f(x)$ 在 $[\alpha, \beta]$ 上是增函数, 故 $g(t)=f(\beta)-f(\alpha)=\frac{8}{\sqrt{t^2+16}+t}+\frac{8}{\sqrt{t^2+16}-t}=\sqrt{t^2+16} \geqslant 4$, 当 $t=$ 0 时等号成立.
+故 $g(t)$ 的最小值为 4 .
+%%PROBLEM_END%%
+
+

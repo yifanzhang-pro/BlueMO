@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题2. 解不等式 $\\frac{x}{\\sqrt{1+x^2}}+\\frac{1-x^2}{1+x^2}>0$.",
+    "solution": "设 $x=\\tan \\theta$, 其中 $\\theta \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$, 则 $\\frac{x}{\\sqrt{1+x^2}}=\\sin \\theta, \\frac{1-x^2}{1+x^2}= \\cos 2 \\theta$, 原不等式可化为 $\\sin \\theta+\\cos 2 \\theta>0$, 即 $(2 \\sin \\theta+1)(\\sin \\theta-1)<0$. 所以 $\\sin \\theta>-\\frac{1}{2}$, 得 $-\\frac{\\pi}{6}<\\theta<\\frac{\\pi}{2}$. 即 $\\tan \\theta>\\tan \\left(-\\frac{\\pi}{6}\\right)=-\\frac{\\sqrt{3}}{3}$, 故原不等式的解集为 $\\left\\{x \\mid x>-\\frac{\\sqrt{3}}{3}\\right\\}$.",
+    "remark": "",
+    "figures": []
+}

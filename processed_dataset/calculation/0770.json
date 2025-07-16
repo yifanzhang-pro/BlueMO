@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题24 求下列函数的定义域:\n(1) $y=\\sqrt{\\frac{2 \\pi}{3}-\\arccos \\left(\\frac{1}{2} x-1\\right)}$;\n(2) $y=\\arctan \\frac{1}{x^2-1}$.",
+    "solution": "(1) 由不等式 $\\frac{2 \\pi}{3} \\geqslant \\arccos \\left(\\frac{1}{2} x-1\\right)$, 得 $1 \\geqslant \\frac{1}{2} x-1 \\geqslant-\\frac{1}{2}$, 即 $1 \\leqslant x \\leqslant 4$, 定义域为 $[1,4]$. (2) 由 $x^2 \\neq 1$ 得 $x \\neq \\pm 1$, 定义域为 $\\{x \\mid x \\neq \\pm 1\\}$.",
+    "remark": "",
+    "figures": []
+}

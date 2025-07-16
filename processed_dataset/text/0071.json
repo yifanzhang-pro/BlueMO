@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter9.tex",
+    "text": "定理四竞赛图 $\\bar{K}_n(n \\geqslant 3)$ 中有一个回路是三角形的充分必要条件是有两个顶点 $v$ 与 $v^{\\prime}$, 满足\n$$\nd^{+}(v)=d^{+}\\left(v^{\\prime}\\right)\n$$\n证明设顶点 $v$ 与 $v^{\\prime}$, 满足 $d^{+}(v)=d^{+}\\left(v^{\\prime}\\right)$, 我们证明 $\\bar{K}_n$ 中有一个回路为三角形.\n不妨设有弧 $\\left(v, v^{\\prime}\\right)$, 并且从 $v^{\\prime}$ 到顶点 $v_1, v_2, \\cdots, v_k$ 各有一条弧, 其中 $k=d^{+}(v)$. 则必有一顶点 $v_j(1 \\leqslant j \\leqslant k)$, 从 $v_j$ 到 $v$ 有一条弧, 否则 $d^{+}(v) \\geqslant k+1>d^{+}\\left(v^{\\prime}\\right)$, 回路 $v, v^{\\prime}, v_j$ 就是一个三角形.\n于是充分性得证.\n若 $\\bar{K}_n$ 的各顶点的出度不同, 用数学归纳法证明 $\\bar{K}_n$ 不含三角形回路.\n当 $n=3$ 时, 易知顶点出度为 $0,1,2$ 的三角形不成回路.\n设命题在 $n=k$ 时正确.\n考察 $k+1$ 阶竞赛图 $\\bar{K}_{k+1}$, 若它的各个顶点出度不同, 那么它们依次为 $0,1,2, \\cdots, k$. 设 $d^{+}\\left(v^{\\prime}\\right)=k$, 去掉点 $v^{\\prime}$ 及相应的弧, 由归纳假设, $\\bar{K}_k-v^{\\prime}$ 不含三角形回路, 显然 $\\bar{K}_{k+1}$ 中也没有三角形回路, 必要性得证.",
+    "figures": []
+}

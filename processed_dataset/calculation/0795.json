@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题19. 当 $y=2 \\cos x-3 \\sin x$ 取得最大值时, $\\tan x=$",
+    "solution": "$\\frac{3}{2} \\cdot y=\\sqrt{13}\\left(\\frac{2}{\\sqrt{13}} \\cos x-\\frac{3}{\\sqrt{13}}-\\sin x\\right)=\\sqrt{13} \\sin (\\varphi-x)$, 其中 $\\sin \\varphi=\\frac{2}{\\sqrt{13}}, \\cos \\varphi=-\\frac{3}{\\sqrt{13}}$, 所以当 $\\sin (\\varphi-x)=1$ 时, $y$ 有最大值 $\\sqrt{13}$, 此时, $\\varphi-x=2 k \\pi+\\frac{\\pi}{2}, x=\\varphi-\\left(2 k \\pi+\\frac{\\pi}{2}\\right), \\tan x=\\tan \\left[\\varphi-\\left(2 k \\pi+\\frac{\\pi}{2}\\right)\\right]=$\n$$\n-\\cot \\varphi=-\\frac{\\cos \\varphi}{\\sin \\varphi}=\\frac{3}{2} .\n$$",
+    "remark": "",
+    "figures": []
+}

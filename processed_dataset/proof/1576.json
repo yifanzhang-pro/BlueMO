@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 数列 $\\left\\{a_n\\right\\}$ 满足 $a_0=0, a_n+a_{n-2} \\geqslant 2 a_{n-1}, n=2,3, \\cdots$.\n证明: 对任意 $n \\in \\mathbf{N}^*$ 及 $k \\in \\mathbf{Z}$, 只要 $0 \\leqslant k \\leqslant n$, 就有 $n a_k \\leqslant k a_n$.",
+    "solution": "当 $k=0$ 时, 命题显然成立.\n对 $k>0$ 的情形, 要证的结论等价于 $\\frac{a_k}{k} \\leqslant \\frac{a_n}{n}$, 它是下述命题的推论: 对 $k \\geqslant 0$, 都有(1)\n$$\n(k+1) a_k \\leqslant k a_{k+1} .\n$$\n对 $k$ 归纳来证明(1)成立: 在 $k=0$ 时, 由 $a_0=0$, 知(1)成立; 现设(1)对 $k$ 成立, 则由条件知\n$$\n\\begin{aligned}\n(k+2) a_{k+1} & =2(k+1) a_{k+1}-k a_{k+1} \\leqslant 2(k+1) a_{k+1}-(k+1) a_k \\\\\n& =(k+1)\\left(2 a_{k+1}-a_k\\right) \\leqslant(k+1) a_{k+2} .\n\\end{aligned}\n$$\n所以, (1) 对 $k+1$ 也成立.\n命题获证.",
+    "remark": "",
+    "figures": []
+}

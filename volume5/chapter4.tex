@@ -1,0 +1,482 @@
+
+%%TEXT_BEGIN%%
+反证法是我们论证数学命题时常用的有力工具.
+有些问题从正面很难下手, 就应试着用反证法来考虑, 因为当我们从正面去看问题而发现条件不多时,反证假设就相当于又加了一个条件,这样自然更易人手.
+反证法有着广泛的应用,这一章我们就来看一下它在不等式证明中的应用.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 求证: 对任何实数 $x 、 y 、 z$,下述三个不等式不可能同时成立:
+$$
+|x|<|y-z|,|y|<|z-x|,|z|<|x-y| .
+$$
+%%<SOLUTION>%%
+证明:用反证法,假设三个不等式都成立,那么则有
+$$
+\left\{\begin{array}{l}
+x^2<(y-z)^2, \\
+y^2<(z-x)^2, \\
+z^2<(x-y)^2 .
+\end{array}\right.
+$$
+$\left\{\begin{array}{l}(x-y+z)(x+y-z)<0, \\ (y-z+x)(y+z-x)<0, \\ (z-x+y)(z+x-y)<0 .\end{array}\right.$
+上面三个不等式相乘即得
+$$
+(x+y-z)^2(y+z-x)^2(z+x-y)^2<0 .
+$$
+矛盾!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 若 $a 、 b 、 c 、 d$ 为非负整数, 且 $(a+b)^2+3 a+2 b=(c+d)^2+3 c+ 2 d$. 求证:
+$$
+a=c, b=d .
+$$
+%%<SOLUTION>%%
+证明:先证明 $a+b=c+d$. 用反证法.
+若 $a+b \neq c+d$, 不妨设 $a+b>c+d$, 则 $a+b \geqslant c+d+1$. 故
+$$
+\begin{aligned}
+(a+b)^2+3 a+2 b & =(a+b)^2+2(a+b)+a \\
+& \geqslant(c+d+1)^2+2(c+d+1)+a \\
+& =(c+d)^2+4(c+d)+3+a \\
+& >(c+d)^2+3 c+2 d .
+\end{aligned}
+$$
+矛盾! 所以 $a+b=c+d$, 代入原式即得 $a=c$, 进而有 $b=d$.
+说明对于整数 $x 、 y$, 若 $x>y$, 则 $x \geqslant y+1$. 这一性质在处理与整数有关的不等式时很有用.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 已知 12 个实数 $a_1, a_2, \cdots, a_{12}$ 满足:
+$$
+\left\{\begin{array}{l}
+a_2\left(a_1-a_2+a_3\right)<0, \\
+a_3\left(a_2-a_3+a_4\right)<0, \\
+\cdots \cdots \\
+a_{11}\left(a_{10}-a_{11}+a_{12}\right)<0 .
+\end{array}\right.
+$$
+求证: 从这些数中至少可找到 3 个正数和 3 个负数.
+%%<SOLUTION>%%
+证明:用反证法, 不妨设 $a_1, a_2, \cdots, a_{12}$ 中至多有两个负数, 则存在 $1 \leqslant k \leqslant 9$ 使 $a_k 、 a_{k+1} 、 a_{k+2} 、 a_{k+3}$ 都是非负实数.
+由题设可得 $\left\{\begin{array}{l}a_{k+1}\left(a_k-a_{k+1}+a_{k+2}\right)<0, \\ a_{k+2}\left(a_{k+1}-a_{k+2}+a_{k+3}\right)<0 .\end{array}\right.$
+又因为 $a_{k+1} \geqslant 0, a_{k+2} \geqslant 0$, 则 $a_{k+1}>0, a_{k+2}>0$, 且
+$$
+\left\{\begin{array}{l}
+a_k-a_{k+1}+a_{k+2}<0, \\
+a_{k+1}-a_{k+2}+a_{k+3}<0 .
+\end{array}\right.
+$$
+两式相加得 $a_k+a_{k+3}<0$, 此式与 $a_k \geqslant 0, a_{k+3} \geqslant 0$ 矛盾! 所以 $a_1, a_2, \cdots, a_{12}$ 中至少有 3 个正数和 3 个负数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 已知正整数 $a 、 b 、 c 、 d 、 n$ 满足: $n^2<a<b<c<d<(n+1)^2$, 求证: $a d \neq b c$.
+%%<SOLUTION>%%
+证明:用反证法.
+若 $\frac{b}{a}=\frac{d}{c}$, 令 $\frac{b}{a}=\frac{d}{c}=\frac{p}{q}$, 其中 $p 、 q$ 是两个互素的正整数.
+因为 $\frac{p}{q}>1$, 有 $p \geqslant q+1$, 则
+$$
+\frac{p}{q} \geqslant 1+\frac{1}{q} . \label{eq1}
+$$
+又由 $b=\frac{a p}{q}$ 得出 $q \mid a p$, 故 $q \mid a$, 同理有 $q \mid c$. 于是 $q \mid c-a$, 所以 $c-a \geqslant q$, $c \geqslant a+q$, 因此
+$$
+\frac{p}{q}=\frac{d}{c} \leqslant \frac{d}{a+q}<\frac{(n+1)^2}{n^2+q} . \label{eq2}
+$$
+由式\ref{eq1},\ref{eq2}可知 $\frac{(n+1)^2}{n^2+q}>1+\frac{1}{q}$, 即 $2 n>q+\frac{n^2}{q}$. 矛盾!故 $a d \neq b c$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 已知 $a 、 b 、 c$ 是正实数,满足 $a+b+c \geqslant a b c$. 求证: 在下列三个式子中至少有两个成立
+$$
+\frac{6}{a}+\frac{3}{b}+\frac{2}{c} \geqslant 2, \frac{6}{b}+\frac{3}{c}+\frac{2}{a} \geqslant 2, \frac{6}{c}+\frac{3}{a}+\frac{2}{b} \geqslant 2 .
+$$
+%%<SOLUTION>%%
+证明:用反证法.
+(i) 如果 $\frac{6}{a}+\frac{3}{b}+\frac{2}{c}<2, \frac{6}{b}+\frac{3}{c}+\frac{2}{a}<2, \frac{6}{c}+\frac{3}{a}+\frac{2}{b}<2$, 则 $11\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right)<6$, 与 $\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right)^2 \geqslant 3\left(\frac{1}{a b}+\frac{1}{b c}+\frac{1}{c a}\right) \geqslant 3$ 矛盾.
+(ii) 不妨设三式中仅有 2 个小于 2 , 即设
+$$
+\left\{\begin{array}{l}
+\frac{6}{b}+\frac{3}{c}+\frac{2}{a}<2, \label{eq1} \\
+\frac{6}{c}+\frac{3}{a}+\frac{2}{b}<2, \label{eq2} \\
+\frac{6}{a}+\frac{3}{b}+\frac{2}{c} \geqslant 2 . \label{eq3}
+\end{array}\right.
+$$
+由式\ref{eq1} +\ref{eq2} $\times 7$-式\ref{eq3} 可得 $\frac{43}{c}+\frac{17}{b}+\frac{17}{a}<14$.
+但上式左端 $>17\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right) \geqslant 17 \sqrt{3}>14$, 矛盾!
+因此结论成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6.  4 个实数 $a 、 b 、 c 、 d$ 满足:
+(1) $a \geqslant b \geqslant c \geqslant d$;
+(2) $a+b+c+d=9$;
+(3) $a^2+b^2+c^2+d^2=21$.
+求证: $a b-c d \geqslant 2$.
+%%<SOLUTION>%%
+证明:若 $a+b<5$, 则 $4<c+d \leqslant a+b<5$, 于是
+$$
+\begin{aligned}
+(a b+c d)+(a c+b d)+(a d+b c) & =\frac{(a+b+c+d)^2-\left(a^2+b^2+c^2+d^2\right)}{2} \\
+& =30,
+\end{aligned}
+$$
+而 $a b+c d \geqslant a c+b d \geqslant a d+b c(\Leftrightarrow(a-d)(b-c) \geqslant 0,(a-b)(c-d) \geqslant 0)$, 所以
+$$
+a b+c d \geqslant 10 .
+$$
+由 $0 \leqslant(a+b)-(c+d)<1$ 知
+$$
+(a+b)^2+(c+d)^2-2(a+b)(c+d)<1,
+$$
+又由题设知 $(a+b)^2+(c+d)^2+2(a+b)(c+d)=9^2$ ,
+上面两式相加得 $\quad(a+b)^2+(c+d)^2<41$.
+故
+$$
+\begin{aligned}
+41 & =21+2 \times 10 \leqslant\left(a^2+b^2+c^2+d^2\right)+2(a b+c d) \\
+& =(a+b)^2+(c+d)^2<41,
+\end{aligned}
+$$
+矛盾! 所以, $a+b \geqslant 5$.
+于是
+$$
+a^2+b^2+2 a b \geqslant 25=4+\left(a^2+b^2+c^2+d^2\right) \geqslant 4+a^2+b^2+2 c d,
+$$
+即 $a b-c d \geqslant 2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $x, y, z \in \mathbf{R}^{+}$, 求证:
+$$
+\sqrt{x+\sqrt[3]{y+\sqrt[4]{z}}} \geqslant \sqrt[32]{x y z}
+$$
+%%<SOLUTION>%%
+证明:用反证法.
+若存在正实数 $x_0 、 y_0 、 z_0$, 使得 $\sqrt{x_0+\sqrt[3]{y_0+\sqrt[4]{z_0}}}<\sqrt[32]{x_0 y_0 z_0}$, 那么即
+$$
+\begin{aligned}
+& \left\{\begin{array}{l}
+\sqrt{x_0}<\sqrt[32]{x_0 y_0 z_0}, \\
+\sqrt[6]{y_0}<\sqrt[32]{x_0 y_0 z_0}, \\
+\sqrt[24]{z_0}<\sqrt[32]{x_0 y_0 z_0},
+\end{array}\right. \\
+& \left\{\begin{array}{l}
+x_0^{16}<x_0 y_0 z_0 \\
+y_0^{16}<\left(x_0 y_0 z_0\right)^3 \\
+z_0^{16}<\left(x_0 y_0 z_0\right)^{12}
+\end{array}\right.
+\end{aligned}
+$$
+上面三式相乘即得 $x_0^{16} \cdot y_0^{16} \cdot z_0^{16}<\left(x_0 y_0 z_0\right)^{16}$, 矛盾! 故原不等式成立.
+从而得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设对于任意实数 $x$ 都有 $\cos (a \sin x)>\sin (b \cos x)$, 求证:
+$$
+a^2+b^2<\frac{\pi^2}{4}
+$$
+%%<SOLUTION>%%
+证明:用反证法.
+设 $a^2+b^2 \geqslant \frac{\pi^2}{4}$, 将 $a \sin x+b \cos x$ 表示为 $\sqrt{a^2+b^2} \sin (x+ \varphi)$ 的形式.
+其中, $\cos \varphi=\frac{a}{\sqrt{a^2+b^2}}, \sin \varphi=\frac{b}{\sqrt{a^2+b^2}}$.
+由于 $\sqrt{a^2+b^2} \geqslant \frac{\pi}{2}$, 故存在实数 $x_0$, 使得
+$$
+\sqrt{a^2+b^2} \sin \left(x_0+\varphi\right)=\frac{\pi}{2} \text {. }
+$$
+即
+$$
+a \sin x_0+b \cos x_0=\frac{\pi}{2} .
+$$
+由此即得 $\cos \left(a \sin x_0\right)=\sin \left(b \cos x_0\right)$, 与题设矛盾!
+所以
+$$
+a^2+b^2<\frac{\pi^2}{4} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 将一些整数排在数轴的一切有理点上, 求证: 可以找到这样一个区间,使这区间的两个端点上的数之和不大于区间中点上的数的 2 倍.
+%%<SOLUTION>%%
+证明:用反证法.
+设存在一些整数的这样的排列, 使得对于含中点 $C$ 的任意区间 $[A, B]$, 有不等式 $c<\frac{a+b}{2}$ 成立, 其中 $a 、 b 、 c$ 分别表示置于 $A 、 B 、$ C上的整数.
+设 $A 、 B 、 C 、 A_n 、 B_n$ 分别代表数轴上的点 $-1 、 1 、 0 、-\frac{1}{2^n}$ 及 $\frac{1}{2^n}(n=1$, $2,3, \cdots)$, 并设置于它们上的整数分别为 $a 、 b 、 c 、 a_n 、 b_n$,
+则
+$$
+\begin{array}{r}
+a_1<\frac{a+c}{2}, a_2<\frac{a_1+c}{2}, \\
+\max \left\{a_1, a_2\right\}<\max \{a, c\} .
+\end{array}
+$$
+同理, 有
+$$
+\begin{aligned}
+& \max \{a, c\}>\max \left\{a_1, a_2\right\}>\max \left\{a_3, a_4\right\}>\cdots, \\
+& \max \{b, c\}>\max \left\{b_1, b_2\right\}>\max \left\{b_3, b_4\right\}>\cdots .
+\end{aligned}
+$$
+所以存在 $m$, 使得
+$$
+a_{2 m} \leqslant \max \{a, c\}-m, b_{2 m} \leqslant \max \{b, c\}-m .
+$$
+故
+$$
+a_{2 m}+b_{2 m} \leqslant 1-2 m<0 \text {. }
+$$
+但 0 为区间 $\left[a_{2 m}, b_{2 m}\right]$ 的中点,矛盾!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 设 $p$ 是两个大于 2 的连续整数之积, 求证: 没有整数 $x_1, x_2, \cdots$, $x_p$ 适合方程
+$$
+\sum_{i=1}^p x_i^2-\frac{4}{4 p+1}\left(\sum_{i=1}^p x_i\right)^2=1 .
+$$
+%%<SOLUTION>%%
+证明:用反证法.
+设 $p=k(k+1), k \geqslant 3$, 则 $p \geqslant 12,4 p+1 \geqslant 4 p$.
+假设有整数 $x_1 \geqslant x_2 \geqslant \cdots \geqslant x_p$ 满足等式:
+$$
+\begin{aligned}
+4 p+1 & =(4 p+1) \sum_{i=1}^p x_i^2-4\left(\sum_{i=1}^p x_i\right)^2 \\
+& =4\left[p \sum_{i=1}^p x_i^2-\left(\sum_{i=1}^p x_i\right)^2\right]+\sum_{i=1}^p x_i^2 \\
+& =4 \sum_{1 \leqslant i<j \leqslant p}\left(x_i-x_j\right)^2+\sum_{i=1}^p x_i^2 .
+\end{aligned}
+$$
+如果所有的 $x_i$ 全相等 $(i=1,2, \cdots, p)$, 从上式, 有 $4 p+1=p x_1^2$. 矛盾!
+于是, 必有 $x_1 \geqslant x_2 \geqslant \cdots \geqslant x_l>x_{l+1} \geqslant \cdots \geqslant x_p$, 其中 $l \in \mathbf{Z}^{+}$. 我们分两种情形来讨论:
+(i)当 $2 \leqslant l<p-1$ 时,
+$$
+4 \sum_{1 \leqslant i<j \leqslant p}\left(x_i-x_j\right)^2 \geqslant 4 \sum_{i=1}^l \sum_{k=l+1}^p\left(x_i-x_k\right)^2 \geqslant 4 l(p-l),
+$$
+又由于
+$$
+\begin{aligned}
+l(p-l)-2(p-2) & =l p-l^2-2 p+4 \\
+& =(l-2)(p-l-2) \\
+& \geqslant 0,
+\end{aligned}
+$$
+有
+$$
+4 \sum_{1 \leqslant i<j \leqslant p}\left(x_i-x_j\right)^2 \geqslant 8(p-2)>4 p+1 \text {, 矛盾! }
+$$
+因而这种情况不可能.
+(ii) 当 $l=1$ 或 $l=p-1$ 时.
+不妨设 $l=1$. 即
+$$
+x_1>x_2=x_3=\cdots=x_{p-1} \geqslant x_p .
+$$
+则 $4 p+1=4 \sum_{s=2}^p\left(x_1-x_s\right)^2+4 \sum_{s=2}^{p-1}\left(x_s-x_p\right)^2+\sum_{i=1}^p x_i^2$
+$$
+\begin{aligned}
+= & 4(p-2)\left(x_1-x_2\right)^2+4\left(x_1-x_p\right)^2 \\
+& +4(p-2)\left(x_2-x_p\right)^2+\sum_{i=1}^p x_i^2,
+\end{aligned}
+$$
+故有 $x_1-x_2=1$, 于是, $9=4\left(x_1-x_p\right)^2+4(p-2)\left(x_2-x_p\right)^2+\sum_{i=1}^p x_i^2$, 故 $x_2=x_p(p \geqslant 12)$ 且 $x_1-x_p=1$, 所以 $5=x_1^2+(p-1)^2 x_2^2$.
+由于 $p \geqslant 12$, 则 $x_2=0$,于是 $x_1^2=5$, 矛盾!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 设 $a_1, a_2, \cdots, a_n$ 为正实数, 满足 $a_1+a_2+\cdots+a_n=\frac{1}{a_1}+ \frac{1}{a_2}+\cdots+\frac{1}{a_n}$. 求证:
+$$
+\frac{1}{n-1+a_1}+\frac{1}{n-1+a_2}+\cdots+\frac{1}{n-1+a_n} \geqslant 1 .
+$$
+%%<SOLUTION>%%
+证明:令 $b_i=\frac{1}{n-1+a_i}, i=1,2, \cdots, n$, 则 $b_i<\frac{1}{n-1}$, 且
+$$
+a_i=\frac{1-(n-1) b_i}{b_i}, i=1,2, \cdots, n \text {. }
+$$
+故条件转化为
+$$
+\sum_{i=1}^n \frac{1-(n-1) b_i}{b_i}=\sum_{i=1}^n \frac{b_i}{1-(n-1) b_i} .
+$$
+下面用反证法, 假设
+$$
+b_1+b_2+\cdots+b_n<1 . \label{(1)}
+$$
+由 Cauchy 不等式可得
+$$
+\sum_{j \neq i}\left(1-(n-1) b_j\right) \cdot \sum_{j \neq i} \frac{1}{1-(n-1) b_j} \geqslant(n-1)^2,
+$$
+由(1),
+$$
+\sum_{j \neq i}\left(1-(n-1) b_j\right)<(n-1) b_i,
+$$
+所以
+$$
+\sum_{j \neq i} \frac{1}{1-(n-1) b_j}>\frac{n-1}{b_i},
+$$
+故 $\quad \sum_{j \neq i} \frac{1-(n-1) b_i}{1-(n-1) b_j}>(n-1) \cdot \frac{1-(n-1) b_i}{b_i}$.
+上式对 $i=1,2, \cdots, n$ 求和, 有即
+$$
+\begin{gathered}
+\sum_{i=1}^n \sum_{j \neq i} \frac{1-(n-1) b_i}{1-(n-1) b_j}>(n-1) \sum_{i=1}^n \frac{1-(n-1) b_i}{b_i}, \\
+\sum_{j=1}^n \sum_{j \neq i} \frac{1-(n-1) b_i}{1-(n-1) b_j}>(n-1) \sum_{i=1}^n \frac{1-(n-1) b_i}{b_i}, \label{(2)}
+\end{gathered}
+$$
+而由(1),
+$$
+\sum_{i \neq j}\left(1-(n-1) b_i\right)<b_j(n-1),
+$$
+故利用(2),有
+$$
+(n-1) \sum_{j=1}^n \frac{b_j}{1-(n-1) b_j}>(n-1) \sum_{i=1}^n \frac{1-(n-1) b_i}{b_i} .
+$$
+矛盾!
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 对正整数 $n(n \geqslant 2)$, 假设 $f(x)=a_n x^n+a_{n-1} x^{n-1}+\cdots+a_1 x+a_0$ 的系数全为实数, $f(x)$ 的全部复根有负实部, 且 $f(x)$ 有一对相等实根.
+求证: 一定存在 $k, 1 \leqslant k \leqslant n-1$, 满足:
+$$
+a_k^2-4 a_{k-1} a_{k+1} \leqslant 0 .
+$$
+%%<SOLUTION>%%
+证明:当 $n=2$ 时, $f(x)=a_2(x+a)^2$, 这里 $a$ 是一个正实数,所以
+$$
+f(x)=a_2\left(x^2+2 a x+a^2\right) .
+$$
+故 $a_1=2 a a_2, a_0=a^2 a_2, a_1^2-4 a_0 a_2=0$, 结论成立.
+下设正整数 $n>2$, 且设 $a_n>0$ (若否, 则每个系数都乘以 $(-1)$ ), 则
+$$
+f(x)=(x+a)^2\left(b_{n-2} x^{n-2}+b_{n-3} x^{n-3}+\cdots+b_1 x+b_0\right)\left(a \in \mathbf{R}^{+}\right) . \label{(1)}
+$$
+因为实系数多项式的复根是成对出现的, 假设有 $k$ 对共轭复根, 记为 $x_j \pm \mathrm{i} y_j, j=1,2, \cdots, k$, 则 $x_j<0$. 其余 $n-2-2 k$ 个根为负实根, 记为 $z_1, z_2, \cdots, z_{n-2-2 k}$. 则
+$$
+\begin{aligned}
+& \frac{1}{b_{n-2}} \cdot f(x) \\
+= & (x+a)^2 \cdot \prod_{j=1}^k\left[x-\left(x_j+\mathrm{i} y_j\right)\right]\left[x-\left(x_j-\mathrm{i} y_j\right)\right] \cdot \prod_{l=1}^{n-2-2 k}\left(x-z_l\right) \\
+= & (x+a)^2 \cdot \prod_{j=1}^k\left(x^2-2 x_j x+x_j^2+y_j^2\right) \cdot \prod_{l=1}^{n-2-2 k}\left(x-z_l\right),
+\end{aligned} \label{(2)}
+$$
+从(1)和(2)可得, $b_j>0, j=0,1,2, \cdots, n-2$. 且
+$$
+\begin{aligned}
+f(x) & =(x+a)^2\left(b_{n-2} x^{n-2}+b_{n-3} x^{n-3}+\cdots+b_1 x+b_0\right) \\
+& =b_{n-2} x^n+\left(2 a b_{n-2}+b_{n-3}\right) x^{n-1}+\left(a^2 b_{n-2}\right.
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& \left.+2 a b_{n-3}+b_{n-4}\right) x^{n-2}+\cdots+\left(a^2 b_2+2 a b_1\right. \\
+& \left.+b_0\right) x^2+\left(a^2 b_1+2 a b_0\right) x+a^2 b_0 .
+\end{aligned}
+$$
+为便于统一书写, 引人 $b_i$ : 当 $i<0$ 时, $b_i=0$; 当 $i>n-2$ 时, $b_i=0$. 故
+$$
+a_j=a^2 b_j+2 a b_{j-1}+b_{j-2}, j=0,1,2, \cdots, n .
+$$
+当 $n=3$ 时,可用反证法证明.
+设
+$$
+\begin{gathered}
+a_1^2-4 a_0 a_2>0, a_2^2-4 a_1 a_3>0 . \\
+a_0=a^2 b_0, a_1=a^2 b_1+2 a b_0,
+\end{gathered}
+$$
+因为
+$$
+a_2=2 a b_1+b_0, a_3=b_1 .
+$$
+所以
+$$
+\begin{aligned}
+0 & <a_1^2-4 a_0 a_2=\left(a^2 b_1+2 a b_0\right)^2-4 a^2 b_0\left(2 a b_1+b_0\right) \\
+& =a^3 b_1\left(a b_1-4 b_0\right)
+\end{aligned}
+$$
+于是
+$$
+a b_1>4 b_0 . \label{(3)}
+$$
+又由于
+$$
+\begin{aligned}
+0 & <a_2^2-4 a_1 a_3=\left(2 a b_1+b_0\right)^2-4\left(a^2 b_1+2 a b_0\right) b_1 \\
+& =b_0\left(b_0-4 a b_1\right)
+\end{aligned}
+$$
+故
+$$
+b_0>4 a b_1 .   \label{(4)}
+$$
+(3)与(4)矛盾!
+当 $n>3$ 时,也使用反证法证明.
+设对于 $k \in\{1,2, \cdots, n-1\}$ 都有 $a_k^2-4 a_{k-1} a_{k+1}>0$, 则
+$$
+\begin{gathered}
+0<a_k^2-4 a_{k-1} a_{k+1} \\
+=\left(a^2 b_k+2 a b_{k-1}+b_{k-2}\right)^2-4\left(a^2 b_{k-1}+2 a b_{k-2}\right. \\
+\left.\quad+b_{k-3}\right)\left(a^2 b_{k+1}+2 a b_k+b_{k-1}\right) \\
+<b_{k-2}^2+a^4 b_k^2-4 a b_{k-2} b_{k-1}-4 a^3 b_{k-1} b_k . \\
+0=a^3 b_k\left(a b_k-4 b_{k-1}\right)+b_{k-2}\left(b_{k-2}-4 a b_{k-1}\right) . \\
+q_k=a b_k-4 b_{k-1}, r_k=b_{k-1}-4 a b_k \\
+k=1,2, \cdots, n-1 . \\
+0<a^3 b_k q_k+b_{k-2} r_{k-1} .
+\end{gathered}
+$$
+令
+$$
+\begin{gathered}
+q_k=a b_k-4 b_{k-1}, r_k=b_{k-1}-4 a b_k \\
+k=1,2, \cdots, n-1 \\
+0<a^3 b_k q_k+b_{k-2} r_{k-1} . \label{(5)}
+\end{gathered}
+$$
+当 $k=1$ 时,
+$$
+q_1=a b_1-4 b_0 .
+$$
+从(5)有 $0<a^3 b_1 q_1$, 故 $q_1>0$, 有 $a b_1>4 b_0, r_1=b_0-4 a b_1<0$.
+当 $k=n-1$ 时, 从 (5) 有 $b_{n-3} r_{n-2}>0$, 故 $r_{n-2}>0$.
+用 $u$ 表示使 $r_u>0$ 的最小的下标 $(2 \leqslant u \leqslant n-2)$, 即 $r_{u-1} \leqslant 0$.
+在(5)中令 $k=u$, 由 $0<a^3 b_u q_u+b_{u-2} r_{u-1}$, 有 $q_u>0$, 此时有
+$$
+\begin{aligned}
+& q_u=a b_u-4 b_{u-1}>0, \text { 则 } a b_u>4 b_{u-1} . \label{(6)} \\
+& r_u=b_{u-1}-4 a b_u>0, \text { 则 } b_{u-1}>4 a b_u . \label{(7)}
+\end{aligned}
+$$
+由(6)和(7)即得矛盾!
+%%PROBLEM_END%%
+
+

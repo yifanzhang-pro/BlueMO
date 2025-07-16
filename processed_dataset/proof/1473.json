@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题10. 设数列 $\\left\\{a_n\\right\\}$ 满足: $a_1=a_2=1, a_{n+2}=a_{n+1}+a_n, S_n$ 为数列 $\\left\\{a_n\\right\\}$ 的前 $n$ 项之和.\n求证: $S_n=\\sum_{k=1}^n \\frac{a_k}{2^k}<2$.",
+    "solution": "设 $b_k=\\frac{a_k}{2^k}$, 则 $b_{k+2}=\\frac{1}{2} b_{k+1}+\\frac{1}{4} b_k, b_1=\\frac{1}{2}, b_2=\\frac{1}{4}$, 故\n$$\nb_{k+1}=\\frac{1}{2} b_k+\\frac{1}{4} b_{k-1}, b_k=\\frac{1}{2} b_{k-1}+\\frac{1}{4} b_{k-2}, \\cdots, b_3=\\frac{1}{2} b_2+\\frac{1}{4} b_1,\n$$\n相加, 得 $S_{k+2}-b_1-b_2=\\frac{1}{2} S_{k+1}-\\frac{1}{2} b_1+\\frac{1}{4} S_k, S_{k+2}=\\frac{1}{2} S_{k+1}+\\frac{1}{4} S_k+\\frac{1}{2}$, 接着用数学归纳法即可证明 $S_n<2$.",
+    "remark": "",
+    "figures": []
+}

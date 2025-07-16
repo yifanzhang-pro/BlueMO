@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题5 证明: 三角形三条高线的中点共线的充分必要条件是这个三角形是直角三角形.",
+    "solution": "在 $\\triangle A B C$ 中, 三条高线的中点 $A^{\\prime} 、 B^{\\prime} 、 C^{\\prime}$ 分别在中位线 $\\triangle M N P$ 三边所在直线上.\n若 $\\triangle A B C$ 是锐角三角形, 则点 $A^{\\prime} 、 B^{\\prime} 、 C^{\\prime}$ 在 $\\triangle M N P$ 的三边上, 故此三点不共线; 若 $\\triangle A B C$ 是钝角三角形, 则点 $A^{\\prime} 、 B^{\\prime} 、 C^{\\prime}$ 中有两点在 $\\triangle M N P$ 的两条边的延长线上, 另一点在第三条边上, 故此三点不共线; 若 $\\triangle A B C$ 是直角三角形, 则点 $A^{\\prime} 、 B^{\\prime} 、 C^{\\prime}$ 在直角所对的中位线上.",
+    "remark": "",
+    "figures": []
+}

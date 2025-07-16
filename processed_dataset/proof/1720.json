@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设 $O$ 和 $I$ 分别为 $\\triangle A B C$ 的外心和内心, $\\triangle A B C$ 的内切圆与边 $B C 、 C A 、 A B$ 分别相切于点 $D 、 E 、 F$, 直线 $F D$ 和 $C A$ 相交于点 $P$, 直线 $D E$ 与 $A B$ 相交于点 $Q$, 点 $M, N$ 分别为线段 $P E 、 Q F$ 的中点.\n求证: $O I \\perp M N$.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c5i10.png>), 考虑 $\\triangle A B C$ 与截线 $P F D$. 由梅氏定理:\n$$\n\\frac{C P}{P A} \\cdot \\frac{A F}{F B} \\cdot \\frac{B D}{D C}=1 \\Rightarrow \\frac{P A}{C P}=\\frac{A F}{D C}=\\frac{A F}{E C} .\n$$\n记 $\\triangle A B C$ 的三边分别为 $a 、 b 、 c$, 令 $p= \\frac{a+b+c}{2}$,并不妨设 $a>c$, 则\n$$\n\\frac{P A}{C P}=\\frac{P A}{C A+P A}=\\frac{P A}{P A+b}=\\frac{p-a}{p-c}, P A=\\frac{(p-a) b}{a-c} .\n$$\n$$\n\\begin{aligned}\n& \\text { 而 } P E=P A+A E=\\frac{(p-a) b}{a-c}+p-a=\\frac{2(p-a)(p-c)}{a-c}, \\\\\n& M E=\\frac{1}{2} P E=\\frac{(p-a)(p-c)}{a-c}, \\\\\n& M A=M E-A E=\\frac{(p-a)(p-c)}{a-c}-(p-a)=\\frac{(p-a)^2}{a-c}, \\\\\n& M C=M E+E C=\\frac{(p-a)(p-c)}{a-c}+(p-c)=\\frac{(p-c)^2}{a-c} .\n\\end{aligned}\n$$\n于是 $M A \\cdot M C=M E^2$.\n由于 $M E$ 是 $M$ 到 $\\triangle A B C$ 内切圆切线长, $M E^2$ 是点 $M$ 到内切圆 $I$ 的幂, 而 $M A \\cdot M C$ 是 $M$ 到 $\\triangle A B C$ 外接圆 $O$ 的幂.\n等式 \" $M A \\cdot M C=M E^2$ \" 表示点 $M$ 到 $\\triangle A B C$ 外接圆与内切圆的幕相等, 因而点 $M$ 在 $\\triangle A B C$ 外接圆 $O$ 与内切圆 $I$ 的根轴上.\n同理, 点 $N$ 也在 $\\triangle A B C$ 的外接圆 $O$ 与内切圆 $I$ 的根轴上, 由根轴定理知 $O I \\perp M N$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c5i10.png"
+    ]
+}

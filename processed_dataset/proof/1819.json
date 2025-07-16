@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 设正方形 $P Q R S$ 内接于 $\\triangle A B C$, 其顶点 $P$ 和 $Q$ 在边 $B C$ 上, 顶点 $R$ 和 $S$ 分别在边 $C A$ 和 $A B$ 上, 记其中心为 $A_1$. 同样地, 定义两个顶点分别在边 $C A$ 和 $A B$ 上的内接正方形的中心依次为 $B_1$ 和 $C_1$. 求证: 直线 $A A_1$ 、 $B B_1 、 C C_1$ 三线共点.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c2a9.png>),连结 $S A_1 、 R A_1$. 于是, $S A_1=R A_1$. 由正弦定理有\n$$\n\\frac{\\sin \\angle S A A_1}{\\sin \\angle A S A_1}=\\frac{S A_1}{A A_1}=\\frac{R A_1}{A A_1}=\\frac{\\sin \\angle A_1 A R}{\\sin \\angle A R A_1},\n$$\n则 $\\frac{\\sin \\angle B A A_1}{\\sin \\angle A_1 A C}=\\frac{\\sin \\angle A S A_1}{\\sin \\angle A R S_1}$. 因为 $A_1$ 为正方形\n$P Q R S$ 的中心, 所以, $\\angle S R A_1=\\angle R S A_1=45^{\\circ}$. 又因为 $S R / / B C$, 所以, $\\angle A S R=\\angle B, \\angle A R S=\\angle C$. 则 $\\angle A S A_1=\\angle B+45^{\\circ}, \\angle A R A_1=\\angle C+45^{\\circ}$.\n从而, $\\frac{\\sin \\angle B A A_1}{\\sin \\angle A_1 A C}=\\frac{\\sin \\left(B+45^{\\circ}\\right)}{\\sin \\left(C+45^{\\circ}\\right)}$. 同理, $\\frac{\\sin \\angle A C C_1}{\\sin \\angle C_1 C B}=\\frac{\\sin \\left(A+45^{\\circ}\\right)}{\\sin \\left(B+45^{\\circ}\\right)}$,\n$$\n\\frac{\\sin \\angle C B B_1}{\\sin \\angle B_1 B A}=\\frac{\\sin \\left(C+45^{\\circ}\\right)}{\\sin \\left(A+45^{\\circ}\\right)} \\text {. 故 } \\frac{\\sin \\angle B A A_1}{\\sin \\angle A_1 A C} \\cdot \\frac{\\sin \\angle A C C_1}{\\sin \\angle C_1 C B} \\cdot \\frac{\\sin \\angle C B B_1}{\\sin \\angle B_1 B A}=1 \\text {. }\n$$\n由角元 Ceva 定理的逆定理知结论成立.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2a9.png"
+    ]
+}

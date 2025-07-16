@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-1.tex",
+    "problem_type": "proof",
+    "problem": "例24. 设正实数 $x_1, x_2, \\cdots, x_n$ 满足 $x_1 x_2 \\cdots x_n=1$. 证明:\n$$\n\\sum_{i=1}^n \\frac{1}{n-1+x_i} \\leqslant 1 \\text {. }\n$$",
+    "solution": "证明:用反证法.\n假设\n$$\n\\sum_{i=1}^n \\frac{1}{n-1+x_i}>1 . \\label{(20)}\n$$\n则对任意的 $k(k \\in\\{1,2, \\cdots, n\\})$, 由式(20)有\n$$\n\\begin{aligned}\n& \\frac{1}{n-1+x_k}>1-\\sum_{\\substack{1 \\leqslant i \\leqslant n \\\\\ni \\neq k}} \\frac{1}{n-1+x_i} \\\\\n&=\\sum_{\\substack{1 \\leqslant i \\leqslant n \\\\\ni \\neq k}}\\left(\\frac{1}{n-1}-\\frac{1}{n-1+x_i}\\right) \\\\\n&=\\sum_{\\substack{1 \\leqslant i \\leqslant n \\\\\ni \\neq k}} \\frac{x_i}{(n-1)\\left(n-1+x_i\\right)} \\\\\n& \\geqslant(n-1)\\left[\\prod_{\\substack{1 \\leqslant i \\leqslant n \\\\\ni \\neq k}} \\frac{x_i}{(n-1)\\left(n-1+x_i\\right)}\\right]^{\\frac{1}{n-1}} \\\\\n&=\\left(\\prod_{\\substack{1 \\leqslant i \\leqslant n \\\\\ni \\neq k}} \\frac{x_i}{n-1+x_i}\\right)^{\\frac{1}{n-1}},\n\\end{aligned}\n$$\n即对 $1 \\leqslant k \\leqslant n$, 均有\n$$\n\\frac{1}{n-1+x_k}>\\left(\\prod_{\\substack{1 \\leqslant i \\leqslant n \\\\ i \\neq k}} \\frac{x_i}{n-1+x_i}\\right)^{\\frac{1}{n-1}}\n$$\n取积得\n$$\n\\prod_{k=1}^n \\frac{1}{n-1+x_k}>\\prod_{k=1}^n\\left(\\prod_{\\substack{1 \\leqslant i \\leqslant n \\\\ i \\neq k}} \\frac{x_i}{n-1+x_i}\\right)^{\\frac{1}{n-1}}=\\prod_{k=1}^n \\frac{x_k}{n-1+x_k} .\n$$\n则 $\\prod_{k=1}^n x_k<1$, 这与 $\\prod_{k=1}^n x_k=1$ 矛盾.\n所以,假设不成立, 必有\n$$\n\\sum_{i=1}^n \\frac{1}{n-1+x_i} \\leqslant 1 .\n$$",
+    "remark": "",
+    "figures": []
+}

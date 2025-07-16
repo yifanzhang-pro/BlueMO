@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题15: 考虑实数 $x$ 在 3 进制中的表达式.\n$K$ 是区间 $[0,1]$ 内所有这样的数 $x$ 的集合,并且 $x$ 的每位数字是 0 或 2. 如果 $S=\\{x+y \\mid x, y \\in K\\}$, 求证: $S=\\{z \\mid 0 \\leqslant z \\leqslant 2\\}=[0,2]$.",
+    "solution": "解: 在 $K$ 内 $x$ 和 $y$ 的每位数字是 0 或 2 , 因此, $\\frac{x}{2}$ 和 $\\frac{y}{2}$ 的每位数字是 0 或 1 , 从而 $\\frac{x}{2}+\\frac{y}{2}$ 的每位数字在 3 进制下是 $0 、 1$ 或 2 , 并且由 $x \\in[0,1]$, $y \\in[0,1]$ 可知 $\\frac{x}{2}+\\frac{y}{2} \\in[0,1]$. 反过来, 对于 $[0,1]$ 上的任何一个数, 它在 3 进制下的每位数字是 $0 、 1$ 或 2 , 显然可以写成两个在 3 进制下每位数字是 0或 1 的数的和.\n也就是说, 都可以写成 $\\frac{x}{2}+\\frac{y}{2}, x, y \\in K$ 的形式.\n因此, 我们有 $\\left\\{\\frac{x}{2}+\\frac{y}{2} \\mid x, y \\in K\\right\\}=[0,1]$, 故得 $S=\\{x+y \\mid x, y \\in K\\}=[0,2]$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter16.tex",
+    "problem_type": "calculation",
+    "problem": "例4. 设 $n(n \\geqslant 3)$ 是给定的正整数,对于 $n$ 个给定的实数 $a_1, a_2, \\cdots$, $a_n$, 记 $\\left|a_i-a_j\\right|(1 \\leqslant i<j \\leqslant n)$ 的最小值为 $m$. 求在 $a_1^2+a_2^2+\\cdots+a_n^2=1$ 的条件下,上述 $m$ 的最大值.",
+    "solution": "解:妨设 $a_1 \\leqslant a_2 \\leqslant \\cdots \\leqslant a_n$. 我们从两个方面来估计 $S=\\sum_{1 \\leqslant i<j \\leqslant n}\\left(a_i-a_j\\right)^2$.\n一方面\n$$\nS=(n-1) \\sum_{i=1}^n a_i^2-2 \\sum_{1 \\leqslant i<j \\leqslant n} a_i a_j=n \\cdot \\sum_{i=1}^n a_i^2-\\left(\\sum_{i=1}^n a_i\\right)^2 \\leqslant n .\n$$\n另一方面, 因为 $a_2-a_1 \\geqslant m, a_3-a_2 \\geqslant m, \\cdots, a_n-a_{n-1} \\geqslant m$, 所以当 $1 \\leqslant i<j \\leqslant n$ 时, 有 $a_j-a_i \\geqslant(j-i) m$. 于是\n$$\nS \\geqslant m^2 \\sum_{1 \\leqslant i<j \\leqslant n}(i-j)^2=m^2 \\sum_{k=1}^{n-1}(n-k) k^2=\\frac{m^2}{12} n^2\\left(n^2-1\\right) .\n$$\n从上述两个方面知\n$$\nn \\geqslant \\frac{m^2}{12} n^2\\left(n^2-1\\right)\n$$\n所以\n$$\nm \\leqslant \\sqrt{\\frac{12}{n\\left(n^2-1\\right)}}\n$$\n又当 $\\sum_{i=1}^n a_i=0$, 且 $a_1, a_2, \\cdots, a_n$ 成等差数列时, 上述不等式取等号, 故 $m$ 的最大值为 $\\sqrt{\\frac{12}{n\\left(n^2-1\\right)}}$.",
+    "remark": "注:本题结论易猜难证.\n与 $m$ 相关的量很多,之所以选择 $S$ 作为\"算两次\" 的量, 是因为一方面 $S$ 具有轮换对称性, 与条件 $a_1^2+a_2^2+\\cdots+a_n^2=1$ 的结构相对统一; 另一方面, 在不失一般性对 $a_i$ 进行排序之后, 又可顺利地对 $S$ 作出与 $m$ 有关的下界估计.\n两者结合即得出 $m$ 的上界.\n因此, 解题时如何选择算两次的\"量\"很重要, \"算\"有时并不困难,但须注意一定的技巧.",
+    "figures": []
+}

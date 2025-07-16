@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例5 已知函数 $f(x)=\\frac{\\sqrt{2} \\sin x}{\\sqrt{1+\\cos 2 x}}$.\n(1) 求函数 $f(x)$ 的定义域、值域、最小正周期;\n(2) 判断函数 $f(x)$ 的奇偶性.",
+    "solution": "解:(1) $\\begin{aligned} f(x) & =\\frac{\\sqrt{2} \\sin x}{\\sqrt{1+\\cos 2 x}}=\\frac{\\sin x}{|\\cos x|} \\\\ & =\\left\\{\\begin{array}{l}\\tan x, x \\in\\left(2 k \\pi-\\frac{\\pi}{2}, 2 k \\pi+\\frac{\\pi}{2}\\right) \\\\ -\\tan x, x \\in\\left(2 k \\pi+\\frac{\\pi}{2}, 2 k \\pi+\\frac{3 \\pi}{2}\\right)\\end{array} k \\in \\mathbf{Z},\\right.\\end{aligned}$\n定义域: $\\left\\{x \\mid x \\neq k \\pi+\\frac{\\pi}{2}, k \\in \\mathbf{Z}\\right\\}$, 值域为: $\\mathbf{R}$, 最小正周期为 $T=2 \\pi$.\n(2) $f(-x)=\\frac{\\sin (-x)}{|\\cos (-x)|}=-\\frac{\\sin x}{|\\cos x|}=-f(x)$, 且定义域关于原点对称, 所以 $f(x)$ 为奇函数.\n评注判断函数周期性时, 一要恒等变形, 二要注意定义域的影响.",
+    "remark": "",
+    "figures": []
+}

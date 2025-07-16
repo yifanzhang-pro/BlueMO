@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise9.tex",
+    "problem_type": "calculation",
+    "problem": "问题2 在所有四位数的号码 (从 0000 到 9999) 中, 有多少个号码的前两位数字之和同末两位数字之和相等?",
+    "solution": "它们的前两位数字之和与末两位数字之和等于固定的 $k=0,1, \\cdots$, 18 , 共有这样的四位数 $1^2+2^2+\\cdots+19^2=2470$ 个.",
+    "remark": "",
+    "figures": []
+}

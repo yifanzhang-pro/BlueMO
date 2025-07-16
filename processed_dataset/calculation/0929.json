@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter1.tex",
+    "problem_type": "calculation",
+    "problem": "例2. 已知 $\\frac{z}{z-2}$ 是纯虚数, 求复数 $z$ 在复平面内对应点轨迹的方程.",
+    "solution": "分析:与解设 $z=x+y \\mathrm{i}(x, y \\in \\mathbf{R})$, 则\n$$\n\\frac{z}{z-2}=\\frac{x+y \\mathrm{i}}{(x-2)+y \\mathrm{i}}=\\frac{(x+y \\mathrm{i})[(x-2)-y \\mathrm{i}]}{(x-2)^2+y^2}\n$$\n$$\n\\begin{aligned}\n& =\\frac{x(x-2)+y^2+[y(x-2)-x y] \\mathrm{i}}{(x-2)^2+y^2} \\\\\n& =\\frac{x(x-2)+y^2-2 y \\mathrm{i}}{(x-2)^2+y^2} .\n\\end{aligned}\n$$\n因为 $\\frac{z}{z-2}$ 是纯虚数, 所以 $\\left\\{\\begin{array}{l}x(x-2)+y^2=0, \\\\ y \\neq 0,\\end{array}\\right.$ 即复数 $z$ 在复平面内对应点的轨迹是圆 (除去两点), 轨迹方程是\n$$\n(x-1)^2+y^2=1(y \\neq 0) .\n$$",
+    "remark": "注:初学复数的读者要千万留心: 纯虚数不仅是实部等于 0 , 还要求虚部不等于 0 .",
+    "figures": []
+}

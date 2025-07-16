@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 在锐角不等边 $\\triangle A B C$ 中, $A C>B C$. 设 $O 、 H$ 分别是 $\\triangle A B C$ 的外心、垂心, $C F \\perp A B$ 于点 $F$. 令 $P$ 是直线 $A B$ 上一点 $(P \\neq A)$, 满足 $A F=P F$. 记 $G$ 是边 $A C$ 的中点, 直线 $P H$ 与 $B C 、 O G$ 与 $F X 、 O F$ 与 $A C$ 分别交于点 $X 、 Y 、 Z$. 证明: $F 、 G 、 Z 、 Y$ 四点共圆.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c1a2-1.png>), , 首先, 由 $G$ 是 $A C$ 中点, $O 、 H$ 分别为 $\\triangle A B C$ 的外心, 垂心, 及欧拉定理知: $G 、 O 、 H 、 B$ 四点共线.\n要证 $Z 、 G 、 F 、 Y$ 四点共圆, 由 $\\angle Y G Z=\\angle O G Z=90^{\\circ}$, 知只需证 $\\angle O F Y=90^{\\circ}$, 即 $\\angle O F X=90^{\\circ}$.\n如图(<FilePath:./images/volume7/figures/fig-c1a2-2.png>), , 作 $O E \\perp A B$. 则 $C H=2 O E$. 由题设有 $P B=P F-B F=A F- B F=2 E F$. 另一方面, 由 $\\angle H P B=\\angle H A B=\\angle H C B$, 知 $P 、 B 、 H 、 C$ 四点共圆.\n因此, $\\triangle P X B \\backsim \\triangle C X H$. 作 $X L \\perp A B$ 于点 $L, X N \\perp C F$ 于点 $N$. 则 $\\frac{X L}{L F}= \\frac{X L}{X N}=\\frac{P B}{C H}=\\frac{2 E F}{2 O E}=\\frac{E F}{O E}$. 又 $\\angle X L F=\\angle F E O=90^{\\circ}$. 于是, $\\triangle X L F \\backsim \\triangle F E O$. 从而, $\\angle X F L=\\angle F O E$. 故 $\\angle X F O=180^{\\circ}-\\angle X F L-\\angle O F E= 180^{\\circ}-\\angle F O E-\\angle O F E=90^{\\circ}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c1a2-1.png",
+        "./images/volume7/figures/fig-c1a2-2.png"
+    ]
+}

@@ -1,0 +1,246 @@
+
+%%TEXT_BEGIN%%
+最小数原理与无穷递降法.
+最小数原理在数学竞赛中经常被用到,其最基本的表达形式如下:
+最小数原理:正整数集 $\mathbf{N}^*$ 的任何一个非空子集 $T$ 必有最小元素, 即存在正整数 $t_0 \in T$, 使对任意的 $t \in T$, 都有 $t_0 \leqslant t$.
+证明考虑集合 $S=\left\{x \mid x \in \mathbf{N}^*, x \notin T\right\}$, 即 $S=\mathbf{N}^* \backslash T$.
+若 $T$ 中没有最小元, 我们证明: 每一个正整数都属于 $S$, 从而导致 $T=\varnothing$, 矛盾.
+首先, $1 \in S$, 否则 $1 \in T$, 则 1 是 $T$ 中的最小元.
+其次, 设 $1,2, \cdots, n \in S$, 即 $1,2, \cdots, n$ 都不是 $T$ 的元素, 这时, 若 $n+ 1 \in T$, 则 $n+1$ 为 $T$ 的最小元, 这与 $T$ 中没有最小元矛盾.
+所以 $n+1 \in S$. 从而, 由第二数学归纳法知, 对任意 $n \in \mathbf{N}^*$, 都有 $n \in S$. 所以,最小数原理成立.
+具体处理问题时,我们还会用到上述原理的一些其他形式或推论.
+1. 最大数原理设 $M$ 是正整数集 $\mathbf{N}^*$ 的非空子集,且 $M$ 有上界,即存在 $a \in \mathbf{N}^*$, 使得对任意 $x \in M$, 都有 $x \leqslant a$. 则 $M$ 有最大元.
+2. 任意一个由实数组成的有限集中, 必有最小元素, 也必有最大元素.
+3. 排序原理由 $n$ 个实数组成的集合 $M$ 可以写为 $M=\left\{x_1, \cdots, x_n\right\}$, 这里 $x_1<x_2<\cdots<x_n$.
+最小数原理引导我们从极端 (最小元或最大元) 出发讨论问题, 蕴含了 "退"的思想,退到最简单而又不失去本质的地方去思考.
+无穷递降源于不定方程的求解, Fermat 用此方法在约 400 年前就证明了: $x^4+y^4=z^4$ 没有正整数解.
+其基本思想如下:
+"如果关于正整数 $n$ 的命题 $P(n)$ 对 $n=n_0$ 成立, 那么可以证出对某个 $n_1 \in \mathbf{N}^*, n_1<n_0$, 命题 $P\left(n_1\right)$ 也成立.
+"则对任意 $n \in \mathbf{N}^*, P(n)$ 都不成立.
+它是最小数原理的一种表现形式, 在处理数论问题, 特别是不定方程时经常会用到.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 给定平面上任意 $n$ 个不同的点.
+证明: 存在一个过其中两个点的圆,使得其余 $n-2$ 个点都在此圆的外部.
+%%<SOLUTION>%%
+证明:由于 $n$ 个点中每两点之间的距离只有 $\mathrm{C}_n^2$ 个, 故必有两点 (设为 $A$ 、 $B$ ), 它们之间的距离最小 (如果有多个这样的点对, 从中任取一对即可).
+现考虑以线段 $A B$ 为直径的圆 $P$, 则对 $P$ 内任意一点 $C, \triangle A B C$ 的最长边为 $A B$. 由 $A B$ 的最小性, 可知剩下的 $n-2$ 个点都在圆 $P$ 外.
+命题获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 证明:不存在有理数 $x 、 y 、 z$, 使得
+$$
+x^2+y^2+z^2+3(x+y+z)+5=0 . \label{eq1}
+$$
+成立.
+%%<SOLUTION>%%
+证明:将式\ref{eq1}两边乘以 4 后配方, 得
+$$
+(2 x+3)^2+(2 y+3)^2+(2 z+3)^2=7 .
+$$
+如果存在满足式\ref{eq1}的三个有理数 $x 、 y 、 z$, 那么不定方程
+$$
+a^2+b^2+c^2=7 m^2 . \label{eq2}
+$$
+有整数解 $(a, b, c, m)$ 使得 $m>0$.
+如果式\ref{eq2}有整数解 $\left(a_0, b_0, c_0, m_0\right), m_0>0$, 我们证明方程(2)有一组整数解 $\left(a_1, b_1, c_1, m_1\right), m_1>0$, 且 $m_1<m_0$. 这样, 由无穷递降的思想, 就会找到一个递减的正整数数列 $m_0>m_1>m_2>\cdots$, 从而导致矛盾.
+事实上,若 $m_0$ 为奇数, 则 $m_0^2 \equiv 1(\bmod 8)$, 即 $a_0^2+b_0^2+c_0^2 \equiv 7(\bmod 8)$, 但是一个数的完全平方数 $\equiv 0,1$ 或 $4(\bmod 8)$, 从而 $a_0^2+b_0^2+c_0^2 \equiv 0,1,2,3,4$, $5,6(\bmod 8)$, 不会出现 $a_0^2+b_0^2+c_0^2 \equiv 7(\bmod 8)$ 的情形, 矛盾, 故 $m_0$ 为偶数.
+这时 $a_0^2+b_0^2+c_0^2=7 m_0^2 \equiv 0(\bmod 4)$, 又完全平方数 $\equiv 0$ 或 $1(\bmod 4)$, 故 $a_0$ 、 $b_0 、 c_0$ 都必须为偶数, 这样令 $a_1=\frac{1}{2} a_0, b_1=\frac{1}{2} b_0, c_1=\frac{1}{2} c_0, m_1=\frac{1}{2} m_0$, 就得到了一组满足 $0<m_1<m_0$ 的解 $\left(a_1, b_1, c_1, m_1\right)$.
+综上所述, 式\ref{eq1}没有有理数解.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $P_1, P_2, \cdots, P_n$ 是平面上不共线的 $n$ 个点.
+证明: 至少有一条直线恰过其中的两个点.
+%%<SOLUTION>%%
+证明:这是著名的 Sylvester 定理,有许多证明方法, 其中较简洁的一个证明就是用最小数原理获得的.
+考虑过 $P_1, \cdots, P_n$ 中至少两点的直线 $P_i P_j$, 该直线外的点到它的距离大于 0 , 这样的距离只有有限个 (因为直线的条数至多 $\mathrm{C}_n^2$ 条, 而 $P_1, \cdots, P_n$ 在每条直线外的点也是有限个), 从而这些距离中有一个最小值.
+不妨设,在上面的距离中, 点 $P_1$ 到直线 $P_2 P_3$ 的距离最短.
+我们证明直线 $P_2 P_3$ 上没有 $P_1, \cdots, P_n$ 中的其他点.
+若直线 $P_2 P_3$ 上还有 $P_1, \cdots, P_n$ 中的点, 不妨设 $P_4$ 在直线 $P_2 P_3$ 上, 设 $P_1$ 到直线 $P_2 P_3$ 的射影为 $Q$, 则 $P_2, P_3, P_4$ 中必有两点在 $Q$ 的同侧, 不妨设 $P_2$, $P_3$ 在 $Q$ 的同侧, 并设 $\left|Q P_2\right|<\left|Q P_3\right|$ (如图 (<FilePath:./figures/fig-c1i4.png>) 所示). 则 $P_2$ 到直线 $P_1 P_3$ 的距离不超过 $Q$ 到直线 $P_1 P_3$ 的距离 $Q R$, 而 $Q R<P_1 Q$, 这与 $P_1 Q$ 的最小性矛盾.
+从而 $P_2 P_3$ 上没有 $P_1, \cdots, P_n$ 中的其他点.
+所以, 命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 证明: 不定方程
+$$
+x^4+y^4=z^4
+$$
+没有正整数解.
+%%<SOLUTION>%%
+证明:只需证方程
+$$
+x^4+y^4=z^2 . \label{eq1}
+$$
+没有正整数解.
+若否, 设式\ref{eq1}有正整数解 $(x, y, z)$, 我们取使 $z$ 最小的那组解.
+这时, 设 $x$ 、 $y$ 的最大公因数为 $d$, 记为 $(x, y)=d$, 则 $d^2 \mid\left(x^4+y^4\right)$, 故 $d^2 \mid z^2$, 进而 $d \mid z$, 所以 $d=1$ (否则 $\left(\frac{x}{d}, \frac{y}{d}, \frac{z}{d}\right)$ 也是(1) 的解), 因此, $\left(x^2, y^2, z\right)$ 是不定方程
+$$
+u^2+v^2=w^2 . \label{eq2}
+$$
+的一组本原解, 不妨设 $y^2$ 为偶数, 由式\ref{eq2}的通解, 知存在 $a, b \in \mathbf{N}^*,(a, b)= 1, a 、 b$ 一奇一偶, 使得
+$$
+x^2=a^2-b^2, y^2=2 a b, z=a^2+b^2 .
+$$
+由 $y^2$ 为偶数, 知 $x$ 为奇数, 进而, 由 $x^2+b^2=a^2$, 可知存在 $m 、 n \in \mathbf{N}^*,(m$, $n)=1, m 、 n$ 一奇一偶, 使得
+$$
+x=m^2-n^2, b=2 m n, a=m^2+n^2 .
+$$
+此时 $y^2=4 m n\left(m^2+n^2\right)$, 由 $(m, n)=1$, 知 $\left(m, m^2+n^2\right)=\left(n, m^2+n^2\right)=$ 1 , 于是 $m^2+n^2 、 m 、 n$ 都是完全平方数.
+这样, 可设 $m=r^2, n=s^2, m^2+n^2= z_1^2, r, s, z_1 \in \mathbf{N}^*$, 就有 $r^4+s^4=z_1^2$, 其中 $z_1^2=a<z$, 与 $(x, y, z)$ 是(1)的正整数解中 $z$ 最小那组矛盾.
+所以, 式\ref{eq1}没有正整数解, 命题获证.
+说明这里用到无穷递降法的另一种表述: "若命题 $P(n)$ 对某些 $n \in \mathbf{N}^*$ 成立, 设 $n_0$ 是使 $P(n)$ 成立的最小正整数 ( $n_0$ 的存在性由最小数原理可知), 则可以证明存在 $n_1 \in \mathbf{N}^*, n_1<n_0$ 使得 $P\left(n_1\right)$ 成立.
+"依此导出对任意 $n \in \mathbf{N}^*$, 都有 $P(n)$ 不成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设 $n$ 为给定的正整数.
+问: 是否存在一个元素个数大于 $2 n$ 的由非零平面向量组成的满足如下条件的有限集合 $M$ ?
+(1) 对 $M$ 中任意 $n$ 个向量, 都可以在 $M$ 中另选出 $n$ 个向量, 使得这 $2 n$ 个向量之和等于零;
+(2) 对 $M$ 中任意 $n$ 个向量, 都可以在 $M$ 中另选出 $n-1$ 个向量, 使得这 $2 n-1$ 个向量之和等于零.
+%%<SOLUTION>%%
+解:不存在这样的集合 $M$.
+事实上, 若有这样的 $M$, 由于 $M$ 为有限集, 故从中取 $n$ 个向量的方法数是有限种.
+存在一种选取, 使所得的 $n$ 个向量之和的模长最大, 设这 $n$ 个向量是 $\boldsymbol{u}_1, \boldsymbol{u}_2, \cdots, \boldsymbol{u}_n$, 并记 $\boldsymbol{u}_1+\boldsymbol{u}_2+\cdots+\boldsymbol{u}_n=\boldsymbol{s}$.
+过原点作与 $s$ 垂直的直线 $l$, 则 $l$ 将平面分为两个部分, 记 $M$ 中与 $s$ 在同一侧的向量组成的集合为 $M_1$,与一 $s$ 在同一侧及在 $l$ 上的向量组成的集合为 $M_2$, 则 $M_1 \cap M_2=\varnothing, M_1 \cup M_2=M$.
+由条件 (2) 知, $M$ 中存在向量 $v_1, \cdots, v_{n-1}$, 使得 $\boldsymbol{u}_1+\cdots+\boldsymbol{u}_n+\boldsymbol{v}_1+\cdots+ v_{n-1}=\mathbf{0}$, 即 $\boldsymbol{v}_1+\cdots+v_{n-1}=-\boldsymbol{s}$.
+下证:不存在向量 $v$, 使得 $v \in M_2$, 但 $v \notin\left\{v_1, \cdots, v_{n-1}\right\}$.
+若存在这样的 $v$, 则 $v \cdot s \leqslant 0$. 于是,
+$$
+\left|\boldsymbol{v}_1+\cdots+\boldsymbol{v}_{n-1}+\boldsymbol{v}\right|^2=|\boldsymbol{v}-\boldsymbol{s}|^2=|\boldsymbol{s}|^2-2 \boldsymbol{v} \cdot \boldsymbol{s}+|\boldsymbol{v}|^2>|\boldsymbol{s}|^2,
+$$
+这与 $\boldsymbol{u}_1, \cdots, \boldsymbol{u}_n$ 的取法矛盾.
+所以, $\left|M_2\right| \leqslant n-1$.
+另一方面, 由 (1) 知存在 $\boldsymbol{u}_1^{\prime}, \cdots, \boldsymbol{u}_n^{\prime} \in M$, 使得
+$$
+\left|\boldsymbol{u}_1+\cdots+\boldsymbol{u}_n+\boldsymbol{u}_1^{\prime}+\cdots+\boldsymbol{u}_n^{\prime}\right|=0,
+$$
+即 $\boldsymbol{u}_1^{\prime}+\cdots+\boldsymbol{u}_n^{\prime}=-\boldsymbol{s}$, 由条件 (2) 知, $M$ 中存在向量 $\boldsymbol{v}_1^{\prime}, \cdots, \boldsymbol{v}_{n-1}^{\prime}$, 使得
+$$
+u_1^{\prime}+\cdots+u_n^{\prime}+v_1^{\prime}+\cdots+v_{n-1}^{\prime}=\mathbf{0} \text {, 即 } v_1^{\prime}+\cdots+v_{n-1}^{\prime}=s \text {. }
+$$
+用上面类似的方法证明: 不存在向量 $v^{\prime} \in M_1$, 但 $v^{\prime} \notin\left\{v_1^{\prime}, \cdots, v_{n-1}^{\prime}\right\}$. 因此 $\left|M_1\right| \leqslant n-1$.
+综上, 将导致 $|M| \leqslant 2 n-2$, 矛盾.
+所以, 不存在符合条件的 $M$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $\alpha$ 为给定的正整数, 求最大的正整数 $\beta$, 使得存在 $x, y \in \mathbf{N}^*$, 满足
+$$
+\beta=\frac{x^2+y^2+\alpha}{x y} . \label{eq1}
+$$
+%%<SOLUTION>%%
+解:注意到, 当 $\beta=\alpha+2$ 时, 取 $x=y=1$, 就有式\ref{eq1}成立, 所以 $\beta_{\max } \geqslant \alpha+2$. 另一方面, 设 $\beta$ 是一个满足条件的正整数, 我们设 $(x, y)$ 是所有满足式\ref{eq1}的正整数对中 (这里视 $\beta$ 为常数), 使得 $x+y$ 最小的那一对.
+如果 $x=y$, 那么 $\beta=\frac{2 x^2+\alpha}{x^2}=2+\frac{\alpha}{x^2} \leqslant 2+\alpha$.
+如果 $x \neq y$, 不妨设 $x>y$, 这时关于 $x$ 的一元二次方程
+$$
+x^2-\beta y \cdot x+y^2+\alpha=0 . \label{eq2}
+$$
+还有一个实数解 $\bar{x}$.
+由韦达定理及式\ref{eq2}知 $\bar{x}=\beta y-x \in \mathbf{Z}$, 又 $x \cdot \bar{x}=y^2+\alpha$, 即 $\bar{x}=\frac{y^2+\alpha}{x}>$ 0 , 所以, $\bar{x}$ 为正整数.
+此时, $(\bar{x}, y)$ 也是满足式\ref{eq1}的正整数对, 因此
+$$
+\bar{x}+y=\frac{y^2+\alpha}{x}+y \geqslant x+y,
+$$
+这里用到 $x+y$ 的最小性.
+于是, 我们有 $x^2 \leqslant y^2+\alpha$, 且 $x \geqslant y+1$. 进而
+$$
+\beta=\frac{x^2+y^2+\alpha}{x y} \leqslant \frac{2\left(y^2+\alpha\right)}{x y} \leqslant \frac{2\left(y^2+\alpha\right)}{y(y+1)}=\frac{2 y^2}{y^2+y}+\frac{2 \alpha}{y(y+1)}<2+\alpha .
+$$
+这表明 $\beta_{\max } \leqslant 2+\alpha$.
+综上可知, $\beta$ 的最大值为 $\alpha+2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 求所有的整数 $n>1$, 使得它的任何大于 1 的因数可以表示为 $a^r+$ 1 的形式, 这里 $a 、 r \in \mathbf{N}^*, r \geqslant 2$.
+%%<SOLUTION>%%
+解:设 $S$ 是所有满足条件的正整数组成的集合, 则对任意 $n \in S, n>1$,
+$n$ 的每个大于 1 的因数都具有 $a^r+1$ 的形式, 这里 $a 、 r \in \mathbf{N}^*, r>1$.
+由上可知, 对任意 $n \in S(n>2)$, 存在 $a 、 r \in \mathbf{N}^*, a 、 r>1$, 使得 $n= a^r+1$. 我们设 $n$ 的这种表示中 $a$ 是最小的, 即不存在 $b 、 t \in \mathbf{N}^*, t>1$, 使得 $a=b^t$. 这时, $r$ 必为偶数 (若否, 设 $r$ 为奇数,则 $(a+1) \mid n$,于是, $a+1$ 可表示为 $b^t+1$ 的形式,导致 $a=b^t$, 与 $a$ 的最小矛盾). 所以, $S$ 中的每个大于 1 的元素 $n$ 都可表示为 $n=x^2+1, x \in \mathbf{N}^*$ 的形式.
+下面来求 $S$ 的每个元素 $n$.
+如果 $n$ 为素数,那么 $n$ 是具有 $x^2+1$ 形式的素数.
+如果 $n$ 为合数, 分两种情况讨论:
+(1) 若 $n$ 为奇合数,则存在奇素数 $p 、 q$, 使得 $p 、 q 、 p q \in S$, 此时, 应存在 $a 、 b 、 c \in \mathbf{N}^*$, 满足
+$$
+p=4 a^2+1, q=4 b^2+1, p q=4 c^2+1 .
+$$
+这里还可设 $a \leqslant b<c$. 于是 $p q-q=4\left(c^2-b^2\right)$, 故 $q \mid 4(c-b)(c+b)$, 由 $q$ 为奇素数, 知 $q \mid c-b$ 或 $q \mid c+b$, 总有 $q<2 c$, 导致 $p q<4 c^2<4 c^2+1=p q$, 矛盾.
+(2) 若 $n$ 为偶合数,注意到 $2^2 \notin S$, 结合前面的讨论, 可知 $n$ 只能是 $2 q$ 的形式, 这里 $q$ 为奇素数.
+此时 $q 、 2 q \in S$, 于是, 存在 $a 、 b \in \mathbf{N}^*$, 使得
+$$
+q=4 a^2+1,2 q=b^2+1 .
+$$
+得 $q=b^2-4 a^2=(b-2 a)(b+2 a)$, 所以 $b-2 a=1, b+2 a=q$. 进而 $q- 1=4 a$, 又 $q-1=4 a^2$, 故 $4 a=4 a^2$, 得 $a=1, b=3, q=5, n=10$. 即 $S$ 中只有一个偶合数 10 .
+综上可知,任意 $n \in S, n$ 是形如 $x^2+1$ 的素数或 10 ,而这样的 $n$ 具有题中的性质是显然的, 所以 $S=\left\{x^2+1 \mid x \in \mathbf{N}^*, x^2+1\right.$ 为素数 $\} \cup\{10\}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 桌子上有两堆硬币,已知这两堆硬币的总重量相同, 并且对任意正整数 $k$ (这里 $k$ 不超过每堆硬币的个数), 第一堆硬币中最重的 $k$ 枚硬币的重量之和不超过第二堆中最重的 $k$ 枚硬币的重量之和.
+证明: 对任意正实数 $x$, 若将两堆硬币中每一枚重量不小于 $x$ 的硬币都用重量为 $x$ 的硬币替换,则完成此操作后,第一堆的总重量不比第二堆轻.
+%%<SOLUTION>%%
+证明:我们用排序原理来处理.
+设第一堆硬币的重量依次为 $x_1 \geqslant \cdots \geqslant x_n$; 第二堆硬币的重量依次为 $y_1 \geqslant \cdots \geqslant y_m$. 则由条件知, 对任意 $k \leqslant \min \{m, n\}$, 都有 $x_1+\cdots+x_k \leqslant y_1+\cdots+y_k$.
+对任意 $x \in \mathbf{R}$, 设 $x_1 \geqslant \cdots \geqslant x_s \geqslant x>x_{s+1} \geqslant \cdots \geqslant x_n, y_1 \geqslant \cdots \geqslant y_t \geqslant x>y_{t+1} \geqslant \cdots \geqslant y_m$. 要证明:
+$$
+s x+x_{s+1}+\cdots+x_n \geqslant t x+y_{t+1}+\cdots+y_m . \label{eq1}
+$$
+显然, 当 $s$ 或 $t$ 不存在时 (注意, 由条件知, 若 $t$ 不存在则 $s$ 也不存在), 不等式\ref{eq1}可由 $x_1+\cdots+x_n=y_1+\cdots+y_m$ 得到.
+下面考虑 $s$ 与 $t$ 都存在的情形.
+记 $x_1+\cdots+x_n=y_1+\cdots+y_m=A$, 则式\ref{eq1}等价于
+$$
+\begin{gathered}
+s x+\left(A-x_1-\cdots-x_s\right) \geqslant t x+\left(A-y_1-\cdots-y_t\right) \\
+\Leftrightarrow x_1+\cdots+x_s+(t-s) x \leqslant y_1+\cdots+y_t .
+\end{gathered} \label{eq2}
+$$
+如果 $t \geqslant s$, 那么
+$$
+\begin{gathered}
+x_1+\cdots+x_s+(t-s) x=x_1+\cdots+x_s+\underbrace{x+\cdots+x}_{t-s \uparrow} \\
+\leqslant y_1+\cdots+y_s+y_{s+1}+\cdots+y_t .
+\end{gathered}
+$$
+不等式\ref{eq2}获证.
+如果 $t<s$, 那么式\ref{eq2}等价于
+$$
+x_1+\cdots+x_s \leqslant y_1+\cdots+y_t+\underbrace{x+\cdots+x}_{s-\imath \uparrow} . \label{eq3}
+$$
+由条件,我们有
+$$
+\begin{aligned}
+x_1+\cdots+x_s & \leqslant y_1+\cdots+y_t+y_{t+1}+\cdots+y_s \\
+& \leqslant y_1+\cdots+y_t+\underbrace{x+\cdots+x}_{s-t \uparrow} .
+\end{aligned}
+$$
+所以,式\ref{eq3}成立.
+综上可知,命题成立.
+%%PROBLEM_END%%
+
+

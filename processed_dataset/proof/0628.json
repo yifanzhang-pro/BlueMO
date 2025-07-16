@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter11.tex",
+    "problem_type": "proof",
+    "problem": "例3. 已知正数 $a 、 b 、 c 、 A 、 B 、 C$ 满足 $a+A=b+B=c+C=k$. 求证:\n$$\na B+b C+c A<k^2 .\n$$",
+    "solution": "证明:想到三角形的面积, 可以构造以 $k$ 为边长的正三角形 $P Q R$ (如图(<FilePath:./images/volume14/figures/fig-c11i2.png>) ), 在边上取 $L 、 M 、 N$, 根据已知条件, 使\n$$\n\\begin{aligned}\n& Q L=A, L R=a, R M=B, M P=b, P N=C, \\\\\n& N Q=c . \\text { 则 }\n\\end{aligned}\n$$\n$$\n\\begin{aligned}\n& S_{\\triangle L R M}=\\frac{1}{2} a B \\sin 60^{\\circ}, S_{\\triangle M P N}=\\frac{1}{2} b C \\sin 60^{\\circ}, \\\\\n& S_{\\triangle N Q L}=\\frac{1}{2} c A \\sin 60^{\\circ}, S_{\\triangle P Q R}=\\frac{1}{2} k^2 \\sin 60^{\\circ} .\n\\end{aligned}\n$$\n由图显然有\n$$\nS_{\\triangle L R M}+S_{\\triangle M P N}+S_{\\triangle N Q L}<S_{\\triangle P Q R},\n$$\n所以\n$$\n\\frac{1}{2} a B \\sin 60^{\\circ}+\\frac{1}{2} b C \\sin 60^{\\circ}+\\frac{1}{2} c A \\sin 60^{\\circ}<\\frac{1}{2} k^2 \\sin 60^{\\circ}\n$$\n即\n$$\na B+b C+c A<k^2 .\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c11i2.png"
+    ]
+}

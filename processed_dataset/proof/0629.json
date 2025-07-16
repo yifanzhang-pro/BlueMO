@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter11.tex",
+    "problem_type": "proof",
+    "problem": "例4. 设 $p 、 q$ 为互素的正整数.\n证明:\n$$\n\\left[\\frac{p}{q}\\right]+\\left[\\frac{2 p}{q}\\right]+\\cdots+\\left[\\frac{(q-1) p}{q}\\right]=\\frac{(p-1)(q-1)}{2},\n$$\n这里 $[x]$ 表示不超过 $x$ 的最大整数.",
+    "solution": "解:考虑直角坐标平面的矩形 $O A B C$, 这里 $O$ 为原点, $A 、 B 、 C$ 的坐标分别为 $(q, 0),(q$, $p),(0, p)$, 连接 $O B$. 由于 $p 、 q$ 互素, 所以对于区间 $(0, q)$ 内的整数 $x, y=\\frac{p}{q} x$ 决不是整数.\n也就是说线段 $O B$ 上没有整点.\n下面我们用两种方法计算 $\\triangle O A B$ 内部 (不包括边界)的整点数目 $s$.\n一方面, 过 $x$ 轴上的整点 $E(k, 0)(0<k<q)$ 作 $x$ 轴的垂线与 $O B$ 相交于 $F$. 点 $F$ 的纵坐标为 $y=\\frac{k p}{q}$, 所以在线段 $E F$ 内部(不包括边界) 有 $\\left[\\frac{k p}{q}\\right]$ 个整点.\n这样\n$$\ns=\\left[\\frac{p}{q}\\right]+\\left[\\frac{2 p}{q}\\right]+\\cdots+\\left[\\frac{(q-1) p}{q}\\right] .\n$$\n另一方面,矩形 $O A B C$ 内部 (不包括边界)共有 $(p-1)(q-1)$ 个整点.\n线段 $O B$ 内部没有整点, $\\triangle O A B$ 和 $\\triangle B C O$ 内部的整点各占总数的一半, 即\n$$\ns=\\frac{(p-1)(q-1)}{2} \\text {. }\n$$\n综合两方面即证.",
+    "remark": "",
+    "figures": []
+}

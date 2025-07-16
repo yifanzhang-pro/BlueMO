@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例5. 能否将全体整数分拆为 3 个不相交的集合, 使得对任意整数 $n$, 数 $n, n-50, n+2011$ 分别属于所分成的 3 个不同的子集?",
+    "solution": "解:不可能, 现用反证法证明如下, 假设存在符合题目要求的分拆方法.\n我们用记号 $m \\sim k$ 表示 $m$ 与 $k$ 属于同一子集.\n若 3 个数 $p, q, r$ 分别属于 3 个不同的子集则记为 $(p, q, r) \\in \\mathcal{M}$. 于是, 邑 $(n, n-50, n+2011) \\in \\mathscr{M}$ 出发, 分别将 $n$ 用 $n-50$ 和 $n+2011$ 代替得\n$$\n\\begin{aligned}\n& (n-50, n-100, n+1961) \\in \\mathscr{M}, \\\\\n& (n+2011, n+1961, n+2 \\cdot 2011) \\in \\mathcal{M} .\n\\end{aligned}\n$$\n于是 $n+1961 \\not \\sim n-50, n+1961 \\not \\chi n+2011$, 故只有 $n+1961 \\sim n$. 故由 $(n-50, n-100, n+1961) \\in \\mathcal{M}$ 得 $(n-50, n-100, n) \\in \\mathcal{M}$. 再将其中 $n$\n用 $n-50$ 代替得 $(n-100, n-150, n-50) \\in \\mathcal{M}$, 于是由 $n \\Varangle n-50$ 和 $n \\nsucc n-100$ 得 $n \\sim n-150$. 再从 $n \\sim n+1961$ 和 $n \\sim n-150$ 出发可推得\n$$\n\\begin{aligned}\n& 0 \\sim 1961 \\sim 2 \\times 1961 \\sim \\cdots \\sim 50 \\times 1961 \\\\\n= & 654 \\cdot 150-50 \\sim 653 \\cdot 150-50 \\sim \\cdots \\sim 150-50 \\sim-50 .\n\\end{aligned}\n$$\n这与 $n \\Varangle n-50$ 从而 $0 \\nsucc-50$ 矛盾.\n故满足题目要求的分拆子集方法是不存在的.",
+    "remark": "",
+    "figures": []
+}

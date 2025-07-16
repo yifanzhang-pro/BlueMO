@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "calculation",
+    "problem": "例21 设 $f(x)$ 满足柯西方程, 且在 $\\mathbf{R}$ 上连续, 求 $f(x)$.",
+    "solution": "解:利用 $\\circledast$, 用数学归纳法易得: 对任意正整数 $n$ 和实数 $x$,有\n$$\nf(n x)=n f(x) . \\quad\\quad (1)\n$$\n令 $x=1$, 有 $f(n)=n f(1)$.\n记 $a=f(1)$, 那么对一切正整数 $n$, 有 $f(n)=a n$.\n再令 $x=\\frac{m}{n}$ ( $m 、 n$ 是正整数 $)$ 为正有理数, 有\n$$\nn f\\left(\\frac{m}{n}\\right)=f\\left(n \\cdot \\frac{m}{n}\\right)=f(m)=f(m \\cdot 1)=m f(1)=a m,\n$$\n所以 $f\\left(\\frac{m}{n}\\right)=a \\cdot \\frac{m}{n}$.\n又 $\\quad f(0)=f(0+0)=f(0)+f(0)$,\n所以\n$$\nf(0)=0=a \\cdot 0 \\text {. }\n$$\n$$\nf(0)=f(x-x)=f(x)+f(-x),\n$$\n所以 $f(x)=-f(-x)$,\n即 $f(x)$ 是奇函数.\n于是从上面可知, 对一切有理数 $r$, 有 $f(r)=a r$.\n所以, $g(x)=f(x)-a x$ 在有理数集上处处等于 0 . 因 $f(x)$ 连续,所以 $g(x)$ 也连续,进而 $g(x)=0$.\n事实上, 若 $g\\left(x_0\\right) \\neq 0$, 由 $g$ 的连续性知, 存在 $x_0$ 的一个邻域 $u\\left(x_0, \\varepsilon\\right)$, 使 $g(x)$ 在此邻域内处处不等于 0 . 这与它在有理点为 0 矛盾.\n所以,对一切实数 $x$, 都有: $f(x)=a x$, 其中 $a=f(1)$.\n说明在本题中, 我们要求 $f(x)$ 连续, 其实这个要求太强了.\n我们只要 $f(x)$ 在某个区间内有界, 或 $f(x)$ 在某区间内单调均可导出 $f(x)=a x(a=f(1))$.",
+    "remark": "",
+    "figures": []
+}

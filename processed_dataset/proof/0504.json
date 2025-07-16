@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 如图(<FilePath:./images/volume12/figures/fig-c7p11.png>), 有哈密顿圈, 证明任一哈密顿圈如果有边 $e$, 那么这个圈一定不含边 $e^{\\prime}$.",
+    "solution": "由定理四, $2\\left(f_4^{\\prime}-f_4^{\\prime \\prime}\\right)+3\\left(f_5^{\\prime}-f_5^{\\prime \\prime}\\right)=0$. 所以 $f_4^{\\prime}-f_4^{\\prime \\prime}$ 是 3 的倍数, 即 5 个四边形中有 4 个在圈外,一个在圈内或 4 个在圈内, 一个在圈外.\n如果这个哈密顿圈既过 $e$, 又过 $e^{\\prime}$, 则 $e$ 的两侧的两个四边形分别在哈密顿圈的内部与外部, $e^{\\prime}$ 的两侧的两个四边形也分别在圈的内部与外部, 从而圈内、圈外至少各有两个四边形,矛盾.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c7p11.png"
+    ]
+}

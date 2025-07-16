@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例9. 若一个正整数的标准分解中, 每个素约数的幂次都大于 1 , 则称它为幂数.\n证明: 存在无穷多个互不相同的正整数, 它们及它们中任意多个不同数的和都不是幂数.",
+    "solution": "证明:设 $2=p_1<p_2<\\cdots<p_n<\\cdots$ 是全体素数, 则\n$$\np_1, p_1^2 p_2, p_1^2 p_2^2 p_3, \\cdots, p_1^2 p_2^2 \\cdots p_{n-1}^2 p_n, \\cdots . \\label{eq1}\n$$\n符合要求.\n为了验证这一断言, 我们将数列中第 $n$ 个数记作 $a_n$. 首先, 每个 $a_n$ 都不是幂数.\n对任意 $r, s, \\cdots, n(1 \\leqslant r<s<\\cdots<n)$, 由式\\ref{eq1}知, $p_r \\mid a_r$ 但 $p_r^2 \\nmid a_r$, 并且 $p_r\\left|\\frac{a_s}{a_r}, \\cdots, p_r\\right| \\frac{a_n}{a_r}$. 因此, 在\n$$\na_r+a_s+\\cdots+a_n=a_r\\left(\\frac{a_s}{a_r}+\\cdots+\\frac{a_n}{a_r}+1\\right)\n$$\n中, 第二个因数与 $p_r$ 互素, 于是素数 $p_r$ 在 $a_r+a_s+\\cdots+a_n$ 的标准分解中恰出现一次, 故 $a_r+a_s+\\cdots+a_n$ 不是幂数.\n此外, 由于素数有无穷多个, 所以式\\ref{eq1}中的数也有无穷多个.",
+    "remark": "",
+    "figures": []
+}

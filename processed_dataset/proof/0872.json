@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例10 已知 $0<a<1, x^2+y=0$, 求证:\n$$\n\\log _a\\left(a^x+a^y\\right) \\leqslant \\log _a 2+\\frac{1}{8} .\n$$",
+    "solution": "证因为 $0<a<1$, 所以 $a^x>0, a^y>0$, 由平均不等式\n$$\na^x+a^y \\geqslant 2 \\sqrt{a^x \\cdot a^y}=2 a^{\\frac{x+y}{2}} .\n$$\n故\n$$\n\\begin{aligned}\n\\log _a\\left(a^x+a^y\\right) & \\leqslant \\log _a\\left(2 a^{\\frac{x+y}{2}}\\right) \\\\\n& =\\log _a 2+\\frac{1}{2}(x+y) \\\\\n& =\\log _a 2+\\frac{1}{2}\\left(x-x^2\\right) \\\\\n& =\\log _a 2-\\frac{1}{2}\\left(x-\\frac{1}{2}\\right)^2+\\frac{1}{8} \\\\\n& \\leqslant \\log _a 2+\\frac{1}{8} .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 证明: 存在无穷多对正整数 $(m, n)$, 满足方程\n$$\nm^2+25 n^2=10 m n+7(m+n) .\n$$",
+    "solution": "证法二: 原方程可写为\n$$\n(m-5 n)^2=7(m+n),\n$$\n所以可设\n$$\nm+n=7 x^2 \\left( x \\text { 是正整数 }\\right) , \\label{eq1}\n$$\n取\n$$\nm-5 n=7 x . \\label{eq2}\n$$\n式\\ref{eq1} - \\ref{eq2}得\n$$\n6 n=7 x(x-1) .\n$$\n令 $x=6 y$ ( $y$ 是任意正整数), 则 $n=42 y^2-7 y$. 于是\n$$\nm=7 \\cdot 36 y^2-\\left(42 y^2-7 y\\right)=210 y^2+7 y .\n$$\n所以,存在无穷多对正整数 $(m, n)=\\left(210 y^2+7 y, 42 y^2-7 y\\right)$ (其中 $y$ 是任意正整数) 满足题设方程.",
+    "remark": "",
+    "figures": []
+}

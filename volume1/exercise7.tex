@@ -1,0 +1,262 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1 若 $\frac{a+b}{c}=\frac{b+c}{a}=\frac{c+a}{b}=k$, 则直线 $y=k x+k$ 的图象必经过第?象限.
+%%<SOLUTION>%%
+二、三.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2 在 $1,2, \cdots, 99$ 这 99 个正整数中, 任意取出 $k$ 个数, 使得其中必有两个数 $a 、 b(a \neq b)$ 满足 $\frac{1}{2} \leqslant \frac{b}{a} \leqslant 2$, 则 $k$ 的最小可能值等于
+%%<SOLUTION>%%
+$7$. 将 $1 \sim 99$ 这 99 个正整数分为 6 组, 使得每组中任意两个数的比值在闭区间 $\left[\frac{1}{2}, 2\right]$ 中, 且每组元素个数尽量地多.
+分组如下: $A_1=\{1,2\}$, $A_2=\{3,4,5,6\}, A_3=\{7,8, \cdots, 14\}, A_4=\{15,16, \cdots, 30\}, A_5=\{31, 32, \cdots, 62\}, A_6=\{63,64, \cdots, 99\}$. 当任取 6 个数时, 比如在 $A_1, A_2, A_3, A_4, A_5, A_6$ 中各取一个数时, 如取 $1,3,7,15,31,63$, 这 6 个数中任 2 个数的比值都不在闭区间 $\left[\frac{1}{2}, 2\right]$ 中, 可见 $k>6$. 所以, $k \geqslant 7$.
+当 $k=7$ 时, 在 99 个数中任取 7 个数, 由抽屟原理知, 必有 2 个数属于同一个 $A_i(1 \leqslant i \leqslant 6)$, 这 2 个数的比值在闭区间 $\left[\frac{1}{2}, 2\right]$ 中.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3 设变量 $x$ 满足 $x^2+b x \leqslant-x(b<-1)$, 且 $f(x)=x^2+b x$ 的最小值是 $-\frac{1}{2}$, 则 $b$ 等于
+%%<SOLUTION>%%
+$b=-\frac{3}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4 若关于 $x$ 的不等式 $k x^2-2|x-1|+6 k<0$ 的解集为空集, 则 $k$ 的取值范围是
+%%<SOLUTION>%%
+$k \geqslant \frac{1+\sqrt{7}}{6}$. 对 $x \in \mathbf{R}$, 恒有 $k \geqslant f(x)=\frac{2|x-1|}{x^2+6}$. 所以, $k \geqslant \max f(x), x \in \mathbf{R}$. 当 $x \geqslant 1$ 时, 令 $t=x-1, t \geqslant 0$, 则 $f(x)=\frac{2 t}{\left(t^2+7\right)+2 t} \leqslant \frac{2 t}{2 \sqrt{7} t+2 t}=\frac{\sqrt{7}-1}{6}$. 当 $x<1$ 时, 令 $t=1-x, t>0$, 则 $f(x)=\frac{2 t}{\left(t^2+7\right)-2 t} \leqslant \frac{2 t}{2 \sqrt{7} t-2 t}=\frac{\sqrt{7}+1}{6}$, 当 $t=\sqrt{7}$ 时, 等号成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5 证明: 三角形三条高线的中点共线的充分必要条件是这个三角形是直角三角形.
+%%<SOLUTION>%%
+在 $\triangle A B C$ 中, 三条高线的中点 $A^{\prime} 、 B^{\prime} 、 C^{\prime}$ 分别在中位线 $\triangle M N P$ 三边所在直线上.
+若 $\triangle A B C$ 是锐角三角形, 则点 $A^{\prime} 、 B^{\prime} 、 C^{\prime}$ 在 $\triangle M N P$ 的三边上, 故此三点不共线; 若 $\triangle A B C$ 是钝角三角形, 则点 $A^{\prime} 、 B^{\prime} 、 C^{\prime}$ 中有两点在 $\triangle M N P$ 的两条边的延长线上, 另一点在第三条边上, 故此三点不共线; 若 $\triangle A B C$ 是直角三角形, 则点 $A^{\prime} 、 B^{\prime} 、 C^{\prime}$ 在直角所对的中位线上.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6 正整数 $x 、 y$ 满足 $x<y$, 令 $P=\frac{x^3-y}{1+x y}$, 求 $P$ 能取到的所有整数值.
+%%<SOLUTION>%%
+易验证 $y=8, x=2$ 时, $P=0 . P=1$ 时, $x^3-y=1+x y \Rightarrow(x+  1)  y=x^3-1=(x+1)\left(x^2-x+1\right)-2$. 所以 $(x+1) \mid 2, x=1$, 从而 $y= 0<x \Rightarrow$ 矛盾.
+因此 $P \neq 1$. 当 $P \geqslant 2$ 时, 由 $P=\frac{x^3-y}{1+x y}$ 可得 $y=\frac{x^3-P}{x P+1}$. 由此知当 $x=P^3$ 时, $y=P\left(P^4-1\right)>P^3$ 成立, 这说明 $P$ 可取 $\geqslant 2$ 的任意整数.
+当 $P<0$ 时, 由 $\left|x^3-y\right|=y-x^3<x y+1 \Rightarrow$ 与 $P$ 为整数矛盾.
+所以 $P$ 可取的值为 $\{k \mid k \in \mathbf{N}, k=0$ 或 $k \geqslant 2\}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7 在一个由 $n$ 个方格组成的 $1 \times n$ 棋盘中的每个方格上各放一个钱币.
+第一次搬动是将某一个方格上的钱币放在相邻的一个方格中的钱币上, 左边或右边都可以,但是不能出棋盘.
+以后的每次搬动是将某个方格中的所有钱币 (设有 $k$ 个) 搬到与此方格相邻的第 $k$ 个位置的方格中, 左或右都可以,但是不能出棋盘.
+试证: 能经过 $n-1$ 次搬动, 将所有钱币都集中在一个方格中.
+%%<SOLUTION>%%
+设 $n$ 为奇数, 记 $n=2 m+1$. 考虑第 $m+1$ 个方格, 将其中钱币向左运动一次, 于是第 $m$ 个方格中有两个钱币, 而第 $m+1$ 个方格中无钱币.
+将第 $m$ 个方格中的钱币搬到第 $m+2$ 个方格中, 这样依次从左到右, 再从右到左, 经过 $n-1$ 次运动, 便将钱币都放在最右边那个方格中, 而其余方格中无钱币.
+设 $n$ 为偶数, 记 $n=2 m$. 考虑第 $m$ 个方格, 将其中钱币向右运动一次, 于是第 $m+1$ 个方格中有两个钱币, 而第 $m$ 个方格中无钱币.
+将第 $m+1$ 个方格中的钱币搬到第 $m^{--} 1$ 个方格中, 这样依次从右到左, 再从左到右, 经过 $n-1$ 次运动,便将钱币都放在最右边那个方格中,而其余方格中无钱币.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8 求满足 $w !=x !+y !+z !$ 的所有正整数组 $w, x, y, z$.
+%%<SOLUTION>%%
+不妨设 $w>x \geqslant y \geqslant z$. 若 $y>z$, 则以 $z$ ! 除等式两边得 $w(w-1) \cdots (z+1)=x \cdots(z+1)+y \cdots(z+1)+1$, 其中 $z+1>1$ 能整除上式左边, 而不能整除其右边, 矛盾.
+若 $x>y=z$, 则可得 $w(w-1) \cdots(z+1)=x \cdots(z+ 1)+2$, 应有 $(z+1) \mid 2$, 从而 $z+1=2$, 上式又可约简为 $w(w-1) \cdots 3=x \cdots 3+1$, 显然也不成立.
+于是, 必有 $x=y=z$, 此时原式为 $w !=3 \cdot x !$. 所以 $x=y=z=2, w=3$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9 设整数 $k \geqslant 14, P_k$ 是小于 $k$ 的最大质数.
+若 $P_k \geqslant \frac{3 k}{4}, n$ 是一个合数, 且 $n>2 P_k$, 证明: $n$ 能整除 $(n-k)$ !.
+%%<SOLUTION>%%
+因为 $n$ 是合数,故设 $n=a b(2 \leqslant a \leqslant b)$.
+若 $a \geqslant 3$, (i) $a \neq b$, 则 $n>2 p_k \geqslant \frac{3 k}{2}, b \leqslant \frac{n}{3}$. 从而, $k<\frac{2 n}{3}$. 故 $n-k> \frac{n}{3} \geqslant b>a$. 所以, $n \mid(n-k) !$. (ii) $a=b$, 则 $n=a^2, n-k>\frac{n}{3}=\frac{a^2}{3}$. 因为 $k \geqslant 14$, 则 $p_k \geqslant 13, n>26, a \geqslant 6$. 从而, $\frac{a^2}{3} \geqslant 2 a$. 故 $n-k>2 a$. 所以, $n \mid(n-k)$ !. 若 $a=2$, 因为 $n>26$, 假设 $b$ 不为质数, 则 $b=b_1 b_2\left(b_1 \leqslant b_2\right)$. 因为 $b>13$, 则 $b_2 \geqslant 4$. 于是, $a b_1 \geqslant 4$ 归人 $a \geqslant 3$ 的情况.
+不妨设 $b$ 为质数, 则 $b= \frac{n}{2}>p_k$. 因为 $p_k$ 是小于 $k$ 的最大质数, 则 $b>k$. 从而, $n-k=2 b-k>b$. 所以, $n \mid(n-k) !$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10 若 $x 、 y$ 是任意正实数, 求 $\max \left\{\min \left\{x, \frac{1}{y}, y+\frac{1}{x}\right\}\right\}$ 的值.
+%%<SOLUTION>%%
+不妨设 $x \geqslant \frac{1}{y}>0$, 令 $x=\frac{1}{y}=y+\frac{1}{x}$, 则 $x=\sqrt{2}, y=\frac{\sqrt{2}}{2}$. 所以
+(1) 若 $x \geqslant \frac{1}{y} \geqslant \sqrt{2}$, 则 $y+\frac{1}{x} \leqslant \frac{\sqrt{2}}{2}+\frac{\sqrt{2}}{2}=\sqrt{2}$, 所以 $\min \left\{x, \frac{1}{y}, y+\frac{1}{x}\right\}= y+\frac{1}{x} \leqslant \sqrt{2}$, 从而当且仅当 $x=\frac{1}{y}=\sqrt{2}$ 时, $\max \left\{\min \left\{x, \frac{1}{y}, y+\frac{1}{x}\right\}\right\}= \max \left\{y+\frac{1}{x}\right\}=\sqrt{2}$;
+(2) 若 $\sqrt{2} \geqslant x \geqslant \frac{1}{y}>0$, 则 $y+\frac{1}{x} \geqslant \frac{\sqrt{2}}{2}+\frac{\sqrt{2}}{2}=\sqrt{2}$. 所以 $\min \left\{x, \frac{1}{y}, y+ \frac{1}{x}\right\}=\frac{1}{y} \leqslant \sqrt{2}$, 从而当且仅当 $x=\frac{1}{y}=\sqrt{2}$ 时, $\max \left\{\min \left\{x, \frac{1}{y}, y+\frac{1}{x}\right\}\right\}= \max \left\{\frac{1}{y}\right\}=\sqrt{2}$
+(3) 若 $x \geqslant \sqrt{2} \geqslant \frac{1}{y}>0$, 则 $y+\frac{1}{x} \geqslant 2 \cdot \frac{1}{x} \leqslant 2 \cdot \frac{\sqrt{2}}{2}=\sqrt{2}, y+\frac{1}{x} \leqslant 2 \cdot y \geqslant 2 \cdot \frac{\sqrt{2}}{2}=\sqrt{2}$, 此时若 $\frac{1}{y} \geqslant y+\frac{1}{x}$, 则 $\min \left\{x, \frac{1}{y}, y+\frac{1}{x}\right\}=y+\frac{1}{x} \leqslant \sqrt{2}$ ； 若 $\frac{1}{y} \leqslant y+\frac{1}{x}$, 则 $\min \left\{x, \frac{1}{y}, y+\frac{1}{x}\right\}=\frac{1}{y} \leqslant \sqrt{2}$, 所以当且仅当 $x=\frac{1}{y}=\sqrt{2}$ 时, $\max \left\{\min \left\{x, \frac{1}{y}, y+\frac{1}{x}\right\}\right\}=\sqrt{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11 设正整数 $n$ 具有如下性质: 在从 $\{1,2, \cdots, 1988\}$ 中任取的 $n$ 个数中, 总有 29 个数组成一个等差数列.
+求证: $n>1788$.
+%%<SOLUTION>%%
+首先从 $\{1,2, \cdots, 1988\}$ 中删除 29 的所有倍数, 共 68 个.
+将余下的 1920 个数分成 69 个集合: $A_k=\{1+29 k, 2+29 k, \cdots, 28+29 k\}, k=0,1,2, \cdots, 67, A_{69}=\{1973,1974, \cdots, 1988\}$. 由于 29 为素数,故当 $(d, 29)=1 $时,公差为 $d$ 的等差数列 $a, a+d, \cdots, a+28 d$ 中的 29 个数模 29 互不同余, 其中必有 29 的倍数.
+由于这样的数已被删除, 故在剩下的数中不存在与 29 互素的公差 $d$ 的 29 项等差数列.
+下面再考察以 29 的倍数即以 29 或 58 为公差的 29 项等差数列的情形.
+删去集合 $A_{28} 、 A_{57}$ 中的所有数,共删去 56 个数.
+由于公差为 29 的等差数列的 29 项必分别属于 $A_0, A_1, \cdots, A_{68}$ 中相继的 29 个集合,公差为 58 的等差数列的 29 项则分别属于 $A_0, A_1, \cdots, A_{68}$ 中相间的 29 个集合, 故两者均必有某项属于 $A_{28}$ 或 $A_{57}$. 从而在删除 $A_{28} 、 A_{57}$ 的所有数之后, 即不存在任何 29 项的等差数列.
+易见, 两次共删除了 $68+2 \times 28=124<200$, 所以余下的数多于 1788 . 这就证明了只有 $n>1788$, 才可能具备题中所述的性质.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12 某国学生参加城市联赛, 试卷由 6 题组成, 每题恰有 1000 个人做出来, 若找不到两个人, 使任何一题至少被两个人中的一个答出, 试求参加比赛的人数的最小值.
+%%<SOLUTION>%%
+(1) 首先证明 2000 个人参加比赛是可以的, 定义三元数组 $(i, j, k)$ 表示答对第 $i, j, k$ 题 $(1 \leqslant i, j, k \leqslant 6)$. 考虑 10 个三元数组 $(1,2,3),(3,5,6),(1,2,5),(3,4,5),(1,3,4),(2,4,6),(2,3,6),(1,4,6),(1,5,6),(2,4,5)$ 满足: (1) 任两个数恰出现 5 次; (2) 每个数恰出现 5 次.
+将每个三元数组对应于 200 个人的答题情况, 则可知满足题目所有条件恰有 2000 人.
+(2) 证明不能少于 2000 人.
+设答对题最多的人为 $A$, 设 $A$ 答对 $k$ 题.
+(1) $k=6$, 则 $A$ 全部答对, 与条件矛盾!(2) $k=5$, 不妨设 $A$ 答对 $1,2,3,4,5$, 则由题知存在 $B$ 答对第 6 题, 则 $A$ 与 $B$ 答对所有题, 矛盾! (3) $k=4$, 不妨设 $A$ 答对 $1,2,3,4$, 则不存在 $B$ 既答对 5, 又答对 6 , 又因为答对 5,6 的共 2000 人, 再加上 $A$, 至少有 2001 人! (4) $k=3$, 则每人至多答对 3 题, 而每题有 1000 人答对, 所以至少有 $\frac{6 \times 1000}{3}=2000$ (人). 所以 2000 人为所求最小值.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13 将一些相同的正 $n$ 边形餐门纸放在桌子上, 允许任两张餐巾纸有可能有部分重叠.
+设任两张餐门纸可经过平移将一张移到和另一张重叠.
+当 $n=6$ 时, 是否总可以在桌上钉一些钉子, 使得每张餐巾纸恰好被钉了一次?
+%%<SOLUTION>%%
+回答是可以做到的.
+由 $n=6$, 餐巾纸为正六边形,边按逆时针方向定向.
+由于任两张餐巾纸可经过平移而重叠.
+所以任两餐巾纸的六条边按相同定向互相平行.
+因此可以在平面上作出大小和餐巾纸一样的正六边形网格, 网格中每个正六边形和任一餐巾纸的六条边按相同定向互相平行.
+所有餐巾纸的中心可构成两个集合,一个集合由这样的中心构成, 这些中心都在网络线上, 另一个集合由不在网格线上的中心构成.
+前者记作 $N$, 后者记作 $M$.
+(i)设 $N=\varnothing$, 即所有餐巾纸的中心都不落在网格线上.
+我们在网格的每个正六边形的中心上钉钉子.
+这些钉子要么不钉在任一餐巾纸上, 要么只钉上一次.
+因为若有一张餐巾纸上被钉了两个钉子, 那么餐巾纸的中心落在网格的两个不同的正六边形内,这是不可能的.
+(ii)设 $N \neq \varnothing$. 由于餐巾纸只有有限张, 所以 $M$ 为有限集.
+因此记 $d>0$, $d$ 为 $M$ 的中心和网格线的最近距离.
+我们将网格平移小于 $d$ 的距离.
+于是, $M$ 中的点仍不在网格线上.
+由于 $N$ 也为有限集, 所以我们可以选取这种平移的方向, 使得 $N$ 中的点也都不在新的网格线上.
+于是对新的网格线, 化为情形 (i). 这证明了命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14 平面上按如下方式给出一个螺旋放置的正方形系列: 最初是两个 $1 \times 1$ 正方形, 这两个正方形有一条坚直的公共边, 并排水平放置; 第三个为 $2 \times 2$ 正方形, 紧贴着放置在前两个正方形上方, 有一条边为前两个正方形各一条边之并; 第四个为 $3 \times 3$ 正方形, 紧贴着放置在第一个和第三个正方形的左方, 有一条边为那两个正方形各一条边之并; 第五个为 $5 \times 5$ 正方形, 紧贴着放在第一、第二和第四个正方形的下方, 有一条边为那三个正方形各一条边之并; 第六个为 $8 \times 8$ 正方形, 紧贴着放置在第二、第三、 第五个正方形的右方……每一个新的正方形与已拼成的矩形有一条公共边,该公共边上含有上一个正方形的一条边.
+试证: 除了第一个正方形以外, 所有这些正方形的中心统统都在两条固定直线上.
+%%<SOLUTION>%%
+设所作的正方形依次为 $S_0, S_1, S_2, \cdots$, 这些正方形的中心依次为 $\left(x_0, y_0\right),\left(x_1, y_1\right),\left(x_2, y_2\right), \cdots$, 为确定起见, 设最初 4 个正方形的中心为 $\left(\frac{1}{2}, \frac{1}{2}\right),\left(\frac{3}{2}, \frac{1}{2}\right),(1,2),\left(-\frac{3}{2}, \frac{3}{2}\right)$. 于是 $\frac{y_2-y_0}{x_2-x_0}=3, \frac{y_3-y_1}{x_3-x_1}= -\frac{1}{3}$. 正方形 $S_0, S_1, S_2, \cdots$ 的边长正好是菲波那契数列 $f_0, f_1, f_2, \cdots$. 注意到 $f_n=f_{n-1}+f_{n-2}=2 f_{n-2}+f_{n-3}=3 f_{n-3}+2 f_{n-4}$. 以下将分情形利用正方形的边长计算 $x_n-x_{n-4}$ 和 $y_n-y_{n-4}$, 从而算出 $k_n=\frac{y_n-y_{n-4}}{x_n-x_{n-4}}$.
+情形 $1 \quad n \equiv 0(\bmod 4) \cdot x_n-x_{n-4}=-\frac{1}{2}\left(f_{n-3}+f_{n-4}\right), y_n-y_{n-1}= -\frac{3}{2}\left(f_{n-3}+f_{n-4}\right), k_n=3$.
+情形 $2 \quad n \equiv 1(\bmod 4): x_n-x_{n-4}=\frac{3}{2}\left(f_{n-3}+f_{n-4}\right), y_n-y_{n-4}= -\frac{1}{2}\left(f_{n-3}+f_{n-4}\right), k_n=-\frac{1}{3}$.
+情形 $3 n \equiv 2(\bmod 4) . x_n-x_{n-4}=\frac{1}{2}\left(f_{n-3}+f_{n-4}\right), y_n-y_{n-1}=\frac{3}{2}\left(f_{n-3}+ f_{n-4}\right), k_n=3$.
+情形 $4 \quad n \equiv 3(\bmod 4) . x_n-x_{n-4}=-\frac{3}{2}\left(f_{n-3}+f_{n-4}\right), y_n-y_{n-4}= \frac{1}{2}\left(f_{n-3}+f_{n-4}\right), k_n=-\frac{1}{3}$.
+统观各种情形, 可以判定: 对于偶数 $n$ 有 $k_n=3$, 所有偶数编号正方形的中心全在过 $\left(x_0, y_0\right)$ 点且斜率为 3 的直线上; 对于奇数 $n$ 有 $k_n=-\frac{1}{3}$, 所有奇数编号正方形的中心全在过 $\left(x_1, y_1\right)$ 点且斜率为 $-\frac{1}{3}$ 的直线上.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15 桌子上放着两堆重量和相等的硬币,第一堆硬币的个数是 $n$, 第二堆硬币的个数是 $m, S=\min \{n, m\}$. 对于任意的不大于 $S$ 的自然数 $k$, 按硬币重量自大至小的顺序, 第一堆前 $k$ 个较重的硬币的重量和都不大于第二堆中前 $k$ 个较重的硬币的重量和.
+证明: 对于任意正数 $x$, 如果把两堆中每一个重量不小于 $x$ 的硬币的重量都按 $x$ 计算, 那么, 这样算出来的第一堆硬币的重量和都不小于第二堆硬币的重量和.
+%%<SOLUTION>%%
+把第一堆 $n$ 枚硬币的重量依次表示为 $x_1 \geqslant x_2 \geqslant \cdots \geqslant x_n$, 把第二堆 $m$ 枚硬币的重量依次表示为 $y_1 \geqslant y_2 \geqslant \cdots \geqslant y_m$. 又设 $x_1 \geqslant \cdots \geqslant x_s \geqslant x \geqslant x_{s+1} \geqslant \cdots \geqslant x_n, y_1 \geqslant \cdots \geqslant y_t \geqslant x \geqslant y_{t+1} \geqslant \cdots \geqslant y_m$. (如果没有不轻于 $x$ 的硬币, 则结论显然成立.
+) 这样, 要证明的是: $x_s+x_{s+1}+\cdots+x_n \geqslant x_t+ y_{t+1}+\cdots+y_m$. 设 $x_1+x_2+\cdots+x_n=y_1+y_2+\cdots+y_m=A$, 即证 $x_s+[A- \left(x_1+\cdots+x_s\right) ] \geqslant x_t+\left[A-\left(y_1+\cdots+y_t\right)\right]$, 即证 $x_1+\cdots+x_s+x(t-s) \leqslant y_1+\cdots+y_t$. 下面分两种情况:
+若 $t \geqslant s$, 则 $x_1+\cdots+x_s+x(t-s) \leqslant\left(y_1+\cdots+y_s\right)+\left(y_{s+1}+\cdots+y_t\right)$. (因为 $x_1+\cdots+x_s \leqslant y_1+\cdots+y_s$ 可由已知推出, 而且 $y_{s+1} \geqslant x, \cdots, y_t \geqslant x$.)
+若 $t<s$, 则 $x_1+\cdots+x_s+x(t-s) \leqslant y_1+\cdots+y_t$ 相当于 $x_1+\cdots+x_s \leqslant y_1+\cdots+y_t+\underbrace{(x+\cdots+x)}_{(t-s) \text { 个 }}$. 这个不等式可由下式推出: $x_1+\cdots+x_s \leqslant y_1+ \cdots+y_s=\left(y_1+\cdots+y_t\right)+\left(y_{t+1}+\cdots+y_s\right)$, 而 $y_{t+1} \leqslant x, \cdots, y_s \leqslant x$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16 $x, y$ 是互素的自然数, $k$ 是大于 1 的自然数.
+找出满足 $3^n=x^k+y^k$ 的所有自然数 $n$, 并给出证明.
+%%<SOLUTION>%%
+设 $3^n=x^k+y^k$, 其中 $x$ 与 $y$ 互素(不妨设 $x>y$ ), $k>1, n$ 是自然数.
+显然, $x 、 y$ 中的任何一个都不能被 3 整除.
+如果 $k$ 是偶数, 则 $x^k$ 和 $y^k$ 被 3 除的余数都是 1 . 这样, $x^k$ 与 $y^k$ 的和除以 3 的余数是 2 , 而不是 3 的整数次幂.
+于是, 推出矛盾,所以 $k$ 不是偶数.
+如果 $k$ 是奇数且 $k>1$, 则 $3^n=(x+y)\left(x^{k-1}-\cdots+y^{k-1}\right)$. 这样, $x+y= 3^m, m \geqslant 1$.
+以下证明: $n \geqslant 2 m$. 因为 $k$ 可被 3 整除, 取 $x_1=x^{\frac{k}{3}}, y_1=y^{\frac{k}{3}}$ 代入后, 可以认为 $k=3$. 这样, $x^3+y^3=3^n, x+y=3^m$. 要证明 $n \geqslant 2 m$, 只要证明 $x^3+ y^3 \geqslant(x+y)^2$, 即证明 $x^2-x y+y^2 \geqslant x+y$. 由于 $x \geqslant y+1$, 则 $x^2-x= x(x-1) \geqslant x y$. $\left(x^2-x-x y\right)+\left(y^2-y\right) \geqslant 0$. 不等式 $n \geqslant 2 m$ 得证.
+由恒等式 $(x+y)^3-\left(x^3+y^3\right)=3 x y(x+y)$ 推出: $(*) 3^{2 m-1}-3^{n-m-1}= x y$, 而 $2 m-1 \geqslant 1$, 且 $(* *) n-m-1 \geqslant n-2 m \geqslant 0$. 因此, 如果 (**) 中至少有一个不等号是严格不等号, 那么 $(*)$ 式中的左端可被 3 整除, 但右端不能被 3 整除, 推出矛盾.
+如果 $n-m-1=n-2 m=0$, 那么, $m=1, n=2$ 且 $3^2=2^3+1^3$. 故 $n=2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17 证明: 可以用 4 种颜色对正整数 $1,2, \cdots, 2000$ 染色, 使它不含有由 7 个同色数组成的等差数列.
+%%<SOLUTION>%%
+问题等价于把集合 $S=\{1,2, \cdots, 2000\}$ 分拆成 4 个非空子集 $M_1 、 M_2 、 M_3 、 M_4$, 使得 $M_i \cap M_j=\varnothing(i \neq j), M_1 \cup M_2 \cup M_3 \cup M_4=S$.
+因为 $6 \times 7^3>2000$, 所以 $S$ 中的每个数都可以表示成至多 4 位的 7 进制数 $(a b c d)_7$, 这里 $a, b, c, d \in\{0,1,2, \cdots, 6\}$. 设 $A_i= \{(a b c d)_7 \mid(a b c d)_7 \in S, b \neq i, c \neq i, d \neq i\}, i=1,2,3,4$. 对任意 $x \in S$, 由于每个 7 进制正整数末 3 位数上至少有 $1,2,3,4$ 中的一个数字末出现, 例如 $x$ 的末 3 位数中末出现 4 , 则 $x \in A_4$, 所以, $A_1 \cup A_2 \cup A_3 \cup A_4=S$.
+下证: 集合 $A_i(i=1,2,3,4)$ 中不含由 7 项构成的等差数列.
+反设某个$A_i$ 中含有由 7 项构成的等差数列: $a, a+d, \cdots, a+6 d$. 若 $7 \nmid d$, 则上述 7 个数模 7 两两不同余 (即构成一个模 7 的完系), 从而, 这 7 个数中必有一个, 它除以 7 的余数为 $i$, 即它的 7 进制表示中的末位数为 $i$, 矛盾.
+若 $7 \mid d, 7^2 \nmid d$, 仿上可得到这个等差数列中必有一项, 它的 7 进制表示中从右数的第二位数字为 $i$, 矛盾.
+若 $7^2 \mid d, 7^3 \nmid d$, 同理可得这个等差数列中必有一项, 它的 7 进制表示中从右数的第三位数字为 $i$, 矛盾.
+若 $7^3 \mid d$, 则 $6 d \geqslant 6 \times 7^3>2000$, 矛盾.
+最后, 令 $M_1=A_1, M_2=A_2 \cap \bar{A}_1, M_3=A_3 \cap \bar{A}_1 \cap \bar{A}_2, M_4=A_4 \cap \bar{A}_1 \cap \bar{A}_2 \cap \bar{A}_3$, 得到符合要求的分拆.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题18 一个正整数无穷等差数列, 包含一项是整数的平方, 另一项是整数的立方.
+证明: 此数列含有一项是整数的六次幂.
+%%<SOLUTION>%%
+设数列 $\{a+i h: i=0,1,2, \cdots\}$ 含 $x^2 、 y^3$ 项, $x 、 y$ 是整数.
+对公差 $h$ 用数学归纳法.
+$h=1$, 显然成立.
+对某个固定的 $h>1$, 假设其公差小于 $h$ 且满足题设条件的等差数列都成立.
+现考察在 $h$ 时的情形.
+令 $a 、 h$ 的最大公约数为 $d=(a, h), h=d e$. 分两种情况:
+情形 $1 \quad(d, e)=1$. 易知 $x^2 \equiv a \equiv y^3(\bmod h)$, 因而有 $x^2 \equiv a \equiv y^3(\bmod e) . e$ 与 $a$ 互素, 故 $e$ 与 $x$ 和 $y$ 也互素.
+所以, 有整数 $t$, 使得 $t y \equiv x(\bmod e)$. 因此, $(t y)^6 \equiv x^6(\bmod e)$, 即 $t^6 a^2 \equiv a^3(\bmod e)$. 因 $(e, a)=1$, 故两端可除以 $a^2$ 有 $t^6 \equiv a(\bmod e)$. 又 $(d, e)=1$, 则对某个整数 $k$, 有 $t+k e \equiv 0(\bmod d)$. 于是, $(t+k e)^6 \equiv 0 \equiv a(\bmod d)$. 因 $t^6 \equiv a(\bmod e)$, 由二项式公式, 可得 $(t+k e)^6 \equiv a(\bmod e)$. 又 $(d, e)=1, h=d e$, 由以上两同余式, 有 $(t+k e)^6 \equiv a (\bmod h)$. 显然, $k$ 可取任意大的整数, 故上式说明数列 $\{a+i h \mid i=0,1,2, \cdots\}$ 含一个整数的六次幂项.
+情形 $2(d, e)>1$. 令素数 $p, p|d, p| e$, 并设 $p^\alpha$ 是整除 $a$ 的 $p$ 的最高次幂, $p^\beta$ 是整除 $h$ 的 $p$ 的最高次幂.
+因 $h=d e,(e, a)=1$, 有 $\beta>\alpha \geqslant 1$. 因而对 $\{a+i h \mid i=0,1, \cdots\}$ 中每一项, 能整除它的最高次幕是 $p^\alpha$. 因 $x^2 、 y^3$ 是数列的两个项, $\alpha$ 必被 2 和 3 整除, 故 $\alpha=6 r$. 因此, $\alpha \geqslant 6$. 整数数列 $\{p^{-6}(a+ i h) \mid i=0,1,2, \cdots\}$ 的公差 $\frac{h}{p^6}<h$, 且含有项 $\left(\frac{x}{p^3}\right)^2 、\left(\frac{y}{p^2}\right)^3$, 由归纳假设, 它含有项 $z^6$ ( $z$ 是整数). 所以, $(p z)^6$ 是原数列的一个项.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题19 如果一个正整数的所有正约数之和为其两倍, 则称该数为一个完全数.
+求所有的正整数 $n$, 使得 $n-1$ 和 $\frac{n(n+1)}{2}$ 都是完全数.
+%%<SOLUTION>%%
+这里需要用到 Euler 的一个结论: $n$ 为偶完全数 $\Leftrightarrow$ 存在质数 $p$, 使得 $2^p-1$ 为质数, 且 $n=2^{p-1}\left(2^p-1\right)$. 下面以此来解本题.
+情形一: $n$ 为奇数, 则 $n-1$ 为偶完全数, 于是, 可写 $n-1=2^{p-1}\left(2^p-1\right)$, 其中 $p$ 与 $2^p-1$ 都为质数, 这时 $\frac{n(n+1)}{2}=\frac{1}{2}\left(2^{p-1}\left(2^p-1\right)+1\right)\left(2^{p-1}\left(2^p-1\right)+ 2)= (2^{p-1}\left(2^p-1\right)+1\right)\left(2^{p-2}\left(2^p-1\right)+1\right)$. 当 $p=2$ 时, $n=7, \frac{n(n+1)}{2}=  28$ , 此时 $n-1$ 与 $\frac{n(n+1)}{2}$ 都是完全数.
+当 $p \geqslant 3$ 时, 记 $N=\frac{n(n+1)}{2}$, 则 $N$ 为奇数, 且 $\frac{n+1}{2}=4^{p-1}-2^{p-2}+1=(3+1)^{p-1}-(3-1)^{p-2}+1$, 由二项式定理可知 $\frac{n+1}{2} \equiv 3 \times(p-1)-(p-2) \times 3+1+1+1 \equiv 6(\bmod 9)$. 从而 $3 \mid N$,但 $3^2 \nmid N$, 可设 $N=3 k, 3 \nmid k$, 此时, $\sigma(N)=\sigma(3), \sigma(k)=4 \sigma(k)$, 但是 $2 N \equiv 2(\bmod 4)$, 故 $\sigma(N) \neq 2 N$, 从而此时 $\frac{n(n+1)}{2}$ 不是完全数.
+情形二: $n$ 为偶数, 如果 $4 \mid n$, 则 $n-1 \equiv-1(\bmod 4) \Rightarrow n-1$ 不是完全平方数, 此时对任意 $d \mid n-1$, 由 $d \times \frac{n-1}{d}=n-1 \equiv-1(\bmod 4)$, 可知 $d$ 与 $\frac{n-1}{d}$ 中一个 $\bmod 4$ 余 -1 , 另一个 $\bmod 4$ 余 1 , 导致 $d+\frac{n-1}{d} \equiv 0(\bmod 4)$, 从而 $4 \mid \sigma(n-1)$, 但 $2(n-1) \equiv 2(\bmod 4)$, 故 $n-1$ 不是完全数.
+所以, $4 \nmid n$,于是, 可设 $n=4 k+2$, 此时 $N=\frac{n(n+1)}{2}=(2 k+1)(4 k+3)$ 为奇数.
+由于 $(2 k+ 1,4 k+3)=1$, 故 $\sigma(N)=\sigma(2 k+1) \sigma(4 k+3)$. 同上可知 $4 \mid \sigma(4 k+3)$, 故若 $\sigma(N)=2 N$, 则 $4|2 N \Rightarrow 2| N$, 这是一个矛盾.
+综上可知, 满足条件的 $n$ 只有一个, 即 $n=7$.
+%%PROBLEM_END%%
+
+

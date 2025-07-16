@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter2.tex",
+    "problem_type": "proof",
+    "problem": "例8. 平面内任给 $n(\\geqslant 4)$ 个点, 其中任意 4 点不共面, 若这些点之间连有 $\\left[\\frac{n^2}{4}\\right]+1$ 条线段,则存在两个有公共边的三角形.",
+    "solution": "证明:$n=4$ 时,一共有 4 个点 $A, B, C, D$, 它们之间连有 $\\left[\\frac{4^2}{4}\\right]+1=5$ 条线段,故其中只有 $\\mathrm{C}_4^2-5=1$ 对点之间没有连线,不妨设 $C$ 与 $D$ 没有连线, 这时存在两个有公共边的三角形: $\\triangle A B C$ 和 $\\triangle A B D$, 结论成立.\n假设 $n=k(\\geqslant 4)$ 时,结论成立, 即若 $k$ 个点之间连有 $\\left[\\frac{k^2}{4}\\right]+1$ 条线时, 则存在两个有公共边的三角形, 那么 $n=k+1$ 时, 假设 $k+1$ 个点之间连有 $\\left[\\frac{(k+1)^2}{4}\\right]+1$ 条线, 于是, 从各点出发的线段数之和为 $2\\left[\\frac{(k+1)^2}{4}\\right]+2$, 故由第二抽屉原理知, 其中必有一点 $A$, 从它出发的线段数至多为 $\\left[\\frac{1}{k+1}\\left(2\\left[\\frac{(k+1)^2}{4}\\right]+2\\right)\\right]$, 去掉这一点 $A$ 以及从 $A$ 出发的线段, 则还剩 $k$ 个点, 它们之间的连线数至少为\n$$\nN=\\left[\\frac{(k+1)^2}{4}\\right]+1-\\left[\\frac{1}{k+1}\\left(2\\left[\\frac{(k+1)^2}{4}\\right]+2\\right)\\right],\n$$\n而当 $k=2 m(m \\geqslant 2)$ 为偶数时, $N=m(m+1)+1-\\left[m+\\frac{m+2}{2 m+1}\\right]= m(m+1)+1-m=m^2+1=\\left[\\frac{k^2}{4}\\right]+1$, 当 $k=2 m-1(m \\geqslant 3)$ 为奇数时, $N= m^2+1-\\left[m+\\frac{1}{m}\\right]=m(m-1)+1=\\left[\\frac{k^2}{4}\\right]+1$, 即 $k$ 个点之间至少连有 $\\left[\\frac{k^2}{4}\\right]+1$ 条线段,故由归纳假设知存在两个有公共边的三角形, 于是原题结论得证.",
+    "remark": "注:当 $n \\geqslant 4$ 为偶数时, 本题为第二届国家集训队选拔考试试题.",
+    "figures": []
+}

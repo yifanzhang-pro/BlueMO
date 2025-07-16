@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题16 设集合 $S_n=\\{1,2, \\cdots, n\\}$, 若 $Z$ 是 $S_n$ 的子集, 把 $Z$ 中的所有数的和称为 $Z$ 的“容量” (规定空集的容量为 0 ). 若 $Z$ 的容量为奇 (偶) 数, 则称 $Z$ 为 $S_n$ 的奇 (偶)子集.\n(1) 求证: $S_n$ 的奇子集与偶子集个数相等;\n(2)求证: 当 $n \\geqslant 3$ 时, $S_n$ 的所有奇子集的容量之和与所有偶子集的容量之和相等;\n(3)当 $n \\geqslant 3$ 时, 求 $S_n$ 的所有奇子集的容量之和.",
+    "solution": "设 $S$ 为 $S_n$ 的奇子集, 令 $T=\\left\\{\\begin{array}{l}S \\cup\\{1\\}, \\text { 若 } 1 \\notin S, \\\\ S \\backslash\\{1\\} \\text {, 若 } 1 \\in S .\\end{array}\\right.$ 则 $T$ 是偶子集, $S \\rightarrow T$ 是奇子集到偶子集的一一对应, 而且对每个偶子集 $T$, 恰有一个奇子集 $S=\\left\\{\\begin{array}{l}T \\cup\\{1\\}, \\text { 若 } 1 \\notin T, \\\\ T \\backslash\\{1\\}, \\text { 若 } 1 \\in T .\\end{array}\\right.$ 与之对应, 所以(1) 的结论成立.\n对任一 $i(1 \\leqslant i \\leqslant n)$, 含 $i$ 的子集共 $2^{n-1}$ 个, 用上面的对应方法可知当 $i \\neq 1$ 时, 这 $2^{n-1}$ 个集中有一半是奇子集.\n当 $i=1$ 时, 由于 $n \\geqslant 3$, 将上边的 1 换成 3 , 同样可得其中有一半是奇子集.\n于是在计算奇子集容量之和时, 元素 $i$ 的贡献是 $2^{n-2} \\cdot i$. 奇子集容量之和是 $\\sum_{i=1}^n 2^{n-2} i=n(n+1) \\cdot 2^{n-3}$. 由上可知, 这也是偶子集的容量之和, 两者相等.",
+    "remark": "",
+    "figures": []
+}

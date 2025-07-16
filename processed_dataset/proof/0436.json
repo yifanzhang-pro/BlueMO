@@ -1,0 +1,12 @@
+{
+    "source_file": "./raw_volume-zh/volume12/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例8. 证明如图(<FilePath:./images/volume12/figures/fig-c6i13.png>) 没有哈密顿圈.",
+    "solution": "证明:如图(<FilePath:./images/volume12/figures/fig-c6i13.png>) 中将顶点 $v_1, v_2$ 以及与它们关联的边去掉, 得到的 $G^{\\prime}$ 有三个连通分支, 不满足定理五的必要条件,所以图 (<FilePath:./images/volume12/figures/fig-c6i13.png>) 没有哈密顿圈.\n最后再举一个例子作为本节的结束.",
+    "remark": "",
+    "figures": [
+        "./images/volume12/figures/fig-c6i13.png",
+        "./images/volume12/figures/fig-c6i13.png",
+        "./images/volume12/figures/fig-c6i13.png"
+    ]
+}

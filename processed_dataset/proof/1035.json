@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题28 在锐角三角形 $A B C$ 中, 已知 $A<B<C, B=60^{\\circ}$, 又 $\\sqrt{(1+\\cos 2 A)(1+\\cos 2 C)}= \\frac{\\sqrt{3}-1}{2}$, 试比较 $a+\\sqrt{2} b$ 与 $2 c$ 的大小, 并证明你的结论.",
+    "solution": "因 $\\sqrt{(1+\\cos 2 A)(1+\\cos 2 C)}=\\sqrt{2 \\cos ^2 A \\cdot 2 \\cos ^2 C}=2 \\cos A \\cos C=\\cos (A+C)+\\cos (A-C)=-\\frac{1}{2}+\\cos (A-C)=\\frac{\\sqrt{3}-1}{2}$, 所以 $\\cos (C-A)= \\frac{\\sqrt{3}}{2}$, 故 $C-A=30^{\\circ}$. 又 $C+A=120^{\\circ}$, 解得 $A=45^{\\circ}, B=60^{\\circ}, C=75^{\\circ}$, 故 $\\frac{a+\\sqrt{2} b}{2 c}=\\frac{\\sin A+\\sqrt{2} \\sin B}{2 \\sin C}=\\frac{\\sin 45^{\\circ}+\\sqrt{2} \\sin 60^{\\circ}}{2 \\sin 75^{\\circ}}=1$, 即 $a+\\sqrt{2} b=2 c$.",
+    "remark": "",
+    "figures": []
+}

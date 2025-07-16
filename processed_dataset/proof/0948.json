@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例7 设函数 $f(x), g(x)$ 对任意实数 $x$ 均有 $-\\frac{\\pi}{2}<f(x)+g(x)<\\frac{\\pi}{2}$, 并且 $-\\frac{\\pi}{2}<f(x)-g(x)<\\frac{\\pi}{2}$. 求证: 对任意实数 $x$ 均有 $\\cos f(x)> \\sin f(x)$, 并由此证明: 对任意实数 $x$ 均有 $\\cos (\\cos x)>\\sin (\\sin x)$.",
+    "solution": "证明:由条件可得 $-\\frac{\\pi}{2}<f(x)<\\frac{\\pi}{2},-\\frac{\\pi}{2}<g(x)<\\frac{\\pi}{2}$.\n若 $0 \\leqslant f(x)<\\frac{\\pi}{2}$, 得到 $-\\frac{\\pi}{2}<g(x)<\\frac{\\pi}{2}-f(x) \\leqslant \\frac{\\pi}{2}$, 由于 $y=\\sin x$ 在 $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$ 上为单调增函数, 故 $\\sin g(x)<\\sin \\left[\\frac{\\pi}{2}-f(x)\\right]=\\cos f(x)$.\n若 $-\\frac{\\pi}{2}<f(x)<0$, 则由条件 $-\\frac{\\pi}{2}<g(x)<\\frac{\\pi}{2}+f(x)<\\frac{\\pi}{2}$, 同样由 $y=\\sin x$ 在 $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$ 上为单调增函数, 故 $\\sin g(x)<\\sin \\left[\\frac{\\pi}{2}+f(x)\\right]= \\cos f(x)$.\n评注对任意实数 $x$,均有 $|\\cos x \\pm \\sin x|=\\sqrt{2}\\left|\\sin \\left(\\frac{\\pi}{4} \\pm x\\right)\\right| \\leqslant \\sqrt{2}< \\frac{\\pi}{2}$, 根据已证的不等式, 就有 $\\cos (\\cos x)>\\sin (\\sin x)$.\n利用正、余弦函数的单调性,结合正、余弦函数的有界性以及上述结论, 我们还有如下的一些结论: $\\sin (\\cos x)<\\cos (\\sin x), \\sin (\\sin (\\sin x))< \\sin (\\cos (\\cos x))<\\cos (\\cos (\\cos x))$ 等.",
+    "remark": "",
+    "figures": []
+}

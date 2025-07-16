@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例8. 过锐角 $\\triangle A B C$ 的顶点 $A 、 B 、 C$ 的三条高分别交对边于点 $D 、 E$ 、 $F$, 过点 $D$ 平行于 $E F$ 的直线分别交 $A C 、 A B$ 于点 $Q 、 R, E F$ 交 $B C$ 于点 $P$. 证明: $\\triangle P Q R$ 的外接圆过 $B C$ 的中点.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c8i19.png>), 取边 $B C$ 的中点 $M$.\n由性质 2 知 $B 、 C 、 D 、 P$ 是调和点列.\n又 $M$ 是 $B C$ 的中点, 因此 $D M D P=D B \\cdot D C$. (性质 4 的第(4)条)\n易证 $B 、 C 、 E 、 F$ 四点共圆.\n又因 $R Q / / E F$, 所以 $\\angle R Q C= \\angle P E C=\\angle R B C$.\n因此, $B 、 Q 、 C 、 R$ 四点共圆, 即 $D R \\cdot D Q=D B \\cdot D C=D M \\cdot D P$.\n由相交弦定理的逆定理知 $\\triangle P Q R$ 的外接圆过 $B C$ 的中点.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c8i19.png"
+    ]
+}

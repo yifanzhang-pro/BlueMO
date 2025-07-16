@@ -1,0 +1,405 @@
+
+%%TEXT_BEGIN%%
+二、代数与数论问题在代数不等式中, 有一类确定满足不等关系的量是否存在的问题, 通常可以尝试用最小数原理来解决.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 已知 $S_1 、 S_2 、 S_3$ 为非空整数集合, 且对于 $1 、 2 、 3$ 的任意一个排列 $i 、 j 、 k$, 若 $x \in S_i, y \in S_j$, 则 $x-y \in S_k$.
+(1) 证明: $S_1 、 S_2 、 S_3$ 三个集合中至少有两个相等.
+(2) 这三个集合中是否可能有两个集合无公共元素?
+%%<SOLUTION>%%
+证明:(1)由已知,若 $x \in S_i, y \in S_j$, 则
+$$
+y-x \in S_k,(y-x)-y=-x \in S_i,
+$$
+所以每个集合中均有非负元素.
+当三个集合中的元素都为零时, 命题显然成立.
+否则, 设 $S_1 、 S_2 、 S_3$ 中的最小正元素为 $a$, 不妨设 $a \in S_1$. 设 $b$ 为 $S_2 、 S_3$ 中最小的非负元素, 不妨设 $b \in S_2$, 则 $b-a \in S_3$.
+若 $b>0$, 则 $0 \leqslant b-a<b$, 与 $b$ 的取法矛盾.
+所以 $b=0$.
+任取 $x \in S_1$, 因 $0 \in S_2$, 故 $x-0=x \in S_3$, 所以 $S_1 \subseteq S_3$. 同理 $S_3 \subseteq S_1$. 故 $S_1=S_3$.
+(2) 可能.
+例如 $S_1=S_2=$\{ 奇数 $\} 、 S_3=\{$ 偶数 $\}$ 显然满足条件, 但 $S_1$ 和 $S_2$ 与 $S_3$ 都无公共元素.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $n$ 元集合 $X$ 的某些三元子集组成集合 $S$, 且 $S$ 中每两个元素(子集)之间至多有 1 个公共元素.
+试证: 存在集合 $A \subset X$, 使得 $|A| \geqslant[\sqrt{2 n}]$, 且 $S$ 中的任何元素都不是 $A$ 的子集.
+%%<SOLUTION>%%
+分析:依题设 $X$ 的三元子集族 $S$ 显然没有包含 $X$ 的全部三元子集, 故存在 $X$ 的不包含 $S$ 中任何元素 ( $X$ 的三元子集) 的子集, 毫无疑问应选取其中元素最多者来做 $A$.
+证明设在 $X$ 的不包含 $S$ 中任何元素的子集中, $A$ 是元素数目最多的一个, $|A|=a$. 对于每个 $x \in X-A, A \cup\{x\}$ 中必包含 $S$ 中的一个元素, 否则与 $a$ 的最大性矛盾.
+设 $x, y \in X-A, x \neq y$, 则 $A \cup\{x\}$ 与 $A \cup\{y\}$ 分别包含 $S$ 中的元素 $s(x)$ 和 $s(y)$. 显然, $s(x) \neq s(y)$. 按已知, 二者至多有 1 个公共元素, 所以相应的 $A$ 中的两个二元子集也不同, 即
+$$
+s(x)-\{x\} \neq s(y)-\{y\} .
+$$
+这样一来, 我们就定义了一个由 $X-A$ 到 $A$ 的所有二元子集组成的集合的单射:
+$$
+X-A \ni x \longmapsto s(x)-\{x\} \subset A .
+$$
+从而有
+$$
+\begin{gathered}
+n-a \leqslant \mathrm{C}_a^2, \\
+a+\frac{1}{2}>\sqrt{2 n} .
+\end{gathered}
+$$
+因为 $a \in N$, 所以 $a \geqslant[\sqrt{2 n}]$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 某地区网球俱乐部的 20 名成员举行 14 场单打比赛, 每人至少上场一次.
+求证: 必有六场比赛, 其 12 个参赛者各不相同.
+%%<SOLUTION>%%
+证明:记参加第 $j$ 场比赛的选手为 $\left(a_j, b_j\right)$, 并记
+$$
+S=\left\{\left(a_j, b_j\right) \mid j=1,2, \cdots, 14\right\} .
+$$
+设 $M$ 为 $S$ 的一个子集.
+如果 $M$ 中所含选手对中出现的选手互不相同, 则称 $M$ 为 $S$ 的一个“好”子集.
+显然, 这样的“好”子集只有有限个, 其中必有一个元素最多的, 设这个元素最多的“好”子集为 $M_0$, 它的元素个数为 $r$, 显然只需证明 $r \geqslant 6$.
+如果 $r \leqslant 5$, 由于 $M_0$ 是元素个数最多的“好” 子集, 所以在 $M_0$ 中未出现过的 $20-2r$ 名选手之间互相没有比赛, 否则与 $M_0$ 的最大性矛盾.
+这就意味着, 这 $20-2 r$ 名选手所参加的比赛一定是同前 $2 r$ 名选手进行的.
+由于每名选手至少参加一场比赛, 所以除了 $M_0$ 中的 $r$ 场比赛之外, 至少还要进行 $20-2 r$ 场比赛.
+因此, 总比赛场数至少为
+$$
+r+20-2 r=20-r \geqslant 15,
+$$
+与总比赛场次为 14 场矛盾.
+于是 $r \geqslant 6$. 问题得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 已知 $x_1, x_2, \cdots, x_n$ 是实数, $a_1, a_2, \cdots, a_n$ 和 $b_1, b_2, \cdots, b_n$ 均是正整数, 令
+$$
+\begin{aligned}
+& a=\frac{a_1 x_1+a_2 x_2+\cdots+a_n x_n}{a_1+a_2+\cdots+a_n}, \\
+& b=\frac{b_1 x_1+b_2 x_2+\cdots+b_n x_n}{b_1+b_2+\cdots+b_n} .
+\end{aligned}
+$$
+求证: 在 $x_1, x_2, \cdots, x_n$ 中必存在两个数 $x_i 、 x_j$, 使 $|a-b| \leqslant \mid a - x_i|\leqslant| x_j-x_i \mid$ 成立.
+%%<SOLUTION>%%
+分析:要证明存在 $x_i$ 使 $|a-b| \leqslant\left|a-x_i\right|$ 成立, 自然要在 $\left|a-x_1\right|$, $\left|a-x_2\right|, \cdots,\left|a-x_n\right|$ 中取最大者来做 $\left|a-x_i\right|$. 同样的, 对于存在 $x_i 、 x_j$ 使 $\left|a-x_i\right| \leqslant\left|x_j-x_i\right|$ 的证明, $\left|x_j-x_i\right|$ 应取 $\left|x_1-x_i\right|,\left|x_2-x_i\right|, \cdots, \left|x_n-x_i\right|$ 中最大者.
+证明
+$$
+\begin{aligned}
+& |a-b| \\
+= & \left|a-\frac{b_1 x_1+b_2 x_2+\cdots+b_n x_n}{b_1+b_2+\cdots+b_n}\right| \\
+= & \frac{\left|b_1\left(a-x_1\right)+b_2\left(a-x_2\right)+\cdots+b_n\left(a-x_n\right)\right|}{b_1+b_2+\cdots+b_n} \\
+\leqslant & \frac{b_1\left|a-x_1\right|+b_2\left|a-x_2\right|+\cdots+b_n\left|a-x_n\right|}{b_1+b_2+\cdots+b_n} .
+\end{aligned}
+$$
+在 $\left|a-x_1\right|,\left|a-x_2\right|, \cdots,\left|a-x_n\right|$ 中必有一个最大者, 设为 $\left|a-x_i\right|$.
+则有
+$$
+\begin{aligned}
+|a-b| & \leqslant \frac{b_1\left|a-x_i\right|+b_2\left|a-x_i\right|+\cdots+b_n\left|a-x_i\right|}{b_1+b_2+\cdots+b_n} \\
+& =\frac{\left(b_1+b_2+\cdots+b_n\right)\left|a-x_i\right|}{b_1+b_2+\cdots+b_n} \\
+& =\left|a-x_i\right| .
+\end{aligned}
+$$
+下面再计算 $\left|a-x_i\right|$.
+$$
+\begin{aligned}
+\left|a-x_i\right| & =\left|\frac{a_1 x_1+a_2 x_2+\cdots+a_n x_n}{a_1+a_2+\cdots+a_n}-x_i\right| \\
+& =\frac{\left|a_1\left(x_1-x_i\right)+a_2\left(x_2-x_i\right)+\cdots+a_n\left(x_n-x_i\right)\right|}{a_1+a_2+\cdots+a_n} \\
+& \leqslant \frac{a_1\left|x_1-x_i\right|+a_2\left|x_2-x_i\right|+\cdots+a_n \mid x_n-x_i \mid}{a_1+a_2+\cdots+a_n} .
+\end{aligned}
+$$
+在 $\left|x_1-x_i\right|,\left|x_2-x_i\right|, \cdots,\left|x_n-x_i\right|$ 中必有最大者, 设为 $\left|x_j-x_i\right|$.
+则
+$$
+\begin{aligned}
+\left|a-x_i\right| & \leqslant \frac{a_1\left|x_j-x_i\right|+a_2\left|x_j-x_i\right|+\cdots+a_n\left|x_j-x_i\right|}{a_1+a_2+\cdots+a_n} \\
+& =\frac{\left(a_1+a_2+\cdots+a_n\right)\left|x_j-x_i\right|}{a_1+a_2+\cdots+a_n} \\
+& =\left|x_j-x_i\right| .
+\end{aligned}
+$$
+于是, 存在 $x_i 、 x_j$, 使
+$$
+|a-b| \leqslant\left|a-x_i\right| \leqslant\left|x_j-x_i\right|
+$$
+成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 求方程
+$$
+x^4+4 y^4=2\left(z^4+4 u^4\right)
+$$
+的整数解.
+%%<SOLUTION>%%
+分析:本例可以运用无穷递降法来解.
+设 $(x, y, z, u)$ 是方程的一组解, 且其中 $x$ 是所有解中取最小正整数者, 我们就让 “无穷递降” 的过程从此开始, 看看后面会出现什么情况.
+解显然, 方程(1)有解
+$$
+x=y=z=u=0 .
+$$
+我们证明这是方程(1)的惟一一组整数解.
+若 ( $x, y, z, u)$ 是方程(1)的解, 则 ( $|x|, y, z, u)$ 必是方程 (1) 的解.
+故不妨设 ( $x, y, z, u)$ 是方程 (1) 的所有解中 $x$ 取最小正整数者.
+易知, $x$ 为偶数.
+设 $x=2 x_1, x_1 \in \mathbf{N}^*$, 则有
+$$
+\begin{aligned}
+16 x_1^4+4 y^4 & =2\left(z^4+4 u^4\right), \\
+8 x_1^4+2 y^4 & =z^4+4 u^4 .
+\end{aligned}
+$$
+因而 $z$ 是偶数.
+设 $z=2 z_1, z_1 \in \mathbf{Z}$, 则有
+$$
+\begin{gathered}
+8 x_1^4+2 y^4=16 z_1^4+4 u^4, \\
+4 x_1^4+y^4=8 z_1^4+2 u^4 .
+\end{gathered}
+$$
+因而 $y$ 是偶数.
+设 $y=2 y_1, y_1 \in \mathbf{Z}$, 则有
+$$
+\begin{gathered}
+4 x_1^4+16 y_1^4=8 z_1^4+2 u^4, \\
+2 x_1^4+8 y_1^4=4 z_1^4+u^4 .
+\end{gathered}
+$$
+因而 $u$ 是偶数.
+设 $u=2 u_1, u_1 \in \mathbf{Z}$, 则有
+$$
+\begin{aligned}
+2 x_1^4+8 y_1^4 & =4 z_1^4+16 u_1^4, \\
+x_1^4+4 y_1^4 & =2\left(z_1^4+4 u_1^4\right) .
+\end{aligned}
+$$
+由(2)知, $\left(x_1, y_1, z_1, u_1\right)$ 也是方程 (1) 的解.
+但 $0<x_1<x$, 这与 $x$ 的取法矛盾.
+所以,方程 (1) 有惟一解 $(0,0,0,0)$.
+说明由 $(x, y, z, u)=\left(2 x_1, 2 y_1, 2 z_1, 2 u_1\right)$ 知, 若方程 (1) 有 $x=y=z=u=0$ 以外的解, 则 $x 、 y 、 z 、 u$ 至少有一个不等于零.
+由于它们在方程中的次数均为偶数, 故可设其中任一个为正整数.
+由上面的证法同样可导出矛盾.
+这就是我们“不妨设”的理由.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 已知正整数 $a$ 和 $b$ 使得 $a b+1$ 整除 $a^2+b^2$, 求证 $\frac{a^2+b^2}{a b+1}$ 是某个正整数的平方.
+%%<SOLUTION>%%
+证明:令 $A=\left\{(a, b)\left|a, b \in \mathbf{N}^*, a \geqslant b, a b+1\right| a^2+b^2\right\}$. 本题的结论是: 对所有 $(a, b) \in A$, 都有
+$$
+f(a, b)=\frac{a^2+b^2}{a b+1}=k^2\left(k \in \mathbf{N}^*\right) .
+$$
+记 $B=\left\{(a, b) \mid(a, b) \in A\right.$, 且 $\left.f(a, b) \neq k^2, k \in \mathbf{N}^*\right\}$. 我们只需证明 $B=\varnothing$.
+若 $B \neq \varnothing$, 则不妨设 $B$ 中使 $a+b$ 最小的正整数对为 $(a, b)$. 令
+$$
+f(a, b)=\frac{a^2+b^2}{a b+1}=t\left(\neq k^2\right),
+$$
+则有
+$$
+a^2-t b a+b^2-t=0 .
+$$
+把(2)看作是关于 $a$ 的二次方程, 显然 $a$ 是方程(2)的一个根, 设 $c$ 为(2)的另一根, 则由韦达定理有
+$$
+\left\{\begin{array}{l}
+a+c=t b \\
+a c=b^2-t
+\end{array}\right.
+$$
+由 (3) 知 $c$ 是整数, 由 (4) 知 $c \neq 0$.
+若 $c<0$, 则由 $t>0, b>0$ 知
+$$
+-t c b-t \geqslant 0 \text {. }
+$$
+由 $c$ 是(2)的根得
+$$
+c^2-t c b+b^2-t=0,
+$$
+于是 $c^2+b^2=t c b+t \leqslant 0$. 出现矛盾.
+因而 $c>0$. 由(4)知
+$$
+0<a c=b^2-t<b^2 \leqslant a^2,
+$$
+所以 $0<c<a$. 由(5)得
+$$
+t=\frac{c^2+b^2}{c b+1},
+$$
+于是 $(b, c)$ 或 $(c, b) \in B$. 但此时
+$$
+b+c<a+b
+$$
+与 $(a, b)$ 的选择即 $a+b$ 最小矛盾.
+所以 $B=\varnothing$, 从而命题得证.
+说明这是第 26 届 IMO 的一道试题, 曾难倒主办国不少数论专家, 但就在此次竞赛中就有选手因上面的解法而获特别奖.
+此题还有另外一个用无穷递降法的证明.
+另证当 $a=b$ 时, 有正整数 $q$, 使得 $\frac{2 a^2}{a^2+1}=q$, 即 $(2-q) a^2=q$.
+显然, $q=1=1^2$, 此时结论成立.
+由对称性, 不妨设 $a>b$.
+设 $s$ 与 $t$ 是满足下列条件的整数:
+$$
+\left\{\begin{array}{l}
+a=b s-t \\
+s \geqslant 2,0 \leqslant t<b .
+\end{array}\right.
+$$
+(1)
+将 (1) 代入 $\frac{a^2}{a b} \frac{+b^2}{+1}$ 得
+$$
+\frac{a^2+b^2}{a b+1}=\frac{b^2 s^2-2 b s t+t^2+b^2}{b^2 s-b t+1} .
+$$
+考察这个数与 $s-1$ 的差
+$$
+\begin{aligned}
+& \frac{b^2 s^2-2 b s t+t^2+b^2}{b^2 s-b t+1}-(s-1) \\
+= & \frac{b^2 s-b s t+b^2+t^2-s-b t+1}{b(b s-t)+1} \\
+= & \frac{s\left(b^2-b t-1\right)+b(b-t)+t^2+1}{b(b s-t)+1} .
+\end{aligned}
+$$
+因为 $t<b$, 所以 $b-t \geqslant 1$, 从而
+$$
+b^2-b t-1 \geqslant 0, b-t>0, t^2+1>0,
+$$
+于是 (2) 式大于 0 , 即
+$$
+\frac{b^2 s^2-2 b s t+t^2+b^2}{b^2 s-b t+1}>s-1 .
+$$
+同理
+$$
+\frac{b^2 s^2-2 b s t+t^2+b^2}{b^2 s-b t+1}<s+1 .
+$$
+由于 $\frac{a^2+b^2}{a b+1}=\frac{b^2 s^2-2 b s t+t^2+b^2}{b^2 s-b t+1}$ 是整数, 所以由 (3)、(4) 可得
+$$
+\frac{b^2 s^2-2 b s t+t^2+b^2}{b^2 s-b t+1}=s,
+$$
+由此得
+$$
+b^2+t^2=b t s+s
+$$
+即
+$$
+\frac{b^2+t^2}{b t+1}=s=\frac{a^2+b^2}{a b+1}
+$$
+因为 $a>b>t$, 所以 $t=0$ 时, $s=b^2$ 为平方数; 若 $t \neq 0$, 可仿此继续下去, 经过有限步之后, 总可以使最小的数变为 0 , 所以 $s$ 是平方数, 即 $\frac{a^2+b^2}{a b+1}$ 是某个正整数的平方.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 在平面上有 $n$ 个 $(n \geqslant 2)$ 不全共线的点.
+试证: 一定存在一条直线恰好通过这 $n$ 个点中的两个点.
+%%<SOLUTION>%%
+分析:假设结论不成立.
+不妨设其中三点 $A$ 、 $B 、 C$ 都在直线 $l$ 上, 且 $B$ 在 $A 、 C$ 之间, $D$ 为 $l$ 外一点, 如图(<FilePath:./figures/fig-c8e7-1.png>),作 $D P_1 \perp A C$. 不妨设 $A 、 B$ 在 $P_1$ 的同侧, 再作 $B P_2 \perp A D$. 易知 $D P_1>B P_2$. 如直线 $A D$ 上还有第三点 $E$, 不妨设 $D 、 E$ 在 $P_2$ 的同侧, 且 $D P_2>E P_2$, 作 $E P_3 \perp B D$, 则 $B P_2> E P_3$. 由假设,这个过程可以无限地进行下去, 而且每次得到的 “点到直线的距离” 都比前一次小.
+另一方面, 过 $n$ 个点的每两点作一条直线 (可能有三点共线), 然后由 $n$ 个点中每一点作到这些直线的距离, 显然这样的距离只有有限个.
+于是出现矛盾.
+至此, 我们实际上已找到了本例的一种证明方法.
+下面我们用最小数原理来改写上面的过程.
+证明由 $n$ 个点中每两点作一条直线 (可能出现三点共线), 考虑 $n$ 个点中每一点到这些直线的距离所成之集, 这样的距离只有有限个, 其中必有一个最小者.
+不妨设点 $P$ 到直线 $l$ 的距离最短.
+下面证明: $l$ 上仅有已知点中的两个点.
+若 $l$ 上有已知 $n$ 个点中的三个点, 过点 $P$ 作 $P F \perp l$ 于 $F$, 则必有两点在点 $F$ 的同侧,如图(<FilePath:./figures/fig-c8e7-2.png>),设点 $X$ 、 点 $Y$ 在点 $F$ 的同侧 (如图 8-2), 且 $Y F>X F$. 设过点 $P$ 与点 $Y$ 的直线为 $m$, 这时点 $X$ 到 $m$ 的距离 $X Z$ 小于点 $P$ 到 $l$ 的距离 $P F$, 与假设 $P F$ 最小矛盾.
+所以, 直线 $l$ 上仅有已知点中的两个点.
+$l$ 即为所求.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 在某个星系的每一个星球上, 都有一位天文学家在观测最近的星球.
+若每两个星球间的距离都不相等, 证明: 当星球的个数为奇数时, 一定有一个星球任何人都看不到.
+%%<SOLUTION>%%
+证明:设有 $n$ 个星球 (同时也表示 $n$ 个天文学家) $A_1, A_2, \cdots, A_n, n$ 为奇数.
+这些星球两两之间的距离所成的集合是有限集, 故必有最小值, 不妨设 $A_1 A_2$ 最小.
+除 $A_1 、 A_2$ 外还有 $n-2$ 个星球和 $n-2$ 位天文学家.
+假若他们当中至少有一位看见已选出的星球.
+例如 $A_3$ 看见 $A_2$, 如果谁也看不见 $A_3$, 则结论成立; 否则还有一位天文学家如 $A_4$ 可看见 $A_3$. 如果谁也看不见 $A_4$, 结论同样成立; 否则还有一位天文学家如 $A_5$ 可看见 $A_4$. 仿此下去.
+由于上述过程中前面星球上的天文学家看不见后面的行星, 而 $n$ 是一个有限数,必然有最后一颗星球任何人都看不到.
+如果其他天文学家都看不到 $A_1 、 A_2$, 则再从 $n-2$ 颗星球中选择距离最近的两个.
+依此类推.
+因为 $n$ 是奇数, 所以最后存在一颗星球, 任何人都看不到它.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 平面上已给出 997 个点, 将连结每两点的线段的中点染成红色.
+证明至少有 1991 个红点.
+能否找到恰有 1991 个红点的点集?
+%%<SOLUTION>%%
+证明:由 997 个点连结每两点的线段只有有限条, 所以必有一条最长者.
+设 $A B$ 为诸线段中的最长者.
+$A$ 与其他 996 个点连结的线段的中点均在以 $A$ 为圆心, $\frac{1}{2} A B$ 为半径的圆的内部或圆周上.
+$B$ 与其他 996 个点连结的线段的中点均在以 $B$ 为圆心, $\frac{1}{2} A B$ 为半径的圆的内部或圆周上.
+所以至少有
+$$
+2 \times 996-1=1991
+$$
+个中点, 即有 1991 个红点.
+下面我们构造恰有 1991 个红点的 997 个点的点集:
+在 $x$ 轴上取 997 个点,坐标分别为 $1,2, \cdots, 997$, 则区间 $(1,997)$ 内分母为 1 或 2 的有理点就是全部的红点, 个数恰为 1991 个.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 若干名儿童围成一圈, 他们手中都拿有一些糖块.
+规定进行如下传递, 每次传递的方法是: 如果某人手中糖块数是奇数, 则他可再领取一块, 然后每人都把手中糖块的一半传给右边的小朋友.
+求证: 一定可以经过若干次传递,使得所有儿童手中的糖块数都相同.
+%%<SOLUTION>%%
+分析:由题设知, 在每次传递前, 每个儿童手中都有偶数块糖, 其中必有最多者和最少者.
+证明不妨设某次传递前手中糖块数最多的人有 $2 m$ 块, 最少的有 $2 n$ 块, $m>n$. 进行一次传递后, 结果是
+(1) 传递后每人手中的糖块数仍在 $2 n$ 与 $2 m$ 之间;
+(2) 原来手中糖块数超过 $2 n$ 块的,传递后仍然超过 $2 n$ 块;
+(3) 至少有一名原来糖块数为 $2 n$ 的孩子,传递后糖块数超过了 $2 n$.
+事实上, 圈子中至少有一名拿 $2 n$ 块糖的孩子的左邻手中糖块数为 $2 h> 2 n$. 传递之后, 原拿 $2 n$ 块糖的孩子手中的糖块数变为 $n+h>2 n$.
+由于每传递一次,拿 $2 n$ 块糖的孩子数至少减少 1 , 故若干次后, 将使所有孩子手中的糖块数都大于 $2 n$. 当他们都通过领取而使自己手中糖块数为偶数时,孩子手中糖块数的最小值至少上升了 2 .
+由于孩子手中糖块数的最大值在传递过程中不增, 而经过若干次传递之后最小值至少上升 2 , 故知经过多次传递后总可以使最大值与最小值相等, 即所有孩子手中的糖块数都相同.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 在 $n$ 名选手参加的循环赛中, 每两人比赛一场 (无平局). 试证下列两种情形恰有一种发生:
+(1) 可将所有选手分成两个非空集合,使得一个集合中的任何一名选手都战胜另一个集合中的所有选手;
+(2) 可将 $n$ 名选手从 1 到 $n$ 编号, 使得第 $i$ 名选手战胜第 $i+1$ 名选手, $i=1,2, \cdots, n$, 其中将 $n+1$ 理解为 1 .
+%%<SOLUTION>%%
+证明:显然, (1) 和 (2) 不能同时出现, 以下证明 (1) 和 (2) 至少有一种出现.
+设选手 $A$ 胜场最多.
+若 $A$ 战胜其他所有选手, 则 (1) 成立, 否则必有选手 $C$ 胜 $A$. 因 $A$ 胜场最多, 故必有负于 $A$ 的选手 $B$ 战胜 $C$, 于是得到一个选手圈 $\{A, B, C\}: A$ 胜 $B, B$ 胜 $C, C$ 胜 $A$.
+设这样的圈中含选手数最多的其中之一为 $\left\{A_1, A_2, \cdots, A_m\right\}$, 其中 $A_1$ 胜 $A_2, A_2$ 胜 $A_3, \cdots, A_{m-1}$ 胜 $A_m, A_m$ 胜 $A_1$. 若 $m=n$, 则 (2) 成立.
+以下设 $m<n$. 令
+$$
+S_1=\left\{A_1, A_2, \cdots, A_m\right\} .
+$$
+对任意 $B \notin S_1$, 或者 $B$ 战胜 $S_1$ 中所有选手, 或者 $B$ 负于 $S_1$ 中的所有选手.
+若不然, 则存在 $A_i, A_j \in S_1$, 使 $B$ 负于 $A_i$ 而战胜 $A_j$. 不妨设 $i<j$, 从而有 $k, i \leqslant k \leqslant j-1$, 使 $B$ 负于 $A_k$ 而战胜 $A_{k+1}$. 但这将导致更长的选手圈, 矛盾.
+再令
+$$
+\begin{aligned}
+& S_2=\left\{B \mid B \text { 胜 } A_i, i=1,2, \cdots, m\right\}, \\
+& S_3=\left\{B \mid B \text { 负于 } A_i, i=1,2, \cdots, m\right\} .
+\end{aligned}
+$$
+对任意 $B \in S_2$ 与 $C \in S_3$, 若有 $C$ 胜 $B$, 则可将选手 $C$ 和 $B$ 加人 $\left\{A_1, A_2, \cdots, A_m\right\}$ 中而得到更长的圈, 矛盾, 故必有 $B$ 胜 $C$. 若 $S_2$ 非空, 则令 $S= S_2, T=S_1 \cup S_3$; 若 $S_3$ 非空, 则令 $S=S_1 \cup S_2, T=S_3$. 易见, $S$ 中的任一名选手都战胜 $T$ 中的所有选手, 即 (1) 成立.
+说明上述证明中两次运用了最小数原理的推论,一次是“设选手 $A$ 胜场最多”, 导致“三怕”选手圈 $\{A, B, C\}$ 的存在; 另一次是“设这样的圈中含选手数最多的其中之一为 $\left\{A_1, A_2, \cdots, A_m\right\}$ ”, 后面的讨论都是以此为基础的.
+%%PROBLEM_END%%
+
+

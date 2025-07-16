@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. $p^2 \\geqslant 4 q$ 是关于 $x$ 的实系数方程 $x^4+p x^2+q=0$ 有实根的 ( ).\n(A) 充分而不必要条件\n(B) 必要而不充分条件\n(C) 充分且必要条件\n(D) 非充分又非必要条件",
+    "solution": "B.\n令 $x^2=t$, 则原方程变形为 $t^2+p t+q=0$.\n原方程有实根的充要条件是关于 $t$ 的方程 有非负实根, 从而可知 $p^2 \\geqslant 4 q$ 是该方程 有非负实根的必要而不充分条件.",
+    "remark": "",
+    "figures": []
+}

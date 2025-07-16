@@ -1,0 +1,466 @@
+
+%%TEXT_BEGIN%%
+不等式与多变量函数最值.
+在这一章里我们主要学习最值问题中所常用的"固定变量法",即当我们遇到那些有很多"互相制约因素和变量的最值问题时, 可以先固定大多数变量, 只允许一部分变量变动, 借机看清它们与目标量之间的依赖关系.
+然后, 让先前被固定冻结住的变量活化而重新变动起来,最后达到解决问题的目的.
+当然, 使用固定变法处理问题时, 可以从函数值人手, 让函数值逐步逐步接近最值; 也可以从自变量本身人手, 使其较快达到最值点; 还可以从正面推导,或从反面论证.
+针对这些不同的手段,下面我们将分别介绍 "累次求最值法"、"磨光变换法"以及"调整法".
+8.1 累次求最值法累次求最值法的关键在于求最值的最值, 即先固定一些变量, 对于剩下的那小部分变量求出最值 (当然与前面被固定的变量有关), 再解冻被固定住的变量, 对求得的最值继续作估计.
+如此一步一步, 直至求出目的最值.
+用累次求最值法证明不等式,也叫逐次逼近法,其技巧性很强.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+8.2 磨光变换法前述的累次求最值法, 在每一次逼近过程中都保证了取到统一等号, 这就要求我们首先发现取到最值的条件.
+我们可以换一种方法来求解, 当已知等号成立的条件后, 就不必每步都取到等号, 只要使变量组 $\left(x_1, x_2, \cdots, x_n\right)$ 逐步接近等号组 (即最值点), 且保证有限步可达到最值点即可.
+这种方法称为磨光变换法.
+在用磨光变换法解题时, 须注意确保函数值在磨光变换下向所需方向变化, 如欲求最大值, 则磨光变换必须保证函数值不减, 有时就要求我们适当地选取变量才能满足这一要求.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+8.3 调整 法对于一些最值问题, 如离散极值问题, 它们只有有限多种情形, 自然存在最大、最小值.
+这样, 我们可以凭借最值存在这一点, 用调整法来反证而解决问题.
+由于最值必存在, 我们不必像累次求极值法那样每步都取极值, 也不必像磨光变换法那样保证迅速接近最值点.
+只要对各种情形作局部的适当调整, 说明它们不能取最值即可.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 求三位数 (十进制下) 与其各位数字之和的比的最小值.
+%%<SOLUTION>%%
+解:设此三位数为 $100 x+10 y+z$, 其中 $x 、 y 、 z$ 为整数, 且 $1 \leqslant x \leqslant 9$, $0 \leqslant y, z \leqslant 9$. 于是, 比值为
+$$
+f(x, y, z)=\frac{100 x+10 y+z}{x+y+z}=1+\frac{99 x+9 y}{x+y+z} . \label{(1)}
+$$
+在(1)右端表达式中, 只有分母含有 $z$, 故当 $x 、 y$ 固定时, $f(x, y, z)$ 当且仅当 $z=9$ 时取最小值.
+同理可得
+$$
+\begin{aligned}
+f(x, y, z) & \geqslant 1+\frac{99 x+9 y}{9+x+y}=10+\frac{90 x-81}{9+x+y} \\
+& \geqslant 10+\frac{90 x-81}{18+x}=100-\frac{1701}{18+x}
+\end{aligned}
+$$
+$$
+\geqslant 100-\frac{1701}{18+1}=\frac{199}{19}
+$$
+故
+$$
+f_{\min }(x, y, z)=f(1,9,9)=\frac{199}{19} \text {. }
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 设 $A, B, C$ 为非负实数, $A+B+C=\frac{\pi}{2}$, 且 $M=\sin A+\sin B+ \sin C, N=\sin ^2 A+\sin ^2 B+\sin ^2 C$, 则 $M^2+N \leqslant 3$.
+%%<SOLUTION>%%
+证明:不妨设 $C \leqslant A, B$, 则 $C \in\left[0, \frac{\pi}{6}\right]$,
+$$
+\begin{gathered}
+M=2 \sin \frac{A+B}{2} \cos \frac{A-B}{2}+\sin C \\
+=2 \sin \left(\frac{\pi}{4}-\frac{C}{2}\right) \cos \frac{A-B}{2}+\sin C, \\
+N=\frac{1}{2}(1-\cos 2 A)+\frac{1}{2}(1-\cos 2 B)+\sin ^2 C .
+\end{gathered}
+$$
+固定 $C$, 有
+$$
+\begin{aligned}
+M^2+N= & 1+2 \sin ^2 C+4 \sin C \cdot \sin \left(\frac{\pi}{4}-\frac{C}{2}\right) \cos \frac{A-B}{2} \\
+& +4 \sin ^2\left(\frac{\pi}{4}-\frac{C}{2}\right) \cdot \cos ^2 \frac{A-B}{2}-\sin C \cdot \cos (A-B) \\
+= & 1+2 \sin ^2 C+4 \sin C \cdot \sin \left(\frac{\pi}{4}-\frac{C}{2}\right) \cos \frac{A-B}{2} \\
+& +4 \sin ^2\left(\frac{\pi}{4}-\frac{C}{2}\right) \cdot \cos ^2 \frac{A-B}{2}+\sin C \\
+& -2 \sin C \cos ^2 \frac{A-B}{2} \\
+= & 1+2 \sin ^2 C+\sin C+4 \sin \left(\frac{\pi}{2}-\frac{C}{2}\right) \sin C \\
+& +\left[4 \sin ^2\left(\frac{\pi}{4}-\frac{C}{2}\right)-2 \sin C\right] \cos ^2 \frac{A-B}{2} \\
+= & 1+2 \sin ^2 C+\sin C+4 \sin \left(\frac{\pi}{4}-\frac{C}{2}\right) \sin C \\
+& +2(1-2 \sin C) \cos ^2 \frac{A-B}{2} \\
+\leqslant & 1+2 \sin ^2 C+\sin C+4 \sin \left(\frac{\pi}{4}-\frac{C}{2}\right) \sin C
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& +2(1-2 \sin C) \\
+= & 3+2 \sin ^2 C-3 \sin C+4 \sin \left(\frac{\pi}{4}-\frac{C}{2}\right) \sin C .
+\end{aligned}
+$$
+令 $t=\frac{\pi}{4}-\frac{C}{2}$, 则 $t \in\left[\frac{\pi}{6}, \frac{\pi}{4}\right]$, 于是
+$$
+\begin{aligned}
+M^2+N & =3+2 \cos ^2 2 t-3 \cos 2 t+4 \sin t \cos 2 t \\
+& =3+\cos 2 t(2 \cos 2 t-3+4 \sin t) \\
+& =3+\cos 2 t\left(-4 \sin ^2 t+4 \sin t-1\right) \\
+& =3-\cos 2 t(2 \sin t-1)^2 \\
+& \leqslant 3
+\end{aligned}
+$$
+当 $A=B, \alpha=\frac{\pi}{4}$ (或 $\frac{\pi}{6}$ ) 时, 即 $A=B=C=\frac{\pi}{6}$ 或 $A=B=\frac{\pi}{4}, C=$ 0 , 不等式等号成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设 $A 、 B 、 C 、 D$ 为空间四点, 连结 $A B 、 A C 、 A D 、 B C 、 B D 、 C D$ 中至多有一条的长度大于 1 , 试求六条线段长度之和的最大值.
+%%<SOLUTION>%%
+解:设 $A D$ 为六条线段中最长的一条.
+(1) 将其余五条线段长度固定,易见当 $A$ 和 $D$ 为平行四边形 $A B D C$ 两相对顶点时, $A D$ 取得最大值.
+(2) 固定 $B 、 C$ 的位置,则 $A 、 D$ 必落在分别以 $B 、 C$ 为圆心, 1 为半径的两个圆相交的区域内.
+此时具有最大可能距离的唯一一对点恰为两圆的两个交点,当 $A 、 D$ 取这两点时, $A B 、 B D 、 A C 、 C D$ 均达到各自的最大值 1 .
+(3) 剩下的问题是当 $B C$ 变小时, $A D$ 变大; 当 $B C$ 变大时, $A D$ 变小,故我们应在其余四边固定为 1 的情况下探求 $B C+A D$ 的最大值.
+记 $\angle A B O=\theta$, 由 $A B=1,0<B C \leqslant 1$ 知 $\theta \in\left[\frac{\pi}{3}, \frac{\pi}{2}\right)$.
+于是, $A D+B C=2(\sin \theta+\cos \theta)=2 \sqrt{2} \sin \left(\theta+\frac{\pi}{4}\right)$ 在 $\theta=\frac{\pi}{3}$ 时取到最大值.
+此时,六条线段之和为 $4+2\left(\sin \frac{\pi}{3}+\cos \frac{\pi}{3}\right)=5+\sqrt{3}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 若 $a 、 b 、 c$ 为非负实数且 $a+b+c=1$, 试求 $S=a b+b c+c a-3 a b c$ 的最大值.
+%%<SOLUTION>%%
+解:不妨设 $a \geqslant b \geqslant c$, 则 $c \leqslant \frac{1}{3}$. 固定 $c$,
+$$
+S=a b+b c+c a-3 a b c=a b(1-3 c)+c(a+b) .
+$$
+由于 $a+b$ 的值一定, $1-3 c \geqslant 0, a b$ 在 $a=b$ 时取最大值,故 $S$ 在 $a=b$ 时取到最大值.
+将 $a 、 b 、 c$ 调整到 $a=b \geqslant c$, 则 $b \geqslant \frac{1}{3}$. 固定 $b$,
+$$
+S=a b+b c+c a-3 a b c=a c(1-3 b)+b(a+c) .
+$$
+由于 $1-3 b \leqslant 0, a+c$ 的值一定, 故 $S$ 在 $a 、 c$ 的差最大时取到最大值.
+而 $a-c \leqslant 1-b$, 此时 $c=0$.
+故只要在 $c=0, a+b=1$ 时求 $a b$ 的最大值, 显然为 $\frac{1}{4}$.
+因此,当 $a 、 b 、 c$ 中有两个为 $\frac{1}{2}$, 另一个为 0 时 $S$ 取到其最大值 $\frac{1}{4}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设非负数 $\alpha 、 \beta 、 \gamma$ 满足 $\alpha+\beta+\gamma=\frac{\pi}{2}$, 求函数
+$$
+f(\alpha, \beta, \gamma)=\frac{\cos \alpha \cos \beta}{\cos \gamma}+\frac{\cos \beta \cos \gamma}{\cos \alpha}+\frac{\cos \gamma \cos \alpha}{\cos \beta}
+$$
+的最小值.
+%%<SOLUTION>%%
+解:不妨设 $\gamma \leqslant \alpha, \beta$, 则 $\gamma \in\left[0, \frac{\pi}{6}\right]$. 固定 $\gamma$, 由于
+$$
+\begin{gathered}
+\frac{\cos \beta \cos \gamma}{\cos \alpha}+\frac{\cos \gamma \cos \alpha}{\cos \beta}=2 \cos \gamma\left(\frac{\cos ^2 \gamma}{\sin \gamma+\cos (\alpha-\beta)}+\sin \gamma\right), \\
+\cos \alpha \cdot \cos \beta=\frac{1}{2}(\sin \gamma+\cos (\alpha-\beta)) .
+\end{gathered}
+$$
+则
+$$
+\begin{aligned}
+f & =\frac{1}{2} \frac{\sin \gamma+\cos (\alpha-\beta)}{\cos \gamma}+2 \cos \gamma\left(\sin \gamma+\frac{\cos ^2 \gamma}{\sin \gamma+\cos (\alpha-\beta)}\right) \\
+& =\sin 2 \gamma+\frac{1}{2} \frac{\sin \gamma+\cos (\alpha-\beta)}{\cos \gamma}+2 \cdot \frac{\cos ^3 \gamma}{\sin \gamma+\cos (\alpha-\beta)} .
+\end{aligned}
+$$
+因为 $\sin \gamma+\cos (\alpha-\beta) \leqslant \sin \gamma+1 \leqslant \frac{3}{2} \leqslant 2 \cos ^2 \gamma$, 有
+$$
+\begin{aligned}
+f & \geqslant \sin 2 \gamma+\frac{1}{2} \frac{1+\sin \gamma}{\cos \gamma}+2 \cdot \frac{\cos ^3 \gamma}{1+\sin \gamma} \\
+& =2 \cos \gamma+\frac{1}{2} \frac{1+\sin \gamma}{\cos \gamma}
+\end{aligned}
+$$
+$$
+=2 \cos \gamma+\frac{1}{2} \cot \left(\frac{\pi}{4}-\frac{\gamma}{2}\right) .
+$$
+令 $\theta=\frac{\pi}{4}-\frac{\gamma}{2} \in\left[\frac{\pi}{6}, \frac{\pi}{4}\right]$, 则
+$$
+\begin{aligned}
+f & =2 \sin 2 \theta+\frac{1}{2} \cot \theta=\frac{4 \tan ^2 \theta}{1+\tan ^2 \theta}+\frac{1}{2} \cot \theta \\
+& =\frac{5}{2}+\frac{1}{2} \frac{(1-\tan \theta)\left(5 \tan ^2 \theta-4 \tan \theta+1\right)}{\tan \theta\left(1+\tan ^2 \theta\right)} \\
+& \geqslant \frac{5}{2}\left(\tan \theta \in\left[\frac{\sqrt{3}}{3}, 1\right]\right) .
+\end{aligned}
+$$
+因此,当 $\alpha=\beta=\frac{\pi}{4}, \gamma=0$ 时, $f$ 取到最小值 $\frac{5}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $x 、 y 、 z$ 都是非负实数,且 $x+y+z=1$, 求证:
+$$
+y z+z x+x y-2 x y z \leqslant \frac{7}{27} .
+$$
+%%<SOLUTION>%%
+证明:易见, 当 $x=y=z=\frac{1}{3}$ 时, 不等式中等号成立.
+不妨设 $x \geqslant y \geqslant z$, 则 $x \geqslant \frac{1}{3} \geqslant z$.
+令 $\quad x^{\prime}=\frac{1}{3}, y^{\prime}=y, z^{\prime}=x+z-\frac{1}{3}$,
+则
+$$
+x^{\prime}+z^{\prime}=x+z, x^{\prime} \cdot z^{\prime} \geqslant x \cdot z .
+$$
+所以 $y z+z x+x y-2 x y z=y(x+z)+(1-2 y) x z$
+$$
+\begin{aligned}
+& \leqslant y^{\prime}\left(x^{\prime}+z^{\prime}\right)+\left(1-2 y^{\prime}\right) x^{\prime} z^{\prime} \\
+& =\frac{1}{3}\left(y^{\prime}+z^{\prime}\right)+\frac{1}{3} y^{\prime} z^{\prime} \leqslant \frac{2}{9}+\frac{1}{27}=\frac{7}{27} .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 已知非负实数 $x_1, x_2, \cdots, x_n(n \geqslant 3)$ 满足不等式: $x_1+x_2+\cdots+ x_n \leqslant \frac{1}{2}$, 求 $\left(1-x_1\right)\left(1-x_2\right) \cdots\left(1-x_n\right)$ 的最小值.
+%%<SOLUTION>%%
+解:当 $x_1, x_2, \cdots, x_{n-2}, x_{n-1}+x_n$ 皆为定值时, 由于
+$$
+\left(1-x_{n-1}\right)\left(1-x_n\right)=1-\left(x_{n-1}+x_n\right)+x_{n-1} x_n,
+$$
+可见, $\left|x_{n-1}-x_n\right|$ 越大, 上式的值就越小.
+为此, $n \geqslant 3$ 时, 令
+$$
+x_i^{\prime}=x_i, i=1,2, \cdots, n-2, x_{n-1}^{\prime}=x_{n-1}+x_n, x_n^{\prime}=0 . \label{(1)}
+$$
+则 $x_{n-1}^{\prime}+x_n^{\prime}=x_{n-1}+x_n, x_{n-1}^{\prime} x_n^{\prime}=0 \leqslant x_{n-1} x_n$. 所以有
+$$
+\left(1-x_1\right)\left(1-x_2\right) \cdots\left(1-x_n\right) \geqslant\left(1-x_1^{\prime}\right)\left(1-x_2^{\prime}\right) \cdots\left(1-x_{n-1}^{\prime}\right) \text {. }
+$$
+其中
+$$
+x_1^{\prime}+x_2^{\prime}+\cdots+x_{n-1}^{\prime}=x_1+x_2+\cdots+x_n \leqslant \frac{1}{2} .
+$$
+再进行形如(1)的磨光变换 $n-2$ 次, 可得
+$$
+\left(1-x_1\right)\left(1-x_2\right) \cdots\left(1-x_n\right) \geqslant 1-\left(x_1+x_2+\cdots+x_n\right) \geqslant-\frac{1}{2},
+$$
+等号当 $x_1=\frac{1}{2}, x_2=x_3=\cdots=x_n=0$ 时取到.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设 $a, b, c, d \geqslant 0$, 且 $a+b+c+d=1$, 求证:
+$$
+b c d+c d a+d a b+a b c \leqslant \frac{1}{27}+\frac{176}{27} a b c d .
+$$
+%%<SOLUTION>%%
+证明:若 $d=0$, 则 $a b c \leqslant \frac{1}{27}$, 不等式显然成立.
+若 $a, b, c, d>0$, 只要证明:
+$$
+\begin{gathered}
+f(a, b, c, d)=\sum_{c y c} \frac{1}{a}-\frac{1}{27} \frac{1}{a b c d} \leqslant \frac{176}{27} . \\
+a \leqslant \frac{1}{4} \leqslant b, a^{\prime}=\frac{1}{4}, b^{\prime}=a+b-\frac{1}{4},
+\end{gathered}
+$$
+令 $\quad a \leqslant \frac{1}{4} \leqslant b, a^{\prime}=\frac{1}{4}, b^{\prime}=a+b-\frac{1}{4}$,
+则
+$$
+a+b=a^{\prime}+b^{\prime}, a^{\prime} b^{\prime} \geqslant a b .
+$$
+于是
+$$
+\begin{aligned}
+& f(a, b, c, d)-f\left(a^{\prime}, b^{\prime}, c, d\right) \\
+= & \left(\frac{1}{a}+\frac{1}{b}-\frac{1}{a^{\prime}}-\frac{1}{b^{\prime}}\right)-\frac{1}{27} \cdot \frac{1}{c d} \cdot\left(\frac{1}{a b}-\frac{1}{a^{\prime} b^{\prime}}\right)
+\end{aligned}
+$$
+$$
+\begin{aligned}
+& =\frac{a^{\prime} b^{\prime}-a b}{a b a^{\prime} b^{\prime}}(a+b)\left(1-\frac{1}{27} \frac{1}{c d(a+b)}\right) \\
+& \leqslant \frac{a^{\prime} b^{\prime}-a b}{a b a^{\prime} b^{\prime}}(a+b)\left[1-\frac{1}{27} \cdot\left(\frac{a+b+c+d}{3}\right)^{-3}\right] \\
+& =0 .
+\end{aligned}
+$$
+故
+$$
+f(a, b, c, d) \leqslant f\left(a^{\prime}, b^{\prime}, c, d\right) .
+$$
+至多再进行两次磨光变换, 即可得
+$$
+\begin{aligned}
+f(a, b, c, d) & \leqslant f\left(-\frac{1}{4}, a+b-\frac{1}{4}, c, d\right) \\
+& \leqslant f\left(\frac{1}{4}, \frac{1}{4}, a+b+c-\frac{1}{2}, d\right) \\
+& \leqslant f\left(\frac{1}{4}, \frac{1}{4}, \frac{1}{4}, \frac{1}{4}\right)=\frac{176}{27} .
+\end{aligned}
+$$
+所以原不等式成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设正实数 $a 、 b 、 c 、 d$ 满足: $a b c d=1$, 求证:
+$$
+\frac{1}{a}+\frac{1}{b}+\frac{1}{c}+\frac{1}{d}+\frac{9}{a+b+c+d} \geqslant \frac{25}{4} \text {. }
+$$
+%%<SOLUTION>%%
+证法 1 首先我们证明, 当 $a 、 b 、 c 、 d$ 中有两个相等时, 不等式成立.
+不妨设 $a=b$, 令 $s=a+b+c+d$, 则有
+$$
+\begin{aligned}
+& \frac{1}{a}+\frac{1}{b}+\frac{1}{c}+\frac{1}{d}+\frac{9}{a+b+c}+d=\frac{2}{a}+\frac{c+d}{c d}+\frac{9}{s} \\
+& =\frac{2}{a}+a^2(s-2 a)+\frac{9}{s}=\frac{2}{a}-2 a^3+\left(a^2 s+\frac{9}{s}\right) .
+\end{aligned}
+$$
+下面对 $a$ 的取值分情况讨论:
+若 $a \geqslant \frac{\sqrt{2}}{2}$, 则 $s=a+b+c+d \geqslant 2 a+\frac{2}{a} \geqslant \frac{3}{a}$, 因此将 $s$ 视为变量, 上式最小值在 $s=2 a+\frac{2}{a}$ 时取到, 此时
+$$
+\begin{aligned}
+& \frac{2}{a}-2 a^3+\left(a^2 s+\frac{9}{s}\right)=\frac{2}{a}-2 a^3+a^2\left(2 a+\frac{2}{a}\right)+\frac{9}{s}=\frac{2}{a}+2 a+\frac{9}{s}=s+\frac{9}{s}= \\
+& \frac{7}{16} s+\frac{9}{16} s+\frac{9}{s} \geqslant \frac{7}{16} \times 4+2 \sqrt{\frac{9}{16} s \cdot \frac{9}{s}}=\frac{7}{4}+\frac{9}{2}=\frac{25}{4} \text {. (这里用到了 } s=2 a+ \\
+& \left.\frac{2}{a} \geqslant 4\right)
+\end{aligned}
+$$
+若 $0<a<\frac{\sqrt{2}}{2}$, 则
+$$
+\begin{aligned}
+\frac{2}{a}-2 a^3+\left(a^2 s+\frac{9}{s}\right) & \geqslant \frac{2}{a}-2 a^3+6 a=\frac{2}{a}+5 a+\left(a-2 a^3\right)>\frac{2}{a}+5 a \\
+& \geqslant 2 \sqrt{\frac{2}{a} \cdot 5 a}=2 \sqrt{10}>\frac{25}{4} .
+\end{aligned}
+$$
+因此当 $a 、 b 、 c 、 d$ 中有两个相等时,不等式成立.
+下面假设 $a 、 b 、 c 、 d$ 两两不等, 不妨设 $a>b>c>d$. 由于 $\frac{a d}{c} \cdot b \cdot c \cdot c= a b c d=1$, 故由上面的分析得
+$$
+\frac{1}{\frac{a d}{c}}+\frac{1}{b}+\frac{1}{c}+\frac{1}{c}+\frac{9}{\frac{a d}{c}+b+c+c} \geqslant \frac{25}{4} .
+$$
+下面我们只需证明
+$$
+\frac{1}{a}+\frac{1}{b}+\frac{1}{c}+\frac{1}{d}+\frac{9}{a+b+c+d} \geqslant \frac{1}{\frac{a d}{c}}+\frac{1}{b}+\frac{1}{c}+\frac{1}{c}+\frac{9}{\frac{a d}{c}+b+c+c} . \label{(1)}
+$$
+而 (1)
+$$
+\begin{aligned}
+& \Leftrightarrow \frac{1}{a}+\frac{1}{d}+\frac{9}{a+b+c+d} \geqslant \frac{c}{a d}+\frac{1}{c}+\frac{9}{\frac{a d}{c}+b+2 c} \\
+& \Leftrightarrow \frac{a c+c d-c^2-a d}{a c d} \geqslant \frac{9}{(a+b+c+d)\left(\frac{a d}{c}+b+2 c\right)} \cdot\left(a+d-\frac{a d}{c}-c\right) \\
+& \Leftrightarrow \frac{(a-c)(c-d)}{a c d} \geqslant \frac{9}{(a+b+c+d)\left(\frac{a d}{c}+b+2 c\right)} \cdot \frac{(a-c)(c-d)}{c}, \\
+& \Leftrightarrow \frac{1}{a d} \geqslant \frac{9}{(a+b+c+d)\left(\frac{a d}{c}+b+2 c\right)} \\
+& \Leftrightarrow(a+b+c+d)\left(\frac{a d}{c}+b+2 c\right) \geqslant 9 a d \\
+&\left.\Leftrightarrow \frac{a d}{c}+b+2 c \geqslant \sqrt{9 a d} \text { (因为 } a+b+c+d>\frac{a d}{c}+b+2 c\right) \\
+& \Leftrightarrow \frac{a d}{c}+3 c \geqslant \sqrt{9 a d} .
+\end{aligned}
+$$
+而最后一式可以用均值不等式推出, 这样就证明了结论.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 设正实数 $a 、 b 、 c 、 d$ 满足: $a b c d=1$, 求证:
+$$
+\frac{1}{a}+\frac{1}{b}+\frac{1}{c}+\frac{1}{d}+\frac{9}{a+b+c+d} \geqslant \frac{25}{4} \text {. }
+$$
+%%<SOLUTION>%%
+证法 2 不妨设 $a \leqslant b \leqslant c \leqslant d$, 并记 $f(a, b, c, d)=\frac{1}{a}+\frac{1}{b}+\frac{1}{c}+\frac{1}{d}+\frac{9}{a+b+c+d} $.
+先证: $f(a, b, c, d) \geqslant f(\sqrt{a c}, b, \sqrt{a c}, d), \label{(*)}$.
+事实上,上式等价于
+$$
+\begin{aligned}
+& \frac{1}{a}+\frac{1}{c}+\frac{9}{a+b+c+d} \geqslant \frac{1}{\sqrt{a c}}+\frac{1}{\sqrt{a c}}+\frac{9}{2 \sqrt{a c}+b+d} \\
+\Leftrightarrow & \frac{(\sqrt{a}-\sqrt{c})^2}{a c} \geqslant \frac{9(\sqrt{a}-\sqrt{c})^2}{(a+b+c+d)(2 \sqrt{a c}+b+d)} \quad\left(\text { 因为 }(\sqrt{a}-\sqrt{c})^2 \geqslant 0\right) \\
+\Leftarrow & (a+b+c+d)(2 \sqrt{a c}+b+d) \geqslant 9 a c \quad \text { (因为 } b+d \geqslant 2 \sqrt{b d}=\frac{2}{\sqrt{a c}} \text { ) } \\
+\leftarrow & \left(a+c+\frac{2}{\sqrt{a c}}\right)\left(2 \sqrt{a c}+\frac{2}{\sqrt{a c}}\right) \geqslant 9 a c 
+\end{aligned} \label{(1)}
+$$
+而 $1=a b c d \geqslant a \cdot a \cdot c \cdot c \Rightarrow a c \leqslant 1 \Rightarrow \frac{2}{\sqrt{a c}} \geqslant 2 \sqrt{a c}$. 且 $a+c \geqslant 2 \sqrt{a c}$, 故
+(1)左边 $\geqslant\left(2 \sqrt{a c}+-\frac{2}{\sqrt{a c}}\right)\left(2 \sqrt{a c}+\frac{2}{\sqrt{a c}}\right)>4 \sqrt{a c} \cdot 4 \sqrt{a c}=16 a c> 9 a c=$ (1)右边.
+所以 (*) 成立.
+(*) 说明 $f(a, b, c, d)$ (其中 $a \leqslant b \leqslant c \leqslant d)$ 的最小值 (或极小值) 总是在 $a=c$, 即 $a=b=c$ 时取得.
+欲得到该四元函数的下界, 我们就可不妨设 $(a, b$, $c, d)=\left(\frac{1}{t}, \frac{1}{t}, \frac{1}{t}, t^3\right)$, 这里 $t \geqslant 1$; 这也说明了只需证明对任意的 $t \geqslant 1$, 总有
+$$
+f\left(\frac{1}{t}, \frac{1}{t}, \frac{1}{t}, t^3\right) \geqslant \frac{25}{4} , \label{(**)}
+$$
+就证明了原不等式成立.
+代入, 可知
+$$
+\begin{aligned}
+& f\left(\frac{1}{t}, \frac{1}{t}, \frac{1}{t}, t^3\right) \geqslant \frac{25}{4} \\
+\Leftrightarrow & 3 t+\frac{1}{t^3}+\frac{9}{t^3+\frac{3}{t}} \geqslant \frac{25}{4} \\
+\Leftrightarrow & 12 t^8-25 t^7+76 t^4-75 t^3+12 \geqslant 0 \\
+\Leftrightarrow & (t-1)^2\left(12 t^6-t^5-14 t^4-27 t^3+36 t^2+24 t+12\right) \geqslant 0 \\
+\Leftrightarrow & 12 t^6-t^5-14 t^4-27 t^3+36 t^2+24 t+12 \geqslant 0 \\
+\Leftrightarrow(t-1)\left(12 t^5+11 t^4-3 t^3-30 t^2+6 t+30\right)+42 \geqslant 0 .
+\end{aligned} \label{(2)}
+$$
+而 $t \geqslant 1,12 t^5+6 t \geqslant 2 \sqrt{12 t^5 \cdot 6 t}=12 \sqrt{2} t^3>3 t^3$,
+$$
+11 t^4+30 \geqslant 2 \sqrt{11 t^4 \cdot 30}=2 \sqrt{330} t^2>30 t^2 .
+$$
+故 $(t-1)\left(12 t^5+11 t^4-3 t^3-30 t^2+6 t+30\right)+42>0$, 所以 (2) 成立.
+至此, $(* *)$ 成立, 原不等式得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 求证: 在周长为定值 $l$ 的一切 $n$ 边形中, 正 $n$ 边形有最大的面积.
+%%<SOLUTION>%%
+证明:(1) 首先, 凹多边形不可能具有最大面积.
+如图(<FilePath:./figures/fig-c8i1.png>), 设 $A_1 A_2 \cdots A_n$ 为一凹多边形, 则当将 $\triangle A_{i-1} A_i A_{i+1}$ 以线段 $A_{i+1} A_{i-1}$ 的中点为中心, 中心对称为 $\triangle A_{i-1} A_i^{\prime} A_{i+1}$ 时, 得到的凸多边形 $A_1 \cdots A_{i-1} A_i^{\prime} A_{i+1} \cdots A_n$ 的周长也是 $l$, 但面积却变大了.
+因此, 我们在以下的讨论中只考虑凸多边形的情形.
+(2) 设凸多边形 $A_1 A_2 \cdots A_n$ 不等边, 且其中存在两条邻边, 一边小于 $\frac{l}{n}$ 而另一边大于 $\frac{l}{n}$, 不妨设是边 $A_1 A_2$ 和 $A_2 A_3$, 连接 $A_1 A_3$, 以 $A_1 A_3, \frac{l}{n}, A_1 A_2+ A_2 A_3-\frac{l}{n}$ 为三边长作 $\triangle A_1 A_2^{\prime} A_3$ (如图(<FilePath:./figures/fig-c8i2.png>) 所示).
+则 $A_1 A_2<A_1 A_2^{\prime}, A_2^{\prime} A_3<A_2 A_3$, 且 $A_1 A_2^{\prime}+A_2^{\prime} A_3=A_1 A_2+A_2 A_3$.
+于是由海伦公式知 $S_{\triangle A_1 A_2^{\prime} A_3}>S_{\triangle A_1 A_2 A_3}$, 从而 $A_1 A_2^{\prime} A_3 \cdots A_n$ 的面积大于 $A_1 A_2 \cdots A_n$ 的面积, 且前者中有一边 $A_1 A_2^{\prime}$ 的长度为 $\frac{l}{n}$.
+若多边形 $A_1 A_2^{\prime} A_3 \cdots A_n$ 仍不等边, 又可重复上述磨光变换而使边长为 1 的边数每次至少增加 1 条, 故至多经过 $n-1$ 次变换, 就可变为等边 $n$ 边形.
+于是, 不等边 $n$ 边形的面积必小于某等边 $n$ 边形的面积.
+(3) 设凸 $n$ 边形 $A_1 A_2 \cdots A_n$ 不等边, 于是 $n$ 边中存在两边 $A_i A_{i+1}<\frac{l}{n}<A_j A_{j+1}$, 但两边不相邻.
+连接 $A_i A_j$ 并作 $A_i A_j$ 的垂直平分线 $M N$, 以 $M N$ 为对称轴将多边形 $A_i A_{i+1} \cdots A_j$ 对称为多边形 $A_i A_{i+1}^{\prime} \cdots A_j$ (如图(<FilePath:./figures/fig-c8i3.png>) 所示).
+于是, 得到的新 $n$ 边形与原 $n$ 边形周长、面积都相等, 但新多边形中有两条邻边, 一边大于
+$\frac{l}{n}$, 另一边小于 $\frac{l}{n}$, 这样就化为了情形 (2).
+故知任一周长为 $l$ 的不等边 $n$ 边形的面积都小于某一个周长为 $l$ 的等边 $n$ 边形的面积.
+(4) 由克拉美定理, 在 $n$ 条边长都为定值的 $n$ 边形中, 内接于圆的多边形面积最大.
+故在周长为 $l$ 的所有等边 $n$ 边形中, 正 $n$ 边形面积最大.
+综上所述, 在周长为 $l$ 的所有等边 $n$ 边形中, 正 $n$ 边形面积最大.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 若干个正整数和为 2011 , 求它们积的最大值.
+%%<SOLUTION>%%
+解:由于和为 2011 的不同正整数组只有有限多个, 所以最大值必存在.
+设 $x_1, x_2, \cdots, x_n$ 都是正整数, $x_1+x_2+\cdots+x_n=2011$ 且积 $u= x_1 x_2 \cdots x_n$ 取到最大值, 那么
+(1) $x_i \leqslant 4(i=1,2, \cdots, n)$. 若不然, 有某个 $x_j>4$, 由于 $2+\left(x_j-2\right)= x_j, 2\left(x_j-2\right)=x_j+\left(x_j-4\right)>x_j$, 可用 2 和 $x_j-2$ 代替 $x_j$ 使和不变而积增大,矛盾!
+(2) $x_i \geqslant 2(i=1,2, \cdots, n)$. 若不然, 有某个 $x_k=1$, 由 $x_k \cdot x_i=x_i< x_i+x_k$, 可用 $x_k+x_i$ 代替 $x_k x_i$ 而使和不变且积变大,矛盾!
+(3) 因为 $4=2+2=2 \times 2$, 故 $x_j=4$ 可换为两个 2 而使 $u$ 不变.
+(4)设 $u=2^\alpha \cdot 3^\beta$. 若 $\alpha>3$, 则 $u=2^3 \cdot 2^{\alpha-3} \cdot 3^\beta<3^2 \cdot 2^{\alpha-3} \cdot 3^\beta$, 且 $2+ 2+2=3+3$ 和不改变, $u$ 却变大了, 矛盾!
+综上, 因为 $2011=3 \times 670+1$, 故 $u_{\max }=2^2 \times 3^{669}$.
+一般地, 若和为 $m$, 则
+$$
+u_{\max }=\left\{\begin{array}{l}
+3^s, m=3 s ; \\
+2^2 \cdot 3^{s-1}, m=3 s+1 ; \\
+2 \cdot 3^s, m=3 s+2 .
+\end{array}\right.
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 设 $a_1, a_2, \cdots, a_n, \cdots$ 是一个不减的正整数序列, 对于 $m \geqslant 1$, 定义 $b_m=\min \left\{n, a_n \geqslant m\right\}$, 即 $b_m$ 是使 $a_n \geqslant m$ 的 $n$ 的最小值.
+若已知 $a_{19}=85$, 求
+$$
+a_1+a_2+\cdots+a_{19}+b_1+b_2+\cdots+b_{85}, \label{(1)}
+$$
+的最大值.
+%%<SOLUTION>%%
+解:若存在 $i$, 使得 $a_i<a_{i+1}(1 \leqslant i \leqslant 18)$, 则进行如下调整: $a_i^{\prime}=a_i+1$, $a_j^{\prime}=a_j(j \neq i)$, 并将调整后的 $b_j$ 记为 $b_j^{\prime}(j=1,2, \cdots, 85)$.
+由定义可知 $b_{a_i+1}=i+1, b_{a_i+1}^{\prime}=i=b_{a_i+1}-1, b_j^{\prime}=b j\left(j \neq a_i+1\right)$.
+因此, 上述调整使 $b_{a_i+1}$ 减少了 1 而其余的 $b_j$ 不动, 故此调整保持(1)的值不变.
+这样, 可以经过一系列调整, 使 $a_1=a_2=\cdots=a_{19}=85$ 并且保持 (1) 的值不变, 但此时 $b_1=b_2=\cdots=b_{85}=1$, 于是所求(1)式的最大值为
+$$
+19 \times 85+1 \times 85=20 \times 85=1700 .
+$$
+%%PROBLEM_END%%
+
+

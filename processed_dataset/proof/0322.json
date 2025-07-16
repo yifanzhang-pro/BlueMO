@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例12. 设 $I=\\{1,2, \\cdots, n\\}, \\mathscr{A}$ 是 $I$ 的一些三元子集组成的集族,满足 $\\mathscr{A}$ 中任何两个元素 ( $I$ 的三元子集) 至多有一个公共元.\n证明:存在 $I$ 的一个子集 $X$,满足:(1) $\\mathscr{A}$ 的任何元素 ( $I$ 的三元子集) 不是 $X$ 的子集; (2) $|X| \\geqslant[\\sqrt{2 n}]$.",
+    "solution": "分析:.\n我们只要找出 $I$ 的所有满足条件 (1) 的子集中含元素个数最多的一个子集 $X$, 再证明 $|X| \\geqslant[\\sqrt{2 n}]$ 即可.\n证明将 $I$ 的具有下列性质的子集 $M$ 称为好子集: $\\mathscr{A}$ 中任何元素 ( $I$ 的三元子集)不是 $M$ 的子集.\n显然, 好子集是存在的(因为 $I$ 的任何二元子集均为好子集)且个数有限.\n设 $X$ 是所有好子集中含元素个数最多的一个好子集, 并设 $|X|=k$, 则 $X$ 满足条件(1), 故只要证 $X$ 满足条件 (2).\n记 $Y=I \\backslash X$, 由条件 (1) 知 $X \\neq I$, 即 $Y \\neq \\varnothing$, 设 $Y=\\left\\{y_1, y_2, \\cdots, y_{n-k}\\right\\}$, 对任意 $y_i \\in Y$, 由 $X$ 所含元素最多性质知 $X \\cup\\left\\{y_i\\right\\}$ 不是好子集, 即存在 $\\mathscr{A}$ 中一个元素 ( $I$ 的三元子集) $A_i \\subset X \\cup\\left\\{y_i\\right\\}$, 而 $A_i \\not \\subset X$, 故存在 $x_{i_1}, x_{i_2} \\in X$, 使 $A_i=\\left\\{x_{i_1}, x_{i_2}, y_i\\right\\}$, 我们就令 $y_i$ 与 $\\left\\{x_{i_1}, x_{i_2}\\right\\}$ 对应.\n构成从 $Y$ 到 $X$ 的所有二元子集组成的集族 $\\mathscr{B}$ 的一个映射 $f$, 下面证明 $f$ 为单射.\n事实上, 对任意 $y_i, y_j \\in Y, y_i \\neq y_j$, 存在 $X$ 的二元子集 $\\left\\{x_{i_1}, x_{i_2}\\right\\},\\left\\{x_{j_1}, x_{j_2}\\right\\}$ 使 $A_i=\\left\\{x_{i_1}\\right.$, $\\left.x_{i_2}, y_i\\right\\}, A_j=\\left\\{x_{j_1}, x_{j_2}, y_i\\right\\}$ 都属于 $\\mathscr{A}$, 若 $\\left\\{x_{i_1}, x_{i_2}\\right\\}=\\left\\{x_{j_1}, x_{j_2}\\right\\}$, 则 $A_i$ 与 $A_j$ 有两个公共元, 这与已知矛盾.\n故 $f$ 为单射, 所以 $|Y| \\leqslant|\\mathscr{B}|$, 即 $n-k \\leqslant \\mathrm{C}_k^2,[\\sqrt{k(k+1)}] \\geqslant[\\sqrt{2 n}]$, 但 $k<\\sqrt{k(k+1)}<k+1$, 所以 $|X|=k= [\\sqrt{k(k+1)}] \\geqslant[\\sqrt{2 n}]$.",
+    "remark": "",
+    "figures": []
+}

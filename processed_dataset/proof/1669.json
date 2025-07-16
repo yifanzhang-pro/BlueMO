@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例9. 设 $M$ 为 $\\triangle A B C$ 所在平面上一点, $H 、 O 、 R$ 分别为 $\\triangle A B C$ 的垂心、 外心、外接圆半径.\n求证: $S=\\min \\left(M A^3+M B^3+M C^3-\\frac{3}{2} R \\cdot M H^2\\right)$.",
+    "solution": "证明:$S=3 R^3-\\frac{3}{2} R \\cdot O H^2$.\n如图(<FilePath:./images/volume7/figures/fig-c10i8.png>),一方面, 当 $M=O$ 时等号成立.\n另一方面, 由均值不等式有\n$$\n\\frac{M A^3}{R}+\\frac{R^2+M A^2}{2} \\geqslant \\frac{M A^3}{R}+R \\cdot M A \\geqslant 2 M A^2 .\n$$\n所以 $\\frac{M A^3}{R} \\geqslant \\frac{3}{2} M A^2-\\frac{R^2}{2}$.\n类似三式相加得 $\\frac{1}{R}\\left(M A^3+M B^3+M C^3\\right) \\geqslant \\frac{3}{2}\\left(M A^2+M B^2+M C^2\\right)- \\frac{3}{2} R^2$. \\label{eq1}\n由 Leibniz 公式 (见注(1)), 设三角形的重心为 $G$, 有\n$$\n\\begin{aligned}\n& A M^2+B M^2+C M^2=3 M G^2+\\frac{1}{3}\\left(B C^2+C A^2+A B^2\\right), \\\\\n& A O^2+B O^2+C O^2=3 O G^2+\\frac{1}{3}\\left(B C^2+C A^2+A B^2\\right) .\n\\end{aligned}\n$$\n两式相减得\n$$\nA M^2+B M^2+C M^2=3 R^2+3 M G^2-3 O G^2,\n$$\n又由 Stewart 定理知\n$$\n\\begin{aligned}\n3 R^2+3 M G^2-3 O G^2 & =2 M O^2+3 R^2+M H^2-O H^2 (\\text { 见注 (2)} )\\\\\n& \\geqslant 3 R^2+M H^2-O H^2 .\n\\end{aligned}\n$$\n代入式\\ref{eq1}即得 $M A^3+M B^3+M C^3-\\frac{3}{2} R \\cdot M H^2 \\geqslant 3 R^3-\\frac{3}{2} R \\cdot O H^2$, 得证.",
+    "remark": "注(1) Leibniz 公式是指: 对于 $\\triangle A B C$ 所在平面上任意一点 $M$, 设三角形 $A B C$ 的重心为 $G$, 则\n$$\n\\begin{aligned}\nA M^2+B M^2+C M^2 & =3 M G^2+\\frac{1}{3}\\left(B C^2+C A^2+A B^2\\right) \\\\\n& =3 M G^2+A G^2+B G^2+C G^2,\n\\end{aligned}\n$$\n(可以用解析法或 Stewart 定理证明).\n(2) 由 Stewart 定理 (见第一章知识点) 知, $M G^2= \\frac{2 O G \\cdot M O^2+O G \\cdot M H^2}{3 O G}-2 O G^2=\\frac{2}{3} M O^2+\\frac{1}{3} M H^2-2 O G^2$, 于是 $3 M G^2- 3 O G^2=2 M O^2+M H^2-9 O G^2=2 M O^2+M H^2-O H^2$.\n(3) 此类最值问题一般思路是: 先找出最值点, 算出 (猜测)最值, 再用不等式、几何关系证明您的结论.",
+    "figures": [
+        "./images/volume7/figures/fig-c10i8.png"
+    ]
+}

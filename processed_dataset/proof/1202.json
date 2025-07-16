@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题8. 设 $x_1, x_2, \\cdots, x_n$ 为正有理数, 且各不相同.\n求证:\n$$\n\\left(\\frac{x_1^2+x_2^2+\\cdots+x_n^2}{x_1+x_2+\\cdots+x_n}\\right)^{x_1+x_2+\\cdots+x_n}>x_1^{x_1} x_2{ }^{x_2} \\cdots x_n^{x_n} .\n$$",
+    "solution": "首先设 $x_i \\in \\mathbf{N}$. 因为 $x_i$ 互不相同, 所以左边 $=$\n记 $m$ 为 $x_1, x_2, \\cdots, x_n$ 的各分母的最小公倍数, 则 $m x_1, m x_2, \\cdots, m x_n \\in \\mathbf{Z}^{+}$, 于是 $\\left[\\frac{\\left(m x_1\\right)^2+\\cdots+\\left(m x_n\\right)^2}{m x_1+m x_2+\\cdots+m x_n}\\right]^{m x_1+m x_2+\\cdots+m x_n}>\\left(m x_1\\right)^{m x_1} \\cdot\\left(m x_2\\right)^{m x_2} \\cdots \\cdots \\cdot \\left(m x_n\\right)^{m x_n}$. 两边开 $m$ 次方并除以 $m^{\\left(x_1+\\cdots+x_n\\right)}$, 即得到原不等式.",
+    "remark": "",
+    "figures": []
+}

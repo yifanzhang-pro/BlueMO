@@ -1,0 +1,201 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设与 $\triangle A B C$ 的外接圆内切并与边 $A B 、 A C$ 相切的圆为 $C_a$, 记 $r_a$ 为圆 $C_a$ 的半径, $r$ 是 $\triangle A B C$ 的内切圆半径.
+类似地定义 $r_b 、 r_c$. 证明: $r_a+r_b+r_c \geqslant 4 r$.
+%%<SOLUTION>%%
+证明: 设 $O_a 、 O_b 、 O_c$ 为圆 $C_a$ 、圆 $C_b$ 、圆 $C_c$ 的圆心.
+记 $M 、 N$ 为点 $O_a$ 在 $A B 、 A C$ 上的投影,则 $\triangle A B C$ 的内心 $I$ 为 $M N$ 的中点.
+$\frac{1}{\cos ^2 \frac{A}{2}}$. 同理, $\frac{r_b}{r}=\frac{1}{\cos ^2 \frac{B}{2}}, \frac{r_C}{r}=\frac{1}{\cos ^2 \frac{C}{2}}$. 令 $\alpha=\frac{A}{2}, \beta=\frac{B}{2}, \gamma=\frac{C}{2}$. 只需证当 $\alpha+\beta+\gamma=\frac{\pi}{2}$ 时, 有 $\frac{1}{\cos ^2 \alpha}+\frac{1}{\cos ^2 \beta}+\frac{1}{\cos ^2 \gamma} \geqslant 4$, 即 $\tan ^2 \alpha+\tan ^2 \beta+ \tan ^2 \gamma \geqslant 1$.
+由 Cauchy - Schwartz(柯西-许瓦尔兹) 不等式, 有 $3\left(\tan ^2 \alpha+\tan ^2 \beta+\right.\left.\tan ^2 \gamma\right) \geqslant(\tan \alpha+\tan \beta+\tan \gamma)^2$. 故只需证 $\tan \alpha+\tan \beta+\tan \gamma \geqslant \sqrt{3}$. 因为 $\tan x$ 在 $\left(0, \frac{\pi}{2}\right)$ 上是凸函数, 故由 Jensen 不等式得: $\tan \alpha+\tan \beta+\tan \gamma \geqslant 3 \tan \frac{\pi}{6}=\sqrt{3}$. 因此, $r_a+r_b+r_c \geqslant 4 r$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 已知圆 $W$ 是等边 $\triangle A B C$ 的外接圆, 设圆 $W$ 与圆 $W_1$ 外切且切点异于点 $A 、 B 、 C$, 点 $A_1 、 B_1 、 C_1$ 在圆 $W_1$ 上, 且使得 $A A_1 、 B B_1 、 C C_1$ 与圆 $W_1$ 相切.
+证明: 线段 $A A_1 、 B B_1 、 C C_1$ 中的一线段的长度等于另两线段长度之和.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c7a2.png>), 设 $r 、 r_1$ 分别是圆 $W$ 、圆 $W_1$ 的半径.
+不失一般性, 设圆 $W$ 和圆 $W_1$ 的切点位于 $A B$ 间靠近 $A$ 的一边.
+记 $O 、 O_1$ 分别是圆 $W$ 、圆 $W_1$ 的圆心.
+设 $\angle O_1 O A=\alpha$, 则 $\angle O_1 O B=120^{\circ}-\alpha$, $\angle O_1 O C=120^{\circ}+\alpha$. 由余弦定理得 $A A_1^2=A O_1^2- r_1^2=r^2+\left(r+r_1\right)^2-2 r\left(r+r_1\right) \cos \alpha-r_1^2=2 r(r+\left.r_1\right)(1-\cos \alpha)=4 \cdot \sin ^2 \frac{\alpha}{2} \cdot r\left(r+r_1\right)$. 注意到 $0<\alpha<120^{\circ}$, 所以, $A A_1= 2 \sin \frac{\alpha}{2} \cdot \sqrt{r\left(r+r_1\right)}$. 同理, $B B_1=2 \sin \left(60^{\circ}-\frac{\alpha}{2}\right) \cdot \sqrt{r\left(r+r_1\right)}, C C_1= 2 \sin \left(60^{\circ}+\frac{\alpha}{2}\right) \cdot \sqrt{r\left(r+r_1\right)}$. 因此, $A A_1+B B_1=2 \sqrt{r\left(r+r_1\right)}\left[\sin \frac{\alpha}{2}+\right.$
+$$
+\left.\sin \left(60^{\circ}-\frac{\alpha}{2}\right)\right]=2 \sqrt{r\left(r+r_1\right)} \sin \left(60^{\circ}+\frac{\alpha}{2}\right)=O C_1 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $O$ 是锐角 $\triangle A B C$ 的外心, $\angle B<\angle C, A O$ 交边 $B C$ 于点 D. $\triangle A B D$ 和 $\triangle A C D$ 的外心分别为 $E 、 F$. 在 $B A$ 和 $C A$ 的延长线上分别取点 $G$ 和 $H$, 使得 $A G=A C, A H=A B$. 证明: 四边形 $E F G H$ 是矩形的充分必要条件是 $\angle A C B-\angle A B C=60^{\circ}$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c7a3.png>), 设 $E F$ 交 $A B$ 于点 $K$, 点 $E 、 F$ 在 $B C$ 上的射影分别为 $E^{\prime}, F^{\prime}$. 显然, $\triangle A G H \cong \triangle A C B$, $E F=\frac{E^{\prime} F^{\prime}}{\sin \angle E^{\prime} E F}=\frac{B C}{2 \sin \angle A D C}=\frac{B C}{2 \sin \left(B+90^{\circ}-C\right)}= \frac{B C}{2 \cos (C-B)}$.
+必要性.
+由 $E F=G H=B C$, 得 $\cos (C-B)=\frac{1}{2}$, 故 $\angle A C B-\angle A B C=60^{\circ}$.
+充分性.
+由 $\angle A C B-\angle A B C=60^{\circ}$, 得 $E F=B C=G H$. 由 $E F \perp A D$, 则 $\angle F K A=90^{\circ}-\angle O A B=\angle A C B=\angle A G H$. 故 $E F / / G H$. 因此, 四边形 $E F G H$ 为平行四边形.
+因 $\angle A D C=\angle A B C+90^{\circ}- \angle A C B=30^{\circ}$, 则 $\angle A F C=60^{\circ}$. 故 $\triangle A F C$ 为正三角形, 有 $A F=A C=A G$. 又 $A K=\frac{A D}{2 \sin \angle A K F}=\frac{A D}{2 \sin C}=A F$, 故 $\angle K F G==90^{\circ}$. 从而, 四边形 $E F G H$ 为矩形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 已知 $\triangle A B C$ 的外心 $O, P$ 为劣弧 $\overparen{A B}$ 上一点.
+由 $P$ 向 $B O$ 作垂线交 $A B$ 于 $S$, 交 $B C$ 于 $T$. 由 $P$ 向 $A O$ 作垂线交 $A B$ 于 $Q$, 交 $A C$ 于 $R$. 证明: (1) $\triangle P Q S$ 是等腰三角形; (2) $P Q^2=Q R \cdot S T$.
+%%<SOLUTION>%%
+证明: (1) 如图(<FilePath:./figures/fig-c7a4.png>), 由 $P R \perp O A, P T \perp O B$, 有
+$\angle P Q S=\angle A Q R=90^{\circ}-\angle O A B=90^{\circ}-\angle O B A= \angle B S T=\angle P S Q$. 故 $P Q=P S$.
+(2) 设 $\odot O$ 的半径为 $r, P R \cap O A=G, P T \cap O B=H$. 设 $\angle P O A=\alpha-\beta, \angle P O B=\alpha+\beta, \angle A O B= 2 \alpha$. 则 $\angle Q P S=180^{\circ}-2 \alpha, \angle P Q S=\angle P S Q=\alpha= \angle C$. 故 $\triangle A Q R \backsim \triangle A C B \backsim \triangle T S B$. 所以, $\frac{A Q}{T S}=\frac{Q R}{S B}$, 即 $Q R \cdot S T=A Q \cdot S B$. 又 $O G=O P \cos \angle P O G=r \cos (\alpha-\beta)$,
+$P G=r \sin (\alpha-\beta)$, 则 $A G=r[1-\cos (\alpha-\beta)], A Q=\frac{A G}{\sin \angle A Q G}= \frac{r[1-\cos (\alpha-\beta)]}{\sin \alpha}, Q G=A Q \cos \angle A Q G=\frac{r[1-\cos (\alpha-\beta)] \cos \alpha}{\sin \alpha}$ 故 $P Q=P G-Q G=r\left\{\sin (\alpha-\beta)-\frac{\cos \alpha[1-\cos (\alpha-\beta)]}{\sin \alpha}\right\}=\frac{r(\cos \beta-\cos \alpha)}{\sin \alpha}$. 同理, $S B=\frac{r[1-\cos (\alpha+\beta)]}{\sin \alpha}$.
+注意到 $P Q^2=Q R \cdot S T \Leftrightarrow P Q^2=A Q \cdot S B \Leftrightarrow(\cos \beta-\cos \alpha)^2=[1-$
+$$
+\cos (\alpha-\beta)][1-\cos (\alpha+\beta)] \Leftrightarrow(\cos \beta-\cos \alpha)^2=2 \sin ^2 \frac{(\alpha-\beta)}{2} .
+$$
+$2 \sin ^2 \frac{(\alpha+\beta)}{2} \Leftrightarrow \cos \beta-\cos \alpha=2 \sin \frac{\alpha-\beta}{2} \cdot \sin \frac{\alpha+\beta}{2}$, 而最后一式显然成立, 故 $P Q^2=Q R \cdot S T$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 在锐角 $\triangle A B C$ 中, $\angle A C B=2 \angle A B C$, 点 $D$ 是 $B C$ 边上一点, 使得 $2 \angle B A D=\angle A B C$. 证明 : $\frac{1}{B D}=\frac{1}{A B}+\frac{1}{A C}$.
+%%<SOLUTION>%%
+证明: 记 $\angle B A D=\alpha$, 则 $\angle A B C=2 \alpha, \angle A C B=4 \alpha$, 利用正弦定理可知, $\frac{B D}{A B}=\frac{\sin \alpha}{\sin 3 \alpha}, \frac{A B}{A C}=\frac{\sin 4 \alpha}{\sin 2 \alpha}=2 \cos 2 \alpha$, 从而, 要证的式子等价于 $\sin 3 \alpha= \sin \alpha+2 \sin \alpha \cos 2 \alpha$, 最后一式是显然的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $R 、 r$ 分别是 $\triangle A B C$ 的外接圆半径和内切圆半径, $R^{\prime} 、 r^{\prime}$ 分别是 $\triangle A^{\prime} B^{\prime} C^{\prime}$ 的外接圆半径和内切圆半径.
+证明: 若 $\angle C=\angle C^{\prime}, R r^{\prime}=R^{\prime} r$, 则 $\triangle A B C \backsim \triangle A^{\prime} B^{\prime} C^{\prime}$.
+%%<SOLUTION>%%
+证明: 因为 $\angle C==\angle C^{\prime}, R=\frac{c}{2 \sin C}, R^{\prime}=\frac{c^{\prime}}{2 \sin C}$, 所以 $c r^{\prime}=c^{\prime} r$, 有 $\frac{c}{r}=\frac{c^{\prime}}{r^{\prime}}$, 即 $\cot \frac{A}{2}+\cot \frac{B}{2}=\cot \frac{A^{\prime}}{2}+\cot \frac{B^{\prime}}{2}$.
+设 $\frac{\angle A}{2}=\angle 1, \frac{\angle B}{2}=\angle 2, \frac{\angle A^{\prime}}{2}=\angle 3, \frac{\angle B^{\prime}}{2}=\angle 4$, 则 $\frac{\cos \angle 1}{\sin \angle 1}+\frac{\cos \angle 2}{\sin \angle 2}= \frac{\cos \angle 3}{\sin \angle 3}+\frac{\cos \angle 4}{\sin \angle 4}, \frac{\sin (\angle 1+\angle 2)}{\sin \angle 1 \cdot \sin \angle 2}=\frac{\sin (\angle 3+\angle 4)}{\sin \angle 3 \cdot \sin \angle 4}$, 因为 $\angle 1+\angle 2=\angle 3+ \angle 4$, 所以 $\sin \angle 1 \cdot \sin \angle 2=\sin \angle 3 \cdot \sin \angle 4$, 即 $\cos (\angle 1+\angle 2)-\cos (\angle 1- \angle 2)=\cos (\angle 3+\angle 4)-\cos (\angle 3-\angle 4)$, 得 $\cos (\angle 1-\angle 2)=\cos (\angle 3- \angle 4)$, 有 $\angle 1-\angle 2=\angle 3-\angle 4$, 或 $\angle 1-\angle 2=\angle 4-\angle 3$. 又 $\angle 1+\angle 2= \angle 3+\angle 4$, 于是 $\angle A=\angle A^{\prime}$ 或 $\angle A=\angle B^{\prime}$.
+故 $\triangle A B C \backsim \triangle A^{\prime} B^{\prime} C^{\prime}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 在一个非钝角 $\triangle A B C$ 中, $A B>A C, \angle B=45^{\circ}, O$ 和 $I$ 分别是 $\triangle A B C$ 的外心和内心, 且 $\sqrt{2} O I=A B-A C$. 求 $\sin A$.
+%%<SOLUTION>%%
+解:由已知条件及 Euler 公式得 $\left(\frac{c-b}{\sqrt{2}}\right)^2=O I^2=R^2-2 R r \cdots$ (1). 再由熟知的几何关系得 $r=\frac{c+a-b}{2} \tan \frac{B}{2}=\frac{c+a-b}{2} \tan \frac{\pi}{8}= \frac{\sqrt{2}-1}{2}(c+a-b) \cdots(2)$.
+由(1)和(2)及正弦定理 $\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}=2 R$ 得, $1-2(\sin C-\sin B)^2= 2(\sin A+\sin C-\sin B)(\sqrt{2}-1)$. 因为 $\angle B=\frac{\pi}{4}, \sin B=\frac{\sqrt{2}}{2}, \sin C= \sin \left(\frac{3 \pi}{4}-\angle A\right)=\frac{\sqrt{2}}{2}(\sin A+\cos A)$. 所以, $2 \sin A \cos A-(2-\sqrt{2}) \sin A- \sqrt{2} \cos A+\sqrt{2}-1=0,(\sqrt{2} \sin A-1)(\sqrt{2} \cos A-\sqrt{2}+1)=0$. 于是, $\sin A= \frac{\sqrt{2}}{2}$ 或 $\cos A=1-\frac{\sqrt{2}}{2}$ (这时 $\sin A=\sqrt{1-\cos ^2 A}=\sqrt{1-\left(1-\frac{\sqrt{2}}{2}\right)^2}=\sqrt{\sqrt{2}-\frac{1}{2}}$
+总之,或 $\sin A=\frac{\sqrt{2}}{2}$ 或 $\sin A=\sqrt{\sqrt{2}-\frac{1}{2}}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 设 $a 、 b 、 c$ 为 $\triangle A B C$ 的三条边, $a \leqslant b \leqslant c, R$ 和 $r$ 分别为 $\triangle A B C$ 的外接圆半径和内切圆半径.
+令 $f=a+b-2 R-2 r$, 试用角 $C$ 的大小来判定 $f$ 的符号.
+%%<SOLUTION>%%
+解: 用 $A 、 B 、 C$ 分别表示 $\triangle A B C$ 的三个内角.
+熟知 $a=2 R \sin A, b= 2 R \sin B, r=4 R \sin \frac{A}{2} \cdot \sin \frac{B}{2} \cdot \sin \frac{C}{2}$. 于是, $f=2 R(\sin A+\sin B-1- \left.4 \sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2}\right)=2 R\left[2 \sin \frac{B+A}{2} \cdot \cos \frac{B-A}{2}-1+2\left(\cos \frac{B+A}{2}-\right.\right. \left.\left.\cos \frac{B-A}{2}\right) \sin \frac{C}{2}\right]=4 R \cos \frac{B-A}{2}\left(\sin \frac{B+A}{2}-\sin \frac{C}{2}\right)-2 R+4 R \cos \frac{\pi-C}{2} \sin \frac{C}{2}=4 R \cos \frac{B-A}{2}\left(\sin \frac{\pi-C}{2}-\sin \frac{C}{2}\right)-2 R+4 R \sin ^2 \frac{C}{2}= 4 R \cos \frac{B-A}{2}\left(\cos \frac{C}{2}-\sin \frac{C}{2}\right)-2 R\left(\cos ^2 \frac{C}{2}-\sin ^2 \frac{C}{2}\right)=2 R\left(\cos \frac{C}{2}-\sin \frac{C}{2}\right) \left(2 \cos \frac{B-A}{2}-\cos \frac{C}{2}-\sin \frac{C}{2}\right)$.
+令 $A \leqslant B \leqslant C$, 所以 $0 \leqslant B-A<B \leqslant C$. 又 $O \leqslant B-A<B+A$, 因此, $\cos \frac{B-A}{2}>\cos \frac{C}{2} \cdot \cos \frac{B-A}{2}>\cos \frac{B+A}{2}=\cos \frac{\pi-C}{2}=\sin \frac{C}{2}$. 所以 $2 \cos \frac{B-A}{2}>\cos \frac{C}{2}+\sin \frac{C}{2}$. 则 $f>0 \Leftrightarrow \cos \frac{C}{2}>\sin \frac{C}{2} \Leftrightarrow C<\frac{\pi}{2} ; f=0 \Leftrightarrow \cos \frac{C}{2}=\sin \frac{C}{2} \Leftrightarrow C=\frac{\pi}{2} ; f<0 \Leftrightarrow \cos \frac{C}{2}<\sin \frac{C}{2} \Leftrightarrow C>\frac{\pi}{2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 设锐角 $\triangle A B C$ 的外心为 $O$, 从 $A$ 作 $B C$ 的高, 垂足为 $P$, 且 $\angle B C A \geqslant \angle A B C+30^{\circ}$. 证明: $\angle C A B+\angle C O P<90^{\circ}$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c7a9.png>), 延长 $C O 、 A O 、 A P$ 分别交 $\odot O$ 于 $D 、 E 、 F$, 连结 $E F 、 B D$. 则 $\angle E=\angle C A P+\angle A B C= 90^{\circ}-\angle A C B+\angle A B P$. 故 $\angle O A P=90^{\circ}-\angle E= \angle A C B-\angle A B P$. 设 $\odot O$ 的半径为 $R$. 因为 $C P= 2 R \sin B \cdot \cos C, A P=2 R \sin B \cdot \sin C$, 所以 $O P^2= A P^2+O A^2-2 O A \cdot A P \cdot \cos \angle O A P=4 R^2 \sin ^2 B \cdot \sin ^2 C+R^2-4 R^2 \cdot \sin B \cdot \sin C \cdot \cos (C-B)= 4 R^2\left[\sin ^2 B \cdot \sin ^2 C+\frac{1}{4}-\sin ^2 B \cdot \sin ^2 C-\sin B \cdot \cos B \cdot\right.\sin C \cdot \cos C]=4 R^2\left(\frac{1}{4}-\sin B \cdot \cos B \cdot \sin C \cdot \cos C\right)$. 所以 $O P^2- C P^2=4 R^2\left[\frac{1}{4}-\sin B \cdot \cos C \cdot \sin (B+C)\right]=4 R^2\left[\frac{1}{4}-\frac{1}{2} \sin ^2 A+\right.\left.\frac{1}{2} \sin A \cdot \sin (C-B)\right]$. 因为 $\angle C-\angle B \geqslant 30^{\circ}$, 且 $\angle C 、 \angle B$ 都为锐角, 所以上式 $\geqslant 4 R^2\left[\frac{1}{4}-\frac{1}{2} \sin ^2 A+\frac{1}{4} \sin A\right]=R^2(2 \sin A+1)(1-\sin A)>0$. 所以 $O P^2>C P^2, O P>C P$. 有 $\angle C O P<\angle O C P$. 故 $\angle C O P+\angle C A B< \angle O C P+\angle D=90^{\circ}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 圆 $W$ 内切于四边形 $A B C D, I$ 是圆 $W$ 的圆心, 且有 $(A I+D I)^2+(B I+ C I)^2=(A B+C D)^2$. 证明 : 四边形 $A B C D$ 是等腰梯形.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c7a10.png>), 设角,由已知 $\left(\frac{r}{\sin \alpha}+\frac{r}{\sin \theta}\right)^2+ \left(\frac{r}{\sin \beta}+\frac{r}{\sin \gamma}\right)^2=\left(r \frac{\cos \alpha}{\sin \alpha}+r \frac{\cos \beta}{\sin \beta}+r \frac{\cos \gamma}{\sin \gamma}+\right. \left.r \frac{\cos \theta}{\sin \theta}\right)^2$, 所以 $\left(\frac{1}{\sin \alpha}+\frac{1}{\sin \theta}\right)^2-\left(\frac{\cos \alpha}{\sin \alpha}+\frac{\cos \theta}{\sin \theta}\right)^2+ \left(\frac{1}{\sin \beta}+\frac{1}{\sin \gamma}\right)^2-\left(\frac{\cos \beta}{\sin \beta}+\frac{\cos \gamma}{\sin \gamma}\right)^2=2\left(\frac{\cos \alpha}{\sin \alpha}+\right. \left.\frac{\cos \theta}{\sin \theta}\right)\left(\frac{\cos \beta}{\sin \beta}+\frac{\cos \gamma}{\sin \gamma}\right)$, 化简得 $2+\frac{1-\cos \theta \cos \alpha}{\sin \alpha \sin \theta}+\frac{1-\cos \beta \cos \gamma}{\sin \beta \sin \gamma}=\frac{\sin (\alpha+\theta) \sin (\beta+\gamma)}{\sin \alpha \sin \beta \sin \gamma \sin \theta},[\cos (\beta-\gamma)-\cos (\beta+\gamma)][1+\cos (\beta+ \gamma)]+[\cos (\alpha-\theta)-\cos (\alpha+\theta)] \cdot[1+\cos (\alpha+\theta)]=2 \sin (\alpha+\theta) \sin (\beta+ \gamma) \cdots$ (1). 因为 $\sin (\beta+\gamma)=\sin (\alpha+\theta), \cos (\beta+\gamma)=-\cos (\theta+\alpha)$, 所以 (1) 式可化简为 $\cos (\alpha-\theta) \cos ^2 \frac{\beta+\gamma}{2}+\cos (\beta-\gamma) \cdot \cos ^2 \frac{\alpha+\theta}{2}=1$. 所以 $\cos (\alpha- \theta)=\cos (\beta-\gamma)=1$. 所以 $\alpha=\theta, \beta=\gamma . \angle A=\angle D, \angle B=\angle C$.
+故 $A B C D$ 为等腰梯形.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 已知 $\odot O$ 与 $\triangle A B C$ 的外接圆、 $A B 、 A C$ 均相切, 切点分别为 $T 、 P 、 Q, I$ 是 $P Q$ 中点.
+证明: $I$ 是 $\triangle A B C$ 的内心或旁心.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c7a11.png>), $\odot O$ 可与 $\odot O_1$ 外切 (旁心) 或内切 (内心). 两者证明类似.
+只证前者.
+因为 $A P 、 A Q$ 切 $\odot O$ 于 $P 、 Q$. 所以 $A O \perp P Q, A O$ 平分 $P Q$, 所以 $A 、 I 、 O$ 共线.
+从而 $A I$ 平分 $\angle B A C$. 延长 $A O$ 交 $\odot O_1$ 于 $E$, 延长 $T O_1$ 交 $\odot O_1$ 于 $M$. 由相交弦定理, $A O \cdot O E=O T \cdot O M \cdots$ (1). 设 $\odot O$ 半径为 $r, \odot O_1$ 半径为 $R$.
+则 $A O=\frac{r}{\sin \frac{A}{2}}, O I=r \sin \frac{A}{2}, A I=\frac{r}{\sin \frac{A}{2}}-r \sin \frac{A}{2}$,
+$A E=2 R \sin \left(B+\frac{A}{2}\right)$. 从而由 (1) 知 $\frac{r}{\sin \frac{A}{2}} \cdot\left(2 R \sin \left(B+\frac{A}{2}\right)-\frac{r}{\sin \frac{A}{2}}\right)=$
+$$
+\begin{aligned}
+& r(2 R-r) \text {. 所以, } 2 R \sin \left(B+\frac{A}{2}\right)=(2 R-r) \sin \frac{A}{2}+\frac{r}{\sin \frac{A}{2}} \text {, } \\
+& 2 R\left(\sin \left(B+\frac{A}{2}\right)-\sin \frac{A}{2}\right)=\frac{r}{\sin \frac{A}{2}}\left(1-\sin ^2 \frac{A}{2}\right), 4 R \cos \frac{B+A}{2} \sin \frac{B}{2}= \\
+& \frac{r}{\sin \frac{A}{2}} \cos ^2 \frac{A}{2}, r=4 R \frac{\sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2}}{\cos ^2 \frac{A}{2}} \text {, 所以, } \frac{A I}{A E}=\frac{\frac{r}{\sin \frac{A}{2}}\left(1-\sin ^2 \frac{A}{2}\right)}{2 R \sin \left(B+\frac{A}{2}\right)}= \\
+& \frac{\frac{4 R}{\sin \frac{A}{2}} \cdot \cos ^2 \frac{A}{2} \cdot \frac{\sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2}}{\cos ^2 \frac{A}{2}}}{2 R \sin \left(B+\frac{A}{2}\right)}=\frac{2 \sin \frac{B}{2} \sin \frac{C}{2}}{\sin \left(B+\frac{A}{2}\right)}=\frac{2 \sin \frac{B}{2} \sin \frac{C}{2}}{\cos \frac{B-C}{2}} . \\
+& \frac{A I}{I E}=\frac{2 \sin \frac{B}{2} \sin \frac{C}{2}}{\cos \frac{B}{2} \cos \frac{C}{2}-\sin \frac{B}{2} \sin \frac{C}{2}}=\frac{2 \sin \frac{B}{2} \sin \frac{C}{2}}{\sin \frac{A}{2}} \text {. } \\
+&
+\end{aligned}
+$$
+连结 $B I$, 设 $\angle A B I=\theta$, 则 $\frac{A I}{I E}=\frac{2 R \sin C \cdot \sin \theta}{2 R \sin \frac{A}{2} \cdot \sin \left(B+\frac{A}{2}-\theta\right)}$ 故
+$\frac{2 \sin \frac{C}{2} \cos \frac{C}{2} \sin \theta}{\sin \frac{A}{2} \sin \left(B+\frac{A}{2}-\theta\right)}$ 由 (2) $=\frac{2 \sin \frac{B}{2} \sin \frac{C}{2}}{\sin \frac{A}{2}}, \sin \frac{A+B}{2} \sin \theta=\sin \frac{B}{2} \sin (B+\left.\frac{A}{2}-\theta\right), \cos \left(\frac{A+B}{2}-\theta\right)-\cos \left(\frac{A+B}{2}+\theta\right)=\cos \left(\frac{A+B}{2}-\theta\right)-\cos \left(\frac{3}{2} B+\right.\frac{A}{2}-\theta$ ) (注意 $0<\theta<B$ ), $\frac{A+B}{2}+\theta=\frac{3}{2} B+\frac{A}{2}-\theta$, 所以 $\theta=\frac{B}{2}$. 从而 $B I$ 平分 $\angle A B C$.
+故 $I$ 为 $\triangle A B C$ 的内心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 如图(<FilePath:./figures/fig-c7p12.png>),在锐角 $\triangle A B C$ 的 $B C$ 边上有两点 $E 、 F$ 满足 $\angle B A E=\angle C A F$, 作 $F M \perp A B, F N \perp A C$, 垂足为 $M 、 N$. 延长 $A E$ 交 $\triangle A B C$ 的外接圆于点 $D$. 证明: 四边形 $A M D N$ 与 $\triangle A B C$ 的面积相等.
+%%<SOLUTION>%%
+证明: : 连结 $B D$, 则 $\triangle A B D \backsim \triangle A F C$, 所以 $A F \cdot A D=A B \cdot A C$. 设 $\angle B A E=\angle C A F=\alpha, \angle E A F=\beta$, 则 $S_{\text {四边形 } A M D N}=-\frac{1}{2} A M \cdot A D \sin \alpha+ \frac{1}{2} A D \cdot A N \sin (\alpha+\beta)=\frac{1}{2} A D[A F \cos (\alpha+\beta) \sin \alpha+A F \cos \alpha \sin (\alpha+\beta)]= \frac{1}{2} A D \cdot A F \sin (2 \alpha+\beta)=\frac{1}{2} A B \cdot A C \sin \angle B A C=S_{\triangle A B C}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 已知三角形 $A B C$ 的内心为 $I$, 外心为 $O$, 点 $B$ 关于圆 $O$ 的对径点为 $K$, 在 $A B$ 的延长线上取点 $N$, $C B$ 的延长线上取点 $M$, 使得 $M C=N A=S, S$ 为三角形 $A B C$ 的半周长.
+证明: $I K \perp M N$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c7a13.png>), 设 $\angle B M N=\alpha, \angle I K C=\beta, r, R$ 分别为 $\triangle A B C$ 的内切圆, 外接圆半径, 则 $\angle K C I=90^{\circ}-\frac{C}{2}$.
+由正弦定理, $\frac{K C}{I C}=\frac{\sin \left(90^{\circ}-\frac{C}{2}+\beta\right)}{\sin \beta}= \frac{\cos \left(\frac{C}{2}-\beta\right)}{\sin \beta}=\cos \frac{C}{2} \cdot \cot \beta+\sin \frac{C}{2}$. 又 $K C=2 R \cdot \cos \angle B K C=2 R \cdot \cos A, I C=\frac{r}{\sin \angle I C B}=\frac{r}{\sin \frac{C}{2}}=4 R \sin \frac{B}{2} \sin \frac{A}{2}(r=\left.4 R \sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2}\right)$, 故 $\cos \frac{C}{2} \cdot \cot \beta+\sin \frac{C}{2}=\frac{K C}{I C}=\frac{\cos A}{2 \sin \frac{B}{2} \sin \frac{A}{2}}$. 即
+$$
+\begin{aligned}
+& \cot \beta=\frac{\cos A}{2 \sin \frac{B}{2} \sin \frac{A}{2} \cos \frac{C}{2}}-\tan \frac{C}{2} \text {. } \\
+& \text { 又 } B N=S-c=\frac{1}{2}(a+b-c)=\frac{1}{2} \cdot 2 R(\sin A+\sin B-\sin C)= \\
+& R\left(2 \sin \frac{A+B}{2} \cos \frac{A-B}{2}-2 \sin \frac{A+B}{2} \cos \frac{A+B}{2}\right)=2 R \cdot \cos \frac{C}{2} \text {. } \\
+& \left(\cos \frac{A-B}{2}-\cos \frac{A+B}{2}\right)=4 R \cdot \sin \frac{A}{2} \sin \frac{B}{2} \cos \frac{C}{2} \text {. 同理, } B M=4 R \cdot \sin \frac{C}{2} \sin \\
+& \frac{B}{2} \cos \frac{A}{2} \text {, 于是 } \frac{B M}{B N}=\frac{\sin \frac{C}{2} \cos \frac{A}{2}}{\cos \frac{C}{2} \sin \frac{A}{2}} \text {, 另一方面, } \frac{B M}{B N}=\frac{\sin (\alpha+B)}{\sin \alpha} \text {, 结合以上两 } \\
+&
+\end{aligned}
+$$
+式, 得 $\cos B+\cot \alpha \cdot \sin B=\tan \frac{C}{2} \cdot \cot \frac{A}{2}, \cot \alpha=\frac{\tan \frac{C}{2} \cdot \cot \frac{A}{2}}{\sin B}-\cot B$. (2)
+下证 $\cot \alpha=\cot \beta$.
+由 (1), (2) $\Leftrightarrow \frac{\cos A}{2 \sin \frac{B}{2} \sin \frac{A}{2} \cos \frac{C}{2}}-\frac{\sin \frac{C}{2}}{\cos \frac{C}{2}}=-\frac{\tan \frac{C}{2} \cot \frac{A}{2}}{\sin B}-\frac{\cos B}{\sin B} \Leftrightarrow$
+$$
+\frac{\cos A-2 \sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2}}{2 \sin \frac{A}{2} \sin \frac{B}{2} \cos \frac{C}{2}}=\frac{\tan \frac{C}{2} \cot \frac{A}{2}-\cos B}{\sin B} \Leftrightarrow\left(\cos A-2 \sin \frac{A}{2}\right.
+$$
+$$
+\begin{gathered}
+\left.\sin \frac{B}{2} \sin \frac{C}{2}\right) \cos \frac{B}{2}=\sin \frac{A}{2} \cos \frac{C}{2} \cdot\left(\frac{\sin \frac{C}{2}}{\cos \frac{C}{2}} \cdot \frac{\cos \frac{A}{2}}{\sin \frac{A}{2}}-\cos B\right) \Leftrightarrow \cos A \\
+\cos \frac{B}{2}-\sin \frac{A}{2} \sin B \sin \frac{C}{2}=\sin \frac{C}{2} \cos \frac{A}{2}-\cos B \sin \frac{A}{2} \cos \frac{C}{2} \Leftrightarrow \cos A \cos \frac{B}{2}= \\
+\cos \frac{A}{2} \sin \frac{C}{2}-\sin \frac{A}{2} \cos \left(B+\frac{C}{2}\right) \Leftrightarrow \cos A \cos \frac{B}{2}=\cos \frac{A}{2} \cos \frac{A+B}{2}-\sin \frac{A}{2} \cdot \\
+\cos \left[B+\frac{\pi-A-B}{2}\right] * * \\
+* * \text { 右边 }=\frac{1}{2}\left[\cos \left(A+\frac{B}{2}\right)+\cos \frac{B}{2}\right]+\left(-\frac{1}{2}\right)\left[\cos \frac{B}{2}-\cos \left(A-\frac{B}{2}\right)\right] \\
+=\frac{1}{2}\left[\cos \left(A+\frac{B}{2}\right)+\cos \left(A-\frac{B}{2}\right)\right] \\
+=\cos A \cos \frac{B}{2}=\text { 左边.
+}
+\end{gathered}
+$$
+从而 $M N$ 与 $B C$ 的夹角等于 $I K$ 与 $C K$ 夹角, 又 $B C \perp C K$, 所以 $M N \perp I K$.
+%%PROBLEM_END%%
+
+

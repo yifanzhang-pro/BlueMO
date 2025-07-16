@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例7. 用 $1,2,3$ 组成 $n$ 位数, 如果要求没有 2 个 1 相邻, 问这样的 $n$ 位数共有多少个?",
+    "solution": "解:用 $a_n$ 表示所求 $n$ 位数的个数,显然, $a_1=3, a_2=8$. (因满足要求的 2 位数只有 $12,13,21,22,23,31,32,33$ 共 8 个). 当 $n \\geqslant 3$ 时, 如果第一个数字为 1 , 那么第 2 个数字只能是 2 或 3 , 余下的数字有 $a_{n-2}$ 种不同的取法; 如果第 1 位数字是 2 或 3 , 那么余下的数字有 $a_{n-1}$ 种不同的取法, 由加法法则和乘法法则得 $a_n=2 a_{n-1}+2 a_{n-2}(n \\geqslant 3)$. 特征方程为 $r^2-2 r-2=0$, 特征根为 $r_1=1+\\sqrt{3}, r_2=1-\\sqrt{3}$, 故得\n$$\na_n=c_1(1+\\sqrt{3})^n+c_2(1-\\sqrt{3})^n,\n$$\n补充定义 $a_0$ 满足 $a_2=2 a_1+2 a_0$, 即 $a_0=\\frac{1}{2}\\left(a_2-2 a_1\\right)=1$. 由 $a_0=1, a_1=$ 3 , 得\n$$\n\\left\\{\\begin{array}{l}\nc_1+c_2=1, \\\\\nc_1(1+\\sqrt{3})+c_2(1-\\sqrt{3})=3 .\n\\end{array}\\right.\n$$\n解得 $c_1=\\frac{2+\\sqrt{3}}{2 \\sqrt{3}}=\\frac{(1+\\sqrt{3})^2}{4 \\sqrt{3}}, c_2=-\\frac{2-\\sqrt{3}}{2 \\sqrt{3}}=-\\frac{(1-\\sqrt{3})^2}{4 \\sqrt{3}}$, 所以\n$$\na_n=\\frac{1}{4 \\sqrt{3}}\\left[(1+\\sqrt{3})^{n+2}-(1-\\sqrt{3})^{n+2}\\right] \\text {. }\n$$",
+    "remark": "",
+    "figures": []
+}

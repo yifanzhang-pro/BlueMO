@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 方程 $a x^2+b|x|+c=0(a 、 b 、 c \\in \\mathbf{R}, a \\neq 0)$ 在复数集内的根的个数是 $n$, 则 ( ).\n(A) $n$ 最大是 2\n(B) $n$ 最大是 4\n(C) $n$ 最大是 6\n(D) $n$ 最大是 8",
+    "solution": "C.\n不妨设 $a=1$.\n由 $b 、 c 、|x|$ 均是实数,可知 $x^2$ 必是实数,因此 $x$ 是实数或纯虚数.\n若 $x$ 是实数 $u$, 则 $u^2+b u+c=0(u \\geqslant 0)$ 或 $u^2-b u+c=0(u<0)$.\n若 $x$ 是纯虚数 $v \\mathrm{i}$, 则 $v^2-b v-c=0(v \\geqslant 0)$ 或 $v^2+b v-c=0(v<0)$.\n对 $b 、 c$ 异号时, 有 6 个根满足要求; 对其他的情况, 满足要求的根都不足 6 个.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter3.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设正整数 $a 、 b 、 c 、 d$ 满足 $a b=c d$, 证明: $a+b+c+d$ 不是素数.",
+    "solution": "证明二由 $a b=c d$, 得 $b=\\frac{c d}{a}$. 因此\n$$\na+b+c+d=a+\\frac{c d}{a}+c+d=\\frac{(a+c)(a+d)}{a} .\n$$\n因 $a+b+c+d$ 是整数,故 $\\frac{(a+c)(a+d)}{a}$ 也是整数.\n若它是一个素数,设为 $p$, 则由\n$$\n(a+c)(a+d)=a p \\label{eq3}\n$$\n可见, $p$ 整除 $(a+c)(a+d)$, 从而素数 $p$ 整除 $a+c$ 或 $a+d$. 不妨设 $p \\mid(a+c)$, 则 $a+c \\geqslant p$, 结合 式\\ref{eq3} 推出 $a+d \\leqslant a$, 而这不可能(因 $d \\geqslant 1$ ).",
+    "remark": "",
+    "figures": []
+}

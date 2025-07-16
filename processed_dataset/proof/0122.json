@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题6 设 $0 \\leqslant x_i \\leqslant 1, i=1,2, \\cdots, n, n \\geqslant 2$. 求证: 存在 $i$ 满足 $1 \\leqslant i \\leqslant n-1$, 且\n$$\nx_i\\left(1-x_{i+1}\\right) \\geqslant \\frac{1}{4} x_1\\left(1-x_n\\right) .\n$$",
+    "solution": "令 $x_k=a=\\max \\left\\{x_1, x_2, \\cdots, x_n\\right\\}, x_t=b=\\min \\left\\{x_1, x_2, \\cdots, x_n\\right\\}$.\n如果 $x_2 \\leqslant \\frac{1+b}{2}$, 则 $x_1\\left(1-x_2\\right) \\geqslant x_1\\left(1-\\frac{1+b}{2}\\right)=\\frac{1}{2} x_1(1-b) \\geqslant \\frac{1}{4} x_1\\left(1-x_n\\right)$. 从而取 $i=1$ 即可.\n如果 $x_2>\\frac{1+b}{2}$, 由于 $\\frac{a}{2} \\leqslant \\frac{1+b}{2}$ 且 $x_t=b \\leqslant \\frac{1+b}{2}$, 所以有以下两种情况:\n(i) $x_1=b, x_2>\\frac{1+b}{2}, \\cdots, x_n>\\frac{1+b}{2}$. 令 $x_m=\\min \\left\\{x_2, \\cdots, x_n\\right\\}$, 其中 $2 \\leqslant m \\leqslant n$, 显然 $x_{m-1}\\left(1-x_m\\right) \\geqslant x_1\\left(1-x_n\\right) \\geqslant \\frac{1}{4} x_1\\left(1-x_n\\right)$.\n(ii) 存在 $2 \\leqslant i \\leqslant n-1$, 使得 $x_i>\\frac{1+b}{2}, x_{i+1} \\leqslant \\frac{1+b}{2}$, 于是$x_i\\left(1-x_{i+1}\\right) \\geqslant \\frac{1+b}{2}\\left(1-\\frac{1+b}{2}\\right) \\geqslant \\frac{a}{4}(1-b) \\geqslant \\frac{1}{4} x_1\\left(1-x_n\\right)$.",
+    "remark": "",
+    "figures": []
+}

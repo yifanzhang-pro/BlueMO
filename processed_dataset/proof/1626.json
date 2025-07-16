@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 斐波那契数列 $\\left\\{F_n\\right\\}$ 满足: $F_1=F_2=1, F_{n+2}=F_{n+1}+F_n$. 证明: $\\sum_{i=1}^n \\frac{F_i}{2^i}<2$.",
+    "solution": "记 $S_n=\\sum_{i=1}^n \\frac{F_i}{2^i}$, 则 $S_1=\\frac{1}{2}, S_2=\\frac{1}{2}+\\frac{1}{4}=\\frac{3}{4}$, 而当 $n \\geqslant 3$ 时, 有\n$$\n\\begin{aligned}\nS_n & =\\frac{1}{2}+\\frac{1}{4}+\\sum_{i=3}^n \\frac{F_i}{2^i} \\\\\n& =\\frac{3}{4}+\\sum_{i=3}^n \\frac{F_{i-1}+F_{i-2}}{2^i} \\\\\n& =\\frac{3}{4}+\\frac{1}{2} \\sum_{i=3}^n \\frac{F_{i-1}}{2^{i-1}}+\\frac{1}{4} \\sum_{i=3}^n \\frac{F_{i-2}}{2^{i-2}} \\\\\n& =\\frac{3}{4}+\\frac{1}{2} \\sum_{i=2}^{n-1} \\frac{F_i}{2^i}+\\frac{1}{4} \\sum_{i=1}^{n-2} \\frac{F_i}{2^i} \\\\\n& =\\frac{3}{4}+\\frac{1}{2}\\left(S_{n-1}-\\frac{1}{2}\\right)+\\frac{1}{4} S_{n-2} \\\\\n& =\\frac{1}{2}+\\frac{1}{2} S_{n-1}+\\frac{1}{4} S_{n-2} .\n\\end{aligned}\n$$\n利用 $S_1=\\frac{1}{2}$ 及 $S_2=\\frac{3}{4}$ 可知对 $n=1,2$ 都有 $S_n<2$; 现设对 $n=k, k+1$ 都有 $S_n<2$, 那么有\n$$\nS_{k+2}=\\frac{1}{2}+\\frac{1}{2} S_{k+1}+\\frac{1}{4} S_k<\\frac{1}{2}+\\frac{1}{2} \\times 2+\\frac{1}{4} \\times 2=2 .\n$$\n所以, 命题成立.",
+    "remark": "",
+    "figures": []
+}

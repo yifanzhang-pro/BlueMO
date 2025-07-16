@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise13.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 已知 $n$ 位数的各位数字只能取集合 $\\{1,2,3,4,5\\}$ 中的元素, 设含有数字 5 且在 5 的前面不含 3 的 $n$ 位数个数为 $f(n)$, 求 $f(n)$.",
+    "solution": "这样的 $n$ 位数可由如下两种情况生成:\n(1) 在不含数字 5 的 $n-1$ 位数前面加上 5 , 有 $4^{n-1}$ 个;\n(2) 在含有数字 5 且 5 的前面不出现 3 的 $n-1$ 位数之前加上 $1,2,4,5$, 这样的数有 $4 f(n-1)$ 个.\n故\n$$\n\\begin{aligned}\n& f(n)=4(n-1)+4^{n-1}, \\text { 且 } f(1)=1, \\\\\n& \\frac{f(n)}{4^n}=\\frac{f(n-1)}{4^{n-1}}+\\frac{1}{4}, \\\\\n& \\frac{f(n)}{4^n}=\\frac{1}{4}+\\frac{1}{4}(n-1)=\\frac{1}{4} n,\n\\end{aligned}\n$$\n从而 $f(n)=n \\cdot 4^{n-1}$.",
+    "remark": "注:本题若不用递推方法亦很方便求解.",
+    "figures": []
+}

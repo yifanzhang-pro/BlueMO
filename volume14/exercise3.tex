@@ -1,0 +1,234 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 已知对一切正整数 $n$, 都有 $a_n>0$, 且 $\sum_{i=1}^n a_i^3=\left(\sum_{i=1}^n a_i\right)^2$, 求证: $a_n=n$. 
+%%<SOLUTION>%%
+对 $n$ 用数学归纳法.
+当 $n=1$ 时, $a_1^3=a_1^2$, 故 $a_1=1$. 即 $n=1$ 时命题成立.
+假设 $n \leqslant k$ 时命题成立, 即 $a_1=1, a_2=2, \cdots, a_k=k$, 则由题设
+$$
+1^3+2^3+\cdots+k^3+a_{k+1}^3=\left(1+2+\cdots+k+a_{k+1}\right)^2,
+$$
+所以
+$$
+a_{k+1}\left(a_{k+1}^2-a_{k+1}-k(k+1)\right)=0,
+$$
+考虑到 $a_{k+1}>0$, 从而 $a_{k+1}=k+1$, 故命题对 $n=k+1$ 也成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 数列 $\left\{a_n\right\}$ 定义如下: $a_1=3, a_{n+1}=3^{a_n}, n=1,2, \cdots$, 数列 $\left\{b_n\right\}$ 定义如下: $b_1=8, b_{n+1}=8^{b_n}, n=1,2, \cdots$. 求证: 对一切正整数 $n$, 有 $a_{n+1}>b_n$.
+%%<SOLUTION>%%
+下面证明加强的命题: $a_{n+1}>3 b_n$.
+当 $n=1$ 时, $a_2=3^3=27>24=3 b_1$, 即 $n=1$ 时命题成立.
+假设 $n=k$ 时命题成立, 即 $a_{k+1}>3 b_k$, 则
+$$
+a_{k+2}=3^{a_{k+1}}>3^{3 b_k}=27^{b_k}>2^{b_k} \cdot 8^{b_k} \geqslant 2 b_{k+1},
+$$
+故由数学归纳法知, 加强的命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $n$ 为不小于 6 的整数,证明: 可将一个正方形分成 $n$ 个较小的正方形.
+%%<SOLUTION>%%
+因为一个正方形可以等分为 4 个小正方形, 因此要将小正方形的数目增加 3 个是容易做到的,所以我们采用步长为 3 .
+当 $n=6,7,8$ 时, 可按图 (<FilePath:./figures/fig-c3a3.png>) 所示方式进行分割, 所以知命题成立.
+假设对某个 $n=k \geqslant 6$, 已将正方形分为 $k$ 个小正方形, 那么只要在将其中一个小正方形等分为 4 个更小的正方形, 即可得到 $n=k+3$ 个小正方形.
+所以知命题对一切整数 $n \geqslant 6$ 都成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $M=2^{n_1}+2^{n_2}+\cdots+2^{n_s}, n_1, n_2, \cdots, n_s$ 是互不相同的正整数,求证:
+$$
+2^{\frac{n_1}{2}}+2^{\frac{n_2}{2}}+\cdots+2^{\frac{n_s}{2}}<(1+\sqrt{2}) \sqrt{M} .
+$$
+%%<SOLUTION>%%
+对 $s$ 用数学归纳法.
+(1) 当 $s=1$ 时,结论显然成立.
+(2)假设结论对 $s=k$ 时成立, 则 $s=k+1$ 时, 不妨设 $n_1>n_2>\cdots> n_k>n_{k+1}$. 对 $n_2, n_3, \cdots, n_{k+1}$, 由归纳假设可知
+$$
+2^{\frac{n_2}{2}}+2^{\frac{n_3}{2}}+\cdots+2^{\frac{n_{k+1}}{2}}<(1+\sqrt{2}) \sqrt{M-2^{n_1}},
+$$
+则
+$$
+2^{\frac{n_1}{2}}+2^{\frac{n_2}{2}}+\cdots+2^{\frac{n_{k+1}}{2}}<(1+\sqrt{2}) \sqrt{M-2^{n_1}}+2^{\frac{n_1}{2}} .
+$$
+以下只需证明
+$$
+(1+\sqrt{2}) \sqrt{M-2^{n_1}}+2^{\frac{n_1}{2}}<(1+\sqrt{2}) \cdot \sqrt{M} .
+$$
+由于 $M=2^{n_1}+2^{n_2}+\cdots+2^{n_{k+1}} \leqslant 2^{n_1}+2^{n_1-1}+\cdots+2^{n_1-k}<2 \times 2^{n_1}, M- 2^{n_1}<2^{n_1}$, 故 $\sqrt{M-2^{n_1}}+\sqrt{M}<(1+\sqrt{2}) \cdot 2^{\frac{n_1}{2}}$, 两边乘以 $\sqrt{M}-\sqrt{M-2^{n_1}}$ 得
+$$
+M-\left(M-2^{n_1}\right)<(1+\sqrt{2}) \cdot 2^{\frac{n_1}{2}}\left(\sqrt{M}-\sqrt{M-2^{n_1}}\right),
+$$
+即 $2^{\frac{n_1}{2}}<(1+\sqrt{2})\left(\sqrt{M}-\sqrt{M-2^{n_1}}\right)$, 此即(1). 从而 $s=k+1$ 时结论成立.
+因此, 由数学归纳法知, 命题对任意正整数 $s$ 均成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 已知数列 $\left\{a_n\right\}$ 中每项都是正整数且逐项递增, $a_2=2$. 若对任意 $m, n \in\mathbf{N}^*$, 有 $a_{m n}=a_m a_n$, 证明: $a_n=n$.
+%%<SOLUTION>%%
+用反向数学归纳法.
+先证明对任意 $n=2^k\left(k \in \mathbf{N}^*\right)$, 有 $a_n=n$.
+$n=2$ 时结论显然成立.
+假设 $n=2^k$ 时成立, 即 $a_{2^k}=2^k$, 那么在已知条件中令 $m=2, n=2^k$ 得: $a_{2^{k+1}}=a_2 a_{2^k}=2 \times 2^k=2^{k+1}$. 故 $n=2^{k+1}$ 时也成立.
+所以 $a_{2^k}=2^k$ 对任意正整数 $k$ 成立.
+再证明对任意正整数 $n \geqslant 2$, 若 $a_n=n$, 则当 $1 \leqslant k<n$ 时, $a_k=k$.
+事实上, 由已知得: $1 \leqslant a_1<a_2<\cdots<a_{n-1}<a_n=n$, 且 $a_1, a_2, \cdots, a_{n-1} \in \mathbf{N}^*$, 所以必有 $a_1=1, a_2=2, \cdots, a_{n-1}=n-1$.
+由反向归纳法可得 $a_n=n$ (经检验知这样的数列 $\left\{a_n\right\}$ 确实满足一切条件).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 证明: 对任意给定正整数 $n \geqslant 3, x_1^3+x_2^3+\cdots+x_n^3=y^3$ 有正整数解且所有 $x_i$ 两两不等.
+%%<SOLUTION>%%
+当 $n=3,4$ 时,有 $3^3+4^3+5^3=6^3, 11^3+12^3+13^3+14^3=20^3$. 设 $n=k \geqslant 3$ 时有解, 根据归纳假设得 $x_1^3+x_2^3+\cdots+x_k^3=y^3, x_1<x_2<\cdots< x_k$, 则
+$$
+\left(6 x_1\right)^3+\left(6 x_2\right)^3+\cdots+\left(6 x_k\right)^3=(6 y)^3,
+$$
+又
+$$
+\left(6 x_1\right)^3=\left(3 x_1\right)^3+\left(4 x_1\right)^3+\left(5 x_1\right)^3,
+$$
+所以 $k+2$ 个两两不同的正整数 $3 x_1<4 x_1<5 x_1<6 x_2<\cdots<6 x_k$ 的立方和为 $(6 y)^3$.
+由数学归纳法知命题对任意正整数 $n \geqslant 3$ 成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 证明: 数列 $\left\{2^n-3\right\}, n=2,3,4, \cdots$ 包含无穷多个两两互素的数.
+%%<SOLUTION>%%
+首先 $2^2-3,2^3-3$ 互素.
+下面证明: 当 $k \geqslant 2$ 时,如果正整数 $n_i(i=1$, $2, \cdots, k)$ 满足 $A=\left\{2^{n_i}-3 \mid i=1,2, \cdots, k\right\}$ 中的数两两互素, 则存在 $n_{k+1} \geqslant 2$, 使得 $2^{n_{k+1}}-3$ 与 $A$ 中每个数互素.
+设 $p_1, p_2, \cdots, p_r$ 是 $A$ 中所有数的素因子组成的集合, 则 $p_1, p_2, \cdots, p_r$ 是奇数.
+由费马小定理得 $2^{p_j-1} \equiv 1\left(\bmod p_j\right)$, 因此 $2^{\left(p_1-1\right)\left(p_2-1\right) \cdots\left(p_r-1\right)} \equiv 1\left(\bmod p_j\right)$ 对任意 $j=1,2, \cdots, r$ 成立.
+设 $n_{k+1}=\left(p_1-1\right)\left(p_2-1\right) \cdots\left(p_r-1\right) \geqslant 2$, 则对任意一个 $p_j, j \in\{1$, $2, \cdots, r\}$, 有 $2^{n_{k+1}}-3 \equiv 1-3 \equiv-2\left(\bmod p_j\right)$, 故 $2^{n_{k+1}}-3$ 不被 $A$ 中每个数的素因子整除, 这就说明找到了数列中第 $k+1$ 个数与已有的 $k$ 个数两两互素.
+以此类推可知数列中包含无穷多个两两互素的数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 给定整数 $n>0$. 有一个天平和 $n$ 个重量分别为 $2^0, 2^1, \cdots, 2^{n-1}$ 的砝码.
+现通过 $n$ 步操作逐个将所有砝码都放上天平, 使得在操作过程中, 右边的重量总不超过左边的重量.
+每一步操作是从尚未放上天平的砝码中选择一个砝码, 将其放到天平的左边或右边, 直至所有砝码都被放上天平.
+求整个操作过程的不同方法个数.
+%%<SOLUTION>%%
+操作过程的不同方法个数为 $(2 n-1) ! !=1 \times 3 \times 5 \times \cdots \times(2 n-1)$.
+下面我们对 $n$ 用数学归纳法.
+当 $n=1$ 时, 只有一个砝码, 只能放在天平的左边, 故只有 1 种方法.
+假设 $n=k$ 时, $k$ 个重量为 $2^0, 2^1, \cdots, 2^{k-1}$ 按题设要求有 $(2 k-1) !$ ! 种方法.
+当 $n=k+1$ 时, 此时将所有砝码的重量都乘以 $\frac{1}{2}$, 不影响问题的本质.
+此时 $k+1$ 个砝码的重量为 $\frac{1}{2}, 1,2, \cdots, 2^{k-1}$. 由于对任意正整数 $r$, 有
+$$
+2^r>2^{r-1}+2^{-2}+\cdots+1+\frac{1}{2} \geqslant \sum_{i=-1}^{r-1}\left( \pm 2^i\right),
+$$
+所以当所有砝码都放上天平时, 天平的较重的一端只取决于天平上最重砝码的位置, 故最重砝码一定在左边.
+下面考虑重量为 $\frac{1}{2}$ 的砝码在操作过程中的位置.
+(1) 若重量为 $\frac{1}{2}$ 的砝码第 1 个放, 它只能放在左边, 然后剩下的 $k$ 个砝码有 $(2 k-1)$ !! 种放法.
+(2) 若重量为 $\frac{1}{2}$ 的砝码在第 $t$ 次操作时放, $t=2,3, \cdots, k+1$. 由于此时已经放在天平上的砝码重量均大于 $\frac{1}{2}$, 所以重量为 $\frac{1}{2}$ 的砝码不会成为最重的一个,无论它放左边还是右边都不会影响最重砝码的位置, 于是有 2 种放法, 而剩下的砝码的放法不受影响, 此时有 $2 \times(2 k-1)$ !! 种放法.
+综上所述, 当 $n=k+1$ 时,共有
+$$
+(2 k-1) ! !+k \times 2 \times(2 k-1) ! !=(1+2 k)(2 k-1) ! !=(2 k+1) ! !
+$$
+种放法.
+所以, 由数学归纳法知, 对于任意整数 $n>0$, 整个操作过程的不同方法个数为 $(2 n-1) ! !$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 设集合 $A$ 的元素都是正整数,满足如下条件:
+(1) $A$ 的元素个数不小于 3 ;
+(2) 若 $a \in A$,则 $a$ 的所有因数都属于 $A$;
+(3) 若 $a \in A, b \in A, 1<a<b$, 则 $1+a b \in A$.
+证明: $A=\mathbf{N}^*$.
+%%<SOLUTION>%%
+首先,易知 $1 \in A$.
+设 $a \in A, b \in A, 1<a<b$. 若 $a, b$ 中至少有一个偶数,则 $2 \in A$; 若 $a$, $b$ 都为奇数,则 $1+a b \in A$, 而 $1+a b$ 是偶数,故 $2 \in A$.
+设 $1,2, a \in A(a>2)$, 则 $1+2 \cdot a \in A, 1+2 \cdot(1+2 a)=3+4 a \in A$,
+$$
+1+(1+2 a) \cdot(3+4 a)=4+10 a+8 a^2 \in A,
+$$
+若 $a$ 是偶数,则 $4 \mid\left(4+10 a+8 a^2\right)$, 于是 $4 \in A$; 若 $a$ 是奇数,则把 $4+10 a+ 8 a^2$ 作为 $a$, 重复上面的过程可得 $4 \in A$.
+又 $1+2 \times 4=9 \in A$, 所以 $3 \in A, 1+2 \times 3=7 \in A, 1+2 \times 7=15 \in A$, 所以 $5 \in A$.
+所以, 1, 2, 3, 4, 5 都是集合 $A$ 的元素.
+假设 $1,2, \cdots, n \in A(n \geqslant 5)$, 下证 $n+1 \in A$.
+如果 $n+1=2 k+1$ 为奇数, 那么 $3 \leqslant k<n$, 于是 $n+1=1+2 \cdot k \in A$;
+如果 $n+1=2 k$ 是偶数, 那么 $3 \leqslant k<n$, 于是 $n=2 k-1 \in A, 1+2 \cdotk \in A$, 所以 $1+(2 k-1) \cdot(2 k+1)=4 k^2 \in A$, 从而 $2 k \in A$, 即 $n+1 \in A$. 综上所述,我们证明了 $A=\mathbf{N}^*$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 已知三角形 $A B C$ 中, $\angle C=90^{\circ}$. 证明: 对于 $\triangle A B C$ 内任意 $n$ 个点, 必可适当地记为 $P_1, P_2, \cdots, P_n$, 使得
+$$
+P_1 P_2^2+P_2 P_3^2+\cdots+P_{n-1} P_n^2 \leqslant A B^2 .
+$$
+%%<SOLUTION>%%
+我们把命题的结论加强为
+$$
+A P_1^2+P_1 P_2^2+P_2 P_3^2+\cdots+P_{n-1} P_n^2+P_n B^2 \leqslant A B^2 .
+$$
+当 $n=1$ 时, 因为 $\angle A P_1 B \geqslant 90^{\circ}$, 所以 $A P_1^2+P_1 B^2 \leqslant A B^2$.
+假设 $n<k$ 时命题成立.
+当 $n=k$ 时, 过 $C$ 作 $C D \perp A B$, 垂足为 $D$, 不妨设 $\triangle A C D$ 内有 $s$ 个点, $\triangle B C D$ 内有 $t$ 个点, (不然的话, 若 $k$ 个点都在 $\triangle A C D$ 内, 过 $D$ 作 $A C$ 的垂线, 这种作法一直进行下去, 直到把 $k$ 个点分割在两个三角形内为止). 那么 $s, t \geqslant 1, s+t=k$.
+因 $\triangle A C D$ 内有 $s$ 个点, 由归纳假设, 可以分别标号为 $P_1, P_2, \cdots, P_s$, 使得
+$$
+A P_1^2+P_1 P_2^2+\cdots+P_{s-1} P_s^2+P_s C^2 \leqslant A C^2 .
+$$
+同样, 对于 $\triangle B C D$ 内的 $k-s$ 个点, 可以分别标号为 $P_{s+1}, P_{s+2}, \cdots, P_k$, 使得
+$$
+C P_{s+1}^2+P_{s+1} P_{s+2}^2+\cdots+P_{k-1} P_k^2+P_k B^2 \leqslant B C^2 .
+$$
+由于 $\angle P_s C P_{s+1} \leqslant 90^{\circ}$, 所以 $P_s C^2+C P_{s+1}^2 \geqslant P_s P_{s+1}^2$, 于是
+$$
+\begin{aligned}
+& A P_1^2+P_1 P_2^2+\cdots+P_{k-1} P_k^2+P_k B^2 \\
+\leqslant & \left(A P_1^2+P_1 P_2^2+\cdots+P_s C^2\right)+\left(C P_{s+1}^2+\right. \\
+& \left.P_{s+1} P_{s+2}^2+\cdots+P_{k-1} P_k^2+P_k B^2\right) . \\
+\leqslant & A C^2+B C^2=A B^2 .
+\end{aligned}
+$$
+从而 $n=k$ 时命题也成立, 这就完成了归纳证明.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 寄宿制学校中有 512 名学生住 256 间宿舍, 每间宿舍合住的两人称为室友.
+这些学生共选修 9 门课.
+已知任意两名同学所选课程都不完全相同.
+证明: 所有学生可以排成一圈满足: 任意两个室友相邻; 任意非室友相邻的两人中,一个所选的课程是另一人所选课程的子集, 且恰少选一门课.
+%%<SOLUTION>%%
+我们将用数学归纳法对一般情况 ($n(n \geqslant 2)$ 门课, $2^n$ 个学生, $2^{n-1}$ 间宿舍)证明结论.
+当 $n=2$ 时, 不难讨论知结论成立.
+下设 $n>2$.
+不妨设物理是一门选修课且某对室友一个选修了物理, 一个没选修物理.
+我们将所有选修物理的学生集合记为 $A$, 没选修物理的学生集合记为 $B$, 则 $|A|=|B|=2^{n-1}$. 我们将 $A$ 和 $B$ 中的所有同学都各自安排到另外有 $2^{n-2}$ 间宿舍的学校, 原来的室友还是室友, 剩下的 $A$ 中任意两两配对成为室友 (称之为新室友). 由归纳假设, $A$ 中学生可以排成一圈 $K$ 满足要求.
+设 $\left(x_1, x_2\right), \cdots$, $\left(x_{2 k-1}, x_{2 k}\right)$ 是 $K$ 上按顺时针方向排列的所有新室友对.
+令 $x_i^{\prime}$ 表示 $x_i$ 原来的室友, 显然 $x_i^{\prime} \in B$. 在 $B$ 中令 $\left(x_2^{\prime}, x_3^{\prime}\right), \cdots,\left(x_{2 k-2}^{\prime}, x_{2 k-1}^{\prime}\right),\left(x_{2 k}^{\prime}, x_1^{\prime}\right)$ 构成新的室友对集, 与 $B$ 中原来的室友对集共同构成了 $B$ 中的室友对集.
+对 $B$ 应用归纳假设, 可将 $B$ 中同学排成一圈 $K^{\prime}$. 我们将 $K$ 中 $x_{2 i}$ 到 $x_{2 i+1}$ 之间的同学保持顺序地插人到 $K^{\prime}$ 中 $x_{2 i}^{\prime}, x_{2 i+1}^{\prime}$ 之间, 得到新的大圈满足要求.
+%%PROBLEM_END%%
+
+

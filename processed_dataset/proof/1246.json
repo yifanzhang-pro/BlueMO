@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题18. 设 $m$ 个互不相同的正偶数与 $n$ 个互不相同的正奇数之和为 1987 ,对所有这样的 $m$ 与 $n, 3 m+4 n$ 的最大值是多少?",
+    "solution": "设 $a_1+a_2+\\cdots+a_m+b_1+b_2+\\cdots+b_n=1987, a_i(1 \\leqslant i \\leqslant m)$ 为互不相同正偶数, $b_j(1 \\leqslant j \\leqslant n)$ 是互不相同的正奇数.\n显然, $n$ 为奇数, 且 $a_1+a_2+\\cdots+a_m \\geqslant 2+4+\\cdots+2 m=m(m+1), b_1+b_2+\\cdots+b_n \\geqslant 1+ 3+\\cdots+(2 n-1)=n^2$. 所以 $m^2+m+n^2 \\leqslant 1987$, 即 $\\left(m+\\frac{1}{2}\\right)^2+n^2 \\leqslant 1987+\\frac{1}{4}$. 由柯西不等式, 得 $3\\left(m+\\frac{1}{2}\\right)+4 n \\leqslant \\sqrt{3^2+4^2} \\sqrt{\\left(m+\\frac{1}{2}\\right)^2+n^2} \\leqslant 5 \\sqrt{1987+\\frac{1}{4}}, 3 m+4 n \\leqslant 5 \\sqrt{1987+\\frac{1}{4}}-\\frac{3}{2}$. 由于 $3 m+4 n$ 为整数, 所以 $3 m+4 n \\leqslant 221$. 易证, $3 m+4 n=221$ 的整数解的一般形式为 $m=71-4 k$, $n=2+3 k, k \\in \\mathbf{Z}$. 由 $n$ 为奇数, 所以, $k=2 t+1$ 为奇数, $t \\in \\mathbf{Z}$, 即 $m= 67-8 t, n=5+6 t, t \\in \\mathbf{Z}$. 因为 $m^2, n^2 \\leqslant 1987$, 所以 $m, n<44$, 代入上式, 得 $3 \\leqslant t \\leqslant 6$. 当 $t=3,4,5,6$ 时, 有解 $(m, n)=(43,23)$ ,(35,29),(27, $35),(19,41)$. 易证 $(m, n)=(27,35)$ 为所求.\n此时, 最小值为 221 .",
+    "remark": "",
+    "figures": []
+}

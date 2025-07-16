@@ -1,0 +1,126 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $z=\cos \frac{\pi}{4}+\mathrm{i} \sin \frac{\pi}{4}$, 若 $z^n=\bar{z}\left(n \in \mathbf{N}^*\right)$, 则 $n$ 的最小值是 ( ).
+(A) 7
+(B) 8
+(C) 9
+(D) 10
+%%<SOLUTION>%%
+A.
+由 $z^n=\bar{z}$, 知
+$$
+z^{n+1}==z \bar{z}=1, z^{n+1}=\cos \frac{(n+1) \pi}{4}+\mathrm{i} \sin \frac{(n+1) \pi}{4}=1,
+$$
+所以得
+$$
+\begin{aligned}
+& \cos \frac{(n+1) \pi}{4}=1, \text { 且 } i \sin \frac{(n+1) \pi}{4}=0, \\
+& \frac{n+1}{4} \pi=2 k \pi \text { 且 } \frac{n+1}{4} \pi=k \pi,(k \in \mathbf{Z})
+\end{aligned}
+$$
+于是 $n=8 k-1$, 即 $n$ 的最小值是 7 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 设 $\omega=\cos \frac{\pi}{5}+i \sin \frac{\pi}{5}$, 则以 $\omega 、 \omega^3 、 \omega^7 、 \omega^9$ 为根的方程是 $(\quad)$.
+(A) $x^4+x^3+x^2+x+1=0$
+(B) $x^4-x^3+x^2-x+1=0$
+(C) $x^4-x^3-x^2+x+1=0$
+(D) $x^4+x^3+x^2-x-1=0$
+%%<SOLUTION>%%
+B.
+由 $\omega=\cos \frac{\pi}{5}+\mathrm{i} \sin \frac{\pi}{5}$ 知, $\omega, \omega^2, \omega^3, \cdots, \omega^{10}$ 是 1 的 10 个 10 次方根.
+于是
+$$
+(x-\omega)\left(x-\omega^2\right)\left(x-\omega^3\right) \cdots\left(x-\omega^{10}\right)=x^{10}-1 . \label{eq1}
+$$
+因为 $\omega^2 、 \omega^4 、 \omega^6 、 \omega^8 、 \omega^{10}$ 是 1 的 5 个 5 次方根, 所以
+$$
+\left(x-\omega^2\right)\left(x-\omega^4\right)\left(x-\omega^6\right)\left(x-\omega^8\right)\left(x-\omega^{10}\right)=x^5-1 . \label{eq2}
+$$
+由式\ref{eq1} $\div$ 式\ref{eq2}, 便有
+$$
+(x-\omega)\left(x-\omega^3\right)\left(x-\omega^5\right)\left(x-\omega^7\right)\left(x-\omega^9\right)=x^5+1 . \label{eq3}
+$$
+对\ref{eq3}式两边同除以 $x-\omega^5$, 也就是 $x+1$, 得 $(x-\omega)\left(x-\omega^3\right)\left(x-\omega^5\right)\left(x-\omega^7\right)\left(x-\omega^9\right)=x^4-x^3+x^2-x+1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 求证: $\sin 1+\sin 2+\cdots+\sin n \leqslant \frac{1}{\sin \frac{1}{2}}$.
+%%<SOLUTION>%%
+$\left|\sum_{k=1}^n \sin k\right| \leqslant\left|\sum_{k=1}^n \mathrm{e}^{\mathrm{i} k}\right|=\left|\frac{\mathrm{e}^{\mathrm{i}}\left(1-\mathrm{e}^{\mathrm{i} n}\right)}{1-\mathrm{e}^{\mathrm{i}}}\right|=\left|\frac{1-\mathrm{e}^{\mathrm{i} n}}{1-\mathrm{e}^{\mathrm{i}}}\right|=\frac{\left|\mathrm{i}-\mathrm{e}^{\mathrm{i} n}\right|}{2 \sin \frac{1}{2}} \leqslant \frac{1+\left|\mathrm{e}^{\mathrm{in}}\right|}{2 \sin \frac{1}{2}}=\frac{1}{\sin \frac{1}{2}}$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 方程 $x^{10}+(13 x-1)^{10}=0$ 的 10 个复数根分别为 $r_1, \overline{r_1}, r_2, \overline{r_2}, r_3, \overline{r_3}$, $r_4, \overline{r_4}, r_5, \overline{r_5}$. 求代数式 $\frac{1}{r_1 \overline{r_1}}+\frac{1}{r_2 \overline{r_2}}+\cdots+\frac{1}{r_5 \overline{r_5}}$ 的值.
+%%<SOLUTION>%%
+设 $\varepsilon=\cos \frac{\pi}{10}+\mathrm{i} \sin \frac{\pi}{10}$, 则 $\varepsilon^{10}=-1$.
+由方程 $(13 x-1)^{10}=-x^{10}$, 我们可设 $13 r_k-1=r_k \cdot \varepsilon^{2 k-1}, k=1,2, \cdots, 5$. 于是 $\frac{1}{r_k}=13-\varepsilon^{2 k-1}$. 所以, 有
+$$
+\begin{aligned}
+\sum_{k=1}^5 \frac{1}{r_k \overline{r_k}} & =\sum_{k=1}^5\left(13-\varepsilon^{2 k-1}\right)\left(13-\bar{\varepsilon}^{2 k-1}\right)=\sum_{k=1}^5\left[170-13\left(\varepsilon^{2 k-1}+\bar{\varepsilon}^{2 k-1}\right)\right] \\
+& =850-13 \sum_{k=1}^5\left(\varepsilon^{2 k-1}+\bar{\varepsilon}^{2 k-1}\right) \\
+& =850-26\left(\cos \frac{\pi}{10}+\cos \frac{3 \pi}{10}+\cos \frac{5 \pi}{10}+\cos \frac{7 \pi}{10}+\cos \frac{9 \pi}{10}\right)=850 .
+\end{aligned}
+$$
+于是, 所求代数式的值为 850 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $f(x)=x^4+x^3+x^2+x+1$, 求 $f\left(x^5\right)$ 被 $f(x)$ 除得的余数.
+%%<SOLUTION>%%
+设 $f\left(x^5\right)=f(x) q(x)+r(x)$, 这里 $r(x)=0$ 或 $\operatorname{deg} r \leqslant 3$.
+设 $\zeta \neq 1$ 是一个 5 次单位根, 则 $r(\zeta)=r\left(\zeta^2\right)=r\left(\zeta^3\right)=r\left(\zeta^4\right)=5$, 而 $\operatorname{deg} r \leqslant 3$, 故必须 $r(x)=5$, 即余式是常数 5 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 设 $f(x)$ 是复系数多项式, $n$ 是正整数, 求证: 如果 $(x-1) \mid f\left(x^n\right)$, 则 $\left(x^n-1\right) \mid f\left(x^n\right)$.
+%%<SOLUTION>%%
+$f\left(x^n\right)=(x-1) g(x)$.
+取 $\zeta=\mathrm{e}^{\frac{2 \pi j}{n}}$ 是一个 $n$ 次单位根, 由 $f(1)=0$ 知, $f\left(\zeta^{k n}\right)=0(k=1, \cdots, n)$.
+故 $f\left(x^n\right)$ 被 $(x-\zeta)\left(x-\zeta^2\right) \cdots\left(x-\zeta^n\right)=x^n-1$ 整除,证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 设 $g(\theta)=\lambda_1 \cos \theta+\lambda_2 \cos 2 \theta+\cdots+\lambda_n \cos n \theta$, 其中 $\lambda_1, \lambda_2, \cdots, \lambda_n, \theta$ 均为实数.
+若对一切实数 $\theta$, 恒有 $g(\theta) \geqslant-1$. 求证: $\lambda_1+\lambda_2+\cdots+\lambda_n \leqslant n$.
+%%<SOLUTION>%%
+令 $\theta_k=\frac{2 k \pi}{n+1}, k=0,1,2, \cdots, n$, 则有
+$$
+\sum_{k=0}^n \cos m \theta_k=\sum_{k=0}^n \sin m \theta_k=0, m=1,2, \cdots, n . \label{eq1}
+$$
+(事实上, $\sum_{k=0}^n \mathrm{e}^{\mathrm{i} n \theta_k}=\frac{1-\mathrm{e}^{\mathrm{i} m \cdot 2 \pi}}{1-\mathrm{e}^{\mathrm{i} m \frac{2 \pi}{n+1}}}=0$, 于是\ref{eq1}式成立), 因此
+$$
+\begin{aligned}
+& g(0)+g\left(\theta_1\right)+g\left(\theta_2\right)+\cdots+g\left(\theta_n\right) \\
+= & \lambda_1\left(\cos 0+\cos \theta_1+\cdots+\cos \theta_n\right)+\lambda_2\left(\cos 0+\cos 2 \theta_1+\cdots+\cos 2 \theta_n\right) \\
+& +\cdots+\lambda_n\left(\cos 0+\cos n \theta_1+\cdots+\cos n \theta_n\right)=0 .
+\end{aligned}
+$$
+故由 $g\left(\theta_1\right) \geqslant-1, g\left(\theta_2\right) \geqslant-1, \cdots, g\left(\theta_n\right) \geqslant-1$ 得
+$$
+\lambda_1+\lambda_2+\cdots+\lambda_n=g(0)=-\left[g\left(\theta_1\right)+g\left(\theta_2\right)+\cdots+g\left(\theta_n\right)\right] \leqslant n,
+$$
+证毕.
+%%PROBLEM_END%%
+
+

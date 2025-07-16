@@ -1,0 +1,5 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter3.tex",
+    "text": "在三角形中,角与边之间存在着下列关系 : 三角形的角与角之间有 “内角和是 $180^{\\circ}$ (即 $\\pi$ 弧度)”; 边与边之间有 “任意两边之和大于第三边, 两边之差小于第三边”; 边与角之间有正弦定理 $\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}=2 R$, 余弦定理 $a^2=b^2+c^2-2 b c \\cos A, b^2=c^2+a^2-2 c a \\cos B, c^2=a^2+b^2-2 a b \\cos C$ 等关系.\n特别地, 当三角形中有一角为直角时, 斜边的平方等于两直角边的平方和.\n三角形面积公式 $S_{\\triangle A B C}=\\frac{1}{2} a b \\sin C=\\frac{1}{2} b c \\sin A=\\frac{1}{2} a c \\sin B$, 还有 $S=\\frac{a b c}{4 R}$, $S=2 R^2 \\sin A \\sin B \\sin C, S=p r$, 海伦公式 $S=\\sqrt{p(p-a)(p-b)(p-c)}$, 其中 $R 、 r$ 分别为三角形外接圆和内切圆半径, $p=\\frac{1}{2}(a+b+c)$.\n利用正弦定理解三角形时, 必须注意三角形的多解性, 如已知角 $A$ 、边 $a$ 、 $b$ 时,列表如下:\n\\begin{tabular}{c|c|c}\n\\hline & $A \\geqslant 90^{\\circ}$ & $A<90^{\\circ}$ \\\\\n\\hline$a>b$ & 一解 & 一解 \\\\\n\\hline$a=b$ & 无解 & 一解 \\\\\n\\hline \\multirow{2}{*}{$a<b$} & \\multirow{2}{*}{ 解 } & $a>b \\sin A$ 两解 \\\\\n& & $a=b \\sin A$ 一解 \\\\\n& & $a<b \\sin$ 无解 \\\\\n\\hline\n\\end{tabular}",
+    "figures": []
+}

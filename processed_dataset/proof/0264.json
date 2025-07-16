@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例1. 在直角坐标平面内给定凸五边形 $A B C D E$, 它的顶点都是整点 (横坐标及纵坐标都为整数的点). 证明:其对角线相交成的凸五边形 $A_1 B_1 C_1 D_1 E_1$ (图 10-1) 的内部或周界上至少有一个整点.",
+    "solution": "证明:为了说话简便, 将\"在内部或在边界上\"统称为\"在……中\", 用反证法.\n假设结论不成立, 考虑不满足题目结论且具有最小面积 $S$ 的凸五边形 $A B C D E$\n(因整点五边形的面积的 2 倍是正整数,故其中必存在面积最小的) 并称凸五边形 $A_1 B_1 C_1 D_1 E_1$ 为 $A B C D E$ 的内五边形, 不妨设 $\\triangle A B C, \\triangle B C D, \\triangle C D E$, $\\triangle D E A, \\triangle E A B$ 中以 $\\triangle A B C$ 的面积为最小.\n为了导致矛盾, 我们只需证明以 $A B 、 B C$ 为邻边的平行四边形的另一个顶点 $O$ (必为整点) 在内五边形中, 为此, 我们先证明 $\\triangle A C_1 D_1$ 中的整点除 $A$ 外, 只可能在线段 $C_1 D_1$ 上.\n事实上若除了 $A$ 或 $C_1 D_1$ 上的点外, $\\triangle A C_1 D_1$ 中还有一点 $K$ 为整点, 则凸五边形 $K B C D E$ 的面积小于凸五边形 $A B C D E$ 的面积, 且 $K B C D E$ 的内五边形包含在 $A_1 B_1 C_1 D_1 E_1$ 中, 故 $K B C D E$ 的内五边形中也没有整点,这与 $S$ 的最小性假设矛盾.\n其次, 因 $S_{\\triangle A B C} \\leqslant S_{\\triangle B C D}$, 故 $D$ 到 $B C$ 的距离 $\\geqslant A$ 到 $B C$ 的距离, 又 $S_{\\triangle A B C} \\leqslant S_{\\triangle A B E}$, 故 $E$ 到 $A B$ 的距离 $\\geqslant C$ 到 $A B$ 的距离, 所以, 以 $A B 、 B C$ 为邻边的平行四边形的另一顶点 $O$ 必在 $\\triangle A C B_1$ 内, 且由 $A, B, C$ 为整点知 $O$ 为整点, 且 $O \\neq A, O \\neq C$. \n若 $O$ 在 $\\triangle A C_1 D_1$ 中则由前面证明知 $O$ 只能在 $C_1 D_1$ 上.\n同理,若 $O$ 在 $\\triangle C A_1 E_1$ 中, 则 $O$ 只能在 $A_1 E_1$ 上, 即 $O$ 只能在内五边形\n$A_1 B_1 C_1 D_1 E_1$ 中, 这与 $A_1 B_1 C_1 D_1 E_1$ 中无整点的假设矛盾.\n于是命题结论成立.",
+    "remark": "注:用反证法证明涉及整点多边形的结论时, 常常要取满足假设条件而且具有最小面积的整点多边形作为证明的出发点.",
+    "figures": []
+}

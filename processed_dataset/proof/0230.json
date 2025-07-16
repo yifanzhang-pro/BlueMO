@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 设正整数 $a 、 b$ 满足 $a^2 b \\mid\\left(a^3+b^3\\right)$, 证明 $a=b$.",
+    "solution": "设 $a^3+b^3=m a^2 b$, 则 $\\left(\\frac{a}{b}\\right)^3-m\\left(\\frac{a}{b}\\right)^2+1=0$, 即有理数 $\\frac{a}{b}$ 是首项系数为 1 的整系数方程\n$$\nx^3-m x^2+1=0 . \\label{eq1}\n$$\n的一个根, 故 $\\frac{a}{b}$ 必是整数 . 另一方面, 方程式\\ref{eq1}的任一整数根必然整除常数项 1 , 从而只能是 \\pm 1 ; 又 $a, b$ 为正数, 故 $\\frac{a}{b}=1$, 即 $a=b$.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例20 求所有的实数 $\\alpha$ 的值, 使数列 $a_n= \\cos 2^n \\alpha(n=1,2, \\cdots)$ 中每一项都为负数.",
+    "solution": "证明:首先, 若 $\\alpha$ 是满足条件的实数, 则 $\\cos \\alpha \\leqslant-\\frac{1}{4}$.\n事实上: 若 $\\cos \\alpha \\in\\left(-\\frac{1}{4}, 0\\right)$, 则\n$$\n\\cos 2 \\alpha=2 \\cos ^2 \\alpha-1<-\\frac{7}{8} .\n$$\n$\\cos 4 \\alpha=2 \\cos ^2 2 \\alpha-1>0$, 矛盾.\n由上述推导可知: 对于任意 $n \\in \\mathrm{N}^*$, 均有 $\\cos 2^n \\alpha \\leqslant-\\frac{1}{4}$, 于是\n$$\n\\left|\\cos 2^n \\alpha-\\frac{1}{2}\\right| \\geqslant \\frac{3}{4},\n$$\n注意到 $\\left|\\cos 2 \\alpha+\\frac{1}{2}\\right|=\\left|\\cos ^2 \\alpha-\\frac{1}{2}\\right|=2\\left|\\cos \\alpha+\\frac{1}{2}\\right|\\left|\\cos \\alpha-\\frac{1}{2}\\right|$,\n有 $\\quad\\left|\\cos \\alpha+\\frac{1}{2}\\right| \\leqslant \\frac{2}{3}\\left|\\cos 2 \\alpha+\\frac{1}{2}\\right| \\leqslant\\left(\\frac{2}{3}\\right)^2\\left(\\cos 4 \\alpha+\\frac{1}{2}\\right) \\leqslant \\cdots$\n$$\n\\leqslant\\left(\\frac{2}{3}\\right)^n\\left|\\cos 2^n \\alpha+\\frac{1}{2}\\right| \\leqslant\\left(\\frac{2}{3}\\right)^n \\text {. }\n$$\n当 $n \\rightarrow \\infty$ 时, $\\left(\\frac{2}{3}\\right)^n \\rightarrow 0$, 故 $\\left(\\cos \\alpha+\\frac{1}{2}\\right)=0$.\n所以 $\\cos \\alpha=-\\frac{1}{2}$, 即 $\\alpha=2 k \\pi \\pm \\frac{\\pi}{3}, k \\in \\mathbf{Z}$.\n另一方面, 当 $\\alpha=2 k \\pi \\pm \\frac{2}{3} \\pi, k \\in \\mathbf{Z}$ 时, 对于任意 $n \\in \\mathbf{N}^*$, 均有 $\\cos 2^n \\alpha= -\\frac{1}{2}$ 满足条件.\n综上所述, $\\alpha=2 k \\pi \\pm \\frac{\\pi}{3}, k \\in \\mathbf{Z}$.",
+    "remark": "",
+    "figures": []
+}

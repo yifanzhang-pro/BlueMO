@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume10/chapter10.tex",
+    "problem_type": "proof",
+    "problem": "例13. 求所有的正整数 $k$, 使得存在正整数 $n$, 满足\n$$\n\\frac{\\tau\\left(n^2\\right)}{\\tau(n)}=k, \\label{eq1}\n$$\n其中 $\\tau(n)$ 表示 $n$ 的正约数的个数.",
+    "solution": "解:由第 3 单元 (6) 中 $\\tau(n)$ 的计算公式可知, $\\tau\\left(n^2\\right)$ 必是奇数, 因此满足式\\ref{eq1} 的 $k$ 一定是奇数.\n面证明每个正奇数 $k$ 均符合要求.\n$k=1$ 显然符合要求.\n对 $k>1$, 由 $\\tau(n)$ 的计算公式可知, 问题等价于证明, 存在正整数 $\\alpha, \\beta, \\cdots, \\gamma$, 使得\n$$\n\\frac{(2 \\alpha+1)}{\\alpha+1} \\cdot \\frac{(2 \\beta+1)}{\\beta+1} \\cdot \\cdots \\cdot \\frac{(2 \\gamma+1)}{\\gamma+1}=k . \\label{eq2}\n$$\n现假设小于 $k$ 的奇数均符合要求, 对于奇数 $k$, 可设 $k=2^l m-1$, 这里 $l \\geqslant 1, m$ 为奇数.\n由 $k>1$ 易知 $m<k$, 故由归纳假设知, 有 $\\alpha^{\\prime}, \\beta^{\\prime}, \\cdots, \\gamma^{\\prime}$, 使得\n$$\n\\frac{\\left(2 \\alpha^{\\prime}+1\\right)}{\\alpha^{\\prime}+1} \\cdot \\frac{\\left(2 \\beta^{\\prime}+1\\right)}{\\beta^{\\prime}+1} \\cdot \\cdots \\cdot \\frac{\\left(2 \\gamma^{\\prime}+1\\right)}{\\gamma^{\\prime}+1}=m . \\label{eq3}\n$$\n我们现在取两个待定整数 $x \\geqslant 1$ 及 $u \\geqslant 0$, 满足 $2^u \\mid x$, 以及\n$$\n\\frac{2 x+1}{x+1} \\cdot \\frac{2 \\cdot \\frac{x}{2}+1}{\\frac{x}{2}+1} \\cdots \\cdots \\frac{2 \\cdot \\frac{x}{2^u}+1}{\\frac{x}{2^u}+1}=\\frac{k}{m} . \\label{eq4}\n$$\n显然, 若能找到符合上述要求的 $u$ 和 $x$, 则将式\\ref{eq3}与\\ref{eq4}相乘, 即得出了关于 $k$ 的形如式\\ref{eq2}的表示, 从而证明了 $k$ 符合要求,即完成了归纳构造.\n事实上,式\\ref{eq4}可化为\n$$\n\\frac{2 x+1}{\\frac{x}{2^u}+1}=\\frac{k}{m},\n$$\n此即(注意 $k=2^l m-1$ ),\n$$\nx=\\frac{2^u(k-m)}{2^{u+1} m-2^l m+1} .\n$$\n因此, 只要取 $u=l-1$, 则 $u \\geqslant 0$, 相应的 $x=2^{l-1}(k-m)$ 为正整数, 且被 $2^{l-1}\\left(=2^u\\right)$ 整除.\n证毕.",
+    "remark": "",
+    "figures": []
+}

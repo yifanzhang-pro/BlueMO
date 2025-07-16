@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例9. 已知 $\\alpha, \\beta, \\gamma \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$, 求证:\n$$\n(\\tan \\alpha-\\tan \\beta)^2 \\geqslant(\\tan \\gamma-2 \\tan \\alpha)(2 \\tan \\beta-\\tan \\gamma) .\n$$",
+    "solution": "分析:观察所证不等式的特征, 发现其与一元二次方程的根的判别式类似, 所以利用构造一元二次方程的方法解决问题.\n证明当 $\\tan \\gamma-2 \\tan \\alpha=0$ 时, 原不等式显然成立.\n当 $\\tan \\gamma-2 \\tan \\alpha \\neq 0$ 时, 作一元二次方程\n$$\n(\\tan \\gamma-2 \\tan \\alpha) x^2+2(\\tan \\alpha-\\tan \\beta) x+(2 \\tan \\beta-\\tan \\gamma)=0,\n$$\n因为 $(\\tan \\gamma-2 \\tan \\alpha)+2(\\tan \\alpha-\\tan \\beta)+(2 \\tan \\beta-\\tan \\gamma)=0$,\n所以所作方程必有一根 $x=1$, 从而\n$$\n\\Delta=4(\\tan \\alpha-\\tan \\beta)^2-4(\\tan \\gamma-2 \\tan \\alpha)(2 \\tan \\beta-\\tan \\gamma) \\geqslant 0,\n$$\n即\n$$\n(\\tan \\alpha-\\tan \\beta)^2 \\geqslant(\\tan \\gamma-2 \\tan \\alpha)(2 \\tan \\beta-\\tan \\gamma) .\n$$\n评注观察和分析欲证不等式的结构特点, 构造相应的代数方程, 是一种行之有效的解题方法.",
+    "remark": "",
+    "figures": []
+}

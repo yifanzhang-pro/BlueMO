@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题1 设 $x, y, z \\in(0,1)$, 求证:\n$$\nx(1-y)+y(1-z)+z(1-x)<1 .\n$$",
+    "solution": "设 $f(x)=(1-y-z) x+y+z-y z-1$. 把 $y 、 z$ 看作常数, 则 $f(x)$ 是关于 $x$ 的一次函数.\n因为 $f(0)=y+z-y z-1=-(y-1)(z-1)<0$, $f(1)=(1-y-z)+y+z-y z-1=-y z<0$, 所以, 对于 $0<x<1$, 都有 $f(x)<0$, 即 $(1-y-z) x+y+z-y z-1<0$, 所以 $x(1-y)+y(1- z)+z(1-x)<1$.",
+    "remark": "",
+    "figures": []
+}

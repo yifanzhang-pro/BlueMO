@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 已知非等边 $\\triangle A B C, \\angle A 、 \\angle B 、 \\angle C$ 的平分线分别交对边于点 $A^{\\prime} 、 B^{\\prime}$ 、 $C^{\\prime} . A A^{\\prime}$ 的中垂线与 $B C$ 交于点 $A^{\\prime \\prime}, B B^{\\prime}$ 的中垂线与 $A C$ 交于点 $B^{\\prime \\prime}, C C^{\\prime}$ 的中垂线交于点 $C^{\\prime \\prime}$. 证明: $A^{\\prime \\prime} 、 B^{\\prime \\prime} 、 C^{\\prime \\prime}$ 三点共线.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c2a4.png>), 注意到 $\\angle B A A^{\\prime}=\\angle A^{\\prime} A C$, $\\angle A^{\\prime \\prime} A A^{\\prime}=\\angle A^{\\prime \\prime} A^{\\prime} A$. 相减得 $\\angle A^{\\prime \\prime} A B=\\angle C$. 于是, $A A^{\\prime \\prime}$ 为 $\\triangle A B C$ 外接圆的切线.\n从而, $\\triangle A A^{\\prime \\prime} B \\backsim \\triangle C A^{\\prime \\prime} A$. 故 $\\frac{B A^{\\prime \\prime}}{A^{\\prime \\prime} C}=\\frac{B A^{\\prime \\prime}}{A A^{\\prime \\prime}} \\cdot \\frac{A A^{\\prime \\prime}}{A^{\\prime \\prime} C}=\\left(\\frac{A B}{A C}\\right)^2$. 同理, $\\frac{C B^{\\prime \\prime}}{B^{\\prime \\prime} A}=\\left(\\frac{B C}{B A}\\right)^2, \\frac{A C^{\\prime \\prime}}{C^{\\prime \\prime} B}=\\left(\\frac{A C}{C B}\\right)^2$. 所以, $\\frac{B A^{\\prime \\prime}}{A^{\\prime \\prime} C} \\cdot \\frac{C B^{\\prime \\prime}}{B^{\\prime \\prime} A}$.\n$\\frac{A C^{\\prime \\prime}}{C^{\\prime \\prime} B}=\\left(\\frac{A B}{A C} \\cdot \\frac{B C}{A B} \\cdot \\frac{A C}{C B}\\right)^2=1$. 由梅涅劳斯逆定理知 $A^{\\prime \\prime} 、 B^{\\prime \\prime} 、 C^{\\prime}$ 三点共线.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c2a4.png"
+    ]
+}

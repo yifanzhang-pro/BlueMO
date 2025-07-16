@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例5. 任给 8 个非零实数 $a_1, a_2, \\cdots, a_8$, 证明:下面 6 个数 $a_1 a_3+a_2 a_4$, $a_1 a_5+a_2 a_6, a_1 a_7+a_2 a_8, a_3 a_5+a_4 a_6, a_3 a_7+a_4 a_8, a_5 a_7+a_6 a_8$ 中,至少有一个是非负的.",
+    "solution": "分析:与解令向量 $\\overrightarrow{O A}=\\left(a_1, a_2\\right), \\overrightarrow{O B}=\\left(a_3, a_4\\right), \\overrightarrow{O C}=\\left(a_5, a_6\\right)$, $\\overrightarrow{O D}=\\left(a_7, a_8\\right)$, 这 4 个向量中至少有两个向量之间的最小正夹角 $\\alpha$ 小于或等于 $90^{\\circ}$, 不妨设这两个向量为 $\\overrightarrow{O A}$ 和 $\\overrightarrow{O B}$, 此时\n$$\na_1 a_3+a_2 a_4=\\overrightarrow{O A} \\cdot \\overrightarrow{O B}=|\\overrightarrow{O A}| \\cdot|\\overrightarrow{O B}| \\cdot \\cos \\alpha \\geqslant 0,\n$$\n证毕.",
+    "remark": "",
+    "figures": []
+}

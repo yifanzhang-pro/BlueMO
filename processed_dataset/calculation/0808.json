@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题21. 在 $\\triangle A B C$ 中, $A C=b, A B=c, \\angle B A C=\\alpha$, 试用 $b 、 c 、 \\alpha$ 表示角 $A$ 的平分线 $A T$ 之长.",
+    "solution": "由 $S_{\\triangle A B T}+S_{\\triangle A T C}=S_{\\triangle A B C}$, 得 $\\frac{1}{2} \\cdot c \\cdot A T \\cdot \\sin \\frac{\\alpha}{2}+\\frac{1}{2} b \\cdot A T \\cdot \\sin \\frac{\\alpha}{2}= \\frac{1}{2} b c \\sin \\alpha$, 故 $A T=\\frac{2 b c}{b+c} \\cos \\frac{\\alpha}{2}$.",
+    "remark": "",
+    "figures": []
+}

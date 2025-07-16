@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter6.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设实数 $a_1, a_2, \\cdots, a_n \\in(-1,1]$, 求证:\n$$\n\\sum_{i=1}^n \\frac{1}{1+a_i a_{i+1}} \\geqslant \\sum_{i=1}^n \\frac{1}{1+a_i^2} \\text { (约定 } a_{n+1}=a_1 \\text { ). }\n$$",
+    "solution": "证明:首先证明:若 $x, y \\in(-1,1]$, 则\n$$\n\\frac{2}{1+x y} \\geqslant \\frac{1}{1+x^2}+\\frac{1}{1+y^2} . \\label{(1)}\n$$\n(1)等价于 $2\\left(1+x^2\\right)\\left(1+y^2\\right)-(1+x y)\\left(2+x^2+y^2\\right) \\geqslant 0$,\n即 $(x-y)^2-x y(x-y)^2 \\geqslant 0$. 故(1)成立.\n因此\n$$\n\\begin{aligned}\n& \\frac{2}{1+a_1 a_2} \\geqslant \\frac{1}{1+a_1^2}+\\frac{1}{1+a_2^2}, \\\\\n& \\frac{2}{1+a_2 a_3} \\geqslant \\frac{1}{1+a_2^2}+\\frac{1}{1+a_3^2} \\text {, } \\\\\n& \\frac{2}{1+a_n a_1} \\geqslant \\frac{1}{1+a_n^2}+\\frac{1}{1+a_1^2} \\text {. } \\\\\n&\n\\end{aligned}\n$$\n上述 $n$ 个式子相加即得原不等式成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume9/chapter5.tex",
+    "problem_type": "proof",
+    "problem": "例1. (Erdös-Mordell 不等式) 设 $P$ 为 $\\triangle A B C$ 内任意一点, $P$ 到三边 $B C 、 C A 、 A B$ 的距离分别为 $P D=p 、 P E=q 、 P F=r$, 并记 $P A=x$, $P B=y, P C=z$, 则\n$$\nx+y+z \\geqslant 2(p+q+r),\n$$\n等号成立当且仅当 $\\triangle A B C$ 为正三角形并且 $P$ 为此三角形的中心.",
+    "solution": "证明 3 如图(<FilePath:./images/volume9/figures/fig-c5i3.png>), 作点 $P$ 关于 $\\angle A$ 平分线的对称点 $P^{\\prime}$, 则易知 $P^{\\prime}$ 到 $C A 、 A B$ 的距离分别为 $r$ 、 $q$, 且 $P^{\\prime} A=P A=x$.\n设 $A 、 P^{\\prime}$ 到 $B C$ 的距离分别为 $h_1 、 r_1^{\\prime}$, 则\n$$\nP^{\\prime} A+r_1^{\\prime}=P A+r_1^{\\prime} \\geqslant h_1,\n$$\n两端乘 $a$ 可得\n$$\n\\begin{aligned}\na \\cdot P A+a r_1^{\\prime} & \\geqslant a h_1 \\\\\n& =2 S_{\\triangle A B C} \\\\\n& =a r_1^{\\prime}+c q+b r .\n\\end{aligned}\n$$\n因此同理\n$$\n\\begin{aligned}\n& x \\geqslant \\frac{c}{a} \\cdot q+\\frac{b}{a} \\cdot r, \\\\\n& y \\geqslant \\frac{a}{b} \\cdot r+\\frac{c}{b} \\cdot p, \\\\\n& z \\geqslant \\frac{a}{c} \\cdot q+\\frac{b}{c} \\cdot p .\n\\end{aligned}\n$$\n将这三个不等式相加可得\n$$\nx+y+z=\\left(\\frac{c}{b}+\\frac{b}{c}\\right) p+\\left(\\frac{c}{a}+\\frac{a}{c}\\right) q+\\left(\\frac{b}{a}+\\frac{a}{b}\\right) r \\geqslant 2(p+q+r) .\n$$",
+    "remark": "",
+    "figures": [
+        "./images/volume9/figures/fig-c5i3.png"
+    ]
+}

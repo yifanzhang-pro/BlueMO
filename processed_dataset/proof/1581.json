@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume6/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 证明: 对任意 $n \\in \\mathbf{N}^*, n \\geqslant 2$, 都有\n$$\n\\lg (n !)>\\frac{3 n}{10}\\left(\\frac{1}{2}+\\frac{1}{3}+\\cdots+\\frac{1}{n}\\right) .\n$$",
+    "solution": "当 $n=2$ 时, 由于 $2^{10}>1000$, 故 $\\lg 2>\\frac{3}{10}$, 命题成立.\n现设命题对 $n (n \\geqslant 2)$ 成立, 由均值不等式知 $\\frac{1+2+\\cdots+n}{n}>\\sqrt[n]{1 \\times 2 \\times \\cdots \\times n}$, 即 $n+1> 2(n !)^{\\frac{1}{n}}$, 于是\n$$\n\\begin{aligned}\n\\lg ((n+1) !) & >\\lg \\left((n !) \\cdot 2(n !)^{\\frac{1}{n}}\\right) \\\\\n& =\\lg 2+\\frac{n+1}{n} \\lg (n !) \\\\\n& >\\lg 2+\\frac{n+1}{n} \\times \\frac{3 n}{10}\\left(\\frac{1}{2}+\\cdots+\\frac{1}{n}\\right) \\\\\n& >\\frac{3}{10}+\\frac{3(n+1)}{10}\\left(\\frac{1}{2}+\\cdots+\\frac{1}{n}\\right)\n\\end{aligned}\n$$\n$$\n=\\frac{3(n+1)}{10}\\left(\\frac{1}{2}+\\cdots+\\frac{1}{n+1}\\right) .\n$$\n所以,命题对 $n+1$ 成立, 获证.",
+    "remark": "",
+    "figures": []
+}

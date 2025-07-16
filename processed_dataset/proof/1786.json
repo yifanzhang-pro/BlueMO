@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise10.tex",
+    "problem_type": "proof",
+    "problem": "问题5. (嵌入不等式) $A, B, C$ 为 $\\triangle A B C$ 的内角.\n求证: 对任意实数 $x 、 y 、 z$, $x^2+y^2+z^2-2 x y \\cos C-2 y z \\cos A-2 z x \\cos B \\geqslant 0$.",
+    "solution": "证明: $x^2+y^2+z^2-2 x y \\cos C-2 y z \\cos A-2 z x \\cos B=(x^2-2 x y \\cos C-2 z x \\cos B)+y^2+z^2-2 y z \\cos A=(x-y \\cos C-z \\cos B)^2+y^2 \\sin ^2 C+ z^2 \\sin ^2 B-2 y z \\cdot \\cos A-2 y z \\cos B \\cos C \\cdots$ (1).\n由于 $\\cos A=\\cos (\\pi-B-C)=-\\cos (B+C)=\\sin B \\sin C-\\cos B \\cos C$. 所以 (1) 式 $=(x-y \\cos C-z \\cos B)^2+(y \\sin C-z \\sin B)^2 \\geqslant 0$.",
+    "remark": "",
+    "figures": []
+}

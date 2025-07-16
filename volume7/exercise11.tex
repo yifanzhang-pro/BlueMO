@@ -1,0 +1,293 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $A 、 B 、 C$ 为单位圆上的三个不同的点, $G 、 H$ 分别为 $\triangle A B C$ 的重心、垂心.
+若 $F$ 为线段 $G H$ 的中点, 求 $|\overrightarrow{A F}|^2+|\overrightarrow{B F}|^2+|\overrightarrow{C F}|^2$ 的值.
+%%<SOLUTION>%%
+解:
+显然 $\overrightarrow{O H}=\overrightarrow{O A}+\overrightarrow{O B}+\overrightarrow{O C}, \overrightarrow{O G}=\frac{1}{3}(\overrightarrow{O A}+\overrightarrow{O B}+\overrightarrow{O C})$.
+则 $\overrightarrow{O F}=\frac{\overrightarrow{O G}+\overrightarrow{O H}}{2}=\frac{2}{3}(\overrightarrow{O A}+\overrightarrow{O B}+\overrightarrow{O C})$.
+故 $|\overrightarrow{A F}|^2+|\overrightarrow{B F}|^2+|\overrightarrow{C F}|^2=(\overrightarrow{O A}-\overrightarrow{O F}) \cdot(\overrightarrow{O A}-\overrightarrow{O F})+(\overrightarrow{O B}- \overrightarrow{O F}) \cdot(\overrightarrow{O B}-\overrightarrow{O F})+(\overrightarrow{O C}-\overrightarrow{O F}) \cdot(\overrightarrow{O C}-\overrightarrow{O F})=|\overrightarrow{O A}|^2+|\overrightarrow{O B}|^2+ |\overrightarrow{O C}|^2-2(\overrightarrow{O A}+\overrightarrow{O B}+\overrightarrow{O C}) \cdot \overrightarrow{O F}+3 \overrightarrow{O F} \cdot \overrightarrow{O F}=|\overrightarrow{O A}|^2+|\overrightarrow{O B}|^2+ |\overrightarrow{O C}|^2-[2(\overrightarrow{O A}+\overrightarrow{O B}+\overrightarrow{O C})-3 \overrightarrow{O F}] \cdot \overrightarrow{O F}=|\overrightarrow{O A}|^2+|\overrightarrow{O B}|^2+|\overrightarrow{O C}|^2=3$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 如图(<FilePath:./figures/fig-c11p2.png>),在 $\triangle A B C$ 中, $O$ 为外心, 三条高线交于 $H, D 、 E 、 F$ 为垂足, 直线 $E D 、 A B$ 交于 $M$, 直线 $F D 、 A C$ 交于 $N$. 求证:
+(1) $O B \perp D F, O C \perp D E$;
+(2) $\mathrm{OH} \perp M N$.
+%%<SOLUTION>%%
+证明: (1) 设 $\triangle A B C$ 外接圆半径为 $R$, 则有
+$$
+\begin{aligned}
+\overrightarrow{O B} \cdot \overrightarrow{D F} & =\overrightarrow{O B} \cdot(\overrightarrow{D B}+\overrightarrow{B F}) \\
+& =\overrightarrow{O B} \cdot \overrightarrow{D B}+\overrightarrow{O B} \cdot \overrightarrow{B F} \\
+& =\overrightarrow{B O} \cdot \overrightarrow{B D}-\overrightarrow{B O} \cdot \overrightarrow{B F} \\
+& =|\overrightarrow{B O}| \cdot|\overrightarrow{B D}| \cdot \cos \angle D B O-|\overrightarrow{B O}| \cdot|\overrightarrow{B F}| \cdot \cos \angle F B O \\
+& =R \cdot|\overrightarrow{B D}| \sin \angle B A C-R \cdot|\overrightarrow{B F}| \sin \angle A C B \\
+& =\frac{1}{2}|\overrightarrow{B D}| \cdot|\overrightarrow{B C}|-\frac{1}{2}|\overrightarrow{B F}| \cdot|\overrightarrow{B A}| .
+\end{aligned}
+$$
+因为四边形 $A F D C$ 为圆内接四边形, 所以 $|\overrightarrow{B F}| \cdot|\overrightarrow{B A}|=|\overrightarrow{B D}| \cdot|\overrightarrow{B C}|$.
+则 $\overrightarrow{O B} \cdot \overrightarrow{D F}=0$.
+故 $\overrightarrow{O B} \perp \overrightarrow{D F}$, 即 $O B \perp D F$.
+同理, $O C \perp D E$.
+(2) $\overrightarrow{O H} \cdot \overrightarrow{M N}=\overrightarrow{O H} \cdot(\overrightarrow{A N}-\overrightarrow{A M})=\overrightarrow{O H} \cdot \overrightarrow{A N}-\overrightarrow{O H} \cdot \overrightarrow{A M}$.
+而 $\overrightarrow{O H} \cdot \overrightarrow{A N}=(\overrightarrow{O A}+\overrightarrow{O B}+\overrightarrow{O C}) \cdot \overrightarrow{A N}$
+$$
+\begin{aligned}
+& =(\overrightarrow{O A}+\overrightarrow{O C}) \cdot \overrightarrow{A N}+\overrightarrow{O B} \cdot \overrightarrow{A N} \\
+& =\overrightarrow{O B} \cdot \overrightarrow{A N}[\text { 因为 }(\overrightarrow{O A}+\overrightarrow{O C}) \perp \overrightarrow{A N}] \\
+& =\overrightarrow{O B} \cdot(\overrightarrow{F N}-\overrightarrow{F A}) \\
+& =\overrightarrow{O B} \cdot \overrightarrow{F N}-\overrightarrow{O B} \cdot \overrightarrow{F A} \\
+& =-\overrightarrow{O B} \cdot \overrightarrow{F A} \text { (因为 } \overrightarrow{O B} \perp \overrightarrow{F N}, \text { 由 (1)) } \\
+& =\overrightarrow{B O} \cdot \overrightarrow{F A}=|\overrightarrow{B O}| \cdot|\overrightarrow{F A}| \cdot \cos \angle O B A \\
+& =R \cdot|\overrightarrow{A C}| \cdot \cos \angle B A C \cdot \sin \angle A C B \\
+& =\frac{1}{2}|\overrightarrow{A C}| \cdot|\overrightarrow{A B}| \cdot \cos \angle B A C=\frac{1}{2} \overrightarrow{A C} \cdot \overrightarrow{A B} .
+\end{aligned}
+$$
+同理, $\overrightarrow{O H} \cdot \overrightarrow{A M}=\frac{1}{2} \overrightarrow{A C} \cdot \overrightarrow{A B}$.
+则 $\overrightarrow{O H} \cdot \overrightarrow{M N}=0$. 有 $\overrightarrow{O H} \perp \overrightarrow{M N}$. 即 $O H \perp M N$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 如图(<FilePath:./figures/fig-c11p3.png>),在 $\square A B C D$ 两边 $B C 、 C D$ 向外分别作正方形 $B C N M 、 C D P Q$. 求证: $A C \perp Q N$.
+%%<SOLUTION>%%
+证明: $\overrightarrow{A C} \cdot \overrightarrow{Q N}=(\overrightarrow{A B}+\overrightarrow{B C}) \cdot(\overrightarrow{Q C}+\overrightarrow{C N})$
+$$
+=\overrightarrow{A B} \cdot \overrightarrow{Q C}+\overrightarrow{A B} \cdot \overrightarrow{C N}+\overrightarrow{B C} \cdot \overrightarrow{Q C}+\overrightarrow{B C} \cdot \overrightarrow{C N}
+$$
+$$
+\begin{aligned}
+& =\overrightarrow{A B} \cdot \overrightarrow{C N}+\overrightarrow{B C} \cdot \overrightarrow{Q C} \text { (因为 } \overrightarrow{A B} \perp \overrightarrow{Q C}, \overrightarrow{B C} \perp \overrightarrow{C N} \text { ) } \\
+& =\overrightarrow{C B} \cdot \overrightarrow{C Q}-\overrightarrow{C D} \cdot \overrightarrow{C N} \\
+& =|\overrightarrow{C B}| \cdot|\overrightarrow{C Q}| \cdot \cos \angle B C Q-|\overrightarrow{C D}| \cdot|\overrightarrow{C N}| \cdot \\
+& =\cos \angle D C N .
+\end{aligned}
+$$
+因为 $|\overrightarrow{C B}|=|\overrightarrow{C N}|,|\overrightarrow{C Q}|=|\overrightarrow{C D}|, \angle B C Q=\angle D C N$, 所以 $\overrightarrow{A C}$. $\overrightarrow{Q N}=0 \Rightarrow \overrightarrow{A C} \perp \overrightarrow{Q N}$, 即 $A C \perp Q N$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 设 $A D$ 是 $\triangle A B C$ 的中线, $l$ 是垂直于 $A D$ 的一条直线, $M$ 是 $l$ 上一点, $E$ 、 $F$ 分别为 $M B 、 M C$ 的中点, 过点 $E 、 F$ 且垂直于 $l$ 的直线分别与 $A B 、 A C$ 交于点 $P 、 Q, l^{\prime}$ 是过点 $M$ 且垂直于 $P Q$ 的直线.
+证明: $l^{\prime}$ 总过一定点.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c11a4.png>), 以 $A D$ 所在直线为 $y$ 轴、直线 $l$ 为 $x$ 轴建立直角坐标系.
+设点 $A(0, a) 、 D(0$, $-d) 、 M(m, 0) 、 B(-b,-d+c) 、 C(b,-d-$ c).
+故 $l_{A B}: y=\frac{a+d-c}{b} x+a$.
+又 $x_E=\frac{m-b}{2}$, 而 $P E \perp x$ 轴, 则
+$$
+P\left(\frac{m-b}{2}, \frac{m-b}{2} \cdot \frac{a+d-c}{b}+a\right) .
+$$
+同理, $Q\left(\frac{m+b}{2}, \frac{m+b}{2} \cdot \frac{-(a+d+c)}{b}+a\right)$.
+故直线 $d^{\prime}$ 的斜率为
+$$
+\begin{aligned}
+k & =\frac{-1}{k_{p q}} \\
+& =\frac{\frac{m+b}{2}-\frac{m-b}{2}}{\frac{m-b}{2} \cdot \frac{a+d-c}{b}+a+\frac{a+d+c}{b} \cdot \frac{m+b}{2}-a} \\
+& =\frac{b^2}{m a+m d+b c} .
+\end{aligned}
+$$
+又直线 $l^{\prime}$ 过点 $M$, 则 $l^{\prime}$ 的方程为
+$$
+y=\frac{b^2}{m a+m d+b c}(x-m), \label{eq1}
+$$
+其中, $m$ 为变量, $a 、 d 、 b 、 c$ 均为常量.
+由式 \ref{eq1} 得
+$$
+m\left[y(a+d)+b^2\right]=b(b x-c y) .
+$$
+因此, 令 $y_0=\frac{-b^2}{a+d}$. 则 $x_0=\frac{-b c}{a+d}$.
+所以, 直线 $l^{\prime}$ 恒过定点 $\left(\frac{-b c}{a+d}, \frac{-b^2}{a+d}\right)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设点 $A$ 是圆 $O$ 外一点, 过点 $A$ 作圆 $O$ 的切线, 切点分别为 $B 、 C$. 圆 $O$ 的切线 $l$ 与 $A B 、 A C$ 分别交于点 $P 、 Q$, 过点 $P$ 且平行于 $A C$ 的直线与 $B C$ 交于点 $R$. 求证: 无论 $l$ 如何变化, $Q R$ 恒过一定点.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c11a5.png>), 以 $O$ 为原点, $O A$ 所在直线为 $y$ 轴建立右手直角坐标系, 且不妨设 $\odot O$ 半径为 1 . $B\left(-x_0, y_0\right), C\left(x_0, y_0\right)\left(x_0^2+y_0^2=1\right)$.
+取 $A B$ 与 $x$ 轴交点 $S$, 则 $A\left(0, \frac{1}{y_0}\right)$, $S\left(-\frac{1}{x_0}, 0\right)$. 设直线 $P Q: x_1 x+y_1 y=1, x_1^2+\left.\frac{x_1+x_0}{x_1 y_0+y_1 x_0}\right)$. 同理, $Q\left(\frac{y_0-y_1}{x_1 y_0-y_1 x_0}, \frac{x_1-x_0}{x_1 y_0-y_1 x_0}\right)$ 则
+$$
+l_{P R}: y=-\frac{x_0}{y_0}\left(x-\frac{y_0-y_1}{x_1 y_0+y_1 x_0}\right)+\frac{x_1+x_0}{x_1 y_0+y_1 x_0} \cdots \text { (1). }
+$$
+在(1)中令 $y=y_0$, 所以
+$$
+R\left(\frac{2 x_0 y_0-x_0 y_1+x_1 y_0-x_1 y_0^3-y_1 x_0 y_0^2}{x_0\left(x_1 y_0+y_1 x_0\right)}, y_0\right) .
+$$
+下证: $Q 、 R 、 S$ 三点共线.
+(*)
+$$
+\begin{aligned}
+& (*) \Leftrightarrow K_{R S}=K_{Q S} \Leftrightarrow \frac{y_0 x_0\left(x_1 y_0+y_1 x_0\right)}{2 x_0 y_0-x_0 y_1+x_1 y_0-x_1 y_0^3-y_1 x_0 y_0^2+x_1 y_0+y_1 x_0}= \\
+& \frac{x_0 x_1-x_0^2}{x_0 y_0+x_1 y_0-2 x_0 y_1} \Leftrightarrow 2 x_0 x_1 y_0-x_0 x_1 y_1+x_1^2 y_0-x_1^2 y_0^3-x_0 x_1 y_0^2 y_1+x_1^2 y_0+ \\
+& x_0 x_1 y_1-2 x_0^2 y_0+x_0^2 y_1-x_0 x_1 y_0+x_0 x_1 y_0^3+x_0^2 y_1 y_0^2-x_0 x_1 y_0-x_0^2 y_1= \\
+& x_0 x_1 y_0^3+x_1^2 y_0^3-2 x_0 x_1 y_1 y_0^2+x_0^2 y_0^2 y_1+x_0 x_1 y_0^2 y_1-2 x_0^2 y_0 y_1^2 \Leftrightarrow 2 x_1^2 y_0-2 x_1^2 y_0^3- \\
+& 2 x_0^2 y_0=-2 x_0^2 y_0 y_1^2
+\end{aligned}
+$$
+由于 $y_0^2=1-x_0^2, y_1^2=1-x_1^2$. * 式显然成立成立.
+所以 $(*)$ 得证.
+又 $A$ 为定点, 所以 $B 、 C$ 均为定点.
+所以 $S$ 为定点.
+因此 $Q R$ 恒过定点 $\left(-\frac{1}{x_0}, 0\right)$, 得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. $A 、 B$ 为平面上的两个定点, $C$ 为平面上位于直线 $A B$ 同侧的一个动点, 以 $A C 、 B C$ 各为边,在 $\triangle A B C$ 外作正方形 $C A D l 、 C B E J$. 证明: 无论 $C$ 点取在直线 $A B$ 同侧的任何位置, $D E$ 的中点 $M$ 位置不变.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c11a6.png>), 设图中各字母表示相应点的复数, 由题设, 应有
+$$
+\begin{aligned}
+& D=A+(C-A) \mathrm{i}, \\
+& E=B+(B-C) \mathrm{i},
+\end{aligned}
+$$
+从而 $M=\frac{(D+E)}{2}=\frac{A(1-\mathrm{i})+B(1+\mathrm{i})}{2}$ 与 $C$ 无关.
+(事实上, $\triangle A M B$ 为等腰直角三角形).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 求证:任意凸四边形各边中点连线的中点必重合.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c11a7.png>),  $a b c d$ 是任意四边形, $h, k, f, g$ 是各边的中点.
+因为 $h=\frac{a+b}{2}, k=\frac{b+c}{2}, f=\frac{c+d}{2}, g=\frac{d+a}{2}$
+故 $\overrightarrow{h f}$ 的中点为 $O_1=\frac{1}{2}(h+f)=\frac{1}{4}(a+b+c+d)\overrightarrow{k g}$ 的中点为 $O_2=\frac{1}{2}(k+g)=\frac{1}{4}(a+b+c+d)$
+由此知 $O_1=O_2$. 这就是要证得结果.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 在凸四边形 $A B C D$ 的外部分别作正三角形 $A B Q$, 正三角形 $B C R$, 正三角形 $C D S$, 正三角形 $D A P$, 记四边形 $A B C D$ 的对角线之和为 $x$, 四边形 $P Q R S$ 的对边中点连线之和为 $y$, 求 $\frac{y}{x}$ 的最大值.
+%%<SOLUTION>%%
+解: : 如图(<FilePath:./figures/fig-c11a8.png>), 若四边形 $A B C D$ 是正方形时, 可得 $\frac{y}{x}=\frac{1+\sqrt{3}}{2}$.
+$$
+\begin{aligned}
+& D S_1=S_1 N=D N=E M, \\
+& D P_1=P_1 M=M D=E N,
+\end{aligned}
+$$
+又
+$$
+\begin{aligned}
+\angle P_1 D S_1 & =360^{\circ}-60^{\circ}-60^{\circ}-\angle P D S \\
+& =240^{\circ}-\left(180^{\circ}-\angle E N D\right) \\
+& =60^{\circ}+\angle E N D=\angle E N S_1=\angle E M P_1,
+\end{aligned}
+$$
+所以
+$$
+\triangle D P_1 S_1 \cong \triangle M P_1 E \cong \triangle N E S_1,
+$$
+从而, $\triangle E P_1 S_1$ 是正三角形.
+同理可得, $\triangle G Q_1 R_1$ 也是正三角形.
+设 $U 、 V$ 分别是 $P_1 S_1 、 Q_1 R_1$ 的中点, 于是有
+$$
+\begin{aligned}
+E G & \leqslant E U+U V+V G=\frac{\sqrt{3}}{2} P_1 S_1+P_1 Q_1+\frac{\sqrt{3}}{2} Q_1 R_1 \\
+& =P_1 Q_1+\sqrt{3} P_1 S_1=\frac{1}{2} B D+\frac{\sqrt{3}}{2} A C
+\end{aligned}
+$$
+同理可得
+$$
+F H \leqslant \frac{1}{2} A C+\frac{\sqrt{3}}{2} B D,
+$$
+把上面两式相加, 得即
+$$
+\begin{aligned}
+& y \leqslant \frac{1+\sqrt{3}}{2} x, \\
+& \frac{y}{x} \leqslant \frac{1+\sqrt{3}}{2} .
+\end{aligned}
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 凸四边形 $A B C D$ 中, 点 $M, N$ 在边 $A B$ 上, 使 $A M=M N=N B$, 点 $P 、 Q$ 在边 $C D$ 上, 使 $C P=P Q=Q D$. 求证: $S_{\text {四边形 } A M C P}=S_{\text {四边形 } M N P Q}== \frac{1}{3} S_{\text {四边形 } A B C D}$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c11a9.png>), 连结 $A C 、 M P$. 因 $S_{\triangle A C P}= \frac{1}{3} S_{\triangle A C D}, S_{\triangle A C M}=\frac{1}{3} S_{\triangle A C B}$, 则 $S_{\triangle A C P}+S_{\triangle A C M}= \frac{1}{3}\left(S_{\triangle A C D}+S_{\triangle A C B}\right)$, 即 $S_{\text {四边形 } A M C P}=\frac{1}{3} S_{\text {四边形 } A B C D \text {. 又 }} S_{\triangle M P Q}=S_{\triangle M P C}, S_{\triangle M P N}=S_{\triangle M P A}$, 则 $S_{\triangle M P Q}+S_{\triangle M P N}= S_{\triangle M P C}+S_{\triangle M P A}$, 即 $S_{\text {四边形 } M N P Q}=S_{\text {四边形 } A M C P}$. 综上,
+$S_{\text {四边形 } A M C P}=S_{\text {四边形 } M N P Q}=\frac{1}{3} \cdot S_{\text {四边形 } A B C D}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 凸六边形 $P_1 P_2 P_3 P_4 P_5 P_6$ 的各边之长相等, 每个顶点关于两个相邻顶点的连线的对称点分别为 $P_1^{\prime} 、 P_2^{\prime} 、 P_3^{\prime} 、 P_4^{\prime} 、 P_5^{\prime} 、 P_6^{\prime}$. 证明: $\triangle P_1^{\prime} P_3^{\prime} P_5^{\prime} \cong \triangle P_2^{\prime} P_4^{\prime} P_6^{\prime}$.
+%%<SOLUTION>%%
+证明: 将平面上的点视为复数, 由于四边形 $P_1 P_2 P_1^{\prime} P_6$ 为菱形, 则 $P_1^{\prime}=P_2+P_6-P_1$. 同理, $P_3^{\prime}=P_4+P_2-P_3, P_5^{\prime}=P_6+P_4-P_5$. 故 $P_1^{\prime} P_3^{\prime}= P_3^{\prime}-P_1^{\prime}=\left(P_1+P_4\right)-\left(P_3+P_6\right), P_3^{\prime} P_5^{\prime}=\left(P_3+P_6\right)-\left(P_2+P_5\right), P_5^{\prime} P_1^{\prime}= \left(P_2+P_5\right)-\left(P_1+P_4\right)$. 因此, $\triangle P_1^{\prime} P_3^{\prime} P_5^{\prime}$ 全等于 $P_1+P_4 、 P_2+P_5 、 P_3+P_6$ 三点所成的三角形.
+同样, 由 $P_2^{\prime}=P_3+P_1-P_2, P_4^{\prime}=P_5+P_3-P_4, P_6^{\prime}= P_1+P_5-P_6$, 得到 $\triangle P_2^{\prime} P_4^{\prime} P_6^{\prime}$ 也全等于 $P_1+P_4 、 P_2+P_5 、 P_3+P_6$ 三点所成的三角形.
+因此, $\triangle P_1^{\prime} P_3^{\prime} P_5^{\prime} \cong \triangle P_2^{\prime} P_4^{\prime} P_6^{\prime}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 已知梯形 $A B C D$,边 $A B / / C D$,对角线 $A C 、 B D$ 交于点 $O$, 在 $A D$ 上取一点 $P$, 使 $\angle B P A=\angle C P D$, 在 $B C$ 上取一点 $Q$, 使 $\angle A Q B=\angle D Q C$. 求证: $O$ 到 $P 、 Q$ 的距离相等.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c11a11.png>), 连结 $P N$, 过 $O$ 作 $M N / / A B$, 交 $A D$ 于 $M, B C$ 于 $N$, 则 $\frac{B P}{A B}=\frac{\sin \angle B A P}{\sin \angle B P A}=\frac{\sin \angle A D C}{\sin \angle B P A}= \frac{\sin \angle P D C}{\sin \angle B P A}=\frac{\sin \angle P D C}{\sin \angle D P C}=\frac{P C}{D C}$.
+于是 $\frac{B P}{C P}=\frac{A B}{D C}=\frac{B O}{O D}=\frac{B N}{N C}$. 故 $P N$ 平分 $\angle B P C$, 结合 $\angle B P A=\angle C P D$ 知 $N P \perp A D$, 又 $O M=A B \cdot \frac{D O}{D B}=A B \cdot \frac{C O}{C A}=O N$, 所以 $O P$ 为 Rt $\triangle M N P$ 斜边 $M N$ 的中线, 故 $O P=\frac{1}{2} \cdot M N$, 同理 $O Q=\frac{1}{2} M N$. 故 $O P=O Q$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 已知锐角 $\triangle A B C$, 其内切圆与边 $A B 、 A C$ 分别切于点 $D 、 E, X 、 Y$ 分别是 $\angle A C B 、 \angle A B C$ 的平分线与 $D E$ 的交点, $Z$ 是边 $B C$ 的中点.
+求证: 当且仅当 $\angle A=60^{\circ}$ 时, $\triangle X Y Z$ 是等边三角形.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c11a12.png>), 设 $I$ 为 $\triangle A B C$ 的内心.
+首先证明: $D 、 B 、 I 、 X$ 和 $E 、 I 、 C 、 Y$ 分别四点共圆.
+注意到 $\angle X I B=180^{\circ}-\angle B I C=\frac{1}{2} \angle B+\frac{1}{2} \angle C=90^{\circ}- \frac{1}{2} \angle A$. 由 $\triangle A D E$ 为等腰三角形可得 $\angle A D E=90^{\circ}- \frac{1}{2} \angle A$. 所以, $\angle X I B=\angle A D E$. 因此, $D 、 B 、 I 、 X$ 四点共圆.
+同理, $E 、 I 、 C 、 Y$ 四点共圆.
+由此可知 $X Z=Y Z$, 且它们分别是 Rt $\triangle X B C$ 和 Rt $\triangle Y B C$ 的中线.
+所以, $\triangle X Y Z$ 是等边三角形的充要条件是 $\angle Y X Z=60^{\circ}$. 易知 $\angle Y X Z=60^{\circ} \Leftrightarrow \angle Y X Z=\angle Y X C+\angle C X Z= \angle A B Y+\frac{1}{2} \angle C=\frac{1}{2}(\angle B+\angle C)=60^{\circ} \Leftrightarrow \angle A=60^{\circ}$. 因此, 所证命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 在 $\triangle A B C$ 中, $\angle B 、 \angle C$ 的角平分线分别为 $B E 、 C D$, 其中点 $D 、 E$ 分别在边 $A B 、 A C$ 上, 设 $D E$ 的中点 $P$ 在边 $B C 、 A B 、 A C$ 上的投影分别为 $Q 、 M 、 N$. 证明: $P Q=P M+P N$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c11a13.png>), 设 $B C=a, C A=b, A B=c$, 连结 $P A$ 、 $P B 、 P C$. 由 $S_{\triangle P A C}=\frac{1}{2} S_{\triangle A C D}=\frac{1}{2} \cdot \frac{b}{a+b} S_{\triangle A B C}$, 知 $P N=\frac{2 S_{\triangle P A C}}{b}=\frac{S_{\triangle A B C}}{a+b}$. 由 $S_{\triangle P A B}=\frac{1}{2} S_{\triangle A B E}=\frac{1}{2}$. $\frac{c}{a+c} S_{\triangle A B C}$, 知 $P M=\frac{2 S_{\triangle P A B}}{c}=\frac{S_{\triangle A B C}}{a+c}$. 又 $S_{\triangle P B C}= \frac{1}{2}\left(S_{\triangle B C D}+S_{\triangle B C E}\right)=\frac{1}{2}\left(\frac{a}{a+b}+\frac{a}{a+c}\right) S_{\triangle A B C}=\frac{a}{2}\left(\frac{1}{a+b}+\frac{1}{a+c}\right) S_{\triangle A B C}$, 则 $P Q=\frac{2 S_{\triangle P B C}}{a}=\left(\frac{1}{a+b}+\frac{1}{a+c}\right) S_{\triangle A B C}=P M+ P N$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. 已知 $P$ 为正 $\triangle A B C$ 内一点, $P$ 在边 $A B 、 B C 、 C A$ 上的投影分别为点 $A^{\prime}$ 、 $B^{\prime} 、 C^{\prime}$. 记 $\triangle A P C^{\prime} 、 \triangle B P A^{\prime} 、 \triangle C P B^{\prime} 、 \triangle A P A^{\prime} 、 \triangle B P B^{\prime} 、 \triangle C P C^{\prime}$ 的内切圆半径分别为 $r_1 、 r_2 、 r_3 、 r_4 、 r_5 、 r_6$. 证明: $r_1+r_2+r_3=r_4+r_5+r_6$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c11a14.png>), 连结 $A P 、 B P 、 C P, \triangle A B P$ 中, $A P^2- A A^{\prime 2}=B P^2-B A^{\prime 2}\left(=P A^{\prime 2}\right)$, 同理 $B P^2-B B^{\prime 2}= C P^2-C B^{\prime 2}, C P^2-C C^{\prime 2}=A P^2-A C^{\prime 2}$, 以上三式相加, 得 $A A^{\prime 2}+B B^{\prime 2}+C C^{\prime 2}=B A^{\prime 2}+C B^{\prime 2}+A C^{\prime 2}$, 即 $\left(A A^{\prime 2}-B A^{\prime 2}\right)+\left(B B^{\prime 2}-C B^{\prime 2}\right)+\left(C C^{\prime 2}-A C^{\prime 2}\right)= 0,\left(A A^{\prime}+B A^{\prime}\right)\left(A A^{\prime}-B A^{\prime}\right)+\left(B B^{\prime}+C B^{\prime}\right)\left(B B^{\prime}-\right.\left.C B^{\prime}\right)+\left(C C^{\prime}+A C^{\prime}\right)\left(C C^{\prime}-A C^{\prime}\right)=0$. 注意到 $A A^{\prime}+B A^{\prime}=B B^{\prime}+C B^{\prime}= C C^{\prime}+A C^{\prime}$, 所以 $A A^{\prime}-B A^{\prime}+B B^{\prime}-C B^{\prime}+C C^{\prime}-A C^{\prime}=0$.
+即 $A A^{\prime}+B B^{\prime}+C C^{\prime}=B A^{\prime}+C B^{\prime}+A C^{\prime}$ . *
+显然, $r_1=-\frac{A C^{\prime}+C^{\prime} P-A P}{2}, \quad r_2=\frac{B A^{\prime}+A^{\prime} P-B P}{2}, \quad r_3=$
+$$
+\begin{aligned}
+& \frac{C B^{\prime}+P B^{\prime}-P C}{2}, r_4=\frac{A A^{\prime}+A^{\prime} P-A P}{2}, r_5=\frac{B B^{\prime}+B^{\prime} P-P B}{2}, r_6= \\
+& \frac{O C^{\prime}+C^{\prime} P-C P}{2} .
+\end{aligned}
+$$
+由 $*$ 即有: $r_1+r_2+r_3=r_4+r_5+r_6$.
+%%PROBLEM_END%%
+
+

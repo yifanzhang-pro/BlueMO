@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例10. 设非负实数 $a_1, a_2, \\cdots, a_n$ 与 $b_1, b_2, \\cdots, b_n$ 同时满足以下条件:\n(1) $\\sum_{i=1}^n\\left(a_i+b_i\\right)=1$;\n(2) $\\sum_{i=1}^n i\\left(a_i-b_i\\right)=0$;\n(3) $\\sum_{i=1}^n i^2\\left(a_i+b_i\\right)=10$.\n求证: 对任意 $1 \\leqslant k \\leqslant n$, 都有 $\\max \\left\\{a_k, b_k\\right\\} \\leqslant \\frac{10}{10+k^2}$. (2010 年中国西部数学奥林匹克)",
+    "solution": "证明:对任意 $1 \\leqslant k \\leqslant n$, 有\n$$\n\\begin{aligned}\n\\left(k a_k\\right)^2 & \\leqslant\\left(\\sum_{i=1}^n i a_i\\right)^2=\\left(\\sum_{i=1}^n i b_i\\right)^2 \\leqslant\\left(\\sum_{i=1}^n i^2 b_i\\right) \\cdot\\left(\\sum_{i=1}^n b_i\\right) \\\\\n& =\\left(10-\\sum_{i=1}^n i^2 a_i\\right) \\cdot\\left(1-\\sum_{i=1}^n a_i\\right) \\\\\n& \\leqslant\\left(10-k^2 a_k\\right) \\cdot\\left(1-a_k\\right)=10-\\left(10+k^2\\right) a_k+k^2 a_k^2,\n\\end{aligned}\n$$\n从而 $a_k \\leqslant \\frac{10}{10+k^2}$.\n同理有 $b_k \\leqslant \\frac{10}{10+k^2}$, 所以 $\\max \\left\\{a_k, b_k\\right\\} \\leqslant \\frac{10}{10+k^2}$.",
+    "remark": "",
+    "figures": []
+}

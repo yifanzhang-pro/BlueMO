@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题4. 设直线 $l$ 过 $\\triangle A B C$ 的重心 $G$, 与边 $A B 、 A C$ 分别相交于点 $B_1, C_1, \\frac{A B_1}{A B}=\\lambda, \\frac{A C_1}{A C}=\\mu$. 求证: $\\frac{1}{\\lambda}+\\frac{1}{\\mu}=3$.",
+    "solution": "如图(<FilePath:./images/volume14/figures/fig-c8a4.png>), 作边 $B C$ 上的中线 $A D$. 设 $\\triangle A B C$ 的面积为 1, $\\triangle A B_1 C_1$ 的面积为 $S$. 我们用两种方法计算 $S$.\n一方面, $S=\\frac{S}{1}=\\frac{A B_1 \\cdot A C_1}{A B \\cdot A C}=\\lambda \\mu$.\n另一方面, $S=S_{\\triangle A B_1 G}+S_{\\triangle A G C_1}$.\n与(1)类似地, $S_{\\triangle A B_1 G}=\\frac{\\lambda}{3}, S_{\\triangle A G C_1}=\\frac{\\mu}{3}$,\n所以\n$$\nS=\\frac{\\lambda+\\mu}{3} .\n$$\n综合两方面可得\n$$\n\\lambda \\mu=\\frac{\\lambda+\\mu}{3},\n$$\n两边同乘 $\\frac{3}{\\lambda \\mu}$, 即证.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c8a4.png"
+    ]
+}

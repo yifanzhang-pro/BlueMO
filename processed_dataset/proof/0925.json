@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题16 关于 $x$ 的一元二次方程 $2 x^2-t x-2=0$ 的两个实根为 $\\alpha 、 \\beta(\\alpha<\\beta)$.\n(1) 若 $x_1 、 x_2$ 为区间 $[\\alpha, \\beta]$ 上的两个不同的点,求证:\n$$\n4 x_1 x_2-t\\left(x_1+x_2\\right)-4<0 ;\n$$\n(2) 设 $f(x)=\\frac{4 x-t}{x^2+1}, f(x)$ 在区间 $[\\alpha, \\beta]$ 上的最大值和最小值分别记为 $f_{\\max }$ 和 $f_{\\min }, g(t)=f_{\\text {max }}-f_{\\text {min }}$, 求 $g(t)$ 的最小值.",
+    "solution": "(1) 不妨设 $\\alpha \\leqslant x_1<x_2 \\leqslant \\beta$. 由题设知, $\\alpha+\\beta=\\frac{t}{2}, \\alpha \\beta=-1$. 于是由 $\\left(x_1-\\alpha\\right)\\left(x_2-\\beta\\right) \\leqslant 0$, 得 $x_1 x_2-\\left(\\alpha x_2+\\beta x_1\\right)+\\alpha \\beta \\leqslant 0,4 x_1 x_2-4\\left(\\alpha x_2+\\beta x_1\\right)- 4 \\leqslant 0$. 所以 $4 x_1 x_2-t\\left(x_1+x_2\\right)-4 \\leqslant 4\\left(\\alpha x_2+\\beta x_1\\right)-t\\left(x_1+x_2\\right)=4\\left(\\alpha x_2+\\beta\\right. \\left.x_1\\right)-2(\\alpha+\\beta)\\left(x_1+x_2\\right)=2\\left(\\alpha x_2+\\beta x_1\\right)-2\\left(\\alpha x_1+\\beta x_2\\right)=2\\left(x_2-x_1\\right)(\\alpha-\\beta)<0.$  \n(2) $\\alpha=\\frac{t-\\sqrt{t^2+16}}{4}, \\beta=\\frac{t+\\sqrt{t^2+16}}{4}$, 所以 $f(\\alpha)=\\frac{-8}{\\sqrt{t^2+16}-t}$,$f(\\beta)=\\frac{8}{\\sqrt{t^2+16}+t}$. 设 $x_1, x_2 \\in[\\alpha, \\beta], x_1<x_2$, 则 $f\\left(x_2\\right)-f\\left(x_1\\right)= -\\frac{4 x_1 x_2-t\\left(x_1+x_2\\right)-4}{\\left(x_1^2+1\\right)\\left(x_2^2+1\\right)}\\left(x_2-x_1\\right)>0$, 所以, $f(x)$ 在 $[\\alpha, \\beta]$ 上是增函数, 故 $g(t)=f(\\beta)-f(\\alpha)=\\frac{8}{\\sqrt{t^2+16}+t}+\\frac{8}{\\sqrt{t^2+16}-t}=\\sqrt{t^2+16} \\geqslant 4$, 当 $t=$ 0 时等号成立.\n故 $g(t)$ 的最小值为 4 .",
+    "remark": "",
+    "figures": []
+}

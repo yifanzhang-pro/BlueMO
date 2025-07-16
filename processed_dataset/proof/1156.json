@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-4.tex",
+    "problem_type": "proof",
+    "problem": "例3. 设空间中有 $2 n(n \\geqslant 2)$ 个点,其中任何 4 点都不共面.\n在它们之间任意连接 $N$ 条线段,这些线段都至少构成一个三角形.\n求 $N$ 的最小值.",
+    "solution": "解:将 $2 n$ 个已知点均分为 $A$ 和 $B$ 两组:\n$$\nA=\\left\\{A_1, A_2, \\cdots, A_n\\right\\}, B=\\left\\{B_1, B_2, \\cdots, B_n\\right\\} .\n$$\n现将每对点 $A_i$ 和 $B_i$ 之间都连接一条线段 $A_i B_i$, 而同组的任意两点之间不连线, 则共有 $n^2$ 条线段.\n这时, $2 n$ 个已知点中的任何 3 点中至少有两点属于同一组, 两者之间没有连线.\n因而这 $n^2$ 条线段不能构成任何三角形.\n这表明 $N$ 的最小值必大于 $n^2$. 由于 $2 n$ 个点之间连有 $n^2+1$ 条线段, 平均每点引出 $n$ 条线段还多,故可以猜想有一条线段的两个端点引出的线段之和不小于 $2 n+1$.\n下面证明 $N$ 的最小值为 $2 n+1$.\n设从 $A_1, A_2, \\cdots, A_{2 n}$ 引出的线段条数分别为 $a_1, a_2, \\cdots, a_{2 n}$, 且对于任一线段 $A_i A_j$ 都有 $a_i+a_j \\leqslant 2 n$. 于是, 所有线段的两端点所引出的线段条数之和不超过 $2 n\\left(n^2+1\\right)$. 但在此计数中, $A_i$ 点恰被计算了 $a_i$ 次,故有\n$$\n\\begin{gathered}\n\\sum_{i=1}^{2 n} a_i^2 \\leqslant 2 n\\left(n^2+1\\right) . \\\\\n\\sum_{i=1}^{2 n} a_i=2\\left(n^2+1\\right),\n\\end{gathered}\n$$\n$$\n\\text { 另一方面,显然有 } \\quad \\sum_{i=1}^{2 n} a_i=2\\left(n^2+1\\right) \\text {, }\n$$\n故由柯西不等式,得\n$$\n\\left(\\sum_{i=1}^{2 n} a_i\\right)^2 \\leqslant 2 n\\left(\\sum_{i=1}^{2 n} a_i^2\\right)\n$$\n即\n$$\n\\sum_{i=1}^{2 n} a_i^2 \\geqslant \\frac{1}{2 n} \\cdot 4\\left(n^2+1\\right)^2>2 n\\left(n^2+1\\right) .\n$$\n于是矛盾, 从而证明了必有一条线段, 从它的两端点引出的线段数之和不小于 $2 n+1$. 不妨设 $A_1 A_2$ 是一条这样的线段, 从而又有 $A_k(k \\geqslant 3)$, 使线段 $A_1 A_k, A_2 A_k$ 都存在, 于是 $\\triangle A_1 A_2 A_k$ 即为所求.",
+    "remark": "",
+    "figures": []
+}

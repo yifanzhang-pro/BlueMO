@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题24. 在锐角 $\\triangle A B C$ 中,求证:\n$$\n\\sec A+\\sec B+\\sec C \\geqslant \\csc \\frac{A}{2}+\\csc \\frac{B}{2}+\\csc \\frac{C}{2} .\n$$",
+    "solution": "当 $a 、 b \\in \\mathbf{R}^{+}$时, 有 $(a+b)\\left(\\frac{1}{a}+\\frac{1}{b}\\right) \\geqslant 4$, 又 $A 、 B 、 C$ 为锐角 $\\triangle A B C$ 的内角, 所以 $\\sec A+\\sec B=\\frac{1}{\\cos A}+\\frac{1}{\\cos B} \\geqslant \\frac{4}{\\cos A+\\cos B}= \\frac{4}{2 \\cos \\frac{A+B}{2} \\cos \\frac{A-B}{2}} \\geqslant \\frac{2}{\\cos \\frac{A+B}{2}}=\\frac{2}{\\sin \\frac{C}{2}}=2 \\csc \\frac{C}{2}$, 同理 $\\sec B+\\sec C \\geqslant 2 \\csc \\frac{A}{2}, \\sec C+\\sec A \\geqslant 2 \\csc \\frac{B}{2}$, 三式相加, 得证.",
+    "remark": "",
+    "figures": []
+}

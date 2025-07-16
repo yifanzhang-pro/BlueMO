@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. $n$ 为自然数, $f(n)$ 为 $n^2+1$ (十进制) 的数字之和, 求 $f^{(100)}(1990)$ 的值.",
+    "solution": "$11$.",
+    "remark": "",
+    "figures": []
+}

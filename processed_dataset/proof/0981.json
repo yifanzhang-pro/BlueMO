@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例2 证明 $\\arctan -\\frac{1}{\\sqrt{2}}+\\arcsin \\frac{1}{\\sqrt{2}}=\\arctan \\frac{\\sqrt{2}+1}{\\sqrt{2}-1}$.",
+    "solution": "分析:要证两角相等, 常常证明这两角的某个三角函数相等, 此时一定要保证这两角在这个三角函数的同一个一一对应区间内.\n证明因为 $\\tan \\left(\\arctan \\frac{1}{\\sqrt{2}}+\\arcsin \\frac{1}{\\sqrt{2}}\\right)$\n$$\n\\begin{aligned}\n= & \\frac{\\tan \\left(\\arctan \\frac{1}{\\sqrt{2}}\\right)+\\tan \\left(\\arcsin \\frac{1}{\\sqrt{2}}\\right)}{1-\\tan \\left(\\arctan \\frac{1}{\\sqrt{2}}\\right) \\tan \\left(\\arcsin \\frac{1}{\\sqrt{2}}\\right)}=\\frac{\\frac{1}{\\sqrt{2}}+1}{1-\\frac{1}{\\sqrt{2}} \\times 1} \\\\\n= & \\frac{\\sqrt{2}+1}{\\sqrt{2}-1}, \\\\\n& \\tan \\left(\\arctan \\frac{\\sqrt{2}+1}{\\sqrt{2}-1}\\right)=\\frac{\\sqrt{2}+1}{\\sqrt{2}-1},\n\\end{aligned}\n$$\n因为\n$$\n0<\\arctan \\frac{1}{\\sqrt{2}}<\\frac{\\pi}{4}, \\arcsin \\frac{1}{\\sqrt{2}}=\\frac{\\pi}{4} \\text {, }\n$$\n所以\n$$\n0<\\arctan \\frac{1}{\\sqrt{2}}+\\arcsin \\frac{1}{\\sqrt{2}}<\\frac{\\pi}{2},\n$$\n又\n$$\n0<\\arctan \\frac{\\sqrt{2}+1}{\\sqrt{2}-1}<\\frac{\\pi}{2}\n$$\n而在 $\\left(0, \\frac{\\pi}{2}\\right)$ 内正切相等的角唯一, 故\n$$\n\\arctan \\frac{1}{\\sqrt{2}}+\\arcsin \\frac{1}{\\sqrt{2}}=\\arctan \\frac{\\sqrt{2}+1}{\\sqrt{2}-1} .\n$$",
+    "remark": "",
+    "figures": []
+}

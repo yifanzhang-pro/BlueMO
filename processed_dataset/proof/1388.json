@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise1.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 已知正整数 $n \\geqslant 3,[-1,1]$ 中的实数 $x_1, x_2, \\cdots, x_n$ 满足: $\\sum_{k=1}^n x_k^5=0$. 求证: $\\sum_{k=1}^n x_k \\leqslant \\frac{8}{15} n$.",
+    "solution": "由于 $x_k \\in[-1,1]$, 则 $0 \\leqslant\\left(1+x_k\\right)\\left(B x_k-1\\right)^4$, 这里 $B$ 是一个待定实数, 展开, 得: $B^4 x_k^5+\\left(B^4-4 B^3\\right) x_k^4+B^2(6-4 B) x_k^3+B(4 B-6) x_k^2+(1-$ 4B) $x_k+1 \\geqslant 0$.\n令 $B=\\frac{3}{2}$, 从上式得 $\\frac{81}{16} x_k^5-\\frac{135}{16} x_k^4+\\frac{15}{2} x_k^2-5 x_k+1 \\geqslant 0$. 对 $k$ 从 1 到 $n$ 求和, 即有\n$$\n\\begin{aligned}\n5 \\sum_{k=1}^n x_k & \\leqslant n-\\frac{135}{16} \\sum_{k=1}^n x_k^4+\\frac{15}{2} \\sum_{k=1}^n x_k^2 \\\\\n& =n+\\frac{15}{2}\\left(\\sum_{k=1}^n x_k^2-\\frac{9}{8} \\sum_{k=1}^n x_k^4\\right) \\\\\n& \\leqslant n+\\frac{15}{2} \\cdot \\frac{2}{9} n=\\frac{8}{3} n,\n\\end{aligned}\n$$\n故 $\\sum_{k=1}^n x_k \\leqslant \\frac{8}{15} n$.",
+    "remark": "",
+    "figures": []
+}

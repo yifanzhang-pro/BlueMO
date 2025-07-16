@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter2-2.tex",
+    "problem_type": "proof",
+    "problem": "例7. (1) 如果 $a, b, c, d$ 是实数,求证:\n$$\na^6+b^6+c^6+d^6-6 a b c d \\geqslant-2,\n$$\n并指出等号何时成立;\n(2) 对于哪些正整数 $k$, 不等式\n$$\na^k+b^k+c^k+d^k-k a b c d \\geqslant M_k\n$$\n对所有实数 $a, b, c, d$ 成立? 求 $M_k$ 的最大可能值,并指出等号何时成立.",
+    "solution": "证明:(1) 给定不等式变形为\n$$\na^6+b^6+c^6+d^6+1+1 \\geqslant 6 a b c d .\n$$\n根据算术一几何平均值不等式, 得\n$$\n\\begin{aligned}\n& \\frac{a^6+b^6+c^6+d^6+1^6+1^6}{6} \\\\\n\\geqslant & \\sqrt[6]{|a|^6 \\cdot|b|^6 \\cdot|c|^6 \\cdot|d|^6 \\cdot 1^6 \\cdot 1^6} \\\\\n= & |a b c d| \\geqslant a b c d .\n\\end{aligned}\n$$\n因为算术一几何平均值不等式当\n$$\n|a|=|b|=|c|=|d|=1\n$$\n时等号成立.\n而最后的不等式, 当偶数个变量为负时等号成立.\n因此, 等号成立的情形是\n$$\n\\begin{aligned}\n(a, b, c, d)= & (1,1,1,1),(1,1,-1,-1),(1,-1,1,-1), \\\\\n& (-1,1,1,-1),(1,-1,-1,1),(-1,1,-1,1), \\\\\n& (-1,-1,1,1),(-1,-1,-1,-1)\n\\end{aligned}\n$$\n之一;\n(2)注意到,当 $k$ 是奇数时, 因为绝对值足够大的负值 $a, b, c, d$ 的选取得出了绝对值足够大的负值 $a^k+b^k+c^k+d^k-k a b c d$. 因此 $M_k$ 这样的数不存在.\n当 $k=2$ 时, 取 $a=b=c=d=r$, 得到 $a^2+b^2+c^2+d^2-2 a b c d= 4 r^2-2 r^4$.\n对足够大的正数 $r$ 的选取也得出绝对值任意大的负值.\n因此, $M_k$ 这样的数不存在.\n当 $k$ 是偶数,且 $k \\geqslant 4$ 时,取 $a=b=c=d=1$, 得 $a^k+b^k+c^k+d^k- k a b c d=4-k$.\n同(1)得\n$$\na^k+b^k+c^k+d^k-k a b c d \\geqslant 4-k,\n$$\n即 $\\frac{a^k+b^k+c^k+d^k+(k-4) \\cdot 1^k}{k} \\geqslant a b c d$.\n等号成立的条件与 (1) 相同.\n故此时 $M_k$ 的最大值为 $4-k$.",
+    "remark": "",
+    "figures": []
+}

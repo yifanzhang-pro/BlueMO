@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 平面直角坐标系内, 证明不存在整点正 $n(n \\geqslant 7)$ 边形.",
+    "solution": "假设存在, 由于整点多边形的面积一定是正整数或正整数的一半, 故设其中面积最小的整点正 $n$ 边形之一为 $A_1 A_2 \\cdots A_n$, 其边长为 $a$, 外接圆半径为 $R$.\n因为当 $n \\geqslant 7$ 时, $\\frac{2 \\pi}{n}<\\frac{\\pi}{3}$, 故 $a<R$.\n在坐标平面内作 $\\overrightarrow{A_i A_{i+1}}$ 的位置向量 $\\overrightarrow{O B_i}(i=1,2, \\cdots, n)$, 则 $B_1$, $B_2, \\cdots, B_n$ 也是整点, 且 $\\overrightarrow{O B_i}, \\overrightarrow{O B_{i+1}}$ 的夹角相等(约定 $A_{n+1}=A_l, B_{n+1}= \\left.B_1\\right)$, 故 $B_1 B_2 \\cdots B_n$ 也为整点正 $n$ 边形, 它的外接圆半径为 $a$, 小于 $A_1 A_2 \\cdots A_n$ 的外接圆半径 $R$, 故 $B_1 B_2 \\cdots B_n$ 是面积比 $A_1 A_2 \\cdots A_n$ 更小的整点正 $n$ 边形, 矛盾.\n所以不存在整点正 $n(n \\geqslant 7)$ 边形.",
+    "remark": "注:本题运用无穷递降思想求解, 即在假设存在的前提下, 构造一个比原先更小的整点正 $n$ 边形,但整点多边形面积不能无限小, 从而导出矛盾.\n最后用极端原理进行表达.",
+    "figures": []
+}

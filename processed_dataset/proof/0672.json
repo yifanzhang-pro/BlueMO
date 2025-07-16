@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter19.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设 $a_1, a_2, \\cdots, a_9$ 是非零实数.\n证明: 行列式\n$$\n\\left|\\begin{array}{lll}\na_1 & a_2 & a_3 \\\\\na_4 & a_5 & a_6 \\\\\na_7 & a_8 & a_9\n\\end{array}\\right|=a_1 a_5 a_9+a_2 a_6 a_7+a_3 a_4 a_8-a_1 a_6 a_8-a_2 a_4 a_9-a_3 a_5 a_7\n$$\n这六项中, 至少有一项是负数,且至少有一项是正数.",
+    "solution": "证明:六项 $a_1 a_5 a_9, a_2 a_6 a_7, a_3 a_4 a_8,-a_1 a_6 a_8,-a_2 a_4 a_9,-a_3 a_5 a_7$ 的乘积为\n$$\n-\\left(a_1 a_2 \\cdots a_9\\right)^2<0 .\n$$\n所以其中必有奇数个负项.\n从而结论成立.",
+    "remark": "注:在例 1 中, 关键的一点就是: 无论 $a_1, a_2, \\cdots, a_9$ 中有多少个正数,多少个负数,所给的六项的乘积总是负数.\n这就是一个不变量.",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/exercise3.tex",
+    "problem_type": "proof",
+    "problem": "问题9. 设实数 $a, b, c>0$, 且满足 $a+b+c=3$. 证明:\n$$\n\\frac{a^2+3 b^2}{a b^2(4-a b)}+\\frac{b^2+3 c^2}{b c^2(4-b c)}+\\frac{c^2+3 a^2}{c a^2(4-c a)} \\geqslant 4 .\n$$",
+    "solution": "记 $A=\\frac{a^2}{a b^2(4-a b)}+\\frac{b^2}{b c^2(4-b c)}+\\frac{c^2}{c a^2(4-c a)}, B=\\frac{b^2}{a b^2(4-a b)} +\\frac{c^2}{b c^2(4-b c)}+\\frac{a^2}{c a^2(4-c a)}$. 欲证明原不等式, 只需证明 $A \\geqslant 1, B \\geqslant 1$. 由柯西一施瓦兹不等式得 $\\left(\\frac{4-a b}{a}+\\frac{4-b c}{b}+\\frac{4-a c}{c}\\right) A \\geqslant\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\right)^2$. 设 $k=\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}$, 则 $A \\geqslant \\frac{k^2}{4 k-3}$. 由 $(a+b+c)\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\right) \\geqslant 3^2 \\Rightarrow k= \\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c} \\geqslant 3 \\Rightarrow(k-3)(k-1) \\geqslant 0 \\Rightarrow k^2-4 k+3 \\geqslant 0 \\Rightarrow A=\\frac{k^2}{4 k-3} \\geqslant 1$. 又 $B=\\frac{1}{a(4-a b)}+\\frac{1}{b(4-b c)}+\\frac{1}{c(4-c a)}$, 则 $\\left(\\frac{4-a b}{a}+\\frac{4-b c}{b}+\\frac{4-c a}{c}\\right) B \\geqslant\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\right)^2$. 故 $B \\geqslant \\frac{k^2}{4 k-3} \\geqslant 1$. 因此, $A+3 B \\geqslant 4$.",
+    "remark": "",
+    "figures": []
+}

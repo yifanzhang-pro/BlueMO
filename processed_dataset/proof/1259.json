@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设 $a_i \\geqslant 1(i=1,2, \\cdots, n)$, 求证:\n$$\n\\left(1+a_1\\right)\\left(1+a_2\\right) \\cdots\\left(1+a_n\\right) \\geqslant \\frac{2^n}{n+1}\\left(1+a_1+a_2+\\cdots+a_n\\right) .\n$$",
+    "solution": "分析:观察两边的式子, 首先要设法让左边\"变出\" $2^n$.\n证明\n$$\n\\begin{aligned}\n& \\left(1+a_1\\right)\\left(1+a_2\\right) \\cdots\\left(1+a_n\\right) \\\\\n= & 2^n\\left(1+\\frac{a_1-1}{2}\\right)\\left(1+\\frac{a_2-1}{2}\\right) \\cdots\\left(1+\\frac{a_n-1}{2}\\right) .\n\\end{aligned}\n$$\n由于 $a_i-1 \\geqslant 0$, 可得:\n$$\n\\begin{aligned}\n& \\left(1+a_1\\right)\\left(1+a_2\\right) \\cdots\\left(1+a_n\\right) \\\\\n\\geqslant & 2^n\\left(1+\\frac{a_1-1}{2}+\\frac{a_2-1}{2}+\\cdots+\\frac{a_n-1}{2}\\right) \\\\\n\\geqslant & 2^n\\left(1+\\frac{a_1-1}{n+1}+\\frac{a_2-1}{n+1}+\\cdots+\\frac{a_n-1}{n+1}\\right) \\\\\n= & \\frac{2^n}{n+1}\\left[n+1+\\left(a_1-1\\right)+\\left(a_2-1\\right)+\\cdots+\\left(a_n-1\\right)\\right] \\\\\n= & \\frac{2^n}{n+1}\\left(1+a_1+a_2+\\cdots+a_n\\right) .\n\\end{aligned}\n$$\n故原不等式成立.",
+    "remark": "",
+    "figures": []
+}

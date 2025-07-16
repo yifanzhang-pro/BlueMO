@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例1. 设 $a_1, a_2, \\cdots, a_n \\in \\mathbf{Z}$, 其中 $n$ 为正奇数, $\\left(b_1, b_2, \\cdots, b_n\\right)$ 是 $\\left(a_1\\right.$, $\\left.a_2, \\cdots, a_n\\right)$ 的任-一排列.\n证明: $\\prod_{i=1}^n\\left(a_i+\\left|b_i\\right|\\right)$ 与 $\\prod_{i=1}^n\\left(a_i-\\left|b_i\\right|\\right)$ 均为偶数.",
+    "solution": "证明:由于对整数 $x$, 总有 $|x| \\equiv x \\equiv-x(\\bmod 2)$, 故由已知得\n$$\n\\sum_{i=1}^n\\left(a_i+\\left|b_i\\right|\\right) \\equiv \\sum_{i=1}^n\\left(a_i-b_i\\right) \\equiv \\sum_{i=1}^n a_i-\\sum_{i=1}^n b_i \\equiv \\equiv(\\bmod 2),\n$$\n又上式左边是奇数项 ( $n$ 项) 求和, 因此必有某个 $a_i+\\left|b_i\\right|(1 \\leqslant i \\leqslant n)$ 为偶数,从而 $\\prod_{i=1}^n\\left(a_i+\\left|b_i\\right|\\right)$ 为偶数.\n同理可证得 $\\prod_{i=1}^n\\left(a_i-\\left|b_i\\right|\\right)$ 为偶数.\n证明: $\\prod_{i=1}^n\\left(a_i+\\left|b_i\\right|\\right)$ 与 $\\prod_{i=1}^n\\left(a_i-\\left|b_i\\right|\\right)$ 均为偶数.",
+    "remark": "注:本题的各种特殊形式在竞赛题中并不少见.\n纵观整个解题过程似乎平淡无奇, 却已用到了前述多条奇偶性质.\n这些性质虽然简单明显, 却常常是我们平时解题的出发点.\n尤其突出的一点是, 当把奇偶性看成模 2 的一种分类时, 整数取绝对值相当于作恒等运算, 加减实质上是同一种运算, 乘法则等同于某种意义下的逻辑运算, 这些事实给奇偶分析提供了极大的便利.",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题7. 数列 $\\left\\{a_n\\right\\}$ 满足 $a_1=2, a_{n+1}=\\left[\\frac{3 a_n}{2}\\right], n \\in \\mathbf{N}^*$ (这里 $[x]$ 表示不超过 $x$ 的最大整数). 证明: 数列 $\\left\\{a_n\\right\\}$ 中有无穷多项为奇数, 也有无穷多项为偶数.",
+    "solution": "由已知得: 数列 $\\left\\{a_n\\right\\}$ 中每项都是大于 1 的正整数.\n下用反证法证明结论:\n先假设 $\\left\\{a_n\\right\\}$ 中只有有限项为奇数, 则其中必有最后一项, 不妨设为 $a_m$. 于是对任意 $n \\in \\mathbf{N}^*$, 均有 $a_{m+n}$ 是偶数.\n设 $a_{m+1}=2^p \\cdot q$, 其中 $p \\in \\mathbf{N}^*, q$ 为奇数,则由递推式可知\n$$\n\\begin{gathered}\na_{m+2}=\\left[\\frac{3 a_{m+1}}{2}\\right]=3 \\cdot 2^{p-1} \\cdot q, \\\\\na_{m+3}=\\left[\\frac{3 a_{m+2}}{2}\\right]=3^2 \\cdot 2^{p-2} \\cdot q, \\\\\n\\cdots \\cdots \\\\\na_{m+p+1}=\\left[\\frac{3 a_{m+p}}{2}\\right]=3^p \\cdot q .\n\\end{gathered}\n$$\n这表明 $a_{m+p+1}$ 为奇数,与假设矛盾.\n再假设 $\\left\\{a_n\\right\\}$ 中只有有限项为偶数, 则其中必有最后一项, 不妨设为 $a_l$. 于是对任意 $n \\in \\mathbf{N}^*$, 均有 $a_{l+n}$ 是大于 1 的奇数.\n可设 $a_{l+1}-1=2^p \\cdot q$, 其中 $p \\in \\mathbf{N}^*, q$ 为奇数.\n由递推式可知\n$$\n\\begin{gathered}\na_{l+2}=\\left[\\frac{3 a_{l+1}}{2}\\right]=\\left[3 \\cdot 2^{p-1} \\cdot q+\\frac{3}{2}\\right]=3 \\cdot 2^{p-1} \\cdot q+1, \\\\\na_{l+3}=\\left[\\frac{3 a_{l+2}}{2}\\right]=3^2 \\cdot 2^{p-2} \\cdot q+1, \\\\\n\\cdots \\cdots \\\\\na_{l+p+1}=\\left[\\frac{3 a_{l+p}}{2}\\right]=3^p \\cdot q+1 .\n\\end{gathered}\n$$\n这表明 $a_{l+p+1}$ 为偶数, 与假设矛盾.\n综上所述, 命题成立.",
+    "remark": "",
+    "figures": []
+}

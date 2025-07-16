@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter6.tex",
+    "problem_type": "calculation",
+    "problem": "例18 设 $f(x)=a x^2+b x+c(a \\neq 0)$, 求 $f^{(n)}(x)$.",
+    "solution": "解:对于二次函数, 并不是所有的情形都能很简单地得到 $f^{(n)}(x)$ 的表达式,下面只考虑当 $c=\\frac{b^2-2 b}{4 a}$ 时的情形.\n由\n$$\na x^2+b x+\\frac{b^2-2 b}{4 a}=x,\n$$\n得两个不动点 $-\\frac{b}{2 a}, \\frac{b+2}{2 a}$. 取其中一个 $x_0=-\\frac{b}{2 a}$.\n令 $g(x)=a x^2, \\varphi(x)=x-x_0$, 则 $\\varphi^{-1}(x)=x+x_0$, 于是\n$$\n\\begin{aligned}\n\\varphi^{-1}(g(\\varphi(x))) & =\\varphi^{-1}\\left(g\\left(x-x_0\\right)\\right) \\\\\n& =\\varphi^{-1}\\left(a\\left(x-x_0\\right)^2\\right) \\\\\n& =a\\left(x-x_0\\right)^2+x_0 \\\\\n& =a x^2+b x+c=f(x) .\n\\end{aligned}\n$$\n故\n$$\n\\begin{aligned}\nf^{(n)}(x) & =\\varphi^{-1}\\left(g^{(n)}(\\varphi(x))\\right) \\\\\n& =\\varphi^{-1}\\left(g^{(n)}\\left(x-x_0\\right)\\right) \\\\\n& =\\varphi^{-1}\\left(a^{2^n-1}\\left(x-x_0\\right)^{2^n}\\right) \\\\\n& =a^{2^n-1}\\left(x-x_0\\right)^{2^n}+x_0 \\\\\n& =a^{2^n-1}\\left(x+\\frac{b}{2 a}\\right)-\\frac{b}{2 a} .\n\\end{aligned}\n$$",
+    "remark": "",
+    "figures": []
+}

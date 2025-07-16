@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise8.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 在 $\\triangle A B C$ 和 $\\triangle A^{\\prime} B^{\\prime} C^{\\prime}$ 中, 求证\n$$\n\\cot A+\\cot B+\\cot C \\geqslant \\frac{\\cos A^{\\prime}}{\\sin A}+\\frac{\\cos B^{\\prime}}{\\sin B}+\\frac{\\cos C^{\\prime}}{\\sin C} .\n$$",
+    "solution": "注意到公式 $\\cot A=\\frac{b^2+c^2-a^2}{4 \\Delta}$ 等等, 原不等式等价于 $a^2+b^2+c^2 \\geqslant \\frac{4 \\Delta \\cos A^{\\prime}}{\\sin A}+\\frac{4 \\Delta \\cos B^{\\prime}}{\\sin B}+\\frac{4 \\Delta \\cos C^{\\prime}}{\\sin C}$, 再由面积公式, 上式等价于 $a^2+b^2+c^2 \\geqslant 2 a b \\cos C^{\\prime}+2 a c \\cos B^{\\prime}+2 b c \\cos A^{\\prime}$. 这正是嵌入不等式的一个特例.",
+    "remark": "",
+    "figures": []
+}

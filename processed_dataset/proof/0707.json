@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例1-1. 已知集合 $S=\\{1,2, \\cdots, 100\\}$. 试证明: 若 $A$ 是 $S$ 的 51 元子集,则必存在 $i, j \\in A$,使 $i-j=50$",
+    "solution": "证明:令 $A_k=\\{k, k+50\\}, k=1,2, \\cdots, 50$.\n由于 $\\bigcup_{k=1}^{50} A_k=S$, 根据抽屉原理, 51 元集合 $A$ 中必存在两个元素属于同一个 $A_k$. 取 $i=k+50, j=k$, 则 $i-j=50$. 故结论成立.",
+    "remark": "",
+    "figures": []
+}

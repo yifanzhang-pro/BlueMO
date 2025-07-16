@@ -1,0 +1,62 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 设 $A B C D E F$ 是凸六边形, 且 $A B=B C, C D=D E, E F=F A$, 证明:
+$$
+\frac{B C}{B E}+\frac{D E}{D A}+\frac{F A}{F C} \geqslant \frac{3}{2},
+$$
+并指出等号成立的条件.
+%%<SOLUTION>%%
+记 $A C=a, C E=b, A E=c$, 对四边形 $A C E F$ 运用 Ptolemy 不等式得 $A C \cdot E F+C E \cdot A F \geqslant A E \cdot C F$. 因为 $E F=A F$, 所以 $\frac{F A}{F C} \geqslant \frac{c}{a+b}$. 同理 $\frac{D E}{D A} \geqslant \frac{b}{c+a}, \frac{B C}{B E} \geqslant \frac{a}{b+c}$. 故 $\frac{B C}{B E}+\frac{D E}{D A}+\frac{F A}{F C} \geqslant \frac{a}{b+c}+\frac{b}{c+a}+\frac{c}{a+b} \geqslant \frac{3}{2}$. 等号成立的条件为 $A B C D E F$ 是圆内接六边形且 $a=b=c$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. $\triangle A B C$ 的边 $B C$ 和边 $A C$ 分别取定长 $a$ 和 $b$, 而边 $A B$ 的长度可变动.
+以边 $A B$ 作为正方形的一边向三角形外作正方形.
+设 $O$ 是所作正方形的中心, 并设 $B C$ 和 $A C$ 的中点分别为 $M$ 和 $N$. 试求 $O M+O N$ 的最大值.
+%%<SOLUTION>%%
+设正方形为 $A B D E$, 则 $O M=\frac{C E}{2}, O N=\frac{C D}{2}$, 所以 $O M+O N= \frac{1}{2}(C D+C E)$. 设 $A B=c$, 则 $B D=A E=c, A D=B E=\sqrt{2} c$. 对四边形 $A C B D$ 和 $A C B E$ 分别应用广义 Ptolemy 定理可得 $O M+O N=\frac{1}{2}(C D+ C E) \leqslant \frac{\sqrt{2}+1}{2}(a+b)$. 所以 $O M+O N$ 的最大值为 $\frac{\sqrt{2}+1}{2}(a+b)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $A B C D E F$ 是凸六边形, 且 $A B=B C=C D, D E=E F=F A$, $\angle B C D=\angle E F A=60^{\circ}$. 设 $G$ 和 $H$ 是这个六边形内部的两点, 使得 $\angle A G B=\angle D H E=120^{\circ}$. 试证:
+$$
+A G+G B+G H+D H+H E \geqslant C F .
+$$
+%%<SOLUTION>%%
+连 $B D 、 A E$, 因为 $A B=B C=C D, \angle B C D=60^{\circ}$, 所以 $B D=A B$. 同理 $A E=E D$, 所以 $A 、 D$ 关于直线 $B E$ 对称.
+以直线 $B E$ 为对称轴, 作 $C$ 和 $F$ 关于该直线的轴对称点 $C^{\prime}$ 和 $F^{\prime}$. 于是 $\triangle A B C^{\prime}$ 和 $\triangle D E F^{\prime}$ 都是正三角形; $G$ 和 $H$ 分别在这两个三角形的外接圆上.
+分别对四边形 $A G B C^{\prime}$ 和 $D H E F^{\prime}$ 应用 Ptolemy 定理并注意到线段 $C F$ 与 $C^{\prime} F^{\prime}$ 关于直线 $B E$ 对称即可得所证结论.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 已知 $\triangle A B C$ 内接于 $\odot O, P$ 为 $\triangle A B C$ 内任意一点, 过点 $P$ 引 $A B 、 A C$ 、 $B C$ 的平行线, 分别交 $B C 、 A C$ 于 $F 、 E$, 交 $A B 、 B C$ 于 $K 、 I$, 交 $A B 、 A C$ 于 $G 、 H . A D$ 为 $\odot O$ 过点 $P$ 的弦, 试证:
+$$
+E F^2+K I^2+G H^2 \geqslant 4 P A \cdot P D .
+$$
+%%<SOLUTION>%%
+作 $\triangle A G H$ 的外接圆 $O_1$, 截 $A D$ 于点 $Q$. 易证 $\triangle B C D \backsim \triangle A P E$, 故 $\frac{D C}{P E}=\frac{B C}{A P}=\frac{B D}{A E}$, 即 $D C=\frac{P E}{A P} \cdot B C=\frac{A K}{A P} \cdot B C, B D=\frac{A E}{A P} \cdot B C$. 对四边形 $A B D C$ 应用 Ptolemy 定理, 可得 $A D \cdot B C=B D \cdot A C+D C \cdot A B=\frac{A E}{A P} \cdot B C \cdot A C+\frac{A K}{A P} \cdot B C \cdot A B$, 故 $A P \cdot A D=A E \cdot A C+A K \cdot A B \cdots$ (1). 同理应用 Ptolemy 定理, 可得 $A P \cdot A Q=A E \cdot A H+A K \cdot A G$. 于是 $A P^2+P G \cdot P H=A P^2+A P \cdot P Q=A E \cdot A H+A K \cdot A G$, 从而 $A P^2=A E \cdot A H+ A K \cdot A G-P G \cdot P H \cdots$ (2). (1) - (2) 可得 $A P(A D-A P)=A E(A C-A H)+ A K(A B-A G)+P G \cdot P H$, 即 $P A \cdot P D=P K \cdot P I+P E \cdot P F+P G \cdot P H$. 又 $P K \cdot P I \leqslant\left(\frac{P K+P I}{2}\right)^2=\frac{1}{4} K I^2, P E \cdot P F \leqslant \frac{1}{4} E F^2, P G \cdot P H \leqslant \frac{1}{4} G H^2$, 故 $E F^2+K I^2+G H^2 \geqslant 4 P A \cdot P D$, 等号成立当且仅当 $P$ 为 $\triangle A B C$ 的重心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设在 $\triangle A B C$ 中, $\angle A 、 \angle B$ 与 $\angle C$ 的角平分线分别交 $\triangle A B C$ 的外接圆于 $A_1 、 B_1 、 C_1$, 求证:
+$$
+A A_1+B B_1+C C_1>A B+B C+C A .
+$$
+%%<SOLUTION>%%
+对四边形 $A C A_1 B$ 应用 Ptolemy 定理, 可得 $A A_1 \cdot B C=A B \cdot A_1 C+ A C \cdot A_1 B$. 令 $A_1 B=A_1 C=x$, 注意到 $2 x=A_1 B+A_1 C>B C$, 有 $2 A A_1= 2 \frac{A B x+A C x}{B C}=(A B+A C) \cdot \frac{2 x}{B C}>A B+A C$, 即 $A A_1>\frac{1}{2}(A B+A C)$. 同理可得 $B B_1>\frac{1}{2}(B A+B C), C C_1>-\frac{1}{2}(C A+C B)$, 三式相加即得所证结果.
+%%PROBLEM_END%%
+
+

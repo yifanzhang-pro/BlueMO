@@ -1,0 +1,219 @@
+
+%%TEXT_BEGIN%%
+复数与方程.
+在复数集中,有关方程的试题常考常新, 对于复系数方程, 其韦达定理仍然适用,而实系数方程的虚根以共轭形式成对出现.
+一、实系数方程 $a x^2+b x+c(a \neq 0)$ 在复数集 $\mathrm{C}$ 中有两个根
+$$
+x=\frac{-b \pm \mathrm{i} \sqrt{-\left(b^2-4 a c\right)}}{2 a}\left(b^2-4 a c<0\right) .
+$$
+二、复平面上的曲线方程.
+如果复数 $z$ 对应着复平面上一点 $Z(x, y)$, 就可得出一些常用曲线的复数形式的方程:
+(1) 方程 $\left|z-z_0\right|=r$ 表示以 $Z_0$ 为圆心 $r$ 为半径的圆.
+(2) 方程 $\left|z-z_1\right|=\left|z-z_2\right|$ 表示线段 $Z_1 Z_2$ 的垂直平分线.
+(3) 方程 $\left|z-z_1\right|+\left|z-z_2\right|=2 a\left(a>0,2 a>\left|Z_1 Z_2\right|\right)$ 表示以 $Z_1 、 Z_2$ 为焦点, $a$ 为长半轴的椭圆.
+若 $2 a=\left|Z_1 Z_2\right|$, 则此方程表示以 $Z_1 、 Z_2$ 为端点的线段.
+(4) 方程 ||$z-z_1|-| z-z_2||=2 a\left(0<2 a<\left|Z_1 Z_2\right|\right)$ 表示以 $Z_1 、 Z_2$ 为焦点, 实轴长为 $2 a$ 的双曲线.
+(5)复平面上的特殊区域.
+用一些复数模的不等式, 就可表示复平面上的特殊区域.
+1) $\left|z-z_0\right|<r$ 表示以 $Z_0$ 为圆心, $r$ 为半径的圆的内部(不包括周界).
+2) $r \leqslant\left|z-z_0\right| \leqslant R$ 表示以 $Z_0$ 为圆心,不小于 $r$ 且不大于 $R$ 的圆环(包括周界).
+3) $\operatorname{Re}(z)>0$ 表示复平面的右半平面, $\operatorname{Im}(z)<0$ 表示复平面的下半平面.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设 $z 、 \omega 、 \lambda$ 为复数, $|\lambda| \neq 1$, 解关于 $z$ 的方程: $\bar{z}-\lambda z=\omega$.
+%%<SOLUTION>%%
+分析:与解方程两边取共轭得, $\overline{\bar{z}-\lambda z}=\bar{\omega}$, 即 $z-\bar{\lambda} \bar{z}=\bar{\omega}$. 两边同乘 $\lambda$ 得
+$$
+\lambda z-|\lambda|^2 \bar{z}=\lambda \bar{\omega}, \label{eq1}
+$$
+又因为
+$$
+\bar{z}-\lambda z=\omega . \label{eq2}
+$$
+所以式\ref{eq1}+\ref{eq2}可得 $\bar{z}\left(1-|\lambda|^2\right)==\omega+\lambda \bar{\omega}$, 取共轭得 $z\left(1-|\lambda|^2\right)=\bar{\omega}+\bar{\lambda} \omega$. 因为 $|\lambda| \neq 1$, 所以 $z=\frac{\bar{\lambda} \omega+\bar{\omega}}{1-|\lambda|^2}$.
+%%<REMARK>%%
+注:在解复数方程的问题中, 适当地取模或者共轭往往会简化很多计算过程.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 已知关于 $z$ 的实系数方程 $z^2-2 p z+q=0(p \neq 0)$ 的两虚根 $z_1 、 z_2$ 在复平面内的对应点为 $F_1 、 F_2$, 求以 $F_1 、 F_2$ 为两焦点, 且经过原点的椭圆的普通方程.
+%%<SOLUTION>%%
+分析:与解由原方程有两个虚根可知: $\Delta= 4 p^2-4 q<0$, 因此 $q>p^2>0$.
+设 $z_1=a+b \mathrm{i}(a 、 b \in \mathbf{R})$, 则 $z_2=a-b \mathrm{i}$.
+由韦达定理得, $\left\{\begin{array}{l}z_1+z_2=2 a=2 p , \\ z_1 z_2=a^2+b^2=q ,\end{array}\right.$
+于是 $a=p,\left|O F_1\right|=\left|O F_2\right|=\sqrt{a^2+b^2}= \sqrt{q}$ (如图).
+显然, 椭圆的半短轴长 $=|O M|=|a|=|p|$, 半焦距 $=|b|$, 则半长轴长 $=\sqrt{a^2+b^2}=\sqrt{q}$, 而椭圆的中心为 $(a, 0)$, 即 $(p, 0)$.
+所以椭圆的普通方程为 $\frac{(x-p)^2}{p^2}+\frac{y^2}{q}=1$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 已知实系数方程
+$$
+x^3+2(k-1) x^2+9 x+5(k-1)=0, \label{eq1}
+$$
+有一个模为 $\sqrt{5}$ 的虚根.
+求 $k$ 的值, 并解此方程.
+%%<SOLUTION>%%
+分析:与解因为 $x^3+2(k-1) x^2+9 x+5(k-1)=0$, 由虚根成对原理, 可知 式\ref{eq1} 有一个实根和两个模长为 $\sqrt{5}$ 的虚根, 它们互为共轭, 设这三个根为 $a+b \mathrm{i}, a-b \mathrm{i}, c(a 、 b 、 c \in \mathbf{R})$, 则
+$$
+a^2+b^2=5 . \label{eq2}
+$$
+由韦达定理, 有 $\left\{\begin{array}{l}(a+b \mathrm{i})+(a-b \mathrm{i})+c=-2(k-1), \\ (a+b \mathrm{i})(a-b \mathrm{i})+c(a+b \mathrm{i})+c(a-b \mathrm{i})=9, \\ (a+b \mathrm{i})(a-b \mathrm{i}) c=-5(k-1) .\end{array}\right.$
+结合(2)整理得
+$$
+\begin{gathered}
+2 a+c=-2(k-1), \label{eq3} \\
+a c=2, \label{eq4}\\
+c=-k+1 . \label{eq5}
+\end{gathered}
+$$
+由式\ref{eq3}, \ref{eq5}知 $c=1-k, a=\frac{1}{2}(1-k)$, 并将其代入 式\ref{eq2}, 可得 $k=-1$ 或 3 .
+再求解方程式\ref{eq1}知: 当 $k=-1$ 时, 式\ref{eq1}的解为 $1+2 \mathrm{i}, 1-2 \mathrm{i}, 2$; 当 $k=3$ 时, 式\ref{eq1}的解为 $-2,-1+2 \mathrm{i},-1-2 \mathrm{i}$.
+%%<REMARK>%%
+注:利用虚根成对是本题的关键.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 设 $p 、 q$ 是复数 $(q \neq 0)$, 若关于 $x$ 的方程 $x^2+p x+q^2=0$ 的两根的模相等,求证: $\frac{p}{q}$ 是实数.
+%%<SOLUTION>%%
+分析:与解从韦达定理着手, 建立 $p 、 q$ 与方程根的联系.
+设方程 $x^2+p x+q^2=0$ 的两根是 $z_1 、 z_2$, 则
+$$
+\left\{\begin{array}{l}
+z_1+z_2=-p, \\
+z_1 z_2=q^2
+\end{array}\right.
+$$
+根据题设, 有 $\left|z_1\right|=\left|z_2\right|$, 即 $\left|z_1\right|^2=\left|z_2\right|^2$, 有 $z_1 \overline{z_1}=z_2 \overline{z_2}$, 所以
+$$
+\frac{p^2}{q^2}=\frac{\left(z_1+z_2\right)^2}{z_1 z_2}=\frac{z_1}{z_2}+\frac{z_2}{z_1}+2=\overline{\left(\frac{z_2}{z_1}\right)}+\left(\frac{z_2}{z_1}\right)+2=2 \operatorname{Re}\left(\frac{z_2}{z_1}\right)+2 \in \mathbf{R} .
+$$
+因为 $\left|\frac{z_2}{z_1}\right|=1$, 所以 $\left|\operatorname{Re}\left(\frac{z_2}{z_1}\right)\right| \leqslant\left|\frac{z_2}{z_1}\right|=1$, 于是 $\frac{p^2}{q^2} \geqslant 0$. 故知 $\frac{p}{q} \in \mathbf{R}$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 设复平面上一个正方形的四个顶点对应的复数恰好是某个整系数一元四次方程 $x^4+p x^3+q x^2+r x+s=0$ 的四个根.
+求这个正方形面积的最小值.
+%%<SOLUTION>%%
+分析:与解设正方形的中心 $A$ 对应的复数是 $a$, 该正方形的顶点均匀分布在一个圆周上, 它们对应的复数是方程 $(x-a)^4=b$ 的解, 其中的 $b$ 是某个复数.
+于是
+$$
+\begin{aligned}
+& x^4+p x^3+q x^2+r x+s \\
+= & (x-a)^4-b \\
+= & x^4-4 a x^3+6 a^2 x^2-4 a^3 x+a^4-b .
+\end{aligned}
+$$
+通过对比系数, 可知 $-a=\frac{p}{4}$ 是有理数, 再结合 $-4 a^3=r$ 是整数, 便知 $a$ 是整数.
+于是, 由 $a^4-b=s$ 是整数, 可知 $b$ 亦是整数.
+以上的讨论表明,正方形顶点对应的复数是整系数方程 $(x-a)^4=b$ 的根, 其外接圆半径 $\sqrt[4]{|b|}$ 不小于 1 . 于是, 正方形的面积不小于 $(\sqrt{2})^2=2$. 而方程 $x^4=1$ 的四个根在复平面上对应于-一个正方形的顶点, 此正方形面积为 2. 故所求正方形面积的最小值是 2 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6.. 已知复数 $z$ 满足 $11 z^{100}+10 \mathrm{i} z^{99}+10 \mathrm{i} z-11=0$, 求证: $|z|=1$.
+%%<SOLUTION>%%
+分析:与解将已知复数方程变形为 $z^{99}=\frac{11-10 \mathrm{i} z}{11 z+10 \mathrm{i}}$,
+要证 $|z|=1$, 只要证 $\left|\frac{11-10 \mathrm{i} z}{11 z+10 \mathrm{i}}\right|=1$ 就行了, 这可以用反证法.
+设 $z=a+b \mathrm{i}(a 、 b \in \mathbf{R})$, 则
+$$
+\left|z^{99}\right|=\left|\frac{11-10 \mathrm{i} z}{11 z+10 \mathrm{i}}\right|=\sqrt{\frac{121+220 b+100\left(a^2+\overline{b^2}\right)}{121\left(a^2+b^2\right)+220 b+100}} .
+$$
+记
+$$
+\begin{aligned}
+& f(a, b)=121+220 b+100\left(a^2+b^2\right), \\
+& g(a, b)=121\left(a^2+b^2\right)+220 b+100 .
+\end{aligned}
+$$
+若 $a^2+b^2>1$, 则 $f(a, b)<g(a, b)$, 即 $|z|^{99}<1$, 有 $|z|<1, a^2+ b^2<1$, 矛盾.
+若 $a^2+b^2<1$, 则 $f(a, b)>g(a, b)$, 即 $|z|^{99}>1$, 有 $|z|>1, a^2+ b^2>1$,矛盾.
+从而只能有 $a^2+b^2=1$, 故 $|z|=1$, 证毕.
+%%<REMARK>%%
+注:本题处理技巧独特, 读者应仔细体会.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 设 $n$ 是不小于 2 的整数, $\alpha$ 是多项式 $P(x)=x^n+a_{n-1} x^{n-1}+\cdots+a_0$ 的一个根, 且 $0 \leqslant a_i \leqslant 1(i=0,1, \cdots, n-1)$. 求证: $\operatorname{Re} \alpha<\frac{1+\sqrt{5}}{2}$.
+%%<SOLUTION>%%
+分析:与解用反证法.
+若 $\operatorname{Re} \alpha \geqslant \frac{1+\sqrt{5}}{2}$, 则
+$$
+\begin{aligned}
+\left|\alpha^n+a_{n-1} \alpha^{n-1}\right| & =\left|a_{n-2} \alpha^{n-2}+\cdots+a_0\right| \\
+& \leqslant|\alpha|^{n-2}+\cdots+|\alpha|+1 \\
+& =\frac{|\alpha|^{n-1}-1}{|\alpha|-1}<\frac{|\alpha|^{n-1}}{|\alpha|-1} .
+\end{aligned}
+$$
+所以 $\left|\alpha+a_{n-1}\right|<\frac{1}{|\alpha|-1} \leqslant \frac{1}{\frac{1+\sqrt{5}}{2}-1}=\frac{\sqrt{5}+1}{2}$.
+而 $\operatorname{Re}\left(\alpha+a_{n-1}\right) \geqslant \frac{1+\sqrt{5}}{2}$,矛盾!
+故 $\operatorname{Re} \alpha<\frac{1+\sqrt{5}}{2}$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 设正整数 $n_1<n_2<\cdots<n_k$, 求证: $P(z)=1+z^{n_1}+z^{n_2}+\cdots+ z^{n_k}=0$ 在 $|z|<\frac{\sqrt{5}-1}{2}$ 内没有根.
+%%<SOLUTION>%%
+分析:与解用反证法.
+设 $P(z)=0$ 且 $|z|<\frac{\sqrt{5}-1}{2}$, 则
+$$
+|z|^2<1-|z|<1 . \label{eq1}
+$$
+若 $n_1 \geqslant 2$, 则 $n_2 \geqslant 3$, 所以
+$$
+|z|^2 \geqslant|z|^{n_1}=\left|1+z^{n_2}+\cdots+z^{n_k}\right| \geqslant 1-\left(|z|^{n_2}+\cdots+|z|^{n_k}\right) \geqslant 1-
+$$
+$\frac{|z|^3}{1-|z|} \geqslant 1-|z|$, 与式\ref{eq1}矛盾!
+所以 $n_1=1$.
+若 $n_2 \geqslant 3$, 则
+$$
+\begin{aligned}
+\left|z^2\right| & =|1-(1-z)(1+z)|=\left|1+(1-z)\left(z^{n_2}+\cdots+z^{n_k}\right)\right| \\
+& \geqslant 1-\left|\left(z^{n_2}-z^{n_2+1}\right)+\left(z^{n_3}-z^{n_3+1}\right)+\cdots+\left(z^{n_k}-z^{n_k+1}\right)\right|,
+\end{aligned}
+$$
+若存在 $i$, 使 $n_i+1=n_{i+1}$, 则这两项抵消.
+所以
+$$
+|z|^2 \geqslant 1-\left(|z|^{n_2}+|z|^{n_2+1}+\cdots\right) \geqslant 1-\frac{|z|^3}{1-|z|} \geqslant 1-|z|,
+$$
+矛盾!
+所以 $n_2=2$.
+$$
+\begin{gathered}
+z^3=1-(1-z)\left(1+z+z^2\right)=1+(1-z)\left(z^{n_3}+\cdots+z^{n_k}\right), \text { 所以 } \\
+|z|^3 \geqslant 1-\left|\left(z^{n_3}-z^{n_3+1}\right)+\cdots+\left(z^{n_k}-z^{n_k+1}\right)\right| \\
+\geqslant 1-\left(|z|^{n_3}+|z|^{n_3+1}+\cdots\right) \\
+\geqslant 1-\frac{|z|^3}{1-|z|} \geqslant 1-|z|>|z|^2,
+\end{gathered}
+$$
+由此得到, $|z|>1$,与 $|z|<\frac{\sqrt{5}-1}{2}$ 矛盾.
+综上所述, 原命题成立, 证毕.
+%%<REMARK>%%
+注:以上两例的技巧性比较高, 均是反证法结合模的放缩, 利用不等式解决了问题.
+%%PROBLEM_END%%
+
+

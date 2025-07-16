@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题14. 已知 $a_k \\geqslant 0, k=1,2, \\cdots, n$. 定义 $A_k=\\frac{1}{k} \\cdot \\sum_{i=1}^k a_i$, 求证:\n$$\n\\sum_{k=1}^n A_k^2 \\leqslant 4 \\sum_{k=1}^n a_k^2\n$$",
+    "solution": "如果设 $\\frac{1}{c} \\sum_{k=1}^n A_k^2 \\leqslant \\sum_{k=1}^n A_k \\cdot a_k$, 则有 $\\sum_{k=1}^n A_k \\cdot a_k \\leqslant c \\cdot \\sum_{k=1}^n a_k^2$, 于是可将问题转为 Abel 方法处理:\n$$\n\\begin{aligned}\n\\sum_{k=1}^n A_k a_k & =\\sum_{k=1}^n A_k\\left[k A_k-(k-1) A_{k-1}\\right] \\\\\n& =\\sum_{k=1}^n k A_k^2-\\sum_{k=1}^n(k-1) A_k A_{k-1} \\\\\n& \\geqslant \\sum_{k=1}^n k A_k^2-\\frac{1}{2}\\left[\\sum_{k=1}^n(k-1) A_k^2+\\sum_{k=1}^n(k-1) A_{k-1}^2\\right] \\\\\n& =\\frac{1}{2} \\cdot \\sum_{k=1}^n A_k^2+\\frac{1}{2} n A_n^2 \\geqslant \\frac{1}{2} \\sum_{k=1}^n A_k^2 .\n\\end{aligned}\n$$\n故\n$$\n\\sum_{k=1}^n A_k^2 \\leqslant 4 \\sum_{k=1}^n a_k^2\n$$",
+    "remark": "注:: 由此思想可以证明 Hölder 型不等式: 设 $p>1$, 则 $\\sum_{k=1}^n A_k^p \\leqslant\\left(\\frac{p}{p-1}\\right)^p$. $\\sum_{k=1}^n a_k^p$, 即类似的有: $\\frac{1}{c} \\sum_{k=1}^n A_k^p \\leqslant \\sum_{k=1}^n A_k^{p-1} \\cdot a_k \\leqslant c^{p-1} \\sum_{k=1}^n a_k^p$, 然后可证得 $c= \\frac{p}{p-1}$ 是可使不等式成立的待定系数.\n此题是哈代一道不等式的初等形式.",
+    "figures": []
+}

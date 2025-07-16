@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume12/exercise2.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 对于平面上任意 $n$ 个点构成的点集 $P$, 如果其中任意两点之间的距离均已确定, 那么就称这个点集是\"稳定的\". 求证:在 $n(n \\geqslant 4)$ 个点的平面点集 $P$ 中, 无三点共线, 且其中的 $\\frac{1}{2} n(n-3)+4$ 个两点之间的距离已被确定,那么点集 $P$ 就是\"稳定的\".",
+    "solution": "先约定,确定距离的两点用边相连.\n我们用数学归纳法来证明本题.\n当 $n=4$ 时, $\\frac{1}{2} n(n-3)+4=6$, 四点之间只有 $\\left(\\mathrm{C}_4^2=\\right) 6$ 个距离, 它们均已确定,故命题成立.\n设 $n=k(k \\geqslant 4)$ 时命题成立.\n当 $n=k+1$ 时,点集共连了\n$$\n\\frac{1}{2}(k+1)(k-2)+4\n$$\n条边.\n设 $A_{k+1}$ 是这个点集中\"度\" (即自该点出发的边数) 最小的点, 则其度\n$$\n\\begin{aligned}\nd\\left(A_{k+1}\\right) & \\leqslant \\frac{2\\left[\\frac{1}{2}(k+1)(k-2)+4\\right]}{k+1} \\\\\n& =k-2+\\frac{8}{k+1} \\\\\n& \\leqslant k-2+\\frac{8}{5}<k,\n\\end{aligned}\n$$\n所以 $d\\left(A_{k+1}\\right) \\leqslant k-1$.\n于是,剩下 $k$ 个点 $A_1, A_2, A_3, \\cdots, A_k$ 之间至少连了\n$$\n\\frac{1}{2}(k+1)(k-2)+4-(k-1)=\\frac{1}{2} k(k-3)+4\n$$\n条边.\n按归纳假设这 $k$ 个点的集合是稳定的.\n又 $d\\left(A_{k+1}\\right) \\geqslant \\frac{1}{2}(k+1)(k-2)+4-\\mathrm{C}_k^2=3$, 故 $A_{k+1}$ 至少与 $A_1, A_2, \\cdots$, $A_k$ 中的 3 点相连.\n不妨设 $A_{k+1}$ 与 $A_1, A_2, A_3$ 相连, 且 $A_{k+1} A_1=x, A_{k+1} A_2= y, A_{k+1} A_3=z$. 易证 $A_{k+1}$ 是唯一确定的.\n若不然, 设 $A_{k+1}^{\\prime}$ 是另外一点, 也有 $A_{k+1}^{\\prime} A_1=x, A_{k+1}^{\\prime} A_2=y, A_{k+1}^{\\prime} A_3=z$, 则 $A_1, A_2, A_3$ 将都在 $A_{k+1} A_{k+1}^{\\prime}$ 的垂直平分线上, 这与无三点共线的假定矛盾.\n于是 $A_{k+1} A_4, \\cdots, A_{k+1} A_k$ 都可确定,点集 $\\left\\{A_1, A_2, \\cdots, A_{k+1}\\right\\}$ 是稳定的,即当 $n-k+1$ 时命题也成立.\n综上所述, 命题得证.",
+    "remark": "",
+    "figures": []
+}

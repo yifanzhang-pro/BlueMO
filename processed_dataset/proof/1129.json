@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例18. 设 $a 、 b 、 c 、 d$ 为正实数, 满足 $a b+c d=1$, 点 $P_i\\left(x_i, y_i\\right)(i=1$, $2,3,4)$ 是以原点为圆心的单位圆上的四点.\n求证:\n$$\n\\begin{aligned}\n& \\left(a y_1+b y_2+c y_3+d y_4\\right)^2+\\left(a x_4+b x_3+c x_2+d x_1\\right)^2 \\\\\n\\leqslant & 2\\left(\\frac{a^2+b^2}{a b}+\\frac{c^2+d^2}{c d}\\right) .\n\\end{aligned}\n$$",
+    "solution": "证明:令 $\\alpha=a y_1+b y_2+c y_3+d y_4, \\beta=a x_4+b x_3+c x_2+d x_1$, 由柯西不等式, 得\n$$\n\\begin{aligned}\n\\alpha^2= & \\left(a y_1+b y_2+c y_3+d y_4\\right)^2 \\\\\n\\leqslant & {\\left[\\left(\\sqrt{a d} y_1\\right)^2+\\left(\\sqrt{b c} y_2\\right)^2+\\left(\\sqrt{b c} y_3\\right)^2+\\left(\\sqrt{a d} y_4\\right)^2\\right] } \\\\\n& {\\left[\\left(\\sqrt{\\frac{a}{d}}\\right)^2+\\left(\\sqrt{\\frac{b}{c}}\\right)^2+\\left(\\sqrt{\\frac{c}{b}}\\right)^2+\\left(\\sqrt{\\frac{d}{a}}\\right)^2\\right] } \\\\\n= & \\left(a d y_1^2+b c y_2^2+b c y_3^2+a d y_4^2\\right) \\cdot\\left(\\frac{a}{d}+\\frac{b}{c}+\\frac{c}{b}+\\frac{d}{a}\\right) .\n\\end{aligned}\n$$\n同理可得\n$$\n\\beta^2 \\leqslant\\left(a d x_4^2+b c x_3^2+b c x_2^2+a d x_1^2\\right) \\cdot\\left(\\frac{a}{d}+\\frac{b}{c}+\\frac{c}{b}+\\frac{d}{a}\\right) .\n$$\n将它们相加, 并利用 $x_i^2+y_i^2=1(i=1,2,3,4), a b+c d=1$, 得\n$$\n\\begin{aligned}\n\\alpha^2+\\beta^2 & \\leqslant(2 a d+2 b c)\\left(\\frac{a}{d}+\\frac{b}{c}+\\frac{c}{b}+\\frac{d}{a}\\right) \\\\\n& =2(a d+b c)\\left(\\frac{a b+c d}{b d}+\\frac{a b+c d}{a c}\\right) \\\\\n& =2(a d+b c)\\left(\\frac{1}{b d}+\\frac{1}{a c}\\right) \\\\\n& =2\\left(\\frac{a^2+b^2}{a b}+\\frac{c^2+d^2}{c d}\\right),\n\\end{aligned}\n$$\n故命题成立.",
+    "remark": "",
+    "figures": []
+}

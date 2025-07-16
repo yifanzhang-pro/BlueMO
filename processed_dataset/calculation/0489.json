@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter2.tex",
+    "problem_type": "calculation",
+    "problem": "例6 已知 $x, y \\in\\left[-\\frac{\\pi}{4}, \\frac{\\pi}{4}\\right], a \\in \\mathbf{R}$, 且 $\\left\\{\\begin{array}{l}x^3+\\sin x-2 a=0, \\\\ 4 y^3+\\sin y \\cos y+a=0 .\\end{array}\\right.$ 求 $\\cos (x+2 y)$ 的值.",
+    "solution": "分析:此题的特点就是人口非常小, 所求的 $\\cos (x+2 y)$ 的值好像与题设条件没有什么关系.\n我们再对方程组中的三个变量 $x, y, a$ 的系数进行观察,\n大胆想像, 从中利用立方和公式、倍角公式、 $t^3+\\sin t$ 在 $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$ 的单调性, 就能找到一条通向胜利之路.\n解由于\n$$\n\\left\\{\\begin{array}{l}\nx^3+\\sin x-2 a=0, \\\\\n4 y^3+\\sin y \\cos y+a=0 .\n\\end{array}\\right.\n$$\n将第二式乘以 2 与第一式相加并整理, 得\n$$\nx^3+\\sin x=(-2 y)^3+\\sin (-2 y) .\n$$\n已知 $x, y \\in\\left[-\\frac{\\pi}{4}, \\frac{\\pi}{4}\\right]$,所以 $x,-2 y \\in\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$.\n构造函数 $f(t)=t^3+\\sin t, t \\in\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$. 则由 $f(t)=t^3+\\sin t$ 的单调性可知 $x=-2 y$, 所以 $x+2 y=0$.\n于是 $\\cos (x+2 y)=1$.\n评注这是一道经典的好题.\n好在它既能考查学生基础知识的掌握程度, 又能考查学生对基础知识的灵活应用能力, 还能考查学生对各数学分支的基础知识的综合整合能力.\n其中涉及的知识点有代数公式, 方程变形, 三角公式, 函数单调性等等.",
+    "remark": "",
+    "figures": []
+}

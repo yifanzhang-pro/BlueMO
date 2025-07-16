@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise9.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 凸四边形 $A B C D$ 外切于 $\\odot O, A B 、 B C 、 C D 、 D A$ 上的切点分别是 $E 、 F 、 G 、 H$, 直线 $H E$ 与 $F G$ 相交于点 $P$. 求证: $O P \\perp A C$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c9a3.png>), 以 $\\odot O$ 为基圆, 易知 $H E$ 是 $A$ 的极线, $F G$ 是 $C$ 的极线.\n而 $H E$ 与 $F G$ 交于 $P$, 因此 $P$ 点既在 $A$ 点极线上,也在 $C$ 点极线上由配极性质 1 知,故 $A 、 C$ 都在 $P$ 点极线上, 从而 $A C$ 即为 $P$ 点的极线.\n因此 $O P \\perp A C$. 原命题得证.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c9a3.png"
+    ]
+}

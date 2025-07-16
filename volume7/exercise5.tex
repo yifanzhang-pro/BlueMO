@@ -1,0 +1,313 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1. 如图(<FilePath:./figures/fig-c5p1.png>),已知 $\odot O_1$ 和 $\odot O_2$ 相交于 $A$ 和 $B, P$ 是线段 $A B$ 上一点, $K M$ 是过 $P$ 点的 $\odot O_1$ 的弦, $L N$ 是过 $P$ 点的 $\odot O_2$ 的弦.
+求证: $K 、 L 、 M 、 N$ 四点共圆.
+%%<SOLUTION>%%
+证明: 因为 $K M, A B$ 为 $\odot O_1$ 的两条相交弦, 所以 $P K \cdot P M=P A \cdot P B$. 同理, $P L \cdot P N=P A \cdot P B$, 所以 $P K \cdot P M=P L \cdot P N$. 由相交弦定理的逆定理得到 $K 、 L 、 M 、 N$ 四点共圆.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2. 如图(<FilePath:./figures/fig-c5p2.png>), $A B C D$ 为 $\odot O$ 的内接四边形, 延长 $A B$ 和 $D C$ 相交于 $E$, 延长 $A D$ 和 $B C$ 相交于 $F, E P$ 和 $F Q$ 分别切 $\odot O$ 于 $P 、 Q$. 求证: $E P^2+F Q^2= E F^2$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c5a2.png>), 作 $\triangle B C E$ 的外接圆交 $E F$ 于 $G$, 连结 $C G$. 又因为 $\angle F D C= \angle A B C=\angle E G C$, 故 $C 、 D 、 F 、 G$ 四点共圆.
+由切割线定理, 有 $E P^2=E C E D=E G \cdot E F, F Q^2=F C \cdot F B=F G \cdot F E$, 所以 $E P^2+F Q^2=E G \cdot E F+ F G \cdot F E=E F(E G+F G)=E F^2$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3. 设 $A 、 B 、 C 、 D$ 是一条直线上依次排列的四个不同的点, 分别以 $A C 、 B D$ 为直径的圆相交于 $X$ 和 $Y$, 直线 $X Y$ 交 $B C$ 于 $Z$. 若 $P$ 为 $X Y$ 上开于 $Z$ 的一点, 直线 $C P$ 与以 $A C$ 为直径的圆相交于 $C$ 和 $M$, 直线 $B P$ 与以 $B D$ 为直径的圆相交于 $B$ 和 $N$. 试证: $A M 、 D N$ 和 $X Y$ 三线共点.
+%%<SOLUTION>%%
+证明: 设 $A M$ 交直线 $X Y$ 于点 $Q$, 而 $D N$ 交直线 $X Y$ 于点 $Q^{\prime}$ (如图(<FilePath:./figures/fig-c5a3.png>), 注意: 这里只画出了点 $P$ 在线段 $X Y$ 上的情形, 其他情况可类似证明). 需证: $Q$ 与 $Q^{\prime}$ 重合.
+由于 $X Y$ 为两圆的根轴, 故 $X Y \perp A D$, 而 $A C$ 为直径, 所以 $\angle Q M C= \angle P Z C=90^{\circ}$. 进而, $Q 、 M 、 Z 、 C$ 四点共圆.
+同理 $Q^{\prime} 、 N 、 Z 、 B$ 四点共圆.
+这样, 利用圆幂定理, 可知 $Q P \cdot P Z=M P \cdot P C=X P \cdot P Y, Q^{\prime} P \cdot P Z= N P \cdot P B=X P \cdot P Y$. 所以, $Q P=Q^{\prime} P$. 而 $Q$ 与 $Q^{\prime}$ 都在直线 $X Y$ 上且在直线 $A D$ 同侧, 从而, $Q$ 与 $Q^{\prime}$ 重合.
+命题获证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4. 圆 $\Gamma_1$ 和圆 $\Gamma_2$ 相交于点 $M$ 和 $N$. 设 $l$ 是圆 $\Gamma_1$ 和圆 $\Gamma_2$ 的两条公切线中距离 $M$ 较近的那条公切线.
+$l$ 与圆 $\Gamma_1$ 相切于点 $A$, 与圆 $\Gamma_2$ 相切于点 $B$. 设经过点 $M$ 且与 $l$ 平行的直线与圆 $\Gamma_1$ 还相交于点 $C$, 与圆 $\Gamma_2$ 还相交于点 $D$. 直线 $C A$ 和 $D B$ 相交于点 $E$, 直线 $A N$ 和 $C D$ 相交于点 $P$, 直线 $B N$ 和 $C D$ 相交于点 $Q$. 证明: $E P=E Q$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c5a4.png>), 令 $K$ 为 $M N$ 和 $A B$ 的交点.
+根据圆幂定理: $A K^2=K N \cdot K M=B K^2$. 换言之, $K$ 是 $A B$ 的中点, 因为 $P Q / / A B$, 所以 $M$ 是 $P Q$ 的中点, 故只需证明 $E M \perp P Q$.
+因为 $C D // A B$, 所以点 $A$ 是圆 $\Gamma_1$ 的弧 $C M$ 的中点, 点 $B$ 是圆 $\Gamma_2$ 的弧 $D M$ 的中点.
+于是, $\triangle A C M$ 与 $\triangle B D M$ 都是等腰三角形.
+从而 $\angle B A M= \angle A M C=\angle A C M=\angle E A B, \angle A B M= \angle B M D=\angle B D M=\angle E B A$. 故 $E M \perp A B$. 再由 $PQ // AB$, 即得 $E M\perp P Q$ .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5. 设 $A$ 是圆 $O$ 的直径 $B B^{\prime}$ 上或其延长线上任一定点,过 $A$ 引圆 $O$ 的割线 $M A M^{\prime}$ 或 $A M M^{\prime}$, 过 $A$ 作 $B B^{\prime}$ 的垂线交 $B M$ 的延长线于点 $N$, 交 $B M^{\prime}$ 的延长线于点 $N^{\prime}$. 求证: $A N \cdot A N^{\prime}$ 是定值.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c5a5.png>), $\angle B N A=90^{\circ}-\angle M B A=\angle B B^{\prime}M= BM'M$.从而有 $M、N、M'、N'$ 共圆,记此圆为 $\Gamma$. 注意到圆$O$与 $\Gamma$ 的交点为$M、M'$ ,所以 $M M^{\prime}$ 是圆$O$和 $\Gamma$ 的根轴, 又 $A$ 在 $M M^{\prime}$ 上, 所以 $A$ 关于两圆等幂, 即 $A B \cdot A B^{\prime}=A N \cdot A N^{\prime}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6. 如图(<FilePath:./figures/fig-c5p6.png>), 某圆分别与凸四边形 $A B C D$ 的 $A B 、 B C$ 两边相切于 $G 、 H$ 两点, 与对角线 $A C$ 相交于 $E 、 F$ 两点: 问 $A B C D$ 应满足怎样的充要条件, 使得存在另一圆过 $E 、 F$ 两点,且分别与 $D A 、 D C$ 的延长线相切?
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c5a6.png>), 所求的充分必要条件是 $A B+ A D=C B+C D$.
+(1)必要性的证明.
+设过 $E 、 F$ 两点的另一圆分别与 $D A$ 的延长线和 $D C$ 延长线相切于 $J$ 和 $K$ 两点, 由于 $A J, A G$ 分别是大圆, 小圆的切线,所以由圆幕定理知 $A G^2=A E \cdot A F$ (对小圆) $A J^2=A E$ ・ $A F$ (对大圆), 故 $A G=A J$. 同理, $C H=C K$. 则有 $A B+A D=B G+G A+A D=B G+J D=B H+ 2^{\circ}$ 
+(2)充分性的证明.
+设凸四边形 $A B C D$ 满足条件 $A B+A D=C B+C D$. 在 $D A$ 延长线和 $D C$ 延长线上分别取 $J$ 点和 $K$ 点, 使 $A J=A G, C K=C H$, 于是
+$D J=J A+A D=A G+A D=A B+A D-B G=C B+C D-B H=C H+ C D=D K$. 过 $J$ 点和 $K$ 点分别作 $D J$ 和 $D K$ 的垂线, 以两垂线交点为圆心作通过 $J$ 点和 $K$ 点的圆.
+因为 $A J=A G, C K=C H$, 所以 $A$ 点和 $C$ 点关于原有圆的幂分别等于这两点关于所作圆的幕.
+又因为直线 $A C$ 与原有的圆相交于 $E$ 和 $F$.两点,所以 $E F$ 是两圆的公共弦 (直线 $A C$ 是两圆的根轴).
+至此, 我们证明了所作的与 $D A$ 延长线和 $D C$ 延长线相切的圆通过 $E 、 F$ 两点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 如图(<FilePath:./figures/fig-c5p7.png>), $\triangle A B C$ 中, $E 、 F$ 分别为 $A B 、 A C$ 中点, $C M 、 B N$ 为高, $E F$ 交 $M N$ 于 $P$, $O 、 H$ 分别为三角形的外心与垂心.
+求证: $A P \perp O H$.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c5a7.png>), 由 $\angle B M C=\angle B N C=90^{\circ}$ 知 $B 、 C$ 、 $N 、 M$ 四点共圆.
+所以 $A M \cdot A B=A N \cdot A C$. 又 $A E=\frac{1}{2} A B, A F=\frac{1}{2} A C$, 则 $A M \cdot A E=A N \cdot A F$, 即 $E 、 F 、 N 、 M$ 共圆.
+注意到由 $\angle A M H= \angle A N H=\angle A E O=\angle A F O=90^{\circ}$ 知 $A H 、 A O$ 分别为 $\triangle A M N 、 \triangle A E F$ 外接圆的直径.
+过 $A H$ 中点 $H^{\prime}$ 与 $A O$ 中点 $O^{\prime}$ 分别为 $\triangle A M N$ 与 $\triangle A E F$ 的外心, 且易知 $O^{\prime} H^{\prime} / / O H$. 故只需证 $A P \perp O^{\prime} H^{\prime}$, 只需证 $A 、 P$ 为 $\triangle A M N 、 \triangle A E F$ 外接圆的等幂点即可.
+注意到 $A$ 为两圆公共点, 而由 $E 、 F 、 N 、 M$ 共圆知 $P M \cdot P N=P E \cdot P F$. 故 $P$ 也为等幂点.
+综上所述, 原命题成立.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8. 如图(<FilePath:./figures/fig-c5p8.png>), 已知圆 $O$ 与两条平行线 $l_1$ 和 $l_2$ 相切; 第二个圆圆 $O_1$ 切 $l_1$ 于点 $A$, 外切圆 $O$ 于点 $C$; 第三个圆圆 $O_2$ 切 $l_2$ 于点 $B$, 外切圆 $O$ 于点 $D$, 外切圆 $O_1$ 于点 $E, A D$ 交 $B C$ 于 $Q$. 求证: $Q$ 是 $\triangle C D E$ 的外心.
+%%<SOLUTION>%%
+引理 (字母与原题无关). 如图(<FilePath:./figures/fig-c5a8-1.png>), 设 $\odot O_1 、 \odot O_2$ 外切于点 $C$, 直线 $l_1 / / l_2$, 且 $l_1$ 切 $\odot O_1$ 于点 $A, l_2$ 切 $\odot O_2$ 于点 $B$, 那么 $A 、 C 、 B$ 三点共线.
+引理的证明: $l_1 / / l_2 \Rightarrow O_1 A / / O_2 B \Rightarrow \angle A O_1 C=\angle B O_2 C \Rightarrow \angle A C O_1= 90^{\circ}-\frac{\angle A O_1 C}{2}=90^{\circ}-\frac{\angle B O_2 C}{2}=\angle O_2 C B \Rightarrow A 、 C 、 B$ 共线.
+回到原题, 如图(<FilePath:./figures/fig-c5a8-2.png>), 令 $\odot O$ 与 $l_1$ 切于 $G$, 与 $l_2$ 切于 $F$, 由引理知 $A, C, F$ 共线, $A$ 、 $E 、 B$ 共线,而 $\angle A E C=\angle G A C=\angle C F B$. 故 $C 、 E 、 B 、 F$ 四点共圆, 由割线定理, $A C \cdot A F=A E \cdot A B$, 从而 $A$ 关于 $\odot O 、 \odot O_2$ 等幂,所以 $A$ 在两圆的根轴上, 所以直线 $A D$ 为 $\odot O, \odot O_2$ 的根轴, 又 $\odot O$ 与 $\odot O_2$ 切于点 $D$, 则 $A D$ 为切线, 即 $Q D$ 为两圆公切线, 同理 $Q C$ 为 $\odot O$ 与 $\odot O_2$ 公切线, 从而 $Q$ 同时位于两个根轴上, 所以 $Q$ 为三圆根心.
+从而 $Q E$ 为 $\odot O_1 、 \odot O_2$ 的公切线.
+$Q C= Q D=Q E, Q$ 为 $\triangle C D E$ 外接圆圆心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9. 设四边形 $A B C D$ 的对角线交于点 $O$, 点 $M$ 、 $N$ 分别是 $A D 、 B C$ 的中点, 点 $H_1 、 H_2$ (不重合)分别是 $\triangle A O B$ 与 $\triangle C O D$ 的垂心.
+求证: $H_1 H_2 \perp M N$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c5a9.png>), 以 $A B$ 为直径作圆 $S$ 交 $A C$ 于 $F$, 交 $B D$ 于 $E$, 那么 $A E \perp B O, B F \perp A O$, 从而有 $H_1$ 为 $A E 、 B F$ 交点, 显然, $F$ 在以 $N$ 为圆心、 $N B$ 为半径 (即以 $B C$ 为直径) 的 $O N$ 上, $E$ 在以 $A O$ 为直径的 $\odot M$ 上, 因而, 直线 $B F$ 是 $\odot S 、 \odot N$ 的根轴, 直线 $A E$ 是 $\odot S 、 \odot M$ 的根轴.
+从而 $H_1=B F \cap A E$ 是 $\odot S 、 \odot M 、 \odot N$ 的根心 $\Rightarrow H_1$ 在 $\odot M 、 \odot N$ 根轴上, 同理可证, $H_2$ 在 $\odot M 、 \odot N$ 根轴上, 故 $H_1 H_2 \perp M N$ (根轴 $\perp$ 连心线).
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10. 两个大圆圆 $A$ 、圆 $B$ 相等且相交, 两个小圆圆 $C$ 、圆 $D$ 不等亦相交,且交点为 $P 、 Q$. 若圆 $C$ 、圆 $D$ 既同时与圆 $A$ 内切, 又同时与圆 $B$ 外切.
+求证: 直线 $P Q$ 平分线段 $A B$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c5a10.png>), 令 $A B$ 的中点为 $M$, 记圆 $C$ 与圆 $A$ 内切于 $S$, 与圆 $B$ 外切于 $T$, 设圆 $A$ 与圆 $B$ 的半径为 $R$, 圆 $C$ 的半径为 $r$, 则 $C A=S A-S C=R-r$, $C B=C T+T B=R+r$. 从而, $M$ 关于 $\odot C$ 的幂 $= M C^2-r^2=\frac{1}{2} \cdot\left(A C^2+B C^2\right)-M A^2-r^2 \text{(中线长公式)}=\frac{1}{2}\left((R+r)^2+(R-r)^2\right)-M C^2-r^2=R^2-M A^2$ 为与 $\odot C$ 无关的定值.
+同理 $M$ 关于 $\odot D$ 的幂 $=R^2-M A^2$. 所以 $M$ 在 $\odot C$ 与 $\odot D$ 的根轴, 即直线 $P Q$ 上.
+即 $P Q$ 过 $A B$ 中点 $M$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11. 在平面上有三个两两外离的圆 $\Gamma_1 、 \Gamma_2 、 \Gamma_3$, 对于这三个圆外的任意一点 $P$, 将六个点 $A_1 、 B_1 、 A_2 、 B_2 、 A_3 、 B_3$ 定义如下: 对于 $i=1,2,3, A_i 、 B_i$ 是圆 $\Gamma_i$ 上相异的两点, 使得直线 $P A_i 、 P B_i$ 均与圆 $\Gamma_i$ 相切.
+若 $A_1 B_1$ 、 $A_2 B_2 、 A_3 B_3$ 三线共点,则称此时的点 $P$ 为 "独特的". 求证: 若平面上存在独特的点, 则所有这样的点落在同一个圆上.
+%%<SOLUTION>%%
+证明: 记圆 $\Gamma_i(i=1,2,3)$ 的圆心、半径分别为 $O_i 、 r_i$. 设 $P$ 为一个独特的点, 且与其相应的三条直线 $A_1 B_1 、 A_2 B_2 、 A_3 B_3$ 交于点 $Q$. 以线段 $P Q$ 为直径作圆并记为圆 $\Gamma$, 其圆心、半径分别为 $O 、 r$.
+接下来证明: 所有独特的点都在圆 $\Gamma$ 上.
+如图(<FilePath:./figures/fig-c5a11.png>), 记 $P O_1$ 交 $A_1 B_1$ 于点 $X_1$. 由 $P O_1 \perp A_1 B_1$ 知, 点 $X_1$ 在圆 $\Gamma$ 上.
+由 $P A_1$ 与圆 $\Gamma_1$ 相切及射影定理知 $O_1 X_1 \cdot O_1 P= O_1 A_1^2=r_1^2$. 另一方面, $O_1 X_1 \cdot O_1 P$ 也是点 $O_1$ 对圆 $\Gamma$ 的幕, 则 $r_1^2=O_1 X_1 \cdot O_1 P=O_1 O^2-r^2 \Rightarrow r^2=O O_1^2-r_1^2$. 因此, $r^2$ 是点 $O$ 对圆 $\Gamma_1$ 的幕.
+同理, $r^2$ 也是点 $O$ 对圆 $\Gamma_2 、 \Gamma_3$ 的幂.
+综上, $O$ 是所给定的三个圆 $\Gamma_1 、 \Gamma_2 、 \Gamma_3$ 的根心.
+因为点 $O$ 对这三个圆的幂的平方根 $r$ 与点 $P$ 的选取无关, 所以, 所有独特的点都在圆 $\Gamma$ 上.
+%%<REMARK>%%
+注:: 若三个圆的根心位于无穷远点 (相应的三条根轴两两平行), 则在平面上不存在独特的点, 这与题目中的论述是相容的.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12. 等腰 $\triangle A B C, A B=A C, P$ 在边 $B C$ 的延长线上, $X$ 和 $Y$ 分别是直线 $A B$ 和 $A C$ 上的点.
+$P X / / A C, P Y / / A B, T$ 是 $\triangle A B C$ 外接圆上弧 $\overparen{B C}$ 的中点.
+证明: $P T \perp X Y$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c5a12.png>), 设 $M$ 和 $N$ 分别是 $T$ 在 $P X$ 和 $P Y$ 上的正交投影, 可以得到 $\frac{P Y}{A B}=\frac{P C}{B C}, P N=P B \sin \frac{A}{2}$. 所以, $P N \cdot P Y=P B \cdot P C \cdot \frac{A B}{B C} \sin \frac{A}{2}$. 同理可得 $P M \cdot P X=P B \cdot P C \cdot \frac{A C}{B C} \sin \frac{A}{2}$. 由于 $A B=A C$, 所以, $P X \cdot P M=P N \cdot P Y$. 因为 $M$ 和 $N$ 分别在以 $T X$ 和 $T Y$ 为直径的圆上,故点 $P$ 在分别以 $T X$ 和 $T Y$ 为直径的两圆的根轴上.
+设 $K$ 是分别以 $T X$ 和 $T Y$ 为直径的两圆的另外一个交点, 于是, $T 、 K$ 和 $P$ 三点共线.
+又 $\overparen{Y K T}=\overparen{X K T}=\frac{\pi}{2}$, 所以, $P T \perp X Y$. 这样就证明了结论.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13. 已知非等腰锐角 $\triangle A B C, A A_1 、 B B_1$ 是它的两条高, 又线段 $A_1 B_1$ 与平行于 $A B$ 的中位线相交于点 $C^{\prime}$. 证明: 经过 $\triangle A B C$ 的外心和垂心的直线与直线 $C C^{\prime}$ 垂直.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c5a13.png>), 在 $\triangle A B C$ 中, 分别将边 $B C$ 、 $C A$ 的中点记作 $A_0 、 B_0$, 将三角形的垂心记作 $H$, 外心记作 $O$. 因为点 $A 、 B 、 A_1 、 B_1$ 位于同一圆周上 ( $A B$ 为其直径), 所以, $\angle C B_1 A_1= \angle C B A=\angle C A_0 B_0$. 故点 $A_0 、 B_0 、 A_1 、 B_1$ 位于同一圆周 $W_1$ 上.
+将以 $C H$ 为直径的圆周记作 $W_2$, 将以 $C O$ 为直径的圆周记作 $W_3$. 易知, 点
+$A_1 、 B_1$ 位于圆周 $W_2$ 上, 而点 $A_0 、 B_0$ 位于圆周 $W_3$ 上.
+因此, 点 $C^{\prime}$ 关于圆 $W_1$ 和圆 $W_2$ 有相同的幂, 关于圆 $W_1$ 和圆 $W_3$ 也有相同的幕.
+从而, 点 $C^{\prime}$ 关于圆 $W_2$ 和圆 $W_3$ 有相同的幕, 即位于它们的根轴之上.
+所以, 直线 $C C^{\prime}$ 就是圆 $W_2$ 和圆 $W_3$ 的根轴.
+故 $C C^{\prime}$ 垂直于这两个圆的圆心连线.
+又圆 $W_2$ 和圆 $W_3$ 的圆心分别为线段 $C H$ 和 $C O$ 的中点, 它们的连线平行于直线 $O H$, 则 $O H \perp C C^{\prime}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14. $\triangle A B C$ 中, $\odot I_1 、 \odot I_2 、 \odot I_3$ 分别是 $\angle A 、 \angle B 、 \angle C$ 所对的旁切圆, $I 、 G$ 是 $\triangle A B C$ 的内心、重心, 求证: $\odot I_1 、 \odot I_2 、 \odot I_3$ 的根心在 $I G$ 上.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c5a14.png>), 作 $I_2 H_2 \perp B C, I_3 H_3 \perp B C$, 垂足分别为 $H_2 、 H_3$. 熟知 $B H_2=C_3=\frac{A B+B C+C A}{2}$, 取 $B C$ 中点, 则 $M H_2=M_3$. 所以 $M$ 在 $\odot I_2 、 \odot I_3$ 根轴上.
+熟知 $A 、 G 、 M$ 共线且 $A G=2 G M$. 延长 $I G$ 至 $T$ 使 $I G=2 G T$, 则 $\triangle A G I \backsim \triangle M G T$. 从而 $\angle G M T= \angle G A I$, 则 $M T / / A I$. 又 $A I \perp I_2 I_3$, 所以 $M T \perp I_2 I_3$, 故 $M T$ 为 $\odot I_2 、 \odot I_3$ 的根轴, $T$ 在根轴上.
+同理 $T$ 在 $\odot I_1$ 与 $\odot O_2 、 \odot I_1$ 与 $\odot O_3$ 的根轴上.
+故 $T$ 为三圆的根心, 且 $T$ 在 $I G$ 上,得证.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15. $A B 、 A C$ 为 $\odot O$ 切线, $A D E$ 为一条割线, $M$ 为 $D E$ 中点, $P$ 为一动点, 满足 $M 、 O 、 P$ 三点共线, $\odot P$ 为以 $P$ 点为圆心, $P D$ 为半径的圆.
+证明: $C$ 点在 $\triangle B M P$ 外接圆与 $\odot P$ 的根轴上.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c5a15.png>), 作 $P R \perp A C$, 其延长线交 $B C$ 延长线于 $S$, 再过 $A$ 作 $A N \perp B C$, 则 $N$ 为 $B C$ 的中点, 且 $\triangle A C N \backsim \triangle S C R \Rightarrow C B \cdot C S=2 C A \cdot C R$. 因为 $\angle O M A=\angle O B A=\angle O C A=90^{\circ}$. 所以 $A$ 、 $C 、 O 、 M 、 B$ 五点共圆.
+则 $\angle B M P=\angle B M A+ 90^{\circ}=\angle B C A+90^{\circ}=180^{\circ}-\angle R S C$. 故 $B 、 M$ 、 $P 、 S$ 四点共圆.
+$C$ 点对 $\triangle B M P$ 外接圆的幂为: $-C B \cdot C S=-2 C A \cdot C R$. 又因为 $P A^2-A O^2=\left(A M^2+M P^2\right)-\left(A M^2+M O^2\right)=M P^2-M O^2 . P D^2-O D^2=\left(D M^2+\right. \left.M P^2\right)-\left(D M^2+M O^2\right)=M P^2-M O^2$. 所以 $P A^2-A O^2=P D^2-D O^2 \Rightarrow P A^2-P D^2=A O^2-D O^2 \cdots$ (1). 而 $A$ 对 $\odot O$ 的幕有: $A O^2-D O^2=A D \cdot A E$.
+从而 $C$ 对 $\odot P$ 的幂为: $C P^2-P D^2 \stackrel{\text { 由 (1) }}{=} C P^2-\left[A P^2-\left(A O^2-D O^2\right)\right]=C P^2- A P^2+A D \cdot A E=C P^2-A P^2+A C^2=\left(C R^2+R P^2\right)-\left(A R^2+R P^2\right)+ A C^2=C R^2-(A C+C R)^2+A C^2=-2 C A \cdot C R$. 所以点 $C$ 对 $\odot P$ 的幕等于 $C$ 到 $\triangle B M P$ 外接圆的幂.
+故由根轴定理知, $C$ 点在上述两圆根轴上.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16. 已知 $Q$ 为以 $A B$ 为直径的圆上的一点, $Q \neq A 、 B, Q$ 在 $A B$ 上的投影为 $H$, 以 $Q$ 为圆心 $Q H$ 为半径的圆与以 $A B$ 为直径的圆交于点 $C 、 D$. 证明: $C D$ 平分线段 $Q H$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c5a16.png>), 设直线 $Q H$ 与 $\odot Q$ 交于点 $S$, 与 $\odot O$ 交于点 $T$, 设 $C D$ 与 $Q H$ 交于点 $M$, 则 $M$ 在两圆根轴 $C D$ 上, 故 $M$ 关于 $\odot Q, \odot O$ 等幕, 即 $M H$. $M S=M C \cdot M D=M Q \cdot M T$, 又由垂径定理知 $Q H=H T, Q H=Q S$, 代入上式知 $M H \cdot(M Q+ Q H)=M Q \cdot(M H+Q H) \Rightarrow M H=M Q$, 所以 $M$ 平分 $Q H$, 即 $C D$ 平分线段 $Q H$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17. 已知圆 $\Gamma$ 和直线 $l$ 不相交, $P 、 Q 、 R 、 S$ 为圆 $\Gamma$ 上的点, $P Q$ 与 $R S 、 P S$ 与 $Q R$ 分别交于点 $A 、 B, A 、 B$ 在直线 $l$ 上.
+试确定所有以 $A B$ 为直径的圆的公共点.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c5a17.png>), 设圆 $\Gamma$ 的圆心为 $O$, 半径为 $r$. 由密克定理知, $\triangle A P S$ 和 $\triangle B R S$ 的外接圆交于点 $K$, 且 $K$ 在边 $A B$ 上.
+由圆幂定理得: $A O^2-r^2=A S \cdot A R= A K \cdot A B=A K^2+A K \cdot K B, B O^2-r^2=B S \cdot B P=B K \cdot B A=B K^2+B K \cdot K A$. 于是 $A O^2- A K^2=B O^2-B K^2$, 即 $O K$ 为 $A B$ 的垂线, 且 $A K K B=O K^2-r^2$.
+对任何一对满足条件的点 $\{A, B\}$, 因为 $O 、 K$ 、 $r$ 是固定的, 所以, 以 $A B$ 为直径的圆一定过直线
+$O K$ 上的两点, 其到直线 $l$ 距离为 $\sqrt{O K^2-r^2}$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题18. 凸四边形 $A B C D$ 的两条对角线交于点 $O, \triangle A O B$ 和 $\triangle C O D$ 的重心分别为 $M_1$ 和 $M_2, \triangle B O C$ 和 $\triangle A O D$ 的垂心分别为 $H_1$ 和 $H_2$. 证明: $M_1 M_2 \perp \mathrm{H}_1 \mathrm{H}_2$.
+%%<SOLUTION>%%
+如图(<FilePath:./figures/fig-c5a18.png>), 作 $\triangle A O D$ 的两条高 $A A_1$ 和 $D D_1$, 作 $\triangle B O C$ 的两条高 $B B_1$ 和
+$C C_1$. 因为 $\angle A A_1 B=90^{\circ}=\angle B B_1 A$, 所以, $A 、 B 、 B_1$ 、 $A_1$ 四点共圆且圆心为 $A B$ 的中点 $E$. 同理, $C_1 、 C 、 D$ 、 $D_1$ 四点共圆且圆心为 $C D$ 的中点 $F$. 因此, $E F$ 为 $\odot E$ 和 $\odot F$ 的连心线.
+又 $A 、 D_1 、 A_1 、 D$ 四点共圆, 则有 $H_2 A \cdot H_2 A_1=H_2 D_1 \cdot H_2 D$. 由于 $H_2 A \cdot H_2 A_1$ 和 $H_2 D_1 \cdot H_2 D$ 恰分别为点 $H_2$ 关于 $\odot E$ 和 $\odot F$ 的幕, 所以, 点 $H_2$ 在 $\odot E$ 和 $\odot F$ 的根轴上.
+同理, 点 $H_1$ 也在这条根轴上.
+故直线 $H_1 H_2$ 就是 $\odot E$ 和 $\odot F$ 的根轴.
+从而 $H_1 H_2 \perp E F$. 又 $M_1 M_2 / / E F$, 所以,
+$$
+M_1 M_2 \perp H_1 H_2 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题19. 在凸五边形 $A B C D E$ 中, $A B=B C, \angle B C D=\angle E A B=90^{\circ}, P$ 为形内一点, 使得 $A P \perp B E, C P \perp B D$. 证明: $B P \perp D E$.
+%%<SOLUTION>%%
+证法 1: 如图(<FilePath:./figures/fig-c5a19.png>), 过点 $P$ 作 $P H \perp D E$ 于点 $H$. 因为
+$$
+\angle P F D=\angle P G E=90^{\circ}=\angle P H D=\angle P H E,
+$$
+所以, $F 、 D 、 H 、 P$ 和 $P 、 H 、 E 、 G$ 分别四点共圆, 记两圆为 $\odot M_1$ 和 $\odot M_2$. 又 $B F \cdot B D=B C^2=B A^2=B G \cdot B E$, 所以, $F$ 、 $D 、 E 、 G$ 四点共圆, 记此圆为 $\odot M_3$.
+易见, $\odot M_1 、 \odot M_2 、 \odot M_3$ 两两之间的公共弦恰为 $P H 、 E G 、 F D$. 由根心定理知, 这三条根轴交于一点.
+又已知直线 $D F$ 和 $E G$ 交于点 $B$, 因此, 直线 $P H$ 过点 $B$.
+由 $P H \perp D E$, 知 $B P \perp D E$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题19. 在凸五边形 $A B C D E$ 中, $A B=B C, \angle B C D=\angle E A B=90^{\circ}, P$ 为形内一点, 使得 $A P \perp B E, C P \perp B D$. 证明: $B P \perp D E$.
+%%<SOLUTION>%%
+证法 2 : 记 $B P$ 的中点为 $O$.
+因为 $\angle B F P=90^{\circ}=\angle B G P$, 所以, $B 、 F 、 P 、 G$ 四点共圆且圆心为点 $O$.
+又因为 $B A=B C, \angle B C D=90^{\circ}=\angle B A E$, 故以点 $B$ 为圆心 $B C$ 为半径的 $\odot B$ 过点 $A$, 且直线 $D C$ 和 $E A$ 都是 $\odot B$ 的切线, 切点分别为 $C$ 和 $A$.
+所以, $D C^2=D F \cdot D B$.
+故点 $D$ 在 $\odot O$ 与 $\odot B$ 的根轴上.
+同理, 点 $E$ 在 $\odot O$ 与 $\odot B$ 的根轴上.
+因此, 直线 $D E$ 为 $\odot O$ 与 $\odot B$ 的根轴.
+则 $B O \perp D E$, 即 $B P \perp D E$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题20. 在 $\angle A O B$ 内部取一点 $C$, 过点 $C$ 作 $C D \perp O A$ 于点 $D$, 作 $C E \perp O B$ 于点 $E$, 再过点 $D$ 作 $D N \perp O B$ 于点 $N$, 过点 $E$ 作 $E M \perp O A$ 于点 $M$. 证明: $O C \perp M N$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c5a20.png>), 过点 $C$ 作 $C H \perp M N$ 于点 $H$.
+因为
+$$
+\angle C D M=\angle C E N=90^{\circ},
+$$
+所以, $C 、 D 、 M 、 H$ 和 $C 、 H 、 N 、 E$ 分别四点共圆, 记两圆为 $\odot O_1$ 和 $\odot O_2$. 由
+$$
+\angle D M E=90^{\circ}=\angle D N E,
+$$
+知 $D 、 M 、 N 、 E$ 四点共圆, 记之为 $\odot O_3$.
+易见, 直线 $C H 、 E N 、 D M$ 恰为 $\odot O_1 、 \odot O_2 、 \odot O_3$ 两两之间的三条根轴.
+又因前两条直线交于点 $O$, 故由根心定理知直线 $C H$ 过点 $O$, 即 $C 、 H 、 O$ 三点共线.
+又 $C H \perp M N$, 所以, $O C \perp M N$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题21. 设锐角 $\triangle A B C$ 的外心为 $O, \triangle B O C$ 的外心为 $T$, 点 $M$ 为边 $B C$ 的中点, 在边 $A B 、 A C$ 上分别取点 $D 、 E$, 使得 $\angle A D M=\angle A E M=\angle B A C$. 证明: $A T \perp D E$.
+%%<SOLUTION>%%
+证明: 如图(<FilePath:./figures/fig-c5a21.png>), 由 $O$ 是 $\triangle A B C$ 的外心, $T$ 是 $\triangle B O C$ 的外心知, $O 、 M 、 T$ 三点共线, 且 $O T \perp B C$.
+延长 $D M 、 A C$ 交于点 $G$, 延长 $E M 、 A B$ 交于点 $F$, 连结 $F T 、 B T 、 G T$. 于是, 有
+$$
+\begin{aligned}
+\angle B T O & =2 \angle B C O=180^{\circ}-\angle B O C \\
+& =180^{\circ}-2 \angle B A C=\angle A F E .
+\end{aligned}
+$$
+故 $B 、 F 、 T 、 M$ 四点共圆.
+则 $\angle B F T=180^{\circ}-\angle B M T=90^{\circ}$.
+同理, $\angle C G T=90^{\circ}$.
+过点 $T$ 作 $T H \perp D E$ 于点 $H$, 于是, $D 、 F 、 T 、 H$ 和 $H 、 T 、 G 、 E$ 分别四点共圆, 记两圆为 $\odot S_1$ 和 $\odot S_2$.
+又 $\angle F D G=180^{\circ}-\angle A D G=180^{\circ}-\angle A E F=\angle F E G$,
+所以, $D 、 F 、 G 、 E$ 四点共圆, 记之为 $\odot S_3$.
+由于直线 $T H 、 G E 、 D F$ 恰为 $\odot S_1 、 \odot S_2 、 \odot S_3$ 两两之间的三条根轴, 且 $G E$ 与 $D F$ 交于点 $A$, 故由根心定理知 $T H$ 过点 $A$.
+因为 $T H \perp D E$, 所以, $A T \perp D E$.
+%%PROBLEM_END%%
+
+

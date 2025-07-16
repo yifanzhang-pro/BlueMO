@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例8 求所有满足下列条件的函数 $f: \\mathbf{N}_{+} \\rightarrow \\mathbf{N}_{+}$, 使得\n(1) $f(2)=2$;\n(2) $f(m m)=f(m) \\cdot f(n)$ 对所有 $m, n \\in \\mathbf{N}_{+}$成立;\n(3) 若 $m<n$, 则 $f(m)<f(n)$.",
+    "solution": "解:由(2), 取 $m=n=1$ 代入, 得\n$$\nf(1)=f(1 \\cdot 1)=f(1)^2,\n$$\n所以 $f(1)=1$.\n再取 $m=n=2$ 代入(2) 中, 又\n$$\nf(4)=f(2)^2=4 .\n$$\n现在利用 (3), 由于 $f(2)<f(3)<f(4)$, 可知 $2<f(3)<4$, 而 $f(3) \\in\\mathbf{N}_{+}$, 故 $f(3)=3$.\n因此, $f(6)=f(2 \\cdot 3)=f(2) \\cdot f(3)=6$.\n同样, 由 $f(4)<f(5)<f(6)$, 我们可确定 $f(5)=5$.\n上述过程已经告诉了我们该如何解决问题.\n我们可以通过数学归纳法来确定 $f$.\n假设已经证得 $f(1)=1, f(2)=2, \\cdots, f(2 k)=2 k$.\n由(2), 我们有\n$f(2 k+2)=f(2) \\cdot f(k+1)=2(k+1)=2 k+2(k+1 \\leqslant 2 k)$.\n而由(3), 得\n$$\n2 k=f(2 k)<f(2 k+1)<f(2 k+2)=2 k+2 .\n$$\n从而 $f(2 k+1)=2 k+1$.\n因此, 由数学归纳法即知 $f(n)=n$ 对一切 $n \\in \\mathbf{N}_{+}$成立.",
+    "remark": "",
+    "figures": []
+}

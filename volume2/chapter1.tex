@@ -1,0 +1,725 @@
+
+%%TEXT_BEGIN%%
+映射与函数
+1.1 映射映射是数学中的一个基本概念, 几乎每一个数学分支都要用到它.
+定义 1.1 设 $A$ 和 $B$ 是两个给定的集合, 如果按照某种对应法则 $f$, 使得对于每一个 $x \in A$, 通过 $f$, 唯一确定一个 $y \in B$, 那么就称 $f$ 是 $A$ 到 $B$ 的一个映射,记为
+$$
+f: A \rightarrow B .
+$$
+集合 $A$ 叫做映射 $f$ 的定义域, 集合 $B$ 叫做映射 $f$ 的值域, 称 $y$ 为 $x$ 在映射 $f$ 作用下的象, 记作 $y=f(x)$, 并用符号
+$$
+f: x \mapsto y
+$$
+表示,称 $x$ 为 $y$ 的一个原象.
+定义 1.2 设 $f$ 是 $A$ 到 $B$ 的一个映射, 如果对任意的 $a_1, a_2 \in A$, 当 $a_1 \neq a_2$ 时, 必有 $f\left(a_1\right) \neq f\left(a_2\right)$, 那么称 $f$ 是 $A$ 到 $B$ 的一个单射.
+如果对于任意 $b \in B$,均存在 $a \in A$, 使得 $f(a)=b$, 那么称 $f$ 是 $A$ 到 $B$ 的一个满射.
+若 $A=B, f$ 定义为
+$$
+f: x \mapsto x \text { (其中 } x \in A \text { ), }
+$$
+则这个映射称为 $A$ 上的恒等映射 (或单位映射).
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+定义 1.3 设 $f$ 是 $A$ 到 $B$ 的一个映射.
+如果 $f$ 既是单射, 又是满射, 那么 $f$ 称为一一对应 (或双射).
+恒等映射是一一对应, 例 5(1) 中的映射 $f_1, f_2$ 也都是一一对应.
+如果集合 $A$ 与集合 $B$ 之间存在一一对应 $f$, 那么集合 $A$ 与集合 $B$ 的元素个数相等, 即 $|A|=|B|$.
+反过来, 如果 $|A|=|B|$, 那么在集合 $A$ 与集合 $B$ 之间必存在一个一一对应, 这只要将 $A$ 中的第一个元素与 $B$ 中的第一个元素对应, $A$ 中的第二个元素与 $B$ 中的第二个元素对应, 依此类推即可.
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+1.2 函数函数也是数学中的一个基本而又重要的概念.
+在现代数学中, 它几乎渗透到各个分支中.
+定义 1.4 从非空数集 $A$ 到非空数集 $B$ 的一个映射 $f: A \rightarrow B$ 叫做 $A$ 到 $B$ 的函数, 记作:
+$$
+y=f(x) \text {, 其中 } x \in A, y \in B \text {. }
+$$
+这里的数集 $A$ 称为函数 $f$ 的定义域.
+对于 $A$ 中的每一个元素 $x$, 根据对应法则 $f$ 所对应的 $B$ 中的元素 $y$, 称为 $f$ 在点 $x$ 的函数值, 记为 $f(x)$. 全体函数值的集合
+$$
+f(A)=\{y \mid y=f(x), x \in A\} \subseteq B
+$$
+称为函数 $f$ 的值域.
+由于上述定义中的数集 $B$ 常用实数集 $\mathbf{R}$ 来代替, 定义域常用数集 $D$ 表示.
+于是确定函数的主要因素是两个: 对应法则 (映射) $f$ 和定义域.
+所以,我们也常用
+$$
+y=f(x), x \in D
+$$
+来表示一个函数,并称 $x$ 为自变量, $y$ 为因变量.
+根据函数 $y=f(x), x \in D$ 的定义, 数集 $D$ 中的每一个数 $x$ 与值域 $f(D)$ 中的数 $y$ 相对应, 因而可以用有序数对集
+$$
+G=\{(x, y) \mid y=f(x), x \in D\}
+$$
+表示函数 $y==f(x), x \in D$.
+点集 $G$ 在坐标平面上描绘出这个函数的图象.
+在中学数学课程中, 函数的表示法主要有三种: 列表法, 图象法, 解析法.
+在用解析法表示函数时, 有时无法只用一个解析式来表示函数, 而只能在定义域的不同部分用不同的解析式来表示, 这类函数称为分段函数.
+例如, 函数
+$$
+f(x)= \begin{cases}\sin x, & \text { 当 } 0 \leqslant x \leqslant \frac{1}{2} \text { 时, } \\ x^2, & \text { 当 } \frac{1}{2}<x \leqslant 1 \text { 时, } \\ \pi, & \text { 当 } 1<x \leqslant 8 \text { 时.
+}\end{cases}
+$$
+分段函数的一般形式为
+$$
+f(x)=\left\{\begin{array}{cc}
+f_1(x), & \text { 当 } x \in D_1 \text { 时, } \\
+f_2(x), & \text { 当 } x \in D_2 \text { 时, } \\
+& \cdots \ldots \\
+f_n(x), & \text { 当 } x \in D_n \text { 时.
+}
+\end{array}\right.
+$$
+其中, $D_i \cap D_j=\varnothing, i \neq j$, 此时函数 $f(x)$ 的定义域为
+$$
+D=D_1 \cup D_2 \cup \cdots \cup D_n .
+$$
+有些函数无法用列表法、图象法和解析法来表示, 只能用语言来描述.
+例如, 函数
+$$
+D(x)= \begin{cases}1, & \text { 当 } x \text { 为有理数时, } \\ 0, & \text { 当 } x \text { 为无理数时.
+}\end{cases}
+$$
+有时候, 函数的自变量与因变量是通过另外一些变量才建立起它们之间的对应关系的.
+定义 1.5 设有两个函数:
+$$
+\begin{aligned}
+& y=f(u), u \in D ; \\
+& u=g(x), x \in E .
+\end{aligned}
+$$
+如果集合 $E^*=\{x \mid g(x) \in D, x \in E\} \neq  \varnothing$, 则对每一个 $x \in E^*$, 可通过函数 $g$ 对应 $D$ 中唯一一个值 $u$, 而 $u$ 又通过函数 $f$ 对应唯一一个值 $y$. 这样就确定了一个定义在 $E^*$ 上, 以 $x$ 为自变量, $y$ 为因变量的函数, 记作
+$$
+y=f[g(x)], x \in E^*
+$$
+或
+$$
+y=(f \circ g)(x), x \in E^*,
+$$
+称为由函数 $f$ 和 $g$ 经过复合运算得到的复合函数.
+例如, 函数 $y=f(u)==\sqrt{u}, u \in D=[0,+\infty), u=g(x)=1-x^2 ,x \in E=(-\infty,+\infty)$, 经过复合, 得
+$$
+y==f[g(x)]=\sqrt{1-x^2} .
+$$
+其定义域 $E^*=[-1,1]$,值域 $f\left[g\left(E^*\right)\right]=[0,1]$.
+自变量与因变量的关系往往是相对的.
+定义 1.6 设函数
+$$
+y=f(x), x \in D .
+$$
+若对于值域 $f(D)$ 中每一个值 $y_0, D$ 中有且只有一个值 $x_0$, 使得
+$$
+f\left(x_0\right)=y_0,
+$$
+则按此对应法则能得到一个定义在 $f(D)$ 上的函数, 称这个函数为 $f$ 的反函数, 记作:
+$$
+f^{-1}: f(D) \rightarrow D
+$$
+或
+$$
+x=f^{-1}(y), y \in f(D) \text {. }
+$$
+习惯上, 我们用 $x$ 作为自变量的记号, $y$ 为因变量的记号, 因此, 函数(1)的反函数(2)可改写为
+$$
+y=f^{-1}(x), x \in f(D) .
+$$
+%%TEXT_END%%
+
+
+
+%%TEXT_BEGIN%%
+对于函数的图象, 有如下常见的变换:
+(1) 平移变换将函数 $y=f(x)$ 的图象向左(或向右) 平移 $h(h>0)$ 个单位后就得到函数 $y=f(x+h)$ (或 $y=f(x-h)$ ) 的图象; 将函数 $y=f(x)$ 的图象向上 (或向下) 平移 $k(k>0)$ 个单位后就得到函数 $y=f(x)+k$ (或 $y=f(x)-k)$ 的图象.
+(2) 伸缩变换将函数 $y=f(x)$ 的图象上所有点的横坐标变到原来的 $\frac{1}{\omega}$ 倍就得到函数 $y=f(\omega x)$ 的图象; 将函数 $y=f(x)$ 的图象上所有点的纵坐标变到原来的 $\frac{1}{\omega}$ 倍就得到函数 $y=\frac{f(x)}{\omega}$. 的图象.
+(3) 对称变换函数 $y=f(x)$ 的图象与函数 $y=-f(x), y=f(-x) ,y=-f(-x)$ 的图象分别关于 $x$ 轴、 $y$ 轴、原点对称.
+(4) 翻转变换将函数 $y=f(x)$ 的图象在 $x$ 轴上方的部分不变, $x$ 轴下方的部分翻转到 $x$ 轴的上方就得到函数 $y=|f(x)|$ 的图象.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设集合 $A=\{a, b, c\}, B=\{x, y, z\}$.
+判断以下三种对应:
+$$
+\begin{aligned}
+& f: a \mapsto y, b \mapsto z, c \mapsto x, \\
+& g: a \mapsto y, c \mapsto x, \\
+& h: a \mapsto y, b \mapsto z, c \mapsto x, c \mapsto z,
+\end{aligned}
+$$
+是否是 $A$ 到 $B$ 的映射.
+%%<SOLUTION>%%
+解:$$
+f: a \mapsto y, b \mapsto z, c \mapsto x
+$$
+是 $A$ 到 $B$ 的一个映射.
+而
+$$
+g: a \mapsto y, c \longmapsto x
+$$
+不是 $A$ 到 $B$ 的映射, 因为 $b$ 在 $g$ 的作用下没有象.
+$$
+h: a \mapsto y, b \mapsto z, c \longmapsto x, c \mapsto z
+$$
+也不是 $A$ 到 $B$ 的映射.
+因为 $A$ 中元素 $c$ 有 $B$ 中两个元素 $x$ 和 $z$ 与它对应.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2 设 $A=\left\{a_1, a_2, a_3\right\}, B=\{-1,0,1\}$.
+(1) 问从 $A$ 到 $B$ 的不同的映射有多少个?
+(2) 从 $A$ 到 $B$ 的映射满足 $f\left(a_1\right)>f\left(a_2\right) \geqslant f\left(a_3\right)$, 确定这样的映射 $f$ : $A \rightarrow B$ 的个数.
+%%<SOLUTION>%%
+解:(1) 确定 $a_1$ 的象,有 3 种方法; 确定 $a_2$ 的象, 也有 3 种方法; 确定 $a_3$ 的象,还是有 3 种方法.
+所以, 从 $A$ 到 $B$ 不同的映射共有
+$$
+3 \times 3 \times 3=27 \text { (个). }
+$$
+(2) 由 $f\left(a_1\right)>f\left(a_2\right) \geqslant f\left(a_3\right)$ 知, $f\left(a_1\right)=0 或 1$.
+若 $f\left(a_1\right)=0$, 则 $f\left(a_2\right)=f\left(a_3\right)=-1$.
+若 $f\left(a_1\right)=1$, 则 $f\left(a_2\right)=f\left(a_3\right)=0$, 或 $f\left(a_2\right)=f\left(a_3\right)=-1$, 或 $f\left(a_2\right)=0$, $f\left(a_3\right)=-1$.
+综上,共有 4 种满足题意的映射.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3 设 $A=\left\{a_1, a_2, a_3\right\}, B=\left\{b_1, b_2, b_3, b_4\right\}$.
+(1) 写出一个 $f: A \rightarrow B$, 使得 $f$ 是单射, 并求 $A$ 到 $B$ 的单射个数;
+(2) 写出一个 $f: A \rightarrow B$, 使得 $f$ 不是单射, 并求所有这种映射的个数;
+(3) $A$ 到 $B$ 的映射能否是满射?
+%%<SOLUTION>%%
+解:(1) 映射
+$$
+f: a_1 \mapsto b_1, a_2 \mapsto b_2, a_3 \mapsto b_3
+$$
+就是 $A$ 到 $B$ 的一个单射.
+这种映射的个数为 $\mathrm{P}_4^3=24$ (个).
+(2) 映射
+$$
+f: a_1 \mapsto b_1, a_2 \mapsto b_1, a_3 \mapsto b_1
+$$
+即为所求.
+这种映射的个数为 $4^3-\mathrm{P}_4^3=40$ (个).
+(3) 答案是否定的.
+由于集合 $A$ 中的每一个元素恰与集合 $B$ 中的一个元素对应, 而 $|A|=3,|B|=4$ (用 $|A|$ 表示集合 $A$ 的元素个数), 所以集合 $B$ 中至少有一个元素,在集合 $A$ 中找不到与它对应的元素.
+因而 $A$ 到 $B$ 的满射不存在.
+一般地, 如果 $A$ 到 $B$ 有一个单射, 那么 $|A| \leqslant|B|$; 如果 $A$ 到 $B$ 有一个满射, 那么 $|A| \geqslant|B|$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4 $\mathbf{N}_{+}$是正整数集合, $\mathbf{N}_{+}$到 $\mathbf{N}_{+}$的映射 $p 、 q$ 定义如下:
+$$
+\begin{gathered}
+p(1)=2, p(2)=3, p(3)=4, p(4)=1 . \\
+p(n)=n, \text { 当 } n \geqslant 5 \text { 时; } \\
+q(1)=3, q(2)=4, q(3)=2, q(4)=1 . \\
+q(n)=n, \text { 当 } n \geqslant 5 \text { 时.
+}
+\end{gathered}
+$$
+(1) 作出 $\mathbf{N}_{+}$到 $\mathbf{N}_{+}$的映射 $f$, 使得对一切 $n \in \mathbf{N}_{+}$都有
+$$
+f(f(n))=p(n)+2 .
+$$
+举出这样的映射 $f$ 的一个例子;
+(2) 证明: $\mathbf{N}_{+}$到 $\mathbf{N}_{+}$的任何映射 $f$, 都不可能使得对一切 $n \in \mathbf{N}_{+}$, 都有
+$$
+f(f(n))=q(n)+2 .
+$$
+%%<SOLUTION>%%
+解:(1) 由 $p(n)$ 的定义及 $f(f(n))=p(n)+2$, 可以作出映射的对应表:
+$$
+\begin{aligned}
+& 1 \rightarrow 4 \rightarrow 3 \rightarrow 6 \rightarrow 8 \rightarrow 10 \rightarrow 12 \rightarrow \cdots \\
+& 2 \rightarrow 5 \rightarrow 7 \rightarrow 9 \rightarrow 11 \rightarrow 13 \rightarrow 15 \rightarrow \cdots
+\end{aligned}
+$$
+于是可构造出 $f(n)$, 对应关系 $f(1)=2, f(2)=4, f(3)=7, f(4)=5, f(5)=3$. 当 $n(\geqslant 6)$ 是偶数时, $f(n)=n+3$; 当 $n(\geqslant 6)$ 是奇数时, $f(n)=n-1$. 这个映射满足 $f(f(n))= p(n)+2$.
+(2) 用反证法.
+假设存在映射 $f$, 使得对一切 $n \in \mathbf{N}_{+}, f(f(n))=q(n)+$ 2 , 那么有
+$$
+\begin{aligned}
+& f(f(1))=q(1)+2=5, f(f(5))=q(5)+2=7, \cdots, \\
+& f(f(2))=q(2)+2=6, \\
+& f(f(6))=q(6)+2=8, \cdots, f(f(3))=q(3)+2=4,
+\end{aligned}
+$$
+$f(f(4))=q(4)+2=3 . f(f(n))$ 的对应的值是
+$$
+\begin{aligned}
+& 1 \rightarrow 5 \rightarrow 7 \rightarrow 9 \rightarrow 11 \rightarrow \cdots, \\
+& 2 \rightarrow 6 \rightarrow 8 \rightarrow 10 \rightarrow 12 \rightarrow \cdots, \\
+& 3 \rightarrow 4 \rightarrow 3 .
+\end{aligned}
+$$
+由于 $q$ 是单射, 因此 $f$ 也是单射.
+设
+$$
+f(3)=a, f(4)=b .
+$$
+那么 $f(a)=f(f(3))=4, f(b)=f(f(4))=3$. 所以
+$$
+f(f(a))=f(4)=b, f(f(b))=f(3)=a .
+$$
+若 $b \geqslant 5$, 则
+$$
+\begin{gathered}
+a=f(f(b))=q(b)+2=b+2 \geqslant 7, \\
+b=f(f(a))=q(a)+2=a+2=b+4,
+\end{gathered}
+$$
+矛盾.
+若 $a \geqslant 5$, 同样可推得矛盾.
+若 $a \leqslant 4, b \leqslant 4$, 则
+$$
+\begin{aligned}
+& a=q(b)+2 \geqslant 3, \\
+& b=q(a)+2 \geqslant 3 .
+\end{aligned}
+$$
+于是 $a 、 b$ 只能是 $3 、 4$ 或 $4 、 3$.
+当 $a=3, b=4$ 时,
+$$
+f(f(3))=3 \neq q(3)+2 ;
+$$
+当 $a=4, b=3$ 时,
+$$
+f(f(3))=3 \neq q(3)+2 .
+$$
+因此, 对一切 $n \in \mathbf{N}_{+}$, 使 $f(f(n))=q(n)+2$ 的映射 $f$ 不存在.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5 设 $A=\{0,1,2,3,4,5,6\}, f: A \rightarrow A$ 是 $A$ 到 $A$ 上的映射.
+对于 $i \in A$, 记 $d_i$ 为 $i-f(i)$ 被 7 除后所得的余数 $\left(0 \leqslant d_i<7\right)$. 如果 $d_0 、 d_1 、 d_2$ 、 $d_3 、 d_4 、 d_5 、 d_6$ 两两不同,则称 $f$ 是 $A$ 到 $A$ 上的 $D$ 映射.
+(1) 判断下面两个 $A$ 到 $A$ 上的映射 $f_1 、 f_2$ 是不是 $D$ 映射;
+\begin{tabular}{|c|l|l|l|l|l|l|l|}
+\hline $i$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
+\hline $f_1(i)$ & 0 & 4 & 6 & 5 & 1 & 3 & 2 \\
+\hline
+\end{tabular}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline $i$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
+\hline $f_2(i)$ & 1 & 6 & 4 & 2 & 0 & 5 & 3 \\
+\hline
+\end{tabular}
+(2) 设 $f$ 是 $A$ 到 $A$ 上的 $D$ 映射,令
+$$
+F(i)=d_i, i \in A,
+$$
+证明: $F$ 也是 $A$ 到 $A$ 上的 $D$ 映射;
+(3) 证明: 所有 $A$ 到 $A$ 上的不同的 $D$ 映射的个数是奇数.
+%%<SOLUTION>%%
+解:(1) 对于 $f_1$, 容易算得 $d_0=0, d_1=4, d_2=3, d_3=5, d_4=3 ,d_5=2, d_6=4$. 由 $D$ 映射的定义知, $f_1$ 不是 $D$ 映射.
+对于 $f_2$, 可算得 $d_0=6, d_1=2, d_2=5, d_3=1, d_4=4, d_5=0, d_6=$ 3 , 故 $f_2$ 是 $D$ 映射.
+(2) 由于 $f$ 是 $A$ 到 $A$ 上的 $D$ 映射, 因此, $d_0 、 d_1 、 \cdots 、 d_6$ 两两不同, 并且 $0 \leqslant d_i<7,0 \leqslant i \leqslant 6$. 所以, $F$ 是 $A$ 到 $A$ 上的映射.
+由 $d_i$ 的定义知,
+$$
+i-f(i) \equiv d_i(\bmod 7)
+$$
+所以
+$$
+i-F(i)=i-d_i \equiv f(i)(\bmod 7) .
+$$
+因为 $0 \leqslant f(i) \leqslant 6$, 所以从上式知, $f(i)$ 就是 $i-F(i)$ 被 7 除所得的余数.
+又因为 $f(0), f(1), \cdots, f(6)$ 两两不同, 所以 $F$ 是 $A$ 到 $A$ 上的 $D$ 映射.
+(3) 显然, $A$ 到 $A$ 上的 $D$ 映射的数目是有限多个.
+由上面第 (2) 小题知, 给定一个 $A$ 到 $A$ 上的 $D$ 映射 $f$, 可以得到 $A$ 到 $A$ 上的另一个 $D$ 映射.
+下面我们先来计算满足 $F \neq f$ 的 $D$ 映射的数目.
+设 $f$ 是 $A$ 到 $A$ 上的 $D$ 映射, $F$ 是从 $f$ 出发按第 (2) 小题的方法所得到的 $D$ 映射.
+对于 $F$, 用同样的方法又可以得到一个 $D$ 映射 $G$, 由第 (2) 小题知, $i- F(i)$ 被 7 除所得的余数就是 $f(i)$, 即
+$$
+G(i)=f(i), i=0,1,2, \cdots, 6 .
+$$
+从而 $G=f$. 也就是说, 从 $F$ 出来, 按第 (2) 小题的方法所得到的 $D$ 映射恰好就是原来的 $f$. 因此, 对于满足 $F \neq f$ 的 $D$ 映射, 都可以用第 (2) 小题的方法使它们两两配对.
+这样的 $D$ 映射的数目是偶数.
+接下来计算满足 $F=f$ 的 $D$ 映射的数目.
+因为
+$$
+\begin{gathered}
+i-F(i) \equiv f(i)(\bmod 7), \\
+F(i)=f(i),
+\end{gathered}
+$$
+所以
+$$
+2 f(i) \equiv i(\bmod 7),
+$$
+其中, $0 \leqslant i \leqslant 6,0 \leqslant f(i) \leqslant 6$.
+当 $i=0$ 时, $f(0)=0$; 当 $i=1$ 时, $f(1)=4$;
+当 $i=2$ 时, $f(2)=1$; 当 $i=3$ 时, $f(3)=5$;
+当 $i=4$ 时, $f(4)=2$; 当 $i=5$ 时, $f(5)=6$;
+当 $i=6$ 时, $f(6)=3$.
+所以,满足 $F=f$ 的 $D$ 映射(容易验证它是 $D$ 映射) 只有下列一个:
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline$i$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
+\hline$f(i)$ & 0 & 4 & 1 & 5 & 2 & 6 & 3 \\
+\hline
+\end{tabular}
+综上所述, $A$ 到 $A$ 上的 $D$ 映射的数目为奇数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6 给定一个正整数 $n$. 有多少个满足条件
+$$
+0 \leqslant a \leqslant b \leqslant c \leqslant d \leqslant n
+$$
+的四元有序整数组 $(a, b, c, d)$ ?
+%%<SOLUTION>%%
+解:作映射 $f$ :
+$$
+(a, b, c, d) \mapsto(a, b+1, c+2, d+3) .
+$$
+于是 $f$ 是从集合 $A=\{(a, b, c, d) \mid 0 \leqslant a \leqslant b \leqslant c \leqslant d \leqslant n\}$ 到集合 $B=\{(a,b^{\prime}, c^{\prime}, d^{\prime}) \mid 0 \leqslant a<b^{\prime}<c^{\prime}<d^{\prime} \leqslant n+3 \}$ 的一个映射.
+容易验证这个映射是一一对应.
+所以 $|A|=|B|$.
+由于 $|B|$ 就是集合 $\{0,1,2, \cdots, n+3\}$ 的四元子集的个数, 即 $\mathrm{C}_{n+4}^4$, 从而 $|A|=\mathrm{C}_{n+4}^4$.
+说明利用一一对应, 可以帮助我们解决许多组合计数问题.
+当我们欲求集合 $A$ 的元素个数时, 可以寻找一个既能与集合 $A$ 建立一一对应又便于计数的集合 $B$, 算出集合 $B$ 的元素个数即可.
+本例就是如此,下面再看一个有趣的问题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7 数学竞赛命题委员会有 9 名教授组成.
+命好的试题藏在一个保险箱里,要求至少有 6 名教授在场时才能打开保险箱.
+问保险箱至少应安上多少把锁, 配多少把钥匙,怎样把钥匙发给命题委员?
+%%<SOLUTION>%%
+解:设 $B$ 是保险箱上所安的锁的集合, $A$ 是 9 名命题委员中所有 5 人组的集合.
+显然
+$$
+|A|=\mathrm{C}_9^5=126 \text {. }
+$$
+对于一个 5 人组 $a \in A$, 依题意, 必有唯一的一把锁 $b \in B$, 使得 5 人组中无人能打开锁 $b$. 令 $b$ 是 $a$ 在 $A$ 到 $B$ 的映射 $f$ 下的象, 即 $b=f(a)$. 于是便定义了集合 $A$ 到集合 $B$ 的一个映射 $f$.下证 $f$ 是一一对应.
+对于集合 $A$ 中的两个不同的 5 人组 $a_1 、 a_2$, 它们所对应的锁 $b_1$ (== $\left.f\left(a_1\right)\right), b_2\left(=f\left(a_2\right)\right)$ 必不相同.
+否则, 若 $b_1=b_2$, 则当两个 5 人组 $a_1$ 与 $a_2$ (其中至少有 6 名命题委员) 都在场时, 仍然打不开锁 $b_1$, 这与题设矛盾, 从而 $f$ 是单射.
+又对每一把锁 $b \in B$, 必有一个 5 人组 $a \in A$, 他们不能打开锁 $b$, 即 $b= f(a)$, 因此 $f$ 是满射.
+综上可知, $f$ 是 $A$ 到 $B$ 的一一对应.
+所以 $|B|=|A|=126$, 即应安 126 把锁.
+现在来考虑如何配钥匙.
+对于每把锁 $b \in B$, 必有 5 人组 $a \in A$, 他们中的每一个人都不能打开锁 $b$, 而另外的 4 个人每个人都能打开锁 $b$, 因此, 每把锁应配 4 把钥题, 分给与这把锁对应的 5 人组之外的 4 个人.
+故总共应配 $4 \times 126=504$ 把钥题, 并把每把锁的 4 把钥匙分发给一个 4 人小组的每个人, 不同的 4 人组对应于不同的钥题.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8 设集合 $S_n=\{1,2, \cdots, n\}$. 若 $X$ 是 $S_n$ 的子集, 把 $X$ 中的所有数的和称为 $X$ 的 “容量” (规定空集的容量为 0 ). 若 $X$ 的容量为奇 (偶) 数, 则称 $X$ 为 $S_n$ 的奇 (偶) 子集.
+(1) 求证: $S_n$ 的奇子集与偶子集个数相等;
+(2) 求证: 当 $n \geqslant 3$ 时, $S_n$ 的所有奇子集的容量之和与所有偶子集的容量之和相等;
+(3) 当 $n \geqslant 3$ 时,求 $S_n$ 的所有奇子集的容量之和.
+%%<SOLUTION>%%
+分析:要证明两个集合的元素个数一样多, 一种方法是直接把这两个集合的元素个数算出来, 另一种方法是在这两个集合之间建立一个一一对应.
+本题我们将用后一种方法来解.
+解 (1) 设 $A$ 是 $S_n$ 的任一奇子集,构造映射 $f$ 如下:
+$$
+\begin{aligned}
+& A \mapsto A-\{1\}, \text { 若 } 1 \in A ; \\
+& A \mapsto A \cup\{1\}, \text { 若 } 1 \notin A .
+\end{aligned}
+$$
+（注: $A-\{1\}$ 表示从集合 $A$ 中去掉 1 后得到的集合）
+所以,映射 $f$ 是将奇子集映为偶子集的映射.
+易知, 若 $A_1, A_2$ 是 $S_n$ 的两个不同的奇子集, 则 $f\left(A_2\right) \neq f\left(A_2\right)$, 即 $f$ 是单射.
+又对 $S_n$ 的每一个偶子集 $B$, 若 $1 \in B$, 则存在 $A=B \backslash\{1\}$, 使得 $f(A)=B$; 若 $1 \notin B$, 则存在 $A=B \bigcup\{1\}$, 使得 $f(A)=B$, 从而 $f$ 是满射.
+所以, $f$ 是 $S_n$ 的奇子集所组成的集到 $S_n$ 的偶子集所组成的集之间的一一对应, 从而 $S_n$ 的奇子集与偶子集个数相等, 故均为 $\frac{1}{2} \cdot 2^n=2^{n-1}$ 个.
+(2) 设 $a_n\left(b_n\right)$ 表示 $S_n$ 中全体奇(偶)子集容量之和.
+若 $n(\geqslant 3)$ 是奇数,则 $S_n$ 的奇子集有如下两类: (1) $S_{n-1}$ 的奇子集; (2) $S_{n-1}$ 的偶子集与集 $\{n\}$ 的并, 于是得
+$$
+a_n==a_{n-1}+\left(b_{n-1}+n \cdot 2^{n-2}\right) .
+$$
+又 $S_n$ 的偶子集可由 $S_{n-1}$ 的偶子集和 $S_{n-1}$ 的奇子集与 $\{n\}$ 的并构成, 所以
+$$
+b_n=b_{n-1}+\left(a_{n-1}+n \cdot 2^{n-2}\right) .
+$$
+由 (1)、(2), 得 $a_n=b_n$.
+若 $n(\geqslant 4)$ 是偶数,同上可知
+$$
+\begin{aligned}
+& a_n=a_{n-1}+\left(a_{n-1}+n \cdot 2^{n-2}\right), \\
+& b_n=b_{n-1}+\left(b_{n-1}+n \cdot 2^{n-2}\right) .
+\end{aligned}
+$$
+由于 $n-1$ 是奇数, 由上面已证 $a_{n-1}=b_{n-1}$, 从而 $a_n=b_n$.
+综上即知, $a_n=b_n, n=3,4, \cdots$.
+(3) 由于 $S_n$ 的每一个元素均在 $2^{n-1}$ 个 $S_n$ 的子集中出现, 所以, $S_n$ 的所有子集容量之和为
+$$
+2^{n-1}(1+2+\cdots+n)=2^{n-2} n(n+1) .
+$$
+又由 (2) 知, $a_n=b_n$, 所以
+$$
+a_n=\frac{1}{2} \cdot 2^{n-2} n(n+1)=2^{n-3} n(n+1) .
+$$
+说明第 (2) 小题的证明中,建立了递推关系.
+这也是解决 “计数”问题的一个有效方法.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9 试作开区间 $(0,1)$ 与闭区间 $[0,1]$ 的一一对应.
+%%<SOLUTION>%%
+分析:由于 $[0,1]$ 比 $(0,1)$ 多了两个点, 所以处理好这两个点是关键所在.
+解取开区间 $(0,1)$ 的子集
+$$
+A=\left\{\frac{1}{2}, \frac{1}{3}, \cdots, \frac{1}{n}, \cdots\right\},
+$$
+在 $A$ 中加上两个数 0,1 后得到闭区间 $[0,1]$ 的子集
+$$
+B=\left\{0,1, \frac{1}{2}, \frac{1}{3}, \cdots, \frac{1}{n}, \cdots\right\} .
+$$
+显然， $(0,1) \backslash A=[0,1] \backslash B$. 于是定义映射 $f$ 如下:
+$$
+f(x)= \begin{cases}0, & \text { 当 } x=\frac{1}{2} \text { 时, } \\ 1, & \text { 当 } x=\frac{1}{3} \text { 时, } \\ \frac{1}{n-2}, & \text { 当 } x=\frac{1}{n}, n=4,5, \cdots \text { 时, } \\ x, & \text { 当 } x \in(0,1) \backslash A \text { 时.
+}\end{cases}
+$$
+易知 $f$ 为一一对应.
+说明集合 $A \backslash B$ (或 $A-B$ ) 定义为
+$$
+A \backslash B=\{x \mid x \in A \text {, 且 } x \bar{\in} B\} .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10 (1) 求函数 $y=\frac{\sqrt{x^2-4}}{\log _2\left(x^2+2 x-3\right)}$ 的定义域;
+(2) 已知函数 $f(x)$ 的定义域为 $[-1,1]$. 求 $f(a x)+f\left(\frac{x}{a}\right)$ 的定义域, 其中 $a>0$.
+%%<SOLUTION>%%
+解:(1) 函数的定义域是满足下列条件的解集.
+$$
+\left\{\begin{array}{l}
+x^2-4 \geqslant 0, \\
+x^2+2 x-3>0, \\
+x^2+2 x-3 \neq 1 .
+\end{array}\right.
+$$
+因此, 定义域为 $(-\infty,-1-\sqrt{5}) \cup(-1-\sqrt{5},-3) \cup[2,+\infty)$.
+(2) $f(a x)+f\left(\frac{x}{a}\right)$ 的定义域是下列两个集合的交集:
+$$
+\begin{aligned}
+& D_1=\{x \mid-1 \leqslant a x \leqslant 1\}=\left[-\frac{1}{a}, \frac{1}{a}\right], \\
+& D_2=\left\{x \mid-1 \leqslant \frac{x}{a} \leqslant 1\right\}=[-a, a] .
+\end{aligned}
+$$
+当 $a \geqslant 1$ 时, $a \geqslant \frac{1}{a},-a \leqslant-\frac{1}{a}$, 故 $D_1 \cap D_2=D_1$;
+当 $0<a<1$ 时, $\frac{1}{a}>a,-\frac{1}{a}<-a$, 故 $D_1 \cap D_2=D_2$.
+因此, $f(a x)+f\left(\frac{x}{a}\right)$ 的定义域为
+$$
+[-a, a] \text { (当 } 0<a<1 \text { ) 或 }\left[-\frac{1}{a}, \frac{1}{a}\right] \text { (当 } a \geqslant 1 \text { ). }
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11 求函数 $y=x+\sqrt{x^2-3 x+2}$ 的值域.
+%%<SOLUTION>%%
+解:由题设, 得 $\sqrt{x^2-3 x+2}=y-x \geqslant 0$, 所以
+$$
+x^2-3 x+2=y^2-2 x y+x^2,
+$$
+即
+$$
+(2 y-3) x=y^2-2 \text {. }
+$$
+由上式知 $y \neq \frac{3}{2}$, 且 $x=\frac{y^2-2}{2 y-3}$. 由 $y \geqslant x=\frac{y^2-2}{2 y-3}$, 得
+$$
+\frac{y^2-3 y+2}{2 y-3} \geqslant 0,-\frac{(y-1)(y-2)}{y-\frac{3}{2}} \geqslant 0 .
+$$
+所以 $1 \leqslant y<\frac{3}{2}$ 或 $y \geqslant 2$.
+又任取 $y_0 \in[2,+\infty)$, 令 $x_0=\frac{y_0^2-2}{2 y_0-3}$, 则
+$$
+x_0-2=\frac{y_0^2-2}{2 y_0-3}-2=\frac{\left(y_0-2\right)^2}{2 y_0-3} \geqslant 0 .
+$$
+故 $x_0 \geqslant 2$, 所以 $x_0^2-3 x_0+2 \geqslant 0$, 且 $y_0=x_0+\sqrt{x_0^2-3 x_0+2}$.
+任取 $y_0 \in\left[1, \frac{3}{2}\right)$, 令 $x_0=\frac{y_0^2-2}{2 y_0-3}$, 则
+$$
+x_0-1=\frac{y_0^2-2}{2 y_0-3}-1=\frac{\left(y_0-1\right)^2}{2 y_0-3} \leqslant 0 .
+$$
+故 $x_0 \leqslant 1$, 于是 $x_0^2-3 x_0+2 \geqslant 0$, 且 $y_0=x_0+\sqrt{x_0^2-3 x_0+2}$.
+综上, 所求的函数的值域为 $\left[1, \frac{3}{2}\right) \cup[2,+\infty)$.
+说明我们先求出了 $y$ 的范围 $\left[1, \frac{3}{2}\right) \cup[2,+\infty)$, 这是不是函数的值域呢? 第二部分说明了对于 $\left[1, \frac{3}{2}\right) \cup[2,+\infty)$ 中的任意一个数 $y_0$, 总存在一个 $x_0$, 使得 $y_0=x_0+\sqrt{x_0^2-3 x_0+2}$, 这就证明了函数的值域是 $\left[1, \frac{3}{2}\right) U [2,+\infty)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12 设函数:
+$f(x)=\left\{\begin{array}{ll}1, & \text { 当 }|x| \leqslant 1 \text { 时, } \\ 0, & \text { 当 }|x|>1 \text { 时, }\end{array} g(x)= \begin{cases}2-x^2, & \text { 当 }|x| \leqslant 1 \text { 时, } \\ 2, & \text { 当 }|x|>1 \text { 时.
+}\end{cases}\right.$
+求 $f[f(x)], f[g(x)], g[f(x)], g[g(x)]$.
+%%<SOLUTION>%%
+解:$f[f(x)]=1, x \in \mathbf{R}$.
+$$
+f[g(x)]= \begin{cases}0, & \text { 当 } x \neq \pm 1 \text { 时, } \\ 1, & \text { 当 } x= \pm 1 \text { 时.
+}\end{cases}
+$$
+$$
+\begin{aligned}
+& g[f(x)]= \begin{cases}1, & \text { 当 }|x| \leqslant 1 \text { 时, } \\
+2, & \text { 当 }|x|>1 \text { 时.
+}\end{cases} \\
+& g[g(x)]= \begin{cases}2, & \text { 当 } x \neq \pm 1 \text { 时, } \\
+1, & \text { 当 } x= \pm 1 \text { 时.
+}\end{cases}
+\end{aligned}
+$$
+从本题可以看出, $f[g(x)]$ 不一定与 $g[f(x)]$ 相等.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13 作出函数 $y=\left|x^2+x-6\right|$ 的图象.
+%%<SOLUTION>%%
+解:先作出 $y=x^2+x-6$ 的图象, 然后将此图象在 $x$ 轴下方的部分对称地翻折到 $x$ 轴的上方即可,如图(<FilePath:./figures/fig-c1e13.png>)实线所示部分.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例14 (1) 设抛物线 $y=2 x^2$, 把它向右平移 $p$ 个单位, 或向下移 $q$ 个单位, 都能使得抛物线与直线 $y=x-4$ 恰好有一个交点, 求 $p, q$ 的值;
+(2) 把抛物线 $y=2 x^2$ 向左平移 $p$ 个单位, 向上平移 $q$ 个单位, 则得到的抛物线经过点 $(1,3)$ 与 $(4,9)$, 求 $p, q$ 的值.
+(3) 把抛物线 $y=a x^2+b x+c$ 向左平移 3 个单位,向下平移 2 个单位后, 所得图象是经过点 $\left(-1,-\frac{1}{2}\right)$ 的抛物线 $y=a x^2$, 求原二次函数的解析式.
+%%<SOLUTION>%%
+解:(1) 抛物线 $y=2 x^2$ 向右平移 $p$ 个单位后, 得到的抛物线为 $y= 2(x-p)^2$. 于是方程 $2(x-p)^2=x-4$ 有两个相同的根, 即方程
+$$
+2 x^2-(4 p+1) x+2 p^2+4=0
+$$
+根的判别式
+$$
+\Delta=(4 p+1)^2-4 \cdot 2 \cdot\left(2 p^2+4\right)=0 .
+$$
+所以 $p=\frac{31}{8}$. 这时的交点为 $\left(\frac{33}{8}, \frac{1}{8}\right)$.
+抛物线 $y=2 x^2$ 向下平移 $q$ 个单位, 得到抛物线 $y=2 x^2-q$. 于是方程 $2 x^2-q=x-4$ 有两个相同的根, 即
+$$
+\Delta=1-4 \cdot 2(4-q)=0 .
+$$
+所以 $q=\frac{31}{8}$. 这时的交点为 $\left(\frac{1}{4},-\frac{15}{4}\right)$.
+(2) 把 $y=2 x^2$ 向左平移 $p$ 个单位, 向上平移 $q$ 个单位, 得到的抛物线为 $y=2(x+p)^2+q$. 于是, 由题设, 得
+$$
+\left\{\begin{array}{l}
+3=2(1+p)^2+q, \\
+9=2(4+p)^2+q .
+\end{array}\right.
+$$
+解方程组, 得 $p=-2, q=1$, 即抛物线向右平移了 2 个单位, 向上平移了 1 个单位.
+(3)首先, 抛物线 $y=a x^2$ 经过点 $\left(-1,-\frac{1}{2}\right)$, 可求得 $a=-\frac{1}{2}$.
+设原来的二次函数为 $y=-\frac{1}{2}(x-h)^2+k$, 由题设知
+$$
+\left\{\begin{array}{l}
+-h+3=0 \\
+k-2=0
+\end{array}\right.
+$$
+解方程组, 得 $h=3, k=2$. 故原二次函数为
+$$
+y=-\frac{1}{2}(x-3)^2+2 .
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例15. 已知函数 $y=f(x)$ 的图象如图(<FilePath:./figures/fig-c1e15-1.png>) 所示.
+(1) 写出 $y=f(x)$ 的解析式;
+(2) 求 $y=f(2 x)$ 的解析式,并作出 $y=f(2 x)$ 的图象;
+(3) 求 $y=f(2 x-1)$ 的解析式,并作出 $y=f(2 x-1)$ 的图象.
+%%<SOLUTION>%%
+解:(1) 由图 (<FilePath:./figures/fig-c1e15-1.png>), 可知 $f(x)=|x|(-1 \leqslant x \leqslant 1)$.
+(2) 由第 (1) 小题, 知 $f(2 x)=|2 x|=2|x|$, 注意到 $-1 \leqslant 2 x \leqslant 1$, 所以
+$$
+f(2 x)=2|x|\left(-\frac{1}{2} \leqslant x \leqslant \frac{1}{2}\right) .
+$$
+其图象如图 (<FilePath:./figures/fig-c1e15-2.png>)所示.
+(3) 同上, 可得 $f(2 x-1)=|2 x-1|(0 \leqslant x \leqslant 1)$, 其图象如图(<FilePath:./figures/fig-c1e15-3.png>)所示.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例16 设 $f(x)=x^2+a x+b \cos x,\{x \mid f(x)=0, x \in \mathbf{R}\}=\{x \mid f(f(x))=0, x \in \mathbf{R}\} \neq \varnothing$, 求满足条件的所有实数 $a, b$ 的值.
+%%<SOLUTION>%%
+解:设 $x_0 \in\{x \mid f(x)=0, x \in \mathbf{R}\}$, 则 $b=f(0)=f\left(f\left(x_0\right)\right)=0$.
+于是 $f(x)=x(x+a)$. 故
+$$
+f(f(x))=f(x)(f(x)+a)=x(x+a)\left(x^2+a x+a\right) .
+$$
+显然, $a=0$ 满足题意.
+若 $a \neq 0$, 由于 $x^2+a x+a=0$ 的根不可能是 0 或者 $-a$, 故 $x^2+a x+a=0$ 没有实数根, 于是 $\Delta=a^2-4 a<0$, 所以 $0<a<4$.
+综上所述, 满足题设条件的 $a, b$ 分别为: $0 \leqslant a<4, b=0$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例17 已知 $a, b, c, d$ 为非零实数, $f(x)=\frac{a x+b}{c x+d}, x \in \mathbf{R}$, 且 $f(19)= 19, f(97)=97$. 若当 $x \neq-\frac{d}{c}$ 时, 对于任意实数 $x$, 均有 $f[f(x)]=x$, 试求出 $f(x)$ 值域以外的唯一数.
+%%<SOLUTION>%%
+解:由题设, 对任意实数 $x \neq-\frac{d}{c}$, 有 $f[f(x)]=x$, 所以
+$$
+\frac{a \cdot \frac{a x+b}{c x+d}+b}{c \cdot \frac{a x+b}{c x+d}+d}=x
+$$
+化简, 得 $\quad(a+d) c x^2+\left(d^2-a^2\right) x-b(a+d)=0$.
+由于上述方程对 $x \neq-\frac{d}{c}$ 恒成立, 故 $a+d=0$, 且 $d^2-a^2=0$, 所以 $d=-a$. 又 $f(19)=19, f(97)=97$, 即 $19 、 97$ 是方程 $\frac{a x+b}{c x+d}=x$ 的两个根, 即
+19、97 是方程 $c x^2+(d-a) x-b=0$ 的两个根, 故由韦达定理, 得
+$$
+\frac{a-d}{c}=116,-\frac{b}{c}=1843 \text {. }
+$$
+结合 $d=-a$, 得 $a=58 c, b=-1843 c, d=-58 c$, 从而
+$$
+f(x)=\frac{58 x-1843}{x-58}=58+\frac{1521}{x-58} .
+$$
+于是 $f(x)$ 取不到 58 这个数, 即 58 是 $f(x)$ 值域外的唯一数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例18 已知 $f(x), g(x)$ 是定义在 $\mathbf{R}$ 上递增的一次函数, $f(x)$ 为整数当且仅当 $g(x)$ 为整数.
+证明: 对一切 $x \in \mathbf{R}, f(x)-g(x)$ 为整数.
+%%<SOLUTION>%%
+证设 $f(x)=a x+b, g(x)=c x+d, a>0, c>0$. 我们先证明 $a=c$.
+若不然, 由对称性不妨设 $a>c$.
+当 $x=-\frac{b}{a}$ 时, $f(x)=0$, 因此 $g\left(-\frac{b}{a}\right)$ 是整数; 当 $x=-\frac{b-1}{a}$ 时, $f(x)=1$, 因此 $g\left(-\frac{b-1}{a}\right)$ 是整数.
+故
+$$
+g\left(-\frac{b}{a}\right)-g\left(-\frac{b-1}{a}\right)=\left(c \cdot\left(-\frac{b}{a}\right)+d\right)-\left(c \cdot\left(-\frac{b-1}{a}\right)+d\right)=-\frac{c}{a}
+$$
+是一个整数, 但这与 $a>c>0$ 矛盾, 又当 $x=-\frac{b}{a}$ 时, $f(x)=0$, 因此 $g\left(-\frac{b}{a}\right)=d-b$ 是整数, 因此对任意的 $x \in \mathbf{R}, f(x)-g(x)=b-d$ 是整数, 从而命题得证.
+%%PROBLEM_END%%
+
+

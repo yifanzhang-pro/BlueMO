@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume9/exercise5.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 在凸四边形内部标定四个点, 求证: 可在凸四边形的边界上找到一点使得它到四边形的各顶点的距离之和大于它到四个给定点的距离之和.",
+    "solution": "提示: 设凸四边形 $A B C D$ 内的 4 个标定点为 $M 、 N 、 P 、 Q$, 只需考虑 $M N P Q$ 为凸四边形的情形.\n对 $A B C D$ 周界上任意一点 $E$, 令 $f(E)=E A+ E B+E C+E D, g(E)=E M+E N+E P+E Q$, 于是只要证明周界上存在一点 $E$ 使 $f(E)>g(E)$. 作直线 $M P$, 交四边形 $A B C D$ 的周界于 $F 、 G$, 于是有 $f(F)+f(G)>g(F)+g(G)$. 这表明 $f(F)>g(F)$ 和 $f(G)>g(G)$ 中至少有一个成立.",
+    "remark": "",
+    "figures": []
+}

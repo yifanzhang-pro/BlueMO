@@ -1,0 +1,251 @@
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题1 设 $f(x)=x^2+x-2, A=\{n \mid 1 \leqslant n \leqslant 100, n \in \mathbf{Z}\}, B=\{y \mid y=f(n), n \in A\}$,则集合 $B \bigcap\{2 m \mid m \in \mathbf{Z}\}$ 的元素的个数是
+%%<SOLUTION>%%
+$100$. 当 $n \in A$ 时, $y=f(n)=n^2+n-2$ 恒为偶数.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题2 设 $M=\{1,2, \cdots, 1995\}, A$ 是 $M$ 的子集, 且满足条件: 当 $x \in A$ 时, $15 x \notin A$. 则 $A$ 中元素个数最多是
+%%<SOLUTION>%%
+$1870$ . $k$ 与 $15 k(k=9,10, \cdots, 133)$ 不能同在 $A$ 中, 又 $133<15 \times 9$, 所以 $|A| \leqslant 1995-(133-9+1)=1870$. 另一方面, 设 $B=\{1,2, \cdots, 8\}$, $C=\{134,135, \cdots, 1995\}$, 取 $A=B \cup C$, 则 $|A|=1870$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题3 把集合 $\left\{1,2, \cdots, 10^6\right\}$ 划分成两个不交的子集,一个是所有可以表示为一个完全平方数与一个完全立方数之和的数所成的子集, 另一个是集合中所有其余的数所成的子集.
+问哪一个子集元素较多? 说明理由.
+%%<SOLUTION>%%
+将前一个子集记为 $A$, 依题设对任何 $n \in A$, 都存在 $k, m \in \mathbf{N}^*$, 使得 $n=k^2+m^3$. 由于 $n \leqslant 10^6$, 所以 $k \leqslant 10^3, m \leqslant 10^2$, 因而数对 $(k, m)$ 的个数不超过 $10^5$ 个, 从而 $n \in A$ 的个数也不超过 $10^5$ 个.
+可见,第二个子集的元素多.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题4 集合 $\{00,01, \cdots, 98,99\}$ 的子集 $X$ 满足: 在任一无穷的数字序列中均有 2 个相邻数字构成 $X$ 的元素.
+$X$ 最少应含多少个元素?
+%%<SOLUTION>%%
+对任意的 $i, j \in\{0,1, \cdots, 9\}, X$ 应包含 $\overline{i j}$ 或 $\overline{j i}$ 之一.
+这种无序对 $(i$, $j$ ) 共有 $10+\frac{1}{2} \cdot 10 \cdot 9=55$ 个, 故 $|X| \geqslant 55$. 又如取 $X=\{\overline{i j} \mid 0 \leqslant i \leqslant j \leqslant 9\}$, 则 $|X|=55$, 且对任一无穷序列, 设 $i$ 为它所含的最小数字, $j$ 为 $i$ 的后一项,则 $\overline{i j} \in X$. 故 $X$ 最少含 55 个元素.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题5 设 $S$ 是 $n$ 个不同实数的集合, $A_s$ 是由 $S$ 中所有互不相同的两元素的平均值所组成的集合.
+对给定 $n \geqslant 2, A_s$ 最少可能有多少个元素?
+%%<SOLUTION>%%
+设 $S=\left\{x_1, x_2, \cdots, x_n\right\}$, 且 $x_1<x_2<\cdots<x_n$, 则 $\frac{x_1+x_2}{2}<\frac{x_1+x_3}{2} <\cdots<\frac{x_1+x_n}{2}<\frac{x_2+x_n}{2}<\frac{x_3+x_n}{2}<\cdots<\frac{x_{n-1}+x_n}{2}$, 因此, $A_S$ 中至少有 $2 n-3$ 个元素.
+另一方面, 若取 $S=\{2,4,6, \cdots, 2 n\}$, 则 $A_S=\{3,4,5, \cdots$, $2 n-1\}$ 只有 $2 n-3$ 个元素.
+所以, $\left|A_S\right|$ 的最小值为 $2 n-3$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题6 集 $A=\left\{z \mid z^{18}=1\right\}, B=\left\{w \mid w^{48}=1\right\}$ 都是 1 的复单位根的集合, $C==\{z w \mid z \in A, w \in B\}$ 也是 1 的复单位根的集合.
+问集合 $C$ 中含有多少个元素?
+%%<SOLUTION>%%
+集合 $A$ 的元素为 $z=\cos \frac{2 k \pi}{18}+i \sin \frac{2 k \pi}{18}$. 集合 $B$ 的元素为 $w= \cos \frac{2 t \pi}{48}+i \sin \frac{2 t \pi}{48} . z w=\cos \frac{2(8 k+3 t)}{144} \pi+i \sin \frac{2(8 k+3 t)}{144} \pi$. 因为 8 和 3 互质, 故存在整数 $k$ 和 $t$, 使 $8 k+3 t=1$. 进而, 存在整数 $k 、 t$, 使 $8 k+3 t=m$. 取 $m=0,1,2, \cdots, 143$, 则得到 $z w$ 的 144 个不同的值.
+于是, 集合 $C=\{z w \mid z \in A, w \in B\}$ 含有 144 个元素.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题7. 集合 $A$ 的元素都是整数, 其中最小的是 1 , 最大的是 100. 除 1 以外, 每一个元素都等于集合 $A$ 的两个数(可以相同)的和.
+求集合 $A$ 的元素个数的最小值.
+%%<SOLUTION>%%
+易知集合 $\{1,2,3,5,10,20,25,50,100\}$ 满足条件, 故集合 $A$ 的元素个数的最小值不大于 9 . 若 $\left\{1,2, x_1, x_2, x_3, x_4, x_5, 100\right\}$ 也满足条件, 则 $x_1 \leqslant 4, x_2 \leqslant 8, x_3 \leqslant 16, x_4 \leqslant 32, x_5 \leqslant 64$. 但 $x_4+x_5 \leqslant 96<100$, 所以 $x_5=50 . x_3+x_4 \leqslant 48<50$, 所以 $x_4=25 . x_2+x_3 \leqslant 24<25$, 所以 $25=2 x_3$, 矛盾.
+所以,集合 $A$ 的元素个数的最小值为 9 .
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题8 设 $M$ 为有限数集, 现知从它的任何 3 个元素中都可以找出两个数, 它们的和属于 $M$. 试问 : $M$ 中最多可能有多少个元素?
+%%<SOLUTION>%%
+最多 7 个元素.
+由 7 个元素组成的数集的例子有: $\{-3,-2,-1,0$, $1,2,3\}$. 对 $m \geqslant 8$, 任何由 $m$ 个数组成的数集 $A=\left\{a_1, a_2, \cdots, a_m\right\}$ 都不具有所要求的性质.
+不失一般性, 可设 $a_1>a_2>a_3>\cdots>a_m$ 且 $a_4>0$ (因为若把每个数都乘以 -1 , 不会改变我们的性质). 于是, $a_1+a_2>a_1+a_3>a_1+$$a_4>a_1$, 从而和数 $a_1+a_2, a_1+a_3, a_1+a_4$ 都不属于集合 $A$. 并且和数 $a_2+a_3$ 与 $a_2+a_4$ 不可能同时属于集合 $A$, 此因 $a_2+a_3>a_2, a_2+a_4>a_2$, 且 $a_2+ a_3 \neq a_2+a_4$. 这样一来, 对数组 $\left(a_1, a_2, a_3\right)$ 和 $\left(a_1, a_2, a_4\right)$, 至少有一个组中任何两个数的和都不是 $A$ 中的元素.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题9 设 $A$ 是一个正整数的集合, 且对任意 $x, y \in A$, 都有 $|x-y| \geqslant \frac{x y}{25}$. 求证: $A$ 中最多有 9 个元素.
+%%<SOLUTION>%%
+设 $A=\left\{x_1, x_2, \cdots, x_n\right\}, x_{i+1}=x_i+d_i, d_i>0$. 由条件 $|x-y| \geqslant \frac{x y}{25}$ 易知, $A$ 中至多有 1 个元素不小于 25 , 从而有 $x_{n-1} \leqslant 24$. 由 $d_i=\mid x_{i+1}- x_i \mid \geqslant \frac{x_{i+1} \cdot x_i}{25}=\frac{\left(x_i+d_i\right) x_i}{25}$, 解得 $d_i \geqslant \frac{x_i^2}{25-x_i}$. 若 $x_5 \geqslant 5$, 则 $d_5 \geqslant \frac{25}{20}>1$, 故有 $x_6 \geqslant 7$. 从而 $d_6>2, x_7 \geqslant 10 ; d_7>6, x_8 \geqslant 17 ; d_8>36, x_9 \geqslant 54>25$. 可见, $A$ 中至多有 9 个元素.
+另一方面, 容易验证集合 $\{1,2,3,4,5,7,10$, 17,543 满足题中要求.
+从而知集合 $A$ 中最多有 9 个元素.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题10 对于集合 $S=\left\{\left(a_1, a_2, \cdots, a_5\right) \mid a_i=0\right.$ 或 $\left.1, i=1,2, \cdots, 5\right\}$ 中的任意两个元素 $A=\left(a_1, a_2, \cdots, a_5\right)$ 和 $B=\left(b_1, b_2, \cdots, b_5\right)$, 定义它们的距离为: $d(A, B)=\left|a_1-b_1\right|+\cdots+\left|a_5-b_5\right|$. 取 $S$ 的一个子集 $T$, 使 $T$ 中任意两个元素之间的距离都大于 2 . 问子集 $T$ 中最多含多少个元素? 证明你的结论.
+%%<SOLUTION>%%
+假设有一个 5 个元素的子集也符合条件,则这 5 个元素中至少有 3 个的第一位数码相同.
+不妨设 $A 、 B 、 C$ 这三个元素的第一位数码相同.
+同样, 在 $A 、 B 、 C$ 中, 第二、三、四、五个数码上, 每一位都至少有两个元素的对应数码相同.
+但 $A 、 B 、 C$ 三元素两两分组只有 3 组, 故至少有两个元素, 它们除第一数码相同外, 至少还有两位数码相同, 不妨设 $A$ 与 $B$, 则 $A 、 B$ 的距离不大于 2 , 矛盾.
+故 $T$ 的元素不多于 4 个.
+可令 $T=\{(1,1,1,1,1),(0,0,0,1$, $1),(1,1,0,0,0),(0,0,1,0,0)\}$, 则不难验证结论成立.
+所以 $|T|_{\max }=4$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题11 求最大正整数 $n$,使得 $n$ 元集合 $S$ 同时满足:
+(1) $S$ 中的每个数均为不超过 2002 的正整数;
+(2) 对于 $S$ 的两个数 $a$ 和 $b$ (可以相同), 它们的乘积 $a b$ 不属于 $S$.
+%%<SOLUTION>%%
+设集合 $A=\{1\}, B=\left\{2^1, 2^2, \cdots, 2^{10}\right\}, C=\left\{3^1, 3^2, \cdots, 3^6\right\}$, $D=\left\{5^1, 5^2, 5^3, 5^4\right\}, E=\left\{6^1, 6^2, 6^3, 6^4\right\}, X_i=\left\{i, i^2\right\}$, 其中 $i$ 不是 $2 、 3 、 4 、 5 、 6$ 的幂, 且满足 $7 \leqslant i \leqslant 44$. 于是, 集合 $S$ 中: 至少不包含 $A$ 中的 1 个元素; 至少不包含 $B$ 中的 5 个元素; 至少不包含 $C$ 中的 3 个元素; 至少不包含 $D$ 中的 2 个元素; 至少不包含 $E$ 中的 2 个元素; 至少不刨含 31 个 $X_i$ 中每个集合中的 1 个元素.
+所以, $S$ 中最多有 $2002-(1+5+3+2+2+31)=1958$ 个元素.
+例如, $S=\{45,46,47, \cdots, 2002\}$ 即为满足条件且有 1958 个元素的集合.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题12 我们称一个正整数的集合 $A$ 是“一致”的,是指: 删除 $A$ 中任何一个元素之后, 剩余的元素可以分成两个不相交的子集, 而且这两个子集的元素之和相等.
+求最小的正整数 $n(n>1)$, 使得可以找到一个具有 $n$ 个元素的 “一致”集合 $A$.
+%%<SOLUTION>%%
+设 $A=\left\{a_1, a_2, \cdots, a_n\right\}$, 又设 $M$ 是 $A$ 中各元素之和.
+根据题中的条件可以断定, 对任何 $i=1,2, \cdots, n, M-a_i$ 是偶数.
+如果 $M$ 是偶数, 则 $A$ 中每个元素也都是偶数, 即 $a_i=2 b_i$, 而集合 $\left\{b_1, b_2, \cdots, b_n\right\}$ 仍然是“一致” 的.
+假定 $M$ 是奇数,故对于 $i=1,2, \cdots, n, a_i$ 也都是奇数.
+由于 $a_1+a_2+\cdots+ a_n=M, n$ 也是奇数.
+$n=7$ 时, 容易验证集合 $A=\{1,3,5,7,9,11,13\}$ 是一致的.
+假定 $n \leqslant 5$, 对于 $n=1,3$ 的情形是显然的.
+设 $n=5$. 将元素按升序排列, 即 $a_1<a_2<a_3<a_4<a_5$. 将集合 $\left\{a_2, a_3, a_4, a_5\right\}$ 分成两个不相交的子集， 且使每个子集的元素之和相等,有两种方式: $a_5+a_2=a_3+a_4, a_5=a_2+a_3+ a_4$. 类似地对集合 $\left\{a_1, a_3, a_4, a_5\right\}$ 有, $a_5+a_1=a_3+a_4, a_5=a_1+a_3+a_4$. 考虑其可能的组合: 如果 $a_5+a_2=a_3+a_4$, 且 $a_5+a_1=a_3+a_4$, 则有 $a_1= a_2$, 矛盾.
+如果 $a_5+a_2=a_3+a_4$, 且 $a_5=a_1+a_3+a_4$, 则有 $a_1+a_2=0$, 矛盾.
+如果 $a_5=a_2+a_3+a_4$, 且 $a_5+a_1=a_3+a_4$, 则有 $a_1+a_2=0$, 矛盾.
+如果 $a_5=a_2+a_3+a_4$, 且 $a_5=a_1+a_3+a_4$, 则有 $a_1=a_2$, 矛盾.
+因此, $n \neq 5$, 故 $n=7$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题13 已知集合 $M=\{A \mid A$ 是各位数字互不相同的十位正整数, 且 $11111 \mid A\}$. 求 $|M|$.
+%%<SOLUTION>%%
+因为 $A$ 的各位数字互不相同, 所以 $A \equiv 0+1+\cdots+9 \equiv 0(\bmod 9)$, 即 $9 \mid A$. 又 $11111 \mid A$, 而 $(9,11111)=1$, 故 $99999 \mid A$. 设 $A=99999 A_0, A_0 \in \mathbf{Z}^{+}$. 因为 $10^9<A<10^{10}$, 所以 $\frac{10^9}{10^5-1}<A_0<\frac{10^{10}}{10^5-1}$. 又因为 $\frac{10^9}{10^5-1}> \frac{10^9}{10^5}=10^4, 10^5+1<\frac{10^{10}}{10^5-1}<10^5+2$, 所以 $10^4<A_0 \leqslant 10^5+1$.
+显然, 当 $A_0=10^5+1$ 或 $10^5$ 时, 不合题意, 故 $10^4<A_0<10^5$, 即 $A_0$ 为五位数.
+设 $A_0=\overline{a_0 a_1 a_2 a_3 a_4}$, 其中 $a_0>0, a_i \in\{0,1, \cdots, 9\} i=0,1,2,3,4$, 则 $A=A_0\left(10^5-1\right)=\overline{a_0 a_1 a_2 a_3 a_4 00000}-\overline{a_0 a_1 a_2 a_3} \overline{a_4}$. 记 $A= c_4=a_4-1, c_0^{\prime}=9-a_0, c_1^{\prime}=9-a_1, c_2^{\prime}=9-a_2, c_3^{\prime}=9-a_3, c_4^{\prime}=10- a_4$; 若 $a_4=0$, 则 $a_3 \neq 0$ (否则 $A$ 的数位中有两个 0 ). 于是, $c_0=a_0, c_1=a_1, c_2=a_2, c_3=a_3-1, c_4=9, c_0^{\prime}=9-a_0, c_1^{\prime}=9-a_1, c_2^{\prime}=9-a_2, c_3^{\prime}= 10-a_3, c_4^{\prime}=0$. 所以 $c_i+c_i^{\prime}=9(0 \leqslant i \leqslant 4$, 且 $i \in \mathbf{N})$. (1)
+因此 $\left\{\left(c_i, c_i^{\prime}\right) \mid 0 \leqslant i \leqslant 4, i \in \mathbf{N}\right\}=\{(0,9),(1,8),(2,7),(3,6)$, $(4,5),(9,0),(8,1),(7,2),(6,3),(5,4)\}$. 因为 $c_0 \neq 0$, 所以满足条件 (1) 的 $A$ 的个数为 $5 ! \times 2^5-4 ! \times 2^4=3456$. 反之, 任何满足条件 (1) 的数都可表示为: $\overline{c_0 c_1 c_2 c_3 c_4 00000}+\overline{c_0^{\prime} c_1^{\prime} c_2{ }^{\prime} c_3^{\prime} c_4^{\prime}}=\overline{c_0 c_1 c_2 c_3 c_4} \cdot\left(10^5-1\right)+99999$, 必可被 11111 整除.
+因此, $|M|=3456$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题14 设 $F$ 是所有有序 $n$ 元组 $\left(A_1, A_2, \cdots, A_n\right)$ 构成的集合, 其中 $A_i(1 \leqslant i \leqslant n$ ) 都是集合 $\{1,2,3, \cdots, 2002\}$ 的子集, 设 $\mid A$ | 表示集合 $A$ 的元素的数目, 对 $F$ 中的所有元素 $\left(A_1, A_2, \cdots, A_n\right)$, 求 $\left|A_1 \cup A_2 \cup \cdots \cup A_n\right|$ 的总和, 即
+$$
+\sum_{\left(A_1, A_2, \cdots, A_n\right) \in F}\left|A_1 \cup A_2 \cup \cdots \cup A_n\right| .
+$$
+%%<SOLUTION>%%
+$\sum_{\left(A_1, A_2, \cdots, A_n\right) \in F}\left|A_1 \cup A_2 \cup \cdots \cup A_n\right|$ 的值, 即是 $\{1,2, \cdots, 2002\}$ 中元素出现的次数之和.
+对每一个 $k \in\{1,2,3, \cdots, 2002\}$, 因为 $\{1,2, \cdots$, $2002\}$ 共有 $2^{2002}$ 个子集,这些子集的全体记作集合 $M$. 其中不含有元素 $k$ 的子集共有 $2^{2001}$ 个, 记这些子集全体为 $N$. 当 $n$ 元组 $\left(A_1, A_2, \cdots, A_n\right)$ 中 $A_i(i=1$, $2, \cdots, n)$ 都取遍 $M$ 时, 共有 $2^{2002 n}$ 个这样的 $n$ 元组.
+但其中当 $A_i(i=1,2, \cdots$, $n)$ 都不含有 $k$ 即 $A_i \in N(i=1,2 \cdots, n)$ 时, 这样的 $n$ 元组 $\left(A_1, A_2, \cdots, A_n\right)$ 共有 $2^{2001 n}$ 个.
+所以 $\sum_{\left(A_1, A_2, \cdots, A_n\right) \in F}\left|A_1 \cup A_2 \cup \cdots \cup A_n\right|$ 中 $k$ 出现 $2^{2002 n}-2^{2001 n}$次, 当 $k=1,2, \cdots, 2002$ 时, 即 $\sum_{\left(A_1, A_2, \cdots, A_n\right) \in F}\left|A_1 \cup A_2 \cup \cdots \cup A_n\right|=2002 \cdot(2^{2002 n}-2^{2001 n} )$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题15 设 $O x y z$ 是空间直角坐标系, $S$ 是空间中的一个由有限个点所形成的集合, $S_x 、 S_y 、 S_z$ 分别是 $S$ 中所有的点在 $O y z$ 平面、 $O z x$ 平面、 $O x y$ 平面上的正交投影所成的集合.
+证明
+$$
+|S|^2 \leqslant\left|S_x\right| \cdot\left|S_y\right| \cdot\left|S_z\right|,
+$$
+其中 $|A|$ 表示有限集合 $A$ 中的元素数目.
+(说明: 所谓一个点在一个平面上的正交投影是指由点向平面所作垂线的垂足.
+)
+%%<SOLUTION>%%
+记 $S_{i, j}$ 是 $S$ 中形如 $(x, i, j)$ 的点的集合, 即 $S$ 中在 $O y z$ 平面内正交投影坐标为 $(i, j)$ 的一切点的集合.
+显然 $S=\bigcup_{(i, j) \in S_x} S_{i, j}$. 由柯西不等式, 得 $|S|^2=\left(\sum_{\left(i, j, \in S_x\right.}\left|S_{i, j}\right|\right)^2 \leqslant \sum_{(i, j) \in S_x} 1^2 \times \sum_{(i, j) \in S_x}\left|S_{i, j}\right|^2=\left|S_x\right| \sum_{(i, j) \in S_x}\left|S_{i, j}\right|^2$. 令 $X= \bigcup_{(i, j) \in S_x}\left(S_{i, j} \times S_{i, j}\right)$, 则 $|X|=\sum_{(i, j) \in S_x}\left|S_{i, j}\right|^2$.
+作映射 $f: X \rightarrow S_y \times S_z, f\left((x, i, j),\left(x^{\prime}, i, j\right)\right)=\left((x, j),\left(x^{\prime}, i\right)\right)$. 显然 $f$ 为单射.
+因此, $|X| \leqslant\left|S_y\right| \cdot\left|S_z\right|$. 故 $|S|^2 \leqslant\left|S_x\right| \cdot|X| \leqslant\left|S_x\right| \cdot \left|S_y\right| \cdot\left|S_z\right|$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题16 设 $S$ 为十进制中至多有 $n$ 位数字的所有非负整数所成的集合, $S_k$ 由 $S$ 中那些数字之和小于 $k$ 的元素组成.
+对于怎样的 $n$, 有 $k$ 存在, 使得 $|S|= 2\left|S_k\right|$ ?
+%%<SOLUTION>%%
+对于任一个 $n$ 位数 $A=\overline{a_1 a_2 \cdots a_n}\left(0 \leqslant a_i \leqslant 9, i=1,2, \cdots, n\right)$, 对应 $A \rightarrow B=\overline{b_1 b_2 \cdots b_n}$ 是位数不超过 $n$ 的所有非负整数的集合到它自身的一个双射, 其中 $b_i=9-a_i, i=1,2, \cdots, n$. 若记 $d(A)=a_1+a_2+\cdots+a_n$, 则 $d(A)+d(B)=9 n$. 由此可见, 对于任意 $0<k \leqslant 9 n, d(A)<k$ 的充分必要条件是 $d(B)>9 n-k$. 因而有 $\left|\left\{A \mid d(A)<\frac{9 n}{2}\right\}\right|=\left|\left\{A \mid d(A)>\frac{9 n}{2}\right\}\right|$.
+当 $n$ 为奇数时, $\frac{9 n}{2}$ 不是整数, 故 (1) 中左右两端的集合之并集为 $S$, 所以当 $k=\left[\frac{9 n}{2}\right]+1$ 时, $|S|=2\left|S_k\right|$. 当 $n$ 为偶数时, $\frac{9 n}{2}$ 是整数, 当 $k==\frac{9 n}{2}$ 时, $|S|> 2\left|S_k\right|,|S|<2\left|S_{k+1}\right|$, 这时满足要求的 $k$ 不存在.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题17 $n, m$ 为正整数, $A=\{1,2, \cdots, n\}, B_n^m=\{\left(a_1, a_2, \cdots, a_m\right) \mid a_i \in A, i=1,2, \cdots, m\}$ 满足:
+(1) $\left|a_i-a_{i+1}\right| \neq n-1, i=1,2, \cdots, m-1$;
+(2) $a_1, a_2, \cdots, a_m(m \geqslant 3)$ 中至少有三个不同.
+求 $B_n^m$ 和 $B_6^3$ 的元素的个数.
+%%<SOLUTION>%%
+由题意, 若 $B_n^m$ 非空, 则 $n, m \geqslant 3$. 计算仅满足条件 (1) 的 $\left(a_1, a_2, \cdots\right.$, $\left.a_m\right)$ 的个数, 这时 1 与 $n$ 不相邻.
+记这样的 $\left(a_1, a_2, \cdots, a_m\right)$ 有 $S_m$ 个, 其中 $x_m$ 个以 1 开头, $y_m$ 个以 $2, \cdots, n-1$ 开头, $z_m$ 个以 $n$ 开头, 则 $S_m=x_m+y_m+z_m$, 那么有递推式 $x_{m+1}=x_m+y_m, y_{m+1}=(n-2)\left(x_m+y_m+z_m\right), z_{m+1}=y_m+z_m$. 以上三式相加得 $S_{m+1}=(n-1) S_m+(n-2) S_{m-1}$. (*)
+又易知 $S_1=n, S_2=n^2-2$, 而 (*) 的特征方程是 $t^2-(n-1) t-(n-2)=0$, 其特征根为 $t_{1,2}=\frac{n-1 \pm \sqrt{n^2+2 n-7}}{2}$, 故 $S_m=A \cdot\left(\frac{n-1+\sqrt{n^2+2 n-7}}{2}\right)^m+ B \cdot\left(\frac{n-1-\sqrt{n^2+2 n-7}}{2}\right)^m$, 其中 $A 、 B$ 由 $S_1=A \cdot\left(\frac{n-1+\sqrt{n^2+2 n-7}}{2}\right)+ B \cdot\left(\frac{n-1-\sqrt{n^2+2 n-7}}{2}\right)=n$ 及 $S_2=A \cdot\left(\frac{n-1+\sqrt{n^2+2 n-7}}{2}\right)^2+B \cdot$
+$$
+\begin{aligned}
+& \left(\frac{n-1-\sqrt{n^2+2 n-7}}{2}\right)^2=n^2-2 \text { 确定, 解得 } A=\frac{1+\frac{n+1}{\sqrt{n^2+2 n-7}}}{2}, \\
+& B=\frac{1-\frac{n+1}{\sqrt{n^2+2 n-7}}}{2} . \\
+& \text { 故 } S_m=\left(\frac{1+\frac{n+1}{\sqrt{n^2+2 n-7}}}{2}\right)\left(\frac{n-1+\sqrt{n^2+2 n-7}}{2}\right)^m+ \\
+& \left(\frac{1-\frac{n+1}{\sqrt{n^2+2 n-7}}}{2}\right)\left(\frac{n-1-\sqrt{n^2+2 n-7}}{2}\right)^m .
+\end{aligned}
+$$
+下面再减去满足 (1) 而不满足 (2) 的.
+若 $a_1, a_2, \cdots, a_m$ 全相同, 即 $a_1= \cdots=a_m=k \in\{1,2, \cdots, n\}$, 这样的 $\left(a_1, a_2, \cdots, a_m\right)$ 有 $n$ 个 $(n \geqslant 3)$; 若 $a_1$, $a_2, \cdots, a_m$ 中恰含两个不同的数, 选出这两个数有 $\mathrm{C}_n^2$ 种方法, 但不能选 $\{1, n\}$, 故有 $\mathrm{C}_n^2-1$ 种选法, 这样的 $\left(a_1, a_2, \cdots, a_m\right)$ 有 $\left(\mathrm{C}_n^2-1\right)\left(2^m-2\right)$ 种.
+综上所述,
+$$
+\begin{aligned}
+& \left|B_n^m\right|=S_m-n-\left(\mathrm{C}_n^2-1\right)\left(2^m-2\right)=\left(\frac{1+\frac{n+1}{\sqrt{n^2+2 n-7}}}{2}\right) \\
+& {\left[\frac{n-1+\sqrt{n^2+2 n-7}}{2}\right)^m+\left(\frac{1-\frac{n+1}{\sqrt{n^2+2 n-7}}}{2}\right)\left[\left(\frac{n-1-\sqrt{n^2+2 n-7}}{2}\right)^m-\right.} \\
+& n-\left(\mathrm{C}_n^2-1\right)\left(2^m-2\right)(n, m \geqslant 3) .
+\end{aligned}
+$$
+特别地, 当 $n=6, m=3$ 时, $S_3=5 S_2+4 S_1=5 \times 34+4 \times 6=194$, 所以 $\left|B_6^3\right|=194-6-\left(C_6^2-1\right)\left(2^3-2\right)=104$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+问题18 设 $S$ 为平面上给定的有限整点集, $A$ 为 $S$ 的满足任两点的连线都不平行于坐标轴的元素个数最多的子集, $B$ 为整数集的满足对任意 $(x, y) \in S$, 总有 $x \in B$ 或 $y \in B$ 的元素个数最少的子集.
+证明: $|A| \geqslant|B|$.
+%%<SOLUTION>%%
+记 $\tau=|B|$, 从集合 $S$ 中尽可能多的去掉一些点得到 $S$ 的子集 $S^{\prime}$, 使得 $S^{\prime}$ 满足: 1) 若 $B^{\prime}$ 为 $\mathbf{Z}$ 的满足 $\forall(x, y) \in S^{\prime}$, 总有 $x \in B^{\prime}$ 或 $y \in B^{\prime}$ 的元素个数最小的子集, 则 $\left.\left|B^{\prime}\right|=\tau ; 2\right)$ 对 $\forall b \in S^{\prime}$, 若 $B^{\prime \prime}$ 是 $\mathbf{Z}$ 的满足 $\forall(x, y) \in S^{\prime} \backslash\{b\}$, 总有 $x \in B^{\prime \prime}$ 或 $y \in B^{\prime \prime}$ 的元素个数最小的子集, 则 $\left|B^{\prime \prime}\right|<\tau$. 我们要证明: $S^{\prime}$ 中任两点的连线都不平行于坐标轴, 从而 $|A| \geqslant\left|S^{\prime}\right| \geqslant \tau= |B|$.
+反证: 若有 $a, b \in S^{\prime}$ 使 $a b$ 平行于 (不妨设) $x$ 轴,则 $a 、 b$ 的第二个坐标分量相同, 记为 $z$. 考虑 $S^{\prime} \backslash\{a\}$, 由 $S^{\prime}$ 的性质, 存在 $\mathbf{Z}$ 的子集 $U_a$, 使 $S^{\prime} \backslash\{a\}$ 的任一元素至少有一个坐标分量在 $U_a$ 中, 且 $\left|U_a\right|=\tau-1$ 及 $a$ 的两个坐标分量都不在 $U_a$ 中; 对于 $S^{\prime} \backslash\{b\}$, 有类似的 $U_b \subset \mathbf{Z}$. 设 $S^{\prime \prime}$ 为 $S^{\prime}$ 的子集满足: $S^{\prime \prime}$ 中任一点的两个坐标分量都在 $\{z\} \cup\left(U_a \cup U_b-U_a \cap U_b\right)$ 中, 令 $t=\left|U_a \cap U_b\right|$, 则 $S^{\prime \prime}$ 所有不同的坐标分量最多有 $2(\tau-1-t)+1$. 显然对 $S^{\prime \prime}$, 存在 $\mathbf{Z}$ 的子集 $C$, 使 $S^{\prime \prime}$ 的任意一个元素总有一个分量在 $C$ 中, 且 $|C| \leqslant \tau-1-t$.
+现在令 $C^{\prime}=C \cup\left(U_a \cap U_b\right)$, 则 $S^{\prime}$ 的任一元素总有一个分量在 $C^{\prime}$ 中.
+事实上, 取 $u \in S^{\prime}$, (1) $u=a$ 或 $b$, 则 $u \in S^{\prime \prime}$, 于是由 $C$ 的性质, $u$ 至少有一个分量在 $C$ 中, 从而在 $C^{\prime}$ 中; (2) $u \neq a$ 及 $b$, 则 $u$ 总有一个分量在 $U_a$ 中, 且 $u$ 总有一个分量在 $U_b$ 中.
+如果 $u$ 的同一个坐标分量在 $U_a$ 和 $U_b$ 中, 则在 $U_a \cap U_b$ 中, 从而在 $C^{\prime}$ 中; 如果 $u$ 的一个坐标在 $U_a$ 中而另一个在 $U_b$ 中, 则 $u$ 在 $S^{\prime \prime}$ 中, 从而至少有一个分量在 $C$ 中, 从而在 $C^{\prime}$ 中.
+故 $\tau \leqslant\left|C^{\prime}\right|=\left|C \cup\left(U_a \cap U_b\right)\right| \leqslant |C|+t \leqslant \tau-1-t+t=\tau-1$, 矛盾!
+%%PROBLEM_END%%
+
+

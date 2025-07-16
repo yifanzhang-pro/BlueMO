@@ -1,0 +1,294 @@
+
+%%TEXT_BEGIN%%
+高阶等差数列与差分方法.
+对一个给定的数列 $\left\{a_n\right\}$ 的相邻两项作差, 得到一个新数列
+$$
+a_2-a_1, a_3-a_2, \cdots, a_{n+1}-a_n, \cdots
+$$
+这个数列称为 $\left\{a_n\right\}$ 的一阶差数列.
+如果记该数列为 $\left\{b_n\right\}$, 其中 $b_n=a_{n+1}-a_n$, 那么再求 $\left\{b_n\right\}$ 的相邻两项之差, 所得数列
+$$
+b_2-b_1, b_3-b_2, \cdots, b_{n+1}-b_n, \cdots
+$$
+称为原数列 $\left\{a_n\right\}$ 的二阶差数列.
+依此类推,对任意 $p \in \mathbf{N}^*$, 可以定义数列 $\left\{a_n\right\}$ 的 $p$ 阶差数列.
+如果 $\left\{a_n\right\}$ 的 $p$ 阶差数列是一个非零常数数列, 那么称它为 $p$ 阶等差数列.
+特别地, 一阶等差数列就是我们通常说的等差数列, 二阶及二阶以上的等差数列统称为高阶等差数列.
+注意到, 数列是定义在 $\mathrm{N}^*$ 上的函数, 将上述作差思想予以推广就得到了差分的概念.
+设 $f(x)$ 是定义在 $\mathbf{R}$ 上的函数, 令 $\Delta f(x)=f(x+1)-f(x)$, 则 $\Delta f(x)$ 也是定义在 $\mathbf{R}$ 上的函数, 它称为 $f(x)$ 的一阶差分, 与上类似, 我们可以递推地定义 $f(x)$ 的二阶, 三阶, $\cdots \cdots, p$ 阶差分
+$$
+\begin{aligned}
+\Delta^2 f(x)= & \Delta(\Delta f(x))=\Delta(f(x+1)-f(x)) \\
+= & (f(x+2)-f(x+1))-(f(x+1)-f(x)) \\
+= & f(x+2)-2 f(x+1)+f(x), \\
+& \cdots \cdots, \\
+& \Delta^p f(x)=\Delta\left(\Delta^{p-1} f(x)\right) .
+\end{aligned}
+$$
+利用数学归纳法易证下面的定理:
+定理 1 设 $f(x)$ 是定义在 $\mathbf{R}$ 上的函数,则
+$$
+\begin{aligned}
+\Delta^p f(x) & =\sum_{i=0}^p(-1)^{p-i} \mathrm{C}_p^i f(x+i) \\
+& =\sum_{i=0}^p(-1)^i \mathrm{C}_p^i f(x+p-i)
+\end{aligned}
+$$
+如果函数 $f(x)(x \in \mathbf{R})$ 是关于 $x$ 的 $p$ 次多项式, 那么 $\Delta f(x)$ 是关于 $x$ 的 $p-1$ 次多项式, $\Delta^2 f(x)$ 是关于 $x$ 的 $p-2$ 次多项式, $\cdots, \Delta^p f(x)$ 是关于 $x$ 的零次多项式, 且 $\Delta^p f(x)=p ! a_p$ (这里 $a_p$ 是 $f(x)$ 的首项系数), 而当 $m>p$, $m \in \mathbf{N}^*$ 时, $\Delta^m f(x) \equiv 0$.
+反过来, 对函数 $f(x)(x \in \mathbf{R})$, 如果 $\Delta^{p+1} f(x) \equiv 0$, 那么 $f(x)$ 是关于 $x$ 的一个次数不超过 $p$ 的多项式.
+将这些结论应用于高阶等差数列, 我们有定理 2 数列 $\left\{a_n\right\}$ 是一个 $p$ 阶等差数列的充要条件是数列的通项 $a_n$ 为 $n$ 的一个 $p$ 次多项式.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设数列 $\left\{a_n\right\}$ 是一个三阶等差数列, 其前面的若干项为 $1,2,8,22$, $47,86, \cdots$. 求 $\left\{a_n\right\}$ 的通项公式.
+%%<SOLUTION>%%
+解法一计算 $\left\{a_n\right\}$ 的各阶差分数列,得
+$$
+\begin{aligned}
+& \left\{b_n\right\}: 1,6,14,25,39, \cdots ; \\
+& \left\{c_n\right\}: 5,8,11,14, \cdots ; \\
+& \left\{d_n\right\}: 3,3, \cdots .
+\end{aligned}
+$$
+由 $\left\{a_n\right\}$ 为三阶等差数列, 知 $\left\{d_n\right\}$ 是一个常数数列, 进而 $c_n=c_1+3(n-1)= 3 n+2$, 于是
+$$
+b_{n+1}-b_n=3 n+2, n=1,2, \cdots
+$$
+从而 $b_n-b_1=\left(b_n-b_{n-1}\right)+\cdots+\left(b_2-b_1\right)=\sum_{k=1}^{n-1}(3 k+2)=\frac{3 n(n-1)}{2}+ 2(n-1)=\frac{(3 n+4)(n-1)}{2}$, 所以 $b_n=\frac{3}{2} n^2+\frac{1}{2} n-1$.
+同上可得
+$$
+\begin{gathered}
+a_n-a_1=\sum_{k=1}^{n-1}\left(\frac{3}{2} k^2+\frac{1}{2} k-1\right) \\
+=\frac{(n-1) n(2 n-1)}{4}+\frac{n(n-1)}{4}-(n-1) .
+\end{gathered}
+$$
+解得 $a_n=\frac{1}{2} n^3-\frac{1}{2} n^2-n+2$.
+说明这里用到裂项求和的方法及求和公式 $\sum_{k=1}^m k=\frac{m(m+1)}{2}, \sum_{k=1}^m k^2= \frac{1}{6} m(m+1)(2 m+1)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 设数列 $\left\{a_n\right\}$ 是一个三阶等差数列, 其前面的若干项为 $1,2,8,22$, $47,86, \cdots$. 求 $\left\{a_n\right\}$ 的通项公式.
+%%<SOLUTION>%%
+解法二由定理 2 的结论,可设 $a_n=A n^3+B n^2+C n+D$, 其中 $A 、 B 、 C 、 D$ 待定.
+利用初始条件, 知
+$$
+\left\{\begin{array}{l}
+A+B+C+D=1, \\
+8 A+4 B+2 C+D=2, \\
+27 A+9 B+3 C+D=8, \\
+64 A+16 B+4 C+D=22 .
+\end{array}\right.
+$$
+解得 $A=\frac{1}{2}, B=-\frac{1}{2}, C=-1, D=2$.
+所以 $a_n=\frac{1}{2} n^3-\frac{1}{2} n^2-n+2$.
+说明利用待定系数的方法求解高阶等差数列的通项公式也经常用到.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2. 如果对任意 $x \in \mathbf{Z}$, 多项式 $f(x)$ 的值都为整数,那么称 $f(x)$ 为整值多项式.
+证明: 对任意一个 $n$ 次的整值多项式 $f(x)$, 都存在整数 $a_n, a_{n-1}, \cdots$, $a_0$, 使得
+$$
+f(x)=a_n\left(\begin{array}{l}
+x \\
+n
+\end{array}\right)+a_{n-1}\left(\begin{array}{c}
+x \\
+n-1
+\end{array}\right)+\cdots+a_1\left(\begin{array}{l}
+x \\
+\end{array}\right)+a_0 .
+$$
+这里 $\left(\begin{array}{l}x \\ k\end{array}\right)=\frac{1}{k !} x(x-1) \cdots(x-k+1)$, 它被称为 $k$ 次差分多项式, 其中 $\left(\begin{array}{l}x \\ 0\end{array}\right)=1$.
+%%<SOLUTION>%%
+证明:对 $n$ 次多项式 $f(x)$, 如果其首项系数为 $c_n$, 那么令 $b_n=n ! \cdot c_n$, 可知 $f(x)-b_n\left(\begin{array}{l}x \\ n\end{array}\right)$ 是一个次数 $\leqslant n-1$ 的多项式, 如此下去, 可知存在 $b_n, b_{n-1}, \cdots$, $b_0 \in \mathbf{C}$, 使得
+$$
+f(x)=b_n\left(\begin{array}{l}
+x \\
+n
+\end{array}\right)+b_{n-1}\left(\begin{array}{c}
+x \\
+n-1
+\end{array}\right)+\cdots+b_1\left(\begin{array}{l}
+x \\
+\end{array}\right)+b_0 . \label{eq1}
+$$
+为证命题成立, 我们只需证明: $b_n, \cdots, b_0$ 都为整数.
+注意到, 对 $k \in \mathbf{N}^*$, 都有 $\Delta\left(\begin{array}{l}x \\ k\end{array}\right)=\left(\begin{array}{c}x+1 \\ k\end{array}\right)-\left(\begin{array}{l}x \\ k\end{array}\right)=\frac{1}{k !}((x+1) \cdots(x-k+$ 2) $-x(x-1) \cdots(x-k+1))=\frac{1}{(k-1) !} x(x-1) \cdots(x-k+2)=\left(\begin{array}{c}x \\ k-1\end{array}\right)$. 现在由 式\ref{eq1} 知 $b_0=f(0) \in \mathbf{Z}$ (因为 $f(x)$ 为整值多项式), 对式\ref{eq1}的两边作差分, 得
+$$
+\Delta f(x)=b_n\left(\begin{array}{c}
+x \\
+n-1
+\end{array}\right)+\cdots+b_2\left(\begin{array}{l}
+x \\
+\end{array}\right)+b_1 .
+$$
+再令 $x=0$, 知 $b_1 \in \mathbf{Z}$, 依此递推, 即可证得 $b_0, b_1, \cdots, b_n$ 都为整数.
+命题获证.
+说明如果用 $\Delta^k f(0)$ 表示 $\Delta^k f(x)$ 在 $x=0$ 的函数值, 那么由此题证 $b_k$ 都为整数的过程可知, 对任意 $n$ 次多项式 $f(x)$, 都有
+$$
+f(x)=\sum_{k=0}^n \Delta^k f(0)\left(\begin{array}{l}
+x \\
+k
+\end{array}\right)
+$$
+其中 $\Delta^0 f(0)=f(0)$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 设数列 $\left\{a_n\right\}$ 是一个 $p$ 阶等差数列, 其通项公式为 $a_n=f(n)$, 这里
+$f(x)$ 是一个 $p$ 次多项式.
+证明:
+$$
+\sum_{m=1}^n a_m=\sum_{k=0}^p \mathrm{C}_{n+1}^{k+1} \Delta^k f(0) . \label{eq1}
+$$
+并依此给出 $\sum_{m=1}^n m^3$ 的公式.
+%%<SOLUTION>%%
+证明:利用上例的说明可知
+$$
+a_m=f(m)=\sum_{k=0}^p \Delta^k f(0)\left(\begin{array}{l}
+m \\
+k
+\end{array}\right),
+$$
+因此
+$$
+\begin{aligned}
+\sum_{m=1}^n a_m & =\sum_{m=1}^n\left(\sum_{k=0}^p \Delta^k f(0)\left(\begin{array}{l}
+m \\
+k
+\end{array}\right)\right) \\
+& =\sum_{k=0}^p \Delta^k f(0) \sum_{m=1}^n\left(\begin{array}{l}
+m \\
+k
+\end{array}\right) \\
+& =\sum_{k=0}^p \Delta^k f(0)\left(\mathrm{C}_k^k+\cdots+\mathrm{C}_n^k\right) \\
+& =\sum_{k=0}^p \Delta^k f(0)\left(\mathrm{C}_{k+1}^{k+1}+\mathrm{C}_{k+1}^k+\cdots+\mathrm{C}_n^k\right) \\
+& =\sum_{k=0}^p \Delta^k f(0)\left(\mathrm{C}_{k+2}^{k+1}+\mathrm{C}_{k+2}^k+\cdots+\mathrm{C}_n^k\right) \\
+& =\cdots=\sum_{k=0}^p \mathrm{C}_{n+1}^{k+1} \Delta^k f(0) .
+\end{aligned}
+$$
+所以, 式\ref{eq1}成立:
+当 $f(x)=x^3$ 时, $\Delta f(x)=(x+1)^3-x^3=3 x^2+3 x+1, \Delta^2 f(x)= 3(x+1)^2+3(x+1)+1-\left(3 x^2+3 x+1\right)=6 x+6, \Delta^3 f(x)=6(x+1)+6- (6 x+6)=6$. 故 $\Delta f(0)=1, \Delta^2 f(0)=6, \Delta^3 f(0)=6$. 这样利用(1)可知
+$$
+\sum_{m=1}^n m^3=6 \mathrm{C}_{n+1}^4+6 \mathrm{C}_{n+1}^3+\mathrm{C}_{n+1}^2=\left(\frac{n(n+1)}{2}\right)^2 .
+$$
+说明这里给出了 $p$ 阶等差数列前 $n$ 项和的求和公式 (在已知通项公式的前提下), 依此可方便地给出 $\sum_{m=1}^n m^p(p=1,2, \cdots)$ 的求和公式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 多项式 $f(x)=x^n+a_1 x^{n-1}+\cdots+a_n$, 其中 $a_1, \cdots, a_n \in \mathbf{R}$. 证明 : 在数 $|f(1)|,|f(2)|, \cdots,|f(n+1)|$ 中必有一个数不小于 $\frac{n !}{2^n}$.
+%%<SOLUTION>%%
+证明:由定理 1 的结论, 可知
+$$
+\Delta^n f(x)=\sum_{i=0}^n(-1)^i \mathrm{C}_n^i f(x+n-i) . \label{eq1}
+$$
+又由 $f(x)=x^n+a_1 x^{n-1}+\cdots+a_n$ 可知 $\Delta^n f(x)=n !$, 在\ref{eq1}式中令 $x=1$, 得
+$$
+n !=\sum_{i=0}^n(-1)^i \mathrm{C}_n^i f(n+1-i) . \label{eq2}
+$$
+如果命题不成立, 那么对 $0 \leqslant i \leqslant n$, 都有 $|f(n+1-i)|<\frac{n !}{2^n}$, 结合式\ref{eq2} 将有
+$$
+n ! \leqslant \sum_{i=0}^n \mid (-1)^i \mathrm{C}_n^i f(n+1-i) \mid<\sum_{i=0}^n \mathrm{C}_n^i \cdot \frac{n !}{2^n}=n !,
+$$
+矛盾.
+所以,命题成立.
+说明此题亦可利用 Lagrange 插值公式去处理.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 对非负整数 $N$, 用 $u(N)$ 表示 $N$ 在二进制表示下数码 1 出现的次数 (例如 $u(10)=2$, 因为在二进制表示下 $\left.10^{\circ}=(1010)_2\right)$. 用 $\operatorname{deg} p(x)$ 表示多项式 $p(x)$ 的次数.
+证明 : 对任意 $k \in \mathbf{N}^*$, 都有
+$$
+\sum_{i=0}^{2^k-1}(-1)^{u(i)} p(i)= \begin{cases}0, & \text { 若 } \operatorname{deg} p(x)<k ; \\ (-1)^k \alpha \cdot k ! \cdot 2^{\frac{k(k-1)}{2},} & \text { 若 } \operatorname{deg} p(x)=k .\end{cases}
+$$
+这里 $\alpha$ 为 $p(x)$ 的首项系数.
+%%<SOLUTION>%%
+证明:利用差分方法处理.
+对 $t \in \mathbf{N}^*$, 记 $\Delta_t(p(x))=p(x)-p(x+t)$, 则
+$$
+q_k(x)=\Delta_1\left(\Delta_2\left(\Delta_4 \cdots\left(\Delta_{2^{k-1}}(p(x))\right) \cdots\right)\right),
+$$
+也是关于 $x$ 的多项式.
+我们对 $k$ 归纳来证明:
+$$
+\sum_{i=0}^{2^k-1}(-1)^{u(i)} p(i)=q_k(0) . \label{eq1}
+$$
+当 $k=1$ 时, \ref{eq1}式左边 $=p(0)-p(1)$, 右边为 $q_1(0)=p(0)-p(1)$. 所以, 式\ref{eq1}对 $k=1$ 成立.
+现设式\ref{eq1}对 $k$ 成立, 考虑 $k+1$ 的情形, 此时
+$$
+\begin{aligned}
+\sum_{i=0}^{2^{k+1}-1}(-1)^{u(i)} p(i) & =\sum_{i=0}^{2^k-1}(-1)^{u(i)} p(i)+\sum_{i=2^k}^{2^{k+1}-1}(-1)^{u(i)} p(i) \\
+& =\sum_{i=0}^{2^k-1}(-1)^{u(i)} p(i)-\sum_{i=0}^{2^k-1}(-1)^{u(i)} p\left(2^k+i\right) \\
+& =\sum_{i=0}^{2^k-1}(-1)^{u(i)}\left(p(i)-p\left(2^k+i\right)\right) \\
+& =\sum_{i=0}^{2^k-1}(-1)^{u(i)} \Delta_{2^k}(p(i)) .
+\end{aligned}
+$$
+现在用 $\Delta_{2^k}(p(x))$ 代替 $p(x)$, 对它用归纳假设, 可知
+$$
+\sum_{i=0}^{2^{k+1}-1}(-1)^{u(i)} p(i)=q_k\left(\Delta_{2^k}(p(0))\right)=q_{k+1}(0) .
+$$
+所以,对 $k \in \mathbf{N}^*$, 式\ref{eq1}都成立.
+注意到, 当 $\operatorname{deg}(p(\dot{x})) \leqslant k$ 时, 对 $p(x)$ 每作一次差分, 其次数就减少 1 , 故当 $\operatorname{deg} p(x)<k$ 时, 有 $q_k(x)=0$. 而当 $\operatorname{deg} p(x)=k$ 时, 由于对 $t \in \mathbf{N}^*$, 有
+$$
+\begin{aligned}
+\Delta_t(p(x)) & =p(x)-p(x+t) \\
+& =\alpha\left(x^k-(x+t)^k\right)+\beta\left(x^{k-1}-(x+t)^{k-1}\right)+\cdots,
+\end{aligned}
+$$
+利用二项式定理, 知 $\Delta_t(p(x))$ 是一个首项系数为 $-\alpha t k$ 的 $k-1$ 次多项式.
+从而, $q_k(x)$ 是常数多项式, 且
+$$
+\begin{aligned}
+q_k(x) & =\left(\prod_{j=0}^{k-1}\left(-(j+1) \cdot 2^j\right)\right) \cdot \alpha . \\
+& =(-1)^k \cdot 2^{\frac{k(k-1)}{2}} \cdot k ! \cdot \alpha .
+\end{aligned}
+$$
+从而,命题成立.
+说明这里取 $p(x)$ 为不同的 $k$ 次多项式, 可得到不同的恒等式.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设 $\left\{a_n\right\} 、\left\{b_n\right\}$ 是两个数列, 证明下面的二项式反演公式: 对任意 $n \in \mathbf{N}^*$, 都有 $a_n=\sum_{k=0}^n \mathrm{C}_n^k b_k$ 的充要条件是对任意 $n \in \mathbf{N}^*$, 都有 $b_n=\sum_{k=0}^n(-1)^{n-k} \mathrm{C}_n^k a_k$.
+%%<SOLUTION>%%
+证明:对 $m \in \mathbf{N}^*$, 设 $f(x)$ 是一个 $m$ 次多项式, 且对 $0 \leqslant k \leqslant m$, 都有 $f(k)=a_k$.
+利用例 2 中的差分多项式, 可知
+$$
+f(x)=\sum_{k=0}^m \Delta^k f(0)\left(\begin{array}{l}
+x \\
+k
+\end{array}\right) .
+$$
+令 $g(x)=\sum_{k=0}^m b_k\left(\begin{array}{l}x \\ k\end{array}\right)$, 则 $g(x)$ 也是一个 $m$ 次多项式.
+如果对任意 $n \in \mathbf{N}^*$, 都有 $a_n=\sum_{k=0}^n \mathrm{C}_n^k b_k$, 那么对任意 $0 \leqslant n \leqslant m$, 都有 $g(n)=\sum_{k=0}^m \mathrm{C}_n^k b_k=a_n=f(n)$, 这表明 $f(x)-g(x)$ 有 $m+1$ 个不同的根 $(x=0,1,2, \cdots, m)$, 从而它是一个零多项式, 所以 $b_n=\Delta^n f(0)$. 结合定理 1 的结论, 就有
+$$
+\begin{aligned}
+b_n & =\Delta^n f(0)=\sum_{k=0}^n(-1)^{n-k} \mathrm{C}_n^k f(k) \\
+& =\sum_{k=0}^n(-1)^{n-k} \mathrm{C}_n^k a_k .
+\end{aligned}
+$$
+反过来, 如果对任意 $n \in \mathbf{N}^*$, 都有 $b_n=\sum_{k=0}^n(-1)^{n-k} \mathrm{C}_n^k a_k$, 那么 $b_n= \Delta^n f(0)$, 因而有 $g(x)=f(x)$, 所以 $a_n=f(n)=g(n)=\sum_{k=0}^m \mathrm{C}_n^k b_k= \sum_{k=0}^n \mathrm{C}_n^k b_k$ (注意,这时要取 $m \geqslant n$ ).
+综上可知, 二项式反演公式成立.
+说明这一节给出了一些与差分方法相关的公式, 它们在证明一些恒等式时会有用武之地, 在推导一些高阶等差数列的通项与求和问题中也会经常用到.
+%%PROBLEM_END%%
+
+

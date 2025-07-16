@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题7. 已知 $\\sin x \\geqslant \\frac{\\sqrt{3}}{2}$, 则 $x$ 的取值范围是 ( ).\n(A) $\\left[\\frac{\\pi}{3}, \\frac{2 \\pi}{3}\\right]$\n(B) $\\left[k \\pi-\\frac{4 \\pi}{3}, k \\pi+\\frac{4}{3} \\pi\\right](k \\in \\mathbf{Z})$\n(C) $\\left[2 k \\pi+\\frac{\\pi}{3}, 2 k \\pi+\\frac{2 \\pi}{3}\\right](k \\in \\mathbf{Z})$.\n(D) $\\left[2 k \\pi-\\frac{4}{3} \\pi, 2 k \\pi+\\frac{\\pi}{3}\\right](k \\in \\mathbf{Z})$",
+    "solution": "C. 因 $\\sin \\frac{\\pi}{3}=\\frac{\\sqrt{3}}{2}, \\sin \\frac{2 \\pi}{3}=\\frac{\\sqrt{3}}{2}$, 所以满足条件的 $x$ 值为 $2 k \\pi+\\frac{\\pi}{3} \\leqslant x \\leqslant 2 k \\pi+\\frac{2 \\pi}{3}, k \\in \\mathbf{Z}$.",
+    "remark": "",
+    "figures": []
+}

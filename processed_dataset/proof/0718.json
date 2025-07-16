@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume14/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例8. 设 100 个非负实数的和为 1 , 证明: 可将它们适当排列在圆周上,使得将每两个相邻数相乘后, 所得的 100 个乘积之和不超过 0.01 .",
+    "solution": "证明:记这 100 个数字为 $x_1, x_2, \\cdots, x_{100}$, 它们所能构成的圆排列共 99! 种, 记这 99! 种情况所对应的相邻数乘积之和分别为 $S_1, S_2, \\cdots, S_n$, 其中 $n=99$ !.\n由于圆周上使 $x_i, x_j$ 相邻可有两种次序, 对每种次序, 相应的 $x_1$, $x_2, \\cdots, x_{100}$ 的圆排列个数等于其余 98 个数在直线上的全排列数, 即 $98 !$ 个, 从而使 $x_i, x_j$ 相邻的圆排列共 $2 \\cdot 98$ ! 种.\n考察式子 $M=\\sum_{i=1}^n S_i$.\n根据上述讨论可知, 每个乘积 $x_i x_j(1 \\leqslant i<j \\leqslant 100)$ 在该式右端出现的次数为 $2 \\cdot 98$ !, 因此结合柯西不等式得\n$$\n\\begin{aligned}\nM & =2 \\cdot 98 ! \\sum_{1 \\leqslant i<j \\leqslant 100} x_i x_j=98 ! \\cdot\\left[\\left(\\sum_{i=1}^{100} x_i\\right]^2-\\sum_{i=1}^{100} x_i^2\\right) \\\\\n& \\leqslant 98 ! \\cdot\\left[\\left(\\sum_{i=1}^{100} x_i\\right]^2-\\frac{1}{100}\\left[\\sum_{i=1}^{100} x_i\\right]^2\\right]=\\frac{99 !}{100} .\n\\end{aligned}\n$$\n由平均值原理知, 存在一个 $i(1 \\leqslant i \\leqslant 99 !)$ 使 $S_i \\leqslant \\frac{M}{99 !}=\\frac{1}{100}$, 命题得证.",
+    "remark": "注:平均数原理就其证明方法而言, 和抽屈原理几乎一样,但它可以进一步适用于非正整数的场合.\n本题中对所有可能的排列所组成的整体应用平均数原理, 说明了 100 个乘积之和\"平均而言\"不超过 0.01 , 因而结论成立.\n平均数原理的应用往往也反映了从整体考虑问题的思想方法.",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例10. 设 $n$ 是大于 1 的正整数,证明存在一个集合 $A \\varsubsetneqq\\{1,2, \\cdots, n\\}$, 使得\n(1) $|A| \\leqslant 2[\\sqrt{n}]+1$;\n(2) $\\{|x-y| \\mid x, y \\in A, x \\neq y\\}=\\{1,2, \\cdots, n-1\\}$.",
+    "solution": "分析: 由 $|A| \\leqslant 2[\\sqrt{n}]+1$ 想到, 设 $n=k^2+b, 0 \\leqslant b \\leqslant 2 k$.\n证明: 设 $n=k^2+b, 0 \\leqslant b \\leqslant 2 k$.\n(1) 当 $b \\leqslant k$ 时,考虑集合\n$$\n\\begin{gathered}\nA=\\left\\{1,2, \\cdots, k, 2 k, 3 k, \\cdots, k^2, k^2+b\\right\\} \\varsubsetneqq\\{1,2, \\cdots, n\\}, \\\\\n|A|=2 k \\leqslant 2[\\sqrt{n}]+1=2 k+1,\n\\end{gathered}\n$$\n而易知 $\\{|x-y| \\mid x, y \\in A, x \\neq y\\}=\\left\\{1,2, \\cdots, k^2+b-1\\right\\}$.\n(2) 当 $b>k$ 时,考虑集合\n$$\nA=\\left\\{1,2, \\cdots, k, 2 k, 3 k, \\cdots, k^2, k^2+k, k^2+b\\right\\} \\varsubsetneqq\\{1,2, \\cdots, n\\},\n$$\n同样有\n$$\n|A|=2 k+1 \\leqslant 2[\\sqrt{n}]+1 \\text {, }\n$$\n且 $\\{|x-y| \\mid x, y \\in A, x \\neq y\\}=\\left\\{1,2, \\cdots, k^2+b-1\\right\\}$.\n综上知, 原命题成立.",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume2/exercise6.tex",
+    "problem_type": "calculation",
+    "problem": "问题7 已知 $f(x)=4 x(1-x), 0 \\leqslant x \\leqslant 1$,\n(1) 求 $f^{(n)}(x)$;\n(2) 设 $f^{(n)}(x)$ 取最大和最小的 $x$ 的个数 $a_n 、 b_n$. 试用 $n$ 表示 $a_n$ 和 $b_n$.",
+    "solution": "(1) 令 $\\varphi(x)=\\arcsin \\sqrt{x}, g(x)=2 x$, 则可求得 $f^{(n)}(x)=$ $\\left(\\sin \\left(2^n \\arcsin \\sqrt{x}\\right)\\right)^2 ; \\quad$ (2) $a_n=2^{n-1}, b_n=2^{n-1}+1$.",
+    "remark": "",
+    "figures": []
+}

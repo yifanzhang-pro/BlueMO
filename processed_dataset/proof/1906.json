@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题12. 如图(<FilePath:./images/volume7/figures/fig-c7p12.png>),在锐角 $\\triangle A B C$ 的 $B C$ 边上有两点 $E 、 F$ 满足 $\\angle B A E=\\angle C A F$, 作 $F M \\perp A B, F N \\perp A C$, 垂足为 $M 、 N$. 延长 $A E$ 交 $\\triangle A B C$ 的外接圆于点 $D$. 证明: 四边形 $A M D N$ 与 $\\triangle A B C$ 的面积相等.",
+    "solution": "证明: : 连结 $B D$, 则 $\\triangle A B D \\backsim \\triangle A F C$, 所以 $A F \\cdot A D=A B \\cdot A C$. 设 $\\angle B A E=\\angle C A F=\\alpha, \\angle E A F=\\beta$, 则 $S_{\\text {四边形 } A M D N}=-\\frac{1}{2} A M \\cdot A D \\sin \\alpha+ \\frac{1}{2} A D \\cdot A N \\sin (\\alpha+\\beta)=\\frac{1}{2} A D[A F \\cos (\\alpha+\\beta) \\sin \\alpha+A F \\cos \\alpha \\sin (\\alpha+\\beta)]= \\frac{1}{2} A D \\cdot A F \\sin (2 \\alpha+\\beta)=\\frac{1}{2} A B \\cdot A C \\sin \\angle B A C=S_{\\triangle A B C}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c7p12.png"
+    ]
+}

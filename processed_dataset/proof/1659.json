@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例12. 求证: 圆外切四边形的圆心位于两个对角线中点的连线上.\n(牛顿定理)",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c1i15.png>), 设四边形 $A B C D$ 内切圆圆心为 $O, A C$ 中点为 $M$,\n$B D$ 中点为 $N$, 设 $A B$ 延长线和 $D C$ 延长线交于点 $E$, 过 $O$ 作与 $O E$ 垂直的 $X Y$ 交 $A B$ 于 $X$, 交 $C D$ 于 $Y$, 注意到 $\\angle A O D=\\angle A X Y=\\angle D Y X=90^{\\circ}+\\frac{1}{2} \\angle A E D, \\angle O A D= \\angle O A X, \\angle O D A=\\angle O D Y, \\triangle A O D$ \\& $\\triangle A X O \\backsim \\triangle O Y D$, 从而 $\\angle O A X=\\angle D O Y, \\angle A O X=\\angle O D Y$.\n即 $\\triangle O A X \\backsim \\triangle D O Y$, 于是\n$$\nA X \\cdot D Y=O X \\cdot O Y,\n$$\n同理可证,\n$$\nB X \\cdot C Y=O X \\cdot O Y .\n$$\n于是, $A X B \\backsim C Y D$ (这里的相似是两个线段间的相似, $X$ 分 $A B$ 的比等于 $Y$ 分 $C D$ 的比), 注意到两相似图形的对应顶点连线中点构成的图形与原来两个图形相似,则有 $M O N$ 构成线段, 且有 $\\frac{M O}{O N}=\\frac{A X}{X B}=\\frac{C Y}{Y D}$.",
+    "remark": "注:这是一个非常困难的问题, 在想到上述解答之前, 笔者始终没能找到简单的解答.\n如果线段的相似超出读者的理解, 也可以用解析几何中的定比分点公式来刻画这些点的位置.",
+    "figures": [
+        "./images/volume7/figures/fig-c1i15.png"
+    ]
+}

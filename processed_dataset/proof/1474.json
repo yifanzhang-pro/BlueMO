@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/exercise7.tex",
+    "problem_type": "proof",
+    "problem": "问题11. 设 $r_1, r_2, \\cdots, r_n$ 为 $\\geqslant 1$ 的实数,证明:\n$$\n\\frac{1}{r_1+1}+\\frac{1}{r_2+1}+\\cdots+\\frac{1}{r_n+1} \\geqslant \\frac{n}{\\sqrt[n]{r_1 r_2 \\cdots r_n}+1} .\n$$",
+    "solution": "当 $n=1$ 时,不等式显然成立.\n下面用归纳法证明当 $n=2^k$ 时, 不等式成立.\n当 $k=1$ 时,有\n$$\n\\frac{1}{r_1+1}+\\frac{1}{r_2+1}-\\frac{2}{\\sqrt{r_1 r_2}+1}=\\frac{\\left(\\sqrt{r_1 r_2}-1\\right)\\left(\\sqrt{r_1}-\\sqrt{r_2}\\right)^2}{\\left(r_1+1\\right)\\left(r_2+1\\right)\\left(\\sqrt{r_1 r_2}+1\\right)} \\geqslant 0 .\n$$\n若当 $k=m$ 时, 不等式成立, 考虑 $k=m+1$ 的情况.\n即要证明:\n若对 $n$ 个数原不等式成立, 则对 $2 n$ 个数不等式也成立.\n如果 $r_1, r_2, \\cdots, r_{2 n}$ 均大于 1 , 则有\n$$\n\\begin{aligned}\n\\sum_{i=1}^{2 n} \\frac{1}{r_i+1} & =\\sum_{i=1}^n \\frac{1}{r_i+1}+\\sum_{i=n+1}^{2 n} \\frac{1}{r_i+1} \\\\\n& \\geqslant \\frac{n}{\\sqrt[n]{r_1 r_2 \\cdots r_n}+1}+\\frac{n}{\\sqrt[n]{r_{n+1} \\cdots r_{2 n}}+1} \\\\\n& \\geqslant \\frac{2 n}{\\sqrt[2 n]{r_1 r_2 \\cdots r_{2 n}}+1} .\n\\end{aligned}\n$$\n故当 $n=2^k(k=1,2, \\cdots)$ 时, 原不等式成立.\n对任意自然数 $n$, 存在正整数 $k$, 满足 $m=2^k>n$.\n设 $r_{n+1}=r_{n+2}=\\cdots=r_m=\\sqrt[n]{r_1 r_2 \\cdots r_n}$, 那么\n$$\n\\frac{1}{r_1+1}+\\frac{1}{r_2+1}+\\cdots+\\frac{1}{r_n+1}+\\frac{m-n}{\\sqrt[n]{r_1 r_2 \\cdots r_n}+1} \\geqslant \\frac{m}{\\sqrt[n]{r_1 r_2 \\cdots r_n}+1},\n$$\n因此原不等式成立.",
+    "remark": "",
+    "figures": []
+}

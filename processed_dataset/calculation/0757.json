@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题8. 方程 $\\frac{\\cos 2 x}{1+\\sin 2 x}=0$ 的解集是 ( ).\n(A) $\\left\\{x \\mid x=2 k \\pi \\pm \\frac{\\pi}{4}, k \\in \\mathbf{Z}\\right\\}$\n(B) $\\left\\{x \\mid x=k \\pi \\pm \\frac{\\pi}{4}, k \\in \\mathbf{Z}\\right\\}$\n(C) $\\left\\{x \\mid x=k \\pi+\\frac{\\pi}{4}, k \\in \\mathbf{Z}\\right\\}$\n(D) $\\left\\{x \\mid x=\\frac{1}{2} k \\pi+\\frac{\\pi}{4}, k \\in \\mathbf{Z}\\right\\}$",
+    "solution": "C. 由原方程得 $2 x=k \\pi+\\frac{\\pi}{2}$ 且 $2 x \\neq 2 k \\pi+\\frac{3 \\pi}{2}$, 即 $x=\\frac{1}{2} k \\pi+\\frac{\\pi}{4}$ 且 $x \\neq k \\pi+\\frac{3 \\pi}{4}$, 故选 C.",
+    "remark": "",
+    "figures": []
+}

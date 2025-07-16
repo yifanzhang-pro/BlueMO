@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter4.tex",
+    "problem_type": "calculation",
+    "problem": "例11 若 $x_1 、 x_2$ 是方程 $x^2+6 x+7=0$ 的两根, 求 $\\arctan x_1+\\arctan x_2$ 值.",
+    "solution": "分析:由一元二次方程之根联想韦达定理, 利用结果求 $\\arctan x_1+ \\arctan x_2$ 的某个三角函数值, 再反求其角度.\n解由\n$$\nx_1+x_2=-6, x_1 \\cdot x_2=7 \\text {, }\n$$\n得\n$$\n\\tan \\left(\\arctan x_1+\\arctan x_2\\right)=1 \\text {, }\n$$\n且由\n$$\nx_1<0, x_2<0 \\text {, }\n$$\n可知\n$$\n\\arctan x_1, \\arctan x_2 \\in\\left(-\\frac{\\pi}{2}, 0\\right),\n$$\n得\n$$\n\\arctan x_1+\\arctan x_2 \\in(-\\pi, 0),\n$$\n从而\n$$\n\\arctan x_1+\\arctan x_2=-\\frac{3}{4} \\pi\n$$\n评注当所求角的正切值为 1 时, 学生误认为所求角一定为 $\\frac{\\pi}{4}$. 其实不然, 由 $x_1<0, x_2<0$, 可知 $\\arctan x_1, \\arctan x_2 \\in\\left(-\\frac{\\pi}{2}, 0\\right)$ 是本题之关键, 即估算所求角大致在什么范围, 是引起学生警惕的重要步骤.\n推广: 当 $x_1 、 x_2$ 是关于 $x$ 的方程 $x^2+m x+(m+1)=0$ 的两根, 且 $m>$ 0 , 则 $\\arctan x_1+\\arctan x_2=-\\frac{3}{4} \\pi$.",
+    "remark": "",
+    "figures": []
+}

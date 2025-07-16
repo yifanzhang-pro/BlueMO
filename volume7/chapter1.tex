@@ -1,0 +1,295 @@
+
+%%TEXT_BEGIN%%
+图形的全等与相似.
+大家在初中已经接触过全等相似三角形的概念, 对于一般的多边形 (甚至包括退化形,如线段), 全等和相似的概念是:
+如果两个图形可以互相通过平移、旋转、反射所得到,称他们为全等形; 如果两个图形可以互相通过平移、旋转、反射、伸缩所得到, 称它们为相似形; 全等形等价于对应边、角、对角线相等; 相似形的充要条件是, 对应角相等, 对应边成相同比例.
+九点圆的概念: (如图(<FilePath:./figures/fig-c1i1.png>))
+所谓九点圆, 是指三角形的九个特殊点:三个垂心在三边上的投影、三边中点、三个顶点与垂心的连线中点, 它们在一个圆上.
+这个问题在相似观点下几乎是显然的, 读者可以试着证明: 以上提到的 9 个点,全部位于以 $O H$ 中点为圆心, 外接圆半径的一半为半径的圆上.
+事实上,这两个圆位似,位似中心为 $H$, 位似比为 $1: 2$.
+位似是一种特殊的相似.
+所谓位似图形是指: 如果两个图形不仅是相似图形, 且对应点连线线相交于一点, 那么这样的两个图形叫做位似图形, 位似图形对应点连线的交点是位似中心.
+位似图形的任意一对对应点与位似中心在同一直线上, 它们到位似中心的距离之比等于相似比.
+位似图形的性质有:
+1. 位似图形对应线段的比等于相似比.
+2. 位似图形的对应角都相等.
+3. 位似图形对应点连线的交点是位似中心.
+4. 位似图形面积的比等于相似比的平方.
+5. 位似图形高、周长的比都等于相似比.
+%%TEXT_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例1. 如图(<FilePath:./figures/fig-c1i2.png>), 设点 $P$ 在 $\triangle A B C$ 的外接圆上, 直线 $C P$ 和 $A B$ 相交于点 $E$, 直线 $B P$ 和 $A C$ 相交于点 $F$, 边 $A C$ 的垂直平分线交边 $A B$ 于点 $J$, 边 $A B$ 的垂直平分线交边 $A C$ 于点 $K$, 求证:
+$$
+\frac{C E^2}{B F^2}=\frac{A J \cdot J E}{A K \cdot K F} \text {. }
+$$
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c1i2.png>), 连结 $B K, C J$.
+$$
+\angle E=\angle A B P-\angle B P E,
+$$
+而由 $A, B, P, C$ 四点共圆, 知 $\angle B P E=\angle A$, 故 $\angle E=\angle A B P-\angle A$, 又由 $K A=K B$, 知 $\angle A= \angle A B K$, 故
+$$
+\angle E=\angle A B P-\angle A B K=\angle K B F . \label{eq1}
+$$
+同理 $\angle F=\angle J C E, \label{eq2}$.
+由式\ref{eq1}, \ref{eq2}得 $\triangle J E C \backsim \triangle K B F$.
+由此,
+$$
+\begin{aligned}
+& \frac{C E}{B F}=\frac{J E}{K B}=\frac{J E}{A K},  \label{eq3}\\
+& \frac{C E}{B F}=\frac{J C}{K F}=\frac{A J}{K F} . \label{eq4}
+\end{aligned}
+$$
+将式\ref{eq3}, \ref{eq4}两式的左端和右端分别相乘即得结论.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例2 $\triangle P Q R$ 和 $\triangle P^{\prime} Q^{\prime} R$ 是两个全等的等边三角形,六边形 $A B C D E F$ 的边长分别记为 $A B=a_1, B C=b_1, C D=a_2, D E=b_2, E F=a_3, F A=b_3$. 求证: $a_1^2+a_2^2+a_3^2=b_1^2+b_2^2+b_3^2$.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c1i3.png>), 因为 $\angle P=\angle Q=\angle R= \angle P^{\prime}=\angle Q^{\prime}=\angle R^{\prime}=60^{\circ}$, 再根据各组对顶角相等知
+$\triangle P A B \backsim \triangle Q^{\prime} C B \backsim \triangle Q C D \backsim \triangle R^{\prime} E D \backsim \triangle R E F \backsim \triangle P^{\prime} A F$.
+依次设上述六个三角形面积为: $S_1, S_1^{\prime}, S_2, S_2^{\prime}$, $S_3, S_3^{\prime}$, 则有
+$$
+\frac{S_1}{a_1^2}=\frac{S_1^{\prime}}{b_1^2}=\frac{S_2}{a_2^2}=\frac{S_2^{\prime}}{b_2^2}=\frac{S_3}{a_3^2}=\frac{S_3^{\prime}}{b_3^2} .
+$$
+设其比值为 $k$, 则由 $S_1+S_2+S_3=S_1^{\prime}+S_2^{\prime}+S_3^{\prime}$ 得
+$$
+k\left(a_1^2+a_2^2+a_3^2\right)=k\left(b_1^2+b_2^2+b_3^2\right) \text {, 即 } a_1^2+a_2^2+a_3^2=b_1^2+b_2^2+b_3^2 \text {. }
+$$
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例3. 如图(<FilePath:./figures/fig-c1i4.png>), 圆 $\Gamma_1 、 \Gamma_2$ 内切于点 $S$, 圆 $\Gamma_2$ 的弦 $A B$ 与圆 $\Gamma_1$ 切于点 $C, M$ 是弧 $A B$ (不含点 $S$ ) 的中点, 过点 $M$ 作 $M N \perp A B$, 垂足为 $N$, 记圆 $\Gamma_1$ 的半径为 $r$.
+求证: $A C \cdot C B=2 r \cdot M N$. 
+%%<SOLUTION>%%
+证明:如图作出圆 $\Gamma_1$ 的直径 $C D$.
+因 $S$ 是两圆 $\Gamma_1 、 \Gamma_2$ 的切点, 即位似中心, 而 $C 、 M$ 为两圆上的位似对应点,故 $S 、 C 、 M$ 三点共线.
+由相交弦定理得 $A C \cdot C B=S C \cdot C M$.
+又由 Rt $\triangle S C D \circlearrowleft \mathrm{Rt} \triangle N M C$, 得 $S C \cdot C M=C D$ • $M N=2 r \cdot M N$.
+%%<REMARK>%%
+注:此题本身并不难,但利用 $S 、 C 、 M$ 共线这个命题, 并结合圆的 Pascal 定理可以证明如下结论:
+设三角形 $A B C$ 的外接圆为圆 $O_1$, 另有一圆 $O$ 同时与边 $A B$, 边 $A C$, 弧 $\overparen{B C}$ 相切于点 $D 、 E 、 F$, 则 $D E$ 中点 $I$ 为三角形 $A B C$ 内心.
+(如图(<FilePath:./figures/fig-c1i5.png>))
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例4. 凸五边形 $A B C D E$ 满足 $\angle B A C=\angle C A D= \angle D A E, \angle A B C=\angle A C D==\angle A D E, P$ 是 $B D$ 和 $C E$的交点.
+求证: $A P$ 平分线段 $C D$.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c1i6.png>), 由条件知 $\triangle A B C \backsim \triangle A C D \backsim \triangle A D E$, 所以四边形 $A B C D \sim$ 四边形 $A C D E$.
+设 $A C \cap B D=X, A D \cap C E=Y$, 可知
+$$
+A X: C X=A Y: D Y .
+$$
+设 $A P \cap C D=M$, 由 Ceva 定理知
+$$
+\frac{C M}{D M}=\frac{C X}{D Y} \cdot A Y=1 
+$$
+所以 $M$ 为 $C D$ 中点,故 $A P$ 平分线段 $C D$, 证毕.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例5. 已知凸四边形 $A B C D$ 满足 $A B=B C, A D=D C$. $E$ 是线段 $A B$ 上一点, $F$ 是线段 $A D$ 上一点, 满足 $B 、 E 、 F 、 D$ 四点共圆.
+作 $\triangle D P E$ 顺向相似于 $\triangle A D C$; 作 $\triangle B Q F$ 顺向相似于 $\triangle A B C$. 求证: $A 、 P 、 Q$ 三点共线.
+(注: 两个三角形顺向相似是指它们的对应顶点同按顺时针方向或同按逆时针方向排列.)
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c1i7.png>), 将 $B 、 E 、 F 、 D$ 四点所共圆的圆心记作 $O$, 连结 $O B 、 O E 、 O F 、 O D 、 B D$.
+在 $\triangle B D F$ 中, $O$ 是外心, 故 $\angle B O F=2 \angle B D A$.
+又 $\triangle A B D \cong \triangle C B D, \angle C D A=2 \angle B D A$.
+于是 $\angle B O F=\angle C D A=\angle E P D$,
+由此可知 $\triangle B O F \backsim \triangle E P D, \label{eq1}$.
+另一方面, 由 $B 、 E 、 F 、 D$ 四点共圆知
+$\triangle A B F \backsim \triangle A D E, \label{eq2}$.
+综合 式\ref{eq1}, \ref{eq2} 可知, 四边形 $A B O F \backsim$ 四边形
+$A D P E$, 由此得
+$$
+\angle B A O=\angle D A P . \label{eq3}
+$$
+同理,可得
+$$
+\angle B A O=\angle D A Q . \label{eq4}
+$$
+式\ref{eq3},\ref{eq4}表明 $A 、 P 、 Q$ 三点共线.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例6. 设凸四边形 $A B C D$ 对角线交于 $O$ 点.
+$\triangle O A D 、 \triangle O B C$ 的外接圆交于 $O 、 M$ 两点,直线 $O M$ 分别交 $\triangle O A B 、 \triangle O C D$ 的外接圆于 $T 、 S$ 两点.
+求证: $M$ 是线段 $T S$ 的中点.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c1i8.png>), 连结 $B T, C S, M A, M B$, $M C, M D$.
+由 $\angle B T O=\angle B A O, \angle B C O=\angle B M O$, 故 $\triangle B T M \backsim \triangle B A C$, 得
+$$
+\frac{T M}{A C}=\frac{B M}{B C} . \label{eq1}
+$$
+同理, $\triangle C M S \backsim \triangle C B D$, 得
+$$
+\frac{M S}{B D}=\frac{C M}{B C} . \label{eq2}
+$$
+式\ref{eq1} $\div$ 式\ref{eq2} 得 
+$$
+\frac{T M}{M S}=\frac{B M}{C M} \cdot \frac{A C}{B D} . \label{eq3}
+$$
+又 $\angle M B D=\angle M C A, \angle M D B=\angle M A C$.
+故 $\triangle M B D \backsim \triangle M C A$, 得
+$$
+\frac{B M}{C M}=\frac{B D}{A C}, \label{eq4}
+$$
+将式\ref{eq4}代入\ref{eq3}, 即得 $T M=M S$.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例7. 如图(<FilePath:./figures/fig-c1i9.png>), 设 $D$ 是锐角 $\triangle A B C$ 的边 $B C$ 上一点, 以线段 $B D$ 为直径的圆分别交直线 $A B$ 、 $A D$ 于点 $X 、 P$ (异于点 $B 、 D$ ), 以线段 $C D$ 为直径的圆分别交直线 $A C 、 A D$ 于点 $Y 、 Q$ (异于点 $C 、 D$ ). 过点 $A$ 作直线 $P X 、 Q Y$ 的垂线, 垂足分别为 $M 、 N$. 求证: $\triangle A M N$ 相似 $\triangle A B C$ 的充分必要条件是直线 $A D$ 过 $\triangle A B C$ 的外心.
+%%<SOLUTION>%%
+证明:由已知有 $B 、 P 、 D 、 X$ 及 $C 、 Y 、 Q 、 D$ 分别四点共圆.
+故 $\angle A X M=\angle B X P=\angle B D P=\angle Q D C=\angle A Y N$.
+所以 Rt $\triangle A M X \backsim$ Rt $\triangle A N Y$.
+于是 $\angle M A X=\angle N A Y, \frac{A M}{A X}=\frac{A N}{A Y}$.
+从而 $\angle M A N=\angle X A Y$, 结合 $\frac{A M}{A X}=\frac{A N}{A Y}$, 得 $\triangle A M N \backsim \triangle A X Y$.
+故 $\triangle A M N \backsim \triangle A B C \Leftrightarrow \triangle A X Y \backsim \triangle A B C \Leftrightarrow X Y / / B C \Leftrightarrow \angle D X Y=\angle X D B$.
+而由 $A 、 X 、 D 、 Y$ 四点共圆知 $\angle D X Y= \angle D A Y$.
+又 $\angle X D B=90^{\circ}-\angle A B C$, 则
+$\angle D X Y=\angle X D B \Leftrightarrow \angle D A C=90^{\circ}-\angle A B C$.
+$\Leftrightarrow$ 直线 $A D$ 过 $\triangle A B C$ 的外心.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例8. 已知 $\triangle A B C$ 中, $O$ 是三角形内一点满足: $\angle B A O=\angle C A O=\angle C B O=\angle A C O$. 求证: $\triangle A B C$ 三边长成等比数列.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c1i11.png>), 过 $O$ 作 $A C$ 平行线交 $B C$, $A B$ 于 $D, E$, 设 $\angle A O E=\angle 1, \angle C O D=\angle 2$.
+则 $\angle O A C=\angle 1=\angle B A O$, 而 $\angle O A C=\angle O C A$,
+所以 $A O=O C, A E=O E$, 且 $\triangle A O E \backsim \triangle A C O$, 于是
+$$
+\frac{A C}{A O}=\frac{O C}{O E} . \label{eq1}
+$$
+又因 $D E / / A C$, 所以
+$$
+\frac{A B}{C B}=\frac{A E}{C D}, \label{eq2}
+$$
+再注意到 $\angle 2=\angle O B C, \angle B C O=\angle B C O$, 所以 $\triangle O C D \backsim \triangle B C D$,
+$$
+\frac{O C}{B C}=\frac{C D}{O C} . \label{eq3}
+$$
+式\ref{eq1} $\times$ 式\ref{eq2} $\times$ 式\ref{eq3}得
+$$
+\frac{A C}{A O} \cdot \frac{A B}{B C} \cdot \frac{O C}{B C}=\frac{O C}{O E} \cdot \frac{A E}{C D} \cdot \frac{C D}{O C},
+$$
+即 $\frac{A C \cdot A B}{B C^2}=1(A O=O C, A E=O E), B C^2=A C \cdot A B$.
+所以 $\triangle A B C$ 三边成等比数列.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例9. 给定 $\gamma>1$, 设点 $P$ 是 $\triangle A B C$ 外接圆的弧 $B A C$ 上的一个动点, 在射线 $B P$ 和 $C P$ 上分别取定点 $U$ 和 $V$, 使得 $B U=\gamma B A, C V=\gamma C A$, 再在射线 $U V$ 上取点 $Q$, 使得 $U Q=\gamma U V$. 求点 $Q$ 的轨迹.
+%%<SOLUTION>%%
+解:如图(<FilePath:./figures/fig-c1i12.png>), 连结 $A U 、 A V 、 A Q$, 在 $B C$ 延长线上取点 $D$, 使 $B D=\gamma B C$.
+连结 $A D 、 D Q$, 因为 $C V=\gamma C A, B U=\gamma B A$, $\angle A C V=\angle A B U$, 所以 $\triangle A C V \backsim \triangle A B U$.
+所以 $\frac{A U}{A V}=\frac{A B}{A C}, \angle V A C=\angle U A B$.
+于是 $\angle U A V=\angle B A C$, 则 $\triangle A U V \backsim \triangle A B C$, 故 $\frac{U V}{B C}=\frac{A U}{A B}, \angle A U V=\angle A B C$.
+又 $U Q=\gamma U V, B D=\gamma B C$, 所以 $\frac{U Q}{B D}=\frac{U V}{B C}= \frac{A U}{A B}$, 故 $\triangle A U Q \backsim \triangle A B D, \triangle A V Q \backsim \triangle A C D, \triangle A Q D \backsim \triangle A V C$.
+则 $\frac{Q D}{V C}=\frac{A D}{A C}$, 于是 $Q D=\gamma A D$, 这表明 $Q$ 位于以点 $D$ 为圆心, $\gamma A D$ 为半径的圆上.
+当 $P$ 运动到点 $B$ 和点 $C$ 时, 割线 $B P$ 和 $C P$ 分别变为过点 $B$ 和 $C$ 的切线, 这时得到的 $Q^{\prime}, Q^{\prime \prime}$ 为轨迹弧的端点.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例10. 如图(<FilePath:./figures/fig-c1i13.png>), 在三角形 $A B C$ 的内部有四个半径相等的 $\odot K_1$, $\odot K_2, \odot K_3, \odot K_4$, 其中 $\odot K_1, \odot K_2, \odot K_3$ 均与三角形 $A B C$ 的两边相切, 且与 $\odot K_4$ 外切.
+证明: 三角形 $A B C$ 的内心 、外心和 $K_4$ 在一条直线上.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c1i13.png>), 设三角形的内心为 $I$, 外心为 $O$, 连结 $A I 、 B I 、 C I 、 K_1 K_2 、 K_1 K_3 、 K_3 K_2$ 、 $K_1 K_4 、 K_4 K_3 、 K_4 K_2$.
+因为三角形的三边与 $\odot K_1, \odot K_2, \odot K_3$ 相切, 所以 $K_1$ 在 $A I$ 上, $K_2$ 在 $B I$ 上, $K_3$ 在 $C I$ 上.
+设圆的半径为 $r$, 注意到 $A B$ 是圆 $K_1$ 和圆 $K_2$ 的公切线, 且圆 $K_1$ 和圆 $K_2$ 是等圆, 所以 $K_1$ 和 $K_2$ 到 $A B$ 的距离都是 $r$.
+故 $K_1 K_2 / / A B$, 同理, $K_2 K_3 / / B C, K_1 K_3 / / A C$.
+所以
+$$
+\frac{I K_1}{I A}=\frac{I K_2}{I B}=\frac{I K_3}{I C} .
+$$
+故三角形 $A B C$ 与三角形 $K_1 K_2 K_3$ 关于 $I$ 位似.
+因为 $K_1 K_4=K_4 K_3=K_4 K_2=2 r$, 所以 $K_4$ 是三角形 $K_1 K_2 K_3$ 的外心, 又 $O$ 是三角形 $A B C$ 的外心, 所以 $I 、 K_4 、 O$ 在一条直线上.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例11. 求证: Euler 公式, 即 $O I^2=R^2-2 R r$. 其中 $R, r$ 分别为 $\triangle A B C$ 的外接圆和内切圆半径.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c1i14.png>), 延长 $A I$ 交 $\overparen{B C}$ 于 $D$, 作 $D$ 的对径点 $E$, 作 $I F \perp A B$ 于 $F$, 连结 $E C 、 D C 、 E D$, 则有 $\angle E D C=\frac{\pi-A}{2}=\angle A I F$, 于是 $\triangle E D C \backsim \triangle A I F$.
+不难证明 $\angle I C D=\angle C I D=\frac{A+C}{2}$, 即 $D I= D C$, 由 $\triangle E D C \backsim \triangle A I F$, 知
+$$
+2 \mathrm{R} r=I F \cdot E D=A I \cdot C D=A I \cdot D I=R^2-O I^2 .
+$$
+最后一步用到了圆幂定理.
+有关圆幂定理读者可参看第 5 章.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例12. 求证: 圆外切四边形的圆心位于两个对角线中点的连线上.
+(牛顿定理)
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c1i15.png>), 设四边形 $A B C D$ 内切圆圆心为 $O, A C$ 中点为 $M$,
+$B D$ 中点为 $N$, 设 $A B$ 延长线和 $D C$ 延长线交于点 $E$, 过 $O$ 作与 $O E$ 垂直的 $X Y$ 交 $A B$ 于 $X$, 交 $C D$ 于 $Y$, 注意到 $\angle A O D=\angle A X Y=\angle D Y X=90^{\circ}+\frac{1}{2} \angle A E D, \angle O A D= \angle O A X, \angle O D A=\angle O D Y, \triangle A O D$ \& $\triangle A X O \backsim \triangle O Y D$, 从而 $\angle O A X=\angle D O Y, \angle A O X=\angle O D Y$.
+即 $\triangle O A X \backsim \triangle D O Y$, 于是
+$$
+A X \cdot D Y=O X \cdot O Y,
+$$
+同理可证,
+$$
+B X \cdot C Y=O X \cdot O Y .
+$$
+于是, $A X B \backsim C Y D$ (这里的相似是两个线段间的相似, $X$ 分 $A B$ 的比等于 $Y$ 分 $C D$ 的比), 注意到两相似图形的对应顶点连线中点构成的图形与原来两个图形相似,则有 $M O N$ 构成线段, 且有 $\frac{M O}{O N}=\frac{A X}{X B}=\frac{C Y}{Y D}$.
+%%<REMARK>%%
+注:这是一个非常困难的问题, 在想到上述解答之前, 笔者始终没能找到简单的解答.
+如果线段的相似超出读者的理解, 也可以用解析几何中的定比分点公式来刻画这些点的位置.
+%%PROBLEM_END%%
+
+
+
+%%PROBLEM_BEGIN%%
+%%<PROBLEM>%%
+例13. 设四边形 $A B C D$ 内接于圆 $O, A B$ 延长线与 $D C$ 延长线交于 $E$,
+$A D$ 延长线与 $B C$ 延长线交于 $F, A C$ 中点为 $M, B D$ 中点为 $N$.
+求证: $\frac{M N}{A B}=\frac{1}{2}\left(\frac{A C}{B D}-\frac{B D}{A C}\right)$.
+%%<SOLUTION>%%
+证明:如图(<FilePath:./figures/fig-c1i16.png>), 首先延长 $M N$ 交 $E F$ 于 $P, M N P$ 为牛顿线 $(A C 、 B D 、 E F$ 中点共线, 称为牛顿线), 于是 $P$ 为 $E F$ 中点, 下面证明
+$$
+2 \cdot \frac{M P}{E F}=\frac{A C}{B D} \text {. }
+$$
+取 $E C$ 中点 $Q$, 由于 $\angle M Q P=\angle M Q D+\angle D Q P=\angle A E D+\angle D C F=\angle A E D+\angle E A D= \angle E D F, \frac{A E}{D E}=\frac{\sin \angle A D E}{\sin \angle E A D}=\frac{\sin \angle E D F}{\sin \angle D C F}=\frac{C F}{D F}$, 从而 $\frac{A E}{C F}=\frac{D E}{D F}, \frac{M Q}{Q P}=\frac{D E}{D F}$, 故 $\triangle M Q P \backsim \triangle E D F$.
+于是 $M P=\frac{E F \cdot M Q}{E D}=\frac{E F \cdot A E}{2 \cdot E D}$, 即 $2 \cdot \frac{M P}{E F}=\frac{A C}{B D}$.
+同理, $2 \cdot \frac{N P}{E F}=\frac{B D}{A C}$, 两式相减即得原命题.
+%%PROBLEM_END%%
+
+

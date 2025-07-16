@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume5/chapter1.tex",
+    "problem_type": "proof",
+    "problem": "例22. 非负实数 $a 、 b 、 c 、 d$ 满足: $a^2+b^2+c^2+d^2=4$, 求证:\n$$\na^3+b^3+c^3+d^3+a b c+b c d+c d a+d a b \\leqslant 8 .\n$$",
+    "solution": "证明:原不等式等价于\n$$\n\\left(a^3+b^3+c^3+d^3+a b c+b c d+c d a+d a b\\right)^2 \\leqslant\\left(a^2+b^2+c^2+d^2\\right)^3 .\n$$\n因为\n$$\n\\begin{aligned}\n& a^3+b^3+c^3+d^3+a b c+b c d+c d a+d a b=a\\left(a^2+b c\\right)+b\\left(b^2+c d\\right)+ \\\\\n& c\\left(c^2+d a\\right)+d\\left(d^2+a b\\right) .\n\\end{aligned}\n$$\n所以, 由柯西不等式, 得\n$$\n\\begin{aligned}\n& \\quad\\left(a^3+b^3+c^3+d^3+a b c+b c d+c d a+d a b\\right)^2 \\leqslant\\left(a^2+b^2+c^2+d^2\\right) \\\\\n& {\\left[\\left(a^2+b c\\right)^2+\\left(b^2+c d\\right)^2+\\left(c^2+d a\\right)^2+\\left(d^2+a b\\right)^2\\right] .}\n\\end{aligned}\n$$\n于是只需证明\n$$\n\\begin{gathered}\n\\left(a^2+b c\\right)^2+\\left(b^2+c d\\right)^2+\\left(c^2+d a\\right)^2+\\left(d^2+a b\\right)^2 \\leqslant\\left(a^2+b^2+c^2+d^2\\right)^2 . \\\\\n2\\left(a^2 b c+b^2 c d+c^2 d a+d^2 a b\\right) \\leqslant a^2 b^2+c^2 d^2+a^2 d^2+b^2 c^2+2\\left(a^2 c^2+b^2 d^2\\right), \\\\\n(a b-a c)^2+(a c-c d)^2+(b c-b d)^2+(a d-b d)^2 \\geqslant 0 .\n\\end{gathered}\n$$\n从而命题得证.\n说明本题把右边的常数 8 利用已知条件化为关于 $a 、 b 、 c 、 d$ 的表达式,使得两边的次数一样, 从而有利于解题.",
+    "remark": "",
+    "figures": []
+}

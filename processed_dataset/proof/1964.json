@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume8/chapter8.tex",
+    "problem_type": "proof",
+    "problem": "例2. 设 $n(\\geqslant 3)$ 个复数 $z_1, z_2, \\cdots, z_n$ 满足\n(1) $z_1+z_2+\\cdots+z_n=0$;\n(2) $\\left|z_i\\right|<1, i=1,2, \\cdots, n$.\n证明: 存在 $i 、 j$, 使得 $1 \\leqslant i<j \\leqslant n$, 且 $\\left|z_i+z_j\\right|<1$.",
+    "solution": "分析:与解我们称两个复向量 (以原点为起点的复向量) 所成的角为它们之间所夹的不超过 $180^{\\circ}$ 的部分所构成的几何图形.\n只需证明: 复数 $z_i(1 \\leqslant i \\leqslant n)$ 中, 必有两个复数 $z_k$ 和 $z_l(k \\neq l)$, 它们之间的夹角不小于 $120^{\\circ}$.\n对此用反证法予以证明,若不存在满足条件的 $z_k$ 和 $z_l$ 经过对复平面作适当的旋转,不妨设 $z_1$ 对应的向量 $\\overrightarrow{O Z}_1$ 落在实轴的正半轴上, 作射线 $O A$, $O B$, 使得\n$$\n\\angle x O A=120^{\\circ}, \\angle A O B=120^{\\circ},\n$$\n则 $z_2, \\cdots, z_n$ 对应的向量 $\\overrightarrow{O Z}_2, \\cdots, \\overrightarrow{O Z}_n$ 都落在 $\\angle x O A$ 与 $\\angle x O B$ 内, 如图(<FilePath:./images/volume8/figures/fig-c8i1.png>) 所示.\n由条件 (1), $z_1+z_2+\\cdots+z_n=0$, 可知 $z_2, \\cdots$, $z_n$ 中必有一个复数的实部小于 0. 从而 $\\overrightarrow{O Z}_2, \\cdots, \\overrightarrow{O Z_n}$ 中必有一个向量落在 $\\angle y O A$ 或 $\\angle y^{\\prime} O B$ 内, 不妨设 $\\overrightarrow{O Z_2}$ 落在 $\\angle y O A$ 内.\n作射线 $O C$, 使得 $\\angle Z_2 O C= 120^{\\circ}$, 则 $z_3, \\cdots, z_n$ 对应的向量不能落在 $\\angle B O C$ 内.\n综上所述, 可知 $\\overrightarrow{O Z}_1, \\overrightarrow{O Z_2}, \\cdots, \\overrightarrow{O Z_n}$, 都落在 $\\angle A O C$ 内, 于是, 将该复平面适当旋转后, 可使向量 $\\overrightarrow{O Z}_1, \\overrightarrow{O Z}_2, \\cdots, \\overrightarrow{O Z_n}$ 都落在 $y$ 轴的右方, 它们的实部都不小于零,这与 (1)矛盾.\n所以, 在 $z_1, z_2, \\cdots, z_n$ 中, 存在 $i 、 j, 1 \\leqslant i<j \\leqslant n$, 使得 $\\left|z_i+z_j\\right|<1$, 证毕.",
+    "remark": "注:证明中没有考虑存在某个 $z_i=0$ 的情形, 因为此时结论是平凡的.\n另外, 当证完存在向量 $\\overrightarrow{O Z}_i 、 \\overrightarrow{O Z}_j$ 所成的角不小于 $120^{\\circ}$ 后, 只需利用图(<FilePath:./images/volume8/figures/fig-c8i2.png>) , 令 $z=z_i+z_j$, 则可知 $\\angle Z_i O Z$ 和 $\\angle Z O Z_j$ 中必有 -一个 $\\geqslant 60^{\\circ}$. 而 $\\overrightarrow{Z_i Z}=\\overrightarrow{O Z_j}, \\overrightarrow{Z_j Z}=\\overrightarrow{O Z}_i$ 及 $\\angle O Z_i Z= \\angle O Z_j Z=180^{\\circ}-\\angle Z_i O Z_j \\leqslant 60^{\\circ}$, 就可知\n$$\n|z| \\leqslant \\max \\left\\{\\left|z_i\\right|,\\left|z_j\\right|\\right\\}<1 .\n$$",
+    "figures": [
+        "./images/volume8/figures/fig-c8i1.png",
+        "./images/volume8/figures/fig-c8i2.png"
+    ]
+}

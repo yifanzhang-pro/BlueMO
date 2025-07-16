@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise4.tex",
+    "problem_type": "calculation",
+    "problem": "问题3. 平行四边形 $A B C D$ 中, 对角线 $A C$ 和 $B D$ 交于点 $O$. 若 $\\overrightarrow{A C}=\\vec{a}, \\overrightarrow{B D}=\\vec{b}$, 那么用 $\\vec{a}$ 和 $\\vec{b}$ 表示 $\\overrightarrow{A B}$ 为 $(\\quad)$.\n(A) $\\frac{1}{2}(\\vec{a}+\\vec{b})$\n(B) $\\frac{1}{2}(\\vec{a}-\\vec{b})$\n(C) $\\frac{1}{2}(\\vec{b}-\\vec{a})$\n(D) $\\vec{b}-\\vec{a}$",
+    "solution": "B.\n$$\n\\overrightarrow{A B}=\\overrightarrow{O B}-\\overrightarrow{O A}=\\left(-\\frac{\\vec{b}}{2}\\right)-\\left(-\\frac{\\vec{a}}{2}\\right)=\\frac{1}{2}(\\vec{a}-\\vec{b}) .\n$$",
+    "remark": "",
+    "figures": []
+}

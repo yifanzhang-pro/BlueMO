@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume3/chapter3.tex",
+    "problem_type": "calculation",
+    "problem": "例17. $\\triangle A B C$ 是一个已知的锐角三角形, 正 $\\triangle D E F$ 外接于 $\\triangle A B C$. 求 $\\triangle D E F$ 面积的极大值.",
+    "solution": "解:如图 (<FilePath:./images/volume3/figures/fig-c3e17.png>), 设 $\\angle C A B$ 为 $\\triangle A B C$ 的最大角.\n由 $S_{\\triangle D E F}=\\frac{\\sqrt{3}}{4} E F^2$, 知 $E F$ 最大时, $S_{\\triangle D E F}$ 也最大.\n而 $E F$ 由 $\\angle B A F$ 所唯一确定, 故可选取 $\\angle B A F=\\theta$ 为自变量, 则 $\\angle A B F=120^{\\circ}-\\theta, \\angle A C E=(\\theta+\\angle C A B)-60^{\\circ}$. 由正弦定理, 得\n$$\n\\begin{aligned}\nE F & =A F+A E \\\\\n& =\\frac{c \\sin \\left(120^{\\circ}-\\theta\\right)}{\\sin 60^{\\circ}}+\\frac{b \\sin \\left(\\theta+\\frac{\\left.\\angle C A B-60^{\\circ}\\right)}{\\sin 60^{\\circ}}\\right.}{3} \\cdot \\sin (\\theta+\\varphi) .\n\\end{aligned}\n$$\n其中\n$$\n\\begin{aligned}\nk= & \\left\\{\\left[c \\cos 60^{\\circ}+b \\cos \\left(\\angle C A B-60^{\\circ}\\right)\\right]^2\\right. \\\\\n& \\left.+\\left[c \\sin 60^{\\circ}+b \\sin \\left(\\angle C A B-60^{\\circ}\\right)\\right]^2\\right\\}^{\\frac{1}{2}} \\\\\n= & \\sqrt{c^2+b^2+2 b c \\cos \\left(120^{\\circ}-\\angle C A B\\right),}\n\\end{aligned}\n$$\n$\\varphi=\\arccos \\frac{c \\cos 60^{\\circ}+b \\cos \\left(\\angle C A B-60^{\\circ}\\right)}{k}$ 为锐角.\n当 $\\theta=90^{\\circ}-\\varphi$ 时, $E F$ 有最大值 $\\frac{2 \\sqrt{3} k}{3}$, 此时 $\\theta$ 也是锐角, 故 $60^{\\circ}< \\angle C A B+\\theta<180^{\\circ}$, 相应的 $\\triangle D E F$ 确是 $\\triangle A B C$ 的外接正三角形.\n则 $S_{\\triangle D E F}$ 的最大值是 $\\frac{\\sqrt{3} k^2}{3}=\\frac{\\sqrt{3}}{3}\\left[b^2+c^2+2 b c \\cos \\left(120^{\\circ}-\\angle C A B\\right)\\right]$.",
+    "remark": "",
+    "figures": [
+        "./images/volume3/figures/fig-c3e17.png"
+    ]
+}

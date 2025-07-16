@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume14/exercise14.tex",
+    "problem_type": "proof",
+    "problem": "问题3. 把正三角形划分为 $n^2$ 个同样大小的小正三角形, 把这些小正三角形的一部分标上号码 $1,2, \\cdots, m$, 使号码相邻的三角形有相邻边.\n求证: $m \\leqslant n^2-n+1$.",
+    "solution": "将 $n^2$ 小正三角形如图(<FilePath:./images/volume14/figures/fig-c14a3.png>), 黑、白染色,则黑三角形共有\n$$\n1+2+3+\\cdots+n=\\frac{1}{2} n(n+1) \\text { 个, }\n$$\n白三角形共有\n$$\n1+2+3+\\cdots+(n-1)=\\frac{1}{2} n(n-1) \\text { 个.\n}\n$$\n由于要求\"号码相邻的三角形有相邻边\", 且有相邻号码的两个三角形染有不同的颜色, 因此标上号码的黑三角形至多比标上号码的白三角形多 1 个, 所以 $m \\leqslant 2 \\times \\frac{1}{2} n(n-1)+1:=n^2-n+1$.",
+    "remark": "",
+    "figures": [
+        "./images/volume14/figures/fig-c14a3.png"
+    ]
+}

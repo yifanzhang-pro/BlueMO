@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/chapter7.tex",
+    "problem_type": "proof",
+    "problem": "例10. 已知锐角三角形 $A B C, C D$ 是高, 点 $M$ 是 $A B$ 中点.\n过点 $M$ 的直线分别交射线 $C A 、 C B$ 于点 $K 、 L$, 且 $C K=C L$. 求证: 若 $\\triangle C K L$ 的外心为点 $S$, 则 $S D=S M$.",
+    "solution": "证明:如图(<FilePath:./images/volume7/figures/fig-c7i10.png>), 不妨设 $A C \\geqslant B C$, 易知此时点 $K$ 在 $A C$ 上,点 $L$ 在 $C B$ 延长线上.\n由正弦定理知\n$$\n\\frac{A K}{A M}=\\frac{\\sin \\angle A M K}{\\sin \\angle A K M}, \\frac{B L}{B M}=\\frac{\\sin \\angle B M L}{\\sin \\angle B L M},\n$$\n由对顶角相等及 $\\angle A K M+\\angle B L M=180^{\\circ}$, 得\n$$\n\\frac{A K}{A M}=\\frac{B L}{B M} \\text {, }\n$$\n即 $A K=B L$.\n这样一来,便有\n$$\nC K=C L=\\frac{A C+B C}{2}, C S=\\frac{C K}{2 \\cos \\frac{\\angle A C B}{2}}=\\frac{A C+B C}{4 \\cos \\frac{\\angle A C B}{2}},\n$$\n延长 $C S$ 交 $\\triangle A B C$ 外接圆 $\\overparen{A B}$ 于点 $E$, 则点 $E$ 为 $\\overparen{A B}$ 中点.\n若设 $\\triangle A B C$ 外接圆半径为 $R$, 则 $C E=2 R \\sin \\left(\\angle C A B+\\frac{\\angle A C B}{2}\\right)$, 于是\n$$\n\\begin{aligned}\n\\frac{C E}{C S} & =2 R \\sin \\left(\\angle C A B+\\frac{\\angle A C B}{2}\\right) \\cdot \\frac{2 \\cos \\frac{\\angle A C B}{2}}{R(\\sin \\angle A B C+\\sin \\angle C A B)} \\\\\n& =\\frac{4 \\sin \\left(\\angle C A B+\\frac{\\angle A C B}{2}\\right) \\cos \\frac{\\angle A C B}{2}}{\\sin \\angle C A B+\\sin \\angle A B C} \\\\\n& =\\frac{2(\\sin (\\angle C A B+\\angle A C B)+\\sin \\angle C A B)}{\\sin \\angle C A B+\\sin \\angle A B \\bar{C}} \\\\\n& =\\frac{2(\\sin \\angle A B C+\\sin \\angle C A B)}{\\sin \\angle C A B+\\sin \\angle A B C}=2 .\n\\end{aligned}\n$$\n这表明, 点 $S$ 为 $C E$ 中点.\n又因为 $M E \\perp A B, C D \\perp A B$, 故点 $S$ 在 $M D$ 的中垂线上.\n故 $S D=S M$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c7i10.png"
+    ]
+}

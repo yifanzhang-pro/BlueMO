@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise5.tex",
+    "problem_type": "calculation",
+    "problem": "问题13. 若 $0<x<2 \\pi,|\\sin x|<\\frac{\\sqrt{2}}{2}$, 则 $x$ 的取值范围为",
+    "solution": "$\\left(0, \\frac{\\pi}{4}\\right) \\cup\\left(\\frac{3 \\pi}{4}, \\frac{5 \\pi}{4}\\right) \\cup\\left(\\frac{7 \\pi}{4}, 2 \\pi\\right)$.",
+    "remark": "",
+    "figures": []
+}

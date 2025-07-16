@@ -1,0 +1,11 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise4.tex",
+    "problem_type": "proof",
+    "problem": "问题19. 两圆外切于点 $A$ 且内切另一圆 $\\odot T$ 于点 $B 、 C$. 令 $D$ 是小圆内公切线割 $\\odot T$ 的弦的中点.\n证明: 当点 $B 、 C 、 D$ 不共线时, $A$ 是 $\\triangle B C D$ 的内心.",
+    "solution": "证明: 先证明一个引理: 如图(<FilePath:./images/volume7/figures/fig-c4a19-1.png>), $\\odot O$ 与弓形相切于点 $C 、 D$. 则 $C D$ 平分 $\\angle A C B$.\n引理的证明: 过 $C$ 作 $\\odot O$ 切线与 $B A$ 交于 $E$. 则由 $E C, E D$ 均为 $\\odot O$ 的切线知 $\\angle E C D=\\angle E D C$, 且 $\\angle E C A=\\angle C B D$. 注意到 $\\angle E C D= \\angle E C A+\\angle A C D, \\angle E D C=\\angle C B D+\\angle B C D$. 引理得证.\n回到原题 (这里的字母与上述引理字母表示不相同.\n)\n如图(<FilePath:./images/volume7/figures/fig-c4a19-2.png>), 设 $C A 、 B A$ 与 $\\odot T$ 分别相交于点 $E, F$. 连结 $B C$, $B E, C F, B D, E F, M B, M C, C N$. 由于 $\\odot T_2$ 与弓形 $M F N$ 相切, 由上述引理知 $C A$ 平分 $\\angle M C N$. 从而 $E$ 是优弧 $\\overparen{M N}$ 的中点.\n同理 $F$ 是劣弧 $\\overparen{M N}$ 的中点.\n而 $D$ 是 $M N$ 的中点.\n故 $E, T, D, F$ 四点共线, $\\angle E B F= \\angle E C F=90^{\\circ} ; \\angle M D E=\\angle M D F=90^{\\circ}$. 从而 $A 、 B 、 E 、 D$ 及 $A 、 D 、 F 、 C$ 分别四点共圆.\n再注意到 $C 、 B 、E 、 F$ 也四点共圆.\n因此, $\\angle C B F=\\angle C E F=\\angle D B A$. 即 $\\angle C B A=\\angle D B A$. 同理 $\\angle B C A=\\angle D C A$. 所以 $A$ 是 $\\triangle B C D$ 的内心.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c4a19-1.png",
+        "./images/volume7/figures/fig-c4a19-2.png"
+    ]
+}

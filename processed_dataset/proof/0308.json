@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume11/chapter4.tex",
+    "problem_type": "proof",
+    "problem": "例5. 设数列 $\\left\\{a_n\\right\\},\\left\\{b_n\\right\\}$ 定义如下:\n$$\n\\begin{aligned}\n& a_0=\\frac{\\sqrt{2}}{2}, a_{n+1}=\\frac{\\sqrt{2}}{2} \\sqrt{1-\\sqrt{1-a_n^2}}, \\\\\n& b_0=1, b_{n+1}=\\frac{1}{b_n}\\left(\\sqrt{b_n^2+1}-1\\right), n=0,1,2,3, \\cdots\n\\end{aligned}\n$$",
+    "solution": "证明: 对每一个 $n=0,1,2,3, \\cdots$ 有下列不等式成立:\n$$\n2^{n+2} a_n<\\pi<2^{n+2} b_n \\text {. }\n$$\n证明用归纳法易证 $0<a_n<1, b_n>0$. 令 $a_n=\\sin \\lambda_n\\left(0<\\lambda_n<\\frac{\\pi}{2}\\right.$, $n \\geqslant 0)$, 则\n$$\n\\sin \\lambda_{n+1}=\\frac{\\sqrt{2}}{2} \\sqrt{1-\\sqrt{1-\\sin ^2 \\lambda_n}}=\\frac{\\sqrt{2}}{2} \\sqrt{1-\\cos \\lambda_n}=\\sin \\frac{\\lambda_n}{2} .\n$$\n从而有 $\\lambda_{n+1}=\\frac{1}{2} \\lambda_n(n \\geqslant 0)$, 又 $\\lambda_0=\\arcsin a_0=\\arcsin \\frac{\\sqrt{2}}{2}=\\frac{\\pi}{4}$, 所以\n$$\n\\lambda_n=\\frac{\\pi}{4}\\left(\\frac{1}{2}\\right)^n=\\frac{\\pi}{2^{n+2}}, a_n=\\sin \\lambda_n=\\sin \\frac{\\pi}{2^{n+2}}(n \\geqslant 0) .\n$$\n类似地, 令 $b_n=\\tan \\delta_n$, 可求得 $b_n=\\tan \\frac{\\pi}{2^{n+2}}(n \\geqslant 0)$. 由于当 $0<x<\\frac{\\pi}{2}$ 时, $\\sin x<x<\\tan x$, 所以 $a_n<\\frac{\\pi}{2^{n+2}}<b_n$, 即 $2^{n+2} a_n<\\pi<2^{n+2} b_n$.",
+    "remark": "",
+    "figures": []
+}

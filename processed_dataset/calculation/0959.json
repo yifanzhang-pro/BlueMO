@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume8/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题1. 设 $z$ 是模为 1 的复数, 则函数 $f(z)=z^2+\\frac{1}{z^2}$ 的最小值 ( ).\n(A) 是 0\n(B) 是 -2\n(C) 是 2\n(D) 不存在",
+    "solution": "B.\n由 $|z|=1$, 可令 $z=\\cos \\theta+i \\sin \\theta$, 则\n$$\n\\begin{aligned}\nf(z) & =z^2+\\frac{1}{z^2}=z^2+\\overline{z^2} \\\\\n& =(\\cos 2 \\theta+i \\sin 2 \\theta)+(\\cos 2 \\theta-i \\sin 2 \\theta) \\\\\n& =2 \\cos 2 \\theta .\n\\end{aligned}\n$$\n故当 $\\cos 2 \\theta=-1$ (或 $z=\\mathrm{i}$ )时,函数 $f(z)$ 有最小值 -2 .",
+    "remark": "",
+    "figures": []
+}

@@ -1,0 +1,10 @@
+{
+    "source_file": "./raw_volume-zh/volume7/exercise6.tex",
+    "problem_type": "proof",
+    "problem": "问题2. 在 $\\triangle A B C$ 中, $\\angle B<\\angle C$, 设经过点 $B 、 C$ 且与 $A C$ 切于点 $C$ 的圆为 $\\odot O$, 直线 $A B 、 C O$ 分别与 $\\odot O$ 交于点 $D(\\neq B) 、 P(\\neq C)$. 过点 $P$ 作 $A O$ 的平行线与 $A C$ 交于点 $E$. 直线 $E B$ 交 $\\odot O$ 于点 $L(\\neq B), B D$ 的中垂线与 $A C$ 交于点 $F, L F$ 交 $C D$ 于点 $K$. 证明: $E K / / C L$.",
+    "solution": "证明: 如图(<FilePath:./images/volume7/figures/fig-c6a2.png>), 设过点 $E$ 平行于 $C L$ 的直线与 $C D$ 交于点 $K^{\\prime}$.\n由 $\\angle E B D=\\angle D C L=\\angle E K^{\\prime} D$, 知 $B 、 D$ 、 $E 、 K^{\\prime}$ 四点共圆.\n设该圆为 $\\odot O_1$. 注意到 $A O$ 是 $\\triangle C E P$ 的中位线, 且 $C E$ 是切线, 则 $A E^2= A C^2=A D \\cdot A B$, 有 $A E$ 切 $\\odot O_1$ 于点 $E$. 考虑从 $\\odot O_1$ 到 $\\odot O$ 的位似变换, 位似中心为 $F$, 点 $E 、 O_1$ 分别对应点 $C 、 O, K^{\\prime}$ 对应点 $L$. 因此, $F 、 K^{\\prime} 、 L$ 三点共线,故 $K=K^{\\prime}$.",
+    "remark": "",
+    "figures": [
+        "./images/volume7/figures/fig-c6a2.png"
+    ]
+}

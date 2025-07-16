@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume4/chapter4-1.tex",
+    "problem_type": "proof",
+    "problem": "例14. 设 $a 、 b 、 c$ 是三角形的三边长,求证:\n$$\na^2 b(a-b)+b^2 c(b-c)+c^2 a(c-a) \\geqslant 0 .\n$$",
+    "solution": "证明:显然存在正数 $x 、 y 、 z$ 使得 $a=y+z, b=z+x, c=x+y$. 由\n$$\n\\begin{aligned}\n& a^2 b(a-b)=(y+z)^2(z+x)(y-x) \\\\\n= & (y+z)(z+x)\\left(y^2-z^2\\right)+(y+z)^2\\left(z^2-x^2\\right),\n\\end{aligned}\n$$\n同样处理 $b^2 c(b-c), c^2 a(c-a)$, 所以\n$$\n\\begin{aligned}\n& a^2 b(a-b)+b^2 c(b-c)+c^2 a(c-a) \\\\\n= & 2 x(y-z) y^2+2 y(z-x) z^2+2 z(x-y) x^2 .\n\\end{aligned}\n$$\n原不等式等价于\n$$\nx y z(x+y+z) \\leqslant x y^3+y z^3+z x^3 .\n$$\n由柯西不等式,得\n$$\n\\begin{gathered}\nx+y+z \\leqslant\\left(\\frac{x^2}{y}+\\frac{y^2}{z}+\\frac{z^2}{x}\\right)^{\\frac{1}{2}}(x+y+z)^{\\frac{1}{2}}, \\\\\nx+y+z \\leqslant \\frac{x^2}{y}+\\frac{y^2}{z}+\\frac{z^2}{x} .\n\\end{gathered}\n$$\n则\n$$\nx+y+z \\leqslant \\frac{x^2}{y}+\\frac{y^2}{z}+\\frac{z^2}{x} .\n$$\n于是原不等式成立, 且当 $a=b=c$ 时等号成立.",
+    "remark": "",
+    "figures": []
+}

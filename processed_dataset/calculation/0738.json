@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume3/exercise3.tex",
+    "problem_type": "calculation",
+    "problem": "问题11 在 $\\triangle A B C$ 中, 已知 $\\sin \\frac{B}{2}=\\sin \\frac{A}{2} \\sin \\frac{C}{2}$, 则 $\\tan \\frac{A}{2} \\tan \\frac{C}{2}=$",
+    "solution": "$\\frac{1}{2}$. 因 $\\sin \\frac{B}{2}=\\sin \\frac{A}{2} \\sin \\frac{C}{2}$, 故 $\\cos \\frac{A+C}{2}=\\sin \\frac{A}{2} \\sin \\frac{C}{2}$, 即 $\\cos \\frac{A}{2} \\cos \\frac{C}{2}=2 \\sin \\frac{A}{2} \\sin \\frac{C}{2}$, 得 $\\tan \\frac{A}{2} \\tan \\frac{C}{2}=\\frac{1}{2}$.",
+    "remark": "",
+    "figures": []
+}

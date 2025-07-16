@@ -1,0 +1,8 @@
+{
+    "source_file": "./raw_volume-zh/volume1/exercise2.tex",
+    "problem_type": "calculation",
+    "problem": "问题4 $A=\\left\\{x \\mid x^2+(p+2) x+1=0, x \\in \\mathbf{R}\\right\\}$, 且 $\\{x \\mid x>0\\} \\cap A=\\varnothing$, 则实数 $p$ 的取值范围是",
+    "solution": "$(-4,+\\infty)$. 依题意, $x^2+(p+2) x+1=0$ 无解或有两个小于 0 的解.\n所以, $\\Delta<0$ 或 $\\Delta \\geqslant 0$ 且 $-(p+2)<0$.",
+    "remark": "",
+    "figures": []
+}
