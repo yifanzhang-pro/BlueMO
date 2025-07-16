@@ -104,3 +104,7 @@ If you use the BlueMO dataset in your research, please consider citing it as fol
       howpublished={\url{https://github.com/Luobots/BlueMO}}
 }
 ```
+
+## Addtional Information
+
+Author Yizhou Chen completed this work during his internship at the Shanghai Qi Zhi Institute from November 1, 2023, to January 5, 2024.
