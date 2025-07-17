@@ -96,7 +96,7 @@ If you use the BlueMO dataset in your research, please consider citing it as fol
 ```bibtex
 @misc{bluemo2024,
       title={BlueMO: A comprehensive collection of challenging mathematical olympiad problems from the little blue book series}, 
-      author={Zhang, Yifan and Luo, Yifan and Chen, Yizhou and Yuan, Yang},
+      author={Chen, Yizhou and Luo, Yifan and Zhang, Yifan and Yuan, Yang},
       year={2024},
 }
 ```
