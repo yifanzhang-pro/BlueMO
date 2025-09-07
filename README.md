@@ -1,6 +1,11 @@
 # BlueMO
 
-## BlueMO: A Comprehensive Collection of Challenging Mathematical Olympiad Problems from the Little Blue Book Series
+## 🚀 BlueMO: A Comprehensive Collection of Challenging Mathematical Olympiad Problems from the Little Blue Book Series
+
+[![Website](https://img.shields.io/badge/Project-Website-green)](https://iiis-ai.github.io/AutoMathText-V2) 
+[![Technical Report](https://img.shields.io/badge/Technical-Report-blue)](https://yifanzhang-pro.github.io/BlueMO/BlueMO.pdf)
+[![License: CC-BY-ND-4.0](https://img.shields.io/badge/License-CCBYND4.0-yellow.svg)](https://creativecommons.org/licenses/by-nd/4.0/)
+[![BlueMO](https://img.shields.io/badge/Huggingface-Datasets-blue)](https://huggingface.co/datasets/math-ai/BlueMO) 
 
 **BlueMO** is a comprehensive and challenging dataset comprising mathematical olympiad problems paired with detailed solutions, meticulously curated from the esteemed "Little Blue Book" (小蓝书) series (Second Edition)—a vital resource for Chinese students training for national and international olympiad math competitions.
 
@@ -8,7 +13,7 @@ Designed to advance and assess sophisticated reasoning in LLMs, this dataset ser
 
 ## Introduction for "Little Blue Book" (小蓝书)
 
-The "Little Blue Book" (小蓝书) series, published by East China Normal University Press, is a cornerstone resource for students striving to master mathematical olympiads. Renowned for its depth, challenging problems, and elegant solutions, the series spans critical domains—Sets, Trigonometric, Geometry, Number Theory, Graph Theory, Extremal Combinatorics—providing rigorous training for olympiad competitions.
+The "Little Blue Book" (小蓝书) series, published by East China Normal University Press, is a cornerstone resource for students striving to master mathematical olympiads. Renowned for its depth, challenging problems, and elegant solutions, the series spans critical domains—Sets, Trigonometric, Geometry, Number Theory, Graph Theory, and Extremal Combinatorics—providing rigorous training for olympiad competitions.
 
 ## About Dataset
 
