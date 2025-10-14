@@ -2,7 +2,7 @@
 
 ## 🚀 BlueMO: A Comprehensive Collection of Challenging Mathematical Olympiad Problems from the Little Blue Book Series
 
-[![Website](https://img.shields.io/badge/Project-Website-green)](https://iiis-ai.github.io/AutoMathText-V2) 
+[![Website](https://img.shields.io/badge/Project-Website-green)](https://yifanzhang-pro.github.io/BlueMO) 
 [![Technical Report](https://img.shields.io/badge/Technical-Report-blue)](https://yifanzhang-pro.github.io/BlueMO/BlueMO.pdf)
 [![License: CC-BY-ND-4.0](https://img.shields.io/badge/License-CCBYND4.0-yellow.svg)](https://creativecommons.org/licenses/by-nd/4.0/)
 [![BlueMO](https://img.shields.io/badge/Huggingface-Datasets-blue)](https://huggingface.co/datasets/math-ai/BlueMO) 
